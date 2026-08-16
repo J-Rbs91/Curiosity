@@ -148,6 +148,26 @@ Retirer cet effacement enfermerait l'utilisateur dans un historique qu'il ne
 pourrait plus défaire — c'est la seule raison pour laquelle cet écran existe
 encore.
 
+### La liste d'Explorer
+
+Trois niveaux de gris, trois natures d'information : le **nom** qu'on cherche, la
+**phrase** qui dit ce qu'on y trouvera, les **notions** qui permettent de
+reconnaître un terrain sans le lire.
+
+Deux règles y sont tenues, et une contribution qui les casserait se verrait :
+
+- **Rien n'est tronqué.** Une phrase coupée oblige à ouvrir pour savoir si l'on
+  voulait ouvrir — exactement le contraire du service que rend une liste. Les
+  phrases sont donc écrites courtes (46 à 61 caractères) plutôt que rognées à
+  l'affichage, et un contrôle en vérifie l'absence de troncature à 320 px.
+- **Le nom est en sans-serif.** La serif porte ce qui se lit — un titre de
+  concept, un texte ; le sans porte ce qui se choisit. Un nom propre dans une
+  liste de destinations est une étiquette, pas un texte.
+
+Les champs correspondants sont `tagline` et `keywords` sur `Author` et `Theme`.
+Les textes longs — `bio`, `description` — restent réservés aux fiches, où ils
+sont lus plutôt que balayés.
+
 ---
 
 ## 5. Le bouton « + » — envoyer un concept à une IA

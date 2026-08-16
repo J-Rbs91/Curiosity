@@ -40,7 +40,10 @@ export interface Author {
   slug: string;
   name: string;
   years?: string;
+  /** Une phrase, dite en entier dans une liste : ce que cet auteur a compris. */
   tagline: string;
+  /** Deux à trois notions, dans les mots du domaine. Jamais une paraphrase de la phrase. */
+  keywords: string[];
   bio: string;
   themes: ThemeId[];
 }
@@ -49,6 +52,9 @@ export interface Theme {
   id: ThemeId;
   slug: string;
   title: string;
+  /** Une phrase, dite en entier dans une liste : la question que ce thème pose. */
+  tagline: string;
+  keywords: string[];
   description: string;
 }
 

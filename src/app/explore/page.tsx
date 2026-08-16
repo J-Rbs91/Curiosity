@@ -91,7 +91,8 @@ function ExploreBody({ view }: { view: ViewId }) {
                 key={author.id}
                 href={`/explore/authors/${author.slug}`}
                 title={author.name}
-                subtitle={author.tagline}
+                tagline={author.tagline}
+                keywords={author.keywords}
               />
             ))}
 
@@ -101,7 +102,8 @@ function ExploreBody({ view }: { view: ViewId }) {
                 key={theme.id}
                 href={`/explore/themes/${theme.slug}`}
                 title={theme.title}
-                subtitle={theme.description}
+                tagline={theme.tagline}
+                keywords={theme.keywords}
               />
             ))}
         </ul>
@@ -111,20 +113,43 @@ function ExploreBody({ view }: { view: ViewId }) {
 }
 
 /*
- * Une ligne, pas une carte. Le regroupement se fait par l'espacement et par un
- * filet, sans surface ni compteur : douze cartes de même niveau se disputent
- * l'attention, douze lignes se parcourent.
+ * Une ligne, pas une carte. Le regroupement se fait par l'espacement, sans
+ * surface ni compteur : douze cartes de même niveau se disputent l'attention,
+ * douze lignes se parcourent.
+ *
+ * Trois niveaux de gris, trois natures d'information : le nom qu'on cherche, la
+ * phrase qui dit ce qu'on y trouvera, les notions qui permettent de reconnaître
+ * un terrain sans le lire. Rien n'est tronqué — une phrase coupée oblige à
+ * ouvrir pour savoir si l'on voulait ouvrir, ce qui est exactement le contraire
+ * du service que rend une liste.
+ *
+ * Le nom est en sans-serif, contrairement aux titres de concept. La serif porte
+ * ce qui se lit ; le sans porte ce qui se choisit. Un nom propre dans une liste
+ * de destinations est une étiquette, pas un texte.
  */
-function ListRow({ href, title, subtitle }: { href: string; title: string; subtitle: string }) {
+function ListRow({
+  href,
+  title,
+  tagline,
+  keywords,
+}: {
+  href: string;
+  title: string;
+  tagline: string;
+  keywords: string[];
+}) {
   return (
     <li>
       <Link
         href={href}
         transitionTypes={SCREEN_MOTION.deeper}
-        className="press-soft block rounded-2xl py-4 hover:bg-paper-raised"
+        className="press-soft block rounded-2xl px-1 py-4 hover:bg-paper-raised"
       >
-        <p className="font-serif-display text-[19px] font-semibold text-ink">{title}</p>
-        <p className="mt-1 line-clamp-2 text-sm leading-relaxed text-ink-faint">{subtitle}</p>
+        <p className="text-[17px] font-medium leading-snug text-ink">{title}</p>
+        <p className="mt-1.5 text-[15px] leading-snug text-ink-soft">{tagline}</p>
+        <p className="mt-2 text-[13px] leading-snug text-ink-faint">
+          {keywords.join(" · ")}
+        </p>
       </Link>
     </li>
   );

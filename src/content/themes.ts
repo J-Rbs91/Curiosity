@@ -5,6 +5,9 @@ export const themes: Theme[] = [
     id: "bureaucratie-regles",
     slug: "bureaucratie-regles",
     title: "Bureaucratie et règles",
+    tagline:
+      "Coordonner par des règles écrites, et ce qu'il en coûte.",
+    keywords: ["Impersonnalité", "Prévisibilité", "Rigidité"],
     description:
       "Comment les organisations se coordonnent-elles par des règles écrites, impersonnelles et stables ? Ce thème explore les promesses de la bureaucratie (prévisibilité, égalité de traitement) et ses effets pervers, quand la règle devient une fin en soi.",
   },
@@ -12,6 +15,9 @@ export const themes: Theme[] = [
     id: "autorite-domination",
     slug: "autorite-domination",
     title: "Autorité et domination",
+    tagline:
+      "Ce qui fait qu'un ordre est obéi sans contrainte.",
+    keywords: ["Légitimité", "Charisme", "Tradition"],
     description:
       "Pourquoi certains ordres sont-ils obéis sans contrainte physique ? Ce thème distingue les fondements sur lesquels une autorité peut légitimement s'exercer, et comment ces fondements structurent durablement les organisations.",
   },
@@ -19,6 +25,9 @@ export const themes: Theme[] = [
     id: "pouvoir",
     slug: "pouvoir",
     title: "Pouvoir",
+    tagline:
+      "Qui pèse réellement, au-delà de l'organigramme.",
+    keywords: ["Zone d'incertitude", "Marge de liberté", "Dépendance"],
     description:
       "Au-delà de l'organigramme officiel, qui détient réellement du pouvoir dans une organisation, et pourquoi ? Ce thème analyse le pouvoir comme une relation d'échange déséquilibrée liée à la maîtrise de zones d'incertitude, et non comme un attribut de poste.",
   },
@@ -26,6 +35,9 @@ export const themes: Theme[] = [
     id: "decision",
     slug: "decision",
     title: "Décision",
+    tagline:
+      "Décider sans le temps ni l'information qu'il faudrait.",
+    keywords: ["Rationalité limitée", "Arbitrage", "Ambiguïté"],
     description:
       "Les décideurs organisationnels optimisent-ils vraiment ? Ce thème interroge les limites cognitives, informationnelles et temporelles qui pèsent sur toute décision, et les processus concrets, parfois désordonnés, par lesquels une organisation choisit.",
   },
@@ -33,6 +45,9 @@ export const themes: Theme[] = [
     id: "comportements-organisationnels",
     slug: "comportements-organisationnels",
     title: "Comportements organisationnels",
+    tagline:
+      "L'écart entre ce qu'une règle vise et ce qu'elle produit.",
+    keywords: ["Conformité", "Effets pervers", "Buts"],
     description:
       "Comment les individus s'ajustent-ils aux règles et aux attentes de leur organisation, parfois au point de perdre de vue le but initial ? Ce thème étudie les écarts entre les objectifs affichés d'une règle et ses effets réels sur les comportements.",
   },
@@ -40,6 +55,9 @@ export const themes: Theme[] = [
     id: "reaction-insatisfaction",
     slug: "reaction-insatisfaction",
     title: "Réaction à l'insatisfaction (Exit/Voice/Loyalty)",
+    tagline:
+      "Partir, protester ou rester : ce que chaque choix coûte.",
+    keywords: ["Défection", "Prise de parole", "Loyauté"],
     description:
       "Face au déclin d'une organisation ou à une insatisfaction, un membre peut partir, protester ou rester silencieusement fidèle. Ce thème explore ces trois répertoires de réaction et leurs conséquences sur la capacité de l'organisation à se corriger.",
   },
@@ -47,6 +65,9 @@ export const themes: Theme[] = [
     id: "apprentissage-organisationnel",
     slug: "apprentissage-organisationnel",
     title: "Apprentissage organisationnel",
+    tagline:
+      "Ajuster ses moyens, ou remettre en cause ses présupposés.",
+    keywords: ["Simple boucle", "Double boucle", "Routines défensives"],
     description:
       "Une organisation qui corrige ses erreurs apprend-elle vraiment, ou se contente-t-elle d'ajuster ses moyens sans jamais questionner ses présupposés ? Ce thème distingue les niveaux d'apprentissage et les obstacles qui bloquent la remise en question profonde.",
   },
@@ -54,6 +75,9 @@ export const themes: Theme[] = [
     id: "organisation-formelle-reelle",
     slug: "organisation-formelle-reelle",
     title: "Organisation réelle vs organisation formelle",
+    tagline:
+      "L'organigramme dit une chose, le travail quotidien une autre.",
+    keywords: ["Informel", "Arrangements", "Régulation locale"],
     description:
       "L'organigramme, les procédures et les fiches de poste décrivent une organisation idéale ; le travail quotidien en dessine une autre, faite d'arrangements, de coopérations informelles et de régulations locales. Ce thème explore cet écart et sa fonction.",
   },
@@ -61,6 +85,9 @@ export const themes: Theme[] = [
     id: "changement-organisationnel",
     slug: "changement-organisationnel",
     title: "Changement organisationnel",
+    tagline:
+      "Pourquoi les routines résistent, et ce qui les déplace.",
+    keywords: ["Résistance", "Routines", "Exploration"],
     description:
       "Pourquoi le changement dans les organisations est-il si difficile à conduire, et parfois si imprévisible dans ses effets ? Ce thème examine les tensions entre stabilité des routines, exploration de nouvelles pratiques et résistances au changement.",
   },
