@@ -11,6 +11,28 @@ change est l'objet de la preuve.
 
 ---
 
+## 0. Ce que ce dispositif produit
+
+**Des cartes.** Sept éléments — thème, concept, citation, auteur, accroche, résumé,
+sources — dont un lecteur puisse se servir, et dont chacun soit exact.
+
+Le corpus documentaire n'est pas le livrable : c'est le moyen. Il n'existe que pour que
+les cartes soient justes, et un dossier de preuve qui ne devient jamais une carte n'a servi
+à rien. Toute décision de méthode se tranche par cette question : *est-ce que cela rend les
+cartes plus justes, ou est-ce que cela les empêche d'exister ?*
+
+Les deux erreurs symétriques à éviter sont donc :
+
+- **écrire des cartes qui ne reposent sur rien** — c'est l'état d'où ce projet vient, et le
+  §1 en décrit le coût ;
+- **instruire indéfiniment sans jamais rien publier** — un dispositif qui ne sort rien
+  n'est pas prudent, il est inutile.
+
+C'est pourquoi la rédaction se fait **en lot** (`corpus-card-writer`, §7) : le travail
+documentaire est sériel par nature, la rédaction ne doit pas l'être.
+
+---
+
 ## 1. Le problème que ce dispositif résout
 
 L'application contient aujourd'hui **35 concepts rédigés de mémoire**. Ils sont
@@ -339,6 +361,7 @@ d'origine : **celui qui cherche et rédige ne valide pas ; celui qui valide ne p
 | Agent | Mission | Interdiction |
 |---|---|---|
 | `corpus-orchestrator` | Distribue le travail, applique le protocole, gère les états | Ne produit **aucune** connaissance, ne tranche jamais sur le fond |
+| `corpus-card-writer` | **Écrit les cartes**, plusieurs en un passage, à partir des dossiers documentaires | Ne mène aucune recherche, n'ajoute rien que les dossiers n'établissent |
 | `corpus-scout` | Repère les concepts candidats et les sources atteignables | Ne valide rien, ne rédige rien |
 | `corpus-primary-reader` | Établit ce que dit le texte de l'auteur, localisation à l'appui, et le passage citable s'il en existe un | Ne vulgarise pas, ne compare pas les auteurs |
 | `corpus-reception-analyst` | Établit comment la littérature académique lit ce concept | Ne modifie jamais le bloc primaire |

@@ -30,25 +30,41 @@ citation est complète ; une carte avec une citation recomposée, sortie de son 
 tirée d'un texte qui cite l'auteur au lieu de l'auteur lui-même est une faute. Si aucun
 passage citable n'a été établi, `key_quotation` reste à `null` et on le dit.
 
-## Le protocole, sans raccourci
+## Le protocole
 
-L'orchestrateur applique `docs/corpus-workflow.md` :
+Le corpus n'est pas le livrable : **les cartes le sont.** Le travail documentaire n'existe
+que pour qu'elles soient justes, et un dossier de preuve qui ne devient pas une carte n'a
+servi à rien. Le protocole est donc organisé pour aboutir, pas pour archiver.
+
+**Instruire — un agent par concept, tous les concepts en parallèle :**
 
 1. `corpus-scout` — périmètre et sources atteignables. `search_literature` et
    `search_francophone` dans le **même message** : la couche francophone se cherche en
    amont.
-2. `corpus-primary-reader` et `corpus-reception-analyst` en parallèle.
-3. `corpus-concept-analyst` — bloc `evidence`.
-4. `corpus-blind-reviewer` passe A, sur le dossier produit par
-   `npm run corpus:brief -- <id> --pass=A`. Il ne reçoit ni le brief, ni la confiance
-   amont : ce dossier est vidé mécaniquement, ne lui transmets rien d'autre.
-5. `corpus-pedagogy-writer` — bloc `pedagogy`.
-6. `corpus-blind-reviewer` passe B.
-7. `corpus-graph-curator` — bloc `graph`.
-8. `npm run corpus:validate`, puis `corpus/validated/`.
+2. `corpus-primary-reader` et `corpus-reception-analyst` en parallèle, qui déposent leurs
+   dossiers dans `corpus/evidence/<id>/`.
 
-Aucune étape ne se saute, même sur un concept qui paraît évident. Deux tours de REWORK par
-passe, trois sans convergence valent rejet.
+**Rédiger — un seul agent, tout le lot d'un coup :**
+
+3. `corpus-card-writer` — prend tous les dossiers du lot et écrit **N cartes** :
+   `evidence`, `pedagogy` et `graph` dans `corpus/validated/<id>.json`. C'est le cœur du
+   dispositif, et c'est là que le lot prend son sens : mutualiser la rédaction évite de
+   refaire neuf étapes par concept.
+
+**Contrôler et publier :**
+
+4. `corpus-blind-reviewer` sur chaque carte, à partir du dossier produit par
+   `npm run corpus:brief -- <id> --pass=B`. Il ne reçoit ni le brief, ni la confiance
+   amont : ce dossier est vidé mécaniquement, ne lui transmets rien d'autre. Il vérifie
+   en une passe la preuve **et** la fidélité de la prose.
+5. `npm run corpus:validate`, puis `/corpus-publish`.
+
+Deux tours de correction maximum par carte ; au-delà, la carte sort du lot et attend un
+complément documentaire plutôt que de retenir les autres.
+
+`corpus-concept-analyst`, `corpus-pedagogy-writer` et `corpus-graph-curator` restent
+disponibles pour reprendre une carte en particulier, mais le lot passe par
+`corpus-card-writer`.
 
 ## Le rythme
 
