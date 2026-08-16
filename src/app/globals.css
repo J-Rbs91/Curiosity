@@ -1,24 +1,106 @@
 @import "tailwindcss";
 
 :root {
-  --paper: #faf6ef;
-  --paper-raised: #f3ede1;
-  --ink: #241f18;
-  --ink-soft: #5c5344;
-  --line: #e2d8c4;
-  --accent: #a8461f;
-  --accent-soft: #f1e1d3;
-  --accent-contrast: #fffaf3;
-  --good: #3f6b3f;
-  --warn: #a8461f;
+  /*
+   * Échelle de neutres, numérotée comme celles de Tailwind : 50 est la plus
+   * claire, 950 la plus sombre. Onze valeurs, dont neuf réellement utilisées —
+   * c'est là que se joue la qualité perçue d'une interface sans couleur, bien
+   * plus que dans le choix d'un accent.
+   *
+   * Le ratio de contraste de chaque valeur sur le fond noir est indiqué : il ne
+   * se devine pas à l'œil, et c'est lui qui décide de ce qu'une valeur a le
+   * droit de porter. Seuils : 4,5 pour du texte courant, 3 pour une bordure ou
+   * une icône qui porte une fonction.
+   */
+  --n-950: #000000; /* fond                                          */
+  --n-900: #0a0a0a; /* surface à peine détachée du fond              */
+  --n-850: #121212; /* surface levée : carte, encadré, ligne de liste */
+  --n-800: #1c1c1c; /* même surface au survol, ou au contact          */
+  --n-600: #3d3d3d; /* séparateur, filet                      1,93:1 */
+  --n-500: #6b6b6b; /* bordure et icône fonctionnelles        3,94:1 */
+  --n-400: #8f8f8f; /* texte tertiaire, intitulé en capitales 6,49:1 */
+  --n-300: #b5b5b5; /* texte secondaire                      10,24:1 */
+  --n-100: #ededed; /* texte principal                       17,94:1 */
+  --n-50: #fafafa;  /* action principale, position courante  20,12:1 */
+
+  /*
+   * Rôles. Les composants n'emploient que ces noms : une valeur littérale au
+   * point d'usage rend un changement de palette impossible à mener à son terme.
+   */
+  --paper: var(--n-950);
+  --paper-raised: var(--n-850);
+  --paper-contact: var(--n-800);
+  --ink: var(--n-100);
+  --ink-soft: var(--n-300);
+  --ink-faint: var(--n-400);
+  --line: var(--n-600);
+  --line-strong: var(--n-500);
+
+  /*
+   * L'« accent » n'est plus une couleur : c'est la valeur la plus claire de
+   * l'échelle. Elle est rare, et elle ne dit qu'une chose — voici l'action, ou
+   * voici où vous êtes.
+   */
+  --accent: var(--n-50);
+  --accent-soft: var(--n-800);
+  --accent-contrast: var(--n-950);
+
+  /*
+   * Les deux seules couleurs du produit, et la règle qui les gouverne : la
+   * couleur ne signale que ce qui est juste, ce qui est faux, et ce qui est
+   * irréversible. Elles sont désaturées pour tenir sur du noir sans vibrer, et
+   * jamais employées seules — un mot les accompagne toujours, faute de quoi
+   * l'information disparaîtrait pour qui ne distingue pas ces deux teintes.
+   */
+  --good: #71a97c; /* 7,67:1 */
+  --warn: #d08a6a; /* 7,53:1 */
+
+  /*
+   * Grammaire de mouvement — voir docs/ux-direction.md.
+   * Le mouvement est la dimension porteuse de l'identité : tout le reste
+   * (palette, typographie, grille) reste volontairement conventionnel.
+   * Aucune durée ni aucune courbe ne s'écrit ailleurs que dans ces tokens.
+   */
+  --ease-out-soft: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-firm: cubic-bezier(0.77, 0, 0.175, 1);
+  --ease-lift: cubic-bezier(0.32, 0.72, 0, 1);
+
+  --dur-tap: 140ms;   /* retour à l'appui — vu des dizaines de fois par session */
+  --dur-ui: 220ms;    /* survol, sélection, onglet, indicateur de position */
+
+  /*
+   * Le déplacement et le fondu sont dissociés, et c'est ce qui rend un mouvement
+   * long agréable plutôt que lent : le contenu est entièrement lisible en 300 ms
+   * pendant qu'il continue de glisser jusqu'à son repos. Réunir les deux durées
+   * donnerait une interface qu'on attend ; les séparer donne une interface qui
+   * arrive vite et se pose doucement.
+   */
+  --dur-exit: 220ms;  /* disparition de l'ancien contenu : il ne dispute pas l'attention */
+  --dur-fade: 300ms;  /* apparition du nouveau contenu */
+  --dur-move: 560ms;  /* le glissement lui-même, écran ou phase */
+  --dur-lift: 640ms;  /* entrée et sortie de session — une à deux fois par session */
+  --dur-mark: 720ms;  /* moment marquant : le concept qu'on vient de travailler */
+
+  /*
+   * Amplitude des déplacements, en pourcentage de la surface qui bouge plutôt
+   * qu'en pixels : la même valeur tient sur toutes les tailles d'écran.
+   */
+  --shift-screen: 16%;
+  --shift-phase: 10%;
+
+  /* Hauteur réelle de la barre de navigation, hors zone sûre du système. */
+  --nav-height: 4.25rem;
 }
 
 @theme inline {
   --color-paper: var(--paper);
   --color-paper-raised: var(--paper-raised);
+  --color-paper-contact: var(--paper-contact);
   --color-ink: var(--ink);
   --color-ink-soft: var(--ink-soft);
+  --color-ink-faint: var(--ink-faint);
   --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
   --color-accent: var(--accent);
   --color-accent-soft: var(--accent-soft);
   --color-accent-contrast: var(--accent-contrast);
@@ -28,19 +110,13 @@
   --font-sans: var(--font-inter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --paper: #17150f;
-    --paper-raised: #201d15;
-    --ink: #ece4d3;
-    --ink-soft: #a89d87;
-    --line: #34301f;
-    --accent: #d98452;
-    --accent-soft: #2e2013;
-    --accent-contrast: #17150f;
-    --good: #7fa876;
-    --warn: #d98452;
-  }
+/*
+ * Application sombre, sans variante claire. Le déclarer au navigateur plutôt
+ * que le laisser deviner : c'est ce qui donne des contrôles de formulaire, des
+ * barres de défilement et des sélections de texte accordés au reste.
+ */
+:root {
+  color-scheme: dark;
 }
 
 body {
@@ -56,6 +132,285 @@ h3,
   font-family: var(--font-serif), Georgia, "Times New Roman", serif;
 }
 
+/* Le focus est fonctionnel : il reste visible sur toutes les surfaces, dans les deux thèmes. */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--n-100);
+  color: var(--n-950);
+}
+
+/*
+ * Sur fond noir, une élévation se dit par la luminosité, pas par une ombre :
+ * une ombre portée n'a rien à assombrir. Une surface qui monte s'éclaircit —
+ * d'où `bg-paper-raised` puis `hover:bg-paper-contact` sur ce qui se manipule,
+ * plutôt qu'une bordure. Une bordure sur du noir devrait atteindre le seuil de
+ * contraste des éléments d'interface pour être perçue, ce qui la rend plus
+ * bruyante que la surface qu'elle entoure.
+ */
+
+/* --------------------------------------------------------------------------
+ * Réglages de transition
+ *
+ * Ces classes ne décident jamais *quelles* propriétés sont animées — c'est le
+ * rôle des utilitaires `transition-colors` / `transition-transform` posés à
+ * côté d'elles. Elles ne portent que la durée et la courbe, pour qu'aucune
+ * valeur ne soit tapée au cas par cas dans un composant.
+ * -------------------------------------------------------------------------- */
+
+.motion-tap {
+  transition-duration: var(--dur-tap);
+  transition-timing-function: var(--ease-out-soft);
+}
+
+.motion-ui {
+  transition-duration: var(--dur-ui);
+  transition-timing-function: var(--ease-out-soft);
+}
+
+.motion-mark {
+  transition-duration: var(--dur-mark);
+  transition-timing-function: var(--ease-lift);
+}
+
+/* --------------------------------------------------------------------------
+ * Retour à l'appui
+ *
+ * Tout ce qui s'enfonce le montre. Deux amplitudes seulement : une cible
+ * compacte s'enfonce franchement, une grande surface à peine — un même
+ * facteur appliqué à une carte de 300 px produit un déplacement de bord
+ * visible qui se lit comme un défaut.
+ * -------------------------------------------------------------------------- */
+
+/*
+ * `.press` porte la liste complète des propriétés d'une cible : l'enfoncement
+ * et les changements de couleur voyagent ensemble. Ne pas lui adjoindre
+ * `transition-colors` sur le même élément — les deux déclarent
+ * `transition-property`, et la dernière lue gagne silencieusement.
+ */
+.press,
+.press-soft {
+  transition-property: transform, color, background-color, border-color, opacity;
+  transition-duration: var(--dur-tap);
+  transition-timing-function: var(--ease-out-soft);
+}
+
+.press:active:not(:disabled) {
+  transform: scale(0.96);
+}
+
+.press-soft:active:not(:disabled) {
+  transform: scale(0.985);
+}
+
+/* --------------------------------------------------------------------------
+ * Entrées
+ *
+ * Déclarées en `no-preference` plutôt que neutralisées en `reduce` : un
+ * élément dont l'animation est coupée après coup reste parfois invisible ou
+ * mal positionné. Ici, sans animation, l'état affiché est l'état final.
+ * -------------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: no-preference) {
+  .enter-rise {
+    animation: enter-rise var(--dur-move) var(--ease-lift) both;
+  }
+
+  .enter-lift {
+    animation: enter-lift var(--dur-lift) var(--ease-lift) both;
+  }
+
+  .enter-mark {
+    animation: enter-rise var(--dur-mark) var(--ease-lift) both;
+  }
+
+  /*
+   * Cascade d'arrivée, plafonnée à six éléments : au-delà, le décalage cumulé
+   * devient une attente. Elle ne retarde jamais la possibilité d'agir — les
+   * éléments sont cliquables avant d'avoir fini d'apparaître.
+   */
+  .stagger > * {
+    animation: enter-rise var(--dur-move) var(--ease-lift) both;
+  }
+  .stagger > *:nth-child(1) { animation-delay: 0ms; }
+  .stagger > *:nth-child(2) { animation-delay: 70ms; }
+  .stagger > *:nth-child(3) { animation-delay: 140ms; }
+  .stagger > *:nth-child(4) { animation-delay: 210ms; }
+  .stagger > *:nth-child(5) { animation-delay: 280ms; }
+  .stagger > *:nth-child(n + 6) { animation-delay: 350ms; }
+}
+
+@keyframes enter-rise {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes enter-lift {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 5%, 0) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+ * Transitions d'écran et de phase (View Transitions API)
+ *
+ * Une direction, un sens de lecture : on descend dans le corpus, le contenu
+ * part vers la gauche ; on remonte, il revient par la droite. Le déplacement
+ * est court — 32 px suffisent à dire le sens sans demander de suivre un
+ * élément qui traverse l'écran.
+ * -------------------------------------------------------------------------- */
+
+/* Une transition en cours ne doit pas avaler les clics. */
+::view-transition {
+  pointer-events: none;
+}
+
+/*
+ * Tout ce qui n'est pas dans un `<Screen>` — le fond, la barre de navigation —
+ * appartient à l'instantané racine et se fond simplement d'un état à l'autre.
+ * Entre deux onglets la barre est identique et le fondu ne se voit pas ; à
+ * l'entrée en session elle disparaît, et c'est ce fondu qui la fait sortir.
+ */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: var(--dur-screen);
+  animation-timing-function: var(--ease-out-soft);
+}
+
+::view-transition-old(.screen-deeper) {
+  --vt-shift: calc(-1 * var(--shift-screen));
+  animation:
+    var(--dur-exit) var(--ease-out-soft) both vt-fade reverse,
+    var(--dur-move) var(--ease-lift) both vt-shift-x reverse;
+}
+::view-transition-new(.screen-deeper) {
+  --vt-shift: var(--shift-screen);
+  animation:
+    var(--dur-fade) var(--ease-out-soft) var(--dur-exit) both vt-fade,
+    var(--dur-move) var(--ease-lift) both vt-shift-x;
+}
+
+::view-transition-old(.screen-back) {
+  --vt-shift: var(--shift-screen);
+  animation:
+    var(--dur-exit) var(--ease-out-soft) both vt-fade reverse,
+    var(--dur-move) var(--ease-lift) both vt-shift-x reverse;
+}
+::view-transition-new(.screen-back) {
+  --vt-shift: calc(-1 * var(--shift-screen));
+  animation:
+    var(--dur-fade) var(--ease-out-soft) var(--dur-exit) both vt-fade,
+    var(--dur-move) var(--ease-lift) both vt-shift-x;
+}
+
+/*
+ * À l'intérieur d'une session, le même sens de lecture, en plus court : on
+ * avance d'une phase, pas d'un niveau.
+ */
+::view-transition-old(.phase-next) {
+  --vt-shift: calc(-1 * var(--shift-phase));
+  animation:
+    var(--dur-exit) var(--ease-out-soft) both vt-fade reverse,
+    var(--dur-move) var(--ease-lift) both vt-shift-x reverse;
+}
+::view-transition-new(.phase-next) {
+  --vt-shift: var(--shift-phase);
+  animation:
+    var(--dur-fade) var(--ease-out-soft) var(--dur-exit) both vt-fade,
+    var(--dur-move) var(--ease-lift) both vt-shift-x;
+}
+
+::view-transition-old(.phase-prev) {
+  --vt-shift: var(--shift-phase);
+  animation:
+    var(--dur-exit) var(--ease-out-soft) both vt-fade reverse,
+    var(--dur-move) var(--ease-lift) both vt-shift-x reverse;
+}
+::view-transition-new(.phase-prev) {
+  --vt-shift: calc(-1 * var(--shift-phase));
+  animation:
+    var(--dur-fade) var(--ease-out-soft) var(--dur-exit) both vt-fade,
+    var(--dur-move) var(--ease-lift) both vt-shift-x;
+}
+
+/* Entrée en session : la session monte par-dessus le reste de l'application. */
+::view-transition-old(.screen-enter-session) {
+  animation: var(--dur-exit) var(--ease-out-soft) both vt-fade reverse;
+}
+::view-transition-new(.screen-enter-session) {
+  animation:
+    var(--dur-fade) var(--ease-out-soft) var(--dur-exit) both vt-fade,
+    var(--dur-lift) var(--ease-lift) both vt-lift;
+}
+
+/* Sortie de session : elle repart par où elle est venue. */
+::view-transition-old(.screen-leave-session) {
+  animation:
+    var(--dur-exit) var(--ease-out-soft) both vt-fade reverse,
+    var(--dur-lift) var(--ease-lift) both vt-lift reverse;
+}
+::view-transition-new(.screen-leave-session) {
+  animation: var(--dur-fade) var(--ease-out-soft) var(--dur-exit) both vt-fade;
+}
+
+/*
+ * Le fondu porte un flou de deux pixels. Sans lui, deux contenus qui se croisent
+ * se lisent comme deux objets superposés ; avec lui, l'œil ne voit qu'une seule
+ * chose qui se transforme. Deux pixels ne coûtent rien au rendu — la limite au
+ * delà de laquelle un flou devient sensible est dix fois plus haute.
+ */
+@keyframes vt-fade {
+  from {
+    opacity: 0;
+    filter: blur(2px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@keyframes vt-shift-x {
+  from {
+    translate: var(--vt-shift);
+  }
+  to {
+    translate: 0;
+  }
+}
+
+@keyframes vt-lift {
+  from {
+    translate: 0 5%;
+  }
+  to {
+    translate: 0;
+  }
+}
+
+/* --------------------------------------------------------------------------
+ * Mouvement réduit
+ *
+ * `prefers-reduced-motion` est une préférence système exprimée par des
+ * personnes pour qui le mouvement provoque un malaise. Les déplacements
+ * disparaissent ; les fondus, eux, sont conservés — ils ne posent pas le
+ * même problème et ils portent seuls la continuité une fois le reste retiré.
+ * -------------------------------------------------------------------------- */
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -65,9 +420,16 @@ h3,
     transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
   }
-}
 
-::selection {
-  background: var(--accent-soft);
-  color: var(--accent);
+  .press:active,
+  .press-soft:active {
+    transform: none;
+  }
+
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation-delay: 0s !important;
+    animation-duration: 0.001ms !important;
+  }
 }

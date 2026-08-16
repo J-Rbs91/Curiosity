@@ -8,7 +8,7 @@ interface ChipProps {
 export function Chip({ children, tone = "default" }: ChipProps) {
   const toneClasses =
     tone === "accent"
-      ? "bg-accent-soft text-accent"
+      ? "bg-paper-contact text-ink"
       : "bg-paper-raised text-ink-soft";
 
   return (

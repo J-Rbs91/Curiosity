@@ -77,12 +77,6 @@ function coverageCount<T extends { id: string }>(
   return map;
 }
 
-function estimatedMinutes(type: SessionType, preferredDuration: number): number {
-  const base = preferredDuration;
-  if (type === "case-study" || type === "comparison") return Math.max(base, 5);
-  return base;
-}
-
 function pickLeastCovered<T extends { id: string; difficulty?: number }>(
   candidates: T[],
   coverageOf: (item: T) => number,
@@ -291,7 +285,6 @@ function buildPlan(
     primaryConceptId: primary.id,
     secondaryConceptId,
     caseStudyId,
-    estimatedMinutes: estimatedMinutes(type, progress.settings.preferredDuration),
     headline,
   };
 }

@@ -5,10 +5,12 @@ import { useRouter } from "next/navigation";
 import { concepts, authors, themes, caseStudies } from "@/content";
 import { getProgressService } from "@/services/progress";
 import { selectNextSession } from "@/services/learning-engine";
-import { SESSION_TYPE_META } from "@/domain/sessions";
-import type { SessionPlan } from "@/types";
+import type { Concept, SessionPlan } from "@/types";
 import { storePendingSession } from "@/lib/pending-session";
+import { Screen } from "@/components/motion/Screen";
+import { SCREEN_MOTION } from "@/components/motion/screen-motion";
 import { Button } from "@/components/ui/Button";
+import { ShareToAI } from "@/components/ui/ShareToAI";
 
 const CONTENT = { concepts, authors, themes, caseStudies };
 
@@ -19,8 +21,7 @@ export default function TodayPage() {
   const [plan, setPlan] = useState<SessionPlan | null>(null);
 
   useEffect(() => {
-    const service = getProgressService();
-    const state = service.getState();
+    const state = getProgressService().getState();
     // Lecture localStorage + tirage du moteur pédagogique : ne peut se faire qu'après le
     // montage côté client, une seule fois par ouverture de l'écran.
     // eslint-disable-next-line react-hooks/set-state-in-effect
@@ -33,7 +34,7 @@ export default function TodayPage() {
     if (!plan) return;
     getProgressService().markFirstLaunchCompleted();
     storePendingSession(plan);
-    router.push("/learn");
+    router.push("/learn", { transitionTypes: SCREEN_MOTION.enterSession });
   }
 
   if (!mounted) {
@@ -42,56 +43,65 @@ export default function TodayPage() {
 
   if (firstLaunch) {
     return (
-      <div className="mx-auto flex min-h-svh max-w-md flex-col justify-center gap-8 px-6">
-        <p className="text-xs font-medium uppercase tracking-wide text-accent">
-          Sociologie des organisations
-        </p>
-        <h1 className="font-serif-display text-[30px] font-semibold leading-snug text-ink">
-          Comprendre comment fonctionnent réellement les organisations.
-        </h1>
-        <p className="text-[17px] leading-relaxed text-ink-soft">
-          Quelques minutes à chaque ouverture pour découvrir, relier et appliquer les grands
-          concepts de sociologie des organisations.
-        </p>
-        <Button onClick={start} className="w-fit" disabled={!plan}>
-          Commencer
-        </Button>
-      </div>
+      <Screen>
+        <div className="stagger mx-auto flex min-h-svh max-w-md flex-col justify-center gap-10 px-6">
+          <h1 className="font-serif-display text-[32px] font-semibold leading-tight text-ink">
+            Comprendre comment fonctionnent réellement les organisations.
+          </h1>
+          <p className="text-[17px] leading-relaxed text-ink-soft">
+            Un concept à la fois, à chaque ouverture.
+          </p>
+          <Button onClick={start} className="w-fit" disabled={!plan}>
+            Commencer
+          </Button>
+        </div>
+      </Screen>
     );
   }
 
-  const primary = plan ? concepts.find((c) => c.id === plan.primaryConceptId) : undefined;
-  const primaryAuthors = primary
-    ? authors.filter((a) => primary.authors.includes(a.id))
-    : [];
-  const primaryThemes = primary ? themes.filter((t) => primary.themes.includes(t.id)) : [];
+  const concept = plan
+    ? concepts.find((c) => c.id === plan.primaryConceptId)
+    : undefined;
 
   return (
-    <div className="mx-auto flex min-h-svh max-w-md flex-col justify-center gap-8 px-6">
-      <p className="text-xs font-medium uppercase tracking-wide text-accent">
-        Sociologie des organisations
+    <Screen>
+      {/*
+       * L'écran du jour ne porte que quatre choses : le thème, le concept, son
+       * résumé et son auteur. Tout le reste — durée annoncée, type de session,
+       * niveau de maîtrise — a été retiré : c'était de l'information sur
+       * l'application, pas sur ce qu'il y a à comprendre.
+       */}
+      <div className="mx-auto flex min-h-svh max-w-md flex-col justify-center px-6 py-16">
+        {concept && <ConceptCard concept={concept} onStart={start} />}
+      </div>
+    </Screen>
+  );
+}
+
+function ConceptCard({ concept, onStart }: { concept: Concept; onStart: () => void }) {
+  const conceptAuthors = authors.filter((a) => concept.authors.includes(a.id));
+  const conceptThemes = themes.filter((t) => concept.themes.includes(t.id));
+
+  return (
+    <div className="stagger flex flex-col gap-8">
+      <p className="text-xs font-medium uppercase tracking-[0.12em] text-ink-faint">
+        {conceptThemes.map((t) => t.title).join(" · ")}
       </p>
 
-      {plan && (
-        <>
-          <div className="space-y-3">
-            <p className="text-sm font-medium text-ink-soft">Aujourd&apos;hui</p>
-            <h1 className="font-serif-display text-[26px] font-semibold leading-snug text-ink">
-              {plan.headline}
-            </h1>
-          </div>
+      <h1 className="font-serif-display text-[34px] font-semibold leading-[1.15] text-ink">
+        {concept.title}
+      </h1>
 
-          <p className="text-sm text-ink-soft">
-            {primaryAuthors.map((a) => a.name).join(", ")}
-            {primaryAuthors.length > 0 && primaryThemes.length > 0 && " · "}
-            {primaryThemes.map((t) => t.title).join(", ")} · {plan.estimatedMinutes} min
-          </p>
+      <p className="text-[18px] leading-relaxed text-ink-soft">{concept.shortExplanation}</p>
 
-          <Button onClick={start} className="w-fit">
-            {SESSION_TYPE_META[plan.type].verb}
-          </Button>
-        </>
-      )}
+      <p className="text-[15px] text-ink-faint">
+        {conceptAuthors.map((a) => a.name).join(", ")}
+      </p>
+
+      <div className="flex items-center gap-2">
+        <Button onClick={onStart}>Approfondir</Button>
+        <ShareToAI concept={concept} authors={conceptAuthors} themes={conceptThemes} />
+      </div>
     </div>
   );
 }

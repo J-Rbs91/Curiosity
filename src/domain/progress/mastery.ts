@@ -19,23 +19,6 @@ export function nextMasteryScore(
 /** Score de première découverte, avant toute question de vérification. */
 export const DISCOVERY_MASTERY_SCORE: MasteryScore = 1;
 
-export function masteryLabel(score: MasteryScore): string {
-  switch (score) {
-    case 0:
-      return "Jamais vu";
-    case 1:
-      return "Découvert";
-    case 2:
-      return "Reconnu";
-    case 3:
-      return "Compris";
-    case 4:
-      return "Applicable";
-    case 5:
-      return "Maîtrisé";
-  }
-}
-
 export function isUnderstood(score: MasteryScore): boolean {
   return score >= 3;
 }

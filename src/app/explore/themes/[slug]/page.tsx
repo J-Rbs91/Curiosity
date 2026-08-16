@@ -1,24 +1,16 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { useParams, notFound } from "next/navigation";
 import Link from "next/link";
+import { ArrowLeft } from "lucide-react";
 import { themes, concepts, authors } from "@/content";
 import { conceptsByTheme } from "@/domain/concepts/graph";
-import { getProgressService } from "@/services/progress";
-import { masteryLabel } from "@/domain/progress/mastery";
-import type { MasteryScore, UserConceptProgress } from "@/types";
+import { Screen } from "@/components/motion/Screen";
+import { SCREEN_MOTION } from "@/components/motion/screen-motion";
 
 export default function ThemeDetailPage() {
   const params = useParams<{ slug: string }>();
   const theme = themes.find((t) => t.slug === params.slug);
-  const [progress, setProgress] = useState<Record<string, UserConceptProgress>>({});
-
-  useEffect(() => {
-    // Lecture localStorage : impossible pendant le rendu serveur, doit se faire après le montage.
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setProgress(getProgressService().getState().concepts);
-  }, []);
 
   if (!theme) return notFound();
 
@@ -27,40 +19,43 @@ export default function ThemeDetailPage() {
   const contributingAuthors = authors.filter((a) => contributingAuthorIds.has(a.id));
 
   return (
-    <div className="mx-auto max-w-md px-5 pt-8 pb-10">
-      <Link href="/explore" className="text-sm text-ink-soft hover:text-accent">
-        ← Explorer
-      </Link>
-      <h1 className="mt-3 font-serif-display text-2xl font-semibold text-ink">{theme.title}</h1>
-      <p className="mt-3 text-[15px] leading-relaxed text-ink">{theme.description}</p>
+    <Screen>
+      <div className="mx-auto max-w-md px-6 pt-10 pb-12">
+        {/* Le retour ramène sur l'onglet d'où l'on vient, pas sur le premier. */}
+        <Link
+          href="/explore?vue=themes"
+          transitionTypes={SCREEN_MOTION.back}
+          className="press -ml-1 inline-flex items-center gap-1.5 text-sm text-ink-faint hover:text-ink"
+        >
+          <ArrowLeft size={16} />
+          Explorer
+        </Link>
 
-      {contributingAuthors.length > 0 && (
-        <p className="mt-4 text-sm text-ink-soft">
-          Éclairé notamment par {contributingAuthors.map((a) => a.name).join(", ")}.
-        </p>
-      )}
+        <h1 className="mt-6 font-serif-display text-[30px] font-semibold leading-tight text-ink">
+          {theme.title}
+        </h1>
+        <p className="mt-5 text-[17px] leading-relaxed text-ink-soft">{theme.description}</p>
 
-      <h2 className="mt-8 text-xs font-medium uppercase tracking-wide text-accent">
-        Concepts ({themeConcepts.length})
-      </h2>
-      <ul className="mt-3 space-y-2">
-        {themeConcepts.map((concept) => {
-          const p = progress[concept.id];
-          return (
+        {contributingAuthors.length > 0 && (
+          <p className="mt-4 text-sm text-ink-faint">
+            {contributingAuthors.map((a) => a.name).join(", ")}
+          </p>
+        )}
+
+        <ul className="stagger mt-10 space-y-1">
+          {themeConcepts.map((concept) => (
             <li key={concept.id}>
               <Link
                 href={`/explore/concepts/${concept.slug}`}
-                className="flex items-center justify-between rounded-2xl border border-line px-4 py-3 hover:border-accent"
+                transitionTypes={SCREEN_MOTION.deeper}
+                className="press-soft block rounded-2xl py-3.5 text-[17px] text-ink hover:bg-paper-raised"
               >
-                <span className="text-[15px] text-ink">{concept.title}</span>
-                <span className="text-xs text-ink-soft">
-                  {masteryLabel((p?.masteryScore ?? 0) as MasteryScore)}
-                </span>
+                {concept.title}
               </Link>
             </li>
-          );
-        })}
-      </ul>
-    </div>
+          ))}
+        </ul>
+      </div>
+    </Screen>
   );
 }

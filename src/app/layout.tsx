@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Source_Serif_4, Inter } from "next/font/google";
 import "./globals.css";
-import { BottomNav } from "@/components/ui/BottomNav";
+import { AppShell } from "@/components/ui/AppShell";
 import { ServiceWorkerRegistration } from "@/components/ui/ServiceWorkerRegistration";
 
 const sourceSerif = Source_Serif_4({
@@ -39,10 +39,8 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 1,
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#faf6ef" },
-    { media: "(prefers-color-scheme: dark)", color: "#17150f" },
-  ],
+  // Application sombre, sans variante claire : une seule couleur de barre système.
+  themeColor: "#000000",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -53,8 +51,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col bg-paper text-ink">
         <ServiceWorkerRegistration />
-        <div className="flex-1 pb-20">{children}</div>
-        <BottomNav />
+        <AppShell>{children}</AppShell>
       </body>
     </html>
   );
