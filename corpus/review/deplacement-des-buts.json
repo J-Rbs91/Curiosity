@@ -2,18 +2,19 @@
   "$schema": "../schema/concept.record.schema.json",
   "id": "deplacement-des-buts",
   "slug": "deplacement-des-buts",
-  "status": "VALIDATED",
+  "status": "IN_REVIEW",
   "canonical_name_fr": "Déplacement des buts",
   "canonical_name_en": "Displacement of goals",
-
   "scope": {
     "in_scope": true,
     "rationale": "Le concept explique pourquoi une organisation peut fonctionner exactement comme elle a été conçue et manquer néanmoins ce pour quoi elle a été conçue. Il porte sur le rapport entre les règles et les buts — l'objet même de toute coordination organisée — et il en donne la raison structurelle : ce sont les dispositifs qui produisent la fiabilité (discipline, carrière graduée, ancienneté, catégorisation) qui produisent aussi la conversion du moyen en fin. Sans lui, on ne dispose que de deux lectures fausses des mêmes faits : l'incompétence des agents ou l'inefficacité de la bureaucratie en général."
   },
-
   "attribution": {
     "authors": [
-      { "name": "Robert K. Merton", "app_author_id": "merton" }
+      {
+        "name": "Robert K. Merton",
+        "app_author_id": "merton"
+      }
     ],
     "authorship": "SOLE_AUTHOR",
     "associated_author": null,
@@ -23,42 +24,25 @@
       "note": "Ce que Merton écrit est « displacement of goals », en italiques dans l'original (p. 563), introduit par « there occurs the familiar process of… ». Le mot « familiar » est décisif : le processus est présenté comme déjà observé, et la note 11 attachée à cette phrase même énumère les ascendances que Merton reconnaît — l'« heterogony of ends » de Wundt, la « Paradoxie der Folgen » de Weber, les observations de MacIver, la remarque de Lasswell sur « his infinite capacity for making ends of his means », son propre article de 1936 sur les conséquences non anticipées, et la « functional autonomy of motives » d'Allport, dont il dit que sa formulation à lui est « complementary ». Il y définit sa contribution en propre : Allport « does not consider those phases of the social structure which conduce toward the “transformation of motives” » — l'un tient le versant psychologique, lui « the constraints of the social structure ». Ce qui revient donc à Merton, c'est l'ancrage STRUCTUREL du déplacement, non le phénomène ni le vocabulaire. Deux réserves à conserver. (1) La forme nominale figée « goal displacement », aujourd'hui usuelle en anglais et érigée en catégorie autonome de la théorie des organisations, n'apparaît nulle part dans l'article de 1940 (recherche plein texte : 0 occurrence) ; elle est en titre d'un article d'ASQ en 1968 (Warner & Havens) et chapitre d'ouvrage en 1981 (Sieber), mais qui l'a figée n'est pas établi — ni Warner & Havens ni Sills (1957) n'ont été ouverts. (2) L'attribution est disputée dans la littérature de réception : Thoenig (2022) fait remonter le terme à Michels (1914), que Merton ne cite nulle part en 1940 (0 occurrence), et où il n'est question ni de partis, ni d'oligarchie. Aucune source de niveau B ou C ouverte ici ne tranche cette généalogie."
     }
   },
-
   "evidence": {
     "concept_definition": "Chez Merton (1940, p. 563), le déplacement des buts est le processus par lequel « Adherence to the rules, originally conceived as a means, becomes transformed into an end-in-itself » — l'observance des règles, conçue à l'origine comme un moyen, se transforme en fin en soi ; il le formule aussi en termes de valeurs, « an instrumental value becomes a terminal value » (formule qu'il met entre guillemets sans en nommer la source, note 11), et en termes de sentiments : le mécanisme repose sur « a transference of the sentiments from the aims of the organization onto the particular details of behavior required by the rules » (p. 563, « aims » en italiques dans l'original), autrement dit « Displacement of sentiments from goals onto means » (p. 564). Point capital de formulation : ce qui se déplace en premier lieu, dans le texte, ce sont les SENTIMENTS, pas les buts eux-mêmes. Le but de l'organisation n'est ni oublié ni supprimé ; il cesse d'être ce à quoi le fonctionnaire est affectivement attaché, la règle prenant sa place de fin. La conséquence sur la performance n'arrive qu'ensuite, et Merton la donne comme un degré et non comme un automatisme : « This may be exaggerated to the point where primary concern with conformity to the rules interferes with the achievement of the purposes of the organization » (p. 563).",
-
     "mechanism": [
       "0. Le cadre, posé avant tout le reste (p. 560). L'objet est « a formal, rationally organized social structure », c'est-à-dire une structure « in which, ideally, every series of actions is functionally related to the purposes of the organization ». Le mot « ideally » est de Merton : le rattachement de chaque action aux buts est une propriété du type, pas un constat. Le type idéal en est la bureaucratie, dont « in many respects, the classical analysis […] is that by Max Weber ». Merton recense d'abord les acquis — règles générales et abstraites qui dispensent d'instruire chaque cas, « constant use of categorization » (p. 561), sécurité de l'emploi, pensions, salaires à échelons, promotion régulée — et accorde que « The chief merit of bureaucracy is its technical efficiency » (p. 561).",
-
       "1. Le geste de Merton n'est pas de réfuter Weber mais de changer de face (p. 562). « Any action can be considered in terms of what it attains or what it fails to attain. “A way of seeing is also a way of not seeing — a focus upon object A involves a neglect of object B.” » (phrase de Kenneth Burke, note 10). Puis : « In his discussion, Weber is almost exclusively concerned with what the bureaucratic structure attains: precision, reliability, efficiency. This same structure may be examined from another perspective provided by the ambivalence. What are the limitations of the organization designed to attain these goals? » C'est la question de l'article, et elle porte sur une organisation qui atteint ses buts, non sur une organisation en panne.",
-
       "2. Première exigence structurelle : la fiabilité (p. 562). « the bureaucratic structure exerts a constant pressure upon the official to be “methodical, prudent, disciplined.” If the bureaucracy is to operate successfully, it must attain a high degree of reliability of behavior, an unusual degree of conformity with prescribed patterns of action. » Merton précise que la discipline peut être « as highly developed in a religious or economic bureaucracy as in the army » : le mécanisme n'est pas donné pour propre à l'administration publique.",
-
       "3. La fiabilité ne s'obtient pas par la règle seule, mais par le sentiment (p. 562). « Discipline can be effective only if the ideal patterns are buttressed by strong sentiments which entail devotion to one's duties, a keen sense of the limitation of one's authority and competence, and methodical performance of routine activities. The efficacy of social structure depends ultimately upon infusing group participants with appropriate attitudes and sentiments. » C'est le maillon décisif : pour tenir, la règle doit être investie affectivement, et l'organisation s'en donne les moyens — « there are definite arrangements in the bureaucracy for inculcating and reinforcing these sentiments » (p. 562-563).",
-
       "4. Le sentiment est délibérément surdosé (p. 563). « in order to ensure discipline (the necessary reliability of response), these sentiments are often more intense than is technically necessary. There is a margin of safety, so to speak, in the pressure exerted by these sentiments upon the bureaucrat to conform to his patterned obligations, in much the same sense that added allowances (precautionary over-estimations) are made by the engineer in designing the supports for a bridge. » L'analogie de l'ingénieur est de Merton : la surcharge affective est un coefficient de sécurité, donc rationnelle du point de vue de l'organisation.",
-
       "5. Le transfert — pivot du mécanisme (p. 563). « But this very emphasis leads to a transference of the sentiments from the aims of the organization onto the particular details of behavior required by the rules. » C'est le surdosage lui-même, et non un défaut d'exécution, qui produit le glissement : l'attachement quitte le but et se fixe sur le détail du comportement prescrit.",
-
       "6. La conversion du moyen en fin (p. 563). « Adherence to the rules, originally conceived as a means, becomes transformed into an end-in-itself; there occurs the familiar process of displacement of goals whereby “an instrumental value becomes a terminal value.” » Puis ce que devient la discipline : « Discipline, readily interpreted as conformance with regulations, whatever the situation, is seen not as a measure designed for specific purposes but becomes an immediate value in the life-organization of the bureaucrat. » Deux mots portent : « whatever the situation » — la règle s'applique désormais indépendamment du cas — et « life-organization » — la valeur n'est pas seulement professionnelle, elle organise l'existence de l'intéressé.",
-
       "7. Rigidité, formalisme, ritualisme (p. 563). « This emphasis, resulting from the displacement of the original goals, develops into rigidities and an inability to adjust readily. Formalism, even ritualism, ensues with an unchallenged insistence upon punctilious adherence to formalized procedures. » Le mot important est « unchallenged » : la procédure cesse d'être discutable. Le ritualisme est ici une CONSÉQUENCE du déplacement, non son nom.",
-
       "8. Le seuil — et seulement alors, la contre-performance (p. 563). « This may be exaggerated to the point where primary concern with conformity to the rules interferes with the achievement of the purposes of the organization, in which case we have the familiar phenomenon of the technicism or red tape of the official. » Merton pose un DEGRÉ, non une conséquence nécessaire du déplacement. La figure limite est donnée comme telle : « An extreme product of this process of displacement of goals is the bureaucratic virtuoso, who never forgets a single rule binding his action and hence is unable to assist many of his clients » — un excès de mémoire des règles, pas un oubli. Merton l'illustre par un fait daté : Bernt Balchen, pilote de l'amiral Byrd lors du vol au-dessus du pôle Sud, s'est vu refuser sa naturalisation américaine parce que l'expédition l'avait tenu hors du territoire, le bureau de naturalisation ne pouvant « proceed on the assumption that Little America is American soil » (p. 563-564, d'après le Chicago Tribune du 24 juin 1931, cité via Thurman Arnold).",
-
       "9. La récapitulation, par Merton lui-même (p. 564). « The process may be briefly recapitulated. (1) An effective bureaucracy demands reliability of response and strict devotion to regulations. (2) Such devotion to the rules leads to their transformation into absolutes; they are no longer conceived as relative to a given set of purposes. (3) This interferes with ready adaptation under special conditions not clearly envisaged by those who drew up the general rules. (4) Thus, the very elements which conduce toward efficiency in general produce inefficiency in specific instances. » Suit une clause essentielle sur l'aveuglement : « Full realization of the inadequacy is seldom attained by members of the group who have not divorced themselves from the “meanings” which the rules have for them. These rules in time become symbolic in cast, rather than strictly utilitarian. » Les intéressés ne peuvent guère voir l'inadéquation, parce qu'ils sont dans le sens que la règle a pour eux.",
-
       "10. Première source structurelle du sentiment déplacé : la carrière (p. 564). « The bureaucrat's official life is planned for him in terms of a graded career, through the organizational devices of promotion by seniority, pensions, incremental salaries, etc., all of which are designed to provide incentives for disciplined action and conformity to the official regulations. […] But these very devices which increase the probability of conformance also lead to an over-concern with strict adherence to regulations which induces timidity, conservatism, and technicism. Displacement of sentiments from goals onto means is fostered by the tremendous symbolic significance of the means (rules). » Même figure logique qu'à l'étape 5 : ce sont les dispositifs qui fonctionnent qui produisent l'effet.",
-
       "11. Deuxième source : l'esprit de corps (p. 564-565). « Functionaries have the sense of a common destiny for all those who work together. […] In-group aggression is thus minimized and this arrangement is therefore conceived to be positively functional for the bureaucracy. However, the esprit de corps and informal social organization which typically develops in such situations often leads the personnel to defend their entrenched interests rather than to assist their clientele and elected higher officials. » Merton écarte aussitôt l'explication par l'intérêt matériel : « It would be much too facile and partly erroneous to attribute such resistance by bureaucrats simply to vested interests. […] They have a pride of craft which leads them to resist change in established routines » (p. 565).",
-
       "12. Troisième source : la sanctification (p. 565), présentée comme « the counterpart of the process of secularization ». « through sentiment-formation, emotional dependence upon bureaucratic symbols and status, and affective involvement in spheres of competence and authority, there develop prerogatives involving attitudes of moral legitimacy which are established as values in their own right, and are no longer viewed as merely technical means for expediting administration. One may note a tendency for certain bureaucratic norms, originally introduced for technical reasons, to become rigidified and sacred, although, as Durkheim would say, they are laïque en apparence. »",
-
       "13. Quatrième source, et bascule vers le client : dépersonnalisation et catégorisation (p. 565-566). « Both this and the categorizing tendency, which develops from the dominant role of general, abstract rules, tend to produce conflict in the bureaucrat's contacts with the public or clientele. Since functionaries minimize personal relations and resort to categorization, the peculiarities of individual cases are often ignored. But the client who, quite understandably, is convinced of the “special features” of his own problem often objects to such categorical treatment. Stereotyped behavior is not adapted to the exigencies of individual problems. » L'intensité de ce conflit dépend d'une possibilité de sortie : « This source of conflict may be minimized in private enterprise since the client can register an effective protest by transferring his trade to another organization within the competitive system. But with the monopolistic nature of the public organization, no such alternative is possible » (p. 566).",
-
       "14. Le mécanisme n'a pas qu'un signe (p. 567-568). Le conflit interne à la bureaucratie naît de la situation symétrique, « when personalized relationships are substituted for the structurally required impersonal relationships » ; il est sanctionné par des épithètes — « graft, favoritism, nepotism, apple-polishing » — qui « are clearly manifestations of injured sentiments », et cette réaction est fonctionnelle : elle sert « the function of maintaining the essential structural elements of bureaucracy […] by helping to prevent the disintegration of the bureaucratic structure ». Le même attachement affectif aux règles qui produit le déplacement des buts protège aussi la structure."
     ],
-
     "conditions": {
       "appears_when": [
         "L'organisation exige « a high degree of reliability of behavior, an unusual degree of conformity with prescribed patterns of action » (p. 562). Sans exigence de fiabilité, pas de discipline à surdoser.",
@@ -82,7 +66,6 @@
         "À l'inverse, le texte indique une force de rappel vers la règle : la substitution du personnel à l'impersonnel déclenche un ressentiment dont la fonction est de « prevent the disintegration of the bureaucratic structure » (p. 568). Le mécanisme est donc plutôt protégé qu'auto-correcteur."
       ]
     },
-
     "key_quotation": {
       "text": "L'observance des règles, conçue à l'origine comme un moyen, se transforme en fin en soi ; il se produit le processus familier du déplacement des buts, par lequel « une valeur instrumentale devient une valeur terminale ». La discipline, aisément interprétée comme la conformité aux règlements quelle que soit la situation, n'est plus vue comme une mesure conçue pour des fins déterminées, mais devient une valeur immédiate dans l'organisation de la vie du bureaucrate.",
       "language": "fr",
@@ -97,7 +80,6 @@
       "primary_source_index": 0,
       "locator": "Social Forces, vol. 18, n° 4, mai 1940, p. 563, colonne de gauche (fin) et colonne de droite (début). Passage contigu, aucune coupe."
     },
-
     "primary_sources": [
       {
         "citation": "Robert K. Merton, « Bureaucratic Structure and Personality », Social Forces, vol. 18, n° 4, mai 1940, p. 560-568. University of North Carolina Press. Merton y est affilié à Tulane University.",
@@ -133,7 +115,6 @@
         "consulted": "metadata-only"
       }
     ],
-
     "secondary_sources": [
       {
         "citation": "Kenneth Burke, Permanence and Change: An Anatomy of Purpose, New York, New Republic, 1935.",
@@ -206,7 +187,6 @@
         "establishes": "TEXTE INTÉGRAL CONSULTÉ (PDF du dépôt RePub, Erasmus). Enregistré pour un constat NÉGATIF : l'article décrit des effets voisins — « measure fixation », « tunnel vision », « suboptimization », « perverse learning » — sans une seule occurrence de « Merton », « goal displacement » ou « displacement » dans tout le texte (recherche exhaustive : zéro occurrence). La littérature contemporaine sur le paradoxe de la performance retrouve donc des effets analogues sans passer par Merton : proximité thématique attestée, filiation NON documentée."
       }
     ],
-
     "francophone_sources": [
       {
         "citation": "Jean-Claude Thoenig, « Déplacement des buts », in Encyclopédie du management public, Paris, Institut de la gestion publique et du développement économique, 2022.",
@@ -299,7 +279,6 @@
         "establishes": "NON OUVERT — Cairn ne délivre que la notice, vérifiée par ISBN via Crossref (auteur, année, éditeur, collection, pagination du chapitre). N'établit RIEN sur le concept. Enregistré parce que c'est la synthèse francophone de référence sur Merton et qu'elle devra être ouverte avant tout contrôle définitif de cette fiche."
       }
     ],
-
     "translation_notes": [
       {
         "term_source": "displacement of goals",
@@ -357,7 +336,6 @@
         "note": "« An extreme product of this process of displacement of goals is the bureaucratic virtuoso, who never forgets a single rule binding his action and hence is unable to assist many of his clients » (p. 563). La figure est celle de l'excès de zèle et de l'excès de mémoire des règles, non de la négligence — ce qui contredit frontalement l'usage courant. Et c'est un produit extrême, pas un portrait du fonctionnaire ordinaire."
       }
     ],
-
     "known_ambiguities": [
       "Le rapport entre les deux formulations de Merton n'est pas explicité par lui. « Displacement of goals » (p. 563) suggère que ce sont les buts qui bougent ; « Displacement of sentiments from goals onto means » (p. 564) dit que ce sont les sentiments. Le texte ne tranche pas et ne signale même pas l'écart. La lecture la plus serrée est que le second énoncé explicite le premier — mais c'est une lecture, pas un énoncé de Merton.",
       "Le statut du seuil est indéterminé. Merton distingue le déplacement (p. 563) de son exagération jusqu'à l'interférence avec les buts (« This may be exaggerated to the point where… »), mais ne dit ni ce qui fait franchir le seuil, ni si le déplacement sans franchissement du seuil est nuisible. On ne peut donc pas poser, chez Merton, déplacement des buts = contre-performance.",
@@ -369,7 +347,6 @@
       "Paternité contestée. Thoenig (2022) fait remonter le terme à Michels (1914) ; des sources tertiaires anglophones se contredisent entre Michels, Merton 1949 et Selznick. Aucune source de niveau B ou C ouverte ici ne tranche. Ce qui est sûr sur pièce : Merton emploie « displacement of goals » dès 1940, et désigne lui-même d'autres ascendances que Michels — Wundt, Weber, MacIver, Lasswell, Allport.",
       "Divergence entre les deux couches de réception. La couche anglophone se dispute sur l'origine du terme et ignore Warnotte ; la couche francophone ne discute jamais cette origine, emploie « déplacement des buts » sans hésitation et insère systématiquement Merton dans la série Merton–Selznick–Gouldner–Blau–Crozier. Aucun des textes francophones ouverts ne s'interroge sur la paternité. La divergence est consignée, non tranchée."
     ],
-
     "common_misinterpretations": [
       {
         "claim": "Le déplacement des buts, c'est perdre de vue ses objectifs, les oublier, ou y renoncer.",
@@ -427,7 +404,6 @@
         "source": "Merton 1940, note 12"
       }
     ],
-
     "limitations": [
       "Le texte n'indique aucune condition sous laquelle le déplacement s'atténue ou disparaît, ni aucun remède. Qui cherchera dans Merton 1940 une préconisation n'en trouvera pas : l'article se clôt sur un programme de recherche empirique. Les deux atténuations qu'il mentionne (sortie du client vers un concurrent, p. 566 ; machine politique, note 22, p. 567) portent sur le conflit bureaucrate-client, pas sur la conversion du moyen en fin.",
       "Merton ne fournit aucune donnée. L'article est théorique : ses seuls matériaux sont un fait divers de presse (Bernt Balchen, d'après le Chicago Tribune, cité via Thurman Arnold), des extraits d'entretiens rapportés par E. W. Bakke et un exemple emprunté à A. L. Lowell sur le gouvernement anglais. Rien qui vaille comme vérification du mécanisme.",
@@ -437,7 +413,6 @@
       "Aucune analyse de citation n'a pu être menée (OpenAlex et Semantic Scholar en erreur pendant toute l'enquête) : la réception rapportée repose sur des textes ouverts un par un, pas sur une mesure. L'ampleur réelle de l'écart entre la lecture savante et la vulgarisation n'est donc pas quantifiée.",
       "Détail de fidélité, à conserver si la note 8 est jamais citée : Social Forces imprime « Bureaucratic et Fonctionnarisme » pour l'article de Daniel Warnotte — coquille manifeste pour « Bureaucratie et Fonctionnarisme », vérifiée sur l'image de la page."
     ],
-
     "reception": {
       "consensus": "Deux points ne sont contestés par aucune source consultée. (1) L'article de 1940 est traité comme le point d'origine de l'analyse des dysfonctions bureaucratiques, et il est cité en bloc avec Selznick, Gouldner, Blau et Crozier — formule attestée telle quelle chez Dedieu (2019, p. 24 du PDF), retrouvée chez Eggrickx & Mazars-Chapelon (2012) et Thoenig (2012). (2) Le mécanisme retenu par la littérature savante est bien celui du texte : la conformité aux règles, exigée par la discipline et entretenue par la carrière, se transforme en valeur terminale, et cette transformation est une conséquence non voulue de ce qui fait la fiabilité de l'organisation, non une faute d'agent (Hassani 2007 ; Eggrickx & Mazars-Chapelon 2012, « effet non voulu »).",
       "debates": [
@@ -471,18 +446,12 @@
       ]
     }
   },
-
   "pedagogy": {
     "hook_question": "Un dossier a été instruit sans une erreur, chaque pièce vérifiée, chaque délai tenu — et la personne qui l'avait déposé repart sans ce qu'elle était venue chercher. Personne n'a désobéi, personne ne s'est relâché : au contraire. Qu'est-ce qui s'est perdu en route, et où exactement ?",
-
     "short_explanation": "Le déplacement des buts désigne, chez Robert K. Merton, le processus par lequel l'observance des règles, conçue à l'origine comme un moyen, se transforme en fin en soi : une valeur instrumentale devient une valeur terminale. Ce qui se déplace d'abord, dans son texte, ce ne sont pas les buts mais les sentiments — l'attachement affectif quitte les buts de l'organisation pour se fixer sur le détail des comportements prescrits. Le but n'est donc ni oublié ni abandonné : il cesse d'être ce à quoi l'on tient, la règle prenant sa place.",
-
     "detailed_explanation": "Merton part d'une organisation qui marche. Il accorde d'emblée à Weber que le principal mérite de la bureaucratie est son efficacité technique, et son geste n'est pas de le réfuter mais de regarder la même structure de l'autre côté : toute manière de voir est aussi une manière de ne pas voir, et il demande quelles sont les limites d'une organisation conçue pour atteindre ses buts.\n\nLa chaîne commence par une exigence. Pour fonctionner, une bureaucratie doit obtenir un très haut degré de fiabilité des comportements, une conformité inhabituelle aux conduites prescrites : elle exerce donc sur ses agents une pression constante pour qu'ils soient méthodiques, prudents, disciplinés. Or, remarque Merton, la discipline ne s'obtient pas par la règle seule : elle n'est effective que si les modèles de conduite sont étayés par des sentiments forts, et l'efficacité d'une structure sociale dépend en dernier ressort de ce qu'elle inculque à ses membres des attitudes et des sentiments appropriés. L'organisation s'en donne d'ailleurs les moyens.\n\nVient alors le point que la vulgarisation manque toujours. Pour assurer la fiabilité, ces sentiments sont volontairement plus intenses qu'il ne serait techniquement nécessaire : Merton parle d'une marge de sécurité, au sens où l'ingénieur surdimensionne les appuis d'un pont. C'est ce surdosage — donc une précaution rationnelle, pas un défaut — qui produit la suite : cette insistance même entraîne un transfert des sentiments, qui quittent les buts de l'organisation pour se fixer sur les détails de comportement exigés par les règles. L'observance, conçue à l'origine comme un moyen, se transforme en fin en soi ; la discipline, lue comme la conformité aux règlements quelle que soit la situation, n'est plus une mesure prise en vue de fins déterminées mais une valeur immédiate dans l'organisation de la vie de l'intéressé.\n\nS'ensuivent des rigidités et une incapacité à s'ajuster : formalisme, ritualisme même, avec une insistance que plus personne ne discute sur l'observance scrupuleuse des procédures. Attention au pas suivant : Merton ne le donne pas pour automatique. Cela peut être exagéré jusqu'au point où le souci premier de conformité interfère avec l'atteinte des buts de l'organisation — et c'est alors seulement qu'apparaissent le technicisme et la paperasserie. Sa figure limite, le virtuose bureaucratique, est présentée comme un produit extrême : celui qui n'oublie jamais une seule règle liant son action et se trouve, pour cette raison même, incapable d'aider nombre de ses usagers. Excès de mémoire, pas oubli.\n\nMerton récapitule lui-même la chaîne : une bureaucratie efficace exige fiabilité des réponses et dévotion stricte aux règlements ; cette dévotion transforme les règles en absolus, qu'on ne conçoit plus comme relatives à un ensemble de fins ; cela gêne l'adaptation dans les conditions particulières que ceux qui ont rédigé les règles générales n'avaient pas envisagées ; si bien que les éléments mêmes qui produisent l'efficacité en général produisent l'inefficacité dans les cas particuliers. Il ajoute que les membres du groupe ne voient guère cette inadéquation, faute d'avoir rompu avec le sens que les règles ont pris pour eux.\n\nReste à savoir d'où vient l'attachement déplacé. Merton en désigne des sources structurelles, et c'est là sa contribution propre : la carrière graduée — promotion à l'ancienneté, pensions, salaires à échelons — conçue pour encourager l'action disciplinée, mais qui par là même engendre un souci excessif de l'observance, d'où timidité, conservatisme et technicisme ; l'esprit de corps, fonctionnel puisqu'il réduit l'agressivité interne, mais qui pousse à défendre des positions acquises plutôt qu'à servir les usagers ; la sanctification, par laquelle des normes introduites pour des raisons techniques deviennent rigides et sacrées ; enfin l'impersonnalité et la catégorisation, qui ignorent les particularités des cas individuels et heurtent l'usager convaincu — non sans raison — que son problème a quelque chose de particulier. Merton refuse d'imputer tout cela aux intérêts bien compris des agents : ces inadéquations, écrit-il, dérivent clairement de sources structurelles. Il n'énonce, en revanche, aucun remède : l'article se termine sur des questions de recherche, pas sur une thérapeutique.",
-
     "concrete_example": "Un assureur mutualiste traite les demandes d'indemnisation de ses sociétaires. Le service a de bonnes raisons d'être réglé au cordeau : deux dossiers semblables doivent recevoir la même réponse, et une erreur coûte cher. On a donc écrit une procédure, une liste de pièces à fournir, des points de contrôle. Pour que cela tienne, l'entreprise ne se contente pas d'écrire la règle : elle en fait quelque chose que l'on prend à cœur. Les revues de dossiers félicitent ce qui est complet ; les erreurs se paient en réputation dans l'équipe ; l'avancement, largement lié à l'ancienneté et à la régularité, récompense ceux qui ne mettent jamais la maison en risque. Un gestionnaire chevronné, ici, est quelqu'un dont les dossiers ne reviennent jamais.\n\nOn est allé un peu plus loin qu'il n'aurait fallu, et c'était voulu : mieux vaut un contrôle de trop qu'un contrôle de moins. C'est là que le glissement se fait. Ce dont l'équipe est fière, ce dont elle parle entre deux portes, ce sur quoi elle se juge, ce n'est plus « le sociétaire a été indemnisé quand il devait l'être » : c'est « le dossier est impeccable ». La pièce justificative n'est plus un moyen d'établir un droit, elle est devenue ce à quoi l'on tient.\n\nArrive un sinistre qui ne ressemble à rien de prévu : un dégât dans un logement dont le sociétaire, hébergé chez un proche depuis un déménagement, ne peut pas produire l'attestation exigée — le document existe bien, mais pas pour sa situation. Le gestionnaire ne bâcle rien : il vérifie deux fois, cherche l'équivalent dans la nomenclature, ne le trouve pas, et clôt le dossier comme incomplet. Il applique la règle avec une exactitude parfaite, et personne autour de lui ne trouve à y redire ; celui qui l'accepterait sans la pièce serait, lui, regardé de travers. Le sociétaire, qui n'a fait aucune fraude, n'est pas indemnisé. Aucune règle n'a été enfreinte, aucun but n'a été officiellement abandonné, et le service affiche d'excellents résultats de conformité.\n\nDeux détails achèvent le tableau. D'abord, l'écart est invisible de l'intérieur : pour l'équipe, ce dossier n'est pas un échec, c'est un dossier incomplet, ce qui est exactement le sens que la règle a pour elle. Ensuite, quand un responsable propose d'ouvrir une exception pour ces cas-là, il rencontre une résistance qui n'a rien d'un calcul : ce n'est pas leur intérêt que les gestionnaires défendent, c'est une manière de bien faire leur métier. Le même attachement qui garantit qu'aucun dossier ne sera traité à la légère est celui qui, ce jour-là, a fait passer la pièce manquante avant le sociétaire.",
-
     "example_setting": "entreprise",
-
     "analysis_questions": [
       "Dans un service que vous connaissez, repérez une règle que l'on défend aujourd'hui pour elle-même. À quel but avait-elle été rattachée le jour où elle a été écrite, et reste-t-il quelqu'un capable de le dire ?",
       "Merton fait naître l'effet des dispositifs qui rendent l'organisation fiable. Nommez, dans ce service, ce qui produit la fiabilité — contrôles, ancienneté, réputation interne, ce dont on est fier — et demandez-vous ce que chacun déplace de l'attention portée au but.",
@@ -490,7 +459,6 @@
       "Merton écarte l'explication par l'intérêt bien compris des agents. Dans le cas que vous examinez, qu'est-ce que l'intérêt n'explique pas ? Que faudrait-il observer pour distinguer un agent qui protège sa position d'un agent attaché à sa manière de bien faire ?",
       "Merton n'énonce aucun remède, et note que les intéressés ne voient guère l'inadéquation, faute d'avoir rompu avec le sens que les règles ont pour eux. Qui, dans l'organisation que vous décrivez, est en position de voir cet écart — et pourquoi sa parole y a-t-elle si peu de poids ?"
     ],
-
     "quiz": [
       {
         "id": "deplacement-des-buts-q1",
@@ -539,26 +507,66 @@
         "explanation": "Merton écrit « there occurs the familiar process of displacement of goals » : le mot « familiar » exclut la revendication, et la note attachée à cette phrase énumère les ascendances qu'il reconnaît — Wundt, Weber, MacIver, Lasswell, son propre article de 1936, et Allport, dont il dit sa formulation « complementary ». Ce qui lui revient en propre, c'est l'ancrage structurel du phénomène, non le phénomène ni le mot. Le troisième choix est faux sur pièce : Michels n'est cité nulle part dans l'article (aucune occurrence), même si la littérature de réception fait parfois remonter le terme à lui — question non tranchée par les sources ouvertes. Le quatrième reprend une datation courante mais démentie par le texte de Social Forces, antérieur ; en revanche, les reprises en volume n'ayant pas été ouvertes, on ne sait pas si Merton y emploie ailleurs la forme « goal displacement »."
       }
     ],
-
     "traceability": [
-      { "claim": "L'attachement affectif quitte les buts pour se fixer sur le détail des comportements prescrits, et l'observance devient fin en soi.", "evidence_ref": "mechanism[5]" },
-      { "claim": "La discipline n'est effective que si les conduites prescrites sont étayées par des sentiments forts, que l'organisation inculque.", "evidence_ref": "mechanism[3]" },
-      { "claim": "Les sentiments sont volontairement plus intenses que techniquement nécessaire — la marge de sécurité de l'ingénieur.", "evidence_ref": "mechanism[4]" },
-      { "claim": "L'interférence avec les buts n'est pas automatique : elle survient au-delà d'un certain point.", "evidence_ref": "mechanism[8]" },
-      { "claim": "Le virtuose bureaucratique est un produit extrême, qui n'oublie jamais une règle.", "evidence_ref": "mechanism[8]" },
-      { "claim": "Les éléments mêmes qui produisent l'efficacité en général produisent l'inefficacité dans les cas particuliers, et les membres ne voient guère cette inadéquation.", "evidence_ref": "mechanism[9]" },
-      { "claim": "La carrière graduée, l'ancienneté et les pensions sont des sources structurelles du sentiment déplacé.", "evidence_ref": "mechanism[10]" },
-      { "claim": "Merton écarte l'explication par l'intérêt et invoque la fierté du métier.", "evidence_ref": "mechanism[11]" },
-      { "claim": "L'impersonnalité et la catégorisation ignorent les particularités des cas individuels et heurtent l'usager.", "evidence_ref": "mechanism[13]" },
-      { "claim": "Merton n'énonce aucun remède ni condition de disparition ; l'article se clôt sur un programme de recherche.", "evidence_ref": "conditions.disappears_when[0]" },
-      { "claim": "Merton accorde à Weber que le principal mérite de la bureaucratie est son efficacité technique et change de face plutôt que de réfuter.", "evidence_ref": "mechanism[1]" },
-      { "claim": "Le mécanisme n'est pas donné pour propre à l'administration publique : la discipline peut être aussi développée dans une bureaucratie religieuse ou économique que dans l'armée — ce qui autorise l'exemple en entreprise.", "evidence_ref": "mechanism[2]" },
-      { "claim": "Merton ne se présente pas comme l'inventeur du terme, qu'il dit familier et dont il reconnaît les ascendances.", "evidence_ref": "attribution.term_origin.note" }
+      {
+        "claim": "L'attachement affectif quitte les buts pour se fixer sur le détail des comportements prescrits, et l'observance devient fin en soi.",
+        "evidence_ref": "mechanism[5]"
+      },
+      {
+        "claim": "La discipline n'est effective que si les conduites prescrites sont étayées par des sentiments forts, que l'organisation inculque.",
+        "evidence_ref": "mechanism[3]"
+      },
+      {
+        "claim": "Les sentiments sont volontairement plus intenses que techniquement nécessaire — la marge de sécurité de l'ingénieur.",
+        "evidence_ref": "mechanism[4]"
+      },
+      {
+        "claim": "L'interférence avec les buts n'est pas automatique : elle survient au-delà d'un certain point.",
+        "evidence_ref": "mechanism[8]"
+      },
+      {
+        "claim": "Le virtuose bureaucratique est un produit extrême, qui n'oublie jamais une règle.",
+        "evidence_ref": "mechanism[8]"
+      },
+      {
+        "claim": "Les éléments mêmes qui produisent l'efficacité en général produisent l'inefficacité dans les cas particuliers, et les membres ne voient guère cette inadéquation.",
+        "evidence_ref": "mechanism[9]"
+      },
+      {
+        "claim": "La carrière graduée, l'ancienneté et les pensions sont des sources structurelles du sentiment déplacé.",
+        "evidence_ref": "mechanism[10]"
+      },
+      {
+        "claim": "Merton écarte l'explication par l'intérêt et invoque la fierté du métier.",
+        "evidence_ref": "mechanism[11]"
+      },
+      {
+        "claim": "L'impersonnalité et la catégorisation ignorent les particularités des cas individuels et heurtent l'usager.",
+        "evidence_ref": "mechanism[13]"
+      },
+      {
+        "claim": "Merton n'énonce aucun remède ni condition de disparition ; l'article se clôt sur un programme de recherche.",
+        "evidence_ref": "conditions.disappears_when[0]"
+      },
+      {
+        "claim": "Merton accorde à Weber que le principal mérite de la bureaucratie est son efficacité technique et change de face plutôt que de réfuter.",
+        "evidence_ref": "mechanism[1]"
+      },
+      {
+        "claim": "Le mécanisme n'est pas donné pour propre à l'administration publique : la discipline peut être aussi développée dans une bureaucratie religieuse ou économique que dans l'armée — ce qui autorise l'exemple en entreprise.",
+        "evidence_ref": "mechanism[2]"
+      },
+      {
+        "claim": "Merton ne se présente pas comme l'inventeur du terme, qu'il dit familier et dont il reconnaît les ascendances.",
+        "evidence_ref": "attribution.term_origin.note"
+      }
     ]
   },
-
   "graph": {
-    "themes": ["bureaucratie-regles", "comportements-organisationnels"],
+    "themes": [
+      "bureaucratie-regles",
+      "comportements-organisationnels"
+    ],
     "difficulty": 2,
     "difficulty_rationale": "Aucun concept préalable n'est nécessaire : le mécanisme se comprend à partir de la distinction ordinaire entre un moyen et une fin, et l'article ne mobilise ni formalisme ni données. La difficulté est ailleurs, et elle est double : il faut tenir que le déplacement est un transfert de l'investissement affectif et non un oubli du but — la lecture spontanée, documentée comme dominante dans la vulgarisation, est précisément la fausse —, et il faut résister à la pente qui fait du phénomène une conséquence du dysfonctionnement alors qu'il naît du fonctionnement réussi. Deux renversements, mais sur un matériau sans prérequis.",
     "related": [],
@@ -566,13 +574,21 @@
     "prerequisites": [],
     "deepens_into": []
   },
-
   "validation": {
     "primary_source_confirmed": true,
     "secondary_confirmation": true,
     "francophone_layer_searched": true,
-    "evidence_review": { "verdict": "PENDING", "notes": [], "rounds": 0 },
-    "pedagogy_review": { "verdict": "PENDING", "no_new_claims": null, "notes": [], "rounds": 0 },
+    "evidence_review": {
+      "verdict": "PENDING",
+      "notes": [],
+      "rounds": 0
+    },
+    "pedagogy_review": {
+      "verdict": "PENDING",
+      "no_new_claims": null,
+      "notes": [],
+      "rounds": 0
+    },
     "confidence_flags": [
       "Source primaire (Merton 1940, Social Forces, 18(4), p. 560-568, DOI 10.2307/2570634) : LUE INTÉGRALEMENT, consulted = full-text, sur un scan JSTOR hébergé par une page de cours institutionnelle. Toutes les citations retenues ont été relues à l'œil sur l'image de la page, l'OCR du scan comportant des erreurs. Le DOI a été revérifié auprès de Crossref au moment de la rédaction : notice concordante, aucun écart.",
       "key_quotation est une traduction interne non publiée : l'écran doit le signaler et conserver l'original anglais, qui est le seul texte de l'auteur.",
@@ -587,9 +603,7 @@
       "Les deux passes du contrôleur aveugle restent en PENDING : la fiche est écrite, elle n'est pas contrôlée. Le caractère verbatim de la citation, en particulier, ne s'automatise pas et reste à vérifier contre l'édition."
     ]
   },
-
   "rejection_reason": null,
-
   "provenance": {
     "created_at": "2026-08-16",
     "updated_at": "2026-08-16",
