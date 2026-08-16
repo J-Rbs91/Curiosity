@@ -1,0 +1,162 @@
+{
+  "$schema": "../schema/concept.record.schema.json",
+  "id": "<< identifiant-kebab-case — reprendre celui de l'échafaudage (src/content/fixtures/) si le sujet y figure >>",
+  "slug": "<< identique à id sauf raison explicite >>",
+  "status": "TEMPLATE",
+  "canonical_name_fr": "<< nom du concept en français >>",
+  "canonical_name_en": "<< nom original ou usuel en anglais, null si sans objet >>",
+
+  "scope": {
+    "in_scope": true,
+    "rationale": "<< réponse au test d'entrée de corpus/perimeter.md : en quoi ce concept est nécessaire pour comprendre les organisations >>"
+  },
+
+  "attribution": {
+    "authors": [
+      { "name": "<< nom complet >>", "app_author_id": "<< id de src/content/authors.ts, ou null >>" }
+    ],
+    "authorship": "SOLE_AUTHOR",
+    "associated_author": null,
+    "term_origin": {
+      "coined_by": "<< qui a forgé le terme, si ce n'est pas l'auteur du concept >>",
+      "coined_in": "<< référence >>",
+      "note": null
+    }
+  },
+
+  "evidence": {
+    "concept_definition": "<< définition dans les termes de l'auteur, sans vulgarisation >>",
+    "mechanism": [
+      "<< étape 1 : le point de départ >>",
+      "<< étape 2 : ce qui s'enclenche >>",
+      "<< étape n : l'effet observable >>"
+    ],
+    "conditions": {
+      "appears_when": [],
+      "intensified_by": [],
+      "disappears_when": []
+    },
+    "key_quotation": {
+      "text": "<< le passage, mot pour mot, sans guillemets (l'application les pose) — une coupe se signale par […] >>",
+      "language": "fr",
+      "original_language": null,
+      "original_text": null,
+      "translation": {
+        "kind": "none",
+        "translator": null,
+        "edition": null
+      },
+      "attributed_to": null,
+      "primary_source_index": 0,
+      "locator": "<< chapitre, section, page du passage cité >>"
+    },
+    "primary_sources": [
+      {
+        "citation": "<< Auteur, Titre, éditeur, année (édition précise) >>",
+        "year": null,
+        "language": "<< de / en / fr >>",
+        "kind": "book",
+        "doi_isbn": "<< DOI ou ISBN — sans lui, la source n'est pas atteignable >>",
+        "url": null,
+        "locator": "<< chapitre, section, pages >>",
+        "evidence": "<< citation ou paraphrase serrée du passage qui établit le point >>",
+        "consulted": "excerpt"
+      }
+    ],
+    "secondary_sources": [
+      {
+        "citation": "<< article peer-reviewed ou chapitre universitaire portant sur l'auteur >>",
+        "year": null,
+        "language": "en",
+        "doi_isbn": null,
+        "url": null,
+        "role": "attribution",
+        "level": "B",
+        "establishes": "<< ce que cette source établit précisément, pas son résumé général >>"
+      }
+    ],
+    "francophone_sources": [],
+    "translation_notes": [],
+    "known_ambiguities": [
+      "<< ce qui reste incertain — se déclare, ne se comble pas >>"
+    ],
+    "common_misinterpretations": [
+      {
+        "claim": "<< ce qu'on lit couramment et qui est faux >>",
+        "why_wrong": "<< ce que dit réellement le texte >>",
+        "source": null
+      }
+    ],
+    "limitations": [
+      "<< ce que le concept n'explique pas, les cas où il induit en erreur >>"
+    ],
+    "reception": {
+      "consensus": null,
+      "debates": [],
+      "critiques": []
+    }
+  },
+
+  "pedagogy": {
+    "hook_question": "<< question qui fait sentir le problème avant de nommer le concept >>",
+    "short_explanation": "<< 2 à 3 phrases : ce que le concept désigne >>",
+    "detailed_explanation": "<< le mécanisme mis en phrases, dans l'ordre du bloc mechanism >>",
+    "concrete_example": "<< une situation où le mécanisme est visible — pas une situation étiquetée du nom du concept >>",
+    "example_setting": "administration",
+    "analysis_questions": [
+      "<< question qui demande d'identifier le mécanisme, pas de restituer la définition >>"
+    ],
+    "quiz": [
+      {
+        "id": "<< id-du-concept >>-q1",
+        "type": "mcq",
+        "prompt": "<< question >>",
+        "choices": ["<< choix 0 >>", "<< choix 1 >>", "<< choix 2 >>", "<< choix 3 >>"],
+        "correctAnswer": "1",
+        "explanation": "<< pourquoi cette réponse, en renvoyant au mécanisme >>"
+      }
+    ],
+    "traceability": [
+      {
+        "claim": "<< phrase de la prose pédagogique >>",
+        "evidence_ref": "mechanism[0]"
+      }
+    ]
+  },
+
+  "graph": {
+    "themes": ["<< id de src/content/themes.ts >>"],
+    "difficulty": 2,
+    "difficulty_rationale": "<< justifiée par les prérequis, pas par l'intuition >>",
+    "related": [
+      {
+        "id": "<< id d'un autre concept >>",
+        "relation_kind": "thematic_proximity",
+        "justification": "<< ce que le rapprochement apprend >>",
+        "source": null
+      }
+    ],
+    "opposites": [],
+    "prerequisites": [],
+    "deepens_into": []
+  },
+
+  "validation": {
+    "primary_source_confirmed": false,
+    "secondary_confirmation": false,
+    "francophone_layer_searched": false,
+    "evidence_review": { "verdict": "PENDING", "notes": [], "rounds": 0 },
+    "pedagogy_review": { "verdict": "PENDING", "no_new_claims": null, "notes": [], "rounds": 0 },
+    "confidence_flags": []
+  },
+
+  "rejection_reason": null,
+
+  "provenance": {
+    "created_at": "<< AAAA-MM-JJ >>",
+    "updated_at": "<< AAAA-MM-JJ >>",
+    "pipeline_version": "1",
+    "candidate_origin": "scout",
+    "runs": []
+  }
+}

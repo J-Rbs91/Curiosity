@@ -26,6 +26,12 @@ npm test        # tests unitaires (moteur pédagogique, progression, persistance
 npm run lint
 ```
 
+```bash
+npm run corpus:audit      # état du corpus : validé, en cours, sujets à instruire
+npm run corpus:validate   # contrôle documentaire du corpus maître
+npm run corpus:build      # projette les fiches validées vers src/content/generated/
+```
+
 ## Architecture
 
 ```
@@ -35,14 +41,44 @@ src/
 ├── domain/        # Logique pure : graphe de concepts, maîtrise, auteurs, thèmes, sessions
 ├── services/      # Orchestration : moteur pédagogique, répétition espacée, progression
 ├── repositories/  # Persistance (localStorage aujourd'hui, remplaçable par Supabase/Postgres)
-├── content/       # Corpus : auteurs, thèmes, ~35 concepts, cas pratiques
+├── content/       # Corpus projeté + échafaudage de développement
 └── types/         # Modèle de données partagé
+
+corpus/            # Corpus maître : fiches sourcées, contrôlées, versionnées
+scripts/corpus/    # Validation, projection, audit, dossiers de contrôle aveugle
+scripts/mcp/       # Serveur MCP : OpenAlex, Crossref, Semantic Scholar, Zotero, HAL
+.claude/agents/    # Les neuf sous-agents du pipeline documentaire
 ```
 
 Le moteur pédagogique (`services/learning-engine`) ne connaît que des données pures
 (`Concept[]`, `Author[]`, `Theme[]`, `ProgressState`) : il est testable sans React ni
 localStorage. La couche `repositories/` isole complètement la persistance : passer à une
 base distante plus tard ne demande qu'une nouvelle implémentation de `ProgressRepository`.
+
+## Le corpus
+
+Un concept n'est pas rédigé : il est **instruit**. Un pipeline de neuf sous-agents établit
+ce que dit le texte de l'auteur, comment la littérature l'attribue et le discute, puis un
+contrôleur aveugle — qui ignore tout du travail amont — revérifie fait par fait avant
+qu'une ligne n'atteigne l'application. Les fiches validées sont projetées mécaniquement
+vers `src/content/generated/` — et c'est tout le corpus.
+
+Les 35 fiches de `src/content/fixtures/` ne sont pas un corpus mais un échafaudage : elles
+ont été écrites de mémoire pour que le moteur pédagogique et les écrans puissent être
+construits. Elles ne sont servies qu'en développement, portent une marque à l'écran, et
+aucune fiche vérifiée n'a le droit de s'appuyer sur elles.
+
+Les agents interrogent les bases par un serveur MCP local — OpenAlex, Crossref, Semantic
+Scholar, Zotero et HAL derrière six outils, dont un `verify_reference` qui confronte une
+référence à sa notice réelle.
+
+La méthode, les critères de validation et le protocole sont dans
+[`docs/corpus-workflow.md`](docs/corpus-workflow.md) ; le périmètre dans
+[`corpus/perimeter.md`](corpus/perimeter.md) ; le branchement des bases dans
+[`scripts/mcp/README.md`](scripts/mcp/README.md).
+
+> Une référence introuvable n'existe pas. Une source qui ne dit pas ce qu'on lui fait dire
+> n'est pas une preuve. Une affirmation n'est pas validée par celui qui l'a produite.
 
 ## Principe directeur
 

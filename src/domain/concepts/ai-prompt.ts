@@ -10,8 +10,9 @@ export interface ConceptPromptInput {
  * Construit le texte envoyé à une application d'IA depuis le bouton « + ».
  *
  * Ce n'est pas un partage : on n'envoie pas la fiche, on envoie une commande.
- * Les quatre éléments visibles à l'écran — thème, concept, résumé, auteur — ne
- * sont que le contexte ; l'essentiel du texte dit quoi en faire.
+ * Les éléments visibles à l'écran — thème, concept, résumé, auteur, et
+ * l'attribution quand elle ne se réduit pas à un nom — ne sont que le contexte ;
+ * l'essentiel du texte dit quoi en faire.
  *
  * Deux exigences sont structurelles et ne doivent pas disparaître d'une
  * réécriture :
@@ -30,12 +31,14 @@ export function buildConceptPrompt({ concept, authors, themes }: ConceptPromptIn
   const authorNames = authors.map((a) => a.name).join(", ");
   const themeTitles = themes.map((t) => t.title).join(", ");
 
+  const attribution = concept.attributionNote ? `\nAttribution établie : ${concept.attributionNote}` : "";
+
   return `Tu es un pédagogue spécialiste de sociologie des organisations. Je veux comprendre en profondeur le concept ci-dessous.
 
 CE QUE J'AI
 Thème : ${themeTitles || "sociologie des organisations"}
 Concept : ${concept.title}
-Auteur de référence : ${authorNames || "non précisé"}
+Auteur de référence : ${authorNames || "non précisé"}${attribution}
 Résumé dont je dispose : ${concept.shortExplanation}
 
 CE QUE J'ATTENDS

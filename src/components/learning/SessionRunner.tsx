@@ -10,6 +10,7 @@ import { SCREEN_MOTION } from "@/components/motion/screen-motion";
 import { Button } from "@/components/ui/Button";
 import { ShareToAI } from "@/components/ui/ShareToAI";
 import { ConceptMetaTags } from "@/components/concept/ConceptMetaTags";
+import { ConceptQuotation } from "@/components/concept/ConceptQuotation";
 import { ConceptSummaryCard } from "@/components/concept/ConceptSummaryCard";
 import { QuizQuestionView } from "@/components/quiz/QuizQuestionView";
 import { StepDots } from "@/components/learning/StepDots";
@@ -155,6 +156,11 @@ export function SessionRunner({
                   {primary.title}
                 </h2>
                 <p className="text-[18px] leading-relaxed text-ink">{primary.shortExplanation}</p>
+                {/*
+                 * La voix de l'auteur avant notre reformulation détaillée : c'est ce à
+                 * quoi tout le reste de la fiche doit rester fidèle.
+                 */}
+                {primary.quotation && <ConceptQuotation quotation={primary.quotation} />}
                 {!showDetailed ? (
                   <button
                     type="button"

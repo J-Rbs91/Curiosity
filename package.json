@@ -7,7 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test": "vitest run"
+    "test": "vitest run",
+    "corpus:validate": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/corpus/validate.mjs",
+    "corpus:build": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/corpus/build.mjs",
+    "corpus:audit": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/corpus/audit.mjs",
+    "corpus:brief": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/corpus/brief.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.31.0",
@@ -16,6 +20,7 @@
     "react-dom": "19.2.8"
   },
   "devDependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
@@ -25,6 +30,7 @@
     "jsdom": "^30.0.1",
     "tailwindcss": "^4",
     "typescript": "^5",
-    "vitest": "^4.1.10"
+    "vitest": "^4.1.10",
+    "zod": "^4.4.3"
   }
 }

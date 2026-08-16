@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "documentary": {
+      "command": "node",
+      "args": ["scripts/mcp/documentary-server.mjs"],
+      "env": {
+        "CORPUS_CONTACT_EMAIL": "${CORPUS_CONTACT_EMAIL:-}",
+        "SEMANTIC_SCHOLAR_API_KEY": "${SEMANTIC_SCHOLAR_API_KEY:-}",
+        "ZOTERO_LOCAL_API": "${ZOTERO_LOCAL_API:-http://localhost:23119/api/users/0}"
+      }
+    }
+  }
+}

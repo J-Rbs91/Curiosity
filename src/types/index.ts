@@ -9,9 +9,16 @@ export type ConceptId = string;
 
 export type Difficulty = 1 | 2 | 3 | 4 | 5;
 
-/** Distingue ce qui vient directement d'un auteur de ce qui relève de l'interprétation pédagogique. */
+/**
+ * Distingue ce qui vient directement d'un auteur de ce qui relève de l'interprétation.
+ * `secondary-academic` et `francophone-reception` correspondent aux niveaux B et C de la
+ * hiérarchie documentaire (docs/corpus-workflow.md) : sans eux, la projection ferait
+ * passer un article peer-reviewed pour une interprétation pédagogique de notre fait.
+ */
 export type SourceKind =
   | "primary"
+  | "secondary-academic"
+  | "francophone-reception"
   | "pedagogical-interpretation"
   | "cross-author-comparison";
 
@@ -20,6 +27,25 @@ export interface Source {
   kind: SourceKind;
   reference?: string;
   url?: string;
+}
+
+/**
+ * Un passage du texte de l'auteur, cité mot pour mot.
+ *
+ * C'est la seule chose de l'application qui ne soit pas une reformulation : tout le reste
+ * — résumé, mécanisme, exemple — passe par nos mots. Elle n'existe donc que si elle est
+ * verbatim, localisée dans une édition précise, et honnête sur sa traduction : afficher
+ * du Weber en français sans dire qui l'a traduit, c'est présenter une interprétation
+ * comme une parole d'auteur.
+ */
+export interface Quotation {
+  text: string;
+  /** L'auteur à qui la phrase appartient — jamais déduit d'un concept coécrit. */
+  attributedTo: string;
+  /** Ouvrage et localisation, tels qu'ils permettent de rouvrir à la bonne page. */
+  reference: string;
+  /** « traduit de l'allemand par… » ou l'aveu d'une traduction non publiée. */
+  translationNote?: string;
 }
 
 export type QuizQuestionType = "mcq" | "true-false" | "open";
@@ -68,7 +94,17 @@ export interface Concept {
   shortExplanation: string;
   detailedExplanation: string;
 
+  /** Le texte de l'auteur lui-même, quand un passage citable a pu être établi. */
+  quotation?: Quotation;
+
   authors: AuthorId[];
+  /**
+   * Rétablit l'attribution réelle quand elle ne se réduit pas aux auteurs listés
+   * ci-dessus : concept coécrit rangé sous un seul nom, concept associé à un auteur qui
+   * ne l'a pas créé, terme forgé par un tiers. Renseigné par la projection du corpus,
+   * jamais à la main.
+   */
+  attributionNote?: string;
   themes: ThemeId[];
 
   relatedConcepts: ConceptId[];
@@ -84,6 +120,13 @@ export interface Concept {
   difficulty: Difficulty;
 
   sources?: Source[];
+
+  /**
+   * Absent : fiche issue du pipeline documentaire, sourcée et contrôlée.
+   * `"fixture"` : fiche d'échafaudage écrite avant tout dispositif de vérification, servie
+   * en développement uniquement. Rien ne doit reposer sur son contenu.
+   */
+  provenance?: "fixture";
 }
 
 export interface CaseStudyReading {

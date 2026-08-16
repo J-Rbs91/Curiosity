@@ -8,6 +8,7 @@ import { concepts, authors, themes } from "@/content";
 import { indexConcepts, getRelatedConcepts, getPrerequisiteConcepts } from "@/domain/concepts/graph";
 import { getProgressService } from "@/services/progress";
 import { ConceptMetaTags } from "@/components/concept/ConceptMetaTags";
+import { ConceptQuotation } from "@/components/concept/ConceptQuotation";
 import { Screen } from "@/components/motion/Screen";
 import { SCREEN_MOTION } from "@/components/motion/screen-motion";
 import { Button } from "@/components/ui/Button";
@@ -79,10 +80,39 @@ export default function ConceptDetailPage() {
           <ConceptMetaTags authors={conceptAuthors} themes={conceptThemes} />
         </div>
 
+        {/*
+         * Une fiche d'échafaudage n'est servie qu'en développement, mais tant qu'elle est
+         * à l'écran elle doit dire ce qu'elle est : rien de ce qu'elle affirme n'a été
+         * vérifié, et la confondre avec une fiche instruite fausserait toute relecture.
+         */}
+        {concept.provenance === "fixture" && (
+          <p className="mt-4 text-[13px] leading-relaxed text-ink-faint">
+            Fiche d&apos;échafaudage : contenu écrit sans vérification documentaire, en
+            attente d&apos;instruction. Ne pas s&apos;y fier.
+          </p>
+        )}
+
+        {/*
+         * L'attribution réelle, quand elle ne se réduit pas aux pastilles d'auteurs :
+         * concept coécrit rangé sous un seul nom, terme forgé par un tiers. Une ligne
+         * discrète plutôt qu'un badge — c'est une précision de lecture, pas un label.
+         */}
+        {concept.attributionNote && (
+          <p className="mt-4 text-[13px] leading-relaxed text-ink-faint">
+            {concept.attributionNote}
+          </p>
+        )}
+
         <p className="mt-8 text-[18px] leading-relaxed text-ink">{concept.shortExplanation}</p>
         <p className="mt-5 text-[15px] leading-relaxed text-ink-soft">
           {concept.detailedExplanation}
         </p>
+
+        {concept.quotation && (
+          <div className="mt-8">
+            <ConceptQuotation quotation={concept.quotation} />
+          </div>
+        )}
 
         <p className="mt-8 text-[15px] leading-relaxed text-ink-soft">{concept.concreteExample}</p>
 

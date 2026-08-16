@@ -1,0 +1,469 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://curiosity.local/schema/concept.record.schema.json",
+  "title": "Enregistrement maître d'un concept",
+  "description": "Objet documentaire complet d'un concept de sociologie des organisations. L'application ne lit jamais cet objet : elle consomme sa projection produite par `npm run corpus:build`. Les règles non exprimables en JSON Schema (gating, intégrité du graphe, chiffres non sourcés) sont appliquées par scripts/corpus/lib/validate.mjs.",
+  "type": "object",
+  "required": [
+    "id",
+    "slug",
+    "status",
+    "canonical_name_fr",
+    "scope",
+    "attribution",
+    "evidence",
+    "pedagogy",
+    "graph",
+    "validation",
+    "provenance"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Identifiant applicatif (ConceptId). Pour un sujet déjà présent dans l'échafaudage (src/content/fixtures/), on reprend le même identifiant : la fiche d'échafaudage cesse alors d'être servie."
+    },
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+
+    "status": {
+      "enum": ["CANDIDATE", "IN_REVIEW", "VALIDATED", "REJECTED", "TEMPLATE"],
+      "description": "Doit correspondre au répertoire : candidates/ review/ validated/ rejected/."
+    },
+
+    "canonical_name_fr": { "type": "string", "minLength": 2 },
+    "canonical_name_en": { "type": ["string", "null"] },
+
+    "scope": {
+      "type": "object",
+      "required": ["in_scope", "rationale"],
+      "additionalProperties": false,
+      "properties": {
+        "in_scope": { "type": "boolean" },
+        "rationale": {
+          "type": "string",
+          "description": "Réponse au test d'entrée de corpus/perimeter.md : en quoi ce concept est nécessaire pour comprendre les organisations."
+        }
+      }
+    },
+
+    "attribution": {
+      "type": "object",
+      "required": ["authors", "authorship"],
+      "additionalProperties": false,
+      "properties": {
+        "authors": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["name"],
+            "additionalProperties": false,
+            "properties": {
+              "name": { "type": "string" },
+              "app_author_id": {
+                "type": ["string", "null"],
+                "description": "Identifiant dans src/content/authors.ts, ou null pour un coauteur hors noyau (Cohen, Olsen, Schön…)."
+              }
+            }
+          }
+        },
+        "authorship": {
+          "enum": ["SOLE_AUTHOR", "COAUTHORED", "ASSOCIATED_WITH"],
+          "description": "ASSOCIATED_WITH : l'auteur a popularisé ou porté le concept sans en être l'inventeur — association n'est pas paternité."
+        },
+        "associated_author": {
+          "type": ["string", "null"],
+          "description": "Auteur sous lequel le concept est habituellement rangé. Obligatoire si authorship ≠ SOLE_AUTHOR."
+        },
+        "term_origin": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "coined_by": { "type": ["string", "null"] },
+            "coined_in": { "type": ["string", "null"] },
+            "note": { "type": ["string", "null"] }
+          },
+          "description": "Traque la confusion « concept de l'auteur ≠ terme forgé plus tard par un commentateur »."
+        }
+      }
+    },
+
+    "evidence": {
+      "type": "object",
+      "description": "Ce que les sources établissent. Écrit par corpus-concept-analyst, contrôlé par la passe A du contrôleur aveugle.",
+      "required": ["concept_definition", "mechanism", "primary_sources", "secondary_sources"],
+      "additionalProperties": false,
+      "properties": {
+        "concept_definition": {
+          "type": "string",
+          "description": "Définition dans les termes de l'auteur, sans vulgarisation."
+        },
+        "mechanism": {
+          "type": "array",
+          "minItems": 2,
+          "items": { "type": "string" },
+          "description": "Chaîne ordonnée d'étapes. Test de suffisance : un lecteur doit pouvoir reconnaître le mécanisme dans une organisation qu'il n'a jamais vue décrite."
+        },
+        "conditions": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "appears_when": { "type": "array", "items": { "type": "string" } },
+            "intensified_by": { "type": "array", "items": { "type": "string" } },
+            "disappears_when": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "key_quotation": {
+          "type": ["object", "null"],
+          "description": "Le passage de l'auteur affiché tel quel dans l'application. Verbatim, tiré d'une source primaire réellement consultée, et honnête sur sa traduction. Un extrait de citation issu d'un article citant (scite, Semantic Scholar) n'est jamais une citation de l'auteur : c'est un tiers qui parle de lui.",
+          "required": ["text", "language", "primary_source_index", "locator"],
+          "additionalProperties": false,
+          "properties": {
+            "text": {
+              "type": "string",
+              "maxLength": 600,
+              "description": "Texte affiché, mot pour mot. Une coupe se signale par […], jamais par une reformulation."
+            },
+            "language": { "type": "string", "description": "Langue de `text` — celle qui sera affichée." },
+            "original_text": {
+              "type": ["string", "null"],
+              "description": "Texte dans la langue d'origine. Obligatoire dès que `text` en est une traduction non publiée."
+            },
+            "original_language": { "type": ["string", "null"] },
+            "translation": {
+              "type": "object",
+              "required": ["kind"],
+              "additionalProperties": false,
+              "properties": {
+                "kind": {
+                  "enum": ["none", "published", "in-house"],
+                  "description": "none : `text` est dans la langue d'origine. published : traduction publiée, traducteur et édition obligatoires. in-house : traduction de notre fait — c'est une interprétation, elle se déclare à l'écran."
+                },
+                "translator": { "type": ["string", "null"] },
+                "edition": { "type": ["string", "null"] }
+              }
+            },
+            "attributed_to": {
+              "type": ["string", "null"],
+              "description": "Auteur à qui la phrase appartient. Obligatoire dès que l'ouvrage a plusieurs auteurs : on ne prête pas à l'un les mots de trois."
+            },
+            "primary_source_index": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Index dans `primary_sources`. La source visée ne peut pas être consultée en métadonnées seules : on ne cite pas un texte qu'on n'a pas ouvert."
+            },
+            "locator": { "type": "string", "description": "Chapitre, section, page du passage cité." }
+          }
+        },
+        "primary_sources": {
+          "type": "array",
+          "minItems": 0,
+          "items": { "$ref": "#/$defs/primarySource" }
+        },
+        "secondary_sources": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/secondarySource" }
+        },
+        "francophone_sources": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/secondarySource" },
+          "description": "Cherchée en parallèle de la littérature internationale, jamais ajoutée en relecture."
+        },
+        "translation_notes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["term_source", "term_fr"],
+            "additionalProperties": false,
+            "properties": {
+              "term_source": { "type": "string" },
+              "term_fr": { "type": "string" },
+              "note": { "type": ["string", "null"] }
+            }
+          },
+          "description": "Traduction ≠ équivalence : un terme français peut recouvrir plusieurs termes originaux."
+        },
+        "known_ambiguities": { "type": "array", "items": { "type": "string" } },
+        "common_misinterpretations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["claim", "why_wrong"],
+            "additionalProperties": false,
+            "properties": {
+              "claim": { "type": "string" },
+              "why_wrong": { "type": "string" },
+              "source": { "type": ["string", "null"] }
+            }
+          }
+        },
+        "limitations": { "type": "array", "items": { "type": "string" } },
+        "reception": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "consensus": { "type": ["string", "null"] },
+            "debates": { "type": "array", "items": { "type": "string" } },
+            "critiques": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["by", "claim"],
+                "additionalProperties": false,
+                "properties": {
+                  "by": { "type": "string" },
+                  "claim": { "type": "string" },
+                  "source": { "type": ["string", "null"] }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+
+    "pedagogy": {
+      "type": "object",
+      "description": "Mise en mots destinée à l'application. N'introduit aucune affirmation absente de `evidence`.",
+      "required": [
+        "hook_question",
+        "short_explanation",
+        "detailed_explanation",
+        "concrete_example",
+        "analysis_questions",
+        "quiz"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "hook_question": { "type": "string" },
+        "short_explanation": { "type": "string" },
+        "detailed_explanation": { "type": "string" },
+        "concrete_example": {
+          "type": "string",
+          "description": "Doit montrer le mécanisme à l'œuvre, pas coller l'étiquette du concept sur une situation."
+        },
+        "example_setting": {
+          "enum": ["entreprise", "administration", "petite-equipe", "association", "autre"]
+        },
+        "analysis_questions": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "quiz": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/quizQuestion" } },
+        "traceability": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["claim", "evidence_ref"],
+            "additionalProperties": false,
+            "properties": {
+              "claim": { "type": "string" },
+              "evidence_ref": {
+                "type": "string",
+                "description": "Chemin dans le bloc evidence, ex. « mechanism[2] » ou « primary_sources[0] »."
+              }
+            }
+          }
+        }
+      }
+    },
+
+    "graph": {
+      "type": "object",
+      "description": "Position du concept dans le graphe consommé par le moteur pédagogique. Chaque relation est une affirmation et se justifie.",
+      "required": ["themes", "difficulty"],
+      "additionalProperties": false,
+      "properties": {
+        "themes": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string" },
+          "description": "Identifiants existants de src/content/themes.ts."
+        },
+        "difficulty": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "difficulty_rationale": { "type": ["string", "null"] },
+        "related": { "type": "array", "items": { "$ref": "#/$defs/relation" } },
+        "opposites": { "type": "array", "items": { "$ref": "#/$defs/relation" } },
+        "prerequisites": { "type": "array", "items": { "$ref": "#/$defs/dependency" } },
+        "deepens_into": { "type": "array", "items": { "$ref": "#/$defs/dependency" } }
+      }
+    },
+
+    "validation": {
+      "type": "object",
+      "required": [
+        "primary_source_confirmed",
+        "secondary_confirmation",
+        "francophone_layer_searched",
+        "evidence_review",
+        "pedagogy_review"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "primary_source_confirmed": { "type": "boolean" },
+        "secondary_confirmation": { "type": "boolean" },
+        "francophone_layer_searched": {
+          "type": "boolean",
+          "description": "Vrai si la couche francophone a été cherchée — pas si elle a donné quelque chose."
+        },
+        "evidence_review": { "$ref": "#/$defs/review" },
+        "pedagogy_review": {
+          "allOf": [{ "$ref": "#/$defs/review" }],
+          "description": "Passe B : la prose ajoute-t-elle quelque chose que les sources n'établissent pas ?"
+        },
+        "confidence_flags": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Incertitudes assumées et conservées. Une fiche sans aucun flag ni ambiguïté est suspecte, pas exemplaire."
+        }
+      }
+    },
+
+    "rejection_reason": {
+      "enum": [
+        "OUT_OF_SCOPE",
+        "NO_PRIMARY_SOURCE",
+        "FALSE_ATTRIBUTION",
+        "POPULARIZATION_ONLY",
+        "INSUFFICIENT_SOURCES",
+        "UNRESOLVED",
+        null
+      ],
+      "description": "Obligatoire si status = REJECTED."
+    },
+
+    "provenance": {
+      "type": "object",
+      "required": ["created_at", "updated_at", "pipeline_version"],
+      "additionalProperties": false,
+      "properties": {
+        "created_at": { "type": "string" },
+        "updated_at": { "type": "string" },
+        "pipeline_version": { "type": "string" },
+        "candidate_origin": {
+          "enum": ["scout", "fixture-topic", "manual"],
+          "description": "fixture-topic : sujet repris de l'échafaudage, instruit de zéro — son texte n'a jamais servi de source."
+        },
+        "runs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["agent", "at", "action"],
+            "additionalProperties": false,
+            "properties": {
+              "agent": { "type": "string" },
+              "at": { "type": "string" },
+              "action": { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "$defs": {
+    "primarySource": {
+      "type": "object",
+      "required": ["citation", "locator", "evidence"],
+      "additionalProperties": false,
+      "properties": {
+        "citation": { "type": "string" },
+        "year": { "type": ["integer", "null"] },
+        "language": { "type": ["string", "null"] },
+        "kind": { "enum": ["book", "article", "chapter", "translation", "other"] },
+        "doi_isbn": { "type": ["string", "null"] },
+        "url": { "type": ["string", "null"] },
+        "locator": {
+          "type": "string",
+          "description": "Chapitre, section, pages. Une source non localisable n'est pas une source."
+        },
+        "evidence": {
+          "type": "string",
+          "description": "Citation ou paraphrase serrée du passage qui établit le point."
+        },
+        "consulted": {
+          "enum": ["full-text", "excerpt", "metadata-only"],
+          "description": "metadata-only n'établit rien : la fiche ne peut pas passer sur cette seule base."
+        }
+      }
+    },
+    "secondarySource": {
+      "type": "object",
+      "required": ["citation", "establishes"],
+      "additionalProperties": false,
+      "properties": {
+        "citation": { "type": "string" },
+        "year": { "type": ["integer", "null"] },
+        "language": { "type": ["string", "null"] },
+        "doi_isbn": { "type": ["string", "null"] },
+        "url": { "type": ["string", "null"] },
+        "role": {
+          "enum": ["attribution", "interpretation", "critique", "reception", "translation", "synthesis"]
+        },
+        "establishes": {
+          "type": "string",
+          "description": "Ce que cette source établit précisément — pas son résumé général."
+        },
+        "level": {
+          "enum": ["B", "C"],
+          "description": "B = secondaire académique, C = synthèse académique. Les niveaux D et E ne s'enregistrent pas comme sources."
+        }
+      }
+    },
+    "quizQuestion": {
+      "type": "object",
+      "required": ["id", "type", "prompt", "correctAnswer", "explanation"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "type": { "enum": ["mcq", "true-false", "open"] },
+        "prompt": { "type": "string" },
+        "choices": { "type": "array", "items": { "type": "string" } },
+        "correctAnswer": {
+          "type": "string",
+          "description": "mcq : index du bon choix en chaîne. true-false : \"true\" ou \"false\". open : texte attendu."
+        },
+        "explanation": { "type": "string" }
+      }
+    },
+    "relation": {
+      "type": "object",
+      "required": ["id", "relation_kind", "justification"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "relation_kind": {
+          "enum": ["documented_filiation", "thematic_proximity", "pedagogical_contrast"],
+          "description": "documented_filiation exige une source : corrélation historique ≠ filiation intellectuelle."
+        },
+        "justification": { "type": "string" },
+        "source": { "type": ["string", "null"] }
+      }
+    },
+    "dependency": {
+      "type": "object",
+      "required": ["id", "why"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "why": { "type": "string" }
+      }
+    },
+    "review": {
+      "type": "object",
+      "required": ["verdict"],
+      "additionalProperties": false,
+      "properties": {
+        "verdict": { "enum": ["PENDING", "PASS", "REWORK", "REJECT"] },
+        "attribution": { "enum": ["confirmee", "douteuse", "fausse", null] },
+        "primary_source": { "enum": ["confirmee", "non-confirmee", null] },
+        "interpretation": { "enum": ["fidele", "trop-large", "trop-etroite", "deformee", null] },
+        "sources": { "enum": ["concordantes", "divergentes", "insuffisantes", null] },
+        "no_new_claims": { "type": ["boolean", "null"] },
+        "notes": { "type": "array", "items": { "type": "string" } },
+        "rounds": { "type": "integer", "minimum": 0, "maximum": 3 },
+        "reviewed_at": { "type": ["string", "null"] }
+      }
+    }
+  }
+}

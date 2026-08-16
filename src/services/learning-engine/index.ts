@@ -100,8 +100,13 @@ export function selectNextSession(
   content: EngineContent,
   progress: ProgressState,
   now: Date = new Date()
-): SessionPlan {
+): SessionPlan | null {
   const { concepts, authors, themes, caseStudies } = content;
+
+  // Un corpus vide est un état légitime tant que l'instruction documentaire n'a pas rendu
+  // sa première fiche. Le moteur ne fabrique rien pour combler : il le dit à l'appelant.
+  if (concepts.length === 0) return null;
+
   const conceptIndex = indexConcepts(concepts);
   const mastery = masteryMap(progress);
   const encountered = encounteredIds(progress);
