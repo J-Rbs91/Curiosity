@@ -26,6 +26,29 @@ const isFilled = (v) => typeof v === "string" && v.trim().length > 0;
 const asArray = (v) => (Array.isArray(v) ? v : []);
 
 /**
+ * Longueurs maximales des champs qui composent la carte.
+ *
+ * Ce ne sont pas des préférences de style : la carte doit tenir dans un écran de
+ * téléphone **sans défilement**, et ces trois champs sont les seuls dont la longueur
+ * varie. Les valeurs correspondent à ce qui tient réellement à la lecture — deux lignes
+ * pour l'accroche, trois pour le résumé, quatre pour la citation.
+ *
+ * Elles ont été **mesurées**, pas devinées : rendu de la carte sur un écran de 390 × 844,
+ * bloc par bloc, avec tous les champs à leur maximum simultané. Une accroche coûte 0,83
+ * pixel par caractère, un résumé 0,60, une citation 0,72.
+ *
+ * La contrainte est ici plutôt que dans une consigne parce qu'une consigne s'oublie : le
+ * premier lot a produit des accroches de 311 caractères et des résumés de 805, tous
+ * excellents et tous inaffichables.
+ */
+export const CARD_LIMITS = {
+  hook_question: 100,
+  short_explanation: 200,
+  key_quotation: 200,
+  sources: 5,
+};
+
+/**
  * Tous les nombres écrits dans un texte, en chaînes normalisées.
  * Sert la règle « un chiffre sans source ne sort pas » : une date, un effectif ou un
  * pourcentage qui apparaît dans la prose pédagogique doit exister dans le bloc de preuve.
@@ -138,8 +161,10 @@ function checkQuotation(record, errors) {
   const at = "evidence.key_quotation";
 
   if (!isFilled(quotation.text)) errors.push(`${at}.text vide`);
-  else if (quotation.text.length > 600)
-    errors.push(`${at}.text : ${quotation.text.length} caractères — une citation courte, pas un extrait d'ouvrage`);
+  else if (quotation.text.length > CARD_LIMITS.key_quotation)
+    errors.push(
+      `${at}.text : ${quotation.text.length} caractères pour ${CARD_LIMITS.key_quotation} au plus — la citation doit tenir dans la carte`
+    );
   if (!isFilled(quotation.locator))
     errors.push(`${at}.locator manquant — une citation qu'on ne peut pas rouvrir à la bonne page ne vaut rien`);
   if (!isFilled(quotation.language)) errors.push(`${at}.language manquante`);
@@ -269,6 +294,15 @@ export function validateRecord(record, { dir, themeIds = new Set(), authorIds = 
       "concrete_example",
     ])
       if (!isFilled(pedagogy[field])) errors.push(`pedagogy.${field} manquant`);
+
+    // La carte doit tenir dans un écran : ces deux champs y sont affichés en entier.
+    for (const field of ["hook_question", "short_explanation"]) {
+      const length = (pedagogy[field] ?? "").length;
+      if (length > CARD_LIMITS[field])
+        errors.push(
+          `pedagogy.${field} : ${length} caractères pour ${CARD_LIMITS[field]} au plus — la carte déborderait de l'écran`
+        );
+    }
     if (asArray(pedagogy.analysis_questions).length === 0)
       errors.push("pedagogy.analysis_questions vide");
     if (asArray(pedagogy.quiz).length === 0) errors.push("pedagogy.quiz vide");

@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { validateCorpus, validateRecord } from "./validate.mjs";
+import { CARD_LIMITS, validateCorpus, validateRecord } from "./validate.mjs";
 import { buildAttributionNote, buildQuotation, projectConcept } from "./project.mjs";
 
 /**
@@ -250,8 +250,8 @@ describe("validateRecord — citation de l'auteur", () => {
     expect(errorsOf(quoted({ locator: "" })).join(" ")).toContain("bonne page");
   });
 
-  it("refuse un extrait d'ouvrage déguisé en citation", () => {
-    expect(errorsOf(quoted({ text: "mot ".repeat(200) })).join(" ")).toContain("citation courte");
+  it("refuse une citation qui ne tiendrait pas dans la carte", () => {
+    expect(errorsOf(quoted({ text: "mot ".repeat(200) })).join(" ")).toContain("tenir dans la carte");
   });
 
   it("détecte une traduction silencieuse quand la langue de la source diffère", () => {
@@ -504,5 +504,52 @@ describe("projectConcept", () => {
     const r = record();
     r.attribution.term_origin = { coined_by: "Un Commentateur", coined_in: "1978", note: null };
     expect(buildAttributionNote(r)).toContain("Terme forgé par Un Commentateur");
+  });
+});
+
+describe("la carte doit tenir dans un écran", () => {
+  /*
+   * Ces limites ont été mesurées sur un rendu réel en 390 × 844, tous champs au maximum
+   * simultané. Elles sont dans le validateur et non dans une consigne parce qu'une
+   * consigne s'oublie : le premier lot a produit des accroches de 311 caractères et des
+   * résumés de 805, tous excellents et tous inaffichables.
+   */
+  it("refuse une accroche qui déborde", () => {
+    const r = record();
+    r.pedagogy.hook_question = "?".repeat(CARD_LIMITS.hook_question + 1);
+    expect(errorsOf(r).join(" ")).toContain("la carte déborderait");
+  });
+
+  it("refuse un résumé qui déborde", () => {
+    const r = record();
+    r.pedagogy.short_explanation = "x".repeat(CARD_LIMITS.short_explanation + 1);
+    expect(errorsOf(r).join(" ")).toContain("la carte déborderait");
+  });
+
+  it("accepte les champs pile à la limite", () => {
+    const r = record();
+    r.pedagogy.hook_question = "?".repeat(CARD_LIMITS.hook_question);
+    r.pedagogy.short_explanation = "x".repeat(CARD_LIMITS.short_explanation);
+    expect(errorsOf(r)).toEqual([]);
+  });
+
+  it("ne projette jamais plus de cinq sources", () => {
+    const r = record();
+    r.evidence.secondary_sources = Array.from({ length: 12 }, (_, i) => ({
+      citation: `Source ${i}`,
+      establishes: "…",
+      level: "B",
+    }));
+    expect(projectConcept(r).sources).toHaveLength(CARD_LIMITS.sources);
+  });
+
+  it("garde les sources primaires en tête quand il faut trancher", () => {
+    const r = record();
+    r.evidence.francophone_sources = Array.from({ length: 9 }, (_, i) => ({
+      citation: `Réception ${i}`,
+      establishes: "…",
+      level: "C",
+    }));
+    expect(projectConcept(r).sources[0].kind).toBe("primary");
   });
 });
