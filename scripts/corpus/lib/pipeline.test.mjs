@@ -347,6 +347,28 @@ describe("validateRecord — graphe", () => {
     expect(errorsOf(r).join(" ")).toContain("corrélation historique");
   });
 
+  it("n'exige ni thème ni difficulté d'une fiche candidate", () => {
+    // Le graphe est écrit en fin de chaîne : les réclamer plus tôt ferait inventer une
+    // affirmation non instruite pour satisfaire l'outil.
+    const r = record({ status: "CANDIDATE" });
+    r.graph = { themes: [], related: [] };
+    expect(errorsOf(r, { ...context, dir: "candidates" })).toEqual([]);
+  });
+
+  it("exige thème et difficulté dès qu'une fiche est validée", () => {
+    const r = record();
+    r.graph = { themes: [], related: [] };
+    const errors = errorsOf(r).join(" ");
+    expect(errors).toContain("graph.themes vide");
+    expect(errors).toContain("difficulty");
+  });
+
+  it("contrôle une difficulté hors bornes même sur une candidate", () => {
+    const r = record({ status: "CANDIDATE" });
+    r.graph = { themes: [], difficulty: 9 };
+    expect(errorsOf(r, { ...context, dir: "candidates" }).join(" ")).toContain("hors de 1..5");
+  });
+
   it("refuse un thème inconnu de l'application", () => {
     const r = record();
     r.graph.themes = ["sociologie-generale"];

@@ -289,13 +289,20 @@ export function validateRecord(record, { dir, themeIds = new Set(), authorIds = 
 
   // --- graphe -------------------------------------------------------------
   const graph = record?.graph ?? {};
+  // Le bloc `graph` est écrit par corpus-graph-curator, en toute fin de chaîne. Exiger
+  // thème et difficulté dès l'état candidat obligerait l'analyste à les inventer pour
+  // faire passer le validateur — c'est-à-dire à produire une affirmation non instruite
+  // pour satisfaire un outil. On ne contrôle donc leur présence qu'à la validation ;
+  // leur justesse, elle, se contrôle dès qu'ils sont renseignés.
   const themes = asArray(graph.themes);
-  if (themes.length === 0) errors.push("graph.themes vide");
+  if (themes.length === 0 && record?.status === "VALIDATED") errors.push("graph.themes vide");
   for (const t of themes)
     if (themeIds.size > 0 && !themeIds.has(t))
       errors.push(`graph.themes : « ${t} » absent de src/content/themes.ts`);
-  if (!Number.isInteger(graph.difficulty) || graph.difficulty < 1 || graph.difficulty > 5)
-    errors.push(`graph.difficulty « ${graph.difficulty} » hors de 1..5`);
+  const hasDifficulty = graph.difficulty !== undefined && graph.difficulty !== null;
+  if (hasDifficulty || record?.status === "VALIDATED")
+    if (!Number.isInteger(graph.difficulty) || graph.difficulty < 1 || graph.difficulty > 5)
+      errors.push(`graph.difficulty « ${graph.difficulty} » hors de 1..5`);
 
   for (const field of ["related", "opposites"])
     asArray(graph[field]).forEach((rel, i) => {
