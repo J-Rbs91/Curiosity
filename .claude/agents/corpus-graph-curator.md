@@ -1,7 +1,7 @@
 ---
 name: corpus-graph-curator
 description: Établit la place d'un concept validé dans le graphe consommé par le moteur pédagogique — relations, opposés, prérequis, approfondissements, difficulté, thèmes. Ne touche ni à la preuve ni à la prose.
-tools: Read, Write, Edit, Glob, Grep, Bash
+tools: Read, Write, Edit, Glob, Grep, Bash, mcp__documentary__get_references, mcp__documentary__search_literature
 model: opus
 ---
 
@@ -23,6 +23,11 @@ Le champ `relation_kind` n'est pas une formalité :
 - **`pedagogical_contrast`** — rapprochement que **nous** fabriquons pour l'enseignement.
   Assumé comme tel, jamais présenté comme un lien historique. C'est le bon choix pour les
   comparaisons inter-auteurs que le moteur exploite en session « comparaison ».
+
+Pour trancher entre `documented_filiation` et `thematic_proximity`, ne raisonne pas :
+regarde. `get_references` (serveur `documentary`) rend ce que le texte de B cite
+réellement. Si A n'y figure pas, et qu'aucune source ne documente la reprise, c'est une
+proximité thématique — quelle que soit l'évidence apparente du lien.
 
 ## Prérequis, approfondissements, difficulté
 

@@ -46,6 +46,7 @@ src/
 
 corpus/            # Corpus maître : fiches sourcées, contrôlées, versionnées
 scripts/corpus/    # Validation, projection, audit, dossiers de contrôle aveugle
+scripts/mcp/       # Serveur MCP : OpenAlex, Crossref, Semantic Scholar, Zotero, HAL
 .claude/agents/    # Les neuf sous-agents du pipeline documentaire
 ```
 
@@ -67,9 +68,14 @@ ont été écrites de mémoire pour que le moteur pédagogique et les écrans pu
 construits. Elles ne sont servies qu'en développement, portent une marque à l'écran, et
 aucune fiche vérifiée n'a le droit de s'appuyer sur elles.
 
+Les agents interrogent les bases par un serveur MCP local — OpenAlex, Crossref, Semantic
+Scholar, Zotero et HAL derrière six outils, dont un `verify_reference` qui confronte une
+référence à sa notice réelle.
+
 La méthode, les critères de validation et le protocole sont dans
 [`docs/corpus-workflow.md`](docs/corpus-workflow.md) ; le périmètre dans
-[`corpus/perimeter.md`](corpus/perimeter.md).
+[`corpus/perimeter.md`](corpus/perimeter.md) ; le branchement des bases dans
+[`scripts/mcp/README.md`](scripts/mcp/README.md).
 
 > Une référence introuvable n'existe pas. Une source qui ne dit pas ce qu'on lui fait dire
 > n'est pas une preuve. Une affirmation n'est pas validée par celui qui l'a produite.

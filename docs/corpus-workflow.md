@@ -108,6 +108,36 @@ Trois règles non négociables :
    important : un texte peut citer la bonne étude, avec le bon titre, et lui faire dire
    l'inverse.
 
+### Les bases, branchées en MCP
+
+Les agents n'accèdent pas aux bases par le web général : un serveur MCP local
+(`scripts/mcp/documentary-server.mjs`, déclaré dans `.mcp.json`) expose **OpenAlex,
+Crossref, Semantic Scholar, Zotero et HAL** derrière six outils. Il est écrit dans ce dépôt
+plutôt qu'emprunté : un dispositif dont le seul produit est la vérifiabilité ne peut pas
+déléguer à un serveur opaque la chaîne qui va de la requête à la référence.
+
+Trois de ses choix font partie de la méthode, pas de l'implémentation :
+
+1. **Toute notice revient avec un `corpus_fragment` en `consulted: "metadata-only"`**,
+   sans localisation ni extrait. Une base atteste qu'un texte existe, jamais ce qu'il dit ;
+   le validateur refuse une fiche validée sur cette seule base. Relever ce champ est un
+   geste d'agent, après lecture.
+2. **`search_francophone` est un outil distinct, à lancer dans le même message que
+   `search_literature`.** La couche francophone cesse d'être une intention pour devenir un
+   appel qu'on fait ou qu'on ne fait pas.
+3. **Un échec n'est jamais un vide.** Les réponses portent `failures`, et
+   `verify_reference` porte `conclusive`. Une base en 429 n'a rien dit ; elle n'a pas dit
+   « rien ». Sans cette distinction, un incident réseau ferait rejeter une référence
+   valide — l'exact inverse du but.
+
+`verify_reference` est le primitif central : il résout un DOI ou un ISBN et rend **la liste
+des écarts** entre la notice réelle et ce que la fiche affirme, sans jamais rendre de
+verdict global. « La référence existe » et « la référence est celle qu'on croit » sont deux
+questions distinctes, et c'est la seconde qui fait perdre les corpus.
+
+Installation, variables d'environnement et limites connues :
+[`scripts/mcp/README.md`](../scripts/mcp/README.md).
+
 ### Les outils bibliométriques, dont scite
 
 Semantic Scholar, OpenAlex, Crossref et scite ne sont pas des niveaux de la hiérarchie :
@@ -119,7 +149,11 @@ font pas : il classe chaque citation en *supporting*, *contrasting* ou *mentioni
 extrayant la phrase de contexte. C'est précieux à deux endroits, et dangereux à un
 troisième.
 
-**Là où il sert :**
+Avant d'y venir : `get_citations`, dans le serveur MCP ci-dessus, rend déjà les phrases de
+contexte et l'intention détectée par Semantic Scholar — une version partielle, libre et
+sans abonnement de ce que scite fait mieux. Elle suffit souvent.
+
+**Là où scite sert :**
 
 - `corpus-reception-analyst` — les proportions et surtout les citations *contrasting*
   donnent directement de quoi remplir `reception.debates`, `reception.critiques` et

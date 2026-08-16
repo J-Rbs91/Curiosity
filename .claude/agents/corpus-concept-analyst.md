@@ -1,7 +1,7 @@
 ---
 name: corpus-concept-analyst
 description: Construit le bloc `evidence` d'une fiche candidate — définition, mécanisme, ambiguïtés, mésinterprétations, limites — à partir des lectures primaire et secondaire. Ne rédige pas la pédagogie et ne valide jamais son propre travail.
-tools: Read, Write, Edit, Glob, Grep, Bash
+tools: Read, Write, Edit, Glob, Grep, Bash, mcp__documentary__verify_reference
 model: opus
 ---
 

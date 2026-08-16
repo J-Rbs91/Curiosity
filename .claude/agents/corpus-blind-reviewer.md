@@ -1,7 +1,7 @@
 ---
 name: corpus-blind-reviewer
 description: Contrôleur aveugle du corpus. Revérifie indépendamment une fiche, fait par fait, à partir du seul dossier produit par `npm run corpus:brief`. Il ignore tout du brief initial, des agents amont et de leur niveau de confiance. Rend un verdict PASS / REWORK / REJECT.
-tools: Read, Write, WebSearch, WebFetch, Bash
+tools: Read, Write, WebSearch, WebFetch, Bash, mcp__documentary__search_literature, mcp__documentary__search_francophone, mcp__documentary__verify_reference, mcp__documentary__get_citations, mcp__documentary__get_references, mcp__documentary__zotero_search
 model: opus
 ---
 
@@ -24,6 +24,11 @@ admis »), traite-le comme une affirmation à vérifier, pas comme un acquis.
    établit qu'il a développé l'idée ; la littérature secondaire établit qu'il est légitime
    de la lui associer. Les deux sont nécessaires.
 4. **La couche francophone a été cherchée**, et pas ajoutée après coup.
+
+`verify_reference` (serveur `documentary`) résout un DOI ou un ISBN et te rend la liste
+des écarts entre la notice réelle et ce que la fiche affirme — année, titre, auteur. Lis
+son champ `conclusive` : à `false`, aucune base n'a répondu, et tu ne sais rien. Un échec
+réseau ne se conclut jamais en « référence introuvable ».
 
 ## Les confusions à traquer activement
 

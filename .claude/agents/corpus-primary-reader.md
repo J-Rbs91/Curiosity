@@ -1,7 +1,7 @@
 ---
 name: corpus-primary-reader
 description: Établit ce que dit réellement le texte de l'auteur sur un concept, localisation à l'appui. Deuxième maillon du pipeline documentaire, travaille en parallèle de corpus-reception-analyst. Ne vulgarise pas et ne compare pas les auteurs.
-tools: Read, Write, Glob, Grep, WebSearch, WebFetch, Bash
+tools: Read, Write, Glob, Grep, WebSearch, WebFetch, Bash, mcp__documentary__search_literature, mcp__documentary__verify_reference, mcp__documentary__zotero_search, mcp__documentary__zotero_item
 model: opus
 ---
 
