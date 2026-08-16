@@ -34,9 +34,11 @@ function makeConcept(overrides: Partial<Concept> & Pick<Concept, "id">): Concept
 const baseContent: EngineContent = {
   concepts: [],
   authors: [
-    { id: "weber", slug: "weber", name: "Weber", tagline: "", bio: "", themes: ["bureaucratie"] },
+    { id: "weber", slug: "weber", name: "Weber", tagline: "", keywords: [], bio: "", themes: ["bureaucratie"] },
   ],
-  themes: [{ id: "bureaucratie", slug: "bureaucratie", title: "Bureaucratie", description: "" }],
+  themes: [
+    { id: "bureaucratie", slug: "bureaucratie", title: "Bureaucratie", tagline: "", keywords: [], description: "" },
+  ],
   caseStudies: [],
 };
 
