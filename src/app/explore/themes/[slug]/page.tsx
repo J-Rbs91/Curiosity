@@ -4,7 +4,6 @@ import { useParams, notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { themes, concepts, authors } from "@/content";
-import { conceptsByTheme } from "@/domain/concepts/graph";
 import { Screen } from "@/components/motion/Screen";
 import { SCREEN_MOTION } from "@/components/motion/screen-motion";
 
@@ -14,7 +13,7 @@ export default function ThemeDetailPage() {
 
   if (!theme) return notFound();
 
-  const themeConcepts = conceptsByTheme(concepts, theme.id);
+  const themeConcepts = concepts.filter((c) => c.themes.includes(theme.id));
   const contributingAuthorIds = new Set(themeConcepts.flatMap((c) => c.authors));
   const contributingAuthors = authors.filter((a) => contributingAuthorIds.has(a.id));
 

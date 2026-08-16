@@ -136,7 +136,6 @@ function projectSources(record) {
 export function projectConcept(record) {
   const pedagogy = record?.pedagogy ?? {};
   const graph = record?.graph ?? {};
-  const ids = (list) => asArray(list).map((r) => r?.id).filter(isFilled);
 
   /*
    * Les libellés d'affichage sont portés par la fiche, pas cherchés dans les tables de
@@ -158,35 +157,14 @@ export function projectConcept(record) {
     authorLabel,
     hookQuestion: pedagogy.hook_question,
     shortExplanation: pedagogy.short_explanation,
-    detailedExplanation: pedagogy.detailed_explanation,
     authors: asArray(record?.attribution?.authors)
       .map((a) => a?.app_author_id)
       .filter(isFilled),
     themes: asArray(graph.themes),
-    relatedConcepts: ids(graph.related),
-    prerequisites: ids(graph.prerequisites),
-    concreteExample: pedagogy.concrete_example,
-    analysisQuestions: asArray(pedagogy.analysis_questions),
-    quiz: asArray(pedagogy.quiz).map((q) => {
-      const question = {
-        id: q.id,
-        type: q.type,
-        prompt: q.prompt,
-        correctAnswer: q.correctAnswer,
-        explanation: q.explanation,
-      };
-      if (asArray(q.choices).length > 0) question.choices = q.choices;
-      return question;
-    }),
-    difficulty: graph.difficulty,
   };
 
   if (isFilled(themeLabel)) concept.themeLabel = themeLabel;
 
-  const opposites = ids(graph.opposites);
-  if (opposites.length > 0) concept.oppositeConcepts = opposites;
-  const deepens = ids(graph.deepens_into);
-  if (deepens.length > 0) concept.deepensInto = deepens;
 
   const note = buildAttributionNote(record);
   if (note) concept.attributionNote = note;

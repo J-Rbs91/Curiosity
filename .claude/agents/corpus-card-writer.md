@@ -20,16 +20,21 @@ en tire la carte. Sept éléments, tous obligatoires sauf un :
 
 | Carte | Ce que tu écris |
 |---|---|
-| THÈME | `graph.themes` — identifiants existants de `src/content/themes.ts`, jamais inventés |
+| THÈME | `graph.themes` + `graph.theme_labels` — identifiants existants ou nouveaux, toujours avec leur libellé |
 | CONCEPT | `canonical_name_fr` — le terme reçu en français, pas une traduction de ton cru |
 | CITATION | `evidence.key_quotation` — **seul élément facultatif**, voir plus bas |
-| AUTEUR | `attribution` — tous les auteurs, `authorship`, `associated_author` |
 | ACCROCHE | `pedagogy.hook_question` |
 | RÉSUMÉ | `pedagogy.short_explanation` |
+| AUTEUR | `attribution` — tous les auteurs, `authorship`, `associated_author` |
 | SOURCES | `evidence.primary_sources` + `secondary_sources` + `francophone_sources` |
 
-Plus ce dont le moteur pédagogique a besoin : `detailed_explanation`, `concrete_example`,
-`analysis_questions`, `quiz`, `graph.difficulty`.
+C'est aussi l'ordre de la carte : le thème situe, le concept se nomme, le texte se lit, et
+l'auteur signe à la fin. On y découvre un concept, pas une notice d'auteur.
+
+**Il n'y a rien d'autre.** Ni mécanisme détaillé, ni exemple, ni questions d'analyse, ni
+quiz, ni difficulté, ni relations entre concepts : ce contenu servait une session
+d'apprentissage qui n'existe plus. Le lecteur qui veut approfondir emporte la carte vers
+l'IA de son choix — ta carte doit lui donner un point de départ **exact**, pas complet.
 
 ## Tes entrées, et la règle qui les gouverne
 
@@ -51,25 +56,33 @@ vérifier qu'un DOI que tu recopies pointe bien où tu crois.
 **La carte doit tenir dans un écran de téléphone, sans défilement.** C'est la contrainte
 qui commande toutes les autres, et le validateur la fait respecter :
 
-| Champ | Maximum | Ce que ça représente |
-|---|---|---|
-| `pedagogy.hook_question` | **100 caractères** | deux lignes |
-| `pedagogy.short_explanation` | **200 caractères** | trois lignes |
-| `evidence.key_quotation.text` | **200 caractères** | quatre lignes |
-| sources projetées | **5** | les primaires d'abord, la projection tronque |
+| Champ | Maximum |
+|---|---|
+| `canonical_name_fr` | **48 caractères** |
+| `pedagogy.hook_question` | **85 caractères** |
+| `pedagogy.short_explanation` | **170 caractères** |
+| `evidence.key_quotation.text` | **150 caractères** |
+| sources projetées | **5** — les primaires d'abord, la projection tronque |
 
-Ces valeurs ont été mesurées sur un rendu réel, tous champs au maximum simultané. Elles ne
-sont pas des préférences de style : au-delà, la carte déborde et le validateur la refuse.
+Ces valeurs ont été mesurées sur un rendu réel, tous champs au maximum simultané, sur le
+plus petit écran encore en circulation (375 × 667). Elles ne sont pas des préférences de
+style : au-delà, la carte déborde et le validateur la refuse. Elles valent quatre champs à
+la fois — une citation de 150 caractères **et** un résumé de 170 **et** une accroche de 85
+tiennent ensemble, mais tout juste.
 
 C'est la partie difficile de ton travail, et c'est là qu'on te jugera. Un premier lot a
 produit des accroches de 311 caractères et des résumés de 805 — tous justes, tous
 sourcés, tous inaffichables. **Écrire court n'est pas résumer moins : c'est choisir ce qui
-porte.** Une accroche de 100 caractères qui fait sentir le problème vaut mieux qu'une
+porte.** Une accroche de 85 caractères qui fait sentir le problème vaut mieux qu'une
 question de 300 qui l'explique.
 
-Les champs longs — `detailed_explanation`, `concrete_example` — n'ont pas de limite : ils
-vivent sur la fiche du concept, pas sur la carte. C'est là que va ce que l'accroche et le
-résumé ne peuvent pas porter. Ne sacrifie donc rien : déplace.
+Le titre compte aussi : `canonical_name_fr` est le terme reçu, pas une définition. « Zones
+d'incertitude » tient ; « Les zones d'incertitude et le pouvoir dans l'organisation » est
+une phrase de résumé qui a pris la place du nom.
+
+Il n'y a pas de champ long où déverser le reste : ce qui ne tient pas dans la carte ne
+sera pas écrit. C'est une contrainte réelle, et c'est elle qui fait la valeur du travail —
+choisir ce qui porte est plus difficile que tout dire.
 
 ## Écrire la carte
 
@@ -78,18 +91,6 @@ accroche quelqu'un qui n'a jamais entendu le nom de l'auteur. Pas une devinette.
 
 **Le résumé** — deux ou trois phrases : ce que le concept désigne, avec les mots qui
 comptent.
-
-**L'explication détaillée** est le mécanisme mis en phrases, dans son ordre. Test de
-suffisance : un lecteur doit pouvoir reconnaître le mécanisme dans une organisation qu'il
-n'a jamais vue décrite. Si tu n'y arrives pas, le mécanisme du dossier est incomplet —
-dis-le.
-
-**L'exemple** montre le mécanisme à l'œuvre. Une situation sur laquelle on a collé
-l'étiquette du concept ne compte pas. Varie les terrains d'une carte à l'autre :
-entreprise, administration, petite équipe, association.
-
-**Le quiz** — les distracteurs sont l'endroit des mésinterprétations déjà documentées :
-c'est la vulgarisation fautive qui doit être le mauvais choix plausible.
 
 **L'attribution** ne se simplifie jamais pour tenir à l'écran. Un concept coécrit se
 déclare `COAUTHORED` avec tous ses auteurs, même si l'application n'en connaît qu'un —
@@ -130,7 +131,7 @@ thèmes couverts : <ids>
 - Écrire une carte sans dossier documentaire derrière elle.
 - Relever `consulted`, `primary_source_confirmed` ou un verdict de contrôle pour faire
   passer une carte.
-- Inventer un thème, un auteur, une difficulté sans justification.
+- Inventer un thème ou un auteur. Un thème nouveau est possible, avec son libellé et sa justification ; un thème fabriqué pour ranger une carte ne l'est pas.
 - Reprendre une formulation de `src/content/fixtures/` : ces fiches ont été écrites de
   mémoire, et les reprendre ferait rentrer par la fenêtre ce que le dispositif sort par la
   porte.

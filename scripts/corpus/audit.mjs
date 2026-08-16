@@ -13,7 +13,7 @@
 
 import { loadAppContent, loadRecords } from "./lib/io.mjs";
 
-const { authors, themes, fixtureConcepts, caseStudies } = await loadAppContent();
+const { authors, themes, fixtureConcepts } = await loadAppContent();
 const records = await loadRecords();
 
 const byStatus = (status) => records.filter(({ record }) => record?.status === status).map((r) => r.record);
@@ -57,39 +57,17 @@ if (rejected.length > 0) {
   console.log(`\nrejets : ${[...reasons].map(([reason, n]) => `${reason} ×${n}`).join(" · ")}`);
 }
 
-// Suggestions de sujets. L'ordre est calculé sur le graphe de l'échafaudage — c'est une
-// heuristique d'organisation du travail, pas une affirmation sur le champ : un concept
-// très relié dans des fiches non vérifiées ne l'est pas nécessairement dans la littérature.
+// Les sujets d'échafaudage jamais instruits. Ce sont des pistes, pas une dette : la file
+// d'instruction est établie par le cartographe à partir du champ, pas de cette liste.
 const untouched = fixtureConcepts.filter(
   (c) => !validatedIds.has(c.id) && !inFlightIds.has(c.id)
 );
 
 if (untouched.length > 0) {
-  const incoming = new Map();
-  for (const c of fixtureConcepts)
-    for (const id of [...c.relatedConcepts, ...c.prerequisites, ...(c.deepensInto ?? [])])
-      incoming.set(id, (incoming.get(id) ?? 0) + 1);
-
-  const next = untouched
-    .map((c) => ({ id: c.id, weight: incoming.get(c.id) ?? 0, authors: c.authors.join("/") }))
-    .sort((a, b) => b.weight - a.weight || a.id.localeCompare(b.id, "fr"))
-    .slice(0, 8);
-
   console.log(
-    `\n${untouched.length} sujet(s) d'échafaudage jamais instruit(s). Pistes, par centralité` +
-      " dans le graphe d'échafaudage (heuristique de travail, pas un constat sur le champ) :"
+    `\n${untouched.length} sujet(s) d'échafaudage jamais instruit(s) — pour mémoire :`
   );
-  for (const c of next) console.log(`  ${pad(c.id, 32)}${pad(c.authors, 14)}← ${c.weight} renvoi(s)`);
+  for (const c of untouched.slice(0, 8)) console.log(`  ${c.id}`);
+  if (untouched.length > 8) console.log(`  … et ${untouched.length - 8} autres`);
+  console.log("\nLa file d'instruction est dans corpus/map/queue.json, établie par le cartographe.");
 }
-
-// Un cas pratique ne vaut que si les concepts qu'il mobilise sont validés. Ceux-ci
-// renvoient encore à de l'échafaudage : ils sont eux-mêmes de l'échafaudage.
-const blocked = caseStudies.filter((cs) =>
-  cs.readings.some((r) => r.conceptIds.some((id) => !validatedIds.has(id)))
-);
-if (blocked.length > 0)
-  console.log(
-    `\n${blocked.length} cas pratique(s) reposent sur des concepts non validés : ${blocked
-      .map((cs) => cs.id)
-      .join(", ")}`
-  );

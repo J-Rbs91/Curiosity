@@ -1,45 +1,60 @@
-import type { Author, Concept, Theme } from "@/types";
+import type { Concept } from "@/types";
 
 export interface ConceptPromptInput {
   concept: Concept;
-  authors: Author[];
-  themes: Theme[];
 }
 
 /**
- * Construit le texte envoyé à une application d'IA depuis le bouton « + ».
+ * Construit le texte envoyé à une application d'IA depuis le bouton « Approfondir ».
  *
- * Ce n'est pas un partage : on n'envoie pas la fiche, on envoie une commande.
- * Les éléments visibles à l'écran — thème, concept, résumé, auteur, et
- * l'attribution quand elle ne se réduit pas à un nom — ne sont que le contexte ;
- * l'essentiel du texte dit quoi en faire.
+ * C'est **le** chemin d'approfondissement de l'application : il n'y a plus de session, de
+ * mécanisme détaillé ni de quiz. La carte donne un point de départ exact — le bon auteur,
+ * une citation verbatim, des sources atteignables — et l'IA du lecteur fait le reste.
  *
- * Deux exigences sont structurelles et ne doivent pas disparaître d'une
- * réécriture :
+ * D'où l'inversion par rapport à la version précédente : le prompt n'envoie plus seulement
+ * une commande, il **emporte la matière vérifiée**. Ce qui a coûté le plus cher à établir —
+ * l'attribution réelle, la citation localisée, les cinq références — est précisément ce qui
+ * empêchera l'IA de partir sur une vulgarisation. Une IA qui reçoit « Cohen, March & Olsen,
+ * 1972 » ne rendra pas le même texte qu'une IA qui reçoit « March ».
  *
- * 1. **La progression ne se nomme jamais.** Le texte demande une montée du
- *    débutant vers le spécialiste, et interdit explicitement d'écrire le mot
- *    « débutant », « intermédiaire » ou « expert ». Sans cette interdiction,
- *    tous les modèles produisent trois sections étiquetées, ce qui découpe en
- *    paliers ce qui doit se lire d'un trait.
- * 2. **Une lacune se déclare, elle ne se comble pas.** La demande de sources
- *    dit explicitement qu'une référence incertaine doit être signalée plutôt
- *    qu'inventée. C'est la seule protection possible à distance contre une
- *    bibliographie plausible et fausse.
+ * Trois exigences sont structurelles et ne doivent pas disparaître d'une réécriture :
+ *
+ * 1. **La progression ne se nomme jamais.** Le texte demande une montée du débutant vers
+ *    le spécialiste, et interdit explicitement d'écrire « débutant », « intermédiaire » ou
+ *    « expert ». Sans cette interdiction, tous les modèles produisent trois sections
+ *    étiquetées, ce qui découpe en paliers ce qui doit se lire d'un trait.
+ * 2. **Une lacune se déclare, elle ne se comble pas.** C'est la seule protection possible,
+ *    à distance, contre une bibliographie plausible et fausse.
+ * 3. **L'attribution transmise fait autorité sur la mémoire du modèle.** Elle a été
+ *    vérifiée sur les textes ; la mémoire d'un modèle, non.
  */
-export function buildConceptPrompt({ concept, authors, themes }: ConceptPromptInput): string {
-  const authorNames = authors.map((a) => a.name).join(", ");
-  const themeTitles = themes.map((t) => t.title).join(", ");
+export function buildConceptPrompt({ concept }: ConceptPromptInput): string {
+  const lines = [
+    `Thème : ${concept.themeLabel ?? "sociologie des organisations"}`,
+    `Concept : ${concept.title}`,
+    `Auteur : ${concept.authorLabel ?? "non précisé"}`,
+  ];
+  if (concept.attributionNote) lines.push(`Attribution établie : ${concept.attributionNote}`);
+  if (concept.quotation)
+    lines.push(
+      `Citation : « ${concept.quotation.text} » — ${concept.quotation.attributedTo}, ${concept.quotation.reference}` +
+        (concept.quotation.translationNote ? ` (${concept.quotation.translationNote})` : "")
+    );
+  lines.push(`Résumé dont je dispose : ${concept.shortExplanation}`);
 
-  const attribution = concept.attributionNote ? `\nAttribution établie : ${concept.attributionNote}` : "";
+  const sources = (concept.sources ?? []).map((s) =>
+    `- ${s.label}${s.reference ? `, ${s.reference}` : ""}`
+  );
 
   return `Tu es un pédagogue spécialiste de sociologie des organisations. Je veux comprendre en profondeur le concept ci-dessous.
 
 CE QUE J'AI
-Thème : ${themeTitles || "sociologie des organisations"}
-Concept : ${concept.title}
-Auteur de référence : ${authorNames || "non précisé"}${attribution}
-Résumé dont je dispose : ${concept.shortExplanation}
+${lines.join("\n")}
+${sources.length > 0 ? `\nSources vérifiées :\n${sources.join("\n")}\n` : ""}
+Ces éléments ont été vérifiés sur les textes eux-mêmes : l'attribution, la citation et sa
+localisation, et les références. Tiens-les pour exacts, y compris s'ils contredisent ce
+dont tu te souviens — et signale-le-moi si c'est le cas, plutôt que de les corriger
+silencieusement.
 
 CE QUE J'ATTENDS
 Écris une explication continue qui part de zéro et va jusqu'au niveau d'un spécialiste, en une seule progression.

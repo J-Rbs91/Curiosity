@@ -1,63 +1,55 @@
 // @vitest-environment jsdom
-import { describe, expect, it, beforeEach } from "vitest";
-import { LocalStorageProgressRepository, createEmptyProgressState } from "./progress.repository";
+import { beforeEach, describe, expect, it } from "vitest";
+import {
+  LocalStorageProgressRepository,
+  createEmptyProgressState,
+} from "./progress.repository";
+import type { ProgressState } from "@/types";
+
+const KEY = "curiosity.progress.v2";
 
 describe("LocalStorageProgressRepository", () => {
-  beforeEach(() => {
-    window.localStorage.clear();
+  beforeEach(() => window.localStorage.clear());
+
+  it("rend un état vide quand rien n'a été enregistré", () => {
+    expect(new LocalStorageProgressRepository().load()).toEqual(createEmptyProgressState());
   });
 
-  it("retourne un état vide quand aucune donnée n'existe", () => {
-    const repo = new LocalStorageProgressRepository();
-    expect(repo.load()).toEqual(createEmptyProgressState());
-  });
-
-  it("ne plante pas sur des données corrompues et retombe sur un état vide", () => {
-    window.localStorage.setItem("curiosity.progress.v1", "{ not valid json");
-    const repo = new LocalStorageProgressRepository();
-    expect(repo.load()).toEqual(createEmptyProgressState());
-  });
-
-  it("ne plante pas sur des données valides mais de forme inattendue", () => {
-    window.localStorage.setItem("curiosity.progress.v1", JSON.stringify({ foo: "bar" }));
-    const repo = new LocalStorageProgressRepository();
-    expect(repo.load()).toEqual(createEmptyProgressState());
-  });
-
-  it("la progression survit à un rechargement (nouvelle instance du repository)", () => {
-    const repo = new LocalStorageProgressRepository();
-    const state = createEmptyProgressState();
-    state.concepts["bureaucratie"] = {
-      conceptId: "bureaucratie",
-      encounters: 1,
-      masteryScore: 1,
-      correctAnswers: 0,
-      incorrectAnswers: 0,
-    };
-    repo.save(state);
-
-    const reloaded = new LocalStorageProgressRepository();
-    expect(reloaded.load().concepts["bureaucratie"]?.masteryScore).toBe(1);
-  });
-
-  it("la réinitialisation efface les données persistées", () => {
-    const repo = new LocalStorageProgressRepository();
-    repo.save({
+  it("relit ce qu'il a écrit", () => {
+    const repository = new LocalStorageProgressRepository();
+    const state: ProgressState = {
       ...createEmptyProgressState(),
       concepts: {
         bureaucratie: {
           conceptId: "bureaucratie",
+          firstSeenAt: "2026-01-01T00:00:00.000Z",
+          lastSeenAt: "2026-01-01T00:00:00.000Z",
           encounters: 1,
-          masteryScore: 1,
-          correctAnswers: 0,
-          incorrectAnswers: 0,
         },
       },
-    });
+    };
+    repository.save(state);
 
-    repo.reset();
+    expect(repository.load()).toEqual(state);
+  });
 
-    const reloaded = new LocalStorageProgressRepository();
-    expect(reloaded.load()).toEqual(createEmptyProgressState());
+  it("repart à zéro sur un stockage illisible plutôt que d'échouer", () => {
+    window.localStorage.setItem(KEY, "{ pas du json");
+    expect(new LocalStorageProgressRepository().load()).toEqual(createEmptyProgressState());
+  });
+
+  it("ignore un état d'une version antérieure", () => {
+    // La v1 décrivait une application avec sessions, quiz et maîtrise : la convertir
+    // produirait des données qui n'ont jamais rien signifié dans celle-ci.
+    window.localStorage.setItem(KEY, JSON.stringify({ version: 1, concepts: {}, settings: {} }));
+    expect(new LocalStorageProgressRepository().load().version).toBe(2);
+  });
+
+  it("efface tout", () => {
+    const repository = new LocalStorageProgressRepository();
+    repository.save({ ...createEmptyProgressState(), settings: { firstLaunchCompleted: true } });
+    repository.clear();
+
+    expect(repository.load().settings.firstLaunchCompleted).toBe(false);
   });
 });

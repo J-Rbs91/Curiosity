@@ -1,68 +1,39 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { useParams, notFound, useRouter } from "next/navigation";
+import { useParams, notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { concepts, authors, themes } from "@/content";
-import { indexConcepts, getRelatedConcepts, getPrerequisiteConcepts } from "@/domain/concepts/graph";
-import { getProgressService } from "@/services/progress";
 import { ConceptMetaTags } from "@/components/concept/ConceptMetaTags";
 import { ConceptQuotation } from "@/components/concept/ConceptQuotation";
 import { ConceptSourceList } from "@/components/concept/ConceptSources";
 import { Screen } from "@/components/motion/Screen";
 import { SCREEN_MOTION } from "@/components/motion/screen-motion";
-import { Button } from "@/components/ui/Button";
-import { ShareToAI } from "@/components/ui/ShareToAI";
-import { storePendingSession } from "@/lib/pending-session";
-import type { UserConceptProgress, SessionPlan } from "@/types";
+import { DeepenButton } from "@/components/ui/DeepenButton";
 
-const conceptIndex = indexConcepts(concepts);
-
+/**
+ * La fiche d'un concept, atteinte depuis un auteur ou un thème.
+ *
+ * Elle porte la même matière que la carte du jour — il n'y en a pas d'autre — mais sans la
+ * contrainte d'un écran : les sources y sont dépliées, les rattachements cliquables, et
+ * rien n'est masqué. C'est la différence entre rencontrer un concept et aller le chercher.
+ */
 export default function ConceptDetailPage() {
   const params = useParams<{ slug: string }>();
-  const router = useRouter();
   const concept = concepts.find((c) => c.slug === params.slug);
-  const [progress, setProgress] = useState<UserConceptProgress | undefined>(undefined);
-
-  useEffect(() => {
-    // Lecture localStorage : impossible pendant le rendu serveur, doit se faire après le montage.
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    if (concept) setProgress(getProgressService().getState().concepts[concept.id]);
-  }, [concept]);
 
   if (!concept) return notFound();
 
   const conceptAuthors = authors.filter((a) => concept.authors.includes(a.id));
   const conceptThemes = themes.filter((t) => concept.themes.includes(t.id));
-  const related = getRelatedConcepts(conceptIndex, concept);
-  const prerequisites = getPrerequisiteConcepts(conceptIndex, concept);
-
-  /*
-   * La progression sert encore à choisir le verbe de l'action — on ne redécouvre
-   * pas ce qu'on a déjà vu — mais elle ne s'affiche plus nulle part.
-   */
-  const alreadyKnown = (progress?.masteryScore ?? 0) >= 1;
-
-  function studyNow() {
-    const plan: SessionPlan = {
-      id: `manual-${concept!.id}-${Date.now()}`,
-      type: alreadyKnown ? "review" : "discovery",
-      primaryConceptId: concept!.id,
-      headline: concept!.hookQuestion,
-    };
-    storePendingSession(plan);
-    router.push("/learn", { transitionTypes: SCREEN_MOTION.enterSession });
-  }
 
   return (
     <Screen>
       <div className="mx-auto max-w-md px-6 pt-10 pb-12">
         {/*
-         * Une destination nommée plutôt qu'un retour d'historique : cette fiche
-         * s'atteint depuis un auteur, un thème ou la fin d'une session, et dans
-         * ce dernier cas un retour arrière renvoyait dans la session qu'on
-         * venait de terminer.
+         * Une destination nommée plutôt qu'un retour d'historique : cette fiche s'atteint
+         * depuis un auteur ou un thème, et un retour arrière renverrait parfois hors de
+         * l'application.
          */}
         <Link
           href="/explore"
@@ -77,9 +48,19 @@ export default function ConceptDetailPage() {
           {concept.title}
         </h1>
 
-        <div className="mt-5">
-          <ConceptMetaTags authors={conceptAuthors} themes={conceptThemes} />
-        </div>
+        {/*
+         * Les pastilles ne couvrent que les auteurs et thèmes auxquels l'application
+         * consacre une page. Le corpus peut en introduire d'autres : ceux-là s'affichent
+         * par leur nom, sans lien, plutôt que de disparaître.
+         */}
+        {(conceptAuthors.length > 0 || conceptThemes.length > 0) && (
+          <div className="mt-5">
+            <ConceptMetaTags authors={conceptAuthors} themes={conceptThemes} />
+          </div>
+        )}
+        {conceptAuthors.length === 0 && concept.authorLabel && (
+          <p className="mt-5 text-[15px] text-ink-soft">{concept.authorLabel}</p>
+        )}
 
         {/*
          * Une fiche d'échafaudage n'est servie qu'en développement, mais tant qu'elle est
@@ -93,21 +74,11 @@ export default function ConceptDetailPage() {
           </p>
         )}
 
-        {/*
-         * L'attribution réelle, quand elle ne se réduit pas aux pastilles d'auteurs :
-         * concept coécrit rangé sous un seul nom, terme forgé par un tiers. Une ligne
-         * discrète plutôt qu'un badge — c'est une précision de lecture, pas un label.
-         */}
         {concept.attributionNote && (
           <p className="mt-4 text-[13px] leading-relaxed text-ink-faint">
             {concept.attributionNote}
           </p>
         )}
-
-        <p className="mt-8 text-[18px] leading-relaxed text-ink">{concept.shortExplanation}</p>
-        <p className="mt-5 text-[15px] leading-relaxed text-ink-soft">
-          {concept.detailedExplanation}
-        </p>
 
         {concept.quotation && (
           <div className="mt-8">
@@ -115,15 +86,15 @@ export default function ConceptDetailPage() {
           </div>
         )}
 
-        <p className="mt-8 text-[15px] leading-relaxed text-ink-soft">{concept.concreteExample}</p>
+        <p className="mt-8 font-serif-display text-[19px] leading-snug text-ink">
+          {concept.hookQuestion}
+        </p>
+        <p className="mt-5 text-[16px] leading-relaxed text-ink-soft">
+          {concept.shortExplanation}
+        </p>
 
-        {prerequisites.length > 0 && (
-          <ConceptLinkList label="Prérequis" concepts={prerequisites} />
-        )}
-        {related.length > 0 && <ConceptLinkList label="Concepts reliés" concepts={related} />}
-
-        {concept.sources && (
-          <div className="mt-8">
+        {concept.sources && concept.sources.length > 0 && (
+          <div className="mt-10">
             <h2 className="text-xs font-medium uppercase tracking-[0.12em] text-ink-faint">
               Sources
             </h2>
@@ -133,32 +104,10 @@ export default function ConceptDetailPage() {
           </div>
         )}
 
-        <div className="mt-12 flex items-center gap-2">
-          <Button onClick={studyNow}>{alreadyKnown ? "Revoir" : "Approfondir"}</Button>
-          <ShareToAI concept={concept} authors={conceptAuthors} themes={conceptThemes} />
+        <div className="mt-12">
+          <DeepenButton concept={concept} />
         </div>
       </div>
     </Screen>
-  );
-}
-
-function ConceptLinkList({ label, concepts: items }: { label: string; concepts: typeof concepts }) {
-  return (
-    <div className="mt-8">
-      <h2 className="text-xs font-medium uppercase tracking-[0.12em] text-ink-faint">{label}</h2>
-      <ul className="mt-3 flex flex-wrap gap-2">
-        {items.map((c) => (
-          <li key={c.id}>
-            <Link
-              href={`/explore/concepts/${c.slug}`}
-              transitionTypes={SCREEN_MOTION.deeper}
-              className="press inline-flex rounded-full bg-paper-raised px-3 py-1.5 text-sm text-ink-soft hover:bg-paper-contact hover:text-ink"
-            >
-              {c.title}
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </div>
   );
 }

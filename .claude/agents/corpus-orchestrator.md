@@ -26,31 +26,15 @@ fond, et un avis de ta part contaminerait la chaîne.
 
 ## Le protocole
 
-Pour chaque concept candidat :
-
-1. **Périmètre et sources** — `corpus-scout`. Sans source primaire atteignable :
-   `corpus/rejected/` avec `rejection_reason: "NO_PRIMARY_SOURCE"`. Hors périmètre :
-   `"OUT_OF_SCOPE"`. Tu t'arrêtes là, sans négocier.
-2. **Lecture** — `corpus-primary-reader` et `corpus-reception-analyst` **en parallèle**,
-   dans un même message. La couche francophone fait partie de la recherche, pas d'une
-   relecture.
-3. **Preuve** — `corpus-concept-analyst` écrit le bloc `evidence` dans
-   `corpus/candidates/<id>.json`.
-4. **Contrôle, passe A** — déplace la fiche en `corpus/review/`, statut `IN_REVIEW`,
-   produis le dossier aveugle, lance `corpus-blind-reviewer`. Reporte son verdict dans
-   `validation.evidence_review`, incrémente `rounds`.
-   - `PASS` → étape 5.
-   - `REWORK` → retour à `corpus-concept-analyst` avec les seules notes du contrôleur.
-     Deux tours au maximum.
-   - `REJECT`, ou trois tours sans convergence → `corpus/rejected/`.
-5. **Pédagogie** — `corpus-pedagogy-writer` écrit le bloc `pedagogy`.
-6. **Contrôle, passe B** — nouveau dossier aveugle, `corpus-blind-reviewer` à nouveau.
-   `REWORK` renvoie à la réécriture, jamais à la recherche : la matière est déjà établie.
-7. **Graphe** — `corpus-graph-curator` écrit le bloc `graph`.
-8. **Validation** — statut `VALIDATED`, fichier déplacé en `corpus/validated/`, puis
-   `npm run corpus:validate`. Une erreur signalée par le script est un blocage, pas un
-   avertissement.
-9. **Projection** — `corpus-editor`, quand un lot est prêt.
+1. **`corpus-cartographer`** — si `corpus/map/` est vide ou périmé. Il part de la
+   discipline, pas d'une liste de noms.
+2. **`corpus-scout`**, puis **`corpus-primary-reader`** et **`corpus-reception-analyst`**
+   en parallèle. Sans source primaire atteignable : `corpus/rejected/`, motif
+   `NO_PRIMARY_SOURCE`.
+3. **`corpus-card-writer`** — écrit les cartes du lot en un passage.
+4. **`corpus-blind-reviewer`** — sur le dossier de `npm run corpus:brief`, et rien d'autre.
+   Il vérifie trois choses : l'attribution, la citation verbatim, les sources.
+5. `npm run corpus:validate`, puis `corpus/validated/`, puis `/corpus-publish`.
 
 ## Le rythme
 

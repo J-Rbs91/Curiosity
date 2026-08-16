@@ -17,12 +17,15 @@ Une fiche n'est terminée que si elle permet de composer la carte de l'applicati
 | Carte | Champ de la fiche | Exigé |
 |---|---|---|
 | THÈME | `graph.themes` | oui — au moins un thème existant |
-| CONCEPT | `canonical_name_fr` | oui |
-| CITATION | `evidence.key_quotation` | **non** — voir plus bas |
-| AUTEUR | `attribution` → `attributionNote` | oui — coauteurs rétablis |
-| ACCROCHE | `pedagogy.hook_question` | oui |
-| RÉSUMÉ | `pedagogy.short_explanation` | oui |
+| CONCEPT | `canonical_name_fr` | oui — 48 caractères au plus |
+| CITATION | `evidence.key_quotation` | **non** — voir plus bas ; 150 caractères au plus |
+| ACCROCHE | `pedagogy.hook_question` | oui — 85 caractères au plus |
+| RÉSUMÉ | `pedagogy.short_explanation` | oui — 170 caractères au plus |
+| AUTEUR | `attribution` | oui — coauteurs rétablis |
 | SOURCES | `primary_sources` + `secondary_sources` | oui — une primaire et une secondaire au minimum |
+
+Les longueurs sont mesurées sur le rendu réel, pas estimées : la carte doit tenir dans un
+écran de 375 × 667 avec tous ses champs au maximum simultané.
 
 **La citation reste facultative, et cela ne se négocie pas.** Beaucoup de concepts sont
 distribués sur un chapitre entier sans phrase courte qui les énonce. Une carte sans
@@ -53,10 +56,10 @@ servi à rien. Le protocole est donc organisé pour aboutir, pas pour archiver.
 
 **Rédiger — un seul agent, tout le lot d'un coup :**
 
-3. `corpus-card-writer` — prend tous les dossiers du lot et écrit **N cartes** :
-   `evidence`, `pedagogy` et `graph` dans `corpus/validated/<id>.json`. C'est le cœur du
-   dispositif, et c'est là que le lot prend son sens : mutualiser la rédaction évite de
-   refaire neuf étapes par concept.
+3. `corpus-card-writer` — prend tous les dossiers du lot et écrit **N cartes**. Il n'écrit
+   que la carte : ni mécanisme détaillé, ni exemple, ni quiz, ni relations entre concepts.
+   Ce contenu servait une session d'apprentissage qui n'existe plus — le lecteur qui veut
+   approfondir emporte la carte vers l'IA de son choix.
 
 **Contrôler et publier :**
 
@@ -69,9 +72,9 @@ servi à rien. Le protocole est donc organisé pour aboutir, pas pour archiver.
 Deux tours de correction maximum par carte ; au-delà, la carte sort du lot et attend un
 complément documentaire plutôt que de retenir les autres.
 
-`corpus-concept-analyst`, `corpus-pedagogy-writer` et `corpus-graph-curator` restent
-disponibles pour reprendre une carte en particulier, mais le lot passe par
-`corpus-card-writer`.
+Huit agents en tout, et c'est délibérément peu : produire une carte de 500 caractères a
+coûté, sur le premier lot, 178 octets de matière documentaire par caractère affiché.
+L'essentiel de cette matière alimentait une session qui n'existe plus.
 
 ## Le rythme
 
