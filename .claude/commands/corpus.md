@@ -53,10 +53,10 @@ servi à rien. Le protocole est donc organisé pour aboutir, pas pour archiver.
 
 **Rédiger — un seul agent, tout le lot d'un coup :**
 
-3. `corpus-card-writer` — prend tous les dossiers du lot et écrit **N cartes** :
-   `evidence`, `pedagogy` et `graph` dans `corpus/validated/<id>.json`. C'est le cœur du
-   dispositif, et c'est là que le lot prend son sens : mutualiser la rédaction évite de
-   refaire neuf étapes par concept.
+3. `corpus-card-writer` — prend tous les dossiers du lot et écrit **N cartes**. Il n'écrit
+   que la carte : ni mécanisme détaillé, ni exemple, ni quiz, ni relations entre concepts.
+   Ce contenu servait une session d'apprentissage qui n'existe plus — le lecteur qui veut
+   approfondir emporte la carte vers l'IA de son choix.
 
 **Contrôler et publier :**
 
@@ -69,9 +69,9 @@ servi à rien. Le protocole est donc organisé pour aboutir, pas pour archiver.
 Deux tours de correction maximum par carte ; au-delà, la carte sort du lot et attend un
 complément documentaire plutôt que de retenir les autres.
 
-`corpus-concept-analyst`, `corpus-pedagogy-writer` et `corpus-graph-curator` restent
-disponibles pour reprendre une carte en particulier, mais le lot passe par
-`corpus-card-writer`.
+Huit agents en tout, et c'est délibérément peu : produire une carte de 500 caractères a
+coûté, sur le premier lot, 178 octets de matière documentaire par caractère affiché.
+L'essentiel de cette matière alimentait une session qui n'existe plus.
 
 ## Le rythme
 

@@ -5,12 +5,11 @@ import { fixtureConcepts } from "./fixtures/concepts.fixture";
 
 export { themes } from "./themes";
 export { authors } from "./authors";
-export { caseStudies } from "./case-studies";
 
 /**
  * Les fiches d'échafaudage ne sont pas du contenu : ce sont des données de travail
  * (`fixtures/concepts.fixture.ts`), écrites avant tout dispositif de vérification pour
- * que le moteur pédagogique et les écrans puissent être construits. Elles n'atteignent
+ * que les écrans puissent être construits. Elles n'atteignent
  * donc jamais un lecteur réel.
  *
  * Le commutateur est explicite plutôt que déduit du seul `NODE_ENV`, pour qu'un build de

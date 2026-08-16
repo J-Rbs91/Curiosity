@@ -23,7 +23,6 @@ const KIND_LABEL: Record<SourceKind, string> = {
   "secondary-academic": "Littérature académique",
   "francophone-reception": "Réception francophone",
   "pedagogical-interpretation": "Interprétation pédagogique",
-  "cross-author-comparison": "Comparaison entre auteurs",
 };
 
 /** Ordre de lecture : ce qui établit avant ce qui commente. */
@@ -32,7 +31,6 @@ const KIND_ORDER: SourceKind[] = [
   "secondary-academic",
   "francophone-reception",
   "pedagogical-interpretation",
-  "cross-author-comparison",
 ];
 
 export function ConceptSourceList({ sources }: { sources: Source[] }) {

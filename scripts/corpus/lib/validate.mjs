@@ -12,7 +12,6 @@
 const ID_PATTERN = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 const STATUSES = ["CANDIDATE", "IN_REVIEW", "VALIDATED", "REJECTED"];
 const AUTHORSHIPS = ["SOLE_AUTHOR", "COAUTHORED", "ASSOCIATED_WITH"];
-const RELATION_KINDS = ["documented_filiation", "thematic_proximity", "pedagogical_contrast"];
 
 /** Le répertoire est l'état : cette table est la seule autorité sur la correspondance. */
 export const STATUS_BY_DIR = {
@@ -60,49 +59,7 @@ function numbersIn(text) {
 /** Champs de `pedagogy` qui finissent sous les yeux d'un lecteur. */
 function pedagogyProse(pedagogy) {
   if (!pedagogy || typeof pedagogy !== "object") return [];
-  const quiz = asArray(pedagogy.quiz).flatMap((q) => [
-    q?.prompt,
-    q?.explanation,
-    ...asArray(q?.choices),
-  ]);
-  return [
-    pedagogy.hook_question,
-    pedagogy.short_explanation,
-    pedagogy.detailed_explanation,
-    pedagogy.concrete_example,
-    ...asArray(pedagogy.analysis_questions),
-    ...quiz,
-  ].filter(isFilled);
-}
-
-function checkQuiz(quiz, errors) {
-  const seen = new Set();
-  quiz.forEach((q, i) => {
-    const at = `pedagogy.quiz[${i}]`;
-    if (!isFilled(q?.id)) errors.push(`${at}.id manquant`);
-    else if (seen.has(q.id)) errors.push(`${at}.id « ${q.id} » en double dans la fiche`);
-    else seen.add(q.id);
-
-    if (!isFilled(q?.prompt)) errors.push(`${at}.prompt manquant`);
-    if (!isFilled(q?.explanation))
-      errors.push(`${at}.explanation manquante — une bonne réponse sans explication n'apprend rien`);
-
-    if (q?.type === "mcq") {
-      const choices = asArray(q.choices);
-      if (choices.length < 2) errors.push(`${at} : un QCM demande au moins deux choix`);
-      const index = Number(q.correctAnswer);
-      if (!Number.isInteger(index) || index < 0 || index >= choices.length)
-        errors.push(`${at}.correctAnswer « ${q.correctAnswer} » hors des choix proposés`);
-    } else if (q?.type === "true-false") {
-      if (q.correctAnswer !== "true" && q.correctAnswer !== "false")
-        errors.push(`${at}.correctAnswer doit valoir "true" ou "false"`);
-      if (asArray(q.choices).length > 0) errors.push(`${at} : pas de choices sur un vrai/faux`);
-    } else if (q?.type === "open") {
-      if (!isFilled(q.correctAnswer)) errors.push(`${at}.correctAnswer manquante`);
-    } else {
-      errors.push(`${at}.type « ${q?.type} » inconnu`);
-    }
-  });
+  return [pedagogy.hook_question, pedagogy.short_explanation].filter(isFilled);
 }
 
 function checkSources(evidence, status, errors) {
@@ -293,10 +250,6 @@ export function validateRecord(record, { dir, themeIds = new Set(), authorIds = 
   // --- preuve -------------------------------------------------------------
   const evidence = record?.evidence ?? {};
   if (!isFilled(evidence.concept_definition)) errors.push("evidence.concept_definition manquante");
-  if (asArray(evidence.mechanism).length < 2)
-    errors.push(
-      "evidence.mechanism : au moins deux étapes — le mécanisme avant l'exemple, sinon la fiche est vide"
-    );
   checkSources(evidence, record?.status, errors);
   checkQuotation(record, errors, warnings);
 
@@ -304,12 +257,7 @@ export function validateRecord(record, { dir, themeIds = new Set(), authorIds = 
   const pedagogy = record?.pedagogy ?? {};
   const prose = pedagogyProse(pedagogy);
   if (record?.status === "VALIDATED") {
-    for (const field of [
-      "hook_question",
-      "short_explanation",
-      "detailed_explanation",
-      "concrete_example",
-    ])
+    for (const field of ["hook_question", "short_explanation"])
       if (!isFilled(pedagogy[field])) errors.push(`pedagogy.${field} manquant`);
 
     // La carte doit tenir dans un écran : ces deux champs y sont affichés en entier.
@@ -320,13 +268,9 @@ export function validateRecord(record, { dir, themeIds = new Set(), authorIds = 
           `pedagogy.${field} : ${length} caractères pour ${CARD_LIMITS[field]} au plus — la carte déborderait de l'écran`
         );
     }
-    if (asArray(pedagogy.analysis_questions).length === 0)
-      errors.push("pedagogy.analysis_questions vide");
-    if (asArray(pedagogy.quiz).length === 0) errors.push("pedagogy.quiz vide");
     if (asArray(pedagogy.traceability).length === 0)
       push(warnings, "pedagogy.traceability vide : aucune phrase n'est rattachée à la preuve");
   }
-  checkQuiz(asArray(pedagogy.quiz), errors);
 
   if (prose.length > 0) {
     const sourced = numbersIn(JSON.stringify(evidence) + JSON.stringify(attribution));
@@ -340,11 +284,6 @@ export function validateRecord(record, { dir, themeIds = new Set(), authorIds = 
 
   // --- graphe -------------------------------------------------------------
   const graph = record?.graph ?? {};
-  // Le bloc `graph` est écrit par corpus-graph-curator, en toute fin de chaîne. Exiger
-  // thème et difficulté dès l'état candidat obligerait l'analyste à les inventer pour
-  // faire passer le validateur — c'est-à-dire à produire une affirmation non instruite
-  // pour satisfaire un outil. On ne contrôle donc leur présence qu'à la validation ;
-  // leur justesse, elle, se contrôle dès qu'ils sont renseignés.
   const themes = asArray(graph.themes);
   if (themes.length === 0 && record?.status === "VALIDATED") errors.push("graph.themes vide");
   // Même raison que pour les auteurs : un thème que le champ fait apparaître ne peut pas
@@ -358,32 +297,7 @@ export function validateRecord(record, { dir, themeIds = new Set(), authorIds = 
         );
       else push(warnings, `graph.themes : « ${t} » est un thème nouveau, affiché par son libellé`);
     }
-  const hasDifficulty = graph.difficulty !== undefined && graph.difficulty !== null;
-  if (hasDifficulty || record?.status === "VALIDATED")
-    if (!Number.isInteger(graph.difficulty) || graph.difficulty < 1 || graph.difficulty > 5)
-      errors.push(`graph.difficulty « ${graph.difficulty} » hors de 1..5`);
 
-  for (const field of ["related", "opposites"])
-    asArray(graph[field]).forEach((rel, i) => {
-      const at = `graph.${field}[${i}]`;
-      if (!isFilled(rel?.id)) errors.push(`${at}.id manquant`);
-      if (rel?.id === record?.id) errors.push(`${at} : le concept se référence lui-même`);
-      if (!RELATION_KINDS.includes(rel?.relation_kind))
-        errors.push(`${at}.relation_kind « ${rel?.relation_kind} » inconnu`);
-      if (!isFilled(rel?.justification)) errors.push(`${at}.justification manquante`);
-      if (rel?.relation_kind === "documented_filiation" && !isFilled(rel?.source))
-        errors.push(
-          `${at} : filiation documentée sans source — corrélation historique ≠ filiation intellectuelle`
-        );
-    });
-
-  for (const field of ["prerequisites", "deepens_into"])
-    asArray(graph[field]).forEach((dep, i) => {
-      const at = `graph.${field}[${i}]`;
-      if (!isFilled(dep?.id)) errors.push(`${at}.id manquant`);
-      if (dep?.id === record?.id) errors.push(`${at} : le concept se référence lui-même`);
-      if (!isFilled(dep?.why)) errors.push(`${at}.why manquant`);
-    });
 
   // --- verrou de publication ---------------------------------------------
   if (record?.status === "VALIDATED") {

@@ -20,7 +20,7 @@ export default function SettingsPage() {
   const [confirming, setConfirming] = useState(false);
 
   function resetProgress() {
-    getProgressService().resetAll();
+    getProgressService().reset();
     setConfirming(false);
     router.push("/", { transitionTypes: SCREEN_MOTION.back });
   }
@@ -51,7 +51,7 @@ export default function SettingsPage() {
           ) : (
             <div className="enter-rise space-y-4">
               <p className="text-[15px] leading-relaxed text-ink-soft">
-                Les concepts déjà rencontrés et l&apos;historique des sessions seront effacés
+                Les cartes déjà rencontrées seront oubliées
                 définitivement. Les propositions repartiront de zéro.
               </p>
               <div className="flex gap-3">

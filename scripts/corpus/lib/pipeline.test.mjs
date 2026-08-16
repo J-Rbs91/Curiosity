@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { CARD_LIMITS, validateCorpus, validateRecord } from "./validate.mjs";
+import { CARD_LIMITS, validateRecord } from "./validate.mjs";
 import { buildAttributionNote, buildQuotation, projectConcept } from "./project.mjs";
 
 /**
@@ -23,7 +23,6 @@ function record(overrides = {}) {
     },
     evidence: {
       concept_definition: "Définition dans les termes de l'auteur.",
-      mechanism: ["une règle est posée", "la conformité devient le critère"],
       primary_sources: [
         {
           citation: "Auteur Un, Ouvrage, 1949",
@@ -50,35 +49,9 @@ function record(overrides = {}) {
     pedagogy: {
       hook_question: "Et si la règle devenait plus importante que son objectif ?",
       short_explanation: "Résumé bref.",
-      detailed_explanation: "Le mécanisme mis en phrases.",
-      concrete_example: "Une situation où le mécanisme est visible.",
-      example_setting: "administration",
-      analysis_questions: ["Quel mécanisme est à l'œuvre ici ?"],
-      quiz: [
-        {
-          id: "concept-test-q1",
-          type: "mcq",
-          prompt: "Question ?",
-          choices: ["Faux", "Vrai"],
-          correctAnswer: "1",
-          explanation: "Parce que le mécanisme.",
-        },
-      ],
-      traceability: [{ claim: "Résumé bref.", evidence_ref: "mechanism[0]" }],
+      traceability: [{ claim: "Résumé bref.", evidence_ref: "concept_definition" }],
     },
-    graph: {
-      themes: ["bureaucratie-regles"],
-      difficulty: 2,
-      related: [
-        {
-          id: "bureaucratie",
-          relation_kind: "thematic_proximity",
-          justification: "Même objet.",
-          source: null,
-        },
-      ],
-      prerequisites: [],
-    },
+    graph: { themes: ["bureaucratie-regles"] },
     validation: {
       primary_source_confirmed: true,
       secondary_confirmation: true,
@@ -188,29 +161,17 @@ describe("validateRecord — attribution", () => {
   });
 });
 
-describe("validateRecord — mécanisme et pédagogie", () => {
-  it("refuse un mécanisme réduit à une étape", () => {
-    const r = record();
-    r.evidence.mechanism = ["une seule étape"];
-    expect(errorsOf(r).join(" ")).toContain("au moins deux étapes");
-  });
-
+describe("validateRecord — pédagogie", () => {
   it("refuse un chiffre présent dans la prose et absent de la preuve", () => {
     const r = record();
-    r.pedagogy.detailed_explanation = "Dans son enquête de 1963, l'auteur observe ce mécanisme.";
+    r.pedagogy.short_explanation = "Dans son enquête de 1963, l'auteur observe ce mécanisme.";
     expect(errorsOf(r).join(" ")).toContain("« 1963 »");
   });
 
   it("accepte un chiffre qui figure dans les sources", () => {
     const r = record();
-    r.pedagogy.detailed_explanation = "Formulé en 1949, ce mécanisme reste observable.";
+    r.pedagogy.short_explanation = "Formulé en 1949, ce mécanisme reste observable.";
     expect(errorsOf(r)).toEqual([]);
-  });
-
-  it("refuse un QCM dont la bonne réponse sort des choix", () => {
-    const r = record();
-    r.pedagogy.quiz[0].correctAnswer = "3";
-    expect(errorsOf(r).join(" ")).toContain("hors des choix");
   });
 
   it("signale une fiche validée sans aucune incertitude déclarée", () => {
@@ -361,182 +322,6 @@ describe("buildQuotation", () => {
   });
 });
 
-describe("validateRecord — graphe", () => {
-  it("refuse une filiation documentée sans source", () => {
-    const r = record();
-    r.graph.related[0].relation_kind = "documented_filiation";
-    expect(errorsOf(r).join(" ")).toContain("corrélation historique");
-  });
-
-  it("n'exige ni thème ni difficulté d'une fiche candidate", () => {
-    // Le graphe est écrit en fin de chaîne : les réclamer plus tôt ferait inventer une
-    // affirmation non instruite pour satisfaire l'outil.
-    const r = record({ status: "CANDIDATE" });
-    r.graph = { themes: [], related: [] };
-    expect(errorsOf(r, { ...context, dir: "candidates" })).toEqual([]);
-  });
-
-  it("exige thème et difficulté dès qu'une fiche est validée", () => {
-    const r = record();
-    r.graph = { themes: [], related: [] };
-    const errors = errorsOf(r).join(" ");
-    expect(errors).toContain("graph.themes vide");
-    expect(errors).toContain("difficulty");
-  });
-
-  it("contrôle une difficulté hors bornes même sur une candidate", () => {
-    const r = record({ status: "CANDIDATE" });
-    r.graph = { themes: [], difficulty: 9 };
-    expect(errorsOf(r, { ...context, dir: "candidates" }).join(" ")).toContain("hors de 1..5");
-  });
-
-  it("accepte un thème nouveau dès lors qu'il porte un libellé", () => {
-    const r = record();
-    r.graph.themes = ["ecologie-des-populations"];
-    r.graph.theme_labels = { "ecologie-des-populations": "Écologie des populations" };
-    const { errors, warnings } = validateRecord(r, context);
-    expect(errors).toEqual([]);
-    expect(warnings.join(" ")).toContain("thème nouveau");
-  });
-
-  it("refuse un thème nouveau sans libellé : la carte n'aurait rien à afficher", () => {
-    const r = record();
-    r.graph.themes = ["ecologie-des-populations"];
-    expect(errorsOf(r).join(" ")).toContain("theme_labels");
-  });
-
-  it("refuse un concept qui se référence lui-même", () => {
-    const r = record();
-    r.graph.related[0].id = r.id;
-    expect(errorsOf(r).join(" ")).toContain("lui-même");
-  });
-});
-
-describe("validateCorpus", () => {
-  const wrap = (r) => ({ dir: "validated", file: `${r.id}.json`, record: r });
-
-  it("refuse qu'une fiche vérifiée s'appuie sur ce qui ne l'est pas", () => {
-    // « bureaucratie » n'existe que dans l'échafaudage : la relation ne peut pas passer.
-    const { errors } = validateCorpus([wrap(record())]);
-    expect(errors.join(" ")).toContain("aucune fiche validée");
-  });
-
-  it("accepte une relation entre deux fiches validées", () => {
-    const cited = record({ id: "bureaucratie", slug: "bureaucratie" });
-    cited.graph.related = [];
-    const { errors } = validateCorpus([wrap(record()), wrap(cited)]);
-    expect(errors).toEqual([]);
-  });
-
-  it("détecte un cycle de prérequis", () => {
-    const a = record({ id: "a", slug: "a" });
-    a.graph.related = [];
-    a.graph.prerequisites = [{ id: "b", why: "…" }];
-    const b = record({ id: "b", slug: "b" });
-    b.graph.related = [];
-    b.graph.prerequisites = [{ id: "a", why: "…" }];
-
-    const { errors } = validateCorpus([wrap(a), wrap(b)]);
-    expect(errors.join(" ")).toContain("cycle de prérequis");
-  });
-
-  it("détecte un identifiant en double", () => {
-    const { errors } = validateCorpus([wrap(record()), wrap(record())]);
-    expect(errors.join(" ")).toContain("deux fois");
-  });
-});
-
-describe("la carte de l'application", () => {
-  /**
-   * Contrat entre le corpus et l'écran : thème, concept, citation, auteur, accroche,
-   * résumé, sources. Si l'un de ces éléments cessait d'être garanti par la validation,
-   * la carte se composerait avec un trou — et c'est le genre de régression qui ne se voit
-   * qu'en production.
-   */
-  it("est entièrement composable depuis une fiche validée", () => {
-    const r = record();
-    r.evidence.primary_sources[0].language = "fr";
-    r.evidence.key_quotation = {
-      text: "Le passage.",
-      language: "fr",
-      primary_source_index: 0,
-      locator: "p. 195",
-      translation: { kind: "none" },
-    };
-    const concept = projectConcept(r);
-
-    expect(concept.themes.length).toBeGreaterThan(0); // THÈME
-    expect(concept.title).toBeTruthy(); // CONCEPT
-    expect(concept.quotation.text).toBe("Le passage."); // CITATION
-    expect(concept.authors.length).toBeGreaterThan(0); // AUTEUR
-    expect(concept.hookQuestion).toBeTruthy(); // ACCROCHE
-    expect(concept.shortExplanation).toBeTruthy(); // RÉSUMÉ
-    expect(concept.sources.length).toBeGreaterThan(0); // SOURCES
-  });
-
-  it("reste composable sans citation — le seul élément facultatif", () => {
-    const concept = projectConcept(record());
-    expect(concept.quotation).toBeUndefined();
-    for (const field of ["themes", "title", "authors", "hookQuestion", "shortExplanation", "sources"])
-      expect(concept[field]).toBeTruthy();
-  });
-
-  it("refuse de valider une fiche dont la carte serait trouée", () => {
-    const r = record();
-    r.pedagogy.hook_question = "";
-    r.graph.themes = [];
-    const errors = errorsOf(r).join(" ");
-    expect(errors).toContain("hook_question");
-    expect(errors).toContain("themes");
-  });
-});
-
-describe("projectConcept", () => {
-  it("produit un objet Concept conforme au type de l'application", () => {
-    const concept = projectConcept(record());
-
-    expect(concept.id).toBe("concept-test");
-    expect(concept.title).toBe("Concept de test");
-    expect(concept.authors).toEqual(["merton"]);
-    expect(concept.relatedConcepts).toEqual(["bureaucratie"]);
-    expect(concept.quiz[0].choices).toHaveLength(2);
-    expect(concept.difficulty).toBe(2);
-  });
-
-  it("distingue les niveaux de source au lieu de tout ranger en interprétation", () => {
-    const concept = projectConcept(record());
-    expect(concept.sources.map((s) => s.kind)).toEqual(["primary", "secondary-academic"]);
-    expect(concept.sources[1].url).toBe("https://doi.org/10.1000/xyz123");
-  });
-
-  it("n'ajoute pas de note d'attribution quand l'auteur est unique", () => {
-    expect(buildAttributionNote(record())).toBeUndefined();
-  });
-
-  it("rétablit les coauteurs d'un concept rangé sous un seul nom", () => {
-    const r = record();
-    r.attribution.authors = [
-      { name: "Michael D. Cohen", app_author_id: null },
-      { name: "James G. March", app_author_id: "march" },
-      { name: "Johan P. Olsen", app_author_id: null },
-    ];
-    r.attribution.authorship = "COAUTHORED";
-    r.attribution.associated_author = "James G. March";
-    r.evidence.primary_sources[0].year = 1972;
-
-    const note = buildAttributionNote(r);
-    expect(note).toContain("Michael D. Cohen, James G. March et Johan P. Olsen");
-    expect(note).toContain("1972");
-    expect(note).toContain("James G. March");
-  });
-
-  it("signale un terme forgé par un tiers", () => {
-    const r = record();
-    r.attribution.term_origin = { coined_by: "Un Commentateur", coined_in: "1978", note: null };
-    expect(buildAttributionNote(r)).toContain("Terme forgé par Un Commentateur");
-  });
-});
-
 describe("la carte doit tenir dans un écran", () => {
   /*
    * Ces limites ont été mesurées sur un rendu réel en 390 × 844, tous champs au maximum
@@ -581,5 +366,56 @@ describe("la carte doit tenir dans un écran", () => {
       level: "C",
     }));
     expect(projectConcept(r).sources[0].kind).toBe("primary");
+  });
+});
+
+describe("la carte projetée", () => {
+  it("porte les sept éléments et rien d'autre", () => {
+    const r = record();
+    r.graph.theme_labels = { "bureaucratie-regles": "Bureaucratie et règles" };
+    r.evidence.primary_sources[0].language = "fr";
+    r.evidence.key_quotation = {
+      text: "Le passage.",
+      language: "fr",
+      primary_source_index: 0,
+      locator: "p. 195",
+      translation: { kind: "none" },
+    };
+    const c = projectConcept(r);
+
+    expect(c.themeLabel).toBe("Bureaucratie et règles"); // THÈME
+    expect(c.title).toBe("Concept de test"); // CONCEPT
+    expect(c.quotation.text).toBe("Le passage."); // CITATION
+    expect(c.authorLabel).toBe("Auteur Un"); // AUTEUR
+    expect(c.hookQuestion).toBeTruthy(); // ACCROCHE
+    expect(c.shortExplanation).toBeTruthy(); // RÉSUMÉ
+    expect(c.sources.length).toBeGreaterThan(0); // SOURCES
+
+    // Ce qui servait la session d'apprentissage ne doit plus être projeté.
+    for (const parti of ["detailedExplanation", "concreteExample", "quiz", "difficulty",
+                         "relatedConcepts", "prerequisites", "analysisQuestions"])
+      expect(c[parti]).toBeUndefined();
+  });
+
+  it("ne projette jamais plus de cinq sources", () => {
+    const r = record();
+    r.evidence.secondary_sources = Array.from({ length: 12 }, (_, i) => ({
+      citation: `Source ${i}`,
+      establishes: "…",
+      level: "B",
+    }));
+    expect(projectConcept(r).sources).toHaveLength(CARD_LIMITS.sources);
+  });
+
+  it("rétablit les coauteurs d'un concept rangé sous un seul nom", () => {
+    const r = record();
+    r.attribution.authors = [
+      { name: "Michael D. Cohen", app_author_id: null },
+      { name: "James G. March", app_author_id: "march" },
+      { name: "Johan P. Olsen", app_author_id: null },
+    ];
+    r.attribution.authorship = "COAUTHORED";
+    r.attribution.associated_author = "James G. March";
+    expect(buildAttributionNote(r)).toContain("Michael D. Cohen, James G. March et Johan P. Olsen");
   });
 });

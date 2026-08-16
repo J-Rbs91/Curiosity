@@ -9,15 +9,8 @@ function concept(id: string, title = id): Concept {
     title,
     hookQuestion: "?",
     shortExplanation: "",
-    detailedExplanation: "",
     authors: [],
     themes: [],
-    relatedConcepts: [],
-    prerequisites: [],
-    concreteExample: "",
-    analysisQuestions: [],
-    quiz: [],
-    difficulty: 1,
   };
 }
 

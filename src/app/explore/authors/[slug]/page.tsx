@@ -4,7 +4,6 @@ import { useParams, notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { authors, concepts } from "@/content";
-import { conceptsByAuthor } from "@/domain/concepts/graph";
 import { Screen } from "@/components/motion/Screen";
 import { SCREEN_MOTION } from "@/components/motion/screen-motion";
 
@@ -14,7 +13,7 @@ export default function AuthorDetailPage() {
 
   if (!author) return notFound();
 
-  const authorConcepts = conceptsByAuthor(concepts, author.id);
+  const authorConcepts = concepts.filter((c) => c.authors.includes(author.id));
 
   return (
     <Screen>
