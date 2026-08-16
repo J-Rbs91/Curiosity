@@ -9,7 +9,7 @@ import { indexConcepts, getRelatedConcepts, getPrerequisiteConcepts } from "@/do
 import { getProgressService } from "@/services/progress";
 import { ConceptMetaTags } from "@/components/concept/ConceptMetaTags";
 import { ConceptQuotation } from "@/components/concept/ConceptQuotation";
-import { ConceptSources } from "@/components/concept/ConceptSources";
+import { ConceptSourceList } from "@/components/concept/ConceptSources";
 import { Screen } from "@/components/motion/Screen";
 import { SCREEN_MOTION } from "@/components/motion/screen-motion";
 import { Button } from "@/components/ui/Button";
@@ -124,7 +124,12 @@ export default function ConceptDetailPage() {
 
         {concept.sources && (
           <div className="mt-8">
-            <ConceptSources sources={concept.sources} />
+            <h2 className="text-xs font-medium uppercase tracking-[0.12em] text-ink-faint">
+              Sources
+            </h2>
+            <div className="mt-3">
+              <ConceptSourceList sources={concept.sources} />
+            </div>
           </div>
         )}
 

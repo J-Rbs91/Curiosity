@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { validateCorpus, validateRecord } from "./validate.mjs";
+import { CARD_LIMITS, validateCorpus, validateRecord } from "./validate.mjs";
 import { buildAttributionNote, buildQuotation, projectConcept } from "./project.mjs";
 
 /**
@@ -171,10 +171,20 @@ describe("validateRecord — attribution", () => {
     expect(errorsOf(r).join(" ")).toContain("associated_author");
   });
 
-  it("refuse un auteur inconnu de l'application", () => {
+  it("accepte un auteur que l'application ne connaît pas encore", () => {
+    // Le corpus découvre les auteurs, l'application les reçoit. Exiger l'inverse ferait
+    // de la table des auteurs le périmètre réel — huit noms — au lieu de la discipline.
     const r = record();
-    r.attribution.authors[0].app_author_id = "durkheim";
-    expect(errorsOf(r).join(" ")).toContain("absent de src/content/authors.ts");
+    r.attribution.authors[0].app_author_id = "gouldner";
+    const { errors, warnings } = validateRecord(r, context);
+    expect(errors).toEqual([]);
+    expect(warnings.join(" ")).toContain("pas encore de page");
+  });
+
+  it("exige tout de même le nom de chaque auteur", () => {
+    const r = record();
+    r.attribution.authors[0].name = "";
+    expect(errorsOf(r).join(" ")).toContain("name manquant");
   });
 });
 
@@ -250,8 +260,8 @@ describe("validateRecord — citation de l'auteur", () => {
     expect(errorsOf(quoted({ locator: "" })).join(" ")).toContain("bonne page");
   });
 
-  it("refuse un extrait d'ouvrage déguisé en citation", () => {
-    expect(errorsOf(quoted({ text: "mot ".repeat(200) })).join(" ")).toContain("citation courte");
+  it("refuse une citation qui ne tiendrait pas dans la carte", () => {
+    expect(errorsOf(quoted({ text: "mot ".repeat(200) })).join(" ")).toContain("tenir dans la carte");
   });
 
   it("détecte une traduction silencieuse quand la langue de la source diffère", () => {
@@ -347,10 +357,41 @@ describe("validateRecord — graphe", () => {
     expect(errorsOf(r).join(" ")).toContain("corrélation historique");
   });
 
-  it("refuse un thème inconnu de l'application", () => {
+  it("n'exige ni thème ni difficulté d'une fiche candidate", () => {
+    // Le graphe est écrit en fin de chaîne : les réclamer plus tôt ferait inventer une
+    // affirmation non instruite pour satisfaire l'outil.
+    const r = record({ status: "CANDIDATE" });
+    r.graph = { themes: [], related: [] };
+    expect(errorsOf(r, { ...context, dir: "candidates" })).toEqual([]);
+  });
+
+  it("exige thème et difficulté dès qu'une fiche est validée", () => {
     const r = record();
-    r.graph.themes = ["sociologie-generale"];
-    expect(errorsOf(r).join(" ")).toContain("absent de src/content/themes.ts");
+    r.graph = { themes: [], related: [] };
+    const errors = errorsOf(r).join(" ");
+    expect(errors).toContain("graph.themes vide");
+    expect(errors).toContain("difficulty");
+  });
+
+  it("contrôle une difficulté hors bornes même sur une candidate", () => {
+    const r = record({ status: "CANDIDATE" });
+    r.graph = { themes: [], difficulty: 9 };
+    expect(errorsOf(r, { ...context, dir: "candidates" }).join(" ")).toContain("hors de 1..5");
+  });
+
+  it("accepte un thème nouveau dès lors qu'il porte un libellé", () => {
+    const r = record();
+    r.graph.themes = ["ecologie-des-populations"];
+    r.graph.theme_labels = { "ecologie-des-populations": "Écologie des populations" };
+    const { errors, warnings } = validateRecord(r, context);
+    expect(errors).toEqual([]);
+    expect(warnings.join(" ")).toContain("thème nouveau");
+  });
+
+  it("refuse un thème nouveau sans libellé : la carte n'aurait rien à afficher", () => {
+    const r = record();
+    r.graph.themes = ["ecologie-des-populations"];
+    expect(errorsOf(r).join(" ")).toContain("theme_labels");
   });
 
   it("refuse un concept qui se référence lui-même", () => {
@@ -482,5 +523,52 @@ describe("projectConcept", () => {
     const r = record();
     r.attribution.term_origin = { coined_by: "Un Commentateur", coined_in: "1978", note: null };
     expect(buildAttributionNote(r)).toContain("Terme forgé par Un Commentateur");
+  });
+});
+
+describe("la carte doit tenir dans un écran", () => {
+  /*
+   * Ces limites ont été mesurées sur un rendu réel en 390 × 844, tous champs au maximum
+   * simultané. Elles sont dans le validateur et non dans une consigne parce qu'une
+   * consigne s'oublie : le premier lot a produit des accroches de 311 caractères et des
+   * résumés de 805, tous excellents et tous inaffichables.
+   */
+  it("refuse une accroche qui déborde", () => {
+    const r = record();
+    r.pedagogy.hook_question = "?".repeat(CARD_LIMITS.hook_question + 1);
+    expect(errorsOf(r).join(" ")).toContain("la carte déborderait");
+  });
+
+  it("refuse un résumé qui déborde", () => {
+    const r = record();
+    r.pedagogy.short_explanation = "x".repeat(CARD_LIMITS.short_explanation + 1);
+    expect(errorsOf(r).join(" ")).toContain("la carte déborderait");
+  });
+
+  it("accepte les champs pile à la limite", () => {
+    const r = record();
+    r.pedagogy.hook_question = "?".repeat(CARD_LIMITS.hook_question);
+    r.pedagogy.short_explanation = "x".repeat(CARD_LIMITS.short_explanation);
+    expect(errorsOf(r)).toEqual([]);
+  });
+
+  it("ne projette jamais plus de cinq sources", () => {
+    const r = record();
+    r.evidence.secondary_sources = Array.from({ length: 12 }, (_, i) => ({
+      citation: `Source ${i}`,
+      establishes: "…",
+      level: "B",
+    }));
+    expect(projectConcept(r).sources).toHaveLength(CARD_LIMITS.sources);
+  });
+
+  it("garde les sources primaires en tête quand il faut trancher", () => {
+    const r = record();
+    r.evidence.francophone_sources = Array.from({ length: 9 }, (_, i) => ({
+      citation: `Réception ${i}`,
+      establishes: "…",
+      level: "C",
+    }));
+    expect(projectConcept(r).sources[0].kind).toBe("primary");
   });
 });

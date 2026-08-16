@@ -8,6 +8,9 @@
 const asArray = (v) => (Array.isArray(v) ? v : []);
 const isFilled = (v) => typeof v === "string" && v.trim().length > 0;
 
+/** Voir `CARD_LIMITS.sources` dans validate.mjs : la carte en montre cinq au plus. */
+const MAX_CARD_SOURCES = 5;
+
 function listFr(names) {
   if (names.length <= 1) return names[0] ?? "";
   return `${names.slice(0, -1).join(", ")} et ${names[names.length - 1]}`;
@@ -112,13 +115,21 @@ function projectSources(record) {
         return source;
       });
 
+  /*
+   * Cinq sources au maximum, et les sources primaires d'abord.
+   *
+   * Une fiche bien instruite en porte vingt ou trente : toutes les projeter noierait le
+   * texte de l'auteur au milieu des commentateurs, et ferait déborder la carte. Ce qui
+   * est retenu est ce qui permet de remonter au texte ; le reste vit dans le corpus, qui
+   * est là pour ça.
+   */
   return [
     ...map(evidence.primary_sources, "primary", (s) =>
       [s.locator, s.doi_isbn].filter(isFilled).join(" · ")
     ),
     ...map(evidence.secondary_sources, "secondary-academic", (s) => s.doi_isbn),
     ...map(evidence.francophone_sources, "francophone-reception", (s) => s.doi_isbn),
-  ];
+  ].slice(0, MAX_CARD_SOURCES);
 }
 
 /** Enregistrement maître → `Concept`. L'appelant garantit que le record est VALIDATED. */
@@ -127,10 +138,24 @@ export function projectConcept(record) {
   const graph = record?.graph ?? {};
   const ids = (list) => asArray(list).map((r) => r?.id).filter(isFilled);
 
+  /*
+   * Les libellés d'affichage sont portés par la fiche, pas cherchés dans les tables de
+   * l'application. C'est ce qui permet au corpus d'introduire un auteur ou un thème que
+   * l'application ne connaît pas encore : la carte l'affiche par son nom, et une page
+   * dédiée pourra lui être consacrée plus tard, ou jamais.
+   */
+  const authorLabel = asArray(record?.attribution?.authors)
+    .map((a) => a?.name)
+    .filter(isFilled)
+    .join(", ");
+  const firstTheme = asArray(graph.themes)[0];
+  const themeLabel = graph.theme_labels?.[firstTheme] ?? null;
+
   const concept = {
     id: record.id,
     slug: record.slug,
     title: record.canonical_name_fr,
+    authorLabel,
     hookQuestion: pedagogy.hook_question,
     shortExplanation: pedagogy.short_explanation,
     detailedExplanation: pedagogy.detailed_explanation,
@@ -155,6 +180,8 @@ export function projectConcept(record) {
     }),
     difficulty: graph.difficulty,
   };
+
+  if (isFilled(themeLabel)) concept.themeLabel = themeLabel;
 
   const opposites = ids(graph.opposites);
   if (opposites.length > 0) concept.oppositeConcepts = opposites;

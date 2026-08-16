@@ -11,6 +11,28 @@ change est l'objet de la preuve.
 
 ---
 
+## 0. Ce que ce dispositif produit
+
+**Des cartes.** Sept éléments — thème, concept, citation, auteur, accroche, résumé,
+sources — dont un lecteur puisse se servir, et dont chacun soit exact.
+
+Le corpus documentaire n'est pas le livrable : c'est le moyen. Il n'existe que pour que
+les cartes soient justes, et un dossier de preuve qui ne devient jamais une carte n'a servi
+à rien. Toute décision de méthode se tranche par cette question : *est-ce que cela rend les
+cartes plus justes, ou est-ce que cela les empêche d'exister ?*
+
+Les deux erreurs symétriques à éviter sont donc :
+
+- **écrire des cartes qui ne reposent sur rien** — c'est l'état d'où ce projet vient, et le
+  §1 en décrit le coût ;
+- **instruire indéfiniment sans jamais rien publier** — un dispositif qui ne sort rien
+  n'est pas prudent, il est inutile.
+
+C'est pourquoi la rédaction se fait **en lot** (`corpus-card-writer`, §7) : le travail
+documentaire est sériel par nature, la rédaction ne doit pas l'être.
+
+---
+
 ## 1. Le problème que ce dispositif résout
 
 L'application contient aujourd'hui **35 concepts rédigés de mémoire**. Ils sont
@@ -61,24 +83,35 @@ Le dernier cas sera fréquent sur ce périmètre — « rationalité limitée »
 
 ---
 
-## 3. Le périmètre fermé
+## 3. Le périmètre est la discipline, pas une liste d'auteurs
 
-Le périmètre est écrit une fois pour toutes dans [`corpus/perimeter.md`](../corpus/perimeter.md)
-et n'est pas renégocié fiche par fiche. En résumé :
+Le périmètre est écrit dans [`corpus/perimeter.md`](../corpus/perimeter.md) et n'est pas
+renégocié fiche par fiche :
 
-> Sociologie et théorie des organisations, limitées aux concepts permettant de comprendre
-> le fonctionnement des organisations : comportements organisationnels, décision, règles,
-> pouvoir, apprentissage, coopération, dysfonctionnements, action collective.
+> **Sociologie et théorie des organisations** — l'ensemble des travaux permettant de
+> comprendre le fonctionnement des organisations.
 
-Noyau d'auteurs : **Weber · Merton · Simon · March · Crozier · Friedberg · Hirschman ·
-Argyris** (les huit déjà présents dans `src/content/authors.ts`).
+**Weber, Merton, Simon, March, Crozier, Friedberg, Hirschman et Argyris sont des points
+d'entrée, pas des frontières.** Un corpus construit à partir d'une liste d'auteurs
+reproduit la connaissance de celui qui l'a écrite et laisse dans l'ombre ce qu'il ignore,
+sans que rien ne le signale jamais. C'est le biais le plus coûteux de tout le dispositif,
+parce qu'il est invisible depuis l'intérieur.
 
-Un concept adjacent entre si son rattachement à la compréhension des organisations est
-documenté. La question posée à l'agent n'est jamais « est-ce de la sociologie pure ? »
-(Hirschman vient de l'économie, Simon de la décision, Argyris de la psychologie) mais :
+D'où `corpus-cartographer`, en amont de toute la chaîne : il part des manuels, handbooks,
+entrées d'encyclopédie et revues de référence — les textes qui **font l'inventaire du
+champ** — pour établir courants, auteurs, concepts structurants, filiations, et surtout
+`angles_morts`. Sa carte alimente la file d'instruction ; les huit seeds y figurent parmi
+d'autres.
 
-> Ce concept appartient-il au périmètre intellectuel nécessaire pour comprendre les
-> organisations ?
+Rien dans le code ne restreint plus le corpus à ces huit noms : le validateur accepte un
+auteur ou un thème que l'application ne connaît pas encore, et la carte les affiche par
+leur libellé. **Le corpus découvre, l'application reçoit.**
+
+La question posée n'est jamais « est-ce de la sociologie pure ? » (Hirschman vient de
+l'économie, Simon de la décision, Argyris de la psychologie, Williamson de l'économie
+institutionnelle) mais :
+
+> Ce travail éclaire-t-il le fonctionnement des organisations ?
 
 Tout le reste part en `corpus/rejected/` avec `rejection_reason: "OUT_OF_SCOPE"`. On ne
 garde pas de zone grise : un concept hors périmètre non rejeté revient toujours.
@@ -338,7 +371,9 @@ d'origine : **celui qui cherche et rédige ne valide pas ; celui qui valide ne p
 
 | Agent | Mission | Interdiction |
 |---|---|---|
+| `corpus-cartographer` | **Dresse la carte du champ** — courants, auteurs, concepts, filiations, angles morts | Ne part jamais d'une liste de noms, n'instruit aucun concept |
 | `corpus-orchestrator` | Distribue le travail, applique le protocole, gère les états | Ne produit **aucune** connaissance, ne tranche jamais sur le fond |
+| `corpus-card-writer` | **Écrit les cartes**, plusieurs en un passage, à partir des dossiers documentaires | Ne mène aucune recherche, n'ajoute rien que les dossiers n'établissent |
 | `corpus-scout` | Repère les concepts candidats et les sources atteignables | Ne valide rien, ne rédige rien |
 | `corpus-primary-reader` | Établit ce que dit le texte de l'auteur, localisation à l'appui, et le passage citable s'il en existe un | Ne vulgarise pas, ne compare pas les auteurs |
 | `corpus-reception-analyst` | Établit comment la littérature académique lit ce concept | Ne modifie jamais le bloc primaire |

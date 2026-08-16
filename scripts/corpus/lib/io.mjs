@@ -35,7 +35,14 @@ export async function loadRecords() {
     } catch {
       continue; // répertoire absent : rien à charger, pas une erreur
     }
-    for (const entry of entries.filter((e) => e.endsWith(".json")).sort()) {
+    // `corpus/review/` contient aussi les dossiers aveugles et les verdicts du contrôleur,
+    // qui portent l'extension .json sans être des fiches. Les charger comme telles faisait
+    // apparaître chaque fiche en review en double, et signalait des erreurs sur des
+    // fichiers qui n'ont pas à en produire.
+    const isRecord = (name) =>
+      name.endsWith(".json") && !name.endsWith(".brief.json") && !name.endsWith(".verdict.json");
+
+    for (const entry of entries.filter(isRecord).sort()) {
       const file = path.join(CORPUS_DIR, dir, entry);
       const record = await readJson(file);
       records.push({ dir, file, record });

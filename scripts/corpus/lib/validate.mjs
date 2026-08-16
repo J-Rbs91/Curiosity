@@ -26,6 +26,29 @@ const isFilled = (v) => typeof v === "string" && v.trim().length > 0;
 const asArray = (v) => (Array.isArray(v) ? v : []);
 
 /**
+ * Longueurs maximales des champs qui composent la carte.
+ *
+ * Ce ne sont pas des préférences de style : la carte doit tenir dans un écran de
+ * téléphone **sans défilement**, et ces trois champs sont les seuls dont la longueur
+ * varie. Les valeurs correspondent à ce qui tient réellement à la lecture — deux lignes
+ * pour l'accroche, trois pour le résumé, quatre pour la citation.
+ *
+ * Elles ont été **mesurées**, pas devinées : rendu de la carte sur un écran de 390 × 844,
+ * bloc par bloc, avec tous les champs à leur maximum simultané. Une accroche coûte 0,83
+ * pixel par caractère, un résumé 0,60, une citation 0,72.
+ *
+ * La contrainte est ici plutôt que dans une consigne parce qu'une consigne s'oublie : le
+ * premier lot a produit des accroches de 311 caractères et des résumés de 805, tous
+ * excellents et tous inaffichables.
+ */
+export const CARD_LIMITS = {
+  hook_question: 100,
+  short_explanation: 200,
+  key_quotation: 200,
+  sources: 5,
+};
+
+/**
  * Tous les nombres écrits dans un texte, en chaînes normalisées.
  * Sert la règle « un chiffre sans source ne sort pas » : une date, un effectif ou un
  * pourcentage qui apparaît dans la prose pédagogique doit exister dans le bloc de preuve.
@@ -138,8 +161,10 @@ function checkQuotation(record, errors) {
   const at = "evidence.key_quotation";
 
   if (!isFilled(quotation.text)) errors.push(`${at}.text vide`);
-  else if (quotation.text.length > 600)
-    errors.push(`${at}.text : ${quotation.text.length} caractères — une citation courte, pas un extrait d'ouvrage`);
+  else if (quotation.text.length > CARD_LIMITS.key_quotation)
+    errors.push(
+      `${at}.text : ${quotation.text.length} caractères pour ${CARD_LIMITS.key_quotation} au plus — la citation doit tenir dans la carte`
+    );
   if (!isFilled(quotation.locator))
     errors.push(`${at}.locator manquant — une citation qu'on ne peut pas rouvrir à la bonne page ne vaut rien`);
   if (!isFilled(quotation.language)) errors.push(`${at}.language manquante`);
@@ -241,12 +266,25 @@ export function validateRecord(record, { dir, themeIds = new Set(), authorIds = 
     errors.push("COAUTHORED avec un seul auteur : auteur principal ≠ auteur unique");
   if (attribution.authorship !== "SOLE_AUTHOR" && !isFilled(attribution.associated_author))
     errors.push(`${attribution.authorship} sans associated_author`);
+  /*
+   * Le corpus découvre les auteurs ; l'application les reçoit. Un `app_author_id` inconnu
+   * de `src/content/authors.ts` n'est donc pas une faute : c'est un auteur que le champ
+   * a fait apparaître et auquel l'application ne consacre pas encore de page. Exiger
+   * l'inverse ferait de la table des auteurs le périmètre réel du corpus — huit noms —
+   * alors que le périmètre est la discipline.
+   *
+   * Le nom, lui, est obligatoire : c'est lui qui s'affiche sur la carte, sans dépendre
+   * d'aucune table.
+   */
+  for (const [i, author] of authors.entries())
+    if (!isFilled(author?.name)) errors.push(`attribution.authors[${i}].name manquant`);
   const appAuthorIds = authors.map((a) => a?.app_author_id).filter(isFilled);
   for (const id of appAuthorIds)
     if (authorIds.size > 0 && !authorIds.has(id))
-      errors.push(`attribution : app_author_id « ${id} » absent de src/content/authors.ts`);
-  if (record?.status === "VALIDATED" && appAuthorIds.length === 0)
-    errors.push("VALIDATED sans aucun auteur rattaché au noyau (app_author_id)");
+      push(
+        warnings,
+        `attribution : « ${id} » n'a pas encore de page dans src/content/authors.ts — la carte l'affichera par son nom`
+      );
 
   // --- preuve -------------------------------------------------------------
   const evidence = record?.evidence ?? {};
@@ -269,6 +307,15 @@ export function validateRecord(record, { dir, themeIds = new Set(), authorIds = 
       "concrete_example",
     ])
       if (!isFilled(pedagogy[field])) errors.push(`pedagogy.${field} manquant`);
+
+    // La carte doit tenir dans un écran : ces deux champs y sont affichés en entier.
+    for (const field of ["hook_question", "short_explanation"]) {
+      const length = (pedagogy[field] ?? "").length;
+      if (length > CARD_LIMITS[field])
+        errors.push(
+          `pedagogy.${field} : ${length} caractères pour ${CARD_LIMITS[field]} au plus — la carte déborderait de l'écran`
+        );
+    }
     if (asArray(pedagogy.analysis_questions).length === 0)
       errors.push("pedagogy.analysis_questions vide");
     if (asArray(pedagogy.quiz).length === 0) errors.push("pedagogy.quiz vide");
@@ -289,13 +336,28 @@ export function validateRecord(record, { dir, themeIds = new Set(), authorIds = 
 
   // --- graphe -------------------------------------------------------------
   const graph = record?.graph ?? {};
+  // Le bloc `graph` est écrit par corpus-graph-curator, en toute fin de chaîne. Exiger
+  // thème et difficulté dès l'état candidat obligerait l'analyste à les inventer pour
+  // faire passer le validateur — c'est-à-dire à produire une affirmation non instruite
+  // pour satisfaire un outil. On ne contrôle donc leur présence qu'à la validation ;
+  // leur justesse, elle, se contrôle dès qu'ils sont renseignés.
   const themes = asArray(graph.themes);
-  if (themes.length === 0) errors.push("graph.themes vide");
+  if (themes.length === 0 && record?.status === "VALIDATED") errors.push("graph.themes vide");
+  // Même raison que pour les auteurs : un thème que le champ fait apparaître ne peut pas
+  // être refusé par la table des neuf thèmes écrite avant toute instruction. Il lui faut
+  // en revanche un libellé, faute de quoi la carte n'aurait rien à afficher.
   for (const t of themes)
-    if (themeIds.size > 0 && !themeIds.has(t))
-      errors.push(`graph.themes : « ${t} » absent de src/content/themes.ts`);
-  if (!Number.isInteger(graph.difficulty) || graph.difficulty < 1 || graph.difficulty > 5)
-    errors.push(`graph.difficulty « ${graph.difficulty} » hors de 1..5`);
+    if (themeIds.size > 0 && !themeIds.has(t)) {
+      if (!isFilled(graph.theme_labels?.[t]))
+        errors.push(
+          `graph.themes : « ${t} » est inconnu de l'application et n'a pas de libellé dans graph.theme_labels`
+        );
+      else push(warnings, `graph.themes : « ${t} » est un thème nouveau, affiché par son libellé`);
+    }
+  const hasDifficulty = graph.difficulty !== undefined && graph.difficulty !== null;
+  if (hasDifficulty || record?.status === "VALIDATED")
+    if (!Number.isInteger(graph.difficulty) || graph.difficulty < 1 || graph.difficulty > 5)
+      errors.push(`graph.difficulty « ${graph.difficulty} » hors de 1..5`);
 
   for (const field of ["related", "opposites"])
     asArray(graph[field]).forEach((rel, i) => {

@@ -1,0 +1,355 @@
+{
+  "_note": "Fragment de réception produit par corpus-reception-analyst. Il ne porte QUE sur la réception : attribution, interprétation savante, discussion. Le bloc `evidence.concept_definition`, `evidence.mechanism`, `evidence.primary_sources` et `evidence.key_quotation` relève du lecteur primaire, qui travaille en parallèle ; rien n'y est écrit ni corrigé ici. Les passages du texte de 1940 cités ci-dessous ne le sont qu'au titre de la question d'attribution (« qui a forgé le terme »), qui m'était explicitement confiée, et non pour établir le concept. Contrainte d'environnement au moment de l'enquête : OpenAlex en 429 et Semantic Scholar en 400/429 — `get_citations` et `get_references` ont échoué sur le DOI 10.2307/2570634. Aucune analyse d'intention de citation (scite / S2) n'a donc pu être menée : base muette, ce qui ne dit rien de l'existence ou de l'ampleur de la discussion. Crossref et HAL ont fonctionné ; la recherche plein texte HAL a été menée directement sur api.archives-ouvertes.fr (champ text_fulltext), Cairn et JSTOR sont restés fermés.",
+
+  "id": "deplacement-des-buts",
+  "canonical_name_fr": "Déplacement des buts",
+  "canonical_name_en": "Displacement of goals / goal displacement",
+
+  "attribution": {
+    "_note": "Cas typique de « concept de l'auteur ≠ terme forgé plus tard » — mais le partage n'est pas celui qu'on attend. Ce n'est pas un commentateur postérieur qui a inventé l'expression : Merton l'écrit lui-même en 1940. C'est Merton qui refuse d'en revendiquer la paternité.",
+    "authors": [
+      { "name": "Robert K. Merton", "app_author_id": null }
+    ],
+    "authorship": "SOLE_AUTHOR",
+    "associated_author": null,
+    "verdict": "SOLE_AUTHOR pour l'application du mécanisme à la structure bureaucratique. L'article de 1940 est signé de Merton seul (Social Forces, 18(4), 560-568, DOI 10.2307/2570634, notice Crossref vérifiée). Aucune source consultée n'attribue ce texte ou ce raisonnement à un coauteur.",
+    "term_origin": {
+      "coined_by": "Indéterminé — et Merton lui-même ne se l'attribue pas.",
+      "coined_in": "Première occurrence vérifiée dans son œuvre : R. K. Merton, « Bureaucratic Structure and Personality », Social Forces, 18(4), 1940, p. 563.",
+      "note": "Merton écrit : « there occurs the familiar process of displacement of goals whereby “an instrumental value becomes a terminal value” ». Le mot « familiar » est décisif : Merton présente le processus comme déjà connu de ses lecteurs, non comme une trouvaille. Sa note 11, attachée à cette phrase même, énumère les filiations qu'il reconnaît : la « heterogony of ends » de Wundt, la « Paradoxie der Folgen » de Max Weber, les observations de MacIver sur la transformation de la civilisation en culture, la remarque de Lasswell (« the human animal distinguishes himself by his infinite capacity for making ends of his means »), son propre article de 1936 (« The Unanticipated Consequences of Purposive Social Action », ASR 1, 894-904), et la « functional autonomy of motives » d'Allport, dont il dit que sa propre formulation est « complementary ». Merton réutilise l'expression deux fois dans la même page (« resulting from the displacement of the original goals » ; « an extreme product of this process of displacement of goals is the bureaucratic virtuoso ») et, p. 564, sous la forme « Displacement of sentiments from goals onto means ». (Consulté : texte intégral de l'article de 1940, scan JSTOR du volume Social Forces 18(4), pp. 560-568.)"
+    },
+    "emprunts_declares_par_merton": {
+      "etabli": "Les trois notions par lesquelles Merton opère « the transition to a study of the negative aspects of bureaucracy » (p. 562) sont explicitement empruntées : « Veblen's concept of “trained incapacity” », « Dewey's notion of “occupational psychosis” », « Warnotte's view of “professional deformation” ». Sa note 8 renvoie à Kenneth Burke, Permanence and Change (New York, New Republic, 1935), pp. 50 sq., et à Daniel Warnotte, « Bureaucratie et Fonctionnarisme », Revue de l'Institut de Sociologie, XVII (1937), p. 245. L'illustration des poulets conditionnés à la cloche et la formule « people may be unfitted by being fit in an unfit fitness » sont attribuées nommément à Burke.",
+      "source": "Merton 1940, p. 562 et notes 8-10 (texte intégral consulté).",
+      "portee": "Merton emprunte donc le vocabulaire d'entrée (Veblen/Burke, Dewey, Warnotte) ET l'expression de sortie (displacement of goals). Ce qui lui appartient en propre, c'est l'articulation : montrer que ce déplacement est produit par des dispositifs identifiables de la structure bureaucratique (discipline, carrière graduée, ancienneté, retraite, esprit de corps), et non par un trait de caractère."
+    },
+    "emprunt_au_second_degre_trained_incapacity": {
+      "etabli": "Merton attribue « trained incapacity » à Veblen en la prenant chez Burke. Erin Wais (KB Journal, 2(1), 2005) établit que Veblen a bien employé la formule, dès The Instinct of Workmanship and the Industrial Arts (1914), mais que Burke — chez qui Merton la lit — s'est déclaré incapable de retrouver sa source : dans une lettre de 1946 il dit avoir cherché en vain dans Veblen, et dans l'entretien « Counter-Gridlock » (1983) il hésite entre Veblen et Randolph Bourne.",
+      "source": "Erin Wais, « “Trained Incapacity”: Thorstein Veblen and Kenneth Burke », KB Journal, 2(1), automne 2005, https://www.kbjournal.org/wais (article intégral consulté en ligne).",
+      "portee": "L'attribution de Merton est juste au fond, mais elle est de seconde main ; Wais ne mentionne Merton nulle part. À ne pas transformer en « Merton se trompe » : il ne se trompe pas."
+    },
+    "forme_nominale_ulterieure": {
+      "constat": "La forme nominale figée « goal displacement », érigée en catégorie autonome de la théorie des organisations, est postérieure à Merton et n'est pas celle qu'il emploie (il écrit « displacement of goals »).",
+      "jalons_verifiables": [
+        "W. Keith Warner et A. Eugene Havens, « Goal Displacement and the Intangibility of Organizational Goals », Administrative Science Quarterly, 12(4), 1968, 539-555, DOI 10.2307/2391532 — le terme est en titre d'un article d'ASQ, 28 ans après Merton, et y est indexé sur l'intangibilité des buts, non sur la discipline bureaucratique (notice Crossref ; texte NON ouvert, JSTOR fermé).",
+        "Sam D. Sieber, « Goal Displacement », chapitre 5 de Fatal Remedies, Springer, 1981, DOI 10.1007/978-1-4684-7456-5_5 — le terme est devenu une rubrique d'ouvrage sur les effets pervers, détachée de la bureaucratie (notice Crossref ; texte NON ouvert).",
+        "« Goal Displacement », entrée de The SAGE Dictionary of Sociology, 2006, DOI 10.4135/9781446279137.n405 — le terme est lexicalisé (notice Crossref ; entrée NON ouverte, et de toute façon de niveau tertiaire)."
+      ],
+      "limite": "Que Warner & Havens aient forgé la forme nominale n'est PAS établi : je n'ai pas ouvert leur article, ni celui de Sills (1957), à qui plusieurs sources tertiaires attribuent une revue de littérature sur « goal displacement » et « goal succession ». Le fait qu'un terme apparaisse dans un titre de 1968 n'en fait pas son acte de naissance."
+    },
+    "confusions_de_paternite_dans_les_sources_tertiaires": {
+      "constat": "Les sources tertiaires anglophones se contredisent ouvertement sur la paternité : les unes datent l'expression de « Merton 1949 », les autres l'attribuent à Michels (1911) tout en concédant qu'il n'a pas employé le terme, d'autres encore renvoient à Selznick (TVA and the Grass Roots) daté tantôt 1949 tantôt 1966.",
+      "statut": "Repéré via encyclopédies et dictionnaires en ligne (niveau D/E) : ces pages servent ici à DÉTECTER la confusion, elles ne sont pas enregistrées comme sources et n'établissent rien.",
+      "ce_que_je_peux_trancher": "Sur pièce, Merton emploie « displacement of goals » en 1940, dans Social Forces — donc ni 1949 ni 1957 pour la première occurrence, quelle que soit l'édition par laquelle la postérité l'a lu. Que Michels ait employé un équivalent en 1911 n'est établi par aucune source de niveau B ou C ouverte ici."
+    }
+  },
+
+  "evidence": {
+    "secondary_sources": [
+      {
+        "citation": "W. Keith Warner et A. Eugene Havens, « Goal Displacement and the Intangibility of Organizational Goals », Administrative Science Quarterly, 12(4), 1968, 539-555.",
+        "year": 1968,
+        "language": "en",
+        "doi_isbn": "10.2307/2391532",
+        "url": "https://doi.org/10.2307/2391532",
+        "role": "attribution",
+        "level": "B",
+        "establishes": "CONSULTÉ EN MÉTADONNÉES SEULEMENT (Crossref ; JSTOR fermé). Établit uniquement ceci : en 1968, « goal displacement » est un objet nommé dans le titre d'un article de la principale revue de théorie des organisations, et y est mis en rapport avec l'intangibilité des buts — c'est-à-dire déjà déplacé hors du cadre mertonien de la discipline bureaucratique. Le contenu de l'article n'est pas établi ; qu'ils aient forgé le terme ne l'est pas non plus."
+      },
+      {
+        "citation": "Harry Cohen, « Bureaucratic Flexibility: Some Comments on Robert Merton's “Bureaucratic Structure and Personality” », The British Journal of Sociology, 21(4), 1970.",
+        "year": 1970,
+        "language": "en",
+        "doi_isbn": "10.2307/588494",
+        "url": "https://doi.org/10.2307/588494",
+        "role": "critique",
+        "level": "B",
+        "establishes": "CONSULTÉ EN MÉTADONNÉES SEULEMENT (Crossref ; JSTOR fermé). Établit qu'une discussion critique nommément adressée à l'article de 1940 existe, trente ans après, dans une revue majeure, et que son angle d'attaque est la flexibilité bureaucratique — donc, selon toute vraisemblance, la thèse de la rigidité. Le contenu de l'objection n'est PAS établi et ne doit pas être deviné à partir du titre."
+      },
+      {
+        "citation": "Erin Wais, « “Trained Incapacity”: Thorstein Veblen and Kenneth Burke », KB Journal, 2(1), automne 2005.",
+        "year": 2005,
+        "language": "en",
+        "doi_isbn": null,
+        "url": "https://www.kbjournal.org/wais",
+        "role": "attribution",
+        "level": "B",
+        "establishes": "TEXTE CONSULTÉ EN LIGNE. Établit que « trained incapacity » est bien de Veblen (première occurrence dans The Instinct of Workmanship and the Industrial Arts, 1914, à propos de l'homme d'affaires réduit à « an eye single to pecuniary gain »), mais que Burke, source directe de Merton, s'est déclaré incertain de l'origine de la formule (lettre de 1946 ; entretien de 1983 hésitant entre Veblen et Randolph Bourne). Wais ne mentionne pas Merton : la remontée jusqu'à Merton est mon rapprochement, appuyé sur la note 8 de Merton qui cite Permanence and Change."
+      },
+      {
+        "citation": "Philip Selznick, « An Approach to a Theory of Bureaucracy », American Sociological Review, 8(1), 1943.",
+        "year": 1943,
+        "language": "en",
+        "doi_isbn": "10.2307/2085448",
+        "url": "https://doi.org/10.2307/2085448",
+        "role": "reception",
+        "level": "B",
+        "establishes": "CONSULTÉ EN MÉTADONNÉES SEULEMENT (Crossref). Établit seulement la chronologie : trois ans après Merton, un article de théorie de la bureaucratie paraît dans l'ASR sous la signature de Selznick. Que Selznick y emploie « displacement of goals », qu'il y discute Merton, ou qu'il ait forgé quoi que ce soit, n'est PAS établi ici."
+      },
+      {
+        "citation": "Sam D. Sieber, « Goal Displacement », chap. 5 de Fatal Remedies: The Ironies of Social Intervention, New York, Springer/Plenum, 1981.",
+        "year": 1981,
+        "language": "en",
+        "doi_isbn": "10.1007/978-1-4684-7456-5_5",
+        "url": "https://doi.org/10.1007/978-1-4684-7456-5_5",
+        "role": "reception",
+        "level": "B",
+        "establishes": "CONSULTÉ EN MÉTADONNÉES SEULEMENT (Crossref). Établit qu'en 1981 « goal displacement » est devenu un chapitre entier dans un ouvrage sur les effets pervers de l'intervention sociale — c'est-à-dire une catégorie générale d'ironie sociale, dont la bureaucratie n'est plus qu'un cas. Trace d'un élargissement du concept hors de son terrain d'origine ; l'argument du chapitre n'est pas établi."
+      },
+      {
+        "citation": "Sandra van Thiel et Frans L. Leeuw, « The Performance Paradox in the Public Sector », Public Performance & Management Review, 25(3), 2002, 267-281.",
+        "year": 2002,
+        "language": "en",
+        "doi_isbn": null,
+        "url": "https://repub.eur.nl/pub/1577/BSK074.pdf",
+        "role": "reception",
+        "level": "B",
+        "establishes": "TEXTE INTÉGRAL CONSULTÉ (PDF du dépôt RePub, Erasmus, 15 p.). Sert ici à un constat NÉGATIF, et c'est pour cela qu'il est enregistré : l'article décrit exactement le mécanisme — « measure fixation », définie d'après Smith (1995) comme « an emphasis on [single] measures of success rather than [on] the underlying objective », « tunnel vision », « suboptimization », « perverse learning » — sans une seule occurrence de « Merton », « goal displacement » ou « displacement » dans tout le texte (vérifié par recherche exhaustive : zéro occurrence). La littérature contemporaine sur le paradoxe de la performance retrouve donc le mécanisme sans passer par Merton. Proximité thématique attestée, filiation NON documentée."
+      }
+    ],
+
+    "francophone_sources": [
+      {
+        "citation": "Claire Dedieu, Quand l'État se retire : la suppression de l'ingénierie publique dans le domaine de l'eau, thèse de science politique, Université de Montpellier, 2019 (HAL tel-04485450).",
+        "year": 2019,
+        "language": "fr",
+        "doi_isbn": "10.70675/e0b98784z3a56z42b2za9c0z354e93b230b2",
+        "url": "https://theses.hal.science/tel-04485450",
+        "role": "reception",
+        "level": "B",
+        "establishes": "TEXTE INTÉGRAL CONSULTÉ (PDF HAL, 625 p. ; passage en p. 24 du PDF, note 1 de l'introduction générale). Donne la formule canonique de la série française : « Les travaux séminaux de R. Merton (1940), A. W. Gouldner (1954), P. M. Blau (1955), M. Crozier (1963) et P. Selznick (1966) mettent en avant les dysfonctionnements bureaucratiques (déplacement des buts dû à l'attitude ritualiste des bureaucrates, rigidité, cercles vicieux bureaucratiques…) ». Établit trois choses : (1) le terme français reçu est bien « déplacement des buts » ; (2) il est immédiatement couplé au « ritualisme » et aux « cercles vicieux » ; (3) Merton n'est jamais cité seul mais dans un bloc de cinq auteurs, avec Crozier inséré dans la série anglo-américaine."
+      },
+      {
+        "citation": "Mohammad Hassani, Régulation interne des établissements scolaires : les chefs d'établissement et la régulation des activités des enseignants, thèse de sciences de l'éducation, 2007 (HAL tel-00138158).",
+        "year": 2007,
+        "language": "fr",
+        "doi_isbn": null,
+        "url": "https://theses.hal.science/tel-00138158",
+        "role": "interpretation",
+        "level": "B",
+        "establishes": "TEXTE INTÉGRAL CONSULTÉ (PDF HAL, 439 p. ; passage en p. 17 du PDF). Rend le mécanisme dans sa version fidèle et causale : « Merton (1940) a affirmé que la discipline nécessaire pour obtenir un comportement standardisé dans une organisation bureaucratique provoquera le déplacement des buts. » L'agent causal est la discipline exigée par l'organisation, pas la faiblesse de l'agent — c'est la lecture structurelle, et elle est explicitement datée de 1940."
+      },
+      {
+        "citation": "Sylvère Angot, La « modernisation de l'État », indifférente à l'expertise des services en territoires, thèse de science politique, 2020 (HAL tel-02877768).",
+        "year": 2020,
+        "language": "fr",
+        "doi_isbn": "10.70675/d8e44dfcz6107z4b47z81e0z9a7c49dfb9d0",
+        "url": "https://theses.hal.science/tel-02877768",
+        "role": "reception",
+        "level": "B",
+        "establishes": "TEXTE INTÉGRAL CONSULTÉ (PDF HAL, 595 p. ; passage en p. 28 du PDF, introduction générale). Exposé développé : « Il y a alors un déplacement des buts des organisations bureaucratiques […] cette forme de structure agit sur la personnalité même de ses membres, obligeant le fonctionnaire à être “méthodique, prudent et discipliné” et à développer un “ritualisme” qui l'amène à se focaliser sur l'application des règles et des procédures, quitte à en perdre de vue l'esprit ». Le membre de phrase entre guillemets est bien une traduction de Merton 1940, p. 562 (« methodical, prudent, disciplined »). MAIS le même passage ajoute : « Merton met en évidence l'endogénéité de ces organisations, tournées vers leur propre perpétuation et donnant la priorité à la protection de leurs membres » — thème de l'auto-perpétuation qui relève de la lignée Michels/Selznick et que le texte de 1940 ne formule pas en ces termes. Source précieuse doublement : elle atteste l'usage savant français ET une contamination documentée entre deux mécanismes distincts."
+      },
+      {
+        "citation": "Ariel Eggrickx et Agnès Mazars-Chapelon, « Bureaucratie et émotions. Des injonctions paradoxales ? », Revue française de gestion, 38(223), 2012 (HAL hal-01988114).",
+        "year": 2012,
+        "language": "fr",
+        "doi_isbn": "10.3166/RFG.223.59-73",
+        "url": "https://hal.umontpellier.fr/hal-01988114",
+        "role": "interpretation",
+        "level": "B",
+        "establishes": "TEXTE INTÉGRAL CONSULTÉ (PDF HAL, 20 p. ; passage en p. 6 du PDF). Restitue le mécanisme sous le régime de la conséquence non voulue et le distingue de ses voisins : « l'insistance sur la régularité a pour effet non voulu d'accroître la rigidité des conduites, et les difficultés avec les clients (Merton, 1940). La délégation d'autorité a pour effet d'accroître les divergences d'intérêts entre les sous-groupes […] (Selznick, 1949). Enfin, l'utilisation de règles générales et impersonnelles incite les acteurs à s'ajuster au niveau minimum des conduites acceptables […] (Gouldner, 1954). » Établit que la littérature de gestion française tient les trois modèles pour distincts par leur point de départ (régularité / délégation / règles impersonnelles) et lit celui de Merton comme un effet NON VOULU, non comme une faute."
+      },
+      {
+        "citation": "Jean-Claude Thoenig, « Raisonner en termes organisationnels », Sociologie du travail, 54(1), 2012, 9-16 (HAL halshs-00871621).",
+        "year": 2012,
+        "language": "fr",
+        "doi_isbn": null,
+        "url": "https://shs.hal.science/halshs-00871621",
+        "role": "reception",
+        "level": "B",
+        "establishes": "TEXTE INTÉGRAL CONSULTÉ (PDF HAL, 15 p. ; passage en p. 5 du PDF ; référence « Merton R.K. (1940) » en bibliographie). Atteste que l'article de 1940 reste, en 2012, une référence vivante de la sociologie des organisations française, convoquée pour le cercle vicieux : « la probabilité est forte que l'organisation entre dans une sorte de cercle vicieux qu'illustrent à l'envi les travaux sur les bureaucraties. Plus le centre cherche à programmer et à contrôler, plus les discontinuités se creusent et plus la fragmentation interne s'accentue. (Merton 1940, Gouldner 1954, Crozier 1963). » Thoenig ajoute que le recours aux « indicateurs de performance économique » n'élimine pas ces autonomies locales — mais il ne fait pas de la mesure de performance un cas de déplacement des buts."
+      },
+      {
+        "citation": "Julie Ricard, « Accroissement de la complexité des décisions dans un contexte de prolifération des règles », Revue interdisciplinaire droit et organisations, 2022 (HAL hal-03633895).",
+        "year": 2022,
+        "language": "fr",
+        "doi_isbn": "10.34699/rido.2022.10",
+        "url": "https://normandie-univ.hal.science/hal-03633895",
+        "role": "reception",
+        "level": "B",
+        "establishes": "TEXTE INTÉGRAL CONSULTÉ (PDF HAL, 19 p. ; passage en p. 4 du PDF). Deux faits de réception : (1) l'opposition de partage entre les deux auteurs est devenue un lieu commun — « Alors que Merton (1957) explorait la notion de déplacement des buts, Crozier (1964) s'intéressait aux acteurs et à la manière dont les règles définissaient leurs relations » ; (2) Merton y est daté de 1957, c'est-à-dire cité par l'édition de Social Theory and Social Structure et non par l'article de 1940."
+      },
+      {
+        "citation": "Philippe Bernoux, Jean-Yves Bion, Jean-Claude Cohen et Martine Meunier-Chabert, L'analyse des systèmes d'acteurs. Cahier n°1 : diagnostics de territoire et systèmes d'acteurs, CERTU, 2001 (HAL hal-02162045).",
+        "year": 2001,
+        "language": "fr",
+        "doi_isbn": null,
+        "url": "https://hal-lara.archives-ouvertes.fr/hal-02162045",
+        "role": "translation",
+        "level": "C",
+        "establishes": "TEXTE INTÉGRAL CONSULTÉ (PDF HAL, 105 p. ; passages en p. 24 et p. 28 du PDF — le rapport intègre un texte de cours de Philippe Bernoux, « Sociologie des organisations », d'où la cote C et non B). Établit le canal de transmission français : « La première [critique de la bureaucratie] a été présentée par Merton (1957, cité par March et Simon) », suivie de citations de la traduction française de March & Simon (Les Organisations, 1958/1971, p. 38). Le mécanisme y est rendu ainsi : « l'intériorisation des règles fait que les règlements acquièrent une valeur intrinsèque qui devient indépendante des objectifs de l'organisation » — formulation exacte du déplacement, mais SANS le mot « déplacement des buts ». Le même document, p. 28, documente la rupture française : « l'analyse stratégique se démarque des thèses structuralo-fonctionnalistes (Parsons, Merton, Selznick) en remettant en cause d'une part l'aspect rationnel des rôles et d'autre part la conformité quasi naturelle des occupants d'un rôle aux attentes de leurs partenaires », l'analyse stratégique étant celle de « Michel Crozier et Erhard Friedberg (1977) »."
+      },
+      {
+        "citation": "Arnaud Saint-Martin, La sociologie de Robert K. Merton, Paris, La Découverte, coll. « Repères », 2013 — chap. IV, « Les apports théoriques de Merton », p. 77-108.",
+        "year": 2013,
+        "language": "fr",
+        "doi_isbn": "10.3917/dec.saint.2013.01",
+        "url": "https://shs.cairn.info/la-sociologie-de-robert-k-merton--9782707168870-page-77",
+        "role": "synthesis",
+        "level": "C",
+        "establishes": "NON OUVERT — Cairn renvoie la notice mais pas le corps du chapitre (accès fermé). Notice vérifiée par ISBN via Crossref (auteur, année, éditeur, collection, pagination du chapitre, indexation « Sociologie des organisations »). N'établit RIEN sur le concept : signalée ici parce que c'est la synthèse francophone de référence sur Merton et qu'elle devra être ouverte avant validation de la fiche."
+      }
+    ],
+
+    "translation_notes": [
+      {
+        "term_source": "displacement of goals (Merton, 1940, p. 563)",
+        "term_fr": "déplacement des buts",
+        "note": "Terme reçu, et très largement dominant. Mesure faite le 16 août 2026 sur le plein texte de HAL (api.archives-ouvertes.fr, champ text_fulltext, requête « <expression> ET Merton ») : « déplacement des buts » = 14 documents ; « déplacement des objectifs » = 0 ; « substitution des buts » = 0 ; « inversion des buts » = 0 ; « ritualisme bureaucratique » = 0. Le français n'hésite donc pas — contrairement à ce qu'on pourrait craindre, ce n'est pas un terme flottant."
+      },
+      {
+        "term_source": "goal displacement (forme nominale anglaise, postérieure)",
+        "term_fr": "déplacement des buts",
+        "note": "Le français rend d'une seule expression deux états du terme : ce que Merton écrit en 1940 (« displacement of goals », un processus qu'il dit familier) et ce que la théorie des organisations en a fait après 1968 (« goal displacement », une catégorie autonome, appliquée à toute organisation à buts intangibles). La traduction efface une histoire."
+      },
+      {
+        "term_source": "trained incapacity (Veblen, via Burke) / occupational psychosis (Dewey) / professional deformation (Warnotte)",
+        "term_fr": "incapacité acquise / psychose professionnelle / déformation professionnelle",
+        "note": "Cas rare de boucle linguistique : la troisième notion est française à l'origine — Daniel Warnotte, « Bureaucratie et Fonctionnarisme », Revue de l'Institut de Sociologie, XVII, 1937, p. 245, cité par Merton en note 8. « Déformation professionnelle » revient donc en français par le détour de Merton. Attention : Merton juxtapose ces trois notions comme voies d'accès convergentes vers « the negative aspects of bureaucracy » (p. 562) ; il n'écrit pas qu'elles sont équivalentes, et aucune des trois n'est le déplacement des buts."
+      },
+      {
+        "term_source": "ritualism / formalism (Merton, 1940, p. 563)",
+        "term_fr": "ritualisme / formalisme",
+        "note": "Dans le texte de 1940, le ritualisme est une CONSÉQUENCE du déplacement (« Formalism, even ritualism, ensues »), pas son nom. La réception française tend à faire du ritualisme la cause ou l'étiquette du phénomène (Dedieu 2019 : « déplacement des buts dû à l'attitude ritualiste des bureaucrates » — l'ordre causal est inversé par rapport à Merton). À noter que Merton lui-même, en note 12, renvoie à son « Social Structure and Anomie » (ASR, 1938) : la parenté avec le « ritualisme » de la typologie de l'anomie est donc déclarée par l'auteur, pas inventée par ses lecteurs — mais ce sont deux ritualismes qui ne se recouvrent pas."
+      },
+      {
+        "term_source": "sanctification (Merton, 1940, p. 565)",
+        "term_fr": "sanctification",
+        "note": "Terme employé par Merton pour le processus par lequel les règles deviennent « rigidified and sacred » ; sa note 19 l'adosse au « pathos » de Sumner (Folkways, 1906, p. 180-181), « the halo of sentiment which protects a social value from criticism ». Peu repris en français, où il disparaît au profit du seul « ritualisme »."
+      },
+      {
+        "term_source": "bureaucratic virtuoso (Merton, 1940, p. 563)",
+        "term_fr": "virtuose bureaucratique",
+        "note": "Merton en fait « an extreme product of this process of displacement of goals » : celui « who never forgets a single rule binding his action and hence is unable to assist many of his clients ». La figure est celle de l'excès de zèle, non de la négligence — ce qui contredit frontalement l'usage courant."
+      },
+      {
+        "term_source": "Social Theory and Social Structure (1949, éd. augmentée 1957)",
+        "term_fr": "Éléments de théorie et de méthode sociologique, trad. et adaptation Henri Mendras, Plon, 1953 ; éd. augmentée 1965",
+        "note": "Canal probable de la réception française du chapitre, mais NON VÉRIFIÉ ici : je n'ai pas ouvert la traduction Mendras et je ne sais donc pas quel terme français il emploie pour « displacement of goals », ni sous quel titre exact le chapitre y figure. Le sous-titre « traduits de l'américain et adaptés par Henri Mendras » invite d'ailleurs à la prudence : une adaptation n'est pas une traduction."
+      }
+    ],
+
+    "known_ambiguities": [
+      "Date de référence flottante. Les auteurs français citent le même concept sous trois millésimes : 1940 (Dedieu, Hassani, Thoenig, Eggrickx & Mazars-Chapelon, Angot) et 1957 (Ricard, Bernoux) ; les sources tertiaires anglophones ajoutent 1949. C'est la même idée lue dans l'article de Social Forces ou dans l'une des éditions de Social Theory and Social Structure. Les écarts de rédaction entre 1940 et 1957 ne sont pas établis ici — c'est au lecteur primaire de dire si le texte a changé.",
+      "Paternité contestée dans la littérature tertiaire seulement. Michels (1911) est régulièrement présenté comme l'origine du phénomène, avec l'aveu qu'il n'employait pas le terme ; Selznick est parfois crédité. Aucune source de niveau B ou C ouverte ici ne tranche. Ce qui est sûr, c'est que Merton lui-même désigne d'autres ancêtres que Michels : Wundt, Weber, MacIver, Lasswell, Allport.",
+      "Qui a figé la forme nominale « goal displacement » reste indéterminé. Warner & Havens (1968) et Sills (1957) sont les deux candidats cités ; ni l'un ni l'autre n'a été ouvert.",
+      "Le mécanisme est-il structurel ou caractérologique ? Le titre de Merton — « Bureaucratic Structure and PERSONALITY » — et son vocabulaire (« personality pattern of the bureaucrat », p. 565) autorisent la lecture caractérologique, alors que la démonstration l'exclut (« Such inadequacies in orientation […] clearly derive from structural sources », p. 564). La réception oscille : Hassani 2007 lit la cause structurelle, Angot 2020 écrit que « cette forme de structure agit sur la personnalité même de ses membres ». L'ambiguïté est dans le texte, pas seulement chez ses lecteurs.",
+      "Contamination avec le mécanisme d'auto-perpétuation. Angot 2020 — source savante — prête à Merton l'idée que les organisations bureaucratiques sont « tournées vers leur propre perpétuation et donnant la priorité à la protection de leurs membres ». Le texte de 1940 parle bien d'esprit de corps et de défense des « entrenched interests » (p. 564-565), mais son mécanisme central de déplacement passe par la valeur terminale prise par la règle, pas par la survie de l'organisation. Deux mécanismes voisins qui fusionnent dans la réception.",
+      "Divergence entre les deux couches. La couche anglophone se dispute sur l'origine du terme et ignore Warnotte ; la couche francophone ne discute jamais l'origine du terme, l'emploie sans hésitation (« déplacement des buts »), et l'insère systématiquement dans la série Merton–Selznick–Gouldner–Blau–Crozier. Aucun des sept textes francophones ouverts ne s'interroge sur la paternité du concept. Cette divergence n'est pas tranchée ici : elle est consignée.",
+      "Aucune analyse de citation n'a pu être faite : OpenAlex en 429 et Semantic Scholar en erreur pendant toute l'enquête, connecteur scite indisponible. Ce qui est rapporté ci-dessous des soutiens et des objections repose sur des textes ouverts un par un, pas sur une mesure de la réception. Une reprise du dossier avec `get_citations` sur 10.2307/2570634 pourrait déplacer les conclusions sur la section `debates`."
+    ],
+
+    "common_misinterpretations": [
+      {
+        "claim": "« Déplacement des buts » veut dire que la bureaucratie est inefficace.",
+        "why_wrong": "Merton conclut exactement l'inverse d'une condamnation globale : « the very elements which conduce toward efficiency in general produce inefficiency in specific instances » (1940, p. 564, point 4 de sa récapitulation). L'efficacité générale et l'inefficacité locale ont la même cause. La littérature savante française le lit ainsi : Eggrickx & Mazars-Chapelon (RFG, 2012, p. 6 du PDF) parlent d'un « effet non voulu » de l'insistance sur la régularité. Dire « la bureaucratie est inefficace », c'est supprimer la moitié de la proposition.",
+        "source": "Vulgarisation détectée sur des pages pédagogiques francophones (niveau D/E, non enregistrées) : une fiche de théorie des organisations intitulée « L'analyse de Merton : le déplacement des buts » énonce que le phénomène « peut avoir des effets néfastes sur l'efficacité de l'organisation » et liste allongement des délais, multiplication des documents et hausse des coûts, sans citer une seule année ni un seul titre de Merton."
+      },
+      {
+        "claim": "Les fonctionnaires « oublient leur mission » — c'est une négligence, un manque d'implication.",
+        "why_wrong": "Le personnage central de Merton est le « bureaucratic virtuoso, who never forgets a single rule binding his action and hence is unable to assist many of his clients » (1940, p. 563) : c'est un excès de mémoire des règles, pas un oubli, et un excès de zèle, pas une démission. L'exemple donné — le pilote Bernt Balchen privé de naturalisation parce que l'expédition Byrd l'a « fait sortir » du territoire — est celui d'une administration qui applique la règle avec une exactitude parfaite.",
+        "source": "Merton 1940, p. 563-564 (texte intégral consulté)."
+      },
+      {
+        "claim": "C'est une pathologie, un dysfonctionnement accidentel qu'une organisation bien gérée éviterait.",
+        "why_wrong": "Merton range le phénomène du côté des conséquences prévisibles de la structure : « Such inadequacies in orientation which involve trained incapacity clearly derive from structural sources » (p. 564), et il en décrit les dispositifs producteurs — discipline, « graded career », promotion à l'ancienneté, retraites, salaires progressifs, tous « designed to provide incentives for disciplined action and conformity to the official regulations » (p. 564). Autrement dit : ce sont les mécanismes mêmes qui fabriquent la fiabilité qui fabriquent le déplacement. Hassani (2007, p. 17 du PDF) le restitue en ces termes : « la discipline nécessaire pour obtenir un comportement standardisé […] provoquera le déplacement des buts ».",
+        "source": "Merton 1940, p. 564 ; Hassani 2007 (HAL tel-00138158), p. 17 du PDF."
+      },
+      {
+        "claim": "Merton a forgé le terme « goal displacement ».",
+        "why_wrong": "Il emploie « displacement of goals » en 1940, mais l'introduit par « the familiar process of… » et lui donne aussitôt cinq ascendances en note (Wundt, Weber, MacIver, Lasswell, Allport, plus son propre article de 1936). La forme nominale figée et la promotion en catégorie autonome de la théorie des organisations sont postérieures — « goal displacement » apparaît en titre d'article dans ASQ en 1968 (Warner & Havens).",
+        "source": "Merton 1940, p. 563 et note 11 (texte intégral consulté) ; Warner & Havens 1968, DOI 10.2307/2391532 (métadonnées Crossref)."
+      },
+      {
+        "claim": "Le déplacement des buts, c'est quand une organisation se met à poursuivre sa propre survie au lieu de sa mission.",
+        "why_wrong": "C'est un mécanisme voisin mais distinct, qui relève de la lignée Michels/Selznick. Chez Merton, ce qui se substitue à la fin, ce n'est pas l'organisation elle-même : c'est la RÈGLE, devenue valeur terminale par transfert des sentiments (« this very emphasis leads to a transference of the sentiments from the aims of the organization onto the particular details of behavior required by the rules », p. 563). La confusion est attestée jusque dans la littérature savante française.",
+        "source": "Merton 1940, p. 563 ; confusion documentée dans Angot 2020 (HAL tel-02877768), p. 28 du PDF."
+      },
+      {
+        "claim": "Ritualisme mertonien de la bureaucratie = ritualisme de la typologie de l'anomie.",
+        "why_wrong": "Les deux existent bien chez Merton et il les relie lui-même (note 12 de l'article de 1940, qui renvoie à « Social Structure and Anomie », ASR, 1938), mais ce ne sont pas les mêmes objets : l'un est un mode d'adaptation individuel dans une structure culturelle (renoncer aux buts culturels tout en s'accrochant aux moyens institutionnalisés), l'autre est un effet de dispositifs organisationnels précis. Les confondre fait passer un résultat d'analyse organisationnelle pour une case de tableau.",
+        "source": "Merton 1940, note 12 (texte intégral consulté)."
+      }
+    ],
+
+    "reception": {
+      "consensus": "Deux points ne sont contestés par aucune source consultée. (1) L'article de 1940 est le point d'origine de l'analyse des dysfonctions bureaucratiques et il est cité comme tel, en bloc avec Selznick, Gouldner, Blau et Crozier — formule attestée telle quelle chez Dedieu (2019, p. 24 du PDF : « Les travaux séminaux de R. Merton (1940), A. W. Gouldner (1954), P. M. Blau (1955), M. Crozier (1963) et P. Selznick (1966) »), et retrouvée chez Eggrickx & Mazars-Chapelon (2012) et Thoenig (2012). (2) Le mécanisme retenu par la littérature est bien celui du texte : la conformité aux règles, exigée par la discipline et récompensée par la carrière, se transforme en valeur terminale, et cette transformation est une conséquence non voulue de ce qui fait la fiabilité de l'organisation, non une faute d'agent (Hassani 2007 ; Eggrickx & Mazars-Chapelon 2012, « effet non voulu »).",
+      "debates": [
+        "Rigidité ou flexibilité ? Harry Cohen consacre en 1970 un article du British Journal of Sociology à commenter nommément « Bureaucratic Structure and Personality » sous le titre « Bureaucratic Flexibility » (DOI 10.2307/588494). L'existence du désaccord est établie par le titre ; son contenu ne l'est pas — article non ouvert.",
+        "Le déplacement tient-il à la discipline bureaucratique (Merton 1940) ou à l'intangibilité des buts (Warner & Havens, ASQ, 1968) ? Le déplacement du facteur explicatif est lisible dans le titre même de 1968 ; la thèse de Warner & Havens n'a pas été ouverte.",
+        "Le concept appartient-il à Merton ou à la lignée Michels ? Débat vif dans la littérature tertiaire anglophone, absent de la littérature savante francophone consultée, et non tranché par une source de niveau B ou C ouverte ici.",
+        "La littérature contemporaine sur le pilotage par indicateurs (« performance paradox », « tunnel vision », « measure fixation ») est-elle une continuation du déplacement des buts ? Rien ne l'établit dans les textes ouverts : van Thiel & Leeuw (2002), qui en donnent l'exposé de référence, ne citent ni Merton ni le déplacement des buts — zéro occurrence dans l'article entier. Thoenig (2012, p. 5 du PDF) évoque les indicateurs de performance dans le même paragraphe que Merton 1940, mais pour dire que le pilotage par quasi-marché n'élimine pas les autonomies locales, ce qui n'est pas la même proposition. Proximité thématique attestée, filiation non documentée.",
+        "Statut du ritualisme : cause ou conséquence ? Merton en fait une conséquence (« Formalism, even ritualism, ensues ») ; la formulation française consacrée l'installe en cause (« déplacement des buts dû à l'attitude ritualiste des bureaucrates », Dedieu 2019). L'inversion est passée dans l'usage sans être discutée."
+      ],
+      "critiques": [
+        {
+          "by": "Harry Cohen (1970)",
+          "claim": "Objection publiée dans le British Journal of Sociology, adressée nommément à l'article de 1940, sous l'angle de la flexibilité bureaucratique. Le contenu de l'objection n'est pas établi : article non ouvert (JSTOR fermé). Ne pas le déduire du titre.",
+          "source": "Harry Cohen, « Bureaucratic Flexibility: Some Comments on Robert Merton's “Bureaucratic Structure and Personality” », BJS, 1970, DOI 10.2307/588494 (métadonnées Crossref)."
+        },
+        {
+          "by": "Michel Crozier et Erhard Friedberg (analyse stratégique, 1977), tels que restitués par Philippe Bernoux",
+          "claim": "« L'analyse stratégique se démarque des thèses structuralo-fonctionnalistes (Parsons, Merton, Selznick) en remettant en cause d'une part l'aspect rationnel des rôles et d'autre part la conformité quasi naturelle des occupants d'un rôle aux attentes de leurs partenaires. » Le reproche porte donc sur le présupposé de conformité : chez Merton, le bureaucrate se conforme et c'est cette conformité même qui produit l'effet ; l'analyse stratégique refuse d'admettre cette conformité comme donnée et lui substitue des acteurs qui calculent. C'est la critique française centrale, et elle est de nature théorique, pas empirique.",
+          "source": "Bernoux, Bion, Cohen et Meunier-Chabert, CERTU, 2001 (HAL hal-02162045), p. 28 du PDF — texte de cours de P. Bernoux intégré au rapport, texte intégral consulté."
+        },
+        {
+          "by": "Julie Ricard (2022), reprenant le partage reçu",
+          "claim": "Formulation du partage des tâches devenu canonique en France, qui vaut aussi comme reproche implicite d'angle mort : « Alors que Merton (1957) explorait la notion de déplacement des buts, Crozier (1964) s'intéressait aux acteurs et à la manière dont les règles définissaient leurs relations. » Ce que Merton ne fait pas — les acteurs et leurs relations — est ce que la sociologie française revendique.",
+          "source": "Julie Ricard, Revue interdisciplinaire droit et organisations, 2022, DOI 10.34699/rido.2022.10, p. 4 du PDF (texte intégral consulté)."
+        },
+        {
+          "by": "Constat de réception, sans auteur nommé",
+          "claim": "En France, Merton est massivement lu de seconde main, à travers l'exposé qu'en font March et Simon : Bernoux écrit « Merton (1957, cité par March et Simon) » et appuie tout son paragraphe sur Les Organisations (1958, trad. fr. 1971, p. 38), qu'il cite entre guillemets. Le mécanisme y est rendu sans le mot « déplacement des buts » : « l'intériorisation des règles fait que les règlements acquièrent une valeur intrinsèque qui devient indépendante des objectifs de l'organisation ». Ce n'est pas une critique de Merton mais un fait de transmission qui en explique plusieurs déformations.",
+          "source": "Bernoux et al., CERTU, 2001 (HAL hal-02162045), p. 24 du PDF (texte intégral consulté)."
+        }
+      ]
+    }
+  },
+
+  "non_etabli": [
+    "Aucune analyse de citation n'a été possible : `get_citations` sur 10.2307/2570634 a rendu une erreur 400 de Semantic Scholar, et OpenAlex était en 429 sur toutes les requêtes. Base muette — cela ne dit rien de la réception de Merton, cela dit seulement que je n'ai pas pu la mesurer.",
+    "Que Warner & Havens (1968) aient forgé le terme « goal displacement » : non ouvert, non établi. Leur article ne prouve que la présence du terme en titre d'ASQ à cette date.",
+    "Que Michels (1911) ait employé un équivalent de « déplacement des buts » : affirmé par des sources tertiaires qui se contredisent, établi par aucune source ouverte de niveau B ou C.",
+    "Que Sills (1957, The Volunteers) contienne la revue de littérature sur « goal displacement » et « goal succession » qu'on lui prête : non ouvert.",
+    "Le contenu des objections de Harry Cohen (1970), d'Alvin Gouldner (Patterns of Industrial Bureaucracy, 1954) et de Peter Blau (The Dynamics of Bureaucracy, 1955) : leurs noms circulent dans la série française (Dedieu 2019, Eggrickx & Mazars-Chapelon 2012), et Eggrickx résume le point de départ de Gouldner (règles générales et impersonnelles, ajustement au minimum acceptable), mais aucun de ces trois ouvrages n'a été ouvert. Ce que chacun reproche en propre à Merton n'est pas documenté ici.",
+    "Ce que Crozier écrit de Merton dans Le Phénomène bureaucratique (1963) : le livre n'a pas été ouvert. Tout ce qui figure ci-dessus sur la position française vient de reprises secondaires (Bernoux 2001, Ricard 2022) et vaut comme réception de la réception.",
+    "Le terme employé par Henri Mendras dans Éléments de théorie et de méthode sociologique (Plon, 1953 ; éd. augmentée 1965) pour rendre « displacement of goals », et le titre exact qu'y porte le chapitre : traduction non ouverte. Le canal de transmission français reste à vérifier — il pourrait passer par Mendras autant que par March & Simon.",
+    "La phrase souvent prêtée à Charles Perrow (Complex Organizations: A Critical Essay), selon laquelle les péchés imputés à la bureaucratie n'en sont pas ou résultent d'une bureaucratisation insuffisante : repérée uniquement dans des sources de niveau D/E, ouvrage non ouvert, page non vérifiée. Elle serait la contre-critique la plus directe de la lecture « la bureaucratie est inefficace » et mérite d'être établie avant validation.",
+    "Le contenu du chapitre IV de Saint-Martin (2013), seule synthèse francophone de référence sur Merton : Cairn n'en délivre que la notice.",
+    "L'ampleur réelle de l'écart de vulgarisation. Je l'ai détecté sur des pages pédagogiques francophones et un polycopié de cours (niveau D/E, non enregistrés), qui présentent le déplacement des buts comme une inefficacité de la bureaucratie ou un oubli de mission. Un décompte sérieux de la lecture dominante supposerait l'analyse d'intention de citation, indisponible pendant cette enquête.",
+    "Les écarts de rédaction entre la version de 1940 (Social Forces) et les reprises de 1949/1957 dans Social Theory and Social Structure : hors de mon périmètre et non vérifiés. La réception cite indifféremment les trois millésimes ; savoir si le texte a changé revient au lecteur primaire."
+  ],
+
+  "provenance_fragment": {
+    "agent": "corpus-reception-analyst",
+    "at": "2026-08-16",
+    "action": "Enquête de réception sur le déplacement des buts (Merton, 1940) : attribution, interprétation savante, discussion, couche francophone. Aucune modification du bloc du lecteur primaire.",
+    "bases_interrogees": [
+      "Crossref via MCP documentary (search_literature, verify_reference) — fonctionnel",
+      "HAL via MCP documentary (search_francophone) — fonctionnel mais bruyant : la recherche par ET sur les métadonnées ne rend rien d'utile sur « déplacement des buts »",
+      "HAL plein texte via api.archives-ouvertes.fr, champ text_fulltext — c'est ce qui a débloqué la couche francophone (14 documents pour « déplacement des buts » ET Merton)",
+      "OpenAlex — 429 sur toutes les requêtes",
+      "Semantic Scholar (get_citations, get_references) — erreur 400/429, aucune analyse de citation",
+      "scite — connecteur indisponible",
+      "Cairn, JSTOR, SAGE, Taylor & Francis, Wiley — accès fermés (403)",
+      "Persée — notices accessibles, plein texte et PDF fermés (403)"
+    ],
+    "sources_ouvertes_integralement": [
+      "R. K. Merton, « Bureaucratic Structure and Personality », Social Forces, 18(4), 1940, 560-568 — scan JSTOR du texte complet, consulté au seul titre de la question d'attribution",
+      "Erin Wais, « “Trained Incapacity”: Thorstein Veblen and Kenneth Burke », KB Journal, 2(1), 2005 — en ligne",
+      "S. van Thiel et F. L. Leeuw, « The Performance Paradox in the Public Sector », PPMR, 25(3), 2002 — PDF RePub, 15 p.",
+      "C. Dedieu, thèse, 2019 — PDF HAL, 625 p.",
+      "S. Angot, thèse, 2020 — PDF HAL, 595 p.",
+      "M. Hassani, thèse, 2007 — PDF HAL, 439 p.",
+      "A. Eggrickx et A. Mazars-Chapelon, RFG 223, 2012 — PDF HAL, 20 p.",
+      "J.-C. Thoenig, Sociologie du travail, 54(1), 2012 — PDF HAL, 15 p.",
+      "J. Ricard, RIDO, 2022 — PDF HAL, 19 p.",
+      "P. Bernoux et al., CERTU, 2001 — PDF HAL, 105 p."
+    ],
+    "sources_ouvertes_et_ecartees": [
+      "J. P. Olsen, « Maybe it is time to rediscover bureaucracy? », ARENA Working Paper 05/10, 2005 — PDF intégral lu (42 p.) : cite Merton (1937, 1938, 1952) mais ne mentionne ni le déplacement des buts ni le modèle des dysfonctions. Écarté : ne porte pas sur le concept.",
+      "Y. Pesqueux, « Les précurseurs et commentateurs de la réflexion sur l'organisation », polycopié doctoral, 2020 (HAL halshs-02519081) — PDF lu ; le « déplacement des buts » y figure comme item numéroté d'une liste sur la bureaucratie. Niveau D (cours) : sert à détecter la circulation pédagogique du terme, n'est pas enregistré comme source.",
+      "Pages pédagogiques francophones sur la théorie des organisations (niveau D/E) — servent à détecter la vulgarisation dominante, non enregistrées."
+    ]
+  }
+}

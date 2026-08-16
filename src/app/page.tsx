@@ -12,7 +12,7 @@ import { SCREEN_MOTION } from "@/components/motion/screen-motion";
 import { Button } from "@/components/ui/Button";
 import { ShareToAI } from "@/components/ui/ShareToAI";
 import { ConceptQuotation } from "@/components/concept/ConceptQuotation";
-import { ConceptSources } from "@/components/concept/ConceptSources";
+import { ConceptSourceList } from "@/components/concept/ConceptSources";
 
 const CONTENT = { concepts, authors, themes, caseStudies };
 
@@ -95,7 +95,20 @@ export default function TodayPage() {
        * niveau de maîtrise — a été retiré : c'était de l'information sur
        * l'application, pas sur ce qu'il y a à comprendre.
        */}
-      <div className="mx-auto flex min-h-svh max-w-md flex-col justify-center px-6 py-16">
+      {/*
+       * Une hauteur fixe, et non un minimum : la carte doit tenir dans l'écran, et si elle
+       * n'y tient pas c'est un défaut à corriger dans la fiche, pas un défilement à offrir.
+       * Les longueurs de l'accroche, du résumé et de la citation sont plafonnées par le
+       * validateur du corpus pour cette raison, sur des valeurs mesurées ici.
+       *
+       * On retranche la barre de navigation : `AppShell` réserve déjà sa hauteur en
+       * remplissage bas, si bien qu'un enfant en `100svh` produit exactement un écran de
+       * défilement — le seul que cette page ne doit jamais avoir.
+       */}
+      <div
+        className="mx-auto flex max-w-md flex-col justify-center px-6 py-6"
+        style={{ height: "calc(100svh - var(--nav-height) - env(safe-area-inset-bottom))" }}
+      >
         {concept && <ConceptCard concept={concept} onStart={start} />}
       </div>
     </Screen>
@@ -118,37 +131,63 @@ export default function TodayPage() {
 function ConceptCard({ concept, onStart }: { concept: Concept; onStart: () => void }) {
   const conceptAuthors = authors.filter((a) => concept.authors.includes(a.id));
   const conceptThemes = themes.filter((t) => concept.themes.includes(t.id));
+  const [showSources, setShowSources] = useState(false);
+  const sources = concept.sources ?? [];
 
   return (
-    <div className="stagger flex flex-col gap-8">
+    <div className="stagger flex flex-col gap-4">
+      {/*
+       * Un seul thème sur la carte. Deux titres passent à la ligne et coûtent seize
+       * pixels, pour une nuance de classement dont le lecteur n'a que faire ici : la
+       * fiche du concept porte le rattachement complet.
+       */}
       <p className="text-xs font-medium uppercase tracking-[0.12em] text-ink-faint">
-        {conceptThemes.map((t) => t.title).join(" · ")}
+        {concept.themeLabel ?? conceptThemes[0]?.title}
       </p>
 
-      <h1 className="font-serif-display text-[34px] font-semibold leading-[1.15] text-ink">
+      <h1 className="font-serif-display text-[30px] font-semibold leading-[1.15] text-ink">
         {concept.title}
       </h1>
 
       {concept.quotation && <ConceptQuotation quotation={concept.quotation} />}
 
-      <div>
-        <p className="text-[15px] text-ink-soft">
-          {conceptAuthors.map((a) => a.name).join(", ")}
-        </p>
-        {concept.attributionNote && (
-          <p className="mt-1 text-[13px] leading-relaxed text-ink-faint">
-            {concept.attributionNote}
-          </p>
-        )}
-      </div>
-
-      <p className="font-serif-display text-[20px] leading-snug text-ink">
-        {concept.hookQuestion}
+      {/*
+       * Le nom porté par la fiche l'emporte sur la table des auteurs : c'est ce qui
+       * permet d'afficher un auteur que le corpus a découvert et auquel l'application ne
+       * consacre pas de page.
+       */}
+      <p className="text-[15px] text-ink-soft">
+        {concept.authorLabel || conceptAuthors.map((a) => a.name).join(", ")}
       </p>
 
-      <p className="text-[18px] leading-relaxed text-ink-soft">{concept.shortExplanation}</p>
+      {/*
+       * Les sources prennent la place du résumé plutôt que de s'ajouter dessous : c'est ce
+       * qui garantit qu'ouvrir les sources ne fait jamais déborder l'écran. On consulte ou
+       * on lit, pas les deux à la fois — et le concept reste sous les yeux dans les deux cas.
+       */}
+      {showSources ? (
+        <div className="enter-rise">
+          <ConceptSourceList sources={sources} />
+        </div>
+      ) : (
+        <>
+          <p className="font-serif-display text-[19px] leading-snug text-ink">
+            {concept.hookQuestion}
+          </p>
+          <p className="text-[16px] leading-relaxed text-ink-soft">{concept.shortExplanation}</p>
+        </>
+      )}
 
-      {concept.sources && <ConceptSources sources={concept.sources} />}
+      {sources.length > 0 && (
+        <button
+          type="button"
+          onClick={() => setShowSources((value) => !value)}
+          aria-expanded={showSources}
+          className="press w-fit text-xs font-medium uppercase tracking-[0.12em] text-ink-faint hover:text-ink"
+        >
+          {showSources ? "Revenir au concept" : `Sources · ${sources.length}`}
+        </button>
+      )}
 
       <div className="flex items-center gap-2">
         <Button onClick={onStart}>Approfondir</Button>
