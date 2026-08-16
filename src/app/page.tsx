@@ -142,7 +142,7 @@ function ConceptCard({ concept, onStart }: { concept: Concept; onStart: () => vo
        * fiche du concept porte le rattachement complet.
        */}
       <p className="text-xs font-medium uppercase tracking-[0.12em] text-ink-faint">
-        {conceptThemes[0]?.title}
+        {concept.themeLabel ?? conceptThemes[0]?.title}
       </p>
 
       <h1 className="font-serif-display text-[30px] font-semibold leading-[1.15] text-ink">
@@ -151,8 +151,13 @@ function ConceptCard({ concept, onStart }: { concept: Concept; onStart: () => vo
 
       {concept.quotation && <ConceptQuotation quotation={concept.quotation} />}
 
+      {/*
+       * Le nom porté par la fiche l'emporte sur la table des auteurs : c'est ce qui
+       * permet d'afficher un auteur que le corpus a découvert et auquel l'application ne
+       * consacre pas de page.
+       */}
       <p className="text-[15px] text-ink-soft">
-        {conceptAuthors.map((a) => a.name).join(", ")}
+        {concept.authorLabel || conceptAuthors.map((a) => a.name).join(", ")}
       </p>
 
       {/*

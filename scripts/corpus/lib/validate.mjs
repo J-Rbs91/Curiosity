@@ -266,12 +266,25 @@ export function validateRecord(record, { dir, themeIds = new Set(), authorIds = 
     errors.push("COAUTHORED avec un seul auteur : auteur principal ≠ auteur unique");
   if (attribution.authorship !== "SOLE_AUTHOR" && !isFilled(attribution.associated_author))
     errors.push(`${attribution.authorship} sans associated_author`);
+  /*
+   * Le corpus découvre les auteurs ; l'application les reçoit. Un `app_author_id` inconnu
+   * de `src/content/authors.ts` n'est donc pas une faute : c'est un auteur que le champ
+   * a fait apparaître et auquel l'application ne consacre pas encore de page. Exiger
+   * l'inverse ferait de la table des auteurs le périmètre réel du corpus — huit noms —
+   * alors que le périmètre est la discipline.
+   *
+   * Le nom, lui, est obligatoire : c'est lui qui s'affiche sur la carte, sans dépendre
+   * d'aucune table.
+   */
+  for (const [i, author] of authors.entries())
+    if (!isFilled(author?.name)) errors.push(`attribution.authors[${i}].name manquant`);
   const appAuthorIds = authors.map((a) => a?.app_author_id).filter(isFilled);
   for (const id of appAuthorIds)
     if (authorIds.size > 0 && !authorIds.has(id))
-      errors.push(`attribution : app_author_id « ${id} » absent de src/content/authors.ts`);
-  if (record?.status === "VALIDATED" && appAuthorIds.length === 0)
-    errors.push("VALIDATED sans aucun auteur rattaché au noyau (app_author_id)");
+      push(
+        warnings,
+        `attribution : « ${id} » n'a pas encore de page dans src/content/authors.ts — la carte l'affichera par son nom`
+      );
 
   // --- preuve -------------------------------------------------------------
   const evidence = record?.evidence ?? {};
@@ -330,9 +343,17 @@ export function validateRecord(record, { dir, themeIds = new Set(), authorIds = 
   // leur justesse, elle, se contrôle dès qu'ils sont renseignés.
   const themes = asArray(graph.themes);
   if (themes.length === 0 && record?.status === "VALIDATED") errors.push("graph.themes vide");
+  // Même raison que pour les auteurs : un thème que le champ fait apparaître ne peut pas
+  // être refusé par la table des neuf thèmes écrite avant toute instruction. Il lui faut
+  // en revanche un libellé, faute de quoi la carte n'aurait rien à afficher.
   for (const t of themes)
-    if (themeIds.size > 0 && !themeIds.has(t))
-      errors.push(`graph.themes : « ${t} » absent de src/content/themes.ts`);
+    if (themeIds.size > 0 && !themeIds.has(t)) {
+      if (!isFilled(graph.theme_labels?.[t]))
+        errors.push(
+          `graph.themes : « ${t} » est inconnu de l'application et n'a pas de libellé dans graph.theme_labels`
+        );
+      else push(warnings, `graph.themes : « ${t} » est un thème nouveau, affiché par son libellé`);
+    }
   const hasDifficulty = graph.difficulty !== undefined && graph.difficulty !== null;
   if (hasDifficulty || record?.status === "VALIDATED")
     if (!Number.isInteger(graph.difficulty) || graph.difficulty < 1 || graph.difficulty > 5)

@@ -171,10 +171,20 @@ describe("validateRecord — attribution", () => {
     expect(errorsOf(r).join(" ")).toContain("associated_author");
   });
 
-  it("refuse un auteur inconnu de l'application", () => {
+  it("accepte un auteur que l'application ne connaît pas encore", () => {
+    // Le corpus découvre les auteurs, l'application les reçoit. Exiger l'inverse ferait
+    // de la table des auteurs le périmètre réel — huit noms — au lieu de la discipline.
     const r = record();
-    r.attribution.authors[0].app_author_id = "durkheim";
-    expect(errorsOf(r).join(" ")).toContain("absent de src/content/authors.ts");
+    r.attribution.authors[0].app_author_id = "gouldner";
+    const { errors, warnings } = validateRecord(r, context);
+    expect(errors).toEqual([]);
+    expect(warnings.join(" ")).toContain("pas encore de page");
+  });
+
+  it("exige tout de même le nom de chaque auteur", () => {
+    const r = record();
+    r.attribution.authors[0].name = "";
+    expect(errorsOf(r).join(" ")).toContain("name manquant");
   });
 });
 
@@ -369,10 +379,19 @@ describe("validateRecord — graphe", () => {
     expect(errorsOf(r, { ...context, dir: "candidates" }).join(" ")).toContain("hors de 1..5");
   });
 
-  it("refuse un thème inconnu de l'application", () => {
+  it("accepte un thème nouveau dès lors qu'il porte un libellé", () => {
     const r = record();
-    r.graph.themes = ["sociologie-generale"];
-    expect(errorsOf(r).join(" ")).toContain("absent de src/content/themes.ts");
+    r.graph.themes = ["ecologie-des-populations"];
+    r.graph.theme_labels = { "ecologie-des-populations": "Écologie des populations" };
+    const { errors, warnings } = validateRecord(r, context);
+    expect(errors).toEqual([]);
+    expect(warnings.join(" ")).toContain("thème nouveau");
+  });
+
+  it("refuse un thème nouveau sans libellé : la carte n'aurait rien à afficher", () => {
+    const r = record();
+    r.graph.themes = ["ecologie-des-populations"];
+    expect(errorsOf(r).join(" ")).toContain("theme_labels");
   });
 
   it("refuse un concept qui se référence lui-même", () => {

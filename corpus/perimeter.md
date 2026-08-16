@@ -1,47 +1,47 @@
 # Périmètre du corpus
 
-Écrit une fois, appliqué sans négociation fiche par fiche. Un agent qui hésite relit ce
-fichier ; il ne demande pas d'exception.
+## Le périmètre est la discipline
 
-## Domaine autorisé
+> **Sociologie et théorie des organisations** — l'ensemble des travaux permettant de
+> comprendre le fonctionnement des organisations : comportements organisationnels,
+> décision, règles, pouvoir, apprentissage, coopération, dysfonctionnements, action
+> collective.
 
-> Sociologie et théorie des organisations, limitées aux concepts permettant de comprendre
-> le fonctionnement des organisations : comportements organisationnels, décision, règles,
-> pouvoir, apprentissage, coopération, dysfonctionnements, action collective.
+Ce n'est pas une liste d'auteurs, et cela ne doit jamais le devenir. Un corpus construit à
+partir d'une liste reproduit la connaissance de celui qui l'a écrite, et laisse dans
+l'ombre ce qu'il ignore — sans que rien ne le signale jamais.
 
-## Noyau d'auteurs
+## Les huit auteurs sont des points d'entrée
 
-| Auteur | `app_author_id` | Ancrage |
-|---|---|---|
-| Max Weber | `weber` | Bureaucratie, domination légitime, rationalisation |
-| Robert K. Merton | `merton` | Fonctions latentes, dysfonctions bureaucratiques |
-| Herbert A. Simon | `simon` | Rationalité limitée, décision |
-| James G. March | `march` | Ambiguïté, exploration/exploitation, décision |
-| Michel Crozier | `crozier` | Pouvoir, zones d'incertitude, phénomène bureaucratique |
-| Erhard Friedberg | `friedberg` | Système d'action concret, régulation |
-| Albert O. Hirschman | `hirschman` | Exit / Voice / Loyalty |
-| Chris Argyris | `argyris` | Apprentissage organisationnel, routines défensives |
+**Max Weber · Robert K. Merton · Herbert A. Simon · James G. March · Michel Crozier ·
+Erhard Friedberg · Albert O. Hirschman · Chris Argyris**
 
-Un auteur hors noyau peut apparaître comme **coauteur** (Cohen, Olsen, Schön, Simon dans
-*Organizations*…) sans entrer dans la table des auteurs de l'application : il est nommé
-dans `attribution.authors` et remonte à l'écran via `attributionNote`.
+Ce sont des **seeds** : des portes d'entrée sûres dans le champ, pas ses frontières. Ils
+ont été choisis parce qu'ils sont incontournables, pas parce qu'ils sont exhaustifs.
 
-Ajouter un auteur au noyau est une décision de produit, pas une décision d'agent : cela
-demande une entrée dans `src/content/authors.ts` et une mise à jour de ce fichier.
+C'est `corpus-cartographer` qui établit ce que le champ contient réellement — courants,
+auteurs, concepts structurants, filiations — à partir des manuels, handbooks, entrées
+d'encyclopédie et revues de référence. Sa carte, dans `corpus/map/`, est ce qui alimente la
+file d'instruction. Les huit ci-dessus y figurent parmi d'autres.
+
+**Rien dans le code ne restreint le corpus à ces huit noms.** Le validateur accepte un
+auteur que l'application ne connaît pas encore : il l'affiche par son nom et signale
+simplement qu'aucune page ne lui est consacrée. Le corpus découvre les auteurs,
+l'application les reçoit — jamais l'inverse.
 
 ## Le test d'entrée
 
 La question posée n'est jamais « est-ce de la sociologie ? ». Hirschman est économiste,
-Simon est un théoricien de la décision, Argyris vient de la psychologie. La question est :
+Simon théoricien de la décision, Argyris vient de la psychologie, Williamson de l'économie
+institutionnelle. La question est :
 
-> **Ce concept appartient-il au périmètre intellectuel nécessaire pour comprendre les
-> organisations ?**
+> **Ce travail éclaire-t-il le fonctionnement des organisations ?**
 
 Trois conditions cumulatives :
 
-1. il éclaire le fonctionnement, la décision, le pouvoir, l'apprentissage, la coopération
+1. il porte sur le fonctionnement, la décision, le pouvoir, l'apprentissage, la coopération
    ou les dysfonctionnements d'une **organisation** ;
-2. il est **rattachable à un auteur identifié** du champ (noyau ou coauteur documenté) ;
+2. il est **rattachable à un auteur identifié**, et cette attribution est documentable ;
 3. il est **enseignable** : un lecteur non spécialiste doit pouvoir en reconnaître le
    mécanisme dans une organisation réelle.
 
@@ -49,26 +49,30 @@ Trois conditions cumulatives :
 
 - Management prescriptif, conseil, outillage RH, « bonnes pratiques » d'entreprise.
 - Psychologie individuelle sans articulation organisationnelle.
-- Sociologie générale sans objet organisationnel (stratification, famille, déviance hors
-  organisation, etc.).
-- Économie des organisations formalisée sans mécanisme social observable.
+- Sociologie générale sans objet organisationnel.
 - Actualité, littérature grise d'entreprise, contenus de formation professionnelle.
-- Théories organisationnelles postérieures sans rattachement au noyau, tant que le noyau
-  n'est pas couvert.
 
 Un concept hors périmètre part en `corpus/rejected/` avec
 `rejection_reason: "OUT_OF_SCOPE"`. On ne le laisse pas en attente : un candidat gris non
 tranché revient toujours par une autre porte.
 
-## Thèmes de l'application
+## Thèmes
 
-Un concept validé doit se rattacher à au moins un thème existant
-(`src/content/themes.ts`) :
+Les neuf thèmes de `src/content/themes.ts` ont été écrits **avant** toute instruction
+documentaire. Ils ne sont donc pas une carte du champ, mais un premier découpage, et le
+corpus peut en faire apparaître d'autres — écologie des populations, néo-institutionnalisme,
+dépendance aux ressources, sensemaking…
 
-`bureaucratie-regles` · `autorite-domination` · `pouvoir` · `decision` ·
-`comportements-organisationnels` · `reaction-insatisfaction` ·
-`apprentissage-organisationnel` · `organisation-formelle-reelle` ·
-`changement-organisationnel`
+Un thème nouveau entre par `graph.themes` accompagné de son libellé dans
+`graph.theme_labels`. Le validateur l'accepte et le signale ; la carte l'affiche par son
+libellé. Le seul refus est le thème sans libellé : la carte n'aurait alors rien à écrire.
 
-Un concept qui n'entre dans aucun de ces thèmes est soit hors périmètre, soit le signal
-qu'un thème manque — décision de produit, jamais décision d'agent.
+## Ce qu'on surveille
+
+- **Combien d'auteurs du corpus étaient dans la liste initiale ?** Si c'est la majorité
+  après plusieurs lots, la cartographie n'a pas fait son travail.
+- **Quels courants ne sont représentés par aucune fiche ?** `corpus/map/cartography.json`
+  tient la liste des angles morts, et elle doit se vider avec le temps.
+- **Quelle part de la littérature francophone et des autrices du champ ?** Les bases
+  bibliométriques les sous-représentent structurellement ; ne pas corriger revient à
+  hériter de leur biais.

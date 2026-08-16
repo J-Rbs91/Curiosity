@@ -138,10 +138,24 @@ export function projectConcept(record) {
   const graph = record?.graph ?? {};
   const ids = (list) => asArray(list).map((r) => r?.id).filter(isFilled);
 
+  /*
+   * Les libellés d'affichage sont portés par la fiche, pas cherchés dans les tables de
+   * l'application. C'est ce qui permet au corpus d'introduire un auteur ou un thème que
+   * l'application ne connaît pas encore : la carte l'affiche par son nom, et une page
+   * dédiée pourra lui être consacrée plus tard, ou jamais.
+   */
+  const authorLabel = asArray(record?.attribution?.authors)
+    .map((a) => a?.name)
+    .filter(isFilled)
+    .join(", ");
+  const firstTheme = asArray(graph.themes)[0];
+  const themeLabel = graph.theme_labels?.[firstTheme] ?? null;
+
   const concept = {
     id: record.id,
     slug: record.slug,
     title: record.canonical_name_fr,
+    authorLabel,
     hookQuestion: pedagogy.hook_question,
     shortExplanation: pedagogy.short_explanation,
     detailedExplanation: pedagogy.detailed_explanation,
@@ -166,6 +180,8 @@ export function projectConcept(record) {
     }),
     difficulty: graph.difficulty,
   };
+
+  if (isFilled(themeLabel)) concept.themeLabel = themeLabel;
 
   const opposites = ids(graph.opposites);
   if (opposites.length > 0) concept.oppositeConcepts = opposites;

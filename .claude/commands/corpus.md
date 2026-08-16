@@ -36,6 +36,13 @@ Le corpus n'est pas le livrable : **les cartes le sont.** Le travail documentair
 que pour qu'elles soient justes, et un dossier de preuve qui ne devient pas une carte n'a
 servi à rien. Le protocole est donc organisé pour aboutir, pas pour archiver.
 
+**Cartographier — une fois, puis à rafraîchir :**
+
+0. `corpus-cartographer` — si `corpus/map/cartography.json` est absent ou périmé. Il part
+   de la **discipline**, jamais d'une liste de noms : manuels, handbooks, encyclopédies,
+   revues de référence. Sa carte alimente la file, et son bloc `angles_morts` dit ce que
+   la liste de départ ne couvre pas. Sans lui, on n'instruit que ce qu'on connaissait déjà.
+
 **Instruire — un agent par concept, tous les concepts en parallèle :**
 
 1. `corpus-scout` — périmètre et sources atteignables. `search_literature` et
@@ -70,9 +77,10 @@ disponibles pour reprendre une carte en particulier, mais le lot passe par
 
 Pas de quota, pas d'équilibrage entre auteurs, pas d'objectif de volume. **Pas de preuve
 documentaire suffisante, pas de fiche** — un lot qui ne rend rien est un résultat
-documenté, pas un échec. Sans argument après `/corpus`, prends les pistes de
-`npm run corpus:audit` en commençant par ce qui exerce le plus la méthode : un concept
-coécrit, un concept fortement vulgarisé, un ouvrage français.
+documenté, pas un échec. Sans argument après `/corpus`, prends les concepts en tête de
+`corpus/map/queue.json`. Si la carte n'existe pas encore, commence par le cartographe :
+instruire les concepts d'une liste d'auteurs fournie, c'est reproduire la connaissance de
+celui qui l'a écrite.
 
 ## Rends compte ainsi
 

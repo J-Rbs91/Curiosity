@@ -97,6 +97,16 @@ export interface Concept {
   /** Le texte de l'auteur lui-même, quand un passage citable a pu être établi. */
   quotation?: Quotation;
 
+  /**
+   * Les auteurs tels qu'ils s'affichent, portés par la fiche et non cherchés dans
+   * `authors.ts`. C'est ce qui permet au corpus d'introduire un auteur auquel
+   * l'application ne consacre pas encore de page : le périmètre est la discipline, pas
+   * la table des auteurs. Absent sur les fiches d'échafaudage, qui n'ont que des
+   * identifiants — l'affichage retombe alors sur `authors.ts`.
+   */
+  authorLabel?: string;
+  /** Idem pour le thème principal, quand il n'existe pas encore dans `themes.ts`. */
+  themeLabel?: string;
   authors: AuthorId[];
   /**
    * Rétablit l'attribution réelle quand elle ne se réduit pas aux auteurs listés
