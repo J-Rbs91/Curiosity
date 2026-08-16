@@ -29,12 +29,47 @@ const KIND_ORDER: SourceKind[] = [
   "cross-author-comparison",
 ];
 
-export function ConceptSources({ sources }: { sources: Source[] }) {
+interface ConceptSourcesProps {
+  sources: Source[];
+  /**
+   * Sur la carte du jour, seules les sources primaires sont montrées, et le reste est
+   * compté. Une fiche bien instruite en porte facilement vingt : les afficher toutes
+   * transforme la carte en bibliographie, où le texte de l'auteur se perd au milieu des
+   * commentateurs. La liste entière reste sur la fiche du concept, à un geste de là.
+   */
+  compact?: boolean;
+}
+
+export function ConceptSources({ sources, compact = false }: ConceptSourcesProps) {
   if (sources.length === 0) return null;
 
   const ordered = [...sources].sort(
     (a, b) => KIND_ORDER.indexOf(a.kind) - KIND_ORDER.indexOf(b.kind)
   );
+
+  if (compact) {
+    const primary = ordered.filter((s) => s.kind === "primary");
+    const shown = primary.length > 0 ? primary : ordered.slice(0, 1);
+    const rest = sources.length - shown.length;
+    return (
+      <div>
+        <h2 className="text-xs font-medium uppercase tracking-[0.12em] text-ink-faint">Sources</h2>
+        <ul className="mt-3 space-y-2">
+          {shown.map((source, index) => (
+            <li key={`${source.label}-${index}`} className="text-[13px] leading-relaxed text-ink-faint">
+              <span className="text-ink-soft">{KIND_LABEL[source.kind]}</span> · {source.label}
+            </li>
+          ))}
+        </ul>
+        {rest > 0 && (
+          <p className="mt-2 text-[13px] text-ink-faint">
+            et {rest} autre{rest > 1 ? "s" : ""} source{rest > 1 ? "s" : ""} — littérature
+            académique et réception, sur la fiche du concept.
+          </p>
+        )}
+      </div>
+    );
+  }
 
   return (
     <div>

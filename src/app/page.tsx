@@ -148,7 +148,7 @@ function ConceptCard({ concept, onStart }: { concept: Concept; onStart: () => vo
 
       <p className="text-[18px] leading-relaxed text-ink-soft">{concept.shortExplanation}</p>
 
-      {concept.sources && <ConceptSources sources={concept.sources} />}
+      {concept.sources && <ConceptSources sources={concept.sources} compact />}
 
       <div className="flex items-center gap-2">
         <Button onClick={onStart}>Approfondir</Button>

@@ -42,3 +42,6 @@ next-env.d.ts
 
 # corpus : dossiers remis au contrôleur aveugle, régénérables (npm run corpus:brief)
 corpus/review/*.brief.json
+
+# corpus : aperçus non contrôlés, régénérables (npm run corpus:preview)
+src/content/generated/concepts.preview.ts
