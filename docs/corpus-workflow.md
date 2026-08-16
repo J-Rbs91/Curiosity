@@ -570,6 +570,33 @@ Quand un sujet d'échafaudage est instruit, on reprend **le même identifiant** 
 d'échafaudage cesse d'être servie, et son entrée peut être supprimée du fichier —
 `corpus:build` les liste. Ce fichier est destiné à disparaître, non à être maintenu.
 
+### La carte, et ce qui la garantit
+
+L'écran du jour restitue sept éléments, tous issus du **même enregistrement validé**.
+C'est ce qui en fait une restitution du corpus et non une composition d'écran :
+
+| Carte | Champ de la fiche | Garanti par |
+|---|---|---|
+| THÈME | `graph.themes` | validateur : au moins un thème existant |
+| CONCEPT | `canonical_name_fr` | validateur |
+| CITATION | `evidence.key_quotation` | **facultatif** (§5 bis) |
+| AUTEUR | `attribution` → `attributionNote` | validateur : `app_author_id`, cohérence de `authorship` |
+| ACCROCHE | `pedagogy.hook_question` | validateur, sur les fiches validées |
+| RÉSUMÉ | `pedagogy.short_explanation` | validateur, sur les fiches validées |
+| SOURCES | `primary_sources` + `secondary_sources` | validateur : une primaire et une secondaire au minimum |
+
+Aucun de ces champs ne peut manquer sur une fiche validée : une fiche dont la carte serait
+trouée n'atteint pas `corpus/validated/`. Un test le vérifie de bout en bout, du record
+projeté aux sept éléments (`scripts/corpus/lib/pipeline.test.mjs`).
+
+Les sources sont affichées, sur la carte comme sur la fiche, chaque niveau étant nommé —
+texte de l'auteur, littérature académique, réception francophone. Elles ne l'étaient pas
+avant ce dispositif : le champ existait sans être rendu nulle part, ce qui revenait à
+demander au lecteur de nous croire sur parole.
+
+**Lancer le travail :** `/corpus <auteur, thème ou concept>` déclenche l'orchestrateur et
+le protocole complet ; `/corpus-publish` valide et projette.
+
 ### Ce que l'application affiche de plus
 
 Trois ajouts au type `Concept`, et rien d'autre :

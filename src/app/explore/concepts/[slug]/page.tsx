@@ -9,6 +9,7 @@ import { indexConcepts, getRelatedConcepts, getPrerequisiteConcepts } from "@/do
 import { getProgressService } from "@/services/progress";
 import { ConceptMetaTags } from "@/components/concept/ConceptMetaTags";
 import { ConceptQuotation } from "@/components/concept/ConceptQuotation";
+import { ConceptSources } from "@/components/concept/ConceptSources";
 import { Screen } from "@/components/motion/Screen";
 import { SCREEN_MOTION } from "@/components/motion/screen-motion";
 import { Button } from "@/components/ui/Button";
@@ -120,6 +121,12 @@ export default function ConceptDetailPage() {
           <ConceptLinkList label="Prérequis" concepts={prerequisites} />
         )}
         {related.length > 0 && <ConceptLinkList label="Concepts reliés" concepts={related} />}
+
+        {concept.sources && (
+          <div className="mt-8">
+            <ConceptSources sources={concept.sources} />
+          </div>
+        )}
 
         <div className="mt-12 flex items-center gap-2">
           <Button onClick={studyNow}>{alreadyKnown ? "Revoir" : "Approfondir"}</Button>

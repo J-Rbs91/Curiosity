@@ -307,12 +307,27 @@ describe("buildQuotation", () => {
     const q = buildQuotation(
       quoted({ translation: { kind: "published", translator: "J. Freund", edition: "Plon, 1971" } })
     );
-    expect(q.translationNote).toBe("Traduit de allemand par J. Freund (Plon, 1971)");
+    expect(q.translationNote).toBe("Traduit de l'allemand par J. Freund (Plon, 1971)");
   });
 
   it("avoue une traduction non publiée plutôt que de la faire passer pour l'auteur", () => {
     const q = buildQuotation(quoted({ translation: { kind: "in-house" } }));
     expect(q.translationNote).toContain("non publiée");
+  });
+
+  it("élide correctement la langue d'origine", () => {
+    const allemand = buildQuotation(quoted({ translation: { kind: "in-house" } }));
+    expect(allemand.translationNote).toContain("de l'allemand");
+
+    const russe = buildQuotation(
+      quoted({ original_language: "russe", translation: { kind: "in-house" } })
+    );
+    expect(russe.translationNote).toContain("du russe");
+  });
+
+  it("omet la langue plutôt que d'accorder un code ISO", () => {
+    const q = buildQuotation(quoted({ original_language: "de", translation: { kind: "in-house" } }));
+    expect(q.translationNote).toBe("Traduit pour cette fiche — traduction non publiée");
   });
 
   it("ne stocke pas les guillemets : le texte reste comparable à l'édition", () => {
@@ -376,6 +391,51 @@ describe("validateCorpus", () => {
   it("détecte un identifiant en double", () => {
     const { errors } = validateCorpus([wrap(record()), wrap(record())]);
     expect(errors.join(" ")).toContain("deux fois");
+  });
+});
+
+describe("la carte de l'application", () => {
+  /**
+   * Contrat entre le corpus et l'écran : thème, concept, citation, auteur, accroche,
+   * résumé, sources. Si l'un de ces éléments cessait d'être garanti par la validation,
+   * la carte se composerait avec un trou — et c'est le genre de régression qui ne se voit
+   * qu'en production.
+   */
+  it("est entièrement composable depuis une fiche validée", () => {
+    const r = record();
+    r.evidence.primary_sources[0].language = "fr";
+    r.evidence.key_quotation = {
+      text: "Le passage.",
+      language: "fr",
+      primary_source_index: 0,
+      locator: "p. 195",
+      translation: { kind: "none" },
+    };
+    const concept = projectConcept(r);
+
+    expect(concept.themes.length).toBeGreaterThan(0); // THÈME
+    expect(concept.title).toBeTruthy(); // CONCEPT
+    expect(concept.quotation.text).toBe("Le passage."); // CITATION
+    expect(concept.authors.length).toBeGreaterThan(0); // AUTEUR
+    expect(concept.hookQuestion).toBeTruthy(); // ACCROCHE
+    expect(concept.shortExplanation).toBeTruthy(); // RÉSUMÉ
+    expect(concept.sources.length).toBeGreaterThan(0); // SOURCES
+  });
+
+  it("reste composable sans citation — le seul élément facultatif", () => {
+    const concept = projectConcept(record());
+    expect(concept.quotation).toBeUndefined();
+    for (const field of ["themes", "title", "authors", "hookQuestion", "shortExplanation", "sources"])
+      expect(concept[field]).toBeTruthy();
+  });
+
+  it("refuse de valider une fiche dont la carte serait trouée", () => {
+    const r = record();
+    r.pedagogy.hook_question = "";
+    r.graph.themes = [];
+    const errors = errorsOf(r).join(" ");
+    expect(errors).toContain("hook_question");
+    expect(errors).toContain("themes");
   });
 });
 

@@ -11,6 +11,8 @@ import { Screen } from "@/components/motion/Screen";
 import { SCREEN_MOTION } from "@/components/motion/screen-motion";
 import { Button } from "@/components/ui/Button";
 import { ShareToAI } from "@/components/ui/ShareToAI";
+import { ConceptQuotation } from "@/components/concept/ConceptQuotation";
+import { ConceptSources } from "@/components/concept/ConceptSources";
 
 const CONTENT = { concepts, authors, themes, caseStudies };
 
@@ -100,6 +102,19 @@ export default function TodayPage() {
   );
 }
 
+/**
+ * La carte du jour : thème, concept, citation, auteur, accroche, résumé, sources.
+ *
+ * L'ordre est celui de la lecture voulue — on entre par le texte de l'auteur, on apprend
+ * de qui il est, la question fait sentir le problème, le résumé le nomme, les sources
+ * permettent d'aller vérifier. Les sept éléments viennent tous du même enregistrement
+ * validé : c'est ce qui fait de cette carte une restitution du corpus et non une
+ * composition d'écran.
+ *
+ * Un seul est facultatif, la citation. Beaucoup de concepts n'ont pas de passage court et
+ * autonome qui les énonce, et en exiger un partout ferait fabriquer la belle phrase que
+ * tout le dispositif existe pour empêcher. La carte se lit très bien sans.
+ */
 function ConceptCard({ concept, onStart }: { concept: Concept; onStart: () => void }) {
   const conceptAuthors = authors.filter((a) => concept.authors.includes(a.id));
   const conceptThemes = themes.filter((t) => concept.themes.includes(t.id));
@@ -114,11 +129,26 @@ function ConceptCard({ concept, onStart }: { concept: Concept; onStart: () => vo
         {concept.title}
       </h1>
 
+      {concept.quotation && <ConceptQuotation quotation={concept.quotation} />}
+
+      <div>
+        <p className="text-[15px] text-ink-soft">
+          {conceptAuthors.map((a) => a.name).join(", ")}
+        </p>
+        {concept.attributionNote && (
+          <p className="mt-1 text-[13px] leading-relaxed text-ink-faint">
+            {concept.attributionNote}
+          </p>
+        )}
+      </div>
+
+      <p className="font-serif-display text-[20px] leading-snug text-ink">
+        {concept.hookQuestion}
+      </p>
+
       <p className="text-[18px] leading-relaxed text-ink-soft">{concept.shortExplanation}</p>
 
-      <p className="text-[15px] text-ink-faint">
-        {conceptAuthors.map((a) => a.name).join(", ")}
-      </p>
+      {concept.sources && <ConceptSources sources={concept.sources} />}
 
       <div className="flex items-center gap-2">
         <Button onClick={onStart}>Approfondir</Button>
