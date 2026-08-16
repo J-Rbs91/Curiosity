@@ -1,0 +1,312 @@
+import { describe, expect, it } from "vitest";
+
+import { validateCorpus, validateRecord } from "./validate.mjs";
+import { buildAttributionNote, projectConcept } from "./project.mjs";
+
+/**
+ * Fiche minimale mais complète, servant de base aux cas de test. Les sources sont
+ * fictives et n'ont pas vocation à documenter un vrai concept : ce qui est testé ici
+ * est le garde-fou, pas le contenu.
+ */
+function record(overrides = {}) {
+  const base = {
+    id: "concept-test",
+    slug: "concept-test",
+    status: "VALIDATED",
+    canonical_name_fr: "Concept de test",
+    scope: { in_scope: true, rationale: "Sert les tests du pipeline." },
+    attribution: {
+      authors: [{ name: "Auteur Un", app_author_id: "merton" }],
+      authorship: "SOLE_AUTHOR",
+      associated_author: null,
+      term_origin: { coined_by: null, coined_in: null, note: null },
+    },
+    evidence: {
+      concept_definition: "Définition dans les termes de l'auteur.",
+      mechanism: ["une règle est posée", "la conformité devient le critère"],
+      primary_sources: [
+        {
+          citation: "Auteur Un, Ouvrage, 1949",
+          year: 1949,
+          doi_isbn: "978-0-00-000000-0",
+          locator: "chap. 6, p. 195",
+          evidence: "Passage établissant le point.",
+          consulted: "excerpt",
+        },
+      ],
+      secondary_sources: [
+        {
+          citation: "Autre Auteur, Article, 1994",
+          doi_isbn: "10.1000/xyz123",
+          role: "attribution",
+          level: "B",
+          establishes: "Rattache le concept à son auteur.",
+        },
+      ],
+      francophone_sources: [],
+      known_ambiguities: ["Le terme circule dans un sens plus large."],
+      limitations: [],
+    },
+    pedagogy: {
+      hook_question: "Et si la règle devenait plus importante que son objectif ?",
+      short_explanation: "Résumé bref.",
+      detailed_explanation: "Le mécanisme mis en phrases.",
+      concrete_example: "Une situation où le mécanisme est visible.",
+      example_setting: "administration",
+      analysis_questions: ["Quel mécanisme est à l'œuvre ici ?"],
+      quiz: [
+        {
+          id: "concept-test-q1",
+          type: "mcq",
+          prompt: "Question ?",
+          choices: ["Faux", "Vrai"],
+          correctAnswer: "1",
+          explanation: "Parce que le mécanisme.",
+        },
+      ],
+      traceability: [{ claim: "Résumé bref.", evidence_ref: "mechanism[0]" }],
+    },
+    graph: {
+      themes: ["bureaucratie-regles"],
+      difficulty: 2,
+      related: [
+        {
+          id: "bureaucratie",
+          relation_kind: "thematic_proximity",
+          justification: "Même objet.",
+          source: null,
+        },
+      ],
+      prerequisites: [],
+    },
+    validation: {
+      primary_source_confirmed: true,
+      secondary_confirmation: true,
+      francophone_layer_searched: true,
+      evidence_review: { verdict: "PASS", rounds: 1, notes: [] },
+      pedagogy_review: { verdict: "PASS", no_new_claims: true, rounds: 1, notes: [] },
+      confidence_flags: [],
+    },
+    rejection_reason: null,
+    provenance: { created_at: "2026-01-01", updated_at: "2026-01-01", pipeline_version: "1" },
+  };
+  return structuredClone({ ...base, ...overrides });
+}
+
+const context = {
+  dir: "validated",
+  themeIds: new Set(["bureaucratie-regles"]),
+  authorIds: new Set(["merton", "march"]),
+};
+
+const errorsOf = (r, ctx = context) => validateRecord(r, ctx).errors;
+
+describe("validateRecord — fiche conforme", () => {
+  it("ne relève aucune erreur", () => {
+    expect(errorsOf(record())).toEqual([]);
+  });
+});
+
+describe("validateRecord — le contrôle ne peut pas être sauté", () => {
+  it("refuse une fiche validée dont le contrôleur aveugle n'a pas conclu", () => {
+    const r = record();
+    r.validation.evidence_review.verdict = "REWORK";
+    expect(errorsOf(r).join(" ")).toContain("passe A");
+  });
+
+  it("refuse une fiche validée dont la prose n'a pas été confrontée à la preuve", () => {
+    const r = record();
+    r.validation.pedagogy_review.no_new_claims = false;
+    expect(errorsOf(r).join(" ")).toContain("n'ajoute aucune affirmation");
+  });
+
+  it("refuse une fiche validée sans couche francophone cherchée", () => {
+    const r = record();
+    r.validation.francophone_layer_searched = false;
+    expect(errorsOf(r).join(" ")).toContain("couche francophone");
+  });
+
+  it("refuse un statut incohérent avec le répertoire", () => {
+    expect(errorsOf(record({ status: "CANDIDATE" })).join(" ")).toContain("incohérent avec le répertoire");
+  });
+});
+
+describe("validateRecord — hiérarchie des sources", () => {
+  it("refuse une source primaire non atteignable", () => {
+    const r = record();
+    r.evidence.primary_sources[0].doi_isbn = null;
+    expect(errorsOf(r).join(" ")).toContain("introuvable");
+  });
+
+  it("refuse une source primaire non localisée", () => {
+    const r = record();
+    r.evidence.primary_sources[0].locator = "";
+    expect(errorsOf(r).join(" ")).toContain("locator");
+  });
+
+  it("refuse une validation appuyée sur des métadonnées seules", () => {
+    const r = record();
+    r.evidence.primary_sources[0].consulted = "metadata-only";
+    expect(errorsOf(r).join(" ")).toContain("métadonnées seules");
+  });
+
+  it("refuse une fiche validée sans source secondaire académique", () => {
+    const r = record();
+    r.evidence.secondary_sources = [];
+    expect(errorsOf(r).join(" ")).toContain("sans source secondaire");
+  });
+});
+
+describe("validateRecord — attribution", () => {
+  it("refuse un concept coécrit déclaré avec un seul auteur", () => {
+    const r = record();
+    r.attribution.authorship = "COAUTHORED";
+    r.attribution.associated_author = "Auteur Un";
+    expect(errorsOf(r).join(" ")).toContain("auteur principal ≠ auteur unique");
+  });
+
+  it("exige un auteur de rattachement quand la paternité n'est pas exclusive", () => {
+    const r = record();
+    r.attribution.authorship = "ASSOCIATED_WITH";
+    expect(errorsOf(r).join(" ")).toContain("associated_author");
+  });
+
+  it("refuse un auteur inconnu de l'application", () => {
+    const r = record();
+    r.attribution.authors[0].app_author_id = "durkheim";
+    expect(errorsOf(r).join(" ")).toContain("absent de src/content/authors.ts");
+  });
+});
+
+describe("validateRecord — mécanisme et pédagogie", () => {
+  it("refuse un mécanisme réduit à une étape", () => {
+    const r = record();
+    r.evidence.mechanism = ["une seule étape"];
+    expect(errorsOf(r).join(" ")).toContain("au moins deux étapes");
+  });
+
+  it("refuse un chiffre présent dans la prose et absent de la preuve", () => {
+    const r = record();
+    r.pedagogy.detailed_explanation = "Dans son enquête de 1963, l'auteur observe ce mécanisme.";
+    expect(errorsOf(r).join(" ")).toContain("« 1963 »");
+  });
+
+  it("accepte un chiffre qui figure dans les sources", () => {
+    const r = record();
+    r.pedagogy.detailed_explanation = "Formulé en 1949, ce mécanisme reste observable.";
+    expect(errorsOf(r)).toEqual([]);
+  });
+
+  it("refuse un QCM dont la bonne réponse sort des choix", () => {
+    const r = record();
+    r.pedagogy.quiz[0].correctAnswer = "3";
+    expect(errorsOf(r).join(" ")).toContain("hors des choix");
+  });
+
+  it("signale une fiche validée sans aucune incertitude déclarée", () => {
+    const r = record();
+    r.evidence.known_ambiguities = [];
+    const { errors, warnings } = validateRecord(r, context);
+    expect(errors).toEqual([]);
+    expect(warnings.join(" ")).toContain("sans aucune incertitude déclarée");
+  });
+});
+
+describe("validateRecord — graphe", () => {
+  it("refuse une filiation documentée sans source", () => {
+    const r = record();
+    r.graph.related[0].relation_kind = "documented_filiation";
+    expect(errorsOf(r).join(" ")).toContain("corrélation historique");
+  });
+
+  it("refuse un thème inconnu de l'application", () => {
+    const r = record();
+    r.graph.themes = ["sociologie-generale"];
+    expect(errorsOf(r).join(" ")).toContain("absent de src/content/themes.ts");
+  });
+
+  it("refuse un concept qui se référence lui-même", () => {
+    const r = record();
+    r.graph.related[0].id = r.id;
+    expect(errorsOf(r).join(" ")).toContain("lui-même");
+  });
+});
+
+describe("validateCorpus", () => {
+  const wrap = (r) => ({ dir: "validated", file: `${r.id}.json`, record: r });
+
+  it("refuse une référence qui ne pointe ni sur une fiche validée ni sur une fiche héritée", () => {
+    const { errors } = validateCorpus([wrap(record())], { legacyIds: new Set() });
+    expect(errors.join(" ")).toContain("introuvable");
+  });
+
+  it("accepte une référence vers un concept encore hérité", () => {
+    const { errors } = validateCorpus([wrap(record())], { legacyIds: new Set(["bureaucratie"]) });
+    expect(errors).toEqual([]);
+  });
+
+  it("détecte un cycle de prérequis", () => {
+    const a = record({ id: "a", slug: "a" });
+    a.graph.related = [];
+    a.graph.prerequisites = [{ id: "b", why: "…" }];
+    const b = record({ id: "b", slug: "b" });
+    b.graph.related = [];
+    b.graph.prerequisites = [{ id: "a", why: "…" }];
+
+    const { errors } = validateCorpus([wrap(a), wrap(b)], { legacyIds: new Set() });
+    expect(errors.join(" ")).toContain("cycle de prérequis");
+  });
+
+  it("détecte un identifiant en double", () => {
+    const { errors } = validateCorpus([wrap(record()), wrap(record())], {
+      legacyIds: new Set(["bureaucratie"]),
+    });
+    expect(errors.join(" ")).toContain("deux fois");
+  });
+});
+
+describe("projectConcept", () => {
+  it("produit un objet Concept conforme au type de l'application", () => {
+    const concept = projectConcept(record());
+
+    expect(concept.id).toBe("concept-test");
+    expect(concept.title).toBe("Concept de test");
+    expect(concept.authors).toEqual(["merton"]);
+    expect(concept.relatedConcepts).toEqual(["bureaucratie"]);
+    expect(concept.quiz[0].choices).toHaveLength(2);
+    expect(concept.difficulty).toBe(2);
+  });
+
+  it("distingue les niveaux de source au lieu de tout ranger en interprétation", () => {
+    const concept = projectConcept(record());
+    expect(concept.sources.map((s) => s.kind)).toEqual(["primary", "secondary-academic"]);
+    expect(concept.sources[1].url).toBe("https://doi.org/10.1000/xyz123");
+  });
+
+  it("n'ajoute pas de note d'attribution quand l'auteur est unique", () => {
+    expect(buildAttributionNote(record())).toBeUndefined();
+  });
+
+  it("rétablit les coauteurs d'un concept rangé sous un seul nom", () => {
+    const r = record();
+    r.attribution.authors = [
+      { name: "Michael D. Cohen", app_author_id: null },
+      { name: "James G. March", app_author_id: "march" },
+      { name: "Johan P. Olsen", app_author_id: null },
+    ];
+    r.attribution.authorship = "COAUTHORED";
+    r.attribution.associated_author = "James G. March";
+    r.evidence.primary_sources[0].year = 1972;
+
+    const note = buildAttributionNote(r);
+    expect(note).toContain("Michael D. Cohen, James G. March et Johan P. Olsen");
+    expect(note).toContain("1972");
+    expect(note).toContain("James G. March");
+  });
+
+  it("signale un terme forgé par un tiers", () => {
+    const r = record();
+    r.attribution.term_origin = { coined_by: "Un Commentateur", coined_in: "1978", note: null };
+    expect(buildAttributionNote(r)).toContain("Terme forgé par Un Commentateur");
+  });
+});

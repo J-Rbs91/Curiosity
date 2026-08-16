@@ -79,6 +79,17 @@ export default function ConceptDetailPage() {
           <ConceptMetaTags authors={conceptAuthors} themes={conceptThemes} />
         </div>
 
+        {/*
+         * L'attribution réelle, quand elle ne se réduit pas aux pastilles d'auteurs :
+         * concept coécrit rangé sous un seul nom, terme forgé par un tiers. Une ligne
+         * discrète plutôt qu'un badge — c'est une précision de lecture, pas un label.
+         */}
+        {concept.attributionNote && (
+          <p className="mt-4 text-[13px] leading-relaxed text-ink-faint">
+            {concept.attributionNote}
+          </p>
+        )}
+
         <p className="mt-8 text-[18px] leading-relaxed text-ink">{concept.shortExplanation}</p>
         <p className="mt-5 text-[15px] leading-relaxed text-ink-soft">
           {concept.detailedExplanation}

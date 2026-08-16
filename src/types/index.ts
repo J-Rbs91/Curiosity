@@ -9,9 +9,16 @@ export type ConceptId = string;
 
 export type Difficulty = 1 | 2 | 3 | 4 | 5;
 
-/** Distingue ce qui vient directement d'un auteur de ce qui relève de l'interprétation pédagogique. */
+/**
+ * Distingue ce qui vient directement d'un auteur de ce qui relève de l'interprétation.
+ * `secondary-academic` et `francophone-reception` correspondent aux niveaux B et C de la
+ * hiérarchie documentaire (docs/corpus-workflow.md) : sans eux, la projection ferait
+ * passer un article peer-reviewed pour une interprétation pédagogique de notre fait.
+ */
 export type SourceKind =
   | "primary"
+  | "secondary-academic"
+  | "francophone-reception"
   | "pedagogical-interpretation"
   | "cross-author-comparison";
 
@@ -63,6 +70,13 @@ export interface Concept {
   detailedExplanation: string;
 
   authors: AuthorId[];
+  /**
+   * Rétablit l'attribution réelle quand elle ne se réduit pas aux auteurs listés
+   * ci-dessus : concept coécrit rangé sous un seul nom, concept associé à un auteur qui
+   * ne l'a pas créé, terme forgé par un tiers. Renseigné par la projection du corpus,
+   * jamais à la main.
+   */
+  attributionNote?: string;
   themes: ThemeId[];
 
   relatedConcepts: ConceptId[];

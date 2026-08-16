@@ -1,0 +1,134 @@
+/**
+ * Projection : enregistrement maître → objet `Concept` consommé par l'application.
+ *
+ * Sens unique et mécanique. Rien ne s'ajoute ici qui ne soit dans l'enregistrement :
+ * corriger une fiche affichée, c'est corriger le corpus puis reprojeter.
+ */
+
+const asArray = (v) => (Array.isArray(v) ? v : []);
+const isFilled = (v) => typeof v === "string" && v.trim().length > 0;
+
+function listFr(names) {
+  if (names.length <= 1) return names[0] ?? "";
+  return `${names.slice(0, -1).join(", ")} et ${names[names.length - 1]}`;
+}
+
+/**
+ * La ligne qui rétablit l'attribution réelle sous le titre, quand elle ne se réduit pas
+ * à un nom. C'est la traduction à l'écran de « auteur principal ≠ auteur unique » et de
+ * « association ≠ paternité » : sans elle, l'application fabrique lentement une histoire
+ * intellectuelle fausse, par simplification d'affichage.
+ */
+export function buildAttributionNote(record) {
+  const attribution = record?.attribution ?? {};
+  const names = asArray(attribution.authors).map((a) => a?.name).filter(isFilled);
+  const origin = attribution.term_origin ?? {};
+  const year = asArray(record?.evidence?.primary_sources).find((s) => s?.year)?.year;
+  const parts = [];
+
+  if (attribution.authorship === "COAUTHORED" && names.length > 1) {
+    const under = isFilled(attribution.associated_author)
+      ? `, habituellement rangé sous ${attribution.associated_author}`
+      : "";
+    parts.push(`Concept coécrit par ${listFr(names)}${year ? ` (${year})` : ""}${under}.`);
+  } else if (attribution.authorship === "ASSOCIATED_WITH") {
+    parts.push(
+      `Concept associé à ${attribution.associated_author}, qui ne l'a pas créé${
+        names.length > 0 ? ` : ${listFr(names)}` : ""
+      }.`
+    );
+  }
+
+  if (isFilled(origin.coined_by) && !names.includes(origin.coined_by))
+    parts.push(`Terme forgé par ${origin.coined_by}${isFilled(origin.coined_in) ? ` (${origin.coined_in})` : ""}.`);
+
+  return parts.length > 0 ? parts.join(" ") : undefined;
+}
+
+function sourceUrl(source) {
+  if (isFilled(source?.url)) return source.url;
+  const ref = source?.doi_isbn;
+  if (isFilled(ref) && /^10\.\d{4,}\//.test(ref)) return `https://doi.org/${ref}`;
+  return undefined;
+}
+
+function projectSources(record) {
+  const evidence = record?.evidence ?? {};
+  const map = (list, kind, referenceOf) =>
+    asArray(list)
+      .filter((s) => isFilled(s?.citation))
+      .map((s) => {
+        const source = { label: s.citation, kind };
+        const reference = referenceOf(s);
+        if (isFilled(reference)) source.reference = reference;
+        const url = sourceUrl(s);
+        if (url) source.url = url;
+        return source;
+      });
+
+  return [
+    ...map(evidence.primary_sources, "primary", (s) =>
+      [s.locator, s.doi_isbn].filter(isFilled).join(" · ")
+    ),
+    ...map(evidence.secondary_sources, "secondary-academic", (s) => s.doi_isbn),
+    ...map(evidence.francophone_sources, "francophone-reception", (s) => s.doi_isbn),
+  ];
+}
+
+/** Enregistrement maître → `Concept`. L'appelant garantit que le record est VALIDATED. */
+export function projectConcept(record) {
+  const pedagogy = record?.pedagogy ?? {};
+  const graph = record?.graph ?? {};
+  const ids = (list) => asArray(list).map((r) => r?.id).filter(isFilled);
+
+  const concept = {
+    id: record.id,
+    slug: record.slug,
+    title: record.canonical_name_fr,
+    hookQuestion: pedagogy.hook_question,
+    shortExplanation: pedagogy.short_explanation,
+    detailedExplanation: pedagogy.detailed_explanation,
+    authors: asArray(record?.attribution?.authors)
+      .map((a) => a?.app_author_id)
+      .filter(isFilled),
+    themes: asArray(graph.themes),
+    relatedConcepts: ids(graph.related),
+    prerequisites: ids(graph.prerequisites),
+    concreteExample: pedagogy.concrete_example,
+    analysisQuestions: asArray(pedagogy.analysis_questions),
+    quiz: asArray(pedagogy.quiz).map((q) => {
+      const question = {
+        id: q.id,
+        type: q.type,
+        prompt: q.prompt,
+        correctAnswer: q.correctAnswer,
+        explanation: q.explanation,
+      };
+      if (asArray(q.choices).length > 0) question.choices = q.choices;
+      return question;
+    }),
+    difficulty: graph.difficulty,
+  };
+
+  const opposites = ids(graph.opposites);
+  if (opposites.length > 0) concept.oppositeConcepts = opposites;
+  const deepens = ids(graph.deepens_into);
+  if (deepens.length > 0) concept.deepensInto = deepens;
+
+  const note = buildAttributionNote(record);
+  if (note) concept.attributionNote = note;
+
+  const sources = projectSources(record);
+  if (sources.length > 0) concept.sources = sources;
+
+  return concept;
+}
+
+/** Ordre stable des fiches générées : le diff d'une reprojection doit rester lisible. */
+export function projectCorpus(records) {
+  return records
+    .filter((r) => r?.status === "VALIDATED")
+    .slice()
+    .sort((a, b) => a.id.localeCompare(b.id, "fr"))
+    .map(projectConcept);
+}
