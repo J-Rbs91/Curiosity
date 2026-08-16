@@ -1,0 +1,348 @@
+{
+  "_note": "Fragment produit par la lecture des sources primaires. Ne remplit que le bloc `evidence` (et ce qui en dépend). UNE SEULE source primaire a pu être ouverte intégralement : la conférence Nobel de Simon (1978), éditée dans Nobel Lectures, Economics 1969-1980, World Scientific, 1992, p. 343-371. L'article de 1955 (QJE), Models of Man (1957) et Administrative Behavior n'ont PAS pu être ouverts : voir primary_sources[1..3] consulted = metadata-only, et acces_tente. Tout ce qui est établi ici l'est sur le texte de 1978.",
+
+  "id": "rationalite-limitee",
+  "canonical_name_fr": "Rationalité limitée",
+  "canonical_name_en": "Bounded rationality",
+
+  "attribution_input": {
+    "authors": [
+      { "name": "Herbert A. Simon" }
+    ],
+    "authorship": "SOLE",
+    "term_origin": {
+      "coined_by": "Herbert A. Simon",
+      "coined_in": "NON ÉTABLI SUR SOURCE PRIMAIRE DANS CETTE SESSION. Voir known_ambiguities[0] et limitations[1].",
+      "note": "Ce que la source primaire ouverte permet d'affirmer, et rien de plus : dans sa conférence Nobel (1978), Simon rattache l'IDÉE à Administrative Behavior (1947) — « In Administrative Behavior, bounded rationality is largely characterized as a residual category » (p. 356) — et la première formalisation des MÉCANISMES à ses deux articles de 1955 et 1956 : « There was needed a more positive and formal characterization of the mechanisms of choice under conditions of bounded rationality. Two papers (Simon, 1955 and 1956) undertook first steps in that direction » (p. 356). Il emploie par ailleurs l'expression entre guillemets en la rapportant rétrospectivement à Administrative Behavior : « All of these, and others, fit the general rubric of “bounded rationality” » (p. 354), puis « This rather vague and general initial formulation of the idea of bounded rationality » (p. 354). Simon ne dit NULLE PART dans ce texte à quelle date il a imprimé l'expression pour la première fois. En revanche il revendique explicitement, dans le même texte, la forge d'un AUTRE mot : « I called this mode of selection satisficing » (p. 356)."
+    }
+  },
+
+  "evidence": {
+
+    "_perimetre_du_dossier": "Ce dossier documente BOUNDED RATIONALITY / rationalité limitée, c'est-à-dire la CONDITION générale dans laquelle s'exerce le choix, et non satisficing, qui en est l'un des MÉCANISMES. La séparation est faite par Simon lui-même, dans le texte lu, en deux temps. (1) La condition : « rationality is bounded when it falls short of omniscience » (p. 356) — c'est une catégorie définie par écart à l'omniscience. (2) Les mécanismes : « Two concepts are central to the characterization: search and satisficing » (p. 356). Satisficing est donc l'un des deux mécanismes formalisés (avec la recherche/search), et par ailleurs seulement le PREMIER des trois procédés que Simon range p. 353-354 sous « the general rubric of “bounded rationality” » — les deux autres étant la substitution de sous-buts tangibles aux buts globaux abstraits, et la division de la tâche de décision entre spécialistes coordonnés par une structure de communication et d'autorité. Conséquence pour l'application : rationalité limitée ⊃ satisficing. Écrire « rationalité limitée = on se contente du satisfaisant » ampute le concept de ses deux autres procédés, dont l'un — la division du travail de décision — est précisément ce qui, chez Simon, explique l'existence des organisations.",
+
+    "concept_definition": "Dans la conférence Nobel de 1978, seule source primaire ouverte ici, Simon caractérise la rationalité limitée par écart à un point de référence, l'omniscience : « In Administrative Behavior, bounded rationality is largely characterized as a residual category - rationality is bounded when it falls short of omniscience. And the failures of omniscience are largely failures of knowing all the alternatives, uncertainty about relevant exogenous events, and inability to calculate consequences » (p. 356). Le point de référence est explicité p. 353 sous la forme des quatre exigences du modèle classique : « The classical model calls for knowledge of all the alternatives that are open to choice. It calls for complete knowledge of, or ability to compute, the consequences that will follow on each of the alternatives. It calls for certainty in the decision-maker's present and future evaluation of these consequences. It calls for the ability to compare consequences, no matter how diverse and heterogeneous, in terms of some consistent measure of utility. » La rationalité limitée est le nom du régime de choix qui subsiste quand ces quatre exigences tombent. Portée organisationnelle revendiquée p. 354 : les organisations élaborées « can only be understood as machinery for coping with the limits of man's abilities to comprehend and compute in the face of complexity and uncertainty ». Rien dans ce texte ne caractérise la rationalité limitée comme un défaut de rationalité : Simon parle p. 368 des « mechanisms of human rational choice » et p. 367 de « Human behavior, even rational human behavior ».",
+
+    "mechanism": [
+      "0. POINT DE RÉFÉRENCE (ce par rapport à quoi la rationalité est dite bornée). Simon pose d'abord les quatre exigences cumulatives du modèle classique (p. 353) : connaître toutes les options ouvertes au choix ; connaître ou pouvoir calculer les conséquences de chacune ; être certain de l'évaluation présente ET future de ces conséquences ; pouvoir comparer des conséquences hétérogènes sur une mesure d'utilité cohérente. C'est de cette liste, et d'elle seule, que « bounded » se mesure dans ce texte.",
+
+      "1. DÉCLENCHEUR EMPIRIQUE, tel que Simon le raconte (p. 352, section « In Search of a Descriptive Theory »). Milwaukee, 1934-35, administration conjointe des équipements de loisirs par le school board et le service des travaux publics. Les deux chefs de service s'accordent sur les objectifs, ne se disputent pas d'empire, et pourtant sont en désaccord permanent sur la répartition des fonds entre entretien physique et encadrement des jeux. « Why did they not, as my economics books suggested, simply balance off the marginal return of the one activity against that of the other? »",
+
+      "2. RÉPONSE, ET C'EST LE PIVOT DE TOUT : l'empêchement est cognitif, pas motivationnel. « Further exploration made it apparent that they didn't equate expenditures at the margin because, intellectually, they couldn't. There was no measurable production function from which quantitative inferences about marginal productivities could be drawn; and such qualitative notions of a production function as the two managers possessed were mutually incompatible » (p. 352). Simon illustre l'incompatibilité : pour l'administrateur des travaux publics un terrain de jeu est un équipement physique, une oasis verte dans la ville grise ; pour l'administrateur des loisirs c'est un équipement social où les enfants jouent sous la conduite d'adultes (p. 352). Ils ne veulent pas des choses différentes : ils ne voient pas le même objet.",
+
+      "3. PREMIÈRE CONSÉQUENCE — IDENTIFICATION AUX SOUS-BUTS (« subgoal identification », p. 353). « When the goals of an organization cannot be connected operationally with actions (when the production function can't be formulated in concrete terms), then decisions will be judged against subordinate goals that can be so connected. » Trois précisions du texte : (a) « There is no unique determination of these subordinate goals » ; (b) « Their formulation will depend on the knowledge, experience, and organizational environment of the decision maker » ; (c) « In the face of this ambiguity, the formulation can also be influenced in subtle, and not so subtle, ways by his self-interest and power drives ». L'intérêt et le pouvoir entrent APRÈS l'ambiguïté cognitive et par elle : ils ne l'expliquent pas.",
+
+      "4. VÉRIFICATION EMPIRIQUE DE L'ÉTAPE 3 (p. 354). Dearborn & Simon (1958) : soumis à un cas d'entreprise, des cadres identifient le problème principal de l'entreprise en fonction de leur propre trajectoire — « sales and accounting executives identified a sales problem, manufacturing executives, a problem of internal organization ». Simon présente ce résultat comme la démonstration de « the cognitive basis for identification with subgoals ».",
+
+      "5. GÉNÉRALISATION (p. 353). Le phénomène observé n'est que « the visible tip of a very large iceberg ». Les quatre exigences classiques tombent simultanément, et Simon nomme les défaillances une à une : « the alternatives of search had to be sought out » (les options ne sont pas données) ; « the consequences of choosing particular alternatives were only very imperfectly known both because of limited computational power and because of uncertainty in the external world » (DEUX bornes distinctes, l'une interne, l'autre externe) ; « the decision maker did not possess a general and consistent utility function for comparing heterogeneous alternatives ».",
+
+      "6. LES TROIS PROCÉDÉS QUI RENDENT LE PROBLÈME TRAITABLE (p. 353-354). « Several procedures of rather general applicability and wide use have been discovered that transform intractable decision problems into tractable ones. » Simon en nomme trois : (a) « to look for satisfactory choices instead of optimal ones » ; (b) « to replace abstract, global goals with tangible subgoals, whose achievement can be observed and measured » ; (c) « to divide up the decision-making task among many specialists, coordinating their work by means of a structure of communications and authority relations ». Puis : « All of these, and others, fit the general rubric of “bounded rationality” » (p. 354). Le troisième procédé est celui qu'on oublie : c'est lui qui fait de l'organisation elle-même un dispositif de rationalité limitée.",
+
+      "7. EFFET AU NIVEAU ORGANISATIONNEL (p. 354). « it is now clear that the elaborate organizations that human beings have constructed in the modern world to carry out the work of production and government can only be understood as machinery for coping with the limits of man's abilities to comprehend and compute in the face of complexity and uncertainty. » L'organisation n'est pas un obstacle à la rationalité : elle en est l'appareillage.",
+
+      "8. FORMALISATION — PREMIER MÉCANISME, LA RECHERCHE (p. 356). « If the alternatives for choice are not given initially to the decision maker, then he must search for them. Hence, a theory of bounded rationality must incorporate a theory of search. »",
+
+      "9. POURQUOI ON NE PEUT PAS OPTIMISER LA RECHERCHE ELLE-MÊME — étape décisive, et celle qui distingue Simon de Stigler (p. 356). Stigler (1961) a « poured the search theory back into the old bottle of classical utility maximization, the cost of search being equated with its marginal return » ; Simon indique avoir démontré la même équivalence formelle en 1956. Mais : « But utility maximization, as I showed, was not essential to the search scheme - fortunately, for it would have required the decision maker to be able to estimate the marginal costs and returns of search in a decision situation that was already too complex for the exercise of global rationality. » Autrement dit : optimiser la recherche réintroduit exactement le calcul dont on venait d'établir l'impossibilité. La régression est bloquée, et c'est ce blocage qui rend nécessaire un mécanisme d'un autre type.",
+
+      "10. FORMALISATION — SECOND MÉCANISME, LE SATISFICING, ET SA RÈGLE D'ARRÊT (p. 356). « As an alternative, one could postulate that the decision maker had formed some aspiration as to how good an alternative he should find. As soon as he discovered an alternative for choice meeting his level of aspiration, he would terminate the search and choose that alternative. I called this mode of selection satisficing. » Le mécanisme est une RÈGLE D'ARRÊT de la recherche, pas un abaissement d'exigence.",
+
+      "11. LE PARAMÈTRE QUI FAIT VARIER LE RÉSULTAT : le niveau d'aspiration est mobile (p. 356). Origine déclarée : « It had its roots in the empirically based psychological theories, due to Lewin and others, of aspiration levels. » Loi de variation : « aspiration levels are not static, but tend to rise and fall in consonance with changing experiences. In a benign environment that provides many good alternatives, aspirations rise; in a harsher environment, they fall. » C'est la variable d'ajustement du modèle : le seuil suit l'environnement.",
+
+      "12. CE QUE LE MÉCANISME ACHÈTE (p. 357). « the important thing about the search and satisficing theory is that it showed how choice could actually be made with reasonable amounts of calculation, and using very incomplete information, without the need of performing the impossible - of carrying out this optimizing procedure. » Simon concède immédiatement avant, et c'est important : « In long-run equilibrium it might even be the case that choice with dynamically adapting aspiration levels would be equivalent to optimal choice, taking the costs of search into account » (p. 356-357).",
+
+      "13. DESCENTE AU NIVEAU DES MICRO-PROCESSUS (p. 362, information processing psychology, Newell & Simon 1972). « Information processing theories envisage problem solving as involving very selective search through problem spaces that are often immense. Selectivity, based on rules of thumb or “heuristics”, tends to guide the search into promising regions, so that solutions will generally be found after search of only a tiny part of the total space. Satisficing criteria terminate search when satisfactory problem solutions have been found. » Deux organes distincts : les heuristiques ORIENTENT la recherche, les critères de satisficing l'ARRÊTENT.",
+
+      "14. CONSÉQUENCE THÉORIQUE — LA RATIONALITÉ DEVIENT PROCÉDURALE (p. 363). « choice is not determined uniquely by the objective characteristics of the problem situation, but depends also on the particular heuristic process that is used to reach the decision. It would appear, therefore, that a model of process is an essential component in any positive theory of decision making that purports to describe the real world, and that the neoclassical ambition of avoiding the necessity for such a model is unrealizable (Simon, 1978a). » Le couple est nommé p. 351 : « Both areas of inquiry are concerned primarily with procedural rather than substantive rationality (Simon, 1978a). »",
+
+      "15. CONSÉQUENCE ORGANISATIONNELLE — LE JEU (« slack ») DÉCOUPLE L'ORGANISATION DE SON ENVIRONNEMENT (p. 365). « Since the firm may operate very far from any optimum, the slack serves as a buffer between the environment and the firm's decisions. Responses to environmental events can no longer be predicted simply by analysing the “requirements of the situation,” but depend on the specific decision processes that the firm employs. » Simon attribue la notion aux modèles de Cyert-March et de Leibenstein (p. 365), il ne se l'attribue pas.",
+
+      "16. CONSÉQUENCE MACRO (p. 365). « If, in the face of identical environmental conditions, different decision mechanisms can produce different firm behaviors, this sensitivity of outcomes to process can have important consequences for analysis at the level of markets and the economy. » Prescription qui en découle — et c'est la SEULE prescription du texte, elle est méthodologique : « it demands that - before we draw policy conclusions from our theories, and particularly before we act on those policy conclusions - we carry out sensitivity analyses to test how far our conclusions would be changed if we made different assumptions about the decision mechanisms at the micro-level » (p. 365-366).",
+
+      "17. FORMULE D'ENSEMBLE, EN CLÔTURE (p. 367). « Human behavior, even rational human behavior, is not to be accounted for by a handful of invariants. It is certainly not to be accounted for by assuming perfect adaptation to the environment. Its basic mechanisms may be relatively simple, and I believe they are, but that simplicity operates in interaction with extremely complex boundary conditions imposed by the environment and by the very facts of human long-term memory and of the capacity of human beings, individually and collectively, to learn. » Deux ordres de « boundary conditions » sont ici tenus ensemble : celles de l'environnement, et celles de la mémoire à long terme et de la capacité d'apprentissage. La borne n'est ni purement dans la tête ni purement dans le monde."
+    ],
+
+    "conditions": {
+      "appears_when": [
+        "Les buts de l'organisation ne peuvent pas être connectés opérationnellement aux actions, faute de fonction de production formulable en termes concrets (p. 353). C'est la condition d'entrée que Simon tire du cas de Milwaukee.",
+        "Les options ne sont pas données d'avance et doivent être cherchées (p. 353, p. 356).",
+        "Les conséquences des options ne sont connues qu'imparfaitement, pour DEUX raisons distinctes que Simon nomme dans la même phrase : « limited computational power » et « uncertainty in the external world » (p. 353).",
+        "Le décideur ne dispose pas d'une fonction d'utilité générale et cohérente permettant de comparer des options hétérogènes (p. 353).",
+        "Simon localise le domaine où le remplacement du modèle classique s'impose le plus fortement : « a strong positive case for replacing the classical theory by a model of bounded rationality begins to emerge when we examine situations involving decision making under uncertainty and imperfect competition » (p. 349)."
+      ],
+      "intensified_by": [
+        "La complexité elle-même, par un effet de récursion : dès que la situation est « already too complex for the exercise of global rationality », le décideur ne peut pas non plus estimer les coûts et rendements marginaux de sa propre recherche — donc la voie de secours optimisatrice se referme (p. 356).",
+        "L'ampleur des perturbations de l'environnement : les théories comportementales supposent « that the environmental disturbances will generally be large enough to prevent the classical solution from being an adequate approximation to the actual behavior » (p. 365).",
+        "La présence de slack organisationnel, qui découple la réponse des « requirements of the situation » et la rend dépendante des procédures propres à la firme (p. 365).",
+        "La complication de la situation de choix, même faible : « When even small complications were introduced into the situations, wide departures of behavior from the predictions of SEU theory soon became evident » (p. 361)."
+      ],
+      "disappears_when": [
+        "ATTENTION — dans le texte lu, Simon n'énonce AUCUNE condition de disparition de la rationalité limitée. Il énonce des conditions sous lesquelles ses CONSÉQUENCES OBSERVABLES se rapprochent de celles du modèle classique. Ce n'est pas la même chose, et la distinction est le cœur de la thèse procédurale.",
+        "Équivalence de long terme possible : « In long-run equilibrium it might even be the case that choice with dynamically adapting aspiration levels would be equivalent to optimal choice, taking the costs of search into account » (p. 356-357). Équivalence de RÉSULTAT, formulée au conditionnel, le processus restant différent.",
+        "Environnement stationnaire assez longtemps : les théories comportementales supposent un apprentissage organisationnel tel que « if the environment were stationary for a sufficient length of time, the system equilibrium would approach closer and closer to the classical profit-maximizing equilibrium » (p. 365). Simon ajoute aussitôt que la stationnarité n'est pas la règle.",
+        "Économies stables et proches de l'équilibre concurrentiel : « It may well be that classical theory can be patched up sufficiently to handle a wide range of situations where uncertainty and outguessing phenomena do not play a central role - that is, to handle the behavior of economies that are relatively stable and not too distant from a competitive equilibrium » (p. 349).",
+        "PIÈGE À ÉVITER — simplifier le monde jusqu'à ce que l'optimum devienne calculable N'EST PAS une sortie de la rationalité limitée : Simon range explicitement ce geste dans le satisficing. « decision makers can satisfice either by finding optimum solutions for a simplified world, or by finding satisfactory solutions for a more realistic world » (p. 350). L'optimisation d'un modèle simplifié est une forme de satisficing, pas son contraire."
+      ]
+    },
+
+    "key_quotation": {
+      "text": "Dans Administrative Behavior, la rationalité limitée est caractérisée pour l'essentiel comme une catégorie résiduelle - la rationalité est limitée quand elle reste en deçà de l'omniscience. Et les défaillances de l'omniscience sont pour l'essentiel des défaillances à connaître toutes les options, l'incertitude sur les événements exogènes pertinents, et l'incapacité de calculer les conséquences.",
+      "language": "fr",
+      "original_text": "In Administrative Behavior, bounded rationality is largely characterized as a residual category - rationality is bounded when it falls short of omniscience. And the failures of omniscience are largely failures of knowing all the alternatives, uncertainty about relevant exogenous events, and inability to calculate consequences.",
+      "original_language": "en",
+      "translation": {
+        "kind": "in-house",
+        "translator": "Traduction interne non publiée (agent corpus-primary-reader, chaîne Curiosity). Aucune traduction française publiée de la conférence Nobel de 1978 n'a été identifiée.",
+        "edition": null
+      },
+      "attributed_to": "Herbert A. Simon",
+      "primary_source_index": 0,
+      "locator": "Conférence Nobel, section « CHARACTERIZING BOUNDED RATIONALITY », sous-section « Theoretical Inquiries. », paragraphe en tête de titre courant « Mechanisms of Bounded Rationality. », p. 356 (p. 14 du PDF de la Fondation Nobel).",
+      "_verification": "Transcrit sur l'image de la page rendue à 200 dpi depuis le PDF de la Fondation Nobel, et non seulement sur la couche texte. Le tiret est bien, dans cette composition (World Scientific 1992), un tiret court entouré d'espaces : il est transcrit tel quel, sans le convertir en tiret cadratin. « Administrative Behavior » est en italique dans l'original ; les italiques ne sont pas reportées dans `text`.",
+      "_pourquoi_ce_passage": "C'est le seul énoncé du texte qui soit à la fois (a) autonome hors de son paragraphe, (b) définitionnel, (c) contenant le terme, et (d) donnant les trois bornes nommément. Réserve à connaître : Simon qualifie cette caractérisation de « residual » et écrit juste après qu'« il fallait une caractérisation plus positive et formelle des mécanismes » (p. 356). Il ne renie pas la définition — il la juge insuffisante à décrire les mécanismes. Une mise en page qui présenterait ce passage comme la définition ACHEVÉE du concept chez Simon forcerait le texte ; il en est la définition par écart, dont les étapes 8 à 13 de `mechanism` donnent la contrepartie positive.",
+      "_alternatives_verbatim_meme_source": [
+        {
+          "locator": "p. 354, section « CHARACTERIZING BOUNDED RATIONALITY », sous-section « In Search of a Descriptive Theory »",
+          "text": "All of these, and others, fit the general rubric of \"bounded rationality\", and it is now clear that the elaborate organizations that human beings have constructed in the modern world to carry out the work of production and government can only be understood as machinery for coping with the limits of man's abilities to comprehend and compute in the face of complexity and uncertainty.",
+          "pourquoi": "Énoncé le plus fort sur la portée organisationnelle, et le seul où Simon fasse de l'organisation la conséquence du concept. 380 caractères. RÉSERVE : « All of these » renvoie hors phrase aux trois procédés énumérés p. 353-354 ; le passage n'est pas autonome tel quel."
+        },
+        {
+          "locator": "p. 368, dernier paragraphe de la conférence, section « CONCLUSION »",
+          "text": "With all these qualifications and reservations, we do understand today many of the mechanisms of human rational choice. We do know how the information processing system called Man, faced with complexity beyond his ken, uses his information processing capacities to seek out alternatives, to calculate consequences, to resolve uncertainties, and thereby - sometimes, not always - to find ways of action that are sufficient unto the day, that satisfice.",
+          "pourquoi": "Phrase de clôture de la conférence, vérifiée sur l'image de page. C'est le passage à retenir pour tout traitement du contresens « les humains sont irrationnels » : Simon y parle de « mechanisms of human rational choice ». RÉSERVES : (a) « With all these qualifications and reservations » renvoie hors phrase ; (b) le texte se termine sur un jeu de mots intraduisible entre « sufficient unto the day » (allusion à Matthieu 6, 34) et « satisfice » — voir translation_notes."
+        },
+        {
+          "locator": "p. 350, section « Normative Decision Theory »",
+          "text": "Stated otherwise, decision makers can satisfice either by finding optimum solutions for a simplified world, or by finding satisfactory solutions for a more realistic world.",
+          "pourquoi": "168 caractères, parfaitement autonome. Le passage le plus utile contre l'idée que satisficing serait le contraire d'optimiser : optimiser un modèle simplifié est, pour Simon, une modalité du satisficing. NB : dans l'original, « Stated otherwise » est coupé par une césure de fin de ligne (« Stated other-/wise ») ; la transcription rétablit le mot."
+        },
+        {
+          "locator": "p. 348, note de bas de page 3",
+          "text": "In a footnote Becker indicates that he denotes as irrational \"[A]ny deviation from utility maximization.\" Thus, what I have called \"bounded rationality\" is \"irrationality\" in Becker's terminology.",
+          "pourquoi": "Le passage exact où Simon situe le rapport entre son concept et le mot « irrationalité ». Il n'y a pas d'adhésion : Simon enregistre une convention terminologique de Becker et signale que, dans ce vocabulaire-là, son concept tombe sous ce nom. RÉSERVE D'USAGE : sortie de son contexte de note, la phrase peut être lue comme une concession de Simon. Elle n'en est pas une. Ne pas l'employer seule."
+        },
+        {
+          "locator": "p. 356, section « Mechanisms of Bounded Rationality »",
+          "text": "As soon as he discovered an alternative for choice meeting his level of aspiration, he would terminate the search and choose that alternative. I called this mode of selection satisficing.",
+          "pourquoi": "L'énoncé du mécanisme d'arrêt et la revendication explicite du mot par Simon. À réserver à une fiche `satisficing`, pas à celle-ci."
+        }
+      ]
+    },
+
+    "primary_sources": [
+      {
+        "citation": "Herbert A. Simon, « Rational Decision-Making in Business Organizations », Nobel Memorial Lecture, 8 décembre 1978, in Assar Lindbeck (dir.), Nobel Lectures, Economics 1969-1980, Singapour, World Scientific Publishing Co., 1992, p. 343-371.",
+        "year": 1978,
+        "language": "en",
+        "kind": "lecture",
+        "doi_isbn": "Pas de DOI. Mention de source portée par la Fondation Nobel : « Copyright © The Nobel Foundation 1978. From Nobel Lectures, Economics 1969-1980, Editor Assar Lindbeck, World Scientific Publishing Co., Singapore, 1992 ». Le même texte a également paru dans American Economic Review, 69(4), septembre 1979, p. 493-513 — version NON consultée, pagination différente.",
+        "url": "https://www.nobelprize.org/uploads/2018/06/simon-lecture.pdf",
+        "locator": "Texte intégral, p. 343-371 (29 pages du PDF ; page N du PDF = page imprimée 342+N). Sections lues intégralement : « DECISION THEORY AS ECONOMIC SCIENCE » (p. 343-345) ; « Have the Marginalist Predictions Been Tested? » (p. 347-349, note 3 p. 348) ; « Normative Decision Theory » (p. 349-351) ; « CHARACTERIZING BOUNDED RATIONALITY » (p. 351-357), qui contient « In Search of a Descriptive Theory » (p. 352-354), « Empirical Studies » (p. 354-355), « Theoretical Inquiries » (p. 355-357) dont « Mechanisms of Bounded Rationality » (p. 356-357) ; « THE NEOCLASSICAL REVIVAL » (p. 357-361) ; « ADVANCES IN THE BEHAVIORAL THEORY » (p. 361-366) ; « CONCLUSION » (p. 366-368) ; références (p. 369-371).",
+        "evidence": "SOURCE PRIMAIRE OUVERTE ET LUE INTÉGRALEMENT. Établit dans les mots de Simon : la définition par écart à l'omniscience et les trois défaillances (p. 356) ; les quatre exigences du modèle classique qui servent de référence (p. 353) ; le déclencheur empirique de Milwaukee et le caractère cognitif — non motivationnel — de l'empêchement (p. 352) ; l'identification aux sous-buts et sa base cognitive (p. 353-354) ; les trois procédés rangés sous la rubrique « bounded rationality » (p. 353-354) ; la thèse selon laquelle les organisations sont l'appareillage de cette limite (p. 354) ; les deux mécanismes formalisés, search et satisficing, et le blocage de la régression optimisatrice contre Stigler (p. 356) ; la revendication du mot « satisficing » (p. 356) ; la mobilité des niveaux d'aspiration selon la bienveillance de l'environnement (p. 356) ; la concession d'une équivalence possible en équilibre de long terme (p. 356-357) ; les heuristiques comme orientation et le satisficing comme arrêt (p. 362) ; la rationalité procédurale (p. 351, p. 363) ; le slack comme tampon (p. 365) ; la seule prescription du texte, qui est méthodologique (p. 365-366) ; la formule des « boundary conditions » doubles (p. 367) ; la clôture sur les « mechanisms of human rational choice » (p. 368) ; et la note 3 p. 348 sur le rapport au mot « irrationalité » chez Becker. Provenance : PDF mis en ligne par la Fondation Nobel elle-même (nobelprize.org), 219 743 octets, 29 pages ; couche texte OCR vérifiée passage par passage, et les trois pages portant les citations retenues (p. 354, 356, 368) rendues en image à 200 dpi et relues visuellement. AVERTISSEMENT SUR LA COUCHE TEXTE : elle comporte des coquilles d'OCR ailleurs dans le document (« bounded rationalilty » p. 348, « In vacua » pour « in vacuo » p. 365, « behav e » p. 362). Aucune ne touche les passages cités ici, qui ont été confirmés sur image.",
+        "consulted": "full-text"
+      },
+      {
+        "citation": "Herbert A. Simon, « A Behavioral Model of Rational Choice », The Quarterly Journal of Economics, vol. 69, n° 1, février 1955, p. 99-118.",
+        "year": 1955,
+        "language": "en",
+        "kind": "article",
+        "doi_isbn": "10.2307/1884852",
+        "url": "https://doi.org/10.2307/1884852",
+        "locator": "Article entier, p. 99-118. AUCUNE localisation interne ne peut être donnée.",
+        "evidence": "AUCUN CONTENU ÉTABLI PAR CETTE SOURCE DANS CETTE SESSION. Métadonnées résolues et concordantes via Crossref : Herbert A. Simon (Carnegie Institute of Technology), auteur unique, QJE 69(1), février 1955, p. 99, éditeur Oxford University Press ; 10 058 citations enregistrées. Unpaywall : is_oa false, oa_status « closed », has_repository_copy false, aucune oa_location. Voies tentées et résultats consignés dans acces_tente. C'est cette source, et non la conférence Nobel, qui permettrait de trancher la question posée par la commande : Simon emploie-t-il « bounded rationality » dès 1955 ? Elle reste ouverte.",
+        "consulted": "metadata-only"
+      },
+      {
+        "citation": "Herbert A. Simon, Models of Man: Social and Rational. Mathematical Essays on Rational Human Behavior in a Social Setting, New York, John Wiley & Sons, 1957.",
+        "year": 1957,
+        "language": "en",
+        "kind": "book",
+        "doi_isbn": "Pas d'ISBN (antérieur au système). Notice Internet Archive : identifiant modelsofman0000herb, 314 images.",
+        "url": "https://archive.org/details/modelsofman0000herb",
+        "locator": "La page 198, où la littérature secondaire situe la première occurrence imprimée de « bounded rationality » et l'énoncé du « principle of bounded rationality », N'A PAS ÉTÉ OUVERTE. Aucune pagination ne peut être donnée pour un énoncé précis.",
+        "evidence": "AUCUN CONTENU ÉTABLI. Existence et données d'édition seules établies (notice Internet Archive : Herbert A. Simon, John Wiley & Sons, New York, 1957 ; Crossref recense trois comptes rendus de l'ouvrage, 1957-1962). Exemplaire numérisé repéré sur Internet Archive mais en prêt contrôlé : access-restricted-item true, collections « inlibrary » et « printdisabled » ; le fichier _djvu.txt renvoie une redirection vers l'authentification (HTTP 302) ; les API de recherche plein texte d'Internet Archive (ia-fts, ia-pub-fts-api, ia-petabox) sont refusées par la passerelle réseau de cette session (CONNECT 502). C'est le volume qui reprend en chapitre l'article de 1955 et c'est la voie d'accès la plus plausible pour un relecteur disposant d'un compte Internet Archive ou d'une bibliothèque.",
+        "consulted": "metadata-only"
+      },
+      {
+        "citation": "Herbert A. Simon, Administrative Behavior: A Study of Decision-Making Processes in Administrative Organization, New York, Macmillan, 1947 (2e éd. 1957 ; 3e éd. Free Press, 1976 ; 4e éd. Free Press, 1997).",
+        "year": 1947,
+        "language": "en",
+        "kind": "book",
+        "doi_isbn": "Non résolu dans cette session.",
+        "url": null,
+        "locator": "Non ouvert. Le seul renvoi interne dont je dispose est celui que Simon donne lui-même dans sa conférence Nobel : « (see Administrative Behavior, page 136) » à propos de l'influence de John R. Commons (Nobel, p. 352). Je ne sais pas de quelle édition cette pagination est tirée.",
+        "evidence": "AUCUN CONTENU ÉTABLI. Ouvrage cité ici parce que Simon en fait, dans le texte que j'ai lu, le lieu d'origine de l'idée : « In Administrative Behavior, bounded rationality is largely characterized as a residual category » (Nobel, p. 356) et « This rather vague and general initial formulation of the idea of bounded rationality called for elaboration » (Nobel, p. 354). Ce que ce livre contient exactement, et sous quels mots, n'est pas établi par cette session. Existence d'une traduction française : voir francophone_sources[0], également non ouverte.",
+        "consulted": "metadata-only"
+      }
+    ],
+
+    "secondary_sources": [],
+
+    "francophone_sources": [
+      {
+        "citation": "Herbert A. Simon, Administration et processus de décision, traduit de l'anglais par Pierre-Emmanuel Dauzat, présentation pour l'édition française par Xavier Greffe, Paris, Economica, coll. « Gestion », 1983, XI-321 p., ISBN 2-7178-0676-8.",
+        "year": 1983,
+        "language": "fr",
+        "role": "traduction",
+        "establishes": "NON OUVERTE — métadonnées seules. Notice confirmée par Open Library (Herbert Alexander Simon, Economica, 1983, 322 p., ISBN 2717806768 / 9782717806762, langue fre) et par le catalogue de l'INSP (traduction par Pierre-Emmanuel Dauzat, présentation par Xavier Greffe, coll. Gestion, XI-321 p.). LACUNE DÉCLARÉE : aucune de ces deux notices n'indique QUELLE édition anglaise est traduite (1947, 1957 ou 1976). Tant que ce point n'est pas tranché, aucune pagination française ne doit être donnée pour un énoncé de Simon. C'est la seule traduction française d'un livre de Simon repérée dans cette session ; c'est donc par elle que passerait une citation française publiée — encore faut-il l'ouvrir.",
+        "level": "A"
+      },
+      {
+        "citation": "Mikaël Cozic, « La rationalité limitée », in Économie cognitive, Paris, MSH/Ophrys, 2008.",
+        "year": 2008,
+        "language": "fr",
+        "role": "interpretation",
+        "establishes": "NON LU — repéré via HAL (halshs-00791815), résumé seul. Le résumé signale une difficulté qui concerne directement ce dossier : « Une certaine confusion sémantique résulte de cette popularité : l'expression “rationalité limitée” recouvre aujourd'hui des phénomènes, des modèles et des domaines de recherches passablement hétérogènes. » Source secondaire francophone : à traiter par corpus-reception-analyst, pas ici.",
+        "level": "B"
+      },
+      {
+        "citation": "« La rationalité simonienne : interprétations et enjeux épistémologiques », rapport, 1999, HAL hal-01526495.",
+        "year": 1999,
+        "language": "fr",
+        "role": "interpretation",
+        "establishes": "NON LU — repéré via HAL, pointeur pour corpus-reception-analyst. Signalé parce qu'il porte explicitement sur les interprétations concurrentes de la rationalité chez Simon, c'est-à-dire sur l'objet des `common_misinterpretations` ci-dessous.",
+        "level": "B"
+      }
+    ],
+
+    "translation_notes": [
+      {
+        "term_source": "bounded rationality",
+        "term_fr": "rationalité limitée",
+        "note": "TERME CENTRAL, ET LA TRADUCTION USUELLE EST TRAÎTRESSE. « Bounded » dit une BORNE, une frontière délimitant une région : la rationalité opère à l'intérieur d'un domaine circonscrit. « Limitée » en français glisse vers « diminuée, faible, insuffisante » — c'est-à-dire vers exactement la lecture que le texte contredit. Ce que Simon écrit, et qui fixe le sens : « rationality is bounded when it falls short of omniscience » (Nobel, p. 356). Le point de référence est L'OMNISCIENCE, pas la rationalité tout court : est bornée toute rationalité qui n'est pas omnisciente, ce qui n'ôte rien à sa qualité de rationalité. « Rationalité bornée » serait plus fidèle au mot ; « rationalité limitée » est la forme reçue en français. Termes que Simon oppose au sien dans ce même texte, et qu'il faut distinguer entre eux : « classical omniscient rationality » (p. 357), « perfect rationality » (p. 356, p. 366), « global rationality » (p. 356), « objectively rational behavior ». Aucune traduction française publiée de la conférence Nobel n'a été identifiée."
+      },
+      {
+        "term_source": "satisficing",
+        "term_fr": "satisficing (souvent non traduit) ; « satisfaction », « choix satisfaisant »",
+        "note": "Mot-valise forgé par Simon, qui en revendique la paternité dans le texte lu : « I called this mode of selection satisficing » (Nobel, p. 356). Il contracte to satisfy et to suffice. C'est un MÉCANISME (une règle d'arrêt de la recherche), non un synonyme de rationalité limitée : voir _perimetre_du_dossier. Difficulté de traduction irréductible : la conférence se clôt sur un jeu de mots entre la formule biblique « sufficient unto the day » (Matthieu 6, 34, dans la King James : « Sufficient unto the day is the evil thereof ») et « satisfice » — « to find ways of action that are sufficient unto the day, that satisfice » (p. 368). Aucune traduction française ne conserve à la fois l'allusion et le néologisme ; il faut choisir, et le dire."
+      },
+      {
+        "term_source": "procedural rationality / substantive rationality",
+        "term_fr": "rationalité procédurale / rationalité substantielle (ou substantive)",
+        "note": "Le couple est employé dans le texte lu SANS Y ÊTRE DÉFINI : « Both areas of inquiry are concerned primarily with procedural rather than substantive rationality (Simon, 1978a) » (Nobel, p. 351). Simon renvoie à deux textes non consultés ici : « From substantive to procedural rationality » (in S. J. Latsis dir., Method and Appraisal in Economics, Cambridge UP, 1976) et « Rationality as process and as product of thought », American Economic Review 68 (1978), p. 1-16. Ce que le texte lu établit du contenu de l'opposition, sans le mot : « choice is not determined uniquely by the objective characteristics of the problem situation, but depends also on the particular heuristic process that is used to reach the decision » (p. 363). LACUNE DÉCLARÉE : la définition du couple n'est pas dans ma source ; ne pas la reconstituer de mémoire."
+      },
+      {
+        "term_source": "alternatives",
+        "term_fr": "options, possibilités",
+        "note": "Faux ami. Chez Simon « alternatives » désigne les termes du choix, en nombre quelconque (« knowledge of all the alternatives that are open to choice », p. 353). Le français « alternative » désigne au sens strict un choix entre DEUX termes. Rendre par « options » ou « possibilités ». La traduction interne de key_quotation applique cette règle."
+      },
+      {
+        "term_source": "search",
+        "term_fr": "recherche (d'options), exploration",
+        "note": "Terme technique : la recherche des options elles-mêmes, puis, chez Newell & Simon, l'exploration d'un espace de problème (« very selective search through problem spaces that are often immense », p. 362). Le français « recherche » est ambigu (research). Il faut préciser « recherche d'options » ou employer « exploration ». À distinguer de la « search theory » économique de Stigler (1961), que Simon cite p. 356 pour s'en démarquer : Stigler optimise le coût de la recherche, Simon montre que cette optimisation est elle-même hors de portée."
+      },
+      {
+        "term_source": "aspiration level",
+        "term_fr": "niveau d'aspiration",
+        "note": "Emprunt assumé par Simon à la psychologie : « It had its roots in the empirically based psychological theories, due to Lewin and others, of aspiration levels » (Nobel, p. 356). « Niveau d'aspiration » est la forme française reçue dans la tradition lewinienne. Ne pas rendre par « niveau d'exigence » ni « seuil d'acceptabilité » : le mot porte la mobilité du seuil, qui est le paramètre du modèle."
+      },
+      {
+        "term_source": "organizational slack",
+        "term_fr": "slack organisationnel, mou organisationnel",
+        "note": "Employé par Simon entre guillemets et attribué à d'autres — Cyert-March et Leibenstein (Nobel, p. 365). Ce n'est pas un terme simonien. Son rôle mécanique dans le texte lu : « the slack serves as a buffer between the environment and the firm's decisions » (p. 365)."
+      }
+    ],
+
+    "known_ambiguities": [
+      "LA QUESTION DE DATE POSÉE PAR LA COMMANDE RESTE OUVERTE. Simon emploie-t-il « bounded rationality » dès 1955 ? Je n'ai pas pu ouvrir l'article de 1955 et je ne peux donc pas répondre. Ce que la source ouverte permet d'établir, et rien d'autre : (a) le titre même de l'article de 1955, tel que Simon le donne dans sa propre bibliographie (Nobel, p. 371), est « A behavioral model of rational choice » — l'expression n'y figure pas ; (b) Simon rattache l'IDÉE à Administrative Behavior (1947) et les MÉCANISMES aux papiers de 1955 et 1956 (p. 354, p. 356) ; (c) il ne date nulle part la première impression de l'expression. La littérature secondaire situe cette première occurrence dans Models of Man (1957), p. 198, avec l'énoncé du « principle of bounded rationality » — je n'ai PAS ouvert cette page et ne reprends pas cette assertion à mon compte. Deux vérifications à faire, dans cet ordre : chercher l'expression dans le texte de 1955 (QJE 69/1, p. 99-118) ; ouvrir Models of Man p. 198.",
+      "Simon emploie dans ce texte plusieurs étiquettes qu'il traite parfois comme équivalentes et qui ne le sont pas : « behavioral theories of rational choice - theories of bounded rationality » sont mises en apposition p. 347 ; « the behavioral theory of the business firm » (p. 361) renvoie au livre de Cyert & March (1963), qu'il présente comme un développement de ses propres travaux, non comme son œuvre. Ne pas fondre les trois.",
+      "Le statut de l'équivalence de long terme n'est pas tranché par le texte. Simon écrit au conditionnel que le satisficing à niveaux d'aspiration adaptatifs « might even be » équivalent au choix optimal, coûts de recherche compris (p. 356-357), et il maintient par ailleurs que les prédictions divergent (p. 365). Ce qu'il tient fermement, c'est la différence de PROCESSUS et la sensibilité des prédictions au processus (p. 363, p. 365) — pas nécessairement une différence de résultat en toute circonstance.",
+      "Le texte ne systématise pas la distinction entre la borne interne (capacité de calcul, mémoire à long terme) et la borne externe (incertitude du monde). Il les nomme ensemble dans une même phrase p. 353 (« both because of limited computational power and because of uncertainty in the external world ») et les tient ensemble p. 367 sous « boundary conditions imposed by the environment and by the very facts of human long-term memory ». Toute présentation qui n'attribuerait la limite qu'au cerveau force le texte.",
+      "L'articulation entre heuristiques et satisficing est donnée p. 362 en une seule phrase, sans être développée : les heuristiques ORIENTENT la recherche vers des régions prometteuses, les critères de satisficing l'ARRÊTENT. La conférence ne va pas plus loin ; le développement est renvoyé à Newell & Simon, Human Problem Solving (1972), non consulté."
+    ],
+
+    "common_misinterpretations": [
+      {
+        "claim": "La rationalité limitée voudrait dire que les humains sont irrationnels.",
+        "why_wrong": "C'est l'inverse du vocabulaire de Simon. Il désigne son objet comme relevant du choix RATIONNEL : « we do understand today many of the mechanisms of human rational choice » (p. 368) ; « Human behavior, even rational human behavior, is not to be accounted for by a handful of invariants » (p. 367). Le seul endroit où le mot « irrationality » est rapproché de son concept est la note 3 de la p. 348, et Simon y enregistre une convention terminologique d'AUTRUI sans l'adopter : « In a footnote Becker indicates that he denotes as irrational “[A]ny deviation from utility maximization.” Thus, what I have called “bounded rationality” is “irrationality” in Becker's terminology. » La phrase dit : dans le vocabulaire de Becker, où « irrationnel » est défini comme tout écart à la maximisation de l'utilité, mon concept tombe sous ce nom. Elle ne dit pas que Simon tienne le comportement pour irrationnel. Ce que le texte substitue au vocabulaire de l'irrationalité, c'est celui de la procédure : « choice is not determined uniquely by the objective characteristics of the problem situation, but depends also on the particular heuristic process that is used to reach the decision » (p. 363), et « Both areas of inquiry are concerned primarily with procedural rather than substantive rationality » (p. 351).",
+        "source": "Simon 1978 (éd. 1992), p. 348 note 3, p. 351, p. 363, p. 367, p. 368"
+      },
+      {
+        "claim": "Rationalité limitée = satisficing ; c'est la théorie selon laquelle on se contente du premier choix acceptable.",
+        "why_wrong": "Le satisficing est l'un des mécanismes, pas le concept. Simon range trois procédés sous « the general rubric of “bounded rationality” » (p. 353-354) : chercher un choix satisfaisant plutôt qu'optimal ; remplacer les buts globaux abstraits par des sous-buts tangibles dont l'atteinte peut être observée et mesurée ; DIVISER la tâche de décision entre de nombreux spécialistes coordonnés par une structure de communication et d'autorité. Et dans la formalisation, « Two concepts are central to the characterization: search and satisficing » (p. 356) — deux, pas un. Réduire le concept au satisficing supprime précisément le procédé qui donne au concept sa portée organisationnelle (p. 354).",
+        "source": "Simon 1978 (éd. 1992), p. 353-354 et p. 356"
+      },
+      {
+        "claim": "Satisficing, c'est renoncer, viser bas, se contenter de la médiocrité.",
+        "why_wrong": "Le seuil est mobile et suit l'environnement : « aspiration levels are not static, but tend to rise and fall in consonance with changing experiences. In a benign environment that provides many good alternatives, aspirations rise; in a harsher environment, they fall » (p. 356). Un environnement riche élève le seuil. Simon ajoute que l'équivalence avec le choix optimal n'est pas exclue en équilibre de long terme (p. 356-357). Le satisficing est une règle d'ARRÊT de la recherche, indexée sur ce que l'environnement offre — pas un niveau d'ambition bas.",
+        "source": "Simon 1978 (éd. 1992), p. 356-357"
+      },
+      {
+        "claim": "Optimiser un modèle simplifié, c'est sortir de la rationalité limitée et revenir à la rationalité classique.",
+        "why_wrong": "Simon range explicitement ce geste DANS le satisficing : « decision makers can satisfice either by finding optimum solutions for a simplified world, or by finding satisfactory solutions for a more realistic world. Neither approach, in general, dominates the other » (p. 350). Il donne son propre travail en exemple : l'hypothèse de coûts quadratiques rend le problème de programmation dynamique calculable, et « the solution, though it provides optimal decisions for the simplified world of our assumptions, provides, at best, satisfactory solutions for the real-world decision problem that the quadratic function approximates. In-principle, unattainable optimization is sacrificed for in-practice, attainable satisfaction » (p. 351).",
+        "source": "Simon 1978 (éd. 1992), p. 350-351"
+      },
+      {
+        "claim": "La rationalité limitée, c'est le catalogue des biais cognitifs (Kahneman et Tversky).",
+        "why_wrong": "Kahneman et Tversky (1972) apparaissent une seule fois dans le texte, p. 361, et à une place précise : comme réfutation empirique de la théorie de l'utilité espérée subjective, aux côtés des travaux de Kunreuther sur l'assurance inondation. Simon commente : « The evidence on rational decision making is largely negative evidence, evidence of what people do not do » (p. 362). Le contenu POSITIF de sa propre théorie est ailleurs : recherche sélective, heuristiques d'orientation, critères d'arrêt, sous-buts, division du travail de décision (p. 353-354, p. 356, p. 362). Le texte distingue donc nettement ce qui réfute le modèle classique et ce qui le remplace.",
+        "source": "Simon 1978 (éd. 1992), p. 361-362"
+      },
+      {
+        "claim": "Il suffirait de plus d'information, ou de meilleurs outils de calcul, pour supprimer la limite.",
+        "why_wrong": "Deux raisons dans le texte. D'abord, la limite a deux sources et l'une n'est pas dans le décideur : « both because of limited computational power and because of uncertainty in the external world » (p. 353) ; et p. 367, les « boundary conditions » sont « imposed by the environment and by the very facts of human long-term memory ». Ensuite, Simon acte que les outils déplacent la frontière sans l'abolir : « As new mathematical tools for computing optimal and satisfactory decisions are discovered, and as computers become more and more powerful, the recommendations of normative decision theory will change. But as the new recommendations are diffused, the actual, observed, practice of decision making in business firms will change also » (p. 351). Le régime de décision se déplace, il ne devient pas omniscient.",
+        "source": "Simon 1978 (éd. 1992), p. 351, p. 353, p. 367"
+      },
+      {
+        "claim": "Simon prescrit une manière d'organiser l'entreprise.",
+        "why_wrong": "La théorie de la rationalité limitée est présentée comme descriptive : « the task, then was to replace the classical model with one that would describe how decisions could be (and probably actually were) made » (p. 353). Simon traite bien d'un versant normatif, mais c'est celui de la science de gestion et de la recherche opérationnelle, qu'il tient pour un territoire distinct (« Normative Decision Theory », p. 349-351) ; et la seule recommandation qu'il formule en son nom propre dans ce texte est méthodologique, adressée aux économistes : mener des analyses de sensibilité aux hypothèses micro avant de tirer des conclusions de politique économique et surtout avant d'agir sur elles (p. 365-366). Aucune prescription d'organisation n'est énoncée.",
+        "source": "Simon 1978 (éd. 1992), p. 349-351, p. 353, p. 365-366"
+      },
+      {
+        "claim": "La rationalité limitée, c'est « on n'a pas le temps ».",
+        "why_wrong": "ATTRIBUTION NON SOUTENUE PAR CE TEXTE. Simon nomme trois défaillances (p. 356) : ne pas connaître toutes les options, l'incertitude sur les événements exogènes pertinents, l'incapacité de calculer les conséquences ; et deux causes (p. 351, p. 353) : capacités de calcul limitées et information incomplète. Le TEMPS n'est jamais nommé comme borne dans le texte lu. Ce qui s'en approche est le COÛT DE CALCUL — « reasonable costs of computation » (p. 350), « reasonable amounts of calculation » (p. 357) — qui n'est pas la même chose qu'une contrainte de délai. La glose courante « bornée par l'information, le temps et les capacités cognitives » est donc, sur ce texte, exacte pour deux termes sur trois. Si le troisième doit être maintenu, il faut le documenter ailleurs que dans la conférence Nobel.",
+        "source": "Simon 1978 (éd. 1992), p. 350, p. 351, p. 353, p. 356, p. 357 — par absence"
+      }
+    ],
+
+    "limitations": [
+      "UNE SEULE des quatre sources primaires visées a pu être ouverte : la conférence Nobel de 1978. Tout le mécanisme et toutes les citations en proviennent. C'est une source primaire de plein droit — Simon parlant de son propre concept — mais c'est une RÉTROSPECTIVE : elle est postérieure de trente et un ans à Administrative Behavior et de vingt-trois ans à l'article de 1955, et elle reformule. Les mots de 1955 ne sont pas établis ici.",
+      "La question de datation posée par la commande — « bounded rationality » dès 1955, ou plus tard ? — N'EST PAS TRANCHÉE. L'article de 1955 et Models of Man (1957) sont restés fermés. Voir known_ambiguities[0] pour l'état exact de la question et les deux vérifications à faire.",
+      "Aucune pagination de l'article de 1955, de Models of Man ni d'Administrative Behavior ne peut être donnée pour un énoncé précis. Toute fiche citant « Simon 1955, p. X » ou « Simon 1957, p. 198 » sans avoir ouvert ces textes reprendrait une pagination de seconde main.",
+      "La traduction française d'Administrative Behavior (Economica, 1983, trad. Pierre-Emmanuel Dauzat) a été identifiée mais non ouverte, et l'édition anglaise qu'elle traduit n'est pas déterminée. Aucune citation française publiée de Simon n'est donc disponible pour ce dossier : la key_quotation est une traduction interne, et l'écran doit le signaler.",
+      "Le couple procedural / substantive rationality, central pour désamorcer le contresens « les humains sont irrationnels », est employé mais non défini dans la source lue ; Simon renvoie à deux textes (1976 et 1978a) non consultés. La définition manque et n'a pas été comblée.",
+      "La conférence a également paru dans American Economic Review, 69(4), 1979, p. 493-513. Cette version n'a pas été consultée et sa pagination diffère : toute pagination donnée ici vaut pour l'édition World Scientific 1992 seule."
+    ]
+  },
+
+  "validation_input": {
+    "primary_source_confirmed": true,
+    "francophone_layer_searched": true,
+    "confidence_flags": [
+      "Une source primaire de l'auteur sur son propre concept a été ouverte et lue intégralement (conférence Nobel 1978, éd. World Scientific 1992, p. 343-371, PDF de la Fondation Nobel). Les trois pages portant les citations retenues ont été relues sur image rendue à 200 dpi.",
+      "MAIS les trois autres sources primaires visées (QJE 1955, Models of Man 1957, Administrative Behavior) sont en consulted = metadata-only. Le dossier repose sur un texte de 1978.",
+      "key_quotation est une traduction interne non publiée : l'écran doit le signaler et conserver l'original anglais.",
+      "key_quotation date de 1978 et porte sur ce que faisait Administrative Behavior (1947). Une mise en page qui la rattacherait à 1947 ou à 1955 serait une fausse attribution.",
+      "La date de première occurrence de l'expression « bounded rationality » n'est PAS établie. Ne rien affirmer sur ce point à partir de ce dossier.",
+      "Aucune traduction française publiée de la conférence Nobel n'a été identifiée. La traduction française d'Administrative Behavior existe (Economica, 1983) mais n'a pas été ouverte.",
+      "OpenAlex et Semantic Scholar en HTTP 429 ; Zotero indisponible ; API Google Books en quota épuisé (HTTP 429) ; API CORE en 429 ; les sous-domaines de recherche plein texte d'Internet Archive et HathiTrust sont refusés par la passerelle réseau. Une reprise ultérieure pourrait donner accès à l'article de 1955 et à Models of Man."
+    ]
+  },
+
+  "acces_tente": {
+    "date": "2026-08-16",
+    "voies_propres_essayees": [
+      { "voie": "nobelprize.org/uploads/2018/06/simon-lecture.pdf", "resultat": "SUCCÈS — HTTP 200, 219 743 octets, 29 pages, texte intégral p. 343-371. Provenance : Fondation Nobel." },
+      { "voie": "nobelprize.org, page de la conférence (mention d'édition et de copyright)", "resultat": "SUCCÈS via curl — « Copyright © The Nobel Foundation 1978. From Nobel Lectures, Economics 1969-1980, Editor Assar Lindbeck, World Scientific Publishing Co., Singapore, 1992 ». NB : la même page en WebFetch renvoie HTTP 403." },
+      { "voie": "Crossref, DOI 10.2307/1884852 (QJE 1955)", "resultat": "Métadonnées complètes et concordantes ; aucun texte." },
+      { "voie": "Oxford University Press, academic.oup.com/qje/article-pdf/69/1/99/5413375/69-1-99.pdf (lien déposé par l'éditeur dans Crossref)", "resultat": "HTTP 403" },
+      { "voie": "Oxford University Press, page d'abstract QJE 69/1/99", "resultat": "HTTP 403" },
+      { "voie": "JSTOR stable/1884852", "resultat": "HTTP 200 mais page de « Client Challenge » exigeant JavaScript ; aucun contenu." },
+      { "voie": "Unpaywall, 10.2307/1884852", "resultat": "is_oa false, oa_status « closed », has_repository_copy false, oa_locations vide" },
+      { "voie": "Internet Archive, Models of Man (modelsofman0000herb)", "resultat": "access-restricted-item true ; collections inlibrary / printdisabled ; _djvu.txt en HTTP 302 vers authentification" },
+      { "voie": "Internet Archive, API de recherche plein texte (ia-fts.archive.org, ia-pub-fts-api.archive.org, ia-petabox.archive.org)", "resultat": "CONNECT 502 — refus de la passerelle réseau de cette session" },
+      { "voie": "HathiTrust, recherche plein texte (babel.hathitrust.org/cgi/ls)", "resultat": "HTTP 403" },
+      { "voie": "Google Books API", "resultat": "HTTP 429, quota journalier du projet épuisé" },
+      { "voie": "CORE API v3", "resultat": "HTTP 429" },
+      { "voie": "Digital Collections, Carnegie Mellon University (fonds Herbert Simon)", "resultat": "échec de vérification TLS depuis curl, puis HTTP 503 via WebFetch. Voie NON épuisée : c'est le dépôt institutionnel de l'auteur et la piste la plus prometteuse pour une reprise." },
+      { "voie": "Unpaywall sur d'autres textes de Simon (Mind & Society 2000 « Bounded rationality in social science » 10.1007/BF02512227 ; Annual Review of Psychology 1990 « Invariants of Human Behavior » ; Journal of Business 1986 « Rationality in Psychology and Economics » 10.1086/296363 ; New Palgrave « Rationality, Bounded »)", "resultat": "tous « closed », aucune oa_location" },
+      { "voie": "HAL / archives-ouvertes (couche francophone)", "resultat": "SUCCÈS partiel — repère Cozic 2008 « La rationalité limitée » (halshs-00791815) et un rapport de 1999 sur la rationalité simonienne (hal-01526495). Résumés seuls ; sources secondaires, non lues." },
+      { "voie": "Open Library + catalogue de l'INSP (édition française d'Administrative Behavior)", "resultat": "SUCCÈS — notice confirmée : Economica, 1983, XI-321 p., ISBN 2717806768, trad. Pierre-Emmanuel Dauzat, présentation Xavier Greffe, coll. Gestion. Ouvrage non ouvert ; édition anglaise source non déterminée." },
+      { "voie": "Catalogue BnF, API SRU", "resultat": "connexion réinitialisée" },
+      { "voie": "Sudoc", "resultat": "HTTP 500" },
+      { "voie": "Zotero (API locale)", "resultat": "indisponible dans cette session, comme annoncé par la commande" }
+    ],
+    "voies_ecartees_par_principe": [
+      "Copies PDF de l'article de 1955 circulant sur des pages de cours, ResearchGate, Scribd et dépôts de tiers — republication non autorisée ou provenance non traçable.",
+      "Toute reprise, comme citation de Simon, d'une phrase lue dans un texte CITANT Simon (résumés Semantic Scholar, encyclopédies en ligne, articles de commentaire). L'énoncé du « principle of bounded rationality » attribué à Models of Man p. 198 circule abondamment sous cette forme : il n'est PAS repris ici, faute d'avoir ouvert la page."
+    ]
+  }
+}
