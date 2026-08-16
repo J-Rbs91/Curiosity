@@ -18,8 +18,14 @@ export function ProgressBar({ ratio, label, className = "" }: ProgressBarProps) 
         aria-label={label}
         className="h-2 w-full overflow-hidden rounded-full bg-paper-raised"
       >
+        {/*
+         * La progression est lue au montage : la barre part de zéro et rejoint
+         * sa valeur. Le remplissage n'est pas décoratif — c'est ce qui rend la
+         * grandeur perceptible, là où une barre déjà pleine ne se compare
+         * qu'aux autres. Courbe linéaire : une progression n'accélère pas.
+         */}
         <div
-          className="h-full rounded-full bg-accent transition-[width] motion-reduce:transition-none"
+          className="h-full rounded-full bg-accent transition-[width] duration-[var(--dur-mark)] ease-linear"
           style={{ width: `${percent}%` }}
         />
       </div>

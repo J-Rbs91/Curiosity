@@ -39,7 +39,7 @@ export function QuizQuestionView({ question, onAnswered }: QuizQuestionViewProps
                 onClick={() => setSelected(value)}
                 aria-pressed={isSelected}
                 className={[
-                  "w-full min-h-11 rounded-2xl border px-4 py-3 text-left text-[15px] leading-snug transition-colors",
+                  "press w-full min-h-11 rounded-2xl border px-4 py-3 text-left text-[15px] leading-snug",
                   !showState && "border-line hover:border-accent",
                   showState && isCorrectChoice && "border-good bg-good/10 text-ink",
                   showState && isSelected && !isCorrectChoice && "border-warn bg-warn/10 text-ink",
@@ -68,7 +68,7 @@ export function QuizQuestionView({ question, onAnswered }: QuizQuestionViewProps
                 disabled={selected !== null}
                 onClick={() => setSelected(value)}
                 className={[
-                  "min-h-11 flex-1 rounded-2xl border px-4 py-3 text-[15px] font-medium transition-colors",
+                  "press min-h-11 flex-1 rounded-2xl border px-4 py-3 text-[15px] font-medium",
                   !showState && "border-line hover:border-accent",
                   showState && isCorrectChoice && "border-good bg-good/10",
                   showState && isSelected && !isCorrectChoice && "border-warn bg-warn/10",
@@ -90,13 +90,13 @@ export function QuizQuestionView({ question, onAnswered }: QuizQuestionViewProps
             <button
               type="button"
               onClick={() => setSelected("shown")}
-              className="text-sm font-medium text-accent underline underline-offset-4"
+              className="press text-sm font-medium text-accent underline underline-offset-4"
             >
               Voir une réponse modèle
             </button>
           )}
           {selected !== null && selfAssessed === null && (
-            <div className="rounded-2xl border border-line bg-paper-raised p-4 text-[15px] leading-relaxed">
+            <div className="enter-rise rounded-2xl border border-line bg-paper-raised p-4 text-[15px] leading-relaxed">
               {question.correctAnswer}
             </div>
           )}
@@ -104,9 +104,15 @@ export function QuizQuestionView({ question, onAnswered }: QuizQuestionViewProps
       )}
 
       {revealed && question.type !== "open" && (
+        /*
+         * La correction arrive juste sous la réponse, en montant : c'est le
+         * seul mouvement de cet écran, et il désigne l'endroit à lire. La
+         * couleur ne porte jamais l'information seule — « Exact » et « Pas
+         * tout à fait » sont écrits.
+         */
         <div
           className={[
-            "rounded-2xl border p-4 text-[14px] leading-relaxed",
+            "enter-rise rounded-2xl border p-4 text-[14px] leading-relaxed",
             wasCorrect ? "border-good bg-good/10" : "border-warn bg-warn/10",
           ].join(" ")}
         >

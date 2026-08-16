@@ -8,6 +8,8 @@ import { selectNextSession } from "@/services/learning-engine";
 import { resolveSessionPlan, type ResolvedSession } from "@/domain/sessions/resolve";
 import { readPendingSession, clearPendingSession } from "@/lib/pending-session";
 import { SessionRunner } from "@/components/learning/SessionRunner";
+import { Screen } from "@/components/motion/Screen";
+import { SCREEN_MOTION } from "@/components/motion/screen-motion";
 import type { MasteryScore } from "@/types";
 
 const CONTENT = { concepts, authors, themes, caseStudies };
@@ -47,42 +49,47 @@ export default function LearnPage() {
   const explanationLevel = service.getState().settings.explanationLevel;
 
   return (
-    <SessionRunner
-      resolved={resolved}
-      explanationLevel={explanationLevel}
-      onEnterExplanation={() => {
-        if (!knownAtStart.current.has(resolved.primary.id)) {
-          service.recordDiscovery(resolved.primary.id);
-        }
-      }}
-      onEnterConnection={() => {
-        if (!resolved.secondary) return;
-        if (!knownAtStart.current.has(resolved.secondary.id)) {
-          service.recordDiscovery(resolved.secondary.id);
-        } else {
-          service.recordEncounter(resolved.secondary.id);
-        }
-      }}
-      onAnswer={(wasCorrect) => {
-        const updated = service.recordAnswer(resolved.primary.id, wasCorrect);
-        service.recordSession({
-          id: resolved.plan.id,
-          type: resolved.plan.type,
-          conceptIds: [resolved.primary.id, ...(resolved.secondary ? [resolved.secondary.id] : [])],
-          startedAt: new Date().toISOString(),
-          completedAt: new Date().toISOString(),
-          quizCorrect: wasCorrect ? 1 : 0,
-          quizTotal: 1,
-        });
-        return {
-          masteryScore: updated.masteryScore as MasteryScore,
-          nextReviewAt: updated.nextReviewAt,
-        };
-      }}
-      onFinish={() => {
-        clearPendingSession();
-        router.push("/");
-      }}
-    />
+    <Screen>
+      <SessionRunner
+        resolved={resolved}
+        explanationLevel={explanationLevel}
+        onEnterExplanation={() => {
+          if (!knownAtStart.current.has(resolved.primary.id)) {
+            service.recordDiscovery(resolved.primary.id);
+          }
+        }}
+        onEnterConnection={() => {
+          if (!resolved.secondary) return;
+          if (!knownAtStart.current.has(resolved.secondary.id)) {
+            service.recordDiscovery(resolved.secondary.id);
+          } else {
+            service.recordEncounter(resolved.secondary.id);
+          }
+        }}
+        onAnswer={(wasCorrect) => {
+          const updated = service.recordAnswer(resolved.primary.id, wasCorrect);
+          service.recordSession({
+            id: resolved.plan.id,
+            type: resolved.plan.type,
+            conceptIds: [
+              resolved.primary.id,
+              ...(resolved.secondary ? [resolved.secondary.id] : []),
+            ],
+            startedAt: new Date().toISOString(),
+            completedAt: new Date().toISOString(),
+            quizCorrect: wasCorrect ? 1 : 0,
+            quizTotal: 1,
+          });
+          return {
+            masteryScore: updated.masteryScore as MasteryScore,
+            nextReviewAt: updated.nextReviewAt,
+          };
+        }}
+        onFinish={() => {
+          clearPendingSession();
+          router.push("/", { transitionTypes: SCREEN_MOTION.leaveSession });
+        }}
+      />
+    </Screen>
   );
 }
