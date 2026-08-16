@@ -71,7 +71,7 @@ export default function ConceptDetailPage() {
           Explorer
         </Link>
 
-        <p className="mt-4 text-xs font-medium uppercase tracking-wide text-accent">
+        <p className="mt-4 text-xs font-medium uppercase tracking-wide text-ink-faint">
           {mounted ? masteryLabel((progress?.masteryScore ?? 0) as MasteryScore) : ""}
         </p>
         <h1 className="mt-1 font-serif-display text-2xl font-semibold text-ink">{concept.title}</h1>
@@ -88,8 +88,8 @@ export default function ConceptDetailPage() {
           {concept.detailedExplanation}
         </p>
 
-        <div className="mt-6 rounded-2xl border border-line bg-paper-raised p-4">
-          <p className="mb-1 text-xs font-medium uppercase tracking-wide text-accent">
+        <div className="mt-6 rounded-2xl bg-paper-raised p-4">
+          <p className="mb-1 text-xs font-medium uppercase tracking-wide text-ink-faint">
             Dans une organisation
           </p>
           <p className="text-[15px] leading-relaxed text-ink-soft">{concept.concreteExample}</p>
@@ -97,14 +97,14 @@ export default function ConceptDetailPage() {
 
         {prerequisites.length > 0 && (
           <div className="mt-6">
-            <h2 className="text-xs font-medium uppercase tracking-wide text-accent">Prérequis</h2>
+            <h2 className="text-xs font-medium uppercase tracking-wide text-ink-faint">Prérequis</h2>
             <ConceptLinkList concepts={prerequisites} />
           </div>
         )}
 
         {related.length > 0 && (
           <div className="mt-6">
-            <h2 className="text-xs font-medium uppercase tracking-wide text-accent">
+            <h2 className="text-xs font-medium uppercase tracking-wide text-ink-faint">
               Concepts reliés
             </h2>
             <ConceptLinkList concepts={related} />
@@ -127,7 +127,7 @@ function ConceptLinkList({ concepts: items }: { concepts: typeof concepts }) {
           <Link
             href={`/explore/concepts/${c.slug}`}
             transitionTypes={SCREEN_MOTION.deeper}
-            className="press inline-flex rounded-full border border-line px-3 py-1.5 text-sm text-ink hover:border-accent hover:text-accent"
+            className="press inline-flex rounded-full bg-paper-raised px-3 py-1.5 text-sm text-ink-soft hover:bg-paper-contact hover:text-ink"
           >
             {c.title}
           </Link>

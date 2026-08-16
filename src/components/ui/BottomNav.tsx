@@ -54,12 +54,12 @@ export function BottomNav() {
                     size={22}
                     strokeWidth={active ? 2.25 : 1.75}
                     className={`transition-colors motion-ui ${
-                      active ? "text-accent" : "text-ink-soft"
+                      active ? "text-accent" : "text-ink-faint"
                     }`}
                   />
                   <span
                     className={`transition-colors motion-ui ${
-                      active ? "font-medium text-accent" : "text-ink-soft"
+                      active ? "font-medium text-accent" : "text-ink-faint"
                     }`}
                   >
                     {label}

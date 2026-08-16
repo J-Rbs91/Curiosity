@@ -40,10 +40,10 @@ export function QuizQuestionView({ question, onAnswered }: QuizQuestionViewProps
                 aria-pressed={isSelected}
                 className={[
                   "press w-full min-h-11 rounded-2xl border px-4 py-3 text-left text-[15px] leading-snug",
-                  !showState && "border-line hover:border-accent",
+                  !showState && "border-transparent bg-paper-raised hover:bg-paper-contact",
                   showState && isCorrectChoice && "border-good bg-good/10 text-ink",
                   showState && isSelected && !isCorrectChoice && "border-warn bg-warn/10 text-ink",
-                  showState && !isSelected && !isCorrectChoice && "border-line opacity-60",
+                  showState && !isSelected && !isCorrectChoice && "border-transparent bg-paper-raised opacity-50",
                 ]
                   .filter(Boolean)
                   .join(" ")}
@@ -69,10 +69,10 @@ export function QuizQuestionView({ question, onAnswered }: QuizQuestionViewProps
                 onClick={() => setSelected(value)}
                 className={[
                   "press min-h-11 flex-1 rounded-2xl border px-4 py-3 text-[15px] font-medium",
-                  !showState && "border-line hover:border-accent",
+                  !showState && "border-transparent bg-paper-raised hover:bg-paper-contact",
                   showState && isCorrectChoice && "border-good bg-good/10",
                   showState && isSelected && !isCorrectChoice && "border-warn bg-warn/10",
-                  showState && !isSelected && !isCorrectChoice && "border-line opacity-60",
+                  showState && !isSelected && !isCorrectChoice && "border-transparent bg-paper-raised opacity-50",
                 ]
                   .filter(Boolean)
                   .join(" ")}
@@ -96,7 +96,7 @@ export function QuizQuestionView({ question, onAnswered }: QuizQuestionViewProps
             </button>
           )}
           {selected !== null && selfAssessed === null && (
-            <div className="enter-rise rounded-2xl border border-line bg-paper-raised p-4 text-[15px] leading-relaxed">
+            <div className="enter-rise rounded-2xl bg-paper-raised p-4 text-[15px] leading-relaxed">
               {question.correctAnswer}
             </div>
           )}
@@ -116,7 +116,9 @@ export function QuizQuestionView({ question, onAnswered }: QuizQuestionViewProps
             wasCorrect ? "border-good bg-good/10" : "border-warn bg-warn/10",
           ].join(" ")}
         >
-          <p className="mb-1 font-medium">{wasCorrect ? "Exact." : "Pas tout à fait."}</p>
+          <p className={`mb-1 font-medium ${wasCorrect ? "text-good" : "text-warn"}`}>
+            {wasCorrect ? "Exact." : "Pas tout à fait."}
+          </p>
           <p className="text-ink-soft">{question.explanation}</p>
         </div>
       )}

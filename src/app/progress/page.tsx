@@ -71,14 +71,14 @@ export default function ProgressPage() {
 
         {toReview.length > 0 && (
           <section className="mt-10">
-            <h2 className="text-xs font-medium uppercase tracking-wide text-accent">À revoir</h2>
+            <h2 className="text-xs font-medium uppercase tracking-wide text-ink-faint">À revoir</h2>
             <ul className="stagger mt-3 space-y-2">
               {toReview.slice(0, REVIEW_SHORTLIST).map(({ progress, concept }) => (
                 <li key={concept.id}>
                   <Link
                     href={`/explore/concepts/${concept.slug}`}
                     transitionTypes={SCREEN_MOTION.deeper}
-                    className="press-soft flex items-center justify-between gap-3 rounded-2xl border border-line px-4 py-3 hover:border-accent"
+                    className="press-soft flex items-center justify-between gap-3 rounded-2xl bg-paper-raised px-4 py-3 hover:bg-paper-contact"
                   >
                     <span className="text-[15px] text-ink">{concept.title}</span>
                     <span className="shrink-0 text-xs text-ink-soft">
@@ -104,7 +104,7 @@ export default function ProgressPage() {
          * vide en face d'un « 1/6 ». Le décompte des rencontres reste lisible
          * en haut de cet écran et concept par concept sur la page d'un auteur.
          */}
-        <h2 className="mt-10 text-xs font-medium uppercase tracking-wide text-accent">Auteurs</h2>
+        <h2 className="mt-10 text-xs font-medium uppercase tracking-wide text-ink-faint">Auteurs</h2>
         <ul className="mt-3 space-y-4">
           {authorsProgress.map(({ author, ratio, understood: u, totalConcepts }) => (
             <li key={author.id}>
@@ -123,7 +123,7 @@ export default function ProgressPage() {
           ))}
         </ul>
 
-        <h2 className="mt-10 text-xs font-medium uppercase tracking-wide text-accent">Thèmes</h2>
+        <h2 className="mt-10 text-xs font-medium uppercase tracking-wide text-ink-faint">Thèmes</h2>
         <ul className="mt-3 space-y-4">
           {themesProgress.map(({ theme, ratio, understood: u, totalConcepts }) => (
             <li key={theme.id}>
@@ -148,7 +148,7 @@ export default function ProgressPage() {
 
 function Stat({ value, label }: { value: number; label: string }) {
   return (
-    <div className="rounded-2xl border border-line p-4 text-center">
+    <div className="rounded-2xl bg-paper-raised p-4 text-center">
       <p className="font-serif-display text-2xl font-semibold text-ink tabular-nums">{value}</p>
       <p className="mt-0.5 text-xs text-ink-soft">{label}</p>
     </div>

@@ -64,7 +64,7 @@ export default function SettingsPage() {
         <h1 className="mt-3 font-serif-display text-2xl font-semibold text-ink">Réglages</h1>
 
         <fieldset className="mt-8">
-          <legend className="text-xs font-medium uppercase tracking-wide text-accent">
+          <legend className="text-xs font-medium uppercase tracking-wide text-ink-faint">
             Niveau d&apos;explication
           </legend>
           <div className="mt-3 flex gap-2">
@@ -74,10 +74,10 @@ export default function SettingsPage() {
                 type="button"
                 aria-pressed={settings.explanationLevel === value}
                 onClick={() => update({ explanationLevel: value })}
-                className={`press min-h-11 flex-1 rounded-full border px-3 text-sm font-medium ${
+                className={`press min-h-11 flex-1 rounded-full px-3 text-sm font-medium ${
                   settings.explanationLevel === value
-                    ? "border-accent bg-accent-soft text-accent"
-                    : "border-line text-ink-soft"
+                    ? "bg-accent text-accent-contrast"
+                    : "bg-paper-raised text-ink-soft hover:bg-paper-contact"
                 }`}
               >
                 {label}
@@ -87,7 +87,7 @@ export default function SettingsPage() {
         </fieldset>
 
         <fieldset className="mt-8">
-          <legend className="text-xs font-medium uppercase tracking-wide text-accent">
+          <legend className="text-xs font-medium uppercase tracking-wide text-ink-faint">
             Durée préférée
           </legend>
           <div className="mt-3 flex gap-2">
@@ -97,10 +97,10 @@ export default function SettingsPage() {
                 type="button"
                 aria-pressed={settings.preferredDuration === value}
                 onClick={() => update({ preferredDuration: value })}
-                className={`press min-h-11 flex-1 rounded-full border px-3 text-sm font-medium ${
+                className={`press min-h-11 flex-1 rounded-full px-3 text-sm font-medium ${
                   settings.preferredDuration === value
-                    ? "border-accent bg-accent-soft text-accent"
-                    : "border-line text-ink-soft"
+                    ? "bg-accent text-accent-contrast"
+                    : "bg-paper-raised text-ink-soft hover:bg-paper-contact"
                 }`}
               >
                 {label}

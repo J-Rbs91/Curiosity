@@ -50,7 +50,7 @@ export default function ThemeDetailPage() {
           </p>
         )}
 
-        <h2 className="mt-8 text-xs font-medium uppercase tracking-wide text-accent">
+        <h2 className="mt-8 text-xs font-medium uppercase tracking-wide text-ink-faint">
           Concepts ({themeConcepts.length})
         </h2>
         <ul className="stagger mt-3 space-y-2">
@@ -61,7 +61,7 @@ export default function ThemeDetailPage() {
                 <Link
                   href={`/explore/concepts/${concept.slug}`}
                   transitionTypes={SCREEN_MOTION.deeper}
-                  className="press-soft flex items-center justify-between gap-3 rounded-2xl border border-line px-4 py-3 hover:border-accent"
+                  className="press-soft flex items-center justify-between gap-3 rounded-2xl bg-paper-raised px-4 py-3 hover:bg-paper-contact"
                 >
                   <span className="text-[15px] text-ink">{concept.title}</span>
                   <span className="shrink-0 text-xs text-ink-soft">

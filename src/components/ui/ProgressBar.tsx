@@ -16,7 +16,7 @@ export function ProgressBar({ ratio, label, className = "" }: ProgressBarProps) 
         aria-valuemin={0}
         aria-valuemax={100}
         aria-label={label}
-        className="h-2 w-full overflow-hidden rounded-full bg-paper-raised"
+        className="h-2 w-full overflow-hidden rounded-full bg-track"
       >
         {/*
          * La progression est lue au montage : la barre part de zéro et rejoint
@@ -25,7 +25,7 @@ export function ProgressBar({ ratio, label, className = "" }: ProgressBarProps) 
          * qu'aux autres. Courbe linéaire : une progression n'accélère pas.
          */}
         <div
-          className="h-full rounded-full bg-accent transition-[width] duration-[var(--dur-mark)] ease-linear"
+          className="h-full rounded-full bg-ink-soft transition-[width] duration-[var(--dur-mark)] ease-linear"
           style={{ width: `${percent}%` }}
         />
       </div>

@@ -90,7 +90,7 @@ function ExploreBody({ view }: { view: ViewId }) {
             scroll={false}
             aria-current={id === view ? "true" : undefined}
             className={`press relative z-10 flex min-h-9 flex-1 items-center justify-center rounded-full text-sm font-medium ${
-              id === view ? "text-accent-contrast" : "text-ink-soft"
+              id === view ? "text-accent-contrast" : "text-ink-soft hover:text-ink"
             }`}
           >
             {label}
@@ -111,7 +111,7 @@ function ExploreBody({ view }: { view: ViewId }) {
                 <Link
                   href={`/explore/authors/${author.slug}`}
                   transitionTypes={SCREEN_MOTION.deeper}
-                  className="press-soft block rounded-2xl border border-line p-4 hover:border-accent"
+                  className="press-soft block rounded-2xl bg-paper-raised p-4 hover:bg-paper-contact"
                 >
                   <div className="flex items-baseline justify-between gap-3">
                     <span className="font-serif-display text-lg font-semibold text-ink">
@@ -137,7 +137,7 @@ function ExploreBody({ view }: { view: ViewId }) {
                 <Link
                   href={`/explore/themes/${theme.slug}`}
                   transitionTypes={SCREEN_MOTION.deeper}
-                  className="press-soft block rounded-2xl border border-line p-4 hover:border-accent"
+                  className="press-soft block rounded-2xl bg-paper-raised p-4 hover:bg-paper-contact"
                 >
                   <div className="flex items-baseline justify-between gap-3">
                     <span className="font-serif-display text-lg font-semibold text-ink">

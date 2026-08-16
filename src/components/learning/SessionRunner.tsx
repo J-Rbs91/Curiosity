@@ -143,7 +143,7 @@ export function SessionRunner({
           <div>
             {phase === "question" && (
               <div className="flex min-h-[60svh] flex-col justify-center gap-6">
-                <p className="text-xs font-medium uppercase tracking-wide text-accent">
+                <p className="text-xs font-medium uppercase tracking-wide text-ink-faint">
                   {meta.label} · {plan.estimatedMinutes} min
                 </p>
                 <h1 className="font-serif-display text-[28px] font-semibold leading-snug text-ink">
@@ -194,8 +194,8 @@ export function SessionRunner({
                       {caseStudy.readings.map((reading) => {
                         const author = resolved.authors.find((a) => a.id === reading.authorId);
                         return (
-                          <div key={reading.authorId} className="rounded-2xl border border-line p-4">
-                            <p className="mb-1 text-xs font-medium uppercase tracking-wide text-accent">
+                          <div key={reading.authorId} className="rounded-2xl bg-paper-raised p-4">
+                            <p className="mb-1 text-xs font-medium uppercase tracking-wide text-ink-faint">
                               Lecture {author?.name ?? reading.authorId}
                             </p>
                             <p className="text-[15px] leading-relaxed text-ink-soft">
@@ -208,12 +208,12 @@ export function SessionRunner({
                   </>
                 ) : (
                   <>
-                    <p className="text-xs font-medium uppercase tracking-wide text-accent">
+                    <p className="text-xs font-medium uppercase tracking-wide text-ink-faint">
                       Dans une organisation
                     </p>
                     <p className="text-[17px] leading-relaxed text-ink">{primary.concreteExample}</p>
                     {primary.analysisQuestions[0] && (
-                      <p className="rounded-2xl border border-line bg-paper-raised p-4 text-[15px] italic leading-relaxed text-ink-soft">
+                      <p className="rounded-2xl bg-paper-raised p-4 text-[15px] italic leading-relaxed text-ink-soft">
                         {primary.analysisQuestions[0]}
                       </p>
                     )}
@@ -247,7 +247,7 @@ export function SessionRunner({
 
             {phase === "quiz" && quizQuestion && (
               <div className="space-y-5">
-                <p className="text-xs font-medium uppercase tracking-wide text-accent">
+                <p className="text-xs font-medium uppercase tracking-wide text-ink-faint">
                   Vérification
                 </p>
                 <QuizQuestionView
@@ -263,7 +263,7 @@ export function SessionRunner({
 
             {phase === "result" && (
               <div className="flex min-h-[50svh] flex-col justify-center gap-6">
-                <p className="text-xs font-medium uppercase tracking-wide text-accent">Résultat</p>
+                <p className="text-xs font-medium uppercase tracking-wide text-ink-faint">Résultat</p>
                 <h2 className="enter-mark font-serif-display text-2xl font-semibold text-ink">
                   {primary.title} — {masteryLabel(answerResult?.masteryScore ?? 1)}
                 </h2>

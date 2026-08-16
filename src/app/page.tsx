@@ -46,7 +46,7 @@ export default function TodayPage() {
     return (
       <Screen>
         <div className="stagger mx-auto flex min-h-svh max-w-md flex-col justify-center gap-8 px-6">
-          <p className="text-xs font-medium uppercase tracking-wide text-accent">
+          <p className="text-xs font-medium uppercase tracking-wide text-ink-faint">
             Sociologie des organisations
           </p>
           <h1 className="font-serif-display text-[30px] font-semibold leading-snug text-ink">
@@ -78,7 +78,7 @@ export default function TodayPage() {
        * transforme cette apparition en arrivée plutôt qu'en surgissement.
        */}
       <div className="stagger mx-auto flex min-h-svh max-w-md flex-col justify-center gap-8 px-6">
-        <p className="text-xs font-medium uppercase tracking-wide text-accent">
+        <p className="text-xs font-medium uppercase tracking-wide text-ink-faint">
           Sociologie des organisations
         </p>
 

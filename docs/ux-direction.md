@@ -39,7 +39,7 @@ Dimension porteuse  : le mouvement.
 Où il se manifeste  : navigation entre écrans, phases de la session, changement
                       d'onglet, appui sur toute cible, remplissage des barres de
                       progression, révélation de la correction d'un quiz.
-Ce qui reste neutre : la palette (un seul accent, inchangée), la typographie
+Ce qui reste neutre : la palette — achromatique, voir §2 bis —, la typographie
                       (deux familles, inchangées), le rythme (une colonne de
                       448 px), la matière (aucune ombre, aucun flou décoratif),
                       l'imagerie (aucune), la voix (déjà juste).
@@ -60,10 +60,78 @@ vérifiables** — un qualificatif non traduit ne s'implémente pas :
 
 | Intention | Décision observable |
 |---|---|
-| Sobre | Une seule couleur d'accent · aucun dégradé · aucune ombre qui ne corresponde à un empilement réel |
+| Sobre | Aucune couleur décorative · aucun dégradé · aucune ombre : sur du noir, une élévation se dit par la luminosité |
 | Minimaliste | Aucune information retirée pour épurer : ce qui est retiré est du bruit, et le seul retrait effectué est justifié au §5 |
 | Zéro distraction | Rien ne bouge sans qu'un état ait changé · la barre de navigation disparaît pendant une session · aucun mouvement ne retarde une information attendue |
 | Très animé | Tout changement d'état est joué : sept familles de transition, listées au §4 |
+
+---
+
+## 2 bis. La palette
+
+**Application sombre, sans variante claire.** Fond noir, et une échelle de gris.
+
+C'est une décision assumée, pas un défaut : la méthode considère normalement le
+sombre-par-défaut comme un choix esthétique déguisé en décision, et son critère de
+validation est « le mode clair existe-t-il et tient-il ». Ici il n'existe pas. Ce
+qu'on y gagne — une seule palette à tenir, un noir qui éteint réellement l'écran
+sur les dalles OLED, une lecture reposante le soir — se paie par une lisibilité
+moindre en plein soleil. Les contrastes élevés retenus ci-dessous limitent ce coût
+sans l'annuler.
+
+### L'échelle
+
+Onze valeurs, numérotées comme celles de Tailwind : **50 est la plus claire, 950 la
+plus sombre.** Ce n'est pas un dégradé — c'est une échelle de nuances, et chaque
+barreau a un emploi.
+
+| Valeur | Contraste sur le noir | Ce qu'elle a le droit de porter |
+|---|---|---|
+| `--n-950` `#000000` | — | Le fond |
+| `--n-850` `#121212` | 1,12:1 | Une surface levée : carte, encadré, ligne de liste |
+| `--n-800` `#1c1c1c` | 1,23:1 | La même surface au contact |
+| `--n-700` `#2a2a2a` | 1,46:1 | La piste d'une barre de progression |
+| `--n-600` `#3d3d3d` | 1,93:1 | Un séparateur, un filet |
+| `--n-500` `#6b6b6b` | 3,94:1 | Une bordure ou une icône **fonctionnelle** — au-dessus du seuil de 3 |
+| `--n-400` `#8f8f8f` | 6,49:1 | Un intitulé en capitales, un texte tertiaire |
+| `--n-300` `#b5b5b5` | 10,24:1 | Le texte secondaire |
+| `--n-100` `#ededed` | 17,94:1 | Le texte principal |
+| `--n-50` `#fafafa` | 20,12:1 | L'action principale, la position courante |
+
+Les ratios sont calculés, pas estimés. Ils décident : `--n-500` ne peut pas porter
+du texte courant (il lui manque 0,6 pour atteindre 4,5), et c'est exactement pour
+ça qu'il porte les bordures, dont le seuil est de 3.
+
+**Le texte principal n'est pas blanc pur**, et le fond ne remonte jamais vers le
+gris moyen : sur du noir, du blanc pur produit un halo qui fatigue à la lecture
+suivie, ce qui est précisément l'usage de ce produit.
+
+### Deux règles
+
+**L'accent n'est plus une couleur.** C'est `--n-50`, la valeur la plus claire de
+l'échelle. Elle est rare et ne dit qu'une chose : voici l'action, ou voici où vous
+êtes. Le bouton principal est un pavé blanc à texte noir, l'onglet actif une
+pilule blanche, le repère de position une barre blanche.
+
+**La couleur ne signale que ce qui est juste, ce qui est faux, et ce qui est
+irréversible.** Deux teintes désaturées, `--good` et `--warn`, et rien d'autre dans
+tout le produit. Elles ne sont jamais employées seules : « Exact. », « Pas tout à
+fait. » et « Réinitialiser la progression » sont écrits, faute de quoi
+l'information disparaîtrait pour qui ne distingue pas ces deux teintes.
+
+### Ce qui remplace les bordures
+
+Sur fond clair, une carte se délimitait par un filet. Sur du noir, un filet devrait
+atteindre le seuil de contraste des éléments d'interface pour être perçu — il
+deviendrait alors plus bruyant que la surface qu'il entoure. **Les cartes, les
+lignes de liste, les tuiles et les réponses de quiz sont donc des surfaces levées**
+(`--n-850`), qui s'éclaircissent au contact (`--n-800`). Une bordure ne réapparaît
+que lorsqu'elle porte un état : la bonne réponse, la mauvaise, le contour d'un
+bouton secondaire.
+
+Conséquence à ne pas perdre de vue en modifiant le quiz : la bordure est déclarée
+en permanence, transparente tant qu'aucun état n'est à porter. Sans cela, son
+apparition décalerait la mise en page d'un pixel au moment de la réponse.
 
 ---
 
@@ -149,7 +217,7 @@ progression et, concept par concept, sur la page de chaque auteur.
 
 | Fichier | Ce qu'il porte |
 |---|---|
-| `src/app/globals.css` | Tous les tokens de mouvement, les classes de transition, le focus, les replis en mouvement réduit |
+| `src/app/globals.css` | L'échelle de neutres et les rôles, tous les tokens de mouvement, les classes de transition, le focus, les replis en mouvement réduit |
 | `src/components/motion/screen-motion.ts` | Les quatre sens de circulation, et eux seuls |
 | `src/components/motion/Screen.tsx` | La correspondance sens → animation, à poser dans chaque `page.tsx` |
 | `src/components/ui/AppShell.tsx` | Les écrans immersifs et la réserve sous le contenu |
@@ -170,3 +238,7 @@ listés plutôt que supposés :
   le contenu se substitue instantanément.
 - La zone sûre du système sur un appareil à encoche, `env(safe-area-inset-bottom)`
   valant zéro sur un navigateur de bureau.
+- La lisibilité en plein soleil, qui est le coût connu d'une application sans mode
+  clair et qui ne se mesure pas depuis un écran de bureau.
+- Le rendu du noir pur sur une dalle OLED réelle — notamment le lissé des dégradés
+  de gris aux valeurs les plus basses de l'échelle.

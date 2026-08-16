@@ -1,16 +1,61 @@
 @import "tailwindcss";
 
 :root {
-  --paper: #faf6ef;
-  --paper-raised: #f3ede1;
-  --ink: #241f18;
-  --ink-soft: #5c5344;
-  --line: #e2d8c4;
-  --accent: #a8461f;
-  --accent-soft: #f1e1d3;
-  --accent-contrast: #fffaf3;
-  --good: #3f6b3f;
-  --warn: #a8461f;
+  /*
+   * Échelle de neutres, numérotée comme celles de Tailwind : 50 est la plus
+   * claire, 950 la plus sombre. Onze valeurs, dont neuf réellement utilisées —
+   * c'est là que se joue la qualité perçue d'une interface sans couleur, bien
+   * plus que dans le choix d'un accent.
+   *
+   * Le ratio de contraste de chaque valeur sur le fond noir est indiqué : il ne
+   * se devine pas à l'œil, et c'est lui qui décide de ce qu'une valeur a le
+   * droit de porter. Seuils : 4,5 pour du texte courant, 3 pour une bordure ou
+   * une icône qui porte une fonction.
+   */
+  --n-950: #000000; /* fond                                          */
+  --n-900: #0a0a0a; /* surface à peine détachée du fond              */
+  --n-850: #121212; /* surface levée : carte, encadré, ligne de liste */
+  --n-800: #1c1c1c; /* même surface au survol, ou au contact          */
+  --n-700: #2a2a2a; /* piste d'une barre de progression       1,46:1 */
+  --n-600: #3d3d3d; /* séparateur, filet                      1,93:1 */
+  --n-500: #6b6b6b; /* bordure et icône fonctionnelles        3,94:1 */
+  --n-400: #8f8f8f; /* texte tertiaire, intitulé en capitales 6,49:1 */
+  --n-300: #b5b5b5; /* texte secondaire                      10,24:1 */
+  --n-100: #ededed; /* texte principal                       17,94:1 */
+  --n-50: #fafafa;  /* action principale, position courante  20,12:1 */
+
+  /*
+   * Rôles. Les composants n'emploient que ces noms : une valeur littérale au
+   * point d'usage rend un changement de palette impossible à mener à son terme.
+   */
+  --paper: var(--n-950);
+  --paper-raised: var(--n-850);
+  --paper-contact: var(--n-800);
+  --ink: var(--n-100);
+  --ink-soft: var(--n-300);
+  --ink-faint: var(--n-400);
+  --line: var(--n-600);
+  --line-strong: var(--n-500);
+  --track: var(--n-700);
+
+  /*
+   * L'« accent » n'est plus une couleur : c'est la valeur la plus claire de
+   * l'échelle. Elle est rare, et elle ne dit qu'une chose — voici l'action, ou
+   * voici où vous êtes.
+   */
+  --accent: var(--n-50);
+  --accent-soft: var(--n-800);
+  --accent-contrast: var(--n-950);
+
+  /*
+   * Les deux seules couleurs du produit, et la règle qui les gouverne : la
+   * couleur ne signale que ce qui est juste, ce qui est faux, et ce qui est
+   * irréversible. Elles sont désaturées pour tenir sur du noir sans vibrer, et
+   * jamais employées seules — un mot les accompagne toujours, faute de quoi
+   * l'information disparaîtrait pour qui ne distingue pas ces deux teintes.
+   */
+  --good: #71a97c; /* 7,67:1 */
+  --warn: #d08a6a; /* 7,53:1 */
 
   /*
    * Grammaire de mouvement — voir docs/ux-direction.md.
@@ -36,9 +81,13 @@
 @theme inline {
   --color-paper: var(--paper);
   --color-paper-raised: var(--paper-raised);
+  --color-paper-contact: var(--paper-contact);
   --color-ink: var(--ink);
   --color-ink-soft: var(--ink-soft);
+  --color-ink-faint: var(--ink-faint);
   --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-track: var(--track);
   --color-accent: var(--accent);
   --color-accent-soft: var(--accent-soft);
   --color-accent-contrast: var(--accent-contrast);
@@ -48,19 +97,13 @@
   --font-sans: var(--font-inter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --paper: #17150f;
-    --paper-raised: #201d15;
-    --ink: #ece4d3;
-    --ink-soft: #a89d87;
-    --line: #34301f;
-    --accent: #d98452;
-    --accent-soft: #2e2013;
-    --accent-contrast: #17150f;
-    --good: #7fa876;
-    --warn: #d98452;
-  }
+/*
+ * Application sombre, sans variante claire. Le déclarer au navigateur plutôt
+ * que le laisser deviner : c'est ce qui donne des contrôles de formulaire, des
+ * barres de défilement et des sélections de texte accordés au reste.
+ */
+:root {
+  color-scheme: dark;
 }
 
 body {
@@ -83,9 +126,18 @@ h3,
 }
 
 ::selection {
-  background: var(--accent-soft);
-  color: var(--accent);
+  background: var(--n-100);
+  color: var(--n-950);
 }
+
+/*
+ * Sur fond noir, une élévation se dit par la luminosité, pas par une ombre :
+ * une ombre portée n'a rien à assombrir. Une surface qui monte s'éclaircit —
+ * d'où `bg-paper-raised` puis `hover:bg-paper-contact` sur ce qui se manipule,
+ * plutôt qu'une bordure. Une bordure sur du noir devrait atteindre le seuil de
+ * contraste des éléments d'interface pour être perçue, ce qui la rend plus
+ * bruyante que la surface qu'elle entoure.
+ */
 
 /* --------------------------------------------------------------------------
  * Réglages de transition
