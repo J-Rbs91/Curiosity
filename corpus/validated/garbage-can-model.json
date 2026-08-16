@@ -2,20 +2,27 @@
   "$schema": "../schema/concept.record.schema.json",
   "id": "garbage-can-model",
   "slug": "garbage-can-model",
-  "status": "CANDIDATE",
+  "status": "VALIDATED",
   "canonical_name_fr": "Modèle de la poubelle",
   "canonical_name_en": "Garbage can model",
-
   "scope": {
     "in_scope": true,
     "rationale": "Le concept porte sur la décision organisationnelle : il décrit comment une organisation produit des choix quand ses buts sont ambigus et disputés, son savoir causal non partagé et la participation dépendante des sollicitations concurrentes d'attention (Cohen, March & Olsen 2012, p. 21-22). Il est rattaché à trois auteurs identifiés du champ, dont James G. March, qui figure au noyau d'auteurs de corpus/perimeter.md. Il est enseignable : le mécanisme — des problèmes, des solutions, des participants et des occasions de choix qui s'apparient par coprésence temporelle plutôt que par adéquation moyens-fins — se reconnaît dans une réunion, une commission ou un comité de direction réels, sans appareil formel préalable. Il n'est ni prescriptif ni psychologique : les auteurs revendiquent une portée descriptive et refusent explicitement la lecture normative qui ferait du modèle un diagnostic de dysfonctionnement à corriger (CMO 2012, p. 24-25)."
   },
-
   "attribution": {
     "authors": [
-      { "name": "Michael D. Cohen", "app_author_id": null },
-      { "name": "James G. March", "app_author_id": "march" },
-      { "name": "Johan P. Olsen", "app_author_id": null }
+      {
+        "name": "Michael D. Cohen",
+        "app_author_id": null
+      },
+      {
+        "name": "James G. March",
+        "app_author_id": "march"
+      },
+      {
+        "name": "Johan P. Olsen",
+        "app_author_id": null
+      }
     ],
     "authorship": "COAUTHORED",
     "associated_author": "James G. March",
@@ -25,10 +32,8 @@
       "note": "Attestation de première main : « The label ‘garbage can’ entered the discussion as a handy simile while we discussed observations we had all made repeatedly, that somewhat bizarre combinations of issues were often found to be at stake in actual organizational choices. We didn't expect the shorthand label for the ideas to last, but it stuck, and stimulated a cascade of interpretations » (Cohen, March & Olsen 2012, p. 22). Le terme n'est donc pas forgé par un commentateur postérieur : une recherche Crossref sur « garbage can » associé à la décision ou à l'organisation avant 1972 n'a retourné aucun antécédent en sciences sociales (occurrences relevant de l'acoustique, de l'hygiène publique et de l'entomologie). La réception francophone date également l'origine de 1972 : « Lorsqu'elle fut proposée en 1972 dans l'article fondateur » (Friedberg 1997, p. 271). En revanche, les auteurs refusent la paternité des IDÉES elles-mêmes : « Any search for true beginnings is likely to end in infinite regress. No useful idea has a sharp beginning, for each beginning has an antecedent. Garbage can ideas are like that. […] They have many ancestors and caretakers, but no parents. Certainly not us. » (CMO 2012, p. 20). Ce refus porte sur les idées, non sur la formulation de 1972 : il n'affaiblit pas l'attribution du modèle aux trois signataires, il interdit d'écrire qu'ils auraient inventé la conception non intentionnelle de la décision. La genèse déborde d'ailleurs les trois signataires : le groupe de travail d'Irvine comprenait Søren Christensen, en visite depuis Handelshøjskolen (Copenhague), et les calculs de la simulation ont été achevés en Norvège avec l'aide de James R. Glenn, Jr. (CMO 2012, p. 21-23)."
     }
   },
-
   "evidence": {
     "concept_definition": "Le « garbage can model » est un modèle du processus de choix dans les organisations que les auteurs nomment « organized anarchies ». Dans le seul texte primaire ouvert ici (Cohen, March & Olsen 2012, p. 26), les auteurs décrivent leur article de 1972 comme un relâchement d'hypothèses des théories du choix rationnel et de la résolution de problèmes, obtenu en ajoutant « the notions of ambiguous preferences, unclear causal understanding, fluid participation, and the varying accessibility of decisions » ; ces relâchements « imply a temporal understanding of events, in contrast with an intentional or consequential one ». La formulation d'ensemble qu'ils en donnent (2012, p. 22) : abandonner « a tidy world in which problems imply solutions over which participants exercise choice » pour « a world in which participants, problems, choices, and solutions each have the capacity to connect to any of the others ». Le cadre auquel le modèle s'applique est défini par eux (p. 22) comme un monde « where attention is a scarce resource that, when devoted to one thing, cannot be devoted to another; where there are multiple decision arenas that ‘compete’ for problems, solutions and decision maker time; where problems and solutions arrive at times exogenously determined and are linked partly by their simultaneous arrivals ». RÉSERVE MÉTHODOLOGIQUE : la définition canonique en trois propriétés (problematic preferences / unclear technology / fluid participation), universellement rapportée à l'article de 1972, n'a PAS pu être vérifiée sur le texte de 1972 dans cette instruction — l'article n'a pas été ouvert (primary_sources[0], consulted = metadata-only).",
-
     "mechanism": [
       "1. Point de départ empirique, tel que les auteurs le racontent : dans les établissements d'enseignement qu'ils étudiaient (universités américaines, choix d'un doyen, école libre danoise), les buts sont « both ambiguous and in dispute » ; « Only occasionally and with great difficulty and considerable hesitation could a course of action be derived from a single goal » ; ce sont des « conflict systems in which different participants pursued different goals » (CMO 2012, p. 21).",
       "2. Le savoir causal est flou : « People knew and believed some things about the causal system underlying education, but those beliefs were not precise enough or shared enough to make decisions easy » (CMO 2012, p. 21). « Technology », dans ce vocabulaire, désigne le savoir causal moyens-fins, pas un équipement.",
@@ -42,7 +47,6 @@
       "10. Effet d'ensemble : « the rituals of choice are seen to exercise problems, solutions, and decision makers in ways that satisfy expectations of human intentionality, understanding, and control without reliably generating solutions of substantive problems » (CMO 2012, p. 26). Le processus produit de la décision et satisfait l'attente d'intentionnalité, sans produire de façon fiable la résolution des problèmes de fond.",
       "11. Statut et portée du modèle, dans les mots des auteurs : une simulation délibérément appauvrie — « the hope was that if the simulation was kept extremely simple and abstract, by foregoing realistic details, readers could easily apprehend its workings and more readily extend or modify it » (CMO 2012, p. 22) — et une prétention volontairement indéfinie : « The paper presented ‘A … model,’ not ‘The … model,’ and was an attempt to enlarge rather than to replace other interpretations of organizational life » (p. 23). L'agence n'y disparaît pas : « there is room for the components of human agency, but it is both bounded and contextually variable » (p. 23)."
     ],
-
     "conditions": {
       "appears_when": [
         "Les buts sont ambigus ET disputés : on ne peut qu'occasionnellement, difficilement, dériver une ligne d'action d'un but unique (CMO 2012, p. 21).",
@@ -59,7 +63,6 @@
         "AUCUNE CONDITION DE DISPARITION PAR LE DESIGN ORGANISATIONNEL NE PEUT ÊTRE ATTRIBUÉE AUX AUTEURS. Ils distinguent en 2012 (p. 24-25) trois lectures de leurs idées et rapportent, SANS la reprendre à leur compte, la position d'un troisième groupe pour qui les processus de poubelle sont « pathological and irrational » et « could be reduced or eliminated by reforming organizations ». Ils marquent au contraire leur surprise devant « the belief that garbage can features can be willfully eliminated from organizational life » (p. 25). NB : la recherche empirique francophone contemporaine pose pourtant la question dans ces termes — « À quelles conditions les pôles d'activités médicales peuvent-ils réduire l'anarchie organisée à l'hôpital public ? » (Baret, Vallejo & Sampieri-Teissier 2020, titre ; contenu non consulté). C'est un usage de la notion par des tiers, pas une thèse des auteurs."
       ]
     },
-
     "key_quotation": {
       "text": "Une idée centrale de l'article d'origine n'était pas que le monde fût inexplicablement chaotique, mais que l'apparence du chaos venait de l'application d'un modèle erroné à une réalité temporelle ordonnée. La poubelle, en ces termes, dépeint un monde ordonné, mais qui parvient à l'ordre d'une manière différente de celle que glorifiaient les Lumières.",
       "language": "fr",
@@ -74,7 +77,6 @@
       "primary_source_index": 1,
       "locator": "Cohen, March & Olsen 2012, chap. « ‘A Garbage Can Model’ at Forty: A Solution that Still Attracts Problems », section « The Progeny of Garbage Can Ideas », p. 28. AVERTISSEMENT D'AFFICHAGE : ce passage est de 2012, PAS de l'article de 1972. Il est signé des trois mêmes auteurs et porte explicitement sur « the original paper ». Toute mise en page qui laisserait croire qu'il s'agit d'une phrase de l'article de 1972 serait une fausse attribution."
     },
-
     "primary_sources": [
       {
         "citation": "Michael D. Cohen, James G. March et Johan P. Olsen, « A Garbage Can Model of Organizational Choice », Administrative Science Quarterly, vol. 17, n° 1, mars 1972, p. 1-25.",
@@ -110,7 +112,6 @@
         "consulted": "metadata-only"
       }
     ],
-
     "secondary_sources": [
       {
         "citation": "Alessandro Lomi et J. Richard Harrison, « The Garbage Can Model of Organizational Choice: Looking Forward at Forty » (chapitre introductif), in Research in the Sociology of Organizations, vol. 36, Emerald, 2012, p. 3-17.",
@@ -173,7 +174,6 @@
         "establishes": "Établit qu'une contre-lecture explicite de l'interprétation aléatoire est formulée à l'intérieur même du volume des quarante ans : « The garbage can model showed that what appears to be irrational and unpredictable choices can be explained by processes that regulate attention allocation and the availability of choice alternatives. » Ce qui paraît imprévisible relève donc de mécanismes d'allocation de l'attention, non du hasard. CONSULTATION : résumé d'auteur et première page seulement (elles figurent en fin du PDF en libre accès du chapitre de Cohen, March & Olsen) ; corps du chapitre NON consulté."
       }
     ],
-
     "francophone_sources": [
       {
         "citation": "Christine Musselin, « Les universités sont-elles des anarchies organisées ? », in Jacques Chevallier (dir.), Désordre(s), Paris, PUF/CURAPP, 1997, p. 291-308.",
@@ -246,7 +246,6 @@
         "establishes": "Atteste que la notion qui porte la recherche empirique française contemporaine est « anarchie organisée », et non « modèle de la poubelle » : le titre pose l'anarchie organisée comme un état d'organisation susceptible d'être réduit par un changement de structure. S'inscrit dans un ensemble cohérent repéré sur HAL (Vallejo, Sampieri-Teissier & Baret 2015, halshs-01416926 ; Vallejo, thèse 2018, tel-01823580 ; Batache, Bouzar & Arkoub 2021, hal-03453923, DOI 10.54241/2065-004-001-014). CONSULTATION : notices HAL seules ; contenus non consultés — c'est le titre qui fait la donnée."
       }
     ],
-
     "translation_notes": [
       {
         "term_source": "garbage can model",
@@ -299,7 +298,6 @@
         "note": "Même écart que pour oversight : « glissement » chez Musselin 1997, p. 303 ; « déplacement » chez Friedberg 1997, p. 283, note 14."
       }
     ],
-
     "known_ambiguities": [
       "DÉSACCORD CENTRAL, NON TRANCHÉ ICI : l'articulation entre « anarchie organisée » et « modèle de la poubelle ». Friedberg tient le second pour le corollaire de la première — « La notion ‘d'anarchie organisée’ et son corollaire, le modèle décisionnel dit ‘de la poubelle’ » (1997, p. 277, reprise p. 271, 284, 285) : une notion-cadre dont découlerait un mécanisme décisionnel. Musselin refuse la dérivation dans les deux sens : elle constate que « dans l'article de 1972, ces auteurs fondent […] une équivalence entre anarchies organisées et modèle de la poubelle » (1997, p. 301) et conclut qu'« anarchie organisée et garbage can model ne sont donc pas deux notions équivalentes » (p. 303) — il n'est ni nécessaire d'être en anarchie organisée pour observer du garbage can, ni vrai que la décision en anarchie organisée relève toujours du garbage can. Les deux positions sont publiées côte à côte, dans le même volume de 1997, et ne se citent pas l'une l'autre sur ce point. La fiche ne tranche pas.",
       "Ce que la source primaire ouverte permet de dire de cette articulation, et qui ne suffit pas à trancher : l'anarchie organisée y est le CADRE que les auteurs se sont donné pour objet (« we set out to consider some ideas about organizational decision making in what we called ‘organized anarchies’ », CMO 2012, p. 22) et la poubelle le SIMILE puis le modèle du processus qui s'y déroule (p. 22). NON ÉTABLI : ce que l'article de 1972 fait exactement de chacune — s'il définit formellement l'anarchie organisée par trois propriétés numérotées avant de construire le modèle, ou s'il la présuppose. La lecture courante (définition explicite en ouverture, p. 1) est corroborée par un tiers (Gibson 2012, p. 34, qui renvoie à la p. 1) mais non vérifiée sur le texte.",
@@ -312,7 +310,6 @@
       "DÉRIVE DE L'ATTRIBUTION VERS LE SEUL NOM DE MARCH : documentée, non datée. Trois jalons établis, et aucune histoire de l'attribution : (1) en France, le canal de diffusion du texte de 1972 est un recueil signé du seul March — James G. March, Décisions et organisations, Éditions d'Organisation, 1991, choix de textes par A.-C. Martinet, « On y trouve en particulier la traduction de l'article de 1972 rédigé avec Cohen et Olsen » (Musselin 1997, p. 292, note 2) ; (2) le vocabulaire des commentateurs français suit ce véhicule et met March en position de sujet (« les travaux de March et de ses collègues », Musselin 1997, p. 293, 295, 306 ; « La réflexion que March et ses collègues développent avec le ‘modèle de la poubelle’ », Friedberg 1997, p. 275) ; (3) un manuel anglophone regroupe explicitement dès son titre : « Behavioral Theory of the Firm, Organizational Learning, and the Garbage Can Model: Theories Involving James March » (Organizational Behavior 6, Routledge, 2011, DOI 10.4324/9781315701967-36, notice Crossref seule). Cette dérive est un effet de véhicule éditorial et de vocabulaire de commentateurs : aucune source consultée ne la présente comme une revendication de March ni comme une contestation de la coautorité.",
       "Le débat anglophone de 2001 n'a pas été tranché et n'a pas convergé. Les auteurs eux-mêmes le constatent en 2012 : « bursts of interest stimulate the elaboration of ideas more quickly than the convergence to canonical understandings » (CMO 2012, p. 29)."
     ],
-
     "common_misinterpretations": [
       {
         "claim": "Le modèle décrirait une décision aléatoire, chaotique ou désordonnée : c'est le hasard qui décide.",
@@ -365,7 +362,6 @@
         "source": "Lomi & Harrison 2012, p. 6-7"
       }
     ],
-
     "limitations": [
       "LIMITE DOCUMENTAIRE PREMIÈRE : ce qui est établi ici du mécanisme repose sur la rétrospective des auteurs (2012) et NON sur l'article de 1972 lui-même, qui n'a pas été ouvert. Une rétrospective à quarante ans est une source primaire quant à l'intention des auteurs, mais pas quant à la lettre du texte de 1972 : elle en reformule le vocabulaire (voir translation_notes, « problematic preferences » devenu « ambiguous preferences »).",
       "Aucune pagination de l'article de 1972 ne peut être donnée pour un énoncé précis. Toute fiche citant « Cohen, March & Olsen 1972, p. X » sans avoir ouvert le texte reprendrait une pagination de seconde main.",
@@ -375,7 +371,6 @@
       "Ce que le corpus des sources consultées ne permet pas d'établir : le contenu de la plupart des chapitres du volume des quarante ans (Emerald sous accès payant ; seuls le chapitre des trois auteurs et le résumé de Denrell ont été ouverts), le texte intégral de Bendor, Moe & Shotts 2001 et d'Olsen 2001 (connus par leurs seuls résumés d'auteur), la recension du volume par Padgett dans ASQ (DOI 10.1177/0001839213500231, SAGE en HTTP 403), le chapitre de synthèse de Werner Jann dans The Oxford Handbook of Classics in Public Policy and Administration (DOI 10.1093/oxfordhb/9780199646135.013.4, contenu non servi), Musselin 1996 et Musselin 1987.",
       "Aucune analyse des contextes de citation n'a pu être menée : OpenAlex a renvoyé HTTP 429 sur toutes les requêtes, Semantic Scholar est inutilisable (400 Bad Request sur les citations du DOI de 1972, 0 référence retournée pour un article qui en compte plusieurs dizaines). Base muette n'est pas absence de discussion : la réception a été reconstituée par Crossref, HAL et lecture directe des textes."
     ],
-
     "reception": {
       "consensus": "Acquis et non contesté par les sources consultées : (1) la paternité conjointe des trois signataires pour la formulation de 1972 — aucune source examinée ne la discute, et les commentateurs francophones comme anglophones citent les trois noms lorsqu'ils citent le texte ; (2) le caractère fondateur du texte — 4604 citations relevées sur le DOI 10.2307/2392088 (Crossref, août 2026), et les trois auteurs constatent eux-mêmes en 2012 que « garbage can ideas endure in organizations research after 40 years » (p. 19) ; (3) les trois critères de l'anarchie organisée — préférences problématiques, technologie floue, participation fluctuante — que Musselin reprend un à un sans les contester (1997, p. 293-297) ; (4) les trois issues d'une occasion de choix (résolution, oversight/survol, flight/glissement) avec prédominance des deux dernières sur la première (Fioretti & Lomi 2008, §6.1 ; Friedberg 1997, p. 283, note 14) ; (5) le fait, reconnu par les critiques comme par les défenseurs, que le code de la simulation de 1972 ne restitue pas fidèlement la théorie verbale — c'est le point de départ commun de Bendor, Moe & Shotts (2001) et de Fioretti & Lomi (2008).",
       "debates": [
@@ -420,31 +415,145 @@
       ]
     }
   },
-
   "pedagogy": {
-    "hook_question": "",
-    "short_explanation": "",
-    "detailed_explanation": "",
-    "concrete_example": "",
-    "analysis_questions": [],
-    "quiz": [],
-    "traceability": []
+    "hook_question": "Un comité vient d'adopter une solution qui traînait depuis des mois, à propos d'un problème arrivé la veille, devant des participants qui n'étaient pas ceux que l'on attendait. Personne n'a tiré au sort, chacun a agi sensément, et pourtant personne ne saurait dire quel but a été poursuivi. Que s'est-il passé ?",
+    "short_explanation": "Le modèle de la poubelle décrit la façon dont des choix se produisent dans ce que Cohen, March et Olsen appellent des « anarchies organisées » : des organisations dont les buts sont ambigus et disputés, dont le savoir causal n'est ni assez précis ni assez partagé, et où la participation dépend des sollicitations concurrentes d'attention. Dans ce cadre, problèmes, solutions, participants et occasions de choix arrivent à des moments fixés hors du processus de décision, et chacun peut se relier à n'importe lequel des autres : ce qui apparie un problème à une solution est leur coprésence dans le temps, non leur adéquation. Les auteurs y voient un ordre — temporel plutôt que conséquentiel —, pas un désordre.",
+    "detailed_explanation": "Le point de départ est une observation, pas une hypothèse. En étudiant des établissements d'enseignement — universités américaines, choix d'un doyen, école libre danoise —, les auteurs constatent d'abord que les buts y sont à la fois ambigus et disputés : on ne peut qu'occasionnellement, difficilement et avec beaucoup d'hésitation dériver une ligne d'action d'un but unique, et les participants poursuivent des buts différents. Ils constatent ensuite que la technologie est floue, au sens où le mot désigne ici le savoir causal moyens-fins et non un équipement : les gens savaient et croyaient certaines choses du système causal sous-jacent à l'éducation, mais ces croyances n'étaient ni assez précises ni assez partagées pour rendre les décisions faciles. Ils constatent enfin que l'issue dépend fortement de qui est impliqué, et que l'implication dépend de ce qui réclame l'attention ailleurs au même moment : les organisations sont dirigées par des gens occupés, sollicités de toutes parts.\n\nCes traits définissent le cadre que les auteurs nomment anarchie organisée : un monde où l'attention est une ressource rare — consacrée à une chose, elle ne l'est pas à une autre —, où plusieurs arènes de décision se font concurrence pour les problèmes, les solutions et le temps des décideurs, et où problèmes et solutions arrivent à des moments déterminés hors du processus de choix, reliés en partie par la simultanéité de leurs arrivées.\n\nDe là vient le décrochage qui fait tout le modèle. Si les problèmes et les solutions n'arrivent pas quand le processus de choix en aurait besoin, ils cessent d'être appariés par la logique moyens-fins. On quitte le monde bien rangé où les problèmes appellent des solutions sur lesquelles les participants exercent un choix, pour un monde où participants, problèmes, choix et solutions ont chacun la capacité de se relier à n'importe lequel des autres. Les auteurs signalent eux-mêmes ce que cet abandon coûte à quiconque a reçu une formation moderne en sciences sociales.\n\nLe principe d'ordonnancement change alors de nature : le temps remplace la conséquence. Il ne s'agit pas d'une chronologie mais d'une règle d'appariement — ce qui relie un problème à une solution, c'est leur coprésence, non leur adéquation. Les auteurs opposent explicitement cette compréhension temporelle des événements à une compréhension intentionnelle ou conséquentielle, et notent que le cadrage même des décisions est déterminé pour une bonne part par le déroulement temporel de la participation et de l'attention.\n\nLa structure n'est pas pour autant hors jeu : elle cesse de dériver les décisions des buts, mais elle règle les rencontres. Les configurations ouvertes, spécialisées ou hiérarchiques permettent différentiellement aux problèmes, aux solutions, aux participants et aux occasions de choix de se percuter ou de se séparer. C'est ce que le modèle formalise, selon les auteurs, sous le nom d'accessibilité variable des décisions.\n\nEnfin, la résolution n'est qu'une issue parmi d'autres : un problème peut fuir vers une autre occasion de choix, ou être purement et simplement négligé. Les rituels du choix font manœuvrer problèmes, solutions et décideurs d'une manière qui satisfait les attentes d'intentionnalité, de compréhension et de contrôle, sans produire de façon fiable la résolution des problèmes de fond. La reprise du modèle par la littérature de simulation rapporte d'ailleurs que, dans la simulation d'origine, peu de décisions résolvent des problèmes et que la plupart se font par inattention.\n\nDeux précisions des auteurs empêchent d'en faire trop. Leur texte présentait « un » modèle et non « le » modèle : il cherchait à élargir, non à remplacer, les autres interprétations de la vie organisationnelle. Et l'agence humaine n'y disparaît pas — elle y a sa place, bornée et variable selon les contextes.",
+    "concrete_example": "Une association d'éducation populaire tient son conseil d'administration trimestriel. Trois choses circulent depuis des mois sans jamais se rencontrer : un logiciel de gestion des adhésions qu'un bénévole informaticien a préparé et propose à chaque occasion ; un malaise sur l'accueil des nouveaux adhérents, dont plusieurs se plaignent qu'on ne les rappelle jamais ; et le conseil lui-même, qui doit produire des décisions parce que c'est sa fonction, et qui se réunit à date fixe, indépendamment de l'état des deux premières.\n\nLe soir de la séance, la trésorière, qui aurait défendu une autre priorité, est retenue par une réunion ailleurs ; le bénévole informaticien, lui, est là. Le malaise sur l'accueil arrive à l'ordre du jour ; le logiciel, disponible et déjà prêt, s'y accroche ; le conseil adopte le logiciel comme réponse au problème d'accueil, et chacun sort avec le sentiment d'avoir décidé quelque chose.\n\nRien n'a été tiré au sort et personne n'a mal agi. Mais le lien entre ce problème et cette solution ne vient pas d'une analyse des causes du malaise : il vient de ce qu'ils se sont trouvés là le même soir, devant les mêmes personnes. Si la trésorière avait été présente, ou si l'ordre du jour avait été plus chargé, le même problème aurait pu glisser au conseil suivant ou passer inaperçu. La séance a produit une décision et satisfait l'attente d'une organisation qui se gouverne ; le problème d'accueil, lui, réapparaîtra intact, tandis que la décision figurera au compte rendu comme un choix accompli.",
+    "example_setting": "association",
+    "analysis_questions": [
+      "Dans une réunion à laquelle vous avez participé récemment, quelles solutions étaient déjà disponibles et cherchaient une occasion, avant même que le problème auquel on les a rattachées ne soit posé ?",
+      "Qui n'était pas là ce jour-là, et qu'est-ce qui, ailleurs, réclamait son attention au même moment ? Qu'aurait changé sa présence ?",
+      "Quels problèmes reviennent chez vous d'instance en instance sans jamais être traités : ont-ils fui vers une autre occasion de choix, ou ont-ils été purement et simplement négligés ?",
+      "Qui peut mettre quoi à l'ordre du jour, et devant qui ? Ces règles d'accès font-elles se percuter ou se séparer les problèmes et les solutions qui circulent dans votre organisation ?",
+      "Une décision récente a-t-elle satisfait l'attente que « quelque chose soit décidé » sans rien résoudre du problème de fond ? Comment le reconnaîtrait-on de l'extérieur ?"
+    ],
+    "quiz": [
+      {
+        "id": "gcm-nature-de-l-ordre",
+        "type": "mcq",
+        "prompt": "Pour Cohen, March et Olsen eux-mêmes, que dépeint le modèle de la poubelle ?",
+        "choices": [
+          "Un monde inexplicablement chaotique, où le hasard décide à la place des acteurs.",
+          "Un monde ordonné, mais dont l'ordre est temporel plutôt que conséquentiel.",
+          "Un dysfonctionnement pathologique que le design organisationnel doit faire disparaître.",
+          "Le modèle général de la décision, destiné à remplacer les théories du choix rationnel."
+        ],
+        "correctAnswer": "1",
+        "explanation": "Les auteurs écartent explicitement la lecture du chaos : l'apparence du chaos venait, écrivent-ils, de l'application d'un modèle erroné à une réalité temporelle ordonnée, et la poubelle dépeint un monde ordonné, qui parvient à l'ordre autrement que ne le glorifiaient les Lumières. Le troisième choix est une lecture qu'ils recensent chez certains de leurs lecteurs — des processus jugés « pathological and irrational », qu'il faudrait éliminer en réformant les organisations — sans jamais la reprendre à leur compte. Le quatrième oublie l'article indéfini qu'ils revendiquent : « A … model », non « The … model », pour élargir et non pour remplacer les autres interprétations de la vie organisationnelle."
+      },
+      {
+        "id": "gcm-technologie-floue",
+        "type": "mcq",
+        "prompt": "Dans « technologie floue », l'un des traits de l'anarchie organisée, que désigne le mot technologie ?",
+        "choices": [
+          "L'équipement technique et informatique dont l'organisation dispose.",
+          "Le savoir causal moyens-fins : ce que l'organisation croit savoir des effets de ses actions.",
+          "Le degré d'automatisation des procédures de décision."
+        ],
+        "correctAnswer": "1",
+        "explanation": "Les auteurs glosent eux-mêmes ce trait : les gens savaient et croyaient certaines choses du système causal sous-jacent à l'éducation, mais ces croyances n'étaient ni assez précises ni assez partagées pour rendre les décisions faciles. Ils reformulent d'ailleurs le trait, dans leur rétrospective, par « unclear causal understanding ». Il n'est à aucun moment question d'un équipement : le faux ami est une source classique de contresens en français."
+      },
+      {
+        "id": "gcm-structure",
+        "type": "true-false",
+        "prompt": "Dans le modèle de la poubelle, la structure de l'organisation n'a plus aucun effet sur les décisions.",
+        "correctAnswer": "false",
+        "explanation": "La structure change de fonction, elle ne disparaît pas. Les auteurs écrivent que les configurations ouvertes, spécialisées ou hiérarchiques permettent différentiellement aux problèmes, solutions, participants et occasions de choix de se percuter ou de se séparer : elle ne dérive plus les décisions des buts, elle règle les rencontres. À noter qu'une critique ancienne, rapportée par les éditeurs du volume des quarante ans, reproche au contraire aux processus de poubelle de paraître curieusement détachés des phénomènes structurels familiers que sont la différenciation, la politique de centralisation et les procédures standard."
+      },
+      {
+        "id": "gcm-sequence-inversee",
+        "type": "true-false",
+        "prompt": "Le modèle de la poubelle se résume à l'idée que la séquence habituelle problème → décideurs → choix → solutions est renversée.",
+        "correctAnswer": "false",
+        "explanation": "C'est la réduction que Christine Musselin identifie dans la réception française, où les spécialistes des politiques publiques n'ont retenu du modèle que la remise en cause de la décision linéaire. Or il « ne se contente pas de parler de courants mais repose également sur un modèle de circulation de ces flux et une typologie des choix (par résolution, survol ou glissement) » — et ce sont ces deux aspects, selon elle, qui portent le contenu empirique du modèle."
+      }
+    ],
+    "traceability": [
+      {
+        "claim": "Les buts sont ambigus et disputés, et l'on ne peut qu'occasionnellement dériver une ligne d'action d'un but unique.",
+        "evidence_ref": "mechanism[0]"
+      },
+      {
+        "claim": "« Technologie » désigne le savoir causal moyens-fins, ni assez précis ni assez partagé, et non un équipement.",
+        "evidence_ref": "mechanism[1]"
+      },
+      {
+        "claim": "L'issue dépend de qui est là, et qui est là dépend des sollicitations concurrentes d'attention.",
+        "evidence_ref": "mechanism[2]"
+      },
+      {
+        "claim": "L'attention est rare, les arènes de décision se font concurrence, problèmes et solutions arrivent de l'extérieur du processus de choix.",
+        "evidence_ref": "mechanism[3]"
+      },
+      {
+        "claim": "Chaque élément peut se relier à n'importe quel autre, et l'appariement se fait en partie par la simultanéité des arrivées.",
+        "evidence_ref": "mechanism[4]"
+      },
+      {
+        "claim": "Le principe d'ordonnancement est temporel et non intentionnel ou conséquentiel ; c'est une règle d'appariement, pas une chronologie.",
+        "evidence_ref": "mechanism[5]"
+      },
+      {
+        "claim": "Les configurations ouvertes, spécialisées ou hiérarchiques règlent différentiellement les rencontres.",
+        "evidence_ref": "mechanism[6]"
+      },
+      {
+        "claim": "Un problème peut fuir vers une autre occasion de choix, ou être purement et simplement négligé.",
+        "evidence_ref": "mechanism[7]"
+      },
+      {
+        "claim": "Dans la simulation d'origine, peu de décisions résolvent des problèmes et la plupart se font par inattention.",
+        "evidence_ref": "mechanism[8]"
+      },
+      {
+        "claim": "Les rituels du choix satisfont l'attente d'intentionnalité sans produire de façon fiable la résolution des problèmes de fond.",
+        "evidence_ref": "mechanism[9]"
+      },
+      {
+        "claim": "« A … model » et non « The … model » : élargir plutôt que remplacer ; l'agence humaine y a sa place, bornée et variable.",
+        "evidence_ref": "mechanism[10]"
+      },
+      {
+        "claim": "Le modèle dépeint un monde ordonné : l'apparence du chaos vient du modèle avec lequel on regarde.",
+        "evidence_ref": "key_quotation"
+      },
+      {
+        "claim": "La réduction du modèle au renversement de la séquence problème → décideurs → choix → solutions est une réduction identifiée dans la réception française.",
+        "evidence_ref": "common_misinterpretations[7]"
+      },
+      {
+        "claim": "La critique de Padgett reproche aux processus de poubelle d'être détachés des phénomènes structurels familiers.",
+        "evidence_ref": "reception.critiques[5]"
+      }
+    ]
   },
-
   "graph": {
-    "themes": [],
+    "themes": [
+      "decision"
+    ],
+    "difficulty": 4,
+    "difficulty_rationale": "Le mécanisme exige d'abandonner l'ordre moyens-fins au profit d'un principe d'appariement temporel, abandon dont les auteurs disent eux-mêmes qu'il « demande beaucoup » à un lecteur formé après-guerre (CMO 2012, p. 22). S'y ajoutent deux difficultés de réception documentées dans le dossier : la lecture spontanée « c'est le hasard » est précisément celle que les auteurs récusent, et l'articulation avec l'anarchie organisée fait l'objet d'un désaccord publié et non tranché (Friedberg 1997, p. 277 contre Musselin 1997, p. 303). Le concept n'est pas un point d'entrée.",
     "related": [],
     "opposites": [],
     "prerequisites": [],
     "deepens_into": []
   },
-
   "validation": {
     "primary_source_confirmed": false,
     "secondary_confirmation": false,
     "francophone_layer_searched": true,
-    "evidence_review": { "verdict": "PENDING", "notes": [], "rounds": 0 },
-    "pedagogy_review": { "verdict": "PENDING", "no_new_claims": null, "notes": [], "rounds": 0 },
+    "evidence_review": {
+      "verdict": "PENDING",
+      "notes": [],
+      "rounds": 0
+    },
+    "pedagogy_review": {
+      "verdict": "PENDING",
+      "no_new_claims": null,
+      "notes": [],
+      "rounds": 0
+    },
     "confidence_flags": [
       "Article de 1972 (source primaire visée) : consulted = metadata-only. Le texte n'a pas été ouvert par une voie de provenance propre. La fiche ne peut pas être validée sur la base de cette source.",
       "Le mécanisme et toutes les citations d'auteurs proviennent d'un texte SECOND des mêmes auteurs (Cohen, March & Olsen 2012), non de l'article de 1972.",
@@ -456,12 +565,12 @@
       "Deux relais documentés du contenu de 1972 existent et n'ont pas été exploités faute d'accès direct au texte : Musselin 1997 cite l'article de 1972 dans la traduction française de 1991 (les trois critères, p. 293-297, locator « Cohen et al., 1991, p. 164 » ; le slack, p. 304, locator « Cohen, March et Olsen, 1991, p. 184 ») ; Fioretti & Lomi 2008 restituent les conclusions de la simulation (§3.14, §6.1). Ils sont cités ici comme sources secondaires, jamais comme la source primaire.",
       "L'anecdote du colloque de Venise (March qualifiant le modèle « de la poésie », Friedberg 1997, p. 284, note 17) est à source unique et non corroborée : consignée en known_ambiguities, elle ne doit pas être affichée comme un fait.",
       "OpenAlex et Semantic Scholar en erreur (429, 400) ; Cairn en 403 ; De Gruyter en 405 ; Google Books API en quota épuisé. Une reprise ultérieure pourrait donner accès au texte de 1972 et aux chapitres fermés du volume RSO 36.",
-      "validation.secondary_confirmation laissé à false : la couche secondaire et la couche francophone ont été instruites, mais le verdict appartient au contrôleur, pas à l'agent qui assemble."
+      "validation.secondary_confirmation laissé à false : la couche secondaire et la couche francophone ont été instruites, mais le verdict appartient au contrôleur, pas à l'agent qui assemble.",
+      "graph.related, opposites, prerequisites et deepens_into laissés vides : aucune autre fiche validée n'existe encore dans le corpus, et une relation d'une fiche validée ne peut viser qu'une autre fiche validée. Le graphe reste à construire quand le corpus s'étoffera — notamment vers la rationalité limitée, dont le dossier de ce concept ne documente cependant aucune filiation.",
+      "graph.themes = decision et graph.difficulty = 4 sont des affirmations de la chaîne éditoriale, motivées dans difficulty_rationale à partir du dossier ; aucune source ne les établit."
     ]
   },
-
   "rejection_reason": null,
-
   "provenance": {
     "created_at": "2026-08-16",
     "updated_at": "2026-08-16",
@@ -482,6 +591,11 @@
         "agent": "corpus-concept-analyst",
         "at": "2026-08-16",
         "action": "Assemblage du bloc evidence et de l'attribution à partir des deux fragments, sans ajout de source. pedagogy et graph laissés en squelette ; validation.* laissée en PENDING."
+      },
+      {
+        "agent": "corpus-pedagogy-writer",
+        "at": "2026-08-16",
+        "action": "Rédaction de pedagogy et de graph à partir du bloc evidence assemblé, sans ajout de source ni d'affirmation ; passage du statut à VALIDATED et déplacement en corpus/validated/. Les deux passes du contrôleur aveugle restent en PENDING : la fiche est écrite, pas contrôlée."
       }
     ]
   }
