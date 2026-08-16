@@ -32,6 +32,10 @@ en recherche, pas une occasion de compléter au jugé.
 
 - Chaque source primaire a citation, localisation, DOI/ISBN ou URL, et un extrait qui
   établit précisément le point.
+- `key_quotation`, s'il y en a une, est reprise **telle quelle** du lecteur primaire :
+  index de source, localisation, langue, traduction. Tu ne la reformules pas, tu ne la
+  raccourcis pas, et tu n'en fabriques pas une quand il n'y en a pas — l'absence de
+  passage citable est un résultat, pas un trou à combler.
 - Chaque source secondaire dit **ce qu'elle établit**, pas ce dont elle parle.
 - Aucun chiffre, aucune date, aucun effectif n'apparaît sans être porté par une source.
 - `npm run corpus:validate` passe sur ta fiche, hors règles réservées aux fiches validées.

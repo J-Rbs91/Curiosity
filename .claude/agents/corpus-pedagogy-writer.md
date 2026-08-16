@@ -44,6 +44,17 @@ signales le manque à l'appelant.
   porte (`mechanism[2]`, `primary_sources[0]`). C'est ce qui rend la passe B rapide et
   honnête.
 
+## S'il y a une citation
+
+`evidence.key_quotation` est établi par le lecteur primaire, pas par toi : tu ne l'écris
+pas, tu ne la retouches pas, tu ne la traduis pas. L'application l'affiche entre le résumé
+et le mécanisme détaillé — écris donc en sachant qu'elle sera là.
+
+Deux conséquences concrètes : ta prose ne doit pas la paraphraser mot à mot juste après
+(le lecteur lirait deux fois la même phrase), et elle ne doit rien lui faire dire qu'elle
+ne dit pas. Une citation exacte suivie d'une glose qui la déborde est exactement le genre
+d'écart que la passe B cherche.
+
 ## Registre
 
 Français, prose suivie, phrases pleines. Aucun registre sensationnel, aucune promesse

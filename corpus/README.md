@@ -41,7 +41,7 @@ Les pièces de `evidence/` sont rangées par concept : `evidence/<id>/<source>.m
 
 | Bloc | Écrit par | Contrôlé par | Nature |
 |---|---|---|---|
-| `evidence` | `corpus-concept-analyst`, à partir de `corpus-primary-reader` et `corpus-reception-analyst` | `corpus-blind-reviewer` passe A | Ce que les sources établissent |
+| `evidence` | `corpus-concept-analyst`, à partir de `corpus-primary-reader` et `corpus-reception-analyst` | `corpus-blind-reviewer` passe A | Ce que les sources établissent, citation de l'auteur comprise |
 | `pedagogy` | `corpus-pedagogy-writer` | `corpus-blind-reviewer` passe B | Mise en mots, **sans ajout** |
 | `graph` | `corpus-graph-curator` | validateur (intégrité) + passe B | Relations, prérequis, difficulté |
 
@@ -64,3 +64,6 @@ candidates/  →  review/  →  validated/  →  src/content/generated/
   premier examen.
 - Inventer une référence, une pagination, une date ou un chiffre. Une lacune se signale
   (`known_ambiguities`, `confidence_flags`) ; elle ne se comble pas.
+- Fabriquer une citation, la recomposer à partir de plusieurs pages, ou reprendre comme
+  parole de l'auteur une phrase écrite par un texte qui le cite. `key_quotation` est
+  facultatif : pas de passage citable établi, pas de citation.

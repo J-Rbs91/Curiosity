@@ -108,6 +108,49 @@ Trois règles non négociables :
    important : un texte peut citer la bonne étude, avec le bon titre, et lui faire dire
    l'inverse.
 
+### Les outils bibliométriques, dont scite
+
+Semantic Scholar, OpenAlex, Crossref et scite ne sont pas des niveaux de la hiérarchie :
+ce sont des **instruments** qui aident à parcourir les niveaux B et C. Un résultat qui en
+sort n'a pas de statut propre — il désigne un texte, qu'il faut ensuite ouvrir.
+
+scite mérite une mention particulière parce qu'il fait quelque chose que les autres ne
+font pas : il classe chaque citation en *supporting*, *contrasting* ou *mentioning*, en
+extrayant la phrase de contexte. C'est précieux à deux endroits, et dangereux à un
+troisième.
+
+**Là où il sert :**
+
+- `corpus-reception-analyst` — les proportions et surtout les citations *contrasting*
+  donnent directement de quoi remplir `reception.debates`, `reception.critiques` et
+  `known_ambiguities`. Un concept dont la réception est contestée doit le dire ; c'est
+  exactement ce que le corpus doit savoir de lui-même.
+- `corpus-blind-reviewer` — lire les phrases de citation permet de vérifier **ce qu'une
+  source conclut** avant de l'ouvrir, ce qui est précisément le contrôle le plus important
+  du dispositif, ici mené à l'échelle. Et l'écart entre ce que les textes citants font
+  dire à l'auteur et ce que son texte dit est le meilleur détecteur automatique de la
+  confusion « concept ≠ vulgarisation dominante ».
+
+**Là où il ne sert pas, et où il faut l'écrire :**
+
+> Une phrase de citation extraite par scite est un extrait du **texte citant**, pas du
+> texte cité. Elle ne devient jamais une source primaire, ne devient jamais
+> `key_quotation`, et n'établit jamais une attribution à elle seule.
+
+Sans cette règle, l'outil se retourne : quinze citations concordantes *supporting*
+ressemblent à une preuve, alors que ce sont quinze auteurs qui répètent peut-être la même
+lecture de seconde main. C'est la « preuve par répétition » du niveau E, avec une interface
+savante. Le nombre de citations concordantes n'est pas un argument ; c'est un signal à
+vérifier sur le texte.
+
+**Sa limite sur ce corpus, à connaître avant de s'y fier :** scite est indexé sur les DOI
+et sur le texte intégral d'articles. Or notre noyau est fait d'**ouvrages**, dont plusieurs
+en français et antérieurs à la généralisation des DOI — *Le Phénomène bureaucratique*
+(1963), *L'Acteur et le système* (1977), *Économie et société*. La couverture y sera
+faible, précisément là où la couche francophone compte le plus. Elle sera en revanche
+excellente sur Cohen, March & Olsen (1972), Merton (1940) ou les articles d'Argyris. Il
+complète les bases, il ne les remplace pas.
+
 ### La couche francophone est cherchée en amont
 
 Jamais ajoutée en relecture. Les deux voies sont interrogées **en parallèle** :
@@ -168,6 +211,46 @@ C'est vrai, et vide.
 
 ---
 
+## 5 bis. La citation de l'auteur
+
+Une fiche peut porter un passage du texte, cité mot pour mot (`evidence.key_quotation`,
+affiché par `ConceptQuotation`). C'est le **seul élément de l'application qui ne passe pas
+par nos mots** : tout le reste — résumé, mécanisme, exemple, quiz — est une reformulation.
+
+Quatre conditions, vérifiées par le validateur :
+
+1. **Verbatim.** Le texte enregistré est le texte, sans guillemets (l'application les
+   pose) et sans lissage. Une coupe se signale par `[…]`. Le caractère verbatim lui-même
+   ne s'automatise pas : c'est le contrôleur aveugle qui le confronte à l'édition.
+2. **Rattachée à une source primaire réellement ouverte.** La citation pointe sur une
+   entrée de `primary_sources` par son index, et cette source ne peut pas être en
+   `consulted: "metadata-only"` — on ne cite pas un texte qu'on n'a pas lu.
+3. **Localisée.** Chapitre, section, page. Une citation qu'on ne peut pas rouvrir à la
+   bonne page ne vaut rien.
+4. **Honnête sur sa traduction.** C'est le piège principal de ce corpus. Une phrase de
+   Weber lue en français est passée par quelqu'un. Le validateur détecte automatiquement
+   qu'une traduction a eu lieu — quand la langue de la citation diffère de celle de sa
+   source — et impose alors soit une traduction publiée avec **traducteur et édition**
+   nommés, soit une traduction de notre fait, qui doit conserver `original_text` et
+   s'annoncer telle quelle à l'écran. Afficher une traduction anonyme, ce serait présenter
+   une interprétation comme une parole d'auteur.
+
+Deux règles de fond, qui ne se relâchent jamais :
+
+- **Une citation ne remplace pas le mécanisme.** Elle l'ancre. Une fiche dont le mécanisme
+  est faible ne devient pas bonne parce qu'elle est joliment citée — c'est même le mode de
+  défaillance à surveiller, la citation étant ce qui se retient le plus facilement.
+- **La citation est facultative, et c'est délibéré.** Beaucoup de concepts n'ont pas de
+  passage court et autonome qui les énonce : l'idée est distribuée sur un chapitre entier.
+  Exiger une citation partout garantirait exactement ce que ce dispositif existe pour
+  empêcher — une belle phrase fabriquée, ou sortie de son contexte pour tenir dans un
+  écran. Pas de passage citable établi : pas de citation, et la fiche reste complète.
+
+Sur les concepts coécrits, `attributed_to` est obligatoire : on ne prête pas à l'un les
+mots d'un ouvrage à trois signatures.
+
+---
+
 ## 6. Deux objets, jamais un seul
 
 C'est la décision structurante.
@@ -223,7 +306,7 @@ d'origine : **celui qui cherche et rédige ne valide pas ; celui qui valide ne p
 |---|---|---|
 | `corpus-orchestrator` | Distribue le travail, applique le protocole, gère les états | Ne produit **aucune** connaissance, ne tranche jamais sur le fond |
 | `corpus-scout` | Repère les concepts candidats et les sources atteignables | Ne valide rien, ne rédige rien |
-| `corpus-primary-reader` | Établit ce que dit le texte de l'auteur, localisation à l'appui | Ne vulgarise pas, ne compare pas les auteurs |
+| `corpus-primary-reader` | Établit ce que dit le texte de l'auteur, localisation à l'appui, et le passage citable s'il en existe un | Ne vulgarise pas, ne compare pas les auteurs |
 | `corpus-reception-analyst` | Établit comment la littérature académique lit ce concept | Ne modifie jamais le bloc primaire |
 | `corpus-concept-analyst` | Écrit définition, mécanisme, ambiguïtés, limites | Ne se valide pas lui-même, n'écrit pas la pédagogie |
 | `corpus-blind-reviewer` | Revérifie indépendamment, fait par fait | Ne connaît ni le brief ni la confiance des agents amont |
@@ -350,6 +433,8 @@ pas décorative : chaque ligne vient d'une erreur que ce corpus peut produire.
 | Traduction ≠ équivalence | Un terme français peut recouvrir plusieurs termes originaux |
 | Concept spécifique ≠ terme générique | « Déplacement des buts » ≠ « perdre ses objectifs » |
 | Association ≠ paternité | Populariser un concept n'est pas l'avoir créé |
+| Phrase du texte ≠ phrase d'un texte citant | Une citation extraite par scite ou Semantic Scholar est écrite par celui qui cite, pas par l'auteur |
+| Traduction affichée ≠ parole d'auteur | Un passage traduit sans traducteur nommé présente une interprétation comme un original |
 
 Le champ `authorship` du schéma existe pour la deuxième ligne :
 
@@ -430,10 +515,12 @@ les identifiants sont conservés.
 
 ### Ce que l'application affiche de plus
 
-Deux ajouts minimaux au type `Concept`, et rien d'autre :
+Trois ajouts au type `Concept`, et rien d'autre :
 
 - `attributionNote?: string` — une ligne sous le titre quand l'attribution ne se réduit
   pas à un nom (coauteurs, concept associé, terme forgé par un tiers) ;
+- `quotation?: Quotation` — le passage de l'auteur, sa référence et, le cas échéant, le
+  nom de son traducteur (§5 bis) ;
 - `SourceKind` gagne `secondary-academic` et `francophone-reception`, pour que la
   projection ne fasse pas passer un article peer-reviewed pour une « interprétation
   pédagogique ».
@@ -472,7 +559,10 @@ d'ailleurs une lecture qui s'appuie sur un concept absent.
 
 Sans exception, quel que soit le degré d'urgence ou d'évidence apparente :
 
-- inventer ou reconstituer de mémoire une référence, une date, une pagination, un chiffre ;
+- inventer ou reconstituer de mémoire une référence, une date, une pagination, un chiffre,
+  et à plus forte raison une citation ;
+- présenter comme une parole de l'auteur une phrase écrite par un texte qui le cite ;
+- afficher un passage traduit sans dire par qui ;
 - présenter un concept coécrit sous un seul nom pour simplifier l'affichage ;
 - faire d'une source de niveau E une preuve par accumulation ;
 - écrire la fiche pédagogique avant que le mécanisme ne soit établi ;

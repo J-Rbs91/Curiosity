@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import { validateCorpus, validateRecord } from "./validate.mjs";
-import { buildAttributionNote, projectConcept } from "./project.mjs";
+import { buildAttributionNote, buildQuotation, projectConcept } from "./project.mjs";
 
 /**
  * Fiche minimale mais complète, servant de base aux cas de test. Les sources sont
@@ -209,6 +209,119 @@ describe("validateRecord — mécanisme et pédagogie", () => {
     const { errors, warnings } = validateRecord(r, context);
     expect(errors).toEqual([]);
     expect(warnings.join(" ")).toContain("sans aucune incertitude déclarée");
+  });
+});
+
+describe("validateRecord — citation de l'auteur", () => {
+  /** Fiche dont la source primaire est en français : aucune traduction en jeu. */
+  function quoted(quotation = {}) {
+    const r = record();
+    r.evidence.primary_sources[0].language = "fr";
+    r.evidence.key_quotation = {
+      text: "Le passage tel qu'il est imprimé.",
+      language: "fr",
+      primary_source_index: 0,
+      locator: "chap. 6, p. 195",
+      translation: { kind: "none" },
+      ...quotation,
+    };
+    return r;
+  }
+
+  it("accepte une citation localisée dans une source réellement consultée", () => {
+    expect(errorsOf(quoted())).toEqual([]);
+  });
+
+  it("reste facultative — un concept sans passage citable est une fiche valide", () => {
+    expect(errorsOf(record())).toEqual([]);
+  });
+
+  it("refuse une citation qui ne pointe sur aucune source primaire", () => {
+    expect(errorsOf(quoted({ primary_source_index: 7 })).join(" ")).toContain("ne pointe sur aucune");
+  });
+
+  it("refuse de citer un texte consulté en métadonnées seules", () => {
+    const r = quoted();
+    r.evidence.primary_sources[0].consulted = "metadata-only";
+    expect(errorsOf(r).join(" ")).toContain("qu'on n'a pas ouvert");
+  });
+
+  it("refuse une citation sans localisation", () => {
+    expect(errorsOf(quoted({ locator: "" })).join(" ")).toContain("bonne page");
+  });
+
+  it("refuse un extrait d'ouvrage déguisé en citation", () => {
+    expect(errorsOf(quoted({ text: "mot ".repeat(200) })).join(" ")).toContain("citation courte");
+  });
+
+  it("détecte une traduction silencieuse quand la langue de la source diffère", () => {
+    const r = quoted({ language: "fr" });
+    r.evidence.primary_sources[0].language = "de";
+    expect(errorsOf(r).join(" ")).toContain("traduction ≠ équivalence");
+  });
+
+  it("exige traducteur et édition pour une traduction publiée", () => {
+    const r = quoted({ translation: { kind: "published", translator: null, edition: null } });
+    r.evidence.primary_sources[0].language = "de";
+    expect(errorsOf(r).join(" ")).toContain("traducteur et son édition");
+  });
+
+  it("exige le texte original quand la traduction est de notre fait", () => {
+    const r = quoted({ translation: { kind: "in-house" } });
+    r.evidence.primary_sources[0].language = "de";
+    expect(errorsOf(r).join(" ")).toContain("revenir au texte");
+  });
+
+  it("refuse de prêter à un auteur les mots d'un ouvrage collectif", () => {
+    const r = quoted();
+    r.attribution.authorship = "COAUTHORED";
+    r.attribution.authors.push({ name: "Auteur Deux", app_author_id: null });
+    r.attribution.associated_author = "Auteur Un";
+    expect(errorsOf(r).join(" ")).toContain("les mots de trois");
+  });
+});
+
+describe("buildQuotation", () => {
+  function quoted(quotation) {
+    const r = record();
+    r.evidence.primary_sources[0].language = "de";
+    r.evidence.key_quotation = {
+      text: "Le passage traduit.",
+      language: "fr",
+      original_language: "allemand",
+      original_text: "Der Satz.",
+      primary_source_index: 0,
+      locator: "chap. 6, p. 195",
+      ...quotation,
+    };
+    return r;
+  }
+
+  it("compose une référence qui permet de rouvrir le texte", () => {
+    const q = buildQuotation(quoted({ translation: { kind: "none" } }));
+    expect(q.reference).toBe("Auteur Un, Ouvrage, 1949, chap. 6, p. 195");
+    expect(q.attributedTo).toBe("Auteur Un");
+  });
+
+  it("nomme le traducteur d'une traduction publiée", () => {
+    const q = buildQuotation(
+      quoted({ translation: { kind: "published", translator: "J. Freund", edition: "Plon, 1971" } })
+    );
+    expect(q.translationNote).toBe("Traduit de allemand par J. Freund (Plon, 1971)");
+  });
+
+  it("avoue une traduction non publiée plutôt que de la faire passer pour l'auteur", () => {
+    const q = buildQuotation(quoted({ translation: { kind: "in-house" } }));
+    expect(q.translationNote).toContain("non publiée");
+  });
+
+  it("ne stocke pas les guillemets : le texte reste comparable à l'édition", () => {
+    const q = buildQuotation(quoted({ translation: { kind: "none" } }));
+    expect(q.text).toBe("Le passage traduit.");
+  });
+
+  it("n'invente rien quand aucun passage n'a été établi", () => {
+    expect(buildQuotation(record())).toBeUndefined();
   });
 });
 

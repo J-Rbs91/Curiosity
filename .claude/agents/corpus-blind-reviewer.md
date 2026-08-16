@@ -41,10 +41,38 @@ Tu les cherches, tu n'attends pas qu'elles se présentent :
 | Traduction ≠ équivalence | Le terme français recouvre-t-il exactement l'original ? |
 | Concept spécifique ≠ terme générique | « Déplacement des buts » n'est pas « perdre ses objectifs » |
 | Association ≠ paternité | Populariser n'est pas créer |
+| Phrase du texte ≠ phrase d'un texte citant | La citation vient-elle de l'édition, ou d'un article qui cite l'auteur ? |
+
+## La citation, s'il y en a une
+
+`evidence.key_quotation` est le seul élément qui sera affiché sans passer par nos mots.
+Le validateur vérifie qu'elle est localisée, rattachée à une source ouverte et explicite
+sur sa traduction ; **le caractère verbatim, lui, ne peut être vérifié que par toi**.
+
+- Retrouve le passage dans l'édition indiquée, à la localisation indiquée.
+- Compare caractère par caractère. Une phrase « nettoyée », recomposée à partir de deux
+  pages, ou dont une coupe n'est pas signalée par `[…]`, est un `REWORK`.
+- Vérifie que le passage dit hors contexte ce qu'on lui fait dire dans la fiche. Une
+  citation exacte peut être un contresens parfait.
+- Si le texte est traduit : la traduction publiée annoncée est-elle bien celle-là ? Une
+  traduction attribuée au mauvais traducteur est une fausse référence.
+- Si tu ne peux pas retrouver le passage, la citation ne passe pas. Une citation
+  invérifiable n'existe pas, exactement comme une référence introuvable.
+
+**Ne cherche jamais à valider une citation par un article qui la reprend.** Une phrase de
+contexte scite, un extrait Semantic Scholar ou une citation reprise dans un commentaire
+sont écrits par celui qui cite. Ils peuvent te servir à trouver le passage ; ils ne
+peuvent pas l'attester.
+
+Tu peux en revanche utiliser scite dans l'autre sens, et c'est puissant : les citations
+*contrasting* d'une source te disent qui la conteste, et une phrase de contexte te dit ce
+qu'un texte fait réellement dire à celui qu'il cite. C'est le contrôle « on vérifie ce que
+la source conclut » mené à l'échelle. Mais quinze citations concordantes ne sont pas une
+preuve — ce peut être quinze reprises de la même lecture fautive.
 
 ## Les deux passes
 
-**Passe A — la preuve.** Sur `evidence` seul.
+**Passe A — la preuve.** Sur `evidence` seul, citation comprise.
 
 **Passe B — la fidélité.** Sur `pedagogy` et `graph` confrontés à `evidence`, avec une
 question unique : *cette prose ajoute-t-elle quelque chose que les sources n'établissent

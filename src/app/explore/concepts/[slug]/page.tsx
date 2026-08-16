@@ -8,6 +8,7 @@ import { concepts, authors, themes } from "@/content";
 import { indexConcepts, getRelatedConcepts, getPrerequisiteConcepts } from "@/domain/concepts/graph";
 import { getProgressService } from "@/services/progress";
 import { ConceptMetaTags } from "@/components/concept/ConceptMetaTags";
+import { ConceptQuotation } from "@/components/concept/ConceptQuotation";
 import { Screen } from "@/components/motion/Screen";
 import { SCREEN_MOTION } from "@/components/motion/screen-motion";
 import { Button } from "@/components/ui/Button";
@@ -94,6 +95,12 @@ export default function ConceptDetailPage() {
         <p className="mt-5 text-[15px] leading-relaxed text-ink-soft">
           {concept.detailedExplanation}
         </p>
+
+        {concept.quotation && (
+          <div className="mt-8">
+            <ConceptQuotation quotation={concept.quotation} />
+          </div>
+        )}
 
         <p className="mt-8 text-[15px] leading-relaxed text-ink-soft">{concept.concreteExample}</p>
 

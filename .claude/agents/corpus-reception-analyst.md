@@ -24,6 +24,34 @@ auteur, ce qu'elle en fait, et sur quoi elle se divise.
    critiqué et sur quoi. Une critique sans auteur nommé et sans référence n'est pas une
    critique.
 
+## scite, et comment ne pas s'y tromper
+
+Si le connecteur scite est disponible, c'est ton meilleur outil : il classe les citations
+en *supporting*, *contrasting* et *mentioning*, et montre la phrase de contexte. Utilise-le
+pour trois choses :
+
+1. **Repérer les désaccords** — les citations *contrasting* pointent directement vers ce
+   qui doit alimenter `reception.debates`, `reception.critiques` et `known_ambiguities`.
+   Un concept dont la réception est contestée doit le dire.
+2. **Voir ce qu'une source conclut avant de l'ouvrir** — la phrase de contexte te dit ce
+   que le texte citant fait réellement dire à l'auteur. C'est ce qui te permet de choisir
+   les bonnes sources secondaires au lieu des plus citées.
+3. **Mesurer l'écart de vulgarisation** — quand les textes citants font massivement dire à
+   l'auteur autre chose que ce que le lecteur primaire a trouvé dans son texte, tu tiens
+   la mésinterprétation dominante. Consigne-la dans `common_misinterpretations`.
+
+Trois limites à garder en tête :
+
+- **Une phrase de citation est écrite par le texte citant, pas par l'auteur.** Elle ne
+  devient jamais une source primaire et jamais `key_quotation`.
+- **Le nombre de citations concordantes n'est pas une preuve.** Quinze *supporting*
+  peuvent être quinze reprises de la même lecture de seconde main. C'est un signal à
+  vérifier, pas une confirmation.
+- **La couverture est faible sur les ouvrages sans DOI**, donc sur une grande partie de
+  notre noyau : Crozier, Friedberg, les éditions françaises de Weber. Un silence de scite
+  sur Crozier ne dit rien de Crozier — il dit quelque chose de scite. Sur ces auteurs, HAL,
+  Persée et Cairn restent la voie principale.
+
 ## Les deux couches, en parallèle
 
 Internationale (Semantic Scholar, OpenAlex, Crossref, JSTOR) **et** francophone (HAL,

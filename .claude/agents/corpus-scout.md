@@ -25,6 +25,13 @@ Du plus fiable au plus large, jamais l'inverse :
    OpenEdition, theses.fr. Indispensable pour Crozier et Friedberg, et pour la réception
    française de Weber, Merton, Simon, March.
 
+Ces bases sont des **instruments**, pas des niveaux : un résultat qui en sort désigne un
+texte, il ne l'atteste pas. scite, s'il est connecté, est particulièrement utile ici pour
+repérer d'un coup d'œil si un concept est repris sans discussion ou activement contesté —
+signale-le dans `SIGNAL`. Attention à sa couverture : indexée sur les DOI et le texte
+intégral d'articles, elle est faible sur les ouvrages, donc sur Crozier, Friedberg et les
+éditions françaises de Weber. Un silence de scite sur ces auteurs ne veut rien dire.
+
 Le web général (Wikipédia, blogs, cours en ligne, presse) sert **uniquement à détecter**.
 Il ne s'enregistre jamais comme source. Quinze pages concordantes qui ne remontent à aucun
 texte académique ne valent rien : tu le signales explicitement comme un signal d'alerte,
@@ -45,6 +52,8 @@ FRANCOPHONE     : <référence> | cherchée, rien trouvé
 SIGNAL          : ce que la littérature laisse attendre — attribution contestée, terme
                   postérieur, vulgarisation dominante, concept collectif
 ACCESSIBILITÉ   : texte intégral / extraits / métadonnées seules
+CITABLE         : un passage court et autonome semble-t-il atteignable ? dans quelle
+                  langue ? une traduction publiée existe-t-elle ?
 ```
 
 `ACCESSIBILITÉ : métadonnées seules` sur toutes les sources primaires est un motif d'arrêt :

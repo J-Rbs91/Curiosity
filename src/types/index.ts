@@ -29,6 +29,25 @@ export interface Source {
   url?: string;
 }
 
+/**
+ * Un passage du texte de l'auteur, cité mot pour mot.
+ *
+ * C'est la seule chose de l'application qui ne soit pas une reformulation : tout le reste
+ * — résumé, mécanisme, exemple — passe par nos mots. Elle n'existe donc que si elle est
+ * verbatim, localisée dans une édition précise, et honnête sur sa traduction : afficher
+ * du Weber en français sans dire qui l'a traduit, c'est présenter une interprétation
+ * comme une parole d'auteur.
+ */
+export interface Quotation {
+  text: string;
+  /** L'auteur à qui la phrase appartient — jamais déduit d'un concept coécrit. */
+  attributedTo: string;
+  /** Ouvrage et localisation, tels qu'ils permettent de rouvrir à la bonne page. */
+  reference: string;
+  /** « traduit de l'allemand par… » ou l'aveu d'une traduction non publiée. */
+  translationNote?: string;
+}
+
 export type QuizQuestionType = "mcq" | "true-false" | "open";
 
 export interface QuizQuestion {
@@ -68,6 +87,9 @@ export interface Concept {
 
   shortExplanation: string;
   detailedExplanation: string;
+
+  /** Le texte de l'auteur lui-même, quand un passage citable a pu être établi. */
+  quotation?: Quotation;
 
   authors: AuthorId[];
   /**

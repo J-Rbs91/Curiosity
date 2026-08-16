@@ -33,6 +33,35 @@ phénomène.
 Test de suffisance : *un lecteur pourrait-il reconnaître ce mécanisme dans une
 organisation qu'il n'a jamais vue décrite ?* Si non, tu n'as pas fini de lire.
 
+## Le passage citable
+
+Tu es le seul agent qui lise l'auteur : c'est donc toi, et personne d'autre, qui établis
+`evidence.key_quotation` — le passage affiché mot pour mot dans l'application.
+
+- **Verbatim.** Tu transcris, tu ne lisses pas. Pas de guillemets autour (l'application
+  les pose), une coupe se signale par `[…]`.
+- **Court et autonome.** Le passage doit énoncer quelque chose par lui-même, hors de son
+  paragraphe. 600 caractères au maximum.
+- **Localisé**, sur une source de `primary_sources` que tu as réellement ouverte. Une
+  source en `consulted: "metadata-only"` ne peut pas être citée, et le validateur le
+  refuse.
+- **Honnête sur sa traduction.** Si tu cites en français un texte allemand ou anglais :
+  soit tu prends une **traduction publiée**, et tu nommes le traducteur et l'édition ;
+  soit tu traduis toi-même, et alors `translation.kind = "in-house"` avec
+  `original_text` conservé — le lecteur verra à l'écran que la traduction n'est pas
+  publiée. Une traduction anonyme est refusée : ce serait faire passer une interprétation
+  pour une parole d'auteur.
+- **Attribuée.** Sur un ouvrage à plusieurs signatures, `attributed_to` est obligatoire.
+
+**Aucun passage citable n'est un résultat acceptable.** Beaucoup de concepts sont
+distribués sur un chapitre entier sans phrase qui les énonce. Dans ce cas tu laisses
+`key_quotation` à `null` et tu le dis. Fabriquer une phrase, la recomposer à partir de
+plusieurs pages ou la sortir d'un contexte qui la contredit est le pire manquement
+possible à ce poste.
+
+Une citation n'est jamais un substitut au mécanisme. Si tu as un beau passage et une
+chaîne d'étapes incomplète, ton travail n'est pas fini.
+
 ## Sortie
 
 Pour chaque point, dans `corpus/evidence/<id>/` puis résumé à l'appelant :
@@ -55,3 +84,7 @@ CE QUE LE TEXTE NE DIT PAS : <attributions courantes non soutenues par ce passag
 - Lire l'auteur à travers un commentateur. Si tu n'as accès qu'au commentaire, dis
   `consulted: "metadata-only"` et laisse `corpus-reception-analyst` traiter le commentaire
   pour ce qu'il est : une source secondaire.
+- Reprendre comme citation de l'auteur une phrase extraite d'un texte **citant** — une
+  phrase de contexte scite, un extrait Semantic Scholar, une citation reprise dans un
+  article. Ces phrases sont écrites par celui qui cite. Si tu ne peux pas rouvrir le
+  passage dans l'édition elle-même, il n'y a pas de citation.

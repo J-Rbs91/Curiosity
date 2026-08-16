@@ -116,6 +116,48 @@
             "disappears_when": { "type": "array", "items": { "type": "string" } }
           }
         },
+        "key_quotation": {
+          "type": ["object", "null"],
+          "description": "Le passage de l'auteur affiché tel quel dans l'application. Verbatim, tiré d'une source primaire réellement consultée, et honnête sur sa traduction. Un extrait de citation issu d'un article citant (scite, Semantic Scholar) n'est jamais une citation de l'auteur : c'est un tiers qui parle de lui.",
+          "required": ["text", "language", "primary_source_index", "locator"],
+          "additionalProperties": false,
+          "properties": {
+            "text": {
+              "type": "string",
+              "maxLength": 600,
+              "description": "Texte affiché, mot pour mot. Une coupe se signale par […], jamais par une reformulation."
+            },
+            "language": { "type": "string", "description": "Langue de `text` — celle qui sera affichée." },
+            "original_text": {
+              "type": ["string", "null"],
+              "description": "Texte dans la langue d'origine. Obligatoire dès que `text` en est une traduction non publiée."
+            },
+            "original_language": { "type": ["string", "null"] },
+            "translation": {
+              "type": "object",
+              "required": ["kind"],
+              "additionalProperties": false,
+              "properties": {
+                "kind": {
+                  "enum": ["none", "published", "in-house"],
+                  "description": "none : `text` est dans la langue d'origine. published : traduction publiée, traducteur et édition obligatoires. in-house : traduction de notre fait — c'est une interprétation, elle se déclare à l'écran."
+                },
+                "translator": { "type": ["string", "null"] },
+                "edition": { "type": ["string", "null"] }
+              }
+            },
+            "attributed_to": {
+              "type": ["string", "null"],
+              "description": "Auteur à qui la phrase appartient. Obligatoire dès que l'ouvrage a plusieurs auteurs : on ne prête pas à l'un les mots de trois."
+            },
+            "primary_source_index": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Index dans `primary_sources`. La source visée ne peut pas être consultée en métadonnées seules : on ne cite pas un texte qu'on n'a pas ouvert."
+            },
+            "locator": { "type": "string", "description": "Chapitre, section, page du passage cité." }
+          }
+        },
         "primary_sources": {
           "type": "array",
           "minItems": 0,

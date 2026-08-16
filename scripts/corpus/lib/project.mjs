@@ -45,6 +45,41 @@ export function buildAttributionNote(record) {
   return parts.length > 0 ? parts.join(" ") : undefined;
 }
 
+/**
+ * La citation telle qu'elle sera lue. Deux choses s'y jouent : la référence doit permettre
+ * de rouvrir le texte, et une traduction ne doit jamais passer pour la parole de l'auteur.
+ * Une traduction publiée nomme son traducteur ; une traduction de notre fait le dit.
+ */
+export function buildQuotation(record) {
+  const quotation = record?.evidence?.key_quotation;
+  if (!quotation || !isFilled(quotation.text)) return undefined;
+
+  const source = asArray(record?.evidence?.primary_sources)[quotation.primary_source_index];
+  const attributedTo =
+    quotation.attributed_to ??
+    record?.attribution?.associated_author ??
+    asArray(record?.attribution?.authors)[0]?.name ??
+    "";
+
+  const reference = [source?.citation, quotation.locator].filter(isFilled).join(", ");
+
+  const projected = { text: quotation.text, attributedTo, reference };
+
+  const translation = quotation.translation ?? {};
+  if (translation.kind === "published") {
+    const from = isFilled(quotation.original_language) ? ` de ${quotation.original_language}` : "";
+    projected.translationNote = [
+      `Traduit${from} par ${translation.translator}`,
+      isFilled(translation.edition) ? ` (${translation.edition})` : "",
+    ].join("");
+  } else if (translation.kind === "in-house") {
+    const from = isFilled(quotation.original_language) ? ` de ${quotation.original_language}` : "";
+    projected.translationNote = `Traduit${from} pour cette fiche — traduction non publiée`;
+  }
+
+  return projected;
+}
+
 function sourceUrl(source) {
   if (isFilled(source?.url)) return source.url;
   const ref = source?.doi_isbn;
@@ -117,6 +152,9 @@ export function projectConcept(record) {
 
   const note = buildAttributionNote(record);
   if (note) concept.attributionNote = note;
+
+  const quotation = buildQuotation(record);
+  if (quotation) concept.quotation = quotation;
 
   const sources = projectSources(record);
   if (sources.length > 0) concept.sources = sources;

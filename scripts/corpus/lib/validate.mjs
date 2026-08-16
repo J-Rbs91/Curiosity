@@ -124,6 +124,57 @@ function checkSources(evidence, status, errors) {
     );
 }
 
+/**
+ * La citation est le seul élément de l'application qui ne passe pas par nos mots. Elle
+ * n'est donc admise que si elle est rattachable à un texte réellement ouvert, localisée,
+ * et explicite sur sa traduction. Le caractère verbatim, lui, ne s'automatise pas : c'est
+ * le contrôleur aveugle qui le vérifie contre l'édition.
+ */
+function checkQuotation(record, errors) {
+  const quotation = record?.evidence?.key_quotation;
+  if (!quotation) return;
+
+  const primary = asArray(record?.evidence?.primary_sources);
+  const at = "evidence.key_quotation";
+
+  if (!isFilled(quotation.text)) errors.push(`${at}.text vide`);
+  else if (quotation.text.length > 600)
+    errors.push(`${at}.text : ${quotation.text.length} caractères — une citation courte, pas un extrait d'ouvrage`);
+  if (!isFilled(quotation.locator))
+    errors.push(`${at}.locator manquant — une citation qu'on ne peut pas rouvrir à la bonne page ne vaut rien`);
+  if (!isFilled(quotation.language)) errors.push(`${at}.language manquante`);
+
+  const index = quotation.primary_source_index;
+  const source = Number.isInteger(index) ? primary[index] : undefined;
+  if (!source) {
+    errors.push(`${at}.primary_source_index « ${index} » ne pointe sur aucune source primaire`);
+  } else if (source.consulted === "metadata-only") {
+    errors.push(`${at} : la source visée n'a été consultée qu'en métadonnées — on ne cite pas un texte qu'on n'a pas ouvert`);
+  }
+
+  const translation = quotation.translation ?? {};
+  const translated =
+    source && isFilled(source.language) && isFilled(quotation.language)
+      ? source.language !== quotation.language
+      : translation.kind === "published" || translation.kind === "in-house";
+
+  if (translated && translation.kind !== "published" && translation.kind !== "in-house")
+    errors.push(
+      `${at} : le passage est cité dans une autre langue que sa source sans traduction déclarée — traduction ≠ équivalence`
+    );
+  if (translation.kind === "published" && (!isFilled(translation.translator) || !isFilled(translation.edition)))
+    errors.push(`${at}.translation : une traduction publiée se cite avec son traducteur et son édition`);
+  if (translation.kind === "in-house" && !isFilled(quotation.original_text))
+    errors.push(
+      `${at} : traduction de notre fait sans original_text — le lecteur comme le contrôleur doivent pouvoir revenir au texte`
+    );
+
+  if (record?.attribution?.authorship !== "SOLE_AUTHOR" && !isFilled(quotation.attributed_to))
+    errors.push(
+      `${at}.attributed_to manquant sur un concept à plusieurs auteurs : on ne prête pas à l'un les mots de trois`
+    );
+}
+
 function checkGating(record, errors) {
   const v = record.validation ?? {};
   const evidenceReview = v.evidence_review ?? {};
@@ -205,6 +256,7 @@ export function validateRecord(record, { dir, themeIds = new Set(), authorIds = 
       "evidence.mechanism : au moins deux étapes — le mécanisme avant l'exemple, sinon la fiche est vide"
     );
   checkSources(evidence, record?.status, errors);
+  checkQuotation(record, errors);
 
   // --- pédagogie ----------------------------------------------------------
   const pedagogy = record?.pedagogy ?? {};
