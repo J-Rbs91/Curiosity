@@ -1,6 +1,6 @@
 "use client";
 
-import { useParams, notFound } from "next/navigation";
+import { notFound, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { concepts, authors, themes } from "@/content";
@@ -18,9 +18,9 @@ import { DeepenButton } from "@/components/ui/DeepenButton";
  * contrainte d'un écran : les sources y sont dépliées, les rattachements cliquables, et
  * rien n'est masqué. C'est la différence entre rencontrer un concept et aller le chercher.
  */
-export default function ConceptDetailPage() {
-  const params = useParams<{ slug: string }>();
-  const concept = concepts.find((c) => c.slug === params.slug);
+export function ConceptDetail() {
+  const slug = useSearchParams().get("c");
+  const concept = concepts.find((c) => c.slug === slug);
 
   if (!concept) return notFound();
 
