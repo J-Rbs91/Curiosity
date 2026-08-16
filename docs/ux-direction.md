@@ -1,6 +1,6 @@
 # Direction UX de Curiosity
 
-Ce document fixe les décisions de navigation, de registre visuel et de mouvement.
+Ce document fixe les décisions de structure, de registre visuel et de mouvement.
 Il existe pour une raison simple : un parti pris non écrit ne survit pas au
 troisième contributeur. Toute modification d'interface se confronte à ce qui suit.
 
@@ -16,14 +16,10 @@ s'appuient sur le corpus de méthode local et sur la lecture du code existant.
 | | |
 |---|---|
 | Utilisateur | Adulte curieux — étudiant, encadrant, consultant — pas un spécialiste de la discipline |
-| Tâche principale | Faire une session courte qui fait découvrir, relier ou réviser un concept |
-| Fréquence | Quotidienne, mais brève : 2, 5 ou 10 minutes, une ouverture ou deux par jour |
+| Tâche principale | Rencontrer un concept, le comprendre, éventuellement le prolonger ailleurs |
+| Fréquence | Quotidienne, mais brève : une ouverture ou deux par jour, quelques minutes |
 | Contexte | Téléphone, une main, souvent en déplacement. Application installable, données locales |
 | Contrainte | Tout est côté client : la progression est lue dans le navigateur, jamais rendue par le serveur |
-
-Cette ligne « quotidienne mais brève » commande tout ce qui suit. Elle n'autorise
-pas ce qu'on s'autoriserait sur une page vue une fois, et elle interdit moins que
-sur un outil ouvert huit heures par jour.
 
 ---
 
@@ -31,53 +27,49 @@ sur un outil ouvert huit heures par jour.
 
 ```
 Dimension porteuse  : le mouvement.
-Écart assumé        : une grammaire de continuité spatiale. Le corpus est un
-                      espace ; descendre dedans pousse le contenu vers la gauche,
-                      remonter le ramène par la droite, entrer en session le fait
-                      monter par-dessus l'application. Chaque changement d'état
-                      est joué, aucun n'est décoré.
+Écart assumé        : une grammaire de continuité spatiale, jouée avec ampleur.
+                      Le corpus est un espace ; descendre dedans pousse le contenu
+                      vers la gauche, remonter le ramène par la droite, entrer en
+                      session le fait monter par-dessus l'application. Les
+                      déplacements sont longs et larges, les fondus courts.
 Où il se manifeste  : navigation entre écrans, phases de la session, changement
-                      d'onglet, appui sur toute cible, remplissage des barres de
-                      progression, révélation de la correction d'un quiz.
-Ce qui reste neutre : la palette — achromatique, voir §2 bis —, la typographie
-                      (deux familles, inchangées), le rythme (une colonne de
-                      448 px), la matière (aucune ombre, aucun flou décoratif),
-                      l'imagerie (aucune), la voix (déjà juste).
-Coût accepté        : trois courbes et six durées à tenir comme des tokens ; un
-                      repli en mouvement réduit à écrire pour chaque classe de
-                      transition ; une dégradation silencieuse sur les
-                      navigateurs sans View Transitions API.
+                      d'onglet, appui sur toute cible, arrivée de tout contenu.
+Ce qui reste neutre : la palette — achromatique, §3 —, la typographie (deux
+                      familles), le rythme (une colonne), la matière (aucune
+                      ombre, aucun flou décoratif), l'imagerie (aucune).
+Coût accepté        : trois courbes et sept durées à tenir comme des tokens ; un
+                      repli en mouvement réduit pour chaque classe de transition ;
+                      une dégradation silencieuse sans View Transitions API.
 ```
 
-**Pourquoi le mouvement, alors que c'est la dimension la plus chère.** Parce que
-c'est ce qui a été demandé, et parce que la fréquence d'usage l'autorise ici : le
-mouvement est exclu des surfaces vues des heures par jour, pas d'une application
-ouverte cinq minutes. Ce qui reste exclu, y compris ici, c'est le mouvement
-**continu** — rien ne pulse, ne flotte ni ne tourne au repos.
-
-**Ce que « sobre, minimaliste, zéro distraction » veut dire, traduit en décisions
-vérifiables** — un qualificatif non traduit ne s'implémente pas :
+**Ce que « dépouillé » veut dire ici, traduit en décisions vérifiables** — un
+qualificatif non traduit ne s'implémente pas :
 
 | Intention | Décision observable |
 |---|---|
+| Dépouillé | Aucun compteur, aucune barre, aucun pourcentage, aucun réglage. Un écran ne porte que ce qu'il y a à comprendre |
 | Sobre | Aucune couleur décorative · aucun dégradé · aucune ombre : sur du noir, une élévation se dit par la luminosité |
-| Minimaliste | Aucune information retirée pour épurer : ce qui est retiré est du bruit, et le seul retrait effectué est justifié au §5 |
 | Zéro distraction | Rien ne bouge sans qu'un état ait changé · la barre de navigation disparaît pendant une session · aucun mouvement ne retarde une information attendue |
-| Très animé | Tout changement d'état est joué : sept familles de transition, listées au §4 |
+| Ample | Le déplacement dure 560 ms sur 16 % de la largeur, quand le fondu en dure 300 |
+
+**La distinction qui fait tout le travail :** ce qui sépare une application
+volontairement minimaliste d'une application inachevée n'est pas la quantité de
+choses retirées, c'est la **tenue de ce qui reste**. Un écran vide sans rythme
+typographique, sans grammaire de mouvement et sans état soigné ressemble à un
+chantier. C'est pourquoi le dépouillement s'accompagne ici d'un mouvement plus
+long, pas plus discret.
 
 ---
 
-## 2 bis. La palette
+## 3. La palette
 
 **Application sombre, sans variante claire.** Fond noir, et une échelle de gris.
 
-C'est une décision assumée, pas un défaut : la méthode considère normalement le
-sombre-par-défaut comme un choix esthétique déguisé en décision, et son critère de
-validation est « le mode clair existe-t-il et tient-il ». Ici il n'existe pas. Ce
-qu'on y gagne — une seule palette à tenir, un noir qui éteint réellement l'écran
-sur les dalles OLED, une lecture reposante le soir — se paie par une lisibilité
-moindre en plein soleil. Les contrastes élevés retenus ci-dessous limitent ce coût
-sans l'annuler.
+C'est une décision assumée : la méthode considère normalement le sombre-par-défaut
+comme un choix esthétique déguisé en décision, et son critère de validation est
+« le mode clair existe-t-il et tient-il ». Ici il n'existe pas. Ce qu'on y gagne se
+paie par une lisibilité moindre en plein soleil ; les contrastes élevés ci-dessous
+limitent ce coût sans l'annuler.
 
 ### L'échelle
 
@@ -88,12 +80,11 @@ barreau a un emploi.
 | Valeur | Contraste sur le noir | Ce qu'elle a le droit de porter |
 |---|---|---|
 | `--n-950` `#000000` | — | Le fond |
-| `--n-850` `#121212` | 1,12:1 | Une surface levée : carte, encadré, ligne de liste |
+| `--n-850` `#121212` | 1,12:1 | Une surface levée : onglet, réponse de quiz, pastille |
 | `--n-800` `#1c1c1c` | 1,23:1 | La même surface au contact |
-| `--n-700` `#2a2a2a` | 1,46:1 | La piste d'une barre de progression |
 | `--n-600` `#3d3d3d` | 1,93:1 | Un séparateur, un filet |
 | `--n-500` `#6b6b6b` | 3,94:1 | Une bordure ou une icône **fonctionnelle** — au-dessus du seuil de 3 |
-| `--n-400` `#8f8f8f` | 6,49:1 | Un intitulé en capitales, un texte tertiaire |
+| `--n-400` `#8f8f8f` | 6,49:1 | Un intitulé en capitales, un auteur, un texte tertiaire |
 | `--n-300` `#b5b5b5` | 10,24:1 | Le texte secondaire |
 | `--n-100` `#ededed` | 17,94:1 | Le texte principal |
 | `--n-50` `#fafafa` | 20,12:1 | L'action principale, la position courante |
@@ -102,143 +93,178 @@ Les ratios sont calculés, pas estimés. Ils décident : `--n-500` ne peut pas p
 du texte courant (il lui manque 0,6 pour atteindre 4,5), et c'est exactement pour
 ça qu'il porte les bordures, dont le seuil est de 3.
 
-**Le texte principal n'est pas blanc pur**, et le fond ne remonte jamais vers le
-gris moyen : sur du noir, du blanc pur produit un halo qui fatigue à la lecture
-suivie, ce qui est précisément l'usage de ce produit.
+**Le texte principal n'est pas blanc pur** : sur du noir, le blanc pur produit un
+halo qui fatigue à la lecture suivie, ce qui est précisément l'usage de ce produit.
 
 ### Deux règles
 
-**L'accent n'est plus une couleur.** C'est `--n-50`, la valeur la plus claire de
+**L'accent n'est pas une couleur.** C'est `--n-50`, la valeur la plus claire de
 l'échelle. Elle est rare et ne dit qu'une chose : voici l'action, ou voici où vous
-êtes. Le bouton principal est un pavé blanc à texte noir, l'onglet actif une
-pilule blanche, le repère de position une barre blanche.
+êtes.
 
 **La couleur ne signale que ce qui est juste, ce qui est faux, et ce qui est
-irréversible.** Deux teintes désaturées, `--good` et `--warn`, et rien d'autre dans
-tout le produit. Elles ne sont jamais employées seules : « Exact. », « Pas tout à
-fait. » et « Réinitialiser la progression » sont écrits, faute de quoi
-l'information disparaîtrait pour qui ne distingue pas ces deux teintes.
+irréversible.** Deux teintes désaturées, `--good` et `--warn`, et rien d'autre.
+Jamais employées seules : « Exact. », « Pas tout à fait. » et « Effacer mes
+données » sont écrits, faute de quoi l'information disparaîtrait pour qui ne
+distingue pas ces deux teintes.
 
 ### Ce qui remplace les bordures
 
-Sur fond clair, une carte se délimitait par un filet. Sur du noir, un filet devrait
-atteindre le seuil de contraste des éléments d'interface pour être perçu — il
-deviendrait alors plus bruyant que la surface qu'il entoure. **Les cartes, les
-lignes de liste, les tuiles et les réponses de quiz sont donc des surfaces levées**
-(`--n-850`), qui s'éclaircissent au contact (`--n-800`). Une bordure ne réapparaît
-que lorsqu'elle porte un état : la bonne réponse, la mauvaise, le contour d'un
-bouton secondaire.
-
-Conséquence à ne pas perdre de vue en modifiant le quiz : la bordure est déclarée
-en permanence, transparente tant qu'aucun état n'est à porter. Sans cela, son
-apparition décalerait la mise en page d'un pixel au moment de la réponse.
+Sur du noir, un filet devrait atteindre le seuil de contraste des éléments
+d'interface pour être perçu — il deviendrait alors plus bruyant que ce qu'il
+entoure. Ce qui se manipule est donc une **surface levée** qui s'éclaircit au
+contact. Une bordure ne réapparaît que lorsqu'elle porte un état : la bonne
+réponse, la mauvaise, le contour d'un bouton secondaire. Cette bordure est
+déclarée en permanence, transparente au repos — son apparition décalerait sinon la
+mise en page d'un pixel au moment de la réponse.
 
 ---
 
-## 3. Navigation — ce qui a changé et pourquoi
+## 4. Ce que l'interface affiche, et ce qu'elle n'affiche plus
 
-| Décision | Ce qu'elle corrige |
+**Quatre éléments, et rien d'autre, sur l'écran du jour :** le thème, le concept,
+son résumé, son auteur.
+
+Ont été retirés, et ne doivent pas revenir sans une raison écrite :
+
+| Retiré | Pourquoi |
 |---|---|
-| La barre de navigation disparaît sur `/learn` | Pendant une session, l'écran proposait quatre sorties concurrentes ; partir par un onglet abandonnait la session sans que rien ne l'ait dit |
-| Un retour d'étape dans la session | Il n'y avait aucun moyen de relire l'explication après l'avoir dépassée. Le retour ne rejoue pas les enregistrements de progression, et le résultat reste terminal |
-| L'écran de résultat mène à la fiche du concept | La session se terminait en cul-de-sac : le concept qu'on venait de travailler n'était atteignable qu'en repassant par Explorer, un auteur, puis la fiche |
-| L'onglet d'Explorer vit dans l'URL | Revenir d'une fiche de thème ramenait systématiquement sur « Auteurs » ; il fallait refaire le chemin |
-| Retour nommé sur toutes les fiches | La fiche de concept revenait par l'historique du navigateur — depuis une fin de session, cela renvoyait dans la session qu'on venait de quitter. Les quatre écrans de détail portent maintenant le même retour, vers une destination nommée |
-| `/settings` a une sortie | On y entrait par une icône et on n'en sortait que par un onglet de la barre |
-| « À revoir » liste ce qu'il compte | Un indicateur qui ne déclenche aucune action est décoratif. Les concepts sont maintenant listés, chacun ouvrant sa fiche, d'où la révision se lance |
-| Focus visible partout | Il n'existait aucun style de focus : l'application n'était pas utilisable au clavier |
-| Réserve sous le contenu calculée | Le retrait bas était une valeur fixe qui ne tenait pas compte de la zone sûre du système |
+| Les durées annoncées (« 5 min ») | Une lecture ne s'annonce pas par un chiffre ; l'annonce crée une attente que le texte ne tient jamais exactement |
+| Le réglage de niveau d'explication | La difficulté d'un concept se lit dans son texte, pas dans une préférence choisie une fois pour toutes |
+| Le réglage de durée préférée | Même raison, et il ne pilotait qu'un chiffre affiché |
+| Les compteurs et les barres de progression | Ils mesuraient l'application, pas la compréhension |
+| Le niveau de maîtrise affiché (« Découvert », « Compris ») | Une étiquette de score sur un concept qu'on vient de lire déplace l'attention du contenu vers le tableau de bord |
+| L'écran de progression | Il ne contenait que ce qui précède |
+| Le type de session affiché (« Découverte · ») | Information sur le mécanisme interne, pas sur ce qu'il y a à comprendre |
 
-**Ce qui n'a pas changé, et pourquoi.** Les trois onglets sont les bons : ils
-nomment trois intentions distinctes dans le vocabulaire de l'utilisateur. Les
-réglages restent derrière l'écran de bilan — un quatrième onglet pour un écran
-visité deux fois dans la vie du produit coûterait plus qu'il ne rapporte.
+**Le suivi n'a pas disparu, il a cessé d'être une interface.** La progression, la
+répétition espacée et le score de maîtrise continuent de fonctionner : c'est eux
+qui choisissent le concept du jour et qui décident si l'on découvre ou si l'on
+revoit. Ils ne se consultent simplement plus, et ne se règlent plus.
+
+**Deux destinations.** « Aujourd'hui » et « Explorer ». Les réglages, réduits à
+l'effacement des données, sont derrière une icône dans l'en-tête d'Explorer.
+Retirer cet effacement enfermerait l'utilisateur dans un historique qu'il ne
+pourrait plus défaire — c'est la seule raison pour laquelle cet écran existe
+encore.
 
 ---
 
-## 4. Le budget de mouvement
+## 5. Le bouton « + » — envoyer un concept à une IA
 
-La règle qui décide : **plus une chose est vue souvent, plus son mouvement est
-court.** Elle croise l'ordre de grandeur attendu par type d'élément, et la plus
-contraignante des deux gagne.
+Présent sur l'écran du jour, sur la fiche d'un concept, et à la fin d'une session.
 
-| Ce qui bouge | Vu par session | Durée | Courbe |
-|---|---|---|---|
-| Appui sur une cible | 10 à 20 fois | 140 ms | `--ease-out-soft` |
-| Onglet, sélection, repère de position | 2 à 5 fois | 180 ms | `--ease-out-soft` |
-| Sortie d'un écran ou d'une phase | 5 à 10 fois | 150 ms | `--ease-out-soft` |
-| Entrée d'un écran ou d'une phase | 5 à 10 fois | 280 ms | `--ease-firm` |
-| Entrée et sortie de session | 1 à 2 fois | 320 ms | `--ease-lift` |
-| Remplissage d'une barre, révélation d'un résultat | 1 à 2 fois | 420 ms | linéaire / `--ease-out-soft` |
+**Aucune application d'IA n'est nommée ni détectée.** Le partage passe par la
+feuille de partage du système, qui liste déjà les applications capables de recevoir
+du texte : c'est le système qui sait ce qui est installé, pas nous. Une liste
+maintenue à la main serait fausse le jour de sa première mise en ligne. Là où le
+partage natif n'existe pas — un navigateur de bureau —, le texte part dans le
+presse-papiers, et on le dit.
 
-Deux durées dépassent le plafond habituel de 300 ms, et c'est délibéré : l'entrée
-en session est un panneau qui remonte, vu une à deux fois par session ; le
-remplissage des barres est un moment de bilan. Les autres restent sous le plafond.
+**Ce n'est pas un partage, c'est une commande.** Les quatre éléments visibles à
+l'écran ne sont que le contexte ; l'essentiel du texte envoyé dit quoi en faire :
+une explication continue qui monte du débutant au spécialiste, trois exemples de
+nature différente, les limites du concept, les voisins avec lesquels on le confond,
+des sources datées et trois recommandations classées.
+
+Deux exigences du prompt sont structurelles et ne doivent pas disparaître d'une
+réécriture — `src/domain/concepts/ai-prompt.ts` et ses tests les tiennent :
+
+1. **La progression ne se nomme jamais.** Le prompt interdit explicitement d'écrire
+   « débutant », « intermédiaire » ou « expert ». Sans cette interdiction, tous les
+   modèles produisent trois sections étiquetées, ce qui découpe en paliers ce qui
+   doit se lire d'un trait.
+2. **Une lacune se déclare, elle ne se comble pas.** Le prompt demande de signaler
+   une référence incertaine plutôt que de l'inventer. C'est la seule protection
+   possible, à distance, contre une bibliographie plausible et fausse.
+
+---
+
+## 6. Le budget de mouvement
+
+| Ce qui bouge | Durée | Courbe |
+|---|---|---|
+| Appui sur une cible | 140 ms | `--ease-out-soft` |
+| Onglet, sélection, repère de position | 220 ms | `--ease-out-soft` |
+| Sortie d'un écran ou d'une phase | 220 ms | `--ease-out-soft` |
+| Apparition du nouveau contenu (fondu) | 300 ms | `--ease-out-soft` |
+| Glissement d'un écran ou d'une phase | 560 ms sur 16 % / 10 % | `--ease-lift` |
+| Entrée et sortie de session | 640 ms | `--ease-lift` |
+| Le concept qu'on vient de travailler | 720 ms | `--ease-lift` |
+
+**Le déplacement et le fondu sont dissociés, et c'est ce qui rend un mouvement long
+agréable plutôt que lent.** Le contenu est entièrement lisible en 300 ms pendant
+qu'il continue de glisser jusqu'à son repos pendant 560. Réunir les deux durées
+donnerait une interface qu'on attend ; les séparer donne une interface qui arrive
+vite et se pose doucement. C'est la seule raison pour laquelle on peut dépasser
+ici le plafond de 300 ms que la méthode retient par défaut — et le retour à
+l'appui, lui, ne le dépasse pas : il est vu vingt fois par session.
 
 **Les règles d'exécution qui ne se renégocient pas :**
 
-- **Aucune courbe entrante.** Une courbe qui démarre lentement retarde
-  précisément l'instant que l'utilisateur regarde — celui qui suit son geste.
-- **Une sortie est plus rapide qu'une entrée.** L'ancien contenu ne doit pas
-  disputer l'attention au nouveau.
+- **Aucune courbe entrante.** Une courbe qui démarre lentement retarde précisément
+  l'instant que l'utilisateur regarde — celui qui suit son geste.
 - **Rien n'apparaît à partir de rien.** Les entrées partent d'une échelle déjà
-  visible, jamais de zéro.
+  visible.
 - **Deux propriétés seulement sont animées** — le déplacement et l'opacité. Elles
-  ne déclenchent pas de remise en page. Une exception assumée : la largeur des
-  barres de progression, faute d'équivalent.
+  ne déclenchent pas de remise en page.
+- **Les amplitudes sont en pourcentage**, jamais en pixels : la même valeur tient
+  sur toutes les tailles d'écran.
 - **Jamais de transition sur « toutes les propriétés ».** Elles sont énumérées.
-- **Aucune valeur en dur.** Courbes et durées sont des tokens dans `globals.css`.
-  Cinq `cubic-bezier` presque identiques dispersés dans le code sont un défaut de
-  design system, pas un détail.
+- **Aucune valeur en dur.** Courbes, durées et amplitudes sont des tokens.
 - **Le mouvement ne porte jamais seul une information.** Le repère de l'onglet
-  actif est une barre qui glisse, mais aussi une couleur, une graisse et un
-  `aria-current`. La correction d'un quiz est une couleur, mais aussi un mot.
+  actif est une barre qui glisse, mais aussi une couleur et un `aria-current`.
+- **Aucun mouvement continu.** Rien ne pulse, ne flotte ni ne tourne au repos.
+- **Une transition en cours n'avale pas les clics** — sans quoi un déplacement de
+  560 ms serait un blocage de 560 ms.
 
-**Mouvement réduit.** `prefers-reduced-motion` est une préférence exprimée par des
-personnes pour qui le mouvement provoque un malaise. Les entrées sont déclarées en
-`no-preference` plutôt que neutralisées après coup : sans animation, l'état affiché
-est directement l'état final, il n'y a rien qui puisse rester invisible ou mal
-placé. Les déplacements disparaissent, les fondus restent.
-
----
-
-## 5. Le seul retrait effectué, et sa justification
-
-Sur l'écran de progression, chaque auteur et chaque thème affichaient un décompte
-de concepts **rencontrés** au-dessus d'une barre qui mesurait, elle, les concepts
-**compris** — deux mesures différentes sur la même ligne, d'où des barres vides en
-face de « 1/6 ». Les deux écrans affichent désormais la même mesure, avec le même
-mot. Le décompte des rencontres n'est pas perdu : il reste en haut de l'écran de
-progression et, concept par concept, sur la page de chaque auteur.
+**Mouvement réduit.** Les entrées sont déclarées en `no-preference` plutôt que
+neutralisées après coup : sans animation, l'état affiché est directement l'état
+final, il n'y a rien qui puisse rester invisible ou mal placé. Les déplacements
+disparaissent, les fondus restent.
 
 ---
 
-## 6. Où vivent les décisions dans le code
+## 7. Navigation — les décisions tenues
+
+| Décision | Ce qu'elle corrige |
+|---|---|
+| La barre de navigation disparaît sur `/learn` | Pendant une session, l'écran proposait des sorties concurrentes ; partir par un onglet abandonnait la session sans que rien ne l'ait dit |
+| Un retour d'étape dans la session | Il n'y avait aucun moyen de relire l'explication après l'avoir dépassée. Le retour ne rejoue pas les enregistrements de progression, et le résultat reste terminal |
+| L'écran de fin mène à la fiche du concept | La session se terminait en cul-de-sac |
+| L'onglet d'Explorer vit dans l'URL | Revenir d'une fiche ramenait systématiquement sur « Auteurs » |
+| Retour nommé sur toutes les fiches | La fiche de concept revenait par l'historique du navigateur — depuis une fin de session, cela renvoyait dans la session qu'on venait de quitter |
+| Focus visible partout | Il n'existait aucun style de focus |
+| Réserve sous le contenu calculée | Le retrait bas était une valeur fixe qui ne tenait pas compte de la zone sûre du système |
+
+---
+
+## 8. Où vivent les décisions dans le code
 
 | Fichier | Ce qu'il porte |
 |---|---|
-| `src/app/globals.css` | L'échelle de neutres et les rôles, tous les tokens de mouvement, les classes de transition, le focus, les replis en mouvement réduit |
+| `src/app/globals.css` | L'échelle de neutres, les rôles, tous les tokens de mouvement, le focus, les replis en mouvement réduit |
 | `src/components/motion/screen-motion.ts` | Les quatre sens de circulation, et eux seuls |
 | `src/components/motion/Screen.tsx` | La correspondance sens → animation, à poser dans chaque `page.tsx` |
 | `src/components/ui/AppShell.tsx` | Les écrans immersifs et la réserve sous le contenu |
+| `src/domain/concepts/ai-prompt.ts` | Le texte envoyé aux applications d'IA |
 
 Une seule implémentation par mécanisme. Deux implémentations divergent, toujours.
 
 ---
 
-## 7. Ce qui reste à vérifier
+## 9. Ce qui reste à vérifier
 
-Les points suivants n'ont pas pu être contrôlés dans cet environnement, et sont
-listés plutôt que supposés :
+Listé plutôt que supposé :
 
 - Le rendu sur un téléphone d'entrée de gamme réel — les transitions ont été
-  vérifiées sur Chromium de bureau uniquement.
-- Le comportement sur Safari, dont l'implémentation des transitions de vue diffère
-  sur certains points. L'application reste fonctionnelle sans elles : sans support,
-  le contenu se substitue instantanément.
-- La zone sûre du système sur un appareil à encoche, `env(safe-area-inset-bottom)`
-  valant zéro sur un navigateur de bureau.
-- La lisibilité en plein soleil, qui est le coût connu d'une application sans mode
-  clair et qui ne se mesure pas depuis un écran de bureau.
-- Le rendu du noir pur sur une dalle OLED réelle — notamment le lissé des dégradés
-  de gris aux valeurs les plus basses de l'échelle.
+  vérifiées sur Chromium de bureau uniquement. C'est le point le plus sensible
+  depuis que les déplacements durent 560 ms.
+- Le comportement sur Safari, dont l'implémentation des transitions de vue diffère.
+  Sans support, le contenu se substitue instantanément et l'application reste
+  fonctionnelle.
+- La feuille de partage réelle d'iOS et d'Android : quelles applications d'IA
+  apparaissent, et si le prompt complet leur parvient sans troncature.
+- La lisibilité en plein soleil, coût connu d'une application sans mode clair.
+- La zone sûre sur un appareil à encoche, `env(safe-area-inset-bottom)` valant zéro
+  sur un navigateur de bureau.

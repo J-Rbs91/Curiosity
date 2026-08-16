@@ -1,16 +1,12 @@
 "use client";
 
-import { Suspense, useEffect, useState, ViewTransition } from "react";
+import { Suspense, ViewTransition } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { authors, themes, concepts } from "@/content";
-import { getProgressService } from "@/services/progress";
-import { computeAllAuthorsProgress } from "@/domain/authors";
-import { computeAllThemesProgress } from "@/domain/themes";
+import { Settings } from "lucide-react";
+import { authors, themes } from "@/content";
 import { Screen } from "@/components/motion/Screen";
 import { SCREEN_MOTION } from "@/components/motion/screen-motion";
-import { ProgressBar } from "@/components/ui/ProgressBar";
-import type { UserConceptProgress } from "@/types";
 
 const VIEWS = [
   { id: "auteurs", label: "Auteurs" },
@@ -22,17 +18,22 @@ type ViewId = (typeof VIEWS)[number]["id"];
 export default function ExplorePage() {
   return (
     <Screen>
-      <div className="mx-auto max-w-md px-5 pt-8">
-        <h1 className="font-serif-display text-2xl font-semibold text-ink">Explorer</h1>
-        <p className="mt-2 text-[15px] text-ink-soft">
-          La carte des auteurs et des grandes problématiques de la discipline.
-        </p>
+      <div className="mx-auto max-w-md px-6 pt-10">
+        <div className="flex items-start justify-between gap-3">
+          <h1 className="font-serif-display text-[28px] font-semibold text-ink">Explorer</h1>
+          <Link
+            href="/settings"
+            transitionTypes={SCREEN_MOTION.deeper}
+            aria-label="Réglages"
+            className="press -mr-2 flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-ink-faint hover:bg-paper-raised hover:text-ink"
+          >
+            <Settings size={18} strokeWidth={1.75} />
+          </Link>
+        </div>
 
         {/*
          * La vue courante vit dans l'URL, pas dans l'état du composant : c'est
-         * ce qui la fait survivre au retour depuis une fiche d'auteur. Sans
-         * elle, on revient systématiquement sur « Auteurs » après avoir ouvert
-         * un thème, et il faut refaire le chemin.
+         * ce qui la fait survivre au retour depuis une fiche.
          */}
         <Suspense fallback={<ExploreBody view="auteurs" />}>
           <ExploreBodyFromUrl />
@@ -44,36 +45,16 @@ export default function ExplorePage() {
 
 function ExploreBodyFromUrl() {
   const searchParams = useSearchParams();
-  const requested = searchParams.get("vue");
-  const view: ViewId = requested === "themes" ? "themes" : "auteurs";
+  const view: ViewId = searchParams.get("vue") === "themes" ? "themes" : "auteurs";
   return <ExploreBody view={view} />;
 }
 
 function ExploreBody({ view }: { view: ViewId }) {
-  const [progressByConcept, setProgressByConcept] = useState<Map<string, UserConceptProgress>>(
-    new Map()
-  );
-
-  useEffect(() => {
-    const state = getProgressService().getState();
-    // Lecture localStorage : impossible pendant le rendu serveur, doit se faire après le montage.
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setProgressByConcept(new Map(Object.entries(state.concepts)));
-  }, []);
-
-  /*
-   * Les listes sont rendues dès le premier passage, à progression nulle, puis
-   * la progression réelle arrive. La page ne passe donc jamais par un état
-   * vide, et les barres se remplissent depuis zéro au lieu d'apparaître déjà
-   * pleines — c'est ce remplissage qui rend leur grandeur comparable.
-   */
-  const authorsProgress = computeAllAuthorsProgress(authors, concepts, progressByConcept);
-  const themesProgress = computeAllThemesProgress(themes, concepts, authors, progressByConcept);
   const activeIndex = VIEWS.findIndex((v) => v.id === view);
 
   return (
     <>
-      <div className="relative mt-6 flex gap-1 rounded-full bg-paper-raised p-1">
+      <div className="relative mt-8 flex gap-1 rounded-full bg-paper-raised p-1">
         <span
           aria-hidden
           className="absolute inset-y-1 left-1 rounded-full bg-accent transition-transform motion-ui"
@@ -89,8 +70,8 @@ function ExploreBody({ view }: { view: ViewId }) {
             replace
             scroll={false}
             aria-current={id === view ? "true" : undefined}
-            className={`press relative z-10 flex min-h-9 flex-1 items-center justify-center rounded-full text-sm font-medium ${
-              id === view ? "text-accent-contrast" : "text-ink-soft hover:text-ink"
+            className={`press relative z-10 flex min-h-10 flex-1 items-center justify-center rounded-full text-sm ${
+              id === view ? "font-medium text-accent-contrast" : "text-ink-faint hover:text-ink"
             }`}
           >
             {label}
@@ -99,65 +80,52 @@ function ExploreBody({ view }: { view: ViewId }) {
       </div>
 
       {/*
-       * Changer d'onglet n'est pas changer de lieu : le contenu se substitue
-       * sur place par un fondu, pendant que l'en-tête et les onglets ne bougent
-       * pas. Un glissement raconterait un déplacement qui n'a pas lieu.
+       * Changer d'onglet n'est pas changer de lieu : le contenu se substitue sur
+       * place par un fondu, pendant que l'en-tête et les onglets ne bougent pas.
        */}
       <ViewTransition key={view} name="explore-liste" share="auto" enter="auto" default="none">
-        <ul className="stagger mt-6 space-y-3 pb-10">
+        <ul className="stagger mt-8 space-y-1 pb-12">
           {view === "auteurs" &&
-            authorsProgress.map(({ author, understood, totalConcepts, ratio }) => (
-              <li key={author.id}>
-                <Link
-                  href={`/explore/authors/${author.slug}`}
-                  transitionTypes={SCREEN_MOTION.deeper}
-                  className="press-soft block rounded-2xl bg-paper-raised p-4 hover:bg-paper-contact"
-                >
-                  <div className="flex items-baseline justify-between gap-3">
-                    <span className="font-serif-display text-lg font-semibold text-ink">
-                      {author.name}
-                    </span>
-                    <span className="shrink-0 text-xs text-ink-soft">
-                      {understood}/{totalConcepts} compris
-                    </span>
-                  </div>
-                  <p className="mt-1 text-sm text-ink-soft">{author.tagline}</p>
-                  <ProgressBar
-                    ratio={ratio}
-                    label={`Concepts compris chez ${author.name}`}
-                    className="mt-3"
-                  />
-                </Link>
-              </li>
+            authors.map((author) => (
+              <ListRow
+                key={author.id}
+                href={`/explore/authors/${author.slug}`}
+                title={author.name}
+                subtitle={author.tagline}
+              />
             ))}
 
           {view === "themes" &&
-            themesProgress.map(({ theme, understood, totalConcepts, ratio }) => (
-              <li key={theme.id}>
-                <Link
-                  href={`/explore/themes/${theme.slug}`}
-                  transitionTypes={SCREEN_MOTION.deeper}
-                  className="press-soft block rounded-2xl bg-paper-raised p-4 hover:bg-paper-contact"
-                >
-                  <div className="flex items-baseline justify-between gap-3">
-                    <span className="font-serif-display text-lg font-semibold text-ink">
-                      {theme.title}
-                    </span>
-                    <span className="shrink-0 text-xs text-ink-soft">
-                      {understood}/{totalConcepts} compris
-                    </span>
-                  </div>
-                  <p className="mt-1 text-sm text-ink-soft">{theme.description}</p>
-                  <ProgressBar
-                    ratio={ratio}
-                    label={`Concepts compris dans ${theme.title}`}
-                    className="mt-3"
-                  />
-                </Link>
-              </li>
+            themes.map((theme) => (
+              <ListRow
+                key={theme.id}
+                href={`/explore/themes/${theme.slug}`}
+                title={theme.title}
+                subtitle={theme.description}
+              />
             ))}
         </ul>
       </ViewTransition>
     </>
+  );
+}
+
+/*
+ * Une ligne, pas une carte. Le regroupement se fait par l'espacement et par un
+ * filet, sans surface ni compteur : douze cartes de même niveau se disputent
+ * l'attention, douze lignes se parcourent.
+ */
+function ListRow({ href, title, subtitle }: { href: string; title: string; subtitle: string }) {
+  return (
+    <li>
+      <Link
+        href={href}
+        transitionTypes={SCREEN_MOTION.deeper}
+        className="press-soft block rounded-2xl py-4 hover:bg-paper-raised"
+      >
+        <p className="font-serif-display text-[19px] font-semibold text-ink">{title}</p>
+        <p className="mt-1 line-clamp-2 text-sm leading-relaxed text-ink-faint">{subtitle}</p>
+      </Link>
+    </li>
   );
 }

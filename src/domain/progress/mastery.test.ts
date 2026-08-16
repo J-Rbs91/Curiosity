@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { nextMasteryScore, isUnderstood, needsReview, masteryLabel } from "./mastery";
+import { nextMasteryScore, isUnderstood, needsReview } from "./mastery";
 
 describe("nextMasteryScore", () => {
   it("augmente le score d'un cran en cas de bonne réponse", () => {
@@ -31,12 +31,5 @@ describe("isUnderstood / needsReview", () => {
     expect(needsReview(1)).toBe(true);
     expect(needsReview(2)).toBe(true);
     expect(needsReview(3)).toBe(false);
-  });
-});
-
-describe("masteryLabel", () => {
-  it("retourne un libellé pour chaque score", () => {
-    expect(masteryLabel(0)).toBe("Jamais vu");
-    expect(masteryLabel(5)).toBe("Maîtrisé");
   });
 });

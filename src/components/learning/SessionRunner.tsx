@@ -3,12 +3,12 @@
 import { startTransition, useMemo, useRef, useState, ViewTransition } from "react";
 import Link from "next/link";
 import { ArrowLeft, X } from "lucide-react";
-import type { ExplanationLevel, MasteryScore } from "@/types";
+import type { MasteryScore } from "@/types";
 import type { ResolvedSession } from "@/domain/sessions/resolve";
 import { SESSION_TYPE_META } from "@/domain/sessions";
-import { masteryLabel } from "@/domain/progress/mastery";
 import { SCREEN_MOTION } from "@/components/motion/screen-motion";
 import { Button } from "@/components/ui/Button";
+import { ShareToAI } from "@/components/ui/ShareToAI";
 import { ConceptMetaTags } from "@/components/concept/ConceptMetaTags";
 import { ConceptSummaryCard } from "@/components/concept/ConceptSummaryCard";
 import { QuizQuestionView } from "@/components/quiz/QuizQuestionView";
@@ -23,7 +23,6 @@ interface AnswerResult {
 
 interface SessionRunnerProps {
   resolved: ResolvedSession;
-  explanationLevel: ExplanationLevel;
   onEnterExplanation: () => void;
   onEnterConnection: () => void;
   onAnswer: (wasCorrect: boolean) => AnswerResult;
@@ -43,7 +42,6 @@ const PHASE_MOTION = {
 
 export function SessionRunner({
   resolved,
-  explanationLevel,
   onEnterExplanation,
   onEnterConnection,
   onAnswer,
@@ -62,8 +60,7 @@ export function SessionRunner({
 
   const [phaseIndex, setPhaseIndex] = useState(0);
   const [direction, setDirection] = useState<keyof typeof PHASE_MOTION>("next");
-  const [showDetailed, setShowDetailed] = useState(explanationLevel === "approfondi");
-  const [answerResult, setAnswerResult] = useState<AnswerResult | null>(null);
+  const [showDetailed, setShowDetailed] = useState(false);
   const phase = phases[phaseIndex];
 
   /*
@@ -114,16 +111,16 @@ export function SessionRunner({
   const motionClass = PHASE_MOTION[direction];
 
   return (
-    <div className="mx-auto flex min-h-svh max-w-md flex-col px-5 pt-6">
-      <div className="flex items-center gap-3 pb-6">
+    <div className="mx-auto flex min-h-svh max-w-md flex-col px-6 pt-6">
+      <div className="flex items-center gap-3 pb-10">
         <button
           type="button"
           onClick={goBack}
           disabled={!canGoBack}
           aria-label="Revenir à l'étape précédente"
-          className="press -ml-2 flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-ink-soft hover:text-ink disabled:pointer-events-none disabled:opacity-0"
+          className="press -ml-2 flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-ink-faint hover:text-ink disabled:pointer-events-none disabled:opacity-0"
         >
-          <ArrowLeft size={20} />
+          <ArrowLeft size={18} />
         </button>
         <div className="flex-1">
           <StepDots total={phases.length} current={phaseIndex} />
@@ -132,24 +129,20 @@ export function SessionRunner({
           href="/"
           transitionTypes={SCREEN_MOTION.leaveSession}
           aria-label="Quitter la session"
-          className="press -mr-2 flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-ink-soft hover:text-ink"
+          className="press -mr-2 flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-ink-faint hover:text-ink"
         >
-          <X size={20} />
+          <X size={18} />
         </Link>
       </div>
 
-      <div className="flex-1 pb-10">
+      <div className="flex-1 pb-12">
         <ViewTransition key={phase} enter={motionClass} exit={motionClass} default="none">
           <div>
             {phase === "question" && (
-              <div className="flex min-h-[60svh] flex-col justify-center gap-6">
-                <p className="text-xs font-medium uppercase tracking-wide text-ink-faint">
-                  {meta.label} · {plan.estimatedMinutes} min
-                </p>
-                <h1 className="font-serif-display text-[28px] font-semibold leading-snug text-ink">
+              <div className="flex min-h-[58svh] flex-col justify-center gap-10">
+                <h1 className="font-serif-display text-[30px] font-semibold leading-[1.2] text-ink">
                   {plan.headline}
                 </h1>
-                <p className="text-sm text-ink-soft">Prenez un instant pour y réfléchir.</p>
                 <Button onClick={goNext} className="w-fit">
                   {meta.verb}
                 </Button>
@@ -157,18 +150,18 @@ export function SessionRunner({
             )}
 
             {phase === "explanation" && (
-              <div className="space-y-5">
-                <h2 className="font-serif-display text-2xl font-semibold text-ink">
+              <div className="space-y-7">
+                <h2 className="font-serif-display text-[26px] font-semibold leading-tight text-ink">
                   {primary.title}
                 </h2>
-                <p className="text-[17px] leading-relaxed text-ink">{primary.shortExplanation}</p>
+                <p className="text-[18px] leading-relaxed text-ink">{primary.shortExplanation}</p>
                 {!showDetailed ? (
                   <button
                     type="button"
                     onClick={() => setShowDetailed(true)}
-                    className="press text-sm font-medium text-accent underline underline-offset-4"
+                    className="press text-sm text-ink-faint underline underline-offset-4 hover:text-ink"
                   >
-                    Approfondir le mécanisme
+                    Le mécanisme en détail
                   </button>
                 ) : (
                   <p className="enter-rise text-[15px] leading-relaxed text-ink-soft">
@@ -183,20 +176,20 @@ export function SessionRunner({
             )}
 
             {phase === "context" && (
-              <div className="space-y-5">
+              <div className="space-y-7">
                 {isCaseStudy && caseStudy ? (
                   <>
-                    <h2 className="font-serif-display text-xl font-semibold text-ink">
+                    <h2 className="font-serif-display text-[22px] font-semibold leading-tight text-ink">
                       {caseStudy.title}
                     </h2>
-                    <p className="text-[15px] leading-relaxed text-ink">{caseStudy.situation}</p>
-                    <div className="stagger space-y-4">
+                    <p className="text-[17px] leading-relaxed text-ink">{caseStudy.situation}</p>
+                    <div className="stagger space-y-5">
                       {caseStudy.readings.map((reading) => {
                         const author = resolved.authors.find((a) => a.id === reading.authorId);
                         return (
-                          <div key={reading.authorId} className="rounded-2xl bg-paper-raised p-4">
-                            <p className="mb-1 text-xs font-medium uppercase tracking-wide text-ink-faint">
-                              Lecture {author?.name ?? reading.authorId}
+                          <div key={reading.authorId}>
+                            <p className="mb-1.5 text-xs font-medium uppercase tracking-[0.12em] text-ink-faint">
+                              {author?.name ?? reading.authorId}
                             </p>
                             <p className="text-[15px] leading-relaxed text-ink-soft">
                               {reading.analysis}
@@ -208,12 +201,9 @@ export function SessionRunner({
                   </>
                 ) : (
                   <>
-                    <p className="text-xs font-medium uppercase tracking-wide text-ink-faint">
-                      Dans une organisation
-                    </p>
-                    <p className="text-[17px] leading-relaxed text-ink">{primary.concreteExample}</p>
+                    <p className="text-[18px] leading-relaxed text-ink">{primary.concreteExample}</p>
                     {primary.analysisQuestions[0] && (
-                      <p className="rounded-2xl bg-paper-raised p-4 text-[15px] italic leading-relaxed text-ink-soft">
+                      <p className="text-[15px] italic leading-relaxed text-ink-faint">
                         {primary.analysisQuestions[0]}
                       </p>
                     )}
@@ -226,12 +216,12 @@ export function SessionRunner({
             )}
 
             {phase === "connection" && secondary && (
-              <div className="space-y-5">
-                <p className="text-[15px] leading-relaxed text-ink">
+              <div className="space-y-7">
+                <p className="text-[17px] leading-relaxed text-ink">
                   {plan.type === "comparison"
                     ? `${primary.title} et ${secondary.title} touchent un problème commun, mais pas de la même manière.`
                     : plan.type === "deepening"
-                      ? `Pour aller plus loin, ce concept prolonge directement ${primary.title.toLowerCase()}.`
+                      ? `Ce concept prolonge directement ${primary.title.toLowerCase()}.`
                       : `Vous avez déjà rencontré un concept relié à ${primary.title.toLowerCase()}.`}
                 </p>
                 <ConceptSummaryCard
@@ -246,54 +236,40 @@ export function SessionRunner({
             )}
 
             {phase === "quiz" && quizQuestion && (
-              <div className="space-y-5">
-                <p className="text-xs font-medium uppercase tracking-wide text-ink-faint">
-                  Vérification
-                </p>
-                <QuizQuestionView
-                  question={quizQuestion}
-                  onAnswered={(wasCorrect) => {
-                    const result = onAnswer(wasCorrect);
-                    setAnswerResult(result);
-                    goTo(phaseIndex + 1, "next");
-                  }}
-                />
-              </div>
+              <QuizQuestionView
+                question={quizQuestion}
+                onAnswered={(wasCorrect) => {
+                  onAnswer(wasCorrect);
+                  goTo(phaseIndex + 1, "next");
+                }}
+              />
             )}
 
             {phase === "result" && (
-              <div className="flex min-h-[50svh] flex-col justify-center gap-6">
-                <p className="text-xs font-medium uppercase tracking-wide text-ink-faint">Résultat</p>
-                <h2 className="enter-mark font-serif-display text-2xl font-semibold text-ink">
-                  {primary.title} — {masteryLabel(answerResult?.masteryScore ?? 1)}
+              /*
+               * Rien à annoncer ici : la correction a déjà été lue à l'écran
+               * précédent, et l'état d'avancement du concept ne s'affiche nulle
+               * part dans l'application. Ne reste que la sortie, et deux façons
+               * de prolonger.
+               */
+              <div className="flex min-h-[50svh] flex-col justify-center gap-10">
+                <h2 className="enter-mark font-serif-display text-[26px] font-semibold leading-tight text-ink">
+                  {primary.title}
                 </h2>
-                {answerResult?.nextReviewAt && (
-                  <p className="text-sm text-ink-soft">
-                    Prochaine révision proposée le{" "}
-                    {new Date(answerResult.nextReviewAt).toLocaleDateString("fr-FR", {
-                      day: "numeric",
-                      month: "long",
-                    })}
-                    .
-                  </p>
-                )}
-                <div className="flex flex-wrap items-center gap-3">
-                  <Button onClick={onFinish} className="w-fit">
-                    Terminer
-                  </Button>
-                  {/*
-                   * Une session qui ne mène qu'à sa propre sortie est un
-                   * cul-de-sac : le concept qu'on vient de travailler n'est
-                   * autrement atteignable qu'en repassant par Explorer, puis
-                   * un auteur, puis la fiche.
-                   */}
+                <div className="flex flex-wrap items-center gap-2">
+                  <Button onClick={onFinish}>Terminer</Button>
                   <Link
                     href={`/explore/concepts/${primary.slug}`}
                     transitionTypes={SCREEN_MOTION.leaveSession}
-                    className="press min-h-11 rounded-full px-4 py-3 text-[15px] font-medium text-ink-soft hover:text-accent"
+                    className="press flex min-h-11 items-center rounded-full px-4 text-[15px] text-ink-faint hover:text-ink"
                   >
-                    Revoir la fiche
+                    La fiche
                   </Link>
+                  <ShareToAI
+                    concept={primary}
+                    authors={primaryAuthors}
+                    themes={primaryThemes}
+                  />
                 </div>
               </div>
             )}

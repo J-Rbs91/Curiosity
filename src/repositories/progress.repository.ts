@@ -4,8 +4,6 @@ const STORAGE_KEY = "curiosity.progress.v1";
 const CURRENT_VERSION = 1;
 
 export const DEFAULT_SETTINGS: UserSettings = {
-  explanationLevel: "standard",
-  preferredDuration: 5,
   firstLaunchCompleted: false,
 };
 

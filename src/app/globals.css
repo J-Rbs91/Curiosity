@@ -16,7 +16,6 @@
   --n-900: #0a0a0a; /* surface à peine détachée du fond              */
   --n-850: #121212; /* surface levée : carte, encadré, ligne de liste */
   --n-800: #1c1c1c; /* même surface au survol, ou au contact          */
-  --n-700: #2a2a2a; /* piste d'une barre de progression       1,46:1 */
   --n-600: #3d3d3d; /* séparateur, filet                      1,93:1 */
   --n-500: #6b6b6b; /* bordure et icône fonctionnelles        3,94:1 */
   --n-400: #8f8f8f; /* texte tertiaire, intitulé en capitales 6,49:1 */
@@ -36,7 +35,6 @@
   --ink-faint: var(--n-400);
   --line: var(--n-600);
   --line-strong: var(--n-500);
-  --track: var(--n-700);
 
   /*
    * L'« accent » n'est plus une couleur : c'est la valeur la plus claire de
@@ -68,11 +66,27 @@
   --ease-lift: cubic-bezier(0.32, 0.72, 0, 1);
 
   --dur-tap: 140ms;   /* retour à l'appui — vu des dizaines de fois par session */
-  --dur-ui: 180ms;    /* survol, sélection, onglet, indicateur de position */
-  --dur-exit: 150ms;  /* sortie d'un écran : rapide, il ne doit pas retenir l'attention */
-  --dur-screen: 280ms; /* entrée d'un écran ou d'une phase de session */
-  --dur-lift: 320ms;  /* entrée et sortie de session — une à deux fois par session */
-  --dur-mark: 420ms;  /* moment marquant : résultat, remplissage des barres */
+  --dur-ui: 220ms;    /* survol, sélection, onglet, indicateur de position */
+
+  /*
+   * Le déplacement et le fondu sont dissociés, et c'est ce qui rend un mouvement
+   * long agréable plutôt que lent : le contenu est entièrement lisible en 300 ms
+   * pendant qu'il continue de glisser jusqu'à son repos. Réunir les deux durées
+   * donnerait une interface qu'on attend ; les séparer donne une interface qui
+   * arrive vite et se pose doucement.
+   */
+  --dur-exit: 220ms;  /* disparition de l'ancien contenu : il ne dispute pas l'attention */
+  --dur-fade: 300ms;  /* apparition du nouveau contenu */
+  --dur-move: 560ms;  /* le glissement lui-même, écran ou phase */
+  --dur-lift: 640ms;  /* entrée et sortie de session — une à deux fois par session */
+  --dur-mark: 720ms;  /* moment marquant : le concept qu'on vient de travailler */
+
+  /*
+   * Amplitude des déplacements, en pourcentage de la surface qui bouge plutôt
+   * qu'en pixels : la même valeur tient sur toutes les tailles d'écran.
+   */
+  --shift-screen: 16%;
+  --shift-phase: 10%;
 
   /* Hauteur réelle de la barre de navigation, hors zone sûre du système. */
   --nav-height: 4.25rem;
@@ -87,7 +101,6 @@
   --color-ink-faint: var(--ink-faint);
   --color-line: var(--line);
   --color-line-strong: var(--line-strong);
-  --color-track: var(--track);
   --color-accent: var(--accent);
   --color-accent-soft: var(--accent-soft);
   --color-accent-contrast: var(--accent-contrast);
@@ -160,7 +173,7 @@ h3,
 
 .motion-mark {
   transition-duration: var(--dur-mark);
-  transition-timing-function: var(--ease-out-soft);
+  transition-timing-function: var(--ease-lift);
 }
 
 /* --------------------------------------------------------------------------
@@ -203,7 +216,7 @@ h3,
 
 @media (prefers-reduced-motion: no-preference) {
   .enter-rise {
-    animation: enter-rise var(--dur-screen) var(--ease-out-soft) both;
+    animation: enter-rise var(--dur-move) var(--ease-lift) both;
   }
 
   .enter-lift {
@@ -211,7 +224,7 @@ h3,
   }
 
   .enter-mark {
-    animation: enter-rise var(--dur-mark) var(--ease-out-soft) both;
+    animation: enter-rise var(--dur-mark) var(--ease-lift) both;
   }
 
   /*
@@ -220,20 +233,20 @@ h3,
    * éléments sont cliquables avant d'avoir fini d'apparaître.
    */
   .stagger > * {
-    animation: enter-rise var(--dur-screen) var(--ease-out-soft) both;
+    animation: enter-rise var(--dur-move) var(--ease-lift) both;
   }
   .stagger > *:nth-child(1) { animation-delay: 0ms; }
-  .stagger > *:nth-child(2) { animation-delay: 40ms; }
-  .stagger > *:nth-child(3) { animation-delay: 80ms; }
-  .stagger > *:nth-child(4) { animation-delay: 120ms; }
-  .stagger > *:nth-child(5) { animation-delay: 160ms; }
-  .stagger > *:nth-child(n + 6) { animation-delay: 200ms; }
+  .stagger > *:nth-child(2) { animation-delay: 70ms; }
+  .stagger > *:nth-child(3) { animation-delay: 140ms; }
+  .stagger > *:nth-child(4) { animation-delay: 210ms; }
+  .stagger > *:nth-child(5) { animation-delay: 280ms; }
+  .stagger > *:nth-child(n + 6) { animation-delay: 350ms; }
 }
 
 @keyframes enter-rise {
   from {
     opacity: 0;
-    transform: translate3d(0, 8px, 0);
+    transform: translate3d(0, 20px, 0);
   }
   to {
     opacity: 1;
@@ -244,7 +257,7 @@ h3,
 @keyframes enter-lift {
   from {
     opacity: 0;
-    transform: translate3d(0, 3%, 0) scale(0.985);
+    transform: translate3d(0, 5%, 0) scale(0.97);
   }
   to {
     opacity: 1;
@@ -279,59 +292,59 @@ h3,
 }
 
 ::view-transition-old(.screen-deeper) {
-  --vt-shift: -32px;
+  --vt-shift: calc(-1 * var(--shift-screen));
   animation:
     var(--dur-exit) var(--ease-out-soft) both vt-fade reverse,
-    var(--dur-screen) var(--ease-firm) both vt-shift-x reverse;
+    var(--dur-move) var(--ease-lift) both vt-shift-x reverse;
 }
 ::view-transition-new(.screen-deeper) {
-  --vt-shift: 32px;
+  --vt-shift: var(--shift-screen);
   animation:
-    var(--dur-screen) var(--ease-out-soft) var(--dur-exit) both vt-fade,
-    var(--dur-screen) var(--ease-firm) both vt-shift-x;
+    var(--dur-fade) var(--ease-out-soft) var(--dur-exit) both vt-fade,
+    var(--dur-move) var(--ease-lift) both vt-shift-x;
 }
 
 ::view-transition-old(.screen-back) {
-  --vt-shift: 32px;
+  --vt-shift: var(--shift-screen);
   animation:
     var(--dur-exit) var(--ease-out-soft) both vt-fade reverse,
-    var(--dur-screen) var(--ease-firm) both vt-shift-x reverse;
+    var(--dur-move) var(--ease-lift) both vt-shift-x reverse;
 }
 ::view-transition-new(.screen-back) {
-  --vt-shift: -32px;
+  --vt-shift: calc(-1 * var(--shift-screen));
   animation:
-    var(--dur-screen) var(--ease-out-soft) var(--dur-exit) both vt-fade,
-    var(--dur-screen) var(--ease-firm) both vt-shift-x;
+    var(--dur-fade) var(--ease-out-soft) var(--dur-exit) both vt-fade,
+    var(--dur-move) var(--ease-lift) both vt-shift-x;
 }
 
 /*
  * À l'intérieur d'une session, le même sens de lecture, en plus court : on
- * avance d'une phase, pas d'un niveau. Vingt-quatre pixels, et la même courbe.
+ * avance d'une phase, pas d'un niveau.
  */
 ::view-transition-old(.phase-next) {
-  --vt-shift: -24px;
+  --vt-shift: calc(-1 * var(--shift-phase));
   animation:
     var(--dur-exit) var(--ease-out-soft) both vt-fade reverse,
-    var(--dur-screen) var(--ease-firm) both vt-shift-x reverse;
+    var(--dur-move) var(--ease-lift) both vt-shift-x reverse;
 }
 ::view-transition-new(.phase-next) {
-  --vt-shift: 24px;
+  --vt-shift: var(--shift-phase);
   animation:
-    var(--dur-screen) var(--ease-out-soft) var(--dur-exit) both vt-fade,
-    var(--dur-screen) var(--ease-firm) both vt-shift-x;
+    var(--dur-fade) var(--ease-out-soft) var(--dur-exit) both vt-fade,
+    var(--dur-move) var(--ease-lift) both vt-shift-x;
 }
 
 ::view-transition-old(.phase-prev) {
-  --vt-shift: 24px;
+  --vt-shift: var(--shift-phase);
   animation:
     var(--dur-exit) var(--ease-out-soft) both vt-fade reverse,
-    var(--dur-screen) var(--ease-firm) both vt-shift-x reverse;
+    var(--dur-move) var(--ease-lift) both vt-shift-x reverse;
 }
 ::view-transition-new(.phase-prev) {
-  --vt-shift: -24px;
+  --vt-shift: calc(-1 * var(--shift-phase));
   animation:
-    var(--dur-screen) var(--ease-out-soft) var(--dur-exit) both vt-fade,
-    var(--dur-screen) var(--ease-firm) both vt-shift-x;
+    var(--dur-fade) var(--ease-out-soft) var(--dur-exit) both vt-fade,
+    var(--dur-move) var(--ease-lift) both vt-shift-x;
 }
 
 /* Entrée en session : la session monte par-dessus le reste de l'application. */
@@ -340,26 +353,34 @@ h3,
 }
 ::view-transition-new(.screen-enter-session) {
   animation:
-    var(--dur-lift) var(--ease-lift) both vt-fade,
+    var(--dur-fade) var(--ease-out-soft) var(--dur-exit) both vt-fade,
     var(--dur-lift) var(--ease-lift) both vt-lift;
 }
 
 /* Sortie de session : elle repart par où elle est venue. */
 ::view-transition-old(.screen-leave-session) {
   animation:
-    var(--dur-lift) var(--ease-lift) both vt-fade reverse,
+    var(--dur-exit) var(--ease-out-soft) both vt-fade reverse,
     var(--dur-lift) var(--ease-lift) both vt-lift reverse;
 }
 ::view-transition-new(.screen-leave-session) {
-  animation: var(--dur-screen) var(--ease-out-soft) var(--dur-exit) both vt-fade;
+  animation: var(--dur-fade) var(--ease-out-soft) var(--dur-exit) both vt-fade;
 }
 
+/*
+ * Le fondu porte un flou de deux pixels. Sans lui, deux contenus qui se croisent
+ * se lisent comme deux objets superposés ; avec lui, l'œil ne voit qu'une seule
+ * chose qui se transforme. Deux pixels ne coûtent rien au rendu — la limite au
+ * delà de laquelle un flou devient sensible est dix fois plus haute.
+ */
 @keyframes vt-fade {
   from {
     opacity: 0;
+    filter: blur(2px);
   }
   to {
     opacity: 1;
+    filter: blur(0);
   }
 }
 
@@ -374,7 +395,7 @@ h3,
 
 @keyframes vt-lift {
   from {
-    translate: 0 3%;
+    translate: 0 5%;
   }
   to {
     translate: 0;

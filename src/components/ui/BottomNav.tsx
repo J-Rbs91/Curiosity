@@ -2,12 +2,16 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BookOpen, Compass, LineChart } from "lucide-react";
+import { BookOpen, Compass } from "lucide-react";
 
+/**
+ * Deux destinations. L'écran de progression a disparu avec les compteurs qu'il
+ * affichait : le suivi continue d'exister — c'est lui qui choisit le concept du
+ * jour — mais il n'a plus à être consulté ni géré.
+ */
 const ITEMS = [
   { href: "/", label: "Aujourd'hui", icon: BookOpen },
   { href: "/explore", label: "Explorer", icon: Compass },
-  { href: "/progress", label: "Progression", icon: LineChart },
 ] as const;
 
 function isActive(pathname: string, href: string): boolean {
@@ -21,19 +25,18 @@ export function BottomNav() {
   return (
     <nav
       aria-label="Navigation principale"
-      className="fixed inset-x-0 bottom-0 z-40 border-t border-line bg-paper/95 backdrop-blur supports-[backdrop-filter]:bg-paper/80"
+      className="fixed inset-x-0 bottom-0 z-40 bg-paper/90 backdrop-blur"
       style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
     >
       <div className="relative mx-auto max-w-md">
         {/*
-         * Le repère de position est porté par une barre fine qui se déplace,
-         * pas par un fond coloré : la sobriété se joue sur le traitement, pas
-         * sur la présence. Il double la couleur et la graisse de l'entrée
-         * active — le mouvement n'est jamais le seul porteur de l'information.
+         * Le repère de position est une barre fine qui glisse. Il double la
+         * couleur et la graisse de l'entrée active — le mouvement n'est jamais
+         * le seul porteur de l'information.
          */}
         <span
           aria-hidden
-          className="absolute top-0 h-0.5 rounded-full bg-accent transition-transform motion-ui"
+          className="absolute top-0 h-px bg-accent transition-transform motion-ui"
           style={{
             width: `${100 / ITEMS.length}%`,
             transform: `translateX(${Math.max(activeIndex, 0) * 100}%)`,
@@ -48,18 +51,18 @@ export function BottomNav() {
                 <Link
                   href={href}
                   aria-current={active ? "page" : undefined}
-                  className="press flex flex-col items-center gap-1 py-2.5 text-xs"
+                  className="press flex flex-col items-center gap-1 py-3 text-xs"
                 >
                   <Icon
-                    size={22}
-                    strokeWidth={active ? 2.25 : 1.75}
+                    size={20}
+                    strokeWidth={active ? 2 : 1.5}
                     className={`transition-colors motion-ui ${
                       active ? "text-accent" : "text-ink-faint"
                     }`}
                   />
                   <span
                     className={`transition-colors motion-ui ${
-                      active ? "font-medium text-accent" : "text-ink-faint"
+                      active ? "text-accent" : "text-ink-faint"
                     }`}
                   >
                     {label}

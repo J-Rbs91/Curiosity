@@ -112,12 +112,13 @@ export interface UserConceptProgress {
   incorrectAnswers: number;
 }
 
-export type ExplanationLevel = "accessible" | "standard" | "approfondi";
-export type PreferredDuration = 2 | 5 | 10;
-
+/**
+ * L'application ne propose aucun réglage de niveau ni de durée : la difficulté
+ * d'un concept se lit dans son texte, pas dans une préférence, et une lecture ne
+ * s'annonce pas par un chiffre de minutes. Ne reste que ce qui doit être retenu
+ * d'une ouverture à l'autre.
+ */
 export interface UserSettings {
-  explanationLevel: ExplanationLevel;
-  preferredDuration: PreferredDuration;
   firstLaunchCompleted: boolean;
 }
 
@@ -153,6 +154,5 @@ export interface SessionPlan {
   primaryConceptId: ConceptId;
   secondaryConceptId?: ConceptId;
   caseStudyId?: string;
-  estimatedMinutes: number;
   headline: string;
 }

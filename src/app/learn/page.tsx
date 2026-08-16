@@ -46,13 +46,11 @@ export default function LearnPage() {
   }
 
   const service = getProgressService();
-  const explanationLevel = service.getState().settings.explanationLevel;
 
   return (
     <Screen>
       <SessionRunner
         resolved={resolved}
-        explanationLevel={explanationLevel}
         onEnterExplanation={() => {
           if (!knownAtStart.current.has(resolved.primary.id)) {
             service.recordDiscovery(resolved.primary.id);
