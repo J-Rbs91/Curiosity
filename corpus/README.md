@@ -31,9 +31,9 @@ fiche, c'est déplacer son fichier *et* mettre à jour son `status`.
 ## Nommage
 
 Un fichier par concept : `<id>.json`, où `<id>` est l'identifiant utilisé par
-l'application (`ConceptId`). Pour un concept déjà présent dans `src/content/concepts.ts`,
-**on reprend l'identifiant existant** : c'est ce qui permet à la fiche validée de
-remplacer l'héritée sans casser le graphe.
+l'application (`ConceptId`). Pour un sujet déjà présent dans l'échafaudage
+(`src/content/fixtures/`), **on reprend le même identifiant** : la fiche d'échafaudage
+cesse alors d'être servie. Son texte, lui, n'entre nulle part.
 
 Les pièces de `evidence/` sont rangées par concept : `evidence/<id>/<source>.md`.
 

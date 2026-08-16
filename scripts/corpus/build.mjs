@@ -13,10 +13,9 @@ import { GENERATED_FILE, loadAppContent, loadRecords, relative } from "./lib/io.
 import { validateCorpus, validateRecord } from "./lib/validate.mjs";
 import { projectCorpus } from "./lib/project.mjs";
 
-const { themes, authors, legacyConcepts } = await loadAppContent();
+const { themes, authors, fixtureConcepts } = await loadAppContent();
 const themeIds = new Set(themes.map((t) => t.id));
 const authorIds = new Set(authors.map((a) => a.id));
-const legacyIds = new Set(legacyConcepts.map((c) => c.id));
 
 const records = await loadRecords();
 
@@ -25,7 +24,7 @@ for (const { dir, file, record } of records) {
   const { errors } = validateRecord(record, { dir, themeIds, authorIds });
   if (errors.length > 0) failures.push({ file, errors });
 }
-const corpus = validateCorpus(records, { legacyIds });
+const corpus = validateCorpus(records);
 
 if (failures.length > 0 || corpus.errors.length > 0) {
   console.error("Projection refusée : le corpus ne passe pas la validation.\n");
@@ -57,10 +56,15 @@ export const generatedConcepts: Concept[] = ${JSON.stringify(concepts, null, 2)}
 
 await writeFile(GENERATED_FILE, file, "utf8");
 
-const replaced = concepts.filter((c) => legacyIds.has(c.id));
 console.log(`${concepts.length} concept(s) projeté(s) vers ${relative(GENERATED_FILE)}`);
-if (replaced.length > 0)
+
+// Une fiche d'échafaudage dont le concept vient d'être instruit n'a plus de raison
+// d'exister : elle est déjà retirée de l'affichage, autant la retirer du dépôt.
+const superseded = concepts.filter((c) => fixtureConcepts.some((f) => f.id === c.id));
+if (superseded.length > 0)
   console.log(
-    `${replaced.length} remplace(nt) une fiche héritée : ${replaced.map((c) => c.id).join(", ")}\n` +
-      "Ces entrées peuvent être supprimées de src/content/concepts.ts."
+    `${superseded.length} concept(s) rendent caduc leur échafaudage : ${superseded
+      .map((c) => c.id)
+      .join(", ")}\n` +
+      "Ces entrées peuvent être supprimées de src/content/fixtures/concepts.fixture.ts."
   );

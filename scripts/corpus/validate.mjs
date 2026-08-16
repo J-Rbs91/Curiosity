@@ -10,10 +10,9 @@
 import { loadAppContent, loadRecords, relative } from "./lib/io.mjs";
 import { validateCorpus, validateRecord } from "./lib/validate.mjs";
 
-const { themes, authors, legacyConcepts } = await loadAppContent();
+const { themes, authors } = await loadAppContent();
 const themeIds = new Set(themes.map((t) => t.id));
 const authorIds = new Set(authors.map((a) => a.id));
-const legacyIds = new Set(legacyConcepts.map((c) => c.id));
 
 const records = await loadRecords();
 
@@ -30,7 +29,7 @@ for (const { dir, file, record } of records) {
   warningCount += warnings.length;
 }
 
-const corpus = validateCorpus(records, { legacyIds });
+const corpus = validateCorpus(records);
 if (corpus.errors.length > 0 || corpus.warnings.length > 0) {
   console.log("\ncorpus (cohérence d'ensemble)");
   for (const message of corpus.errors) console.log(`  ✗ ${message}`);

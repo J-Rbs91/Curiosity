@@ -348,13 +348,16 @@ describe("validateRecord — graphe", () => {
 describe("validateCorpus", () => {
   const wrap = (r) => ({ dir: "validated", file: `${r.id}.json`, record: r });
 
-  it("refuse une référence qui ne pointe ni sur une fiche validée ni sur une fiche héritée", () => {
-    const { errors } = validateCorpus([wrap(record())], { legacyIds: new Set() });
-    expect(errors.join(" ")).toContain("introuvable");
+  it("refuse qu'une fiche vérifiée s'appuie sur ce qui ne l'est pas", () => {
+    // « bureaucratie » n'existe que dans l'échafaudage : la relation ne peut pas passer.
+    const { errors } = validateCorpus([wrap(record())]);
+    expect(errors.join(" ")).toContain("aucune fiche validée");
   });
 
-  it("accepte une référence vers un concept encore hérité", () => {
-    const { errors } = validateCorpus([wrap(record())], { legacyIds: new Set(["bureaucratie"]) });
+  it("accepte une relation entre deux fiches validées", () => {
+    const cited = record({ id: "bureaucratie", slug: "bureaucratie" });
+    cited.graph.related = [];
+    const { errors } = validateCorpus([wrap(record()), wrap(cited)]);
     expect(errors).toEqual([]);
   });
 
@@ -366,14 +369,12 @@ describe("validateCorpus", () => {
     b.graph.related = [];
     b.graph.prerequisites = [{ id: "a", why: "…" }];
 
-    const { errors } = validateCorpus([wrap(a), wrap(b)], { legacyIds: new Set() });
+    const { errors } = validateCorpus([wrap(a), wrap(b)]);
     expect(errors.join(" ")).toContain("cycle de prérequis");
   });
 
   it("détecte un identifiant en double", () => {
-    const { errors } = validateCorpus([wrap(record()), wrap(record())], {
-      legacyIds: new Set(["bureaucratie"]),
-    });
+    const { errors } = validateCorpus([wrap(record()), wrap(record())]);
     expect(errors.join(" ")).toContain("deux fois");
   });
 });

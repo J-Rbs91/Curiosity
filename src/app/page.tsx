@@ -41,6 +41,28 @@ export default function TodayPage() {
     return <div className="min-h-svh" aria-hidden />;
   }
 
+  /*
+   * Corpus vide : rien à proposer, et surtout rien à inventer. C'est l'état normal tant
+   * que l'instruction documentaire n'a pas rendu sa première fiche, et il vaut mieux
+   * l'afficher tel quel qu'ouvrir l'application sur un contenu invérifié.
+   */
+  if (!plan) {
+    return (
+      <Screen>
+        <div className="stagger mx-auto flex min-h-svh max-w-md flex-col justify-center gap-8 px-6">
+          <h1 className="font-serif-display text-[30px] font-semibold leading-tight text-ink">
+            Le corpus est en cours de constitution.
+          </h1>
+          <p className="text-[17px] leading-relaxed text-ink-soft">
+            Aucun concept n&apos;a encore terminé son instruction documentaire. Rien ne
+            s&apos;affichera ici tant qu&apos;une fiche n&apos;aura pas été établie sur ses
+            sources.
+          </p>
+        </div>
+      </Screen>
+    );
+  }
+
   if (firstLaunch) {
     return (
       <Screen>
@@ -51,7 +73,7 @@ export default function TodayPage() {
           <p className="text-[17px] leading-relaxed text-ink-soft">
             Un concept à la fois, à chaque ouverture.
           </p>
-          <Button onClick={start} className="w-fit" disabled={!plan}>
+          <Button onClick={start} className="w-fit">
             Commencer
           </Button>
         </div>

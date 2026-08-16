@@ -51,16 +51,18 @@ export async function loadRecords() {
  */
 export async function loadAppContent() {
   const load = async (name) => import(pathToFileURL(path.join(CONTENT_DIR, `${name}.ts`)).href);
-  const [themes, authors, concepts, caseStudies] = await Promise.all([
+  const [themes, authors, fixtures, caseStudies] = await Promise.all([
     load("themes"),
     load("authors"),
-    load("concepts"),
+    load("fixtures/concepts.fixture"),
     load("case-studies"),
   ]);
   return {
     themes: themes.themes,
     authors: authors.authors,
-    legacyConcepts: concepts.concepts,
+    // Échafaudage, pas corpus : sert à savoir quels sujets restent à instruire, jamais à
+    // établir quoi que ce soit. Voir src/content/fixtures/concepts.fixture.ts.
+    fixtureConcepts: fixtures.fixtureConcepts,
     caseStudies: caseStudies.caseStudies,
   };
 }

@@ -39,9 +39,11 @@ Le champ `relation_kind` n'est pas une formalité :
 
 ## Contraintes vérifiées par le validateur
 
-- Toute référence pointe sur un concept validé ou encore hérité de
-  `src/content/concepts.ts`. Une référence pendante casserait le graphe dans
-  l'application.
+- Toute référence pointe sur une **fiche validée**. Ni un candidat, ni un sujet
+  d'échafaudage : une fiche vérifiée ne s'appuie pas sur ce qui ne l'est pas, et un
+  prérequis non vérifié conditionnerait l'accès à un concept vérifié. Le graphe se
+  construit donc au rythme du corpus — les premières fiches sont peu reliées, c'est
+  normal.
 - Aucun cycle de prérequis : le moteur ne pourrait jamais débloquer les concepts
   concernés.
 - Aucune auto-référence.

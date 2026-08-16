@@ -40,6 +40,23 @@ const baseContent: EngineContent = {
   caseStudies: [],
 };
 
+/**
+ * Le moteur peut légitimement ne rien proposer — corpus vide, cas couvert plus bas. Tous
+ * les autres cas ont un corpus : y recevoir `null` est une défaillance, pas un état.
+ */
+function nextSession(content: EngineContent, progress: ProgressState, now?: Date) {
+  const plan = selectNextSession(content, progress, now);
+  if (!plan) throw new Error("aucune session proposée alors que le corpus n'est pas vide");
+  return plan;
+}
+
+describe("selectNextSession — corpus vide", () => {
+  it("ne propose rien plutôt que d'inventer une session", () => {
+    const content: EngineContent = { ...baseContent, concepts: [] };
+    expect(selectNextSession(content, createEmptyProgressState())).toBeNull();
+  });
+});
+
 describe("selectNextSession — prérequis", () => {
   it("ne propose jamais un concept dont les prérequis ne sont pas remplis", () => {
     const a = makeConcept({ id: "a" });
@@ -48,7 +65,7 @@ describe("selectNextSession — prérequis", () => {
     const progress = createEmptyProgressState();
 
     for (let i = 0; i < 20; i++) {
-      const plan = selectNextSession(content, progress, new Date("2026-01-01T00:00:00.000Z"));
+      const plan = nextSession(content, progress, new Date("2026-01-01T00:00:00.000Z"));
       expect(plan.primaryConceptId).not.toBe("b");
     }
   });
@@ -79,7 +96,7 @@ describe("selectNextSession — révision", () => {
 
     const types = new Set<string>();
     for (let i = 0; i < 300; i++) {
-      const plan = selectNextSession(content, progress, now);
+      const plan = nextSession(content, progress, now);
       types.add(plan.type);
     }
 
@@ -106,7 +123,7 @@ describe("selectNextSession — anti-répétition", () => {
       ],
     };
 
-    const plan = selectNextSession(content, progress, new Date("2026-01-01T00:10:00.000Z"));
+    const plan = nextSession(content, progress, new Date("2026-01-01T00:10:00.000Z"));
     expect(plan.primaryConceptId).toBe("b");
   });
 });

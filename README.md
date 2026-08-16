@@ -27,7 +27,7 @@ npm run lint
 ```
 
 ```bash
-npm run corpus:audit      # état du corpus : vérifié / hérité / en cours
+npm run corpus:audit      # état du corpus : validé, en cours, sujets à instruire
 npm run corpus:validate   # contrôle documentaire du corpus maître
 npm run corpus:build      # projette les fiches validées vers src/content/generated/
 ```
@@ -41,7 +41,7 @@ src/
 ├── domain/        # Logique pure : graphe de concepts, maîtrise, auteurs, thèmes, sessions
 ├── services/      # Orchestration : moteur pédagogique, répétition espacée, progression
 ├── repositories/  # Persistance (localStorage aujourd'hui, remplaçable par Supabase/Postgres)
-├── content/       # Corpus servi à l'application (hérité + projeté)
+├── content/       # Corpus projeté + échafaudage de développement
 └── types/         # Modèle de données partagé
 
 corpus/            # Corpus maître : fiches sourcées, contrôlées, versionnées
@@ -60,8 +60,12 @@ Un concept n'est pas rédigé : il est **instruit**. Un pipeline de neuf sous-ag
 ce que dit le texte de l'auteur, comment la littérature l'attribue et le discute, puis un
 contrôleur aveugle — qui ignore tout du travail amont — revérifie fait par fait avant
 qu'une ligne n'atteigne l'application. Les fiches validées sont projetées mécaniquement
-vers `src/content/generated/`, et remplacent une à une les 35 fiches héritées de la phase
-prototype.
+vers `src/content/generated/` — et c'est tout le corpus.
+
+Les 35 fiches de `src/content/fixtures/` ne sont pas un corpus mais un échafaudage : elles
+ont été écrites de mémoire pour que le moteur pédagogique et les écrans puissent être
+construits. Elles ne sont servies qu'en développement, portent une marque à l'écran, et
+aucune fiche vérifiée n'a le droit de s'appuyer sur elles.
 
 La méthode, les critères de validation et le protocole sont dans
 [`docs/corpus-workflow.md`](docs/corpus-workflow.md) ; le périmètre dans

@@ -487,7 +487,7 @@ Conséquences pratiques :
 ```bash
 npm run corpus:validate   # schéma, cohérence, intégrité du graphe, gating
 npm run corpus:build      # corpus/validated/ → src/content/generated/
-npm run corpus:audit      # état du corpus : vérifié / hérité / manquant
+npm run corpus:audit      # état du corpus : validé, en cours, sujets jamais instruits
 ```
 
 `corpus:build` **appelle d'abord `corpus:validate`** et refuse de produire quoi que ce
@@ -495,23 +495,46 @@ soit si une fiche `corpus/validated/` échoue. C'est le garde-fou technique de l
 « rien ne part en ligne sans être passé par le contrôle » : il ne dépend pas de la
 discipline d'un agent.
 
-### La cohabitation avec l'existant
+### Le corpus, et ce qui n'en est pas
 
 ```
 src/content/
-├── concepts.ts               ← 35 fiches héritées, non vérifiées (pool à drainer)
 ├── generated/
-│   └── concepts.generated.ts ← produit par corpus:build, jamais édité à la main
-└── index.ts                  ← fusionne : une fiche générée remplace l'héritée de même id
+│   └── concepts.generated.ts   ← LE corpus : produit par corpus:build, jamais édité
+├── fixtures/
+│   └── concepts.fixture.ts     ← échafaudage : 35 fiches écrites de mémoire, dev seulement
+└── index.ts                    ← compose : vérifié toujours, échafaudage sur demande
 ```
 
-La fusion se fait **par `id`**. Reprendre un concept existant ne demande donc aucune
-modification de l'application : dès que `deplacement-des-buts` sort validé du pipeline, la
-version générée remplace silencieusement l'héritée, et la ligne correspondante peut être
-supprimée de `concepts.ts`. Le graphe reste intact pendant toute la transition, puisque
-les identifiants sont conservés.
+Les 35 fiches de `fixtures/` n'ont jamais été un corpus. Elles ont été écrites de mémoire,
+avant qu'aucun dispositif de vérification n'existe, pour une seule raison : donner au
+moteur pédagogique, au graphe et aux écrans de quoi être construits et testés. Elles ne
+sont pas un état antérieur du corpus qu'il suffirait de corriger — leur ressemblance avec
+la réalité n'a jamais été établie, et rien ne distingue en elles ce qui est juste de ce
+qui est plausible.
 
-`npm run corpus:audit` donne à tout moment le reste à faire.
+Trois conséquences, appliquées par le code et non par la vigilance :
+
+- **Elles ne sont servies qu'en développement.** `NEXT_PUBLIC_CORPUS_FIXTURES` vaut `on`
+  ou `off` ; par défaut, actif hors production. Un build de production ne peut pas les
+  embarquer par accident, et un build de démonstration ne peut les inclure qu'en le
+  disant.
+- **Elles sont marquées.** `provenance: "fixture"` est posé à la composition, et la fiche
+  l'affiche : « contenu écrit sans vérification documentaire ».
+- **Elles ne portent rien.** Une fiche validée ne peut avoir ni relation, ni prérequis,
+  ni approfondissement vers un sujet d'échafaudage : le validateur exige que toute
+  référence désigne une **autre fiche validée**. Le graphe se construit donc au rythme du
+  corpus, et les premières fiches sont peu reliées — c'est le prix, et il est juste.
+
+**Le corpus peut donc être vide, et c'est un état légitime.** Le moteur pédagogique
+retourne `null` au lieu de fabriquer une session, et l'écran d'accueil le dit : « le
+corpus est en cours de constitution ». Remplir pour éviter un écran vide reviendrait
+exactement à préférer un contenu faux à un contenu absent, ce que tout le reste de ce
+document interdit.
+
+Quand un sujet d'échafaudage est instruit, on reprend **le même identifiant** : la fiche
+d'échafaudage cesse d'être servie, et son entrée peut être supprimée du fichier —
+`corpus:build` les liste. Ce fichier est destiné à disparaître, non à être maintenu.
 
 ### Ce que l'application affiche de plus
 
@@ -530,28 +553,31 @@ compteurs, badges et indicateurs, et un badge « vérifié » n'apprendrait rien
 La garantie est structurelle — ce qui est affiché vient d'un enregistrement validé — pas
 signalétique.
 
-### Reprise des 35 fiches héritées
+### Par quoi commencer
 
-Elles ne sont pas corrigées : elles sont **re-instruites**, une par une, par le pipeline
-complet, comme n'importe quel candidat. Leur texte actuel n'est jamais transmis au
-contrôleur aveugle, et ne sert pas de point de départ à `corpus-primary-reader` : il
-serait alors une source de niveau E déguisée. Il ne sert qu'à une chose, en entrée du
-scout : indiquer quel concept instruire.
+Le corpus part de zéro. Les sujets de l'échafaudage indiquent tout au plus ce qui avait
+paru intéressant à couvrir : c'est une liste de pistes, pas une dette à rembourser, et
+aucun de leurs textes n'entre dans le pipeline — ni comme source, ni comme point de
+départ, ni comme aide à la rédaction. Ce serait une source de niveau E déguisée, avec
+l'aggravation qu'elle porte notre propre nom.
 
-Ordre recommandé, par risque décroissant :
+Ordre suggéré, par ce qu'il apprend sur la méthode plus que par ce qu'il rapporte :
 
-1. les concepts **coécrits ou mal attribuables** (`garbage-can-model`,
-   `systeme-d-action-concret`, `regulation-conjointe`, `single-loop-learning`,
-   `double-loop-learning`) — c'est là que l'histoire intellectuelle se fausse ;
-2. les concepts **fortement vulgarisés** (`rationalite-limitee`, `satisficing`,
-   `zones-incertitude`, `deplacement-des-buts`) ;
-3. les concepts **structurants du graphe**, dont beaucoup d'autres dépendent
-   (`bureaucratie`, `acteur-strategique`, `processus-de-decision`) ;
-4. le reste.
+1. Un concept **manifestement coécrit** (`garbage-can-model` : Cohen, March & Olsen, 1972)
+   — il exerce d'emblée `authorship`, `attributed_to` et `attributionNote`, là où
+   l'échafaudage écrivait simplement « James March ».
+2. Un concept **fortement vulgarisé** (`rationalite-limitee`) — c'est là que la passe B et
+   `common_misinterpretations` prennent tout leur sens.
+3. Un concept **d'ouvrage français** (`zones-incertitude`) — il mesure ce que valent
+   réellement les bases internationales sur cette partie du périmètre, et ce que la couche
+   francophone doit rattraper.
 
-Les cas pratiques (`src/content/case-studies.ts`) passent en dernier : une lecture croisée
-n'a de sens que si les concepts qu'elle mobilise sont déjà validés. Le validateur refuse
-d'ailleurs une lecture qui s'appuie sur un concept absent.
+Trois fiches suffisent pour savoir si le dispositif tient. Après quoi la cadence est celle
+du signal : pas de preuve documentaire suffisante, pas de fiche.
+
+Les cas pratiques (`src/content/case-studies.ts`) passent en dernier, et pour la même
+raison : une lecture croisée n'a de sens que si les concepts qu'elle mobilise sont validés.
+Ceux d'aujourd'hui reposent sur de l'échafaudage — ils en sont donc eux-mêmes.
 
 ---
 

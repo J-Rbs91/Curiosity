@@ -81,6 +81,18 @@ export default function ConceptDetailPage() {
         </div>
 
         {/*
+         * Une fiche d'échafaudage n'est servie qu'en développement, mais tant qu'elle est
+         * à l'écran elle doit dire ce qu'elle est : rien de ce qu'elle affirme n'a été
+         * vérifié, et la confondre avec une fiche instruite fausserait toute relecture.
+         */}
+        {concept.provenance === "fixture" && (
+          <p className="mt-4 text-[13px] leading-relaxed text-ink-faint">
+            Fiche d&apos;échafaudage : contenu écrit sans vérification documentaire, en
+            attente d&apos;instruction. Ne pas s&apos;y fier.
+          </p>
+        )}
+
+        {/*
          * L'attribution réelle, quand elle ne se réduit pas aux pastilles d'auteurs :
          * concept coécrit rangé sous un seul nom, terme forgé par un tiers. Une ligne
          * discrète plutôt qu'un badge — c'est une précision de lecture, pas un label.

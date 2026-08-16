@@ -67,6 +67,6 @@ Weber ». L'application est sobre : le texte l'est aussi.
 - Écrire une nuance introuvable dans les sources pour rendre le propos plus prudent : une
   fausse nuance est une affirmation de plus.
 - Faire d'une limite documentée une objection minimisée, ou l'inverse.
-- Reprendre une formulation d'une fiche existante de `src/content/concepts.ts` : elle a
-  été écrite sans vérification, et la reprendre ferait rentrer par la fenêtre ce que le
+- Reprendre une formulation d'une fiche d'échafaudage (`src/content/fixtures/`) : elles
+  ont été écrites de mémoire, et les reprendre ferait rentrer par la fenêtre ce que le
   pipeline sort par la porte.

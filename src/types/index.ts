@@ -114,6 +114,13 @@ export interface Concept {
   difficulty: Difficulty;
 
   sources?: Source[];
+
+  /**
+   * Absent : fiche issue du pipeline documentaire, sourcée et contrôlée.
+   * `"fixture"` : fiche d'échafaudage écrite avant tout dispositif de vérification, servie
+   * en développement uniquement. Rien ne doit reposer sur son contenu.
+   */
+  provenance?: "fixture";
 }
 
 export interface CaseStudyReading {

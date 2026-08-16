@@ -23,7 +23,7 @@ export default function LearnPage() {
     const service = getProgressService();
     const state = service.getState();
     const plan = readPendingSession() ?? selectNextSession(CONTENT, state);
-    const next = resolveSessionPlan(plan, CONTENT);
+    const next = plan ? resolveSessionPlan(plan, CONTENT) : null;
 
     if (!next) {
       router.replace("/");

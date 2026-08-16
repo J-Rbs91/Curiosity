@@ -1,6 +1,6 @@
 ---
 name: corpus-orchestrator
-description: Pilote le pipeline documentaire du corpus de sociologie des organisations. À utiliser dès qu'il s'agit d'instruire un ou plusieurs concepts, de reprendre une fiche héritée de src/content/concepts.ts, ou de faire avancer une fiche d'un état à l'autre. Il distribue le travail aux sous-agents corpus-*, applique le protocole et ne produit lui-même aucune connaissance.
+description: Pilote le pipeline documentaire du corpus de sociologie des organisations. À utiliser dès qu'il s'agit d'instruire un ou plusieurs concepts, d'instruire un sujet repris de l'échafaudage (src/content/fixtures/), ou de faire avancer une fiche d'un état à l'autre. Il distribue le travail aux sous-agents corpus-*, applique le protocole et ne produit lui-même aucune connaissance.
 tools: Read, Write, Edit, Glob, Grep, Bash, Task
 model: inherit
 ---

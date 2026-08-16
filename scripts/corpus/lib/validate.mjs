@@ -338,10 +338,15 @@ export function validateRecord(record, { dir, themeIds = new Set(), authorIds = 
 
 /**
  * Contrôles qui ne se voient qu'à l'échelle du corpus : doublons, références pendantes,
- * cycles de prérequis. `legacyIds` sont les concepts encore servis depuis
- * src/content/concepts.ts — une relation peut légitimement les viser pendant la reprise.
+ * cycles de prérequis.
+ *
+ * Une relation d'une fiche validée ne peut viser qu'une **autre fiche validée**. Pointer
+ * vers une fiche candidate, ou vers l'échafaudage de `src/content/fixtures/`, ferait
+ * entrer dans le graphe d'un concept vérifié une dépendance qui ne l'est pas — et un
+ * prérequis non vérifié conditionne l'accès à un concept vérifié, ce qui est pire encore.
+ * Le graphe se construit donc au rythme du corpus, pas à celui des intentions.
  */
-export function validateCorpus(records, { legacyIds = new Set() } = {}) {
+export function validateCorpus(records) {
   const errors = [];
   const warnings = [];
 
@@ -360,7 +365,7 @@ export function validateCorpus(records, { legacyIds = new Set() } = {}) {
   }
 
   const validated = records.filter(({ record }) => record?.status === "VALIDATED").map((r) => r.record);
-  const universe = new Set([...validated.map((r) => r.id), ...legacyIds]);
+  const universe = new Set(validated.map((r) => r.id));
 
   const refsOf = (record) => [
     ...asArray(record.graph?.related),
@@ -373,7 +378,7 @@ export function validateCorpus(records, { legacyIds = new Set() } = {}) {
     for (const ref of refsOf(record))
       if (isFilled(ref?.id) && !universe.has(ref.id))
         errors.push(
-          `${record.id} : référence « ${ref.id} » introuvable (ni validée, ni héritée) — le graphe pendrait dans l'application`
+          `${record.id} : référence « ${ref.id} » ne désigne aucune fiche validée — une fiche vérifiée ne s'appuie pas sur ce qui ne l'est pas`
         );
 
   // Cycle de prérequis : le moteur pédagogique ne pourrait jamais débloquer les concepts.

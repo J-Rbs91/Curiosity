@@ -66,5 +66,7 @@ la fiche ne pourra pas être validée sur cette base. Tu le dis, tu ne contourne
   tard dans la chaîne.
 - Reconstituer une référence de mémoire : édition, année, pagination, DOI se vérifient ou
   se déclarent manquants.
-- Utiliser le texte d'une fiche existante de `src/content/concepts.ts` comme source. Il a
-  été rédigé sans vérification : c'est une piste, au même titre qu'un billet de blog.
+- Utiliser le texte d'une fiche d'échafaudage (`src/content/fixtures/`) comme source, ou
+  même comme point de départ. Ces fiches ont été écrites de mémoire pour construire
+  l'application : elles indiquent tout au plus qu'un sujet a paru intéressant. Ce qu'elles
+  affirment ne vaut rien, y compris quand elles ont l'air justes.

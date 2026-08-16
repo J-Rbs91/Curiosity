@@ -1,6 +1,22 @@
 import type { Concept } from "@/types";
 
-export const concepts: Concept[] = [
+/**
+ * Concepts d'échafaudage.
+ *
+ * Ces 35 fiches ont été écrites de mémoire, avant qu'il n'existe le moindre dispositif de
+ * vérification, dans un seul but : donner au moteur pédagogique, au graphe et aux écrans
+ * de quoi être construits et testés. Elles ne sont pas un corpus, et il ne faut pas les
+ * lire comme un état antérieur du corpus qu'il suffirait de corriger : leur ressemblance
+ * avec la réalité n'a jamais été établie. Aucune de leurs affirmations n'est attribuable,
+ * aucune de leurs « sources » n'est localisée.
+ *
+ * Elles ne sont donc servies qu'en développement, ne comptent dans aucun décompte de
+ * corpus, et ne servent jamais de point de départ à l'instruction d'un concept : le
+ * pipeline part des textes, pas d'ici (voir docs/corpus-workflow.md).
+ *
+ * Ce fichier est destiné à disparaître, non à être maintenu.
+ */
+export const fixtureConcepts: Concept[] = [
   // ---------------------------------------------------------------------
   // WEBER
   // ---------------------------------------------------------------------

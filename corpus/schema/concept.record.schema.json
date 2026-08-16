@@ -24,7 +24,7 @@
     "id": {
       "type": "string",
       "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
-      "description": "Identifiant applicatif (ConceptId). Pour un concept déjà présent dans src/content/concepts.ts, on reprend l'identifiant existant."
+      "description": "Identifiant applicatif (ConceptId). Pour un sujet déjà présent dans l'échafaudage (src/content/fixtures/), on reprend le même identifiant : la fiche d'échafaudage cesse alors d'être servie."
     },
     "slug": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
 
@@ -341,8 +341,8 @@
         "updated_at": { "type": "string" },
         "pipeline_version": { "type": "string" },
         "candidate_origin": {
-          "enum": ["scout", "legacy-content", "manual"],
-          "description": "legacy-content : concept déjà présent dans src/content/concepts.ts, ré-instruit de zéro."
+          "enum": ["scout", "fixture-topic", "manual"],
+          "description": "fixture-topic : sujet repris de l'échafaudage, instruit de zéro — son texte n'a jamais servi de source."
         },
         "runs": {
           "type": "array",
