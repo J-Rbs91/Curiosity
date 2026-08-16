@@ -264,6 +264,17 @@ describe("validateRecord — citation de l'auteur", () => {
     expect(errorsOf(quoted({ text: "mot ".repeat(200) })).join(" ")).toContain("tenir dans la carte");
   });
 
+  it("se contente de le signaler tant que la fiche est en atelier", () => {
+    // Une longueur excessive est un défaut de rédaction : elle doit bloquer la
+    // publication, pas le travail en cours. Sans cette distinction, toute fiche en
+    // contrôle rendait l'intégration continue rouge.
+    const r = quoted({ text: "mot ".repeat(200) });
+    r.status = "IN_REVIEW";
+    const { errors, warnings } = validateRecord(r, { ...context, dir: "review" });
+    expect(errors).toEqual([]);
+    expect(warnings.join(" ")).toContain("tenir dans la carte");
+  });
+
   it("détecte une traduction silencieuse quand la langue de la source diffère", () => {
     const r = quoted({ language: "fr" });
     r.evidence.primary_sources[0].language = "de";

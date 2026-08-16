@@ -153,7 +153,7 @@ function checkSources(evidence, status, errors) {
  * et explicite sur sa traduction. Le caractère verbatim, lui, ne s'automatise pas : c'est
  * le contrôleur aveugle qui le vérifie contre l'édition.
  */
-function checkQuotation(record, errors) {
+function checkQuotation(record, errors, warnings) {
   const quotation = record?.evidence?.key_quotation;
   if (!quotation) return;
 
@@ -161,10 +161,14 @@ function checkQuotation(record, errors) {
   const at = "evidence.key_quotation";
 
   if (!isFilled(quotation.text)) errors.push(`${at}.text vide`);
-  else if (quotation.text.length > CARD_LIMITS.key_quotation)
-    errors.push(
-      `${at}.text : ${quotation.text.length} caractères pour ${CARD_LIMITS.key_quotation} au plus — la citation doit tenir dans la carte`
-    );
+  else if (quotation.text.length > CARD_LIMITS.key_quotation) {
+    // Une longueur excessive est un défaut de rédaction, pas d'instruction : elle bloque
+    // la publication mais pas le travail en cours. Tant que la fiche est en atelier, elle
+    // se signale ; en `validated/`, elle interdit la projection.
+    const message = `${at}.text : ${quotation.text.length} caractères pour ${CARD_LIMITS.key_quotation} au plus — la citation doit tenir dans la carte`;
+    if (record?.status === "VALIDATED") errors.push(message);
+    else warnings.push(message);
+  }
   if (!isFilled(quotation.locator))
     errors.push(`${at}.locator manquant — une citation qu'on ne peut pas rouvrir à la bonne page ne vaut rien`);
   if (!isFilled(quotation.language)) errors.push(`${at}.language manquante`);
@@ -294,7 +298,7 @@ export function validateRecord(record, { dir, themeIds = new Set(), authorIds = 
       "evidence.mechanism : au moins deux étapes — le mécanisme avant l'exemple, sinon la fiche est vide"
     );
   checkSources(evidence, record?.status, errors);
-  checkQuotation(record, errors);
+  checkQuotation(record, errors, warnings);
 
   // --- pédagogie ----------------------------------------------------------
   const pedagogy = record?.pedagogy ?? {};
