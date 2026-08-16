@@ -46,6 +46,18 @@ export function buildAttributionNote(record) {
 }
 
 /**
+ * « Traduit de l'allemand », « traduit du russe » — pas « traduit de allemand ».
+ *
+ * La langue d'origine est saisie en toutes lettres ; un code ISO (`de`, `en`) ne se
+ * décline pas et la mention se réduit alors au traducteur, ce qui reste juste.
+ */
+function sourceLanguageClause(language) {
+  if (!isFilled(language) || language.trim().length <= 3) return "";
+  const name = language.trim();
+  return /^[aeiouyàâäéèêëïîôöùûüh]/i.test(name) ? ` de l'${name}` : ` du ${name}`;
+}
+
+/**
  * La citation telle qu'elle sera lue. Deux choses s'y jouent : la référence doit permettre
  * de rouvrir le texte, et une traduction ne doit jamais passer pour la parole de l'auteur.
  * Une traduction publiée nomme son traducteur ; une traduction de notre fait le dit.
@@ -66,14 +78,13 @@ export function buildQuotation(record) {
   const projected = { text: quotation.text, attributedTo, reference };
 
   const translation = quotation.translation ?? {};
+  const from = sourceLanguageClause(quotation.original_language);
   if (translation.kind === "published") {
-    const from = isFilled(quotation.original_language) ? ` de ${quotation.original_language}` : "";
     projected.translationNote = [
       `Traduit${from} par ${translation.translator}`,
       isFilled(translation.edition) ? ` (${translation.edition})` : "",
     ].join("");
   } else if (translation.kind === "in-house") {
-    const from = isFilled(quotation.original_language) ? ` de ${quotation.original_language}` : "";
     projected.translationNote = `Traduit${from} pour cette fiche — traduction non publiée`;
   }
 
