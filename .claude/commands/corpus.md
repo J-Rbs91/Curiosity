@@ -17,12 +17,15 @@ Une fiche n'est terminée que si elle permet de composer la carte de l'applicati
 | Carte | Champ de la fiche | Exigé |
 |---|---|---|
 | THÈME | `graph.themes` | oui — au moins un thème existant |
-| CONCEPT | `canonical_name_fr` | oui |
-| CITATION | `evidence.key_quotation` | **non** — voir plus bas |
-| AUTEUR | `attribution` → `attributionNote` | oui — coauteurs rétablis |
-| ACCROCHE | `pedagogy.hook_question` | oui |
-| RÉSUMÉ | `pedagogy.short_explanation` | oui |
+| CONCEPT | `canonical_name_fr` | oui — 48 caractères au plus |
+| CITATION | `evidence.key_quotation` | **non** — voir plus bas ; 150 caractères au plus |
+| ACCROCHE | `pedagogy.hook_question` | oui — 85 caractères au plus |
+| RÉSUMÉ | `pedagogy.short_explanation` | oui — 170 caractères au plus |
+| AUTEUR | `attribution` | oui — coauteurs rétablis |
 | SOURCES | `primary_sources` + `secondary_sources` | oui — une primaire et une secondaire au minimum |
+
+Les longueurs sont mesurées sur le rendu réel, pas estimées : la carte doit tenir dans un
+écran de 375 × 667 avec tous ses champs au maximum simultané.
 
 **La citation reste facultative, et cela ne se négocie pas.** Beaucoup de concepts sont
 distribués sur un chapitre entier sans phrase courte qui les énonce. Une carte sans

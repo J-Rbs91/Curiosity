@@ -1,6 +1,3 @@
-"use client";
-
-import { useState } from "react";
 import type { Source, SourceKind } from "@/types";
 
 /**
@@ -39,9 +36,9 @@ export function ConceptSourceList({ sources }: { sources: Source[] }) {
   );
 
   return (
-    <ul className="space-y-2">
+    <ul className="space-y-[0.6em]">
       {ordered.map((source, index) => (
-        <li key={`${source.label}-${index}`} className="text-[13px] leading-relaxed text-ink-faint">
+        <li key={`${source.label}-${index}`} className="text-[0.8em] leading-relaxed text-ink-faint">
           <span className="text-ink-soft">{KIND_LABEL[source.kind]}</span> ·{" "}
           {source.url ? (
             <a
@@ -59,32 +56,5 @@ export function ConceptSourceList({ sources }: { sources: Source[] }) {
         </li>
       ))}
     </ul>
-  );
-}
-
-/**
- * Sur la carte : un mot qui ouvre et referme la liste, sans faire défiler l'écran.
- * Fermé, il occupe une ligne ; ouvert, il remplace le résumé le temps de la consultation.
- */
-export function ConceptSources({ sources }: { sources: Source[] }) {
-  const [open, setOpen] = useState(false);
-  if (sources.length === 0) return null;
-
-  return (
-    <div>
-      <button
-        type="button"
-        onClick={() => setOpen((value) => !value)}
-        aria-expanded={open}
-        className="press text-xs font-medium uppercase tracking-[0.12em] text-ink-faint hover:text-ink"
-      >
-        {open ? "Masquer les sources" : `Sources · ${sources.length}`}
-      </button>
-      {open && (
-        <div className="enter-rise mt-3">
-          <ConceptSourceList sources={sources} />
-        </div>
-      )}
-    </div>
   );
 }

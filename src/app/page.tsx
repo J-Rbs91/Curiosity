@@ -11,6 +11,16 @@ import { ConceptQuotation } from "@/components/concept/ConceptQuotation";
 import { ConceptSourceList } from "@/components/concept/ConceptSources";
 import { DeepenButton } from "@/components/ui/DeepenButton";
 
+/**
+ * La hauteur d'un écran, barre de navigation déduite.
+ *
+ * `AppShell` réserve déjà la hauteur de la barre en remplissage bas : un enfant en `100svh`
+ * produit donc exactement un écran de défilement — le seul que cette page ne doit jamais
+ * avoir. Une hauteur fixe, et non un minimum : si le contenu n'y tient pas, c'est un défaut
+ * à corriger dans la fiche, pas un défilement à offrir.
+ */
+const SCREEN_HEIGHT = "calc(100svh - var(--nav-height) - env(safe-area-inset-bottom))";
+
 export default function TodayPage() {
   const [mounted, setMounted] = useState(false);
   const [firstLaunch, setFirstLaunch] = useState(false);
@@ -42,7 +52,10 @@ export default function TodayPage() {
   if (!concept) {
     return (
       <Screen>
-        <div className="stagger mx-auto flex min-h-svh max-w-md flex-col justify-center gap-8 px-6">
+        <div
+          className="stagger mx-auto flex max-w-md flex-col justify-center gap-8 px-6"
+          style={{ height: SCREEN_HEIGHT }}
+        >
           <h1 className="font-serif-display text-[30px] font-semibold leading-tight text-ink">
             Le corpus est en cours de constitution.
           </h1>
@@ -59,7 +72,10 @@ export default function TodayPage() {
   if (firstLaunch) {
     return (
       <Screen>
-        <div className="stagger mx-auto flex min-h-svh max-w-md flex-col justify-center gap-10 px-6">
+        <div
+          className="stagger mx-auto flex max-w-md flex-col justify-center gap-10 px-6"
+          style={{ height: SCREEN_HEIGHT }}
+        >
           <h1 className="font-serif-display text-[32px] font-semibold leading-tight text-ink">
             Comprendre comment fonctionnent réellement les organisations.
           </h1>
@@ -77,18 +93,13 @@ export default function TodayPage() {
   return (
     <Screen>
       {/*
-       * Une hauteur fixe, et non un minimum : la carte doit tenir dans l'écran, et si elle
-       * n'y tient pas c'est un défaut à corriger dans la fiche, pas un défilement à offrir.
-       * Les longueurs de l'accroche, du résumé et de la citation sont plafonnées par le
-       * validateur du corpus, sur des valeurs mesurées ici.
-       *
-       * On retranche la barre de navigation : `AppShell` réserve déjà sa hauteur en
-       * remplissage bas, si bien qu'un enfant en `100svh` produit exactement un écran de
-       * défilement — le seul que cette page ne doit jamais avoir.
+       * Le titre, l'accroche, le résumé et la citation sont plafonnés en longueur par le
+       * validateur du corpus (`CARD_LIMITS`), sur des valeurs mesurées ici même : la carte
+       * est rendue tous champs au maximum, et on compare sa hauteur à la place disponible.
        */}
       <div
         className="mx-auto flex max-w-md flex-col justify-center px-6 py-6"
-        style={{ height: "calc(100svh - var(--nav-height) - env(safe-area-inset-bottom))" }}
+        style={{ height: SCREEN_HEIGHT }}
       >
         <ConceptCard concept={concept} />
       </div>
@@ -97,68 +108,100 @@ export default function TodayPage() {
 }
 
 /**
- * La carte : thème, concept, citation, auteur, accroche, résumé, sources.
+ * L'échelle typographique de la carte, en une seule valeur.
+ *
+ * Toutes les tailles de la carte sont exprimées en `em` de cette base : la changer met tout
+ * à l'échelle d'un coup, interlignes et écarts compris. C'est ce qui permet à la même fiche
+ * de tenir sur un écran de 667 points comme sur un de 900 sans qu'on ait à raccourcir le
+ * texte pour le plus petit — un plafond de caractères calibré sur l'iPhone SE aurait appauvri
+ * la carte partout ailleurs.
+ *
+ * 16 px au-delà de 844 points de haut, 13 px à 667 : la carte rétrécit, elle ne défile pas.
+ */
+const CARD_SCALE = "clamp(0.78rem, 0.105rem + 1.695vh, 1rem)";
+
+/**
+ * La carte : thème, concept, citation, accroche, résumé, auteur, sources.
  *
  * C'est tout ce que l'application produit. L'approfondissement est délégué — « Approfondir »
  * emporte la carte et ses sources vers l'IA du lecteur, avec un prompt qui demande à celle-ci
  * de tenir l'attribution transmise pour exacte. Ce qui a coûté le plus cher à établir est
  * précisément ce qui empêchera l'IA de partir sur une vulgarisation.
+ *
+ * L'ordre suit celui de la première version : le thème situe, le concept se nomme, le texte
+ * se lit, et **l'auteur signe à la fin**. C'est l'inverse d'une fiche encyclopédique, et
+ * c'est délibéré — on découvre un concept, pas une notice d'auteur. La citation, quand elle
+ * existe, s'insère avant l'accroche : elle est ce que l'auteur a écrit, la signature qui
+ * suit la rattache à son nom.
  */
 function ConceptCard({ concept }: { concept: Concept }) {
   const [showSources, setShowSources] = useState(false);
   const sources = concept.sources ?? [];
 
   return (
-    <div className="stagger flex flex-col gap-4">
-      <p className="text-xs font-medium uppercase tracking-[0.12em] text-ink-faint">
-        {concept.themeLabel}
-      </p>
-
-      <h1 className="font-serif-display text-[30px] font-semibold leading-[1.15] text-ink">
-        {concept.title}
-      </h1>
-
-      {concept.quotation && <ConceptQuotation quotation={concept.quotation} />}
-
-      <div>
-        <p className="text-[15px] text-ink-soft">{concept.authorLabel}</p>
-        {concept.attributionNote && (
-          <p className="mt-1 text-[13px] leading-relaxed text-ink-faint">
-            {concept.attributionNote}
+    <div className="stagger flex flex-col gap-[1.6em]" style={{ fontSize: CARD_SCALE }}>
+      <div className="flex flex-col gap-[0.6em]">
+        {/* Rendu sous condition, et non laissé vide : une ligne absente ne doit pas laisser
+            l'écart qu'elle aurait occupé. */}
+        {concept.themeLabel && (
+          <p className="text-[0.75em] font-medium uppercase tracking-[0.12em] text-ink-faint">
+            {concept.themeLabel}
           </p>
         )}
+        <h1 className="font-serif-display text-[1.85em] font-semibold leading-[1.15] text-ink">
+          {concept.title}
+        </h1>
       </div>
 
       {/*
-       * Les sources prennent la place du résumé plutôt que de s'ajouter dessous : c'est ce
+       * Les sources prennent la place du texte plutôt que de s'ajouter dessous : c'est ce
        * qui garantit qu'ouvrir les sources ne fait jamais déborder l'écran. On consulte ou
        * on lit, pas les deux à la fois — et le concept reste sous les yeux dans les deux cas.
        */}
       {showSources ? (
-        <div className="enter-rise">
+        <div className="enter-rise flex flex-col gap-[0.8em]">
           <ConceptSourceList sources={sources} />
+          {/*
+           * La note d'attribution appartient à la vue des sources, pas à la face de la carte :
+           * elle dit ce que le corpus sait de la paternité du concept — coauteurs rétablis,
+           * paternité discutée — et redit donc, mot pour mot, ce que la ligne d'auteur affiche
+           * déjà. Sur la face, elle coûtait deux lignes pour ne rien apprendre.
+           */}
+          {concept.attributionNote && (
+            <p className="text-[0.8em] leading-relaxed text-ink-faint">
+              {concept.attributionNote}
+            </p>
+          )}
         </div>
       ) : (
-        <>
-          <p className="font-serif-display text-[19px] leading-snug text-ink">
+        <div className="flex flex-col gap-[1.1em]">
+          {concept.quotation && <ConceptQuotation quotation={concept.quotation} />}
+          <p className="font-serif-display text-[1.15em] leading-snug text-ink">
             {concept.hookQuestion}
           </p>
-          <p className="text-[16px] leading-relaxed text-ink-soft">{concept.shortExplanation}</p>
-        </>
+          <p className="text-[1em] leading-relaxed text-ink-soft">{concept.shortExplanation}</p>
+        </div>
       )}
 
-      {sources.length > 0 && (
-        <button
-          type="button"
-          onClick={() => setShowSources((value) => !value)}
-          aria-expanded={showSources}
-          className="press w-fit text-xs font-medium uppercase tracking-[0.12em] text-ink-faint hover:text-ink"
-        >
-          {showSources ? "Revenir au concept" : `Sources · ${sources.length}`}
-        </button>
+      {concept.authorLabel && (
+        <p className="text-[0.94em] text-ink-soft">{concept.authorLabel}</p>
       )}
 
-      <DeepenButton concept={concept} />
+      {/* Les deux actions sur une même ligne : approfondir se lit d'abord, les sources
+          restent à portée sans réclamer l'attention. */}
+      <div className="flex items-center gap-5">
+        <DeepenButton concept={concept} />
+        {sources.length > 0 && (
+          <button
+            type="button"
+            onClick={() => setShowSources((value) => !value)}
+            aria-expanded={showSources}
+            className="press text-[0.75em] font-medium uppercase tracking-[0.12em] text-ink-faint hover:text-ink"
+          >
+            {showSources ? "Revenir au concept" : `Sources · ${sources.length}`}
+          </button>
+        )}
+      </div>
     </div>
   );
 }

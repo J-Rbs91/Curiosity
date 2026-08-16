@@ -8,14 +8,18 @@ import type { Quotation } from "@/types";
  * caractère à l'édition. Et la référence est toujours affichée, y compris la mention de
  * traduction : une phrase de Weber lue en français est passée par quelqu'un, et taire ce
  * quelqu'un reviendrait à présenter une interprétation comme une parole d'auteur.
+ *
+ * Les tailles sont en `em` : la citation suit l'échelle de la carte qui la porte, sans quoi
+ * elle serait le seul bloc à ne pas rétrécir sur un petit écran — et c'est justement le plus
+ * long.
  */
 export function ConceptQuotation({ quotation }: { quotation: Quotation }) {
   return (
-    <figure className="border-l border-line pl-4">
-      <blockquote className="font-serif-display text-[17px] leading-relaxed text-ink">
+    <figure className="border-l border-line pl-[1em]">
+      <blockquote className="font-serif-display text-[1.05em] leading-relaxed text-ink">
         «&#8239;{quotation.text}&#8239;»
       </blockquote>
-      <figcaption className="mt-2 text-xs leading-relaxed text-ink-faint">
+      <figcaption className="mt-[0.5em] text-[0.75em] leading-relaxed text-ink-faint">
         {quotation.attributedTo}, {quotation.reference}
         {quotation.translationNote && <> · {quotation.translationNote}</>}
       </figcaption>

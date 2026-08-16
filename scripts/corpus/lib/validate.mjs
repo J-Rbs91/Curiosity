@@ -28,22 +28,28 @@ const asArray = (v) => (Array.isArray(v) ? v : []);
  * Longueurs maximales des champs qui composent la carte.
  *
  * Ce ne sont pas des préférences de style : la carte doit tenir dans un écran de
- * téléphone **sans défilement**, et ces trois champs sont les seuls dont la longueur
- * varie. Les valeurs correspondent à ce qui tient réellement à la lecture — deux lignes
- * pour l'accroche, trois pour le résumé, quatre pour la citation.
+ * téléphone **sans défilement**, et ces quatre champs sont les seuls dont la longueur varie.
  *
- * Elles ont été **mesurées**, pas devinées : rendu de la carte sur un écran de 390 × 844,
- * bloc par bloc, avec tous les champs à leur maximum simultané. Une accroche coûte 0,83
- * pixel par caractère, un résumé 0,60, une citation 0,72.
+ * Elles ont été **mesurées**, pas devinées : la carte est rendue dans un navigateur, tous
+ * les champs à leur maximum simultané, et on compare la hauteur du bloc à la place
+ * disponible. Le calibrage est fait sur **375 × 667** — l'écran le plus petit encore en
+ * circulation — parce que c'est lui qui commande : ce qui tient là tient partout ailleurs.
+ * Les valeurs retenues laissent environ une ligne et demie de marge sur cet écran, de quoi
+ * absorber un texte dont les mots se coupent moins bien que ceux de la mesure.
+ *
+ * La typographie de la carte se met elle-même à l'échelle de la hauteur d'écran (16 px de
+ * base au-delà de 844 points, 13,8 en dessous de 667) : sans cela, il aurait fallu calibrer
+ * ces longueurs sur le plus petit téléphone et appauvrir la carte pour tous les autres.
  *
  * La contrainte est ici plutôt que dans une consigne parce qu'une consigne s'oublie : le
  * premier lot a produit des accroches de 311 caractères et des résumés de 805, tous
  * excellents et tous inaffichables.
  */
 export const CARD_LIMITS = {
-  hook_question: 100,
-  short_explanation: 200,
-  key_quotation: 200,
+  canonical_name_fr: 48,
+  hook_question: 85,
+  short_explanation: 170,
+  key_quotation: 150,
   sources: 5,
 };
 
@@ -259,18 +265,33 @@ export function validateRecord(record, { dir, themeIds = new Set(), authorIds = 
   if (record?.status === "VALIDATED") {
     for (const field of ["hook_question", "short_explanation"])
       if (!isFilled(pedagogy[field])) errors.push(`pedagogy.${field} manquant`);
-
-    // La carte doit tenir dans un écran : ces deux champs y sont affichés en entier.
-    for (const field of ["hook_question", "short_explanation"]) {
-      const length = (pedagogy[field] ?? "").length;
-      if (length > CARD_LIMITS[field])
-        errors.push(
-          `pedagogy.${field} : ${length} caractères pour ${CARD_LIMITS[field]} au plus — la carte déborderait de l'écran`
-        );
-    }
     if (asArray(pedagogy.traceability).length === 0)
       push(warnings, "pedagogy.traceability vide : aucune phrase n'est rattachée à la preuve");
   }
+
+  /*
+   * La carte doit tenir dans un écran : ces champs y sont affichés en entier.
+   *
+   * Le contrôle vaut à tous les stades, et non plus à la seule validation : une fiche
+   * rédigée trop long ne se corrige pas en un mot, et l'apprendre au moment de publier
+   * revient à l'apprendre trop tard. Tant qu'elle est en atelier, la longueur se signale ;
+   * en `validated/`, elle interdit la projection.
+   */
+  const tooLong = record?.status === "VALIDATED" ? errors : warnings;
+  for (const field of ["hook_question", "short_explanation"]) {
+    const length = (pedagogy[field] ?? "").length;
+    if (length > CARD_LIMITS[field])
+      push(
+        tooLong,
+        `pedagogy.${field} : ${length} caractères pour ${CARD_LIMITS[field]} au plus — la carte déborderait de l'écran`
+      );
+  }
+  const nameLength = (record?.canonical_name_fr ?? "").length;
+  if (nameLength > CARD_LIMITS.canonical_name_fr)
+    push(
+      tooLong,
+      `canonical_name_fr : ${nameLength} caractères pour ${CARD_LIMITS.canonical_name_fr} au plus — un titre qui court sur quatre lignes chasse le reste de la carte`
+    );
 
   if (prose.length > 0) {
     const sourced = numbersIn(JSON.stringify(evidence) + JSON.stringify(attribution));
