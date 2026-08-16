@@ -1,10 +1,19 @@
 const CACHE_NAME = "curiosity-cache-v1";
-const OFFLINE_URL = "/";
+
+/*
+ * Les chemins sont déduits de l'emplacement du service worker plutôt qu'écrits en dur.
+ * L'application est servie sous un préfixe qui dépend de l'hébergement — la racine du
+ * domaine en développement, /<dépôt>/ sur GitHub Pages — et ce fichier est copié tel quel,
+ * sans passer par la construction : il ne peut pas connaître ce préfixe autrement.
+ */
+const ROOT = new URL("./", self.location).pathname;
+const OFFLINE_URL = ROOT;
+const MANIFEST_URL = `${ROOT}manifest.webmanifest`;
 
 self.addEventListener("install", (event) => {
   self.skipWaiting();
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll([OFFLINE_URL, "/manifest.webmanifest"]))
+    caches.open(CACHE_NAME).then((cache) => cache.addAll([OFFLINE_URL, MANIFEST_URL]))
   );
 });
 

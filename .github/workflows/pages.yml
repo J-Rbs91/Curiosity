@@ -1,0 +1,70 @@
+name: pages
+
+# Publication du site sur GitHub Pages.
+#
+# L'application est un export statique (voir next.config.ts) : il n'y a rien à exécuter côté
+# serveur, l'artefact déposé ici est exactement ce que le navigateur reçoit.
+#
+# Avant la première exécution, il faut choisir « GitHub Actions » comme source dans
+# Settings → Pages. Sans cela le déploiement échoue avec une erreur d'environnement, et non
+# une erreur de construction.
+
+on:
+  push:
+    branches: [main]
+  # Permet de republier sans nouveau commit — après un changement de réglage Pages, par
+  # exemple, ou pour reprendre un déploiement interrompu.
+  workflow_dispatch:
+
+# Le jeton ne sert qu'à déposer l'artefact et à le publier : rien d'autre n'est accessible.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Un seul déploiement à la fois, et on laisse finir celui qui est en cours : l'interrompre
+# laisserait le site dans un état intermédiaire.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+
+      - name: Vérifier que la projection du corpus est à jour
+        # Le site ne doit pas publier un contenu que le corpus maître ne produit plus.
+        # Voir docs/corpus-workflow.md.
+        run: |
+          npm run corpus:build
+          git diff --exit-code src/content/generated/
+
+      - name: Construire l'export statique
+        # Un dépôt de projet est servi sous /<nom-du-dépôt>/. Le nom est lu ici plutôt
+        # qu'écrit en dur : renommer le dépôt ne doit pas casser silencieusement les
+        # ressources et le service worker.
+        env:
+          NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
+        run: npm run build
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

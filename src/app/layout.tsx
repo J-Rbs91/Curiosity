@@ -3,6 +3,7 @@ import { Source_Serif_4, Inter } from "next/font/google";
 import "./globals.css";
 import { AppShell } from "@/components/ui/AppShell";
 import { ServiceWorkerRegistration } from "@/components/ui/ServiceWorkerRegistration";
+import { withBasePath } from "@/lib/base-path";
 
 const sourceSerif = Source_Serif_4({
   variable: "--font-source-serif",
@@ -20,7 +21,11 @@ export const metadata: Metadata = {
   title: "Curiosity — Sociologie des organisations",
   description:
     "Comprendre comment fonctionnent réellement les organisations : quelques minutes à chaque ouverture pour découvrir, relier et appliquer les grands concepts de sociologie des organisations.",
-  manifest: "/manifest.webmanifest",
+  /*
+   * Ces chemins sont préfixés à la main : Next applique `basePath` aux liens et aux
+   * ressources qu'il émet lui-même, pas aux URL écrites dans les métadonnées.
+   */
+  manifest: withBasePath("/manifest.webmanifest"),
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
@@ -28,10 +33,10 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/icons/icon-192.png", sizes: "192x192", type: "image/png" },
-      { url: "/icons/icon-512.png", sizes: "512x512", type: "image/png" },
+      { url: withBasePath("/icons/icon-192.png"), sizes: "192x192", type: "image/png" },
+      { url: withBasePath("/icons/icon-512.png"), sizes: "512x512", type: "image/png" },
     ],
-    apple: "/icons/apple-touch-icon.png",
+    apple: withBasePath("/icons/apple-touch-icon.png"),
   },
 };
 
