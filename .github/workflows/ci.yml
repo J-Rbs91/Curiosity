@@ -1,0 +1,63 @@
+name: ci
+
+# Deux contrôles, sur **chaque** changement.
+#
+# Il y avait auparavant un filtre de chemin — `corpus/**`, `scripts/**`, `src/content/**`,
+# `src/types/**` — hérité de l'époque où ce fichier ne servait qu'au corpus. Il laissait
+# hors CI sept des neuf fichiers de test du dépôt, dont ceux du tirage de la carte du jour :
+# une correction portant sur `src/domain/` ou `src/app/` seuls ne lançait rien du tout, et
+# passait verte.
+#
+# Le filtre ne protégeait rien qui vaille le risque : l'ensemble tourne en moins d'une
+# minute. Il est retiré.
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  corpus:
+    name: corpus
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+
+      - name: Valider les cartes du corpus
+        # Le contrôle documentaire ne peut pas dépendre de la discipline d'un agent ni de
+        # celle d'un contributeur : il tourne ici. Voir docs/corpus-workflow.md.
+        run: npm run corpus:validate
+
+      - name: Vérifier que la projection est à jour
+        # Une projection divergente signifie qu'un fichier généré a été édité à la main, ou
+        # qu'une fiche a changé sans être reprojetée — donc qu'une phrase pourrait s'afficher
+        # sans enregistrement sourcé derrière elle.
+        run: |
+          npm run corpus:build
+          git diff --exit-code src/content/generated/
+
+  app:
+    name: app
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+
+      - run: npm test
+      - run: npm run lint
+
+      - name: Construire l'export statique
+        # `pages.yml` construisait déjà le site, mais seulement après fusion dans main :
+        # l'export statique est exigeant — toute route dynamique doit énumérer ses chemins —
+        # et un échec ne se découvrait donc qu'au déploiement, une fois la PR fermée.
+        run: npm run build
