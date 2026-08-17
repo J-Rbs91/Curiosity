@@ -24,6 +24,9 @@ describe("niveaux de l'arbre", () => {
     expect(levelOf("/explore")).toBe(1);
     expect(levelOf("/explore/authors/weber")).toBe(2);
     expect(levelOf("/explore/themes/pouvoir")).toBe(2);
+    // Un domaine est une coupe d'Explorer comme un thème ou un auteur, pas un palier de
+    // plus : introduire les familles et les domaines n'a pas creusé l'arbre.
+    expect(levelOf("/explore/domains/sociologie-des-organisations")).toBe(2);
     expect(levelOf("/settings")).toBe(2);
     expect(levelOf("/explore/concept")).toBe(3);
   });
@@ -44,6 +47,14 @@ describe("niveaux de l'arbre", () => {
     expect(parentOf("/")).toBeNull();
     expect(parentOf("/explore/themes/pouvoir")).toBe("/explore?vue=themes");
     expect(parentOf("/explore/concept/")).toBe("/explore");
+  });
+
+  it("ramène chaque coupe d'Explorer sur son propre onglet", () => {
+    // Remonter d'un auteur sur l'onglet des domaines ferait perdre la liste d'où l'on vient.
+    expect(parentOf("/explore/authors/weber")).toBe("/explore?vue=auteurs");
+    expect(parentOf("/explore/themes/pouvoir")).toBe("/explore?vue=themes");
+    // « Domaines » est la vue par défaut : son adresse ne porte pas de recherche.
+    expect(parentOf("/explore/domains/sociologie-des-organisations")).toBe("/explore");
   });
 });
 

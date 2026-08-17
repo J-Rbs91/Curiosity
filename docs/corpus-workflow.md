@@ -75,6 +75,7 @@ Sept éléments, dont un seul facultatif. Le schéma est
 | élément | champ | plafond |
 |---|---|---|
 | thème | `themes[0]` + `theme_labels` | — |
+| domaine | hérité du thème, `domain` en dernier recours | — |
 | concept | `title` | 48 caractères |
 | citation | `quotation` | 150 caractères, **facultative** |
 | auteur | `authors`, `attribution_note` | — |

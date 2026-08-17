@@ -58,14 +58,19 @@ export async function loadRecords() {
  */
 export async function loadAppContent() {
   const load = async (name) => import(pathToFileURL(path.join(CONTENT_DIR, `${name}.ts`)).href);
-  const [themes, authors, fixtures] = await Promise.all([
+  const [themes, authors, taxonomy, fixtures] = await Promise.all([
     load("themes"),
     load("authors"),
+    load("taxonomy"),
     load("fixtures/concepts.fixture"),
   ]);
   return {
     themes: themes.themes,
     authors: authors.authors,
+    // La taxonomie est lue là où elle est déclarée. Le pipeline ne tient donc aucune liste
+    // de domaines : ajouter un domaine ne demande rien ici.
+    families: taxonomy.families,
+    domains: taxonomy.domains,
     // Échafaudage, pas corpus : sert à savoir quels sujets restent à instruire, jamais à
     // établir quoi que ce soit. Voir src/content/fixtures/concepts.fixture.ts.
     fixtureConcepts: fixtures.fixtureConcepts,

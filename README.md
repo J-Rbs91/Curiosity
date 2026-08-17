@@ -1,12 +1,13 @@
-# Curiosity — Sociologie des organisations
+# Curiosity — Comprendre le travail et les organisations
 
 **→ [j-rbs91.github.io/Curiosity](https://j-rbs91.github.io/Curiosity/)**
 
-Une application web mobile-first, installable en PWA, qui fait découvrir la sociologie des
-organisations **une carte à la fois**. À chaque ouverture, un concept : son thème, son nom,
-une citation de son auteur quand il en existe une, une accroche, un résumé court, et ses
-sources. Rien d'autre — le lecteur qui veut aller plus loin emporte la carte vers l'IA de
-son choix par le bouton « Approfondir ».
+Une application web mobile-first, installable en PWA, qui fait découvrir **une carte à la
+fois** les concepts qui expliquent comment le travail et les organisations fonctionnent
+réellement. À chaque ouverture, un concept : son thème, son nom, une citation de son auteur
+quand il en existe une, une accroche, un résumé court, et ses sources. Rien d'autre — le
+lecteur qui veut aller plus loin emporte la carte vers l'IA de son choix par le bouton
+« Approfondir ».
 
 Ce que la carte affiche a été **instruit**, pas rédigé de mémoire : c'est là que se trouve
 le vrai travail du projet.
@@ -38,16 +39,43 @@ npm run corpus:validate   # contrôle documentaire du corpus maître
 npm run corpus:build      # projette les fiches validées vers src/content/generated/
 ```
 
+## Taxonomie et corpus
+
+Deux couches, et elles ne se confondent pas.
+
+La **taxonomie** dit *où l'on est* : quatre familles, onze domaines. C'est une
+configuration, déclarée une fois dans [`src/content/taxonomy.ts`](src/content/taxonomy.ts),
+d'où dérivent la navigation, les pages de domaine, les listes et le tirage de la carte.
+
+| Famille | Question directrice | Domaines |
+|---|---|---|
+| Comprendre les humains et les organisations | Pourquoi les individus et les collectifs se comportent-ils ainsi ? | Sociologie des organisations · Sociologie du travail · Psychologie du travail · Économie comportementale |
+| Comprendre le travail réel | Que se passe-t-il réellement lorsque quelqu'un essaie de faire son travail ? | Ergonomie de l'activité · Human Factors / ergonomie cognitive |
+| Comprendre la production et les systèmes | Comment le système produit-il ses résultats ? | Operations Management · Systems Thinking · Cybernétique |
+| Comprendre le pilotage | Comment savons-nous ce qui se passe et comment décidons-nous quoi faire ? | Théorie de la mesure / KPI · Science de la décision |
+
+Le **corpus** dit *ce qu'on apprend* : thèmes, concepts, auteurs, citations, sources. Il est
+produit fiche par fiche par le pipeline documentaire, et **un seul domaine en a un
+aujourd'hui** — la sociologie des organisations. Les dix autres sont déclarés et vides, ce
+que l'interface dit en toutes lettres plutôt que d'afficher « 0 résultat ».
+
+Une carte se rattache à son domaine **par son thème** : aucune des huit fiches instruites
+avant que les domaines n'existent n'a eu à être rouverte.
+
+**Ajouter un domaine, c'est ajouter une entrée dans `taxonomy.ts`.** Sa page, sa route
+statique, sa place dans la navigation et son état de corpus en découlent. Aucun composant,
+aucune condition, aucun menu n'est à écrire — et un test le vérifie.
+
 ## Architecture
 
 ```
 src/
-├── app/           # Écrans (Aujourd'hui, Explorer, Réglages)
-├── components/    # UI : concept/ motion/ ui/
-├── domain/        # Logique pure : tirage de la carte, prompt d'approfondissement
+├── app/           # Écrans (Aujourd'hui, Explorer, domaine, thème, auteur, concept, Réglages)
+├── components/    # UI : concept/ motion/ navigation/ ui/
+├── domain/        # Logique pure : taxonomie, tirage de la carte, prompt d'approfondissement
 ├── services/      # Progression (ce qui a déjà été vu)
 ├── repositories/  # Persistance (localStorage, remplaçable)
-├── content/       # Corpus projeté + échafaudage de développement
+├── content/       # Taxonomie + corpus projeté + échafaudage de développement
 └── types/         # Modèle de données partagé
 
 corpus/            # Corpus maître : fiches sourcées, contrôlées, versionnées

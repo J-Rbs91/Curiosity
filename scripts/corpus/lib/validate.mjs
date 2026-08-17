@@ -190,7 +190,10 @@ function checkGating(record, errors) {
  * Valide une carte isolée.
  * `dir` est le répertoire de corpus/ où elle se trouve.
  */
-export function validateRecord(record, { dir, themeIds = new Set(), authorIds = new Set() } = {}) {
+export function validateRecord(
+  record,
+  { dir, themeIds = new Set(), authorIds = new Set(), domainIds = new Set() } = {}
+) {
   const errors = [];
   const warnings = [];
 
@@ -228,12 +231,35 @@ export function validateRecord(record, { dir, themeIds = new Set(), authorIds = 
   if (themes.length === 0) errors.push("themes vide : la carte n'a rien à situer en tête");
   // Même raison que pour les auteurs : un thème que la fiche fait apparaître ne peut pas
   // être refusé par la table écrite avant toute instruction. Il lui faut un libellé.
+  const knownThemes = themes.filter((t) => themeIds.has(t));
   for (const t of themes)
     if (themeIds.size > 0 && !themeIds.has(t)) {
       if (!isFilled(record?.theme_labels?.[t]))
         errors.push(`themes : « ${t} » est inconnu de l'application et n'a pas de libellé dans theme_labels`);
       else warnings.push(`themes : « ${t} » est un thème nouveau, affiché par son libellé`);
     }
+
+  /*
+   * Le domaine : où cette carte se range dans la taxonomie.
+   *
+   * Il n'est presque jamais à écrire. Une carte hérite du domaine de son thème, et les
+   * fiches instruites avant que les domaines n'existent n'ont donc rien eu à déclarer —
+   * c'est ce qui a permis de les rattacher sans en rouvrir une seule.
+   *
+   * Le champ ne devient obligatoire que dans le cas où l'héritage ne dit rien : une fiche
+   * dont aucun thème n'est connu de l'application. Elle était acceptée telle quelle du temps
+   * où il n'y avait qu'un domaine — il n'y avait rien à choisir. À onze, elle n'apparaîtrait
+   * dans aucun d'eux : ni sur une page de domaine, ni dans un tirage par famille, ni dans un
+   * comptage. Une carte que rien ne situe est une carte que personne ne rencontre.
+   */
+  if (isFilled(record?.domain) && domainIds.size > 0 && !domainIds.has(record.domain))
+    errors.push(
+      `domain « ${record.domain} » inconnu de la taxonomie — voir src/content/taxonomy.ts`
+    );
+  if (themes.length > 0 && themeIds.size > 0 && knownThemes.length === 0 && !isFilled(record?.domain))
+    errors.push(
+      "aucun thème connu de l'application et pas de `domain` : la carte ne peut être rattachée à aucun domaine"
+    );
 
   // Même raison que pour les sources : la carte d'un candidat n'est pas encore écrite.
   const unwritten = record?.status === "VALIDATED" ? errors : warnings;

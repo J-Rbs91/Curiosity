@@ -10,9 +10,10 @@
 import { loadAppContent, loadRecords, relative } from "./lib/io.mjs";
 import { validateCorpus, validateRecord } from "./lib/validate.mjs";
 
-const { themes, authors } = await loadAppContent();
+const { themes, authors, domains } = await loadAppContent();
 const themeIds = new Set(themes.map((t) => t.id));
 const authorIds = new Set(authors.map((a) => a.id));
+const domainIds = new Set(domains.map((d) => d.id));
 
 const records = await loadRecords();
 
@@ -20,7 +21,7 @@ let errorCount = 0;
 let warningCount = 0;
 
 for (const { dir, file, record } of records) {
-  const { errors, warnings } = validateRecord(record, { dir, themeIds, authorIds });
+  const { errors, warnings } = validateRecord(record, { dir, themeIds, authorIds, domainIds });
   if (errors.length === 0 && warnings.length === 0) continue;
   console.log(`\n${relative(file)}`);
   for (const message of errors) console.log(`  ✗ ${message}`);

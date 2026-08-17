@@ -12,6 +12,68 @@ export type AuthorId = string;
 export type ThemeId = string;
 export type ConceptId = string;
 
+// ---------------------------------------------------------------------------
+// Taxonomie — « où sommes-nous ? »
+// ---------------------------------------------------------------------------
+
+/**
+ * Famille et domaine situent ; thème, concept, auteur et sources enseignent. Les deux
+ * couches sont volontairement distinctes : la taxonomie est une configuration, écrite une
+ * fois et lue partout (`src/content/taxonomy.ts`) ; le corpus est produit par le pipeline
+ * documentaire, fiche par fiche.
+ *
+ * Les identifiants sont des chaînes, et non des unions littérales. Une union donnerait une
+ * vérification à la compilation, mais elle ferait de l'ajout d'un domaine une modification
+ * de type propagée dans toute l'application — exactement ce que cette architecture existe
+ * pour éviter. La cohérence des identifiants est contrôlée par les tests de la taxonomie,
+ * qui vérifient qu'aucun domaine ne renvoie à une famille inconnue.
+ */
+export type FamilyId = string;
+export type DomainId = string;
+
+/**
+ * Une famille de domaines, et la question qu'elle pose.
+ *
+ * La question directrice n'est pas décorative : c'est elle qui permet à un lecteur de
+ * choisir une porte d'entrée sans connaître les disciplines académiques qu'elle abrite.
+ * Une famille dont on ne sait dire que le nom n'aide personne.
+ */
+export interface Family {
+  id: FamilyId;
+  slug: string;
+  /** Le libellé affiché, en français. */
+  label: string;
+  /** « Pourquoi les individus et les collectifs se comportent-ils ainsi ? » */
+  question: string;
+  /** Rang d'affichage. Explicite, pour qu'aucun tri alphabétique ne le décide. */
+  order: number;
+}
+
+/**
+ * Un domaine d'étude, rattaché explicitement à sa famille.
+ *
+ * Le rattachement est une donnée, jamais déduit du nom : « Sociologie du travail » et
+ * « Sociologie des organisations » se ressemblent, et rien dans leurs libellés ne dit
+ * qu'elles relèvent de la même famille — c'est `familyId` qui le dit.
+ *
+ * Un domaine n'énumère pas ses thèmes ni ses concepts : ce sont eux qui se rattachent à
+ * lui. Sans quoi déclarer un domaine et instruire son corpus deviendraient deux
+ * modifications à tenir cohérentes à la main.
+ */
+export interface Domain {
+  id: DomainId;
+  slug: string;
+  /** Le libellé affiché, en français, tel que la discipline se nomme. */
+  label: string;
+  /** Une phrase, dite en entier dans une liste : ce que ce domaine permet de voir. */
+  tagline: string;
+  familyId: FamilyId;
+  /** Rang d'affichage à l'intérieur de sa famille. */
+  order: number;
+  /** Ce que le domaine étudie, lu sur sa page plutôt que balayé dans une liste. */
+  description: string;
+}
+
 /**
  * Distingue ce qui vient directement d'un auteur de ce qui relève de l'interprétation.
  * Les niveaux correspondent à la hiérarchie documentaire de docs/corpus-workflow.md :
@@ -66,6 +128,8 @@ export interface Author {
   keywords: string[];
   bio: string;
   themes: ThemeId[];
+  /** Le domaine où cet auteur est lu. Un même auteur peut être repris ailleurs plus tard. */
+  domain: DomainId;
 }
 
 export interface Theme {
@@ -76,6 +140,15 @@ export interface Theme {
   tagline: string;
   keywords: string[];
   description: string;
+  /**
+   * Le domaine dont ce thème est un découpage.
+   *
+   * C'est ce rattachement qui situe le corpus : une carte hérite du domaine de son thème,
+   * et n'a donc rien à déclarer tant qu'elle reste dans les thèmes que l'application
+   * connaît. Un thème appartient à un domaine et à un seul — le jour où un découpage
+   * devrait relever de deux domaines, c'est deux thèmes qu'il faudra, pas un champ de plus.
+   */
+  domain: DomainId;
 }
 
 /**
@@ -121,6 +194,17 @@ export interface Concept {
   /** Identifiants de rattachement, quand l'application connaît l'auteur ou le thème. */
   authors: AuthorId[];
   themes: ThemeId[];
+
+  /**
+   * Le domaine de la carte, **quand elle doit le dire elle-même**.
+   *
+   * Le cas courant est l'absence : la carte hérite du domaine de son thème, et rattacher
+   * les deux reviendrait à écrire deux fois la même chose — avec le risque qu'elles
+   * divergent. Le champ n'existe que pour le cas que l'héritage ne couvre pas : une fiche
+   * qui introduit un thème que `themes.ts` ne connaît pas encore, et qui n'aurait alors
+   * rien pour se situer.
+   */
+  domain?: DomainId;
 
   /**
    * Absent : fiche issue du pipeline documentaire, sourcée et contrôlée.

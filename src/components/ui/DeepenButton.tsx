@@ -1,8 +1,10 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { buildConceptPrompt, type ConceptPromptInput } from "@/domain/concepts/ai-prompt";
+import { buildConceptPrompt } from "@/domain/concepts/ai-prompt";
+import { taxonomy } from "@/content";
 import { Button } from "@/components/ui/Button";
+import type { Concept } from "@/types";
 
 type Feedback = "idle" | "copied" | "failed";
 
@@ -26,7 +28,7 @@ const FEEDBACK_MS = 3000;
  * Là où le partage natif n'existe pas — un navigateur de bureau —, le prompt part dans le
  * presse-papiers, et on le dit.
  */
-export function DeepenButton({ concept }: ConceptPromptInput) {
+export function DeepenButton({ concept }: { concept: Concept }) {
   const [feedback, setFeedback] = useState<Feedback>("idle");
   const timer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
 
@@ -39,7 +41,9 @@ export function DeepenButton({ concept }: ConceptPromptInput) {
   }
 
   async function share() {
-    const text = buildConceptPrompt({ concept });
+    // Le domaine est résolu ici plutôt que passé par l'appelant : les trois écrans qui
+    // portent ce bouton n'ont pas à savoir dans quelle discipline se trouve la carte.
+    const text = buildConceptPrompt({ concept, domain: taxonomy.domainOfConcept(concept) });
 
     if (typeof navigator !== "undefined" && navigator.share) {
       try {

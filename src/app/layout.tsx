@@ -18,9 +18,15 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Curiosity — Sociologie des organisations",
+  /*
+   * Le titre ne nomme plus une discipline. Il en nommait une tant qu'il n'y en avait
+   * qu'une ; en nommer onze serait illisible, et n'en nommer qu'une redeviendrait faux à
+   * chaque domaine instruit. Ce que l'application fait — faire découvrir un concept par
+   * jour — ne change pas, lui, quand le corpus s'étend.
+   */
+  title: "Curiosity — Comprendre le travail et les organisations",
   description:
-    "Comprendre comment fonctionnent réellement les organisations : quelques minutes à chaque ouverture pour découvrir, relier et appliquer les grands concepts de sociologie des organisations.",
+    "Un concept à chaque ouverture, tiré de onze domaines regroupés en quatre familles : comprendre les humains et les organisations, le travail réel, la production et les systèmes, le pilotage.",
   /*
    * Ces chemins sont préfixés à la main : Next applique `basePath` aux liens et aux
    * ressources qu'il émet lui-même, pas aux URL écrites dans les métadonnées.

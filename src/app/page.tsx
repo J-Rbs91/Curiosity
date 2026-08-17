@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { concepts } from "@/content";
+import { taxonomy } from "@/content";
 import { getProgressService } from "@/services/progress";
 import { dayKey, pickDailyConcept } from "@/domain/concepts/next-card";
 import type { Concept } from "@/types";
@@ -34,7 +34,18 @@ export default function TodayPage() {
       Object.values(state.concepts).map((c) => [c.conceptId, c.lastSeenAt] as const)
     );
     const today = dayKey();
-    const next = pickDailyConcept(concepts, seen, today, state.daily);
+    /*
+     * Le tirage porte sur tout le corpus, et il le dit — plutôt que de recevoir la liste des
+     * cartes sans qu'on sache de quel périmètre elle vient. Le jour où l'on voudra une carte
+     * d'une famille ou d'un domaine, c'est ce périmètre qui change, et rien d'autre : le
+     * tirage lui-même ne connaît ni domaine ni discipline.
+     */
+    const next = pickDailyConcept(
+      taxonomy.conceptsIn({ kind: "all" }),
+      seen,
+      today,
+      state.daily
+    );
     // Lecture localStorage et tirage de la carte : impossibles pendant le rendu serveur,
     // faits une seule fois par ouverture de l'écran.
     // eslint-disable-next-line react-hooks/set-state-in-effect
@@ -92,7 +103,7 @@ export default function TodayPage() {
            */}
           <Wordmark animate className="text-[34px] text-ink" />
           <h1 className="font-serif-display text-[32px] font-semibold leading-tight text-ink">
-            Comprendre comment fonctionnent réellement les organisations.
+            Comprendre comment fonctionnent réellement le travail et les organisations.
           </h1>
           <p className="text-[17px] leading-relaxed text-ink-soft">
             Un concept à la fois, à chaque ouverture.

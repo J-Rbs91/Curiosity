@@ -1,7 +1,7 @@
 "use client";
 
 import { notFound, useSearchParams } from "next/navigation";
-import { concepts, authors, themes } from "@/content";
+import { concepts, authors, themes, taxonomy } from "@/content";
 import { ConceptMetaTags } from "@/components/concept/ConceptMetaTags";
 import { ConceptQuotation } from "@/components/concept/ConceptQuotation";
 import { ConceptSourceList } from "@/components/concept/ConceptSources";
@@ -24,6 +24,7 @@ export function ConceptDetail() {
 
   const conceptAuthors = authors.filter((a) => concept.authors.includes(a.id));
   const conceptThemes = themes.filter((t) => concept.themes.includes(t.id));
+  const conceptDomain = taxonomy.domainOfConcept(concept);
 
   return (
     <Screen>
@@ -44,9 +45,13 @@ export function ConceptDetail() {
          * consacre une page. Le corpus peut en introduire d'autres : ceux-là s'affichent
          * par leur nom, sans lien, plutôt que de disparaître.
          */}
-        {(conceptAuthors.length > 0 || conceptThemes.length > 0) && (
+        {(conceptAuthors.length > 0 || conceptThemes.length > 0 || conceptDomain) && (
           <div className="mt-5">
-            <ConceptMetaTags authors={conceptAuthors} themes={conceptThemes} />
+            <ConceptMetaTags
+              authors={conceptAuthors}
+              themes={conceptThemes}
+              domain={conceptDomain}
+            />
           </div>
         )}
         {conceptAuthors.length === 0 && concept.authorLabel && (

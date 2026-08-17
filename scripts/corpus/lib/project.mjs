@@ -114,6 +114,13 @@ export function projectConcept(record) {
   };
 
   if (isFilled(themeLabel)) concept.themeLabel = themeLabel;
+  /*
+   * Le domaine n'est reporté que si la fiche le déclare. Le résoudre ici pour l'écrire sur
+   * chaque carte donnerait un fichier généré plus explicite et une donnée de plus à tenir
+   * cohérente : le rattachement d'un thème à son domaine vit dans `src/content/themes.ts`,
+   * et le recopier huit fois créerait huit occasions de le contredire.
+   */
+  if (isFilled(record.domain)) concept.domain = record.domain;
   if (isFilled(record.attribution_note)) concept.attributionNote = record.attribution_note;
 
   const quotation = buildQuotation(record);

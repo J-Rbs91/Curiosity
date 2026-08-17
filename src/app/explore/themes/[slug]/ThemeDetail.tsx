@@ -2,7 +2,7 @@
 
 import { notFound } from "next/navigation";
 import { TreeLink } from "@/components/navigation/TreeLink";
-import { themes, concepts, authors } from "@/content";
+import { themes, authors, taxonomy } from "@/content";
 import { Screen } from "@/components/motion/Screen";
 import { BackLink } from "@/components/ui/BackLink";
 
@@ -11,7 +11,8 @@ export function ThemeDetail({ slug }: { slug: string }) {
 
   if (!theme) return notFound();
 
-  const themeConcepts = concepts.filter((c) => c.themes.includes(theme.id));
+  const domain = taxonomy.domain(theme.domain);
+  const themeConcepts = taxonomy.conceptsIn({ kind: "theme", id: theme.id });
   const contributingAuthorIds = new Set(themeConcepts.flatMap((c) => c.authors));
   const contributingAuthors = authors.filter((a) => contributingAuthorIds.has(a.id));
 
@@ -21,7 +22,13 @@ export function ThemeDetail({ slug }: { slug: string }) {
         {/* Le retour ramène sur l'onglet d'où l'on vient, pas sur le premier. */}
         <BackLink />
 
-        <h1 className="mt-6 font-serif-display text-[30px] font-semibold leading-tight text-ink">
+        {/* Le domaine situe le thème, comme le thème situe le concept sur la carte. */}
+        {domain && (
+          <p className="mt-6 text-[13px] font-medium uppercase tracking-[0.12em] text-ink-faint">
+            {domain.label}
+          </p>
+        )}
+        <h1 className="mt-2 font-serif-display text-[30px] font-semibold leading-tight text-ink">
           {theme.title}
         </h1>
         <p className="mt-5 text-[17px] leading-relaxed text-ink-soft">{theme.description}</p>

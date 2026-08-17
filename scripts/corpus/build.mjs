@@ -13,15 +13,16 @@ import { GENERATED_FILE, loadAppContent, loadRecords, relative } from "./lib/io.
 import { validateCorpus, validateRecord } from "./lib/validate.mjs";
 import { projectCorpus } from "./lib/project.mjs";
 
-const { themes, authors, fixtureConcepts } = await loadAppContent();
+const { themes, authors, domains, fixtureConcepts } = await loadAppContent();
 const themeIds = new Set(themes.map((t) => t.id));
 const authorIds = new Set(authors.map((a) => a.id));
+const domainIds = new Set(domains.map((d) => d.id));
 
 const records = await loadRecords();
 
 const failures = [];
 for (const { dir, file, record } of records) {
-  const { errors } = validateRecord(record, { dir, themeIds, authorIds });
+  const { errors } = validateRecord(record, { dir, themeIds, authorIds, domainIds });
   if (errors.length > 0) failures.push({ file, errors });
 }
 const corpus = validateCorpus(records);

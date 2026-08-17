@@ -1,5 +1,22 @@
 # Périmètre du corpus
 
+## Un domaine parmi onze — mais un seul est ouvert à l'instruction
+
+L'application couvre désormais **quatre familles et onze domaines**, déclarés dans
+[`src/content/taxonomy.ts`](../src/content/taxonomy.ts). Cela ne change **rien** au
+périmètre du pipeline documentaire : dix de ces domaines sont ouverts dans la taxonomie et
+n'ont pas de corpus, et ce document ne décrit que celui qui en a un.
+
+> **Le périmètre d'instruction actuel est le domaine `organizational-sociology`**, et il le
+> reste tant qu'une décision explicite n'en ouvre pas un autre. Une fiche n'est pas admise
+> parce qu'un domaine existe dans la taxonomie : déclarer un domaine est une décision de
+> structure, l'instruire est une décision de contenu, et les deux ne se prennent pas
+> ensemble.
+
+Une carte se rattache à son domaine **par son thème**, sans rien déclarer. Le champ
+`domain` d'une fiche n'existe que pour le cas où aucun de ses thèmes n'est connu de
+l'application — sans lui, elle n'apparaîtrait dans aucun domaine.
+
 ## Le périmètre est la discipline
 
 > **Sociologie et théorie des organisations** — l'ensemble des travaux permettant de
