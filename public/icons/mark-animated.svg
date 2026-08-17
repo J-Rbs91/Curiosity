@@ -1,19 +1,40 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="Curiosity">
   <style>
-    .pupil { transform-box: view-box; transform-origin: center; }
+    .pupil, .lid { transform-box: view-box; transform-origin: center; }
+    .lid { transform: translate(0px, -60px); }
     @media (prefers-reduced-motion: no-preference) {
-      .pupil { animation: gaze 1600ms cubic-bezier(0.23, 1, 0.32, 1) both; }
+      .pupil { animation: gaze 4800ms cubic-bezier(0.23, 1, 0.32, 1) both; }
+      .lid { animation: blink 4800ms cubic-bezier(0.23, 1, 0.32, 1) both; }
     }
     @keyframes gaze {
-      0%, 12% { transform: translate(0px, 0px); }
-      21%, 38% { transform: translate(-9px, -5px); }
-      47%, 64% { transform: translate(11px, 1.5px); }
-      73%, 88% { transform: translate(-4px, 6.5px); }
-      97%, 100% { transform: translate(0px, 0px); }
+      0%, 4% { transform: translate(0px, 0px); }
+      7%, 12.5% { transform: translate(-9px, -5px); }
+      15.5%, 21% { transform: translate(11px, 1.5px); }
+      24%, 29.5% { transform: translate(-4px, 6.5px); }
+      32.5%, 52% { transform: translate(0px, 0px); }
+      55%, 60% { transform: translate(-11px, 2px); }
+      63%, 68% { transform: translate(9px, -4.5px); }
+      71%, 76% { transform: translate(5.5px, 6.5px); }
+      79%, 100% { transform: translate(0px, 0px); }
+    }
+    @keyframes blink {
+      0%, 34% { transform: translate(0px, -60px); }
+      36.25%, 37% { transform: translate(0px, 0px); }
+      39.75%, 44% { transform: translate(0px, -60px); }
+      46.25%, 47% { transform: translate(0px, 0px); }
+      49.75%, 80.5% { transform: translate(0px, -60px); }
+      84.75%, 90.5% { transform: translate(0px, 0px); }
+      97.5%, 100% { transform: translate(0px, -60px); }
     }
   </style>
   <g transform="translate(64 64) scale(1.543) translate(-50 -50)">
     <path d="M 50 11 A 39 39 0 1 0 50 89 A 39 39 0 1 0 50 11 Z M 50 25.5 A 30 24.5 0 1 0 50 74.5 A 30 24.5 0 1 0 50 25.5 Z" fill="#fafafa" fill-rule="evenodd"/>
     <circle class="pupil" cx="50" cy="50" r="11" fill="#fafafa"/>
+    <clipPath id="counter">
+      <ellipse cx="50" cy="50" rx="33" ry="27.5"/>
+    </clipPath>
+    <g clip-path="url(#counter)">
+      <path class="lid" d="M -2.8000000000000043 17.5 H 102.80000000000001 V 77.5 Q 50 87.5 -2.8000000000000043 77.5 Z" fill="#fafafa"/>
+    </g>
   </g>
 </svg>

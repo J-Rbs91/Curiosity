@@ -20,7 +20,7 @@ import { Mark } from "@/components/ui/Mark";
  */
 
 export type WordmarkProps = {
-  /** Joue la séquence du regard au montage. Une fois, puis repos. */
+  /** Joue la séquence du regard, en boucle espacée de pauses aléatoires — voir `Mark`. */
   animate?: boolean;
   className?: string;
   style?: CSSProperties;

@@ -82,13 +82,20 @@
   --dur-mark: 720ms;  /* moment marquant : le concept qu'on vient de travailler */
 
   /*
-   * Le regard de la marque. Seule durée du produit à dépasser la seconde, et elle se paie une
-   * fois par installation : la séquence ne joue qu'au premier lancement. Elle vaut la somme de
-   * quatre saccades de 140 ms — la durée d'un retour à l'appui — et de trois fixations de
-   * l'ordre de 270 ms, qui sont les ordres de grandeur du regard humain. C'est l'alternance
-   * saut/arrêt, et non l'amplitude, qui fait qu'un point se lit comme un œil.
+   * Le regard de la marque. Seule durée du produit à dépasser la seconde, et elle ne se paie
+   * qu'à l'écran de premier lancement — nulle part ailleurs la marque ne s'affiche.
+   *
+   * Elle vaut la somme de huit saccades de 144 ms — la durée d'un retour à l'appui —, de six
+   * fixations de 240 à 264 ms et de trois clignements, qui sont les ordres de grandeur du
+   * regard humain. C'est l'alternance saut/arrêt, et non l'amplitude, qui fait qu'un point se
+   * lit comme un œil ; c'est pourquoi une séquence trois fois plus longue compte trois fois
+   * plus d'événements plutôt que des mouvements trois fois plus lents.
+   *
+   * Un point de la partition vaut donc 48 ms, et les pourcentages des images clés ci-dessous
+   * se lisent dans cette unité. La partition elle-même est dans `mark-geometry.mjs`, et
+   * `npm test` vérifie que ces deux fichiers disent la même chose.
    */
-  --dur-gaze: 1600ms;
+  --dur-gaze: 4800ms;
 
   /*
    * Amplitude des déplacements, en pourcentage de la surface qui bouge plutôt
@@ -255,46 +262,103 @@ h3,
 /* --------------------------------------------------------------------------
  * Le regard de la marque
  *
- * La pupille du O saute d'une fixation à l'autre, puis se repose au centre. Quatre saccades,
- * et c'est fini : la règle « aucun mouvement continu » n'a pas d'exception, et elle n'en aurait
- * pas moins besoin pour une marque que pour le reste — c'est même là qu'on est le plus tenté
- * d'en faire une.
+ * La pupille du O saute d'une fixation à l'autre et la paupière descend trois fois, puis tout
+ * se repose : la pupille au centre, la paupière relevée. La séquence commence et finit dans cet
+ * état, et c'est la seule raison pour laquelle elle peut se relancer sans se voir sauter.
+ *
+ * **Ce que la boucle ne remet pas en cause.** La règle « aucun mouvement continu » du §7 de
+ * `docs/ux-direction.md` tient toujours, et cette séquence n'en est pas une exception : elle ne
+ * vit qu'à l'écran de premier lancement, où l'utilisateur n'attend aucune information et qu'il
+ * ne reverra pas. Nulle part ailleurs la marque ne s'affiche, et le favicon ne bouge pas. Le
+ * jour où quelqu'un poserait la marque dans un en-tête permanent, c'est la boucle qu'il
+ * faudrait retirer, pas la règle qu'il faudrait assouplir.
  *
  * Les positions viennent du composant, en propriétés personnalisées, parce qu'elles sont la
  * géométrie de la marque et qu'elle n'a qu'une définition — `mark-geometry.mjs`. Ce fichier ne
- * porte que le rythme. Les pourcentages se lisent sur `--dur-gaze` : 12 % valent 192 ms
- * d'attente avant le premier saut, et chaque intervalle de 9 % vaut la saccade elle-même.
+ * porte que le rythme, et la relance est dans `Mark.tsx`. Aucun des trois ne peut dériver sans
+ * que `npm test` le dise.
+ *
+ * Les pourcentages se lisent sur `--dur-gaze`, où un point vaut 48 ms : 4 % valent 192 ms
+ * d'attente avant le premier saut, chaque intervalle de 3 % vaut la saccade elle-même, et les
+ * maintiens de 5 à 5,5 % sont les fixations.
+ *
+ * Les deux pistes portent la même durée. C'est ce qui les garde synchronisées sans qu'on ait à
+ * les accorder, et ce qui permet de les relancer d'un seul geste.
  *
  * Déclaré en `no-preference` plutôt que neutralisé après coup : sans animation, la pupille est
- * simplement au centre, ce qui est aussi son état de repos. La marque ne perd rien.
+ * au centre et la paupière est relevée, ce qui est aussi leur état de repos. La marque ne perd
+ * rien, et la relance ne s'arme jamais — elle attend la fin d'une animation qui n'existe pas.
  * -------------------------------------------------------------------------- */
 
 @media (prefers-reduced-motion: no-preference) {
   .gaze {
     animation: gaze var(--dur-gaze) var(--ease-out-soft) both;
   }
+
+  .blink {
+    animation: blink var(--dur-gaze) var(--ease-out-soft) both;
+  }
 }
 
 @keyframes gaze {
-  0%,
-  12% {
+  0%, 4% {
     translate: var(--gaze-rest);
   }
-  21%,
-  38% {
+  7%, 12.5% {
     translate: var(--gaze-up);
   }
-  47%,
-  64% {
+  15.5%, 21% {
     translate: var(--gaze-right);
   }
-  73%,
-  88% {
+  24%, 29.5% {
     translate: var(--gaze-down);
   }
-  97%,
-  100% {
+  32.5%, 52% {
     translate: var(--gaze-rest);
+  }
+  55%, 60% {
+    translate: var(--gaze-left);
+  }
+  63%, 68% {
+    translate: var(--gaze-up-right);
+  }
+  71%, 76% {
+    translate: var(--gaze-down-right);
+  }
+  79%, 100% {
+    translate: var(--gaze-rest);
+  }
+}
+
+/*
+ * Le clignement. Deux rapides à la charnière des deux regards, un long et plus lent à se
+ * relever qu'à tomber pour finir — 336 ms contre 204.
+ *
+ * Les fermetures sont espacées de 480 ms au plus serré. Ce n'est pas un réglage de confort :
+ * fermé, le O est un disque d'encre pleine, et deux fermetures plus rapprochées seraient un
+ * scintillement. Le seuil est à trois par seconde ; on en compte deux.
+ */
+@keyframes blink {
+  0%, 34% {
+    translate: var(--lid-open);
+  }
+  36.25%, 37% {
+    translate: var(--lid-closed);
+  }
+  39.75%, 44% {
+    translate: var(--lid-open);
+  }
+  46.25%, 47% {
+    translate: var(--lid-closed);
+  }
+  49.75%, 80.5% {
+    translate: var(--lid-open);
+  }
+  84.75%, 90.5% {
+    translate: var(--lid-closed);
+  }
+  97.5%, 100% {
+    translate: var(--lid-open);
   }
 }
 
