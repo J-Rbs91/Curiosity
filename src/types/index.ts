@@ -42,8 +42,14 @@ export interface Source {
  */
 export interface Quotation {
   text: string;
-  /** L'auteur à qui la phrase appartient — jamais déduit d'un concept coécrit. */
-  attributedTo: string;
+  /**
+   * L'auteur à qui la phrase appartient — jamais déduit d'un concept coécrit.
+   *
+   * Absent lorsque `reference` le nomme déjà, ce qui est le cas courant : les notices
+   * commencent par leur auteur. Il ne subsiste que là où il apprend quelque chose — un
+   * passage tiré d'un ouvrage collectif, dont l'auteur n'est pas celui du volume.
+   */
+  attributedTo?: string;
   /** Ouvrage et localisation, tels qu'ils permettent de rouvrir à la bonne page. */
   reference: string;
   /** « traduit de l'allemand par… » ou l'aveu d'une traduction non publiée. */

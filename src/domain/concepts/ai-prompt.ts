@@ -35,11 +35,17 @@ export function buildConceptPrompt({ concept }: ConceptPromptInput): string {
     `Auteur : ${concept.authorLabel ?? "non précisé"}`,
   ];
   if (concept.attributionNote) lines.push(`Attribution établie : ${concept.attributionNote}`);
-  if (concept.quotation)
+  if (concept.quotation) {
+    // Même règle qu'à l'écran : le nom n'est ajouté que si la référence ne le porte pas déjà.
+    // Le prompt doit transmettre l'attribution exacte, pas la redire.
+    const attributed = concept.quotation.attributedTo
+      ? `${concept.quotation.attributedTo}, `
+      : "";
     lines.push(
-      `Citation : « ${concept.quotation.text} » — ${concept.quotation.attributedTo}, ${concept.quotation.reference}` +
+      `Citation : « ${concept.quotation.text} » — ${attributed}${concept.quotation.reference}` +
         (concept.quotation.translationNote ? ` (${concept.quotation.translationNote})` : "")
     );
+  }
   lines.push(`Résumé dont je dispose : ${concept.shortExplanation}`);
 
   const sources = (concept.sources ?? []).map((s) =>
