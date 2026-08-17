@@ -324,9 +324,9 @@ sont lus plutôt que balayés.
 
 ---
 
-## 6. Le bouton « + » — envoyer un concept à une IA
+## 6. Le bouton « Approfondir » — passer le relais à une IA
 
-Présent sur l'écran du jour, sur la fiche d'un concept, et à la fin d'une session.
+Présent sur l'écran du jour et sur la fiche d'un concept.
 
 **Aucune application d'IA n'est nommée ni détectée.** Le partage passe par la
 feuille de partage du système, qui liste déjà les applications capables de recevoir
@@ -335,22 +335,35 @@ maintenue à la main serait fausse le jour de sa première mise en ligne. Là o�
 partage natif n'existe pas — un navigateur de bureau —, le texte part dans le
 presse-papiers, et on le dit.
 
-**Ce n'est pas un partage, c'est une commande.** Les quatre éléments visibles à
-l'écran ne sont que le contexte ; l'essentiel du texte envoyé dit quoi en faire :
-une explication continue qui monte du débutant au spécialiste, trois exemples de
-nature différente, les limites du concept, les voisins avec lesquels on le confond,
-des sources datées et trois recommandations classées.
+**Ce n'est pas un partage de carte, c'est un passage de relais.** Le message est un
+dossier autonome, qui tient sans aucun contexte préalable : les instructions
+d'abord, la carte et son corpus ensuite. La carte y va entière — domaine, famille,
+thème, concept, auteurs, attribution établie, citation localisée, accroche, résumé,
+les cinq sources avec leur niveau, leur DOI ou leur ISBN, et le lien de retour vers
+la fiche. Ce qui a coûté le plus cher à instruire est précisément ce qui empêche
+l'IA de partir sur une vulgarisation.
 
-Deux exigences du prompt sont structurelles et ne doivent pas disparaître d'une
-réécriture — `src/domain/concepts/ai-prompt.ts` et ses tests les tiennent :
+**La conversation appartient au lecteur.** Aucune question n'est posée à sa place,
+aucun niveau ne lui est demandé : l'IA commence à partir du dossier, et ajuste sa
+profondeur au fil de l'échange. La dernière ligne se contente d'autoriser le départ.
 
-1. **La progression ne se nomme jamais.** Le prompt interdit explicitement d'écrire
-   « débutant », « intermédiaire » ou « expert ». Sans cette interdiction, tous les
-   modèles produisent trois sections étiquetées, ce qui découpe en paliers ce qui
-   doit se lire d'un trait.
-2. **Une lacune se déclare, elle ne se comble pas.** Le prompt demande de signaler
-   une référence incertaine plutôt que de l'inventer. C'est la seule protection
-   possible, à distance, contre une bibliographie plausible et fausse.
+Trois exigences du prompt sont structurelles et ne doivent pas disparaître d'une
+réécriture — `src/domain/concepts/ai-prompt.ts` et les tests de
+`ai-handoff.test.ts` les tiennent :
+
+1. **La méthode ne se décrit jamais.** Le prompt demande une explication qui monte
+   du premier abord jusqu'au niveau académique, et interdit de l'annoncer. Sans
+   cette interdiction, les modèles produisent des paliers étiquetés — « pour un
+   débutant », « pour aller plus loin » — qui découpent en tranches ce qui doit se
+   lire d'un trait.
+2. **Une lacune se déclare, elle ne se comble pas.** Citation, page, DOI, date,
+   statistique : ce dont l'IA n'a pas réellement le texte ne se reconstruit pas de
+   mémoire. C'est la seule protection possible, à distance, contre une
+   bibliographie plausible et fausse.
+3. **Le corpus transmis fait autorité sur la mémoire du modèle**, sans devenir un
+   dogme : une source extérieure peut le contredire, à condition d'être examinée
+   pour ce qu'elle est — traçabilité, niveau documentaire, ce qu'elle affirme
+   vraiment.
 
 ---
 
@@ -440,7 +453,9 @@ disparaissent, les fondus restent.
 | `src/components/ui/AppShell.tsx` | Les écrans immersifs et la réserve sous le contenu |
 | `src/content/taxonomy.ts` | Les quatre familles et les onze domaines, et eux seuls |
 | `src/domain/taxonomy/index.ts` | Rattachement, ordre, périmètres de sélection, état du corpus |
-| `src/domain/concepts/ai-prompt.ts` | Le texte envoyé aux applications d'IA |
+| `src/domain/concepts/ai-prompt.ts` | Les instructions envoyées aux applications d'IA, et elles seules |
+| `src/domain/concepts/ai-handoff.ts` | L'assemblage du message : instructions, carte, corpus, lien |
+| `src/domain/concepts/sources.ts` | L'ordre de lecture des sources et le nom de leur niveau |
 | `src/components/ui/mark-geometry.mjs` | La géométrie de la marque, et elle seule |
 | `src/components/ui/Mark.tsx`, `Wordmark.tsx` | L'œil et le mot, aux deux tailles optiques |
 | `scripts/icons/build-icons.mjs` | Les neuf fichiers d'icônes, dérivés de la géométrie |

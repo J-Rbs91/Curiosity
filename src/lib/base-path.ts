@@ -15,3 +15,17 @@ export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 export function withBasePath(path: string): string {
   return `${BASE_PATH}${path}`;
 }
+
+/**
+ * L'adresse complète d'un écran, telle qu'elle s'ouvre depuis l'extérieur de l'application.
+ *
+ * Elle ne peut se construire qu'à l'exécution, dans le navigateur : l'application est
+ * exportée en fichiers statiques et ne connaît pas le domaine qui la sert — le même bundle
+ * répond sous localhost, sous un domaine propre et sous GitHub Pages. D'où le repli sur
+ * `undefined` plutôt que sur une adresse choisie par défaut : un lien qui pointe ailleurs est
+ * pire qu'un lien absent.
+ */
+export function absoluteUrl(path: string): string | undefined {
+  if (typeof window === "undefined") return undefined;
+  return `${window.location.origin}${withBasePath(path)}`;
+}

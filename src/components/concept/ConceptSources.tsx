@@ -1,4 +1,5 @@
-import type { Source, SourceKind } from "@/types";
+import { SOURCE_KIND_LABEL, orderedSources } from "@/domain/concepts/sources";
+import type { Source } from "@/types";
 
 /**
  * Les sources, affichées — mais à la demande.
@@ -12,34 +13,18 @@ import type { Source, SourceKind } from "@/types";
  * repliées derrière un mot. Ce qui doit tenir à l'écran, c'est le concept — les sources
  * sont là pour qui veut vérifier, pas pour prouver au lecteur qu'on a travaillé.
  *
- * Le niveau de chaque source est nommé plutôt que codé par une couleur : la différence
- * entre un texte de l'auteur et un commentaire universitaire est une information.
+ * L'ordre de lecture et les libellés de niveau viennent du domaine
+ * (`@/domain/concepts/sources`) : le message envoyé à une IA emporte les mêmes sources, dans
+ * le même ordre, sous les mêmes noms.
  */
-const KIND_LABEL: Record<SourceKind, string> = {
-  primary: "Texte de l'auteur",
-  "secondary-academic": "Littérature académique",
-  "francophone-reception": "Réception francophone",
-  "pedagogical-interpretation": "Interprétation pédagogique",
-};
-
-/** Ordre de lecture : ce qui établit avant ce qui commente. */
-const KIND_ORDER: SourceKind[] = [
-  "primary",
-  "secondary-academic",
-  "francophone-reception",
-  "pedagogical-interpretation",
-];
-
 export function ConceptSourceList({ sources }: { sources: Source[] }) {
-  const ordered = [...sources].sort(
-    (a, b) => KIND_ORDER.indexOf(a.kind) - KIND_ORDER.indexOf(b.kind)
-  );
+  const ordered = orderedSources(sources);
 
   return (
     <ul className="space-y-[0.6em]">
       {ordered.map((source, index) => (
         <li key={`${source.label}-${index}`} className="text-[0.8em] leading-relaxed text-ink-faint">
-          <span className="text-ink-soft">{KIND_LABEL[source.kind]}</span> ·{" "}
+          <span className="text-ink-soft">{SOURCE_KIND_LABEL[source.kind]}</span> ·{" "}
           {source.url ? (
             <a
               href={source.url}
