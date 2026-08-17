@@ -1,12 +1,11 @@
 "use client";
 
 import { Suspense, ViewTransition } from "react";
-import Link from "next/link";
+import { TreeLink } from "@/components/navigation/TreeLink";
 import { useSearchParams } from "next/navigation";
 import { Settings } from "lucide-react";
 import { authors, themes } from "@/content";
 import { Screen } from "@/components/motion/Screen";
-import { SCREEN_MOTION } from "@/components/motion/screen-motion";
 
 const VIEWS = [
   { id: "auteurs", label: "Auteurs" },
@@ -21,14 +20,13 @@ export default function ExplorePage() {
       <div className="mx-auto max-w-md px-6 pt-10">
         <div className="flex items-start justify-between gap-3">
           <h1 className="font-serif-display text-[28px] font-semibold text-ink">Explorer</h1>
-          <Link
+          <TreeLink
             href="/settings"
-            transitionTypes={SCREEN_MOTION.deeper}
             aria-label="Réglages"
             className="press -mr-2 flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-ink-faint hover:bg-paper-raised hover:text-ink"
           >
             <Settings size={18} strokeWidth={1.75} />
-          </Link>
+          </TreeLink>
         </div>
 
         {/*
@@ -64,18 +62,16 @@ function ExploreBody({ view }: { view: ViewId }) {
           }}
         />
         {VIEWS.map(({ id, label }) => (
-          <Link
+          <TreeLink
             key={id}
             href={id === "auteurs" ? "/explore" : `/explore?vue=${id}`}
-            replace
-            scroll={false}
             aria-current={id === view ? "true" : undefined}
-            className={`press relative z-10 flex min-h-10 flex-1 items-center justify-center rounded-full text-sm ${
+            className={`press relative z-10 flex min-h-11 flex-1 items-center justify-center rounded-full text-sm ${
               id === view ? "font-medium text-accent-contrast" : "text-ink-faint hover:text-ink"
             }`}
           >
             {label}
-          </Link>
+          </TreeLink>
         ))}
       </div>
 
@@ -140,9 +136,8 @@ function ListRow({
 }) {
   return (
     <li>
-      <Link
+      <TreeLink
         href={href}
-        transitionTypes={SCREEN_MOTION.deeper}
         className="press-soft block rounded-2xl px-1 py-4 hover:bg-paper-raised"
       >
         <p className="text-[17px] font-medium leading-snug text-ink">{title}</p>
@@ -150,7 +145,7 @@ function ListRow({
         <p className="mt-2 text-[13px] leading-snug text-ink-faint">
           {keywords.join(" · ")}
         </p>
-      </Link>
+      </TreeLink>
     </li>
   );
 }
