@@ -1,0 +1,64 @@
+{
+  "candidat": "Couplage lâche / Loosely coupled systems",
+  "auteurs": {
+    "noms": "Karl E. Weick",
+    "authorship": "Auteur unique sur l'article fondateur de 1976 — confirmé par Crossref.",
+    "risque_attribution": "Aucun problème de coécriture. Le risque est de confusion avec le découplage de Meyer & Rowan (rang 9 de la file, auteurs différents, année voisine) et avec le sensemaking, autre apport du même auteur (rang 16)."
+  },
+  "perimetre": {
+    "statut": "dedans",
+    "justification": "Porte sur la structure et la coordination des organisations : pourquoi des unités d'une même organisation peuvent réagir peu les unes aux autres sans que ce soit un dysfonctionnement. Auteur identifié (psychologue organisationnel de formation, mais dont l'objet est explicitement organisationnel). Mécanisme enseignable : deux services d'une entreprise ou deux établissements scolaires d'un même district qui varient indépendamment."
+  },
+  "source_primaire": {
+    "reference": "Karl E. Weick, « Educational Organizations as Loosely Coupled Systems », Administrative Science Quarterly, 21(1), 1976, pp. 1-19",
+    "doi": "10.2307/2391875",
+    "verification": "DOI résolu et confirmé sans mismatch par verify_reference (Crossref) : titre, auteur, année, revue concordants.",
+    "localisation_editeur": "JSTOR (redirection confirmée depuis doi.org). Le fetch automatisé de la page JSTOR a échoué (contenu non chargé, message d'erreur de rendu) — statut d'accès institutionnel non confirmé directement pendant ce passage.",
+    "miroirs_detectes": [
+      "eric.ed.gov/?id=EJ134531 — notice ERIC ouverte et lue : ne donne PAS accès au texte intégral malgré un bandeau trompeur « Full text available on ERIC » (vérifié explicitement par fetch, ce bandeau est un filtre de recherche générique, pas une confirmation pour cet article précis).",
+      "coursehero.com, scribd.com — dépôts non officiels détectés par recherche web, non ouverts (nécessitent probablement un compte).",
+      "garfield.library.upenn.edu/classics1989/A1989T566900001.pdf — commentaire de l'auteur lui-même sur son « Citation Classic », pas l'article complet."
+    ],
+    "statut_miroirs": "Aucun miroir en accès libre confirmé et ouvert avec certitude pendant ce passage. C'est le candidat du lot où l'atteignabilité réelle du texte primaire est la plus incertaine malgré la très forte notoriété de l'article."
+  },
+  "secondaire": [
+    {
+      "reference": "Timothy Vogus & Ian Colville, « Sensemaking, Simplexity, and Mindfulness », The SAGE Handbook of Process Organization Studies, 2016",
+      "doi": "10.4135/9781473957954.n21",
+      "verification": "Retrouvée via search_literature, cohérente avec la piste de la carte.",
+      "acces": "SAGE Knowledge, sous abonnement — non testé."
+    },
+    {
+      "reference": "Karl E. Weick, « Theory and Practice in the Real World », The Oxford Handbook of Organization Theory, 2003, pp. 453-475",
+      "statut": "piste de la carte, non recherchée nommément par DOI dans ce passage — à revérifier."
+    }
+  ],
+  "francophone": {
+    "statut": "cherchée, rien trouvé de directement probant",
+    "recherches_effectuees": [
+      "search_francophone « couplage lâche organisations » : 4 résultats HAL, aucun ne porte sur le concept lui-même ou sur la sociologie française de l'école/université (Musselin, Derouet) suggérée comme piste par la carte.",
+      "search_francophone « Musselin université gouvernement » (reformulée plus courte après échec de la requête à 4 mots) : 5 résultats HAL sur la gouvernance des universités françaises (Musselin, Barrier, Aust, Mazoyer), mais aucun ne mentionne explicitement le couplage lâche ou Weick dans les titres remontés — proximité thématique forte (autonomie des établissements, gouvernement à distance) mais filiation avec le concept de Weick non établie par ces seuls titres.",
+      "OpenAlex filtré français : muet sur les deux requêtes (429)."
+    ],
+    "constat": "La piste suggérée par la carte (réception du couplage lâche dans la sociologie française de l'école et de l'université) n'est ni confirmée ni infirmée : les travaux de Musselin sur la gouvernance universitaire existent et sont accessibles, mais leur usage explicite du couplage lâche de Weick reste à vérifier texte en main, pas dans les seuls titres et résumés bibliographiques disponibles ici."
+  },
+  "signal": [
+    "Piège central, souligné fortement par la carte : le couplage lâche n'est PAS un défaut de coordination. L'article soutient que c'est une propriété fonctionnelle — absorption des chocs, adaptation locale, persistance. Ce point n'a pas pu être vérifié sur le texte intégral pendant ce scouting puisque celui-ci n'a pas été ouvert.",
+    "Ne pas confondre avec le découplage de Meyer & Rowan (rang 9 de la file) : mécanisme distinct malgré la proximité lexicale, à signaler mutuellement entre les deux fiches en aval.",
+    "Ne pas confondre avec le sensemaking, autre concept du même auteur, plus tardif.",
+    "cited_by_count = 4967 sur Crossref : reprise massive, terrain propice à une vulgarisation qui inverse la thèse — raison de plus pour insister sur la nécessité de lire le texte et pas seulement les résumés secondaires, comme l'exige la carte."
+  ],
+  "accessibilite": "INCERTAINE À FAIBLE pour le moment. Source primaire : DOI résolu, notice fiable (métadonnées seules). Aucun accès en texte intégral confirmé et ouvert pendant ce passage : la page JSTOR n'a pas pu être rendue, la notice ERIC a été ouverte et vérifiée comme ne donnant PAS accès au texte malgré les apparences, et les autres miroirs détectés (Course Hero, Scribd) n'ont pas été ouverts faute d'accès prévisible sans compte. Ceci n'équivaut pas encore à « métadonnées seules sur toutes les sources » au sens strict du motif d'arrêt — d'autres voies (accès institutionnel JSTOR, ResearchGate, Semantic Scholar en tant que dépôt de PDF) n'ont pas toutes été épuisées — mais c'est le candidat du lot où le risque de buter sur NO_PRIMARY_SOURCE en aval est le plus élevé.",
+  "citable": "Non établi pendant ce scouting : aucun texte intégral n'a été effectivement ouvert et lu. Si un accès s'ouvre (institution, ResearchGate), la citation serait en anglais ; aucune traduction française n'a été repérée pour cet article précis.",
+  "bases_interrogees": {
+    "crossref": "répondu",
+    "openalex": "muet sur tous les appels (429 systématique)",
+    "semantic_scholar": "muet (429 systématique)",
+    "hal": "répondu, mais résultats non concluants sur ce concept précis",
+    "eric": "ouvert hors MCP, notice lue et confirmée insuffisante",
+    "zotero": "hors service pendant ce passage (fetch failed). Un échec, pas une bibliothèque vide.",
+    "verify_reference": "répondu, DOI confirmé sans mismatch"
+  },
+  "decision": "poursuivre, avec réserve forte",
+  "motif": "La source primaire existe, est identifiée et son DOI est vérifié sans ambiguïté — ce n'est donc pas un NO_PRIMARY_SOURCE au sens de 'aucune source identifiée'. Mais aucune voie de texte intégral n'a pu être confirmée ouverte pendant ce passage, contrairement aux quatre autres candidats du lot où au moins un mirror a été effectivement téléchargé ou une page Persée localisée. Le prochain maillon de la chaîne devra vérifier un accès JSTOR institutionnel ou un dépôt académique avant de considérer ce candidat comme réellement instruit — sans quoi il basculera en NO_PRIMARY_SOURCE malgré la clarté de son attribution et de son périmètre."
+}

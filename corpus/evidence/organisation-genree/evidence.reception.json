@@ -1,0 +1,378 @@
+{
+  "_note": "Fragment produit par l'instruction de la RÉCEPTION (corpus-reception-analyst). Complète, et ne remplace jamais, `evidence.primary-reading.json` déposé en parallèle : rien de ce que le lecteur primaire établit n'a été touché, lu ou corrigé ici. Objet de ce fichier : ce que la communauté savante fait du concept — attribution, interprétation, discussion — et non le concept lui-même. Chaque affirmation porte sa référence, et pour chaque source le niveau de consultation RÉEL est indiqué. Ce qui n'a pas pu être ouvert est consigné dans `non_etabli` plutôt que comblé. PARTICULARITÉ DE CE DOSSIER : le scouting rapportait la couche francophone comme « rien de directement probant » ; cherchée pour elle-même ici par une autre voie (API HAL en recherche plein texte, OpenEdition, Érudit — et non plus le seul connecteur HAL du MCP), elle se révèle nettement plus fournie, avec un terme français stabilisé — « organisation genrée » — et une dizaine de textes qui citent Acker 1990 nommément. C'est un écart avec le scouting qu'il faut lire comme un effet d'outil, pas comme une contradiction.",
+  "id": "organisation-genree",
+  "canonical_name_fr": "Organisation genrée",
+  "canonical_name_en": "Gendered organization",
+  "attribution": {
+    "_note": "Instruit par la voie de la réception. Ne se substitue pas au bloc d'attribution du lecteur primaire ; le corrobore ou signale l'écart.",
+    "authors": [
+      {
+        "name": "Joan Acker",
+        "app_author_id": null
+      }
+    ],
+    "authorship": "SOLE_AUTHOR",
+    "associated_author": null,
+    "verdict": "SOLE_AUTHOR, sans difficulté et sans dossier caché — c'est le cas le plus net du lot. La notice Crossref de l'article de 1990 ne porte qu'un nom (« JOAN ACKER »), et la réception le confirme de deux façons indépendantes. (1) PAR LA FORMULE STANDARD D'ATTRIBUTION : « To explain gender inequality at work, many sociologists draw on Joan Acker's (1990) theory of gendered organizations » (Williams, Muller et Kilanski, Gender & Society 26-4, 2012, texte intégral consulté). (2) PAR LE PARATEXTE : un article de Gender, Work & Organization s'intitule « The godmother of gendered organizations: In celebration of the work of Joan Acker » (Benschop et van den Brink, DOI 10.1111/gwao.12231) ; le chapitre d'ouverture d'un ouvrage Routledge de 2025, « Organizations, Jobs and Gender », s'intitule « Joan Acker's legacy and theory of gendered organizations » (Bates, DOI 10.4324/9781003588436-1) ; l'Elgar Encyclopedia on Gender in Management (2025) consacre un chapitre à « Joan Acker's theory of gendered organizations » (Boone Parsons, DOI 10.4337/9781803922065.ch82). Trois éditeurs différents inscrivent le nom de l'autrice dans le titre même de la notice. AUCUNE source consultée ne conteste la paternité, n'attribue le concept à un collectif, ni ne signale un forgeage antérieur du terme.",
+    "term_origin": {
+      "coined_by": "Joan Acker",
+      "coined_in": "« Hierarchies, Jobs, Bodies: A Theory of Gendered Organizations », Gender & Society, 4(2), 1990, p. 139-158 (DOI 10.1177/089124390004002002)",
+      "note": "Le terme est dans le titre même de l'article fondateur, et toutes les sources consultées le citent comme le vocabulaire de l'autrice, jamais comme une étiquette posée après coup par un commentateur. RÉSERVE MÉTHODOLOGIQUE : je n'ai PAS pu établir qu'aucun texte antérieur n'emploie l'expression — c'est une absence de preuve, pas une preuve d'absence. Un antécédent thématique existe et est vérifié bibliographiquement : Jeff Hearn et P. Wendy Parkin, « Gender and Organizations: A Selective Review and a Critique of a Neglected Area », Organization Studies 4(3), 1983 (DOI 10.1177/017084068300400302, notice Crossref résolue). Il porte sur le même angle mort — le genre absent de la théorie des organisations — sept ans avant Acker. AUCUNE source consultée n'établit de reprise d'Acker à Hearn et Parkin : la proximité reste thématique, et doit le rester tant qu'un texte ne documente pas l'emprunt."
+    },
+    "deplacement_de_l_ancrage_bibliographique": {
+      "constat": "Un fait de réception mesurable et contre-intuitif : dans une partie de la littérature récente, l'ancrage n'est plus l'article de 1990 mais les reformulations ultérieures de l'autrice. Evangelina Holvino (Gender, Work & Organization 17-3, 2010, texte intégral consulté, 30 p.) cite Acker 1999a, 1999b, 2004 et 2006 — sa bibliographie ne comporte AUCUNE entrée pour Acker 1990 (vérifié : 0 occurrence de « Hierarchies » dans le PDF). Kennedy, Bishu et Heckler (Administration & Society, 2019, texte intégral consulté) attribuent les quatre « gender substructures » à « Acker (2012) », citent Acker 2006 et 2012 en références, et pas non plus l'article de 1990.",
+      "consequence": "Deux textes de rang A/B, sur deux disciplines différentes (études d'organisation, administration publique), exposent la théorie des organisations genrées sans jamais renvoyer au texte qui la fonde. Une fiche qui présenterait 1990 comme la seule référence utile de la réception se tromperait sur l'état réel des citations ; inversement, celui qui lirait Acker 2012 pour Acker 1990 prendrait une reformulation tardive pour l'original.",
+      "limite": "Deux textes ne font pas une mesure. Les bases de citations qui auraient permis de quantifier ce déplacement (Semantic Scholar via `get_citations`) ont répondu 400 sur tous les appels ; scite n'était pas disponible. C'est un signal, pas une statistique."
+    },
+    "piege_signale_par_la_carte_kanter": {
+      "question": "La carte demande de ne pas fusionner Acker et le tokenism de Kanter (proportion numérique vs. définition du poste). La littérature respecte-t-elle cette distinction ?",
+      "reponse_documentee": "PAS TOUJOURS, et j'ai la trace écrite du contraire. Kennedy, Bishu et Heckler écrivent : « Kanter's (1975) understanding of gender was folded into institutional theory by Joan Acker » (Administration & Society, 2019, p. 5, texte intégral consulté) — une filiation Kanter → Acker affirmée en une phrase, sans citation d'appui, sans page, et sans que le texte montre où Acker reprendrait Kanter. Le même article enchaîne immédiatement sur les quatre sous-structures d'« Acker (2012) », ce qui achève de brouiller les deux mécanismes.",
+      "statut": "AFFIRMATION DE RÉCEPTION, NON FILIATION ÉTABLIE. Je consigne que ce texte l'affirme ; je n'affirme pas qu'Acker reprend Kanter. La vérification directe — la bibliographie d'Acker 1990 contient-elle Kanter ? — n'a pas pu être faite : `get_references` sur le DOI d'Acker rend `count: 0` sans message d'erreur (silence d'outil, voir `non_etabli`), et la lecture du texte primaire ne relève pas de ce fragment."
+    }
+  },
+  "evidence": {
+    "secondary_sources": [
+      {
+        "citation": "Christine L. Williams, Chandra Muller et Kristine Kilanski, « Gendered Organizations in the New Economy », Gender & Society, 26(4), août 2012, p. 549-573",
+        "year": 2012,
+        "language": "en",
+        "doi_isbn": "10.1177/0891243212445466",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4236831/",
+        "role": "reception",
+        "level": "B",
+        "establishes": "LA PIÈCE CENTRALE DU DOSSIER, et la seule source internationale de premier plan dont j'aie lu le texte intégral. Elle établit quatre choses. (1) L'ATTRIBUTION ET LA LECTURE SAVANTE, en une formule qui est aussi un état des lieux de l'usage : « To explain gender inequality at work, many sociologists draw on Joan Acker's (1990) theory of gendered organizations. Acker argued that gender inequality is tenacious because it is built into the structure of work organizations. Even the very definition of a “job” contains an implicit preference for male workers ». (2) LE CONTENU TEL QUE LA LITTÉRATURE LE RETIENT — cinq processus, nommés : « Acker (1990) further identified five processes that reproduce gender in organizations: the division of labor, cultural symbols, workplace interactions, individual identities, and organizational logic », avec une hiérarchie explicite : « The latter process—organizational logic—was at the center of Acker's original critique of gendered organizations ». (3) LA NATURE STRUCTURELLE, ET NON INTERPERSONNELLE, DU MÉCANISME : les autrices soulignent que l'originalité d'Acker porte sur des systèmes qui paraissent neutres — « While others had previously identified organizational logic as key to the reproduction of class inequality, Acker's breakthrough identified it as a source of gender inequality as well, even though it appears gender neutral on the surface » — et citent l'autrice à l'appui (« Rational-technical, ostensibly gender neutral, control systems are built upon and conceal a gendered substructure … in which men's bodies fill abstract jobs », Acker p. 154, cité par Williams et al.). ATTENTION : ce passage est une citation d'Acker PAR le texte citant ; il ne vaut pas source primaire et ne peut pas servir de `key_quotation`. (4) LE DÉBAT LE PLUS SUBSTANTIEL DE LA RÉCEPTION — la péremption partielle des mécanismes : « Acker's theory explains how gender is embedded in traditional organizations that value and reward worker loyalty and that are characterized by standardized job descriptions, career ladders, and manager-controlled evaluations—features that do not characterize jobs in the new economy », et en conclusion : « Organizations are still gendered, but the mechanisms for reproducing gender disparities are different than those in the traditional career path ». Le désaccord porte sur les mécanismes (échelons de carrière, fiches de poste, évaluations hiérarchiques remplacés par équipes, career maps et réseautage), non sur la thèse. CONSULTATION : TEXTE INTÉGRAL (version PMC en libre accès, HTML converti et fouillé)."
+      },
+      {
+        "citation": "Dana M. Britton, « The Epistemology of the Gendered Organization », Gender & Society, 14(3), juin 2000, p. 418-434",
+        "year": 2000,
+        "language": "en",
+        "doi_isbn": "10.1177/089124300014003004",
+        "url": "https://doi.org/10.1177/089124300014003004",
+        "role": "critique",
+        "level": "B",
+        "establishes": "LA CRITIQUE INTERNE DE RÉFÉRENCE, dix ans après l'article fondateur, dans la revue même qui l'a publié — 481 citations selon Crossref. Le résumé de l'éditeur (consulté sur le portail de recherche de Rutgers, où l'autrice est déposante) porte le reproche : la perspective des organisations genrées « reste théoriquement et empiriquement sous-développée » ; Britton identifie trois manières dont la perspective a été appliquée dans la littérature et montre que chacune fait obstacle à un changement organisationnel et social effectif. La question qu'elle pose est exactement celle du périmètre de la fiche : que veut-on dire quand on dit qu'une organisation, une politique, une pratique ou un poste est « genré » ? ATTESTATION INDÉPENDANTE DE LA PORTÉE DU TEXTE : Kennedy, Bishu et Heckler écrivent que « Britton (2000) identifies the different ways that one can investigate the gendered nature of organizations » et rangent son argument, avec Acker 2006, du côté des processus organisationnels producteurs d'effets genrés (Administration & Society, 2019, p. 13, texte intégral consulté) ; Holvino la cite dans sa bibliographie (GWO 2010, texte intégral consulté). CONSULTATION : RÉSUMÉ SEUL. Le texte intégral n'a pas pu être ouvert (SAGE : HTTP 403 ; scholar.archive.org sans réponse exploitable ; aucun dépôt universitaire localisé). Le détail des trois acceptions et le nom des travaux visés ne sont donc PAS établis ici : ce qui circule à leur sujet dans les résumés de seconde main (dominance numérique, bureaucratie masculine, cultures organisationnelles) n'a pas été vérifié sur le texte de Britton et ne doit pas être présenté comme tel."
+      },
+      {
+        "citation": "Trudy Bates, « Rethinking how we work with Acker's theory of gendered organizations: An abductive approach for feminist empirical research », Gender, Work & Organization, 29(4), juillet 2022, p. 1041-1064 (notice Crossref datée 2021 — mise en ligne anticipée)",
+        "year": 2022,
+        "language": "en",
+        "doi_isbn": "10.1111/gwao.12795",
+        "url": "https://doi.org/10.1111/gwao.12795",
+        "role": "critique",
+        "level": "B",
+        "establishes": "LA SOURCE QUI NOMME L'ÉCART D'USAGE, et elle le fait sur la manière d'employer la théorie, non sur son contenu. Résumé verbatim (consulté sur RePEc/IDEAS, reproduction du résumé d'auteur) : « Although the value of Acker's theory is acknowledged, I note it is most frequently used to legitimize the idea that organizations are gendered, not to test whether they are. Few use her theory fully or as it was originally intended. Fewer still have questioned it. This, I argue, contributes to the stagnation of her ideas and results in blindness toward, or disregard for, data that does not support her theory. » Et le remède proposé : « I call for future studies to work abductively with data unaccounted for in the expectations and predictions set by Acker, while operationalizing her five-dimensional framework in its entirety. » Trois enseignements pour la fiche : le cadre est à cinq dimensions et il est rarement mobilisé en entier ; la théorie fonctionne dans la pratique comme une prémisse plutôt que comme une hypothèse ; le reproche vise la communauté, pas Acker. MISMATCH DE DATATION SIGNALÉ PAR `verify_reference` : Crossref donne 2021, le fascicule est de 2022 — la référence doit porter les deux. CONSULTATION : RÉSUMÉ VERBATIM (RePEc). Le corps de l'article (étude de cas d'un syndicat australien) n'a pas été ouvert : Wiley non accessible, les dépôts ECU et UWA localisés ne rendent qu'une notice sans fichier."
+      },
+      {
+        "citation": "Alexis R. Kennedy, Sebawit G. Bishu et Nuri Heckler, « Feminism, Masculinity, and Active Representation: A Gender Analysis of Representative Bureaucracy », Administration & Society, 2019 (en ligne), 30 p.",
+        "year": 2019,
+        "language": "en",
+        "doi_isbn": "10.1177/0095399719888470",
+        "url": "https://www.hks.harvard.edu/sites/default/files/wappp_files/pdfs/0095399719888470.pdf",
+        "role": "reception",
+        "level": "B",
+        "establishes": "TÉMOIN DE LA DIFFUSION HORS SOCIOLOGIE DU TRAVAIL — l'administration publique — et, à ce titre, de trois déformations documentables. (1) LE DÉPLACEMENT DE L'ANCRAGE : les auteurs exposent la théorie en citant « Acker (2012) » et « Acker (2006) », jamais l'article de 1990, absent de leur bibliographie. (2) LA DÉFINITION DE LA SOUS-STRUCTURE, citée d'après Acker 2012 : les sous-structures de genre sont « an often invisible process in the ordinary lives of organizations in which gendered assumptions about women and men, femininity and masculinity, are embedded and reproduced, and gender inequalities perpetuated » (p. 215 de l'article d'Acker, cité par Kennedy et al. p. 5) ; ils en énumèrent quatre — organizing processes, organizational culture, interactions on the job, gendered identities — soit une liste à quatre termes là où Williams et al. en comptent cinq d'après 1990. (3) UNE FILIATION AFFIRMÉE SANS PREUVE : « Kanter's (1975) understanding of gender was folded into institutional theory by Joan Acker » (p. 5) — voir `attribution.piege_signale_par_la_carte_kanter`. Le texte maintient par ailleurs la lecture structurelle : « Acker (2006) argues gender processes are institutionalized by the policies and rules that are practiced daily ». CONSULTATION : TEXTE INTÉGRAL (PDF déposé par la Harvard Kennedy School, 30 p., lu et fouillé)."
+      },
+      {
+        "citation": "Evangelina Holvino, « Intersections: The Simultaneity of Race, Gender and Class in Organization Studies », Gender, Work & Organization, 17(3), mai 2010, p. 248-277",
+        "year": 2010,
+        "language": "en",
+        "doi_isbn": "10.1111/j.1468-0432.2008.00400.x",
+        "url": "https://www.csudh.edu/Assets/csudh-sites/group-relations/documents/recommended-reading/Holvino%20-2010-%20Intersections.pdf",
+        "role": "debate",
+        "level": "B",
+        "establishes": "LE DÉBAT SUR L'INTERSECTIONNALITÉ, où Acker figure des DEUX côtés : comme théoricienne du manque et comme voie de sortie. Holvino relève que très peu de travaux d'études d'organisation traitent ensemble race, classe et genre, et range Acker parmi les rares qui s'y essaient (« Acker, 1999a » dans la liste). Elle constate aussi la difficulté : « despite socialist feminism's strong advocacy for addressing intersections of race, class and gender, developing a way to frame organizational research from these simultaneous processes has been more elusive (Acker, 1999a, 1999b, 2006) », et retient la solution d'Acker : « Acker suggests that we study regimes of inequality — “the historically specific patterns of race, gender, and class relations within particular organizations” through case studies » (Acker 2006, p. 109, cité par Holvino p. 264). POINT DE RÉCEPTION IMPORTANT : Holvino situe Acker dans le féminisme socialiste (« interrelated processes of women's oppression (Acker, 1999b, 2006) »), inscription théorique que la présentation manageriale du concept efface systématiquement. Et sa bibliographie ne contient PAS l'article de 1990. CONSULTATION : TEXTE INTÉGRAL (PDF déposé par California State University Dominguez Hills, 30 p., lu et fouillé)."
+      },
+      {
+        "citation": "Joan Acker, « Gendered organizations and intersectionality: problems and possibilities », Equality, Diversity and Inclusion: An International Journal, 31(3), 2012, p. 214-224",
+        "year": 2012,
+        "language": "en",
+        "doi_isbn": "10.1108/02610151211209072",
+        "url": "https://doi.org/10.1108/02610151211209072",
+        "role": "interpretation",
+        "level": "C",
+        "establishes": "RETOUR DE L'AUTRICE SUR SA PROPRE THÉORIE, vingt-deux ans après — 525 citations selon Crossref. Le résumé de l'éditeur nomme les pièces du dispositif telles qu'elle les reprend : « the gendered substructure of organizations, gendered subtext, the gendered logic of organization and the abstract worker », réexaminées « from the perspective of the original author in a present-day context », avec pour constat la persistance des régimes d'inégalité malgré les changements organisationnels. C'est la source qui autorise à dire que « sous-structure genrée », « logique genrée » et « travailleur abstrait » sont bien le vocabulaire de l'autrice et non une reconstruction des commentateurs. ATTENTION : c'est la parole d'Acker sur Acker, pas un commentaire indépendant — utile à l'interprétation, sans valeur de validation externe. CONSULTATION : RÉSUMÉ SEUL (page Emerald ; texte intégral sous péage, 39 $)."
+      },
+      {
+        "citation": "Joan Acker, « Inequality Regimes: Gender, Class, and Race in Organizations », Gender & Society, 20(4), 2006, p. 441-464",
+        "year": 2006,
+        "language": "en",
+        "doi_isbn": "10.1177/0891243206289499",
+        "url": "https://doi.org/10.1177/0891243206289499",
+        "role": "interpretation",
+        "level": "C",
+        "establishes": "LE TEXTE QUI, DANS LES CITATIONS, A EN PARTIE SUPPLANTÉ CELUI DE 1990 : 2 780 citations selon Crossref, contre 5 601 pour 1990 — et c'est lui, non 1990, que citent Holvino 2010 et Kennedy et al. 2019, tous deux lus intégralement. Son contenu ne m'est connu QUE par ces deux textes citants : Holvino en cite la définition des régimes d'inégalité comme « the historically specific patterns of race, gender, and class relations within particular organizations » (p. 109 de l'article d'Acker) ; Kennedy et al. en tirent l'idée que les processus de genre sont institutionnalisés par les règles et politiques quotidiennes. CONSULTATION : MÉTADONNÉES SEULES (notice Crossref résolue). Le texte n'a pas été ouvert."
+      },
+      {
+        "citation": "Joan Acker, « From Sex Roles to Gendered Institutions », Contemporary Sociology, 21(5), 1992, p. 565-569",
+        "year": 1992,
+        "language": "en",
+        "doi_isbn": "10.2307/2075528",
+        "url": "https://doi.org/10.2307/2075528",
+        "role": "interpretation",
+        "level": "C",
+        "establishes": "Prolongement de l'argument de 1990 des organisations aux institutions, par l'autrice elle-même, deux ans plus tard, dans une revue de bilan — 713 citations selon Crossref. Utile pour situer le concept dans une trajectoire (rôles de sexe → institutions genrées) plutôt que dans un article isolé. CONSULTATION : MÉTADONNÉES SEULES (Crossref). Contenu non consulté : le titre seul autorise à dire que l'extension existe, pas à en rapporter la teneur."
+      },
+      {
+        "citation": "Yvonne Benschop et Marieke van den Brink, « The godmother of gendered organizations: In celebration of the work of Joan Acker », Gender, Work & Organization, 2018 (fascicule 26(12), décembre 2019)",
+        "year": 2018,
+        "language": "en",
+        "doi_isbn": "10.1111/gwao.12231",
+        "url": "https://doi.org/10.1111/gwao.12231",
+        "role": "attribution",
+        "level": "C",
+        "establishes": "FAIT DE RÉCEPTION ÉTABLI PAR LE PARATEXTE : deux chercheuses européennes de premier plan en études de genre et organisation désignent Acker, dans le titre d'un article de revue, comme « the godmother of gendered organizations ». L'attribution du champ à l'autrice est donc revendiquée par la communauté elle-même, et pas seulement par les manuels. CONSULTATION : MÉTADONNÉES SEULES (Crossref : auteurs, titre, revue, DOI). Wiley n'a pas pu être ouvert et le dépôt institutionnel de Radboud renvoie HTTP 403 : je ne sais RIEN du contenu de l'article, et notamment pas ce que les autrices retiennent ou discutent."
+      },
+      {
+        "citation": "David Knights, « In remembrance of Professor Joan Acker: A legendary figure in the field of Gender, Work and Organization », Gender, Work & Organization, 26(12), décembre 2019, p. 1705-1710 ; Jeff Hearn, « For Joan: Some letters with reverence, an honorary doctorate and a dialogical tribute », ibid., p. 1711-1720 ; Susan Sayce, « Revisiting Joan Acker's work with the support of Joan Acker », ibid., p. 1721-1729",
+        "year": 2019,
+        "language": "en",
+        "doi_isbn": "10.1111/gwao.12223 ; 10.1111/gwao.12219 ; 10.1111/gwao.12243",
+        "url": "https://ideas.repec.org/a/bla/gender/v26y2019i12p1721-1729.html",
+        "role": "reception",
+        "level": "C",
+        "establishes": "UN FASCICULE MÉMORIAL ENTIER de Gender, Work & Organization (26-12, décembre 2019) consacré à Acker — Knights, Hearn, Sayce, auxquels s'ajoute l'article de Benschop et van den Brink. C'est un indicateur institutionnel de centralité que peu de concepts du corpus peuvent produire. Le résumé de Sayce (verbatim, RePEc) apporte en outre un point d'interprétation : elle a travaillé avec Acker en 2012 à mettre en forme « her own thoughts and reflection on how other academics evaluate and used her own theorizing, specifically her seminal work on the gender substructure and inequality regimes » — autrement dit, l'autrice elle-même s'est préoccupée de l'usage que la communauté faisait de ses concepts, et ses DEUX concepts clés sont, de son propre point de vue, la sous-structure genrée et les régimes d'inégalité. Le résumé de Knights est reproduit verbatim : « This article celebrates Joan Acker's academic life and her enormous contribution to the field of gender, work and organization. » CONSULTATION : RÉSUMÉS SEULS via RePEc (aucun résumé disponible pour Hearn). Aucun des trois textes n'a été ouvert."
+      },
+      {
+        "citation": "Trudy Bates, « Joan Acker's legacy and theory of gendered organizations », chapitre 1 de Organizations, Jobs and Gender, Routledge, 2025 ; Donna Boone Parsons, « Joan Acker's theory of gendered organizations », chapitre 82 de l'Elgar Encyclopedia on Gender in Management, Edward Elgar, 2025 ; « Gendered Organization », International Encyclopedia of Organization Studies, SAGE, 2008",
+        "year": 2025,
+        "language": "en",
+        "doi_isbn": "10.4324/9781003588436-1 ; 10.4337/9781803922065.ch82 ; 10.4135/9781412956246.n189",
+        "url": "https://doi.org/10.4337/9781803922065.ch82",
+        "role": "attribution",
+        "level": "C",
+        "establishes": "CANONISATION ENCYCLOPÉDIQUE : le concept a une entrée dédiée dans l'International Encyclopedia of Organization Studies (SAGE, 2008), et deux ouvrages de référence de 2025 lui consacrent un chapitre portant le nom de l'autrice dans le titre. Aucun de ces titres ne partage l'attribution avec un coauteur. C'est du paratexte, et il ne dit rien du contenu. CONSULTATION : MÉTADONNÉES SEULES (Crossref). Elgar Online renvoie HTTP 403 ; les chapitres Routledge et SAGE n'ont pas été ouverts."
+      },
+      {
+        "citation": "Jeff Hearn et P. Wendy Parkin, « Gender and Organizations: A Selective Review and a Critique of a Neglected Area », Organization Studies, 4(3), 1983, p. 219-242",
+        "year": 1983,
+        "language": "en",
+        "doi_isbn": "10.1177/017084068300400302",
+        "url": "https://doi.org/10.1177/017084068300400302",
+        "role": "context",
+        "level": "C",
+        "establishes": "ANTÉCÉDENT VÉRIFIÉ BIBLIOGRAPHIQUEMENT, FILIATION NON ÉTABLIE. Sept ans avant Acker, deux auteurs de la théorie des organisations publient dans Organization Studies un état des lieux qui traite explicitement le genre comme « a neglected area » du champ. Notice Crossref résolue (titre, revue, volume, pagination). Je le consigne parce qu'il interdit de présenter 1990 comme une intervention sans précédent dans un champ vierge ; je NE l'utilise PAS pour affirmer une filiation : aucune source consultée ne montre Acker reprenant Hearn et Parkin, et je n'ai pas pu vérifier sa bibliographie (`get_references` muet). CONSULTATION : MÉTADONNÉES SEULES."
+      }
+    ],
+    "francophone_sources": [
+      {
+        "citation": "Caroline Caron, « De l'appropriation inachevée du concept de genre (gender) en communication organisationnelle », Communication & Organisation, n° 25, 2004",
+        "year": 2004,
+        "language": "fr",
+        "doi_isbn": "10.4000/communicationorganisation.2961",
+        "url": "https://journals.openedition.org/communicationorganisation/2961",
+        "role": "reception",
+        "level": "B",
+        "establishes": "LA SOURCE FRANCOPHONE QUI DIT L'ÉTAT DE LA RÉCEPTION FRANCOPHONE — et c'est un constat de manque, formulé de l'intérieur. Caron situe d'abord Acker : dans sa conclusion, elle présente « Joan Acker en 1990, qui continue depuis à raffiner sa proposition » comme l'autrice de « la première tentative » de reformulation théorique générale prenant en compte les interrelations du genre avec d'autres catégories sociales (§ 26). Elle cite l'argument par l'intermédiaire de Mumby : « gender is not something added to neutral organizing processes; rather, it is an integral part of those processes, which cannot be properly understood without an analysis of gender » (Mumby 1996, p. 260, citant Acker 1990, p. 146 — § 8). Et elle constate le vide : « la revue Communication et Organisation n'a publié ni numéro thématique ni article sur le sujet » (note 3), la documentation mobilisable provenant « en majeure partie de la production scientifique anglo-saxonne » (§ 3), sans qu'« un véritable dialogue » se soit instauré entre les chercheurs francophones qui appliquent l'approche. DEUX CHOSES À NE PAS CONFONDRE : le constat porte sur 2004 et sur la communication organisationnelle, pas sur la sociologie du travail française ni sur l'état actuel — les sources francophones ci-dessous, toutes postérieures, montrent que la situation a changé. CONSULTATION : TEXTE INTÉGRAL EN LIGNE (OpenEdition, libre accès ; passages relevés par interrogation ciblée du texte). Également déposé sur HAL (sic_00001065)."
+      },
+      {
+        "citation": "Béatrice Damian-Gaillard, Cégolène Frisque et Eugénie Saitta, « Le journalisme au prisme du genre : une problématique féconde », Questions de communication, n° 15, 2009, p. 175-201",
+        "year": 2009,
+        "language": "fr",
+        "doi_isbn": "10.4000/questionsdecommunication.544",
+        "url": "https://journals.openedition.org/questionsdecommunication/544",
+        "role": "reception",
+        "level": "B",
+        "establishes": "LA TRADUCTION DU TERME ET LA LECTURE STRUCTURELLE, en une phrase et en français : « Prenant le contrepied d'une tendance qui considère la structure organisationnelle des entreprises comme désincarnée et neutre du point de vue du genre (gender-neutral), nous envisageons les médias comme des organisations genrées (gendered organizations, Acker, 1990) ». Trois enseignements : (a) l'équivalent français retenu est « organisation genrée », donné avec l'anglais entre parenthèses — signe d'un terme en cours de naturalisation en 2009 ; (b) ce que les autrices retiennent d'Acker est bien la STRUCTURE organisationnelle et sa fausse neutralité, pas les comportements individuels ; (c) la référence est citée dans sa forme complète et exacte : « Acker J., 1990, “Hierarchies, jobs, Bodies: A theory of Gendered Organizations”, Gender and Society, vol. 4, 2, pp. 139-158 ». CONSULTATION : PASSAGES ET BIBLIOGRAPHIE relevés sur le texte intégral en ligne (OpenEdition, libre accès). Référence et pagination confirmées par la notice HAL hal-05170976."
+      },
+      {
+        "citation": "Anne Lambert et Delphine Remillon, « Une marche vers l'égalité professionnelle en trompe-l'œil », Travail et Emploi, n° 154, avril-juin 2018",
+        "year": 2018,
+        "language": "fr",
+        "doi_isbn": "10.4000/travailemploi.8141",
+        "url": "https://journals.openedition.org/travailemploi/8141",
+        "role": "reception",
+        "level": "B",
+        "establishes": "LE CONCEPT MOBILISÉ COMME OUTIL D'ANALYSE, dans une revue de statistique publique française, et sous son nom français seul. Les autrices mobilisent « le concept d'organisation genrée (Acker, 1990 ; Mills, Tancred, 1992) » pour montrer « le poids des organisations de travail dans la production de ces inégalités », et en donnent la teneur : « Des normes masculines, souvent présentées comme neutres, structurent le rapport au travail des employés, encadrent les carrières et régissent les promotions ». C'est mot pour mot la lecture structurelle — normes présentées comme neutres, carrières, promotions — et non la discrimination interpersonnelle. À noter : l'appariement avec « Mills, Tancred, 1992 » (Gendering Organizational Analysis), qui montre que la réception française reçoit un courant, pas un article isolé. CONSULTATION : PASSAGES ET BIBLIOGRAPHIE relevés sur le texte intégral en ligne (OpenEdition, libre accès)."
+      },
+      {
+        "citation": "Béatrice Damian-Gaillard et Eugénie Saitta, « La féminisation du journalisme politique : reproduction et subversion des rapports de genre », Recherches féministes, 33(1), 2020, p. 233-250",
+        "year": 2020,
+        "language": "fr",
+        "doi_isbn": "10.7202/1071251ar",
+        "url": "https://www.erudit.org/fr/revues/rf/2020-v33-n1-rf05472/1071251ar/",
+        "role": "reception",
+        "level": "B",
+        "establishes": "LA RESTITUTION FRANÇAISE DES PROCESSUS D'ACKER, dans une revue francophone d'études féministes (Québec, Érudit). Les autrices rendent le premier processus ainsi : les organisations sont genrées « dans la construction des divisions genrées (division du travail, comportement admis, emplacement dans l'espace physique, distribution du pouvoir, etc.) », et énumèrent les dimensions suivantes — symboles qui renforcent ces divisions, interactions entre individus, construction de l'identité professionnelle, recréation continue des structures sociales. La référence est donnée sous sa forme complète avec DOI. INTÉRÊT PARTICULIER : c'est l'une des rares sources francophones consultées qui restitue la LISTE des processus et pas seulement l'étiquette — donc celle qui atteste le mieux que le contenu du concept, et pas son seul nom, a circulé en français. CONSULTATION : PASSAGES ET BIBLIOGRAPHIE relevés sur le texte intégral en ligne (Érudit, libre accès). Pagination confirmée par la notice HAL hal-05390853."
+      },
+      {
+        "citation": "Martina Avanza, Olivier Fillieule et Camille Masclet, « Ethnographie du genre. Petit détour par les cuisines et suggestions d'accompagnement », SociologieS, 2015",
+        "year": 2015,
+        "language": "fr",
+        "doi_isbn": null,
+        "url": "https://journals.openedition.org/sociologies/5071",
+        "role": "context",
+        "level": "B",
+        "establishes": "LA PLACE ASSIGNÉE À ACKER DANS LE PANORAMA FRANÇAIS, et un voisinage à ne pas transformer en filiation : les auteurs situent leur propos « au croisement des développements récents de la sociologie des organisations – à la suite des travaux fondateurs de Raewynn Connell (1987) qui introduit la notion de “régime genré” pour pointer la construction du genre à l'échelle locale ou de Joan Acker (1990) avec la notion “d'organisation genrée” ». Deux notions, deux autrices, présentées comme deux fondations parallèles — le texte ne fait dériver ni l'une de l'autre, et je ne le fais pas davantage. Utile aussi parce qu'il rattache explicitement Acker à la SOCIOLOGIE DES ORGANISATIONS, ce qui conforte le périmètre du corpus. CONSULTATION : PASSAGE ET BIBLIOGRAPHIE relevés sur le texte intégral en ligne (OpenEdition, libre accès)."
+      },
+      {
+        "citation": "Corinne Rostaing, « La non-mixité des établissements pénitentiaires et ses effets sur les conceptions de genre : une approche sociologique », in Enfermements III. Le genre enfermé. Hommes et femmes en milieux clos (XIIIe-XXe siècle), 2017",
+        "year": 2017,
+        "language": "fr",
+        "doi_isbn": null,
+        "url": "https://shs.hal.science/halshs-01521424v1",
+        "role": "reception",
+        "level": "C",
+        "establishes": "UNE DÉFINITION FRANÇAISE DU TERME, en toutes lettres, dans le résumé déposé par l'autrice : « La séparation des sexes contribue à produire des “organisations genrées”, c'est-à-dire non neutres du point de vue des identités sexuées, s'appuyant sur des conceptions codifiées du masculin et du féminin, qu'elles contribuent ainsi à reproduire. » NUANCE À SIGNALER, ET ELLE COMPTE : cette glose fait porter le « genré » sur les IDENTITÉS SEXUÉES et les conceptions du masculin et du féminin, là où Acker, telle que la rapportent Williams et al. 2012, le fait porter d'abord sur la LOGIQUE ORGANISATIONNELLE (fiches de poste, échelles de salaire, évaluations). C'est un léger déplacement de l'accent structurel vers le symbolique-identitaire — l'un des cinq processus pris pour le tout. CONSULTATION : RÉSUMÉ D'AUTEUR SEUL (API HAL). Le PDF déposé n'a pas pu être téléchargé : HAL oppose au téléchargement automatisé une page anti-robot (Anubis)."
+      },
+      {
+        "citation": "Clotilde Coron, « The gender-job satisfaction debate in the light of the “gendered organizations” theory », Revue de Gestion des Ressources Humaines, n° 125, 2022",
+        "year": 2022,
+        "language": "en",
+        "doi_isbn": "10.3917/grhu.125.0003",
+        "url": "https://shs.hal.science/halshs-03808294",
+        "role": "reception",
+        "level": "C",
+        "establishes": "LA THÉORIE COMME CADRE D'ANALYSE EN GESTION FRANÇAISE, sur données françaises : le résumé déposé indique que l'étude explore l'hypothèse des antécédents genrés de la satisfaction au travail « with the theoretical framework of “gendered organizations”, which encourages being attentive toward the interactions between gender and HR practices », à partir de l'enquête française REPONSE 2017. Deux faits de réception : (a) le cadre d'Acker est opératoire dans la GRH française trente ans après ; (b) l'article, publié dans une revue française, est rédigé en anglais et conserve l'étiquette anglaise — indice que la naturalisation du terme est inégale selon les disciplines (sociologie : « organisation genrée » ; gestion : « gendered organizations »). CONSULTATION : RÉSUMÉ D'AUTEUR SEUL (API HAL) ; le PDF déposé est inaccessible au téléchargement automatisé (page anti-robot HAL), Cairn renvoie HTTP 403."
+      },
+      {
+        "citation": "Tania Angeloff et Jacqueline Laufer, « Genre et organisations », Travail, genre et sociétés, n° 17, 2007, p. 21-25 ; Cécile Guillaume et Sophie Pochic, « La fabrication organisationnelle des dirigeants. Un regard sur le plafond de verre », ibid., p. 79-103",
+        "year": 2007,
+        "language": "fr",
+        "doi_isbn": "10.3917/tgs.017.0021 ; 10.3917/tgs.017.0079",
+        "url": "https://doi.org/10.3917/tgs.017.0021",
+        "role": "reception",
+        "level": "C",
+        "establishes": "L'EXISTENCE D'UN DOSSIER FRANÇAIS INTITULÉ « GENRE ET ORGANISATIONS » dans la revue de référence du domaine (Travail, genre et sociétés, n° 17, 2007), introduit par Tania Angeloff et Jacqueline Laufer — deux notices Crossref résolues, l'une et l'autre sans mismatch. C'est l'indice le plus net que la question a été constituée en objet dans la sociologie française du travail, et le lieu où la discussion d'Acker par Laufer, Pochic ou Guillaume aurait le plus de chances de se trouver. CONSULTATION : MÉTADONNÉES SEULES, ET C'EST UNE LIMITE SÉRIEUSE DE CE PASSAGE. Cairn renvoie HTTP 403 à toute requête automatisée, y compris sur shs.cairn.info ; le dépôt HAL de Guillaume et Pochic (hal-03719130) existe avec un fichier, mais son téléchargement est bloqué par la page anti-robot de HAL. Je ne sais donc PAS si ces textes citent Acker, ni ce qu'ils en font. Le scouting signalait déjà Cairn comme inaccessible : la limite se confirme et doit être levée par une consultation humaine ou institutionnelle."
+      },
+      {
+        "citation": "Guillaume Malochet, compte rendu de Dana M. Britton, « At Work in the Iron Cage. The Prison as Gendered Organization », Sociologie du travail, 2004",
+        "year": 2004,
+        "language": "fr",
+        "doi_isbn": "10.4000/sdt.29976",
+        "url": "https://journals.openedition.org/sdt/29976",
+        "role": "reception",
+        "level": "C",
+        "establishes": "UN RÉSULTAT NÉGATIF, MAIS DOCUMENTÉ, ET INSTRUCTIF. L'ouvrage de Britton — la critique interne du concept, appliquée à la prison — a bien été recensé en français dès 2004 dans Sociologie du travail. Mais le compte rendu NE MENTIONNE NI JOAN ACKER NI LA THÉORIE DES ORGANISATIONS GENRÉES comme cadre théorique : Malochet parle d'« une lecture sexuée d'une organisation particulière », restitue les trois niveaux de Britton (structures, culture, interactions), et reproche à l'autrice de ne jamais justifier « son choix de parler de la prison comme d'une organisation », en la renvoyant au débat sur l'institution totale de Goffman plutôt qu'à la théorie féministe des organisations. AUTREMENT DIT : en 2004, l'ouvrage traverse la frontière, le cadre théorique non — le recenseur français le relit avec Goffman. C'est la trace concrète du décalage que Caron déplorait la même année. CONSULTATION : TEXTE INTÉGRAL EN LIGNE (OpenEdition, libre accès), interrogé spécifiquement sur la présence d'Acker."
+      }
+    ],
+    "translation_notes": [
+      {
+        "term_source": "gendered organization(s)",
+        "term_fr": "organisation genrée / organisations genrées",
+        "note": "L'équivalent est stabilisé et attesté dans au moins cinq textes universitaires francophones consultés (Damian-Gaillard, Frisque et Saitta 2009 ; Avanza, Fillieule et Masclet 2015 ; Rostaing 2017 ; Lambert et Remillon 2018 ; Damian-Gaillard et Saitta 2020). En 2009 il est encore donné avec l'anglais entre parenthèses — « organisations genrées (gendered organizations, Acker, 1990) » — et en 2018 il s'emploie seul : « le concept d'organisation genrée (Acker, 1990) ». La naturalisation du terme est donc datable, à la fin des années 2000. AUCUNE TRADUCTION FRANÇAISE DE L'ARTICLE DE 1990 N'A ÉTÉ LOCALISÉE : tous les textes francophones consultés citent l'original anglais dans leur bibliographie, avec sa pagination anglaise. Une citation française du texte ne peut donc être qu'une traduction de l'agent, à signaler comme telle."
+      },
+      {
+        "term_source": "gendered substructure / abstract worker / organizational logic",
+        "term_fr": "sous-structure genrée / travailleur abstrait / logique organisationnelle",
+        "note": "Ces trois termes sont ceux qu'Acker elle-même reprend en 2012 (résumé Emerald : « the gendered substructure of organizations, gendered subtext, the gendered logic of organization and the abstract worker »). Leurs équivalents français circulent, mais je n'ai PAS trouvé de source universitaire francophone les employant en propre : la recherche plein texte de l'API HAL sur « sous-structure genrée » et sur « travailleur abstrait » ET Acker rend 0 résultat. La réception française semble avoir importé l'étiquette générale et la liste des processus plutôt que le lexique fin de la sous-structure. C'est une observation, pas une preuve : la couverture plein texte de HAL ne vaut pas pour Cairn ni pour l'édition papier."
+      }
+    ],
+    "known_ambiguities": [
+      "COMBIEN DE PROCESSUS ? LA LITTÉRATURE N'EST PAS D'ACCORD, ET L'ÉCART SUIT L'ANNÉE CITÉE. Williams, Muller et Kilanski en comptent CINQ d'après 1990 — « the division of labor, cultural symbols, workplace interactions, individual identities, and organizational logic » (texte intégral consulté) ; Bates parle d'un « five-dimensional framework » (résumé verbatim) ; Damian-Gaillard et Saitta en restituent cinq en français ; mais Kennedy, Bishu et Heckler en énumèrent QUATRE — « organizing processes, organizational culture, interactions on the job, and gendered identities » — parce qu'ils citent Acker 2012 et non 1990 (texte intégral consulté). Une fiche qui donnerait un nombre sans dire de quel texte il provient trancherait un désaccord qui n'est pas tranché.",
+      "OÙ EST LE CŒUR DU CONCEPT ? Williams et al. sont formels : « The latter process—organizational logic—was at the center of Acker's original critique ». Mais la glose française de Rostaing fait porter l'essentiel sur « les identités sexuées » et « les conceptions codifiées du masculin et du féminin », et l'entrée par les symboles ou la culture est fréquente dans les usages appliqués. Selon qu'on privilégie la logique organisationnelle (fiches de poste, échelles de salaire, évaluations) ou les symboles et identités, on n'obtient ni le même concept ni le même périmètre — et c'est exactement la question que Britton pose en 2000 en demandant ce qu'on veut dire quand on dit qu'une organisation est « genrée ».",
+      "LE CONCEPT EST-IL DATÉ ? Débat ouvert et explicitement formulé. Williams, Muller et Kilanski soutiennent que les mécanismes décrits en 1990 supposent un modèle de carrière — échelons, fiches de poste standardisées, évaluation par la hiérarchie — « features that do not characterize jobs in the new economy », et concluent : « Organizations are still gendered, but the mechanisms for reproducing gender disparities are different than those in the traditional career path » (texte intégral consulté). La thèse survit, l'inventaire des mécanismes non. Acker elle-même, en 2012, réexamine ses processus « in a present-day context » (résumé Emerald) — signe que la question lui était posée.",
+      "L'INTERSECTIONNALITÉ : PROBLÈME RÉSOLU OU PROBLÈME PERSISTANT ? Le titre même de l'article d'Acker en 2012 pose « problems and possibilities ». Holvino, dans Gender, Work & Organization, tient le problème pour ouvert : « despite socialist feminism's strong advocacy for addressing intersections of race, class and gender, developing a way to frame organizational research from these simultaneous processes has been more elusive (Acker, 1999a, 1999b, 2006) » (texte intégral consulté). La littérature ne dit donc pas que l'articulation genre/race/classe est réglée par les « régimes d'inégalité » : elle dit que c'est là que ça achoppe.",
+      "DIVERGENCE ENTRE LES DEUX COUCHES SUR L'ANCRAGE : la couche internationale récente cite volontiers Acker 2006 et 2012 sans passer par 1990 (Holvino, Kennedy et al., tous deux vérifiés bibliographie en main), tandis que TOUTE la couche francophone consultée cite 1990, et seulement 1990, avec sa pagination anglaise. Le concept français « organisation genrée » est donc arrimé à l'article fondateur, quand une partie de la littérature anglophone s'est déplacée vers les régimes d'inégalité. Je documente la divergence sans la trancher."
+    ],
+    "common_misinterpretations": [
+      {
+        "claim": "« Organisation genrée » veut dire qu'il y a de la discrimination, du sexisme ou des biais entre personnes dans les organisations — l'affaire se jouerait dans les comportements, les stéréotypes et les préjugés des individus.",
+        "why_wrong": "C'est le glissement que la cartographie redoutait, et il faut dire honnêtement ce que la vérification donne : LA LITTÉRATURE SAVANTE CONSULTÉE NE LE PORTE PAS. Toutes les sources ouvertes maintiennent la lecture structurelle, et souvent contre la lecture interpersonnelle. Williams, Muller et Kilanski : « gender inequality is tenacious because it is built into the structure of work organizations. Even the very definition of a “job” contains an implicit preference for male workers » ; et l'originalité d'Acker tient précisément à ce que le mécanisme opère dans des systèmes qui « appear gender neutral on the surface » (texte intégral consulté). Lambert et Remillon, en français : « Des normes masculines, souvent présentées comme neutres, structurent le rapport au travail des employés, encadrent les carrières et régissent les promotions » (Travail et Emploi 154, 2018). Damian-Gaillard, Frisque et Saitta posent le concept en « contrepied d'une tendance qui considère la structure organisationnelle des entreprises comme désincarnée et neutre du point de vue du genre ». CE QUI RESTE VRAI DU RISQUE : le glissement existe hors littérature savante — un billet de conseil en coaching consulté à titre de DÉTECTION SEULEMENT (niveau E, non enregistré comme source) conserve d'ailleurs, lui aussi, le travailleur abstrait et la définition des postes. Le danger pour une fiche est donc moins un contresens répandu qu'un raccourci pédagogique commode : à surveiller, non à documenter comme une mésinterprétation établie.",
+        "source": "Williams, Muller et Kilanski, Gender & Society 26(4), 2012, DOI 10.1177/0891243212445466 (texte intégral consulté) ; Lambert et Remillon, Travail et Emploi n° 154, 2018, DOI 10.4000/travailemploi.8141 (texte intégral en ligne consulté) ; Damian-Gaillard, Frisque et Saitta, Questions de communication n° 15, 2009, DOI 10.4000/questionsdecommunication.544 (texte intégral en ligne consulté)."
+      },
+      {
+        "claim": "La théorie des organisations genrées est un acquis solide qu'on peut appliquer : il suffit de montrer qu'une organisation est genrée.",
+        "why_wrong": "C'EST LA MÉSINTERPRÉTATION QUE LA LITTÉRATURE NOMME RÉELLEMENT, et elle porte sur l'USAGE plus que sur le contenu. Bates, dans Gender, Work & Organization : « it is most frequently used to legitimize the idea that organizations are gendered, not to test whether they are. Few use her theory fully or as it was originally intended. Fewer still have questioned it. This, I argue, contributes to the stagnation of her ideas and results in blindness toward, or disregard for, data that does not support her theory » (résumé verbatim). Britton, dès 2000, disait déjà de la perspective qu'elle « reste théoriquement et empiriquement sous-développée » et que l'on demeure incertain sur ce que signifie décrire une organisation comme genrée (résumé consulté). Une proposition testable transformée en prémisse cesse d'être une théorie : c'est le reproche, et il vise la communauté, non Acker.",
+        "source": "Trudy Bates, GWO 29(4), 2022 [notice Crossref 2021], DOI 10.1111/gwao.12795 (résumé verbatim, RePEc) ; Dana M. Britton, Gender & Society 14(3), 2000, DOI 10.1177/089124300014003004 (résumé consulté, texte intégral non ouvert)."
+      },
+      {
+        "claim": "Acker et Kanter disent la même chose : les organisations sont masculines, les femmes y sont minoritaires et cela produit des effets.",
+        "why_wrong": "Les deux mécanismes sont distincts — la proportion numérique dans le groupe chez Kanter, la définition même du poste et la logique organisationnelle chez Acker — mais la confusion n'est pas seulement pédagogique : elle est écrite dans la littérature savante. Kennedy, Bishu et Heckler affirment que « Kanter's (1975) understanding of gender was folded into institutional theory by Joan Acker » (Administration & Society, 2019, p. 5, texte intégral consulté), sans citer de page d'Acker ni montrer où la reprise s'opère, et enchaînent aussitôt sur les sous-structures d'Acker 2012. Une fiche qui suivrait ce texte fabriquerait une filiation que rien, dans les sources consultées, n'établit. Je NE dis PAS qu'Acker ignore Kanter — je dis que la reprise n'est pas documentée dans ce que j'ai pu lire, et que `get_references` sur le DOI d'Acker est resté muet.",
+        "source": "Kennedy, Bishu et Heckler, Administration & Society, 2019, DOI 10.1177/0095399719888470, p. 5 (texte intégral consulté) — cité ici comme SYMPTÔME de la confusion, non comme autorité."
+      },
+      {
+        "claim": "Acker analyse le genre au travail ; la classe et la race sont un ajout ultérieur, extérieur à sa théorie.",
+        "why_wrong": "La littérature situe Acker dans le féminisme socialiste, où classe et genre sont pensés ensemble dès le départ : Holvino la range parmi les auteures pour qui classe, race, genre et sexualité sont des « interlocking roots of inequality » ou des « interrelated processes of women's oppression (Acker, 1999b, 2006) », et note qu'Acker « argues for a reconceptualization of class as gendered and racialized processes » (GWO 17-3, 2010, texte intégral consulté). Le titre complet d'Acker 2006 — « Inequality Regimes: Gender, Class, and Race in Organizations » — le confirme par le paratexte. Ce qui est postérieur, c'est la formalisation sous le nom de régimes d'inégalité, pas l'attention à la classe.",
+        "source": "Evangelina Holvino, GWO 17(3), 2010, DOI 10.1111/j.1468-0432.2008.00400.x (texte intégral consulté) ; Joan Acker, Gender & Society 20(4), 2006, DOI 10.1177/0891243206289499 (métadonnées)."
+      }
+    ],
+    "reception": {
+      "consensus": "TRÈS LARGE, ET IL PORTE SUR TROIS POINTS. (1) L'ATTRIBUTION : le concept est de Joan Acker, autrice unique, article de 1990 — aucune source consultée ne le conteste, trois éditeurs différents (Routledge 2025, Edward Elgar 2025, SAGE 2008) inscrivent son nom ou le concept en titre de notice, et Gender, Work & Organization lui a consacré un fascicule mémorial entier en 2019 (Knights, Hearn, Sayce, Benschop et van den Brink). (2) LA THÈSE : l'inégalité de genre est logée dans la STRUCTURE du travail — la définition du poste, la fiche de poste, l'échelle de salaire, l'évaluation — et non dans les personnes ; « gender inequality is tenacious because it is built into the structure of work organizations » (Williams, Muller et Kilanski 2012, texte intégral consulté). (3) LA DIFFUSION : le concept a passé les frontières disciplinaires (administration publique, gestion, communication organisationnelle, sociologie de la prison) et linguistiques — « organisation genrée » est un terme français attesté et stabilisé depuis la fin des années 2000. Ce qui fait consensus, autrement dit, c'est la thèse ; pas la liste des mécanismes ni la manière de s'en servir.",
+      "debates": [
+        "LA PÉREMPTION DES MÉCANISMES DANS LA « NOUVELLE ÉCONOMIE ». Williams, Muller et Kilanski (Gender & Society 26-4, 2012, texte intégral consulté) soutiennent que les trois vecteurs identifiés en 1990 — échelons de carrière, fiches de poste standardisées, évaluations contrôlées par la hiérarchie — ont été remplacés par le travail en équipe, les « career maps » et le réseautage, et que ce sont désormais ceux-là qui reproduisent l'inégalité : « Organizations are still gendered, but the mechanisms for reproducing gender disparities are different than those in the traditional career path. » Le désaccord est d'inventaire, non de principe.",
+        "L'USAGE DE LA THÉORIE : PRÉMISSE OU HYPOTHÈSE ? Bates (GWO 29-4, 2022, résumé verbatim) reproche à la communauté d'employer la théorie « to legitimize the idea that organizations are gendered, not to test whether they are », d'en mobiliser rarement les cinq dimensions et de n'en questionner presque jamais les prédictions — d'où une « stagnation » et un aveuglement aux données discordantes. Britton posait déjà le même problème en 2000 en jugeant la perspective « théoriquement et empiriquement sous-développée » (résumé consulté).",
+        "L'ARTICULATION AVEC L'INTERSECTIONNALITÉ. Acker elle-même intitule son bilan de 2012 « problems and possibilities » ; Holvino (GWO 17-3, 2010, texte intégral consulté) juge « elusive » la construction d'un cadre de recherche organisationnelle à partir de processus simultanés de race, classe et genre, y compris chez les féministes socialistes. Le débat n'oppose pas Acker à ses critiques : il traverse son œuvre.",
+        "QUEL TEXTE FAIT AUTORITÉ ? Une partie de la littérature récente expose la théorie à partir d'Acker 2006 (régimes d'inégalité) ou 2012 (sous-structures), sans citer 1990 — vérifié bibliographie en main chez Holvino 2010 et Kennedy, Bishu et Heckler 2019. La couche francophone consultée, elle, cite exclusivement 1990. Il n'y a pas de règle établie."
+      ],
+      "critiques": [
+        {
+          "by": "Dana M. Britton (Kansas State University, puis Rutgers)",
+          "claim": "La perspective des organisations genrées reste théoriquement et empiriquement sous-développée : on ne sait pas ce que l'on dit quand on dit d'une organisation, d'une politique, d'une pratique ou d'un poste qu'il est « genré ». Britton distingue trois manières dont la perspective est appliquée dans la littérature et soutient que chacune fait obstacle à un changement organisationnel et social effectif.",
+          "source": "« The Epistemology of the Gendered Organization », Gender & Society, 14(3), 2000, p. 418-434, DOI 10.1177/089124300014003004 — RÉSUMÉ CONSULTÉ, texte intégral non ouvert (SAGE HTTP 403). Le détail des trois acceptions n'est pas établi ici."
+        },
+        {
+          "by": "Trudy Bates (Newcastle / Edith Cowan University)",
+          "claim": "La théorie est employée pour légitimer l'idée que les organisations sont genrées plutôt que pour l'éprouver ; rares sont ceux qui en mobilisent le cadre à cinq dimensions dans son intégralité ou tel qu'il était initialement conçu, plus rares encore ceux qui le questionnent — d'où une stagnation et une cécité aux données non conformes.",
+          "source": "« Rethinking how we work with Acker's theory of gendered organizations: An abductive approach for feminist empirical research », Gender, Work & Organization, 29(4), 2022 [Crossref : 2021], p. 1041-1064, DOI 10.1111/gwao.12795 — RÉSUMÉ VERBATIM consulté via RePEc."
+        },
+        {
+          "by": "Christine L. Williams, Chandra Muller et Kristine Kilanski (University of Texas at Austin)",
+          "claim": "La théorie décrit les organisations bureaucratiques traditionnelles — loyauté récompensée, descriptions de postes standardisées, échelons de carrière, évaluation managériale — caractéristiques qui ne valent plus pour le travail de la « nouvelle économie ». La thèse tient, l'inventaire des mécanismes doit être refait : équipes, career maps et réseautage sont devenus les vecteurs principaux de l'inégalité.",
+          "source": "« Gendered Organizations in the New Economy », Gender & Society, 26(4), 2012, p. 549-573, DOI 10.1177/0891243212445466 — TEXTE INTÉGRAL consulté (PMC4236831)."
+        },
+        {
+          "by": "Evangelina Holvino (Simmons School of Management, Center for Gender in Organizations)",
+          "claim": "Les études féministes d'organisation, Acker comprise, peinent à construire un cadre de recherche qui traite race, classe et genre comme des processus simultanés ; le plaidoyer existe, l'opérationnalisation reste insaisissable.",
+          "source": "« Intersections: The Simultaneity of Race, Gender and Class in Organization Studies », Gender, Work & Organization, 17(3), 2010, p. 248-277, DOI 10.1111/j.1468-0432.2008.00400.x — TEXTE INTÉGRAL consulté."
+        },
+        {
+          "by": "Caroline Caron (Université Laval)",
+          "claim": "Critique portant sur la réception, non sur le concept : l'appropriation francophone du concept de genre en communication organisationnelle est « inachevée » ; la revue Communication et Organisation n'a publié « ni numéro thématique ni article sur le sujet », la documentation mobilisable vient « en majeure partie de la production scientifique anglo-saxonne » et aucun véritable dialogue ne s'est instauré entre les chercheurs francophones qui appliquent l'approche.",
+          "source": "« De l'appropriation inachevée du concept de genre (gender) en communication organisationnelle », Communication & Organisation, n° 25, 2004, DOI 10.4000/communicationorganisation.2961 — TEXTE INTÉGRAL en ligne consulté. Constat daté de 2004 et limité à une discipline : les sources francophones postérieures relevées ici le nuancent."
+        }
+      ]
+    }
+  },
+  "non_etabli": [
+    "LE TEXTE INTÉGRAL DE BRITTON 2000, la critique interne de référence, n'a pas pu être ouvert : SAGE renvoie HTTP 403, scholar.archive.org n'a rien rendu d'exploitable, aucun dépôt universitaire n'a été localisé. Les TROIS acceptions de « genré » qu'elle distingue sont donc annoncées par son résumé mais NON établies dans leur détail. Tout ce qui circule à leur sujet (composition sexuée des emplois, bureaucratie intrinsèquement masculine, cultures organisationnelles) provient de résumés de seconde main ou de sites de niveau D et n'a pas été retenu.",
+    "LES BASES DE CITATIONS SONT RESTÉES MUETTES SUR TOUT LE DOSSIER. `get_citations` renvoie 400 Bad Request sur le DOI d'Acker 1990 comme sur celui de Williams et al. 2012 ; `get_references` renvoie `count: 0` SANS message d'erreur sur le DOI d'Acker 1990 comme sur celui de Britton 2000 — silence d'outil, exactement le comportement signalé par la lettre de mission, et non absence de références. Conséquence directe : je n'ai PAS pu vérifier si Acker 1990 cite Kanter, Hearn et Parkin, ou Connell, ni mesurer la part des citations qui déforment le concept. scite n'était pas disponible.",
+    "CAIRN RESTE LE TROU DU DOSSIER FRANCOPHONE. Le dossier « Genre et organisations » de Travail, genre et sociétés (n° 17, 2007, Angeloff et Laufer en introduction, Guillaume et Pochic p. 79-103) est l'endroit le plus probable d'une discussion française substantielle d'Acker : ses notices sont résolues, son contenu est inaccessible (HTTP 403 sur cairn.info et shs.cairn.info). Le dépôt HAL de Guillaume et Pochic contient un fichier, mais HAL oppose au téléchargement automatisé une page anti-robot (Anubis) — le même blocage a empêché de lire Rostaing 2017 et Coron 2022 au-delà de leur résumé.",
+    "LE CONTENU DE L'HOMMAGE DE BENSCHOP ET VAN DEN BRINK (« The godmother of gendered organizations ») n'est pas connu : Wiley inaccessible, dépôt de Radboud en HTTP 403. Le titre atteste l'attribution ; il ne dit rien de ce que les autrices retiennent, critiquent ou nuancent.",
+    "AUCUNE TRADUCTION FRANÇAISE DE L'ARTICLE DE 1990 N'A ÉTÉ LOCALISÉE, mais je ne peux pas affirmer qu'il n'en existe pas : les recherches ont porté sur HAL, OpenEdition, Érudit et le web, non sur les catalogues de bibliothèques ni sur les recueils de textes traduits.",
+    "LE NOMBRE DE PROCESSUS (quatre ou cinq) et l'identité exacte du cinquième dépendent du texte d'Acker cité ; la vérification sur le texte primaire de 1990 relève du lecteur primaire et n'a pas été faite ici, conformément au partage des rôles.",
+    "LA COMPARAISON AVEC KANTER n'a pas pu être instruite : l'ouvrage de 1977 n'a pas été ouvert et la seule source consultée qui relie les deux autrices le fait par une affirmation non appuyée."
+  ],
+  "provenance_fragment": {
+    "agent": "corpus-reception-analyst",
+    "at": "2026-08-16",
+    "action": "Instruction de la réception : attribution, interprétation, discussion. Couches internationale (Crossref, PMC, dépôts universitaires HKS et CSUDH, RePEc, Emerald, portail Rutgers) et francophone (API HAL en recherche plein texte, OpenEdition, Érudit) menées en parallèle et non l'une après l'autre. Bases de citations indisponibles (Semantic Scholar 400 sur `get_citations`, silence à 0 sur `get_references` ; OpenAlex 429 sur tous les appels ; scite absent). Aucun élément de `evidence.primary-reading.json` lu ni modifié ; rien écrit hors de `corpus/evidence/organisation-genree/`.",
+    "sources_ouvertes_integralement": [
+      "Williams, Muller & Kilanski, « Gendered Organizations in the New Economy », Gender & Society 26(4), 2012 — version PMC en libre accès (PMC4236831)",
+      "Kennedy, Bishu & Heckler, « Feminism, Masculinity, and Active Representation », Administration & Society, 2019 — PDF déposé par la Harvard Kennedy School, 30 p.",
+      "Holvino, « Intersections: The Simultaneity of Race, Gender and Class in Organization Studies », GWO 17(3), 2010 — PDF déposé par CSU Dominguez Hills, 30 p."
+    ],
+    "sources_ouvertes_partiellement": [
+      "Caron, Communication & Organisation n° 25, 2004 (OpenEdition) — passages et notes relevés par interrogation ciblée",
+      "Damian-Gaillard, Frisque & Saitta, Questions de communication n° 15, 2009 (OpenEdition) — passage théorique et bibliographie",
+      "Lambert & Remillon, Travail et Emploi n° 154, 2018 (OpenEdition) — cadrage théorique et bibliographie",
+      "Damian-Gaillard & Saitta, Recherches féministes 33(1), 2020 (Érudit) — passages et bibliographie",
+      "Avanza, Fillieule & Masclet, SociologieS, 2015 (OpenEdition) — passage de situation théorique",
+      "Malochet, compte rendu de Britton, Sociologie du travail, 2004 (OpenEdition) — texte parcouru, absence d'Acker vérifiée",
+      "Britton, Gender & Society 14(3), 2000 — résumé seul (portail de recherche de Rutgers)",
+      "Bates, GWO 29(4), 2022 — résumé verbatim (RePEc/IDEAS)",
+      "Sayce et Knights, GWO 26(12), 2019 — résumés seuls (RePEc/IDEAS)",
+      "Acker, EDI 31(3), 2012 — résumé seul (Emerald)",
+      "Rostaing 2017 et Coron 2022 — résumés d'auteur seuls (API HAL)"
+    ],
+    "bases_ayant_repondu": [
+      "Crossref (via search_literature et verify_reference) : répondu à tous les appels",
+      "HAL — API publique interrogée directement en recherche plein texte (text_fulltext) : répondu, plusieurs requêtes, résultats décisifs pour la couche francophone",
+      "HAL — connecteur MCP search_francophone : répondu",
+      "OpenEdition (Communication & Organisation, Questions de communication, Travail et Emploi, SociologieS, Sociologie du travail) : répondu",
+      "Érudit : répondu",
+      "PubMed Central : répondu",
+      "RePEc/IDEAS : répondu",
+      "Emerald (résumé), portail Rutgers (résumé) : répondu"
+    ],
+    "bases_restees_muettes": [
+      "OpenAlex : 429 Too Many Requests sur la totalité des appels, y compris via verify_reference",
+      "Semantic Scholar : 429 sur la recherche, 400 Bad Request sur `get_citations` (Acker 1990, Williams et al. 2012) ; `get_references` rend `count: 0` sans erreur sur Acker 1990 et Britton 2000 — silence d'outil, à ne pas lire comme une absence de références",
+      "scite : non disponible",
+      "Cairn / shs.cairn.info : HTTP 403 (Travail, genre et sociétés n° 17, 2007 ; Revue de Gestion des Ressources Humaines n° 125)",
+      "SAGE Journals : HTTP 403 (Britton 2000, Acker 1990)",
+      "Wiley Online Library : inaccessible (Benschop & van den Brink 2018, Bates 2022, Holvino 2010 — cette dernière récupérée par un dépôt universitaire)",
+      "Elgar Online, Emerald (texte intégral), academia.edu, ResearchGate, dépôt de Radboud, scholar.archive.org : HTTP 403 ou sans réponse exploitable",
+      "HAL — téléchargement des fichiers déposés : page anti-robot (Anubis) sur hal.science et shs.hal.science, alors même que l'API répondait normalement. La bibliothèque n'est pas vide, la porte est fermée."
+    ]
+  }
+}

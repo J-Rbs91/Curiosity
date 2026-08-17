@@ -1,0 +1,403 @@
+{
+  "_note": "Fragment produit par l'instruction de la RÉCEPTION (corpus-reception-analyst). Complète, et ne remplace jamais, `evidence.primary-reading.json` déposé en parallèle : rien de ce que le lecteur primaire établit n'a été lu, modifié ni contredit ici. Objet de ce fichier : ce que la communauté savante fait du concept — attribution, interprétation, discussion — et non le concept lui-même. Chaque affirmation porte sa référence ; ce qui n'a pas pu être vérifié est consigné dans `non_etabli` plutôt que comblé.",
+
+  "id": "couplage-lache",
+  "canonical_name_fr": "Couplage lâche",
+  "canonical_name_en": "Loose coupling / Loosely coupled systems",
+
+  "attribution": {
+    "_note": "Corrobore le bloc `attribution_input` du lecteur primaire par la voie de la réception ; ne s'y substitue pas.",
+
+    "authors": [
+      { "name": "Karl E. Weick", "app_author_id": null }
+    ],
+    "authorship": "SOLE_AUTHOR",
+    "associated_author": "Karl E. Weick",
+
+    "verdict": "SOLE_AUTHOR pour le TEXTE de référence : l'article de 1976 est signé du seul Weick, ce que confirme la notice Crossref du DOI 10.2307/2391875 (auteur unique, ASQ 21(1), 1976). Aucune source consultée ne conteste cette signature. MAIS la question « le terme est-il de lui ? » et la question « le texte est-il de lui ? » se répondent différemment, et le second point est le plus important de ce dossier : le terme préexiste à l'article, l'auteur le dit lui-même, et une partie de la littérature l'ignore (voir `term_origin` et `known_ambiguities`). Un argument documenté existe donc pour ASSOCIATED_WITH au niveau du TERME ; il n'en existe aucun au niveau du texte de 1976. Précision supplémentaire, décisive pour toute fiche : la formulation savante aujourd'hui dominante du concept — le couple distinctiveness / responsiveness et la lecture dite dialectique — n'est pas celle de 1976 mais celle d'Orton & Weick 1990, qui est COÉCRITE (J. Douglas Orton et Karl E. Weick, DOI 10.2307/258154). Attribuer à « Weick 1976 » ce qui vient de « Orton & Weick 1990 » est l'erreur d'attribution la plus facile à commettre sur ce concept.",
+
+    "term_origin": {
+      "coined_by": "PAS par Weick. L'expression circule avant 1976 et l'auteur en crédite explicitement d'autres.",
+      "coined_in": "Robert B. Glassman, « Persistence and loose coupling in living systems », Behavioral Science, 18(2), 1973 (DOI 10.1002/bs.3830180202, notice Crossref résolue : auteur, titre, revue, année concordants ; 254 citations relevées) ; ainsi que March & Olsen 1975. Antécédent conceptuel sans le terme : Bidwell 1965, « looseness of articulation among the subunits ».",
+      "note": "TROIS ATTESTATIONS CONVERGENTES, dont deux de première main. (1) La revue de littérature de Hautala, Helander & Korhonen restitue ce que dit l'article lui-même : « Before Weick, in 1965 Bidwell had suggested that school systems tend to exhibit a ‘looseness of articulation among the subunits’, and ‘loose coupling’ as a phrase had appeared in the literature in 1973 by Glassman, and in 1975 by March and Olsen (Weick, 1976, p. 3) » (post-print, p. 1, texte intégral consulté). C'est donc Weick lui-même, dès la troisième page de son article, qui refuse la paternité du terme. (2) Weick le confirme treize ans plus tard, en son nom propre, dans son commentaire de « Citation Classic » : le groupe réuni à La Jolla le 2 février 1975 s'y retrouve « to explore the phrase ‘loosely coupled system’ as a possible description of organizations they knew » — la phrase est donc l'objet donné de l'atelier, pas son produit. (3) Le rendu français reprend la même prudence : Lessard et al. écrivent que Weick « a rendu célèbre le concept », non qu'il l'a forgé.",
+      "source": "Hautala, Helander & Korhonen 2018, DOI 10.1108/JEA-03-2017-0027, post-print TamPub p. 1 (texte intégral consulté) ; Weick, « Loose Coupling: Beyond the Metaphor », Current Contents / This Week's Citation Classic, CC n° 12, 20 mars 1989, p. 14 (texte intégral consulté) ; Lessard, Desjardins, Schwimmer & Anne 2008, DOI 10.3917/cdle.025.0155, éd. Classiques des sciences sociales p. 37-38 (texte intégral consulté)."
+    },
+
+    "genese_collective_revendiquee_par_l_auteur": {
+      "etabli": "Weick attribue lui-même l'origine de l'article à un dispositif collectif et nomme quatre instances : « Thus, the true originators of this piece are March, who advised NIE to conduct a conference on the concept of loose coupling; Fritz Mulhauser of NIE, who asked me to chair that conference; the 10 people present, who worked hard to figure out what the idea meant; and Tom [Lodahl], who thought that other organizational scholars should come to grips with our version of the object of their studies. » Le texte publié est la mise au net d'un rapport de commande : « As chairman of the workshop, it was my job to distill what we talked about into a report that could be used internally by NIE to decide what research funding, if any, they should initiate. » L'auteur date par ailleurs le point de départ de son propre article de 1974 sur les théories de moyenne portée, qui reprochait aux théoriciens des systèmes « their tendency to treat interdependence as a constant rather than a variable ».",
+      "source": "Weick, « Loose Coupling: Beyond the Metaphor », This Week's Citation Classic, CC n° 12, 20 mars 1989, p. 14 (PDF en libre accès, garfield.library.upenn.edu/classics1989/A1989T566900001.pdf, texte intégral consulté).",
+      "portee": "Ce propos ne fragilise pas l'attribution du TEXTE de 1976 à Weick : il est signé de lui seul, il l'assume, et la remarque est rétrospective et amicale. Il interdit en revanche d'écrire que Weick aurait inventé l'idée d'un couplage variable entre éléments d'organisation. C'est un aveu de paternité partagée du même ordre que celui des trois auteurs du garbage can en 2012, et il doit être traité comme tel : il documente une genèse, il ne défait pas une signature."
+    },
+
+    "la_forme_savante_actuelle_est_coecrite": {
+      "constat": "La définition que la littérature contemporaine cite comme « la » définition du couplage lâche — deux éléments à la fois distincts (distinctiveness) et réactifs l'un à l'autre (responsiveness), le concept n'ayant de valeur explicative qu'à tenir les deux ensemble — est celle d'Orton & Weick 1990, pas celle de Weick 1976.",
+      "attestation": "La revue systématique de 76 articles sur 36 ans (1983-2019) d'Arango-Vasquez & Gentilin range les cinq concepts centraux du champ sous cette bannière : « the main concepts studied around this perspective have been loose coupling, tight coupling, decoupling, degree of coupling, and coupling mechanisms, which are analyzed considering the dialectical relationship between distinctiveness and responsiveness » (résumé d'auteur) ; et, dans le corps : « Following Orton and Weick (1990), coupling analysis is the result of many years of effort by organization scholars to combine contradictory concepts that coexist in organizations. » Hautala et al. renvoient de même à Orton & Weick 1990 pour le continuum et pour la formule « open and closed, indeterminate and rational, spontaneous and deliberate » (p. 204-205).",
+      "source": "Arango-Vasquez & Gentilin, « Organizational Couplings: A Literature Review », Innovar, 31(79), 2021, DOI 10.15446/innovar.v31n79.91898 (texte intégral en libre accès, SciELO Colombia, consulté) ; Hautala, Helander & Korhonen 2018, DOI 10.1108/JEA-03-2017-0027, post-print p. 10 et p. 12 (texte intégral consulté).",
+      "consequence": "Toute fiche qui enseigne distinctiveness/responsiveness doit citer Orton & Weick 1990 (COAUTHORED) et non le seul Weick 1976."
+    }
+  },
+
+  "evidence": {
+    "secondary_sources": [
+      {
+        "citation": "Karl E. Weick, « Loose Coupling: Beyond the Metaphor », This Week's Citation Classic, Current Contents, n° 12, 20 mars 1989, p. 14",
+        "year": 1989,
+        "language": "en",
+        "doi_isbn": null,
+        "url": "http://garfield.library.upenn.edu/classics1989/A1989T566900001.pdf",
+        "role": "attribution",
+        "level": "B",
+        "establishes": "Pièce maîtresse du dossier d'attribution ET du dossier de réception, parce que c'est l'auteur qui parle de son propre texte treize ans après. Établit : (1) la genèse institutionnelle et collective (atelier NIE de La Jolla, 2 février 1975, convoqué sur les instances de March, présidé par Weick à la demande de Fritz Mulhauser, dix participants ; publication dans ASQ à l'initiative de Tom Lodahl, alors éditeur, dont le bureau faisait face à celui de Weick à Cornell) ; (2) que le terme préexiste à l'atelier, réuni « to explore the phrase ‘loosely coupled system’ » ; (3) le constat de réception que l'auteur porte lui-même sur son texte : « This paper has had a strange pattern of use and citation since it was first published. It appeared in the organizational literature at roughly the same time as the ideas of population ecology, transaction costs, and resource dependence, yet it has generated more discussion and less research than any of those other three ideas » ; (4) le diagnostic sur la partition dominante du concept : l'opposition autonomie/interdépendance « lies at the heart of organizational theory, but its two halves are usually kept separate, either spatially (some organizations are mechanistic [coupled] while others are organic [loose]) or temporally (organizations are loose in the beginning and become coupled as they grow larger and older). Seldom considered was the possibility that organizations were both loose and tight all the time. People apparently liked to consider this possibility but weren't sure what to do with it empirically » ; (5) le bilan de la revue menée avec Orton, où l'auteur date le décrochage de la lecture déficitaire : la littérature a « moved away from equating looseness with ineffectiveness » (renvoi n° 4 : Perrow, Normal Accidents, 1984), s'est mise à « articulate cohesion mechanisms that hold loosely coupled systems together » (renvoi n° 3 : Gamoran & Dreeben, ASQ 31, 1986) et « moved toward the idea that organizations are simultaneously loose and tight because they are coupled and decoupled on multiple dimensions » (renvoi n° 5 : Firestone, 1985) ; (6) une autocritique : « The image of loose coupling, however, needs to be reorganized around a central driving hypothesis if it is to attract research efforts similar to those that were marshaled around the other three organizational ideas that appeared around the same time. » CONSULTATION : texte intégral (PDF en libre accès de l'Institute for Scientific Information ; page lue en image, l'océrisation brute étant partielle)."
+      },
+      {
+        "citation": "J. Douglas Orton et Karl E. Weick, « Loosely Coupled Systems: A Reconceptualization », The Academy of Management Review, 15(2), 1990, p. 203-223",
+        "year": 1990,
+        "language": "en",
+        "doi_isbn": "10.2307/258154",
+        "url": "https://doi.org/10.2307/258154",
+        "role": "interpretation",
+        "level": "B",
+        "establishes": "LE texte de réception du concept, et celui qui nomme l'écart d'usage de l'intérieur. Résumé d'auteur, intégralement : « Diverse applications of the concept of loose coupling are embodied in five recurring voices that focus separately on causation, typology, effects, compensations, and outcomes. Each has a tendency to drift away from a dialectical interpretation of loose coupling toward a unidimensional interpretation of loose coupling, thereby weakening the explanatory value of the concept. The authors first use the five voices to review the loose coupling literature and then to suggest more precise and more productive uses of the concept. » Trois choses en découlent : (1) le diagnostic de dérive est porté par l'auteur d'origine lui-même, quatorze ans après, sur la littérature qui le cite ; (2) la dérive est nommée : de dialectique vers unidimensionnel, c'est-à-dire vers la lecture qui ne retient qu'une moitié du couple (le lâche sans le couplage, ou l'inverse) ; (3) la conséquence est un affaiblissement de la valeur explicative, pas seulement une imprécision de vocabulaire. Le texte est aussi la source de la formule reprise partout : les systèmes sont simultanément « open and closed, indeterminate and rational, spontaneous and deliberate » (p. 204-205, telle que citée par Hautala et al. 2018, p. 12), et de la liste des effets favorables du couplage lâche — « persistence, buffering, adaptability, satisfaction, effectiveness » (telle que reprise par Hautala et al. 2018, Table 2). 1 596 citations relevées sur Crossref (août 2026). CONSULTATION : résumé d'auteur vérifié sur deux sources indépendantes concordantes au mot près (page éditeur Academy of Management via résultat de recherche, et notice BibBase) ; pagination et volume confirmés par Crossref. TEXTE INTÉGRAL NON CONSULTÉ : journals.aom.org renvoie HTTP 403. La liste détaillée des cinq voix et le contenu de la reconceptualisation ne sont donc connus ici que par le résumé et par ce qu'en rapportent les sources de niveau B ci-dessous."
+      },
+      {
+        "citation": "Tanja Hautala, Jaakko Helander et Vesa Korhonen, « Loose and tight coupling in educational organizations – an integrative literature review », Journal of Educational Administration, 56(2), 2018, p. 236-258",
+        "year": 2018,
+        "language": "en",
+        "doi_isbn": "10.1108/JEA-03-2017-0027",
+        "url": "https://tampub.uta.fi/",
+        "role": "synthesis",
+        "level": "C",
+        "establishes": "Revue de littérature intégrative sur quatre décennies (32 articles de revues à comité de lecture, codage Atlas.ti d'environ 1 250 citations). Établit : (1) les antécédents du terme, sur la foi de la page 3 de l'article de 1976 lui-même (Bidwell 1965, Glassman 1973, March & Olsen 1975 — voir `term_origin`) ; (2) que la contradiction sur le statut du couplage lâche est structurante et ancienne : « The contradictory nature of coupling concepts is prominent. Some researchers have regarded loose coupling as a natural characteristic which should be taken advance of (e.g. Goldspink, 2007), while other researchers (e.g. de Lima, 2007; Morley and Rassool, 2000) have regarded loose coupling as a problem to be solved (see also Shen et al., 2016; Weick, 1976) » — la nuance à ne pas perdre étant que les auteurs rangent Weick 1976 des DEUX côtés ; (3) le reproche récurrent d'ambiguïté : « Coupling terms have, however, been criticized for their ambiguity (e.g. Firestone, 1985; Meyer, 2002b; Tyler, 1987; Willower, 1981; Yair, 1997) and varying definitions (Pang, 2003) », avec la formule de Firestone : un obstacle à l'opérationnalisation « is the lack of agreement among those who write about it » (Firestone, 1985, p. 7) ; (4) que la lecture dichotomique est identifiée comme une simplification : « If coupling metaphor is interpreted in a simplistic, dichotomous terms, system elements are seen as either coupled or not, and the whole system is seen as loosely or tightly coupled (Rowan, 2002) » ; (5) l'existence, dans la littérature elle-même, de la lecture « lâche = médiocre » : « In 1985, Murphy, Hallinger and Mesa described loosely coupled schools as average in nature – as compared to tightly coupled, effective schools », avec la citation « effective schools have much tighter connections among different organizational levels » (Murphy et al., 1985, p. 7) ; (6) le contre-programme du simultaneous coupling (Peters & Waterman 1982, Sergiovanni 1984, Pang 2000/2003) et la conclusion de la revue : « it is not relevant to consider educational organizations as either loosely or tightly coupled […] but as having simultaneous loose and tight configurations » ; (7) la conclusion normative de la revue, qui vaut comme datum de réception et non comme thèse de Weick : « loose coupling is, mainly, beneficial feature from the teachers' perspective; and tight coupling is, mainly, beneficial feature from the perspective of leadership ». CONSULTATION : texte intégral (post-print déposé au dépôt institutionnel de l'université de Tampere, avec autorisation d'Emerald mentionnée en pied de page ; 26 pages lues, y compris les tableaux et la bibliographie)."
+      },
+      {
+        "citation": "Leonel Arango-Vasquez et Mariano Gentilin, « Organizational Couplings: A Literature Review », Innovar, 31(79), 2021, p. 161-…",
+        "year": 2021,
+        "language": "en",
+        "doi_isbn": "10.15446/innovar.v31n79.91898",
+        "url": "http://www.scielo.org.co/scielo.php?script=sci_arttext&pid=S0121-50512021000100161",
+        "role": "synthesis",
+        "level": "C",
+        "establishes": "Revue systématique de 76 articles publiés entre 1983 et 2019, seconde synthèse indépendante du champ et la plus récente consultée. Établit : (1) que les cinq concepts organisateurs du champ sont « loose coupling, tight coupling, decoupling, degree of coupling, and coupling mechanisms », lus « considering the dialectical relationship between distinctiveness and responsiveness » — c'est-à-dire dans le cadre d'Orton & Weick 1990 ; (2) que les deux cadres théoriques auxquels la perspective est le plus souvent adossée sont « the sociological new institutionalism and the theory of normal accidents » — constat d'usage conjoint, à ne pas convertir en filiation (voir `known_ambiguities`) ; (3) LE POINT LE PLUS UTILE DU DOSSIER : que dans la recherche néo-institutionnelle, couplage lâche et découplage sont explicitement traités comme synonymes — « It is important to consider that these definitions of decoupling derive from the work of Meyer and Rowan (1977), which opened a fruitful line of investigation of LCS understood from the neo-institutional perspective. According to the proposal of these authors and subsequent developments, the concepts of loose coupling and decoupling are used interchangeably; in other words, they are synonyms, as Bromley and Powell (2012) point out: ‘as is often the case in neo-institutional research, we treat the terms loose coupling and decoupling interchangeably’ (p. 38) » ; (4) une lecture non fonctionnaliste du concept : la perspective « has no interest in pointing out possible weaknesses of the organization but in identifying and understanding the couplings that occur in it » ; (5) et, à verser au dossier des divergences d'attribution, l'affirmation que « The perspective of LCS was coined by Weick (1976) » — que la source la plus proche de l'auteur (Weick 1989) et l'article de 1976 lui-même démentent. CONSULTATION : texte intégral en libre accès (SciELO Colombia, HTML récupéré et lu ; version espagnole/portugaise/française du titre présente dans la notice, corps de l'article en anglais)."
+      },
+      {
+        "citation": "Patricia Bromley et Walter W. Powell, « From Smoke and Mirrors to Walking the Talk: Decoupling in the Contemporary World », Academy of Management Annals, 6(1), 2012, p. 483-530",
+        "year": 2012,
+        "language": "en",
+        "doi_isbn": "10.5465/19416520.2012.684462",
+        "url": "https://doi.org/10.5465/19416520.2012.684462",
+        "role": "reception",
+        "level": "B",
+        "establishes": "Source de l'aveu de synonymie repris par Arango-Vasquez & Gentilin : « as is often the case in neo-institutional research, we treat the terms loose coupling and decoupling interchangeably ». C'est la déclaration d'usage d'un des principaux bilans du néo-institutionnalisme (2 028 citations relevées sur Crossref, août 2026), et donc la meilleure preuve disponible que la distinction entre le couplage lâche de Weick et le découplage de Meyer & Rowan n'est PAS tenue par toute la littérature. CONSULTATION : notice Crossref seule (auteurs, titre, revue, volume, DOI vérifiés) ; texte intégral non consulté. RÉSERVE SUR LE LOCATOR : Arango-Vasquez & Gentilin situent la phrase « p. 38 », ce qui ne correspond pas à la pagination 483-530 de l'Academy of Management Annals — le locator renvoie vraisemblablement à une version de travail. La citation est donc rapportée de seconde main, avec un renvoi de page non vérifiable en l'état."
+      },
+      {
+        "citation": "Robert B. Glassman, « Persistence and loose coupling in living systems », Behavioral Science, 18(2), 1973, p. 83-98",
+        "year": 1973,
+        "language": "en",
+        "doi_isbn": "10.1002/bs.3830180202",
+        "url": "https://doi.org/10.1002/bs.3830180202",
+        "role": "attribution",
+        "level": "B",
+        "establishes": "L'antécédent que Weick cite lui-même comme source du terme dans l'article de 1976 (p. 3). Notice Crossref résolue et confrontée aux éléments attendus : auteur, titre, revue et année concordants (254 citations relevées). Le concept y est posé dans un cadre de systèmes vivants, non d'organisations : c'est le déplacement de domaine, et non l'invention du terme, qui fait l'apport de 1976. CONSULTATION : notice seule ; contenu NON consulté. ATTENTION : une première tentative de vérification sur le DOI 10.1002/bs.3830180207, voisin d'un chiffre, a renvoyé une notice sans rapport (compte rendu de Guillermo Owen sur Nigel Howard) — le DOI correct est bien 10.1002/bs.3830180202."
+      },
+      {
+        "citation": "William A. Firestone, « The study of loose coupling: problems, progress, and prospects », in A. Kerckhoff (dir.), Research in Sociology of Education and Socialization, vol. 5, JAI Press, 1985, p. 3-30",
+        "year": 1985,
+        "language": "en",
+        "doi_isbn": null,
+        "url": null,
+        "role": "critique",
+        "level": "B",
+        "establishes": "Première mise en cause systématique de l'opérationnalisation du concept, et référence à laquelle renvoient tous les bilans ultérieurs sur ce point. La formule reprise : un obstacle à l'opérationnalisation « is the lack of agreement among those who write about it » (p. 7). Firestone est aussi la source de l'extension de la liste des éléments couplés (il ajoute le temps et l'activité à la liste de Weick) et d'une liste de dimensions de couplage. Weick lui-même s'y adosse en 1989 pour dire que la littérature a évolué vers l'idée d'organisations simultanément lâches et serrées. CONSULTATION : aucune. Référence connue par trois sources concordantes sur l'année, le titre et la pagination : Weick 1989 (renvoi n° 5), Hautala et al. 2018 (bibliographie et citation de la p. 7) et Lessard et al. 2008. Chapitre d'ouvrage sans DOI repéré."
+      },
+      {
+        "citation": "Brian Rowan, « Rationality and reality in organizational management: Using the coupling metaphor to understand educational (and other) organizations - a concluding comment », Journal of Educational Administration, 40(6), 2002, p. 604-611",
+        "year": 2002,
+        "language": "en",
+        "doi_isbn": null,
+        "url": null,
+        "role": "critique",
+        "level": "B",
+        "establishes": "Conclusion du numéro spécial de 2002 du Journal of Educational Administration consacré au bilan du concept, et formulation la plus nette du verdict « utile mais à refaire » : « ideas about loose coupling can serve a useful purpose in organization theory, but only if they are re-worked substantially » (p. 604). Rowan est aussi la source du constat que la lecture dichotomique est une simplification, et de l'observation que « any two elements of an organized system are likely to be embedded in a host of relationships with many system elements » (p. 609) ainsi que du fait que des acteurs peuvent « deliberately attempt to weaken ties to one element in the system in order to tighten coupling to another element » (p. 609). CONSULTATION : aucune ; citations et pagination rapportées par Hautala et al. 2018 (texte intégral consulté). DOI non repéré."
+      },
+      {
+        "citation": "William Tyler, « ‘Loosely Coupled’ Schools: A Structuralist Critique », British Journal of Sociology of Education, 8(3), 1987, p. 313-326",
+        "year": 1987,
+        "language": "en",
+        "doi_isbn": null,
+        "url": null,
+        "role": "critique",
+        "level": "B",
+        "establishes": "Critique structuraliste explicite, et la seule des critiques repérées dont le titre annonce la mise en cause. Rangée par Hautala et al. parmi les sources qui reprochent au vocabulaire du couplage son ambiguïté, et décrite dans leur tableau de synthèse comme une « structuralist approach for addressing the ambiguities of loose coupling model ». CONSULTATION : aucune ; connue par la bibliographie et le tableau A1 de Hautala et al. 2018. DOI non repéré ; le contenu de l'argument structuraliste n'est donc PAS établi ici, seulement son existence et sa cible."
+      },
+      {
+        "citation": "Heinz-Dieter Meyer, « From “loose coupling” to “tight management”? Making sense of the changing landscape in management and organization theory », Journal of Educational Administration, 40(6), 2002, p. 515-520",
+        "year": 2002,
+        "language": "en",
+        "doi_isbn": "10.1108/09578230210454992",
+        "url": "https://doi.org/10.1108/09578230210454992",
+        "role": "reception",
+        "level": "B",
+        "establishes": "Introduction du numéro spécial de 2002 du JEA, qui date et nomme le retournement de conjoncture : le couplage lâche a été enseigné aux praticiens comme une propriété à accepter et à gouverner symboliquement, puis la vague managériale l'a reconstitué en cible. Tel que rapporté par Hautala et al. : « At the time of the emergence of loose coupling concept, practitioners in education were asked to embrace ambiguity and loose coupling in their organizations. They were recommended to learn the art of symbolic leadership rather than using top-down management strategies appropriate for more tightly coupled structures. (Meyer, 2002a.) However, the new managerial tide, culminating to New Public Management (NPM), has brought educational administrators and policy makers under increasing pressures for accountability, organizational effectiveness, capacity building and standardization – terms not fluently connected to the philosophy of loose coupling and symbolic leadership. » Autre apport, à décharge du concept : « Loose coupling directs action to the symbolic, cultural side of organizations. This, however, provides little or no direction on how to align culture with structure » — reproche de stérilité pratique. CONSULTATION : notice Crossref (titre, revue, volume, pagination, DOI) ; contenu connu par Hautala et al. 2018 uniquement. Le compagnon du même auteur dans le même numéro (« The new managerialism in education management », p. 534-553, cité comme Meyer 2002b) n'a pas été résolu séparément."
+      },
+      {
+        "citation": "Tim Hallett, « The Myth Incarnate: Recoupling Processes, Turmoil, and Inhabited Institutions in an Urban Elementary School », American Sociological Review, 75(1), 2010, p. 52-74",
+        "year": 2010,
+        "language": "en",
+        "doi_isbn": null,
+        "url": null,
+        "role": "reception",
+        "level": "B",
+        "establishes": "Reprise empirique contemporaine et renversement du programme : ce n'est plus le couplage lâche qu'on observe mais le RECOUPLAGE, et ses effets sont conflictuels. Tel que résumé par Hautala et al. : « Hallett (2010) has illustrated that environmentally defined regimes for accountability, leading to recoupling of loosely coupled practices, have created perturbation in educational organization. » Source utile parce qu'elle montre que le concept sert aujourd'hui à décrire son propre défaire. CONSULTATION : aucune ; référence connue par la bibliographie de Hautala et al. 2018. DOI non repéré pendant ce passage."
+      },
+      {
+        "citation": "William L. Boyd et Robert L. Crowson, « The quest for a new hierarchy in education: from loose coupling back to tight? », Journal of Educational Administration, 40(6), 2002, p. 521-533",
+        "year": 2002,
+        "language": "en",
+        "doi_isbn": "10.1108/09578230210446018",
+        "url": "https://doi.org/10.1108/09578230210446018",
+        "role": "reception",
+        "level": "B",
+        "establishes": "Jalon de la même conjoncture, et le titre fait la donnée : la question posée en 2002 par le champ n'est plus « comment décrire le couplage lâche » mais « faut-il y revenir de force ». Rangé par Hautala et al. parmi les tenants du modèle hybride. Signalé aussi dans la bibliographie francophone de Lessard et al. 2008, ce qui atteste sa circulation hors du monde anglophone. CONSULTATION : notice Crossref (37 citations relevées) ; contenu non consulté."
+      }
+    ],
+
+    "francophone_sources": [
+      {
+        "citation": "Claude Lessard, Pierre-David Desjardins, Marina Schwimmer et Abdoulaye Anne, « Les politiques et les pratiques en éducation : un couplage problématique. Une perspective anglo-américaine », Carrefours de l'éducation, 2008/1, n° 25, p. 155-194",
+        "year": 2008,
+        "language": "fr",
+        "doi_isbn": "10.3917/cdle.025.0155",
+        "url": "https://classiques.uqam.ca/contemporains/Lessard_Claude/politiques_et_pratiques_en_education/politiques_et_pratiques_en_education.pdf",
+        "role": "reception",
+        "level": "B",
+        "establishes": "PIÈCE CENTRALE DE LA COUCHE FRANCOPHONE, et la seule source consultée qui traite le couplage lâche pour lui-même en français. Établit : (1) le rendu français reçu, donné en apposition à l'anglais dans une section qui lui est consacrée — « L'apport des néo-institutionnalistes : le concept de “loose coupling” ou de couplage lâche entre paliers et dimensions organisationnelles » (éd. Classiques, p. 37) ; (2) l'attribution prudente, en français : « C'est l'idée que véhicule et a rendu célèbre le concept de loose coupling ou de loosely coupled organization (couplage lâche) (Weick, 1976) » (p. 37-38) — « a rendu célèbre », non « a forgé » ; (3) LA MÉSINTERPRÉTATION, nommée et datée en français : « Poussé à l'extrême, le loose coupling donne à penser que le système éducatif est composé de classes parfaitement étanches et imperméables à toutes influences des autres sous-systèmes. Cela correspond au mythe de la classe fermée et intouchable, et de la capacité des travailleurs de la base à contrer toute prescription extérieure qu'ils jugeraient incompatible » (p. 37-38) ; (4) LA CONVERSION DU CONCEPT EN CIBLE POLITIQUE, qui est l'écart d'usage propre au monde francophone de l'éducation : l'approche fonctionnaliste pragmatique décline « une ingénierie de l'implantation des politiques qui […] cherche à mieux aligner les paliers ou les sous-systèmes organisationnels et ainsi réduire le “loose coupling” » (p. 25 env.) ; « il est possible de réduire le loose-coupling au sein du système éducatif et par là d'accroître l'efficacité de l'organisation. C'est ce que les chercheurs appellent “l'alignement” des paliers et des acteurs, c'est-à-dire un couplage plus serré, plus étroit des moyens et des fins » (p. 47) ; et l'approche critique « est d'avis que cette réduction du loose coupling est en effet la visée des politiques actuelles, mais que celle-ci est le propre d'un pouvoir managérial renforcé » (p. 47) ; (5) LA RÉSISTANCE À CET USAGE, formulée en une phrase que la fiche peut reprendre telle quelle : « Il y a du bon dans le couplage lâche et une meilleure articulation passe par une plus forte capacité à la base (capacity-building), et par davantage d'empowerment » (p. 47-48) ; (6) que le débat français porte sur trois positions et non deux — fonctionnalistes pragmatiques (réduire le couplage lâche), critiques (y voir un projet managérial), et approches centrées sur les acteurs (travailler avec) ; (7) que la réception francophone range le concept sous le néo-institutionnalisme (titre de section), ce qui n'est pas neutre : voir `known_ambiguities`. CONSULTATION : texte intégral. Le PDF de l'édition Les Classiques des sciences sociales (UQAC/UQAM, libre accès) a été téléchargé et son couche texte extraite programmatiquement, y compris les polices à CMap ; les pages citées sont celles de cette édition, qui insère sa propre pagination, et non celles de Carrefours de l'éducation. Quelques caractères accentués (â, à, ê) ont dû être restitués à la lecture, l'extraction rendant un « ? » à leur place : les citations ci-dessus sont données avec cette réserve de forme, non de contenu. La notice bibliographique de l'article y porte deux coquilles sur la source primaire : « Educational organization as loosely coupled systems » (au singulier) et « Administrative science quaterly »."
+      },
+      {
+        "citation": "Aurélien Bargain et Christophe Maurel, « Le couplage faible comme facteur de réussite des changements organisationnels publics : le cas de la mutualisation de services communaux », Gestion et management public, vol. 8, n° 2, 2021, p. 91-109",
+        "year": 2021,
+        "language": "fr",
+        "doi_isbn": "10.3917/gmp.082.0091",
+        "url": "https://hal.science/hal-03261658",
+        "role": "translation",
+        "level": "B",
+        "establishes": "Deux choses, et le titre suffit à les établir. (1) UN SECOND RENDU FRANÇAIS CONCURRENT : « couplage faible », et non « couplage lâche », dans la recherche française en sciences de gestion — le terme français n'est donc pas unifié. (2) UNE RÉCEPTION FRANÇAISE FONCTIONNELLE, hors du terrain scolaire d'origine : le couplage faible y est posé comme « facteur de réussite » d'un changement organisationnel public, c'est-à-dire exactement l'inverse d'un défaut de coordination à corriger. C'est la contre-attestation francophone de l'écart d'usage documenté chez Lessard et al. CONSULTATION : notice HAL vérifiée par interrogation directe de l'API (halId hal-03261658 : auteurs, revue, volume, numéro, pagination 91-109, DOI concordants) et notice Semantic Scholar. Aucun résumé n'est déposé sur HAL et le contenu n'a PAS été consulté : Cairn renvoie HTTP 403. C'est le titre qui fait la donnée, pas l'argumentation."
+      },
+      {
+        "citation": "Hélène Buisson-Fenet et Xavier Pons, « Responsable, mais pas redevable ? Gouvernance par les résultats et relations d'“accountability” dans les établissements scolaires en France », Éducation et sociétés, n° 43, 2019, p. 41-56",
+        "year": 2019,
+        "language": "fr",
+        "doi_isbn": "10.3917/es.043.0041",
+        "url": "https://shs.hal.science/halshs-02420566",
+        "role": "critique",
+        "level": "B",
+        "establishes": "Critique empirique française du schéma, portée sur six lycées. Résumé d'auteur, verbatim : l'article « met en évidence les limites d'une approche en termes de découplage selon laquelle les transformations en cours affecteraient essentiellement les chefs d'établissement et très peu les enseignants » ; les auteurs « montrent les transformations des modèles de responsabilité professionnelle en présence, dont les formes empiriques varient selon les ordres éducatifs locaux qui caractérisent les établissements ». Deux enseignements : (1) une enquête française récente conteste que le bas de l'organisation scolaire reste à l'abri — c'est-à-dire conteste précisément la version forte du couplage lâche que Lessard et al. appellent le « mythe de la classe fermée » ; (2) LE MOT EMPLOYÉ EST « DÉCOUPLAGE », pas « couplage lâche », dans une argumentation qui occupe la place du second — indice de plus que les deux termes sont interchangés dans la littérature francophone de l'éducation comme ils le sont dans le néo-institutionnalisme anglophone. CONSULTATION : résumé d'auteur français et anglais obtenus par l'API HAL (halId halshs-02420566) ; corps de l'article NON consulté, Cairn renvoyant HTTP 403. ÉCART DE NOTICE À SIGNALER : HAL donne « 2019/3, n° 43, p. 41-56 », l'adresse Cairn correspondante porte « 2019-1 page 41 » ; le numéro 43 et la pagination 41-56 sont retenus d'après HAL."
+      }
+    ],
+
+    "translation_notes": [
+      {
+        "term_source": "loose coupling / loosely coupled system",
+        "term_fr": "couplage lâche",
+        "note": "Rendu dominant dans la littérature francophone de l'éducation, employé en apposition à l'anglais qu'il ne remplace pas : « le concept de “loose coupling” ou de couplage lâche », « le concept de loose coupling ou de loosely coupled organization (couplage lâche) » (Lessard et al. 2008, éd. Classiques, p. 37-38). Aucune traduction française publiée de l'article de 1976 n'a été repérée : le terme français est donc un terme de commentateurs, sans traduction de référence derrière lui."
+      },
+      {
+        "term_source": "loose coupling",
+        "term_fr": "couplage faible",
+        "note": "Rendu concurrent, attesté en sciences de gestion françaises jusque dans un titre de revue à comité de lecture : Bargain & Maurel, « Le couplage faible comme facteur de réussite des changements organisationnels publics », Gestion et management public, 2021, DOI 10.3917/gmp.082.0091. Le vocabulaire français n'est donc pas stabilisé entre les disciplines : « lâche » du côté de la sociologie de l'éducation, « faible » du côté du management public."
+      },
+      {
+        "term_source": "tight coupling",
+        "term_fr": "couplage serré / couplage étroit",
+        "note": "Les deux formes coexistent dans la même phrase chez Lessard et al. : « un couplage plus serré, plus étroit des moyens et des fins » (éd. Classiques, p. 47). Attention : « tight coupling » désigne chez Perrow (Normal Accidents, 1984) un tout autre objet — la propagation rapide des perturbations dans un système technique. Le même syntagme français recouvre deux concepts distincts."
+      },
+      {
+        "term_source": "decoupling",
+        "term_fr": "découplage",
+        "note": "Rendu stable, mais le terme français hérite de la confusion anglaise : dans la recherche néo-institutionnelle, loose coupling et decoupling sont explicitement traités comme synonymes (Bromley & Powell 2012, cités par Arango-Vasquez & Gentilin 2021). Une fiche française qui distingue couplage lâche et découplage énonce donc une distinction qu'une partie de la littérature ne tient pas — ce qui est défendable, mais doit être dit."
+      },
+      {
+        "term_source": "distinctiveness / responsiveness",
+        "term_fr": "aucun rendu français reçu repéré",
+        "note": "Le couple de notions qui porte la définition savante actuelle (Orton & Weick 1990) n'a pas d'équivalent français attesté dans les sources consultées. Les textes francophones consultés citent l'anglais ou paraphrasent. Un rendu inventé pour la fiche devra être signalé comme tel."
+      }
+    ],
+
+    "known_ambiguities": [
+      "L'AMBIGUÏTÉ EST RECONNUE PAR LE CHAMP LUI-MÊME, ET DEPUIS LONGTEMPS. Le reproche d'ambiguïté et de définitions variables est porté par au moins cinq auteurs distincts recensés par la revue intégrative : Firestone 1985, Willower 1981, Tyler 1987, Yair 1997, Meyer 2002 (Hautala et al. 2018, p. 2 et p. 19). La formule canonique est celle de Firestone : l'obstacle à l'opérationnalisation « is the lack of agreement among those who write about it » (1985, p. 7). Ce n'est donc pas une difficulté de vulgarisation, c'est une propriété reconnue du concept.",
+
+      "COUPLAGE LÂCHE ET DÉCOUPLAGE : LA DISTINCTION N'EST PAS TENUE PAR TOUTE LA LITTÉRATURE. La cartographie du corpus range à juste titre la paire Weick 1976 / Meyer & Rowan 1977 parmi les rapprochements à ne pas transformer en filiation. Mais la réception, elle, les confond ouvertement et le dit : « the concepts of loose coupling and decoupling are used interchangeably; in other words, they are synonyms, as Bromley and Powell (2012) point out: ‘as is often the case in neo-institutional research, we treat the terms loose coupling and decoupling interchangeably’ » (Arango-Vasquez & Gentilin 2021, texte intégral consulté). Le même effacement s'observe côté francophone : Lessard et al. 2008 placent le couplage lâche de Weick sous le titre « L'apport des néo-institutionnalistes », et Buisson-Fenet & Pons 2019 raisonnent en termes de « découplage » là où l'argument est celui du couplage lâche. CONSÉQUENCE POUR LE CORPUS : la distinction reste légitime et pédagogiquement utile, mais elle doit être présentée comme une distinction que la fiche établit CONTRE un usage répandu, non comme un acquis du champ.",
+
+      "CE QUE L'ON APPELLE « LE CONCEPT DE WEICK » EST SOUVENT CELUI D'ORTON & WEICK 1990. La formulation dialectique (distinctiveness et responsiveness tenues ensemble), le continuum lâche/serré et la formule « open and closed, indeterminate and rational, spontaneous and deliberate » appartiennent au texte coécrit de 1990 (Hautala et al. 2018, p. 10 et p. 12 ; Arango-Vasquez & Gentilin 2021). L'article de 1976 est un texte de commande, plus exploratoire, dont Weick dit lui-même en 1989 qu'il « needs to be reorganized around a central driving hypothesis ». Attribuer 1990 à 1976 est l'erreur d'attribution la plus probable sur ce dossier.",
+
+      "WEICK 1976 EST CITÉ DES DEUX CÔTÉS DU DÉBAT SUR LE STATUT DU COUPLAGE LÂCHE. La revue intégrative range explicitement l'article de 1976 à la fois parmi les sources qui font du couplage lâche une propriété à exploiter et parmi celles qui en font « a problem to be solved (see also Shen et al., 2016; Weick, 1976) » (Hautala et al. 2018, p. 2) ; leur tableau 2 place « relative lack of coordination (Hargreaves, 2011; Horne, 1992; Weick, 1976) » et « difficulty and resistance to change […] (Weick, 1976) » du côté des « challenges ». Le texte primaire n'ayant pas été ouvert dans ce passage, JE NE TRANCHE PAS : je signale au lecteur primaire que la thèse fonctionnelle, telle que la carte du corpus l'anticipe, n'est peut-être pas la seule que porte l'article de 1976, et que la réception y lit aussi des coûts. Si le lecteur primaire trouve les deux dans le texte, la fiche devra dire les deux.",
+
+      "LE CONCEPT A CHANGÉ D'ADVERSAIRE ENTRE 1976 ET 2002. En 1976 il s'oppose à l'image bureaucratique d'organisations densément couplées ; à partir des années 2000 il devient la cible d'un mouvement inverse, celui du New Public Management et de la reddition de comptes — « From “loose coupling” to “tight management”? » (Meyer 2002, DOI 10.1108/09578230210454992), « The quest for a new hierarchy in education: from loose coupling back to tight? » (Boyd & Crowson 2002, DOI 10.1108/09578230210446018), et côté empirique le recouplage et ses turbulences (Hallett 2010). Lire aujourd'hui « couplage lâche » comme une description neutre, c'est ignorer qu'il est devenu un enjeu politique.",
+
+      "L'USAGE CONJOINT AVEC LA THÉORIE DES ACCIDENTS NORMAUX N'EST PAS UNE FILIATION. Arango-Vasquez & Gentilin 2021 identifient « the theory of normal accidents » comme l'un des deux cadres théoriques les plus fréquemment mobilisés avec la perspective des systèmes faiblement couplés. Cela atteste une co-utilisation par des tiers, pas une reprise de Perrow par Weick ni l'inverse. LA SEULE REPRISE ATTESTÉE DANS CE PASSAGE VA DE WEICK VERS PERROW, et elle est mince : dans son commentaire de 1989, Weick appuie le constat que la littérature « moved away from equating looseness with ineffectiveness » sur un renvoi numéroté à Perrow, Normal Accidents, 1984 (renvoi n° 4). C'est une citation dans une note de bilan, pas une dette théorique. Et le « tight coupling » de Perrow ne désigne pas la même chose que celui d'Orton & Weick.",
+
+      "LA MESURE DU COUPLAGE EST CONTESTÉE. Selon Ingersoll 1993, tel que rapporté par Hautala et al. (p. 19), l'évaluation du couplage organisationnel « is highly dependent on research location, used criteria and method (see also Firestone, 1985; Logan et al., 1993; Orton and Weick, 1990; Tyler, 1987) », et Yair 1997 a consacré un article aux effets de méthode sur le test de la théorie (« Method effects on theory testing: The case of organizational coupling in education », JEA 35(4), p. 290-311). Deux enquêtes peuvent donc conclure différemment sur la même école."
+    ],
+
+    "common_misinterpretations": [
+      {
+        "claim": "Le couplage lâche est un défaut de coordination : une organisation où les unités ne se parlent pas, qu'un bon management devrait resserrer.",
+        "why_wrong": "C'est la lecture que la littérature savante identifie comme un appauvrissement, et la seule des cinq voix recensées à avoir été explicitement disqualifiée par les auteurs eux-mêmes. Orton & Weick nomment le mécanisme : chacune des cinq voix « has a tendency to drift away from a dialectical interpretation of loose coupling toward a unidimensional interpretation of loose coupling, thereby weakening the explanatory value of the concept ». La lecture déficitaire est unidimensionnelle : elle retient le « lâche » et perd le « couplage », alors que le concept n'a de valeur explicative qu'à tenir les deux. Weick lui-même date le décrochage du champ par rapport à cette lecture : la littérature a « moved away from equating looseness with ineffectiveness ». La revue de 2018 attribue au couplage lâche des effets recensés — « persistence, buffering, adaptability, satisfaction, effectiveness » (Orton & Weick 1990) — et, du côté des mécanismes, « failure in one sub-unit does not spread to damage the rest of the organization ».",
+        "source": "Orton & Weick 1990, résumé d'auteur, DOI 10.2307/258154 (vérifié sur deux sources concordantes) ; Weick, This Week's Citation Classic, CC n° 12, 1989, p. 14 (texte intégral consulté) ; Hautala, Helander & Korhonen 2018, DOI 10.1108/JEA-03-2017-0027, Table 2 (texte intégral consulté). RÉSERVE : voir `known_ambiguities` — la même revue range aussi Weick 1976 parmi les auteurs qui voient dans le couplage lâche un problème. La vulgarisation est donc fautive parce qu'elle est EXCLUSIVE, pas parce que le coût n'existerait pas."
+      },
+      {
+        "claim": "Une organisation faiblement couplée, c'est une organisation où chaque unité fait ce qu'elle veut, à l'abri de toute influence extérieure.",
+        "why_wrong": "La version forte est nommée et rejetée en toutes lettres par la réception francophone : « Poussé à l'extrême, le loose coupling donne à penser que le système éducatif est composé de classes parfaitement étanches et imperméables à toutes influences des autres sous-systèmes. Cela correspond au mythe de la classe fermée et intouchable, et de la capacité des travailleurs de la base à contrer toute prescription extérieure qu'ils jugeraient incompatible. » Le couplage lâche est un couplage : un lien faible, occasionnel et lent, pas une absence de lien. Une enquête française récente conteste d'ailleurs empiriquement l'imperméabilité supposée du bas de l'organisation scolaire.",
+        "source": "Lessard, Desjardins, Schwimmer & Anne 2008, DOI 10.3917/cdle.025.0155, éd. Classiques des sciences sociales, p. 37-38 (texte intégral consulté) ; Buisson-Fenet & Pons 2019, DOI 10.3917/es.043.0041, résumé d'auteur (API HAL)."
+      },
+      {
+        "claim": "Une organisation est soit faiblement couplée, soit fortement couplée : c'est un type d'organisation.",
+        "why_wrong": "La lecture typologique dichotomique est recensée comme une simplification : « If coupling metaphor is interpreted in a simplistic, dichotomous terms, system elements are seen as either coupled or not, and the whole system is seen as loosely or tightly coupled (Rowan, 2002). » La littérature converge au contraire vers le couplage simultané : des travaux empiriques trouvent des configurations lâches et serrées coexistantes, et la revue de 2018 conclut « it is not relevant to consider educational organizations as either loosely or tightly coupled […] but as having simultaneous loose and tight configurations ». Weick avait lui-même signalé dès 1976 que « the same components might be at one moment tightly coupled and at the next moment loosely coupled » (p. 15), et il regrettait en 1989 que le champ ait séparé les deux moitiés du couple, « either spatially […] or temporally », alors que « Seldom considered was the possibility that organizations were both loose and tight all the time ».",
+        "source": "Hautala, Helander & Korhonen 2018, DOI 10.1108/JEA-03-2017-0027, p. 3, p. 12 et p. 18 (texte intégral consulté) ; Weick, This Week's Citation Classic, CC n° 12, 1989, p. 14 (texte intégral consulté)."
+      },
+      {
+        "claim": "« Couplage lâche », c'est le concept que Weick a inventé en 1976.",
+        "why_wrong": "L'expression circulait avant l'article : Glassman l'emploie en 1973 dans Behavioral Science, March et Olsen en 1975, et Bidwell avait décrit en 1965 une « looseness of articulation among the subunits ». Weick les cite lui-même à la page 3 de son article, et rappelle en 1989 que l'atelier de La Jolla s'était réuni « to explore the phrase ‘loosely coupled system’ ». L'apport de 1976 est le déplacement du terme vers l'analyse des organisations et sa mise en circulation — ce que le français rend exactement : Weick « a rendu célèbre le concept ». Une partie de la littérature l'ignore et écrit que « The perspective of LCS was coined by Weick (1976) ».",
+        "source": "Hautala, Helander & Korhonen 2018, DOI 10.1108/JEA-03-2017-0027, p. 1, rapportant Weick 1976, p. 3 ; Weick 1989, CC n° 12, p. 14 ; Lessard et al. 2008, éd. Classiques, p. 37-38 ; contre-exemple de l'attribution fautive : Arango-Vasquez & Gentilin 2021, DOI 10.15446/innovar.v31n79.91898 (tous textes intégraux consultés, sauf Weick 1976)."
+      },
+      {
+        "claim": "Le couplage lâche décrit un état de fait neutre, sans enjeu politique.",
+        "why_wrong": "Dans la littérature francophone de l'éducation, le concept a été converti en cible d'action publique : une « ingénierie de l'implantation des politiques […] cherche à mieux aligner les paliers ou les sous-systèmes organisationnels et ainsi réduire le “loose coupling” », et « cette réduction du loose coupling est en effet la visée des politiques actuelles ». Les auteurs opposent explicitement à ce programme que « Il y a du bon dans le couplage lâche ». Côté anglophone, la même bascule est datée : « From “loose coupling” to “tight management”? » (Meyer 2002), « from loose coupling back to tight? » (Boyd & Crowson 2002).",
+        "source": "Lessard, Desjardins, Schwimmer & Anne 2008, DOI 10.3917/cdle.025.0155, éd. Classiques, p. 25 env., p. 47 et p. 47-48 (texte intégral consulté) ; Meyer 2002, DOI 10.1108/09578230210454992 et Boyd & Crowson 2002, DOI 10.1108/09578230210446018 (titres et notices Crossref)."
+      },
+      {
+        "claim": "Couplage lâche et découplage, c'est la même chose.",
+        "why_wrong": "Ce n'est pas exactement une mésinterprétation : c'est un usage assumé par une partie du champ, et il faut le savoir avant de le corriger. Bromley & Powell l'écrivent noir sur blanc pour le néo-institutionnalisme : « as is often the case in neo-institutional research, we treat the terms loose coupling and decoupling interchangeably ». Les deux mécanismes n'en restent pas moins distincts par leur objet — chez Weick, la faible réactivité mutuelle d'unités d'une même organisation ; chez Meyer & Rowan, l'écart entre la structure formelle affichée pour la légitimité et l'activité réelle. La fiche doit poser la distinction en signalant qu'elle n'est pas universellement tenue, et non prétendre restituer un consensus.",
+        "source": "Bromley & Powell 2012, DOI 10.5465/19416520.2012.684462, cités par Arango-Vasquez & Gentilin 2021, DOI 10.15446/innovar.v31n79.91898 (texte citant consulté intégralement ; texte cité en notice seule, locator « p. 38 » non concordant avec la pagination de la revue)."
+      }
+    ],
+
+    "reception": {
+      "consensus": "Acquis et non contesté par les sources consultées : (1) l'attribution du texte de 1976 à Weick seul (notice Crossref du DOI 10.2307/2391875 ; aucune source examinée ne la discute) ; (2) le caractère fondateur de l'article — 4 967 citations relevées sur Crossref (août 2026), et deux revues de littérature indépendantes le prennent pour point de départ (Hautala et al. 2018 sur 32 articles ; Arango-Vasquez & Gentilin 2021 sur 76 articles) ; (3) que le terme n'est pas de Weick et qu'il le dit lui-même (Glassman 1973, March & Olsen 1975, Bidwell 1965) ; (4) que la lecture pertinente est relationnelle et non typologique : loose et tight vont par paire, sur un continuum, et peuvent coexister dans la même organisation — position tenue par Orton & Weick 1990, par la revue de 2018 et par la revue de 2021 ; (5) que le vocabulaire du couplage est ambigu et sa mesure dépendante de la méthode — reproche formulé indépendamment par Willower 1981, Firestone 1985, Tyler 1987, Ingersoll 1993, Yair 1997, Meyer 2002 ; (6) que le concept reste opératoire quarante ans après : « The findings confirm that loose and tight coupling phenomenon still resonates with the current educational practice and administration » (Hautala et al. 2018, conclusion).",
+
+      "debates": [
+        "Le couplage lâche est-il une propriété à exploiter ou un problème à résoudre ? Le désaccord est frontal et daté avec précision par la revue intégrative : « Some researchers have regarded loose coupling as a natural characteristic which should be taken advance of (e.g. Goldspink, 2007), while other researchers (e.g. de Lima, 2007; Morley and Rassool, 2000) have regarded loose coupling as a problem to be solved » (Hautala et al. 2018, p. 2, DOI 10.1108/JEA-03-2017-0027). Le débat n'est pas tranché : la revue conclut elle-même « it seems unclear whether endeavouring loose, or tight coupling aspects, serves more beneficial goal for educational administration ».",
+
+        "Le concept est-il utilisable en l'état ? Rowan tranche pour non : « ideas about loose coupling can serve a useful purpose in organization theory, but only if they are re-worked substantially » (2002, p. 604, cité par Hautala et al. 2018, p. 19). Orton & Weick 1990 relèvent du même diagnostic mais y répondent par une reconceptualisation plutôt que par un abandon. Weick lui-même joint sa voix aux insatisfaits en 1989 : l'image du couplage lâche « needs to be reorganized around a central driving hypothesis if it is to attract research efforts similar to those that were marshaled around the other three organizational ideas that appeared around the same time ».",
+
+        "Le concept est-il opérationnalisable ? Non, selon la lignée Firestone 1985 (« the lack of agreement among those who write about it ») – Tyler 1987 – Yair 1997 – Ingersoll 1993, pour qui l'évaluation du couplage dépend du lieu, des critères et de la méthode. Oui, répondent les travaux quantitatifs recensés par Hautala et al. (11 des 14 articles empiriques de leur corpus sont quantitatifs : Logan et al. 1993, Pang 1998-2010, Ingersoll 1994, Shen et al. 2016, Beekun & Glick 2001).",
+
+        "Les organisations éducatives sont-elles encore faiblement couplées ? Rowan 2002 soutient que les systèmes éducatifs « seem to have become far more bureaucratized and rationalized around the world than during the emergence of loose coupling concept » ; Dimmock & Tan 2013 les tiennent pour des systèmes complexes « that often defy simple characterization as either tightly or loosely coupled » ; mais Hökkä & Vähäsantanen 2014, Vuori 2015 et Shen et al. 2016 constatent que « the loosely coupled nature of educational organizations still continues to exist » (Hautala et al. 2018, p. 2 et p. 15). Débat ouvert.",
+
+        "Faut-il resserrer ? En français, c'est LE débat, et il oppose trois positions et non deux : les fonctionnalistes pragmatiques pour qui « il est possible de réduire le loose-coupling au sein du système éducatif et par là d'accroître l'efficacité de l'organisation » ; les critiques pour qui « cette réduction du loose coupling est […] le propre d'un pouvoir managérial renforcé » ; et les tenants d'approches centrées sur les acteurs, pour qui « Il y a du bon dans le couplage lâche » et l'articulation doit venir du bas (Lessard et al. 2008, éd. Classiques, p. 47-48, DOI 10.3917/cdle.025.0155).",
+
+        "Couplage lâche et découplage sont-ils un seul concept ou deux ? La recherche néo-institutionnelle les traite comme synonymes et le déclare (Bromley & Powell 2012, cités par Arango-Vasquez & Gentilin 2021) ; la cartographie du corpus et la logique des deux mécanismes commandent de les distinguer. Ce n'est pas un débat explicite entre écoles — c'est un usage divergent qui n'a pas été thématisé comme tel dans les sources consultées."
+      ],
+
+      "critiques": [
+        {
+          "by": "J. Douglas Orton et Karl E. Weick",
+          "claim": "Critique de la réception, formulée de l'intérieur : les usages du concept se répartissent en cinq voix récurrentes (causation, typologie, effets, compensations, résultats), et chacune « has a tendency to drift away from a dialectical interpretation of loose coupling toward a unidimensional interpretation of loose coupling, thereby weakening the explanatory value of the concept ». La dérive unidimensionnelle est donc le diagnostic central porté sur quatorze ans de littérature.",
+          "source": "« Loosely Coupled Systems: A Reconceptualization », Academy of Management Review, 15(2), 1990, p. 203-223, DOI 10.2307/258154 — résumé d'auteur vérifié sur deux sources concordantes ; texte intégral non consulté (AOM renvoie HTTP 403)."
+        },
+        {
+          "by": "Karl E. Weick (sur son propre article)",
+          "claim": "Deux reproches, en son nom propre. (1) Rendement scientifique décevant : l'article « has generated more discussion and less research than any of those other three ideas » — écologie des populations, coûts de transaction, dépendance aux ressources, parus au même moment. (2) Défaut de construction : « The image of loose coupling, however, needs to be reorganized around a central driving hypothesis. » Il ajoute que les lecteurs « apparently liked to consider [the] possibility [that organizations were both loose and tight all the time] but weren't sure what to do with it empirically ».",
+          "source": "« Loose Coupling: Beyond the Metaphor », This Week's Citation Classic, Current Contents n° 12, 20 mars 1989, p. 14 — texte intégral consulté (PDF libre accès)."
+        },
+        {
+          "by": "William A. Firestone",
+          "claim": "Le concept n'est pas opérationnalisable en l'état : l'obstacle principal « is the lack of agreement among those who write about it » (1985, p. 7). Firestone est la référence commune de tous les bilans ultérieurs sur ce point et propose ses propres dimensions de mesure (communication horizontale, communication verticale, centralisation sur les ressources, centralisation sur l'instruction, leadership facilitateur, consensus sur les buts).",
+          "source": "« The study of loose coupling: problems, progress, and prospects », Research in Sociology of Education and Socialization, vol. 5, JAI Press, 1985, p. 3-30 — NON CONSULTÉ ; citation et pagination rapportées par Hautala et al. 2018, p. 2 et Table 1 (texte intégral consulté), référence confirmée par le renvoi n° 5 de Weick 1989."
+        },
+        {
+          "by": "Brian Rowan",
+          "claim": "Verdict d'utilité conditionnelle : « ideas about loose coupling can serve a useful purpose in organization theory, but only if they are re-worked substantially » (2002, p. 604). Rowan reproche par ailleurs à l'usage courant sa dichotomie et rappelle que « any two elements of an organized system are likely to be embedded in a host of relationships with many system elements » (p. 609).",
+          "source": "« Rationality and reality in organizational management: Using the coupling metaphor to understand educational (and other) organizations - a concluding comment », Journal of Educational Administration, 40(6), 2002, p. 604-611 — NON CONSULTÉ ; citations rapportées par Hautala et al. 2018, p. 3, p. 12 et p. 19."
+        },
+        {
+          "by": "William Tyler",
+          "claim": "Critique structuraliste du modèle du couplage lâche appliqué aux écoles, dirigée contre ses ambiguïtés. Le contenu de l'argument n'est pas établi ici : seuls le titre, la cible et le rangement de la critique par la revue intégrative le sont.",
+          "source": "« ‘Loosely Coupled’ Schools: A Structuralist Critique », British Journal of Sociology of Education, 8(3), 1987, p. 313-326 — NON CONSULTÉ ; connu par la bibliographie et le tableau A1 de Hautala et al. 2018. DOI non repéré."
+        },
+        {
+          "by": "Gad Yair et Richard M. Ingersoll",
+          "claim": "Critique de méthode : les résultats sur le degré de couplage d'une organisation dépendent du lieu d'enquête, des critères retenus et de l'outil statistique. Yair compare explicitement des instruments statistiques sur 35 écoles élémentaires de Jérusalem pour montrer l'effet de méthode sur le test de la théorie ; Ingersoll pose que « assessment of organizational coupling is highly dependent on research location, used criteria and method ».",
+          "source": "Yair, « Method effects on theory testing: The case of organizational coupling in education », Journal of Educational Administration, 35(4), 1997, p. 290-311 ; Ingersoll, « Loosely Coupled Organizations Revisited », Research in the Sociology of Organizations, vol. 11, JAI Press, 1993, p. 81-112 — AUCUN DES DEUX CONSULTÉ ; rapportés par Hautala et al. 2018, p. 19 et Table A1."
+        },
+        {
+          "by": "Heinz-Dieter Meyer",
+          "claim": "Reproche de stérilité pratique : le couplage lâche « directs action to the symbolic, cultural side of organizations. This, however, provides little or no direction on how to align culture with structure. » Autrement dit, le concept explique pourquoi les prescriptions ne descendent pas, mais ne dit rien de ce qu'il faudrait faire.",
+          "source": "Meyer 2002, Journal of Educational Administration, 40(6) — NON CONSULTÉ ; rapporté par Hautala et al. 2018, Table 1 et p. 20. DOI de l'article d'ouverture du numéro : 10.1108/09578230210454992."
+        },
+        {
+          "by": "Claude Lessard, Pierre-David Desjardins, Marina Schwimmer et Abdoulaye Anne",
+          "claim": "Critique francophone de la version forte du concept : « Poussé à l'extrême, le loose coupling donne à penser que le système éducatif est composé de classes parfaitement étanches et imperméables à toutes influences des autres sous-systèmes. Cela correspond au mythe de la classe fermée et intouchable. » Les auteurs critiquent symétriquement l'usage inverse — l'« ingénierie de l'implantation » qui vise à « réduire le “loose coupling” » — dont ils jugent l'optimisme « naïf dans la mesure où il s'agit d'une approche qui accepte la forme scolaire prescrite de manière non problématique ». Leur position propre : « Il y a du bon dans le couplage lâche. »",
+          "source": "« Les politiques et les pratiques en éducation : un couplage problématique. Une perspective anglo-américaine », Carrefours de l'éducation, 2008/1, n° 25, p. 155-194, DOI 10.3917/cdle.025.0155 — texte intégral consulté (édition Les Classiques des sciences sociales, p. 25 env., 37-38, 47-48)."
+        },
+        {
+          "by": "Hélène Buisson-Fenet et Xavier Pons",
+          "claim": "Critique empirique française : l'enquête dans six lycées « met en évidence les limites d'une approche en termes de découplage selon laquelle les transformations en cours affecteraient essentiellement les chefs d'établissement et très peu les enseignants ». Les modèles de responsabilité professionnelle se transforment jusqu'en bas, et leurs formes varient selon les ordres éducatifs locaux.",
+          "source": "« Responsable, mais pas redevable ? », Éducation et sociétés, n° 43, 2019, p. 41-56, DOI 10.3917/es.043.0041 — résumé d'auteur consulté via l'API HAL (halshs-02420566) ; corps de l'article non consulté (Cairn HTTP 403)."
+        },
+        {
+          "by": "Joseph Murphy, Philip Hallinger et Richard P. Mesa",
+          "claim": "Non pas une critique du concept mais l'exemple daté de la lecture déficitaire, à citer comme tel : les écoles faiblement couplées y sont décrites comme moyennes, par opposition aux écoles fortement couplées et efficaces — « effective schools have much tighter connections among different organizational levels » (1985, p. 7). C'est la position dont Weick constate en 1989 que le champ s'est éloigné.",
+          "source": "« Strategies for coupling schools: The effective school approach », NASSP Bulletin, février 1985, p. 7-13 — NON CONSULTÉ ; citation et paraphrase rapportées par Hautala et al. 2018, p. 3 et p. 12 (texte intégral consulté)."
+        }
+      ]
+    }
+  },
+
+  "non_etabli": [
+    "TEXTE PRIMAIRE NON OUVERT DANS CE PASSAGE. L'article de 1976 (DOI 10.2307/2391875) n'a pas été consulté ici — c'est le travail du lecteur primaire, et le scouting avait signalé que son atteignabilité était le point faible du dossier (JSTOR non rendu, notice ERIC vérifiée comme ne donnant pas accès au texte). Tout ce que ce fragment rapporte du contenu de 1976 passe par des sources secondaires citantes, et est signalé comme tel à chaque occurrence. En particulier : la page 3 (antécédents Bidwell/Glassman/March & Olsen) et la page 15 (« the same components might be at one moment tightly coupled and at the next moment loosely coupled ») ne sont connues que par Hautala et al. 2018.",
+
+    "ORTON & WEICK 1990, TEXTE INTÉGRAL NON CONSULTÉ. journals.aom.org renvoie HTTP 403. Seul le résumé d'auteur a été obtenu, mais sur deux sources indépendantes concordantes au mot près. JE NE PEUX DONC PAS DIRE ce que contient chacune des cinq voix (causation, typologie, effets, compensations, résultats), ni comment les auteurs opérationnalisent la « dialectical interpretation », ni ce que dit précisément la p. 204-205 au-delà de la phrase que Hautala et al. en citent. C'est la lacune la plus gênante de ce passage : le texte de référence de la RÉCEPTION du concept est resté fermé. Voies non épuisées : accès institutionnel AOM, ResearchGate (publication 200783340), dépôt Semantic Scholar (45512d51179e70a9720edc667131049f65f7aff8).",
+
+    "LE COMMENTAIRE DE 1989 EST UN TÉMOIGNAGE D'AUTEUR, PAS UNE SOURCE INDÉPENDANTE. « Loose Coupling: Beyond the Metaphor » est publié dans Current Contents, une lettre bibliométrique de l'Institute for Scientific Information, et non dans une revue à comité de lecture. Il vaut comme attestation de première main sur la genèse et sur ce que l'auteur pense de sa réception ; il ne vaut pas comme évaluation indépendante de cette réception. Les faits qu'il rapporte (atelier NIE de La Jolla du 2 février 1975, rôle de March, de Fritz Mulhauser et de Tom Lodahl, dix participants) N'ONT ÉTÉ CORROBORÉS PAR AUCUNE AUTRE SOURCE consultée : ils reposent sur ce seul témoignage, vingt-huit mois après les faits pour la date, quatorze ans après pour le récit. Le rapport NIE lui-même n'a pas été recherché.",
+
+    "LE RAPPORT ORTON & WEICK DE 1988 N'A PAS ÉTÉ RECHERCHÉ. Weick renvoie en 1989 à « Orton J D & Weick K E. Toward a theory of the loosely coupled system. Ann Arbor, MI: University of Michigan, Division of Research, Graduate School of Business Administration, October 1988, 46 p. Working Paper #586 ». C'est la version longue de l'article de 1990 et le document le plus susceptible de contenir la revue complète des cinq voix. Non localisé, non demandé.",
+
+    "SEPT DES SOURCES SECONDAIRES SONT CONNUES PAR UN SEUL RELAIS. Firestone 1985, Rowan 2002, Tyler 1987, Ingersoll 1993, Yair 1997, Meyer 2002 et Murphy, Hallinger & Mesa 1985 ne sont connus ici que par ce qu'en rapporte Hautala, Helander & Korhonen 2018. C'est un relais de bonne qualité — revue à comité de lecture, méthode explicitée, citations avec locators — mais c'est un relais unique. La règle vaut : quinze reprises concordantes d'une même lecture de seconde main ne font pas une confirmation. Aucun de ces sept textes n'a de DOI repéré pendant ce passage, sauf Meyer 2002 (10.1108/09578230210454992).",
+
+    "LA PISTE MUSSELIN / DEROUET SUGGÉRÉE PAR LA CARTE N'EST TOUJOURS PAS TRANCHÉE. Le scout la donnait « ni confirmée ni infirmée ». Elle le reste : la recherche HAL sur « couplage lâche » ne remonte aucun travail de Musselin ou de Derouet, et le PDF Musselin 1997 déposé sur sciencespo.hal.science n'a pas pu être ouvert (le service /document de HAL renvoie une page de défi Anubis au lieu du fichier, sur deux domaines testés). Ce que ce passage apporte à la place est meilleur pour l'objet : une réception francophone du couplage lâche pour lui-même, québécoise (Lessard et al. 2008) et non française. La sociologie française de l'université reste hors champ documenté.",
+
+    "LA COUCHE FRANCOPHONE A ÉTÉ CHERCHÉE SIX FOIS, AVEC DES RÉSULTATS TRÈS INÉGAUX. Requêtes HAL menées : « couplage lâche Weick » (0 résultat), « “couplage lâche” » (22 résultats, dont 19 relèvent du GPS/inertiel, de l'informatique répartie ou de la mécanique — homonymie technique massive qui noie la couche SHS), « faiblement couplés organisation » (4 résultats, tous hors sujet), « Dupriez couplage établissement scolaire » (0), « Weick organisation sensemaking couplage » (0), « couplage faible mutualisation services communaux » (1, retenu). Les trois sources francophones enregistrées ont donc été trouvées par recherche web et par Crossref, pas par HAL. CONCLUSION MÉTHODOLOGIQUE À TRANSMETTRE : sur ce concept, « couplage lâche » est un faux ami documentaire — c'est d'abord un terme de génie logiciel et de navigation par satellite. Une recherche HAL sur cette expression seule ne dit rien de la réception en sciences sociales.",
+
+    "CAIRN RESTE FERMÉ, ET C'EST LÀ QUE SE TROUVE LA MOITIÉ DE LA COUCHE FRANCOPHONE. HTTP 403 sur shs.cairn.info pour les trois articles visés (Carrefours de l'éducation 2008/1, Éducation et sociétés 2019/1, Gestion et management public 2020/2). L'un des trois a été récupéré par une autre voie (dépôt libre des Classiques des sciences sociales), les deux autres non : de Bargain & Maurel 2021 je ne connais que le titre et la notice, de Buisson-Fenet & Pons 2019 que le résumé d'auteur déposé sur HAL. Ce qu'ils disent effectivement du couplage lâche n'est pas établi.",
+
+    "AUCUNE ANALYSE DE CONTEXTES DE CITATION N'A PU ÊTRE MENÉE. `get_citations` renvoie HTTP 400 Bad Request sur 10.2307/2391875, et `count: 0` sans message d'erreur sur 10.2307/258154 — un article qui compte 1 596 citations Crossref. `get_references` renvoie de même `count: 0` sur 10.2307/2391875, article dont la bibliographie est longue et bien indexée ailleurs. LE SILENCE DE L'OUTIL SE RÉPÈTE DONC EXACTEMENT COMME LE PASSAGE DE CARTOGRAPHIE L'AVAIT OBSERVÉ SUR DIMAGGIO & POWELL ET SUR MEYER & ROWAN, et doit être traité comme tel : c'est un silence de Semantic Scholar, pas une absence de citations ni de références. Aucune classification supporting / contrasting / mentioning n'existe dans ce fragment ; les désaccords rapportés ici ont été reconstitués à la main, par lecture de deux revues de littérature et de trois textes en libre accès.",
+
+    "AUCUNE FILIATION SORTANTE N'EST DOCUMENTÉE ICI. Les deux seules reprises attestées sont : Weick citant Perrow 1984 dans une note de bilan de 1989 (voir `known_ambiguities`), et Weick citant Glassman 1973, March & Olsen 1975 et Bidwell 1965 à la p. 3 de son article, connu par relais. Rien n'établit de reprise entre Weick 1976 et Meyer & Rowan 1977 dans un sens ou dans l'autre : la proximité reste une proximité thématique, et le fait qu'une partie du champ les confonde n'est pas une filiation, c'est un usage. La bibliographie sortante de l'article de 1976 n'a pas pu être obtenue autrement que par ces mentions de seconde main.",
+
+    "PAGINATION DE L'ARTICLE DE 1976 : DEUX VALEURS EN CIRCULATION. Crossref donne p. 1-19, l'en-tête du Citation Classic écrit par Weick donne « Admin. Sci. Quart. 21:1-19, 1976 », la bibliographie de Lessard et al. 2008 donne p. 1-19, mais la bibliographie de Hautala et al. 2018 donne p. 1-18. Trois sources sur quatre convergent vers 1-19 ; l'écart n'a pas été arbitré sur l'exemplaire de la revue.",
+
+    "SOURCES REPÉRÉES ET NON OUVERTES, à verser au prochain passage : le numéro spécial du Journal of Educational Administration, 40(6), 2002, entièrement consacré au bilan du concept (Meyer, Boyd & Crowson, Fusarelli, Ogawa & Scribner, Rowan) — c'est la synthèse de réception la plus directement pertinente qui reste fermée ; Weick, « Administering education in loosely coupled schools », Phi Delta Kappan, 63(10), 1982, p. 673-676, texte de vulgarisation de l'auteur à destination des praticiens, donc vecteur probable de la lecture managériale ; Beekun & Glick, « Organization Structure from a Loose Coupling Perspective: A Multidimensional Approach », Decision Sciences, 32(2), 2001, p. 227-250, source des quatre composantes du couplage ; Kathleen Manning, « Loosely Coupled Systems », in Organizational Theory in Higher Education, Routledge, 2024, DOI 10.4324/9781003349068-6, chapitre de manuel récent, non consulté.",
+
+    "REMARQUE UTILE AU LECTEUR PRIMAIRE, sans modification de son fichier. Deux points que la réception soulève et qu'il est seul en mesure de trancher sur le texte. (1) La carte du corpus annonce que « le couplage lâche n'est PAS un défaut de coordination » et que l'article soutient une thèse fonctionnelle. La revue intégrative de 2018 range pourtant Weick 1976 des DEUX côtés du débat, et attribue à l'article aussi bien « mechanisms to adapt promptly to unique problems » et « failure in one sub-unit does not spread to damage the rest of the organization » que « relative lack of coordination » et « difficulty and resistance to change ». Si le texte porte effectivement les deux, la fiche devra le dire : la vulgarisation serait alors fautive par exclusivité, non par contresens. (2) Si le texte intégral de 1976 reste inatteignable, deux relais documentés peuvent servir, à condition d'être cités comme relais et jamais comme la source primaire : Hautala et al. 2018 cite l'article avec locators (p. 3 pour les antécédents, p. 15 pour la simultanéité) et Lessard et al. 2008 en donne une restitution française. Aucun des deux ne peut fournir de `key_quotation`."
+  ],
+
+  "provenance_fragment": {
+    "agent": "corpus-reception-analyst",
+    "at": "2026-08-16",
+    "action": "Instruction de la réception : attribution, interprétation, discussion. Couches internationale et francophone menées en parallèle dès le premier appel. Aucun élément de evidence.primary-reading.json lu ni modifié.",
+    "sources_ouvertes_integralement": [
+      "Weick, « Loose Coupling: Beyond the Metaphor », This Week's Citation Classic, CC n° 12, 1989, p. 14 (PDF libre accès, garfield.library.upenn.edu)",
+      "Hautala, Helander & Korhonen 2018, Journal of Educational Administration 56(2) — post-print TamPub, 26 p. (libre accès autorisé par l'éditeur)",
+      "Arango-Vasquez & Gentilin 2021, Innovar 31(79) (libre accès, SciELO Colombia)",
+      "Lessard, Desjardins, Schwimmer & Anne 2008, Carrefours de l'éducation n° 25 — édition Les Classiques des sciences sociales (libre accès, couche texte du PDF extraite programmatiquement)"
+    ],
+    "bases_ayant_repondu": {
+      "crossref": "répondu à tous les appels — c'est la base qui porte ce passage",
+      "hal": "répondu (recherche et API directe api.archives-ouvertes.fr, qui a rendu les notices et le résumé d'auteur de Buisson-Fenet & Pons)",
+      "semantic_scholar": "429 sur les recherches, sauf un appel qui a rendu Bargain & Maurel ; get_citations en 400 puis count 0, get_references en count 0",
+      "verify_reference": "répondu (Glassman confirmé après correction d'un DOI voisin)",
+      "scielo_colombia": "répondu (récupération HTTP directe après échec du fetch)",
+      "classiques_uqam": "répondu (PDF téléchargé)",
+      "tampub_scispace": "répondu (post-print PDF)"
+    },
+    "bases_restees_muettes": {
+      "openalex": "HTTP 429 Too Many Requests sur la totalité des appels de la session — aucune couverture OpenAlex dans ce fragment",
+      "semantic_scholar_citations": "get_citations : 400 sur 10.2307/2391875, count 0 sur 10.2307/258154 ; get_references : count 0 sur 10.2307/2391875. Silence d'outil confirmé, identique à celui observé au passage de cartographie",
+      "cairn": "HTTP 403 sur shs.cairn.info, trois articles visés",
+      "academy_of_management": "HTTP 403 sur journals.aom.org — Orton & Weick 1990 resté fermé",
+      "hal_service_document": "page de défi Anubis au lieu du PDF sur minesparis-psl.hal.science et sciencespo.hal.science — les dépôts en texte intégral de HAL n'ont pas été récupérables, contrairement à ses notices",
+      "erudit_et_educoop": "HTTP 404 sur les deux adresses testées",
+      "zotero": "non sollicité pendant ce passage"
+    }
+  }
+}

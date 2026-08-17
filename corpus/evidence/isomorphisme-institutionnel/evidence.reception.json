@@ -1,0 +1,345 @@
+{
+  "_note": "Fragment produit par l'instruction de la RÉCEPTION (corpus-reception-analyst). Complète, et ne remplace jamais, `evidence.primary-reading.json`, déposé en parallèle par le lecteur primaire : rien de ce que celui-ci établit n'a été touché ici. Objet de ce fichier : ce que la communauté savante fait du concept — attribution, interprétation, discussion — et non le concept lui-même. PARTICULARITÉ DE CE DOSSIER : la réception de l'isomorphisme institutionnel est un objet d'étude en soi. Un article d'ASQ (Mizruchi et Fein 1999) a pris pour objet la manière dont la littérature cite DiMaggio et Powell, et conclut à une appropriation sélective. L'écart d'usage annoncé par la carte (« les trois mécanismes réduits à l'imitation ») n'est donc pas une hypothèse de vulgarisation : c'est un résultat publié, repris par la littérature de bilan. Chaque affirmation porte sa référence et son niveau de consultation réel ; ce qui n'a pas pu être ouvert est consigné dans `non_etabli` plutôt que comblé.",
+
+  "id": "isomorphisme-institutionnel",
+  "canonical_name_fr": "Isomorphisme institutionnel (coercitif, mimétique, normatif)",
+  "canonical_name_en": "Institutional isomorphism (coercive, mimetic, normative)",
+
+  "attribution": {
+    "_note": "Instruit par la voie de la réception. Ne se substitue pas au bloc d'attribution du lecteur primaire ; le corrobore ou signale l'écart. Un point de ce bloc doit lui être signalé : voir `a_signaler_au_lecteur_primaire`.",
+
+    "authors": [
+      { "name": "Paul J. DiMaggio", "app_author_id": null },
+      { "name": "Walter W. Powell", "app_author_id": null }
+    ],
+    "authorship": "COAUTHORED",
+    "associated_author": null,
+
+    "verdict": "COAUTHORED, sans asymétrie repérable — et c'est un cas rare dans ce corpus. Aucune source consultée, savante ou de bilan, n'attribue le concept à l'un des deux seul : la littérature écrit invariablement « DiMaggio and Powell (1983) ». Les métadonnées concordent sur les trois bases interrogées (Crossref, OpenAlex W3123282572, Semantic Scholar a49c21ef…), toutes deux signatures, ordre DiMaggio puis Powell, American Sociological Review 48(2), 1983, p. 147-160, doi 10.2307/2095101. La seule inversion repérée est une page d'enseignement francophone qui intitule son billet « W. DiMaggio et P. Powel » — prénoms croisés et nom estropié —, indice de la circulation approximative du couple hors du champ savant (niveau E, détection seulement, page non ouverte : le fetch a échoué deux fois). ATTENTION : COAUTHORED porte sur les TROIS MÉCANISMES et sur la théorie du champ organisationnel. Il ne porte pas sur le mot « isomorphisme », ni sur l'expression « isomorphisme institutionnel », que les auteurs eux-mêmes créditent à d'autres — voir `term_origin`.",
+
+    "term_origin": {
+      "coined_by": "NI L'UN NI L'AUTRE POUR LE TERME LUI-MÊME. Trois strates distinctes, que l'usage courant écrase en une seule.",
+      "coined_in": "(1) « Isomorphisme » : emprunté à l'écologie humaine. DiMaggio et Powell l'écrivent en toutes lettres : « The concept that best captures the process of homogenization is isomorphism. In Hawley's (1968) description, isomorphism is a constraining process that forces one unit in a population to resemble other units that face the same set of environmental conditions » (ASR 48-2, p. 149). Référence donnée par eux : Amos Hawley, « Human ecology », in D. L. Sills (dir.), International Encyclopedia of the Social Sciences, New York, Macmillan, 1968, p. 328-337. (2) « Isomorphisme institutionnel », par opposition à « isomorphisme compétitif » : crédité par les auteurs à deux prédécesseurs, dans une phrase qui ne laisse pas de place au doute — « Following Meyer (1979) and Fennell (1980), we maintain that there are two types of isomorphism: competitive and institutional » (p. 149). Références données par eux : John W. Meyer, « The impact of the centralization of educational funding and control on state and local organizational governance », Stanford, IFG Program Report 79-B20, 1979 ; Mary L. Fennell, « The effects of environmental characteristics on the structure of hospital clusters », Administrative Science Quarterly 25, 1980, p. 484-510. (3) LES TROIS MÉCANISMES — coercitif, mimétique, normatif — SONT BIEN D'EUX : « We identify three mechanisms through which institutional isomorphic change occurs, each with its own antecedents » (p. 150). C'est là, et là seulement, que se loge leur apport propre, avec la théorie du champ organisationnel et de la structuration.",
+      "note": "La littérature de bilan dit la même chose, indépendamment du texte : « Hawley (1968) defined isomorphism as a constraining process… With their path breaking analysis of environmental effects on organization structure, Meyer and Rowan (1977) first applied the term isomorphism to institutions. DiMaggio and Powell (1983) elaborated the concept in their influential theory of institutional isomorphism in organizational fields » (Patricia H. Thornton, « Isomorphism », The Palgrave Encyclopedia of Strategic Management, 2011, p. 1 — PDF de l'autrice consulté intégralement). NOTER L'ÉCART ENTRE LES DEUX ATTESTATIONS : Thornton crédite Meyer ET Rowan (1977) de la première application aux institutions ; le texte de 1983, lui, cite Meyer (1979) et Fennell (1980) pour la distinction compétitif/institutionnel. Les deux ne se contredisent pas mais ne désignent pas le même geste. Dans les deux versions, le verbe qui revient pour DiMaggio et Powell est « elaborated » : ils ont formalisé et rendu enseignable un terme qui circulait déjà. FORMULATION DÉFENDABLE : le concept est d'eux, le mot ne l'est pas.",
+      "verification": "Les citations du texte de 1983 données ci-dessus proviennent d'un MIROIR (PDF de la numérisation JSTOR déposé sur gwern.net, 14 pages, couche OCR exploitable, pagination imprimée 147-160 conforme à la notice éditeur). Elles ont été relevées ici pour trancher la seule question d'ATTRIBUTION, qui relève de ce fragment. Elles ne valent pas lecture primaire et ne doivent pas servir de `key_quotation` : l'OCR d'une numérisation ancienne coupe les mots en fin de ligne et l'exemplaire n'est pas la version de l'éditeur."
+    },
+
+    "a_signaler_au_lecteur_primaire": {
+      "point": "Si le bloc primaire écrit que DiMaggio et Powell « forgent » l'isomorphisme institutionnel, l'écart est à corriger — non par moi, par lui. La phrase « Following Meyer (1979) and Fennell (1980), we maintain that there are two types of isomorphism: competitive and institutional » se trouve p. 149, deuxième colonne, immédiatement après la définition empruntée à Hawley. Elle est facile à manquer parce qu'elle est enchâssée dans la discussion de l'écologie des populations.",
+      "statut": "Signalement, pas correction. Je n'ai touché à rien dans `evidence.primary-reading.json`."
+    },
+
+    "filiation_weber": {
+      "question": "Le titre annonce une reprise de Weber. La carte interdit d'en faire une `documented_filiation` sans texte.",
+      "ce_qui_est_etabli": "LA REPRISE EST TEXTUELLE ET REVENDIQUÉE. L'article s'ouvre sur Weber : « In The Protestant Ethic and the Spirit of Capitalism, Max Weber warned that the rationalist spirit ushered in by asceticism had achieved a momentum of its own and that, under capitalism, the rationalist order had become an iron cage… (Weber, 1952:181-82) », puis « The imagery of the iron cage has haunted students of society as the tempo of bureaucratization has quickened. But while bureaucracy has spread continuously in the eighty years since Weber wrote, we suggest that the engine of organizational rationalization has shifted » (p. 147). La réception lit exactement ce geste : Beckert écrit que les auteurs « sought to understand it not as the outcome of market-driven rationalization processes—hence the reference to Max Weber in their title—but as rooted in institutional dynamics » (Sociological Theory 28-2, 2010, p. 151), et plus loin qu'ils visaient « an alternative to Max Weber's claim that the dominance of bureaucratic forms in modern capitalism (which is a homogenizing process) is primarily market driven » (p. 158-159). La filiation n'est donc pas d'inspiration : c'est une reprise de PROBLÈME assortie d'un DÉSACCORD sur la cause.",
+      "ce_qui_ne_l_est_pas": "QUE L'OBJET REPRIS SOIT DE WEBER. La bibliographie de 1983 renvoie à « Weber, Max, 1952, The Protestant Ethic and the Spirit of Capitalism, New York: Scribner » — c'est-à-dire la traduction anglaise de Talcott Parsons. Or « iron cage » est le rendu de Parsons pour « stahlhartes Gehäuse » (littéralement : enveloppe/boîtier dur comme l'acier) : c'est la thèse de Peter Baehr, « The “Iron Cage” and the “Shell as Hard as Steel”: Parsons, Weber, and the Stahlhartes Gehäuse Metaphor in the Protestant Ethic and the Spirit of Capitalism », History and Theory 40(2), 2001, doi 10.1111/0018-2656.00160 — DOI résolu et notice confirmée sans écart, TEXTE NON OUVERT. Autrement dit : DiMaggio et Powell revisitent une image qui appartient à l'histoire de la traduction de Weber autant qu'à Weber. La carte avait raison de suspendre son jugement ; la suspension peut maintenant être levée à condition de dire les deux choses ensemble.",
+      "statut_propose": "documented_filiation POUR LE PROBLÈME (rationalisation, bureaucratisation, homogénéisation) — attestée par le texte de 1983 lui-même et par la lecture qu'en fait Beckert 2010. À ASSORTIR d'une note de traduction sur « iron cage » (Baehr 2001). Le chapitre que la carte désignait pour trancher — Stewart Clegg et Michael Lounsbury, « Weber: Sintering the Iron Cage », in Adler (dir.), The Oxford Handbook of Sociology and Organization Studies, OUP, 2009, doi 10.1093/oxfordhb/9780199535231.003.0006 — a été retrouvé et sa notice vérifiée, mais il n'a PAS été ouvert."
+    },
+
+    "non_filiations_confirmees": [
+      "CHAMP ORGANISATIONNEL (DiMaggio et Powell) / CHAMP (Bourdieu) : la carte demandait de ne pas fabriquer cette filiation. Rien dans ce passage ne permet de la documenter. `get_references` sur le DOI de 1983 rend `count: 0` — non par silence d'outil cette fois, mais parce que Semantic Scholar déclare explicitement les références de cette notice élidées par l'éditeur (« Notice: the following paper fields have been elided by the publisher: {'references'} »). J'ai donc vérifié à la main dans la bibliographie du miroir : Bourdieu n'y figure pas ; Giddens (Central Problems in Social Theory, 1979) y figure, ce qui rattache la « structuration » du texte à Giddens et non à Bourdieu. Ce constat repose sur un OCR de numérisation et demande confirmation sur la version éditeur.",
+      "DÉCOUPLAGE (Meyer et Rowan 1977) : voisin, contemporain, cité par le texte, mais distinct — et la confusion est courante dans la littérature appliquée (voir `common_misinterpretations`). Le texte de 1983 se démarque explicitement de ce courant : « The institutionalization approach associated with John Meyer and his students posits the importance of myths and ceremony but does not ask how these models arise and whose interests they initially serve » (p. 157). C'est un rapport de démarcation, pas de dérivation."
+    ]
+  },
+
+  "evidence": {
+    "secondary_sources": [
+      {
+        "citation": "Mark S. Mizruchi et Lisa C. Fein, « The Social Construction of Organizational Knowledge: A Study of the Uses of Coercive, Mimetic, and Normative Isomorphism », Administrative Science Quarterly, 44(4), décembre 1999, p. 653-683",
+        "year": 1999,
+        "language": "en",
+        "doi_isbn": "10.2307/2667051",
+        "url": "https://doi.org/10.2307/2667051",
+        "role": "reception",
+        "level": "A",
+        "establishes": "LA PIÈCE CENTRALE DU DOSSIER : un article de revue de premier rang dont l'OBJET EST LA RÉCEPTION de DiMaggio et Powell 1983. Résumé des auteurs, reproduit intégralement (obtenu par l'index inversé d'OpenAlex, donc verbatim d'éditeur, non paraphrase) : « Arguing that knowledge in the social sciences is socially constructed through the selective interpretation of major works, we examine the fate of a classic article in organizational theory, DiMaggio and Powell's 1983 essay on institutional isomorphism. We show that one aspect of this article, the discussion of mimetic isomorphism, has received attention disproportionate to its role in the essay. A detailed examination of 26 articles in which researchers attempted to operationalize various components of DiMaggio and Powell's model shows that measures used to capture one of their concepts could have served as valid measures of one of the others. Findings show that DiMaggio and Powell's thesis has become socially constructed, as authors have selectively appropriated aspects of the work that accord with prevalent discourse in the field, and that centrally located researchers in sociology and organizational behavior are more likely than other scholars to invoke this dominant interpretation of their article. » TROIS RÉSULTATS DISTINCTS, à ne pas confondre : (1) surreprésentation du mimétique dans la littérature citante ; (2) NON-SÉPARABILITÉ EMPIRIQUE des trois mécanismes — les mesures d'un mécanisme auraient pu valoir pour un autre, sur 26 articles examinés ; (3) effet de position : les chercheurs centraux du champ portent davantage la lecture dominante. Le point (2) est le plus lourd et le plus oublié : il ne dit pas que la littérature lit mal, il dit que le dispositif se prête mal à l'épreuve empirique. CONSULTATION : RÉSUMÉ D'AUTEURS SEULEMENT. Le texte intégral n'a pas pu être ouvert (JSTOR et SAGE renvoient 403, Gale renvoie 410). Le chiffrage circulant sur le web (« douze articles n'utilisent que le mimétique, cinq le coercitif, trois le normatif ») N'EST PAS repris ici : il provient d'un résumé de moteur de recherche, non d'une source ouverte."
+      },
+      {
+        "citation": "Jens Beckert, « Institutional Isomorphism Revisited: Convergence and Divergence in Institutional Change », Sociological Theory, 28(2), juin 2010, p. 150-166",
+        "year": 2010,
+        "language": "en",
+        "doi_isbn": "10.1111/j.1467-9558.2010.01369.x",
+        "url": "https://doi.org/10.1111/j.1467-9558.2010.01369.x",
+        "role": "critique",
+        "level": "A",
+        "establishes": "LA DISCUSSION THÉORIQUE LA PLUS NETTE, et la seule source de ce dossier lue INTÉGRALEMENT (PDF de la série MPIfG Journal Articles, 17 pages, ouvert et fouillé). Établit : (1) LE POIDS DU TEXTE — « Their paper became one of the most cited articles in sociology ever and together with the article by Meyer and Rowen (1977) shaped subsequent research in the field (Mizruchi and Fein 1999) » (p. 150). (2) LA CIBLE DE LA CRITIQUE EST LA RÉCEPTION, PAS LES AUTEURS, et Beckert le dit deux fois : « The intention of the article by DiMaggio and Powell (1983:147) was not to claim that processes of isomorphism are somehow more important than the opposite… Independent of this intention, the influence of the article has led to a one-sided picture of institutional development in the new sociological institutionalism in which isomorphism is given undue analytic weight (Mizruchi and Fein 1999) » (p. 151) ; et « This is not to be understood as a critique of the article by DiMaggio and Powell » (p. 153). (3) LA THÈSE PROPRE : les mécanismes ne sont pas orientés — « All four mechanisms can support processes of institutional homogenization, but under different conditions they can also lead to institutional divergence » (p. 153). Beckert reprend les trois mécanismes sous les noms de POUVOIR (coercitif), ATTRACTION (normatif) et MIMÉSIS (mimétique), et AJOUTE LA COMPÉTITION comme quatrième — « which was deliberately not discussed by DiMaggio and Powell because they sought to provide an alternative to competition-based explanations » (p. 152-153). (4) LA CONCLUSION, qui vaut prise de position sur l'héritage wébérien : « Not only does the “iron cage” have other causes than those envisioned by Max Weber; it may not exist at all » (p. 163). (5) UN CONSTAT DE MÉTHODE pour la suite du champ : « Contrary to studies in the new sociological institutionalism this research must not be set up to look for empirical proof for tendencies of homogenization ». CONSULTATION : TEXTE INTÉGRAL."
+      },
+      {
+        "citation": "Patricia H. Thornton, « Isomorphism », in David J. Teece et Mie Augier (dir.), The Palgrave Encyclopedia of Strategic Management, Palgrave Macmillan, 2011, 3 p.",
+        "year": 2011,
+        "language": "en",
+        "doi_isbn": null,
+        "url": "https://patriciathornton.com/wp-content/uploads/2012/02/Palgrave-entry-on-isomorphism3.pdf",
+        "role": "synthesis",
+        "level": "C",
+        "establishes": "ENTRÉE D'ENCYCLOPÉDIE SIGNÉE PAR UNE SPÉCIALISTE DU COURANT (Thornton est l'autrice de la perspective des logiques institutionnelles) : elle donne l'état de la question tel que le champ le résume à ses propres étudiants. Établit : (1) LA GÉNÉALOGIE DU TERME (voir `attribution.term_origin`). (2) LA DÉFINITION DU CHAMP ORGANISATIONNEL et la proposition d'ensemble : « The overarching proposition is that increases in “structuration” in an organizational field lead to increases in isomorphism in organizational forms and practices. » (3) LA DISTINCTION QUI SE PERD DANS L'USAGE : « There are two types of isomorphism—competitive and institutional… Distinct from efficiency and competitive motivations for organizations' adaptation to their environment, institutional isomorphism assumes that organizations seek legitimacy by conforming to a socially constructed environment. » (4) LE BILAN CRITIQUE, en trois temps, chacun sourcé : Boxenbaum et Jonsson (2008) — « it is difficult to determine the degree of empirical support for the concept of institutional isomorphism because DiMaggio and Powell's (1983) constructionist definition of isomorphic forces in an organizational field renders few studies directly comparable » et la dérive qui suit, « Quantitative studies focus on the mechanisms in which practices spread, not the level of isomorphism in the field, suggesting that diffusion is synonymous with isomorphism. This may conflate legitimacy driven isomorphism with the concept of diffusion which can be driven by competing theories, such as resource dependence » ; Mizruchi et Fein (1999) — « among the three isomorphic pressures, mimesis has received the most attention, suggesting this research is shaped by academic trends » ; Kraatz et Zajac (1996) — « showed that increasing maturity of an organizational field did not lead to the expected isomorphism in educational programs because of a simultaneous increase in competitive pressure to differentiate student programs ». (5) UN CONSTAT DE TRAJECTOIRE : « Scholarly attention to isomorphism research has peaked with more recent emphasis on culture and cognition and individual- and organization-level agency and institutional logics (Boxenbaum and Jonsson, 2008). » RÉSERVE : niveau C (encyclopédie), et sa bibliographie contient au moins une erreur — Mizruchi et Fein y sont datés correctement mais paginés « ASQ 33: 194-210 » au lieu de 44: 653-683. Une entrée signée par une spécialiste n'est pas exempte d'erreurs de référence : à ne pas recopier. CONSULTATION : TEXTE INTÉGRAL (PDF de 3 pages, extrait et lu)."
+      },
+      {
+        "citation": "Eva Boxenbaum et Stefan Jonsson, « Isomorphism, Diffusion and Decoupling: Concept Evolution and Theoretical Challenges », in R. Greenwood, C. Oliver, T. B. Lawrence et R. E. Meyer (dir.), The SAGE Handbook of Organizational Institutionalism, 2e éd., SAGE, 2017, p. 79-104 [1re éd. 2008, p. 78-98]",
+        "year": 2017,
+        "language": "en",
+        "doi_isbn": null,
+        "url": "https://minesparis-psl.hal.science/hal-01488051",
+        "role": "synthesis",
+        "level": "B",
+        "establishes": "LE CHAPITRE DE BILAN DE RÉFÉRENCE DU COURANT, celui que la carte et le scout désignaient. Notice vérifiée par l'API de HAL (dépôt Mines Paris-PSL, type COUV, pagination p. 79-104 pour la 2e édition, éditeur SAGE, année 2017). Résumé des auteurs : « This chapter traces the evolution of the core theoretical constructs of isomorphism, decoupling and diffusion in organizational institutionalism. We first review the original theoretical formulations of these constructs and then examine their evolution in empirical research conducted over the past four decades. We point to unexamined and challenging aspects of this conceptual evolution, including the causal relationships among these core theoretical constructs. » CE QUE CE CHAPITRE ÉTABLIT SUR LE FOND ne m'est connu QUE PAR LE COMPTE QU'EN REND THORNTON 2011 (difficulté de l'épreuve empirique ; assimilation de l'isomorphisme à la diffusion ; déclin de l'attention au profit de l'agence et des logiques institutionnelles) : c'est une lecture de seconde main de la 1re édition, et elle est signalée comme telle. ATTENTION AUX PAGINATIONS : 1re éd. 2008 p. 78-98 (parfois citée 77-98), 2e éd. 2017 p. 79-104 ; la fiche doit dire de quelle édition elle parle. CONSULTATION : NOTICE ET RÉSUMÉ SEULEMENT. Le dépôt HAL, bien que déclaré `openAccess: true`, oppose au téléchargement un défi anti-robot JavaScript (« Anubis ») que ni le fetch web ni curl ni un proxy d'extraction n'ont franchi."
+      },
+      {
+        "citation": "Matthew S. Kraatz et Edward J. Zajac, « Exploring the Limits of the New Institutionalism: The Causes and Consequences of Illegitimate Organizational Change », American Sociological Review, 61(5), 1996, p. 812-836",
+        "year": 1996,
+        "language": "en",
+        "doi_isbn": "10.2307/2096455",
+        "url": "https://doi.org/10.2307/2096455",
+        "role": "critique",
+        "level": "B",
+        "establishes": "LA CONTRE-ÉPREUVE EMPIRIQUE LA PLUS CITÉE : sur les liberal arts colleges américains, la maturation du champ ne produit pas l'homogénéisation attendue, la pression concurrentielle à la différenciation jouant en sens inverse. Le titre porte le désaccord (« exploring the limits »), et le résultat est rapporté en ces termes par Thornton 2011 : « increasing maturity of an organizational field did not lead to the expected isomorphism in educational programs because of a simultaneous increase in competitive pressure to differentiate student programs ». CONSULTATION : MÉTADONNÉES SEULES (Crossref : titre, revue, année, DOI ; Semantic Scholar : 763 citations, résumé absent de la notice). Le contenu ne m'est connu que par le compte qu'en rend Thornton. Je n'affirme rien de plus."
+      },
+      {
+        "citation": "Donald C. Hambrick, Sydney Finkelstein, Theresa S. Cho et Eric M. Jackson, « Isomorphism in Reverse: Institutional Theory as an Explanation for Recent Increases in Intraindustry Heterogeneity and Managerial Discretion », Research in Organizational Behavior, vol. 26, 2004",
+        "year": 2004,
+        "language": "en",
+        "doi_isbn": "10.1016/s0191-3085(04)26008-7",
+        "url": "https://doi.org/10.1016/s0191-3085(04)26008-7",
+        "role": "critique",
+        "level": "B",
+        "establishes": "Second front de la contestation empirique, venu du côté du management stratégique : le titre soutient que les industries sont devenues plus HÉTÉROGÈNES, et que la théorie institutionnelle peut expliquer cette divergence-là. Retenu ici comme fait de réception — l'existence d'une contestation nommée et publiée — et non pour son contenu. CONSULTATION : MÉTADONNÉES SEULES (Crossref ; Semantic Scholar : 123 citations, résumé absent). Le texte n'a pas été ouvert (Elsevier sous abonnement)."
+      },
+      {
+        "citation": "Lynne G. Zucker, « Institutional Theories of Organization », Annual Review of Sociology, 13, 1987, p. 443-464",
+        "year": 1987,
+        "language": "en",
+        "doi_isbn": "10.1146/annurev.so.13.080187.002303",
+        "url": "https://doi.org/10.1146/annurev.so.13.080187.002303",
+        "role": "synthesis",
+        "level": "B",
+        "establishes": "Première revue de littérature du courant, publiée quatre ans après l'article, par une des fondatrices du néo-institutionnalisme. Fait de réception : le courant s'auto-bilan très tôt, et dans la revue de synthèse de référence de la sociologie américaine (2706 citations selon Semantic Scholar). CONSULTATION : MÉTADONNÉES SEULES (Crossref ; le résumé n'est pas dans la notice, Annual Reviews est sous abonnement). Je ne sais donc PAS ce que Zucker dit de l'isomorphisme, et surtout pas si elle le discute ou l'endosse."
+      },
+      {
+        "citation": "Roy Suddaby, « Challenges for Institutional Theory », Journal of Management Inquiry, 19(1), 2010, p. 14-20",
+        "year": 2010,
+        "language": "en",
+        "doi_isbn": "10.1177/1056492609347564",
+        "url": "https://doi.org/10.1177/1056492609347564",
+        "role": "critique",
+        "level": "B",
+        "establishes": "Fait de réception seulement : trente ans après, une revue de management publie un essai dont le titre annonce un bilan des difficultés du courant (832 citations selon Semantic Scholar). Il figure dans un numéro qui porte aussi Thomas Lawrence, Roy Suddaby et Bernard Leca, « Institutional Work: Refocusing Institutional Studies of Organization » (doi 10.1177/1056492610387222) et la réplique de Hugh Willmott, « “Institutional Work” for What? Problems and Prospects of Institutional Theory » (doi 10.1177/1056492610387224) : le débat sur le déplacement de l'isomorphisme vers l'agence est donc daté, situé et contradictoire. CONSULTATION : MÉTADONNÉES SEULES pour les trois (Crossref ; résumés absents des notices Semantic Scholar). QUE ces textes déplacent l'attention de l'isomorphisme vers l'agence est attesté par leurs titres et par Thornton 2011 ; CE QU'ILS reprochent exactement à l'isomorphisme n'a pas été lu ici."
+      },
+      {
+        "citation": "Peter Baehr, « The “Iron Cage” and the “Shell as Hard as Steel”: Parsons, Weber, and the Stahlhartes Gehäuse Metaphor in the Protestant Ethic and the Spirit of Capitalism », History and Theory, 40(2), 2001, p. 153-169",
+        "year": 2001,
+        "language": "en",
+        "doi_isbn": "10.1111/0018-2656.00160",
+        "url": "https://doi.org/10.1111/0018-2656.00160",
+        "role": "translation",
+        "level": "B",
+        "establishes": "Établit — par son titre, sa revue et sa notice, vérifiés sans écart — que « iron cage » est le rendu de Parsons pour le « stahlhartes Gehäuse » de Weber, et que cette image a fait carrière propre en anglais. C'est la pièce qui empêche de traiter « The Iron Cage Revisited » comme une reprise directe de Weber : DiMaggio et Powell citent l'édition Scribner 1952 de la traduction Parsons (bibliographie de 1983, entrée « Weber, Max, 1952 »). CONSULTATION : MÉTADONNÉES SEULES (Crossref, DOI résolu). L'argument fin de Baehr — ce que « Gehäuse » et « stahlhart » impliquent contre « cage » et « iron » — n'a PAS été lu ici et ne doit pas être détaillé sur la foi de ce fragment."
+      },
+      {
+        "citation": "Stewart Clegg et Michael Lounsbury, « Weber: Sintering the Iron Cage. Translation, Domination, and Rationality », in Paul S. Adler (dir.), The Oxford Handbook of Sociology and Organization Studies: Classical Foundations, Oxford University Press, 2009, p. 118-145",
+        "year": 2009,
+        "language": "en",
+        "doi_isbn": "10.1093/oxfordhb/9780199535231.003.0006",
+        "url": "https://doi.org/10.1093/oxfordhb/9780199535231.003.0006",
+        "role": "reception",
+        "level": "B",
+        "establishes": "Chapitre de handbook consacré à ce que les organization studies ont fait de Weber, sous-titré « Translation, Domination, and Rationality » — le mot « translation » du sous-titre indique que la question de la traduction y est traitée comme un problème de fond. C'était la source désignée par la cartographie pour trancher la filiation wébérienne. Notice retrouvée et vérifiée (Crossref, 18 citations). CONSULTATION : MÉTADONNÉES SEULES. Non ouvert (OUP sous abonnement). La filiation a donc été tranchée SANS lui, sur le texte de 1983 et sur Beckert 2010 ; ce chapitre reste à ouvrir pour affiner."
+      }
+    ],
+
+    "francophone_sources": [
+      {
+        "citation": "Isabelle Huault, « Paul DiMaggio et Walter W. Powell — Des organisations en quête de légitimité », in Sandra Charreire Petit et Isabelle Huault (dir.), Les Grands Auteurs en Management, 3e éd., Caen, EMS Editions, 2017, p. 166-181 [1re version : Les Grands Auteurs en Management, EMS, 2009]",
+        "year": 2017,
+        "language": "fr",
+        "doi_isbn": "10.3917/ems.charr.2017.01.0166",
+        "url": "https://doi.org/10.3917/ems.charr.2017.01.0166",
+        "role": "synthesis",
+        "level": "B",
+        "establishes": "LA RÉFÉRENCE FRANCOPHONE DU DOSSIER, et elle existe bel et bien — contrairement à ce que le scout avait conclu (« aucune référence francophone directement sur l'isomorphisme institutionnel comme concept »). C'est une notice d'auteurs, dans l'ouvrage de synthèse français de référence sur les grands auteurs en management, signée par une universitaire spécialiste du courant. TROIS FAITS DE RÉCEPTION S'EN DÉDUISENT SANS OUVRIR LE TEXTE : (1) la littérature de synthèse française traite DiMaggio ET Powell COMME UN COUPLE, sous une entrée unique — la coattribution est la norme en français aussi ; (2) le titre retenu déplace l'accent du mécanisme vers son résultat, « des organisations en quête de LÉGITIMITÉ » — c'est par la légitimité, non par l'isomorphisme, que le couple est présenté au lectorat français de gestion ; (3) le chapitre a été maintenu et repaginé d'une édition à l'autre (2009, puis p. 166-181 en 2017) et il est cité 7 fois selon Crossref. VÉRIFICATION : DOI résolu par verify_reference, auteur « Isabelle Huault », année 2017, éditeur EMS, ISBN 9782376870432 — aucun écart. Attention, Crossref donne à chaque chapitre de ce volume le titre du LIVRE et non celui du chapitre : le titre exact vient de la page Cairn (« XI. Paul DiMaggio et Walter W. Powell – Des organisations en quête de légitimité ») et du dépôt HAL de l'autrice (halshs-00671797, fichier DiMaggio_Powell.pdf, déclaré open access). CONSULTATION : MÉTADONNÉES SEULES. Le contenu du chapitre N'A PAS ÉTÉ LU : Cairn renvoie 403 puis un mur JavaScript, et le PDF déposé sur HAL est protégé par le même défi anti-robot « Anubis » que le reste de HAL. Aucune affirmation sur ce que Huault DIT du concept ne figure ici."
+      },
+      {
+        "citation": "Damien Rousselière et Marie J. Bouchard, « À propos de l'hétérogénéité des formes organisationnelles de l'économie sociale : isomorphisme versus écologie des organisations en économie sociale », Canadian Review of Sociology / Revue canadienne de sociologie, 48(4), 2011, p. 414-453",
+        "year": 2011,
+        "language": "fr",
+        "doi_isbn": "10.1111/j.1755-618x.2011.01271.x",
+        "url": "https://doi.org/10.1111/j.1755-618x.2011.01271.x",
+        "role": "critique",
+        "level": "B",
+        "establishes": "LA SEULE DISCUSSION FRANCOPHONE REPÉRÉE QUI PRENNE LE CONCEPT LUI-MÊME POUR OBJET plutôt que pour outil : le titre oppose frontalement isomorphisme et écologie des organisations comme explications concurrentes de l'hétérogénéité persistante des formes organisationnelles de l'économie sociale. C'est, en français et depuis le Québec, la même question que celle de Kraatz et Zajac (1996) et de Hambrick et al. (2004) : pourquoi la convergence attendue ne se produit-elle pas ? PIÈGE DE MÉTADONNÉES À SIGNALER : Crossref étiquette cet article `language: en` alors que son titre et sa langue de rédaction sont français — c'est une des raisons pour lesquelles les filtres « langue = fr » d'OpenAlex et les recherches francophones automatiques le manquent. Un article francophone invisible aux filtres de langue n'est pas un article inexistant. CONSULTATION : MÉTADONNÉES SEULES (DOI résolu par verify_reference, sans écart ; Crossref ne fournit pas de résumé ; Wiley sous abonnement). Le déposant HAL (hal-03067882) n'offre pas de fichier."
+      },
+      {
+        "citation": "Jean Joana, « L'invention du député. Réunions parlementaires et spécialisation de l'activité politique au XIXe siècle », Politix. Revue des sciences sociales du politique, n° 35, 1996, p. 23-42",
+        "year": 1996,
+        "language": "fr",
+        "doi_isbn": null,
+        "url": "https://www.persee.fr/collection/polix",
+        "role": "reception",
+        "level": "C",
+        "establishes": "TÉMOIN DE LA CIRCULATION FRANÇAISE DU CONCEPT HORS GESTION, en science politique, et surtout témoin de la FORME que prend cette circulation : l'auteur importe l'expression en traduisant lui-même la définition, qu'il attribue à l'article de 1983 — « isomorphisme institutionnel », « un processus contraignant qui force une unité dans une population à ressembler aux autres unités qui sont confrontées au même ensemble de conditions environnantes » (extrait de l'index plein texte de Persée, avec renvoi à « The Iron Cage… »). Ce qui est notable : ce que le lecteur français reçoit sous le nom d'« isomorphisme institutionnel » est en réalité la définition de HAWLEY que DiMaggio et Powell citaient — la strate empruntée est passée pour la strate propre. Faute de traduction française publiée de l'article, chaque auteur retraduit, et c'est la phrase la plus citable qui voyage. CONSULTATION : EXTRAIT D'INDEXATION PERSÉE (résultat de recherche plein texte), PAS l'article. La pagination vient de la notice Persée. Aucune affirmation sur l'usage que Joana fait ensuite du concept."
+      },
+      {
+        "citation": "Couche francophone appliquée : relevé de diffusion (HAL, Persée, theses.fr), interrogé le 16 août 2026",
+        "year": 2026,
+        "language": "fr",
+        "doi_isbn": null,
+        "url": "https://api.archives-ouvertes.fr/search/",
+        "role": "reception",
+        "level": "D",
+        "establishes": "CE N'EST PAS UNE SOURCE, C'EST UN RELEVÉ — consigné parce qu'un état de la couche francophone qui n'a pas été mesuré n'est pas un résultat. HAL, requête « isomorphisme institutionnel » : 20 dépôts, TOUS des applications empiriques françaises ou francophones — insertion par l'activité économique (Gianfaldoni et Tamiozzo 2011 ; Jory 2014), banque et Internet (Mounoud et Chetioui 2006), RSE et enquête internationale (Ben Rhouma, Koleva et Schaltegger 2018-2019), audit légal (Baker, Bédard et Prat dit Hauret 2008), normes IAS/IFRS (Barbu 2006), université française (Tandilashvili 2022, Gestion et management public, doi 10.3917/gmp.101.0055), PCRDT européen (Kustosz 2013), économie sociale (Bidet 2003, Revue du MAUSS, doi 10.3917/rdm.021.0162). PERSÉE, expression exacte « isomorphisme institutionnel » : 35 documents, même profil — Politix 1996, Sociologie et sociétés 2015 (Chauvin), Relations industrielles 2018 (Pichault, Lorquet et Orianne), Lien social et Politiques 2025 (Laborier). THESES.FR : 38 thèses. CE QUE CE RELEVÉ ÉTABLIT : le concept est massivement DIFFUSÉ en français et massivement APPLIQUÉ ; il n'y est presque pas DISCUTÉ. CE QU'IL N'ÉTABLIT PAS : que la discussion française n'existe pas — Cairn, où publient la Revue française de gestion, Gestion et management public et la Revue du MAUSS, est resté fermé (403 puis mur JavaScript), et OpenEdition n'expose pas de recherche sans JavaScript. UNE ANOMALIE DE CITATION relevée au passage, à traiter comme un indice et non comme un résultat : deux des textes Persée citent « DiMaggio et Powell 1991 » ou « 2021 » — c'est-à-dire l'ouvrage collectif de 1991 ou une réédition — là où l'argument vient de l'article de 1983. En français, l'article et le livre sont fréquemment interchangés."
+      }
+    ],
+
+    "translation_notes": [
+      {
+        "term_source": "institutional isomorphism",
+        "term_fr": "isomorphisme institutionnel",
+        "note": "Décalque intégral, sans concurrent : les 20 dépôts HAL, les 35 documents Persée et les 38 thèses recensés emploient tous la même forme. Le terme n'a donc pas subi de déplacement lexical en passant en français — ce qui a été déplacé, c'est le CONTENU cité sous ce nom (voir la notice Joana 1996 : c'est la définition de Hawley qui circule). AUCUNE TRADUCTION FRANÇAISE PUBLIÉE DE L'ARTICLE DE 1983 N'A ÉTÉ REPÉRÉE : chaque auteur francophone retraduit les passages dont il a besoin. Toute « citation française » de DiMaggio et Powell rencontrée dans la littérature est donc une traduction d'auteur, jamais une traduction de référence."
+      },
+      {
+        "term_source": "coercive / mimetic / normative isomorphism",
+        "term_fr": "isomorphisme coercitif / mimétique / normatif",
+        "note": "Décalque également, et stable. Le seul flottement français est le nom du genre : les textes de gestion écrivent souvent « les trois pressions institutionnelles » ou « les pressions isomorphiques », ce qui transforme trois MÉCANISMES d'homogénéisation d'un champ en trois VARIABLES pesant sur une organisation isolée. Le glissement est de vocabulaire autant que de niveau d'analyse."
+      },
+      {
+        "term_source": "organizational field",
+        "term_fr": "champ organisationnel",
+        "note": "Décalque. Homonymie avec le « champ » de Bourdieu, en français plus tentante encore qu'en anglais. Aucune filiation n'est documentée : Bourdieu ne figure pas dans la bibliographie de 1983 (vérifié sur le miroir OCR), Giddens y figure. Voir `attribution.non_filiations_confirmees`."
+      },
+      {
+        "term_source": "iron cage (Weber, trad. Parsons 1930) / stahlhartes Gehäuse",
+        "term_fr": "cage d'acier / cage de fer",
+        "note": "Chaîne de traduction à trois maillons, et le français hérite du deuxième. Weber écrit « stahlhartes Gehäuse » (boîtier dur comme l'acier) ; Parsons rend « iron cage » ; DiMaggio et Powell reprennent cette image anglaise dans leur titre en citant l'édition Scribner 1952 ; le français reçoit « cage d'acier » ou « cage de fer » selon les traducteurs. Le concept d'isomorphisme institutionnel arrive donc en français lesté d'une métaphore qui a déjà changé de langue deux fois. Source de la démonstration : Baehr 2001 (History and Theory, doi 10.1111/0018-2656.00160), notice vérifiée, texte non ouvert."
+      }
+    ],
+
+    "known_ambiguities": [
+      "ISOMORPHISME OU DIFFUSION ? C'est l'ambiguïté la plus lourde et elle est reconnue à l'intérieur du courant. Thornton, résumant Boxenbaum et Jonsson : les études quantitatives « focus on the mechanisms in which practices spread, not the level of isomorphism in the field, suggesting that diffusion is synonymous with isomorphism. This may conflate legitimacy driven isomorphism with the concept of diffusion which can be driven by competing theories, such as resource dependence » (Thornton 2011, p. 1-2). Mesurer la propagation d'une pratique et mesurer l'homogénéisation d'un champ ne sont pas la même opération ; une grande partie de la littérature empirique fait la première en croyant faire la seconde.",
+      "LES TROIS MÉCANISMES SONT-ILS SÉPARABLES EMPIRIQUEMENT ? Mizruchi et Fein répondent non, sur pièces : « measures used to capture one of their concepts could have served as valid measures of one of the others » (résumé d'auteurs, ASQ 1999). Cela ne condamne pas la typologie comme outil de pensée ; cela interdit de la traiter comme trois variables indépendantes. La littérature appliquée fait pourtant exactement cela, en masse.",
+      "L'ISOMORPHISME EST-IL UNE TENDANCE DU MONDE OU UN EFFET DE FOCALE ? Beckert soutient que les mêmes mécanismes produisent aussi bien de la divergence, et que la question « homogénéisation ou divergence » est mal posée : « The question is not whether homogenization or divergence is more important. Empirical studies uncover evidence for both » (2010, p. 152). Kraatz et Zajac (1996) et Hambrick et al. (2004) documentent des cas d'hétérogénéisation croissante. Aucun de ces textes ne conteste le mécanisme ; tous contestent qu'il ait une direction fixe.",
+      "OÙ S'ARRÊTE LE CONCEPT DE DIMAGGIO ET POWELL ? Trois strates se superposent sous une seule étiquette : le mot « isomorphisme » (Hawley 1968), la distinction compétitif/institutionnel (créditée par eux à Meyer 1979 et Fennell 1980), les trois mécanismes et la théorie du champ (les leurs). Dire « le concept de DiMaggio et Powell » sans préciser laquelle des trois strates on désigne produit une attribution fausse dans deux cas sur trois.",
+      "DIVERGENCE ENTRE LES DEUX COUCHES, et elle est franche. La couche internationale DISCUTE le concept : elle a produit une étude de sa propre réception (Mizruchi et Fein 1999), des contre-épreuves empiriques (Kraatz et Zajac 1996 ; Hambrick et al. 2004), une reformulation théorique (Beckert 2010) et des chapitres de bilan (Boxenbaum et Jonsson). La couche francophone l'APPLIQUE : 20 dépôts HAL, 35 documents Persée, 38 thèses, presque tous empiriques ; une seule discussion repérée (Rousselière et Bouchard 2011, depuis le Québec) et une seule notice d'auteurs (Huault). Je ne tranche pas sur la cause — absence réelle, ou fermeture de Cairn et d'OpenEdition à l'interrogation automatique. Les deux hypothèses restent ouvertes et la seconde est vérifiable par un accès institutionnel.",
+      "LE TITRE PROMET-IL UNE RÉFUTATION DE WEBER OU SA CONTINUATION ? Beckert lit une substitution de cause à l'intérieur d'un même problème (la bureaucratisation n'est plus tirée par le marché mais par l'État et les professions), et conclut que « the “iron cage” … may not exist at all » (2010, p. 163) — ce qui est plus radical que ce que le titre de 1983 laisse entendre. Que DiMaggio et Powell aient voulu prolonger Weber ou le corriger reste, dans les sources consultées, une affaire d'interprétation."
+    ],
+
+    "common_misinterpretations": [
+      {
+        "claim": "L'isomorphisme institutionnel, c'est l'imitation : les organisations se copient les unes les autres.",
+        "why_wrong": "C'est prendre un des trois mécanismes pour le tout, et ce n'est pas une intuition de vulgarisateur : c'est un résultat mesuré et publié. Mizruchi et Fein, dans ASQ, prennent pour objet la littérature citante et concluent : « one aspect of this article, the discussion of mimetic isomorphism, has received attention disproportionate to its role in the essay » ; et plus loin, que « DiMaggio and Powell's thesis has become socially constructed, as authors have selectively appropriated aspects of the work that accord with prevalent discourse in the field ». Beckert reprend le constat à son compte : l'influence de l'article « has led to a one-sided picture of institutional development … in which isomorphism is given undue analytic weight (Mizruchi and Fein 1999) » (2010, p. 151). Thornton le redit en trois lignes dans une entrée d'encyclopédie : « among the three isomorphic pressures, mimesis has received the most attention, suggesting this research is shaped by academic trends » (2011, p. 2). CE QUE LA RÉDUCTION EFFACE : le coercitif, c'est-à-dire l'État, la loi, le financeur, la dépendance de ressources ; et le normatif, c'est-à-dire la formation, les diplômes, les associations professionnelles — deux mécanismes qui ne relèvent nullement de l'imitation et qui portent l'essentiel de la thèse politique de l'article (« the engine of rationalization … has moved from the competitive marketplace to the state and the professions », résumé de 1983).",
+        "source": "Mizruchi et Fein 1999, résumé d'auteurs (ASQ 44-4, doi 10.2307/2667051) ; Beckert 2010, p. 151 (texte intégral consulté) ; Thornton 2011, p. 2 (texte intégral consulté)."
+      },
+      {
+        "claim": "Les trois isomorphismes sont trois pressions qu'on peut mesurer séparément sur une organisation.",
+        "why_wrong": "Deux objections distinctes, l'une sur la mesure, l'autre sur le niveau d'analyse. SUR LA MESURE : Mizruchi et Fein montrent, sur 26 articles qui tentent d'opérationnaliser le modèle, que « measures used to capture one of their concepts could have served as valid measures of one of the others » — les indicateurs ne discriminent pas. Boxenbaum et Jonsson, rapportés par Thornton, ajoutent que « it is difficult to determine the degree of empirical support for the concept of institutional isomorphism because DiMaggio and Powell's (1983) constructionist definition … renders few studies directly comparable ». SUR LE NIVEAU : l'explanandum de 1983 est l'homogénéité D'UN CHAMP, pas le comportement d'une organisation ; l'unité de mesure des études quantitatives est le plus souvent l'industrie ou la firme, et Thornton note que « quantitative studies for example may apply the theory to an industry, not organizational field-level data set ». Transformer trois mécanismes de structuration d'un champ en trois variables explicatives d'une adoption individuelle change l'objet.",
+        "source": "Mizruchi et Fein 1999, résumé d'auteurs ; Thornton 2011, p. 1-2, rapportant Boxenbaum et Jonsson 2008. OBSERVATION COMPLÉMENTAIRE DE CE PASSAGE, à traiter comme telle et non comme un résultat de littérature : sur un échantillon de 300 notices citantes récupérées par l'API de Semantic Scholar (tranche la plus récente, textes datés 2026 ; 23 seulement portent une phrase de contexte exploitable), la formule dominante est « coercive, normative and mimetic pressures » énumérées en bloc comme batterie de variables, souvent sous le nom générique de « institutional theory », le champ organisationnel et la rationalité collective n'apparaissant dans aucune. Une notice attribue même à « DiMaggio & Powell, 1983 » la thèse de la dépendance aux ressources (« an organization is an open system, and needs to obtain a large number of scarce and precious resources from the external environment »). Échantillon non représentatif — tranche de récence, non tirage aléatoire — mais convergent avec le constat de non-séparabilité."
+      },
+      {
+        "claim": "L'isomorphisme explique que les organisations adoptent ce qui marche : elles convergent vers la forme la plus efficace.",
+        "why_wrong": "C'est l'inverse de l'argument. La distinction que l'article installe est celle entre isomorphisme COMPÉTITIF (ajustement à un impératif d'efficience, que les auteurs laissent délibérément de côté) et isomorphisme INSTITUTIONNEL (quête de légitimité). Thornton : « Distinct from efficiency and competitive motivations for organizations' adaptation to their environment, institutional isomorphism assumes that organizations seek legitimacy by conforming to a socially constructed environment » ; « The second refers to the quest for political power and legitimacy—the social fit. » Beckert confirme que la mise à l'écart de la compétition est délibérée : les auteurs « deliberately left competition out of their seminal article because they were aiming for a theoretical conceptualization of isomorphism that would provide an alternative to Max Weber's emphasis on the role of competitive market pressures » (2010, p. 158-159) — au point que Beckert doit réintroduire la compétition comme quatrième mécanisme. Une structure peut donc se répandre parce qu'elle est légitime, sans être efficace ; c'est précisément ce que le concept sert à penser.",
+        "source": "Thornton 2011, p. 1 (texte intégral consulté) ; Beckert 2010, p. 152-153 et 158-159 (texte intégral consulté)."
+      },
+      {
+        "claim": "DiMaggio et Powell ont inventé le concept d'isomorphisme.",
+        "why_wrong": "Ils l'empruntent et le disent. « In Hawley's (1968) description, isomorphism is a constraining process that forces one unit in a population to resemble other units that face the same set of environmental conditions » (1983, p. 149) ; et pour l'étiquette même qui nous occupe : « Following Meyer (1979) and Fennell (1980), we maintain that there are two types of isomorphism: competitive and institutional » (même page). La littérature de bilan ajoute un maillon : « Meyer and Rowan (1977) first applied the term isomorphism to institutions. DiMaggio and Powell (1983) elaborated the concept » (Thornton 2011, p. 1). Leur apport propre — considérable — est ailleurs : les trois mécanismes, le champ organisationnel, la structuration, les hypothèses testables. La conséquence pratique pour une fiche : `term_origin.coined_by` ne peut pas être « DiMaggio et Powell ».",
+        "source": "Texte de 1983, p. 149 (miroir OCR, relevé pour l'attribution seulement) ; Thornton 2011, p. 1."
+      },
+      {
+        "claim": "La « cage d'acier » est l'expression de Weber, que DiMaggio et Powell revisitent.",
+        "why_wrong": "L'expression anglaise « iron cage » est le rendu de Talcott Parsons pour le « stahlhartes Gehäuse » de Weber : c'est la thèse de Peter Baehr (History and Theory, 2001, doi 10.1111/0018-2656.00160). DiMaggio et Powell citent l'édition Scribner 1952 de cette traduction (« Weber, Max, 1952, The Protestant Ethic and the Spirit of Capitalism, New York: Scribner », bibliographie de 1983). Le titre de 1983 revisite donc une image dont la forme appartient à l'histoire de la réception anglophone de Weber. Cela ne disqualifie pas la filiation — elle est explicite et argumentée dans le texte, et la réception la lit ainsi (Beckert 2010, p. 151) — mais interdit de présenter « la cage d'acier » comme un mot de Weber.",
+        "source": "Baehr 2001 (notice vérifiée, texte non ouvert) ; Beckert 2010, p. 151 et 158-159 (texte intégral consulté) ; bibliographie de l'article de 1983 (miroir OCR)."
+      },
+      {
+        "claim": "Isomorphisme et découplage, c'est la même chose : les organisations adoptent des formes pour la façade.",
+        "why_wrong": "Ce sont deux concepts, deux articles et deux auteurs différents : le découplage est de John W. Meyer et Brian Rowan (AJS, 1977), l'isomorphisme institutionnel de DiMaggio et Powell (ASR, 1983). Ils sont liés — le second cite le premier — mais l'article de 1983 se DÉMARQUE explicitement de ce courant : « The institutionalization approach associated with John Meyer and his students posits the importance of myths and ceremony but does not ask how these models arise and whose interests they initially serve » (1983, p. 157). L'isomorphisme répond à la question « pourquoi les organisations d'un champ se ressemblent-elles ? » ; le découplage répond à « comment une organisation tient-elle ensemble une structure légitime et une activité efficace ? ». La littérature de bilan les traite d'ailleurs dans un même chapitre (Boxenbaum et Jonsson) précisément parce que leur articulation causale reste, selon leur propre résumé, un problème non résolu (« unexamined and challenging aspects of this conceptual evolution, including the causal relationships among these core theoretical constructs »).",
+        "source": "Texte de 1983, p. 157 (miroir OCR) ; résumé de Boxenbaum et Jonsson 2017 (API HAL, hal-01488051). La confusion elle-même a été observée dans les phrases de contexte des textes citants récents, qui invoquent régulièrement « DiMaggio and Powell (1983) and Meyer and Rowan (1977) » comme une source unique pour le découplage — observation de ce passage, échantillon non représentatif."
+      }
+    ],
+
+    "reception": {
+      "consensus": "Quatre points ne sont contestés par aucune des sources consultées, y compris les plus critiques. (1) LA COSIGNATURE : DiMaggio ET Powell, dans cet ordre, ASR 48(2), 1983, p. 147-160 — concordance parfaite entre Crossref, OpenAlex (W3123282572) et Semantic Scholar, et invariabilité de la formule « DiMaggio and Powell (1983) » dans toute la littérature lue. (2) LE STATUT DU TEXTE : Beckert écrit que « their paper became one of the most cited articles in sociology ever » (2010, p. 150) ; les compteurs relevés le 16 août 2026 donnent 36 859 citations (OpenAlex), 37 529 (Semantic Scholar) et 31 691 (Crossref, relevé du scout) — les trois chiffres divergent selon les périmètres d'indexation, aucun ne doit être cité seul comme « le » nombre de citations. (3) LA TYPOLOGIE : coercitif, mimétique, normatif est reprise comme acquise, y compris par ceux qui la contestent — Beckert construit sa propre critique « based on the typology proposed by DiMaggio and Powell » et se contente d'y ajouter la compétition. (4) L'EXPLANANDUM : ce que le concept explique est l'homogénéité structurelle d'un champ par la quête de légitimité, et non par l'efficience. CE QUI EST DÉBATTU NE PORTE JAMAIS SUR L'EXISTENCE DES MÉCANISMES, mais sur leur direction, leur séparabilité et le poids qu'on leur a donné.",
+      "debates": [
+        "HOMOGÉNÉISATION OU DIVERGENCE ? Beckert (Sociological Theory, 2010) soutient que les quatre mécanismes — les trois de 1983 plus la compétition — sont neutres quant à la direction : « All four mechanisms can support processes of institutional homogenization, but under different conditions they can also lead to institutional divergence » (p. 153). Il tient à distinguer sa cible : ce n'est pas l'article de 1983, c'est la tradition qui s'en réclame. Aucune réponse de DiMaggio ou Powell à ce texte n'a été trouvée dans les sources consultées.",
+        "LA CONVERGENCE ATTENDUE SE PRODUIT-ELLE ? Kraatz et Zajac (ASR, 1996) documentent le contraire sur les liberal arts colleges ; Hambrick, Finkelstein, Cho et Jackson (Research in Organizational Behavior, 2004) soutiennent que l'hétérogénéité intra-sectorielle a AUGMENTÉ. Les deux titres portent le désaccord (« exploring the limits », « isomorphism in reverse »). Contenus non lus : ces deux entrées sont en métadonnées seules et le résultat de Kraatz et Zajac ne m'est connu que par le compte qu'en rend Thornton (2011).",
+        "LE MODÈLE EST-IL TESTABLE ? Mizruchi et Fein (ASQ, 1999) montrent la non-discrimination des mesures sur 26 articles ; Boxenbaum et Jonsson, rapportés par Thornton, imputent la difficulté à la définition constructionniste du champ, qui rend « few studies directly comparable ». C'est le débat le moins visible hors du champ et le plus lourd pour qui veut enseigner le concept comme un outil d'analyse empirique.",
+        "DÉTERMINISME ET AGENCE. Le courant s'est déplacé de l'isomorphisme vers l'entrepreneuriat institutionnel, le travail institutionnel et les logiques institutionnelles ; Thornton (2011) le constate en une phrase : « Scholarly attention to isomorphism research has peaked with more recent emphasis on culture and cognition and individual- and organization-level agency and institutional logics ». Le dossier de Journal of Management Inquiry 19(1), 2010 — Suddaby, « Challenges for Institutional Theory » ; Lawrence, Suddaby et Leca, « Institutional Work » ; réplique critique de Willmott — atteste que ce déplacement a été discuté contradictoirement. RÉSERVE : ces trois textes sont en métadonnées seules ; QUE le déplacement ait eu lieu est établi par Thornton, CE QUE chacun reproche exactement à l'isomorphisme ne l'est pas ici.",
+        "ISOMORPHISME OU DIFFUSION : voir `known_ambiguities`. Le débat porte sur ce que les études empiriques mesurent réellement, et il oppose la définition du concept à la pratique de recherche qui s'en réclame.",
+        "LA PART DE WEBER. Beckert conclut que « not only does the “iron cage” have other causes than those envisioned by Max Weber; it may not exist at all » (2010, p. 163) ; Clegg et Lounsbury consacrent un chapitre de handbook à ce que la traduction a fait à la « cage d'acier » (OUP, 2009, non ouvert). La question de savoir si l'article de 1983 prolonge Weber ou le congédie reste ouverte dans la littérature consultée."
+      ],
+      "critiques": [
+        {
+          "by": "Mark S. Mizruchi et Lisa C. Fein",
+          "claim": "La critique ne vise pas DiMaggio et Powell mais la communauté qui les cite : la thèse de 1983 « has become socially constructed », les auteurs citants ayant « selectively appropriated aspects of the work that accord with prevalent discourse in the field » ; le mimétique a reçu une attention « disproportionate to its role in the essay » ; et les mesures des trois mécanismes sont interchangeables sur les 26 articles examinés. C'est une critique de sociologie de la connaissance appliquée au champ lui-même.",
+          "source": "Administrative Science Quarterly, 44(4), 1999, p. 653-683, doi 10.2307/2667051 — résumé d'auteurs consulté, texte intégral non ouvert."
+        },
+        {
+          "by": "Jens Beckert",
+          "claim": "Le néo-institutionnalisme sociologique a fait de l'isomorphisme un présupposé au lieu d'une hypothèse : « I argue that this is a one-sided focus that leaves out many insights from other institutional and macrosociological approaches and does not do justice to actual social change because it overlooks the role played by divergent institutional development » (résumé). Le remède proposé est interne : reprendre la typologie de 1983, y ajouter la compétition, et spécifier les conditions sous lesquelles chaque mécanisme pousse vers l'homogénéité ou vers la divergence. Beckert prend soin d'exonérer les auteurs : « This is not to be understood as a critique of the article by DiMaggio and Powell. »",
+          "source": "Sociological Theory, 28(2), 2010, p. 150-166, doi 10.1111/j.1467-9558.2010.01369.x — texte intégral consulté (PDF MPIfG)."
+        },
+        {
+          "by": "Matthew S. Kraatz et Edward J. Zajac",
+          "claim": "Les limites du nouvel institutionnalisme sont empiriques : la maturation d'un champ organisationnel n'a pas produit l'homogénéisation attendue, la pression concurrentielle à la différenciation jouant simultanément en sens contraire.",
+          "source": "American Sociological Review, 61(5), 1996, p. 812-836, doi 10.2307/2096455 — MÉTADONNÉES SEULES ; le résultat est rapporté ici d'après Thornton 2011, p. 2."
+        },
+        {
+          "by": "Donald C. Hambrick, Sydney Finkelstein, Theresa S. Cho et Eric M. Jackson",
+          "claim": "« Isomorphism in reverse » : l'hétérogénéité intra-sectorielle et la latitude managériale se sont accrues, et la théorie institutionnelle doit rendre compte de cela aussi.",
+          "source": "Research in Organizational Behavior, 26, 2004, doi 10.1016/s0191-3085(04)26008-7 — MÉTADONNÉES SEULES ; retenu comme fait de contestation, contenu non lu."
+        },
+        {
+          "by": "Eva Boxenbaum et Stefan Jonsson",
+          "claim": "Le degré de soutien empirique du concept est indéterminable en l'état, la définition constructionniste du champ rendant les études peu comparables ; et la littérature empirique a glissé de l'isomorphisme vers la diffusion, ce qui mélange une explication par la légitimité avec des explications concurrentes (dépendance aux ressources).",
+          "source": "Chapitre du SAGE Handbook of Organizational Institutionalism (1re éd. 2008, p. 78-98 ; 2e éd. 2017, p. 79-104) — NOTICE ET RÉSUMÉ SEULEMENT (API HAL, hal-01488051) ; la critique est rapportée ici d'après Thornton 2011, p. 1-2, qui résume la 1re édition."
+        },
+        {
+          "by": "Damien Rousselière et Marie J. Bouchard",
+          "claim": "En français : l'hétérogénéité persistante des formes organisationnelles de l'économie sociale est mieux expliquée par l'écologie des organisations que par l'isomorphisme — le titre pose les deux comme concurrents (« isomorphisme versus écologie des organisations »).",
+          "source": "Canadian Review of Sociology / Revue canadienne de sociologie, 48(4), 2011, p. 414-453, doi 10.1111/j.1755-618x.2011.01271.x — MÉTADONNÉES SEULES (DOI vérifié sans écart ; aucun résumé disponible, éditeur sous abonnement). Le contenu de l'argument n'a PAS été lu : seul le titre porte l'opposition."
+        }
+      ]
+    }
+  },
+
+  "non_etabli": [
+    "LE TEXTE INTÉGRAL DE MIZRUCHI ET FEIN 1999, pièce centrale du dossier, n'a PAS été lu : seul le résumé d'auteurs (obtenu par OpenAlex, verbatim d'éditeur) a pu l'être. JSTOR et SAGE renvoient 403, la notice Gale renvoie 410. Le détail du décompte des 26 articles — combien mobilisent le mimétique seul, combien le coercitif, combien le normatif — n'est donc PAS établi ici. Un chiffrage circule sur le web ; il provient d'un résumé de moteur de recherche et n'a pas été retenu.",
+    "LE CHAPITRE DE BOXENBAUM ET JONSSON n'a pas été ouvert : le dépôt HAL, pourtant déclaré open access, oppose un défi anti-robot JavaScript (« Anubis ») que ni le fetch web, ni curl, ni un proxy d'extraction n'ont franchi. Tout ce qui est dit de son contenu vient de Thornton 2011 — lecture de seconde main d'une édition antérieure.",
+    "LE CHAPITRE D'ISABELLE HUAULT, référence francophone du dossier, n'a pas été lu : Cairn renvoie 403 puis un mur JavaScript, le PDF HAL est protégé par le même « Anubis ». Sa notice est vérifiée (doi 10.3917/ems.charr.2017.01.0166), son contenu est inconnu. AUCUNE affirmation sur la manière dont la littérature française présente le concept ne repose sur lui.",
+    "ZUCKER 1987, KRAATZ ET ZAJAC 1996, HAMBRICK ET AL. 2004, SUDDABY 2010, LAWRENCE-SUDDABY-LECA 2010, WILLMOTT 2010, CLEGG ET LOUNSBURY 2009, BAEHR 2001, ROUSSELIÈRE ET BOUCHARD 2011 : notices vérifiées, TEXTES NON OUVERTS. Les résumés ne figurent pas dans les notices Semantic Scholar interrogées. Ce que ces textes établissent réellement reste à instruire.",
+    "SCITE N'ÉTAIT PAS DISPONIBLE dans ce passage. Aucune classification supporting / contrasting / mentioning n'a donc pu être obtenue : la répartition des accords et des désaccords dans les 37 000 citations de l'article n'est PAS mesurée ici. Ce qui en tient lieu — 300 notices citantes récupérées par l'API de Semantic Scholar, dont 23 seulement portent une phrase de contexte, toutes datées 2026 — est une tranche de récence, non un échantillon.",
+    "LES RÉFÉRENCES SORTANTES du DOI de 1983 ne sont pas disponibles chez Semantic Scholar : l'API répond explicitement que les références de cette notice ont été élidées par l'éditeur. Le `count: 0` de `get_references` a donc ici une cause connue et documentée — ce n'est ni un silence d'outil ni une absence de bibliographie. La bibliographie a été vérifiée à la main sur un miroir OCR, ce qui est moins fiable qu'une version éditeur.",
+    "LA COUCHE FRANCOPHONE N'A PAS PU ÊTRE INTERROGÉE ENTIÈREMENT. Cairn (403 puis mur JavaScript) et OpenEdition (recherche exclusivement JavaScript) sont restés fermés. Or c'est là que publient la Revue française de gestion, Gestion et management public, la Revue du MAUSS, Sociologie du travail : le constat « la couche francophone applique le concept mais ne le discute pas » est donc SOLIDE SUR HAL, PERSÉE ET THESES.FR, et PROVISOIRE au-delà.",
+    "AUCUNE PRISE DE POSITION RÉTROSPECTIVE DE DIMAGGIO OU DE POWELL sur la réception de leur article n'a été localisée dans ce passage. L'introduction de Powell et DiMaggio à The New Institutionalism in Organizational Analysis (Chicago, 1991) est le lieu attendu ; elle n'a pas été ouverte. Ce que les auteurs pensent de la lecture « mimétique » qui a prévalu reste inconnu.",
+    "OPENALEX N'A PAS PU ÊTRE INTERROGÉ SUR LES CITANTS FRANCOPHONES : la requête `cites:W3123282572, language:fr` aurait donné la mesure directe de la réception française, mais le quota quotidien de l'instance était épuisé (voir `provenance_fragment`). Cette mesure reste à faire, et elle est faisable en une requête.",
+    "LA FILIATION SELZNICK → NÉO-INSTITUTIONNALISME, que la carte signale comme « à vérifier sur texte », n'a PAS été instruite ici : elle excède le périmètre de ce concept et demande les chapitres de bilan du handbook (Palmer, Biggart et Dick ; J. Meyer), non ouverts."
+  ],
+
+  "provenance_fragment": {
+    "agent": "corpus-reception-analyst",
+    "at": "2026-08-16",
+    "action": "Instruction de la réception de l'isomorphisme institutionnel : attribution (strates du terme, cosignature, filiation wébérienne), interprétation (écart d'usage documenté par la littérature elle-même), discussion (débats, critiques nommées). Couches internationale et francophone menées en parallèle dès le premier appel. Aucune écriture hors de ce fichier ; `evidence.primary-reading.json` non ouvert, non modifié.",
+    "sources_ouvertes_integralement": [
+      "Jens Beckert, « Institutional Isomorphism Revisited », Sociological Theory 28(2), 2010, p. 150-166 — PDF MPIfG (17 p.), lu et fouillé",
+      "Patricia H. Thornton, « Isomorphism », Palgrave Encyclopedia of Strategic Management, 2011 — PDF (3 p.), lu intégralement",
+      "Résumé d'auteurs de Mizruchi et Fein 1999 — verbatim d'éditeur reconstitué depuis l'index inversé d'OpenAlex",
+      "Résumé d'auteurs de Boxenbaum et Jonsson 2017 — API HAL (hal-01488051)",
+      "DiMaggio et Powell 1983 — MIROIR de la numérisation JSTOR (gwern.net, 14 p., OCR), consulté UNIQUEMENT pour trancher l'attribution du terme (p. 149), la filiation wébérienne (p. 147), le titre de section des trois mécanismes (p. 150), la démarcation d'avec Meyer et ses élèves (p. 157) et la bibliographie. Ce n'est pas la version de l'éditeur : les passages relevés ne valent pas lecture primaire et ne peuvent pas servir de `key_quotation`."
+    ],
+    "bases_qui_ont_repondu": [
+      "Crossref — a répondu à tous les appels (recherches, verify_reference par DOI et par ISBN, API directe). C'est la base qui a porté ce passage.",
+      "HAL — API `api.archives-ouvertes.fr` pleinement fonctionnelle (notices, résumés, liens de fichiers) ; MAIS les fichiers eux-mêmes et les pages web sont derrière un défi anti-robot JavaScript (« Anubis »). Métadonnées oui, textes non.",
+      "Semantic Scholar — MUET par le MCP (429 sur les recherches, 400 sur `get_citations` par DOI), FONCTIONNEL en appel direct par identifiant de papier : la notice, le compteur et jusqu'à 300 notices citantes ont été obtenus ainsi. Le 400 du MCP vient de la forme de la requête, pas d'une absence de la notice.",
+      "OpenAlex — a répondu à UN appel direct (notice + résumé de Mizruchi et Fein, notice de l'article de 1983), puis a renvoyé un message explicite : « Insufficient budget. This request costs $0.0001 but you only have $0 remaining. Resets at midnight UTC. » Les 429 systématiques signalés par les passages précédents ne sont donc PAS une panne : c'est un QUOTA JOURNALIER ÉPUISÉ, qui se réinitialise. À retenter après minuit UTC.",
+      "Persée — a répondu (recherche par expression exacte : 35 documents, avec extraits plein texte indexés).",
+      "theses.fr — API a répondu (38 thèses)."
+    ],
+    "bases_muettes_ou_fermees": [
+      "scite — non connecté dans ce passage. Aucune classification supporting / contrasting / mentioning. Sur un article à 37 000 citations, c'est la lacune la plus lourde du dossier.",
+      "Cairn — 301 puis 403, puis mur JavaScript (« Please enable JS and disable any ad blocker »). Le scout l'avait signalé ; c'est confirmé. La réception française en gestion reste donc largement non consultée.",
+      "OpenEdition (search.openedition.org) — application JavaScript, aucune réponse exploitable sans navigateur.",
+      "HAL, couche fichiers — « Anubis » (proof-of-work JavaScript) sur shs.hal.science, minesparis-psl.hal.science et sciencespo.hal.science ; trois voies essayées (fetch web, curl avec en-têtes de navigateur, proxy d'extraction), les trois refusées. Des textes déclarés OPEN ACCESS sont donc restés fermés : c'est un silence d'outil, pas une absence de dépôt.",
+      "JSTOR (jstor.org/stable/2667051 et /2095101) — non ouvert ; SAGE (journals.sagepub.com) — 403 ; Gale — 410 ; Wiley, Elsevier, OUP, Annual Reviews — sous abonnement, non testés au-delà de la notice.",
+      "basepub.dauphine (dépôt institutionnel de l'autrice du chapitre francophone) — inatteignable depuis cet environnement (échec du tunnel réseau, 502).",
+      "Zotero — non interrogé dans ce passage (l'outil n'était pas listé comme connecté ; le scout l'avait trouvé hors service)."
+    ],
+    "avertissement_de_lecture": "Trois affirmations de ce fragment reposent sur une lecture de SECONDE MAIN et sont signalées comme telles à chaque occurrence : le résultat de Kraatz et Zajac (1996), la critique de Boxenbaum et Jonsson (2008) et le constat de déclin de l'attention portée à l'isomorphisme viennent tous de l'entrée d'encyclopédie de Thornton (2011), niveau C. Elles sont convergentes avec Beckert 2010, lu intégralement, mais elles ne sont pas vérifiées sur les textes qu'elles rapportent. Par ailleurs, le nombre de citations de l'article de 1983 (31 691, 36 859 ou 37 529 selon la base) ne doit à aucun moment être traité comme une preuve de justesse : le résultat central de ce dossier est précisément qu'une masse de citations concordantes peut porter une lecture appauvrie de l'original."
+  }
+}
