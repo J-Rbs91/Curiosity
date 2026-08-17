@@ -245,36 +245,38 @@ existe pour ça.
 
 ---
 
-## 5. Le mécanisme avant l'exemple
+## 5. La définition dans les termes de l'auteur
 
-Règle reprise telle quelle de la méthode d'origine, avec un test de suffisance adapté :
-
-> Une personne ayant lu cette fiche peut-elle **reconnaître le mécanisme dans une
-> organisation réelle** qu'elle n'a jamais vue décrite ?
-
-Si non, la fiche est incomplète, même si tout ce qu'elle dit est vrai.
-
-Concrètement, la fiche candidate n'est pas rédigée avant que le mécanisme ne soit écrit
-comme une **chaîne d'étapes**. Exemple (Merton) :
-
-```
-règles créées pour atteindre un objectif
-        ↓
-la conformité aux règles est valorisée et contrôlée
-        ↓
-la conformité devient le critère de réussite observé
-        ↓
-les moyens acquièrent une valeur propre
-        ↓
-respecter la procédure prend le pas sur la finalité initiale
-```
-
-`mechanism` est un tableau ordonné, minimum deux étapes, et le validateur le vérifie. La
-prose pédagogique ne vient qu'après, et doit pouvoir se relire comme la mise en phrases de
-cette chaîne.
+`evidence.concept_definition` énonce le concept **dans les termes de l'auteur**, sans
+vulgarisation. C'est la seule pièce de fond que la suite consomme : le résumé de la carte
+n'a que 170 caractères, et c'est à cette définition que le contrôleur aveugle les oppose.
 
 Fiche refusée : « Déplacement des buts : une organisation peut oublier ses objectifs. »
 C'est vrai, et vide.
+
+### Ce qui a été retiré, et pourquoi
+
+Le schéma exigeait autrefois une **chaîne d'étapes** (`mechanism`, deux étapes minimum,
+avec un test de suffisance) et des **conditions** d'apparition, d'intensification et de
+disparition. Ces champs ont été supprimés.
+
+Ils n'atteignaient aucun écran. La projection `corpus:build` ne lit que treize champs, et
+aucun d'eux n'en faisait partie. Le coût, lui, était réel et documenté :
+
+- `rationalite-limitee` a épuisé ses trois tours sur un désaccord de classement dans
+  `conditions.appears_when` — un champ que personne ne verra jamais ;
+- `couplage-lache` est resté candidat parce que sa chaîne d'étapes « ne passait pas le
+  test de suffisance », alors que sa carte, elle, était établie.
+
+Deux fiches perdues sur des données non affichées. La rigueur n'est pas retirée pour
+autant : elle reste où elle porte — citation verbatim et localisée, attribution confirmée,
+sources qui résolvent. Ce qui est retiré, c'est l'exigence d'épuiser le texte.
+
+Ont disparu pour la même raison : `pedagogy.detailed_explanation`, `concrete_example`,
+`example_setting`, `analysis_questions`, `quiz`, `graph.difficulty` et
+`difficulty_rationale`. Ceux-là servaient une session d'apprentissage que l'application a
+supprimée — `src/types/index.ts` le dit depuis longtemps ; le schéma du corpus ne l'avait
+simplement jamais suivi.
 
 ---
 
@@ -282,7 +284,7 @@ C'est vrai, et vide.
 
 Une fiche peut porter un passage du texte, cité mot pour mot (`evidence.key_quotation`,
 affiché par `ConceptQuotation`). C'est le **seul élément de l'application qui ne passe pas
-par nos mots** : tout le reste — résumé, mécanisme, exemple, quiz — est une reformulation.
+par nos mots** : tout le reste — accroche, résumé — est une reformulation.
 
 Quatre conditions, vérifiées par le validateur :
 
@@ -330,43 +332,31 @@ journal de validation. Schéma : [`corpus/schema/concept.record.schema.json`](..
 
 ### L'objet appli — `Concept` dans `src/types/index.ts`
 
-Pauvre : titre, question d'accroche, deux explications, un exemple, des questions
-d'analyse, un quiz, une difficulté, des relations, des sources étiquetées.
+Pauvre, et volontairement : titre, thème, citation, accroche, résumé, auteur, sources.
+Sept éléments — exactement ce que la carte affiche, et rien de plus.
 
 La projection est **mécanique et à sens unique** (`npm run corpus:build`). On n'édite
 jamais un concept généré à la main : la correction se fait dans l'objet maître, puis on
 reprojette. C'est ce qui garantit qu'aucune phrase de l'application n'existe sans un
 enregistrement sourcé derrière elle.
 
-### Ce que l'appli exige et que la méthode d'origine ne prévoyait pas
+### Le rattachement à un thème
 
-L'application n'affiche pas des fiches : elle fait fonctionner un **graphe** et un moteur
-pédagogique (`src/services/learning-engine`). Elle a donc besoin de quatre familles de
-données supplémentaires, qui sont elles aussi des affirmations et se vérifient comme
-telles :
+C'est la seule donnée de structure que la carte consomme encore : `graph.themes`, un
+identifiant existant de `src/content/themes.ts`, avec son libellé.
 
-| Donnée appli | Statut épistémique | Règle |
-|---|---|---|
-| `relatedConcepts`, `prerequisites`, `deepensInto`, `oppositeConcepts` | **Affirmations** sur la structure du champ | Chaque relation porte un `relation_kind` et une justification |
-| `quiz` | Reformulation testable | Chaque bonne réponse et chaque explication doivent être dérivables de `evidence` |
-| `difficulty` | Décision pédagogique | Justifiée par les prérequis, pas par l'intuition |
-| `concreteExample` | Illustration | Doit montrer le mécanisme, pas coller l'étiquette du concept sur une situation |
+Il reste une affirmation et se justifie — ranger un concept sous un thème, c'est dire
+quelque chose du champ. Un thème nouveau est possible, avec son libellé et sa
+justification ; un thème fabriqué pour ranger une carte ne l'est pas.
 
-Le `relation_kind` traite directement la confusion « corrélation historique ≠ filiation
-intellectuelle » :
-
-- `documented_filiation` — l'auteur B a lu et repris A, c'est sourcé (Simon → March) ;
-- `thematic_proximity` — même objet, sans filiation établie ;
-- `pedagogical_contrast` — rapprochement fabriqué par nous pour l'enseignement, assumé
-  comme tel, jamais présenté comme un lien historique.
-
-Une relation `documented_filiation` sans source est refusée par le validateur.
+Le graphe de prérequis, les relations entre concepts et le moteur pédagogique qui les
+consommait n'existent plus.
 
 ---
 
 ## 7. Les agents
 
-Neuf sous-agents, dans `.claude/agents/`. La règle centrale est celle de la méthode
+Huit sous-agents, dans `.claude/agents/`. La règle centrale est celle de la méthode
 d'origine : **celui qui cherche et rédige ne valide pas ; celui qui valide ne publie pas.**
 
 | Agent | Mission | Interdiction |
@@ -377,10 +367,7 @@ d'origine : **celui qui cherche et rédige ne valide pas ; celui qui valide ne p
 | `corpus-scout` | Repère les concepts candidats et les sources atteignables | Ne valide rien, ne rédige rien |
 | `corpus-primary-reader` | Établit ce que dit le texte de l'auteur, localisation à l'appui, et le passage citable s'il en existe un | Ne vulgarise pas, ne compare pas les auteurs |
 | `corpus-reception-analyst` | Établit comment la littérature académique lit ce concept | Ne modifie jamais le bloc primaire |
-| `corpus-concept-analyst` | Écrit définition, mécanisme, ambiguïtés, limites | Ne se valide pas lui-même, n'écrit pas la pédagogie |
-| `corpus-blind-reviewer` | Revérifie indépendamment, fait par fait | Ne connaît ni le brief ni la confiance des agents amont |
-| `corpus-pedagogy-writer` | Écrit accroche, explications, exemple, questions, quiz | **N'introduit aucune affirmation absente de `evidence`** |
-| `corpus-graph-curator` | Établit relations, prérequis, difficulté | Ne touche ni à `evidence` ni à `pedagogy` |
+| `corpus-blind-reviewer` | Revérifie indépendamment, fait par fait : preuve **et** fidélité de la prose | Ne connaît ni le brief ni la confiance des agents amont |
 | `corpus-editor` | Projette vers l'application | Ne peut traiter que des fiches `VALIDATED` |
 
 L'orchestrateur n'est pas un expert. Il ne dit jamais « Merton = déplacement des buts,
@@ -405,13 +392,19 @@ SOURCES          : concordantes | divergentes | insuffisantes
 VERDICT          : PASS | REWORK | REJECT
 ```
 
-Il passe deux fois, sur deux objets différents :
+Il tranche **deux jugements en une seule lecture**, sur un dossier unique produit par
+`npm run corpus:brief -- <id>` :
 
-- **passe A — preuve** : sur `evidence` seul, avant toute rédaction pédagogique ;
-- **passe B — fidélité** : sur `pedagogy` confronté à `evidence`, avec une question
+- **la preuve** : sur `evidence`, citation comprise ;
+- **la fidélité** : sur `pedagogy` et `graph` confrontés à `evidence`, avec une question
   unique — *cette prose ajoute-t-elle quelque chose que les sources n'établissent pas ?*
 
-Une passe B qui échoue ne renvoie pas à la recherche : elle renvoie à la réécriture.
+Les deux verdicts restent distincts dans `validation` — `evidence_review` et
+`pedagogy_review` — parce que ce sont deux questions distinctes : un échec de fidélité ne
+renvoie pas à la recherche, il renvoie à la réécriture. Mais ils sont rendus ensemble.
+
+Ils l'ont été en deux invocations séparées, et cela coûtait de rouvrir et retélécharger
+les mêmes sources deux fois pour une carte de 400 caractères.
 
 ---
 
@@ -429,22 +422,20 @@ Une passe B qui échoue ne renvoie pas à la recherche : elle renvoie à la ré�
      texte de l'auteur                littérature secondaire     couche FR incluse
               └──────────────┬──────────────┘
                              │
-                   [concept-analyst] → evidence{}          candidates/
+                    evidence{} déposé en                  candidates/
                              │
-                   [blind-reviewer] passe A                review/
+                   [card-writer] → la carte : thème, nom, citation,
+                             │      accroche, résumé, auteur, sources
+                             │                            review/
+                   [blind-reviewer] — preuve ET fidélité
                     ┌────────┼────────┐
                   PASS    REWORK    REJECT
                     │        │         └──────────────────▶ rejected/
-                    │        └── retour analyst (max 2 tours) ──┐
-                    │                                           │
-           [pedagogy-writer] → pedagogy{}                 3 tours ▶ rejected/
-                    │                                     (UNRESOLVED)
-           [blind-reviewer] passe B
-                    ├── REWORK ──▶ retour pedagogy-writer (max 2 tours)
-                    │PASS
-           [graph-curator] → graph{}
-                    │
-              status VALIDATED                            validated/
+                    │        └── retour card-writer (max 2 tours) ──┐
+                    │                                               │
+              status VALIDATED                    3 tours ▶ rejected/
+                    │                             (UNRESOLVED)
+                    │                                       validated/
                     │
               [corpus-editor] npm run corpus:build         src/content/generated/
 ```
@@ -458,7 +449,7 @@ Le répertoire **est** l'état. Le validateur refuse toute incohérence entre
 |---|---|---|
 | `corpus/candidates/` | `CANDIDATE` | Bloc `evidence` en cours, pas encore contrôlé |
 | `corpus/review/` | `IN_REVIEW` | Soumis au contrôleur, ou en REWORK |
-| `corpus/validated/` | `VALIDATED` | Les deux passes en PASS — seul répertoire projetable |
+| `corpus/validated/` | `VALIDATED` | Les deux verdicts en PASS — seul répertoire projetable |
 | `corpus/rejected/` | `REJECTED` | Avec `rejection_reason` obligatoire, conservé |
 
 Les rejets sont **conservés et versionnés**. Un concept rejeté pour attribution douteuse
@@ -472,11 +463,9 @@ qui reviendrait six mois plus tard doit retrouver la trace de son premier examen
 - au moins **une source secondaire académique indépendante** ;
 - la couche francophone **cherchée** (trouvée ou non, mais `francophone_layer_searched: true`) ;
 - attribution cohérente avec `authorship` (voir §9) ;
-- `mechanism` d'au moins deux étapes, passant le test de suffisance ;
 - aucun chiffre, date ou effectif dans la prose qui ne figure pas dans `evidence`.
 
-**REWORK** : la matière est là mais l'énoncé déborde — interprétation trop large, mécanisme
-incomplet, source secondaire qui n'établit pas ce qu'on lui fait dire, exemple qui colle
+**REWORK** : la matière est là mais l'énoncé déborde — interprétation trop large, source secondaire qui n'établit pas ce qu'on lui fait dire, exemple qui colle
 l'étiquette sans montrer le mécanisme. Deux tours maximum par passe.
 
 **REJECT** : attribution fausse, aucune source primaire atteignable, concept hors
@@ -662,7 +651,7 @@ Ordre suggéré, par ce qu'il apprend sur la méthode plus que par ce qu'il rapp
 1. Un concept **manifestement coécrit** (`garbage-can-model` : Cohen, March & Olsen, 1972)
    — il exerce d'emblée `authorship`, `attributed_to` et `attributionNote`, là où
    l'échafaudage écrivait simplement « James March ».
-2. Un concept **fortement vulgarisé** (`rationalite-limitee`) — c'est là que la passe B et
+2. Un concept **fortement vulgarisé** (`rationalite-limitee`) — c'est là que le contrôle de fidélité et
    `common_misinterpretations` prennent tout leur sens.
 3. Un concept **d'ouvrage français** (`zones-incertitude`) — il mesure ce que valent
    réellement les bases internationales sur cette partie du périmètre, et ce que la couche

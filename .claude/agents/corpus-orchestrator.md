@@ -20,7 +20,7 @@ fond, et un avis de ta part contaminerait la chaîne.
 - Trancher un désaccord sur le fond entre deux agents : tu renvoies au contrôleur aveugle.
 - Transmettre au contrôleur aveugle le brief initial, un niveau de confiance, le nom des
   agents amont ou la mention « concept connu ». Tu lui remets le dossier produit par
-  `npm run corpus:brief -- <id> --pass=A|B`, rien d'autre.
+  `npm run corpus:brief -- <id>`, rien d'autre.
 - Déplacer une fiche en `corpus/validated/` sans les deux verdicts `PASS`.
 - Modifier `src/content/generated/` à la main.
 

@@ -93,28 +93,13 @@
 
     "evidence": {
       "type": "object",
-      "description": "Ce que les sources établissent. Écrit par corpus-concept-analyst, contrôlé par la passe A du contrôleur aveugle.",
-      "required": ["concept_definition", "mechanism", "primary_sources", "secondary_sources"],
+      "description": "Ce que les sources établissent. Écrit par la lecture primaire et l'analyse de réception, contrôlé par le contrôleur aveugle.",
+      "required": ["concept_definition", "primary_sources", "secondary_sources"],
       "additionalProperties": false,
       "properties": {
         "concept_definition": {
           "type": "string",
-          "description": "Définition dans les termes de l'auteur, sans vulgarisation."
-        },
-        "mechanism": {
-          "type": "array",
-          "minItems": 2,
-          "items": { "type": "string" },
-          "description": "Chaîne ordonnée d'étapes. Test de suffisance : un lecteur doit pouvoir reconnaître le mécanisme dans une organisation qu'il n'a jamais vue décrite."
-        },
-        "conditions": {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "appears_when": { "type": "array", "items": { "type": "string" } },
-            "intensified_by": { "type": "array", "items": { "type": "string" } },
-            "disappears_when": { "type": "array", "items": { "type": "string" } }
-          }
+          "description": "Définition dans les termes de l'auteur, sans vulgarisation. Conservée bien que non affichée : c'est ce à quoi `pedagogy.short_explanation` doit être fidèle, et donc ce que le contrôleur aveugle lui oppose."
         },
         "key_quotation": {
           "type": ["object", "null"],
@@ -227,29 +212,12 @@
 
     "pedagogy": {
       "type": "object",
-      "description": "Mise en mots destinée à l'application. N'introduit aucune affirmation absente de `evidence`.",
-      "required": [
-        "hook_question",
-        "short_explanation",
-        "detailed_explanation",
-        "concrete_example",
-        "analysis_questions",
-        "quiz"
-      ],
+      "description": "Les deux seules phrases affichées par la carte. N'introduisent aucune affirmation absente de `evidence`.",
+      "required": ["hook_question", "short_explanation"],
       "additionalProperties": false,
       "properties": {
         "hook_question": { "type": "string" },
         "short_explanation": { "type": "string" },
-        "detailed_explanation": { "type": "string" },
-        "concrete_example": {
-          "type": "string",
-          "description": "Doit montrer le mécanisme à l'œuvre, pas coller l'étiquette du concept sur une situation."
-        },
-        "example_setting": {
-          "enum": ["entreprise", "administration", "petite-equipe", "association", "autre"]
-        },
-        "analysis_questions": { "type": "array", "minItems": 1, "items": { "type": "string" } },
-        "quiz": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/quizQuestion" } },
         "traceability": {
           "type": "array",
           "items": {
@@ -260,7 +228,7 @@
               "claim": { "type": "string" },
               "evidence_ref": {
                 "type": "string",
-                "description": "Chemin dans le bloc evidence, ex. « mechanism[2] » ou « primary_sources[0] »."
+                "description": "Chemin dans le bloc evidence, ex. « primary_sources[0] » ou « concept_definition »."
               }
             }
           }
@@ -270,8 +238,8 @@
 
     "graph": {
       "type": "object",
-      "description": "Position du concept dans le graphe consommé par le moteur pédagogique. Chaque relation est une affirmation et se justifie.",
-      "required": ["themes", "difficulty"],
+      "description": "Le thème sous lequel la carte se range. Un thème est une affirmation de rattachement et se justifie.",
+      "required": ["themes"],
       "additionalProperties": false,
       "properties": {
         "themes": {
@@ -280,8 +248,6 @@
           "items": { "type": "string" },
           "description": "Identifiants existants de src/content/themes.ts."
         },
-        "difficulty": { "type": "integer", "minimum": 1, "maximum": 5 },
-        "difficulty_rationale": { "type": ["string", "null"] },
         "related": { "type": "array", "items": { "$ref": "#/$defs/relation" } },
         "opposites": { "type": "array", "items": { "$ref": "#/$defs/relation" } },
         "prerequisites": { "type": "array", "items": { "$ref": "#/$defs/dependency" } },
@@ -408,22 +374,6 @@
           "enum": ["B", "C"],
           "description": "B = secondaire académique, C = synthèse académique. Les niveaux D et E ne s'enregistrent pas comme sources."
         }
-      }
-    },
-    "quizQuestion": {
-      "type": "object",
-      "required": ["id", "type", "prompt", "correctAnswer", "explanation"],
-      "additionalProperties": false,
-      "properties": {
-        "id": { "type": "string" },
-        "type": { "enum": ["mcq", "true-false", "open"] },
-        "prompt": { "type": "string" },
-        "choices": { "type": "array", "items": { "type": "string" } },
-        "correctAnswer": {
-          "type": "string",
-          "description": "mcq : index du bon choix en chaîne. true-false : \"true\" ou \"false\". open : texte attendu."
-        },
-        "explanation": { "type": "string" }
       }
     },
     "relation": {

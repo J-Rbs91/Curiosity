@@ -10,15 +10,56 @@ reçu les deux verdicts PASS du contrôleur aveugle qu'exige `checkGating()`.
 
 ---
 
+## Le protocole a été allégé — à lire avant de reprendre
+
+Le dispositif produisait **891 octets de matière documentaire par caractère affiché**, et
+exigeait des champs que rien n'affiche. Deux fiches s'y sont perdues :
+`rationalite-limitee` a épuisé ses trois tours sur un désaccord de classement dans
+`conditions.appears_when`, et `couplage-lache` est resté candidat parce que sa chaîne
+d'étapes ne passait pas un « test de suffisance » — alors que sa carte, elle, était
+établie.
+
+Ce qui a changé :
+
+1. **Champs supprimés du schéma** : `evidence.mechanism`, `evidence.conditions`,
+   `pedagogy.detailed_explanation`, `concrete_example`, `example_setting`,
+   `analysis_questions`, `quiz`, `graph.difficulty`, `difficulty_rationale`. Aucun
+   n'atteignait la carte ; les sept derniers servaient une session d'apprentissage que
+   l'application avait déjà supprimée. Les neuf fiches ont été nettoyées en conséquence.
+2. **Une seule passe de contrôle aveugle.** `npm run corpus:brief -- <id>` — sans
+   `--pass` — rend un dossier unique portant preuve **et** prose. Le contrôleur tranche
+   les deux questions en une lecture et remplit les deux verdicts. Le gating est
+   inchangé : `evidence_review` et `pedagogy_review` doivent toujours être en PASS, et
+   `no_new_claims` à `true`.
+
+Ce qui n'a **pas** changé, et ne doit pas changer : citation verbatim et localisée sur une
+source réellement ouverte, attribution confirmée, sources qui résolvent, deux tours de
+correction au maximum.
+
+---
+
 ## Ce qui bloque, en une phrase
 
-**Les cartes sont écrites, la preuve est là, le contrôle n'a pas pu avoir lieu.**
+**Les cartes sont écrites, la preuve est là, le contrôle n'est pas allé à son terme.**
 
-La session qui a produit ces quatre cartes a perdu ses outils d'agent en cours de route
-(`SendMessage`, puis `Agent`, puis `Edit`). `corpus-blind-reviewer` n'a donc pas pu être
-lancé. Il n'a pas été remplacé : celui qui rédige une carte ne peut pas la contrôler
-aveuglément, c'est toute la raison d'être de cette passe. Les fiches restent en
-`review/` avec `evidence_review` et `pedagogy_review` en `PENDING`.
+La première session a perdu ses outils d'agent en cours de route (`SendMessage`, puis
+`Agent`, puis `Edit`). La seconde a été coupée par une limite de session, en plein tour de
+correction. Les fiches restent en `review/` avec `evidence_review` et `pedagogy_review` en
+`PENDING`.
+
+**Acquis du 17 août** — le contrôleur aveugle a rendu quatre verdicts, tous REWORK mais
+tous confirmant le fond :
+
+| fiche | attribution | source primaire | interprétation |
+|---|---|---|---|
+| `inertie-structurelle-et-selection` | confirmée | confirmée | fidèle |
+| `isomorphisme-institutionnel` | confirmée | confirmée | fidèle |
+| `organisation-genree` | confirmée | confirmée | fidèle |
+| `regulation-controle-autonome` | confirmée | confirmée | trop large |
+
+Les corrections correspondantes sont appliquées et versionnées, et `zones-incertitude` a
+vu son attribution tranchée sur pièces. Aucune de ces fiches n'a encore repassé le
+contrôle depuis correction : **c'est exactement là qu'il faut reprendre.**
 
 ---
 
@@ -37,8 +78,8 @@ primaire, avec sa localisation et son statut de traduction.
 | `organisation-genree` | oui, 134 c. | 19/48 · 73/85 · 168/170 · 134/150 |
 | `regulation-controle-autonome` | oui, 111 c. | 45/48 · 82/85 · 161/170 · 111/150 |
 
-**Prochain geste** : `npm run corpus:brief -- <id> --pass=B`, puis `corpus-blind-reviewer`
-sur ce seul dossier, sans rien lui transmettre d'autre.
+**Prochain geste** : `npm run corpus:brief -- <id>`, puis `corpus-blind-reviewer` sur ce
+seul dossier, sans rien lui transmettre d'autre.
 
 Trois points à soumettre au contrôleur, parce qu'ils relèvent d'un arbitrage et non d'une
 copie :

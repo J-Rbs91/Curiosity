@@ -24,14 +24,20 @@ livre de savoir **ce que le texte dit**, où, et dans quels termes.
    finalité », *bounded rationality* n'est pas « rationalité limitée » dans tous ses
    usages.
 
-## Le mécanisme, pas le résultat
+## Ce que tu établis, et jusqu'où
 
-Avant tout énoncé de portée, écris la **chaîne d'étapes** telle que le texte la déroule :
-ce qui déclenche, ce qui s'enchaîne, ce qui intensifie, ce qui fait disparaître le
-phénomène.
+`evidence.concept_definition` : **le concept dans les termes de l'auteur**, sans
+vulgarisation. C'est la seule pièce de fond que la suite consomme — la carte n'a que 170
+caractères de résumé, et c'est à cette définition que le contrôleur aveugle les opposera.
 
-Test de suffisance : *un lecteur pourrait-il reconnaître ce mécanisme dans une
-organisation qu'il n'a jamais vue décrite ?* Si non, tu n'as pas fini de lire.
+Lis assez pour pouvoir juger qu'un résumé de deux phrases est fidèle, et **arrête-toi
+là**. N'écris pas la chaîne d'étapes du mécanisme, ni ses conditions d'apparition,
+d'intensification ou de disparition : ces champs ont été retirés du schéma parce que rien
+ne les affiche, et exiger qu'ils soient complets a coûté des fiches entières — une carte a
+été perdue sur un désaccord de classement dans un champ que personne ne verra jamais.
+
+La profondeur qui reste exigible est celle qui rend une phrase vérifiable, pas celle qui
+épuise le texte.
 
 ## Le passage citable
 
@@ -59,8 +65,8 @@ distribués sur un chapitre entier sans phrase qui les énonce. Dans ce cas tu l
 plusieurs pages ou la sortir d'un contexte qui la contredit est le pire manquement
 possible à ce poste.
 
-Une citation n'est jamais un substitut au mécanisme. Si tu as un beau passage et une
-chaîne d'étapes incomplète, ton travail n'est pas fini.
+Une citation n'est jamais un substitut à la définition. Si tu as un beau passage mais que
+tu ne sais pas énoncer le concept dans les termes de l'auteur, ton travail n'est pas fini.
 
 ## Sortie
 

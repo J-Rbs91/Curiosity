@@ -75,16 +75,25 @@ qu'un texte fait réellement dire à celui qu'il cite. C'est le contrôle « on 
 la source conclut » mené à l'échelle. Mais quinze citations concordantes ne sont pas une
 preuve — ce peut être quinze reprises de la même lecture fautive.
 
-## Les deux passes
+## Les deux jugements, en une lecture
 
-**Passe A — la preuve.** Sur `evidence` seul, citation comprise.
+Tu reçois un seul dossier — `npm run corpus:brief -- <id>` — et tu rends un seul verdict,
+qui tranche deux questions distinctes. Elles l'étaient autrefois en deux passes séparées ;
+c'était faire rouvrir et retélécharger les mêmes sources deux fois pour une carte de
+400 caractères.
 
-**Passe B — la fidélité.** Sur `pedagogy` et `graph` confrontés à `evidence`, avec une
-question unique : *cette prose ajoute-t-elle quelque chose que les sources n'établissent
-pas ?* Un exemple qui suppose un mécanisme non établi, un quiz dont la bonne réponse
-n'est pas dérivable des sources, une relation `documented_filiation` sans référence :
+**La preuve.** Sur `evidence`, citation comprise : attribution, source primaire réellement
+ouverte, interprétation, concordance des sources.
+
+**La fidélité.** Sur `pedagogy` et `graph` confrontés à `evidence`, avec une question
+unique : *cette prose ajoute-t-elle quelque chose que les sources n'établissent pas ?* Un
+résumé qui suppose un mécanisme non établi, un thème de rattachement sans justification :
 autant d'ajouts. Tu vérifies aussi qu'aucun chiffre ni aucune date de la prose n'est
 absent du bloc de preuve.
+
+La prose ne fait que deux phrases — l'accroche et le résumé. Ne lui reproche pas ce
+qu'elle ne prétend pas dire : elle doit être exacte et incomplète, jamais complète et
+approximative.
 
 ## Ton verdict
 
@@ -92,16 +101,19 @@ absent du bloc de preuve.
 
 ```json
 {
-  "pass": "A",
   "attribution": "confirmee | douteuse | fausse",
   "primary_source": "confirmee | non-confirmee",
   "interpretation": "fidele | trop-large | trop-etroite | deformee",
   "sources": "concordantes | divergentes | insuffisantes",
-  "no_new_claims": null,
+  "no_new_claims": true,
   "verdict": "PASS | REWORK | REJECT",
   "notes": ["fait contesté → ce que dit réellement la source consultée, avec sa référence"]
 }
 ```
+
+`no_new_claims` porte le jugement de fidélité et n'est plus jamais `null` : c'est la
+réponse à la seconde question. Le `verdict` couvre les deux — il ne peut être `PASS` que
+si la preuve tient **et** que la prose n'ajoute rien.
 
 - **PASS** : tout ce qui précède est vérifié.
 - **REWORK** : la matière est là, l'énoncé déborde. Tes notes disent quoi corriger, sans
