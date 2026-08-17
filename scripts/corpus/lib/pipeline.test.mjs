@@ -282,7 +282,22 @@ describe("buildQuotation", () => {
   it("compose une référence qui permet de rouvrir le texte", () => {
     const q = buildQuotation(quoted({ translation: { kind: "none" } }));
     expect(q.reference).toBe("Auteur Un, Ouvrage, 1949, chap. 6, p. 195");
-    expect(q.attributedTo).toBe("Auteur Un");
+  });
+
+  it("ne répète pas le nom que la notice porte déjà", () => {
+    // La notice commence par convention par son auteur : le nom affiché en tête de légende
+    // le redisait mot pour mot.
+    const q = buildQuotation(quoted({ translation: { kind: "none" } }));
+    expect(q.attributedTo).toBeUndefined();
+  });
+
+  it("nomme l'auteur du passage quand ce n'est pas celui de la notice", () => {
+    // Le cas d'un ouvrage collectif : la notice est celle du volume, la phrase est de
+    // quelqu'un. Taire le nom attribuerait le passage au directeur de publication.
+    const q = buildQuotation(
+      quoted({ attributed_to: "Auteur Deux", translation: { kind: "none" } })
+    );
+    expect(q.attributedTo).toBe("Auteur Deux");
   });
 
   it("nomme le traducteur d'une traduction publiée", () => {

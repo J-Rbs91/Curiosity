@@ -61,6 +61,24 @@ function sourceLanguageClause(language) {
 }
 
 /**
+ * Le nom est-il déjà porté par la notice qui suit ?
+ *
+ * Les notices de source commencent par convention par leur auteur — « Joan Acker, "Hierarchies,
+ * Jobs, Bodies"… ». Juxtaposée au nom que porte `attributedTo`, la notice le répétait :
+ * « Joan Acker, Joan Acker, "Hierarchies…" ». On compare donc les deux, et le nom ne s'affiche
+ * que lorsqu'il apprend quelque chose.
+ *
+ * La comparaison est tolérante à la casse et aux espaces, pas au nom : deux graphies
+ * différentes du même auteur donnent deux noms différents, et il vaut mieux répéter que taire
+ * l'attribution d'un passage.
+ */
+function citationOpensWith(citation, name) {
+  if (!isFilled(citation) || !isFilled(name)) return false;
+  const normalize = (s) => s.trim().replace(/\s+/g, " ").toLocaleLowerCase("fr");
+  return normalize(citation).startsWith(normalize(name));
+}
+
+/**
  * La citation telle qu'elle sera lue. Deux choses s'y jouent : la référence doit permettre
  * de rouvrir le texte, et une traduction ne doit jamais passer pour la parole de l'auteur.
  * Une traduction publiée nomme son traducteur ; une traduction de notre fait le dit.
@@ -78,7 +96,15 @@ export function buildQuotation(record) {
 
   const reference = [source?.citation, quotation.locator].filter(isFilled).join(", ");
 
-  const projected = { text: quotation.text, attributedTo, reference };
+  const projected = { text: quotation.text, reference };
+  /*
+   * Omis, et non vidé : le champ ne doit exister que s'il porte un nom, sinon la légende
+   * afficherait la virgule qui le séparait de la notice. Le cas où il subsiste est celui qui
+   * le justifie — un passage tiré d'un ouvrage collectif, dont l'auteur n'est pas celui de la
+   * notice.
+   */
+  if (isFilled(attributedTo) && !citationOpensWith(source?.citation, attributedTo))
+    projected.attributedTo = attributedTo;
 
   const translation = quotation.translation ?? {};
   const from = sourceLanguageClause(quotation.original_language);

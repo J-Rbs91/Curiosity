@@ -20,7 +20,11 @@ export function ConceptQuotation({ quotation }: { quotation: Quotation }) {
         «&#8239;{quotation.text}&#8239;»
       </blockquote>
       <figcaption className="mt-[0.5em] text-[0.75em] leading-relaxed text-ink-faint">
-        {quotation.attributedTo}, {quotation.reference}
+        {/* Le nom n'est là que s'il n'est pas déjà en tête de la référence — sans quoi la
+            légende répétait « Joan Acker, Joan Acker, "Hierarchies…" ». La virgule appartient
+            au nom, pas à la référence : elle disparaît avec lui. */}
+        {quotation.attributedTo && <>{quotation.attributedTo}, </>}
+        {quotation.reference}
         {quotation.translationNote && <> · {quotation.translationNote}</>}
       </figcaption>
     </figure>
