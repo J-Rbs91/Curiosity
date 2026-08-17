@@ -1,0 +1,58 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "echelles-de-mesure",
+  "slug": "echelles-de-mesure",
+  "status": "IN_REVIEW",
+  "title": "Échelles de mesure",
+  "themes": ["theorie-des-echelles-et-nombres"],
+  "domain": null,
+  "theme_labels": {
+    "theorie-des-echelles-et-nombres": "Échelles et nombres"
+  },
+  "authors": [{ "name": "Stanley Smith Stevens", "app_author_id": null }],
+  "attribution_note": "Article signé de Stevens seul, mais la définition citée n'est pas présentée par lui comme sienne : la phrase entière s'ouvre par « Paraphrasing N. R. Campbell (Final Report, p. 340), we may say that ». Une note de l'article ajoute que la classification du tableau avait été présentée dès septembre 1941 et que sa mise au point doit une discussion à G. D. Birkhoff, sans en faire un coauteur.",
+  "hook": "Numéroter des joueurs, est-ce mesurer ? Et qu'autorise alors chaque échelle ?",
+  "summary": "Mesurer, c'est attribuer des chiffres selon des règles. Quatre échelles en découlent, et l'invariance dit quelle statistique convient — Stevens n'en proscrit aucune.",
+  "quotation": {
+    "text": "[…] la mesure, au sens le plus large, se définit comme l'attribution de chiffres à des objets ou des événements selon des règles.",
+    "reference": "S. S. Stevens, « On the Theory of Scales of Measurement », Science, nouvelle série, vol. 103, n° 2684, 7 juin 1946, p. 677-680.",
+    "locator": "p. 677",
+    "language": "fr",
+    "original_text": "[…] measurement, in the broadest sense, is defined as the assignment of numerals to objects or events according to rules.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (chaîne Curiosity) : « numerals » est rendu par « chiffres », et non par « nombres ».",
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "S. S. Stevens, « On the Theory of Scales of Measurement », Science, vol. 103, n° 2684, 7 juin 1946, p. 677-680. Fac-similé complet lu en image (deux numérisations indépendantes).",
+      "kind": "primary",
+      "locator": "p. 677-680",
+      "doi_isbn": "10.1126/science.103.2684.677",
+      "url": "https://faculty.ucmerced.edu/jvevea/classes/290_21/readings/week%208/Stevens%201946.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Joel Michell, « Measurement scales and statistics: A clash of paradigms », Psychological Bulletin, vol. 100, n° 3, novembre 1986, p. 398-407.",
+      "kind": "secondary-academic",
+      "locator": "p. 398-407",
+      "doi_isbn": "10.1037/0033-2909.100.3.398",
+      "url": "https://doi.org/10.1037/0033-2909.100.3.398",
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "verdict": "PENDING",
+    "rounds": 0
+  },
+  "notes": [
+    "La coupe en tête de la citation retire un crédit. La phrase entière est : « Paraphrasing N. R. Campbell (Final Report, p. 340), we may say that measurement, in the broadest sense, is defined as the assignment of numerals to objects or events according to rules. » Elle fait 185 caractères en anglais, davantage en français : la coupe est motivée par le plafond de 150, elle ne le répare pas.",
+    "Stevens écrit « numerals » et jamais « numbers ». La distinction est portante : c'est parce que les chiffres sont des étiquettes et non des grandeurs que le simple fait de numéroter des joueurs de football compte pour lui comme une mesure (échelle nominale, p. 678). La forme qui circule en français (« attribution de nombres ») écrase cette distinction.",
+    "La lecture prescriptive — « la typologie interdit certaines opérations » — est un durcissement postérieur. Stevens pose bien l'invariance comme critère du licite (« The criterion for the appropriateness of a statistic is invariance under the transformations in Column 3 », p. 678), mais refuse de proscrire : il concède aux moyennes calculées sur des échelles ordinales « a kind of pragmatic sanction : In numerous instances it leads to fruitful results », et juge que « the outlawing of this procedure would probably serve no good purpose » (p. 679).",
+    "Une seconde définition, p. 680, est régulièrement confondue avec celle-ci : Stevens y cite entre guillemets un membre non nommé du comité britannique. Ce n'est pas sa phrase.",
+    "Michell (1986) est affiché comme signal d'un désaccord attesté par sa référence : le texte est payant et n'a pas été ouvert, rien de la fiche n'en provient."
+  ]
+}

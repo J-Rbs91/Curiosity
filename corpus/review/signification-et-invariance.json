@@ -1,0 +1,53 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "signification-et-invariance",
+  "slug": "signification-et-invariance",
+  "status": "IN_REVIEW",
+  "title": "Signification et invariance",
+  "themes": ["theorie-des-echelles-et-nombres"],
+  "domain": null,
+  "theme_labels": {
+    "theorie-des-echelles-et-nombres": "Échelles et nombres"
+  },
+  "authors": [
+    { "name": "Patrick Suppes", "app_author_id": null },
+    { "name": "Joseph L. Zinnes", "app_author_id": null }
+  ],
+  "attribution_note": "Texte coécrit, les deux noms sur une même ligne de la page de titre, et rédigé à la première personne du pluriel. Le nom du problème est revendiqué ici en propre par les deux auteurs (« a third problem which we shall term the meaningfulness problem »), mais le cadre formel dont il dépend est rapporté par eux à un article antérieur de Suppes avec Dana Scott (1958).",
+  "hook": "Un énoncé vrai en Fahrenheit, faux en Celsius : que reste-t-il de son sens ?",
+  "summary": "Un énoncé numérique a un sens si sa vérité reste constante sous les transformations d'échelle admissibles : c'est l'énoncé entier qui en a ou non, pas l'opération.",
+  "quotation": {
+    "text": "Un énoncé numérique a un sens si et seulement si sa vérité (ou sa fausseté) est constante sous les transformations d'échelle admissibles […].",
+    "reference": "Patrick Suppes et Joseph L. Zinnes, « Basic Measurement Theory », Technical Report n° 45, Institute for Mathematical Studies in the Social Sciences, Stanford University, 15 mars 1962.",
+    "locator": "Section 6.1, Definition 33, p. 110",
+    "language": "fr",
+    "original_text": "A numerical statement is meaningful if and only if its truth (or falsity) is constant under admissible scale transformations […].",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (chaîne Curiosity) : « meaningful » est rendu par « a un sens », non par « significatif ».",
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "Patrick Suppes et Joseph L. Zinnes, « Basic Measurement Theory », Technical Report n° 45, Psychology Series, Institute for Mathematical Studies in the Social Sciences, Stanford University, 15 mars 1962, 130 p.",
+      "kind": "primary",
+      "locator": "p. 108-125",
+      "doi_isbn": null,
+      "url": "https://web.stanford.edu/group/csli-suppes/techreports/IMSSS_45.pdf",
+      "consulted": "full-text"
+    }
+  ],
+  "review": {
+    "verdict": "PENDING",
+    "rounds": 0
+  },
+  "notes": [
+    "Les auteurs rabaissent eux-mêmes le rang de ce problème : « While this problem is not central to a theory of measurement it is often involved with various aspects of how measurements may be used » (p. 108). Une note concède par ailleurs que le critère est « a necessary but not sufficient condition of meaningfulness » (p. 111).",
+    "Le texte ne proscrit aucune opération par type d'échelle : il démontre le contraire. La comparaison de deux moyennes de températures est déclarée douée de sens (exemple 2, p. 115), tandis que le rapport de deux températures ne l'est pas (p. 108-109). « The admissibility of any mathematical operation depends not only on the scale type […] but on the entire numerical statement of which the operation is a part. »",
+    "Tout est localisé sur le dactylogramme de 1962, qui a sa pagination propre. Le chapitre publié en 1963 (Handbook of Mathematical Psychology, vol. I, Wiley, p. 1-76) n'a pas été ouvert, la correspondance page à page n'est pas établie, et il n'est pas affiché en source faute de DOI, d'ISBN ou d'URL vérifiés.",
+    "Incohérence interne du rapport, relevée sur les images de page : la même définition est numérotée « Definition 33 » en 6.1 (p. 110) et rappelée deux fois comme « Definition 28 » en 6.3 (p. 121-122).",
+    "La citation, la définition complète, l'exemple 2 et le passage de 6.3 ont été relus sur les images des feuillets, non sur la couche OCR du PDF, qui est très dégradée."
+  ]
+}

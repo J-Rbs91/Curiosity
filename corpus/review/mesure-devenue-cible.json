@@ -1,0 +1,54 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "mesure-devenue-cible",
+  "slug": "mesure-devenue-cible",
+  "status": "IN_REVIEW",
+  "title": "Quand la mesure devient cible",
+  "themes": ["effets-retour-de-la-mesure"],
+  "domain": null,
+  "theme_labels": {
+    "effets-retour-de-la-mesure": "Ce que la mesure fait au mesuré"
+  },
+  "authors": [{ "name": "Marilyn Strathern", "app_author_id": null }],
+  "attribution_note": "La formule est de Marilyn Strathern : elle ouvre un paragraphe de sa main, sans guillemets ni appel de note, alors qu'elle référence partout ailleurs ce qu'elle emprunte. Elle condense un raisonnement qu'elle prend à Keith Hoskin, dont le chapitre a été ouvert : il n'y a nulle part cette phrase ni aucune formulation équivalente, mais c'est lui qui nomme le phénomène « loi de Goodhart » et qui en rapporte la formulation d'origine, monétaire. Charles Goodhart, lui, n'a jamais écrit cette phrase, et Strathern ne le cite pas une seule fois. La désignation « loi de Strathern » ne vient pas d'elle non plus : elle ne nomme jamais sa propre phrase.",
+  "hook": "Pourquoi un bon indicateur cesse-t-il de l'être dès qu'on en fait un objectif ?",
+  "summary": "Un indicateur promu au rang d'objectif cesse d'être un bon indicateur : l'audit est délibérément bâti sur cette confusion de la mesure et de la cible, et il l'amplifie.",
+  "quotation": {
+    "text": "When a measure becomes a target, it ceases to be a good measure.",
+    "reference": "Marilyn Strathern, « “Improving ratings”: audit in the British University system », European Review, vol. 5, n° 3, juillet 1997, p. 305-321.",
+    "locator": "p. 308, section « Improvement »",
+    "language": "en",
+    "original_text": null,
+    "original_language": null,
+    "translation": { "kind": "none", "translator": null, "edition": null }
+  },
+  "sources": [
+    {
+      "label": "Marilyn Strathern, « “Improving ratings”: audit in the British University system », European Review, vol. 5, n° 3, juillet 1997, p. 305-321. Fac-similé de l'article publié (composition de l'éditeur, 17 p.).",
+      "kind": "primary",
+      "locator": "p. 308",
+      "doi_isbn": "10.1002/(SICI)1234-981X(199707)5:3<305::AID-EURO184>3.0.CO;2-4",
+      "url": "https://archive.org/download/ImprovingRatingsAuditInTheBritishUniversitySystem/%27Improving%20ratings%27-%20audit%20in%20the%20British%20University%20system.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Keith Hoskin, « The “awful idea of accountability” », dans R. Munro et J. Mouritsen (dir.), Accountability: Power, Ethos and the Technologies of Managing, Londres, International Thomson Business Press, 1996, chap. 14, p. 265-282.",
+      "kind": "primary",
+      "locator": "p. 266, 277 et 280",
+      "doi_isbn": "ISBN 0412625601",
+      "url": null,
+      "consulted": "partial"
+    }
+  ],
+  "review": {
+    "verdict": "PENDING",
+    "rounds": 0
+  },
+  "notes": [
+    "La chaîne d'attribution, dans cet ordre. Strathern formule l'aphorisme p. 308 ; elle ajoute aussitôt, en toutes lettres : « Hoskin describes this as “Goodhart's law”, after the latter's observation on instruments for monetary control which lead to other devices for monetary flexibility having to be invented » ; l'apport de Goodhart n'apparaît donc que résumé de seconde main, en une subordonnée. Aucun texte de Goodhart ne figure dans les quinze références de l'article.",
+    "Hoskin a été ouvert et vérifié, mais par extraits paginés (recherche interne au volume numérisé de l'Indiana University), jamais en continu. Aucune des neuf variantes de la formule n'y sort — « when a measure becomes a target », « ceases to be a good measure », « measures become targets » : zéro occurrence, avec témoins positifs joués dans la même minute sur le même moteur. Son vocabulaire est autre : « measures become bad », « measures that are targets ».",
+    "Ce que Hoskin apporte : il nomme « Goodhart's Law » (p. 266 et 277) et lui rattache en note (p. 280) une formulation monétaire référencée (Goodhart, 1989) — la monnaie qui, prise pour instrument de contrôle monétaire, cesse d'être utilisée comme monnaie et se voit remplacée par des substituts permettant d'échapper au contrôle. Il prend cette loi comme un acquis qu'il critique, non comme une formule qu'il forgerait.",
+    "Ce que Goodhart a lui-même écrit n'est pas établi ici : son texte n'a pas été ouvert, et cela relève d'une fiche distincte. Une seule phrase de Hoskin reste connue par sa fin et non par son début, celle qui mentionne « its specific formulation » (p. 266).",
+    "La citation est en anglais et n'a pas été traduite. Un second passage autonome existe si l'énoncé conclusif était préféré à l'aphorisme : « Auditing is deliberately built on the conflation of measures with targets, and audit culture enhances the process. » (p. 319)."
+  ]
+}
