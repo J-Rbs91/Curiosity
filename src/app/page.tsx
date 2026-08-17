@@ -103,7 +103,7 @@ export default function TodayPage() {
            */}
           <Wordmark animate className="text-[34px] text-ink" />
           <h1 className="font-serif-display text-[32px] font-semibold leading-tight text-ink">
-            Comprendre comment fonctionnent réellement le travail et les organisations.
+            Comprendre ce qui produit réellement les résultats.
           </h1>
           <p className="text-[17px] leading-relaxed text-ink-soft">
             Un concept à la fois, à chaque ouverture.
