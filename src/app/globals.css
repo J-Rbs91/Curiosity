@@ -82,6 +82,15 @@
   --dur-mark: 720ms;  /* moment marquant : le concept qu'on vient de travailler */
 
   /*
+   * Le regard de la marque. Seule durée du produit à dépasser la seconde, et elle se paie une
+   * fois par installation : la séquence ne joue qu'au premier lancement. Elle vaut la somme de
+   * quatre saccades de 140 ms — la durée d'un retour à l'appui — et de trois fixations de
+   * l'ordre de 270 ms, qui sont les ordres de grandeur du regard humain. C'est l'alternance
+   * saut/arrêt, et non l'amplitude, qui fait qu'un point se lit comme un œil.
+   */
+  --dur-gaze: 1600ms;
+
+  /*
    * Amplitude des déplacements, en pourcentage de la surface qui bouge plutôt
    * qu'en pixels : la même valeur tient sur toutes les tailles d'écran.
    */
@@ -241,6 +250,52 @@ h3,
   .stagger > *:nth-child(4) { animation-delay: 210ms; }
   .stagger > *:nth-child(5) { animation-delay: 280ms; }
   .stagger > *:nth-child(n + 6) { animation-delay: 350ms; }
+}
+
+/* --------------------------------------------------------------------------
+ * Le regard de la marque
+ *
+ * La pupille du O saute d'une fixation à l'autre, puis se repose au centre. Quatre saccades,
+ * et c'est fini : la règle « aucun mouvement continu » n'a pas d'exception, et elle n'en aurait
+ * pas moins besoin pour une marque que pour le reste — c'est même là qu'on est le plus tenté
+ * d'en faire une.
+ *
+ * Les positions viennent du composant, en propriétés personnalisées, parce qu'elles sont la
+ * géométrie de la marque et qu'elle n'a qu'une définition — `mark-geometry.mjs`. Ce fichier ne
+ * porte que le rythme. Les pourcentages se lisent sur `--dur-gaze` : 12 % valent 192 ms
+ * d'attente avant le premier saut, et chaque intervalle de 9 % vaut la saccade elle-même.
+ *
+ * Déclaré en `no-preference` plutôt que neutralisé après coup : sans animation, la pupille est
+ * simplement au centre, ce qui est aussi son état de repos. La marque ne perd rien.
+ * -------------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: no-preference) {
+  .gaze {
+    animation: gaze var(--dur-gaze) var(--ease-out-soft) both;
+  }
+}
+
+@keyframes gaze {
+  0%,
+  12% {
+    translate: var(--gaze-rest);
+  }
+  21%,
+  38% {
+    translate: var(--gaze-up);
+  }
+  47%,
+  64% {
+    translate: var(--gaze-right);
+  }
+  73%,
+  88% {
+    translate: var(--gaze-down);
+  }
+  97%,
+  100% {
+    translate: var(--gaze-rest);
+  }
 }
 
 @keyframes enter-rise {

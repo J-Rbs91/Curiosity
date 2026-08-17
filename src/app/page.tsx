@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/Button";
 import { ConceptQuotation } from "@/components/concept/ConceptQuotation";
 import { ConceptSourceList } from "@/components/concept/ConceptSources";
 import { DeepenButton } from "@/components/ui/DeepenButton";
+import { Wordmark } from "@/components/ui/Wordmark";
 
 /**
  * La hauteur d'un écran, barre de navigation déduite.
@@ -76,6 +77,13 @@ export default function TodayPage() {
           className="stagger mx-auto flex max-w-md flex-col justify-center gap-10 px-6"
           style={{ height: SCREEN_HEIGHT }}
         >
+          {/*
+           * Le seul endroit de l'application où la marque se montre, et le seul où son regard
+           * joue. Ailleurs, l'écran ne porte que ce qu'il y a à comprendre — c'est la décision
+           * du §5 de `docs/ux-direction.md`, et une signature en en-tête permanent la casserait
+           * pour ne rien apprendre à personne. Ici, on se présente : c'est la seule fois.
+           */}
+          <Wordmark animate className="text-[34px] text-ink" />
           <h1 className="font-serif-display text-[32px] font-semibold leading-tight text-ink">
             Comprendre comment fonctionnent réellement les organisations.
           </h1>

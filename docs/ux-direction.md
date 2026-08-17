@@ -36,8 +36,9 @@ Où il se manifeste  : navigation entre écrans, phases de la session, changemen
                       d'onglet, appui sur toute cible, arrivée de tout contenu.
 Ce qui reste neutre : la palette — achromatique, §3 —, la typographie (deux
                       familles), le rythme (une colonne), la matière (aucune
-                      ombre, aucun flou décoratif), l'imagerie (aucune).
-Coût accepté        : trois courbes et sept durées à tenir comme des tokens ; un
+                      ombre, aucun flou décoratif), l'imagerie (aucune, hors la
+                      marque du §4 — qui est elle-même du mouvement).
+Coût accepté        : trois courbes et huit durées à tenir comme des tokens ; un
                       repli en mouvement réduit pour chaque classe de transition ;
                       une dégradation silencieuse sans View Transitions API.
 ```
@@ -120,7 +121,96 @@ mise en page d'un pixel au moment de la réponse.
 
 ---
 
-## 4. Ce que l'interface affiche, et ce qu'elle n'affiche plus
+## 4. La marque
+
+Le nom porte un œil : le **O** de Curi**O**sity est un anneau avec une pupille, et cette
+pupille regarde.
+
+### La décision qui fait tout le travail
+
+Un anneau d'épaisseur constante avec un point au milieu **ne se lit pas comme un œil**. Il se
+lit comme une cible, ou comme un bouton d'enregistrement. Les deux ont été dessinés côte à
+côte, de 16 à 160 px, avant de trancher : trois cercles concentriques et réguliers sont
+exactement ce que le regard reconnaît le moins comme un regard.
+
+Ce qui renverse la lecture est d'ouvrir la contre-forme **plus large que haute**. Le contour
+extérieur reste un cercle parfait — donc un O —, l'intérieur devient une ouverture. L'anneau
+est alors fin sur les côtés et épais en haut et en bas, ce qui est l'inverse du contraste d'un
+O de labeur. Ce n'est pas une coquetterie typographique : c'est la seule chose qui empêche la
+figure de retomber sur le disque concentrique, et elle ne s'applique qu'à ce caractère, qui
+n'est plus tout à fait une lettre.
+
+Deux graisses, pour une seule raison — la taille optique. Un favicon de 16 px rend un filet de
+moins de 1,5 px comme une tache grise ; à l'inverse, la graisse d'icône ferait du O le seul
+caractère gras du mot. Le rapport entre les deux épaisseurs de l'anneau, lui, ne change pas :
+c'est lui qui fait la forme.
+
+**Le mot est en sans-serif.** La règle du §5 s'applique — la serif porte ce qui se lit, le sans
+porte ce qui se choisit, et un nom est une étiquette. Elle se double d'une raison de dessin :
+l'anneau est d'épaisseur presque constante comme les fûts d'Inter, et détonnerait à côté du
+contraste de la Source Serif. La capitale au milieu du mot n'est pas décorative non plus :
+en bas de casse, l'œil serait plus petit que les hampes qui l'entourent et disparaîtrait.
+
+### Le regard
+
+La pupille joue **quatre saccades**, puis se repose au centre. Elle ne boucle pas.
+
+Ce n'est pas une concession à la règle « aucun mouvement continu » du §7 : c'est cette règle,
+appliquée à l'endroit où l'on est le plus tenté d'y déroger. Une marque qui pulse en
+permanence est un mouvement qu'on ne regarde plus au bout de deux ouvertures et qui continue
+de consommer.
+
+Ce qui fait qu'un point se lit comme un œil n'est pas l'amplitude, c'est le **rythme** : l'œil
+humain ne balaie pas, il saute — quelques dizaines de millisecondes de saccade, puis deux à
+trois cents millisecondes d'arrêt. La séquence reprend ces ordres de grandeur : quatre sauts
+de 140 ms, la durée d'un retour à l'appui, séparés par des fixations d'environ 270 ms.
+
+Les trois fixations sont à distance sensiblement égale du bord de la contre-forme — la pupille
+en atteint environ 72 % dans les trois cas. Une orbite régulière, donc, et non trois écarts
+d'amplitudes différentes. Le déplacement latéral est le plus ample, comme dans un regard réel,
+et c'est ce que la contre-forme ouverte permet.
+
+**En mouvement réduit, la pupille est au centre et ne bouge pas.** Elle n'y perd rien : le
+centre est aussi son état de repos, et la marque ne porte aucune information par son mouvement.
+
+### Où elle se montre, et où elle ne se montre pas
+
+| Support | Ce qui s'affiche |
+|---|---|
+| Écran de premier lancement | Le mot entier, et c'est le seul endroit où le regard joue |
+| Onglet du navigateur, écran d'accueil, feuille de partage | L'œil seul, immobile |
+| README, page de dépôt | `mark.svg`, ou `mark-animated.svg` qui rejoue la séquence |
+
+**Il n'y a pas d'en-tête permanent avec une signature.** Le §5 dit ce qu'un écran a le droit de
+porter, et un logo n'y figure pas : il n'apprendrait rien à quelqu'un qui a déjà ouvert
+l'application. On se présente une fois.
+
+**Le favicon n'est pas animé**, et pas seulement par convention : un onglet qui bouge est un
+mouvement qu'on n'a pas déclenché, dans une zone qu'on ne regardait pas.
+
+### Les fichiers
+
+Un seul dessin, neuf fichiers. Aucun ne se retouche à la main : ils sont générés depuis
+`src/components/ui/mark-geometry.mjs`, qui est la seule définition de la géométrie et que
+partagent le composant React et le générateur.
+
+```bash
+npm run icons   # regénère les quatre vecteurs, les quatre PNG et le favicon.ico
+```
+
+Le générateur n'a **aucune dépendance** : il dessine par distances signées et encode le PNG
+avec le `zlib` de Node. Ajouter plusieurs dizaines de mégaoctets de binaires natifs pour
+tracer un anneau et un disque aurait été hors de proportion.
+
+`npm test` vérifie ce qui casse silencieusement : que la pupille ne touche jamais son anneau
+dans aucune fixation et dans les deux graisses, que l'anneau reste visible à 16 px, et que
+chaque fixation de la géométrie est bien celle que la feuille de style réclame. Ce dernier
+contrôle existe parce que la panne est arrivée : une propriété personnalisée qui ne résout
+rien ne produit pas d'erreur, elle produit une animation qui tourne sans que rien ne bouge.
+
+---
+
+## 5. Ce que l'interface affiche, et ce qu'elle n'affiche plus
 
 **Quatre éléments, et rien d'autre, sur l'écran du jour :** le thème, le concept,
 son résumé, son auteur.
@@ -170,7 +260,7 @@ sont lus plutôt que balayés.
 
 ---
 
-## 5. Le bouton « + » — envoyer un concept à une IA
+## 6. Le bouton « + » — envoyer un concept à une IA
 
 Présent sur l'écran du jour, sur la fiche d'un concept, et à la fin d'une session.
 
@@ -200,7 +290,7 @@ réécriture — `src/domain/concepts/ai-prompt.ts` et ses tests les tiennent :
 
 ---
 
-## 6. Le budget de mouvement
+## 7. Le budget de mouvement
 
 | Ce qui bouge | Durée | Courbe |
 |---|---|---|
@@ -211,6 +301,13 @@ réécriture — `src/domain/concepts/ai-prompt.ts` et ses tests les tiennent :
 | Glissement d'un écran ou d'une phase | 560 ms sur 16 % / 10 % | `--ease-lift` |
 | Entrée et sortie de session | 640 ms | `--ease-lift` |
 | Le concept qu'on vient de travailler | 720 ms | `--ease-lift` |
+| Le regard de la marque | 1 600 ms, une fois par installation | `--ease-out-soft` |
+
+**La marque est la seule durée à dépasser la seconde, et elle se paie une fois.** La
+séquence ne joue qu'à l'écran de premier lancement — voir §4. Elle n'est pas une durée
+d'interface : c'est quatre saccades de 140 ms séparées par des fixations, et aucune
+information n'attend derrière elle. Une valeur de cet ordre sur quoi que ce soit d'autre
+serait à refuser.
 
 **Le déplacement et le fondu sont dissociés, et c'est ce qui rend un mouvement long
 agréable plutôt que lent.** Le contenu est entièrement lisible en 300 ms pendant
@@ -245,7 +342,7 @@ disparaissent, les fondus restent.
 
 ---
 
-## 7. Navigation — les décisions tenues
+## 8. Navigation — les décisions tenues
 
 | Décision | Ce qu'elle corrige |
 |---|---|
@@ -259,7 +356,7 @@ disparaissent, les fondus restent.
 
 ---
 
-## 8. Où vivent les décisions dans le code
+## 9. Où vivent les décisions dans le code
 
 | Fichier | Ce qu'il porte |
 |---|---|
@@ -268,12 +365,15 @@ disparaissent, les fondus restent.
 | `src/components/motion/Screen.tsx` | La correspondance sens → animation, à poser dans chaque `page.tsx` |
 | `src/components/ui/AppShell.tsx` | Les écrans immersifs et la réserve sous le contenu |
 | `src/domain/concepts/ai-prompt.ts` | Le texte envoyé aux applications d'IA |
+| `src/components/ui/mark-geometry.mjs` | La géométrie de la marque, et elle seule |
+| `src/components/ui/Mark.tsx`, `Wordmark.tsx` | L'œil et le mot, aux deux tailles optiques |
+| `scripts/icons/build-icons.mjs` | Les neuf fichiers d'icônes, dérivés de la géométrie |
 
 Une seule implémentation par mécanisme. Deux implémentations divergent, toujours.
 
 ---
 
-## 9. Ce qui reste à vérifier
+## 10. Ce qui reste à vérifier
 
 Listé plutôt que supposé :
 

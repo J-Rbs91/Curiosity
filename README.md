@@ -29,6 +29,7 @@ npm run dev
 npm run build   # export statique dans out/
 npm test        # tests unitaires
 npm run lint
+npm run icons   # regénère la marque : vecteurs, icônes PWA, favicon
 ```
 
 ```bash
@@ -51,6 +52,7 @@ src/
 
 corpus/            # Corpus maître : fiches sourcées, contrôlées, versionnées
 scripts/corpus/    # Validation, projection, audit, dossiers de contrôle aveugle
+scripts/icons/     # Génère la marque depuis sa géométrie, sans aucune dépendance
 scripts/mcp/       # Serveur MCP : OpenAlex, Crossref, Semantic Scholar, Zotero, HAL
 .claude/agents/    # Les huit sous-agents du pipeline documentaire
 ```
