@@ -347,8 +347,21 @@ l'IA de partir sur une vulgarisation.
 aucun niveau ne lui est demandé : l'IA commence à partir du dossier, et ajuste sa
 profondeur au fil de l'échange. La dernière ligne se contente d'autoriser le départ.
 
-Trois exigences du prompt sont structurelles et ne doivent pas disparaître d'une
-réécriture — `src/domain/concepts/ai-prompt.ts` et les tests de
+**La frontière épistémique est visible, mais seulement là où elle compte.** C'est
+la faille que le reste du prompt ne fermait pas : un modèle capable produit une
+explication juste en mêlant silencieusement ce que la carte établit, ce dont il se
+souvient, une interprétation académique et sa propre reformulation — et tout
+arrive au lecteur avec le même statut. Demander de « distinguer mentalement » ne
+suffit pas ; le prompt demande que le changement de statut se lise dans la
+formulation lorsqu'une confusion serait possible, et **interdit** l'inverse : pas de
+`CORPUS :` ni d'`INTERPRÉTATION :` devant chaque phrase. Une reformulation évidente
+ou un exemple manifestement hypothétique n'ont rien à annoncer. La vérification
+documentaire, elle, est proportionnée : rien pour reformuler une définition déjà
+établie, davantage pour une attribution, une origine, une chronologie, un
+consensus ou un résultat empirique.
+
+Quatre exigences du prompt sont structurelles et ne doivent pas disparaître d'une
+réécriture — `src/domain/concepts/ai-prompt.ts`, ses tests et ceux de
 `ai-handoff.test.ts` les tiennent :
 
 1. **La méthode ne se décrit jamais.** Le prompt demande une explication qui monte
@@ -363,7 +376,13 @@ réécriture — `src/domain/concepts/ai-prompt.ts` et les tests de
 3. **Le corpus transmis fait autorité sur la mémoire du modèle**, sans devenir un
    dogme : une source extérieure peut le contredire, à condition d'être examinée
    pour ce qu'elle est — traçabilité, niveau documentaire, ce qu'elle affirme
-   vraiment.
+   vraiment. Une incohérence interne à la carte se signale, elle ne se corrige pas
+   en silence.
+4. **La connaissance du modèle n'est pas une source, et une référence citée n'est
+   pas un texte lu.** Les deux confusions produisent la même chose : une
+   affirmation probablement correcte présentée comme documentairement établie. Le
+   corpus reste pour autant une base, pas un plafond — l'IA peut ouvrir des pistes,
+   à condition d'en dire le statut.
 
 ---
 

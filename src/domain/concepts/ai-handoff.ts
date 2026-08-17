@@ -46,7 +46,7 @@ export interface CardHandoff {
 /**
  * La limite de taille est celle des applications destinataires, pas la nôtre.
  *
- * Le message complet pèse environ 12 000 caractères — le prompt en fait l'essentiel, la
+ * Le message complet pèse environ 22 000 caractères — le prompt en fait l'essentiel, la
  * carte un millier. Rien ne l'écourte ici : tronquer les instructions retirerait les
  * garde-fous documentaires, et tronquer les sources produirait un corpus incomplet présenté
  * comme complet. Les deux sont pires qu'un partage refusé par l'application d'arrivée, qui

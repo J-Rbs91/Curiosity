@@ -1,6 +1,11 @@
 import { describe, it, expect } from "vitest";
 import { buildAISharePayload, formatCardForAI } from "./ai-handoff";
 import { AI_LEARNING_PROMPT } from "./ai-prompt";
+import { generatedConcepts } from "@/content/generated/concepts.generated";
+import { authors as corpusAuthors } from "@/content/authors";
+import { themes as corpusThemes } from "@/content/themes";
+import { domains, families } from "@/content/taxonomy";
+import { createTaxonomy } from "@/domain/taxonomy";
 import type { Concept, Domain, Family } from "@/types";
 
 const family: Family = {
@@ -246,5 +251,94 @@ describe("formatCardForAI", () => {
     });
 
     expect(carte).toContain("Résumé :\nPremière ligne.\nSeconde ligne.");
+  });
+});
+
+/**
+ * Un passage sur une carte réelle du corpus, et non sur une carte de test.
+ *
+ * « Zones d'incertitude » est le cas le plus exigeant que le corpus contienne aujourd'hui :
+ * concept coécrit rangé sous un seul nom, note d'attribution qui rétablit la chronologie,
+ * citation ancienne sans mention de traduction, cinq sources de trois niveaux différents,
+ * dont une sans URL et une signée de cinq auteurs. Si le message tient sur celle-là, il tient.
+ *
+ * Le test s'exécute sur les données servies à l'application, ce qui le rend sensible à une
+ * projection du corpus — c'est voulu : une carte qui perdrait ses sources en chemin doit
+ * faire échouer quelque chose.
+ */
+describe("passage de relais sur une carte réelle du corpus", () => {
+  const corpusTaxonomy = createTaxonomy({
+    families,
+    domains,
+    themes: corpusThemes,
+    authors: corpusAuthors,
+    concepts: generatedConcepts,
+  });
+  const carte = generatedConcepts.find((c) => c.slug === "zones-incertitude");
+
+  // Le corpus est instruit fiche par fiche : il peut légitimement changer. Le test porte sur
+  // le passage de relais, pas sur la présence perpétuelle d'une carte donnée.
+  it.runIf(carte)("emporte la carte « Zones d'incertitude » en entier", () => {
+    const conceptDomain = corpusTaxonomy.domainOfConcept(carte!);
+    const payload = buildAISharePayload({
+      concept: carte!,
+      domain: conceptDomain,
+      family: conceptDomain && corpusTaxonomy.familyOf(conceptDomain.id),
+      url: "https://j-rbs91.github.io/Curiosity/explore/concept/?c=zones-incertitude",
+    });
+
+    expect(payload).toContain("Domaine :\nSociologie des organisations");
+    expect(payload).toContain("Thème :\nPouvoir");
+    expect(payload).toContain("Concept :\nZones d'incertitude");
+    // Les deux auteurs, et la note qui dit ce que le seul libellé ne dit pas.
+    expect(payload).toContain("Auteur(s) :\nMichel Crozier, Erhard Friedberg");
+    expect(payload).toContain("Attribution établie :\nConcept coécrit avec Erhard Friedberg");
+    expect(payload).toContain("la cosignature est attestée à partir de 1979");
+    expect(payload).toContain("Citation :\n« […] dans un tel système le pouvoir appartient");
+    expect(payload).toContain("Référence de la citation :\nMichel Crozier, « Les relations de pouvoir");
+
+    // Les cinq sources, numérotées, avec leur niveau et leur identifiant.
+    for (let rang = 1; rang <= carte!.sources!.length; rang += 1) {
+      expect(payload).toContain(`${rang}. `);
+    }
+    expect(payload).toContain("   Type : Réception francophone");
+    expect(payload).toContain("   Référence : p. 71-77 · ISBN 2020046776");
+    expect(payload).toContain("   URL : https://www.persee.fr/doc/sotra_0038-0296_1960_num_2_1_1011");
+    // Une source sans URL n'en fabrique pas une.
+    expect(payload).not.toContain("   URL : \n");
+    for (const fuite of ["undefined", "null", "[object Object]"]) {
+      expect(payload).not.toContain(fuite);
+    }
+  });
+
+  it.runIf(carte)("part avec la frontière épistémique, sans nommer la carte dans les règles", () => {
+    /*
+     * C'est le point de la mission : sur cette carte, une IA pourrait très bien produire
+     * « Crozier et Friedberg considèrent l'organisation comme un système de relations entre
+     * acteurs disposant de marges de liberté » — probablement juste, et pourtant absent du
+     * contenu transmis. Les règles qui l'obligent à en marquer le statut doivent voyager avec
+     * la carte, et rester écrites pour n'importe quelle carte.
+     */
+    const payload = buildAISharePayload({ concept: carte! });
+
+    for (const regle of [
+      "FRONTIÈRE ENTRE EXPLICATION ET CONNAISSANCE DOCUMENTAIRE",
+      "CONNAISSANCES INTERNES DU MODÈLE",
+      "RÉFÉRENCE PRÉSENTE ≠ CONTENU ACCESSIBLE",
+      "QUAND DÉCLENCHER UNE VÉRIFICATION DOCUMENTAIRE",
+      "PROPORTIONNALITÉ DE LA VÉRIFICATION",
+      "COHÉRENCE INTERNE DU CORPUS FOURNI",
+    ]) {
+      expect(payload).toContain(regle);
+    }
+
+    // L'ouvrage est cité en source sans que son texte soit joint : c'est exactement le cas que
+    // « référence présente ≠ contenu accessible » vise.
+    expect(payload).toContain("L'Acteur et le système");
+    expect(payload).toContain("Elle ne t'autorise pas à en reconstruire le contenu à partir de ta mémoire.");
+
+    // Les instructions ne connaissent aucun auteur : seule la section carte en nomme.
+    const instructions = payload.slice(0, payload.indexOf("=== CARTE À ÉTUDIER ==="));
+    expect(instructions).not.toContain("Crozier");
   });
 });
