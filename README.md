@@ -1,5 +1,7 @@
 # Curiosity — Sociologie des organisations
 
+**→ [j-rbs91.github.io/Curiosity](https://j-rbs91.github.io/Curiosity/)**
+
 Une application web mobile-first, installable en PWA, qui fait découvrir la sociologie des
 organisations **une carte à la fois**. À chaque ouverture, un concept : son thème, son nom,
 une citation de son auteur quand il en existe une, une accroche, un résumé court, et ses
@@ -94,9 +96,10 @@ compilé dans le bundle et le seul état persistant vit dans le navigateur du le
 bien qu'aucun serveur applicatif n'est nécessaire.
 
 `.github/workflows/pages.yml` publie cet export sur GitHub Pages à chaque poussée sur
-`main`. Un dépôt de projet étant servi sous `/<nom-du-dépôt>/`, la construction reçoit ce
-préfixe par `NEXT_PUBLIC_BASE_PATH` ; les chemins écrits à la main — manifeste, icônes,
-service worker — passent tous par `src/lib/base-path.ts`.
+`main` — le site est servi sur <https://j-rbs91.github.io/Curiosity/>. Un dépôt de projet
+étant servi sous `/<nom-du-dépôt>/`, la construction reçoit ce préfixe par
+`NEXT_PUBLIC_BASE_PATH` ; les chemins écrits à la main — manifeste, icônes, service
+worker — passent tous par `src/lib/base-path.ts`.
 
 **À faire une fois, à la main :** dans Settings → Pages, choisir « GitHub Actions » comme
 source. Sans cela le déploiement échoue sur une erreur d'environnement.
