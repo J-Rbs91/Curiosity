@@ -1,0 +1,89 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "rationalite-limitee",
+  "slug": "rationalite-limitee",
+  "status": "VALIDATED",
+  "title": "Rationalité limitée",
+  "themes": [
+    "decision"
+  ],
+  "theme_labels": {
+    "decision": "Décision"
+  },
+  "authors": [
+    {
+      "name": "Herbert A. Simon",
+      "app_author_id": "simon"
+    }
+  ],
+  "hook": "Comment décider quand on ignore les options, le monde et les conséquences ?",
+  "summary": "Chez Simon, le régime de choix qui reste quand l'omniscience manque : faute d'options données, on les cherche, et l'on s'arrête à la première jugée satisfaisante.",
+  "sources": [
+    {
+      "label": "Herbert A. Simon, « Rational Decision-Making in Business Organizations », Nobel Memorial Lecture, 8 décembre 1978, in Nobel Lectures, Economics 1969-1980, Singapour, World Scientific, 1992, p. 343-371.",
+      "kind": "primary",
+      "locator": "p. 353-356",
+      "url": "https://www.nobelprize.org/uploads/2018/06/simon-lecture.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Herbert A. Simon, « A Behavioral Model of Rational Choice », The Quarterly Journal of Economics, vol. 69, n° 1, 1955, p. 99-118.",
+      "kind": "primary",
+      "doi_isbn": "10.2307/1884852",
+      "url": "https://doi.org/10.2307/1884852",
+      "consulted": "metadata-only"
+    },
+    {
+      "label": "Herbert A. Simon, Administration et processus de décision, traduit de l'anglais par Pierre-Emmanuel Dauzat, Paris, Economica, 1983.",
+      "kind": "primary",
+      "doi_isbn": "ISBN 2-7178-0676-8",
+      "consulted": "metadata-only"
+    },
+    {
+      "label": "Matthias Klaes et Esther-Mirjam Sent, « A Conceptual History of the Emergence of Bounded Rationality », History of Political Economy, vol. 37, n° 1, 2005, p. 27-59.",
+      "kind": "secondary-academic",
+      "doi_isbn": "10.1215/00182702-37-1-27",
+      "url": "https://doi.org/10.1215/00182702-37-1-27",
+      "consulted": "metadata-only"
+    },
+    {
+      "label": "Mikaël Cozic, « La rationalité limitée », in Économie cognitive, Paris, Éditions de la Maison des sciences de l'homme, 2012.",
+      "kind": "francophone-reception",
+      "url": "https://shs.hal.science/halshs-00791815v1",
+      "consulted": "full-text"
+    }
+  ],
+  "review": {
+    "reviewer": "corpus-blind-reviewer",
+    "date": "2026-08-17",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "notes": [
+      "Contrôle aveugle, passe A en PASS. Le contrôleur a téléchargé le PDF de la Fondation Nobel et vérifié les cinq passages qui portent la prose : « exacts au mot près ».",
+      "Accroche et résumé corrigés depuis, sur la prescription du contrôleur (borne externe rétablie, modalité de la recherche d'options rendue conditionnelle).",
+      "Simon range trois procédés « and others » sous la rubrique (p. 354) ; le résumé n'en décrit qu'un, la recherche interrompue au seuil de satisfaction, que Simon privilégie lui-même (« Two concepts are central to the characterization », p. 356). Ce n'est donc pas une hiérarchie inventée, mais le résumé n'épuise pas le concept.",
+      "La fiche a épuisé trois tours de contrôle sur un désaccord de portée que le dossier produisait lui-même : un énoncé de programme théorique (p. 349) y était rangé parmi les conditions d'apparition du phénomène, alors que le même texte écrit p. 353 « The phenomenon observed in Milwaukee is ubiquitous in human decision making ». Le champ en cause n'existe plus."
+    ]
+  },
+  "dossier": "corpus/dossiers/rationalite-limitee.json",
+  "quotation": {
+    "text": "[…] la rationalité est limitée quand elle reste en deçà de l'omniscience.",
+    "reference": "Herbert A. Simon, « Rational Decision-Making in Business Organizations », Nobel Memorial Lecture, 8 décembre 1978, in Assar Lindbeck (dir.), Nobel Lectures, Economics 1969-1980, Singapour, World Scientific Publishing Co., 1992, p. 343-371.",
+    "locator": "p. 356",
+    "language": "fr",
+    "original_text": "[…] rationality is bounded when it falls short of omniscience.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (agent corpus-primary-reader, chaîne Curiosity). Aucune traduction française publiée de la conférence Nobel de 1978 n'a été identifiée."
+    }
+  },
+  "notes": [
+    "L'accroche énumérait deux défaillances sur trois. Le contrôleur, sur le texte de la p. 356 qu'il a téléchargé : « les failures of omniscience are largely failures of knowing all the alternatives, uncertainty about relevant exogenous events, and inability to calculate consequences » — « le membre supprimé est […] la seule des trois qui ne relève pas du décideur ». La borne externe est rétablie.",
+    "Le résumé posait « les options se cherchent » comme une propriété du régime. Le contrôleur : « Simon l'énonce sous condition : “If the alternatives for choice are not given initially to the decision maker, then he must search for them” […] La conversion d'une condition d'application en propriété est à corriger. »",
+    "Administrative Behavior (1947) n'est pas affiché : aucune notice n'a résolu dans les sessions d'instruction. La traduction française de 1983, elle, résout et porte le même texte."
+  ]
+}

@@ -25,7 +25,7 @@ const validatedIds = new Set(validated.map((r) => r.id));
 const inFlightIds = new Set(inFlight.map((r) => r.id));
 
 const appAuthorsOf = (record) =>
-  (record.attribution?.authors ?? []).map((a) => a?.app_author_id).filter(Boolean);
+  (record.authors ?? []).map((a) => a?.app_author_id).filter(Boolean);
 
 const pad = (s, n) => String(s).padEnd(n);
 
@@ -42,7 +42,7 @@ console.log(
 );
 
 const uncoveredThemes = themes.filter(
-  (t) => !validated.some((r) => (r.graph?.themes ?? []).includes(t.id))
+  (t) => !validated.some((r) => (r.themes ?? []).includes(t.id))
 );
 
 console.log(

@@ -12,8 +12,7 @@
     "corpus:validate": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/corpus/validate.mjs",
     "corpus:build": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/corpus/build.mjs",
     "corpus:audit": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/corpus/audit.mjs",
-    "corpus:brief": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/corpus/brief.mjs",
-    "corpus:preview": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/corpus/preview.mjs"
+    "corpus:brief": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/corpus/brief.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.31.0",

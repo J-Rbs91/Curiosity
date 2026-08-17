@@ -1,689 +1,226 @@
-# Workflow documentaire du corpus
+# Chaîne documentaire du corpus
 
-Ce document décide comment un concept entre dans Curiosity : ce qu'on cherche, dans quel
-ordre, qui vérifie quoi, et à quelles conditions le concept devient visible dans
-l'application. Il est la référence : un désaccord sur une fiche se tranche ici.
-
-Il adapte à la sociologie des organisations une méthode de veille conçue pour la
-neuropsychologie clinique. L'ossature est conservée — périmètre fermé, hiérarchie des
-sources, contrôleur aveugle, séparation des rôles, rythme piloté par le signal. Ce qui
-change est l'objet de la preuve.
+Ce document décide comment un concept entre dans Curiosity : ce qu'on cherche, qui vérifie
+quoi, et à quelles conditions le concept devient visible dans l'application. Il est la
+référence : un désaccord sur une fiche se tranche ici.
 
 ---
 
 ## 0. Ce que ce dispositif produit
 
 **Des cartes.** Sept éléments — thème, concept, citation, auteur, accroche, résumé,
-sources — dont un lecteur puisse se servir, et dont chacun soit exact.
+sources — dont chacun soit exact. Le lecteur les emporte ensuite vers l'IA de son choix par
+le bouton « Approfondir » : l'application ne produit rien au-delà de la carte, et ce n'est
+pas une lacune, c'est le produit.
 
-Le corpus documentaire n'est pas le livrable : c'est le moyen. Il n'existe que pour que
-les cartes soient justes, et un dossier de preuve qui ne devient jamais une carte n'a servi
-à rien. Toute décision de méthode se tranche par cette question : *est-ce que cela rend les
-cartes plus justes, ou est-ce que cela les empêche d'exister ?*
+Le corpus documentaire n'est pas le livrable : c'est le moyen. Un dossier de preuve qui ne
+devient jamais une carte n'a servi à rien.
 
-Les deux erreurs symétriques à éviter sont donc :
+Toute décision de méthode se tranche par une question, et une seule :
 
-- **écrire des cartes qui ne reposent sur rien** — c'est l'état d'où ce projet vient, et le
-  §1 en décrit le coût ;
-- **instruire indéfiniment sans jamais rien publier** — un dispositif qui ne sort rien
-  n'est pas prudent, il est inutile.
+> *Est-ce que cela rend la carte plus juste ?*
 
-C'est pourquoi la rédaction se fait **en lot** (`corpus-card-writer`, §7) : le travail
-documentaire est sériel par nature, la rédaction ne doit pas l'être.
+Si la réponse est non, cela ne se fait pas — quelle que soit la qualité documentaire de ce
+qu'on y perd.
 
 ---
 
-## 1. Le problème que ce dispositif résout
+## 1. Le problème que ce dispositif a créé, et comment il a été réparé
 
-L'application contient aujourd'hui **35 concepts rédigés de mémoire**. Ils sont
-plausibles, souvent justes, et invérifiables : le champ `sources` du type `Concept`
-existe depuis le premier jour, n'est renseigné que par des étiquettes (« Weber, Économie
-et société », sans édition, sans page, sans DOI), et **n'est affiché nulle part**. Rien,
-dans le code actuel, ne distingue une affirmation lue dans un texte d'une affirmation
-reconstituée.
+Il faut le lire avant tout le reste, parce que c'est la seule chose qui explique la forme
+actuelle du dispositif.
 
-C'est acceptable pour un prototype et intenable pour un produit d'apprentissage : une
-erreur d'attribution apprise est plus coûteuse qu'une absence de fiche.
+La première version demandait un enregistrement complet par concept : définition dans les
+termes de l'auteur, mécanisme en douze étapes, conditions d'apparition, d'intensification et
+de disparition, contresens répertoriés avec leur réfutation, notes de traduction terme à
+terme, réception internationale et francophone, ambiguïtés connues, limites, drapeaux de
+confiance, traçabilité de chaque phrase affichée vers un champ de preuve. Le contrôle
+portait sur l'ensemble, en deux passes.
 
-Le dispositif décrit ici produit donc deux choses :
+Le résultat, mesuré sur les fiches produites :
 
-1. un **corpus maître** (`corpus/`), riche, sourcé, versionné, hors application ;
-2. une **projection** vers `src/content/`, pauvre et lisible, que l'application consomme.
-
-L'application ne lit jamais le corpus maître. Le corpus maître ne connaît jamais l'UI.
-
----
-
-## 2. Ce qu'on cherche à prouver
-
-En neuropsychologie, la question est « est-ce que ça marche, et à quel niveau de preuve ».
-Ici elle est :
-
-> **Peut-on légitimement attribuer ce concept à cet auteur, que signifie-t-il réellement
-> dans ses travaux, et notre formulation pédagogique respecte-t-elle cette signification ?**
-
-La chaîne de preuve est donc :
-
-```
-auteur → texte primaire → passage/définition → mécanisme → réception académique
-       → formulation pédagogique → projection appli
-```
-
-Chaque flèche est une occasion de perdre la vérité. Le danger principal n'est pas le faux
-chiffre, c'est :
-
-- un vrai concept attribué au mauvais auteur ;
-- un vrai auteur dont l'idée est simplifiée jusqu'au contresens ;
-- un terme moderne collé rétrospectivement sur un texte ancien ;
-- un concept collectif attribué à un seul nom ;
-- une vulgarisation devenue si répandue qu'elle a remplacé le texte.
-
-Le dernier cas sera fréquent sur ce périmètre — « rationalité limitée », « garbage can »,
-« zones d'incertitude » circulent surtout sous forme vulgarisée.
-
----
-
-## 3. Le périmètre est la discipline, pas une liste d'auteurs
-
-Le périmètre est écrit dans [`corpus/perimeter.md`](../corpus/perimeter.md) et n'est pas
-renégocié fiche par fiche :
-
-> **Sociologie et théorie des organisations** — l'ensemble des travaux permettant de
-> comprendre le fonctionnement des organisations.
-
-**Weber, Merton, Simon, March, Crozier, Friedberg, Hirschman et Argyris sont des points
-d'entrée, pas des frontières.** Un corpus construit à partir d'une liste d'auteurs
-reproduit la connaissance de celui qui l'a écrite et laisse dans l'ombre ce qu'il ignore,
-sans que rien ne le signale jamais. C'est le biais le plus coûteux de tout le dispositif,
-parce qu'il est invisible depuis l'intérieur.
-
-D'où `corpus-cartographer`, en amont de toute la chaîne : il part des manuels, handbooks,
-entrées d'encyclopédie et revues de référence — les textes qui **font l'inventaire du
-champ** — pour établir courants, auteurs, concepts structurants, filiations, et surtout
-`angles_morts`. Sa carte alimente la file d'instruction ; les huit seeds y figurent parmi
-d'autres.
-
-Rien dans le code ne restreint plus le corpus à ces huit noms : le validateur accepte un
-auteur ou un thème que l'application ne connaît pas encore, et la carte les affiche par
-leur libellé. **Le corpus découvre, l'application reçoit.**
-
-La question posée n'est jamais « est-ce de la sociologie pure ? » (Hirschman vient de
-l'économie, Simon de la décision, Argyris de la psychologie, Williamson de l'économie
-institutionnelle) mais :
-
-> Ce travail éclaire-t-il le fonctionnement des organisations ?
-
-Tout le reste part en `corpus/rejected/` avec `rejection_reason: "OUT_OF_SCOPE"`. On ne
-garde pas de zone grise : un concept hors périmètre non rejeté revient toujours.
-
----
-
-## 4. La hiérarchie documentaire
-
-Elle remplace la hiérarchie des niveaux de preuve.
-
-| Niveau | Source | Usage autorisé |
-|---|---|---|
-| **A — primaire** | Texte de l'auteur : ouvrage, article original, traduction identifiée | Établir ce que l'auteur dit réellement |
-| **B — secondaire académique** | Article peer-reviewed, chapitre universitaire portant sur l'auteur | Vérifier l'interprétation et l'attribution |
-| **C — synthèse académique** | Handbook, encyclopédie universitaire, revue de littérature | Contextualiser, découvrir |
-| **D — pédagogique** | Cours universitaire, ressource institutionnelle | Détection uniquement |
-| **E — web général** | Wikipédia, blogs, presse, sites divers | Pistes uniquement — jamais cité |
-
-Trois règles non négociables :
-
-1. **Une source de niveau E ne devient jamais une preuve par répétition.** Quinze sites
-   concordants qui ne remontent à aucun texte académique ne valent rien. Le concept
-   n'entre pas.
-2. **Une référence qu'on ne peut pas atteindre n'existe pas.** Pas de DOI, pas d'ISBN, pas
-   d'URL stable, pas de localisation dans l'ouvrage → la source ne compte pas.
-3. **On vérifie ce que la source conclut, pas qu'elle existe.** C'est le contrôle le plus
-   important : un texte peut citer la bonne étude, avec le bon titre, et lui faire dire
-   l'inverse.
-
-### Les bases, branchées en MCP
-
-Les agents n'accèdent pas aux bases par le web général : un serveur MCP local
-(`scripts/mcp/documentary-server.mjs`, déclaré dans `.mcp.json`) expose **OpenAlex,
-Crossref, Semantic Scholar, Zotero et HAL** derrière six outils. Il est écrit dans ce dépôt
-plutôt qu'emprunté : un dispositif dont le seul produit est la vérifiabilité ne peut pas
-déléguer à un serveur opaque la chaîne qui va de la requête à la référence.
-
-Trois de ses choix font partie de la méthode, pas de l'implémentation :
-
-1. **Toute notice revient avec un `corpus_fragment` en `consulted: "metadata-only"`**,
-   sans localisation ni extrait. Une base atteste qu'un texte existe, jamais ce qu'il dit ;
-   le validateur refuse une fiche validée sur cette seule base. Relever ce champ est un
-   geste d'agent, après lecture.
-2. **`search_francophone` est un outil distinct, à lancer dans le même message que
-   `search_literature`.** La couche francophone cesse d'être une intention pour devenir un
-   appel qu'on fait ou qu'on ne fait pas.
-3. **Un échec n'est jamais un vide.** Les réponses portent `failures`, et
-   `verify_reference` porte `conclusive`. Une base en 429 n'a rien dit ; elle n'a pas dit
-   « rien ». Sans cette distinction, un incident réseau ferait rejeter une référence
-   valide — l'exact inverse du but.
-
-`verify_reference` est le primitif central : il résout un DOI ou un ISBN et rend **la liste
-des écarts** entre la notice réelle et ce que la fiche affirme, sans jamais rendre de
-verdict global. « La référence existe » et « la référence est celle qu'on croit » sont deux
-questions distinctes, et c'est la seconde qui fait perdre les corpus.
-
-Installation, variables d'environnement et limites connues :
-[`scripts/mcp/README.md`](../scripts/mcp/README.md).
-
-### Les outils bibliométriques, dont scite
-
-Semantic Scholar, OpenAlex, Crossref et scite ne sont pas des niveaux de la hiérarchie :
-ce sont des **instruments** qui aident à parcourir les niveaux B et C. Un résultat qui en
-sort n'a pas de statut propre — il désigne un texte, qu'il faut ensuite ouvrir.
-
-scite mérite une mention particulière parce qu'il fait quelque chose que les autres ne
-font pas : il classe chaque citation en *supporting*, *contrasting* ou *mentioning*, en
-extrayant la phrase de contexte. C'est précieux à deux endroits, et dangereux à un
-troisième.
-
-Avant d'y venir : `get_citations`, dans le serveur MCP ci-dessus, rend déjà les phrases de
-contexte et l'intention détectée par Semantic Scholar — une version partielle, libre et
-sans abonnement de ce que scite fait mieux. Elle suffit souvent.
-
-**Là où scite sert :**
-
-- `corpus-reception-analyst` — les proportions et surtout les citations *contrasting*
-  donnent directement de quoi remplir `reception.debates`, `reception.critiques` et
-  `known_ambiguities`. Un concept dont la réception est contestée doit le dire ; c'est
-  exactement ce que le corpus doit savoir de lui-même.
-- `corpus-blind-reviewer` — lire les phrases de citation permet de vérifier **ce qu'une
-  source conclut** avant de l'ouvrir, ce qui est précisément le contrôle le plus important
-  du dispositif, ici mené à l'échelle. Et l'écart entre ce que les textes citants font
-  dire à l'auteur et ce que son texte dit est le meilleur détecteur automatique de la
-  confusion « concept ≠ vulgarisation dominante ».
-
-**Là où il ne sert pas, et où il faut l'écrire :**
-
-> Une phrase de citation extraite par scite est un extrait du **texte citant**, pas du
-> texte cité. Elle ne devient jamais une source primaire, ne devient jamais
-> `key_quotation`, et n'établit jamais une attribution à elle seule.
-
-Sans cette règle, l'outil se retourne : quinze citations concordantes *supporting*
-ressemblent à une preuve, alors que ce sont quinze auteurs qui répètent peut-être la même
-lecture de seconde main. C'est la « preuve par répétition » du niveau E, avec une interface
-savante. Le nombre de citations concordantes n'est pas un argument ; c'est un signal à
-vérifier sur le texte.
-
-**Sa limite sur ce corpus, à connaître avant de s'y fier :** scite est indexé sur les DOI
-et sur le texte intégral d'articles. Or notre noyau est fait d'**ouvrages**, dont plusieurs
-en français et antérieurs à la généralisation des DOI — *Le Phénomène bureaucratique*
-(1963), *L'Acteur et le système* (1977), *Économie et société*. La couverture y sera
-faible, précisément là où la couche francophone compte le plus. Elle sera en revanche
-excellente sur Cohen, March & Olsen (1972), Merton (1940) ou les articles d'Argyris. Il
-complète les bases, il ne les remplace pas.
-
-### La couche francophone est cherchée en amont
-
-Jamais ajoutée en relecture. Les deux voies sont interrogées **en parallèle** :
-
-```
-                        CONCEPT
-                           │
-        ┌──────────────────┴──────────────────┐
-        │                                     │
- littérature internationale          littérature francophone
-        │                                     │
- Semantic Scholar / OpenAlex          HAL / Persée / Cairn
- Crossref / JSTOR (métadonnées)       OpenEdition / theses.fr
-        │                                     │
-        └──────────────────┬──────────────────┘
-                           ▼
-                     confrontation
-```
-
-Ce n'est pas de la coquetterie : Crozier et Friedberg publient d'abord en français, et la
-réception française de Weber, Merton ou Simon passe par des traductions dont le
-vocabulaire ne recouvre pas exactement l'original (« domination » / *Herrschaft*,
-« rationalité en finalité » / *Zweckrationalität*). Le champ `translation_notes` du schéma
-existe pour ça.
-
----
-
-## 5. La définition dans les termes de l'auteur
-
-`evidence.concept_definition` énonce le concept **dans les termes de l'auteur**, sans
-vulgarisation. C'est la seule pièce de fond que la suite consomme : le résumé de la carte
-n'a que 170 caractères, et c'est à cette définition que le contrôleur aveugle les oppose.
-
-Fiche refusée : « Déplacement des buts : une organisation peut oublier ses objectifs. »
-C'est vrai, et vide.
-
-### Ce qui a été retiré, et pourquoi
-
-Le schéma exigeait autrefois une **chaîne d'étapes** (`mechanism`, deux étapes minimum,
-avec un test de suffisance) et des **conditions** d'apparition, d'intensification et de
-disparition. Ces champs ont été supprimés.
-
-Ils n'atteignaient aucun écran. La projection `corpus:build` ne lit que treize champs, et
-aucun d'eux n'en faisait partie. Le coût, lui, était réel et documenté :
-
-- `rationalite-limitee` a épuisé ses trois tours sur un désaccord de classement dans
-  `conditions.appears_when` — un champ que personne ne verra jamais ;
-- `couplage-lache` est resté candidat parce que sa chaîne d'étapes « ne passait pas le
-  test de suffisance », alors que sa carte, elle, était établie.
-
-Deux fiches perdues sur des données non affichées. La rigueur n'est pas retirée pour
-autant : elle reste où elle porte — citation verbatim et localisée, attribution confirmée,
-sources qui résolvent. Ce qui est retiré, c'est l'exigence d'épuiser le texte.
-
-Ont disparu pour la même raison : `pedagogy.detailed_explanation`, `concrete_example`,
-`example_setting`, `analysis_questions`, `quiz`, `graph.difficulty` et
-`difficulty_rationale`. Ceux-là servaient une session d'apprentissage que l'application a
-supprimée — `src/types/index.ts` le dit depuis longtemps ; le schéma du corpus ne l'avait
-simplement jamais suivi.
-
----
-
-## 5 bis. La citation de l'auteur
-
-Une fiche peut porter un passage du texte, cité mot pour mot (`evidence.key_quotation`,
-affiché par `ConceptQuotation`). C'est le **seul élément de l'application qui ne passe pas
-par nos mots** : tout le reste — accroche, résumé — est une reformulation.
-
-Quatre conditions, vérifiées par le validateur :
-
-1. **Verbatim.** Le texte enregistré est le texte, sans guillemets (l'application les
-   pose) et sans lissage. Une coupe se signale par `[…]`. Le caractère verbatim lui-même
-   ne s'automatise pas : c'est le contrôleur aveugle qui le confronte à l'édition.
-2. **Rattachée à une source primaire réellement ouverte.** La citation pointe sur une
-   entrée de `primary_sources` par son index, et cette source ne peut pas être en
-   `consulted: "metadata-only"` — on ne cite pas un texte qu'on n'a pas lu.
-3. **Localisée.** Chapitre, section, page. Une citation qu'on ne peut pas rouvrir à la
-   bonne page ne vaut rien.
-4. **Honnête sur sa traduction.** C'est le piège principal de ce corpus. Une phrase de
-   Weber lue en français est passée par quelqu'un. Le validateur détecte automatiquement
-   qu'une traduction a eu lieu — quand la langue de la citation diffère de celle de sa
-   source — et impose alors soit une traduction publiée avec **traducteur et édition**
-   nommés, soit une traduction de notre fait, qui doit conserver `original_text` et
-   s'annoncer telle quelle à l'écran. Afficher une traduction anonyme, ce serait présenter
-   une interprétation comme une parole d'auteur.
-
-Deux règles de fond, qui ne se relâchent jamais :
-
-- **Une citation ne remplace pas le mécanisme.** Elle l'ancre. Une fiche dont le mécanisme
-  est faible ne devient pas bonne parce qu'elle est joliment citée — c'est même le mode de
-  défaillance à surveiller, la citation étant ce qui se retient le plus facilement.
-- **La citation est facultative, et c'est délibéré.** Beaucoup de concepts n'ont pas de
-  passage court et autonome qui les énonce : l'idée est distribuée sur un chapitre entier.
-  Exiger une citation partout garantirait exactement ce que ce dispositif existe pour
-  empêcher — une belle phrase fabriquée, ou sortie de son contexte pour tenir dans un
-  écran. Pas de passage citable établi : pas de citation, et la fiche reste complète.
-
-Sur les concepts coécrits, `attributed_to` est obligatoire : on ne prête pas à l'un les
-mots d'un ouvrage à trois signatures.
-
----
-
-## 6. Deux objets, jamais un seul
-
-C'est la décision structurante.
-
-### L'objet maître — `corpus/**/<id>.json`
-
-Riche : attribution détaillée, sources primaires localisées, réception, ambiguïtés
-connues, mésinterprétations courantes, limites, traçabilité de chaque phrase pédagogique,
-journal de validation. Schéma : [`corpus/schema/concept.record.schema.json`](../corpus/schema/concept.record.schema.json).
-
-### L'objet appli — `Concept` dans `src/types/index.ts`
-
-Pauvre, et volontairement : titre, thème, citation, accroche, résumé, auteur, sources.
-Sept éléments — exactement ce que la carte affiche, et rien de plus.
-
-La projection est **mécanique et à sens unique** (`npm run corpus:build`). On n'édite
-jamais un concept généré à la main : la correction se fait dans l'objet maître, puis on
-reprojette. C'est ce qui garantit qu'aucune phrase de l'application n'existe sans un
-enregistrement sourcé derrière elle.
-
-### Le rattachement à un thème
-
-C'est la seule donnée de structure que la carte consomme encore : `graph.themes`, un
-identifiant existant de `src/content/themes.ts`, avec son libellé.
-
-Il reste une affirmation et se justifie — ranger un concept sous un thème, c'est dire
-quelque chose du champ. Un thème nouveau est possible, avec son libellé et sa
-justification ; un thème fabriqué pour ranger une carte ne l'est pas.
-
-Le graphe de prérequis, les relations entre concepts et le moteur pédagogique qui les
-consommait n'existent plus.
-
----
-
-## 7. Les agents
-
-Huit sous-agents, dans `.claude/agents/`. La règle centrale est celle de la méthode
-d'origine : **celui qui cherche et rédige ne valide pas ; celui qui valide ne publie pas.**
-
-| Agent | Mission | Interdiction |
-|---|---|---|
-| `corpus-cartographer` | **Dresse la carte du champ** — courants, auteurs, concepts, filiations, angles morts | Ne part jamais d'une liste de noms, n'instruit aucun concept |
-| `corpus-orchestrator` | Distribue le travail, applique le protocole, gère les états | Ne produit **aucune** connaissance, ne tranche jamais sur le fond |
-| `corpus-card-writer` | **Écrit les cartes**, plusieurs en un passage, à partir des dossiers documentaires | Ne mène aucune recherche, n'ajoute rien que les dossiers n'établissent |
-| `corpus-scout` | Repère les concepts candidats et les sources atteignables | Ne valide rien, ne rédige rien |
-| `corpus-primary-reader` | Établit ce que dit le texte de l'auteur, localisation à l'appui, et le passage citable s'il en existe un | Ne vulgarise pas, ne compare pas les auteurs |
-| `corpus-reception-analyst` | Établit comment la littérature académique lit ce concept | Ne modifie jamais le bloc primaire |
-| `corpus-blind-reviewer` | Revérifie indépendamment, fait par fait : preuve **et** fidélité de la prose | Ne connaît ni le brief ni la confiance des agents amont |
-| `corpus-editor` | Projette vers l'application | Ne peut traiter que des fiches `VALIDATED` |
-
-L'orchestrateur n'est pas un expert. Il ne dit jamais « Merton = déplacement des buts,
-donc c'est bon ». Il constate des états et déclenche des étapes.
-
-### Le contrôleur aveugle
-
-C'est le cœur du dispositif, et la partie qu'il ne faut pas assouplir.
-
-`corpus-blind-reviewer` reçoit **l'affirmation, l'attribution et les sources**. Il ne
-reçoit pas : le brief initial, le niveau de confiance annoncé, le nom des agents amont,
-les tentatives précédentes, ni la mention « concept très connu ». Il refait sa propre
-recherche et tranche fait par fait.
-
-Il rend, pour chaque fiche :
-
-```
-ATTRIBUTION      : confirmée | douteuse | fausse
-SOURCE PRIMAIRE  : confirmée | non confirmée
-INTERPRÉTATION   : fidèle | trop large | trop étroite | déformée
-SOURCES          : concordantes | divergentes | insuffisantes
-VERDICT          : PASS | REWORK | REJECT
-```
-
-Il tranche **deux jugements en une seule lecture**, sur un dossier unique produit par
-`npm run corpus:brief -- <id>` :
-
-- **la preuve** : sur `evidence`, citation comprise ;
-- **la fidélité** : sur `pedagogy` et `graph` confrontés à `evidence`, avec une question
-  unique — *cette prose ajoute-t-elle quelque chose que les sources n'établissent pas ?*
-
-Les deux verdicts restent distincts dans `validation` — `evidence_review` et
-`pedagogy_review` — parce que ce sont deux questions distinctes : un échec de fidélité ne
-renvoie pas à la recherche, il renvoie à la réécriture. Mais ils sont rendus ensemble.
-
-Ils l'ont été en deux invocations séparées, et cela coûtait de rouvrir et retélécharger
-les mêmes sources deux fois pour une carte de 400 caractères.
-
----
-
-## 8. Le protocole d'orchestration
-
-```
-                      concept candidat
-                             │
-                    [scout] périmètre + sources atteignables
-                             │
-                  sources primaires trouvées ? ──non──▶ rejected/ (NO_PRIMARY_SOURCE)
-                             │oui
-              ┌──────────────┴──────────────┐
-     [primary-reader]                [reception-analyst]      ← en parallèle,
-     texte de l'auteur                littérature secondaire     couche FR incluse
-              └──────────────┬──────────────┘
-                             │
-                    evidence{} déposé en                  candidates/
-                             │
-                   [card-writer] → la carte : thème, nom, citation,
-                             │      accroche, résumé, auteur, sources
-                             │                            review/
-                   [blind-reviewer] — preuve ET fidélité
-                    ┌────────┼────────┐
-                  PASS    REWORK    REJECT
-                    │        │         └──────────────────▶ rejected/
-                    │        └── retour card-writer (max 2 tours) ──┐
-                    │                                               │
-              status VALIDATED                    3 tours ▶ rejected/
-                    │                             (UNRESOLVED)
-                    │                                       validated/
-                    │
-              [corpus-editor] npm run corpus:build         src/content/generated/
-```
-
-### États et répertoires
-
-Le répertoire **est** l'état. Le validateur refuse toute incohérence entre
-`record.status` et l'emplacement du fichier.
-
-| Répertoire | `status` | Signification |
-|---|---|---|
-| `corpus/candidates/` | `CANDIDATE` | Bloc `evidence` en cours, pas encore contrôlé |
-| `corpus/review/` | `IN_REVIEW` | Soumis au contrôleur, ou en REWORK |
-| `corpus/validated/` | `VALIDATED` | Les deux verdicts en PASS — seul répertoire projetable |
-| `corpus/rejected/` | `REJECTED` | Avec `rejection_reason` obligatoire, conservé |
-
-Les rejets sont **conservés et versionnés**. Un concept rejeté pour attribution douteuse
-qui reviendrait six mois plus tard doit retrouver la trace de son premier examen.
-
-### Critères PASS / REWORK / REJECT
-
-**PASS** exige tout ce qui suit :
-
-- au moins **une source primaire** atteignable et localisée (page, chapitre, section) ;
-- au moins **une source secondaire académique indépendante** ;
-- la couche francophone **cherchée** (trouvée ou non, mais `francophone_layer_searched: true`) ;
-- attribution cohérente avec `authorship` (voir §9) ;
-- aucun chiffre, date ou effectif dans la prose qui ne figure pas dans `evidence`.
-
-**REWORK** : la matière est là mais l'énoncé déborde — interprétation trop large, source secondaire qui n'établit pas ce qu'on lui fait dire, exemple qui colle
-l'étiquette sans montrer le mécanisme. Deux tours maximum par passe.
-
-**REJECT** : attribution fausse, aucune source primaire atteignable, concept hors
-périmètre, concept qui n'existe que dans la vulgarisation, ou trois tours sans
-convergence.
-
----
-
-## 9. Les confusions activement traquées
-
-Cette table fait littéralement partie du prompt système du contrôleur aveugle. Elle n'est
-pas décorative : chaque ligne vient d'une erreur que ce corpus peut produire.
-
-| Confusion | Exemple sur ce périmètre |
+| | |
 |---|---|
-| Concept de l'auteur ≠ terme inventé plus tard | Un commentateur baptise une idée que l'auteur n'a jamais nommée ainsi |
-| Auteur principal ≠ auteur unique | *Garbage can* = Cohen, March & Olsen (1972), pas « un concept de March » |
-| Concept ≠ vulgarisation populaire | Rationalité limitée ≠ « les humains sont irrationnels » |
-| Idéal-type ≠ recommandation | Weber ne prescrit pas la bureaucratie, il en construit le type pur |
-| Description ≠ prescription | Décrire un mécanisme n'est pas le recommander |
-| Individuel ≠ organisationnel | Une explication psychologique plaquée sur une structure |
-| Corrélation historique ≠ filiation intellectuelle | Deux auteurs traitent d'un phénomène voisin sans lien de reprise |
-| Traduction ≠ équivalence | Un terme français peut recouvrir plusieurs termes originaux |
-| Concept spécifique ≠ terme générique | « Déplacement des buts » ≠ « perdre ses objectifs » |
-| Association ≠ paternité | Populariser un concept n'est pas l'avoir créé |
-| Phrase du texte ≠ phrase d'un texte citant | Une citation extraite par scite ou Semantic Scholar est écrite par celui qui cite, pas par l'auteur |
-| Traduction affichée ≠ parole d'auteur | Un passage traduit sans traducteur nommé présente une interprétation comme un original |
+| Poids d'un enregistrement | jusqu'à **171 624 caractères** |
+| Poids de la carte affichée | environ **600 caractères** |
+| Fiches instruites | 8 |
+| Fiches publiées | **0** |
 
-Le champ `authorship` du schéma existe pour la deuxième ligne :
+Les huit fiches ont toutes été renvoyées en correction par le contrôleur aveugle. Aucun de
+ces renvois ne portait sur la carte : ils visaient `traceability`, `difficulty_rationale`,
+`common_misinterpretations`, la manière de citer une source francophone dans le dossier —
+des champs que le lecteur ne voit jamais. Les six verdicts rendus concluaient tous
+`attribution : confirmée`, `source primaire : confirmée`, `sources : concordantes`.
 
-```json
-{
-  "authors": [
-    { "name": "Michael D. Cohen" },
-    { "name": "James G. March", "app_author_id": "march" },
-    { "name": "Johan P. Olsen" }
-  ],
-  "authorship": "COAUTHORED",
-  "associated_author": "James G. March"
-}
-```
+Une fiche a épuisé ses trois tours sur un désaccord de classement dans un champ qui
+n'atteignait pas l'écran. Une autre est restée candidate parce que sa chaîne d'étapes ne
+passait pas un « test de suffisance », alors que sa carte était établie.
 
-Sans cela, le corpus fabrique lentement une histoire intellectuelle fausse, par
-simplification d'affichage. Côté application, le champ `attributionNote` porte cette
-information jusqu'à l'écran : la fiche affiche les vrais coauteurs même quand le concept
-est rangé sous un seul nom.
+**Le dispositif ne protégeait plus la carte : il l'empêchait.**
+
+Ce qui a été supprimé — tout ce qui n'atteint pas le lecteur. Ce qui a été gardé, et ne doit
+pas bouger : citation verbatim et localisée sur une source réellement ouverte, attribution
+confirmée, références qui résolvent, prose qui n'ajoute rien.
+
+L'enregistrement complet des huit fiches instruites sous l'ancien format est conservé dans
+`corpus/dossiers/`. Rien n'a été détruit ; rien de tout cela n'est plus exigé.
 
 ---
 
-## 10. Le rythme
+## 2. La carte
 
-Piloté par le signal, jamais par un objectif de volume.
+Sept éléments, dont un seul facultatif. Le schéma est
+[`corpus/schema/carte.schema.json`](../corpus/schema/carte.schema.json).
 
-> Pas de preuve documentaire suffisante → pas de fiche.
-
-Conséquences pratiques :
-
-- **Aucun quota par auteur.** Interdiction formelle d'équilibrer artificiellement. Si le
-  corpus finit à March 18 / Merton 11 / Crozier 14 / Friedberg 7 / Simon 16 / Argyris 12 /
-  Weber 9 / Hirschman 6, c'est un résultat, pas un défaut : il reflète la littérature.
-  Exiger « 15 par auteur » produit mécaniquement des concepts secondaires ou douteux chez
-  les auteurs les moins prolifiques sur ce périmètre.
-- **Une session qui explore 15 candidats et en valide 11 est une bonne session.** Le
-  rapport candidats/validés est journalisé, pas optimisé.
-- **Alternance thématique.** Interdiction d'enchaîner trois lots sur le même thème : la
-  veille se referme sinon sur la bureaucratie, qui est le thème le plus documenté.
-- **L'incertitude est une donnée du corpus.** `known_ambiguities`, `limitations`,
-  `common_misinterpretations` ne sont pas des aveux de faiblesse : ce sont des champs qui
-  se remplissent. Une fiche qui les a tous vides est suspecte, pas exemplaire.
-
----
-
-## 11. Du corpus à l'application
-
-### Les commandes
-
-```bash
-npm run corpus:validate   # schéma, cohérence, intégrité du graphe, gating
-npm run corpus:build      # corpus/validated/ → src/content/generated/
-npm run corpus:audit      # état du corpus : validé, en cours, sujets jamais instruits
-```
-
-`corpus:build` **appelle d'abord `corpus:validate`** et refuse de produire quoi que ce
-soit si une fiche `corpus/validated/` échoue. C'est le garde-fou technique de la règle
-« rien ne part en ligne sans être passé par le contrôle » : il ne dépend pas de la
-discipline d'un agent.
-
-### Le corpus, et ce qui n'en est pas
-
-```
-src/content/
-├── generated/
-│   └── concepts.generated.ts   ← LE corpus : produit par corpus:build, jamais édité
-├── fixtures/
-│   └── concepts.fixture.ts     ← échafaudage : 35 fiches écrites de mémoire, dev seulement
-└── index.ts                    ← compose : vérifié toujours, échafaudage sur demande
-```
-
-Les 35 fiches de `fixtures/` n'ont jamais été un corpus. Elles ont été écrites de mémoire,
-avant qu'aucun dispositif de vérification n'existe, pour une seule raison : donner au
-moteur pédagogique, au graphe et aux écrans de quoi être construits et testés. Elles ne
-sont pas un état antérieur du corpus qu'il suffirait de corriger — leur ressemblance avec
-la réalité n'a jamais été établie, et rien ne distingue en elles ce qui est juste de ce
-qui est plausible.
-
-Trois conséquences, appliquées par le code et non par la vigilance :
-
-- **Elles ne sont servies qu'en développement.** `NEXT_PUBLIC_CORPUS_FIXTURES` vaut `on`
-  ou `off` ; par défaut, actif hors production. Un build de production ne peut pas les
-  embarquer par accident, et un build de démonstration ne peut les inclure qu'en le
-  disant.
-- **Elles sont marquées.** `provenance: "fixture"` est posé à la composition, et la fiche
-  l'affiche : « contenu écrit sans vérification documentaire ».
-- **Elles ne portent rien.** Une fiche validée ne peut avoir ni relation, ni prérequis,
-  ni approfondissement vers un sujet d'échafaudage : le validateur exige que toute
-  référence désigne une **autre fiche validée**. Le graphe se construit donc au rythme du
-  corpus, et les premières fiches sont peu reliées — c'est le prix, et il est juste.
-
-**Le corpus peut donc être vide, et c'est un état légitime.** Le moteur pédagogique
-retourne `null` au lieu de fabriquer une session, et l'écran d'accueil le dit : « le
-corpus est en cours de constitution ». Remplir pour éviter un écran vide reviendrait
-exactement à préférer un contenu faux à un contenu absent, ce que tout le reste de ce
-document interdit.
-
-Quand un sujet d'échafaudage est instruit, on reprend **le même identifiant** : la fiche
-d'échafaudage cesse d'être servie, et son entrée peut être supprimée du fichier —
-`corpus:build` les liste. Ce fichier est destiné à disparaître, non à être maintenu.
-
-### La carte, et ce qui la garantit
-
-L'écran du jour restitue sept éléments, tous issus du **même enregistrement validé**.
-C'est ce qui en fait une restitution du corpus et non une composition d'écran :
-
-| Carte | Champ de la fiche | Garanti par |
+| élément | champ | plafond |
 |---|---|---|
-| THÈME | `graph.themes` | validateur : au moins un thème existant |
-| CONCEPT | `canonical_name_fr` | validateur |
-| CITATION | `evidence.key_quotation` | **facultatif** (§5 bis) |
-| AUTEUR | `attribution` → `attributionNote` | validateur : `app_author_id`, cohérence de `authorship` |
-| ACCROCHE | `pedagogy.hook_question` | validateur, sur les fiches validées |
-| RÉSUMÉ | `pedagogy.short_explanation` | validateur, sur les fiches validées |
-| SOURCES | `primary_sources` + `secondary_sources` | validateur : une primaire et une secondaire au minimum |
+| thème | `themes[0]` + `theme_labels` | — |
+| concept | `title` | 48 caractères |
+| citation | `quotation` | 150 caractères, **facultative** |
+| auteur | `authors`, `attribution_note` | — |
+| accroche | `hook` | 85 caractères |
+| résumé | `summary` | 170 caractères |
+| sources | `sources` | 5 au plus |
 
-Aucun de ces champs ne peut manquer sur une fiche validée : une fiche dont la carte serait
-trouée n'atteint pas `corpus/validated/`. Un test le vérifie de bout en bout, du record
-projeté aux sept éléments (`scripts/corpus/lib/pipeline.test.mjs`).
+Les plafonds sont **mesurés**, pas stylistiques : la carte est rendue dans un navigateur,
+tous les champs à leur maximum simultané, sur 375 × 667 — le plus petit écran encore en
+circulation. Elle doit tenir sans défiler. Le premier lot a produit des accroches de 311
+caractères et des résumés de 805, tous excellents et tous inaffichables.
 
-Les sources sont affichées, sur la carte comme sur la fiche, chaque niveau étant nommé —
-texte de l'auteur, littérature académique, réception francophone. Elles ne l'étaient pas
-avant ce dispositif : le champ existait sans être rendu nulle part, ce qui revenait à
-demander au lecteur de nous croire sur parole.
+La citation est facultative parce que beaucoup de concepts n'ont pas de passage court et
+autonome qui les énonce. En exiger un partout ferait fabriquer la belle phrase que ce
+dispositif existe pour empêcher.
 
-**Lancer le travail :** `/corpus <auteur, thème ou concept>` déclenche l'orchestrateur et
-le protocole complet ; `/corpus-publish` valide et projette.
+### Un champ affiché n'est pas un champ de preuve
 
-### Ce que l'application affiche de plus
+C'est la règle qui a coûté le plus cher, et elle se réapprend à chaque lot.
 
-Trois ajouts au type `Concept`, et rien d'autre :
+`label` et `locator` d'une source **s'affichent tels quels**. Écrits pour un contrôleur,
+ils ont produit : une ligne d'attribution de 1 600 caractères ; un localisateur de 889
+caractères sous une source ; la notice de Reynaud affichant le numéro thématique, la note
+liminaire **et l'adresse postale du CNAM**.
 
-- `attributionNote?: string` — une ligne sous le titre quand l'attribution ne se réduit
-  pas à un nom (coauteurs, concept associé, terme forgé par un tiers) ;
-- `quotation?: Quotation` — le passage de l'auteur, sa référence et, le cas échéant, le
-  nom de son traducteur (§5 bis) ;
-- `SourceKind` gagne `secondary-academic` et `francophone-reception`, pour que la
-  projection ne fasse pas passer un article peer-reviewed pour une « interprétation
-  pédagogique ».
+Un champ qui atterrit sur la carte doit donc être écrit deux fois — une fois pour
+l'affichage, une fois pour la preuve. Le validateur plafonne désormais `label` et `locator`
+pour que le défaut ne puisse plus atteindre l'écran, et `notes` recueille ce qu'on voulait
+dire en plus.
 
-Le reste de l'UI est inchangé : la direction UX (`docs/ux-direction.md`) interdit les
-compteurs, badges et indicateurs, et un badge « vérifié » n'apprendrait rien à personne.
-La garantie est structurelle — ce qui est affiché vient d'un enregistrement validé — pas
-signalétique.
-
-### Par quoi commencer
-
-Le corpus part de zéro. Les sujets de l'échafaudage indiquent tout au plus ce qui avait
-paru intéressant à couvrir : c'est une liste de pistes, pas une dette à rembourser, et
-aucun de leurs textes n'entre dans le pipeline — ni comme source, ni comme point de
-départ, ni comme aide à la rédaction. Ce serait une source de niveau E déguisée, avec
-l'aggravation qu'elle porte notre propre nom.
-
-Ordre suggéré, par ce qu'il apprend sur la méthode plus que par ce qu'il rapporte :
-
-1. Un concept **manifestement coécrit** (`garbage-can-model` : Cohen, March & Olsen, 1972)
-   — il exerce d'emblée `authorship`, `attributed_to` et `attributionNote`, là où
-   l'échafaudage écrivait simplement « James March ».
-2. Un concept **fortement vulgarisé** (`rationalite-limitee`) — c'est là que le contrôle de fidélité et
-   `common_misinterpretations` prennent tout leur sens.
-3. Un concept **d'ouvrage français** (`zones-incertitude`) — il mesure ce que valent
-   réellement les bases internationales sur cette partie du périmètre, et ce que la couche
-   francophone doit rattraper.
-
-Trois fiches suffisent pour savoir si le dispositif tient. Après quoi la cadence est celle
-du signal : pas de preuve documentaire suffisante, pas de fiche.
-
-Les cas pratiques (`src/content/case-studies.ts`) passent en dernier, et pour la même
-raison : une lecture croisée n'a de sens que si les concepts qu'elle mobilise sont validés.
-Ceux d'aujourd'hui reposent sur de l'échafaudage — ils en sont donc eux-mêmes.
+Même raison pour `attribution_note` : elle s'écrit **en toutes lettres**, jamais composée
+par un script à partir de champs séparés. La composition automatique prenait l'année de la
+première source primaire et a rendu « Concept coécrit par Michel Crozier et Erhard Friedberg
+(1960) » — pour une cosignature attestée en 1979.
 
 ---
 
-## 12. Refusé par principe
+## 3. La hiérarchie des sources
 
-Sans exception, quel que soit le degré d'urgence ou d'évidence apparente :
+Quatre niveaux, et le niveau est affiché au lecteur : sans lui, la carte ferait passer un
+article peer-reviewed pour une glose de notre fait.
 
-- inventer ou reconstituer de mémoire une référence, une date, une pagination, un chiffre,
-  et à plus forte raison une citation ;
-- présenter comme une parole de l'auteur une phrase écrite par un texte qui le cite ;
-- afficher un passage traduit sans dire par qui ;
-- présenter un concept coécrit sous un seul nom pour simplifier l'affichage ;
-- faire d'une source de niveau E une preuve par accumulation ;
-- écrire la fiche pédagogique avant que le mécanisme ne soit établi ;
-- laisser un agent valider son propre travail ;
-- transmettre au contrôleur aveugle le niveau de confiance amont ;
-- éditer à la main un fichier de `src/content/generated/` ;
-- combler un trou de corpus pour équilibrer un auteur.
+| `kind` | ce que c'est |
+|---|---|
+| `primary` | le texte de l'auteur |
+| `secondary-academic` | article peer-reviewed, chapitre, handbook |
+| `francophone-reception` | la réception française, cherchée en parallèle et non après coup |
+| `pedagogical-interpretation` | vulgarisation universitaire, signalée comme telle |
 
-> Une référence introuvable n'existe pas.
-> Une source qui ne dit pas ce qu'on lui fait dire n'est pas une preuve.
-> Une affirmation n'est pas validée par celui qui l'a produite.
-> Un concept séduisant mais insuffisamment documenté ne sort pas.
-> L'incertitude est une donnée du corpus, pas quelque chose à faire disparaître.
+Trois règles, appliquées par `npm run corpus:validate` :
+
+1. **Une référence introuvable n'existe pas.** DOI, ISBN ou URL, sinon la source sort.
+2. **On ne cite pas un texte qu'on n'a pas ouvert.** Une carte publiée porte au moins une
+   source primaire en `consulted: full-text`.
+3. **Une lacune se déclare, elle ne se comble pas.** Ce qui n'a pas pu être atteint va dans
+   `notes`, en clair.
+
+Le web général (Wikipédia, blogs, cours en ligne) sert **uniquement à détecter**. Quinze
+pages concordantes qui ne remontent à aucun texte académique ne valent rien.
+
+---
+
+## 4. La chaîne — quatre agents
+
+```
+corpus-scout  →  corpus-primary-reader  →  corpus-card-writer  →  corpus-blind-reviewer
+                                                                          │
+                          corpus/rejected/  ◀── REJECT                 PASS │ REWORK ──┐
+                                                                          ▼          │
+                                                    corpus-editor → l'application     │
+                                                                                      │
+                                              ◀───────────────────────────────────────┘
+                                                  deux tours au maximum
+```
+
+1. **`corpus-scout`** — repère les concepts du périmètre et, pour chacun, une source
+   primaire **réellement atteignable**. C'est le seul critère d'entrée. Écarter tôt coûte
+   une recherche ; retenir par optimisme coûte toute la chaîne.
+2. **`corpus-primary-reader`** — ouvre le texte, relève la citation verbatim et localisée,
+   établit l'attribution. L'étape irremplaçable : tout le reste se reformule, la citation
+   non.
+3. **`corpus-card-writer`** — écrit l'accroche et le résumé, choisit les cinq sources.
+   **En lot** : le travail documentaire est sériel par nature, la rédaction ne doit pas
+   l'être.
+4. **`corpus-blind-reviewer`** — quatre questions, une passe.
+5. **`corpus-editor`** — déplace en `validated/`, projette, rapporte.
+
+Aucun agent ne contrôle son propre travail.
+
+**Deux tours de correction au maximum.** Au troisième, la fiche se rejette : trois tours sur
+une carte de 600 caractères signalent un désaccord que la prose ne réglera pas.
+
+---
+
+## 5. Le contrôle aveugle
+
+`npm run corpus:brief -- <id>` produit `corpus/review/<id>.brief.json` : la carte et ses
+sources, **rien d'autre**. Verdict précédent, notes internes, statut et chemin du dossier en
+sont retirés mécaniquement — l'aveuglement est une propriété du script, pas une promesse.
+
+Le contrôleur refait sa propre recherche et tranche quatre questions :
+
+| question | valeurs |
+|---|---|
+| **attribution** — le concept est-il de cet auteur ? | `confirmee` · `douteuse` · `fausse` |
+| **quotation** — verbatim, à l'endroit annoncé, dans un texte qu'il a ouvert ? | `verbatim` · `ecart` · `absente` |
+| **sources** — chaque référence résout-elle vers ce qu'elle annonce ? | `resolvent` · `partielles` · `introuvables` |
+| **prose** — l'accroche et le résumé excèdent-ils les sources ? | `fidele` · `deborde` · `trop-etroite` |
+
+**Ne relever que ce qui touche ces quatre points.** C'est une contrainte sur le contrôleur
+autant que sur les rédacteurs : le dispositif précédent trouvait de vrais défauts, page
+après page, sur des champs qui n'atteignaient personne — et n'a jamais rien publié.
+
+La quatrième question est la plus facile à manquer, parce qu'un adjectif suffit. Deux cas
+réels : une accroche demandait pourquoi des organisations **concurrentes** finissent par se
+ressembler, alors que l'article dit « structural change in organizations seems less and less
+driven by competition » ; un résumé parlait d'**imitation** là où le texte dit *modeling* —
+l'imitation suppose une intention de ressembler, le modelage suppose seulement qu'un modèle
+soit disponible.
+
+---
+
+## 6. Le verrou de publication
+
+`checkGating()` dans [`scripts/corpus/lib/validate.mjs`](../scripts/corpus/lib/validate.mjs).
+Une fiche n'est projetée que si :
+
+- `review.verdict === "PASS"` ;
+- `attribution === "confirmee"`, `sources === "resolvent"`, `prose === "fidele"` ;
+- `quotation === "verbatim"`, ou `"absente"` si la fiche n'en porte pas ;
+- au moins une source primaire en `full-text` ;
+- les longueurs d'affichage tiennent.
+
+Ces règles sont dans un script et non dans une consigne parce qu'une consigne s'oublie. Les
+assouplir demande de modifier ce document d'abord.
+
+---
+
+## 7. Commandes
+
+| commande | ce qu'elle fait |
+|---|---|
+| `npm run corpus:validate` | vérifie chaque fiche et le corpus. Sort en erreur si une règle tombe. |
+| `npm run corpus:build` | projette `corpus/validated/` vers `src/content/generated/`. Refuse si la validation échoue. |
+| `npm run corpus:brief -- <id>` | produit le dossier aveugle. |
+| `npm run corpus:audit` | état du corpus : couverture par auteur, par thème, sujets non instruits. |
+
+Le fichier généré ne s'édite jamais à la main : une correction manuelle disparaît à la
+projection suivante, et aura vécu entre-temps sans enregistrement sourcé derrière elle.

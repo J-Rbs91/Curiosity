@@ -1,0 +1,85 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "organisation-genree",
+  "slug": "organisation-genree",
+  "status": "VALIDATED",
+  "title": "Organisation genrée",
+  "themes": [
+    "organisation-formelle-reelle"
+  ],
+  "theme_labels": {
+    "organisation-formelle-reelle": "Organisation réelle vs organisation formelle"
+  },
+  "authors": [
+    {
+      "name": "Joan Acker"
+    }
+  ],
+  "hook": "Un poste décrit comme neutre peut-il présupposer un certain type de vie ?",
+  "summary": "Chez Acker, le genre n'entre pas dans l'organisation du dehors. La définition d'un poste suppose un travailleur sans attaches, dont un autre assure la vie hors travail.",
+  "sources": [
+    {
+      "label": "Joan Acker, « Hierarchies, Jobs, Bodies: A Theory of Gendered Organizations », Gender & Society, vol. 4, n° 2, juin 1990, p. 139-158.",
+      "kind": "primary",
+      "locator": "p. 139-158",
+      "doi_isbn": "10.1177/089124390004002002",
+      "url": "https://doi.org/10.1177/089124390004002002",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Joan Acker, « Inequality Regimes: Gender, Class, and Race in Organizations », Gender & Society, vol. 20, n° 4, août 2006, p. 441-464 (Sociologists for Women in Society Feminist Lecture).",
+      "kind": "primary",
+      "doi_isbn": "10.1177/0891243206289499",
+      "url": "https://doi.org/10.1177/0891243206289499",
+      "consulted": "excerpt"
+    },
+    {
+      "label": "Joan Acker, « From Sex Roles to Gendered Institutions », Contemporary Sociology, vol. 21, n° 5, 1992, p. 565-569.",
+      "kind": "primary",
+      "doi_isbn": "10.2307/2075528",
+      "url": "https://www.jstor.org/stable/2075528",
+      "consulted": "metadata-only"
+    },
+    {
+      "label": "Christine L. Williams, Chandra Muller et Kristine Kilanski, « Gendered Organizations in the New Economy », Gender & Society, 26(4), août 2012, p. 549-573",
+      "kind": "secondary-academic",
+      "doi_isbn": "10.1177/0891243212445466",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4236831/"
+    },
+    {
+      "label": "Dana M. Britton, « The Epistemology of the Gendered Organization », Gender & Society, 14(3), juin 2000, p. 418-434",
+      "kind": "secondary-academic",
+      "doi_isbn": "10.1177/089124300014003004",
+      "url": "https://doi.org/10.1177/089124300014003004"
+    }
+  ],
+  "review": {
+    "reviewer": "corpus-blind-reviewer",
+    "date": "2026-08-17",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "notes": [
+      "Contrôle aveugle du 17 août 2026 : attribution confirmée, source primaire confirmée, interprétation fidèle, sources concordantes.",
+      "Traduction de notre fait : aucune traduction française publiée de l'article de 1990 n'a été identifiée."
+    ]
+  },
+  "dossier": "corpus/dossiers/organisation-genree.json",
+  "quotation": {
+    "text": "Dans la logique organisationnelle, celui qui remplit l'emploi abstrait est un travailleur désincarné qui n'existe que pour le travail.",
+    "reference": "Joan Acker, « Hierarchies, Jobs, Bodies: A Theory of Gendered Organizations », Gender & Society, vol. 4, n° 2, juin 1990, p. 139-158.",
+    "locator": "p. 149",
+    "language": "fr",
+    "original_text": "In organizational logic, filling the abstract job is a disembodied worker who exists only for the work.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (agent corpus-primary-reader, chaîne Curiosity). Aucune traduction française publiée de l'article de 1990 n'a été identifiée (recherches Crossref, Semantic Scholar, HAL et web : voir `acces_tente`)."
+    }
+  },
+  "notes": [
+    "« From Sex Roles to Gendered Institutions » (1992) n'a pas été ouvert ; « Inequality Regimes » (2006) l'a été de façon ciblée, non ligne à ligne."
+  ]
+}

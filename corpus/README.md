@@ -4,48 +4,43 @@ Ce répertoire est la source de vérité documentaire de Curiosity. L'applicatio
 jamais : elle consomme sa **projection** dans `src/content/generated/`, produite par
 `npm run corpus:build`.
 
-Le workflow complet — périmètre, hiérarchie des sources, agents, critères
-PASS/REWORK/REJECT — est décrit dans [`docs/corpus-workflow.md`](../docs/corpus-workflow.md).
+Une fiche est **une carte** : thème, concept, citation, auteur, accroche, résumé, cinq
+sources. Il n'y a rien d'autre à renseigner — voir
+[`schema/carte.schema.json`](./schema/carte.schema.json) et
+[`docs/corpus-workflow.md`](../docs/corpus-workflow.md), dont le §1 explique pourquoi le
+format précédent, trente fois plus lourd, n'a jamais publié une seule fiche.
+
 Le périmètre est dans [`perimeter.md`](./perimeter.md).
 
 ## Structure
 
 ```
 corpus/
-├── perimeter.md                     périmètre fermé, écrit une fois
-├── schema/
-│   └── concept.record.schema.json   schéma de l'enregistrement maître
-├── _template/
-│   └── concept.template.json        squelette à copier (jamais validable en l'état)
-├── candidates/   CANDIDATE   evidence en cours, pas encore contrôlé
-├── review/       IN_REVIEW   soumis au contrôleur aveugle, ou en REWORK
-├── validated/    VALIDATED   deux passes en PASS — seul répertoire projetable
-├── rejected/     REJECTED    conservé, avec rejection_reason
-└── evidence/     extraits, notes de lecture, captures de sources par concept
+├── perimeter.md                 périmètre fermé, écrit une fois
+├── schema/carte.schema.json     schéma d'une carte
+├── _template/                   squelette à copier (jamais validable en l'état)
+├── candidates/   CANDIDATE      concept repéré, carte pas encore écrite
+├── review/       IN_REVIEW      soumis au contrôle aveugle, ou en correction
+├── validated/    VALIDATED      verdict PASS — seul répertoire projetable
+├── rejected/     REJECTED       conservé, avec rejection_reason
+├── evidence/     lectures primaires, extraits, notes par concept
+└── dossiers/     enregistrements complets de l'ancien format, archivés
 ```
 
 **Le répertoire est l'état.** `npm run corpus:validate` refuse toute incohérence entre le
-champ `status` d'un enregistrement et l'emplacement de son fichier. Faire avancer une
-fiche, c'est déplacer son fichier *et* mettre à jour son `status`.
+champ `status` d'une fiche et l'emplacement de son fichier. Faire avancer une fiche, c'est
+déplacer son fichier *et* mettre à jour son `status`.
+
+`dossiers/` n'est plus lu par rien. Il conserve les 171 000 caractères d'instruction par
+concept produits par le premier dispositif : c'est payé, ce n'est pas perdu, et ce n'est
+plus exigé. Une fiche peut y renvoyer par son champ `dossier`.
 
 ## Nommage
 
-Un fichier par concept : `<id>.json`, où `<id>` est l'identifiant utilisé par
-l'application (`ConceptId`). Pour un sujet déjà présent dans l'échafaudage
-(`src/content/fixtures/`), **on reprend le même identifiant** : la fiche d'échafaudage
-cesse alors d'être servie. Son texte, lui, n'entre nulle part.
-
-Les pièces de `evidence/` sont rangées par concept : `evidence/<id>/<source>.md`.
-
-## Les trois blocs d'un enregistrement
-
-| Bloc | Écrit par | Contrôlé par | Nature |
-|---|---|---|---|
-| `evidence` | `corpus-concept-analyst`, à partir de `corpus-primary-reader` et `corpus-reception-analyst` | `corpus-blind-reviewer` passe A | Ce que les sources établissent, citation de l'auteur comprise |
-| `pedagogy` | `corpus-pedagogy-writer` | `corpus-blind-reviewer` passe B | Mise en mots, **sans ajout** |
-| `graph` | `corpus-graph-curator` | validateur (intégrité) + passe B | Relations, prérequis, difficulté |
-
-Aucun de ces agents ne valide son propre bloc.
+Un fichier par concept : `<id>.json`, où `<id>` est l'identifiant utilisé par l'application
+(`ConceptId`). Pour un sujet déjà présent dans l'échafaudage (`src/content/fixtures/`),
+**on reprend le même identifiant** : la fiche d'échafaudage cesse alors d'être servie. Son
+texte, lui, n'entre nulle part.
 
 ## Cycle de vie
 
@@ -55,15 +50,19 @@ candidates/  →  review/  →  validated/  →  src/content/generated/
      └── REWORK ──┘  └── REJECT ──▶ rejected/   (conservé, jamais supprimé)
 ```
 
+Deux tours de correction au maximum.
+
 ## Interdits
 
 - Éditer un fichier de `src/content/generated/` : la correction se fait ici, puis on
   reprojette.
-- Déplacer une fiche en `validated/` sans les deux verdicts `PASS`.
-- Supprimer un rejet : un concept rejeté qui revient doit retrouver la trace de son
-  premier examen.
+- Déplacer une fiche en `validated/` sans un verdict `PASS` sur les quatre points.
+- Supprimer un rejet : un concept rejeté qui revient doit retrouver la trace de son premier
+  examen.
 - Inventer une référence, une pagination, une date ou un chiffre. Une lacune se signale
-  (`known_ambiguities`, `confidence_flags`) ; elle ne se comble pas.
+  (`notes`) ; elle ne se comble pas.
 - Fabriquer une citation, la recomposer à partir de plusieurs pages, ou reprendre comme
-  parole de l'auteur une phrase écrite par un texte qui le cite. `key_quotation` est
-  facultatif : pas de passage citable établi, pas de citation.
+  parole de l'auteur une phrase écrite par un texte qui le cite. `quotation` est
+  facultative : pas de passage citable établi, pas de citation.
+- Écrire une note de dossier dans un champ qui s'affiche (`label`, `locator`,
+  `attribution_note`). Elle va dans `notes`.

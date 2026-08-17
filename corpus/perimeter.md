@@ -19,7 +19,7 @@ Erhard Friedberg · Albert O. Hirschman · Chris Argyris**
 Ce sont des **seeds** : des portes d'entrée sûres dans le champ, pas ses frontières. Ils
 ont été choisis parce qu'ils sont incontournables, pas parce qu'ils sont exhaustifs.
 
-C'est `corpus-cartographer` qui établit ce que le champ contient réellement — courants,
+C'est `corpus-scout` qui établit ce que le champ contient réellement — courants,
 auteurs, concepts structurants, filiations — à partir des manuels, handbooks, entrées
 d'encyclopédie et revues de référence. Sa carte, dans `corpus/map/`, est ce qui alimente la
 file d'instruction. Les huit ci-dessus y figurent parmi d'autres.

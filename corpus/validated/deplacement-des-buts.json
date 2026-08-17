@@ -1,0 +1,86 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "deplacement-des-buts",
+  "slug": "deplacement-des-buts",
+  "status": "VALIDATED",
+  "title": "Déplacement des buts",
+  "themes": [
+    "bureaucratie-regles",
+    "comportements-organisationnels"
+  ],
+  "theme_labels": {
+    "bureaucratie-regles": "Bureaucratie et règles",
+    "comportements-organisationnels": "Comportements organisationnels"
+  },
+  "authors": [
+    {
+      "name": "Robert K. Merton",
+      "app_author_id": "merton"
+    }
+  ],
+  "hook": "Une organisation peut-elle rendre la règle plus précieuse que le but qu'elle sert ?",
+  "summary": "Chez Merton, les dispositifs mêmes qui font la fiabilité déplacent l'attachement du but vers le détail des comportements prescrits : le moyen devient une fin en soi.",
+  "sources": [
+    {
+      "label": "Robert K. Merton, « Bureaucratic Structure and Personality », Social Forces, vol. 18, n° 4, mai 1940, p. 560-568.",
+      "kind": "primary",
+      "locator": "p. 560-568",
+      "doi_isbn": "10.2307/2570634",
+      "url": "https://doi.org/10.2307/2570634",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Robert K. Merton, Social Theory and Social Structure, New York, The Free Press, 1968 [1949].",
+      "kind": "primary",
+      "doi_isbn": "ISBN 0029211301",
+      "consulted": "metadata-only"
+    },
+    {
+      "label": "Robert K. Merton, Éléments de théorie et de méthode sociologique, traduit de l'anglais par Henri Mendras, Paris, Armand Colin, 1997.",
+      "kind": "primary",
+      "doi_isbn": "ISBN 9782200017736",
+      "consulted": "metadata-only"
+    },
+    {
+      "label": "Philip Selznick, « An Approach to a Theory of Bureaucracy », American Sociological Review, vol. 8, n° 1, 1943, p. 47-54.",
+      "kind": "secondary-academic",
+      "doi_isbn": "10.2307/2085448",
+      "url": "https://doi.org/10.2307/2085448",
+      "consulted": "full-text"
+    },
+    {
+      "label": "W. Keith Warner et A. Eugene Havens, « Goal Displacement and the Intangibility of Organizational Goals », Administrative Science Quarterly, vol. 12, n° 4, 1968, p. 539-555.",
+      "kind": "secondary-academic",
+      "doi_isbn": "10.2307/2391532",
+      "url": "https://doi.org/10.2307/2391532",
+      "consulted": "full-text"
+    }
+  ],
+  "review": {
+    "reviewer": "corpus-blind-reviewer",
+    "date": "2026-08-17",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "notes": [
+      "Contrôle aveugle du 16 août 2026, passes A (PASS, 2ᵉ tour) et B. DOI 10.2307/2570634 résolu sans écart ; les deux phrases dont dépend le résumé retrouvées mot à mot sur un plein texte ouvert de l'essai.",
+      "Le REWORK de la passe B ne portait sur aucun champ affiché : il visait `graph.difficulty_rationale` (« une documentation que le bloc evidence déclare ne pas avoir ») et `pedagogy.traceability[3]`. Les deux champs n'existent plus.",
+      "La traduction de la citation est de notre fait : la traduction publiée d'Henri Mendras n'a pas pu être ouverte, sa formulation exacte est inconnue."
+    ]
+  },
+  "dossier": "corpus/dossiers/deplacement-des-buts.json",
+  "quotation": {
+    "text": "L'observance des règles, conçue à l'origine comme un moyen, se transforme en fin en soi […]",
+    "reference": "Robert K. Merton, « Bureaucratic Structure and Personality », Social Forces, vol. 18, n° 4, mai 1940, p. 560-568.",
+    "locator": "p. 563",
+    "language": "fr",
+    "original_text": "Adherence to the rules, originally conceived as a means, becomes transformed into an end-in-itself […]",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (chaîne Curiosity). La traduction publiée d'Henri Mendras (Éléments de théorie et de méthode sociologique) n'a pas pu être ouverte : sa formulation exacte est inconnue et n'a donc pas été reprise."
+    }
+  }
+}

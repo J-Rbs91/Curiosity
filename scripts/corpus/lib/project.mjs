@@ -1,58 +1,24 @@
 /**
- * Projection : enregistrement maître → objet `Concept` consommé par l'application.
+ * Projection : carte du corpus → objet `Concept` consommé par l'application.
  *
- * Sens unique et mécanique. Rien ne s'ajoute ici qui ne soit dans l'enregistrement :
- * corriger une fiche affichée, c'est corriger le corpus puis reprojeter.
+ * Sens unique et quasi mécanique. Rien ne s'ajoute ici qui ne soit dans la fiche :
+ * corriger une carte affichée, c'est corriger le corpus puis reprojeter.
+ *
+ * Cette étape composait autrefois des phrases — la note d'attribution était assemblée à
+ * partir de l'auteur associé et de l'année de la première source primaire. Elle a produit
+ * « Concept coécrit par Michel Crozier et Erhard Friedberg (1960) » pour une cosignature
+ * attestée en 1979. Une phrase affichée ne se compose plus : elle s'écrit dans la fiche,
+ * où elle peut être lue et contrôlée.
  */
 
 const asArray = (v) => (Array.isArray(v) ? v : []);
 const isFilled = (v) => typeof v === "string" && v.trim().length > 0;
 
-/** Voir `CARD_LIMITS.sources` dans validate.mjs : la carte en montre cinq au plus. */
-const MAX_CARD_SOURCES = 5;
-
-function listFr(names) {
-  if (names.length <= 1) return names[0] ?? "";
-  return `${names.slice(0, -1).join(", ")} et ${names[names.length - 1]}`;
-}
-
-/**
- * La ligne qui rétablit l'attribution réelle sous le titre, quand elle ne se réduit pas
- * à un nom. C'est la traduction à l'écran de « auteur principal ≠ auteur unique » et de
- * « association ≠ paternité » : sans elle, l'application fabrique lentement une histoire
- * intellectuelle fausse, par simplification d'affichage.
- */
-export function buildAttributionNote(record) {
-  const attribution = record?.attribution ?? {};
-  const names = asArray(attribution.authors).map((a) => a?.name).filter(isFilled);
-  const origin = attribution.term_origin ?? {};
-  const year = asArray(record?.evidence?.primary_sources).find((s) => s?.year)?.year;
-  const parts = [];
-
-  if (attribution.authorship === "COAUTHORED" && names.length > 1) {
-    const under = isFilled(attribution.associated_author)
-      ? `, habituellement rangé sous ${attribution.associated_author}`
-      : "";
-    parts.push(`Concept coécrit par ${listFr(names)}${year ? ` (${year})` : ""}${under}.`);
-  } else if (attribution.authorship === "ASSOCIATED_WITH") {
-    parts.push(
-      `Concept associé à ${attribution.associated_author}, qui ne l'a pas créé${
-        names.length > 0 ? ` : ${listFr(names)}` : ""
-      }.`
-    );
-  }
-
-  if (isFilled(origin.coined_by) && !names.includes(origin.coined_by))
-    parts.push(`Terme forgé par ${origin.coined_by}${isFilled(origin.coined_in) ? ` (${origin.coined_in})` : ""}.`);
-
-  return parts.length > 0 ? parts.join(" ") : undefined;
-}
-
 /**
  * « Traduit de l'allemand », « traduit du russe » — pas « traduit de allemand ».
  *
- * La langue d'origine est saisie en toutes lettres ; un code ISO (`de`, `en`) ne se
- * décline pas et la mention se réduit alors au traducteur, ce qui reste juste.
+ * La langue d'origine est saisie en toutes lettres ; un code ISO (`de`, `en`) ne se décline
+ * pas et la mention se réduit alors au traducteur, ce qui reste juste.
  */
 function sourceLanguageClause(language) {
   if (!isFilled(language) || language.trim().length <= 3) return "";
@@ -60,60 +26,33 @@ function sourceLanguageClause(language) {
   return /^[aeiouyàâäéèêëïîôöùûüh]/i.test(name) ? ` de l'${name}` : ` du ${name}`;
 }
 
-/**
- * Le nom est-il déjà porté par la notice qui suit ?
- *
- * Les notices de source commencent par convention par leur auteur — « Joan Acker, "Hierarchies,
- * Jobs, Bodies"… ». Juxtaposée au nom que porte `attributedTo`, la notice le répétait :
- * « Joan Acker, Joan Acker, "Hierarchies…" ». On compare donc les deux, et le nom ne s'affiche
- * que lorsqu'il apprend quelque chose.
- *
- * La comparaison est tolérante à la casse et aux espaces, pas au nom : deux graphies
- * différentes du même auteur donnent deux noms différents, et il vaut mieux répéter que taire
- * l'attribution d'un passage.
- */
-function citationOpensWith(citation, name) {
-  if (!isFilled(citation) || !isFilled(name)) return false;
-  const normalize = (s) => s.trim().replace(/\s+/g, " ").toLocaleLowerCase("fr");
-  return normalize(citation).startsWith(normalize(name));
-}
-
-/**
- * La citation telle qu'elle sera lue. Deux choses s'y jouent : la référence doit permettre
- * de rouvrir le texte, et une traduction ne doit jamais passer pour la parole de l'auteur.
- * Une traduction publiée nomme son traducteur ; une traduction de notre fait le dit.
- */
+/** La citation telle qu'elle sera lue. Une traduction ne passe jamais pour la parole de l'auteur. */
 export function buildQuotation(record) {
-  const quotation = record?.evidence?.key_quotation;
-  if (!quotation || !isFilled(quotation.text)) return undefined;
+  const q = record?.quotation;
+  if (!q || !isFilled(q.text)) return undefined;
 
-  const source = asArray(record?.evidence?.primary_sources)[quotation.primary_source_index];
-  const attributedTo =
-    quotation.attributed_to ??
-    record?.attribution?.associated_author ??
-    asArray(record?.attribution?.authors)[0]?.name ??
-    "";
-
-  const reference = [source?.citation, quotation.locator].filter(isFilled).join(", ");
-
-  const projected = { text: quotation.text, reference };
   /*
-   * Omis, et non vidé : le champ ne doit exister que s'il porte un nom, sinon la légende
-   * afficherait la virgule qui le séparait de la notice. Le cas où il subsiste est celui qui
-   * le justifie — un passage tiré d'un ouvrage collectif, dont l'auteur n'est pas celui de la
-   * notice.
+   * Le point final de la notice tombe avant le localisateur : les notices bibliographiques
+   * se terminent par un point, et la jonction rendait « …, p. 560-568., p. 563 ».
    */
-  if (isFilled(attributedTo) && !citationOpensWith(source?.citation, attributedTo))
-    projected.attributedTo = attributedTo;
+  const notice = isFilled(q.reference) ? q.reference.trim().replace(/\.$/, "") : "";
+  const projected = {
+    text: q.text,
+    reference: [notice, q.locator].filter(isFilled).join(", "),
+  };
 
-  const translation = quotation.translation ?? {};
-  const from = sourceLanguageClause(quotation.original_language);
-  if (translation.kind === "published") {
+  // Omis, et non vidé : le champ ne doit exister que s'il porte un nom, sinon la légende
+  // afficherait la virgule qui le séparait de la notice.
+  if (isFilled(q.attributed_to)) projected.attributedTo = q.attributed_to;
+
+  const t = q.translation ?? {};
+  const from = sourceLanguageClause(q.original_language);
+  if (t.kind === "published") {
     projected.translationNote = [
-      `Traduit${from} par ${translation.translator}`,
-      isFilled(translation.edition) ? ` (${translation.edition})` : "",
+      `Traduit${from} par ${t.translator}`,
+      isFilled(t.edition) ? ` (${t.edition})` : "",
     ].join("");
-  } else if (translation.kind === "in-house") {
+  } else if (t.kind === "in-house") {
     projected.translationNote = `Traduit${from} pour cette fiche — traduction non publiée`;
   }
 
@@ -128,72 +67,54 @@ function sourceUrl(source) {
 }
 
 function projectSources(record) {
-  const evidence = record?.evidence ?? {};
-  const map = (list, kind, referenceOf) =>
-    asArray(list)
-      .filter((s) => isFilled(s?.citation))
-      .map((s) => {
-        const source = { label: s.citation, kind };
-        const reference = referenceOf(s);
-        if (isFilled(reference)) source.reference = reference;
-        const url = sourceUrl(s);
-        if (url) source.url = url;
-        return source;
-      });
-
-  /*
-   * Cinq sources au maximum, et les sources primaires d'abord.
-   *
-   * Une fiche bien instruite en porte vingt ou trente : toutes les projeter noierait le
-   * texte de l'auteur au milieu des commentateurs, et ferait déborder la carte. Ce qui
-   * est retenu est ce qui permet de remonter au texte ; le reste vit dans le corpus, qui
-   * est là pour ça.
-   */
-  return [
-    ...map(evidence.primary_sources, "primary", (s) =>
-      [s.locator, s.doi_isbn].filter(isFilled).join(" · ")
-    ),
-    ...map(evidence.secondary_sources, "secondary-academic", (s) => s.doi_isbn),
-    ...map(evidence.francophone_sources, "francophone-reception", (s) => s.doi_isbn),
-  ].slice(0, MAX_CARD_SOURCES);
+  return asArray(record?.sources)
+    .filter((s) => isFilled(s?.label))
+    .map((s) => {
+      const source = { label: s.label, kind: s.kind };
+      /*
+       * Le localisateur ne se répète pas : une notice d'article se termine par sa
+       * pagination, et la ligne rendait « …, p. 1-25. · p. 1-25 · 10.2307/2392088 ». Il
+       * reste affiché lorsqu'il situe *dans* la source — un chapitre, une section, une
+       * page précise à l'intérieur de l'étendue annoncée.
+       */
+      const locator = isFilled(s.locator) && !s.label.includes(s.locator) ? s.locator : null;
+      const reference = [locator, s.doi_isbn].filter(isFilled).join(" · ");
+      if (isFilled(reference)) source.reference = reference;
+      const url = sourceUrl(s);
+      if (url) source.url = url;
+      return source;
+    });
 }
 
-/** Enregistrement maître → `Concept`. L'appelant garantit que le record est VALIDATED. */
+/** Carte du corpus → `Concept`. L'appelant garantit que la fiche est VALIDATED. */
 export function projectConcept(record) {
-  const pedagogy = record?.pedagogy ?? {};
-  const graph = record?.graph ?? {};
-
   /*
    * Les libellés d'affichage sont portés par la fiche, pas cherchés dans les tables de
-   * l'application. C'est ce qui permet au corpus d'introduire un auteur ou un thème que
-   * l'application ne connaît pas encore : la carte l'affiche par son nom, et une page
-   * dédiée pourra lui être consacrée plus tard, ou jamais.
+   * l'application : c'est ce qui permet au corpus d'introduire un auteur ou un thème que
+   * l'application ne connaît pas encore.
    */
-  const authorLabel = asArray(record?.attribution?.authors)
+  const authorLabel = asArray(record.authors)
     .map((a) => a?.name)
     .filter(isFilled)
     .join(", ");
-  const firstTheme = asArray(graph.themes)[0];
-  const themeLabel = graph.theme_labels?.[firstTheme] ?? null;
+  const themes = asArray(record.themes);
+  const themeLabel = record.theme_labels?.[themes[0]];
 
   const concept = {
     id: record.id,
     slug: record.slug,
-    title: record.canonical_name_fr,
+    title: record.title,
     authorLabel,
-    hookQuestion: pedagogy.hook_question,
-    shortExplanation: pedagogy.short_explanation,
-    authors: asArray(record?.attribution?.authors)
+    hookQuestion: record.hook,
+    shortExplanation: record.summary,
+    authors: asArray(record.authors)
       .map((a) => a?.app_author_id)
       .filter(isFilled),
-    themes: asArray(graph.themes),
+    themes,
   };
 
   if (isFilled(themeLabel)) concept.themeLabel = themeLabel;
-
-
-  const note = buildAttributionNote(record);
-  if (note) concept.attributionNote = note;
+  if (isFilled(record.attribution_note)) concept.attributionNote = record.attribution_note;
 
   const quotation = buildQuotation(record);
   if (quotation) concept.quotation = quotation;

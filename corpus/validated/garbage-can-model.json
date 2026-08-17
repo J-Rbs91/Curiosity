@@ -1,0 +1,98 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "garbage-can-model",
+  "slug": "garbage-can-model",
+  "status": "VALIDATED",
+  "title": "Modèle de la poubelle",
+  "themes": [
+    "decision"
+  ],
+  "theme_labels": {
+    "decision": "Décision"
+  },
+  "authors": [
+    {
+      "name": "Michael D. Cohen"
+    },
+    {
+      "name": "James G. March",
+      "app_author_id": "march"
+    },
+    {
+      "name": "Johan P. Olsen"
+    }
+  ],
+  "hook": "Une solution qui traînait rencontre un problème qui vient d'arriver : qui a décidé ?",
+  "summary": "Dans une « anarchie organisée » — buts ambigus, savoir causal flou, participation variable —, ce qui relie un problème à une solution est leur coprésence dans le temps.",
+  "sources": [
+    {
+      "label": "Michael D. Cohen, James G. March et Johan P. Olsen, « A Garbage Can Model of Organizational Choice », Administrative Science Quarterly, vol. 17, n° 1, mars 1972, p. 1-25.",
+      "kind": "primary",
+      "locator": "p. 1-25",
+      "doi_isbn": "10.2307/2392088",
+      "url": "https://doi.org/10.2307/2392088",
+      "consulted": "metadata-only"
+    },
+    {
+      "label": "Michael D. Cohen, James G. March et Johan P. Olsen, « ‘A Garbage Can Model’ at Forty », in Alessandro Lomi et J. Richard Harrison (dir.), The Garbage Can Model of Organizational Choice, Bingley, Emerald, 2012, p. 19-30.",
+      "kind": "primary",
+      "locator": "p. 19-30",
+      "doi_isbn": "10.1108/S0733-558X(2012)0000036005 ; ISBN 978-1-78052-712-3 (imprimé), 978-1-78052-713-0 (e-book)",
+      "url": "https://api.pageplace.de/preview/DT0400.9781780527130_A24157121/preview-9781780527130_A24157121.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "James G. March et Johan P. Olsen (dir.), Ambiguity and Choice in Organizations, Bergen, Universitetsforlaget, 1976.",
+      "kind": "primary",
+      "doi_isbn": "ISBN 82-00-01478-9 (1976) ; 82-00-01960-8 (1979)",
+      "url": "https://archive.org/details/ambiguitychoicei0000marc_k5a7",
+      "consulted": "metadata-only"
+    },
+    {
+      "label": "Alessandro Lomi et J. Richard Harrison, « The Garbage Can Model of Organizational Choice: Looking Forward at Forty » (chapitre introductif), in Research in the Sociology of Organizations, vol. 36, Emerald, 2012, p. 3-17.",
+      "kind": "secondary-academic",
+      "doi_isbn": "10.1108/S0733-558X(2012)0000036004",
+      "url": "https://api.pageplace.de/preview/DT0400.9781780527130_A24157121/preview-9781780527130_A24157121.pdf",
+      "locator": "p. 3-17"
+    },
+    {
+      "label": "David R. Gibson, « Turn-Taking and Geopolitics in the Making of Decisions », in Research in the Sociology of Organizations, vol. 36, Emerald, 2012, p. 33-64.",
+      "kind": "secondary-academic",
+      "doi_isbn": "10.1108/S0733-558X(2012)0000036006",
+      "url": "https://api.pageplace.de/preview/DT0400.9781780527130_A24157121/preview-9781780527130_A24157121.pdf",
+      "locator": "p. 33-64"
+    }
+  ],
+  "review": {
+    "reviewer": "corpus-blind-reviewer",
+    "date": "2026-08-17",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "notes": [
+      "Contrôle aveugle du 17 août 2026. Citation vérifiée verbatim à la p. 28 par le contrôleur, sur le PDF de l'éditeur qu'il a lui-même téléchargé ; trente et une citations du même chapitre confrontées une à une, toutes conformes et à la page annoncée.",
+      "L'article fondateur de 1972 n'a jamais pu être ouvert (Unpaywall : closed, aucune localisation en accès libre). La citation affichée vient de la rétrospective de 2012 signée des trois mêmes auteurs, lue intégralement — le locator le dit. La carte ne fait jamais dire à 2012 la lettre de 1972.",
+      "Le REWORK portait sur la manière dont Christine Musselin (1997) avait été consultée et citée dans le dossier. Cette source n'atteint pas la carte."
+    ]
+  },
+  "dossier": "corpus/dossiers/garbage-can-model.json",
+  "attribution_note": "Concept coécrit par Michael D. Cohen, James G. March et Johan P. Olsen, habituellement rangé sous James G. March.",
+  "quotation": {
+    "text": "La poubelle, en ces termes, dépeint un monde ordonné, mais qui parvient à l'ordre d'une manière différente de celle que glorifiaient les Lumières.",
+    "reference": "Michael D. Cohen, James G. March et Johan P. Olsen, « ‘A Garbage Can Model’ at Forty », in Alessandro Lomi et J. Richard Harrison (dir.), The Garbage Can Model of Organizational Choice, Bingley, Emerald, 2012, p. 19-30.",
+    "locator": "p. 28 (texte de 2012)",
+    "language": "fr",
+    "original_text": "The garbage can, in those terms, portrays an orderly world, but one that achieves order in a way different from that glorified by the Enlightenment.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (chaîne Curiosity). Aucune traduction française publiée de ce chapitre n'a été identifiée."
+    }
+  },
+  "notes": [
+    "La borne « p. 1-25 » de l'article de 1972 est d'usage : Crossref n'enregistre que sa première page. Elle est confirmée par la bibliographie de la rétrospective de 2012, p. 29.",
+    "La pagination du chapitre de 1976 reprenant l'article de 1972 n'a pas été vérifiée."
+  ]
+}

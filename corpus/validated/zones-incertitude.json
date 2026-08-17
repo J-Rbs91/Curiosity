@@ -1,0 +1,95 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "zones-incertitude",
+  "slug": "zones-incertitude",
+  "status": "VALIDATED",
+  "title": "Zones d'incertitude",
+  "themes": [
+    "pouvoir",
+    "organisation-formelle-reelle"
+  ],
+  "theme_labels": {
+    "pouvoir": "Pouvoir",
+    "organisation-formelle-reelle": "Organisation réelle vs organisation formelle"
+  },
+  "authors": [
+    {
+      "name": "Michel Crozier",
+      "app_author_id": "crozier"
+    },
+    {
+      "name": "Erhard Friedberg",
+      "app_author_id": "friedberg"
+    }
+  ],
+  "hook": "Là où tout est réglé, pourquoi dépend-on de celui qui maîtrise ce qui reste imprévu ?",
+  "summary": "Dans un système où tout est prévu, l'imprévu qui compte encore pour autrui devient décisif : qui le contrôle tient un pouvoir sur ceux qui en dépendent.",
+  "sources": [
+    {
+      "label": "Michel Crozier, « Les relations de pouvoir dans un système d'organisation bureaucratique », Sociologie du travail, 2ᵉ année, n° 1, janvier-mars 1960, p. 61-75.",
+      "kind": "primary",
+      "locator": "p. 72-75",
+      "doi_isbn": "10.3406/sotra.1960.1011",
+      "url": "https://www.persee.fr/doc/sotra_0038-0296_1960_num_2_1_1011",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Michel Crozier, « Crise et renouveau dans l'administration française », Sociologie du travail, vol. 8, n° 3, 1966, p. 227-248.",
+      "kind": "primary",
+      "locator": "p. 232",
+      "doi_isbn": "10.3406/sotra.1966.1273",
+      "url": "https://www.persee.fr/doc/sotra_0038-0296_1966_num_8_3_1273",
+      "consulted": "partial"
+    },
+    {
+      "label": "Michel Crozier et Erhard Friedberg, L'Acteur et le système. Les contraintes de l'action collective, Paris, Seuil, 1977.",
+      "kind": "primary",
+      "locator": "p. 71-77",
+      "doi_isbn": "ISBN 2020046776",
+      "consulted": "metadata-only"
+    },
+    {
+      "label": "David J. Hickson, C. R. Hinings, C. A. Lee, R. E. Schneck et J. M. Pennings, « A Strategic Contingencies' Theory of Intraorganizational Power », Administrative Science Quarterly, vol. 16, n° 2, 1971, p. 216-229.",
+      "kind": "secondary-academic",
+      "doi_isbn": "10.2307/2391831",
+      "url": "https://doi.org/10.2307/2391831",
+      "consulted": "metadata-only"
+    },
+    {
+      "label": "Olgierd Kuty, « L'analyse stratégique crozérienne et la nouvelle approche des organisations », Université de Liège, ORBi.",
+      "kind": "francophone-reception",
+      "locator": "p. 37",
+      "url": "https://orbi.uliege.be/handle/2268/323541",
+      "consulted": "full-text"
+    }
+  ],
+  "review": {
+    "reviewer": "corpus-blind-reviewer",
+    "date": "2026-08-17",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "notes": [
+      "Contrôle aveugle du 17 août 2026 : citation relevée par le contrôleur sur le fac-similé de la p. 73, puis confrontée caractère par caractère à la transcription ; chaîne d'attestation du terme refaite page par page (1966, 1971 Crozier seul ; 1975 avec Thoenig ; 1979 avec Friedberg) ; 13 DOI et 3 notices BnF résolus sans écart.",
+      "La coattribution à Friedberg ne repose pas sur le terme mais sur la réception de L'Acteur et le système (1977), ouvrage non ouvert. C'est documenté, et la note d'attribution le dit.",
+      "Une attestation tierce de 1964 antérieure à celle du dossier a été trouvée au contrôle (Touraine, Sociologie du travail 6-2, p. 189). Sans effet sur la carte : la fiche n'affirme aucune antériorité."
+    ]
+  },
+  "dossier": "corpus/dossiers/zones-incertitude.json",
+  "attribution_note": "Concept coécrit avec Erhard Friedberg, habituellement rangé sous Michel Crozier. L'expression apparaît d'abord chez Crozier seul (1966) ; la cosignature est attestée à partir de 1979.",
+  "quotation": {
+    "text": "[…] dans un tel système le pouvoir appartient aux individus ou aux groupes d'individus qui contrôlent les seuls éléments d'incertitude subsistants.",
+    "reference": "Michel Crozier, « Les relations de pouvoir dans un système d'organisation bureaucratique », Sociologie du travail, 2ᵉ année, n° 1, janvier-mars 1960, p. 61-75.",
+    "locator": "p. 73",
+    "language": "fr",
+    "translation": {
+      "kind": "none"
+    }
+  },
+  "notes": [
+    "La note d'attribution était composée automatiquement à partir de l'année de la première source primaire, et rendait : « Concept coécrit par Michel Crozier et Erhard Friedberg (1960) ». Le contrôleur : « 1960 est précisément l'article signé de Crozier SEUL, et le dossier établit lui-même que la première cosignature avec Friedberg attestée est de 1979. La carte daterait donc de 1960 une coécriture avec Friedberg : énoncé faux, produit mécaniquement. » La note est désormais écrite en toutes lettres, et non plus composée.",
+    "Cinq sources affichées sur les vingt-trois du dossier : le texte de 1960 d'où vient la citation, celui de 1966 où l'expression apparaît, l'ouvrage de 1977 sous lequel le concept est rangé, la reprise anglophone et la lecture francophone de référence."
+  ]
+}

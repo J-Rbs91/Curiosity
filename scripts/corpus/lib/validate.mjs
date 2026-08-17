@@ -1,17 +1,25 @@
 /**
- * Validation des enregistrements du corpus maître.
+ * Validation des cartes du corpus.
  *
- * Fonctions pures : aucune lecture disque, aucun accès réseau. Les entrées/sorties
- * sont dans io.mjs, l'exécutable dans ../validate.mjs.
+ * Fonctions pures : aucune lecture disque, aucun accès réseau. Les entrées/sorties sont
+ * dans io.mjs, l'exécutable dans ../validate.mjs.
  *
- * Ce fichier est le garde-fou technique du workflow (docs/corpus-workflow.md) : il
- * applique les règles qui ne doivent dépendre de la discipline d'aucun agent. Les
- * assouplir demande de modifier le document d'abord.
+ * Ce fichier applique les règles qui ne doivent dépendre de la discipline d'aucun agent.
+ * Il en applique désormais **moins**, et c'est une décision, pas un relâchement : le
+ * dispositif précédent contrôlait 171 000 caractères de dossier pour 600 caractères
+ * affichés, et renvoyait en correction des fiches dont la carte était établie. Ce qui est
+ * contrôlé ici est ce dont la carte dépend — le reste vivait dans des champs que personne
+ * n'affichait.
  */
 
 const ID_PATTERN = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 const STATUSES = ["CANDIDATE", "IN_REVIEW", "VALIDATED", "REJECTED"];
-const AUTHORSHIPS = ["SOLE_AUTHOR", "COAUTHORED", "ASSOCIATED_WITH"];
+const SOURCE_KINDS = [
+  "primary",
+  "secondary-academic",
+  "francophone-reception",
+  "pedagogical-interpretation",
+];
 
 /** Le répertoire est l'état : cette table est la seule autorité sur la correspondance. */
 export const STATUS_BY_DIR = {
@@ -25,184 +33,166 @@ const isFilled = (v) => typeof v === "string" && v.trim().length > 0;
 const asArray = (v) => (Array.isArray(v) ? v : []);
 
 /**
- * Longueurs maximales des champs qui composent la carte.
+ * Longueurs maximales des champs affichés.
  *
- * Ce ne sont pas des préférences de style : la carte doit tenir dans un écran de
- * téléphone **sans défilement**, et ces quatre champs sont les seuls dont la longueur varie.
+ * Ce ne sont pas des préférences de style : la carte doit tenir dans un écran de téléphone
+ * **sans défilement**, et ces quatre champs sont les seuls dont la longueur varie.
  *
- * Elles ont été **mesurées**, pas devinées : la carte est rendue dans un navigateur, tous
- * les champs à leur maximum simultané, et on compare la hauteur du bloc à la place
- * disponible. Le calibrage est fait sur **375 × 667** — l'écran le plus petit encore en
- * circulation — parce que c'est lui qui commande : ce qui tient là tient partout ailleurs.
- * Les valeurs retenues laissent environ une ligne et demie de marge sur cet écran, de quoi
- * absorber un texte dont les mots se coupent moins bien que ceux de la mesure.
- *
- * La typographie de la carte se met elle-même à l'échelle de la hauteur d'écran (16 px de
- * base au-delà de 844 points, 13,8 en dessous de 667) : sans cela, il aurait fallu calibrer
- * ces longueurs sur le plus petit téléphone et appauvrir la carte pour tous les autres.
+ * Elles ont été mesurées, pas devinées : la carte est rendue dans un navigateur, tous les
+ * champs à leur maximum simultané, et on compare la hauteur du bloc à la place disponible.
+ * Le calibrage est fait sur 375 × 667 — le plus petit écran encore en circulation — parce
+ * que c'est lui qui commande.
  *
  * La contrainte est ici plutôt que dans une consigne parce qu'une consigne s'oublie : le
  * premier lot a produit des accroches de 311 caractères et des résumés de 805, tous
  * excellents et tous inaffichables.
  */
 export const CARD_LIMITS = {
-  canonical_name_fr: 48,
-  hook_question: 85,
-  short_explanation: 170,
-  key_quotation: 150,
+  title: 48,
+  hook: 85,
+  summary: 170,
+  quotation: 150,
   sources: 5,
+  /**
+   * Un champ de source est écrit deux fois : une fois pour l'affichage, une fois pour la
+   * preuve. Confondre les deux est le défaut qui a le plus coûté à ce corpus — un
+   * `locator` de dossier faisait 889 caractères et s'affichait entier sous la source, et
+   * la notice de Reynaud a un jour montré au lecteur l'adresse postale du CNAM. Ces
+   * plafonds ne jugent pas du style : ils séparent le pointeur de la note.
+   */
+  source_label: 230,
+  source_locator: 40,
 };
 
 /**
- * Tous les nombres écrits dans un texte, en chaînes normalisées.
- * Sert la règle « un chiffre sans source ne sort pas » : une date, un effectif ou un
- * pourcentage qui apparaît dans la prose pédagogique doit exister dans le bloc de preuve.
- */
-function numbersIn(text) {
-  return new Set((String(text).match(/\d+/g) ?? []).filter((n) => n.length > 0));
-}
-
-/** Champs de `pedagogy` qui finissent sous les yeux d'un lecteur. */
-function pedagogyProse(pedagogy) {
-  if (!pedagogy || typeof pedagogy !== "object") return [];
-  return [pedagogy.hook_question, pedagogy.short_explanation].filter(isFilled);
-}
-
-function checkSources(evidence, status, errors) {
-  const primary = asArray(evidence.primary_sources);
-  primary.forEach((s, i) => {
-    const at = `evidence.primary_sources[${i}]`;
-    if (!isFilled(s?.citation)) errors.push(`${at}.citation manquante`);
-    if (!isFilled(s?.locator))
-      errors.push(`${at}.locator manquant — une source non localisable n'est pas une source`);
-    if (!isFilled(s?.evidence))
-      errors.push(`${at}.evidence manquante — on vérifie ce que la source dit, pas qu'elle existe`);
-    if (!isFilled(s?.doi_isbn) && !isFilled(s?.url))
-      errors.push(`${at} : ni DOI/ISBN ni URL — une référence introuvable n'existe pas`);
-  });
-
-  asArray(evidence.secondary_sources)
-    .concat(asArray(evidence.francophone_sources))
-    .forEach((s, i) => {
-      const at = `evidence.secondary/francophone_sources[${i}]`;
-      if (!isFilled(s?.citation)) errors.push(`${at}.citation manquante`);
-      if (!isFilled(s?.establishes))
-        errors.push(`${at}.establishes manquant — dire ce que la source établit, pas la résumer`);
-      if (s?.level && s.level !== "B" && s.level !== "C")
-        errors.push(`${at}.level « ${s.level} » : seuls les niveaux B et C s'enregistrent comme sources`);
-    });
-
-  if (status !== "VALIDATED") return;
-
-  if (primary.length === 0)
-    errors.push("VALIDATED sans source primaire : l'attribution n'est pas établie");
-  else if (primary.every((s) => s?.consulted === "metadata-only"))
-    errors.push(
-      "VALIDATED sur des sources primaires consultées en métadonnées seules : rien n'a été lu"
-    );
-
-  const secondary = asArray(evidence.secondary_sources).concat(
-    asArray(evidence.francophone_sources).filter((s) => s?.level === "B")
-  );
-  if (secondary.length === 0)
-    errors.push(
-      "VALIDATED sans source secondaire académique : l'interprétation n'est confirmée par personne"
-    );
-}
-
-/**
- * La citation est le seul élément de l'application qui ne passe pas par nos mots. Elle
- * n'est donc admise que si elle est rattachable à un texte réellement ouvert, localisée,
- * et explicite sur sa traduction. Le caractère verbatim, lui, ne s'automatise pas : c'est
- * le contrôleur aveugle qui le vérifie contre l'édition.
+ * La citation est le seul élément de la carte qui ne passe pas par nos mots. Elle n'est
+ * donc admise que si elle est localisée et honnête sur sa traduction. Le caractère
+ * verbatim, lui, ne s'automatise pas : c'est le contrôle qui le tranche, contre l'édition.
  */
 function checkQuotation(record, errors, warnings) {
-  const quotation = record?.evidence?.key_quotation;
-  if (!quotation) return;
+  const q = record.quotation;
+  if (!q) return;
 
-  const primary = asArray(record?.evidence?.primary_sources);
-  const at = "evidence.key_quotation";
-
-  if (!isFilled(quotation.text)) errors.push(`${at}.text vide`);
-  else if (quotation.text.length > CARD_LIMITS.key_quotation) {
-    // Une longueur excessive est un défaut de rédaction, pas d'instruction : elle bloque
-    // la publication mais pas le travail en cours. Tant que la fiche est en atelier, elle
-    // se signale ; en `validated/`, elle interdit la projection.
-    const message = `${at}.text : ${quotation.text.length} caractères pour ${CARD_LIMITS.key_quotation} au plus — la citation doit tenir dans la carte`;
-    if (record?.status === "VALIDATED") errors.push(message);
+  const at = "quotation";
+  if (!isFilled(q.text)) errors.push(`${at}.text vide`);
+  else if (q.text.length > CARD_LIMITS.quotation) {
+    // Une longueur excessive est un défaut de rédaction, pas d'instruction : elle bloque la
+    // publication sans interrompre le travail en cours.
+    const message = `${at}.text : ${q.text.length} caractères pour ${CARD_LIMITS.quotation} au plus — la citation doit tenir dans la carte`;
+    if (record.status === "VALIDATED") errors.push(message);
     else warnings.push(message);
   }
-  if (!isFilled(quotation.locator))
-    errors.push(`${at}.locator manquant — une citation qu'on ne peut pas rouvrir à la bonne page ne vaut rien`);
-  if (!isFilled(quotation.language)) errors.push(`${at}.language manquante`);
 
-  const index = quotation.primary_source_index;
-  const source = Number.isInteger(index) ? primary[index] : undefined;
-  if (!source) {
-    errors.push(`${at}.primary_source_index « ${index} » ne pointe sur aucune source primaire`);
-  } else if (source.consulted === "metadata-only") {
-    errors.push(`${at} : la source visée n'a été consultée qu'en métadonnées — on ne cite pas un texte qu'on n'a pas ouvert`);
-  }
+  if (!isFilled(q.reference))
+    errors.push(`${at}.reference manquante — une citation qu'on ne peut pas rouvrir ne vaut rien`);
+  if (!isFilled(q.locator)) errors.push(`${at}.locator manquant — à quelle page ?`);
 
-  const translation = quotation.translation ?? {};
-  const translated =
-    source && isFilled(source.language) && isFilled(quotation.language)
-      ? source.language !== quotation.language
-      : translation.kind === "published" || translation.kind === "in-house";
-
-  if (translated && translation.kind !== "published" && translation.kind !== "in-house")
-    errors.push(
-      `${at} : le passage est cité dans une autre langue que sa source sans traduction déclarée — traduction ≠ équivalence`
-    );
-  if (translation.kind === "published" && (!isFilled(translation.translator) || !isFilled(translation.edition)))
+  const t = q.translation ?? {};
+  if (t.kind === "published" && (!isFilled(t.translator) || !isFilled(t.edition)))
     errors.push(`${at}.translation : une traduction publiée se cite avec son traducteur et son édition`);
-  if (translation.kind === "in-house" && !isFilled(quotation.original_text))
+  if (t.kind === "in-house" && !isFilled(t.translator))
     errors.push(
-      `${at} : traduction de notre fait sans original_text — le lecteur comme le contrôleur doivent pouvoir revenir au texte`
+      `${at}.translation : traduction de notre fait sans mention de sa provenance — traduction ≠ équivalence`
     );
-
-  if (record?.attribution?.authorship !== "SOLE_AUTHOR" && !isFilled(quotation.attributed_to))
-    errors.push(
-      `${at}.attributed_to manquant sur un concept à plusieurs auteurs : on ne prête pas à l'un les mots de trois`
-    );
+  if (isFilled(q.original_language) && !isFilled(t.kind))
+    errors.push(`${at} : une langue d'origine est déclarée sans dire si le texte affiché est traduit`);
 }
 
-function checkGating(record, errors) {
-  const v = record.validation ?? {};
-  const evidenceReview = v.evidence_review ?? {};
-  const pedagogyReview = v.pedagogy_review ?? {};
+/** Une référence introuvable n'existe pas ; une source non lue ne fonde rien. */
+function checkSources(record, errors, warnings) {
+  const sources = asArray(record.sources);
 
-  if (v.primary_source_confirmed !== true)
-    errors.push("VALIDATED alors que validation.primary_source_confirmed n'est pas vrai");
-  if (v.secondary_confirmation !== true)
-    errors.push("VALIDATED alors que validation.secondary_confirmation n'est pas vrai");
-  if (v.francophone_layer_searched !== true)
-    errors.push(
-      "VALIDATED sans couche francophone cherchée — elle se cherche en amont, pas en relecture"
+  if (sources.length === 0)
+    // Un candidat est un concept repéré, pas encore instruit : lui reprocher ses sources
+    // manquantes reviendrait à interdire de noter qu'il reste à faire.
+    (record.status === "VALIDATED" ? errors : warnings).push(
+      "sources vide : une carte sans référence n'est pas une carte"
     );
-  if (evidenceReview.verdict !== "PASS")
-    errors.push(`VALIDATED avec passe A du contrôleur aveugle en « ${evidenceReview.verdict} »`);
-  if (pedagogyReview.verdict !== "PASS")
-    errors.push(`VALIDATED avec passe B du contrôleur aveugle en « ${pedagogyReview.verdict} »`);
-  if (pedagogyReview.no_new_claims !== true)
-    errors.push("VALIDATED sans confirmation que la prose n'ajoute aucune affirmation");
-  for (const [name, review] of [
-    ["evidence_review", evidenceReview],
-    ["pedagogy_review", pedagogyReview],
-  ]) {
-    if (typeof review.rounds === "number" && review.rounds > 3)
-      errors.push(`validation.${name}.rounds = ${review.rounds} : au-delà de 3 tours, la fiche se rejette`);
-  }
+  if (sources.length > CARD_LIMITS.sources)
+    errors.push(
+      `sources : ${sources.length} pour ${CARD_LIMITS.sources} au plus — la carte n'en montre pas davantage`
+    );
+
+  sources.forEach((s, i) => {
+    const at = `sources[${i}]`;
+    if (!isFilled(s?.label)) errors.push(`${at}.label manquant`);
+    if (!SOURCE_KINDS.includes(s?.kind))
+      errors.push(`${at}.kind « ${s?.kind} » inconnu — le lecteur doit savoir s'il lit l'auteur ou un commentateur`);
+    if (!isFilled(s?.doi_isbn) && !isFilled(s?.url))
+      errors.push(`${at} : ni DOI/ISBN ni URL — une référence introuvable n'existe pas`);
+
+    /*
+     * Le pointeur et la note de dossier ne sont pas le même texte : voir CARD_LIMITS.
+     * Comme les autres longueurs d'affichage, le défaut se signale tant que la fiche est
+     * en atelier et bloque au moment de publier — un candidat porte encore les notes de
+     * lecture de son instruction, et c'est sa fonction.
+     */
+    const tooLong = record.status === "VALIDATED" ? errors : warnings;
+    if ((s?.locator ?? "").length > CARD_LIMITS.source_locator)
+      tooLong.push(
+        `${at}.locator : ${s.locator.length} caractères — un localisateur est un pointeur (« p. 149-164 »), pas une note de contrôle`
+      );
+    if ((s?.label ?? "").length > CARD_LIMITS.source_label)
+      tooLong.push(
+        `${at}.label : ${s.label.length} caractères — la notice s'affiche telle quelle, elle ne porte pas de commentaire`
+      );
+  });
+
+  if (record.status !== "VALIDATED") return;
+
+  const primary = sources.filter((s) => s?.kind === "primary");
+  if (primary.length === 0)
+    errors.push("VALIDATED sans source primaire : l'attribution n'est pas établie");
+  else if (!primary.some((s) => s.consulted === "full-text"))
+    errors.push(
+      "VALIDATED sans source primaire lue en texte intégral : on ne cite pas un texte qu'on n'a pas ouvert"
+    );
+
+  if (!sources.some((s) => s?.kind === "secondary-academic" || s?.kind === "francophone-reception"))
+    warnings.push(
+      "aucune source secondaire affichée : l'interprétation n'est confirmée par personne sur la carte"
+    );
 }
 
 /**
- * Valide un enregistrement isolé.
- * `dir` est le répertoire de corpus/ où il se trouve (candidates, review, validated, rejected).
+ * Le verrou de publication, ramené aux quatre questions dont la carte dépend : le concept
+ * est-il de cet auteur, la citation vient-elle du texte, les références résolvent-elles, et
+ * notre prose ajoute-t-elle quelque chose.
+ */
+function checkGating(record, errors) {
+  const review = record.review ?? {};
+
+  if (review.verdict !== "PASS")
+    errors.push(`VALIDATED avec un contrôle en « ${review.verdict ?? "aucun"} »`);
+  if (review.attribution !== "confirmee")
+    errors.push(`VALIDATED avec une attribution « ${review.attribution ?? "non renseignée"} »`);
+  if (review.sources !== "resolvent")
+    errors.push(`VALIDATED avec des sources « ${review.sources ?? "non renseignées"} »`);
+  if (review.prose !== "fidele")
+    errors.push(
+      `VALIDATED avec une prose « ${review.prose ?? "non renseignée"} » : l'accroche ou le résumé excèdent les sources`
+    );
+
+  // Une fiche sans citation est légitime ; une citation non contrôlée ne l'est pas.
+  const expected = record.quotation ? "verbatim" : "absente";
+  if (review.quotation !== expected)
+    errors.push(
+      record.quotation
+        ? `VALIDATED avec une citation « ${review.quotation ?? "non contrôlée"} » — elle doit avoir été relevée sur le texte`
+        : `review.quotation devrait valoir « absente » : la fiche ne porte aucune citation`
+    );
+
+  if (typeof review.rounds === "number" && review.rounds > 3)
+    errors.push(`review.rounds = ${review.rounds} : au-delà de 3 tours, la fiche se rejette`);
+}
+
+/**
+ * Valide une carte isolée.
+ * `dir` est le répertoire de corpus/ où elle se trouve.
  */
 export function validateRecord(record, { dir, themeIds = new Set(), authorIds = new Set() } = {}) {
   const errors = [];
   const warnings = [];
-  const push = (list, msg) => list.push(msg);
 
   // --- identité et état ---------------------------------------------------
   if (!ID_PATTERN.test(record?.id ?? "")) errors.push(`id « ${record?.id} » invalide (kebab-case attendu)`);
@@ -212,141 +202,68 @@ export function validateRecord(record, { dir, themeIds = new Set(), authorIds = 
     errors.push(
       `status « ${record?.status} » incohérent avec le répertoire corpus/${dir}/ (attendu « ${STATUS_BY_DIR[dir]} »)`
     );
-  if (!isFilled(record?.canonical_name_fr)) errors.push("canonical_name_fr manquant");
   if (record?.status === "REJECTED" && !isFilled(record?.rejection_reason))
     errors.push("REJECTED sans rejection_reason : un rejet non motivé revient toujours");
 
-  // --- périmètre ----------------------------------------------------------
-  if (!record?.scope || typeof record.scope.in_scope !== "boolean")
-    errors.push("scope.in_scope manquant");
-  else if (record.scope.in_scope !== true && record.status !== "REJECTED")
-    errors.push("scope.in_scope = false hors de corpus/rejected/");
-  if (!isFilled(record?.scope?.rationale)) errors.push("scope.rationale manquant");
+  // --- les sept éléments de la carte --------------------------------------
+  if (!isFilled(record?.title)) errors.push("title manquant");
 
-  // --- attribution --------------------------------------------------------
-  const attribution = record?.attribution ?? {};
-  const authors = asArray(attribution.authors);
-  if (authors.length === 0) errors.push("attribution.authors vide");
-  if (!AUTHORSHIPS.includes(attribution.authorship))
-    errors.push(`attribution.authorship « ${attribution.authorship} » inconnu`);
-  if (attribution.authorship === "COAUTHORED" && authors.length < 2)
-    errors.push("COAUTHORED avec un seul auteur : auteur principal ≠ auteur unique");
-  if (attribution.authorship !== "SOLE_AUTHOR" && !isFilled(attribution.associated_author))
-    errors.push(`${attribution.authorship} sans associated_author`);
+  const authors = asArray(record?.authors);
+  if (authors.length === 0) errors.push("authors vide : une carte sans auteur n'attribue rien");
+  authors.forEach((a, i) => {
+    if (!isFilled(a?.name)) errors.push(`authors[${i}].name manquant — c'est lui qui s'affiche`);
+  });
   /*
    * Le corpus découvre les auteurs ; l'application les reçoit. Un `app_author_id` inconnu
-   * de `src/content/authors.ts` n'est donc pas une faute : c'est un auteur que le champ
-   * a fait apparaître et auquel l'application ne consacre pas encore de page. Exiger
-   * l'inverse ferait de la table des auteurs le périmètre réel du corpus — huit noms —
-   * alors que le périmètre est la discipline.
-   *
-   * Le nom, lui, est obligatoire : c'est lui qui s'affiche sur la carte, sans dépendre
-   * d'aucune table.
+   * n'est pas une faute — c'est un auteur auquel l'application ne consacre pas encore de
+   * page. Exiger l'inverse ferait de la table des auteurs le périmètre réel du corpus.
    */
-  for (const [i, author] of authors.entries())
-    if (!isFilled(author?.name)) errors.push(`attribution.authors[${i}].name manquant`);
-  const appAuthorIds = authors.map((a) => a?.app_author_id).filter(isFilled);
-  for (const id of appAuthorIds)
-    if (authorIds.size > 0 && !authorIds.has(id))
-      push(
-        warnings,
-        `attribution : « ${id} » n'a pas encore de page dans src/content/authors.ts — la carte l'affichera par son nom`
+  for (const a of authors)
+    if (isFilled(a?.app_author_id) && authorIds.size > 0 && !authorIds.has(a.app_author_id))
+      warnings.push(
+        `authors : « ${a.app_author_id} » n'a pas de page dans src/content/authors.ts — la carte l'affichera par son nom`
       );
 
-  // --- preuve -------------------------------------------------------------
-  const evidence = record?.evidence ?? {};
-  if (!isFilled(evidence.concept_definition)) errors.push("evidence.concept_definition manquante");
-  checkSources(evidence, record?.status, errors);
-  checkQuotation(record, errors, warnings);
-
-  // --- pédagogie ----------------------------------------------------------
-  const pedagogy = record?.pedagogy ?? {};
-  const prose = pedagogyProse(pedagogy);
-  if (record?.status === "VALIDATED") {
-    for (const field of ["hook_question", "short_explanation"])
-      if (!isFilled(pedagogy[field])) errors.push(`pedagogy.${field} manquant`);
-    if (asArray(pedagogy.traceability).length === 0)
-      push(warnings, "pedagogy.traceability vide : aucune phrase n'est rattachée à la preuve");
-  }
-
-  /*
-   * La carte doit tenir dans un écran : ces champs y sont affichés en entier.
-   *
-   * Le contrôle vaut à tous les stades, et non plus à la seule validation : une fiche
-   * rédigée trop long ne se corrige pas en un mot, et l'apprendre au moment de publier
-   * revient à l'apprendre trop tard. Tant qu'elle est en atelier, la longueur se signale ;
-   * en `validated/`, elle interdit la projection.
-   */
-  const tooLong = record?.status === "VALIDATED" ? errors : warnings;
-  for (const field of ["hook_question", "short_explanation"]) {
-    const length = (pedagogy[field] ?? "").length;
-    if (length > CARD_LIMITS[field])
-      push(
-        tooLong,
-        `pedagogy.${field} : ${length} caractères pour ${CARD_LIMITS[field]} au plus — la carte déborderait de l'écran`
-      );
-  }
-  const nameLength = (record?.canonical_name_fr ?? "").length;
-  if (nameLength > CARD_LIMITS.canonical_name_fr)
-    push(
-      tooLong,
-      `canonical_name_fr : ${nameLength} caractères pour ${CARD_LIMITS.canonical_name_fr} au plus — un titre qui court sur quatre lignes chasse le reste de la carte`
-    );
-
-  if (prose.length > 0) {
-    const sourced = numbersIn(JSON.stringify(evidence) + JSON.stringify(attribution));
-    const unsourced = new Set();
-    for (const text of prose) for (const n of numbersIn(text)) if (!sourced.has(n)) unsourced.add(n);
-    for (const n of unsourced)
-      errors.push(
-        `pedagogy : le nombre « ${n} » n'apparaît nulle part dans evidence — un chiffre sans source ne sort pas`
-      );
-  }
-
-  // --- graphe -------------------------------------------------------------
-  const graph = record?.graph ?? {};
-  const themes = asArray(graph.themes);
-  if (themes.length === 0 && record?.status === "VALIDATED") errors.push("graph.themes vide");
-  // Même raison que pour les auteurs : un thème que le champ fait apparaître ne peut pas
-  // être refusé par la table des neuf thèmes écrite avant toute instruction. Il lui faut
-  // en revanche un libellé, faute de quoi la carte n'aurait rien à afficher.
+  const themes = asArray(record?.themes);
+  if (themes.length === 0) errors.push("themes vide : la carte n'a rien à situer en tête");
+  // Même raison que pour les auteurs : un thème que la fiche fait apparaître ne peut pas
+  // être refusé par la table écrite avant toute instruction. Il lui faut un libellé.
   for (const t of themes)
     if (themeIds.size > 0 && !themeIds.has(t)) {
-      if (!isFilled(graph.theme_labels?.[t]))
-        errors.push(
-          `graph.themes : « ${t} » est inconnu de l'application et n'a pas de libellé dans graph.theme_labels`
-        );
-      else push(warnings, `graph.themes : « ${t} » est un thème nouveau, affiché par son libellé`);
+      if (!isFilled(record?.theme_labels?.[t]))
+        errors.push(`themes : « ${t} » est inconnu de l'application et n'a pas de libellé dans theme_labels`);
+      else warnings.push(`themes : « ${t} » est un thème nouveau, affiché par son libellé`);
     }
 
+  // Même raison que pour les sources : la carte d'un candidat n'est pas encore écrite.
+  const unwritten = record?.status === "VALIDATED" ? errors : warnings;
+  if (!isFilled(record?.hook)) unwritten.push("hook manquant : rien ne donne envie d'ouvrir le concept");
+  if (!isFilled(record?.summary)) unwritten.push("summary manquant");
 
-  // --- verrou de publication ---------------------------------------------
-  if (record?.status === "VALIDATED") {
-    checkGating(record, errors);
-    const declaredUncertainty =
-      asArray(evidence.known_ambiguities).length +
-      asArray(evidence.limitations).length +
-      asArray(record?.validation?.confidence_flags).length;
-    if (declaredUncertainty === 0)
-      push(
-        warnings,
-        "fiche validée sans aucune incertitude déclarée (known_ambiguities, limitations, confidence_flags) : suspecte, pas exemplaire"
+  checkQuotation(record ?? {}, errors, warnings);
+  checkSources(record ?? {}, errors, warnings);
+
+  /*
+   * Les longueurs se signalent à tous les stades et bloquent à la publication : une fiche
+   * rédigée trop long ne se corrige pas en un mot, et l'apprendre au moment de publier
+   * revient à l'apprendre trop tard.
+   */
+  const tooLong = record?.status === "VALIDATED" ? errors : warnings;
+  for (const [field, label] of [["title", "title"], ["hook", "hook"], ["summary", "summary"]]) {
+    const length = (record?.[field] ?? "").length;
+    if (length > CARD_LIMITS[field])
+      tooLong.push(
+        `${label} : ${length} caractères pour ${CARD_LIMITS[field]} au plus — la carte déborderait de l'écran`
       );
   }
+
+  // --- verrou de publication ---------------------------------------------
+  if (record?.status === "VALIDATED") checkGating(record, errors);
 
   return { id: record?.id, errors, warnings };
 }
 
-/**
- * Contrôles qui ne se voient qu'à l'échelle du corpus : doublons, références pendantes,
- * cycles de prérequis.
- *
- * Une relation d'une fiche validée ne peut viser qu'une **autre fiche validée**. Pointer
- * vers une fiche candidate, ou vers l'échafaudage de `src/content/fixtures/`, ferait
- * entrer dans le graphe d'un concept vérifié une dépendance qui ne l'est pas — et un
- * prérequis non vérifié conditionne l'accès à un concept vérifié, ce qui est pire encore.
- * Le graphe se construit donc au rythme du corpus, pas à celui des intentions.
- */
+/** Contrôles qui ne se voient qu'à l'échelle du corpus : doublons d'identité. */
 export function validateCorpus(records) {
   const errors = [];
   const warnings = [];
@@ -364,40 +281,6 @@ export function validateCorpus(records) {
       else bySlug.set(record.slug, where);
     }
   }
-
-  const validated = records.filter(({ record }) => record?.status === "VALIDATED").map((r) => r.record);
-  const universe = new Set(validated.map((r) => r.id));
-
-  const refsOf = (record) => [
-    ...asArray(record.graph?.related),
-    ...asArray(record.graph?.opposites),
-    ...asArray(record.graph?.prerequisites),
-    ...asArray(record.graph?.deepens_into),
-  ];
-
-  for (const record of validated)
-    for (const ref of refsOf(record))
-      if (isFilled(ref?.id) && !universe.has(ref.id))
-        errors.push(
-          `${record.id} : référence « ${ref.id} » ne désigne aucune fiche validée — une fiche vérifiée ne s'appuie pas sur ce qui ne l'est pas`
-        );
-
-  // Cycle de prérequis : le moteur pédagogique ne pourrait jamais débloquer les concepts.
-  const prereqs = new Map(
-    validated.map((r) => [r.id, asArray(r.graph?.prerequisites).map((p) => p?.id).filter(isFilled)])
-  );
-  const state = new Map();
-  const walk = (id, trail) => {
-    if (state.get(id) === "done") return;
-    if (state.get(id) === "visiting") {
-      errors.push(`cycle de prérequis : ${[...trail, id].join(" → ")}`);
-      return;
-    }
-    state.set(id, "visiting");
-    for (const next of prereqs.get(id) ?? []) if (prereqs.has(next)) walk(next, [...trail, id]);
-    state.set(id, "done");
-  };
-  for (const id of prereqs.keys()) walk(id, []);
 
   return { errors, warnings };
 }
