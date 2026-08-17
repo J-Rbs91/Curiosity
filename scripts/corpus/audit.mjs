@@ -13,7 +13,7 @@
 
 import { loadAppContent, loadRecords } from "./lib/io.mjs";
 
-const { authors, themes, fixtureConcepts } = await loadAppContent();
+const { authors, themes, families, domains, fixtureConcepts } = await loadAppContent();
 const records = await loadRecords();
 
 const byStatus = (status) => records.filter(({ record }) => record?.status === status).map((r) => r.record);
@@ -29,8 +29,43 @@ const appAuthorsOf = (record) =>
 
 const pad = (s, n) => String(s).padEnd(n);
 
+/*
+ * L'état par domaine, et il se lit dans cet ordre : un domaine peut être **déclaré** dans la
+ * taxonomie sans avoir la moindre carte. C'est l'état normal d'un domaine qu'on vient
+ * d'ouvrir, et le confondre avec un domaine en panne d'instruction ferait lire la même chose
+ * à deux situations opposées. Le rattachement d'une fiche est le même que dans
+ * l'application : son `domain` s'il en déclare un, sinon le domaine de son premier thème.
+ */
+const domainOfTheme = new Map(themes.map((t) => [t.id, t.domain]));
+const domainOf = (record) =>
+  record.domain ?? (record.themes ?? []).map((t) => domainOfTheme.get(t)).find(Boolean);
+
 console.log("Corpus — état\n");
-console.log(`${pad("auteur", 14)}${pad("validés", 9)}en cours`);
+
+console.log(`${pad("domaine", 38)}${pad("thèmes", 8)}${pad("validés", 9)}en cours`);
+for (const family of [...families].sort((a, b) => a.order - b.order)) {
+  console.log(`\n  ${family.label}`);
+  const familyDomains = domains
+    .filter((d) => d.familyId === family.id)
+    .sort((a, b) => a.order - b.order);
+  for (const domain of familyDomains) {
+    const t = themes.filter((theme) => theme.domain === domain.id).length;
+    const v = validated.filter((r) => domainOf(r) === domain.id).length;
+    const f = inFlight.filter((r) => domainOf(r) === domain.id).length;
+    const state = t === 0 && v === 0 && f === 0 ? "  — corpus en cours de constitution" : "";
+    console.log(`${pad(`  ${domain.label}`, 38)}${pad(t, 8)}${pad(v, 9)}${f}${state}`);
+  }
+}
+
+const orphans = [...validated, ...inFlight].filter((r) => !domainOf(r));
+if (orphans.length > 0)
+  console.log(
+    `\n⚠ ${orphans.length} fiche(s) qu'aucun domaine ne recueille : ${orphans
+      .map((r) => r.id)
+      .join(", ")}`
+  );
+
+console.log(`\n${pad("auteur", 14)}${pad("validés", 9)}en cours`);
 for (const author of authors) {
   const v = validated.filter((r) => appAuthorsOf(r).includes(author.id)).length;
   const f = inFlight.filter((r) => appAuthorsOf(r).includes(author.id)).length;

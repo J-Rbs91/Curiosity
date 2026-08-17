@@ -238,6 +238,28 @@ Retirer cet effacement enfermerait l'utilisateur dans un historique qu'il ne
 pourrait plus défaire — c'est la seule raison pour laquelle cet écran existe
 encore.
 
+### Les trois coupes d'Explorer
+
+**Domaines · Thèmes · Auteurs**, dans cet ordre, « Domaines » par défaut.
+
+Le corpus est organisé en quatre familles et onze domaines, et le lecteur doit pouvoir s'y
+situer sans connaître les disciplines académiques. D'où l'ordre de lecture de la coupe
+« Domaines » : le nom de la famille en petites capitales, puis **sa question directrice en
+serif, en gros** — c'est elle qui dit ce qu'on vient chercher, quand « pilotage » ne dit
+rien à personne. Puis les domaines de la famille, en lignes ordinaires.
+
+Trois décisions, et une contribution qui les casserait se verrait :
+
+- **Une famille n'est pas cliquable.** Lui donner une page ajouterait un palier qui ne
+  contiendrait que ce qui est déjà à l'écran. La hiérarchie se voit, elle ne se traverse
+  pas — l'arbre de navigation reste à trois niveaux.
+- **Un domaine sans corpus le dit dans la liste**, pas seulement sur sa page : c'est dans la
+  liste qu'on choisit où aller, et l'apprendre après avoir ouvert est le pire moment.
+  « Corpus en cours de constitution » — jamais « 0 résultat », qui se lit comme une panne.
+- **Thèmes et auteurs ne se regroupent par domaine que lorsqu'il y en a plusieurs.** La
+  condition porte sur les données, jamais sur un domaine nommé : tant qu'un seul domaine est
+  pourvu, un en-tête unique n'apprendrait rien et la liste reste celle de la V1.
+
 ### La liste d'Explorer
 
 Trois niveaux de gris, trois natures d'information : le **nom** qu'on cherche, la
@@ -350,6 +372,8 @@ disparaissent, les fondus restent.
 | Un retour d'étape dans la session | Il n'y avait aucun moyen de relire l'explication après l'avoir dépassée. Le retour ne rejoue pas les enregistrements de progression, et le résultat reste terminal |
 | L'écran de fin mène à la fiche du concept | La session se terminait en cul-de-sac |
 | L'onglet d'Explorer vit dans l'URL | Revenir d'une fiche ramenait systématiquement sur « Auteurs » |
+| Chaque coupe d'Explorer remonte sur son propre onglet | À trois coupes, un parent unique renvoyait sur une liste qu'on n'avait pas ouverte |
+| Le domaine se dit sur la fiche et sur le thème, jamais sur la carte du jour | La carte tient dans un écran : son thème suffit à la situer. La fiche, qu'on est allé chercher, est l'endroit où l'on veut savoir d'où vient ce qu'on lit |
 | Retour nommé sur toutes les fiches | La fiche de concept revenait par l'historique du navigateur — depuis une fin de session, cela renvoyait dans la session qu'on venait de quitter |
 | Focus visible partout | Il n'existait aucun style de focus |
 | Réserve sous le contenu calculée | Le retrait bas était une valeur fixe qui ne tenait pas compte de la zone sûre du système |
@@ -364,6 +388,8 @@ disparaissent, les fondus restent.
 | `src/components/motion/screen-motion.ts` | Les quatre sens de circulation, et eux seuls |
 | `src/components/motion/Screen.tsx` | La correspondance sens → animation, à poser dans chaque `page.tsx` |
 | `src/components/ui/AppShell.tsx` | Les écrans immersifs et la réserve sous le contenu |
+| `src/content/taxonomy.ts` | Les quatre familles et les onze domaines, et eux seuls |
+| `src/domain/taxonomy/index.ts` | Rattachement, ordre, périmètres de sélection, état du corpus |
 | `src/domain/concepts/ai-prompt.ts` | Le texte envoyé aux applications d'IA |
 | `src/components/ui/mark-geometry.mjs` | La géométrie de la marque, et elle seule |
 | `src/components/ui/Mark.tsx`, `Wordmark.tsx` | L'œil et le mot, aux deux tailles optiques |

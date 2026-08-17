@@ -59,6 +59,7 @@ const context = {
   dir: "validated",
   themeIds: new Set(["bureaucratie-regles", "pouvoir"]),
   authorIds: new Set(["merton", "march"]),
+  domainIds: new Set(["organizational-sociology", "activity-ergonomics"]),
 };
 
 const errorsOf = (r, ctx = context) => validateRecord(r, ctx).errors;
@@ -113,11 +114,49 @@ describe("validateRecord — les sept éléments de la carte", () => {
     expect(errorsOf(nouveau)).toContainEqual(expect.stringContaining("theme_labels"));
 
     const libelle = carte({
-      themes: ["sociologie-du-risque"],
+      themes: ["bureaucratie-regles", "sociologie-du-risque"],
       theme_labels: { "sociologie-du-risque": "Sociologie du risque" },
     });
     expect(errorsOf(libelle)).toEqual([]);
     expect(warningsOf(libelle)).toContainEqual(expect.stringContaining("thème nouveau"));
+  });
+});
+
+describe("validateRecord — rattachement à un domaine", () => {
+  it("n'exige rien d'une carte que son thème suffit à situer", () => {
+    // Le cas de toutes les fiches instruites avant que les domaines n'existent : elles se
+    // rattachent par leur thème, et aucune n'a eu à être rouverte.
+    expect(carte().domain).toBeUndefined();
+    expect(errorsOf(carte())).toEqual([]);
+  });
+
+  it("refuse une carte que rien ne situe dans un domaine", () => {
+    /*
+     * Une fiche dont aucun thème n'est connu de l'application était acceptée telle quelle du
+     * temps où il n'y avait qu'un domaine — il n'y avait rien à choisir. À onze, elle
+     * n'apparaîtrait sur aucune page de domaine, dans aucun tirage par famille, dans aucun
+     * comptage : une carte que rien ne situe est une carte que personne ne rencontre.
+     */
+    const flottante = carte({
+      themes: ["sociologie-du-risque"],
+      theme_labels: { "sociologie-du-risque": "Sociologie du risque" },
+    });
+    expect(errorsOf(flottante)).toContainEqual(expect.stringContaining("aucun domaine"));
+
+    const situee = { ...flottante, domain: "organizational-sociology" };
+    expect(errorsOf(situee)).toEqual([]);
+  });
+
+  it("refuse un domaine absent de la taxonomie", () => {
+    const erronee = carte({ domain: "sociologie-des-organisations" });
+    expect(errorsOf(erronee)).toContainEqual(expect.stringContaining("inconnu de la taxonomie"));
+  });
+
+  it("reporte sur la carte le domaine que la fiche déclare", () => {
+    expect(projectConcept(carte({ domain: "activity-ergonomics" })).domain).toBe(
+      "activity-ergonomics"
+    );
+    expect(projectConcept(carte()).domain).toBeUndefined();
   });
 
   it("signale un auteur sans page dans l'application sans bloquer", () => {

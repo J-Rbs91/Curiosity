@@ -46,7 +46,13 @@ function normalise(pathname: string): string {
 const NIVEAUX: { motif: RegExp; niveau: number; parent: string | null }[] = [
   { motif: /^\/$/, niveau: 0, parent: null },
   { motif: /^\/explore$/, niveau: 1, parent: "/" },
-  { motif: /^\/explore\/authors\//, niveau: 2, parent: "/explore" },
+  /*
+   * Chaque coupe d'Explorer remonte sur son propre onglet. « Domaines » étant la vue par
+   * défaut, son adresse ne porte pas de recherche — c'est ce qui laisse `/explore` désigner
+   * un écran et un seul, quelle que soit la coupe choisie.
+   */
+  { motif: /^\/explore\/domains\//, niveau: 2, parent: "/explore" },
+  { motif: /^\/explore\/authors\//, niveau: 2, parent: "/explore?vue=auteurs" },
   { motif: /^\/explore\/themes\//, niveau: 2, parent: "/explore?vue=themes" },
   { motif: /^\/settings$/, niveau: 2, parent: "/explore" },
   /*

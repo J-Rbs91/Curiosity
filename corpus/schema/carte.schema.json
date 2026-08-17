@@ -33,6 +33,11 @@
       "items": { "type": "string" },
       "description": "LE THÈME (le premier) et les rattachements. Un identifiant inconnu de src/content/themes.ts est admis s'il porte un libellé : le périmètre est la discipline, pas la table des neuf thèmes."
     },
+    "domain": {
+      "type": ["string", "null"],
+      "description": "Le domaine de la taxonomie où se range la carte (src/content/taxonomy.ts), et presque toujours absent : une carte hérite du domaine de son thème. Ne se renseigne que lorsque l'héritage ne dit rien — une fiche dont aucun thème n'est connu de l'application, et que rien ne situerait alors dans aucun domaine."
+    },
+
     "theme_labels": {
       "type": "object",
       "additionalProperties": { "type": "string" },

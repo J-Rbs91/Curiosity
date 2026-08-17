@@ -75,6 +75,13 @@ Le reste de la carte est recopié de la lecture primaire sans être retouché : 
 `src/content/themes.ts` — ou tu en introduis un nouveau, avec son libellé dans
 `theme_labels`, si le concept n'entre dans aucun.
 
+**`domain` : à ne renseigner que si tu y es obligé.** Une carte hérite du domaine de son
+thème, et n'a donc rien à déclarer tant qu'au moins un de ses `themes` figure dans
+`src/content/themes.ts`. Le seul cas où le champ est exigé est celui où **aucun** thème de
+la fiche n'y figure : rien ne la situerait alors dans la taxonomie, et le validateur la
+refuse. Tu prends l'identifiant dans `src/content/taxonomy.ts` — pour le périmètre actuel,
+`organizational-sociology`.
+
 Tu laisses `review` en `PENDING` : tu ne juges pas ton propre travail.
 
 ## Avant de rendre

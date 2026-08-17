@@ -1,6 +1,16 @@
 import { describe, it, expect } from "vitest";
 import { buildConceptPrompt } from "./ai-prompt";
-import type { Concept } from "@/types";
+import type { Concept, Domain } from "@/types";
+
+const domain: Domain = {
+  id: "organizational-sociology",
+  slug: "sociologie-des-organisations",
+  label: "Sociologie des organisations",
+  tagline: "",
+  familyId: "humans-organizations",
+  order: 1,
+  description: "",
+};
 
 const concept: Concept = {
   id: "rationalite-limitee",
@@ -29,7 +39,17 @@ const concept: Concept = {
 };
 
 describe("buildConceptPrompt", () => {
-  const prompt = buildConceptPrompt({ concept });
+  const prompt = buildConceptPrompt({ concept, domain });
+
+  it("cadre l'IA dans le domaine d'où vient la carte", () => {
+    /*
+     * La discipline était écrite en dur, ce qui restait vrai tant qu'il n'y en avait qu'une.
+     * Demander une explication de sociologie des organisations sur un concept d'ergonomie ne
+     * produit pas d'erreur visible — seulement une réponse cadrée par la mauvaise discipline.
+     */
+    expect(prompt).toContain("Tu es un pédagogue spécialiste de Sociologie des organisations.");
+    expect(prompt).toContain("Domaine : Sociologie des organisations");
+  });
 
   it("emporte les éléments de la carte", () => {
     expect(prompt).toContain("Décision");
@@ -75,11 +95,15 @@ describe("buildConceptPrompt", () => {
     expect(prompt).toContain("au lieu de l'inventer");
   });
 
-  it("reste lisible quand ni auteur ni thème ne sont renseignés", () => {
+  it("reste lisible quand ni domaine, ni auteur, ni thème ne sont renseignés", () => {
     const orphelin = buildConceptPrompt({
       concept: { ...concept, authorLabel: undefined, themeLabel: undefined, sources: undefined },
     });
-    expect(orphelin).toContain("sociologie des organisations");
+    // Une discipline de repli serait une attribution inventée — exactement ce que le reste
+    // du prompt s'emploie à empêcher. Le pédagogue reste alors sans spécialité.
+    expect(orphelin).toContain("Tu es un pédagogue. Je veux comprendre");
+    expect(orphelin).not.toContain("Domaine :");
+    expect(orphelin).not.toContain("Thème :");
     expect(orphelin).toContain("non précisé");
     expect(orphelin).not.toContain("Sources vérifiées");
   });

@@ -1,7 +1,17 @@
-import type { Concept } from "@/types";
+import type { Concept, Domain } from "@/types";
 
 export interface ConceptPromptInput {
   concept: Concept;
+  /**
+   * Le domaine d'où vient la carte, quand l'application sait le résoudre.
+   *
+   * Il fixe la discipline dans laquelle l'IA doit répondre — c'est la première ligne du
+   * texte envoyé. Elle était écrite en dur, ce qui n'a cessé d'être vrai que le jour où
+   * l'application a couvert autre chose : demander une explication de sociologie des
+   * organisations sur un concept d'ergonomie ne produit pas une erreur visible, mais une
+   * réponse cadrée par la mauvaise discipline.
+   */
+  domain?: Domain;
 }
 
 /**
@@ -28,9 +38,12 @@ export interface ConceptPromptInput {
  * 3. **L'attribution transmise fait autorité sur la mémoire du modèle.** Elle a été
  *    vérifiée sur les textes ; la mémoire d'un modèle, non.
  */
-export function buildConceptPrompt({ concept }: ConceptPromptInput): string {
+export function buildConceptPrompt({ concept, domain }: ConceptPromptInput): string {
   const lines = [
-    `Thème : ${concept.themeLabel ?? "sociologie des organisations"}`,
+    ...(domain ? [`Domaine : ${domain.label}`] : []),
+    // Omise plutôt que remplie d'un repli : nommer une discipline que la carte ne porte pas
+    // serait exactement l'erreur d'attribution que le reste du prompt s'emploie à éviter.
+    ...(concept.themeLabel ? [`Thème : ${concept.themeLabel}`] : []),
     `Concept : ${concept.title}`,
     `Auteur : ${concept.authorLabel ?? "non précisé"}`,
   ];
@@ -52,7 +65,11 @@ export function buildConceptPrompt({ concept }: ConceptPromptInput): string {
     `- ${s.label}${s.reference ? `, ${s.reference}` : ""}`
   );
 
-  return `Tu es un pédagogue spécialiste de sociologie des organisations. Je veux comprendre en profondeur le concept ci-dessous.
+  const persona = domain
+    ? `Tu es un pédagogue spécialiste de ${domain.label}.`
+    : "Tu es un pédagogue.";
+
+  return `${persona} Je veux comprendre en profondeur le concept ci-dessous.
 
 CE QUE J'AI
 ${lines.join("\n")}

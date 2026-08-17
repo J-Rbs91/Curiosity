@@ -1,4 +1,4 @@
-import { authors, themes, concepts } from "@/content";
+import { authors, themes, concepts, taxonomy } from "@/content";
 
 /**
  * Nomme un écran depuis son adresse.
@@ -19,6 +19,9 @@ export function labelFor(href: string): string {
   if (pathname === "/") return "Aujourd'hui";
   if (pathname === "/explore") return "Explorer";
   if (pathname === "/settings") return "Réglages";
+
+  const domaine = pathname.match(/^\/explore\/domains\/([^/]+)$/)?.[1];
+  if (domaine) return taxonomy.domainBySlug(domaine)?.label ?? "Explorer";
 
   const auteur = pathname.match(/^\/explore\/authors\/([^/]+)$/)?.[1];
   if (auteur) return authors.find((a) => a.slug === auteur)?.name ?? "Explorer";
