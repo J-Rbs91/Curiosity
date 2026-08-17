@@ -1,12 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { ArrowLeft } from "lucide-react";
 import { getProgressService } from "@/services/progress";
 import { Screen } from "@/components/motion/Screen";
-import { SCREEN_MOTION } from "@/components/motion/screen-motion";
+import { BackLink } from "@/components/ui/BackLink";
+import { climbTo } from "@/components/navigation/climb";
 import { Button } from "@/components/ui/Button";
 
 /**
@@ -22,20 +21,18 @@ export default function SettingsPage() {
   function resetProgress() {
     getProgressService().reset();
     setConfirming(false);
-    router.push("/", { transitionTypes: SCREEN_MOTION.back });
+    /*
+     * Quitter les réglages est une remontée : on dépile plutôt que d'empiler,
+     * sans quoi l'écran d'effacement resterait derrière et le bouton retour du
+     * système y ramènerait après que les données ont été effacées.
+     */
+    climbTo(router, "/");
   }
 
   return (
     <Screen>
       <div className="mx-auto max-w-md px-6 pt-10 pb-12">
-        <Link
-          href="/explore"
-          transitionTypes={SCREEN_MOTION.back}
-          className="press -ml-1 inline-flex items-center gap-1.5 text-sm text-ink-faint hover:text-ink"
-        >
-          <ArrowLeft size={16} />
-          Explorer
-        </Link>
+        <BackLink />
 
         <h1 className="mt-4 font-serif-display text-[28px] font-semibold text-ink">Réglages</h1>
 
@@ -44,7 +41,7 @@ export default function SettingsPage() {
             <button
               type="button"
               onClick={() => setConfirming(true)}
-              className="press text-sm font-medium text-warn"
+              className="press -ml-2 inline-flex min-h-11 items-center px-2 text-sm font-medium text-warn"
             >
               Effacer mes données
             </button>

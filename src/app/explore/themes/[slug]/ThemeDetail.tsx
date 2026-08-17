@@ -1,11 +1,10 @@
 "use client";
 
 import { notFound } from "next/navigation";
-import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
+import { TreeLink } from "@/components/navigation/TreeLink";
 import { themes, concepts, authors } from "@/content";
 import { Screen } from "@/components/motion/Screen";
-import { SCREEN_MOTION } from "@/components/motion/screen-motion";
+import { BackLink } from "@/components/ui/BackLink";
 
 export function ThemeDetail({ slug }: { slug: string }) {
   const theme = themes.find((t) => t.slug === slug);
@@ -20,14 +19,7 @@ export function ThemeDetail({ slug }: { slug: string }) {
     <Screen>
       <div className="mx-auto max-w-md px-6 pt-10 pb-12">
         {/* Le retour ramène sur l'onglet d'où l'on vient, pas sur le premier. */}
-        <Link
-          href="/explore?vue=themes"
-          transitionTypes={SCREEN_MOTION.back}
-          className="press -ml-1 inline-flex items-center gap-1.5 text-sm text-ink-faint hover:text-ink"
-        >
-          <ArrowLeft size={16} />
-          Explorer
-        </Link>
+        <BackLink />
 
         <h1 className="mt-6 font-serif-display text-[30px] font-semibold leading-tight text-ink">
           {theme.title}
@@ -43,13 +35,12 @@ export function ThemeDetail({ slug }: { slug: string }) {
         <ul className="stagger mt-10 space-y-1">
           {themeConcepts.map((concept) => (
             <li key={concept.id}>
-              <Link
+              <TreeLink
                 href={`/explore/concept/?c=${concept.slug}`}
-                transitionTypes={SCREEN_MOTION.deeper}
                 className="press-soft block rounded-2xl py-3.5 text-[17px] text-ink hover:bg-paper-raised"
               >
                 {concept.title}
-              </Link>
+              </TreeLink>
             </li>
           ))}
         </ul>
