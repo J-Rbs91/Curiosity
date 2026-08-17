@@ -153,25 +153,67 @@ en bas de casse, l'œil serait plus petit que les hampes qui l'entourent et disp
 
 ### Le regard
 
-La pupille joue **quatre saccades**, puis se repose au centre. Elle ne boucle pas.
+La pupille joue **deux regards de trois fixations**, articulés par un double clignement rapide
+et refermés par un clignement long. La séquence dure 4 800 ms, se repose au centre, puis se
+relance après une pause tirée entre 2,34 et 5,67 secondes, tant que l'écran de premier
+lancement est affiché.
 
-Ce n'est pas une concession à la règle « aucun mouvement continu » du §7 : c'est cette règle,
-appliquée à l'endroit où l'on est le plus tenté d'y déroger. Une marque qui pulse en
-permanence est un mouvement qu'on ne regarde plus au bout de deux ouvertures et qui continue
-de consommer.
+**Ce que cette boucle ne remet pas en cause, et ce qu'elle coûte.** La règle « aucun mouvement
+continu » du §7 tient. Elle n'admet pas d'exception, et ce n'en est pas une : la règle de
+fréquence tranche avant tout le reste, et cette séquence se joue sur l'unique écran que
+l'utilisateur ne reverra pas, où rien n'attend derrière elle. C'est la ligne « rare et
+marquante » du tableau du §7, la seule qui autorise une séquence expressive. Nulle part
+ailleurs la marque ne s'affiche — pas d'en-tête permanent, pas de favicon animé.
+
+Le coût est réel et il est nommé : **la boucle est solidaire de cet écran, pas de la marque.**
+Le jour où quelqu'un posera la marque dans un en-tête, ou même sur un second écran, c'est la
+boucle qu'il faudra retirer, pas la règle qu'il faudra assouplir. Le fichier animé du dépôt le
+montre déjà : il joue la séquence **une fois**, parce qu'une image qui boucle sur une page
+qu'on défile est exactement le mouvement permanent qu'on s'interdit.
 
 Ce qui fait qu'un point se lit comme un œil n'est pas l'amplitude, c'est le **rythme** : l'œil
 humain ne balaie pas, il saute — quelques dizaines de millisecondes de saccade, puis deux à
-trois cents millisecondes d'arrêt. La séquence reprend ces ordres de grandeur : quatre sauts
-de 140 ms, la durée d'un retour à l'appui, séparés par des fixations d'environ 270 ms.
+trois cents millisecondes d'arrêt. C'est la raison pour laquelle une séquence trois fois plus
+longue **n'est pas la même trois fois ralentie** : étirer quatre saccades sur 4 800 ms
+donnerait des fixations de 1,1 s, c'est-à-dire un point qui fixe, plus un œil qui regarde. Le
+temps supplémentaire achète des événements, pas de la lenteur.
 
-Les trois fixations sont à distance sensiblement égale du bord de la contre-forme — la pupille
-en atteint environ 72 % dans les trois cas. Une orbite régulière, donc, et non trois écarts
-d'amplitudes différentes. Le déplacement latéral est le plus ample, comme dans un regard réel,
-et c'est ce que la contre-forme ouverte permet.
+| Ce qui se joue | Combien | Durée unitaire |
+|---|---|---|
+| Saccades | 8 | 144 ms — la durée d'un retour à l'appui |
+| Fixations | 6, trois par regard | 264 ms au premier regard, 240 au second |
+| Clignements rapides | 2, à la charnière des deux regards | 108 ms de chute, 36 clos, 132 de relevé |
+| Clignement long | 1, à la fin | 204 ms de chute, 276 clos, 336 de relevé |
 
-**En mouvement réduit, la pupille est au centre et ne bouge pas.** Elle n'y perd rien : le
-centre est aussi son état de repos, et la marque ne porte aucune information par son mouvement.
+Les six fixations sont à distance sensiblement égale du bord de la contre-forme — la pupille en
+occupe entre 52 et 60 % du dégagement disponible. Une orbite régulière, donc, et non six écarts
+d'amplitudes différentes. Le second regard emprunte le côté droit de l'orbite là où le premier
+tient le gauche : rejouer le même arc se lirait comme une boucle dans la boucle. Le déplacement
+latéral est le plus ample, comme dans un regard réel, et c'est ce que la contre-forme ouverte
+permet.
+
+**Le clignement est une paupière, pas un clignotement.** Trois décisions le tiennent, et
+chacune corrige un défaut constaté à l'arrêt sur image :
+
+- Ce qui descend est une **courbe rase** — cinq unités de creux sur cinquante-cinq de hauteur —
+  et non un hémisphère. Une paupière aussi bombée que la contre-forme voit sa propre pointe
+  entrer dans le champ à mi-parcours : l'ouverture prend alors une forme d'amande crantée, et
+  le clignement se lit comme une encoche.
+- Elle **déborde de trois unités dans l'encre de l'anneau**. À l'identique, son contour et
+  celui de l'anneau coïncident, deux bords lissés couvrent à moitié le même pixel, et l'œil
+  clos apparaît cerné d'un liséré sombre au lieu d'être un disque plein.
+- Les fermetures sont espacées de **480 ms au plus serré**, et la fermeture est un balayage de
+  108 ms plutôt qu'une bascule. Fermé, le O est un disque d'encre pleine : le seuil opposable
+  est de trois clignements par seconde, on en compte un peu plus de deux, et ce qu'on voit est
+  un bord qui descend.
+
+Ces trois valeurs sont des tokens de géométrie, et `npm test` vérifie la couverture de la
+contre-forme aux deux extrêmes, dans les deux graisses, sur toute sa largeur.
+
+**En mouvement réduit, la pupille est au centre, la paupière est relevée, et rien ne se
+relance.** La séquence n'existe pas, donc aucune fin de séquence n'est annoncée et la pause ne
+s'arme jamais — le repli n'est pas neutralisé après coup, il est l'état de repos. La marque n'y
+perd rien : elle ne porte aucune information par son mouvement.
 
 ### Où elle se montre, et où elle ne se montre pas
 
@@ -179,7 +221,7 @@ centre est aussi son état de repos, et la marque ne porte aucune information pa
 |---|---|
 | Écran de premier lancement | Le mot entier, et c'est le seul endroit où le regard joue |
 | Onglet du navigateur, écran d'accueil, feuille de partage | L'œil seul, immobile |
-| README, page de dépôt | `mark.svg`, ou `mark-animated.svg` qui rejoue la séquence |
+| README, page de dépôt | `mark.svg`, ou `mark-animated.svg` qui joue la séquence une fois, sans boucler |
 
 **Il n'y a pas d'en-tête permanent avec une signature.** Le §5 dit ce qu'un écran a le droit de
 porter, et un logo n'y figure pas : il n'apprendrait rien à quelqu'un qui a déjà ouvert
@@ -301,13 +343,19 @@ réécriture — `src/domain/concepts/ai-prompt.ts` et ses tests les tiennent :
 | Glissement d'un écran ou d'une phase | 560 ms sur 16 % / 10 % | `--ease-lift` |
 | Entrée et sortie de session | 640 ms | `--ease-lift` |
 | Le concept qu'on vient de travailler | 720 ms | `--ease-lift` |
-| Le regard de la marque | 1 600 ms, une fois par installation | `--ease-out-soft` |
+| Le regard de la marque | 4 800 ms, sur le seul écran de premier lancement | `--ease-out-soft` |
 
-**La marque est la seule durée à dépasser la seconde, et elle se paie une fois.** La
-séquence ne joue qu'à l'écran de premier lancement — voir §4. Elle n'est pas une durée
-d'interface : c'est quatre saccades de 140 ms séparées par des fixations, et aucune
-information n'attend derrière elle. Une valeur de cet ordre sur quoi que ce soit d'autre
-serait à refuser.
+**La marque est la seule durée à dépasser la seconde, et la seule chose qui se relance.** La
+séquence ne joue qu'à l'écran de premier lancement — voir §4 —, et elle y boucle avec une pause
+tirée entre 2,34 et 5,67 secondes. Elle n'est pas une durée d'interface : c'est huit saccades de
+144 ms, six fixations et trois clignements, et aucune information n'attend derrière elle. Une
+valeur de cet ordre sur quoi que ce soit d'autre serait à refuser, et la boucle plus encore.
+
+**Ce que la règle « aucun mouvement continu » interdit, et ce qu'elle n'interdit pas.** Elle
+interdit qu'une chose bouge alors que rien n'a changé, sur une surface qu'on revient voir. La
+règle de fréquence tranche avant elle : cet écran-ci est vu une fois par installation, et c'est
+la seule raison pour laquelle la boucle y est admissible. Elle ne se déduit pas de la marque, ne
+se transpose à aucune autre surface, et disparaît avec l'écran qui la porte.
 
 **Le déplacement et le fondu sont dissociés, et c'est ce qui rend un mouvement long
 agréable plutôt que lent.** Le contenu est entièrement lisible en 300 ms pendant
@@ -331,7 +379,9 @@ l'appui, lui, ne le dépasse pas : il est vu vingt fois par session.
 - **Aucune valeur en dur.** Courbes, durées et amplitudes sont des tokens.
 - **Le mouvement ne porte jamais seul une information.** Le repère de l'onglet
   actif est une barre qui glisse, mais aussi une couleur et un `aria-current`.
-- **Aucun mouvement continu.** Rien ne pulse, ne flotte ni ne tourne au repos.
+- **Aucun mouvement continu.** Rien ne pulse, ne flotte ni ne tourne au repos. La seule
+  séquence qui se relance est celle de la marque, sur le seul écran vu une fois par
+  installation — voir le paragraphe ci-dessus, qui dit pourquoi ce n'est pas une exception.
 - **Une transition en cours n'avale pas les clics** — sans quoi un déplacement de
   560 ms serait un blocage de 560 ms.
 

@@ -28,7 +28,10 @@ import {
   counter,
   PUPIL_R,
   GAZE,
-  GAZE_SEQUENCE,
+  GAZE_SCORE,
+  BLINK_SCORE,
+  MARK_SEQUENCE_MS,
+  lid,
   FILL,
   CORNER,
   COLOR,
@@ -269,15 +272,36 @@ export function ringPath(stroke) {
 function markGroup({ size, fill, stroke, gaze = GAZE.rest, animated = false }) {
   const k = (fill * size) / (2 * OUTER_R);
   const c = size / 2;
+  const lidShape = lid(stroke);
   const t = `translate(${n(c)} ${n(c)}) scale(${n(k)}) translate(${n(-BOX / 2)} ${n(-BOX / 2)})`;
   const pupil = animated
     ? `    <circle class="pupil" cx="${n(CENTER)}" cy="${n(CENTER)}" r="${n(PUPIL_R)}" fill="${COLOR.ink}"/>`
     : `    <circle cx="${n(CENTER + gaze[0])}" cy="${n(CENTER + gaze[1])}" r="${n(PUPIL_R)}" fill="${COLOR.ink}"/>`;
 
+  /*
+   * La paupière n'existe que sur le fichier animé : sur un dessin arrêté, l'œil est ouvert, et
+   * une ellipse relevée hors de sa découpe serait un élément que personne ne voit jamais.
+   *
+   * La découpe est portée par le groupe et le déplacement par l'ellipse. Sur le même élément,
+   * la découpe suivrait le déplacement et ne découperait plus rien — c'est le même motif que
+   * dans `Mark.tsx`, pour la même raison.
+   */
+  const eyelid = animated
+    ? [
+        `    <clipPath id="counter">`,
+        `      <ellipse cx="${n(CENTER)}" cy="${n(CENTER)}" rx="${n(lidShape.clip.rx)}" ry="${n(lidShape.clip.ry)}"/>`,
+        `    </clipPath>`,
+        `    <g clip-path="url(#counter)">`,
+        `      <path class="lid" d="${lidShape.path}" fill="${COLOR.ink}"/>`,
+        `    </g>`,
+      ]
+    : [];
+
   return [
     `  <g transform="${t}">`,
     `    <path d="${ringPath(stroke)}" fill="${COLOR.ink}" fill-rule="evenodd"/>`,
     pupil,
+    ...eyelid,
     `  </g>`,
   ].join("\n");
 }
@@ -299,36 +323,48 @@ function groundRect(size, corner) {
 /**
  * La séquence du regard, en CSS, à l'intérieur du fichier.
  *
- * Les pourcentages sont calculés depuis les durées réelles : un saut dure exactement la durée
- * d'un retour à l'appui — 140 ms —, une fixation en dure environ 270. Ce sont les ordres de
- * grandeur du regard humain, et c'est cette alternance saut/arrêt, bien plus que l'amplitude,
- * qui fait qu'un point se lit comme un œil.
+ * La partition — quelles fixations, quels clignements, à quel pourcentage — vient de
+ * `mark-geometry.mjs` et n'est pas réécrite ici : deux copies d'un rythme divergent à la
+ * première retouche, et ce fichier-ci est le seul des neuf que personne ne rouvre.
  *
- * L'animation ne joue qu'une fois et se repose au centre : rien ne bouge au repos dans ce
- * produit. En mouvement réduit, l'état affiché est directement l'état final, qui est aussi
- * l'état de départ — la marque ne perd rien à ne pas bouger.
+ * Une saccade dure exactement la durée d'un retour à l'appui — 144 ms —, une fixation de 240 à
+ * 264, et la fermeture d'une paupière 108. Ce sont les ordres de grandeur du regard humain, et
+ * c'est cette alternance saut/arrêt, bien plus que l'amplitude, qui fait qu'un point se lit
+ * comme un œil.
  *
- * Ce fichier est destiné aux supports extérieurs à l'application (README, page de dépôt) ;
- * dans l'application, la même séquence vit dans `globals.css` avec les autres tokens.
+ * **L'animation ne joue qu'une fois, et c'est une décision, pas un oubli.** Dans
+ * l'application, la séquence se relance après une pause aléatoire, parce qu'elle y occupe un
+ * écran de présentation qu'on regarde. Ici, le fichier sert un README et une page de dépôt :
+ * une image qui boucle sur une page qu'on défile est un mouvement permanent, c'est-à-dire ce
+ * que le produit s'interdit partout ailleurs. La marque se présente une fois, puis se repose.
+ *
+ * En mouvement réduit, l'état affiché est directement l'état final, qui est aussi l'état de
+ * départ : pupille au centre, paupière relevée. La marque ne perd rien à ne pas bouger.
  */
-function gazeStyle() {
+function sequenceStyle(stroke) {
   const step = ([dx, dy]) => `translate(${n(dx)}px, ${n(dy)}px)`;
-  const stops = [
-    [`0%, 12%`, GAZE.rest],
-    [`21%, 38%`, GAZE.up],
-    [`47%, 64%`, GAZE.right],
-    [`73%, 88%`, GAZE.down],
-    [`97%, 100%`, GAZE.rest],
+
+  const track = (name, score, positions) => [
+    `    @keyframes ${name} {`,
+    ...score.map(
+      ({ position, from, to }) =>
+        `      ${from}%, ${to}% { transform: ${step(positions[position])}; }`
+    ),
+    `    }`,
   ];
+
+  const lidPositions = lid(stroke);
+
   return [
     `  <style>`,
-    `    .pupil { transform-box: view-box; transform-origin: center; }`,
+    `    .pupil, .lid { transform-box: view-box; transform-origin: center; }`,
+    `    .lid { transform: ${step(lidPositions.open)}; }`,
     `    @media (prefers-reduced-motion: no-preference) {`,
-    `      .pupil { animation: gaze 1600ms cubic-bezier(0.23, 1, 0.32, 1) both; }`,
+    `      .pupil { animation: gaze ${MARK_SEQUENCE_MS}ms cubic-bezier(0.23, 1, 0.32, 1) both; }`,
+    `      .lid { animation: blink ${MARK_SEQUENCE_MS}ms cubic-bezier(0.23, 1, 0.32, 1) both; }`,
     `    }`,
-    `    @keyframes gaze {`,
-    ...stops.map(([at, g]) => `      ${at} { transform: ${step(g)}; }`),
-    `    }`,
+    ...track("gaze", GAZE_SCORE, GAZE),
+    ...track("blink", BLINK_SCORE, lidPositions),
     `  </style>`,
   ].join("\n");
 }
@@ -386,7 +422,7 @@ write(
   svgDocument({
     size: 128,
     body: [
-      gazeStyle(),
+      sequenceStyle(STROKE.icon),
       markGroup({ size: 128, fill: 0.94, stroke: STROKE.icon, animated: true }),
     ].join("\n"),
   })
@@ -419,4 +455,6 @@ write(
   )
 );
 
-console.log(`\n${GAZE_SEQUENCE.length - 1} saccades, repos au centre. Terminé.`);
+console.log(
+  `\n${GAZE_SCORE.length - 1} saccades, ${BLINK_SCORE.filter((s) => s.position === "closed").length} clignements, repos au centre. Terminé.`
+);
