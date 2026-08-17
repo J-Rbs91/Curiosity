@@ -154,8 +154,22 @@ export interface UserSettings {
   firstLaunchCompleted: boolean;
 }
 
+/**
+ * La carte retenue pour aujourd'hui.
+ *
+ * « Chaque jour une carte » veut dire que le choix se fait une fois par jour, pas à chaque
+ * ouverture : sans cette mémoire, rouvrir l'application changeait de concept, et rien ne
+ * s'installait. Le jour est stocké en clair (`AAAA-MM-JJ`, heure locale) plutôt qu'en
+ * horodatage — c'est un jour civil qu'on compare, pas un instant.
+ */
+export interface DailyPick {
+  day: string;
+  conceptId: ConceptId;
+}
+
 export interface ProgressState {
   version: number;
   concepts: Record<ConceptId, SeenConcept>;
   settings: UserSettings;
+  daily?: DailyPick;
 }

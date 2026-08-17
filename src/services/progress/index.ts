@@ -40,6 +40,18 @@ export class ProgressService {
     return updated;
   }
 
+  /**
+   * Fixe la carte du jour. Appelé une fois par jour civil, au premier affichage.
+   *
+   * Le `recordSeen` correspondant est fait par l'appelant : voir une carte et retenir
+   * laquelle a été tirée aujourd'hui sont deux faits distincts — la seconde survit à un
+   * changement de corpus, la première non.
+   */
+  setDaily(day: string, conceptId: ConceptId): void {
+    const state = this.getState();
+    this.repository.save({ ...state, daily: { day, conceptId } });
+  }
+
   markFirstLaunchCompleted(): void {
     const state = this.getState();
     this.repository.save({

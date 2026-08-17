@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { concepts } from "@/content";
 import { getProgressService } from "@/services/progress";
-import { pickNextConcept } from "@/domain/concepts/next-card";
+import { dayKey, pickDailyConcept } from "@/domain/concepts/next-card";
 import type { Concept } from "@/types";
 import { Screen } from "@/components/motion/Screen";
 import { Button } from "@/components/ui/Button";
@@ -33,14 +33,21 @@ export default function TodayPage() {
     const seen = new Map(
       Object.values(state.concepts).map((c) => [c.conceptId, c.lastSeenAt] as const)
     );
-    const next = pickNextConcept(concepts, seen);
+    const today = dayKey();
+    const next = pickDailyConcept(concepts, seen, today, state.daily);
     // Lecture localStorage et tirage de la carte : impossibles pendant le rendu serveur,
     // faits une seule fois par ouverture de l'écran.
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setFirstLaunch(!state.settings.firstLaunchCompleted);
     setConcept(next);
     setMounted(true);
-    if (next) service.recordSeen(next.id);
+    if (next) {
+      // Le tirage du jour est arrêté ici et pas ailleurs : rouvrir l'application dans
+      // l'heure doit redonner la même carte, y compris après un changement de corpus.
+      if (state.daily?.day !== today || state.daily.conceptId !== next.id)
+        service.setDaily(today, next.id);
+      service.recordSeen(next.id);
+    }
   }, []);
 
   if (!mounted) return <div className="min-h-svh" aria-hidden />;
@@ -147,7 +154,10 @@ function ConceptCard({ concept }: { concept: Concept }) {
   const sources = concept.sources ?? [];
 
   return (
-    <div className="stagger flex flex-col gap-[1.6em]" style={{ fontSize: CARD_SCALE }}>
+    <div
+      className="stagger flex max-h-full min-h-0 flex-col gap-[1.6em]"
+      style={{ fontSize: CARD_SCALE }}
+    >
       <div className="flex flex-col gap-[0.6em]">
         {/* Rendu sous condition, et non laissé vide : une ligne absente ne doit pas laisser
             l'écart qu'elle aurait occupé. */}
@@ -167,7 +177,16 @@ function ConceptCard({ concept }: { concept: Concept }) {
        * on lit, pas les deux à la fois — et le concept reste sous les yeux dans les deux cas.
        */}
       {showSources ? (
-        <div className="enter-rise flex flex-col gap-[0.8em]">
+        /*
+         * Les sources défilent dans leur propre cadre, et elles sont les seules.
+         *
+         * Cinq notices bibliographiques complètes ne tiennent pas sur un écran de téléphone,
+         * et les raccourcir reviendrait à retirer ce qui permet de rouvrir le texte — c'est
+         * exactement ce que la carte existe pour donner. Ce qui doit rester fixe est le
+         * reste : le concept en tête, la signature et les deux actions au pied ne bougent
+         * pas, si bien qu'on ne perd jamais de vue ce qu'on est en train de sourcer.
+         */
+        <div className="enter-rise flex min-h-0 flex-1 flex-col gap-[0.8em] overflow-y-auto">
           <ConceptSourceList sources={sources} />
           {/*
            * La note d'attribution appartient à la vue des sources, pas à la face de la carte :

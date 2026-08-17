@@ -1,0 +1,186 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://curiosity.local/schema/carte.schema.json",
+  "title": "Carte d'un concept",
+  "description": "Une fiche du corpus, c'est-à-dire une carte et ce qui permet de la vérifier — rien de plus. Le format précédent demandait 171 000 caractères de dossier pour 600 caractères affichés : mécanisme détaillé, conditions d'apparition, contresens répertoriés, notes de traduction, réception, traçabilité champ par champ. Aucun de ces blocs n'atteignait le lecteur, et c'est pourtant sur eux que le contrôle s'épuisait — les huit fiches instruites ont toutes été renvoyées en correction sur des champs invisibles, alors que leur carte était établie. Ce qui reste ici est exactement ce que la carte affiche, plus les références qui permettent de le rouvrir. Le dossier documentaire complet d'une fiche instruite sous l'ancien format est conservé dans corpus/dossiers/ : rien n'a été détruit, mais rien de tout cela n'est plus exigé.",
+  "type": "object",
+  "required": ["id", "slug", "status", "title", "themes", "authors", "hook", "summary", "sources", "review"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Identifiant applicatif (ConceptId). Pour un sujet présent dans l'échafaudage (src/content/fixtures/), on reprend le même : la fiche d'échafaudage cesse alors d'être servie."
+    },
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+
+    "status": {
+      "enum": ["CANDIDATE", "IN_REVIEW", "VALIDATED", "REJECTED"],
+      "description": "Doit correspondre au répertoire : candidates/ review/ validated/ rejected/. Le répertoire est l'état."
+    },
+
+    "title": {
+      "type": "string",
+      "minLength": 2,
+      "description": "LE CONCEPT, tel qu'il s'affiche en tête de carte. La longueur est plafonnée par le validateur : un titre qui court sur quatre lignes chasse le reste de la carte."
+    },
+
+    "themes": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" },
+      "description": "LE THÈME (le premier) et les rattachements. Un identifiant inconnu de src/content/themes.ts est admis s'il porte un libellé : le périmètre est la discipline, pas la table des neuf thèmes."
+    },
+    "theme_labels": {
+      "type": "object",
+      "additionalProperties": { "type": "string" },
+      "description": "Libellé affiché de chaque thème. Porté par la fiche, jamais cherché dans l'application : c'est ce qui permet au corpus d'introduire un thème que l'application ne connaît pas encore."
+    },
+
+    "authors": {
+      "type": "array",
+      "minItems": 1,
+      "description": "L'AUTEUR. Le nom s'affiche ; l'identifiant applicatif ne sert qu'à lier vers une page d'auteur quand elle existe.",
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string" },
+          "app_author_id": { "type": ["string", "null"] }
+        }
+      }
+    },
+
+    "attribution_note": {
+      "type": ["string", "null"],
+      "description": "Rétablit l'attribution réelle quand elle ne se réduit pas à un nom : concept coécrit rangé sous un seul, concept associé à un auteur qui ne l'a pas créé, terme forgé par un tiers. Écrite en toutes lettres plutôt que composée à partir de champs séparés — l'ancienne composition automatique datait de 1960 une coécriture attestée en 1979."
+    },
+
+    "quotation": {
+      "type": ["object", "null"],
+      "description": "LA CITATION, facultative et jamais fabriquée. C'est le seul élément de la carte qui ne passe pas par nos mots : il n'existe donc que verbatim, localisé dans une édition précise, et honnête sur sa traduction. Beaucoup de concepts n'ont pas de passage court et autonome qui les énonce ; en exiger un partout ferait fabriquer la belle phrase que ce dispositif existe pour empêcher.",
+      "required": ["text", "reference", "locator"],
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "type": "string",
+          "description": "Mot pour mot. Une coupe se signale par […], jamais par une reformulation."
+        },
+        "attributed_to": {
+          "type": ["string", "null"],
+          "description": "L'auteur de la phrase, quand la référence ne le nomme pas déjà — un passage tiré d'un ouvrage collectif, par exemple. Sinon la carte afficherait le nom deux fois."
+        },
+        "reference": {
+          "type": "string",
+          "description": "La notice qui permet de rouvrir le texte, sans note de dossier : l'affichage est un affichage."
+        },
+        "locator": { "type": "string", "description": "Chapitre, section, page du passage cité." },
+        "language": { "type": ["string", "null"] },
+        "original_text": {
+          "type": ["string", "null"],
+          "description": "Obligatoire dès que `text` est une traduction de notre fait : le lecteur doit pouvoir revenir au texte."
+        },
+        "original_language": { "type": ["string", "null"] },
+        "translation": {
+          "type": "object",
+          "required": ["kind"],
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "enum": ["none", "published", "in-house"],
+              "description": "none : `text` est dans sa langue d'origine. published : traducteur et édition obligatoires. in-house : traduction de notre fait — c'est une interprétation, elle se déclare à l'écran."
+            },
+            "translator": { "type": ["string", "null"] },
+            "edition": { "type": ["string", "null"] }
+          }
+        }
+      }
+    },
+
+    "hook": {
+      "type": "string",
+      "description": "L'ACCROCHE : ce qui donne envie d'ouvrir le concept. Une question, pas un résumé, et rien qui excède ce que les sources portent."
+    },
+    "summary": {
+      "type": "string",
+      "description": "LE RÉSUMÉ du concept. Il reformule, il n'ajoute pas : tout ce qu'il affirme doit se retrouver dans une des sources listées."
+    },
+
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "description": "LES SOURCES, cinq au plus, les primaires d'abord. Une fiche bien instruite en rencontre vingt : les projeter toutes noierait le texte de l'auteur au milieu des commentateurs. On garde ce qui permet de remonter au texte.",
+      "items": {
+        "type": "object",
+        "required": ["label", "kind"],
+        "additionalProperties": false,
+        "properties": {
+          "label": {
+            "type": "string",
+            "description": "La notice telle qu'elle s'affiche. Sans note de dossier : une source a affiché l'adresse postale du CNAM le jour où les deux ont été confondues."
+          },
+          "kind": {
+            "enum": ["primary", "secondary-academic", "francophone-reception", "pedagogical-interpretation"],
+            "description": "Distingue ce qui vient de l'auteur de ce qui relève du commentaire. Sans ce niveau, la carte ferait passer un article peer-reviewed pour une glose de notre fait."
+          },
+          "locator": { "type": ["string", "null"], "description": "Pagination ou section, quand elle situe." },
+          "doi_isbn": { "type": ["string", "null"] },
+          "url": { "type": ["string", "null"] },
+          "consulted": {
+            "enum": ["full-text", "partial", "metadata-only"],
+            "description": "Ce qui a réellement été ouvert. Une fiche validée exige au moins une source primaire lue en texte intégral : on ne cite pas un texte qu'on n'a pas ouvert."
+          }
+        }
+      }
+    },
+
+    "review": {
+      "type": "object",
+      "description": "Le contrôle, ramené aux quatre questions dont la carte dépend. Il portait auparavant sur l'ensemble du dossier documentaire, ce qui coûtait une session entière par fiche et renvoyait en correction des champs que personne n'affiche.",
+      "required": ["verdict"],
+      "additionalProperties": false,
+      "properties": {
+        "reviewer": { "type": ["string", "null"] },
+        "date": { "type": ["string", "null"] },
+        "attribution": {
+          "enum": ["confirmee", "douteuse", "fausse", "non-verifiee"],
+          "description": "Le concept est-il bien de cet auteur ? Association n'est pas paternité."
+        },
+        "quotation": {
+          "enum": ["verbatim", "ecart", "absente", "non-verifiee"],
+          "description": "La citation a-t-elle été relevée sur le texte lui-même, à l'endroit annoncé ? `absente` quand la fiche n'en porte pas."
+        },
+        "sources": {
+          "enum": ["resolvent", "partielles", "introuvables", "non-verifiees"],
+          "description": "Les références affichées résolvent-elles vers ce qu'elles annoncent ?"
+        },
+        "prose": {
+          "enum": ["fidele", "deborde", "trop-etroite", "non-verifiee"],
+          "description": "L'accroche et le résumé ajoutent-ils quelque chose que les sources ne portent pas ? C'est la seule question qui porte sur nos mots."
+        },
+        "verdict": { "enum": ["PASS", "REWORK", "REJECT", "PENDING"] },
+        "rounds": { "type": ["integer", "null"], "minimum": 0 },
+        "notes": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+
+    "rejection_reason": {
+      "type": ["string", "null"],
+      "description": "Obligatoire en REJECTED : un rejet non motivé revient toujours."
+    },
+
+    "dossier": {
+      "type": ["string", "null"],
+      "description": "Chemin du dossier documentaire complet, quand la fiche en a un. Il n'est plus exigé ni contrôlé — il est conservé parce qu'il a été payé."
+    },
+
+    "notes": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Ce qui reste ouvert sur cette fiche, en clair. Remplace known_ambiguities, limitations et confidence_flags, qui disaient la même chose en trois listes."
+    }
+  }
+}

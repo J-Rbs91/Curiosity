@@ -3,7 +3,7 @@ import type { Concept } from "@/types";
 /**
  * Concepts d'échafaudage.
  *
- * Ces 35 fiches ont été écrites de mémoire, avant qu'il n'existe le moindre dispositif de
+ * Ces 31 fiches ont été écrites de mémoire, avant qu'il n'existe le moindre dispositif de
  * vérification, dans un seul but : donner aux écrans de quoi être construits et testés.
  * Elles ne sont pas un corpus, et il ne faut pas les lire comme un état antérieur du
  * corpus qu'il suffirait de corriger : leur ressemblance avec la réalité n'a jamais été
@@ -199,26 +199,6 @@ export const fixtureConcepts: Concept[] = [
     ]
   },
   {
-    "id": "deplacement-des-buts",
-    "slug": "deplacement-des-buts",
-    "title": "Déplacement des buts",
-    "hookQuestion": "Pourquoi une règle créée pour améliorer le travail peut-elle finir par devenir plus importante, aux yeux des agents, que le travail lui-même ?",
-    "shortExplanation": "Le déplacement des buts désigne, chez Merton, le processus par lequel le respect scrupuleux des règles et procédures devient une fin en soi, se substituant progressivement aux objectifs finaux que ces règles étaient censées servir.",
-    "authors": [
-      "merton"
-    ],
-    "themes": [
-      "bureaucratie-regles",
-      "comportements-organisationnels"
-    ],
-    "sources": [
-      {
-        "label": "Merton, Éléments de théorie et de méthode sociologique",
-        "kind": "primary"
-      }
-    ]
-  },
-  {
     "id": "ritualisme-bureaucratique",
     "slug": "ritualisme-bureaucratique",
     "title": "Ritualisme bureaucratique",
@@ -234,29 +214,6 @@ export const fixtureConcepts: Concept[] = [
     "sources": [
       {
         "label": "Merton, Éléments de théorie et de méthode sociologique",
-        "kind": "primary"
-      }
-    ]
-  },
-  {
-    "id": "rationalite-limitee",
-    "slug": "rationalite-limitee",
-    "title": "Rationalité limitée",
-    "hookQuestion": "Un décideur, même compétent et bien intentionné, peut-il réellement examiner toutes les options possibles avant de choisir ?",
-    "shortExplanation": "La rationalité limitée, concept forgé par Herbert Simon, décrit le fait que les décideurs ne disposent jamais d'une information complète, d'un temps illimité ni d'une capacité cognitive infinie pour évaluer toutes les solutions possibles à un problème.",
-    "authors": [
-      "simon"
-    ],
-    "themes": [
-      "decision"
-    ],
-    "sources": [
-      {
-        "label": "Simon, Administrative Behavior",
-        "kind": "primary"
-      },
-      {
-        "label": "Simon, A Behavioral Model of Rational Choice",
         "kind": "primary"
       }
     ]
@@ -338,25 +295,6 @@ export const fixtureConcepts: Concept[] = [
     ]
   },
   {
-    "id": "garbage-can-model",
-    "slug": "garbage-can-model",
-    "title": "Modèle de la poubelle (garbage can model)",
-    "hookQuestion": "Une décision organisationnelle résulte-t-elle toujours d'une analyse méthodique d'un problème, ou peut-elle naître de la rencontre presque fortuite d'un problème, d'une solution déjà disponible et d'un moment propice ?",
-    "shortExplanation": "Le modèle de la poubelle, développé par Cohen, March et Olsen, décrit certaines organisations comme des systèmes où problèmes, solutions, participants et occasions de choix circulent de façon relativement indépendante, et où une décision naît souvent de leur rencontre plus ou moins fortuite.",
-    "authors": [
-      "march"
-    ],
-    "themes": [
-      "decision"
-    ],
-    "sources": [
-      {
-        "label": "Cohen, March et Olsen, A Garbage Can Model of Organizational Choice",
-        "kind": "primary"
-      }
-    ]
-  },
-  {
     "id": "exploration-organisationnelle",
     "slug": "exploration-organisationnelle",
     "title": "Exploration organisationnelle",
@@ -400,25 +338,6 @@ export const fixtureConcepts: Concept[] = [
     "title": "Acteur stratégique",
     "hookQuestion": "Même dans l'organisation la plus hiérarchisée et la plus réglementée, un employé de base est-il totalement dépourvu de marge de manœuvre ?",
     "shortExplanation": "L'acteur stratégique est, pour Crozier, tout membre d'une organisation qui, même dans un rôle subalterne et très encadré, dispose toujours d'une marge de liberté qu'il utilise activement pour poursuivre ses propres intérêts au sein du système.",
-    "authors": [
-      "crozier"
-    ],
-    "themes": [
-      "pouvoir"
-    ],
-    "sources": [
-      {
-        "label": "Crozier, Le Phénomène bureaucratique",
-        "kind": "primary"
-      }
-    ]
-  },
-  {
-    "id": "zones-incertitude",
-    "slug": "zones-incertitude",
-    "title": "Zones d'incertitude",
-    "hookQuestion": "Pourquoi l'agent de maintenance qui connaît seul les pannes d'une vieille machine peut-il avoir, dans les faits, plus de pouvoir que certains cadres hiérarchiques ?",
-    "shortExplanation": "Les zones d'incertitude sont, chez Crozier, les espaces d'imprévisibilité que les règles formelles ne parviennent pas à éliminer, et dont le contrôle par un acteur constitue la source principale de son pouvoir dans l'organisation.",
     "authors": [
       "crozier"
     ],

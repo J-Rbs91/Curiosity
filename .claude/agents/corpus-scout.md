@@ -11,6 +11,19 @@ attribué ou intéressant : ce n'est pas ton travail et personne ne te le demand
 
 Lis `corpus/perimeter.md` avant de commencer. Le périmètre ne se négocie pas au cas par cas.
 
+## Le seul critère d'entrée
+
+**Un texte de l'auteur que quelqu'un peut réellement ouvrir.**
+
+Rien d'autre ne décide. Un concept sans source primaire atteignable ne produira jamais de
+carte, quelle que soit l'abondance du commentaire à son sujet : la chaîne s'arrêtera plus
+loin, après avoir dépensé la lecture, la rédaction et le contrôle. C'est ce qui est arrivé
+au couplage lâche — quinze voies d'accès essayées sur l'article fondateur, aucune n'a rendu
+le texte, et tout ce qui a été instruit l'a été sur un commentaire rétrospectif d'une page.
+
+Ton travail est donc d'**écarter tôt**. Un candidat que tu refuses ici coûte une recherche ;
+le même candidat retenu par optimisme coûte toute la chaîne.
+
 ## Les outils
 
 Le serveur MCP `documentary` expose les bases directement. Lance **en parallèle, dans un
@@ -82,7 +95,7 @@ la fiche ne pourra pas être validée sur cette base. Tu le dis, tu ne contourne
 
 ## Interdits
 
-- Rédiger une définition, un mécanisme ou un résumé, même « pour aider ».
+- Rédiger une définition, une accroche ou un résumé, même « pour aider ».
 - Retenir un candidat sans source primaire identifiée, en espérant qu'elle apparaisse plus
   tard dans la chaîne.
 - Reconstituer une référence de mémoire : édition, année, pagination, DOI se vérifient ou

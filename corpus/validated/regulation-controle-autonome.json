@@ -1,0 +1,82 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "regulation-controle-autonome",
+  "slug": "regulation-controle-autonome",
+  "status": "VALIDATED",
+  "title": "Régulation de contrôle et régulation autonome",
+  "themes": [
+    "organisation-formelle-reelle",
+    "pouvoir"
+  ],
+  "theme_labels": {
+    "organisation-formelle-reelle": "Organisation réelle vs organisation formelle",
+    "pouvoir": "Pouvoir"
+  },
+  "authors": [
+    {
+      "name": "Jean-Daniel Reynaud"
+    }
+  ],
+  "hook": "Les règles qu'une équipe se donne sont-elles un désordre ou une autre régulation ?",
+  "summary": "Reynaud oppose les règles de la direction à celles des exécutants. Les secondes ne sont ni spontanées ni informelles : ce sont des stratégies contre le contrôle.",
+  "sources": [
+    {
+      "label": "Jean-Daniel Reynaud, « Les régulations dans les organisations : régulation de contrôle et régulation autonome », Revue française de sociologie, XXIX-1, janvier-mars 1988, p. 5-18.",
+      "kind": "primary",
+      "locator": "p. 5-18",
+      "doi_isbn": "10.2307/3321884",
+      "url": "https://www.persee.fr/doc/rfsoc_0035-2969_1988_num_29_1_2475",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Jean-Daniel Reynaud, « Conflit et régulation sociale. Esquisse d'une théorie de la régulation conjointe », Revue française de sociologie, XX-2, avril-juin 1979, p. 367-376.",
+      "kind": "primary",
+      "locator": "p. 367-376",
+      "doi_isbn": "10.2307/3321090",
+      "url": "https://www.persee.fr/doc/rfsoc_0035-2969_1979_num_20_2_6698",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Bruno Maggi, « La théorie de Jean-Daniel Reynaud. Réflexions et souvenirs », Bologne, TAO Digital Library, mai 2020, 13 p.",
+      "kind": "secondary-academic",
+      "doi_isbn": "10.6092/unibo/amsacta/6389",
+      "url": "https://amsacta.unibo.it/id/eprint/6389/1/TheorieReynaud_ReflexionsSouvenirs.pdf"
+    },
+    {
+      "label": "Gilbert de Terssac (dir.), La théorie de la régulation sociale de Jean-Daniel Reynaud. Débats et prolongements, Paris, La Découverte, coll. « Recherches », 2003, 448 p.",
+      "kind": "secondary-academic",
+      "doi_isbn": "9782707141125",
+      "url": "https://doi.org/10.3917/dec.terss.2003.01"
+    },
+    {
+      "label": "Jean-Daniel Reynaud, « Conflict and social regulation: a sketch of a theory of joint regulation », British Journal of Industrial Relations, 1979",
+      "kind": "secondary-academic",
+      "doi_isbn": "10.1111/j.1467-8543.1979.tb00957.x",
+      "url": "https://doi.org/10.1111/j.1467-8543.1979.tb00957.x"
+    }
+  ],
+  "review": {
+    "reviewer": "corpus-blind-reviewer",
+    "date": "2026-08-17",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "notes": [
+      "Contrôle aveugle du 17 août 2026, après correction d'une portée jugée trop large au tour précédent : attribution confirmée, source primaire confirmée, interprétation fidèle.",
+      "Les règles du jeu (Armand Colin, 1989) est sorti du dossier : ni DOI, ni ISBN, ni URL stable, jamais ouvert. La fiche repose entièrement sur l'article de 1988."
+    ]
+  },
+  "dossier": "corpus/dossiers/regulation-controle-autonome.json",
+  "quotation": {
+    "text": "[…] la régulation autonome n'est pas le fruit d'une ingéniosité que les dirigeants auraient sottement méconnue.",
+    "reference": "Jean-Daniel Reynaud, « Les régulations dans les organisations : régulation de contrôle et régulation autonome », Revue française de sociologie, XXIX-1, janvier-mars 1988, p. 5-18.",
+    "locator": "p. 12",
+    "language": "fr",
+    "original_language": "fr",
+    "translation": {
+      "kind": "none"
+    }
+  }
+}

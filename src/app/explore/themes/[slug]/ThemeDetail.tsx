@@ -32,18 +32,46 @@ export function ThemeDetail({ slug }: { slug: string }) {
           </p>
         )}
 
-        <ul className="stagger mt-10 space-y-1">
-          {themeConcepts.map((concept) => (
-            <li key={concept.id}>
-              <TreeLink
-                href={`/explore/concept/?c=${concept.slug}`}
-                className="press-soft block rounded-2xl py-3.5 text-[17px] text-ink hover:bg-paper-raised"
-              >
-                {concept.title}
-              </TreeLink>
-            </li>
-          ))}
-        </ul>
+        {/*
+         * Les concepts du thème, annoncés comme tels.
+         *
+         * C'est le chemin que le lecteur emprunte : il choisit un thème pour arriver à des
+         * concepts, et de là à leur carte. Sans en-tête, la liste se lisait comme une suite
+         * de titres flottant sous la description — et quand le corpus était vide, elle ne se
+         * lisait pas du tout : l'écran s'arrêtait après le paragraphe, sans qu'on puisse
+         * distinguer « ce thème n'a pas encore de concept » de « ce thème n'en a pas ».
+         */}
+        <section className="mt-10">
+          <h2 className="text-xs font-medium uppercase tracking-[0.12em] text-ink-faint">
+            {themeConcepts.length > 0
+              ? `Concepts · ${themeConcepts.length}`
+              : "Concepts"}
+          </h2>
+
+          {themeConcepts.length === 0 ? (
+            <p className="mt-4 text-[15px] leading-relaxed text-ink-faint">
+              Aucun concept de ce thème n&apos;a encore terminé son instruction documentaire.
+            </p>
+          ) : (
+            <ul className="stagger mt-3 space-y-1">
+              {themeConcepts.map((concept) => (
+                <li key={concept.id}>
+                  <TreeLink
+                    href={`/explore/concept/?c=${concept.slug}`}
+                    className="press-soft block rounded-2xl py-3.5 text-[17px] text-ink hover:bg-paper-raised"
+                  >
+                    {concept.title}
+                    {/* L'accroche sous le titre : elle dit ce qu'on trouvera derrière, ce
+                        qu'un titre de concept seul ne fait jamais. */}
+                    <span className="mt-1 block text-[14px] leading-snug text-ink-soft">
+                      {concept.hookQuestion}
+                    </span>
+                  </TreeLink>
+                </li>
+              ))}
+            </ul>
+          )}
+        </section>
       </div>
     </Screen>
   );

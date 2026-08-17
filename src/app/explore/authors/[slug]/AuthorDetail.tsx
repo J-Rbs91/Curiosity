@@ -24,18 +24,34 @@ export function AuthorDetail({ slug }: { slug: string }) {
         {author.years && <p className="mt-1 text-sm text-ink-faint">{author.years}</p>}
         <p className="mt-5 text-[17px] leading-relaxed text-ink-soft">{author.bio}</p>
 
-        <ul className="stagger mt-10 space-y-1">
-          {authorConcepts.map((concept) => (
-            <li key={concept.id}>
-              <TreeLink
-                href={`/explore/concept/?c=${concept.slug}`}
-                className="press-soft block rounded-2xl py-3.5 text-[17px] text-ink hover:bg-paper-raised"
-              >
-                {concept.title}
-              </TreeLink>
-            </li>
-          ))}
-        </ul>
+        {/* Même traitement que pour un thème : la liste s'annonce, et son absence se dit. */}
+        <section className="mt-10">
+          <h2 className="text-xs font-medium uppercase tracking-[0.12em] text-ink-faint">
+            {authorConcepts.length > 0 ? `Concepts · ${authorConcepts.length}` : "Concepts"}
+          </h2>
+
+          {authorConcepts.length === 0 ? (
+            <p className="mt-4 text-[15px] leading-relaxed text-ink-faint">
+              Aucun concept de cet auteur n&apos;a encore terminé son instruction documentaire.
+            </p>
+          ) : (
+            <ul className="stagger mt-3 space-y-1">
+              {authorConcepts.map((concept) => (
+                <li key={concept.id}>
+                  <TreeLink
+                    href={`/explore/concept/?c=${concept.slug}`}
+                    className="press-soft block rounded-2xl py-3.5 text-[17px] text-ink hover:bg-paper-raised"
+                  >
+                    {concept.title}
+                    <span className="mt-1 block text-[14px] leading-snug text-ink-soft">
+                      {concept.hookQuestion}
+                    </span>
+                  </TreeLink>
+                </li>
+              ))}
+            </ul>
+          )}
+        </section>
       </div>
     </Screen>
   );
