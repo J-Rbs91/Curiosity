@@ -68,8 +68,10 @@ contrôle depuis correction : **c'est exactement là qu'il faut reprendre.**
 ### Prêts pour le contrôle aveugle — 4
 
 Cartes composées le 17 août à partir de dossiers de preuve complets. Aucune ne dépasse les
-limites d'affichage ; toutes portent une citation vérifiée en première main par le lecteur
-primaire, avec sa localisation et son statut de traduction.
+limites d'affichage ; toutes portent une citation localisée, vérifiée en première main par
+le lecteur primaire, avec son statut de traduction. **Les quatre ont été regardées à
+l'écran** (Playwright, 375 × 667, parcours de navigation réel) : voir plus bas ce que ce
+passage a corrigé.
 
 | id | citation | longueurs (nom / accroche / résumé / citation) |
 |---|---|---|
@@ -153,24 +155,61 @@ aujourd'hui comme « la » définition de Weick est en réalité celle d'Orton &
 
 ---
 
-## Deux frictions entre le dossier documentaire et le validateur
+## Ce que le passage à l'écran a appris
 
-Elles ne sont pas des bugs, mais elles se sont payées en temps, et elles se reproduiront.
+Les quatre cartes ont été ouvertes dans l'application (Playwright, Chromium, 375 × 667 —
+l'écran sur lequel les longueurs sont calibrées), en n'empruntant que la navigation
+qu'un lecteur emprunte : premier lancement, carte du jour, Explorer, Thèmes, fiche.
 
-1. **`associated_author` est exigé sur toute fiche `COAUTHORED`**, alors que le travail de
-   réception conclut, pour `isomorphisme-institutionnel`, à une coauctorité *sans asymétrie
-   repérable* — c'est-à-dire à un champ vide. Le validateur force donc à écrire quelque
-   chose là où la preuve dit qu'il n'y a rien. Les deux fiches concernées portent une
-   formule honnête (« toujours cités ensemble », « l'écologie des populations plutôt que
-   sous l'un des deux noms »), mais le champ devrait admettre `null` avec une justification.
+Un défaut de fond est apparu, qu'aucun comptage de caractères n'aurait montré.
 
-2. **`attribution.term_origin.coined_by` et `coined_in` sont affichés tels quels sur la
-   carte**, et n'ont aucune limite de longueur. Les analystes de réception y écrivent — avec
-   raison, dans un dossier de preuve — un raisonnement complet : la ligne d'attribution de
-   `isomorphisme-institutionnel` faisait ainsi **plus de 1 600 caractères** avant rangement.
-   Ces deux champs ne peuvent porter qu'un nom et une référence ; le raisonnement va dans
-   `note`. Aucune limite d'affichage ne couvre `attributionNote`, qui peut donc déborder
-   sans que rien ne le signale.
+> **La projection affiche certains champs du dossier tels quels — et ces champs sont
+> écrits pour un contrôleur, pas pour un lecteur.**
+
+Trois champs sont concernés, et le défaut s'est présenté trois fois de suite avant d'être
+reconnu comme un seul :
+
+| champ | ce qu'il contenait | effet à l'écran |
+|---|---|---|
+| `attribution.term_origin.coined_by` / `coined_in` | le raisonnement complet sur l'origine du terme, en trois strates | ligne d'attribution de **1 600 caractères** sur l'isomorphisme |
+| `evidence.key_quotation.locator` | le pointeur **plus** le détail de vérification (coupure de page, relecture sur image et non sur OCR, phrase entière d'où la coupe est tirée) | jusqu'à **458 caractères** sous la citation |
+| `evidence.primary_sources[].citation` | la notice **plus** la note de dossier | la source de Reynaud affichait le numéro thématique, la note liminaire et **l'adresse postale du CNAM** |
+
+Les trois sont rangés : le pointeur et la notice restent dans le champ affiché, le
+raisonnement passe dans `_locator_note`, `_citation_note` et `term_origin.note`, à côté,
+où le contrôleur aveugle le retrouvera intact. **Rien n'a été supprimé.**
+
+La leçon vaut pour la suite du corpus : un champ du dossier qui atterrit sur la carte doit
+être écrit deux fois — une fois pour l'affichage, une fois pour la preuve. Ce n'est pas au
+rédacteur de la carte de le découvrir source par source.
+
+### Un défaut d'application, non corrigé
+
+Sur les quatre cartes, **le nom de l'auteur s'affiche deux fois** sous la citation :
+
+> Jean-Daniel Reynaud, Jean-Daniel Reynaud, « Les régulations dans les organisations… »
+
+`buildQuotation()` (`scripts/corpus/lib/project.mjs`) rend `attributedTo` — le nom — puis
+`reference`, construite à partir de `source.citation`, laquelle commence par convention par
+ce même nom. Les deux sont justes séparément ; leur juxtaposition ne l'est pas.
+
+Ce n'est pas un défaut de fiche et il n'a pas été corrigé ici : il touche la projection,
+donc toutes les cartes à venir, et mérite une décision plutôt qu'un correctif discret.
+Deux voies possibles — ne composer `reference` qu'avec le titre et le support, en laissant
+`attributedTo` porter le nom ; ou n'afficher `attributedTo` que lorsqu'il diffère de
+l'auteur de la source citée (cas d'un ouvrage collectif).
+
+### `corpus:preview` écrit un fichier que rien ne lit
+
+`npm run corpus:preview` produit `src/content/generated/concepts.preview.ts`, et **aucun
+module de l'application ne l'importe** : la commande existe pour regarder une carte avant
+son contrôle, mais il n'y a nulle part où la regarder.
+
+Le branchement a été fait localement pour ce passage, puis retiré. Il n'a pas été conservé
+parce qu'il n'est pas sûr en l'état : le fichier d'aperçu est ignoré par git, donc un import
+statique casse le build sur un dépôt fraîchement cloné. Le rendre durable demande soit un
+fichier d'aperçu vide versionné, soit un import dynamique, soit que `corpus:preview` écrive
+toujours le fichier, fût-il vide.
 
 ---
 
