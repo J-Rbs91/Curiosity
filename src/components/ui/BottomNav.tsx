@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { TreeLink } from "@/components/navigation/TreeLink";
 import { BookOpen, Compass } from "lucide-react";
 
 /**
@@ -48,7 +48,7 @@ export function BottomNav() {
             const active = index === activeIndex;
             return (
               <li key={href} className="flex-1">
-                <Link
+                <TreeLink
                   href={href}
                   aria-current={active ? "page" : undefined}
                   className="press flex flex-col items-center gap-1 py-3 text-xs"
@@ -67,7 +67,7 @@ export function BottomNav() {
                   >
                     {label}
                   </span>
-                </Link>
+                </TreeLink>
               </li>
             );
           })}

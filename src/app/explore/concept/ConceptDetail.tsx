@@ -1,14 +1,12 @@
 "use client";
 
 import { notFound, useSearchParams } from "next/navigation";
-import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
 import { concepts, authors, themes } from "@/content";
 import { ConceptMetaTags } from "@/components/concept/ConceptMetaTags";
 import { ConceptQuotation } from "@/components/concept/ConceptQuotation";
 import { ConceptSourceList } from "@/components/concept/ConceptSources";
 import { Screen } from "@/components/motion/Screen";
-import { SCREEN_MOTION } from "@/components/motion/screen-motion";
+import { BackLink } from "@/components/ui/BackLink";
 import { DeepenButton } from "@/components/ui/DeepenButton";
 
 /**
@@ -35,14 +33,7 @@ export function ConceptDetail() {
          * depuis un auteur ou un thème, et un retour arrière renverrait parfois hors de
          * l'application.
          */}
-        <Link
-          href="/explore"
-          transitionTypes={SCREEN_MOTION.back}
-          className="press -ml-1 inline-flex items-center gap-1.5 text-sm text-ink-faint hover:text-ink"
-        >
-          <ArrowLeft size={16} />
-          Explorer
-        </Link>
+        <BackLink />
 
         <h1 className="mt-6 font-serif-display text-[30px] font-semibold leading-tight text-ink">
           {concept.title}
