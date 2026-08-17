@@ -339,10 +339,67 @@
     "REMARQUE UTILE AU LECTEUR PRIMAIRE ET À L'APPELANT, sans modification de son fichier : le miroir NTNU que le scouting n'avait pas réussi à ouvrir FONCTIONNE. Les deux articles y sont accessibles en texte intégral (tirages JSTOR océrisés) : http://www.iot.ntnu.no/innovation/norsi-pims-courses/harrison/Hannan%20&%20Freeman%20(1977).PDF et …/Hannan%20&%20Freeman%20(1984).PDF. Le même répertoire contient DiMaggio & Powell (1983), Meyer & Rowan (1977), Feldman & Pentland (2003), Selznick (1948) et Salancik & Pfeffer (1977), utiles à d'autres fiches du lot. L'échec du scouting était technique, non un refus d'accès."
   ],
 
+  "corrections_tour_A1": {
+    "_note": "Tour de correction ouvert par le verdict REWORK du contrôle aveugle de passe A (corpus/review/.history/inertie-structurelle-et-selection.verdict.A-tour1.json). Poste tenu ici : littérature secondaire et couche francophone. Les points du verdict portant sur le texte primaire lui-même (citation clé, paginations de 1977 et 1984, `concept_definition`, `mechanism`, `limitations`) ne sont pas traités ici et rien n'a été touché dans `evidence.primary-reading.json` ni dans l'enregistrement en revue. Chaque point du contrôle a été RECONTRÔLÉ sur les documents, non recopié : les deux PDF de l'AIMS et celui de l'ANZAM ont été retéléchargés et repaginés page à page, les pages Persée rechargées une à une, les notices Crossref réinterrogées le 17 août 2026.",
+
+    "points_traites": [
+      {
+        "point": "Vas & Vande Velde 2000 — trois localisateurs faux d'une page et un décompte faux.",
+        "statut": "CONFIRMÉ sur les quatre sous-points, corrigé.",
+        "preuve": "PDF AIMS retéléchargé (27 pages ; folio imprimé = rang de la page, vérifié sur les p. 5, 6, 23, 24 et 27). Le passage « L'écologie des populations (Hannan&Freeman, 1984) […] Ce sont ces phénomènes qui induisent des résistances au changement » tient entièrement p. 5, qui se clôt sur « strategic momentum » (fiche : p. 5-6). La définition de Carton 1997 est p. 6, sous l'intertitre « 3. Les formes de résistance au changement » (fiche : p. 7) ; l'écart est donc d'une page, non de deux. L'entrée « HANNAN, M.T. & FREEDMAN, J., (1984) » est p. 23, première page de la bibliographie (fiche : p. 24). Le texte des trois citations est exact au mot près.",
+        "champs_modifies": ["synthese_format_prescrit.ECART_D_USAGE", "evidence.francophone_sources[1].establishes", "evidence.known_ambiguities[2]"]
+      },
+      {
+        "point": "Mortier, de la Robertie & Lebrument 2014 — le passage sur Aldrich est p. 6, non p. 7.",
+        "statut": "CONFIRMÉ, corrigé.",
+        "preuve": "PDF AIMS retéléchargé (26 pages ; folio = rang de la page). « Si la théorie de l'écologie des populations d'organisations a été présentée dans un premier temps par Hannan M.T. et Freeman J.H. (1977) […] ce sont véritablement les travaux d'Howard Aldrich (1979) » est le dernier paragraphe de la p. 6. En revanche les autres localisateurs de ce bloc résistent au contrôle : la chaîne fiabilité / traçabilité / « effet induit des processus de sélection » et la définition empruntée à Boudes 2001 sont bien p. 7, et Rojot est bien cité p. 6 et p. 7.",
+        "champs_modifies": ["evidence.francophone_sources[2].establishes", "evidence.known_ambiguities[4]"]
+      },
+      {
+        "point": "Chapitre Dunod 2024 — Hannan et Freeman n'en sont pas les auteurs mais l'objet ; la notice fabriquait une source francophone de 2024 signée d'eux.",
+        "statut": "CONFIRMÉ, sur une preuve plus large que celle du contrôle, et corrigé.",
+        "preuve": "Le dépôt 10.3917/dunod.autis.2024.01.0180 porte bien Hannan et Freeman en `author` (et, comme titre de chapitre, celui du livre entier). Mais le sondage des 41 dépôts de l'ISBN 9782100862405 montre que ce champ nomme partout l'auteur DONT LE CHAPITRE TRAITE : Argyris p. 38-45, March p. 58-64, Nonaka & Takeuchi p. 65-72, Senge p. 83-89, Weick p. 90-97, Mintzberg p. 139-145, Moscovici p. 146-153, Bateson-Watzlawick-Weakland-Fisch p. 217-223, Schein p. 262-268 — plusieurs morts avant 2024 —, les quatre directeurs ne signant que les liminaires, l'introduction et les intercalaires. Le dépôt de la même unité en 2018 (10.3917/dunod.autis.2018.01.0207) intitule le chapitre « Chapitre 21. Michael T. Hannan et John Freeman » et porte les quatre directeurs comme auteurs. La page éditeur (dunod.com) présente l'ouvrage comme « une synthèse […] à travers la présentation des travaux des auteurs les plus importants de ces 60 dernières années » et le signe des quatre directeurs ; « 3e éd. » y est confirmé. Cairn renvoie toujours 403 : le contenu du chapitre reste non lu.",
+        "champs_modifies": ["synthese_format_prescrit.COUCHE_FR", "evidence.francophone_sources[3].citation", "evidence.francophone_sources[3].establishes", "non_etabli[3]"]
+      },
+      {
+        "point": "Cohérence interne — trois énoncés qui décrivent un autre dossier (`limitations`, « secondary_sources est vide à dessein », « la file de cartographie ne désigne comme source primaire que l'article de 1977 »).",
+        "statut": "PARTIELLEMENT HORS POSTE ; le seul énoncé qui relève de cette fiche est exact et a été précisé, non supprimé.",
+        "preuve": "Les deux premiers énoncés sont dans `evidence.primary-reading.json` (lignes de `limitations` et de son bloc de sources), pas ici : ils reviennent au lecteur primaire et ne sont pas touchés. Le troisième est bien de cette fiche, et il est VÉRIFIÉ : `scouting.json` ne porte, en `source_primaire`, que l'article de 1977 (DOI 10.1086/226424) ; l'article de 1984 n'y figure qu'à travers les pistes secondaires. Ce que le contrôle lit comme un reliquat est un énoncé sur le fichier de cartographie, non sur l'enregistrement — lequel compte bien deux sources primaires. La formulation a été rendue non ambiguë.",
+        "champs_modifies": ["evidence.known_ambiguities[0]"]
+      },
+      {
+        "point": "« Sources concordantes » — les sept notices secondaires et francophones à DOI se résolvent sans écart.",
+        "statut": "CONFIRMÉ, et complété d'un élément que le contrôle n'a pas relevé.",
+        "preuve": "Réinterrogées une à une sur Crossref le 17 août 2026 : Young, AJS 94(1), 1988, p. 1-24, 95 citations ; Freeman & Hannan, AJS 95(2), 1989, p. 425-439 (les « quinze pages de réplique » de la fiche sont exactes) ; Carroll, ARS 10, 1984, p. 71-93 ; Singh & Lumsden, ARS 16, 1990, p. 161-195 ; Lewin & Volberda, Organization Science 10(5), 1999, p. 519-534 ; Gilbert, AMJ 48(5), 2005, p. 741-763, 1 055 citations ; Aldrich & Pfeffer, ARS 2, 1976, p. 79-105 ; James, Human Organization 30(3), 1971, p. 223-228 ; DiMaggio & Powell, ASR 48(2), 1983. Les trois résumés d'auteur cités (Carroll, Singh & Lumsden, Lewin & Volberda) sont verbatim, « reframing the selection adaptation standoff » compris. Les comptes de citations des deux textes porteurs sont inchangés à cette date : 4 720 (1977) et 4 841 (1984). COMPLÉMENT : la notice Persée de Chanlat 1989 porte un DOI que la fiche laissait à null — 10.3406/sotra.1989.2473 — et confirme la composition du numéro (Sociologie du travail, 31ᵉ année, n° 3, juillet-septembre 1989, pp. 381-400). Le renvoi de Chanlat à Astley 1985 se résout également : doi 10.2307/2393106, ASQ 30(2), p. 224-241.",
+        "champs_modifies": ["evidence.francophone_sources[0].doi_isbn", "evidence.reception.debates[3]", "evidence.reception.critiques[2].source"]
+      },
+      {
+        "point": "Communication ANZAM — « le passage sur le reproche de déterminisme est verbatim, p. 5 ».",
+        "statut": "CITATION CONFIRMÉE, LOCALISATEUR RECTIFIÉ — le seul point où le contrôle de passe A est lui-même imprécis.",
+        "preuve": "PDF de 23 pages retéléchargé : le passage « Despite of its contributions, population ecology is criticized to be far too deterministic a theory… » est exact au mot près, mais il se trouve à la page 5 DU FICHIER, dont le folio imprimé est 4 (la numérotation imprimée commence à « 2 » sur la troisième page du fichier). La fiche et le contrôle donnaient l'un comme l'autre « p. 5 », qui est le rang de la page. Les deux repères sont désormais donnés ensemble. Datation : le document ne porte pas d'année ; sa référence la plus récente est de 2008, ce qui fixe un terminus post quem — l'attribution à la 22e conférence ANZAM de décembre 2008 circule en recherche web et n'a pas été vérifiable sur une source de niveau suffisant, `year` reste à null.",
+        "champs_modifies": ["evidence.secondary_sources[8].citation", "evidence.secondary_sources[8].establishes", "evidence.reception.critiques[2].source"]
+      }
+    ],
+
+    "corrections_hors_verdict_relevant_du_poste": [
+      "MORTIER 2014, p. 22-23 → p. 23. Le contrôle n'a pas relevé ce localisateur. La phrase « l'intelligence économique agit en quelque sorte comme un vecteur de décroissance de l'inertie structurelle » est entièrement p. 23 ; seul le paragraphe qui la porte s'ouvre en bas de la p. 22. Corrigé dans `francophone_sources[2]` et dans `common_misinterpretations[2].source`.",
+      "CHANLAT 1989, deux localisateurs précisés. (a) La phrase sur la réaction à la contingence franchit la coupure : « Ce courant a émergé en réaction aux études classiques portant sur » ferme la p. 390, « l'entrepreneurship qui privilégiaient davantage les variables psychologiques » ouvre la p. 391 ; la fiche donnait p. 391 seule, elle donne désormais p. 390-391. (b) La phrase qui partage le courant en deux tendances s'ouvre en bas de la p. 391 (« Il se divise en deux grandes tendances. La première, dont ») et la formule « une forme de darwinisme social renouvelé » est p. 392 ; la fiche donnait p. 392, le partage est désormais dit. (c) L'océrisation Persée porte « barrière juridiques » là où la fiche citait « barrières juridiques » : signalé sic, la citation n'étant reproductible que sur l'OCR.",
+      "CHANLAT 1989, une attribution resserrée. La fiche portait au compte « des écologistes eux-mêmes » deux exigences successives. Le texte ne l'autorise que pour la première — « Il faut aussi tenir compte, SELON EUX, de l'effet antieugénique de l'État » ; la seconde, « Il faut enfin compléter l'approche par l'économie politique… », ne porte aucune marque d'attribution et peut être de Chanlat. Consigné comme non tranchable.",
+      "UN ÉNONCÉ DE `reception.consensus` QUI DÉBORDAIT SA SOURCE, RETIRÉ DES ACQUIS. La fiche comptait pour sixième consensus que la question du changement serait « restée longtemps sous-instruite empiriquement dans le courant lui-même ». La source est une phrase du résumé d'une seule revue de littérature — « Research on organizational change is just beginning to appear in the literature » (Singh & Lumsden 1990) —, exacte au mot près mais qui dit l'état de la recherche à une date, et où « longtemps » n'apparaît pas. Un constat daté de deux auteurs n'est pas un consensus de champ : l'énoncé est reversé au rang de ce qu'atteste une source unique."
+    ],
+
+    "points_du_verdict_hors_poste_non_touches": [
+      "Citation clé — les deux défauts de forme (`original_text` ouvrant sur « Thus » quand `text` ouvre sur « […] » ; `_card_fit_note` décrivant une coupe qui ne correspond pas à l'objet livré). Relève du lecteur primaire.",
+      "Paginations de 1977 — le passage « The stronger the pressures… » à cheval sur 930-931, le passage « subunits of the organization… » imprimé p. 930, les quatre pressions externes ouvrant p. 932. Ces localisateurs sont dans `concept_definition`, `mechanism` et le bloc des sources primaires, qui ne m'appartiennent pas. NOTE À L'APPELANT, sans intervention de ma part : le verdict cite `term_origin` et `known_ambiguities` comme portant la bonne pagination — or ces deux champs existent AUSSI dans la présente fiche, où ils portent respectivement « 1977, p. 930-931 » et « p. 931 » ; s'ils devaient être alignés, c'est au titulaire du texte primaire de fixer la valeur, que je reprendrai sans discuter.",
+      "Pagination de 1984 — aucune erreur relevée, rien à faire.",
+      "Attribution COAUTHORED et fidélité de l'interprétation — confirmées par le contrôle, inchangées ici."
+    ]
+  },
+
   "provenance_fragment": {
     "agent": "corpus-reception-analyst",
-    "at": "2026-08-16",
-    "action": "Instruction de la réception : attribution, interprétation, discussion. Couches internationale et francophone menées en parallèle. Aucun élément de evidence.primary-reading.json consulté ni modifié.",
+    "at": "2026-08-16 ; tour de correction A1 le 2026-08-17",
+    "action": "Instruction de la réception : attribution, interprétation, discussion. Couches internationale et francophone menées en parallèle. Aucun élément de evidence.primary-reading.json consulté ni modifié. TOUR A1 (2026-08-17) : reprise des seuls points du verdict de passe A relevant de la littérature secondaire et de la couche francophone — paginations et références des sources secondaires, auctorité du chapitre Dunod, ce qu'une source établit ou n'établit pas, énoncés de `reception` débordant leur source. Documents rouverts et recontrôlés : les deux PDF de l'AIMS (27 et 26 pages), le PDF ANZAM (23 pages), les pages 390-392 de Chanlat sur Persée, les notices Crossref des neuf DOI de réception plus les 41 dépôts de l'ISBN Dunod, la page éditeur du manuel. Voir `corrections_tour_A1`.",
     "bases_interrogees": {
       "crossref": "répondu, sur tous les appels (recherche, métadonnées, résumés, sondage de DOI de chapitres)",
       "openalex": "muet — quota journalier épuisé, message explicite de l'API ; ni 429 anonyme ni absence de littérature",
