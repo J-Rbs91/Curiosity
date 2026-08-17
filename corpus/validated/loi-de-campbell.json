@@ -1,0 +1,73 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "loi-de-campbell",
+  "slug": "loi-de-campbell",
+  "status": "VALIDATED",
+  "title": "Loi de Campbell",
+  "themes": [
+    "effets-retour-de-la-mesure"
+  ],
+  "domain": null,
+  "theme_labels": {
+    "effets-retour-de-la-mesure": "Ce que la mesure fait au mesuré"
+  },
+  "authors": [
+    {
+      "name": "Donald T. Campbell",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Le nom « loi de Campbell » n'est pas de Campbell : l'expression n'apparaît nulle part dans le texte lu. Il écrit « the following pessimistic laws (at least for the U.S. scene) » — au pluriel, sans les baptiser, et en restreignant lui-même leur portée. Le singulier, le nom propre et le statut de loi générale lui ont été attribués après coup par la littérature qui le cite ; qui a employé ce nom le premier, et quand, n'est pas établi. La paternité du concept, elle, n'est ni disputée ni partagée.",
+  "hook": "Que devient un indicateur dès lors qu'on s'en sert pour décider ?",
+  "summary": "Plus un indicateur quantitatif sert à la décision, plus il subit des pressions de corruption — et plus il fausse le processus social qu'il devait justement surveiller.",
+  "quotation": {
+    "text": "Plus un indicateur social quantitatif est utilisé pour la prise de décision sociale, plus il sera soumis à des pressions de corruption […]",
+    "reference": "Donald T. Campbell, « Assessing the Impact of Planned Social Change », Journal of MultiDisciplinary Evaluation, vol. 7, n° 15, février 2011, p. 3-43 — republication du Paper #8, Occasional Paper Series, Public Affairs Center, Dartmouth College, décembre 1976.",
+    "locator": "p. 34, section « Corrupting Effect of Quantitative Indicators »",
+    "language": "fr",
+    "original_text": "The more any quantitative social indicator is used for social decision-making, the more subject it will be to corruption pressures […]",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (chaîne Curiosity) ; aucune traduction française publiée de ce texte n'a été identifiée.",
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "Donald T. Campbell, « Assessing the Impact of Planned Social Change », Journal of MultiDisciplinary Evaluation, vol. 7, n° 15, février 2011, p. 3-43. Republication du Paper #8, Dartmouth College, décembre 1976.",
+      "kind": "primary",
+      "locator": "p. 34",
+      "doi_isbn": "10.56645/jmde.v7i15.297",
+      "url": "https://jmde.com/index.php/jmde_1/article/view/297",
+      "consulted": "full-text"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle",
+    "date": "2026-08-17",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 0,
+    "notes": [
+      "PDF ouvert et lu intégralement : https://jmde.com/index.php/jmde_1/article/download/297/292/988 (765 Ko, 41 pages, correspondant aux p. 3-43 de la revue), extrait avec pdftotext -layout. Page 32 du PDF porte le folio de revue « Journal of MultiDisciplinary Evaluation, Volume 7, Number 15 — 34 / ISSN 1556-8180 / February 2011 ».",
+      "CITATION — vérifiée sur le PDF, à l'endroit annoncé. Le titre de section « Corrupting Effect of Quantitative Indicators » ouvre bien la p. 34, et la phrase s'y trouve : « […] I come to the following pessimistic laws (at least for the U.S. scene): The more any quantitative social indicator is used for social decision-making, the more subject it will be to corruption pressures and the more apt it will be to distort and corrupt the social processes it is intended to monitor. » L'`original_text` de la fiche est mot pour mot identique jusqu'au point de coupe, et la coupe est signalée par […]. La traduction française est déclarée comme interne non publiée ; elle rend fidèlement le segment cité (« any quantitative social indicator » → « un indicateur social quantitatif »). Je n'ai identifié aucune traduction française publiée de ce texte, ce qui est cohérent avec la déclaration de la fiche.",
+      "SOURCES — DOI 10.56645/jmde.v7i15.297 interrogé sur api.crossref.org : notice « Assessing the Impact of Planned Social Change* », auteur unique Donald T. Campbell, Journal of MultiDisciplinary Evaluation, vol. 7, n° 15, p. 3-43, éditeur The Evaluation Center at Western Michigan University. L'abstract Crossref et la page de garde du PDF portent tous deux la mention « Originally published as Paper #8, Occasional Paper Series, December, 1976 — Reprinted with permission of The Public Affairs Center, Dartmouth College », ce qui valide la formule de republication de la fiche. L'URL https://jmde.com/index.php/jmde_1/article/view/297 répond 200 et mène à cet article.",
+      "SOURCES, point de détail non bloquant : les métadonnées OJS et Crossref donnent une date de mise en ligne « Jan 14, 2011 », alors que la fiche écrit « février 2011 ». Le pied de page imprimé sur chaque page de l'article porte lui-même « February 2011 » : la datation de la fiche est donc celle du fascicule et est soutenue par la source ouverte. Aucun écart à corriger.",
+      "ATTRIBUTION — la paternité du concept revient bien à Campbell : dans le texte lu, il énonce la formule à la première personne (« I come to the following pessimistic laws ») et ne la reprend d'aucun auteur ; les travaux qu'il convoque (Skolnick 1966, Blau, Berliner 1957, Stake 1971) ne fournissent que des illustrations, pas l'énoncé. J'ai cherché « Ridgway » dans le texte intégral : absent — le paper ne s'appuie donc pas sur le précurseur habituellement invoqué. La note d'attribution de la fiche est exacte sur le point sensible : « Campbell's law » / « loi de Campbell » n'apparaît nulle part dans le texte (grep sur le texte intégral : aucune occurrence), Campbell écrit au pluriel (« laws »), sans les baptiser, et restreint lui-même la portée (« at least for the U.S. scene »). Le baptême est postérieur et son premier emploi n'est effectivement pas établi par les sources que j'ai pu consulter.",
+      "PROSE — `hook` et `summary` ne débordent pas. Le résumé restitue les deux membres de la phrase source, y compris le second (« and the more apt it will be to distort and corrupt the social processes it is intended to monitor » → « et plus il fausse le processus social qu'il devait justement surveiller »), sans ajouter d'adjectif de généralité (ni « toujours », ni « universel »). La réserve géographique de Campbell est portée par la note d'attribution de la carte, pas contredite par le résumé.",
+      "Non atteint : le serveur MCP `documentary` n'était pas exposé dans cette session ; la résolution de référence a été refaite à la main sur api.crossref.org. OpenAlex et Semantic Scholar n'ont pas été interrogés (429 / budget épuisé annoncé) — leur silence n'est donc pas un constat. Je n'ai pas pu ouvrir la version originale de 1976 (Occasional Paper #8, Dartmouth) ni la version de 1975 dans le volume Lyons : seule la republication JMDE 2011, qui est celle que la fiche cite et paginate, a été consultée en texte intégral.",
+      "Hors des quatre points, pour information seulement : le même texte a été reproduit dans Evaluation and Program Planning, 1979, 2(1), p. 67-90 (DOI 10.1016/0149-7189(79)90048-x, vérifié sur Crossref). Ce n'est pas un défaut de la carte, qui cite une édition en accès libre et vérifiable."
+    ]
+  },
+  "notes": [
+    "La phrase complète porte deux versants et fait 234 caractères en français : « The more any quantitative social indicator is used for social decision-making, the more subject it will be to corruption pressures and the more apt it will be to distort and corrupt the social processes it is intended to monitor. » La citation n'en garde que le premier — la corruption de l'indicateur — et abandonne le second, la distorsion des processus surveillés, que le résumé porte. Perte assumée, non maquillée.",
+    "La citation conserve la structure comparative et le futur : c'est la forme d'une tendance, pas d'une loi absolue. La restriction que Campbell ajoute lui-même, « at least for the U.S. scene », ne tenait pas dans les 150 caractères ; elle est écrite dans la note d'attribution.",
+    "Seule la republication de février 2011 a été ouverte, avec sa pagination réelle (p. 3-43). L'article de 1979 dans Evaluation and Program Planning (2(1), 67-90, DOI 10.1016/0149-7189(79)90048-x) est payant et N'A PAS été lu : il n'est pas affiché en source, et rien n'assure que la phrase y soit identique mot pour mot.",
+    "La démonstration est annoncée par Campbell lui-même comme « predominantly anecdotal » : statistiques de vote à Chicago, clearance rates des polices américaines, tests de réussite scolaire, décompte des corps au Vietnam — dont il fait l'explication du massacre de My Lai.",
+    "La phrase citée a été relue sur une image de la page rendue à 200 dpi : la couche texte du PDF duplique des lettres dans les titres et les en-têtes."
+  ]
+}

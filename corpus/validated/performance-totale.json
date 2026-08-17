@@ -1,0 +1,80 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "performance-totale",
+  "slug": "performance-totale",
+  "status": "VALIDATED",
+  "title": "Performance totale",
+  "themes": [
+    "audit-evaluation-reddition-de-comptes"
+  ],
+  "domain": null,
+  "theme_labels": {
+    "audit-evaluation-reddition-de-comptes": "Audit, évaluation, reddition de comptes"
+  },
+  "authors": [
+    {
+      "name": "Florence Jany-Catrice",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Article signé de Florence Jany-Catrice seule. L'expression n'est pas née dans cet article : l'auteure indique elle-même qu'une partie de sa thèse fait l'objet, la même année, d'un ouvrage intitulé La performance totale : nouvel esprit du capitalisme ? (Presses universitaires du Septentrion, 2012), auquel l'article renvoie. Elle forge l'expression par analogie déclarée avec la « qualité totale » telle que l'analyse Christophe Dejours (2003) — non un concept dont il serait l'auteur, mais la doctrine gestionnaire du management par la qualité totale, qu'il critique.",
+  "hook": "Que devient l'évaluation d'une politique quand tout se ramène à un chiffre ?",
+  "summary": "L'évaluation plurielle des politiques glisse vers la mesure des performances : un régime où chacun se plie à un chiffre décontextualisé auquel nul ne croit tout à fait.",
+  "quotation": {
+    "text": "[…] la mesure des performances des services publics n'est pas, ou n'est plus guidée par le souci de la pluralité des points de vue.",
+    "reference": "Florence Jany-Catrice, « De l'évaluation des politiques publiques à la “performance totale” », Économie et institutions, 18-19 | 2012, mis en ligne le 1er février 2013.",
+    "locator": "§ 25, partie 2, section 2.3",
+    "language": "fr",
+    "original_text": null,
+    "original_language": null,
+    "translation": {
+      "kind": "none",
+      "translator": null,
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "Florence Jany-Catrice, « De l'évaluation des politiques publiques à la “performance totale” », Économie et institutions, 18-19 | 2012, mis en ligne le 1er février 2013. Texte intégral en accès libre sur OpenEdition Journals.",
+      "kind": "primary",
+      "locator": "§ 25",
+      "doi_isbn": "10.4000/ei.485",
+      "url": "https://journals.openedition.org/ei/485",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Florence Jany-Catrice, La performance totale : nouvel esprit du capitalisme ?, Villeneuve-d'Ascq, Presses universitaires du Septentrion, coll. « Capitalisme, éthique, institutions », 2012, 176 p.",
+      "kind": "primary",
+      "locator": null,
+      "doi_isbn": null,
+      "url": "https://hal.science/hal-04148612",
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle",
+    "date": "2026-08-17",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "ACCÈS. journals.openedition.org oppose un mur anti-bot (Anubis v1.26.2, challenge PoW) à curl : mes requêtes directes sur https://journals.openedition.org/ei/485 et .../ei/pdf/485 renvoient 200 mais une page de challenge de 5,3 ko, jamais l'article. Ce n'est pas une absence, c'est un refus d'accès. J'ai donc lu le texte par deux rendus tiers indépendants : (a) un rendu texte intégral de la même URL (63 210 caractères, plan, 39 paragraphes numérotés, bibliographie, bloc « Pour citer cet article »), (b) une seconde lecture rendue de la même page. web.archive.org et son API CDX sont inaccessibles depuis cet environnement (connexion réinitialisée) : je n'ai donc pas de capture archivée en contre-lecture.",
+      "ATTRIBUTION. Article signé de Florence Jany-Catrice seule : confirmé par Crossref (10.4000/ei.485, un seul auteur, ORCID 0000-0003-2513-0488), par HAL (hal-03948702, autorat unique) et par la signature en tête du texte. Dans le texte, l'expression est posée par l'auteure elle-même comme sa proposition : § 4, « elle n'épuise pourtant pas l'ensemble des raisons qui concourent à l'émergence de ce que l'on pourrait appeler un régime de “performance totale” », avec appel de note 3 : « Voir notre ouvrage La performance totale (op. cit.) ». La note de l'auteur porte exactement ce que la fiche en dit : « Une partie de la thèse soutenue fait également l'objet d'une publication en 2012 dans un ouvrage intitulé Performance totale : nouvel esprit du capitalisme ?, Lille : Ed. Presses universitaires du Septentrion, coll. “Capitalisme, éthiques, institutions” ». La fiche a raison de ne pas attribuer le concept à Dejours : au § 26 il est cité pour la « qualité totale » (« En mettant en évidence l'idée d'une “qualité totale”, Christophe Dejours (2003) a montré que… », citation p. 38), et l'analogie est celle de Jany-Catrice. Recherche d'antériorité : aucune occurrence de « performance totale » comme catégorie d'analyse avant 2012 dans Crossref (requête bibliographique filtrée until-pub-date:2011-12-31 : rien de pertinent, seulement « qualité totale », « performance globale », « performance sociétale »), ni dans mes recherches web. Paternité non contredite.",
+      "CITATION. Verbatim, à l'endroit annoncé. Le § 25 lu dans le texte rendu : « Contrairement aux prémices de l'évaluation des politiques publiques, cependant, la mesure des performances des services publics n'est pas, ou n'est plus guidée par le souci de la pluralité des points de vue. » La fiche coupe la tête de phrase et le signale par […] ; le fragment retenu est mot pour mot celui du texte, et la coupe ne renverse pas le sens (la subordonnée omise est concessive et va dans le même sens). Localisation vérifiée par positions dans le texte : le § 25 tombe après le titre « 2.3. Déplacement de l'État social en État prestataire de service » et avant « 3.1. Les modalités de la performance totale » — donc bien partie 2, section 2.3. Texte français d'origine, aucune traduction : la fiche déclare correctement translation.kind = none.",
+      "SOURCES 1/2 (article). Le DOI 10.4000/ei.485 résout : Crossref donne titre « De l'évaluation des politiques publiques à “performance totale” », auteur unique Jany-Catrice, container « Économie et Institutions », volume 18-19, éditeur OpenEdition. Le bloc « Pour citer cet article » de la page elle-même porte exactement la référence affichée par la fiche : « Florence Jany-Catrice, “De l'évaluation des politiques publiques à la ‘performance totale’”, Économie et institutions [En ligne], 18-19 | 2012, mis en ligne le 01 février 2013 ». Accès libre confirmé par Unpaywall (is_oa: true, best OA location = journals.openedition.org/ei/pdf/485, publishedVersion). HAL hal-03948702 donne la pagination papier 17-34. Note : Crossref date la version imprimée 2013 alors que la fiche écrit « 18-19 | 2012 » — la fiche suit la référence électronique de la revue elle-même, ce n'est pas une erreur.",
+      "SOURCES 2/2 (ouvrage). https://hal.science/hal-04148612 résout vers la notice LillOA/HAL de « La Performance Totale : Nouvel Esprit du Capitalisme ? », Presses Universitaires du Septentrion, 2012, ISBN 978-2-7574-0398-3 — notice sans fichier déposé, ce qui correspond exactement au consulted = metadata-only annoncé. Page éditeur Septentrion (GCOI=27574100985990) : parution 28 août 2012, « Nombre de pages de contenu principal : 176 », collection « Capitalismes - éthique - institutions | n° 2 ». Les 176 p. de la fiche sont donc le chiffre de l'éditeur (repris par les comptes rendus de Travail et Emploi et Développement durable) ; le Sudoc (PPN 163950369) catalogue de son côté « 1 volume (175 pages) », et HAL indique 180 — variation catalographique ordinaire, la fiche est du côté de l'éditeur. Le lieu « Villeneuve-d'Ascq » est confirmé par le Sudoc et par Septentrion. Seul écart de forme : la collection s'intitule chez l'éditeur et au Sudoc « Capitalismes - éthique - institutions » (pluriel), là où la fiche écrit « Capitalisme, éthique, institutions » — c'est la graphie de la bibliographie de l'article lui-même (« coll. “Capitalisme, éthique, institutions” »). Écart trop mince pour empêcher la référence de résoudre ; à harmoniser si l'occasion se présente.",
+      "PROSE. Le summary ne déborde pas : chacun de ses trois membres a un appui textuel direct. « L'évaluation plurielle des politiques glisse vers la mesure des performances » = titre de la partie 2, « Basculement de l'évaluation des politiques publiques vers la mesure des performances des services (publics) », et résumé de l'auteure, « dissolution d'abord de l'évaluation des politiques dans la mesure des performances des services publics » ; le « pluriel » vient du § 6 (« dispositifs complexes, ad hoc et pluralistes de l'évaluation ») et du § 25 cité. « Chacun se plie à un chiffre décontextualisé » = § 5, « l'exhibition d'un “chiffre” décontextualisé, mais auquel chacun est assigné à se conformer », et § 26, « auquel chacun (acteur individuel et collectif) répond et se plie ». « Auquel nul ne croit tout à fait » = § 26, « un dispositif auquel personne ne croit tout à fait ». La seule liberté est de rapporter au « chiffre » ce que le § 26 dit du dispositif de performance ; l'article traite l'exhibition du chiffre comme la modalité même de ce dispositif (§ 5), la fusion ne fait donc rien dire de plus. Le hook est interrogatif et ne préjuge de rien que l'article ne soutienne.",
+      "HORS DES QUATRE POINTS (sans effet sur le verdict). La source 2 ne porte pas l'ISBN 978-2-7574-0398-3 alors qu'il est disponible et rendrait la référence résoluble par identifiant."
+    ]
+  },
+  "notes": [
+    "La citation vient du corps du texte (§ 25). La phrase qui énonce la thèse (« L'article défend la thèse suivante : l'évaluation des politiques publiques s'aménage de plus en plus… ») a été écartée, pas raccourcie : elle figure dans le RÉSUMÉ de l'article, qui peut être de la rédaction autant que de l'auteure, et elle fait 215 caractères — la seule coupe honnête en laisse 190.",
+    "Aucun passage de moins de 150 caractères ne NOMME « performance totale » sans mutilation : le plus court énoncé autonome qui contienne l'expression (§ 5) en fait 164. La citation retenue dit donc ce que le chiffrage coûte à l'action publique, non le nom du régime.",
+    "La citation commence en cours de phrase ; ce qui est coupé en tête est « Contrairement aux prémices de l'évaluation des politiques publiques, cependant, ». La coupe retire le terme de comparaison, ni l'affirmation ni sa portée.",
+    "L'ouvrage de 2012, plus large que l'article, n'a pas pu être ouvert : la notice HAL existe mais ne porte aucun fichier, et Septentrion ne l'a pas déposé sur OpenEdition Books. La fiche repose entièrement sur l'article ; les deux comptes rendus repérés n'ont pas été consultés et ne tiendraient pas lieu du texte.",
+    "Deux millésimes légitimes coexistent pour le même article et aucun n'est une erreur : le numéro de la revue est « 18-19 | 2012 », la mise en ligne date du 1er février 2013, et Crossref enregistre 2013."
+  ]
+}

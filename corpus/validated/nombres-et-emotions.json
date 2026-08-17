@@ -1,0 +1,82 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "nombres-et-emotions",
+  "slug": "nombres-et-emotions",
+  "status": "VALIDATED",
+  "title": "Nombres et émotions",
+  "themes": [
+    "quantification-operation-sociale"
+  ],
+  "domain": null,
+  "theme_labels": {
+    "quantification-operation-sociale": "La quantification comme opération"
+  },
+  "authors": [
+    {
+      "name": "Emmanuel Didier",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Auteur unique, qui forge dans cet article le terme « datademic » et le donne pour une proposition, non pour un acquis. À ne pas étendre à ses travaux voisins cités dans le même texte : Benchmarking. L'État sous pression statistique (2013) est coécrit avec Isabelle Bruno, et Statactivisme (2014) codirigé avec Isabelle Bruno et Julien Prévieux.",
+  "hook": "Pourquoi un chiffre qui circule en public déclenche-t-il une émotion intime ?",
+  "summary": "Gouverner par les nombres est aussi gouverner par les sentiments : les chiffres de la pandémie ont suscité peur et espoir, puis permis de contrôler ce qu'ils soulevaient.",
+  "quotation": {
+    "text": "Dans cet article, j'entreprends de démontrer que le gouvernement par les nombres est aussi, et inséparablement, un gouvernement par les sentiments.",
+    "reference": "Emmanuel Didier, « Numbers and emotions in the governance of the Covid-19 datademic », Social Studies of Science, vol. 55, n° 2, 2025, p. 238-259. Passage relevé sur la version auteur déposée sur HAL (halshs-04859285).",
+    "locator": "Conclusion, premier paragraphe (p. 16 de la version auteur)",
+    "language": "fr",
+    "original_text": "In this article I set out to demonstrate that government by numbers is also, and inseparably, a government by feelings.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (chaîne Curiosity) : « government by numbers » est rendu par « gouvernement par les nombres », « feelings » par « sentiments ».",
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "Emmanuel Didier, « Numbers and emotions in the governance of the Covid-19 datademic », version auteur pénultième déposée sur HAL le 30 décembre 2024 (halshs-04859285), 23 p.",
+      "kind": "primary",
+      "locator": "p. 16 (version auteur)",
+      "doi_isbn": "10.1177/03063127241262457",
+      "url": "https://shs.hal.science/halshs-04859285/file/Didier--penultimateED.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Emmanuel Didier, « Numbers and emotions in the governance of the Covid-19 datademic », Social Studies of Science, vol. 55, n° 2, avril 2025, p. 238-259 (mis en ligne le 29 juillet 2024).",
+      "kind": "primary",
+      "locator": "p. 238-259",
+      "doi_isbn": "10.1177/03063127241262457",
+      "url": "https://doi.org/10.1177/03063127241262457",
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle",
+    "date": "2026-08-17",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 0,
+    "notes": [
+      "ATTRIBUTION — J'ai ouvert le PDF déposé sur HAL (https://shs.hal.science/halshs-04859285/file/Didier--penultimateED.pdf, 23 p., version 1.4, extrait avec pdftotext -layout). Le terme « datademic » y apparaît une seule fois dans le corps du texte, p. 1 de la version auteur : « An inconspicuous, albeit critical, feature of the Covid-19 pandemic is the outbreak's unprecedented coupling with an epidemic of numbers, or what could be called a 'datademic'. » L'appel de note 1 attaché à cette phrase ne renvoie à aucune paternité tierce (il porte sur la grippe de Hong Kong, Deleule 2020). La formule « what could be called » et l'absence de référence confirment le point de la fiche : Didier propose le terme, il ne l'emprunte pas. Recherche d'antériorité : Crossref (api.crossref.org, query.bibliographic=datademic) et HAL (api.archives-ouvertes.fr, q=datademic) ne rendent chacun qu'un seul enregistrement, cet article même. Aucune occurrence savante antérieure trouvée. Je n'ai pas pu interroger OpenAlex ni Semantic Scholar (429 / budget), leur silence n'est donc pas un constat d'absence.",
+      "ATTRIBUTION (mise en garde de la fiche sur les travaux voisins) — vérifiée contre la bibliographie de l'article lui-même (p. 18 de la version auteur) : « Bruno, I., & Didier, E. (2013). Benchmarking : L'État sous pression statistique. Découverte. » et « Bruno, I., Didier, E., & Prévieux, J. (Éds.). (2014). Statactivisme : Comment lutter avec des nombres. Zones. » La coécriture et la codirection annoncées dans l'attribution_note sont exactes.",
+      "CITATION — Passage retrouvé mot pour mot dans le PDF que j'ai ouvert, au premier paragraphe de la section « Conclusion » : « There is a rich body of literature on the effectiveness of numbers as tools of governance. But the corpus in question is incomplete because the focus of nearly all of its works is on the rational properties of quantification. In this article I set out to demonstrate that government by numbers is also, and inseparably, a government by feelings. » L'original_text de la fiche coïncide caractère pour caractère avec la troisième phrase. Emplacement : page 17 du fichier PDF, qui porte la pagination imprimée « 16 » (le PDF comporte une page de garde HAL en tête) — le locator « Conclusion, premier paragraphe (p. 16 de la version auteur) » est donc juste selon la pagination propre du document. Attention à ne pas confondre avec la phrase voisine de l'abstract (p. 1 : « This article shows that government by numbers is also, and inseparably, a government by feelings. »), qui est une autre formulation ; c'est bien la version de la conclusion qui a été retenue.",
+      "CITATION (traduction) — La fiche déclare une traduction interne non publiée, donne l'original_text, l'original_language (en) et la correspondance des termes. Le rendu « j'entreprends de démontrer » / « gouvernement par les nombres » / « inséparablement » / « sentiments » est fidèle à l'anglais ; aucune coupe, donc aucun […] attendu. Rien à redire.",
+      "SOURCES (1/2, HAL) — Notice interrogée via api.archives-ouvertes.fr (halId_s:halshs-04859285) : titre « Numbers and emotions in the governance of the Covid-19 datademic », auteur unique Emmanuel Didier, journalTitle « Social Studies of Science », doiId 10.1177/03063127241262457, submittedDate 2024-12-30, fichier « Didier--penultimateED.pdf » — l'URL affichée par la fiche est exactement celle du dépôt. Le PDF fait bien 23 pages et porte « Submitted on 30 Dec 2024 ». La qualification « version auteur pénultième » est corroborée par le nom du fichier déposé (penultimate).",
+      "SOURCES (2/2, version publiée) — Crossref (api.crossref.org/works/10.1177/03063127241262457) : Social Studies of Science, volume 55, issue 2, page 238-259, published-print 2025-04, published-online 2024-07-29, auteur unique Emmanuel Didier (ORCID 0000-0002-0858-4771), éditeur SAGE. Tous les éléments du label (vol., n°, année, pagination, date de mise en ligne, auteur) résolvent. Le DOI redirige bien vers journals.sagepub.com/doi/10.1177/03063127241262457 ; le serveur SAGE m'a renvoyé un 403 anti-robot, je n'ai donc PAS pu lire la version imprimée — c'est un accès refusé, pas un silence, et la fiche est cohérente puisqu'elle déclare cette source « metadata-only » et rattache le locator de citation à la version auteur.",
+      "PROSE (hook) — « Pourquoi un chiffre qui circule en public déclenche-t-il une émotion intime ? » est le décalque de la question de recherche posée par l'auteur p. 3 de la version auteur : « But why does data circulating in the public sphere trigger personal emotional responses? What are the underlying mechanisms at work? […] To understand this passage from the public to the intimate, we will chart the course of three sets of data in the public arena that entered the realm of personal feelings during the Covid-19 pandemic. » L'adjectif « intime », qui aurait pu être un débordement, est littéralement dans le texte (« passage from the public to the intimate »).",
+      "PROSE (summary) — Les trois assertions sont portées. « peur et espoir » : abstract et corps du texte (« Death tolls were associated with fear, immunization rates were linked to hope »), avec les développements p. 5-13 de la version auteur. « puis permis de contrôler ce qu'ils soulevaient » : conclusion, même paragraphe que la citation — « Numbers generate an emotional response and then make it possible to control this response » ; corroboré p. 7 (« the figures simultaneously triggered and alleviated fears »). Le summary n'ajoute ni causalité ni portée que les sources ne soutiennent pas ; il laisse de côté le troisième cas (le seuil des 100 000 morts et sa valeur symbolique), ce qui est une réduction admissible, pas une affirmation en trop.",
+      "Hors des quatre points, sans effet sur le verdict : le corps du texte de la version auteur comporte une coquille de l'auteur (« governmence » p. 1) et l'abstract publié dit « This article shows », là où la conclusion dit « I set out to demonstrate » — la fiche cite bien la seconde, ce qui est le choix le plus prudent."
+    ]
+  },
+  "notes": [
+    "Le locator de la carte est un pointeur, la preuve est ici : le texte lu est la version auteur pénultième déposée sur HAL, composée en LaTeX et paginée 1 à 16 pour le corps de l'article. « p. 16 » N'EST PAS une page de Social Studies of Science : la mise en page de l'éditeur n'a pas été ouverte, et la page de la revue correspondant à ce passage est inconnue. La pagination p. 238-259 vient de la notice Crossref. Un contrôle qui ouvrirait la version éditeur devra recaler le locator et vérifier que la phrase-thèse n'a pas été retouchée sur épreuves.",
+    "Deux millésimes exacts désignent deux objets différents : mise en ligne le 29 juillet 2024, numéro imprimé d'avril 2025. Aucun n'a été relevé sur une page de titre.",
+    "Le mécanisme est à double détente et la conclusion le noue ainsi : « Numbers generate an emotional response and then make it possible to control this response. » Trois cas, trois régimes affectifs : les bilans de morts et la peur, les cibles de vaccination et l'espoir, le seuil des 100 000 morts et le symbole.",
+    "Didier suspend le jugement normatif — « I do not give positive or negative accounts of the policies deployed by governments during the crisis » — et reconnaît que son troisième corpus (43 messages) n'est ni représentatif ni statistiquement exploitable.",
+    "Le mot « statactivisme » n'apparaît pas une seule fois dans le corps de l'article : il n'y figure que par trois auto-citations en bibliographie. Écrire que ce texte est statactiviste le forcerait."
+  ]
+}
