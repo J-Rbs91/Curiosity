@@ -1,0 +1,706 @@
+{
+  "meta": {
+    "version": 1,
+    "date": "2026-08-16",
+    "source": "corpus/map/cartography.json v1",
+    "principe_de_rangement": "Trois critères, dans cet ordre. (1) Structurant au sens de la carte : le champ lui consacre un chapitre de handbook ou une revue de littérature. (2) Atteignable : une source primaire ouvrable existe, et son état est dit ici pour que le scout ne le redécouvre pas. (3) Alternance : ni trois entrées consécutives sur le même thème, ni trois sur le même auteur, ni trois sur le même courant. La règle §10 du workflow interdit d'enchaîner trois lots sur le même thème ; la file doit rendre cette règle applicable sans réflexion supplémentaire.",
+    "ce_que_la_file_n_est_pas": "Un ordre de valeur. Un concept en position 20 n'est pas moins important qu'un en position 3 : il est plus coûteux à instruire, ou il arrive après un concept dont il dépend, ou son tour dans l'alternance thématique n'est pas venu.",
+    "deja_instruits_hors_file": [
+      "rationalite-limitee",
+      "garbage-can-model",
+      "deplacement-des-buts",
+      "zones-incertitude"
+    ],
+    "observation_sur_les_deja_instruits": "Les quatre viennent de trois des huit points d'entrée et de deux courants seulement (Carnegie et analyse stratégique, plus Columbia). Aucun ne relève de l'environnement des organisations, de l'institution, du genre ni de la critique. La tête de file corrige cela délibérément : sur les huit premières entrées, une seule mobilise un auteur de la liste initiale.",
+    "avertissement_transmis_au_scout": "Les statuts d'atteignabilité ci-dessous viennent de la résolution de DOI via Crossref pendant le passage de cartographie. Ils attestent qu'une notice existe et qu'elle est correcte, jamais que le texte intégral est ouvrable. Cairn a répondu 403 pendant tout le passage et OpenAlex et Semantic Scholar 429 : un accès signalé comme incertain peut très bien être ouvert."
+  },
+
+  "file": [
+    {
+      "rang": 1,
+      "id": "isomorphisme-institutionnel",
+      "concept": "Isomorphisme institutionnel (coercitif, mimétique, normatif)",
+      "theme_pressenti": "environnement et institutions",
+      "auteur_pressenti": "Paul J. DiMaggio et Walter W. Powell",
+      "courant": "neo-institutionnalisme",
+      "raison_du_rang": "Le néo-institutionnalisme est le courant dont la centralité est la mieux attestée par la structure de la littérature : il a son propre handbook, réédité, avec des chapitres de bilan sur quarante ans. Aucun des huit points d'entrée n'y appartient et aucune fiche du corpus n'en relève. C'est donc à la fois ce que le champ tient pour le plus structurant et ce que le corpus ignore le plus complètement. Article court, en revue, immédiatement atteignable.",
+      "sources_pressenties": {
+        "primaire": "DiMaggio & Powell, « The Iron Cage Revisited: Institutional Isomorphism and Collective Rationality in Organizational Fields », American Sociological Review, 48(2), 1983 — doi 10.2307/2095101, résolu et vérifié",
+        "secondaires": [
+          "Boxenbaum & Jonsson, « Isomorphism, Diffusion and Decoupling », The SAGE Handbook of Organizational Institutionalism, pp. 77-98",
+          "Lynne Zucker, « Institutional Theories of Organization », Annual Review of Sociology, 1987 — doi 10.1146/annurev.so.13.080187.002303"
+        ],
+        "francophone": "À chercher. Piste : Marie-Laure Djelic (chapitre transnationalisation de S5), et la réception du néo-institutionnalisme dans la sociologie française des organisations. HAL avec deux ou trois mots maximum."
+      },
+      "atteignabilite": "BONNE. DOI résolu, article de 1983 dans ASR, pagination stable. Attention : l'ASR de 1983 est sur JSTOR, l'accès au texte intégral n'est pas garanti sans institution. Si le PDF n'est pas ouvrable, ne pas se rabattre sur les résumés secondaires — le concept exige la lecture des trois mécanismes dans le texte.",
+      "risques_a_signaler": [
+        "Concept coécrit : DiMaggio ET Powell, jamais l'un seul. authorship = COAUTHORED.",
+        "Les trois isomorphismes ont des causes distinctes ; la vulgarisation les réduit à « les organisations s'imitent », ce qui efface le mécanisme coercitif et le mécanisme normatif.",
+        "Le titre annonce une reprise de Weber. Ne pas en faire une documented_filiation sans avoir lu ce que l'article dit de Weber.",
+        "Ne pas confondre avec le découplage de Meyer & Rowan, qui est en position 9 de cette file."
+      ]
+    },
+    {
+      "rang": 2,
+      "id": "regulation-controle-autonome",
+      "concept": "Régulation de contrôle et régulation autonome",
+      "theme_pressenti": "règles et normes",
+      "auteur_pressenti": "Jean-Daniel Reynaud",
+      "courant": "regulation-sociale",
+      "raison_du_rang": "Conjonction rare : un concept que la littérature francophone tient pour structurant — section dédiée dans le manuel de référence sur les approches sociologiques des organisations — et dont le texte fondateur est en accès entièrement libre. C'est aussi le meilleur test précoce de ce que vaut la couche francophone du dispositif, et il évite que le premier lot soit intégralement anglophone. Auteur absent de la liste initiale.",
+      "sources_pressenties": {
+        "primaire": "Jean-Daniel Reynaud, « Les régulations dans les organisations : régulation de contrôle et régulation autonome », Revue française de sociologie, 29-1, 1988, pp. 5-18 — https://www.persee.fr/doc/rfsoc_0035-2969_1988_num_29_1_2475 — page confirmée accessible pendant le passage de cartographie",
+        "primaire_complementaire": "Jean-Daniel Reynaud, Les règles du jeu. L'action collective et la régulation sociale, Armand Colin, 1989 — ouvrage sans DOI, à localiser",
+        "secondaires": [
+          "Gilbert de Terssac, « La théorie de la régulation sociale : repères introductifs », Revue Interventions économiques, 2012 — HAL hal-00846473, texte en accès ouvert",
+          "Denis Segrestin, « Jean-Daniel Reynaud (1926-2019) : un itinéraire scientifique », Sociologie du travail, 2019 — doi 10.4000/sdt.18092",
+          "Compte rendu de Amblard, Bernoux, Herreros & Livian dans la Revue française de sociologie, 1997 — Persée, lu pendant la cartographie"
+        ]
+      },
+      "atteignabilite": "EXCELLENTE, et c'est exceptionnel sur ce périmètre. Texte intégral libre sur Persée, source secondaire libre sur HAL. Aucun paywall sur la chaîne primaire + secondaire. Le DOI 10.2307/3321681 que l'on trouve parfois associé à cette référence pointe sur un tout autre article de la RFS : ne pas l'utiliser.",
+      "risques_a_signaler": [
+        "« Régulation autonome » ne veut pas dire « autonomie accordée par la hiérarchie » : elle est produite par le groupe d'exécution lui-même, contre ou à côté de la règle officielle.",
+        "La régulation conjointe est un troisième terme issu de la rencontre des deux, pas leur moyenne ni leur somme.",
+        "Ne pas fabriquer de filiation avec l'organisation informelle des relations humaines, ni avec les zones d'incertitude de Crozier : la carte signale explicitement ces deux ressemblances comme non documentées.",
+        "Article en français : pas de translation_notes à produire, mais la circulation anglophone du concept est quasi nulle — la réception à documenter est francophone."
+      ]
+    },
+    {
+      "rang": 3,
+      "id": "couplage-lache",
+      "concept": "Couplage lâche",
+      "theme_pressenti": "structure et coordination",
+      "auteur_pressenti": "Karl E. Weick",
+      "courant": "sensemaking-et-organizing",
+      "raison_du_rang": "Weick a un chapitre dans trois des quatre grands handbooks consultés ; le couplage lâche est un de ses deux apports les plus repris et il explique un phénomène que tout lecteur reconnaît — des services d'une même organisation qui réagissent peu aux décisions les uns des autres, sans que cela soit un dysfonctionnement. Article court en revue, atteignable. Troisième courant, troisième thème, troisième auteur : l'alternance est respectée dès le premier lot.",
+      "sources_pressenties": {
+        "primaire": "Karl E. Weick, « Educational Organizations as Loosely Coupled Systems », Administrative Science Quarterly, 21(1), 1976 — doi 10.2307/2391875, résolu et vérifié",
+        "secondaires": [
+          "Vogus & Colville, « Sensemaking, Simplexity, and Mindfulness », The SAGE Handbook of Process Organization Studies, 2016",
+          "Karl E. Weick, « Theory and Practice in the Real World », The Oxford Handbook of Organization Theory, 2003, pp. 453-475"
+        ],
+        "francophone": "À chercher — piste : la réception du couplage lâche dans la sociologie française de l'école et de l'université (Musselin, Derouet). HAL, requête courte."
+      },
+      "atteignabilite": "BONNE. DOI résolu. Article ASQ 1976, JSTOR : même réserve d'accès que pour le rang 1.",
+      "risques_a_signaler": [
+        "Piège principal : « couplage lâche » n'est pas un défaut de coordination. L'article soutient que c'est une propriété qui a des fonctions — absorption des chocs, adaptation locale, persistance. Une fiche qui en fait un dysfonctionnement inverse la thèse.",
+        "Ne pas confondre avec le découplage de Meyer & Rowan (rang 9) : auteurs différents, année voisine, mécanisme différent. Les deux fiches devront se signaler mutuellement comme oppositeConcepts ou pedagogical_contrast, pas comme filiation.",
+        "Ne pas confondre avec le sensemaking, qui est un apport distinct du même auteur (rang 16)."
+      ]
+    },
+    {
+      "rang": 4,
+      "id": "organisation-genree",
+      "concept": "Organisation genrée",
+      "theme_pressenti": "inégalités et division du travail",
+      "auteur_pressenti": "Joan Acker",
+      "courant": "genre-et-organisations",
+      "raison_du_rang": "Le genre est érigé en chapitre par S2, S3 et S4 — trois handbooks sur quatre — et il est absent à 100 % de la liste initiale, qui ne comporte aucune autrice. Placer ce concept dans le premier lot plutôt qu'en position 20 est une décision de cartographie : un angle mort qu'on repousse en fin de file est un angle mort qu'on entérine. Article de revue court et bien identifié.",
+      "sources_pressenties": {
+        "primaire": "Joan Acker, « Hierarchies, Jobs, Bodies: A Theory of Gendered Organizations », Gender & Society, 4(2), 1990 — doi 10.1177/089124390004002002, résolu et vérifié",
+        "secondaires": [
+          "Silvia Gherardi, « Feminist Theory and Organization Theory: A Dialogue on New Bases », The Oxford Handbook of Organization Theory, pp. 210-236",
+          "Calás & Smircich, « From the Woman's Point of View Ten Years Later », The SAGE Handbook of Organization Studies",
+          "Barbara Reskin, « Getting it Right: Sex and Race Inequality in Work Organizations », Annual Review of Sociology, 2000 — doi 10.1146/annurev.soc.26.1.707"
+        ],
+        "francophone": "À chercher activement — pistes : Danièle Kergoat sur la division sexuée du travail, Jacqueline Laufer, Margaret Maruani, Sophie Pochic. Requêtes HAL courtes, deux mots."
+      },
+      "atteignabilite": "BONNE. DOI résolu, article SAGE de 1990. Accès au texte intégral non garanti hors institution ; l'article est cependant très largement repris en PDF sur des dépôts universitaires.",
+      "risques_a_signaler": [
+        "Piège principal : « organisation genrée » n'est pas « il y a de la discrimination dans les organisations ». La thèse porte sur la structure — la définition du poste suppose un travailleur sans corps, sans grossesse et sans charge domestique — et non sur les comportements individuels. Une fiche qui glisse vers la discrimination interpersonnelle rate le mécanisme organisationnel et sortirait du périmètre.",
+        "Ne pas fusionner avec le tokenism de Kanter (rang 18) : Kanter explique par la proportion numérique, Acker par la définition même du travail. Ce sont deux mécanismes distincts, souvent confondus.",
+        "Autrice unique : pas de difficulté d'authorship, contrairement à la plupart des entrées de tête."
+      ]
+    },
+    {
+      "rang": 5,
+      "id": "inertie-structurelle-et-selection",
+      "concept": "Inertie structurelle et sélection des populations d'organisations",
+      "theme_pressenti": "environnement, changement et survie",
+      "auteur_pressenti": "Michael Hannan et John Freeman",
+      "courant": "ecologie-des-populations",
+      "raison_du_rang": "Deux revues de littérature de l'Annual Review of Sociology (1984, 1990) et un chapitre de handbook ; surtout, le débat sélection contre adaptation est traité comme un clivage constitutif du champ — l'Oxford Handbook of Organization Theory lui consacre son chapitre prospectif. Instruire ce concept donne au corpus l'accès à une explication du changement organisationnel qui contredit frontalement tout ce que les quatre fiches existantes laissent entendre.",
+      "sources_pressenties": {
+        "primaire": "Michael T. Hannan & John Freeman, « The Population Ecology of Organizations », American Journal of Sociology, 82(5), 1977 — doi 10.1086/226424, résolu et vérifié",
+        "secondaires": [
+          "Glenn Carroll, « Organizational Ecology », Annual Review of Sociology, 1984 — doi 10.1146/annurev.so.10.080184.000443",
+          "Singh & Lumsden, « Theory and Research in Organizational Ecology », Annual Review of Sociology, 1990 — doi 10.1146/annurev.so.16.080190.001113",
+          "Lewin & Volberda, « The Future of Organization Studies: Beyond the Selection–Adaptation Debate », Oxford Handbook of Organization Theory, pp. 568-595"
+        ]
+      },
+      "atteignabilite": "BONNE pour l'article primaire (AJS 1977, DOI résolu). Les deux revues ARS sont sous abonnement Annual Reviews : leur accès est incertain, mais l'article primaire suffit à la source de niveau A et une des deux ARS suffira au niveau B si elle s'ouvre.",
+      "risques_a_signaler": [
+        "Concept coécrit.",
+        "Piège : « inertie structurelle » n'est pas un synonyme de rigidité managériale. L'argument est que les pressions de fiabilité et de reddition de comptes sélectionnent les organisations inertes — l'inertie est un produit de la sélection, pas une faute.",
+        "L'unité d'analyse est la population, pas l'organisation. Une fiche qui applique la thèse à une entreprise singulière commet exactement l'erreur que le courant reproche à ses rivaux.",
+        "Le titre de 1977 est celui de l'article ; « organizational ecology » et « population ecology » ne se recouvrent pas exactement selon les périodes."
+      ]
+    },
+    {
+      "rang": 6,
+      "id": "exit-voice-loyalty",
+      "concept": "Défection, prise de parole et loyauté",
+      "theme_pressenti": "réaction au déclin, sortie et contestation",
+      "auteur_pressenti": "Albert O. Hirschman",
+      "courant": "organisations-publiques-et-action-publique",
+      "raison_du_rang": "Premier des huit points d'entrée à apparaître dans la file, en sixième position, et c'est délibéré. Le concept est retenu par le périmètre, il est immédiatement enseignable et il couvre un thème — que fait un membre quand l'organisation se dégrade — qu'aucune autre entrée de tête ne touche. Réserve honnête : sa consécration par un chapitre de handbook n'a pas été établie pendant la cartographie, contrairement aux cinq entrées précédentes. Son rang tient à sa valeur pédagogique et à sa place dans le périmètre, pas à une attestation aussi forte.",
+      "sources_pressenties": {
+        "primaire": "Albert O. Hirschman, Exit, Voice, and Loyalty: Responses to Decline in Firms, Organizations, and States, Harvard University Press, 1970 — OUVRAGE, pas d'article fondateur équivalent",
+        "secondaires": "À établir par le scout. La littérature de reprise est abondante en science politique, en sociologie du travail et en gestion ; il faudra choisir une source qui porte sur l'usage organisationnel du triptyque, pas sur son usage électoral.",
+        "francophone": "Traduction française : Défection et prise de parole, Fayard, 1995, traduction à identifier précisément — le titre français ne rend pas « loyalty », ce qui est en soi une translation_note à documenter."
+      },
+      "atteignabilite": "MOYENNE. Ouvrage sans DOI. Aucune vérification par ISBN n'a pu être faite pendant la cartographie : verify_reference n'a rien rendu sur le seul ISBN testé du passage. Le scout devra localiser une édition précise, et la citation éventuelle devra porter chapitre et page. Si aucune édition n'est ouvrable, le concept sort en NO_PRIMARY_SOURCE plutôt que d'être écrit sur la base de résumés — c'est un concept extrêmement vulgarisé, donc exactement celui où la vulgarisation risque de remplacer le texte.",
+      "risques_a_signaler": [
+        "Le titre français perd « loyalty » : toute citation traduite exige le traducteur et l'édition nommés.",
+        "Les trois termes ne sont pas symétriques : la loyauté n'est pas une troisième réponse mais ce qui module l'arbitrage entre les deux autres. La présentation courante en trois options équivalentes est fausse.",
+        "Hirschman est économiste : la fiche doit montrer le mécanisme organisationnel, pas le mécanisme de marché."
+      ]
+    },
+    {
+      "rang": 7,
+      "id": "dependance-aux-ressources",
+      "concept": "Dépendance aux ressources",
+      "theme_pressenti": "pouvoir et environnement",
+      "auteur_pressenti": "Jeffrey Pfeffer et Gerald Salancik",
+      "courant": "dependance-aux-ressources",
+      "raison_du_rang": "Un des trois grands modèles de la relation organisation/environnement, avec l'écologie (rang 5) et le néo-institutionnalisme (rang 1) ; l'instruire après les deux autres permet d'établir les oppositions au moment où elles se posent. Il donne en outre au corpus une théorie du pouvoir qui ne passe pas par Crozier, ce qui est nécessaire pour que le graphe ne se referme pas sur l'analyse stratégique.",
+      "sources_pressenties": {
+        "primaire": "Jeffrey Pfeffer & Gerald R. Salancik, The External Control of Organizations: A Resource Dependence Perspective, Harper & Row, 1978 — OUVRAGE",
+        "primaire_alternatif": "Howard Aldrich & Jeffrey Pfeffer, « Environments of Organizations », Annual Review of Sociology, 1976 — doi 10.1146/annurev.so.02.080176.000455, résolu et vérifié. Attention : c'est une revue de littérature, donc une source de niveau C signée par un des auteurs — utilisable pour contextualiser, pas pour établir ce que le modèle affirme.",
+        "antecedent": "Richard M. Emerson, « Power-Dependence Relations », American Sociological Review, 1962 — doi 10.2307/2089716, résolu et vérifié"
+      },
+      "atteignabilite": "MOYENNE. Le texte de référence est un ouvrage sans DOI ; l'article de 1976 est atteignable mais n'est pas le texte fondateur du modèle. Le scout devra soit localiser l'ouvrage, soit renoncer. La réédition Stanford Business Classics (2003) porte une préface des auteurs qui peut faciliter la localisation.",
+      "risques_a_signaler": [
+        "Concept coécrit.",
+        "La carte signale explicitement que la ressemblance avec les zones d'incertitude de Crozier n'est PAS une filiation documentée. Toute relation entre les deux fiches doit être posée en thematic_proximity tant qu'un texte ne l'établit pas.",
+        "La filiation Emerson → Pfeffer & Salancik est marquée à_verifier_sur_texte dans la carte : à confirmer ou à ne pas poser."
+      ]
+    },
+    {
+      "rang": 8,
+      "id": "loi-airain-oligarchie",
+      "concept": "Loi d'airain de l'oligarchie",
+      "theme_pressenti": "démocratie organisationnelle et dérive du pouvoir",
+      "auteur_pressenti": "Robert Michels",
+      "courant": "bureaucratie-et-rationalisation",
+      "raison_du_rang": "Chapitre dédié dans l'Oxford Handbook of Sociology and Organization Studies. Deux raisons de le placer en tête plutôt qu'en milieu de file : c'est le plus ancien mécanisme organisationnel identifié comme tel — il ouvre la période d'avant 1940, que la carte signale comme absente — et le texte de 1911 est dans le domaine public, donc atteignable sans institution, ce qui est rarissime sur ce périmètre. Il ouvre aussi le thème de la démocratie organisationnelle, que la revue ARS de Rothschild-Whitt constitue en domaine et que rien d'autre dans cette file ne couvre.",
+      "sources_pressenties": {
+        "primaire": "Robert Michels, Zur Soziologie des Parteiwesens in der modernen Demokratie, 1911 — domaine public. Traduction française : Les partis politiques. Essai sur les tendances oligarchiques des démocraties, Flammarion, 1914, traduction S. Jankélévitch — également domaine public, à vérifier.",
+        "secondaires": [
+          "Tolbert & Hiatt, « On Organizations and Oligarchies », The Oxford Handbook of Sociology and Organization Studies, pp. 174-199 — doi 10.1093/oxfordhb/9780199535231.003.0008",
+          "Joyce Rothschild-Whitt & Raymond Russell, « Alternatives to Bureaucracy: Democratic Participation in the Economy », Annual Review of Sociology, 1986 — doi 10.1146/annurev.so.12.080186.001515"
+        ]
+      },
+      "atteignabilite": "BONNE mais par une voie inhabituelle. Pas de DOI ; en revanche domaine public, donc éditions numérisées ouvrables. Le scout devra identifier une édition précise et paginée — pas un texte flottant sans référence d'édition, ce qui est le risque avec le domaine public. La traduction française de 1914 permet une citation sans traduction de notre fait, à condition de nommer le traducteur.",
+      "risques_a_signaler": [
+        "« Loi » au sens de tendance forte, pas de nécessité mécanique. La formule « qui dit organisation dit oligarchie » est célèbre et sa localisation exacte dans le texte doit être vérifiée avant toute citation.",
+        "Michels tire son argument des partis socialistes et des syndicats : la transposition à l'entreprise est une extension, à documenter comme telle.",
+        "Le parcours politique ultérieur de Michels est parfois mobilisé pour disqualifier la thèse : la fiche rapporte le mécanisme et sa réception, elle ne tranche pas ce débat."
+      ]
+    },
+    {
+      "rang": 9,
+      "id": "mythe-et-ceremonie-decouplage",
+      "concept": "Mythes rationalisés, cérémonie et découplage",
+      "theme_pressenti": "environnement et institutions",
+      "auteur_pressenti": "John W. Meyer et Brian Rowan",
+      "courant": "neo-institutionnalisme",
+      "raison_du_rang": "Aussi structurant que l'isomorphisme et publié six ans plus tôt. Il est placé en 9 et non en 2 uniquement pour ne pas ouvrir le corpus par deux fiches du même courant : la règle d'alternance thématique prime sur la chronologie. Une fois le rang 1 instruit, celui-ci devient prioritaire.",
+      "sources_pressenties": {
+        "primaire": "John W. Meyer & Brian Rowan, « Institutionalized Organizations: Formal Structure as Myth and Ceremony », American Journal of Sociology, 83(2), 1977 — doi 10.1086/226550, résolu et vérifié",
+        "secondaires": [
+          "Boxenbaum & Jonsson, « Isomorphism, Diffusion and Decoupling », SAGE Handbook of Organizational Institutionalism",
+          "John W. Meyer, « Reflections on Institutional Theories of Organizations », même handbook, pp. 831-852 — bilan par l'auteur lui-même, à traiter comme tel"
+        ]
+      },
+      "atteignabilite": "BONNE. DOI résolu.",
+      "risques_a_signaler": [
+        "Concept coécrit — et souvent réduit à « Meyer ».",
+        "Découplage n'est pas hypocrisie : c'est une propriété structurelle qui permet à l'organisation de rester légitime tout en travaillant efficacement. En faire un mensonge des dirigeants est le contresens le plus fréquent.",
+        "Ne pas confondre avec le couplage lâche de Weick (rang 3) — la fiche du rang 3 devra déjà porter cet avertissement."
+      ]
+    },
+    {
+      "rang": 10,
+      "id": "apprentissage-double-boucle",
+      "concept": "Apprentissage en simple et double boucle",
+      "theme_pressenti": "apprentissage et changement",
+      "auteur_pressenti": "Chris Argyris et Donald A. Schön",
+      "courant": "apprentissage-et-savoirs",
+      "raison_du_rang": "Argyris signe un chapitre du handbook méta-théorique, ce qui atteste que le champ le tient pour un théoricien et pas seulement pour un intervenant ; l'apprentissage organisationnel a sa revue ARS et son chapitre de handbook. Concept très enseignable. Rang 10 et non plus haut parce qu'il repose sur un ouvrage sans DOI et qu'il est massivement récupéré par la littérature managériale, ce qui allonge le travail de réception.",
+      "sources_pressenties": {
+        "primaire": "Chris Argyris & Donald A. Schön, Organizational Learning: A Theory of Action Perspective, Addison-Wesley, 1978 — OUVRAGE",
+        "primaire_alternatif": "Chris Argyris, « Actionable Knowledge », The Oxford Handbook of Organization Theory, 2003, pp. 423-452 — chapitre signé de l'auteur, donc source primaire tardive et atteignable par DOI",
+        "secondaires": [
+          "Levitt & March, « Organizational Learning », Annual Review of Sociology, 1988 — doi 10.1146/annurev.soc.14.1.319",
+          "Pettit, Crossan & Vera, « Organizational Learning and Knowledge Processes: A Critical Review », SAGE Handbook of Process Organization Studies"
+        ]
+      },
+      "atteignabilite": "MOYENNE À BONNE. L'ouvrage de 1978 n'a pas de DOI ; le chapitre de 2003 en a un et est signé d'Argyris, ce qui offre une voie primaire de secours — à condition de dire dans la fiche que le texte cité date de 2003 et non de 1978.",
+      "risques_a_signaler": [
+        "Concept coécrit : Argyris ET Schön. La vulgarisation l'attribue à Argyris seul.",
+        "Le couple theory-in-use / espoused theory est indissociable du mécanisme et presque toujours omis dans les présentations courtes.",
+        "Zone de contact directe avec le management prescriptif : « organisation apprenante » est une reprise ultérieure (Senge) qui n'est pas le concept. Risque de OUT_OF_SCOPE sur les sources secondaires."
+      ]
+    },
+    {
+      "rang": 11,
+      "id": "differenciation-integration",
+      "concept": "Différenciation et intégration",
+      "theme_pressenti": "structure et coordination",
+      "auteur_pressenti": "Paul Lawrence et Jay Lorsch",
+      "courant": "contingence-structurelle",
+      "raison_du_rang": "La contingence est un courant classique dans tous les manuels et n'est représentée par aucune fiche. Cette entrée est la voie la plus courte pour l'ouvrir : un article d'ASQ de 1967, atteignable, plutôt qu'un ouvrage. Elle donne au corpus le mécanisme qui explique pourquoi les services d'une même organisation développent des horizons temporels et des langages différents — et pourquoi il faut alors des dispositifs d'intégration.",
+      "sources_pressenties": {
+        "primaire": "Paul R. Lawrence & Jay W. Lorsch, « Differentiation and Integration in Complex Organizations », Administrative Science Quarterly, 12(1), 1967 — doi 10.2307/2391211, résolu et vérifié",
+        "secondaires": [
+          "Lex Donaldson, « Organization Theory as a Positive Science », Oxford Handbook of Organization Theory, pp. 39-62 — défense explicite du programme contingent",
+          "McGrath, « Beyond Contingency: From Structure to Structuring », SAGE Handbook of Organization Studies"
+        ],
+        "francophone": "Le compte rendu de Persée (RFS 1997) atteste que le manuel français rattache la contingence à Mintzberg plutôt qu'à Lawrence & Lorsch : cet écart entre les deux récits est lui-même à documenter."
+      },
+      "atteignabilite": "BONNE. DOI résolu.",
+      "risques_a_signaler": [
+        "Concept coécrit.",
+        "La différenciation chez Lawrence & Lorsch n'est pas seulement structurelle : elle est cognitive et affective (horizons temporels, orientation vers les buts). Les présentations courantes la réduisent à la division du travail.",
+        "Risque de glissement prescriptif : la contingence décrit un ajustement, elle ne prescrit pas une structure."
+      ]
+    },
+    {
+      "rang": 12,
+      "id": "normalisation-de-la-deviance",
+      "concept": "Normalisation de la déviance",
+      "theme_pressenti": "risque, erreur et catastrophe",
+      "auteur_pressenti": "Diane Vaughan",
+      "courant": "risque-fiabilite-accidents",
+      "raison_du_rang": "L'autrice a signé la revue de littérature de l'ARS qui constitue « erreur, faute et désastre » en domaine organisationnel — c'est-à-dire qu'elle est à la fois la théoricienne du concept et la cartographe du domaine. Thème entièrement absent du corpus, très enseignable, et deuxième autrice de la file. Rang 12 parce que le texte de référence est un ouvrage de 500 pages.",
+      "sources_pressenties": {
+        "primaire": "Diane Vaughan, The Challenger Launch Decision: Risky Technology, Culture, and Deviance at NASA, University of Chicago Press, 1996 — OUVRAGE",
+        "primaire_alternatif": "Diane Vaughan, « The Dark Side of Organizations: Mistake, Misconduct, and Disaster », Annual Review of Sociology, 25, 1999 — doi 10.1146/annurev.soc.25.1.271, résolu et vérifié. Signé de l'autrice, donc utilisable comme source primaire pour l'énoncé du concept, tout en étant formellement une revue de littérature : la fiche devra dire lequel des deux statuts elle lui donne.",
+        "secondaires": "À établir. Le débat avec Perrow sur l'explication des catastrophes est le point de réception le plus documenté."
+      },
+      "atteignabilite": "MOYENNE pour l'ouvrage, BONNE pour l'article de 1999 si Annual Reviews s'ouvre. C'est une entrée où le choix de la source primaire conditionne tout le reste : à trancher tôt.",
+      "risques_a_signaler": [
+        "Le mécanisme est incrémental et organisationnel : des signaux anormaux sont progressivement redéfinis comme acceptables par les procédures elles-mêmes. En faire une faute morale collective ou un aveuglement des dirigeants est le contresens à éviter.",
+        "L'affaire Challenger est un cas, pas le concept. Une fiche qui raconte l'accident sans montrer le mécanisme échoue au test de suffisance.",
+        "Ne pas fusionner avec les accidents normaux de Perrow (rang 19) : Perrow explique par les propriétés du système technique, Vaughan par la culture de production et l'interprétation des signaux."
+      ]
+    },
+    {
+      "rang": 13,
+      "id": "routines-organisationnelles",
+      "concept": "Routines organisationnelles (aspects ostensif et performatif)",
+      "theme_pressenti": "règles et pratiques",
+      "auteur_pressenti": "Martha S. Feldman et Brian T. Pentland",
+      "courant": "routines-et-pratiques",
+      "raison_du_rang": "Chapitre dédié dans le handbook processuel et présence dans le handbook de la décision : deux ouvrages de référence en font une unité. Article d'ASQ atteignable. Il apporte au corpus une thèse contre-intuitive et immédiatement reconnaissable : la routine est ce par quoi une organisation change, pas seulement ce par quoi elle se répète.",
+      "sources_pressenties": {
+        "primaire": "Martha S. Feldman & Brian T. Pentland, « Reconceptualizing Organizational Routines as a Source of Flexibility and Change », Administrative Science Quarterly, 48(1), 2003 — doi 10.2307/3556620, résolu et vérifié",
+        "secondaires": [
+          "Howard-Grenville & Rerup, « A Process Perspective on Organizational Routines », SAGE Handbook of Process Organization Studies",
+          "Royer & Langley, « Linking Rationality, Politics, and Routines in Organizational Decision Making », Oxford Handbook of Organizational Decision Making, pp. 250-270"
+        ]
+      },
+      "atteignabilite": "BONNE. DOI résolu.",
+      "risques_a_signaler": [
+        "Concept coécrit.",
+        "L'article s'oppose explicitement à la conception de la routine comme inertie, notamment chez Nelson & Winter. La fiche doit dire à quoi elle s'oppose, sinon elle perd son intérêt.",
+        "« Ostensif » et « performatif » sont des termes techniques empruntés : à définir, pas à supposer connus."
+      ]
+    },
+    {
+      "rang": 14,
+      "id": "couts-de-transaction",
+      "concept": "Coûts de transaction et arbitrage marché / hiérarchie",
+      "theme_pressenti": "frontières de l'organisation",
+      "auteur_pressenti": "Oliver E. Williamson",
+      "courant": "couts-de-transaction-et-economie-des-organisations",
+      "raison_du_rang": "Le périmètre nomme Williamson comme cas d'entrée valide ; l'Oxford Handbook of Organization Theory consacre un chapitre entier à l'opposition entre approches économiques et sociologiques, ce qui atteste que le débat lui-même appartient au champ. L'article de 1981 est publié dans une revue de sociologie, ce qui règle la question de la réception disciplinaire. Il répond à une question qu'aucune autre fiche ne pose : pourquoi cette activité est-elle dans l'organisation plutôt qu'achetée dehors ?",
+      "sources_pressenties": {
+        "primaire": "Oliver E. Williamson, « The Economics of Organization: The Transaction Cost Approach », American Journal of Sociology, 87(3), 1981 — doi 10.1086/227496, résolu et vérifié",
+        "secondaires": [
+          "Richard Swedberg, « Economic versus Sociological Approaches to Organization Theory », Oxford Handbook of Organization Theory, pp. 373-391",
+          "Barney & Hesterly, « Organizational Economics », SAGE Handbook of Organization Studies",
+          "Mark Granovetter, « Economic Action and Social Structure », AJS, 1985 — doi 10.1086/228311 : la critique sociologique de référence, utile pour reception.debates"
+        ]
+      },
+      "atteignabilite": "BONNE. DOI résolu, et l'article de 1981 est plus court et plus lisible que Markets and Hierarchies.",
+      "risques_a_signaler": [
+        "Rationalité limitée et opportunisme sont des hypothèses de départ, pas des constats empiriques.",
+        "La reprise de Simon est annoncée par le texte mais reste marquée à_verifier_sur_texte dans la carte : à confirmer avant de poser une documented_filiation vers rationalite-limitee, qui est déjà instruit.",
+        "Le périmètre rejette le management prescriptif : la littérature de « make or buy » qui descend de Williamson est majoritairement hors périmètre."
+      ]
+    },
+    {
+      "rang": 15,
+      "id": "objets-frontieres",
+      "concept": "Objets-frontières",
+      "theme_pressenti": "coopération entre métiers",
+      "auteur_pressenti": "Susan Leigh Star et James Griesemer",
+      "courant": "acteur-reseau-et-traduction",
+      "raison_du_rang": "Concept dont la circulation dans l'analyse des organisations dépasse largement son champ d'origine, et qui explique un phénomène très reconnaissable : comment deux services qui n'ont ni le même métier ni le même vocabulaire arrivent à coopérer autour d'un même objet. Troisième autrice de la file. Il ouvre le courant de la traduction sans passer par la difficulté d'accès des textes français de Callon (rang 23).",
+      "sources_pressenties": {
+        "primaire": "Susan Leigh Star & James R. Griesemer, « Institutional Ecology, Translations and Boundary Objects: Amateurs and Professionals in Berkeley's Museum of Vertebrate Zoology, 1907-39 », Social Studies of Science, 19(3), 1989 — doi 10.1177/030631289019003001, résolu et vérifié",
+        "secondaires": [
+          "Barbara Czarniawska, « Actor-Network Theory », SAGE Handbook of Process Organization Studies — doi 10.4135/9781473957954.n10",
+          "Susan Leigh Star, « This is Not a Boundary Object » (2010) — reprise et mise au point par l'autrice sur les mésusages du concept, à localiser"
+        ]
+      },
+      "atteignabilite": "BONNE. DOI résolu.",
+      "risques_a_signaler": [
+        "Concept coécrit.",
+        "Concept né en sociologie des sciences : son usage organisationnel est une réception, à documenter comme telle et non à présenter comme l'intention des auteurs. Le périmètre est respecté parce que le mécanisme éclaire la coopération dans une organisation, mais l'attribution doit rester exacte.",
+        "Star elle-même a publié une mise au point sur les mésusages du concept : c'est un cas où common_misinterpretations est documentable par l'autrice."
+      ]
+    },
+    {
+      "rang": 16,
+      "id": "sensemaking",
+      "concept": "Sensemaking et énaction",
+      "theme_pressenti": "cognition et interprétation en organisation",
+      "auteur_pressenti": "Karl E. Weick",
+      "courant": "sensemaking-et-organizing",
+      "raison_du_rang": "Chapitre dédié dans le handbook processuel et présence dans celui de la décision. Placé après le couplage lâche (rang 3) parce que les deux sont du même auteur et que la file interdit de les enchaîner ; placé assez haut parce que c'est le concept qui permet de relier décision, apprentissage et catastrophe.",
+      "sources_pressenties": {
+        "primaire": "Karl E. Weick, Sensemaking in Organizations, SAGE, 1995 — OUVRAGE ; et The Social Psychology of Organizing, 2e éd., 1979",
+        "primaire_alternatif": "Karl E. Weick, « The Collapse of Sensemaking in Organizations: The Mann Gulch Disaster », ASQ, 38(4), 1993 — doi 10.2307/2393339, résolu et vérifié",
+        "secondaires": [
+          "Vogus & Colville, « Sensemaking, Simplexity, and Mindfulness », SAGE Handbook of Process Organization Studies",
+          "Balogun, Pye & Hodgkinson, « Cognitively Skilled Organizational Decision Making », Oxford Handbook of Organizational Decision Making, pp. 233-249"
+        ]
+      },
+      "atteignabilite": "MOYENNE pour les ouvrages, BONNE pour l'article de 1993. Le concept est distribué sur un livre entier : c'est un cas typique où evidence.key_quotation restera vide, ce que le workflow autorise explicitement.",
+      "risques_a_signaler": [
+        "Sensemaking n'est pas « interprétation » : il y a énaction, c'est-à-dire que l'action précède et produit en partie l'environnement qu'elle interprète. C'est le point que toutes les vulgarisations perdent.",
+        "Ne pas fusionner avec le couplage lâche (rang 3), même auteur, mécanisme distinct.",
+        "Weick vient de la psychologie sociale : le périmètre exige que le mécanisme soit organisationnel et pas individuel."
+      ]
+    },
+    {
+      "rang": 17,
+      "id": "bureaucratie-type-ideal",
+      "concept": "Bureaucratie — type idéal de la domination légale-rationnelle",
+      "theme_pressenti": "bureaucratie et rationalisation",
+      "auteur_pressenti": "Max Weber",
+      "courant": "bureaucratie-et-rationalisation",
+      "raison_du_rang": "Le concept le plus structurant du périmètre entier — deux chapitres dans le handbook des fondations classiques, un chapitre de bilan contemporain, un numéro de L'Année sociologique en 2016 — et pourtant en rang 17. La raison est entièrement documentaire : c'est aussi le concept le plus coûteux à instruire correctement. Texte allemand, éditions multiples, traductions françaises et anglaises non concordantes sur les termes décisifs, et une vulgarisation dominante qui a remplacé le texte au point que la « cage d'acier » est probablement une image de traducteur. L'instruire tôt et mal serait plus dommageable que de l'instruire tard. Il exige un lot à lui seul, avec un temps de lecture qui n'est pas celui d'un article.",
+      "sources_pressenties": {
+        "primaire": "Max Weber, Wirtschaft und Gesellschaft, 1922, chapitres sur la domination légale et l'administration bureaucratique — original allemand dans le domaine public",
+        "traductions": "Économie et société, Plon puis Pocket, traduction sous la direction de Jacques Chavy et Éric de Dampierre — édition et traducteur à identifier précisément avant toute citation. Côté anglais : Gerth & Mills, From Max Weber (1946), et Roth & Wittich (1978), qui ne traduisent pas les mêmes termes de la même façon.",
+        "secondaires": [
+          "Clegg & Lounsbury, « Weber: Sintering the Iron Cage: Translation, Domination, and Rationality », Oxford Handbook of Sociology and Organization Studies, pp. 118-145 — doi 10.1093/oxfordhb/9780199535231.003.0006",
+          "Paul du Gay, « Max Weber and the Ethics of Office », même volume, pp. 146-173 — doi 10.1093/oxfordhb/9780199535231.003.0007",
+          "Michael Reed, « Bureaucratic Theory and Intellectual Renewal in Contemporary Organization Studies », même volume, pp. 559-584 — doi 10.1093/oxfordhb/9780199535231.003.0025"
+        ],
+        "francophone": "Benamouzig & Borraz, « Bureaucratie, organisations et formalisation des savoirs », L'Année sociologique, 2016 — doi 10.3917/anso.161.0009"
+      },
+      "atteignabilite": "PARADOXALE. L'original allemand est en libre accès ; les traductions de référence sont sous droits ; les deux chapitres de handbook qui règlent les questions de traduction sont chez Oxford, accès incertain. C'est le cas où l'atteignabilité formelle est bonne et l'atteignabilité utile est mauvaise.",
+      "risques_a_signaler": [
+        "Idéal-type ≠ recommandation. Weber ne prescrit pas la bureaucratie. C'est la confusion la plus coûteuse du périmètre entier.",
+        "Herrschaft se traduit par « domination » et non par « autorité » ; Zweckrationalität par « rationalité en finalité ». Le champ translation_notes existe pour cela.",
+        "La « cage d'acier » : le chapitre de Clegg & Lounsbury en discute la provenance. Ne pas la citer comme une expression de Weber sans avoir tranché.",
+        "Deux chapitres du même handbook tirent de Weber deux lectures différentes : known_ambiguities doit le refléter, pas le lisser."
+      ]
+    },
+    {
+      "rang": 18,
+      "id": "tokenism",
+      "concept": "Effets de proportion numérique (tokenism)",
+      "theme_pressenti": "inégalités et division du travail",
+      "auteur_pressenti": "Rosabeth Moss Kanter",
+      "courant": "genre-et-organisations",
+      "raison_du_rang": "Chapitre de l'autrice dans le handbook des fondations classiques ; ouvrage traité comme fondateur par les chapitres genre. Placé après Acker (rang 4) parce que les deux relèvent du même thème et que l'alternance l'exige, et parce que l'ouvrage de 1977 est plus coûteux à ouvrir que l'article d'Acker.",
+      "sources_pressenties": {
+        "primaire": "Rosabeth Moss Kanter, Men and Women of the Corporation, Basic Books, 1977 — OUVRAGE",
+        "primaire_alternatif": "R. M. Kanter, « Some Effects of Proportions on Group Life », AJS, 1977 — à vérifier, version article du même argument",
+        "secondaires": [
+          "Kanter & Khurana, « Types and Positions », Oxford Handbook of Sociology and Organization Studies, pp. 291-306",
+          "Barbara Reskin, « Getting it Right: Sex and Race Inequality in Work Organizations », ARS, 2000 — doi 10.1146/annurev.soc.26.1.707"
+        ]
+      },
+      "atteignabilite": "MOYENNE pour l'ouvrage. La version article de 1977 dans l'AJS, si elle est confirmée, offrirait une voie beaucoup plus courte — c'est la première chose à vérifier.",
+      "risques_a_signaler": [
+        "L'argument de Kanter est structurel : c'est la proportion numérique dans le groupe, non le genre en soi, qui produit les effets de visibilité, de contraste et d'assimilation. Le présenter comme une théorie du sexisme individuel le dénature.",
+        "Ne pas fusionner avec Acker (rang 4) : mécanismes distincts, souvent confondus dans les présentations pédagogiques."
+      ]
+    },
+    {
+      "rang": 19,
+      "id": "accidents-normaux",
+      "concept": "Accidents normaux — couplage serré et complexité interactive",
+      "theme_pressenti": "risque, erreur et catastrophe",
+      "auteur_pressenti": "Charles Perrow",
+      "courant": "risque-fiabilite-accidents",
+      "raison_du_rang": "Complément et contradicteur de Vaughan (rang 12) ; le débat entre les deux explications d'une catastrophe organisationnelle est un des plus instructifs du champ. Placé après elle pour ne pas enchaîner deux fiches du même thème, et parce que la source est un ouvrage.",
+      "sources_pressenties": {
+        "primaire": "Charles Perrow, Normal Accidents: Living with High-Risk Technologies, Basic Books, 1984 (réédition Princeton 1999) — OUVRAGE",
+        "secondaires": [
+          "Diane Vaughan, « The Dark Side of Organizations », ARS, 1999 — doi 10.1146/annurev.soc.25.1.271",
+          "Tamuz & Lewis, « Facing the Threat of Disaster: Decision Making When the Stakes are High », Oxford Handbook of Organizational Decision Making, pp. 155-173"
+        ],
+        "francophone": "À chercher — piste : Mathilde Bourrier sur les organisations à haute fiabilité, dépôts HAL."
+      },
+      "atteignabilite": "MOYENNE. Ouvrage sans DOI, réédition récente disponible.",
+      "risques_a_signaler": [
+        "« Accident normal » ne veut pas dire fréquent : il veut dire inhérent aux propriétés du système, donc inévitable en principe. Le terme induit systématiquement en erreur.",
+        "Perrow explique par le système technique et organisationnel ; Vaughan par la culture de production. La fiche doit poser ce contraste sans le trancher.",
+        "Perrow est aussi l'auteur d'une revue critique du champ entier (Complex Organizations, 1972) : ne pas confondre les deux contributions."
+      ]
+    },
+    {
+      "rang": 20,
+      "id": "bureaucratie-de-guichet",
+      "concept": "Bureaucratie de guichet",
+      "theme_pressenti": "organisations publiques et mise en œuvre",
+      "auteur_pressenti": "Michael Lipsky",
+      "courant": "organisations-publiques-et-action-publique",
+      "raison_du_rang": "Ouvre le thème des organisations publiques, que la carte signale comme sous-représenté et que la revue ARS de 2025 sur la sociologie de l'administration publique confirme comme domaine actif. Très enseignable : la décision réelle se prend au guichet, pas dans la circulaire.",
+      "sources_pressenties": {
+        "primaire": "Michael Lipsky, Street-Level Bureaucracy: Dilemmas of the Individual in Public Services, Russell Sage Foundation, 1980 (édition augmentée 2010) — OUVRAGE",
+        "secondaires": [
+          "Terence McDonnell, « Bureaucracy in Action: The Sociology of Public Administration », Annual Review of Sociology, 2025 — doi 10.1146/annurev-soc-091324-053657",
+          "Spicer, « Organization Studies, Sociology, and the Quest for a Public Organization Theory », Oxford Handbook of Sociology, Social Theory, and Organization Studies"
+        ],
+        "francophone": "Forte : Dupuy & Thoenig, L'administration en miettes (1985) ; travaux du CSO sur l'action publique (Bergeron, Castel, Borraz, repérés sur HAL)."
+      },
+      "atteignabilite": "MOYENNE. Ouvrage ; l'édition de 2010 est plus facile à localiser que celle de 1980, et la fiche devra dire laquelle elle a ouverte.",
+      "risques_a_signaler": [
+        "Le concept porte sur une contrainte structurelle — ressources insuffisantes, demande illimitée, discrétion inévitable — et non sur l'arbitraire des agents.",
+        "Fort risque de glissement vers la critique de l'administration, hors périmètre."
+      ]
+    },
+    {
+      "rang": 21,
+      "id": "encastrement",
+      "concept": "Encastrement",
+      "theme_pressenti": "réseaux et relations",
+      "auteur_pressenti": "Mark Granovetter",
+      "courant": "sociologie-economique-et-reseaux",
+      "raison_du_rang": "Ouvre le courant des réseaux, présent dans deux handbooks et dans une revue de littérature francophone en accès ouvert (Lazega 1994). Placé ici et non plus haut parce qu'il prend tout son sens après les coûts de transaction (rang 14), qu'il critique.",
+      "sources_pressenties": {
+        "primaire": "Mark Granovetter, « Economic Action and Social Structure: The Problem of Embeddedness », American Journal of Sociology, 91(3), 1985 — doi 10.1086/228311, résolu et vérifié",
+        "secondaires": [
+          "Porter & Powell, « Networks and Organizations », SAGE Handbook of Organization Studies",
+          "Owen-Smith & Powell, « Networks and Institutions », SAGE Handbook of Organizational Institutionalism, pp. 596-623"
+        ],
+        "francophone": "Emmanuel Lazega, « Analyse de réseaux et sociologie des organisations », RFS, 1994 — doi 10.2307/3322036, texte déposé en accès ouvert sur HAL (hal-01009840). Source francophone atteignable, ce qui est rare."
+      },
+      "atteignabilite": "BONNE. DOI résolu ; source francophone en accès ouvert confirmée.",
+      "risques_a_signaler": [
+        "Le terme vient de Polanyi ; Granovetter le redéfinit contre l'usage polanyien. Attribuer le concept à Granovetter sans le dire serait une erreur d'attribution ; l'attribuer à Polanyi aussi.",
+        "L'article est d'abord une critique des conceptions « sous-socialisée » et « sur-socialisée » de l'action : la fiche doit dire à quoi il s'oppose."
+      ]
+    },
+    {
+      "rang": 22,
+      "id": "logiques-institutionnelles",
+      "concept": "Logiques institutionnelles",
+      "theme_pressenti": "environnement et institutions",
+      "auteur_pressenti": "Patricia H. Thornton et William Ocasio",
+      "courant": "neo-institutionnalisme",
+      "raison_du_rang": "Chapitre de bilan dédié dans le handbook du néo-institutionnalisme, donc structurant ; placé en 22 parce qu'il suppose acquis l'isomorphisme (rang 1) et le champ organisationnel, et parce qu'il constitue le troisième concept du même courant dans cette file.",
+      "sources_pressenties": {
+        "primaire": "Patricia H. Thornton & William Ocasio, « Institutional Logics and the Historical Contingency of Power in Organizations », American Journal of Sociology, 105(3), 1999 — doi 10.1086/210361, résolu et vérifié",
+        "primaire_complementaire": "Thornton, Ocasio & Lounsbury, The Institutional Logics Perspective, Oxford University Press, 2012 — version à trois signatures, différente de celle de 1999",
+        "secondaires": "Ocasio, Thornton & Lounsbury, « Advances to the Institutional Logics Perspective », SAGE Handbook of Organizational Institutionalism, pp. 509-531"
+      },
+      "atteignabilite": "BONNE pour l'article de 1999.",
+      "risques_a_signaler": [
+        "L'authorship change entre 1999 (deux auteurs) et 2012 (trois) : la fiche doit dire de quelle version elle parle.",
+        "Le concept remonte à Friedland & Alford (1991) : à vérifier avant d'attribuer la paternité."
+      ]
+    },
+    {
+      "rang": 23,
+      "id": "traduction-et-enrolement",
+      "concept": "Traduction, problématisation, enrôlement",
+      "theme_pressenti": "innovation et changement",
+      "auteur_pressenti": "Michel Callon (avec Bruno Latour et Madeleine Akrich)",
+      "courant": "acteur-reseau-et-traduction",
+      "raison_du_rang": "Une des quatre parties du manuel français de référence sur les approches sociologiques des organisations, et un chapitre dans deux handbooks anglophones : structurant des deux côtés, ce qui est rare. Rang 23 uniquement pour des raisons d'accès : le texte de 1986 de Callon n'a pas de DOI vérifié et sa localisation exacte reste à établir. Une fois cette localisation faite, il remonte.",
+      "sources_pressenties": {
+        "primaire": "Michel Callon, « Éléments pour une sociologie de la traduction. La domestication des coquilles Saint-Jacques et des marins-pêcheurs dans la baie de Saint-Brieuc », L'Année sociologique, 36, 1986 — DOI non établi pendant la cartographie, à localiser en priorité",
+        "primaire_complementaire": "Akrich, Callon & Latour, Sociologie de la traduction : textes fondateurs, Presses des Mines, 2006 — recueil qui fixe le canon francophone",
+        "secondaires": [
+          "Barbara Czarniawska, « Actor-Network Theory », SAGE Handbook of Process Organization Studies — doi 10.4135/9781473957954.n10",
+          "Czarniawska, « Bruno Latour », Oxford Handbook of Sociology, Social Theory, and Organization Studies"
+        ]
+      },
+      "atteignabilite": "INCERTAINE, à établir en premier. L'Année sociologique de 1986 n'est pas sur Persée d'après les vérifications du passage ; le recueil de 2006 est une voie de remplacement plus sûre, à condition d'en citer l'édition et la pagination et de dire que le texte y est réédité.",
+      "risques_a_signaler": [
+        "« Traduction » n'a rien à voir avec la traduction linguistique : c'est le déplacement des intérêts d'un acteur pour l'enrôler. Le faux ami est total.",
+        "Concept collectif Callon-Latour-Akrich, et Akrich est systématiquement moins citée à contribution comparable — la carte le signale comme un biais à corriger, pas à reproduire.",
+        "Texte né en sociologie des sciences : l'usage organisationnel est une réception."
+      ]
+    },
+    {
+      "rang": 24,
+      "id": "identite-au-travail",
+      "concept": "Identités au travail",
+      "theme_pressenti": "identités et cultures",
+      "auteur_pressenti": "Renaud Sainsaulieu",
+      "courant": "identites-cultures-et-effet-societal",
+      "raison_du_rang": "Section dédiée dans le manuel français de référence : structurant côté francophone, invisible côté anglophone. Rang 24 parce que le texte est un ouvrage français de 1977 sans DOI, dans exactement la catégorie que la carte signale comme structurellement mal atteignable. Le placer en file plutôt que de l'omettre est une décision : s'il sort en NO_PRIMARY_SOURCE, ce sera une information utile sur les limites du dispositif, et elle sera consignée.",
+      "sources_pressenties": {
+        "primaire": "Renaud Sainsaulieu, L'identité au travail. Les effets culturels de l'organisation, Presses de la FNSP, 1977 (rééditions 1985, 1988) — OUVRAGE, pas de DOI",
+        "secondaires": [
+          "Compte rendu de Amblard, Bernoux, Herreros & Livian, RFS, 1997 — Persée, qui identifie Sainsaulieu comme la référence de l'approche identitaire",
+          "À chercher sur HAL avec des requêtes de deux mots : la littérature de reprise autour de Florence Osty et de la sociologie de l'entreprise"
+        ]
+      },
+      "atteignabilite": "FAIBLE À MOYENNE. Ouvrage français sans DOI, plusieurs rééditions dont la pagination diffère — point critique si une citation est envisagée. Cairn étant en 403, la voie Cairn est fermée pour l'instant.",
+      "risques_a_signaler": [
+        "La typologie des modèles identitaires n'est pas une typologie de personnalités : elle est produite par la position dans l'organisation et l'expérience du travail.",
+        "Réédition multiple : toute localisation doit nommer l'édition.",
+        "Si aucune édition n'est ouvrable, sortir en NO_PRIMARY_SOURCE et le consigner dans les angles morts plutôt que d'écrire sur la base du compte rendu de 1997."
+      ]
+    },
+    {
+      "rang": 25,
+      "id": "configurations-organisationnelles",
+      "concept": "Configurations organisationnelles",
+      "theme_pressenti": "structure et coordination",
+      "auteur_pressenti": "Henry Mintzberg",
+      "courant": "contingence-structurelle",
+      "raison_du_rang": "Identifié par le manuel français comme la référence de la contingence, et disponible en version article courte dans Management Science, ce qui le rend atteignable. Rang 25 parce que la contingence est déjà ouverte au rang 11 par Lawrence & Lorsch, et parce que le risque de glissement prescriptif est élevé.",
+      "sources_pressenties": {
+        "primaire": "Henry Mintzberg, « Structure in 5's: A Synthesis of the Research on Organization Design », Management Science, 26(3), 1980 — doi 10.1287/mnsc.26.3.322, résolu et vérifié",
+        "primaire_complementaire": "The Structuring of Organizations, Prentice-Hall, 1979 — OUVRAGE",
+        "secondaires": "Compte rendu RFS 1997 sur Amblard et al. ; chapitre contingence de S4"
+      },
+      "atteignabilite": "BONNE pour l'article de 1980.",
+      "risques_a_signaler": [
+        "Typologie descriptive, pas un catalogue de structures à choisir. C'est le concept de la file où le risque « description ≠ prescription » est le plus fort, et où la littérature de management a le plus brouillé le texte.",
+        "Le nombre et le nom des configurations varient entre 1979, 1980 et les éditions ultérieures : la fiche doit dire de quelle version elle parle."
+      ]
+    },
+    {
+      "rang": 26,
+      "id": "cooptation",
+      "concept": "Cooptation",
+      "theme_pressenti": "pouvoir et légitimité",
+      "auteur_pressenti": "Philip Selznick",
+      "courant": "fonctionnalisme-bureaucratique-columbia",
+      "raison_du_rang": "Mécanisme charnière entre les dysfonctions bureaucratiques et l'institutionnalisme, ce qui en fait une pièce utile du graphe : il relie Merton, déjà instruit, au néo-institutionnalisme des rangs 1 et 9. Rang 26 parce que la source est un ouvrage de 1949 et que le concept est moins immédiatement enseignable que ceux qui le précèdent.",
+      "sources_pressenties": {
+        "primaire": "Philip Selznick, TVA and the Grass Roots, University of California Press, 1949 — OUVRAGE",
+        "primaire_alternatif": "Philip Selznick, « Foundations of the Theory of Organization », American Sociological Review, 13(1), 1948 — doi 10.2307/2086752, résolu et vérifié. Article court, antérieur d'un an, où le programme est énoncé.",
+        "secondaires": "Heather Haveman, « The Columbia School and the Study of Bureaucracies », Oxford Handbook of Sociology and Organization Studies, pp. 585-606 — doi 10.1093/oxfordhb/9780199535231.003.0026"
+      },
+      "atteignabilite": "BONNE par l'article de 1948, MOYENNE par l'ouvrage. À trancher tôt : les deux ne disent pas exactement la même chose.",
+      "risques_a_signaler": [
+        "« Cooptation » au sens de Selznick — absorber des éléments extérieurs dans la direction pour éviter qu'ils ne menacent l'organisation — n'est pas la cooptation au sens du recrutement par les pairs, ni la « récupération » au sens militant.",
+        "Selznick distingue cooptation formelle et informelle : la distinction est souvent perdue."
+      ]
+    },
+    {
+      "rang": 27,
+      "id": "travail-emotionnel",
+      "concept": "Travail émotionnel",
+      "theme_pressenti": "travail et subjectivité",
+      "auteur_pressenti": "Arlie Russell Hochschild",
+      "courant": "genre-et-organisations",
+      "raison_du_rang": "Chapitre dédié à l'autrice dans un handbook et chapitre « Emotion and Organizing » dans un autre : l'émotion est un objet organisationnel constitué. Quatrième autrice de la file. Rang 27 parce que le thème du genre est déjà servi deux fois plus haut et que la source est un ouvrage.",
+      "sources_pressenties": {
+        "primaire": "Arlie Russell Hochschild, The Managed Heart: Commercialization of Human Feeling, University of California Press, 1983 — OUVRAGE. Traduction française : Le prix des sentiments, La Découverte, 2017, traducteur à identifier.",
+        "secondaires": [
+          "Smith, « Arlie Russell Hochschild », Oxford Handbook of Sociology, Social Theory, and Organization Studies",
+          "Stephen Fineman, « Emotion and Organizing », SAGE Handbook of Organization Studies"
+        ]
+      },
+      "atteignabilite": "MOYENNE. Ouvrage ; traduction française récente, donc sous droits mais localisable.",
+      "risques_a_signaler": [
+        "Le travail émotionnel est prescrit par l'organisation et rémunéré : ce n'est pas la gestion privée de ses émotions. La distinction emotional labor / emotion work est dans le texte et disparaît presque toujours dans les reprises.",
+        "Traduction française récente : si une citation est prise, traducteur et édition obligatoires."
+      ]
+    },
+    {
+      "rang": 28,
+      "id": "institution-totale",
+      "concept": "Institution totale",
+      "theme_pressenti": "organisations publiques et contrainte",
+      "auteur_pressenti": "Erving Goffman",
+      "courant": "organisations-publiques-et-action-publique",
+      "raison_du_rang": "Type d'organisation dont l'analyse ne se déduit d'aucun autre courant de la carte, et concept dont l'enseignabilité est maximale. Rang 28 parce que sa consécration comme concept de théorie des organisations — par opposition à concept de sociologie générale — n'a pas été établie pendant la cartographie : la justification est marquée à_confirmer. Le scout doit d'abord vérifier que le champ le revendique, sinon c'est un candidat OUT_OF_SCOPE légitime.",
+      "sources_pressenties": {
+        "primaire": "Erving Goffman, Asylums: Essays on the Social Situation of Mental Patients and Other Inmates, Anchor Books, 1961 — OUVRAGE. Traduction française : Asiles, Éditions de Minuit, 1968, traduction Liliane et Claude Lainé.",
+        "secondaires": "Hallett, Shulman & Fine, « Peopling Organizations: The Promise of Classic Symbolic Interactionism for an Inhabited Institutionalism », Oxford Handbook of Sociology and Organization Studies, pp. 486-509 — doi 10.1093/oxfordhb/9780199535231.003.0022"
+      },
+      "atteignabilite": "MOYENNE. Ouvrage, traduction française ancienne et identifiée (traducteurs nommés, ce qui est un avantage rare).",
+      "risques_a_signaler": [
+        "Vérifier d'abord l'appartenance au périmètre : le test est « ce travail éclaire-t-il le fonctionnement d'une organisation ? ». La réponse est probablement oui, mais elle doit être argumentée, pas supposée.",
+        "L'institution totale est un type, avec des critères : l'appliquer à toute organisation contraignante est le mésusage courant."
+      ]
+    },
+    {
+      "rang": 29,
+      "id": "effet-societal",
+      "concept": "Effet sociétal",
+      "theme_pressenti": "comparaison internationale des formes organisationnelles",
+      "auteur_pressenti": "Marc Maurice, François Sellier et Jean-Jacques Silvestre",
+      "courant": "identites-cultures-et-effet-societal",
+      "raison_du_rang": "Cité par le manuel français parmi les approches classiques ; c'est le seul concept de la file qui explique pourquoi la même technologie produit des organisations différentes selon les pays — donc le seul contrepoint français à l'universalisme de la contingence. Rang 29 pour la même raison que Sainsaulieu : ouvrage français de 1982 sans DOI.",
+      "sources_pressenties": {
+        "primaire": "Marc Maurice, François Sellier, Jean-Jacques Silvestre, Politique d'éducation et organisation industrielle en France et en Allemagne, PUF, 1982 — OUVRAGE",
+        "secondaires": [
+          "Compte rendu RFS 1997 sur Amblard et al. — Persée",
+          "Morgan & Kristensen, « The Comparative Analysis of Capitalism and the Study of Organizations », Oxford Handbook of Sociology, Social Theory, and Organization Studies — voie de rapprochement avec la littérature anglophone, sans filiation supposée"
+        ]
+      },
+      "atteignabilite": "FAIBLE À MOYENNE. Ouvrage français sans DOI. Le laboratoire d'origine (LEST, Aix) a déposé de la littérature sur HAL : piste à explorer avec des requêtes courtes.",
+      "risques_a_signaler": [
+        "Concept à trois signatures : jamais sous un seul nom.",
+        "L'effet sociétal n'est pas la culture nationale : le mécanisme passe par les systèmes éducatifs, de qualification et de relations professionnelles. Le confondre avec d'Iribarne serait une erreur d'attribution doublée d'un contresens."
+      ]
+    },
+    {
+      "rang": 30,
+      "id": "cites-et-justification",
+      "concept": "Cités et principes de grandeur",
+      "theme_pressenti": "justification et coordination",
+      "auteur_pressenti": "Luc Boltanski et Laurent Thévenot",
+      "courant": "economie-des-conventions",
+      "raison_du_rang": "Une des quatre parties du manuel français : structurant côté francophone. En queue de file pour trois raisons cumulées — ouvrage dense de 1991 sans DOI, absence totale des handbooks anglophones consultés, et surtout un doute de périmètre réel : De la justification n'est pas un livre sur les organisations, sa pertinence organisationnelle est une réception. C'est un candidat dont le scout doit d'abord établir qu'il passe le test d'entrée.",
+      "sources_pressenties": {
+        "primaire": "Luc Boltanski & Laurent Thévenot, De la justification. Les économies de la grandeur, Gallimard, 1991 — OUVRAGE",
+        "secondaires": "Compte rendu RFS 1997 sur Amblard et al. — Persée ; littérature de réception organisationnelle à établir"
+      },
+      "atteignabilite": "MOYENNE. Ouvrage largement diffusé, traduit en anglais (On Justification, Princeton, 2006), donc localisable.",
+      "risques_a_signaler": [
+        "Concept coécrit.",
+        "Test de périmètre à faire avant instruction : si la fiche ne peut pas montrer le mécanisme dans une organisation réelle, elle sort en OUT_OF_SCOPE, et c'est un résultat acceptable.",
+        "Les six cités sont souvent présentées comme une grille de lecture prête à l'emploi : ce n'est pas ce qu'est le modèle."
+      ]
+    }
+  ],
+
+  "a_surveiller_hors_file": {
+    "commentaire": "Repérés par la cartographie, non mis en file lors de ce passage. Soit parce que leur statut structurant n'est pas établi, soit parce qu'ils supposent des fiches qui n'existent pas encore, soit parce qu'ils appartiennent à des zones du champ que le prochain passage de cartographie doit d'abord instruire.",
+    "entrees": [
+      { "id": "systeme-action-concret", "auteur": "Crozier et Friedberg", "raison": "Structurant côté francophone, mais suppose zones-incertitude, déjà instruit : à traiter comme approfondissement plutôt que comme fiche autonome. Décision à prendre par le graph-curator." },
+      { "id": "champ-organisationnel", "auteur": "DiMaggio et Powell", "raison": "Chapitre dédié dans le handbook du néo-institutionnalisme, donc structurant, mais suppose l'isomorphisme (rang 1) instruit. À remonter en file après le rang 1." },
+      { "id": "travail-institutionnel", "auteur": "Lawrence et Suddaby", "raison": "Chapitre dans deux handbooks. Suppose isomorphisme et champ organisationnel." },
+      { "id": "legitimite-organisationnelle", "auteur": "Suchman et Deephouse", "raison": "Chapitre dédié dans S5. Concept transversal, à instruire quand deux ou trois fiches institutionnalistes existeront." },
+      { "id": "reponses-strategiques-institutions", "auteur": "Christine Oliver", "raison": "N'a de sens qu'en opposition à l'isomorphisme : à instruire juste après le rang 1, comme contrepoint." },
+      { "id": "communautes-de-pratique", "auteurs": "Brown, Duguid, Lave, Wenger", "raison": "Deux généalogies distinctes et forte récupération managériale : demande un travail d'attribution lourd avant d'entrer en file." },
+      { "id": "dualite-de-la-technologie", "auteur": "Wanda Orlikowski", "raison": "Article atteignable (doi 10.1287/orsc.3.3.398), mais suppose la structuration de Giddens, qui n'est pas dans le corpus." },
+      { "id": "trous-structuraux", "auteur": "Ronald Burt", "raison": "Suppose l'encastrement (rang 21)." },
+      { "id": "pouvoir-dans-les-organisations", "auteurs": "Clegg et Hardy", "raison": "Trois handbooks érigent le pouvoir en objet propre. Ce n'est pas un concept mais un domaine : le prochain passage de cartographie doit décider s'il se découpe en concepts instruisables ou s'il reste une entrée de thème." },
+      { "id": "consentement-au-travail", "auteur": "Michael Burawoy", "raison": "Attribution à confirmer sur texte avant mise en file." },
+      { "id": "accidents-et-fiabilite-HRO", "auteurs": "La Porte, Roberts, Weick et Sutcliffe", "raison": "Contrepoint de Perrow (rang 19). À instruire après lui." },
+      { "id": "alternatives-a-la-bureaucratie", "auteurs": "Joyce Rothschild-Whitt et Raymond Russell", "raison": "Revue ARS de 1986 (doi 10.1146/annurev.so.12.080186.001515) constituant les organisations démocratiques et coopératives en domaine. Aucun concept précis n'a encore été isolé : c'est un travail de cartographie, pas d'instruction. Signalé ici pour qu'il ne disparaisse pas." },
+      { "id": "institutionnalisme-scandinave", "auteurs": "Brunsson, Sahlin-Andersson, Røvik", "raison": "Courant constitué que ce passage a manqué faute de requêtes adaptées. À faire remonter au prochain passage de cartographie avant toute mise en file." },
+      { "id": "communication-constitutive-des-organisations", "auteurs": "Cooren, Putnam, Taylor", "raison": "Chapitre dans deux handbooks ; tradition disciplinaire entière absente du corpus. Même remarque." }
+    ]
+  },
+
+  "prochain_passage_de_cartographie": {
+    "a_faire_en_premier": [
+      "Ouvrir Davis & Zald, « Sociological Classics and the Canon in the Study of Organizations » (doi 10.1093/oxfordhb/9780199535231.003.0028) : c'est le texte qui traite frontalement la question posée à cette carte, et il a été repéré sans être lu.",
+      "Refaire les appels get_references quand Semantic Scholar répond : aucune filiation de la carte v1 n'est établie par les références sortantes, et cinq sont marquées à_verifier_sur_texte.",
+      "Relancer OpenAlex et Semantic Scholar hors période de 429 : les courants et auteurs qu'ils auraient fait remonter sont inconnus, pas absents.",
+      "Interroger explicitement l'institutionnalisme scandinave, la tradition germanophone (Luhmann, Kieser, Ortmann) et la francophonie hors France (Québec) : trois zones manquées par construction des requêtes de ce passage.",
+      "Trouver une voie d'accès aux manuels français : Cairn a répondu 403 sur toutes les tentatives, et le manuel français n'entre dans la carte v1 que par un compte rendu de Persée de 1997."
+    ]
+  }
+}
