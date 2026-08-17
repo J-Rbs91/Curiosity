@@ -32,7 +32,14 @@ export const metadata: Metadata = {
     title: "Curiosity",
   },
   icons: {
+    /*
+     * Le SVG d'abord : un navigateur qui le comprend s'en tient là et affiche une marque nette
+     * à toutes les densités. Les autres descendent la liste, et `src/app/favicon.ico` — repris
+     * par Next au titre de sa convention de fichier, sans passer par ici — sert de dernier
+     * recours aux plus anciens.
+     */
     icon: [
+      { url: withBasePath("/icons/icon.svg"), type: "image/svg+xml" },
       { url: withBasePath("/icons/icon-192.png"), sizes: "192x192", type: "image/png" },
       { url: withBasePath("/icons/icon-512.png"), sizes: "512x512", type: "image/png" },
     ],
