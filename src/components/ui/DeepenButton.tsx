@@ -1,8 +1,9 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { buildConceptPrompt } from "@/domain/concepts/ai-prompt";
+import { buildAISharePayload } from "@/domain/concepts/ai-handoff";
 import { taxonomy } from "@/content";
+import { absoluteUrl } from "@/lib/base-path";
 import { Button } from "@/components/ui/Button";
 import type { Concept } from "@/types";
 
@@ -17,8 +18,11 @@ const FEEDBACK_MS = 3000;
  * Appuyer propose d'envoyer le concept à une application d'IA installée sur l'appareil,
  * qui prend le relais de l'explication : l'application ne produit rien au-delà de la carte.
  *
- * Le fonctionnement du partage lui-même reste à reprendre — c'est une conversation à
- * avoir, pas un détail d'implémentation.
+ * Ce qui part n'est pas la carte, mais un dossier complet — instructions pédagogiques et
+ * documentaires, carte, corpus de sources, lien de retour — assemblé par
+ * `@/domain/concepts/ai-handoff`. Le bouton ne connaît pas ce contenu : il résout ce que
+ * l'écran ne sait pas (la place de la carte dans la taxonomie, l'adresse sous laquelle
+ * l'application est servie) et transmet le reste.
  *
  * Aucune application n'est nommée ni détectée. Le partage passe par la feuille de partage
  * du système, qui liste déjà les applications capables de recevoir du texte : c'est le
@@ -41,9 +45,16 @@ export function DeepenButton({ concept }: { concept: Concept }) {
   }
 
   async function share() {
-    // Le domaine est résolu ici plutôt que passé par l'appelant : les trois écrans qui
-    // portent ce bouton n'ont pas à savoir dans quelle discipline se trouve la carte.
-    const text = buildConceptPrompt({ concept, domain: taxonomy.domainOfConcept(concept) });
+    // Le domaine est résolu ici plutôt que passé par l'appelant : les deux écrans qui
+    // portent ce bouton n'ont pas à savoir dans quelle discipline se trouve la carte, ni
+    // sous quelle adresse l'application est servie.
+    const domain = taxonomy.domainOfConcept(concept);
+    const text = buildAISharePayload({
+      concept,
+      domain,
+      family: domain && taxonomy.familyOf(domain.id),
+      url: absoluteUrl(`/explore/concept/?c=${encodeURIComponent(concept.slug)}`),
+    });
 
     if (typeof navigator !== "undefined" && navigator.share) {
       try {
