@@ -34,9 +34,9 @@ export default function SettingsPage() {
       <div className="mx-auto max-w-md px-6 pt-10 pb-12">
         <BackLink />
 
-        <h1 className="mt-4 font-serif-display text-[28px] font-semibold text-ink">Réglages</h1>
+        <h1 className="mt-4 font-serif-display text-2xl font-semibold text-ink">Réglages</h1>
 
-        <div className="mt-12">
+        <div style={{ marginTop: "var(--gap-section)" }}>
           {!confirming ? (
             <button
               type="button"
@@ -47,7 +47,7 @@ export default function SettingsPage() {
             </button>
           ) : (
             <div className="enter-rise space-y-4">
-              <p className="text-[15px] leading-relaxed text-ink-soft">
+              <p className="text-sm leading-relaxed text-ink-soft">
                 Les cartes déjà rencontrées seront oubliées
                 définitivement. Les propositions repartiront de zéro.
               </p>

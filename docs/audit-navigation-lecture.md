@@ -80,7 +80,7 @@ pas la question qui domine sa famille : c'est la masse des lignes qui la compose
 
 # Problèmes constatés
 
-Quatorze entrées, groupées par nature. Chacune porte sa gravité, sa recommandation et son
+Quinze entrées, groupées par nature. Chacune porte sa gravité, sa recommandation et son
 critère de validation — une entrée d'audit sans critère observable n'est pas terminée.
 
 ---
@@ -168,15 +168,28 @@ de thème passent sous le seuil de lecture confortable de la plupart des lecteur
 
 **Gravité : important.** La tâche reste possible, elle coûte plus cher.
 
-**Recommandation.** Relever le plancher du `clamp` et calculer l'échelle sur la place réellement
-disponible plutôt que sur la seule hauteur d'écran. Alléger la carte de ce qui la fait déborder
-(voir A3) plutôt que rétrécir ce qu'on doit lire.
+**Recommandation.** Redresser la pente pour que la borne haute soit atteinte bien plus tôt, et
+alléger la carte de ce qui la fait déborder (voir A3) plutôt que rétrécir ce qu'on doit lire.
 
-**Modification technique.** `src/app/page.tsx` — plancher de `CARD_SCALE` à `0.875rem` au
-minimum ; ajuster la pente pour que la borne haute soit atteinte plus tôt.
+**Ce qui borne le plancher, et qu'il faut mesurer avant de le relever.** La plus grande base à
+laquelle la carte tient encore sans défiler a été relevée écran par écran : **13 px à
+320 × 568**, 15 px à 360 × 640, 15,75 px à 375 × 667, 17 px à 390 × 844. C'est cette colonne
+qui commande le plancher, pas le confort de lecture — et un plancher posé sans elle casse la
+contrainte qui commande tout le reste. Sur les petits écrans, le gain de lisibilité ne peut donc
+venir que de ce qu'on retire à la carte, jamais du réglage seul.
+
+**Modification technique.** `src/app/page.tsx` — pente de `CARD_SCALE`, borne haute atteinte
+vers 716 points au lieu de 844.
 
 **Critère de validation.** Sur 375×667, aucun texte de la carte sous 11 px, et le résumé au
-moins à 14 px, la carte tenant toujours sans défilement.
+moins à 14 px, la carte tenant toujours sans défilement — y compris sur 320 × 568.
+
+**Constat annexe, non traité.** Une carte dont tous les champs atteignent leur plafond
+(`CARD_LIMITS`) ne tient pas à 390 × 844 : la base maximale y est de 15,25 px, la borne haute
+de 16. Aucune fiche du corpus n'est aujourd'hui dans ce cas — les plafonds ont été mesurés sur
+un rendu réel, pas sur une carte synthétique maximale — mais la marge est nulle. Corriger
+demanderait soit d'abaisser les plafonds, soit de calculer l'échelle sur la hauteur réellement
+occupée par la carte plutôt que sur celle de l'écran. C'est la seconde qui est juste.
 
 ---
 
@@ -473,6 +486,34 @@ d'en-tête de famille ne porte plus que deux niveaux.
 
 ---
 
+### B9. Quatre à six mots en capitales espacées, sur l'en-tête qui doit se balayer
+
+**Constat.** Les libellés de famille — « Comprendre les humains et les organisations »,
+43 signes — sont rendus en capitales avec 0,12 em d'interlettrage. À 375 px de large, deux des
+quatre passent sur deux lignes. La casse forcée est admissible sur un libellé court ; au-delà de
+deux mots elle supprime les repères de forme des mots, qui sont ce sur quoi la lecture rapide
+s'appuie.
+
+C'est l'endroit où cela coûte le plus cher : ce chapeau est le premier élément d'un groupe, et
+sa fonction est d'être attrapé au vol pendant qu'on défile.
+
+**Gravité : amélioration.**
+
+**Recommandation.** Réserver la casse forcée aux chapeaux courts — « Sources », « Concepts »,
+le nom d'un domaine — et laisser les libellés de famille en casse normale, la distinction avec
+la question se faisant alors par la taille, la couleur et la famille typographique, qui
+suffisent déjà.
+
+**Non traité dans cette passe.** La casse en capitales des familles est une décision écrite du
+§5 de [`ux-direction.md`](ux-direction.md), et la revoir demande de trancher ce que devient
+l'ordre de lecture famille → question. Le constat est posé ; la décision revient à qui tient ce
+document.
+
+**Critère de validation.** Aucun libellé de plus de deux mots n'est rendu en capitales forcées,
+ou la décision contraire est écrite avec sa raison.
+
+---
+
 ## C — Navigation
 
 ### C1. Descendre dans un domaine puis ouvrir un de ses thèmes efface le domaine
@@ -725,3 +766,42 @@ plugin UXER — grille de diagnostic visuel (hiérarchie, rythme, espacements, t
 de proximité, dix-neuf contrôles de navigation, quatre niveaux de gravité, contrôles
 d'accessibilité opposables. Les seuils normatifs cités (WCAG 1.4.4, 2.5.8) sont nommés par leur
 référence, et chaque écart est accompagné de la mesure qui l'établit.
+
+---
+
+# Ce qui a été corrigé, et ce qui est mesuré après
+
+Douze des quinze entrées ont été traitées dans la foulée de l'audit. Les valeurs de la colonne
+« après » sont relevées sur le rendu, dans les mêmes conditions que celles de l'audit.
+
+| Entrée | État | Après |
+|---|---|---|
+| A1 · zoom et unités | corrigé | `maximumScale` retiré ; plus une seule taille en pixels. À police 24 px : famille 12 → 18, question 20,7 → 31,1, domaine 17,3 → 25,9, barre 12 → 18. Aucun débordement |
+| A2 · tailles de la carte | corrigé | Base 15,0 px à 375 × 667 (13,0 avant), 14,4 à 360 × 640 (12,5), 12,8 à 320 × 568 (12,5). Plus petit texte 11,2 px (9,7). Aucun défilement à aucune taille |
+| A3 · légende de citation | corrigé | Notice réduite au titre sur la carte du jour ; entière sur la fiche et dans la vue des sources |
+| A4 · prose avant destinations | corrigé | Premier lien à 405 px sur une page de domaine (574 avant), 387 sur un thème, 350 sur un auteur — zone visible 599 px. Deux entrées visibles à l'arrivée |
+| B1 · cloisonnement | corrigé | Ancrage 24 px · frères 32 px · groupes 71 px. Rapport groupe/frère **2,22** pour un seuil de 2 ; rapport ancrage/frère **0,75** pour un seuil de 0,75 |
+| B2 · niveaux de titre | corrigé | Question de famille 20,7 px en graisse 600 ; nom de domaine 17,3 px en graisse 400. Les deux `h1` de premier niveau alignés à 29,9 px |
+| B3 · rythme vertical | corrigé | Six rôles nommés dans `globals.css`, aucun écart vertical écrit au point d'usage |
+| B4 · échelle typographique | corrigé | Six pas en rem, rapport 1,2, déclarés une fois |
+| B5 · trois chapeaux | corrigé | Une classe `.eyebrow`, 12 px Inter 500 partout ; la règle serif ne s'applique plus par balise |
+| B6 · deux lignes de liste | corrigé | Un seul composant `ListRow` sur les cinq écrans |
+| B7 · signal inversé | corrigé | Le domaine pourvu porte « 8 cartes » dans le gris du texte principal ; l'absence garde sa phrase, en gris tertiaire |
+| B8 · deux formats de comptage | corrigé | Un seul format, `ListHeading` ; le compte de domaines retiré de l'en-tête de famille |
+| **B9 · capitales sur libellés longs** | **non traité** | Décision écrite du §5 de `ux-direction.md` : le constat est posé, l'arbitrage revient à qui tient ce document |
+| C1 · le thème efface son domaine | corrigé | Trace `/explore > domaine > thème`, retour étiqueté « Sociologie des organisations », pile 3 → 4, retour système ramène sur le domaine avec sa position de défilement |
+| C2 · Réglages sans onglet | corrigé | `rootSectionOf` remonte l'arbre ; exactement un onglet actif sur les sept écrans, aucun sur une route inconnue |
+| C3 · 404 en anglais | corrigé | `not-found.tsx` en français, deux sorties nommées |
+| C4 · écran vide sur lien partagé | corrigé | Squelette de chargement sur la carte du jour et sur la fiche |
+| C5 · cibles sous le seuil | corrigé | Hauteur minimale mesurée : 44 px sur les quatre écrans testés, vue des sources comprise |
+| C6 · `--dur-screen` | corrigé | La déclaration résout — `--dur-fade` |
+
+**Ce qui reste ouvert**, en plus de B9 : la carte dont tous les champs atteindraient les
+plafonds du corpus ne tient pas à 390 × 844 (voir le constat annexe d'A2). Le défaut est
+antérieur à cette passe et aucune fiche n'est aujourd'hui dans ce cas ; la correction juste est
+de calculer l'échelle sur la hauteur réellement occupée plutôt que sur celle de l'écran.
+
+**Une régression a été introduite puis corrigée en cours de route**, et elle mérite d'être
+consignée parce qu'elle dit ce qui borne le réglage : le premier plancher retenu pour la carte
+(0,9375 rem) faisait déborder l'écran de 320 × 568 de 168 px. La contrainte « la carte tient
+dans un écran » ne se vérifie pas sur l'écran de référence, elle se vérifie sur le plus petit.

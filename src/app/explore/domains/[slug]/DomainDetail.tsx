@@ -1,10 +1,11 @@
 "use client";
 
 import { notFound } from "next/navigation";
-import { TreeLink } from "@/components/navigation/TreeLink";
 import { taxonomy } from "@/content";
 import { Screen } from "@/components/motion/Screen";
 import { BackLink } from "@/components/ui/BackLink";
+import { ListHeading, ListRow } from "@/components/ui/ListRow";
+import { SituatingText } from "@/components/ui/SituatingText";
 
 /**
  * La page d'un domaine : où l'on est, et ce qu'il y a à y lire.
@@ -34,20 +35,21 @@ export function DomainDetail({ slug }: { slug: string }) {
          * carte : c'est la même règle de composition, appliquée un cran plus haut. Elle
          * situe en une ligne, puis s'efface.
          */}
-        {family && (
-          <p className="mt-6 text-[13px] font-medium uppercase tracking-[0.12em] text-ink-faint">
-            {family.label}
-          </p>
-        )}
-        <h1 className="mt-2 font-serif-display text-[30px] font-semibold leading-tight text-ink">
+        {family && <p className="mt-6 eyebrow">{family.label}</p>}
+        <h1 className="mt-2 font-serif-display text-2xl font-semibold leading-tight text-ink">
           {domain.label}
         </h1>
-        <p className="mt-5 text-[17px] leading-relaxed text-ink-soft">{domain.description}</p>
 
-        <section className="mt-10">
-          <h2 className="text-xs font-medium uppercase tracking-[0.12em] text-ink-faint">
-            {domainThemes.length > 0 ? `Thèmes · ${domainThemes.length}` : "Thèmes"}
-          </h2>
+        {/*
+         * La phrase qui situe, puis la liste — la description longue attend qu'on la
+         * demande. Entière et en tête, elle repoussait le premier thème cliquable sous la
+         * ligne de flottaison : la page qui existe pour donner accès à ses thèmes n'en
+         * montrait aucun à l'arrivée.
+         */}
+        <SituatingText lead={domain.tagline} full={domain.description} label="la description" />
+
+        <section style={{ marginTop: "var(--gap-section)" }}>
+          <ListHeading count={domainThemes.length}>Thèmes</ListHeading>
 
           {/*
            * Un domaine déclaré sans thème n'est pas une erreur, c'est un domaine dont le
@@ -55,24 +57,19 @@ export function DomainDetail({ slug }: { slug: string }) {
            * lecteur doit distinguer « il n'y a rien ici » de « il n'y a rien encore ».
            */}
           {domainThemes.length === 0 ? (
-            <p className="mt-4 text-[15px] leading-relaxed text-ink-faint">
+            <p className="mt-4 text-sm leading-relaxed text-ink-faint">
               Corpus en cours de constitution. Ce domaine est ouvert, aucun de ses thèmes
               n&apos;a encore été instruit.
             </p>
           ) : (
-            <ul className="stagger mt-3 space-y-1">
+            <ul className="stagger rows anchored">
               {domainThemes.map((theme) => (
-                <li key={theme.id}>
-                  <TreeLink
-                    href={`/explore/themes/${theme.slug}`}
-                    className="press-soft block rounded-2xl py-3.5 hover:bg-paper-raised"
-                  >
-                    <span className="block text-[17px] text-ink">{theme.title}</span>
-                    <span className="mt-1 block text-[14px] leading-snug text-ink-soft">
-                      {theme.tagline}
-                    </span>
-                  </TreeLink>
-                </li>
+                <ListRow
+                  key={theme.id}
+                  href={`/explore/themes/${theme.slug}`}
+                  title={theme.title}
+                  tagline={theme.tagline}
+                />
               ))}
             </ul>
           )}
@@ -85,7 +82,7 @@ export function DomainDetail({ slug }: { slug: string }) {
          * y a à y trouver.
          */}
         {domainConcepts.length > 0 && (
-          <p className="mt-8 text-[13px] text-ink-faint">
+          <p className="text-xs text-ink-faint" style={{ marginTop: "var(--gap-section)" }}>
             {domainConcepts.length} carte{domainConcepts.length > 1 ? "s" : ""} instruite
             {domainConcepts.length > 1 ? "s" : ""} dans ce domaine.
           </p>

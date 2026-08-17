@@ -1,5 +1,6 @@
 import { Suspense } from "react";
 import { ConceptDetail } from "./ConceptDetail";
+import { ScreenSkeleton } from "@/components/ui/ScreenSkeleton";
 
 /**
  * Une seule page pour toutes les fiches, le concept étant désigné par `?c=<slug>`.
@@ -14,10 +15,16 @@ import { ConceptDetail } from "./ConceptDetail";
  * Le contenu, lui, est identique : cette page rend la même fiche qu'auparavant.
  */
 export default function ConceptPage() {
-  // `useSearchParams` suspend au premier rendu d'une page pré-rendue : sans cette frontière,
-  // la construction refuserait la page entière.
+  /*
+   * `useSearchParams` suspend au premier rendu d'une page pré-rendue : sans cette
+   * frontière, la construction refuserait la page entière.
+   *
+   * Le repli n'est pas facultatif. Sans lui, le HTML servi ne contient que la barre de
+   * navigation, et celui qui suit un lien partagé regarde un écran noir jusqu'à ce que le
+   * script soit chargé — or c'est précisément cette adresse que « Approfondir » diffuse.
+   */
   return (
-    <Suspense>
+    <Suspense fallback={<ScreenSkeleton lines={4} />}>
       <ConceptDetail />
     </Suspense>
   );

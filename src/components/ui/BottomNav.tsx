@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import { TreeLink } from "@/components/navigation/TreeLink";
 import { BookOpen, Compass } from "lucide-react";
+import { rootSectionOf } from "@/lib/navigation-tree";
 
 /**
  * Deux destinations. L'écran de progression a disparu avec les compteurs qu'il
@@ -14,13 +15,20 @@ const ITEMS = [
   { href: "/explore", label: "Explorer", icon: Compass },
 ] as const;
 
-function isActive(pathname: string, href: string): boolean {
-  return href === "/" ? pathname === "/" : pathname.startsWith(href);
-}
-
 export function BottomNav() {
   const pathname = usePathname();
-  const activeIndex = ITEMS.findIndex((item) => isActive(pathname, item.href));
+  /*
+   * L'entrée allumée est celle de la **branche** où l'on se trouve, pas celle dont
+   * l'adresse est un préfixe de la nôtre.
+   *
+   * La comparaison de chaînes laissait `/settings` sans onglet actif : c'est une route de
+   * premier niveau dans l'URL, mais un enfant d'Explorer dans l'arbre. L'écran paraissait
+   * alors hors de l'application, et « où suis-je » — le premier de tous les contrôles de
+   * navigation — n'y avait aucune réponse. L'arbre sait déjà remonter ; il suffit de le
+   * lui demander.
+   */
+  const section = rootSectionOf(pathname);
+  const activeIndex = ITEMS.findIndex((item) => item.href === section);
 
   return (
     <nav

@@ -290,14 +290,28 @@ situer sans connaître les disciplines académiques. D'où l'ordre de lecture de
 serif, en gros** — c'est elle qui dit ce qu'on vient chercher, quand « pilotage » ne dit
 rien à personne. Puis les domaines de la famille, en lignes ordinaires.
 
+**Et « en gros » veut dire quelque chose de vérifiable.** La question est deux fois plus
+appuyée que ce qu'elle commande : 20,7 px en graisse 600 contre 17,3 px en graisse 400. Une
+version antérieure les rendait à la même graisse et dans la même couleur, à deux pixels de
+taille près — un niveau 1 indiscernable de son niveau 2, et quatre questions noyées sous onze
+noms de domaine. Le rapport de graisse est ce qui porte l'écart ; la taille seule ne suffisait
+pas, et augmenter la taille seule aurait coûté des lignes sans gagner en clarté.
+
 Trois décisions, et une contribution qui les casserait se verrait :
 
 - **Une famille n'est pas cliquable.** Lui donner une page ajouterait un palier qui ne
-  contiendrait que ce qui est déjà à l'écran. La hiérarchie se voit, elle ne se traverse
-  pas — l'arbre de navigation reste à trois niveaux.
-- **Un domaine sans corpus le dit dans la liste**, pas seulement sur sa page : c'est dans la
-  liste qu'on choisit où aller, et l'apprendre après avoir ouvert est le pire moment.
-  « Corpus en cours de constitution » — jamais « 0 résultat », qui se lit comme une panne.
+  contiendrait que ce qui est déjà à l'écran. La hiérarchie se voit, elle ne se traverse pas.
+- **L'état du corpus se dit dans la liste**, pas seulement sur la page du domaine : c'est dans
+  la liste qu'on choisit où aller, et l'apprendre après avoir ouvert est le pire moment. Il se
+  dit **par la positive** — « 8 cartes », dans le gris du texte principal — et l'absence garde
+  sa phrase entière, en gris tertiaire : « Corpus en cours de constitution », jamais
+  « 0 résultat », qui se lit comme une panne. L'inverse a été essayé et mesuré : quand seule
+  l'absence était marquée, le seul domaine utilisable était signalé par un vide, et il fallait
+  lire onze lignes pour trouver celle qui manquait.
+- **Aucun compte de ce qui est déjà à l'écran.** Les domaines d'une famille sont tous visibles
+  sous elle ; les compter n'apprend rien, et le chiffre s'intercalait exactement là où
+  l'en-tête doit s'ancrer sur son groupe. Un compte n'apparaît que devant une liste qu'on ne
+  voit pas entière — « Thèmes · 9 » —, et sous un seul format dans toute l'application.
 - **Thèmes et auteurs ne se regroupent par domaine que lorsqu'il y en a plusieurs.** La
   condition porte sur les données, jamais sur un domaine nommé : tant qu'un seul domaine est
   pourvu, un en-tête unique n'apprendrait rien et la liste reste celle de la V1.
@@ -321,6 +335,83 @@ Deux règles y sont tenues, et une contribution qui les casserait se verrait :
 Les champs correspondants sont `tagline` et `keywords` sur `Author` et `Theme`.
 Les textes longs — `bio`, `description` — restent réservés aux fiches, où ils
 sont lus plutôt que balayés.
+
+### Le rythme vertical d'une liste
+
+Trois écarts, et c'est leur **rapport** qui fait comprendre un regroupement — pas leur valeur.
+
+| Écart | Rôle | Valeur |
+|---|---|---|
+| `--gap-anchor` | Un en-tête et la liste qu'il commande | 24 px |
+| `--gap-row` | Deux frères d'une même liste | 32 px |
+| `--gap-group` | Deux groupes de premier niveau | 72 px |
+
+Deux règles les gouvernent, et elles sont mesurables sur le rendu :
+
+- **L'écart entre deux groupes vaut au moins le double de l'écart entre frères.** 72 / 32 =
+  2,25. Une version antérieure valait 64 / 36 = 1,78, et quatre familles se lisaient alors
+  comme une seule liste continue.
+- **L'écart d'ancrage est nettement inférieur à l'écart entre frères.** 24 / 32 = 0,75. Il
+  valait 32 / 36, soit une différence de 4 px : rien ne disait qu'un en-tête commandait la
+  liste sous lui, et il se lisait comme une ligne de plus.
+
+**Le cloisonnement se fait par l'espace, jamais par un filet.** C'est la même raison qu'au §3 :
+sur du noir, une bordure devrait atteindre le seuil de contraste des éléments d'interface pour
+être perçue, et serait alors plus bruyante que ce qu'elle sépare. Quand une liste paraît plate,
+c'est de l'espace qui manque, pas une ligne.
+
+Les lignes de liste portent un remplissage qui agrandit la cible tactile sans déplacer le
+texte : les marges du CSS en retranchent ce remplissage, et c'est la seule raison de leurs
+`calc`. Les valeurs ci-dessus sont des écarts **de texte à texte**, qui sont ce que l'œil
+mesure.
+
+### L'échelle typographique
+
+Six pas, **en rem**, de rapport 1,2 — le plus petit auquel deux niveaux voisins se distinguent
+isolément, et pas seulement côte à côte.
+
+| Jeton | Valeur | Emploi |
+|---|---|---|
+| `--text-xs` | 0,75 rem · 12 px | Chapeau, méta, barre de navigation |
+| `--text-sm` | 0,9 rem · 14,4 px | Texte tertiaire, phrase d'une ligne de liste |
+| `--text-md` | 1,08 rem · 17,3 px | Texte courant, intitulé de liste |
+| `--text-lg` | 1,295 rem · 20,7 px | Question de famille, accroche |
+| `--text-xl` | 1,555 rem · 24,9 px | Titre de l'écran de présentation |
+| `--text-2xl` | 1,866 rem · 29,9 px | Titre d'écran |
+
+**L'unité n'est pas un détail.** Une taille écrite en pixels ne s'indexe sur rien : la
+préférence de taille de police du lecteur reste alors sans effet. L'application en comptait
+onze, littérales, dont sept entre 12 et 19 px — trop proches pour se distinguer, et toutes
+figées. Pire, les quelques utilitaires restés en rem grossissaient, eux : à police 24 px,
+l'étiquette de la barre de navigation devenait plus grosse que l'intitulé de famille.
+
+**Le zoom par pincement n'est pas bloqué**, et c'est la même décision : `maximumScale` ne
+figure pas dans le `viewport`. Les deux vont ensemble — rétablir l'un sans l'autre laisse le
+lecteur sans levier.
+
+**Un chapeau, un seul traitement.** L'intitulé en capitales espacées qui situe sans être lu est
+porté par la classe `.eyebrow`, jamais par une balise. La règle serif ne s'applique plus à
+`h1, h2, h3` : elle attrapait tout `h2` quel qu'en soit le rôle, et le même chapeau se rendait
+en deux familles selon une décision de structure de document. C'est aussi ce que dit la règle
+du §5 — la serif porte ce qui se lit, le sans porte ce qui se choisit —, et un chapeau ne se
+lit pas, il étiquette.
+
+**Ce qui reste discutable, et qui est écrit ici pour ne pas être oublié :** les libellés de
+famille font quatre à six mots et sont rendus en capitales forcées, ce qui supprime les repères
+de forme des mots au moment précis où l'on balaie. Deux des quatre passent sur deux lignes à
+375 px. La décision de l'ordre famille → question tient ; la casse, elle, n'a pas été
+rearbitrée. Voir B9 de [`audit-navigation-lecture.md`](audit-navigation-lecture.md).
+
+### La situation d'abord, la dissertation ensuite
+
+Sur la page d'un domaine, d'un thème ou d'un auteur, ce qui s'affiche d'emblée est la **phrase
+de situation** — `tagline` —, et le texte long — `description`, `bio` — attend qu'on le
+demande.
+
+Ce n'est pas une troncature : le corpus porte les deux champs, écrits pour deux usages. La
+description entière en tête repoussait le premier lien à 574 px sur une zone visible de 599, et
+la page qui existe pour donner accès à ses neuf thèmes n'en montrait aucun à l'arrivée. Le
+critère est observable : **au moins deux entrées de liste visibles sans défiler, en 375 × 667.**
 
 ---
 
@@ -440,6 +531,11 @@ disparaissent, les fondus restent.
 | Retour nommé sur toutes les fiches | La fiche de concept revenait par l'historique du navigateur — depuis une fin de session, cela renvoyait dans la session qu'on venait de quitter |
 | Focus visible partout | Il n'existait aucun style de focus |
 | Réserve sous le contenu calculée | Le retrait bas était une valeur fixe qui ne tenait pas compte de la zone sûre du système |
+| **Un thème est sous son domaine, pas à côté** | Les deux portaient le même niveau : ouvrir un thème depuis un domaine remplaçait l'entrée d'historique au lieu de l'empiler. Le domaine disparaissait de la pile et de la trace, un seul retour en sortait, et consulter deux thèmes d'un même domaine coûtait six gestes au lieu de trois — sur la page dont c'est la fonction |
+| **L'onglet actif se déduit de l'arbre** | Une comparaison de préfixes d'adresse laissait `/settings` sans aucun onglet allumé : route de premier niveau dans l'URL, enfant d'Explorer dans l'arbre. « Où suis-je » n'avait pas de réponse sur cet écran |
+| **Une adresse morte a son écran** | Sans `not-found.tsx`, une fiche au slug périmé servait la page par défaut de Next — en anglais, hors du système visuel, sans un lien. C'est pourtant l'adresse que « Approfondir » diffuse |
+| **Les deux écrans sans pré-rendu ont un squelette** | La carte du jour a besoin du `localStorage`, la fiche de la chaîne de recherche : leur HTML ne contenait que la barre de navigation, et un lien partagé ouvrait sur un écran noir que rien ne distinguait d'une panne |
+| **Aucune cible sous 44 px** | Le bouton des sources mesurait 15 px de haut sur un écran de 667 points — sous le seuil de 24 px de WCAG 2.5.8 —, et « Revenir au concept » est le seul moyen de quitter cette vue |
 
 ---
 
@@ -447,7 +543,10 @@ disparaissent, les fondus restent.
 
 | Fichier | Ce qu'il porte |
 |---|---|
-| `src/app/globals.css` | L'échelle de neutres, les rôles, tous les tokens de mouvement, le focus, les replis en mouvement réduit |
+| `src/app/globals.css` | L'échelle de neutres, les rôles, l'échelle typographique, les six rôles d'écart vertical, tous les tokens de mouvement, le focus, les replis en mouvement réduit |
+| `src/lib/navigation-tree.ts` | Les niveaux de l'arbre, l'intention d'une navigation, la trace, la branche de premier niveau |
+| `src/components/ui/ListRow.tsx` | La ligne de destination et l'en-tête de liste, pour toute l'application |
+| `src/components/ui/SituatingText.tsx` | L'ordre situation → liste → texte long, sur les trois pages de détail |
 | `src/components/motion/screen-motion.ts` | Les quatre sens de circulation, et eux seuls |
 | `src/components/motion/Screen.tsx` | La correspondance sens → animation, à poser dans chaque `page.tsx` |
 | `src/components/ui/AppShell.tsx` | Les écrans immersifs et la réserve sous le contenu |

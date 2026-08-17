@@ -2,6 +2,11 @@
  * L'arbre de navigation, et le contrat qui fait que le bouton retour du système
  * descend cet arbre au lieu de rejouer l'historique des visites.
  *
+ * Quatre niveaux sous la racine, et tous les chemins ne les traversent pas tous :
+ * Aujourd'hui · Explorer · domaine ou auteur · thème · concept. Entrer par l'onglet
+ * « Thèmes » saute le troisième, ce qui est sans conséquence — seule la comparaison des
+ * niveaux compte, jamais leur contiguïté.
+ *
  * Le problème qu'il règle. Le bouton retour d'Android — comme celui du
  * navigateur et le glissement latéral d'iOS — rejoue la **pile d'historique**,
  * c'est-à-dire la chronologie de ce que le lecteur a visité. Or personne ne se
@@ -53,21 +58,41 @@ const NIVEAUX: { motif: RegExp; niveau: number; parent: string | null }[] = [
    */
   { motif: /^\/explore\/domains\//, niveau: 2, parent: "/explore" },
   { motif: /^\/explore\/authors\//, niveau: 2, parent: "/explore?vue=auteurs" },
-  { motif: /^\/explore\/themes\//, niveau: 2, parent: "/explore?vue=themes" },
   { motif: /^\/settings$/, niveau: 2, parent: "/explore" },
+  /*
+   * Un thème est **sous** un domaine, et pas à côté.
+   *
+   * Il a longtemps porté le niveau 2, comme les domaines et les auteurs : les trois
+   * étaient des coupes parallèles d'Explorer, et rien ne les reliait. Mais la page d'un
+   * domaine liste ses thèmes, si bien que le lien qu'on y suit est une descente dans le
+   * contenu. Traité comme un pas de côté, il remplaçait l'entrée d'historique au lieu de
+   * l'empiler : le domaine disparaissait de la pile et de la trace, un seul retour depuis
+   * le thème sortait du domaine, et consulter deux thèmes d'un même domaine coûtait six
+   * gestes au lieu de trois — sur la page dont c'est précisément la fonction.
+   *
+   * Le niveau d'un nœud est le sien, pas celui du chemin par lequel on l'atteint : entrer
+   * par l'onglet « Thèmes » saute simplement le niveau 2, ce que la comparaison des
+   * niveaux gère sans rien de plus. Le parent de repli reste cet onglet — c'est la seule
+   * destination sûre pour une adresse ouverte directement, où aucun domaine n'a été
+   * traversé.
+   */
+  { motif: /^\/explore\/themes\//, niveau: 3, parent: "/explore?vue=themes" },
   /*
    * Toutes les fiches partagent un même chemin, le concept étant désigné par
    * `?c=<slug>`. C'est exactement ce qu'il faut ici : deux concepts sont des
    * frères, et les traiter comme un seul nœud de l'arbre est le comportement
    * juste — passer de l'un à l'autre ne consomme aucune profondeur.
    */
-  { motif: /^\/explore\/concept$/, niveau: 3, parent: "/explore" },
+  { motif: /^\/explore\/concept$/, niveau: 4, parent: "/explore" },
 ];
+
+/** Le niveau d'une route absente de l'arbre : plus profond que toute feuille connue. */
+const NIVEAU_INCONNU = 99;
 
 /** Niveau d'un chemin. Une route inconnue est traitée comme une feuille. */
 export function levelOf(pathname: string): number {
   const chemin = normalise(pathname);
-  return NIVEAUX.find((n) => n.motif.test(chemin))?.niveau ?? 99;
+  return NIVEAUX.find((n) => n.motif.test(chemin))?.niveau ?? NIVEAU_INCONNU;
 }
 
 /**
@@ -80,6 +105,31 @@ export function parentOf(pathname: string): string | null {
   // `?? "/"` serait faux ici : la racine a un parent volontairement nul, et
   // l'opérateur ne distingue pas « absent de l'arbre » de « sans parent ».
   return noeud ? noeud.parent : "/";
+}
+
+/**
+ * La branche de premier niveau à laquelle appartient un chemin — ce que la barre de
+ * navigation doit allumer.
+ *
+ * Elle remonte l'arbre plutôt que de comparer des préfixes d'adresse : `/settings` est une
+ * route de premier niveau dans l'URL et un enfant d'Explorer dans l'arbre, et une
+ * comparaison de chaînes ne laissait donc aucun onglet allumé sur cet écran.
+ *
+ * Une route inconnue — la page « introuvable » — ne rend aucune branche : mieux vaut
+ * n'allumer personne que désigner une destination où l'on n'est pas.
+ */
+export function rootSectionOf(pathname: string): string {
+  let courant = normalise(pathname);
+  if (levelOf(courant) === NIVEAU_INCONNU) return "";
+
+  // Bornée par la profondeur de l'arbre : un parent mal déclaré ne doit pas boucler.
+  for (let i = 0; i < NIVEAUX.length; i += 1) {
+    if (levelOf(courant) <= 1) return courant;
+    const parent = parentOf(courant);
+    if (!parent) return courant;
+    courant = normalise(parent.split("?")[0]);
+  }
+  return "/";
 }
 
 export type Intent = "descend" | "sibling" | "climb";
