@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://curiosity.local/schema/deepening.schema.json",
+  "title": "Approfondissement d'une carte",
+  "description": "Le texte qu'affiche « Approfondir », écrit une fois et figé dans le dépôt. L'application ne parle à aucun modèle au moment du clic : elle sert ce texte, produit hors ligne et relu, projeté comme le reste du corpus. La forme est volontairement pauvre — des chaînes de texte brut réparties en trois champs — parce que tout ce qui ressemblerait à du balisage finirait affiché tel quel. Le cadrage de rédaction est dans corpus/deepenings/PROTOCOLE.md ; il porte les quatre exigences documentaires que ce schéma ne peut pas vérifier.",
+  "type": "object",
+  "required": ["conceptId", "lead", "sections", "limits"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+
+    "conceptId": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "L'identifiant de la carte prolongée. La projection refuse un approfondissement dont la carte n'est pas validée : un texte affiché sans carte derrière lui serait exactement ce que le dispositif documentaire existe pour empêcher."
+    },
+
+    "lead": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 3,
+      "items": { "type": "string", "minLength": 80 },
+      "description": "L'entrée en matière, sans titre : le problème que le concept résout, posé de telle sorte qu'on veuille lire la suite. Ne répète pas la carte, qui était à l'écran l'instant d'avant."
+    },
+
+    "sections": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 7,
+      "description": "Le développement. Une section porte une idée et la porte entièrement.",
+      "items": {
+        "type": "object",
+        "required": ["title", "paragraphs"],
+        "additionalProperties": false,
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 3,
+            "maxLength": 60,
+            "description": "Nomme ce dont la section parle, jamais la fonction qu'elle occupe dans le texte. « Pour aller plus loin » étiquette un palier de difficulté et oblige le lecteur à se situer avant d'avoir compris ; le validateur en refuse la liste connue."
+          },
+          "paragraphs": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string", "minLength": 80 }
+          }
+        }
+      }
+    },
+
+    "limits": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 5,
+      "items": { "type": "string", "minLength": 80 },
+      "description": "Ce que le corpus de la carte ne permet pas d'établir, nommé plutôt que tu. Un texte de mille cinq cents mots écrit à partir de cinq sources dépasse nécessairement ce que ces sources établissent ; ce champ est l'endroit où ce dépassement se déclare. Des formules de prudence sans objet précis n'y suffisent pas."
+    }
+  }
+}

@@ -1,88 +1,48 @@
 "use client";
 
-import { useRef, useState } from "react";
-import { buildAISharePayload } from "@/domain/concepts/ai-handoff";
-import { taxonomy } from "@/content";
-import { absoluteUrl } from "@/lib/base-path";
-import { Button } from "@/components/ui/Button";
-import { DeepenSheet } from "@/components/ui/DeepenSheet";
+import { hasDeepening } from "@/content";
+import { TreeLink } from "@/components/navigation/TreeLink";
+import { HandoffButton } from "@/components/ui/HandoffButton";
 import type { Concept } from "@/types";
-
-interface Handoff {
-  text: string;
-  copied: boolean;
-}
 
 /**
  * « Approfondir » — l'unique action de la carte.
  *
- * Le nom dit ce que le lecteur veut faire : comprendre le concept avec l'IA de son choix,
- * qui prend le relais de l'explication. L'application ne produit rien au-delà de la carte.
+ * Le nom n'a pas changé, ce qu'il fait si. Le bouton emportait la carte vers l'IA du lecteur,
+ * à charge pour lui de coller un dossier de 22 000 caractères dans une conversation vide et
+ * d'attendre. Il ouvre maintenant un texte que l'application sert déjà : le développement du
+ * concept, écrit à l'avance à partir de la carte et de son corpus, contrôlé, projeté comme le
+ * reste. Le lecteur qui appuie obtient quelque chose à lire, pas une manipulation à faire.
  *
- * Ce qui part n'est pas la carte, mais un dossier complet — instructions pédagogiques et
- * documentaires, carte, corpus de sources, lien de retour — assemblé par
- * `@/domain/concepts/ai-handoff`. Le bouton ne connaît pas ce contenu : il résout ce que
- * l'écran ne sait pas (la place de la carte dans la taxonomie, l'adresse sous laquelle
- * l'application est servie) et transmet le reste.
+ * **L'application ne parle à aucun modèle.** Ni ici, ni ailleurs : elle est exportée en
+ * statique, sans serveur ni clé d'API, et le texte affiché existait avant le clic. C'est ce
+ * qui permet qu'il ait été relu, ce qu'aucune réponse produite au moment du clic ne peut
+ * offrir.
  *
- * **Pourquoi le presse-papiers plutôt que la feuille de partage du système.** L'action
- * passait auparavant par `navigator.share`, qui rend la main au système. Or la feuille
- * d'Android classe ses cibles par usage : elle proposait Gmail, WhatsApp et un réseau social,
- * et rangeait les applications d'IA derrière « Plus ». Le bouton annonçait une intention et
- * ouvrait un écran qui en proposait une autre. Aucune API ne permet de filtrer cette feuille ;
- * la seule sortie était de ne plus commencer par elle. Le dossier va donc au presse-papiers —
- * qui transporte 22 000 caractères sans troncature, et se comporte pareil sur un téléphone et
- * sur un navigateur de bureau —, et `DeepenSheet` propose ensuite où le coller. La feuille du
- * système reste accessible depuis cette feuille, pour ce que la liste ne couvre pas.
- *
- * La copie a lieu ici, dans le geste qui l'a demandée : Safari refuse une écriture dans le
- * presse-papiers qui ne descend pas directement d'une interaction.
+ * **Le repli est aussi important que le chemin principal.** Toute carte n'a pas son
+ * approfondissement : le corpus avance carte par carte, et les fiches d'échafaudage n'en
+ * auront jamais. Dans ce cas, le bouton reprend exactement son ancien comportement plutôt que
+ * de disparaître ou de mener à un écran vide, et le lecteur garde le chemin qu'il connaît.
  */
 export function DeepenButton({ concept }: { concept: Concept }) {
-  const [handoff, setHandoff] = useState<Handoff | null>(null);
-  const trigger = useRef<HTMLButtonElement>(null);
+  if (!hasDeepening(concept.id)) return <HandoffButton concept={concept} label="Approfondir" variant="primary" />;
 
-  async function deepen() {
-    // Le domaine est résolu ici plutôt que passé par l'appelant : les deux écrans qui portent
-    // ce bouton n'ont pas à savoir dans quelle discipline se trouve la carte, ni sous quelle
-    // adresse l'application est servie.
-    const domain = taxonomy.domainOfConcept(concept);
-    const text = buildAISharePayload({
-      concept,
-      domain,
-      family: domain && taxonomy.familyOf(domain.id),
-      url: absoluteUrl(`/explore/concept/?c=${encodeURIComponent(concept.slug)}`),
-    });
-
-    let copied = false;
-    try {
-      await navigator.clipboard.writeText(text);
-      copied = true;
-    } catch {
-      // Presse-papiers refusé ou indisponible : la feuille s'ouvre quand même et le dit,
-      // avec de quoi réessayer ou passer par le partage du système.
-    }
-
-    setHandoff({ text, copied });
-  }
-
+  /*
+   * Un lien, et non un bouton qui navigue : il s'ouvre dans un nouvel onglet, il s'annonce
+   * aux technologies d'assistance et Next le précharge. `TreeLink` lui donne le geste qui
+   * correspond à une descente dans l'arbre, sans que cet écran ait à savoir lequel.
+   *
+   * Les classes reprennent celles de `Button` en variante principale. Elles sont recopiées
+   * plutôt que partagées : `Button` rend un `<button>`, et le seul moyen de les mutualiser
+   * serait de lui faire rendre parfois autre chose, ce qui coûterait plus cher que ces deux
+   * lignes.
+   */
   return (
-    <>
-      <Button ref={trigger} onClick={deepen}>
-        Approfondir
-      </Button>
-      {handoff && (
-        <DeepenSheet
-          copied={handoff.copied}
-          text={handoff.text}
-          onClose={() => {
-            setHandoff(null);
-            // Le focus revient d'où il venait : sans cela, il repart en tête de document et
-            // la navigation au clavier recommence l'écran.
-            trigger.current?.focus();
-          }}
-        />
-      )}
-    </>
+    <TreeLink
+      href={`/explore/concept/approfondir/?c=${encodeURIComponent(concept.slug)}`}
+      className="press inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-medium text-accent-contrast hover:opacity-90"
+    >
+      Approfondir
+    </TreeLink>
   );
 }

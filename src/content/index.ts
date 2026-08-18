@@ -1,7 +1,8 @@
-import type { Concept } from "@/types";
+import type { Concept, ConceptId } from "@/types";
 import { composeCorpus } from "@/domain/concepts/corpus";
 import { createTaxonomy } from "@/domain/taxonomy";
 import { generatedConcepts } from "./generated/concepts.generated";
+import { deepenedConceptIds } from "./generated/deepenings-index.generated";
 import { fixtureConcepts } from "./fixtures/concepts.fixture";
 import { themes } from "./themes";
 import { authors } from "./authors";
@@ -47,3 +48,19 @@ export const concepts: Concept[] = composeCorpus(generatedConcepts, fixtureConce
  * contenu ? » répond juste dans les deux cas, sans qu'aucun écran n'ait à savoir lequel.
  */
 export const taxonomy = createTaxonomy({ families, domains, themes, authors, concepts });
+
+/**
+ * Cette carte a-t-elle un approfondissement écrit ?
+ *
+ * Seuls les identifiants sont chargés ici, jamais les textes : ils pèsent une trentaine de
+ * milliers de mots, et l'écran du jour n'a besoin de rien de tout cela pour décider où mène
+ * son bouton. Le module qui les porte n'est chargé que par l'écran qui les affiche.
+ *
+ * La réponse est fausse pour toute fiche d'échafaudage, et elle doit l'être : un texte long
+ * écrit sur une carte non vérifiée propagerait l'invérifié au lieu de le contenir.
+ */
+const deepened = new Set<ConceptId>(deepenedConceptIds);
+
+export function hasDeepening(conceptId: ConceptId): boolean {
+  return deepened.has(conceptId);
+}

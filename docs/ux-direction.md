@@ -423,85 +423,119 @@ critère est observable : **au moins deux entrées de liste visibles sans défil
 
 ---
 
-## 6. Le bouton « Approfondir » — passer le relais à une IA
+## 6. Le bouton « Approfondir » — un texte, puis le relais
 
-Présent sur l'écran du jour et sur la fiche d'un concept.
+Présent sur l'écran du jour et sur la fiche d'un concept. Il ouvre un texte d'environ mille
+cinq cents mots qui développe le concept : `/explore/concept/approfondir/?c=<slug>`.
 
-**Le dossier passe par le presse-papiers, pas par la feuille de partage.** Le
-bouton a d'abord appelé `navigator.share()`, ce qui rendait la main au système. La
-feuille d'Android classe ses cibles par usage : elle proposait Gmail, WhatsApp et
-un réseau social, et rangeait les applications d'IA derrière « Plus ». Le bouton
-annonçait une intention — comprendre le concept avec une IA — et ouvrait un écran
-qui en proposait une autre : l'envoyer à quelqu'un. Aucune API web ne permet de
-filtrer ni de réordonner cette feuille ; la seule sortie était de ne plus commencer
-par elle.
+**Ce texte est écrit à l'avance, et c'est tout le sujet.** Il est produit hors ligne, une
+carte à la fois, contrôlé, puis projeté dans le dépôt comme le corpus lui-même
+(`corpus/deepenings/`, `npm run corpus:deepen`). L'application ne parle à aucun modèle : ni au
+moment du clic, ni ailleurs. Elle est exportée en statique, sans serveur ni clé d'API, et le
+texte affiché existait avant qu'on appuie.
 
-Un appui copie donc le dossier — 22 000 caractères, que le presse-papiers
-transporte sans troncature et sans différence entre téléphone et bureau — puis
-ouvre une feuille qui dit ce qui vient d'être copié et propose où le coller.
+Ce n'est pas un renoncement technique, c'est ce qui rend le texte relisable. Une réponse
+produite au moment du clic n'a été lue par personne quand elle s'affiche ; celle-ci a passé le
+même contrôle que le reste — les volumes, l'absence de balisage, l'interdiction du tiret
+cadratin, les titres qui ne peuvent pas étiqueter un palier de difficulté, et un champ
+`limits` qui doit nommer ce qui manque plutôt que de multiplier les précautions.
+
+### Ce que le texte fait, et ce qu'il ne fait pas
+
+Il **prolonge** la carte, il ne la répète pas. Elle était à l'écran l'instant d'avant : le
+premier paragraphe qui la paraphrase perd le lecteur pour de bon. Ce qu'il ajoute est le
+mécanisme — pourquoi le concept produit ce qu'il produit, où il cesse de s'appliquer, ce qu'il
+ne dit pas.
+
+Il monte du premier abord jusqu'à un niveau académique substantiel **sans jamais l'annoncer**.
+C'est la première des quatre exigences documentaires, et la seule que le validateur peut
+partiellement tenir : il refuse les titres de fonction (« Pour aller plus loin », « En
+résumé », « Ce qu'il faut retenir »), parce qu'un palier étiqueté découpe en tranches ce qui
+doit se lire d'un trait et oblige le lecteur à se situer avant d'avoir compris.
+
+Il se termine par **« Ce que la carte n'établit pas »**, et ce bloc est obligatoire. Un texte
+de mille cinq cents mots écrit à partir de cinq sources dépasse nécessairement ce que ces
+sources établissent ; ce champ est l'endroit où ce dépassement se déclare au lieu de se
+dissimuler. Il est placé en fin de lecture et non en tête : avant, il se lirait comme un
+avertissement sur la fiabilité de ce qui suit, alors qu'il dit l'inverse.
+
+Le cadrage complet de la rédaction est dans `corpus/deepenings/PROTOCOLE.md`. Il tient, pour
+un texte publié, ce que `src/domain/concepts/ai-prompt.ts` tient pour une conversation.
+
+### Le relais vers une IA, rétrogradé mais pas supprimé
+
+Il était l'unique action de la carte. Il est maintenant en bas du texte, sous le libellé
+« Continuer avec une IA ».
+
+L'ordre est le bon : le texte répond aux questions qu'on avait en arrivant, il ne peut pas
+répondre à celles qu'il fait naître, et c'est pour celles-là qu'un interlocuteur sert à
+quelque chose. Ce qui partait continue de partir, à l'identique — le dossier autonome de
+22 000 caractères, instructions documentaires puis carte et corpus.
+
+**Une carte sans approfondissement garde l'ancien comportement.** Le corpus avance carte par
+carte, et les fiches d'échafaudage n'en recevront jamais : dans ce cas, « Approfondir » reprend
+exactement le geste d'avant plutôt que de disparaître ou de mener à un écran vide. C'est
+`hasDeepening` qui tranche, et il ne charge que des identifiants — les textes eux-mêmes ne
+partent qu'avec l'écran qui les affiche.
+
+### Ce qui n'a pas changé du passage de relais
+
+**Le dossier passe par le presse-papiers, pas par la feuille de partage.** L'action a d'abord
+appelé `navigator.share()`, ce qui rendait la main au système. La feuille d'Android classe ses
+cibles par usage : elle proposait Gmail, WhatsApp et un réseau social, et rangeait les
+applications d'IA derrière « Plus ». Le bouton annonçait une intention et ouvrait un écran qui
+en proposait une autre. Aucune API web ne permet de filtrer ni de réordonner cette feuille ; la
+seule sortie était de ne plus commencer par elle.
+
+Un appui copie donc le dossier — 22 000 caractères, que le presse-papiers transporte sans
+troncature et sans différence entre téléphone et bureau — puis ouvre une feuille qui dit ce qui
+vient d'être copié et propose où le coller.
 
 **Les destinations sont nommées, et c'est un coût assumé.** La liste
-(`src/lib/ai-destinations.ts`) est écrite à la main, donc elle vieillira. Elle reste
-courte, ordonnée alphabétiquement — aucun classement par préférence, l'application
-ne recommande pas —, et la feuille du système demeure accessible juste en dessous
-pour tout ce qu'elle ne couvre pas. Rien n'est détecté : savoir ce qui est installé
-est hors de portée d'une page web, et un schéma d'application propriétaire échoue
-en silence quand l'application manque. Ce sont de simples liens https, que le
-système route vers l'application quand elle revendique le domaine, vers le site
-sinon.
+(`src/lib/ai-destinations.ts`) est écrite à la main, donc elle vieillira. Elle reste courte,
+ordonnée alphabétiquement — aucun classement par préférence, l'application ne recommande pas —,
+et la feuille du système demeure accessible juste en dessous pour tout ce qu'elle ne couvre
+pas. Rien n'est détecté : savoir ce qui est installé est hors de portée d'une page web, et un
+schéma d'application propriétaire échoue en silence quand l'application manque. Ce sont de
+simples liens https, que le système route vers l'application quand elle revendique le domaine,
+vers le site sinon.
 
-Le prompt ne voyage jamais dans l'adresse : 22 000 caractères en paramètre d'URL,
-c'est une troncature silencieuse quelque part sur le chemin — et donc des règles
-documentaires perdues sans que personne ne le voie.
+Le prompt ne voyage jamais dans l'adresse : 22 000 caractères en paramètre d'URL, c'est une
+troncature silencieuse quelque part sur le chemin — et donc des règles documentaires perdues
+sans que personne ne le voie.
 
-**Ce n'est pas un partage de carte, c'est un passage de relais.** Le message est un
-dossier autonome, qui tient sans aucun contexte préalable : les instructions
-d'abord, la carte et son corpus ensuite. La carte y va entière — domaine, famille,
-thème, concept, auteurs, attribution établie, citation localisée, accroche, résumé,
-les cinq sources avec leur niveau, leur DOI ou leur ISBN, et le lien de retour vers
-la fiche. Ce qui a coûté le plus cher à instruire est précisément ce qui empêche
-l'IA de partir sur une vulgarisation.
+**Ce n'est pas un partage de carte, c'est un passage de relais.** Le message est un dossier
+autonome, qui tient sans aucun contexte préalable : les instructions d'abord, la carte et son
+corpus ensuite. La carte y va entière — domaine, famille, thème, concept, auteurs, attribution
+établie, citation localisée, accroche, résumé, les cinq sources avec leur niveau, leur DOI ou
+leur ISBN, et le lien de retour vers la fiche.
 
-**La conversation appartient au lecteur.** Aucune question n'est posée à sa place,
-aucun niveau ne lui est demandé : l'IA commence à partir du dossier, et ajuste sa
-profondeur au fil de l'échange. La dernière ligne se contente d'autoriser le départ.
+**La conversation appartient au lecteur.** Aucune question n'est posée à sa place, aucun niveau
+ne lui est demandé : l'IA commence à partir du dossier, et ajuste sa profondeur au fil de
+l'échange. La dernière ligne se contente d'autoriser le départ.
 
-**La frontière épistémique est visible, mais seulement là où elle compte.** C'est
-la faille que le reste du prompt ne fermait pas : un modèle capable produit une
-explication juste en mêlant silencieusement ce que la carte établit, ce dont il se
-souvient, une interprétation académique et sa propre reformulation — et tout
-arrive au lecteur avec le même statut. Demander de « distinguer mentalement » ne
-suffit pas ; le prompt demande que le changement de statut se lise dans la
-formulation lorsqu'une confusion serait possible, et **interdit** l'inverse : pas de
-`CORPUS :` ni d'`INTERPRÉTATION :` devant chaque phrase. Une reformulation évidente
-ou un exemple manifestement hypothétique n'ont rien à annoncer. La vérification
-documentaire, elle, est proportionnée : rien pour reformuler une définition déjà
-établie, davantage pour une attribution, une origine, une chronologie, un
-consensus ou un résultat empirique.
+### Les quatre exigences, communes au texte écrit et à la conversation
 
-Quatre exigences du prompt sont structurelles et ne doivent pas disparaître d'une
-réécriture — `src/domain/concepts/ai-prompt.ts`, ses tests et ceux de
-`ai-handoff.test.ts` les tiennent :
+Elles valent des deux côtés. `src/domain/concepts/ai-prompt.ts` et ses tests les tiennent pour
+la conversation ; `corpus/deepenings/PROTOCOLE.md` et `npm run corpus:deepen` les tiennent pour
+le texte écrit.
 
-1. **La méthode ne se décrit jamais.** Le prompt demande une explication qui monte
-   du premier abord jusqu'au niveau académique, et interdit de l'annoncer. Sans
-   cette interdiction, les modèles produisent des paliers étiquetés — « pour un
-   débutant », « pour aller plus loin » — qui découpent en tranches ce qui doit se
-   lire d'un trait.
-2. **Une lacune se déclare, elle ne se comble pas.** Citation, page, DOI, date,
-   statistique : ce dont l'IA n'a pas réellement le texte ne se reconstruit pas de
-   mémoire. C'est la seule protection possible, à distance, contre une
-   bibliographie plausible et fausse.
-3. **Le corpus transmis fait autorité sur la mémoire du modèle**, sans devenir un
-   dogme : une source extérieure peut le contredire, à condition d'être examinée
-   pour ce qu'elle est — traçabilité, niveau documentaire, ce qu'elle affirme
-   vraiment. Une incohérence interne à la carte se signale, elle ne se corrige pas
-   en silence.
-4. **La connaissance du modèle n'est pas une source, et une référence citée n'est
-   pas un texte lu.** Les deux confusions produisent la même chose : une
-   affirmation probablement correcte présentée comme documentairement établie. Le
-   corpus reste pour autant une base, pas un plafond — l'IA peut ouvrir des pistes,
-   à condition d'en dire le statut.
+1. **La méthode ne se décrit jamais.** L'explication monte du premier abord jusqu'au niveau
+   académique, et il est interdit de l'annoncer. Sans cette interdiction, les modèles
+   produisent des paliers étiquetés — « pour un débutant », « pour aller plus loin » — qui
+   découpent en tranches ce qui doit se lire d'un trait.
+2. **Une lacune se déclare, elle ne se comble pas.** Citation, page, DOI, date, statistique :
+   ce dont on n'a pas réellement le texte ne se reconstruit pas de mémoire. C'est la seule
+   protection possible contre une bibliographie plausible et fausse. Côté texte écrit, le champ
+   `consulted` de chaque source décide : `full-text` autorise à parler du contenu,
+   `metadata-only` n'établit que l'existence de la référence.
+3. **Le corpus fait autorité sur la mémoire du modèle**, sans devenir un dogme : une source
+   extérieure peut le contredire, à condition d'être examinée pour ce qu'elle est. Une
+   incohérence interne à la carte se signale, elle ne se corrige pas en silence.
+4. **La connaissance du modèle n'est pas une source, et une référence citée n'est pas un texte
+   lu.** Les deux confusions produisent la même chose : une affirmation probablement correcte
+   présentée comme documentairement établie. Le corpus reste pour autant une base, pas un
+   plafond.
 
 ---
 

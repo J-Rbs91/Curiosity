@@ -1,11 +1,11 @@
 /**
  * Types de domaine partagés par le corpus et l'interface.
  *
- * L'application produit **une carte**, et rien d'autre. L'approfondissement est délégué :
- * le lecteur emporte la carte et ses sources vers l'IA de son choix. Tout ce qui servait à
- * une session d'apprentissage — mécanisme détaillé, exemple, quiz, graphe de prérequis,
- * répétition espacée, cas pratiques — a été retiré : produire ce contenu coûtait 938 Ko de
- * matière documentaire pour 5 400 caractères affichés, et personne ne le lisait.
+ * L'application produit **une carte**, et un texte qui la prolonge. Tout ce qui servait à une
+ * session d'apprentissage — quiz, graphe de prérequis, répétition espacée, cas pratiques — a
+ * été retiré : produire ce contenu coûtait 938 Ko de matière documentaire pour 5 400
+ * caractères affichés, et personne ne le lisait. Ce qui l'a remplacé n'est pas une session
+ * plus courte, c'est un seul texte écrit à l'avance et relu — voir `Deepening`.
  */
 
 export type AuthorId = string;
@@ -212,6 +212,52 @@ export interface Concept {
    * en développement uniquement. Rien ne doit reposer sur son contenu.
    */
   provenance?: "fixture";
+}
+
+// ---------------------------------------------------------------------------
+// Approfondissement — le texte qui prolonge la carte
+// ---------------------------------------------------------------------------
+
+/**
+ * Une section du développement : une idée, son titre, ses paragraphes.
+ *
+ * Le titre nomme ce dont la section parle, jamais la fonction qu'elle occupe dans le texte.
+ * « Ce que “satisfaisant” veut dire ici » en est un ; « Pour aller plus loin » n'en est pas
+ * un — il étiquette un palier de difficulté, et obligerait le lecteur à se situer avant
+ * d'avoir compris. La règle est tenue par `corpus/deepenings/PROTOCOLE.md` et par le
+ * validateur de la projection.
+ */
+export interface DeepeningSection {
+  title: string;
+  /** Texte brut. Aucun Markdown : l'application rend ces chaînes telles quelles. */
+  paragraphs: string[];
+}
+
+/**
+ * Le texte qu'affiche « Approfondir ».
+ *
+ * **Il est écrit à l'avance et figé dans le dépôt.** L'application ne parle à aucun modèle :
+ * elle sert un texte qui a été produit une fois, contrôlé, puis projeté comme le reste du
+ * corpus. C'est la seule manière de tenir ensemble deux choses qu'un appel au moment du clic
+ * ne tient pas — un contenu relu, et un export statique sans serveur ni clé d'API.
+ *
+ * Il prolonge la carte, il ne la répète pas : la carte est à l'écran juste avant, et la
+ * redire ferait perdre au lecteur les quelques secondes pendant lesquelles il accepte de
+ * lire. Ce qu'il ajoute, c'est le mécanisme — pourquoi le concept produit ce qu'il produit,
+ * où il cesse de s'appliquer, ce qu'il ne dit pas.
+ *
+ * `limits` n'est pas une précaution de style : c'est la frontière documentaire rendue
+ * visible. Un texte long écrit à partir d'une carte de cinq sources dépasse nécessairement
+ * ce que ces sources établissent, et ce champ est l'endroit où ce dépassement se déclare au
+ * lieu de se dissimuler.
+ */
+export interface Deepening {
+  conceptId: ConceptId;
+  /** L'entrée en matière, sans titre : le problème que le concept résout. */
+  lead: string[];
+  sections: DeepeningSection[];
+  /** Ce que le corpus de la carte ne permet pas d'établir, nommé plutôt que tu. */
+  limits: string[];
 }
 
 // ---------------------------------------------------------------------------

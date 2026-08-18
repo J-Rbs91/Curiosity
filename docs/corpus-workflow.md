@@ -240,6 +240,30 @@ assouplir demande de modifier ce document d'abord.
 | `npm run corpus:build` | projette `corpus/validated/` vers `src/content/generated/`. Refuse si la validation échoue. |
 | `npm run corpus:brief -- <id>` | produit le dossier aveugle. |
 | `npm run corpus:audit` | état du corpus : couverture par auteur, par thème, sujets non instruits. |
+| `npm run corpus:deepen` | projette `corpus/deepenings/` vers `src/content/generated/`. En fin de sortie, la liste des cartes validées sans approfondissement : c'est la file de travail. |
+| `npm run corpus:deepen -- --check --only=<id>` | contrôle un seul approfondissement sans rien écrire. C'est ce que lance un agent rédacteur, puisqu'ils écrivent tous en parallèle. |
 
 Le fichier généré ne s'édite jamais à la main : une correction manuelle disparaît à la
 projection suivante, et aura vécu entre-temps sans enregistrement sourcé derrière elle.
+
+---
+
+## 8. Les approfondissements
+
+Une carte validée peut porter un **approfondissement** : le texte d'environ mille cinq cents
+mots que l'application affiche lorsqu'on appuie sur « Approfondir ». Il vit dans
+`corpus/deepenings/<id>.json`, au format `corpus/schema/deepening.schema.json`.
+
+C'est un second étage du même dispositif, avec la même règle : **rien ne s'affiche qui n'ait un
+fichier relu derrière lui.** L'application ne parle à aucun modèle au moment du clic ; le texte
+a été écrit une fois, hors ligne, et projeté.
+
+Le cadrage de rédaction est dans [`corpus/deepenings/PROTOCOLE.md`](../corpus/deepenings/PROTOCOLE.md).
+Il porte les quatre exigences documentaires, et surtout la distinction qui décide de tout :
+le champ `consulted` de chaque source. `full-text` autorise à parler du contenu du texte ;
+`metadata-only` n'établit que l'existence de la référence, et aucune phrase sur ce qu'elle
+contient.
+
+La chaîne est nommée et se relance : `/corpus-deepen`, qui lance un agent `corpus-deepener`
+par carte. Une fiche d'échafaudage n'en reçoit jamais, et la projection le refuse : un texte
+long écrit sur une carte non vérifiée propagerait l'invérifié au lieu de le contenir.

@@ -20,9 +20,19 @@ import { labelFor } from "@/lib/navigation-labels";
  * La hauteur de 44 px n'est pas décorative. Le libellé fait 20 px ; la marge
  * négative rend les 24 px restants cliquables sans déplacer le texte d'un pixel.
  */
-export function BackLink() {
+export function BackLink({ fallback }: { fallback?: string } = {}) {
   const pathname = usePathname();
-  const repli = parentOf(pathname) ?? "/";
+  /*
+   * Le repli déduit de l'arbre ne porte que le chemin, jamais la recherche : `parentOf` ne
+   * voit pas les `?c=<slug>` qui distinguent deux fiches partageant une même route. Cela
+   * suffit partout sauf sous une de ces fiches, où remonter au chemin nu tombe sur l'écran
+   * « introuvable » plutôt que sur le concept d'où l'on vient. L'écran qui connaît son slug
+   * passe donc son propre repli, et il est le seul à pouvoir le faire.
+   *
+   * Ce n'est le cas que d'une arrivée directe ou d'un rechargement : dès qu'un écran a été
+   * traversé, c'est la trace qui commande, et elle porte l'adresse complète.
+   */
+  const repli = fallback ?? parentOf(pathname) ?? "/";
   const [cible, setCible] = useState({ href: repli, label: labelFor(repli) });
 
   useEffect(() => {
