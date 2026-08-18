@@ -1,0 +1,95 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "genre-professionnel-et-style",
+  "slug": "genre-professionnel-et-style",
+  "status": "VALIDATED",
+  "title": "Genre professionnel et style",
+  "themes": [
+    "activite-empechee-et-metier"
+  ],
+  "domain": null,
+  "theme_labels": {
+    "activite-empechee-et-metier": "Ce que le travail empêche"
+  },
+  "authors": [
+    {
+      "name": "Yves Clot",
+      "app_author_id": null
+    },
+    {
+      "name": "Daniel Faïta",
+      "app_author_id": null
+    },
+    {
+      "name": "Gabriel Fernandez",
+      "app_author_id": null
+    },
+    {
+      "name": "Livia Scheller",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "L'article de 2000 est signé de quatre noms — Yves Clot, Daniel Faïta, Gabriel Fernandez et Livia Scheller — et les deux notions y sont définies au « nous » d'un collectif de recherche, sans qu'aucune part ne soit attribuée à l'un d'eux. Le texte de référence du couple genre / style, annoncé dans cette bibliographie comme à paraître, est signé du seul duo Clot et Faïta. Un mot sur l'homonymie : « genre » désigne ici le genre du métier — ce que le métier prescrit tacitement à ceux qui l'exercent — et non le rapport social de sexe ; le texte ne parle à aucun moment de femmes, d'hommes ni de division sexuelle du travail.",
+  "quotation": {
+    "text": "le genre professionnel, c’est-à-dire les « obligations » auxquelles parviennent […] ceux qui travaillent pour arriver à travailler",
+    "reference": "Yves Clot, Daniel Faïta, Gabriel Fernandez et Livia Scheller, « Entretiens en autoconfrontation croisée : une méthode en clinique de l'activité », PISTES, 2-1, mai 2000.",
+    "locator": "§ 4",
+    "language": "fr",
+    "original_text": null,
+    "original_language": null,
+    "translation": {
+      "kind": "none",
+      "translator": null,
+      "edition": null
+    }
+  },
+  "hook": "Qui vous a appris ce qui « se fait » dans votre métier, sans jamais l'écrire ?",
+  "summary": "Le métier impose des manières de faire que nul n'a prescrites : le genre. Chacun les retouche en agissant — le style —, et c'est cette retouche qui fait vivre le genre.",
+  "sources": [
+    {
+      "label": "Yves Clot, Daniel Faïta, Gabriel Fernandez et Livia Scheller, « Entretiens en autoconfrontation croisée : une méthode en clinique de l'activité », PISTES, 2-1, mai 2000.",
+      "kind": "primary",
+      "locator": "§ 4 et § 8",
+      "doi_isbn": "10.4000/pistes.3833",
+      "url": "https://journals.openedition.org/pistes/3833",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Yves Clot, « Géneros y estilos profesionales » / « Géneros e estilos profissionais », Laboreal, 10(1), 2014 — entrée de dictionnaire, en espagnol et en portugais.",
+      "kind": "primary",
+      "locator": null,
+      "doi_isbn": "10.4000/laboreal.5469 ; 10.4000/laboreal.5460",
+      "url": null,
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle",
+    "date": "2026-08-18",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "Ouvert https://journals.openedition.org/pistes/3833 (HTML intégral, 150 ko, curl 200) : titre « Entretiens en autoconfrontation croisée : une méthode en clinique de l'activité », PISTES 2-1 | 2000, meta citation_publication_date = 2000/mai/01, signé dans l'ordre « Yves Clot, Daniel Faïta, Gabriel Fernandez et Livia Scheller ». Crossref (api.crossref.org/works/10.4000/pistes.3833) donne les mêmes quatre auteurs, Clot en 'first', les trois autres en 'additional', vol. 2-1, 2000. Quatre signataires, ordre conforme : la carte ne range pas sous un nom ce que plusieurs ont écrit.",
+      "CITATION : § 4 lu dans ce texte porte exactement « Nous désignons ce travail comme le genre social du métier, le genre professionnel, c'est-à-dire les \"obligations\" auxquelles parviennent, sans chercher à le faire mais sans pourtant pouvoir éviter de le faire, ceux qui travaillent pour arriver à travailler, souvent malgré tout, parfois malgré l'organisation prescrite du travail. » Les deux fragments de la fiche se retrouvent caractère pour caractère (test de sous-chaîne) et la coupe est signalée par […]. Locator § 4 exact ; pas de traduction en jeu (texte source français).",
+      "SOURCES : locator « § 4 et § 8 » vérifié — le § 8 définit bien le second terme : « C'est ce travail d'ajustement du genre pour en faire un instrument de l'action que nous désignons comme le style de l'action. » Les deux DOI Laboreal résolvent via Crossref vers Yves Clot seul, Laboreal 10(1), 2014 : 10.4000/laboreal.5469 = « Géneros y estilos profesionales » (es), 10.4000/laboreal.5460 = « Géneros e estilos profissionais » (pt). Ouvert les deux pages (journals.openedition.org/laboreal/5469 et /5460, curl 200) : ce sont bien des entrées de dictionnaire.",
+      "ATTRIBUTION : la note dit vrai sur trois points vérifiés dans le texte même. (a) Les deux notions sont posées au « nous » (« Nous désignons ce travail comme… », « que nous désignons comme le style de l'action »), sans part individuelle. (b) La bibliographie de l'article porte littéralement « Clot, Y., Faïta, D. (sous presse). Genres et styles en analyse du travail. Concepts et méthodes. Travailler, 4. » — texte de référence bien signé du seul duo, bien annoncé comme à paraître. (c) Homonymie : recherche plein texte sur femme / homme / sexe / sexué — aucune occurrence ; le genre est ici celui du métier, réglant « l'activité personnelle de façon tacite » (§ 4).",
+      "Filiation, pour mémoire et non comme défaut : l'entrée Laboreal de Clot déclare elle-même que le couple genre/style est « extrait » de l'analyse littéraire (Bakhtine 1984, Schaeffer 1989) et renvoie à Clot & Faïta 2000 comme référence. La carte n'attribue pas au collectif l'invention des notions littéraires, mais leur transposition à l'activité de travail, ce que Clot revendique lui-même. Attribution confirmée.",
+      "PROSE : le hook (« ce qui se fait… sans jamais l'écrire ») est porté par § 4 (« corps d'évaluations partagées qui règlent l'activité personnelle de façon tacite ») et § 5 (« mémoire impersonnelle et collective… manières de se tenir, de s'adresser »). Le summary l'est mot à mot par § 8 : « au besoin en retouchant la règle, le geste ou le mot, inaugurant ainsi une variante du genre… Ce faisant, c'est le développement, donc la vie même du genre, qui est assuré. » Ni débordement ni sous-affirmation.",
+      "Hors des quatre points, sans conséquence sur le verdict : le champ interne consulted = 'metadata-only' sur la source Laboreal sous-déclare l'accès réel — les deux entrées sont en libre accès et j'ai lu leur texte intégral. Champ non affiché au lecteur.",
+      "Rien resté fermé : aucune ressource nécessaire ne m'a été refusée, aucun défi anti-robot rencontré. Les bases OpenAlex / Semantic Scholar n'ont pas été interrogées (quota annoncé en échec) ; leur silence n'entre donc dans aucun constat."
+    ]
+  },
+  "notes": [
+    "La citation est coupée une seule fois, par […], sur l'incise « , sans chercher à le faire mais sans pourtant pouvoir éviter de le faire, ». La coupe retranche une nuance — ces obligations ne sont ni voulues ni évitables — sans retourner le sens : ce qui reste dit toujours qu'elles sont produites par ceux qui les subissent. La phrase commence en cours de phrase (elle laisse « Nous désignons ce travail comme le genre social du métier, ») et s'arrête avant « , souvent malgré tout, parfois malgré l'organisation prescrite du travail » : reprendre le début portait le fragment à 157 caractères.",
+    "La définition du style dans le même texte est verbatim et tenait sous la limite : « C'est ce travail d'ajustement du genre pour en faire un instrument de l'action que nous désignons comme le style de l'action » (§ 8). Elle a été écartée parce qu'elle est inintelligible sans le genre, terme qu'elle n'explique pas et que le lecteur risque justement de lire au sens du rapport social de sexe. Le résumé porte le rapport entre les deux.",
+    "Le texte de référence du couple, annoncé « sous presse » dans la bibliographie de l'article, n'a pas été ouvert et n'est pas daté ici : la revue qui le publie n'est diffusée que par Cairn, en 403, aucun DOI n'existe pour lui et HAL ne le connaît pas. La carte s'appuie donc sur un texte qui définit les deux notions mais qui n'est pas leur texte de référence.",
+    "L'article lu est d'abord un texte de méthode : son titre et son résumé portent sur l'autoconfrontation croisée, et genre et style y sont exposés en deux sections théoriques qui servent d'appui à la méthode. Les définitions relevées sont complètes, mais on n'y trouvera pas les conditions d'apparition d'un genre, sa transmission ni sa mort.",
+    "Le texte ne déclare nulle part emprunter le couple genre / style à Bakhtine, alors que la filiation est courante dans la littérature : Bakhtine est en bibliographie mais n'est mobilisé dans le corps que sur la compréhension. Écrire que ce texte reprend les genres du discours de Bakhtine serait une inférence.",
+    "Aucune source secondaire n'a été ouverte : aucune réception, aucune contestation, aucun relevé de reprise n'est rapporté. L'entrée de dictionnaire de 2014, signée du seul Clot, est affichée sur sa notice seule.",
+    "Un exemplaire librement accessible de Clot et Faïta, « Genres et styles en analyse du travail. Concepts et méthodes », Travailler, 2000, 4, p. 7-42, existe sur une page personnelle : il corrobore l'attribution du couple aux deux auteurs et l'emprunt déclaré de la notion de genre à Bakhtine, mais il n'est pas porté en source — ce n'est pas un dépôt institutionnel."
+  ]
+}

@@ -12,6 +12,178 @@ import type { Concept } from "@/types";
 
 export const generatedConcepts: Concept[] = [
   {
+    "id": "activite-empechee",
+    "slug": "activite-empechee",
+    "title": "Le réel de l'activité",
+    "authorLabel": "Yves Clot",
+    "hookQuestion": "Ce que vous avez fait aujourd'hui dit-il tout ce que votre travail a été ?",
+    "shortExplanation": "Ce qui se fait n'épuise pas le travail : le réel de l'activité a un volume dont l'activité réalisée n'est que la surface, et c'est lui que l'analyse cherche à ouvrir.",
+    "authors": [],
+    "themes": [
+      "activite-empechee-et-metier"
+    ],
+    "themeLabel": "Ce que le travail empêche",
+    "attributionNote": "Yves Clot signe seul le texte de 2004 d'où vient la citation, mais il n'y présente pas la formule comme neuve : il l'introduit en renvoyant à un texte antérieur de lui-même, qui n'a pas pu être ouvert, et rapporte ailleurs à Vygotski l'idée qui la soutient. L'élaboration est celle de l'équipe de clinique de l'activité du Cnam, dont les cosignatures occupent un tiers de sa bibliographie. Un point que le lecteur doit connaître : ce texte dit l'écart entre l'activité réalisée et le réel de l'activité ; l'énumération de ce que ce réel contient — ce qu'on n'a pas pu faire, ce qu'on a cherché à faire sans y parvenir — se lit dans un texte du même auteur paru vingt ans plus tard.",
+    "quotation": {
+      "text": "le réel de l’activité possède un volume dont l’activité réalisée par un opérateur n’est jamais que la surface.",
+      "reference": "Yves Clot, « Action et connaissance en clinique de l'activité », Activités, 1-1, avril 2004, p. 23-33, p. 31 (§ 29)"
+    },
+    "sources": [
+      {
+        "label": "Yves Clot, « Action et connaissance en clinique de l'activité », Activités, 1-1, avril 2004, p. 23-33.",
+        "kind": "primary",
+        "reference": "p. 31 · 10.4000/activites.1145",
+        "url": "https://journals.openedition.org/activites/pdf/1145"
+      },
+      {
+        "label": "Yves Clot, « J. Leplat, l'ouverture et la force d'esprit », PISTES, 26-3, 2024 — reformulation tardive où se lit l'énumération de ce que contient le réel de l'activité.",
+        "kind": "primary",
+        "reference": "§ 5-6 · 10.4000/1356u",
+        "url": "https://hal.science/hal-05334852v1/document"
+      },
+      {
+        "label": "Jean-Yves Bonnefond et Yves Clot, « Clinique du travail et santé au travail : ouvertures, perspectives et limites », PISTES, 20-1, 2018.",
+        "kind": "primary",
+        "reference": "note 2 · 10.4000/pistes.5538",
+        "url": "https://hal.science/hal-02150864/document"
+      }
+    ]
+  },
+  {
+    "id": "analyse-du-travail",
+    "slug": "analyse-du-travail",
+    "title": "Analyse du travail",
+    "authorLabel": "André Ombredane, Jean-Marie Faverge",
+    "hookQuestion": "Décrire un travail élément par élément : que reste-t-il de ce qui s'y fait ?",
+    "shortExplanation": "Décomposer le travail en éléments brise les structures dont il est fait : l'inventaire des fragments ne rend plus compte du comportement réel.",
+    "authors": [],
+    "themes": [
+      "tache-et-activite"
+    ],
+    "themeLabel": "Ce qui est demandé, ce qui est fait",
+    "attributionNote": "La méthode et sa mise en forme de référence pour le champ francophone viennent de L'analyse du travail, ouvrage cosigné par André Ombredane et Jean-Marie Faverge et paru en 1955, qui n'a pas pu être ouvert : sa notice de bibliothèque en établit la double signature, rien de son contenu. Le nom, lui, ne vient pas de ce livre — l'expression circulait avant lui, et le texte de 1952 cité ici parle déjà des domaines « où l'on pratique l'analyse du travail ». La citation affichée vient de ce texte antérieur, « Analyse et structure du travail » (1952), signé de Faverge seul, et la distinction entre analyse de la tâche et analyse de l'activité n'y figure pas — elle n'est rapportée à l'ouvrage de 1955 que par des commentateurs, en seconde main.",
+    "quotation": {
+      "text": "L'inventaire des fragments ainsi obtenu ne permet plus de rendre compte du comportement réel et ne peut donner naissance qu'à du verbalisme.",
+      "reference": "Jean-Marie Faverge, « Analyse et structure du travail », Bulletin du CERP, n° 1, janvier-juin 1952, p. 1-8 ; republié dans PISTES, 13-2, 2011, § 1, paragraphe liminaire"
+    },
+    "sources": [
+      {
+        "label": "Jean-Marie Faverge, « Analyse et structure du travail », Bulletin du CERP, n° 1, janvier-juin 1952, p. 1-8 ; republié dans PISTES, 13-2, 2011.",
+        "kind": "primary",
+        "reference": "§ 1 · 10.4000/pistes.1789",
+        "url": "https://journals.openedition.org/pistes/1789"
+      },
+      {
+        "label": "André Ombredane et Jean-Marie Faverge, L'analyse du travail. Facteur d'économie humaine et de productivité, Paris, Presses universitaires de France, 1955, 236 p.",
+        "kind": "primary",
+        "reference": "BnF ark:/12148/cb32497119k",
+        "url": "https://catalogue.bnf.fr/ark:/12148/cb32497119k"
+      },
+      {
+        "label": "Régis Ouvrier-Bonnaz, « Analyse et structure du travail de Jean-Marie Faverge », PISTES, 13-2, 2011 — présentation accompagnant la republication.",
+        "kind": "secondary-academic",
+        "reference": "10.4000/pistes.2537",
+        "url": "https://journals.openedition.org/pistes/2537"
+      },
+      {
+        "label": "Guy Karnas et Pierre Salengros, « L'analyse du travail trente ans après Ombredane et Faverge », PISTES, 19-2, 2017 — republication d'un texte de 1986.",
+        "kind": "secondary-academic",
+        "reference": "10.4000/pistes.5122",
+        "url": "https://journals.openedition.org/pistes/5122"
+      }
+    ]
+  },
+  {
+    "id": "catachrese",
+    "slug": "catachrese",
+    "title": "Catachrèse",
+    "authorLabel": "Pierre Rabardel",
+    "hookQuestion": "Se servir d'un outil pour ce qu'il n'est pas : erreur, ou travail de conception ?",
+    "shortExplanation": "Utiliser un outil à la place d'un autre passe pour un détournement à corriger. Rabardel y voit l'indice que l'utilisateur participe à la conception des usages.",
+    "authors": [],
+    "themes": [
+      "activite-instrumentee-et-conception"
+    ],
+    "themeLabel": "L'outil et l'activité",
+    "attributionNote": "Le mot n'est pas de Pierre Rabardel, et c'est lui-même qui l'écrit : il l'emprunte à la linguistique et à la rhétorique, où il désigne l'usage d'un mot au-delà de son acception propre, et rapporte son introduction en ergonomie à Winsemius, en 1969, « selon Faverge ». Jean-Marie Faverge n'apparaît donc que comme usager du terme et fournisseur de l'exemple canonique — la clef employée à frapper à la place d'un marteau. Ce qui revient à Rabardel est le retournement : cesser de lire la catachrèse comme un détournement au regard de la rationalité inscrite dans l'artefact, et y voir l'indice que les utilisateurs contribuent à la conception des usages.",
+    "quotation": {
+      "text": "La notion de catachrèse est un concept qui désigne l'écart entre le prévu et le réel dans l'utilisation des artefacts.",
+      "reference": "Pierre Rabardel, Les hommes et les technologies ; approche cognitive des instruments contemporains, Paris, Armand Colin, 1995 — version d'auteur déposée sur HAL, Chapitre 7, p. 99"
+    },
+    "sources": [
+      {
+        "label": "Pierre Rabardel, Les hommes et les technologies ; approche cognitive des instruments contemporains, Paris, Armand Colin, 1995, 239 p. — version d'auteur déposée sur HAL.",
+        "kind": "primary",
+        "reference": "chap. 7, p. 99 · HAL hal-01017462",
+        "url": "https://hal.science/hal-01017462v1"
+      },
+      {
+        "label": "Pierre Rabardel, People and Technology. A cognitive approach to contemporary instruments, Université Paris 8, 2002, 188 p. — traduction anglaise déposée par l'auteur.",
+        "kind": "primary",
+        "reference": "« The notion of catachresis » · HAL hal-01020705",
+        "url": "https://hal.science/hal-01020705v1"
+      }
+    ]
+  },
+  {
+    "id": "concevoir-pour-l-activite",
+    "slug": "concevoir-pour-l-activite",
+    "title": "Ce que l'artefact cristallise de l'activité",
+    "authorLabel": "Pascal Béguin",
+    "hookQuestion": "Une machine décide-t-elle de votre façon de travailler avant que vous y touchiez ?",
+    "shortExplanation": "Tout artefact cristallise un modèle de son utilisateur et de son activité. Ce modèle agit avant tout usage : au concepteur de connaître le travail réel avant de décider.",
+    "authors": [],
+    "themes": [
+      "activite-instrumentee-et-conception"
+    ],
+    "themeLabel": "L'outil et l'activité",
+    "attributionNote": "Pascal Béguin signe seul l'article de 2007, et il n'y revendique aucune invention : son résumé annonce un travail de distinction — « on propose d'en distinguer trois » — et il adosse à des travaux d'autres auteurs chacune des trois manières de prendre en compte l'activité qu'il sépare. Le motif de la cristallisation lui est antérieur : il vient de Léontiev et circule en ergonomie francophone par Pierre Rabardel, par ailleurs son coauteur, qui écrit en 1995 dans Les hommes et les technologies que l'instrument est « porteur des opérations de travail qui sont comme cristallisées en lui » et parle de « la cristallisation de l'expérience dans les instruments ». Ce qui revient en propre à Béguin est la partition entre cristallisation, plasticité et développement, et la constitution de la cristallisation en position nommée sur le statut de l'activité dans la conception. Les « espaces d'activité future possibles », qu'on lui prête parfois, sont donnés par lui à François Daniellou.",
+    "quotation": {
+      "text": "L'idée centrale est que tout dispositif technique, tout artefact, « cristallise » […] un modèle de l'utilisateur et de son activité.",
+      "reference": "Pascal Béguin, « Prendre en compte l'activité de travail pour concevoir », Activités, 4-2, octobre 2007, § 7, section « La cristallisation »"
+    },
+    "sources": [
+      {
+        "label": "Pascal Béguin, « Prendre en compte l'activité de travail pour concevoir », Activités, 4-2, octobre 2007.",
+        "kind": "primary",
+        "reference": "§ 7 · 10.4000/activites.1719",
+        "url": "https://journals.openedition.org/activites/1719"
+      },
+      {
+        "label": "Pascal Béguin, « Taking activity into account during the design process », Activités, 4-2, 2007 — version anglaise publiée par la revue.",
+        "kind": "primary",
+        "reference": "§ 8 · 10.4000/activites.1727",
+        "url": "https://journals.openedition.org/activites/1727"
+      }
+    ]
+  },
+  {
+    "id": "debat-de-normes",
+    "slug": "debat-de-normes",
+    "title": "Débats de normes",
+    "authorLabel": "Yves Schwartz",
+    "hookQuestion": "Travailler, est-ce appliquer des normes ou les rediscuter à chaque fois ?",
+    "shortExplanation": "Le travail prescrit n'est qu'une norme parmi celles qui précèdent l'activité. Celui qui travaille les renormalise sans cesse, et c'est sa santé qui se joue dans ce débat.",
+    "authors": [],
+    "themes": [
+      "activite-empechee-et-metier"
+    ],
+    "themeLabel": "Ce que le travail empêche",
+    "attributionNote": "Yves Schwartz signe seul l'article de 2007 où la formule se lit, au pluriel : « débats de normes ». Il en assume la racine et la nomme — c'est chez Georges Canguilhem, cité douze fois dans ce texte, qu'il prend l'idée de la santé comme débat entre des normes venues du milieu et celles que le vivant produit et cherche à promouvoir. Une réserve pour le lecteur : ce texte ne porte pas l'expression « usage de soi », qui n'y figure pas une seule fois ; les deux formules sont distinctes et la carte n'en annonce qu'une.",
+    "quotation": {
+      "text": "[…] des débats de normes ne cessent d’occuper, de saisir l’activité humaine […]",
+      "reference": "Yves Schwartz, « Un bref aperçu de l'histoire culturelle du concept d'activité », @ctivités, 4-2, 2007, p. 122-133, p. 131"
+    },
+    "sources": [
+      {
+        "label": "Yves Schwartz, « Un bref aperçu de l'histoire culturelle du concept d'activité », @ctivités, 4-2, 2007, p. 122-133.",
+        "kind": "primary",
+        "reference": "p. 131 · 10.4000/activites.1728",
+        "url": "https://journals.openedition.org/activites/1728"
+      }
+    ]
+  },
+  {
     "id": "deplacement-des-buts",
     "slug": "deplacement-des-buts",
     "title": "Déplacement des buts",
@@ -63,6 +235,38 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "documents-prescripteurs",
+    "slug": "documents-prescripteurs",
+    "title": "Documents prescripteurs",
+    "authorLabel": "Jacques Leplat",
+    "hookQuestion": "Pourquoi la procédure ne dit-elle jamais tout ce qu'il faut faire ?",
+    "shortExplanation": "Consigne, procédure, mode d'emploi disent ce qui doit être fait pour obtenir un résultat ; ils n'explicitent jamais toute la tâche et laissent le détail à l'opérateur.",
+    "authors": [],
+    "themes": [
+      "tache-et-activite"
+    ],
+    "themeLabel": "Ce qui est demandé, ce qui est fait",
+    "attributionNote": "L'article de 2004 est signé de Jacques Leplat seul. Ce qui est de lui : avoir constitué le document prescripteur — consigne, procédure, mode d'emploi, aide textuelle au travail — en objet d'analyse ergonomique à part entière, et avoir posé qu'un tel document n'explicite jamais complètement la tâche. Ce qu'il hérite : la distinction entre travail prescrit et travail réel, qu'il emploie sans jamais s'en dire l'auteur, et la caractérisation même de l'objet, qu'il porte dès son second paragraphe au crédit de Mayen et Savoyant (2002) et de Veyrac, Cellier et Bertrand (1997).",
+    "quotation": {
+      "text": "Les documents prescripteurs visent à orienter l’action, à dire ce qui doit être fait dans des conditions données pour obtenir un certain résultat.",
+      "reference": "Jacques Leplat, « Éléments pour l'étude des documents prescripteurs », Activités, 1-2, octobre 2004, § 2"
+    },
+    "sources": [
+      {
+        "label": "Jacques Leplat, « Éléments pour l'étude des documents prescripteurs », Activités, 1-2, octobre 2004.",
+        "kind": "primary",
+        "reference": "§ 2 · 10.4000/activites.1293",
+        "url": "https://journals.openedition.org/activites/1293"
+      },
+      {
+        "label": "Jacques Leplat, Repères pour l'analyse de l'activité en ergonomie, Paris, Presses universitaires de France, 2008, vii-244 p. — recueil qui reprend l'article comme chapitre 3.",
+        "kind": "primary",
+        "reference": "978-2-13-056839-1",
+        "url": "https://openlibrary.org/books/OL23608015M"
+      }
+    ]
+  },
+  {
     "id": "echelles-de-mesure",
     "slug": "echelles-de-mesure",
     "title": "Échelles de mesure",
@@ -92,6 +296,64 @@ export const generatedConcepts: Concept[] = [
         "kind": "secondary-academic",
         "reference": "10.1037/0033-2909.100.3.398",
         "url": "https://doi.org/10.1037/0033-2909.100.3.398"
+      }
+    ]
+  },
+  {
+    "id": "environnement-capacitant",
+    "slug": "environnement-capacitant",
+    "title": "Environnement capacitant",
+    "authorLabel": "Justine Arnoud, Pierre Falzon",
+    "hookQuestion": "On vous donne les moyens : cela suffit-il pour que vous puissiez vraiment agir ?",
+    "shortExplanation": "Une ressource mise à disposition n'est pas encore un pouvoir d'agir : elle doit être convertie en capabilité, et cette conversion exige des conditions qui se conçoivent.",
+    "authors": [],
+    "themes": [
+      "regulation-et-marges"
+    ],
+    "themeLabel": "Ce que l'opérateur ajuste",
+    "attributionNote": "L'article de 2013 est cosigné par Justine Arnoud et Pierre Falzon. Trois de ses pièces ne sont pas d'eux, et ils l'écrivent : la capabilité est empruntée à Amartya Sen ; l'expression « environnement capacitant » arrive chaque fois accompagnée d'un renvoi à des travaux antérieurs de Pierre Falzon ; le « facteur de conversion » est cité avec sa page au crédit de Solveig Fernagu-Oudet. Ce que l'article ajoute en propre est la conversion elle-même : le passage des ressources aux capabilités, et les conditions que ce passage exige.",
+    "quotation": {
+      "text": "la seule existence de ressources […] ne suffit pas. Celles-ci doivent être converties en « capabilités » - pouvoir effectif de faire quelque chose",
+      "reference": "Justine Arnoud et Pierre Falzon, « Changement organisationnel et reconception de l'organisation : des ressources aux capabilités », Activités, 10-2, 2013, p. 109-130, p. 114, § 15"
+    },
+    "sources": [
+      {
+        "label": "Justine Arnoud et Pierre Falzon, « Changement organisationnel et reconception de l'organisation : des ressources aux capabilités », Activités, 10-2, 2013, p. 109-130.",
+        "kind": "primary",
+        "reference": "p. 114 · 10.4000/activites.760",
+        "url": "https://journals.openedition.org/activites/760"
+      },
+      {
+        "label": "Pierre Falzon et Vanina Mollo, « Para uma ergonomia construtiva : as condições para um trabalho capacitante », Laboreal, 5(1), 2009 — corps du texte en portugais.",
+        "kind": "primary",
+        "reference": "§ 16 et § 64-67 · 10.4000/laboreal.10429",
+        "url": "https://journals.openedition.org/laboreal/10429"
+      }
+    ]
+  },
+  {
+    "id": "ergonomie-tache-ergonomie-activite",
+    "slug": "ergonomie-tache-ergonomie-activite",
+    "title": "La tâche comme moyen, non comme horizon",
+    "authorLabel": "François Hubault, Fabrice Bourgeois",
+    "hookQuestion": "Concevoir un poste : vise-t-on la tâche à tenir, ou l'activité qui la tiendra ?",
+    "shortExplanation": "Deux ergonomies s'opposent : l'une prend la tâche pour horizon et corrige la prescription, l'autre en fait le moyen de l'activité, qu'aucun modèle prescriptif n'épuise.",
+    "authors": [],
+    "themes": [
+      "tache-et-activite"
+    ],
+    "themeLabel": "Ce qui est demandé, ce qui est fait",
+    "attributionNote": "François Hubault et Fabrice Bourgeois cosignent l'article de 2004 où cette position est prise. La distinction entre tâche et activité n'est pas d'eux : leur texte la tient pour un acquis de la discipline — sa première phrase est « La distinction entre tâche et activité est fondatrice de l'ergonomie » — et ne la rapporte à aucun fondateur, aucun des auteurs à qui la littérature l'attribue ne figurant dans sa bibliographie. Ce qui leur revient est la position prise dans une dispute, et le renversement de l'ordre des deux termes.",
+    "quotation": {
+      "text": "On est donc là au cœur de ce qui se joue dans l'ingénierie de projet : faire de la tâche le moyen de l'activité et non pas son horizon.",
+      "reference": "François Hubault et Fabrice Bourgeois, « Disputes sur l'ergonomie de la tâche et de l'activité, ou la finalité de l'ergonomie en question », Activités, 1-1, avril 2004, § 45"
+    },
+    "sources": [
+      {
+        "label": "François Hubault et Fabrice Bourgeois, « Disputes sur l'ergonomie de la tâche et de l'activité, ou la finalité de l'ergonomie en question », Activités, 1-1, avril 2004.",
+        "kind": "primary",
+        "reference": "§ 45 · 10.4000/activites.1149",
+        "url": "https://journals.openedition.org/activites/1149"
       }
     ]
   },
@@ -145,6 +407,70 @@ export const generatedConcepts: Concept[] = [
         "kind": "secondary-academic",
         "reference": "10.1108/S0733-558X(2012)0000036006",
         "url": "https://api.pageplace.de/preview/DT0400.9781780527130_A24157121/preview-9781780527130_A24157121.pdf"
+      }
+    ]
+  },
+  {
+    "id": "genese-instrumentale",
+    "slug": "genese-instrumentale",
+    "title": "Genèse instrumentale",
+    "authorLabel": "Pierre Rabardel",
+    "hookQuestion": "L'outil qu'on vous remet est-il déjà un instrument entre vos mains ?",
+    "shortExplanation": "Un instrument n'est pas donné : c'est un artefact plus les schèmes que le sujet lui associe. L'utilisateur l'élabore, en transformant l'objet et ses propres schèmes.",
+    "authors": [],
+    "themes": [
+      "activite-instrumentee-et-conception"
+    ],
+    "themeLabel": "L'outil et l'activité",
+    "attributionNote": "Pierre Rabardel signe seul Les hommes et les technologies (1995) et y nomme lui-même la genèse instrumentale, dès son introduction et dans le titre de deux chapitres : le concept est bien de lui, et non de sa réception. Une nuance qu'il ne cache pas : la formule « approche instrumentale », qu'il revendique dans l'ouvrage, figure déjà dans le titre d'un texte antérieur de Vérillon que sa propre bibliographie cite — l'ouvrage porte l'expression, ce qui n'établit pas qu'il l'ait forgée. Le texte lu est la version d'auteur déposée en archive ouverte, dont la pagination n'est pas celle de l'édition imprimée.",
+    "quotation": {
+      "text": "En effet, les instruments ne sont pas donnés d’emblée à l’utilisateur : celui-ci les élabore à travers des activités de genèse instrumentale.",
+      "reference": "Pierre Rabardel, Les hommes et les technologies ; approche cognitive des instruments contemporains, Paris, Armand Colin, 1995 — version d'auteur déposée sur HAL, Introduction, p. 4"
+    },
+    "sources": [
+      {
+        "label": "Pierre Rabardel, Les hommes et les technologies ; approche cognitive des instruments contemporains, Paris, Armand Colin, 1995, 239 p. — version d'auteur déposée sur HAL.",
+        "kind": "primary",
+        "reference": "Introduction, p. 4 · HAL hal-01017462",
+        "url": "https://hal.science/hal-01017462v1"
+      },
+      {
+        "label": "Pierre Rabardel, People and Technology. A cognitive approach to contemporary instruments, Université Paris 8, 2002, 188 p. — traduction anglaise déposée par l'auteur.",
+        "kind": "primary",
+        "reference": "HAL hal-01020705",
+        "url": "https://hal.science/hal-01020705v1"
+      }
+    ]
+  },
+  {
+    "id": "genre-professionnel-et-style",
+    "slug": "genre-professionnel-et-style",
+    "title": "Genre professionnel et style",
+    "authorLabel": "Yves Clot, Daniel Faïta, Gabriel Fernandez, Livia Scheller",
+    "hookQuestion": "Qui vous a appris ce qui « se fait » dans votre métier, sans jamais l'écrire ?",
+    "shortExplanation": "Le métier impose des manières de faire que nul n'a prescrites : le genre. Chacun les retouche en agissant — le style —, et c'est cette retouche qui fait vivre le genre.",
+    "authors": [],
+    "themes": [
+      "activite-empechee-et-metier"
+    ],
+    "themeLabel": "Ce que le travail empêche",
+    "attributionNote": "L'article de 2000 est signé de quatre noms — Yves Clot, Daniel Faïta, Gabriel Fernandez et Livia Scheller — et les deux notions y sont définies au « nous » d'un collectif de recherche, sans qu'aucune part ne soit attribuée à l'un d'eux. Le texte de référence du couple genre / style, annoncé dans cette bibliographie comme à paraître, est signé du seul duo Clot et Faïta. Un mot sur l'homonymie : « genre » désigne ici le genre du métier — ce que le métier prescrit tacitement à ceux qui l'exercent — et non le rapport social de sexe ; le texte ne parle à aucun moment de femmes, d'hommes ni de division sexuelle du travail.",
+    "quotation": {
+      "text": "le genre professionnel, c’est-à-dire les « obligations » auxquelles parviennent […] ceux qui travaillent pour arriver à travailler",
+      "reference": "Yves Clot, Daniel Faïta, Gabriel Fernandez et Livia Scheller, « Entretiens en autoconfrontation croisée : une méthode en clinique de l'activité », PISTES, 2-1, mai 2000, § 4"
+    },
+    "sources": [
+      {
+        "label": "Yves Clot, Daniel Faïta, Gabriel Fernandez et Livia Scheller, « Entretiens en autoconfrontation croisée : une méthode en clinique de l'activité », PISTES, 2-1, mai 2000.",
+        "kind": "primary",
+        "reference": "§ 4 et § 8 · 10.4000/pistes.3833",
+        "url": "https://journals.openedition.org/pistes/3833"
+      },
+      {
+        "label": "Yves Clot, « Géneros y estilos profesionales » / « Géneros e estilos profissionais », Laboreal, 10(1), 2014 — entrée de dictionnaire, en espagnol et en portugais.",
+        "kind": "primary",
+        "reference": "10.4000/laboreal.5469 ; 10.4000/laboreal.5460",
+        "url": "https://doi.org/10.4000/laboreal.5469 ; 10.4000/laboreal.5460"
       }
     ]
   },
@@ -308,6 +634,38 @@ export const generatedConcepts: Concept[] = [
         "kind": "primary",
         "reference": "p. 34 · 10.56645/jmde.v7i15.297",
         "url": "https://jmde.com/index.php/jmde_1/article/view/297"
+      }
+    ]
+  },
+  {
+    "id": "marge-de-manoeuvre",
+    "slug": "marge-de-manoeuvre",
+    "title": "Marge de manœuvre",
+    "authorLabel": "Fabien Coutarel, François Daniellou, Bernard Dugué",
+    "hookQuestion": "Deux façons de faire au lieu d'une : qu'est-ce que cela change pour la santé ?",
+    "shortExplanation": "Selon qu'une situation offre ou non plusieurs modes opératoires possibles, l'opérateur peut ou non faire face aux aléas. La notion lie ce contrôle à la santé.",
+    "authors": [],
+    "themes": [
+      "regulation-et-marges"
+    ],
+    "themeLabel": "Ce que l'opérateur ajuste",
+    "attributionNote": "Fabien Coutarel, François Daniellou et Bernard Dugué cosignent l'article de 2003 qui donne à la notion une définition explicite, la décline en deux régimes — situation de conception et situation de fonctionnement — et en fait l'élément central d'un modèle de prévention des troubles musculo-squelettiques. Ils ne l'ont pas forgée et ne le prétendent pas : ils la reçoivent de l'ergonomie francophone, et leur texte n'en donne aucune référence fondatrice. Qui a écrit le premier « marge de manœuvre », et à quelle date, n'est pas établi : 2003 n'est pas une date d'origine.",
+    "quotation": {
+      "text": "D’une manière générale, la notion de marge de manœuvre établit un lien entre la santé et le contrôle de chacun sur sa situation de travail.",
+      "reference": "Fabien Coutarel, François Daniellou et Bernard Dugué, « Interroger l'organisation du travail au regard des marges de manœuvre en conception et en fonctionnement », PISTES, 5-2, décembre 2003, § 23"
+    },
+    "sources": [
+      {
+        "label": "Fabien Coutarel, François Daniellou et Bernard Dugué, « Interroger l'organisation du travail au regard des marges de manœuvre en conception et en fonctionnement », PISTES, 5-2, décembre 2003.",
+        "kind": "primary",
+        "reference": "§ 23 · 10.4000/pistes.3328",
+        "url": "https://journals.openedition.org/pistes/3328"
+      },
+      {
+        "label": "Fabien Coutarel, La prévention des troubles musculo-squelettiques en conception : quelles marges de manœuvre pour le déploiement de l'activité ?, thèse de doctorat d'ergonomie, Université Victor Segalen Bordeaux 2, 2004.",
+        "kind": "primary",
+        "reference": "p. 152-156 · HAL tel-00821248",
+        "url": "https://theses.hal.science/tel-00821248/document"
       }
     ]
   },
@@ -616,6 +974,88 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "regulation-de-l-activite",
+    "slug": "regulation-de-l-activite",
+    "title": "Réguler son activité et se réguler soi-même",
+    "authorLabel": "Jacques Leplat, Xavier Cuny",
+    "hookQuestion": "En ajustant votre façon de faire, qu'ajustez-vous d'autre que la tâche ?",
+    "shortExplanation": "L'opérateur ramène à zéro l'écart entre le but et le résultat. Il poursuit aussi des fins propres — santé, confort — et se modifie lui-même quand les contraintes pèsent.",
+    "authors": [],
+    "themes": [
+      "regulation-et-marges"
+    ],
+    "themeLabel": "Ce que l'opérateur ajuste",
+    "attributionNote": "Le texte de synthèse lu ici, « La notion de régulation dans l'analyse de l'activité » (2006), est signé de Jacques Leplat seul, et il n'y revendique la paternité de rien : il emprunte sa définition du système régulé à la théorie du contrôle et rappelle que le modèle a été utilisé avant lui par Faverge. Le schéma à deux boucles que la discipline lui attribue paraît dans un ouvrage cosigné avec Xavier Cuny, Introduction à la psychologie du travail (1977), qui n'a pas été ouvert : la carte porte donc les deux noms. Le nom de « double régulation » vient de la réception et n'est pas des auteurs.",
+    "quotation": {
+      "text": "[…] l’opérateur se gère lui-même en même temps que son action […]",
+      "reference": "Jacques Leplat, « La notion de régulation dans l'analyse de l'activité », PISTES, 8-1, 2006, § 23"
+    },
+    "sources": [
+      {
+        "label": "Jacques Leplat, « La notion de régulation dans l'analyse de l'activité », PISTES, 8-1, 2006.",
+        "kind": "primary",
+        "reference": "§ 23 · 10.4000/pistes.3101",
+        "url": "https://journals.openedition.org/pistes/3101"
+      },
+      {
+        "label": "Jacques Leplat et Xavier Cuny, Introduction à la psychologie du travail, Paris, Presses universitaires de France, coll. « Le psychologue », 1977, 240 p. ; 2e éd. revue et augmentée, 1984, 305 p.",
+        "kind": "primary",
+        "reference": "2-13-038589-3",
+        "url": "https://catalogue.bnf.fr/ark:/12148/cb34708173j"
+      },
+      {
+        "label": "Muriel Prévot-Carpentier et Cathy Toupin, « Le modèle de double régulation de l'activité : un modèle-guide pour la formation en ergonomie à l'Université », PISTES, 26-3, 2024.",
+        "kind": "secondary-academic",
+        "reference": "10.4000/130lc",
+        "url": "https://journals.openedition.org/pistes/8708"
+      },
+      {
+        "label": "Maria Sol Perez Toralla et Alexandre Morais, « Compromis et arbitrages dans l'activité : réflexions à partir du modèle de double régulation », PISTES, 26-3, 2024.",
+        "kind": "secondary-academic",
+        "reference": "10.4000/13g8p",
+        "url": "https://journals.openedition.org/pistes/8921"
+      }
+    ]
+  },
+  {
+    "id": "sexe-des-operateurs",
+    "slug": "sexe-des-operateurs",
+    "title": "Le sexe des opérateurs en analyse du travail",
+    "authorLabel": "Karen Messing",
+    "hookQuestion": "À poste égal, hommes et femmes font-ils vraiment le même travail ?",
+    "shortExplanation": "Supposer un opérateur générique fait manquer ce qui varie : à emploi égal, tâches et contraintes peuvent différer selon le sexe, qui éclaire aussi les modes opératoires.",
+    "authors": [],
+    "themes": [
+      "activite-empechee-et-metier"
+    ],
+    "themeLabel": "Ce que le travail empêche",
+    "attributionNote": "L'article de 1999 est signé du seul nom de Karen Messing, et son résumé dit « je ». Le corps du texte dit « nous » et nomme le collectif : le bilan est celui de dix ans d'analyses du travail menées dans un groupe de recherche de l'Université du Québec à Montréal, dans un partenariat avec trois centrales syndicales québécoises, et les enquêtes qu'il rapporte sont pour la plupart cosignées. La signature est unique, le travail ne l'est pas.",
+    "quotation": {
+      "text": "Nous avons trouvé que les postes et les tâches varient selon le sexe, qui a aussi une pertinence pour comprendre les modes opératoires.",
+      "reference": "Karen Messing, « La pertinence de tenir compte du sexe des “opérateurs” dans les études ergonomiques : Bilan de recherches », PISTES, 1-1, 1999, § 4"
+    },
+    "sources": [
+      {
+        "label": "Karen Messing, « La pertinence de tenir compte du sexe des “opérateurs” dans les études ergonomiques : Bilan de recherches », PISTES, 1-1, 1999.",
+        "kind": "primary",
+        "reference": "§ 4 · 10.4000/pistes.3840",
+        "url": "https://journals.openedition.org/pistes/3840"
+      },
+      {
+        "label": "Esther Cloutier, Ana-Maria Seifert et Nicole Vézina, « Entrevue guidée avec Karen Messing », PISTES, 11-1, 2009.",
+        "kind": "secondary-academic",
+        "reference": "10.4000/pistes.2327",
+        "url": "https://journals.openedition.org/pistes/2327"
+      },
+      {
+        "label": "Nicole Vézina, Céline Chatigny et Bénédicte Calvet, « L'intervention ergonomique : que fait-on des caractéristiques personnelles comme le sexe et le genre ? », PISTES, 18-2, 2016.",
+        "kind": "francophone-reception",
+        "reference": "10.4000/pistes.4847",
+        "url": "https://journals.openedition.org/pistes/4847"
+      }
+    ]
+  },
+  {
     "id": "signification-et-invariance",
     "slug": "signification-et-invariance",
     "title": "Signification et invariance",
@@ -639,6 +1079,76 @@ export const generatedConcepts: Concept[] = [
         "kind": "primary",
         "reference": "p. 108-125",
         "url": "https://web.stanford.edu/group/csli-suppes/techreports/IMSSS_45.pdf"
+      }
+    ]
+  },
+  {
+    "id": "simulation-activite-future",
+    "slug": "simulation-activite-future",
+    "title": "Simuler l'activité future possible",
+    "authorLabel": "François Daniellou",
+    "hookQuestion": "Comment vérifier qu'un poste sera tenable avant que quiconque y ait travaillé ?",
+    "shortExplanation": "On ne peut pas prévoir l'activité future en détail, mais les décisions de conception ouvrent et ferment des pans entiers : simuler sert à éprouver les formes possibles.",
+    "authors": [],
+    "themes": [
+      "activite-instrumentee-et-conception"
+    ],
+    "themeLabel": "L'outil et l'activité",
+    "attributionNote": "L'article de 2007 est signé de François Daniellou seul, et il n'y revendique aucune paternité : là où il faut désigner l'origine de la simulation participative conduite tout au long d'un projet, il renvoie à des publications cosignées avec Garrigou, Kerguelen, Laville, Carballeda et Ruaud, ainsi qu'à un ouvrage de Maline. Aucune n'a pu être ouverte : le texte rapporte une élaboration collective dont il est l'un des auteurs, sans qu'on puisse établir qui a formulé quoi. Un point pour le lecteur : la formule qui circule, « activité future probable », ne figure pas dans ce texte — il y écrit qu'on ne peut pas prévoir l'activité future en détail, et qu'on peut en éprouver les formes possibles.",
+    "quotation": {
+      "text": "Mais il faut souligner un point théorique essentiel ; l’activité réelle des utilisateurs futurs ne peut pas être prévue en détail.",
+      "reference": "François Daniellou, « Des fonctions de la simulation des situations de travail en ergonomie », Activités, 4-2, octobre 2007, p. 77-83, p. 80, § 25"
+    },
+    "sources": [
+      {
+        "label": "François Daniellou, « Des fonctions de la simulation des situations de travail en ergonomie », Activités, 4-2, octobre 2007, p. 77-83.",
+        "kind": "primary",
+        "reference": "p. 80, § 25 · 10.4000/activites.1696",
+        "url": "https://journals.openedition.org/activites/1696"
+      },
+      {
+        "label": "François Daniellou, « Simulating future work activity is not only a way of improving workstation design », Activités, 4-2, 2007 — version anglaise publiée par la revue.",
+        "kind": "primary",
+        "reference": "10.4000/activites.1704",
+        "url": "https://journals.openedition.org/activites/1704"
+      }
+    ]
+  },
+  {
+    "id": "travail-collectif-collectif-de-travail",
+    "slug": "travail-collectif-collectif-de-travail",
+    "title": "Travail collectif et collectif de travail",
+    "authorLabel": "Sandrine Caroly, Annie Weill-Fassina",
+    "hookQuestion": "Travailler ensemble suffit-il à faire un collectif sur lequel on peut compter ?",
+    "shortExplanation": "Le travail collectif est la façon dont plusieurs s'y prennent ensemble. Le collectif de travail s'en construit et suppose transmission, partage, confiance.",
+    "authors": [],
+    "themes": [
+      "activite-empechee-et-metier"
+    ],
+    "themeLabel": "Ce que le travail empêche",
+    "attributionNote": "Sandrine Caroly et Annie Weill-Fassina cosignent l'article de 2007 où la distinction est formulée en deux phrases, dans leur voix et sans appel de référence. Elles ne l'ont pas inventée : elle est posée trois ans plus tôt par Sandrine Caroly avec Yves Clot, dans un article dont c'est le titre même, et la notion de collectif de travail est plus ancienne encore — Caroly la rapporte elle-même à Damien Cru. Annie Weill-Fassina est associée au versant travail collectif, dont elle a codirigé en 2000 l'ouvrage de référence en ergonomie francophone. Ce que les deux autrices signent ensemble est la mise en forme courte de la distinction, pas son invention.",
+    "quotation": {
+      "text": "Le collectif de travail n’est pas une donnée. C’est une construction à partir d’un travail collectif.",
+      "reference": "Sandrine Caroly et Annie Weill-Fassina, « En quoi différentes approches de l'activité collective des relations de services interrogent la pluralité des modèles de l'activité en ergonomie ? », Activités, 4-1, avril 2007, § 28, item 5"
+    },
+    "sources": [
+      {
+        "label": "Sandrine Caroly et Annie Weill-Fassina, « En quoi différentes approches de l'activité collective des relations de services interrogent la pluralité des modèles de l'activité en ergonomie ? », Activités, 4-1, avril 2007.",
+        "kind": "primary",
+        "reference": "§ 28, item 5 · 10.4000/activites.1414",
+        "url": "https://journals.openedition.org/activites/1414"
+      },
+      {
+        "label": "Sandrine Caroly et Yves Clot, « Du travail collectif au collectif de travail : développer des stratégies d'expérience », Formation Emploi, n° 88, 2004, p. 43-55.",
+        "kind": "primary",
+        "reference": "10.3406/forem.2004.1737",
+        "url": "https://www.persee.fr/doc/forem_0759-6340_2004_num_88_1_1737"
+      },
+      {
+        "label": "Sandrine Caroly, Activité collective et réélaboration des règles : des enjeux pour la santé au travail, habilitation à diriger des recherches, Université Victor Segalen Bordeaux 2, 2010, 269 p.",
+        "kind": "primary",
+        "reference": "chap. 4, p. 89-107 · HAL tel-00464801",
+        "url": "https://theses.hal.science/tel-00464801/document"
       }
     ]
   },

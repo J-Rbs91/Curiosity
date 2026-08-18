@@ -1,0 +1,81 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "genese-instrumentale",
+  "slug": "genese-instrumentale",
+  "status": "VALIDATED",
+  "title": "Genèse instrumentale",
+  "themes": [
+    "activite-instrumentee-et-conception"
+  ],
+  "domain": null,
+  "theme_labels": {
+    "activite-instrumentee-et-conception": "L'outil et l'activité"
+  },
+  "authors": [
+    {
+      "name": "Pierre Rabardel",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Pierre Rabardel signe seul Les hommes et les technologies (1995) et y nomme lui-même la genèse instrumentale, dès son introduction et dans le titre de deux chapitres : le concept est bien de lui, et non de sa réception. Une nuance qu'il ne cache pas : la formule « approche instrumentale », qu'il revendique dans l'ouvrage, figure déjà dans le titre d'un texte antérieur de Vérillon que sa propre bibliographie cite — l'ouvrage porte l'expression, ce qui n'établit pas qu'il l'ait forgée. Le texte lu est la version d'auteur déposée en archive ouverte, dont la pagination n'est pas celle de l'édition imprimée.",
+  "quotation": {
+    "text": "En effet, les instruments ne sont pas donnés d’emblée à l’utilisateur : celui-ci les élabore à travers des activités de genèse instrumentale.",
+    "reference": "Pierre Rabardel, Les hommes et les technologies ; approche cognitive des instruments contemporains, Paris, Armand Colin, 1995 — version d'auteur déposée sur HAL.",
+    "locator": "Introduction, p. 4",
+    "language": "fr",
+    "original_text": null,
+    "original_language": null,
+    "translation": {
+      "kind": "none",
+      "translator": null,
+      "edition": null
+    }
+  },
+  "hook": "L'outil qu'on vous remet est-il déjà un instrument entre vos mains ?",
+  "summary": "Un instrument n'est pas donné : c'est un artefact plus les schèmes que le sujet lui associe. L'utilisateur l'élabore, en transformant l'objet et ses propres schèmes.",
+  "sources": [
+    {
+      "label": "Pierre Rabardel, Les hommes et les technologies ; approche cognitive des instruments contemporains, Paris, Armand Colin, 1995, 239 p. — version d'auteur déposée sur HAL.",
+      "kind": "primary",
+      "locator": "Introduction, p. 4",
+      "doi_isbn": "HAL hal-01017462",
+      "url": "https://hal.science/hal-01017462v1",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Pierre Rabardel, People and Technology. A cognitive approach to contemporary instruments, Université Paris 8, 2002, 188 p. — traduction anglaise déposée par l'auteur.",
+      "kind": "primary",
+      "locator": null,
+      "doi_isbn": "HAL hal-01020705",
+      "url": "https://hal.science/hal-01020705v1",
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle",
+    "date": "2026-08-18",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 0,
+    "notes": [
+      "PRIMAIRE OUVERT : PDF téléchargé depuis https://hal.science/hal-01017462/file/Hommes_et_technologie_Rabardel1995.pdf (195 pages, md5 c027b161c59af8c5cbc2e7a81cfef4e0), notice HAL vérifiée via api.archives-ouvertes.fr (halId hal-01017462, OUV, Armand Colin, pp.239, 1995, auteur unique Pierre Rabardel). L'URL affichée https://hal.science/hal-01017462v1 répond 200.",
+      "PAGINATIONS CONCURRENTES : le dépôt en porte deux. (a) Les folios du corps, imprimés en tête de page, décalés de -7 par rapport au folio PDF (PDF p. 9 = folio 2, PDF p. 195 = folio 188). (b) Celle du sommaire (PDF p. 3-7), qui coïncide avec (a) au début (partie I à 8, chapitre 1 à 10) puis dérive : sommaire 109 pour le chapitre 7 qui porte le folio 99 (PDF p. 106), sommaire 120 pour le chapitre 8 au folio 109 (PDF p. 116), sommaire 193 pour des références qui tombent au folio 186. Le localisateur « Introduction, p. 4 » désigne le folio du corps : c'est la seule pagination effectivement imprimée sur les pages, et le sommaire ne référence pas l'introduction. Aucune des deux n'est celle de l'édition imprimée (239 p.), ce que la fiche déclare.",
+      "CITATION : la phrase se lit intégralement sur PDF p. 11, page portant le folio « 4 », dans l'introduction (qui court du folio 2 au folio 7) : « La troisième partie de l'ouvrage est centrée sur une approche développementale des instruments. En effet, les instruments ne sont pas donnés d'emblée à l'utilisateur : celui-ci les élabore à travers des activités de genèse instrumentale. Les genèses instrumentales résultent d'un double processus d'instrumentalisation et d'instrumentation ». Comparaison programmatique du champ `quotation.text` au texte extrait : identité caractère par caractère, apostrophes typographiques comprises, aux seuls espaces parasites de l'extraction près (« celui -ci »). Phrase complète, aucune coupe, donc aucun […] requis ; texte français d'origine, aucune traduction à déclarer.",
+      "ATTRIBUTION : Rabardel signe seul l'ouvrage (HAL et BnF ne portent qu'un auteur) et y nomme le concept en son nom propre — titres des chapitres 7 et 8 (« QUAND LES SUJETS DÉVELOPPENT LEURS INSTRUMENTS : LES GENÈSES INSTRUMENTALES », « LA GENÈSE INSTRUMENTALE UN PROCESSUS QUI CONCERNE À LA FOIS L'ARTEFACT ET LE SUJET ») et formulations à la première personne : « Les interprétations en termes de genèse instrumentale que nous proposons », « Nous venons de proposer que des faits habituellement caractérisés comme des détournements […] soient interprétés comme relevant de processus de genèse instrumentale » (folio 109, PDF p. 116). Ce n'est donc pas une étiquette posée par sa réception.",
+      "NUANCE SUR L'ATTRIBUTION, non bloquante : l'expression figure aussi, deux fois et en passant, dans un article co-signé contemporain — Pierre Verillon & Pierre Rabardel, « Cognition and artifacts… », European Journal of Psychology of Education 10(1), mars 1995, p. 77-101, DOI 10.1007/BF03172796 (métadonnées confirmées sur api.crossref.org ; Unpaywall : is_oa=false, aucune archive légitime). J'ai lu une copie PDF déposée en accès libre sur un site tiers (s61aea3b7b43ac080.jimcontent.com), non l'exemplaire de l'éditeur : « Consider a (simplified) example of instrumental genesis: a baby learning to use a spoon » et « Obviously, this notion of instrumental genesis raises questions… ». L'article y renvoie le modèle SAI à Rabardel & Verillon 1985, et le livre lui-même adosse les genèses instrumentales à des travaux empiriques de Vérillon (1988c, 1991) en note. La paternité exclusive de la forgerie du terme n'est donc pas strictement démontrable ; l'élaboration systématique et la nomination sont bien de Rabardel, ce que la fiche affirme. Je n'ai pas pu ouvrir la version éditeur (Springer, payante) : silence d'accès, pas silence de la littérature.",
+      "SOURCES : (1) BnF SRU, ark:/12148/cb357510921 — « Les hommes et les technologies : approche cognitive des instruments contemporains / Pierre Rabardel », A. Colin (Paris), 1995, 239 p., coll. U. Psychologie, ISBN 2-200-21569-X : lieu, éditeur, année, pagination et auteur de l'étiquette résolvent tous. (2) hal-01020705 : notice HAL « people and technology, université paris 8, pp.188, 2002 », PDF de 189 pages dont la page de titre porte « PEOPLE AND TECHNOLOGY — a cognitive approach to contemporary instruments », Pierre Rabardel ; l'URL v1 répond 200. L'étiquette de la fiche est exacte ; à titre indicatif, la page 2 du PDF crédite « Translated by Heidi Wood », que l'étiquette ne nomme pas — la fiche ne cite pas cette source, le point est sans effet sur la citation.",
+      "PROSE : le hook (« L'outil qu'on vous remet est-il déjà un instrument entre vos mains ? ») et le summary sont portés par le folio 4 lui-même, qui définit l'instrument comme « une entité mixte » comprenant « un artefact matériel ou symbolique » et « un ou des schèmes d'utilisation associés résultant d'une construction propre ou de l'appropriation de schèmes sociaux préexistants », puis le folio 5 qui distingue l'instrumentalisation (« dirigés vers l'artefact : […] transformation de l'artefact, de sa structure, de son fonctionnement ») de l'instrumentation (« relatifs au sujet : à l'émergence et à l'évolution des schèmes »). Rien n'y est ajouté. Réserve de vocabulaire, sans conséquence pour le lecteur : « en transformant l'objet » désigne l'artefact, alors que « l'objet » a chez Rabardel un sens technique distinct dans la triade sujet-instrument-objet ; le hook (« l'outil qu'on vous remet ») lève l'ambiguïté."
+    ]
+  },
+  "notes": [
+    "Le texte lu est le manuscrit de l'auteur, non l'édition imprimée : le fichier déposé porte ses propres folios, de 1 à 188, alors que l'ouvrage imprimé est déclaré à 239 pages, et il ne contient ni page de titre d'éditeur, ni copyright, ni achevé d'imprimer. La page donnée est un folio imprimé sur la page elle-même. La correspondance avec la pagination Armand Colin n'est pas établie et n'est pas supposée ; une divergence de formulation entre manuscrit et livre n'a pas pu être contrôlée.",
+    "Le fichier contient trois paginations concurrentes (folio du PDF, folio imprimé, renvois du sommaire), qui divergent progressivement. Toutes les pages citées ici sont des folios imprimés, jamais des renvois de sommaire.",
+    "La couche texte du PDF insère des espaces parasites à l'intérieur des mots ; dans la phrase citée, un seul (« celui -ci ») a été refermé, comme artefact d'extraction. Rien d'autre n'a été modifié.",
+    "La définition de l'instrument comme entité mixte a été écartée de la citation pour cause de longueur : « Nous pensons qu'il faut définir l'instrument comme une entité mixte, qui tient à la fois du sujet et de l'objet (au sens philosophique du terme) : l'instrument est une entité composite qui comprend une composante artefact […] et une composante schéme […] » (p. 95). S'arrêter aux deux-points ampute la définition de sa moitié utile ; la reprendre entière suppose deux coupes internes. Elle est portée par le résumé.",
+    "La catachrèse, d'où le raisonnement du livre part, n'est pas de Rabardel et il le dit lui-même : elle fait l'objet d'une fiche distincte, instruite sur le même chapitre, et aucune citation n'est partagée entre les deux cartes.",
+    "La traduction anglaise n'a pas été ouverte dans cette lecture, et sa notice ne nomme aucun traducteur : rien de cette fiche n'en vient. La réception, notamment en didactique des mathématiques, n'a pas été instruite ; l'ouvrage de 1995 nomme lui-même la didactique et l'éducation parmi ses champs."
+  ]
+}

@@ -55,12 +55,15 @@ d'où dérivent la navigation, les pages de domaine, les listes et le tirage de 
 | Comprendre le pilotage | Comment savons-nous ce qui se passe et comment décidons-nous quoi faire ? | Théorie de la mesure / KPI · Science de la décision |
 
 Le **corpus** dit *ce qu'on apprend* : thèmes, concepts, auteurs, citations, sources. Il est
-produit fiche par fiche par le pipeline documentaire, et **un seul domaine en a un
-aujourd'hui** — la sociologie des organisations. Les dix autres sont déclarés et vides, ce
-que l'interface dit en toutes lettres plutôt que d'afficher « 0 résultat ».
+produit fiche par fiche par le pipeline documentaire, et **trois domaines en ont un
+aujourd'hui** — la sociologie des organisations, la théorie de la mesure et l'ergonomie de
+l'activité. Les huit autres sont déclarés et vides, ce que l'interface dit en toutes lettres
+plutôt que d'afficher « 0 résultat ».
 
 Une carte se rattache à son domaine **par son thème** : aucune des huit fiches instruites
-avant que les domaines n'existent n'a eu à être rouverte.
+avant que les domaines n'existent n'a eu à être rouverte. Le champ `domain` d'une fiche
+n'existe que pour celle dont aucun thème n'est encore déclaré — dès qu'il l'est, le champ
+doit disparaître, et un test le vérifie plutôt que de faire confiance à qui projette.
 
 **Ajouter un domaine, c'est ajouter une entrée dans `taxonomy.ts`.** Sa page, sa route
 statique, sa place dans la navigation et son état de corpus en découlent. Aucun composant,

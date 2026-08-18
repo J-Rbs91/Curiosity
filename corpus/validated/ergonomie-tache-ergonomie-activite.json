@@ -1,0 +1,75 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "ergonomie-tache-ergonomie-activite",
+  "slug": "ergonomie-tache-ergonomie-activite",
+  "status": "VALIDATED",
+  "title": "La tâche comme moyen, non comme horizon",
+  "themes": [
+    "tache-et-activite"
+  ],
+  "domain": null,
+  "theme_labels": {
+    "tache-et-activite": "Ce qui est demandé, ce qui est fait"
+  },
+  "authors": [
+    {
+      "name": "François Hubault",
+      "app_author_id": null
+    },
+    {
+      "name": "Fabrice Bourgeois",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "François Hubault et Fabrice Bourgeois cosignent l'article de 2004 où cette position est prise. La distinction entre tâche et activité n'est pas d'eux : leur texte la tient pour un acquis de la discipline — sa première phrase est « La distinction entre tâche et activité est fondatrice de l'ergonomie » — et ne la rapporte à aucun fondateur, aucun des auteurs à qui la littérature l'attribue ne figurant dans sa bibliographie. Ce qui leur revient est la position prise dans une dispute, et le renversement de l'ordre des deux termes.",
+  "quotation": {
+    "text": "On est donc là au cœur de ce qui se joue dans l'ingénierie de projet : faire de la tâche le moyen de l'activité et non pas son horizon.",
+    "reference": "François Hubault et Fabrice Bourgeois, « Disputes sur l'ergonomie de la tâche et de l'activité, ou la finalité de l'ergonomie en question », Activités, 1-1, avril 2004.",
+    "locator": "§ 45",
+    "language": "fr",
+    "original_text": null,
+    "original_language": null,
+    "translation": {
+      "kind": "none",
+      "translator": null,
+      "edition": null
+    }
+  },
+  "hook": "Concevoir un poste : vise-t-on la tâche à tenir, ou l'activité qui la tiendra ?",
+  "summary": "Deux ergonomies s'opposent : l'une prend la tâche pour horizon et corrige la prescription, l'autre en fait le moyen de l'activité, qu'aucun modèle prescriptif n'épuise.",
+  "sources": [
+    {
+      "label": "François Hubault et Fabrice Bourgeois, « Disputes sur l'ergonomie de la tâche et de l'activité, ou la finalité de l'ergonomie en question », Activités, 1-1, avril 2004.",
+      "kind": "primary",
+      "locator": "§ 45",
+      "doi_isbn": "10.4000/activites.1149",
+      "url": "https://journals.openedition.org/activites/1149",
+      "consulted": "full-text"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle",
+    "date": "2026-08-18",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 0,
+    "notes": [
+      "Texte intégral ouvert moi-même : curl HTTP 200 sur https://journals.openedition.org/activites/1149 (220 127 octets, page HTML complète, corps de l'article + bibliographie + notes). Aucun contrôle d'accès rencontré, aucun contournement.",
+      "CITATION : le passage est bien au paragraphe numéroté 45 de cette édition en ligne (span class=paranumber 45), dans la phrase « Ce n'est possible que dans le cadre d'une ergonomie de l'activité qui n'aborde pas la tâche de la même manière que celle proposée par l'ergonomie de la tâche… On est donc là au cœur de ce qui se joue dans l'ingénierie de projet : faire de la tâche le moyen de l'activité et non pas son horizon. Cela passe par une définition de la tâche non pas comme norme, mais comme référence. » Comparaison caractère par caractère avec le champ quotation.text : identité complète après normalisation typographique des apostrophes (l'original porte U+2019, la fiche U+0027). Aucune coupe, aucun mot changé, pas de traduction en jeu (texte source en français).",
+      "SOURCES : DOI 10.4000/activites.1149 résolu sur https://api.crossref.org/works/10.4000/activites.1149 (HTTP 200) : titre « Disputes sur l'ergonomie de la tâche et de l'activité, ou la finalité de l'ergonomie en question », conteneur Activites, volume 01, numéro 1, année 2004, auteurs François Hubault et Fabrice Bourgeois — conformes à la référence affichée. La notice de citation imprimée par la revue elle-même en pied d'article donne « Activités [En ligne], 1-1 | avril 2004, mis en ligne le 02 avril 2004 », ce qui confirme le « 1-1, avril 2004 » de la fiche. L'URL affichée est celle qui a répondu.",
+      "ATTRIBUTION : la cosignature est doublement attestée (métadonnées de la page : meta name=author « Hubault, François » et « Bourgeois, Fabrice », DC.creator idem ; et notice Crossref). La fiche ne revendique pour eux ni la distinction tâche/activité ni sa paternité : elle leur attribue la position prise et le renversement de l'ordre des termes, qui est effectivement énoncé en propre au § 45 et préparé au § 3 (« les uns bifurquent vers l'ergonomie de la tâche alors que les autres s'engagent vers l'ergonomie de l'activité »). J'ai lu la bibliographie complète de l'article : elle ne comporte ni Ombredane & Faverge, ni Leplat, ni aucun des auteurs auxquels la littérature rapporte habituellement la distinction — le point avancé par la note d'attribution se vérifie.",
+      "PROSE : « prend la tâche pour horizon » est porté par le § 12 (de Montmollin : « l'OST constitue l'horizon de l'ergonomie », lu dans « le paradigme de l'ergonomie de la tâche, où l'amélioration des conditions de travail signifie l'aménagement plus scientifique des conditions de travail ») et par la formule antithétique du § 45. « Corrige la prescription » correspond au § 12 (« compléter le taylorisme plutôt que le dépasser… l'améliorer, le moderniser »). « Qu'aucun modèle prescriptif n'épuise » est porté par le § 42 (« aucune description n'est à même d'épuiser la pensée qui se réalise dans le travail ») et le § 21 (« ces questions-là, les modèles fonctionnalistes ne peuvent ni ne cherchent à en rendre compte »). Le hook, formulé en question à l'échelle du poste, reste dans l'empan du texte, qui traite explicitement de l'ingénierie de projet (§ 45) et développe un cas d'aménagement de poste sur ligne de montage (§ 19-20).",
+      "Précision mineure, sans effet sur le verdict : la phrase « La distinction entre tâche et activité est fondatrice de l'ergonomie », citée par la note d'attribution comme « sa première phrase », ouvre le résumé de l'article (meta name=description, résumé affiché en tête) et non le corps du texte, dont le § 1 commence par « Quoiqu'on en dise, il existe au sein même de ce qu'on appelle désormais l'ergonomie centrée sur l'activité… ». La citation elle-même est exacte.",
+      "Ce que je n'ai pas pu atteindre : HAL ne connaît ni l'article ni la formule (deux requêtes API, numFound 0) — absence d'indexation, pas une réfutation. Je n'ai pas ouvert Cairn (403 annoncé) ; le rapprochement possible avec des reformulations ultérieures de Hubault seul n'a donc pas pu être vérifié sur pièce, et n'était pas nécessaire : la fiche s'appuie sur le seul texte de 2004, que j'ai lu en entier."
+    ]
+  },
+  "notes": [
+    "L'article n'a pas pu être lu octet par octet : le site de la revue oppose une page de vérification anti-robot en ligne de commande, et le texte a été rendu par un outil intermédiaire. La citation a été contrôlée par deux rendus indépendants, qui donnent la phrase, le numéro de paragraphe et le titre de section à l'identique ; un contrôleur disposant d'un navigateur devrait la revoir sur la page.",
+    "La bibliographie de l'article, relevée sur le dépôt Crossref de l'éditeur, ne contient ni Ombredane, ni Faverge, ni Leplat : c'est sur elle qu'est établie l'absence d'attribution de la distinction, et non sur le corps du texte, connu par le seul rendu intermédiaire.",
+    "L'adversaire déclaré de la dispute, le Discours sur l'organisation du travail de Maurice de Montmollin (L'Harmattan, 2002), n'a pas été ouvert : tout ce qu'on sait ici de sa position vient de ce que Hubault et Bourgeois lui prêtent. La carte ne présente donc aucune position « selon Montmollin ».",
+    "Le dossier de lecture signale que ce texte porte sur la finalité d'une discipline, et que le critère d'enseignabilité n'est tenu que si la carte s'en tient à l'opposition tâche-horizon / tâche-moyen : c'est le parti pris ici, et la querelle entre courants n'est pas affichée."
+  ]
+}
