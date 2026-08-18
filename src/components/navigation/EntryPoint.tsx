@@ -89,6 +89,20 @@ export function EntryPoint() {
       document.visibilityState === "hidden" ? quitter() : revenir();
 
     document.addEventListener("visibilitychange", surVisibilite);
+    /*
+     * Trois écouteurs pour un seul fait — être parti — parce qu'aucun des trois
+     * n'est émis dans tous les cas. Android met en arrière-plan, gèle, puis
+     * décharge, et selon le chemin emprunté c'est `visibilitychange`, `freeze`
+     * ou `pagehide` qui passe. Manquer celui qui passe ne casse rien de
+     * visible : la sortie n'est simplement jamais enregistrée, l'absence n'est
+     * jamais mesurée, et l'application se rouvre comme avant — le défaut
+     * corrigé réapparaît sans qu'aucune erreur ne le dise.
+     *
+     * Les empiler est sans effet de bord : la première sortie fait foi, donc
+     * deux événements pour un même départ n'en écrivent qu'un.
+     */
+    window.addEventListener("pagehide", quitter);
+    document.addEventListener("freeze", quitter);
 
     /*
      * Et une fois au montage : quand le système a déchargé la page pour
@@ -118,6 +132,8 @@ export function EntryPoint() {
     return () => {
       demonte = true;
       document.removeEventListener("visibilitychange", surVisibilite);
+      window.removeEventListener("pagehide", quitter);
+      document.removeEventListener("freeze", quitter);
       window.removeEventListener("load", auChargement);
     };
   }, []);
