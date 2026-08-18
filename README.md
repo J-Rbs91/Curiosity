@@ -4,8 +4,8 @@
 
 Une application web mobile-first, installable en PWA, qui fait découvrir **une carte à la
 fois** les concepts qui expliquent comment le travail et les organisations fonctionnent
-réellement. À chaque ouverture, un concept : son thème, son nom, une citation de son auteur
-quand il en existe une, une accroche, un résumé court, et ses sources. Rien d'autre — le
+réellement. À chaque ouverture, un concept : son thème, son nom, une accroche, une citation
+de son auteur quand il en existe une, un résumé court, et ses sources. Rien d'autre — le
 lecteur qui veut aller plus loin emporte la carte vers l'IA de son choix par le bouton
 « Approfondir ».
 

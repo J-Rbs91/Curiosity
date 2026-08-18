@@ -196,9 +196,14 @@ const CARD_SCALE = "clamp(0.8rem, 0.01rem + 2.222vh, 1rem)";
  *
  * L'ordre suit celui de la première version : le thème situe, le concept se nomme, le texte
  * se lit, et **l'auteur signe à la fin**. C'est l'inverse d'une fiche encyclopédique, et
- * c'est délibéré — on découvre un concept, pas une notice d'auteur. La citation, quand elle
- * existe, s'insère avant l'accroche : elle est ce que l'auteur a écrit, la signature qui
- * suit la rattache à son nom.
+ * c'est délibéré — on découvre un concept, pas une notice d'auteur.
+ *
+ * **L'accroche passe devant la citation.** Elle est la question que la carte pose, écrite
+ * pour être lue en premier ; la citation est la réponse de l'auteur, et une réponse placée
+ * avant sa question se lit comme une épigraphe dont on ne sait pas encore quoi faire.
+ * L'enchaînement va désormais de la question à la parole d'auteur puis à l'explication, et
+ * le bloc citaire — encadré, sa légende en petit — ne s'interpose plus entre le titre et la
+ * phrase qui l'ouvre : le haut de la carte reste du texte qui se lit d'un trait.
  */
 function ConceptCard({ concept }: { concept: Concept }) {
   const [showSources, setShowSources] = useState(false);
@@ -253,10 +258,10 @@ function ConceptCard({ concept }: { concept: Concept }) {
         </div>
       ) : (
         <div className="flex flex-col gap-[1.1em]">
-          {concept.quotation && <ConceptQuotation quotation={concept.quotation} compact />}
           <p className="font-serif-display text-[1.15em] leading-snug text-ink">
             {concept.hookQuestion}
           </p>
+          {concept.quotation && <ConceptQuotation quotation={concept.quotation} compact />}
           <p className="text-[1em] leading-relaxed text-ink-soft">{concept.shortExplanation}</p>
         </div>
       )}
