@@ -281,14 +281,18 @@ sujet » ; ce n'est pas le cas, et la carte du champ perdrait la trace.
 
 ## Thèmes
 
-**Le domaine n'a encore aucun thème déclaré**, et c'est voulu : ils s'écriront dans
-`src/content/themes.ts` à partir de ce que le scout aura fait apparaître, avec
-`domain: "activity-ergonomics"`. Tant qu'ils ne sont pas déclarés, une fiche de ce domaine
-porte ses thèmes dans `themes` avec leur libellé dans `theme_labels`, et déclare
-`domain: "activity-ergonomics"`.
+Quatre thèmes ont été déclarés dans `src/content/themes.ts` le 18 août 2026, après la
+cartographie et non avant : `tache-et-activite`, `regulation-et-marges`,
+`activite-empechee-et-metier` et `activite-instrumentee-et-conception`. Chacun a trois à
+cinq cartes validées derrière lui.
 
-Même règle qu'en théorie de la mesure, et elle se réapprend : **un thème sans carte ne se
-déclare pas.** Il afficherait une page vide et compterait pour de la couverture.
+**Deux ensembles que le périmètre ci-dessus demandait de balayer n'ont pas ouvert de
+thème** : la charge de travail comme objet de définitions concurrentes, et le couple
+variabilité / contrainte-astreinte. La cartographie n'en a rapporté aucune source primaire
+ouvrable — le manuel qui les porte est introuvable en ligne et *Le travail humain* est
+derrière Cairn, fermé. Même règle qu'en théorie de la mesure, et elle se réapprend :
+**un thème sans carte ne se déclare pas.** Il afficherait une page vide et compterait pour
+de la couverture.
 
 ---
 
