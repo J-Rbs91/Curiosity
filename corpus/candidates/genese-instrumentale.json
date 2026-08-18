@@ -1,0 +1,69 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "genese-instrumentale",
+  "slug": "genese-instrumentale",
+  "status": "CANDIDATE",
+  "title": "Genèse instrumentale",
+  "themes": [
+    "activite-instrumentee-et-conception"
+  ],
+  "domain": "activity-ergonomics",
+  "theme_labels": {
+    "activite-instrumentee-et-conception": "L'outil et l'activité"
+  },
+  "authors": [
+    {
+      "name": "Pierre Rabardel",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Pierre Rabardel signe seul Les hommes et les technologies (1995) et y nomme lui-même la genèse instrumentale, dès son introduction et dans le titre de deux chapitres : le concept est bien de lui, et non de sa réception. Une nuance qu'il ne cache pas : la formule « approche instrumentale », qu'il revendique dans l'ouvrage, figure déjà dans le titre d'un texte antérieur de Vérillon que sa propre bibliographie cite — l'ouvrage porte l'expression, ce qui n'établit pas qu'il l'ait forgée. Le texte lu est la version d'auteur déposée en archive ouverte, dont la pagination n'est pas celle de l'édition imprimée.",
+  "quotation": {
+    "text": "En effet, les instruments ne sont pas donnés d’emblée à l’utilisateur : celui-ci les élabore à travers des activités de genèse instrumentale.",
+    "reference": "Pierre Rabardel, Les hommes et les technologies ; approche cognitive des instruments contemporains, Paris, Armand Colin, 1995 — version d'auteur déposée sur HAL.",
+    "locator": "Introduction, p. 4",
+    "language": "fr",
+    "original_text": null,
+    "original_language": null,
+    "translation": {
+      "kind": "none",
+      "translator": null,
+      "edition": null
+    }
+  },
+  "hook": "L'outil qu'on vous remet est-il déjà un instrument entre vos mains ?",
+  "summary": "Un instrument n'est pas donné : c'est un artefact plus les schèmes que le sujet lui associe. L'utilisateur l'élabore, en transformant l'objet et ses propres schèmes.",
+  "sources": [
+    {
+      "label": "Pierre Rabardel, Les hommes et les technologies ; approche cognitive des instruments contemporains, Paris, Armand Colin, 1995, 239 p. — version d'auteur déposée sur HAL.",
+      "kind": "primary",
+      "locator": "Introduction, p. 4",
+      "doi_isbn": "HAL hal-01017462",
+      "url": "https://hal.science/hal-01017462v1",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Pierre Rabardel, People and Technology. A cognitive approach to contemporary instruments, Université Paris 8, 2002, 188 p. — traduction anglaise déposée par l'auteur.",
+      "kind": "primary",
+      "locator": null,
+      "doi_isbn": "HAL hal-01020705",
+      "url": "https://hal.science/hal-01020705v1",
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "verdict": "PENDING",
+    "attribution": "non-verifiee",
+    "quotation": "non-verifiee",
+    "sources": "non-verifiee",
+    "prose": "non-verifiee"
+  },
+  "notes": [
+    "Le texte lu est le manuscrit de l'auteur, non l'édition imprimée : le fichier déposé porte ses propres folios, de 1 à 188, alors que l'ouvrage imprimé est déclaré à 239 pages, et il ne contient ni page de titre d'éditeur, ni copyright, ni achevé d'imprimer. La page donnée est un folio imprimé sur la page elle-même. La correspondance avec la pagination Armand Colin n'est pas établie et n'est pas supposée ; une divergence de formulation entre manuscrit et livre n'a pas pu être contrôlée.",
+    "Le fichier contient trois paginations concurrentes (folio du PDF, folio imprimé, renvois du sommaire), qui divergent progressivement. Toutes les pages citées ici sont des folios imprimés, jamais des renvois de sommaire.",
+    "La couche texte du PDF insère des espaces parasites à l'intérieur des mots ; dans la phrase citée, un seul (« celui -ci ») a été refermé, comme artefact d'extraction. Rien d'autre n'a été modifié.",
+    "La définition de l'instrument comme entité mixte a été écartée de la citation pour cause de longueur : « Nous pensons qu'il faut définir l'instrument comme une entité mixte, qui tient à la fois du sujet et de l'objet (au sens philosophique du terme) : l'instrument est une entité composite qui comprend une composante artefact […] et une composante schéme […] » (p. 95). S'arrêter aux deux-points ampute la définition de sa moitié utile ; la reprendre entière suppose deux coupes internes. Elle est portée par le résumé.",
+    "La catachrèse, d'où le raisonnement du livre part, n'est pas de Rabardel et il le dit lui-même : elle fait l'objet d'une fiche distincte, instruite sur le même chapitre, et aucune citation n'est partagée entre les deux cartes.",
+    "La traduction anglaise n'a pas été ouverte dans cette lecture, et sa notice ne nomme aucun traducteur : rien de cette fiche n'en vient. La réception, notamment en didactique des mathématiques, n'a pas été instruite ; l'ouvrage de 1995 nomme lui-même la didactique et l'éducation parmi ses champs."
+  ]
+}

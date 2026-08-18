@@ -1,0 +1,70 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "simulation-activite-future",
+  "slug": "simulation-activite-future",
+  "status": "CANDIDATE",
+  "title": "Simuler l'activité future possible",
+  "themes": [
+    "activite-instrumentee-et-conception"
+  ],
+  "domain": "activity-ergonomics",
+  "theme_labels": {
+    "activite-instrumentee-et-conception": "L'outil et l'activité"
+  },
+  "authors": [
+    {
+      "name": "François Daniellou",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "L'article de 2007 est signé de François Daniellou seul, et il n'y revendique aucune paternité : là où il faut désigner l'origine de la simulation participative conduite tout au long d'un projet, il renvoie à des publications cosignées avec Garrigou, Kerguelen, Laville, Carballeda et Ruaud, ainsi qu'à un ouvrage de Maline. Aucune n'a pu être ouverte : le texte rapporte une élaboration collective dont il est l'un des auteurs, sans qu'on puisse établir qui a formulé quoi. Un point pour le lecteur : la formule qui circule, « activité future probable », ne figure pas dans ce texte — il y écrit qu'on ne peut pas prévoir l'activité future en détail, et qu'on peut en éprouver les formes possibles.",
+  "quotation": {
+    "text": "Mais il faut souligner un point théorique essentiel ; l’activité réelle des utilisateurs futurs ne peut pas être prévue en détail.",
+    "reference": "François Daniellou, « Des fonctions de la simulation des situations de travail en ergonomie », Activités, 4-2, octobre 2007, p. 77-83.",
+    "locator": "p. 80, § 25",
+    "language": "fr",
+    "original_text": null,
+    "original_language": null,
+    "translation": {
+      "kind": "none",
+      "translator": null,
+      "edition": null
+    }
+  },
+  "hook": "Comment vérifier qu'un poste sera tenable avant que quiconque y ait travaillé ?",
+  "summary": "On ne peut pas prévoir l'activité future en détail, mais les décisions de conception ouvrent et ferment des pans entiers : simuler sert à éprouver les formes possibles.",
+  "sources": [
+    {
+      "label": "François Daniellou, « Des fonctions de la simulation des situations de travail en ergonomie », Activités, 4-2, octobre 2007, p. 77-83.",
+      "kind": "primary",
+      "locator": "p. 80, § 25",
+      "doi_isbn": "10.4000/activites.1696",
+      "url": "https://journals.openedition.org/activites/1696",
+      "consulted": "full-text"
+    },
+    {
+      "label": "François Daniellou, « Simulating future work activity is not only a way of improving workstation design », Activités, 4-2, 2007 — version anglaise publiée par la revue.",
+      "kind": "primary",
+      "locator": null,
+      "doi_isbn": "10.4000/activites.1704",
+      "url": "https://journals.openedition.org/activites/1704",
+      "consulted": "full-text"
+    }
+  ],
+  "review": {
+    "verdict": "PENDING",
+    "attribution": "non-verifiee",
+    "quotation": "non-verifiee",
+    "sources": "non-verifiee",
+    "prose": "non-verifiee"
+  },
+  "notes": [
+    "CHOIX DE TITRE, à dire explicitement au contrôle. Le dossier de lecture offrait deux issues : s'en tenir à ce que le texte de 2007 énonce, ou porter la formule « simulation de l'activité future probable » et afficher aussi le chapitre cosigné de 2013 qui la porte réellement. C'est la première qui est retenue. Le mot « probable » n'apparaît jamais accolé à « activité future » dans le texte de 2007 : il y figure trois fois, dans trois contextes sans rapport. Ce que le texte écrit, en revanche, ce sont le titre de section « On ne peut pas prévoir l'activité future », « l'activité future possible correspondante » (§ 16) et « les formes possibles de l'activité future » (§ 26) : le titre de la carte reprend l'adjectif de l'auteur, et le chapitre de 2013 n'est donc pas affiché en source.",
+    "Où se lit la formule complète, pour mémoire : Barcellini, Van Belleghem et Daniellou, « Les projets de conception comme opportunité de développements des activités », in Falzon (dir.), Ergonomie constructive, PUF, 2013, p. 191-206 (DOI 10.3917/puf.falzo.2013.01.0191 ; version d'auteurs déposée sur HAL, halshs-00860635) — « la conduite de simulations du travail permettant de se projeter dans l'activité future probable ». Le texte est cosigné à trois, la phrase ne peut donc pas être citée comme la parole de Daniellou seul, et l'édition imprimée n'a pas été ouverte.",
+    "Origine et datation de la démarche : non établies. Aucune des publications auxquelles Daniellou renvoie lui-même n'a pu être ouverte, et le manuel par lequel la plupart des ergonomes francophones rencontrent la notion, Comprendre le travail pour le transformer, cosigné par lui, est introuvable en ligne. On ne peut donc pas dire dans quel texte, ni en quelle année, le mot « probable » entre dans la formule.",
+    "La version anglaise publiée par la revue durcit la thèse à l'endroit même de la citation : « the real users' activity may no be forecast » (la coquille est dans le texte publié), et le titre de section devient « Future activity may not be forecast ». Elle laisse tomber « en détail », qui est précisément ce qui ménage la place du possible. Une carte adossée à l'anglais dirait autre chose ; la citation reste en français.",
+    "Le point théorique n'est pas un refus de la simulation mais son critère : le but n'est pas de prescrire la bonne façon de faire, il est d'évaluer si les formes possibles de l'activité future sont acceptables, et de vérifier que dans toutes les circonstances prévisibles il existe au moins un mode opératoire acceptable. Les scénarios eux-mêmes sont tirés de l'analyse de situations de référence existantes.",
+    "Détail typographique, pour que la citation soit rejouable : le HTML porte une espace insécable avant le point-virgule de « essentiel ; l'activité », normalisée en espace ordinaire ; la phrase a été contrôlée sur le PDF d'édition, qui compose de même.",
+    "Daniellou nomme la simulation de formation comme un usage distinct du sien, mais ne la discute pas : le risque de glissement vers le sens pédagogique est seulement écarté d'une ligne dans le texte."
+  ]
+}

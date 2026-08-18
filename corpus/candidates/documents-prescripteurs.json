@@ -1,0 +1,69 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "documents-prescripteurs",
+  "slug": "documents-prescripteurs",
+  "status": "CANDIDATE",
+  "title": "Documents prescripteurs",
+  "themes": [
+    "tache-et-activite"
+  ],
+  "domain": "activity-ergonomics",
+  "theme_labels": {
+    "tache-et-activite": "Ce qui est demandé, ce qui est fait"
+  },
+  "authors": [
+    {
+      "name": "Jacques Leplat",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "L'article de 2004 est signé de Jacques Leplat seul. Ce qui est de lui : avoir constitué le document prescripteur — consigne, procédure, mode d'emploi, aide textuelle au travail — en objet d'analyse ergonomique à part entière, et avoir posé qu'un tel document n'explicite jamais complètement la tâche. Ce qu'il hérite : la distinction entre travail prescrit et travail réel, qu'il emploie sans jamais s'en dire l'auteur, et la caractérisation même de l'objet, qu'il porte dès son second paragraphe au crédit de Mayen et Savoyant (2002) et de Veyrac, Cellier et Bertrand (1997).",
+  "quotation": {
+    "text": "Les documents prescripteurs visent à orienter l’action, à dire ce qui doit être fait dans des conditions données pour obtenir un certain résultat.",
+    "reference": "Jacques Leplat, « Éléments pour l'étude des documents prescripteurs », Activités, 1-2, octobre 2004.",
+    "locator": "§ 2",
+    "language": "fr",
+    "original_text": null,
+    "original_language": null,
+    "translation": {
+      "kind": "none",
+      "translator": null,
+      "edition": null
+    }
+  },
+  "hook": "Pourquoi la procédure ne dit-elle jamais tout ce qu'il faut faire ?",
+  "summary": "Consigne, procédure, mode d'emploi disent ce qui doit être fait pour obtenir un résultat ; ils n'explicitent jamais toute la tâche et laissent le détail à l'opérateur.",
+  "sources": [
+    {
+      "label": "Jacques Leplat, « Éléments pour l'étude des documents prescripteurs », Activités, 1-2, octobre 2004.",
+      "kind": "primary",
+      "locator": "§ 2",
+      "doi_isbn": "10.4000/activites.1293",
+      "url": "https://journals.openedition.org/activites/1293",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Jacques Leplat, Repères pour l'analyse de l'activité en ergonomie, Paris, Presses universitaires de France, 2008, vii-244 p. — recueil qui reprend l'article comme chapitre 3.",
+      "kind": "primary",
+      "locator": null,
+      "doi_isbn": "978-2-13-056839-1",
+      "url": "https://openlibrary.org/books/OL23608015M",
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "verdict": "PENDING",
+    "attribution": "non-verifiee",
+    "quotation": "non-verifiee",
+    "sources": "non-verifiee",
+    "prose": "non-verifiee"
+  },
+  "notes": [
+    "RÉSERVE LOURDE, à porter au contrôle : aucune lecture directe du texte n'a été possible. Le site de la revue oppose une page de vérification anti-robot à toute requête en ligne de commande (page, PDF et TEI), l'export TEI répond 401, l'archive du web est injoignable depuis l'environnement de lecture, Cairn répond 403 et le texte n'est déposé nulle part ailleurs. La lecture s'est faite entièrement par un outil de rendu, dont la sortie est produite par un modèle intermédiaire.",
+    "Protocole suivi pour la citation : quatre requêtes distinctes. Trois concordent mot pour mot sur la phrase retenue et la situent au § 2, dont l'une a restitué le paragraphe entier avec son contexte immédiat. Une quatrième, construite en choix forcé entre variantes et leurres, a désigné une variante différente dont le libellé décalque le résumé de l'article et produit un français peu plausible ; elle est tenue pour un artefact du test. La contradiction est réelle et doit être connue : la citation demande un coup d'œil sur l'article dans un navigateur.",
+    "La cartographie donnait la phrase au singulier (« Le document prescripteur vise à orienter l'action… ») ; trois lectures sur quatre donnent le pluriel, qui est retenu.",
+    "L'apostrophe typographique de « l'action » est une inférence de composition : elle suit le résumé du même article tel qu'il est déposé par l'éditeur et récupéré sans intermédiaire dans les notices Crossref et OAI, où toutes les apostrophes sont typographiques. L'outil de rendu normalise les apostrophes et ne permet pas de trancher.",
+    "Un passage plus proche du cœur du concept a été écarté (§ 17) : « Les documents prescripteurs n'explicitent jamais complètement la tâche, soit qu'ils ne concernent qu'une partie de celle-ci, soit qu'ils la décrivent sommairement… » — environ 260 caractères, et la seule coupe honnête ampute ce qui reste alors à la charge de l'opérateur. Il n'a de plus été rendu qu'une fois.",
+    "La pagination de la reprise en volume (PUF, 2008) n'a pas été vérifiée : la page de l'éditeur répond 403. Seules l'existence de l'ouvrage, son auteur unique et sa nature de recueil sont établies, par la notice OpenLibrary."
+  ]
+}
