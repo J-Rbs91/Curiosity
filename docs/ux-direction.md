@@ -527,7 +527,7 @@ serait à refuser, et la boucle plus encore.
 Depuis que cet écran revient à chaque ouverture, la carte du jour attend bel et bien derrière
 lui — ce qui n'était pas le cas quand il ne servait qu'une fois. **Ce qui rend la durée
 acceptable n'est donc plus qu'aucune information n'attende, mais que l'animation ne retienne
-rien** : « Commencer » est présent et actif dès la première image, la séquence ne conditionne
+rien** : « Concept du jour » est présent et actif dès la première image, la séquence ne conditionne
 aucun affichage, et personne n'a jamais à attendre qu'elle finisse. Le jour où elle
 conditionnerait quelque chose, c'est la durée qu'il faudrait revoir, pas l'attente.
 
