@@ -43,7 +43,7 @@ const concept: Concept = {
     text: "L'observance des règles, conçue à l'origine comme un moyen, se transforme en fin en soi […]",
     reference:
       "Robert K. Merton, « Bureaucratic Structure and Personality », Social Forces, vol. 18, n° 4, mai 1940, p. 560-568, p. 563",
-    translationNote: "Traduit pour cette fiche — traduction non publiée",
+    translationNote: "Traduit pour cette fiche, traduction non publiée",
   },
   sources: [
     {
@@ -100,7 +100,7 @@ describe("buildAISharePayload", () => {
     // une vulgarisation. Le transmettre est tout l'intérêt du bouton.
     expect(payload).toContain(`Citation :\n« ${concept.quotation!.text} »`);
     expect(payload).toContain("Référence de la citation :\nRobert K. Merton, « Bureaucratic");
-    expect(payload).toContain("Traduit pour cette fiche — traduction non publiée");
+    expect(payload).toContain("Traduit pour cette fiche, traduction non publiée");
   });
 
   it("ne demande ni le niveau du lecteur ni une première question à sa place", () => {

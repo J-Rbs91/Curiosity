@@ -96,7 +96,7 @@ export const domains: Domain[] = [
     familyId: "humans-organizations",
     order: 4,
     description:
-      "L'étude des décisions économiques réelles, et des écarts systématiques — non pas aléatoires — entre ces décisions et le modèle de l'agent parfaitement rationnel.",
+      "L'étude des décisions économiques réelles, et des écarts systématiques (non pas aléatoires) entre ces décisions et le modèle de l'agent parfaitement rationnel.",
   },
 
   // --- Comprendre le travail réel ------------------------------------------
@@ -118,7 +118,7 @@ export const domains: Domain[] = [
     familyId: "real-work",
     order: 2,
     description:
-      "L'étude des processus cognitifs à l'œuvre dans le travail — attention, charge mentale, conscience de la situation, erreur humaine — et de la conception des dispositifs qui les soutiennent ou les mettent en défaut.",
+      "L'étude des processus cognitifs à l'œuvre dans le travail (attention, charge mentale, conscience de la situation, erreur humaine) et de la conception des dispositifs qui les soutiennent ou les mettent en défaut.",
   },
 
   // --- Comprendre la production et les systèmes ----------------------------
@@ -140,7 +140,7 @@ export const domains: Domain[] = [
     familyId: "production-systems",
     order: 2,
     description:
-      "L'étude des comportements qu'un système produit du fait de sa structure — boucles de rétroaction, délais, effets contre-intuitifs — plutôt que du fait des intentions de ceux qui l'habitent.",
+      "L'étude des comportements qu'un système produit du fait de sa structure (boucles de rétroaction, délais, effets contre-intuitifs) plutôt que du fait des intentions de ceux qui l'habitent.",
   },
   {
     id: "cybernetics",

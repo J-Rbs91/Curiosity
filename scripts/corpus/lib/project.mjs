@@ -53,7 +53,7 @@ export function buildQuotation(record) {
       isFilled(t.edition) ? ` (${t.edition})` : "",
     ].join("");
   } else if (t.kind === "in-house") {
-    projected.translationNote = `Traduit${from} pour cette fiche — traduction non publiée`;
+    projected.translationNote = `Traduit${from} pour cette fiche, traduction non publiée`;
   }
 
   return projected;

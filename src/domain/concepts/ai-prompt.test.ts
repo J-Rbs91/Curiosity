@@ -138,7 +138,7 @@ describe("AI_LEARNING_PROMPT", () => {
   });
 
   it("conserve la hiérarchie documentaire A à E et les quatre statuts de source", () => {
-    for (const niveau of ["A — Source primaire", "B — Source académique secondaire", "C — Synthèse académique", "D — Source pédagogique ou institutionnelle", "E — Source générale"]) {
+    for (const niveau of ["A. Source primaire", "B. Source académique secondaire", "C. Synthèse académique", "D. Source pédagogique ou institutionnelle", "E. Source générale"]) {
       expect(AI_LEARNING_PROMPT).toContain(niveau);
     }
     for (const statut of ["ADMISE", "PROVISOIRE", "CONTEXTUELLE", "REJETÉE COMME PREUVE"]) {

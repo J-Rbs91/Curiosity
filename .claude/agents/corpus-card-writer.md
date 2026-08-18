@@ -48,6 +48,10 @@ c'est acceptable. Un résumé qui affirme au-delà des sources est une faute, ce
 
 Aucun chiffre, aucune date, aucun nom propre qui ne figure dans la lecture primaire.
 
+**Aucun tiret cadratin (`—`) dans un champ affiché.** Le lecteur ne doit jamais le voir :
+voir docs/corpus-workflow.md, « Ce que le lecteur ne voit jamais ». Une incise se rend avec
+une virgule, des parenthèses ou un deux-points. `npm run corpus:validate` le refuse.
+
 ## Les cinq sources
 
 Cinq au plus, **les primaires d'abord**. Une fiche bien instruite en rencontre vingt : les

@@ -23,7 +23,7 @@ export const generatedConcepts: Concept[] = [
       "activite-empechee-et-metier"
     ],
     "themeLabel": "Ce que le travail empêche",
-    "attributionNote": "Yves Clot signe seul le texte de 2004 d'où vient la citation, mais il n'y présente pas la formule comme neuve : il l'introduit en renvoyant à un texte antérieur de lui-même, qui n'a pas pu être ouvert, et rapporte ailleurs à Vygotski l'idée qui la soutient. L'élaboration est celle de l'équipe de clinique de l'activité du Cnam, dont les cosignatures occupent un tiers de sa bibliographie. Un point que le lecteur doit connaître : ce texte dit l'écart entre l'activité réalisée et le réel de l'activité ; l'énumération de ce que ce réel contient — ce qu'on n'a pas pu faire, ce qu'on a cherché à faire sans y parvenir — se lit dans un texte du même auteur paru vingt ans plus tard.",
+    "attributionNote": "Yves Clot signe seul le texte de 2004 d'où vient la citation, mais il n'y présente pas la formule comme neuve : il l'introduit en renvoyant à un texte antérieur de lui-même, qui n'a pas pu être ouvert, et rapporte ailleurs à Vygotski l'idée qui la soutient. L'élaboration est celle de l'équipe de clinique de l'activité du Cnam, dont les cosignatures occupent un tiers de sa bibliographie. Un point que le lecteur doit connaître : ce texte dit l'écart entre l'activité réalisée et le réel de l'activité ; l'énumération de ce que ce réel contient (ce qu'on n'a pas pu faire, ce qu'on a cherché à faire sans y parvenir) se lit dans un texte du même auteur paru vingt ans plus tard.",
     "quotation": {
       "text": "le réel de l’activité possède un volume dont l’activité réalisée par un opérateur n’est jamais que la surface.",
       "reference": "Yves Clot, « Action et connaissance en clinique de l'activité », Activités, 1-1, avril 2004, p. 23-33, p. 31 (§ 29)"
@@ -36,7 +36,7 @@ export const generatedConcepts: Concept[] = [
         "url": "https://journals.openedition.org/activites/pdf/1145"
       },
       {
-        "label": "Yves Clot, « J. Leplat, l'ouverture et la force d'esprit », PISTES, 26-3, 2024 — reformulation tardive où se lit l'énumération de ce que contient le réel de l'activité.",
+        "label": "Yves Clot, « J. Leplat, l'ouverture et la force d'esprit », PISTES, 26-3, 2024 : reformulation tardive où se lit l'énumération de ce que contient le réel de l'activité.",
         "kind": "primary",
         "reference": "§ 5-6 · 10.4000/1356u",
         "url": "https://hal.science/hal-05334852v1/document"
@@ -61,7 +61,7 @@ export const generatedConcepts: Concept[] = [
       "tache-et-activite"
     ],
     "themeLabel": "Ce qui est demandé, ce qui est fait",
-    "attributionNote": "La méthode et sa mise en forme de référence pour le champ francophone viennent de L'analyse du travail, ouvrage cosigné par André Ombredane et Jean-Marie Faverge et paru en 1955, qui n'a pas pu être ouvert : sa notice de bibliothèque en établit la double signature, rien de son contenu. Le nom, lui, ne vient pas de ce livre — l'expression circulait avant lui, et le texte de 1952 cité ici parle déjà des domaines « où l'on pratique l'analyse du travail ». La citation affichée vient de ce texte antérieur, « Analyse et structure du travail » (1952), signé de Faverge seul, et la distinction entre analyse de la tâche et analyse de l'activité n'y figure pas — elle n'est rapportée à l'ouvrage de 1955 que par des commentateurs, en seconde main.",
+    "attributionNote": "La méthode et sa mise en forme de référence pour le champ francophone viennent de L'analyse du travail, ouvrage cosigné par André Ombredane et Jean-Marie Faverge et paru en 1955, qui n'a pas pu être ouvert : sa notice de bibliothèque en établit la double signature, rien de son contenu. Le nom, lui, ne vient pas de ce livre : l'expression circulait avant lui, et le texte de 1952 cité ici parle déjà des domaines « où l'on pratique l'analyse du travail ». La citation affichée vient de ce texte antérieur, « Analyse et structure du travail » (1952), signé de Faverge seul, et la distinction entre analyse de la tâche et analyse de l'activité n'y figure pas ; elle n'est rapportée à l'ouvrage de 1955 que par des commentateurs, en seconde main.",
     "quotation": {
       "text": "L'inventaire des fragments ainsi obtenu ne permet plus de rendre compte du comportement réel et ne peut donner naissance qu'à du verbalisme.",
       "reference": "Jean-Marie Faverge, « Analyse et structure du travail », Bulletin du CERP, n° 1, janvier-juin 1952, p. 1-8 ; republié dans PISTES, 13-2, 2011, § 1, paragraphe liminaire"
@@ -80,13 +80,13 @@ export const generatedConcepts: Concept[] = [
         "url": "https://catalogue.bnf.fr/ark:/12148/cb32497119k"
       },
       {
-        "label": "Régis Ouvrier-Bonnaz, « Analyse et structure du travail de Jean-Marie Faverge », PISTES, 13-2, 2011 — présentation accompagnant la republication.",
+        "label": "Régis Ouvrier-Bonnaz, « Analyse et structure du travail de Jean-Marie Faverge », PISTES, 13-2, 2011 : présentation accompagnant la republication.",
         "kind": "secondary-academic",
         "reference": "10.4000/pistes.2537",
         "url": "https://journals.openedition.org/pistes/2537"
       },
       {
-        "label": "Guy Karnas et Pierre Salengros, « L'analyse du travail trente ans après Ombredane et Faverge », PISTES, 19-2, 2017 — republication d'un texte de 1986.",
+        "label": "Guy Karnas et Pierre Salengros, « L'analyse du travail trente ans après Ombredane et Faverge », PISTES, 19-2, 2017 : republication d'un texte de 1986.",
         "kind": "secondary-academic",
         "reference": "10.4000/pistes.5122",
         "url": "https://journals.openedition.org/pistes/5122"
@@ -105,20 +105,20 @@ export const generatedConcepts: Concept[] = [
       "activite-instrumentee-et-conception"
     ],
     "themeLabel": "L'outil et l'activité",
-    "attributionNote": "Le mot n'est pas de Pierre Rabardel, et c'est lui-même qui l'écrit : il l'emprunte à la linguistique et à la rhétorique, où il désigne l'usage d'un mot au-delà de son acception propre, et rapporte son introduction en ergonomie à Winsemius, en 1969, « selon Faverge ». Jean-Marie Faverge n'apparaît donc que comme usager du terme et fournisseur de l'exemple canonique — la clef employée à frapper à la place d'un marteau. Ce qui revient à Rabardel est le retournement : cesser de lire la catachrèse comme un détournement au regard de la rationalité inscrite dans l'artefact, et y voir l'indice que les utilisateurs contribuent à la conception des usages.",
+    "attributionNote": "Le mot n'est pas de Pierre Rabardel, et c'est lui-même qui l'écrit : il l'emprunte à la linguistique et à la rhétorique, où il désigne l'usage d'un mot au-delà de son acception propre, et rapporte son introduction en ergonomie à Winsemius, en 1969, « selon Faverge ». Jean-Marie Faverge n'apparaît donc que comme usager du terme et fournisseur de l'exemple canonique : la clef employée à frapper à la place d'un marteau. Ce qui revient à Rabardel est le retournement : cesser de lire la catachrèse comme un détournement au regard de la rationalité inscrite dans l'artefact, et y voir l'indice que les utilisateurs contribuent à la conception des usages.",
     "quotation": {
       "text": "La notion de catachrèse est un concept qui désigne l'écart entre le prévu et le réel dans l'utilisation des artefacts.",
-      "reference": "Pierre Rabardel, Les hommes et les technologies ; approche cognitive des instruments contemporains, Paris, Armand Colin, 1995 — version d'auteur déposée sur HAL, Chapitre 7, p. 99"
+      "reference": "Pierre Rabardel, Les hommes et les technologies ; approche cognitive des instruments contemporains, Paris, Armand Colin, 1995 (version d'auteur déposée sur HAL), Chapitre 7, p. 99"
     },
     "sources": [
       {
-        "label": "Pierre Rabardel, Les hommes et les technologies ; approche cognitive des instruments contemporains, Paris, Armand Colin, 1995, 239 p. — version d'auteur déposée sur HAL.",
+        "label": "Pierre Rabardel, Les hommes et les technologies ; approche cognitive des instruments contemporains, Paris, Armand Colin, 1995, 239 p. (version d'auteur déposée sur HAL).",
         "kind": "primary",
         "reference": "chap. 7, p. 99 · HAL hal-01017462",
         "url": "https://hal.science/hal-01017462v1"
       },
       {
-        "label": "Pierre Rabardel, People and Technology. A cognitive approach to contemporary instruments, Université Paris 8, 2002, 188 p. — traduction anglaise déposée par l'auteur.",
+        "label": "Pierre Rabardel, People and Technology. A cognitive approach to contemporary instruments, Université Paris 8, 2002, 188 p. (traduction anglaise déposée par l'auteur).",
         "kind": "primary",
         "reference": "« The notion of catachresis » · HAL hal-01020705",
         "url": "https://hal.science/hal-01020705v1"
@@ -137,7 +137,7 @@ export const generatedConcepts: Concept[] = [
       "activite-instrumentee-et-conception"
     ],
     "themeLabel": "L'outil et l'activité",
-    "attributionNote": "Pascal Béguin signe seul l'article de 2007, et il n'y revendique aucune invention : son résumé annonce un travail de distinction — « on propose d'en distinguer trois » — et il adosse à des travaux d'autres auteurs chacune des trois manières de prendre en compte l'activité qu'il sépare. Le motif de la cristallisation lui est antérieur : il vient de Léontiev et circule en ergonomie francophone par Pierre Rabardel, par ailleurs son coauteur, qui écrit en 1995 dans Les hommes et les technologies que l'instrument est « porteur des opérations de travail qui sont comme cristallisées en lui » et parle de « la cristallisation de l'expérience dans les instruments ». Ce qui revient en propre à Béguin est la partition entre cristallisation, plasticité et développement, et la constitution de la cristallisation en position nommée sur le statut de l'activité dans la conception. Les « espaces d'activité future possibles », qu'on lui prête parfois, sont donnés par lui à François Daniellou.",
+    "attributionNote": "Pascal Béguin signe seul l'article de 2007, et il n'y revendique aucune invention : son résumé annonce un travail de distinction (« on propose d'en distinguer trois ») et il adosse à des travaux d'autres auteurs chacune des trois manières de prendre en compte l'activité qu'il sépare. Le motif de la cristallisation lui est antérieur : il vient de Léontiev et circule en ergonomie francophone par Pierre Rabardel, par ailleurs son coauteur, qui écrit en 1995 dans Les hommes et les technologies que l'instrument est « porteur des opérations de travail qui sont comme cristallisées en lui » et parle de « la cristallisation de l'expérience dans les instruments ». Ce qui revient en propre à Béguin est la partition entre cristallisation, plasticité et développement, et la constitution de la cristallisation en position nommée sur le statut de l'activité dans la conception. Les « espaces d'activité future possibles », qu'on lui prête parfois, sont donnés par lui à François Daniellou.",
     "quotation": {
       "text": "L'idée centrale est que tout dispositif technique, tout artefact, « cristallise » […] un modèle de l'utilisateur et de son activité.",
       "reference": "Pascal Béguin, « Prendre en compte l'activité de travail pour concevoir », Activités, 4-2, octobre 2007, § 7, section « La cristallisation »"
@@ -150,7 +150,7 @@ export const generatedConcepts: Concept[] = [
         "url": "https://journals.openedition.org/activites/1719"
       },
       {
-        "label": "Pascal Béguin, « Taking activity into account during the design process », Activités, 4-2, 2007 — version anglaise publiée par la revue.",
+        "label": "Pascal Béguin, « Taking activity into account during the design process », Activités, 4-2, 2007 (version anglaise publiée par la revue).",
         "kind": "primary",
         "reference": "§ 8 · 10.4000/activites.1727",
         "url": "https://journals.openedition.org/activites/1727"
@@ -169,7 +169,7 @@ export const generatedConcepts: Concept[] = [
       "activite-empechee-et-metier"
     ],
     "themeLabel": "Ce que le travail empêche",
-    "attributionNote": "Yves Schwartz signe seul l'article de 2007 où la formule se lit, au pluriel : « débats de normes ». Il en assume la racine et la nomme — c'est chez Georges Canguilhem, cité douze fois dans ce texte, qu'il prend l'idée de la santé comme débat entre des normes venues du milieu et celles que le vivant produit et cherche à promouvoir. Une réserve pour le lecteur : ce texte ne porte pas l'expression « usage de soi », qui n'y figure pas une seule fois ; les deux formules sont distinctes et la carte n'en annonce qu'une.",
+    "attributionNote": "Yves Schwartz signe seul l'article de 2007 où la formule se lit, au pluriel : « débats de normes ». Il en assume la racine et la nomme : c'est chez Georges Canguilhem, cité douze fois dans ce texte, qu'il prend l'idée de la santé comme débat entre des normes venues du milieu et celles que le vivant produit et cherche à promouvoir. Une réserve pour le lecteur : ce texte ne porte pas l'expression « usage de soi », qui n'y figure pas une seule fois ; les deux formules sont distinctes et la carte n'en annonce qu'une.",
     "quotation": {
       "text": "[…] des débats de normes ne cessent d’occuper, de saisir l’activité humaine […]",
       "reference": "Yves Schwartz, « Un bref aperçu de l'histoire culturelle du concept d'activité », @ctivités, 4-2, 2007, p. 122-133, p. 131"
@@ -201,7 +201,7 @@ export const generatedConcepts: Concept[] = [
     "quotation": {
       "text": "L'observance des règles, conçue à l'origine comme un moyen, se transforme en fin en soi […]",
       "reference": "Robert K. Merton, « Bureaucratic Structure and Personality », Social Forces, vol. 18, n° 4, mai 1940, p. 560-568, p. 563",
-      "translationNote": "Traduit pour cette fiche — traduction non publiée"
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {
@@ -246,7 +246,7 @@ export const generatedConcepts: Concept[] = [
       "tache-et-activite"
     ],
     "themeLabel": "Ce qui est demandé, ce qui est fait",
-    "attributionNote": "L'article de 2004 est signé de Jacques Leplat seul. Ce qui est de lui : avoir constitué le document prescripteur — consigne, procédure, mode d'emploi, aide textuelle au travail — en objet d'analyse ergonomique à part entière, et avoir posé qu'un tel document n'explicite jamais complètement la tâche. Ce qu'il hérite : la distinction entre travail prescrit et travail réel, qu'il emploie sans jamais s'en dire l'auteur, et la caractérisation même de l'objet, qu'il porte dès son second paragraphe au crédit de Mayen et Savoyant (2002) et de Veyrac, Cellier et Bertrand (1997).",
+    "attributionNote": "L'article de 2004 est signé de Jacques Leplat seul. Ce qui est de lui : avoir constitué le document prescripteur (consigne, procédure, mode d'emploi, aide textuelle au travail) en objet d'analyse ergonomique à part entière, et avoir posé qu'un tel document n'explicite jamais complètement la tâche. Ce qu'il hérite : la distinction entre travail prescrit et travail réel, qu'il emploie sans jamais s'en dire l'auteur, et la caractérisation même de l'objet, qu'il porte dès son second paragraphe au crédit de Mayen et Savoyant (2002) et de Veyrac, Cellier et Bertrand (1997).",
     "quotation": {
       "text": "Les documents prescripteurs visent à orienter l’action, à dire ce qui doit être fait dans des conditions données pour obtenir un certain résultat.",
       "reference": "Jacques Leplat, « Éléments pour l'étude des documents prescripteurs », Activités, 1-2, octobre 2004, § 2"
@@ -259,7 +259,7 @@ export const generatedConcepts: Concept[] = [
         "url": "https://journals.openedition.org/activites/1293"
       },
       {
-        "label": "Jacques Leplat, Repères pour l'analyse de l'activité en ergonomie, Paris, Presses universitaires de France, 2008, vii-244 p. — recueil qui reprend l'article comme chapitre 3.",
+        "label": "Jacques Leplat, Repères pour l'analyse de l'activité en ergonomie, Paris, Presses universitaires de France, 2008, vii-244 p. (recueil qui reprend l'article comme chapitre 3).",
         "kind": "primary",
         "reference": "978-2-13-056839-1",
         "url": "https://openlibrary.org/books/OL23608015M"
@@ -272,7 +272,7 @@ export const generatedConcepts: Concept[] = [
     "title": "Échelles de mesure",
     "authorLabel": "Stanley Smith Stevens",
     "hookQuestion": "Numéroter des joueurs, est-ce mesurer ? Et qu'autorise alors chaque échelle ?",
-    "shortExplanation": "Mesurer, c'est attribuer des chiffres selon des règles. Quatre échelles en découlent, et l'invariance dit quelle statistique convient — Stevens n'en proscrit aucune.",
+    "shortExplanation": "Mesurer, c'est attribuer des chiffres selon des règles. Quatre échelles en découlent, et l'invariance dit quelle statistique convient ; Stevens n'en proscrit aucune.",
     "authors": [],
     "themes": [
       "theorie-des-echelles-et-nombres"
@@ -282,7 +282,7 @@ export const generatedConcepts: Concept[] = [
     "quotation": {
       "text": "[…] la mesure, au sens le plus large, se définit comme l'attribution de chiffres à des objets ou des événements selon des règles.",
       "reference": "S. S. Stevens, « On the Theory of Scales of Measurement », Science, nouvelle série, vol. 103, n° 2684, 7 juin 1946, p. 677-680, p. 677",
-      "translationNote": "Traduit pour cette fiche — traduction non publiée"
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {
@@ -324,7 +324,7 @@ export const generatedConcepts: Concept[] = [
         "url": "https://journals.openedition.org/activites/760"
       },
       {
-        "label": "Pierre Falzon et Vanina Mollo, « Para uma ergonomia construtiva : as condições para um trabalho capacitante », Laboreal, 5(1), 2009 — corps du texte en portugais.",
+        "label": "Pierre Falzon et Vanina Mollo, « Para uma ergonomia construtiva : as condições para um trabalho capacitante », Laboreal, 5(1), 2009 (corps du texte en portugais).",
         "kind": "primary",
         "reference": "§ 16 et § 64-67 · 10.4000/laboreal.10429",
         "url": "https://journals.openedition.org/laboreal/10429"
@@ -343,7 +343,7 @@ export const generatedConcepts: Concept[] = [
       "tache-et-activite"
     ],
     "themeLabel": "Ce qui est demandé, ce qui est fait",
-    "attributionNote": "François Hubault et Fabrice Bourgeois cosignent l'article de 2004 où cette position est prise. La distinction entre tâche et activité n'est pas d'eux : leur texte la tient pour un acquis de la discipline — sa première phrase est « La distinction entre tâche et activité est fondatrice de l'ergonomie » — et ne la rapporte à aucun fondateur, aucun des auteurs à qui la littérature l'attribue ne figurant dans sa bibliographie. Ce qui leur revient est la position prise dans une dispute, et le renversement de l'ordre des deux termes.",
+    "attributionNote": "François Hubault et Fabrice Bourgeois cosignent l'article de 2004 où cette position est prise. La distinction entre tâche et activité n'est pas d'eux : leur texte la tient pour un acquis de la discipline (sa première phrase est « La distinction entre tâche et activité est fondatrice de l'ergonomie ») et ne la rapporte à aucun fondateur, aucun des auteurs à qui la littérature l'attribue ne figurant dans sa bibliographie. Ce qui leur revient est la position prise dans une dispute, et le renversement de l'ordre des deux termes.",
     "quotation": {
       "text": "On est donc là au cœur de ce qui se joue dans l'ingénierie de projet : faire de la tâche le moyen de l'activité et non pas son horizon.",
       "reference": "François Hubault et Fabrice Bourgeois, « Disputes sur l'ergonomie de la tâche et de l'activité, ou la finalité de l'ergonomie en question », Activités, 1-1, avril 2004, § 45"
@@ -363,7 +363,7 @@ export const generatedConcepts: Concept[] = [
     "title": "Modèle de la poubelle",
     "authorLabel": "Michael D. Cohen, James G. March, Johan P. Olsen",
     "hookQuestion": "Une solution qui traînait rencontre un problème qui vient d'arriver : qui a décidé ?",
-    "shortExplanation": "Dans une « anarchie organisée » — buts ambigus, savoir causal flou, participation variable —, ce qui relie un problème à une solution est leur coprésence dans le temps.",
+    "shortExplanation": "Dans une « anarchie organisée » (buts ambigus, savoir causal flou, participation variable), ce qui relie un problème à une solution est leur coprésence dans le temps.",
     "authors": [
       "march"
     ],
@@ -375,7 +375,7 @@ export const generatedConcepts: Concept[] = [
     "quotation": {
       "text": "La poubelle, en ces termes, dépeint un monde ordonné, mais qui parvient à l'ordre d'une manière différente de celle que glorifiaient les Lumières.",
       "reference": "Michael D. Cohen, James G. March et Johan P. Olsen, « ‘A Garbage Can Model’ at Forty », in Alessandro Lomi et J. Richard Harrison (dir.), The Garbage Can Model of Organizational Choice, Bingley, Emerald, 2012, p. 19-30, p. 28 (texte de 2012)",
-      "translationNote": "Traduit pour cette fiche — traduction non publiée"
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {
@@ -422,20 +422,20 @@ export const generatedConcepts: Concept[] = [
       "activite-instrumentee-et-conception"
     ],
     "themeLabel": "L'outil et l'activité",
-    "attributionNote": "Pierre Rabardel signe seul Les hommes et les technologies (1995) et y nomme lui-même la genèse instrumentale, dès son introduction et dans le titre de deux chapitres : le concept est bien de lui, et non de sa réception. Une nuance qu'il ne cache pas : la formule « approche instrumentale », qu'il revendique dans l'ouvrage, figure déjà dans le titre d'un texte antérieur de Vérillon que sa propre bibliographie cite — l'ouvrage porte l'expression, ce qui n'établit pas qu'il l'ait forgée. Le texte lu est la version d'auteur déposée en archive ouverte, dont la pagination n'est pas celle de l'édition imprimée.",
+    "attributionNote": "Pierre Rabardel signe seul Les hommes et les technologies (1995) et y nomme lui-même la genèse instrumentale, dès son introduction et dans le titre de deux chapitres : le concept est bien de lui, et non de sa réception. Une nuance qu'il ne cache pas : la formule « approche instrumentale », qu'il revendique dans l'ouvrage, figure déjà dans le titre d'un texte antérieur de Vérillon que sa propre bibliographie cite : l'ouvrage porte l'expression, ce qui n'établit pas qu'il l'ait forgée. Le texte lu est la version d'auteur déposée en archive ouverte, dont la pagination n'est pas celle de l'édition imprimée.",
     "quotation": {
       "text": "En effet, les instruments ne sont pas donnés d’emblée à l’utilisateur : celui-ci les élabore à travers des activités de genèse instrumentale.",
-      "reference": "Pierre Rabardel, Les hommes et les technologies ; approche cognitive des instruments contemporains, Paris, Armand Colin, 1995 — version d'auteur déposée sur HAL, Introduction, p. 4"
+      "reference": "Pierre Rabardel, Les hommes et les technologies ; approche cognitive des instruments contemporains, Paris, Armand Colin, 1995 (version d'auteur déposée sur HAL), Introduction, p. 4"
     },
     "sources": [
       {
-        "label": "Pierre Rabardel, Les hommes et les technologies ; approche cognitive des instruments contemporains, Paris, Armand Colin, 1995, 239 p. — version d'auteur déposée sur HAL.",
+        "label": "Pierre Rabardel, Les hommes et les technologies ; approche cognitive des instruments contemporains, Paris, Armand Colin, 1995, 239 p. (version d'auteur déposée sur HAL).",
         "kind": "primary",
         "reference": "Introduction, p. 4 · HAL hal-01017462",
         "url": "https://hal.science/hal-01017462v1"
       },
       {
-        "label": "Pierre Rabardel, People and Technology. A cognitive approach to contemporary instruments, Université Paris 8, 2002, 188 p. — traduction anglaise déposée par l'auteur.",
+        "label": "Pierre Rabardel, People and Technology. A cognitive approach to contemporary instruments, Université Paris 8, 2002, 188 p. (traduction anglaise déposée par l'auteur).",
         "kind": "primary",
         "reference": "HAL hal-01020705",
         "url": "https://hal.science/hal-01020705v1"
@@ -448,13 +448,13 @@ export const generatedConcepts: Concept[] = [
     "title": "Genre professionnel et style",
     "authorLabel": "Yves Clot, Daniel Faïta, Gabriel Fernandez, Livia Scheller",
     "hookQuestion": "Qui vous a appris ce qui « se fait » dans votre métier, sans jamais l'écrire ?",
-    "shortExplanation": "Le métier impose des manières de faire que nul n'a prescrites : le genre. Chacun les retouche en agissant — le style —, et c'est cette retouche qui fait vivre le genre.",
+    "shortExplanation": "Le métier impose des manières de faire que nul n'a prescrites : le genre. Chacun les retouche en agissant (le style), et c'est cette retouche qui fait vivre le genre.",
     "authors": [],
     "themes": [
       "activite-empechee-et-metier"
     ],
     "themeLabel": "Ce que le travail empêche",
-    "attributionNote": "L'article de 2000 est signé de quatre noms — Yves Clot, Daniel Faïta, Gabriel Fernandez et Livia Scheller — et les deux notions y sont définies au « nous » d'un collectif de recherche, sans qu'aucune part ne soit attribuée à l'un d'eux. Le texte de référence du couple genre / style, annoncé dans cette bibliographie comme à paraître, est signé du seul duo Clot et Faïta. Un mot sur l'homonymie : « genre » désigne ici le genre du métier — ce que le métier prescrit tacitement à ceux qui l'exercent — et non le rapport social de sexe ; le texte ne parle à aucun moment de femmes, d'hommes ni de division sexuelle du travail.",
+    "attributionNote": "L'article de 2000 est signé de quatre noms (Yves Clot, Daniel Faïta, Gabriel Fernandez et Livia Scheller) et les deux notions y sont définies au « nous » d'un collectif de recherche, sans qu'aucune part ne soit attribuée à l'un d'eux. Le texte de référence du couple genre / style, annoncé dans cette bibliographie comme à paraître, est signé du seul duo Clot et Faïta. Un mot sur l'homonymie : « genre » désigne ici le genre du métier (ce que le métier prescrit tacitement à ceux qui l'exercent) et non le rapport social de sexe ; le texte ne parle à aucun moment de femmes, d'hommes ni de division sexuelle du travail.",
     "quotation": {
       "text": "le genre professionnel, c’est-à-dire les « obligations » auxquelles parviennent […] ceux qui travaillent pour arriver à travailler",
       "reference": "Yves Clot, Daniel Faïta, Gabriel Fernandez et Livia Scheller, « Entretiens en autoconfrontation croisée : une méthode en clinique de l'activité », PISTES, 2-1, mai 2000, § 4"
@@ -467,7 +467,7 @@ export const generatedConcepts: Concept[] = [
         "url": "https://journals.openedition.org/pistes/3833"
       },
       {
-        "label": "Yves Clot, « Géneros y estilos profesionales » / « Géneros e estilos profissionais », Laboreal, 10(1), 2014 — entrée de dictionnaire, en espagnol et en portugais.",
+        "label": "Yves Clot, « Géneros y estilos profesionales » / « Géneros e estilos profissionais », Laboreal, 10(1), 2014 (entrée de dictionnaire, en espagnol et en portugais).",
         "kind": "primary",
         "reference": "10.4000/laboreal.5469 ; 10.4000/laboreal.5460",
         "url": "https://doi.org/10.4000/laboreal.5469 ; 10.4000/laboreal.5460"
@@ -486,7 +486,7 @@ export const generatedConcepts: Concept[] = [
       "audit-evaluation-reddition-de-comptes"
     ],
     "themeLabel": "Audit, évaluation, reddition de comptes",
-    "attributionNote": "La carte porte l'analyse du benchmarking comme « une façon de gouverner par le réel » (p. 33), et non l'expression « gouvernement par les chiffres » : celle-ci est antérieure — Alain Desrosières, Gouverner par les nombres. L'argument statistique II, Presses des Mines, 2008 — et le titre de l'article la donne pour objet commenté, « À propos du gouvernement par les chiffres ». L'article est signé d'Isabelle Bruno seule, mais il crédite lui-même l'exemple qu'il développe à une recherche menée avec Emmanuel Didier : « Nous nous attarderons tout particulièrement sur l'exemple du benchmarking (Bruno, Didier, 2013) » (p. 28). D'où les deux noms.",
+    "attributionNote": "La carte porte l'analyse du benchmarking comme « une façon de gouverner par le réel » (p. 33), et non l'expression « gouvernement par les chiffres » : celle-ci est antérieure (Alain Desrosières, Gouverner par les nombres. L'argument statistique II, Presses des Mines, 2008) et le titre de l'article la donne pour objet commenté, « À propos du gouvernement par les chiffres ». L'article est signé d'Isabelle Bruno seule, mais il crédite lui-même l'exemple qu'il développe à une recherche menée avec Emmanuel Didier : « Nous nous attarderons tout particulièrement sur l'exemple du benchmarking (Bruno, Didier, 2013) » (p. 28). D'où les deux noms.",
     "quotation": {
       "text": "Gouverner au moyen du benchmarking permet ainsi d'assigner des objectifs chiffrés, dont le réalisme est indiscutable puisqu'ils sont tirés du réel.",
       "reference": "Isabelle Bruno, « “Des faits, des faits, des faits !” À propos du gouvernement par les chiffres et autres données probantes (dans l'éducation et ailleurs) », Revista Lusófona de Educação, n° 28, 2014, p. 25-42, p. 33"
@@ -526,7 +526,7 @@ export const generatedConcepts: Concept[] = [
     "quotation": {
       "text": "Ainsi, si la sélection favorise les organisations fiables et redevables, elle favorise aussi les organisations à hauts niveaux d'inertie.",
       "reference": "Michael T. Hannan et John Freeman, « Structural Inertia and Organizational Change », American Sociological Review, vol. 49, n° 2, avril 1984, p. 149-164, p. 162-163",
-      "translationNote": "Traduit pour cette fiche — traduction non publiée"
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {
@@ -567,7 +567,7 @@ export const generatedConcepts: Concept[] = [
     "title": "Isomorphisme institutionnel",
     "authorLabel": "Paul J. DiMaggio, Walter W. Powell",
     "hookQuestion": "Pourquoi chercher à changer rend-il les organisations toujours plus semblables ?",
-    "shortExplanation": "DiMaggio et Powell l'expliquent par trois mécanismes — la contrainte, le modelage sur autrui face à l'incertitude, la professionnalisation — et non par l'efficacité.",
+    "shortExplanation": "DiMaggio et Powell l'expliquent par trois mécanismes (la contrainte, le modelage sur autrui face à l'incertitude, la professionnalisation) et non par l'efficacité.",
     "authors": [],
     "themes": [
       "changement-organisationnel",
@@ -578,7 +578,7 @@ export const generatedConcepts: Concept[] = [
     "quotation": {
       "text": "[…] des acteurs rationnels rendent leurs organisations toujours plus semblables à mesure qu'ils cherchent à les changer.",
       "reference": "Paul J. DiMaggio et Walter W. Powell, « The Iron Cage Revisited: Institutional Isomorphism and Collective Rationality in Organizational Fields », American Sociological Review, vol. 48, n° 2, avril 1983, p. 147-160, résumé de l’article, p. 147",
-      "translationNote": "Traduit pour cette fiche — traduction non publiée"
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {
@@ -616,17 +616,17 @@ export const generatedConcepts: Concept[] = [
     "title": "Loi de Campbell",
     "authorLabel": "Donald T. Campbell",
     "hookQuestion": "Que devient un indicateur dès lors qu'on s'en sert pour décider ?",
-    "shortExplanation": "Plus un indicateur quantitatif sert à la décision, plus il subit des pressions de corruption — et plus il fausse le processus social qu'il devait justement surveiller.",
+    "shortExplanation": "Plus un indicateur quantitatif sert à la décision, plus il subit des pressions de corruption, et plus il fausse le processus social qu'il devait justement surveiller.",
     "authors": [],
     "themes": [
       "effets-retour-de-la-mesure"
     ],
     "themeLabel": "Ce que la mesure fait au mesuré",
-    "attributionNote": "Le nom « loi de Campbell » n'est pas de Campbell : l'expression n'apparaît nulle part dans le texte lu. Il écrit « the following pessimistic laws (at least for the U.S. scene) » — au pluriel, sans les baptiser, et en restreignant lui-même leur portée. Le singulier, le nom propre et le statut de loi générale lui ont été attribués après coup par la littérature qui le cite ; qui a employé ce nom le premier, et quand, n'est pas établi. La paternité du concept, elle, n'est ni disputée ni partagée.",
+    "attributionNote": "Le nom « loi de Campbell » n'est pas de Campbell : l'expression n'apparaît nulle part dans le texte lu. Il écrit « the following pessimistic laws (at least for the U.S. scene) », au pluriel, sans les baptiser, et en restreignant lui-même leur portée. Le singulier, le nom propre et le statut de loi générale lui ont été attribués après coup par la littérature qui le cite ; qui a employé ce nom le premier, et quand, n'est pas établi. La paternité du concept, elle, n'est ni disputée ni partagée.",
     "quotation": {
       "text": "Plus un indicateur social quantitatif est utilisé pour la prise de décision sociale, plus il sera soumis à des pressions de corruption […]",
-      "reference": "Donald T. Campbell, « Assessing the Impact of Planned Social Change », Journal of MultiDisciplinary Evaluation, vol. 7, n° 15, février 2011, p. 3-43 — republication du Paper #8, Occasional Paper Series, Public Affairs Center, Dartmouth College, décembre 1976, p. 34, section « Corrupting Effect of Quantitative Indicators »",
-      "translationNote": "Traduit pour cette fiche — traduction non publiée"
+      "reference": "Donald T. Campbell, « Assessing the Impact of Planned Social Change », Journal of MultiDisciplinary Evaluation, vol. 7, n° 15, février 2011, p. 3-43 (republication du Paper #8, Occasional Paper Series, Public Affairs Center, Dartmouth College, décembre 1976), p. 34, section « Corrupting Effect of Quantitative Indicators »",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {
@@ -649,7 +649,7 @@ export const generatedConcepts: Concept[] = [
       "regulation-et-marges"
     ],
     "themeLabel": "Ce que l'opérateur ajuste",
-    "attributionNote": "Fabien Coutarel, François Daniellou et Bernard Dugué cosignent l'article de 2003 qui donne à la notion une définition explicite, la décline en deux régimes — situation de conception et situation de fonctionnement — et en fait l'élément central d'un modèle de prévention des troubles musculo-squelettiques. Ils ne l'ont pas forgée et ne le prétendent pas : ils la reçoivent de l'ergonomie francophone, et leur texte n'en donne aucune référence fondatrice. Qui a écrit le premier « marge de manœuvre », et à quelle date, n'est pas établi : 2003 n'est pas une date d'origine.",
+    "attributionNote": "Fabien Coutarel, François Daniellou et Bernard Dugué cosignent l'article de 2003 qui donne à la notion une définition explicite, la décline en deux régimes (situation de conception et situation de fonctionnement) et en fait l'élément central d'un modèle de prévention des troubles musculo-squelettiques. Ils ne l'ont pas forgée et ne le prétendent pas : ils la reçoivent de l'ergonomie francophone, et leur texte n'en donne aucune référence fondatrice. Qui a écrit le premier « marge de manœuvre », et à quelle date, n'est pas établi : 2003 n'est pas une date d'origine.",
     "quotation": {
       "text": "D’une manière générale, la notion de marge de manœuvre établit un lien entre la santé et le contrôle de chacun sur sa situation de travail.",
       "reference": "Fabien Coutarel, François Daniellou et Bernard Dugué, « Interroger l'organisation du travail au regard des marges de manœuvre en conception et en fonctionnement », PISTES, 5-2, décembre 2003, § 23"
@@ -681,7 +681,7 @@ export const generatedConcepts: Concept[] = [
       "effets-retour-de-la-mesure"
     ],
     "themeLabel": "Ce que la mesure fait au mesuré",
-    "attributionNote": "La phrase citée est de la main de Marilyn Strathern : elle ouvre un paragraphe, sans guillemets ni appel de note. Mais elle resserre une formulation déjà publiée, celle par laquelle Keith Hoskin ouvre son chapitre de 1996 : « “Goodhart's Law” — that every measure which becomes a target becomes a bad measure » (p. 265), texte dont Strathern écrit « I draw freely on his observations ». Elle reformule donc la loi plus qu'elle ne la crée, et c'est Hoskin qui la nomme « loi de Goodhart », d'après une observation d'origine monétaire. Charles Goodhart, lui, ne figure dans aucune des quinze références de l'article : Strathern ne le nomme qu'une fois, dans le paragraphe même de la citation, et par le relais de Hoskin. La désignation « loi de Strathern » ne vient pas d'elle non plus : elle ne nomme jamais sa propre formule.",
+    "attributionNote": "La phrase citée est de la main de Marilyn Strathern : elle ouvre un paragraphe, sans guillemets ni appel de note. Mais elle resserre une formulation déjà publiée, celle par laquelle Keith Hoskin ouvre son chapitre de 1996 : « “Goodhart's Law” – that every measure which becomes a target becomes a bad measure » (p. 265), texte dont Strathern écrit « I draw freely on his observations ». Elle reformule donc la loi plus qu'elle ne la crée, et c'est Hoskin qui la nomme « loi de Goodhart », d'après une observation d'origine monétaire. Charles Goodhart, lui, ne figure dans aucune des quinze références de l'article : Strathern ne le nomme qu'une fois, dans le paragraphe même de la citation, et par le relais de Hoskin. La désignation « loi de Strathern » ne vient pas d'elle non plus : elle ne nomme jamais sa propre formule.",
     "quotation": {
       "text": "When a measure becomes a target, it ceases to be a good measure.",
       "reference": "Marilyn Strathern, « “Improving ratings”: audit in the British University system », European Review, vol. 5, n° 3, juillet 1997, p. 305-321, p. 308, section « Improving the examination system »"
@@ -716,7 +716,7 @@ export const generatedConcepts: Concept[] = [
     "quotation": {
       "text": "Dans cet article, j'entreprends de démontrer que le gouvernement par les nombres est aussi, et inséparablement, un gouvernement par les sentiments.",
       "reference": "Emmanuel Didier, « Numbers and emotions in the governance of the Covid-19 datademic », Social Studies of Science, vol. 55, n° 2, 2025, p. 238-259. Passage relevé sur la version auteur déposée sur HAL (halshs-04859285), Conclusion, premier paragraphe (p. 16 de la version auteur)",
-      "translationNote": "Traduit pour cette fiche — traduction non publiée"
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {
@@ -748,7 +748,7 @@ export const generatedConcepts: Concept[] = [
     "quotation": {
       "text": "Dans la logique organisationnelle, celui qui remplit l'emploi abstrait est un travailleur désincarné qui n'existe que pour le travail.",
       "reference": "Joan Acker, « Hierarchies, Jobs, Bodies: A Theory of Gendered Organizations », Gender & Society, vol. 4, n° 2, juin 1990, p. 139-158, p. 149",
-      "translationNote": "Traduit pour cette fiche — traduction non publiée"
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {
@@ -795,7 +795,7 @@ export const generatedConcepts: Concept[] = [
       "audit-evaluation-reddition-de-comptes"
     ],
     "themeLabel": "Audit, évaluation, reddition de comptes",
-    "attributionNote": "Article signé de Florence Jany-Catrice seule. L'expression n'est pas née dans cet article : l'auteure indique elle-même qu'une partie de sa thèse fait l'objet, la même année, d'un ouvrage intitulé La performance totale : nouvel esprit du capitalisme ? (Presses universitaires du Septentrion, 2012), auquel l'article renvoie. Elle forge l'expression par analogie déclarée avec la « qualité totale » telle que l'analyse Christophe Dejours (2003) — non un concept dont il serait l'auteur, mais la doctrine gestionnaire du management par la qualité totale, qu'il critique.",
+    "attributionNote": "Article signé de Florence Jany-Catrice seule. L'expression n'est pas née dans cet article : l'auteure indique elle-même qu'une partie de sa thèse fait l'objet, la même année, d'un ouvrage intitulé La performance totale : nouvel esprit du capitalisme ? (Presses universitaires du Septentrion, 2012), auquel l'article renvoie. Elle forge l'expression par analogie déclarée avec la « qualité totale » telle que l'analyse Christophe Dejours (2003), non un concept dont il serait l'auteur, mais la doctrine gestionnaire du management par la qualité totale, qu'il critique.",
     "quotation": {
       "text": "[…] la mesure des performances des services publics n'est pas, ou n'est plus guidée par le souci de la pluralité des points de vue.",
       "reference": "Florence Jany-Catrice, « De l'évaluation des politiques publiques à la “performance totale” », Économie et institutions, 18-19 | 2012, mis en ligne le 1er février 2013, § 25, partie 2, section 2.3"
@@ -857,7 +857,7 @@ export const generatedConcepts: Concept[] = [
     "quotation": {
       "text": "[…] la rationalité est limitée quand elle reste en deçà de l'omniscience.",
       "reference": "Herbert A. Simon, « Rational Decision-Making in Business Organizations », Nobel Memorial Lecture, 8 décembre 1978, in Assar Lindbeck (dir.), Nobel Lectures, Economics 1969-1980, Singapour, World Scientific Publishing Co., 1992, p. 343-371, p. 356",
-      "translationNote": "Traduit pour cette fiche — traduction non publiée"
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {
@@ -902,11 +902,11 @@ export const generatedConcepts: Concept[] = [
       "effets-retour-de-la-mesure"
     ],
     "themeLabel": "Ce que la mesure fait au mesuré",
-    "attributionNote": "Article coécrit, et la note 1 l'écrit en toutes lettres : « The authors contributed equally to this article. » Ils ne revendiquent pas la notion de réactivité, qu'ils reprennent à la méthodologie des sciences sociales — ils citent la définition de Donald T. Campbell (1957) — et créditent Carol A. Heimer (1985) d'en avoir fait avant eux un usage substantiel : « Following Heimer's lead, we broaden the scope and refine the concept of reactivity […] ». Ce qui leur appartient est le cadre à deux étages appliqué aux mesures publiques.",
+    "attributionNote": "Article coécrit, et la note 1 l'écrit en toutes lettres : « The authors contributed equally to this article. » Ils ne revendiquent pas la notion de réactivité, qu'ils reprennent à la méthodologie des sciences sociales : ils citent la définition de Donald T. Campbell (1957), et créditent Carol A. Heimer (1985) d'en avoir fait avant eux un usage substantiel : « Following Heimer's lead, we broaden the scope and refine the concept of reactivity […] ». Ce qui leur appartient est le cadre à deux étages appliqué aux mesures publiques.",
     "quotation": {
       "text": "Parce que les gens, êtres réflexifs, observent et interprètent sans cesse le monde et y ajustent leurs actions, les mesures sont réactives.",
       "reference": "Wendy Nelson Espeland et Michael Sauder, « Rankings and Reactivity: How Public Measures Recreate Social Worlds », American Journal of Sociology, vol. 113, n° 1, juillet 2007, p. 1-40, p. 2, quatrième paragraphe de l'introduction",
-      "translationNote": "Traduit pour cette fiche — traduction non publiée"
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {
@@ -979,7 +979,7 @@ export const generatedConcepts: Concept[] = [
     "title": "Réguler son activité et se réguler soi-même",
     "authorLabel": "Jacques Leplat, Xavier Cuny",
     "hookQuestion": "En ajustant votre façon de faire, qu'ajustez-vous d'autre que la tâche ?",
-    "shortExplanation": "L'opérateur ramène à zéro l'écart entre le but et le résultat. Il poursuit aussi des fins propres — santé, confort — et se modifie lui-même quand les contraintes pèsent.",
+    "shortExplanation": "L'opérateur ramène à zéro l'écart entre le but et le résultat. Il poursuit aussi des fins propres (santé, confort) et se modifie lui-même quand les contraintes pèsent.",
     "authors": [],
     "themes": [
       "regulation-et-marges"
@@ -1071,7 +1071,7 @@ export const generatedConcepts: Concept[] = [
     "quotation": {
       "text": "Un énoncé numérique a un sens si et seulement si sa vérité (ou sa fausseté) est constante sous les transformations d'échelle admissibles […].",
       "reference": "Patrick Suppes et Joseph L. Zinnes, « Basic Measurement Theory », Technical Report n° 45, Institute for Mathematical Studies in the Social Sciences, Stanford University, 15 mars 1962, Section 6.1, Definition 33, p. 110",
-      "translationNote": "Traduit pour cette fiche — traduction non publiée"
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {
@@ -1094,7 +1094,7 @@ export const generatedConcepts: Concept[] = [
       "activite-instrumentee-et-conception"
     ],
     "themeLabel": "L'outil et l'activité",
-    "attributionNote": "L'article de 2007 est signé de François Daniellou seul, et il n'y revendique aucune paternité : là où il faut désigner l'origine de la simulation participative conduite tout au long d'un projet, il renvoie à des publications cosignées avec Garrigou, Kerguelen, Laville, Carballeda et Ruaud, ainsi qu'à un ouvrage de Maline. Aucune n'a pu être ouverte : le texte rapporte une élaboration collective dont il est l'un des auteurs, sans qu'on puisse établir qui a formulé quoi. Un point pour le lecteur : la formule qui circule, « activité future probable », ne figure pas dans ce texte — il y écrit qu'on ne peut pas prévoir l'activité future en détail, et qu'on peut en éprouver les formes possibles.",
+    "attributionNote": "L'article de 2007 est signé de François Daniellou seul, et il n'y revendique aucune paternité : là où il faut désigner l'origine de la simulation participative conduite tout au long d'un projet, il renvoie à des publications cosignées avec Garrigou, Kerguelen, Laville, Carballeda et Ruaud, ainsi qu'à un ouvrage de Maline. Aucune n'a pu être ouverte : le texte rapporte une élaboration collective dont il est l'un des auteurs, sans qu'on puisse établir qui a formulé quoi. Un point pour le lecteur : la formule qui circule, « activité future probable », ne figure pas dans ce texte : il y écrit qu'on ne peut pas prévoir l'activité future en détail, et qu'on peut en éprouver les formes possibles.",
     "quotation": {
       "text": "Mais il faut souligner un point théorique essentiel ; l’activité réelle des utilisateurs futurs ne peut pas être prévue en détail.",
       "reference": "François Daniellou, « Des fonctions de la simulation des situations de travail en ergonomie », Activités, 4-2, octobre 2007, p. 77-83, p. 80, § 25"
@@ -1107,7 +1107,7 @@ export const generatedConcepts: Concept[] = [
         "url": "https://journals.openedition.org/activites/1696"
       },
       {
-        "label": "François Daniellou, « Simulating future work activity is not only a way of improving workstation design », Activités, 4-2, 2007 — version anglaise publiée par la revue.",
+        "label": "François Daniellou, « Simulating future work activity is not only a way of improving workstation design », Activités, 4-2, 2007 (version anglaise publiée par la revue).",
         "kind": "primary",
         "reference": "10.4000/activites.1704",
         "url": "https://journals.openedition.org/activites/1704"
@@ -1126,7 +1126,7 @@ export const generatedConcepts: Concept[] = [
       "activite-empechee-et-metier"
     ],
     "themeLabel": "Ce que le travail empêche",
-    "attributionNote": "Sandrine Caroly et Annie Weill-Fassina cosignent l'article de 2007 où la distinction est formulée en deux phrases, dans leur voix et sans appel de référence. Elles ne l'ont pas inventée : elle est posée trois ans plus tôt par Sandrine Caroly avec Yves Clot, dans un article dont c'est le titre même, et la notion de collectif de travail est plus ancienne encore — Caroly la rapporte elle-même à Damien Cru. Annie Weill-Fassina est associée au versant travail collectif, dont elle a codirigé en 2000 l'ouvrage de référence en ergonomie francophone. Ce que les deux autrices signent ensemble est la mise en forme courte de la distinction, pas son invention.",
+    "attributionNote": "Sandrine Caroly et Annie Weill-Fassina cosignent l'article de 2007 où la distinction est formulée en deux phrases, dans leur voix et sans appel de référence. Elles ne l'ont pas inventée : elle est posée trois ans plus tôt par Sandrine Caroly avec Yves Clot, dans un article dont c'est le titre même, et la notion de collectif de travail est plus ancienne encore : Caroly la rapporte elle-même à Damien Cru. Annie Weill-Fassina est associée au versant travail collectif, dont elle a codirigé en 2000 l'ouvrage de référence en ergonomie francophone. Ce que les deux autrices signent ensemble est la mise en forme courte de la distinction, pas son invention.",
     "quotation": {
       "text": "Le collectif de travail n’est pas une donnée. C’est une construction à partir d’un travail collectif.",
       "reference": "Sandrine Caroly et Annie Weill-Fassina, « En quoi différentes approches de l'activité collective des relations de services interrogent la pluralité des modèles de l'activité en ergonomie ? », Activités, 4-1, avril 2007, § 28, item 5"
