@@ -12,10 +12,16 @@ import type { Theme } from "@/types";
  * les thèmes se déclarent à partir de ce qu'il a fait apparaître. Un découpage écrit avant
  * la lecture découpe le champ tel qu'on le croyait, et rien ne le signale jamais comme faux.
  *
+ * Les quatre thèmes d'`activity-ergonomics` suivent la même procédure, et la même règle les
+ * a fait refuser deux fois.
+ *
  * Conséquence directe, visible ci-dessous : aucun thème n'est déclaré ici pour la santé
- * publique ni pour la mesure du bien-être, alors que le périmètre demandait de les balayer.
- * Le scout n'en a rapporté aucune source primaire ouvrable, et **un thème sans carte ne se
- * déclare pas** — il afficherait une page vide et compterait pour de la couverture.
+ * publique ni pour la mesure du bien-être, alors que le périmètre de `measurement-theory`
+ * demandait de les balayer ; ni, en ergonomie de l'activité, pour la charge de travail comme
+ * objet de définitions concurrentes ni pour le couple variabilité / contrainte-astreinte,
+ * que son périmètre demandait aussi. Le scout n'en a rapporté aucune source primaire
+ * ouvrable, et **un thème sans carte ne se déclare pas** — il afficherait une page vide et
+ * compterait pour de la couverture.
  */
 
 export const themes: Theme[] = [
@@ -164,5 +170,51 @@ export const themes: Theme[] = [
     description:
       "Les indicateurs ne flottent pas seuls : ils sont produits et entretenus par des dispositifs — audit, évaluation des politiques publiques, benchmarking, comptabilité. Ce thème examine ces dispositifs et ce que leur exigence de justification fait aux activités qui s'y soumettent.",
     domain: "measurement-theory",
+  },
+
+  // --- Ergonomie de l'activité ---------------------------------------------
+  {
+    id: "tache-et-activite",
+    slug: "tache-et-activite",
+    title: "Ce qui est demandé, ce qui est fait",
+    tagline:
+      "Entre la consigne et le geste, il reste tout le travail.",
+    keywords: ["Tâche", "Activité", "Prescription"],
+    description:
+      "Aucune consigne ne dit tout ce qu'il faut faire pour l'appliquer : entre la tâche prescrite et ce qui se fait réellement, il reste un écart que quelqu'un comble. Ce thème porte sur cette distinction fondatrice et sur la méthode qui la rend observable — aller voir l'activité plutôt que la déduire de ce qui a été demandé.",
+    domain: "activity-ergonomics",
+  },
+  {
+    id: "regulation-et-marges",
+    slug: "regulation-et-marges",
+    title: "Ce que l'opérateur ajuste",
+    tagline:
+      "Tenir la tâche demande de se régler soi-même autant qu'elle.",
+    keywords: ["Régulation", "Marge de manœuvre", "Modes opératoires"],
+    description:
+      "Rien ne se répète à l'identique : la matière varie, l'outil dérive, la fatigue vient. Ce thème porte sur la façon dont celui qui travaille réajuste en permanence ses manières de faire — et sur les conditions d'organisation qui lui laissent, ou lui refusent, de quoi le faire.",
+    domain: "activity-ergonomics",
+  },
+  {
+    id: "activite-empechee-et-metier",
+    slug: "activite-empechee-et-metier",
+    title: "Ce que le travail empêche",
+    tagline:
+      "Ce qu'on n'a pas pu faire compte aussi dans une journée.",
+    keywords: ["Réel de l'activité", "Genre professionnel", "Collectif"],
+    description:
+      "L'activité ne se réduit pas à ce qui s'est fait : ce qu'on a voulu faire sans y parvenir, ce qu'on a dû renoncer à bien faire, pèse et coûte. Ce thème porte sur ce versant du travail, et sur ce que le métier et le collectif donnent — ou ne donnent pas — pour le tenir.",
+    domain: "activity-ergonomics",
+  },
+  {
+    id: "activite-instrumentee-et-conception",
+    slug: "outil-et-conception",
+    title: "L'outil et l'activité",
+    tagline:
+      "L'artefact décide déjà de ce qui sera possible d'en faire.",
+    keywords: ["Instrument", "Catachrèse", "Conception"],
+    description:
+      "Un outil n'est pas neutre : il incorpore un modèle de celui qui s'en servira, et ce modèle agit avant tout usage. Ce thème porte sur ce double mouvement — ce que l'artefact impose à l'activité, ce que l'activité fait de l'artefact — et sur ce que cela exige de qui conçoit.",
+    domain: "activity-ergonomics",
   },
 ];
