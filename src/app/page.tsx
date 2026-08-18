@@ -148,8 +148,14 @@ export default function TodayPage() {
           <p className="text-md leading-relaxed text-ink-soft">
             Un concept à la fois, à chaque ouverture.
           </p>
+          {/*
+           * Le libellé nomme ce qu'on obtient, pas l'action qu'on exécute. « Commencer »
+           * convenait à un écran de première fois — il ouvrait l'application. Au seuil de
+           * chaque ouverture, il ne dit plus rien de ce qui attend derrière, alors que
+           * c'est précisément la seule chose que le lecteur vient chercher.
+           */}
           <Button onClick={() => setOuverture(false)} className="w-fit">
-            Commencer
+            Concept du jour
           </Button>
         </div>
       </Screen>

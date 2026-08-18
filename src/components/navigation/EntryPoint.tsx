@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { climbTo } from "@/components/navigation/climb";
 import { dayKey } from "@/domain/concepts/next-card";
+import { isUpdateAvailable, noteRunningVersion } from "@/lib/app-version";
 import {
   announceReentry,
   clearDeparture,
@@ -41,12 +42,30 @@ export function EntryPoint() {
    */
   const chemin = useRef(pathname);
   const routeur = useRef(router);
+
+  /** Une version plus récente est publiée, et le rechargement attend son moment. */
+  const rechargeDue = useRef(false);
+
   useEffect(() => {
     chemin.current = pathname;
     routeur.current = router;
+    /*
+     * Le rechargement attend d'être arrivé au point d'entrée. Recharger pendant
+     * la remontée figerait la pile sur l'écran d'où l'on vient : le document
+     * repartirait de cet écran, avec la session d'hier toujours dessous, et le
+     * bouton retour la rejouerait — exactement ce que la remontée corrige.
+     */
+    if (rechargeDue.current && pathname === ENTREE) window.location.reload();
   }, [pathname, router]);
 
   useEffect(() => {
+    /*
+     * Un document ne se recharge qu'une fois. Si l'empreinte servie devenait
+     * instable — deux nœuds d'un même hébergeur qui ne répondent pas la même
+     * chose —, ce garde-fou transforme une boucle en un rechargement de trop.
+     */
+    let recharge = false;
+
     const quitter = () => {
       /*
        * La première sortie fait foi. Le moment qui compte est celui où on a
@@ -83,12 +102,43 @@ export function EntryPoint() {
 
       announceReentry();
       if (chemin.current !== ENTREE) climbTo(routeur.current, ENTREE);
+      void appliquerLaVersionPubliee();
+    };
+
+    /*
+     * Une réouverture est le seul moment où recharger ne coûte rien : on n'est
+     * en train de rien lire, et l'écran d'accueil s'affiche de toute façon.
+     * C'est donc là, et nulle part ailleurs, qu'une version publiée entre en
+     * service — jamais pendant qu'on se sert de l'application.
+     */
+    const appliquerLaVersionPubliee = async () => {
+      if (recharge) return;
+      if (!(await isUpdateAvailable())) return;
+      recharge = true;
+      rechargeDue.current = true;
+      // Déjà au point d'entrée : personne ne viendra déclencher l'effet de
+      // synchronisation, puisque le chemin ne changera pas.
+      if (chemin.current === ENTREE) window.location.reload();
     };
 
     const surVisibilite = () =>
       document.visibilityState === "hidden" ? quitter() : revenir();
 
     document.addEventListener("visibilitychange", surVisibilite);
+    /*
+     * Trois écouteurs pour un seul fait — être parti — parce qu'aucun des trois
+     * n'est émis dans tous les cas. Android met en arrière-plan, gèle, puis
+     * décharge, et selon le chemin emprunté c'est `visibilitychange`, `freeze`
+     * ou `pagehide` qui passe. Manquer celui qui passe ne casse rien de
+     * visible : la sortie n'est simplement jamais enregistrée, l'absence n'est
+     * jamais mesurée, et l'application se rouvre comme avant — le défaut
+     * corrigé réapparaît sans qu'aucune erreur ne le dise.
+     *
+     * Les empiler est sans effet de bord : la première sortie fait foi, donc
+     * deux événements pour un même départ n'en écrivent qu'un.
+     */
+    window.addEventListener("pagehide", quitter);
+    document.addEventListener("freeze", quitter);
 
     /*
      * Et une fois au montage : quand le système a déchargé la page pour
@@ -110,14 +160,23 @@ export function EntryPoint() {
      */
     let demonte = false;
     const auChargement = () => {
-      if (!demonte) revenir();
+      if (demonte) return;
+      revenir();
+      /*
+       * Et on retient ce qui tourne : c'est la référence à laquelle les
+       * réouvertures se compareront. Une requête de plus au démarrage, faite
+       * après le chargement pour ne rien lui disputer.
+       */
+      void noteRunningVersion();
     };
-    if (document.readyState === "complete") revenir();
+    if (document.readyState === "complete") auChargement();
     else window.addEventListener("load", auChargement, { once: true });
 
     return () => {
       demonte = true;
       document.removeEventListener("visibilitychange", surVisibilite);
+      window.removeEventListener("pagehide", quitter);
+      document.removeEventListener("freeze", quitter);
       window.removeEventListener("load", auChargement);
     };
   }, []);
