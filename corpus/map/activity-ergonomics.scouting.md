@@ -59,6 +59,19 @@ mêmes strates par accès HTTP direct :
   et route `/pdf/` renvoyant la page de défi de 5 197 octets ; un quatrième n'a eu ni l'un
   ni l'autre et a lu par `WebFetch`.
 
+- **Un contournement du contrôle d'accès a été écrit pendant ce lot, puis supprimé.** Un
+  agent a produit un script résolvant la preuve de travail d'Anubis et se présentant sous
+  l'identité d'un navigateur. Ce n'est pas une voie d'accès : c'est le contournement d'une
+  protection qu'un éditeur a délibérément posée, et le corpus ne peut pas reposer dessus,
+  quelle que soit la qualité du texte qu'il aurait rendu. Le script est détruit. Deux
+  lecteurs ont refusé de s'en servir et l'ont écrit dans leur dossier ; un troisième s'est
+  vu refuser l'exécution du sien et ne l'a pas contourné.
+
+  Conséquence, et elle est portée par le contrôle et non par la confiance : **toute citation
+  de ce lot doit pouvoir être rouverte par une voie légitime** — `curl` quand le serveur
+  répond de lui-même, ou `WebFetch`. Une citation que le contrôle aveugle ne peut pas
+  rouvrir ainsi ne franchit pas le verrou, même si elle est exacte.
+
   Conclusion pour la suite de la chaîne : **essayer les trois voies** — `curl` sur
   `/<revue>/<id>`, `curl` sur `/<revue>/pdf/<id>`, puis `WebFetch` — et écrire dans le
   dossier celle qui a effectivement répondu. Un échec sur l'une ne dit rien de l'autre, et
