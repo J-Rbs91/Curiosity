@@ -1,6 +1,6 @@
 # Périmètre du corpus
 
-## Trois domaines ouverts sur onze
+## Quatre domaines ouverts sur onze
 
 L'application couvre **quatre familles et onze domaines**, déclarés dans
 [`src/content/taxonomy.ts`](../src/content/taxonomy.ts). Déclarer un domaine et l'instruire
@@ -8,10 +8,10 @@ sont deux décisions distinctes, et elles ne se prennent pas ensemble : une fich
 admise parce qu'un domaine existe dans la taxonomie.
 
 > **Les périmètres d'instruction ouverts sont `organizational-sociology`,
-> `measurement-theory` et `activity-ergonomics`.** Les huit autres domaines sont déclarés
-> dans la taxonomie et restent fermés à l'instruction tant qu'une décision explicite ne les
-> ouvre pas — décision qui s'inscrit dans ce fichier, sous la forme d'une section de
-> périmètre comme celles qui suivent.
+> `measurement-theory`, `activity-ergonomics` et `human-factors`.** Les sept autres domaines
+> sont déclarés dans la taxonomie et restent fermés à l'instruction tant qu'une décision
+> explicite ne les ouvre pas — décision qui s'inscrit dans ce fichier, sous la forme d'une
+> section de périmètre comme celles qui suivent.
 
 Un domaine s'ouvre à l'instruction dans cet ordre, et pas dans un autre :
 
@@ -45,7 +45,10 @@ l'activité nomme autrement. La règle est l'**objet du travail cité**, pas sa 
   sa seule existence provoque → théorie de la mesure ;
 - le concept porte sur **l'activité de quelqu'un en situation** — ce qu'il fait réellement
   pour tenir la tâche, ce que cela lui coûte, ce qui l'en empêche → ergonomie de
-  l'activité.
+  l'activité ;
+- le concept porte sur **ce que l'opérateur perçoit, comprend, anticipe ou manque** — le
+  mécanisme cognitif lui-même, sa défaillance, et le dispositif technique qui le soutient ou
+  le met en défaut → human factors.
 
 **Un concept déjà instruit ne se réinstruit pas dans un autre domaine.** Une carte a un
 identifiant unique ; deux domaines ne peuvent pas se partager le même concept, et le
@@ -269,15 +272,23 @@ Trois conditions cumulatives :
 - Ingénierie des facteurs humains au sens de la conception de systèmes techniques — voir
   ci-dessous, ce n'est pas un rejet de fond.
 
-## La frontière avec `human-factors`, qui n'est pas ouvert
+## La frontière avec `human-factors`, ouvert depuis
 
-C'est la frontière la plus coûteuse à manquer, parce que les deux domaines existent dans la
-taxonomie et qu'un seul est ouvert. La littérature anglophone sur l'erreur humaine, la
+C'était la frontière la plus coûteuse à manquer, parce que les deux domaines existaient dans
+la taxonomie et qu'un seul était ouvert. La littérature anglophone sur l'erreur humaine, la
 conscience de la situation, la charge mentale mesurée, la fiabilité et la résilience relève
 de `human-factors` et **ne s'instruit pas ici**, même quand son objet ressemble trait pour
-trait. Un candidat de cette veine ne part pas en rejet : il se consigne dans les angles
-morts de la cartographie, pour le jour où ce domaine s'ouvrira. Un rejet dirait « hors
-sujet » ; ce n'est pas le cas, et la carte du champ perdrait la trace.
+trait. Un candidat de cette veine ne partait pas en rejet : il se consignait dans les angles
+morts de la cartographie, pour le jour où ce domaine s'ouvrirait. Un rejet aurait dit « hors
+sujet » ; ce n'était pas le cas, et la carte du champ aurait perdu la trace.
+
+**Ce jour est venu le 18 août 2026** : `human-factors` est ouvert plus bas dans ce fichier,
+et la section « Candidats retenus pour `human-factors`, domaine déclaré mais fermé » de
+[`corpus/map/activity-ergonomics.scouting.md`](map/activity-ergonomics.scouting.md) a servi
+de premier stock d'entrée à sa cartographie. La consigne de consignation avait donc bien un
+usage, et c'est la démonstration qu'un angle mort écrit vaut mieux qu'un rejet commode. La
+frontière, elle, ne bouge pas : elle est réécrite dans l'autre sens sous le périmètre de
+`human-factors`, et les deux formulations doivent rester lisibles ensemble.
 
 ## Thèmes
 
@@ -293,6 +304,238 @@ ouvrable — le manuel qui les porte est introuvable en ligne et *Le travail hum
 derrière Cairn, fermé. Même règle qu'en théorie de la mesure, et elle se réapprend :
 **un thème sans carte ne se déclare pas.** Il afficherait une page vide et compterait pour
 de la couverture.
+
+---
+
+# Domaine ouvert — `human-factors`
+
+Ouvert le 18 août 2026, le même jour qu'`activity-ergonomics` et immédiatement après lui.
+Quatrième domaine instruit, second de la famille « Comprendre le travail réel ». Il s'ouvre
+dans une situation inédite pour ce corpus : **son voisin immédiat est déjà instruit, et lui a
+laissé un stock d'entrée écrit**. La cartographie de l'ergonomie de l'activité a consigné six
+ensembles de candidats sous le titre « Candidats retenus pour `human-factors`, domaine
+déclaré mais fermé », avec leurs DOI et l'état d'accès constaté. C'est le seul domaine de ce
+corpus dont la première recherche ne part pas de zéro, et c'est un avantage à ne pas
+confondre avec une dispense : ces candidats ont été rencontrés **de biais**, en cherchant
+autre chose, et ils ne cartographient pas le champ.
+
+## Le périmètre est la discipline
+
+> **Human factors et ergonomie cognitive** — l'étude de ce que l'opérateur perçoit, comprend
+> et anticipe dans une tâche réelle, des formes que prend la défaillance de ces processus, et
+> de la conception des dispositifs techniques qui les soutiennent ou les mettent en défaut.
+
+Le domaine ne porte ni sur la posture ni sur le mobilier : il porte sur le travail cognitif,
+c'est-à-dire sur ce qu'il faut tenir en tête pour piloter, surveiller, diagnostiquer,
+décider sous contrainte de temps — et sur ce qui arrive quand l'attention, la mémoire ou le
+modèle mental de l'opérateur ne suffisent plus. Il est né dans l'aéronautique, le nucléaire,
+l'anesthésie et le contrôle de procédés, et c'est là qu'il a produit ses concepts : ses
+textes fondateurs sont des rapports techniques, des articles de revues d'ingénierie et des
+ouvrages d'éditeurs universitaires anglophones, pas des essais.
+
+**C'est une tradition largement anglophone, et c'est l'inverse exact du domaine précédent.**
+La conséquence pratique est double, et elle décide de la qualité du lot :
+
+1. l'accès s'y joue sur d'autres plateformes — dépôts institutionnels, archives de rapports
+   publics (NASA NTRS, DTIC), PubMed Central, revues médicales de sécurité des soins — et
+   non sur les revues francophones en accès ouvert qui ont porté le lot précédent ;
+2. la couche francophone existe, elle est substantielle, et une recherche anglophone seule la
+   manquerait entièrement : l'ergonomie cognitive francophone s'écrit depuis les années 1960
+   et discute les mêmes objets sous d'autres noms. Elle se cherche **en parallèle**, jamais
+   après coup.
+
+## Points d'entrée
+
+Aucun auteur n'est retenu d'avance, même règle que pour les deux domaines précédents et pour
+la même raison : une liste écrite de mémoire reproduit ce qu'on savait déjà et ne signale
+jamais ce qu'elle ignore. Le risque est ici particulièrement élevé, parce que ce domaine est
+celui dont les noms circulent le plus dans la culture générale de l'ingénierie — un scout qui
+partirait de mémoire écrirait cinq ou six noms sans effort, et croirait avoir cartographié.
+Ce que `corpus-scout` doit couvrir, ce sont des **littératures** :
+
+- l'erreur humaine et ses taxonomies : ce qui distingue le ratage de l'exécution de l'erreur
+  de représentation, et ce que ces distinctions permettent ou empêchent ;
+- l'accident organisationnel et la fiabilité : conditions latentes, défenses, ce qui se
+  raconte après coup et ce que le biais de rétrospection fait au récit ;
+- la charge mentale : ses définitions concurrentes, et surtout **ses instruments de mesure**
+  — c'est le versant que l'ergonomie de l'activité a laissé ouvert faute de source, et il
+  relève d'ici dès lors que l'objet est la charge saisie comme grandeur ;
+- l'attention, la vigilance et les limites de la surveillance prolongée ;
+- la conscience de la situation, et la controverse qui l'entoure : le concept est contesté
+  dans sa propre communauté, et une carte qui l'ignorerait serait fausse par omission ;
+- l'automatisation : ce qu'elle laisse à l'opérateur, ce qu'elle lui retire, la confiance
+  qu'il lui accorde et la confusion de mode ;
+- l'ingénierie cognitive et les systèmes cognitifs conjoints : concevoir l'affichage, le
+  couplage homme-machine et l'analyse du travail cognitif ;
+- l'expertise et la décision en situation réelle, sous temps contraint et information
+  incomplète ;
+- la sécurité et la résilience : ce qui fait qu'un système continue de fonctionner, et pas
+  seulement ce qui le fait tomber ;
+- la couche francophone de tout ce qui précède — ergonomie cognitive, psychologie
+  ergonomique, fiabilité humaine — cherchée en parallèle et non après coup.
+
+Si le lot final ne tient qu'à des auteurs anglophones, ou qu'à la seule veine « erreur et
+sécurité » alors que le domaine en compte au moins cinq, la cartographie n'a pas fait son
+travail, et cela se signale.
+
+## Le test d'entrée
+
+La question n'est pas « est-ce du human factors ? » — Reason vient de la psychologie
+cognitive, Rasmussen de l'ingénierie de contrôle, Hollnagel de l'informatique, Bainbridge de
+la psychologie expérimentale, et aucun d'eux ne se présentait d'abord sous cette étiquette.
+La question est :
+
+> **Ce travail éclaire-t-il ce que l'opérateur perçoit, comprend ou manque, et ce que le
+> dispositif y fait ?**
+
+Trois conditions cumulatives :
+
+1. il porte sur un **processus cognitif engagé dans une tâche réelle** — percevoir,
+   comprendre, anticiper, se tromper, tenir sa charge — ou sur le **dispositif technique** qui
+   le soutient ou le met en défaut ;
+2. il est **rattachable à un auteur identifié**, et cette attribution est documentable ;
+3. il est **enseignable** : un lecteur non spécialiste doit pouvoir en reconnaître le
+   mécanisme dans une situation qu'il a vécue, devant un tableau de bord, un formulaire ou
+   une alarme.
+
+## Hors périmètre — rejet direct
+
+- Ergonomie physique, anthropométrie, biomécanique, normes de poste : même rejet qu'en
+  ergonomie de l'activité, et pour la même raison.
+- Psychologie cognitive de laboratoire sans tâche de travail : un effet mesuré sur des
+  étudiants devant un écran n'est pas un résultat de human factors tant que rien ne le
+  rattache à une situation de travail.
+- Neurosciences et neuro-imagerie sans situation de travail.
+- Guides de style d'interface, chartes d'ergonomie logicielle, méthodes d'audit UX vendues
+  comme prestations : c'est du management prescriptif outillé, quel que soit le prestige de
+  l'auteur ou de l'organisme qui les publie.
+- Textes normatifs et réglementaires (normes ISO, référentiels de certification, circulaires
+  de sécurité) : ils appliquent des concepts, ils n'en produisent pas.
+- Intelligence artificielle et apprentissage automatique pris pour eux-mêmes : le domaine
+  s'intéresse à ce que l'opérateur fait d'un système automatisé, pas au système.
+
+Un concept hors périmètre part en `corpus/rejected/` avec
+`rejection_reason: "OUT_OF_SCOPE"`. On ne le laisse pas en attente : un candidat gris non
+tranché revient toujours par une autre porte.
+
+## Les frontières, tranchées à l'avance
+
+Elles se tranchent ici et maintenant, avant la cartographie, parce qu'une frontière arbitrée
+en cours de lot est arbitrée par ce que le lot contient. Deux régimes distincts, et il ne
+faut pas les confondre :
+
+- **avec un domaine ouvert**, un candidat mal placé part chez le voisin ou ne s'instruit
+  pas ; il ne se réinstruit jamais en double, le validateur refuse le doublon d'`id` comme
+  de `slug` ;
+- **avec un domaine encore fermé**, un candidat ne part pas en rejet : il se **consigne dans
+  les angles morts** de la cartographie, exactement comme `activity-ergonomics` l'a fait pour
+  ce domaine-ci. C'est cette consigne qui vient de servir, et c'est la preuve qu'elle n'est
+  pas décorative.
+
+### Avec `activity-ergonomics`, ouvert — la frontière décisive
+
+C'est la seule qui puisse coûter cher, parce que les deux domaines partagent leurs terrains,
+leurs revues et parfois leurs auteurs : Leplat a écrit des deux côtés, et il a rendu compte
+de Hollnagel dans *PISTES*. Elle ne se tranche ni par la langue, ni par la revue, ni par
+l'auteur, mais par **ce dont le texte parle** :
+
+| le texte porte sur | domaine |
+|---|---|
+| ce que l'opérateur **fait** pour tenir la tâche malgré les conditions, et ce que cela lui coûte | `activity-ergonomics` |
+| ce que l'opérateur **perçoit, comprend, anticipe ou manque**, et le dispositif qui y concourt | `human-factors` |
+| l'écart entre la tâche prescrite et le travail réel, la régulation, les marges de manœuvre | `activity-ergonomics` |
+| l'erreur, la fiabilité, la conscience de la situation, la charge mesurée, l'automatisation | `human-factors` |
+| l'activité empêchée, le métier, le collectif de travail, le débat de normes | `activity-ergonomics` |
+
+Deux cas limites méritent d'être nommés, parce qu'ils se présenteront :
+
+- **la charge de travail**. Le périmètre d'`activity-ergonomics` la revendiquait comme
+  littérature à balayer, et n'a pu ouvrir aucun thème faute de source primaire ouvrable. Elle
+  n'est pas pour autant reversée ici en bloc : la charge comme **compromis que l'opérateur
+  arbitre en changeant de mode opératoire** reste chez le voisin ; la charge comme
+  **grandeur qu'on définit et qu'on mesure** est ici. Le texte tranche, pas le mot.
+- **l'activité instrumentée**. Ce que l'outil fait à l'activité et ce que l'activité fait à
+  l'outil est déjà instruit chez le voisin, sous quatre cartes. Ce qui reste ici, c'est le
+  dispositif comme **support ou piège de la cognition** : l'affichage, l'alarme,
+  l'automatisation et ce qu'elle laisse à faire.
+
+### Avec `measurement-theory`, ouvert
+
+Le domaine de la mesure porte sur **ce qu'un indicateur fait à ce qu'il mesure**. Un
+instrument de charge mentale n'entre pas chez lui du seul fait qu'il mesure : il n'y entrerait
+que si l'objet du texte était l'effet en retour de la mesure sur le mesuré. Tant que l'objet
+est ce que l'instrument saisit de la cognition et ce qu'il en manque, c'est `human-factors`.
+
+### Avec `organizational-sociology`, ouvert
+
+L'accident et la sécurité s'écrivent des deux côtés, et la frontière passe par le niveau
+d'analyse du texte, pas par son terrain. Ce qui porte sur la **structure, le couplage entre
+unités, le pouvoir, la règle ou la culture d'une organisation** relève de la sociologie des
+organisations. Ce qui porte sur **le mécanisme cognitif d'un opérateur** — même quand le
+texte remonte ensuite aux décisions organisationnelles qui l'ont rendu possible — relève
+d'ici. Un même accident peut donc être instruit deux fois, par deux textes différents ; le
+même texte, jamais.
+
+### Avec `work-psychology`, fermé
+
+Stress, épuisement professionnel, motivation, satisfaction, exigences et latitude
+décisionnelle : c'est de la psychologie du travail et **cela ne s'instruit pas ici**, même
+quand un texte de human factors s'en sert. Un candidat de cette veine se consigne dans les
+angles morts. La coupure : ce qui porte sur un **état affectif ou motivationnel durable** est
+là-bas ; ce qui porte sur une **ressource cognitive engagée dans une tâche** est ici.
+
+### Avec `decision-science`, fermé
+
+La théorie du choix, les heuristiques et biais de jugement, la décision en univers risqué
+prise comme objet général relèvent de `decision-science` et se consignent dans les angles
+morts. Ce qui reste ici, c'est la **décision d'un opérateur dans une tâche réelle**, sous
+temps contraint et information incomplète : l'objet n'est plus le choix, mais la cognition
+qui le produit en situation.
+
+### Avec `cybernetics` et `systems-thinking`, fermés
+
+La variété requise, la régulation d'un système par lui-même, la modélisation systémique du
+danger et l'analyse d'accident par modèle de contrôle appartiennent à ces deux domaines et se
+consignent dans les angles morts. Ils sont pourtant à l'origine directe d'une part du
+vocabulaire de ce champ, et **cette dette se signale plutôt qu'elle ne se dissimule** : une
+carte de human factors peut nommer sa source cybernétique dans son attribution sans instruire
+le concept cybernétique lui-même.
+
+### Avec `operations-management`, fermé
+
+Fiabilité industrielle, maintenance, qualité, sûreté de fonctionnement au sens de
+l'ingénieur : angles morts. Ici, l'objet est l'humain dans le système, pas le système.
+
+## L'accès — ce que ce domaine impose et qui n'est pas négociable
+
+Le lot précédent a rencontré un défi anti-robot et un agent a écrit un script pour le
+résoudre ; le script a été détruit et la règle inscrite. **Elle vaut ici avec une acuité
+particulière**, parce que la littérature anglophone de ce domaine est massivement portée par
+des éditeurs commerciaux et par des bibliothèques de prêt numérique :
+
+> **Aucun agent ne contourne un contrôle d'accès.** Face à un défi anti-robot, à un mur de
+> connexion, à un prêt numérique ou à une restriction d'emprunt, on essaie une autre voie
+> légitime ; on ne résout pas le défi, on ne se présente pas sous l'identité d'un navigateur,
+> on n'emprunte pas ce qui demande un compte. **Un texte qu'on ne peut pas ouvrir
+> légitimement est un texte qu'on n'a pas ouvert** : on le dit, et on ne conclut pas au
+> verbatim.
+
+Cette règle s'écrit dans le prompt de chaque lecteur et de chaque contrôleur, sans exception.
+Sa conséquence prévisible ici : **plusieurs textes fondateurs du champ sont des ouvrages et
+resteront fermés.** Ce n'est pas un échec du passage, c'est un résultat à écrire dans les
+angles morts.
+
+## Thèmes
+
+**Le domaine n'a encore aucun thème déclaré**, et c'est voulu : ils s'écriront dans
+`src/content/themes.ts` à partir de ce que le scout aura fait apparaître, avec
+`domain: "human-factors"`, et **après le contrôle des cartes, jamais avant**. Tant qu'ils ne
+sont pas déclarés, une fiche de ce domaine porte ses thèmes dans `themes` avec leur libellé
+dans `theme_labels`, et déclare `domain: "human-factors"` — sans quoi le validateur refuse la
+fiche, qui n'apparaîtrait sinon dans aucun domaine.
+
+La règle qui s'est réapprise deux fois tient toujours : **un thème sans carte validée ne se
+déclare pas.** Il afficherait une page vide et compterait pour de la couverture.
 
 ---
 
