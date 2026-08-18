@@ -1,0 +1,56 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "echelles-de-mesure",
+  "lead": [
+    "Demander si une opération compte comme une mesure ressemble à une question de vocabulaire, et c’en est une jusqu’au moment où quelque chose en dépend. Ce qui en dépend n’est pas le mot : ce sont les calculs que l’on s’autorise ensuite. Refuser à une notation le nom de mesure, c’est lui refuser la moyenne, l’écart type, la comparaison de deux populations ; le lui accorder, c’est les lui ouvrir. Une dispute sur la définition est donc une dispute sur des droits de calcul, menée sous un autre nom.",
+    "Une définition assez large pour laisser entrer les numéros cousus dans le dos des joueurs paraît abandonner la partie. Elle fait autre chose : elle sépare deux questions que la dispute tenait ensemble. Savoir si l’on mesure devient une question presque sans enjeu, à laquelle on répond le plus souvent oui ; savoir ce que l’on peut faire des chiffres obtenus devient une question technique, qui se règle cas par cas et non discipline par discipline. Tout le poids passe du premier verdict au second."
+  ],
+  "sections": [
+    {
+      "title": "Chiffres, et non nombres",
+      "paragraphs": [
+        "La phrase de la carte se lit en français « la mesure, au sens le plus large, se définit comme l’attribution de chiffres à des objets ou des événements selon des règles ». L’original écrit « numerals », et jamais « numbers » : la traduction retenue est interne, non publiée, et elle déclare son parti pris en rendant ce mot par « chiffres » plutôt que par « nombres ». Le choix n’est pas cosmétique, car la distinction porte tout le reste. Un chiffre est un signe écrit, un nombre est une quantité, et le signe peut être posé sur une chose sans rien dire de sa grandeur.",
+        "C’est à cette condition que numéroter des joueurs entre dans la définition. Stevens le donne en exemple p. 678 : « when we label our football players we are dealing with unit classes of one member each ». Chaque numéro désigne une classe qui ne contient qu’un individu. Rien n’est ordonné, rien n’est comparé, aucune quantité n’est en jeu ; la seule règle est que deux joueurs ne portent pas le même numéro. La définition est pourtant satisfaite dans ses trois termes : des objets, des chiffres, une règle.",
+        "La forme qui circule en français, « attribution de nombres », efface cette condition. Sous elle, l’exemple des joueurs devient incompréhensible, un numéro de maillot n’étant pas une quantité, et l’échelle nominale perd son sol. Une définition élargie jusqu’à l’étiquette n’est pas une définition relâchée : c’est la seule qui permette de traiter dans un même cadre l’étiquetage, le classement et la mesure au sens ordinaire, donc de leur appliquer ensuite un même critère."
+      ]
+    },
+    {
+      "title": "Ce que la coupe de la citation retire",
+      "paragraphs": [
+        "La phrase citée ne commence pas là où la carte la commence, et les crochets initiaux le signalent. Dans l’article, p. 677, colonne de droite, à l’ouverture d’une section intitulée « A Classification of Scales of Measurement », elle s’ouvre par « Paraphrasing N. R. Campbell (Final Report, p. 340), we may say that ». Le dossier donne la raison de la coupe sans la maquiller : la phrase entière fait 185 caractères en anglais, davantage en français, et le format de la carte plafonne à 150. La coupe est motivée, elle ne répare rien.",
+        "Ce qu’elle retire est un crédit. La phrase qui circule sous son nom y est donnée par son auteur comme la paraphrase d’un autre. La question de l’attribution s’en trouve déplacée plutôt que réglée : l’article est signé d’un seul nom, « S. S. Stevens, Director, Psycho-Acoustic Laboratory, Harvard University », et ce qu’il présente comme sien est le tableau, non la définition. Une note de la p. 678 date même ce tableau : « A classification essentially equivalent to that contained in this table was presented before the International Congress for the Unity of Science, September 1941. » La même note remercie G. D. Birkhoff d’une discussion, sans en faire un coauteur.",
+        "Une seconde définition figure p. 680, et elle est régulièrement confondue avec celle-ci. Stevens l’y donne entre guillemets, au compte d’un membre non nommé du comité britannique : ce n’est pas sa phrase non plus. Deux énoncés circulent donc sous son nom dans le même article, et aucun des deux n’est présenté par lui comme entièrement sien. Attribuer à Stevens une définition de la mesure demande au minimum de dire laquelle, et de qui il la tient."
+      ]
+    },
+    {
+      "title": "Ce que l’invariance décide",
+      "paragraphs": [
+        "Le classement en quatre échelles, nominale, ordinale, à intervalle et de rapport, tient dans un tableau de la p. 678. Ce tableau ne se contente pas de nommer les échelles : il fait correspondre à chacune un ensemble de transformations, dans sa troisième colonne, et une colonne intitulée « Permissible Statistics (invariantive) ». Le critère qui relie les deux est énoncé sur la même page : « The criterion for the appropriateness of a statistic is invariance under the transformations in Column 3. »",
+        "Une échelle ne fixe pas une numérotation, elle fixe une famille de numérotations qui se valent : les transformations sont le passage de l’une à l’autre, et les dire admises, c’est dire qu’aucune n’est plus vraie que les autres. Une statistique dont la réponse change quand on passe d’une numérotation admise à une autre a donc répondu sur le codage, non sur ce qui a été observé. L’invariance sépare exactement cela : ce que la mesure porte, et ce que la convention porte.",
+        "Prenons un cas fictif, construit ici pour rendre le mécanisme visible et qui ne documente rien. Un jury note des dossiers de 1 à 5 ; un second recode les mêmes jugements en 1, 2, 4, 8, 16, dans le même ordre. Si les deux codages sont tenus pour également fidèles à ce qui a été jugé, alors toute conclusion qui diffère entre eux, une moyenne qui monte, un écart qui s’inverse, vient du codage et non des dossiers. C’est ce test que l’invariance formalise."
+      ]
+    },
+    {
+      "title": "Ce que Stevens refuse d’interdire",
+      "paragraphs": [
+        "Un critère de ce genre se lit spontanément comme une règle d’interdiction : la typologie dirait ce qu’on n’a pas le droit de calculer. Le dossier tient cette lecture prescriptive pour un durcissement postérieur, et le texte la rend difficile. Stevens écrit bien la concession stricte, p. 679 : « in the strictest propriety the ordinary statistics involving means and standard deviations ought not to be used with these scales ».",
+        "Il refuse ensuite d’en tirer l’interdiction. Il accorde à ce calcul « a kind of pragmatic sanction: In numerous instances it leads to fruitful results », et juge que « the outlawing of this procedure would probably serve no good purpose ». Le critère d’invariance dit donc ce qu’une statistique garantit, et non ce qu’il est permis de faire. La garantie est une chose, l’autorisation en est une autre, et le texte ne convertit pas la première en seconde.",
+        "On peut comprendre cela comme une troisième position, entre l’interdit et l’indifférence : le calcul reste hors garantie, et ses résultats se jugent sur ce qu’ils donnent. La nuance mérite d’être tenue, car refuser de proscrire n’est pas soutenir que tout se vaut. Rien dans ces deux phrases ne dit que le choix de l’échelle serait sans conséquence, ni que la moyenne d’un classement voudrait dire la même chose que la moyenne de longueurs. Ce qui est refusé est la police, pas le critère."
+      ]
+    },
+    {
+      "title": "Un désaccord connu par sa seule notice",
+      "paragraphs": [
+        "La seconde source de la carte est un article de Joel Michell paru en 1986 dans le Psychological Bulletin. Son statut est déclaré sans ambiguïté dans le dossier : seule la notice a été lue. Le texte est en accès fermé, aucune copie librement accessible n’a été trouvée, et rien de ce que la carte affirme n’en provient. L’accès a manqué ; ce n’est pas un silence de la littérature.",
+        "Une référence dans cet état établit quelque chose, et il vaut la peine de dire quoi. Elle établit que quarante ans après l’article de 1946, dans une revue générale de psychologie, la question des échelles et des statistiques valait encore un article dont le titre annonce « Measurement scales and statistics: A clash of paradigms ». Un titre est une donnée de notice : il nomme un désaccord, il ne l’énonce pas.",
+        "Ce qu’une telle référence n’établit pas est tout le reste : contre qui l’auteur écrit, ce qu’il soutient, s’il tient la position de 1946 pour défendable ou pour une confusion. Une carte qui s’arrêterait à la source primaire donnerait à lire un texte comme s’il n’avait jamais été contesté ; une carte qui résumerait le désaccord sans avoir ouvert l’article inventerait ce résumé. La référence occupe l’espace entre les deux, et elle indique où aller."
+      ]
+    }
+  ],
+  "limits": [
+    "Le contenu du tableau de la p. 678 n’est pas établi ici, au-delà de sa structure : le dossier porte les quatre échelles, une colonne de transformations, une colonne « Permissible Statistics (invariantive) » et le critère qui les relie, mais non le détail des lignes. Quelles transformations chaque échelle admet, et quelles statistiques y sont rangées comme licites, demande de lire le tableau.",
+    "Ce qui n’est pas de Stevens reste connu par son seul nom. Le Final Report de N. R. Campbell n’arrive que par la mention et la page qu’il en donne, p. 340, sans que son propos ni sa nature soient établis. De même pour la définition de la p. 680, citée d’un membre non nommé du comité britannique : le dossier en atteste l’existence, jamais le contenu.",
+    "L’article de Michell n’a pas été ouvert, le dossier le signalant en accès fermé et sans copie librement accessible. Aucune phrase sur ce qu’il soutient, ni sur la portée de son objection, ne peut être tirée de cette carte.",
+    "La lecture de l’article de 1946 procède par passages localisés, p. 677 à 680 : le fil qui va de la définition au tableau puis aux remarques finales n’est pas reconstitué, et la dernière phrase, « no scale used by mortals is perfectly free of their taint », arrive sans ce à quoi elle renvoie. La traduction française, enfin, est interne et non publiée : une discussion qui tiendrait à un mot doit se mener sur l’anglais."
+  ]
+}
