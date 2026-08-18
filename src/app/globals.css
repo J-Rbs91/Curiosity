@@ -509,15 +509,65 @@ body {
 }
 
 /*
- * Tout ce qui n'est pas dans un `<Screen>` — le fond, la barre de navigation —
- * appartient à l'instantané racine et se fond simplement d'un état à l'autre.
- * Entre deux onglets la barre est identique et le fondu ne se voit pas ; à
- * l'entrée en session elle disparaît, et c'est ce fondu qui la fait sortir.
+ * Le fond appartient à l'instantané racine et se fond simplement d'un état à
+ * l'autre. Il est uni : ce fondu ne se voit pas, et c'est bien ce qu'on lui
+ * demande.
  */
 ::view-transition-old(root),
 ::view-transition-new(root) {
   animation-duration: var(--dur-fade);
   animation-timing-function: var(--ease-out-soft);
+}
+
+/* --------------------------------------------------------------------------
+ * La barre de navigation ne traverse pas : elle reste.
+ *
+ * Elle appartenait à l'instantané racine, avec le fond. Le raccourci tenait tant
+ * que la racine contenait aussi l'écran — le fondu croisé emportait alors la
+ * barre et ce qu'elle recouvre d'un seul tenant, et rien ne se voyait.
+ *
+ * Il ne tient plus depuis que `<Screen>` a son propre instantané, et il produit
+ * deux défauts qui se cumulent :
+ *
+ * — l'écran est **retiré** de la racine, donc la racine ne contient plus rien
+ *   derrière la barre. Il ne restait d'elle qu'un aplat, sans l'arrière-plan
+ *   qu'elle est censée masquer ;
+ * — venant après la racine dans l'ordre de peinture, l'écran passe **au-dessus**
+ *   d'elle. Le texte qui glisse traversait donc la barre au lieu de disparaître
+ *   dessous.
+ *
+ * Ensemble, la barre semblait s'effacer pendant toute la traversée, puis revenir
+ * d'un coup à la dernière image, quand le vrai élément reprend la main. C'est ce
+ * ressaut que ces règles suppriment.
+ *
+ * Lui donner un nom la sort de la racine ; le `z-index` la place au-dessus de
+ * l'écran ; figer les deux instantanés la laisse immobile et opaque du début à
+ * la fin. C'est exactement son rôle : le repère qui dit « vous êtes ici » ne
+ * peut pas être ce qui bouge pendant qu'on change d'ici.
+ *
+ * C'est le motif d'ancrage documenté par Next, sous « Anchoring the header » —
+ * `node_modules/next/dist/docs/01-app/02-guides/view-transitions.md`. Le
+ * `z-index` y est écrit plutôt que déduit de l'ordre du document, qui donnerait
+ * le même résultat mais se casserait au premier déplacement du composant. Le
+ * `display: none` sur l'ancien instantané supprime l'image où les deux barres
+ * se superposent.
+ * -------------------------------------------------------------------------- */
+
+.bottom-nav {
+  view-transition-name: bottom-nav;
+}
+
+::view-transition-group(bottom-nav) {
+  animation: none;
+  z-index: 100;
+}
+
+::view-transition-old(bottom-nav) {
+  display: none;
+}
+
+::view-transition-new(bottom-nav) {
+  animation: none;
 }
 
 ::view-transition-old(.screen-deeper) {
