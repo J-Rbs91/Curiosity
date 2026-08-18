@@ -18,5 +18,10 @@ import type { ConceptId } from "@/types";
 export const deepenedConceptIds: readonly ConceptId[] = [
   "activite-empechee",
   "analyse-du-travail",
-  "rationalite-limitee"
+  "catachrese",
+  "marge-de-manoeuvre",
+  "mesure-devenue-cible",
+  "rationalite-limitee",
+  "travail-collectif-collectif-de-travail",
+  "zones-incertitude"
 ];
