@@ -2,12 +2,12 @@
   "$schema": "../schema/carte.schema.json",
   "id": "simulation-activite-future",
   "slug": "simulation-activite-future",
-  "status": "CANDIDATE",
+  "status": "VALIDATED",
   "title": "Simuler l'activité future possible",
   "themes": [
     "activite-instrumentee-et-conception"
   ],
-  "domain": "activity-ergonomics",
+  "domain": null,
   "theme_labels": {
     "activite-instrumentee-et-conception": "L'outil et l'activité"
   },
@@ -52,11 +52,23 @@
     }
   ],
   "review": {
-    "verdict": "PENDING",
-    "attribution": "non-verifiee",
-    "quotation": "non-verifiee",
-    "sources": "non-verifiee",
-    "prose": "non-verifiee"
+    "reviewer": "contrôle aveugle",
+    "date": "2026-08-18",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 0,
+    "notes": [
+      "Ouvert https://journals.openedition.org/activites/1696 (HTML, curl, 200) et le PDF https://journals.openedition.org/activites/pdf/1696 (8 p., texte extrait page à page).",
+      "CITATION — verbatim et à l'endroit annoncé. HTML § 25 (section 2.2 « On ne peut pas prévoir l'activité future ») : « Le but des simulations est d'approcher l'activité future des utilisateurs [...]. Mais il faut souligner un point théorique essentiel ; l'activité réelle des utilisateurs futurs ne peut pas être prévue en détail. » Même phrase au PDF p. 5, dont le bandeau porte « @ctivités, 2007, volume 4 numéro 2 80 » : le locator « p. 80, § 25 » est exact sur les deux paginations. Ponctuation (point-virgule après « essentiel »), apostrophes typographiques et absence de coupe : conformes. Langue française, texte source (la page française porte « Traduction(s) : Simulating future work activity... [en] ») ; la déclaration translation.kind = none est donc juste.",
+      "SOURCES — les deux références résolvent. Crossref 10.4000/activites.1696 : « Des fonctions de la simulation des situations de travail en ergonomie », François Daniellou, Activites, vol. 04, n° 2, 2007. Crossref 10.4000/activites.1704 : « Simulating future work activity is not only a way of improving workstation design », même auteur, même volume/numéro, 2007 ; page ouverte (200), § 27 correspondant. Crossref ne porte pas de champ page, mais la ligne « référencement » du PDF donne « @ctivités, 4 (2), pp. 77-83 » : la pagination affichée est confirmée par la revue elle-même.",
+      "ATTRIBUTION — l'article de 2007 est bien signé Daniellou seul (Crossref et page de titre du PDF), et il ne s'y attribue rien : là où il désigne l'origine de la simulation participative articulée à tout le processus de conception, il renvoie à « (Daniellou, Garrigou, Kerguelen, & Laville, 1990 ; Garrigou, Daniellou, Carballeda, & Ruaud, 1995) » (PDF p. 4, éd. p. 79) et, pour les propriétés des supports, à « (Maline, 1994) » (PDF p. 5, éd. p. 80). La carte le dit ainsi ; rien dans le texte ne contredit cette prudence. Je n'ai pas ouvert ces publications de 1990/1994/1995 — non accessibles en ligne depuis cette session ; c'est un accès manquant, pas une réfutation.",
+      "PROSE — le hook (« vérifier qu'un poste sera tenable ») reprend le verbe de l'auteur : « la simulation doit vérifier que, dans toutes les circonstances prévisibles, il existe au moins un mode opératoire qui soit acceptable pour réaliser les tâches » (éd. p. 80). Le summary est porté mot pour mot par les deux paragraphes de la section 2.2 : « les décisions de conception ouvrent et ferment des pans entiers à l'activité future » et « il s'agit d'évaluer quelles sont les formes possibles de l'activité future ». Aucun débordement.",
+      "Contrôle annexe (hors des quatre points, pour information) : la formule « activité future probable » est effectivement absente du texte de 2007 — recherche plein texte sur le HTML et le PDF, seules occurrences de « probable » sont adjectivales et sans rapport ; l'article écrit « l'activité future possible correspondante » (éd. p. 79). Une requête HAL sur \"activité future probable\" ne rend qu'un seul document (Coutarel et al., 2024), ce qui n'établit ni n'infirme la circulation de la formule.",
+      "Non atteint : les références de 1990, 1994 et 1995 citées dans l'article. Cairn et Persée n'ont pas été sollicités pour elles ; aucune conclusion n'en est tirée."
+    ]
   },
   "notes": [
     "CHOIX DE TITRE, à dire explicitement au contrôle. Le dossier de lecture offrait deux issues : s'en tenir à ce que le texte de 2007 énonce, ou porter la formule « simulation de l'activité future probable » et afficher aussi le chapitre cosigné de 2013 qui la porte réellement. C'est la première qui est retenue. Le mot « probable » n'apparaît jamais accolé à « activité future » dans le texte de 2007 : il y figure trois fois, dans trois contextes sans rapport. Ce que le texte écrit, en revanche, ce sont le titre de section « On ne peut pas prévoir l'activité future », « l'activité future possible correspondante » (§ 16) et « les formes possibles de l'activité future » (§ 26) : le titre de la carte reprend l'adjectif de l'auteur, et le chapitre de 2013 n'est donc pas affiché en source.",

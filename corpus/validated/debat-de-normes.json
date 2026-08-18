@@ -1,0 +1,76 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "debat-de-normes",
+  "slug": "debat-de-normes",
+  "status": "VALIDATED",
+  "title": "Débats de normes",
+  "themes": [
+    "activite-empechee-et-metier"
+  ],
+  "domain": null,
+  "theme_labels": {
+    "activite-empechee-et-metier": "Ce que le travail empêche"
+  },
+  "authors": [
+    {
+      "name": "Yves Schwartz",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Yves Schwartz signe seul l'article de 2007 où la formule se lit, au pluriel : « débats de normes ». Il en assume la racine et la nomme — c'est chez Georges Canguilhem, cité douze fois dans ce texte, qu'il prend l'idée de la santé comme débat entre des normes venues du milieu et celles que le vivant produit et cherche à promouvoir. Une réserve pour le lecteur : ce texte ne porte pas l'expression « usage de soi », qui n'y figure pas une seule fois ; les deux formules sont distinctes et la carte n'en annonce qu'une.",
+  "quotation": {
+    "text": "[…] des débats de normes ne cessent d’occuper, de saisir l’activité humaine […]",
+    "reference": "Yves Schwartz, « Un bref aperçu de l'histoire culturelle du concept d'activité », @ctivités, 4-2, 2007, p. 122-133.",
+    "locator": "p. 131",
+    "language": "fr",
+    "original_text": null,
+    "original_language": null,
+    "translation": {
+      "kind": "none",
+      "translator": null,
+      "edition": null
+    }
+  },
+  "hook": "Travailler, est-ce appliquer des normes ou les rediscuter à chaque fois ?",
+  "summary": "Le travail prescrit n'est qu'une norme parmi celles qui précèdent l'activité. Celui qui travaille les renormalise sans cesse, et c'est sa santé qui se joue dans ce débat.",
+  "sources": [
+    {
+      "label": "Yves Schwartz, « Un bref aperçu de l'histoire culturelle du concept d'activité », @ctivités, 4-2, 2007, p. 122-133.",
+      "kind": "primary",
+      "locator": "p. 131",
+      "doi_isbn": "10.4000/activites.1728",
+      "url": "https://journals.openedition.org/activites/1728",
+      "consulted": "full-text"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle",
+    "date": "2026-08-18",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 0,
+    "notes": [
+      "Ouvert moi-même le PDF de l'éditeur : https://journals.openedition.org/activites/pdf/1728 (13 p., téléchargé 699 438 octets, couche texte présente). Folios imprimés lisibles en tête de page (« @ctivités, 2007, volume 4 numéro 2 122 » à « … 133 ») : le PDF p. 11 porte le folio 131.",
+      "CITATION — sur ce folio 131 je lis : « Comme le suggère au niveau microscopique la distinction entre « travail prescrit » et « travail réel », des débats de normes ne cessent d’occuper, de saisir l’activité humaine : débats entre des normes antécédentes, dont le « travail prescrit » peut être l’une d’elles, et des tendances à la renormalisation… ». Le segment cité correspond caractère pour caractère (apostrophes courbes comprises) à un test de correspondance stricte après normalisation des seuls sauts de ligne. Les deux coupes sont signalées par […]. Locator p. 131 exact.",
+      "TRADUCTION — le texte publié est en français et n'est pas une traduction : la p. 122 précise « An English draft translation of this article is available on request to the author ». La note 14 remercie Xavier Roth « pour son travail de traduction et de conseil », ce qui ne fait pas du français une version seconde. Le champ translation.kind = \"none\" est donc juste.",
+      "SOURCES — Crossref (https://api.crossref.org/works/10.4000/activites.1728) rend : titre « Un bref aperçu de l’histoire culturelle du concept d’activité », auteur unique Yves Schwartz, container « Activites », volume 04, issue 2, published-print 2007, éditeur OpenEdition. Crossref ne porte pas de champ page ; la pagination 122-133 est confirmée par l'article lui-même, section « référencement » (PDF p. 11) : « @ctivités, 4 (2), pp. 122-133 ». L'URL https://journals.openedition.org/activites/1728 répond 200 (HTML) et /pdf/1728 répond 200 (application/pdf). Consulted \"full-text\" vérifié.",
+      "ATTRIBUTION — Schwartz signe seul (Crossref : un seul auteur, sequence first). La formule « débats de normes » est bien de lui : il l'a mise en titre dès 2004 (« Raison pratique et débats de normes », in Bienenstock & Tosel dir., La raison pratique au XXe siècle) — notice HAL, recherche https://api.archives-ouvertes.fr/search/?q=%22débats%20de%20normes%22 (16 notices, la plus ancienne est celle de Schwartz 2004 ; toutes les suivantes sont des reprises ergologiques : Durrive, Prévot-Carpentier, Roth, Mencacci…). Aucun revendicateur antérieur trouvé.",
+      "ATTRIBUTION, la part canguilhémienne — elle est déclarée par Schwartz lui-même dans le texte cité, p. 128 (PDF p. 8) : « … G. Canguilhem, […] pensant la santé comme un débat toujours renouvelé entre des normes anonymes venant de l'environnement, et des normes que chaque être vivant produit et essaie de promouvoir ». La note d'attribution de la fiche reprend fidèlement cette phrase-source : la racine est empruntée, la nomination est de Schwartz. Xavier Roth, « De la renormalisation », Ergologia n° 1, 2009, p. 123-132 (https://ergologia.org/wp-content/uploads/2022/08/8-1_roth.pdf), parle du « concept ergologique » et des « débats de normes mis en avant par la démarche ergologique », et rappelle que la généalogie de l'idée est plus tortueuse qu'une simple rencontre Canguilhem / prescrit-réel — cela concerne la genèse, non la paternité de la formule.",
+      "PROSE — hook et summary tiennent dans les sources. « Le travail prescrit n'est qu'une norme parmi celles qui précèdent l'activité » : p. 131, « des normes antécédentes, dont le « travail prescrit » peut être l'une d'elles ». « Les renormalise sans cesse » : p. 131, « ne cessent d'occuper » et « des tendances à la renormalisation ». « C'est sa santé qui se joue dans ce débat » : p. 131, « Éviter « l'invivable », « l'insupportable », signifie une tentative reconduite jour après jour d'assurer sa propre santé […] c'est une tentative pour créer de l'espace social, de l'espace industrieux pour ses propres normes de vie », et p. 128 pour l'équation santé = débat de normes. Aucun adjectif en excès relevé.",
+      "Hors des quatre points, pour information : la réserve de la note d'attribution est exacte — « usage de soi » ne figure pas une seule fois dans l'article (0 occurrence de « usage de soi » / « usages de soi » dans le texte extrait des 13 pages). Le décompte « cité douze fois » correspond à 12 occurrences du token « Canguilhem » dans l'intégralité du PDF, bibliographie et notes comprises ; la base du décompte n'est pas explicitée dans la fiche, mais le chiffre est arithmétiquement juste.",
+      "Non atteint : aucun outil mcp__documentary__* n'était exposé, la résolution a été faite à la main (Crossref, HAL). OpenAlex et Semantic Scholar n'ont pas été interrogés (quota en échec annoncé) : leur silence n'est pas un constat. Le premier appel à /activites/pdf/1728 a échoué (connection reset) ; la seconde tentative a abouti — l'échec initial ne disait rien du texte."
+    ]
+  },
+  "notes": [
+    "LA CITATION EST FRAGILE, ET LE CONTRÔLE DOIT LE SAVOIR. Elle fait 79 caractères, coupée aux deux bouts, et abandonne le mécanisme. La phrase source fait 283 caractères : « Comme le suggère au niveau microscopique la distinction entre “travail prescrit” et “travail réel”, des débats de normes ne cessent d'occuper, de saisir l'activité humaine : débats entre des normes antécédentes, dont le “travail prescrit” peut être l'une d'elles, et des tendances à la renormalisation dont l'existence est attestée au niveau microscopique par le “travail réel” ou “actuel”. » Trois versions plus complètes ont été composées et mesurées à 155, 159 et 160 caractères ; les ramener sous 150 exigeait une troisième ellipse au milieu du doublet « ne cessent d'occuper, de saisir », c'est-à-dire un montage. Le fragment retenu est un segment continu, sans coupe interne. Il a été gardé plutôt qu'abandonné parce qu'il nomme le concept et énonce sa permanence ; le mécanisme — normes antécédentes contre renormalisation — est porté par le résumé, pas par la citation. Une carte sans citation aurait été complète : si le contrôle juge le fragment insuffisant, le retirer ne coûte rien à la fiche.",
+    "Avertissement de méthode qui a failli produire une fausse citation : le rendu de l'édition en ligne donne la phrase avec une majuscule initiale, « Des débats de normes ne cessent d'occuper… », comme s'il s'agissait du début de la phrase. Le PDF de la revue montre qu'il n'en est rien. Le texte retenu est celui du PDF, et il commence par une coupe explicite pour cette raison.",
+    "Le numéro de paragraphe de l'édition en ligne n'est pas fiable : interrogée trois fois, la page attribue « § 45 » indifféremment aux trois caractéristiques de l'activité, qui sont trois puces distinctes. C'est la pagination imprimée, lue page à page sur le PDF de la revue (en-tête courant et folios), qui fait foi.",
+    "Le PDF lu est hébergé par le site d'une association qui met en ligne les textes de l'auteur, non par l'éditeur. Il porte l'habillage de la revue et concorde avec la notice Crossref sur le titre, l'auteur, le volume, le numéro et l'année ; la concordance avec l'édition de l'éditeur n'a été contrôlée que sur le passage cité et sur le plan de l'article.",
+    "« Usage de soi » : zéro occurrence dans ce texte, non plus que « corps-soi », « dramatiques », « normativité » ou « entités collectives ». Le texte de 1987 dont le titre porte la formule a été téléchargé mais n'a pas pu être lu — numérisation sans couche texte. Rien n'est avancé sur la date de première formulation de « usage de soi ».",
+    "L'antériorité de « débats de normes » n'est pas établie : l'auteur se cite lui-même en 2004 dans sa propre bibliographie, mais ce volume n'a pas été ouvert. 2007 est la date du texte ouvert où la formule se lit, pas celle de son invention.",
+    "Réception et contestation non instruites : Cairn est inaccessible depuis l'environnement de lecture. Ce silence est un silence d'outils."
+  ]
+}

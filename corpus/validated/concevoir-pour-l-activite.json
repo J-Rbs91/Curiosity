@@ -2,12 +2,12 @@
   "$schema": "../schema/carte.schema.json",
   "id": "concevoir-pour-l-activite",
   "slug": "concevoir-pour-l-activite",
-  "status": "CANDIDATE",
+  "status": "VALIDATED",
   "title": "Ce que l'artefact cristallise de l'activité",
   "themes": [
     "activite-instrumentee-et-conception"
   ],
-  "domain": "activity-ergonomics",
+  "domain": null,
   "theme_labels": {
     "activite-instrumentee-et-conception": "L'outil et l'activité"
   },
@@ -52,11 +52,24 @@
     }
   ],
   "review": {
-    "verdict": "PENDING",
-    "attribution": "non-verifiee",
-    "quotation": "non-verifiee",
-    "sources": "non-verifiee",
-    "prose": "non-verifiee"
+    "reviewer": "contrôle aveugle",
+    "date": "2026-08-18",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "CITATION — Ouvert https://journals.openedition.org/activites/1719 (curl, HTTP 200, texte intégral). Le § numéroté 7, sous la section « 2.1. La cristallisation », porte : « L'idée centrale est que tout dispositif technique, tout artefact, « cristallise » une connaissance, une représentation, et au sens le plus large un modèle de l'utilisateur et de son activité. » La fiche coupe « une connaissance, une représentation, et au sens le plus large » et signale la coupe par […] ; le reste est mot pour mot. Locator (§ 7, section « La cristallisation ») exact. Pas de traduction en jeu (article francophone d'origine).",
+      "SOURCES — Crossref 10.4000/activites.1719 : « Prendre en compte l'activité de travail pour concevoir », Béguin, Activités, vol. 04, n° 2, 2007. La page porte citation_publication_date 2007/oct./15 et l'ours « 4-2 | octobre 2007 » : la référence affichée est exacte jusqu'au mois. Crossref 10.4000/activites.1727 : « Taking activity into account during the design process », Béguin, Activités 04-2, 2007 ; ouvert, son § 8 dit « The main idea is that any technical system, any device, crystallizes a knowledge, a representation, or a model of the workers and their activity » — le locator § 8 de la version anglaise est juste, et corrobore sans servir de preuve à la citation française.",
+      "ATTRIBUTION, ce qui revient à Béguin — L'article est signé de lui seul (Crossref et page de revue : un seul auteur). Son résumé porte bien « on propose d'en distinguer trois, respectivement : la cristallisation, la plasticité et le développement ». Chacune des trois positions est effectivement adossée à d'autres : cristallisation (Bannon 1991, Freyssenet 1990), plasticité (Suchman 1987, Daniellou 2004), développement (Rabardel & Béguin 2005, Pastré 1999, Clot 1999). Recherche HAL sur la conjonction cristallisation/plasticité/développement en conception : aucune occurrence antérieure à 2007 ; la seule autre est Béguin lui-même, « L'ergonomie en conception : cristallisation, plasticité, développement » (2009). La partition lui revient donc bien en propre.",
+      "ATTRIBUTION, ce que la fiche refuse de lui attribuer — Antériorité du motif vérifiée dans le texte : Pierre Rabardel, Les hommes et les technologies ; approche cognitive des instruments contemporains (1995), PDF ouvert sur HAL (hal-01017462, https://hal.science/hal-01017462/document). On y lit textuellement « Il est porteur des opérations de travail qui sont comme cristallisées en lui. », immédiatement suivi de « C'est l'un des points centraux de la théorie de Léontiev », puis « l'activité cristallisée (cumulée) dans l'objet » ; et plus loin « les hypothèses relatives à la cristallisation de l'expérience dans les instruments ». Les deux formules citées par la fiche sont donc verbatim chez Rabardel, et le rattachement à Léontiev est celui de Rabardel lui-même. La fiche ne revendique donc pas trop pour Béguin.",
+      "ATTRIBUTION, les « espaces d'activité future possibles » — vérifié au § 15 du texte : « Une autre approche se donne pour objectif de concevoir des « espaces d'activité future possibles » plutôt qu'à concevoir des artefacts (Daniellou, 2004) », bibliographie : Daniellou, F. (2004), in P. Falzon (Ed.), Ergonomie, PUF, pp. 359-374. Béguin les donne bien à Daniellou. La qualité de coauteur de Rabardel est également attestée par la bibliographie de l'article (Rabardel & Béguin, 2005, Theoretical Issues in Ergonomics Science, 6(5), 429-461).",
+      "PROSE — « Tout artefact cristallise un modèle de son utilisateur et de son activité » reprend le § 7 sans l'excéder ; Béguin y ajoute « Il s'agit d'une caractéristique générale », ce qui autorise le « tout ». « Ce modèle agit avant tout usage » est porté par l'exemple de l'escalier au § 7 (« une fois cristallisée dans l'artefact s'impose à tous ») ; « au concepteur de connaître le travail réel avant de décider » est porté par le § 8 (« ces choix sont le plus souvent réalisés à partir d'une connaissance insuffisante de la réalité du travail à réaliser »). Le hook est interrogatif et n'affirme rien de plus.",
+      "Hors des quatre points, pour information et sans effet sur le verdict : la carte isole la première des trois positions de l'article, alors que Béguin conclut en faveur de la troisième (le développement conjoint des artefacts et de l'activité, § 18-19). Le attribution_note dit clairement que la cristallisation n'est qu'une des trois, donc la carte n'induit pas en erreur ; mais un lecteur qui n'aurait que le summary ne saurait pas que l'auteur cité tient cette position pour insuffisante.",
+      "Ce que je n'ai pas atteint : aucun. Les outils mcp__documentary__* n'étaient pas exposés ; les DOI ont été résolus à la main via api.crossref.org, et les deux articles ainsi que le Rabardel 1995 ont été ouverts en texte intégral. OpenAlex et Semantic Scholar n'ont pas été interrogés (quota) : leur absence n'est pas un constat."
+    ]
   },
   "notes": [
     "RÉSERVE D'ACCÈS : le texte n'a pas pu être lu directement. Le site de la revue oppose une page de vérification anti-robot en ligne de commande, l'auteur n'a pas déposé cet article en archive ouverte et l'archive du web est injoignable depuis l'environnement de lecture. La lecture s'est faite par un outil de rendu, c'est-à-dire par un modèle tiers. La phrase citée a été demandée quatre fois par quatre formulations différentes et rendue à l'identique ; une vérification typographique dédiée a confirmé les guillemets autour de « cristallise », l'attaque « L'idée centrale est que » et le singulier « un modèle de l'utilisateur et de son activité ». La version anglaise publiée par la revue recoupe la structure et le sens. Un risque résiduel de normalisation typographique n'est pas levé.",
