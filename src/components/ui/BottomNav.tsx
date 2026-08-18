@@ -30,10 +30,23 @@ export function BottomNav() {
   const section = rootSectionOf(pathname);
   const activeIndex = ITEMS.findIndex((item) => item.href === section);
 
+  /*
+   * Deux choses se jouent sur cette ligne de classes.
+   *
+   * `bottom-nav` porte le nom de transition de vue — il est défini dans
+   * `globals.css`, avec la raison. Il sort la barre de l'instantané racine, sans
+   * quoi elle traverse chaque changement d'écran au lieu d'y rester immobile.
+   *
+   * Et le fond est **plein**. Il était à 90 % avec un flou d'arrière-plan, ce qui
+   * laissait passer un fantôme du texte défilant dessous : sur un fond noir pur, un
+   * flou n'a rien à fondre, et le seul produit visible de la translucidité était ce
+   * fantôme. Le flou part avec elle — il coûtait un recalcul à chaque image de
+   * défilement pour un résultat entièrement recouvert.
+   */
   return (
     <nav
       aria-label="Navigation principale"
-      className="fixed inset-x-0 bottom-0 z-40 bg-paper/90 backdrop-blur"
+      className="bottom-nav fixed inset-x-0 bottom-0 z-40 bg-paper"
       style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
     >
       <div className="relative mx-auto max-w-md">
