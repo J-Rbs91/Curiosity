@@ -106,6 +106,29 @@
 
   /* Hauteur réelle de la barre de navigation, hors zone sûre du système. */
   --nav-height: 4.25rem;
+
+  /* ------------------------------------------------------------------------
+   * Rythme vertical — six rôles, pas six valeurs.
+   *
+   * Nommés par ce qu'ils séparent et non par leur taille : c'est ce qui permet
+   * de vérifier qu'un écart est employé pour une seule chose. L'application en
+   * comptait douze, distribués sans règle — et deux écarts qui devaient dire
+   * des choses opposées, « ceci commande cela » et « ceci est le frère de
+   * cela », valaient 32 et 36 px.
+   *
+   * La règle qui commande les valeurs : **l'écart entre deux groupes vaut au
+   * moins le double de l'écart intérieur au groupe**, et l'écart d'ancrage
+   * d'un en-tête sur sa liste est nettement inférieur à celui qui sépare deux
+   * frères. C'est ce rapport, et non la valeur absolue, qui fait comprendre un
+   * regroupement — avant toute bordure, qui sur du noir serait de toute façon
+   * plus bruyante que ce qu'elle sépare.
+   * ------------------------------------------------------------------------ */
+  --gap-inline: 0.375rem;  /*  6 px — deux lignes d'un même élément          */
+  --gap-item: 0.875rem;    /* 14 px — remplissage d'une ligne de liste       */
+  --gap-anchor: 1.5rem;    /* 24 px — un en-tête et la liste qu'il commande  */
+  --gap-row: 2rem;         /* 32 px — deux frères d'une même liste           */
+  --gap-section: 3rem;     /* 48 px — deux sections d'un même écran          */
+  --gap-group: 4.5rem;     /* 72 px — deux groupes de premier niveau         */
 }
 
 @theme inline {
@@ -126,6 +149,35 @@
   --font-sans: var(--font-inter);
 }
 
+@theme {
+  /* ------------------------------------------------------------------------
+   * Échelle typographique — six pas, et **en rem**.
+   *
+   * L'unité n'est pas un détail : une taille écrite en pixels ne s'indexe sur
+   * rien, et la préférence de taille de police du lecteur reste alors sans
+   * effet. L'application avait onze tailles littérales en pixels, dont sept
+   * entre 12 et 19 — trop proches pour se distinguer, et toutes figées. En rem,
+   * le rapport entre les niveaux ne change pas ; seul le point d'ancrage
+   * devient celui du lecteur.
+   *
+   * Le pas est de 1,2 : c'est le plus petit rapport auquel deux niveaux voisins
+   * se distinguent encore isolément, et non seulement côte à côte.
+   * ------------------------------------------------------------------------ */
+  --text-xs: 0.75rem;    /* 12,0 px — chapeau, méta, barre de navigation */
+  --text-sm: 0.9rem;     /* 14,4 px — texte tertiaire, phrase de liste     */
+  --text-md: 1.08rem;    /* 17,3 px — texte courant, intitulé de liste     */
+  --text-lg: 1.295rem;   /* 20,7 px — question de famille, accroche        */
+  --text-xl: 1.555rem;   /* 24,9 px — titre d'écran de présentation        */
+  --text-2xl: 1.866rem;  /* 29,9 px — titre d'écran                        */
+  --text-xs--line-height: 1.5;
+  --text-sm--line-height: 1.45;
+  --text-md--line-height: 1.6;
+  --text-lg--line-height: 1.3;
+  --text-xl--line-height: 1.2;
+  --text-2xl--line-height: 1.2;
+}
+
+
 /*
  * Application sombre, sans variante claire. Le déclarer au navigateur plutôt
  * que le laisser deviner : c'est ce qui donne des contrôles de formulaire, des
@@ -141,11 +193,69 @@ body {
   font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
 }
 
-h1,
-h2,
-h3,
+/*
+ * La serif se demande, elle ne s'hérite pas d'une balise.
+ *
+ * La règle portait `h1, h2, h3` : tout `h2` basculait donc en serif, quel que
+ * soit son rôle. Or les intitulés en capitales espacées de l'application sont
+ * tantôt des `h2` — « Thèmes · 9 », le nom d'une famille — tantôt des `p` — le
+ * chapeau d'un domaine, le thème d'une carte. Le même rôle se rendait ainsi en
+ * deux familles selon une décision de structure de document, sans rapport avec
+ * le registre typographique voulu.
+ *
+ * C'est aussi ce que dit le §5 de `docs/ux-direction.md` : la serif porte ce
+ * qui se lit, le sans porte ce qui se choisit. Un chapeau en capitales ne se
+ * lit pas, il étiquette.
+ */
 .font-serif-display {
   font-family: var(--font-serif), Georgia, "Times New Roman", serif;
+}
+
+/*
+ * Le chapeau — l'intitulé en capitales espacées qui situe sans être lu.
+ *
+ * Un seul traitement, porté par une classe et non par une balise : famille sur
+ * l'écran Explorer, domaine sur une page de thème, thème sur une carte, et les
+ * en-têtes de section. Il existait en trois variantes — 13 px serif, 12 px
+ * serif, 13 px Inter — ce qui use les repères sans que le lecteur puisse
+ * nommer pourquoi.
+ */
+.eyebrow {
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  font-size: var(--text-xs);
+  line-height: 1.45;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+/* --------------------------------------------------------------------------
+ * Rythme vertical — les trois écarts qui font comprendre un regroupement
+ *
+ * Les lignes de liste portent un remplissage qui agrandit la cible tactile
+ * sans déplacer le texte. Ce que l'œil mesure, lui, est l'écart de texte à
+ * texte : les marges ci-dessous en retranchent donc le remplissage, et c'est
+ * la seule raison de leurs `calc`. Écrire directement 32 px entre deux lignes
+ * en donnerait 60 à l'œil.
+ * -------------------------------------------------------------------------- */
+
+/* Une liste de destinations : remplissage de cible et écart entre frères. */
+.rows > li > * {
+  padding-block: var(--gap-item);
+}
+.rows > li + li {
+  margin-top: calc(var(--gap-row) - 2 * var(--gap-item));
+}
+
+/* L'en-tête et la liste qu'il commande : nettement plus serré qu'entre frères. */
+.anchored {
+  margin-top: calc(var(--gap-anchor) - var(--gap-item));
+}
+
+/* Deux groupes de premier niveau : au moins le double de l'écart intérieur. */
+.groups > * + * {
+  margin-top: calc(var(--gap-group) - var(--gap-item));
 }
 
 /* Le focus est fonctionnel : il reste visible sur toutes les surfaces, dans les deux thèmes. */
@@ -406,7 +516,7 @@ h3,
  */
 ::view-transition-old(root),
 ::view-transition-new(root) {
-  animation-duration: var(--dur-screen);
+  animation-duration: var(--dur-fade);
   animation-timing-function: var(--ease-out-soft);
 }
 

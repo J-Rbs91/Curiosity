@@ -36,7 +36,7 @@ export function ConceptDetail() {
          */}
         <BackLink />
 
-        <h1 className="mt-6 font-serif-display text-[30px] font-semibold leading-tight text-ink">
+        <h1 className="mt-6 font-serif-display text-2xl font-semibold leading-tight text-ink">
           {concept.title}
         </h1>
 
@@ -55,7 +55,7 @@ export function ConceptDetail() {
           </div>
         )}
         {conceptAuthors.length === 0 && concept.authorLabel && (
-          <p className="mt-5 text-[15px] text-ink-soft">{concept.authorLabel}</p>
+          <p className="mt-5 text-sm text-ink-soft">{concept.authorLabel}</p>
         )}
 
         {/*
@@ -64,14 +64,14 @@ export function ConceptDetail() {
          * vérifié, et la confondre avec une fiche instruite fausserait toute relecture.
          */}
         {concept.provenance === "fixture" && (
-          <p className="mt-4 text-[13px] leading-relaxed text-ink-faint">
+          <p className="mt-4 text-xs leading-relaxed text-ink-faint">
             Fiche d&apos;échafaudage : contenu écrit sans vérification documentaire, en
             attente d&apos;instruction. Ne pas s&apos;y fier.
           </p>
         )}
 
         {concept.attributionNote && (
-          <p className="mt-4 text-[13px] leading-relaxed text-ink-faint">
+          <p className="mt-4 text-xs leading-relaxed text-ink-faint">
             {concept.attributionNote}
           </p>
         )}
@@ -82,25 +82,23 @@ export function ConceptDetail() {
           </div>
         )}
 
-        <p className="mt-8 font-serif-display text-[19px] leading-snug text-ink">
+        <p className="mt-8 font-serif-display text-lg font-semibold leading-snug text-ink">
           {concept.hookQuestion}
         </p>
-        <p className="mt-5 text-[16px] leading-relaxed text-ink-soft">
+        <p className="mt-5 text-md leading-relaxed text-ink-soft">
           {concept.shortExplanation}
         </p>
 
         {concept.sources && concept.sources.length > 0 && (
-          <div className="mt-10">
-            <h2 className="text-xs font-medium uppercase tracking-[0.12em] text-ink-faint">
-              Sources
-            </h2>
+          <div style={{ marginTop: "var(--gap-section)" }}>
+            <h2 className="eyebrow">Sources</h2>
             <div className="mt-3">
               <ConceptSourceList sources={concept.sources} />
             </div>
           </div>
         )}
 
-        <div className="mt-12">
+        <div style={{ marginTop: "var(--gap-section)" }}>
           <DeepenButton concept={concept} />
         </div>
       </div>

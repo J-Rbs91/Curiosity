@@ -56,7 +56,16 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1,
+  /*
+   * Pas de `maximumScale`, et c'est une décision d'accessibilité, pas un oubli.
+   *
+   * Le contraindre à 1 bloque le zoom par pincement. Sur une application dont
+   * l'unique fonction est de lire, cela retire au lecteur son dernier levier —
+   * le premier, la préférence de taille de police du navigateur, n'agit que
+   * parce que les tailles sont exprimées en rem (voir l'échelle typographique
+   * de `globals.css`). Les deux vont ensemble : rétablir l'un sans l'autre
+   * n'aurait pas suffi.
+   */
   // Application sombre, sans variante claire : une seule couleur de barre système.
   themeColor: "#000000",
 };

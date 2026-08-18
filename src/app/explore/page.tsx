@@ -6,6 +6,7 @@ import { useSearchParams } from "next/navigation";
 import { Settings } from "lucide-react";
 import { authors, taxonomy, themes } from "@/content";
 import { Screen } from "@/components/motion/Screen";
+import { ListRow } from "@/components/ui/ListRow";
 
 /**
  * Trois entrées dans le corpus, et un ordre qui dit la hiérarchie.
@@ -39,7 +40,7 @@ export default function ExplorePage() {
     <Screen>
       <div className="mx-auto max-w-md px-6 pt-10">
         <div className="flex items-start justify-between gap-3">
-          <h1 className="font-serif-display text-[28px] font-semibold text-ink">Explorer</h1>
+          <h1 className="font-serif-display text-2xl font-semibold text-ink">Explorer</h1>
           <TreeLink
             href="/settings"
             aria-label="Réglages"
@@ -70,11 +71,21 @@ function ExploreBody({ view }: { view: ViewId }) {
 
   return (
     <>
-      <div className="relative mt-8 flex gap-1 rounded-full bg-paper-raised p-1">
+      {/*
+        * La pastille de position est en grille avec les onglets plutôt qu'en fraction
+        * calculée de la largeur : à police d'interface agrandie, une largeur figée à
+        * `(100% - 0.5rem) / 3` laissait le libellé déborder de la pastille.
+        */}
+      <div
+        className="relative mt-8 grid gap-1 rounded-full bg-paper-raised p-1"
+        style={{ gridTemplateColumns: `repeat(${VIEWS.length}, minmax(0, 1fr))` }}
+      >
         <span
           aria-hidden
-          className="absolute inset-y-1 left-1 rounded-full bg-accent transition-transform motion-ui"
+          className="absolute inset-y-1 rounded-full bg-accent transition-transform motion-ui"
           style={{
+            left: "0.25rem",
+            right: "0.25rem",
             width: `calc((100% - 0.5rem) / ${VIEWS.length})`,
             transform: `translateX(${activeIndex * 100}%)`,
           }}
@@ -84,7 +95,7 @@ function ExploreBody({ view }: { view: ViewId }) {
             key={id}
             href={hrefForView(id)}
             aria-current={id === view ? "true" : undefined}
-            className={`press relative z-10 flex min-h-11 flex-1 items-center justify-center rounded-full text-sm ${
+            className={`press relative z-10 flex min-h-11 items-center justify-center rounded-full px-2 text-sm ${
               id === view ? "font-medium text-accent-contrast" : "text-ink-faint hover:text-ink"
             }`}
           >
@@ -152,35 +163,35 @@ function ExploreBody({ view }: { view: ViewId }) {
  */
 function FamilyList() {
   return (
-    <div className="space-y-12">
+    <div className="groups">
       {taxonomy.families.map((family) => {
         const familyDomains = taxonomy.domainsOf(family.id);
         return (
           <section key={family.id}>
-            <h2 className="text-[13px] font-medium uppercase tracking-[0.12em] text-ink-faint">
-              {family.label}
-            </h2>
-            <p className="mt-3 font-serif-display text-[19px] leading-snug text-ink">
+            <h2 className="eyebrow">{family.label}</h2>
+            {/*
+             * La question est ce qui domine, et cela se mesure : elle et le nom de domaine
+             * étaient rendus à la même graisse et dans la même couleur, à deux pixels de
+             * taille près — un niveau 1 indiscernable de son niveau 2. L'écart est repris
+             * par la graisse et la taille ensemble, la couleur restant la même : sur du
+             * noir, deux blancs voisins se disputent plus qu'ils ne se hiérarchisent.
+             */}
+            <p className="mt-3 font-serif-display text-lg font-semibold text-ink">
               {family.question}
             </p>
-            <p className="mt-2 text-[13px] text-ink-faint">
-              {familyDomains.length} domaine{familyDomains.length > 1 ? "s" : ""}
-            </p>
 
-            <ul className="mt-4 space-y-1">
+            {/*
+             * Pas de compte de domaines : ils sont tous visibles juste en dessous, et le
+             * chiffre s'intercalait exactement là où l'en-tête doit s'ancrer sur son groupe.
+             */}
+            <ul className="rows anchored">
               {familyDomains.map((domain) => (
                 <ListRow
                   key={domain.id}
                   href={`/explore/domains/${domain.slug}`}
                   title={domain.label}
                   tagline={domain.tagline}
-                  /*
-                   * L'état du corpus se constate, il ne se déclare pas — et il se dit ici
-                   * plutôt que sur la page du domaine seulement : c'est dans la liste que
-                   * le lecteur choisit où aller, et lui laisser ouvrir un domaine vide sans
-                   * l'avoir prévenu est le pire moment pour l'apprendre.
-                   */
-                  note={taxonomy.hasCorpus(domain.id) ? undefined : "Corpus en cours de constitution"}
+                  note={<CorpusMark domainId={domain.id} />}
                 />
               ))}
             </ul>
@@ -188,6 +199,34 @@ function FamilyList() {
         );
       })}
     </div>
+  );
+}
+
+/**
+ * L'état du corpus d'un domaine, dit dans la liste — et dit dans le bon sens.
+ *
+ * Il n'était dit que par la négative : dix domaines sur onze portaient « Corpus en cours de
+ * constitution », et le seul qui contienne quelque chose ne portait rien. Le signal était
+ * donc porté par une absence, et répété neuf fois par les présences — il fallait lire onze
+ * lignes pour trouver celle qui manquait.
+ *
+ * Ce qui est atteignable se marque donc positivement, par ce qu'on y trouvera, et dans le
+ * gris du texte principal. L'absence garde sa phrase entière : « 0 résultat » se lirait
+ * comme une panne, et c'est dans la liste que le lecteur choisit où aller — l'apprendre
+ * après avoir ouvert est le pire moment.
+ *
+ * L'état se constate, il ne se déclare pas : `hasCorpus` le dérive des données.
+ */
+function CorpusMark({ domainId }: { domainId: string }) {
+  const cards = taxonomy.conceptsIn({ kind: "domain", id: domainId });
+
+  if (cards.length === 0)
+    return <p className="text-xs leading-snug text-ink-faint">Corpus en cours de constitution</p>;
+
+  return (
+    <p className="text-xs font-medium leading-snug text-ink">
+      {cards.length} carte{cards.length > 1 ? "s" : ""}
+    </p>
   );
 }
 
@@ -211,64 +250,16 @@ function GroupedByDomain<T extends { id: string; domain: string }>({
     .map((domain) => ({ domain, items: items.filter((i) => i.domain === domain.id) }))
     .filter((g) => g.items.length > 0);
 
-  if (groups.length <= 1) return <ul className="space-y-1">{items.map(row)}</ul>;
+  if (groups.length <= 1) return <ul className="rows">{items.map(row)}</ul>;
 
   return (
-    <div className="space-y-10">
+    <div className="groups">
       {groups.map(({ domain, items: groupItems }) => (
         <section key={domain.id}>
-          <h2 className="text-xs font-medium uppercase tracking-[0.12em] text-ink-faint">
-            {domain.label}
-          </h2>
-          <ul className="mt-3 space-y-1">{groupItems.map(row)}</ul>
+          <h2 className="eyebrow">{domain.label}</h2>
+          <ul className="rows anchored">{groupItems.map(row)}</ul>
         </section>
       ))}
     </div>
-  );
-}
-
-/*
- * Une ligne, pas une carte. Le regroupement se fait par l'espacement, sans
- * surface ni compteur : douze cartes de même niveau se disputent l'attention,
- * douze lignes se parcourent.
- *
- * Trois niveaux de gris, trois natures d'information : le nom qu'on cherche, la
- * phrase qui dit ce qu'on y trouvera, les notions qui permettent de reconnaître
- * un terrain sans le lire. Rien n'est tronqué — une phrase coupée oblige à
- * ouvrir pour savoir si l'on voulait ouvrir, ce qui est exactement le contraire
- * du service que rend une liste.
- *
- * Le nom est en sans-serif, contrairement aux titres de concept. La serif porte
- * ce qui se lit ; le sans porte ce qui se choisit. Un nom propre dans une liste
- * de destinations est une étiquette, pas un texte.
- */
-function ListRow({
-  href,
-  title,
-  tagline,
-  keywords,
-  note,
-}: {
-  href: string;
-  title: string;
-  tagline: string;
-  keywords?: string[];
-  /** L'état de ce qu'il y a derrière, quand il n'y a pas encore de contenu. */
-  note?: string;
-}) {
-  return (
-    <li>
-      <TreeLink
-        href={href}
-        className="press-soft block rounded-2xl px-1 py-4 hover:bg-paper-raised"
-      >
-        <p className="text-[17px] font-medium leading-snug text-ink">{title}</p>
-        <p className="mt-1.5 text-[15px] leading-snug text-ink-soft">{tagline}</p>
-        {keywords && keywords.length > 0 && (
-          <p className="mt-2 text-[13px] leading-snug text-ink-faint">{keywords.join(" · ")}</p>
-        )}
-        {note && <p className="mt-2 text-[13px] leading-snug text-ink-faint">{note}</p>}
-      </TreeLink>
-    </li>
   );
 }

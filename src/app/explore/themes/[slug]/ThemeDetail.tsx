@@ -1,10 +1,11 @@
 "use client";
 
 import { notFound } from "next/navigation";
-import { TreeLink } from "@/components/navigation/TreeLink";
 import { themes, authors, taxonomy } from "@/content";
 import { Screen } from "@/components/motion/Screen";
 import { BackLink } from "@/components/ui/BackLink";
+import { ListHeading, ListRow } from "@/components/ui/ListRow";
+import { SituatingText } from "@/components/ui/SituatingText";
 
 export function ThemeDetail({ slug }: { slug: string }) {
   const theme = themes.find((t) => t.slug === slug);
@@ -23,15 +24,13 @@ export function ThemeDetail({ slug }: { slug: string }) {
         <BackLink />
 
         {/* Le domaine situe le thème, comme le thème situe le concept sur la carte. */}
-        {domain && (
-          <p className="mt-6 text-[13px] font-medium uppercase tracking-[0.12em] text-ink-faint">
-            {domain.label}
-          </p>
-        )}
-        <h1 className="mt-2 font-serif-display text-[30px] font-semibold leading-tight text-ink">
+        {domain && <p className="mt-6 eyebrow">{domain.label}</p>}
+        <h1 className="mt-2 font-serif-display text-2xl font-semibold leading-tight text-ink">
           {theme.title}
         </h1>
-        <p className="mt-5 text-[17px] leading-relaxed text-ink-soft">{theme.description}</p>
+
+        {/* Même ordre que sur une page de domaine : la liste passe avant la dissertation. */}
+        <SituatingText lead={theme.tagline} full={theme.description} label="la description" />
 
         {contributingAuthors.length > 0 && (
           <p className="mt-4 text-sm text-ink-faint">
@@ -48,33 +47,24 @@ export function ThemeDetail({ slug }: { slug: string }) {
          * lisait pas du tout : l'écran s'arrêtait après le paragraphe, sans qu'on puisse
          * distinguer « ce thème n'a pas encore de concept » de « ce thème n'en a pas ».
          */}
-        <section className="mt-10">
-          <h2 className="text-xs font-medium uppercase tracking-[0.12em] text-ink-faint">
-            {themeConcepts.length > 0
-              ? `Concepts · ${themeConcepts.length}`
-              : "Concepts"}
-          </h2>
+        <section style={{ marginTop: "var(--gap-section)" }}>
+          <ListHeading count={themeConcepts.length}>Concepts</ListHeading>
 
           {themeConcepts.length === 0 ? (
-            <p className="mt-4 text-[15px] leading-relaxed text-ink-faint">
+            <p className="mt-4 text-sm leading-relaxed text-ink-faint">
               Aucun concept de ce thème n&apos;a encore terminé son instruction documentaire.
             </p>
           ) : (
-            <ul className="stagger mt-3 space-y-1">
+            <ul className="stagger rows anchored">
               {themeConcepts.map((concept) => (
-                <li key={concept.id}>
-                  <TreeLink
-                    href={`/explore/concept/?c=${concept.slug}`}
-                    className="press-soft block rounded-2xl py-3.5 text-[17px] text-ink hover:bg-paper-raised"
-                  >
-                    {concept.title}
-                    {/* L'accroche sous le titre : elle dit ce qu'on trouvera derrière, ce
-                        qu'un titre de concept seul ne fait jamais. */}
-                    <span className="mt-1 block text-[14px] leading-snug text-ink-soft">
-                      {concept.hookQuestion}
-                    </span>
-                  </TreeLink>
-                </li>
+                /* L'accroche sous le titre : elle dit ce qu'on trouvera derrière, ce qu'un
+                   titre de concept seul ne fait jamais. */
+                <ListRow
+                  key={concept.id}
+                  href={`/explore/concept/?c=${concept.slug}`}
+                  title={concept.title}
+                  tagline={concept.hookQuestion}
+                />
               ))}
             </ul>
           )}

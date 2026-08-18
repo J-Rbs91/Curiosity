@@ -11,6 +11,7 @@ import { ConceptQuotation } from "@/components/concept/ConceptQuotation";
 import { ConceptSourceList } from "@/components/concept/ConceptSources";
 import { DeepenButton } from "@/components/ui/DeepenButton";
 import { Wordmark } from "@/components/ui/Wordmark";
+import { ScreenSkeleton } from "@/components/ui/ScreenSkeleton";
 
 /**
  * La hauteur d'un écran, barre de navigation déduite.
@@ -61,7 +62,12 @@ export default function TodayPage() {
     }
   }, []);
 
-  if (!mounted) return <div className="min-h-svh" aria-hidden />;
+  /*
+  * Le tirage a besoin du `localStorage`, qui n'existe pas au rendu serveur : cet écran
+  * n'a donc rien à pré-rendre. Il montrait un bloc vide ; il montre la place que la carte
+  * va prendre, ce qui distingue une attente d'une panne.
+  */
+  if (!mounted) return <ScreenSkeleton lines={4} />;
 
   /*
    * Corpus vide : rien à proposer, et surtout rien à inventer. C'est l'état normal tant que
@@ -75,10 +81,10 @@ export default function TodayPage() {
           className="stagger mx-auto flex max-w-md flex-col justify-center gap-8 px-6"
           style={{ height: SCREEN_HEIGHT }}
         >
-          <h1 className="font-serif-display text-[30px] font-semibold leading-tight text-ink">
+          <h1 className="font-serif-display text-2xl font-semibold leading-tight text-ink">
             Le corpus est en cours de constitution.
           </h1>
-          <p className="text-[17px] leading-relaxed text-ink-soft">
+          <p className="text-md leading-relaxed text-ink-soft">
             Aucun concept n&apos;a encore terminé son instruction documentaire. Rien ne
             s&apos;affichera ici tant qu&apos;une carte n&apos;aura pas été établie sur ses
             sources.
@@ -101,11 +107,11 @@ export default function TodayPage() {
            * du §5 de `docs/ux-direction.md`, et une signature en en-tête permanent la casserait
            * pour ne rien apprendre à personne. Ici, on se présente : c'est la seule fois.
            */}
-          <Wordmark animate className="text-[34px] text-ink" />
-          <h1 className="font-serif-display text-[32px] font-semibold leading-tight text-ink">
+          <Wordmark animate className="text-[2.125rem] text-ink" />
+          <h1 className="font-serif-display text-xl font-semibold leading-tight text-ink">
             Comprendre ce qui produit réellement les résultats.
           </h1>
-          <p className="text-[17px] leading-relaxed text-ink-soft">
+          <p className="text-md leading-relaxed text-ink-soft">
             Un concept à la fois, à chaque ouverture.
           </p>
           <Button onClick={() => { getProgressService().markFirstLaunchCompleted(); setFirstLaunch(false); }} className="w-fit">
@@ -142,9 +148,33 @@ export default function TodayPage() {
  * texte pour le plus petit — un plafond de caractères calibré sur l'iPhone SE aurait appauvri
  * la carte partout ailleurs.
  *
- * 16 px au-delà de 844 points de haut, 13 px à 667 : la carte rétrécit, elle ne défile pas.
+ * **La pente a été redressée** : la borne haute est désormais atteinte vers 716 points au
+ * lieu de 844, et un écran de 667 rend 15,0 px au lieu de 13,0. Mesuré sur l'ancien
+ * réglage, le résumé — le texte qu'on vient lire — tombait à 13,0 px, le libellé de thème
+ * et la référence de citation à 9,7 px, les notices de sources à 10,4 px : l'écran vu tous
+ * les jours était celui où l'on lisait le plus petit, sur une application dont c'est la
+ * seule fonction.
+ *
+ * La place gagnée vient de la légende de citation, qui occupait cinq lignes et repart aux
+ * sources — voir `ConceptQuotation`.
+ *
+ * **Le plancher, lui, n'a presque pas bougé, et c'est mesuré.** Sur un écran de 320 × 568,
+ * la plus grande base à laquelle la carte tient encore sans défiler est de 13 px : c'est
+ * elle qui commande le plancher, pas le confort de lecture. Un plancher plus généreux
+ * casserait la contrainte qui commande tout le reste — la carte rétrécit, elle ne défile
+ * pas — et il l'avait cassée : la première version de ce réglage faisait déborder cet
+ * écran-là de 168 px.
+ *
+ * | Écran | Base rendue | Base maximale qui tient |
+ * |---|---|---|
+ * | 320 × 568 | 12,8 px | 13 px |
+ * | 360 × 640 | 14,4 px | 15 px |
+ * | 375 × 667 | 15,0 px | 15,75 px |
+ * | 390 × 844 | 16,0 px | 17 px |
+ *
+ * La base reste en rem, donc indexée sur la préférence de taille de police du lecteur.
  */
-const CARD_SCALE = "clamp(0.78rem, 0.105rem + 1.695vh, 1rem)";
+const CARD_SCALE = "clamp(0.8rem, 0.01rem + 2.222vh, 1rem)";
 
 /**
  * La carte : thème, concept, citation, accroche, résumé, auteur, sources.
@@ -213,7 +243,7 @@ function ConceptCard({ concept }: { concept: Concept }) {
         </div>
       ) : (
         <div className="flex flex-col gap-[1.1em]">
-          {concept.quotation && <ConceptQuotation quotation={concept.quotation} />}
+          {concept.quotation && <ConceptQuotation quotation={concept.quotation} compact />}
           <p className="font-serif-display text-[1.15em] leading-snug text-ink">
             {concept.hookQuestion}
           </p>
@@ -230,11 +260,22 @@ function ConceptCard({ concept }: { concept: Concept }) {
       <div className="flex items-center gap-5">
         <DeepenButton concept={concept} />
         {sources.length > 0 && (
+          /*
+           * La taille de ce bouton ne suit pas `CARD_SCALE`, et sa hauteur minimale est
+           * celle du reste de l'application.
+           *
+           * Il mesurait 74 × 15 px sur un écran de 667 points — sous le seuil de 24 px
+           * de WCAG 2.5.8, et loin des 44 px recommandés au doigt — parce qu'il n'avait
+           * ni remplissage ni hauteur propre : sa taille était celle de son texte, lequel
+           * rétrécissait avec la carte. Or « Revenir au concept » est le seul moyen de
+           * quitter la vue des sources. Un contrôle n'est pas du contenu : il n'a pas à
+           * rapetisser avec lui, et « Approfondir » ne le faisait déjà pas.
+           */
           <button
             type="button"
             onClick={() => setShowSources((value) => !value)}
             aria-expanded={showSources}
-            className="press text-[0.75em] font-medium uppercase tracking-[0.12em] text-ink-faint hover:text-ink"
+            className="press -mx-2 inline-flex min-h-11 items-center px-2 text-xs font-medium uppercase tracking-[0.12em] text-ink-faint hover:text-ink"
           >
             {showSources ? "Revenir au concept" : `Sources · ${sources.length}`}
           </button>
