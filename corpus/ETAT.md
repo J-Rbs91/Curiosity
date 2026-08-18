@@ -237,8 +237,9 @@ Ces limites ont pesé sur tout le lot et se reproduiront si rien ne change.
 - **31 sujets d'échafaudage jamais instruits** (`src/content/fixtures/`). Ce sont des pistes,
   pas une dette : ces fiches ont été écrites de mémoire, avant tout dispositif de
   vérification, et ne servent jamais de point de départ.
-- **Le bouton « Approfondir »** partage la carte et son prompt vers une IA. Le mécanisme de
-  partage reste à reprendre.
+- **Le bouton « Approfondir »** ouvre désormais un texte écrit à l'avance, et non plus le
+  presse-papiers. Voir la section IV ci-dessous. Le passage de relais vers une IA existe
+  toujours, en bas de ce texte.
 
 ## Une note d'exactitude sur l'historique
 
@@ -246,3 +247,58 @@ Un message de commit de cette session affirme que les dossiers aveugles produits
 `corpus:brief` sont versés au dépôt. C'est faux : `.gitignore` les exclut délibérément, ce
 sont des artefacts régénérables. Seuls les **verdicts** sont versionnés, dans
 `corpus/review/verdicts/`.
+
+---
+
+# IV. Les approfondissements — second étage du dispositif
+
+`npm run corpus:deepen` : **32 cartes validées, 29 approfondissements projetés.**
+
+Un approfondissement est le texte d'environ 1 500 mots qu'affiche « Approfondir ». Il vit
+dans `corpus/deepenings/<id>.json`, il est écrit une fois hors ligne, contrôlé, puis projeté
+comme le reste. **L'application ne parle à aucun modèle** : elle est exportée en statique, et
+le texte affiché existait avant le clic. C'est ce qui permet qu'il ait été relu.
+
+## Ce que le contrôle tient, et ce qu'il ne tient pas
+
+`corpus:deepen` refuse : un texte sans carte validée, un titre qui étiquette un palier de
+difficulté au lieu de nommer son sujet, du Markdown rendu tel quel, un tiret cadratin, un
+champ `limits` rempli de précautions sans objet, un volume hors bornes.
+
+Il **avertit** sur les citations : chaque passage entre guillemets de cinq mots ou plus est
+comparé à l'enregistrement validé de la carte, sérialisé tel quel. Averti et non bloquant,
+parce que les guillemets français servent aussi à mettre un mot en relief : un contrôle
+bloquant sur cette ambiguïté ferait retirer les guillemets plutôt que vérifier les citations.
+
+Ce qu'il ne peut pas tenir, ce sont les quatre exigences documentaires elles-mêmes. Elles se
+lisent. Le protocole les porte : `corpus/deepenings/PROTOCOLE.md`.
+
+## Ce que le premier lot a appris
+
+**Le contrôle des citations a attrapé un cas sur les huit premiers textes, et un seul.** Un
+point final ajouté à l'intérieur des guillemets d'un passage de Coutarel, dans
+`marge-de-manoeuvre`. Aucune citation fabriquée, sur aucun texte. C'est le résultat qui
+comptait : la matière citable vient des `notes` et du bloc `review` des fiches, qui portent
+les verbatim relevés pendant l'instruction, et les rédacteurs s'y sont tenus.
+
+**Le champ `consulted` fait tout le travail.** `full-text` autorise à parler du contenu d'une
+source ; `metadata-only` n'établit que son existence. Les `limits` des textes produits le
+reprennent presque systématiquement, et c'est là qu'ils sont le plus utiles : ils nomment
+l'édition non ouverte, la traduction interne, le nom de réception sans date d'apparition.
+
+**Trois défauts trouvés dans l'outillage lui-même**, tous par les tests, aucun par la
+relecture : le motif qui refuse les titres de fonction ne connaissait que l'apostrophe
+droite, quand le corpus impose la typographique, si bien qu'il ne se déclenchait sur rien ;
+une citation coupée par `[…]` était comparée entière, crochets compris, donc toujours
+signalée à tort ; et le retour depuis l'écran d'approfondissement remontait vers
+`/explore/concept` sans son `?c=`, c'est-à-dire vers l'écran « introuvable », pour toute
+arrivée directe.
+
+## Comment on relance
+
+`/corpus-deepen`, qui lance un agent `corpus-deepener` par carte. Les agents écrivent en
+parallèle et ne projettent jamais : ils contrôlent leur seul fichier avec
+`npm run corpus:deepen -- --check --only=<id>`. La projection est faite une fois, à la fin.
+
+La file de travail n'est pas tenue de mémoire : `npm run corpus:deepen` affiche en fin de
+sortie les cartes validées qui n'ont pas encore de texte.
