@@ -76,15 +76,16 @@ export function ConceptDetail() {
           </p>
         )}
 
+        {/* Même ordre que la carte du jour : la question d'abord, la parole d'auteur ensuite. */}
+        <p className="mt-8 font-serif-display text-lg font-semibold leading-snug text-ink">
+          {concept.hookQuestion}
+        </p>
+
         {concept.quotation && (
           <div className="mt-8">
             <ConceptQuotation quotation={concept.quotation} />
           </div>
         )}
-
-        <p className="mt-8 font-serif-display text-lg font-semibold leading-snug text-ink">
-          {concept.hookQuestion}
-        </p>
         <p className="mt-5 text-md leading-relaxed text-ink-soft">
           {concept.shortExplanation}
         </p>
