@@ -16,5 +16,7 @@
 import type { ConceptId } from "@/types";
 
 export const deepenedConceptIds: readonly ConceptId[] = [
+  "activite-empechee",
+  "analyse-du-travail",
   "rationalite-limitee"
 ];
