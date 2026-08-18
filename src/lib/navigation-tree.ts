@@ -84,6 +84,18 @@ const NIVEAUX: { motif: RegExp; niveau: number; parent: string | null }[] = [
    * juste — passer de l'un à l'autre ne consomme aucune profondeur.
    */
   { motif: /^\/explore\/concept$/, niveau: 4, parent: "/explore" },
+  /*
+   * L'approfondissement est **sous** la fiche, et c'est le seul niveau 5 de l'arbre.
+   *
+   * Il s'atteint depuis deux endroits que rien ne rapproche : la fiche d'un concept, et la
+   * carte du jour, qui est la racine. La comparaison des niveaux gère les deux sans rien de
+   * plus, puisque seul l'écart compte et non la contiguïté : venu de l'accueil, le retour
+   * remonte à l'accueil ; venu de la fiche, il y revient. Le parent de repli reste la fiche,
+   * qui est la seule destination sûre pour une adresse ouverte directement, mais il est privé
+   * de son `?c=` que ce tableau ne peut pas connaître : c'est la trace qui restitue la fiche
+   * exacte quand elle a été traversée.
+   */
+  { motif: /^\/explore\/concept\/approfondir$/, niveau: 5, parent: "/explore/concept" },
 ];
 
 /** Le niveau d'une route absente de l'arbre : plus profond que toute feuille connue. */

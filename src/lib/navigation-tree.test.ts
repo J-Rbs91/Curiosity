@@ -31,6 +31,21 @@ describe("niveaux de l'arbre", () => {
     // l'entrée d'historique et faisait disparaître le domaine de la trace.
     expect(levelOf("/explore/themes/pouvoir")).toBe(3);
     expect(levelOf("/explore/concept")).toBe(4);
+    // L'approfondissement est sous la fiche : on y descend, on n'y passe pas de côté.
+    expect(levelOf("/explore/concept/approfondir")).toBe(5);
+  });
+
+  it("place l'approfondissement sous la fiche, quel que soit l'écran d'où l'on vient", () => {
+    // Depuis la fiche : une descente, dont on remonte sur la fiche exacte grâce à la trace.
+    expect(intentBetween("/explore/concept/", "/explore/concept/approfondir/")).toBe("descend");
+    expect(intentBetween("/explore/concept/approfondir/", "/explore/concept/")).toBe("climb");
+    // Depuis la carte du jour : une descente aussi, bien que les niveaux ne se touchent pas.
+    // Seul l'écart compte, jamais la contiguïté.
+    expect(intentBetween("/", "/explore/concept/approfondir/")).toBe("descend");
+    expect(parcours("/", "/explore/concept/approfondir/?c=x").map((e) => e.level)).toEqual([0, 5]);
+    // Le repli d'une arrivée directe reste la fiche, seule destination sûre quand aucun
+    // écran n'a été traversé.
+    expect(parentOf("/explore/concept/approfondir/")).toBe("/explore/concept");
   });
 
   it("traite le slash final comme la même route", () => {
@@ -177,6 +192,7 @@ describe("branche de premier niveau", () => {
     expect(rootSectionOf("/explore/domains/sociologie-des-organisations/")).toBe("/explore");
     expect(rootSectionOf("/explore/themes/pouvoir/")).toBe("/explore");
     expect(rootSectionOf("/explore/concept/")).toBe("/explore");
+    expect(rootSectionOf("/explore/concept/approfondir/")).toBe("/explore");
     // Route de premier niveau dans l'URL, enfant d'Explorer dans l'arbre : c'est le cas
     // qui laissait la barre de navigation sans aucune entrée allumée.
     expect(rootSectionOf("/settings")).toBe("/explore");

@@ -34,5 +34,18 @@ export function labelFor(href: string): string {
     return concepts.find((c) => c.slug === slug)?.title ?? "Concept";
   }
 
+  /*
+   * L'approfondissement porte le nom de son concept, et non « Approfondir ».
+   *
+   * Ce libellé n'étiquette pas la page où l'on est : il étiquette la destination d'un retour.
+   * Or on ne revient jamais sur un approfondissement depuis un écran plus profond, celui-ci
+   * étant la feuille de l'arbre. Le nom du concept est donc ce qui s'affiche dans la trace,
+   * là où il sert à se relire.
+   */
+  if (pathname === "/explore/concept/approfondir") {
+    const slug = new URLSearchParams(recherche).get("c");
+    return concepts.find((c) => c.slug === slug)?.title ?? "Concept";
+  }
+
   return "Explorer";
 }
