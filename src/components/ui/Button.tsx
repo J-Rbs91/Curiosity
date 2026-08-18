@@ -1,10 +1,16 @@
-import type { ButtonHTMLAttributes, ReactNode } from "react";
+import type { ButtonHTMLAttributes, ReactNode, Ref } from "react";
 
 type Variant = "primary" | "secondary" | "ghost";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: Variant;
   children: ReactNode;
+  /**
+   * Déclaré comme une propriété ordinaire : depuis React 19, un composant de fonction reçoit
+   * `ref` sans passer par `forwardRef`. Il sert à rendre le focus au bouton quand la feuille
+   * qu'il a ouverte se referme.
+   */
+  ref?: Ref<HTMLButtonElement>;
 }
 
 const VARIANT_CLASSES: Record<Variant, string> = {
