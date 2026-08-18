@@ -26,6 +26,7 @@ export const deepenedConceptIds: readonly ConceptId[] = [
   "echelles-de-mesure",
   "environnement-capacitant",
   "ergonomie-tache-ergonomie-activite",
+  "garbage-can-model",
   "genese-instrumentale",
   "genre-professionnel-et-style",
   "gouvernement-par-les-chiffres",

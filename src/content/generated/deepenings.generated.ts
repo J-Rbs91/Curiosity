@@ -578,6 +578,69 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "garbage-can-model",
+    "lead": [
+      "Le récit ordinaire d’une décision est une suite ordonnée : un problème apparaît, quelqu’un le formule, on cherche des réponses possibles, on en retient une, on l’applique. Cette suite paraît si évidente qu’on ne prend jamais la peine de l’énoncer. Elle contient pourtant une hypothèse forte, et cette hypothèse porte sur le temps : le problème vient d’abord, la solution vient ensuite, et elle existe parce qu’il y avait un problème.",
+      "Le modèle de la poubelle retire cette hypothèse. Non pas en soutenant que les organisations seraient irrationnelles ou mal tenues, mais en décrivant des situations, courantes, où les conditions qui rendraient la suite possible ne sont pas réunies : on ne sait pas exactement ce que l’on veut, on ne sait pas ce qui produit quoi, et l’on ne sait pas qui sera là. Ce qui subsiste alors n’est ni la suite ordonnée ni son contraire, et c’est la partie difficile."
+    ],
+    "sections": [
+      {
+        "title": "Ce que « anarchie organisée » nomme",
+        "paragraphs": [
+          "L’expression accole deux mots qui se contredisent, et la contradiction est son contenu. L’organisation n’a pas disparu : il y a des services, des budgets, des réunions, des responsables, un ordre du jour. Ce qui est anarchique n’est pas la structure, c’est le rapport entre trois choses que la structure est censée tenir ensemble : ce que l’on veut, ce que l’on sait faire, et qui participe.",
+          "Trois traits la caractérisent. Les buts sont ambigus, ce qui ne veut pas dire absents : ils sont nombreux, généraux, compatibles avec des conduites opposées, et une organisation peut fonctionner des années sans que ceux qui la font marcher aient eu à trancher entre eux. Le savoir causal est flou : on ne sait pas de façon fiable quelle action produit quel effet, si bien qu’évaluer une option revient à parier sur une chaîne que personne ne maîtrise. La participation est variable : ceux qui sont présents à une réunion, un jour donné, ne sont pas ceux qui seront présents à la suivante.",
+          "Ces trois traits ne sont pas de même nature, et les distinguer aide à s’en servir, à condition de tenir cette distinction pour un outil d’analyse et non pour une classification des auteurs. Les deux premiers portent sur ce que l’on sait : ils décrivent un état de connaissance. Le troisième porte sur qui est là : il décrit la composition, instable, de l’ensemble des personnes susceptibles de peser. Quelqu’un de parfaitement informé ne pourrait rien contre le troisième, puisqu’il ne dépend pas de ce qu’il sait."
+        ]
+      },
+      {
+        "title": "Un lien fait par le temps",
+        "paragraphs": [
+          "Dans le récit ordinaire, ce qui attache une solution à un problème est une relation de contenu : cette réponse convient à cette difficulté, et c’est pour cela qu’on la retient. Le modèle déplace ce travail d’attache. Ce qui relie un problème à une solution est leur coprésence dans le temps, c’est-à-dire le fait qu’ils se trouvent là au même moment, dans la même enceinte, devant les mêmes personnes.",
+          "Le déplacement est plus radical qu’il n’en a l’air, parce qu’une relation de contenu et une relation temporelle n’ont pas les mêmes propriétés. La première est stable : si la réponse convient, elle convient aujourd’hui comme dans six mois. La seconde ne l’est aucunement, et cela implique que deux problèmes identiques, arrivés à deux moments différents, ne recevront pas la même réponse, sans que rien dans leur contenu n’explique l’écart.",
+          "Cela ne revient pas à soutenir qu’aucune solution ne convient jamais à son problème. Cela revient à dire que la convenance, quand elle existe, n’est pas ce qui a produit la rencontre. On peut en déduire, avec prudence, que ce qui gouverne une décision de ce type se loge dans des objets que personne ne regarde comme décisifs : l’ordre du jour, le calendrier, la durée d’une séance, le moment où un dossier remonte."
+        ]
+      },
+      {
+        "title": "Une solution qui existait avant son problème",
+        "paragraphs": [
+          "Le renversement le plus contre-intuitif tient en une phrase : une réponse peut précéder le problème auquel on l’attachera. Cela heurte, parce qu’une solution se définit d’habitude par le problème qu’elle résout, ce qui la rend logiquement postérieure. Il suffit pourtant de regarder ce qui existe dans une organisation pour y voir des réponses disponibles qui n’attendent rien de précis : une compétence que quelqu’un a acquise et voudrait exercer, un outil acheté, un projet de réorganisation prêt depuis deux ans, une méthode qu’un service défend.",
+          "Ces réponses ont une durée de vie propre, des porteurs, et un intérêt à trouver un emploi. Elles ne disparaissent pas faute de problème : elles attendent. Quand une difficulté se présente au moment où l’une d’elles est là, portée par quelqu’un de présent, l’attachement se fait, et il se fait d’autant plus vite que la difficulté est mal définie, ce que des buts ambigus et un savoir causal flou garantissent.",
+          "Prenons un cas fictif, qui n’illustre rien d’observé. Un service dispose depuis longtemps d’un logiciel de suivi acheté pour un projet abandonné, et la personne qui l’avait choisi en défend l’utilité à chaque occasion. Une plainte arrive un jour sur des délais de traitement. Le logiciel devient la réponse, non parce que l’on aurait établi qu’il réduirait ces délais, mais parce qu’il était là, disponible, avec quelqu’un pour le proposer, le jour où la plainte a été mise à l’ordre du jour."
+        ]
+      },
+      {
+        "title": "Un ordre qui n’est pas celui des Lumières",
+        "paragraphs": [
+          "Le nom du modèle travaille contre lui. Une poubelle évoque le rebut, le mélange, l’absence de tri, et l’on en conclut vite que le modèle décrirait le désordre, voire une pathologie des organisations. La rétrospective que les trois auteurs signent quarante ans après l’article fondateur dit exactement l’inverse : « La poubelle, en ces termes, dépeint un monde ordonné, mais qui parvient à l’ordre d’une manière différente de celle que glorifiaient les Lumières. »",
+          "On peut comprendre cette phrase comme la mise à distance d’une certaine idée de l’ordre, plutôt que de l’ordre lui-même : celle d’un ordre qui procède d’une intention, d’un plan, d’un sujet qui prévoit et calcule. L’ordre décrit ici serait alors un ordre sans intention centrale, produit par la manière dont des événements se croisent dans le temps, et régulier à sa façon, puisque les mêmes conditions temporelles y produisent les mêmes effets. Pour attribuer précisément cette lecture aux auteurs, il faudrait revenir au chapitre de 2012 au delà de la phrase citée.",
+          "La différence a une portée pratique. Si le modèle décrivait du désordre, la conclusion à en tirer serait de remettre de l’ordre : clarifier les buts, discipliner les réunions, formaliser les circuits. S’il décrit un ordre d’une autre espèce, cette conclusion ne suit plus, et la question devient de savoir ce que cet ordre-là produit, ce qu’il permet et ce qu’il coûte. Ce raisonnement prolonge la phrase citée, il ne s’y trouve pas."
+        ]
+      },
+      {
+        "title": "Une décision sans auteur assignable",
+        "paragraphs": [
+          "Les trois traits, pris ensemble, ont un effet qu’aucun d’eux n’a séparément. Si les buts sont ambigus, personne ne peut fonder son choix sur un critère stable. Si le savoir causal est flou, personne ne peut établir qu’une option produira l’effet attendu. Si la participation est variable, l’ensemble des personnes présentes au moment où la chose se joue n’est pas un groupe constitué, mais le produit de disponibilités. Ce qui sort de là n’est pas l’acte d’un sujet, c’est l’issue d’une rencontre.",
+          "La question de savoir qui a décidé se retrouve alors sans réponse, et pas faute d’information. On peut toujours désigner celui qui a signé ; on ne trouvera pas, derrière la signature, l’intention qui aurait comparé des options avant de trancher. Le mécanisme décrit ne comporte pas cette place. La conséquence est tirée ici du mécanisme, elle n’est pas reprise aux auteurs.",
+          "Une autre conséquence concerne les récits d’après coup, qui sont souvent la seule trace qui reste. Il est toujours possible de reconstruire une chaîne de raisons : voici le problème, voici pourquoi cette réponse a été retenue. La reconstruction sera plausible, elle sera acceptée, et elle sera fausse sur le point qui compte, puisqu’elle installe un choix là où il y a eu coïncidence. Rien n’oblige celui qui la produit à mentir : l’ordre des raisons est simplement ce que l’on sait raconter d’une décision."
+        ]
+      },
+      {
+        "title": "Les situations que le modèle ne décrit pas",
+        "paragraphs": [
+          "Les trois traits sont des conditions, pas un décor. Là où les buts sont énoncés, partagés et stables, là où l’on sait avec assez de fiabilité quelle action produit quel effet, là où le même petit groupe suit une affaire du début à la fin, l’anarchie organisée n’est pas là, et le mécanisme n’a aucune raison de s’appliquer. Le modèle nomme une classe de situations ; il ne prétend pas que toute décision d’organisation en relève.",
+          "Il ne dit pas non plus que ces situations tournent mal. Rien dans ce que la carte établit n’associe l’anarchie organisée à un mauvais résultat, à un gaspillage ou à un dysfonctionnement : le sens courant du mot poubelle le suggère, la phrase des auteurs sur l’ordre l’écarte. Une décision née d’une coïncidence peut être excellente, une décision longuement calculée peut être désastreuse ; ce qui est décrit est la manière dont les choses se lient, pas la valeur de ce qui en sort.",
+          "Il ne fournit enfin aucune consigne. La tentation existe de le lire comme un conseil de conduite, tenir l’ordre du jour, arriver tôt, garder une réponse prête pour le jour où un problème passera. Cette lecture convertit une description en méthode, opération courante et que rien ici n’autorise."
+        ]
+      }
+    ],
+    "limits": [
+      "L’article fondateur de 1972 n’a jamais pu être ouvert : le dossier de la carte le note, aucune version en accès libre n’ayant été localisée. Tout ce qui précède repose sur la rétrospective que les trois mêmes auteurs signent en 2012, lue intégralement, et sur ce que la carte en tire. La machinerie interne du modèle de 1972, ses termes, la façon dont il est construit et ce qu’il calcule, ne figurent pas au dossier, et rien de ce texte ne peut en tenir lieu. La borne « p. 1-25 » est elle-même d’usage, Crossref n’enregistrant que la première page.",
+      "Le volume collectif de 1976 n’a été consulté que par sa notice, et la pagination du chapitre qui y reprend l’article de 1972 n’a pas été vérifiée. Cette source établit qu’elle existe et qu’elle est pertinente ; elle n’autorise aucune phrase sur son contenu, et aucune n’a été écrite.",
+      "Deux des cinq sources, le chapitre introductif de Lomi et Harrison et celui de Gibson, ne portent dans l’enregistrement aucune mention du niveau auquel elles ont été consultées, ni texte intégral ni notice seule. La carte ne dit donc pas ce qui en a été lu, et rien ici n’en est tiré : ce que la réception de ce modèle en a fait reste hors de portée du dossier.",
+      "La citation affichée est une traduction interne, faite pour la fiche, aucune traduction française publiée de ce chapitre n’ayant été identifiée. Ce qui tiendrait à un mot, « ordonné », « les Lumières », se discute sur la phrase anglaise que l’enregistrement conserve. Elle a par ailleurs été écrite quarante ans après l’article fondateur : elle dit ce que ses auteurs affirment en 2012 de leur modèle, ce qui n’est pas la lettre de 1972."
+    ]
+  },
+  {
     "conceptId": "genese-instrumentale",
     "lead": [
       "Entre le jour où un outil est livré et le jour où il sert vraiment, il se passe quelque chose que les plans de déploiement ne datent jamais. La commande a une date, l’installation a une date, la formation a une date ; ce qui se construit entre ces dates n’a ni calendrier, ni responsable, ni même de nom stable. Faute de nom, on le range du côté de la prise en main, de l’habitude ou de l’appropriation, mots assez larges pour désigner un délai plutôt qu’un travail.",
