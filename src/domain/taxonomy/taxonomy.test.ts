@@ -236,27 +236,60 @@ describe("la taxonomie de l'application", () => {
   });
 });
 
-describe("la sociologie des organisations, domaine parmi les autres", () => {
+/*
+ * Ces trois épreuves ont d'abord dit « la sociologie des organisations est le seul domaine
+ * pourvu, les dix autres attendent leur corpus ». C'était vrai le jour où elles ont été
+ * écrites, et la publication du premier lot de la théorie de la mesure les a cassées — non
+ * parce qu'un mécanisme avait cédé, mais parce qu'elles figeaient un **état** du corpus là
+ * où elles croyaient tenir une **propriété**. Un test qui tombe à chaque livraison
+ * n'atteste plus rien : on prend l'habitude de le mettre à jour sans le lire.
+ *
+ * Elles portent désormais sur ce qui doit rester vrai quel que soit le nombre de domaines
+ * instruits, et ne demanderont plus rien au prochain lot.
+ */
+describe("le rattachement des cartes aux domaines", () => {
   const sociologie = taxonomy.domainBySlug("sociologie-des-organisations");
 
-  it("appartient à la famille « Comprendre les humains et les organisations »", () => {
+  it("place la sociologie des organisations dans sa famille", () => {
     expect(sociologie).toBeDefined();
     expect(taxonomy.familyOf(sociologie!.id)?.id).toBe("humans-organizations");
   });
 
-  it("recueille tout le corpus existant, sans qu'aucune fiche ait eu à le déclarer", () => {
+  it("ne laisse aucune carte en dehors de tout domaine", () => {
     /*
-     * La garantie de non-régression de la migration : les cartes instruites avant que les
-     * domaines n'existent sont toutes rattachées, et aucune n'est restée en dehors.
+     * L'invariant qui compte vraiment, et le seul dont la rupture serait invisible en
+     * production : une carte que rien ne situe n'apparaît sur aucune page de domaine, dans
+     * aucun tirage par famille et dans aucun comptage. Elle est instruite, vérifiée,
+     * publiée — et personne ne la rencontre jamais.
      */
-    expect(taxonomy.conceptsIn({ kind: "domain", id: sociologie!.id })).toHaveLength(
-      concepts.length
-    );
-    expect(concepts.every((c) => c.domain === undefined)).toBe(true);
+    const orphelines = concepts.filter((c) => taxonomy.domainOfConcept(c) === undefined);
+    expect(orphelines.map((c) => c.id)).toEqual([]);
   });
 
-  it("est le seul domaine pourvu, les dix autres attendant leur corpus", () => {
-    const pourvus = taxonomy.domains.filter((d) => taxonomy.hasCorpus(d.id));
-    expect(pourvus.map((d) => d.id)).toEqual([sociologie!.id]);
+  it("rattache par le thème, et ne réclame `domain` qu'à défaut", () => {
+    /*
+     * Une carte hérite du domaine de son thème et n'a donc rien à déclarer. Le champ
+     * `domain` n'existe que pour la fiche dont aucun thème n'est connu de l'application.
+     * Si une carte le porte alors qu'un de ses thèmes suffisait, c'est que quelqu'un a
+     * recopié une information que la table des thèmes tenait déjà — et deux endroits qui
+     * disent la même chose finissent par se contredire.
+     */
+    const domaineDuTheme = new Map(themes.map((t) => [t.id, t.domain]));
+    const superflus = concepts.filter(
+      (c) => c.domain !== undefined && c.themes.some((t) => domaineDuTheme.has(t))
+    );
+    expect(superflus.map((c) => c.id)).toEqual([]);
+  });
+
+  it("ne dit « pourvu » que d'un domaine qui a des cartes", () => {
+    /*
+     * `hasCorpus` se constate, il ne se déclare pas : c'est ce qui permet de configurer un
+     * domaine longtemps avant de l'instruire sans que l'application annonce un corpus vide.
+     * On vérifie la concordance, jamais la liste — celle-ci s'allonge à chaque lot.
+     */
+    for (const d of taxonomy.domains) {
+      const cartes = taxonomy.conceptsIn({ kind: "domain", id: d.id }).length;
+      expect(taxonomy.hasCorpus(d.id)).toBe(cartes > 0);
+    }
   });
 });

@@ -1,0 +1,95 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "gouvernement-par-les-chiffres",
+  "slug": "gouverner-par-le-reel",
+  "status": "VALIDATED",
+  "title": "Le benchmarking : gouverner par le réel",
+  "themes": [
+    "audit-evaluation-reddition-de-comptes"
+  ],
+  "domain": null,
+  "theme_labels": {
+    "audit-evaluation-reddition-de-comptes": "Audit, évaluation, reddition de comptes"
+  },
+  "authors": [
+    {
+      "name": "Isabelle Bruno",
+      "app_author_id": null
+    },
+    {
+      "name": "Emmanuel Didier",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "La carte porte l'analyse du benchmarking comme « une façon de gouverner par le réel » (p. 33), et non l'expression « gouvernement par les chiffres » : celle-ci est antérieure — Alain Desrosières, Gouverner par les nombres. L'argument statistique II, Presses des Mines, 2008 — et le titre de l'article la donne pour objet commenté, « À propos du gouvernement par les chiffres ». L'article est signé d'Isabelle Bruno seule, mais il crédite lui-même l'exemple qu'il développe à une recherche menée avec Emmanuel Didier : « Nous nous attarderons tout particulièrement sur l'exemple du benchmarking (Bruno, Didier, 2013) » (p. 28). D'où les deux noms.",
+  "hook": "Quand ce sont les faits qui commandent, que reste-t-il à négocier ?",
+  "summary": "Le benchmarking assigne des cibles réputées indiscutables parce que tirées du réel ; mais ces faits sont fabriqués, et leur autorité désarme la négociation politique.",
+  "quotation": {
+    "text": "Gouverner au moyen du benchmarking permet ainsi d'assigner des objectifs chiffrés, dont le réalisme est indiscutable puisqu'ils sont tirés du réel.",
+    "reference": "Isabelle Bruno, « “Des faits, des faits, des faits !” À propos du gouvernement par les chiffres et autres données probantes (dans l'éducation et ailleurs) », Revista Lusófona de Educação, n° 28, 2014, p. 25-42.",
+    "locator": "p. 33",
+    "language": "fr",
+    "original_text": null,
+    "original_language": null,
+    "translation": {
+      "kind": "none",
+      "translator": null,
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "Isabelle Bruno, « “Des faits, des faits, des faits !” À propos du gouvernement par les chiffres et autres données probantes (dans l'éducation et ailleurs) », Revista Lusófona de Educação, n° 28, 2014, p. 25-42.",
+      "kind": "primary",
+      "locator": "p. 25-42",
+      "doi_isbn": null,
+      "url": "https://www.redalyc.org/pdf/349/34937157003.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Isabelle Bruno et Emmanuel Didier, Benchmarking. L'État sous pression statistique, Paris, La Découverte / Zones, 2013.",
+      "kind": "primary",
+      "locator": null,
+      "doi_isbn": null,
+      "url": "https://hal.science/hal-02446704",
+      "consulted": "metadata-only"
+    },
+    {
+      "label": "Alain Desrosières, Gouverner par les nombres. L'argument statistique II, Paris, Presses des Mines, 2008.",
+      "kind": "secondary-academic",
+      "locator": null,
+      "doi_isbn": "10.4000/books.pressesmines.341",
+      "url": null,
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle",
+    "date": "2026-08-17",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 2,
+    "notes": [
+      "Source primaire ouverte en texte intégral : PDF Redalyc https://www.redalyc.org/pdf/349/34937157003.pdf (HTTP 200, 200 997 octets), extrait avec pdftotext -layout (poppler 24.02). Page de garde Redalyc : « Bruno, Isabelle — “Des faits, des faits, des faits!” À propos du gouvernement par les chiffres et autres données probantes (dans l’éducation et ailleurs), Revista Lusófona de Educação, núm. 28, 2014, pp. 25-42 ». Signature d’article : « Isabelle Bruno » seule. Le corps de l’article court bien jusqu’au folio 42.",
+      "CITATION — verbatim, à l’endroit annoncé. Le passage « Gouverner au moyen du benchmarking permet ainsi d’assigner des objectifs chiffrés, dont le réalisme est indiscutable puisqu’ils sont tirés du réel. » se lit dans le bloc encadré par le pied de page « 32 Revista Lusófona de Educação » et le pied de page « Revista Lusófona de Educação 33 », c’est-à-dire sur la page 33 : locator exact. Aucune coupe, aucune traduction — l’article est en français, `language: fr` et `translation: none` sont corrects. La phrase suivante enchaîne « Cet art de gouverner en usant de données probantes, c’est ce qu’on appelle couramment dans l’entreprise l’evidence-based management ».",
+      "ATTRIBUTION — confirmée. La formule que la carte porte réellement, « le benchmarking est une façon de gouverner par le réel : c’est dans le réel, par une méthode empirique de quête des “meilleures pratiques”, et non pas par des projections comptables, encore moins par la négociation, qu’on va chercher les benchmarks », est elle aussi p. 33 du même article. La cosignature d’Emmanuel Didier est fondée sur le texte lui-même : j’ai vérifié la phrase « Nous nous attarderons tout particulièrement sur l’exemple du benchmarking (Bruno, Didier, 2013) », qui tombe entre le pied de page 27 et le pied de page 28, donc bien p. 28. La bibliographie de l’article porte « Bruno, I. & Didier, E. (2013). Benchmarking. L’État sous pression statistique. Paris: La Découverte / Zones ». Contre-vérification indépendante sur l’introduction du livre de 2013 mise en ligne par Contretemps (https://www.contretemps.eu/lire-lintroduction-benchmarking-disabelle-bruno-emmanuel-didier/, HTTP 200) : on y lit, sous les deux signatures, « ce mode de gouvernement, qui fonctionne à l’initiative, à l’autoévaluation, à l’engagement personnel, à la responsabilisation, au volontarisme », quasi identique au développement de la p. 33 de l’article. L’analyse est donc bien conjointe, et non attribuée abusivement à un tiers.",
+      "ATTRIBUTION — le point que la carte écarte tient aussi. L’expression « gouvernement par les chiffres » figure au titre de l’article comme objet commenté (« À propos du gouvernement par les chiffres »), et n’est pas revendiquée par la carte. Aucune trace d’un auteur antérieur au couple Bruno/Didier pour « gouverner par le réel » appliqué au benchmarking : recherche sur HAL (api.archives-ouvertes.fr, requête plein texte sur la formule) sans résultat, recherche web sans antériorité identifiée. Absence de résultat n’est pas preuve d’originalité, mais rien ne contredit l’attribution.",
+      "SOURCES — les trois résolvent. (1) Redalyc : ouverte en texte intégral, revue, numéro, année et pagination 25-42 exacts. (2) HAL hal-02446704, interrogé via api.archives-ouvertes.fr (numFound 1) : title_s « Benchmarking. L’État sous pression statistique », authFullName_s [Isabelle Bruno, Emmanuel Didier], publisher_s « La Découverte / Zones », producedDateY_i 2013, docType_s OUV — conforme au label mot pour mot ; l’URL hal.science redirige vers lilloa.hal.science/hal-02446704v1. (3) DOI 10.4000/books.pressesmines.341 résolu sur api.crossref.org : type monograph, titre « Gouverner par les nombres », sous-titre « L’argument statistique II », auteur Desrosières, éditeur Presses des Mines, issued 2008, ISBN 9782356711960 / 9782356710055 — aucun écart avec le label.",
+      "PROSE — fidèle, y compris sur les hedges. Le `summary` dit « cibles réputées indiscutables » : le « réputées » est nécessaire et il est porté par le texte, qui écrit « une rigueur qui se veut toute scientifique », « des normes qui tirent leur force de leur naturalité supposée », « Ce sont les états de fait qui sont censés commander ». « ces faits sont fabriqués » : p. 33, « ces faits ne préexistent pas à leur traduction dans des données comptables et statistiques » et « l’entreprise fabrique des normes ». « leur autorité désarme la négociation politique » : p. 33-34, « Les négociations politiques s’inclinent devant l’autorité des faits », et p. 33 « et non pas par des projections comptables, encore moins par la négociation ». Le `hook`, formulé en question, ne durcit rien.",
+      "Hors des quatre points, sans incidence sur le verdict : la bibliographie de l’article de 2014 ne cite pas Desrosières 2008 mais Desrosières 2003 (« Historiciser l’action publique ») et 2014 (« Prouver et gouverner »). La source 3 est donc un jalon apporté par la carte, non une référence de Bruno — ce que la carte n’affirme d’ailleurs pas. Par ailleurs le titre de Desrosières est « Gouverner par les nombres », non « par les chiffres » ; la note d’attribution donne le titre exact, la distinction est tenue.",
+      "Non atteint : je n’ai pas pu ouvrir le texte intégral du livre Bruno & Didier 2013 (notice HAL sans PDF, consulted: metadata-only est donc exact) ni celui de Desrosières 2008 sur OpenEdition Books ; ces deux sources sont déclarées metadata-only sur la carte et n’ont été vérifiées qu’en notice. Aucun refus d’accès rencontré : Redalyc, HAL, Crossref et Contretemps ont tous répondu en 200."
+    ]
+  },
+  "notes": [
+    "La citation restitue la PRÉTENTION du dispositif, pas l'adhésion de l'auteure : le paragraphe enchaîne aussitôt sur le fait que « ces faits ne préexistent pas à leur traduction dans des données comptables et statistiques » et qu'il y a « toute une chaîne sociotechnique » qui fabrique des normes tirant « leur force de leur naturalité supposée ». Détachée, la phrase pourrait se lire comme un éloge du benchmarking : c'est au résumé de lever l'ambiguïté.",
+    "L'article s'annonce « dans l'éducation et ailleurs » et tient parole dans les deux sens : l'éducation en fournit le cadrage et la conclusion, mais la démonstration soutenue porte sur le benchmarking comme technologie de gouvernement, documentée sur Xerox et sur l'administration d'État. Aucune phrase courte et autonome n'énonce l'effet des indicateurs sur les systèmes éducatifs en particulier. La carte n'est donc pas libellée sur l'école.",
+    "L'effet politique que nomme Bruno est une « dépersonnalisation apparente des rapports de pouvoir » : « Ce sont les états de fait qui sont censés commander, et non plus des subjectivités arbitraires. Les négociations politiques s'inclinent devant l'autorité des faits. » (p. 34, 164 caractères, hors plafond).",
+    "Le titre de l'article et son exergue sont de Charles Dickens (Hard Times, 1854), transposés par l'auteure : ils ont été écartés comme citation de carte.",
+    "L'identifiant et le slug de la fiche restent « gouvernement-par-les-chiffres », fixés avant le retitrage : le titre affiché est désormais « Le benchmarking : gouverner par le réel », d'après p. 33.",
+    "Desrosières 2008 est porté en source pour l'origine de l'expression commentée par l'article, sur métadonnées seulement : le livre n'a pas été ouvert. L'article lui-même ne cite Desrosières que par ses textes de 2003 et 2014 (bibliographie) — la filiation est exacte quant au fait, mais elle n'est pas revendiquée dans l'article.",
+    "Le site de la revue est injoignable et l'article n'a pas de DOI ; le texte a été lu sur la copie Redalyc, qui reproduit la composition de l'éditeur et sa pagination imprimée. Le livre de 2013 n'a pas pu être ouvert, et aucun élément de la fiche ne vient d'un compte rendu."
+  ]
+}

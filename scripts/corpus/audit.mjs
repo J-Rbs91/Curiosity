@@ -52,7 +52,17 @@ for (const family of [...families].sort((a, b) => a.order - b.order)) {
     const t = themes.filter((theme) => theme.domain === domain.id).length;
     const v = validated.filter((r) => domainOf(r) === domain.id).length;
     const f = inFlight.filter((r) => domainOf(r) === domain.id).length;
-    const state = t === 0 && v === 0 && f === 0 ? "  — corpus en cours de constitution" : "";
+    /*
+     * Même définition que `hasCorpus` dans src/domain/taxonomy : un domaine est pourvu
+     * quand il a des **cartes**, pas quand il a des thèmes. Déclarer un thème est une
+     * décision de structure, le pourvoir est une décision de contenu.
+     *
+     * Le compte des thèmes entrait ici du temps où les deux avançaient ensemble, et
+     * l'écart ne pouvait pas se voir. Ouvrir un domaine par ses thèmes — la procédure
+     * décrite dans corpus/perimeter.md — le rend visible aussitôt : la mention tombait à
+     * la déclaration des thèmes, en annonçant un corpus là où il n'y avait pas une carte.
+     */
+    const state = v === 0 ? "  — corpus en cours de constitution" : "";
     console.log(`${pad(`  ${domain.label}`, 38)}${pad(t, 8)}${pad(v, 9)}${f}${state}`);
   }
 }

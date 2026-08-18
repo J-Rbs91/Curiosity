@@ -1,6 +1,25 @@
 import type { Theme } from "@/types";
 
+/**
+ * Les thèmes, regroupés par domaine.
+ *
+ * Les neuf thèmes de `organizational-sociology` ont été écrits **avant** toute instruction
+ * documentaire, pour construire l'application. Ils ne sont donc pas une carte du champ mais
+ * un premier découpage, et `corpus/perimeter.md` le dit en toutes lettres.
+ *
+ * Les quatre thèmes de `measurement-theory` sont écrits dans l'autre sens, et c'est
+ * désormais la procédure : le périmètre s'écrit, `corpus-scout` cartographie le champ, et
+ * les thèmes se déclarent à partir de ce qu'il a fait apparaître. Un découpage écrit avant
+ * la lecture découpe le champ tel qu'on le croyait, et rien ne le signale jamais comme faux.
+ *
+ * Conséquence directe, visible ci-dessous : aucun thème n'est déclaré ici pour la santé
+ * publique ni pour la mesure du bien-être, alors que le périmètre demandait de les balayer.
+ * Le scout n'en a rapporté aucune source primaire ouvrable, et **un thème sans carte ne se
+ * déclare pas** — il afficherait une page vide et compterait pour de la couverture.
+ */
+
 export const themes: Theme[] = [
+  // --- Sociologie des organisations ----------------------------------------
   {
     id: "bureaucratie-regles",
     slug: "bureaucratie-regles",
@@ -99,5 +118,51 @@ export const themes: Theme[] = [
     description:
       "Pourquoi le changement dans les organisations est-il si difficile à conduire, et parfois si imprévisible dans ses effets ? Ce thème examine les tensions entre stabilité des routines, exploration de nouvelles pratiques et résistances au changement.",
     domain: "organizational-sociology",
+  },
+
+  // --- Théorie de la mesure / KPI ------------------------------------------
+  {
+    id: "theorie-des-echelles-et-nombres",
+    slug: "echelles-et-nombres",
+    title: "Échelles et nombres",
+    tagline:
+      "Ce qu'un nombre autorise à faire, et ce qu'il n'autorise pas.",
+    keywords: ["Échelle", "Ordinal", "Invariance"],
+    description:
+      "Tout indicateur produit des nombres, mais tous les nombres ne se manipulent pas de la même façon : une moyenne de rangs ou un rapport de températures peuvent n'avoir aucun sens. Ce thème porte sur ce qu'une échelle de mesure permet formellement d'affirmer, indépendamment de l'usage qu'on en fait.",
+    domain: "measurement-theory",
+  },
+  {
+    id: "quantification-operation-sociale",
+    slug: "quantification",
+    title: "La quantification comme opération",
+    tagline:
+      "Compter n'est pas constater : il faut d'abord convenir.",
+    keywords: ["Convention", "Catégorie", "Commensuration"],
+    description:
+      "Avant qu'un chiffre existe, quelqu'un a décidé quoi compter, sous quelle catégorie et selon quelle convention. Ce thème étudie la quantification comme un travail social qui met en forme le réel qu'il prétend enregistrer, et non comme un simple relevé.",
+    domain: "measurement-theory",
+  },
+  {
+    id: "effets-retour-de-la-mesure",
+    slug: "effets-retour-de-la-mesure",
+    title: "Ce que la mesure fait au mesuré",
+    tagline:
+      "Un indicateur observe rarement sans être aussi observé.",
+    keywords: ["Réactivité", "Cible", "Corruption de l'indicateur"],
+    description:
+      "Ceux qui sont mesurés apprennent ce qui les mesure, et ajustent leur conduite en conséquence. Ce thème porte sur les effets en retour de l'indicateur sur ce qu'il enregistre — jusqu'au point où l'indicateur s'améliore sans que la chose mesurée ait bougé.",
+    domain: "measurement-theory",
+  },
+  {
+    id: "audit-evaluation-reddition-de-comptes",
+    slug: "audit-et-evaluation",
+    title: "Audit, évaluation, reddition de comptes",
+    tagline:
+      "Rendre des comptes transforme ce dont on rend compte.",
+    keywords: ["Audit", "Évaluation", "Performance"],
+    description:
+      "Les indicateurs ne flottent pas seuls : ils sont produits et entretenus par des dispositifs — audit, évaluation des politiques publiques, benchmarking, comptabilité. Ce thème examine ces dispositifs et ce que leur exigence de justification fait aux activités qui s'y soumettent.",
+    domain: "measurement-theory",
   },
 ];

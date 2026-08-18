@@ -3,60 +3,177 @@
 Écrit sur le disque parce qu'une session a déjà été coupée en cours de route : ce fichier
 existe pour qu'une reprise reparte des fichiers, et non de la mémoire de quelqu'un.
 
-`npm run corpus:validate` : **9 fiches, 8 validées, 0 erreur.**
-`npm run corpus:build` : **8 cartes projetées vers l'application.**
+`npm run corpus:validate` : **18 fiches, 17 validées, 0 erreur.**
+`npm run corpus:build` : **17 cartes projetées vers l'application.**
+`npm test` : **155 tests, 0 échec.**
 
-L'application affiche donc une carte par jour, et les huit sont atteignables depuis
-Explorer → Thèmes → concept.
+**Deux domaines instruits sur onze déclarés** — la sociologie des organisations et la
+théorie de la mesure. Les neuf autres sont configurés dans la taxonomie et n'ont pas de
+corpus ; `corpus:audit` les affiche « en cours de constitution ».
 
----
-
-## Ce qui a changé, et pourquoi
-
-Le dispositif produisait **171 624 caractères d'enregistrement pour 600 caractères
-affichés**, et n'avait jamais publié une seule fiche. Les huit fiches instruites étaient
-toutes bloquées en correction — et **aucun des blocages ne portait sur leur carte** :
-`traceability` renvoyant à un champ supprimé du schéma, `difficulty_rationale`,
-`common_misinterpretations`, la manière de citer une source francophone dans le dossier. Les
-six verdicts rendus concluaient tous `attribution : confirmée`, `source primaire :
-confirmée`, `sources : concordantes`.
-
-Le format a donc été ramené à la carte. Ce qui a été supprimé du schéma : `evidence`
-(définition, mécanisme, sources détaillées, notes de traduction, ambiguïtés, contresens,
-limites, réception), `scope`, `attribution.term_origin`, `pedagogy.traceability`, `graph`
-(relations, prérequis, difficulté), `validation.confidence_flags`, `provenance`. Aucun
-n'atteignait le lecteur.
-
-Ce qui n'a **pas** changé, et ne doit pas changer : citation verbatim et localisée sur une
-source réellement ouverte, attribution confirmée, références qui résolvent, prose qui
-n'ajoute rien, deux tours de correction au maximum.
-
-**Rien n'a été détruit.** Les neuf enregistrements complets sont dans `corpus/dossiers/`,
-entiers, et chaque fiche y renvoie par son champ `dossier`.
-
-Effet mesuré sur les fiches :
-
-| fiche | avant | après |
+| domaine | thèmes | cartes |
 |---|---:|---:|
-| `zones-incertitude` | 159 587 | 5 834 |
-| `regulation-controle-autonome` | 138 093 | 4 306 |
-| `rationalite-limitee` | 136 302 | 6 973 |
-| `organisation-genree` | 135 115 | 4 223 |
-| `isomorphisme-institutionnel` | 129 942 | 6 407 |
-| `inertie-structurelle-et-selection` | 105 745 | 4 928 |
-| `garbage-can-model` | 108 303 | 5 166 |
-| `deplacement-des-buts` | 89 057 | 5 216 |
-
-La chaîne d'agents passe de sept à quatre : `corpus-cartographer` et
-`corpus-reception-analyst` sont supprimés, leur production n'atteignant pas la carte.
+| Sociologie des organisations | 9 | 8 |
+| Théorie de la mesure / KPI | 4 | 9 |
 
 ---
 
-## Les huit cartes publiées
+# I. Théorie de la mesure — premier lot, publié
 
-Toutes portent une citation verbatim, localisée, vérifiée en première main par le contrôleur
-aveugle, avec son statut de traduction. Toutes tiennent sur un écran de 375 × 667 sans
-défiler (vérifié au navigateur, les huit).
+Premier domaine ouvert après la sociologie des organisations, et donc le premier à passer
+par la procédure d'ouverture inscrite dans `corpus/perimeter.md` : le périmètre s'écrit, le
+scout cartographie, **puis** les thèmes se déclarent, puis les concepts s'instruisent.
+L'ordre compte — les neuf thèmes de la sociologie ont été posés de mémoire avant toute
+lecture, et le périmètre le reconnaît lui-même comme un découpage a priori.
+
+## Les neuf cartes
+
+| id | thème | auteur·rice | tours |
+|---|---|---|---:|
+| `signification-et-invariance` | Échelles et nombres | Suppes, Zinnes | 0 |
+| `echelles-de-mesure` | Échelles et nombres | Stevens | 0 |
+| `quantifier-convenir-et-mesurer` | La quantification comme opération | Desrosières | 0 |
+| `nombres-et-emotions` | La quantification comme opération | Didier | 0 |
+| `loi-de-campbell` | Ce que la mesure fait au mesuré | Campbell | 0 |
+| `reactivite-des-classements` | Ce que la mesure fait au mesuré | Espeland, Sauder | 1 |
+| `mesure-devenue-cible` | Ce que la mesure fait au mesuré | Strathern | 2 |
+| `performance-totale` | Audit, évaluation, reddition de comptes | Jany-Catrice | 1 |
+| `gouvernement-par-les-chiffres` | Audit, évaluation, reddition de comptes | Bruno, Didier | 2 |
+
+Aucune fiche perdue. **Quatorze passages de contrôle aveugle**, tous indépendants, aucun
+contrôleur informé de ceux qui l'avaient précédé.
+
+Deux résultats que `perimeter.md` demande de surveiller, obtenus sans qu'aucun quota ait été
+appliqué : **quatre cartes sur neuf sont francophones**, et **quatre portent une signature
+féminine** (Jany-Catrice, Bruno, Espeland, Strathern).
+
+## Ce que le contrôle a réellement attrapé
+
+| question | résultat sur neuf fiches |
+|---|---|
+| citation verbatim, à l'endroit annoncé | 9/9 dès le premier passage |
+| sources qui résolvent | 9/9 dès le premier passage |
+| prose fidèle aux sources | 9/9 dès le premier passage |
+| attribution | 7/9, deux renvois |
+
+**Tous les renvois portaient sur l'attribution, aucun sur autre chose.** C'est cohérent avec
+ce que le champ contient : dans un domaine dont les énoncés circulent sous forme de « lois »
+baptisées après coup, « qui a écrit ça » est le point faible structurel. Le dispositif l'a
+trouvé sans qu'on le lui indique.
+
+## Trois enseignements de méthode, à ne pas perdre
+
+**1. Un `PASS` ne garantit pas que chaque mot de la carte soit exact.** Les quatre questions
+du contrôle sont volontairement étroites : elles demandent si la carte *excède ses sources*,
+pas si chaque énoncé est juste. Deux fiches de ce lot portaient une erreur de fait sur un
+champ affiché — la « qualité totale » attribuée à Dejours, qui en est le critique ; Strathern
+qui « ne cite pas une seule fois » Goodhart, qu'elle nomme pourtant dans le paragraphe de la
+citation. **Les deux ont été trouvées par des contrôleurs qui rendaient `PASS`**, et
+signalées hors de leur mandat. Cette consigne devrait entrer dans la définition de
+`corpus-blind-reviewer` : *si une phrase affichée dit quelque chose de factuellement
+inexact, l'écrire explicitement, quitte à rendre `PASS`.*
+
+**2. L'indépendance produit ce que la profondeur ne produit pas.** Une vérification dédiée a
+été lancée sur la seule question de la paternité de « When a measure becomes a target… ».
+Trente-deux appels d'outils, HathiTrust, Open Library, Internet Archive, Google Books ;
+conclusion « Strathern » ; et une réserve honnête — une phrase du début du chapitre de
+Hoskin jamais affichable depuis son commencement. Cette réserve contenait la réponse. Le
+contrôleur aveugle, qui ne savait rien de tout cela, a trouvé le chapitre entier en PDF
+ailleurs, et la formulation équivalente en était la première ligne. **Il n'a pas cherché
+mieux : il a cherché ailleurs.**
+
+**3. Une absence ne vaut que ce que vaut sa couverture.** La vérification ci-dessus avait
+cherché six formulations, n'en avait trouvé aucune, et avait rendu ces zéros interprétables
+en jouant des témoins positifs sur le même moteur dans la même minute. La méthode était
+bonne et la conclusion fausse : Hoskin écrit « every measure which becomes a target becomes
+a bad measure », qu'aucune des chaînes cherchées ne recoupait. *Une absence de correspondance
+littérale n'est pas une absence de formulation équivalente.* La note en est conservée sur la
+fiche `mesure-devenue-cible`.
+
+## Réserves conservées, fiche par fiche
+
+Elles sont dans le champ `notes` de chaque carte, en clair.
+
+- **`echelles-de-mesure`** — la définition la plus citée du texte s'ouvre par « Paraphrasing
+  N. R. Campbell » : toute coupe sous 150 caractères retire ce crédit. Stevens écrit
+  « numerals », non « numbers ». Il ne **proscrit** aucune opération — la lecture prescriptive
+  qui circule est un durcissement postérieur. Michell 1986, qui conteste la typologie, est en
+  `metadata-only` : `is_oa: false`, aucun dépôt ouvert.
+- **`signification-et-invariance`** — le texte ouvert est le rapport technique Stanford de
+  1962, non le chapitre publié de 1963, dont la pagination diffère. Les auteurs rangent
+  eux-mêmes la signification parmi les problèmes qu'ils disent non centraux. Le résumé écrit
+  « si » là où la définition écrit « si et seulement si » — écart qui affaiblit, non qui
+  étend.
+- **`quantifier-convenir-et-mesurer`** — la formule n'est pas dans l'article de 2003
+  qu'on lui prête souvent ; elle est dans l'ouvrage de 2008. L'intertitre écrit « convenir
+  **puis** mesurer », le corps « convenir **et** mesurer » : les deux sont de lui, sur la
+  même page. 2008 n'est pas une date de première formulation — une note renvoie à un texte
+  de 2007 non ouvert.
+- **`nombres-et-emotions`** — le dépôt est une version auteur acceptée, sans la pagination
+  de la revue ; le locator le dit. Deux millésimes coexistent, 2024 en ligne et 2025 imprimé.
+  Le mot « statactivisme » n'apparaît pas dans l'article.
+- **`loi-de-campbell`** — la republication ouverte est celle du document de décembre 1976,
+  **non** de l'article de 1979, qui reste payant et non ouvert. L'énoncé complet porte deux
+  versants ; la carte n'en garde qu'un, faute de coupe honnête sous 150 caractères. Campbell
+  ne baptise rien : il écrit « laws » au pluriel, restreint à la scène américaine.
+- **`reactivite-des-classements`** — la réactivité leur vient de Campbell et de Heimer, et
+  ils le disent ; leur apport est le cadre à deux étages.
+- **`mesure-devenue-cible`** — la formule resserre celle de Hoskin, elle ne la crée pas.
+- **`performance-totale`** — l'ouvrage de 2012, qui porte l'énoncé le plus large, n'a pas pu
+  être ouvert ; la carte repose sur l'article.
+- **`gouvernement-par-les-chiffres`** — le livre coécrit de 2013 n'a pas été ouvert ; la
+  cosignature repose sur le renvoi explicite de l'article solo, corroboré par l'introduction
+  du livre publiée en accès libre. `id` et `slug` divergent volontairement depuis le
+  retitrage du tour 2.
+
+## Ce qui reste à reprendre sur ce lot
+
+Aucun de ces points n'est bloquant ; tous sont documentés par un contrôleur.
+
+- **`mesure-devenue-cible`** — la note écrit « c'est Hoskin qui la nomme "loi de Goodhart" ».
+  Hoskin ne se présente pas en baptiseur : il donne le nom pour déjà en circulation
+  (« is becoming recognized as one of the overriding laws of our times ») et renvoie la
+  définition d'origine à Goodhart. Formulation plus sûre, proposée par le contrôle : *« c'est
+  par Hoskin que Strathern reçoit le nom »*. Non appliquée : la fiche est au second de ses
+  deux tours, et l'énoncé n'est pas faux.
+- **`mesure-devenue-cible`** — le libellé de la source Hoskin tronque le sous-titre
+  (« inscribing people into the measurement of objects »). Le « chap. 14 » n'a pas pu être
+  vérifié sur une table des matières.
+- **`reactivite-des-classements`** — la note donne une initiale que la bibliographie de
+  l'article n'écrit pas ; le locator primaire s'arrête une page avant la fin de la section
+  qu'il désigne.
+- **`performance-totale`** — la collection s'écrit « Capitalisme**s** » chez l'éditeur ; la
+  seconde source pourrait porter son ISBN en plus de son URL.
+
+## Angles morts de la cartographie
+
+Ils sont détaillés dans `corpus/map/measurement-theory.scouting.md` et alimentent le
+prochain lot de ce domaine.
+
+- **Trois auteurs majeurs sont dehors faute d'accès** : Michael Power (*The Audit Society*)
+  et Theodore Porter (*Trust in Numbers*), en prêt numérique contrôlé sur Internet Archive ;
+  Alain Supiot (*La gouvernance par les nombres*), dont cinq comptes rendus ont été trouvés
+  et jamais le texte. Steven Kerr, Miller & O'Leary, Espeland & Stevens : `is_oa: false`.
+- **Deux littératures que le périmètre demandait de balayer n'ont produit aucun candidat
+  ouvrable** : la mesure de la performance en santé (Donabedian) et la mesure du bien-être.
+  Elles n'ouvrent donc aucun thème — *un thème sans carte ne se déclare pas*.
+- **Une voie d'accès découverte en cours de lot** : OpenEdition Books sert des ouvrages
+  entiers en texte intégral. La cartographie l'ignorait, et c'est elle qui a débloqué
+  Desrosières. Plusieurs francophones classés fermés méritent d'y être retentés.
+- **La cartographie devrait être refaite** : elle a tourné sans OpenAlex ni Semantic Scholar
+  (voir plus bas), et ses requêtes partaient nécessairement de noms déjà connus — limite que
+  le scout signale lui-même.
+
+---
+
+# II. Sociologie des organisations — inchangée
+
+Les huit cartes publiées et leurs réserves n'ont pas bougé depuis la refonte du format. Le
+dispositif produisait alors **171 624 caractères d'enregistrement pour 600 caractères
+affichés** et n'avait jamais publié une seule fiche : les huit étaient bloquées en
+correction, et **aucun blocage ne portait sur leur carte**. Le format a été ramené à la
+carte ; les enregistrements complets sont conservés entiers dans `corpus/dossiers/`, et
+chaque fiche y renvoie par son champ `dossier`.
 
 | id | thème | auteur |
 |---|---|---|
@@ -69,75 +186,63 @@ défiler (vérifié au navigateur, les huit).
 | `regulation-controle-autonome` | Organisation réelle vs formelle | Reynaud |
 | `zones-incertitude` | Pouvoir | Crozier, Friedberg |
 
-### Corrections d'affichage appliquées à la migration
+Réserves conservées : `garbage-can-model` cite la rétrospective de 2012, l'article de 1972
+n'ayant jamais pu être ouvert ; `rationalite-limitee` décrit un des trois procédés que Simon
+range sous la rubrique ; `regulation-controle-autonome` repose entièrement sur l'article de
+1988, *Les règles du jeu* n'ayant ni DOI, ni ISBN, ni URL stable ; `zones-incertitude`
+coattribue à Friedberg sur la réception de *L'Acteur et le système*, non ouvert ;
+`isomorphisme-institutionnel` cite le résumé de l'article, le passage des trois mécanismes
+n'admettant aucune coupe honnête sous 150 caractères.
 
-Quatre seulement touchaient un champ affiché. Chacune est motivée dans le champ `notes` de
-sa fiche, en citant la note du contrôleur qui la fonde.
+**Trois thèmes restent sans aucune carte** : `autorite-domination`,
+`reaction-insatisfaction`, `apprentissage-organisationnel`. Weber, Hirschman et Argyris n'ont
+encore aucun concept instruit.
 
-- **`isomorphisme-institutionnel`** — l'accroche disait « organisations **concurrentes** »,
-  que l'article contredit p. 147 (« less and less driven by competition ») ; le résumé disait
-  « imitation » là où le texte dit *modeling*, réduction que la fiche rangeait elle-même
-  parmi les contresens.
-- **`rationalite-limitee`** — l'accroche énumérait deux défaillances de l'omniscience sur
-  trois, en laissant tomber la borne externe (l'incertitude du monde) ; le résumé posait
-  « les options se cherchent » comme une propriété, alors que Simon l'énonce sous condition.
-- **`zones-incertitude`** — la note d'attribution, composée automatiquement, datait de 1960
-  une coécriture avec Friedberg attestée en 1979. Elle est désormais écrite en toutes
-  lettres.
-- **Toutes** — les `locator` de source portaient le pointeur *et* le détail de vérification,
-  jusqu'à 889 caractères affichés sous une source. Ramenés au pointeur ; le validateur les
-  plafonne désormais à 40 caractères.
+## Le candidat qui doit rester sans carte
 
-### Réserves conservées, fiche par fiche
-
-Elles sont dans le champ `notes` de chaque carte, en clair :
-
-- **`garbage-can-model`** — l'article fondateur de 1972 n'a jamais pu être ouvert. La
-  citation vient de la rétrospective de 2012 signée des trois mêmes auteurs, lue
-  intégralement, et le locator le dit.
-- **`rationalite-limitee`** — le résumé décrit un des trois procédés que Simon range sous la
-  rubrique (p. 354), celui qu'il privilégie lui-même (p. 356). Il n'épuise pas le concept.
-- **`regulation-controle-autonome`** — *Les règles du jeu* (1989) n'a ni DOI, ni ISBN, ni URL
-  stable et n'a pas été ouvert. La fiche repose entièrement sur l'article de 1988.
-- **`zones-incertitude`** — la coattribution à Friedberg ne repose pas sur le terme mais sur
-  la réception de *L'Acteur et le système* (1977), non ouvert.
-- **`isomorphisme-institutionnel`** — la citation n'est pas le passage des trois mécanismes
-  (p. 150), qui n'admet aucune coupe honnête sous 150 caractères ; c'est celui du résumé de
-  l'article, p. 147.
+**`couplage-lache`** — l'article fondateur (Weick, ASQ 21(1), 1976) n'a jamais pu être
+ouvert : quinze voies d'accès essayées. Tout ce que le dossier établit vient d'un commentaire
+rétrospectif d'une page écrit treize ans plus tard. Écrire la carte reviendrait à enseigner le
+commentaire de 1989 à la place de l'article de 1976. C'est le cas d'école du critère
+d'entrée : **pas de source primaire ouvrable, pas de fiche.** Les sept avertissements de
+`corpus:validate` portent tous sur cette fiche, et c'est normal — elle porte encore ses notes
+d'instruction.
 
 ---
 
-## Le seul candidat restant
+# III. Ce qui reste ouvert, tous domaines confondus
 
-**`couplage-lache`** — sans carte, et il doit le rester en l'état.
+## Environnement d'exécution
 
-L'article fondateur (Weick, ASQ 21(1), 1976) n'a jamais pu être ouvert : quinze voies
-d'accès essayées, aucune n'a rendu le texte. Tout ce que le dossier établit vient d'un
-commentaire rétrospectif d'**une page** écrit treize ans plus tard. Écrire la carte
-reviendrait à enseigner le commentaire de 1989 à la place de l'article de 1976.
+Ces limites ont pesé sur tout le lot et se reproduiront si rien ne change.
 
-Le travail de réception, lui, est solide et n'est pas à refaire : attribution du texte à
-Weick seul, antériorité du terme chez Glassman (1973), genèse collective revendiquée par
-Weick lui-même, et le fait que la définition citée aujourd'hui comme « la » définition de
-Weick est en réalité celle d'Orton & Weick (1990).
+- **OpenAlex** : échec sur toute la session (relais du proxy, `dailyRemainingUsd: 0`).
+- **Semantic Scholar** : 429 systématique, faute de `SEMANTIC_SCHOLAR_API_KEY`.
+- **Zotero local** : injoignable depuis un conteneur distant (`localhost:23119`). Il contient
+  peut-être plusieurs des ouvrages classés « métadonnées seules » ci-dessus.
+- **Le serveur MCP `documentary` n'était pas exposé aux sous-agents**, malgré `.mcp.json`.
+  Tous ont basculé sur Crossref, HAL, Unpaywall et Internet Archive en direct. Cela a
+  fonctionné, mais ce n'est pas ce que l'architecture prévoit — à regarder.
+- **`poppler-utils` était absent** : aucun PDF n'était lisible. Installé en cours de session.
+  Six des neuf textes du lot étaient des PDF.
+- `CORPUS_CONTACT_EMAIL` remettrait OpenAlex dans son *polite pool*, au prix de transmettre
+  une adresse personnelle à chaque requête. Décision non prise.
 
-C'est le cas d'école du critère d'entrée : **pas de source primaire ouvrable, pas de fiche**,
-et cela se décide au scout, avant que la chaîne n'ait rien dépensé.
+## Produit
 
----
-
-## Ce qui reste ouvert
-
-- **Trois thèmes sans aucune carte** : `autorite-domination`, `reaction-insatisfaction`,
-  `apprentissage-organisationnel`. Weber, Hirschman et Argyris n'ont encore aucun concept
-  instruit.
-- **Quatre auteurs affichés sans page** : Acker, Reynaud, Hannan et Freeman, DiMaggio et
-  Powell. Leurs cartes s'affichent par leur nom et sont atteignables par les thèmes ; leur
-  donner une page dans `src/content/authors.ts` est une décision de produit, qui demande une
-  notice biographique — donc une instruction.
+- **Sept auteurs affichés sans page** dans `src/content/authors.ts` : Acker, Reynaud, Hannan
+  et Freeman, DiMaggio et Powell, et désormais les neuf du nouveau domaine. Leurs cartes
+  s'affichent par leur nom et sont atteignables par les thèmes ; leur donner une page demande
+  une notice biographique, donc une instruction.
 - **31 sujets d'échafaudage jamais instruits** (`src/content/fixtures/`). Ce sont des pistes,
   pas une dette : ces fiches ont été écrites de mémoire, avant tout dispositif de
   vérification, et ne servent jamais de point de départ.
 - **Le bouton « Approfondir »** partage la carte et son prompt vers une IA. Le mécanisme de
-  partage lui-même reste à reprendre : c'est une conversation à avoir, pas un détail
-  d'implémentation.
+  partage reste à reprendre.
+
+## Une note d'exactitude sur l'historique
+
+Un message de commit de cette session affirme que les dossiers aveugles produits par
+`corpus:brief` sont versés au dépôt. C'est faux : `.gitignore` les exclut délibérément, ce
+sont des artefacts régénérables. Seuls les **verdicts** sont versionnés, dans
+`corpus/review/verdicts/`.
