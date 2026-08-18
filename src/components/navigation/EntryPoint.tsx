@@ -9,6 +9,7 @@ import {
   clearDeparture,
   isReentry,
   readDeparture,
+  takeOpening,
   writeDeparture,
 } from "@/lib/app-entry";
 
@@ -68,7 +69,17 @@ export function EntryPoint() {
        * serait prise pour une réouverture.
        */
       clearDeparture();
-      if (!isReentry(depart, Date.now(), dayKey())) return;
+      if (!isReentry(depart, Date.now(), dayKey())) {
+        /*
+         * Pas une réouverture. Si l'application s'ouvre malgré tout ailleurs
+         * qu'à son point d'entrée — une adresse partagée, un rechargement en
+         * profondeur —, l'ouverture en attente se consomme ici : cette adresse
+         * a été demandée pour elle-même, et rejoindre Aujourd'hui ensuite est
+         * un déplacement, pas une ouverture.
+         */
+        if (chemin.current !== ENTREE) takeOpening();
+        return;
+      }
 
       announceReentry();
       if (chemin.current !== ENTREE) climbTo(routeur.current, ENTREE);

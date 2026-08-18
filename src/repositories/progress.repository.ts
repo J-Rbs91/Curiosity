@@ -15,7 +15,6 @@ export function createEmptyProgressState(): ProgressState {
   return {
     version: CURRENT_VERSION,
     concepts: {},
-    settings: { firstLaunchCompleted: false },
   };
 }
 
@@ -31,9 +30,7 @@ function isProgressState(value: unknown): value is ProgressState {
   return (
     typeof v.version === "number" &&
     typeof v.concepts === "object" &&
-    v.concepts !== null &&
-    typeof v.settings === "object" &&
-    v.settings !== null
+    v.concepts !== null
   );
 }
 

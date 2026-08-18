@@ -52,14 +52,6 @@ export class ProgressService {
     this.repository.save({ ...state, daily: { day, conceptId } });
   }
 
-  markFirstLaunchCompleted(): void {
-    const state = this.getState();
-    this.repository.save({
-      ...state,
-      settings: { ...state.settings, firstLaunchCompleted: true },
-    });
-  }
-
   reset(): void {
     this.repository.save(createEmptyProgressState());
   }

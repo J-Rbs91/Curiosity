@@ -41,15 +41,25 @@ describe("LocalStorageProgressRepository", () => {
   it("ignore un état d'une version antérieure", () => {
     // La v1 décrivait une application avec sessions, quiz et maîtrise : la convertir
     // produirait des données qui n'ont jamais rien signifié dans celle-ci.
-    window.localStorage.setItem(KEY, JSON.stringify({ version: 1, concepts: {}, settings: {} }));
+    window.localStorage.setItem(KEY, JSON.stringify({ version: 1, concepts: {} }));
     expect(new LocalStorageProgressRepository().load().version).toBe(2);
   });
 
   it("efface tout", () => {
     const repository = new LocalStorageProgressRepository();
-    repository.save({ ...createEmptyProgressState(), settings: { firstLaunchCompleted: true } });
+    repository.save({
+      ...createEmptyProgressState(),
+      concepts: {
+        bureaucratie: {
+          conceptId: "bureaucratie",
+          firstSeenAt: "2026-08-18T08:00:00.000Z",
+          lastSeenAt: "2026-08-18T08:00:00.000Z",
+          encounters: 1,
+        },
+      },
+    });
     repository.clear();
 
-    expect(repository.load().settings.firstLaunchCompleted).toBe(false);
+    expect(repository.load().concepts).toEqual({});
   });
 });

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { taxonomy } from "@/content";
 import { getProgressService } from "@/services/progress";
 import { dayKey, pickDailyConcept } from "@/domain/concepts/next-card";
-import { onReentry } from "@/lib/app-entry";
+import { onReentry, takeOpening } from "@/lib/app-entry";
 import type { Concept } from "@/types";
 import { Screen } from "@/components/motion/Screen";
 import { Button } from "@/components/ui/Button";
@@ -26,7 +26,7 @@ const SCREEN_HEIGHT = "calc(100svh - var(--nav-height) - env(safe-area-inset-bot
 
 export default function TodayPage() {
   const [mounted, setMounted] = useState(false);
-  const [firstLaunch, setFirstLaunch] = useState(false);
+  const [ouverture, setOuverture] = useState(false);
   const [concept, setConcept] = useState<Concept | undefined>(undefined);
 
   useEffect(() => {
@@ -50,7 +50,6 @@ export default function TodayPage() {
         state.daily
       );
       // Lecture localStorage et tirage de la carte : impossibles pendant le rendu serveur.
-      setFirstLaunch(!state.settings.firstLaunchCompleted);
       setConcept(next);
       setMounted(true);
       if (next) {
@@ -62,14 +61,27 @@ export default function TodayPage() {
       }
     };
 
+    /*
+     * L'accueil s'interpose quand une ouverture est en attente, et il la consomme. Il ne
+     * s'interpose donc pas quand on arrive ici depuis Explorer : ce serait une taxe sur
+     * chaque changement d'onglet, sur l'écran qu'on vient justement voir.
+     */
+    const ouvrir = () => {
+      if (takeOpening()) setOuverture(true);
+    };
+
     tirer();
+    ouvrir();
     /*
      * Et à chaque réouverture, pas seulement au montage. Une application installée est mise
      * en arrière-plan bien plus souvent qu'elle n'est fermée : quand la réouverture trouve
      * cet écran déjà affiché, rien ne se remonte, et la carte de la veille resterait à
      * l'écran alors que le jour a changé. Le critère de réouverture est dans `app-entry.ts`.
      */
-    return onReentry(tirer);
+    return onReentry(() => {
+      tirer();
+      ouvrir();
+    });
   }, []);
 
   /*
@@ -104,7 +116,19 @@ export default function TodayPage() {
     );
   }
 
-  if (firstLaunch) {
+  /*
+   * L'accueil, à chaque ouverture de l'application — et non plus au seul premier lancement.
+   *
+   * Ce n'est pas un écran de présentation qu'on aurait laissé traîner : c'est le seuil. On
+   * ouvre l'application pour une carte et une seule, et la franchir volontairement est ce
+   * qui fait la différence entre consulter et tomber dessus. La phrase qui s'y lit le dit
+   * depuis toujours — « à chaque ouverture ».
+   *
+   * Ce qui le rend supportable tous les jours est ailleurs, dans `app-entry.ts` : une
+   * ouverture n'est pas un retour au premier plan. Revenir de ses messages au bout de dix
+   * secondes ne le rejoue pas, et aller d'Explorer à Aujourd'hui non plus.
+   */
+  if (ouverture) {
     return (
       <Screen>
         <div
@@ -115,7 +139,7 @@ export default function TodayPage() {
            * Le seul endroit de l'application où la marque se montre, et le seul où son regard
            * joue. Ailleurs, l'écran ne porte que ce qu'il y a à comprendre — c'est la décision
            * du §5 de `docs/ux-direction.md`, et une signature en en-tête permanent la casserait
-           * pour ne rien apprendre à personne. Ici, on se présente : c'est la seule fois.
+           * pour ne rien apprendre à personne. Ici, on se présente ; ailleurs, jamais.
            */}
           <Wordmark animate className="text-[2.125rem] text-ink" />
           <h1 className="font-serif-display text-xl font-semibold leading-tight text-ink">
@@ -124,7 +148,7 @@ export default function TodayPage() {
           <p className="text-md leading-relaxed text-ink-soft">
             Un concept à la fois, à chaque ouverture.
           </p>
-          <Button onClick={() => { getProgressService().markFirstLaunchCompleted(); setFirstLaunch(false); }} className="w-fit">
+          <Button onClick={() => setOuverture(false)} className="w-fit">
             Commencer
           </Button>
         </div>

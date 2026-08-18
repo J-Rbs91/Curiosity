@@ -113,5 +113,38 @@ export function onReentry(listener: () => void): () => void {
 
 /** Signale une réouverture. Appelé par `EntryPoint`, et par lui seul. */
 export function announceReentry(): void {
+  ouverture = true;
   for (const listener of [...listeners]) listener();
+}
+
+// ---------------------------------------------------------------------------
+// L'ouverture en attente
+// ---------------------------------------------------------------------------
+
+/**
+ * Une ouverture attend d'être montrée.
+ *
+ * Vrai au chargement du module, donc à chaque document neuf : lancer
+ * l'application depuis son icône, y revenir après que le système l'a
+ * déchargée, recharger la page. Une réouverture la réarme.
+ *
+ * Aller d'Explorer à Aujourd'hui ne la réarme pas, et c'est tout l'intérêt de
+ * la distinction : c'est un déplacement dans l'application, pas une ouverture,
+ * et l'écran d'accueil qui s'y interposerait serait une taxe sur chaque
+ * changement d'onglet.
+ */
+let ouverture = true;
+
+/**
+ * Consomme l'ouverture en attente : vrai une fois par ouverture, jamais deux.
+ *
+ * Elle se consomme là où elle se montre — l'écran d'Aujourd'hui — ou, quand
+ * l'application s'ouvre ailleurs qu'à son point d'entrée, dans `EntryPoint` :
+ * une adresse partagée a été demandée pour elle-même, et rejoindre Aujourd'hui
+ * plus tard reste alors un déplacement.
+ */
+export function takeOpening(): boolean {
+  const attendue = ouverture;
+  ouverture = false;
+  return attendue;
 }

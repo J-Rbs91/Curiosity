@@ -219,13 +219,21 @@ perd rien : elle ne porte aucune information par son mouvement.
 
 | Support | Ce qui s'affiche |
 |---|---|
-| Écran de premier lancement | Le mot entier, et c'est le seul endroit où le regard joue |
+| Écran d'ouverture | Le mot entier, et c'est le seul endroit où le regard joue |
 | Onglet du navigateur, écran d'accueil, feuille de partage | L'œil seul, immobile |
 | README, page de dépôt | `mark.svg`, ou `mark-animated.svg` qui joue la séquence une fois, sans boucler |
 
 **Il n'y a pas d'en-tête permanent avec une signature.** Le §5 dit ce qu'un écran a le droit de
-porter, et un logo n'y figure pas : il n'apprendrait rien à quelqu'un qui a déjà ouvert
-l'application. On se présente une fois.
+porter, et un logo n'y figure pas : il n'apprendrait rien à quelqu'un qui est déjà entré. La
+marque se montre au seuil, et nulle part après.
+
+**Le seuil se franchit à chaque ouverture, et non plus une seule fois.** L'écran était celui du
+premier lancement ; il est devenu celui de l'ouverture. On ouvre cette application pour une
+carte et une seule : la franchir volontairement est ce qui sépare la lire de tomber dessus, et
+c'est ce que la phrase de cet écran annonce depuis le début — « à chaque ouverture ». Ce qui le
+rend tenable quotidiennement tient à la définition d'une ouverture : revenir de ses messages au
+bout de dix secondes n'en est pas une, aller d'Explorer à Aujourd'hui non plus. Le critère est
+dans `src/lib/app-entry.ts`.
 
 **Le favicon n'est pas animé**, et pas seulement par convention : un onglet qui bouge est un
 mouvement qu'on n'a pas déclenché, dans une zone qu'on ne regardait pas.
@@ -488,13 +496,20 @@ réécriture — `src/domain/concepts/ai-prompt.ts`, ses tests et ceux de
 | Glissement d'un écran ou d'une phase | 560 ms sur 16 % / 10 % | `--ease-lift` |
 | Entrée et sortie de session | 640 ms | `--ease-lift` |
 | Le concept qu'on vient de travailler | 720 ms | `--ease-lift` |
-| Le regard de la marque | 4 800 ms, sur le seul écran de premier lancement | `--ease-out-soft` |
+| Le regard de la marque | 4 800 ms, sur le seul écran d'ouverture | `--ease-out-soft` |
 
 **La marque est la seule durée à dépasser la seconde, et la seule chose qui se relance.** La
-séquence ne joue qu'à l'écran de premier lancement — voir §4 —, et elle y boucle avec une pause
-tirée entre 2,34 et 5,67 secondes. Elle n'est pas une durée d'interface : c'est huit saccades de
-144 ms, six fixations et trois clignements, et aucune information n'attend derrière elle. Une
-valeur de cet ordre sur quoi que ce soit d'autre serait à refuser, et la boucle plus encore.
+séquence ne joue qu'à l'écran d'ouverture — voir §4 —, et elle y boucle avec une pause tirée
+entre 2,34 et 5,67 secondes. Elle n'est pas une durée d'interface : c'est huit saccades de
+144 ms, six fixations et trois clignements. Une valeur de cet ordre sur quoi que ce soit d'autre
+serait à refuser, et la boucle plus encore.
+
+Depuis que cet écran revient à chaque ouverture, la carte du jour attend bel et bien derrière
+lui — ce qui n'était pas le cas quand il ne servait qu'une fois. **Ce qui rend la durée
+acceptable n'est donc plus qu'aucune information n'attende, mais que l'animation ne retienne
+rien** : « Commencer » est présent et actif dès la première image, la séquence ne conditionne
+aucun affichage, et personne n'a jamais à attendre qu'elle finisse. Le jour où elle
+conditionnerait quelque chose, c'est la durée qu'il faudrait revoir, pas l'attente.
 
 **Ce que la règle « aucun mouvement continu » interdit, et ce qu'elle n'interdit pas.** Elle
 interdit qu'une chose bouge alors que rien n'a changé, sur une surface qu'on revient voir. La
@@ -555,6 +570,7 @@ disparaissent, les fondus restent.
 | **Une adresse morte a son écran** | Sans `not-found.tsx`, une fiche au slug périmé servait la page par défaut de Next — en anglais, hors du système visuel, sans un lien. C'est pourtant l'adresse que « Approfondir » diffuse |
 | **Les deux écrans sans pré-rendu ont un squelette** | La carte du jour a besoin du `localStorage`, la fiche de la chaîne de recherche : leur HTML ne contenait que la barre de navigation, et un lien partagé ouvrait sur un écran noir que rien ne distinguait d'une panne |
 | **Rouvrir l'application, c'est entrer par Aujourd'hui** | Une application installée n'est presque jamais fermée : le système la ramène telle qu'elle était, et on rouvrait sur l'écran quitté la veille — la carte du jour n'était jamais atteinte, et le premier appui sur retour rejouait la session précédente. Une absence de plus de trente minutes, ou un changement de jour, ramène à la racine en dépilant. Revenir après dix secondes rend l'écran quitté : c'est le cas le plus fréquent, et le perdre serait pire que le défaut corrigé |
+| **L'accueil est le seuil de chaque ouverture** | Il ne servait qu'au premier lancement, et l'application s'ouvrait donc directement sur la carte — sans le geste qui distingue venir lire de tomber sur un écran. Il ne s'interpose ni au retour de dix secondes, ni quand on vient d'Explorer : sur ces deux cas, ce serait une taxe |
 | **Aucune cible sous 44 px** | Le bouton des sources mesurait 15 px de haut sur un écran de 667 points — sous le seuil de 24 px de WCAG 2.5.8 —, et « Revenir au concept » est le seul moyen de quitter cette vue |
 
 ---
