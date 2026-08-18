@@ -157,7 +157,7 @@ export const themes: Theme[] = [
       "Un indicateur observe rarement sans être aussi observé.",
     keywords: ["Réactivité", "Cible", "Corruption de l'indicateur"],
     description:
-      "Ceux qui sont mesurés apprennent ce qui les mesure, et ajustent leur conduite en conséquence. Ce thème porte sur les effets en retour de l'indicateur sur ce qu'il enregistre — jusqu'au point où l'indicateur s'améliore sans que la chose mesurée ait bougé.",
+      "Ceux qui sont mesurés apprennent ce qui les mesure, et ajustent leur conduite en conséquence. Ce thème porte sur les effets en retour de l'indicateur sur ce qu'il enregistre, jusqu'au point où l'indicateur s'améliore sans que la chose mesurée ait bougé.",
     domain: "measurement-theory",
   },
   {
@@ -168,7 +168,7 @@ export const themes: Theme[] = [
       "Rendre des comptes transforme ce dont on rend compte.",
     keywords: ["Audit", "Évaluation", "Performance"],
     description:
-      "Les indicateurs ne flottent pas seuls : ils sont produits et entretenus par des dispositifs — audit, évaluation des politiques publiques, benchmarking, comptabilité. Ce thème examine ces dispositifs et ce que leur exigence de justification fait aux activités qui s'y soumettent.",
+      "Les indicateurs ne flottent pas seuls : ils sont produits et entretenus par des dispositifs (audit, évaluation des politiques publiques, benchmarking, comptabilité). Ce thème examine ces dispositifs et ce que leur exigence de justification fait aux activités qui s'y soumettent.",
     domain: "measurement-theory",
   },
 
@@ -181,7 +181,7 @@ export const themes: Theme[] = [
       "Entre la consigne et le geste, il reste tout le travail.",
     keywords: ["Tâche", "Activité", "Prescription"],
     description:
-      "Aucune consigne ne dit tout ce qu'il faut faire pour l'appliquer : entre la tâche prescrite et ce qui se fait réellement, il reste un écart que quelqu'un comble. Ce thème porte sur cette distinction fondatrice et sur la méthode qui la rend observable — aller voir l'activité plutôt que la déduire de ce qui a été demandé.",
+      "Aucune consigne ne dit tout ce qu'il faut faire pour l'appliquer : entre la tâche prescrite et ce qui se fait réellement, il reste un écart que quelqu'un comble. Ce thème porte sur cette distinction fondatrice et sur la méthode qui la rend observable : aller voir l'activité plutôt que la déduire de ce qui a été demandé.",
     domain: "activity-ergonomics",
   },
   {
@@ -192,7 +192,7 @@ export const themes: Theme[] = [
       "Tenir la tâche demande de se régler soi-même autant qu'elle.",
     keywords: ["Régulation", "Marge de manœuvre", "Modes opératoires"],
     description:
-      "Rien ne se répète à l'identique : la matière varie, l'outil dérive, la fatigue vient. Ce thème porte sur la façon dont celui qui travaille réajuste en permanence ses manières de faire — et sur les conditions d'organisation qui lui laissent, ou lui refusent, de quoi le faire.",
+      "Rien ne se répète à l'identique : la matière varie, l'outil dérive, la fatigue vient. Ce thème porte sur la façon dont celui qui travaille réajuste en permanence ses manières de faire, et sur les conditions d'organisation qui lui laissent, ou lui refusent, de quoi le faire.",
     domain: "activity-ergonomics",
   },
   {
@@ -203,7 +203,7 @@ export const themes: Theme[] = [
       "Ce qu'on n'a pas pu faire compte aussi dans une journée.",
     keywords: ["Réel de l'activité", "Genre professionnel", "Collectif"],
     description:
-      "L'activité ne se réduit pas à ce qui s'est fait : ce qu'on a voulu faire sans y parvenir, ce qu'on a dû renoncer à bien faire, pèse et coûte. Ce thème porte sur ce versant du travail, et sur ce que le métier et le collectif donnent — ou ne donnent pas — pour le tenir.",
+      "L'activité ne se réduit pas à ce qui s'est fait : ce qu'on a voulu faire sans y parvenir, ce qu'on a dû renoncer à bien faire, pèse et coûte. Ce thème porte sur ce versant du travail, et sur ce que le métier et le collectif donnent, ou ne donnent pas, pour le tenir.",
     domain: "activity-ergonomics",
   },
   {
@@ -214,7 +214,7 @@ export const themes: Theme[] = [
       "L'artefact décide déjà de ce qui sera possible d'en faire.",
     keywords: ["Instrument", "Catachrèse", "Conception"],
     description:
-      "Un outil n'est pas neutre : il incorpore un modèle de celui qui s'en servira, et ce modèle agit avant tout usage. Ce thème porte sur ce double mouvement — ce que l'artefact impose à l'activité, ce que l'activité fait de l'artefact — et sur ce que cela exige de qui conçoit.",
+      "Un outil n'est pas neutre : il incorpore un modèle de celui qui s'en servira, et ce modèle agit avant tout usage. Ce thème porte sur ce double mouvement (ce que l'artefact impose à l'activité, ce que l'activité fait de l'artefact) et sur ce que cela exige de qui conçoit.",
     domain: "activity-ergonomics",
   },
 ];

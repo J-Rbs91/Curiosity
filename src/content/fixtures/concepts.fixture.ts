@@ -142,7 +142,7 @@ export const fixtureConcepts: Concept[] = [
     "slug": "fonctions-manifestes",
     "title": "Fonctions manifestes",
     "hookQuestion": "Quand une organisation instaure une nouvelle règle, l'effet qu'elle en attend officiellement est-il toujours celui qui se produit réellement ?",
-    "shortExplanation": "Les fonctions manifestes sont, chez Merton, les conséquences objectives d'une institution ou d'une règle qui sont voulues et reconnues par les acteurs concernés — c'est l'effet affiché, l'objectif officiel.",
+    "shortExplanation": "Les fonctions manifestes sont, chez Merton, les conséquences objectives d'une institution ou d'une règle qui sont voulues et reconnues par les acteurs concernés : c'est l'effet affiché, l'objectif officiel.",
     "authors": [
       "merton"
     ],
@@ -161,7 +161,7 @@ export const fixtureConcepts: Concept[] = [
     "slug": "fonctions-latentes",
     "title": "Fonctions latentes",
     "hookQuestion": "Une règle peut-elle produire des effets réels et importants que personne n'avait prévus ni même remarqués ?",
-    "shortExplanation": "Les fonctions latentes sont, chez Merton, les conséquences objectives d'une institution ou d'une règle qui ne sont ni voulues ni reconnues par les acteurs — des effets réels mais non intentionnels.",
+    "shortExplanation": "Les fonctions latentes sont, chez Merton, les conséquences objectives d'une institution ou d'une règle qui ne sont ni voulues ni reconnues par les acteurs : des effets réels mais non intentionnels.",
     "authors": [
       "merton"
     ],
@@ -242,7 +242,7 @@ export const fixtureConcepts: Concept[] = [
     "slug": "processus-de-decision",
     "title": "Processus de décision",
     "hookQuestion": "Une décision organisationnelle est-elle un acte instantané, ou le résultat d'un processus en plusieurs étapes qui peut être analysé et compris ?",
-    "shortExplanation": "Le processus de décision désigne, chez Simon, la séquence d'étapes — identification du problème, recherche d'informations, élaboration d'options, choix, évaluation — par laquelle une organisation ou un individu aboutit à une décision.",
+    "shortExplanation": "Le processus de décision désigne, chez Simon, la séquence d'étapes (identification du problème, recherche d'informations, élaboration d'options, choix, évaluation) par laquelle une organisation ou un individu aboutit à une décision.",
     "authors": [
       "simon"
     ],
@@ -299,7 +299,7 @@ export const fixtureConcepts: Concept[] = [
     "slug": "exploration-organisationnelle",
     "title": "Exploration organisationnelle",
     "hookQuestion": "Une organisation qui consacre trop peu de temps à chercher de nouvelles idées prend-elle un risque aussi grand que celle qui n'en applique jamais aucune ?",
-    "shortExplanation": "L'exploration, chez March, désigne l'ensemble des activités organisationnelles orientées vers la recherche, l'expérimentation et l'innovation — découvrir de nouvelles possibilités plutôt que d'exploiter celles déjà connues.",
+    "shortExplanation": "L'exploration, chez March, désigne l'ensemble des activités organisationnelles orientées vers la recherche, l'expérimentation et l'innovation : découvrir de nouvelles possibilités plutôt que d'exploiter celles déjà connues.",
     "authors": [
       "march"
     ],
@@ -418,7 +418,7 @@ export const fixtureConcepts: Concept[] = [
     "slug": "systeme-d-action-concret",
     "title": "Système d'action concret",
     "hookQuestion": "Comment expliquer que deux entreprises dotées du même organigramme officiel puissent fonctionner de façon très différente au quotidien ?",
-    "shortExplanation": "Le système d'action concret est, chez Crozier et Friedberg, l'ensemble des relations effectives et souvent informelles par lesquelles des acteurs interdépendants régulent concrètement leur coopération, au-delà — et parfois en décalage — de l'organisation formelle.",
+    "shortExplanation": "Le système d'action concret est, chez Crozier et Friedberg, l'ensemble des relations effectives et souvent informelles par lesquelles des acteurs interdépendants régulent concrètement leur coopération, au-delà (et parfois en décalage) de l'organisation formelle.",
     "authors": [
       "friedberg"
     ],

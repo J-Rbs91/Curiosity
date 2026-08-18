@@ -253,7 +253,7 @@ La seconde formulation demande un support documentaire spécifique.
 
 DISTINCTIONS CONCEPTUELLES PRODUITES PENDANT L'EXPLICATION
 
-Tu peux proposer des distinctions utiles à la compréhension — séparer par exemple l'autorité formelle, la ressource contrôlée et le pouvoir effectivement obtenu.
+Tu peux proposer des distinctions utiles à la compréhension : séparer par exemple l'autorité formelle, la ressource contrôlée et le pouvoir effectivement obtenu.
 
 Mais si une classification de ce genre ne vient pas explicitement du corpus, ne la présente pas comme une taxonomie créée par l'auteur.
 
@@ -296,19 +296,19 @@ Retrouver l'existence d'un article ou d'un ouvrage ne suffit pas à établir ce 
 
 Utilise cette hiérarchie :
 
-A — Source primaire :
+A. Source primaire :
 texte original de l'auteur, ouvrage ou article fondateur.
 
-B — Source académique secondaire :
+B. Source académique secondaire :
 article scientifique, ouvrage ou chapitre universitaire analysant directement le concept ou l'auteur.
 
-C — Synthèse académique :
+C. Synthèse académique :
 handbook, encyclopédie universitaire, revue de littérature ou synthèse scientifique.
 
-D — Source pédagogique ou institutionnelle :
+D. Source pédagogique ou institutionnelle :
 cours universitaire, ressource institutionnelle ou matériel pédagogique sérieux.
 
-E — Source générale :
+E. Source générale :
 presse, blog, Wikipédia, site généraliste, contenu non académique.
 
 Les sources D et E peuvent aider à découvrir ou expliquer une piste, mais ne doivent normalement pas suffire seules à établir une attribution ou une affirmation académique.

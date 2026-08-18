@@ -111,6 +111,24 @@ par un script à partir de champs séparés. La composition automatique prenait 
 première source primaire et a rendu « Concept coécrit par Michel Crozier et Erhard Friedberg
 (1960) » — pour une cosignature attestée en 1979.
 
+### Ce que le lecteur ne voit jamais : le tiret cadratin
+
+Le tiret cadratin (`—`, U+2014) est **interdit sur toute carte affichée**. Un lecteur de
+l'application ne doit jamais le rencontrer, dans aucun champ que la carte projette : `title`,
+`hook`, `summary`, `attribution_note`, `theme_labels`, `authors[].name`, `quotation.text`,
+`quotation.reference`, `quotation.locator`, `sources[].label`.
+
+Ce n'est pas une préférence typographique de cette documentation, qui l'emploie elle-même
+sans retenue : c'est une règle de ce que l'application montre. Une incise se rend avec une
+virgule, des parenthèses ou un deux-points ; la prose du corpus n'a jamais besoin du tiret
+cadratin pour dire ce qu'elle a à dire.
+
+La règle ne se tient pas à la relecture : `checkForbiddenCharacters` dans
+`scripts/corpus/lib/validate.mjs` la contrôle sur les mêmes champs, et `npm run
+corpus:validate` refuse de valider une fiche qui en porte un. C'est la même discipline que
+pour les longueurs de carte : ce qui protège le lecteur ne peut pas dépendre de la vigilance
+de qui écrit.
+
 ---
 
 ## 3. La hiérarchie des sources

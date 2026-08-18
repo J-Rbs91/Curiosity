@@ -71,6 +71,10 @@ la composition automatique a un jour daté de 1960 une coécriture attestée en 
 qu'elle prenait l'année de la première source primaire. Si tu écris un millésime, c'est que
 tu l'as vérifié sur la signature.
 
+Cette note atterrit telle quelle sur la carte (`attribution_note`) : **aucun tiret cadratin
+(`—`)**, une incise se rend avec une virgule, des parenthèses ou un deux-points. Voir
+docs/corpus-workflow.md, « Ce que le lecteur ne voit jamais ».
+
 ## Ce que tu ne fais pas
 
 Le mécanisme détaillé, les conditions d'apparition, les contresens répertoriés, les notes de

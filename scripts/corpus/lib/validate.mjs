@@ -32,6 +32,39 @@ export const STATUS_BY_DIR = {
 const isFilled = (v) => typeof v === "string" && v.trim().length > 0;
 const asArray = (v) => (Array.isArray(v) ? v : []);
 
+const EM_DASH = "—";
+
+/**
+ * Le tiret cadratin (—) est interdit sur toute carte affichée : voir
+ * docs/corpus-workflow.md, « Ce que le lecteur ne voit jamais ». Il ne s'agit pas d'une
+ * préférence de style — un lecteur ne doit jamais le rencontrer dans l'application, et la
+ * seule façon de le garantir est de le refuser ici plutôt que de compter sur la relecture.
+ */
+function checkForbiddenCharacters(record, errors, warnings) {
+  const at = record?.status === "VALIDATED" ? errors : warnings;
+  const flag = (field, value) => {
+    if (isFilled(value) && value.includes(EM_DASH))
+      at.push(`${field} contient un tiret cadratin (—), interdit sur une carte affichée`);
+  };
+
+  flag("title", record?.title);
+  flag("hook", record?.hook);
+  flag("summary", record?.summary);
+  flag("attribution_note", record?.attribution_note);
+
+  for (const [t, label] of Object.entries(record?.theme_labels ?? {})) flag(`theme_labels.${t}`, label);
+  asArray(record?.authors).forEach((a, i) => flag(`authors[${i}].name`, a?.name));
+
+  const q = record?.quotation;
+  if (q) {
+    flag("quotation.text", q.text);
+    flag("quotation.reference", q.reference);
+    flag("quotation.locator", q.locator);
+  }
+
+  asArray(record?.sources).forEach((s, i) => flag(`sources[${i}].label`, s?.label));
+}
+
 /**
  * Longueurs maximales des champs affichés.
  *
@@ -268,6 +301,7 @@ export function validateRecord(
 
   checkQuotation(record ?? {}, errors, warnings);
   checkSources(record ?? {}, errors, warnings);
+  checkForbiddenCharacters(record ?? {}, errors, warnings);
 
   /*
    * Les longueurs se signalent à tous les stades et bloquent à la publication : une fiche

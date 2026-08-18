@@ -24,7 +24,7 @@ export const metadata: Metadata = {
    * chaque domaine instruit. Ce que l'application fait — faire découvrir un concept par
    * jour — ne change pas, lui, quand le corpus s'étend.
    */
-  title: "Curiosity — Comprendre le travail et les organisations",
+  title: "Curiosity : comprendre le travail et les organisations",
   description:
     "Un concept à chaque ouverture, tiré de onze domaines regroupés en quatre familles : comprendre les humains et les organisations, le travail réel, la production et les systèmes, le pilotage.",
   /*
