@@ -50,6 +50,14 @@ mêmes strates par accès HTTP direct :
   `WebFetch` **passe** et rend le texte intégral : c'est par lui que chaque citation
   ci-dessous a été relevée. Le lecteur primaire devra donc utiliser `WebFetch` (ou un
   navigateur), pas `curl`, sur cette plateforme.
+- **Correction apportée par la lecture primaire, le 18 août 2026** : le blocage Anubis
+  d'OpenEdition ne porte que sur la page HTML de l'article. La route
+  `journals.openedition.org/<revue>/pdf/<id>` répond en `curl` — HTTP 200,
+  `content-type: application/pdf`, couche texte exploitable (constaté sur `pistes/pdf/3328`,
+  427 845 octets, 28 pages). Deux lecteurs l'ont établie indépendamment, et l'un d'eux a pu
+  contrôler sa citation sur deux rendus indépendants du même texte grâce à elle. C'est la
+  voie à prendre pour tout contrôle qui doit porter sur le texte de l'éditeur.
+
 - **OAI-PMH d'OpenEdition** (`oai.openedition.org`) — fonctionnel en `GetRecord`, mais
   **étranglé en `ListRecords`** : trois tentatives de moisson complète, dont deux avec
   temporisation et reprises, se sont arrêtées sur `Connection reset by peer` après 100 à 280
