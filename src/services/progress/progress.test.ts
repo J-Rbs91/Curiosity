@@ -42,10 +42,10 @@ describe("ProgressService", () => {
   it("oublie tout à la demande", () => {
     const service = new ProgressService(new InMemoryProgressRepository());
     service.recordSeen("bureaucratie");
-    service.markFirstLaunchCompleted();
+    service.setDaily("2026-08-18", "bureaucratie");
     service.reset();
 
     expect(service.seenIds().size).toBe(0);
-    expect(service.getState().settings.firstLaunchCompleted).toBe(false);
+    expect(service.getState().daily).toBeUndefined();
   });
 });

@@ -231,14 +231,6 @@ export interface SeenConcept {
 }
 
 /**
- * L'application ne propose aucun réglage de niveau ni de durée : la difficulté d'un
- * concept se lit dans son texte, pas dans une préférence.
- */
-export interface UserSettings {
-  firstLaunchCompleted: boolean;
-}
-
-/**
  * La carte retenue pour aujourd'hui.
  *
  * « Chaque jour une carte » veut dire que le choix se fait une fois par jour, pas à chaque
@@ -251,9 +243,16 @@ export interface DailyPick {
   conceptId: ConceptId;
 }
 
+/**
+ * L'application ne propose aucun réglage, et n'en retient donc aucun : la difficulté d'un
+ * concept se lit dans son texte, pas dans une préférence.
+ *
+ * Elle ne retient pas davantage si le premier lancement a eu lieu. L'accueil n'est plus un
+ * écran de première fois mais le seuil de chaque ouverture — voir `src/app/page.tsx` — et
+ * un état qui ne commande plus rien est pire qu'absent : on le croit encore en usage.
+ */
 export interface ProgressState {
   version: number;
   concepts: Record<ConceptId, SeenConcept>;
-  settings: UserSettings;
   daily?: DailyPick;
 }
