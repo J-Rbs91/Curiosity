@@ -1,6 +1,7 @@
 import { Suspense, type ReactNode } from "react";
 import { BottomNav } from "@/components/ui/BottomNav";
 import { TrailKeeper } from "@/components/navigation/TrailKeeper";
+import { EntryPoint } from "@/components/navigation/EntryPoint";
 
 /**
  * La coque : le contenu, puis la barre de navigation.
@@ -29,6 +30,13 @@ export function AppShell({ children }: { children: ReactNode }) {
       <Suspense fallback={null}>
         <TrailKeeper />
       </Suspense>
+      {/*
+       * Et juste après elle, ce qui décide du point d'entrée quand
+       * l'application est rouverte plutôt que démarrée. L'ordre compte :
+       * `EntryPoint` remonte à la racine en dépilant, donc il lit la trace que
+       * `TrailKeeper` vient de réconcilier.
+       */}
+      <EntryPoint />
       <div
         className="flex-1"
         style={{ paddingBottom: "calc(var(--nav-height) + env(safe-area-inset-bottom))" }}

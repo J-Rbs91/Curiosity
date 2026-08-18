@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { taxonomy } from "@/content";
 import { getProgressService } from "@/services/progress";
 import { dayKey, pickDailyConcept } from "@/domain/concepts/next-card";
+import { onReentry } from "@/lib/app-entry";
 import type { Concept } from "@/types";
 import { Screen } from "@/components/motion/Screen";
 import { Button } from "@/components/ui/Button";
@@ -29,37 +30,46 @@ export default function TodayPage() {
   const [concept, setConcept] = useState<Concept | undefined>(undefined);
 
   useEffect(() => {
-    const service = getProgressService();
-    const state = service.getState();
-    const seen = new Map(
-      Object.values(state.concepts).map((c) => [c.conceptId, c.lastSeenAt] as const)
-    );
-    const today = dayKey();
+    const tirer = () => {
+      const service = getProgressService();
+      const state = service.getState();
+      const seen = new Map(
+        Object.values(state.concepts).map((c) => [c.conceptId, c.lastSeenAt] as const)
+      );
+      const today = dayKey();
+      /*
+       * Le tirage porte sur tout le corpus, et il le dit — plutôt que de recevoir la liste des
+       * cartes sans qu'on sache de quel périmètre elle vient. Le jour où l'on voudra une carte
+       * d'une famille ou d'un domaine, c'est ce périmètre qui change, et rien d'autre : le
+       * tirage lui-même ne connaît ni domaine ni discipline.
+       */
+      const next = pickDailyConcept(
+        taxonomy.conceptsIn({ kind: "all" }),
+        seen,
+        today,
+        state.daily
+      );
+      // Lecture localStorage et tirage de la carte : impossibles pendant le rendu serveur.
+      setFirstLaunch(!state.settings.firstLaunchCompleted);
+      setConcept(next);
+      setMounted(true);
+      if (next) {
+        // Le tirage du jour est arrêté ici et pas ailleurs : rouvrir l'application dans
+        // l'heure doit redonner la même carte, y compris après un changement de corpus.
+        if (state.daily?.day !== today || state.daily.conceptId !== next.id)
+          service.setDaily(today, next.id);
+        service.recordSeen(next.id);
+      }
+    };
+
+    tirer();
     /*
-     * Le tirage porte sur tout le corpus, et il le dit — plutôt que de recevoir la liste des
-     * cartes sans qu'on sache de quel périmètre elle vient. Le jour où l'on voudra une carte
-     * d'une famille ou d'un domaine, c'est ce périmètre qui change, et rien d'autre : le
-     * tirage lui-même ne connaît ni domaine ni discipline.
+     * Et à chaque réouverture, pas seulement au montage. Une application installée est mise
+     * en arrière-plan bien plus souvent qu'elle n'est fermée : quand la réouverture trouve
+     * cet écran déjà affiché, rien ne se remonte, et la carte de la veille resterait à
+     * l'écran alors que le jour a changé. Le critère de réouverture est dans `app-entry.ts`.
      */
-    const next = pickDailyConcept(
-      taxonomy.conceptsIn({ kind: "all" }),
-      seen,
-      today,
-      state.daily
-    );
-    // Lecture localStorage et tirage de la carte : impossibles pendant le rendu serveur,
-    // faits une seule fois par ouverture de l'écran.
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setFirstLaunch(!state.settings.firstLaunchCompleted);
-    setConcept(next);
-    setMounted(true);
-    if (next) {
-      // Le tirage du jour est arrêté ici et pas ailleurs : rouvrir l'application dans
-      // l'heure doit redonner la même carte, y compris après un changement de corpus.
-      if (state.daily?.day !== today || state.daily.conceptId !== next.id)
-        service.setDaily(today, next.id);
-      service.recordSeen(next.id);
-    }
+    return onReentry(tirer);
   }, []);
 
   /*
