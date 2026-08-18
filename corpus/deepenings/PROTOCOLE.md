@@ -170,7 +170,14 @@ Contraintes de fabrication :
   courtes reprises dans le corps ; l'apostrophe typographique `’` partout.
 - La citation de la carte peut être reprise dans le texte — c'est même souhaitable, c'est le
   seul endroit où l'auteur parle. Reprise **mot pour mot**, jamais paraphrasée entre
-  guillemets.
+  guillemets. Tu peux citer n'importe quel passage que la fiche porte : la citation de la
+  carte, mais aussi les verbatim que les `notes` et le bloc `review` ont relevés, qui sont
+  souvent les plus utiles. Rien d'autre.
+- **Le contrôle vérifie les citations.** `npm run corpus:deepen` compare chaque passage entre
+  guillemets de cinq mots ou plus à l'enregistrement de la carte, et signale ce qu'il n'y
+  trouve pas. Un mot mis en relief entre guillemets ne déclenche rien ; une phrase attribuée à
+  un auteur et absente du dossier apparaît en clair. Si le contrôle signale une de tes
+  citations, elle est fausse, ou tu l'as retouchée : reviens au dossier et recopie.
 - Aucun nom de modèle, d'application ou d'éditeur d'IA n'apparaît dans le texte.
 - Un titre de section fait moins de 60 caractères.
 

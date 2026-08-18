@@ -1,6 +1,11 @@
 import { describe, expect, it } from "vitest";
 
-import { countWords, projectDeepening, validateDeepening } from "./deepenings.mjs";
+import {
+  countWords,
+  projectDeepening,
+  unsourcedQuotations,
+  validateDeepening,
+} from "./deepenings.mjs";
 
 /**
  * Ce que ce contrôle peut attraper est mécanique, et ces tests ne prétendent pas davantage :
@@ -164,6 +169,67 @@ describe("validateDeepening — volume", () => {
     const fiche = approfondissement();
     fiche.sections = fiche.sections.slice(0, 2);
     expect(validateDeepening(fiche, { conceptIds: CARTES }).join()).toMatch(/3 sections au moins/);
+  });
+});
+
+describe("unsourcedQuotations", () => {
+  const fiche = JSON.stringify({
+    quotation: { text: "la rationalité est limitée quand elle reste en deçà de l'omniscience." },
+    notes: ["Le contrôleur relève « Two concepts are central to the characterization », p. 356."],
+  });
+
+  /** Un approfondissement dont le premier paragraphe porte la citation à contrôler. */
+  function avecCitation(citation) {
+    return approfondissement({ lead: [`${paragraphe(95)} On lit « ${citation} ».`] });
+  }
+
+  it("ne signale rien quand la citation est dans la fiche", () => {
+    expect(
+      unsourcedQuotations(
+        avecCitation("la rationalité est limitée quand elle reste en deçà de l’omniscience"),
+        fiche
+      )
+    ).toEqual([]);
+  });
+
+  it("signale une phrase que la fiche ne porte pas", () => {
+    const absentes = unsourcedQuotations(
+      avecCitation("l’organisation est un système de contraintes que nul n’a voulu"),
+      fiche
+    );
+    expect(absentes).toHaveLength(1);
+  });
+
+  it("ne bute ni sur la typographie ni sur la ponctuation terminale", () => {
+    // Apostrophe typographique contre droite, et un point final ajouté par la phrase qui
+    // intègre la citation : deux différences qui ne changent rien à ce qui est cité.
+    expect(
+      unsourcedQuotations(
+        avecCitation("Two concepts are central to the characterization."),
+        fiche
+      )
+    ).toEqual([]);
+  });
+
+  it("laisse passer un mot mis en relief", () => {
+    // Sous cinq mots, les guillemets servent presque toujours à souligner, pas à citer :
+    // signaler ces cas noierait le seul qui compte.
+    expect(unsourcedQuotations(avecCitation("satisfaisant"), fiche)).toEqual([]);
+  });
+
+  it("vérifie chaque fragment d’une citation coupée", () => {
+    expect(
+      unsourcedQuotations(
+        avecCitation("la rationalité est limitée […] en deçà de l’omniscience"),
+        fiche
+      )
+    ).toEqual([]);
+    expect(
+      unsourcedQuotations(
+        avecCitation("la rationalité est limitée […] dès lors que le calcul devient impossible"),
+        fiche
+      )
+    ).toHaveLength(1);
   });
 });
 

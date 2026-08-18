@@ -26,7 +26,12 @@ import { readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 import { CONTENT_DIR, CORPUS_DIR, loadRecords, relative } from "./lib/io.mjs";
-import { countWords, projectDeepening, validateDeepening } from "./lib/deepenings.mjs";
+import {
+  countWords,
+  projectDeepening,
+  unsourcedQuotations,
+  validateDeepening,
+} from "./lib/deepenings.mjs";
 
 const DEEPENINGS_DIR = path.join(CORPUS_DIR, "deepenings");
 const GENERATED = path.join(CONTENT_DIR, "generated", "deepenings.generated.ts");
@@ -55,11 +60,19 @@ if (only && !checkOnly) {
   process.exit(1);
 }
 
-const validatedIds = new Set(
-  (await loadRecords())
-    .filter(({ dir, record }) => dir === "validated" && typeof record?.id === "string")
-    .map(({ record }) => record.id)
+const records = (await loadRecords()).filter(
+  ({ dir, record }) => dir === "validated" && typeof record?.id === "string"
 );
+const validatedIds = new Set(records.map(({ record }) => record.id));
+
+/*
+ * L'enregistrement sérialisé, tel quel : c'est contre lui que se vérifient les citations du
+ * texte. Le comparer à l'objet plutôt qu'au fichier serait plus propre en apparence, mais
+ * une citation peut se trouver n'importe où dans la fiche — dans les notes de rédaction,
+ * dans le bloc du contrôleur, dans le libellé d'une source —, et énumérer ces endroits
+ * reviendrait à décider d'avance où un rédacteur a le droit de citer.
+ */
+const dossiers = new Map(records.map(({ record }) => [record.id, JSON.stringify(record)]));
 
 let entries = [];
 try {
@@ -123,6 +136,27 @@ if (only && entries.length === 0) {
 const projected = deepenings
   .map(projectDeepening)
   .sort((a, b) => a.conceptId.localeCompare(b.conceptId));
+
+/*
+ * Les citations qui ne se retrouvent pas dans la fiche. Averti, jamais bloquant : les
+ * guillemets français servent aussi à mettre un mot en relief, et un contrôle bloquant sur
+ * cette ambiguïté ferait retirer les guillemets plutôt que vérifier les citations.
+ */
+const suspectes = deepenings
+  .map((d) => ({ id: d.conceptId, citations: unsourcedQuotations(d, dossiers.get(d.conceptId)) }))
+  .filter(({ citations }) => citations.length > 0);
+
+if (suspectes.length > 0) {
+  console.warn("\nCitations absentes de la fiche, à relire :\n");
+  for (const { id, citations } of suspectes) {
+    console.warn(`corpus/deepenings/${id}.json`);
+    for (const citation of citations) console.warn(`  ? « ${citation} »`);
+  }
+  console.warn(
+    "\nUne mise en relief entre guillemets est normale. Une phrase attribuée à un auteur " +
+      "et absente du dossier ne l'est pas.\n"
+  );
+}
 
 if (checkOnly) {
   const total = deepenings.reduce((n, d) => n + countWords(d), 0);
