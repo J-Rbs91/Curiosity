@@ -50,13 +50,20 @@ mêmes strates par accès HTTP direct :
   `WebFetch` **passe** et rend le texte intégral : c'est par lui que chaque citation
   ci-dessous a été relevée. Le lecteur primaire devra donc utiliser `WebFetch` (ou un
   navigateur), pas `curl`, sur cette plateforme.
-- **Correction apportée par la lecture primaire, le 18 août 2026** : le blocage Anubis
-  d'OpenEdition ne porte que sur la page HTML de l'article. La route
-  `journals.openedition.org/<revue>/pdf/<id>` répond en `curl` — HTTP 200,
-  `content-type: application/pdf`, couche texte exploitable (constaté sur `pistes/pdf/3328`,
-  427 845 octets, 28 pages). Deux lecteurs l'ont établie indépendamment, et l'un d'eux a pu
-  contrôler sa citation sur deux rendus indépendants du même texte grâce à elle. C'est la
-  voie à prendre pour tout contrôle qui doit porter sur le texte de l'éditeur.
+- **Correction apportée par la lecture primaire, le 18 août 2026 — et elle est plus nuancée
+  que « ça passe » ou « ça ne passe pas ».** Le blocage Anubis d'OpenEdition **n'est pas
+  déterministe** : sur les quatre lecteurs qui ont eu à ouvrir un article de ces revues,
+  deux ont obtenu le PDF de l'éditeur en `curl` (`pistes/pdf/3328` : HTTP 200,
+  `application/pdf`, 427 845 octets, 28 pages, couche texte propre) là où la page HTML
+  répondait par le défi ; un troisième a obtenu l'inverse, HTML en HTTP 200 (192 113 octets)
+  et route `/pdf/` renvoyant la page de défi de 5 197 octets ; un quatrième n'a eu ni l'un
+  ni l'autre et a lu par `WebFetch`.
+
+  Conclusion pour la suite de la chaîne : **essayer les trois voies** — `curl` sur
+  `/<revue>/<id>`, `curl` sur `/<revue>/pdf/<id>`, puis `WebFetch` — et écrire dans le
+  dossier celle qui a effectivement répondu. Un échec sur l'une ne dit rien de l'autre, et
+  ne dit rien non plus du texte. Deux lecteurs ont ainsi pu contrôler leur citation sur deux
+  rendus indépendants du même texte, ce qui est l'état le plus sûr que ce lot ait atteint.
 
 - **OAI-PMH d'OpenEdition** (`oai.openedition.org`) — fonctionnel en `GetRecord`, mais
   **étranglé en `ListRecords`** : trois tentatives de moisson complète, dont deux avec
