@@ -18,9 +18,12 @@ import { ScreenSkeleton } from "@/components/ui/ScreenSkeleton";
  * La hauteur d'un écran, barre de navigation déduite.
  *
  * `AppShell` réserve déjà la hauteur de la barre en remplissage bas : un enfant en `100svh`
- * produit donc exactement un écran de défilement — le seul que cette page ne doit jamais
- * avoir. Une hauteur fixe, et non un minimum : si le contenu n'y tient pas, c'est un défaut
- * à corriger dans la fiche, pas un défilement à offrir.
+ * occupe donc exactement un écran. C'est un plancher, pas une hauteur fixe : `CARD_SCALE`
+ * garde la carte courante compacte, mais rien ne garantit qu'une carte tienne toujours sans
+ * défiler — et la forcer à tenir en rétrécissant encore le texte coûterait plus cher que le
+ * défilement qu'on lui refuserait. Le plancher fait que la carte reste centrée quand elle
+ * tient, et que la page défile plutôt que de perdre silencieusement son bas quand elle ne
+ * tient pas.
  */
 const SCREEN_HEIGHT = "calc(100svh - var(--nav-height) - env(safe-area-inset-bottom))";
 
@@ -101,7 +104,7 @@ export default function TodayPage() {
       <Screen>
         <div
           className="stagger mx-auto flex max-w-md flex-col justify-center gap-8 px-6"
-          style={{ height: SCREEN_HEIGHT }}
+          style={{ minHeight: SCREEN_HEIGHT }}
         >
           <h1 className="font-serif-display text-2xl font-semibold leading-tight text-ink">
             Le corpus est en cours de constitution.
@@ -133,7 +136,7 @@ export default function TodayPage() {
       <Screen>
         <div
           className="stagger mx-auto flex max-w-md flex-col justify-center gap-10 px-6"
-          style={{ height: SCREEN_HEIGHT }}
+          style={{ minHeight: SCREEN_HEIGHT }}
         >
           {/*
            * Le seul endroit de l'application où la marque se montre, et le seul où son regard
@@ -165,13 +168,13 @@ export default function TodayPage() {
   return (
     <Screen>
       {/*
-       * Le titre, l'accroche, le résumé et la citation sont plafonnés en longueur par le
-       * validateur du corpus (`CARD_LIMITS`), sur des valeurs mesurées ici même : la carte
-       * est rendue tous champs au maximum, et on compare sa hauteur à la place disponible.
+       * Le titre, l'accroche, le résumé et la citation restent plafonnés en longueur par le
+       * validateur du corpus : la carte reste courte par construction, et non parce que
+       * l'écran refuserait de défiler pour la montrer en entier.
        */}
       <div
         className="mx-auto flex max-w-md flex-col justify-center px-6 py-6"
-        style={{ height: SCREEN_HEIGHT }}
+        style={{ minHeight: SCREEN_HEIGHT }}
       >
         <ConceptCard concept={concept} />
       </div>
@@ -201,9 +204,11 @@ export default function TodayPage() {
  * **Le plancher, lui, n'a presque pas bougé, et c'est mesuré.** Sur un écran de 320 × 568,
  * la plus grande base à laquelle la carte tient encore sans défiler est de 13 px : c'est
  * elle qui commande le plancher, pas le confort de lecture. Un plancher plus généreux
- * casserait la contrainte qui commande tout le reste — la carte rétrécit, elle ne défile
- * pas — et il l'avait cassée : la première version de ce réglage faisait déborder cet
- * écran-là de 168 px.
+ * ferait défiler la carte sur ce petit écran plus souvent qu'il ne le faudrait — et il
+ * l'avait fait : la première version de ce réglage faisait déborder cet écran-là de 168 px.
+ * Le défilement de page reste le filet pour les cartes que ce plancher ne suffit pas à
+ * caler (voir `SCREEN_HEIGHT`) : la carte n'a plus à rétrécir jusqu'à l'illisible pour
+ * tenir coûte que coûte.
  *
  * | Écran | Base rendue | Base maximale qui tient |
  * |---|---|---|
@@ -241,8 +246,14 @@ function ConceptCard({ concept }: { concept: Concept }) {
 
   return (
     <div
-      className="stagger flex max-h-full min-h-0 flex-col gap-[1.6em]"
-      style={{ fontSize: CARD_SCALE }}
+      className="stagger flex min-h-0 flex-col gap-[1.6em]"
+      /*
+       * Le plafond de hauteur ne vaut que pour la vue des sources : c'est lui qui force le
+       * défilement à rester interne à cette vue (voir plus bas). Sur la face de la carte, il
+       * n'y en a pas — si le contenu dépasse un écran, c'est la page qui défile plutôt que le
+       * bas de la carte qui devient inaccessible.
+       */
+      style={{ fontSize: CARD_SCALE, maxHeight: showSources ? SCREEN_HEIGHT : undefined }}
     >
       <div className="flex flex-col gap-[0.6em]">
         {/* Rendu sous condition, et non laissé vide : une ligne absente ne doit pas laisser
