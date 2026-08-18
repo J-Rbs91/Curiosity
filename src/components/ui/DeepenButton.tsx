@@ -1,22 +1,23 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { buildAISharePayload } from "@/domain/concepts/ai-handoff";
 import { taxonomy } from "@/content";
 import { absoluteUrl } from "@/lib/base-path";
 import { Button } from "@/components/ui/Button";
+import { DeepenSheet } from "@/components/ui/DeepenSheet";
 import type { Concept } from "@/types";
 
-type Feedback = "idle" | "copied" | "failed";
-
-const FEEDBACK_MS = 3000;
+interface Handoff {
+  text: string;
+  copied: boolean;
+}
 
 /**
  * « Approfondir » — l'unique action de la carte.
  *
- * Le nom dit ce que le lecteur veut faire ; le partage n'est que le moyen d'y arriver.
- * Appuyer propose d'envoyer le concept à une application d'IA installée sur l'appareil,
- * qui prend le relais de l'explication : l'application ne produit rien au-delà de la carte.
+ * Le nom dit ce que le lecteur veut faire : comprendre le concept avec l'IA de son choix,
+ * qui prend le relais de l'explication. L'application ne produit rien au-delà de la carte.
  *
  * Ce qui part n'est pas la carte, mais un dossier complet — instructions pédagogiques et
  * documentaires, carte, corpus de sources, lien de retour — assemblé par
@@ -24,30 +25,27 @@ const FEEDBACK_MS = 3000;
  * l'écran ne sait pas (la place de la carte dans la taxonomie, l'adresse sous laquelle
  * l'application est servie) et transmet le reste.
  *
- * Aucune application n'est nommée ni détectée. Le partage passe par la feuille de partage
- * du système, qui liste déjà les applications capables de recevoir du texte : c'est le
- * système qui sait ce qui est installé, pas nous. Une liste maintenue à la main serait
- * fausse le jour de sa première mise en ligne.
+ * **Pourquoi le presse-papiers plutôt que la feuille de partage du système.** L'action
+ * passait auparavant par `navigator.share`, qui rend la main au système. Or la feuille
+ * d'Android classe ses cibles par usage : elle proposait Gmail, WhatsApp et un réseau social,
+ * et rangeait les applications d'IA derrière « Plus ». Le bouton annonçait une intention et
+ * ouvrait un écran qui en proposait une autre. Aucune API ne permet de filtrer cette feuille ;
+ * la seule sortie était de ne plus commencer par elle. Le dossier va donc au presse-papiers —
+ * qui transporte 22 000 caractères sans troncature, et se comporte pareil sur un téléphone et
+ * sur un navigateur de bureau —, et `DeepenSheet` propose ensuite où le coller. La feuille du
+ * système reste accessible depuis cette feuille, pour ce que la liste ne couvre pas.
  *
- * Là où le partage natif n'existe pas — un navigateur de bureau —, le prompt part dans le
- * presse-papiers, et on le dit.
+ * La copie a lieu ici, dans le geste qui l'a demandée : Safari refuse une écriture dans le
+ * presse-papiers qui ne descend pas directement d'une interaction.
  */
 export function DeepenButton({ concept }: { concept: Concept }) {
-  const [feedback, setFeedback] = useState<Feedback>("idle");
-  const timer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+  const [handoff, setHandoff] = useState<Handoff | null>(null);
+  const trigger = useRef<HTMLButtonElement>(null);
 
-  useEffect(() => () => clearTimeout(timer.current), []);
-
-  function flash(next: Feedback) {
-    setFeedback(next);
-    clearTimeout(timer.current);
-    timer.current = setTimeout(() => setFeedback("idle"), FEEDBACK_MS);
-  }
-
-  async function share() {
-    // Le domaine est résolu ici plutôt que passé par l'appelant : les deux écrans qui
-    // portent ce bouton n'ont pas à savoir dans quelle discipline se trouve la carte, ni
-    // sous quelle adresse l'application est servie.
+  async function deepen() {
+    // Le domaine est résolu ici plutôt que passé par l'appelant : les deux écrans qui portent
+    // ce bouton n'ont pas à savoir dans quelle discipline se trouve la carte, ni sous quelle
+    // adresse l'application est servie.
     const domain = taxonomy.domainOfConcept(concept);
     const text = buildAISharePayload({
       concept,
@@ -56,38 +54,35 @@ export function DeepenButton({ concept }: { concept: Concept }) {
       url: absoluteUrl(`/explore/concept/?c=${encodeURIComponent(concept.slug)}`),
     });
 
-    if (typeof navigator !== "undefined" && navigator.share) {
-      try {
-        // Volontairement `text` seul : plusieurs applications préfèrent le titre au corps
-        // quand les deux sont fournis, et n'emporteraient alors que le nom du concept au
-        // lieu de la demande.
-        await navigator.share({ text });
-        return;
-      } catch (error) {
-        // Un partage annulé par l'utilisateur n'est pas un échec : ne rien dire.
-        if (error instanceof DOMException && error.name === "AbortError") return;
-      }
-    }
-
+    let copied = false;
     try {
       await navigator.clipboard.writeText(text);
-      flash("copied");
+      copied = true;
     } catch {
-      flash("failed");
+      // Presse-papiers refusé ou indisponible : la feuille s'ouvre quand même et le dit,
+      // avec de quoi réessayer ou passer par le partage du système.
     }
+
+    setHandoff({ text, copied });
   }
 
   return (
-    <div className="relative inline-flex w-fit">
-      <Button onClick={share}>Approfondir</Button>
-      {feedback !== "idle" && (
-        <p
-          role="status"
-          className="enter-rise pointer-events-none absolute left-0 bottom-full mb-2 w-max rounded-full bg-paper-raised px-3 py-1.5 text-xs text-ink-soft"
-        >
-          {feedback === "copied" ? "Prompt copié" : "Copie impossible"}
-        </p>
+    <>
+      <Button ref={trigger} onClick={deepen}>
+        Approfondir
+      </Button>
+      {handoff && (
+        <DeepenSheet
+          copied={handoff.copied}
+          text={handoff.text}
+          onClose={() => {
+            setHandoff(null);
+            // Le focus revient d'où il venait : sans cela, il repart en tête de document et
+            // la navigation au clavier recommence l'écran.
+            trigger.current?.focus();
+          }}
+        />
       )}
-    </div>
+    </>
   );
 }

@@ -419,12 +419,32 @@ critère est observable : **au moins deux entrées de liste visibles sans défil
 
 Présent sur l'écran du jour et sur la fiche d'un concept.
 
-**Aucune application d'IA n'est nommée ni détectée.** Le partage passe par la
-feuille de partage du système, qui liste déjà les applications capables de recevoir
-du texte : c'est le système qui sait ce qui est installé, pas nous. Une liste
-maintenue à la main serait fausse le jour de sa première mise en ligne. Là où le
-partage natif n'existe pas — un navigateur de bureau —, le texte part dans le
-presse-papiers, et on le dit.
+**Le dossier passe par le presse-papiers, pas par la feuille de partage.** Le
+bouton a d'abord appelé `navigator.share()`, ce qui rendait la main au système. La
+feuille d'Android classe ses cibles par usage : elle proposait Gmail, WhatsApp et
+un réseau social, et rangeait les applications d'IA derrière « Plus ». Le bouton
+annonçait une intention — comprendre le concept avec une IA — et ouvrait un écran
+qui en proposait une autre : l'envoyer à quelqu'un. Aucune API web ne permet de
+filtrer ni de réordonner cette feuille ; la seule sortie était de ne plus commencer
+par elle.
+
+Un appui copie donc le dossier — 22 000 caractères, que le presse-papiers
+transporte sans troncature et sans différence entre téléphone et bureau — puis
+ouvre une feuille qui dit ce qui vient d'être copié et propose où le coller.
+
+**Les destinations sont nommées, et c'est un coût assumé.** La liste
+(`src/lib/ai-destinations.ts`) est écrite à la main, donc elle vieillira. Elle reste
+courte, ordonnée alphabétiquement — aucun classement par préférence, l'application
+ne recommande pas —, et la feuille du système demeure accessible juste en dessous
+pour tout ce qu'elle ne couvre pas. Rien n'est détecté : savoir ce qui est installé
+est hors de portée d'une page web, et un schéma d'application propriétaire échoue
+en silence quand l'application manque. Ce sont de simples liens https, que le
+système route vers l'application quand elle revendique le domaine, vers le site
+sinon.
+
+Le prompt ne voyage jamais dans l'adresse : 22 000 caractères en paramètre d'URL,
+c'est une troncature silencieuse quelque part sur le chemin — et donc des règles
+documentaires perdues sans que personne ne le voie.
 
 **Ce n'est pas un partage de carte, c'est un passage de relais.** Le message est un
 dossier autonome, qui tient sans aucun contexte préalable : les instructions
@@ -573,6 +593,8 @@ disparaissent, les fondus restent.
 | `src/domain/taxonomy/index.ts` | Rattachement, ordre, périmètres de sélection, état du corpus |
 | `src/domain/concepts/ai-prompt.ts` | Les instructions envoyées aux applications d'IA, et elles seules |
 | `src/domain/concepts/ai-handoff.ts` | L'assemblage du message : instructions, carte, corpus, lien |
+| `src/lib/ai-destinations.ts` | Les applications d'IA proposées, et elles seules |
+| `src/components/ui/DeepenSheet.tsx` | Ce qui suit l'appui : copie faite, où coller, reprises |
 | `src/domain/concepts/sources.ts` | L'ordre de lecture des sources et le nom de leur niveau |
 | `src/components/ui/mark-geometry.mjs` | La géométrie de la marque, et elle seule |
 | `src/components/ui/Mark.tsx`, `Wordmark.tsx` | L'œil et le mot, aux deux tailles optiques |
