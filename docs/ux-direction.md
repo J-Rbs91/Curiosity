@@ -590,6 +590,7 @@ disparaissent, les fondus restent.
 | **Une adresse morte a son écran** | Sans `not-found.tsx`, une fiche au slug périmé servait la page par défaut de Next — en anglais, hors du système visuel, sans un lien. C'est pourtant l'adresse que « Approfondir » diffuse |
 | **Les deux écrans sans pré-rendu ont un squelette** | La carte du jour a besoin du `localStorage`, la fiche de la chaîne de recherche : leur HTML ne contenait que la barre de navigation, et un lien partagé ouvrait sur un écran noir que rien ne distinguait d'une panne |
 | **Rouvrir l'application, c'est entrer par Aujourd'hui** | Une application installée n'est presque jamais fermée : le système la ramène telle qu'elle était, et on rouvrait sur l'écran quitté la veille — la carte du jour n'était jamais atteinte, et le premier appui sur retour rejouait la session précédente. Une absence de plus de trente minutes, ou un changement de jour, ramène à la racine en dépilant. Revenir après dix secondes rend l'écran quitté : c'est le cas le plus fréquent, et le perdre serait pire que le défaut corrigé |
+| **La version publiée entre en service à la réouverture** | Une application installée n'est jamais fermée : le document chargé un jour exécute son code indéfiniment, et une correction publiée n'atteignait personne. On compare l'empreinte de la page d'entrée à celle retenue au chargement, et on ne recharge que si elle a changé — au point d'entrée, jamais pendant une lecture, jamais sur une supposition |
 | **L'accueil est le seuil de chaque ouverture** | Il ne servait qu'au premier lancement, et l'application s'ouvrait donc directement sur la carte — sans le geste qui distingue venir lire de tomber sur un écran. Il ne s'interpose ni au retour de dix secondes, ni quand on vient d'Explorer : sur ces deux cas, ce serait une taxe |
 | **Aucune cible sous 44 px** | Le bouton des sources mesurait 15 px de haut sur un écran de 667 points — sous le seuil de 24 px de WCAG 2.5.8 —, et « Revenir au concept » est le seul moyen de quitter cette vue |
 
@@ -602,6 +603,7 @@ disparaissent, les fondus restent.
 | `src/app/globals.css` | L'échelle de neutres, les rôles, l'échelle typographique, les six rôles d'écart vertical, tous les tokens de mouvement, le focus, les replis en mouvement réduit |
 | `src/lib/navigation-tree.ts` | Les niveaux de l'arbre, l'intention d'une navigation, la trace, la branche de premier niveau |
 | `src/lib/app-entry.ts` | Le critère qui distingue une reprise d'une réouverture, et la mémoire de la sortie |
+| `src/lib/app-version.ts` | L'empreinte de la version servie, et la seule question « faut-il recharger » |
 | `src/components/ui/ListRow.tsx` | La ligne de destination et l'en-tête de liste, pour toute l'application |
 | `src/components/ui/SituatingText.tsx` | L'ordre situation → liste → texte long, sur les trois pages de détail |
 | `src/components/motion/screen-motion.ts` | Les quatre sens de circulation, et eux seuls |
