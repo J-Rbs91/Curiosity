@@ -1,0 +1,87 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "niveaux-de-controle-cognitif",
+  "slug": "niveaux-de-controle-cognitif",
+  "status": "CANDIDATE",
+  "title": "Trois niveaux de comportement",
+  "themes": [
+    "erreur-humaine-et-fiabilite"
+  ],
+  "domain": "human-factors",
+  "theme_labels": {
+    "erreur-humaine-et-fiabilite": "Nommer, classer et quantifier ce qui échappe à l'opérateur"
+  },
+  "authors": [
+    {
+      "name": "Jens Rasmussen",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Le rapport Risø de 1981 est signé de Jens Rasmussen seul, mais il n'y forge pas le modèle : la phrase citée s'ouvre sur « In this model » et renvoie à ses propres travaux de 1976 et 1980. Il n'écrit jamais le sigle SRK, ni « niveaux de contrôle cognitif » : il écrit « trois niveaux de comportement », et l'intitulé sous lequel le modèle circule est postérieur à ce texte, sans qu'on sache de qui il vient. Le même rapport cite James Reason et Donald Norman sur l'erreur, à la même période : ce ne sont pas trois découvertes indépendantes.",
+  "quotation": {
+    "text": "Dans ce modèle, une distinction est établie entre trois niveaux de comportement : performance fondée sur l'habileté, la règle et la connaissance […]",
+    "reference": "Jens Rasmussen, « Human errors. A taxonomy for describing human malfunction in industrial installations », Risø-M No. 2304, Risø National Laboratory, Roskilde, août 1981.",
+    "locator": "p. 11",
+    "language": "fr",
+    "original_text": "In this model, a distinction is drawn between three levels of behaviour: skill-, rule-, and knowledge-based performance, see fig. 3.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction de travail faite dans cette session de lecture, à partir du texte anglais du rapport Risø-M-2304 folio imprimé 11 ; non publiée, non revue par un tiers. La coupe finale signalée par des crochets retire le renvoi « see fig. 3 », conservé dans original_text.",
+      "edition": null
+    }
+  },
+  "hook": "Se tromper en pilotant un geste ou en raisonnant : est-ce la même erreur ?",
+  "summary": "Selon que l'action est une routine, l'application d'une règle apprise ou un plan tiré de connaissances, ce n'est pas le même contrôle qui opère, ni les mêmes erreurs.",
+  "sources": [
+    {
+      "label": "Jens Rasmussen, « Human errors. A taxonomy for describing human malfunction in industrial installations », Risø-M No. 2304, Risø National Laboratory, Roskilde, août 1981, 28 p. Déposé en libre accès par DTU Orbit.",
+      "kind": "primary",
+      "locator": "p. 11",
+      "doi_isbn": "ISBN 87-550-0784-8",
+      "url": "https://backend.orbit.dtu.dk/ws/files/137196604/RM2304.PDF",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Jens Rasmussen, « Human Errors: A Taxonomy for Describing Human Malfunction in Industrial Installations », Journal of Occupational Accidents, 4(2-4), 1982, p. 311-333. Version révisée du rapport, ouverte comme second témoin du verbatim.",
+      "kind": "primary",
+      "locator": "Même phrase, p. 5 du PDF déposé",
+      "doi_isbn": "10.1016/0376-6349(82)90041-4",
+      "url": "https://backend.orbit.dtu.dk/ws/files/158020073/ERTAX1.PDF",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Jens Rasmussen, « Skills, rules, and knowledge; signals, signs, and symbols, and other distinctions in human performance models », IEEE Transactions on Systems, Man, and Cybernetics, SMC-13(3), mai 1983, p. 257-266.",
+      "kind": "primary",
+      "locator": "Notice seule, texte fermé",
+      "doi_isbn": "10.1109/tsmc.1983.6313160",
+      "url": "https://doi.org/10.1109/tsmc.1983.6313160",
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "reviewer": null,
+    "date": null,
+    "attribution": "non-verifiee",
+    "quotation": "non-verifiee",
+    "sources": "non-verifiee",
+    "prose": "non-verifiee",
+    "verdict": "PENDING",
+    "rounds": 0,
+    "notes": []
+  },
+  "dossier": "corpus/evidence/niveaux-de-controle-cognitif/lecture.json",
+  "notes": [
+    "Ce que chaque niveau contrôle, dans les termes du rapport : au niveau de l'habileté, des routines automatisées plus ou moins inconscientes commandées par des schémas mémorisés dans un domaine spatio-temporel, dont les erreurs tiennent à la variabilité de force, d'espace ou de coordination ; au niveau de la règle, des situations familières commandées par des règles mémorisées, dont les erreurs tiennent au mauvais classement d'une situation, à une association fautive ou à un oubli de procédure ; au troisième niveau, des situations uniques et non familières où l'action doit être planifiée à partir d'une analyse et d'une décision fondées sur la connaissance du système.",
+    "Rasmussen pose lui-même une limite à sa taxonomie : le recueil de données et la prédiction par décomposition des tâches ne sont possibles, au niveau de la connaissance, que dans des situations expérimentales très contrôlées, pas en situation réelle.",
+    "Deux compléments du même énoncé, non portés par la carte : un quatrième type d'erreur qui porte sur le choix du niveau lui-même (« errors of discrimination »), et le couplage avec la triade signal, signe, symbole, que l'auteur rapporte lui aussi à son travail antérieur.",
+    "Ce que Rasmussen présente comme l'apport propre du rapport n'est pas le modèle à trois niveaux mais la taxonomie multi-facettes qu'il permet : « it has been stressed several times that the important aspect of the proposed taxonomy is the structure, not the elements used within the various categories » (folio 25).",
+    "La version que tout le monde cite, l'article IEEE de 1983, est fermée et n'a pas été ouverte : rien n'est établi ici de sa formulation, ni du moment où le sigle SRK apparaît sous la plume de Rasmussen. Tout ce qui est affirmé vaut pour le rapport de 1981 et, par contrôle, pour la version de 1982.",
+    "Recherche plein texte sur le fichier de 1981 : aucune occurrence de « SRK », aucune de « cognitive control », aucune de « skill-, rule-, knowledge-based behaviour » sous cette forme. L'expression « taxonomy of cognitive control » se lit en revanche chez Vicente et Rasmussen en 1992, texte qui n'est pas celui-ci.",
+    "Une date à ne pas recopier : le corps du texte écrit « James Reason (1975, 76, 79) », mais la bibliographie du même rapport ne donne que 1975, 1976 et 1977. Le « 79 » est soit une coquille pour 77, soit un renvoi omis ; aucune carte ne doit affirmer un Reason 1979 sur la foi de ce rapport.",
+    "Le rapport cote le texte de Norman de 1979 « CHIP 88 », là où le document lui-même porte « Report No. 7906 ». Les deux cotes n'ont pas été départagées.",
+    "Le PDF déposé par DTU n'est pas un fac-similé : ses pages de corps portent une couche de texte native, ses pages de figures sont des images numérisées et à l'envers. La numérisation porte des corruptions visibles ailleurs dans le texte ; la phrase citée est propre et a été contrôlée sur la version de 1982.",
+    "Le locator « p. 11 » est le folio imprimé. Dans le fichier de DTU Orbit, qui ajoute une page de garde, c'est la page 12 sur 29. La figure 3, qui étiquette les trois niveaux, est au folio 12.",
+    "Réception francophone non instruite : aucune recherche systématique, aucun texte francophone ouvert. La cartographie signale une discussion du modèle par Jean-Michel Hoc et René Amalberti sans qu'un texte ouvert ait été localisé."
+  ]
+}

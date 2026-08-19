@@ -1,0 +1,77 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "retroaction-et-automatisation",
+  "slug": "retroaction-et-automatisation",
+  "status": "CANDIDATE",
+  "title": "La rétroaction manquante",
+  "themes": [
+    "automatisation-et-conception-cognitive"
+  ],
+  "domain": "human-factors",
+  "theme_labels": {
+    "automatisation-et-conception-cognitive": "Ce que la machine retire, ce qu'elle devrait rendre"
+  },
+  "authors": [
+    {
+      "name": "Donald A. Norman",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Le texte est signé de Donald A. Norman seul. Il ne revendique pas le paradoxe de l'automatisation : il attribue l'« ironie » de l'automatisation à Lisanne Bainbridge, qu'il cite par la reprise de 1987, et le mot « overautomation » de son titre n'est rapporté à personne, c'est un reproche reçu qu'il met entre guillemets. Ce qui est de lui est le renversement : la cause n'est ni l'automatisation ni son excès, mais le défaut de rétroaction. Le document lu est le tirage de juillet 1989, dont le titre et le résumé diffèrent de l'article paru en avril 1990 : la citation vaut pour ce tirage.",
+  "quotation": {
+    "text": "[…] le coupable n’est pas l’automatisation, c’est l’absence de rétroaction et d’interaction continues.",
+    "reference": "Donald A. Norman, « The \"Problem\" of Automation: Inappropriate Feedback and Interaction, Not \"Overautomation\" », ICS Report 8904, Institute for Cognitive Science, University of California, San Diego, juillet 1989 : version soumise, déposée sur NASA NTRS sous l'identifiant 19900004678, de l'article paru le 12 avril 1990 dans Philosophical Transactions of the Royal Society of London B, 327(1241), p. 585-593, DOI 10.1098/rstb.1990.0101.",
+    "locator": "p. 4-5, section « Lack of Feedback »",
+    "language": "fr",
+    "original_text": "the culprit is not automation, it is the lack of continual feedback and interaction.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (agent de lecture du corpus), 18 août 2026. Aucune traduction française publiée de ce texte n'a été identifiée. « Feedback » est rendu par « rétroaction » et non par « retour d'information » parce que le contexte immédiat est celui de la boucle : Norman définit, une page plus haut, « a feedback loop in which the actual state of the system is compared with the desired state » puis « the control loop », et enchaîne sur « the person is in the loop ». « Continual » est rendu par « continues », accordé aux deux substantifs.",
+      "edition": null
+    }
+  },
+  "hook": "Une machine qui fait bien son travail sans rien vous en dire : où est le problème ?",
+  "summary": "Le coupable n'est pas l'automatisation mais l'absence de rétroaction continue : sans elle, l'opérateur ne peut plus mettre à jour sa représentation du système.",
+  "sources": [
+    {
+      "label": "Donald A. Norman, « The \"Problem\" of Automation: Inappropriate Feedback and Interaction, Not \"Overautomation\" », ICS Report 8904, Institute for Cognitive Science, University of California, San Diego, juillet 1989. Version soumise déposée sur NASA NTRS.",
+      "kind": "primary",
+      "locator": "p. 4-5, section « Lack of Feedback »",
+      "doi_isbn": "10.1098/rstb.1990.0101",
+      "url": "https://ntrs.nasa.gov/api/citations/19900004678/downloads/19900004678.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Donald A. Norman, « The 'problem' with automation: inappropriate feedback and interaction, not 'over-automation' », Philosophical Transactions of the Royal Society of London B, vol. 327, n° 1241, 12 avril 1990, p. 585-593. Édition publiée, fermée.",
+      "kind": "primary",
+      "locator": "Notice seule, texte fermé",
+      "doi_isbn": "10.1098/rstb.1990.0101",
+      "url": "https://doi.org/10.1098/rstb.1990.0101",
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "reviewer": null,
+    "date": null,
+    "attribution": "non-verifiee",
+    "quotation": "non-verifiee",
+    "sources": "non-verifiee",
+    "prose": "non-verifiee",
+    "verdict": "PENDING",
+    "rounds": 0,
+    "notes": []
+  },
+  "dossier": "corpus/evidence/retroaction-et-automatisation/lecture.json",
+  "notes": [
+    "Le diagnostic de degré, qui est la clé du renversement : l'automatisation est à un niveau intermédiaire d'intelligence, assez puissante pour prendre le contrôle qui revenait aux personnes, pas assez pour traiter toutes les anomalies ni pour fournir la rétroaction continue qui s'établit naturellement entre opérateurs humains. D'où sa conclusion : « the problem is not that the automation is too powerful, the problem is that it is not powerful enough. »",
+    "Ce qui manque n'est pas de l'information au sens technique : p. 6, « The feedback was potentially available, but it was not attended to properly ». L'étalon de la bonne rétroaction est explicitement la conversation d'équipage, informative et non intrusive, par contraste avec l'usage inintelligent des alarmes à seuil unique.",
+    "Le lien avec le modèle mental, p. 6 : « We send a command to an automated piece of equipment, the only way we can update our mental models of the system is through the feedback provided us. »",
+    "La phrase citée est à cheval sur une fin de page : elle commence p. 4 par « the culprit is not automa- » et se termine p. 5. C'est une seule phrase continue, contrôlée sur les images des deux pages. La phrase entière commence par une concession, « although the human operators are indeed no longer \"in the loop\" » : le texte accorde le fait, il refuse seulement d'en faire la cause. La coupe est signalée.",
+    "Deux passages ont été écartés. La phrase la plus citée, « I propose that the problem is not the presence of automation, but rather its inappropriate design », vient du résumé et annonce la thèse sans dire le mécanisme. La phrase la plus frappante de la fin, sur la puissance insuffisante, porte le retournement sur « overautomation » mais pas la rétroaction ; elle reste disponible pour une autre carte.",
+    "Ce que le texte ne dit pas de Bainbridge, et qu'il ne faut donc pas lui faire dire : il ne mentionne ni l'année 1983 ni la revue Automatica, ne date pas son texte, ne discute pas sa thèse et n'écrit pas qu'il lui emprunte le mot « irony ». Sa seule référence est la reprise de 1987 chez Wiley. Toute affirmation d'antériorité devra s'appuyer sur le texte de Bainbridge, pas sur celui-ci.",
+    "Le tirage lu et l'édition publiée ne sont pas mot pour mot identiques : le titre diffère (« Overautomation » en un mot contre « over-automation »), et le résumé diffère sur au moins quatre points relevés. Rien ne garantit que la phrase citée figure telle quelle dans la revue, qui est fermée et n'a pas été ouverte.",
+    "La pagination 585-593 de la revue ne figure nulle part sur le fichier lu : les folios sont ceux du rapport de huit pages, lus un par un dans les titres courants. Aucune correspondance entre les deux paginations n'a pu être établie.",
+    "Ni la littérature secondaire sur cet article ni sa réception francophone n'ont été instruites : ce n'était pas l'objet de la lecture, et la carte n'affiche donc aucune source secondaire."
+  ]
+}

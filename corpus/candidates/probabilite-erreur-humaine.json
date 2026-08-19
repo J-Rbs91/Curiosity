@@ -1,0 +1,89 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "probabilite-erreur-humaine",
+  "slug": "probabilite-erreur-humaine",
+  "status": "CANDIDATE",
+  "title": "Probabilité d'erreur humaine",
+  "themes": [
+    "erreur-humaine-et-fiabilite"
+  ],
+  "domain": "human-factors",
+  "theme_labels": {
+    "erreur-humaine-et-fiabilite": "Nommer, classer et quantifier ce qui échappe à l'opérateur"
+  },
+  "authors": [
+    {
+      "name": "Alan D. Swain",
+      "app_author_id": null
+    },
+    {
+      "name": "Henry E. Guttmann",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Le Handbook de 1983 est cosigné : la couverture Sandia et la page de titre portent « A. D. Swain, H. E. Guttmann », et l'usage qui dit « Swain » tout court efface un coauteur présent d'un bout à l'autre. Le sigle THERP, lui, est antérieur de vingt ans au manuel et rapporté par le texte à Swain seul : les auteurs datent son premier emploi de novembre 1962. La page de titre ne donne que des initiales ; les prénoms viennent de notices de catalogue, et aucune notice d'autorité n'a été trouvée pour Guttmann.",
+  "quotation": {
+    "text": "La probabilité d'erreur humaine (HEP) est la probabilité que, lorsqu'une tâche donnée est exécutée, une erreur se produise.",
+    "reference": "Alan D. Swain et Henry E. Guttmann, Handbook of Human Reliability Analysis with Emphasis on Nuclear Power Plant Applications. Final Report, NUREG/CR-1278, SAND80-0200, Sandia National Laboratories pour l'U.S. Nuclear Regulatory Commission, août 1983, chapitre 2 « Explanation of Some Basic Terms », section « Human Error Probability ».",
+    "locator": "p. 2-17",
+    "language": "fr",
+    "original_text": "In the Handbook, the basic index of human performance is the human error probability (HEP). The HEP is the probability that when a given task is performed, an error will occur.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (agent lecteur, chaîne Curiosity), 18 août 2026. Aucune traduction française publiée du Handbook n'a été identifiée. Deux choix à signaler. Le texte français rend la seconde phrase du passage seulement, la première étant donnée dans original_text ; « The HEP » y est développé en « la probabilité d'erreur humaine (HEP) » parce que l'acronyme n'est défini que par la phrase précédente, et qu'une carte affiche la citation sans son contexte. « an error will occur » est rendu par « une erreur se produise », et non par « une erreur surviendra » : la subordonnée française appelle le subjonctif après « la probabilité que ».",
+      "edition": null
+    }
+  },
+  "hook": "Peut-on mettre un chiffre sur la chance qu'un opérateur se trompe ?",
+  "summary": "La probabilité qu'une erreur survienne dans une tâche donnée sert d'indice de base. Faute de données réelles, la plupart de ces valeurs mêlent données et jugement.",
+  "sources": [
+    {
+      "label": "Alan D. Swain et Henry E. Guttmann, Handbook of Human Reliability Analysis with Emphasis on Nuclear Power Plant Applications. Final Report, NUREG/CR-1278, SAND80-0200, Sandia National Laboratories pour l'U.S. NRC, août 1983, 728 p.",
+      "kind": "primary",
+      "locator": "p. 2-17",
+      "doi_isbn": "10.2172/5752058",
+      "url": "https://www.nrc.gov/docs/ML0712/ML071210299.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Même rapport, numérisation indépendante de la UNT Digital Library (UNT Libraries Government Documents Department), 711 pages, reconnaissance optique page par page. Second témoin ouvert pour contrôler le verbatim.",
+      "kind": "primary",
+      "locator": "p. 2-17, 5-2 et 5-3",
+      "doi_isbn": "ark:/67531/metadc1097337",
+      "url": "https://digital.library.unt.edu/ark:/67531/metadc1097337/",
+      "consulted": "partial"
+    },
+    {
+      "label": "Notice OSTI (Department of Energy) du même rapport, qui porte le DOI et un fichier intégral déposé. Notice relevée pour la référence ; ce fichier n'a pas été ouvert.",
+      "kind": "primary",
+      "locator": "Notice 5752058",
+      "doi_isbn": "10.2172/5752058",
+      "url": "https://www.osti.gov/biblio/5752058",
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "reviewer": null,
+    "date": null,
+    "attribution": "non-verifiee",
+    "quotation": "non-verifiee",
+    "sources": "non-verifiee",
+    "prose": "non-verifiee",
+    "verdict": "PENDING",
+    "rounds": 0,
+    "notes": []
+  },
+  "dossier": "corpus/evidence/probabilite-erreur-humaine/lecture.json",
+  "notes": [
+    "Ce que la citation ne dit pas, et que le manuel dit aussitôt après : les valeurs publiées sont des probabilités nominales, dont les facteurs propres à une installation et à une situation ont été retirés ; et elles sont dites « derived HEPs » parce qu'elles combinent données et jugement, faute de données actuarielles pour les tâches de centrale.",
+    "Ce que la probabilité porte, p. 2-7 : « We define human error as any member of a set of human actions that exceeds some limit of acceptability (Rigby, 1970). [...] In an objective assessment of human error, there is no connotation of blame or fault. » L'erreur y est une action hors tolérance, la tolérance étant définie par le système.",
+    "Les auteurs abandonnent « human error rate » (HER) au profit de « human error probability » parce que « rate » s'entend souvent comme une fréquence par unité de temps ; ils gardent néanmoins le sigle THERP, qui porte le mot abandonné, parce qu'il est établi.",
+    "Pagination par chapitre : « p. 2-17 » signifie chapitre 2, page 17, folio imprimé en pied de page. Dans l'exemplaire NRC (728 p., addendum de 1985 inclus en tête) ce folio est la page 63 du fichier ; dans la numérisation UNT (711 p.) c'est la page 65. L'écart entre exemplaires n'est pas constant : se fier au folio imprimé.",
+    "Un « Addendum #1 » du 1er septembre 1985, signé A. D. Swain seul, ouvre le fichier de la NRC. Il ne touche aucune page du chapitre 2, mais il corrige des valeurs, des tableaux et des figures : toute reprise d'un chiffre du Handbook doit lui être confrontée. La présente carte ne cite aucune valeur.",
+    "Accès : l'URL officielle de la NRC répond HTTP 403 en curl (pare-feu applicatif), mais rend le PDF par WebFetch ; une copie tierce hébergée par FTA Associates a la même taille et la même empreinte MD5 que l'exemplaire officiel, et n'a servi que de voie de téléchargement. Rien n'a été contourné.",
+    "Le scan de la NRC porte une couche OCR fautive sur la page même du passage cité (« undedirable » pour « undesirable »), et ses images JBIG2 n'ont pas pu être rendues. Le verbatim a donc été établi sur la numérisation UNT, qui lit correctement.",
+    "Non ouverts : la version préliminaire de 1980 du même NUREG/CR-1278, souvent citée sous ce numéro, et le document compagnon NUREG/CR-2254 (mai 1983). Aucune littérature secondaire, aucune source francophone, aucune traduction française publiée du Handbook n'ont été identifiées : la carte n'affiche donc aucune source secondaire.",
+    "Le DOI 10.2172/5752058 résout (HTTP 302 vers le purl OSTI) mais n'est pas connu de l'API DataCite, qui répond 404 : il est donné parce qu'il résout, pas parce qu'une notice l'a confirmé."
+  ]
+}
