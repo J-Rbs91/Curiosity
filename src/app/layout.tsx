@@ -21,12 +21,13 @@ export const metadata: Metadata = {
   /*
    * Le titre ne nomme plus une discipline. Il en nommait une tant qu'il n'y en avait
    * qu'une ; en nommer onze serait illisible, et n'en nommer qu'une redeviendrait faux à
-   * chaque domaine instruit. Ce que l'application fait — faire découvrir un concept par
-   * jour — ne change pas, lui, quand le corpus s'étend.
+   * chaque domaine instruit. Il nomme donc le champ que les onze domaines couvrent
+   * ensemble — c'est le titre que porte aussi l'écran d'ouverture, et les deux ne
+   * divergent pas.
    */
-  title: "Curiosity : comprendre le travail et les organisations",
+  title: "Curiosity : sciences du travail, des organisations et des systèmes",
   description:
-    "Un concept à chaque ouverture, tiré de onze domaines regroupés en quatre familles : comprendre les humains et les organisations, le travail réel, la production et les systèmes, le pilotage.",
+    "Une exploration interdisciplinaire des sciences du travail, des organisations et des systèmes.",
   /*
    * Ces chemins sont préfixés à la main : Next applique `basePath` aux liens et aux
    * ressources qu'il émet lui-même, pas aux URL écrites dans les métadonnées.
