@@ -16,10 +16,10 @@ export const dynamic = "force-static";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Curiosity : comprendre le travail et les organisations",
+    name: "Curiosity : sciences du travail, des organisations et des systèmes",
     short_name: "Curiosity",
     description:
-      "Un concept à chaque ouverture : son domaine, son thème, le concept, une citation de son auteur, un résumé court et ses sources.",
+      "Une exploration interdisciplinaire des sciences du travail, des organisations et des systèmes.",
     start_url: `${BASE_PATH}/`,
     scope: `${BASE_PATH}/`,
     display: "standalone",

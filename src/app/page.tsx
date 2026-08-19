@@ -145,11 +145,27 @@ export default function TodayPage() {
            * pour ne rien apprendre à personne. Ici, on se présente ; ailleurs, jamais.
            */}
           <Wordmark animate className="text-[2.125rem] text-ink" />
-          <h1 className="font-serif-display text-xl font-semibold leading-tight text-ink">
-            Comprendre ce qui produit réellement les résultats.
-          </h1>
+          {/*
+           * Le surtitre nomme le champ, le titre nomme ce qu'on y couvre.
+           *
+           * Il ne nomme plus une discipline — « sociologie des organisations » l'était, et
+           * elle n'est plus qu'un domaine sur onze. « Les sciences de l'action organisée »
+           * nomme ce que les onze ont en commun, ce qui reste vrai à mesure que le corpus
+           * s'ouvre. Le surtitre est groupé avec le titre plutôt que posé en enfant direct
+           * de la colonne : à `gap-10`, il en serait détaché au point de ne plus se lire
+           * comme sa ligne de tête.
+           */}
+          <div className="flex flex-col gap-3">
+            <p className="text-xs font-medium uppercase tracking-[0.12em] text-ink-faint">
+              Les sciences de l&apos;action organisée
+            </p>
+            <h1 className="font-serif-display text-xl font-semibold leading-tight text-ink">
+              Sciences du travail, des organisations et des systèmes
+            </h1>
+          </div>
           <p className="text-md leading-relaxed text-ink-soft">
-            Un concept à la fois, à chaque ouverture.
+            Une exploration interdisciplinaire des sciences du travail, des organisations et
+            des systèmes.
           </p>
           {/*
            * Le libellé nomme ce qu'on obtient, pas l'action qu'on exécute. « Commencer »
@@ -176,6 +192,16 @@ export default function TodayPage() {
         className="mx-auto flex max-w-md flex-col justify-center px-6 py-6"
         style={{ minHeight: SCREEN_HEIGHT }}
       >
+        {/*
+         * Le même surtitre qu'au seuil, et pour la même raison : la carte du jour peut venir
+         * de n'importe lequel des onze domaines, et rien d'autre sur cet écran ne dit de quel
+         * champ elle relève. Il se distingue du libellé de thème qui ouvre la carte par sa
+         * place — hors du cadre de la carte, au-dessus d'elle — et par son échelle, qui est
+         * celle de l'écran et non celle de la carte : `CARD_SCALE` ne le fait pas rétrécir.
+         */}
+        <p className="mb-6 text-xs font-medium uppercase tracking-[0.12em] text-ink-faint">
+          Les sciences de l&apos;action organisée
+        </p>
         <ConceptCard concept={concept} />
       </div>
     </Screen>
