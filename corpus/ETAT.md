@@ -252,7 +252,8 @@ sont des artefacts régénérables. Seuls les **verdicts** sont versionnés, dan
 
 # IV. Les approfondissements — second étage du dispositif
 
-`npm run corpus:deepen` : **32 cartes validées, 29 approfondissements projetés.**
+`npm run corpus:deepen` : **32 cartes validées, 32 approfondissements projetés, 53 243 mots.**
+Le corpus est complet : aucune carte n'est servie sans son texte.
 
 Un approfondissement est le texte d'environ 1 500 mots qu'affiche « Approfondir ». Il vit
 dans `corpus/deepenings/<id>.json`, il est écrit une fois hors ligne, contrôlé, puis projeté
@@ -272,6 +273,15 @@ bloquant sur cette ambiguïté ferait retirer les guillemets plutôt que vérifi
 
 Ce qu'il ne peut pas tenir, ce sont les quatre exigences documentaires elles-mêmes. Elles se
 lisent. Le protocole les porte : `corpus/deepenings/PROTOCOLE.md`.
+
+## Ce que les textes pèsent, et pourquoi cela ne se voit pas
+
+356 Ko de matière, soit quatre fois et demie le corpus des cartes. C'est la raison de la
+projection en **deux fichiers** : les textes d'un côté, leurs seuls identifiants de l'autre.
+Mesuré sur la construction, la page d'accueil charge dix scripts et aucun ne porte les
+textes ; l'écran d'approfondissement est le seul à référencer ce chunk. Le jour où un écran
+quelconque importerait `deepenings.generated`, ces 340 Ko partiraient avec lui sans qu'aucun
+test ne le dise : c'est `hasDeepening` qu'il faut appeler, jamais le module des textes.
 
 ## Ce que le premier lot a appris
 

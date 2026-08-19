@@ -1,0 +1,62 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "signification-et-invariance",
+  "lead": [
+    "Une opération arithmétique ne proteste jamais. Diviser un relevé de température par un autre rend un nombre, exactement comme diviser une longueur par une autre ; rien dans le calcul ne signale que le premier quotient dépend de l’unité choisie et que le second n’en dépend pas. C’est la difficulté propre aux nombres qui sortent d’une mesure : ils arrivent avec toute la structure de l’arithmétique, alors que la procédure qui les a produits n’en garantit qu’une part.",
+    "Reste à savoir lequel des énoncés qu’on écrit ensuite parle des objets mesurés, et lequel parle de la façon de les numéroter. Suppes et Zinnes traitent la question comme un problème séparé, posé à côté des deux problèmes qu’ils tiennent pour fondamentaux dans la théorie de la mesure, la représentation et l’unicité. La réponse qu’ils avancent a ceci de particulier qu’elle se vérifie sans rien savoir des objets : il suffit de refaire le calcul sur une autre numérotation également légitime, et de regarder si la conclusion tient."
+  ],
+  "sections": [
+    {
+      "title": "Le rapport de deux relevés de température",
+      "paragraphs": [
+        "L’exemple vient des auteurs, page 109. Deux relevés successifs, notés t(n) et t(n-1), entrent dans un énoncé numéroté (4) que le dossier ne reproduit pas ; ce qu’il en rapporte suffit à suivre le raisonnement. Mesurées en Fahrenheit, les deux températures valent 110 et 100, leur rapport 1,10, et l’énoncé est tenu pour vrai. Sur l’échelle centigrade, les mêmes températures donnent 43,3 et 37,8, soit un rapport de 1,15 : « if the temperature measurements had been made on the Centigrade scale we would have come to the opposite conclusion, since then we would have found t(n)=43.3 and t(n-1)=37.8 and a ratio equal to 1.15 rather than 1.10 ».",
+        "Aucune erreur n’a été commise entre les deux calculs. Les deux échelles mesurent la même chose, la conversion de l’une à l’autre est exacte et réversible, les quatre nombres sont justes. Ce qui a changé de valeur de vérité n’est pas une observation, c’est un énoncé portant sur des observations. Le quotient 1,10 n’appartient pas au couple de températures : il appartient à ces températures prises avec la convention qui a placé le zéro de la graduation.",
+        "Ce que l’exemple installe n’est pas une interdiction visant les quotients, mais un test applicable à n’importe quel énoncé numérique : le soumettre à un changement d’échelle que la mesure autorise, et voir si sa vérité y survit. Un énoncé qui bascule a parlé de la graduation, sans que rien dans sa forme l’ait laissé paraître."
+      ]
+    },
+    {
+      "title": "Les numérotations qu’une échelle admet",
+      "paragraphs": [
+        "Le mot admissible ne désigne pas une permission accordée à celui qui calcule, mais une indétermination laissée par la mesure elle-même. Une procédure de mesure ne produit pas une numérotation unique : elle en produit une famille, dont les membres se substituent l’un à l’autre sans que l’observation permette de les départager. Les transformations admissibles sont les passages d’un membre de cette famille à un autre, et les dire admises revient à dire que la mesure ne tranche pas.",
+        "La citation de la carte s’arrête sur des crochets, et la fin de la phrase se lit en tête de la page 111 : « any of its numerical assignments, i.e., any of its numerical functions expressing the results of measurement ». Ce qui varie n’est pas l’échelle en général, ce sont les assignations numériques de l’énoncé examiné, c’est-à-dire les fonctions qui expriment ses résultats de mesure. Un énoncé qui met en jeu deux grandeurs mesurées porte deux assignations, et la formulation vise chacune d’elles.",
+        "Le critère est asymétrique, et c’est ce qui le rend maniable. Établir qu’un énoncé a un sens demande de montrer que sa vérité résiste à toutes les transformations admissibles ; établir qu’il n’en a pas demande d’en exhiber une seule qui la renverse. Le cas des deux relevés est de cette espèce : un unique changement d’échelle a suffi."
+      ]
+    },
+    {
+      "title": "La moyenne passe, le rapport ne passe pas",
+      "paragraphs": [
+        "On attendrait d’un critère de ce genre qu’il se range en une liste d’opérations permises par type d’échelle. Le rapport fait l’inverse, et sur la grandeur même dont il vient d’être question : le rapport de deux températures est jugé dépourvu de sens, pages 108 et 109, tandis que la comparaison de deux moyennes de températures est jugée douée de sens, exemple 2, page 115. Même grandeur, même espèce d’échelle, verdicts opposés.",
+        "Le dossier rapporte le verdict de l’exemple 2, non sa démonstration ; l’écart se retrouve pourtant sur les nombres déjà cités. La conversion qui fait passer de 110 et 100 à 43,3 et 37,8 ne se contente pas de multiplier les valeurs, elle déplace aussi l’origine de la graduation. Un déplacement identique appliqué à deux moyennes ne change pas laquelle des deux est la plus grande. Appliqué aux deux termes d’un quotient, il en modifie la valeur, et un énoncé qui repose sur cette valeur bascule avec elle.",
+        "La section 6.3 l’énonce en propre : « Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems. » Le numéro 28 est un lapsus du rapport, qui rappelle deux fois sous ce nom la définition qu’il avait numérotée 33. Une autre phrase, dont le dossier ne donne pas la page, en tire la conséquence : « The admissibility of any mathematical operation depends not only on the scale type […] but on the entire numerical statement of which the operation is a part. »",
+        "Une même opération peut donc figurer dans un énoncé qui a un sens et dans un autre qui n’en a pas, sans qu’elle y soit pour rien : ce sont les propriétés d’unicité des assignations qui décident, et elles ne se lisent pas sur le symbole du calcul."
+      ]
+    },
+    {
+      "title": "Un problème que ses auteurs disent second",
+      "paragraphs": [
+        "Le rang que les auteurs donnent eux-mêmes à cette question est plus bas qu’on ne l’attendrait d’une définition aussi nette. La page 108 l’écrit sans détour : « While this problem is not central to a theory of measurement it is often involved with various aspects of how measurements may be used ». Le problème n’est pas au centre de la théorie, il est engagé dans les usages qu’on fait des mesures : le critère se range du côté de ce qui s’écrit avec des mesures, non de ce qui fonde la mesure.",
+        "La retenue porte aussi sur la définition elle-même. Celle-ci est formulée comme une équivalence, « if and only if » dans l’original, « si et seulement si » dans la traduction de la carte. Page 111, les auteurs concèdent pourtant que « Definition 33 gives a necessary but not sufficient condition of meaningfulness ». Le dossier porte les deux phrases, et non ce qui les articule : une définition donnée pour équivalence et déclarée insuffisante une page plus loin appelle le paragraphe qui les concilie, et ce paragraphe n’y est pas."
+      ]
+    },
+    {
+      "title": "Qui a nommé le problème",
+      "paragraphs": [
+        "Ce que le texte revendique est précis : un nom. La section 6 s’ouvre en posant, à côté des deux problèmes fondamentaux de la mesure, « a third problem which we shall term the meaningfulness problem ». Le pluriel est celui d’un texte réellement coécrit, deux noms sur une même ligne de la page de titre, en-têtes courants « P.S.-J.L.Z. », rédaction à la première personne du pluriel. Est donc revendiquée la constitution du problème en troisième terme, et son baptême.",
+        "Le cadre formel, lui, est rendu à d’autres par le rapport même. Une parenthèse, page 4, indique que « The general viewpoint to be developed in this section was first articulated in Scott and Suppes (1958). », et l’article visé, paru dans le Journal of Symbolic Logic, 1958, 23, 113-128, figure aux références du rapport. Le paragraphe qui suit immédiatement la définition, page 111, renvoie de son côté à un chapitre de Suppes de 1959, publié dans Measurement: Definitions and Theories dirigé par Churchman et Ratoosh, pour la construction d’un langage formalisé et non pour la définition."
+      ]
+    },
+    {
+      "title": "L’état du document que l’on cite",
+      "paragraphs": [
+        "Ce qui est cité n’est pas un livre mais un dactylogramme : Technical Report n° 45, série Psychology, Institute for Mathematical Studies in the Social Sciences, Stanford, 15 mars 1962, 130 pages. Chaque feuillet porte en tête les initiales des deux auteurs suivies de son numéro imprimé, et la pagination du fichier numérisé court quatre pages en avance sur celle-là. La couche de reconnaissance de caractères étant très dégradée, la citation, la définition, l’exemple 2 et le passage de la section 6.3 ont été relus sur les images des feuillets.",
+        "Le lapsus qui fait de la définition 33 une définition 28 est du même ordre : un rapport de travail, diffusé pour être lu et discuté, n’a pas la stabilité d’un chapitre relu. Une version a paru l’année suivante dans le Handbook of Mathematical Psychology, volume I, chez Wiley, pages 1 à 76. Elle n’a pas été ouverte, et la correspondance page à page n’est pas établie. L’interrogation de Crossref ne rend aucun identifiant pour le rapport de 1962 : le seul qu’elle retourne désigne un compte rendu de la version publiée."
+      ]
+    }
+  ],
+  "limits": [
+    "La carte tient sur un document unique. Rien ici ne dit ce que le critère est devenu après 1962 : la littérature secondaire consultée au contrôle présente le problème sans en dater la paternité, et aucune source de réception ne figure sur la carte.",
+    "Le chapitre de Suppes de 1959, auquel renvoie le paragraphe qui suit la définition, n’a pas pu être ouvert : l’exemplaire d’Internet Archive existe, mais la recherche plein texte et le prêt y sont fermés à l’accès anonyme. Savoir si une formulation équivalente s’y trouve déjà reste indéterminé : accès refusé, non silence des textes.",
+    "Le libellé de l’énoncé (4) de la page 109 n’est pas au dossier, qui n’en porte que les nombres et le renversement ; la démonstration de l’exemple 2, page 115, n’y est pas davantage. La parenthèse de la page 4 annonce le point de vue de la section qu’elle ouvre, sans que le dossier dise laquelle.",
+    "Le résumé de la carte écrit qu’un énoncé a un sens si sa vérité est constante, là où sa propre citation restitue le si et seulement si. La traduction est interne et non publiée : une discussion qui tiendrait à un mot se mène sur l’anglais."
+  ]
+}

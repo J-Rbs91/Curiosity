@@ -44,6 +44,8 @@ export const deepenedConceptIds: readonly ConceptId[] = [
   "regulation-controle-autonome",
   "regulation-de-l-activite",
   "sexe-des-operateurs",
+  "signification-et-invariance",
+  "simulation-activite-future",
   "travail-collectif-collectif-de-travail",
   "zones-incertitude"
 ];
