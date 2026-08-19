@@ -15,6 +15,15 @@ import type { Theme } from "@/types";
  * Les quatre thèmes d'`activity-ergonomics` suivent la même procédure, et la même règle les
  * a fait refuser deux fois.
  *
+ * Les cinq thèmes de `human-factors` sont écrits le 19 août 2026, après le contrôle aveugle
+ * des treize cartes du domaine et non après leur seule rédaction : un thème se déclare quand
+ * une carte validée le porte, pas quand une carte existe. Quatre d'entre eux en portent deux
+ * à quatre. Le cinquième, `securite-et-resilience`, n'en porte **qu'une**, et c'est une
+ * faiblesse déclarée plutôt que masquée : le champ existe, ses textes fondateurs sont fermés,
+ * et la cartographie n'a pu en ouvrir qu'un seul. Il se déclare quand même parce que le
+ * replier sur l'erreur et la fiabilité serait une faute de fond, ce courant s'étant constitué
+ * précisément contre l'idée qu'on comprend un système en étudiant ce qui le fait tomber.
+ *
  * Conséquence directe, visible ci-dessous : aucun thème n'est déclaré ici pour la santé
  * publique ni pour la mesure du bien-être, alors que le périmètre de `measurement-theory`
  * demandait de les balayer ; ni, en ergonomie de l'activité, pour la charge de travail comme
@@ -216,5 +225,61 @@ export const themes: Theme[] = [
     description:
       "Un outil n'est pas neutre : il incorpore un modèle de celui qui s'en servira, et ce modèle agit avant tout usage. Ce thème porte sur ce double mouvement (ce que l'artefact impose à l'activité, ce que l'activité fait de l'artefact) et sur ce que cela exige de qui conçoit.",
     domain: "activity-ergonomics",
+  },
+  // --- Human factors et ergonomie cognitive --------------------------------
+  {
+    id: "erreur-humaine-et-fiabilite",
+    slug: "erreur-humaine-et-fiabilite",
+    title: "L'erreur et la fiabilité",
+    tagline:
+      "Se tromper n'est pas une faute, c'est une chose qui a une forme.",
+    keywords: ["Taxonomie", "Condition latente", "Probabilité"],
+    description:
+      "L'erreur n'est pas un raté informe : elle se range par mécanismes, elle se quantifie parfois, et elle se prépare longtemps avant de se produire. Ce thème porte sur ce que nommer et classer l'erreur permet de voir, et sur ce que cela laisse encore hors champ.",
+    domain: "human-factors",
+  },
+  {
+    id: "automatisation-et-conception-cognitive",
+    slug: "automatisation-et-conception",
+    title: "L'automatisation et ce qu'elle laisse",
+    tagline:
+      "La machine prend le facile et rend le difficile, sans prévenir.",
+    keywords: ["Rétroaction", "Mode", "Interface"],
+    description:
+      "Automatiser ne retire pas une part du travail en laissant le reste intact : cela change ce qui reste à faire, et souvent en plus difficile. Ce thème porte sur ce que le dispositif retire à l'opérateur, sur ce qu'il devrait lui rendre pour qu'il suive, et sur ce que la conception décide de tout cela par avance.",
+    domain: "human-factors",
+  },
+  {
+    id: "decision-et-conscience-de-la-situation",
+    slug: "decider-en-situation",
+    title: "Décider en situation",
+    tagline:
+      "L'expert ne compare pas : il reconnaît, puis il vérifie.",
+    keywords: ["Reconnaissance", "Projection", "Temps contraint"],
+    description:
+      "Décider dans une tâche réelle ne ressemble pas à choisir entre des options posées à plat : il faut d'abord comprendre où l'on en est, et l'expérience répond souvent avant le raisonnement. Ce thème porte sur ce que l'opérateur perçoit, comprend et anticipe, et sur la manière dont il tranche sans avoir le temps de comparer.",
+    domain: "human-factors",
+  },
+  {
+    id: "charge-et-vigilance",
+    slug: "charge-et-vigilance",
+    title: "La charge et la vigilance",
+    tagline:
+      "Ce qu'on demande à une tête se mesure, mal et quand même.",
+    keywords: ["Charge mentale", "Fatigue", "Instrument"],
+    description:
+      "La charge de travail et la fatigue ne se lisent pas sur un visage : il a fallu construire des instruments pour les saisir, et ces instruments décident de ce qu'on verra. Ce thème porte sur ces grandeurs, sur ce que leurs mesures attrapent, et sur ce que leur gestion déplace.",
+    domain: "human-factors",
+  },
+  {
+    id: "securite-et-resilience",
+    slug: "securite-et-resilience",
+    title: "Ce qui fait tenir",
+    tagline:
+      "Un système sûr n'est pas un système d'où l'imprévu est absent.",
+    keywords: ["Résilience", "Ressources", "Anticipation"],
+    description:
+      "On explique d'ordinaire la sécurité par ce qui manque quand un accident survient. Ce thème prend le problème par l'autre bout : ce qui fait qu'un système continue de fonctionner la plupart du temps, et ce que cela demande de ressources à ceux qui le tiennent.",
+    domain: "human-factors",
   },
 ];
