@@ -17,11 +17,11 @@
       "app_author_id": null
     },
     {
-      "name": "Henry E. Guttmann",
+      "name": "H. E. Guttmann",
       "app_author_id": null
     }
   ],
-  "attribution_note": "Le Handbook de 1983 est cosigné : la couverture Sandia et la page de titre portent « A. D. Swain, H. E. Guttmann », et l'usage qui dit « Swain » tout court efface un coauteur présent d'un bout à l'autre. Le sigle THERP, lui, est antérieur de vingt ans au manuel et rapporté par le texte à Swain seul : les auteurs datent son premier emploi de novembre 1962. La page de titre ne donne que des initiales ; les prénoms viennent de notices de catalogue, et aucune notice d'autorité n'a été trouvée pour Guttmann.",
+  "attribution_note": "Le Handbook de 1983 est cosigné : la couverture Sandia et la page de titre portent « A. D. Swain, H. E. Guttmann », et l'usage qui dit « Swain » tout court efface un coauteur présent d'un bout à l'autre. Le sigle THERP, lui, est antérieur de vingt ans au manuel et rapporté par le texte à Swain seul : les auteurs datent son premier emploi de novembre 1962. Les deux noms ne sont pas affichés de la même façon, et c'est délibéré. La page de titre ne donne que des initiales ; « Alan D. » est fondé par la notice d'autorité de la Library of Congress, LCNAF n82101305. Pour Guttmann, une notice d'autorité existe aussi, LCNAF n82081480, mais elle s'arrête aux initiales, et aucun catalogue atteint ne développe « H. E. » : la carte s'en tient donc à la forme signée sur le document.",
   "quotation": {
     "text": "La probabilité d'erreur humaine (HEP) est la probabilité que, lorsqu'une tâche donnée est exécutée, une erreur se produise.",
     "reference": "Alan D. Swain et Henry E. Guttmann, Handbook of Human Reliability Analysis with Emphasis on Nuclear Power Plant Applications. Final Report, NUREG/CR-1278, SAND80-0200, Sandia National Laboratories pour l'U.S. Nuclear Regulatory Commission, août 1983, chapitre 2 « Explanation of Some Basic Terms », section « Human Error Probability ».",
@@ -47,7 +47,7 @@
       "consulted": "full-text"
     },
     {
-      "label": "Même rapport, numérisation indépendante de la UNT Digital Library (UNT Libraries Government Documents Department), 711 pages, reconnaissance optique page par page. Second témoin ouvert pour contrôler le verbatim.",
+      "label": "Même rapport, réhébergé par la UNT Digital Library (UNT Libraries Government Documents Department) avec une couche de reconnaissance optique propre, 711 pages. C'est la numérisation du DOE/OSTI, non un second scan.",
       "kind": "primary",
       "locator": "p. 2-17, 5-2 et 5-3",
       "doi_isbn": "ark:/67531/metadc1097337",
@@ -85,6 +85,10 @@
     "Le scan de la NRC porte une couche OCR fautive sur la page même du passage cité (« undedirable » pour « undesirable »), et ses images JBIG2 n'ont pas pu être rendues. Le verbatim a donc été établi sur la numérisation UNT, qui lit correctement.",
     "Non ouverts : la version préliminaire de 1980 du même NUREG/CR-1278, souvent citée sous ce numéro, et le document compagnon NUREG/CR-2254 (mai 1983). Aucune littérature secondaire, aucune source francophone, aucune traduction française publiée du Handbook n'ont été identifiées : la carte n'affiche donc aucune source secondaire.",
     "Le DOI 10.2172/5752058 résout (HTTP 302 vers le purl OSTI) mais n'est pas connu de l'API DataCite, qui répond 404 : il est donné parce qu'il résout, pas parce qu'une notice l'a confirmé.",
-    "Le rapport compte 728 pages, addendum de 1985 compris. La couverture porte « Printed August 1983 », la page de titre « Manuscript Completed: June 1983 » et « Date Published: August 1983 »."
+    "Le rapport compte 728 pages, addendum de 1985 compris. La couverture porte « Printed August 1983 », la page de titre « Manuscript Completed: June 1983 » et « Date Published: August 1983 ».",
+    "Correction apportée au tour de contrôle, sur la source 2 : l'exemplaire de la UNT Digital Library n'est pas une numérisation indépendante. Ses métadonnées portent la collection OSTI et l'identifiant OSTI 5752058, son OCR reproduit les mêmes artefacts de tampon que le fichier servi par osti.gov, et sa pagination est la même, 711 pages, page 65 pour le folio imprimé 2-17. Les sources 2 et 3 renvoient donc au même objet, avec deux couches de texte différentes. Le témoin réellement distinct est l'exemplaire de la NRC (ADAMS ML071210299, 728 pages, autre scan), que la carte porte en URL de sa source 1.",
+    "Le verbatim est confirmé sur trois couches de texte concordantes, sans écart : celle du fichier OSTI, celle de l'exemplaire NRC et celle de l'océrisation UNT. Deux fichiers, trois lectures : l'exemplaire NRC est bien un second témoin, la couche UNT n'en est pas un troisième.",
+    "Sur les prénoms, l'état exact après contrôle. LCNAF n82101305 donne « Swain, Alan D. » (variante « Swain, A. D. (Alan D.) »). LCNAF n82081480 donne « Guttmann, H. E. », avec pour source citée la page de titre du Handbook lui-même, et ne développe pas les initiales. Ni Crossref, ni l'API OSTI du rapport, ni les métadonnées UNT, ni OpenLibrary, ni Semantic Scholar ne les développent, et le Handbook ne donne jamais de prénom. Une notice OSTI d'un rapport antérieur des deux mêmes auteurs à Sandia (SAND-74-5379, notice 4242464) écrit « Guttmann, Henry E. » : c'est le seul appui connu pour « Henry », il porte sur un autre document, et il n'a pas suffi à le faire afficher. Quatre catalogues sont restés hors d'atteinte au contrôle (VIAF, HathiTrust, Library Hub Discover, Sudoc) : il reste possible que l'un d'eux développe l'initiale.",
+    "Une variante de titre sans conséquence sur la résolution : la page de titre de l'exemplaire OSTI, Crossref et UNT écrivent « Handbook of Human-Reliability Analysis », avec un trait d'union, là où l'exemplaire NRC et l'usage courant, suivis ici, écrivent « Human Reliability »."
   ]
 }
