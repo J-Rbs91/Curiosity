@@ -2,12 +2,12 @@
   "$schema": "../schema/carte.schema.json",
   "id": "glissements-de-l-action",
   "slug": "glissements-de-l-action",
-  "status": "CANDIDATE",
+  "status": "VALIDATED",
   "title": "Glissements de l'action",
   "themes": [
     "erreur-humaine-et-fiabilite"
   ],
-  "domain": "human-factors",
+  "domain": null,
   "theme_labels": {
     "erreur-humaine-et-fiabilite": "Nommer, classer et quantifier ce qui échappe à l'opérateur"
   },
@@ -60,15 +60,27 @@
     }
   ],
   "review": {
-    "reviewer": null,
-    "date": null,
-    "attribution": "non-verifiee",
-    "quotation": "non-verifiee",
-    "sources": "non-verifiee",
-    "prose": "non-verifiee",
-    "verdict": "PENDING",
+    "reviewer": "contrôle aveugle",
+    "date": "2026-08-19",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
     "rounds": 0,
-    "notes": []
+    "notes": [
+      "Source primaire ouverte moi-même : curl -L https://archive.org/download/DTIC_ADA081932/DTIC_ADA081932.pdf → HTTP 200, 1 782 141 octets, 25 folios de fichier. La couche OCR est illisible dès le folio 3 (bouillie de caractères) : tout ce qui suit a été lu en image, via pdfpage.py --rotate=270 puis Read sur le PNG, jamais sur l'extraction.",
+      "Correspondance folio fichier / page imprimée établie avant de juger le localisateur : le scan est couché et porte deux pages imprimées par folio. Folio 1 = couverture (--rotate=0), folio 2 = formulaire DD 1473, folio 3 = pages imprimées 1-2 (Abstract | page de titre + Prologue), folio 4 = pages imprimées 3-4. Formule : folio N = pages imprimées 2N-5 et 2N-4. Le corps s'arrête à la page imprimée 33 (fin des références, folio 19) ; les folios 20 à 25 sont les listes de diffusion ONR.",
+      "CITATION — verbatim. Folio 4, colonne de gauche = page imprimée 3 (en-tête « Norman / October 25, 1979 — From Slips to Action / 3 »). Sous le titre de section souligné « Slips: Window to the Mind », première phrase du premier paragraphe, lue sur image recadrée et agrandie (ctrl_gl/crop_p3.png) : « A slip occurs when someone performs an action that is not intended. » Identique au champ original_text, mot pour mot, y compris « someone performs » (à ne pas confondre avec la variante de l'Abstract, page imprimée 1 : « A slip occurs when a person does an action that is not intended. » — la fiche cite bien la page 3, pas l'abstract). Le localisateur « p. 3 » et la mention de section sont donc exacts. Traduction déclarée comme interne, sans coupe.",
+      "ATTRIBUTION — confirmée. Signature relevée sur le document en trois endroits : couverture (« Donald A. Norman », seul, image folio 1), formulaire DD 1473 champ 7 AUTHOR(S) « Donald A. Norman » seul (image folio 2 recadrée), et page imprimée 2 sous le titre « Donald A. Norman / University of California, San Diego » (image folio 3, colonne droite). Aucun cosignataire, ni escamoté ni inventé.",
+      "ATTRIBUTION — la réserve portée par la fiche est exacte et vérifiée sur le texte : Norman ne revendique pas le mot. Page imprimée 3, il rapporte le vocabulaire à Freud (« Freud knew this, and from his analyses of errors, Freud made important contributions… »), et page imprimée 2 il situe son propre objet comme un déplacement : « the study of slips, especially slips of performance and actions (as opposed to slips of the tongue) ». La liste de références (page imprimée 33, folio 19) porte bien « Reason, J. T. Actions not as planned. In G. Underwood & R. Stevens (Eds.), Aspects of consciousness. London: Academic Press, 1979 », et Reason est cité dans le corps page imprimée 3 (« Reason has recorded others (1977, 1979) »). Je n'ai pas compté exhaustivement les quatre occurrences de Reason annoncées par la note (il aurait fallu imager les 17 folios du corps) : rien ne la contredit, je ne la certifie pas.",
+      "ATTRIBUTION — la collecte collective annoncée est attestée : page imprimée 29 (folio 17, colonne de gauche), section « Acknowledgement » : « I am thankful for the help of the LNR research group, both in the building up the collection of slips and in providing useful comment upon the analysis of the examples. In particular, Jonathan Grudin was an avid collector and analyzer of slips. »",
+      "SOURCE 1 — résout. DOI 10.21236/ADA081932 : api.crossref.org → HTTP 200, titre « Slips of the Mind and an Outline for a Theory of Action », auteur unique Donald A. Norman, type report, éditeur DTIC, daté 1979-11-01. Cote : la couverture porte bien « REPORT No. 7906 » — vérifié sur l'image native (2720×3392) recadrée et agrandie ×4, le dernier chiffre a la boucle fermée en bas d'un 6, non la barre haute d'un 5 —, tandis que le formulaire DD 1473 champ 1 porte « 79Ø5 ». La fiche affiche 7906, soit la cote de couverture, et signale elle-même la contradiction. « novembre 1979 » suit la couverture (les en-têtes de page portent, eux, October 25, 1979). « 34 p. » suit le champ 15 du formulaire et concorde avec le corps (page de titre + 33 pages numérotées). archive.org/metadata/DTIC_ADA081932 → HTTP 200, access-restricted-item absent : accès libre, aucun contrôle contourné.",
+      "SOURCE 2 — résout. DOI 10.1037/0033-295X.88.1.1 : Crossref HTTP 200 → « Categorization of action slips. », Donald A. Norman seul, Psychological Review, vol. 88, n° 1, p. 1-15, 1981. Exactement ce que le label annonce. Le label déclare lui-même la consultation en notice seule : je n'ai pas non plus ouvert le texte (APA fermé), et je ne conclus donc rien sur son contenu.",
+      "SOURCE 3 — résout. curl https://jnd.org/wp-content/uploads/2024/01/Don-Norman-Curriculum-Vitae.pdf → HTTP 200, 460 533 octets, 25 pages ; l'en-tête de chaque page porte « Last modified: January 5, 2024 », ce qui confirme le millésime affiché. La rubrique « TECHNICAL REPORTS & OTHER PAPERS » existe et contient : « Norman, D. A. (1979). Slips of mind and an outline for a theory of action (Tech. Rep.). La Jolla: University of California, San Diego, Center for Human Information Processing. » Le label est donc exact sur ce qu'il annonce (une rubrique consultée dans un but donné) ; pour information, ce but n'aboutit pas : le CV ne numérote aucun rapport, et donne le titre sans article (« Slips of mind »).",
+      "PROSE — fidèle. L'accroche « Comment fait-on autre chose que ce qu'on avait l'intention de faire ? » ne dit rien de plus que la définition de la page 3. Le résumé reprend les deux propositions du texte : « Slips do not occur randomly » → « Il n'arrive pas au hasard », puis « They often result from conflict among several possible actions or thoughts, or by intermixing the components of a single action sequence » → « des actions possibles entrent en conflit, ou les éléments d'une séquence se mêlent ». Le « ou » conserve la disjonction, et rien n'est affirmé comme exclusif ni comme systématique. Deux abrègements sans effet de sens, relevés pour information et non comme motif de renvoi : « actions or thoughts » est réduit aux actions, et la troisième voie du texte (« by performing an appropriate act in some inappropriate way ») n'est pas reprise ; l'énumération se lit comme illustrative après le deux-points, elle ne rétrécit pas le concept, qui reste défini par la première phrase.",
+      "Hors des quatre points, pour information : le champ translation.translator décrit la traduction comme datée du 18 août 2026 ; je n'ai aucun moyen de vérifier cette date, et elle n'engage aucun des quatre points."
+    ]
   },
   "dossier": "corpus/evidence/glissements-de-l-action/lecture.json",
   "notes": [

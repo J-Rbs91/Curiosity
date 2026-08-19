@@ -2,12 +2,12 @@
   "$schema": "../schema/carte.schema.json",
   "id": "nasa-tlx",
   "slug": "nasa-tlx",
-  "status": "CANDIDATE",
+  "status": "VALIDATED",
   "title": "NASA-TLX : la charge en six dimensions",
   "themes": [
     "charge-et-vigilance"
   ],
-  "domain": "human-factors",
+  "domain": null,
   "theme_labels": {
     "charge-et-vigilance": "Des grandeurs qu'on définit pour les gérer"
   },
@@ -64,15 +64,25 @@
     }
   ],
   "review": {
-    "reviewer": null,
-    "date": null,
-    "attribution": "non-verifiee",
-    "quotation": "non-verifiee",
-    "sources": "non-verifiee",
-    "prose": "non-verifiee",
-    "verdict": "PENDING",
+    "reviewer": "contrôle aveugle",
+    "date": "2026-08-19",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
     "rounds": 0,
-    "notes": []
+    "notes": [
+      "PDF primaire téléchargé moi-même : curl https://ntrs.nasa.gov/api/citations/20000021488/downloads/20000021488.pdf → HTTP 200, 540 977 octets, 26 folios PDF. Correspondance folio/page imprimée établie : PDF p. 9 porte le folio « 3 », donc PDF p. 7 = page imprimée 1 ; le folio « 1 » est bien visible au bas de l'image rendue (pdfpage.py tlx.pdf 7).",
+      "CITATION — page imprimée 1, section « 1. BACKGROUND », rendue en image (pas seulement en couche texte, car l'extraction du document est bruitée : « I_nuts and bolts », « t_IASA »). L'image donne, sans ambiguïté : « The NASA Task Load Index is a multi-dimensional rating procedure that provides an overall workload score based on a weighted average of ratings on six subscales: Mental Demands. Physical Demands, Temporal Demands, Own Performance, Effort, and Frustration. » L'original_text de la fiche est verbatim, la coupe […] portant exactement sur « based on a weighted average of ratings » ; elle est signalée et la traduction française la reproduit fidèlement. Traduction maison déclarée. Locator « Section 1 “Background”, p. 1 » exact.",
+      "ATTRIBUTION — le document ouvert ne porte effectivement aucun nom de personne : couverture (PDF p. 1, rendue en image) = « TASK LOAD INDEX (NASA-TLX) / V 1.0 / NASA Ames Research Center », sans date ; page de titre (PDF p. 3, rendue en image) = « Human Performance Research Group / NASA Ames Research Center / Moffett Field, California / (415)694-6072 », sans date. Le texte liminaire de la page 1 dit bien « This procedure for collecting workload ratings was developed by the Human Performance Group at NASA Ames Research Center during a three year research effort ». La cosignature Hart + Staveland est attestée sur pièce et dans les deux sens : la bibliographie du booklet lui-même (page imprimée 8, PDF p. 14) porte « Hart, S. G., & Staveland, L. E. (In press). Development of a multi-dimensional workload rating scale: Results of empirical and theoretical research. In P. A. Hancock & N. Meshkati (Eds.), Human Mental Workload. Amsterdam: Elsevier. » Aucun troisième cosignataire n'apparaît, aucun des deux n'est escamoté.",
+      "SOURCE 1 — l'URL rend le document annoncé (titre, éditeur collectif, lieu, absence de date imprimée : tous vérifiés sur les images ci-dessus). Réserve de pagination : la fiche écrit « 19 p. et annexes », or les annexes sont À L'INTÉRIEUR de la pagination — table des matières (PDF p. 5) et folios lus : Appendix A p. 13, B p. 14, C p. 17, D p. 18, E p. 19, dernière page numérotée du document. Lire plutôt « 19 p., annexes comprises ». Écart trop ténu pour égarer un lecteur, la référence résout ; à corriger en passant.",
+      "SOURCE 2 — curl https://ntrs.nasa.gov/api/citations/20000021488 → HTTP 200. La notice porte littéralement title = « NASA Task Load Index (TLX): Paper and Pencil Package - Volume 1.0 », authorAffiliations[0].meta.author.name = « Hart, Sandra G. », publications[0].publicationDate = « 1986-01-01 ». La fiche décrit donc exactement la notice, y compris le point délicat : le millésime 1986 et le nom de Hart sont lus sur le catalogue, jamais sur une signature du document. Ce partage est correctement fait.",
+      "SOURCE 3 — curl https://api.crossref.org/works/10.1016/S0166-4115(08)62386-9 → HTTP 200 : titre « Development of NASA-TLX (Task Load Index): Results of Empirical and Theoretical Research », container « Human Mental Workload » / « Advances in Psychology », p. 139-183, 1988, Elsevier, type book-chapter (Crossref ne rend ni auteurs ni éditeurs). OpenAlex sur le même DOI → HTTP 200, authorships = Sandra G. Hart, Lowell E. Staveland, 1988, p. 139-183. Direction du volume vérifiée par deux voies indépendantes de la notice de la fiche : OpenLibrary (« Human mental workload », Peter A. Hancock, 1988, North-Holland, ISBN 0444703888) et surtout la bibliographie du booklet de 1986 elle-même, qui nomme « P. A. Hancock & N. Meshkati (Eds.) ». Tous les éléments affichés résolvent.",
+      "PROSE — le hook est une question, sans énoncé factuel à excéder. Le summary est tenu par le texte, dans les deux sens : « six sous-échelles » et « moyenne pondérée » = section 1 ; « pondérées par ce que le sujet juge y avoir compté » = §2.1 (« determined by their responses to pair-wise comparisons among the six factors », « from the raters' perspectives ») et §2.2 ; le score global = §2.4 (« The sum of the weighted ratings for each task is divided by 15 »). « Notées après la tâche » est couvert par §2.1 (« Magnitude ratings on each subscale are obtained after each performance of a task or task segment ») ; je signale seulement que §2.3 ouvre aussi le relevé « during a task », de sorte que le summary retient le cas général et non la totalité des cas — resserrement sur un détail de procédure, pas sur le concept, donc pas trop-etroite.",
+      "À corriger en passant, sur le seul point qui touche l'attribution : la note dit que Hart et Staveland « n'y sont nommés qu'une fois ». Ils y sont nommés conjointement deux fois — corps du texte, page imprimée 3 (PDF p. 9) : « The results of the first validation study are summarized in Hart & Staveland (in press) », et bibliographie, page imprimée 8 (PDF p. 14) —, et Staveland figure en outre dans une troisième entrée bibliographique (« Staveland, L. E., Hart, S. G., & Yeh, Y.-Y. (1986). Memory and subjective workload assessment »). Le raisonnement de la note n'en est pas entamé (aucune de ces mentions n'est une signature), seul le décompte est faux.",
+      "Non atteint, et déclaré comme tel : le chapitre Hart & Staveland 1988 (p. 139-183) n'a pas été ouvert — ScienceDirect est sous péage et je n'ai pas cherché de contournement. La fiche le déclare elle-même en consulted = metadata-only, ce qui est la position honnête ; je ne conclus donc rien sur son contenu, seulement sur sa notice et sur sa signature telle que le booklet de 1986 la donne."
+    ]
   },
   "dossier": "corpus/evidence/nasa-tlx/lecture.json",
   "notes": [

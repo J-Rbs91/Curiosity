@@ -94,6 +94,56 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "automatisation-centree-humain",
+    "slug": "automatisation-centree-humain",
+    "title": "Automatisation centrée sur l'humain",
+    "authorLabel": "Charles E. Billings",
+    "hookQuestion": "À mesure que la machine s'interpose, que reste-t-il au pilote de son vol ?",
+    "shortExplanation": "Complexité, couplage, autonomie, rétroaction insuffisante tendent à éloigner le pilote des détails : il peut s'y impliquer moins et perdre la trace de l'état du système.",
+    "authors": [],
+    "themes": [
+      "automatisation-et-conception-cognitive"
+    ],
+    "themeLabel": "Ce que la machine retire, ce qu'elle devrait rendre",
+    "attributionNote": "Charles E. Billings signe seul le mémorandum de 1996, mais il écrit noir sur blanc que le terme n'est pas de lui : « The term is not mine, and I have been unable to find out who first conceived it. » Il renvoie à Sheridan, Norman, Rouse et Cooley pour les technologies dites centrées sur l'humain, et son propre avant-propos cite un plan professionnel de 1989 qui emploie déjà l'expression. Ce qu'il revendique est la doctrine qu'il désigne par ce nom, « a philosophy or construct which I call human-centered automation ». Aucune date d'origine du terme n'est établie. Deux cosignatures sont à connaître et ne se valent pas : celle de Sidney Dekker, au seul chapitre cosigné du volume, qui ne porte pas le concept ; et celle de Curtis Graeber, sur la planche de 1989 où les premiers principes paraissent pour la première fois en public, sous les deux noms, et que Billings cite dans sa propre bibliographie.",
+    "quotation": {
+      "text": "L'interposition de toujours plus d'automatisation entre le pilote et le véhicule tend à éloigner les pilotes de bien des détails de l'opération […].",
+      "reference": "Charles E. Billings, « Human-Centered Aviation Automation: Principles and Guidelines », NASA Technical Memorandum 110381, NASA Ames Research Center, février 1996, partie 1, chapitre 2, page imprimée 7, Partie 1, chapitre 2, p. 7",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Charles E. Billings, Human-Centered Aviation Automation: Principles and Guidelines, NASA Technical Memorandum 110381, NASA Ames Research Center, Moffett Field, février 1996, xviii + 198 p.",
+        "kind": "primary",
+        "reference": "Partie 1, chapitre 2, p. 7 · NTRS 19960016374",
+        "url": "https://ntrs.nasa.gov/api/citations/19960016374/downloads/19960016374.pdf"
+      },
+      {
+        "label": "Charles E. Billings, Human-Centered Aircraft Automation: A Concept and Guidelines, NASA Technical Memorandum 103885, NASA Ames Research Center, Moffett Field, août 1991, 122 p.",
+        "kind": "primary",
+        "reference": "Définition, au « nous » · NTRS 19910022821",
+        "url": "https://ntrs.nasa.gov/api/citations/19910022821/downloads/19910022821.pdf"
+      },
+      {
+        "label": "Curtis Graeber et Charles E. Billings, « Human-Centered Automation: Development of a Philosophy », communication à l'Aviation Safety/Automation Program Conference, NASA Ames Research Center, 11 et 12 octobre 1989, publiée en 1990.",
+        "kind": "primary",
+        "reference": "Première planche · NTRS 19910001631",
+        "url": "https://ntrs.nasa.gov/api/citations/19910001631/downloads/19910001631.pdf"
+      },
+      {
+        "label": "David D. Woods et Nadine B. Sarter, Learning from Automation Surprises and « Going Sour » Accidents: Progress on Human-Centered Automation, rapport final, NASA Ames Research Center, 19 janvier 1998, 42 p.",
+        "kind": "secondary-academic",
+        "reference": "Introduction et section 1 · NTRS 19980016965",
+        "url": "https://ntrs.nasa.gov/api/citations/19980016965/downloads/19980016965.pdf"
+      },
+      {
+        "label": "Charles E. Billings, Aviation Automation: The Search for a Human-Centered Approach, Mahwah (New Jersey), Lawrence Erlbaum Associates, 1997, 355 p. Refonte en volume du mémorandum de 1996 ; non ouverte.",
+        "kind": "primary",
+        "reference": "ISBN 0-8058-2127-9"
+      }
+    ]
+  },
+  {
     "id": "catachrese",
     "slug": "catachrese",
     "title": "Catachrèse",
@@ -122,6 +172,39 @@ export const generatedConcepts: Concept[] = [
         "kind": "primary",
         "reference": "« The notion of catachresis » · HAL hal-01020705",
         "url": "https://hal.science/hal-01020705v1"
+      }
+    ]
+  },
+  {
+    "id": "conception-ecologique-interface",
+    "slug": "conception-ecologique-interface",
+    "title": "Conception écologique d'interface",
+    "authorLabel": "Kim J. Vicente, Jens Rasmussen",
+    "hookQuestion": "Une interface peut-elle laisser agir par réflexe sans interdire de raisonner ?",
+    "shortExplanation": "Concevoir l'interface de façon à ne pas forcer le contrôle cognitif à un niveau plus élevé que la tâche ne l'exige, tout en soutenant chacun des trois niveaux.",
+    "authors": [],
+    "themes": [
+      "automatisation-et-conception-cognitive"
+    ],
+    "themeLabel": "Ce que la machine retire, ce qu'elle devrait rendre",
+    "attributionNote": "L'article de 1992 est cosigné par Kim J. Vicente et Jens Rasmussen, jamais l'un des deux seul. Ils ne forgent pas l'expression « ecological interface design » dans ce texte : elle figure déjà dans deux travaux cosignés antérieurs qu'ils citent, un rapport Risø de 1988 et un article de 1989. Ce qu'ils revendiquent est la seule formulation théorique : « the specific theoretical formulation presented here is a new one ». Le cadre s'appuie sur la taxonomie de Rasmussen telle qu'elle a paru en 1983, et non sur son rapport de 1981, que l'article ne cite nulle part. Le libellé français, lui, est de nous : il n'est pas attesté sous cette forme, même si une variante circule dans un autre ordre des mots.",
+    "quotation": {
+      "text": "[…] ne pas forcer le contrôle cognitif à un niveau plus élevé que ne l'exige la tâche, tout en apportant le soutien approprié aux trois niveaux.",
+      "reference": "Kim J. Vicente et Jens Rasmussen, « Ecological Interface Design: Theoretical Foundations », IEEE Transactions on Systems, Man, and Cybernetics, 22(4), 1992, p. 589-606. DOI 10.1109/21.156574. Lu sur le post-print DTU Orbit, section IV.E, p. 21 du post-print",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Kim J. Vicente et Jens Rasmussen, « Ecological Interface Design: Theoretical Foundations », IEEE Transactions on Systems, Man, and Cybernetics, vol. 22, n° 4, 1992, p. 589-606. Lu sur le post-print déposé par DTU Orbit.",
+        "kind": "primary",
+        "reference": "Section IV.E, p. 21 du post-print · 10.1109/21.156574",
+        "url": "https://backend.orbit.dtu.dk/ws/files/158017888/SMC.PDF"
+      },
+      {
+        "label": "Jens Rasmussen et Kim J. Vicente, « Coping with human errors through system design: implications for ecological interface design », International Journal of Man-Machine Studies, vol. 31, n° 5, 1989, p. 517-534.",
+        "kind": "primary",
+        "reference": "10.1016/0020-7373(89)90014-x",
+        "url": "https://doi.org/10.1016/0020-7373(89)90014-x"
       }
     ]
   },
@@ -158,6 +241,91 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "conscience-de-la-situation",
+    "slug": "conscience-de-la-situation",
+    "title": "Conscience de la situation",
+    "authorLabel": "Mica R. Endsley",
+    "hookQuestion": "Percevoir, comprendre, anticiper : ces trois niveaux décrivent-ils un état réel ?",
+    "shortExplanation": "Percevoir les éléments de la situation, comprendre leur signification, projeter leur état à court terme : trois niveaux, en amont de la décision et distincts d'elle.",
+    "authors": [],
+    "themes": [
+      "decision-et-conscience-de-la-situation"
+    ],
+    "themeLabel": "Percevoir, comprendre, anticiper, agir sans comparer",
+    "attributionNote": "La définition en trois niveaux est de Mica R. Endsley seule, et le seul texte ouvrable ne la produit pas : il la cite. Ce rapport de 1998 porte cinq signatures, Mica R. Endsley, Todd C. Farley, William M. Jones, Alan H. Midkiff et R. John Hansman, et il donne la définition entre guillemets en la rapportant à « Endsley (1988) », texte signé d'elle seule ; les quatre cosignataires sont les coauteurs du texte que la carte cite, et ils restent nommés dans sa première source. Le texte de 1988 et celui de 1995 sont fermés : la définition n'est ouvrable nulle part à sa source, seulement dans des textes qui la rapportent, et c'est pourquoi cette carte ne porte aucune citation. Le terme « situation awareness », lui, est plus ancien que la définition. Enfin, le concept est contesté dans sa propre communauté : on lui reproche de manquer de définition opérationnelle admise, et de raisonner en cercle quand on en fait la cause de l'erreur qui sert à le constater.",
+    "sources": [
+      {
+        "label": "Mica R. Endsley, Todd C. Farley, William M. Jones, Alan H. Midkiff et R. John Hansman, Situation Awareness Information Requirements for Commercial Airline Pilots, rapport ICAT-98-1, MIT, septembre 1998, 92 p.",
+        "kind": "primary",
+        "reference": "p. 1 à 3 · NTRS 20020030334",
+        "url": "https://ntrs.nasa.gov/api/citations/20020030334/downloads/20020030334.pdf"
+      },
+      {
+        "label": "Mica R. Endsley, « Design and Evaluation for Situation Awareness Enhancement », Proceedings of the Human Factors Society Annual Meeting, vol. 32, n° 2, 1988, p. 97-101.",
+        "kind": "primary",
+        "reference": "10.1177/154193128803200221",
+        "url": "https://doi.org/10.1177/154193128803200221"
+      },
+      {
+        "label": "Laura Louise Moens et coll., « Measuring Situation Awareness: A Meta-Review Across Domains », Human Factors, vol. 68, n° 5, 2026, p. 632-672. Méta-revue de quatorze revues systématiques, licence CC BY 4.0.",
+        "kind": "secondary-academic",
+        "reference": "Section « Theoretical Foundations » · 10.1177/00187208251412110",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13013663/fullTextXML"
+      },
+      {
+        "label": "Norman R. Hertz et Michael T. Hertz, « Situation Awareness and Situation Assessment: How Are They Related? », 17th International Symposium on Aviation Psychology, 2013, p. 104-109.",
+        "kind": "secondary-academic",
+        "reference": "p. 105-106",
+        "url": "https://corescholar.libraries.wright.edu/cgi/viewcontent.cgi?article=1017&context=isap_2013"
+      },
+      {
+        "label": "Béatrice Bailly, Conscience de la situation des conducteurs : aspects fondamentaux, méthodes, et application pour la formation des conducteurs, thèse de doctorat, Université Lumière Lyon 2, 2004, 364 p.",
+        "kind": "francophone-reception",
+        "reference": "p. 9-10, 27 et 29 · HAL tel-00543981",
+        "url": "https://theses.hal.science/tel-00543981/document"
+      }
+    ]
+  },
+  {
+    "id": "controle-supervise",
+    "slug": "controle-supervise",
+    "title": "Contrôle supervisé",
+    "authorLabel": "Thomas B. Sheridan, William L. Verplank, Thurston L. Brooks",
+    "hookQuestion": "Entre tout faire soi-même et laisser faire la machine, combien de positions ?",
+    "shortExplanation": "Une machine décide seule sur de courtes périodes ; la personne planifie, surveille, reprend la main par intermittence. Le rapport en ordonne dix degrés d'automatisation.",
+    "authors": [],
+    "themes": [
+      "automatisation-et-conception-cognitive"
+    ],
+    "themeLabel": "Ce que la machine retire, ce qu'elle devrait rendre",
+    "attributionNote": "La communication de 1978 porte trois signatures, Thomas B. Sheridan, William L. Verplank et Thurston L. Brooks, que l'usage réduit à deux et parfois à une. Une distinction est à tenir : l'échelle des dix degrés d'automatisation ne figure pas dans cette communication à trois, mais dans le rapport du MIT signé des deux premiers. La formulation par laquelle l'échelle est presque toujours citée, « the computer offers no assistance », ne se trouve dans aucun des deux textes : elle vient de reprises postérieures. L'expression « supervisory control », enfin, est employée comme reçue, sans référence fondatrice : 1978 n'en est pas la date d'origine.",
+    "quotation": {
+      "text": "Le contrôle supervisé est un schéma de commande hiérarchique où un système […] est télésurveillé et actionné par intermittence […] par une personne.",
+      "reference": "Thomas B. Sheridan, William L. Verplank et Thurston L. Brooks, « Human/computer control of undersea teleoperators », dans The 14th Annual Conference on Manual Control, NASA Conference Publication 2060, NASA Ames Research Center, novembre 1978, p. 343 à 357. Notice NTRS 19790007441, p. 343, section 1, 2e paragraphe",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Thomas B. Sheridan, William L. Verplank et Thurston L. Brooks, « Human/computer control of undersea teleoperators », dans The 14th Annual Conference on Manual Control, NASA CP-2060, novembre 1978, p. 343-357.",
+        "kind": "primary",
+        "reference": "p. 343, section 1 · NTRS 19790007441",
+        "url": "https://ntrs.nasa.gov/api/citations/19790007441/downloads/19790007441.pdf"
+      },
+      {
+        "label": "Thomas B. Sheridan et William L. Verplank, Human and Computer Control of Undersea Teleoperators, rapport technique du Man-Machine Systems Laboratory, MIT, pour l'Office of Naval Research, 14 juillet 1978, 186 p.",
+        "kind": "primary",
+        "reference": "p. 1-1 ; table 8.2, p. 8-17 à 8-19 · DTIC AD-A057655",
+        "url": "https://archive.org/download/DTIC_ADA057655/DTIC_ADA057655.pdf"
+      },
+      {
+        "label": "NASA, The 14th Annual Conference on Manual Control, NASA Conference Publication 2060, Ames Research Center, novembre 1978, 692 p. Volume d'actes, ouvert pour l'avant-propos et la table des matières.",
+        "kind": "primary",
+        "reference": "Avant-propos et table des matières · NTRS 19790007417",
+        "url": "https://ntrs.nasa.gov/api/citations/19790007417/downloads/19790007417.txt"
+      }
+    ]
+  },
+  {
     "id": "debat-de-normes",
     "slug": "debat-de-normes",
     "title": "Débats de normes",
@@ -180,6 +348,51 @@ export const generatedConcepts: Concept[] = [
         "kind": "primary",
         "reference": "p. 131 · 10.4000/activites.1728",
         "url": "https://journals.openedition.org/activites/1728"
+      }
+    ]
+  },
+  {
+    "id": "decision-reconnue-d-emblee",
+    "slug": "decision-reconnue-d-emblee",
+    "title": "Décision reconnue d'emblée",
+    "authorLabel": "Gary Klein",
+    "hookQuestion": "Et si l'expert décidait sans jamais comparer deux options ?",
+    "shortExplanation": "L'expert reconnaît la dynamique d'une situation, en tire d'emblée une conduite plausible, puis l'évalue en l'imaginant se dérouler : il ne compare pas deux options.",
+    "authors": [],
+    "themes": [
+      "decision-et-conscience-de-la-situation"
+    ],
+    "themeLabel": "Percevoir, comprendre, anticiper, agir sans comparer",
+    "attributionNote": "Le rapport de 1993 est signé de Gary Klein seul, et il rapporte le modèle au travail de son équipe : « We derived the RPD model from what they told us. » La paternité du modèle n'est pas disputée ; celle de son nom est cosignée, et elle est plus ancienne que ce rapport. Le nom figure déjà dans l'étude sur les chefs d'intervention sur incendie signée avec Roberta Calderwood et Anne Clinton-Cirocco, publiée en 1986, dont le résumé d'éditeur porte « A Recognition Primed Decision (RPD) model is proposed » ; et la mise en forme publiée en 2010 du rapport inédit de 1985, dont cette communication rendait compte, déclare que c'est cette étude qui avait identifié le modèle. Ce constat a sa limite : le corps de l'article de 1986 est fermé et n'a pas été lu, il repose sur ce résumé et sur cette déclaration. Le satisficing, enfin, n'est pas de Klein : il le rapporte à Simon.",
+    "quotation": {
+      "text": "Les premières études portaient sur des chefs d'intervention sur incendie. […] ils soutenaient qu'ils ne comparaient presque jamais d'options.",
+      "reference": "Gary Klein, Naturalistic Decision Making: Implications for Design, State-of-the-Art Report SOAR CSERIAC 93-01, Crew System Ergonomics Information Analysis Center, avril 1993, chapitre 3, encadré « Example 3.2 NDM: The Recognition-Primed Decision (RPD) model », p. 32. Rapport DTIC ADA492114, DOI 10.21236/ada492114, Chapitre 3, exemple 3.2, p. 32",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Gary Klein, Naturalistic Decision Making: Implications for Design, State-of-the-Art Report SOAR CSERIAC 93-01, Crew System Ergonomics Information Analysis Center, Wright-Patterson AFB, avril 1993, 182 p. Rapport DTIC ADA492114.",
+        "kind": "primary",
+        "reference": "Chapitre 3, exemple 3.2, p. 32 · 10.21236/ada492114",
+        "url": "https://archive.org/download/DTIC_ADA492114/DTIC_ADA492114.pdf"
+      },
+      {
+        "label": "Gary A. Klein et Donald MacGregor, Knowledge Elicitation of Recognition-Primed Decision Making, ARI Technical Report 799, U.S. Army Research Institute for the Behavioral and Social Sciences, juillet 1988, 61 p.",
+        "kind": "primary",
+        "reference": "p. 17 · 10.21236/ada199076",
+        "url": "https://archive.org/download/DTIC_ADA199076/DTIC_ADA199076.pdf"
+      },
+      {
+        "label": "Gary A. Klein, Roberta Calderwood et Anne Clinton-Cirocco, « Rapid decision making on the fire ground », Proceedings of the Human Factors Society Annual Meeting, vol. 30, n° 6, 1986, p. 576-580. Étude fondatrice, fermée.",
+        "kind": "primary",
+        "reference": "Notice seule, texte fermé · 10.1177/154193128603000616",
+        "url": "https://doi.org/10.1177/154193128603000616"
+      },
+      {
+        "label": "Raanan Lipshitz, Gary Klein, Judith Orasanu et Eduardo Salas, « Taking stock of naturalistic decision making », Journal of Behavioral Decision Making, vol. 14, n° 5, 2001, p. 331-352. Bilan collectif du champ, non ouvert.",
+        "kind": "secondary-academic",
+        "reference": "Notice seule, texte non ouvert · 10.1002/bdm.381",
+        "url": "https://doi.org/10.1002/bdm.381"
       }
     ]
   },
@@ -475,6 +688,71 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "gestion-du-risque-fatigue",
+    "slug": "gestion-du-risque-fatigue",
+    "title": "Systèmes de gestion du risque fatigue",
+    "authorLabel": "Philippe Cabon",
+    "hookQuestion": "Limiter les heures ou gérer le risque : la fatigue se règle-t-elle d'avance ?",
+    "shortExplanation": "Au lieu de plafonner les heures par règlement, on limite le temps de service selon un risque fatigue évalué. Mais le lien entre fatigue et sécurité n'est pas linéaire.",
+    "authors": [],
+    "themes": [
+      "charge-et-vigilance"
+    ],
+    "themeLabel": "Des grandeurs qu'on définit pour les gérer",
+    "attributionNote": "L'article de 2015 est signé de Philippe Cabon seul, mais l'appellation « système de gestion du risque fatigue » n'est pas de lui : il l'introduit au passif et lui donne deux origines institutionnelles, une recommandation de l'Organisation de l'aviation civile internationale, qu'il cite sans que sa bibliographie la date, et les autorités australiennes de l'aviation civile. Ce qui lui revient en propre est l'analyse critique : il expose le postulat d'un lien linéaire entre fatigue et sécurité pour le contester aussitôt, à partir de ses propres recherches. Il est par ailleurs cosignataire d'un des textes de référence qu'il cite : acteur du champ qu'il décrit, non auteur de son vocabulaire.",
+    "quotation": {
+      "text": "Elles consistent à limiter le temps de service sur la base d’un système de gestion du risque fatigue plutôt que sur la base d’une réglementation.",
+      "reference": "Philippe Cabon, « Des approches prescriptives aux systèmes de gestion du risque fatigue », Perspectives interdisciplinaires sur le travail et la santé (PISTES), 17-2, mis en ligne le 6 décembre 2015. DOI 10.4000/pistes.4571, § 31, conclusion"
+    },
+    "sources": [
+      {
+        "label": "Philippe Cabon, « Des approches prescriptives aux systèmes de gestion du risque fatigue », Perspectives interdisciplinaires sur le travail et la santé (PISTES), 17-2, mis en ligne le 6 décembre 2015. Licence CC BY-NC-ND 4.0.",
+        "kind": "primary",
+        "reference": "§ 31, conclusion · 10.4000/pistes.4571",
+        "url": "https://journals.openedition.org/pistes/4571"
+      }
+    ]
+  },
+  {
+    "id": "glissements-de-l-action",
+    "slug": "glissements-de-l-action",
+    "title": "Glissements de l'action",
+    "authorLabel": "Donald A. Norman",
+    "hookQuestion": "Comment fait-on autre chose que ce qu'on avait l'intention de faire ?",
+    "shortExplanation": "Le glissement est une action exécutée sans être voulue. Il n'arrive pas au hasard : des actions possibles entrent en conflit, ou les éléments d'une séquence se mêlent.",
+    "authors": [],
+    "themes": [
+      "erreur-humaine-et-fiabilite"
+    ],
+    "themeLabel": "Nommer, classer et quantifier ce qui échappe à l'opérateur",
+    "attributionNote": "Le rapport de novembre 1979 est signé de Donald A. Norman seul, relevé à trois endroits du document, mais il ne revendique pas le mot « slip » : il le reçoit de la tradition freudienne et linguistique, où il désigne d'abord le lapsus de parole. Ce qu'il déclare faire est un déplacement d'objet, de la parole vers l'action. La collecte des incidents, elle, fut collective : il en remercie le groupe de recherche LNR, et Jonathan Grudin en particulier. Le rapport cite James Reason à quatre reprises, et Jens Rasmussen citera Norman à son tour en 1981 : ces travaux sur l'erreur sont contemporains et se lisent. Sur la cote enfin, la couverture porte « Report No. 7906 » et le formulaire de la page suivante « 7905 » : le document se contredit d'un chiffre.",
+    "quotation": {
+      "text": "Un glissement (« slip ») se produit lorsque quelqu'un exécute une action qui n'est pas voulue.",
+      "reference": "Donald A. Norman, Slips of the Mind and an Outline for a Theory of Action, Report No. 7906, Center for Human Information Processing, University of California, San Diego, novembre 1979 (rapport DTIC AD-A081932), section « Slips: Window to the Mind », page imprimée 3, p. 3",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Donald A. Norman, Slips of the Mind and an Outline for a Theory of Action, Report No. 7906, Center for Human Information Processing, University of California, San Diego, novembre 1979, 34 p. Rapport DTIC AD-A081932.",
+        "kind": "primary",
+        "reference": "p. 3 · 10.21236/ADA081932",
+        "url": "https://archive.org/download/DTIC_ADA081932/DTIC_ADA081932.pdf"
+      },
+      {
+        "label": "Donald A. Norman, « Categorization of action slips », Psychological Review, vol. 88, n° 1, 1981, p. 1-15. Version révisée publiée, fermée : notice seule, le texte n'a pas été ouvert.",
+        "kind": "primary",
+        "reference": "Notice seule, texte fermé · 10.1037/0033-295X.88.1.1",
+        "url": "https://doi.org/10.1037/0033-295X.88.1.1"
+      },
+      {
+        "label": "Donald A. Norman, Curriculum Vitae, version du 5 janvier 2024, jnd.org. Ouvert sur la seule rubrique des rapports techniques, pour établir comment l'auteur cote lui-même ce rapport.",
+        "kind": "primary",
+        "reference": "Rubrique des rapports techniques",
+        "url": "https://jnd.org/wp-content/uploads/2024/01/Don-Norman-Curriculum-Vitae.pdf"
+      }
+    ]
+  },
+  {
     "id": "gouvernement-par-les-chiffres",
     "slug": "gouverner-par-le-reel",
     "title": "Le benchmarking : gouverner par le réel",
@@ -701,6 +979,129 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "modele-du-fromage-suisse",
+    "slug": "modele-du-fromage-suisse",
+    "title": "Modèle du fromage suisse",
+    "authorLabel": "James Reason",
+    "hookQuestion": "Pourquoi faut-il plusieurs défaillances alignées pour qu'un accident passe ?",
+    "shortExplanation": "Les couches de défense sont trouées, et les trous se déplacent : l'accident passe quand ils s'alignent. Ils naissent de défaillances actives et de conditions latentes.",
+    "authors": [],
+    "themes": [
+      "erreur-humaine-et-fiabilite"
+    ],
+    "themeLabel": "Nommer, classer et quantifier ce qui échappe à l'opérateur",
+    "attributionNote": "L'article de 2000 est signé de James Reason seul, et la distinction entre défaillances actives et conditions latentes est bien de lui : il la renvoie à son livre Human Error (1990). Le nom du modèle, non. Il emploie « the Swiss cheese model » en titre de section et en légende de figure sans dire d'où il vient, puis écrit en 2006, dans une note cosignée avec Erik Hollnagel et Jean Paries, qu'il n'est pas à l'origine de l'appellation et qu'elle vient probablement de Rob Lee. Qui l'a imprimée le premier, et quand, n'est pas établi. La même note attribue la représentation en plans successifs à John Wreathall et à lui conjointement.",
+    "quotation": {
+      "text": "Les trous dans les défenses apparaissent pour deux raisons : les défaillances actives et les conditions latentes.",
+      "reference": "James Reason, « Human error: models and management », BMJ, vol. 320, n° 7237, 18 mars 2000, p. 768-770. DOI 10.1136/bmj.320.7237.768. Texte intégral lu sur PubMed Central, PMC1117770, Section « Swiss cheese model », 3e §",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "James Reason, « Human error: models and management », BMJ, vol. 320, n° 7237, 18 mars 2000, p. 768-770. Texte intégral lu sur PubMed Central (PMC1117770).",
+        "kind": "primary",
+        "reference": "Section « Swiss cheese model » · 10.1136/bmj.320.7237.768",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1117770/"
+      },
+      {
+        "label": "James Reason, Erik Hollnagel et Jean Paries, Revisiting the « Swiss Cheese » Model of Accidents, EEC Note No. 13/06, EUROCONTROL Experimental Centre, Brétigny-sur-Orge, octobre 2006, x + 25 p.",
+        "kind": "primary",
+        "reference": "Section 3, p. 4",
+        "url": "https://www.eurocontrol.int/sites/default/files/library/017_Swiss_Cheese_Model.pdf"
+      },
+      {
+        "label": "Justin Larouzée et Jean-Christophe Le Coze, « Good and bad reasons: The Swiss cheese model and its critics », Safety Science, vol. 126, 2020, article 104660. Version déposée sur HAL (ineris-03318305).",
+        "kind": "secondary-academic",
+        "reference": "Section 2.2.3 et note 7 · 10.1016/j.ssci.2020.104660",
+        "url": "https://ineris.hal.science/ineris-03318305/document"
+      },
+      {
+        "label": "Justin Larouzée, Franck Guarnieri et Denis Besnard, Le modèle de l'erreur humaine de James Reason, papier de recherche CRC_WP_2014_24, Centre de recherche sur les risques et les crises, MINES ParisTech, décembre 2014, 44 p.",
+        "kind": "francophone-reception",
+        "reference": "p. 18 · HAL hal-01102402",
+        "url": "https://minesparis-psl.hal.science/hal-01102402/document"
+      }
+    ]
+  },
+  {
+    "id": "nasa-tlx",
+    "slug": "nasa-tlx",
+    "title": "NASA-TLX : la charge en six dimensions",
+    "authorLabel": "Sandra G. Hart, Lowell E. Staveland",
+    "hookQuestion": "Faute de règle pour mesurer la charge, à qui demander ce qu'elle a coûté ?",
+    "shortExplanation": "Six sous-échelles notées après la tâche, pondérées par ce que le sujet juge y avoir compté : leur moyenne pondérée donne un score global de charge de travail.",
+    "authors": [],
+    "themes": [
+      "charge-et-vigilance"
+    ],
+    "themeLabel": "Des grandeurs qu'on définit pour les gérer",
+    "attributionNote": "Le document ouvert ne porte aucun nom de personne. Sa couverture et sa page de titre sont signées « Human Performance Research Group, NASA Ames Research Center », et aucune date n'y est imprimée. Le texte rapporte l'instrument à un collectif et à trois ans de travaux : « This procedure for collecting workload ratings was developed by the Human Performance Group at NASA Ames Research Center. » Sandra G. Hart et Lowell E. Staveland n'y sont nommés que deux fois, ensemble, dans le corps du texte et dans la bibliographie, comme auteurs d'une étude de validation alors à paraître, et aucune de ces mentions n'est une signature ; ce chapitre de 1988, d'où vient l'attribution usuelle, est fermé et n'a pas été ouvert. « Hart, 1986 » est donc une attribution de catalogue, celle de la notice NTRS, et non une signature : les deux noms portés ici sont ceux que le document désigne, pas ceux qu'il signe.",
+    "quotation": {
+      "text": "Le NASA Task Load Index est une procédure de notation multidimensionnelle qui fournit un score global de charge de travail […] sur six sous-échelles.",
+      "reference": "Human Performance Research Group, NASA Ames Research Center, « NASA Task Load Index (TLX) v. 1.0, Paper and Pencil Package », Moffett Field, Californie. Notice NTRS 20000021488, qui attribue le document à Sandra G. Hart et le date de 1986, Section 1 « Background », p. 1",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Human Performance Research Group, NASA Ames Research Center, NASA Task Load Index (TLX) v. 1.0, Paper and Pencil Package, Moffett Field, Californie, 19 pages imprimées, annexes comprises. Document sans date imprimée.",
+        "kind": "primary",
+        "reference": "Section 1 « Background », p. 1 · NTRS 20000021488",
+        "url": "https://ntrs.nasa.gov/api/citations/20000021488/downloads/20000021488.pdf"
+      },
+      {
+        "label": "Notice de catalogue NTRS du même document, qui l'attribue à « Hart, Sandra G. » et le date du 1er janvier 1986, et le titre « NASA Task Load Index (TLX): Paper and Pencil Package, Volume 1.0 ».",
+        "kind": "primary",
+        "reference": "Notice 20000021488 · NTRS 20000021488",
+        "url": "https://ntrs.nasa.gov/api/citations/20000021488"
+      },
+      {
+        "label": "Sandra G. Hart et Lowell E. Staveland, « Development of NASA-TLX (Task Load Index): Results of Empirical and Theoretical Research », dans P. A. Hancock et N. Meshkati (dir.), Human Mental Workload, Elsevier, 1988, p. 139-183.",
+        "kind": "primary",
+        "reference": "10.1016/S0166-4115(08)62386-9",
+        "url": "https://doi.org/10.1016/S0166-4115(08)62386-9"
+      }
+    ]
+  },
+  {
+    "id": "niveaux-de-controle-cognitif",
+    "slug": "niveaux-de-controle-cognitif",
+    "title": "Trois niveaux de comportement",
+    "authorLabel": "Jens Rasmussen",
+    "hookQuestion": "Se tromper en pilotant un geste ou en raisonnant : est-ce la même erreur ?",
+    "shortExplanation": "Selon que l'action est une routine, l'application d'une règle apprise ou un plan tiré de connaissances, ce n'est pas le même contrôle qui opère, ni les mêmes erreurs.",
+    "authors": [],
+    "themes": [
+      "erreur-humaine-et-fiabilite"
+    ],
+    "themeLabel": "Nommer, classer et quantifier ce qui échappe à l'opérateur",
+    "attributionNote": "Le rapport Risø de 1981 est signé de Jens Rasmussen seul, mais il n'y forge pas le modèle : la phrase citée s'ouvre sur « In this model » et renvoie à ses propres travaux de 1976 et 1980. Il n'écrit jamais le sigle SRK, ni « niveaux de contrôle cognitif » : il écrit « trois niveaux de comportement », et l'intitulé sous lequel le modèle circule est postérieur à ce texte, sans qu'on sache de qui il vient. Le même rapport cite James Reason et Donald Norman sur l'erreur, à la même période : ce ne sont pas trois découvertes indépendantes.",
+    "quotation": {
+      "text": "Dans ce modèle, une distinction est établie entre trois niveaux de comportement : performance fondée sur l'habileté, la règle et la connaissance […]",
+      "reference": "Jens Rasmussen, « Human errors. A taxonomy for describing human malfunction in industrial installations », Risø-M No. 2304, Risø National Laboratory, Roskilde, août 1981, p. 11",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Jens Rasmussen, « Human errors. A taxonomy for describing human malfunction in industrial installations », Risø-M No. 2304, Risø National Laboratory, Roskilde, août 1981, 28 p. Déposé en libre accès par DTU Orbit.",
+        "kind": "primary",
+        "reference": "p. 11 · ISBN 87-550-0784-8",
+        "url": "https://backend.orbit.dtu.dk/ws/files/137196604/RM2304.PDF"
+      },
+      {
+        "label": "Jens Rasmussen, « Human Errors: A Taxonomy for Describing Human Malfunction in Industrial Installations », Journal of Occupational Accidents, vol. 4, n° 2-4, 1982, p. 311-333.",
+        "kind": "primary",
+        "reference": "Même phrase, p. 5 du PDF déposé · 10.1016/0376-6349(82)90041-4",
+        "url": "https://backend.orbit.dtu.dk/ws/files/158020073/ERTAX1.PDF"
+      },
+      {
+        "label": "Jens Rasmussen, « Skills, rules, and knowledge; signals, signs, and symbols, and other distinctions in human performance models », IEEE Transactions on Systems, Man, and Cybernetics, SMC-13(3), mai 1983, p. 257-266.",
+        "kind": "primary",
+        "reference": "10.1109/tsmc.1983.6313160",
+        "url": "https://doi.org/10.1109/tsmc.1983.6313160"
+      }
+    ]
+  },
+  {
     "id": "nombres-et-emotions",
     "slug": "nombres-et-emotions",
     "title": "Nombres et émotions",
@@ -811,6 +1212,45 @@ export const generatedConcepts: Concept[] = [
         "label": "Florence Jany-Catrice, La performance totale : nouvel esprit du capitalisme ?, Villeneuve-d'Ascq, Presses universitaires du Septentrion, coll. « Capitalisme, éthique, institutions », 2012, 176 p.",
         "kind": "primary",
         "url": "https://hal.science/hal-04148612"
+      }
+    ]
+  },
+  {
+    "id": "probabilite-erreur-humaine",
+    "slug": "probabilite-erreur-humaine",
+    "title": "Probabilité d'erreur humaine",
+    "authorLabel": "Alan D. Swain, Henry E. Guttmann",
+    "hookQuestion": "Peut-on mettre un chiffre sur la chance qu'un opérateur se trompe ?",
+    "shortExplanation": "La probabilité qu'une erreur survienne dans une tâche donnée sert d'indice de base. Faute de données réelles, la plupart de ces valeurs mêlent données et jugement.",
+    "authors": [],
+    "themes": [
+      "erreur-humaine-et-fiabilite"
+    ],
+    "themeLabel": "Nommer, classer et quantifier ce qui échappe à l'opérateur",
+    "attributionNote": "Le Handbook de 1983 est cosigné : la couverture Sandia et la page de titre portent « A. D. Swain, H. E. Guttmann », et l'usage qui dit « Swain » tout court efface un coauteur présent d'un bout à l'autre. Le sigle THERP, lui, est antérieur de vingt ans au manuel et rapporté par le texte à Swain seul : les auteurs datent son premier emploi de novembre 1962. Les prénoms ne viennent pas d'un catalogue : la page de titre ne donne que des initiales, mais la feuille bibliographique NRC FORM 335 reliée en fin de rapport porte, au champ « AUTHOR(S) », « Alan D. Swain and Henry E. Guttmann ».",
+    "quotation": {
+      "text": "La probabilité d'erreur humaine (HEP) est la probabilité que, lorsqu'une tâche donnée est exécutée, une erreur se produise.",
+      "reference": "Alan D. Swain et Henry E. Guttmann, Handbook of Human Reliability Analysis with Emphasis on Nuclear Power Plant Applications. Final Report, NUREG/CR-1278, SAND80-0200, Sandia National Laboratories pour l'U.S. Nuclear Regulatory Commission, août 1983, chapitre 2 « Explanation of Some Basic Terms », section « Human Error Probability », p. 2-17",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Alan D. Swain et Henry E. Guttmann, Handbook of Human Reliability Analysis with Emphasis on Nuclear Power Plant Applications. Final Report, NUREG/CR-1278, SAND80-0200, Sandia National Laboratories pour l'U.S. NRC, août 1983.",
+        "kind": "primary",
+        "reference": "p. 2-17 · 10.2172/5752058",
+        "url": "https://www.nrc.gov/docs/ML0712/ML071210299.pdf"
+      },
+      {
+        "label": "Même rapport, réhébergé par la UNT Digital Library (UNT Libraries Government Documents Department) avec une couche de reconnaissance optique propre, 711 pages. C'est la numérisation du DOE/OSTI, non un second scan.",
+        "kind": "primary",
+        "reference": "p. 2-17, 5-2 et 5-3 · ark:/67531/metadc1097337",
+        "url": "https://digital.library.unt.edu/ark:/67531/metadc1097337/"
+      },
+      {
+        "label": "Notice OSTI (Department of Energy) du même rapport, qui porte le DOI et un fichier intégral déposé. Notice relevée pour la référence ; ce fichier n'a pas été ouvert.",
+        "kind": "primary",
+        "reference": "Notice 5752058 · 10.2172/5752058",
+        "url": "https://www.osti.gov/biblio/5752058"
       }
     ]
   },
@@ -1014,6 +1454,72 @@ export const generatedConcepts: Concept[] = [
         "kind": "secondary-academic",
         "reference": "10.4000/13g8p",
         "url": "https://journals.openedition.org/pistes/8921"
+      }
+    ]
+  },
+  {
+    "id": "resilience-fondee-sur-les-ressources",
+    "slug": "resilience-fondee-sur-les-ressources",
+    "title": "La résilience par les ressources",
+    "authorLabel": "Lucie Cuvelier, Pierre Falzon",
+    "hookQuestion": "Choisit-on la conduite la plus sûre, ou celle que l'équipe pourra tenir ?",
+    "shortExplanation": "Anticiper, c'est concevoir une enveloppe de situations tenables avec les ressources de l'équipe : une gestion qui s'ajoute aux protocoles au lieu de les remplacer.",
+    "authors": [],
+    "themes": [
+      "securite-et-resilience"
+    ],
+    "themeLabel": "Ce qui fait tenir le système, pas seulement ce qui le fait tomber",
+    "attributionNote": "Le chapitre de 2011 est cosigné par Lucie Cuvelier et Pierre Falzon, dans cet ordre. Ils ne revendiquent ni le mot « résilience » ni sa définition : ils notent que le concept n'est pas stabilisé, renvoient à Sheridan pour ce constat, et reprennent explicitement la dernière définition proposée par Erik Hollnagel, avec sa page. Ce qui est d'eux est la lecture par les ressources : anticiper, c'est concevoir une enveloppe de situations possibles ajustée aux ressources, notamment intrinsèques, des opérateurs. La même thèse se lit la même année dans la thèse de doctorat de Lucie Cuvelier, signée d'elle seule et dirigée par Pierre Falzon ; le texte cité ici est le texte cosigné.",
+    "quotation": {
+      "text": "le développement de la résilience inclut […] la gestion des ressources individuelles et collectives développées dans chaque service, au niveau local.",
+      "reference": "Lucie Cuvelier et Pierre Falzon, « Resilience As Resource-based Design Of Anticipated Situations », in Proceedings of the Fourth Resilience Engineering Symposium, Paris, Presses des Mines, 2011, p. 72-78, § 13, dernière phrase (conclusion)",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Lucie Cuvelier et Pierre Falzon, « Resilience As Resource-based Design Of Anticipated Situations », dans Proceedings of the Fourth Resilience Engineering Symposium, Paris, Presses des Mines, 2011, p. 72-78.",
+        "kind": "primary",
+        "reference": "§ 13 · 10.4000/books.pressesmines.982",
+        "url": "https://books.openedition.org/pressesmines/982"
+      },
+      {
+        "label": "Lucie Cuvelier, De la gestion des risques à la gestion des ressources de l'activité : étude de la résilience en anesthésie pédiatrique, thèse de doctorat d'ergonomie, CNAM, 2011, 295 p. Thèse dirigée par Pierre Falzon.",
+        "kind": "primary",
+        "reference": "Résumé et chapitre de résultats · HAL tel-00665997",
+        "url": "https://theses.hal.science/tel-00665997/document"
+      }
+    ]
+  },
+  {
+    "id": "retroaction-et-automatisation",
+    "slug": "retroaction-et-automatisation",
+    "title": "La rétroaction manquante",
+    "authorLabel": "Donald A. Norman",
+    "hookQuestion": "Une machine qui fait bien son travail sans rien vous en dire : où est le problème ?",
+    "shortExplanation": "Le coupable n'est pas l'automatisation mais l'absence de rétroaction continue : sans elle, l'opérateur ne peut plus mettre à jour sa représentation du système.",
+    "authors": [],
+    "themes": [
+      "automatisation-et-conception-cognitive"
+    ],
+    "themeLabel": "Ce que la machine retire, ce qu'elle devrait rendre",
+    "attributionNote": "Le texte est signé de Donald A. Norman seul. Il ne revendique pas le paradoxe de l'automatisation : il attribue l'« ironie » de l'automatisation à Lisanne Bainbridge, qu'il cite par la reprise de 1987, et le mot « overautomation » de son titre n'est rapporté à personne, c'est un reproche reçu qu'il met entre guillemets. Ce qui est de lui est le renversement : la cause n'est ni l'automatisation ni son excès, mais le défaut de rétroaction. Le document lu est le tirage de juillet 1989, dont le titre et le résumé diffèrent de l'article paru en avril 1990 : la citation vaut pour ce tirage.",
+    "quotation": {
+      "text": "[…] le coupable n’est pas l’automatisation, c’est l’absence de rétroaction et d’interaction continues.",
+      "reference": "Donald A. Norman, « The \"Problem\" of Automation: Inappropriate Feedback and Interaction, Not \"Overautomation\" », ICS Report 8904, Institute for Cognitive Science, University of California, San Diego, juillet 1989 : version soumise, déposée sur NASA NTRS sous l'identifiant 19900004678, de l'article paru le 12 avril 1990 dans Philosophical Transactions of the Royal Society of London B, 327(1241), p. 585-593, DOI 10.1098/rstb.1990.0101, p. 4-5, section « Lack of Feedback »",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Donald A. Norman, « The \"Problem\" of Automation: Inappropriate Feedback and Interaction, Not \"Overautomation\" », ICS Report 8904, Institute for Cognitive Science, University of California, San Diego, juillet 1989.",
+        "kind": "primary",
+        "reference": "p. 4-5, section « Lack of Feedback »",
+        "url": "https://ntrs.nasa.gov/api/citations/19900004678/downloads/19900004678.pdf"
+      },
+      {
+        "label": "Donald A. Norman, « The 'problem' with automation: inappropriate feedback and interaction, not 'over-automation' », Philosophical Transactions of the Royal Society of London B, vol. 327, n° 1241, 12 avril 1990, p. 585-593.",
+        "kind": "primary",
+        "reference": "10.1098/rstb.1990.0101",
+        "url": "https://doi.org/10.1098/rstb.1990.0101"
       }
     ]
   },
