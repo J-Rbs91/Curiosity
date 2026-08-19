@@ -114,7 +114,13 @@ export function DeepeningDetail() {
           className="border-t border-line pt-6"
           style={{ marginTop: "var(--gap-section)" }}
         >
-          <h2 className="eyebrow">Ce que la carte n&apos;établit pas</h2>
+          {/*
+           * Le titre ne nomme pas la carte, et c'est la même règle que pour le texte : le
+           * lecteur ne sait pas qu'une carte existe, et il n'a pas à l'apprendre au moment où
+           * on lui dit ce qui reste incertain. Ce sont les sources qui manquent, pas une
+           * structure interne qui serait incomplète.
+           */}
+          <h2 className="eyebrow">Ce que les sources ne permettent pas d&apos;établir</h2>
           <div className="mt-3 space-y-[0.9em] text-sm leading-relaxed text-ink-faint">
             {deepening.limits.map((limite, index) => (
               <p key={index}>{limite}</p>

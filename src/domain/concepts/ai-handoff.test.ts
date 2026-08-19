@@ -80,7 +80,7 @@ describe("buildAISharePayload", () => {
     // troncature silencieuse retirerait les garde-fous sans que rien ne le signale.
     expect(payload).toContain(AI_LEARNING_PROMPT);
     expect(payload.indexOf("[INSTRUCTIONS POUR L'IA]")).toBeLessThan(
-      payload.indexOf("=== CARTE À ÉTUDIER ===")
+      payload.indexOf("=== CONTENU À ÉTUDIER ===")
     );
   });
 
@@ -107,7 +107,7 @@ describe("buildAISharePayload", () => {
     expect(payload).not.toMatch(/débutant, intermédiaire|quel est ton niveau/i);
     expect(payload).not.toContain("Explique-moi cette carte");
     // Une consigne neutre suffit pour les applications qui attendent une phrase d'ouverture.
-    expect(payload.trimEnd()).toMatch(/Utilise cette carte comme point de départ de notre discussion\.$/);
+    expect(payload.trimEnd()).toMatch(/Utilise ces éléments comme point de départ de notre discussion\.$/);
   });
 
   it("reste lisible en texte brut, sans balise ni rendu Markdown", () => {
@@ -338,7 +338,7 @@ describe("passage de relais sur une carte réelle du corpus", () => {
     expect(payload).toContain("Elle ne t'autorise pas à en reconstruire le contenu à partir de ta mémoire.");
 
     // Les instructions ne connaissent aucun auteur : seule la section carte en nomme.
-    const instructions = payload.slice(0, payload.indexOf("=== CARTE À ÉTUDIER ==="));
+    const instructions = payload.slice(0, payload.indexOf("=== CONTENU À ÉTUDIER ==="));
     expect(instructions).not.toContain("Crozier");
   });
 });

@@ -11,9 +11,62 @@ import { AI_LEARNING_PROMPT } from "./ai-prompt";
  */
 describe("AI_LEARNING_PROMPT", () => {
   it("conserve le cadre pédagogique et l'interdiction de le décrire", () => {
-    expect(AI_LEARNING_PROMPT).toContain("Ne décris jamais cette méthode.");
+    expect(AI_LEARNING_PROMPT).toContain(
+      "Cette progression ne doit jamais être annoncée ou décrite à l'utilisateur."
+    );
     expect(AI_LEARNING_PROMPT).toContain("passer du niveau débutant au niveau expert");
     expect(AI_LEARNING_PROMPT).toContain("niveau académique substantiel");
+  });
+
+  /**
+   * L'ordre d'introduction des idées.
+   *
+   * C'est la règle dont l'absence coûtait le plus cher, et elle ne se voyait pas : un modèle
+   * à qui l'on transmet une fiche documentaire en reprend le vocabulaire savant dès la
+   * première phrase, et rend une explication juste que personne ne peut suivre. Rien dans
+   * l'ancien texte ne le lui interdisait, puisqu'il demandait seulement de « commencer par
+   * rendre les idées accessibles ».
+   */
+  it("commande l'ordre des idées par l'intelligibilité, pas par le vocabulaire disponible", () => {
+    expect(AI_LEARNING_PROMPT).toContain("ORDRE D'INTRODUCTION DES IDÉES");
+    expect(AI_LEARNING_PROMPT).toContain(
+      "N'introduis pas dès le début le vocabulaire spécialisé de la discipline"
+    );
+    expect(AI_LEARNING_PROMPT).toContain(
+      "Le vocabulaire académique doit servir à préciser une compréhension en cours, et non constituer la condition préalable à cette compréhension."
+    );
+    expect(AI_LEARNING_PROMPT).toContain("PROGRESSION DE LA DENSITÉ CONCEPTUELLE");
+    // Chaque palier doit valoir seul : un lecteur qui s'arrête tôt doit avoir compris.
+    expect(AI_LEARNING_PROMPT).toContain("suffisamment autonome pour qu'un lecteur puisse arrêter sa lecture");
+  });
+
+  /**
+   * L'invisibilité du dispositif.
+   *
+   * Le lecteur n'a aucune raison de savoir sous quelle forme les informations ont été
+   * transmises. Une explication qui parle de « la carte » ou du « corpus fourni » exhibe une
+   * plomberie qui n'est pas la sienne et le renvoie au dispositif au lieu du concept. La
+   * frontière documentaire reste due, mais dite en parlant de l'auteur, du texte, des sources.
+   */
+  it("rend le dispositif invisible sans effacer la frontière documentaire", () => {
+    expect(AI_LEARNING_PROMPT).toContain("INVISIBILITÉ DU DISPOSITIF");
+    for (const structure of ["« la carte »", "« la fiche »", "« corpus fourni »"]) {
+      expect(AI_LEARNING_PROMPT).toContain(structure);
+    }
+    expect(AI_LEARNING_PROMPT).toContain("Ne remplace pas simplement ces termes par un autre nom technique inventé.");
+    // Ce qui reste dicible : l'auteur, le texte, les sources.
+    expect(AI_LEARNING_PROMPT).toContain("« Ce point n'est pas établi par les sources actuellement disponibles. »");
+    expect(AI_LEARNING_PROMPT).toContain(
+      "Le dispositif documentaire doit devenir visible uniquement lorsque le statut d'une affirmation est nécessaire"
+    );
+  });
+
+  it("fait relire la réponse avant de la produire", () => {
+    expect(AI_LEARNING_PROMPT).toContain("CONTRÔLE SILENCIEUX AVANT CHAQUE RÉPONSE SUBSTANTIELLE");
+    expect(AI_LEARNING_PROMPT).toContain(
+      "Ai-je fait référence à « la carte », « la fiche », « le corpus » ou à une autre structure interne"
+    );
+    expect(AI_LEARNING_PROMPT).toContain("Si l'une de ces vérifications échoue, ajuste la réponse avant de la produire.");
   });
 
   it("conserve le corpus comme point de départ validé, sans en faire un dogme", () => {
@@ -158,7 +211,9 @@ describe("AI_LEARNING_PROMPT", () => {
   it("laisse l'IA aller au-delà de la carte", () => {
     // Le risque symétrique de la discipline documentaire est un lecteur de carte. Le corpus
     // est une base fiable, pas un plafond.
-    expect(AI_LEARNING_PROMPT).toContain("Le corpus est une base fiable, pas une limite intellectuelle.");
+    expect(AI_LEARNING_PROMPT).toContain(
+      "La base documentaire est fiable, mais elle ne constitue pas une limite intellectuelle."
+    );
     expect(AI_LEARNING_PROMPT).toContain("Tu peux utiliser librement ton raisonnement pour :");
     expect(AI_LEARNING_PROMPT).toContain("- rechercher une source supplémentaire lorsque cela est nécessaire.");
   });

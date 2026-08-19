@@ -67,6 +67,46 @@ const BALISAGE = [
 ];
 
 /**
+ * Le dispositif interne, exhibé au lecteur.
+ *
+ * C'est le défaut qui a coûté un lot entier. Un rédacteur à qui l'on transmet une fiche
+ * documentaire écrit spontanément « le dossier porte l'énoncé en entier », « la carte n'a
+ * gardé que la première proposition », « ce que le corpus établit ». Chacune de ces phrases
+ * est vraie, et chacune renvoie le lecteur à une plomberie qui n'est pas la sienne : il
+ * ouvrait un concept, il tombe sur l'appareil de production.
+ *
+ * Ce qui doit rester dicible, et qui suffit à tout dire : l'auteur, le texte, l'article, la
+ * citation, les sources disponibles. « Les sources disponibles ne permettent pas de
+ * l'établir » dit exactement ce que disait « le dossier ne le porte pas », sans exhiber quoi
+ * que ce soit.
+ *
+ * Bloquant, contrairement au contrôle des citations : ici l'ambiguïté est faible, la règle
+ * est simple à respecter, et l'expérience montre qu'elle ne se tient pas à la relecture.
+ */
+const DISPOSITIF = [
+  { motif: /\b(la|cette|une|de la|dans la|sur la) carte\b/i, nom: "« la carte »" },
+  { motif: /\b(la|cette|de la|dans la) fiche\b/i, nom: "« la fiche »" },
+  { motif: /\b(le|du|ce|au) corpus\b/i, nom: "« le corpus »" },
+  {
+    // « le dossier » au sens documentaire seulement : un dossier peut être un objet de
+    // travail légitime dans un exemple, et l'interdire partout ferait retirer des exemples
+    // justes. Ce sont les tournures qui en font une source qui sont visées.
+    motif: /\b(le|du|ce) dossier\b(?=[^.]{0,40}\b(porte|établit|rapporte|contient|dit|donne|indique|précise|ne|n’|n'|en)\b)/i,
+    nom: "« le dossier » comme source",
+  },
+  /*
+   * Pas de `\b` final derrière un mot accentué : en JavaScript, cette assertion ne connaît
+   * que les caractères de mot ASCII, si bien que « structuré\b » ne peut jamais correspondre
+   * — `é` n'en est pas un, et il n'y a donc pas de frontière entre lui et l'espace suivant.
+   * Écrits ainsi, ces deux motifs ne se déclenchaient sur rien de ce qu'ils existent pour
+   * attraper. C'est le même piège que l'apostrophe droite dans les titres de fonction.
+   */
+  { motif: /\ble contenu structuré/i, nom: "« le contenu structuré »" },
+  { motif: /\bles éléments (fournis|de référence|structurés)/i, nom: "« les éléments fournis »" },
+  { motif: /\bl['’]enregistrement (validé|maître)/i, nom: "« l'enregistrement validé »" },
+];
+
+/**
  * Des précautions sans objet.
  *
  * `limits` doit nommer ce qui manque — un texte non ouvert, une attribution seconde main, une
@@ -156,6 +196,12 @@ export function validateDeepening(deepening, { conceptIds } = {}) {
   for (const { champ, texte } of affiches) {
     const balise = BALISAGE.find(({ motif }) => motif.test(texte));
     if (balise) fail(`${champ} : ${balise.nom} dans un texte rendu tel quel`);
+
+    const expose = DISPOSITIF.find(({ motif }) => motif.test(texte));
+    if (expose)
+      fail(
+        `${champ} : ${expose.nom} expose le dispositif — parlez de l'auteur, du texte ou des sources disponibles`
+      );
   }
 
   const total = paragraphes.reduce((n, { texte }) => n + words(texte), 0);
