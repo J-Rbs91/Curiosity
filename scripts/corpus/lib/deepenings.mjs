@@ -67,6 +67,46 @@ const BALISAGE = [
 ];
 
 /**
+ * Le dispositif interne, exhibé au lecteur.
+ *
+ * C'est le défaut qui a coûté un lot entier. Un rédacteur à qui l'on transmet une fiche
+ * documentaire écrit spontanément « le dossier porte l'énoncé en entier », « la carte n'a
+ * gardé que la première proposition », « ce que le corpus établit ». Chacune de ces phrases
+ * est vraie, et chacune renvoie le lecteur à une plomberie qui n'est pas la sienne : il
+ * ouvrait un concept, il tombe sur l'appareil de production.
+ *
+ * Ce qui doit rester dicible, et qui suffit à tout dire : l'auteur, le texte, l'article, la
+ * citation, les sources disponibles. « Les sources disponibles ne permettent pas de
+ * l'établir » dit exactement ce que disait « le dossier ne le porte pas », sans exhiber quoi
+ * que ce soit.
+ *
+ * Bloquant, contrairement au contrôle des citations : ici l'ambiguïté est faible, la règle
+ * est simple à respecter, et l'expérience montre qu'elle ne se tient pas à la relecture.
+ */
+const DISPOSITIF = [
+  { motif: /\b(la|cette|une|de la|dans la|sur la) carte\b/i, nom: "« la carte »" },
+  { motif: /\b(la|cette|de la|dans la) fiche\b/i, nom: "« la fiche »" },
+  { motif: /\b(le|du|ce|au) corpus\b/i, nom: "« le corpus »" },
+  {
+    // « le dossier » au sens documentaire seulement : un dossier peut être un objet de
+    // travail légitime dans un exemple, et l'interdire partout ferait retirer des exemples
+    // justes. Ce sont les tournures qui en font une source qui sont visées.
+    motif: /\b(le|du|ce) dossier\b(?=[^.]{0,40}\b(porte|établit|rapporte|contient|dit|donne|indique|précise|ne|n’|n'|en)\b)/i,
+    nom: "« le dossier » comme source",
+  },
+  /*
+   * Pas de `\b` final derrière un mot accentué : en JavaScript, cette assertion ne connaît
+   * que les caractères de mot ASCII, si bien que « structuré\b » ne peut jamais correspondre
+   * — `é` n'en est pas un, et il n'y a donc pas de frontière entre lui et l'espace suivant.
+   * Écrits ainsi, ces deux motifs ne se déclenchaient sur rien de ce qu'ils existent pour
+   * attraper. C'est le même piège que l'apostrophe droite dans les titres de fonction.
+   */
+  { motif: /\ble contenu structuré/i, nom: "« le contenu structuré »" },
+  { motif: /\bles éléments (fournis|de référence|structurés)/i, nom: "« les éléments fournis »" },
+  { motif: /\bl['’]enregistrement (validé|maître)/i, nom: "« l'enregistrement validé »" },
+];
+
+/**
  * Des précautions sans objet.
  *
  * `limits` doit nommer ce qui manque — un texte non ouvert, une attribution seconde main, une
@@ -156,6 +196,12 @@ export function validateDeepening(deepening, { conceptIds } = {}) {
   for (const { champ, texte } of affiches) {
     const balise = BALISAGE.find(({ motif }) => motif.test(texte));
     if (balise) fail(`${champ} : ${balise.nom} dans un texte rendu tel quel`);
+
+    const expose = DISPOSITIF.find(({ motif }) => motif.test(texte));
+    if (expose)
+      fail(
+        `${champ} : ${expose.nom} expose le dispositif — parlez de l'auteur, du texte ou des sources disponibles`
+      );
   }
 
   const total = paragraphes.reduce((n, { texte }) => n + words(texte), 0);
@@ -165,6 +211,83 @@ export function validateDeepening(deepening, { conceptIds } = {}) {
   }
 
   return errors;
+}
+
+/**
+ * Les citations du texte qui ne se retrouvent pas dans l'enregistrement de la carte.
+ *
+ * C'est le seul contrôle documentaire qu'une machine puisse faire ici, et c'est celui qui
+ * porte le plus : une phrase entre guillemets se lit comme une parole d'auteur, et une
+ * parole d'auteur fabriquée est la faute que tout le dispositif existe pour empêcher. Le
+ * rédacteur n'a le droit de citer que ce que le dossier porte déjà, verbatim.
+ *
+ * Il rend un avertissement et non une erreur, et c'est délibéré : les guillemets français
+ * servent aussi à mettre un mot en relief, à nommer un titre, à rapporter un terme de
+ * réception. Un contrôle bloquant sur cette ambiguïté ferait retirer les guillemets plutôt
+ * que vérifier les citations, ce qui est exactement l'inverse du but. Ce qui est signalé se
+ * relit.
+ *
+ * Seuls les passages de cinq mots ou plus sont examinés : en deçà, il s'agit presque
+ * toujours d'un mot mis en relief, et le bruit noierait le signal.
+ */
+export function unsourcedQuotations(deepening, dossierBrut) {
+  if (typeof dossierBrut !== "string") return [];
+
+  /* Le dossier et le texte n'écrivent pas la typographie de la même façon : apostrophe
+     droite contre typographique, espace fine insécable dans les guillemets, tirets d'incise.
+     Comparer sans normaliser signalerait des citations pourtant exactes. */
+  const normalise = (texte) =>
+    texte
+      .replace(/[’‘`]/g, "'")
+      .replace(/[“”«»]/g, '"')
+      .replace(/[   ]/g, " ")
+      .replace(/[–—]/g, "-")
+      .replace(/\s+/g, " ")
+      .toLowerCase()
+      .trim()
+      /* La ponctuation terminale ne compte pas. Une citation intégrée à une phrase gagne ou
+         perd son point final selon l'endroit où elle est posée, et signaler cela noierait le
+         seul cas qui compte : une phrase attribuée à un auteur qui n'existe pas dans la
+         fiche. Le protocole demande le mot pour mot ; ce contrôle attrape la fabrication. */
+      .replace(/[.,;:!?]+$/, "");
+
+  const dossier = normalise(dossierBrut);
+  const textes = [
+    ...(deepening.lead ?? []),
+    ...(deepening.sections ?? []).flatMap((s) => s.paragraphs ?? []),
+    ...(deepening.limits ?? []),
+  ];
+
+  const absentes = [];
+  for (const texte of textes) {
+    for (const [, citation] of String(texte).matchAll(/«([^»]{10,400})»/g)) {
+      const propre = normalise(citation);
+      if (propre.split(" ").length < 5) continue;
+
+      /*
+       * Une citation coupée par des points de suspension ne se retrouve jamais telle quelle
+       * dans la fiche : ce sont ses fragments qu'il faut chercher, chacun pour lui-même. Et
+       * lorsque aucun fragment n'atteint le seuil, on ne conclut pas — chercher la chaîne
+       * entière signalerait à coup sûr une citation pourtant exacte.
+       */
+      // La coupure s'écrit « […] », « [...] », « … » ou « ... » : le motif absorbe les
+      // crochets avec elle, sans quoi ils resteraient collés au fragment suivant.
+      const COUPURE = /\[?\s*(?:\.\.\.|…)\s*\]?/g;
+      const coupee = new RegExp(COUPURE.source).test(propre);
+      if (!coupee) {
+        if (!dossier.includes(propre)) absentes.push(citation.trim());
+        continue;
+      }
+
+      const fragments = propre
+        .split(COUPURE)
+        .map((f) => f.replace(/^[.,;:!?\s]+|[.,;:!?\s]+$/g, ""))
+        .filter((f) => f.split(" ").length >= 5);
+      if (fragments.length > 0 && fragments.some((f) => !dossier.includes(f)))
+        absentes.push(citation.trim());
+    }
+  }
+  return absentes;
 }
 
 /** Le nombre de mots d'un approfondissement, pour le compte rendu de projection. */

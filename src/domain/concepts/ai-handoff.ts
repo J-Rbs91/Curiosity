@@ -133,7 +133,13 @@ export function formatCardForAI({ concept, domain, family, url }: CardHandoff): 
     field("Lien vers la carte", url),
   ].filter((bloc): bloc is string => bloc !== null);
 
-  return `=== CARTE À ÉTUDIER ===\n\n${blocs.join("\n\n")}`;
+  /*
+   * L'en-tête ne dit pas « carte », et ce n'est pas cosmétique : le prompt demande à l'IA de
+   * ne jamais parler au lecteur de la structure qui lui a transmis les informations. Une
+   * enveloppe qui annonce une carte est précisément ce qui lui fait écrire « la carte
+   * n'établit pas… » au lieu de « les sources disponibles ne permettent pas… ».
+   */
+  return `=== CONTENU À ÉTUDIER ===\n\n${blocs.join("\n\n")}`;
 }
 
 /**
@@ -149,7 +155,7 @@ export function buildAISharePayload(input: CardHandoff): string {
 
 ${formatCardForAI(input)}
 
-=== FIN DE LA CARTE ===
+=== FIN DU CONTENU ===
 
-Utilise cette carte comme point de départ de notre discussion.`;
+Utilise ces éléments comme point de départ de notre discussion.`;
 }

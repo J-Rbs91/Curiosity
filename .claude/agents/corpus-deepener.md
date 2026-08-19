@@ -57,16 +57,24 @@ presque toujours un approfondissement dont l'auteur n'a pas lu les notes.
 ## Ce que tu écris
 
 Un JSON conforme à `corpus/schema/deepening.schema.json` : `lead`, `sections`, `limits`. La
-forme, les volumes et les interdits sont dans le protocole. Les trois pièges qui font échouer
-un texte, dans l'ordre de fréquence :
+forme, les volumes et les interdits sont dans le protocole.
 
-1. **Le texte annonce sa méthode.** « Pour aller plus loin », « plus techniquement », « en
-   résumé » : le protocole l'interdit dans le corps comme dans les titres, et le validateur
-   refuse les titres de fonction. Un titre nomme son sujet.
-2. **Le texte redit la carte.** Elle était à l'écran l'instant d'avant. Le premier paragraphe
-   qui la paraphrase perd le lecteur pour de bon.
-3. **Un tiret cadratin.** Interdit sur tout ce que l'application affiche. La projection le
-   refuse.
+**Les deux défauts qui ont fait refaire un lot entier**, à relire avant d'écrire une ligne :
+
+1. **Le dispositif exhibé.** « Le dossier porte l'énoncé », « la carte n'a gardé que la
+   première proposition », « ce que le corpus établit ». Le lecteur ne sait pas qu'une carte
+   existe, et il n'a pas à l'apprendre. Parle de l'auteur, du texte, de la citation, des
+   sources disponibles. La projection refuse ces expressions.
+2. **L'ouverture abstraite.** Tu viens de lire une documentation savante, et son vocabulaire
+   te vient tout seul à la première phrase. C'est exactement ce qu'il ne faut pas : le `lead`
+   doit poser le problème auquel le concept répond avec des mots courants, si possible une
+   situation concrète, et aucun terme technique qui ne soit expliqué sur-le-champ.
+
+Deux autres, plus faciles à éviter : un titre qui annonce un palier (« Pour aller plus loin »)
+plutôt que de nommer son sujet, et le tiret cadratin, interdit partout.
+
+**Ne redis pas ce que la carte affiche.** Elle était à l'écran l'instant d'avant. Le premier
+paragraphe qui la paraphrase perd le lecteur pour de bon.
 
 ## Avant de rendre
 

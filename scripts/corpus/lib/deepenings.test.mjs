@@ -1,6 +1,11 @@
 import { describe, expect, it } from "vitest";
 
-import { countWords, projectDeepening, validateDeepening } from "./deepenings.mjs";
+import {
+  countWords,
+  projectDeepening,
+  unsourcedQuotations,
+  validateDeepening,
+} from "./deepenings.mjs";
 
 /**
  * Ce que ce contrôle peut attraper est mécanique, et ces tests ne prétendent pas davantage :
@@ -12,7 +17,7 @@ import { countWords, projectDeepening, validateDeepening } from "./deepenings.mj
 const CARTES = new Set(["concept-test"]);
 
 /** Un paragraphe d'une longueur crédible : le contrôle refuse en dessous de 80 caractères. */
-function paragraphe(mots = 60, tete = "Le mécanisme décrit par la carte") {
+function paragraphe(mots = 60, tete = "Le mécanisme décrit par l’auteur") {
   return `${tete} ${"ainsi de suite ".repeat(Math.ceil(mots / 3))}`.trim() + ".";
 }
 
@@ -116,6 +121,65 @@ describe("validateDeepening — ce que le lecteur ne doit pas voir", () => {
   });
 });
 
+describe("validateDeepening — invisibilité du dispositif", () => {
+  /*
+   * Le défaut qui a fait refaire le premier lot : 224 occurrences sur 32 textes. Un rédacteur
+   * à qui l'on transmet une fiche documentaire en parle au lecteur, qui ignore tout de son
+   * existence et venait pour un concept.
+   */
+  it("refuse les expressions qui exhibent la structure interne", () => {
+    const cas = [
+      "Le dossier porte l’énoncé en entier, tel qu’il se lit à cette page du texte original.",
+      "La carte, faute de place, n’a gardé que la première des deux propositions de la phrase.",
+      "Ce que le corpus établit s’arrête ici, et la suite relève de l’interprétation.",
+      "La fiche signale une réserve sur ce point précis, qu’il faut donc lire avec prudence.",
+      "Les éléments fournis ne disent rien de la réception ultérieure de cette proposition.",
+      "L’enregistrement validé porte la formulation exacte, relevée pendant l’instruction.",
+    ];
+    for (const phrase of cas) {
+      const fiche = approfondissement();
+      fiche.lead[0] = `${paragraphe(95)} ${phrase}`;
+      expect(validateDeepening(fiche, { conceptIds: CARTES }).join(), phrase).toMatch(
+        /expose le dispositif/
+      );
+    }
+  });
+
+  it("refuse aussi dans un titre et dans une limite", () => {
+    const dansLeTitre = approfondissement();
+    dansLeTitre.sections[0].title = "Ce que la carte n’établit pas";
+    expect(validateDeepening(dansLeTitre, { conceptIds: CARTES }).join()).toMatch(
+      /expose le dispositif/
+    );
+
+    const dansLaLimite = approfondissement({
+      limits: ["Le dossier ne porte aucune définition de ce terme, qui reste donc à établir sur le texte."],
+    });
+    expect(validateDeepening(dansLaLimite, { conceptIds: CARTES }).join()).toMatch(
+      /expose le dispositif/
+    );
+  });
+
+  it("laisse dire la même chose en parlant de l’auteur et des sources", () => {
+    const fiche = approfondissement({
+      limits: [
+        "L’article de 1955 n’a pas été consulté au-delà de sa notice : son contenu ne peut pas être invoqué ici.",
+        "Pour attribuer précisément cette distinction à l’auteur, il faudrait revenir au texte original.",
+      ],
+    });
+    expect(validateDeepening(fiche, { conceptIds: CARTES })).toEqual([]);
+  });
+
+  it("n’attrape pas un dossier qui est l’objet de travail d’un exemple", () => {
+    // « on traite d'abord les dossiers qui se closent vite » décrit une situation, pas une
+    // source : l'interdire ferait retirer des exemples justes.
+    const fiche = approfondissement();
+    fiche.lead[0] =
+      `${paragraphe(95)} Imaginons un service dont le financement dépend du nombre de dossiers clos dans l’année.`;
+    expect(validateDeepening(fiche, { conceptIds: CARTES })).toEqual([]);
+  });
+});
+
 describe("validateDeepening — la frontière documentaire", () => {
   it("refuse des limites qui ne nomment rien", () => {
     const fiche = approfondissement({
@@ -164,6 +228,67 @@ describe("validateDeepening — volume", () => {
     const fiche = approfondissement();
     fiche.sections = fiche.sections.slice(0, 2);
     expect(validateDeepening(fiche, { conceptIds: CARTES }).join()).toMatch(/3 sections au moins/);
+  });
+});
+
+describe("unsourcedQuotations", () => {
+  const fiche = JSON.stringify({
+    quotation: { text: "la rationalité est limitée quand elle reste en deçà de l'omniscience." },
+    notes: ["Le contrôleur relève « Two concepts are central to the characterization », p. 356."],
+  });
+
+  /** Un approfondissement dont le premier paragraphe porte la citation à contrôler. */
+  function avecCitation(citation) {
+    return approfondissement({ lead: [`${paragraphe(95)} On lit « ${citation} ».`] });
+  }
+
+  it("ne signale rien quand la citation est dans la fiche", () => {
+    expect(
+      unsourcedQuotations(
+        avecCitation("la rationalité est limitée quand elle reste en deçà de l’omniscience"),
+        fiche
+      )
+    ).toEqual([]);
+  });
+
+  it("signale une phrase que la fiche ne porte pas", () => {
+    const absentes = unsourcedQuotations(
+      avecCitation("l’organisation est un système de contraintes que nul n’a voulu"),
+      fiche
+    );
+    expect(absentes).toHaveLength(1);
+  });
+
+  it("ne bute ni sur la typographie ni sur la ponctuation terminale", () => {
+    // Apostrophe typographique contre droite, et un point final ajouté par la phrase qui
+    // intègre la citation : deux différences qui ne changent rien à ce qui est cité.
+    expect(
+      unsourcedQuotations(
+        avecCitation("Two concepts are central to the characterization."),
+        fiche
+      )
+    ).toEqual([]);
+  });
+
+  it("laisse passer un mot mis en relief", () => {
+    // Sous cinq mots, les guillemets servent presque toujours à souligner, pas à citer :
+    // signaler ces cas noierait le seul qui compte.
+    expect(unsourcedQuotations(avecCitation("satisfaisant"), fiche)).toEqual([]);
+  });
+
+  it("vérifie chaque fragment d’une citation coupée", () => {
+    expect(
+      unsourcedQuotations(
+        avecCitation("la rationalité est limitée […] en deçà de l’omniscience"),
+        fiche
+      )
+    ).toEqual([]);
+    expect(
+      unsourcedQuotations(
+        avecCitation("la rationalité est limitée […] dès lors que le calcul devient impossible"),
+        fiche
+      )
+    ).toHaveLength(1);
   });
 });
 

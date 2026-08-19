@@ -1,0 +1,50 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "signification-et-invariance",
+  "lead": [
+    "À la radio, on entend parfois qu’une journée a été dix pour cent plus chaude que la veille. La phrase semble parler du monde : il aurait fait plus chaud, un point c’est tout. Essayons pourtant le calcul avec des chiffres réels. Hier, il faisait 100 degrés Fahrenheit ; aujourd’hui, 110. Le rapport entre les deux donne 1,10, soit une hausse de 10 %. Convertissons maintenant ces deux mêmes journées en Celsius : 37,8 degrés hier, 43,3 aujourd’hui. Le rapport devient 1,15, soit une hausse de 15 %. Ce sont pourtant exactement les deux mêmes journées, la même paire de températures, mais deux pourcentages différents selon l’échelle utilisée pour les écrire.",
+    "Ce n’est pas une curiosité arithmétique sans conséquence. Si la vérité d’un énoncé change selon qu’on mesure en Fahrenheit ou en Celsius, en quoi cet énoncé dit-il encore quelque chose sur la température elle-même, plutôt que sur l’instrument utilisé pour la noter ? Deux chercheurs américains, Patrick Suppes et Joseph L. Zinnes, ont posé cette question avec précision au début des années 1960, et lui ont donné une réponse qui tient en un seul critère : un énoncé construit à partir de mesures a un sens, dans une acception technique bien particulière, seulement s’il reste vrai, ou reste faux, quelle que soit la façon légitime dont les mesures ont été prises."
+  ],
+  "sections": [
+    {
+      "title": "Ce qu’une échelle a le droit de changer",
+      "paragraphs": [
+        "La conversion du Fahrenheit vers le Celsius n’est pas un changement quelconque : elle multiplie chaque valeur par un facteur fixe, puis lui ajoute une constante. Ce type précis de transformation, et lui seul, respecte la façon dont l’échelle de température a été construite. Le zéro et l’unité de degré sont des choix de convention, propres à chaque échelle, mais une fois ce choix fait, les écarts et les rapports de température s’expriment de façon cohérente à l’intérieur de cette échelle. Suppes et Zinnes appellent une transformation de ce genre, celle qui respecte les conventions propres à un type de mesure donné, une transformation d’échelle admissible.",
+        "Le mot « admissible » fait tout le travail. Il ne s’agit pas de dire que n’importe quel changement de nombres serait permis : passer du Fahrenheit au Celsius l’est, remplacer chaque température par son carré ne le serait pas, parce que cette dernière opération ne correspond à aucune manière légitime de graduer un thermomètre. La question que pose alors ce travail est la suivante : parmi tout ce qu’on peut écrire à partir de mesures, qu’est-ce qui reste vrai quand on se déplace d’une échelle admissible à une autre, et qu’est-ce qui ne le reste pas ?"
+      ]
+    },
+    {
+      "title": "La vérité qui résiste au changement d’échelle",
+      "paragraphs": [
+        "Suppes et Zinnes en tirent une définition précise. Ils écrivent : « Un énoncé numérique a un sens si et seulement si sa vérité (ou sa fausseté) est constante sous les transformations d’échelle admissibles […]. » Autrement dit : prenez un énoncé construit à partir de mesures, appliquez-lui toutes les transformations d’échelle admissibles pour le type de grandeur concerné, et regardez si sa valeur de vérité bouge. Si elle reste la même dans tous les cas, l’énoncé a un sens en cette acception précise du terme. Si elle peut basculer du vrai au faux selon l’échelle choisie, comme dans l’exemple de l’écart de température exprimé en pourcentage, l’énoncé n’a pas ce genre de sens : ce qu’il affirme dépend alors de l’instrument, pas seulement du monde.",
+        "Le critère ne vise pas la température en particulier : il s’applique à tout énoncé construit à partir des résultats d’une mesure, qu’il s’agisse de longueurs, de poids, de scores, ou de toute autre grandeur pour laquelle on dispose d’une échelle et de règles sur ce qui compte comme un changement d’échelle légitime pour elle. L’énoncé peut porter sur une seule mesure, sur une comparaison entre deux mesures, ou sur un calcul plus complexe : la définition ne distingue pas ces cas, elle demande seulement que la conclusion tienne, telle quelle, une fois l’échelle changée."
+      ]
+    },
+    {
+      "title": "Ce n’est pas l’opération, mais l’énoncé entier",
+      "paragraphs": [
+        "On pourrait croire, à lire l’exemple de la température, qu’un rapport entre deux mesures serait par nature une opération suspecte, et qu’il suffirait d’en dresser la liste noire pour régler la question. Ce n’est pas ce que soutiennent Suppes et Zinnes. Dans le même travail, ils présentent un autre cas où la comparaison entre deux températures moyennes constitue bien un énoncé qui a un sens en cette acception précise, alors qu’un simple rapport entre deux températures individuelles n’en a pas. L’opération arithmétique en jeu n’est donc pas, à elle seule, ce qui décide.",
+        "Ce qui compte, précisent-ils, ce n’est pas la nature de l’opération choisie, mais la façon dont l’énoncé pris dans son entier se comporte quand on fait varier l’échelle. Un rapport peut très bien résister au changement d’échelle dans un contexte, et y échouer dans un autre : tout dépend de ce qui est comparé, et de la manière dont les mesures en jeu ont été obtenues. Le critère ne porte donc jamais sur une opération isolée, division ou moyenne, mais toujours sur l’énoncé pris comme un tout."
+      ]
+    },
+    {
+      "title": "Un critère nécessaire, non suffisant",
+      "paragraphs": [
+        "Suppes et Zinnes limitent eux-mêmes la portée de leur critère. Ils précisent qu’il fournit une condition nécessaire, mais non suffisante : un énoncé dont la vérité résiste au changement d’échelle satisfait une exigence indispensable, mais cela ne garantit pas encore qu’il ait un sens en toute autre acception qu’on pourrait attacher à ce mot. Ils ajoutent que ce problème n’occupe pas, à leurs yeux, une place centrale dans une théorie de la mesure : il se pose surtout au moment où l’on cherche à utiliser des mesures déjà obtenues, plutôt qu’au moment où l’on construit l’échelle elle-même.",
+        "Dans leur travail, ce critère répond à un troisième problème, distinct de deux questions traitées auparavant : celle de savoir si une grandeur peut seulement être représentée par des nombres, et celle de savoir dans quelle mesure cette représentation numérique est unique. Le cadre général sur lequel s’appuie leur réponse à ce troisième problème avait d’abord été développé par Patrick Suppes dans un article coécrit quelques années plus tôt avec Dana Scott."
+      ]
+    },
+    {
+      "title": "Au-delà de la température",
+      "paragraphs": [
+        "Le raisonnement ne concerne pas seulement les thermomètres. Imaginons une enquête de satisfaction où chaque personne note son expérience sur une échelle de un à dix, sans qu’un score de zéro corresponde à une absence totale de satisfaction, ni qu’un score de dix corresponde à un maximum absolu : ce sont seulement des repères choisis par les concepteurs du questionnaire. Affirmer qu’une personne ayant mis huit est deux fois plus satisfaite qu’une autre ayant mis quatre revient à faire un rapport entre deux nombres dont le zéro est, tout comme pour les degrés Fahrenheit, un point de départ arbitraire. Si l’on changeait les repères de cette échelle sans rien changer à ce que ressentent réellement les deux personnes, ce rapport pourrait très bien ne plus être vrai.",
+        "Cet exemple construit montre que la question posée par Suppes et Zinnes ne concerne pas seulement la météorologie : elle touche toute situation où l’on transforme un résultat de mesure en une affirmation censée dire quelque chose du monde, qu’il s’agisse d’un rapport, d’une moyenne ou d’un classement, alors que l’échelle utilisée pour obtenir ce résultat aurait pu, tout aussi légitimement, en être une autre."
+      ]
+    }
+  ],
+  "limits": [
+    "Le texte examiné ici est le rapport technique de mars 1962, dans la pagination duquel se situent la définition, les exemples et les citations qui précèdent. Une version révisée en a paru l’année suivante dans un ouvrage collectif de plus grande diffusion ; ce texte-là n’a pas été rouvert pour cette synthèse, et rien ne permet d’assurer que la numérotation des définitions ou des exemples y soit restée identique.",
+    "Le rapport de 1962 renvoie lui-même, pour la construction d’un langage formalisé autour de cette question, à un article que Patrick Suppes avait publié seul en 1959. Cet article n’a pas pu être consulté : l’exemplaire disponible en ligne était fermé à la recherche en texte intégral au moment de cette rédaction. Il n’est donc pas possible de dire si l’idée développée ici apparaissait déjà, sous une forme voisine, dans ce texte antérieur.",
+    "La manière dont ce critère a ensuite été reçu, discuté ou contesté par d’autres chercheurs en théorie de la mesure n’a pas non plus été examinée : seul le texte de 1962 a été rouvert pour cette synthèse, et aucune littérature ultérieure sur le sujet n’a été vérifiée directement."
+  ]
+}

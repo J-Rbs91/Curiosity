@@ -1,0 +1,57 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "simulation-activite-future",
+  "lead": [
+    "Une entreprise s’apprête à changer une ligne de montage, ou à ouvrir un centre d’appels : personne ne travaille encore à ce poste, et pourtant il faut déjà décider de la hauteur d’un plan de travail, du nombre d’appels attendus par heure, de la distance entre deux machines. Comment savoir si ce poste, une fois occupé, sera tenable pour quelqu’un ? On ne peut pas interroger les futurs occupants sur un travail qu’ils n’ont pas encore fait, ni observer une activité qui n’existe pas.",
+    "Une réponse possible consiste à construire, avant que le poste existe, une représentation assez fidèle de la situation de travail à venir : une maquette, un espace reconstitué grandeur réelle, un scénario où des opérateurs viennent essayer des gestes, des déplacements, des échanges avec des collègues. François Daniellou, qui a consacré un article à cette pratique en ergonomie, pose cependant un avertissement avant toute chose : cet essai ne dit jamais avec certitude ce que les gens feront réellement une fois le poste en service. Il permet seulement de mettre à l’épreuve si, dans les circonstances qu’on peut prévoir, il existe au moins une façon de s’en sortir."
+  ],
+  "sections": [
+    {
+      "title": "Ce qui échappe à la prévision",
+      "paragraphs": [
+        "Dans son article, François Daniellou pose ce point avant tout le reste : « Mais il faut souligner un point théorique essentiel ; l’activité réelle des utilisateurs futurs ne peut pas être prévue en détail. » Ce n’est pas une prudence de façade. Ce que quelqu’un fait réellement à un poste, une fois qu’il l’occupe, ne recouvre jamais exactement ce qu’on avait imaginé qu’il ferait en le concevant : il y a toujours des ajustements, des raccourcis, des façons de faire qui n’apparaissent qu’à l’usage.",
+        "Cette remarque pourrait décourager toute tentative d’anticipation : si l’on ne peut rien prévoir en détail, à quoi bon simuler quoi que ce soit avant que le poste existe ? Ce n’est pourtant pas la conclusion que l’auteur en tire. Il ne dit pas qu’on ne peut rien savoir à l’avance, mais qu’on ne peut pas en savoir le détail. Entre les deux, il y a de la place pour un travail utile : celui qui porte, non sur ce que les gens feront exactement, mais sur ce qu’ils pourront faire."
+      ]
+    },
+    {
+      "title": "Des choix qui ouvrent ou ferment l’avenir",
+      "paragraphs": [
+        "Ce que les décisions de conception peuvent faire, en revanche, c’est ouvrir certaines possibilités et en fermer d’autres, bien avant que quiconque travaille au poste. Daniellou l’écrit ainsi : « les décisions de conception ouvrent et ferment des pans entiers à l’activité future ». Choisir la hauteur d’un plan de travail, la cadence d’une chaîne, l’organisation d’un centre d’appels, ce n’est jamais neutre : chaque choix rend certaines façons de travailler possibles et en écarte d’autres, sans qu’on ait besoin de savoir laquelle sera effectivement adoptée.",
+        "C’est de là que vient l’intérêt de simuler avant que la décision soit prise. Il ne s’agit pas de deviner la conduite exacte d’un futur opérateur, mais, comme l’écrit l’auteur, « d’évaluer quelles sont les formes possibles de l’activité future » ouvertes par tel ou tel choix de conception. Une configuration de poste peut laisser ouvertes plusieurs façons acceptables de s’y prendre ; une autre peut n’en laisser aucune. La question ne porte donc pas sur ce que fera une personne en particulier, mais sur l’éventail de ce que plusieurs personnes pourraient raisonnablement faire."
+      ]
+    },
+    {
+      "title": "Vérifier qu’il existe au moins une façon de s’en sortir",
+      "paragraphs": [
+        "Ce que la simulation cherche à établir n’est donc pas la meilleure façon de faire, ni la façon la plus probable. Daniellou fixe un critère plus modeste et plus précis : « la simulation doit vérifier que, dans toutes les circonstances prévisibles, il existe au moins un mode opératoire qui soit acceptable pour réaliser les tâches ». Le mot important est « au moins un » : il ne s’agit pas de prescrire une manière unique de travailler, mais de s’assurer qu’aucune situation prévisible ne mette les futurs occupants du poste dans une impasse, sans aucune façon acceptable d’accomplir ce qui leur sera demandé.",
+        "Ce critère change ce qu’on regarde pendant une simulation. On ne cherche pas à confirmer un plan, on cherche les circonstances où le plan ne tiendrait pas : une commande urgente en même temps qu’un incident, un remplacement au pied levé, une pièce arrivée dans le mauvais sens. Si, dans l’une de ces circonstances, personne ne trouve de façon acceptable de faire le travail, la conception doit changer avant même qu’un poste existe pour de vrai."
+      ]
+    },
+    {
+      "title": "Des scénarios pris dans le travail existant",
+      "paragraphs": [
+        "D’où viennent les circonstances qu’on met à l’épreuve dans une simulation ? Pas de l’imagination de qui la conduit : Daniellou indique qu’elles sont tirées de l’analyse de situations de travail existantes, comparables à celle qu’on prépare. On observe ce qui se passe réellement ailleurs, dans des postes proches de celui qu’on conçoit, pour repérer les événements qui compliquent le travail ordinaire, puis on les rejoue dans la situation à venir.",
+        "Cela distingue la démarche d’un simple essai grandeur nature. Une maquette qu’on découvre sans rien savoir des difficultés réelles d’un métier voisin ne teste que ce à quoi on avait spontanément pensé. Une simulation construite à partir de situations réellement observées met aussi à l’épreuve ce à quoi la conception n’avait pas pensé, et c’est précisément ce qui en fait l’intérêt."
+      ]
+    },
+    {
+      "title": "Une démarche mise au point à plusieurs",
+      "paragraphs": [
+        "L’article est signé par François Daniellou seul, mais il ne présente pas cette façon de simuler comme sa trouvaille personnelle. Lorsqu’il faut désigner l’origine de la démarche qui associe les futurs occupants d’un poste à sa conception tout au long d’un projet, l’auteur renvoie à des travaux menés avec d’autres chercheurs, Garrigou, Kerguelen et Laville d’un côté, Carballeda et Ruaud de l’autre, ainsi qu’à un ouvrage distinct sur les propriétés des supports de simulation. Il inscrit donc explicitement cette pratique dans une élaboration collective, sans s’en attribuer la paternité.",
+        "Les sources actuellement disponibles ne permettent pas d’aller plus loin dans cette histoire : ces travaux antérieurs n’ont pas pu être consultés, et on ne peut donc pas dire avec précision ce que chacun y a apporté. Ce qu’on peut affirmer, c’est seulement que la démarche décrite en 2007 s’appuie sur un travail plus ancien et partagé, pas qu’elle aurait un auteur unique."
+      ]
+    },
+    {
+      "title": "Simuler pour concevoir, simuler pour former",
+      "paragraphs": [
+        "Le mot « simulation » sert aussi, couramment, à décrire un exercice de formation : reproduire une situation dangereuse ou rare pour qu’une personne déjà en poste s’y entraîne. Daniellou signale que ce sens existe et qu’il est différent du sien, sans s’y attarder davantage. Ce dont il traite est une simulation qui a lieu avant que le poste existe, dont le but est de mettre à l’épreuve une conception, et non d’entraîner une personne à une situation déjà définie.",
+        "La distinction vaut d’être gardée en tête, même si l’auteur ne la développe pas longuement : confondre les deux usages ferait attendre d’une simulation de conception ce qu’elle ne promet pas, à savoir préparer quelqu’un à un poste, plutôt que vérifier que ce poste sera tenable avant qu’il n’existe."
+      ]
+    }
+  ],
+  "limits": [
+    "Les publications auxquelles Daniellou renvoie pour situer l’origine de cette façon de simuler, associée aux futurs occupants du poste tout au long d’un projet, n’ont pas pu être ouvertes : ni l’article coécrit avec Garrigou, Kerguelen et Laville en 1990, ni celui coécrit avec Garrigou, Carballeda et Ruaud en 1995, ni l’ouvrage de Maline de 1994 sur les propriétés des supports de simulation. On ne peut donc rien dire de leur contenu propre, ni établir avec précision ce que chaque auteur y a apporté : seul le renvoi que Daniellou en fait en 2007 est disponible ici.",
+    "La formule « activité future probable », que l’on rencontre parfois associée à cette démarche, n’apparaît nulle part dans l’article de 2007 : celui-ci écrit « l’activité future possible ». Elle figure en revanche dans un chapitre cosigné à trois, en 2013, par Barcellini, Van Belleghem et Daniellou, qui parle de « la conduite de simulations du travail permettant de se projeter dans l’activité future probable ». Ce chapitre n’a pas été ouvert au-delà de ce repérage : rien ne permet d’attribuer cette formule à Daniellou seul, ni de dater précisément son entrée dans le vocabulaire du champ.",
+    "Comprendre le travail pour le transformer, l’ouvrage cosigné par Daniellou le plus souvent cité comme porte d’entrée sur ce sujet en ergonomie francophone, n’a pas pu être consulté en ligne. Il n’est donc pas possible de dire s’il reformule ce que l’article de 2007 pose plus brièvement, ni de vérifier si la formule « activité future probable » s’y trouve déjà."
+  ]
+}
