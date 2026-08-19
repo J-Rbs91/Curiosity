@@ -1,0 +1,96 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "resilience-fondee-sur-les-ressources",
+  "slug": "resilience-fondee-sur-les-ressources",
+  "status": "VALIDATED",
+  "title": "La résilience par les ressources",
+  "themes": [
+    "securite-et-resilience"
+  ],
+  "domain": null,
+  "theme_labels": {
+    "securite-et-resilience": "Ce qui fait tenir le système, pas seulement ce qui le fait tomber"
+  },
+  "authors": [
+    {
+      "name": "Lucie Cuvelier",
+      "app_author_id": null
+    },
+    {
+      "name": "Pierre Falzon",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Le chapitre de 2011 est cosigné par Lucie Cuvelier et Pierre Falzon, dans cet ordre. Ils ne revendiquent ni le mot « résilience » ni sa définition : ils notent que le concept n'est pas stabilisé, renvoient à Sheridan pour ce constat, et reprennent explicitement la dernière définition proposée par Erik Hollnagel, avec sa page. Ce qui est d'eux est la lecture par les ressources : anticiper, c'est concevoir une enveloppe de situations possibles ajustée aux ressources, notamment intrinsèques, des opérateurs. La même thèse se lit la même année dans la thèse de doctorat de Lucie Cuvelier, signée d'elle seule et dirigée par Pierre Falzon ; le texte cité ici est le texte cosigné.",
+  "quotation": {
+    "text": "le développement de la résilience inclut […] la gestion des ressources individuelles et collectives développées dans chaque service, au niveau local.",
+    "reference": "Lucie Cuvelier et Pierre Falzon, « Resilience As Resource-based Design Of Anticipated Situations », in Proceedings of the Fourth Resilience Engineering Symposium, Paris, Presses des Mines, 2011, p. 72-78.",
+    "locator": "§ 13, dernière phrase (conclusion)",
+    "language": "fr",
+    "original_text": "the development of resilience includes […] the management of individual and collective resources developed in each service, at the local level.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction de travail établie par le lecteur primaire du corpus, non publiée. Aucune traduction française publiée de ce chapitre n'a été trouvée.",
+      "edition": null
+    }
+  },
+  "hook": "Choisit-on la conduite la plus sûre, ou celle que l'équipe pourra tenir ?",
+  "summary": "Anticiper, c'est concevoir une enveloppe de situations tenables avec les ressources de l'équipe : une gestion qui s'ajoute aux protocoles au lieu de les remplacer.",
+  "sources": [
+    {
+      "label": "Lucie Cuvelier et Pierre Falzon, « Resilience As Resource-based Design Of Anticipated Situations », dans Proceedings of the Fourth Resilience Engineering Symposium, Paris, Presses des Mines, 2011, p. 72-78.",
+      "kind": "primary",
+      "locator": "§ 13",
+      "doi_isbn": "10.4000/books.pressesmines.982",
+      "url": "https://books.openedition.org/pressesmines/982",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Lucie Cuvelier, De la gestion des risques à la gestion des ressources de l'activité : étude de la résilience en anesthésie pédiatrique, thèse de doctorat d'ergonomie, CNAM, 2011, 295 p. Thèse dirigée par Pierre Falzon.",
+      "kind": "primary",
+      "locator": "Résumé et chapitre de résultats",
+      "doi_isbn": "HAL tel-00665997",
+      "url": "https://theses.hal.science/tel-00665997/document",
+      "consulted": "full-text"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle",
+    "date": "2026-08-19",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 0,
+    "notes": [
+      "SOURCE 1 — DOI. `curl https://api.crossref.org/works/10.4000/books.pressesmines.982` (HTTP 200) rend exactement : type book-chapter, titre « Resilience As Resource-based Design Of Anticipated Situations », container « Proceedings of the fourth Resilience Engineering Symposium », publisher « Presses des Mines », publisher-location « Paris », published-print 2011, page « 72-78 », auteurs Cuvelier (sequence first, ORCID 0000-0003-1020-8596) puis Falzon (sequence additional). Chaque élément du `label` affiché est donc confirmé sur la notice éditeur, ordre des signatures compris.",
+      "SOURCE 1 — texte intégral. `curl -L https://books.openedition.org/pressesmines/982` (HTTP 200, 236 168 octets, sans mur d'accès) : le chapitre est en libre accès en HTML, 17 paragraphes numérotés `id=\"para-1\"` à `id=\"para-17\"`. Le bandeau de tête de la page affiche « Resilience As Resource-based Design Of Anticipated Situations / Lucie Cuvelier et Pierre Falzon / p. 72-78 », et les `<meta name=\"citation_author\">` donnent Cuvelier puis Falzon. Le `consulted: full-text` est justifié. Précision pour un contrôleur suivant : le PDF (`/pressesmines/pdf/982`) répond HTTP 401 et n'a pas été ouvert — je ne l'ai pas contourné ; le HTML suffisait. Autre piège repéré : la balise `citation_doi` de cette page porte 10.4000/books.pressesmines.931, qui est le DOI de l'ouvrage entier (Crossref : type edited-book, titre « Proceedings of the fourth Resilience Engineering Symposium », sans auteur ni pagination). Le DOI affiché par la fiche, .982, est bien celui du chapitre — c'est le bon des deux.",
+      "CITATION — § 13 relu dans le HTML. Le paragraphe `id=\"para-13\"` est le premier de la section « 4 Conclusion » et sa dernière phrase se lit : « In other words, the development of resilience includes, in addition to the assessment of “external” risks to the patient based on protocols and rules (established by evidence-based medicine), the assessment and the management of individual and collective resources developed in each service, at the local level. » L'`original_text` de la fiche en est le décalque exact, la coupe […] portant sur « , in addition to […] the assessment and » ; le reste est mot à mot, ponctuation comprise. Le `locator` « § 13, dernière phrase (conclusion) » est juste sur les trois points : numéro de paragraphe tel qu'OpenEdition le numérote, position dans le paragraphe, et section.",
+      "CITATION — traduction. La version française est déclarée `in-house`, non publiée, et rend fidèlement l'anglais retenu ; « in each service » → « dans chaque service » conserve le sens hospitalier (service de soins) et non le sens de prestation. Je n'ai trouvé aucune traduction française publiée de ce chapitre, ce qui est cohérent avec la déclaration.",
+      "SOURCE 2 — HAL. `curl \"https://api.archives-ouvertes.fr/search/?q=halId_s:tel-00665997&wt=json\"` : 1 notice, titre « De la gestion des risques à la gestion des ressources de l'activité : étude de la résilience en anesthésie pédiatrique », auteur unique Lucie Cuvelier, CNAM, NNT 2011CNAM0773, soutenance 2011-06-06, `fileMain_s` renseigné. PDF téléchargé (HTTP 200, application/pdf, 3 180 640 octets) : 295 pages, ce qui recoupe le « 295 p. » du label. La page de titre (p. 2 du fichier) porte « CONSERVATOIRE NATIONAL DES ARTS ET METIERS », « Discipline : Ergonomie », « THÈSE dirigée par : M. FALZON Pierre » — la mention « thèse de doctorat d'ergonomie » et la direction par Falzon sont donc lues sur la signature du document, et non sur la notice HAL, qui range la thèse en « Psychologie ». C'est le document qui fait foi ici, et il donne raison au label.",
+      "SOURCE 2 — locator. « Résumé et chapitre de résultats » : le résumé (p. 8 du fichier, et repris p. 295) énonce « la résilience d'un système […] réside dans la capacité des opérateurs de ce système à articuler la gestion des risques avec la gestion de leurs propres ressources » et, pour la seconde étude, « L'objectif des anesthésistes est en fait plutôt de concevoir des situations ajustées aux ressources des différents opérateurs qui interviennent et interviendront ». Le locator pointe donc vers du texte qui porte réellement la thèse annoncée.",
+      "ATTRIBUTION. La note de la fiche dit que les auteurs ne revendiquent ni le mot « résilience » ni sa définition : le § 3 du chapitre le confirme mot pour mot — « the concept of “resilience” is not yet stabilized (Sheridan, 2008). According to the latest definition proposed by Hollnagel, it means: “the intrinsic ability of a system to adjust its functioning…” (2010, p. xxxvi) ». Le renvoi à Sheridan pour la non-stabilisation et la reprise de Hollnagel avec sa page sont donc exacts. Ce qui est propre aux auteurs — l'enveloppe de situations ajustée aux ressources, notamment intrinsèques — est bien porté par les § 12 et § 13 du chapitre et par le résumé de la thèse. Cosignature vérifiée dans les deux sens : deux auteurs sur le document et deux seulement, ni escamotage ni ajout.",
+      "ATTRIBUTION — contre-recherche. Recherches croisées (Crossref, OpenAlex, HAL ; Semantic Scholar en échec, HTTP 429 — silence d'outil, pas constat d'absence) : aucun antécédent revendiquant cette lecture par les ressources avant 2011. Un texte voisin de la même année, « Resilience's resources in pediatric anesthesia » (HEPS 2011, DOI 10.1201/9781003759959-12), porte six signatures (Cuvelier, Granry, Orliaguet, Moll, Baugnon, Falzon) : ce n'est pas celui que la fiche cite, et la fiche ne lui emprunte rien — pas de cosignature escamotée de ce côté non plus.",
+      "PROSE. Le `hook` (« la conduite la plus sûre, ou celle que l'équipe pourra tenir ? ») est adossé au § 13 : « They must first be “controllable situations” for the team ». Le `summary` est exact dans ses deux moitiés : « enveloppe de situations tenables avec les ressources de l'équipe » traduit « design an envelope of “possible situations” adjusted to the resources (especially “intrinsic” resources) of the operators » (§ 13), et « qui s'ajoute aux protocoles au lieu de les remplacer » est porté par le « in addition to […] protocols and rules » de la même phrase et par « cannot be achieved only through standardization but also through ». Rien n'est durci : la fiche ne dit pas que les protocoles seraient inutiles, ce que le texte ne dirait pas. Testé aussi dans l'autre sens : le résumé ne rétrécit pas le concept, puisque l'articulation risques/ressources — et non la seule gestion des ressources — est bien ce qu'il énonce.",
+      "Hors des quatre points, pour information : le § 14 du HTML OpenEdition est une phrase coupée en plein milieu (« management of their own »), sa suite formant le § 15. C'est un défaut de composition de l'éditeur, sans effet sur le § 13 cité par la fiche."
+    ]
+  },
+  "dossier": "corpus/evidence/resilience-fondee-sur-les-ressources/lecture.json",
+  "notes": [
+    "La thèse propre du chapitre, § 13, première phrase : « Anethetists' main objective during the planning phase is to design an envelope of \"possible situations\" adjusted to the resources (especially \"intrinsic\" resources) of the operators who are involved and who could be involved in these situations. » Elle n'a pas pu être citée : sa traduction la plus économe reste à 161 caractères, et la ramener sous le plafond faisait disparaître la phase de planification, c'est-à-dire l'anticipation.",
+    "Le résultat empirique, § 11 : le choix d'une technique repose sur deux types de critères, la gestion des risques pour le patient et la gestion des ressources disponibles pour tenir la situation. Le § 12 dédouble la seconde catégorie en ressources extrinsèques (matérielles, techniques, organisationnelles) et intrinsèques (compétences, capacités, attention, ressources cognitives, règles de métier locales), et constate que ce sont surtout les intrinsèques qui pèsent sur les décisions.",
+    "Point à ne pas déformer, et c'est la faute la plus facile ici : le texte n'oppose pas les ressources aux protocoles, il ajoute les premières aux seconds. Le § 13 dit « in addition to », le § 11 constate que l'usage des règles de sécurité et des protocoles de traitement est très présent, et le § 9 admet l'existence des règles tout en niant qu'il y ait une seule bonne solution. La coupe de la citation élide précisément ce « in addition to ».",
+    "Deux conditions organisationnelles closent le chapitre, § 15 et § 16 : des règles conçues pour rendre les opérateurs capables et non pour les contrôler, et des organisations qui intègrent et valorisent l'activité collective, avec des situations de travail favorables au développement continu des compétences.",
+    "Ce qui distingue cette carte de « environnement-capacitant », du même Pierre Falzon, vérifié mot à mot : les termes capabilité, conversion et environnement capacitant sont absents de ce chapitre. La carte validée porte sur la conversion des ressources en pouvoir d'agir, dans le cadre de Sen ; celle-ci porte sur le critère d'anticipation d'un praticien qui ne conçoit pas la situation la plus sûre dans l'absolu, mais celle que son équipe pourra tenir. L'une répond à « donner des moyens suffit-il à pouvoir agir », l'autre à « sur quoi ajuste-t-on ce qu'on prévoit de faire ».",
+    "Les deux textes se touchent en un point et un seul, la condition organisationnelle des § 15 et 16, qui renvoie pour la première fois à Falzon (2008), « Enabling safety: issues in design and continuous design », maillon vers la veine capacitante.",
+    "La citation relevée par la cartographie, au § 2, a été écartée pour trois motifs dont chacun suffit : elle porte trois appels de référence entre parenthèses que la carte afficherait tels quels, son sujet « they » reste hors du segment, et elle énonce une critique reprise à d'autres plutôt que la thèse propre des auteurs.",
+    "Le texte est rédigé en anglais par deux auteurs francophones du CNAM : la source est primaire, jamais « francophone-reception ». La traduction affichée est une traduction de travail, appuyée sur le vocabulaire que Lucie Cuvelier emploie elle-même dans sa thèse la même année (« enveloppe de situations possibles », « évaluation et gestion des ressources »).",
+    "La définition de la résilience reprise par les auteurs est celle de Hollnagel (2010, p. xxxvi) : « the intrinsic ability of a system to adjust its functioning prior to, during, or following changes and disturbances, so that it can sustain required operations under both expected and unexpected conditions ». Le facteur d'anticipation qu'ils étudient est lui aussi emprunté à Hollnagel (2010, p. xxxvii).",
+    "Accès : le texte intégral est librement lisible en HTML, mais les versions PDF et EPUB du même chapitre répondent HTTP 401 et n'ont pas été forcées. Faute de fac-similé, on ne peut pas dire sur quelle page imprimée tombe le § 13, et le localisateur est donc un numéro de paragraphe. Unpaywall déclare ce DOI fermé, ce qui est faux pour le HTML.",
+    "Une anomalie de métadonnées à connaître : la balise citation_doi de la page porte 10.4000/books.pressesmines.931, qui est le DOI de l'ouvrage entier. Le DOI du chapitre est 10.4000/books.pressesmines.982.",
+    "Le § 14 et le § 15 découpent une seule phrase en deux paragraphes numérotés, artefact de mise en ligne : un localisateur « § 14 » désignerait un fragment de phrase.",
+    "Le corps du texte porte plusieurs coquilles d'auteur ou d'édition, laissées telles quelles dans les relevés : « Anethetists' » (§ 13), « anesthestist » (§ 6), « impredictability » (§ 4), « resources available to to handle » (§ 11). Aucune ne touche la phrase citée."
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "automatisation-centree-humain",
+  "slug": "automatisation-centree-humain",
+  "status": "VALIDATED",
+  "title": "Automatisation centrée sur l'humain",
+  "themes": [
+    "automatisation-et-conception-cognitive"
+  ],
+  "domain": null,
+  "theme_labels": {
+    "automatisation-et-conception-cognitive": "Ce que la machine retire, ce qu'elle devrait rendre"
+  },
+  "authors": [
+    {
+      "name": "Charles E. Billings",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Charles E. Billings signe seul le mémorandum de 1996, mais il écrit noir sur blanc que le terme n'est pas de lui : « The term is not mine, and I have been unable to find out who first conceived it. » Il renvoie à Sheridan, Norman, Rouse et Cooley pour les technologies dites centrées sur l'humain, et son propre avant-propos cite un plan professionnel de 1989 qui emploie déjà l'expression. Ce qu'il revendique est la doctrine qu'il désigne par ce nom, « a philosophy or construct which I call human-centered automation ». Aucune date d'origine du terme n'est établie. Deux cosignatures sont à connaître et ne se valent pas : celle de Sidney Dekker, au seul chapitre cosigné du volume, qui ne porte pas le concept ; et celle de Curtis Graeber, sur la planche de 1989 où les premiers principes paraissent pour la première fois en public, sous les deux noms, et que Billings cite dans sa propre bibliographie.",
+  "quotation": {
+    "text": "L'interposition de toujours plus d'automatisation entre le pilote et le véhicule tend à éloigner les pilotes de bien des détails de l'opération […].",
+    "reference": "Charles E. Billings, « Human-Centered Aviation Automation: Principles and Guidelines », NASA Technical Memorandum 110381, NASA Ames Research Center, février 1996, partie 1, chapitre 2, page imprimée 7.",
+    "locator": "Partie 1, chapitre 2, p. 7",
+    "language": "fr",
+    "original_text": "The interposition of more and more automation between the pilot and the vehicle tends to distance pilots from many details of the operation […].",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction du lecteur primaire du corpus, faite sur le fac-similé de la page imprimée 7 rendu en image (folio PDF 27), session du 18 août 2026.",
+      "edition": null
+    }
+  },
+  "hook": "À mesure que la machine s'interpose, que reste-t-il au pilote de son vol ?",
+  "summary": "Complexité, couplage, autonomie, rétroaction insuffisante tendent à éloigner le pilote des détails : il peut s'y impliquer moins et perdre la trace de l'état du système.",
+  "sources": [
+    {
+      "label": "Charles E. Billings, Human-Centered Aviation Automation: Principles and Guidelines, NASA Technical Memorandum 110381, NASA Ames Research Center, Moffett Field, février 1996, xviii + 198 p.",
+      "kind": "primary",
+      "locator": "Partie 1, chapitre 2, p. 7",
+      "doi_isbn": "NTRS 19960016374",
+      "url": "https://ntrs.nasa.gov/api/citations/19960016374/downloads/19960016374.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Charles E. Billings, Human-Centered Aircraft Automation: A Concept and Guidelines, NASA Technical Memorandum 103885, NASA Ames Research Center, Moffett Field, août 1991, 122 p.",
+      "kind": "primary",
+      "locator": "Définition, au « nous »",
+      "doi_isbn": "NTRS 19910022821",
+      "url": "https://ntrs.nasa.gov/api/citations/19910022821/downloads/19910022821.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Curtis Graeber et Charles E. Billings, « Human-Centered Automation: Development of a Philosophy », communication à l'Aviation Safety/Automation Program Conference, NASA Ames Research Center, 11 et 12 octobre 1989, publiée en 1990.",
+      "kind": "primary",
+      "locator": "Première planche",
+      "doi_isbn": "NTRS 19910001631",
+      "url": "https://ntrs.nasa.gov/api/citations/19910001631/downloads/19910001631.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "David D. Woods et Nadine B. Sarter, Learning from Automation Surprises and « Going Sour » Accidents: Progress on Human-Centered Automation, rapport final, NASA Ames Research Center, 19 janvier 1998, 42 p.",
+      "kind": "secondary-academic",
+      "locator": "Introduction et section 1",
+      "doi_isbn": "NTRS 19980016965",
+      "url": "https://ntrs.nasa.gov/api/citations/19980016965/downloads/19980016965.pdf",
+      "consulted": "partial"
+    },
+    {
+      "label": "Charles E. Billings, Aviation Automation: The Search for a Human-Centered Approach, Mahwah (New Jersey), Lawrence Erlbaum Associates, 1997, 355 p. Refonte en volume du mémorandum de 1996 ; non ouverte.",
+      "kind": "primary",
+      "locator": null,
+      "doi_isbn": "ISBN 0-8058-2127-9",
+      "url": null,
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle",
+    "date": "2026-08-19",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 2,
+    "notes": [
+      "CITATION, vérifiée sur fac-similé. Téléchargé https://ntrs.nasa.gov/api/citations/19960016374/downloads/19960016374.pdf (HTTP 200, 18 828 752 octets, 222 folios). La couche texte de ce PDF est un OCR bruité par endroits : j'ai donc rendu le folio en image (pdfpage.py 19960016374.pdf 27) et lu la page. Le fac-similé porte, folio PDF 27, pied de page imprimé « 7 », premier paragraphe : « The interposition of more and more automation between the pilot and the vehicle tends to distance pilots from many details of the operation (fig. 2-2). » L'original_text de la fiche est identique mot pour mot, le […] tenant lieu du seul « (fig. 2-2) » retranché. Coupe signalée, verbatim.",
+      "CITATION, localisateur. La table des matières (folio PDF 5, page imprimée iii) donne « Part 1. Aviation Automation: Past, Present and Future .... 1 » puis « 2. A concept of human-centered aviation automation .... 5 » et « A concept of human-centered automation .... 7 ». Le chapitre 2 appartient bien à la partie 1 et la page 7 lui appartient : « Partie 1, chapitre 2, p. 7 » est exact. Correspondance folio PDF / page imprimée établie : folio 21 = page 1, donc folio 27 = page 7 ; vérifiée aux deux bouts (folio 218 porte « 198 », dernière page de l'index).",
+      "CITATION, traduction. Traduction maison déclarée (kind: in-house), langue source et langue cible déclarées, original_text donné. « tends to distance » rendu par « tend à éloigner », « more and more » par « toujours plus » : la modalité de tendance est conservée, rien n'est durci.",
+      "ATTRIBUTION. Le fac-similé de la page 7 porte, en bas : « The remainder of this chapter is devoted to an explanation and defense of some of the principles I believe constitute the essence of human-centered automation in aviation. The term is not mine, and I have been unable to find out who first conceived it. Sheridan, Norman, Rouse, Cooley, and many others have written for many years about “human-centered” or “user-centered” technology. » La note d'attribution cite ce passage exactement et nomme les quatre mêmes auteurs. Le « a philosophy or construct which I call “human-centered automation” » se lit folio PDF 23, page imprimée 3, section « Purpose of this document » (la fiche omet les guillemets internes de l'original, sans conséquence de sens).",
+      "ATTRIBUTION, plan professionnel de 1989. Avant-propos, folio PDF 18, page imprimée xvi : Billings cite le « National Plan to Enhance Aviation Safety through Human Factors Improvements » (Air Transport Association, 1989), dont il reproduit « It is vitally important to develop human-centered automation for the piloted aircraft and controller work station ». La note dit vrai : l'expression est déjà là, avant lui.",
+      "ATTRIBUTION, cosignature Dekker. Table des matières, folio PDF 8, page imprimée vi : « 13. Advanced and novel automation concepts in the future system (Charles E. Billings and Sidney W. A. Dekker) .... 155 ». C'est le seul chapitre du volume portant deux noms, et il ne porte pas le concept. La fiche le dit exactement.",
+      "ATTRIBUTION, cosignature Graeber. Téléchargé https://ntrs.nasa.gov/api/citations/19910001631/downloads/19910001631.pdf (HTTP 200, 14 folios). Première planche : « HUMAN-CENTERED AUTOMATION: DEVELOPMENT OF A PHILOSOPHY / Curtis Graeber / and / Charles E. Billings / NASA Ames Research Center », page imprimée 91. Les « FIRST PRINCIPLES » figurent folio 6, page imprimée 96. La fiche déclare cette cosignature en toutes lettres dans un champ affiché : la faute la plus courante de ce corpus (cosignature escamotée) n'est pas commise. Je n'ai trouvé aucune parution publique antérieure de ces principes, mais je n'ai pas pu le prouver négativement : l'antériorité annoncée est cohérente, non démontrée par moi.",
+      "ATTRIBUTION, précision sur « sa propre bibliographie ». La planche Graeber et Billings n'est PAS dans les Références du mémorandum de 1996 : j'ai lu le folio PDF 208 (page imprimée 188) en texte puis en image, la séquence alphabétique y va de « Gorham, J. A. (1973) » directement à « Grunwald, A. J. (1980) », et il n'y a pas non plus d'entrée « Billings & Graeber » (folio 206, page 186). Elle est en revanche bien dans la bibliographie du mémorandum de 1991, folio PDF 116 : « Graeber, R.C., and C.E. Billings: Human-centered automation: development of a philosophy. In: Morello, S.A.: Aviation Safety/Automation Program Conference. Washington, NASA Conference Publication 3090, 1990. » La phrase de la fiche est donc vraie, et vraie d'une source que la fiche porte (source 2) ; elle gagnerait à dire « dans la bibliographie du mémorandum de 1991 ». Ce n'est pas un motif de renvoi : l'affirmation est établie, pas fausse.",
+      "SOURCE 1. HTTP 200. Titre, auteur unique, centre, mois et numéro de TM conformes (page de titre, folio 3 ; notice NTRS : « Human-Centered Aviation Automation: Principles and Guidelines », Billings, Charles E., NASA Ames, publicationDate 1996-02-01, NASA-TM-110381). Pagination « xviii + 198 p. » vérifiée dans le document : dernier folio romain xviii (folio PDF 20, fin de l'avant-propos), dernière page arabe 198 (folio PDF 218, fin de l'index). Le formulaire SF-298 en dernière page annonce 202 pages ; c'est le décompte administratif du formulaire, la pagination réelle du volume est bien xviii + 198.",
+      "SOURCE 2. HTTP 200, 122 folios. Page de titre : « NASA Technical Memorandum 103885 / Human-Centered Aircraft Automation: A Concept and Guidelines / Charles E. Billings, Ames Research Center, Moffett Field, California / August 1991 ». Le SF-298 final donne « 15. NUMBER OF PAGES : 122 » : le « 122 p. » de la fiche est le décompte officiel. Locator « Définition, au “nous” » vérifié folio PDF 18, page imprimée 11 : section « A Concept of Human-Centered Automation », définition « “Human-centered automation” is a systems concept… », puis « Our concern is with these partially automated systems… » ; folio 19, page 12 : « Figure 6 summarizes our view of human-centered aircraft automation. We assume… We believe… ». Le contraste avec le « I » de 1996 est réel.",
+      "SOURCE 3. HTTP 200. Notice NTRS : deux auteurs dans l'ordre Graeber, Curtis (sequence 0) puis Billings, Charles E. (sequence 1), stiTypeDetails « Conference Paper », publicationDate 1990-10, publicationName « Aviation Safety/Automation Program Conference ». La planche 3 porte « AVIATION SAFETY/AUTOMATION PROGRAM CONFERENCE / 11-12 October 1989 » : dates exactes. « Publiée en 1990 » confirmée deux fois (notice NTRS et référence de Billings lui-même à NASA CP 3090, 1990). Réserve de lecture, sans conséquence de résolution : le colloque était organisé par le centre Langley et s'est tenu à Virginia Beach ; « NASA Ames Research Center » dans le label est l'affiliation des deux auteurs, telle qu'imprimée sous leurs noms sur la planche même que désigne le locator, mais sa position dans la phrase peut se lire comme un lieu de colloque. Une virgule ou « du NASA Ames Research Center » lèverait l'ambiguïté.",
+      "SOURCE 4. HTTP 200, 42 folios. Page de titre : « Learning from Automation Surprises and “Going Sour” Accidents: Progress on Human-Centered Automation / David D. Woods, Cognitive Systems Engineering Laboratory, Institute for Ergonomics, The Ohio State University / Nadine B. Sarter, Aviation Research Laboratory, Institute of Aviation, University of Illinois at Urbana-Champaign / Final Report / NASA Ames Research Center / NCC 2-592 / January 19, 1998 ». Titre, deux auteurs dans l'ordre, statut de rapport final, date au jour et nombre de pages : tout concorde. Le locator « Introduction et section 1 » est redondant, la section 1 étant elle-même intitulée « Introduction » (j'ai relevé les têtes de section : 1 Introduction, 2 Impact of Technology Change…, 3, 4, 5, 6 Conclusion) ; « Section 1, Introduction » suffirait. La référence résout, le contenu annoncé est bien là (p. 2 et 3 : « generic issues about developing human-centered technologies », renvoi à « Billings (1996) »).",
+      "SOURCE 5, metadata-only sans URL. verify_reference sur l'ISBN 0-8058-2127-9 rend reachable: false, « aucune notice trouvée » : cet échec ne prouve rien et je ne l'ai pas compté contre la fiche. J'ai donc résolu l'ISBN ailleurs. OpenLibrary, notice d'édition OL982539M (https://openlibrary.org/books/OL982539M.json) : « Aviation automation : the search for a human-centered approach », Charles E. Billings, Lawrence Erlbaum Associates Publishers, publish_places « Mahwah, N.J », publish_date 1997, pagination « xiv, 355 p. », isbn_10 0805821279. Confirmation indépendante par Crossref, DOI 10.1177/106480469800600410, dont le titre du compte rendu est lui-même la notice : « Aviation Automation: The Search for a Human-Centered Approach by Charles E. Billings 1997, 355 pages […] Mahwah, NJ: Lawrence Erlbaum Associates ISBN 0-8058-2127-9 » (John A. Wise, Ergonomics in Design, 1998). Éditeur, ville, année, pagination et ISBN de la fiche : tous exacts. « Non ouverte » est déclaré, comme il se doit.",
+      "PROSE, résumé, modalités pesées mot à mot contre la page citée. « tendent à éloigner le pilote des détails » ← « tends to distance pilots from many details of the operation » (p. 7) : tendance, pas fait acquis, conservée. « il peut s'y impliquer moins » ← « pilots may become less concerned with the details of their tasks » et « pilots may be, and may feel, less involved in the mission » (p. 7) : le « peut » rend le « may », rien n'est durci. « perdre la trace de l'état du système » ← « pilots can lose track of what is going on in advanced aircraft » (p. 7) et « Loss of state awareness » (p. 5) : la modalité reste sous le « peut ». Contrôle du sens inverse : Billings écrit p. 7 « I do not believe that a sense of diminished involvement is prevalent--yet--but it may well be if we continue along our present course » ; le résumé ne prétend nulle part que le phénomène est répandu, et ne rétrécit pas non plus la tendance en simple risque isolé.",
+      "PROSE, imputation causale du résumé. Le résumé fait des quatre attributs (complexité, couplage, autonomie, rétroaction insuffisante) le sujet de l'éloignement, là où la phrase de la p. 7 a pour sujet « the interposition of more and more automation ». Vérifié : ce n'est pas un ajout. La page 5 pose « Loss of state awareness, associated with: complexity, coupling, autonomy, inadequate feedback » ; la légende de la figure 2-2, appelée par la phrase même qui est citée, dit « Increasing complexity of aircraft automation decreases direct pilot control » (folio PDF 26, page 6) ; et le résumé officiel du document, au SF-298 (folio PDF 220), écrit « these problems are related to automation complexity, autonomy, coupling, and opacity, or inadequate feedback to operators ». La chaîne du résumé est celle du chapitre, et celle de l'auteur.",
+      "PROSE, accroche. « À mesure que la machine s'interpose, que reste-t-il au pilote de son vol ? » reprend l'interposition de la phrase citée et la « peripheralization of the flight crew » nommée dix lignes plus bas (p. 7). C'est une question, elle n'affirme pas une dépossession accomplie, ce que Billings refuse justement d'affirmer. Fidèle.",
+      "Hors des quatre points, pour information : tous les champs affichés tiennent sous leurs plafonds (title 35/48, hook 74/85, summary 169/170, quotation.text 148/150, locators 16 à 26/40, labels 176 à 230/230) et aucun ne porte de tiret cadratin.",
+      "Ce que je n'ai PAS pu atteindre : le volume de 1997 (ISBN 0-8058-2127-9), que je n'ai pas ouvert, faute de voie d'accès légitime ; la fiche le déclare « non ouverte » et je n'ai donc rien à en dire au-delà de la notice, qui concorde. Semantic Scholar a répondu 429 sur ma recherche de littérature : silence d'outil, pas constat d'absence. L'API Google Books a répondu 429 (quota) : contournée par OpenLibrary et Crossref."
+    ]
+  },
+  "dossier": "corpus/evidence/automatisation-centree-humain/lecture.json",
+  "notes": [
+    "Définition formelle, p. 3 : « \"Human-centered automation\" means automation designed to work cooperatively with human operators in the pursuit of stated common objectives. » Elle a été écartée de la citation : elle dépasse 150 caractères une fois traduite sans perte, et elle énonce une intention de conception, pas un mécanisme.",
+    "Les quatre attributs du résumé, définis p. 6 dans les termes de l'auteur. Complexité : les détails de l'automatisation deviennent plus difficiles à comprendre, à modéliser et à retenir. Couplage : des interdépendances entre fonctions rarement évidentes et souvent absentes des manuels, d'où la surprise. Autonomie : un comportement machine apparemment auto-initié, perçu comme animé quand il n'est pas attendu. Rétroaction insuffisante : la machine ne dit pas, ou mal, ce qu'elle fait ni pourquoi.",
+    "Billings nomme le mouvement décrit par la citation « peripheralization of the flight crew ». Sa conséquence, p. 7 : si l'automatisation est fiable, les pilotes se soucient moins du détail de leurs tâches, ce qui allège la charge mais les rend, et les fait se sentir, moins impliqués dans la mission.",
+    "Ce que l'auteur refuse d'imputer à l'un ou à l'autre des deux termes, p. 7 : « Most of these problems, of course, are neither \"automation problems\" nor \"human error\" problems. They are human-machine system problems, and they must be attacked as such. » Le propos n'est pas que l'automatisation est mauvaise, mais qu'elle est mal conçue.",
+    "Le chapitre 7 ajoute la fragilité, l'opacité et le littéralisme, et rattache explicitement les erreurs de mode et le défaut de conscience de mode à l'opacité, p. 94 : « I call this \"opacity\". Others have referred to it as a lack of transparency ; the two terms are synonymous in this context. »",
+    "Décision de périmètre à tenir : la partie 3 du volume, p. 115 à 154, est un référentiel de recommandations, et une carte construite sur elle tomberait sous le rejet direct du périmètre. La carte porte sur ce que l'automatisation fait à l'opérateur, jamais sur ces recommandations.",
+    "Les « premiers principes » de la figure 2-3, p. 8, sont donnés par l'auteur comme des absolus dont il dit aussitôt qu'ils sont « matters of choice to which system designers may or may not wish to adhere ».",
+    "Le passage relevé par la cartographie a été écarté : c'est une énumération de quatre défaillances (incompréhension du comportement de l'automatisation, erreurs de mode, défaut de conscience de mode, incapacité à déterminer ce que faisait l'automatisation) qu'aucune coupe ne peut réduire sans en changer le compte, et qui nomme des symptômes sans leur cause.",
+    "La citation retirée du renvoi de figure « (fig. 2-2) », seule coupe. « Vehicle » est rendu par « véhicule » et non par « avion » parce que Billings l'emploie à dessein pour couvrir aussi bien l'aéronef que le système contrôlé.",
+    "Deux dates coexistent dans le volume : mars 1995 au bas de l'avant-propos, signé à Columbus (Ohio), et février 1996 sur la page de titre du mémorandum.",
+    "La couche texte du fichier est celle d'un scan et elle est fautive de trois manières (mots collés sur des paragraphes entiers, mots déformés, chiffres et lettres intervertis). Les pages 2, 3, 5, 6, 7, 94 et xvi ont été rendues en image et lues à l'oeil ; les passages tirés des pages 91 et 155 viennent de l'extraction et devraient être revérifiés avant tout usage en citation affichée.",
+    "Le rapport NTRS 19900039122, « Toward a human-centered aircraft automation philosophy », de Billings seul selon sa notice, n'a pas pu être ouvert : le champ de téléchargement est vide et l'URL répond 404.",
+    "La littérature francophone sur ce concept n'a pas été cherchée dans cette session : c'est une lacune, et elle reste ouverte.",
+    "Le mémorandum de 1991 est désigné par l'avant-propos de 1996 comme son prédécesseur direct, et la même définition y figure déjà, à la première personne du pluriel : « By \"human-centered automation\", we mean automation designed to work cooperatively with human operators in the pursuit of stated objectives. » Il y rattache l'expression au courant du « human-centered work-place » du programme européen ESPRIT et aux travaux de Cooley sur la déqualification, et aucune revendication de paternité du terme n'y a été trouvée. Sa couverture porte la mention « Quick Release: This Technical Memorandum is a preliminary, unedited report ».",
+    "Le volume de 1997 chez Lawrence Erlbaum, refonte du mémorandum, n'a pas été ouvert et n'est pas en accès libre. Un flottement de date existe dans la littérature : Woods et Sarter le citent en 1996 et à Hillsdale, la notice éditeur donne 1997 et Mahwah. Aucun de ces millésimes n'a été lu sur une page de titre. La carte cite le mémorandum de 1996, qui est le texte ouvert.",
+    "Correction apportée au tour de contrôle, sur la source 5 : l'URL affichée pointait le DOI 10.1207/s15327108ijap0104_1, qui résout vers un tout autre texte, l'article « Toward a Human-Centered Aircraft Automation Philosophy », The International Journal of Aviation Psychology, 1(4), 1991, p. 261-270. Elle est retirée plutôt que remplacée : l'ISBN 0-8058-2127-9 identifie le volume sans ambiguïté et suffit à une source déclarée metadata-only, alors qu'un résolveur de retirage (DOI CRC 10.1201/9781315137995) afficherait une autre édition que celle du label, et qu'une notice de catalogue n'ajouterait rien que l'ISBN ne donne. Pour qui veut une notice ouverte et vérifiée : https://openlibrary.org/books/OL7936879M. L'ISBN a été contrôlé sur OpenLibrary et correspond bien à l'édition, l'année et la pagination affichées.",
+    "La citation marque désormais par « […] » la coupe du renvoi de figure « (fig. 2-2) » qui clôt la phrase source. Le renvoi ne porte aucun contenu propositionnel, mais une coupe non signalée reste une coupe.",
+    "Correction apportée au second tour de contrôle, sur le résumé. Il donnait pour acquis ce que Billings tient pour une tendance et pour un risque, et contredisait la page même que la carte cite : « tends to distance pilots », « pilots may become less concerned », « pilots may be, and may feel, less involved in the mission », et trois paragraphes plus bas « I do not believe that a sense of diminished involvement is prevalent--yet--but it may well be if we continue along our present course ». Le résumé porte désormais « tendent à éloigner » et « il peut s'y impliquer moins ». Le contrôleur proposait « il risque de s'y impliquer moins et de perdre » : cette formulation fait 192 caractères, soit 22 de trop, et « peut » est de surcroît la modalité exacte de l'auteur, « may ». La seconde moitié, « perdre la trace de l'état du système », est inchangée : c'est le « Loss of state awareness » de la page 5.",
+    "La cosignature de Curtis Graeber est désormais traitée dans la note d'attribution, comme l'était déjà celle de Dekker. La planche « HUMAN CENTERED AUTOMATION: FIRST PRINCIPLES » du document de 1989 porte, sous les deux signatures et avec la mention « Our present construct », les intitulés que reprendront la page 5 du mémorandum de 1991 et le chapitre 2 de celui de 1996 : in command, involved, informed, monitor, predictable, monitor the human, knowledge of the other's intent. Billings cite ce texte dans sa bibliographie de 1991, mais pas à l'endroit où il expose les principes. Cela ne déplace pas la paternité de la doctrine, que les deux mémorandums signent seuls et qu'il revendique en son nom (« which I call »)."
+  ]
+}

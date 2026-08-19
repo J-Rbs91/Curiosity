@@ -1,0 +1,112 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "probabilite-erreur-humaine",
+  "slug": "probabilite-erreur-humaine",
+  "status": "VALIDATED",
+  "title": "Probabilité d'erreur humaine",
+  "themes": [
+    "erreur-humaine-et-fiabilite"
+  ],
+  "domain": null,
+  "theme_labels": {
+    "erreur-humaine-et-fiabilite": "Nommer, classer et quantifier ce qui échappe à l'opérateur"
+  },
+  "authors": [
+    {
+      "name": "Alan D. Swain",
+      "app_author_id": null
+    },
+    {
+      "name": "Henry E. Guttmann",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Le Handbook de 1983 est cosigné : la couverture Sandia et la page de titre portent « A. D. Swain, H. E. Guttmann », et l'usage qui dit « Swain » tout court efface un coauteur présent d'un bout à l'autre. Le sigle THERP, lui, est antérieur de vingt ans au manuel et rapporté par le texte à Swain seul : les auteurs datent son premier emploi de novembre 1962. Les prénoms ne viennent pas d'un catalogue : la page de titre ne donne que des initiales, mais la feuille bibliographique NRC FORM 335 reliée en fin de rapport porte, au champ « AUTHOR(S) », « Alan D. Swain and Henry E. Guttmann ».",
+  "quotation": {
+    "text": "La probabilité d'erreur humaine (HEP) est la probabilité que, lorsqu'une tâche donnée est exécutée, une erreur se produise.",
+    "reference": "Alan D. Swain et Henry E. Guttmann, Handbook of Human Reliability Analysis with Emphasis on Nuclear Power Plant Applications. Final Report, NUREG/CR-1278, SAND80-0200, Sandia National Laboratories pour l'U.S. Nuclear Regulatory Commission, août 1983, chapitre 2 « Explanation of Some Basic Terms », section « Human Error Probability ».",
+    "locator": "p. 2-17",
+    "language": "fr",
+    "original_text": "In the Handbook, the basic index of human performance is the human error probability (HEP). The HEP is the probability that when a given task is performed, an error will occur.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (agent lecteur, chaîne Curiosity), 18 août 2026. Aucune traduction française publiée du Handbook n'a été identifiée. Deux choix à signaler. Le texte français rend la seconde phrase du passage seulement, la première étant donnée dans original_text ; « The HEP » y est développé en « la probabilité d'erreur humaine (HEP) » parce que l'acronyme n'est défini que par la phrase précédente, et qu'une carte affiche la citation sans son contexte. « an error will occur » est rendu par « une erreur se produise », et non par « une erreur surviendra » : la subordonnée française appelle le subjonctif après « la probabilité que ».",
+      "edition": null
+    }
+  },
+  "hook": "Peut-on mettre un chiffre sur la chance qu'un opérateur se trompe ?",
+  "summary": "La probabilité qu'une erreur survienne dans une tâche donnée sert d'indice de base. Faute de données réelles, la plupart de ces valeurs mêlent données et jugement.",
+  "sources": [
+    {
+      "label": "Alan D. Swain et Henry E. Guttmann, Handbook of Human Reliability Analysis with Emphasis on Nuclear Power Plant Applications. Final Report, NUREG/CR-1278, SAND80-0200, Sandia National Laboratories pour l'U.S. NRC, août 1983.",
+      "kind": "primary",
+      "locator": "p. 2-17",
+      "doi_isbn": "10.2172/5752058",
+      "url": "https://www.nrc.gov/docs/ML0712/ML071210299.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Même rapport, réhébergé par la UNT Digital Library (UNT Libraries Government Documents Department) avec une couche de reconnaissance optique propre, 711 pages. C'est la numérisation du DOE/OSTI, non un second scan.",
+      "kind": "primary",
+      "locator": "p. 2-17, 5-2 et 5-3",
+      "doi_isbn": "ark:/67531/metadc1097337",
+      "url": "https://digital.library.unt.edu/ark:/67531/metadc1097337/",
+      "consulted": "partial"
+    },
+    {
+      "label": "Notice OSTI (Department of Energy) du même rapport, qui porte le DOI et un fichier intégral déposé. Notice relevée pour la référence ; ce fichier n'a pas été ouvert.",
+      "kind": "primary",
+      "locator": "Notice 5752058",
+      "doi_isbn": "10.2172/5752058",
+      "url": "https://www.osti.gov/biblio/5752058",
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle",
+    "date": "2026-08-19",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 2,
+    "notes": [
+      "CITATION — vérifiée sur deux numérisations distinctes que j'ai téléchargées moi-même. (a) OSTI : curl -sSL https://www.osti.gov/servlets/purl/5752058 → HTTP 200, application/pdf, 35 180 884 octets, md5 0635755f0f02769aae07b54153466591, 711 pages. La couche texte du folio fichier 65 porte : « In the Handbook, the basic index of human performance is the human error probability (HEP). The HEP is the probability that when a given task is performed, an error will occur. » — identique caractère pour caractère à `original_text`. (b) NRC/ADAMS ML071210299 : curl renvoie HTTP 403 (blocage de bord Akamai, « Access Denied », pas un mur de connexion ; je n'ai pas cherché à le contourner), mais l'outil WebFetch a rapporté le fichier (application/pdf, 9 626 058 octets, 728 pages) — scan différent de celui d'OSTI, OCR différent, et le même passage y figure mot pour mot au folio fichier 63.",
+      "CITATION, localisateur — le folio imprimé « 2-17 » est établi sur le fac-similé, pas sur la couche texte : rendu image de la page 65 du PDF OSTI (pdfpage.py → r3/osti_p65.png, 2200x2859) puis lecture visuelle. On y voit le titre courant « Human Error Probability », l'intertitre souligné « Human Error Probability », le passage cité, et en pied de page le folio « 2-17 ». La couche texte du scan NRC (page fichier 63) se termine elle aussi par « 2-17 ». L'OCR d'OSTI est fautif ailleurs sur la même page (« hviman » pour « human »), mais pas sur les deux phrases citées ; le fac-similé lève le doute.",
+      "CITATION, section et chapitre — la table des matières (PDF OSTI, folio fichier 16, page romaine vii) porte « CHAPTER 2. EXPLANATION OF SOME BASIC TERMS 2-1 » et, dans sa liste, « Human Error Probability 2-17 ». Le libellé de la référence de la citation (chapitre 2 « Explanation of Some Basic Terms », section « Human Error Probability », p. 2-17) est donc exact jusqu'au titre de section.",
+      "CITATION, traduction — la traduction est déclarée (in-house, non publiée, datée), et les deux écarts qu'elle s'autorise le sont aussi : le français ne rend que la seconde phrase (la première reste en anglais dans `original_text`), et « The HEP » est développé en « la probabilité d'erreur humaine (HEP) ». Rien de coupé à l'intérieur de la phrase française, donc pas de […] attendu. « an error will occur » → « une erreur se produise » : le subjonctif est imposé par « la probabilité que » ; le sens n'est ni durci ni affaibli. Aucune traduction française publiée du Handbook n'est ressortie de mes recherches non plus.",
+      "SOURCES 1 — NUREG/CR-1278 / SAND80-0200. Page de couverture (folio fichier 1) et page de titre (folio fichier 7) du PDF OSTI : « Printed August 1983 », « A. D. Swain, H. E. Guttmann », « Prepared by Sandia National Laboratories… for the United States Department of Energy », « Prepared for U.S. NUCLEAR REGULATORY COMMISSION », « Manuscript Completed: June 1983 / Date Published: August 1983 ». Le rapport ADAMS ML071210299 porte la même page de couverture. Tous les éléments du label (numéros de rapport, Sandia, NRC, août 1983) sont attestés sur le document.",
+      "SOURCES 1, forme du titre — la couverture imprime « Handbook of Human-Reliability Analysis » (avec trait d'union) et c'est la forme qu'OSTI et Crossref reprennent ; la fiche écrit « Handbook of Human Reliability Analysis » (sans trait d'union). Ce n'est pas un écart : la feuille NRC FORM 335 reliée au rapport (folio fichier 697) donne au champ TITLE AND SUBTITLE « Handbook of Human Reliability Analysis With Emphasis on Nuclear Power Plant Applications », sans trait d'union. Les deux formes sont sur le document.",
+      "SOURCES 1, DOI — verify_reference(10.2172/5752058) : reachable true, conclusive true, resolved true, mismatches [] ; canonique Crossref « Handbook of human-reliability analysis with emphasis on nuclear power plant applications. Final report », A D Swain et H E Guttmann, 1983, OSTI. api.crossref.org/works/10.2172/5752058 → HTTP 200, published 1983-08-01, institution Sandia National Laboratories. Le DOI est celui d'OSTI porté sur un exemplaire hébergé par la NRC : il identifie l'œuvre, pas le fichier, ce qui est régulier.",
+      "SOURCES 2 — UNT : https://digital.library.unt.edu/ark:/67531/metadc1097337/ → HTTP 200. La page affiche « 711 pages in this report », DC.creator « Swain, A. D. » et « Guttmann, H. E. », partenaire « UNT Libraries Government Documents Department », et la collection « Office of Scientific & Technical Information Technical Reports », décrite comme « documents harvested from the Office of Scientific and Technical Information ». La revendication du label — même numérisation DOE/OSTI, non un second scan — est donc exacte, et l'honnêteté de cette mention compte : mon exemplaire OSTI fait lui aussi 711 pages. Ce ne sont pas deux témoins indépendants. Le témoin réellement indépendant est le scan NRC (728 pages), et il concorde.",
+      "SOURCES 2, OCR et localisateurs — /m1/65/ocr/ rend le passage cité sans faute (« human » et non « hviman ») : la « couche de reconnaissance optique propre » annoncée est vérifiée. /m1/167/ocr/ se termine par « 5-2 » et /m1/168/ocr/ par « 5-3 » : les trois localisateurs annoncés (2-17, 5-2, 5-3) tombent juste.",
+      "SOURCES 3 — https://www.osti.gov/biblio/5752058 → HTTP 200, titre de page conforme, DOI 10.2172/5752058 présent, lien fulltext https://www.osti.gov/servlets/purl/5752058 déclaré dans l'API et effectivement servi. Le label annonce « ce fichier n'a pas été ouvert » côté fiche ; de mon côté je l'ai ouvert, et il correspond.",
+      "ATTRIBUTION, cosignature — attestée sur le document et non sur une notice : couverture et page de titre portent « A. D. Swain, H. E. Guttmann », et la feuille NRC FORM 335 (folio fichier 697) porte au champ « 7. AUTHOR(S) » : « Alan D. Swain and Henry E. Guttmann ». Les prénoms développés par la fiche viennent donc bien d'une source interne au rapport. La cosignature n'est ni escamotée ni inventée.",
+      "ATTRIBUTION, antériorité du vocabulaire — je l'ai fait trancher par le texte. Chapitre 2, p. 2-17 : « In our earlier reports, including Section 6.1 of WASH-1400, we used the term human error rate (HER) interchangeably with human error probability. » Chapitre 5, p. 5-2 (folio fichier 167) : « At the Sixth Annual Meeting of the Human Factors Society in November 1962, the acronym THERP was first used to designate the human reliability method developed at SNL (Swain, 1963a). » Les auteurs rapportent donc leur vocabulaire à la lignée Swain/SNL antérieure au manuel, et THERP à Swain seul — exactement ce que dit la note d'attribution de la fiche. Le HEP en tant qu'indice de base standardisé est posé par le Handbook cosigné, d'où la citation est tirée : rattacher la carte aux deux signataires est fondé, et la note prévient elle-même du décalage.",
+      "ATTRIBUTION, contre-épreuve externe — recherche littérature (OpenAlex/Crossref via search_literature ; Semantic Scholar en échec 429, donc non consulté) : Boring, « Fifty Years of THERP and Human Reliability Analysis », 2012, rattache aux fondations de THERP les probabilités d'erreur humaine, les arbres d'événements, les facteurs de performance et la dépendance. Aucun tiers concurrent ne ressort comme inventeur du HEP. Je n'ai pas ouvert WASH-1400 §6.1 ni Swain 1963 : l'antériorité y est admise sur la foi du Handbook lui-même, pas vérifiée sur ces textes.",
+      "PROSE — les deux phrases du résumé se lisent sur la seule page 2-17. « sert d'indice de base » ← « the basic index of human performance is the human error probability (HEP) ». « Faute de données réelles » ← « Ideally, HEPs would be determined from actuarial data… Unfortunately, very little of this type of data exists for NPP tasks. » « la plupart de ces valeurs mêlent données et jugement » ← « Because most of our estimates of HEPs are based on some combination of data and judgment, we call them derived HEPs ». Le quantificateur « la plupart » calque « most » et ne le durcit pas en « toutes » ; à l'inverse il ne rétrécit rien, la restriction du texte étant bien générale. L'accroche est une question ouverte sur la quantification, qui est le propos déclaré du manuel (chap. 1, p. 1-1 : « The Handbook provides the methodology to identify and quantify the potential for human error in NPP tasks »).",
+      "Ce que je n'ai pas pu atteindre — l'URL NRC de la source 1 renvoie HTTP 403 à curl (blocage de bord Akamai). Ce n'est pas un lien mort : le même fichier a été rapporté par WebFetch et je l'ai lu. Semantic Scholar a répondu 429 sur une requête ; son silence n'est pas un constat d'absence. Je n'ai ouvert ni WASH-1400 ni Swain 1963a.",
+      "Hors des quatre points, pour information — l'API OSTI annonce « Pages: 699 » alors que le fichier déposé en compte 711 et le scan NRC 728 ; aucune de ces valeurs n'est affichée par la carte."
+    ]
+  },
+  "dossier": "corpus/evidence/probabilite-erreur-humaine/lecture.json",
+  "notes": [
+    "Ce que la citation ne dit pas, et que le manuel dit aussitôt après : les valeurs publiées sont des probabilités nominales, dont les facteurs propres à une installation et à une situation ont été retirés ; et elles sont dites « derived HEPs » parce qu'elles combinent données et jugement, faute de données actuarielles pour les tâches de centrale.",
+    "Ce que la probabilité porte, p. 2-7 : « We define human error as any member of a set of human actions that exceeds some limit of acceptability (Rigby, 1970). [...] In an objective assessment of human error, there is no connotation of blame or fault. » L'erreur y est une action hors tolérance, la tolérance étant définie par le système.",
+    "Les auteurs abandonnent « human error rate » (HER) au profit de « human error probability » parce que « rate » s'entend souvent comme une fréquence par unité de temps ; ils gardent néanmoins le sigle THERP, qui porte le mot abandonné, parce qu'il est établi.",
+    "Pagination par chapitre : « p. 2-17 » signifie chapitre 2, page 17, folio imprimé en pied de page. Dans l'exemplaire NRC (728 p., addendum de 1985 inclus en tête) ce folio est la page 63 du fichier ; dans la numérisation UNT (711 p.) c'est la page 65. L'écart entre exemplaires n'est pas constant : se fier au folio imprimé.",
+    "Un « Addendum #1 » du 1er septembre 1985, signé A. D. Swain seul, ouvre le fichier de la NRC. Il ne touche aucune page du chapitre 2, mais il corrige des valeurs, des tableaux et des figures : toute reprise d'un chiffre du Handbook doit lui être confrontée. La présente carte ne cite aucune valeur.",
+    "Accès : l'URL officielle de la NRC répond HTTP 403 en curl (pare-feu applicatif), mais rend le PDF par WebFetch ; une copie tierce hébergée par FTA Associates a la même taille et la même empreinte MD5 que l'exemplaire officiel, et n'a servi que de voie de téléchargement. Rien n'a été contourné.",
+    "Le scan de la NRC porte une couche OCR fautive sur la page même du passage cité (« undedirable » pour « undesirable »), et ses images JBIG2 n'ont pas pu être rendues. Le verbatim a donc été établi sur la numérisation UNT, qui lit correctement.",
+    "Non ouverts : la version préliminaire de 1980 du même NUREG/CR-1278, souvent citée sous ce numéro, et le document compagnon NUREG/CR-2254 (mai 1983). Aucune littérature secondaire, aucune source francophone, aucune traduction française publiée du Handbook n'ont été identifiées : la carte n'affiche donc aucune source secondaire.",
+    "Le DOI 10.2172/5752058 résout (HTTP 302 vers le purl OSTI) mais n'est pas connu de l'API DataCite, qui répond 404 : il est donné parce qu'il résout, pas parce qu'une notice l'a confirmé.",
+    "Le rapport compte 728 pages, addendum de 1985 compris. La couverture porte « Printed August 1983 », la page de titre « Manuscript Completed: June 1983 » et « Date Published: August 1983 ».",
+    "Correction apportée au tour de contrôle, sur la source 2 : l'exemplaire de la UNT Digital Library n'est pas une numérisation indépendante. Ses métadonnées portent la collection OSTI et l'identifiant OSTI 5752058, son OCR reproduit les mêmes artefacts de tampon que le fichier servi par osti.gov, et sa pagination est la même, 711 pages, page 65 pour le folio imprimé 2-17. Les sources 2 et 3 renvoient donc au même objet, avec deux couches de texte différentes. Le témoin réellement distinct est l'exemplaire de la NRC (ADAMS ML071210299, 728 pages, autre scan), que la carte porte en URL de sa source 1.",
+    "Le verbatim est confirmé sur trois couches de texte concordantes, sans écart : celle du fichier OSTI, celle de l'exemplaire NRC et celle de l'océrisation UNT. Deux fichiers, trois lectures : l'exemplaire NRC est bien un second témoin, la couche UNT n'en est pas un troisième.",
+    "Une variante de titre sans conséquence sur la résolution : la page de titre de l'exemplaire OSTI, Crossref et UNT écrivent « Handbook of Human-Reliability Analysis », avec un trait d'union, là où l'exemplaire NRC et l'usage courant, suivis ici, écrivent « Human Reliability ».",
+    "Correction apportée au second tour de contrôle, sur les prénoms. Le premier tour avait fait replier la carte sur « H. E. Guttmann », faute d'avoir trouvé un catalogue développant l'initiale, et ce repli laissait la fiche en désaccord avec elle-même, la référence de citation et le label de la première source écrivant « Henry E. Guttmann ». Le prénom est en fait lisible sur le document, à un endroit qu'aucune des deux lectures précédentes n'avait ouvert : la feuille NRC FORM 335 « BIBLIOGRAPHIC DATA SHEET » reliée en fin de rapport, folio 727 sur 728 dans l'exemplaire NRC et 697 sur 711 dans l'exemplaire OSTI, lue en fac-similé et non sur l'OCR. Elle porte « 7. AUTHOR(S) Alan D. Swain and Henry E. Guttmann », « DATE REPORT ISSUED : August 1983 » et « DATE REPORT COMPLETED : June 1983 ». Les trois champs affichés sont donc alignés sur la forme développée, et la phrase du premier tour affirmant qu'aucun catalogue ne développe l'initiale est retirée : elle était fausse, la notice OSTI 4242464 écrivant « Guttmann, Henry E. », et elle cherchait au mauvais endroit.",
+    "Les notices d'autorité, pour mémoire et sans que la carte s'y appuie désormais : LCNAF n82101305 donne « Swain, Alan D. », LCNAF n82081480 donne « Guttmann, H. E. » et s'arrête aux initiales, en citant pour source la page de titre du Handbook. C'est cohérent avec ce qui précède : la page de titre n'a jamais porté les prénoms, la feuille bibliographique de fin de volume les porte."
+  ]
+}

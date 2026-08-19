@@ -1,0 +1,110 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "conscience-de-la-situation",
+  "slug": "conscience-de-la-situation",
+  "status": "VALIDATED",
+  "title": "Conscience de la situation",
+  "themes": [
+    "decision-et-conscience-de-la-situation"
+  ],
+  "domain": null,
+  "theme_labels": {
+    "decision-et-conscience-de-la-situation": "Percevoir, comprendre, anticiper, agir sans comparer"
+  },
+  "authors": [
+    {
+      "name": "Mica R. Endsley",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "La définition en trois niveaux est de Mica R. Endsley seule, et le seul texte ouvrable ne la produit pas : il la cite. Ce rapport de 1998 porte cinq signatures, Mica R. Endsley, Todd C. Farley, William M. Jones, Alan H. Midkiff et R. John Hansman, et il donne la définition entre guillemets en la rapportant à « Endsley (1988) », texte signé d'elle seule ; les quatre cosignataires sont les coauteurs du texte que la carte cite, et ils restent nommés dans sa première source. Le texte de 1988 et celui de 1995 sont fermés : la définition n'est ouvrable nulle part à sa source, seulement dans des textes qui la rapportent, et c'est pourquoi cette carte ne porte aucune citation. Le terme « situation awareness », lui, est plus ancien que la définition. Enfin, le concept est contesté dans sa propre communauté : on lui reproche de manquer de définition opérationnelle admise, et de raisonner en cercle quand on en fait la cause de l'erreur qui sert à le constater.",
+  "quotation": null,
+  "hook": "Percevoir, comprendre, anticiper : ces trois niveaux décrivent-ils un état réel ?",
+  "summary": "Percevoir les éléments de la situation, comprendre leur signification, projeter leur état à court terme : trois niveaux, en amont de la décision et distincts d'elle.",
+  "sources": [
+    {
+      "label": "Mica R. Endsley, Todd C. Farley, William M. Jones, Alan H. Midkiff et R. John Hansman, Situation Awareness Information Requirements for Commercial Airline Pilots, rapport ICAT-98-1, MIT, septembre 1998, 92 p.",
+      "kind": "primary",
+      "locator": "p. 1 à 3",
+      "doi_isbn": "NTRS 20020030334",
+      "url": "https://ntrs.nasa.gov/api/citations/20020030334/downloads/20020030334.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Mica R. Endsley, « Design and Evaluation for Situation Awareness Enhancement », Proceedings of the Human Factors Society Annual Meeting, vol. 32, n° 2, 1988, p. 97-101.",
+      "kind": "primary",
+      "locator": null,
+      "doi_isbn": "10.1177/154193128803200221",
+      "url": "https://doi.org/10.1177/154193128803200221",
+      "consulted": "metadata-only"
+    },
+    {
+      "label": "Laura Louise Moens et coll., « Measuring Situation Awareness: A Meta-Review Across Domains », Human Factors, vol. 68, n° 5, 2026, p. 632-672. Méta-revue de quatorze revues systématiques, licence CC BY 4.0.",
+      "kind": "secondary-academic",
+      "locator": "Section « Theoretical Foundations »",
+      "doi_isbn": "10.1177/00187208251412110",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13013663/fullTextXML",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Norman R. Hertz et Michael T. Hertz, « Situation Awareness and Situation Assessment: How Are They Related? », 17th International Symposium on Aviation Psychology, 2013, p. 104-109.",
+      "kind": "secondary-academic",
+      "locator": "p. 105-106",
+      "doi_isbn": null,
+      "url": "https://corescholar.libraries.wright.edu/cgi/viewcontent.cgi?article=1017&context=isap_2013",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Béatrice Bailly, Conscience de la situation des conducteurs : aspects fondamentaux, méthodes, et application pour la formation des conducteurs, thèse de doctorat, Université Lumière Lyon 2, 2004, 364 p.",
+      "kind": "francophone-reception",
+      "locator": "p. 9-10, 27 et 29",
+      "doi_isbn": "HAL tel-00543981",
+      "url": "https://theses.hal.science/tel-00543981/document",
+      "consulted": "full-text"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle",
+    "date": "2026-08-19",
+    "attribution": "confirmee",
+    "quotation": "absente",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "ATTRIBUTION — Rapport ICAT-98-1 téléchargé depuis NTRS (HTTP 200, 2 294 422 o, 92 p. PDF). Page de titre (PDF p. 1 et p. 3) : « Mica R. Endsley, Todd C. Farley, William M. Jones, Alan H. Midkiff, and R. John Hansman », « Report No. ICAT-98-1 », « September 1998 », MIT. Le liminaire imprimé occupe i-vi, donc p. 1 imprimée = PDF p. 9. À la p. 1 imprimée : « the most generally applicable definition is that provided by Endsley (1988). \"Situation awareness is the perception of the elements in the environment within a volume of time and space, the comprehension of their meaning, and the projection of their status in the near future.\" » La liste des références (p. 14 imprimée = PDF p. 24) identifie sans ambiguïté ce « Endsley (1988) » : « Design and evaluation for situation awareness enhancement. In Proceedings of the Human Factors Society 32nd Annual Meeting (pp. 97-101) » — c'est-à-dire la deuxième source de la fiche.",
+      "ATTRIBUTION — Crossref sur 10.1177/154193128803200221 : un seul auteur, « Mica R. Endsley » (affiliation Northrop Aircraft), 1988, vol. 32, n° 2, p. 97-101. verify_reference : resolved=true, conclusive=true, mismatches=[]. La signature unique du texte de 1988 est donc établie sur notice ; le texte lui-même est fermé (voir plus bas), je ne l'ai pas ouvert. Les trois niveaux sont rapportés à Endsley par trois textes indépendants que j'ai ouverts : le rapport de 1998 (« To further expand on the above definition, SA can be described in three hierarchical phases »), Bailly 2004 p. 10 imprimée, et Moens et al. 2026 (« Endsley's (1995b) three-level model remains the most influential theoretical framework of SA »). Aucune cosignature escamotée ni inventée : les quatre cosignataires du rapport de 1998 sont bien affichés dans la notice de la première source, et la définition ne leur est pas attribuée.",
+      "ATTRIBUTION — Antériorité du terme vérifiée et non contredite par la fiche : Bailly 2004, p. 9 imprimée (PDF p. 16), « A l'origine, ce terme était plus employé par les pilotes que par la communauté scientifique […] En 1986, la Conscience de la Situation est alors définie comme le facteur le plus important pour l'amélioration de l'efficacité d'une mission (US Air Force 57th Fighter Weapons Wing) ». La fiche attribue la définition en trois niveaux, non le terme : c'est exact.",
+      "CITATION — La fiche n'en porte pas ; champ facultatif, donc absente et non fautive. J'ai vérifié que l'absence n'est pas seulement commode. Les deux textes sources de la définition sont fermés : Unpaywall sur 10.1177/154193128803200221 rend is_oa=false, oa_status=closed, aucune oa_location ; idem sur 10.1518/001872095779049543 (« Toward a Theory of Situation Awareness in Dynamic Systems »), is_oa=false, closed. La phrase canonique fait par ailleurs 198 caractères, au-delà de la limite de 150 sans coupe. Sur ce point l'absence est justifiée.",
+      "CITATION — Réserve, qui ne motive pas de renvoi : une citation verbatim, localisée et sous 150 caractères reste possible à partir d'un texte réellement ouvert et signé d'Endsley en premier auteur, le rapport ICAT-98-1, p. 1 imprimée (PDF p. 9) — par exemple « The first step in achieving SA involves perceiving the status, attributes, and dynamics of relevant elements in the environment. » (128 car.) ou « Situation awareness forms the critical input to—but is separate from—decision making » (85 car.), cette dernière étayant mot pour mot le « distincts d'elle » du résumé. La traduction française de la définition trouvée chez Bailly (p. 10 imprimée) ne pourrait pas servir : c'est un texte qui cite Endsley, pas Endsley.",
+      "SOURCES 1/5 — ICAT-98-1 : PDF NTRS ouvert (HTTP 200) ; les cinq prénoms affichés sont contrôlés un à un sur la page de titre du document et redoublés par la fiche NTRS /api/citations/20020030334 (« Endsley, Mica R. », « Farley, Todd C. », « Jones, William M. », « Midkiff, Alan H. », « Hansman, R. John », dans cet ordre, MIT, publicationDate 1998-09-01). La page de citation https://ntrs.nasa.gov/citations/20020030334 répond 200. « 92 p. » correspond au nombre de pages du fichier. Locator « p. 1 à 3 » exact : la définition, les trois niveaux (Level 1/2/3) et le passage sur la séparation d'avec la décision tiennent aux p. 1-3 imprimées = PDF p. 9-11.",
+      "SOURCES 2/5 — Endsley 1988 : verify_reference et Crossref concordent sur titre, auteur unique, revue, vol. 32, n° 2, p. 97-101, 1988. Le champ consulted=metadata-only est honnête : SAGE est payant et je n'ai pas ouvert le texte (aucun contournement tenté).",
+      "SOURCES 3/5 — Moens et al. : XML plein texte Europe PMC récupéré (HTTP 200, 263 277 o) ; article-id doi = 10.1177/00187208251412110, pmcid PMC13013663, volume 68, issue 5, fpage 632 ; Crossref donne page 632-672 et licence https://creativecommons.org/licenses/by/4.0/ (confirmée aussi dans l'XML). Les sept prénoms complets de Crossref commencent bien par « Laura Louise Moens » : le « et coll. » est régulier. Le résumé porte « Fourteen reviews, capturing over 477 unique primary studies » : les « quatorze revues systématiques » de la notice sont exactes. Locator « Section \"Theoretical Foundations\" » : la section réelle s'intitule « Theoretical Foundations of Situation Awareness » (46 car., au-delà de la limite de 40 du locator) ; l'abrègement est sans ambiguïté, la section existe et porte bien le contenu invoqué. Hors des quatre points, pour information : l'URL affichée est un point d'accès machine (fullTextXML) ; un lecteur y recevra du XML brut plutôt qu'un article.",
+      "SOURCES 4/5 — Hertz & Hertz : PDF CORE Scholar téléchargé (HTTP 200, application/pdf, 861 224 o, 7 p. dont une page de couverture du dépôt). Page de titre de l'article (PDF p. 2) : « Norman R. Hertz » et « Michael T. Hertz », Progeny Systems Corporation ; la citation du dépôt confirme « 17th International Symposium on Aviation Psychology, 104-109 ». Folio imprimé 104 en pied de PDF p. 2 et 109 en pied de PDF p. 7 : la pagination annoncée est exacte. Locator « p. 105-106 » exact : c'est en p. 105 que se trouve l'argument de circularité (« appears to be circular reasoning: How does one know that SA was lost? …because the human responded inappropriately ») et la mention du peu de consensus.",
+      "SOURCES 5/5 — Bailly : PDF HAL téléchargé (HTTP 200, 5 696 737 o, 364 pages, ce qui recoupe le « 364 p. » de la notice) ; l'API HAL (halId_s:tel-00543981) donne fileMain_s identique et defenseDate_s 2004-12-13. Contrôle du prénom : la notice HAL n'affiche que « B. Bailly », mais la page de titre de la thèse (PDF p. 2) porte « Présentée et soutenue publiquement par Béatrice Elisabeth BAILLY », Université Lumière Lyon 2, Institut de Psychologie — le « Béatrice » affiché par la fiche est donc établi sur le document, pas sur une notice. Décalage folio +7 (p. 9 imprimée = PDF p. 16) ; les trois folios du locator sont justes : p. 9-10 = histoire du terme, définition d'Endsley et trois niveaux ; p. 27 = critique d'Adams et al. « briser le cadre rigide des trois niveaux définit par Endlsey » ; p. 29 = « Bedny et Meister (1999) sont critiques sur le modèle de Endsley ».",
+      "PROSE — Résumé contrôlé phrase par phrase. « Percevoir les éléments de la situation, comprendre leur signification, projeter leur état à court terme » calque les trois intitulés du rapport de 1998 (« Perception of the elements in the environment », « Comprehension of the current situation », « Projection of future status ») et « the projection of their status in the near future ». Le glissement environnement → situation est couvert par la source francophone elle-même : Bailly, p. 11 imprimée, « le niveau 1 est une sorte de socle fondé sur la perception des éléments pertinents de la situation ». « En amont de la décision et distincts d'elle » est porté deux fois : rapport 1998 p. 1, « Situation awareness forms the critical input to—but is separate from—decision making » et « it is important that SA be considered separately from the decision-making and performance stages » ; Bailly p. 11, « pour Endsley, le propre de la conscience de la situation est de précéder la prise de décision ». Aucun débordement, et rien de rétréci : la fiche ne réduit pas le concept à une seule de ses opérations.",
+      "PROSE — Le point de contestation a été contrôlé dans les deux sens. La fiche ne présente pas le concept comme consensuel : l'accroche est interrogative (« ces trois niveaux décrivent-ils un état réel ? ») et le résumé décrit le modèle sans le valider. Cette réserve est exactement ce que portent les sources : Moens et al. 2026, section Theoretical Foundations, « researchers have long noted that SA is a theoretically challenged construct, lacking a universally accepted operational definition and exhibiting ill-defined conceptual boundaries » et « SA should be regarded as a context-dependent meta-construct rather than a singular, precisely defined phenomenon » ; Hertz & Hertz 2013 p. 105, « Situation awareness is a hypothetical construct that cannot be measured directly » et l'argument de circularité. Inversement, la fiche ne surjoue pas la contestation : Moens et al. écrivent bien que le modèle en trois niveaux « remains the most influential theoretical framework of SA », et Bailly p. 9 que les auteurs « se réfèrent très majoritairement à la définition et au modèle de R. Mica Endsley ».",
+      "NON ATTEINT — Les textes de 1988 (SAGE) et de 1995 (Human Factors 37(1), 32-64) n'ont pas été ouverts : Unpaywall les donne fermés et je n'ai tenté aucune voie contournant un mur payant. Je ne conclus donc rien sur le verbatim exact de la définition dans son texte d'origine ; je constate seulement que trois textes indépendants ouverts par mes soins, dont un signé d'Endsley en premier auteur, la lui rapportent dans les mêmes termes."
+    ]
+  },
+  "dossier": "corpus/evidence/conscience-de-la-situation/lecture.json",
+  "notes": [
+    "Pourquoi la carte ne porte pas de citation, et c'est le résultat le mieux établi du dossier. Première raison, l'attribution : la phrase que tout le monde cite est, dans le rapport ouvert, une citation rapportée, encadrée de guillemets droits et précédée de « the most generally applicable definition is that provided by Endsley (1988) ». L'afficher reviendrait à citer Endsley à travers un rapport qui la cite. Seconde raison, mesurée : la phrase fait 198 caractères en anglais et 207 en français ; pour passer sous 150 il faut soit lui retirer son sujet, soit retirer « dans un futur proche », ce qui vide le troisième niveau.",
+    "La définition elle-même, telle que le rapport la rapporte : « Situation awareness is the perception of the elements in the environment within a volume of time and space, the comprehension of their meaning, and the projection of their status in the near future. »",
+    "Le geste théorique du texte est la séparation d'avec la décision, p. 1 : « Situation awareness forms the critical input to, but is separate from, decision making. » Un pilote très expérimenté peut décider mal si sa conscience de la situation est incomplète ou inexacte ; un débutant peut comprendre exactement ce qui se passe sans savoir quoi faire. Cette phrase a été envisagée en citation et écartée : 161 caractères, et elle dit la séparation, pas les trois niveaux.",
+    "Ce que la vulgarisation courante oublie, et que le rapport écrit : la conscience de la situation n'est pas acquise instantanément mais se construit dans le temps ; tous les éléments n'ont pas la même importance à tout moment, mais aucun ne devient jamais sans importance, seulement secondaire, et il faut en garder assez pour savoir qu'ils ne sont pas devenus primaires.",
+    "La contestation, en accès ouvert et dans la revue même qui a publié Endsley en 1995 : Moens et coll. (2026) écrivent que la conscience de la situation est « a theoretically challenged construct, lacking a universally accepted operational definition and exhibiting ill-defined conceptual boundaries », rapportent la formule de Sarter et Woods (« just a label for a variety of cognitive processing activities ») et concluent qu'il faut la tenir pour un méta-construit dépendant du contexte plutôt que pour un phénomène unique et précisément défini.",
+    "Second versant de la contestation : l'argument de circularité, reformulé par Hertz et Hertz (2013) d'après Flach (1995) : comment sait-on que la conscience de la situation a été perdue ? parce que l'opérateur a mal réagi ; pourquoi a-t-il mal réagi ? parce qu'elle avait été perdue. Les mêmes constatent qu'il n'existe pas de définition universellement admise.",
+    "Neuf textes de contestation ont été testés et sont tous fermés : Sarter et Woods (1991), Flach (1995), Stanton et coll. (2010), Dekker et Hollnagel (2004), Salmon et coll. (2008 et 2015), Endsley (2015), Flach (2015), Fioratou et coll. (2010). Les deux sources ouvertes affichées sont ce qui a pu être ouvert, pas ce qu'il y a de plus canonique.",
+    "Une troisième voie a été cherchée sans aboutir : trouver un texte ouvert où Endsley énonce elle-même la définition sans se citer. Elle n'existe pas dans ce qui a pu être ouvert. Dans le rapport fédéral DOT/FAA/AM-94/27 de décembre 1994, qu'elle signe avec Mark D. Rodgers, le même paragraphe figure déjà, avec « controller » au lieu de « pilot », et la phrase y est de nouveau entre guillemets, attribuée cette fois à « Endsley (1987; 1988) », donc à deux textes.",
+    "La thèse de Bailly (2004) donne un rendu français attesté de la définition, p. 10, et situe l'antériorité du terme, p. 9 : issu de la médecine aéronautique, il désignait déjà en 1986, pour la 57th Fighter Weapons Wing de l'US Air Force, le facteur le plus important d'efficacité d'une mission. Cette traduction n'est pas proposée comme citation : c'est la traduction de travail d'un tiers dans une thèse qui cite Endsley, et elle fait 172 caractères.",
+    "Ce que le rapport de 1998 fait vraiment, sur 80 de ses 92 pages : une analyse de tâche dirigée par les buts, auprès de pilotes de ligne expérimentés. Il prévient lui-même que le résultat décrit ce que des pilotes voudraient idéalement savoir, « a design goal, not necessarily a description of an existing system ».",
+    "Ce que le rapport ne contient pas, pour qu'on ne le lui fasse pas dire : aucune discussion des critiques (les mots controversy, criticism et ill-defined y sont absents, les noms de Sarter, Woods et Flach aussi), aucune mesure (SAGAT n'y est jamais nommé), aucune comparaison avec le modèle mental, l'image opérative ou la charge de travail.",
+    "Le chiffrage souvent repris (88 % des accidents à composante d'erreur humaine impliqueraient un problème de conscience de la situation, dont 72 % au niveau 1) figure bien dans le rapport, mais il y est renvoyé à Endsley (1995a) et n'est pas une donnée propre : la carte ne le porte pas.",
+    "Correspondance des folios : le corps commence au folio PDF 9, qui porte la page imprimée 1, et la règle est constante, folio PDF = page imprimée plus huit. La couche texte du scan est fautive ; la page de titre et la page de la définition ont été rendues en image et lues à l'oeil, guillemets compris.",
+    "Trois dépôts n'ont pas pu être ouverts et n'ont pas été forcés : tandfonline.com (défi Cloudflare), eprints.soton.ac.uk (défi Anubis), dépôt de Stanton et Salmon, et deepblue.lib.umich.edu, dépôt de Sarter. Ce sont des échecs d'outil, pas des constats d'absence.",
+    "Le rapport ICAT-98-1 est un rapport du MIT International Center for Air Transportation, Department of Aeronautics & Astronautics, soutenu par la NASA Ames sous le contrat NAG 2-716 : la NASA est le bailleur, pas le coéditeur. Le texte de 1988 dont il tire la définition est fermé et n'a pas été ouvert ; Unpaywall répond is_oa false, aucun dépôt.",
+    "Corrections apportées au tour de contrôle. Le champ des auteurs affichait les cinq signataires du rapport de 1998 pour un concept qui n'en a qu'un : il est ramené à Mica R. Endsley. Et trois prénoms étaient faux dans les notices affichées, tous sur le même schéma, initiale exacte et prénom inventé : « Marjorie T. Hertz » pour Michael T. Hertz (relevé sur la couverture CORE Scholar et l'en-tête de l'article), « Lise L. Moens » pour Laura Louise Moens (relevé dans le XML d'Europe PMC et confirmé par Crossref), « Blandine Bailly » pour Béatrice Bailly (la page de titre de la thèse porte « Béatrice Elisabeth BAILLY », la notice HAL n'indiquant que « B. Bailly »)."
+  ]
+}

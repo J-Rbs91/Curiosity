@@ -1,0 +1,89 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "gestion-du-risque-fatigue",
+  "slug": "gestion-du-risque-fatigue",
+  "status": "VALIDATED",
+  "title": "Systèmes de gestion du risque fatigue",
+  "themes": [
+    "charge-et-vigilance"
+  ],
+  "domain": null,
+  "theme_labels": {
+    "charge-et-vigilance": "Des grandeurs qu'on définit pour les gérer"
+  },
+  "authors": [
+    {
+      "name": "Philippe Cabon",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "L'article de 2015 est signé de Philippe Cabon seul, mais l'appellation « système de gestion du risque fatigue » n'est pas de lui : il l'introduit au passif et lui donne deux origines institutionnelles, une recommandation de l'Organisation de l'aviation civile internationale, qu'il cite sans que sa bibliographie la date, et les autorités australiennes de l'aviation civile. Ce qui lui revient en propre est l'analyse critique : il expose le postulat d'un lien linéaire entre fatigue et sécurité pour le contester aussitôt, à partir de ses propres recherches. Il est par ailleurs cosignataire d'un des textes de référence qu'il cite : acteur du champ qu'il décrit, non auteur de son vocabulaire.",
+  "quotation": {
+    "text": "Elles consistent à limiter le temps de service sur la base d’un système de gestion du risque fatigue plutôt que sur la base d’une réglementation.",
+    "reference": "Philippe Cabon, « Des approches prescriptives aux systèmes de gestion du risque fatigue », Perspectives interdisciplinaires sur le travail et la santé (PISTES), 17-2, mis en ligne le 6 décembre 2015. DOI 10.4000/pistes.4571.",
+    "locator": "§ 31, conclusion",
+    "language": "fr",
+    "original_text": null,
+    "original_language": null,
+    "translation": {
+      "kind": "none",
+      "translator": null,
+      "edition": null
+    }
+  },
+  "hook": "Limiter les heures ou gérer le risque : la fatigue se règle-t-elle d'avance ?",
+  "summary": "Au lieu de plafonner les heures par règlement, on limite le temps de service selon un risque fatigue évalué. Mais le lien entre fatigue et sécurité n'est pas linéaire.",
+  "sources": [
+    {
+      "label": "Philippe Cabon, « Des approches prescriptives aux systèmes de gestion du risque fatigue », Perspectives interdisciplinaires sur le travail et la santé (PISTES), 17-2, mis en ligne le 6 décembre 2015. Licence CC BY-NC-ND 4.0.",
+      "kind": "primary",
+      "locator": "§ 31, conclusion",
+      "doi_isbn": "10.4000/pistes.4571",
+      "url": "https://journals.openedition.org/pistes/4571",
+      "consulted": "full-text"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle",
+    "date": "2026-08-19",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "Texte ouvert par moi-même : curl 200 sur https://journals.openedition.org/pistes/4571 (162 137 octets, enregistré en local), plus la version PDF curl 200 sur https://journals.openedition.org/pistes/pdf/4571 (287 053 octets, 14 pages). Aucun mur d'accès : PISTES est en libre accès intégral, la mention `consulted: full-text` est justifiée.",
+      "CITATION — contrôlée comme sous-chaîne exacte, pas à la lecture. Script Python comparant le champ `quotation.text` du brief au texte détagué de la page : `exact substring: True` à l'index 34685, et identique après normalisation NFC. Les deux apostrophes typographiques U+2019 (« d’un », « d’une ») sont celles du texte source. Aucune coupe, aucun [...], aucune traduction : `language: fr`, `translation.kind: none`, ce qui est correct puisque l'original est français.",
+      "LOCATOR — « § 31, conclusion » est exact dans les deux supports. Dans le HTML, la séquence est : fin du §30, balise de titre « Conclusion », puis le paragraphe numéroté 31 qui s'ouvre sur « La prévention de la fatigue des opérateurs… » et contient la phrase citée. Dans le PDF, même chose en page 10/14, sous le titre « Conclusion », paragraphe 31. Le plan de l'article confirme que la Conclusion est bien la dernière section (Introduction, 1 à 4, Conclusion).",
+      "SOURCE — DOI 10.4000/pistes.4571 : Crossref (api.crossref.org/works/10.4000/pistes.4571) rend le titre « Des approches prescriptives aux systèmes de gestion du risque fatigue », auteur unique Philippe Cabon (ORCID 0000-0003-1479-0042, `sequence: first`, aucun second auteur), revue « Perspectives interdisciplinaires sur le travail et la santé », volume 17-2, issued 2015, licence https://creativecommons.org/licenses/by-nc-nd/4.0/. Résolution du DOI : HTTP 302 vers journals.openedition.org/pistes/4571. Tous les éléments affichés dans le `label` concordent.",
+      "MILLÉSIME — la date affichée n'est pas lue sur une notice mais sur le document lui-même : la page de garde du PDF (p. 1/14) porte « 17-2 | 2015 » et « mis en ligne le 06 décembre 2015 », sous la seule signature « Philippe Cabon ». La carte écrit « 6 décembre 2015 » (sans le zéro initial) : même date. La licence « CC BY-NC-ND 4.0 » du label est portée par le bloc « Droits d'auteur » de la page (« Le texte seul est utilisable sous licence CC BY-NC-ND 4.0 ») et par la mention Creative Commons de la p. 1 du PDF.",
+      "ATTRIBUTION — la carte ne revendique aucune paternité de vocabulaire pour Cabon, et c'est ce que dit le texte. §4 : « Ces approches sont désignées sous l’appellation « Systèmes de Gestion du Risque Fatigue » (SGS-RF) ou Fatigue Risk Management System (FRMS) » — tournure passive, sans auteur. Les deux origines institutionnelles annoncées par la fiche sont au mot près celles de l'article : §19 « Ces SGS-RF ont récemment fait l’objet d’une recommandation de l’Organisation de l’aviation civile internationale (OACI) », suivie de la définition citée « (OACI/IATA/IFALPA, 2010) » ; §22 « Le concept de SGS-RF a été fortement encouragé par les autorités de l’aviation civile australienne (Dawson et McCulloch, 2004) ».",
+      "ATTRIBUTION, millésime cité par l'auteur — j'ai relevé la bibliographie entière (37 entrées) : elle ne comporte aucune entrée « OACI/IATA/IFALPA 2010 ». La seule entrée OACI est « International Civil Aviation Organisation (ICAO) (2011). Fatigue Risk Management Systems Manual for Regulators. ICAO Doc 9966, Montreal ». La fiche a donc raison d'écrire qu'il cite cette recommandation « sans que sa bibliographie la date », et elle a raison de ne pas afficher 2010 comme un millésime propre : ce serait une date reprise d'un appel de référence sans notice correspondante.",
+      "ATTRIBUTION, cosignature — vérifiée sur le document et dans les deux sens. Le PDF ne porte qu'une signature, « Philippe Cabon », en p. 1 et p. 2 : pas de cosignataire escamoté. Inversement, la fiche a raison de le dire acteur du champ : la bibliographie porte « Gander, P., Hartley, L., Powell, D., Cabon, P., Hitchcock, E., Mills, A., Popkin, S. (2011). Fatigue Risk Management : organizational factors at the regulatory and industry/company level », texte qu'il cite lui-même aux §19 et §23, ainsi que Cabon et coll. 1996, 2001, 2002 et 2012.",
+      "ATTRIBUTION, contre-vérification externe — search_literature (OpenAlex + Crossref ; Semantic Scholar en échec 429, consigné comme échec d'outil et non comme silence) sur « Fatigue Risk Management System origin Australian aviation » rend Dawson & McCulloch, CASA, Sprajcer/Vincent/Dawson « Creating a Fatigue Risk Management System » (2025) : aucune trace d'une paternité Cabon du terme FRMS/SGS-RF. Rien ne contredit la fiche.",
+      "PROSE — les deux phrases du `summary` sont adossées à des énoncés indicatifs de l'auteur, sans changement de mode ni de portée. « on limite le temps de service selon un risque fatigue évalué » rend le §31 « limiter le temps de service sur la base d’un système de gestion du risque fatigue » ; « Au lieu de plafonner les heures par règlement » rend le « plutôt que sur la base d’une réglementation » de la même phrase. « Mais le lien entre fatigue et sécurité n’est pas linéaire » est l'assertion de l'auteur au §29 : « Cet exemple montre que la relation entre la fatigue et la sécurité n’est pas linéaire », confirmée au §30 (« les systèmes actuels reposent sur une vision relativement linaire donnant l’illusion… »). Le `hook` est interrogatif et n'affirme rien.",
+      "PROSE, contrôle du sens inverse (trop-etroite) — j'ai cherché si la carte rétrécissait le concept. Le §20 précise que les SGS-RF « peuvent soit constituer un complément aux limitations réglementaires […] soit se substituer totalement à la réglementation », et le §4 « viennent compléter, voire remplacer ». Le « au lieu de » du résumé pourrait sembler ne retenir que la substitution, mais il reprend exactement le cadrage de la phrase citée (« plutôt que »), qui est la conclusion propre de l'auteur : pas de débordement, pas de rétrécissement.",
+      "TITRE — « Systèmes de gestion du risque fatigue » est l'appellation même du concept telle qu'elle figure entre guillemets au §4, et non une paraphrase du titre de l'article (« Des approches prescriptives aux systèmes de gestion du risque fatigue »). Il ne promet ni plus ni moins que ce que la carte tient.",
+      "Hors des quatre points, pour information : le §31 de l'article porte une coquille de l'auteur ou de l'éditeur, « (ICAO, 201) » pour 2011, et le §30 « linaire » pour « linéaire ». Elles sont dans la source, pas dans la carte, qui ne les reprend pas.",
+      "Non atteint : rien. Aucune ressource nécessaire à ce contrôle n'a demandé de compte, de défi anti-robot ni de prêt. Seul Semantic Scholar a renvoyé 429, sans conséquence sur les quatre points."
+    ]
+  },
+  "dossier": "corpus/evidence/gestion-du-risque-fatigue/lecture.json",
+  "notes": [
+    "Ce que remplaçaient les approches anciennes, § 5 : « Traditionnellement, la prévention de la fatigue des salariés s'appuie sur des approches prescriptives encadrant des limitations des temps de service et de temps de repos minimum. » Leur défaut, § 9 : elles sont dites unidimensionnelles parce qu'elles ne s'appuient que sur une dimension temporelle, et leur modèle sous-jacent est linéaire, la fatigue augmentant avec la durée du travail et diminuant avec celle du repos.",
+    "Le postulat est exposé pour être discuté, jamais endossé, et la phrase suivante commence par « Or ». La phrase relevée par la cartographie, « Le postulat sur lequel repose ces systèmes est que le niveau de fatigue des opérateurs permet de prédire le niveau de sécurité », tient sous le plafond (127 caractères) mais n'a pas été retenue : isolée sur une carte, elle serait lue comme la thèse de l'auteur, ce qui serait un contresens exact.",
+    "La réfutation, qui est l'apport propre de l'auteur. Sur les modèles biomathématiques, § 25 : « ils peuvent donner une fausse illusion de prédire un risque sur la sécurité alors qu'ils ne prédisent qu'une probabilité de fatigue élevée. » Sur le lien lui-même, § 28 : les opérateurs peuvent compenser la baisse de leurs ressources, et ces stratégies de protection de la performance améliorent paradoxalement certains indicateurs de sécurité.",
+    "Le facteur cognitif décisif, § 29 : « la conscience que l'opérateur a de son niveau de fatigue joue manifestement un rôle essentiel », d'où la conclusion que des niveaux de fatigue relativement faibles peuvent augmenter le risque, précisément parce qu'ils sont plus difficilement détectables et n'induisent aucune adaptation du comportement.",
+    "La citation retenue s'ouvre sur une anaphore, « Elles », qui renvoie à la phrase précédente du même paragraphe : « Depuis quelques années, des approches alternatives ont été développées. » Les deux phrases ne peuvent pas être soudées, ce qui recomposerait un énoncé qui n'existe pas.",
+    "Citations écartées : la définition entre guillemets du § 19 est celle de l'OACI, pas de Cabon, et l'afficher ferait parler un tiers sous sa signature ; « Compte tenu des limites inhérentes aux réglementations des temps de service dans la prévention de la fatigue, les SGS-RF se posent comme des alternatives » fait 154 caractères ; « Une meilleure connaissance des liens fatigue-sécurité nous semble donc être une condition indispensable à la validité et l'efficacité des SGS-RF » (145 caractères) reste la meilleure citation possible si une carte porte sur la critique plutôt que sur la bascule.",
+    "L'acronyme français employé dans tout le texte est « SGS-RF », par référence au Système de Gestion de la Sécurité auquel le risque fatigue est adossé, et il ne faut pas le corriger en SGRF. L'équivalent anglais donné par l'auteur est Fatigue Risk Management System (FRMS).",
+    "Frontière avec activity-ergonomics, vérifiée sur le texte : l'objet est la fatigue prise comme grandeur qu'on prédit, mesure et gère au titre de la sécurité (modèles biomathématiques, échelle de Samn Perelli renseignée en vol, actométrie, agendas de sommeil). Les adaptations de mode opératoire sont mentionnées mais jamais analysées pour elles-mêmes : elles servent d'argument contre la validité du lien fatigue vers sécurité.",
+    "Une adjacence signalée sans être tranchée : le § 28 rapporte que des services très matinaux réduisaient le nombre d'événements de sécurité non critiques tout en augmentant celui des événements de criticité élevée, ce qui est un effet d'indicateur au sens de measurement-theory. Le périmètre tranche ici en faveur de human-factors, l'objet restant ce que l'instrument saisit de l'état de l'opérateur.",
+    "Rejet direct évité de justesse : les § 19 à 26 sont descriptifs et rapportent un dispositif institutionnel ; une carte construite sur eux exposerait un référentiel. La carte est construite sur les § 28 à 31, où se trouve l'analyse de l'auteur.",
+    "Trois coquilles de l'original, relevées identiques sur le rendu HTML et sur le PDF de l'éditeur, donc imputables au texte publié : « Le postulat sur lequel repose ces systèmes » (§ 4), « une vision relativement linaire » (§ 30) et « (ICAO, 201) » (§ 31). Le nom de Dawson et McCulloch est orthographié « McCullough » au § 9.",
+    "Le localisateur est un numéro de paragraphe : la revue est électronique et l'article n'a pas de pagination imprimée. Pour qui rouvre le PDF de l'éditeur, le § 31 est sur le folio 9, dixième page du fichier. Le titre exact est « Des approches prescriptives », et non « réglementaires » comme l'écrivait la cartographie.",
+    "Aucun dépôt HAL de cet article n'existe et aucune traduction publiée n'a été trouvée ; la revue fournit un titre et un résumé en anglais et en espagnol, mais le corps du texte n'existe qu'en français.",
+    "Deux corrections apportées au tour de contrôle. Le titre de la carte reprenait le titre de l'article amputé du syntagme qui nomme le concept, « systèmes de gestion du », que l'identifiant conservait : il nomme désormais le concept, et le titre exact de l'article reste intact dans le label de la source et dans la référence de la citation. Par ailleurs, la note d'attribution datait de 2010 la recommandation de l'OACI : c'est le millésime de l'appel de référence du § 19, « (OACI/IATA/IFALPA, 2010) », auquel la bibliographie de l'article ne fait correspondre aucune entrée, celle-ci ne portant que « ICAO (2011), Fatigue Risk Management Systems Manual for Regulators, Doc 9966 », dont la première édition est de juillet 2011. Aucun millésime n'est donc affiché pour cette recommandation."
+  ]
+}

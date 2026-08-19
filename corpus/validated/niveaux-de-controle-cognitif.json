@@ -1,0 +1,100 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "niveaux-de-controle-cognitif",
+  "slug": "niveaux-de-controle-cognitif",
+  "status": "VALIDATED",
+  "title": "Trois niveaux de comportement",
+  "themes": [
+    "erreur-humaine-et-fiabilite"
+  ],
+  "domain": null,
+  "theme_labels": {
+    "erreur-humaine-et-fiabilite": "Nommer, classer et quantifier ce qui échappe à l'opérateur"
+  },
+  "authors": [
+    {
+      "name": "Jens Rasmussen",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Le rapport Risø de 1981 est signé de Jens Rasmussen seul, mais il n'y forge pas le modèle : la phrase citée s'ouvre sur « In this model » et renvoie à ses propres travaux de 1976 et 1980. Il n'écrit jamais le sigle SRK, ni « niveaux de contrôle cognitif » : il écrit « trois niveaux de comportement », et l'intitulé sous lequel le modèle circule est postérieur à ce texte, sans qu'on sache de qui il vient. Le même rapport cite James Reason et Donald Norman sur l'erreur, à la même période : ce ne sont pas trois découvertes indépendantes.",
+  "quotation": {
+    "text": "Dans ce modèle, une distinction est établie entre trois niveaux de comportement : performance fondée sur l'habileté, la règle et la connaissance […]",
+    "reference": "Jens Rasmussen, « Human errors. A taxonomy for describing human malfunction in industrial installations », Risø-M No. 2304, Risø National Laboratory, Roskilde, août 1981.",
+    "locator": "p. 11",
+    "language": "fr",
+    "original_text": "In this model, a distinction is drawn between three levels of behaviour: skill-, rule-, and knowledge-based performance, see fig. 3.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction de travail faite dans cette session de lecture, à partir du texte anglais du rapport Risø-M-2304 folio imprimé 11 ; non publiée, non revue par un tiers. La coupe finale signalée par des crochets retire le renvoi « see fig. 3 », conservé dans original_text.",
+      "edition": null
+    }
+  },
+  "hook": "Se tromper en pilotant un geste ou en raisonnant : est-ce la même erreur ?",
+  "summary": "Selon que l'action est une routine, l'application d'une règle apprise ou un plan tiré de connaissances, ce n'est pas le même contrôle qui opère, ni les mêmes erreurs.",
+  "sources": [
+    {
+      "label": "Jens Rasmussen, « Human errors. A taxonomy for describing human malfunction in industrial installations », Risø-M No. 2304, Risø National Laboratory, Roskilde, août 1981, 28 p. Déposé en libre accès par DTU Orbit.",
+      "kind": "primary",
+      "locator": "p. 11",
+      "doi_isbn": "ISBN 87-550-0784-8",
+      "url": "https://backend.orbit.dtu.dk/ws/files/137196604/RM2304.PDF",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Jens Rasmussen, « Human Errors: A Taxonomy for Describing Human Malfunction in Industrial Installations », Journal of Occupational Accidents, vol. 4, n° 2-4, 1982, p. 311-333.",
+      "kind": "primary",
+      "locator": "Même phrase, p. 5 du PDF déposé",
+      "doi_isbn": "10.1016/0376-6349(82)90041-4",
+      "url": "https://backend.orbit.dtu.dk/ws/files/158020073/ERTAX1.PDF",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Jens Rasmussen, « Skills, rules, and knowledge; signals, signs, and symbols, and other distinctions in human performance models », IEEE Transactions on Systems, Man, and Cybernetics, SMC-13(3), mai 1983, p. 257-266.",
+      "kind": "primary",
+      "locator": null,
+      "doi_isbn": "10.1109/tsmc.1983.6313160",
+      "url": "https://doi.org/10.1109/tsmc.1983.6313160",
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle",
+    "date": "2026-08-19",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 0,
+    "notes": [
+      "SOURCE 1 ouverte en entier : curl -sSL https://backend.orbit.dtu.dk/ws/files/137196604/RM2304.PDF → HTTP 200, application/pdf, 379 022 o, 29 pages de fichier dont 1 page de garde DTU Orbit ; la pagination imprimée du rapport va de 1 à 28, ce qui corrobore le « 28 p. » du label. Décalage établi : folio imprimé N = page de fichier N+1.",
+      "CITATION — folio imprimé 11 (page de fichier 12), couche texte native (pdfpage.py répond « aucune image sur cette page »), première phrase du folio : « In this model, a distinction is drawn between three levels of behaviour: skill-, rule-, and knowledge-based performance, see fig. 3. » Identique caractère pour caractère à `original_text`. Le locator « p. 11 » est donc juste au folio imprimé, celui que le lecteur retrouvera. La coupe […] ne retire que « see fig. 3 », conservé dans `original_text` comme annoncé, et la traduction est déclarée maison, non publiée : les deux mentions obligatoires sont présentes.",
+      "SOURCE 1, signature et millésime lus SUR le document, pas sur une notice : page de titre (fichier p. 4) « RISO-M-2304 / HUMAN ERRORS. A TAXONOMY FOR DESCRIBING HUMAN MALFUNCTION IN INDUSTRIAL INSTALLATIONS / J. Rasmussen », puis « August 1981 / Riso National Laboratory, DK-4000 Roskilde, Denmark » ; page de faux-titre (fichier p. 5) « ISBN 87-550-0784-8 / ISSN 0418-6435 / Riso Repro 1981 ». Aucun cosignataire nulle part sur le document. Le label affiché (auteur, titre, numéro de rapport, lieu, mois, année, nombre de pages, dépôt DTU Orbit) est exact sur tous ses points.",
+      "SOURCE 1, ISBN : verify_reference sur 87-550-0784-8 rend `reachable: false`, `candidates: []`, « aucune notice trouvée » — aucune base n'a répondu, ce n'est donc PAS une réfutation. L'ISBN a été lu directement sur la page d'imprimatur du PDF, ce qui est une attestation plus forte qu'une notice.",
+      "SOURCE 2 ouverte en entier : curl -sSL https://backend.orbit.dtu.dk/ws/files/158020073/ERTAX1.PDF → HTTP 200, 201 944 o, 22 pages de fichier. La phrase s'y retrouve bien, en orthographe américaine cette fois (« three levels of behavior », « behavior » sans u) sur la page portant le numéro imprimé 5 (page de fichier 6). Le locator « Même phrase, p. 5 du PDF déposé » renvoie donc à la pagination imprimée sur la page elle-même : il résout. Note de lecture : c'est la variante américaine, et la carte a bien rattaché son `original_text` en « behaviour » au rapport Risø de 1981, pas à cette version de 1982 — la distinction est correctement tenue.",
+      "SOURCE 2, métadonnées : api.crossref.org/works/10.1016/0376-6349(82)90041-4 → « Human errors. A taxonomy for describing human malfunction in industrial installations », auteur unique Jens Rasmussen, Journal of Occupational Accidents, vol. 4, n° 2-4, p. 311-333, 1982-09. Volume, numéro, pagination et année du label sont tous exacts.",
+      "SOURCE 3 : api.crossref.org/works/10.1109/tsmc.1983.6313160 → « Skills, rules, and knowledge; signals, signs, and symbols, and other distinctions in human performance models », auteur unique Jens Rasmussen, IEEE Transactions on Systems, Man, and Cybernetics, SMC-13, n° 3, p. 257-266, publié 1983-05. Le label reproduit exactement ces éléments, y compris « mai 1983 ». curl sur https://doi.org/10.1109/tsmc.1983.6313160 → HTTP 302 vers ieeexplore.ieee.org/document/6313160/ : le DOI résout. Le texte intégral est derrière le mur IEEE et je ne l'ai pas ouvert — mais la fiche déclare `consulted: metadata-only`, ce qui est exactement le statut de ce que j'ai pu établir.",
+      "ATTRIBUTION vérifiée dans les deux sens. Cosignature escamotée : aucune — les trois documents portent Rasmussen seul, sur la page de titre du rapport comme dans les notices Crossref des deux articles. Cosignature inventée : aucune non plus, la carte ne crédite personne d'autre. La note d'attribution est corroborée par la bibliographie du rapport (folio imprimé 27, fichier p. 28) : « Rasmussen, J., 1976, Outlines of a Hybrid Model of the Process Operator », et deux entrées « Rasmussen, J., 1980 » — l'auto-renvoi « (Rasmussen 1976, 80) » lu au folio 9 est donc réel, et le « In this model » ne renvoie qu'à ses propres travaux antérieurs.",
+      "ATTRIBUTION, question du nom : grep sur tout le fichier pour « SRK », « cognitive control » et « levels of cognitive » → 0 occurrence. Le rapport écrit bien « three levels of behaviour », jamais le sigle ni « niveaux de contrôle cognitif ». Le titre affiché de la carte, « Trois niveaux de comportement », est donc le vocabulaire de l'auteur lui-même et non un intitulé de circulation ; la carte évite ici le piège habituel du terme plus tardif qu'elle nomme dans sa note.",
+      "PROSE, contrôlée phrase par phrase contre le folio 11 et le folio 13. Le hook (« est-ce la même erreur ? ») a son répondant textuel au folio 13 : « Clearly, the mental processes and the related error mechanisms are different for the various levels. » Le résumé décalque les trois domaines sans les durcir : « routine » ← « automated, more or less subconscious routines » ; « application d'une règle apprise » ← « performance in familiar situations controlled by stored rules », que le folio 13 rattache au « degree of training of the operator » ; « un plan tiré de connaissances » ← « actions must be planned from an analysis and decision based on knowledge ». « Ce n'est pas le même contrôle qui opère » ← « different concepts are used to control behaviour ». Ni débordement ni rétrécissement : le résumé ne prétend pas les niveaux étanches, ce que le texte interdirait (« Since rule-based behaviour is used to control skill-based subroutines, the error mechanisms related to skill-based routines are always active »), et il ne rabat pas non plus le modèle sur la seule erreur.",
+      "Hors des quatre points, pour information : le champ `doi_isbn` de la source 1 porte le préfixe « ISBN » dans la valeur (« ISBN 87-550-0784-8 ») là où les deux autres sources portent un DOI nu. Aucune incidence sur ce que le lecteur voit, ni sur la résolution."
+    ]
+  },
+  "dossier": "corpus/evidence/niveaux-de-controle-cognitif/lecture.json",
+  "notes": [
+    "Ce que chaque niveau contrôle, dans les termes du rapport : au niveau de l'habileté, des routines automatisées plus ou moins inconscientes commandées par des schémas mémorisés dans un domaine spatio-temporel, dont les erreurs tiennent à la variabilité de force, d'espace ou de coordination ; au niveau de la règle, des situations familières commandées par des règles mémorisées, dont les erreurs tiennent au mauvais classement d'une situation, à une association fautive ou à un oubli de procédure ; au troisième niveau, des situations uniques et non familières où l'action doit être planifiée à partir d'une analyse et d'une décision fondées sur la connaissance du système.",
+    "Rasmussen pose lui-même une limite à sa taxonomie : le recueil de données et la prédiction par décomposition des tâches ne sont possibles, au niveau de la connaissance, que dans des situations expérimentales très contrôlées, pas en situation réelle.",
+    "Deux compléments du même énoncé, non portés par la carte : un quatrième type d'erreur qui porte sur le choix du niveau lui-même (« errors of discrimination »), et le couplage avec la triade signal, signe, symbole, que l'auteur rapporte lui aussi à son travail antérieur.",
+    "Ce que Rasmussen présente comme l'apport propre du rapport n'est pas le modèle à trois niveaux mais la taxonomie multi-facettes qu'il permet : « it has been stressed several times that the important aspect of the proposed taxonomy is the structure, not the elements used within the various categories » (folio 25).",
+    "La version que tout le monde cite, l'article IEEE de 1983, est fermée et n'a pas été ouverte : rien n'est établi ici de sa formulation, ni du moment où le sigle SRK apparaît sous la plume de Rasmussen. Tout ce qui est affirmé vaut pour le rapport de 1981 et, par contrôle, pour la version de 1982.",
+    "Recherche plein texte sur le fichier de 1981 : aucune occurrence de « SRK », aucune de « cognitive control », aucune de « skill-, rule-, knowledge-based behaviour » sous cette forme. L'expression « taxonomy of cognitive control » se lit en revanche chez Vicente et Rasmussen en 1992, texte qui n'est pas celui-ci.",
+    "Une date à ne pas recopier : le corps du texte écrit « James Reason (1975, 76, 79) », mais la bibliographie du même rapport ne donne que 1975, 1976 et 1977. Le « 79 » est soit une coquille pour 77, soit un renvoi omis ; aucune carte ne doit affirmer un Reason 1979 sur la foi de ce rapport.",
+    "Le rapport cote le texte de Norman de 1979 « CHIP 88 », là où le document lui-même porte « Report No. 7906 ». Les deux cotes n'ont pas été départagées.",
+    "Le PDF déposé par DTU n'est pas un fac-similé : ses pages de corps portent une couche de texte native, ses pages de figures sont des images numérisées et à l'envers. La numérisation porte des corruptions visibles ailleurs dans le texte ; la phrase citée est propre et a été contrôlée sur la version de 1982.",
+    "Le locator « p. 11 » est le folio imprimé. Dans le fichier de DTU Orbit, qui ajoute une page de garde, c'est la page 12 sur 29. La figure 3, qui étiquette les trois niveaux, est au folio 12.",
+    "Réception francophone non instruite : aucune recherche systématique, aucun texte francophone ouvert. La cartographie signale une discussion du modèle par Jean-Michel Hoc et René Amalberti sans qu'un texte ouvert ait été localisé.",
+    "La version révisée de 1982, déposée en libre accès par DTU Orbit avec la mention « Document Version: Peer reviewed version », a été ouverte comme second témoin indépendant pour contrôler la citation mot pour mot : la phrase s'y lit à l'identique, en orthographe américaine. La cartographie donnait cette version pour fermée ; Unpaywall répond au contraire is_oa true, oa_status green."
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "glissements-de-l-action",
+  "slug": "glissements-de-l-action",
+  "status": "VALIDATED",
+  "title": "Glissements de l'action",
+  "themes": [
+    "erreur-humaine-et-fiabilite"
+  ],
+  "domain": null,
+  "theme_labels": {
+    "erreur-humaine-et-fiabilite": "Nommer, classer et quantifier ce qui échappe à l'opérateur"
+  },
+  "authors": [
+    {
+      "name": "Donald A. Norman",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Le rapport de novembre 1979 est signé de Donald A. Norman seul, relevé à trois endroits du document, mais il ne revendique pas le mot « slip » : il le reçoit de la tradition freudienne et linguistique, où il désigne d'abord le lapsus de parole. Ce qu'il déclare faire est un déplacement d'objet, de la parole vers l'action. La collecte des incidents, elle, fut collective : il en remercie le groupe de recherche LNR, et Jonathan Grudin en particulier. Le rapport cite James Reason à quatre reprises, et Jens Rasmussen citera Norman à son tour en 1981 : ces travaux sur l'erreur sont contemporains et se lisent. Sur la cote enfin, la couverture porte « Report No. 7906 » et le formulaire de la page suivante « 7905 » : le document se contredit d'un chiffre.",
+  "quotation": {
+    "text": "Un glissement (« slip ») se produit lorsque quelqu'un exécute une action qui n'est pas voulue.",
+    "reference": "Donald A. Norman, Slips of the Mind and an Outline for a Theory of Action, Report No. 7906, Center for Human Information Processing, University of California, San Diego, novembre 1979 (rapport DTIC AD-A081932), section « Slips: Window to the Mind », page imprimée 3.",
+    "locator": "p. 3",
+    "language": "fr",
+    "original_text": "A slip occurs when someone performs an action that is not intended.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (agent lecteur, chaîne Curiosity), 18 août 2026. Aucune traduction française publiée de ce rapport n'a été identifiée. Trois choix à signaler. « Slip » est rendu par « glissement », qui est le mot retenu par l'identifiant de la fiche, et le terme anglais est conservé entre parenthèses parce que la littérature francophone de facteurs humains le laisse souvent tel quel et qu'une carte affiche la citation sans son contexte. « Someone performs an action » est rendu par « quelqu'un exécute une action » : « performs » porte ici l'exécution, non la réussite. « That is not intended » est rendu par « qui n'est pas voulue » et non par « non intentionnelle » : chez Norman l'intention est un objet technique, l'étape de formation de l'intention, et « non intentionnelle » aurait laissé croire que le glissement se situe à cette étape, ce que le texte dit précisément le contraire.",
+      "edition": null
+    }
+  },
+  "hook": "Comment fait-on autre chose que ce qu'on avait l'intention de faire ?",
+  "summary": "Le glissement est une action exécutée sans être voulue. Il n'arrive pas au hasard : des actions possibles entrent en conflit, ou les éléments d'une séquence se mêlent.",
+  "sources": [
+    {
+      "label": "Donald A. Norman, Slips of the Mind and an Outline for a Theory of Action, Report No. 7906, Center for Human Information Processing, University of California, San Diego, novembre 1979, 34 p. Rapport DTIC AD-A081932.",
+      "kind": "primary",
+      "locator": "p. 3",
+      "doi_isbn": "10.21236/ADA081932",
+      "url": "https://archive.org/download/DTIC_ADA081932/DTIC_ADA081932.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Donald A. Norman, « Categorization of action slips », Psychological Review, vol. 88, n° 1, 1981, p. 1-15. Version révisée publiée, fermée : notice seule, le texte n'a pas été ouvert.",
+      "kind": "primary",
+      "locator": "Notice seule, texte fermé",
+      "doi_isbn": "10.1037/0033-295X.88.1.1",
+      "url": "https://doi.org/10.1037/0033-295X.88.1.1",
+      "consulted": "metadata-only"
+    },
+    {
+      "label": "Donald A. Norman, Curriculum Vitae, version du 5 janvier 2024, jnd.org. Ouvert sur la seule rubrique des rapports techniques, pour établir comment l'auteur cote lui-même ce rapport.",
+      "kind": "primary",
+      "locator": "Rubrique des rapports techniques",
+      "doi_isbn": null,
+      "url": "https://jnd.org/wp-content/uploads/2024/01/Don-Norman-Curriculum-Vitae.pdf",
+      "consulted": "partial"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle",
+    "date": "2026-08-19",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 0,
+    "notes": [
+      "Source primaire ouverte moi-même : curl -L https://archive.org/download/DTIC_ADA081932/DTIC_ADA081932.pdf → HTTP 200, 1 782 141 octets, 25 folios de fichier. La couche OCR est illisible dès le folio 3 (bouillie de caractères) : tout ce qui suit a été lu en image, via pdfpage.py --rotate=270 puis Read sur le PNG, jamais sur l'extraction.",
+      "Correspondance folio fichier / page imprimée établie avant de juger le localisateur : le scan est couché et porte deux pages imprimées par folio. Folio 1 = couverture (--rotate=0), folio 2 = formulaire DD 1473, folio 3 = pages imprimées 1-2 (Abstract | page de titre + Prologue), folio 4 = pages imprimées 3-4. Formule : folio N = pages imprimées 2N-5 et 2N-4. Le corps s'arrête à la page imprimée 33 (fin des références, folio 19) ; les folios 20 à 25 sont les listes de diffusion ONR.",
+      "CITATION — verbatim. Folio 4, colonne de gauche = page imprimée 3 (en-tête « Norman / October 25, 1979 — From Slips to Action / 3 »). Sous le titre de section souligné « Slips: Window to the Mind », première phrase du premier paragraphe, lue sur image recadrée et agrandie (ctrl_gl/crop_p3.png) : « A slip occurs when someone performs an action that is not intended. » Identique au champ original_text, mot pour mot, y compris « someone performs » (à ne pas confondre avec la variante de l'Abstract, page imprimée 1 : « A slip occurs when a person does an action that is not intended. » — la fiche cite bien la page 3, pas l'abstract). Le localisateur « p. 3 » et la mention de section sont donc exacts. Traduction déclarée comme interne, sans coupe.",
+      "ATTRIBUTION — confirmée. Signature relevée sur le document en trois endroits : couverture (« Donald A. Norman », seul, image folio 1), formulaire DD 1473 champ 7 AUTHOR(S) « Donald A. Norman » seul (image folio 2 recadrée), et page imprimée 2 sous le titre « Donald A. Norman / University of California, San Diego » (image folio 3, colonne droite). Aucun cosignataire, ni escamoté ni inventé.",
+      "ATTRIBUTION — la réserve portée par la fiche est exacte et vérifiée sur le texte : Norman ne revendique pas le mot. Page imprimée 3, il rapporte le vocabulaire à Freud (« Freud knew this, and from his analyses of errors, Freud made important contributions… »), et page imprimée 2 il situe son propre objet comme un déplacement : « the study of slips, especially slips of performance and actions (as opposed to slips of the tongue) ». La liste de références (page imprimée 33, folio 19) porte bien « Reason, J. T. Actions not as planned. In G. Underwood & R. Stevens (Eds.), Aspects of consciousness. London: Academic Press, 1979 », et Reason est cité dans le corps page imprimée 3 (« Reason has recorded others (1977, 1979) »). Je n'ai pas compté exhaustivement les quatre occurrences de Reason annoncées par la note (il aurait fallu imager les 17 folios du corps) : rien ne la contredit, je ne la certifie pas.",
+      "ATTRIBUTION — la collecte collective annoncée est attestée : page imprimée 29 (folio 17, colonne de gauche), section « Acknowledgement » : « I am thankful for the help of the LNR research group, both in the building up the collection of slips and in providing useful comment upon the analysis of the examples. In particular, Jonathan Grudin was an avid collector and analyzer of slips. »",
+      "SOURCE 1 — résout. DOI 10.21236/ADA081932 : api.crossref.org → HTTP 200, titre « Slips of the Mind and an Outline for a Theory of Action », auteur unique Donald A. Norman, type report, éditeur DTIC, daté 1979-11-01. Cote : la couverture porte bien « REPORT No. 7906 » — vérifié sur l'image native (2720×3392) recadrée et agrandie ×4, le dernier chiffre a la boucle fermée en bas d'un 6, non la barre haute d'un 5 —, tandis que le formulaire DD 1473 champ 1 porte « 79Ø5 ». La fiche affiche 7906, soit la cote de couverture, et signale elle-même la contradiction. « novembre 1979 » suit la couverture (les en-têtes de page portent, eux, October 25, 1979). « 34 p. » suit le champ 15 du formulaire et concorde avec le corps (page de titre + 33 pages numérotées). archive.org/metadata/DTIC_ADA081932 → HTTP 200, access-restricted-item absent : accès libre, aucun contrôle contourné.",
+      "SOURCE 2 — résout. DOI 10.1037/0033-295X.88.1.1 : Crossref HTTP 200 → « Categorization of action slips. », Donald A. Norman seul, Psychological Review, vol. 88, n° 1, p. 1-15, 1981. Exactement ce que le label annonce. Le label déclare lui-même la consultation en notice seule : je n'ai pas non plus ouvert le texte (APA fermé), et je ne conclus donc rien sur son contenu.",
+      "SOURCE 3 — résout. curl https://jnd.org/wp-content/uploads/2024/01/Don-Norman-Curriculum-Vitae.pdf → HTTP 200, 460 533 octets, 25 pages ; l'en-tête de chaque page porte « Last modified: January 5, 2024 », ce qui confirme le millésime affiché. La rubrique « TECHNICAL REPORTS & OTHER PAPERS » existe et contient : « Norman, D. A. (1979). Slips of mind and an outline for a theory of action (Tech. Rep.). La Jolla: University of California, San Diego, Center for Human Information Processing. » Le label est donc exact sur ce qu'il annonce (une rubrique consultée dans un but donné) ; pour information, ce but n'aboutit pas : le CV ne numérote aucun rapport, et donne le titre sans article (« Slips of mind »).",
+      "PROSE — fidèle. L'accroche « Comment fait-on autre chose que ce qu'on avait l'intention de faire ? » ne dit rien de plus que la définition de la page 3. Le résumé reprend les deux propositions du texte : « Slips do not occur randomly » → « Il n'arrive pas au hasard », puis « They often result from conflict among several possible actions or thoughts, or by intermixing the components of a single action sequence » → « des actions possibles entrent en conflit, ou les éléments d'une séquence se mêlent ». Le « ou » conserve la disjonction, et rien n'est affirmé comme exclusif ni comme systématique. Deux abrègements sans effet de sens, relevés pour information et non comme motif de renvoi : « actions or thoughts » est réduit aux actions, et la troisième voie du texte (« by performing an appropriate act in some inappropriate way ») n'est pas reprise ; l'énumération se lit comme illustrative après le deux-points, elle ne rétrécit pas le concept, qui reste défini par la première phrase.",
+      "Hors des quatre points, pour information : le champ translation.translator décrit la traduction comme datée du 18 août 2026 ; je n'ai aucun moyen de vérifier cette date, et elle n'engage aucun des quatre points."
+    ]
+  },
+  "dossier": "corpus/evidence/glissements-de-l-action/lecture.json",
+  "notes": [
+    "Ce que Norman met hors du champ, par décision de méthode et non par contraste : les erreurs de détermination des buts, de décision et de résolution de problème. Table 1, p. 10 : « Errors that are not classified as slips ». Et p. 9 : « Here I start with intentions as given ». Le mot « mistake » n'est pas employé dans ce rapport comme terme technique opposé à « slip ».",
+    "La machinerie : les séquences d'action habiles sont commandées par des schémas, structures de connaissance sensori-motrices ; la sélection d'un schéma demande plus qu'une activation élevée, elle demande des conditions de déclenchement. D'où quatre sources de glissement énumérées p. 9 : formation de l'intention, activation, déclenchement, exécution de l'acte.",
+    "Une incohérence interne à ne pas reproduire sans la savoir : le résumé annonce trois catégories majeures et la Table 1 en donne trois, mais le corps du texte, p. 9, en annonce quatre. Si une carte avance un nombre, elle doit dire lequel des deux endroits elle suit.",
+    "La citation proposée par le repérage ne définissait pas le glissement mais l'une de ses trois grandes catégories, le déclenchement fautif : « A schema may be properly selected and activated, but lead to a slip because it is triggered improperly, either at the wrong time or not at all. » (p. 17, 143 caractères, donc affichable). Elle reste disponible pour une carte qui porterait cette catégorie, mais les deux phrases ne doivent pas être fondues.",
+    "Ce que le glissement donne à voir, p. 5 : beaucoup d'erreurs sont rattrapées au moment où elles sont commises, ce qui suppose un mécanisme de contrôle du comportement distinct de celui qui sélectionne et exécute l'acte.",
+    "La couche texte du PDF est corrompue pour les pages du corps (suites de caractères parasites) parce que la reconnaissance a été faite sur des images non redressées ; la couche OCR d'Internet Archive souffre du même défaut. Aucune phrase de la lecture ne vient d'une extraction automatique : tout a été relevé à l'oeil sur l'image rendue avec --rotate=270.",
+    "Un piège de cote dû à l'OCR : la couche texte lit « REPORT No. 7908 », leçon fausse qui circule sur le web. La cote « CHIP 88 », que rapporte le rapport Rasmussen de 1981, ne figure nulle part sur ce document.",
+    "Pagination : les folios PDF 3 à 19 portent deux pages imprimées chacun, la page impaire à gauche. Le locator porte le folio imprimé, jamais le folio PDF. Le titre courant de toutes les pages, « From Slips to Action », n'est le titre de rien et ne doit pas passer dans une référence.",
+    "La version publiée de 1981 n'a pas été ouverte et rien n'en est affirmé : le titre a changé, le rapport parle de « slips » et l'article de « action slips ». Aucune pagination de 1981 ne doit être portée sur une citation établie ici.",
+    "Pages non lues : sur les 34 pages imprimées, les pages 12 à 14 et 19 à 28 n'ont pas été ouvertes. Elles portent la suite des exemples classés et la discussion sur le contrôle, le retour d'information et les théories cybernétiques.",
+    "Aucune littérature secondaire ni source francophone n'a été cherchée sur ce concept : la carte n'en affiche donc aucune."
+  ]
+}

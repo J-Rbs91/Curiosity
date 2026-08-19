@@ -1,0 +1,115 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "controle-supervise",
+  "slug": "controle-supervise",
+  "status": "VALIDATED",
+  "title": "Contrôle supervisé",
+  "themes": [
+    "automatisation-et-conception-cognitive"
+  ],
+  "domain": null,
+  "theme_labels": {
+    "automatisation-et-conception-cognitive": "Ce que la machine retire, ce qu'elle devrait rendre"
+  },
+  "authors": [
+    {
+      "name": "Thomas B. Sheridan",
+      "app_author_id": null
+    },
+    {
+      "name": "William L. Verplank",
+      "app_author_id": null
+    },
+    {
+      "name": "Thurston L. Brooks",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "La communication de 1978 porte trois signatures, Thomas B. Sheridan, William L. Verplank et Thurston L. Brooks, que l'usage réduit à deux et parfois à une. Une distinction est à tenir : l'échelle des dix degrés d'automatisation ne figure pas dans cette communication à trois, mais dans le rapport du MIT signé des deux premiers. La formulation par laquelle l'échelle est presque toujours citée, « the computer offers no assistance », ne se trouve dans aucun des deux textes : elle vient de reprises postérieures. L'expression « supervisory control », enfin, est employée comme reçue, sans référence fondatrice : 1978 n'en est pas la date d'origine.",
+  "quotation": {
+    "text": "Le contrôle supervisé est un schéma de commande hiérarchique où un système […] est télésurveillé et actionné par intermittence […] par une personne.",
+    "reference": "Thomas B. Sheridan, William L. Verplank et Thurston L. Brooks, « Human/computer control of undersea teleoperators », dans The 14th Annual Conference on Manual Control, NASA Conference Publication 2060, NASA Ames Research Center, novembre 1978, p. 343 à 357. Notice NTRS 19790007441.",
+    "locator": "p. 343, section 1, 2e paragraphe",
+    "language": "fr",
+    "original_text": "Supervisory control is a hierarchical control scheme whereby a system (which could be a teleoperator, but could also be an aircraft, power plant, etc.) having sensors, actuators and a computer, and capable of autonomous decision-making and control over short periods and in restricted conditions, is remotely monitored and intermittently operated directly or reprogrammed by a person.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (agent lecteur, chaîne Curiosity), 18 août 2026. Aucune traduction française publiée de ce texte n'a été identifiée. Trois choix à signaler. La phrase d'origine fait 384 caractères : elle ne pouvait pas tenir sous 150 sans coupe, et les deux coupes sont marquées. La première, après « un système », retire l'incise « (which could be a teleoperator, but could also be an aircraft, power plant, etc.) » puis la capacité prêtée à la machine, « having sensors, actuators and a computer, and capable of autonomous decision-making and control over short periods and in restricted conditions » : la citation garde donc la hiérarchie et le rôle de la personne, et perd l'autonomie locale du calculateur, qui est restituée dans definition_de_lauteur. La seconde, après « par intermittence », retire « directly or reprogrammed », c'est-à-dire les deux modes par lesquels la personne reprend la main. Enfin « remotely monitored » est rendu par « télésurveillé » et non par « surveillé à distance », qui portait la phrase à 155 caractères : le composé dit exactement la même chose dans un texte qui parle de téléopérateurs, mais c'est une compression, et elle est signalée ici plutôt que dissimulée.",
+      "edition": null
+    }
+  },
+  "hook": "Entre tout faire soi-même et laisser faire la machine, combien de positions ?",
+  "summary": "Une machine décide seule sur de courtes périodes ; la personne planifie, surveille, reprend la main par intermittence. Le rapport en ordonne dix degrés d'automatisation.",
+  "sources": [
+    {
+      "label": "Thomas B. Sheridan, William L. Verplank et Thurston L. Brooks, « Human/computer control of undersea teleoperators », dans The 14th Annual Conference on Manual Control, NASA CP-2060, novembre 1978, p. 343-357.",
+      "kind": "primary",
+      "locator": "p. 343, section 1",
+      "doi_isbn": "NTRS 19790007441",
+      "url": "https://ntrs.nasa.gov/api/citations/19790007441/downloads/19790007441.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Thomas B. Sheridan et William L. Verplank, Human and Computer Control of Undersea Teleoperators, rapport technique du Man-Machine Systems Laboratory, MIT, pour l'Office of Naval Research, 14 juillet 1978, 186 p.",
+      "kind": "primary",
+      "locator": "p. 1-1 ; table 8.2, p. 8-17 à 8-19",
+      "doi_isbn": "DTIC AD-A057655",
+      "url": "https://archive.org/download/DTIC_ADA057655/DTIC_ADA057655.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "NASA, The 14th Annual Conference on Manual Control, NASA Conference Publication 2060, Ames Research Center, novembre 1978, 692 p. Volume d'actes, ouvert pour l'avant-propos et la table des matières.",
+      "kind": "primary",
+      "locator": "Avant-propos et table des matières",
+      "doi_isbn": "NTRS 19790007417",
+      "url": "https://ntrs.nasa.gov/api/citations/19790007417/downloads/19790007417.txt",
+      "consulted": "partial"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle",
+    "date": "2026-08-19",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 0,
+    "notes": [
+      "CITATION — Téléchargé https://ntrs.nasa.gov/api/citations/19790007441/downloads/19790007441.pdf (HTTP 200, 854 775 octets, 15 pages). La page imprimée 343 est le folio PDF 1 et n'a AUCUNE couche texte (0 caractère extrait) : je l'ai rendue en image (pdfpage.py ntrs_19790007441.pdf 1) puis relue à l'écran, avec deux recadrages agrandis x2 sur la zone 0.52-0.78 et 0.70-0.86 de la hauteur. J'y lis mot pour mot : « Supervisory control is a hierarchical control scheme whereby a system (which could be a teleoperator, but could also be an aircraft, power plant, etc.) having sensors, actuators and a computer, and capable of autonomous decision-making and control over short periods and in restricted conditions, is remotely monitored and intermittently operated directly or reprogrammed by a person. » L'`original_text` de la fiche est identique caractère pour caractère (384 caractères, ce que la note de traduction annonce exactement).",
+      "CITATION — La même phrase se retrouve à l'identique dans le rapport MIT, folio PDF 8 = page imprimée 1-1, section 1.1, cette fois avec une couche texte lisible. Les deux témoins concordent : le verbatim ne repose pas sur une seule lecture d'image.",
+      "CITATION — Les deux coupes annoncées sont exactes et toutes deux marquées par […]. Reconstruction par script : coupe 1 = « (which could be a teleoperator, but could also be an aircraft, power plant, etc.) having sensors, actuators and a computer, and capable of autonomous decision-making and control over short periods and in restricted conditions, » ; coupe 2 = « directly or reprogrammed ». La traduction est déclarée interne non publiée, avec traducteur et date ; la citation française fait 148 caractères. Rien n'est dissimulé.",
+      "CITATION, réserve sans conséquence — Le `locator` affiché dit « p. 343, section 1, 3e paragraphe ». Sur l'image de la page 343, la section 1 (« 1. Teleoperators and Supervisory Control ») compte trois paragraphes : ¶1 « Many future undersea tasks may be accomplished by \"teleoperators\" … we include this important function. », ¶2 « This paper focuses on those aspects … reprogrammed by a person. » — qui porte la phrase citée —, ¶3 « The distinction between direct human control … in Figure 1. ». La phrase est donc au 2e paragraphe de la section 1, non au 3e (elle est en revanche le 3e paragraphe de la page si l'on compte le résumé). Correction suggérée : « p. 343, section 1, 2e paragraphe ». La page et la section étant justes et la page étant courte, le lecteur ne s'égare pas : je ne renvoie pas la fiche pour cela.",
+      "ATTRIBUTION — Les trois signatures sont vérifiées SUR le document, pas sur une notice : la page de titre rendue en image porte « T.B. Sheridan, W.L. Verplank and T.L. Brooks », Man-Machine Systems Laboratory, MIT. La notice NTRS (curl https://ntrs.nasa.gov/api/citations/19790007441, HTTP 200) donne les mêmes trois auteurs. Aucune cosignature escamotée ni inventée.",
+      "ATTRIBUTION — La distinction posée par la fiche entre les deux textes est fondée, et je l'ai contrôlée dans les deux sens. (a) L'échelle des dix degrés N'EST PAS dans la communication à trois : j'ai relevé les 15 pages une à une, dont les 4 sans couche texte (folios PDF 1, 3, 8, 9 = pages 343, 345, 350, 351), rendues en image. Le paper ne contient que 4 figures — Fig. 1 « Definitions of Teleoperator and Supervisory Control » (p. 344), Fig. 2 « Relative Roles of Man and Computer » (p. 348), Fig. 3 bloc-diagramme SUPERMAN (p. 350), Fig. 4 console SUPERMAN (p. 351) — et aucune table de niveaux d'automatisation. (b) Elle EST dans le rapport MIT signé des deux premiers seulement : TABLE 8.2 « LEVELS OF AUTOMATION IN MAN-COMPUTER DECISION-MAKING », folios PDF 168-170 = pages imprimées 8-17, 8-18, 8-19, niveaux numérotés 1 à 10, la note de fin de table disant « in each of the ten steps ». La pagination « 8-17 à 8-19 » du brief est donc exacte au folio près.",
+      "ATTRIBUTION — La formule « the computer offers no assistance » est bien absente des deux textes, comme l'affirme la fiche. Le niveau 1 réel de la Table 8.2 se lit : « human does the whole job up to the point of turning it over to the computer to implement. » Grep « no assistance » sans résultat sur les deux PDF ; et le niveau 1, lui, est dans une couche texte lisible, donc le constat ne dépend pas de l'OCR.",
+      "ATTRIBUTION — « 1978 n'en est pas la date d'origine » est fondé. Aux deux endroits où le terme est introduit (p. 343 du paper et p. 1-1 du rapport), « supervisory control » est mis entre guillemets et employé comme reçu, sans aucune référence fondatrice — je l'ai lu sur l'image et sur la couche texte. En amont : Ferrell, W. et Sheridan, T., « Supervisory control of remote manipulation », IEEE Spectrum, 4, 1967, p. 81-88 (IEEE Xplore doc. 5217126), soit onze ans plus tôt. Le concept revient donc à Sheridan (avec Ferrell) et non au trio de 1978 ; la fiche ne prétend pas le contraire et le dit dans sa note. Attribution tenue pour confirmée sur ce que la fiche affirme réellement.",
+      "SOURCES 1/3 — NTRS 19790007441 : PDF HTTP 200, ouvert intégralement. Titre, trois auteurs, NASA CP-2060, « The 14th Ann. Conf. on Manual Control », date de publication 1978-11-01 : tout concorde avec le label. Étendue p. 343-357 vérifiée par recoupement — le fichier fait 15 pages à partir du folio imprimé 343, et la table des matières du volume ouvre la Session G suivante à la page 359.",
+      "SOURCES 2/3 — DTIC AD-A057655 via https://archive.org/download/DTIC_ADA057655/DTIC_ADA057655.pdf (HTTP 200, 7 888 535 octets, 186 pages, soit la pagination annoncée). Vérifié sur /metadata/DTIC_ADA057655 : `access-restricted-item` absent, aucun contrôle d'accès contourné. Le formulaire DD 1473 (folio PDF 2) porte « Thomas B. Sheridan and William L. Verplank » — deux auteurs, comme l'affirme la fiche —, « Technical Report 15 Mar 1977-14 June 1978 », date de rapport « July 14, 1978 », contrat N00014-77-C-0256, Office of Naval Research. Le 14 juillet 1998 de la fiche est donc lu sur la signature du document, pas sur une notice de catalogue (la notice Internet Archive, elle, donne 1978-07-15). Locator « p. 1-1 » exact.",
+      "SOURCES 3/3 — NTRS 19790007417, texte du volume d'actes : curl HTTP 200, 1 228 751 octets. En tête : « NASA Conference Publication 2060 », « THE 14TH ANNUAL CONFERENCE ON MANUAL CONTROL », « 692 p », « Ames Research Center », « November 1978 ». La table des matières porte « Human/Computer Control of Undersea Teleoperators, T. B. Sheridan, W. L. Verplank, and T. L. Brooks .... 343 ». Le `consulted: partial` est honnête : je n'ai ouvert que l'avant-propos et la table des matières, comme le locator l'annonce.",
+      "PROSE — `hook` « Entre tout faire soi-même et laisser faire la machine, combien de positions ? » reprend au plus près la phrase du rapport, p. 8-15 (folio PDF 166) : Table 8.2 « orders these as \"levels of automation\" going from a level wherein the human operator does everything to a level where the computer does everything. » La question est exactement celle du texte, et sa réponse — dix — est celle de la table.",
+      "PROSE — `summary` contrôlé dans les deux sens, ni débordement ni rétrécissement. « Une machine décide seule sur de courtes périodes » ← « capable of autonomous decision-making and control over short periods » ; la borne temporelle, qui est l'essentiel, est conservée (seul « and in restricted conditions » tombe, compression acceptable à cette longueur, et la restriction est restituée dans la citation d'origine). « la personne planifie, surveille, reprend la main par intermittence » ← Figure 2, p. 348, dont j'ai lu l'image : « HUMAN SUPERVISORY ROLES : plan / order teleoperator action / monitor teleoperator action / intervene teleoperator action », plus « intermittently operated directly or reprogrammed by a person » p. 343. « Le rapport en ordonne dix degrés d'automatisation » : le singulier « le rapport » désigne bien la source 2 et non la communication, ce qui préserve la distinction que la note d'attribution établit — la prose ne reverse pas l'échelle au trio.",
+      "Hors des quatre points, pour information : le volume CP-2060 précise que la conférence s'est tenue du 25 au 27 avril 1978 à l'University of Southern California et à Ames, novembre 1978 étant la date de publication des actes. Les labels de la fiche datent bien de novembre 1978, ce qui est la bonne date pour une référence bibliographique ; rien à corriger, je le consigne seulement pour qu'un contrôleur suivant ne prenne pas l'écart avril/novembre pour une erreur.",
+      "Rien n'a été inaccessible : les trois sources ont été ouvertes par voie publique et anonyme (NTRS et Internet Archive), sans compte, sans prêt et sans défi à résoudre. Aucun constat de ce verdict ne repose sur une extraction de texte seule là où le document est un scan : les pages 343, 345, 348, 350, 351 du paper et la page de titre du rapport ont été rendues en image et lues."
+    ]
+  },
+  "dossier": "corpus/evidence/controle-supervise/lecture.json",
+  "notes": [
+    "Ce que la citation perd, et que le résumé rattrape en partie : le système supervisé embarque capteurs, actionneurs et calculateur, et il est « capable of autonomous decision-making and control over short periods and in restricted conditions ». C'est cette autonomie locale qui distingue le contrôle supervisé de la simple télécommande. La coupe retire aussi les deux modes par lesquels la personne reprend la main, directement ou par reprogrammation.",
+    "Les rôles de l'opérateur : quatre dans la figure 2 de la communication (planifier, ordonner, surveiller, intervenir), cinq dans le rapport, section 4.3, qui ajoute la confiance, « to attain enough operating experience or otherwise acquire a basis for believing that the teleoperator will behave as intended ».",
+    "Partager n'est pas échanger, et le rapport le définit p. 6-1 : partager le contrôle, c'est que l'humain et le calculateur soient actifs en même temps ; échanger, c'est qu'à un moment le calculateur soit actif et à un autre l'humain. L'intervention est l'échange en sens inverse, du calculateur vers l'humain.",
+    "Les auteurs bornent eux-mêmes la portée de leur schéma des rôles : « While this taxonomy of relationships at the present has no corresponding quantitative theory, it has been useful to the authors in thinking about what is desirable for man-computer control of teleoperators. »",
+    "Les deux extrémités de l'échelle, dans les termes de 1978 : degré 1, « human does the whole job up to the point of turning it over to the computer to implement » ; degré 10, « computer does whole job if it decides it should be done, and if so tells human, if it decides he should be told ». La table s'intitule « Levels of automation in man-computer decision-making, for a single elemental decisive step ».",
+    "L'absence de l'échelle dans la communication a été établie et non supposée : les quinze folios ont été relevés un par un, les six pages sans couche texte ont été rendues en image et lues, la communication ne compte que quatre figures et aucune table numérotée.",
+    "Conséquence d'attribution : si une carte porte l'échelle des dix degrés, elle porte un objet signé Sheridan et Verplank ; si elle porte les définitions et la matrice des rôles, elle porte un objet signé des trois. Les deux ne se recouvrent pas.",
+    "Datation : la conférence s'est tenue du 25 au 27 avril 1978 à l'University of Southern California ; novembre 1978 est la date d'édition des actes ; le rapport complet est daté du 14 juillet 1978. L'ordre réel est donc présentation, rapport, actes, et on ne peut pas dire lequel des deux textes a été rédigé le premier.",
+    "Le prénom du troisième signataire est « Thurston » et non « Telford » : les documents ne donnent que « T. L. Brooks », et le prénom repose sur deux notices concordantes d'OpenLibrary, pas sur un document signé.",
+    "Pagination : les folios de la communication sont ceux du volume d'actes (343 à 357, et non 344 à 358 comme l'annonçait la cartographie) ; le rapport est paginé par section, « p. 8-17 » signifiant section 8, page 17. La correspondance avec le folio du fichier n'est constante dans aucun des deux cas.",
+    "Le fichier NTRS est un scan de microfiche de mauvaise qualité, qui porte lui-même la mention « ORIGINAL PAGE IS OF POOR QUALITY ». Le verbatim de la phrase citée a été lu sur l'image du folio 343 puis contrôlé sur l'image de la page 1-1 du rapport DTIC, dont le scan est propre.",
+    "Non ouverts : la thèse de Brooks (SUPERMAN, MIT Sea Grant MITSG 79-20, 1979), objet de la section 5 de la communication, et les reprises ultérieures de l'échelle par Sheridan (1992) et par Parasuraman, Sheridan et Wickens (2000). Aucune traduction ni réception francophone n'a été identifiée.",
+    "Frontière avec la cybernétique, vérifiée et non présumée : le rapport ne cite ni Wiener, ni Ashby, ni la variété requise. Il emprunte le vocabulaire de la théorie du contrôle mais ne l'instruit pas.",
+    "L'exemplaire ouvert du rapport du MIT est la copie DTIC AD-A057655 mirée sur Internet Archive (collections dticarchive, usgovernmentmirrors, government-documents), dont la notice ne porte aucun champ access-restricted-item et dont l'empreinte MD5 est identique à celle qu'elle déclare. Le contrat est le N00014-77-C-0256, NR 196-152, pour une période allant du 15 mars 1977 au 14 juin 1978.",
+    "Localisateur de la citation corrigé au tour de contrôle : la phrase est au deuxième paragraphe de la section 1, et non au troisième. Elle est en revanche le troisième paragraphe de la page si l'on compte le résumé, ce qui explique le décompte initial."
+  ]
+}

@@ -527,15 +527,58 @@ angles morts.
 
 ## Thèmes
 
-**Le domaine n'a encore aucun thème déclaré**, et c'est voulu : ils s'écriront dans
-`src/content/themes.ts` à partir de ce que le scout aura fait apparaître, avec
-`domain: "human-factors"`, et **après le contrôle des cartes, jamais avant**. Tant qu'ils ne
-sont pas déclarés, une fiche de ce domaine porte ses thèmes dans `themes` avec leur libellé
-dans `theme_labels`, et déclare `domain: "human-factors"` — sans quoi le validateur refuse la
-fiche, qui n'apparaîtrait sinon dans aucun domaine.
+Cinq thèmes ont été déclarés dans `src/content/themes.ts` le 19 août 2026, **après le
+contrôle aveugle des treize cartes** et non après leur seule rédaction :
+`erreur-humaine-et-fiabilite`, `automatisation-et-conception-cognitive`,
+`decision-et-conscience-de-la-situation`, `charge-et-vigilance` et
+`securite-et-resilience`.
 
 La règle qui s'est réapprise deux fois tient toujours : **un thème sans carte validée ne se
-déclare pas.** Il afficherait une page vide et compterait pour de la couverture.
+déclare pas.** Elle a ici rencontré son cas limite, et il est écrit plutôt que masqué.
+
+**`securite-et-resilience` ne porte qu'une seule carte.** Quatre thèmes en portent deux à
+quatre ; celui-là en a une, et la cartographie l'avait annoncé. C'est le courant dont ce
+passage a le moins pu ouvrir de textes : aucun texte primaire de Hollnagel n'a été atteint,
+son article fondateur de 1983 est fermé et il n'a pas de dépôt institutionnel, à la
+différence de Rasmussen dont l'ancien employeur danois a rendu deux candidats. Le thème se
+déclare quand même, et la raison tient au fond et non au compte : replier la résilience sur
+l'erreur et la fiabilité serait une faute, ce courant s'étant constitué **contre** l'idée
+qu'on comprend un système en étudiant ce qui le fait tomber. Un thème mince coûte moins cher
+qu'un concept mal rangé. C'est la première chose à reprendre au prochain passage.
+
+**Deux ensembles que le périmètre demandait de balayer n'ont ouvert aucun thème.**
+L'ingénierie cognitive et les systèmes cognitifs conjoints ne sont couverts qu'obliquement,
+par la conception écologique d'interface, faute d'un texte de Hollnagel ou de Woods. Et
+l'attention et la vigilance ne le sont que par la fatigue en aviation : le texte fondateur
+de la vigilance, Mackworth 1948, n'a pas de version ouverte identifiée malgré son ancienneté.
+
+## Ce que ce passage a instruit, et ce qu'il n'a pas pu
+
+Treize cartes publiées le 19 août 2026, douze avec citation. Une quatorzième a été instruite
+sans être rédigée, et une quinzième n'a pas pu être ouverte du tout.
+
+**`theorie-de-l-accident`** (Faverge, 1964) a un dossier de lecture complet dans
+`corpus/evidence/`, mais aucune carte. Persée ne rend que la première page d'un article de
+dix, il n'existe donc aucune source primaire en texte intégral, et le verrou de publication
+l'aurait arrêté. Il y a plus grave que le verrou : la formule sous laquelle la cartographie
+l'avait retenu ne se lit pas sur la page ouverte, où la distinction entre causes humaines et
+techniques est nommée comme le moment **abandonné** et non comme la thèse. Le dossier reste
+ouvert, il ne se rejette pas.
+
+**`ironies-de-l-automatisation`** (Bainbridge, 1983) est le texte le plus cité de tout le
+lot, et le seul dont aucune voie d'accès légitime n'existe. Plus de vingt voies ont été
+essayées et consignées avec leur code HTTP. L'autrice explique elle-même cette absence sur
+son site : elle ne détient pas le droit d'auteur de ce texte, et son ancien département a
+refusé de l'inscrire à sa liste de publications. Un exemplaire circule sur un site personnel
+tiers ; il a été interrogé pour établir des faits sur le fichier, jamais téléchargé, et
+aucune citation ne repose dessus. Le dossier porte `quotation: null` et une source en
+`metadata-only`.
+
+**La couche francophone est la faiblesse assumée de ce lot.** Une carte sur treize est en
+français, une autre est d'auteurs francophones publiant en anglais. Amalberti, Hoc et de
+Keyser ont été cherchés activement et n'ont produit aucun candidat, leurs ouvrages centraux
+n'étant pas en ligne et *Le travail humain* restant derrière Cairn. Le périmètre demandait de
+signaler ce déséquilibre plutôt que de le masquer : il est réel et il n'a pas été corrigé.
 
 ---
 

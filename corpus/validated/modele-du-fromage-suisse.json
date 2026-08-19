@@ -1,0 +1,113 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "modele-du-fromage-suisse",
+  "slug": "modele-du-fromage-suisse",
+  "status": "VALIDATED",
+  "title": "Modèle du fromage suisse",
+  "themes": [
+    "erreur-humaine-et-fiabilite"
+  ],
+  "domain": null,
+  "theme_labels": {
+    "erreur-humaine-et-fiabilite": "Nommer, classer et quantifier ce qui échappe à l'opérateur"
+  },
+  "authors": [
+    {
+      "name": "James Reason",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "L'article de 2000 est signé de James Reason seul, et la distinction entre défaillances actives et conditions latentes est bien de lui : il la renvoie à son livre Human Error (1990). Le nom du modèle, non. Il emploie « the Swiss cheese model » en titre de section et en légende de figure sans dire d'où il vient, puis écrit en 2006, dans une note cosignée avec Erik Hollnagel et Jean Paries, qu'il n'est pas à l'origine de l'appellation et qu'elle vient probablement de Rob Lee. Qui l'a imprimée le premier, et quand, n'est pas établi. La même note attribue la représentation en plans successifs à John Wreathall et à lui conjointement.",
+  "quotation": {
+    "text": "Les trous dans les défenses apparaissent pour deux raisons : les défaillances actives et les conditions latentes.",
+    "reference": "James Reason, « Human error: models and management », BMJ, vol. 320, n° 7237, 18 mars 2000, p. 768-770. DOI 10.1136/bmj.320.7237.768. Texte intégral lu sur PubMed Central, PMC1117770.",
+    "locator": "Section « Swiss cheese model », 3e §",
+    "language": "fr",
+    "original_text": "The holes in the defences arise for two reasons: active failures and latent conditions.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (chaîne Curiosity) ; aucune traduction française publiée de cet article n'a été identifiée.",
+      "edition": null
+    }
+  },
+  "hook": "Pourquoi faut-il plusieurs défaillances alignées pour qu'un accident passe ?",
+  "summary": "Les couches de défense sont trouées, et les trous se déplacent : l'accident passe quand ils s'alignent. Ils naissent de défaillances actives et de conditions latentes.",
+  "sources": [
+    {
+      "label": "James Reason, « Human error: models and management », BMJ, vol. 320, n° 7237, 18 mars 2000, p. 768-770. Texte intégral lu sur PubMed Central (PMC1117770).",
+      "kind": "primary",
+      "locator": "Section « Swiss cheese model »",
+      "doi_isbn": "10.1136/bmj.320.7237.768",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1117770/",
+      "consulted": "full-text"
+    },
+    {
+      "label": "James Reason, Erik Hollnagel et Jean Paries, Revisiting the « Swiss Cheese » Model of Accidents, EEC Note No. 13/06, EUROCONTROL Experimental Centre, Brétigny-sur-Orge, octobre 2006, x + 25 p.",
+      "kind": "primary",
+      "locator": "Section 3, p. 4",
+      "doi_isbn": null,
+      "url": "https://www.eurocontrol.int/sites/default/files/library/017_Swiss_Cheese_Model.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Justin Larouzée et Jean-Christophe Le Coze, « Good and bad reasons: The Swiss cheese model and its critics », Safety Science, vol. 126, 2020, article 104660. Version déposée sur HAL (ineris-03318305).",
+      "kind": "secondary-academic",
+      "locator": "Section 2.2.3 et note 7",
+      "doi_isbn": "10.1016/j.ssci.2020.104660",
+      "url": "https://ineris.hal.science/ineris-03318305/document",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Justin Larouzée, Franck Guarnieri et Denis Besnard, Le modèle de l'erreur humaine de James Reason, papier de recherche CRC_WP_2014_24, Centre de recherche sur les risques et les crises, MINES ParisTech, décembre 2014, 44 p.",
+      "kind": "francophone-reception",
+      "locator": "p. 18",
+      "doi_isbn": "HAL hal-01102402",
+      "url": "https://minesparis-psl.hal.science/hal-01102402/document",
+      "consulted": "partial"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle",
+    "date": "2026-08-19",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 0,
+    "notes": [
+      "CITATION — ouvert deux rendus indépendants du BMJ 2000 : le PDF Europe PMC (https://europepmc.org/articles/PMC1117770?pdf=render, 3 p., folio imprimé 768-770) et la page HTML PubMed Central (https://pmc.ncbi.nlm.nih.gov/articles/PMC1117770/, HTTP 200, accès libre, aucun mur). La phrase anglaise apparaît telle quelle p. 769 : « The holes in the defences arise for two reasons: active failures and latent conditions. » — identique au champ original_text, sans coupe. Aucun contrôle d'accès contourné.",
+      "CITATION, locator — la section s'intitule exactement « The Swiss cheese model of system accidents » (p. 769). Le passage y est bien le 3e paragraphe : 1) « Defences, barriers, and safeguards occupy a key position… », 2) « In an ideal world each defensive layer would be intact… », 3) « The holes in the defences arise for two reasons… ». Le locator « Section « Swiss cheese model », 3e § » abrège le titre mais désigne sans ambiguïté le bon endroit, et tient dans les 40 caractères (36).",
+      "CITATION, traduction — « Les trous dans les défenses apparaissent pour deux raisons : les défaillances actives et les conditions latentes. » rend l'anglais mot à mot, sans ajout. Le champ translation la déclare interne et non publiée. Recherche faite pour une traduction française publiée de cet article : rien trouvé ; l'énoncé prudent de la fiche (« n'a été identifiée ») est donc tenable, et je ne peux pas le réfuter.",
+      "ATTRIBUTION — l'article BMJ 2000 est signé « James Reason » seul sur le document lui-même (page 768, adresse Department of Psychology, University of Manchester) et Crossref pour 10.1136/bmj.320.7237.768 ne rend qu'un auteur, J. Reason. La distinction défaillances actives / conditions latentes est développée p. 769 et la seule référence à Human Error (1990) de l'article (note 6) est appelée dans ce même passage.",
+      "ATTRIBUTION, le nom — ouvert la note EUROCONTROL 2006 (PDF téléchargé depuis eurocontrol.int, 35 p. de fichier). Section 3 « HISTORY OF THE MODEL », folio imprimé 4 (= p. 14 du fichier) : « J. Reason did not originate the ‘Swiss cheese’ label—that was probably Rob Lee, then Director of the Bureau of Air Safety Investigation (BASI) in Canberra. » et, deux phrases plus haut : « John Wreathall and J. Reason depicted these as a sequence of five ‘planes’ lying one behind the other ». Les deux affirmations de l'attribution_note sont donc littérales, et la cosignature Wreathall n'est pas escamotée mais déclarée.",
+      "ATTRIBUTION, contre-épreuve — Reason emploie bien lui-même l'appellation en 2000 sans en indiquer la source : titre de section « The Swiss cheese model of system accidents » et légende de figure « Swiss cheese model of how defences, barriers, and safeguards may be penetrated by an accident trajectory » (relevées dans le HTML PMC). Larouzée & Le Coze 2020 §2.2.3 « Rob Lee's Swiss cheese metaphor » : « The idea had been proposed by Rob Lee in the early 1990s, [note 7] and partially exploited in a 1995 collective book (see Maurino et al., 1995; p. 25) ». Ils ne datent donc pas non plus la première impression du terme : la réserve de la fiche (« Qui l'a imprimée le premier, et quand, n'est pas établi ») est fondée.",
+      "SOURCES 1 — Crossref 10.1136/bmj.320.7237.768 rend : « Human error: models and management », BMJ, vol. 320, n° 7237, p. 768-770, publié le 18 mars 2000, auteur unique J. Reason. Tous les éléments du label concordent, y compris la date au jour.",
+      "SOURCES 2 — la page de documentation de la note EUROCONTROL (p. 3 du fichier) porte : EEC Note No. 13/06, titre « REVISITING THE « SWISS CHEESE » MODEL OF ACCIDENTS », auteurs J. Reason, E. Hollnagel, J. Paries, date 10/2006, pages « x + 25 », EUROCONTROL Experimental Centre, Centre de Bois des Bordes, Brétigny-sur-Orge. Le locator « Section 3, p. 4 » correspond au folio imprimé 4 (p. 14 du fichier) : correspondance folio fichier / folio imprimé établie, le locator est juste.",
+      "SOURCES 3 — Crossref 10.1016/j.ssci.2020.104660 rend : « Good and bad reasons: The Swiss cheese model and its critics », Safety Science, vol. 126, article 104660, 2020, Justin Larouzee et Jean-Christophe Le Coze. Le dépôt HAL ineris-03318305 sert bien un PDF (12 p.). Le locator est double et exact : §2.2.3 et la note 7 (« At the time, Lee was Head of the Bureau of Air Safety Investigation at Canberra… ») figurent tous deux sur le folio imprimé 4-5.",
+      "SOURCES 4 — HAL hal-01102402 sert un PDF de 45 p. (couverture HAL comprise) ; la notice de citation y indique « [Research Report] CRC_WP_2014_24, MINES ParisTech. 2014, 44 p. » et la page de garde « CRC_WP_2014_24 (Décembre 2014) — LE MODÈLE DE L'ERREUR HUMAINE DE JAMES REASON — Larouzée J., Guarnieri F., Besnard D. ». Auteurs, référence, institution, date et pagination concordent avec le label.",
+      "SOURCES 4, réserve mineure — le locator « p. 20 environ » : le folio imprimé 20 (p. 23 du fichier) porte la section 4.3 « Outil d'analyse », tandis que le passage de réception francophone le plus proche du propos de la carte (« l'appellation « Swiss Cheese » n'est pas l'initiative de Reason mais est attribuée à Rob Lee… (Reason et al., 2006) ») se lit au folio imprimé 18 (p. 21 du fichier). La source est déclarée « partial » et le locator dit « environ » : je le tiens pour approximatif mais non faux, et la référence résout. Un renvoi à « p. 18 » serait plus utile au lecteur.",
+      "PROSE — « Pourquoi faut-il plusieurs défaillances alignées pour qu'un accident passe ? » : l'article dit p. 769 « Usually, this can happen only when the holes in many layers momentarily line up to permit a trajectory of accident opportunity ». Le « faut-il » du hook rend le « only when » (condition nécessaire) sans le durcir en condition suffisante ; les deux sens ont été confrontés.",
+      "PROSE — « Les couches de défense sont trouées, et les trous se déplacent » couvre « they are more like slices of Swiss cheese, having many holes—though unlike in the cheese, these holes are continually opening, shutting, and shifting their location » ; « Ils naissent de défaillances actives et de conditions latentes » reprend la phrase citée. Rien dans le résumé n'excède l'article, et rien n'en rétrécit la portée : le résumé n'attribue pas le nom à Reason et ne restreint pas le modèle au domaine médical, ce que l'article ne fait pas non plus.",
+      "Hors des quatre points, pour information : Larouzée & Le Coze 2020 rapportent, d'une correspondance de Reason (2015), que Wreathall a dessiné les plans et Reason « mis les trous » (« John started to draw overlapping planes, and I put in the holes »), et notent que la figure du BMJ ne distingue pas graphiquement défaillances actives et conditions latentes alors que le texte le fait (légende de leur Fig. 3). Ces éléments confortent l'attribution_note sans la contredire.",
+      "Rien de ce que j'ai voulu ouvrir ne m'a été refusé : aucun mur de connexion, aucun défi anti-robot, aucun prêt numérique rencontré. Non consulté faute d'être nécessaire aux quatre points : Human Error (1990) et Maurino et al. (1995), que je n'ai donc pas contrôlés."
+    ]
+  },
+  "dossier": "corpus/evidence/modele-du-fromage-suisse/lecture.json",
+  "notes": [
+    "Ce que la citation ne porte pas et que le résumé porte : les trous ne sont pas fixes, ils s'ouvrent, se ferment et se déplacent, et l'accident survient quand ils s'alignent un instant pour livrer une trajectoire.",
+    "Les deux termes, dans les mots de l'auteur. Défaillances actives : « the unsafe acts committed by people who are in direct contact with the patient or system », de forme variée (slips, lapses, fumbles, mistakes, violations) et d'effet direct et bref. Conditions latentes : « the inevitable resident pathogens within the system », nées de décisions de conception, de construction, d'écriture de procédures et de direction, qui peuvent n'être pas fautives.",
+    "C'est la différence de régime temporel qui porte l'intérêt pratique du modèle : les conditions latentes peuvent dormir des années, mais, à la différence des défaillances actives, elles peuvent être identifiées et corrigées avant l'événement, d'où une gestion du risque proactive plutôt que réactive.",
+    "Trois choses que ce texte ne fait pas, et qu'il ne faut pas lui prêter : il ne définit ni slips, ni lapses, ni mistakes, renvoyant pour cela à Human Error (1990) ; il n'emploie jamais « latent errors » ni « latent failures », seulement « latent conditions » ; et il ne dit pas d'où vient le nom du modèle.",
+    "L'article porte au moins trois mécanismes distincts et cette carte n'en porte qu'un. Les deux autres, non instruits ici : l'opposition entre « person approach » et « system approach », qui est le propos annoncé de l'article, et les organisations à haute fiabilité, que Reason rapporte explicitement à Weick.",
+    "La citation retenue n'est pas la phrase qui porte l'image, et c'est un choix contraint par le plafond de 150 caractères. « In reality, however, they are more like slices of Swiss cheese, having many holes » donne le tableau mais aucun mécanisme ; la phrase de l'alignement s'ouvre sur un « this » sans antécédent une fois isolée.",
+    "Deux éditions ont été ouvertes et la carte cite la première : le BMJ du 18 mars 2000, puis la reprise du Western Journal of Medicine de juin 2000 (172(6), p. 393-396), qui porte la note « This article was originally published in BMJ 2000;320:768-770 ». Elles diffèrent (defences / defenses, « two reasons » / « 2 reasons », découpage des paragraphes).",
+    "Aucune des deux pages HTML ne porte de repère de pagination interne : la page imprimée n'a pas été vue, et le localisateur ne l'écrit donc pas.",
+    "Les deux ouvrages où le modèle est développé n'ont pas été ouverts : Human Error (Cambridge University Press, 1990) et Managing the Risks of Organizational Accidents (Ashgate, 1997). L'article de 2000 est une source primaire, mais abrégée, écrite par l'auteur pour un lectorat médical.",
+    "La figure n'a pas été examinée, seules sa légende et son ancre. Larouzée et Le Coze signalent que le schéma publié en 2000 ne représente pas, contrairement au texte, la distinction entre défaillances actives et conditions latentes. C'est leur constat, pas celui du lecteur primaire.",
+    "Les sources secondaires ont été ouvertes pour une seule question, l'origine du nom. Les critiques du modèle qu'elles recensent (Perneger 2005, Shorrock et coll. 2005, Leveson 2004 et 2011, Hollnagel 2004) n'ont pas été instruites et aucun de ces textes n'a été ouvert.",
+    "Accès : le PDF de PMC n'a pas été demandé, il porte un script de preuve de travail. bmj.com et qualitysafety.bmj.com n'ont pas été sollicités. Deux requêtes sur PMC ont d'abord rendu une page de défi reCAPTCHA ; la requête a été refaite à l'identique, sans tentative de résolution.",
+    "Localisateur de la quatrième source précisé au tour de contrôle : le passage utile, « l'appellation \"Swiss Cheese\" n'est pas l'initiative de Reason mais est attribuée à Rob Lee », est au folio imprimé 18 (page 21 du fichier HAL) et non vers la page 20, où se trouve la section 4.3 sur l'outil d'analyse."
+  ]
+}
