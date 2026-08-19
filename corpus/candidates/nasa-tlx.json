@@ -1,0 +1,93 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "nasa-tlx",
+  "slug": "nasa-tlx",
+  "status": "CANDIDATE",
+  "title": "NASA-TLX : la charge en six dimensions",
+  "themes": [
+    "charge-et-vigilance"
+  ],
+  "domain": "human-factors",
+  "theme_labels": {
+    "charge-et-vigilance": "Des grandeurs qu'on définit pour les gérer"
+  },
+  "authors": [
+    {
+      "name": "Sandra G. Hart",
+      "app_author_id": null
+    },
+    {
+      "name": "Lowell E. Staveland",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Le document ouvert ne porte aucun nom de personne. Sa couverture et sa page de titre sont signées « Human Performance Research Group, NASA Ames Research Center », et aucune date n'y est imprimée. Le texte rapporte l'instrument à un collectif et à trois ans de travaux : « This procedure for collecting workload ratings was developed by the Human Performance Group at NASA Ames Research Center. » Sandra G. Hart et Lowell E. Staveland n'y sont nommés qu'une fois, comme auteurs d'une étude de validation alors à paraître ; ce chapitre de 1988, d'où vient l'attribution usuelle, est fermé et n'a pas été ouvert. « Hart, 1986 » est donc une attribution de catalogue, celle de la notice NTRS, et non une signature : les deux noms portés ici sont ceux que le document désigne, pas ceux qu'il signe.",
+  "quotation": {
+    "text": "Le NASA Task Load Index est une procédure de notation multidimensionnelle qui fournit un score global de charge de travail […] sur six sous-échelles.",
+    "reference": "Human Performance Research Group, NASA Ames Research Center, « NASA Task Load Index (TLX) v. 1.0, Paper and Pencil Package », Moffett Field, Californie. Notice NTRS 20000021488, qui attribue le document à Sandra G. Hart et le date de 1986.",
+    "locator": "Section 1 « Background », p. 1",
+    "language": "fr",
+    "original_text": "The NASA Task Load Index is a multi-dimensional rating procedure that provides an overall workload score […] on six subscales.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction du lecteur primaire du corpus, faite sur le fac-similé de la page 1 rendu en image, session du 18 août 2026.",
+      "edition": null
+    }
+  },
+  "hook": "Faute de règle pour mesurer la charge, à qui demander ce qu'elle a coûté ?",
+  "summary": "Six sous-échelles notées après la tâche, pondérées par ce que le sujet juge y avoir compté : leur moyenne pondérée donne un score global de charge de travail.",
+  "sources": [
+    {
+      "label": "Human Performance Research Group, NASA Ames Research Center, NASA Task Load Index (TLX) v. 1.0, Paper and Pencil Package, Moffett Field, Californie, 19 p. et annexes. Document sans date imprimée.",
+      "kind": "primary",
+      "locator": "Section 1 « Background », p. 1",
+      "doi_isbn": "NTRS 20000021488",
+      "url": "https://ntrs.nasa.gov/api/citations/20000021488/downloads/20000021488.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Notice de catalogue NTRS du même document, qui l'attribue à « Hart, Sandra G. » et le date du 1er janvier 1986, et le titre « NASA Task Load Index (TLX): Paper and Pencil Package, Volume 1.0 ».",
+      "kind": "primary",
+      "locator": "Notice 20000021488",
+      "doi_isbn": "NTRS 20000021488",
+      "url": "https://ntrs.nasa.gov/api/citations/20000021488",
+      "consulted": "metadata-only"
+    },
+    {
+      "label": "Sandra G. Hart et Lowell E. Staveland, « Development of NASA-TLX (Task Load Index): Results of Empirical and Theoretical Research », dans P. A. Hancock et N. Meshkati (dir.), Human Mental Workload, Elsevier, 1988, p. 139-183.",
+      "kind": "primary",
+      "locator": null,
+      "doi_isbn": "10.1016/S0166-4115(08)62386-9",
+      "url": "https://doi.org/10.1016/S0166-4115(08)62386-9",
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "reviewer": null,
+    "date": null,
+    "attribution": "non-verifiee",
+    "quotation": "non-verifiee",
+    "sources": "non-verifiee",
+    "prose": "non-verifiee",
+    "verdict": "PENDING",
+    "rounds": 0,
+    "notes": []
+  },
+  "dossier": "corpus/evidence/nasa-tlx/lecture.json",
+  "notes": [
+    "Ce que la coupe de la citation retire : la moyenne pondérée, c'est-à-dire le mécanisme même du score, et l'énumération des six sous-échelles. La phrase entière fait 189 caractères en français : « The NASA Task Load Index is a multi-dimensional rating procedure that provides an overall workload score based on a weighted average of ratings on six subscales: Mental Demands, Physical Demands, Temporal Demands, Own Performance, Effort, and Frustration. »",
+    "Les six sous-échelles se répartissent en deux groupes : trois portent sur les exigences imposées au sujet (exigence mentale, physique, temporelle) et trois sur son interaction avec la tâche (effort, frustration, performance).",
+    "La procédure est en deux temps : quinze cartes de comparaison par paires, où le sujet entoure celle des deux échelles qui a le plus contribué à la charge de cette tâche, puis la notation de chaque échelle sur une ligne de 12 cm divisée en vingt intervalles. Le score est la somme des notes pondérées divisée par quinze.",
+    "La justification du caractère multidimensionnel ne porte pas sur la richesse du phénomène mais sur la variabilité entre juges : les définitions de la charge varient d'un expérimentateur et d'un sujet à l'autre, et l'instrument pondère selon l'importance que le sujet accorde à chaque échelle dans cette tâche précise, plutôt que selon sa définition générale de la charge.",
+    "Le passage de neuf à six sous-échelles est motivé dans le texte : neuf échelles rendaient l'instrument impraticable en simulation ou en environnement opérationnel, et plusieurs se sont révélées soit sans rapport avec la charge (la fatigue), soit redondantes (le stress et la frustration).",
+    "Formulation écartée, qui aurait porté sur ce que l'instrument suppose plutôt que sur ce qu'il produit : « Since workload is something that is experienced individually by each person, there are no effective \"rulers\" that can be used to estimate the workload of different activities. » (p. 11). Elle reste à 152 caractères une fois traduite, et elle s'adresse au sujet d'expérience à la deuxième personne.",
+    "Frontière avec la carte voisine « regulation-de-l-activite », vérifiée sur le texte : le document parle de juges et de sujets qui notent une tâche déjà accomplie, jamais d'un opérateur qui arbitrerait un compromis en changeant de mode opératoire. Les mots régulation, mode opératoire, compromis et stratégie de travail en sont absents. La charge est ici une grandeur saisie, non un compromis d'activité.",
+    "Le statut que le document se donne à lui-même est modeste : « Although the technique is still undergoing evaluation, this booklet is being distributed to allow other researchers to use it in their own experiments », et « This package is intended to fill a \"nuts and bolts\" function of describing the procedure ».",
+    "Le document est pour les deux tiers un paquet de formulaires : l'énoncé théorique tient dans les pages 1 à 4, les instructions aux sujets dans les pages 11 et 12, les définitions des six échelles dans l'annexe A. Il ne comporte ni développement sur la validité de construit, ni limites de l'instrument, ni comparaison avec SWAT. Une carte qui voudrait porter la critique de l'instrument devra ouvrir un autre texte.",
+    "Un écart de titre à ne pas traiter comme une variante d'édition : la bibliographie du document annonce « Development of a multi-dimensional workload rating scale », tandis que le chapitre paru en 1988 s'intitule « Development of NASA-TLX (Task Load Index) ». Le point n'a pas pu être tranché, le chapitre étant fermé.",
+    "Pagination : le PDF compte 26 pages, la pagination imprimée commence à la page 1 sur le folio PDF 7, et la règle est constante, folio PDF = page imprimée plus six. La couche texte du scan est fautive (mots collés, virgules rendues par des points, chiffres déformés) ; les folios PDF 1, 3, 7, 9, 14 et 17 ont été rendus en image et lus à l'oeil.",
+    "Les prénoms complets viennent d'OpenAlex, le document ne donnant que « S. G. » et « L. E. ». Aucune traduction française publiée de ce document n'est connue.",
+    "Le chapitre de 1988 a paru chez Elsevier, à Amsterdam, dans la collection Advances in Psychology (vol. 52), ISBN 9780444703880. Il est fermé : Unpaywall et OpenAlex donnent tous deux is_oa false, sans dépôt en texte intégral, et aucune tentative de contournement n'a été faite. Tout ce que la fiche en dit vient de ses notices, jamais de son texte."
+  ]
+}

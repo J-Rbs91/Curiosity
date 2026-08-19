@@ -1,0 +1,73 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "gestion-du-risque-fatigue",
+  "slug": "gestion-du-risque-fatigue",
+  "status": "CANDIDATE",
+  "title": "Des approches prescriptives au risque fatigue",
+  "themes": [
+    "charge-et-vigilance"
+  ],
+  "domain": "human-factors",
+  "theme_labels": {
+    "charge-et-vigilance": "Des grandeurs qu'on définit pour les gérer"
+  },
+  "authors": [
+    {
+      "name": "Philippe Cabon",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "L'article de 2015 est signé de Philippe Cabon seul, mais l'appellation « système de gestion du risque fatigue » n'est pas de lui : il l'introduit au passif et lui donne deux origines institutionnelles, une recommandation de l'Organisation de l'aviation civile internationale de 2010 et les autorités australiennes de l'aviation civile. Ce qui lui revient en propre est l'analyse critique : il expose le postulat d'un lien linéaire entre fatigue et sécurité pour le contester aussitôt, à partir de ses propres recherches. Il est par ailleurs cosignataire d'un des textes de référence qu'il cite : acteur du champ qu'il décrit, non auteur de son vocabulaire.",
+  "quotation": {
+    "text": "Elles consistent à limiter le temps de service sur la base d’un système de gestion du risque fatigue plutôt que sur la base d’une réglementation.",
+    "reference": "Philippe Cabon, « Des approches prescriptives aux systèmes de gestion du risque fatigue », Perspectives interdisciplinaires sur le travail et la santé (PISTES), 17-2, mis en ligne le 6 décembre 2015. DOI 10.4000/pistes.4571.",
+    "locator": "§ 31, conclusion",
+    "language": "fr",
+    "original_text": null,
+    "original_language": null,
+    "translation": {
+      "kind": "none",
+      "translator": null,
+      "edition": null
+    }
+  },
+  "hook": "Limiter les heures ou gérer le risque : la fatigue se règle-t-elle d'avance ?",
+  "summary": "Au lieu de plafonner les heures par règlement, on limite le temps de service selon un risque fatigue évalué. Mais le lien entre fatigue et sécurité n'est pas linéaire.",
+  "sources": [
+    {
+      "label": "Philippe Cabon, « Des approches prescriptives aux systèmes de gestion du risque fatigue », Perspectives interdisciplinaires sur le travail et la santé (PISTES), 17-2, mis en ligne le 6 décembre 2015. Licence CC BY-NC-ND 4.0.",
+      "kind": "primary",
+      "locator": "§ 31, conclusion",
+      "doi_isbn": "10.4000/pistes.4571",
+      "url": "https://journals.openedition.org/pistes/4571",
+      "consulted": "full-text"
+    }
+  ],
+  "review": {
+    "reviewer": null,
+    "date": null,
+    "attribution": "non-verifiee",
+    "quotation": "non-verifiee",
+    "sources": "non-verifiee",
+    "prose": "non-verifiee",
+    "verdict": "PENDING",
+    "rounds": 0,
+    "notes": []
+  },
+  "dossier": "corpus/evidence/gestion-du-risque-fatigue/lecture.json",
+  "notes": [
+    "Ce que remplaçaient les approches anciennes, § 5 : « Traditionnellement, la prévention de la fatigue des salariés s'appuie sur des approches prescriptives encadrant des limitations des temps de service et de temps de repos minimum. » Leur défaut, § 9 : elles sont dites unidimensionnelles parce qu'elles ne s'appuient que sur une dimension temporelle, et leur modèle sous-jacent est linéaire, la fatigue augmentant avec la durée du travail et diminuant avec celle du repos.",
+    "Le postulat est exposé pour être discuté, jamais endossé, et la phrase suivante commence par « Or ». La phrase relevée par la cartographie, « Le postulat sur lequel repose ces systèmes est que le niveau de fatigue des opérateurs permet de prédire le niveau de sécurité », tient sous le plafond (127 caractères) mais n'a pas été retenue : isolée sur une carte, elle serait lue comme la thèse de l'auteur, ce qui serait un contresens exact.",
+    "La réfutation, qui est l'apport propre de l'auteur. Sur les modèles biomathématiques, § 25 : « ils peuvent donner une fausse illusion de prédire un risque sur la sécurité alors qu'ils ne prédisent qu'une probabilité de fatigue élevée. » Sur le lien lui-même, § 28 : les opérateurs peuvent compenser la baisse de leurs ressources, et ces stratégies de protection de la performance améliorent paradoxalement certains indicateurs de sécurité.",
+    "Le facteur cognitif décisif, § 29 : « la conscience que l'opérateur a de son niveau de fatigue joue manifestement un rôle essentiel », d'où la conclusion que des niveaux de fatigue relativement faibles peuvent augmenter le risque, précisément parce qu'ils sont plus difficilement détectables et n'induisent aucune adaptation du comportement.",
+    "La citation retenue s'ouvre sur une anaphore, « Elles », qui renvoie à la phrase précédente du même paragraphe : « Depuis quelques années, des approches alternatives ont été développées. » Les deux phrases ne peuvent pas être soudées, ce qui recomposerait un énoncé qui n'existe pas.",
+    "Citations écartées : la définition entre guillemets du § 19 est celle de l'OACI, pas de Cabon, et l'afficher ferait parler un tiers sous sa signature ; « Compte tenu des limites inhérentes aux réglementations des temps de service dans la prévention de la fatigue, les SGS-RF se posent comme des alternatives » fait 154 caractères ; « Une meilleure connaissance des liens fatigue-sécurité nous semble donc être une condition indispensable à la validité et l'efficacité des SGS-RF » (145 caractères) reste la meilleure citation possible si une carte porte sur la critique plutôt que sur la bascule.",
+    "L'acronyme français employé dans tout le texte est « SGS-RF », par référence au Système de Gestion de la Sécurité auquel le risque fatigue est adossé, et il ne faut pas le corriger en SGRF. L'équivalent anglais donné par l'auteur est Fatigue Risk Management System (FRMS).",
+    "Frontière avec activity-ergonomics, vérifiée sur le texte : l'objet est la fatigue prise comme grandeur qu'on prédit, mesure et gère au titre de la sécurité (modèles biomathématiques, échelle de Samn Perelli renseignée en vol, actométrie, agendas de sommeil). Les adaptations de mode opératoire sont mentionnées mais jamais analysées pour elles-mêmes : elles servent d'argument contre la validité du lien fatigue vers sécurité.",
+    "Une adjacence signalée sans être tranchée : le § 28 rapporte que des services très matinaux réduisaient le nombre d'événements de sécurité non critiques tout en augmentant celui des événements de criticité élevée, ce qui est un effet d'indicateur au sens de measurement-theory. Le périmètre tranche ici en faveur de human-factors, l'objet restant ce que l'instrument saisit de l'état de l'opérateur.",
+    "Rejet direct évité de justesse : les § 19 à 26 sont descriptifs et rapportent un dispositif institutionnel ; une carte construite sur eux exposerait un référentiel. La carte est construite sur les § 28 à 31, où se trouve l'analyse de l'auteur.",
+    "Trois coquilles de l'original, relevées identiques sur le rendu HTML et sur le PDF de l'éditeur, donc imputables au texte publié : « Le postulat sur lequel repose ces systèmes » (§ 4), « une vision relativement linaire » (§ 30) et « (ICAO, 201) » (§ 31). Le nom de Dawson et McCulloch est orthographié « McCullough » au § 9.",
+    "Le localisateur est un numéro de paragraphe : la revue est électronique et l'article n'a pas de pagination imprimée. Pour qui rouvre le PDF de l'éditeur, le § 31 est sur le folio 9, dixième page du fichier. Le titre exact est « Des approches prescriptives », et non « réglementaires » comme l'écrivait la cartographie.",
+    "Aucun dépôt HAL de cet article n'existe et aucune traduction publiée n'a été trouvée ; la revue fournit un titre et un résumé en anglais et en espagnol, mais le corps du texte n'existe qu'en français."
+  ]
+}

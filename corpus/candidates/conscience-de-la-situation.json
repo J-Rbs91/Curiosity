@@ -1,0 +1,111 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "conscience-de-la-situation",
+  "slug": "conscience-de-la-situation",
+  "status": "CANDIDATE",
+  "title": "Conscience de la situation",
+  "themes": [
+    "decision-et-conscience-de-la-situation"
+  ],
+  "domain": "human-factors",
+  "theme_labels": {
+    "decision-et-conscience-de-la-situation": "Percevoir, comprendre, anticiper, agir sans comparer"
+  },
+  "authors": [
+    {
+      "name": "Mica R. Endsley",
+      "app_author_id": null
+    },
+    {
+      "name": "Todd C. Farley",
+      "app_author_id": null
+    },
+    {
+      "name": "William M. Jones",
+      "app_author_id": null
+    },
+    {
+      "name": "Alan H. Midkiff",
+      "app_author_id": null
+    },
+    {
+      "name": "R. John Hansman",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Le seul texte ouvrable porte cinq signatures, mais la définition en trois niveaux n'est pas d'eux cinq : le rapport de 1998 la cite entre guillemets et la rapporte à « Endsley (1988) », texte signé d'elle seule. Les quatre cosignataires sont les coauteurs du texte que la carte cite, non les auteurs de la définition. Ce texte de 1988 et celui de 1995 sont fermés : la définition n'est ouvrable nulle part à sa source, seulement dans des textes qui la rapportent, et c'est pourquoi cette carte ne porte aucune citation. Le terme « situation awareness », lui, est plus ancien que la définition. Enfin, le concept est contesté dans sa propre communauté : on lui reproche de manquer de définition opérationnelle admise, et de raisonner en cercle quand on en fait la cause de l'erreur qui sert à le constater.",
+  "quotation": null,
+  "hook": "Percevoir, comprendre, anticiper : ces trois niveaux décrivent-ils un état réel ?",
+  "summary": "Percevoir les éléments de la situation, comprendre leur signification, projeter leur état à court terme : trois niveaux, en amont de la décision et distincts d'elle.",
+  "sources": [
+    {
+      "label": "Mica R. Endsley, Todd C. Farley, William M. Jones, Alan H. Midkiff et R. John Hansman, Situation Awareness Information Requirements for Commercial Airline Pilots, rapport ICAT-98-1, MIT, septembre 1998, 92 p.",
+      "kind": "primary",
+      "locator": "p. 1 à 3",
+      "doi_isbn": "NTRS 20020030334",
+      "url": "https://ntrs.nasa.gov/api/citations/20020030334/downloads/20020030334.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Mica R. Endsley, « Design and Evaluation for Situation Awareness Enhancement », Proceedings of the Human Factors Society Annual Meeting, vol. 32, n° 2, 1988, p. 97-101.",
+      "kind": "primary",
+      "locator": null,
+      "doi_isbn": "10.1177/154193128803200221",
+      "url": "https://doi.org/10.1177/154193128803200221",
+      "consulted": "metadata-only"
+    },
+    {
+      "label": "Lise L. Moens et coll., « Measuring Situation Awareness: A Meta-Review Across Domains », Human Factors, vol. 68, n° 5, 2026, p. 632-672. Méta-revue de quatorze revues systématiques, licence CC BY 4.0.",
+      "kind": "secondary-academic",
+      "locator": "Section « Theoretical Foundations »",
+      "doi_isbn": "10.1177/00187208251412110",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13013663/fullTextXML",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Norman R. Hertz et Marjorie T. Hertz, « Situation Awareness and Situation Assessment: How Are They Related? », 17th International Symposium on Aviation Psychology, 2013, p. 104-109.",
+      "kind": "secondary-academic",
+      "locator": "p. 105-106",
+      "doi_isbn": null,
+      "url": "https://corescholar.libraries.wright.edu/cgi/viewcontent.cgi?article=1017&context=isap_2013",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Blandine Bailly, Conscience de la situation des conducteurs : aspects fondamentaux, méthodes, et application pour la formation des conducteurs, thèse de doctorat, Université Lumière Lyon 2, 2004, 364 p.",
+      "kind": "francophone-reception",
+      "locator": "p. 9-10, 27 et 29",
+      "doi_isbn": "HAL tel-00543981",
+      "url": "https://theses.hal.science/tel-00543981/document",
+      "consulted": "full-text"
+    }
+  ],
+  "review": {
+    "reviewer": null,
+    "date": null,
+    "attribution": "non-verifiee",
+    "quotation": "non-verifiee",
+    "sources": "non-verifiee",
+    "prose": "non-verifiee",
+    "verdict": "PENDING",
+    "rounds": 0,
+    "notes": []
+  },
+  "dossier": "corpus/evidence/conscience-de-la-situation/lecture.json",
+  "notes": [
+    "Pourquoi la carte ne porte pas de citation, et c'est le résultat le mieux établi du dossier. Première raison, l'attribution : la phrase que tout le monde cite est, dans le rapport ouvert, une citation rapportée, encadrée de guillemets droits et précédée de « the most generally applicable definition is that provided by Endsley (1988) ». L'afficher reviendrait à citer Endsley à travers un rapport qui la cite. Seconde raison, mesurée : la phrase fait 198 caractères en anglais et 207 en français ; pour passer sous 150 il faut soit lui retirer son sujet, soit retirer « dans un futur proche », ce qui vide le troisième niveau.",
+    "La définition elle-même, telle que le rapport la rapporte : « Situation awareness is the perception of the elements in the environment within a volume of time and space, the comprehension of their meaning, and the projection of their status in the near future. »",
+    "Le geste théorique du texte est la séparation d'avec la décision, p. 1 : « Situation awareness forms the critical input to, but is separate from, decision making. » Un pilote très expérimenté peut décider mal si sa conscience de la situation est incomplète ou inexacte ; un débutant peut comprendre exactement ce qui se passe sans savoir quoi faire. Cette phrase a été envisagée en citation et écartée : 161 caractères, et elle dit la séparation, pas les trois niveaux.",
+    "Ce que la vulgarisation courante oublie, et que le rapport écrit : la conscience de la situation n'est pas acquise instantanément mais se construit dans le temps ; tous les éléments n'ont pas la même importance à tout moment, mais aucun ne devient jamais sans importance, seulement secondaire, et il faut en garder assez pour savoir qu'ils ne sont pas devenus primaires.",
+    "La contestation, en accès ouvert et dans la revue même qui a publié Endsley en 1995 : Moens et coll. (2026) écrivent que la conscience de la situation est « a theoretically challenged construct, lacking a universally accepted operational definition and exhibiting ill-defined conceptual boundaries », rapportent la formule de Sarter et Woods (« just a label for a variety of cognitive processing activities ») et concluent qu'il faut la tenir pour un méta-construit dépendant du contexte plutôt que pour un phénomène unique et précisément défini.",
+    "Second versant de la contestation : l'argument de circularité, reformulé par Hertz et Hertz (2013) d'après Flach (1995) : comment sait-on que la conscience de la situation a été perdue ? parce que l'opérateur a mal réagi ; pourquoi a-t-il mal réagi ? parce qu'elle avait été perdue. Les mêmes constatent qu'il n'existe pas de définition universellement admise.",
+    "Neuf textes de contestation ont été testés et sont tous fermés : Sarter et Woods (1991), Flach (1995), Stanton et coll. (2010), Dekker et Hollnagel (2004), Salmon et coll. (2008 et 2015), Endsley (2015), Flach (2015), Fioratou et coll. (2010). Les deux sources ouvertes affichées sont ce qui a pu être ouvert, pas ce qu'il y a de plus canonique.",
+    "Une troisième voie a été cherchée sans aboutir : trouver un texte ouvert où Endsley énonce elle-même la définition sans se citer. Elle n'existe pas dans ce qui a pu être ouvert. Dans le rapport fédéral DOT/FAA/AM-94/27 de décembre 1994, qu'elle signe avec Mark D. Rodgers, le même paragraphe figure déjà, avec « controller » au lieu de « pilot », et la phrase y est de nouveau entre guillemets, attribuée cette fois à « Endsley (1987; 1988) », donc à deux textes.",
+    "La thèse de Bailly (2004) donne un rendu français attesté de la définition, p. 10, et situe l'antériorité du terme, p. 9 : issu de la médecine aéronautique, il désignait déjà en 1986, pour la 57th Fighter Weapons Wing de l'US Air Force, le facteur le plus important d'efficacité d'une mission. Cette traduction n'est pas proposée comme citation : c'est la traduction de travail d'un tiers dans une thèse qui cite Endsley, et elle fait 172 caractères.",
+    "Ce que le rapport de 1998 fait vraiment, sur 80 de ses 92 pages : une analyse de tâche dirigée par les buts, auprès de pilotes de ligne expérimentés. Il prévient lui-même que le résultat décrit ce que des pilotes voudraient idéalement savoir, « a design goal, not necessarily a description of an existing system ».",
+    "Ce que le rapport ne contient pas, pour qu'on ne le lui fasse pas dire : aucune discussion des critiques (les mots controversy, criticism et ill-defined y sont absents, les noms de Sarter, Woods et Flach aussi), aucune mesure (SAGAT n'y est jamais nommé), aucune comparaison avec le modèle mental, l'image opérative ou la charge de travail.",
+    "Le chiffrage souvent repris (88 % des accidents à composante d'erreur humaine impliqueraient un problème de conscience de la situation, dont 72 % au niveau 1) figure bien dans le rapport, mais il y est renvoyé à Endsley (1995a) et n'est pas une donnée propre : la carte ne le porte pas.",
+    "Correspondance des folios : le corps commence au folio PDF 9, qui porte la page imprimée 1, et la règle est constante, folio PDF = page imprimée plus huit. La couche texte du scan est fautive ; la page de titre et la page de la définition ont été rendues en image et lues à l'oeil, guillemets compris.",
+    "Trois dépôts n'ont pas pu être ouverts et n'ont pas été forcés : tandfonline.com (défi Cloudflare), eprints.soton.ac.uk (défi Anubis), dépôt de Stanton et Salmon, et deepblue.lib.umich.edu, dépôt de Sarter. Ce sont des échecs d'outil, pas des constats d'absence.",
+    "Le rapport ICAT-98-1 est un rapport du MIT International Center for Air Transportation, Department of Aeronautics & Astronautics, soutenu par la NASA Ames sous le contrat NAG 2-716 : la NASA est le bailleur, pas le coéditeur. Le texte de 1988 dont il tire la définition est fermé et n'a pas été ouvert ; Unpaywall répond is_oa false, aucun dépôt."
+  ]
+}
