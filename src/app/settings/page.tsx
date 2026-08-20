@@ -36,12 +36,6 @@ export default function SettingsPage() {
 
         <h1 className="mt-4 font-serif-display text-2xl font-semibold text-ink">Réglages</h1>
 
-        <p className="mt-2 text-sm leading-relaxed text-ink-soft">
-          Sans compte, rien ne quitte cet appareil : l&rsquo;application y garde
-          seulement la liste des cartes déjà vues, pour ne pas vous les
-          reproposer.
-        </p>
-
         <div style={{ marginTop: "var(--gap-section)" }}>
           {!confirming ? (
             <button
@@ -49,7 +43,7 @@ export default function SettingsPage() {
               onClick={() => setConfirming(true)}
               className="press -ml-2 inline-flex min-h-11 items-center px-2 text-sm font-medium text-warn"
             >
-              Effacer mes données
+              Effacer l&rsquo;historique des cartes déjà lues
             </button>
           ) : (
             <div className="enter-rise space-y-4">
