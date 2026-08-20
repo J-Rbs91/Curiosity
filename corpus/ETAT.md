@@ -1,22 +1,47 @@
-# État du corpus — 17 août 2026
+# État du corpus — 20 août 2026
 
 Écrit sur le disque parce qu'une session a déjà été coupée en cours de route : ce fichier
 existe pour qu'une reprise reparte des fichiers, et non de la mémoire de quelqu'un.
 
-`npm run corpus:validate` : **18 fiches, 17 validées, 0 erreur.**
-`npm run corpus:build` : **17 cartes projetées vers l'application.**
-`npm test` : **155 tests, 0 échec.**
+`npm run corpus:validate` : **46 enregistrements, 45 validés, 0 erreur, 34 avertissements.**
+`npm run corpus:deepen` : **32 approfondissements écrits pour 45 cartes validées.**
+`npm test` : **257 tests, 0 échec.**
 
-**Deux domaines instruits sur onze déclarés** — la sociologie des organisations et la
-théorie de la mesure. Les neuf autres sont configurés dans la taxonomie et n'ont pas de
-corpus ; `corpus:audit` les affiche « en cours de constitution ».
+**Quatre domaines instruits sur onze déclarés, un cinquième ouvert et cartographié.** Les six
+autres sont configurés dans la taxonomie et n'ont pas de corpus ; `corpus:audit` les affiche
+« en cours de constitution ».
 
-| domaine | thèmes | cartes |
-|---|---:|---:|
-| Sociologie des organisations | 9 | 8 |
-| Théorie de la mesure / KPI | 4 | 9 |
+| domaine | thèmes | cartes validées | approfondissements |
+|---|---:|---:|---:|
+| Sociologie des organisations | 9 | 8 | 8 |
+| Ergonomie de l'activité | 4 | 15 | 15 |
+| Human Factors / ergonomie cognitive | 5 | 13 | **0** |
+| Théorie de la mesure / KPI | 4 | 9 | 9 |
+| Cybernétique | 0 | 0 | — |
 
----
+**Les treize cartes de `human-factors` n'ont pas d'approfondissement.** C'est le seul écart
+du corpus entre ce qui est validé et ce qui est servi : `hasDeepening` répond faux pour
+elles, et le bouton « Approfondir » ne s'affiche pas. `npm run corpus:deepen` les liste en
+fin de sortie ; c'est la file de travail, elle ne se tient pas de mémoire.
+
+## Ce que ce fichier ne raconte pas, et qui n'est pas perdu
+
+**Les deux domaines de la famille « Comprendre le travail réel » ont été ouverts et instruits
+les 18 et 19 août 2026, et ce fichier n'a jamais reçu leur compte rendu de lot.** Il est resté
+au 17 août, annonçant deux domaines quand il y en avait quatre et 17 cartes quand il y en
+avait 45. L'écart est corrigé ici en le nommant, non en le comblant après coup : personne ne
+réécrira de mémoire le récit de deux lots qu'il n'a pas conduits, et c'est exactement la
+règle que ce corpus applique à ses cartes.
+
+Ce que ces deux lots ont établi est écrit ailleurs, entier, et se lit à la source :
+
+- `corpus/perimeter.md`, sections « Domaine ouvert — `activity-ergonomics` » et « Domaine
+  ouvert — `human-factors` » : périmètres, frontières tranchées, thèmes déclarés après
+  contrôle, et pour `human-factors` une section « Ce que ce passage a instruit, et ce qu'il
+  n'a pas pu » qui vaut compte rendu de lot ;
+- `corpus/map/activity-ergonomics.scouting.md` et `corpus/map/human-factors.scouting.md` :
+  cartographies, candidats, angles morts ;
+- `corpus/review/*.verdict.json` : les verdicts de contrôle aveugle, un par passage.
 
 # I. Théorie de la mesure — premier lot, publié
 
@@ -252,8 +277,10 @@ sont des artefacts régénérables. Seuls les **verdicts** sont versionnés, dan
 
 # IV. Les approfondissements — second étage du dispositif
 
-`npm run corpus:deepen` : **32 cartes validées, 32 approfondissements projetés, 53 243 mots.**
-Le corpus est complet : aucune carte n'est servie sans son texte.
+`npm run corpus:deepen` : **32 approfondissements projetés, 53 243 mots** — chiffres du
+19 août, quand le corpus comptait 32 cartes validées et que chacune avait son texte. Il en
+compte 45 depuis, et **les treize cartes de `human-factors` n'en ont pas** : c'est la file de
+travail rappelée en tête de ce fichier.
 
 Un approfondissement est le texte d'environ 1 500 mots qu'affiche « Approfondir ». Il vit
 dans `corpus/deepenings/<id>.json`, il est écrit une fois hors ligne, contrôlé, puis projeté
@@ -312,3 +339,94 @@ parallèle et ne projettent jamais : ils contrôlent leur seul fichier avec
 
 La file de travail n'est pas tenue de mémoire : `npm run corpus:deepen` affiche en fin de
 sortie les cartes validées qui n'ont pas encore de texte.
+
+---
+
+# V. Cybernétique — domaine ouvert et cartographié, aucune carte
+
+Cinquième domaine ouvert, le 20 août 2026, et premier de la famille « Comprendre la
+production et les systèmes », restée entièrement vide jusque-là. **L'ouverture s'est arrêtée
+à l'étape 2 sur les quatre que le périmètre impose** : le périmètre est écrit, la
+cartographie est faite, les thèmes ne sont pas déclarés et aucun concept n'est instruit.
+C'était l'ampleur décidée pour ce passage — le découpage se valide avant qu'une seule fiche
+soit écrite, parce que c'est là qu'une erreur coûte le moins cher.
+
+- Périmètre : `corpus/perimeter.md`, section « Domaine ouvert — `cybernetics` ».
+- Cartographie : `corpus/map/cybernetics.scouting.md`, **treize candidats** classés par
+  accessibilité constatée, quatre thèmes proposés, angles morts détaillés.
+
+## Deux découvertes de méthode qui dépassent ce domaine
+
+**1. Persée sert le texte intégral, page par page.** Les trois passages précédents avaient
+conclu que `/doc/<id>` ne rend que la première page et que `docAsPDF` échoue — c'est exact,
+mais la page de notice porte dans ses attributs `data-content-url` une route par page,
+`/doc/page/<docid>/<pageid>_<numéro>_0000`, qui répond `200` et rend l'OCR de la page. Quatre
+des treize candidats de ce lot en dépendent, et **ils sont tous francophones**. Deux
+conséquences immédiates, hors de ce domaine :
+
+- **le dossier `theorie-de-l-accident` (Faverge, 1964) doit être rouvert.** Il avait été
+  arrêté en `human-factors` au motif que « Persée ne rend que la première page d'un article
+  de dix » ;
+- deux textes ouverts par cette route relèvent de domaines déjà ouverts et sont **transmis,
+  pas instruits ici** : Weill-Fassina 1972 sur la notion de régulation en psychologie du
+  travail (`activity-ergonomics`), et Papin *et al.* 1973 sur les systèmes hommes-machines
+  (`human-factors`, dont la cartographie signalait précisément n'avoir trouvé aucun texte
+  fondateur francophone ouvert).
+
+**2. Un `is_oa: false` d'Unpaywall sur un DOI `10.3406/` ne clôt plus rien.** Unpaywall
+déclare fermés des articles que Persée sert intégralement. Ce faux négatif a une portée
+générale : il a probablement coûté des candidats aux passages précédents.
+
+Une troisième trouvaille, plus étroite : le fonds `universallibrary` / `millionbooks`
+d'Internet Archive porte des actes de colloque des années 1960 **sans restriction
+d'emprunt**, là où les mêmes ouvrages en collection `inlibrary` sont en prêt contrôlé. Quatre
+candidats sortent de la table des matières d'un seul de ces volumes, ouverte sans savoir ce
+qu'elle contenait.
+
+## Ce qui est resté fermé, et ce que cela coûte
+
+Wiener en entier, Beer en entier (cinq voies), Rosenblueth, Wiener & Bigelow 1943 (six
+voies — configuration identique à celle du couplage lâche : commentaire ouvert, source
+fermée), Maturana & Varela, les transactions Macy, Cannon. Trois plateformes en échec dur :
+la collection BCL de `digital.library.illinois.edu` en `403`, `cepa.info` et
+`constructivist.info` derrière un mur de connexion, `asc-cybernetics.org` en `406`.
+
+**Le W. Ross Ashby Digital Archive n'existe plus** : `rossashby.info` redirige vers un site
+de casino. Vérifié deux fois, indépendamment.
+
+## Les faiblesses de ce passage, assumées et écrites
+
+- **Douze candidats sur treize sont antérieurs à 1980.** La seconde vague du champ — la
+  cybernétique dite de second ordre — est presque absente, et le seul texte atteignable qui
+  en relève l'est par un hébergement dont la légitimité n'est pas établie. Cause identifiée
+  et réparable : les deux plateformes qui portent cette littérature sont l'une derrière un
+  `403`, l'autre derrière un mur de connexion.
+- **Trois candidats sur treize viennent du même ouvrage** — le manuel d'Ashby, seul texte
+  fondateur du champ ouvert avec une autorisation d'ayant droit constatable sur le fichier
+  lui-même. Le thème qu'ils formeraient serait un sommaire d'Ashby, et la cartographie le
+  dit.
+- **Deux des dix littératures du périmètre n'ont aucun candidat solide** : le comportement
+  téléologique et sa critique, et la cybernétique de l'organisation.
+- En revanche, **la couche francophone est la meilleure des passages anglophones du corpus** :
+  quatre sources primaires en français sur treize, 31 % contre 13 % en `human-factors`.
+
+Sur le biais de mémoire, que le périmètre demande de mesurer : huit candidats sur treize
+portent un nom que le scout dit avoir pu écrire sans recherche, mais **un seul sur treize est
+né d'un couple auteur-concept connu d'avance**. Le fichier refuse d'en tirer un satisfecit et
+il a raison : les noms qu'on écrit spontanément dans ce champ — Wiener, Beer, Bateson,
+Maturana — sont tous inaccessibles. C'est la fermeture de leurs textes, autant que la
+discipline du balayage, qui les a écartés.
+
+## L'étape suivante
+
+Déclarer les thèmes **ne se fait pas maintenant** : ils se déclarent après l'instruction et
+le contrôle, et un thème sans carte validée ne se déclare pas. La suite est donc
+l'instruction d'un premier lot par `/corpus`, en partant des candidats les mieux ouverts.
+Deux réserves à porter dans le brief du lot :
+
+- le découpage thématique proposé compte quatre thèmes, dont **deux que la cartographie
+  elle-même juge insuffisamment pourvus** (`commande-et-organisation`, deux candidats dont un
+  lu au quart ; `la-boucle-et-ses-mots`, dont elle écrit que c'est peut-être un faux thème) ;
+- cinq points de vigilance de non-doublon sont nommés, tous à la frontière et tous déjà
+  tranchés par le périmètre. Le plus facile à manquer : le mot « régulation », déjà instruit
+  deux fois dans le corpus, dans deux sens dont aucun n'est celui de ce domaine.
