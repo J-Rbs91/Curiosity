@@ -55,10 +55,10 @@ export const generatedDeepenings: Deepening[] = [
       }
     ],
     "limits": [
-      "Dans le texte de 2004, l’auteur renvoie à un texte antérieur de lui-même, publié dans les actes d’un congrès de 2003, comme au premier endroit où il aurait déjà formulé ce résultat. Ce texte n’a pas pu être consulté : rien ne permet donc de confirmer si la formule y figurait déjà telle quelle, ou sous une autre forme, ni depuis quand exactement cette idée circule dans son travail.",
-      "Deux ouvrages sont habituellement associés à cette notion dans les présentations qui en sont faites, l’un consacré à la fonction psychologique du travail, l’autre au pouvoir d’agir. Aucun des deux n’a été ouvert ici : la façon dont ils développent cette idée, et dont ils l’articulent à d’autres notions de l’auteur, reste donc hors de portée de ce texte.",
-      "Une formule proche circule dans les présentations qui reprennent cette idée, sous une forme resserrée. Le texte de 2024 consulté ici écrit les choses un peu autrement, et poursuit sa phrase par une énumération qui ne se laisse pas résumer sans perte. Attribuer telle quelle une version raccourcie à l’auteur serait donc inexact.",
-      "Deux revues où l’auteur a publié plusieurs textes qui pourraient éclairer ce point n’étaient pas accessibles au moment de préparer ce texte. La façon dont cette notion se distingue précisément d’approches voisines, qui étudient elles aussi les difficultés et la souffrance au travail, n’a donc pas pu être vérifiée directement dans les sources disponibles."
+      "Dans le texte de 2004, l’auteur renvoie à un texte antérieur de lui-même, publié dans les actes d’un congrès de 2003, comme au premier endroit où il aurait déjà formulé ce résultat. Savoir si la formule y figurait déjà telle quelle ou sous une autre forme, et depuis quand exactement cette idée circule dans son travail, demande d’ouvrir ces actes : la réponse y est écrite, elle n’est pas dans ce qui précède.",
+      "Deux ouvrages sont habituellement associés à cette notion dans les présentations qui en sont faites, l’un consacré à la fonction psychologique du travail, l’autre au pouvoir d’agir. Ce sont eux qui déploient l’idée sur la longueur et l’articulent aux autres notions de l’auteur. Ce que ces pages en font précisément, il faudra les lire pour le voir.",
+      "Une formule proche circule dans les présentations qui reprennent cette idée, sous une forme resserrée. Le texte de 2024 écrit les choses un peu autrement, et poursuit sa phrase par une énumération qui ne se laisse pas résumer sans perte : une raison de plus d’aller lire la phrase entière plutôt que sa version courte, qu’on ne peut pas attribuer telle quelle à l’auteur.",
+      "Cette notion voisine avec d’autres approches, qui étudient elles aussi les difficultés et la souffrance au travail, et la manière exacte dont elle s’en distingue se joue dans les articles que l’auteur a publiés en revue. C’est là qu’il faudra aller chercher la frontière, texte contre texte, et non dans ce qu’on vient de lire."
     ]
   },
   {
@@ -100,22 +100,22 @@ export const generatedDeepenings: Deepening[] = [
         "title": "Un nom plus ancien que son texte de référence",
         "paragraphs": [
           "Le texte de 1952 n’introduit pas cette façon de nommer les choses : il la trouve déjà en usage. Faverge y évoque « les différents domaines où l’on pratique l’analyse du travail », comme d’une activité déjà répandue, qui n’a pas besoin d’être définie pour qu’on la reconnaisse. L’expression désignait donc une pratique avant de désigner un texte de référence.",
-          "Trois ans plus tard, en 1955, Faverge publie avec André Ombredane un ouvrage portant un titre très proche, sensiblement plus développé, qui deviendra la référence du domaine pour le lectorat francophone. Son contenu n’a pas pu être consulté à ce jour : seule sa notice bibliographique est disponible, et elle établit les noms des deux auteurs, le titre complet, l’éditeur et l’année de parution, rien de plus. Le texte qu’on peut citer avec certitude reste donc celui de 1952, signé par Faverge seul."
+          "De cet ouvrage, on ne retiendra ici que l’état civil : les noms des deux auteurs, le titre complet, l’éditeur et l’année de parution. Ce qu’il dit, il le dit dans ses pages ; le texte qu’on peut citer avec certitude sans les avoir ouvertes reste celui de 1952, signé par Faverge seul."
         ]
       },
       {
         "title": "Ce qui est demandé, ce qui est fait",
         "paragraphs": [
           "Des lecteurs plus tardifs de ce courant rapportent que l’ouvrage écrit avec Ombredane met en place une distinction devenue depuis très courante dans l’étude du travail : ce qui est demandé à quelqu’un, la tâche qu’on lui confie, ne coïncide jamais tout à fait avec ce qu’il fait réellement pour s’en acquitter, ce que ces mêmes lecteurs appellent l’activité. L’écart entre les deux n’est pas un défaut d’exécution : c’est la place laissée à la personne pour ajuster une consigne générale à une situation particulière, qui ne se répète jamais exactement de la même façon.",
-          "Cette distinction ne figure pas dans le texte de 1952 : le mot « activité » n’y apparaît à aucun moment, et « tâche » n’y est employé qu’au sens courant, sans opposition marquée. Elle est rapportée à l’ouvrage écrit avec Ombredane par des commentateurs qui l’ont lu, non par une lecture directe de ses pages. Pour établir depuis quand et en quels termes exacts ce texte pose la distinction, il faudrait pouvoir l’ouvrir."
+          "Cette distinction ne figure pas dans le texte de 1952 : le mot « activité » n’y apparaît à aucun moment, et « tâche » n’y est employé qu’au sens courant, sans opposition marquée. Elle est rapportée à l’ouvrage écrit avec Ombredane par des commentateurs qui l’ont lu. Pour établir depuis quand et en quels termes exacts ce texte pose la distinction, il faudra le lire."
         ]
       }
     ],
     "limits": [
-      "L’ouvrage publié en 1955 avec André Ombredane n’a été identifié qu’à travers sa notice bibliographique : titre, sous-titre, ordre des deux signatures, éditeur, année, pagination. Aucune phrase de ce livre n’a pu être vérifiée ; tout ce qui lui est attribué au-delà de ces éléments matériels provient de commentateurs qui l’ont lu, pas d’une lecture directe.",
-      "La distinction entre tâche et activité, en particulier, n’est établie que par cette voie indirecte. Le texte de 1952, le seul consulté intégralement, ne l’emploie pas. Rien ne permet donc de dater précisément son apparition dans l’ouvrage commun, ni d’en citer les termes exacts.",
-      "Le lien souvent avancé entre le texte de 1952 et un chapitre particulier de l’ouvrage de 1955 repose sur une seule affirmation d’un commentateur ultérieur, elle-même non vérifiable sans accès au livre.",
-      "La citation reproduite ici a été recoupée sur plusieurs consultations indépendantes du même texte, concordantes entre elles. La forme exacte de sa ponctuation d’origine, en revanche, n’a pas pu être confrontée à une édition papier du numéro de 1952 : une divergence minime sur ce point resterait possible."
+      "De l’ouvrage publié en 1955 avec André Ombredane, on peut donner ici l’état civil, et rien de plus : titre, sous-titre, ordre des deux signatures, éditeur, année, pagination. Tout ce qui lui est attribué au-delà de ces éléments matériels vient de commentateurs qui l’ont lu. Ses phrases, elles, attendent leur lecteur.",
+      "La distinction entre tâche et activité, en particulier, ne parvient jusqu’ici que par cette voie indirecte : le texte de 1952 ne l’emploie pas. La dater dans l’ouvrage commun et en citer les termes exacts suppose d’ouvrir ce livre, où la formule se trouve, quelque part, dans sa forme d’origine.",
+      "Le lien souvent avancé entre le texte de 1952 et un chapitre particulier de l’ouvrage de 1955 repose sur une seule affirmation d’un commentateur ultérieur. Le chapitre lui-même tranchera, pour qui va le lire.",
+      "La citation reproduite plus haut est concordante d’une reprise à l’autre. Sa ponctuation d’origine, en revanche, ne se vérifie que sur le numéro de 1952 lui-même : une divergence minime, une virgule, un point-virgule, y resterait possible."
     ]
   },
   {
@@ -169,9 +169,9 @@ export const generatedDeepenings: Deepening[] = [
       }
     ],
     "limits": [
-      "L’attribution du mot à Winsemius, en 1969, et l’exemple donné par Faverge, en 1970, reposent l’un et l’autre sur ce qu’en écrit Rabardel : ni l’article de Winsemius, publié en néerlandais, ni celui de Faverge, paru dans la revue Ergonomics, n’ont été consultés directement pour ce texte. Ce qui en est rapporté ici est donc ce que Rabardel lui-même en rapporte, et rien de plus.",
-      "La citation et les passages cités ici viennent de la version que l’auteur a lui-même déposée en ligne, et non de l’édition imprimée chez Armand Colin en 1995 : la pagination donnée est celle de ce dépôt, elle ne correspond pas nécessairement à celle du livre publié.",
-      "Rien n’est dit ici de la façon dont la notion a pu être reprise, discutée ou déplacée par d’autres auteurs après 1995 : aucune étude ultérieure consacrée spécifiquement à la catachrèse au sens ergonomique n’a été consultée pour ce texte."
+      "L’attribution du mot à Winsemius, en 1969, et l’exemple donné par Faverge, en 1970, passent l’un et l’autre par ce qu’en écrit Rabardel : ce qu’on en lit plus haut est ce que Rabardel en rapporte, et rien de plus. Les deux articles d’origine, l’un en néerlandais, l’autre paru dans la revue Ergonomics, diront d’eux-mêmes ce que la reprise a laissé de côté.",
+      "Les passages cités plus haut viennent de la version que l’auteur a lui-même déposée en ligne, et non de l’édition imprimée chez Armand Colin en 1995 : la pagination donnée est celle de ce dépôt, et qui citera le livre relèvera la sienne sur l’exemplaire imprimé.",
+      "Ce que la notion est devenue après 1995, qui l’a reprise, discutée ou déplacée, commence là où ce qui précède s’arrête. Les études ultérieures consacrées à la catachrèse au sens ergonomique restent à lire, et ce sont elles qui diront ce que le mot a tenu."
     ]
   },
   {
@@ -226,9 +226,9 @@ export const generatedDeepenings: Deepening[] = [
       }
     ],
     "limits": [
-      "La version en langue anglaise de ce texte, publiée par la même revue, n’a été consultée que pour la phrase qui recoupe la citation retenue ici ; le reste de son contenu ne peut pas être invoqué au-delà de ce point précis.",
-      "L’idée de cristallisation est antérieure à ce texte de 2007 : elle apparaît dès 1995 sous la plume de Pierre Rabardel, qui la rattache lui-même aux travaux de Léontiev. Léontiev n’a pas été lu directement pour préparer ce texte : cette filiation repose entièrement sur la manière dont Rabardel l’expose, pas sur une vérification dans le texte de Léontiev lui-même.",
-      "Les travaux auxquels Béguin adosse chacune des trois voies qu’il distingue, parmi d’autres ceux de Bannon, de Freyssenet, de Suchman, de Daniellou, de Pastré ou de Clot, n’ont pas été ouverts pour préparer ce texte. Leur existence et leur pertinence sont établies par l’article lui-même, mais leur contenu propre ne peut pas être rapporté ici au-delà de ce qu’en dit Béguin."
+      "La même revue a publié une version en langue anglaise de ce texte. Une seule de ses phrases sert ici, celle qui recoupe la citation retenue ; qui voudra savoir où les deux versions divergent ailleurs les lira l’une à côté de l’autre.",
+      "L’idée de cristallisation est antérieure à ce texte de 2007 : elle apparaît dès 1995 sous la plume de Pierre Rabardel, qui la rattache lui-même aux travaux de Léontiev. Cette filiation se lit donc à travers Rabardel. Ce que Léontiev en écrit dans ses propres pages, c’est chez Léontiev qu’on ira le chercher.",
+      "Chacune des trois voies que Béguin distingue s’adosse à des travaux qu’il nomme, parmi d’autres ceux de Bannon, de Freyssenet, de Suchman, de Daniellou, de Pastré ou de Clot. L’article établit qu’ils comptent, il n’en donne pas le contenu : c’est une bibliographie à suivre, et chacun de ces noms ouvre une piste qui se lit pour elle-même."
     ]
   },
   {
@@ -282,9 +282,9 @@ export const generatedDeepenings: Deepening[] = [
       }
     ],
     "limits": [
-      "Une expression proche, « usage de soi », est parfois associée au même auteur ; elle n’apparaît pas une seule fois dans le texte de 2007 utilisé ici. Les deux formules ne doivent pas être confondues à partir de ce qui est présenté ici : rien ne permet de dire comment elles s’articulent l’une à l’autre, ni si la seconde ajoute quelque chose que la première ne dit pas.",
-      "L’expression « débats de normes » figure aussi, en 2004, dans le titre d’un chapitre antérieur du même auteur ; ce chapitre n’a pas été consulté ici. Il n’est donc pas possible d’établir, à partir des sources actuellement disponibles, à quelle date l’expression a été formulée pour la première fois : seule sa présence dans l’article de 2007 peut être affirmée avec certitude.",
-      "La manière dont cette proposition a été reçue, discutée ou contestée par d’autres chercheurs n’a pas pu être examinée : les sources qui l’auraient permis n’étaient pas accessibles au moment de la rédaction. Ce que l’article affirme est donc rapporté ici tel quel, sans mise en perspective avec les discussions qu’il a pu susciter par ailleurs."
+      "Une expression proche, « usage de soi », est parfois associée au même auteur ; elle n’apparaît pas une seule fois dans le texte de 2007. Comment les deux formules s’articulent, et si la seconde ajoute quelque chose que la première ne dit pas, se décidera dans les textes où l’auteur emploie l’une et l’autre, pas dans ce qui précède.",
+      "L’expression « débats de normes » figure aussi, en 2004, dans le titre d’un chapitre antérieur du même auteur. Ce chapitre est le premier endroit à ouvrir pour qui veut dater la formule : de ce qui précède, seule sa présence dans l’article de 2007 peut être affirmée avec certitude.",
+      "Ce que l’article affirme est rapporté plus haut tel quel, sans les discussions qu’il a pu susciter. La façon dont d’autres chercheurs l’ont reçu, prolongé ou contesté forme une littérature à part entière, et c’est en la lisant qu’on saura ce que cette proposition est devenue une fois sortie des mains de son auteur."
     ]
   },
   {
@@ -339,10 +339,10 @@ export const generatedDeepenings: Deepening[] = [
       }
     ],
     "limits": [
-      "La citation traduite dans le texte est une traduction interne : la traduction publiée en français par Henri Mendras n’a pas pu être consultée directement, si bien que sa formulation exacte pour ce passage reste inconnue et n’est pas nécessairement celle que l’on lira dans cette édition française.",
-      "L’ouvrage plus tardif dans lequel Merton reprend cette analyse, Social Theory and Social Structure, n’a été identifié que par sa notice bibliographique : la manière dont il y retravaille ou nuance son propos de 1940 n’est pas établie ici et demanderait à ouvrir directement cet ouvrage.",
-      "Les travaux plus tardifs sur les conditions précises de ce déplacement n’ont été mobilisés ici que pour signaler leur existence : le détail de leurs analyses n’est pas repris, et il faudrait revenir directement à ces articles pour le préciser.",
-      "L’exemple étudié par Merton porte sur une administration organisée par des règles écrites ; son extension à d’autres types d’organisations, entreprise privée ou association, n’est pas discutée dans ce texte de 1940 et reste, ici, une hypothèse de lecture plutôt qu’un point établi."
+      "Le passage de Merton est traduit ici pour l’occasion. Il existe une traduction française publiée, due à Henri Mendras, et ce n’est pas elle : qui veut la formule qui fait référence en français la trouvera dans cette édition.",
+      "Merton reprend cette analyse dans un ouvrage plus tardif, Social Theory and Social Structure. Ce qu’il y retravaille, ce qu’il y nuance de son propos de 1940, se lit dans ce livre et nulle part ailleurs : c’est la suite de l’article de 1940, pour qui veut la voir.",
+      "Les travaux plus tardifs sur les conditions précises de ce déplacement sont signalés plus haut sans être déployés. Sous quelles conditions exactement le mécanisme s’enclenche, et quand il ne s’enclenche pas, ces articles le disent ; il faudra les lire pour l’apprendre.",
+      "L’exemple étudié par Merton porte sur une administration organisée par des règles écrites ; son extension à d’autres types d’organisations, entreprise privée ou association, n’est pas discutée dans ce texte de 1940 et reste une hypothèse de lecture plutôt qu’un point établi."
     ]
   },
   {
@@ -391,8 +391,8 @@ export const generatedDeepenings: Deepening[] = [
       }
     ],
     "limits": [
-      "Les formulations attribuées à Mayen et Savoyant, ainsi qu’à Veyrac, Cellier et Bertrand, ne sont connues ici qu’à travers les phrases que l’auteur en rapporte. Leurs textes propres, une communication de congrès pour les premiers, un article de revue pour les seconds, n’ont pas été consultés directement : rien au-delà des expressions citées ne peut donc leur être attribué, ni sur la façon dont ils construisent cette description, ni sur les exemples qu’ils auraient pu en donner.",
-      "L’article de 2004 a été repris en 2008 dans un ouvrage collectif, comme troisième chapitre d’un recueil qui rassemble plusieurs textes déjà publiés ailleurs. Que cet ouvrage existe, qu’il porte ce titre et ce chapitre, est établi ; son contenu, en revanche, n’a pas été consulté au-delà de cette notice, et rien ne permet de dire si le chapitre reprend l’article à l’identique ou y ajoute quelque chose. Pour le savoir, il faudrait ouvrir cette édition."
+      "Les formulations attribuées à Mayen et Savoyant, ainsi qu’à Veyrac, Cellier et Bertrand, passent par les phrases que l’auteur en rapporte, et rien au-delà de ces expressions ne peut leur être attribué. Comment ils construisent cette description, quels exemples ils en donnent, cela se trouve dans leurs textes : une communication de congrès pour les premiers, un article de revue pour les seconds.",
+      "L’article de 2004 a été repris en 2008 dans un ouvrage collectif, comme troisième chapitre d’un recueil qui rassemble plusieurs textes déjà publiés ailleurs. Que cet ouvrage existe, qu’il porte ce titre et ce chapitre, est établi. Si le chapitre reprend l’article à l’identique ou s’il y ajoute quelque chose, il faudra ouvrir cette édition pour le voir."
     ]
   },
   {
@@ -441,9 +441,9 @@ export const generatedDeepenings: Deepening[] = [
       }
     ],
     "limits": [
-      "Un article de 1986, signé par le psychologue Joel Michell et intitulé « Measurement scales and statistics: A clash of paradigms », est le signe d’un désaccord réel autour de cette typologie. Seule sa notice a pu être consultée, pas son texte : impossible donc de dire en quoi consiste exactement ce désaccord, quels arguments il oppose à Stevens, ou quelle conclusion il en tire.",
-      "La seconde définition de la mesure que Stevens cite plus loin dans son article, entre guillemets et attribuée à un membre non identifié d’un comité britannique, n’a pas pu être reproduite ici : ni son texte exact ni l’identité de son auteur ne figurent dans les sources actuellement disponibles au-delà de cette mention.",
-      "La traduction française citée est une traduction interne non publiée, réalisée pour ce texte : elle n’a pas de statut officiel, et pour la citer ailleurs il faudrait revenir à l’anglais original. Le rapport de Campbell auquel Stevens renvoie, le « Final Report » mentionné en page 340, n’a pas non plus été consulté : la manière exacte dont Stevens reformule Campbell ne peut donc pas être vérifiée au-delà de ce que l’article de 1946 en dit lui-même."
+      "Un article de 1986, signé par le psychologue Joel Michell et intitulé « Measurement scales and statistics: A clash of paradigms », est le signe d’un désaccord réel autour de cette typologie. Le titre annonce l’affrontement ; les arguments qu’il oppose à Stevens et la conclusion qu’il en tire sont dans l’article, et c’est le premier texte à lire pour entendre l’autre partie.",
+      "Plus loin dans son article, Stevens cite une seconde définition de la mesure, entre guillemets, attribuée à un membre non identifié d’un comité britannique. Ni sa formulation exacte ni le nom de son auteur ne figurent plus haut : ils sont dans les pages de Stevens, à quelques paragraphes de la phrase citée.",
+      "La traduction française donnée plus haut n’a pas été publiée : elle sert à faire comprendre, pas à faire référence, et qui veut citer Stevens le citera en anglais. Quant au rapport de Campbell auquel il renvoie, le « Final Report » mentionné en page 340, c’est lui qui dira si la reformulation de Stevens lui rend justice."
     ]
   },
   {
@@ -478,7 +478,7 @@ export const generatedDeepenings: Deepening[] = [
         "title": "Trois regards sur un environnement capacitant",
         "paragraphs": [
           "L’expression trouve un développement plus détaillé dans un texte que Pierre Falzon a coécrit avec Vanina Mollo, publié en 2009 dans une revue portugaise. Ce texte distingue trois façons de regarder ce qui fait qu’un environnement est capacitant : un point de vue préventif, un point de vue universel et un point de vue développemental. Ce ne sont pas trois définitions concurrentes, mais trois angles depuis lesquels une même exigence peut se formuler.",
-          "Le texte étant rédigé en portugais, ce que chacun de ces trois points de vue développe précisément ne peut pas être reproduit ici avec la même exactitude que pour l’article de 2013, écrit en français. Ce qui reste solidement établi, en revanche, c’est que la notion d’environnement capacitant ne se limite pas, chez ces auteurs, à un seul critère : elle se construit en croisant plusieurs exigences, plutôt qu’en cochant une case unique. Un environnement pensé pour prévenir un risque, un environnement pensé pour convenir à des profils très différents et un environnement pensé pour permettre à quelqu’un de progresser dans le temps ne répondent pas à la même question, même s’ils peuvent coexister dans un même lieu de travail."
+          "Le texte étant rédigé en portugais, ce que chacun de ces trois points de vue développe se lit avec moins de précision que dans l’article de 2013, écrit en français, et c’est dans l’original qu’il faudra chercher le détail. Ce qui reste solidement établi, en revanche, c’est que la notion d’environnement capacitant ne se limite pas, chez ces auteurs, à un seul critère : elle se construit en croisant plusieurs exigences, plutôt qu’en cochant une case unique. Un environnement pensé pour prévenir un risque, un environnement pensé pour convenir à des profils très différents et un environnement pensé pour permettre à quelqu’un de progresser dans le temps ne répondent pas à la même question, même s’ils peuvent coexister dans un même lieu de travail."
         ]
       },
       {
@@ -490,9 +490,9 @@ export const generatedDeepenings: Deepening[] = [
       }
     ],
     "limits": [
-      "Le texte d’Amartya Sen auquel la capabilité est empruntée n’a pas été ouvert au-delà de sa référence bibliographique : aucune date de première formulation de cette notion ne peut être avancée ici, et rien de son contenu propre, au-delà du terme repris par les auteurs de 2013, ne peut être rapporté.",
-      "Il en va de même des deux textes que Pierre Falzon donne lui-même comme origine de l’expression environnement capacitant, une conférence de 2005 et un ouvrage de 2013, ainsi que du chapitre où Solveig Fernagu-Oudet développe le facteur de conversion : ces trois textes ne sont connus ici que par leur référence, jamais par leur contenu, et rien de ce qu’ils avancent en propre ne peut donc être décrit.",
-      "Le texte que Pierre Falzon a coécrit avec Vanina Mollo en 2009 n’a été lu qu’en portugais, sans qu’il soit établi si cette langue est celle de rédaction originale ou celle d’une traduction ; aucune phrase n’en est donc citée ici, et les trois points de vue qu’il distingue ne sont nommés que par leur intitulé, sans que leur contenu précis puisse être détaillé avec la même certitude que pour l’article de 2013."
+      "La capabilité est empruntée à Amartya Sen, et ce qui précède n’en retient que le terme, tel que les auteurs de 2013 le reprennent. Quand Sen l’a formulée pour la première fois, ce qu’elle recouvre dans son œuvre à lui, cela se lit chez Sen : c’est le détour à faire pour qui veut la notion d’origine plutôt que son emprunt.",
+      "Pierre Falzon donne lui-même deux textes comme origine de l’expression environnement capacitant, une conférence de 2005 et un ouvrage de 2013, et c’est dans un chapitre de Solveig Fernagu-Oudet que le facteur de conversion est développé. Ces trois références sont l’endroit où l’expression se déploie vraiment ; ce qu’elles avancent en propre, il faudra les ouvrir pour le savoir.",
+      "Le texte que Pierre Falzon a coécrit avec Vanina Mollo en 2009 circule en portugais, sans qu’on sache si c’est là sa langue de rédaction ou celle d’une traduction. Les trois points de vue qu’il distingue sont nommés plus haut par leur seul intitulé : ce que chacun recouvre, l’article le dit dans ses pages, avec une précision que ce qui précède ne prétend pas égaler."
     ]
   },
   {
@@ -540,9 +540,9 @@ export const generatedDeepenings: Deepening[] = [
       }
     ],
     "limits": [
-      "La position de Maurice de Montmollin, telle qu’elle est présentée ici, n’a été lue qu’à travers ce qu’en disent Hubault et Bourgeois : son propre ouvrage sur l’organisation du travail n’a pas été consulté directement, et ce qui lui est attribué pourrait être plus nuancé qu’il n’apparaît dans une dispute qui, par construction, simplifie la position qu’elle combat.",
-      "Ce qui est présenté ici s’appuie sur un unique texte, publié en 2004. D’éventuels prolongements ou reformulations que Hubault aurait pu proposer seul, par la suite, n’ont pas pu être vérifiés.",
-      "Enfin, l’opposition entre tâche-horizon et tâche-moyen ne restitue qu’une partie du débat entre plusieurs courants de l’ergonomie sur la finalité de la discipline : les autres positions, que l’article de 2004 mentionne sans les développer entièrement, ne sont pas traitées ici."
+      "La position de Maurice de Montmollin arrive ici par ce qu’en disent Hubault et Bourgeois, c’est-à-dire par ceux qui la combattent, et une dispute simplifie toujours la position qu’elle vise. Son propre ouvrage sur l’organisation du travail est le seul endroit où il se défend lui-même : le lire est la seule manière de mesurer ce qu’on lui fait dire.",
+      "Tout ce qui précède tient à un unique texte, publié en 2004. Ce que Hubault a pu, seul et par la suite, prolonger ou reformuler se trouve dans ses publications ultérieures : la position a peut-être bougé depuis, et c’est là qu’on le verra.",
+      "L’opposition entre tâche-horizon et tâche-moyen ne restitue qu’une partie du débat entre courants de l’ergonomie sur la finalité de la discipline. L’article de 2004 mentionne les autres positions sans les développer ; chacune de ces mentions est un fil à tirer, et l’article en donne les références."
     ]
   },
   {
@@ -595,9 +595,9 @@ export const generatedDeepenings: Deepening[] = [
       }
     ],
     "limits": [
-      "L’article fondateur de 1972 n’a pas pu être consulté au-delà de sa notice bibliographique : aucun accès en ligne ouvert n’a été trouvé pour ce texte. Ce qui en est restitué ici vient donc de la rétrospective que les trois auteurs ont publiée en 2012, quarante ans plus tard, et qui a bien été lue intégralement, jamais du texte de 1972 lui-même. Les formulations exactes de l’article original, ses exemples, l’ordre dans lequel il présente ses arguments, restent hors de portée de ce texte.",
-      "Le recueil Ambiguity and Choice in Organizations, publié par James G. March et Johan P. Olsen en 1976 et qui rassemble des études appliquant le modèle à des cas concrets, n’a lui aussi été identifié que par sa notice. Impossible, dans ces conditions, de dire ici comment ces études ont mis le modèle à l’épreuve sur le terrain, ni ce qu’elles en ont confirmé ou nuancé.",
-      "Les discussions savantes accumulées depuis près de cinquante ans autour de ce modèle, ses critiques, ses usages dans des disciplines autres que celle des organisations, n’ont pas été examinées ici au-delà de ce qu’en disent les auteurs eux-mêmes dans leur propre bilan de 2012. Pour connaître les objections qui lui ont été adressées au fil du temps, il faudrait s’y reporter séparément."
+      "Ce qui précède restitue le modèle à travers la rétrospective que les trois auteurs ont publiée en 2012, quarante ans après, et non à travers l’article fondateur de 1972 lui-même. Ses formulations d’origine, ses exemples, l’ordre dans lequel il pose ses arguments, sont dans ce texte de 1972, qui ne circule pas librement en ligne : c’est en bibliothèque qu’il se trouve, et il vaut le déplacement.",
+      "Le recueil Ambiguity and Choice in Organizations, publié par James G. March et Johan P. Olsen en 1976, rassemble des études qui appliquent le modèle à des cas concrets. C’est le livre à ouvrir pour voir ce que le modèle donne au contact du terrain, ce qu’il y confirme et ce qu’il y perd ; ce qui précède n’en dit rien.",
+      "Près de cinquante ans de discussions se sont accumulés autour de ce modèle, avec leurs critiques et leurs reprises dans d’autres disciplines. Ce qui précède n’en garde que ce que les auteurs eux-mêmes en retiennent dans leur bilan de 2012, c’est-à-dire la version que donne la défense. Les objections, il faudra aller les lire chez ceux qui les ont écrites."
     ]
   },
   {
@@ -651,10 +651,10 @@ export const generatedDeepenings: Deepening[] = [
       }
     ],
     "limits": [
-      "Le texte cité ici est la version que Rabardel a lui-même déposée en archive ouverte, avec sa propre pagination en folios, et non l’édition imprimée chez Armand Colin, annoncée à 239 pages : une divergence de formulation entre les deux, si elle existe, n’a pas pu être vérifiée.",
-      "L’expression qui donne son nom à l’ensemble de cette approche, « approche instrumentale », figure aussi dans le titre d’un texte antérieur de Pierre Vérillon, que l’ouvrage cite lui-même en bibliographie : on ne peut donc pas affirmer que Rabardel l’a forgée seul, même si l’élaboration systématique de la genèse instrumentale, telle qu’elle est présentée ici, lui revient sans partage.",
-      "La traduction anglaise de ce texte n’a été identifiée que par sa notice, sans que son contenu ait été ouvert : rien n’en est rapporté ici. La manière dont ces idées ont ensuite été reprises, en particulier en didactique des mathématiques, un champ que l’auteur cite lui-même parmi ceux que son travail concerne, n’a pas non plus été explorée.",
-      "Une notion voisine, à laquelle Rabardel lui-même ne revendique pas la paternité et qui ouvre pourtant le raisonnement du même ouvrage, celle d’un objet détourné pour un usage que rien ne prévoyait au départ, n’est pas traitée dans ce texte."
+      "Le texte cité plus haut est la version que Rabardel a lui-même déposée en archive ouverte, avec sa pagination en folios, et non l’édition imprimée chez Armand Colin, annoncée à 239 pages. Les deux se lisent, et seule la seconde dira si une formulation a bougé de l’une à l’autre.",
+      "L’expression qui donne son nom à l’ensemble de cette approche, « approche instrumentale », figure aussi dans le titre d’un texte antérieur de Pierre Vérillon, que l’ouvrage cite lui-même en bibliographie : on ne peut donc pas affirmer que Rabardel l’a forgée seul, même si l’élaboration systématique de la genèse instrumentale, telle qu’on vient de la lire, lui revient sans partage. Le texte de Vérillon est en bibliographie de l’ouvrage : c’est là qu’on verra ce que le nom portait avant lui.",
+      "Il existe une traduction anglaise de ce texte, et rien n’en est repris plus haut. Ce que ces idées sont devenues ensuite, en didactique des mathématiques notamment, un champ que l’auteur cite lui-même parmi ceux que son travail concerne, forme une littérature entière : c’est de ce côté que le concept a le plus voyagé, et c’est là qu’il faudra le suivre.",
+      "Une notion voisine, à laquelle Rabardel lui-même ne revendique pas la paternité et qui ouvre pourtant le raisonnement du même ouvrage, celle d’un objet détourné pour un usage que rien ne prévoyait au départ, n’est pas développée plus haut. L’ouvrage, lui, commence par elle."
     ]
   },
   {
@@ -701,9 +701,9 @@ export const generatedDeepenings: Deepening[] = [
       }
     ],
     "limits": [
-      "La bibliographie de l’article annonce un texte spécifiquement consacré au couple genre et style, cosigné par Yves Clot et Daniel Faïta seuls, alors donné comme à paraître. Ce texte n’a pas été ouvert ici et n’est pas daté dans ce qui précède : les sources actuellement disponibles permettent d’établir les deux définitions données en 2000 dans un article qui traite d’abord d’une méthode d’entretien, mais pas ce que ce texte de référence, une fois paru, en aurait éventuellement développé.",
-      "L’article de 2000 ne dit à aucun moment que la distinction entre genre et style s’inspire des travaux du linguiste Mikhaïl Bakhtine sur les genres du discours, une filiation pourtant courante dans la littérature sur le sujet. Affirmer ici cette origine reviendrait à ajouter une attribution que le texte lui-même ne pose pas explicitement dans son corps.",
-      "Une entrée de dictionnaire signée du seul Yves Clot, publiée en 2014 en espagnol et en portugais sous ce même couple de notions, existe et n’a été consultée ici que par sa notice : son contenu ne peut être ni cité ni résumé dans ce texte. Aucune discussion ultérieure de la distinction, contestation ou reprise par d’autres chercheurs, n’a non plus été examinée : la manière dont elle a été reçue après 2000 reste hors de portée de ce qui précède."
+      "La bibliographie de l’article annonce un texte consacré spécifiquement au couple genre et style, cosigné par Yves Clot et Daniel Faïta seuls, alors donné comme à paraître. Ce qui précède tient les deux définitions de 2000, posées dans un article qui traite d’abord d’une méthode d’entretien ; ce que le texte de référence en a fait, une fois paru, se lira dans ce texte-là.",
+      "L’article de 2000 ne dit à aucun moment que la distinction entre genre et style s’inspire des travaux du linguiste Mikhaïl Bakhtine sur les genres du discours, une filiation pourtant courante dans la littérature sur le sujet. L’affirmer reviendrait à ajouter une attribution que le texte ne pose pas explicitement dans son corps ; qui veut trancher lira Bakhtine et l’article l’un à côté de l’autre.",
+      "Yves Clot a signé seul, en 2014, une entrée de dictionnaire sous ce même couple de notions, publiée en espagnol et en portugais. Quatorze ans après l’article, c’est l’occasion de voir ce que la distinction est devenue sous sa plume, et il faudra l’ouvrir pour le savoir. La façon dont d’autres chercheurs l’ont reçue, reprise ou contestée depuis 2000 se lit de la même manière, dans leurs textes."
     ]
   },
   {
@@ -750,9 +750,9 @@ export const generatedDeepenings: Deepening[] = [
       }
     ],
     "limits": [
-      "L’article annonce traiter le sujet dans l’éducation et ailleurs, mais sa démonstration soutenue porte sur le benchmarking comme technique de gouvernement en général, illustrée par une entreprise et par l’administration d’État ; aucun passage autonome n’énonce ce que la comparaison chiffrée change spécifiquement dans une école ou une université. Ce texte ne dit donc rien de particulier sur l’enseignement, alors même que le titre de l’article le promettait.",
-      "L’ouvrage qu’Isabelle Bruno a écrit avec Emmanuel Didier sur le benchmarking, Benchmarking. L’État sous pression statistique, n’a été identifié que par sa notice bibliographique, sans que son texte ait été consulté. Le cas de Xerox, mentionné dans l’article comme illustration de la méthode dans l’entreprise, y est vraisemblablement développé plus longuement ; aucun détail au-delà de sa mention dans l’article ne peut être avancé ici.",
-      "L’ouvrage d’Alain Desrosières, Gouverner par les nombres, n’a lui non plus été identifié que par sa notice : il atteste qu’une réflexion sur le gouvernement par les nombres existait avant l’article ici retenu, mais son contenu propre, ses exemples et ses distinctions restent hors de portée de ce texte, faute d’avoir pu l’ouvrir."
+      "L’article annonce traiter le sujet dans l’éducation et ailleurs, mais sa démonstration soutenue porte sur le benchmarking comme technique de gouvernement en général, illustrée par une entreprise et par l’administration d’État ; aucun passage autonome n’énonce ce que la comparaison chiffrée change spécifiquement dans une école ou une université. L’article ne dit donc rien de particulier sur l’enseignement, alors même que son titre le promettait.",
+      "Isabelle Bruno a écrit avec Emmanuel Didier un ouvrage entier sur le benchmarking, Benchmarking. L’État sous pression statistique. Le cas de Xerox, que l’article se contente de mentionner comme illustration de la méthode dans l’entreprise, y est vraisemblablement déroulé sur des pages : c’est le livre qui donne à cette histoire sa longueur, et ce qui précède ne la donne pas.",
+      "Alain Desrosières avait consacré à ce sujet un ouvrage antérieur, Gouverner par les nombres. Ses exemples et ses distinctions y sont, et ils n’apparaissent pas plus haut : c’est la lecture qui, sur cette question, précède logiquement toutes les autres."
     ]
   },
   {
@@ -811,9 +811,9 @@ export const generatedDeepenings: Deepening[] = [
       }
     ],
     "limits": [
-      "Deux articles de Hannan et Freeman, celui de 1977 sur l’écologie des populations d’organisations et celui de 1984 sur l’inertie structurelle, ont été lus en entier et forment la base documentaire de ce texte ; au-delà de l’argument qui vient d’être exposé, leur matière empirique précise, les cas et les secteurs qu’ils examinent en détail, n’a pas été reprise ici et resterait à consulter directement dans ces articles pour qui voudrait des illustrations situées.",
-      "Trois autres textes, un article de Ruth Young publié en 1988 qui interroge l’utilité de ce paradigme pour l’étude des organisations, la réponse que lui adressent Freeman et Hannan l’année suivante, et un article de synthèse de Glenn Carroll sur l’écologie organisationnelle, sont identifiés comme pertinents mais n’ont été consultés que par leur notice bibliographique. Le contenu exact du débat qu’ils portent, ses arguments et sa réception, ne peut donc pas être rapporté ici.",
-      "La traduction française de la citation tirée de l’article de 1984 est une traduction interne, non publiée ; aucune traduction française publiée de cet article n’a été identifiée. Une nuance de vocabulaire propre à une traduction établie ne peut donc pas être vérifiée contre une version française faisant autorité."
+      "Deux articles de Hannan et Freeman portent l’argument qu’on vient de lire, celui de 1977 sur l’écologie des populations d’organisations et celui de 1984 sur l’inertie structurelle. Leur matière empirique, les cas et les secteurs qu’ils examinent en détail, n’est pas reprise plus haut : qui veut des illustrations situées les trouvera dans ces pages, et nulle part ailleurs.",
+      "Trois autres textes portent le débat que ce paradigme a suscité : un article de Ruth Young publié en 1988, qui interroge son utilité pour l’étude des organisations, la réponse que lui adressent Freeman et Hannan l’année suivante, et un article de synthèse de Glenn Carroll sur l’écologie organisationnelle. L’échange se lit dans cet ordre, et il ne se résume pas : c’est la controverse elle-même qu’il faut lire.",
+      "La citation tirée de l’article de 1984 est traduite pour l’occasion, et il ne semble pas exister de traduction française publiée de cet article. Pour la nuance exacte d’un mot, c’est l’anglais de Hannan et Freeman qui fait foi."
     ]
   },
   {
@@ -826,7 +826,7 @@ export const generatedDeepenings: Deepening[] = [
       {
         "title": "Une ressemblance que la concurrence n’explique pas",
         "paragraphs": [
-          "L’idée d’une sélection par le marché suppose que les organisations les mieux adaptées survivent et servent de modèle, un peu comme une espèce bien adaptée finit par dominer un milieu. Or une part croissante des organisations qui se ressemblent le plus, administrations, hôpitaux, écoles, associations subventionnées, ne sont pas celles qui se disputent des clients sur un marché. DiMaggio et Powell écrivent, dans une traduction française établie pour cette présentation : « […] des acteurs rationnels rendent leurs organisations toujours plus semblables à mesure qu’ils cherchent à les changer. » La phrase mérite d’être lue deux fois : ce ne sont pas des acteurs paresseux ou résignés qui produisent cette ressemblance, ce sont des gens qui cherchent activement à améliorer leur organisation. C’est l’effort de changement lui-même qui, chemin faisant, uniformise.",
+          "L’idée d’une sélection par le marché suppose que les organisations les mieux adaptées survivent et servent de modèle, un peu comme une espèce bien adaptée finit par dominer un milieu. Or une part croissante des organisations qui se ressemblent le plus, administrations, hôpitaux, écoles, associations subventionnées, ne sont pas celles qui se disputent des clients sur un marché. DiMaggio et Powell écrivent, dans une traduction française faite pour l’occasion : « […] des acteurs rationnels rendent leurs organisations toujours plus semblables à mesure qu’ils cherchent à les changer. » La phrase mérite d’être lue deux fois : ce ne sont pas des acteurs paresseux ou résignés qui produisent cette ressemblance, ce sont des gens qui cherchent activement à améliorer leur organisation. C’est l’effort de changement lui-même qui, chemin faisant, uniformise.",
           "Les auteurs appellent ce phénomène l’isomorphisme institutionnel : le fait que des organisations placées dans un même environnement finissent par adopter des structures et des pratiques semblables, indépendamment de leur efficacité propre. Le mot vient de la biologie, où il désigne des formes différentes qui ont convergé vers une apparence proche parce qu’elles occupent la même niche. Ici, la niche n’est pas un milieu naturel mais un ensemble de contraintes sociales que les trois sections suivantes détaillent."
         ]
       },
@@ -868,10 +868,10 @@ export const generatedDeepenings: Deepening[] = [
       }
     ],
     "limits": [
-      "La traduction française citée ici a été établie spécialement pour cette présentation : aucune traduction française publiée de l’article original de 1983 n’a été identifiée. Une traduction française existe pour un texte proche des mêmes auteurs, paru en 1997 dans une revue de science politique, mais elle ne se substitue pas mot pour mot à l’article américain original.",
-      "La définition précise que les auteurs donnent des trois mécanismes, page 150 de l’article original, n’est pas reproduite ici mot pour mot : le passage est trop long pour être cité sans en trahir un des trois termes par une coupe. Pour la formulation exacte des auteurs, il faut revenir à ces pages.",
-      "Une reprise de cet article, publiée en 1991 dans un ouvrage collectif dirigé par les deux mêmes auteurs, existe et pourrait comporter des précisions ou des nuances ajoutées après 1983. Elle n’a pas été examinée au-delà de son existence, et rien de ce qu’elle ajoute ou modifie n’est repris ici.",
-      "Deux textes académiques plus récents, qui font le point sur la façon dont cette idée a été reprise et discutée après 1983, dont un qui aborde la question d’un possible écart entre les structures affichées par une organisation et ce qu’elle fait réellement, n’ont été repérés que par leur notice : leur contenu propre n’est pas invoqué dans ce texte."
+      "La traduction française donnée plus haut a été faite pour l’occasion : il ne semble pas exister de traduction publiée de l’article de 1983. Un texte proche des mêmes auteurs a bien été traduit, paru en 1997 dans une revue de science politique, et il se lit avec profit, mais il ne se substitue pas mot pour mot à l’article américain.",
+      "La définition précise que les auteurs donnent des trois mécanismes, page 150 de l’article original, n’est pas reproduite plus haut mot pour mot : le passage est trop long pour être cité sans en trahir un des trois termes par une coupe. Pour la formulation exacte des auteurs, il faudra revenir à ces pages.",
+      "Les deux auteurs ont repris cet article en 1991, dans un ouvrage collectif qu’ils dirigeaient. Huit ans plus tard, ils ont pu y préciser, nuancer, corriger : ce qu’ils ont changé se voit en mettant les deux versions côte à côte, et c’est un exercice que ce qui précède ne fait pas.",
+      "Deux textes académiques plus récents font le point sur la façon dont cette idée a été reprise et discutée après 1983 ; l’un d’eux aborde une question que ce qui précède laisse entière, celle de l’écart entre les structures qu’une organisation affiche et ce qu’elle fait réellement. C’est par là qu’on continue, pour savoir ce que quarante ans ont fait à l’argument."
     ]
   },
   {
@@ -919,15 +919,15 @@ export const generatedDeepenings: Deepening[] = [
       {
         "title": "Un nom que l’auteur n’a pas choisi",
         "paragraphs": [
-          "Le nom sous lequel cette idée circule aujourd’hui n’est pas de Campbell. Dans son texte, il écrit « the following pessimistic laws (at least for the U.S. scene) », au pluriel, et il ne donne à ces lois aucun nom propre. Le singulier, le baptême et le statut de loi générale sont venus plus tard, par les travaux qui l’ont citée par la suite. Qui a le premier parlé d’une loi de Campbell, et à quelle date, n’est pas établi par les sources disponibles ici.",
+          "Le nom sous lequel cette idée circule aujourd’hui n’est pas de Campbell. Dans son texte, il écrit « the following pessimistic laws (at least for the U.S. scene) », au pluriel, et il ne donne à ces lois aucun nom propre. Le singulier, le baptême et le statut de loi générale sont venus plus tard, par les travaux qui l’ont citée par la suite. Qui a le premier parlé d’une loi de Campbell, et à quelle date, reste à retrouver dans ces travaux-là.",
           "Cette incertitude ne porte que sur le nom. Sur le fond, la paternité de l’idée elle-même n’est pas disputée : Campbell l’énonce à la première personne, « I come to the following pessimistic laws », sans la reprendre d’un auteur antérieur repéré dans son texte, et les travaux qu’il cite en exemple ne lui fournissent que des illustrations, jamais la formule."
         ]
       }
     ],
     "limits": [
-      "Qui a le premier employé l’expression « loi de Campbell », et à quelle date, n’est pas établi par les sources disponibles ici : le texte lu n’utilise jamais ce nom, et rien ne documente son apparition dans les travaux qui ont suivi.",
-      "Seule la republication de 2011 de l’article, parue dans une revue d’évaluation avec sa propre pagination, a été lue en entier. Le texte original de 1976, publié comme document de travail à Dartmouth, ainsi que sa reprise dans une revue d’évaluation de programmes en 1979, n’ont pas été consultés au-delà de leur existence : rien ne garantit que la phrase y soit formulée mot pour mot de la même manière, même si les différentes versions sont présentées comme un seul et même texte.",
-      "Le texte lu ne cite aucun auteur antérieur dont Campbell reprendrait explicitement l’idée : il l’énonce à la première personne, sans la relier à un précédent identifié. Cela n’établit pas pour autant qu’aucune formulation proche n’ait existé avant lui ; cela dit seulement que les sources disponibles ici n’en mentionnent pas."
+      "Qui a le premier employé l’expression « loi de Campbell », et à quelle date, reste ouvert : Campbell lui-même n’utilise jamais ce nom. Il faudrait suivre les travaux qui ont repris sa phrase pour voir où le baptême a eu lieu.",
+      "La phrase citée plus haut vient de la republication de 2011, parue dans une revue d’évaluation avec sa propre pagination. Le texte a d’abord existé comme document de travail à Dartmouth en 1976, puis dans une revue d’évaluation de programmes en 1979 ; les trois versions sont présentées comme un seul et même texte, et seule une lecture des trois dirait si la phrase y est écrite mot pour mot de la même manière.",
+      "Campbell énonce l’idée à la première personne, sans citer d’auteur antérieur dont il la reprendrait. Cela ne prouve pas qu’aucune formulation proche n’ait circulé avant lui : la question reste entière, et c’est en remontant la littérature des années soixante qu’on y répondrait."
     ]
   },
   {
@@ -974,10 +974,10 @@ export const generatedDeepenings: Deepening[] = [
       }
     ],
     "limits": [
-      "L’origine de la notion elle-même n’est pas établie ici. Le texte de 2003 ne revendique pas de l’avoir inventée : il la rattache à l’ergonomie francophone en général et ne cite comme antécédent qu’un texte de Douillet et Schweitzer, publié en 2002, qui aurait « suggéré cette piste de réflexion autour des marges de manœuvre sans toutefois aller plus loin ». Qui a le premier employé l’expression, et à quelle date, reste hors de portée des sources consultées ici.",
-      "Une thèse de 2004 du même premier auteur propose une généalogie plus large, en écrivant qu’« il n’existe pas réellement de définition établie de la notion de marge de manœuvre pour approcher les situations de travail » avant de citer plusieurs travaux antérieurs sur ce thème. Ces travaux n’ont pas été ouverts directement : ce qu’ils avancent n’est connu ici que par la façon dont cette thèse les rapporte, et ne peut pas être garanti au-delà.",
-      "Le lien entre la marge de manœuvre et l’idée plus large de régulation, telle que l’ergonomie francophone l’a développée par ailleurs, n’est pas discuté dans le texte de 2003 : aucun texte de référence sur la régulation n’y est cité ni examiné. Établir précisément ce lien demanderait de lire ces textes-là directement, ce qui n’a pas été fait pour ce texte.",
-      "La notion s’est visiblement transformée après 2003, avec une distinction ultérieure entre une marge de manœuvre propre à une situation donnée et des marges de manœuvre considérées au pluriel, une distinction absente du texte examiné ici. Les travaux qui portent cette évolution n’ont pas été consultés, et rien ne peut donc être dit sur ce qu’ils avancent."
+      "L’origine de la notion elle-même reste à établir. Le texte de 2003 ne revendique pas de l’avoir inventée : il la rattache à l’ergonomie francophone en général et ne cite comme antécédent qu’un texte de Douillet et Schweitzer, publié en 2002, qui aurait « suggéré cette piste de réflexion autour des marges de manœuvre sans toutefois aller plus loin ». C’est par ce texte de 2002 qu’il faudra commencer pour savoir qui a employé l’expression le premier.",
+      "Une thèse de 2004 du même premier auteur propose une généalogie plus large, en écrivant qu’« il n’existe pas réellement de définition établie de la notion de marge de manœuvre pour approcher les situations de travail » avant de citer plusieurs travaux antérieurs sur ce thème. Cette liste est une bibliographie toute faite : ce que chacun de ces travaux avance, on ne le saura qu’en les ouvrant l’un après l’autre.",
+      "Le lien entre la marge de manœuvre et l’idée plus large de régulation, que l’ergonomie francophone a développée par ailleurs, n’est discuté nulle part dans le texte de 2003, qui ne cite aucun texte de référence sur la régulation. Le rapprochement est tentant et il n’est pas fait plus haut : c’est en lisant les textes sur la régulation qu’on verra ce qu’il tient.",
+      "La notion s’est transformée après 2003 : une distinction apparaît plus tard entre une marge de manœuvre propre à une situation donnée et des marges de manœuvre au pluriel, absente du texte de 2003. Ce sont les travaux postérieurs qui portent cette évolution, et il faudra les lire pour voir ce que le pluriel a changé."
     ]
   },
   {
@@ -1027,9 +1027,9 @@ export const generatedDeepenings: Deepening[] = [
       }
     ],
     "limits": [
-      "Le texte dans lequel Charles Goodhart formule lui-même l’observation monétaire à laquelle son nom reste attaché n’a pas été consulté ici : seule la manière dont Hoskin la résume est disponible, ce qui interdit d’attribuer à Goodhart des termes qui ne seraient pas les siens.",
-      "Le chapitre de Hoskin, de son côté, n’a été lu que par extraits vérifiés un par un, non dans sa continuité. Ces passages permettent d’affirmer ce qu’ils affirment, mais pas de résumer l’argument d’ensemble du chapitre au-delà de ce qu’ils montrent.",
-      "La question de savoir qui, le premier, a employé l’expression « loi de Goodhart » n’est pas tranchée par les sources disponibles. Hoskin la présente comme une appellation déjà répandue plutôt que comme la sienne, sans qu’aucune occurrence imprimée antérieure à son texte de 1996 n’ait pu être retrouvée : l’antériorité reste ouverte dans les deux sens."
+      "L’observation monétaire à laquelle le nom de Goodhart reste attaché arrive ici par le résumé qu’en donne Hoskin, et non par le texte où Goodhart la formule lui-même. Ses termes exacts sont dans ce texte-là : c’est celui qu’il faut lire avant de lui prêter une phrase.",
+      "Du chapitre de Hoskin, ce qui précède retient des passages, pas la continuité de l’argument. Ce que le chapitre démontre d’un bout à l’autre, dans quel ordre et contre quoi, se lit d’une traite ; les extraits n’en donnent que les points d’appui.",
+      "Qui, le premier, a employé l’expression « loi de Goodhart » n’est pas tranché. Hoskin la présente en 1996 comme une appellation déjà répandue plutôt que comme la sienne, et aucune occurrence imprimée antérieure n’a refait surface jusqu’ici : la question attend celui qui remontera la littérature monétaire des années quatre-vingt."
     ]
   },
   {
@@ -1076,9 +1076,9 @@ export const generatedDeepenings: Deepening[] = [
       }
     ],
     "limits": [
-      "La citation placée en ouverture de ce texte renvoie à la version que l’auteur a lui-même déposée en ligne avant publication, et non à la mise en pages finale de la revue : la pagination donnée, page 16, est celle de ce manuscrit, pas celle de l’article imprimé. La version publiée n’a pu être consultée que par sa notice bibliographique, sans accès à son texte intégral ; on ne sait donc pas si la formulation a été retouchée entre le manuscrit et l’épreuve finale.",
-      "Le mot que Didier propose pour désigner cette prolifération de chiffres n’a pu être recherché que dans deux répertoires de publications scientifiques, qui n’en signalent aucun autre usage antérieur. Deux autres répertoires n’ont pas pu être interrogés faute d’accès : leur silence ne permet donc pas de conclure que le terme n’a jamais été employé ailleurs, seulement qu’aucune attestation antérieure n’a pu être trouvée dans les sources consultées.",
-      "Un mot proche, « statactivisme », qui désigne un usage plus militant des statistiques, n’apparaît nulle part dans le corps de ce texte : il ne figure que dans sa bibliographie, par renvoi à deux autres ouvrages du même auteur. Décrire cet article comme relevant de ce courant irait donc au-delà de ce que le texte lui-même établit."
+      "La citation placée en ouverture vient de la version que l’auteur a lui-même déposée en ligne avant publication, et non de la mise en pages finale de la revue : la pagination donnée, page 16, est celle de ce manuscrit. Entre un manuscrit et son épreuve, une formulation se retouche parfois ; l’article imprimé le dira, et lui seul.",
+      "Le mot que Didier propose pour désigner cette prolifération de chiffres ne se retrouve nulle part avant lui dans les deux répertoires de publications scientifiques où il a été cherché. Deux autres répertoires restent à interroger : affirmer que le terme est de lui suppose d’y avoir regardé aussi.",
+      "Un mot proche, « statactivisme », qui désigne un usage plus militant des statistiques, n’apparaît nulle part dans le corps de l’article : il ne figure que dans sa bibliographie, par renvoi à deux autres ouvrages du même auteur, qui sont l’endroit où ce courant se déclare. Ranger cet article dans ce courant irait au-delà de ce qu’il établit lui-même."
     ]
   },
   {
@@ -1133,10 +1133,10 @@ export const generatedDeepenings: Deepening[] = [
       }
     ],
     "limits": [
-      "Un texte de 1992, « From Sex Roles to Gendered Institutions », prolonge cette réflexion mais n’a été identifié ici que par sa notice bibliographique : son contenu ne peut pas être invoqué, et ce que l’autrice y reformule ou y ajoute par rapport à son texte de 1990 reste, pour ce texte, hors de portée.",
-      "Le texte de 2006 sur les inégalités de genre, de classe et de race dans les organisations n’a été consulté que de façon ciblée, non intégralement : ce qui en est dit ici s’arrête à ce que son titre annonce, et ne vaut pas pour le détail de son argumentation, qui reste hors de portée de ce texte.",
-      "Deux textes académiques plus récents, l’un sur les organisations genrées dans l’économie contemporaine, l’autre sur la façon dont la notion elle-même a été discutée depuis 1990, figurent parmi les sources disponibles sans que leur contenu ait été mobilisé ici : ils indiquent seulement que la discussion s’est poursuivie après le texte fondateur, sans que ce texte puisse en rendre compte.",
-      "La citation traduite en français provient d’une traduction réalisée pour ce texte et non publiée par ailleurs ; aucune traduction française publiée du texte de 1990 n’a pu être identifiée, et une lecture de l’original en anglais resterait nécessaire pour vérifier la nuance exacte de chaque terme, en particulier celui, central, de travailleur désincarné."
+      "Un texte de 1992, « From Sex Roles to Gendered Institutions », prolonge cette réflexion deux ans plus tard. Ce que l’autrice y reformule et ce qu’elle y ajoute par rapport à 1990 est dans ces pages : le titre annonce déjà un déplacement, et c’est la lecture qui vient tout de suite après celle du texte fondateur.",
+      "Du texte de 2006 sur les inégalités de genre, de classe et de race dans les organisations, ce qui précède ne retient guère plus que ce que son titre annonce. Comment l’autrice y fait tenir ensemble ces trois dimensions est précisément ce qui s’y démontre, et cela se lit en entier.",
+      "Deux textes plus récents prennent la suite : l’un sur les organisations genrées dans l’économie contemporaine, l’autre sur la façon dont la notion elle-même a été discutée depuis 1990. Ils disent ce que trente ans ont fait à l’argument, et ce qui précède s’arrête avant eux.",
+      "La citation est traduite pour l’occasion, et il ne semble pas exister de traduction française publiée du texte de 1990. Un terme y résiste plus que les autres, celui de travailleur désincarné : sa nuance exacte se joue dans l’anglais d’Acker, et c’est là qu’il faudra aller la chercher."
     ]
   },
   {
@@ -1177,16 +1177,16 @@ export const generatedDeepenings: Deepening[] = [
       {
         "title": "Un terme qui dépasse ce seul texte",
         "paragraphs": [
-          "L’expression ne naît pas dans ce seul texte. Dans une note, Jany-Catrice renvoie elle-même à un ouvrage paru la même année, où une partie de sa thèse est développée plus largement, sous le titre La performance totale : nouvel esprit du capitalisme ? Ce que cet ouvrage ajoute à l’argument ne peut pas être rapporté ici. Ce qui précède décrit donc ce que ce texte-là établit, non l’ensemble d’une réflexion dont il n’est, par l’indication de l’auteure elle-même, qu’une partie.",
+          "L’expression ne naît pas dans ce seul texte. Dans une note, Jany-Catrice renvoie elle-même à un ouvrage paru la même année, où une partie de sa thèse est développée plus largement, sous le titre La performance totale : nouvel esprit du capitalisme ? Ce que ce livre ajoute à l’argument, il faudra l’ouvrir pour le savoir. Ce qui précède décrit donc ce que l’article établit, non l’ensemble d’une réflexion dont il n’est, par l’indication de l’auteure elle-même, qu’une partie.",
           "Nommer ce régime garde pourtant une utilité propre, indépendante de ce que l’ouvrage ajoute par ailleurs. Un chiffre imposé, un doute partagé sur sa pertinence, un service jugé sans être resitué dans son contexte : pris séparément, ces traits pourraient sembler des dysfonctionnements isolés, propres à tel établissement ou à tel gestionnaire malhabile. En leur donnant un même nom, ce texte invite à les lire comme les symptômes cohérents d’un seul et même déplacement, celui qui fait de la mesure de la performance le langage commun de l’action publique."
         ]
       }
     ],
     "limits": [
-      "L’ouvrage de 2012, plus large que l’article et signalé par l’auteure elle-même comme portant une partie de la même thèse, n’a pu être consulté qu’à travers sa notice bibliographique : ni titre de chapitre, ni argument particulier, ni exemple qu’il développerait ne peuvent être rapportés ici. Ce qui précède se limite à ce que l’article publié en 2012-2013 établit par lui-même.",
-      "L’analyse que Christophe Dejours donne de la qualité totale en 2003 n’a pas été lue directement : elle n’est connue ici qu’à travers la façon dont Jany-Catrice la mobilise dans son propre texte. Le détail de son argumentation, les exemples sur lesquels elle s’appuie ou les nuances qu’elle comporte ne peuvent pas être restitués sans avoir ouvert ce texte lui-même.",
-      "L’article ne dit pas dans quels secteurs précis, à quelle échelle ni selon quel calendrier ce basculement vers la mesure des performances se serait généralisé : il expose un mouvement d’ensemble, pas un inventaire de cas par cas. Pour vérifier comment il se manifeste dans tel hôpital, telle agence ou telle administration locale en particulier, il faudrait un travail empirique que ce texte ne fournit pas lui-même.",
-      "Rien dans les sources disponibles ne permet d’affirmer que l’expression n’ait jamais été employée avant 2012, par quelqu’un d’autre, dans un sens voisin : l’absence de trace antérieure dans les recherches menées ne vaut pas preuve d’une première apparition absolue, seulement l’absence d’occurrence retrouvée jusqu’ici."
+      "L’auteure signale elle-même qu’un ouvrage de 2012, plus large que l’article, porte une partie de la même thèse. Ce qui précède s’en tient à l’article publié en 2012-2013 ; les chapitres, les exemples et la démonstration longue sont dans le livre, et c’est lui qui donne à la thèse toute son ampleur.",
+      "L’analyse que Christophe Dejours donne de la qualité totale en 2003 arrive ici par la façon dont Jany-Catrice la mobilise dans son propre texte. Son argumentation, ses exemples et ses nuances sont dans le sien : une reprise, si fidèle soit-elle, ne rend jamais le détail d’une démonstration.",
+      "L’article ne dit pas dans quels secteurs précis, à quelle échelle ni selon quel calendrier ce basculement vers la mesure des performances se serait généralisé : il expose un mouvement d’ensemble, pas un inventaire de cas par cas. Pour voir comment il se manifeste dans tel hôpital, telle agence ou telle administration locale, il faudra un travail empirique que l’article ne fournit pas lui-même.",
+      "Rien ne permet d’affirmer que l’expression n’ait jamais été employée avant 2012, par quelqu’un d’autre, dans un sens voisin. Aucune trace antérieure n’a refait surface jusqu’ici, ce qui n’est pas une preuve : la question reste ouverte pour qui voudra la creuser."
     ]
   },
   {
@@ -1233,10 +1233,10 @@ export const generatedDeepenings: Deepening[] = [
       }
     ],
     "limits": [
-      "Le texte consulté ici renvoie, dans une note, à un développement antérieur publié en 2007 dans un ouvrage collectif : rien n’indique si la distinction entre convenir et mesurer y était déjà formulée dans les mêmes termes, ce texte de 2007 n’ayant pas été consulté. Rien ne permet donc d’avancer 2008 comme la date à laquelle cette distinction aurait été formulée pour la première fois par l’auteur.",
-      "L’auteur rattache lui-même la notion de convention d’équivalence à des travaux antérieurs, l’un de 1984 sur les pratiques de laboratoire, l’autre de 1983 sur les conventions dans le monde du travail. Ces deux textes n’ont pas été consultés directement : on ne peut donc rien affirmer sur la manière dont ils construisent eux-mêmes cette notion, ni sur ce que l’auteur leur emprunte précisément au-delà du terme.",
-      "D’autres ouvrages du même auteur, portant également sur l’histoire et la sociologie de la statistique, n’ont pas été ouverts pour la préparation de ce texte. Rien n’est avancé ici sur la façon dont la distinction entre convenir et mesurer y serait reprise, précisée ou nuancée.",
-      "Le passage cité provient d’une édition électronique en français, consultée en ligne ; aucune traduction publiée n’a été consultée, et rien n’est établi ici quant à la manière dont cette distinction serait rendue dans une autre langue."
+      "Le texte renvoie, dans une note, à un développement antérieur publié en 2007 dans un ouvrage collectif. Si la distinction entre convenir et mesurer y était déjà formulée dans les mêmes termes, c’est ce texte de 2007 qui le dira, et lui seul : 2008 ne peut pas être avancé comme date de première formulation avant qu’on l’ait lu.",
+      "L’auteur rattache lui-même la notion de convention d’équivalence à des travaux antérieurs, l’un de 1984 sur les pratiques de laboratoire, l’autre de 1983 sur les conventions dans le monde du travail. Ce qu’il leur emprunte au juste, au-delà du terme, se voit en lisant ces deux textes : ce sont les deux racines de la notion, et il les nomme lui-même.",
+      "Le même auteur a écrit d’autres ouvrages sur l’histoire et la sociologie de la statistique. La distinction entre convenir et mesurer y est peut-être reprise, précisée ou nuancée ; c’est une œuvre entière, et ce qui précède n’en éclaire qu’un article.",
+      "Le passage cité vient d’une édition électronique en français, consultée en ligne. Comment cette distinction se rend dans une autre langue, ce que devient le couple convenir et mesurer une fois traduit, est une question qui se règle sur les éditions étrangères."
     ]
   },
   {
@@ -1283,10 +1283,10 @@ export const generatedDeepenings: Deepening[] = [
       }
     ],
     "limits": [
-      "L’article où Simon formalise pour la première fois ce modèle de choix, « A Behavioral Model of Rational Choice », publié en 1955, n’a été identifié que par sa notice : rien sur la façon dont il pose formellement le problème, sur les équations ou les hypothèses qu’il détaille, ne peut être avancé ici.",
-      "Le texte français le plus proche de l’exposé complet de Simon, la traduction de 1983 publiée sous le titre Administration et processus de décision, est resté lui aussi à l’état de notice. L’ouvrage original de 1947 dont il est la traduction n’a même pas de référence établie parmi les sources rassemblées pour cette entrée.",
-      "Un article retraçant l’histoire de la notion de rationalité limitée, signé par Matthias Klaes et Esther-Mirjam Sent, existe également, mais n’a pas non plus été ouvert au-delà de son résumé : la façon dont le concept a été discuté et transformé après 1978 n’est pas documentée ici.",
-      "Enfin, à l’endroit même où il présente la recherche interrompue au seuil de satisfaction, Simon range plusieurs autres façons de procéder sous une même rubrique, sans toutes les détailler de la même manière. Ce texte décrit celle qu’il privilégie explicitement lui-même ; les autres ne sont pas caractérisées par les sources actuellement disponibles."
+      "L’article où Simon formalise pour la première fois ce modèle de choix, « A Behavioral Model of Rational Choice », publié en 1955, n’apparaît plus haut que par son titre. C’est là qu’il pose formellement le problème, avec ses hypothèses et ses équations : la version rigoureuse de ce qui vient d’être raconté en mots est dans ces pages.",
+      "Le texte français le plus proche de l’exposé complet de Simon est la traduction de 1983 publiée sous le titre Administration et processus de décision. Elle donne en français ce que l’ouvrage de 1947 déploie sur un livre entier, et c’est par elle qu’on entrera dans Simon sans passer par l’anglais.",
+      "Un article de Matthias Klaes et Esther-Mirjam Sent retrace l’histoire de la notion de rationalité limitée elle-même. Ce que le concept est devenu après 1978, qui l’a tiré vers l’économie et qui vers la psychologie, s’y trouve raconté ; ce qui précède s’arrête à Simon.",
+      "À l’endroit même où il présente la recherche interrompue au seuil de satisfaction, Simon range plusieurs autres façons de procéder sous une même rubrique, sans toutes les détailler également. Ce qui précède décrit celle qu’il privilégie explicitement ; les autres sont dans son texte, à la même page, et attendent qu’on s’y arrête."
     ]
   },
   {
@@ -1336,9 +1336,9 @@ export const generatedDeepenings: Deepening[] = [
       }
     ],
     "limits": [
-      "Les deux auteurs ont republié leur réflexion sur les classements en 2021, dans l’introduction d’un ouvrage collectif consacré plus largement aux mondes du classement, coécrite avec deux autres chercheurs. Cette introduction n’a été identifiée ici que par sa notice bibliographique : elle existe, elle porte sur le même sujet, mais rien ne permet de dire si elle prolonge, nuance ou déplace le cadre présenté en 2007. L’affirmer irait au-delà de ce qui est établi.",
-      "La démonstration s’appuie sur un seul terrain, celui des facultés de droit américaines. Étendre les trois effets décrits ici à d’autres classements publics, dans d’autres pays ou d’autres secteurs, dépasse ce que les sources mobilisées ici permettent à elles seules d’établir.",
-      "La phrase d’ouverture est donnée dans une traduction non publiée, réalisée pour cette présentation. Pour restituer avec exactitude les nuances de la formulation originale en anglais, il faudrait revenir au texte source plutôt qu’à cette traduction."
+      "Les deux auteurs ont republié leur réflexion sur les classements en 2021, dans l’introduction d’un ouvrage collectif consacré plus largement aux mondes du classement, coécrite avec deux autres chercheurs. Quatorze ans après, le cadre a pu se déplacer, se nuancer, ou tenir tel quel : cette introduction est l’endroit où on le verra.",
+      "La démonstration s’appuie sur un seul terrain, celui des facultés de droit américaines. Étendre les trois effets décrits plus haut à d’autres classements publics, dans d’autres pays ou d’autres secteurs, reste une hypothèse tant qu’on ne l’a pas éprouvée sur ces terrains-là.",
+      "La phrase d’ouverture est donnée dans une traduction non publiée, faite pour l’occasion. Les nuances de la formulation originale se jouent dans l’anglais des auteurs : c’est là qu’il faudra aller les lire."
     ]
   },
   {
@@ -1387,11 +1387,11 @@ export const generatedDeepenings: Deepening[] = [
       }
     ],
     "limits": [
-      "L’ouvrage où Reynaud développe le plus complètement cette théorie, Les règles du jeu, paru chez Armand Colin en 1989, n’a pas été consulté pour écrire ce texte : aucune référence stable, ni DOI, ni ISBN, ni adresse permettant d’en vérifier le contenu, n’a pu être trouvée, et rien de ce qui précède ne s’appuie sur cet ouvrage. Tout ce qui est présenté ici repose sur l’article de 1988.",
-      "Un seul passage exact de cet article de 1988 est cité dans ce texte, celui qui porte sur l’ingéniosité méconnue par les dirigeants. Le reste de l’exposé reproduit l’opposition entre les deux régulations telle qu’elle est formulée par ailleurs, sans qu’un second passage vienne l’appuyer mot pour mot : une lecture complète de l’article permettrait de vérifier plus précisément comment Reynaud construit cette opposition, étape par étape.",
-      "L’article de 1979 qui introduit la régulation conjointe n’est mobilisé ici que par son titre. Ce que cet article démontre réellement, la manière dont il construit sa théorie et les exemples sur lesquels il s’appuie n’ont pas été repris ici : ce qui est avancé au sujet de la régulation conjointe reste une interprétation prudente de ce que le titre annonce, non un résumé de son contenu.",
-      "Trois autres textes attestent que cette théorie a été discutée après Reynaud, notamment un ouvrage collectif dirigé par Gilbert de Terssac et une traduction anglaise de l’article de 1979 parue dans une revue de relations industrielles. Leur existence est établie, pas leur contenu : aucune citation ni aucune analyse tirée de ces trois textes ne figure dans ce qui précède.",
-      "L’opposition entre les deux régulations est présentée ici comme Reynaud la formule à propos d’un lieu de travail. Rien dans les sources disponibles ne permet d’en étendre la portée à d’autres types de collectifs sans reprendre l’article original point par point ; une telle extension resterait, pour l’instant, une hypothèse plutôt qu’une conclusion établie."
+      "L’ouvrage où Reynaud développe le plus complètement cette théorie, Les règles du jeu, paru chez Armand Colin en 1989, ne soutient rien de ce qui précède : tout y repose sur l’article de 1988. C’est pourtant dans ce livre que la théorie prend sa forme entière, et c’est lui qu’il faudra lire pour la voir déployée.",
+      "Un seul passage exact de l’article de 1988 est cité plus haut, celui qui porte sur l’ingéniosité méconnue par les dirigeants. Le reste reproduit l’opposition entre les deux régulations telle qu’elle est formulée par ailleurs, sans qu’un second passage vienne l’appuyer mot pour mot : lire l’article en entier montrerait comment Reynaud construit cette opposition, étape par étape.",
+      "L’article de 1979 qui introduit la régulation conjointe n’apparaît plus haut que par son titre, et ce qui en est dit reste une lecture prudente de ce que ce titre annonce. Sa démonstration, ses exemples, la manière dont il bâtit la théorie, sont dans l’article : c’est le texte fondateur de la notion, et il se lit pour lui-même.",
+      "Trois autres textes attestent que cette théorie a été discutée après Reynaud, notamment un ouvrage collectif dirigé par Gilbert de Terssac et une traduction anglaise de l’article de 1979 parue dans une revue de relations industrielles. C’est là que se trouvent les objections et les reprises, dont ce qui précède ne rapporte rien.",
+      "L’opposition entre les deux régulations est présentée plus haut comme Reynaud la formule à propos d’un lieu de travail. L’étendre à d’autres types de collectifs, une association, une famille, un groupe en ligne, demande de reprendre l’article point par point : tant que ce travail n’est pas fait, l’extension reste une hypothèse plutôt qu’une conclusion."
     ]
   },
   {
@@ -1445,10 +1445,10 @@ export const generatedDeepenings: Deepening[] = [
       }
     ],
     "limits": [
-      "L’ouvrage écrit avec Xavier Cuny en 1977, où ce schéma à deux boucles est présenté, n’a pas été consulté directement : nous n’en connaissons que le titre, les deux éditions et leur pagination par leur notice de bibliothèque. La page où le schéma paraîtrait, selon les articles qui le citent, ne peut donc pas être décrite ici de première main.",
-      "Qui a le premier employé l’expression « double régulation » pour nommer ce schéma, et à quelle date, n’est établi par aucune des sources réunies ici : le mot n’apparaît pas dans l’article de 2006, et son origine exacte reste à retrouver dans la littérature qui a suivi.",
-      "Les travaux sur lesquels Leplat lui-même s’appuie, ceux de Jean-Marie Faverge dans les années 1960 et 1970, ceux du spécialiste d’automatique Paul Naslin en 1958, ainsi que les états ultérieurs du modèle publiés par Leplat en 1997, 2000 et 2008, ne sont connus ici qu’à travers la façon dont l’article de 2006 les rapporte : aucun de ces textes n’a été lu directement.",
-      "Une édition paginée de cet article existe, puisqu’un travail de 2024 cite une page précise ; elle n’a pas pu être ouverte ici, et la citation retenue dans ce texte s’appuie donc sur un repère de paragraphe plutôt que sur un numéro de page."
+      "L’ouvrage écrit avec Xavier Cuny en 1977, où ce schéma à deux boucles est présenté, n’apparaît plus haut que par son titre, ses deux éditions et leur pagination. La page où le schéma figure, selon les articles qui le citent, ne se décrit de première main qu’en ouvrant ce livre : c’est là que se trouve le dessin d’origine.",
+      "Qui a le premier employé l’expression « double régulation » pour nommer ce schéma, et à quelle date, reste à retrouver : le mot n’apparaît pas dans l’article de 2006, et c’est dans la littérature qui a suivi qu’il a pris ce nom.",
+      "Les travaux sur lesquels Leplat lui-même s’appuie, ceux de Jean-Marie Faverge dans les années 1960 et 1970, ceux du spécialiste d’automatique Paul Naslin en 1958, ainsi que les états ultérieurs du modèle que Leplat publie en 1997, 2000 et 2008, arrivent ici par la façon dont l’article de 2006 les rapporte. Le modèle a une histoire de cinquante ans, et elle est écrite dans ces textes.",
+      "Une édition paginée de cet article existe, puisqu’un travail de 2024 en cite une page précise. La citation retenue plus haut s’appuie sur un repère de paragraphe ; qui veut la référence exacte la relèvera sur cette édition."
     ]
   },
   {
@@ -1502,10 +1502,10 @@ export const generatedDeepenings: Deepening[] = [
       }
     ],
     "limits": [
-      "Une version préliminaire de ce travail, publiée en 1996 sous la seule signature de l’autrice et citée par elle comme telle, n’a pas été consultée : il n’est donc pas possible de dire ce que le texte de 1999 reprend, précise ou modifie par rapport à cette version antérieure.",
-      "Un ouvrage collectif contemporain, où l’autrice a publié sur le même terrain, n’a pas non plus été ouvert : son existence peut être mentionnée comme travail parallèle, mais rien de son contenu ne peut être invoqué ici.",
-      "Les enquêtes de terrain évoquées à l’appui de ce bilan, notamment la comparaison portant sur les paires de jardiniers et celle portant sur les préposés et préposées aux bénéficiaires, sont elles-mêmes issues de publications antérieures de l’équipe de l’autrice qui n’ont pas été consultées pour ce texte. Ce qui est repris ici est ce que l’article de 1999 en rapporte, non les données originales de ces études.",
-      "Un entretien avec l’autrice publié en 2009 et un article de 2016 sur la prise en compte du sexe dans l’intervention ergonomique n’ont été consultés que partiellement. Au-delà de la fondation du groupe de recherche en 1993, évoquée dans l’entretien, et du choix du verbe « peuvent » que reprend l’article de 2016 pour qualifier la variation des tâches selon le sexe, leur contenu ne peut pas être invoqué ici."
+      "Une version préliminaire de ce travail, publiée en 1996 sous la seule signature de l’autrice et citée par elle comme telle, dit ce que le texte de 1999 a repris, précisé ou modifié. La comparaison des deux versions est instructive, et elle demande de lire la première.",
+      "L’autrice a publié sur le même terrain dans un ouvrage collectif contemporain. Ce travail parallèle existe, et ce qu’il apporte de plus ne se saura qu’en l’ouvrant.",
+      "Les enquêtes de terrain évoquées à l’appui de ce bilan, notamment la comparaison portant sur les paires de jardiniers et celle portant sur les préposés et préposées aux bénéficiaires, viennent de publications antérieures de l’équipe de l’autrice. Ce qui précède en reprend le résumé qu’en donne l’article de 1999, pas les données : les chiffres, les protocoles et les cas sont dans ces études-là.",
+      "Un entretien avec l’autrice publié en 2009 et un article de 2016 sur la prise en compte du sexe dans l’intervention ergonomique ne servent plus haut que sur deux points : la fondation du groupe de recherche en 1993, et le choix du verbe « peuvent » que reprend l’article de 2016 pour qualifier la variation des tâches selon le sexe. Tout le reste de ces deux textes est à lire."
     ]
   },
   {
@@ -1552,9 +1552,9 @@ export const generatedDeepenings: Deepening[] = [
       }
     ],
     "limits": [
-      "Le texte examiné ici est le rapport technique de mars 1962, dans la pagination duquel se situent la définition, les exemples et les citations qui précèdent. Une version révisée en a paru l’année suivante dans un ouvrage collectif de plus grande diffusion ; ce texte-là n’a pas été rouvert pour cette synthèse, et rien ne permet d’assurer que la numérotation des définitions ou des exemples y soit restée identique.",
-      "Le rapport de 1962 renvoie lui-même, pour la construction d’un langage formalisé autour de cette question, à un article que Patrick Suppes avait publié seul en 1959. Cet article n’a pas pu être consulté : l’exemplaire disponible en ligne était fermé à la recherche en texte intégral au moment de cette rédaction. Il n’est donc pas possible de dire si l’idée développée ici apparaissait déjà, sous une forme voisine, dans ce texte antérieur.",
-      "La manière dont ce critère a ensuite été reçu, discuté ou contesté par d’autres chercheurs en théorie de la mesure n’a pas non plus été examinée : seul le texte de 1962 a été rouvert pour cette synthèse, et aucune littérature ultérieure sur le sujet n’a été vérifiée directement."
+      "Le texte examiné plus haut est le rapport technique de mars 1962, dans la pagination duquel se situent la définition, les exemples et les citations donnés. Une version révisée a paru l’année suivante dans un ouvrage collectif de plus grande diffusion, et c’est celle que la plupart des lecteurs rencontreront : rien ne garantit que la numérotation des définitions ou des exemples y soit restée identique.",
+      "Le rapport de 1962 renvoie lui-même, pour la construction d’un langage formalisé autour de cette question, à un article que Patrick Suppes avait publié seul en 1959. Si l’idée développée plus haut y apparaissait déjà sous une forme voisine, c’est cet article qui le dira : il est le texte à remonter pour qui veut la préhistoire du critère.",
+      "Comment ce critère a ensuite été reçu, discuté ou contesté par d’autres chercheurs en théorie de la mesure ne figure pas plus haut : ce qui précède s’arrête au texte de 1962. La discussion qui a suivi forme une littérature à part, et elle se lit chez ceux qui l’ont menée."
     ]
   },
   {
@@ -1596,7 +1596,7 @@ export const generatedDeepenings: Deepening[] = [
         "title": "Une démarche mise au point à plusieurs",
         "paragraphs": [
           "L’article est signé par François Daniellou seul, mais il ne présente pas cette façon de simuler comme sa trouvaille personnelle. Lorsqu’il faut désigner l’origine de la démarche qui associe les futurs occupants d’un poste à sa conception tout au long d’un projet, l’auteur renvoie à des travaux menés avec d’autres chercheurs, Garrigou, Kerguelen et Laville d’un côté, Carballeda et Ruaud de l’autre, ainsi qu’à un ouvrage distinct sur les propriétés des supports de simulation. Il inscrit donc explicitement cette pratique dans une élaboration collective, sans s’en attribuer la paternité.",
-          "Les sources actuellement disponibles ne permettent pas d’aller plus loin dans cette histoire : ces travaux antérieurs n’ont pas pu être consultés, et on ne peut donc pas dire avec précision ce que chacun y a apporté. Ce qu’on peut affirmer, c’est seulement que la démarche décrite en 2007 s’appuie sur un travail plus ancien et partagé, pas qu’elle aurait un auteur unique."
+          "Ce que chacun de ces travaux antérieurs y a apporté, il faudra les lire pour le dire avec précision. Ce qui est sûr, et qui suffit ici, c’est que la démarche décrite en 2007 s’appuie sur un travail plus ancien et partagé, et qu’elle n’a pas d’auteur unique."
         ]
       },
       {
@@ -1608,9 +1608,9 @@ export const generatedDeepenings: Deepening[] = [
       }
     ],
     "limits": [
-      "Les publications auxquelles Daniellou renvoie pour situer l’origine de cette façon de simuler, associée aux futurs occupants du poste tout au long d’un projet, n’ont pas pu être ouvertes : ni l’article coécrit avec Garrigou, Kerguelen et Laville en 1990, ni celui coécrit avec Garrigou, Carballeda et Ruaud en 1995, ni l’ouvrage de Maline de 1994 sur les propriétés des supports de simulation. On ne peut donc rien dire de leur contenu propre, ni établir avec précision ce que chaque auteur y a apporté : seul le renvoi que Daniellou en fait en 2007 est disponible ici.",
-      "La formule « activité future probable », que l’on rencontre parfois associée à cette démarche, n’apparaît nulle part dans l’article de 2007 : celui-ci écrit « l’activité future possible ». Elle figure en revanche dans un chapitre cosigné à trois, en 2013, par Barcellini, Van Belleghem et Daniellou, qui parle de « la conduite de simulations du travail permettant de se projeter dans l’activité future probable ». Ce chapitre n’a pas été ouvert au-delà de ce repérage : rien ne permet d’attribuer cette formule à Daniellou seul, ni de dater précisément son entrée dans le vocabulaire du champ.",
-      "Comprendre le travail pour le transformer, l’ouvrage cosigné par Daniellou le plus souvent cité comme porte d’entrée sur ce sujet en ergonomie francophone, n’a pas pu être consulté en ligne. Il n’est donc pas possible de dire s’il reformule ce que l’article de 2007 pose plus brièvement, ni de vérifier si la formule « activité future probable » s’y trouve déjà."
+      "Daniellou renvoie, pour situer l’origine de cette façon de simuler avec les futurs occupants du poste, à trois publications : un article coécrit avec Garrigou, Kerguelen et Laville en 1990, un autre coécrit avec Garrigou, Carballeda et Ruaud en 1995, et l’ouvrage de Maline de 1994 sur les propriétés des supports de simulation. Ce que chacun y a apporté est écrit dans ces textes, et c’est là qu’il faudra le chercher.",
+      "La formule « activité future probable », que l’on rencontre parfois associée à cette démarche, n’apparaît nulle part dans l’article de 2007 : celui-ci écrit « l’activité future possible ». Elle figure en revanche dans un chapitre cosigné à trois, en 2013, par Barcellini, Van Belleghem et Daniellou, qui parle de « la conduite de simulations du travail permettant de se projeter dans l’activité future probable ». Quand le mot a changé, et sous quelle plume, se lit dans ce chapitre.",
+      "Comprendre le travail pour le transformer, l’ouvrage cosigné par Daniellou le plus souvent cité comme porte d’entrée sur ce sujet en ergonomie francophone, ne circule pas librement en ligne. C’est pourtant le livre qui reprend en long ce que l’article de 2007 pose en bref, et le seul endroit où vérifier si la formule « activité future probable » s’y trouve déjà."
     ]
   },
   {
@@ -1638,7 +1638,7 @@ export const generatedDeepenings: Deepening[] = [
       {
         "title": "D’où vient cette distinction",
         "paragraphs": [
-          "Caroly et Weill-Fassina posent cette distinction en 2007, dans leur propre voix, sans indiquer qu’elles l’empruntent à quelqu’un. Elles ne l’ont pourtant pas inventée ce jour-là. Sandrine Caroly avait déjà signé, avec Yves Clot, un article dont le titre est très exactement cette distinction : « Du travail collectif au collectif de travail ». Le titre, l’introduction et la question qui ouvre cet article suffisent à établir que la distinction y était déjà posée ; les définitions précises que l’article en donne ensuite n’ont pas pu être vérifiées ici.",
+          "Caroly et Weill-Fassina posent cette distinction en 2007, dans leur propre voix, sans indiquer qu’elles l’empruntent à quelqu’un. Elles ne l’ont pourtant pas inventée ce jour-là. Sandrine Caroly avait déjà signé, avec Yves Clot, un article dont le titre est très exactement cette distinction : « Du travail collectif au collectif de travail ». Le titre, l’introduction et la question qui ouvre cet article suffisent à établir que la distinction y était déjà posée ; les définitions précises qu’il en donne ensuite, il faudra le lire pour les connaître.",
           "La notion de collectif de travail, de son côté, est plus ancienne encore. Annie Weill-Fassina a codirigé, avec Tahar Hakim Benchekroun, un ouvrage intitulé Le travail collectif, publié en 2000 et devenu un texte de référence en ergonomie francophone. Ce que l’article de 2007 apporte n’est donc pas la distinction elle-même, mais sa mise en forme la plus courte et la plus citée : deux phrases qui tiennent en une poignée de mots ce que d’autres textes avaient développé plus longuement."
         ]
       },
@@ -1658,9 +1658,9 @@ export const generatedDeepenings: Deepening[] = [
       }
     ],
     "limits": [
-      "L’article de Sandrine Caroly et Yves Clot, « Du travail collectif au collectif de travail », publié en 2004, n’a été consulté que sur sa première page : le titre, l’introduction et la question qui ouvre l’article établissent que la distinction y était déjà posée, mais les définitions précises qu’il en donne ensuite ne sont pas connues ici et ne doivent pas être présumées identiques à celles de 2007.",
-      "Le texte que Sandrine Caroly a consacré en 2016 à l’entrée « Collectif de travail » dans un dictionnaire spécialisé, sans doute son texte le plus directement définitionnel sur ce terme, n’a pas été consulté, non plus que l’ouvrage de Gilbert de Terssac, Le travail : une activité collective, publié en 2002 et qui fait référence sur cette question, ni les deux volumes publiés chez Octarès sur le travail collectif.",
-      "Établir avec précision la chronologie complète des textes qui ont précédé et préparé la distinction de 2007, et la part exacte que chacune des deux autrices y a prise, demanderait de revenir à ces textes non consultés plutôt qu’à la seule formulation courte qui les résume."
+      "L’article de Sandrine Caroly et Yves Clot, « Du travail collectif au collectif de travail », publié en 2004, porte la distinction dans son titre même, et son introduction établit qu’elle y était déjà posée. Les définitions qu’il en donne ensuite ne peuvent pas être présumées identiques à celles de 2007 : c’est le premier texte à ouvrir pour voir d’où vient le couple.",
+      "Sandrine Caroly a consacré en 2016 une entrée de dictionnaire spécialisé au terme « Collectif de travail », sans doute son texte le plus directement définitionnel sur la question. À côté, l’ouvrage de Gilbert de Terssac, Le travail : une activité collective, publié en 2002, et les deux volumes parus chez Octarès sur le travail collectif font référence sur ce sujet. Ce sont les lectures qui prolongent ce qui précède.",
+      "Établir la chronologie complète des textes qui ont précédé et préparé la distinction de 2007, et la part exacte que chacune des deux autrices y a prise, demande de revenir à ces textes plutôt qu’à la formulation courte qui les résume."
     ]
   },
   {
@@ -1714,10 +1714,10 @@ export const generatedDeepenings: Deepening[] = [
       }
     ],
     "limits": [
-      "L’ouvrage que Crozier et Friedberg publient ensemble en 1977 n’a été consulté ici que par son intitulé. On sait qu’il porte sur les contraintes de l’action collective et que l’idée y est reprise sous une forme conjointe ; la manière précise dont il la formule n’a pas été vérifiée directement.",
-      "L’article de sociologie des organisations paru en 1971 dans une revue américaine n’a lui aussi été consulté que par sa notice. Son titre indique qu’il porte sur le pouvoir à l’intérieur des organisations, mais son argument ne peut pas être discuté à partir des sources disponibles ici.",
-      "L’article de 1966, où l’expression réapparaît sous la seule signature de Michel Crozier, n’a été consulté que partiellement : que le terme y figure est établi, l’argumentation qui l’entoure à cet endroit ne l’est pas entièrement.",
-      "Il n’est pas établi que Crozier soit le premier à employer une expression de ce type : un article d’Alain Touraine, paru en 1964 dans la même revue, emploie une formulation proche et lui est antérieur, sans que cela ne change l’attribution retenue ici, qui n’affirme aucune antériorité."
+      "L’ouvrage que Crozier et Friedberg publient ensemble en 1977 n’apparaît plus haut que par son intitulé. On sait qu’il porte sur les contraintes de l’action collective et que l’idée y est reprise sous une forme conjointe ; la manière précise dont les deux auteurs la formulent ensemble est dans ce livre, qui est aussi la plus lue de leurs références.",
+      "L’article de sociologie des organisations paru en 1971 dans une revue américaine n’apparaît lui aussi que par sa notice. Son titre indique qu’il porte sur le pouvoir à l’intérieur des organisations : ce qu’il en démontre se lit dans ses pages, pas dans ce qui précède.",
+      "L’article de 1966, où l’expression réapparaît sous la seule signature de Michel Crozier, n’a été parcouru que par endroits : que le terme y figure est acquis, l’argumentation qui l’entoure à cet endroit reste à lire.",
+      "Il n’est pas établi que Crozier soit le premier à employer une expression de ce type : un article d’Alain Touraine, paru en 1964 dans la même revue, emploie une formulation proche et lui est antérieur, sans que cela change l’attribution retenue plus haut, qui n’affirme aucune antériorité. Qui veut trancher lira les deux articles l’un à côté de l’autre."
     ]
   }
 ];

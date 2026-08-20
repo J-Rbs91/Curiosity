@@ -32,7 +32,7 @@ function approfondissement(overrides = {}) {
       { title: "Ce que le concept ne prétend pas être", paragraphs: [paragraphe(115), paragraphe(115)] },
     ],
     limits: [
-      "L’article de 1955 n’a été consulté que par sa notice : il établit son existence, rien de son contenu.",
+      "L’article de 1955 dit en propres termes ce qui précède le résume : il faudra l’ouvrir pour les lire.",
       paragraphe(40, "La traduction affichée est interne et non publiée, ce que le texte ne peut pas dépasser"),
     ],
     ...overrides,
@@ -163,8 +163,8 @@ describe("validateDeepening — invisibilité du dispositif", () => {
   it("laisse dire la même chose en parlant de l’auteur et des sources", () => {
     const fiche = approfondissement({
       limits: [
-        "L’article de 1955 n’a pas été consulté au-delà de sa notice : son contenu ne peut pas être invoqué ici.",
-        "Pour attribuer précisément cette distinction à l’auteur, il faudrait revenir au texte original.",
+        "Ce que l’article de 1955 avance en propre, il faudra l’ouvrir pour le savoir : rien ici n’en tient lieu.",
+        "Pour attribuer précisément cette distinction à l’auteur, il faudra revenir au texte original.",
       ],
     });
     expect(validateDeepening(fiche, { conceptIds: CARTES })).toEqual([]);
@@ -193,9 +193,49 @@ describe("validateDeepening — la frontière documentaire", () => {
   it("accepte une limite qui nomme ce qui manque", () => {
     const fiche = approfondissement({
       limits: [
-        "L’ouvrage de 1955 n’a été consulté que par sa notice de bibliothèque : rien de son contenu n’est établi ici.",
+        "L’ouvrage de 1955 porte la formulation d’origine, et c’est le premier livre à ouvrir pour la lire.",
       ],
     });
+    expect(validateDeepening(fiche, { conceptIds: CARTES })).toEqual([]);
+  });
+
+  it("refuse un ouvrage déclaré non consulté", () => {
+    // Le défaut ne nomme aucune structure interne, et raconte pourtant la fabrication du
+    // texte : le lecteur ouvrait un concept, il tombe sur une recherche qui n'a pas abouti.
+    const fiche = approfondissement({
+      limits: [
+        "L’ouvrage de 1955 n’a pas été consulté directement : rien de son contenu ne peut être rapporté.",
+      ],
+    });
+    expect(validateDeepening(fiche, { conceptIds: CARTES }).join()).toMatch(
+      /déclaré non consulté/
+    );
+  });
+
+  it("refuse « il faudrait pouvoir », accepte « il faudra »", () => {
+    const conditionnel = approfondissement({
+      limits: [
+        "Pour établir en quels termes exacts ce texte pose la distinction, il faudrait pouvoir l’ouvrir.",
+      ],
+    });
+    expect(validateDeepening(conditionnel, { conceptIds: CARTES }).join()).toMatch(
+      /il faudrait pouvoir/
+    );
+
+    const futur = approfondissement({
+      limits: [
+        "Pour établir en quels termes exacts ce texte pose la distinction, il faudra le lire en entier.",
+      ],
+    });
+    expect(validateDeepening(futur, { conceptIds: CARTES })).toEqual([]);
+  });
+
+  it("n’attrape pas un passif qui décrit le monde plutôt qu’une bibliographie", () => {
+    // « le code-barre n'a pas été lu du premier coup » parle d'une caisse de supermarché, et
+    // « articles » y désigne des courses. Sans le complément d'étendue, le passif est innocent.
+    const fiche = approfondissement();
+    fiche.lead[0] =
+      `${paragraphe(95)} Elle scanne des articles : si le code-barre n’a pas été lu du premier coup, elle recommence.`;
     expect(validateDeepening(fiche, { conceptIds: CARTES })).toEqual([]);
   });
 

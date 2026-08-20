@@ -59,7 +59,7 @@ presque toujours un approfondissement dont l'auteur n'a pas lu les notes.
 Un JSON conforme à `corpus/schema/deepening.schema.json` : `lead`, `sections`, `limits`. La
 forme, les volumes et les interdits sont dans le protocole.
 
-**Les deux défauts qui ont fait refaire un lot entier**, à relire avant d'écrire une ligne :
+**Les trois défauts qui ont fait refaire un lot entier**, à relire avant d'écrire une ligne :
 
 1. **Le dispositif exhibé.** « Le dossier porte l'énoncé », « la carte n'a gardé que la
    première proposition », « ce que le corpus établit ». Le lecteur ne sait pas qu'une carte
@@ -69,6 +69,14 @@ forme, les volumes et les interdits sont dans le protocole.
    te vient tout seul à la première phrase. C'est exactement ce qu'il ne faut pas : le `lead`
    doit poser le problème auquel le concept répond avec des mots courants, si possible une
    situation concrète, et aucun terme technique qui ne soit expliqué sur-le-champ.
+
+3. **La limite racontée de ton côté.** « Cet ouvrage n'a pas pu être consulté », « il faudrait
+   pouvoir l'ouvrir », « cela reste hors de portée de ce texte ». Tu y racontes ta propre
+   recherche, et le lecteur n'a rien demandé de tel. Retourne la phrase vers lui : un livre
+   non lu n'est pas un manque dans ta préparation, c'est un livre qui contient encore quelque
+   chose. Dis ce qu'il détient d'irremplaçable, puis dis qu'il faudra le lire. « Pour établir
+   en quels termes exacts ce texte pose la distinction, il faudra le lire. » La limite est
+   intacte, elle est devenue une raison d'aller au texte. La projection refuse l'autre forme.
 
 Deux autres, plus faciles à éviter : un titre qui annonce un palier (« Pour aller plus loin »)
 plutôt que de nommer son sujet, et le tiret cadratin, interdit partout.
@@ -87,7 +95,7 @@ s'écrivent en parallèle, un agent par carte : projeter depuis ton agent écras
 généré pendant que les autres écrivent encore. La projection est faite une fois, à la fin, par
 qui t'a lancé.
 
-Puis relis les sept questions de contrôle du protocole, une par une, sur ton propre texte.
+Puis relis les neuf questions de contrôle du protocole, une par une, sur ton propre texte.
 
 ## Rends compte ainsi
 
