@@ -18,7 +18,9 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Yves Clot",
     "hookQuestion": "Ce que vous avez fait aujourd'hui dit-il tout ce que votre travail a été ?",
     "shortExplanation": "Ce qui se fait n'épuise pas le travail : le réel de l'activité a un volume dont l'activité réalisée n'est que la surface, et c'est lui que l'analyse cherche à ouvrir.",
-    "authors": [],
+    "authors": [
+      "clot"
+    ],
     "themes": [
       "activite-empechee-et-metier"
     ],
@@ -56,7 +58,10 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "André Ombredane, Jean-Marie Faverge",
     "hookQuestion": "Décrire un travail élément par élément : que reste-t-il de ce qui s'y fait ?",
     "shortExplanation": "Décomposer le travail en éléments brise les structures dont il est fait : l'inventaire des fragments ne rend plus compte du comportement réel.",
-    "authors": [],
+    "authors": [
+      "ombredane",
+      "faverge"
+    ],
     "themes": [
       "tache-et-activite"
     ],
@@ -100,7 +105,9 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Charles E. Billings",
     "hookQuestion": "À mesure que la machine s'interpose, que reste-t-il au pilote de son vol ?",
     "shortExplanation": "Complexité, couplage, autonomie, rétroaction insuffisante tendent à éloigner le pilote des détails : il peut s'y impliquer moins et perdre la trace de l'état du système.",
-    "authors": [],
+    "authors": [
+      "billings"
+    ],
     "themes": [
       "automatisation-et-conception-cognitive"
     ],
@@ -150,7 +157,9 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Pierre Rabardel",
     "hookQuestion": "Se servir d'un outil pour ce qu'il n'est pas : erreur, ou travail de conception ?",
     "shortExplanation": "Utiliser un outil à la place d'un autre passe pour un détournement à corriger. Rabardel y voit l'indice que l'utilisateur participe à la conception des usages.",
-    "authors": [],
+    "authors": [
+      "rabardel"
+    ],
     "themes": [
       "activite-instrumentee-et-conception"
     ],
@@ -182,7 +191,10 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Kim J. Vicente, Jens Rasmussen",
     "hookQuestion": "Une interface peut-elle laisser agir par réflexe sans interdire de raisonner ?",
     "shortExplanation": "Concevoir l'interface de façon à ne pas forcer le contrôle cognitif à un niveau plus élevé que la tâche ne l'exige, tout en soutenant chacun des trois niveaux.",
-    "authors": [],
+    "authors": [
+      "vicente",
+      "rasmussen"
+    ],
     "themes": [
       "automatisation-et-conception-cognitive"
     ],
@@ -215,7 +227,9 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Pascal Béguin",
     "hookQuestion": "Une machine décide-t-elle de votre façon de travailler avant que vous y touchiez ?",
     "shortExplanation": "Tout artefact cristallise un modèle de son utilisateur et de son activité. Ce modèle agit avant tout usage : au concepteur de connaître le travail réel avant de décider.",
-    "authors": [],
+    "authors": [
+      "beguin"
+    ],
     "themes": [
       "activite-instrumentee-et-conception"
     ],
@@ -247,7 +261,9 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Mica R. Endsley",
     "hookQuestion": "Percevoir, comprendre, anticiper : ces trois niveaux décrivent-ils un état réel ?",
     "shortExplanation": "Percevoir les éléments de la situation, comprendre leur signification, projeter leur état à court terme : trois niveaux, en amont de la décision et distincts d'elle.",
-    "authors": [],
+    "authors": [
+      "endsley"
+    ],
     "themes": [
       "decision-et-conscience-de-la-situation"
     ],
@@ -293,7 +309,11 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Thomas B. Sheridan, William L. Verplank, Thurston L. Brooks",
     "hookQuestion": "Entre tout faire soi-même et laisser faire la machine, combien de positions ?",
     "shortExplanation": "Une machine décide seule sur de courtes périodes ; la personne planifie, surveille, reprend la main par intermittence. Le rapport en ordonne dix degrés d'automatisation.",
-    "authors": [],
+    "authors": [
+      "sheridan",
+      "verplank",
+      "brooks"
+    ],
     "themes": [
       "automatisation-et-conception-cognitive"
     ],
@@ -332,7 +352,9 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Yves Schwartz",
     "hookQuestion": "Travailler, est-ce appliquer des normes ou les rediscuter à chaque fois ?",
     "shortExplanation": "Le travail prescrit n'est qu'une norme parmi celles qui précèdent l'activité. Celui qui travaille les renormalise sans cesse, et c'est sa santé qui se joue dans ce débat.",
-    "authors": [],
+    "authors": [
+      "schwartz"
+    ],
     "themes": [
       "activite-empechee-et-metier"
     ],
@@ -358,7 +380,9 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Gary Klein",
     "hookQuestion": "Et si l'expert décidait sans jamais comparer deux options ?",
     "shortExplanation": "L'expert reconnaît la dynamique d'une situation, en tire d'emblée une conduite plausible, puis l'évalue en l'imaginant se dérouler : il ne compare pas deux options.",
-    "authors": [],
+    "authors": [
+      "klein"
+    ],
     "themes": [
       "decision-et-conscience-de-la-situation"
     ],
@@ -454,7 +478,9 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Jacques Leplat",
     "hookQuestion": "Pourquoi la procédure ne dit-elle jamais tout ce qu'il faut faire ?",
     "shortExplanation": "Consigne, procédure, mode d'emploi disent ce qui doit être fait pour obtenir un résultat ; ils n'explicitent jamais toute la tâche et laissent le détail à l'opérateur.",
-    "authors": [],
+    "authors": [
+      "leplat"
+    ],
     "themes": [
       "tache-et-activite"
     ],
@@ -486,7 +512,9 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Stanley Smith Stevens",
     "hookQuestion": "Numéroter des joueurs, est-ce mesurer ? Et qu'autorise alors chaque échelle ?",
     "shortExplanation": "Mesurer, c'est attribuer des chiffres selon des règles. Quatre échelles en découlent, et l'invariance dit quelle statistique convient ; Stevens n'en proscrit aucune.",
-    "authors": [],
+    "authors": [
+      "stevens"
+    ],
     "themes": [
       "theorie-des-echelles-et-nombres"
     ],
@@ -519,7 +547,10 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Justine Arnoud, Pierre Falzon",
     "hookQuestion": "On vous donne les moyens : cela suffit-il pour que vous puissiez vraiment agir ?",
     "shortExplanation": "Une ressource mise à disposition n'est pas encore un pouvoir d'agir : elle doit être convertie en capabilité, et cette conversion exige des conditions qui se conçoivent.",
-    "authors": [],
+    "authors": [
+      "arnoud",
+      "falzon"
+    ],
     "themes": [
       "regulation-et-marges"
     ],
@@ -551,7 +582,10 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "François Hubault, Fabrice Bourgeois",
     "hookQuestion": "Concevoir un poste : vise-t-on la tâche à tenir, ou l'activité qui la tiendra ?",
     "shortExplanation": "Deux ergonomies s'opposent : l'une prend la tâche pour horizon et corrige la prescription, l'autre en fait le moyen de l'activité, qu'aucun modèle prescriptif n'épuise.",
-    "authors": [],
+    "authors": [
+      "hubault",
+      "bourgeois"
+    ],
     "themes": [
       "tache-et-activite"
     ],
@@ -578,7 +612,9 @@ export const generatedConcepts: Concept[] = [
     "hookQuestion": "Une solution qui traînait rencontre un problème qui vient d'arriver : qui a décidé ?",
     "shortExplanation": "Dans une « anarchie organisée » (buts ambigus, savoir causal flou, participation variable), ce qui relie un problème à une solution est leur coprésence dans le temps.",
     "authors": [
-      "march"
+      "cohen",
+      "march",
+      "olsen"
     ],
     "themes": [
       "decision"
@@ -630,7 +666,9 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Pierre Rabardel",
     "hookQuestion": "L'outil qu'on vous remet est-il déjà un instrument entre vos mains ?",
     "shortExplanation": "Un instrument n'est pas donné : c'est un artefact plus les schèmes que le sujet lui associe. L'utilisateur l'élabore, en transformant l'objet et ses propres schèmes.",
-    "authors": [],
+    "authors": [
+      "rabardel"
+    ],
     "themes": [
       "activite-instrumentee-et-conception"
     ],
@@ -662,7 +700,12 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Yves Clot, Daniel Faïta, Gabriel Fernandez, Livia Scheller",
     "hookQuestion": "Qui vous a appris ce qui « se fait » dans votre métier, sans jamais l'écrire ?",
     "shortExplanation": "Le métier impose des manières de faire que nul n'a prescrites : le genre. Chacun les retouche en agissant (le style), et c'est cette retouche qui fait vivre le genre.",
-    "authors": [],
+    "authors": [
+      "clot",
+      "faita",
+      "fernandez",
+      "scheller"
+    ],
     "themes": [
       "activite-empechee-et-metier"
     ],
@@ -694,7 +737,9 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Philippe Cabon",
     "hookQuestion": "Limiter les heures ou gérer le risque : la fatigue se règle-t-elle d'avance ?",
     "shortExplanation": "Au lieu de plafonner les heures par règlement, on limite le temps de service selon un risque fatigue évalué. Mais le lien entre fatigue et sécurité n'est pas linéaire.",
-    "authors": [],
+    "authors": [
+      "cabon"
+    ],
     "themes": [
       "charge-et-vigilance"
     ],
@@ -720,7 +765,9 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Donald A. Norman",
     "hookQuestion": "Comment fait-on autre chose que ce qu'on avait l'intention de faire ?",
     "shortExplanation": "Le glissement est une action exécutée sans être voulue. Il n'arrive pas au hasard : des actions possibles entrent en conflit, ou les éléments d'une séquence se mêlent.",
-    "authors": [],
+    "authors": [
+      "norman"
+    ],
     "themes": [
       "erreur-humaine-et-fiabilite"
     ],
@@ -759,7 +806,10 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Isabelle Bruno, Emmanuel Didier",
     "hookQuestion": "Quand ce sont les faits qui commandent, que reste-t-il à négocier ?",
     "shortExplanation": "Le benchmarking assigne des cibles réputées indiscutables parce que tirées du réel ; mais ces faits sont fabriqués, et leur autorité désarme la négociation politique.",
-    "authors": [],
+    "authors": [
+      "bruno",
+      "didier"
+    ],
     "themes": [
       "audit-evaluation-reddition-de-comptes"
     ],
@@ -795,7 +845,10 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Michael T. Hannan, John Freeman",
     "hookQuestion": "Ce qui rend une organisation fiable peut-il être ce qui l'empêche de changer ?",
     "shortExplanation": "Reproduire sa structure à l'identique est ce qui rend une organisation fiable et redevable. Hannan et Freeman en tirent le prix : l'inertie, que la sélection retient.",
-    "authors": [],
+    "authors": [
+      "hannan",
+      "freeman"
+    ],
     "themes": [
       "changement-organisationnel"
     ],
@@ -846,7 +899,10 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Paul J. DiMaggio, Walter W. Powell",
     "hookQuestion": "Pourquoi chercher à changer rend-il les organisations toujours plus semblables ?",
     "shortExplanation": "DiMaggio et Powell l'expliquent par trois mécanismes (la contrainte, le modelage sur autrui face à l'incertitude, la professionnalisation) et non par l'efficacité.",
-    "authors": [],
+    "authors": [
+      "dimaggio",
+      "powell"
+    ],
     "themes": [
       "changement-organisationnel",
       "bureaucratie-regles"
@@ -895,7 +951,9 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Donald T. Campbell",
     "hookQuestion": "Que devient un indicateur dès lors qu'on s'en sert pour décider ?",
     "shortExplanation": "Plus un indicateur quantitatif sert à la décision, plus il subit des pressions de corruption, et plus il fausse le processus social qu'il devait justement surveiller.",
-    "authors": [],
+    "authors": [
+      "campbell"
+    ],
     "themes": [
       "effets-retour-de-la-mesure"
     ],
@@ -922,7 +980,11 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Fabien Coutarel, François Daniellou, Bernard Dugué",
     "hookQuestion": "Deux façons de faire au lieu d'une : qu'est-ce que cela change pour la santé ?",
     "shortExplanation": "Selon qu'une situation offre ou non plusieurs modes opératoires possibles, l'opérateur peut ou non faire face aux aléas. La notion lie ce contrôle à la santé.",
-    "authors": [],
+    "authors": [
+      "coutarel",
+      "daniellou",
+      "dugue"
+    ],
     "themes": [
       "regulation-et-marges"
     ],
@@ -954,7 +1016,9 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Marilyn Strathern",
     "hookQuestion": "Pourquoi un bon indicateur cesse-t-il de l'être dès qu'on en fait un objectif ?",
     "shortExplanation": "Un indicateur promu au rang d'objectif cesse d'être un bon indicateur : l'audit est délibérément bâti sur cette confusion de la mesure et de la cible, et il l'amplifie.",
-    "authors": [],
+    "authors": [
+      "strathern"
+    ],
     "themes": [
       "effets-retour-de-la-mesure"
     ],
@@ -985,7 +1049,9 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "James Reason",
     "hookQuestion": "Pourquoi faut-il plusieurs défaillances alignées pour qu'un accident passe ?",
     "shortExplanation": "Les couches de défense sont trouées, et les trous se déplacent : l'accident passe quand ils s'alignent. Ils naissent de défaillances actives et de conditions latentes.",
-    "authors": [],
+    "authors": [
+      "reason"
+    ],
     "themes": [
       "erreur-humaine-et-fiabilite"
     ],
@@ -1030,7 +1096,10 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Sandra G. Hart, Lowell E. Staveland",
     "hookQuestion": "Faute de règle pour mesurer la charge, à qui demander ce qu'elle a coûté ?",
     "shortExplanation": "Six sous-échelles notées après la tâche, pondérées par ce que le sujet juge y avoir compté : leur moyenne pondérée donne un score global de charge de travail.",
-    "authors": [],
+    "authors": [
+      "hart",
+      "staveland"
+    ],
     "themes": [
       "charge-et-vigilance"
     ],
@@ -1069,7 +1138,9 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Jens Rasmussen",
     "hookQuestion": "Se tromper en pilotant un geste ou en raisonnant : est-ce la même erreur ?",
     "shortExplanation": "Selon que l'action est une routine, l'application d'une règle apprise ou un plan tiré de connaissances, ce n'est pas le même contrôle qui opère, ni les mêmes erreurs.",
-    "authors": [],
+    "authors": [
+      "rasmussen"
+    ],
     "themes": [
       "erreur-humaine-et-fiabilite"
     ],
@@ -1108,7 +1179,9 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Emmanuel Didier",
     "hookQuestion": "Pourquoi un chiffre qui circule en public déclenche-t-il une émotion intime ?",
     "shortExplanation": "Gouverner par les nombres est aussi gouverner par les sentiments : les chiffres de la pandémie ont suscité peur et espoir, puis permis de contrôler ce qu'ils soulevaient.",
-    "authors": [],
+    "authors": [
+      "didier"
+    ],
     "themes": [
       "quantification-operation-sociale"
     ],
@@ -1141,7 +1214,9 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Joan Acker",
     "hookQuestion": "Un poste décrit comme neutre peut-il présupposer un certain type de vie ?",
     "shortExplanation": "Chez Acker, le genre n'entre pas dans l'organisation du dehors. La définition d'un poste suppose un travailleur sans attaches, dont un autre assure la vie hors travail.",
-    "authors": [],
+    "authors": [
+      "acker"
+    ],
     "themes": [
       "organisation-formelle-reelle"
     ],
@@ -1191,7 +1266,9 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Florence Jany-Catrice",
     "hookQuestion": "Que devient l'évaluation d'une politique quand tout se ramène à un chiffre ?",
     "shortExplanation": "L'évaluation plurielle des politiques glisse vers la mesure des performances : un régime où chacun se plie à un chiffre décontextualisé auquel nul ne croit tout à fait.",
-    "authors": [],
+    "authors": [
+      "jany-catrice"
+    ],
     "themes": [
       "audit-evaluation-reddition-de-comptes"
     ],
@@ -1222,7 +1299,10 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Alan D. Swain, Henry E. Guttmann",
     "hookQuestion": "Peut-on mettre un chiffre sur la chance qu'un opérateur se trompe ?",
     "shortExplanation": "La probabilité qu'une erreur survienne dans une tâche donnée sert d'indice de base. Faute de données réelles, la plupart de ces valeurs mêlent données et jugement.",
-    "authors": [],
+    "authors": [
+      "swain",
+      "guttmann"
+    ],
     "themes": [
       "erreur-humaine-et-fiabilite"
     ],
@@ -1261,7 +1341,9 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Alain Desrosières",
     "hookQuestion": "Mesurer suppose la chose déjà mesurable : qu'a-t-on convenu avant de compter ?",
     "shortExplanation": "Quantifier ne se réduit pas à mesurer : il faut d'abord établir des conventions d'équivalence, la mesure venant ensuite comme mise en œuvre réglée de ces conventions.",
-    "authors": [],
+    "authors": [
+      "desrosieres"
+    ],
     "themes": [
       "quantification-operation-sociale"
     ],
@@ -1337,7 +1419,10 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Wendy Nelson Espeland, Michael Sauder",
     "hookQuestion": "Un classement décrit-il ce qu'il mesure, ou refait-il ce qu'il prétend décrire ?",
     "shortExplanation": "Une mesure publique est réactive : on s'ajuste à ce qui nous évalue. Deux mécanismes, autoréalisation et commensuration ; trois effets : maximiser, redéfinir, manipuler.",
-    "authors": [],
+    "authors": [
+      "espeland",
+      "sauder"
+    ],
     "themes": [
       "effets-retour-de-la-mesure"
     ],
@@ -1370,7 +1455,9 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Jean-Daniel Reynaud",
     "hookQuestion": "Les règles qu'une équipe se donne sont-elles un désordre ou une autre régulation ?",
     "shortExplanation": "Reynaud oppose les règles de la direction à celles des exécutants. Les secondes ne sont ni spontanées ni informelles : ce sont des stratégies contre le contrôle.",
-    "authors": [],
+    "authors": [
+      "reynaud"
+    ],
     "themes": [
       "organisation-formelle-reelle",
       "pouvoir"
@@ -1420,7 +1507,10 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Jacques Leplat, Xavier Cuny",
     "hookQuestion": "En ajustant votre façon de faire, qu'ajustez-vous d'autre que la tâche ?",
     "shortExplanation": "L'opérateur ramène à zéro l'écart entre le but et le résultat. Il poursuit aussi des fins propres (santé, confort) et se modifie lui-même quand les contraintes pèsent.",
-    "authors": [],
+    "authors": [
+      "leplat",
+      "cuny"
+    ],
     "themes": [
       "regulation-et-marges"
     ],
@@ -1464,7 +1554,10 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Lucie Cuvelier, Pierre Falzon",
     "hookQuestion": "Choisit-on la conduite la plus sûre, ou celle que l'équipe pourra tenir ?",
     "shortExplanation": "Anticiper, c'est concevoir une enveloppe de situations tenables avec les ressources de l'équipe : une gestion qui s'ajoute aux protocoles au lieu de les remplacer.",
-    "authors": [],
+    "authors": [
+      "cuvelier",
+      "falzon"
+    ],
     "themes": [
       "securite-et-resilience"
     ],
@@ -1497,7 +1590,9 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Donald A. Norman",
     "hookQuestion": "Une machine qui fait bien son travail sans rien vous en dire : où est le problème ?",
     "shortExplanation": "Le coupable n'est pas l'automatisation mais l'absence de rétroaction continue : sans elle, l'opérateur ne peut plus mettre à jour sa représentation du système.",
-    "authors": [],
+    "authors": [
+      "norman"
+    ],
     "themes": [
       "automatisation-et-conception-cognitive"
     ],
@@ -1530,7 +1625,9 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Karen Messing",
     "hookQuestion": "À poste égal, hommes et femmes font-ils vraiment le même travail ?",
     "shortExplanation": "Supposer un opérateur générique fait manquer ce qui varie : à emploi égal, tâches et contraintes peuvent différer selon le sexe, qui éclaire aussi les modes opératoires.",
-    "authors": [],
+    "authors": [
+      "messing"
+    ],
     "themes": [
       "activite-empechee-et-metier"
     ],
@@ -1568,7 +1665,10 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Patrick Suppes, Joseph L. Zinnes",
     "hookQuestion": "Un énoncé vrai en Fahrenheit, faux en Celsius : que reste-t-il de son sens ?",
     "shortExplanation": "Un énoncé numérique a un sens si sa vérité reste constante sous les transformations d'échelle admissibles : c'est l'énoncé entier qui en a ou non, pas l'opération.",
-    "authors": [],
+    "authors": [
+      "suppes",
+      "zinnes"
+    ],
     "themes": [
       "theorie-des-echelles-et-nombres"
     ],
@@ -1595,7 +1695,9 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "François Daniellou",
     "hookQuestion": "Comment vérifier qu'un poste sera tenable avant que quiconque y ait travaillé ?",
     "shortExplanation": "On ne peut pas prévoir l'activité future en détail, mais les décisions de conception ouvrent et ferment des pans entiers : simuler sert à éprouver les formes possibles.",
-    "authors": [],
+    "authors": [
+      "daniellou"
+    ],
     "themes": [
       "activite-instrumentee-et-conception"
     ],
@@ -1627,7 +1729,10 @@ export const generatedConcepts: Concept[] = [
     "authorLabel": "Sandrine Caroly, Annie Weill-Fassina",
     "hookQuestion": "Travailler ensemble suffit-il à faire un collectif sur lequel on peut compter ?",
     "shortExplanation": "Le travail collectif est la façon dont plusieurs s'y prennent ensemble. Le collectif de travail s'en construit et suppose transmission, partage, confiance.",
-    "authors": [],
+    "authors": [
+      "caroly",
+      "weill-fassina"
+    ],
     "themes": [
       "activite-empechee-et-metier"
     ],
