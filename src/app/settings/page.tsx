@@ -43,7 +43,7 @@ export default function SettingsPage() {
               onClick={() => setConfirming(true)}
               className="press -ml-2 inline-flex min-h-11 items-center px-2 text-sm font-medium text-warn"
             >
-              Effacer mes données
+              Effacer l&rsquo;historique des cartes déjà lues
             </button>
           ) : (
             <div className="enter-rise space-y-4">
