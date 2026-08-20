@@ -252,6 +252,63 @@ défiler, sur les onze domaines et les neuf thèmes.
 
 ---
 
+### A5. L'écran fait pour la lecture suivie est réglé comme un écran de balayage
+
+**Constat.** Sur `/explore/concept/approfondir/?c=activite-empechee` en 390 × 844, mesuré sur le
+rendu :
+
+| | Valeur relevée |
+|---|---|
+| Famille du texte courant | Inter — le sans, celui que le §5 de `ux-direction.md` réserve à ce qui se choisit |
+| Corps | 17,28 px, interligne 28,08 (1,625) |
+| Couleur | `#b5b5b5`, soit `--ink-soft` — le rôle du **texte secondaire**, 10,24:1 |
+| Écart entre paragraphes | 19,0 px, pour 28,08 d'interligne — rapport 1,68 |
+| Écart entre sections | 48 px, pour 19 entre paragraphes — rapport 2,5 |
+| Premier paragraphe | 533 px de haut, soit **63 % de la zone visible**, sans une seule rupture |
+| Défilement total | 7 351 px, environ neuf écrans |
+
+Les douze paragraphes du texte font en moyenne 562 signes.
+
+**Impact.** Trois réglages qui se tiennent, et qui produisent ensemble le seul mur de
+l'application.
+
+La **famille** contredit la règle du produit sur le seul écran où elle porte à conséquence : le
+titre, l'accroche et les intertitres de cet écran sont en serif, ses mille cinq cents mots sont
+en sans. Le sans y fait ce qu'il ne sait pas faire.
+
+La **couleur** est celle du texte secondaire. Elle tient sur la phrase de trois lignes d'une
+ligne de liste, qui est ce pour quoi elle a été choisie ; sur huit minutes de lecture, elle
+demande un effort d'accommodation qui ne se relâche jamais. Le contraste est conforme — 10,24:1
+contre un seuil de 4,5 — et c'est précisément le cas où la conformité ne dit rien du confort :
+aucun seuil WCAG ne distingue une phrase d'un chapitre.
+
+La **densité** vient de leur combinaison. Un paragraphe qui occupe les deux tiers de l'écran
+sans rupture, dans le gris du texte secondaire, à un écart de paragraphe qui vaut 1,68
+interligne : rien n'y donne au regard un endroit où se reposer, et l'écart entre deux sections,
+à 2,5 fois l'écart entre paragraphes, ne suffit pas à faire lire un intertitre comme une
+rupture.
+
+**Gravité : important.** Ce n'est pas un bloquant — le texte est lisible et conforme —, mais
+c'est l'écran vers lequel toute l'application converge, et le seul qu'on lit plus d'une minute.
+
+**Recommandation.** Régler cet écran pour ce qu'il est, plutôt que d'y appliquer les valeurs des
+écrans de balayage. La serif pour le texte courant, à sa taille optique et non à sa taille
+nominale ; un barreau de gris propre à la lecture suivie, au-dessus du texte secondaire et en
+dessous du texte principal, dont le §3 rappelle que sur du noir il finit par rayonner ; un écart
+de paragraphe et un écart de section établis en interlignes plutôt qu'en pixels.
+
+**Modification technique.** `globals.css` — un barreau `--n-200`, un rôle `--ink-reading`, une
+classe `.reading` qui porte le réglage une seule fois. `DeepeningDetail.tsx` — l'appliquer, et
+donner à cet écran la largeur de colonne que le texte long demande. `layout.tsx` — charger la
+graisse 400 de la serif, qui ne l'était pas.
+
+**Critère de validation.** Sur le plus grand écran cible, le texte courant tient entre 45 et 75
+signes par ligne. L'écart entre deux sections vaut au moins deux fois l'écart entre deux
+paragraphes. Le gris du texte courant se situe entre celui du texte secondaire et celui du texte
+principal, et la valeur est calculée.
+
+---
+
 ## B — Hiérarchie et systématicité
 
 ### B1. Le cloisonnement des familles ne tient pas
@@ -795,6 +852,7 @@ Douze des quinze entrées ont été traitées dans la foulée de l'audit. Les va
 | C4 · écran vide sur lien partagé | corrigé | Squelette de chargement sur la carte du jour et sur la fiche |
 | C5 · cibles sous le seuil | corrigé | Hauteur minimale mesurée : 44 px sur les quatre écrans testés, vue des sources comprise |
 | C6 · `--dur-screen` | corrigé | La déclaration résout — `--dur-fade` |
+| A5 · lecture suivie | corrigé | Voir le relevé ci-dessous |
 
 **Ce qui reste ouvert**, en plus de B9 : la carte dont tous les champs atteindraient les
 plafonds du corpus ne tient pas à 390 × 844 (voir le constat annexe d'A2). Le défaut est
@@ -805,3 +863,66 @@ de calculer l'échelle sur la hauteur réellement occupée plutôt que sur celle
 consignée parce qu'elle dit ce qui borne le réglage : le premier plancher retenu pour la carte
 (0,9375 rem) faisait déborder l'écran de 320 × 568 de 168 px. La contrainte « la carte tient
 dans un écran » ne se vérifie pas sur l'écran de référence, elle se vérifie sur le plus petit.
+
+---
+
+## A5 — le relevé après
+
+Mêmes conditions que l'audit : `next dev`, Chromium piloté, valeurs calculées lues sur le
+document. Carte témoin `activite-empechee`, douze paragraphes, 1 167 mots.
+
+| | Avant | Après |
+|---|---|---|
+| Famille | Inter 400 | Source Serif 4 400 |
+| Corps | 17,28 px | 18,72 px |
+| Hauteur d'x rendue | 9,45 px | 9,36 px |
+| Interligne | 28,08 px · 1,625 | 30,89 px · 1,65 |
+| Couleur du texte courant | `#b5b5b5` · **10,24:1** | `#d4d4d4` · **14,17:1** |
+| Écart entre paragraphes | 19,0 px · 0,68 interligne | 25,3 px · 0,82 interligne |
+| Écart entre sections | 48 px · 2,5 écarts de paragraphe | 72 px · 2,9 |
+| Colonne à 390 px | 342 px · 40 signes/ligne | 350 px · 38 |
+| Colonne à 768 px | 400 px · **47 signes/ligne** | 472 px · **52** |
+| Premier paragraphe à 390 px | 533 px · 63 % de l'écran | 648 px · 77 % |
+| Défilement à 390 px | 7 351 px | 8 421 px |
+| Défilement à 768 px | 6 432 px | 6 465 px |
+
+**Ce que le relevé donne.** Le contraste du texte courant monte de 10,24 à 14,17:1 sans atteindre
+les 17,94 du texte principal, que le §3 tient pour le seuil où le halo commence sur du noir. La
+famille redevient celle que la règle du produit lui assigne, à hauteur d'x conservée — 9,36 contre
+9,45, soit un écart de 1 %. Le rapport entre l'écart de section et l'écart de paragraphe passe de
+2,5 à 2,9, au-dessus du double qu'exige la règle du rythme vertical. Sur tablette et au-delà, la
+ligne passe de 47 à 52 signes, du bord de la fourchette vers son milieu.
+
+**Ce qu'il coûte, et qui n'est pas dissimulé.** Sur un téléphone, la ligne perd deux signes — 40
+à 38 — et le premier paragraphe passe de 63 à 77 % de la hauteur visible ; le défilement total
+gagne 15 %. Les trois viennent de la même cause : à hauteur d'x égale, la Source Serif occupe 7 %
+de plus par signe qu'Inter, et l'air ajouté entre les lignes et entre les paragraphes est de l'air
+qui s'ajoute. Sur un téléphone, la largeur est bornée par l'appareil : la seule façon de rendre
+ces deux signes serait de réduire le corps, c'est-à-dire de défaire la correction. Le coût est
+accepté, il porte sur la longueur du défilement et non sur la lisibilité d'une ligne, et c'est le
+seul écran de l'application dont le §6 de `ux-direction.md` admet depuis le début qu'il défile.
+
+**Ce qui n'a pas pu être vérifié.** `hyphens: auto` est déclaré sur le texte courant et sur la
+prose d'appareil. La propriété est prise en charge, mais le Chromium de la machine de contrôle
+n'embarque aucun dictionnaire de coupure : la césure y est donc sans effet, et les 38 signes par
+ligne relevés sur téléphone sont la valeur **sans** césure. Sur les navigateurs qui disposent du
+dictionnaire français — Safari sur les appareils Apple, Chrome une fois le composant de coupure
+installé —, elle réduit les blancs de fin de ligne ; là où il manque, le rendu est exactement
+celui qui est mesuré ici. La déclaration ne peut donc rien dégrader, et son gain n'est pas
+comptabilisé dans le tableau.
+
+**Un défaut de mise en page trouvé au passage, et corrigé.** Le corpus emploie trois caractères
+d'espace différents devant une même ponctuation double — 526 espaces ordinaires, 86 fines
+insécables et 47 insécables devant un deux-points, sur trente-deux fichiers. Devant une espace
+ordinaire, le navigateur a le droit de couper : sur une colonne de 38 signes, le point
+d'interrogation partait seul en tête de ligne, y compris sur l'accroche en tête d'écran. La
+normalisation est faite au rendu par `src/lib/typographie.ts`, jamais dans les fichiers maîtres,
+et elle ne remplace que des espaces existantes — elle n'en ajoute aucune, ce qui la laisse sans
+effet sur une adresse ou sur une heure.
+
+**Ce qui reste ouvert.** La normalisation couvre l'accroche sur les cinq écrans qui l'affichent —
+la rendre de deux façons selon l'écran aurait été un défaut introduit par la correction
+elle-même. Elle ne couvre pas encore la citation d'une fiche, le résumé d'une carte ni les
+libellés de sources, qui portent le même défaut à une échelle où il se manifeste rarement. Les
+libellés de sources demandent d'abord une décision documentaire : un titre d'article s'y
+reproduit tel qu'il a été publié.

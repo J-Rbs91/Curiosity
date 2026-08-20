@@ -6,6 +6,7 @@ import { Screen } from "@/components/motion/Screen";
 import { BackLink } from "@/components/ui/BackLink";
 import { ListHeading, ListRow } from "@/components/ui/ListRow";
 import { SituatingText } from "@/components/ui/SituatingText";
+import { espacesFrancaises } from "@/lib/typographie";
 
 export function ThemeDetail({ slug }: { slug: string }) {
   const theme = themes.find((t) => t.slug === slug);
@@ -63,7 +64,7 @@ export function ThemeDetail({ slug }: { slug: string }) {
                   key={concept.id}
                   href={`/explore/concept/?c=${concept.slug}`}
                   title={concept.title}
-                  tagline={concept.hookQuestion}
+                  tagline={espacesFrancaises(concept.hookQuestion)}
                 />
               ))}
             </ul>

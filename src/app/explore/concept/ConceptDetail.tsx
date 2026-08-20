@@ -8,6 +8,7 @@ import { ConceptSourceList } from "@/components/concept/ConceptSources";
 import { Screen } from "@/components/motion/Screen";
 import { BackLink } from "@/components/ui/BackLink";
 import { DeepenButton } from "@/components/ui/DeepenButton";
+import { espacesFrancaises } from "@/lib/typographie";
 
 /**
  * La fiche d'un concept, atteinte depuis un auteur ou un thème.
@@ -78,7 +79,7 @@ export function ConceptDetail() {
 
         {/* Même ordre que la carte du jour : la question d'abord, la parole d'auteur ensuite. */}
         <p className="mt-8 font-serif-display text-lg font-semibold leading-snug text-ink">
-          {concept.hookQuestion}
+          {espacesFrancaises(concept.hookQuestion)}
         </p>
 
         {concept.quotation && (

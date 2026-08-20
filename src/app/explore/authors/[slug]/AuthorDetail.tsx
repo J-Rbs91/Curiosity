@@ -6,6 +6,7 @@ import { Screen } from "@/components/motion/Screen";
 import { BackLink } from "@/components/ui/BackLink";
 import { ListHeading, ListRow } from "@/components/ui/ListRow";
 import { SituatingText } from "@/components/ui/SituatingText";
+import { espacesFrancaises } from "@/lib/typographie";
 
 export function AuthorDetail({ slug }: { slug: string }) {
   const author = authors.find((a) => a.slug === slug);
@@ -40,7 +41,7 @@ export function AuthorDetail({ slug }: { slug: string }) {
                   key={concept.id}
                   href={`/explore/concept/?c=${concept.slug}`}
                   title={concept.title}
-                  tagline={concept.hookQuestion}
+                  tagline={espacesFrancaises(concept.hookQuestion)}
                 />
               ))}
             </ul>
