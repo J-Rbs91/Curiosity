@@ -9,7 +9,8 @@
  * pas, une lacune se déclare, le corpus fait autorité, la frontière se voit — ne se
  * contrôlent pas par un programme. Deux d'entre elles laissent malgré tout des traces
  * mécaniques, et ce sont celles qu'on attrape ici : un titre qui étiquette un palier de
- * difficulté, et un champ `limits` rempli de précautions sans objet.
+ * difficulté, un champ `limits` rempli de précautions sans objet, et l'aveu de lecture qui
+ * raconte au lecteur comment le texte a été fabriqué.
  */
 
 /** Nombre de mots d'un texte. Approximation suffisante : on borne un ordre de grandeur. */
@@ -107,6 +108,73 @@ const DISPOSITIF = [
 ];
 
 /**
+ * L'aveu de lecture, exhibé au lecteur.
+ *
+ * Le pendant du défaut précédent, et il se glisse presque toujours dans `limits`. « Cet
+ * ouvrage n'a pas pu être consulté », « il faudrait pouvoir l'ouvrir », « cela reste hors de
+ * portée de ce texte » : chacune de ces phrases est vraie, aucune ne nomme le dispositif, et
+ * chacune raconte pourtant au lecteur la façon dont le texte a été fabriqué. Il ouvrait un
+ * concept, il tombe sur le compte rendu d'une recherche documentaire qui n'a pas abouti.
+ *
+ * La frontière reste due, et elle se dit à l'endroit du lecteur plutôt qu'à celui du
+ * rédacteur : ce n'est pas un livre qui a manqué à quelqu'un, c'est un livre qui reste à
+ * lire. « Pour établir en quels termes exacts ce texte pose la distinction, il faudra le
+ * lire » dit exactement ce que disait « il faudrait pouvoir l'ouvrir », et le transforme en
+ * raison d'aller au texte.
+ *
+ * Bloquant, pour la même raison que le dispositif : la règle est simple, la reformulation est
+ * mécanique, et elle ne se tient pas à la relecture.
+ */
+const AVEU = [
+  { motif: /il faudrait pouvoir/i, nom: "« il faudrait pouvoir » (écrivez « il faudra »)" },
+  { motif: /faute d['’]avoir pu/i, nom: "« faute d'avoir pu »" },
+  {
+    motif: /hors de portée (?:de|pour) (?:ce|cette|ce qui)/i,
+    nom: "« hors de portée de ce texte »",
+  },
+  {
+    // « pour ce texte », « pour préparer ce texte », « pour cette synthèse » : la phrase se
+    // retourne vers l'atelier, jamais vers l'ouvrage dont elle parle.
+    motif: /pour (?:préparer |écrire |la rédaction de |la préparation de )?(?:ce texte|cette (?:synthèse|présentation|rédaction|entrée))/i,
+    nom: "le renvoi à la fabrication du texte",
+  },
+];
+
+/**
+ * La forme principale de l'aveu : un ouvrage au passif, que personne n'a ouvert.
+ *
+ * Elle ne s'attrape pas par un motif seul, parce que le même passif est juste ailleurs : un
+ * code-barre qui n'a pas été lu du premier coup décrit un poste de travail, pas une
+ * bibliographie. Ce qui fait l'aveu, c'est la rencontre des deux : un sujet bibliographique,
+ * et un verbe de lecture qu'on nie sans dire qui aurait dû lire. On exige donc les deux, dans
+ * une même fenêtre de phrase.
+ */
+function aveuDeLecture(texte) {
+  /* Les frontières se posent avec `\p{L}` et non `\b` : « édition » commence par une lettre
+     accentuée, dont `\b` ne sait rien, et le motif ne se serait déclenché sur rien. Même
+     piège que l'apostrophe droite dans les titres de fonction. */
+  const OUVRAGE =
+    /(?<!\p{L})(?:texte|ouvrage|livre|article|chapitre|édition|traduction|rapport|thèse|recueil|communication|notice|publication|volume|entrée|acte|version)s?(?!\p{L})/iu;
+  const PASSIF =
+    /n['’](?:a|ont) (?:pas |non )?(?:pu être|été)\s+(?:consult|ouvert|lu|relu|rouvert|examin|explor|vérifi|interrog|dépouill|mobilis|repér|identifi)\p{L}*/giu;
+  /* Le complément qui achève l'aveu : il dit jusqu'où la lecture est allée, et c'est
+     précisément ce que le lecteur n'a pas à savoir. Sans lui, le même passif décrit le monde
+     — un code-barre qui n'a pas été lu du premier coup parle d'une caisse de supermarché. */
+  const ETENDUE =
+    /^\s*(?:,\s*)?(?:ici|directement|intégralement|en entier|au-delà|à ce jour|au moment|que par|qu['’]à travers|que de |que partiellement|de première main|jusqu['’]ici|pour l['’]instant|non plus)/i;
+
+  for (const occurrence of texte.matchAll(PASSIF)) {
+    /* La fenêtre remonte assez haut pour couvrir un sujet long et ses appositions, et pas
+       plus : au-delà, un titre d'ouvrage cité deux phrases avant suffirait à condamner une
+       phrase qui n'a rien à voir. */
+    const avant = texte.slice(Math.max(0, occurrence.index - 140), occurrence.index);
+    const apres = texte.slice(occurrence.index + occurrence[0].length).slice(0, 60);
+    if (OUVRAGE.test(avant) && ETENDUE.test(apres)) return true;
+  }
+  return false;
+}
+
+/**
  * Des précautions sans objet.
  *
  * `limits` doit nommer ce qui manque — un texte non ouvert, une attribution seconde main, une
@@ -201,6 +269,16 @@ export function validateDeepening(deepening, { conceptIds } = {}) {
     if (expose)
       fail(
         `${champ} : ${expose.nom} expose le dispositif — parlez de l'auteur, du texte ou des sources disponibles`
+      );
+
+    const aveu = AVEU.find(({ motif }) => motif.test(texte));
+    if (aveu)
+      fail(
+        `${champ} : ${aveu.nom} raconte la fabrication du texte — dites plutôt ce qui reste à lire, et où`
+      );
+    else if (aveuDeLecture(texte))
+      fail(
+        `${champ} : un ouvrage y est déclaré non consulté — dites plutôt ce qu'il contient d'irremplaçable, et qu'il faudra le lire`
       );
   }
 

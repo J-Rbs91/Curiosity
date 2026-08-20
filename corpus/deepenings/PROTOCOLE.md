@@ -10,10 +10,11 @@ mot pour mot là où elles s'appliquent.
 
 ---
 
-## 0. Les deux défauts qui ont fait refaire le premier lot
+## 0. Les trois défauts qui ont fait refaire le premier lot
 
 À lire avant tout le reste. Les trente-deux textes du premier lot étaient documentairement
-irréprochables et **inutilisables**, pour deux raisons, et deux seulement.
+irréprochables et **inutilisables**. Deux raisons l'expliquaient d'abord ; la troisième s'est
+vue une fois les deux premières corrigées, et elle tenait au même geste.
 
 ### Le dispositif était exhibé au lecteur
 
@@ -32,6 +33,16 @@ une phrase juste, et c'est la pire manière d'ouvrir : elle demande de tenir tro
 avant d'avoir compris de quoi il s'agit. Un rédacteur à qui l'on transmet une fiche
 documentaire en reprend le vocabulaire savant dès la première ligne, et rend une explication
 exacte que personne ne peut suivre.
+
+### La limite était racontée du côté du rédacteur
+
+Troisième défaut, découvert plus tard, et il tenait en une phrase : « Pour établir depuis quand
+et en quels termes exacts ce texte pose la distinction, il faudrait pouvoir l'ouvrir. »
+
+Rien n'y nomme la plomberie, et pourtant elle s'y voit. « Il faudrait pouvoir » raconte
+quelqu'un qui a cherché un livre et ne l'a pas eu ; le lecteur, lui, n'a rien demandé de tel.
+Écrite dans l'autre sens, la même phrase devient une raison d'aller au texte : « il faudra le
+lire ». La limite n'a pas bougé d'un mot, elle a changé de destinataire.
 
 ---
 
@@ -64,6 +75,30 @@ La frontière documentaire, elle, **reste due**. Elle se dit simplement autremen
 - « Ce point n'est pas établi par les sources actuellement disponibles. »
 - « Pour attribuer précisément cette idée à l'auteur, il faudrait revenir au texte original. »
 - « Cette extension va au-delà de ce qui est actuellement documenté. »
+
+### La limite se dit du côté du lecteur
+
+Une lacune se déclare toujours (§4), mais jamais comme un compte rendu de recherche
+infructueuse. Un ouvrage non lu n'est pas un manque dans la préparation du texte : c'est un
+livre qui contient encore quelque chose, et qui reste à ouvrir. Écris donc ce qu'il porte
+d'irremplaçable, puis dis qu'il faudra le lire.
+
+`npm run corpus:deepen` refuse la forme fautive : l'ouvrage déclaré non consulté au passif,
+« il faudrait pouvoir », « faute d'avoir pu », « hors de portée de ce texte », et tout renvoi à
+la fabrication du texte lui-même.
+
+| Au lieu de | Écris |
+|---|---|
+| « il faudrait pouvoir l'ouvrir » | « il faudra le lire » |
+| « cet ouvrage n'a pas été consulté ici » | « ce que ce livre en fait, il faudra l'ouvrir pour le voir » |
+| « son contenu reste hors de portée de ce texte » | « ses phrases attendent leur lecteur » |
+| « aucune traduction publiée n'a pu être consultée » | « pour la formule qui fait référence en français, c'est cette édition » |
+| « ces travaux n'ont pas été ouverts pour préparer ce texte » | « ce sont les racines de la notion, et l'auteur les nomme lui-même » |
+
+Le temps de la phrase suffit souvent à faire le travail : le conditionnel décrit ce qu'on
+aurait fallu pouvoir faire, le futur décrit ce que le lecteur va faire. Et la limite reste
+entière : rien n'autorise à dire d'un texte non lu ce qu'il contient. Ce qui change, c'est
+qu'on nomme ce qu'il détient plutôt que ce qui a manqué.
 
 ---
 
@@ -198,13 +233,15 @@ Un fichier JSON par carte, `corpus/deepenings/<conceptId>.json` :
 |---|---|---|
 | `lead` | l'entrée en matière, sans titre. **Le passage le plus important du texte.** Il pose le problème auquel le concept répond, avec des mots courants et si possible une situation concrète. Aucun terme savant qui ne soit immédiatement expliqué. | 2 paragraphes, 120-200 mots |
 | `sections` | le développement, une idée par section, du plus immédiat au plus technique | 4 à 6 sections, 2 à 4 paragraphes |
-| `limits` | ce que les sources disponibles ne permettent pas d'établir, et ce qu'il faudrait ouvrir pour le savoir | 2 à 4 paragraphes, 100-200 mots |
+| `limits` | ce que les sources disponibles ne permettent pas d'établir, et le texte qu'il faudra lire pour le savoir | 2 à 4 paragraphes, 100-200 mots |
 
 **`limits` s'affiche sous le titre « Ce que les sources ne permettent pas d'établir ».** Écris
 donc ces paragraphes comme la suite naturelle de ce titre, sans jamais nommer la carte ni le
-dossier : « L'article de 1955 n'a pas été consulté au-delà de sa notice : son contenu ne peut
-pas être invoqué ici. » Des formules de prudence sans objet précis ne suffisent pas, le
-contrôle les refuse.
+dossier, et du côté du lecteur plutôt que du tien (§1) : non pas « l'article de 1955 n'a pas
+été consulté au-delà de sa notice », mais « ce que l'article de 1955 en dit, il faudra l'ouvrir
+pour le savoir ». C'est le champ que le lecteur quitte en dernier : bien écrit, il lui laisse
+une pile de livres plutôt qu'une liste de manques. Des formules de prudence sans objet précis
+ne suffisent pas, le contrôle les refuse.
 
 **Total visé : 1 300 à 1 700 mots.** En dessous de 1 100, le texte n'a rien ajouté ; au-dessus
 de 1 900, il devient un article que personne ne finit.
@@ -241,7 +278,8 @@ Puis relis ton texte avec ces questions, dans cet ordre :
 6. Une citation, une page, une date ou un chiffre y figurent-ils sans être dans la
    documentation de travail ?
 7. Un exemple inventé pourrait-il se lire comme un cas réel ?
-8. `limits` nomme-t-il réellement ce qui manque ?
+8. `limits` nomme-t-il réellement ce qui manque, et donne-t-il envie d'aller le lire ?
+9. Une phrase raconte-t-elle qu'un texte n'a pas pu être ouvert, plutôt que ce qu'il contient ?
 
 ---
 
