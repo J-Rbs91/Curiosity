@@ -1,6 +1,6 @@
 # Périmètre du corpus
 
-## Quatre domaines ouverts sur onze
+## Cinq domaines ouverts sur onze
 
 L'application couvre **quatre familles et onze domaines**, déclarés dans
 [`src/content/taxonomy.ts`](../src/content/taxonomy.ts). Déclarer un domaine et l'instruire
@@ -8,9 +8,9 @@ sont deux décisions distinctes, et elles ne se prennent pas ensemble : une fich
 admise parce qu'un domaine existe dans la taxonomie.
 
 > **Les périmètres d'instruction ouverts sont `organizational-sociology`,
-> `measurement-theory`, `activity-ergonomics` et `human-factors`.** Les sept autres domaines
-> sont déclarés dans la taxonomie et restent fermés à l'instruction tant qu'une décision
-> explicite ne les ouvre pas — décision qui s'inscrit dans ce fichier, sous la forme d'une
+> `measurement-theory`, `activity-ergonomics`, `human-factors` et `cybernetics`.** Les six
+> autres domaines sont déclarés dans la taxonomie et restent fermés à l'instruction tant
+> qu'une décision explicite ne les ouvre pas — décision qui s'inscrit dans ce fichier, sous la forme d'une
 > section de périmètre comme celles qui suivent.
 
 Un domaine s'ouvre à l'instruction dans cet ordre, et pas dans un autre :
@@ -48,7 +48,10 @@ l'activité nomme autrement. La règle est l'**objet du travail cité**, pas sa 
   l'activité ;
 - le concept porte sur **ce que l'opérateur perçoit, comprend, anticipe ou manque** — le
   mécanisme cognitif lui-même, sa défaillance, et le dispositif technique qui le soutient ou
-  le met en défaut → human factors.
+  le met en défaut → human factors ;
+- le concept porte sur **le mécanisme par lequel un système corrige son écart et se
+  maintient** — la boucle, la variété, la viabilité, prises comme principe et non comme
+  application → cybernétique.
 
 **Un concept déjà instruit ne se réinstruit pas dans un autre domaine.** Une carte a un
 identifiant unique ; deux domaines ne peuvent pas se partager le même concept, et le
@@ -492,7 +495,7 @@ morts. Ce qui reste ici, c'est la **décision d'un opérateur dans une tâche r�
 temps contraint et information incomplète : l'objet n'est plus le choix, mais la cognition
 qui le produit en situation.
 
-### Avec `cybernetics` et `systems-thinking`, fermés
+### Avec `cybernetics`, ouvert depuis, et `systems-thinking`, fermé
 
 La variété requise, la régulation d'un système par lui-même, la modélisation systémique du
 danger et l'analyse d'accident par modèle de contrôle appartiennent à ces deux domaines et se
@@ -500,6 +503,14 @@ consignent dans les angles morts. Ils sont pourtant à l'origine directe d'une p
 vocabulaire de ce champ, et **cette dette se signale plutôt qu'elle ne se dissimule** : une
 carte de human factors peut nommer sa source cybernétique dans son attribution sans instruire
 le concept cybernétique lui-même.
+
+**`cybernetics` a été ouvert le 20 août 2026**, plus bas dans ce fichier, et la frontière y est
+réécrite dans l'autre sens ; les deux formulations doivent rester lisibles ensemble. La
+consigne de consignation a été appliquée et n'a rien rapporté : la cartographie de ce domaine
+a vérifié ses trois textes les plus susceptibles de porter la dette cybernétique et a conclu
+« le domaine se déclare vide pour ce passage ». Un angle mort écrit vaut aussi quand il est
+vide — celui-ci dit que la dette de vocabulaire ne s'accompagne d'aucune citation remontant au
+texte d'origine, et il évite au passage suivant de la chercher là.
 
 ### Avec `operations-management`, fermé
 
@@ -579,6 +590,229 @@ français, une autre est d'auteurs francophones publiant en anglais. Amalberti, 
 Keyser ont été cherchés activement et n'ont produit aucun candidat, leurs ouvrages centraux
 n'étant pas en ligne et *Le travail humain* restant derrière Cairn. Le périmètre demandait de
 signaler ce déséquilibre plutôt que de le masquer : il est réel et il n'a pas été corrigé.
+
+---
+
+# Domaine ouvert — `cybernetics`
+
+Ouvert le 20 août 2026. Cinquième domaine instruit, et **le premier de la famille
+« Comprendre la production et les systèmes »**, restée entièrement vide jusqu'ici : trois
+domaines déclarés, aucun corpus, une branche entière de la navigation qui n'affichait que
+« corpus en cours de constitution ». L'application expliquait ce que les organisations font
+faire à ceux qui les peuplent, ce que leurs indicateurs déforment et ce qu'il en coûte de
+travailler dedans ; elle ne disait rien de la façon dont un système tient — ou ne tient pas —
+son cap.
+
+**Ce domaine repart de zéro.** Les deux cartographies précédentes ont explicitement cherché
+ce qui, chez elles, relevait de la cybernétique, et n'ont rien consigné : la section
+« Candidats rencontrés relevant de domaines déclarés mais fermés » de
+[`corpus/map/human-factors.scouting.md`](map/human-factors.scouting.md) écrit « le domaine se
+déclare vide pour ce passage », après vérification sur les trois textes les plus susceptibles
+d'en porter la dette. Il n'y a donc **aucun stock d'entrée**, contrairement à `human-factors`
+qui avait hérité de son voisin. C'est un résultat utile plutôt qu'un manque : il dit que la
+dette de vocabulaire — contrôle, boucle, écart — ne s'accompagne pas, dans ces textes-là,
+d'une citation qui permettrait de remonter au concept cybernétique lui-même.
+
+## Le périmètre est la discipline
+
+> **Cybernétique** — l'étude générale de la régulation et de la communication dans les
+> systèmes vivants et artificiels : boucle de rétroaction, écart, variété requise, viabilité.
+
+Le domaine ne porte ni sur les machines ni sur les organisations en tant que telles : il porte
+sur le **mécanisme par lequel un système se maintient**, quel que soit son substrat. C'est sa
+particularité, et c'est exactement d'où vient son risque. Née de la rencontre entre
+l'ingénierie de l'asservissement, la neurophysiologie et la théorie de la communication, la
+cybernétique énonce des principes qui valent pour un thermostat, un organisme et une
+entreprise — ce qui la rend enseignable, et ce qui rend son vocabulaire disponible pour
+n'importe quel usage métaphorique. **Le corpus n'instruit pas la métaphore.** Un texte qui
+appelle « système » ce qu'il ne décrit pas, ou « rétroaction » ce qu'il ne montre pas boucler,
+n'entre pas, quel que soit le nombre de fois où il emploie les mots.
+
+Seconde particularité, et elle décide de la méthode : le champ a un centre de gravité **daté**
+— les conférences Macy et leur suite, puis une seconde vague dite « de second ordre » — et une
+postérité dispersée dans une dizaine de disciplines qui ne s'en réclament plus. Il faut donc
+le chercher à la fois par ses textes et par ses archives, et se méfier de deux réflexes :
+croire qu'un champ ancien est un champ ouvert, et croire qu'un champ dissous est un champ
+sans textes.
+
+## Points d'entrée
+
+Aucun auteur n'est retenu d'avance — même règle que pour les quatre domaines précédents, et
+le risque est ici à son maximum : trois ou quatre noms de ce champ circulent dans la culture
+générale de l'ingénierie et du management, et un scout qui partirait de mémoire les écrirait
+sans effort en croyant avoir cartographié. Ce que `corpus-scout` doit couvrir, ce sont des
+**littératures** :
+
+- la boucle de rétroaction et la régulation par l'écart : ce qu'un système corrige, à partir
+  de quoi, et ce qui arrive quand la correction arrive trop tard ou trop fort ;
+- le comportement dit téléologique et sa critique : ce que « poursuivre un but » peut vouloir
+  dire pour une machine, et ce que cette extension a coûté ;
+- l'homéostasie et la régulation du vivant, en tant qu'elles ont fourni au champ son modèle
+  d'origine ;
+- la variété et sa loi : ce qu'un régulateur doit posséder pour tenir un système, et ce que
+  cela implique pour qui régule sans en avoir les moyens ;
+- l'information, le signal et le bruit **en tant qu'ils servent la commande**, jamais pour
+  eux-mêmes ;
+- la cybernétique dite de second ordre : l'observateur inclus dans ce qu'il observe,
+  l'autonomie, la clôture opérationnelle ;
+- la cybernétique appliquée à l'organisation et à la gestion : viabilité, récursivité, ce
+  qu'un centre de décision peut absorber ;
+- la boucle perception-action et le contrôle de ce qui est perçu ;
+- l'histoire et la critique du champ, y compris ce qui lui a été reproché : c'est une
+  littérature académique constituée, souvent la seule voie ouverte vers des textes fermés —
+  elle situe, elle ne se substitue jamais à la source primaire ;
+- **la couche francophone, cherchée en parallèle et non après coup** : la cybernétique s'est
+  écrite en français dès les années 1950, elle a nourri la systémique et une part de la
+  philosophie des sciences ; une recherche anglophone seule la manquerait entièrement. HAL,
+  Persée, theses.fr, et **OpenEdition Books en priorité** — c'est cette voie, découverte en
+  cours de lot en théorie de la mesure, qui y a débloqué l'ouvrage central du domaine.
+
+Si le lot final ne tient qu'aux trois noms les plus cités du champ, ou qu'à sa seule vague
+fondatrice alors qu'il en compte au moins deux, la cartographie n'a pas fait son travail, et
+cela se signale.
+
+## Le test d'entrée
+
+La question n'est pas « est-ce de la cybernétique ? ». Le mot a été revendiqué, abandonné,
+puis repris, et plusieurs des textes qui comptent ne le portent pas : le champ s'est constitué
+entre des mathématiciens, des physiologistes, des psychiatres et des praticiens de la
+recherche opérationnelle, dont aucun n'était cybernéticien de formation. La question est :
+
+> **Ce travail éclaire-t-il le mécanisme par lequel un système corrige son écart et se
+> maintient ?**
+
+Trois conditions cumulatives :
+
+1. il porte sur un **mécanisme de régulation, de commande ou de communication** pris comme tel
+   — boucle, écart, variété, viabilité, clôture — et non sur un domaine d'application où ce
+   mécanisme ne figurerait que par analogie ;
+2. il est **rattachable à un auteur identifié**, et cette attribution est documentable ;
+3. il est **enseignable** : un lecteur non spécialiste doit pouvoir en reconnaître le
+   mécanisme dans un système qu'il côtoie — un service, une chaîne d'approvisionnement, une
+   équipe, un corps.
+
+## Hors périmètre — rejet direct
+
+- **Automatique, traitement du signal et théorie du contrôle au sens de l'ingénieur** : le
+  principe de régulation est ici, le dimensionnement d'un correcteur et l'étude de sa
+  stabilité ne le sont pas.
+- **Théorie de l'information prise pour elle-même** : codage, capacité de canal, compression.
+  Elle entre par ce qu'elle fait à la commande, jamais par ses théorèmes.
+- **Intelligence artificielle et apprentissage automatique comme techniques** : ce qui compte
+  ici est ce qu'un modèle de machine énonce de la régulation, pas ce qu'une architecture
+  obtient comme résultat.
+- **Vulgarisation systémique de conseil, de coaching ou de formation** : « lois du système »,
+  schémas de boucles vendus comme méthode, littérature grise d'entreprise. Même rejet
+  qu'ailleurs, quel que soit le prestige de l'auteur ou de l'institution qui les publie.
+- **Tout texte qui invoque le système comme métaphore** sans mécanisme identifiable ni auteur
+  rattachable — c'est le rejet le plus fréquent à prévoir dans ce domaine.
+- **Biologie, écologie, économie ou psychothérapie de la régulation** dès lors que l'objet du
+  texte est le phénomène étudié et non le principe qu'il permet d'énoncer. La règle est la
+  même que partout : le texte tranche, pas la discipline de son auteur.
+
+Un concept hors périmètre part en `corpus/rejected/` avec
+`rejection_reason: "OUT_OF_SCOPE"`. On ne le laisse pas en attente : un candidat gris non
+tranché revient toujours par une autre porte.
+
+## Les frontières, tranchées à l'avance
+
+Même régime qu'en `human-factors`, et pour la même raison — une frontière arbitrée en cours de
+lot est arbitrée par ce que le lot contient. Avec un domaine **ouvert**, un candidat mal placé
+part chez le voisin ou ne s'instruit pas ; avec un domaine **fermé**, il se consigne dans les
+angles morts de la cartographie, jamais en rejet.
+
+### Avec `systems-thinking`, fermé — la frontière décisive
+
+C'est la seule qui puisse coûter cher : les deux domaines sont voisins de famille, partagent
+leurs ancêtres, et l'un s'ouvre avant l'autre. Elle ne se tranche ni par l'auteur, ni par le
+vocabulaire, mais par ce dont le texte parle :
+
+| le texte porte sur | domaine |
+|---|---|
+| le **principe** de la régulation : l'écart, la boucle, la variété qu'un régulateur doit posséder, la clôture, la viabilité | `cybernetics` |
+| le **comportement dans le temps** qu'engendre une structure de boucles, de stocks et de délais — contre-intuition, oscillation, points de levier | `systems-thinking` |
+| l'observateur inclus dans le système, l'autonomie, l'autoproduction | `cybernetics` |
+| la **modélisation** d'un système et la simulation de ses politiques | `systems-thinking` |
+| la viabilité d'une organisation, la récursivité de ses niveaux de commande | `cybernetics` |
+
+Un cas limite mérite d'être nommé à l'avance, parce qu'il se présentera : **l'organisation
+régulée**. Les deux domaines l'ont prise pour objet, parfois dans les mêmes années et sur les
+mêmes terrains. Ce qui décide reste l'objet du texte : la condition qu'un régulateur doit
+remplir pour tenir un système est ici ; ce que produit dans la durée un jeu de boucles déjà en
+place est là-bas.
+
+### Avec `organizational-sociology`, ouvert
+
+Le mot « régulation » est déjà instruit chez le voisin, et pas dans ce sens : la règle de
+contrôle et la règle autonome de Reynaud portent sur ce que des acteurs font des règles.
+**Le mot ne décide de rien.** Ce qui porte sur la règle, le pouvoir, la décision ou la
+structure relève de la sociologie des organisations ; ce qui porte sur le mécanisme de
+correction d'écart lui-même relève d'ici.
+
+### Avec `activity-ergonomics`, ouvert
+
+`regulation-de-l-activite` y est instruite : c'est ce que l'opérateur ajuste pour tenir sa
+tâche malgré les conditions. La régulation comme **conduite de quelqu'un en situation** est
+là-bas ; la régulation comme **propriété d'un système** est ici. Un texte de cybernétique peut
+parler d'humains sans changer de domaine, tant que son objet est la boucle et non ce qu'elle
+coûte à celui qui la tient.
+
+### Avec `human-factors`, ouvert
+
+Son périmètre a déjà cédé à ce domaine « la variété requise, la régulation d'un système par
+lui-même, la modélisation systémique du danger et l'analyse d'accident par modèle de
+contrôle », et sa cartographie n'a rien trouvé à consigner. La réciproque s'écrit ici : ce qui
+porte sur **ce que l'opérateur perçoit, comprend ou manque** reste chez lui, même quand le
+texte est écrit en vocabulaire de commande. Le contrôle supervisé de Sheridan, déjà instruit
+là-bas, en est le cas d'école — il doit manifestement à la théorie du contrôle, et il n'en est
+pas moins une carte de human factors. **Cette dette se signale, elle ne se réinstruit pas.**
+
+### Avec `measurement-theory`, ouvert
+
+Un indicateur est un signal dans une boucle, et cette parenté est réelle ; elle ne suffit pas.
+Tant que l'objet du texte est **ce que la boucle exige du signal** — son délai, son gain, ce
+qu'il doit discriminer —, c'est ici. Dès que l'objet est **l'effet en retour de la mesure sur
+le mesuré**, c'est là-bas, et c'est déjà instruit sous plusieurs cartes.
+
+### Avec `operations-management` et `decision-science`, fermés
+
+Files d'attente, capacité, stocks et pilotage de production d'un côté ; théorie du choix,
+valeur de l'information et jugement de l'autre : **angles morts, jamais rejets.** La recherche
+opérationnelle demande ici une attention particulière — plusieurs auteurs du champ en
+viennent, et c'est le texte qui tranche, pas le parcours de celui qui l'a écrit.
+
+## L'accès — ce qu'il faut présumer, et ce qu'il faut vérifier
+
+Deux présomptions, à tester tôt et à ne jamais tenir pour acquises :
+
+- **l'ancienneté n'ouvre rien par elle-même.** Une part des textes fondateurs sont des
+  ouvrages toujours exploités par des éditeurs actifs ; leur date ne dit rien de leur
+  disponibilité, et le domaine public n'est ni universel ni uniforme. Un texte présumé libre
+  se vérifie sur la source qui le sert, sinon il est fermé. Une mise à disposition autorisée
+  par un ayant droit se constate sur la page qui l'héberge, elle ne se déduit pas de l'âge du
+  texte.
+- **les archives valent la bibliographie.** Les bases indexent mal l'avant-1970 : actes
+  numérisés, fonds d'auteurs déposés par des universités, revues de sociétés savantes,
+  rapports publics. C'est la leçon des trois passages précédents — NASA NTRS et le miroir
+  légal de DTIC ont porté `human-factors`, OpenEdition Books a débloqué `measurement-theory` —
+  et elle se réapplique ici avec d'autres guichets.
+
+La règle d'accès ne change pas et n'est pas négociable :
+
+> **Aucun agent ne contourne un contrôle d'accès.** Face à un défi anti-robot, à un mur de
+> connexion, à un prêt numérique ou à une restriction d'emprunt, on essaie une autre voie
+> légitime ; on ne résout pas le défi, on ne se présente pas sous l'identité d'un navigateur,
+> on n'emprunte pas ce qui demande un compte. **Un texte qu'on ne peut pas ouvrir
+> légitimement est un texte qu'on n'a pas ouvert** : on le dit, et on ne conclut pas au
+> verbatim.
+
+## Thèmes
+
+**Aucun thème n'est déclaré à cette date, et c'est l'état normal d'un domaine qui vient de
+s'ouvrir.** Ils se déclareront dans `src/content/themes.ts` après la cartographie et à partir
+de ce qu'elle aura fait apparaître, jamais avant elle. La règle qui s'est réapprise à chaque
+domaine tient toujours : **un thème sans carte validée ne se déclare pas** — il afficherait
+une page vide et compterait pour de la couverture.
 
 ---
 
