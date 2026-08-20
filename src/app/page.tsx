@@ -13,6 +13,7 @@ import { ConceptSourceList } from "@/components/concept/ConceptSources";
 import { DeepenButton } from "@/components/ui/DeepenButton";
 import { Wordmark } from "@/components/ui/Wordmark";
 import { ScreenSkeleton } from "@/components/ui/ScreenSkeleton";
+import { espacesFrancaises } from "@/lib/typographie";
 
 /**
  * La hauteur d'un écran, barre de navigation déduite.
@@ -326,7 +327,7 @@ function ConceptCard({ concept }: { concept: Concept }) {
       ) : (
         <div className="flex flex-col gap-[1.1em]">
           <p className="font-serif-display text-[1.15em] leading-snug text-ink">
-            {concept.hookQuestion}
+            {espacesFrancaises(concept.hookQuestion)}
           </p>
           {concept.quotation && <ConceptQuotation quotation={concept.quotation} compact />}
           <p className="text-[1em] leading-relaxed text-ink-soft">{concept.shortExplanation}</p>

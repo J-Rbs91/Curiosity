@@ -3,7 +3,7 @@
 :root {
   /*
    * Échelle de neutres, numérotée comme celles de Tailwind : 50 est la plus
-   * claire, 950 la plus sombre. Onze valeurs, dont neuf réellement utilisées —
+   * claire, 950 la plus sombre. Onze valeurs, dont dix réellement utilisées —
    * c'est là que se joue la qualité perçue d'une interface sans couleur, bien
    * plus que dans le choix d'un accent.
    *
@@ -20,6 +20,7 @@
   --n-500: #6b6b6b; /* bordure et icône fonctionnelles        3,94:1 */
   --n-400: #8f8f8f; /* texte tertiaire, intitulé en capitales 6,49:1 */
   --n-300: #b5b5b5; /* texte secondaire                      10,24:1 */
+  --n-200: #d4d4d4; /* texte de lecture suivie               14,17:1 */
   --n-100: #ededed; /* texte principal                       17,94:1 */
   --n-50: #fafafa;  /* action principale, position courante  20,12:1 */
 
@@ -31,6 +32,23 @@
   --paper-raised: var(--n-850);
   --paper-contact: var(--n-800);
   --ink: var(--n-100);
+  /*
+   * Le gris de la lecture suivie, et la seule raison pour laquelle il existe :
+   * les deux barreaux voisins sont faux ici, chacun pour une raison opposée.
+   *
+   * `--ink-soft` (10,24:1) porte le texte secondaire — une phrase de liste, une
+   * ligne de méta. Il tient sur trois lignes ; sur mille cinq cents mots, il
+   * demande un effort d'accommodation à chaque paragraphe. `--ink` (17,94:1)
+   * est l'inverse : sur du noir, plus la valeur est claire, plus les jambages
+   * essaiment — c'est le halo que le §3 de `docs/ux-direction.md` interdit déjà
+   * au blanc pur, et il commence bien avant le blanc pur quand on lit huit
+   * minutes d'affilée.
+   *
+   * 14,17:1 est le point où le texte cesse d'être gris sans se mettre à
+   * rayonner. Il reste sous le texte principal, ce qui est juste : un titre se
+   * repère, un texte se lit.
+   */
+  --ink-reading: var(--n-200);
   --ink-soft: var(--n-300);
   --ink-faint: var(--n-400);
   --line: var(--n-600);
@@ -136,6 +154,7 @@
   --color-paper-raised: var(--paper-raised);
   --color-paper-contact: var(--paper-contact);
   --color-ink: var(--ink);
+  --color-ink-reading: var(--ink-reading);
   --color-ink-soft: var(--ink-soft);
   --color-ink-faint: var(--ink-faint);
   --color-line: var(--line);
@@ -228,6 +247,87 @@ body {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--ink-faint);
+}
+
+/* --------------------------------------------------------------------------
+ * La lecture suivie
+ *
+ * Un seul écran de l'application se lit en défilant — le texte qui prolonge une
+ * carte, mille cinq cents mots. Tous les autres se balaient. Ce sont deux
+ * gestes différents, et les régler avec les mêmes valeurs revient à n'en régler
+ * aucun : le texte long rendu avec les réglages d'une liste se lit comme une
+ * liste très longue.
+ *
+ * Quatre décisions, et chacune corrige un défaut mesuré sur le rendu réel.
+ *
+ * **La serif porte ce qui se lit.** C'est la règle du §5 de
+ * `docs/ux-direction.md`, et le seul écran fait pour être lu la contredisait :
+ * son titre, son accroche et ses intertitres étaient en serif, ses mille cinq
+ * cents mots en Inter. Le sans y était employé pour ce qu'il ne sait pas faire.
+ *
+ * **La taille est optique, pas nominale.** 1,17 rem n'est pas un septième pas
+ * de l'échelle : c'est `--text-md` rendu dans l'autre famille. La hauteur d'x
+ * de la Source Serif vaut environ 92 % de celle d'Inter au même corps ;
+ * conserver 1,08 rem en changeant de famille aurait rapetissé le texte au
+ * moment précis où on cherchait à le rendre plus lisible. La hiérarchie de
+ * l'écran, elle, ne bouge pas — l'intertitre reste au-dessus, en `--text-lg`.
+ *
+ * **La césure est le seul levier qui reste sur un téléphone.** La colonne y
+ * mesure 350 px et porte 38 signes par ligne, sous le plancher de 45 admis pour
+ * du texte courant. Ce plancher est hors d'atteinte à cette largeur : l'élargir
+ * demanderait un écran plus large, le rattraper en réduisant le corps rendrait
+ * le texte plus petit qu'avant. Ce qui reste atteignable est le drapeau — sans
+ * césure, un mot français long bascule entier et laisse un trou en fin de
+ * ligne, et c'est cette alternance de lignes pleines et de lignes creuses qui
+ * se ressent comme de la densité. `hyphenate-limit-chars` interdit les coupes
+ * qui coûteraient plus qu'elles ne rapportent : mots de moins de six signes,
+ * fragments de moins de trois.
+ *
+ * **Ce que cette déclaration ne garantit pas.** La césure demande au navigateur
+ * un dictionnaire de coupure, que tous n'embarquent pas — le Chromium de la
+ * machine de contrôle n'en a aucun, et les 38 signes par ligne relevés sont
+ * donc la valeur *sans* césure. Là où le dictionnaire français est présent
+ * (Safari sur les appareils Apple, Chrome une fois son composant installé),
+ * elle resserre le drapeau ; là où il manque, le rendu est exactement celui qui
+ * est mesuré. Elle ne peut donc rien dégrader, et rien de ce qui est annoncé
+ * ici ne repose sur elle.
+ *
+ * **L'écart entre paragraphes se mesure en interlignes, pas en pixels.** 1,35 em
+ * porte la distance de dernière ligne à première ligne à 1,8 fois l'interligne
+ * courant. En deçà, sur des paragraphes de cinq cents signes, la rupture ne se
+ * voit pas et les douze paragraphes se lisent comme un seul.
+ * -------------------------------------------------------------------------- */
+
+.reading {
+  font-family: var(--font-serif), Georgia, "Times New Roman", serif;
+  font-size: 1.17rem;
+  line-height: 1.65;
+  color: var(--ink-reading);
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphenate-limit-chars: 6 3 3;
+  text-wrap: pretty;
+}
+
+.reading > p + p {
+  margin-top: 1.35em;
+}
+
+/*
+ * La césure et l'équilibrage du drapeau, sans le reste du traitement : pour la
+ * prose courte qui accompagne le texte sans en faire partie — ce que les
+ * sources ne permettent pas d'établir, le passage de relais. Elle est en sans
+ * et le reste : elle encadre, elle ne se lit pas d'un trait.
+ */
+.reading-aside {
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphenate-limit-chars: 6 3 3;
+  text-wrap: pretty;
+}
+
+.reading-aside > p + p {
+  margin-top: 1.2em;
 }
 
 /* --------------------------------------------------------------------------

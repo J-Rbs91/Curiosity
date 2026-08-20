@@ -5,10 +5,23 @@ import { AppShell } from "@/components/ui/AppShell";
 import { ServiceWorkerRegistration } from "@/components/ui/ServiceWorkerRegistration";
 import { withBasePath } from "@/lib/base-path";
 
+/*
+ * Deux graisses, et c'est le compte exact de ce que l'application emploie.
+ *
+ * 400 est celle du texte long — c'est la graisse de labeur, et elle n'était pas
+ * chargée : les trois endroits qui appelaient la serif sans `font-semibold`
+ * — la citation d'une fiche, l'accroche de l'écran du jour, le titre de la
+ * feuille « Approfondir » — se rendaient donc dans la graisse voisine ou dans
+ * une graisse synthétisée par le navigateur, qui épaissit en déformant.
+ *
+ * 600 est celle des titres, la seule que `font-semibold` demande. 500 et 700
+ * étaient chargées et n'étaient appelées nulle part : les retirer paie le
+ * fichier que 400 ajoute, et au-delà.
+ */
 const sourceSerif = Source_Serif_4({
   variable: "--font-source-serif",
   subsets: ["latin"],
-  weight: ["500", "600", "700"],
+  weight: ["400", "600"],
 });
 
 const inter = Inter({

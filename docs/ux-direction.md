@@ -87,6 +87,7 @@ barreau a un emploi.
 | `--n-500` `#6b6b6b` | 3,94:1 | Une bordure ou une icône **fonctionnelle** — au-dessus du seuil de 3 |
 | `--n-400` `#8f8f8f` | 6,49:1 | Un intitulé en capitales, un auteur, un texte tertiaire |
 | `--n-300` `#b5b5b5` | 10,24:1 | Le texte secondaire |
+| `--n-200` `#d4d4d4` | 14,17:1 | Le texte d'une lecture suivie — et lui seul |
 | `--n-100` `#ededed` | 17,94:1 | Le texte principal |
 | `--n-50` `#fafafa` | 20,12:1 | L'action principale, la position courante |
 
@@ -96,6 +97,16 @@ du texte courant (il lui manque 0,6 pour atteindre 4,5), et c'est exactement pou
 
 **Le texte principal n'est pas blanc pur** : sur du noir, le blanc pur produit un
 halo qui fatigue à la lecture suivie, ce qui est précisément l'usage de ce produit.
+
+**Et le halo commence avant le blanc pur.** C'est la raison d'être de `--n-200`, qui
+n'existait pas et dont l'absence se voyait sur un seul écran. Le texte long ne peut
+prendre ni le gris du texte secondaire, qui tient sur trois lignes et coûte à chaque
+paragraphe sur huit minutes, ni celui du texte principal, qui rayonne au bout du même
+temps. 14,17:1 est le point entre les deux, et il reste **sous** le texte principal :
+un titre se repère, un texte se lit, et l'ordre des valeurs dit lequel est lequel.
+
+Ce barreau n'a qu'un emploi. Le poser ailleurs ferait quatre gris de texte là où trois
+suffisent, et le contraste cesserait de porter une information.
 
 ### Deux règles
 
@@ -387,6 +398,17 @@ isolément, et pas seulement côte à côte.
 | `--text-xl` | 1,555 rem · 24,9 px | Titre de l'écran de présentation |
 | `--text-2xl` | 1,866 rem · 29,9 px | Titre d'écran |
 
+**Six pas, et une taille qui n'en est pas un septième.** Le texte de l'écran de lecture est
+rendu à 1,17 rem, valeur qui ne figure pas dans le tableau parce qu'elle n'y a pas sa place :
+c'est `--text-md` **rendu dans l'autre famille**, et non un niveau de hiérarchie de plus. La
+hauteur d'x de la Source Serif vaut 0,500 em contre 0,547 pour Inter ; à taille nominale égale,
+changer de famille aurait rapetissé le texte de 9 % au moment précis où l'on cherchait à le
+rendre plus lisible. Le rendu confirme la parité — 9,36 px de hauteur d'x contre 9,45 avant.
+
+La règle qui en découle : une taille optique se justifie par une mesure sur les deux familles,
+et elle ne devient jamais un pas de l'échelle. Une seconde valeur de ce genre, sans mesure
+derrière elle, serait un septième pas déguisé.
+
 **L'unité n'est pas un détail.** Une taille écrite en pixels ne s'indexe sur rien : la
 préférence de taille de police du lecteur reste alors sans effet. L'application en comptait
 onze, littérales, dont sept entre 12 et 19 px — trop proches pour se distinguer, et toutes
@@ -461,6 +483,75 @@ avertissement sur la fiabilité de ce qui suit, alors qu'il dit l'inverse.
 
 Le cadrage complet de la rédaction est dans `corpus/deepenings/PROTOCOLE.md`. Il tient, pour
 un texte publié, ce que `src/domain/concepts/ai-prompt.ts` tient pour une conversation.
+
+### Comment cet écran se lit — et pourquoi il ne se règle pas comme les autres
+
+C'est le seul écran qui se lit en défilant. Tous les autres se balaient. Ce sont deux gestes,
+et les régler avec les mêmes valeurs revient à n'en régler aucun : le texte long rendu avec les
+réglages d'une liste se lit comme une liste très longue. Il portait donc, jusqu'ici, les
+réglages de l'écran qu'il n'est pas.
+
+Quatre décisions, une classe — `.reading` dans `globals.css` — et aucune valeur écrite au point
+d'usage. Le relevé complet, avant et après, est dans
+[`audit-navigation-lecture.md`](audit-navigation-lecture.md), entrée A5.
+
+| Décision | Ce qu'elle répare |
+|---|---|
+| Le texte courant est en **serif**, graisse 400 | La règle du §5 était contredite sur le seul écran où elle porte à conséquence : titre, accroche et intertitres en serif, mille cinq cents mots en sans |
+| À **1,17 rem**, taille optique et non nominale | À taille égale, la serif aurait rendu le texte 9 % plus petit qu'avant |
+| Dans **`--ink-reading`**, 14,17:1 | Il était dans le gris du texte secondaire, choisi pour des phrases de trois lignes |
+| Écarts de paragraphe et de section en **interlignes** | 1,35 em entre paragraphes, `--gap-group` entre sections : le rapport section/paragraphe passe de 2,5 à 2,9, au-dessus du double qu'exige le rythme vertical |
+
+**La colonne est plus large ici que partout ailleurs**, et c'est la seule chose qui distingue
+cet écran des autres en mise en page : 32 rem contre 28. Elle ne le distingue pas par goût, elle
+paie le changement de famille. À hauteur d'x égale, la Source Serif occupe 7 % de plus par signe
+qu'Inter ; sur une tablette, la colonne de 400 px serait tombée de 47 à 42 signes par ligne,
+sous le plancher de 45 admis pour du texte courant. À 472 px elle en porte 52, au milieu de la
+fourchette au lieu de son bord.
+
+**Ce que cela coûte, et il est écrit ici pour ne pas être redécouvert.** Sur un téléphone, la
+largeur est bornée par l'appareil : la ligne y perd deux signes, le premier paragraphe passe de
+63 à 77 % de la hauteur visible, et le défilement total gagne 15 %. La seule façon de rendre ces
+deux signes serait de réduire le corps, c'est-à-dire de défaire la correction. Le coût porte sur
+la longueur du défilement, que cet écran assume depuis le début, et non sur la lisibilité d'une
+ligne.
+
+**Aucun repère de progression n'a été ajouté**, et ce n'est pas un oubli. Un texte de neuf
+écrans est exactement le cas où l'on est tenté d'en poser un ; le §5 range les barres de
+progression parmi ce qui a été retiré, et le fait qu'un écran soit long ne rétablit pas ce qui
+mesurait l'application plutôt que la compréhension. La durée annoncée en tête suffit à dire
+l'engagement, et elle est là pour ça.
+
+### Les espaces de la ponctuation double
+
+Le corpus emploie trois caractères d'espace différents devant un même deux-points — 526
+ordinaires, 86 fines insécables, 47 insécables, sur trente-deux fichiers. Devant une espace
+ordinaire, le navigateur a le droit de couper : sur une colonne de trente-huit signes, le point
+d'interrogation partait seul en tête de la ligne suivante, y compris sur l'accroche en tête
+d'écran.
+
+La normalisation est faite **au rendu**, par `src/lib/typographie.ts`, et jamais dans les
+fichiers maîtres. Le motif est celui qui vaut pour tout le reste du corpus : corriger les
+fichiers corrigerait ceux qui existent et pas ceux qui viendront, et une règle qui ne tient que
+tant que personne ne l'oublie n'est pas une règle.
+
+La fonction **remplace** une espace, elle n'en **ajoute** jamais. C'est cette propriété, et non
+la convention typographique qu'elle applique, qui la rend sûre : une adresse, une heure, un
+point d'interrogation collé à son mot ressortent inchangés. La convention, elle, est celle du
+Lexique des règles typographiques — fine insécable devant les trois signes hauts, insécable de
+chasse pleine devant le deux-points et à l'intérieur des guillemets.
+
+**L'accroche passe partout par la fonction, et c'est une invariante, pas une commodité.** Elle
+s'affiche sur cinq écrans — la carte du jour, la fiche, les listes d'un thème et d'un auteur,
+et le texte long. Une même phrase rendue de deux façons selon l'écran est un défaut qu'on
+introduit soi-même en corrigeant à un seul endroit : on quitte la fiche où le point
+d'interrogation est seul sur sa ligne, on arrive sur le texte où il ne l'est plus.
+
+**Le reste de la prose française n'y passe pas encore.** La citation d'une fiche, le résumé
+d'une carte et les libellés de sources portent le même défaut à une échelle où il se manifeste
+rarement. Les y faire passer est la suite naturelle ; le cas des libellés de sources demande
+d'abord de trancher une question documentaire, puisqu'un titre d'article s'y reproduit tel
+qu'il a été publié.
 
 ### Le relais vers une IA, rétrogradé mais pas supprimé
 
