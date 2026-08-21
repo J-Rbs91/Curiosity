@@ -1,0 +1,62 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "critere-de-la-retroaction",
+  "slug": "critere-de-la-retroaction",
+  "status": "IN_REVIEW",
+  "title": "Le critère de la rétroaction",
+  "themes": [
+    "la-boucle-et-l-ecart"
+  ],
+  "domain": "cybernetics",
+  "theme_labels": {
+    "la-boucle-et-l-ecart": "Ce dont une boucle se nourrit"
+  },
+  "authors": [
+    {
+      "name": "Guy Paquette",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Guy Paquette signe seul ; le collègue remercié dans sa première note pour sa collaboration aux réflexions n'est pas cosignataire. Il ne forge ni « rétroaction » ni « rétroinformation », termes déjà en circulation : il leur assigne des définitions distinctes. La préinformation et la préaction, qu'il ajoute, sont données par lui comme des hypothèses de travail et non comme des prises de position. L'article se rattache explicitement à Gabriel Veraldi, « Communication : une science et non une idéologie », dont il reprend le reproche fait aux spécialistes de la communication, l'emprunt de concepts venus d'autres disciplines et leur utilisation dénaturée.",
+  "hook": "À quelle condition un retour d'information mérite-t-il le nom de rétroaction ?",
+  "summary": "Il n'y a rétroaction que si de l'information sur l'effet de l'action, et non l'effet lui-même, revient à la source, et si l'action peut encore être corrigée.",
+  "quotation": {
+    "text": "Contrairement à ce que l'on dit souvent, ce n'est pas l'effet de l'action qui est fed back […], mais plutôt de l'information sur cet effet.",
+    "reference": "Guy Paquette, « Feedback, rétroaction, rétroinformation, réponse... du pareil au même », Communication et langages, n° 73, 3e trimestre 1987, p. 5-18.",
+    "locator": "p. 8, « Fonctionnement du processus »",
+    "language": "fr",
+    "original_text": null,
+    "original_language": null,
+    "translation": {
+      "kind": "none",
+      "translator": null,
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "Guy Paquette, « Feedback, rétroaction, rétroinformation, réponse... du pareil au même », Communication et langages, n° 73, 3e trimestre 1987, p. 5-18. Armand Colin.",
+      "kind": "primary",
+      "locator": "p. 6-13",
+      "doi_isbn": "10.3406/colan.1987.984",
+      "url": "https://www.persee.fr/doc/colan_0336-1500_1987_num_73_1_984",
+      "consulted": "full-text"
+    }
+  ],
+  "review": {
+    "reviewer": null,
+    "date": null,
+    "verdict": "PENDING"
+  },
+  "dossier": "corpus/evidence/retroaction-denaturee/lecture.json",
+  "notes": [
+    "L'identifiant du dossier documentaire et celui de la carte diffèrent, et c'est volontaire. Le dossier reste corpus/evidence/retroaction-denaturee/lecture.json, du nom sous lequel le candidat avait été repéré. La lecture primaire signale elle-même que « retroaction-denaturee » et la formule « un concept emprunté et vidé » nomment le motif de l'article et non sa thèse : la dénaturation tient dans le premier paragraphe et la conclusion, tandis que les pages 6 à 13 exposent frontalement le mécanisme. La thèse est un critère d'identification, et un identifiant se lit dans la barre d'adresse : il nomme donc la thèse. Précédent dans le corpus : gouvernement-par-les-chiffres, dont l'id et le slug divergent depuis un retitrage.",
+    "La seconde condition, que le résumé porte et que la citation ne porte pas : « si l'action ne peut être exécutée qu'une seule fois, par exemple, ouvrir son parachute à 200 m du sol, il ne peut y avoir fonctionnement par feedback puisque l'action ne peut être reprise ». C'est elle qui sépare la rétroaction de la rétroinformation, laquelle ne fait boucle que si l'action peut encore être modelée.",
+    "Une troisième correction du même passage n'a pas tenu dans la carte : la réaction de la cible n'est pas le feedback, celui-ci réside « dans la connaissance que la source en a ».",
+    "Le texte de Paquette porte réellement des tirets cadratins et il en use en permanence, y compris dans le passage que la cartographie avait relevé. Aucun n'entre ici : le tiret cadratin est interdit sur toute carte affichée, citation comprise. Tout emprunt ultérieur à cet article doit être vérifié sur ce point.",
+    "Ne pas reprendre « 1950 » pour l'entrée du mot feedback dans la terminologie scientifique : Paquette l'écrit p. 6 contre sa propre note de bas de page, qui cite Wiener en 1948. Le titre que porte cette note est également fautif.",
+    "La page 5 porte un encadré éditorial en gras qui résume l'article et parle de l'auteur à la troisième personne : c'est la rédaction de la revue qui parle, et ce texte ne doit en aucun cas être cité comme parole de Paquette.",
+    "La proposition terminologique finale (rétroaction, rétroinformation, préinformation, préaction) vise les sciences de la communication et rien d'autre, l'auteur le dit. L'exposition du mécanisme, elle, est menée sur des machines et sur le vivant : la carte s'appuie sur la seconde et n'étend pas la première.",
+    "Aucune source secondaire n'a été identifiée. L'article de Veraldi de 1969, auquel Paquette se rattache, est confirmé dans son existence et son DOI par sa notice, mais il n'a pas été ouvert : il n'est donc pas affiché en source, et rien de ce que Paquette en rapporte ne doit être repris comme établi."
+  ]
+}

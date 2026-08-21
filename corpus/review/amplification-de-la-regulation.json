@@ -1,0 +1,69 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "amplification-de-la-regulation",
+  "slug": "amplification-de-la-regulation",
+  "status": "IN_REVIEW",
+  "title": "L'amplification de la régulation",
+  "themes": [
+    "variete-et-moyens-de-la-regulation"
+  ],
+  "domain": "cybernetics",
+  "theme_labels": {
+    "variete-et-moyens-de-la-regulation": "Ce qu'il faut pour tenir un système"
+  },
+  "authors": [
+    {
+      "name": "W. Ross Ashby",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Le nom du concept est de l'auteur : « Amplifying Regulation » est le titre du chapitre 14 d'An Introduction to Cybernetics, et Ashby emploie la tournure « an amplification of regulation » dans sa propre préface pour annoncer ce que fera la troisième partie du livre. Le titre français traduit donc un intitulé d'auteur, il n'est pas un baptême par un tiers. Le concept est un corollaire de la loi de la variété requise, qu'Ashby énonce lui-même au chapitre 11 du même ouvrage, et il s'appuie explicitement sur les sections du chapitre précédent : c'est un enchaînement interne à un livre d'un seul auteur.",
+  "hook": "Comment obtenir une régulation plus grande que celle qu'on sait fabriquer ?",
+  "summary": "La loi de la variété requise interdit d'agrandir un régulateur, non de le supplémenter : sélectionner par étapes en établit un plus grand, si la perturbation se répète.",
+  "quotation": {
+    "text": "The law of Requisite Variety […] absolutely prohibits any direct and simple magnification but it does not prohibit supplementation.",
+    "reference": "W. Ross Ashby, An Introduction to Cybernetics, Londres, Chapman & Hall, 1956 (tirage lu : seconde impression, 1957), chapitre 14 « Amplifying Regulation », section 14/4 « Regulation and selection ». Édition électronique de 1999 préparée pour le Principia Cybernetica Web avec l'autorisation de la succession Ashby.",
+    "locator": "ch. 14, section 14/4, p. 268",
+    "language": "en",
+    "original_text": null,
+    "original_language": null,
+    "translation": {
+      "kind": "none",
+      "translator": null,
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "W. Ross Ashby, An Introduction to Cybernetics, Londres, Chapman & Hall, 1956. Édition électronique de 1999 autorisée par la succession Ashby, Principia Cybernetica Web.",
+      "kind": "primary",
+      "locator": "ch. 14, p. 265-271",
+      "doi_isbn": null,
+      "url": "https://pespmc1.vub.ac.be/books/IntroCyb.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Michael U. Ben-Eli, « Amplifying regulation and variety increase in evolving systems », Journal of Cybernetics, 9(3), 1979, p. 285-296.",
+      "kind": "secondary-academic",
+      "locator": null,
+      "doi_isbn": "10.1080/01969727908927610",
+      "url": "https://doi.org/10.1080/01969727908927610",
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "reviewer": null,
+    "date": null,
+    "verdict": "PENDING"
+  },
+  "dossier": "corpus/evidence/amplification-de-la-regulation/lecture.json",
+  "notes": [
+    "La condition est le caractère répétitif de la perturbation, pas la mise en étages seule. Ashby l'écrit dans son exemple chiffré du bain thermostaté : « by using the fact that the Grand Disturbance is repetitive [...] the act of selecting appropriately from 1000 bits has as consequence the correct selection from 36,500 bits ». Il le confirme a contrario en 14/6, où l'amplification n'a pas lieu.",
+    "Ashby pose lui-même deux garde-fous que la reprise perdrait volontiers : pour le théoricien il n'y a aucune amplification réelle, l'opérateur puisant dans une source abondante ; et « There is, of course, not necessarily any amplification », le praticien évaluant toujours la balance entre le coût de fabriquer la machine et celui de faire le travail.",
+    "La coupe retire les six mots « like the law of Conservation of Energy », c'est-à-dire la comparaison qui place la loi dans la classe des interdits absolus de la physique. Les deux propositions, l'interdiction et l'exception, sont conservées intactes avec leur adverbe « absolutely ». Une variante sans « absolutely » a été écartée : elle affaiblissait l'interdit.",
+    "La lecture primaire corrige la cartographie sur la localisation : le passage n'est pas « autour de la section 14/3 » mais à la fin de la section 14/4, p. 268, relue sur l'image du feuillet.",
+    "Ben-Eli (1979) est la seule reprise dédiée du concept sous son nom qui ait été identifiée ; elle est fermée et n'a pas été ouverte, seules ses métadonnées ont été vérifiées. Aucune source secondaire ouverte n'a été trouvée, ni en anglais ni en français.",
+    "La rareté du concept dans la littérature n'est établie que par trois contrôles négatifs (la reprise de la loi par Ashby en 1958, l'article de synthèse de Heylighen et Joslyn, le Web Dictionary of Cybernetics and Systems) : cela rend le signal plausible, cela ne le mesure pas.",
+    "La référence et le localisateur de la citation ont été ramenés à ce qui s'affiche ; le détail de l'exemplaire, de la pagination et du défaut de composition du fichier de 1999 est dans corpus/evidence/amplification-de-la-regulation/lecture.json."
+  ]
+}
