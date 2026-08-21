@@ -3,6 +3,9 @@
 Écrit sur le disque parce qu'une session a déjà été coupée en cours de route : ce fichier
 existe pour qu'une reprise reparte des fichiers, et non de la mémoire de quelqu'un.
 
+Ce fichier dit ce que le corpus **est**. Ce qui lui **manque**, et par quel bout le prendre,
+est dans [`corpus/RESTE-A-FAIRE.md`](RESTE-A-FAIRE.md).
+
 `npm run corpus:validate` : **58 enregistrements, 57 validés, 0 erreur, 42 avertissements.**
 `npm run corpus:deepen` : **32 approfondissements écrits pour 57 cartes validées.**
 `npm test` : **257 tests, 0 échec.**
