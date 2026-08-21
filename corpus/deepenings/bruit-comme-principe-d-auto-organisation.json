@@ -1,0 +1,58 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "bruit-comme-principe-d-auto-organisation",
+  "lead": [
+    "Sur une ligne téléphonique qui grésille, une partie de ce qui a été dit n’arrive pas. Le grésillement n’apporte rien, il retranche, et toute la technique des communications consiste à le réduire autant qu’on peut. C’est en ce sens que le mot bruit est pris ici : des phénomènes aléatoires et parasites qui viennent brouiller un message entre celui qui l’émet et celui qui le reçoit. Henri Atlan part exactement de là, et il prend au sérieux l’objection qui l’attend. Un théorème, celui de la voie avec bruit, dû à Shannon, établit que l’information recueillie à la sortie d’une voie perturbée ne peut que décroître, et décroître précisément de ce que le bruit y a rendu indécidable. Ce n’est pas une opinion contrariante, c’est un résultat démontré.",
+    "Soutenir après cela que le bruit organise ressemble à un tour de passe-passe. Son article de 1972 ne conteste pourtant rien du théorème : il déplace ce qu’on compte, et l’endroit d’où on le compte. Une même perturbation ne produit pas le même effet selon qu’on regarde le message qui circule entre deux parties d’un ensemble, ou l’ensemble entier auquel ces deux parties appartiennent. Encore faut-il que cet ensemble soit d’une certaine sorte, et qu’il ait de quoi payer : les deux conditions sont énoncées dans l’article, et elles sont contraignantes."
+  ],
+  "sections": [
+    {
+      "title": "Ce que le bruit rend indécidable",
+      "paragraphs": [
+        "À la sortie d’une voie perturbée, une partie de ce qui arrive ne permet plus de décider ce qui avait été envoyé : plusieurs messages différents à l’entrée auraient produit le même résultat à l’arrivée. La théorie de l’information sait mesurer cette part d’indécision et lui donne un nom, l’ambiguïté. Le théorème s’énonce alors très simplement : la quantité d’information transmise d’un point A à un point B est celle qui est disponible en B, diminuée de l’ambiguïté introduite entre l’entrée et la sortie de la voie, et elle ne peut en aucun cas lui être supérieure.",
+        "Tant qu’on en reste là, la cause paraît entendue, et Atlan l’écrit lui-même : ce théorème semble exclure toute possibilité d’un rôle organisationnel du bruit. Sa réponse ne porte pas sur le théorème, mais sur la manière dont on s’en sert quand on quitte le problème de la transmission d’un message pour celui de l’analyse d’un système organisé. Ce transport charrie des postulats qui ne sont jamais énoncés, et c’est là que se loge le paradoxe apparent."
+      ]
+    },
+    {
+      "title": "La même ambiguïté, comptée deux fois",
+      "paragraphs": [
+        "Supposons que A et B ne soient pas deux correspondants étrangers l’un à l’autre, mais deux sous-systèmes d’un même ensemble, et que la voie bruitée passe à l’intérieur de cet ensemble. Rien n’a changé dans la mesure de l’ambiguïté. Ce qui change, c’est ce dont on totalise l’information. Du point de vue de la transmission de A vers B, l’ambiguïté est perdue ; du point de vue de la quantité d’information de l’ensemble A et B pris comme un tout, elle s’ajoute. Atlan tient les deux comptes dans une seule phrase : l’ambiguïté y est « considérée comme perdue du point de vue de la transmission de A à B, et au contraire comme un supplément du point de vue de la quantité d’information totale […] de l’ensemble du système ».",
+        "La raison de ce supplément tient dans un mot : autonomie. Moins B est déterminé par ce que A lui envoie, plus il peut prendre des états que A ne lui dicte pas, et plus l’ensemble, considéré du dehors, présente de configurations possibles. Atlan nomme les deux effets et leur donne un signe : l’ambiguïté-destructrice, qui se compte négativement, et l’ambiguïté-autonomie, qui se compte positivement. Ce sont deux effets d’une seule et même perturbation, non deux espèces de bruit qu’on pourrait trier à l’entrée.",
+        "C’est pourquoi le second versant ne remplace jamais le premier. Immédiatement après avoir montré comment un rôle positif du bruit peut se concevoir, Atlan rappelle que le fonctionnement du système dépend bel et bien de ce qui se transmet d’un sous-système à l’autre, et qu’à côté de ce rôle de facteur de complexification, « le rôle destructeur classique ne peut pas être ignoré ». Retenir de ce texte que le bruit organise, sans plus, c’est lui faire dire autre chose que ce qu’il dit."
+      ]
+    },
+    {
+      "title": "Pourquoi une seule voie ne suffit pas",
+      "paragraphs": [
+        "La contre-épreuve est donnée au même endroit, et elle est sévère. Dans un système réduit à une seule voie de communication entre A et B, l’autonomie de B à l’égard de A ne peut signifier qu’une chose : le système fonctionne mal, puis il se défait. Aucune complexification n’est à espérer là, parce qu’il n’y a rien d’autre pour tenir l’ensemble une fois le lien brouillé.",
+        "Il faut donc se représenter A et B reliés non seulement l’un à l’autre, mais chacun à un grand nombre d’autres sous-systèmes par un grand nombre d’autres voies, de telle sorte qu’une indépendance même totale de B à l’égard de A n’entraîne pas la disparition de l’ensemble. Atlan reprend ici à von Neumann la notion de système extrêmement hautement compliqué, dont les composants sont très nombreux et les relations entre eux très enchevêtrées. La condition est explicite : « Ce n’est que dans de tels systèmes qu’un rôle positif du bruit, par l’intermédiaire d’une ambiguïté-autonomie, peut coexister avec son rôle destructeur ». Hors de là, il reste le bruit ordinaire, celui qui abîme."
+      ]
+    },
+    {
+      "title": "La redondance, et ce qu’elle a à perdre",
+      "paragraphs": [
+        "Une seconde condition accompagne la première. La redondance, dans ce vocabulaire, désigne ce qu’un ensemble comporte de répétition : des éléments qui font la même chose, des liaisons qui disent deux fois ce qu’il suffirait de dire une fois, bref la part qu’on pourrait lui retirer sans rien perdre de ce qu’il accomplit. Grâce à ses nombreuses interconnexions, et pourvu que sa redondance initiale soit suffisamment grande, un système reste capable de fonctionner après la perturbation, et sa quantité d’information totale a augmenté.",
+        "Atlan en tire une exigence de seuil : pour qu’un système ait des propriétés auto-organisatrices, sa redondance initiale doit avoir une valeur minimum, « puisque ces propriétés consistent en une augmentation de complexité par destruction de redondance ». La formule dit du même coup ce que l’opération coûte. Le processus décrit est une suite de désorganisations rattrapées, chaque rétablissement laissant l’ensemble avec plus de variété et moins de redondance qu’auparavant. Ce qui nourrit l’organisation est prélevé sur une réserve qui diminue."
+      ]
+    },
+    {
+      "title": "Deux termes de signes contraires",
+      "paragraphs": [
+        "La formulation la plus serrée n’est pas une image, mais une équation, celle par laquelle Atlan suit dans le temps la quantité d’information du système. Son taux de variation y apparaît comme la somme de deux termes qui correspondent, schématiquement, aux deux effets opposés du bruit. Le premier exprime la variation de la redondance : si celle-ci est initialement assez élevée, elle diminue sous l’effet de l’ambiguïté-autonomie, et ce terme devient positif, contribuant à accroître l’information du système. Le second exprime la variation de l’information maximale que le système pourrait porter, et il est négatif.",
+        "Une somme de deux termes de signes contraires ne garde pas le même signe indéfiniment. Selon les valeurs des paramètres, la quantité d’information commence par augmenter, atteint un maximum, puis décroît : une phase de croissance et de maturation, avec possibilité d’apprentissage adaptatif, précède une phase de vieillissement et de mort. Atlan souligne que ce sont les mêmes facteurs qui font les deux, ceux dont la désorganisation progressive conduira le système à sa mort ayant auparavant nourri son développement. La coexistence des deux rôles n’est donc pas une prudence ajoutée après coup : elle est inscrite dans la structure du calcul."
+      ]
+    },
+    {
+      "title": "Un bruit qui cesserait d’en être un",
+      "paragraphs": [
+        "Reste l’objection que la thèse appelle, et le texte se la fait à lui-même. Si le bruit venu de l’environnement était utilisé par le système comme facteur d’organisation, il ne serait plus vraiment du bruit : cela reviendrait à dire que les facteurs de l’environnement ne sont pas aléatoires. Or ils le sont. Atlan tient les deux bouts. Ces processus n’existent qu’autant que les erreurs sont a priori de vraies erreurs, que l’ordre est vraiment perturbé par le désordre, que la destruction, sans être totale, est réelle.",
+        "De là vient le titre de la dernière partie de l’article, le bruit comme événement, et le lieu de sa publication, un numéro de la revue Communications consacré à l’événement. Les effets du bruit deviennent des événements de l’histoire du système et de son organisation ; ils demeurent pourtant les effets d’un bruit en ceci que leur survenue était imprévisible. Un système qui saurait d’avance ce qui va le perturber ne serait pas auto-organisateur au sens de ce texte : il serait seulement bien conçu."
+      ]
+    }
+  ],
+  "limits": [
+    "Le principe lui-même n’est pas d’Atlan et il le dit : il le rapporte à Heinz von Foerster, « le premier, à notre connaissance », et renvoie à On self organizing systems and their environments, paru en 1960 dans le volume dirigé par Yovits et Cameron chez Pergamon. Sous quelle forme la formule y est posée, et ce qu’elle y recouvre, ce sont ces pages qui le disent, et il faudra les lire. Même chose pour les phrases de von Foerster et pour la « loi de la variété indispensable » d’Ashby que l’article rapporte : Atlan les traduit lui-même, sans mention de traducteur ni d’édition, et ce sont donc ses mots à lui.",
+    "L’ouvrage L’organisation biologique et la théorie de l’information figure dans la bibliographie de l’article sous la mention à paraître, chez Hermann : c’est là qu’Atlan déploie sur un livre entier ce que seize pages compriment. Lequel des deux a paru le premier, et de combien, ne se lit ni dans l’article ni dans le numéro de Communications, qui ne portent pas de mois.",
+    "En français, un seul texte accessible situe vraiment la notion plutôt que de la mentionner au passage : Bernard Paulré range en 1997 les « théories de l’ordre par le bruit (H. von Foerster, H. Atlan) » parmi les théories de l’auto-organisation, et retient la condition de redondance. Mais il renvoie à l’ouvrage de 1972 et à Entre le cristal et la fumée, jamais à l’article. Une phrase de la page 35 de celui-ci se retrouve pourtant mot pour mot dans le livre de 1979 : ce que le livre en reprend et ce qu’il en déplace, c’est en l’ouvrant qu’on le verra."
+  ]
+}

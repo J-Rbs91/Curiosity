@@ -1,0 +1,58 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "gestion-du-risque-fatigue",
+  "lead": [
+    "Dans les métiers où la sécurité tient à l’attention d’une personne, la fatigue se règle d’ordinaire avec une pendule : un texte fixe une durée maximale de service et une durée minimale de repos, et l’on s’arrête quand l’heure y est. Philippe Cabon rappelle ce principe au début d’un article de 2015 : « Traditionnellement, la prévention de la fatigue des salariés s’appuie sur des approches prescriptives encadrant des limitations des temps de service et de temps de repos minimum. » Compter des heures suppose pourtant quelque chose de précis : que la fatigue monte à mesure qu’on travaille et redescende à mesure qu’on se repose. Deux personnes qui ont fait le même service ont donc, sur le papier, la même fatigue.",
+    "D’autres dispositifs prennent le problème par l’autre bout : au lieu d’un plafond identique pour tous, ils évaluent la fatigue elle-même, puis fixent les limites d’après cette évaluation. Cabon décrit cette bascule, et consacre la fin de son article à son point faible : connaître le niveau de fatigue de quelqu’un ne dit pas encore quel risque il fait courir."
+  ],
+  "sections": [
+    {
+      "title": "Ce qu’une règle d’heures sait de la fatigue",
+      "paragraphs": [
+        "Ces règles de temps, Cabon les qualifie d’unidimensionnelles, en reprenant le mot à des travaux australiens : elles ne s’appuient que sur une seule dimension, le temps. Le modèle qui les soutient est linéaire au sens le plus simple, celui d’une droite : la fatigue augmente proportionnellement à la durée du travail et diminue proportionnellement à celle du repos. Il connaît le terrain pour avoir comparé, avec ses collègues, vingt-six réglementations nationales des temps de service.",
+        "Une durée ne dit pourtant pas ce qu’elle a coûté. Le même nombre d’heures ne pèse pas de la même façon selon le sommeil qui a précédé, selon l’heure à laquelle le service commence, selon que l’on peut ou non s’interrompre. Cabon rattache d’ailleurs l’importance prise par ces questions à l’automatisation des outils de travail, qui a développé des activités de surveillance sollicitant fortement la vigilance : le travail se fait moins par l’effort que par l’attention maintenue, et c’est cette attention-là que la fatigue attaque."
+      ]
+    },
+    {
+      "title": "Mesurer la fatigue plutôt que compter les heures",
+      "paragraphs": [
+        "Que fait concrètement un système de ce genre ? Cabon en décrit deux pièces qu’il tient pour indispensables. La première est un ensemble de logiciels qui prédisent le niveau de fatigue des opérateurs, c’est-à-dire de ceux qui pilotent, conduisent ou surveillent, à partir de leurs horaires de travail : on entre les services et les repos, ils rendent une estimation. Ce sont ce qu’on appelle des modèles biomathématiques, des résultats de la recherche sur le sommeil mis en équations puis en programmes. La seconde est un retour d’expérience centré sur la fatigue, c’est-à-dire un circuit par lequel ce que vivent les opérateurs remonte et s’enregistre.",
+        "Autour de ces deux pièces viennent des instruments plus ordinaires : agendas de sommeil, actométrie qui enregistre l’activité motrice, tests de performance, échelles de fatigue que l’opérateur renseigne lui-même en cours de service, parfois sur une interface installée dans le cockpit et relevée ensuite au sol. L’objectif que Cabon leur assigne est de prévenir la fatigue au plus près de l’activité et des contraintes réellement rencontrées : horaires des services, possibilité de faire des pauses, nature de l’activité. Les critères qui limitent le temps de service s’appuient alors sur la fatigue réelle plutôt que sur des valeurs universelles censées couvrir toutes les situations."
+      ]
+    },
+    {
+      "title": "Un vocabulaire venu de l’aviation civile",
+      "paragraphs": [
+        "Ces dispositifs portent un nom, et ce nom vient d’un secteur précis. Cabon ne dit pas qui l’a forgé : il l’introduit au passif, ces approches étant désignées sous l’appellation de systèmes de gestion du risque fatigue, abrégée en SGS-RF, ou Fatigue Risk Management System en anglais. L’acronyme français porte la trace de son origine : le risque fatigue y est adossé au système de gestion de la sécurité d’une compagnie. Deux sources institutionnelles sont nommées, toutes deux aéronautiques : une recommandation de l’Organisation de l’aviation civile internationale, qui en donne une définition, et les autorités de l’aviation civile australienne, qui ont fortement encouragé le concept. Les exemples que Cabon passe en revue sont ceux de compagnies aériennes.",
+        "Une précision compte, parce qu’elle change la portée de l’affaire : ces systèmes peuvent soit compléter les limitations réglementaires, soit s’y substituer totalement. Le premier cas laisse la pendule en place et lui ajoute une évaluation ; le second confie à l’évaluation la limite elle-même. C’est ce second cas que vise la conclusion de l’article, et c’est lui qui rend décisive la question suivante."
+      ]
+    },
+    {
+      "title": "Un postulat exposé, puis retourné",
+      "paragraphs": [
+        "Que gagne-t-on, au juste, à connaître un niveau de fatigue ? La réponse tient dans une hypothèse que Cabon énonce très tôt : « Le postulat sur lequel repose ces systèmes est que le niveau de fatigue des opérateurs permet de prédire le niveau de sécurité. » La phrase est de lui, l’idée ne l’est pas : il l’expose pour la discuter, et la phrase qui suit commence par un « or ». Cette idée vient, explique-t-il, de nombreux travaux de laboratoire qui montrent un lien linéaire entre fatigue et performances cognitives.",
+        "En laboratoire, la tâche est fixée : le sujet fait ce qu’on lui demande, et sa performance baisse à mesure qu’il fatigue. En situation réelle, les tâches sont plus complexes, et surtout l’opérateur ne les subit pas : il adapte sa façon de faire pour gérer le risque. C’est là que la droite se casse. De quoi Cabon tire une objection franche contre les logiciels de prédiction : « ils peuvent donner une fausse illusion de prédire un risque sur la sécurité alors qu’ils ne prédisent qu’une probabilité de fatigue élevée. » Une probabilité de fatigue élevée n’est pas un niveau de risque, et confondre les deux revient à croire qu’on mesure la sécurité quand on mesure la fatigue."
+      ]
+    },
+    {
+      "title": "Quand une fatigue modérée devient plus risquée",
+      "paragraphs": [
+        "Le premier ressort de cet écart est la compensation. Un opérateur fatigué garde des moyens de compenser la baisse de ses ressources. Cabon ne dresse pas la liste de ces conduites ; il en retient l’effet, et cet effet est paradoxal : ces stratégies de protection de la performance améliorent certains indicateurs de sécurité. La fatigue peut donc faire baisser un chiffre censé signaler le danger.",
+        "Une recherche qu’il rapporte le montre par les deux bouts : des services commençant très tôt le matin réduisaient le nombre d’événements de sécurité peu graves, tout en augmentant celui des événements de criticité élevée. Selon l’indicateur que l’on regarde, la même organisation du travail paraît plus sûre ou plus dangereuse.",
+        "Le second ressort est cognitif, et c’est celui auquel il accorde le plus de poids : « la conscience que l’opérateur a de son niveau de fatigue joue manifestement un rôle essentiel ». On ne se protège que de la fatigue que l’on sent, et Cabon rappelle que des conducteurs surestiment leur niveau d’éveil en fin de trajet. De là sa conclusion, qui renverse l’intuition : la relation entre fatigue et sécurité n’est pas linéaire, et des niveaux de fatigue relativement faibles sont susceptibles d’augmenter le risque, précisément parce qu’ils se détectent mal et n’entraînent aucune adaptation du comportement."
+      ]
+    },
+    {
+      "title": "La condition que l’auteur met à ces systèmes",
+      "paragraphs": [
+        "Cabon ne conclut pas au rejet, et ce qu’il demande est plus exigeant : « Une meilleure connaissance des liens fatigue-sécurité nous semble donc être une condition indispensable à la validité et l’efficacité des SGS-RF ». Tant que le lien est supposé droit, un système qui prédit la fatigue et règle sur elle les temps de service risque de reproduire en partie les limites des réglementations qu’il devait dépasser : plus fin dans ses moyens, il reste bâti sur le même modèle.",
+        "La bascule qu’il décrit garde alors son intérêt, mais elle change de nature. Elle ne promet pas de prédire les accidents à partir d’un niveau de fatigue ; elle promet de rapprocher la limite du travail tel qu’il se fait, de ses horaires, de ses pauses possibles, de ce qu’il demande. Ce que valent ces systèmes reste, chez lui, une question ouverte : il note en terminant qu’ils sont récents et que les retours sur leur efficacité sont encore peu nombreux."
+      ]
+    }
+  ],
+  "limits": [
+    "Le vocabulaire de ces systèmes n’est pas celui de Cabon, et son article renvoie aux textes qui le portent : la recommandation de l’Organisation de l’aviation civile internationale, dont il reprend la définition, et le manuel que cette organisation destine aux régulateurs. Ce sont ces documents qui disent en quels termes exacts un régulateur définit un système de gestion du risque fatigue, et depuis quand. Sa bibliographie ne date d’ailleurs pas la recommandation qu’il cite : elle ne porte que le manuel de 2011. Pour ces termes-là, il faudra aller les lire.",
+    "Les travaux australiens auxquels il rattache l’essor de ces dispositifs, et ceux qui ont nommé les stratégies de protection de la performance, tiennent l’un l’histoire du terme, les autres la démonstration de cet effet paradoxal par lequel un opérateur fatigué fait parfois mieux tenir certains indicateurs. Cabon les cite en passant ; c’est chez eux que la démonstration se lit.",
+    "Ce que ces systèmes ont donné à l’usage n’est pas tranché par cet article de 2015, qui se referme au contraire sur la rareté des retours d’efficacité. Sa force est ailleurs, dans l’objection de principe. Les évaluations parues depuis diront ce qu’il en est advenu."
+  ]
+}

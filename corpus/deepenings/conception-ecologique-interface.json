@@ -1,0 +1,55 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "conception-ecologique-interface",
+  "lead": [
+    "Quelqu’un qui refait chaque jour le même trajet ne délibère pas : ses mains suivent la route, et il ne saurait pas dire ce qu’il a fait des dix dernières minutes. Qu’un voyant connu s’allume, et le voilà qui reconnaît le signal et applique la conduite apprise pour ce cas-là. Qu’il entende en revanche un bruit inconnu, et il n’a plus de conduite apprise : il lui faut se faire une idée de ce qui se passe sous le capot, puis raisonner à partir de là. Trois façons d’agir dans la même journée, sur la même machine.",
+    "Celui qui dessine le tableau de bord ignore laquelle des trois se présentera. S’il présente tout sous forme de chiffres à interpréter, il oblige à réfléchir même lorsque la situation ne le demande pas, et ce qui aurait pu se faire d’un geste devient lent et fatigant. S’il réduit tout à quelques voyants, il ne restera plus rien pour comprendre le jour où survient ce que personne n’avait prévu. C’est par ce jour-là que Kim J. Vicente et Jens Rasmussen prennent le problème : l’événement non familier, que le concepteur n’a pas anticipé et pour lequel il n’existe aucune solution toute faite."
+  ],
+  "sections": [
+    {
+      "title": "Trois façons de faire face à une même situation",
+      "paragraphs": [
+        "Ces trois régimes portent un nom dans les travaux de Jens Rasmussen, où ils forment trois niveaux de contrôle cognitif, c’est-à-dire trois façons dont une personne prend en charge la situation devant elle. L’article de 1992 les reprend tels quels : le comportement fondé sur l’habileté, celui qui est fondé sur des règles, et celui qui est fondé sur des connaissances. Le premier est le geste ajusté en continu, sans mots ni délibération. Le deuxième reconnaît une situation déjà rencontrée et applique la conduite apprise pour elle. Le troisième n’a plus de conduite disponible : il faut se représenter le fonctionnement de l’installation et en déduire quoi faire.",
+        "Ce qui décide du niveau engagé n’est pas la difficulté de la tâche prise en elle-même, mais la façon dont l’information reçue est interprétée. Un même relevé peut être pris comme une grandeur physique sur laquelle la main s’ajuste, comme un indice qui déclenche une procédure, ou comme un élément à intégrer dans un raisonnement sur l’état du procédé. Ces trois lectures s’excluent l’une l’autre à un instant donné, et la manière dont l’information est présentée pèse sur celle qui aura lieu.",
+        "Cette taxonomie n’est pas un résultat de l’article de 1992. Vicente et Rasmussen l’adoptent comme point de départ, avec une seconde construction théorique qui porte sur la représentation des contraintes du travail, et disent prendre ces deux constructions pour axiomes afin d’en déduire des conséquences pour la conception. La taxonomie avait été publiée par Rasmussen en 1983, et c’est cette version-là que l’article de 1992 cite."
+      ]
+    },
+    {
+      "title": "Pourquoi le niveau le plus bas coûte le moins",
+      "paragraphs": [
+        "Deux constats précèdent immédiatement l’énoncé du but, dans le même paragraphe. Le premier : les niveaux inférieurs de contrôle cognitif s’exécutent plus vite, plus efficacement et avec moins d’effort que les niveaux supérieurs. Le second : les gens préfèrent nettement accomplir les tâches en s’appuyant sur ces niveaux inférieurs, et ils le font même quand l’interface n’est pas conçue pour cela.",
+        "Le second constat est le plus embarrassant pour un concepteur. Il ne dit pas qu’il serait souhaitable de laisser travailler par réflexe : il dit que cela se produira de toute façon. Un écran qui n’offre aucun appui au geste direct n’empêche pas l’opérateur de se chercher malgré tout un repère rapide ; il le laisse seulement le fabriquer lui-même, dans son coin, sans que rien ne vienne dire jusqu’où ce repère est fiable.",
+        "Les deux moitiés du but tiennent donc ensemble, et la seconde est celle qu’on perd le plus facilement de vue. Alléger le travail courant en donnant des appuis immédiats ne suffit pas si rien, dans le même écran, ne permet de reprendre la main quand l’appui devient trompeur. La difficulté n’est pas de choisir le bon niveau une fois pour toutes : c’est de servir les trois avec le même dispositif."
+      ]
+    },
+    {
+      "title": "L’indice qui marche presque toujours",
+      "paragraphs": [
+        "L’exemple le plus concret de l’article vient de l’accident de Three Mile Island. Les opérateurs suivaient le niveau du pressuriseur et le prenaient pour un indice de la quantité d’eau présente dans le circuit primaire. Cet indice est bon dans les conditions ordinaires. Ce qui leur manquait, écrivent les auteurs, c’est la conscience des conditions aux limites à l’intérieur desquelles il reste valide.",
+        "L’argument n’est pas que l’indice était mauvais, ni que les opérateurs auraient dû s’en méfier davantage. C’est que rien, dans ce qu’ils avaient sous les yeux, ne leur montrait où cet indice cessait de correspondre à ce qu’ils croyaient y lire. Une conduite apprise avait été appliquée hors de son domaine de validité, et l’installation, telle qu’elle se donnait à voir, n’avait aucun moyen de le signaler.",
+        "De là la conséquence que les auteurs en tirent pour la conception : l’écran devrait donner à percevoir les contraintes fondamentales qui gouvernent le procédé, et non seulement les valeurs par lesquelles on a pris l’habitude de les deviner. Un piège de ce genre ne se corrige pas en demandant plus d’attention : il se corrige en rendant visible ce qui manquait."
+      ]
+    },
+    {
+      "title": "Montrer les contraintes plutôt que les valeurs",
+      "paragraphs": [
+        "La hiérarchie d’abstraction est le second point de départ que les deux auteurs adoptent sans le démontrer. Ils la proposent comme une manière de représenter les contraintes d’un domaine de travail qui soit psychologiquement pertinente, c’est-à-dire utilisable par quelqu’un qui doit tenir devant un événement que personne n’avait prévu. Une représentation de ce genre, une fois affichée, tient lieu de modèle mental extérieur : plutôt que de demander à l’opérateur de reconstituer de mémoire le fonctionnement de l’installation, l’écran en porte la structure.",
+        "Le cadre se décline ensuite en trois principes, un par niveau, et c’est là son contenu opératoire. Pour le niveau de l’habileté, l’opérateur doit pouvoir agir directement sur l’affichage, et la structure de l’information affichée doit correspondre à celle de ses mouvements. Pour le niveau des règles, l’interface doit établir une correspondance constante, terme à terme, entre les contraintes du domaine de travail et les indices qu’elle donne à voir. Pour le niveau des connaissances, le domaine de travail doit être représenté sous la forme d’une hiérarchie d’abstraction.",
+        "Pris isolément, le deuxième de ces principes se laisserait facilement prendre pour le cadre entier, et il ne l’est pas. La correspondance entre contraintes et indices règle le cas de la situation reconnue ; elle ne dit rien de ce qu’il faut fournir au geste, ni de ce qu’il faut fournir au raisonnement lorsque plus aucune règle ne s’applique. Ce que la formulation de 1992 tient ensemble, c’est que ces trois exigences portent sur une seule et même interface."
+      ]
+    },
+    {
+      "title": "Ce que le mot « écologique » désigne ici",
+      "paragraphs": [
+        "L’adjectif ne renvoie ni à l’environnement naturel ni à la consommation d’énergie. Les auteurs le justifient par la relation entre l’opérateur et son environnement de travail : les deux ne se décrivent pas séparément, puisque ce qu’une personne peut faire dépend de ce que le milieu technique lui présente, et que ce que ce milieu présente dépend de la façon dont il a été conçu. C’est cette dualité qu’ils invoquent pour expliquer le choix du mot.",
+        "L’expression, elle, est antérieure à l’article de 1992, et ses auteurs ne s’en cachent pas : elle figure déjà dans deux travaux qu’ils cosignent et qu’ils citent, un rapport de 1988 et un article de 1989, et le texte de 1992 renvoie lui-même au second comme au lieu où le cadre a été proposé pour la première fois. Ce qu’ils revendiquent en 1992 est délimité avec précision : « the specific theoretical formulation presented here is a new one ». La formulation théorique, donc, et rien de plus."
+      ]
+    }
+  ],
+  "limits": [
+    "L’article de 1989 signé Rasmussen et Vicente est, de l’aveu du texte de 1992, l’endroit où ce cadre a été proposé pour la première fois. Sous quelle forme, et quelle part de la formulation de 1992 s’y trouve déjà : ses pages le disent, et il faudra les lire. Le rapport de 1988, plus ancien encore, porte l’expression dans son titre.",
+    "Pour lire les trois principes dans les termes exacts de leurs auteurs, c’est la composition de la revue qu’il faudra ouvrir : l’article de 1992 circule en accès libre sous la forme d’un dépôt universitaire dont la couche de texte a par endroits abîmé les mots, et dont la pagination n’est pas celle de la revue, laquelle ne se connaît que par l’intervalle 589 à 606.",
+    "La taxonomie des trois niveaux n’est pas exposée dans cet article : il la reprend et renvoie qui ne la connaît pas à l’article que Rasmussen lui a consacré en 1983, où se trouve la distinction entre signaux, signes et symboles.",
+    "L’expression n’a pas de traduction française consacrée, et une variante circule dans un autre ordre des mots. La phrase citée en français est une traduction de travail, non publiée : l’anglais reste le texte."
+  ]
+}

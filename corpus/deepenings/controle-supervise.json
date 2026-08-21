@@ -1,0 +1,54 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "controle-supervise",
+  "lead": [
+    "Une pince doit saisir un objet posé au fond de la mer. Une personne, à bord d’un navire ou à terre, regarde des images, pousse une manette, et le bras obéit. C’est ce que les auteurs de 1978 appellent un téléopérateur : un engin muni de capteurs et d’actionneurs qui prolonge quelqu’un jusque dans un milieu trop lointain ou trop dangereux pour lui. Tant que la personne tient la manette, la question de savoir qui fait quoi ne se pose pas : elle fait tout, l’engin transmet.",
+    "Ajoutez maintenant un calculateur à bord de cet engin, capable de mener seul quelques opérations. La personne cesse de pousser la manette en continu, sans devenir pour autant spectatrice : son travail change de nature, et rien dans le vocabulaire de la commande à distance ne dit ce qu’il est devenu. Le problème posé par ces pages est exactement celui-là. Nommer avec assez de précision ce qui reste à faire à quelqu’un dont la machine fait une partie du travail, pour qu’un concepteur puisse en décider au lieu de le subir."
+  ],
+  "sections": [
+    {
+      "title": "Ce que la machine décide toute seule",
+      "paragraphs": [
+        "La définition tient en une phrase, et tout s’y joue sur ce que l’engin embarque. Un système supervisé n’a pas seulement des capteurs et des actionneurs : il a aussi un calculateur, et il est « capable of autonomous decision-making and control over short periods and in restricted conditions », capable de décider et de commander par lui-même sur de courtes périodes et dans des conditions restreintes. Les deux bornes comptent autant que la capacité. Ce n’est pas une machine autonome, c’est une machine à qui l’on confie des bouts d’action.",
+        "Cette autonomie locale, et elle seule, sépare le contrôle supervisé de la simple commande à distance : une manette reliée à un bras ne décide de rien, elle transmet. Du côté de la personne, la même phrase dit deux choses. Elle surveille à distance, et elle actionne par intermittence, soit en reprenant la commande directement, soit en reprogrammant ce que l’engin exécutera. Deux façons de reprendre la main, qui ne demandent ni les mêmes gestes ni le même délai.",
+        "Rien de tout cela n’est propre à la mer. La phrase nomme elle-même d’autres cas, un avion, une centrale, avant de revenir aux engins sous-marins qui occupent le reste du texte. Le schéma est donc posé d’emblée comme général : ce qu’il décrit est une manière de répartir le travail entre une personne et un calculateur, quelle que soit la machine manœuvrée."
+      ]
+    },
+    {
+      "title": "Planifier, ordonner, surveiller, intervenir",
+      "paragraphs": [
+        "Que fait alors la personne ? Le texte de conférence répond par une figure dont une ligne énumère les rôles de l’opérateur : planifier, ordonner l’action de l’engin, surveiller cette action, intervenir. L’ordre n’est pas indifférent. Planifier vient avant tout, à un moment où rien ne bouge encore ; ordonner et surveiller occupent le temps ordinaire du travail ; intervenir est l’exception, celle qui n’arrive que si les choses se passent autrement que prévu.",
+        "Le rapport complet en compte cinq, et le cinquième est le plus inattendu : la confiance, définie comme le fait « to attain enough operating experience or otherwise acquire a basis for believing that the teleoperator will behave as intended », acquérir assez d’expérience de conduite, ou autrement de quoi croire que l’engin se comportera comme prévu. Ce n’est pas un sentiment, c’est un travail : il faut du temps passé avec la machine pour savoir ce qu’on peut lui laisser faire. Ce rôle-là ne figure pas dans la figure de la communication, seulement dans le texte long."
+      ]
+    },
+    {
+      "title": "Partager le contrôle, ou l’échanger",
+      "paragraphs": [
+        "Deux façons de faire coexister une personne et un calculateur, que le langage courant confond volontiers sous le mot d’assistance. Partager le contrôle, c’est que les deux soient actifs en même temps. Échanger le contrôle, c’est qu’à un moment le calculateur soit actif, et à un autre la personne. Le rapport distingue les deux explicitement, et cette distinction fait plus de travail qu’il n’y paraît : elle sépare deux situations que l’on décrit d’ordinaire du même mot.",
+        "L’intervention devient alors définissable sans flou : c’est l’échange en sens inverse, du calculateur vers la personne. Et ce que fait le calculateur diffère selon le régime. Quand il partage, il soulage l’opérateur d’une partie de la charge, ou étend ce que celui-ci peut faire. Quand il échange, il prend le relais, ou remplace. Un même dispositif d’aide ne pose donc pas les mêmes questions selon qu’il travaille à côté de quelqu’un ou à sa place.",
+        "Les auteurs bornent eux-mêmes ce qu’ils proposent, et la phrase mérite d’être lue : « While this taxonomy of relationships at the present has no corresponding quantitative theory, it has been useful to the authors in thinking about what is desirable for man-computer control of teleoperators. » Cette classification des relations n’a, pour l’heure, aucune théorie quantitative qui lui corresponde ; elle a simplement été utile aux auteurs pour réfléchir à ce qui serait souhaitable. C’est un outil de pensée qui se donne pour tel, et non une mesure."
+      ]
+    },
+    {
+      "title": "Dix degrés pour une seule décision",
+      "paragraphs": [
+        "L’échelle des degrés d’automatisation, elle, ne se lit pas dans la communication : elle est dans le rapport, où une table les ordonne de un à dix. Le premier degré n’est pas l’absence de machine, « human does the whole job up to the point of turning it over to the computer to implement » : l’humain fait tout le travail jusqu’au point où il le remet au calculateur pour exécution. Le dixième est à l’autre bout, « computer does whole job if it decides it should be done, and if so tells human, if it decides he should be told » : le calculateur fait tout le travail s’il décide qu’il doit être fait, et le dit à l’humain s’il décide qu’il doit en être informé.",
+        "Entre les deux, huit positions déplacent la décision par petits pas : établir les options, en suggérer une que la personne n’est pas tenue de suivre, choisir l’action, l’exécuter si la personne approuve, l’exécuter en laissant le temps de l’arrêter, l’exécuter et en rendre compte nécessairement, n’en rendre compte que si on le demande. Ce qui bascule le long de l’échelle n’est donc pas seulement l’action : c’est l’information. Aux derniers degrés, la personne peut ne pas savoir ce qui a été fait.",
+        "Le titre exact de la table dit une chose qu’on oublie presque toujours en la citant : « Levels of automation in man-computer decision-making, for a single elemental decisive step ». Les degrés valent pour une seule étape décisive élémentaire, pas pour une machine entière ni pour un métier. Un même système peut donc se tenir à un degré pour une décision et à un autre pour la suivante. Les auteurs ajoutent d’ailleurs que d’autres variantes sont possibles, et que « in each of the ten steps » la demande initiale de l’humain peut être inutile, ou ignorée par le calculateur."
+      ]
+    },
+    {
+      "title": "Deux textes de 1978, deux signatures",
+      "paragraphs": [
+        "Deux textes portent ce travail cette année-là, et ils ne sont pas signés de la même façon. La communication présentée à la conférence porte trois noms, Thomas B. Sheridan, William L. Verplank et Thurston L. Brooks. Le rapport du laboratoire, beaucoup plus long, n’en porte que deux, les deux premiers. Ce n’est pas un détail de bibliographie : les définitions et la matrice des rôles viennent du texte à trois, la table des dix degrés vient du texte à deux, et les deux ensembles ne se recouvrent pas.",
+        "De là une confusion tenace. L’échelle est presque toujours citée dans une formulation qui ne se trouve dans aucun des deux textes, « the computer offers no assistance » pour le premier degré. Or ce degré-là, tel qu’il est écrit en 1978, suppose déjà un calculateur à qui l’on remet le travail pour exécution : ce n’est pas la même idée. La formule reçue vient de reprises postérieures, et la dater de 1978 prête à ces pages une phrase qu’elles ne contiennent pas.",
+        "Une dernière prudence, que les auteurs s’imposent à eux-mêmes : ils écrivent « supervisory control » entre guillemets, comme une expression déjà en circulation, et ne renvoient à aucun texte fondateur pour elle. 1978 est la date d’une définition et d’une table, pas celle d’une invention de vocabulaire."
+      ]
+    }
+  ],
+  "limits": [
+    "L’expression est plus ancienne que ces deux textes, qui l’emploient comme reçue. La bibliographie du rapport renvoie à des travaux antérieurs dont le titre la porte déjà, en particulier un texte de W. R. Ferrell paru en 1973 dans Remotely Manned Systems. Ce sont les racines de la notion, et c’est là qu’il faudra chercher qui l’a employée le premier.",
+    "La version de l’échelle qui circule aujourd’hui n’est pas celle de 1978 : elle vient des reprises ultérieures, par Sheridan lui-même dans Telerobotics, Automation and Human Supervisory Control (MIT Press, 1992), puis par Parasuraman, Sheridan et Wickens en 2000. Ce sont ces pages qui portent la formulation devenue canonique, et qui diront ce qui s’est déplacé en chemin.",
+    "La section 5 de la communication décrit un système nommé SUPERMAN, tiré de la thèse alors en cours de T. L. Brooks, publiée en 1979 dans la série MIT Sea Grant : c’est la machine sur laquelle ces idées ont été essayées, et le détail de ce qu’elle faisait tient dans ces 280 pages. Le prénom du troisième signataire, Thurston, vient de notices de catalogue et non d’une page signée. Et aucune traduction française publiée de l’un ou l’autre texte ne circule : chaque terme se vérifie sur l’anglais."
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "loi-de-la-variete-requise",
+  "lead": [
+    "Imaginons un guichet devant lequel se présentent dix sortes de demandes différentes, et un agent qui ne dispose que de trois réponses possibles. Quelle que soit son habileté, quelle que soit sa rapidité, il ne pourra pas faire que ces dix demandes ressortent toutes de la même façon. Au mieux, les dix situations de départ se ramènent à quatre issues distinctes, jamais à une seule. Le calcul ne dit rien de son énergie ni de son sérieux : il compte des cas, d’un côté et de l’autre, et il constate qu’il en manque d’un côté.",
+    "W. Ross Ashby a démontré ce genre de compte, et lui a donné un nom, au chapitre 11 d’An Introduction to Cybernetics, paru à Londres chez Chapman & Hall en 1956. Il appelle variété le nombre de cas distincts qu’une chose peut présenter : dix pour les demandes, trois pour les réponses. Et il établit que la seule chose capable de faire baisser la variété de ce qui sort est la variété de celui qui répond. Ni sa force, ni sa vitesse, ni la finesse de ses gestes : le nombre de coups différents dont il dispose."
+  ],
+  "sections": [
+    {
+      "title": "Un jeu à deux joueurs, avant toute machine",
+      "paragraphs": [
+        "Ashby ne part ni d’une machine ni d’un organisme. Il commence par mettre la régulation de côté, le temps d’un raisonnement, et pose un jeu. Deux joueurs, appelés D et R, sont devant une table à double entrée que tous deux connaissent. D joue le premier et choisit une ligne. R, qui voit ce coup, choisit une colonne. La case à l’intersection est le résultat. Certains résultats sont déclarés gagnants pour R, et R gagne si le résultat tombe parmi ceux-là.",
+        "Le détour compte autant que le résultat. Tout ce que le mot régulation traîne avec lui, l’intention, l’effort, la matière, l’énergie, se trouve écarté : il ne reste qu’une table, un nombre de lignes, un nombre de colonnes. D n’y est pas un adversaire au sens où l’on se bat contre quelqu’un, c’est ce que le monde joue en premier. Et R, qui joue en second en connaissant pleinement le coup de D, occupe la position la plus favorable qu’on puisse lui donner. Ce qui suit est donc une limite qui tient même dans ce cas favorable."
+      ]
+    },
+    {
+      "title": "Ce que le tableau oblige à compter",
+      "paragraphs": [
+        "Pour démontrer, Ashby restreint son propos aux tables où un même résultat n’apparaît jamais deux fois dans la même colonne : autrement dit, où chaque réponse de R donne un résultat différent selon la perturbation. Dans ce cas, le nombre de résultats distincts que R peut obtenir ne descend pas en dessous du nombre de coups de D divisé par le nombre de coups de R. Si R dispose de trois coups, la variété des issues peut être ramenée au tiers, et pas plus bas.",
+        "Il réécrit ensuite le même fait en mesure logarithmique, en notant VD, VR et VO les variétés de la perturbation, du régulateur et du résultat : le minimum de VO vaut VD moins VR. La conséquence tient en une phrase, page 207 : « the variety in the outcomes, if minimal, can be decreased further only by a corresponding increase in that of R ». Une fois le plancher atteint, la seule façon de descendre encore est d’augmenter d’autant le nombre de coups de R. Ashby refait ensuite le théorème en entropies, à la manière de Shannon, puis l’étend au cas où la table bloque déjà une partie de la variété."
+      ]
+    },
+    {
+      "title": "Une image, et l’énoncé qu’elle abrège",
+      "paragraphs": [
+        "La formule la plus reprise du chapitre, « variety can destroy variety », est annoncée par Ashby lui-même comme une image : il l’introduit par « To put it more picturesquely: », juste après avoir écrit « This is the law of Requisite Variety ». L’énoncé technique, lui, est immédiatement au-dessus, sur la même page, et c’est celui qui porte la condition : un plancher d’abord, puis une augmentation correspondante pour descendre plus bas.",
+        "La différence n’est pas mince. Lue seule, l’image d’une variété qui en détruit une autre suggère un duel où deux quantités s’annulent, comme deux forces opposées. Ce que le théorème dit est plus étroit et plus utile : étant donné une table, le nombre de résultats différents possibles a un plancher, et rien d’autre que le nombre de coups de R ne l’abaisse. Une phrase frappante et un énoncé exact ne se recouvrent pas toujours, et Ashby prend soin de signaler laquelle des deux il est en train d’écrire."
+      ]
+    },
+    {
+      "title": "Une loi qui ne doit rien à l’expérience",
+      "paragraphs": [
+        "Ashby insiste sur le statut de ce qu’il vient d’établir : le théorème est d’abord une affirmation sur les arrangements possibles dans une table rectangulaire. Il ne doit rien à l’expérience, il n’a rien à voir avec les propriétés de la matière, et aucun dispositif nouveau ne peut le renverser. Une loi tirée de l’observation se réfute par une observation mieux faite ; celle-ci ne s’expose pas de cette manière, parce qu’elle ne parle pas de ce que le monde contient mais de ce qu’un comptage autorise.",
+        "Ce qui fait sa force fait aussi sa limite, et il vaut mieux le savoir avant de s’en servir. La loi ne dit pas comment construire un régulateur, ni lequel convient à telle situation. Elle ne dit pas davantage comment on compte les cas dans une situation réelle : décider que deux pannes, deux demandes ou deux visiteurs comptent pour un seul cas ou pour deux est tout le travail de celui qui applique la loi, et la démonstration ne le fait pas à sa place. Le théorème est sûr, le découpage des cas ne l’est jamais d’avance."
+      ]
+    },
+    {
+      "title": "Du tableau au régulateur, puis au canal",
+      "paragraphs": [
+        "La régulation ne revient qu’ensuite. D devient un ensemble de perturbations venues du monde extérieur, qui menacent, si le régulateur ne fait rien, de pousser hors de leur plage les variables essentielles de l’organisme, celles dont seules quelques valeurs sont compatibles avec sa vie. La table, elle, est le monde extérieur dur, ou ces affaires internes que le régulateur en puissance doit tenir pour acquises. Un bon régulateur est alors une transformation des perturbations telle que tous les résultats tombent dans l’ensemble acceptable ; le régulateur et la table forment ensemble la barrière.",
+        "De là, la loi prend une troisième forme, page 211 : « The law of Requisite Variety says that R’s capacity as a regulator cannot exceed R’s capacity as a channel of communication. » Ashby la présente comme l’homologue du théorème 10 de Shannon sur le canal qui corrige le bruit. L’idée se comprend sans mathématiques : pour absorber une perturbation, il faut en être informé, et ce qui n’arrive pas jusqu’au régulateur, il ne peut pas le compenser. Sa capacité à réguler est bornée par la quantité d’information qui le traverse."
+      ]
+    },
+    {
+      "title": "Des peaux sensibles plutôt que la fuite",
+      "paragraphs": [
+        "Ashby tire lui-même deux conséquences de la loi. La première est biologique : la quantité de perturbation qui atteint le patrimoine génétique ne peut diminuer que de la quantité d’information transmise. C’est ce qui explique, écrit-il, que les organismes supérieurs se dotent de peaux sensibles et de systèmes nerveux, au lieu de chercher à échapper à la variété du monde. Devant un environnement varié, la sortie n’est pas de subir moins, elle est de distinguer et de pouvoir davantage.",
+        "La seconde porte sur les très grands systèmes, et il la formule crûment : demandant de combien un dictateur peut contrôler un pays, il répond, dans les termes de la loi, que ce contrôle vaut une puissance d’homme, et pas davantage. Ce que la loi interdit n’est pas une performance technique, c’est une arithmétique : elle proscrit toute amplification directe et simple de la régulation. Le chapitre se ferme en liant régulation et contrôle, qu’Ashby tient pour intimement liés : un régulateur parfait permet à un contrôleur d’imposer la cible qu’il veut malgré les perturbations."
+      ]
+    }
+  ],
+  "limits": [
+    "La loi existe en français depuis 1958 : Marcel Pillon a traduit l’ouvrage pour Dunod, sous le titre Introduction à la cybernétique. Les phrases citées plus haut le sont dans la langue où Ashby les a écrites ; leurs mots français sont dans ce volume, et c’est lui qu’il faudra ouvrir.",
+    "Ashby a redonné la loi deux ans plus tard, dans « Requisite variety and its implications for the control of complex systems », revue Cybernetica, 1958. Ce que sont ces implications, c’est cet article qui le déploie.",
+    "Le corollaire le plus cité en gestion, « every good regulator of a system must be a model of that system », n’est ni dans le livre de 1956 ni d’Ashby seul : Roger C. Conant le cosigne avec lui en 1970, dans l’International Journal of Systems Science. Par quel chemin il relie régulation et modèle, ces neuf pages le démontrent.",
+    "Comment la loi a été reçue et discutée en français, les sources disponibles ne permettent pas de le dire : l’enquête de Ronan Le Roux sur la cybernétique dans la France des années 1950 y situe Ashby, mais elle porte sur Lafitte, Couffignal, Riguet et le Cercle d’études cybernétiques."
+  ]
+}
