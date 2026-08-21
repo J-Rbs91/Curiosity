@@ -1,0 +1,63 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "nasa-tlx",
+  "lead": [
+    "Imaginons deux personnes qui sortent du même exercice sur simulateur : même consigne, même durée, résultat comparable. L’une n’en garde presque rien, l’autre en sort vidée. Rien de ce qui a été enregistré pendant la séance ne sépare ces deux heures, ni le temps, ni les erreurs, ni les gestes comptés. Ce qui les distingue est ce que chacune a dû dépenser pour y arriver, et cela ne s’inscrit sur aucun appareil. Il faut donc le demander. Mais poser la question d’un bloc, savoir si c’était difficile, ramène un chiffre unique où l’effort fourni, la pression du temps et la contrariété d’avoir mal fait restent confondus.",
+    "Un groupe de recherche du centre Ames de la NASA a fait circuler un livret d’une vingtaine de pages qui répond à cette difficulté par un déplacement : plutôt que de lire une grandeur, organiser un jugement. Le livret ne se donne pas pour une théorie de la charge de travail, mais pour un mode d’emploi, formulaires compris, distribué afin que d’autres s’en servent dans leurs propres expériences. C’est ce parti pris qu’il vaut la peine de suivre, car il décide de ce que l’instrument saisit comme de ce qu’il laisse dehors."
+  ],
+  "sections": [
+    {
+      "title": "Ce que les six échelles séparent",
+      "paragraphs": [
+        "Les six échelles ne sont pas six variantes de la même question. Le livret les répartit en deux groupes. Trois portent sur ce que la tâche a exigé de la personne : l’exigence mentale, l’exigence physique, l’exigence temporelle. Elles décrivent la pression venue du dehors, celle qu’un observateur pourrait à la rigueur estimer sans rien demander à personne.",
+        "Les trois autres portent sur autre chose : l’interaction de la personne avec la tâche. L’effort demande combien elle a dû travailler, mentalement et physiquement, pour atteindre le niveau de résultat qui a été le sien. La frustration demande dans quelle mesure elle s’est sentie contrariée, découragée, irritée, plutôt que tranquille, satisfaite et détendue. La performance, enfin, porte sur la façon dont elle juge sa propre réussite.",
+        "Ce second groupe est le plus surprenant, parce qu’il fait entrer dans le compte de la charge des choses qu’on rangerait spontanément ailleurs. Le jugement qu’une personne porte sur ce qu’elle a accompli n’est pas d’ordinaire tenu pour un coût : c’est un résultat. Ici, il fait partie du coût. Deux séances menées sous la même exigence extérieure ne pèseront donc pas pareil selon que la personne s’estime ou non à la hauteur de ce qu’elle a fait."
+      ]
+    },
+    {
+      "title": "Quinze paires avant la première note",
+      "paragraphs": [
+        "La notation ne vient pas en premier. La personne commence par comparer les échelles deux à deux : six échelles donnent quinze paires possibles, chacune imprimée sur son propre carton. Pour chaque paire, elle entoure celle des deux qui a le plus contribué à la charge de cette tâche-là. Rien n’est encore noté ; on établit seulement une hiérarchie, et c’est la personne qui l’établit.",
+        "Vient ensuite la notation proprement dite. Chaque échelle se présente comme une ligne de douze centimètres divisée en vingt intervalles, bornée à ses deux extrémités par des qualificatifs opposés. La personne marque sa position sur chacune des six lignes. Le score final multiplie chaque note par le poids que cette personne a donné au facteur correspondant, additionne les six produits, et divise la somme par quinze.",
+        "Ce quinze n’est pas un réglage arbitraire. Chaque comparaison attribue un point à l’une des deux échelles, si bien que les six poids totalisent toujours quinze : la division ramène simplement le résultat à l’échelle des notes. Quant au moment du relèvement, il se fait après l’exécution d’une tâche ou d’un segment de tâche, et le livret ouvre également le cas où l’on recueille des notes pendant la tâche elle-même."
+      ]
+    },
+    {
+      "title": "Peser selon cette tâche, pas selon une définition",
+      "paragraphs": [
+        "Pourquoi six mesures plutôt qu’une ? La raison donnée n’est pas que la charge serait un phénomène trop riche pour une question unique. Elle est plus terre à terre : les gens ne s’entendent pas sur ce que le mot veut dire. Les définitions de la charge varient d’un expérimentateur à l’autre et d’un sujet à l’autre, de sorte que deux personnes notant la même séance sur une échelle unique ne notent peut-être pas la même chose.",
+        "Le livret ajoute un constat qui va plus loin, et c’est lui qui commande tout le reste : ce qui détermine le plus l’expérience de charge n’est pas la définition que chacun s’en donne, mais les sources de charge particulières qu’impose telle ou telle tâche. D’où le choix de pondérer les échelles selon l’importance que la personne leur accorde dans cette tâche précise, et non selon leur pertinence supposée au regard de sa conception générale de la charge.",
+        "La nuance décide de la lecture des poids. Ils ne décrivent pas un tempérament, quelqu’un qui serait durablement sensible à la pression du temps et indifférent à l’effort. Cela implique qu’une même personne peut produire deux jeux de poids très différents sur deux tâches différentes sans se contredire : ce qui est pesé, c’est la rencontre d’une personne et d’une tâche, jamais la personne seule."
+      ]
+    },
+    {
+      "title": "Ce que le passage de neuf à six a écarté",
+      "paragraphs": [
+        "L’instrument a une version antérieure, la NASA Bipolar Rating Scale, qui comptait neuf sous-échelles. Elle réduisait bien la variabilité entre juges, mais sa sensibilité restait insuffisante, et neuf mesures se sont révélées trop nombreuses : le livret note qu’elles rendaient l’échelle impraticable en simulation ou en environnement opérationnel. La contrainte est d’usage autant que de méthode, et elle a compté.",
+        "Le tri ne s’est pas fait au seul motif de la commodité. Plusieurs sous-échelles se sont révélées sans rapport avec la charge, la fatigue par exemple, et d’autres redondantes, le stress et la frustration mesurant à peu près la même chose. Ce qui subsiste des neuf est donc en partie le produit d’un élagage, et non le déploiement d’une définition arrêtée d’avance.",
+        "Deux traces en restent, visibles dans le résultat. La fatigue n’a pas d’échelle propre, et rien dans le score ne la nomme. Et la frustration porte seule ce que le stress mesurait aussi, ce qui rend cette échelle plus large que son nom ne le laisse croire."
+      ]
+    },
+    {
+      "title": "Une tâche déjà accomplie",
+      "paragraphs": [
+        "L’instrument porte sur une tâche terminée. Le livret parle de juges et de sujets qui notent une séance déjà faite ; il ne parle jamais d’un opérateur qui, pendant qu’il travaille, arbitre entre plusieurs manières de s’y prendre pour tenir. Les mots de régulation, de mode opératoire, de compromis, de stratégie de travail en sont absents.",
+        "La différence n’est pas une nuance de vocabulaire. Ce que l’instrument attrape est une grandeur : combien cela a coûté, réparti en six postes. Ce qu’il ne dit pas, c’est comment la personne s’y est prise pour que cela ne coûte pas davantage, ce qu’elle a laissé tomber en route, l’ordre qu’elle a changé, la vérification qu’elle a sautée. Un score bas peut recouvrir une tâche facile ou un arrangement habile, et l’instrument ne les distingue pas.",
+        "Le score global est de surcroît une moyenne, et une moyenne dissimule ses composantes. Cela implique que deux personnes peuvent obtenir le même résultat par des chemins opposés, l’une pressée par le temps, l’autre découragée par ce qu’elle croit avoir manqué. Les six notes séparées portent donc une information que le chiffre unique ne porte plus, et le livret compte sur elles pour cela."
+      ]
+    },
+    {
+      "title": "Ce que le livret dit de lui-même",
+      "paragraphs": [
+        "Le ton du document mérite d’être relevé, parce qu’il n’est pas celui d’un instrument installé. La procédure est présentée comme issue de trois ans de travaux et de plus de quarante expériences en laboratoire, en simulation et en vol, et pourtant le texte prend aussitôt une précaution : « Although the technique is still undergoing evaluation, this booklet is being distributed to allow other researchers to use it in their own experiments ». La technique est encore en cours d’évaluation, et on la diffuse pour que d’autres l’éprouvent.",
+        "Le livret revendique une fonction de simple mode d’emploi : décrire la procédure, rien de plus. Sa composition le confirme. L’exposé tient dans les quatre premières pages, les consignes destinées aux sujets occupent deux pages, les définitions des six échelles tiennent dans une annexe ; tout le reste est un jeu de formulaires, cartons de comparaison, feuille de notation, feuille de dépouillement, feuille de calcul.",
+        "On n’y trouve donc ni discussion de ce que le score mesure vraiment, ni exposé des limites de l’instrument, ni comparaison avec les autres méthodes de mesure de la charge en circulation à la même époque. Ces questions n’y figurent que sous forme de renvois bibliographiques. Le livret fournit un outil et sa notice d’utilisation, il ne plaide pas sa cause."
+      ]
+    }
+  ],
+  "limits": [
+    "Le livret décrit une procédure, il n’en fournit pas la preuve. Il renvoie pour cela à un texte annoncé comme à paraître, et paru en 1988 : Sandra G. Hart et Lowell E. Staveland, « Development of NASA-TLX (Task Load Index): Results of Empirical and Theoretical Research », dans Human Mental Workload, sous la direction de P. A. Hancock et N. Meshkati, Elsevier, p. 139-183. C’est là, selon le livret, qu’est résumée la première étude de validation. Ce que ce chapitre établit, et par quels moyens, ce sont ses pages qui le diront.",
+    "Le passage de l’annonce à la parution n’a rien eu d’anodin : la bibliographie du livret annonce un titre, « Development of a multi-dimensional workload rating scale », qui n’est pas celui du chapitre paru. Le volume de 1988 est le premier endroit où voir ce qui a changé.",
+    "Ce que l’instrument vaut sous la critique n’est pas dans ces pages : les travaux qui discutent sa validité et ceux qui lui opposent d’autres méthodes y sont cités en bibliographie, et ce sont eux qu’il faudra ouvrir. Qui voudra citer sa définition la citera en anglais : aucune traduction française publiée n’en est connue."
+  ]
+}
