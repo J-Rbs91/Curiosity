@@ -62,6 +62,57 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "amplification-de-la-regulation",
+    "lead": [
+      "Un bouton de volume ne fabrique pas de son, et la pédale d’accélérateur ne fabrique pas la puissance qui pousse la voiture. Dans les deux cas, un geste minuscule commande un effet sans commune mesure avec lui : l’énergie est déjà là, dans le secteur ou dans le réservoir, et le geste se contente de la libérer. W. Ross Ashby part de cette évidence pour la retourner en remarque : un amplificateur n’agrandit presque jamais ce qu’on lui donne, il lui ajoute quelque chose qui vient d’ailleurs. L’exception qu’il cite, c’est la lentille du projectionniste de cinéma, qui grossit vraiment l’image qu’elle reçoit.",
+      "Reste à savoir ce qu’il advient de cette mécanique quand ce qu’on cherche à obtenir n’est plus de la puissance, mais de la correction : la capacité de tenir quelque chose dans l’état voulu malgré tout ce qui vient l’en écarter. Là, une loi ferme la porte, et elle est de lui : pour parer des perturbations variées, il faut disposer d’au moins autant de réponses distinctes. Ashby consacre pourtant un chapitre entier à montrer par où l’on passe quand même, et surtout à quel prix."
+    ],
+    "sections": [
+      {
+        "title": "Ce que fait un amplificateur de puissance",
+        "paragraphs": [
+          "L’amplificateur de puissance ne crée pas d’énergie, et Ashby y insiste parce que toute la suite en dépend. Il puise dans une réserve abondante, charbon, pétrole, secteur, et il n’y parvient que parce que l’opération se fait en deux étages couplés, à l’intérieur desquels l’énergie est strictement conservée. C’est cette séparation en deux étages qui rend l’amplification possible : en un seul étage, la loi de conservation de l’énergie interdirait toute amplification simple et directe de la puissance. L’image qu’Ashby en donne est celle d’un enfant qui soulève de grandes charges parce que son père accepte de les soulever à sa place.",
+          "De là deux points de vue, qu’il renvoie dos à dos en donnant raison aux deux. Pour le théoricien, rien n’est amplifié : l’énergie a été prise ailleurs, et le bilan général est nul. Pour l’homme de métier, qui dispose effectivement d’une source abondante et qui doit obtenir un résultat, l’amplification est parfaitement réelle et parfaitement utile. Cette double lecture n’est pas une coquetterie de rédaction : elle prévient le contresens qui guette la transposition à la régulation, où l’on croira volontiers qu’une capacité est sortie de rien."
+        ]
+      },
+      {
+        "title": "Fabriquer un régulateur, c’est le sélectionner",
+        "paragraphs": [
+          "Ashby transporte l’analogie en toutes lettres. Au moment d’énoncer l’interdit, il range la loi de la variété requise, celle qui exige d’un régulateur autant de réponses distinctes qu’il y a de perturbations à parer, dans la même classe que la conservation de l’énergie, « like the law of Conservation of Energy », et cette incise fait tout le travail. Une loi de conservation n’a jamais empêché la moindre amplification de puissance ; elle empêche seulement de la tirer de rien.",
+          "Encore faut-il savoir ce qui, pour un régulateur, joue le rôle de l’énergie. Le pas décisif consiste à le mesurer autrement que par sa taille ou par son prix. Pour qu’un régulateur existe, il a fallu le choisir parmi toutes les machines qu’on aurait pu construire à sa place, et ce choix se compte : c’est le nombre de décisions élémentaires, oui ou non, nécessaires pour désigner celui-là plutôt que les autres. Un régulateur de grande capacité, capable de parer beaucoup de perturbations différentes, coûte beaucoup de sélection ; un petit en coûte peu. La question devient alors une question de comptabilité : combien de sélection faut-il dépenser pour en obtenir combien ?",
+          "L’énoncé qu’Ashby compose alors, et qu’il met lui-même en italique, est prudent jusque dans sa grammaire : si le régulateur final peut être atteint par étapes, « the possibility exists that the provision of a small regulator at the first stage may lead to the final establishment of a much bigger regulator », la possibilité existe que la fourniture d’un petit régulateur au premier étage conduise à l’établissement final d’un régulateur bien plus grand. Une possibilité, et un verbe qui ne promet rien. Le chapitre précédent avait posé la même chose plus sèchement, en notant que la capacité du second régulateur n’est pas bornée par celle du premier."
+        ]
+      },
+      {
+        "title": "La perturbation qui revient tous les jours",
+        "paragraphs": [
+          "Ce qui rend l’opération payante n’est pas la mise en étages, c’est la répétition. Ashby le montre sur un exemple chiffré, un bain qu’il faut maintenir en température. Admettons cent corrections par jour pendant un an : trente-six mille cinq cents décisions élémentaires que quelqu’un doit prendre, une par une, s’il s’en charge à la main. Supposons maintenant qu’il sache construire un thermostat, et que fixer ce thermostat lui coûte, disons, mille de ces mêmes décisions. Le rapport entre les deux quantités est d’environ trente-six, et c’est là que l’amplification a lieu : « the act of selecting appropriately from 1000 bits has as consequence the correct selection from 36,500 bits ».",
+          "Le mot qui porte tout, dans la phrase d’Ashby, est celui qu’on saute : c’est en utilisant le fait que la grande perturbation est répétitive que la sélection de mille bits vaut celle de trente-six mille cinq cents. Le chapitre précédent l’avait annoncé sans détour, « From here on we shall consider the case in which the disturbance, and the regulatory response, occur more than once; for such cases show constraint, of which advantage can be taken » : à partir d’ici seront considérés les cas où la perturbation, et la réponse qui la corrige, se produisent plus d’une fois, car ces cas présentent une régularité dont on peut tirer parti. Une perturbation qui ne survient qu’une seule fois n’offre rien à exploiter : la machine chargée de la corriger devrait être choisie aussi finement que la réponse qu’elle remplace."
+        ]
+      },
+      {
+        "title": "D’où vient la variété qui manque",
+        "paragraphs": [
+          "Reste la question que l’analogie rendait inévitable. L’amplificateur de puissance prend son énergie dans un réservoir ; où le second étage d’une régulation prend-il la variété que le premier n’avait pas ? Ashby répond que ce supplément est apporté par les autres entrées du système, et que l’environnement en fait partie. Son exemple est celui d’une vingtaine de mécaniciens chargés de tenir deux mille pièces climatisées : c’est l’environnement, et non le mécanicien, qui indique à chaque conditionneur la température et l’humidité du moment. Ces sources participent à la régulation d’ensemble sans emprunter le mécanicien comme canal, et c’est bien ce canal-là, seul, qui n’aurait jamais suffi.",
+          "D’où la formule du chapitre, « the regulation that could not be done in one stage may, if the conditions are suitable, be possible in two » : la régulation qu’on ne pouvait pas obtenir en un étage peut, si les conditions s’y prêtent, être possible en deux. Rien n’oblige d’ailleurs à s’arrêter à deux étages. Et Ashby refuse de présenter le procédé comme une nouveauté : les animaux supérieurs, ceux qui s’adaptent en apprenant, ont trouvé la méthode depuis longtemps."
+        ]
+      },
+      {
+        "title": "Les cas où l’amplification n’a pas lieu",
+        "paragraphs": [
+          "Ashby pose deux garde-fous que les reprises perdent volontiers. Le premier tient en une phrase : « There is, of course, not necessarily any amplification ». Celui qui fabrique fait toujours, au moins intuitivement, la balance entre ce que coûte la construction de la machine qui fera le travail et ce que coûterait le travail fait à la main. Si le thermostat exige plus de décisions que l’année de corrections qu’il remplace, rien n’est gagné, et la mise en étages n’y changera rien.",
+          "Le second garde-fou est un cas négatif, pris chez le vivant. Quand le patrimoine génétique spécifie directement le régulateur, il n’y a pas d’amplification à ce compte-là, même si un avantage subsiste lorsque les perturbations reviennent souvent au cours de la vie de l’organisme. L’amplification apparaît quand ce patrimoine fabrique plutôt un cerveau qui apprend, et obtient par lui « an ultimate regulation far greater than could be achieved by the gene-pattern directly », une régulation finale bien plus grande que celle qu’il pourrait atteindre directement.",
+          "Le mot amplification ne qualifie donc pas un dispositif, et il ne désigne aucune propriété qu’une machine posséderait en elle-même. Il nomme un rapport entre deux quantités de sélection, celle qu’on dépense et celle qu’on obtient, et ce rapport peut très bien valoir un."
+        ]
+      }
+    ],
+    "limits": [
+      "Les deux mots sur lesquels la phrase d’Ashby repose, magnification et supplementation, ont été tranchés une fois en français, dans la traduction publiée chez Dunod en 1958 sous le titre Introduction à la cybernétique. C’est elle qui porte la formule qui fait référence, avec son traducteur et sa page.",
+      "Une seule reprise dédiée du concept sous son nom a été repérée : Michael U. Ben-Eli, « Amplifying regulation and variety increase in evolving systems », Journal of Cybernetics, 9(3), 1979, p. 285-296. Ce qu’il en fait, ces pages le disent et elles seules. Ni la reprise que fait Ashby de sa propre loi en 1958 dans Cybernetica, ni la synthèse de Heylighen et Joslyn sur la cybernétique, ni le Web Dictionary of Cybernetics and Systems ne le nomment ; trois absences ne font pas une réception.",
+      "Le même auteur a intitulé « Amplifying Adaptation » un chapitre de Design for a Brain, dans son édition de 1960 : le même mouvement, appliqué cette fois à l’adaptation. Reprend-il l’argument de 1956, le prolonge-t-il ? Ce chapitre le dira. Et dans un autre tirage, le repère qui ne bouge pas n’est pas la page 268, mais le numéro de section, 14/4."
+    ]
+  },
+  {
     "conceptId": "analyse-du-travail",
     "lead": [
       "Un poste de travail se décrit facilement comme une liste de gestes : saisir la pièce, la retourner, positionner un boulon, serrer, reposer l’ensemble, recommencer. Chaque ligne de cette liste, prise seule, est exacte. Mais lue dans son ensemble, elle ne redonne pas le travail : on y cherche en vain pourquoi ces gestes s’enchaînent dans cet ordre plutôt qu’un autre, ce que l’un prépare pour le suivant, ce qui change quand la pièce arrive de travers. Le détail est là, entier ; ce qui reliait les gestes entre eux a disparu.",
@@ -119,6 +170,122 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "automatisation-centree-humain",
+    "lead": [
+      "Une machine qui fonctionne bien finit par se faire oublier, et c’est même à cela qu’on la reconnaît. Elle tient le cap, elle maintient l’allure, elle rattrape seule les petits écarts, et la personne qui reste responsable de ce qui arrive pense pendant ce temps à autre chose. La situation est confortable tant que rien ne cloche. Elle cesse de l’être à la seconde où il faut reprendre la main, car reprendre la main suppose de savoir ce que la machine faisait, pourquoi elle le faisait, et depuis quand.",
+      "C’est de cette seconde que part Charles E. Billings dans un mémorandum écrit pour la NASA en 1996. Il traite de l’aviation, où la question se pose sans détour : le pilote porte la responsabilité de la sécurité du vol, alors qu’une part croissante de ce qui se passe entre ses mains et l’appareil transite par des dispositifs capables d’agir d’eux-mêmes. Dire d’une automatisation qu’elle est centrée sur l’humain ne signifie pas, chez lui, qu’elle est plus agréable ou plus facile à prendre en main. C’est une exigence qui porte sur la place laissée à celui qui devra répondre du résultat."
+    ],
+    "sections": [
+      {
+        "title": "L’automatisation comme ressource dirigée",
+        "paragraphs": [
+          "Billings commence par définir l’automatisation elle-même, et cette définition commande tout le reste. Il la tient pour un outil ou une ressource : un dispositif, un système ou une méthode par lequel un opérateur accomplit une tâche qui serait autrement plus difficile ou impossible, ou bien qu’il peut charger d’exécuter plus ou moins seul une tâche exigeant sinon davantage d’attention ou d’effort. Le second membre de phrase est le plus important : quelqu’un dirige la machine vers une tâche. L’automatisation n’est pas un opérateur de remplacement, c’est un moyen remis entre les mains de quelqu’un.",
+          "De là vient la définition du concept, à la troisième page du mémorandum : une automatisation « automation designed to work cooperatively with human operators in the pursuit of stated common objectives », conçue pour travailler en coopération avec les opérateurs humains dans la poursuite d’objectifs communs déclarés. Le dernier mot est le plus contraignant. Cela implique qu’une machine dont le but n’est pas énoncé ne peut pas coopérer, puisque personne ne peut vérifier qu’elle vise bien la même chose que lui. La formule n’est pas neuve en 1996 : le mémorandum de 1991 que celui-ci prolonge la portait déjà, à un mot près, et à la première personne du pluriel."
+        ]
+      },
+      {
+        "title": "Ce qui fait perdre de vue l’état du système",
+        "paragraphs": [
+          "Le chapitre où le concept est exposé range les difficultés de l’automatisation aéronautique derrière un phénomène central : la perte de conscience de l’état du système, c’est-à-dire le moment où l’opérateur ne sait plus où en est la machine ni ce qu’elle est en train de faire. Billings lui donne quatre conditions d’apparition, et il les définit une à une.",
+          "La complexité rend le détail du fonctionnement plus difficile à comprendre, à se représenter et à retenir, précisément quand cette compréhension serait nécessaire pour expliquer un comportement observé. Le couplage désigne les interdépendances entre fonctions automatisées : elles sont rarement évidentes, souvent absentes des manuels mis à disposition des utilisateurs, et c’est de là que vient la surprise.",
+          "L’autonomie décrit un comportement machine qui paraît s’être déclenché de lui-même. Lorsqu’il n’est pas attendu, il est souvent perçu comme animé, comme si le système avait sa propre idée, et l’humain doit décider, parfois vite, si ce qu’il voit est approprié ou non. La rétroaction insuffisante, enfin, décrit une machine qui ne dit pas, ou dit mal, ce qu’elle fait, pourquoi elle le fait, ou pourquoi elle vient de changer de comportement. Il ne reste alors à l’opérateur que sa mémoire et l’idée qu’il se fait du fonctionnement pour interpréter ce qu’il a sous les yeux."
+        ]
+      },
+      {
+        "title": "Moins de charge, moins d’implication",
+        "paragraphs": [
+          "L’effet décrit est lent et à double face. Avec le temps, si la machine est fiable, le pilote se soucie moins du détail de ses tâches. Sa charge de travail diminue, ce qui est précisément recherché, mais il peut devenir, et se sentir, moins impliqué dans la mission. Billings nomme ce mouvement la mise à la périphérie de l’équipage, « peripheralization of the flight crew ».",
+          "Il prend soin de ne pas en faire un constat accompli. Il écrit qu’il ne croit pas ce sentiment d’implication diminuée répandu, « I do not believe that a sense of diminished involvement is prevalent », et ajoute aussitôt que cela pourrait bien le devenir si l’on continue dans la voie présente. Plus loin dans le volume, il note que l’automatisation, à mesure qu’elle devenait plus capable, a fourni l’occasion de s’impliquer un peu moins : une occasion, non une fatalité.",
+          "Ce qu’il tient en revanche pour acquis est plus étroit et plus dur : des accidents ont montré avec quelle facilité des pilotes peuvent perdre le fil de ce qui se passe à bord d’un appareil moderne. Entre la tendance et l’accident, il n’y a aucun enchaînement automatique, et c’est ce qui rend ce propos si difficile à résumer sans le durcir."
+        ]
+      },
+      {
+        "title": "Ni panne de machine, ni erreur d’humain",
+        "paragraphs": [
+          "Une phrase du même chapitre coupe court à la question qui vient d’abord, celle du responsable. Ces problèmes, écrit Billings, ne sont pas plus des problèmes d’automatisation que des problèmes d’erreur humaine : « They are human-machine system problems, and they must be attacked as such. » Ce qu’il faut traiter n’est ni la machine seule ni l’opérateur seul, mais le couple qu’ils forment.",
+          "La conséquence est directe pour la manière d’analyser un incident. Chercher lequel des deux a fauté mène à deux réponses également courtes : durcir la formation, ou ajouter une automatisation supplémentaire pour couvrir la précédente. Le propos de Billings n’est pas que l’automatisation soit mauvaise, sa définition en fait une ressource utile ; il est qu’elle est mal conçue lorsqu’elle laisse l’opérateur sans les moyens de savoir ce qu’elle fait."
+        ]
+      },
+      {
+        "title": "Ce que Billings appelle l’opacité",
+        "paragraphs": [
+          "Un chapitre plus tardif reprend la question du côté de la conception et range les difficultés sous cinq facteurs : quatre tiennent à la conception, la complexité, la fragilité, l’opacité et le littéralisme, le cinquième est la formation, elle-même liée à la compréhension qu’on a du système.",
+          "L’opacité est le terme qu’il pose en son nom propre. À mesure que la complexité de l’automatisation augmente, il devient plus difficile au concepteur de fournir au pilote qui surveille une information manifeste et sans ambiguïté sur ce que la machine est en train de faire. D’autres ont parlé de cela comme d’un défaut de transparence, « Others have referred to it as a lack of transparency », et Billings tient les deux termes pour synonymes dans ce contexte.",
+          "C’est à l’opacité qu’il rattache explicitement deux difficultés bien connues de qui travaille avec des systèmes à modes : l’erreur de mode, où l’on agit comme si le système était dans un autre état que celui où il se trouve, et le défaut de conscience de mode, où l’on ignore simplement dans quel état il est. Ce ne sont pas des étourderies d’opérateur, ce sont les symptômes d’une machine qui ne dit pas assez ce qu’elle fait."
+        ]
+      },
+      {
+        "title": "Des principes énoncés comme des absolus",
+        "paragraphs": [
+          "L’exposé du concept s’achève sur une liste que Billings appelle les premiers principes. Elle part de deux prémisses de responsabilité, le pilote pour la sécurité du vol, le contrôleur pour la séparation et l’écoulement du trafic, et en tire des axiomes : l’un et l’autre doivent rester aux commandes. Viennent alors les corollaires, et ce sont eux qui portent la doctrine. Les deux opérateurs doivent être activement impliqués et suffisamment informés. Ils doivent pouvoir surveiller l’automatisation qui les assiste, ce qui exige qu’elle soit prévisible. L’automatisation doit à son tour les surveiller. Et chaque élément intelligent du système doit comprendre l’intention des autres.",
+          "La dernière exigence est la plus lourde et la moins répandue : elle demande qu’une machine sache ce que l’humain cherche à faire, et pas seulement ce qu’il vient de faire. Billings prend d’ailleurs ses distances avec sa propre liste dans la phrase qui suit. Ces principes, dit-il, sont énoncés comme des absolus, mais ils sont en réalité des « matters of choice to which system designers may or may not wish to adhere », des affaires de choix auxquelles un concepteur adhère ou non. Une doctrine qui se donne pour facultative est chose rare, et cette réserve dit le statut du texte : non pas une norme, une position argumentée."
+        ]
+      }
+    ],
+    "limits": [
+      "Le mémorandum de 1996 a été refondu l’année suivante en un volume paru chez Lawrence Erlbaum, Aviation Automation: The Search for a Human-Centered Approach. Ce que cette version retranche, ajoute ou réécrit se lit dans ses pages. Son millésime même y attend son lecteur : les notices d’édition donnent 1997 et Mahwah, d’autres auteurs 1996 et Hillsdale.",
+      "L’origine de l’expression reste ouverte, et Billings est le premier à le dire. Les textes qui portent la réponse, il les nomme lui-même : le plan professionnel de l’Air Transport Association d’avril 1989, les travaux de Sheridan, Norman, Rouse et Cooley sur les technologies dites centrées sur l’humain, et le courant du poste de travail centré sur l’humain du programme européen ESPRIT, auquel son mémorandum de 1991 rattache l’expression en même temps que les analyses de Cooley sur la déqualification.",
+      "Deux ans après le mémorandum, un rapport de David Woods et Nadine Sarter reformule déjà l’approche centrée sur l’humain en trois attributs qui ne sont pas ceux de Billings, conduite par le problème, centrée sur l’activité, liée au contexte, et l’attribue à un texte de Winograd et Woods paru en 1997. Ce que ce dernier en fait, ses pages le diront."
+    ]
+  },
+  {
+    "conceptId": "bruit-comme-principe-d-auto-organisation",
+    "lead": [
+      "Sur une ligne téléphonique qui grésille, une partie de ce qui a été dit n’arrive pas. Le grésillement n’apporte rien, il retranche, et toute la technique des communications consiste à le réduire autant qu’on peut. C’est en ce sens que le mot bruit est pris ici : des phénomènes aléatoires et parasites qui viennent brouiller un message entre celui qui l’émet et celui qui le reçoit. Henri Atlan part exactement de là, et il prend au sérieux l’objection qui l’attend. Un théorème, celui de la voie avec bruit, dû à Shannon, établit que l’information recueillie à la sortie d’une voie perturbée ne peut que décroître, et décroître précisément de ce que le bruit y a rendu indécidable. Ce n’est pas une opinion contrariante, c’est un résultat démontré.",
+      "Soutenir après cela que le bruit organise ressemble à un tour de passe-passe. Son article de 1972 ne conteste pourtant rien du théorème : il déplace ce qu’on compte, et l’endroit d’où on le compte. Une même perturbation ne produit pas le même effet selon qu’on regarde le message qui circule entre deux parties d’un ensemble, ou l’ensemble entier auquel ces deux parties appartiennent. Encore faut-il que cet ensemble soit d’une certaine sorte, et qu’il ait de quoi payer : les deux conditions sont énoncées dans l’article, et elles sont contraignantes."
+    ],
+    "sections": [
+      {
+        "title": "Ce que le bruit rend indécidable",
+        "paragraphs": [
+          "À la sortie d’une voie perturbée, une partie de ce qui arrive ne permet plus de décider ce qui avait été envoyé : plusieurs messages différents à l’entrée auraient produit le même résultat à l’arrivée. La théorie de l’information sait mesurer cette part d’indécision et lui donne un nom, l’ambiguïté. Le théorème s’énonce alors très simplement : la quantité d’information transmise d’un point A à un point B est celle qui est disponible en B, diminuée de l’ambiguïté introduite entre l’entrée et la sortie de la voie, et elle ne peut en aucun cas lui être supérieure.",
+          "Tant qu’on en reste là, la cause paraît entendue, et Atlan l’écrit lui-même : ce théorème semble exclure toute possibilité d’un rôle organisationnel du bruit. Sa réponse ne porte pas sur le théorème, mais sur la manière dont on s’en sert quand on quitte le problème de la transmission d’un message pour celui de l’analyse d’un système organisé. Ce transport charrie des postulats qui ne sont jamais énoncés, et c’est là que se loge le paradoxe apparent."
+        ]
+      },
+      {
+        "title": "La même ambiguïté, comptée deux fois",
+        "paragraphs": [
+          "Supposons que A et B ne soient pas deux correspondants étrangers l’un à l’autre, mais deux sous-systèmes d’un même ensemble, et que la voie bruitée passe à l’intérieur de cet ensemble. Rien n’a changé dans la mesure de l’ambiguïté. Ce qui change, c’est ce dont on totalise l’information. Du point de vue de la transmission de A vers B, l’ambiguïté est perdue ; du point de vue de la quantité d’information de l’ensemble A et B pris comme un tout, elle s’ajoute. Atlan tient les deux comptes dans une seule phrase : l’ambiguïté y est « considérée comme perdue du point de vue de la transmission de A à B, et au contraire comme un supplément du point de vue de la quantité d’information totale […] de l’ensemble du système ».",
+          "La raison de ce supplément tient dans un mot : autonomie. Moins B est déterminé par ce que A lui envoie, plus il peut prendre des états que A ne lui dicte pas, et plus l’ensemble, considéré du dehors, présente de configurations possibles. Atlan nomme les deux effets et leur donne un signe : l’ambiguïté-destructrice, qui se compte négativement, et l’ambiguïté-autonomie, qui se compte positivement. Ce sont deux effets d’une seule et même perturbation, non deux espèces de bruit qu’on pourrait trier à l’entrée.",
+          "C’est pourquoi le second versant ne remplace jamais le premier. Immédiatement après avoir montré comment un rôle positif du bruit peut se concevoir, Atlan rappelle que le fonctionnement du système dépend bel et bien de ce qui se transmet d’un sous-système à l’autre, et qu’à côté de ce rôle de facteur de complexification, « le rôle destructeur classique ne peut pas être ignoré ». Retenir de ce texte que le bruit organise, sans plus, c’est lui faire dire autre chose que ce qu’il dit."
+        ]
+      },
+      {
+        "title": "Pourquoi une seule voie ne suffit pas",
+        "paragraphs": [
+          "La contre-épreuve est donnée au même endroit, et elle est sévère. Dans un système réduit à une seule voie de communication entre A et B, l’autonomie de B à l’égard de A ne peut signifier qu’une chose : le système fonctionne mal, puis il se défait. Aucune complexification n’est à espérer là, parce qu’il n’y a rien d’autre pour tenir l’ensemble une fois le lien brouillé.",
+          "Il faut donc se représenter A et B reliés non seulement l’un à l’autre, mais chacun à un grand nombre d’autres sous-systèmes par un grand nombre d’autres voies, de telle sorte qu’une indépendance même totale de B à l’égard de A n’entraîne pas la disparition de l’ensemble. Atlan reprend ici à von Neumann la notion de système extrêmement hautement compliqué, dont les composants sont très nombreux et les relations entre eux très enchevêtrées. La condition est explicite : « Ce n’est que dans de tels systèmes qu’un rôle positif du bruit, par l’intermédiaire d’une ambiguïté-autonomie, peut coexister avec son rôle destructeur ». Hors de là, il reste le bruit ordinaire, celui qui abîme."
+        ]
+      },
+      {
+        "title": "La redondance, et ce qu’elle a à perdre",
+        "paragraphs": [
+          "Une seconde condition accompagne la première. La redondance, dans ce vocabulaire, désigne ce qu’un ensemble comporte de répétition : des éléments qui font la même chose, des liaisons qui disent deux fois ce qu’il suffirait de dire une fois, bref la part qu’on pourrait lui retirer sans rien perdre de ce qu’il accomplit. Grâce à ses nombreuses interconnexions, et pourvu que sa redondance initiale soit suffisamment grande, un système reste capable de fonctionner après la perturbation, et sa quantité d’information totale a augmenté.",
+          "Atlan en tire une exigence de seuil : pour qu’un système ait des propriétés auto-organisatrices, sa redondance initiale doit avoir une valeur minimum, « puisque ces propriétés consistent en une augmentation de complexité par destruction de redondance ». La formule dit du même coup ce que l’opération coûte. Le processus décrit est une suite de désorganisations rattrapées, chaque rétablissement laissant l’ensemble avec plus de variété et moins de redondance qu’auparavant. Ce qui nourrit l’organisation est prélevé sur une réserve qui diminue."
+        ]
+      },
+      {
+        "title": "Deux termes de signes contraires",
+        "paragraphs": [
+          "La formulation la plus serrée n’est pas une image, mais une équation, celle par laquelle Atlan suit dans le temps la quantité d’information du système. Son taux de variation y apparaît comme la somme de deux termes qui correspondent, schématiquement, aux deux effets opposés du bruit. Le premier exprime la variation de la redondance : si celle-ci est initialement assez élevée, elle diminue sous l’effet de l’ambiguïté-autonomie, et ce terme devient positif, contribuant à accroître l’information du système. Le second exprime la variation de l’information maximale que le système pourrait porter, et il est négatif.",
+          "Une somme de deux termes de signes contraires ne garde pas le même signe indéfiniment. Selon les valeurs des paramètres, la quantité d’information commence par augmenter, atteint un maximum, puis décroît : une phase de croissance et de maturation, avec possibilité d’apprentissage adaptatif, précède une phase de vieillissement et de mort. Atlan souligne que ce sont les mêmes facteurs qui font les deux, ceux dont la désorganisation progressive conduira le système à sa mort ayant auparavant nourri son développement. La coexistence des deux rôles n’est donc pas une prudence ajoutée après coup : elle est inscrite dans la structure du calcul."
+        ]
+      },
+      {
+        "title": "Un bruit qui cesserait d’en être un",
+        "paragraphs": [
+          "Reste l’objection que la thèse appelle, et le texte se la fait à lui-même. Si le bruit venu de l’environnement était utilisé par le système comme facteur d’organisation, il ne serait plus vraiment du bruit : cela reviendrait à dire que les facteurs de l’environnement ne sont pas aléatoires. Or ils le sont. Atlan tient les deux bouts. Ces processus n’existent qu’autant que les erreurs sont a priori de vraies erreurs, que l’ordre est vraiment perturbé par le désordre, que la destruction, sans être totale, est réelle.",
+          "De là vient le titre de la dernière partie de l’article, le bruit comme événement, et le lieu de sa publication, un numéro de la revue Communications consacré à l’événement. Les effets du bruit deviennent des événements de l’histoire du système et de son organisation ; ils demeurent pourtant les effets d’un bruit en ceci que leur survenue était imprévisible. Un système qui saurait d’avance ce qui va le perturber ne serait pas auto-organisateur au sens de ce texte : il serait seulement bien conçu."
+        ]
+      }
+    ],
+    "limits": [
+      "Le principe lui-même n’est pas d’Atlan et il le dit : il le rapporte à Heinz von Foerster, « le premier, à notre connaissance », et renvoie à On self organizing systems and their environments, paru en 1960 dans le volume dirigé par Yovits et Cameron chez Pergamon. Sous quelle forme la formule y est posée, et ce qu’elle y recouvre, ce sont ces pages qui le disent, et il faudra les lire. Même chose pour les phrases de von Foerster et pour la « loi de la variété indispensable » d’Ashby que l’article rapporte : Atlan les traduit lui-même, sans mention de traducteur ni d’édition, et ce sont donc ses mots à lui.",
+      "L’ouvrage L’organisation biologique et la théorie de l’information figure dans la bibliographie de l’article sous la mention à paraître, chez Hermann : c’est là qu’Atlan déploie sur un livre entier ce que seize pages compriment. Lequel des deux a paru le premier, et de combien, ne se lit ni dans l’article ni dans le numéro de Communications, qui ne portent pas de mois.",
+      "En français, un seul texte accessible situe vraiment la notion plutôt que de la mentionner au passage : Bernard Paulré range en 1997 les « théories de l’ordre par le bruit (H. von Foerster, H. Atlan) » parmi les théories de l’auto-organisation, et retient la condition de redondance. Mais il renvoie à l’ouvrage de 1972 et à Entre le cristal et la fumée, jamais à l’article. Une phrase de la page 35 de celui-ci se retrouve pourtant mot pour mot dans le livre de 1979 : ce que le livre en reprend et ce qu’il en déplace, c’est en l’ouvrant qu’on le verra."
+    ]
+  },
+  {
     "conceptId": "catachrese",
     "lead": [
       "Une pièce de monnaie qui sert de tournevis, une chaussure qui plante un clou, une clef plate qu’on empoigne pour taper au lieu du marteau resté au garage : ces gestes sont si ordinaires qu’on ne les remarque presque plus. L’outil fait un travail pour lequel il n’a pas été prévu, et il le fait à peu près bien. Faut-il y voir une maladresse, un bricolage qu’on tolère faute de mieux, ou quelque chose de plus intéressant sur la façon dont les gens s’approprient les objets qu’on leur donne ?",
@@ -172,6 +339,60 @@ export const generatedDeepenings: Deepening[] = [
       "L’attribution du mot à Winsemius, en 1969, et l’exemple donné par Faverge, en 1970, passent l’un et l’autre par ce qu’en écrit Rabardel : ce qu’on en lit plus haut est ce que Rabardel en rapporte, et rien de plus. Les deux articles d’origine, l’un en néerlandais, l’autre paru dans la revue Ergonomics, diront d’eux-mêmes ce que la reprise a laissé de côté.",
       "Les passages cités plus haut viennent de la version que l’auteur a lui-même déposée en ligne, et non de l’édition imprimée chez Armand Colin en 1995 : la pagination donnée est celle de ce dépôt, et qui citera le livre relèvera la sienne sur l’exemplaire imprimé.",
       "Ce que la notion est devenue après 1995, qui l’a reprise, discutée ou déplacée, commence là où ce qui précède s’arrête. Les études ultérieures consacrées à la catachrèse au sens ergonomique restent à lire, et ce sont elles qui diront ce que le mot a tenu."
+    ]
+  },
+  {
+    "conceptId": "conception-ecologique-interface",
+    "lead": [
+      "Quelqu’un qui refait chaque jour le même trajet ne délibère pas : ses mains suivent la route, et il ne saurait pas dire ce qu’il a fait des dix dernières minutes. Qu’un voyant connu s’allume, et le voilà qui reconnaît le signal et applique la conduite apprise pour ce cas-là. Qu’il entende en revanche un bruit inconnu, et il n’a plus de conduite apprise : il lui faut se faire une idée de ce qui se passe sous le capot, puis raisonner à partir de là. Trois façons d’agir dans la même journée, sur la même machine.",
+      "Celui qui dessine le tableau de bord ignore laquelle des trois se présentera. S’il présente tout sous forme de chiffres à interpréter, il oblige à réfléchir même lorsque la situation ne le demande pas, et ce qui aurait pu se faire d’un geste devient lent et fatigant. S’il réduit tout à quelques voyants, il ne restera plus rien pour comprendre le jour où survient ce que personne n’avait prévu. C’est par ce jour-là que Kim J. Vicente et Jens Rasmussen prennent le problème : l’événement non familier, que le concepteur n’a pas anticipé et pour lequel il n’existe aucune solution toute faite."
+    ],
+    "sections": [
+      {
+        "title": "Trois façons de faire face à une même situation",
+        "paragraphs": [
+          "Ces trois régimes portent un nom dans les travaux de Jens Rasmussen, où ils forment trois niveaux de contrôle cognitif, c’est-à-dire trois façons dont une personne prend en charge la situation devant elle. L’article de 1992 les reprend tels quels : le comportement fondé sur l’habileté, celui qui est fondé sur des règles, et celui qui est fondé sur des connaissances. Le premier est le geste ajusté en continu, sans mots ni délibération. Le deuxième reconnaît une situation déjà rencontrée et applique la conduite apprise pour elle. Le troisième n’a plus de conduite disponible : il faut se représenter le fonctionnement de l’installation et en déduire quoi faire.",
+          "Ce qui décide du niveau engagé n’est pas la difficulté de la tâche prise en elle-même, mais la façon dont l’information reçue est interprétée. Un même relevé peut être pris comme une grandeur physique sur laquelle la main s’ajuste, comme un indice qui déclenche une procédure, ou comme un élément à intégrer dans un raisonnement sur l’état du procédé. Ces trois lectures s’excluent l’une l’autre à un instant donné, et la manière dont l’information est présentée pèse sur celle qui aura lieu.",
+          "Cette taxonomie n’est pas un résultat de l’article de 1992. Vicente et Rasmussen l’adoptent comme point de départ, avec une seconde construction théorique qui porte sur la représentation des contraintes du travail, et disent prendre ces deux constructions pour axiomes afin d’en déduire des conséquences pour la conception. La taxonomie avait été publiée par Rasmussen en 1983, et c’est cette version-là que l’article de 1992 cite."
+        ]
+      },
+      {
+        "title": "Pourquoi le niveau le plus bas coûte le moins",
+        "paragraphs": [
+          "Deux constats précèdent immédiatement l’énoncé du but, dans le même paragraphe. Le premier : les niveaux inférieurs de contrôle cognitif s’exécutent plus vite, plus efficacement et avec moins d’effort que les niveaux supérieurs. Le second : les gens préfèrent nettement accomplir les tâches en s’appuyant sur ces niveaux inférieurs, et ils le font même quand l’interface n’est pas conçue pour cela.",
+          "Le second constat est le plus embarrassant pour un concepteur. Il ne dit pas qu’il serait souhaitable de laisser travailler par réflexe : il dit que cela se produira de toute façon. Un écran qui n’offre aucun appui au geste direct n’empêche pas l’opérateur de se chercher malgré tout un repère rapide ; il le laisse seulement le fabriquer lui-même, dans son coin, sans que rien ne vienne dire jusqu’où ce repère est fiable.",
+          "Les deux moitiés du but tiennent donc ensemble, et la seconde est celle qu’on perd le plus facilement de vue. Alléger le travail courant en donnant des appuis immédiats ne suffit pas si rien, dans le même écran, ne permet de reprendre la main quand l’appui devient trompeur. La difficulté n’est pas de choisir le bon niveau une fois pour toutes : c’est de servir les trois avec le même dispositif."
+        ]
+      },
+      {
+        "title": "L’indice qui marche presque toujours",
+        "paragraphs": [
+          "L’exemple le plus concret de l’article vient de l’accident de Three Mile Island. Les opérateurs suivaient le niveau du pressuriseur et le prenaient pour un indice de la quantité d’eau présente dans le circuit primaire. Cet indice est bon dans les conditions ordinaires. Ce qui leur manquait, écrivent les auteurs, c’est la conscience des conditions aux limites à l’intérieur desquelles il reste valide.",
+          "L’argument n’est pas que l’indice était mauvais, ni que les opérateurs auraient dû s’en méfier davantage. C’est que rien, dans ce qu’ils avaient sous les yeux, ne leur montrait où cet indice cessait de correspondre à ce qu’ils croyaient y lire. Une conduite apprise avait été appliquée hors de son domaine de validité, et l’installation, telle qu’elle se donnait à voir, n’avait aucun moyen de le signaler.",
+          "De là la conséquence que les auteurs en tirent pour la conception : l’écran devrait donner à percevoir les contraintes fondamentales qui gouvernent le procédé, et non seulement les valeurs par lesquelles on a pris l’habitude de les deviner. Un piège de ce genre ne se corrige pas en demandant plus d’attention : il se corrige en rendant visible ce qui manquait."
+        ]
+      },
+      {
+        "title": "Montrer les contraintes plutôt que les valeurs",
+        "paragraphs": [
+          "La hiérarchie d’abstraction est le second point de départ que les deux auteurs adoptent sans le démontrer. Ils la proposent comme une manière de représenter les contraintes d’un domaine de travail qui soit psychologiquement pertinente, c’est-à-dire utilisable par quelqu’un qui doit tenir devant un événement que personne n’avait prévu. Une représentation de ce genre, une fois affichée, tient lieu de modèle mental extérieur : plutôt que de demander à l’opérateur de reconstituer de mémoire le fonctionnement de l’installation, l’écran en porte la structure.",
+          "Le cadre se décline ensuite en trois principes, un par niveau, et c’est là son contenu opératoire. Pour le niveau de l’habileté, l’opérateur doit pouvoir agir directement sur l’affichage, et la structure de l’information affichée doit correspondre à celle de ses mouvements. Pour le niveau des règles, l’interface doit établir une correspondance constante, terme à terme, entre les contraintes du domaine de travail et les indices qu’elle donne à voir. Pour le niveau des connaissances, le domaine de travail doit être représenté sous la forme d’une hiérarchie d’abstraction.",
+          "Pris isolément, le deuxième de ces principes se laisserait facilement prendre pour le cadre entier, et il ne l’est pas. La correspondance entre contraintes et indices règle le cas de la situation reconnue ; elle ne dit rien de ce qu’il faut fournir au geste, ni de ce qu’il faut fournir au raisonnement lorsque plus aucune règle ne s’applique. Ce que la formulation de 1992 tient ensemble, c’est que ces trois exigences portent sur une seule et même interface."
+        ]
+      },
+      {
+        "title": "Ce que le mot « écologique » désigne ici",
+        "paragraphs": [
+          "L’adjectif ne renvoie ni à l’environnement naturel ni à la consommation d’énergie. Les auteurs le justifient par la relation entre l’opérateur et son environnement de travail : les deux ne se décrivent pas séparément, puisque ce qu’une personne peut faire dépend de ce que le milieu technique lui présente, et que ce que ce milieu présente dépend de la façon dont il a été conçu. C’est cette dualité qu’ils invoquent pour expliquer le choix du mot.",
+          "L’expression, elle, est antérieure à l’article de 1992, et ses auteurs ne s’en cachent pas : elle figure déjà dans deux travaux qu’ils cosignent et qu’ils citent, un rapport de 1988 et un article de 1989, et le texte de 1992 renvoie lui-même au second comme au lieu où le cadre a été proposé pour la première fois. Ce qu’ils revendiquent en 1992 est délimité avec précision : « the specific theoretical formulation presented here is a new one ». La formulation théorique, donc, et rien de plus."
+        ]
+      }
+    ],
+    "limits": [
+      "L’article de 1989 signé Rasmussen et Vicente est, de l’aveu du texte de 1992, l’endroit où ce cadre a été proposé pour la première fois. Sous quelle forme, et quelle part de la formulation de 1992 s’y trouve déjà : ses pages le disent, et il faudra les lire. Le rapport de 1988, plus ancien encore, porte l’expression dans son titre.",
+      "Pour lire les trois principes dans les termes exacts de leurs auteurs, c’est la composition de la revue qu’il faudra ouvrir : l’article de 1992 circule en accès libre sous la forme d’un dépôt universitaire dont la couche de texte a par endroits abîmé les mots, et dont la pagination n’est pas celle de la revue, laquelle ne se connaît que par l’intervalle 589 à 606.",
+      "La taxonomie des trois niveaux n’est pas exposée dans cet article : il la reprend et renvoie qui ne la connaît pas à l’article que Rasmussen lui a consacré en 1983, où se trouve la distinction entre signaux, signes et symboles.",
+      "L’expression n’a pas de traduction française consacrée, et une variante circule dans un autre ordre des mots. La phrase citée en français est une traduction de travail, non publiée : l’anglais reste le texte."
     ]
   },
   {
@@ -232,6 +453,228 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "conscience-de-la-situation",
+    "lead": [
+      "Quand une manœuvre tourne mal, la première question posée est presque toujours la même : pourquoi cette décision plutôt qu’une autre ? La réponse déçoit souvent, parce que la décision était cohérente avec ce que la personne croyait de sa situation à ce moment-là. Ce qui manquait était en amont : un paramètre qu’elle ne regardait plus, une évolution qu’elle n’avait pas vue venir. Chacun connaît cela au volant : on s’absorbe dans un problème, et pendant ce temps quelque chose d’autre change sans qu’on le remarque.",
+      "Mica R. Endsley travaillait sur les cockpits quand elle a donné un nom et une structure à cette image que l’on se fait de ce qui se passe autour de soi. Les pilotes avaient déjà leur expression pour cela, rester en avance sur son avion, et le terme circulait chez eux avant d’entrer dans les revues scientifiques. Ce qu’elle y ajoute tient en deux gestes : un découpage en trois opérations qui ne se valent pas, et l’idée que cette image se construit avant la décision et s’examine séparément d’elle."
+    ],
+    "sections": [
+      {
+        "title": "Comprendre n’est pas décider",
+        "paragraphs": [
+          "Le geste théorique tient dans une phrase du rapport que Mica R. Endsley signe en 1998 avec quatre collègues du MIT : « Situation awareness forms the critical input to, but is separate from, decision making. » La conscience de la situation alimente la décision, elle en est l’entrée décisive, et pourtant elle s’en distingue. Suivent les deux cas qui obligent à les tenir séparées. Un pilote parmi les mieux formés et les plus expérimentés peut décider mal si sa conscience de la situation est incomplète ou inexacte. À l’inverse, un pilote inexpérimenté peut comprendre exactement ce qui se passe sans savoir quelle action prendre.",
+          "La conséquence est pratique : elle décide de ce qu’on cherche après un incident. Dans le premier cas, le répertoire d’actions était là et c’est l’image de la situation qui était fausse ; dans le second, l’image était juste et c’est le répertoire qui manquait. Deux causes, deux remèdes, que le seul examen du choix final ne distingue pas. D’où la demande d’examiner la conscience de la situation à part des étapes de décision et d’exécution. La thèse de Béatrice Bailly, qui acclimate la notion en français chez les conducteurs, le redit : « pour Endsley, le propre de la conscience de la situation est de précéder la prise de décision »."
+        ]
+      },
+      {
+        "title": "Trois niveaux qui ne se valent pas",
+        "paragraphs": [
+          "Le premier niveau est celui des éléments. « The first step in achieving SA involves perceiving the status, attributes, and dynamics of relevant elements in the environment. » Percevoir ne veut pas dire apercevoir : il s’agit de relever l’état d’un élément, ses propriétés et sa dynamique, c’est-à-dire dans quel sens il bouge. Pour un pilote, ce sont la vitesse, la position, l’altitude, la route, mais aussi la météo, les clairances du contrôle aérien et ce que fait l’équipage.",
+          "Le deuxième niveau ne s’obtient pas en additionnant le premier. Il demande de faire tenir ensemble des éléments épars et de les rapporter aux buts du moment : la même altitude ne signifie pas la même chose selon qu’on monte vers un niveau de croisière ou qu’on approche d’un relief. Le rapport y place la différence entre le débutant et l’expérimenté : le premier peut percevoir tout ce que perçoit le second, et rester en deçà dès qu’il s’agit d’intégrer ces données.",
+          "Le troisième niveau est l’anticipation à court terme, et il est appelé le plus élevé parce qu’il suppose les deux autres. Anticiper ce que vont faire les éléments d’une situation n’est possible qu’à partir de leur dynamique connue et d’une compréhension déjà formée. Il donne en échange quelque chose d’irremplaçable : du temps. Prévoir qu’une cellule orageuse va devenir gênante laisse celui de chercher un itinéraire ; la découvrir gênante ne le laisse pas."
+        ]
+      },
+      {
+        "title": "Rien ne devient jamais sans importance",
+        "paragraphs": [
+          "Le mot conscience laisse croire à un état qu’on aurait ou qu’on n’aurait pas, comme on est éveillé ou endormi. Le rapport dit le contraire : elle n’est pas acquise instantanément, elle se construit dans le temps, et l’instant présent n’en donne jamais qu’une coupe. Elle est aussi bornée par l’espace et par les buts : à chaque instant, seul un sous-ensemble de ce qui existe autour de soi compte, et c’est la tâche en cours qui le découpe.",
+          "Suit alors le point le plus enseignable du texte, et le plus facile à perdre. Tous les éléments n’ont pas la même importance à tout moment, mais aucun ne devient jamais sans importance : il devient secondaire. Il faut donc en conserver assez sur les éléments secondaires pour savoir qu’ils ne sont pas devenus primaires. Exigence bien plus lourde qu’une simple hiérarchie d’attention : elle interdit de fermer complètement une porte.",
+          "Imaginons une équipe absorbée par une panne, et qui cesse pour cette raison de suivre une réserve dont personne ne se souciait, puisqu’elle était confortable. Le raisonnement qui l’a rendue secondaire était juste au moment où il a été tenu ; ce qui manque ensuite, c’est le peu de surveillance qui aurait signalé son changement de rang. Une hiérarchie établie une fois et jamais rejouée suffit à produire une erreur qu’aucune décision absurde n’explique."
+        ]
+      },
+      {
+        "title": "Une phrase citée partout, jamais à sa source",
+        "paragraphs": [
+          "La définition qui circule partout est celle-ci : « Situation awareness is the perception of the elements in the environment within a volume of time and space, the comprehension of their meaning, and the projection of their status in the near future. » La perception des éléments de l’environnement dans un volume de temps et d’espace, la compréhension de leur signification, la projection de leur état dans un futur proche. Les reprises abrègent souvent le volume de temps et d’espace, qui donne pourtant à cette conscience ses bornes.",
+          "Elle a une particularité. Dans le rapport de 1998, elle n’est pas énoncée, elle est citée : la phrase est entre guillemets, précédée de « the most generally applicable definition is that provided by Endsley (1988) », et la bibliographie renvoie à une communication de 1988 signée d’Endsley seule. Le même paragraphe figure déjà dans un rapport fédéral de décembre 1994 qu’elle signe avec Mark D. Rodgers, contrôleur remplaçant pilote : là encore entre guillemets, renvoyée cette fois à deux textes de 1987 et 1988.",
+          "Les deux textes où elle formule la définition, celui de 1988 et l’article de théorie de 1995, se lisent chez leur éditeur : ce qui court dans les manuels est la définition telle que d’autres la rapportent. Le terme, lui, est plus ancien qu’elle. Béatrice Bailly rappelle qu’« A l’origine, ce terme était plus employé par les pilotes que par la communauté scientifique », et qu’en 1986 la 57th Fighter Weapons Wing de l’US Air Force en faisait le facteur le plus important d’efficacité d’une mission."
+        ]
+      },
+      {
+        "title": "Ce qu’on reproche au modèle",
+        "paragraphs": [
+          "La contestation vient de l’intérieur de la discipline. Une méta-revue publiée en 2026 par Laura Louise Moens et ses collègues, dans la revue même qui avait accueilli Endsley en 1995, écrit que la conscience de la situation est « a theoretically challenged construct, lacking a universally accepted operational definition and exhibiting ill-defined conceptual boundaries » : un construit théoriquement fragile, sans définition opérationnelle admise de tous et aux frontières mal découpées. Elle rapporte la formule de Sarter et Woods, pour qui ce serait « just a label for a variety of cognitive processing activities », une étiquette posée sur des activités cognitives variées, et conclut qu’il vaut mieux y voir un méta-construit dépendant du contexte qu’un phénomène unique et précisément défini.",
+          "Le second reproche est logique. Norman R. Hertz et Michael T. Hertz reprennent un argument de circularité : comment sait-on que la conscience de la situation a été perdue ? Parce que l’opérateur a mal réagi. Pourquoi a-t-il mal réagi ? Parce qu’elle avait été perdue. Expliquer une erreur par la perte de ce que l’erreur sert à constater n’explique rien. Ils rappellent aussi que « Situation awareness is a hypothetical construct that cannot be measured directly » : personne ne l’observe, on en infère l’état à partir de ce que fait l’opérateur.",
+          "Et pourtant le modèle domine. La même méta-revue reconnaît qu’« Endsley’s (1995b) three-level model remains the most influential theoretical framework of SA », et Béatrice Bailly constatait déjà que les auteurs « se réfèrent très majoritairement à la définition et au modèle de R. Mica Endsley ». Contesté et dominant à la fois : on peut comprendre ce statut en tenant les trois niveaux pour une grille de questions à poser, plutôt que pour la description d’un état mesurable logé dans une tête."
+        ]
+      },
+      {
+        "title": "Ce que le rapport de 1998 cherchait vraiment",
+        "paragraphs": [
+          "Le rapport de 1998 consacre l’essentiel de ses quatre-vingt-douze pages à tout autre chose qu’à la théorie : une analyse de tâche dirigée par les buts, menée auprès de pilotes de ligne expérimentés. On y dégage leurs buts, leurs sous-buts, les décisions qui s’y rattachent, et pour chacune l’information nécessaire, rangée selon les trois niveaux. Le produit est un inventaire de ce qu’il faut savoir pour piloter, destiné à la conception et à la formation.",
+          "Le texte pose lui-même la mise en garde qui devrait accompagner toute reprise de ces listes : elles décrivent ce que les pilotes voudraient idéalement savoir, alors qu’ils travaillent couramment avec moins. C’est « a design goal, not necessarily a description of an existing system », un objectif de conception, pas la description d’un système existant."
+        ]
+      }
+    ],
+    "limits": [
+      "La communication de 1988, « Design and Evaluation for Situation Awareness Enhancement », est le texte où la définition en trois niveaux a été formulée. Dans quels termes exacts, et contre quelles définitions concurrentes, ces pages des actes de la Human Factors Society le diront seules.",
+      "L’article de 1995, « Toward a Theory of Situation Awareness in Dynamic Systems », porte la théorie déployée et l’analyse d’accidents dont les pourcentages circulent partout, y compris dans le rapport de 1998, qui les lui emprunte. Ce qu’ils comptent, et sur quels cas, se lit là et pas ailleurs.",
+      "Sarter et Woods, Flach, Stanton, Salmon, Dekker, Adams, Tenney et Pew apparaissent ici à travers ceux qui les citent. Leur objection dans ses propres termes, avec ce qu’ils proposent à la place, tient dans leurs articles.",
+      "Reste la mesure, que le rapport de 1998 ne traite pas et qui est la question la plus discutée du domaine. La méta-revue de Laura Louise Moens et de ses collègues lui est consacrée, quatorze revues systématiques rassemblées : ce qu’elle conclut des instruments s’y lit en accès libre."
+    ]
+  },
+  {
+    "conceptId": "controle-de-la-perception",
+    "lead": [
+      "Imaginons deux personnes qui traversent la même pièce en portant une tasse pleine. Aucune ne pose les pieds aux mêmes endroits, aucune ne tient le bras de la même façon, et si l’on demandait à l’une de recommencer, elle ne referait pas les mêmes gestes. Ce qui se répète dans cette scène n’est aucun des mouvements que l’on voit : c’est le niveau du café, qui reste sous le bord. Décrire la scène par ses mouvements revient donc à énumérer tout ce qui change en laissant de côté la seule chose qui tienne.",
+      "Ce constat, que l’on peut refaire sur presque n’importe quelle activité ordinaire, est le point de départ de William T. Powers. Si les actions varient sans cesse pendant que le résultat se répète, c’est que l’organisme ne tient pas ses actions : il tient une grandeur qu’il perçoit, et ses actions changent exactement autant qu’il le faut pour que cette grandeur, elle, ne change pas. Powers ne réserve pas ce mécanisme à l’être humain. Il y voit le principe le plus élémentaire du vivant, et l’applique à la cellule et à l’amibe qui étend un pseudopode autant qu’à la personne à la tasse."
+    ],
+    "sections": [
+      {
+        "title": "Une perception, une référence, un écart",
+        "paragraphs": [
+          "Powers décompose ce mécanisme en trois pièces, qu’il nomme sur l’exemple qu’il file le plus volontiers, celui du conducteur. La première est la perception, et il précise laquelle : ce qui est tenu n’est ni la voiture ni la route, mais « the relationship of the car to the road as seen through the windshield », le rapport entre la voiture et la route tel qu’il apparaît à travers le pare-brise. La deuxième est une référence, c’est-à-dire une image de ce que ce rapport devrait être ; Powers insiste sur son emplacement, elle est au-dedans et jamais au-dehors, et c’est cela qu’il appelle un but. La troisième est l’écart entre les deux, auquel il donne la définition la plus courte possible : l’erreur n’est rien d’autre que la différence entre la référence et le réel.",
+          "Une fois ces trois pièces posées, quelque chose devient inutile. Il n’y a pas à calculer d’avance de combien il faut tourner le volant, ni à établir un plan des mouvements à produire : l’écart se voit en continu, l’action se corrige en continu, et les corrections deviennent de plus en plus petites à mesure que l’écart diminue, jusqu’à ce qu’il n’y ait plus d’écart. Powers y tient beaucoup, car c’est ce qui sépare sa boucle d’un cerveau qui calculerait des commandes. Ce n’est pas le mouvement qui est décidé, c’est la perception qui est visée."
+        ]
+      },
+      {
+        "title": "Le vent que le conducteur ne sent pas",
+        "paragraphs": [
+          "Le même volant sert à Powers pour un point plus difficile, et c’est un vent de travers qui le porte. Vue du dehors, la scène est limpide : une rafale pousse la voiture, le conducteur tourne le volant, la rafale a causé le geste. Powers fait remarquer que le conducteur, dans une voiture fermée, n’a aucun moyen de percevoir ce vent. Ce qu’il perçoit, ce sont des effets sur la trajectoire de la voiture, et encore : des effets qu’il est précisément en train d’empêcher.",
+          "L’ordre des causes que croit voir l’observateur est donc inversé. Il croit que les perturbations produisent les actions ; ce qui se passe est que les actions empêchent les perturbations de modifier ce que l’organisme tient. La conséquence est déroutante, et elle est le cœur de l’affaire : mieux le contrôle réussit, moins la grandeur tenue bouge, et plus il devient difficile de deviner du dehors ce qui est en train d’être tenu. Une même perception peut d’ailleurs être maintenue par des actions opposées selon la perturbation du moment, ce qui ruine d’avance toute description du comportement par ses seuls mouvements."
+        ]
+      },
+      {
+        "title": "Ce que « perception » veut dire ici",
+        "paragraphs": [
+          "Le mot perception peut évoquer une impression, une interprétation, quelque chose de flou. Dans le chapitre de prémisses de Behavior: The Control of Perception, Powers lui donne un sens matériel et étroit. Il appelle perception, au sens large, l’ensemble des événements qui suivent une stimulation dans la partie du cerveau qui reçoit, depuis les récepteurs sensoriels jusqu’aux centres les plus élevés du cortex ; et, au sens strict, un courant nerveux dans une fibre ou dans un faisceau de fibres, courant dont la grandeur dépend de celles d’un ensemble de stimulations sensorielles primaires. Une perception, ici, est une quantité.",
+          "Ce chapitre pose aussi ce que le cerveau n’est pas. Powers y écarte le modèle de l’ordinateur numérique, au motif qu’il n’existe dans le système nerveux aucune horloge qui ferait se succéder les changements d’état en bon ordre, et lui substitue un dispositif à grandeurs continues, qui additionne, amplifie, intègre et dérive des courants nerveux. Il en tire une conséquence qu’il assume : ces signaux perceptifs sont la réalité, pour autant que le cerveau fasse l’expérience d’une réalité, alors même qu’ils dépendent d’autre chose, une réalité extérieure supposée, qui n’est pas la même chose que la réalité éprouvée."
+        ]
+      },
+      {
+        "title": "Deux points de vue sur la même boucle",
+        "paragraphs": [
+          "L’ingénierie sait décrire une boucle de régulation depuis longtemps, mais elle la décrit du dehors, comme un observateur qui mesure des entrées et des sorties. Powers annonce que sa théorie ne s’en tient pas là : il veut aussi saisir de quoi le contrôle a l’air pour celui qui contrôle, c’est-à-dire pour vous et pour moi, qui occupons chacun notre exemplaire de ce mécanisme et participons à le faire marcher. C’est de ce déplacement du regard que la théorie tire son nom, puisque la grandeur tenue s’avère être une perception et non un mouvement.",
+          "Il attend des choses différentes des deux points de vue. Du dehors, des modèles objectifs qui reproduisent sur ordinateur, avec une grande précision, quelques formes simples du comportement humain. Du dedans, ceci : « Using the internal point of view, we can understand many aspects of behavior by seeing control as control of perception rather than of an objective world ». Deux lignes plus haut, il borne lui-même sa prétention et prévient qu’il ne règle pas entièrement les énigmes que soulèvent la perception et le point de vue : ce qu’il propose est sa meilleure tentative pour mettre de la cohérence entre le comportement observable et l’expérience privée."
+        ]
+      },
+      {
+        "title": "Ce qu’un étage supérieur demande au suivant",
+        "paragraphs": [
+          "Une boucle seule ne suffit pas à Powers, et il en empile. Dans son exposé de synthèse de 2009, il pose que seuls les systèmes du premier niveau agissent directement sur l’environnement ; tous les autres agissent en ajustant les buts perceptifs des systèmes qui leur sont inférieurs. Un étage supérieur ne dit donc pas à l’étage au-dessous ce qu’il doit faire, il lui montre ce qu’il doit percevoir, en faisant varier continûment l’image de référence plutôt qu’en commandant des mouvements de volant.",
+          "C’est sur cette idée que son exposé se ferme, par une phrase qui vaut pour tous les étages : « All control their own perceptions, not their actions. » Tous contrôlent leurs propres perceptions, pas leurs actions. On peut en tirer une remarque qui n’est pas de Powers : une consigne formulée en gestes à produire et une consigne formulée en résultat à percevoir ne demandent pas la même chose à qui la reçoit, et c’est la seconde qui correspond à ce que cette boucle est censée traiter."
+        ]
+      },
+      {
+        "title": "Ce que Powers reproche à la cybernétique",
+        "paragraphs": [
+          "La parenté avec la cybernétique saute aux yeux, et Powers ne la tait jamais : il la discute pour s’en séparer. Dans son chapitre de prémisses, il cite l’analyse des réseaux de neurones de McCulloch et l’analyse des séries temporelles stationnaires que Wiener donne dans Cybernetics, en 1948, pour leur adresser un seul reproche : les théorèmes se sont multipliés, mais ces analyses exigent assez régulièrement, sur le système nerveux, des hypothèses contraires à ce que l’on sait de lui.",
+          "Le reproche est plus net encore dans son texte de 2009, dont une section traite de la cybernétique en passant. Powers y raconte la naissance du champ, puis dit ce qui lui a manqué : ses principaux fondateurs n’étaient pas des ingénieurs de l’asservissement, ils en ont appris juste assez pour bâtir leur pensée autour de la causalité circulaire, et sont partis vers la communication, la théorie de l’information et, plus tard, l’intelligence artificielle, sans mener la transformation à son terme. Il se rattache en revanche sans réserve à Ashby, et à l’ingénierie des asservissements des années 1920 et 1930, dont il dit qu’elle a découvert par accident comment fonctionnent les systèmes qui poursuivent un but."
+        ]
+      }
+    ],
+    "limits": [
+      "Le sous-titre que ces textes portent depuis 2016, « An Overview of the Third Grand Theory in Psychology », est une formule de l’éditeur du volume, rattachée à un article de 2015 de W. Mansell et R. S. Marken, deux praticiens de la théorie. C’est une revendication, pas un état constaté de la psychologie : ce que cet article établit, il faudra le lire dans Review of General Psychology.",
+      "De critique extérieure, rien plus haut. La plus citée reste l’article d’E. A. Locke paru en 1991 dans Motivation and Emotion, qui vise la famille des modèles de régulation par l’écart plutôt que Powers nommément : c’est là que les objections se lisent.",
+      "L’exposé que Powers a donné de sa théorie en 1978 dans Psychological Review, « Quantitative analysis of purposive systems », est le seul qu’il ait publié dans une grande revue de psychologie à comité de lecture. C’est le texte à ouvrir pour voir en quels termes il l’a présentée à ce public.",
+      "De Behavior: The Control of Perception, le volume de 2016 ne reproduit qu’un chapitre de prémisses : les chapitres 4 et 5, où la thèse se construit, gardent leur démonstration. Aucune édition française n’existe : les formules françaises employées plus haut sont de notre fait."
+    ]
+  },
+  {
+    "conceptId": "controle-supervise",
+    "lead": [
+      "Une pince doit saisir un objet posé au fond de la mer. Une personne, à bord d’un navire ou à terre, regarde des images, pousse une manette, et le bras obéit. C’est ce que les auteurs de 1978 appellent un téléopérateur : un engin muni de capteurs et d’actionneurs qui prolonge quelqu’un jusque dans un milieu trop lointain ou trop dangereux pour lui. Tant que la personne tient la manette, la question de savoir qui fait quoi ne se pose pas : elle fait tout, l’engin transmet.",
+      "Ajoutez maintenant un calculateur à bord de cet engin, capable de mener seul quelques opérations. La personne cesse de pousser la manette en continu, sans devenir pour autant spectatrice : son travail change de nature, et rien dans le vocabulaire de la commande à distance ne dit ce qu’il est devenu. Le problème posé par ces pages est exactement celui-là. Nommer avec assez de précision ce qui reste à faire à quelqu’un dont la machine fait une partie du travail, pour qu’un concepteur puisse en décider au lieu de le subir."
+    ],
+    "sections": [
+      {
+        "title": "Ce que la machine décide toute seule",
+        "paragraphs": [
+          "La définition tient en une phrase, et tout s’y joue sur ce que l’engin embarque. Un système supervisé n’a pas seulement des capteurs et des actionneurs : il a aussi un calculateur, et il est « capable of autonomous decision-making and control over short periods and in restricted conditions », capable de décider et de commander par lui-même sur de courtes périodes et dans des conditions restreintes. Les deux bornes comptent autant que la capacité. Ce n’est pas une machine autonome, c’est une machine à qui l’on confie des bouts d’action.",
+          "Cette autonomie locale, et elle seule, sépare le contrôle supervisé de la simple commande à distance : une manette reliée à un bras ne décide de rien, elle transmet. Du côté de la personne, la même phrase dit deux choses. Elle surveille à distance, et elle actionne par intermittence, soit en reprenant la commande directement, soit en reprogrammant ce que l’engin exécutera. Deux façons de reprendre la main, qui ne demandent ni les mêmes gestes ni le même délai.",
+          "Rien de tout cela n’est propre à la mer. La phrase nomme elle-même d’autres cas, un avion, une centrale, avant de revenir aux engins sous-marins qui occupent le reste du texte. Le schéma est donc posé d’emblée comme général : ce qu’il décrit est une manière de répartir le travail entre une personne et un calculateur, quelle que soit la machine manœuvrée."
+        ]
+      },
+      {
+        "title": "Planifier, ordonner, surveiller, intervenir",
+        "paragraphs": [
+          "Que fait alors la personne ? Le texte de conférence répond par une figure dont une ligne énumère les rôles de l’opérateur : planifier, ordonner l’action de l’engin, surveiller cette action, intervenir. L’ordre n’est pas indifférent. Planifier vient avant tout, à un moment où rien ne bouge encore ; ordonner et surveiller occupent le temps ordinaire du travail ; intervenir est l’exception, celle qui n’arrive que si les choses se passent autrement que prévu.",
+          "Le rapport complet en compte cinq, et le cinquième est le plus inattendu : la confiance, définie comme le fait « to attain enough operating experience or otherwise acquire a basis for believing that the teleoperator will behave as intended », acquérir assez d’expérience de conduite, ou autrement de quoi croire que l’engin se comportera comme prévu. Ce n’est pas un sentiment, c’est un travail : il faut du temps passé avec la machine pour savoir ce qu’on peut lui laisser faire. Ce rôle-là ne figure pas dans la figure de la communication, seulement dans le texte long."
+        ]
+      },
+      {
+        "title": "Partager le contrôle, ou l’échanger",
+        "paragraphs": [
+          "Deux façons de faire coexister une personne et un calculateur, que le langage courant confond volontiers sous le mot d’assistance. Partager le contrôle, c’est que les deux soient actifs en même temps. Échanger le contrôle, c’est qu’à un moment le calculateur soit actif, et à un autre la personne. Le rapport distingue les deux explicitement, et cette distinction fait plus de travail qu’il n’y paraît : elle sépare deux situations que l’on décrit d’ordinaire du même mot.",
+          "L’intervention devient alors définissable sans flou : c’est l’échange en sens inverse, du calculateur vers la personne. Et ce que fait le calculateur diffère selon le régime. Quand il partage, il soulage l’opérateur d’une partie de la charge, ou étend ce que celui-ci peut faire. Quand il échange, il prend le relais, ou remplace. Un même dispositif d’aide ne pose donc pas les mêmes questions selon qu’il travaille à côté de quelqu’un ou à sa place.",
+          "Les auteurs bornent eux-mêmes ce qu’ils proposent, et la phrase mérite d’être lue : « While this taxonomy of relationships at the present has no corresponding quantitative theory, it has been useful to the authors in thinking about what is desirable for man-computer control of teleoperators. » Cette classification des relations n’a, pour l’heure, aucune théorie quantitative qui lui corresponde ; elle a simplement été utile aux auteurs pour réfléchir à ce qui serait souhaitable. C’est un outil de pensée qui se donne pour tel, et non une mesure."
+        ]
+      },
+      {
+        "title": "Dix degrés pour une seule décision",
+        "paragraphs": [
+          "L’échelle des degrés d’automatisation, elle, ne se lit pas dans la communication : elle est dans le rapport, où une table les ordonne de un à dix. Le premier degré n’est pas l’absence de machine, « human does the whole job up to the point of turning it over to the computer to implement » : l’humain fait tout le travail jusqu’au point où il le remet au calculateur pour exécution. Le dixième est à l’autre bout, « computer does whole job if it decides it should be done, and if so tells human, if it decides he should be told » : le calculateur fait tout le travail s’il décide qu’il doit être fait, et le dit à l’humain s’il décide qu’il doit en être informé.",
+          "Entre les deux, huit positions déplacent la décision par petits pas : établir les options, en suggérer une que la personne n’est pas tenue de suivre, choisir l’action, l’exécuter si la personne approuve, l’exécuter en laissant le temps de l’arrêter, l’exécuter et en rendre compte nécessairement, n’en rendre compte que si on le demande. Ce qui bascule le long de l’échelle n’est donc pas seulement l’action : c’est l’information. Aux derniers degrés, la personne peut ne pas savoir ce qui a été fait.",
+          "Le titre exact de la table dit une chose qu’on oublie presque toujours en la citant : « Levels of automation in man-computer decision-making, for a single elemental decisive step ». Les degrés valent pour une seule étape décisive élémentaire, pas pour une machine entière ni pour un métier. Un même système peut donc se tenir à un degré pour une décision et à un autre pour la suivante. Les auteurs ajoutent d’ailleurs que d’autres variantes sont possibles, et que « in each of the ten steps » la demande initiale de l’humain peut être inutile, ou ignorée par le calculateur."
+        ]
+      },
+      {
+        "title": "Deux textes de 1978, deux signatures",
+        "paragraphs": [
+          "Deux textes portent ce travail cette année-là, et ils ne sont pas signés de la même façon. La communication présentée à la conférence porte trois noms, Thomas B. Sheridan, William L. Verplank et Thurston L. Brooks. Le rapport du laboratoire, beaucoup plus long, n’en porte que deux, les deux premiers. Ce n’est pas un détail de bibliographie : les définitions et la matrice des rôles viennent du texte à trois, la table des dix degrés vient du texte à deux, et les deux ensembles ne se recouvrent pas.",
+          "De là une confusion tenace. L’échelle est presque toujours citée dans une formulation qui ne se trouve dans aucun des deux textes, « the computer offers no assistance » pour le premier degré. Or ce degré-là, tel qu’il est écrit en 1978, suppose déjà un calculateur à qui l’on remet le travail pour exécution : ce n’est pas la même idée. La formule reçue vient de reprises postérieures, et la dater de 1978 prête à ces pages une phrase qu’elles ne contiennent pas.",
+          "Une dernière prudence, que les auteurs s’imposent à eux-mêmes : ils écrivent « supervisory control » entre guillemets, comme une expression déjà en circulation, et ne renvoient à aucun texte fondateur pour elle. 1978 est la date d’une définition et d’une table, pas celle d’une invention de vocabulaire."
+        ]
+      }
+    ],
+    "limits": [
+      "L’expression est plus ancienne que ces deux textes, qui l’emploient comme reçue. La bibliographie du rapport renvoie à des travaux antérieurs dont le titre la porte déjà, en particulier un texte de W. R. Ferrell paru en 1973 dans Remotely Manned Systems. Ce sont les racines de la notion, et c’est là qu’il faudra chercher qui l’a employée le premier.",
+      "La version de l’échelle qui circule aujourd’hui n’est pas celle de 1978 : elle vient des reprises ultérieures, par Sheridan lui-même dans Telerobotics, Automation and Human Supervisory Control (MIT Press, 1992), puis par Parasuraman, Sheridan et Wickens en 2000. Ce sont ces pages qui portent la formulation devenue canonique, et qui diront ce qui s’est déplacé en chemin.",
+      "La section 5 de la communication décrit un système nommé SUPERMAN, tiré de la thèse alors en cours de T. L. Brooks, publiée en 1979 dans la série MIT Sea Grant : c’est la machine sur laquelle ces idées ont été essayées, et le détail de ce qu’elle faisait tient dans ces 280 pages. Le prénom du troisième signataire, Thurston, vient de notices de catalogue et non d’une page signée. Et aucune traduction française publiée de l’un ou l’autre texte ne circule : chaque terme se vérifie sur l’anglais."
+    ]
+  },
+  {
+    "conceptId": "critere-de-la-retroaction",
+    "lead": [
+      "Un conférencier parle devant une salle. Pendant qu’il parle, il voit des regards qui décrochent, une main levée au fond, deux personnes qui sortent ; il ralentit, il reprend son exemple autrement, il coupe une digression. Trois semaines plus tard, on lui transmet le dépouillement des questionnaires distribués à la sortie. Les deux choses lui viennent du même public, et l’usage courant leur donne le même nom : un retour, un feedback. La première a pourtant modifié ce qu’il était en train de faire ; la seconde porte sur une conférence qui n’existe plus.",
+      "Guy Paquette, qui enseigne l’information et la communication à l’université Laval, publie en 1987 un article dont l’objet n’est pas de se plaindre d’un mot mal employé. Ce qu’il construit est un moyen de trancher : devant n’importe quelle situation où quelque chose revient vers celui qui a agi, deux questions suffisent à dire s’il y a boucle ou non. Que revient-il au juste ? Et l’action peut-elle encore changer ? Il mène la démonstration sur un thermostat, un autocuiseur, un réservoir de chasse d’eau, un joueur de quilles, une fièvre, avant de la ramener à ce qui l’occupe, la communication."
+    ],
+    "sections": [
+      {
+        "title": "Ce qui revient est une information",
+        "paragraphs": [
+          "Le premier tri porte sur la nature de ce qui revient, et Paquette le double d’une correction plus dérangeante encore pour l’usage courant : la réaction de celui qui reçoit n’est pas le retour. L’ennui d’une salle, l’irritation d’un client, l’hésitation d’un interlocuteur existent par eux-mêmes, que celui qui les provoque s’en aperçoive ou non. Le retour, lui, réside « dans la connaissance que la source en a ».",
+          "Deux personnes qui parlent devant la même salle n’ont donc pas le même retour, puisqu’elles n’y lisent pas la même chose, et une salle qui s’ennuie sans que personne ne le perçoive ne corrige rien du tout. Paquette range du même côté des objets qu’on n’a pas l’habitude de rapprocher : ce qui compte, écrit-il, c’est « ce que l’on peut déduire des mimiques de son interlocuteur, des questions d’un auditoire ou des sondages d’opinion, et non pas ce que sont ces événements en eux-mêmes ». Un sondage ne fait pas boucle parce qu’il mesure quelque chose ; il ne le devient que par ce qu’une source en tire."
+        ]
+      },
+      {
+        "title": "Ouvrir son parachute une seule fois",
+        "paragraphs": [
+          "La seconde question ne porte plus sur le signal mais sur l’action. Une action qui ne peut pas être reprise ne peut pas être corrigée, et l’information qui la concerne, si juste soit-elle, ne boucle sur rien. L’exemple choisi est brutal : « si l’action ne peut être exécutée qu’une seule fois, par exemple, ouvrir son parachute à 200 m du sol, il ne peut y avoir fonctionnement par feedback puisque l’action ne peut être reprise ».",
+          "Ce critère écarte une bonne part de ce qu’on appelle couramment un retour. Les applaudissements de fin de spectacle, le résultat d’un scrutin, les cotes d’écoute d’une émission déjà diffusée arrivent sur une action terminée : ils informent, ils ne corrigent plus rien. Rien n’oblige pourtant la correction à être instantanée, et Paquette prend soin de le préciser : un comportement peut être « réajusté (pas nécessairement en temps réel) sur la base de ses résultats effectifs ». Ce qui est exigé, c’est que l’action soit encore ouverte, pas que la réponse soit immédiate.",
+          "Le délai n’est pas neutre pour autant, et l’article lui consacre un développement, avec l’instabilité qu’il engendre. Entre l’action et l’information qui en revient il y a toujours un temps, et ce temps décide autant que le contenu du signal : il peut faire tomber la correction sur une situation qui a déjà changé, et la correction, alors, dérègle au lieu de rattraper."
+        ]
+      },
+      {
+        "title": "Ce qu’un autocuiseur ne fait pas",
+        "paragraphs": [
+          "Un système qui se règle tout seul ne satisfait pas pour autant ces conditions, et Paquette le montre en comparant deux objets domestiques. Un autocuiseur maintient sa pression en laissant échapper l’excès de vapeur : rien, dans ce mécanisme, ne fait baisser la source de chaleur. Le réservoir d’une chasse d’eau, lui, travaille bien par boucle, parce qu’un niveau précis peut y être vérifié, recherché, puis l’arrivée d’eau bloquée quand il est atteint. Le premier compense l’excès, le second constate et intervient.",
+          "Contrôler suppose donc ces deux gestes ensemble, constater et intervenir, et l’idée est chez lui inséparable de celle de finalité : on ne régule que par rapport à une valeur visée. Dans une machine, cette valeur vient du dehors, de celui qui pousse le curseur du thermostat. Dans un organisme, elle peut n’être écrite nulle part et rester implicite. Le processus lui-même se décompose en trois moments, s’informer, évaluer, réagir, que l’exposé sépare mais que le fonctionnement réel tient ensemble, simultanés et continus."
+        ]
+      },
+      {
+        "title": "Des boucles emboîtées, des buts qui bougent",
+        "paragraphs": [
+          "Une boucle n’est presque jamais seule. Paquette décrit des boucles hiérarchisées, emboîtées les unes dans les autres, dont les valeurs de référence peuvent elles-mêmes être déplacées par un niveau supérieur. La thermorégulation lui sert de cas : une fièvre ne se lit pas comme une régulation qui échoue, mais comme une valeur de référence modifiée. Le corps ne manque pas sa température habituelle, il en vise une autre, et il la défend avec la même obstination.",
+          "Cela déplace la question du bon fonctionnement. Tant qu’on regarde une boucle seule, tout écart ressemble à un défaut ; dès qu’on admet qu’un niveau supérieur peut réviser les buts, le même écart devient l’exécution d’une consigne venue d’ailleurs. Paquette nomme hétérostasie ce déclenchement d’une révision des buts, par opposition au maintien d’un état constant. On peut comprendre cela comme la différence entre corriger une action et changer ce qu’on cherche : les deux se font par des boucles, mais elles ne se logent pas au même étage."
+        ]
+      },
+      {
+        "title": "Rétroaction et rétroinformation",
+        "paragraphs": [
+          "Le mot rétroaction ne garde pas le même sens d’un bout à l’autre de l’article, et il vaut mieux le savoir avant d’y entrer. Dans les pages où le mécanisme est exposé, il sert dans une acception étroite et technique : le feedback fonctionne par rétroaction lorsque la régulation s’accomplit de manière aveugle, « par une connexion directe entre la sortie et l’entrée du système », et ce cas se voit alors opposé à ce que Paquette appelle un feedback par rétroinformation.",
+          "Les définitions qu’il retient arrivent plus loin, une fois le mécanisme transporté dans la communication. Deux dimensions caractérisent le processus, écrit-il, « celle d’information et celle de correction ou ajustement de l’action », et il les tient pour « des conditions formelles à l’identification d’un processus de feedback ». Croisées avec une chronologie, avant, pendant, après l’action, elles séparent des situations que le même mot recouvrait jusque-là.",
+          "La rétroinformation devient alors le travail d’obtention et d’analyse d’informations sur une situation en cours ou déjà terminée, et elle ne fait boucle qu’à une condition : « Lorsque cette rétroinformation sert à modeler l’action (le message, en communication), nous avons une boucle de rétroaction (feedback) ». La préinformation, qu’il rapproche du feedforward, et la préaction interviennent avant que l’action soit déclenchée : elles ne relèvent pas du feedback, « bien que la parenté des concepts soit indéniable ». Ces quatre termes, il ne les invente pas, ils circulaient déjà ; ce qu’il leur donne, ce sont des définitions séparées, et il les propose aux sciences de la communication et à elles seules."
+        ]
+      }
+    ],
+    "limits": [
+      "Le grief qui ouvre l’article est emprunté à Gabriel Veraldi : « l’emprunt abusif de certains concepts à d’autres disciplines, mais surtout leur utilisation dénaturée ». Il est ici tel que Paquette le rapporte. Ce que Veraldi visait au juste, et ce qu’il proposait à la place, se lit dans son propre article de 1969, « Communication : une science et non une idéologie », paru dans la même revue.",
+      "La définition dont Paquette part, il l’attribue à Norbert Wiener, et aucune date n’est reprise ici pour l’entrée du mot feedback dans le vocabulaire scientifique : l’article en avance une dans son texte et sa note de bas de page en cite une autre, sous un titre d’ouvrage inexact. Le livre de Wiener porte la définition, la date et le titre : c’est lui qu’il faudra ouvrir.",
+      "Quant à ce que les sciences de la communication ont fait de cette terminologie, si elles l’ont suivie, discutée ou laissée de côté, cet article seul ne peut pas le dire. La réponse est dans les revues du domaine, dans les années qui l’ont suivi."
+    ]
+  },
+  {
     "conceptId": "debat-de-normes",
     "lead": [
       "Une infirmière doit administrer un médicament en suivant un protocole écrit pour éviter les erreurs. Le patient qu’elle a devant elle n’est pourtant jamais tout à fait celui que le protocole avait en tête : ses antécédents médicaux ne sont pas tous connus, le produit prescrit n’est plus en stock, il a peur et comprend mal ce qu’on lui demande. Elle doit décider, sur le moment, ce qu’il convient réellement de faire. Suit-elle encore la règle, ou bien s’en écarte-t-elle ?",
@@ -285,6 +728,63 @@ export const generatedDeepenings: Deepening[] = [
       "Une expression proche, « usage de soi », est parfois associée au même auteur ; elle n’apparaît pas une seule fois dans le texte de 2007. Comment les deux formules s’articulent, et si la seconde ajoute quelque chose que la première ne dit pas, se décidera dans les textes où l’auteur emploie l’une et l’autre, pas dans ce qui précède.",
       "L’expression « débats de normes » figure aussi, en 2004, dans le titre d’un chapitre antérieur du même auteur. Ce chapitre est le premier endroit à ouvrir pour qui veut dater la formule : de ce qui précède, seule sa présence dans l’article de 2007 peut être affirmée avec certitude.",
       "Ce que l’article affirme est rapporté plus haut tel quel, sans les discussions qu’il a pu susciter. La façon dont d’autres chercheurs l’ont reçu, prolongé ou contesté forme une littérature à part entière, et c’est en la lisant qu’on saura ce que cette proposition est devenue une fois sortie des mains de son auteur."
+    ]
+  },
+  {
+    "conceptId": "decision-reconnue-d-emblee",
+    "lead": [
+      "Il y a une image du choix que tout le monde a en tête : on dresse la liste des possibilités, on les met côte à côte, on pèse, on garde la meilleure. Retirez la liste, et le mot choisir semble perdre son objet. C’est pourtant ce que des chercheurs se sont entendu répondre, dans les années 1980, par des professionnels dont le métier consiste à trancher vite et sous contrainte. L’hypothèse de repli était toute prête : ces gens-là devaient comparer moins, deux possibilités peut-être, et si vite qu’ils ne s’en apercevaient plus. Elle n’a pas tenu.",
+      "Gary Klein a tiré de ces entretiens un modèle qui ne dit pas que l’expert compare plus vite, ni qu’il compare mieux, mais qu’il ne compare pas : la reconnaissance de ce qui se passe devant lui lui livre directement une manière de faire. Reste alors une objection immédiate, et c’est elle qui rend le modèle intéressant. Une conduite qu’on n’a mise en balance avec rien peut être mauvaise, et celui qui l’a trouvée n’a aucun moyen de le savoir avant d’avoir agi. Le modèle répond sur ce point, et sa réponse tient dans un second temps que l’on oublie presque toujours."
+    ],
+    "sections": [
+      {
+        "title": "Le constat qui a fait sursauter les chercheurs",
+        "paragraphs": [
+          "Dans un rapport de synthèse publié en 1993, Klein ouvre son chapitre sur la décision en milieu réel par une phrase qui a valeur de bilan : « The most important finding that emerged from NDM research was that, in actual cases, people rarely compared any options at all. » Le résultat le plus important de ces recherches, écrit-il, est que dans les cas réels les gens ne comparaient à peu près jamais d’options. Non pas qu’ils en comparaient peu, ou mal, ou trop vite : la comparaison n’avait pas lieu.",
+          "Ce qui rendait le constat difficile à admettre tenait à la formation des observateurs eux-mêmes : décider, dans les modèles qu’ils avaient appris, supposait une mise en balance. Klein ne prétend pourtant pas que personne ne compare jamais. Une note de la page même où il expose son modèle réserve explicitement cette manière de faire à ceux qui apprennent, « there are times to compare options, particularly for novices », il y a des moments où il faut comparer des options, en particulier pour les novices. Le modèle porte sur l’expérimenté, et il perd son objet dès qu’on l’étend à n’importe qui."
+        ]
+      },
+      {
+        "title": "Reconnaître, ce n’est pas retrouver un cas déjà vu",
+        "paragraphs": [
+          "Le mécanisme repose sur un verbe qu’il faut prendre au sérieux. Klein n’écrit pas que l’expert reconnaît une situation, mais qu’il en reconnaît la dynamique, « recognize the dynamics of a situation », et la nuance décide de tout. Le rapport détaille ce que l’on sait quand on tient cette dynamique, et ce sont quatre choses à la fois : quels buts sont réellement atteignables, quels indices méritent l’attention parmi tout ce qui se présente, ce qu’il faut attendre de la suite, et quelle réaction est typique dans un cas pareil.",
+          "Le troisième de ces quatre points est celui qui sépare le modèle d’un simple appariement de formes. Savoir ce qu’il faut attendre, c’est être en mesure de remarquer que cela n’arrive pas. Une attente déçue signale alors que la situation n’était pas celle qu’on avait cru reconnaître, et le diagnostic peut se réviser avant que la conduite engagée ait produit ses effets. Traduire ce verbe par identifier, ou par étiqueter, revient à perdre exactement cela : l’anticipation, qui est ce qui permet à une reconnaissance de se corriger elle-même."
+        ]
+      },
+      {
+        "title": "Faire tourner l’action dans sa tête",
+        "paragraphs": [
+          "Le modèle a deux composantes, et l’on n’en retient souvent que la première. Il y a l’appréciation de la situation, qui vient d’être décrite, et il y a l’évaluation de la conduite qu’elle a fait venir. Klein décrit cette seconde opération dans les mots des pompiers eux-mêmes : « One strategy fireground commanders use is to imagine carrying out the action. They run it through in their minds. » Ils s’imaginent en train d’exécuter l’action, ils la font défiler dans leur tête. Il donne un nom à ce procédé, la simulation mentale.",
+          "L’opération ressemble à une épreuve, pas à un concours. Une conduite y est examinée seule, pour savoir si elle marchera, et non mise en balance avec une rivale. Le rapport décrit trois façons de procéder ainsi : vérifier que la conduite envisagée possède les propriétés que la situation exige, raisonner par analogie avec un cas connu, ou la dérouler mentalement. La dernière a ceci de particulier qu’elle ne se borne pas à accepter ou à rejeter. Elle fait apparaître l’endroit qui coince, que l’on corrige au passage, si bien que la conduite finalement tenue peut n’avoir figuré dans aucune liste de départ."
+        ]
+      },
+      {
+        "title": "Pourquoi la première conduite venue est déjà bonne",
+        "paragraphs": [
+          "Reste à comprendre d’où lui vient sa qualité. C’est là que l’expérience fait son travail, et l’énoncé est explicite : « the RPD model predicts that experienced decision makers can generate a plausible CoA as the first one they consider », le modèle prévoit qu’un décideur expérimenté engendre une conduite plausible dès la première à laquelle il pense. CoA abrège course of action, la conduite à tenir. La qualité ne vient donc pas d’un tri opéré après coup : elle est déjà dans ce que la reconnaissance a produit, parce que cette reconnaissance est faite d’années de cas.",
+          "La conséquence pratique est précisément ce que le modèle cherche à rendre compréhensible, « describe how decision makers can settle on a CoA without considering any others », expliquer qu’un décideur arrête une conduite sans en envisager aucune autre. Il n’attend pas d’avoir fini de comparer pour être prêt à agir, puisqu’il n’a rien engagé de tel. Sous forte pression de temps, la différence n’est pas de degré : elle sépare celui qui peut déjà donner un ordre de celui qui délibère encore."
+        ]
+      },
+      {
+        "title": "Ce que Klein doit à Simon, et ce qu’il n’en prend pas",
+        "paragraphs": [
+          "Une confusion guette ici, et elle est facile. S’arrêter à une solution qui fait l’affaire plutôt que de chercher la meilleure porte un nom, satisficing, et ce nom n’est pas de Klein : il l’attribue lui-même à Herbert Simon, « Simon (1955) was the first to make this distinction ». Klein range d’ailleurs son propre modèle du côté de ces manières de faire qui se contentent d’une conduite viable, et il le dit dans le même rapport.",
+          "L’objet des deux auteurs n’est pourtant pas le même, et les superposer serait ici la faute la plus facile à commettre. Simon décrit quelqu’un qui parcourt des possibilités et s’arrête à la première qui atteint son seuil, faute de pouvoir toutes les calculer. Klein décrit quelqu’un qui n’a pas engendré de seconde possibilité du tout, la reconnaissance de la situation lui ayant livré directement une conduite plausible : le parcours dont parle Simon n’a pas lieu. L’un raconte une recherche interrompue, l’autre une recherche qui n’a jamais commencé."
+        ]
+      },
+      {
+        "title": "Hors du feu, et là où l’on compare encore",
+        "paragraphs": [
+          "Le modèle est né du feu, il n’y est pas resté. Klein rapporte l’avoir retrouvé, après ces premières études, chez des chefs de peloton de chars, chez les officiers de lutte antiaérienne des croiseurs AEGIS, chez des infirmières de soins intensifs, chez des pilotes de ligne, et jusque chez des ingénieurs de conception. Le point commun de ces métiers n’est pas le danger : c’est un opérateur expérimenté, des buts qui bougent, une information incomplète, des enjeux réels, et rarement le temps de tout poser à plat.",
+          "À l’inverse, l’achat d’une voiture, le choix d’une maison ou d’une université servent dans le même rapport d’exemples pour la démarche opposée, celle qui aligne des critères et met des candidats en concurrence. Ils marquent la frontière du modèle bien plus que son domaine. Trancher vite dans un métier qu’on connaît par cœur et arbitrer longuement entre des offres sont deux activités distinctes, et la seconde ne devient pas suspecte parce que la première existe."
+        ]
+      }
+    ],
+    "limits": [
+      "L’étude qui a tout déclenché, « Rapid decision making on the fire ground », signée avec Roberta Calderwood et Anne Clinton-Cirocco, tient en cinq pages d’actes de congrès de 1986, et l’accès en est fermé. Comment les chefs d’intervention ont été interrogés, sur quels incendies, et par quel chemin le modèle a été tiré de leurs réponses : ces pages-là le savent, et c’est là qu’il faudra aller le chercher.",
+      "Le rapport final de cette enquête, resté inédit en 1985, a été mis en forme et publié en 2010 : son résumé déclare que c’est cette étude qui a identifié la décision amorcée par reconnaissance, et l’édition porte en plus le regard que Klein pose sur elle vingt-cinq ans après. C’est le point d’origine du modèle, et ses phrases attendent leur lecteur.",
+      "Un chapitre de 1989, « Recognition-primed decisions », est le seul texte signé de Klein seul dont le titre porte le nom du modèle. Ce qu’un rapport de synthèse tient dans un encadré d’une page, il le déploie sur un chapitre entier : pour le modèle exposé pour lui-même, avec ses conditions et ses cas, c’est là qu’on ira.",
+      "Ce que le courant né de ces travaux est devenu, ce qu’il a établi et ce qui s’y discute encore, quatre de ses acteurs en dressent le bilan en 2001 dans « Taking stock of naturalistic decision making » : pour situer le modèle dans le champ qu’il a contribué à ouvrir, c’est le texte à ouvrir. La réception française, elle, reste entièrement à parcourir."
     ]
   },
   {
@@ -546,6 +1046,57 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "feed-back-et-equilibre",
+    "lead": [
+      "Un mitigeur de douche, une main sur la manette, et l’eau qui sort trop froide : on pousse, elle devient trop chaude, on ramène un peu, on dépasse encore, moins fort cette fois, et au bout de quelques allers-retours la température est bonne. Ce qui a commandé chacun de ces gestes n’est pas la température voulue, qui n’a pas bougé depuis le début. C’est, à chaque instant, l’écart entre elle et l’eau qui coule. Tant que cet écart se fait sentir, la main travaille ; quand il s’annule, elle s’arrête.",
+      "En 1953, un psychologue de Genève qui a passé sa vie à observer des enfants prend la parole devant des neurologues et des psychologues réunis pour parler du système nerveux. Jean Piaget ne construit pas de machines qui se corrigent toutes seules : il lit ceux qui en construisent, et il reconnaît dans leurs schémas une figure qu’il a rencontrée ailleurs, sous un autre nom. Dix pages plus tard, il aura avancé sur ce mécanisme de correction deux affirmations qui ne parlent ni d’enfant ni de cerveau : l’une sur ce qui l’alimente, l’autre sur ce qu’il devient une fois son travail terminé."
+    ],
+    "sections": [
+      {
+        "title": "Ce qui alimente une correction",
+        "paragraphs": [
+          "Le schéma que Piaget décrit relie le point d’arrivée d’une transformation au point de départ de cette même transformation, de façon à en régler l’ajustement jusqu’à ce que le problème soit résolu. Le résultat obtenu revient donc sur le dispositif qui l’a produit et modifie la suite. Ce qui circule dans ce retour n’est pas une consigne : c’est une différence, et une différence chiffrable, cinq degrés de trop appelant une correction plus forte qu’un demi-degré. Piaget le dit dans une parenthèse, et cette parenthèse porte tout le reste : « c’est l’erreur qui détermine le retour d’énergie ».",
+          "La conséquence est moins anodine qu’elle n’en a l’air. Un tel dispositif ne possède aucune activité propre : il n’agit que par la faute de son résultat précédent. Il ne sait rien du but qu’on lui a fixé, sinon la distance qui l’en sépare, et il ne peut rien faire d’autre que réduire cette distance. Observer l’activité d’une boucle de correction, c’est donc observer la persistance d’un écart, et non la valeur de ce qui est visé : une boucle très active signale un problème mal résolu, pas un dispositif performant."
+        ]
+      },
+      {
+        "title": "Ce qui reste au point d’équilibre",
+        "paragraphs": [
+          "Un dispositif dont l’erreur est le carburant devrait s’éteindre lorsque l’erreur disparaît, et il s’éteint en effet. Mais Piaget n’écrit pas qu’il ne reste rien : il écrit que le feed back aboutit à « une simple liaison réversible comparable à un jeu d’opérations, au point où l’équilibre est atteint, c’est-à-dire où la solution est obtenue ». Quelque chose subsiste, qui n’est plus une boucle.",
+          "Réversible, ici, veut dire que le chemin se parcourt dans les deux sens sans perte : aller du point de départ au point d’arrivée, puis revenir, laisse les choses dans l’état où elles étaient. Plus rien ne corrige rien, et pourtant les deux extrémités restent liées. Ce n’est donc pas un arrêt, c’est un changement de nature : ce qui était une suite de rattrapages inégaux devient une correspondance stable, où l’aller et le retour se valent.",
+          "Sur le mitigeur, cela tient à peu de chose. Une fois la bonne position trouvée, la manette cesse d’être l’instrument d’une série d’essais : elle est la position qui donne cette température, et l’on sait remonter de la température à la position aussi bien que descendre de la position à la température. Le tâtonnement a disparu, la relation qu’il a servi à établir est restée."
+        ]
+      },
+      {
+        "title": "Le feed back traduit en régulation",
+        "paragraphs": [
+          "La phrase qui précède immédiatement celle-là est celle où Piaget passe d’un vocabulaire à l’autre : « Le « feed back » est donc comparable à une régulation, c’est-à-dire, dans les conceptions dont nous nous servons, à une opération non encore équilibrée ». L’incise compte autant que le reste. Elle prévient que ce qui suit n’est pas une définition du feed back, mais sa traduction dans une langue déjà constituée, celle de ses propres travaux sur les structures de l’intelligence.",
+          "Dans cette langue, une régulation est une correction faite en fonction du résultat obtenu, avec retour vers le point de départ, et elle n’atteint qu’une réversibilité incomplète : elle compense approximativement. L’opération en est la forme limite, celle où la réversibilité est entière et où toute transformation peut être exactement défaite. Dire du feed back qu’il est une opération non encore équilibrée revient donc à le situer entre les deux : plus qu’un aller-retour mécanique, moins que la relation pleinement réversible qu’il devient une fois le problème résolu.",
+          "La page suivante donne la même idée sous une forme mathématique. Tant qu’il y a déséquilibre, écrit Piaget, le feed back ne s’exprime que par des intégrales compliquées, alors que l’arrivée au point d’équilibre se laisse traduire en langage de groupe. Un groupe, en mathématiques, est un ensemble de transformations tel que chacune puisse être défaite par une autre du même ensemble : le terme technique dit exactement ce que disait la liaison réversible."
+        ]
+      },
+      {
+        "title": "Dix pages lues devant des neurologues",
+        "paragraphs": [
+          "Ces phrases ne viennent pas d’un traité. Elles appartiennent à une communication de dix pages, lue à la première session de l’Association de psychologie scientifique de langue française, « cette première session consacrée à l’étude des relations entre la neurologie et la psychologie ». L’imprimé annonce simplement « Communication de M. PIAGET (Genève) », sans prénom. Ce qui s’y dit du feed back n’est donc pas la position de Piaget sur la cybernétique : c’est un rapprochement daté, tenu en quelques paragraphes, entre son vocabulaire et des modèles qu’il ne pratique pas. L’objet annoncé n’est d’ailleurs pas la régulation mais les convergences entre deux séries de recherches, et près de la moitié de ces pages porte sur le développement de l’enfant.",
+          "Ces modèles, il ne les rapporte pas de seconde main : ses notes renvoient aux textes eux-mêmes avec leur pagination, McCulloch et Pitts, Landahl, Ashby, Shannon, Turing, Polanyi, et il invite le lecteur à s’en assurer, « comme on s’en aperçoit par exemple en feuilletant The Bulletin of Mathematical Biophysics ». C’est à propos de l’homéostat d’Ashby qu’il écrit que la solution d’un problème par de tels servomécanismes procède d’une succession d’équilibrations et de rééquilibrations progressives, avec auto-correction des feed backs, et que cela rappelle mutatis mutandis, une fois faits les changements qui s’imposent, la manière dont travaille l’intelligence."
+        ]
+      },
+      {
+        "title": "Un mot qu’il ne traduit jamais",
+        "paragraphs": [
+          "Un détail de graphie en dit long sur ce qui se joue dans ces pages. Piaget écrit toujours « feed back », en deux mots, sans trait d’union, entre guillemets, et il ne le traduit pas une seule fois : le mot rétroaction n’apparaît nulle part dans les dix pages. Les guillemets ne sont pas décoratifs, ils tiennent le terme à distance, comme un emprunt que l’on cite plutôt qu’un mot dont on dispose.",
+          "C’est ce qui fait l’intérêt de la rencontre, et c’est aussi ce qui en fixe la portée. La traduction va dans les deux sens : Piaget dit quelque chose du feed back, et il ne le dit qu’en le faisant passer dans ses propres termes. Un lecteur peut soutenir que tout cela demeure une analogie entre deux façons de décrire plutôt qu’un énoncé sur le mécanisme lui-même. L’argument est recevable, et ces pages ne prétendent pas le contraire : elles écrivent comparable, non identique."
+        ]
+      }
+    ],
+    "limits": [
+      "Ce texte compare, il ne démontre pas. Rien n’y établit que le feed back et l’opération soient une seule et même chose, et Piaget prend soin d’écrire comparable, puis mutatis mutandis. Ce que ce rapprochement est devenu chez lui ensuite, ce sont deux livres qui le portent, Biologie et connaissance (1967) et L’équilibration des structures cognitives (1975), où le rapport entre régulation et opération dispose d’autre chose que de dix pages. Il faudra les lire.",
+      "La communication de 1953 s’appuie sur deux textes antérieurs de Piaget qu’elle nomme en note : un article de 1949 sur le problème neurologique de l’intériorisation des actions en opérations réversibles, paru dans les Archives de psychologie, p. 241-258, et un article de L’Année psychologique du volume jubilaire Piéron, p. 27-38. C’est là que se trouve ce que ces dix pages tiennent pour acquis avant même de commencer.",
+      "Ce que cette communication a produit après sa lecture reste à retrouver. Deux articles consacrés à l’histoire de la cybernétique, lus intégralement, ne nomment Piaget à aucun endroit, et aucun travail postérieur repéré ne discute ce rapprochement de 1953. Qui l’a repris, qui l’a contesté, et sous quel nom, c’est dans la littérature qui a suivi qu’on le trouvera."
+    ]
+  },
+  {
     "conceptId": "garbage-can-model",
     "lead": [
       "Imaginons une association dont le conseil se réunit pour trancher une question précise, disons l’achat d’un nouveau local. Pendant la réunion, quelqu’un profite du moment où tout le monde est là pour remettre sur la table une proposition qui traîne depuis des mois : changer de logiciel de comptabilité, sans lien direct avec le sujet du jour. La proposition est adoptée, non parce qu’elle répondait le mieux au problème initial, mais parce qu’elle se trouvait disponible au moment où plusieurs personnes concernées étaient réunies au même endroit. Ce genre de scène est banal dans les organisations où les décisions se prennent en réunion, en commission, en conseil : ce qui finit par être choisi n’est pas toujours ce qui correspondait le mieux au problème posé, mais ce qui se trouvait à portée de main au bon moment.",
@@ -707,6 +1258,113 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "gestion-du-risque-fatigue",
+    "lead": [
+      "Dans les métiers où la sécurité tient à l’attention d’une personne, la fatigue se règle d’ordinaire avec une pendule : un texte fixe une durée maximale de service et une durée minimale de repos, et l’on s’arrête quand l’heure y est. Philippe Cabon rappelle ce principe au début d’un article de 2015 : « Traditionnellement, la prévention de la fatigue des salariés s’appuie sur des approches prescriptives encadrant des limitations des temps de service et de temps de repos minimum. » Compter des heures suppose pourtant quelque chose de précis : que la fatigue monte à mesure qu’on travaille et redescende à mesure qu’on se repose. Deux personnes qui ont fait le même service ont donc, sur le papier, la même fatigue.",
+      "D’autres dispositifs prennent le problème par l’autre bout : au lieu d’un plafond identique pour tous, ils évaluent la fatigue elle-même, puis fixent les limites d’après cette évaluation. Cabon décrit cette bascule, et consacre la fin de son article à son point faible : connaître le niveau de fatigue de quelqu’un ne dit pas encore quel risque il fait courir."
+    ],
+    "sections": [
+      {
+        "title": "Ce qu’une règle d’heures sait de la fatigue",
+        "paragraphs": [
+          "Ces règles de temps, Cabon les qualifie d’unidimensionnelles, en reprenant le mot à des travaux australiens : elles ne s’appuient que sur une seule dimension, le temps. Le modèle qui les soutient est linéaire au sens le plus simple, celui d’une droite : la fatigue augmente proportionnellement à la durée du travail et diminue proportionnellement à celle du repos. Il connaît le terrain pour avoir comparé, avec ses collègues, vingt-six réglementations nationales des temps de service.",
+          "Une durée ne dit pourtant pas ce qu’elle a coûté. Le même nombre d’heures ne pèse pas de la même façon selon le sommeil qui a précédé, selon l’heure à laquelle le service commence, selon que l’on peut ou non s’interrompre. Cabon rattache d’ailleurs l’importance prise par ces questions à l’automatisation des outils de travail, qui a développé des activités de surveillance sollicitant fortement la vigilance : le travail se fait moins par l’effort que par l’attention maintenue, et c’est cette attention-là que la fatigue attaque."
+        ]
+      },
+      {
+        "title": "Mesurer la fatigue plutôt que compter les heures",
+        "paragraphs": [
+          "Que fait concrètement un système de ce genre ? Cabon en décrit deux pièces qu’il tient pour indispensables. La première est un ensemble de logiciels qui prédisent le niveau de fatigue des opérateurs, c’est-à-dire de ceux qui pilotent, conduisent ou surveillent, à partir de leurs horaires de travail : on entre les services et les repos, ils rendent une estimation. Ce sont ce qu’on appelle des modèles biomathématiques, des résultats de la recherche sur le sommeil mis en équations puis en programmes. La seconde est un retour d’expérience centré sur la fatigue, c’est-à-dire un circuit par lequel ce que vivent les opérateurs remonte et s’enregistre.",
+          "Autour de ces deux pièces viennent des instruments plus ordinaires : agendas de sommeil, actométrie qui enregistre l’activité motrice, tests de performance, échelles de fatigue que l’opérateur renseigne lui-même en cours de service, parfois sur une interface installée dans le cockpit et relevée ensuite au sol. L’objectif que Cabon leur assigne est de prévenir la fatigue au plus près de l’activité et des contraintes réellement rencontrées : horaires des services, possibilité de faire des pauses, nature de l’activité. Les critères qui limitent le temps de service s’appuient alors sur la fatigue réelle plutôt que sur des valeurs universelles censées couvrir toutes les situations."
+        ]
+      },
+      {
+        "title": "Un vocabulaire venu de l’aviation civile",
+        "paragraphs": [
+          "Ces dispositifs portent un nom, et ce nom vient d’un secteur précis. Cabon ne dit pas qui l’a forgé : il l’introduit au passif, ces approches étant désignées sous l’appellation de systèmes de gestion du risque fatigue, abrégée en SGS-RF, ou Fatigue Risk Management System en anglais. L’acronyme français porte la trace de son origine : le risque fatigue y est adossé au système de gestion de la sécurité d’une compagnie. Deux sources institutionnelles sont nommées, toutes deux aéronautiques : une recommandation de l’Organisation de l’aviation civile internationale, qui en donne une définition, et les autorités de l’aviation civile australienne, qui ont fortement encouragé le concept. Les exemples que Cabon passe en revue sont ceux de compagnies aériennes.",
+          "Une précision compte, parce qu’elle change la portée de l’affaire : ces systèmes peuvent soit compléter les limitations réglementaires, soit s’y substituer totalement. Le premier cas laisse la pendule en place et lui ajoute une évaluation ; le second confie à l’évaluation la limite elle-même. C’est ce second cas que vise la conclusion de l’article, et c’est lui qui rend décisive la question suivante."
+        ]
+      },
+      {
+        "title": "Un postulat exposé, puis retourné",
+        "paragraphs": [
+          "Que gagne-t-on, au juste, à connaître un niveau de fatigue ? La réponse tient dans une hypothèse que Cabon énonce très tôt : « Le postulat sur lequel repose ces systèmes est que le niveau de fatigue des opérateurs permet de prédire le niveau de sécurité. » La phrase est de lui, l’idée ne l’est pas : il l’expose pour la discuter, et la phrase qui suit commence par un « or ». Cette idée vient, explique-t-il, de nombreux travaux de laboratoire qui montrent un lien linéaire entre fatigue et performances cognitives.",
+          "En laboratoire, la tâche est fixée : le sujet fait ce qu’on lui demande, et sa performance baisse à mesure qu’il fatigue. En situation réelle, les tâches sont plus complexes, et surtout l’opérateur ne les subit pas : il adapte sa façon de faire pour gérer le risque. C’est là que la droite se casse. De quoi Cabon tire une objection franche contre les logiciels de prédiction : « ils peuvent donner une fausse illusion de prédire un risque sur la sécurité alors qu’ils ne prédisent qu’une probabilité de fatigue élevée. » Une probabilité de fatigue élevée n’est pas un niveau de risque, et confondre les deux revient à croire qu’on mesure la sécurité quand on mesure la fatigue."
+        ]
+      },
+      {
+        "title": "Quand une fatigue modérée devient plus risquée",
+        "paragraphs": [
+          "Le premier ressort de cet écart est la compensation. Un opérateur fatigué garde des moyens de compenser la baisse de ses ressources. Cabon ne dresse pas la liste de ces conduites ; il en retient l’effet, et cet effet est paradoxal : ces stratégies de protection de la performance améliorent certains indicateurs de sécurité. La fatigue peut donc faire baisser un chiffre censé signaler le danger.",
+          "Une recherche qu’il rapporte le montre par les deux bouts : des services commençant très tôt le matin réduisaient le nombre d’événements de sécurité peu graves, tout en augmentant celui des événements de criticité élevée. Selon l’indicateur que l’on regarde, la même organisation du travail paraît plus sûre ou plus dangereuse.",
+          "Le second ressort est cognitif, et c’est celui auquel il accorde le plus de poids : « la conscience que l’opérateur a de son niveau de fatigue joue manifestement un rôle essentiel ». On ne se protège que de la fatigue que l’on sent, et Cabon rappelle que des conducteurs surestiment leur niveau d’éveil en fin de trajet. De là sa conclusion, qui renverse l’intuition : la relation entre fatigue et sécurité n’est pas linéaire, et des niveaux de fatigue relativement faibles sont susceptibles d’augmenter le risque, précisément parce qu’ils se détectent mal et n’entraînent aucune adaptation du comportement."
+        ]
+      },
+      {
+        "title": "La condition que l’auteur met à ces systèmes",
+        "paragraphs": [
+          "Cabon ne conclut pas au rejet, et ce qu’il demande est plus exigeant : « Une meilleure connaissance des liens fatigue-sécurité nous semble donc être une condition indispensable à la validité et l’efficacité des SGS-RF ». Tant que le lien est supposé droit, un système qui prédit la fatigue et règle sur elle les temps de service risque de reproduire en partie les limites des réglementations qu’il devait dépasser : plus fin dans ses moyens, il reste bâti sur le même modèle.",
+          "La bascule qu’il décrit garde alors son intérêt, mais elle change de nature. Elle ne promet pas de prédire les accidents à partir d’un niveau de fatigue ; elle promet de rapprocher la limite du travail tel qu’il se fait, de ses horaires, de ses pauses possibles, de ce qu’il demande. Ce que valent ces systèmes reste, chez lui, une question ouverte : il note en terminant qu’ils sont récents et que les retours sur leur efficacité sont encore peu nombreux."
+        ]
+      }
+    ],
+    "limits": [
+      "Le vocabulaire de ces systèmes n’est pas celui de Cabon, et son article renvoie aux textes qui le portent : la recommandation de l’Organisation de l’aviation civile internationale, dont il reprend la définition, et le manuel que cette organisation destine aux régulateurs. Ce sont ces documents qui disent en quels termes exacts un régulateur définit un système de gestion du risque fatigue, et depuis quand. Sa bibliographie ne date d’ailleurs pas la recommandation qu’il cite : elle ne porte que le manuel de 2011. Pour ces termes-là, il faudra aller les lire.",
+      "Les travaux australiens auxquels il rattache l’essor de ces dispositifs, et ceux qui ont nommé les stratégies de protection de la performance, tiennent l’un l’histoire du terme, les autres la démonstration de cet effet paradoxal par lequel un opérateur fatigué fait parfois mieux tenir certains indicateurs. Cabon les cite en passant ; c’est chez eux que la démonstration se lit.",
+      "Ce que ces systèmes ont donné à l’usage n’est pas tranché par cet article de 2015, qui se referme au contraire sur la rareté des retours d’efficacité. Sa force est ailleurs, dans l’objection de principe. Les évaluations parues depuis diront ce qu’il en est advenu."
+    ]
+  },
+  {
+    "conceptId": "glissements-de-l-action",
+    "lead": [
+      "Il arrive qu’on range le beurre dans le placard et le café au réfrigérateur, qu’on parte poster une lettre et qu’on rentre avec la lettre encore en poche, ou qu’on tape le code de son téléphone sur le clavier d’un distributeur de billets. Aucun de ces incidents ne vient d’une ignorance : on sait parfaitement où va le beurre et pourquoi on est sorti. Aucun ne vient non plus d’un mauvais calcul, puisqu’il n’y a pas eu de calcul du tout. Le but était juste, il l’est resté, et les mains ont fait autre chose.",
+      "Le mot « erreur », en français courant, désigne aussi bien ces accrocs que les décisions qu’on regrette après coup, alors que les deux n’ont presque rien en commun. Un rapport que Donald A. Norman écrit à l’université de Californie à San Diego, en novembre 1979, sépare les deux et ne retient que les premiers. Son pari : ces incidents minuscules ne sont pas du bruit, ils ont des causes repérables, et ils renseignent sur la façon dont une intention devient un geste. Encore faut-il, pour les étudier, tracer une frontière que la langue ordinaire ne trace pas."
+    ],
+    "sections": [
+      {
+        "title": "L’intention tenue pour acquise",
+        "paragraphs": [
+          "Le premier geste de Norman est un geste de méthode, et il est explicite. Page 9 du rapport : « Here I start with intentions as given », je pars ici des intentions comme si elles étaient données. Autrement dit, la question de savoir comment quelqu’un en vient à vouloir ce qu’il veut est mise de côté. Ce qui est étudié commence après : une intention est là, elle est bonne, et le corps ne la suit pas. Le tableau récapitulatif de la page 10 range d’ailleurs sous une rubrique explicite ce qui reste dehors, « Errors that are not classified as slips » : les erreurs de détermination des buts, de décision et de résolution de problème.",
+          "Cette exclusion n’est pas un jugement sur l’importance des erreurs de jugement, c’est un découpage d’objet. Se tromper de but et faire autre chose que ce qu’on avait décidé sont deux phénomènes distincts ; Norman n’en instruit qu’un, et le dit. Un point mérite d’être signalé à qui connaît la suite de cette littérature : ce rapport ne construit pas de couple de termes opposés, et le mot « mistake » n’y est pas employé comme terme technique faisant pendant à « slip ». La frontière y est posée par décision de méthode, pas par contraste de vocabulaire."
+        ]
+      },
+      {
+        "title": "Les erreurs qu’on rattrape soi-même",
+        "paragraphs": [
+          "Un fait ordinaire retient Norman page 5 : beaucoup de ces erreurs sont interceptées au moment même où on les commet. La main s’arrête à mi-course, le mot se corrige avant d’être fini, on repose l’objet qu’on venait de prendre sans savoir pourquoi on l’avait pris. L’erreur a donc été engagée, puis attrapée. Norman en tire une conséquence qui ne va pas de soi : pour qu’une action soit lancée puis interrompue de l’intérieur, il faut qu’existe un mécanisme qui surveille le comportement, et ce mécanisme doit être distinct de celui qui sélectionne et exécute l’acte.",
+          "C’est là que se joue l’intérêt du glissement, et le titre de la section où la définition est posée le dit sans détour : « Slips: Window to the Mind », le glissement comme fenêtre sur l’esprit. Une action réussie ne renseigne guère sur la façon dont elle a été produite, parce que tout s’y est passé sans accroc et sans trace. Une action qui dérape, puis se rattrape, laisse au contraire deviner qu’il y avait au moins deux instances au travail, et qu’elles ne travaillaient pas au même rythme."
+        ]
+      },
+      {
+        "title": "Des habitudes qui se déclenchent seules",
+        "paragraphs": [
+          "Pour rendre compte de cela, Norman propose que les séquences d’action habiles soient commandées par des structures de connaissance sensori-motrices qu’il nomme des schémas : des unités de mémoire organisées, du même genre que celles qu’on invoque pour la perception et le souvenir, étendues cette fois aux mouvements. Un schéma n’est pas le souvenir d’un geste passé, c’est un geste disponible, prêt à tourner : faire un créneau, verrouiller une porte, taper un code. Une fois qu’il est en route, il se déroule largement sans qu’on ait à le surveiller, et c’est précisément ce qui fait son efficacité.",
+          "Reste à savoir ce qui lance un schéma plutôt qu’un autre. Norman distingue ici deux choses qu’on confond facilement. Un schéma peut être plus ou moins activé, c’est-à-dire plus ou moins disponible sur le moment ; mais l’activation ne suffit pas à le mettre en marche, il y faut encore des conditions de déclenchement, un ensemble de circonstances qui l’appellent. D’où une catégorie entière d’incidents, que le rapport formule ainsi page 17 : « A schema may be properly selected and activated, but lead to a slip because it is triggered improperly, either at the wrong time or not at all. » Un schéma peut être correctement sélectionné et activé, et conduire pourtant à un glissement parce qu’il se déclenche mal, au mauvais moment ou pas du tout.",
+          "Norman emprunte à William James un cas qui montre la chose en entier : celui de personnes très distraites qui, montées dans leur chambre pour s’habiller avant le dîner, ôtent un vêtement après l’autre et finissent par se coucher, parce que se mettre au lit était l’aboutissement habituel des premiers gestes accomplis à une autre heure. Rien n’a été décidé, rien n’a été oublié. Les premiers mouvements appartenaient à deux séquences à la fois, et c’est la plus fréquente qui a pris la main."
+        ]
+      },
+      {
+        "title": "Trois catégories, ou quatre",
+        "paragraphs": [
+          "Le classement que Norman propose ne trie pas les incidents par leur allure mais par l’endroit de la chaîne où quelque chose a lâché. Deux accrocs qui se ressemblent peuvent ainsi se retrouver dans des rubriques différentes, et deux accrocs sans ressemblance apparente dans la même. Le tableau de la page 10 en donne trois : les glissements qui tiennent à la formation de l’intention, ceux qui tiennent à l’activation, ceux qui tiennent au déclenchement. Le corps du texte, page 9, en annonce quatre, et ajoute aux trois précédents l’exécution de l’acte elle-même.",
+          "Le rapport se contredit donc d’une rubrique selon l’endroit où on le lit, et la quatrième ne figure pas dans le tableau. Ce n’est pas une coquetterie : c’est la trace d’une classification en train de se faire, dans un texte de travail dactylographié pour un centre de recherche, et non dans un traité stabilisé. Qui voudra avancer un nombre devra donc préciser lequel des deux endroits il suit. Ce que le désaccord ne remet pas en cause, en revanche, c’est le principe : une même définition, plusieurs sources présumées, et un classement qui suit ces sources."
+        ]
+      },
+      {
+        "title": "Un mot pris au lapsus de parole",
+        "paragraphs": [
+          "Le mot n’est pas de Norman, et il ne le revendique nulle part. En anglais, « slip » désigne d’abord le lapsus, le mot qui échappe, et il arrive dans ce rapport chargé de toute une tradition, freudienne et linguistique, que Norman assume explicitement page 3 en rappelant ce que Freud a tiré de l’analyse des erreurs. Ce qu’il déclare faire est un déplacement d’objet, écrit page 2 : « the study of slips, especially slips of performance and actions (as opposed to slips of the tongue) », l’étude des glissements, et particulièrement de ceux de l’exécution et de l’action, par opposition à ceux de la langue. La psychologie du lapsus change de terrain : elle quitte la parole pour le geste.",
+          "La matière, elle, n’a rien d’expérimental et n’a pas été rassemblée par un seul homme. Les remerciements de la page 29 créditent le groupe de recherche LNR d’avoir constitué la collection d’incidents et discuté l’analyse des exemples, et distinguent l’un de ses membres : « In particular, Jonathan Grudin was an avid collector and analyzer of slips. » Norman s’appuie par ailleurs sur les relevés de James Reason, qu’il cite dans le corps du texte et à qui il emprunte des incidents. Ce sont donc des accrocs de la vie ordinaire, notés au vol par des gens attentifs à leurs propres ratés, qui servent de base à la classification."
+        ]
+      }
+    ],
+    "limits": [
+      "Deux ans plus tard, Norman en publie une version révisée sous un autre titre, « Categorization of action slips », dans la Psychological Review de 1981. Le titre a changé avec le texte. C’est dans ces quinze pages que la classification a pris sa forme publiée, et pour savoir ce qu’y sont devenues ces rubriques, il faudra les ouvrir.",
+      "Le rapport lui-même est en accès libre, et il excède de loin ce qui précède. Ses pages 12 à 14 et 19 à 28 portent la suite des exemples classés, ainsi que la discussion du contrôle, du retour d’information et des théories cybernétiques que le résumé annonce. Le mécanisme de surveillance évoqué plus haut n’apparaît ici que par la phrase qui l’appelle : ces pages attendent leur lecteur.",
+      "Restent les racines, que Norman nomme sans les déplier. Freud et la tradition linguistique du lapsus d’un côté, pour ce que le mot portait avant de passer à l’action. James Reason de l’autre, dont les références du rapport donnent « Actions not as planned », paru en 1979 dans un volume collectif sur la conscience : les incidents que Norman lui emprunte y sont chez eux, avec l’analyse qu’il en donne."
+    ]
+  },
+  {
     "conceptId": "gouvernement-par-les-chiffres",
     "lead": [
       "Une administration reçoit un objectif chiffré : ramener tel délai, tel coût ou tel taux à un niveau précis. Ce chiffre n’est pas né d’une discussion entre les personnes concernées : il vient d’ailleurs, de ce que fait déjà, mieux, un établissement comparable. Personne n’a eu à inventer un seuil raisonnable ; on demande seulement d’atteindre ce qui existe déjà, ici ou là. Cette manière de fixer des cibles porte un nom, le benchmarking, empruntée d’abord au monde de l’entreprise avant de gagner l’administration d’État.",
@@ -753,6 +1411,66 @@ export const generatedDeepenings: Deepening[] = [
       "L’article annonce traiter le sujet dans l’éducation et ailleurs, mais sa démonstration soutenue porte sur le benchmarking comme technique de gouvernement en général, illustrée par une entreprise et par l’administration d’État ; aucun passage autonome n’énonce ce que la comparaison chiffrée change spécifiquement dans une école ou une université. L’article ne dit donc rien de particulier sur l’enseignement, alors même que son titre le promettait.",
       "Isabelle Bruno a écrit avec Emmanuel Didier un ouvrage entier sur le benchmarking, Benchmarking. L’État sous pression statistique. Le cas de Xerox, que l’article se contente de mentionner comme illustration de la méthode dans l’entreprise, y est vraisemblablement déroulé sur des pages : c’est le livre qui donne à cette histoire sa longueur, et ce qui précède ne la donne pas.",
       "Alain Desrosières avait consacré à ce sujet un ouvrage antérieur, Gouverner par les nombres. Ses exemples et ses distinctions y sont, et ils n’apparaissent pas plus haut : c’est la lecture qui, sur cette question, précède logiquement toutes les autres."
+    ]
+  },
+  {
+    "conceptId": "histoire-naturelle-des-reseaux",
+    "lead": [
+      "Une équipe de recherche, une colonie de micro-organismes, un marais : Gordon Pask range ces trois choses dans la même catégorie, et il y ajoute un homme. Elles n’ont ni la même matière ni la même taille. Elles ont en commun de s’arranger toutes seules, sans rien devoir de cet arrangement à qui les regarde. On peut les décrire, les mesurer, en dresser l’inventaire ; ce qu’on ne peut pas faire, c’est désigner d’avance la pièce qui remplit telle fonction, ni prévoir par quel bout l’ensemble va se réorganiser.",
+      "Devant un ensemble pareil, un observateur commence presque toujours par le même geste : il arrête une liste. Voici les grandeurs qui comptent, voici celles qu’on tiendra pour du détail. Le geste est raisonnable : c’est la condition de toute mesure. Pask soutient qu’il se paie, et qu’il se paie exactement là où l’on espérait gagner quelque chose : la liste, une fois arrêtée, met hors d’atteinte ce que l’ensemble fait de lui-même. Le texte qu’il publie dans les actes d’une conférence tenue en mai 1959 tire les conséquences de cette idée sur une trentaine de pages."
+    ],
+    "sections": [
+      {
+        "title": "Ce que Pask appelle un réseau",
+        "paragraphs": [
+          "Le mot réseau, chez lui, ne désigne pas d’abord des câbles ni des machines. Il nomme n’importe quel ensemble d’entités physiques reliées entre elles et dont l’activité peut se mesurer, ce qui est assez large pour couvrir le marais, la colonie et l’équipe. Ce qui les rassemble n’est pas leur matière : c’est la situation dans laquelle ils placent celui qui voudrait s’en servir.",
+          "Deux cas se présentent d’emblée : le réseau qu’on trouve dans la nature, et celui qui se donne comme une boîte noire, un dispositif dont on observe les entrées et les sorties sans accès à l’intérieur. La première thèse de Pask porte sur ces deux cas à la fois. Elle arrive sans titre et sans nom : il annonce « In this paper I shall put forward a pair of contentions », une paire de thèses, dont il n’intitulera que la seconde. Le concept n’a pas d’étiquette chez son auteur : tout intitulé français est forgé après coup."
+        ]
+      },
+      {
+        "title": "L’art de connaître une coulée de lapins",
+        "paragraphs": [
+          "Pask admet lui-même qu’il n’est pas facile de dire ce qu’il entend par historien naturel, et il commence par écarter le contresens le plus proche : « Emphatically he is not a meticulous and classifying person. » Ni collectionneur, ni classificateur. C’est pourquoi le mot français qui vient tout de suite à l’esprit, naturaliste, désigne à peu près exactement le personnage qu’il refuse.",
+          "Ce qu’il a en tête, dit-il, ce sont les aspects interactifs de l’histoire naturelle : « In choosing the name I had the interactive aspects of natural history in mind », et il précise aussitôt de quoi il s’agit, « the art of knowing about a rabbit run, almost by living the part of a rabbit ». Savoir où passent les lapins en tenant presque soi-même le rôle du lapin : le savoir en question s’acquiert en fréquentant la chose, comme un dresseur apprend un animal, et Pask tient à ce qu’il reste assez discipliné pour pouvoir se discuter.",
+          "Ce savoir-là ne cherche pas les ressemblances que l’observateur apporte avec lui, mais celles qui font sens à l’intérieur du réseau lui-même : au lieu de plaquer une grille venue d’ailleurs, on laisse la chose indiquer ce qui, chez elle, revient au même."
+        ]
+      },
+      {
+        "title": "Le prix d’une grille fixée d’avance",
+        "paragraphs": [
+          "En face, Pask installe un autre personnage, l’observateur spécialisé. Celui-ci travaille dans un cadre de référence, c’est-à-dire une décision prise d’avance sur les attributs du réseau qu’on tiendra pour pertinents, assortie d’une règle de composition partagée avec d’autres observateurs. Il rapporte ensuite l’activité du réseau à un modèle hypothétique et appelle vérité ce que les transformations autorisées par son cadre laissent invariant. Rien là d’illégitime : c’est la démarche scientifique ordinaire.",
+          "Deux difficultés l’attendent pourtant. La première : deux observateurs installés dans des cadres distincts peuvent affirmer que des systèmes différents existent dans le même réseau, et leurs vérités respectives ne se recoupent pas. La seconde est plus sérieuse. Il existe des systèmes non stationnaires, ceux qu’on rencontre souvent en sociologie et en psychologie, pour lesquels aucune identification ne tient, si longue que soit l’observation ; Pask renvoie sur ce point à Ashby, chez qui la vérité elle-même est changeante. Poser un cadre, c’est tacitement supposer qu’une description reste invariante. Devant ces systèmes, la supposition tombe.",
+          "L’historien naturel s’en tire, et pour une raison qui déplace toute la question du côté de l’observateur : « So far as the natural historian has a reference frame, it is simply the context of his own interaction with the network. » Son cadre, s’il en a un, c’est le contexte de sa propre interaction avec le réseau ; le volume imprimé souligne le possessif. Pask ajoute que la distinction entre les deux personnages n’est pas dans les choses : elle disparaîtrait si un observateur pouvait tout savoir d’un réseau, et elle tient « simply because observers are not almighty »."
+        ]
+      },
+      {
+        "title": "Une nécessité qui ne porte que sur l’usage",
+        "paragraphs": [
+          "On pourrait croire qu’il décrète ainsi une seule bonne façon de regarder. Il dit l’inverse, et il le dit tôt : « We can, of course, look at a system in any way we choose, regardless of whether or not it is self-organizing. » Un homme peut être regardé anatomiquement, comme une créature à deux jambes bornée par sa peau, ou sociologiquement, comme un joueur mal défini. Aucun de ces regards n’est faux.",
+          "Ce qu’ils ne permettent pas, c’est de se servir du caractère auto-organisateur de cet homme, de ce qu’il arrange de lui-même. La contrainte porte sur l’usage, pas sur la vérité : c’est en vue de cet usage, et pour lui seul, qu’il faut devenir historien naturel, et Pask met ces mots-là en italiques. La condition qu’il pose, celle d’un observateur qui souhaite se servir des capacités du réseau, n’est donc pas une précaution de style ; elle est ce qui empêche la thèse de devenir un impératif général sur la bonne manière de connaître."
+        ]
+      },
+      {
+        "title": "Le réseau qu’on a construit soi-même",
+        "paragraphs": [
+          "La seconde thèse, la seule à porter un intertitre, vise des réseaux d’une autre origine : « networks which are not given in nature, but which are deliberately built », des montages bâtis exprès pour favoriser les systèmes auto-organisateurs qui y apparaîtraient. On s’attendrait à ce que l’artefact échappe à tout cela, puisque chaque composant y a été choisi et posé par quelqu’un. Pask soutient le contraire, et il indique où la difficulté surgit : pas dans la formulation abstraite du système, mais au moment où celle-ci prend corps dans un modèle physique.",
+          "L’argument tient à la réalisation matérielle. Un calculateur analogique est conçu pour que son activité s’explique dans un cadre de référence unique : la fonction de chaque composant est spécifiée, et ses imperfections sont écartées comme non pertinentes. Or un système auto-organisateur utilise, par sa logique même, tous les moyens d’organisation disponibles, si bien que, écrit Pask, « it cannot be realized in a single reference frame ». Aucun modèle purement électrique, mécanique ou chimique n’en donnera l’équivalent : tout montage réel les mêle à des degrés divers.",
+          "Son exemple est celui d’un système qui acquiert d’abord une forme d’individualité par un marquage chimique, puis la retrouve par séparation spatiale. Deux mécanismes, que l’observateur spécialisé tiendra pour distincts et incomparables, et que l’historien naturel verra comme équivalents. La posture d’histoire naturelle n’est donc pas un pis-aller réservé à ce qu’on n’a pas fabriqué : elle revient par le matériau, chez celui-là même qui a monté le dispositif."
+        ]
+      },
+      {
+        "title": "Récompenser un réseau, et trop bien réussir",
+        "paragraphs": [
+          "La seconde moitié du chapitre décrit un montage réel : une solution de sulfate ferreux tenant lieu de matériau malléable, des fils métalliques qui poussent entre électrodes, se ramifient, se dissolvent et se régénèrent, chacun déterminant le milieu dans lequel les autres se développent. Le système finit par se donner ses propres récepteurs pour les grandeurs qu’il a intérêt à sentir. Un observateur spécialisé y verrait une machine à apprendre décevante : elle apprend bien ce qu’on veut, mais il ne peut dire ni comment elle apprend, ni comment la récompenser, ni quelle est sa taille.",
+          "Le mot récompense change d’ailleurs de sens en route. Récompenser ce réseau ne veut pas dire rendre plus probable une action réussie : cela veut dire lui donner la permission de se développer. La stratégie que Pask formalise consiste à ne le récompenser que lorsque la règle de composition de l’observateur satisfait sa condition de prévisibilité, ce qui rend dominant le mécanisme correspondant. Le mouvement est symétrique : l’observateur est récompensé quand il obtient cette prévisibilité.",
+          "D’où un avertissement qui ferme la démonstration. Si l’interaction converge jusqu’au point où le système devient descriptible « in a single reference frame », alors il « will have been trained not to be a self-organizing system » : on l’aura entraîné à ne plus s’organiser lui-même, et il ne restera qu’une machine à apprendre de capacité finie. Trop bien réussir à comprendre un tel réseau, dans les termes de Pask, c’est perdre ce dont on voulait se servir."
+        ]
+      }
+    ],
+    "limits": [
+      "Une partie de ce chapitre est du formalisme : notations, groupes de transformations, relations qui définissent la condition de prévisibilité et les stratégies de récompense. Ce détail se lit sur les pages imprimées du volume de 1960.",
+      "Le mot conversation figure bien dans ce texte : l’historien naturel y choisit sa première règle d’après l’idée qu’il se fait du réseau comme partenaire d’échange, non d’après ce qu’il sait de sa structure. Mais ce n’est pas la théorie de la conversation, publiée une quinzaine d’années plus tard, celle qui a fait la réputation de Pask : rien de ce qui précède n’en vient, et ce sont ses livres qui la portent.",
+      "Le texte a été écrit auprès de Heinz von Foerster, à l’University of Illinois, et celui-ci renvoie à ce chapitre dans le même volume. Que l’une des deux idées dépende de l’autre n’est pas établi : les deux textes partagent un volume, un laboratoire et un contrat, ils ne se démontrent pas l’un l’autre. Comment ce chapitre a été lu et discuté depuis, les sources disponibles ne le disent pas. La phrase citée reste en anglais faute d’équivalent neutre : « historien naturel » est un calque, pas un mot de Pask."
     ]
   },
   {
@@ -931,6 +1649,63 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "loi-de-la-variete-requise",
+    "lead": [
+      "Imaginons un guichet devant lequel se présentent dix sortes de demandes différentes, et un agent qui ne dispose que de trois réponses possibles. Quelle que soit son habileté, quelle que soit sa rapidité, il ne pourra pas faire que ces dix demandes ressortent toutes de la même façon. Au mieux, les dix situations de départ se ramènent à quatre issues distinctes, jamais à une seule. Le calcul ne dit rien de son énergie ni de son sérieux : il compte des cas, d’un côté et de l’autre, et il constate qu’il en manque d’un côté.",
+      "W. Ross Ashby a démontré ce genre de compte, et lui a donné un nom, au chapitre 11 d’An Introduction to Cybernetics, paru à Londres chez Chapman & Hall en 1956. Il appelle variété le nombre de cas distincts qu’une chose peut présenter : dix pour les demandes, trois pour les réponses. Et il établit que la seule chose capable de faire baisser la variété de ce qui sort est la variété de celui qui répond. Ni sa force, ni sa vitesse, ni la finesse de ses gestes : le nombre de coups différents dont il dispose."
+    ],
+    "sections": [
+      {
+        "title": "Un jeu à deux joueurs, avant toute machine",
+        "paragraphs": [
+          "Ashby ne part ni d’une machine ni d’un organisme. Il commence par mettre la régulation de côté, le temps d’un raisonnement, et pose un jeu. Deux joueurs, appelés D et R, sont devant une table à double entrée que tous deux connaissent. D joue le premier et choisit une ligne. R, qui voit ce coup, choisit une colonne. La case à l’intersection est le résultat. Certains résultats sont déclarés gagnants pour R, et R gagne si le résultat tombe parmi ceux-là.",
+          "Le détour compte autant que le résultat. Tout ce que le mot régulation traîne avec lui, l’intention, l’effort, la matière, l’énergie, se trouve écarté : il ne reste qu’une table, un nombre de lignes, un nombre de colonnes. D n’y est pas un adversaire au sens où l’on se bat contre quelqu’un, c’est ce que le monde joue en premier. Et R, qui joue en second en connaissant pleinement le coup de D, occupe la position la plus favorable qu’on puisse lui donner. Ce qui suit est donc une limite qui tient même dans ce cas favorable."
+        ]
+      },
+      {
+        "title": "Ce que le tableau oblige à compter",
+        "paragraphs": [
+          "Pour démontrer, Ashby restreint son propos aux tables où un même résultat n’apparaît jamais deux fois dans la même colonne : autrement dit, où chaque réponse de R donne un résultat différent selon la perturbation. Dans ce cas, le nombre de résultats distincts que R peut obtenir ne descend pas en dessous du nombre de coups de D divisé par le nombre de coups de R. Si R dispose de trois coups, la variété des issues peut être ramenée au tiers, et pas plus bas.",
+          "Il réécrit ensuite le même fait en mesure logarithmique, en notant VD, VR et VO les variétés de la perturbation, du régulateur et du résultat : le minimum de VO vaut VD moins VR. La conséquence tient en une phrase, page 207 : « the variety in the outcomes, if minimal, can be decreased further only by a corresponding increase in that of R ». Une fois le plancher atteint, la seule façon de descendre encore est d’augmenter d’autant le nombre de coups de R. Ashby refait ensuite le théorème en entropies, à la manière de Shannon, puis l’étend au cas où la table bloque déjà une partie de la variété."
+        ]
+      },
+      {
+        "title": "Une image, et l’énoncé qu’elle abrège",
+        "paragraphs": [
+          "La formule la plus reprise du chapitre, « variety can destroy variety », est annoncée par Ashby lui-même comme une image : il l’introduit par « To put it more picturesquely: », juste après avoir écrit « This is the law of Requisite Variety ». L’énoncé technique, lui, est immédiatement au-dessus, sur la même page, et c’est celui qui porte la condition : un plancher d’abord, puis une augmentation correspondante pour descendre plus bas.",
+          "La différence n’est pas mince. Lue seule, l’image d’une variété qui en détruit une autre suggère un duel où deux quantités s’annulent, comme deux forces opposées. Ce que le théorème dit est plus étroit et plus utile : étant donné une table, le nombre de résultats différents possibles a un plancher, et rien d’autre que le nombre de coups de R ne l’abaisse. Une phrase frappante et un énoncé exact ne se recouvrent pas toujours, et Ashby prend soin de signaler laquelle des deux il est en train d’écrire."
+        ]
+      },
+      {
+        "title": "Une loi qui ne doit rien à l’expérience",
+        "paragraphs": [
+          "Ashby insiste sur le statut de ce qu’il vient d’établir : le théorème est d’abord une affirmation sur les arrangements possibles dans une table rectangulaire. Il ne doit rien à l’expérience, il n’a rien à voir avec les propriétés de la matière, et aucun dispositif nouveau ne peut le renverser. Une loi tirée de l’observation se réfute par une observation mieux faite ; celle-ci ne s’expose pas de cette manière, parce qu’elle ne parle pas de ce que le monde contient mais de ce qu’un comptage autorise.",
+          "Ce qui fait sa force fait aussi sa limite, et il vaut mieux le savoir avant de s’en servir. La loi ne dit pas comment construire un régulateur, ni lequel convient à telle situation. Elle ne dit pas davantage comment on compte les cas dans une situation réelle : décider que deux pannes, deux demandes ou deux visiteurs comptent pour un seul cas ou pour deux est tout le travail de celui qui applique la loi, et la démonstration ne le fait pas à sa place. Le théorème est sûr, le découpage des cas ne l’est jamais d’avance."
+        ]
+      },
+      {
+        "title": "Du tableau au régulateur, puis au canal",
+        "paragraphs": [
+          "La régulation ne revient qu’ensuite. D devient un ensemble de perturbations venues du monde extérieur, qui menacent, si le régulateur ne fait rien, de pousser hors de leur plage les variables essentielles de l’organisme, celles dont seules quelques valeurs sont compatibles avec sa vie. La table, elle, est le monde extérieur dur, ou ces affaires internes que le régulateur en puissance doit tenir pour acquises. Un bon régulateur est alors une transformation des perturbations telle que tous les résultats tombent dans l’ensemble acceptable ; le régulateur et la table forment ensemble la barrière.",
+          "De là, la loi prend une troisième forme, page 211 : « The law of Requisite Variety says that R’s capacity as a regulator cannot exceed R’s capacity as a channel of communication. » Ashby la présente comme l’homologue du théorème 10 de Shannon sur le canal qui corrige le bruit. L’idée se comprend sans mathématiques : pour absorber une perturbation, il faut en être informé, et ce qui n’arrive pas jusqu’au régulateur, il ne peut pas le compenser. Sa capacité à réguler est bornée par la quantité d’information qui le traverse."
+        ]
+      },
+      {
+        "title": "Des peaux sensibles plutôt que la fuite",
+        "paragraphs": [
+          "Ashby tire lui-même deux conséquences de la loi. La première est biologique : la quantité de perturbation qui atteint le patrimoine génétique ne peut diminuer que de la quantité d’information transmise. C’est ce qui explique, écrit-il, que les organismes supérieurs se dotent de peaux sensibles et de systèmes nerveux, au lieu de chercher à échapper à la variété du monde. Devant un environnement varié, la sortie n’est pas de subir moins, elle est de distinguer et de pouvoir davantage.",
+          "La seconde porte sur les très grands systèmes, et il la formule crûment : demandant de combien un dictateur peut contrôler un pays, il répond, dans les termes de la loi, que ce contrôle vaut une puissance d’homme, et pas davantage. Ce que la loi interdit n’est pas une performance technique, c’est une arithmétique : elle proscrit toute amplification directe et simple de la régulation. Le chapitre se ferme en liant régulation et contrôle, qu’Ashby tient pour intimement liés : un régulateur parfait permet à un contrôleur d’imposer la cible qu’il veut malgré les perturbations."
+        ]
+      }
+    ],
+    "limits": [
+      "La loi existe en français depuis 1958 : Marcel Pillon a traduit l’ouvrage pour Dunod, sous le titre Introduction à la cybernétique. Les phrases citées plus haut le sont dans la langue où Ashby les a écrites ; leurs mots français sont dans ce volume, et c’est lui qu’il faudra ouvrir.",
+      "Ashby a redonné la loi deux ans plus tard, dans « Requisite variety and its implications for the control of complex systems », revue Cybernetica, 1958. Ce que sont ces implications, c’est cet article qui le déploie.",
+      "Le corollaire le plus cité en gestion, « every good regulator of a system must be a model of that system », n’est ni dans le livre de 1956 ni d’Ashby seul : Roger C. Conant le cosigne avec lui en 1970, dans l’International Journal of Systems Science. Par quel chemin il relie régulation et modèle, ces neuf pages le démontrent.",
+      "Comment la loi a été reçue et discutée en français, les sources disponibles ne permettent pas de le dire : l’enquête de Ronan Le Roux sur la cybernétique dans la France des années 1950 y situe Ashby, mais elle porte sur Lafitte, Couffignal, Riguet et le Cercle d’études cybernétiques."
+    ]
+  },
+  {
     "conceptId": "marge-de-manoeuvre",
     "lead": [
       "Imaginons deux personnes qui font le même travail : contrôler des pièces sur une chaîne, par exemple, ou poser un même geste toute la journée. Elles reçoivent la même consigne, mais devant elles, plusieurs fois par jour, une pièce mal formée, un outil qui coince, une commande arrivée en retard. La première peut changer de posture, reprendre le geste autrement, décaler l’ordre des opérations pour absorber l’incident sans casser le rythme. La seconde n’a droit qu’à une seule façon de faire, fixée d’avance, et doit s’y tenir même quand elle ne convient plus à ce qui se présente.",
@@ -1033,6 +1808,191 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "modele-du-fromage-suisse",
+    "lead": [
+      "Dans un hôpital, une erreur de médicament doit franchir plusieurs obstacles avant d’atteindre quelqu’un : l’étiquette du flacon, la prescription relue, le contrôle fait au moment d’injecter, parfois un logiciel qui refuse une dose aberrante. Chacun de ces obstacles arrête, tous les jours, des erreurs dont personne n’entendra jamais parler. Et pourtant, de loin en loin, quelque chose passe. La question qui vient alors est presque toujours la même : qui s’est trompé ? Elle a un défaut. Elle s’arrête au dernier maillon, celui qui tenait la seringue, et elle ne demande rien aux protections d’avant, qui n’ont pas arrêté l’erreur non plus.",
+      "C’est cette question que James Reason, psychologue au département de psychologie de l’université de Manchester, déplace dans un court article publié en 2000 à l’intention des médecins. Il ne commence pas par les erreurs, il commence par les protections, et par ce qu’elles ont toutes en commun : elles font le plus souvent très bien leur travail, et elles ont toutes des faiblesses. Comprendre un accident revient alors à comprendre pourquoi les faiblesses de plusieurs d’entre elles se sont trouvées, au même moment, au même endroit."
+    ],
+    "sections": [
+      {
+        "title": "Trois sortes de protections",
+        "paragraphs": [
+          "Le point de départ de l’article n’est pas l’opérateur, c’est ce qui se tient entre le danger et les personnes. « Defences, barriers, and safeguards occupy a key position », écrit Reason : les défenses, les barrières et les garde-fous occupent une position centrale dès qu’on regarde le système plutôt que l’individu. Il en distingue trois sortes : celles qui sont fabriquées, alarmes, barrières physiques, arrêts automatiques ; celles qui reposent sur des gens, le chirurgien, l’anesthésiste, le pilote, l’opérateur en salle de commande ; celles qui tiennent à des procédures et à des contrôles administratifs. Leur fonction est de tenir les dangers à distance de ceux qu’ils pourraient atteindre.",
+          "Cette liste fait déjà beaucoup. Une protection peut être un dispositif, une règle ou une personne, et les trois sont mises sur le même plan. L’être humain n’occupe pas ici de place à part : il est une couche parmi d’autres, et on ne peut pas plus lui demander d’être intact qu’à une alarme de l’être. Dans un monde idéal, écrit Reason, chaque couche de défense serait sans défaut. C’est l’état de référence contre lequel tout le reste se lit, et il n’existe pas."
+        ]
+      },
+      {
+        "title": "L’instant où les trous s’alignent",
+        "paragraphs": [
+          "Vient alors l’image. Les couches ne sont pas intactes : « they are more like slices of Swiss cheese, having many holes », elles ressemblent plutôt à des tranches de fromage suisse, percées de trous. Reason s’arrête aussitôt à l’endroit où la comparaison cesse d’être juste : contrairement au fromage, « these holes are continually opening, shutting, and shifting their location », les trous ne cessent de s’ouvrir, de se refermer et de changer de place. C’est la moitié de l’image dont on se souvient le moins, et c’est elle qui porte le mécanisme.",
+          "Des trous dans une seule tranche ne produisent normalement rien de grave. Ce qu’il faut, écrit Reason, c’est que les trous de plusieurs couches s’alignent un instant : « Usually, this can happen only when the holes in many layers momentarily line up to permit a trajectory of accident opportunity ». Chaque mot compte. Le « only when » pose une condition nécessaire, non une recette : l’alignement est ce sans quoi l’accident ne passe pas, et non ce qui le produit à coup sûr. Le « momentarily » rappelle que la fenêtre se referme. Et ce qui traverse n’est pas une cause unique : c’est une trajectoire.",
+          "Cela implique qu’un état des lieux ne vaut pas certificat : si les trous se déplacent, les voir désalignés aujourd’hui ne dit rien du lendemain, et boucher ceux qu’un accident vient de révéler ne protège pas des prochains."
+        ]
+      },
+      {
+        "title": "Ce qui perce et ce qui attendait déjà",
+        "paragraphs": [
+          "Les trous ont deux origines, et c’est là que le modèle devient un outil plutôt qu’une image. Les premières sont les défaillances actives, les actes non sûrs commis, écrit Reason, par ceux qui sont en contact direct avec le patient ou avec le système. Elles prennent des formes variées, que Reason énumère sans les définir ici, slips, lapses, fumbles, mistakes et violations de procédure, renvoyant pour cela à son livre de 1990. Leur effet est direct et bref, et le lien se voit tout de suite.",
+          "Les secondes sont les conditions latentes, que Reason appelle « the inevitable resident pathogens within the system », les pathogènes résidents et inévitables du système. Elles naissent de décisions : de conception, de construction, d’écriture des procédures, de direction. Suit la précision qu’on oublie le plus souvent : ces décisions peuvent être fautives, mais elles n’ont pas à l’être. Une condition latente n’est donc pas une faute cachée qu’on aurait remontée d’un cran dans la hiérarchie. C’est un choix, parfois raisonnable au moment où il est fait, qui laisse derrière lui une faiblesse durable.",
+          "Ces conditions agissent de deux façons. Sur le lieu de travail, elles créent les circonstances qui provoquent l’erreur : pression temporelle, effectifs insuffisants, matériel inadapté, fatigue, inexpérience. Dans les défenses, elles ouvrent des trous qui durent : alarmes auxquelles on ne se fie plus, procédures inapplicables, défauts de conception. Une même décision ancienne rend donc l’acte non sûr plus probable et la barrière moins capable de l’arrêter.",
+          "Le mot compte ici autant que la chose. Reason n’écrit jamais latent errors ni latent failures : il écrit latent conditions, et une condition n’est pas une erreur. Le vocabulaire n’a pas toujours été celui-là : celui de 1990 parlait bien d’erreurs, et le changement date de 1997, comme le rappelle la note de 2006."
+        ]
+      },
+      {
+        "title": "Ce que le temps de latence rend possible",
+        "paragraphs": [
+          "La différence entre les deux n’est pas seulement de nature, elle est de durée, et c’est de là que vient l’intérêt pratique du modèle. Une défaillance active se voit sur le moment et s’épuise avec lui. Une condition latente peut dormir des années dans un système avant de rencontrer une défaillance active et un déclencheur local. Mais, à la différence des défaillances actives, dont les formes précises sont difficiles à prévoir, elle peut être repérée et corrigée avant que rien n’arrive. Reason en tire une conséquence explicite : une gestion du risque qui devance, plutôt qu’une qui répond.",
+          "Il ferme ce passage de l’article sur une seconde comparaison, qu’il annonce comme telle. Les défaillances actives sont comme des moustiques : on peut les écraser un par un, ils continuent d’arriver. Les meilleurs remèdes sont de construire des défenses plus efficaces et d’assécher les marécages où ils se reproduisent, et les marécages, ici, sont les conditions latentes toujours présentes.",
+          "Rien de cela ne dit que les actes des personnes seraient sans importance, et c’est un contresens facile. Reason écrit que la quasi-totalité des événements indésirables associe les deux sortes de facteurs : le modèle ne remplace pas une explication par une autre, il refuse de s’arrêter à la première."
+        ]
+      },
+      {
+        "title": "Un nom que Reason n’a pas forgé",
+        "paragraphs": [
+          "En 2000, Reason emploie l’appellation comme le nom de son modèle. Elle est en titre de section, « The Swiss cheese model of system accidents », et en légende de la figure. Le fromage lui-même n’apparaît qu’une fois dans le corps du texte. Nulle part il ne dit d’où ce nom lui vient.",
+          "Il le dira six ans plus tard, dans une note écrite avec Erik Hollnagel et Jean Paries pour le centre expérimental d’Eurocontrol, à Brétigny-sur-Orge, dont une section retrace l’histoire du modèle telle qu’il l’a vécue. On y lit : « J. Reason did not originate the ‘Swiss cheese’ label », il n’est pas à l’origine de l’étiquette, et la phrase se poursuit, « that was probably Rob Lee, then Director of the Bureau of Air Safety Investigation (BASI) in Canberra ». Le « probably » est de lui, et rien n’établit qui a imprimé la formule le premier, ni quand.",
+          "Le dessin non plus n’est pas d’un seul. La même note attribue à John Wreathall et à Reason conjointement la représentation en plans successifs : « John Wreathall and J. Reason depicted these as a sequence of five ‘planes’ lying one behind the other ». Justin Larouzée et Jean-Christophe Le Coze en rapportent une autre, tirée d’une correspondance de Reason : « John started to draw overlapping planes, and I put in the holes ». Ce qui lui revient sans partage, c’est le mécanisme : des couches, des trous mobiles, deux origines."
+        ]
+      },
+      {
+        "title": "Ce que le dessin ne dit pas",
+        "paragraphs": [
+          "La légende de la figure de 2000 annonce ce que la figure montre, et rien de plus : « Swiss cheese model of how defences, barriers, and safeguards may be penetrated by an accident trajectory », comment des défenses, des barrières et des garde-fous peuvent être traversés par une trajectoire d’accident.",
+          "Larouzée et Le Coze relèvent à son sujet un écart qu’il vaut la peine de connaître : dans le schéma publié en 2000, contrairement au texte, la distinction entre défaillances actives et conditions latentes n’est pas représentée. C’est leur constat. Il a une conséquence pour qui a vu l’image sans lire la page : le dessin porte les couches, les trous et l’alignement, mais non les deux origines des trous. On peut retenir tout le fromage et n’avoir gardé que la moitié du modèle."
+        ]
+      }
+    ],
+    "limits": [
+      "Le modèle n’est pas développé en entier dans cet article de trois pages, écrit pour des médecins. Il l’est dans deux livres : Human Error (Cambridge University Press, 1990), auquel Reason renvoie lui-même pour les définitions de slips, lapses et mistakes qu’il se contente ici d’énumérer, et Managing the Risks of Organizational Accidents (Ashgate, 1997). C’est là qu’il faudra aller le chercher entier.",
+      "Qui a imprimé « Swiss cheese model » le premier, et quand, reste ouvert. La piste passe par les publications de Rob Lee, alors à la tête du bureau d’enquête sur la sécurité aérienne à Canberra, et par un ouvrage collectif de 1995, cité sous le nom de Maurino et coll., où Larouzée et Le Coze signalent que l’idée est déjà partiellement exploitée.",
+      "Le modèle a été discuté, et vivement : Perneger, Shorrock, Leveson et Hollnagel lui ont opposé des objections dont rien n’est repris ici, et l’article de Larouzée et Le Coze, en 2020, les recense et les pèse.",
+      "La figure, elle, est dans l’article, en accès libre : la regarder soi-même reste la meilleure façon de juger ce qu’ils en disent. Aucune traduction française publiée n’en est connue : c’est en anglais qu’il faudra le lire."
+    ]
+  },
+  {
+    "conceptId": "nasa-tlx",
+    "lead": [
+      "Imaginons deux personnes qui sortent du même exercice sur simulateur : même consigne, même durée, résultat comparable. L’une n’en garde presque rien, l’autre en sort vidée. Rien de ce qui a été enregistré pendant la séance ne sépare ces deux heures, ni le temps, ni les erreurs, ni les gestes. Ce qui les distingue est ce que chacune a dû dépenser pour y arriver, et cela n’a laissé aucune trace dans ce qui a été relevé. On peut toujours le leur demander. Mais poser la question d’un bloc, savoir si c’était difficile, ramène un chiffre unique où l’effort fourni, la pression du temps et la contrariété d’avoir mal fait restent confondus.",
+      "Un groupe de recherche du centre Ames de la NASA a fait circuler un livret d’une vingtaine de pages qui répond à cette difficulté par un déplacement : plutôt que de lire une grandeur, organiser un jugement. Le livret ne se donne pas pour une théorie de la charge de travail, mais pour un mode d’emploi, formulaires compris, distribué afin que d’autres s’en servent dans leurs propres expériences. C’est ce parti pris qu’il faut suivre, car il décide de ce que l’instrument saisit comme de ce qu’il laisse dehors."
+    ],
+    "sections": [
+      {
+        "title": "Ce que les six échelles séparent",
+        "paragraphs": [
+          "Les six échelles ne sont pas six variantes de la même question. Le livret les répartit en deux groupes. Trois portent sur ce que la tâche a exigé de la personne : l’exigence mentale, l’exigence physique, l’exigence temporelle. Elles décrivent la pression venue du dehors, celle qu’un observateur pourrait à la rigueur estimer sans rien demander à personne.",
+          "Les trois autres portent sur autre chose : l’interaction de la personne avec la tâche. L’effort demande combien elle a dû travailler, mentalement et physiquement, pour atteindre le niveau de résultat qui a été le sien. La frustration demande dans quelle mesure elle s’est sentie contrariée, découragée, irritée, plutôt que tranquille, satisfaite et détendue. La performance, enfin, porte sur la façon dont elle juge sa propre réussite.",
+          "Ce second groupe est le plus surprenant, parce qu’il fait entrer dans le compte de la charge des choses qu’on rangerait spontanément ailleurs. Le jugement qu’une personne porte sur ce qu’elle a accompli n’est pas d’ordinaire tenu pour un coût : c’est un résultat. Ici, il fait partie du coût. Deux séances menées sous la même exigence extérieure ne pèseront donc pas pareil selon que la personne s’estime ou non à la hauteur de ce qu’elle a fait."
+        ]
+      },
+      {
+        "title": "Quinze paires avant la première note",
+        "paragraphs": [
+          "La notation ne vient pas en premier. La personne commence par comparer les échelles deux à deux : six échelles donnent quinze paires possibles, chacune imprimée sur son propre carton. Pour chaque paire, elle entoure celle des deux qui a le plus contribué à la charge de cette tâche-là. Rien n’est encore noté ; on établit seulement une hiérarchie, et c’est la personne qui l’établit.",
+          "Vient ensuite la notation proprement dite. Chaque échelle se présente comme une ligne de douze centimètres divisée en vingt intervalles, bornée à ses deux extrémités par des qualificatifs opposés. La personne marque sa position sur chacune des six lignes. Le score final multiplie chaque note par le poids que cette personne a donné au facteur correspondant, additionne les six produits, et divise la somme par quinze.",
+          "Ce quinze n’est pas un réglage arbitraire. Chaque comparaison attribue un point à l’une des deux échelles, si bien que les six poids totalisent toujours quinze : la division ramène simplement le résultat à l’échelle des notes. Quant au moment du relèvement, il se fait après l’exécution d’une tâche ou d’un segment de tâche, et le livret ouvre également le cas où l’on recueille des notes pendant la tâche elle-même."
+        ]
+      },
+      {
+        "title": "Peser selon cette tâche, pas selon une définition",
+        "paragraphs": [
+          "Pourquoi six mesures plutôt qu’une ? La raison donnée n’est pas que la charge serait un phénomène trop riche pour une question unique. Elle est plus terre à terre : les gens ne s’entendent pas sur ce que le mot veut dire. Les définitions de la charge varient d’un expérimentateur à l’autre et d’un sujet à l’autre, de sorte que deux personnes notant la même séance sur une échelle unique ne notent peut-être pas la même chose.",
+          "Le livret ajoute un constat qui va plus loin, et c’est lui qui commande tout le reste : ce qui détermine le plus l’expérience de charge n’est pas la définition que chacun s’en donne, mais les sources de charge particulières qu’impose telle ou telle tâche. D’où le choix de pondérer les échelles selon l’importance que la personne leur accorde dans cette tâche précise, et non selon leur pertinence supposée au regard de sa conception générale de la charge.",
+          "La nuance décide de la lecture des poids. Ils ne décrivent pas un tempérament, quelqu’un qui serait durablement sensible à la pression du temps et indifférent à l’effort. Cela implique qu’une même personne peut produire deux jeux de poids très différents sur deux tâches différentes sans se contredire : ce qui est pesé, c’est la rencontre d’une personne et d’une tâche, jamais la personne seule."
+        ]
+      },
+      {
+        "title": "Ce que le passage de neuf à six a écarté",
+        "paragraphs": [
+          "L’instrument a une version antérieure, la NASA Bipolar Rating Scale, qui comptait neuf sous-échelles. Elle réduisait bien la variabilité entre juges, mais sa sensibilité restait insuffisante, et neuf mesures se sont révélées trop nombreuses : le livret note qu’elles rendaient l’échelle impraticable en simulation ou en environnement opérationnel. La contrainte est d’usage autant que de méthode, et elle a compté.",
+          "Le tri ne s’est pas fait au seul motif de la commodité. Plusieurs sous-échelles se sont révélées sans rapport avec la charge, la fatigue par exemple, et d’autres redondantes, le stress et la frustration mesurant à peu près la même chose. Ce qui subsiste des neuf est donc en partie le produit d’un élagage, et non le déploiement d’une définition arrêtée d’avance.",
+          "Deux traces en restent, visibles dans le résultat. La fatigue n’a pas d’échelle propre, et rien dans le score ne la nomme. Et la frustration porte seule ce que le stress mesurait aussi, ce qui rend cette échelle plus large que son nom ne le laisse croire."
+        ]
+      },
+      {
+        "title": "Une tâche déjà accomplie",
+        "paragraphs": [
+          "L’instrument porte sur une tâche terminée. Le livret parle de juges et de sujets qui notent une séance déjà faite ; il ne parle jamais d’un opérateur qui, pendant qu’il travaille, arbitre entre plusieurs manières de s’y prendre pour tenir. Les mots de régulation, de mode opératoire, de compromis, de stratégie de travail en sont absents.",
+          "La différence n’est pas une nuance de vocabulaire. Ce que l’instrument attrape est une grandeur : combien cela a coûté, réparti en six postes. Ce qu’il ne dit pas, c’est comment la personne s’y est prise pour que cela ne coûte pas davantage, ce qu’elle a laissé tomber en route, l’ordre qu’elle a changé, la vérification qu’elle a sautée. Un score bas peut recouvrir une tâche facile ou un arrangement habile, et l’instrument ne les distingue pas.",
+          "Le score global est de surcroît une moyenne, et une moyenne dissimule ses composantes. Cela implique que deux personnes peuvent obtenir le même résultat par des chemins opposés, l’une pressée par le temps, l’autre découragée par ce qu’elle croit avoir manqué. Les six notes séparées portent donc une information que le chiffre unique ne porte plus, et le livret compte sur elles pour cela."
+        ]
+      },
+      {
+        "title": "Ce que le livret dit de lui-même",
+        "paragraphs": [
+          "Le ton du document mérite d’être relevé, parce qu’il n’est pas celui d’un instrument installé. La procédure est présentée comme issue de trois ans de travaux et de plus de quarante expériences en laboratoire, en simulation et en vol, et pourtant le texte prend aussitôt une précaution : « Although the technique is still undergoing evaluation, this booklet is being distributed to allow other researchers to use it in their own experiments ». La technique est encore en cours d’évaluation, et on la diffuse pour que d’autres l’éprouvent.",
+          "Le livret revendique une fonction de simple mode d’emploi : décrire la procédure, rien de plus. Sa composition le confirme. L’exposé tient dans les quatre premières pages, les consignes destinées aux sujets occupent deux pages, les définitions des six échelles tiennent dans une annexe ; tout le reste est un jeu de formulaires, cartons de comparaison, feuille de notation, feuille de dépouillement, feuille de calcul.",
+          "On n’y trouve donc ni discussion de ce que le score mesure vraiment, ni exposé des limites de l’instrument, ni comparaison avec les autres méthodes de mesure de la charge en circulation à la même époque. Ces questions n’y figurent que sous forme de renvois bibliographiques. Le livret fournit un outil et sa notice d’utilisation, il ne plaide pas sa cause."
+        ]
+      }
+    ],
+    "limits": [
+      "Le livret décrit une procédure, il n’en fournit pas la preuve. Il renvoie pour cela à un texte annoncé comme à paraître, et paru en 1988 : Sandra G. Hart et Lowell E. Staveland, « Development of NASA-TLX (Task Load Index): Results of Empirical and Theoretical Research », dans Human Mental Workload, sous la direction de P. A. Hancock et N. Meshkati, Elsevier, p. 139-183. C’est là, selon le livret, qu’est résumée la première étude de validation. Ce que ce chapitre établit, et par quels moyens, ce sont ses pages qui le diront.",
+      "Le passage de l’annonce à la parution n’a rien eu d’anodin : la bibliographie du livret annonce un titre, « Development of a multi-dimensional workload rating scale », qui n’est pas celui du chapitre paru. Le volume de 1988 est le premier endroit où voir ce qui a changé.",
+      "Ce que l’instrument vaut sous la critique n’est pas dans ces pages : les travaux qui discutent sa validité et ceux qui lui opposent d’autres méthodes y sont cités en bibliographie, et ce sont eux qu’il faudra ouvrir. Qui voudra citer sa définition la citera en anglais : aucune traduction française publiée n’en est connue."
+    ]
+  },
+  {
+    "conceptId": "niveaux-de-controle-cognitif",
+    "lead": [
+      "Après un incident dans une installation industrielle, quelqu’un remplit un compte rendu. Il s’y trouve presque toujours une case pour l’erreur humaine, et elle se coche vite. La difficulté vient après, quand on additionne ces cases pour savoir où le système est fragile. La somme met dans le même sac l’opérateur dont la main est partie trop vite sur un geste fait mille fois, celui qui a reconnu de travers ce qui se passait et appliqué la procédure d’à côté, et celui qui, devant un état de l’installation que personne n’avait prévu, a dû se faire une idée du fonctionnement avant de pouvoir agir. Ces trois-là n’ont pas échoué de la même manière.",
+      "C’est ce problème que prend de front Jens Rasmussen, au laboratoire national de Risø, au Danemark, dans un rapport d’août 1981 destiné à des spécialistes de la fiabilité industrielle. Sa question n’est pas de savoir pourquoi les gens se trompent, mais comment décrire un dysfonctionnement humain pour que la description serve ensuite, à prévoir, à concevoir, à former. Or décrire une erreur suppose un repère par rapport auquel elle en est une, et ce repère, remarque-t-il, n’est pas le même selon ce qui conduit l’action."
+    ],
+    "sections": [
+      {
+        "title": "Le repère qui sert à juger l’erreur",
+        "paragraphs": [
+          "Une erreur n’est jamais une erreur en soi : elle est un écart, et il faut donc savoir par rapport à quoi. Rasmussen accroche sa distinction exactement là. Si les trois niveaux se séparent, c’est que le comportement n’y est pas conduit par la même chose, et que le critère de la faute change avec elle : « different concepts are used to control behaviour », des concepts différents servent à contrôler le comportement. Le verbe garde ici son sens de commande : ce qui tient le volant n’est pas le même dans les trois cas.",
+          "La question à poser devant un incident se déplace alors. Elle n’est plus seulement de savoir ce que la personne a fait de travers, mais à quel régime son action était menée au moment où elle a dérapé. Rasmussen nomme ces régimes sobrement : « three levels of behaviour », trois niveaux de comportement. Ils ne classent ni les gens ni les métiers. Ils décrivent des manières d’être aux commandes, et la même personne passe de l’une à l’autre dans la même journée, parfois dans la même minute."
+        ]
+      },
+      {
+        "title": "Des gestes qui n’ont plus besoin d’être pensés",
+        "paragraphs": [
+          "Au premier niveau, l’action est une routine. Rasmussen parle de routines automatisées, « automated, more or less subconscious routines », plus ou moins inconscientes : la formule est prudente, elle ne dit pas qu’on agit sans le savoir, mais que la conduite du geste ne demande plus d’attention. Ce qui la commande, ce sont des schémas mémorisés qui ont une forme dans l’espace et un tempo dans le temps. Un geste juste, ici, a la bonne ampleur, au bon endroit, au bon moment.",
+          "Les erreurs de ce niveau tiennent à cette même matière : une variabilité de la force, de l’espace ou de la coordination temporelle. Imaginons un pupitre de commande dont un bouton a changé de place lors d’une rénovation. La main d’un opérateur chevronné ira quelque temps à l’ancien emplacement, et elle y ira d’autant plus sûrement qu’il a plus d’années de pratique. Il ne s’agit ni d’ignorance ni de négligence : la compétence produit l’écart, parce qu’elle a rendu le geste indépendant de toute surveillance."
+        ]
+      },
+      {
+        "title": "Reconnaître la situation, retrouver la règle",
+        "paragraphs": [
+          "Au deuxième niveau, la situation n’est pas nouvelle : on l’a déjà rencontrée, ou l’on a appris quoi faire quand elle se présente. Ce qui commande l’action n’est plus un schéma de geste mais une règle mémorisée, qui met en ordre des sous-routines : « performance in familiar situations controlled by stored rules », la performance en situation familière, contrôlée par des règles gardées en mémoire. Rasmussen ajoute une nuance qui pèse : ce comportement n’est pas commandé directement par le but, il est orienté vers lui. Le critère immédiat de l’erreur n’est donc pas l’échec de l’action, c’est de savoir si la règle pertinente a été retrouvée et suivie correctement.",
+          "Les défaillances propres à ce niveau ne ressemblent pas aux précédentes. Elles tiennent au classement : reconnaître une situation pour une autre, lui associer la tâche qui ne lui convient pas, ou perdre en route un morceau de la procédure. Le geste peut être parfaitement exécuté ; c’est la règle qu’il exécute qui n’était pas la bonne.",
+          "Les niveaux ne sont pas pour autant des étages étanches, et Rasmussen l’écrit dans la même page : « Since rule-based behaviour is used to control skill-based subroutines, the error mechanisms related to skill-based routines are always active ». Puisque le comportement réglé commande des sous-routines automatisées, les mécanismes d’erreur du premier niveau restent actifs en permanence. Appliquer la bonne règle n’immunise contre rien : il faut encore que les gestes qui l’exécutent tombent juste."
+        ]
+      },
+      {
+        "title": "Quand aucune règle apprise ne convient",
+        "paragraphs": [
+          "Le troisième niveau est appelé, écrit Rasmussen, par des situations uniques et non familières. Aucune règle n’est disponible parce que le cas n’a pas été prévu, et l’action doit être planifiée : « actions must be planned from an analysis and decision based on knowledge », à partir d’une analyse et d’une décision fondées sur la connaissance. Connaissance de quoi ? De deux choses, qu’il nomme l’une et l’autre : les propriétés fonctionnelles et physiques du système, et la priorité entre les différents buts. Savoir comment l’installation fonctionne ne suffit pas lorsqu’il faut aussi trancher entre des objectifs qui se contredisent.",
+          "C’est le niveau le plus difficile à décrire de l’extérieur, et Rasmussen ne le dissimule pas. Les opérations mentales y dépendent fortement de la personne et de la situation. Une erreur ne s’y définit que par rapport au but de la tâche, et les mécanismes généraux ne s’y dégagent qu’au prix d’études très détaillées, fondées sur des protocoles verbaux, c’est-à-dire sur ce que l’opérateur dit de ce qu’il fait pendant qu’il le fait.",
+          "Il pose ensuite à sa propre classification une limite qu’on reprend rarement : à ce troisième niveau, recueillir des données et prévoir la performance en décomposant la tâche n’est possible que dans des situations expérimentales très étroitement contrôlées, non dans les conditions réelles du travail. Le niveau où l’on aurait le plus besoin de prévoir est donc celui où l’auteur du modèle annonce lui-même que l’on ne prévoit pas."
+        ]
+      },
+      {
+        "title": "Se tromper de niveau",
+        "paragraphs": [
+          "Il reste une famille d’erreurs qui ne loge dans aucun des trois, parce qu’elle porte sur le choix du niveau lui-même. Rasmussen la nomme « errors of discrimination » et la tient pour importante : elle consiste à ne pas basculer sur le régime que la situation exige, à traiter comme une routine, ou comme un cas connu, une situation devenue anormale. Le geste et la règle restent alors impeccables, et complètement hors sujet.",
+          "Le niveau employé dépend d’ailleurs beaucoup, écrit-il, du « degree of training of the operator », du degré de formation de l’opérateur. Deux personnes devant le même écran ne sont pas au même niveau : ce qui est pour l’une une situation familière réglée par une procédure connue est pour l’autre un problème à analyser. Il ajoute que l’information utilisée change elle aussi de nature selon le niveau, signaux, signes ou symboles, et que la lecture retenue relève d’un choix actif.",
+          "De là une conséquence pratique, qui ramène au compte rendu d’incident du début : les données d’erreur recueillies en situation de routine ne valent pas pour les situations rares et non familières, les urgences par exemple, et cela indépendamment des effets du stress. Compter des ratés de gestes ne renseigne pas sur ce qui arrivera le jour où il faudra comprendre. « Clearly, the mental processes and the related error mechanisms are different for the various levels », les processus mentaux et les mécanismes d’erreur diffèrent selon les niveaux."
+        ]
+      },
+      {
+        "title": "Un modèle repris, un sigle venu plus tard",
+        "paragraphs": [
+          "La phrase la plus citée de ce rapport commence par trois mots qu’on oublie en la citant : « In this model », dans ce modèle. Rasmussen ne forge pas les trois niveaux ici. Il renvoie à ses propres travaux de 1976 et de 1980, où il dit avoir développé le modèle à partir de protocoles verbaux et de cas de dysfonctionnement humain. Ce rapport s’en sert, il ne l’invente pas.",
+          "Le vocabulaire, lui non plus, n’est pas celui sous lequel le modèle circule aujourd’hui. Ni le sigle SRK ni l’expression niveaux de contrôle cognitif ne figurent dans ce rapport : Rasmussen y écrit trois niveaux de comportement, puis parle du domaine de l’habileté, du domaine de la règle et du troisième domaine comportemental. L’étiquette abrégée est venue plus tard, et à qui l’attribuer n’est pas établi.",
+          "Enfin, ce que l’auteur tient pour l’apport propre de ce rapport n’est pas le modèle à trois niveaux. Il le dit en conclusion : « it has been stressed several times that the important aspect of the proposed taxonomy is the structure, not the elements used within the various categories ». Ce qui compte est la structure de la classification proposée, non les éléments rangés dans ses catégories : les trois niveaux y sont un moyen, non le résultat qu’il met en avant."
+        ]
+      }
+    ],
+    "limits": [
+      "La version que tout le monde cite est ailleurs : « Skills, rules, and knowledge; signals, signs, and symbols, and other distinctions in human performance models », IEEE Transactions on Systems, Man, and Cybernetics, mai 1983. Comment Rasmussen y reformule le modèle, et quand le sigle SRK passe sous sa plume, c’est cet article qu’il faudra lire.",
+      "Le modèle se fabrique dans deux textes antérieurs, dont « Outlines of a Hybrid Model of the Process Operator », de 1976, où Rasmussen dit l’avoir développé : on l’y verra se faire plutôt que servir.",
+      "Ce que les trois niveaux doivent à James Reason et à Donald Norman n’est pas établi : le rapport les cite tous deux sur l’erreur, à la même période, mais jamais à propos des niveaux, qu’il rattache à ses seuls travaux. Qui suivra ces renvois y verra un Reason de 1979 absent de sa bibliographie.",
+      "Il n’existe pas de traduction française publiée de ce rapport, dont les phrases sont rendues ici au fil de la lecture ; l’anglais est en accès libre. En français, la reprise du modèle passe par Jean-Michel Hoc et René Amalberti, dont les textes diront ce que l’ergonomie francophone en a retenu."
+    ]
+  },
+  {
     "conceptId": "nombres-et-emotions",
     "lead": [
       "Pendant la pandémie de Covid-19, un même geste s’est répété chaque jour dans des millions de foyers : ouvrir un journal ou une application de santé pour regarder un chiffre. Le nombre de morts annoncé la veille serrait la gorge avant même d’être lu en entier. Le taux de personnes vaccinées, lui, rassurait. Et un jour, un chiffre rond, cent mille décès cumulés dans un pays donné, a occupé les titres alors qu’il n’ajoutait, statistiquement, rien de plus que le compte de la veille. Ces chiffres n’informaient pas seulement : ils faisaient peur, ils donnaient de l’espoir, ils pesaient.",
@@ -1079,6 +2039,127 @@ export const generatedDeepenings: Deepening[] = [
       "La citation placée en ouverture vient de la version que l’auteur a lui-même déposée en ligne avant publication, et non de la mise en pages finale de la revue : la pagination donnée, page 16, est celle de ce manuscrit. Entre un manuscrit et son épreuve, une formulation se retouche parfois ; l’article imprimé le dira, et lui seul.",
       "Le mot que Didier propose pour désigner cette prolifération de chiffres ne se retrouve nulle part avant lui dans les deux répertoires de publications scientifiques où il a été cherché. Deux autres répertoires restent à interroger : affirmer que le terme est de lui suppose d’y avoir regardé aussi.",
       "Un mot proche, « statactivisme », qui désigne un usage plus militant des statistiques, n’apparaît nulle part dans le corps de l’article : il ne figure que dans sa bibliographie, par renvoi à deux autres ouvrages du même auteur, qui sont l’endroit où ce courant se déclare. Ranger cet article dans ce courant irait au-delà de ce qu’il établit lui-même."
+    ]
+  },
+  {
+    "conceptId": "objet-de-la-cybernetique-economique",
+    "lead": [
+      "Décider de produire mille automobiles ne fait pas apparaître la tôle, le verre et les pneus qu’il faudra pour les monter. Il faut qu’une commande parte, qu’un fournisseur la reçoive, qu’un atelier s’y mette. Un tableau qui relie les industries entre elles montre très bien que ces quantités se correspondent, et il ne montre rien de ce qui les fait se correspondre : entre les chiffres qui s’ajustent et les gestes qui les ajustent, il y a tout un trafic de messages et de réponses dont l’équation ne dit pas un mot.",
+      "C’est cet écart qui occupe l’économiste Anton Brender en 1978, dans un article qu’il présente comme « un essai de définition ». Le mot cybernétique circule alors dans l’économie sous des acceptions très diverses, et il ouvre son texte en le constatant. Son essai va donc à rebours de ce qu’on attend d’une définition : au lieu d’élargir, il retranche. Il écarte deux manières répandues d’appeler cybernétique un travail d’économiste, et il ne garde qu’un objet, étroit et vérifiable au cas par cas : les dispositifs par lesquels une information reçue commande effectivement une action."
+    ],
+    "sections": [
+      {
+        "title": "L’art de rendre l’action efficace",
+        "paragraphs": [
+          "La première conception qu’il écarte est celle de Louis Couffignal, qui fait de la cybernétique une méthode de pensée : raisonner par analogie, construire des modèles, et guider par là l’action, la cybernétique étant l’art de rendre l’action efficace. Appliquée à l’économie, remarque Brender, cette définition donne un résultat très concret : la cybernétique économique devient l’ensemble des techniques qui rendent l’action économique efficace, c’est-à-dire le management et l’informatique.",
+          "Son objection n’est pas que ces techniques soient sans intérêt. C’est qu’en portant ce nom, elles détournent l’attention de ce qui devrait être le centre du sujet, les mécanismes qui permettent à des systèmes économiques de fonctionner. Le traitement de l’information, écrit-il, ne concerne la cybernétique que dans la mesure où il fait comprendre comment les informations que reçoit un agent finissent par commander son action. Il donne un cas typique de la confusion : l’édition russe d’Industrial dynamics de Forrester, parue sous un titre qui en faisait des principes d’une cybernétique de l’entreprise."
+        ]
+      },
+      {
+        "title": "Une information qui gouverne une action",
+        "paragraphs": [
+          "La seconde conception est plus solide, et c’est en la discutant qu’il pose son critère. Un mécanisme à rétroaction, où le résultat d’une action revient en informer celui qui l’a menée, relève de la cybernétique, écrit-il, chaque fois que par son biais une information relative au résultat d’une action commande une modification de cette action. Ce qui compte n’est donc pas le dessin : ce qu’il y a de cybernétique dans une boucle « n’est pas la forme bouclée du diagramme qui le représente, mais la nature du phénomène décrit », une information y « gouverne » une action.",
+          "La règle vaut dans les deux sens, et c’est ce qui la rend maniable. « Si cette interdépendance entre actions et informations n’est pas présente », écrit Brender, la rétroaction observée reste purement mécanique et n’a rien de cybernétique. Une note de son article ajoute un indice matériel pour trancher : la faiblesse relative des quantités d’énergie utilisées, qui sépare sans ambiguïté une liaison cybernétique d’une liaison mécanique.",
+          "Imaginons un entrepôt où un écran affiche l’état d’un stock. Tant que personne ne le regarde, le réapprovisionnement se fait par d’autres voies, et la boucle qu’on pourrait dessiner entre les sorties et les entrées ne décrit qu’une régularité. Le jour où l’affichage déclenche la commande, la même boucle change de nature : une information y commande une action. Rien n’a bougé sur le schéma."
+        ]
+      },
+      {
+        "title": "Le multiplicateur a la forme, pas le mécanisme",
+        "paragraphs": [
+          "Cette conception plus solide est celle d’Oskar Lange, pour qui la cybernétique est la science du contrôle et de la régulation des systèmes composés d’éléments liés entre eux d’une certaine façon. Lange montre que trois constructions célèbres de l’économie, le multiplicateur keynésien, les schémas de la reproduction de Marx et le tableau des échanges interindustriels de Leontief, s’écrivent comme des équations de régulation par rétroaction. L’identité de forme est réelle, et Brender refait les calculs plutôt que de la contester.",
+          "Il en tire l’inverse de ce que Lange en tirait : « l’apparition sur un schéma d’une liaison en boucle ne suffit nullement à assurer que l’on a affaire à un mécanisme cybernétique. » L’équilibre entre industries décrit bien un état obtenu, plus ou moins bien, par des mécanismes cybernétiques, mais ces mécanismes ne sont pas sur le schéma : décider mille automobiles ne commande par soi aucune tonne de tôle.",
+          "Le couple accélérateur-multiplicateur va plus loin encore. Le modèle engendre des oscillations, et Brender y voit le signe qu’aucun dispositif ne contrôle l’évolution des investissements : ces oscillations ont pour lui un caractère pathologique, comparable à celles, incontrôlables, du bras d’une personne dont le système nerveux a subi des lésions. Une courbe qui ondule n’est pas davantage une preuve de régulation qu’une flèche qui reboucle."
+        ]
+      },
+      {
+        "title": "Le vendeur asservi, l’acheteur qui manipule",
+        "paragraphs": [
+          "Reste à dire de quoi une économie est faite, si l’on ne garde que cela. Brender prend un exemple délibérément trivial : un vendeur qui, chaque fois qu’on lui propose la somme qu’il demande pour un bien, le vend. Son comportement est asservi, au sens des montages d’asservissement où une commande suit un signal déterminé : l’offre du prix demandé déclenche la vente, sans que rien d’autre ait à être tranché. Ce vendeur est à ses yeux la pièce essentielle du dispositif.",
+          "Le client, lui, n’en fait pas partie. En achetant, il manipule le dispositif du dehors, comme on actionne une commande. Brender l’écrit sans détour : le comportement de l’acheteur et la rationalité de ses motivations ne relèvent pas de la cybernétique économique, ils sont pour le système une source d’événements externes. Il relève lui-même ce que cela coûte à la théorie de l’équilibre, dont la symétrie entre comportements des consommateurs et comportements des producteurs lui paraît artificielle et se trouve ici brisée."
+        ]
+      },
+      {
+        "title": "Un mot compris, ou un coup de poing",
+        "paragraphs": [
+          "Une seconde frontière, plus inattendue, met dehors ce qu’on appellerait spontanément la régulation de l’économie : l’action publique. L’appareil de gouvernement d’une société pèse sur la genèse et la structure des dispositifs, il détient le monopole du langage réglementaire, le seul dont le pouvoir de contrainte rivalise avec celui du langage monétaire, et il règle certains automatismes. Mais il opère un cran au-dessus, et Brender exclut explicitement l’étude des politiques de régulation du champ qu’il définit.",
+          "Il oppose les deux registres par une scène brutale : pour faire taire quelqu’un, on peut le lui demander dans une langue qu’il comprend, ou lui donner un grand coup de poing dans l’estomac. La première méthode sollicite des circuits qui existent déjà, la seconde agit par pression directe. Une pression fiscale sur la demande ou un programme d’investissements publics relèvent de la seconde. Une négociation salariale ne relève pas comme telle de la cybernétique économique, mais elle peut activer des circuits, et une hausse de prix ne l’intéresse que si elle commande ensuite un accroissement de l’offre, comme signal d’un déséquilibre."
+        ]
+      },
+      {
+        "title": "Un regard volontairement myope",
+        "paragraphs": [
+          "Cette étroitesse est assumée, et Brender explique pourquoi il y tient. La cybernétique, telle qu’il la définit, ne s’intéresse qu’aux processus de communication et de contrôle qu’implique le fonctionnement d’un système : la façon dont la matière et l’énergie y sont transformées ne la concerne pas. C’est aussi ce qui la sépare d’une science générale des systèmes, dont elle n’est qu’une partie.",
+          "Le prix à payer est lourd, et il le dit : ce qui est communiqué, dans cette acception restrictive, n’est que la certitude qu’un événement a eu lieu, et cette communication ne l’intéresse que dans la mesure où elle commande une réaction. La signification de l’événement lui échappe, son poids affectif aussi. Le niveau des phénomènes cybernétiques est donc pour lui a-dramatique, et par là a-historique. Un observateur juché sur l’index de Picasso, écrit-il, n’aurait rien vu d’essentiellement différent selon que le peintre travaillait aux Demoiselles d’Avignon ou se grattait le nez.",
+          "C’est ce qui donne à ces pages leur portée d’avertissement, et l’avertissement vient de quelqu’un qui écrit du dedans de la discipline. Sans expliciter le niveau où l’on se place, prévient Brender, la cybernétique deviendrait une idéologie : une façon de tout redire avec ses mots sans plus rien décrire. Le regard qu’il défend est myope par construction, et il tient précisément parce qu’il ne prétend pas voir plus loin."
+        ]
+      }
+    ],
+    "limits": [
+      "L’article s’ouvre en imputant à Wiener une part de responsabilité dans la diversité des conceptions de la cybernétique, et il donne en français la définition qu’il lui prête. Cette traduction n’est pas sourcée précisément, et la pagination indiquée renvoie à une édition qui ne correspond à aucune édition française identifiée ; il en va de même des phrases prêtées à Ashby et à Greniewsky. Ce que ces trois auteurs ont écrit, dans leurs propres termes, est dans leurs propres livres, et c’est là qu’il faudra le lire.",
+      "Les sources disponibles ne disent rien de ce que cet essai est devenu : qui a repris la définition restrictive, qui l’a discutée, quelle place elle occupe dans la cybernétique économique de langue française. Les revues d’économie des années suivantes en portent la réponse.",
+      "Brender s’appuie deux fois sur ses propres travaux, cités en note : Socialisme et cybernétique, paru chez Calmann-Lévy en 1977, et une analyse cybernétique de l’intermédiation financière annoncée pour 1979 dans les Cahiers de l’ISMEA. C’est de là que viennent ses exemples monétaires et financiers, et c’est là que se verra si la définition de 1978 a été tenue, corrigée ou abandonnée : ces pages attendent leur lecteur."
+    ]
+  },
+  {
+    "conceptId": "ordre-a-partir-du-bruit",
+    "lead": [
+      "Pour obtenir de l’ordre, il faut en fournir. On range une pièce en la rangeant, on obtient des pièces régulières en alimentant la machine avec de la matière régulière, et tout ce qui vient troubler l’opération, la vibration, le grésillement dans un haut-parleur, la secousse imprévue, passe pour l’ennemi de l’affaire : ce qui abîme le résultat, jamais ce qui le produit. Secouez une boîte de petites pièces détachées, vous obtiendrez un peu plus de désordre qu’avant.",
+      "Le 5 mai 1959, devant une conférence entièrement consacrée aux systèmes auto-organisateurs, un ingénieur de l’université de l’Illinois commence par annoncer à ceux qui l’ont invité que de tels systèmes n’existent pas : « There are no such things as self-organizing systems! » Puis, l’objet de la rencontre une fois retiré, il décrit une expérience de table : une boîte de petits cubes que l’on secoue, et ce qu’on y trouve après. C’est de cette double opération, une négation d’abord, une démonstration ensuite, que sort le principe pour lequel on lit encore Heinz von Foerster."
+    ],
+    "sections": [
+      {
+        "title": "Un objet nié avant d’être décrit",
+        "paragraphs": [
+          "La négation n’est pas un mot d’esprit : elle s’appuie sur un raisonnement de thermodynamique. Enfermez un système dit auto-organisateur et son environnement dans une enveloppe que rien ne traverse : le désordre de l’ensemble ne peut qu’augmenter, comme dans n’importe quel système isolé. Resserrez l’enveloppe autour du seul système : ce n’est plus seulement un système qui désorganise, c’est un système qui se désorganise lui-même. Resserrez encore, autour de la seule région où l’ordre apparaît, et l’opération recommence, indéfiniment, jusqu’à ce que le prétendu système auto-organisateur ait disparu dans l’infiniment petit.",
+          "Von Foerster n’abandonne pourtant pas le mot. Il le garde pour ce qui a un environnement et se nourrit de lui, en précisant que cet environnement existe et qu’il a une structure. Ce qu’il nie n’est donc pas que des choses s’ordonnent : c’est le préfixe. Rien ne s’organise seul, tout s’organise aux dépens de ce qui l’entoure. La question utile devient alors celle du menu : de quoi, exactement, un tel système se nourrit-il ?"
+        ]
+      },
+      {
+        "title": "Une boîte de cubes aimantés",
+        "paragraphs": [
+          "L’expérience est entièrement matérielle. Une plaque aimantée perpendiculairement à sa surface est découpée en petits carrés, collés ensuite sur les faces de cubes légers qui, eux, ne sont pas magnétiques. Selon le pôle que chaque face présente vers l’extérieur, on obtient exactement dix familles de cubes, dix manières d’être fait. On verse une population de cubes dans une boîte pleine de billes de verre, pour qu’ils y flottent en frottant peu, et on secoue.",
+          "Les résultats ne se ressemblent pas. Une population de la seule première famille, tous pôles nord vers l’extérieur, ne donne rien : les cubes se repoussent, on secoue autant qu’on veut, l’ordre ne monte pas. Une population faite pour moitié de la première famille et pour moitié de la deuxième s’apparie presque entièrement, résultat que von Foerster juge lui-même peu impressionnant. Une population entièrement composée d’une autre famille, en revanche, donne après quelques secousses une structure d’une régularité saisissante, qu’il propose en riant pour une exposition d’art surréaliste.",
+          "À la question de savoir ce qui a mis les cubes dans cet ordre, il répond deux choses : la secousse, bien sûr, et quelques petits démons dans la boîte. Le premier terme est visible de tous, le second est une image, et c’est elle qui porte le principe."
+        ]
+      },
+      {
+        "title": "Ce qui trie, dans le bruit",
+        "paragraphs": [
+          "La phrase où le mécanisme est énoncé vient deux pages plus loin : « no order was fed to the system, just cheap undirected energy; however, thanks to the little demons in the box, in the long run only those components of the noise were selected which contributed to the increase of order in the system ». Rien d’ordonné n’a été donné à manger au système, seulement de l’énergie sans direction et bon marché ; mais, grâce aux petits démons, seuls ont été retenus, à la longue, les composants du bruit qui faisaient monter l’ordre.",
+          "Tout tient dans ces démons, et von Foerster dit où ils logent : ils sont créés en même temps que les éléments du système et se manifestent dans certaines de leurs « intrinsic structural properties of these elements », des propriétés de structure qui appartiennent aux éléments eux-mêmes. Dans la boîte, ce sont les aimants et la façon dont ils sont orientés sur les faces. La démonstration est déjà dans l’expérience : la même secousse, appliquée à la première famille de cubes, ne produit rien du tout. Même bruit, éléments faits autrement, aucun ordre.",
+          "Dire que le bruit organise trahit donc le texte, et c’est le contresens qu’il faut tenir à distance. Le bruit ne trie pas, il agite ; ce qui trie, c’est la manière dont les éléments sont faits, qui rend certaines rencontres stables et les autres sans lendemain. Un système qu’on secoue n’a aucune raison de s’ordonner : encore faut-il que quelque chose, en lui, retienne les bonnes secousses."
+        ]
+      },
+      {
+        "title": "Deux mécanismes de Schrödinger, et un troisième",
+        "paragraphs": [
+          "Le principe arrive par un autre livre. Von Foerster rappelle les deux mécanismes qu’il attribue à Erwin Schrödinger, « order from disorder » et « order from order », le second étant pour Schrödinger la véritable clé du vivant : un organisme se nourrit d’entropie négative, c’est-à-dire d’ordre prélevé autour de lui. Von Foerster dit y souscrire, et n’ajouter qu’une chose, dont il assure que l’œil de son prédécesseur l’avait manquée.",
+          "Il prend soin, au moment de nommer sa trouvaille, de la séparer du premier des deux mécanismes, avec lequel il affirme qu’elle n’a rien de commun : « Hence, in order to stress the difference between the two, I shall call the principle I am going to introduce to you presently the “order from noise” principle ». La différence n’est pas une nuance de vocabulaire. Il ne dit pas que l’ordre émerge statistiquement d’une multitude désordonnée ; il dit que l’agitation sans direction peut être de la nourriture, à condition que le mangeur soit construit d’une certaine façon.",
+          "C’est le sens de son image de restaurant, où l’ordre n’est plus le seul plat servi : la question se déplace de ce qu’un système reçoit vers ce qu’il est capable de retenir."
+        ]
+      },
+      {
+        "title": "L’aveu du truc, et ce qu’il change",
+        "paragraphs": [
+          "Von Foerster anticipe l’objection : on peut lui reprocher d’avoir présenté un cas presque trivial, et il en convient. Il ajoute pourtant qu’il tiendrait une position bien plus forte « if I would not have given away my neat little trick with the magnetized surfaces », s’il n’avait pas vendu la mèche de son petit tour avec les surfaces aimantées. Tant qu’on ignore l’histoire des aimants, des cubes qui s’arrangent seuls sous la secousse restent une merveille ; une fois le truc dit, il n’y a plus de merveille, il y a de la géométrie.",
+          "La négation du début prend là tout son sens, et l’on comprend qu’elle n’était pas une provocation abandonnée en route. Le préfixe « auto » ne désigne pas un pouvoir du système : il désigne notre ignorance du mécanisme. Von Foerster va jusqu’à espérer qu’un autre intervenant de la conférence, attendu sur des expériences de réorganisation cellulaire, gardera pour lui le sien : il pourrait alors récupérer sa thèse, et les systèmes auto-organisateurs redeviendraient miraculeux.",
+          "Il en sort une question pratique, qui vaut bien au-delà de la boîte à cubes : devant ce dont on dit qu’il s’organise tout seul, demander ce qui y joue le rôle des aimants. Faute de savoir le nommer, on n’a pas décrit un pouvoir, on a nommé ce qu’on ignore."
+        ]
+      },
+      {
+        "title": "La formule française et ce qu’elle assemble",
+        "paragraphs": [
+          "Von Foerster a parlé et publié en anglais. La formule qui circule en français, « ordre à partir de bruit », est d’Henri Atlan, qui en fait un intertitre de son article de 1972 sur le bruit comme principe d’auto-organisation, et qui la lui crédite sans ambiguïté : « H. Von Foerster (9) le premier, à notre connaissance, a exprimé la nécessité d’un “principe d’ordre à partir de bruit” ». Douze ans après la conférence, le principe entre ainsi dans la langue française, sous une plume qui n’est pas celle de son auteur.",
+          "Atlan rend ensuite la phrase du restaurant en français, « Les systèmes auto-organisateurs ne se nourrissent pas seulement d’ordre, ils trouvent aussi du bruit à leur menu… », et l’enchaîne, sous une seule et même référence, avec un développement sur l’intérêt d’avoir du bruit dans un système. Les deux morceaux ne viennent pas du même endroit : le premier est la phrase de la page 43, le second traduit une réponse donnée en séance six pages plus loin, et des points de suspension les cousent ensemble. Lire cet ensemble comme une seule déclaration continue, c’est lire un montage.",
+          "La réponse en séance vaut d’ailleurs pour elle-même, et elle explique une part de la postérité du principe : il est bon qu’il y ait un peu de bruit dans un système, car celui qui se fige dans un état particulier devient inadaptable, et cet état final peut très bien être le mauvais. Von Foerster l’illustre par sa pratique d’enseignant, qui glisse volontairement une erreur dans son cours parce que les étudiants retiennent mieux ce qu’ils ont dû corriger."
+        ]
+      }
+    ],
+    "limits": [
+      "Ce que Schrödinger a écrit de ses deux mécanismes apparaît ici tel que von Foerster le rapporte, retenu pour marquer une différence. Les deux mécanismes dans les termes de leur auteur sont dans What is Life?, un livre court : c’est là qu’il faudra les lire.",
+      "De l’article d’Henri Atlan, ce sont les pages qui portent la formule et son crédit qui servent ici. Ce qu’il fait ensuite du bruit organisateur occupe le reste de ce texte de 1972, librement accessible en ligne : ses pages attendent leur lecteur.",
+      "La communication a été reprise ailleurs, notamment, selon la notice du recueil au catalogue de la Bibliothèque nationale de France, dans Understanding Understanding, paru chez Springer en 2003. Ce que ce volume en imprime, et avec quelle pagination, c’est en l’ouvrant qu’on le verra : les pages indiquées ici valent pour l’édition Pergamon de 1960.",
+      "Ce texte se lit en anglais : les notices de la Bibliothèque nationale de France au nom de l’auteur sont en anglais ou en allemand. Quant à la formule devenue slogan d’innovation, ce qu’elle doit encore à la boîte à cubes de 1959, aucune source disponible ne le dit."
     ]
   },
   {
@@ -1187,6 +2268,57 @@ export const generatedDeepenings: Deepening[] = [
       "L’analyse que Christophe Dejours donne de la qualité totale en 2003 arrive ici par la façon dont Jany-Catrice la mobilise dans son propre texte. Son argumentation, ses exemples et ses nuances sont dans le sien : une reprise, si fidèle soit-elle, ne rend jamais le détail d’une démonstration.",
       "L’article ne dit pas dans quels secteurs précis, à quelle échelle ni selon quel calendrier ce basculement vers la mesure des performances se serait généralisé : il expose un mouvement d’ensemble, pas un inventaire de cas par cas. Pour voir comment il se manifeste dans tel hôpital, telle agence ou telle administration locale, il faudra un travail empirique que l’article ne fournit pas lui-même.",
       "Rien ne permet d’affirmer que l’expression n’ait jamais été employée avant 2012, par quelqu’un d’autre, dans un sens voisin. Aucune trace antérieure n’a refait surface jusqu’ici, ce qui n’est pas une preuve : la question reste ouverte pour qui voudra la creuser."
+    ]
+  },
+  {
+    "conceptId": "probabilite-erreur-humaine",
+    "lead": [
+      "Un calcul de sûreté avance par probabilités : un chiffre pour la défaillance d’une pompe, un autre pour celle d’un capteur, et l’on combine le tout. Puis vient le moment où il faut un chiffre pour la personne qui referme une vanne après un essai. Dire d’elle qu’elle est consciencieuse ne se combine avec rien. Dire qu’elle omettra ce geste une fois sur tant d’exécutions entre au contraire dans le calcul, à condition de savoir d’où sort ce nombre, ce qu’il compte exactement, et ce qu’on a le droit d’en faire.",
+      "En août 1983, un manuel commandé par la commission de sûreté nucléaire des États-Unis à un laboratoire de Sandia, à Albuquerque, prend le problème de front : il annonce fournir « the methodology to identify and quantify the potential for human error in NPP tasks », de quoi repérer et chiffrer le potentiel d’erreur humaine dans les tâches d’une centrale. L’indice qu’il place au centre de tout le reste est cette probabilité. Mais l’essentiel se joue dans les lignes qui suivent immédiatement sa définition, où les auteurs disent d’où ce nombre viendrait s’il le pouvait, et d’où il vient en réalité."
+    ],
+    "sections": [
+      {
+        "title": "Une action qui sort des limites",
+        "paragraphs": [
+          "Quelques pages plus tôt, les auteurs ont dit ce qu’ils appellent une erreur, et la définition qu’ils en donnent, assortie d’un renvoi à Rigby, tient en une ligne : « We define human error as any member of a set of human actions that exceeds some limit of acceptability (Rigby, 1970). » Une erreur est une action qui dépasse une limite d’acceptabilité, et cette limite, c’est le système qui la fixe. Ce sont les tolérances de l’installation qui décident de ce qui compte comme une erreur, pas la personne qui agit.",
+          "Deux conséquences en découlent, et la première tient à ce que le mot ne dit pas ici : « In an objective assessment of human error, there is no connotation of blame or fault. » Le terme n’accuse personne. Il désigne une action hors tolérance, que les auteurs regardent comme le produit d’une combinaison défavorable entre des personnes et une situation de travail. La seconde conséquence porte sur le chiffre. Un même geste peut être une erreur dans une installation et n’en être pas une dans une autre, si les limites n’y sont pas placées au même endroit. La probabilité ne se rapporte donc jamais à une personne seule : elle se rapporte à une tâche, dans un système qui a défini ses tolérances."
+        ]
+      },
+      {
+        "title": "Une chance par exécution, non par heure",
+        "paragraphs": [
+          "La définition attache la probabilité à un événement précis : à cette exécution-ci de cette tâche-là, une erreur se produit. Ce n’est pas une quantité par heure de service ni par année d’exploitation. Le dénominateur, implicite dans la phrase, est un nombre d’occasions : le nombre de fois où la tâche est exécutée, donc le nombre de fois où l’erreur en question pouvait se produire.",
+          "Les auteurs ont changé de vocabulaire pour cette raison, et ils le disent : « In our earlier reports, including Section 6.1 of WASH-1400, we used the term human error rate (HER) interchangeably with human error probability. » Ils abandonnent le mot « rate », taux, parce qu’il s’entend le plus souvent comme une fréquence par unité de temps, et qu’il installe donc exactement la confusion qu’ils veulent éviter. Deux nombres qui n’ont pas le même dénominateur ne se comparent pas, et s’additionnent encore moins.",
+          "Une trace de l’ancien mot subsiste pourtant, et elle se rencontre partout : le sigle de la méthode, THERP, développé en Technique for Human Error Rate Prediction, porte encore le terme abandonné. Les auteurs le gardent parce qu’il est établi de longue date, et ils datent eux-mêmes son premier emploi : « At the Sixth Annual Meeting of the Human Factors Society in November 1962, the acronym THERP was first used to designate the human reliability method developed at SNL (Swain, 1963a). » Vingt ans avant le manuel, donc, et sous un mot que le manuel n’emploie plus."
+        ]
+      },
+      {
+        "title": "Compter des occasions, ou juger",
+        "paragraphs": [
+          "D’où viendrait le chiffre, dans le meilleur des cas ? Les auteurs répondent sans détour : « Ideally, HEPs would be determined from actuarial data ». Des données actuarielles, au sens des tables que construisent les assureurs : on relève le nombre d’erreurs d’un type donné effectivement observées, on le divise par le nombre d’occasions où cette erreur pouvait survenir, et le rapport obtenu est la fréquence cherchée. Rien à supposer, rien à arbitrer : on compte.",
+          "La phrase suivante retire ce que la première laissait espérer : « Unfortunately, very little of this type of data exists for NPP tasks. » Les tâches d’une centrale ne se prêtent guère à ce relevé, et le manuel doit donc estimer autrement. Certaines estimations sont statistiques, d’autres relèvent du jugement, et un seul terme les recouvre toutes. Les auteurs forgent un nom pour cette situation : « Because most of our estimates of HEPs are based on some combination of data and judgment, we call them derived HEPs », des probabilités dérivées, ainsi appelées pour les distinguer de celles qu’on aurait calculées sur des fréquences réellement observées.",
+          "Leur quantificateur est « most », la plupart, et non « toutes » : ils ne rangent pas là l’ensemble de leurs valeurs. La conséquence pour qui lit un tableau n’en est pas amoindrie. Deux nombres y ont la même allure, le même nom et le même nombre de décimales, quand l’un a été compté et l’autre estimé. Ce n’est pas le nom de la grandeur qui les sépare, et la question de leur provenance se pose à chaque ligne."
+        ]
+      },
+      {
+        "title": "Ce que « nominal » a retiré du chiffre",
+        "paragraphs": [
+          "Les valeurs publiées par le manuel portent un qualificatif qu’il vaut mieux prendre au sérieux : ce sont des probabilités nominales. Les facteurs propres à une installation et les facteurs propres à une situation en ont été retirés. Ce qu’un tableau donne n’est donc pas la probabilité d’erreur d’une équipe donnée, dans une salle de commande donnée, à trois heures du matin et au dixième jour d’un arrêt : c’est une valeur de base, à laquelle l’analyse doit ensuite rendre ce qu’on lui a ôté.",
+          "Reprendre telle quelle une valeur nominale et la porter dans un calcul, c’est donc sauter une étape que les auteurs ont prévue. Le nombre a l’air complet et il ne l’est pas ; le mot qui le signale tient en trois syllabes, et rien, dans le chiffre lui-même, ne vient le rappeler."
+        ]
+      },
+      {
+        "title": "La fiabilité humaine, l’autre face du calcul",
+        "paragraphs": [
+          "Le manuel définit aussi la grandeur symétrique, et il l’emprunte à deux auteurs qu’il nomme, Evans (1976) et Meister (1966) : la fiabilité humaine y est la probabilité qu’une personne, d’une part, exécute correctement une activité requise par le système dans le temps imparti lorsque le temps est un facteur limitant, et d’autre part n’exécute aucune activité étrangère susceptible de dégrader le système. Le second membre n’est pas une redite du premier : on peut faire ce qui est demandé et faire, en plus, quelque chose qui nuit.",
+          "Une précaution de vocabulaire accompagne cette définition, et elle évite un contresens facile d’une discipline à l’autre. Dans ce manuel, fiabilité s’entend au sens d’exactitude, et non au sens où les psychologues emploient le mot, celui de la constance d’une mesure répétée. Les auteurs ajoutent que d’autres façons de mesurer la performance humaine pourraient servir ailleurs à définir la fiabilité, mais qu’ils s’en tiennent pour leur part aux probabilités. La restriction est déclarée plutôt que subie, et elle dit le prix auquel la performance humaine entre dans un calcul de sûreté : celui d’un nombre compris entre zéro et un."
+        ]
+      }
+    ],
+    "limits": [
+      "Les valeurs elles-mêmes, tâche par tâche, sont dans les chapitres qui suivent celui des définitions, et un addendum du 1er septembre 1985, signé de Swain seul, en corrige une partie, ainsi que des tableaux et des figures, sans toucher au chapitre où la probabilité est définie. Qui veut reprendre un de ces chiffres lira les deux ensemble.",
+      "L’expression est plus ancienne que ce manuel : les auteurs renvoient à leurs rapports antérieurs, dont la section 6.1 de WASH-1400, et à un texte de Swain de 1963. Sous quelle forme la notion y était déjà posée, ce sont ces pages qui le diront. Une version préliminaire du même rapport, datée de 1980, circule d’ailleurs sous le même numéro et se trouve parfois citée à sa place : les phrases reprises plus haut sont celles du rapport final d’août 1983.",
+      "Pour citer ce manuel, c’est l’anglais qui fait référence : aucune traduction française publiée n’en est connue, et le français donné plus haut sert à comprendre, non à référencer. Sur ce que cinquante ans d’usage ont fait de la méthode, il y a un article de 2012 signé Boring, « Fifty Years of THERP and Human Reliability Analysis »."
     ]
   },
   {
@@ -1342,6 +2474,123 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "redondance-du-commandement-potentiel",
+    "lead": [
+      "Imaginons une équipe dispersée, reliée par radio, qui doit agir tout de suite. Chacun capte une part de ce qui se passe, personne ne capte tout, et la nouvelle importante n’arrive pas au même poste selon les jours. La réponse qui vient d’abord à l’esprit consiste à désigner un chef à l’avance : tout remonte vers lui, la décision redescend. Elle tient tant que son poste reste joignable et tant que ce qu’il faut savoir lui parvient. Elle se bloque dès que l’information décisive arrive à quelqu’un d’autre, ou que le poste central se tait.",
+      "En mai 1959, devant une conférence de deux jours où se rencontraient des ingénieurs, des mathématiciens et des biologistes, le neurophysiologiste Warren S. McCulloch propose une autre réponse, prise dans le cerveau plutôt que dans les organigrammes : l’ordre part de l’endroit où l’information s’est rassemblée, et cet endroit change. Il donne à ce principe un nom dont le premier mot égare presque tous ceux qui le rencontrent, parce qu’il désigne d’ordinaire tout autre chose qu’un déplacement de l’autorité."
+    ],
+    "sections": [
+      {
+        "title": "Ce que « redondance » ne veut pas dire ici",
+        "paragraphs": [
+          "Dans l’usage courant, une redondance est une doublure de sécurité : une seconde pompe, un second circuit, un parachute de secours. On double pour parer à la panne. McCulloch emploie le mot dans un sens plus large, qu’il reprend de Heinz von Foerster, intervenu la veille : ce qui est ordonné peut se décrire en moins de termes qu’il n’y paraît, et cette économie fait la stabilité, donc la fiabilité ; c’est de la redondance, et d’elle seule, qu’on achète de la sécurité. Encore faut-il préciser laquelle, car il en distingue plusieurs espèces et insiste sur le fait qu’elles ne s’échangent pas : ce qu’on obtient avec l’une ne s’obtient pas avec l’autre.",
+          "Trois de ces espèces portent sur le message et le calcul : la redondance de code, celle de canal, et celle de calcul, la seule sur laquelle il déclare avoir travaillé. Cette dernière est exactement le doublage familier : la même information est portée à quantité de neurones médiocres qui calculent en parallèle, et l’ensemble sort la bonne réponse même quand des composants se conduisent mal. La quatrième espèce, il vient tout juste de la détacher des trois autres : « Until two or three weeks ago I took it for granted that the redundancy of potential command was simply a redundancy of calculation. Now I am sure it isn’t. » Ce qui existe en plusieurs exemplaires, cette fois, n’est pas l’organe : c’est le commandement."
+        ]
+      },
+      {
+        "title": "Le réseau du cerveau et la flotte de navires",
+        "paragraphs": [
+          "Les deux exemples arrivent dans la même phrase et sur le même plan : « knots of communication in cells or ships », des nœuds de communication, dans des cellules ou dans des navires. Chaque station y reçoit de l’information venue de presque tout l’organisme, ou de presque toute la flotte. La flotte n’est pas une image plaquée après coup sur un fait de neurophysiologie : ce sont deux cas d’un même dispositif, et McCulloch les donne d’un seul geste.",
+          "Le réseau qu’il désigne dans le cerveau porte un nom, la formation réticulaire, et ce qui s’y passe tient en une phrase : « any small number of cells can actually accumulate the necessary information, and, simply because they have that information, start buzzing » : un petit nombre de cellules, quelles qu’elles soient, rassemblent ce qu’il faut savoir et se mettent à bourdonner du seul fait qu’elles le savent. Ce qui se décide ainsi, dans ses propres exemples, est très ordinaire : tourner l’attention vers quelque chose sur la droite, aller déjeuner, s’endormir. Rien n’a désigné ces cellules à l’avance. Ce qui les met en position de lancer le mouvement, c’est leur état d’information à cet instant."
+        ]
+      },
+      {
+        "title": "Des postes qui ne savent pas la même chose",
+        "paragraphs": [
+          "Deux traits achèvent le mécanisme et se perdent facilement. D’abord, les stations ne sont pas codées de la même façon : « no two are coded alike ». Un même événement s’y inscrit dans des notations différentes, et le signal porte avec lui la signature de son origine et l’état de ce qui s’y passe. Ensuite, rien ne garantit que toutes reçoivent tout : certaines auront l’essentiel, d’autres des bribes, et ce partage n’est pas réglé d’avance.",
+          "C’est ce qui sépare ce dispositif d’un simple doublage et d’un vote. Des copies redondantes diraient la même chose et pourraient se remplacer l’une l’autre ; ici, chaque poste tient une vue partielle, écrite dans sa propre notation. L’autorité ne se répartit donc pas également entre des égaux : elle échoit à ceux chez qui, à cet instant, s’est formée une image assez complète pour agir. La formule « knowledge constitutes authority » se prend alors au pied de la lettre : ce n’est pas la place occupée dans une structure qui donne le pouvoir de lancer le mouvement, c’est ce que l’on sait."
+        ]
+      },
+      {
+        "title": "Quelques-unes qui s’accordent",
+        "paragraphs": [
+          "La prise de commande n’est ni solitaire ni unanime. La phrase qui précède immédiatement la formule le dit en une ligne : « A few of them, agreeing, run the works ». Quelques-unes, en s’accordant, font marcher l’ensemble. Il en faut donc plusieurs, et il n’en faut pas beaucoup ; l’accord entre elles fait partie du mécanisme, au même titre que l’information qu’elles détiennent.",
+          "De là vient la solidité de l’ensemble, et c’est en ce sens précis qu’il y a bien redondance : si une cellule vient à être détruite, d’autres détiennent une bonne part de la même information et peuvent faire le même travail. Aucun poste n’est le passage obligé, et pourtant le commandement, lui, ne disparaît pas."
+        ]
+      },
+      {
+        "title": "Une autorité qui se déplace, des grades qui restent",
+        "paragraphs": [
+          "La formule est plus facile à étendre qu’à tenir, et il vaut la peine de la lire de près. McCulloch dit que l’autorité est produite par le savoir ; il ne dit pas que personne, dans le réseau, n’a de commandement attitré. Une flotte a une hiérarchie, et rien dans ce passage ne l’abolit. Ce qu’il pose, c’est que l’autorité effective, celle qui déclenche le mouvement, suit l’information plutôt que le rang.",
+          "La nuance compte dès qu’on transporte l’idée ailleurs, dans une organisation humaine par exemple. Dire que le savoir fait l’autorité n’est pas dire que les titres ne font rien : c’est dire qu’un système ainsi bâti laisse le commandement se former là où l’information s’est rassemblée, y compris loin du poste prévu pour cela. Aller jusqu’à affirmer qu’aucune station ne commande de droit va plus loin que ce que ce passage établit."
+        ]
+      },
+      {
+        "title": "Une page et demie, refermée aussitôt",
+        "paragraphs": [
+          "Il ne faut pas se tromper sur la place que cette idée occupe dans l’exposé qui la porte. La communication de McCulloch s’intitule « The Reliability of Biological Systems » et court sur dix-huit pages ; le commandement potentiel en occupe une et demie. À peine l’a-t-il nommé qu’il le referme : « This needs study; but not discussion here. » Tout le reste ira à la redondance de calcul et à la logique probabiliste. Ce n’est donc pas un exposé sur le commandement potentiel : c’est celui où la notion est nommée, séparée des trois autres redondances, puis laissée de côté.",
+          "La discussion qui suit lui offre pourtant une reprise immédiate. Allen Newell dit que le principe lui rappelle le modèle du pandémonium de Selfridge, où l’on n’exécute pas le processus qui vient dans l’ordre mais celui qui crie le plus fort, et il le reformule à sa manière : celui qui détient l’information se lève et dit qu’il sait. McCulloch répond qu’il est entièrement d’accord et que le point est décisif. Dans tout le volume, l’expression n’apparaît qu’à ces quelques endroits."
+        ]
+      }
+    ],
+    "limits": [
+      "La date de naissance de l’expression reste ouverte. McCulloch date de « two or three weeks ago » non pas son invention, mais le moment où il a cessé de la confondre avec la redondance de calcul : le terme est donc déjà en usage chez lui. Pour savoir depuis quand, c’est sa communication de novembre 1958 au symposium de Teddington qu’il faudra lire, celle qu’il place en tête de sa propre bibliographie.",
+      "Une seconde version de la phrase circule, avec un autre mot de liaison, rapportée au chapitre « Where Is Fancy Bred? » du recueil Embodiments of Mind, page 226. Seule celle qu’il prononce en 1959, relue sur l’image de sa page, est citée ici ; ce que porte exactement cette page-là, c’est ce recueil qui le dira.",
+      "En français, la phrase n’a pas d’édition de référence : aucune traduction publiée de cette communication n’apparaît dans les sources disponibles, et elle se lit dans l’anglais du volume de 1960. Quant à sa réception francophone, elle est à chercher ailleurs que dans la piste la plus proche, l’article de Gaston Richard sur cybernétique et biologie paru en 1968, qui ne nomme jamais McCulloch."
+    ]
+  },
+  {
+    "conceptId": "regulateur-commande-par-l-ecart",
+    "lead": [
+      "Un chauffage d’appartement ne sait qu’une chose : la température de la pièce où il se trouve. Il ignore que la fenêtre vient de s’ouvrir et que le froid est entré. Il ne l’apprend qu’à une condition, une seule : que la température baisse pour de bon. Ce qui le renseigne est donc exactement ce qu’il a pour mission d’effacer. Et s’il faisait son travail à la perfection, si la température ne bougeait jamais d’un dixième de degré, il ne recevrait plus aucune nouvelle du dehors et ne saurait plus quand agir.",
+      "Ce n’est pas une bizarrerie de thermostat, c’est une propriété de tout dispositif qui se corrige d’après ses propres écarts. W. Ross Ashby en fait, au chapitre 12 de An Introduction to Cybernetics, un résultat en forme de plafond : ce genre de correcteur ne peut jamais être parfait, non parce qu’il serait mal construit, mais parce que son succès tarit l’information dont il vit. Il en tire la conséquence en une ligne : « Clearly, any success by R can at best be partial. » Reste à voir pourquoi, et surtout ce que ce plafond n’interdit pas."
+    ],
+    "sections": [
+      {
+        "title": "Corriger la cause, ou corriger l’effet",
+        "paragraphs": [
+          "Un correcteur peut être renseigné de deux façons, et tout dépend de laquelle. Dans le premier cas, il apprend la perturbation elle-même avant qu’elle ait produit son effet : l’organisme réagit à la menace et non au désastre, la souris gagne son trou avant la griffe. Cela suppose qu’il travaille plus vite que ce qu’il régule, et Ashby dit sans détour que ce cas est réel et important. Il ajoute aussitôt qu’il en existe beaucoup d’autres où cette anticipation est impossible.",
+          "Un bain thermostaté, écrit-il, n’est pas en mesure de dire qu’il voit venir quelqu’un avec un flacon froid qu’on va y plonger : il n’apprend rien tant que la température de l’eau n’a pas commencé à baisser. La régulation de l’oxygène dans le sang est du même ordre : elle tire son information de l’effet nuisible, le manque d’oxygène, et non de sa cause. C’est cette forme-là qu’Ashby appelle régulation par l’erreur, et il annonce à la fin de la section qu’il lui consacrera tout le reste du livre : « This form is of the greatest importance and widest applicability. The remainder of the book will be devoted to it. »",
+          "Il écrit tout cela avec des lettres, qui reviennent dans chacune de ses phrases : D est la perturbation, T le système qu’elle frappe, R le régulateur qu’il s’agit de construire, E la variable essentielle qui doit rester dans les limites acceptables. La régulation par l’erreur est le cas où R n’est affecté que par ce qui arrive effectivement en E."
+        ]
+      },
+      {
+        "title": "Ce que « parfait » veut dire ici",
+        "paragraphs": [
+          "Le mot n’a rien d’approximatif sous la plume d’Ashby : il renvoie à une situation qu’il a construite plus tôt dans le livre, sous la forme d’un jeu à deux coups. La perturbation joue d’abord, le régulateur joue ensuite en connaissant le coup adverse, et le résultat se lit dans une table à double entrée. Le régulateur est parfait s’il peut, quel que soit le coup joué contre lui, amener à coup sûr le résultat dans l’ensemble des états acceptables. Parfait ne veut donc dire ni rapide ni élégant : cela veut dire qu’il n’existe aucune perturbation qu’il ne puisse contenir.",
+          "C’est cette perfection-là que le chapitre 12 déclare hors d’atteinte, et il le fait en italiques : « A fundamental property of the error-controlled regulator is that it cannot be perfect […] » Le régulateur commandé par l’écart n’a pas le droit de jouer en connaissance de cause, puisque son coup à lui est déterminé par le résultat. Ashby en donne d’abord la version calculée : dans ce régime strict, le résultat prend autant de valeurs distinctes que la perturbation, autrement dit il n’y a aucune régulation du tout, quelle que soit la manière dont on construit le régulateur. Puis vient la version intuitive, et c’est elle qui fait comprendre."
+        ]
+      },
+      {
+        "title": "Le canal que le succès obstrue",
+        "paragraphs": [
+          "Pour que le régulateur serve à quelque chose, il faut que l’information sur la perturbation lui parvienne. Dans la régulation par l’erreur, cette information fait un détour : elle passe par le système régulé et ne se présente à lui que sous la forme d’un écart de la variable qu’il doit tenir. L’écart est donc deux choses à la fois, la faute à effacer et le message qui dit quoi faire.",
+          "Ashby mesure ce message. Ce qui circule dans un canal se compte, dans son vocabulaire comme dans celui de la théorie de la communication de son époque, au nombre d’états distincts que la chose peut prendre : c’est ce qu’il appelle la variété. Réguler avec succès, c’est faire tomber le nombre d’états que la variable essentielle prend effectivement, jusqu’à un seul dans le cas idéal. Mais ce nombre est aussi la capacité du canal par lequel le régulateur est informé : tenir la variable rigoureusement constante, c’est boucher ce canal.",
+          "D’où la phrase du chapitre et sa conclusion immédiate, que tout succès du régulateur ne peut au mieux être que partiel. Ce n’est pas un défaut de fabrication qu’un meilleur ingénieur corrigerait : c’est une borne, et elle tient à la seule circulation de l’information. Le dispositif se prive de ce qui le renseigne dans la mesure exacte où il réussit."
+        ]
+      },
+      {
+        "title": "La petite erreur qui approvisionne",
+        "paragraphs": [
+          "La suite du chapitre interdit de lire ce plafond comme une condamnation. Une régulation complète, écrit Ashby, n’est heureusement pas toujours nécessaire. Les variables essentielles ne se partagent pas entre un état normal et un état létal : elles s’échelonnent le plus souvent le long d’une échelle continue d’indésirabilité. Un animal terrestre peut traverser bien des degrés de déshydratation avant de mourir de soif, et un renversement de tendance obtenu à mi-chemin mérite le nom de régulation s’il lui sauve la vie, même s’il ne lui a pas épargné l’inconfort.",
+          "C’est cette continuité qui rouvre la porte que la démonstration venait de fermer : elle rend possible une régulation qui n’est pas parfaite et qui est pourtant « of the greatest practical importance ». La formule vient dans la foulée : « Small errors are allowed to occur; then, by giving their information to R, they make possible a regulation against great errors. » La petite erreur tolérée n’est pas un déchet du dispositif, elle est son approvisionnement en information.",
+          "Cela implique qu’un correcteur qui prétendrait ne plus laisser passer le moindre écart se priverait de quoi prévenir les grands. La marge d’erreur admise n’est pas la mesure de son imperfection : elle est la condition de son fonctionnement."
+        ]
+      },
+      {
+        "title": "Le retard n’est pas le motif",
+        "paragraphs": [
+          "Une explication plus simple vient tout de suite à l’esprit, et elle circule : la correction par l’écart serait imparfaite parce qu’elle arrive après coup, l’écart devant se produire avant que le correcteur sache quoi faire. La lecture est intuitive et ce n’est pas celle d’Ashby. Chez lui, le retard n’est pas le défaut du dispositif : c’est la circonstance qui oblige à y recourir, la raison pour laquelle on n’a pas pu prendre la perturbation à sa source.",
+          "Séparer les deux n’est pas une subtilité, car elles ne mènent pas au même endroit. Si l’imperfection tenait au retard, un correcteur plus prompt s’approcherait indéfiniment de la perfection, et il suffirait d’accélérer. Dans le raisonnement d’Ashby, la vitesse ne déplace pas la borne : tant que la seule information du régulateur est l’écart, plus il tient la variable serrée, plus il resserre le canal. Ce qui peut varier, ce n’est pas le délai, c’est la quantité d’écart qu’on accepte de laisser exister."
+        ]
+      },
+      {
+        "title": "Les mots empruntés, le résultat démontré",
+        "paragraphs": [
+          "Ashby n’a pas forgé le vocabulaire et ne le revendique pas. Au moment de nommer le montage, il met lui-même entre guillemets « error-controlled servo-mechanism » et « closed loop regulator » : les deux expressions viennent du langage des asservissements de son temps, et le dispositif à rétroaction qu’elles désignent était déjà bien connu de ses lecteurs. Il le dit à la fin du chapitre, en prévenant celui qui lui reprocherait d’avoir mis tant de soin à énoncer du déjà su : « we have stated with care what is already well known ».",
+          "Ce qui est déjà bien connu, c’est le montage, pas le plafond. Et ce soin avait sa raison : Ashby s’apprêtait à porter le régulateur commandé par l’écart bien au-delà de son domaine habituel, du servomécanisme et du thermostat déterministes vers la machine non déterminée. Le résultat du chapitre 12 n’est donc pas une réserve d’ingénieur sur une technique, c’est la borne qu’il pose avant de bâtir sur elle.",
+          "Deux ans plus tard, dans un article de 1958 sur la variété requise, il redit la même chose en son nom propre : « the more successful the regulator, the less will be the range of the error, and therefore the less will be the capacity of the channel from D to R […] The error-controlled regulator is thus fundamentally incapable of being 100 percent efficient. » Et il ne crédite personne d’autre pour ce résultat : sa bibliographie ne renvoie, sur ce point, qu’à son propre livre de 1956."
+        ]
+      }
+    ],
+    "limits": [
+      "Les termes français employés ici sont les nôtres et non les siens : Ashby écrit error-controlled regulator et regulation by error, et « le régulateur commandé par l’écart » en est un rendu. Pour lire ce chapitre dans le français où il a circulé de ce côté-ci de la Manche, c’est la traduction Dunod de 1958 qu’il faudra ouvrir.",
+      "Ce que la cybernétique ultérieure a fait de ce résultat, qui l’a repris tel quel et qui l’a reformulé autrement, n’est pas établi par les sources disponibles ici : la réponse est dans les travaux qui citent le chapitre 12.",
+      "Le mot à mot cité plus haut vient de l’exemplaire londonien de Chapman & Hall, seconde impression de 1957. Le tirage new-yorkais de John Wiley porte le même chapitre aux mêmes pages : ses feuillets imprimés diraient si la composition y est identique ligne pour ligne.",
+      "Ashby annonce enfin qu’il va porter ce régulateur jusqu’à la machine non déterminée, et le chapitre suivant s’ouvre sur la régulation des très grands systèmes. Ce que devient le plafond quand le système régulé cesse d’être déterministe, c’est la suite du livre qu’il faudra lire pour le savoir."
+    ]
+  },
+  {
     "conceptId": "regulation-controle-autonome",
     "lead": [
       "Dans un service, une consigne affichée explique comment procéder. Sur le terrain, l’équipe s’en écarte pourtant de façon régulière, et toujours de la même manière : elle a mis au point sa propre façon de faire, que personne n’a écrite nulle part et que personne, en haut, n’a validée. Faut-il y voir un simple relâchement que la hiérarchie tolère faute de mieux, un contournement sans queue ni tête, ou quelque chose d’une autre nature : un ensemble de règles à part entière, aussi cohérent que celui auquel il s’oppose ?",
@@ -1449,6 +2698,186 @@ export const generatedDeepenings: Deepening[] = [
       "Qui a le premier employé l’expression « double régulation » pour nommer ce schéma, et à quelle date, reste à retrouver : le mot n’apparaît pas dans l’article de 2006, et c’est dans la littérature qui a suivi qu’il a pris ce nom.",
       "Les travaux sur lesquels Leplat lui-même s’appuie, ceux de Jean-Marie Faverge dans les années 1960 et 1970, ceux du spécialiste d’automatique Paul Naslin en 1958, ainsi que les états ultérieurs du modèle que Leplat publie en 1997, 2000 et 2008, arrivent ici par la façon dont l’article de 2006 les rapporte. Le modèle a une histoire de cinquante ans, et elle est écrite dans ces textes.",
       "Une édition paginée de cet article existe, puisqu’un travail de 2024 en cite une page précise. La citation retenue plus haut s’appuie sur un repère de paragraphe ; qui veut la référence exacte la relèvera sur cette édition."
+    ]
+  },
+  {
+    "conceptId": "regulation-proportionnelle-derivee-integrale",
+    "lead": [
+      "Une pièce est à trois degrés de moins que ce qu’on lui demande. Le chiffre est simple, et il ne dit presque rien. Ces trois degrés se creusent-ils parce qu’une fenêtre vient de s’ouvrir, ou se comblent-ils parce que le chauffage travaille depuis dix minutes ? Durent-ils depuis vingt secondes ou depuis deux heures ? Un appareil qui ne connaît que l’écart de l’instant répondra de la même façon dans tous ces cas, et il se trompera dans la plupart d’entre eux.",
+      "Les ingénieurs qui construisaient des machines capables de corriger leurs propres erreurs en avaient tiré, bien avant 1959, une distinction devenue banale chez eux : d’un même écart on peut lire trois choses, sa taille, la vitesse à laquelle il change, et ce qu’il a accumulé depuis qu’il dure. Stanford Goldman enseignait le génie électrique à Syracuse. Devant une conférence interdisciplinaire réunie en mai 1959, il a proposé de porter ce découpage dans le corps vivant, et de demander aux biologistes lequel de ces trois renseignements un organisme utilise, quand, et par quelle voie."
+    ],
+    "sections": [
+      {
+        "title": "Verser la glace, ou goûter le punch",
+        "paragraphs": [
+          "Deux façons de rafraîchir un bol de punch. La première : estimer la quantité de glace qu’il faudra, la mettre, et s’en aller. La seconde : mettre de la glace, goûter, trouver le punch encore tiède, en remettre, goûter encore. Goldman se sert de ces deux hôtesses, dans la version longue et élémentaire qu’il a écrite la même année pour des lecteurs sans pratique de ces notions, afin d’opposer une commande qui agit d’après un calcul fait à l’avance et une commande qui agit d’après ce qu’elle constate.",
+          "Tout ce qui suit ne concerne que la seconde. Dès qu’une commande se règle sur ce qu’elle constate, elle travaille sur une différence entre l’état voulu et l’état obtenu, et cette différence devient sa matière première. La question n’est plus de savoir s’il faut regarder le résultat, mais ce qu’on y lit au juste."
+        ]
+      },
+      {
+        "title": "Le thermostat qui ne sait dire qu’oui ou non",
+        "paragraphs": [
+          "Goldman range les commandes sur une échelle de cinq degrés, du plus grossier au plus fin. Au premier degré, la correction est dirigée mais constante : c’est tout ou rien, une action toujours de même force tant que l’écart existe, coupée dès qu’il disparaît. Son exemple est le thermostat qui commande un chauffage en tout ou rien, et il le donne pour le plus grossier des contrôles. L’ennui se voit dans n’importe quel logement : le chauffage travaille à pleine force jusqu’au dernier dixième de degré, la chaleur déjà lancée continue de monter, et la pièce dépasse la température demandée avant de redescendre.",
+          "Au deuxième degré, l’action n’est plus constante : elle est proportionnelle à l’écart. Le même thermostat, mais le courant de chauffe suit l’écart de température, fort quand il manque cinq degrés, faible quand il en manque un demi. Goldman note que cette commande est ordinairement plus rapide et plus exacte que la précédente, et l’on voit pourquoi : elle frappe fort quand c’est loin et se retient quand c’est près, de sorte qu’elle arrive sans emporter la cible. C’est le premier des trois termes, l’action proportionnelle à l’écart."
+        ]
+      },
+      {
+        "title": "La vitesse de l’écart, et ce qu’il a accumulé",
+        "paragraphs": [
+          "Rester proportionnel ne suffit pourtant pas toujours, parce que la taille d’un écart ne dit rien de son sens de marche. Trois degrés qui se creusent et trois degrés qui se comblent donnent le même chiffre et appellent deux conduites opposées. Le troisième degré de l’échelle ajoute donc une action proportionnelle à la vitesse à laquelle l’écart change, et Goldman dit à quoi elle sert : empêcher le dépassement, c’est-à-dire l’erreur en sens inverse. L’exemple qu’il prend est la conduite de tir, où l’on vise l’endroit où la cible sera d’après la vitesse qu’elle a maintenant. Corriger sur la vitesse, c’est corriger d’avance.",
+          "Le quatrième degré ajoute le renseignement le plus discret des trois : non plus l’écart de l’instant ni sa tendance, mais ce qu’il a accumulé depuis qu’il dure, son intégrale dans le temps. Son effet, dans les termes de Goldman, est de renforcer l’action quand le système ne parvient pas à réduire suffisamment l’écart ; elle augmente l’exactitude et empêche une dérive de s’installer. Un petit écart, trop faible pour appeler une réponse vive, mais qui tient toute la journée, finit ainsi par produire une réponse forte, non parce qu’il a grandi, mais parce qu’il a duré.",
+          "Un cinquième degré vient encore au-dessus, et il sort du trio : la commande fondée sur l’anticipation d’événements à venir, celle du conducteur qui voit le virage approcher et tourne avant d’avoir été déporté. Là, l’écart n’existe pas encore : rien ne serait revenu à temps pour le signaler."
+        ]
+      },
+      {
+        "title": "Six lignes au bord du glucose sanguin",
+        "paragraphs": [
+          "Devant la conférence de 1959, Goldman applique ce découpage à un schéma de la régulation du glucose sanguin, et compte ce qui sort du compartiment où le sucre circule : « At the right of the blood glucose compartment are six emerging information lines », six lignes d’information en émergent. Trois grandeurs, l’écart, sa vitesse, son accumulation, et chacune en deux exemplaires, l’un pour le trop, l’autre pour le trop peu.",
+          "Pourquoi doubler, alors qu’un signe suffirait à marquer les deux directions ? Parce que, dans un corps, ces deux directions ne s’adressent pas aux mêmes destinataires : « The ΔC(−) line is distinguished from the ΔC(+) line because its information does not necessarily go to the same set of organs ». Le texte suit ensuite ces lignes vers la médullosurrénale, le pancréas, le tissu adipeux, la corticosurrénale, et soutient que l’organisme fait de ces six renseignements des usages différents plutôt qu’un seul."
+        ]
+      },
+      {
+        "title": "Les antagonistes et le prix de la puissance",
+        "paragraphs": [
+          "Ce dédoublement tient à une différence que Goldman juge décisive entre les machines et les vivants. Dans un montage électrique à rétroaction, un écart négatif ressemble en tout à un écart positif au signe près, et le même mécanisme corrige les deux : il suffit que le courant change de sens. Dans un organisme, le mécanisme qui corrige un excès n’est le plus souvent pas celui qui corrige un manque, et l’un est alors l’antagoniste de l’autre. Trois lectures de l’écart, deux machineries pour agir : six lignes, et non trois.",
+          "Cette architecture a un prix. Une commande tenue par l’équilibre de deux antagonistes puissants est, quand tout va bien, la plus rapide et la plus exacte qui soit ; mais plus la commande est forte, plus la rupture de cet équilibre devient dangereuse. Le mot que Goldman emploie alors, instabilité, a chez lui un sens voisin de cercle vicieux ou d’emballement, et la cause qu’il en donne est une affaire de calendrier : l’agent et son antagoniste entrent en action trop tard, si bien qu’au lieu de se compenser ils se renforcent.",
+          "Dans un corps, ajoute-t-il, cela ne se voit généralement pas comme une oscillation. Cela se voit comme un déplacement durable de l’équilibre : la régulation ne bat pas la mesure, elle se tient ailleurs qu’où elle le devrait."
+        ]
+      },
+      {
+        "title": "Une manière de regarder, et ce qu’elle demande",
+        "paragraphs": [
+          "L’exposé de 1959 s’adresse à des lecteurs supposés connaître déjà la théorie des asservissements et celle de l’information ; il le dit dès sa deuxième phrase et n’explique donc ni l’une ni l’autre. C’est pour cela que Goldman a doublé son propos, la même année, d’un chapitre destiné aux biologistes qui n’en avaient aucune pratique : le punch, le thermostat et le virage viennent de là.",
+          "Sur le fond, il revendique bien moins qu’une lecture pressée ne le laisserait croire. Il écrit que ses énoncés paraissent raisonnables, mais que la littérature offre peu de mesures sur lesquelles les fonder : « Although the statements made seem reasonable, we actually have relatively little quantitative information in the literature upon which to base them ». Et lorsque le président de séance le presse, dans la discussion qui suit, il répond : « I merely suggested that these ideas might be of value when you are studying homeostatic controls ».",
+          "La dernière partie de sa communication ne conclut donc rien sur le glucose : elle formule des questions à poser aux physiologistes. Ce qu’il propose est une manière de regarder assortie d’un programme d’expériences, pas un résultat de physiologie."
+        ]
+      }
+    ],
+    "limits": [
+      "Ce que le corps fait réellement de ces six informations n’est pas établi par ce chapitre, et son auteur est le premier à le dire : les rattachements qu’il propose entre un signe d’écart et un organe sont des hypothèses, la physiologie qu’il mobilise est celle de 1959, et les expériences qui trancheraient sont celles qu’il appelle. Le rôle qu’il prête à telle hormone, ou l’idée qu’un oedème pourrait être le cercle vicieux d’une régulation déréglée, sont donnés par lui pour des possibilités.",
+      "Ces analyses viennent en partie d’un rapport antérieur, le Report No. EE494-581T1 du Syracuse University Research Institute, daté de janvier 1958 et cité en note de la page 108, dont les pages attendent leur lecteur. Quant aux notions que Goldman emprunte, il nomme lui-même leurs sources : Cannon pour le mot homéostasie, Claude Bernard plus loin en amont, Black pour la rétroaction stabilisatrice née des amplificateurs téléphoniques, Getting pour les asservissements, Wiener pour le nom du champ.",
+      "Ces deux chapitres n’ont pas d’édition française repérée. Pour peser exactement ce que la phrase d’ouverture avance, et notamment son « may », qui dit une possibilité et non un fait acquis, c’est l’anglais de 1960 qu’il faudra lire."
+    ]
+  },
+  {
+    "conceptId": "resilience-fondee-sur-les-ressources",
+    "lead": [
+      "Dans un service hospitalier, l’immense majorité des interventions se passent bien. On sait raconter les autres : une consigne oubliée, un matériel défaillant, une dose mal calculée. On raconte beaucoup moins la journée ordinaire, comme si le fait que tout tienne allait de soi et ne demandait aucun travail. C’est pourtant là que se prend une décision intéressante : avant une intervention, plusieurs façons de procéder sont possibles et toutes autorisées, et quelqu’un choisit. Sur quoi ?",
+      "Deux ergonomes, Lucie Cuvelier et Pierre Falzon, ont regardé ce choix de près chez des médecins anesthésistes. Ils constatent qu’il repose sur deux sortes de raisons, et non sur une seule. Il y a le risque encouru par le patient, apprécié à partir des règles et des protocoles du métier. Et il y a autre chose, qui ne figure sur aucun document : ce dont l’équipe disposera pour tenir la situation une fois qu’elle sera engagée. Le matériel, mais surtout ce que les personnes présentes savent faire, l’attention qu’elles auront à donner, l’habitude qu’elles ont ou non de travailler ensemble. Ils appellent cela des ressources."
+    ],
+    "sections": [
+      {
+        "title": "Ce qui tient, plutôt que ce qui lâche",
+        "paragraphs": [
+          "Poser la question de ce côté vient d’un courant qui s’est constitué contre une habitude : expliquer un système par ce qui le fait tomber. Chercher la faille, la barrière manquante, le geste fautif, puis ajouter une procédure pour que cela ne se reproduise pas. Cuvelier et Falzon ouvrent leur texte sur le reproche adressé à ces approches traditionnelles : elles cherchent à réduire et à contraindre la variabilité des situations sans tenir compte de l’écart obligatoire entre le travail prescrit et le travail réel, et elles ignorent que la sécurité repose aussi sur les stratégies, les initiatives, les bricolages et l’ingéniosité que les compétences individuelles et collectives apportent en temps réel. Le mot bricolage n’est pas ici un reproche : il désigne la débrouillardise de gens qui savent ce qu’ils font.",
+          "Ils s’appuient aussi sur des travaux antérieurs pour soutenir que, dans les systèmes devenus très sûrs, les mesures classiques ne font plus guère progresser la sécurité et peuvent même se retourner contre elle. D’où le déplacement du regard : plutôt que d’expliquer les rares défaillances, examiner ce qui fait qu’un système continue de fonctionner, y compris quand la situation ne ressemble pas à ce qui était prévu.",
+          "Le mot qui nomme cette capacité, résilience, n’est pas d’eux et ils ne le revendiquent pas. Ils notent que le concept n’est pas encore stabilisé, renvoient pour ce constat à un article de Thomas Sheridan paru en 2008, et reprennent la dernière définition proposée alors par Erik Hollnagel : la capacité propre d’un système à ajuster son fonctionnement avant, pendant ou après des changements et des perturbations, de façon à maintenir les opérations requises aussi bien dans des conditions attendues qu’inattendues. Le facteur qu’ils étudient, l’anticipation, leur vient de la même source. Ce qui est d’eux commence après : sur quoi cette anticipation s’ajuste."
+        ]
+      },
+      {
+        "title": "Deux critères pour un même choix",
+        "paragraphs": [
+          "Le résultat central de leur enquête tient en une phrase : le choix d’une technique repose sur deux types de critères, la gestion des risques pour le patient et la gestion des ressources disponibles pour tenir la situation. Le premier est celui qu’on attend, et qu’on sait justifier devant n’importe qui. Le second se dit moins, parce qu’aucun protocole ne le formule et qu’il ne peut pas être arrêté ailleurs que là où l’on travaille.",
+          "Les deux ne s’excluent pas. Quand les praticiens justifient leur choix par le risque clinique, l’usage des règles de sécurité et des protocoles de traitement est très présent dans ce qu’ils disent. La seconde série de raisons répond à une autre question, qui ne remplace pas la première : non pas quelle conduite est la meilleure en général, mais laquelle sera menée à bien ici, aujourd’hui, avec ceux qui seront là.",
+          "La même thèse se lit en français dans le travail de doctorat que Lucie Cuvelier a soutenu la même année, sous la direction de Pierre Falzon. La résilience d’un système, y écrit-elle, « réside dans la capacité des opérateurs de ce système à articuler la gestion des risques avec la gestion de leurs propres ressources ». Articuler, et non substituer : le verbe porte tout le raisonnement."
+        ]
+      },
+      {
+        "title": "Les ressources qui pèsent le plus",
+        "paragraphs": [
+          "Toutes les ressources ne sont pas de même nature, et les auteurs les partagent en deux. Les unes sont extérieures aux opérateurs : le matériel, les moyens techniques, l’organisation. Les autres leur appartiennent en propre : les compétences, les capacités, l’attention disponible, les ressources cognitives, et les règles de métier qu’un service s’est données localement. Les premières sont dites extrinsèques, les secondes intrinsèques.",
+          "Leur observation, et c’est la plus dérangeante pour qui dirige un service, est que ce sont surtout les ressources intrinsèques qui pèsent sur les décisions des médecins. Or celles-là ne s’achètent pas et ne s’installent pas : elles se sont développées dans la pratique, elles diffèrent d’une équipe à l’autre, et elles changent quand une personne manque ou qu’une autre arrive.",
+          "La conséquence est immédiate. Deux services équipés à l’identique, appliquant les mêmes protocoles, n’ont pas le même ensemble de situations tenables, et ne prendront donc pas toujours les mêmes décisions sans que l’un ait tort et l’autre raison. Ce n’est pas un défaut d’harmonisation : c’est ce qui reste une fois qu’on a harmonisé tout ce qui pouvait l’être."
+        ]
+      },
+      {
+        "title": "Une enveloppe de situations possibles",
+        "paragraphs": [
+          "De là vient la thèse propre du chapitre, qui porte sur ce que fait un praticien pendant la phase de planification, avant que rien ne commence. Son objectif principal, écrivent les auteurs, est de concevoir une enveloppe de situations possibles ajustée aux ressources, notamment intrinsèques, des opérateurs qui interviennent et de ceux qui pourraient intervenir. Le mot enveloppe mérite qu’on s’y arrête : il ne s’agit pas de prévoir un déroulement, mais de dessiner le contour des situations dans lesquelles on accepte de se retrouver.",
+          "Les stratégies retenues ne visent donc pas seulement à être conformes. Elles doivent d’abord produire des situations que l’équipe pourra garder sous contrôle, et elles reflètent pour cela les compétences, les savoir-faire et les préférences, individuelles et collectives, de ceux qui les mettront en œuvre. Une même intervention peut ainsi appeler deux conduites différentes selon la composition de l’équipe, sans que la sécurité y perde quoi que ce soit.",
+          "Lucie Cuvelier le formule d’une phrase dans sa thèse : « L’objectif des anesthésistes est en fait plutôt de concevoir des situations ajustées aux ressources des différents opérateurs qui interviennent et interviendront ». Le futur compte autant que le présent : on anticipe aussi sur les ressources de ceux qui n’ont pas encore pris la main, et qui la prendront peut-être."
+        ]
+      },
+      {
+        "title": "En plus des protocoles, pas à leur place",
+        "paragraphs": [
+          "C’est ici que la lecture la plus tentante est aussi la plus fausse. On croit tenir un plaidoyer contre les procédures ; le texte dit l’inverse. Sa phrase de conclusion énonce que le développement de la résilience comprend l’évaluation et la gestion des ressources en plus de l’évaluation des risques encourus par le patient, celle qui s’appuie sur les protocoles et les règles établis par la médecine fondée sur les preuves. L’anglais dit « in addition to », et la formule ne souffre aucune ambiguïté.",
+          "Ailleurs dans le même texte, les auteurs constatent que les règles existent bel et bien et qu’elles pèsent dans les justifications, tout en refusant l’idée qu’il y ait, pour une situation donnée, une seule bonne solution. Les deux lectures extrêmes tombent ensemble : celle qui fait décider les règles à la place des personnes, et celle qui n’en ferait qu’un décor.",
+          "Ce que le raisonnement ajoute est un objet de travail supplémentaire. Une direction qui veut rendre son service plus sûr peut agir sur les protocoles ; elle peut aussi agir sur ce dont l’équipe disposera pour tenir les situations qu’elle rencontrera. Ce n’est ni la même action, ni le même calendrier, ni les mêmes personnes qui la conduisent."
+        ]
+      },
+      {
+        "title": "Des règles faites pour rendre capable",
+        "paragraphs": [
+          "Le chapitre se termine sur deux conditions qui engagent l’organisation. La première porte sur les règles elles-mêmes : elles doivent être conçues pour rendre les opérateurs capables, et non pour les contrôler. Cela suppose que les règles de sécurité ne soient pas séparées des règles d’action, et qu’elles ne prétendent pas se substituer à des décisions qui restent, disent les auteurs, nécessairement localisées et singulières.",
+          "La seconde porte sur ce que l’organisation fait de l’activité collective : elle doit l’intégrer et la valoriser, et ménager des situations de travail favorables au développement continu des compétences. La cohérence est stricte. Si ce qui décide vraiment est ce que les personnes ont développé en travaillant, alors une organisation qui empêche ce développement réduit, sans le voir, l’ensemble des situations que ses équipes pourront tenir.",
+          "Le dernier mot de la conclusion est d’ailleurs local : ces ressources se développent, s’évaluent et se gèrent dans chaque service, à son niveau, et non depuis un plan général. C’est en ce point, et en ce point seul, que ce texte touche à une autre veine des travaux de Pierre Falzon, celle des environnements capacitants : il y renvoie pour la première fois avec un article de 2008, « Enabling safety: issues in design and continuous design »."
+        ]
+      }
+    ],
+    "limits": [
+      "La définition de la résilience d’où tout part n’est pas de Cuvelier et Falzon : ils la prennent chez Erik Hollnagel, dans le prologue du volume Resilience Engineering in Practice paru en 2010, page xxxvi, et c’est de la page suivante que vient le facteur d’anticipation qu’ils étudient. Ce prologue est l’endroit où la notion se déploie pour elle-même, et il reste à lire. Le constat que le concept n’est pas stabilisé s’appuie de même sur l’article de Thomas Sheridan publié en 2008 dans Human Factors : ses raisons sont là.",
+      "L’idée que, dans les systèmes déjà très sûrs, les mesures classiques de sécurité ne progressent plus et peuvent devenir contre-productives y est appelée en une ligne, au crédit de R. Amalberti, qui l’a développée dans Safety Science en 2001. Ce qu’il démontre ne se déduit pas de la ligne qui le cite : c’est l’article qui l’établit.",
+      "Ce qui est observé ici l’est chez des anesthésistes, en pédiatrie ; ce que la même lecture donnerait dans un autre métier, les sources disponibles ne l’établissent pas. Le chapitre est écrit en anglais et il n’en existe pas de traduction française publiée : les formulations françaises suivent ici le vocabulaire de Lucie Cuvelier elle-même, dont la thèse expose l’enquête complète, ses méthodes et ses cas, sur près de trois cents pages en accès libre."
+    ]
+  },
+  {
+    "conceptId": "retroaction-et-automatisation",
+    "lead": [
+      "Vous appuyez sur un bouton et rien ne bouge. L’ordre est-il passé ? L’appareil a-t-il commencé ? A-t-il rencontré une difficulté ? Devant un four ou un guichet automatique, cette hésitation dure quelques secondes et ne coûte rien. Dans un poste de conduite, elle change de nature : la personne qui répond de la marche d’ensemble ne sait plus dans quel état se trouve ce qu’elle conduit, et elle ne le découvrira qu’au moment de reprendre la main. En juin 1989, devant une réunion consacrée aux facteurs humains dans les situations à haut risque, Donald A. Norman est venu soutenir sur ce point une thèse à contre-courant.",
+      "Le reproche courant tenait alors en un mot : on avait trop automatisé. Trop de machine, disait-on, sort l’humain du circuit de commande, lui fait perdre ses savoir-faire et entame le moral. Norman accepte les observations et refuse la conclusion qu’on en tire. Ce qui fait défaut n’est pas une part d’humain à réintroduire dans un dispositif devenu trop savant : c’est un flux d’information que la machine ne produit pas, pour une raison simple sur laquelle Norman revient à la fin, elle n’en a aucun besoin pour elle-même."
+    ],
+    "sections": [
+      {
+        "title": "Assez puissante pour prendre le relais, pas pour le reste",
+        "paragraphs": [
+          "Norman commence par un diagnostic de degré, et c’est la clé de tout le reste. L’automatisation dont il parle se tient à un niveau intermédiaire d’intelligence : assez puissante pour prendre en charge la commande qui revenait aux personnes, pas assez pour traiter toutes les anomalies. Elle occupe la place sans pouvoir tenir le poste jusqu’au bout.",
+          "À ce premier manque s’en ajoute un second, moins remarqué et plus déterminant : son niveau d’intelligence ne lui permet pas davantage de fournir la rétroaction continue et appropriée qui s’établit d’elle-même entre opérateurs humains. Deux personnes qui conduisent ensemble une installation se disent des choses sans qu’on le leur demande, se corrigent, s’avertissent. La machine qui prend la place de l’une des deux ne rend rien de tel.",
+          "De là une conclusion exactement contraire au reproche reçu, qu’il écrit à la fin de son texte : « the problem is not that the automation is too powerful, the problem is that it is not powerful enough », le problème n’est pas que l’automatisation soit trop puissante, il est qu’elle ne l’est pas assez. Ce n’est pas un éloge de la machine. C’est dire que le remède ne consiste pas à en retirer, mais à lui faire faire ce qu’elle ne fait pas encore."
+        ]
+      },
+      {
+        "title": "Hors de la boucle, et ce n’est pas la cause",
+        "paragraphs": [
+          "Pour situer la personne, Norman emprunte le vocabulaire de la théorie du contrôle : un système a un état désiré, un moyen de s’en rapprocher, et « a feedback loop in which the actual state of the system is compared with the desired state », une boucle où l’état réel est comparé à l’état voulu. L’ensemble forme ce qu’il nomme « the control loop », et lorsque quelqu’un manœuvre l’équipement à la main, il en est un élément essentiel : d’où l’expression, « the person is in the loop ».",
+          "L’argument tient ensuite dans une seule phrase, et dans une concession. Elle s’ouvre en accordant que les opérateurs humains, en effet, ne sont plus dans la boucle. Le fait n’est pas discuté. Ce que Norman refuse, c’est d’en faire la cause, et la suite de la même phrase désigne un autre coupable. Il le redira un peu plus loin, après un cas d’aviation : « the culprit is not actually automation, but rather the lack of feedback ».",
+          "La différence n’a rien d’un raffinement d’école, car les deux diagnostics n’appellent pas le même remède. Si le coupable est la position de l’opérateur, il faut lui rendre du pilotage manuel. Si c’est l’information, il faut concevoir autrement ce que la machine dit d’elle-même. Être hors de la boucle prend alors un sens précis : sans rétroaction convenable, les gens ne savent pas si leur demande a été reçue, si les actions se déroulent correctement, si des difficultés surviennent."
+        ]
+      },
+      {
+        "title": "Le pilote automatique qui compense en silence",
+        "paragraphs": [
+          "Le texte s’appuie sur des situations d’aviation, dont celle-ci : un appareil perd du carburant, et le pilote automatique fait son travail. Il compense, « silently and efficiently », silencieusement et efficacement, et l’équipage l’ignore. La machine n’est pas en faute, elle fonctionne. Mais en corrigeant bien, elle efface le signe extérieur de l’avarie : ce qui aurait attiré l’attention, l’écart de comportement de l’appareil, est exactement ce qu’elle vient de faire disparaître.",
+          "Ce qui manque là n’est pourtant pas de la donnée. Norman l’écrit ailleurs dans le texte : « The feedback was potentially available, but it was not attended to properly », la rétroaction était potentiellement disponible, mais elle n’a pas été prise en compte comme il aurait fallu. Un tableau de bord peut tout afficher et n’avertir de rien. Le problème n’est donc pas la quantité d’information présente quelque part dans le système, c’est la forme sous laquelle elle parvient, ou non, à quelqu’un qui a autre chose à faire."
+        ]
+      },
+      {
+        "title": "Le modèle que l’opérateur se fait de la machine",
+        "paragraphs": [
+          "Les gens se construisent des modèles mentaux des systèmes avec lesquels ils sont en rapport, écrit Norman, et ces modèles ne se construisent que sur ce qu’il appelle l’image du système : l’information qui leur vient de l’équipement, de l’environnement et de leurs instructions. Il renvoie sur ce point à un texte antérieur de sa main, de 1986. La conséquence pour un équipement automatisé est immédiate : « When we send a command to an automated piece of equipment, the only way we can update our mental models of the system is through the feedback provided us », quand nous adressons une commande à un équipement automatisé, la seule façon de mettre à jour nos modèles mentaux du système passe par la rétroaction qu’il nous donne.",
+          "Une machine muette ne laisse donc pas l’opérateur avec un modèle incomplet : elle le laisse avec un modèle qui vieillit. La représentation qu’il a de l’installation reste celle d’il y a dix minutes, et rien ne le lui signale, puisque justement rien ne lui parvient. Tant que la conduite est ordinaire, l’écart ne se voit pas. Il se découvre quand la situation dépasse ce que l’équipement automatique sait traiter, c’est-à-dire au pire moment : celui où quelqu’un doit reprendre une conduite dont il a perdu le fil."
+        ]
+      },
+      {
+        "title": "L’étalon n’est pas l’alarme, c’est la conversation",
+        "paragraphs": [
+          "On pourrait croire que le remède consiste à ajouter des signaux. Norman prend le contre-pied et donne pour modèle une scène ordinaire de travail : la manière dont des personnes engagées ensemble dans la résolution d’un problème discutent entre elles des questions à mesure qu’elles se posent. Ce qu’il demande est de cet ordre, une rétroaction continue sur l’état du système, donnée d’une façon normale et naturelle, informative sans être intrusive.",
+          "Le contre-exemple est nommé aussi nettement : l’usage inintelligent des alarmes, chaque instrument ayant son unique seuil, au franchissement duquel il déclenche une sonnerie ou fait clignoter un message. Une alarme ne parle qu’au seuil, c’est-à-dire quand la chose est déjà arrivée, et elle parle en interrompant. Une conversation d’équipage tient au courant sans exiger qu’on s’arrête. Entre les deux, la différence n’est pas d’intensité, elle est de régime."
+        ]
+      },
+      {
+        "title": "Pourquoi les machines en disent si peu",
+        "paragraphs": [
+          "Reste la question que Norman pose lui-même : pourquoi les systèmes existants offrent-ils si peu de rétroaction et d’interaction ? Une part de la réponse tient à un manque de sensibilité chez le concepteur. L’autre part est plus embarrassante, et parfaitement naturelle : l’automatisation, elle, n’en a pas besoin. Elle se règle sans personne. L’information dont l’opérateur a besoin est, du point de vue de la machine, un surplus que rien dans son fonctionnement n’exige de produire, et qu’il faut donc décider d’ajouter.",
+          "De là sa règle de conception, énoncée pour un monde où l’automatisation parfaite n’existe pas : un système doit supposer l’existence de l’erreur, fournir de la rétroaction en continu, interagir en continu avec les opérateurs de manière appropriée, et convenir aux pires situations. Il résume ce qu’il attend d’une formule qui vaut programme : une technologie souple et accommodante, plutôt qu’une technologie rigide et formelle.",
+          "Il prend soin, au passage, de ne rien s’attribuer de plus qu’il ne lui revient : « This is hardly a novel point: Feedback is an essential aspect of all control theory », le point n’a rien de neuf, la rétroaction est un aspect essentiel de toute la théorie du contrôle. Ce qui lui appartient n’est pas la notion, ancienne et bien établie ailleurs. C’est le déplacement du coupable, dans un débat où l’on accusait la machine d’en faire trop."
+        ]
+      }
+    ],
+    "limits": [
+      "L’article paru le 12 avril 1990 dans les Philosophical Transactions of the Royal Society of London B, volume 327, numéro 1241, pages 585 à 593, n’est pas mot pour mot le tirage de juillet 1989 dont vient la citation : le titre y change et le résumé diffère sur plusieurs formulations. Ce que porte exactement cette édition se lira dans ce volume.",
+      "L’ironie de l’automatisation, qui veut qu’elle défaille au moment où l’on en a le plus besoin, Norman ne se l’attribue pas : il la rapporte à Lisanne Bainbridge, dont il cite « Ironies of automation » dans New technology and human error, dirigé par Rasmussen, Duncan et Leplat (Wiley, 1987). Il ne date pas ce texte et n’en discute pas la thèse : ce qu’elle démontre, ce sont ses pages qui le diront.",
+      "Le mot que son titre met entre guillemets, « overautomation », il l’emploie comme un reproche courant sans le rapporter à personne : qui l’a forgé reste une question ouverte. Et l’image du système, sur laquelle repose son raisonnement, vient d’un texte de 1986 qu’il signale d’un simple renvoi : c’est là qu’il faudra lire ce que ce terme recouvre."
     ]
   },
   {
