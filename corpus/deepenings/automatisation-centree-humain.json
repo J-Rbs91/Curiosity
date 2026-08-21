@@ -1,0 +1,60 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "automatisation-centree-humain",
+  "lead": [
+    "Une machine qui fonctionne bien finit par se faire oublier, et c’est même à cela qu’on la reconnaît. Elle tient le cap, elle maintient l’allure, elle rattrape seule les petits écarts, et la personne qui reste responsable de ce qui arrive pense pendant ce temps à autre chose. La situation est confortable tant que rien ne cloche. Elle cesse de l’être à la seconde où il faut reprendre la main, car reprendre la main suppose de savoir ce que la machine faisait, pourquoi elle le faisait, et depuis quand.",
+    "C’est de cette seconde que part Charles E. Billings dans un mémorandum écrit pour la NASA en 1996. Il traite de l’aviation, où la question se pose sans détour : le pilote porte la responsabilité de la sécurité du vol, alors qu’une part croissante de ce qui se passe entre ses mains et l’appareil transite par des dispositifs capables d’agir d’eux-mêmes. Dire d’une automatisation qu’elle est centrée sur l’humain ne signifie pas, chez lui, qu’elle est plus agréable ou plus facile à prendre en main. C’est une exigence qui porte sur la place laissée à celui qui devra répondre du résultat."
+  ],
+  "sections": [
+    {
+      "title": "L’automatisation comme ressource dirigée",
+      "paragraphs": [
+        "Billings commence par définir l’automatisation elle-même, et cette définition commande tout le reste. Il la tient pour un outil ou une ressource : un dispositif, un système ou une méthode par lequel un opérateur accomplit une tâche qui serait autrement plus difficile ou impossible, ou bien qu’il peut charger d’exécuter plus ou moins seul une tâche exigeant sinon davantage d’attention ou d’effort. Le second membre de phrase est le plus important : quelqu’un dirige la machine vers une tâche. L’automatisation n’est pas un opérateur de remplacement, c’est un moyen remis entre les mains de quelqu’un.",
+        "De là vient la définition du concept, à la troisième page du mémorandum : une automatisation « automation designed to work cooperatively with human operators in the pursuit of stated common objectives », conçue pour travailler en coopération avec les opérateurs humains dans la poursuite d’objectifs communs déclarés. Le dernier mot est le plus contraignant. Cela implique qu’une machine dont le but n’est pas énoncé ne peut pas coopérer, puisque personne ne peut vérifier qu’elle vise bien la même chose que lui. La formule n’est pas neuve en 1996 : le mémorandum de 1991 que celui-ci prolonge la portait déjà, à un mot près, et à la première personne du pluriel."
+      ]
+    },
+    {
+      "title": "Ce qui fait perdre de vue l’état du système",
+      "paragraphs": [
+        "Le chapitre où le concept est exposé range les difficultés de l’automatisation aéronautique derrière un phénomène central : la perte de conscience de l’état du système, c’est-à-dire le moment où l’opérateur ne sait plus où en est la machine ni ce qu’elle est en train de faire. Billings lui donne quatre conditions d’apparition, et il les définit une à une.",
+        "La complexité rend le détail du fonctionnement plus difficile à comprendre, à se représenter et à retenir, précisément quand cette compréhension serait nécessaire pour expliquer un comportement observé. Le couplage désigne les interdépendances entre fonctions automatisées : elles sont rarement évidentes, souvent absentes des manuels mis à disposition des utilisateurs, et c’est de là que vient la surprise.",
+        "L’autonomie décrit un comportement machine qui paraît s’être déclenché de lui-même. Lorsqu’il n’est pas attendu, il est souvent perçu comme animé, comme si le système avait sa propre idée, et l’humain doit décider, parfois vite, si ce qu’il voit est approprié ou non. La rétroaction insuffisante, enfin, décrit une machine qui ne dit pas, ou dit mal, ce qu’elle fait, pourquoi elle le fait, ou pourquoi elle vient de changer de comportement. Il ne reste alors à l’opérateur que sa mémoire et l’idée qu’il se fait du fonctionnement pour interpréter ce qu’il a sous les yeux."
+      ]
+    },
+    {
+      "title": "Moins de charge, moins d’implication",
+      "paragraphs": [
+        "L’effet décrit est lent et à double face. Avec le temps, si la machine est fiable, le pilote se soucie moins du détail de ses tâches. Sa charge de travail diminue, ce qui est précisément recherché, mais il peut devenir, et se sentir, moins impliqué dans la mission. Billings nomme ce mouvement la mise à la périphérie de l’équipage, « peripheralization of the flight crew ».",
+        "Il prend soin de ne pas en faire un constat accompli. Il écrit qu’il ne croit pas ce sentiment d’implication diminuée répandu, « I do not believe that a sense of diminished involvement is prevalent », et ajoute aussitôt que cela pourrait bien le devenir si l’on continue dans la voie présente. Plus loin dans le volume, il note que l’automatisation, à mesure qu’elle devenait plus capable, a fourni l’occasion de s’impliquer un peu moins : une occasion, non une fatalité.",
+        "Ce qu’il tient en revanche pour acquis est plus étroit et plus dur : des accidents ont montré avec quelle facilité des pilotes peuvent perdre le fil de ce qui se passe à bord d’un appareil moderne. Entre la tendance et l’accident, il n’y a aucun enchaînement automatique, et c’est ce qui rend ce propos si difficile à résumer sans le durcir."
+      ]
+    },
+    {
+      "title": "Ni panne de machine, ni erreur d’humain",
+      "paragraphs": [
+        "Une phrase du même chapitre coupe court à la question qui vient d’abord, celle du responsable. Ces problèmes, écrit Billings, ne sont pas plus des problèmes d’automatisation que des problèmes d’erreur humaine : « They are human-machine system problems, and they must be attacked as such. » Ce qu’il faut traiter n’est ni la machine seule ni l’opérateur seul, mais le couple qu’ils forment.",
+        "La conséquence est directe pour la manière d’analyser un incident. Chercher lequel des deux a fauté mène à deux réponses également courtes : durcir la formation, ou ajouter une automatisation supplémentaire pour couvrir la précédente. Le propos de Billings n’est pas que l’automatisation soit mauvaise, sa définition en fait une ressource utile ; il est qu’elle est mal conçue lorsqu’elle laisse l’opérateur sans les moyens de savoir ce qu’elle fait."
+      ]
+    },
+    {
+      "title": "Ce que Billings appelle l’opacité",
+      "paragraphs": [
+        "Un chapitre plus tardif reprend la question du côté de la conception et range les difficultés sous cinq facteurs : quatre tiennent à la conception, la complexité, la fragilité, l’opacité et le littéralisme, le cinquième est la formation, elle-même liée à la compréhension qu’on a du système.",
+        "L’opacité est le terme qu’il pose en son nom propre. À mesure que la complexité de l’automatisation augmente, il devient plus difficile au concepteur de fournir au pilote qui surveille une information manifeste et sans ambiguïté sur ce que la machine est en train de faire. D’autres ont parlé de cela comme d’un défaut de transparence, « Others have referred to it as a lack of transparency », et Billings tient les deux termes pour synonymes dans ce contexte.",
+        "C’est à l’opacité qu’il rattache explicitement deux difficultés bien connues de qui travaille avec des systèmes à modes : l’erreur de mode, où l’on agit comme si le système était dans un autre état que celui où il se trouve, et le défaut de conscience de mode, où l’on ignore simplement dans quel état il est. Ce ne sont pas des étourderies d’opérateur, ce sont les symptômes d’une machine qui ne dit pas assez ce qu’elle fait."
+      ]
+    },
+    {
+      "title": "Des principes énoncés comme des absolus",
+      "paragraphs": [
+        "L’exposé du concept s’achève sur une liste que Billings appelle les premiers principes. Elle part de deux prémisses de responsabilité, le pilote pour la sécurité du vol, le contrôleur pour la séparation et l’écoulement du trafic, et en tire des axiomes : l’un et l’autre doivent rester aux commandes. Viennent alors les corollaires, et ce sont eux qui portent la doctrine. Les deux opérateurs doivent être activement impliqués et suffisamment informés. Ils doivent pouvoir surveiller l’automatisation qui les assiste, ce qui exige qu’elle soit prévisible. L’automatisation doit à son tour les surveiller. Et chaque élément intelligent du système doit comprendre l’intention des autres.",
+        "La dernière exigence est la plus lourde et la moins répandue : elle demande qu’une machine sache ce que l’humain cherche à faire, et pas seulement ce qu’il vient de faire. Billings prend d’ailleurs ses distances avec sa propre liste dans la phrase qui suit. Ces principes, dit-il, sont énoncés comme des absolus, mais ils sont en réalité des « matters of choice to which system designers may or may not wish to adhere », des affaires de choix auxquelles un concepteur adhère ou non. Une doctrine qui se donne pour facultative est chose rare, et cette réserve dit le statut du texte : non pas une norme, une position argumentée."
+      ]
+    }
+  ],
+  "limits": [
+    "Le mémorandum de 1996 a été refondu l’année suivante en un volume paru chez Lawrence Erlbaum, Aviation Automation: The Search for a Human-Centered Approach. Ce que cette version retranche, ajoute ou réécrit se lit dans ses pages. Son millésime même y attend son lecteur : les notices d’édition donnent 1997 et Mahwah, d’autres auteurs 1996 et Hillsdale.",
+    "L’origine de l’expression reste ouverte, et Billings est le premier à le dire. Les textes qui portent la réponse, il les nomme lui-même : le plan professionnel de l’Air Transport Association d’avril 1989, les travaux de Sheridan, Norman, Rouse et Cooley sur les technologies dites centrées sur l’humain, et le courant du poste de travail centré sur l’humain du programme européen ESPRIT, auquel son mémorandum de 1991 rattache l’expression en même temps que les analyses de Cooley sur la déqualification.",
+    "Deux ans après le mémorandum, un rapport de David Woods et Nadine Sarter reformule déjà l’approche centrée sur l’humain en trois attributs qui ne sont pas ceux de Billings, conduite par le problème, centrée sur l’activité, liée au contexte, et l’attribue à un texte de Winograd et Woods paru en 1997. Ce que ce dernier en fait, ses pages le diront."
+  ]
+}

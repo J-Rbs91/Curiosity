@@ -21,87 +21,49 @@ script ne peut pas dire : quel travail est possible aujourd'hui, ce qu'il coûte
 
 ## Les trois chantiers, par coût croissant
 
-| chantier | volume | recherche documentaire ? | ce qu'il débloque |
+| chantier | volume | recherche documentaire ? | état |
 |---|---|---|---|
-| **A.** Approfondissements | 25 cartes | **non** | le bouton « Approfondir » sur un tiers du corpus |
-| **B.** File de la sociologie des organisations | 26 entrées | oui, cartographie déjà faite | le domaine le plus ancien, resté à 8 cartes |
-| **C.** Six domaines vides | 6 domaines | oui, **tout est à faire** | la moitié de la taxonomie |
+| ~~**A.** Approfondissements~~ | ~~25 cartes~~ | non | **fait le 21 août 2026** |
+| **B.** File de la sociologie des organisations | 26 entrées | oui, cartographie déjà faite | ouvert |
+| **C.** Six domaines vides | 6 domaines | oui, **tout est à faire** | ouvert |
 
-L'ordre A → B → C est celui du rapport entre ce que ça coûte et ce que le lecteur y gagne. Il
-n'a rien d'obligatoire, mais **A ne devrait pas attendre** : ces cartes sont validées, servies
-à l'écran, et amputées de la seule chose que l'application propose au lecteur qui veut aller
-plus loin.
+Le chantier A est vidé : les vingt-cinq approfondissements manquants ont été écrits et
+projetés, et **plus aucune carte validée n'en attend**. Ce que ce passage a appris est gardé
+plus bas ; ce qui reste à faire commence au chantier B.
 
 ---
 
-# A. Les vingt-cinq approfondissements
+# A. Les approfondissements, faits
 
-**C'est le seul écart du corpus entre ce qui est validé et ce qui est servi.** `hasDeepening`
-répond faux pour ces vingt-cinq cartes, et le bouton « Approfondir » ne s'affiche pas.
+**Vidé le 21 août 2026.** Les vingt-cinq cartes qui n'avaient pas d'approfondissement en ont
+un : les treize de human factors, ouvertes le 19 août, et les douze de cybernétique, ouvertes
+le 21. `corpus:deepen` projette désormais **57 approfondissements, 83 469 mots, 1 464 en
+moyenne**, et sa fin de sortie ne liste plus aucune carte.
 
-Deux domaines entiers, et rien d'autre : **human factors n'en a aucun depuis le 19 août**,
-**cybernétique aucun depuis le 21**. Les trois autres domaines sont complets.
+C'était le seul écart du corpus entre ce qui est validé et ce qui est servi.
 
-| domaine | cartes sans approfondissement |
-|---|---:|
-| Human Factors / ergonomie cognitive | **13 sur 13** |
-| Cybernétique | **12 sur 12** |
-| Sociologie des organisations | 0 sur 8 |
-| Ergonomie de l'activité | 0 sur 15 |
-| Théorie de la mesure / KPI | 0 sur 9 |
+## Ce que ce passage a appris, et qui resservira
 
-## Ce que ce chantier demande, et ce qu'il ne demande pas
+Un rédacteur par carte, aucune recherche documentaire, la matière étant la carte elle-même,
+sa lecture primaire et son verdict de contrôle. Trois choses valent d'être gardées.
 
-**Aucune recherche documentaire.** L'agent `corpus-deepener` part de la carte projetée et de
-son enregistrement validé, n'ouvre aucune source, n'ajoute aucune référence. Tout ce qu'il
-peut dire est déjà dans le dépôt : la carte, ses `notes`, son verdict de contrôle et son
-dossier `corpus/evidence/<id>/lecture.json`.
+**Le contrôle cherche des chaînes littérales, et il attrape donc des métaphores.** Un texte a
+été renvoyé sur « la carte », qui expose le dispositif au lecteur : c'était « le seul plat de
+la carte », une image du menu. Le renvoi était un faux positif, et la réécriture était quand
+même la bonne décision, l'ambiguïté faisant trébucher un lecteur qui vient de fermer une
+carte. Un rédacteur qui rencontre ce refus doit d'abord regarder ce que sa phrase dit
+vraiment.
 
-Un agent par carte, environ 1 500 mots chacun. La commande est `/corpus-deepen`.
+**Le meilleur signe qu'un texte est bien écrit est la liste de ce qu'il a refusé d'écrire.**
+Les comptes rendus les plus solides du lot consacraient l'essentiel de leur place à cela :
+l'appareil d'établissement laissé dehors, les sources jamais ouvertes nommées par ce qu'elles
+détiennent et jamais par ce qu'elles diraient, les passages que seule une couche océrisée
+portait reformulés sans guillemets plutôt que présentés comme du verbatim.
 
-**Lire `corpus/deepenings/PROTOCOLE.md` avant d'en écrire un seul.** Sa section 0 raconte
-pourquoi les trente-deux textes du premier lot, documentairement irréprochables, ont dû être
-entièrement refaits : ils exhibaient l'appareil de production au lecteur (224 occurrences sur
-32 textes, « le dossier porte l'énoncé en entier », « la carte, faute de place, n'a gardé
-que… ») et commençaient par l'abstraction. **Le lecteur ne sait pas qu'une carte existe, ni
-ce qu'est un corpus, un dossier ou un enregistrement validé. Il ne doit pas l'apprendre là.**
-
-## Les vingt-cinq, par domaine
-
-Cette liste est un confort de lecture. **La file fait autorité, et c'est la fin de sortie de
-`npm run corpus:deepen`.**
-
-**Human Factors / ergonomie cognitive (13)**
-
-`automatisation-centree-humain` · `conception-ecologique-interface` ·
-`conscience-de-la-situation` · `controle-supervise` · `decision-reconnue-d-emblee` ·
-`gestion-du-risque-fatigue` · `glissements-de-l-action` · `modele-du-fromage-suisse` ·
-`nasa-tlx` · `niveaux-de-controle-cognitif` · `probabilite-erreur-humaine` ·
-`resilience-fondee-sur-les-ressources` · `retroaction-et-automatisation`
-
-**Cybernétique (12)**
-
-`amplification-de-la-regulation` · `bruit-comme-principe-d-auto-organisation` ·
-`controle-de-la-perception` · `critere-de-la-retroaction` · `feed-back-et-equilibre` ·
-`histoire-naturelle-des-reseaux` · `loi-de-la-variete-requise` ·
-`objet-de-la-cybernetique-economique` · `ordre-a-partir-du-bruit` ·
-`redondance-du-commandement-potentiel` · `regulateur-commande-par-l-ecart` ·
-`regulation-proportionnelle-derivee-integrale`
-
-## Trois cartes qui demandent une prudence particulière
-
-Elles portent des réserves que l'approfondissement ne doit pas effacer en développant.
-
-- **`controle-de-la-perception`** — aucune source secondaire indépendante n'a pu être ouverte,
-  et la seule littérature disponible est celle des partisans de la théorie. La carte dit
-  qu'elle ne se prononce pas sur sa place réelle dans la psychologie ; l'approfondissement
-  n'en sait pas plus qu'elle.
-- **`feed-back-et-equilibre`** — c'est une communication de congrès de dix pages, une
-  rencontre datée entre deux vocabulaires, **pas la position de Piaget sur la cybernétique**.
-- **`regulation-proportionnelle-derivee-integrale`** — le texte primaire présuppose son
-  lecteur et le dit. La version enseignable est dans le chapitre jumeau de *Mineral
-  Metabolism*, affiché en seconde source, avec le thermostat, le glaçon dans le punch et la
-  voiture dans le virage.
+**Le répertoire de travail temporaire est partagé entre agents parallèles.** Trois rédacteurs
+ont vu leur script de fabrication écrasé par celui d'un voisin, et l'un d'eux a régénéré le
+fichier d'un autre. Rien n'a été perdu, vérification faite fichier par fichier, mais un lot
+lancé en parallèle doit préfixer ses fichiers de travail par l'identifiant de sa carte.
 
 ---
 

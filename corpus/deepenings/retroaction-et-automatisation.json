@@ -1,0 +1,60 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "retroaction-et-automatisation",
+  "lead": [
+    "Vous appuyez sur un bouton et rien ne bouge. L’ordre est-il passé ? L’appareil a-t-il commencé ? A-t-il rencontré une difficulté ? Devant un four ou un guichet automatique, cette hésitation dure quelques secondes et ne coûte rien. Dans un poste de conduite, elle change de nature : la personne qui répond de la marche d’ensemble ne sait plus dans quel état se trouve ce qu’elle conduit, et elle ne le découvrira qu’au moment de reprendre la main. En juin 1989, devant une réunion consacrée aux facteurs humains dans les situations à haut risque, Donald A. Norman est venu soutenir sur ce point une thèse à contre-courant.",
+    "Le reproche courant tenait alors en un mot : on avait trop automatisé. Trop de machine, disait-on, sort l’humain du circuit de commande, lui fait perdre ses savoir-faire et entame le moral. Norman accepte les observations et refuse la conclusion qu’on en tire. Ce qui fait défaut n’est pas une part d’humain à réintroduire dans un dispositif devenu trop savant : c’est un flux d’information que la machine ne produit pas, pour une raison simple sur laquelle Norman revient à la fin, elle n’en a aucun besoin pour elle-même."
+  ],
+  "sections": [
+    {
+      "title": "Assez puissante pour prendre le relais, pas pour le reste",
+      "paragraphs": [
+        "Norman commence par un diagnostic de degré, et c’est la clé de tout le reste. L’automatisation dont il parle se tient à un niveau intermédiaire d’intelligence : assez puissante pour prendre en charge la commande qui revenait aux personnes, pas assez pour traiter toutes les anomalies. Elle occupe la place sans pouvoir tenir le poste jusqu’au bout.",
+        "À ce premier manque s’en ajoute un second, moins remarqué et plus déterminant : son niveau d’intelligence ne lui permet pas davantage de fournir la rétroaction continue et appropriée qui s’établit d’elle-même entre opérateurs humains. Deux personnes qui conduisent ensemble une installation se disent des choses sans qu’on le leur demande, se corrigent, s’avertissent. La machine qui prend la place de l’une des deux ne rend rien de tel.",
+        "De là une conclusion exactement contraire au reproche reçu, qu’il écrit à la fin de son texte : « the problem is not that the automation is too powerful, the problem is that it is not powerful enough », le problème n’est pas que l’automatisation soit trop puissante, il est qu’elle ne l’est pas assez. Ce n’est pas un éloge de la machine. C’est dire que le remède ne consiste pas à en retirer, mais à lui faire faire ce qu’elle ne fait pas encore."
+      ]
+    },
+    {
+      "title": "Hors de la boucle, et ce n’est pas la cause",
+      "paragraphs": [
+        "Pour situer la personne, Norman emprunte le vocabulaire de la théorie du contrôle : un système a un état désiré, un moyen de s’en rapprocher, et « a feedback loop in which the actual state of the system is compared with the desired state », une boucle où l’état réel est comparé à l’état voulu. L’ensemble forme ce qu’il nomme « the control loop », et lorsque quelqu’un manœuvre l’équipement à la main, il en est un élément essentiel : d’où l’expression, « the person is in the loop ».",
+        "L’argument tient ensuite dans une seule phrase, et dans une concession. Elle s’ouvre en accordant que les opérateurs humains, en effet, ne sont plus dans la boucle. Le fait n’est pas discuté. Ce que Norman refuse, c’est d’en faire la cause, et la suite de la même phrase désigne un autre coupable. Il le redira un peu plus loin, après un cas d’aviation : « the culprit is not actually automation, but rather the lack of feedback ».",
+        "La différence n’a rien d’un raffinement d’école, car les deux diagnostics n’appellent pas le même remède. Si le coupable est la position de l’opérateur, il faut lui rendre du pilotage manuel. Si c’est l’information, il faut concevoir autrement ce que la machine dit d’elle-même. Être hors de la boucle prend alors un sens précis : sans rétroaction convenable, les gens ne savent pas si leur demande a été reçue, si les actions se déroulent correctement, si des difficultés surviennent."
+      ]
+    },
+    {
+      "title": "Le pilote automatique qui compense en silence",
+      "paragraphs": [
+        "Le texte s’appuie sur des situations d’aviation, dont celle-ci : un appareil perd du carburant, et le pilote automatique fait son travail. Il compense, « silently and efficiently », silencieusement et efficacement, et l’équipage l’ignore. La machine n’est pas en faute, elle fonctionne. Mais en corrigeant bien, elle efface le signe extérieur de l’avarie : ce qui aurait attiré l’attention, l’écart de comportement de l’appareil, est exactement ce qu’elle vient de faire disparaître.",
+        "Ce qui manque là n’est pourtant pas de la donnée. Norman l’écrit ailleurs dans le texte : « The feedback was potentially available, but it was not attended to properly », la rétroaction était potentiellement disponible, mais elle n’a pas été prise en compte comme il aurait fallu. Un tableau de bord peut tout afficher et n’avertir de rien. Le problème n’est donc pas la quantité d’information présente quelque part dans le système, c’est la forme sous laquelle elle parvient, ou non, à quelqu’un qui a autre chose à faire."
+      ]
+    },
+    {
+      "title": "Le modèle que l’opérateur se fait de la machine",
+      "paragraphs": [
+        "Les gens se construisent des modèles mentaux des systèmes avec lesquels ils sont en rapport, écrit Norman, et ces modèles ne se construisent que sur ce qu’il appelle l’image du système : l’information qui leur vient de l’équipement, de l’environnement et de leurs instructions. Il renvoie sur ce point à un texte antérieur de sa main, de 1986. La conséquence pour un équipement automatisé est immédiate : « When we send a command to an automated piece of equipment, the only way we can update our mental models of the system is through the feedback provided us », quand nous adressons une commande à un équipement automatisé, la seule façon de mettre à jour nos modèles mentaux du système passe par la rétroaction qu’il nous donne.",
+        "Une machine muette ne laisse donc pas l’opérateur avec un modèle incomplet : elle le laisse avec un modèle qui vieillit. La représentation qu’il a de l’installation reste celle d’il y a dix minutes, et rien ne le lui signale, puisque justement rien ne lui parvient. Tant que la conduite est ordinaire, l’écart ne se voit pas. Il se découvre quand la situation dépasse ce que l’équipement automatique sait traiter, c’est-à-dire au pire moment : celui où quelqu’un doit reprendre une conduite dont il a perdu le fil."
+      ]
+    },
+    {
+      "title": "L’étalon n’est pas l’alarme, c’est la conversation",
+      "paragraphs": [
+        "On pourrait croire que le remède consiste à ajouter des signaux. Norman prend le contre-pied et donne pour modèle une scène ordinaire de travail : la manière dont des personnes engagées ensemble dans la résolution d’un problème discutent entre elles des questions à mesure qu’elles se posent. Ce qu’il demande est de cet ordre, une rétroaction continue sur l’état du système, donnée d’une façon normale et naturelle, informative sans être intrusive.",
+        "Le contre-exemple est nommé aussi nettement : l’usage inintelligent des alarmes, chaque instrument ayant son unique seuil, au franchissement duquel il déclenche une sonnerie ou fait clignoter un message. Une alarme ne parle qu’au seuil, c’est-à-dire quand la chose est déjà arrivée, et elle parle en interrompant. Une conversation d’équipage tient au courant sans exiger qu’on s’arrête. Entre les deux, la différence n’est pas d’intensité, elle est de régime."
+      ]
+    },
+    {
+      "title": "Pourquoi les machines en disent si peu",
+      "paragraphs": [
+        "Reste la question que Norman pose lui-même : pourquoi les systèmes existants offrent-ils si peu de rétroaction et d’interaction ? Une part de la réponse tient à un manque de sensibilité chez le concepteur. L’autre part est plus embarrassante, et parfaitement naturelle : l’automatisation, elle, n’en a pas besoin. Elle se règle sans personne. L’information dont l’opérateur a besoin est, du point de vue de la machine, un surplus que rien dans son fonctionnement n’exige de produire, et qu’il faut donc décider d’ajouter.",
+        "De là sa règle de conception, énoncée pour un monde où l’automatisation parfaite n’existe pas : un système doit supposer l’existence de l’erreur, fournir de la rétroaction en continu, interagir en continu avec les opérateurs de manière appropriée, et convenir aux pires situations. Il résume ce qu’il attend d’une formule qui vaut programme : une technologie souple et accommodante, plutôt qu’une technologie rigide et formelle.",
+        "Il prend soin, au passage, de ne rien s’attribuer de plus qu’il ne lui revient : « This is hardly a novel point: Feedback is an essential aspect of all control theory », le point n’a rien de neuf, la rétroaction est un aspect essentiel de toute la théorie du contrôle. Ce qui lui appartient n’est pas la notion, ancienne et bien établie ailleurs. C’est le déplacement du coupable, dans un débat où l’on accusait la machine d’en faire trop."
+      ]
+    }
+  ],
+  "limits": [
+    "L’article paru le 12 avril 1990 dans les Philosophical Transactions of the Royal Society of London B, volume 327, numéro 1241, pages 585 à 593, n’est pas mot pour mot le tirage de juillet 1989 dont vient la citation : le titre y change et le résumé diffère sur plusieurs formulations. Ce que porte exactement cette édition se lira dans ce volume.",
+    "L’ironie de l’automatisation, qui veut qu’elle défaille au moment où l’on en a le plus besoin, Norman ne se l’attribue pas : il la rapporte à Lisanne Bainbridge, dont il cite « Ironies of automation » dans New technology and human error, dirigé par Rasmussen, Duncan et Leplat (Wiley, 1987). Il ne date pas ce texte et n’en discute pas la thèse : ce qu’elle démontre, ce sont ses pages qui le diront.",
+    "Le mot que son titre met entre guillemets, « overautomation », il l’emploie comme un reproche courant sans le rapporter à personne : qui l’a forgé reste une question ouverte. Et l’image du système, sur laquelle repose son raisonnement, vient d’un texte de 1986 qu’il signale d’un simple renvoi : c’est là qu’il faudra lire ce que ce terme recouvre."
+  ]
+}

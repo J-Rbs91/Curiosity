@@ -1,0 +1,62 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "niveaux-de-controle-cognitif",
+  "lead": [
+    "Après un incident dans une installation industrielle, quelqu’un remplit un compte rendu. Il s’y trouve presque toujours une case pour l’erreur humaine, et elle se coche vite. La difficulté vient après, quand on additionne ces cases pour savoir où le système est fragile. La somme met dans le même sac l’opérateur dont la main est partie trop vite sur un geste fait mille fois, celui qui a reconnu de travers ce qui se passait et appliqué la procédure d’à côté, et celui qui, devant un état de l’installation que personne n’avait prévu, a dû se faire une idée du fonctionnement avant de pouvoir agir. Ces trois-là n’ont pas échoué de la même manière.",
+    "C’est ce problème que prend de front Jens Rasmussen, au laboratoire national de Risø, au Danemark, dans un rapport d’août 1981, écrit pour des rencontres professionnelles dont un séminaire sur la sécurité industrielle. Sa question n’est pas de savoir pourquoi les gens se trompent, mais comment décrire un dysfonctionnement humain pour que la description serve ensuite, à prévoir, à concevoir, à former. Or décrire une erreur suppose un repère par rapport auquel elle en est une, et ce repère, remarque-t-il, n’est pas le même selon ce qui conduit l’action."
+  ],
+  "sections": [
+    {
+      "title": "Le repère qui sert à juger l’erreur",
+      "paragraphs": [
+        "Une erreur n’est jamais une erreur en soi : elle est un écart, et il faut donc savoir par rapport à quoi. Rasmussen accroche sa distinction exactement là. Si les trois niveaux se séparent, c’est que le comportement n’y est pas conduit par la même chose, et que le critère de la faute change avec elle : « different concepts are used to control behaviour », des concepts différents servent à contrôler le comportement. Le verbe garde ici son sens de commande : ce qui tient le volant n’est pas le même dans les trois cas.",
+        "La question à poser devant un incident se déplace alors. Elle n’est plus seulement de savoir ce que la personne a fait de travers, mais à quel régime son action était menée au moment où elle a dérapé. Rasmussen nomme ces régimes sobrement : « three levels of behaviour », trois niveaux de comportement. Ils ne classent ni les gens ni les métiers. Ils décrivent des manières d’être aux commandes, et la même personne passe de l’une à l’autre dans la même journée, parfois dans la même minute."
+      ]
+    },
+    {
+      "title": "Des gestes qui n’ont plus besoin d’être pensés",
+      "paragraphs": [
+        "Au premier niveau, l’action est une routine. Rasmussen parle de routines automatisées, « automated, more or less subconscious routines », plus ou moins inconscientes : la formule est prudente, elle ne dit pas qu’on agit sans le savoir, mais que la conduite du geste ne demande plus d’attention. Ce qui la commande, ce sont des schémas mémorisés qui ont une forme dans l’espace et un tempo dans le temps. Un geste juste, ici, a la bonne ampleur, au bon endroit, au bon moment.",
+        "Les erreurs de ce niveau tiennent à cette même matière : une variabilité de la force, de l’espace ou de la coordination temporelle. Imaginons un pupitre de commande dont un bouton a changé de place lors d’une rénovation. La main d’un opérateur chevronné ira quelque temps à l’ancien emplacement, et elle y ira d’autant plus sûrement qu’il a plus d’années de pratique. Il ne s’agit ni d’ignorance ni de négligence : la compétence produit l’écart, parce qu’elle a rendu le geste indépendant de toute surveillance."
+      ]
+    },
+    {
+      "title": "Reconnaître la situation, retrouver la règle",
+      "paragraphs": [
+        "Au deuxième niveau, la situation n’est pas nouvelle : on l’a déjà rencontrée, ou l’on a appris quoi faire quand elle se présente. Ce qui commande l’action n’est plus un schéma de geste mais une règle mémorisée, qui met en ordre des sous-routines : « performance in familiar situations controlled by stored rules », la performance en situation familière, contrôlée par des règles gardées en mémoire. Rasmussen ajoute une nuance qui pèse : ce comportement n’est pas commandé directement par le but, il est orienté vers lui. Le critère immédiat de l’erreur n’est donc pas l’échec de l’action, c’est de savoir si la règle pertinente a été retrouvée et suivie correctement.",
+        "Les défaillances propres à ce niveau ne ressemblent pas aux précédentes. Elles tiennent au classement : reconnaître une situation pour une autre, lui associer la tâche qui ne lui convient pas, ou perdre en route un morceau de la procédure. Le geste peut être parfaitement exécuté ; c’est la règle qu’il exécute qui n’était pas la bonne.",
+        "Les niveaux ne sont pas pour autant des étages étanches, et Rasmussen l’écrit dans la même page : « Since rule-based behaviour is used to control skill-based subroutines, the error mechanisms related to skill-based routines are always active ». Puisque le comportement réglé commande des sous-routines automatisées, les mécanismes d’erreur du premier niveau restent actifs en permanence. Appliquer la bonne règle n’immunise contre rien : il faut encore que les gestes qui l’exécutent tombent juste."
+      ]
+    },
+    {
+      "title": "Quand aucune règle apprise ne convient",
+      "paragraphs": [
+        "Le troisième niveau est appelé, écrit Rasmussen, par des situations uniques et non familières. Aucune règle n’est disponible parce que le cas n’a pas été prévu, et l’action doit être planifiée : « actions must be planned from an analysis and decision based on knowledge », à partir d’une analyse et d’une décision fondées sur la connaissance. Connaissance de quoi ? De deux choses, qu’il nomme l’une et l’autre : les propriétés fonctionnelles et physiques du système, et la priorité entre les différents buts. Savoir comment l’installation fonctionne ne suffit pas lorsqu’il faut aussi trancher entre des objectifs qui se contredisent.",
+        "C’est le niveau le plus difficile à décrire de l’extérieur, et Rasmussen ne le dissimule pas. Les opérations mentales y dépendent fortement de la personne et de la situation. Une erreur ne s’y définit que par rapport au but de la tâche, et les mécanismes généraux ne s’y dégagent qu’au prix d’études très détaillées, fondées sur des protocoles verbaux, c’est-à-dire sur ce que l’opérateur dit de ce qu’il fait pendant qu’il le fait.",
+        "Il pose ensuite à sa propre classification une limite qu’on reprend rarement : à ce troisième niveau, recueillir des données et prévoir la performance en décomposant la tâche n’est possible que dans des situations expérimentales très étroitement contrôlées, non dans les conditions réelles du travail. Le niveau où l’on aurait le plus besoin de prévoir est donc celui où l’auteur du modèle annonce lui-même que l’on ne prévoit pas."
+      ]
+    },
+    {
+      "title": "Se tromper de niveau",
+      "paragraphs": [
+        "Il reste une famille d’erreurs qui ne loge dans aucun des trois, parce qu’elle porte sur le choix du niveau lui-même. Rasmussen la nomme « errors of discrimination » et la tient pour importante : elle consiste à ne pas basculer sur le régime que la situation exige, à traiter comme une routine, ou comme un cas connu, une situation devenue anormale. Le geste et la règle restent alors impeccables, et complètement hors sujet.",
+        "Le niveau employé dépend d’ailleurs beaucoup, écrit-il, du « degree of training of the operator », du degré de formation de l’opérateur. Deux personnes devant le même écran ne sont pas au même niveau : ce qui est pour l’une une situation familière réglée par une procédure connue est pour l’autre un problème à analyser. Il ajoute que l’information utilisée change elle aussi de nature selon le niveau, signaux, signes ou symboles, et que la lecture retenue relève d’un choix actif.",
+        "De là une conséquence pratique, qui ramène au compte rendu d’incident du début : les données d’erreur recueillies en situation de routine ne valent pas pour les situations rares et non familières, les urgences par exemple, et cela indépendamment des effets du stress. Compter des ratés de gestes ne renseigne pas sur ce qui arrivera le jour où il faudra comprendre. « Clearly, the mental processes and the related error mechanisms are different for the various levels », les processus mentaux et les mécanismes d’erreur diffèrent selon les niveaux."
+      ]
+    },
+    {
+      "title": "Un modèle repris, un sigle venu plus tard",
+      "paragraphs": [
+        "La phrase la plus citée de ce rapport commence par trois mots qu’on oublie en la citant : « In this model », dans ce modèle. Rasmussen ne forge pas les trois niveaux ici. Il renvoie à ses propres travaux de 1976 et de 1980, où il dit avoir développé le modèle à partir de protocoles verbaux et de cas de dysfonctionnement humain. Ce rapport s’en sert, il ne l’invente pas.",
+        "Le vocabulaire, lui non plus, n’est pas celui sous lequel le modèle circule aujourd’hui. Ni le sigle SRK ni l’expression niveaux de contrôle cognitif ne figurent dans ce rapport : Rasmussen y écrit trois niveaux de comportement, puis parle du domaine de l’habileté, du domaine de la règle et du troisième domaine comportemental. L’étiquette abrégée est venue plus tard, et à qui l’attribuer n’est pas établi.",
+        "Enfin, ce que l’auteur tient pour l’apport propre de ce rapport n’est pas le modèle à trois niveaux. Il le dit en conclusion : « it has been stressed several times that the important aspect of the proposed taxonomy is the structure, not the elements used within the various categories ». Ce qui compte est la structure de la classification proposée, non les éléments rangés dans ses catégories : les trois niveaux y sont un moyen, non le résultat qu’il met en avant."
+      ]
+    }
+  ],
+  "limits": [
+    "La version que tout le monde cite est ailleurs : « Skills, rules, and knowledge; signals, signs, and symbols, and other distinctions in human performance models », IEEE Transactions on Systems, Man, and Cybernetics, mai 1983. Comment Rasmussen y reformule le modèle, et quand le sigle SRK passe sous sa plume, c’est cet article qu’il faudra lire.",
+    "Le modèle se fabrique dans deux textes antérieurs, dont « Outlines of a Hybrid Model of the Process Operator », de 1976, où Rasmussen dit l’avoir développé : on l’y verra se faire plutôt que servir.",
+    "Ce que les trois niveaux doivent à James Reason et à Donald Norman n’est pas établi : le rapport les cite tous deux sur l’erreur, à la même période, mais jamais à propos des niveaux, qu’il rattache à ses seuls travaux. Qui suivra ces renvois y verra un Reason de 1979 absent de sa bibliographie.",
+    "Il n’existe pas de traduction française publiée de ce rapport, dont les phrases sont rendues ici au fil de la lecture ; l’anglais est en accès libre. En français, la reprise du modèle passe par Jean-Michel Hoc et René Amalberti, dont les textes diront ce que l’ergonomie francophone en a retenu."
+  ]
+}

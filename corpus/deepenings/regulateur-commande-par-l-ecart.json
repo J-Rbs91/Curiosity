@@ -1,0 +1,62 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "regulateur-commande-par-l-ecart",
+  "lead": [
+    "Un chauffage d’appartement ne sait qu’une chose : la température de la pièce où il se trouve. Il ignore que la fenêtre vient de s’ouvrir et que le froid est entré. Il ne l’apprend qu’à une condition, une seule : que la température baisse pour de bon. Ce qui le renseigne est donc exactement ce qu’il a pour mission d’effacer. Et s’il faisait son travail à la perfection, si la température ne bougeait jamais d’un dixième de degré, il ne recevrait plus aucune nouvelle du dehors et ne saurait plus quand agir.",
+    "Ce n’est pas une bizarrerie de thermostat, c’est une propriété de tout dispositif qui se corrige d’après ses propres écarts. W. Ross Ashby en fait, au chapitre 12 de An Introduction to Cybernetics, un résultat en forme de plafond : ce genre de correcteur ne peut jamais être parfait, non parce qu’il serait mal construit, mais parce que son succès tarit l’information dont il vit. Il en tire la conséquence en une ligne : « Clearly, any success by R can at best be partial. » Reste à voir pourquoi, et surtout ce que ce plafond n’interdit pas."
+  ],
+  "sections": [
+    {
+      "title": "Corriger la cause, ou corriger l’effet",
+      "paragraphs": [
+        "Un correcteur peut être renseigné de deux façons, et tout dépend de laquelle. Dans le premier cas, il apprend la perturbation elle-même avant qu’elle ait produit son effet : l’organisme réagit à la menace et non au désastre, la souris gagne son trou avant la griffe. Cela suppose qu’il travaille plus vite que ce qu’il régule, et Ashby dit sans détour que ce cas est réel et important. Il ajoute aussitôt qu’il en existe beaucoup d’autres où cette anticipation est impossible.",
+        "Un bain thermostaté, écrit-il, n’est pas en mesure de dire qu’il voit venir quelqu’un avec un flacon froid qu’on va y plonger : il n’apprend rien tant que la température de l’eau n’a pas commencé à baisser. La régulation de l’oxygène dans le sang est du même ordre : elle tire son information de l’effet nuisible, le manque d’oxygène, et non de sa cause. C’est cette forme-là qu’Ashby appelle régulation par l’erreur, et il annonce à la fin de la section qu’il lui consacrera tout le reste du livre : « This form is of the greatest importance and widest applicability. The remainder of the book will be devoted to it. »",
+        "Il écrit tout cela avec des lettres, qui reviennent dans chacune de ses phrases : D est la perturbation, T le système qu’elle frappe, R le régulateur qu’il s’agit de construire, E la variable essentielle qui doit rester dans les limites acceptables. La régulation par l’erreur est le cas où R n’est affecté que par ce qui arrive effectivement en E."
+      ]
+    },
+    {
+      "title": "Ce que « parfait » veut dire ici",
+      "paragraphs": [
+        "Le mot n’a rien d’approximatif sous la plume d’Ashby : il renvoie à une situation qu’il a construite plus tôt dans le livre, sous la forme d’un jeu à deux coups. La perturbation joue d’abord, le régulateur joue ensuite en connaissant le coup adverse, et le résultat se lit dans une table à double entrée. Le régulateur est parfait s’il peut, quel que soit le coup joué contre lui, amener à coup sûr le résultat dans l’ensemble des états acceptables. Parfait ne veut donc dire ni rapide ni élégant : cela veut dire qu’il n’existe aucune perturbation qu’il ne puisse contenir.",
+        "C’est cette perfection-là que le chapitre 12 déclare hors d’atteinte, et il le fait en italiques : « A fundamental property of the error-controlled regulator is that it cannot be perfect […] » Le régulateur commandé par l’écart n’a pas le droit de jouer en connaissance de cause, puisque son coup à lui est déterminé par le résultat. Ashby en donne d’abord la version calculée : dans ce régime strict, le résultat prend autant de valeurs distinctes que la perturbation, autrement dit il n’y a aucune régulation du tout, quelle que soit la manière dont on construit le régulateur. Puis vient la version intuitive, et c’est elle qui fait comprendre."
+      ]
+    },
+    {
+      "title": "Le canal que le succès obstrue",
+      "paragraphs": [
+        "Pour que le régulateur serve à quelque chose, il faut que l’information sur la perturbation lui parvienne. Dans la régulation par l’erreur, cette information fait un détour : elle passe par le système régulé et ne se présente à lui que sous la forme d’un écart de la variable qu’il doit tenir. L’écart est donc deux choses à la fois, la faute à effacer et le message qui dit quoi faire.",
+        "Ashby mesure ce message. Ce qui circule dans un canal se compte, dans son vocabulaire comme dans celui de la théorie de la communication de son époque, au nombre d’états distincts que la chose peut prendre : c’est ce qu’il appelle la variété. Réguler avec succès, c’est faire tomber le nombre d’états que la variable essentielle prend effectivement, jusqu’à un seul dans le cas idéal. Mais ce nombre est aussi la capacité du canal par lequel le régulateur est informé : tenir la variable rigoureusement constante, c’est boucher ce canal.",
+        "D’où la phrase du chapitre et sa conclusion immédiate, que tout succès du régulateur ne peut au mieux être que partiel. Ce n’est pas un défaut de fabrication qu’un meilleur ingénieur corrigerait : c’est une borne, et elle tient à la seule circulation de l’information. Le dispositif se prive de ce qui le renseigne dans la mesure exacte où il réussit."
+      ]
+    },
+    {
+      "title": "La petite erreur qui approvisionne",
+      "paragraphs": [
+        "La suite du chapitre interdit de lire ce plafond comme une condamnation. Une régulation complète, écrit Ashby, n’est heureusement pas toujours nécessaire. Les variables essentielles ne se partagent pas entre un état normal et un état létal : elles s’échelonnent le plus souvent le long d’une échelle continue d’indésirabilité. Un animal terrestre peut traverser bien des degrés de déshydratation avant de mourir de soif, et un renversement de tendance obtenu à mi-chemin mérite le nom de régulation s’il lui sauve la vie, même s’il ne lui a pas épargné l’inconfort.",
+        "C’est cette continuité qui rouvre la porte que la démonstration venait de fermer : elle rend possible une régulation qui n’est pas parfaite et qui est pourtant « of the greatest practical importance ». La formule vient dans la foulée : « Small errors are allowed to occur; then, by giving their information to R, they make possible a regulation against great errors. » La petite erreur tolérée n’est pas un déchet du dispositif, elle est son approvisionnement en information.",
+        "Cela implique qu’un correcteur qui prétendrait ne plus laisser passer le moindre écart se priverait de quoi prévenir les grands. La marge d’erreur admise n’est pas la mesure de son imperfection : elle est la condition de son fonctionnement."
+      ]
+    },
+    {
+      "title": "Le retard n’est pas le motif",
+      "paragraphs": [
+        "Une explication plus simple vient tout de suite à l’esprit, et elle circule : la correction par l’écart serait imparfaite parce qu’elle arrive après coup, l’écart devant se produire avant que le correcteur sache quoi faire. La lecture est intuitive et ce n’est pas celle d’Ashby. Chez lui, le retard n’est pas le défaut du dispositif : c’est la circonstance qui oblige à y recourir, la raison pour laquelle on n’a pas pu prendre la perturbation à sa source.",
+        "Séparer les deux n’est pas une subtilité, car elles ne mènent pas au même endroit. Si l’imperfection tenait au retard, un correcteur plus prompt s’approcherait indéfiniment de la perfection, et il suffirait d’accélérer. Dans le raisonnement d’Ashby, la vitesse ne déplace pas la borne : tant que la seule information du régulateur est l’écart, plus il tient la variable serrée, plus il resserre le canal. Ce qui peut varier, ce n’est pas le délai, c’est la quantité d’écart qu’on accepte de laisser exister."
+      ]
+    },
+    {
+      "title": "Les mots empruntés, le résultat démontré",
+      "paragraphs": [
+        "Ashby n’a pas forgé le vocabulaire et ne le revendique pas. Au moment de nommer le montage, il met lui-même entre guillemets « error-controlled servo-mechanism » et « closed loop regulator » : les deux expressions viennent du langage des asservissements de son temps, et le dispositif à rétroaction qu’elles désignent était déjà bien connu de ses lecteurs. Il le dit à la fin du chapitre, en prévenant celui qui lui reprocherait d’avoir mis tant de soin à énoncer du déjà su : « we have stated with care what is already well known ».",
+        "Ce qui est déjà bien connu, c’est le montage, pas le plafond. Et ce soin avait sa raison : Ashby s’apprêtait à porter le régulateur commandé par l’écart bien au-delà de son domaine habituel, du servomécanisme et du thermostat déterministes vers la machine non déterminée. Le résultat du chapitre 12 n’est donc pas une réserve d’ingénieur sur une technique, c’est la borne qu’il pose avant de bâtir sur elle.",
+        "Deux ans plus tard, dans un article de 1958 sur la variété requise, il redit la même chose en son nom propre : « the more successful the regulator, the less will be the range of the error, and therefore the less will be the capacity of the channel from D to R […] The error-controlled regulator is thus fundamentally incapable of being 100 percent efficient. » Et il ne crédite personne d’autre pour ce résultat : sa bibliographie ne renvoie, sur ce point, qu’à son propre livre de 1956."
+      ]
+    }
+  ],
+  "limits": [
+    "Les termes français employés ici sont les nôtres et non les siens : Ashby écrit error-controlled regulator et regulation by error, et « le régulateur commandé par l’écart » en est un rendu. Pour lire ce chapitre dans le français où il a circulé de ce côté-ci de la Manche, c’est la traduction Dunod de 1958 qu’il faudra ouvrir.",
+    "Ce que la cybernétique ultérieure a fait de ce résultat, qui l’a repris tel quel et qui l’a reformulé autrement, n’est pas établi par les sources disponibles ici : la réponse est dans les travaux qui citent le chapitre 12.",
+    "Le mot à mot cité plus haut vient de l’exemplaire londonien de Chapman & Hall, seconde impression de 1957. Le tirage new-yorkais de John Wiley porte le même chapitre aux mêmes pages : ses feuillets imprimés diraient si la composition y est identique ligne pour ligne.",
+    "Ashby annonce enfin qu’il va porter ce régulateur jusqu’à la machine non déterminée, et le chapitre suivant s’ouvre sur la régulation des très grands systèmes. Ce que devient le plafond quand le système régulé cesse d’être déterministe, c’est la suite du livre qu’il faudra lire pour le savoir."
+  ]
+}

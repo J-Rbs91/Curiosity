@@ -1,0 +1,52 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "amplification-de-la-regulation",
+  "lead": [
+    "Un bouton de volume ne fabrique pas de son, et la pédale d’accélérateur ne fabrique pas la puissance qui pousse la voiture. Dans les deux cas, un geste minuscule commande un effet sans commune mesure avec lui : l’énergie est déjà là, dans le secteur ou dans le réservoir, et le geste se contente de la libérer. W. Ross Ashby part de cette évidence pour la retourner en remarque : un amplificateur n’agrandit presque jamais ce qu’on lui donne, il lui ajoute quelque chose qui vient d’ailleurs. L’exception qu’il cite, c’est la lentille du projectionniste de cinéma, qui grossit vraiment l’image qu’elle reçoit.",
+    "Reste à savoir ce qu’il advient de cette mécanique quand ce qu’on cherche à obtenir n’est plus de la puissance, mais de la correction : la capacité de tenir quelque chose dans l’état voulu malgré tout ce qui vient l’en écarter. Là, une loi ferme la porte, et elle est de lui : pour parer des perturbations variées, il faut disposer d’au moins autant de réponses distinctes. Ashby consacre pourtant un chapitre entier à montrer par où l’on passe quand même, et surtout à quel prix."
+  ],
+  "sections": [
+    {
+      "title": "Ce que fait un amplificateur de puissance",
+      "paragraphs": [
+        "L’amplificateur de puissance ne crée pas d’énergie, et Ashby y insiste parce que toute la suite en dépend. Il puise dans une réserve abondante, charbon, pétrole, secteur, et il n’y parvient que parce que l’opération se fait en deux étages couplés, à l’intérieur desquels l’énergie est strictement conservée. C’est cette séparation en deux étages qui rend l’amplification possible : en un seul étage, la loi de conservation de l’énergie interdirait toute amplification simple et directe de la puissance. L’image qu’Ashby en donne est celle d’un enfant qui soulève de grandes charges parce que son père accepte de les soulever à sa place.",
+        "De là deux points de vue, qu’il renvoie dos à dos en donnant raison aux deux. Pour le théoricien, rien n’est amplifié : l’énergie a été prise ailleurs, et le bilan général est nul. Pour l’homme de métier, qui dispose effectivement d’une source abondante et qui doit obtenir un résultat, l’amplification est parfaitement réelle et parfaitement utile. Cette double lecture n’est pas une coquetterie de rédaction : elle prévient le contresens qui guette la transposition à la régulation, où l’on croira volontiers qu’une capacité est sortie de rien."
+      ]
+    },
+    {
+      "title": "Fabriquer un régulateur, c’est le sélectionner",
+      "paragraphs": [
+        "Ashby transporte l’analogie en toutes lettres. Au moment d’énoncer l’interdit, il range la loi de la variété requise, celle qui exige d’un régulateur autant de réponses distinctes qu’il y a de perturbations à parer, dans la même classe que la conservation de l’énergie, « like the law of Conservation of Energy », et cette incise fait tout le travail. Une loi de conservation n’a jamais empêché la moindre amplification de puissance ; elle empêche seulement de la tirer de rien.",
+        "Encore faut-il savoir ce qui, pour un régulateur, joue le rôle de l’énergie. Le pas décisif consiste à le mesurer autrement que par sa taille ou par son prix. Pour qu’un régulateur existe, il a fallu le choisir parmi toutes les machines qu’on aurait pu construire à sa place, et ce choix se compte : c’est le nombre de décisions élémentaires, oui ou non, nécessaires pour désigner celui-là plutôt que les autres. Un régulateur de grande capacité, capable de parer beaucoup de perturbations différentes, coûte beaucoup de sélection ; un petit en coûte peu. La question devient alors une question de comptabilité : combien de sélection faut-il dépenser pour en obtenir combien ?",
+        "L’énoncé qu’Ashby compose alors, et qu’il met lui-même en italique, est prudent jusque dans sa grammaire : si le régulateur final peut être atteint par étapes, « the possibility exists that the provision of a small regulator at the first stage may lead to the final establishment of a much bigger regulator », la possibilité existe que la fourniture d’un petit régulateur au premier étage conduise à l’établissement final d’un régulateur bien plus grand. Une possibilité, et un verbe qui ne promet rien. Le chapitre précédent avait posé la même chose plus sèchement, en notant que la capacité du second régulateur n’est pas bornée par celle du premier."
+      ]
+    },
+    {
+      "title": "La perturbation qui revient tous les jours",
+      "paragraphs": [
+        "Ce qui rend l’opération payante n’est pas la mise en étages, c’est la répétition. Ashby le montre sur un exemple chiffré, un bain qu’il faut maintenir en température. Admettons cent corrections par jour pendant un an : trente-six mille cinq cents décisions élémentaires que quelqu’un doit prendre, une par une, s’il s’en charge à la main. Supposons maintenant qu’il sache construire un thermostat, et que fixer ce thermostat lui coûte, disons, mille de ces mêmes décisions. Le rapport entre les deux quantités est d’environ trente-six, et c’est là que l’amplification a lieu : « the act of selecting appropriately from 1000 bits has as consequence the correct selection from 36,500 bits ».",
+        "Le mot qui porte tout, dans la phrase d’Ashby, est celui qu’on saute : c’est en utilisant le fait que la grande perturbation est répétitive que la sélection de mille bits vaut celle de trente-six mille cinq cents. Le chapitre précédent l’avait annoncé sans détour, « From here on we shall consider the case in which the disturbance, and the regulatory response, occur more than once; for such cases show constraint, of which advantage can be taken » : à partir d’ici seront considérés les cas où la perturbation, et la réponse qui la corrige, se produisent plus d’une fois, car ces cas présentent une régularité dont on peut tirer parti. Une perturbation qui ne survient qu’une seule fois n’offre rien à exploiter : la machine chargée de la corriger devrait être choisie aussi finement que la réponse qu’elle remplace."
+      ]
+    },
+    {
+      "title": "D’où vient la variété qui manque",
+      "paragraphs": [
+        "Reste la question que l’analogie rendait inévitable. L’amplificateur de puissance prend son énergie dans un réservoir ; où le second étage d’une régulation prend-il la variété que le premier n’avait pas ? Ashby répond que ce supplément est apporté par les autres entrées du système, et que l’environnement en fait partie. Son exemple est celui d’une vingtaine de mécaniciens chargés de tenir deux mille pièces climatisées : c’est l’environnement, et non le mécanicien, qui indique à chaque conditionneur la température et l’humidité du moment. Ces sources participent à la régulation d’ensemble sans emprunter le mécanicien comme canal, et c’est bien ce canal-là, seul, qui n’aurait jamais suffi.",
+        "D’où la formule du chapitre, « the regulation that could not be done in one stage may, if the conditions are suitable, be possible in two » : la régulation qu’on ne pouvait pas obtenir en un étage peut, si les conditions s’y prêtent, être possible en deux. Rien n’oblige d’ailleurs à s’arrêter à deux étages. Et Ashby refuse de présenter le procédé comme une nouveauté : les animaux supérieurs, ceux qui s’adaptent en apprenant, ont trouvé la méthode depuis longtemps."
+      ]
+    },
+    {
+      "title": "Les cas où l’amplification n’a pas lieu",
+      "paragraphs": [
+        "Ashby pose deux garde-fous que les reprises perdent volontiers. Le premier tient en une phrase : « There is, of course, not necessarily any amplification ». Celui qui fabrique fait toujours, au moins intuitivement, la balance entre ce que coûte la construction de la machine qui fera le travail et ce que coûterait le travail fait à la main. Si le thermostat exige plus de décisions que l’année de corrections qu’il remplace, rien n’est gagné, et la mise en étages n’y changera rien.",
+        "Le second garde-fou est un cas négatif, pris chez le vivant. Quand le patrimoine génétique spécifie directement le régulateur, il n’y a pas d’amplification à ce compte-là, même si un avantage subsiste lorsque les perturbations reviennent souvent au cours de la vie de l’organisme. L’amplification apparaît quand ce patrimoine fabrique plutôt un cerveau qui apprend, et obtient par lui « an ultimate regulation far greater than could be achieved by the gene-pattern directly », une régulation finale bien plus grande que celle qu’il pourrait atteindre directement.",
+        "Le mot amplification ne qualifie donc pas un dispositif, et il ne désigne aucune propriété qu’une machine posséderait en elle-même. Il nomme un rapport entre deux quantités de sélection, celle qu’on dépense et celle qu’on obtient, et ce rapport peut très bien valoir un."
+      ]
+    }
+  ],
+  "limits": [
+    "Les deux mots sur lesquels la phrase d’Ashby repose, magnification et supplementation, ont été tranchés une fois en français, dans la traduction publiée chez Dunod en 1958 sous le titre Introduction à la cybernétique. C’est elle qui porte la formule qui fait référence, avec son traducteur et sa page.",
+    "Une seule reprise dédiée du concept sous son nom a été repérée : Michael U. Ben-Eli, « Amplifying regulation and variety increase in evolving systems », Journal of Cybernetics, 9(3), 1979, p. 285-296. Ce qu’il en fait, ces pages le disent et elles seules. Ni la reprise que fait Ashby de sa propre loi en 1958 dans Cybernetica, ni la synthèse de Heylighen et Joslyn sur la cybernétique, ni le Web Dictionary of Cybernetics and Systems ne le nomment ; trois absences ne font pas une réception.",
+    "Le même auteur a intitulé « Amplifying Adaptation » un chapitre de Design for a Brain, dans son édition de 1960 : le même mouvement, appliqué cette fois à l’adaptation. Reprend-il l’argument de 1956, le prolonge-t-il ? Ce chapitre le dira. Et dans un autre tirage, le repère qui ne bouge pas n’est pas la page 268, mais le numéro de section, 14/4."
+  ]
+}

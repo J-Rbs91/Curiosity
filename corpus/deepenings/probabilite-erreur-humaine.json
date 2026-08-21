@@ -1,0 +1,52 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "probabilite-erreur-humaine",
+  "lead": [
+    "Un calcul de sûreté avance par probabilités : un chiffre pour la défaillance d’une pompe, un autre pour celle d’un capteur, et l’on combine le tout. Puis vient le moment où il faut un chiffre pour la personne qui referme une vanne après un essai. Dire d’elle qu’elle est consciencieuse ne se combine avec rien. Dire qu’elle omettra ce geste une fois sur tant d’exécutions entre au contraire dans le calcul, à condition de savoir d’où sort ce nombre, ce qu’il compte exactement, et ce qu’on a le droit d’en faire.",
+    "En août 1983, un manuel commandé par la commission de sûreté nucléaire des États-Unis à un laboratoire de Sandia, à Albuquerque, prend le problème de front : il annonce fournir « the methodology to identify and quantify the potential for human error in NPP tasks », de quoi repérer et chiffrer le potentiel d’erreur humaine dans les tâches d’une centrale. L’indice qu’il place au centre de tout le reste est cette probabilité. Mais l’essentiel se joue dans les lignes qui suivent immédiatement sa définition, où les auteurs disent d’où ce nombre viendrait s’il le pouvait, et d’où il vient en réalité."
+  ],
+  "sections": [
+    {
+      "title": "Une action qui sort des limites",
+      "paragraphs": [
+        "Quelques pages plus tôt, les auteurs ont dit ce qu’ils appellent une erreur, et la définition qu’ils en donnent, assortie d’un renvoi à Rigby, tient en une ligne : « We define human error as any member of a set of human actions that exceeds some limit of acceptability (Rigby, 1970). » Une erreur est une action qui dépasse une limite d’acceptabilité, et cette limite, c’est le système qui la fixe. Ce sont les tolérances de l’installation qui décident de ce qui compte comme une erreur, pas la personne qui agit.",
+        "Deux conséquences en découlent, et la première tient à ce que le mot ne dit pas ici : « In an objective assessment of human error, there is no connotation of blame or fault. » Le terme n’accuse personne. Il désigne une action hors tolérance, que les auteurs regardent comme le produit d’une combinaison défavorable entre des personnes et une situation de travail. La seconde conséquence porte sur le chiffre. Un même geste peut être une erreur dans une installation et n’en être pas une dans une autre, si les limites n’y sont pas placées au même endroit. La probabilité ne se rapporte donc jamais à une personne seule : elle se rapporte à une tâche, dans un système qui a défini ses tolérances."
+      ]
+    },
+    {
+      "title": "Une chance par exécution, non par heure",
+      "paragraphs": [
+        "La définition attache la probabilité à un événement précis : à cette exécution-ci de cette tâche-là, une erreur se produit. Ce n’est pas une quantité par heure de service ni par année d’exploitation. Le dénominateur, implicite dans la phrase, est un nombre d’occasions : le nombre de fois où la tâche est exécutée, donc le nombre de fois où l’erreur en question pouvait se produire.",
+        "Les auteurs ont changé de vocabulaire pour cette raison, et ils le disent : « In our earlier reports, including Section 6.1 of WASH-1400, we used the term human error rate (HER) interchangeably with human error probability. » Ils abandonnent le mot « rate », taux, parce qu’il s’entend le plus souvent comme une fréquence par unité de temps, et qu’il installe donc exactement la confusion qu’ils veulent éviter. Deux nombres qui n’ont pas le même dénominateur ne se comparent pas, et s’additionnent encore moins.",
+        "Une trace de l’ancien mot subsiste pourtant, et elle se rencontre partout : le sigle de la méthode, THERP, développé en Technique for Human Error Rate Prediction, porte encore le terme abandonné. Les auteurs le gardent parce qu’il est établi de longue date, et ils datent eux-mêmes son premier emploi : « At the Sixth Annual Meeting of the Human Factors Society in November 1962, the acronym THERP was first used to designate the human reliability method developed at SNL (Swain, 1963a). » Vingt ans avant le manuel, donc, et sous un mot que le manuel n’emploie plus."
+      ]
+    },
+    {
+      "title": "Compter des occasions, ou juger",
+      "paragraphs": [
+        "D’où viendrait le chiffre, dans le meilleur des cas ? Les auteurs répondent sans détour : « Ideally, HEPs would be determined from actuarial data ». Des données actuarielles, au sens des tables que construisent les assureurs : on relève le nombre d’erreurs d’un type donné effectivement observées, on le divise par le nombre d’occasions où cette erreur pouvait survenir, et le rapport obtenu est la fréquence cherchée. Rien à supposer, rien à arbitrer : on compte.",
+        "La phrase suivante retire ce que la première laissait espérer : « Unfortunately, very little of this type of data exists for NPP tasks. » Les tâches d’une centrale ne se prêtent guère à ce relevé, et le manuel doit donc estimer autrement. Certaines estimations sont statistiques, d’autres relèvent du jugement, et un seul terme les recouvre toutes. Les auteurs forgent un nom pour cette situation : « Because most of our estimates of HEPs are based on some combination of data and judgment, we call them derived HEPs », des probabilités dérivées, ainsi appelées pour les distinguer de celles qu’on aurait calculées sur des fréquences réellement observées.",
+        "Leur quantificateur est « most », la plupart, et non « toutes » : ils ne rangent pas là l’ensemble de leurs valeurs. La conséquence pour qui lit un tableau n’en est pas amoindrie. Deux nombres y ont la même allure, le même nom et le même nombre de décimales, quand l’un a été compté et l’autre estimé. Ce n’est pas le nom de la grandeur qui les sépare, et la question de leur provenance se pose à chaque ligne."
+      ]
+    },
+    {
+      "title": "Ce que « nominal » a retiré du chiffre",
+      "paragraphs": [
+        "Les valeurs publiées par le manuel portent un qualificatif qu’il vaut mieux prendre au sérieux : ce sont des probabilités nominales. Les facteurs propres à une installation et les facteurs propres à une situation en ont été retirés. Ce qu’un tableau donne n’est donc pas la probabilité d’erreur d’une équipe donnée, dans une salle de commande donnée, à trois heures du matin et au dixième jour d’un arrêt : c’est une valeur de base, à laquelle l’analyse doit ensuite rendre ce qu’on lui a ôté.",
+        "Reprendre telle quelle une valeur nominale et la porter dans un calcul, c’est donc sauter une étape que les auteurs ont prévue. Le nombre a l’air complet et il ne l’est pas ; le mot qui le signale tient en trois syllabes, et rien, dans le chiffre lui-même, ne vient le rappeler."
+      ]
+    },
+    {
+      "title": "La fiabilité humaine, l’autre face du calcul",
+      "paragraphs": [
+        "Le manuel définit aussi la grandeur symétrique, et il l’emprunte à deux auteurs qu’il nomme, Evans (1976) et Meister (1966) : la fiabilité humaine y est la probabilité qu’une personne, d’une part, exécute correctement une activité requise par le système dans le temps imparti lorsque le temps est un facteur limitant, et d’autre part n’exécute aucune activité étrangère susceptible de dégrader le système. Le second membre n’est pas une redite du premier : on peut faire ce qui est demandé et faire, en plus, quelque chose qui nuit.",
+        "Une précaution de vocabulaire accompagne cette définition, et elle évite un contresens facile d’une discipline à l’autre. Dans ce manuel, fiabilité s’entend au sens d’exactitude, et non au sens où les psychologues emploient le mot, celui de la constance d’une mesure répétée. Les auteurs ajoutent que d’autres façons de mesurer la performance humaine pourraient servir ailleurs à définir la fiabilité, mais qu’ils s’en tiennent pour leur part aux probabilités. La restriction est déclarée plutôt que subie, et elle dit le prix auquel la performance humaine entre dans un calcul de sûreté : celui d’un nombre compris entre zéro et un."
+      ]
+    }
+  ],
+  "limits": [
+    "Les valeurs elles-mêmes, tâche par tâche, sont dans les chapitres qui suivent celui des définitions, et un addendum du 1er septembre 1985, signé de Swain seul, en corrige une partie, ainsi que des tableaux et des figures, sans toucher au chapitre où la probabilité est définie. Qui veut reprendre un de ces chiffres lira les deux ensemble.",
+    "L’expression est plus ancienne que ce manuel : les auteurs renvoient à leurs rapports antérieurs, dont la section 6.1 de WASH-1400, et à un texte de Swain de 1963. Sous quelle forme la notion y était déjà posée, ce sont ces pages qui le diront. Une version préliminaire du même rapport, datée de 1980, circule d’ailleurs sous le même numéro et se trouve parfois citée à sa place : les phrases reprises plus haut sont celles du rapport final d’août 1983.",
+    "Pour citer ce manuel, c’est l’anglais qui fait référence : aucune traduction française publiée n’en est connue, et le français donné plus haut sert à comprendre, non à référencer. Sur ce que cinquante ans d’usage ont fait de la méthode, il y a un article de 2012 signé Boring, « Fifty Years of THERP and Human Reliability Analysis »."
+  ]
+}
