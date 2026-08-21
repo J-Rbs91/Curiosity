@@ -37,7 +37,7 @@ plus bas ; ce qui reste à faire commence au chantier B.
 
 **Vidé le 21 août 2026.** Les vingt-cinq cartes qui n'avaient pas d'approfondissement en ont
 un : les treize de human factors, ouvertes le 19 août, et les douze de cybernétique, ouvertes
-le 21. `corpus:deepen` projette désormais **57 approfondissements, 83 523 mots, 1 465 en
+le 21. `corpus:deepen` projette désormais **57 approfondissements, 83 469 mots, 1 464 en
 moyenne**, et sa fin de sortie ne liste plus aucune carte.
 
 C'était le seul écart du corpus entre ce qui est validé et ce qui est servi.
