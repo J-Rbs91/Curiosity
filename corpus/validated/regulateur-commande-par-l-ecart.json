@@ -1,0 +1,84 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "regulateur-commande-par-l-ecart",
+  "slug": "regulateur-commande-par-l-ecart",
+  "status": "VALIDATED",
+  "title": "Le régulateur commandé par l'écart",
+  "themes": [
+    "la-boucle-et-l-ecart"
+  ],
+  "authors": [
+    {
+      "name": "W. Ross Ashby",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "W. Ross Ashby signe seul l'ouvrage, paru chez Chapman & Hall en 1956 ; l'exemplaire lu est la seconde impression de 1957. Le résultat porté ici, qu'un régulateur qui ne s'informe que de l'écart ne peut jamais réguler parfaitement, est démontré par lui au chapitre 12, sans coauteur et sans renvoi à un travail antérieur. Deux réserves de vocabulaire, qui ne touchent pas la paternité du résultat : Ashby met lui-même entre guillemets « error-controlled servo-mechanism » et « closed loop regulator », qu'il emprunte au vocabulaire de l'asservissement de son époque, et le titre français est notre rendu de « error-controlled regulator », aucune traduction française n'ayant été ouverte.",
+  "hook": "Que reste-t-il à corriger quand la correction a tari ce qui l'informait ?",
+  "summary": "Un régulateur qui ne s'informe que de l'écart ne peut pas réguler parfaitement : plus il tient la variable constante, plus il bloque le canal qui l'informe.",
+  "quotation": {
+    "text": "[…] the more successful R is in keeping E constant, the more does R block the channel by which it is receiving its necessary information.",
+    "reference": "W. Ross Ashby, An Introduction to Cybernetics, Londres, Chapman & Hall, 1956 (tirage lu : seconde impression, 1957), chapitre 12 « The Error-Controlled Regulator ». Édition électronique de 1999 préparée pour le Principia Cybernetica Web avec l'autorisation de la succession Ashby.",
+    "locator": "ch. 12, section 12/5, p. 224",
+    "language": "en",
+    "original_text": null,
+    "original_language": null,
+    "translation": {
+      "kind": "none",
+      "translator": null,
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "W. Ross Ashby, An Introduction to Cybernetics, Londres, Chapman & Hall, 1956. Édition électronique de 1999 autorisée par la succession Ashby, Principia Cybernetica Web.",
+      "kind": "primary",
+      "locator": "ch. 12, p. 219-243",
+      "doi_isbn": null,
+      "url": "https://pespmc1.vub.ac.be/books/IntroCyb.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "W. Ross Ashby, An Introduction to Cybernetics, New York, John Wiley & Sons, 1956. Exemplaire numérisé à l'Internet Archive, item AnIntroductionToCybernetics.",
+      "kind": "primary",
+      "locator": "table des matières",
+      "doi_isbn": null,
+      "url": "https://archive.org/details/AnIntroductionToCybernetics",
+      "consulted": "partial"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle",
+    "date": "2026-08-21",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "CITATION — verbatim, à l'endroit annoncé. J'ai téléchargé https://pespmc1.vub.ac.be/books/IntroCyb.pdf (HTTP 200, 2 023 477 octets, 156 pages A4 à deux pages de livre chacune) et extrait le texte avec PyMuPDF. Page PDF 120 = page imprimée 224, en-tête courant « THE ERROR-CONTROLLED REGULATOR ». On y lit : « So the more successful R is in keeping E constant, the more does R block the channel by which it is receiving its necessary information. Clearly, any success by R can at best be partial. » Comparaison caractère par caractère après dé-césure : le fragment de la fiche est identique au texte source. Le « […] » initial couvre exactement le « So » de tête de phrase — la coupe est donc signalée comme il se doit. Le passage tombe bien dans la section 12/5, qui s'ouvre p. 223 par « A fundamental property of the error-controlled regulator is that it cannot be perfect in the sense of S.11/3 » et se clôt avant 12/6, p. 224. Citation en anglais, translation.kind = « none » : aucune traduction n'est revendiquée, rien à déclarer de ce côté.",
+      "SOURCES 1/2 — résout, et la mise à disposition est légitime par constat, non par déduction. La page de titre du PDF porte « AN INTRODUCTION TO CYBERNETICS by W. ROSS ASHBY […] SECOND IMPRESSION / LONDON / CHAPMAN & HALL LTD / 37 ESSEX STREET WC2 / 1957 », et la page suivante « First published 1956 / Second impression 1957 » : l'indication de la fiche « Chapman & Hall 1956, tirage lu : seconde impression 1957 » est exacte. La page de copyright porte « Copyright © 1956, 1999 by The Estate of W. Ross Ashby », « Prepared for the Principia Cybernetica Web », « With kind permission of the Estate trustees — Jill Ashby, Sally Bannister, Ruth Pettit », et « Non-profit reproduction and distribution of this text for educational and research reasons is permitted providing this copyright statement is included ». La page d'accueil https://pespmc1.vub.ac.be/ASHBBOOK.html (HTTP 200) le redit : « This publication has been made possible largely through Mick Ashby, the author's grandson, who has convinced the copyright holders (the Ashby estate) that they should allow us to produce an electronic version. » L'autorisation d'ayant droit est donc écrite noir sur blanc par l'hébergeur et par le texte lui-même.",
+      "SOURCES 1/2, pagination — le locator « ch. 12, p. 219-243 » est exact : le chapitre 12 s'ouvre p. 219 (page PDF 117, « Chapter 12 / THE ERROR-CONTROLLED REGULATOR / 12/1. In the previous chapter we studied the nature of regulation… ») et le chapitre 13 « REGULATING THE VERY LARGE SYSTEM » s'ouvre p. 244 (page PDF 130). Le chapitre 12 court donc bien p. 219-243.",
+      "SOURCES 2/2 — résout aussi. https://archive.org/metadata/AnIntroductionToCybernetics (HTTP 200) : creator « Ashby, W. Ross », date 1956, collections millionbooks / universallibrary. J'ai lu l'OCR via https://archive.org/stream/AnIntroductionToCybernetics/AnIntroductionToCybernetics_djvu.txt (HTTP 200, item ouvert en accès libre, sans emprunt ni contrôle d'accès, donc rien à contourner) : la page de titre porte « NEW YORK / JOHN WILEY & SONS INC. / 440 FOURTH AVENUE / 1956 » et « First published 1956 ». L'édition annoncée par la fiche — Wiley, New York, 1956 — est donc la bonne. La table des matières, qui est le locator déclaré, s'y trouve et comporte bien « 12: The Error-controlled Regulator » suivi de « 13: Regulating the Very Large System ».",
+      "SOURCES 2/2, deux observations qui ne font pas défaut. (a) L'item Internet Archive ne compte que 10 pages : c'est un fragment de liminaires (page de titre, préface, table des matières), pas le livre entier. La fiche ne prétend rien d'autre — locator « table des matières », consulted « partial » — mais le mot « exemplaire numérisé » du label est un peu large pour dix pages ; les deux champs qui l'encadrent le bornent correctement. (b) Contrairement au PDF de Principia Cybernetica, cet item ne porte aucune mention de droits, de licence ni d'autorisation, ni dans ses métadonnées ni sur sa page publique. Je ne peux donc pas constater d'autorisation d'ayant droit pour lui — je ne la déduis ni de son âge ni de son accès libre. Comme la fiche n'en revendique aucune pour cette source et ne s'en sert que pour la table des matières, la référence résout tout de même.",
+      "ATTRIBUTION — confirmée. Le résultat porté par la carte est démontré par Ashby en 12/5, sous sa seule signature, sans coauteur et sans renvoi à un travail antérieur : preuve formelle esquissée (« It is easily shown that with these conditions E's variety will be as large as D's — i.e. R can achieve no regulation ») puis raisonnement informel. Contrôle indépendant : j'ai ouvert https://pespmc1.vub.ac.be/books/AshbyReqVar.pdf (HTTP 200, 13 p.), soit Ashby, « Requisite Variety and its implications for the control of complex systems », Cybernetica I-2, 1958. Il y reformule le même résultat en son nom propre, p. 9, section « The error-controlled regulator » : « the more successful the regulator, the less will be the range of the error, and therefore the less will be the capacity of the channel from D to R […] The error-controlled regulator is thus fundamentally incapable of being 100 percent efficient. » Sa bibliographie ne crédite personne d'autre pour ce résultat : elle ne renvoie, pour lui, qu'à son propre livre de 1956 (Shannon-Weaver n'y figure que comme cadre général de la théorie de la communication). Aucune source consultée ne désigne de prédécesseur.",
+      "ATTRIBUTION, réserve de vocabulaire vérifiée et justifiée. La note de la fiche distingue à raison la paternité du résultat de celle des termes. J'ai vérifié : en 12/4, p. 223, Ashby écrit bien « the basic form of the simple \"error-controlled servo-mechanism\" or \"closed loop regulator\" », les deux expressions entre guillemets, empruntées au vocabulaire de l'asservissement — et il ajoute en 12/7 « we have stated with care what is already well known », ce qui vise la notoriété du dispositif à rétroaction, non celle du théorème d'imperfection. La distinction opérée par la fiche est donc exacte, et l'« already well known » d'Ashby ne mord pas sur le résultat attribué.",
+      "PROSE — fidèle, dans les deux sens. Le summary (« ne peut pas réguler parfaitement : plus il tient la variable constante, plus il bloque le canal qui l'informe ») est le décalque de 12/5 : « it cannot be perfect » d'une part, la phrase citée de l'autre. Il ne durcit rien : Ashby écrit lui-même « any success by R can at best be partial », et le summary dit « pas parfaitement », non « pas du tout » — il laisse donc intacte la nuance de 12/6, où Ashby rappelle que la régulation imparfaite reste « of the greatest practical importance ». Le « ne s'informe que de l'écart » correspond au cas d'Ashby où « R is affected only by the actual effect at E ». Le hook est une question ouverte, sans affirmation à porter. Aucun adjectif en excès relevé.",
+      "TITRE FRANÇAIS — la fiche déclare que « Le régulateur commandé par l'écart » est son propre rendu de « error-controlled regulator », aucune traduction française n'ayant été ouverte. Je n'en ai pas ouvert non plus, et le rendu est exact quant au sens. La déclaration étant faite, il n'y a pas de traduction non signalée.",
+      "OUTIL — verify_reference n'avait rien à résoudre : les deux sources portent doi_isbn = null. J'ai donc vérifié les deux notices par récupération directe des documents, comme décrit ci-dessus. Aucun échec de résolution n'est ici à interpréter dans un sens ou dans l'autre.",
+      "PÉRIMÈTRE — je n'ai ouvert du dépôt que corpus/review/regulateur-commande-par-l-ecart.brief.json (et ma consigne, hors dépôt). Aucun dossier documentaire, cartographie ou note d'agent n'a été consulté. Tout le reste vient du web, aux URL et codes HTTP indiqués. Aucun mur d'accès n'a été rencontré ni contourné : les trois documents cités ont été servis en accès libre. Aucune inexactitude de fait relevée sur les champs affichés."
+    ]
+  },
+  "dossier": "corpus/evidence/regulateur-commande-par-l-ecart/lecture.json",
+  "notes": [
+    "Le motif de l'imperfection est informationnel et non chronologique. Ashby ne dit ni que la régulation par l'écart est mauvaise ni qu'elle arrive trop tard : il dit que son succès même tarit le canal dont elle vit. Il écrit d'ailleurs, p. 223 : « This form is of the greatest importance and widest applicability. The remainder of the book will be devoted to it. »",
+    "Le second versant appartient au même chapitre, section 12/6 : « Small errors are allowed to occur; then, by giving their information to R, they make possible a regulation against great errors. » La petite erreur tolérée n'est pas un déchet du dispositif, elle est son approvisionnement en information.",
+    "La coupe retire le « So » initial et la conclusion « Clearly, any success by R can at best be partial », que le titre de la carte porte : la citation donne le mécanisme, pas le verdict. Conserver les deux phrases était arithmétiquement impossible sous 150 caractères.",
+    "La seule source secondaire ouverte trouvée sur ce chapitre (Heylighen et Joslyn, 2001) motive l'imperfection autrement qu'Ashby, par le fait que la correction doit d'abord laisser apparaître un écart. Ce n'est pas son raisonnement : elle n'est pas affichée en source et ne doit pas servir de glose du chapitre 12.",
+    "Le tirage new-yorkais de John Wiley n'est affiché que pour ce qu'il a servi : sa table des matières imprimée confirme la pagination du chapitre 12. Sa couche océrisée est tronquée aux pièces liminaires et n'a pas pu confirmer le verbatim, relu sur l'image du feuillet.",
+    "Aucune couche francophone : les interrogations de HAL n'ont rien rendu, et la traduction Dunod de 1958 n'a pas été localisée. Les termes français de cette carte sont les nôtres.",
+    "La référence et le localisateur de la citation ont été ramenés à ce qui s'affiche ; le détail matériel du relevé est dans corpus/evidence/regulateur-commande-par-l-ecart/lecture.json.",
+    "Thème nouveau : « la-boucle-et-l-ecart » n'est pas encore déclaré dans src/content/themes.ts, d'où le libellé porté par la fiche et le champ domain renseigné."
+  ]
+}

@@ -24,6 +24,16 @@ import type { Theme } from "@/types";
  * replier sur l'erreur et la fiabilité serait une faute de fond, ce courant s'étant constitué
  * précisément contre l'idée qu'on comprend un système en étudiant ce qui le fait tomber.
  *
+ * Les quatre thèmes de `cybernetics` sont écrits le 21 août 2026, après le contrôle
+ * aveugle des douze cartes du domaine. Ils s'écartent de la proposition faite par la
+ * cartographie, qui en avançait quatre autres en se donnant elle-même deux réserves : un
+ * thème pourvu aux trois quarts par le même ouvrage d'Ashby n'en serait pas un, et un
+ * thème qui ne réunirait ses cartes que par leur rapport au vocabulaire serait un faux
+ * thème. Les lectures ont tranché les deux. Les chapitres 11, 12 et 14 d'Ashby ne
+ * répondent pas à la même question et se séparent donc ; et le thème de vocabulaire a
+ * disparu quand il est apparu que Paquette expose le mécanisme au lieu d'en critiquer
+ * l'usage. Aucun des quatre ne repose sur une carte unique.
+ *
  * Conséquence directe, visible ci-dessous : aucun thème n'est déclaré ici pour la santé
  * publique ni pour la mesure du bien-être, alors que le périmètre de `measurement-theory`
  * demandait de les balayer ; ni, en ergonomie de l'activité, pour la charge de travail comme
@@ -281,5 +291,51 @@ export const themes: Theme[] = [
     description:
       "On explique d'ordinaire la sécurité par ce qui manque quand un accident survient. Ce thème prend le problème par l'autre bout : ce qui fait qu'un système continue de fonctionner la plupart du temps, et ce que cela demande de ressources à ceux qui le tiennent.",
     domain: "human-factors",
+  },
+
+  // --- Cybernétique ---------------------------------------------------------
+  {
+    id: "variete-et-moyens-de-la-regulation",
+    slug: "variete-et-regulation",
+    title: "Ce qu'il faut pour réguler",
+    tagline:
+      "On ne tient un système qu'avec de quoi répondre à ce qu'il fait.",
+    keywords: ["Variété requise", "Amplification", "Information d'écart"],
+    description:
+      "Réguler n'est pas une intention, c'est une capacité : il faut posséder de quoi répondre à ce que le système peut faire. Ce thème porte sur la condition qui rend la régulation possible, sur ce qu'un régulateur peut obtenir au-delà de ses propres moyens, et sur les informations d'écart dont il dispose pour agir.",
+    domain: "cybernetics",
+  },
+  {
+    id: "la-boucle-et-l-ecart",
+    slug: "la-boucle-et-l-ecart",
+    title: "Ce dont une boucle se nourrit",
+    tagline:
+      "Une correction vit de ce qui lui revient de son propre effet.",
+    keywords: ["Rétroaction", "Écart", "Référence"],
+    description:
+      "Une boucle de correction ne fonctionne que si quelque chose lui revient de ce qu'elle a produit. Ce thème porte sur ce que cette information doit être pour qu'il y ait vraiment boucle, sur ce que le succès de la correction fait au canal dont elle vit, et sur ce que devient une boucle le jour où l'écart s'annule.",
+    domain: "cybernetics",
+  },
+  {
+    id: "auto-organisation-et-bruit",
+    slug: "auto-organisation-et-bruit",
+    title: "Ce qui s'organise sans qu'on l'organise",
+    tagline:
+      "Un système peut gagner en ordre à partir de ce qui le dérange.",
+    keywords: ["Auto-organisation", "Bruit", "Observateur"],
+    description:
+      "Un ordre peut apparaître sans que personne l'ait disposé, et parfois à partir du désordre même de l'environnement. Ce thème porte sur le mécanisme qui rend ce gain possible, sur la condition qu'il suppose, et sur la position que doit prendre celui qui veut en user plutôt que le décrire.",
+    domain: "cybernetics",
+  },
+  {
+    id: "ou-passe-la-commande",
+    slug: "ou-passe-la-commande",
+    title: "Où passe la commande",
+    tagline:
+      "Dans un système sans centre unique, l'autorité suit l'information.",
+    keywords: ["Commandement", "Information", "Asservissement"],
+    description:
+      "Commander n'est pas toujours occuper une place dans une hiérarchie : dans certains systèmes, la main revient à l'endroit où l'information s'est accumulée. Ce thème porte sur la façon dont la commande se répartit, et sur ce qui fait qu'un ensemble est gouverné par des informations plutôt que par des ordres.",
+    domain: "cybernetics",
   },
 ];
