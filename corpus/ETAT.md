@@ -1,15 +1,16 @@
-# État du corpus — 20 août 2026
+# État du corpus — 21 août 2026
 
 Écrit sur le disque parce qu'une session a déjà été coupée en cours de route : ce fichier
 existe pour qu'une reprise reparte des fichiers, et non de la mémoire de quelqu'un.
 
-`npm run corpus:validate` : **46 enregistrements, 45 validés, 0 erreur, 34 avertissements.**
-`npm run corpus:deepen` : **32 approfondissements écrits pour 45 cartes validées.**
+`npm run corpus:validate` : **58 enregistrements, 57 validés, 0 erreur, 42 avertissements.**
+`npm run corpus:deepen` : **32 approfondissements écrits pour 57 cartes validées.**
 `npm test` : **257 tests, 0 échec.**
 
-**Quatre domaines instruits sur onze déclarés, un cinquième ouvert et cartographié.** Les six
-autres sont configurés dans la taxonomie et n'ont pas de corpus ; `corpus:audit` les affiche
-« en cours de constitution ».
+**Cinq domaines instruits sur onze déclarés.** Les six autres sont configurés dans la
+taxonomie et n'ont pas de corpus ; `corpus:audit` les affiche « en cours de constitution ».
+Aucun d'eux n'a de périmètre écrit ni de cartographie : les ouvrir, c'est refaire l'ordre
+complet, périmètre puis scout puis thèmes puis cartes.
 
 | domaine | thèmes | cartes validées | approfondissements |
 |---|---:|---:|---:|
@@ -17,12 +18,13 @@ autres sont configurés dans la taxonomie et n'ont pas de corpus ; `corpus:audit
 | Ergonomie de l'activité | 4 | 15 | 15 |
 | Human Factors / ergonomie cognitive | 5 | 13 | **0** |
 | Théorie de la mesure / KPI | 4 | 9 | 9 |
-| Cybernétique | 0 | 0 | — |
+| Cybernétique | 4 | 12 | **0** |
 
-**Les treize cartes de `human-factors` n'ont pas d'approfondissement.** C'est le seul écart
-du corpus entre ce qui est validé et ce qui est servi : `hasDeepening` répond faux pour
-elles, et le bouton « Approfondir » ne s'affiche pas. `npm run corpus:deepen` les liste en
-fin de sortie ; c'est la file de travail, elle ne se tient pas de mémoire.
+**Vingt-cinq cartes validées n'ont pas d'approfondissement**, les treize de `human-factors`
+et les douze de `cybernetics`. C'est le seul écart du corpus entre ce qui est validé et ce
+qui est servi : `hasDeepening` répond faux pour elles, et le bouton « Approfondir » ne
+s'affiche pas. `npm run corpus:deepen` les liste en fin de sortie ; c'est la file de
+travail, elle ne se tient pas de mémoire.
 
 ## Ce que ce fichier ne raconte pas, et qui n'est pas perdu
 
@@ -42,6 +44,151 @@ Ce que ces deux lots ont établi est écrit ailleurs, entier, et se lit à la so
 - `corpus/map/activity-ergonomics.scouting.md` et `corpus/map/human-factors.scouting.md` :
   cartographies, candidats, angles morts ;
 - `corpus/review/*.verdict.json` : les verdicts de contrôle aveugle, un par passage.
+
+# 0. Cybernétique — lot du 21 août 2026, publié
+
+Cinquième domaine instruit, **premier de la famille « Comprendre la production et les
+systèmes »**, qui n'avait jusque-là aucun corpus. Le domaine avait été ouvert et
+cartographié la veille et n'avait aucune carte ; il repartait de zéro, sans le stock
+d'entrée dont `human-factors` avait hérité de son voisin.
+
+## Les douze cartes
+
+| id | thème | auteur·rice | tours |
+|---|---|---|---:|
+| `loi-de-la-variete-requise` | Ce qu'il faut pour réguler | Ashby | 1 |
+| `amplification-de-la-regulation` | Ce qu'il faut pour réguler | Ashby | 1 |
+| `regulation-proportionnelle-derivee-integrale` | Ce qu'il faut pour réguler | Goldman | 1 |
+| `regulateur-commande-par-l-ecart` | Ce dont une boucle se nourrit | Ashby | 1 |
+| `controle-de-la-perception` | Ce dont une boucle se nourrit | Powers | 1 |
+| `feed-back-et-equilibre` | Ce dont une boucle se nourrit | Piaget | 1 |
+| `critere-de-la-retroaction` | Ce dont une boucle se nourrit | Paquette | 1 |
+| `ordre-a-partir-du-bruit` | Ce qui s'organise sans qu'on l'organise | von Foerster | 1 |
+| `bruit-comme-principe-d-auto-organisation` | Ce qui s'organise sans qu'on l'organise | Atlan | 1 |
+| `histoire-naturelle-des-reseaux` | Ce qui s'organise sans qu'on l'organise | Pask | **2** |
+| `redondance-du-commandement-potentiel` | Où passe la commande | McCulloch | 1 |
+| `objet-de-la-cybernetique-economique` | Où passe la commande | Brender | 1 |
+
+Douze candidats instruits sur treize repérés, aucune fiche perdue. **Les douze portent une
+citation**, ce qu'aucun lot précédent n'avait obtenu. **Quatre reposent sur une source
+primaire francophone** : Atlan, Piaget, Brender, Paquette. Une cinquième, Goldman, affiche
+une citation en français, mais c'est une traduction interne d'un texte anglais et elle est
+déclarée comme telle : elle ne compte pas dans la couche francophone.
+
+**Le domaine n'a aucune signature féminine.** C'est à surveiller et à porter au prochain
+passage, pas à corriger par quota.
+
+Le treizième candidat, von Foerster 1973, a été écarté avant instruction : son seul
+exemplaire ouvrable est un versement de particulier sans autorisation d'ayant droit.
+
+## La question de droits, et comment elle a été tranchée
+
+C'est le résultat de méthode de ce lot, et il ne vient pas d'une consigne.
+
+Quatre cartes reposent sur les actes de 1960 de Pergamon, servis par l'Internet Archive.
+**Trois contrôleurs aveugles ont examiné le statut de cet exemplaire sans rien savoir les uns
+des autres, et ont conclu différemment** : renvoyer la fiche, la passer avec réserve, la
+passer sans grief. Ce qu'ils rapportent ensemble : aucune licence ni statut déclaré sur la
+page d'hébergement, un « Copyright © 1960 Pergamon Press Inc. » au verso du titre, les quatre
+exemplaires de HathiTrust en statut indéterminé, la source Academic Press du chapitre jumeau
+de Goldman servie face à un « All rights reserved » explicite. Et, en sens inverse, **aucun
+renouvellement de copyright dans la base de Stanford**, contrôle positif joué pour rendre ce
+zéro interprétable.
+
+Tranché dans le sens le plus strict : les URL de ces exemplaires sortent, les références
+imprimées restent, identifiées par leur numéro de catalogue de la Bibliothèque du Congrès.
+`consulted` ne bouge pas, ces textes ayant bien été lus. **Le contrôleur du second tour de
+Pask a ensuite résolu le LCCN contre le MARC de la Bibliothèque du Congrès : privée de son
+URL, la référence résout seule.** C'est ce qui rend la décision tenable plutôt que
+seulement prudente.
+
+L'indice contraire est conservé dans le verdict qui le porte, pour qu'un lot ultérieur
+rouvre la question sur pièce : un renouvellement introuvable n'est pas un renouvellement
+inexistant.
+
+## Ce que le contrôle a réellement attrapé
+
+| question | résultat sur douze fiches |
+|---|---|
+| citation verbatim, à l'endroit annoncé | 12/12 dès le premier passage |
+| attribution | 12/12 dès le premier passage |
+| prose fidèle aux sources | 12/12 dès le premier passage |
+| sources qui résolvent | 11/12, un renvoi, sur les droits d'un hébergeur |
+
+**Le seul renvoi du lot n'a porté ni sur un texte, ni sur une attribution, ni sur nos mots.**
+Il a porté sur la légitimité d'un accès. C'est un déplacement par rapport aux quatre lots
+précédents, où le point faible était l'attribution, et il tient à la nature du domaine : un
+champ ancien dont les textes fondateurs sont chez des éditeurs commerciaux toujours actifs.
+
+Onze corrections ont par ailleurs été signalées **hors mandat**, par des contrôleurs qui
+rendaient `PASS`, et toutes appliquées. Trois portaient sur la prose et sont exactement ce
+que ce dispositif existe pour attraper : un résumé qui écrivait « en établit » là où Ashby
+module deux fois jusqu'à « There is, of course, not necessarily any amplification » ; une
+note disant que Piaget cite les modèles cybernétiques « de seconde main » alors que ses notes
+renvoient aux textes de McCulloch et Pitts, Ashby, Shannon, Turing et Polanyi avec leur
+pagination ; un « aucune station ne commande de droit » chez McCulloch, que le texte
+n'énonce pas, et dont un contrôleur fait remarquer que l'analogie navale de l'auteur comporte
+bien un amiral.
+
+## Trois enseignements de méthode, à ne pas perdre
+
+**1. Une réserve de pagination se lève en comprenant la mise en page, pas en insistant.** Les
+trois lecteurs d'Ashby butaient sur des numéros de page désordonnés à l'extraction. Le
+troisième a trouvé la règle : chaque feuillet est un A4 portrait portant `/Rotate 90` et
+contient deux pages du livre, l'impaire en haut et la paire en bas. Redressé et découpé, le
+texte redevient continu. Cinq corrections de pagination sont sorties du lot, et deux causes
+distinctes ont été identifiées, celle-ci et deux planches de figures non paginées chez von
+Foerster. **La table des matières des actes de 1960 contredit ses propres folios**, trouvé
+trois fois indépendamment.
+
+**2. Une traduction trouvée chez un tiers n'est pas la parole de l'auteur, même quand le
+tiers est un auteur du corpus.** La version française de « order from noise » qui circule
+vient d'Atlan 1972, qui réunit sous une seule référence une phrase de la page 43 et une
+réponse en séance de la page 49, six pages plus loin, jointes par des points de suspension.
+Écartée.
+
+**3. Trois décisions de périmètre valent mieux qu'une règle.** La cartographie donnait Piaget,
+Goldman et Paquette pour litigieux et laissait la décision au lecteur primaire. Les trois
+tiennent, et deux ont fait corriger ce que la cartographie leur prêtait : Paquette n'est pas
+un texte de critique terminologique, ses pages 6 à 13 exposent le mécanisme de front ; et
+Brender écarte lui-même, dans son propre texte, les deux domaines voisins qu'on pouvait lui
+opposer.
+
+## Réserves conservées, et ce qui reste à reprendre
+
+Elles sont dans le champ `notes` de chaque carte. Les principales :
+
+- **Aucune source secondaire indépendante** sur quatre cartes, aucune n'ayant pu être
+  ouverte. Pour Powers, la seule littérature disponible est celle de ses partisans : la carte
+  ne dit donc rien de sa place réelle dans la psychologie, et le dit.
+- **La traduction Dunod 1958 d'Ashby n'a été ouverte par personne.** Les trois citations
+  restent en anglais, et aucune formule française n'est présentée comme ses mots.
+- **Le rapport SURI EE494-581T1 de Goldman (1958) n'existe que par la note qui le cite.**
+- **Le lieu d'édition des actes de 1960** est imprimé « Oxford » sur les cartes, quand la
+  Bibliothèque du Congrès et OpenLibrary cataloguent « New York ». La page de titre porte
+  « OXFORD • LONDON • NEW YORK • PARIS », Oxford en tête : lecture défendable, divergence
+  signalée.
+- **Aucun approfondissement** pour les douze cartes.
+
+## Angles morts de la cartographie
+
+Détaillés dans `corpus/map/cybernetics.scouting.md`, et ils commandent le prochain lot de ce
+domaine.
+
+- **Beer est inaccessible**, et c'est ce qui a empêché d'ouvrir un thème sur la viabilité et
+  la récursivité des niveaux de commande. Le thème `ou-passe-la-commande` n'a que deux cartes
+  pour cette raison.
+- **La cybernétique de second ordre n'est couverte que de biais**, par Pask 1960 et par un
+  von Foerster antérieur de treize ans à son texte de référence sur l'observateur, lui-même
+  écarté faute d'hébergement légitime.
+- **Wiener n'est dans aucune carte.** Il est nommé et discuté dans trois d'entre elles, par
+  Brender, Powers et Paquette, jamais cité de première main.
+- **Zotero est resté inaccessible** à la cartographie comme aux quatre lots précédents, et
+  les outils `mcp__documentary__*` n'étaient exposés dans aucune session de ce lot. Toutes les
+  vérifications de référence ont été faites en direct contre Crossref, l'OAI de Persée, le
+  MARC de la Bibliothèque du Congrès et OpenLibrary.
+
+---
 
 # I. Théorie de la mesure — premier lot, publié
 
