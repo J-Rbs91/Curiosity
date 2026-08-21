@@ -1,0 +1,82 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "ordre-a-partir-du-bruit",
+  "slug": "ordre-a-partir-du-bruit",
+  "status": "VALIDATED",
+  "title": "L'ordre à partir du bruit",
+  "themes": [
+    "auto-organisation-et-bruit"
+  ],
+  "authors": [
+    {
+      "name": "Heinz von Foerster",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "La communication est signée d'un seul nom, et von Foerster nomme lui-même le principe dans le texte, en l'opposant aux deux principes qu'il attribue à Erwin Schrödinger. Le volume n'imprime nulle part son prénom : « Heinz » vient de la notice d'autorité du catalogue général de la Bibliothèque nationale de France. La formule française « ordre à partir de bruit » n'est pas de lui et n'est pas une traduction publiée de son texte : elle est d'Henri Atlan, qui la lui crédite en 1972. Enfin, la communication a été prononcée le 5 mai 1959, lors d'une conférence tenue les 5 et 6 mai 1959 et publiée en 1960 : c'est 1960 qui date le texte cité.",
+  "hook": "D'où vient l'ordre quand rien d'ordonné n'est entré dans le système ?",
+  "summary": "Un système ne se nourrit pas que d'ordre : secoué par un bruit sans direction, il n'en retient, par des propriétés propres à ses éléments, que ce qui accroît son ordre.",
+  "quotation": {
+    "text": "Thus, in my restaurant self-organizing systems do not only feed upon order, they will also find noise on the menu.",
+    "reference": "Heinz von Foerster, « On Self-Organizing Systems and Their Environments », dans Marshall C. Yovits et Scott Cameron (dir.), Self-Organizing Systems. Proceedings of an Interdisciplinary Conference, 5 and 6 May, 1959, Oxford, Pergamon Press, 1960, p. 31-50.",
+    "locator": "p. 43",
+    "language": "en",
+    "original_text": null,
+    "original_language": null,
+    "translation": {
+      "kind": "none",
+      "translator": null,
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "Heinz von Foerster, « On Self-Organizing Systems and Their Environments », dans M. C. Yovits et S. Cameron (dir.), Self-Organizing Systems, Oxford, Pergamon Press, 1960, p. 31-50.",
+      "kind": "primary",
+      "locator": "p. 31-50",
+      "doi_isbn": "LCCN 60-12574",
+      "url": null,
+      "consulted": "full-text"
+    },
+    {
+      "label": "Henri Atlan, « Du bruit comme principe d'auto-organisation », Communications, n° 18, « L'événement », Paris, Seuil, 1972, p. 21-36.",
+      "kind": "francophone-reception",
+      "locator": "p. 23-24",
+      "doi_isbn": "10.3406/comm.1972.1256",
+      "url": "https://www.persee.fr/doc/comm_0588-8018_1972_num_18_1_1256",
+      "consulted": "partial"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle",
+    "date": "2026-08-21",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "SOURCE PRIMAIRE OUVERTE. Item Internet Archive « SelfOrganizingSystems » : la page /details a d'abord été coupée (connexion réinitialisée), mais /metadata puis les fichiers ont répondu HTTP 200 depuis ia801501.us.archive.org (SelfOrganizingSystems_djvu.txt, 695 215 o ; SelfOrganizingSystems.pdf, 22 150 627 o, 338 vues). Page de titre : « SELF-ORGANIZING SYSTEMS / PROCEEDINGS OF AN INTERDISCIPLINARY CONFERENCE / 5 and 6 May, 1959 », éditeurs Marshall C. Yovits (conference chairman) et Scott Cameron (conference secretary), « PERGAMON PRESS, OXFORD • LONDON • NEW YORK • PARIS, 1960 », « Copyright © 1960 Pergamon Press Inc. ». La référence affichée correspond mot pour mot à la page de titre.",
+      "CITATION VÉRIFIÉE SUR L'IMAGE, PAS SEULEMENT SUR L'OCR. La vue 54 du PDF (rendue en PNG et lue) porte le titre courant « Environments of Self-Organizing Systems 43 » et la phrase : « Thus, in my restaurant self-organizing systems do not only feed upon order, they will also find noise on the menu. » Identique au champ quotation : pas de coupe, pas d'ellipse, pas de traduction — cohérent avec translation.kind = none et language = en. La phrase est entière sur la p. 43 (la p. 44, titre courant « 44 H. von Foerster », commence après la figure 3).",
+      "PAGINATION. Table des matières (p. ix) : « On Self-Organizing Systems and Their Environments … by H. von Foerster 31 », l'article suivant (Estes) commençant p. 51 ; le texte s'achève par la discussion, dont la dernière page porte le folio « 50 H. von Foerster ». La plage p. 31-50 annoncée par les deux références est exacte (elle inclut la discussion).",
+      "ATTRIBUTION. Le principe est nommé par l'auteur lui-même dans le texte que j'ai ouvert, p. 43 : « Hence, in order to stress the difference between the two, I shall call the principle I am going to introduce to you presently the “order from noise” principle », en opposition explicite aux deux mécanismes qu'il rapporte à Schrödinger (What is Life?), « order from disorder » et « order from order ». Signature unique p. 31 : « H. von Foerster, Department of Electrical Engineering, University of Illinois, Urbana, Illinois ». Le prénom « Heinz » n'apparaît nulle part dans l'OCR des 338 vues du volume ; la forme d'autorité « Von Foerster, Heinz (1911-2002) » est bien celle du catalogue général de la BnF (API SRU catalogue.bnf.fr, HTTP 200, notice ark:/12148/cb38929878r entre autres).",
+      "RÉCEPTION FRANCOPHONE. Persée, pages T1_23 et T1_24 du document comm_0588-8018_1972_num_18_1_1256 (HTTP 200) : intertitre « Le principe d'ordre à partir de bruit », puis « H. Von Foerster (9) le premier, à notre connaissance, a exprimé la nécessité d'un “principe d'ordre à partir de bruit” » ; p. 24, Atlan rend la phrase du restaurant par « Les systèmes auto-organisateurs ne se nourrissent pas seulement d'ordre, ils trouvent aussi du bruit à leur menu… ». Le locator p. 23-24 et le crédit à von Foerster sont exacts. Le DOI 10.3406/comm.1972.1256 résout (302 vers la page Persée) et la notice Crossref donne Atlan, Henri, « Du bruit comme principe d'auto-organisation », Communications, vol. 18, 1972, p. 21-36 : conforme à la référence affichée.",
+      "PROSE. Le hook (« quand rien d'ordonné n'est entré dans le système ») et le summary sont portés à la lettre par la p. 45 : « no order was fed to the system, just cheap undirected energy; however, thanks to the little demons in the box, in the long run only those components of the noise were selected which contributed to the increase of order in the system », et, plus bas, ces démons sont « manifest in some of the intrinsic structural properties of these elements » — d'où « par des propriétés propres à ses éléments ». Rien dans hook ni summary n'excède la source.",
+      "LÉGITIMITÉ DE L'ACCÈS. L'exemplaire IA est servi en clair, sans prêt ni DRM ; aucun contrôle d'accès n'a été contourné. Mais aucune autorisation d'ayant droit n'est constatable : l'item ne porte ni champ licence ni statut de copyright, seulement la mention générique de la collection Universal Library / Million Books (« This collection is free and open for everyone to use ») ; le volume lui-même porte « Copyright © 1960 Pergamon Press Inc. ». Indice, non preuve : la Stanford Copyright Renewal Database (livres 1923-1963) ne rend aucun enregistrement pour « self-organizing systems » (0 résultat), alors que le contrôle « Yovits » rend bien son titre renouvelé de 1962 (RE500633) — aucun renouvellement états-unien trouvé pour le volume de 1960.",
+      "NON ATTEINT, et déclaré comme tel : cepa.info/1593 exige un compte (page de connexion, non créé) ; le PDF Springer de la réimpression (10.1007/0-387-21722-3_1) redirige vers idp.springer.com (paywall) ; le PDF Persée (docAsPDF) renvoie HTTP 403 derrière un défi altcha, non résolu — je n'ai donc lu d'Atlan que le texte page à page de la version HTML, ce qui correspond bien à consulted = partial ; stream.syscoi.com renvoie 403. Aucun de ces refus n'est un silence de la littérature.",
+      "HORS MANDAT (inexactitude de fait signalée, sans incidence sur le verdict) : l'attribution_note écrit « la communication a été prononcée les 5 et 6 mai 1959 ». Les 5 et 6 mai 1959 sont les dates de la conférence (page de titre du volume), pas celles de cette communication : le texte de von Foerster relève de la première journée (il précède la « First Day's Panel Discussion », p. 147) et ses propres réimpressions datent l'adresse du 5 mai 1959. Correction suggérée : « prononcée le 5 mai 1959, lors d'une conférence tenue les 5 et 6 mai 1959 ».",
+      "OUTILS : aucun outil verify_reference (serveur documentary) n'était disponible dans cette session ; le DOI a donc été résolu par doi.org avec négociation de contenu (notice Crossref/CSL). Aucun autre fichier du dépôt relatif à cette carte n'a été ouvert."
+    ]
+  },
+  "dossier": "corpus/evidence/ordre-a-partir-du-bruit/lecture.json",
+  "notes": [
+    "Le texte s'ouvre sur sa propre négation : « There are no such things as self-organizing systems! » Von Foerster garde ensuite le terme pour ce qui a un environnement dont il se nourrit. Le mot « auto » ne désigne, chez lui, que notre ignorance du mécanisme, et il l'avoue : « if I would not have given away my neat little trick with the magnetized surfaces », son exemple resterait miraculeux.",
+    "Le tri du bruit se fait par des propriétés structurales intrinsèques, pas par le bruit. Von Foerster écrit p. 45 : « no order was fed to the system, just cheap undirected energy; however, thanks to the little demons in the box, in the long run only those components of the noise were selected which contributed to the increase of order in the system », et il rattache ces démons aux « intrinsic structural properties of these elements ». « Le bruit organise » seul trahirait le texte.",
+    "Ce passage de la p. 45, qui porte le mécanisme, fait 343 caractères : toute coupe le ramenant sous 150 supprimait les démons, c'est-à-dire précisément le tri structural. La lecture primaire a donc retenu une phrase entière, non coupée, prise deux pages plus haut, et le résumé porte le mécanisme que la citation ne porte pas.",
+    "La version française qui circule est un composite et ne doit entrer dans aucune carte comme parole de von Foerster : Atlan réunit sous une seule référence une phrase de la page 43 et une réponse en séance de la page 49, séparées par six pages et jointes par des points de suspension.",
+    "Correction de pagination : le principe est nommé p. 43 et non p. 43-44, et le passage sur le mécanisme est p. 45 et non p. 44. Deux planches de figures non paginées décalent d'une page toute lecture faite sur la seule couche océrisée.",
+    "Aucune traduction française publiée du texte n'a été identifiée ; les vingt-trois notices de la BnF au nom de l'auteur sont toutes en anglais ou en allemand. La circulation actuelle de la formule comme slogan d'innovation n'a été documentée par aucune source ouverte et n'entre donc pas dans la fiche.",
+    "Le localisateur de la citation a été ramené au pointeur ; le détail du feuillet, de l'en-tête courant et du contrôle sur image est dans corpus/evidence/ordre-a-partir-du-bruit/lecture.json."
+  ]
+}

@@ -52,6 +52,37 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "amplification-de-la-regulation",
+    "slug": "amplification-de-la-regulation",
+    "title": "L'amplification de la régulation",
+    "authorLabel": "W. Ross Ashby",
+    "hookQuestion": "Comment obtenir une régulation plus grande que celle qu'on sait fabriquer ?",
+    "shortExplanation": "La loi de la variété requise interdit d'agrandir un régulateur, non de le supplémenter : en sélectionner un petit peut en établir un grand, si la perturbation se répète.",
+    "authors": [],
+    "themes": [
+      "variete-et-moyens-de-la-regulation"
+    ],
+    "attributionNote": "Le nom du concept est de l'auteur : « Amplifying Regulation » est le titre du chapitre 14 d'An Introduction to Cybernetics, et Ashby emploie la tournure « an amplification of regulation » dans sa propre préface pour annoncer ce que fera la troisième partie du livre. Le titre français traduit donc un intitulé d'auteur, il n'est pas un baptême par un tiers. Le concept est un corollaire de la loi de la variété requise, qu'Ashby énonce lui-même au chapitre 11 du même ouvrage, et il s'appuie explicitement sur les sections du chapitre précédent : c'est un enchaînement interne à un livre d'un seul auteur.",
+    "quotation": {
+      "text": "The law of Requisite Variety […] absolutely prohibits any direct and simple magnification but it does not prohibit supplementation.",
+      "reference": "W. Ross Ashby, An Introduction to Cybernetics, Londres, Chapman & Hall, 1956 (tirage lu : seconde impression, 1957), chapitre 14 « Amplifying Regulation », section 14/4 « Regulation and selection ». Édition électronique de 1999 préparée pour le Principia Cybernetica Web avec l'autorisation de la succession Ashby, ch. 14, section 14/4, p. 268"
+    },
+    "sources": [
+      {
+        "label": "W. Ross Ashby, An Introduction to Cybernetics, Londres, Chapman & Hall, 1956. Édition électronique de 1999 autorisée par la succession Ashby, Principia Cybernetica Web.",
+        "kind": "primary",
+        "reference": "ch. 14, p. 265-272",
+        "url": "https://pespmc1.vub.ac.be/books/IntroCyb.pdf"
+      },
+      {
+        "label": "Michael U. Ben-Eli, « Amplifying regulation and variety increase in evolving systems », Journal of Cybernetics, 9(3), 1979, p. 285-296.",
+        "kind": "secondary-academic",
+        "reference": "10.1080/01969727908927610",
+        "url": "https://doi.org/10.1080/01969727908927610"
+      }
+    ]
+  },
+  {
     "id": "analyse-du-travail",
     "slug": "analyse-du-travail",
     "title": "Analyse du travail",
@@ -147,6 +178,37 @@ export const generatedConcepts: Concept[] = [
         "label": "Charles E. Billings, Aviation Automation: The Search for a Human-Centered Approach, Mahwah (New Jersey), Lawrence Erlbaum Associates, 1997, 355 p. Refonte en volume du mémorandum de 1996 ; non ouverte.",
         "kind": "primary",
         "reference": "ISBN 0-8058-2127-9"
+      }
+    ]
+  },
+  {
+    "id": "bruit-comme-principe-d-auto-organisation",
+    "slug": "bruit-comme-principe-d-auto-organisation",
+    "title": "Le bruit comme principe d'auto-organisation",
+    "authorLabel": "Henri Atlan",
+    "hookQuestion": "Le bruit qui abîme un message peut-il enrichir le système qui le contient ?",
+    "shortExplanation": "L'ambiguïté due au bruit se retranche de l'information transmise et s'ajoute à celle du système : ce rôle positif coexiste avec le rôle destructeur, sans l'annuler.",
+    "authors": [],
+    "themes": [
+      "auto-organisation-et-bruit"
+    ],
+    "attributionNote": "L'article est signé d'un seul nom, mais Atlan ne revendique pas le principe : il l'attribue à Heinz von Foerster, « le premier, à notre connaissance », et renvoie à sa communication de 1959, publiée en 1960. Ce qu'il revendique en propre, il l'écrit : « nous avons tenté de donner au principe d'ordre à partir de bruit une formulation plus précise, à l'aide du formalisme de la théorie de l'information », avec la distinction entre ambiguïté-autonomie et ambiguïté-destructrice et l'équation qui les compose. Trois autres dettes sont nommées dans le texte et ne doivent pas être effacées : Ashby, von Neumann et Shannon, dont le théorème de la voie avec bruit est l'obstacle même que l'article entreprend de contourner sans le nier.",
+    "quotation": {
+      "text": "On voit ainsi comment un rôle positif, « organisationnel » du bruit peut être conçu […] sans contredire pour autant le théorème de la voie avec bruit.",
+      "reference": "Henri Atlan, « Du bruit comme principe d'auto-organisation », Communications, n° 18, « L'événement », Paris, Seuil, 1972, p. 21-36. DOI 10.3406/comm.1972.1256, p. 28, deuxième paragraphe"
+    },
+    "sources": [
+      {
+        "label": "Henri Atlan, « Du bruit comme principe d'auto-organisation », Communications, n° 18, « L'événement », Paris, Seuil, 1972, p. 21-36.",
+        "kind": "primary",
+        "reference": "p. 25-32 · 10.3406/comm.1972.1256",
+        "url": "https://www.persee.fr/doc/comm_0588-8018_1972_num_18_1_1256"
+      },
+      {
+        "label": "Bernard Paulré, « Évolutionnisme contemporain et auto-organisation », Économie appliquée, 50(3), 1997, p. 121-150.",
+        "kind": "francophone-reception",
+        "reference": "p. 141 et 146 · 10.3406/ecoap.1997.1643",
+        "url": "https://www.persee.fr/doc/ecoap_0013-0494_1997_num_50_3_1643"
       }
     ]
   },
@@ -303,6 +365,49 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "controle-de-la-perception",
+    "slug": "controle-de-la-perception",
+    "title": "Le comportement est le contrôle de la perception",
+    "authorLabel": "William T. Powers",
+    "hookQuestion": "Que tient-on vraiment en tenant un volant : la voiture, ou ce qu'on voit ?",
+    "shortExplanation": "Le comportement est le moyen variable par lequel un organisme tient ses perceptions conformes à des références internes : il contrôle ses perceptions, pas ses actions.",
+    "authors": [],
+    "themes": [
+      "la-boucle-et-l-ecart"
+    ],
+    "attributionNote": "Les textes lus sont signés de Powers seul ; Dag Forssell est l'éditeur du recueil de 2016, pas un coauteur ni un coauteur du concept. Powers désamorce lui-même le piège de datation : l'article de 1960 dont on fait souvent la naissance de la théorie est une coécriture avec R. K. Clark et R. L. MacFarland, et il n'a pas été ouvert ici. Le sous-titre du recueil, « An Overview of the Third Grand Theory in Psychology », est une formule de son éditeur ajoutée en 2016 et rapportée à un article de partisans : c'est une position revendiquée par l'auteur et par ses proches, pas un état constaté du champ.",
+    "quotation": {
+      "text": "In which we see that behavior is the process by which we act on the world to control perceptions that matter to us",
+      "reference": "William T. Powers, Making Sense of Behavior: The Meaning of Control, Bloomfield (NJ), Benchmark Publications, chapitre 2 « Perceptual Control ». Extrait reproduit dans Dag Forssell (dir.), Perceptual Control Theory, Menlo Park (CA), Living Control Systems Publishing, 2016, p. 17 du livre, p. 147 du recueil"
+    },
+    "sources": [
+      {
+        "label": "William T. Powers, Making Sense of Behavior: The Meaning of Control, Bloomfield (NJ), Benchmark Publications, chapitre 2 « Perceptual Control », p. 17-26.",
+        "kind": "primary",
+        "reference": "ISBN 978-0-9647121-5-7",
+        "url": "https://www.livingcontrolsystems.com/download/pct_readings_ebook_2016.pdf"
+      },
+      {
+        "label": "William T. Powers, Behavior: The Control of Perception, 2e éd., Bloomfield (NJ), Benchmark Publications, 2005 (1re éd. 1973, Aldine Publishing Co., Chicago), chapitre 3 « Premises ».",
+        "kind": "primary",
+        "reference": "p. 21-40 · ISBN 978-0-9647121-7-1",
+        "url": "https://www.livingcontrolsystems.com/download/pct_readings_ebook_2016.pdf"
+      },
+      {
+        "label": "Dag Forssell (dir.), Perceptual Control Theory: An Overview of the Third Grand Theory in Psychology, Menlo Park (CA), Living Control Systems Publishing, 2016. Contient « PCT in 11 Steps », de W. T. Powers, 2009.",
+        "kind": "primary",
+        "reference": "p. 20-25 · ISBN 978-1-938090-12-7",
+        "url": "https://www.livingcontrolsystems.com/download/pct_readings_ebook_2016.pdf"
+      },
+      {
+        "label": "William T. Powers, « Quantitative analysis of purposive systems: Some spadework at the foundations of scientific psychology », Psychological Review, 85(5), 1978, p. 417-435.",
+        "kind": "primary",
+        "reference": "10.1037/0033-295X.85.5.417",
+        "url": "https://doi.org/10.1037/0033-295X.85.5.417"
+      }
+    ]
+  },
+  {
     "id": "controle-supervise",
     "slug": "controle-supervise",
     "title": "Contrôle supervisé",
@@ -342,6 +447,31 @@ export const generatedConcepts: Concept[] = [
         "kind": "primary",
         "reference": "Avant-propos et table des matières · NTRS 19790007417",
         "url": "https://ntrs.nasa.gov/api/citations/19790007417/downloads/19790007417.txt"
+      }
+    ]
+  },
+  {
+    "id": "critere-de-la-retroaction",
+    "slug": "critere-de-la-retroaction",
+    "title": "Le critère de la rétroaction",
+    "authorLabel": "Guy Paquette",
+    "hookQuestion": "À quelle condition un retour d'information mérite-t-il le nom de rétroaction ?",
+    "shortExplanation": "Il n'y a rétroaction que si de l'information sur l'effet de l'action, et non l'effet lui-même, revient à la source, et si l'action peut encore être corrigée.",
+    "authors": [],
+    "themes": [
+      "la-boucle-et-l-ecart"
+    ],
+    "attributionNote": "Guy Paquette signe seul ; le collègue remercié dans sa première note pour sa collaboration aux réflexions n'est pas cosignataire. Il ne forge ni « rétroaction » ni « rétroinformation », termes déjà en circulation : il leur assigne des définitions distinctes. La préinformation et la préaction, qu'il ajoute, sont données par lui comme des hypothèses de travail et non comme des prises de position. L'article se rattache explicitement à Gabriel Veraldi, « Communication : une science et non une idéologie », dont il reprend le reproche fait aux spécialistes de la communication, l'emprunt de concepts venus d'autres disciplines et leur utilisation dénaturée.",
+    "quotation": {
+      "text": "Contrairement à ce que l'on dit souvent, ce n'est pas l'effet de l'action qui est fed back […], mais plutôt de l'information sur cet effet.",
+      "reference": "Guy Paquette, « Feedback, rétroaction, rétroinformation, réponse... du pareil au même », Communication et langages, n° 73, 3e trimestre 1987, p. 5-18, p. 8, « Fonctionnement du processus »"
+    },
+    "sources": [
+      {
+        "label": "Guy Paquette, « Feedback, rétroaction, rétroinformation, réponse... du pareil au même », Communication et langages, n° 73, 3e trimestre 1987, p. 5-18. Armand Colin.",
+        "kind": "primary",
+        "reference": "p. 6-16 · 10.3406/colan.1987.984",
+        "url": "https://www.persee.fr/doc/colan_0336-1500_1987_num_73_1_984"
       }
     ]
   },
@@ -605,6 +735,31 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "feed-back-et-equilibre",
+    "slug": "feed-back-et-equilibre",
+    "title": "Le feed back et l'équilibre",
+    "authorLabel": "Jean Piaget",
+    "hookQuestion": "Que devient une boucle de correction le jour où il n'y a plus rien à corriger ?",
+    "shortExplanation": "C'est l'erreur qui détermine le retour d'énergie : le feed back fonctionne tant qu'il y a déséquilibre, et devient au point d'équilibre une simple liaison réversible.",
+    "authors": [],
+    "themes": [
+      "la-boucle-et-l-ecart"
+    ],
+    "attributionNote": "Jean Piaget signe seul, mais l'imprimé ne porte pas son prénom : la page donne « Communication de M. PIAGET (Genève) », et le prénom vient des notices. Ce n'est pas un texte de doctrine mais une communication de congrès de dix pages, lue à la première session de l'Association de psychologie scientifique de langue française, session consacrée aux relations entre la neurologie et la psychologie. Ce qu'il y avance du feed back n'est donc pas sa position sur la cybernétique : c'est un rapprochement fait en 1953 entre son propre vocabulaire et des modèles qu'il ne pratique pas, mais dont il cite les textes de première main. Il le dit lui-même : l'auto-correction des « feed backs » rappelle « mutatis mutandis » la manière dont travaille l'intelligence.",
+    "quotation": {
+      "text": "Le « feed back » fonctionne, en effet, tant qu'il y a déséquilibre, c'est-à-dire tant que le problème posé à la machine n'est pas résolu […]",
+      "reference": "Jean Piaget, « Structures opérationnelles et cybernétique », L'Année psychologique, 1953, vol. 53, n° 1, p. 379-388 ; communication à la première session de l'Association de psychologie scientifique de langue française, p. 386, partie II"
+    },
+    "sources": [
+      {
+        "label": "Jean Piaget, « Structures opérationnelles et cybernétique », L'Année psychologique, 53(1), 1953, p. 379-388.",
+        "kind": "primary",
+        "reference": "p. 385-387 · 10.3406/psy.1953.8725",
+        "url": "https://www.persee.fr/doc/psy_0003-5033_1953_num_53_1_8725"
+      }
+    ]
+  },
+  {
     "id": "garbage-can-model",
     "slug": "garbage-can-model",
     "title": "Modèle de la poubelle",
@@ -839,6 +994,30 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "histoire-naturelle-des-reseaux",
+    "slug": "histoire-naturelle-des-reseaux",
+    "title": "L'histoire naturelle des réseaux",
+    "authorLabel": "Gordon Pask",
+    "hookQuestion": "Comment se servir d'un réseau qu'aucun cadre d'observation unique ne décrit ?",
+    "shortExplanation": "Qui veut user des capacités d'auto-organisation d'un réseau, donné ou construit, doit l'observer en historien naturel : son seul cadre est son interaction avec lui.",
+    "authors": [],
+    "themes": [
+      "auto-organisation-et-bruit"
+    ],
+    "attributionNote": "Gordon Pask signe seul, et le concept n'a pas de nom chez lui : il avance « a pair of contentions », dont il n'intitule que la seconde, « Second Contention », et qu'il ne baptise jamais. Le titre de la carte est celui de l'article traduit littéralement, seul intitulé qui n'invente rien ; le rendu « historien naturel » est de nous, et « naturaliste » a été écarté parce que Pask récuse expressément le collectionneur classificateur, « he is not a meticulous and classifying person ». Ce texte n'est pas ce pour quoi la postérité retient Pask : sa théorie de la conversation est publiée une quinzaine d'années plus tard et n'a pas été consultée.",
+    "quotation": {
+      "text": "[…] if an observer wishes to use any self-organizing potentialities […], then he must look at the network as though he were a natural historian.",
+      "reference": "Gordon Pask, « The Natural History of Networks », dans Marshall C. Yovits et Scott Cameron (dir.), Self-Organizing Systems. Proceedings of an Interdisciplinary Conference, 5 and 6 May, 1959, Oxford, Pergamon Press, 1960, p. 232-263, p. 232, « Introductory Remarks »"
+    },
+    "sources": [
+      {
+        "label": "Gordon Pask, « The Natural History of Networks », dans M. C. Yovits et S. Cameron (dir.), Self-Organizing Systems, Oxford, Pergamon Press, 1960, p. 232-263.",
+        "kind": "primary",
+        "reference": "LCCN 60-12574"
+      }
+    ]
+  },
+  {
     "id": "inertie-structurelle-et-selection",
     "slug": "inertie-structurelle-et-selection",
     "title": "Inertie structurelle et sélection",
@@ -970,6 +1149,43 @@ export const generatedConcepts: Concept[] = [
         "kind": "primary",
         "reference": "p. 34 · 10.56645/jmde.v7i15.297",
         "url": "https://jmde.com/index.php/jmde_1/article/view/297"
+      }
+    ]
+  },
+  {
+    "id": "loi-de-la-variete-requise",
+    "slug": "loi-de-la-variete-requise",
+    "title": "Loi de la variété requise",
+    "authorLabel": "W. Ross Ashby",
+    "hookQuestion": "Combien de coups un régulateur doit-il avoir pour absorber ce qui le perturbe ?",
+    "shortExplanation": "Seule la variété du régulateur peut faire tomber celle que produisent les perturbations : sa capacité à réguler n'excède pas sa capacité de canal.",
+    "authors": [],
+    "themes": [
+      "variete-et-moyens-de-la-regulation"
+    ],
+    "attributionNote": "La loi est d'Ashby seul, et son nom est de lui : il écrit « This is the law of Requisite Variety » au chapitre 11 d'An Introduction to Cybernetics, paru chez Chapman & Hall en 1956. Deux confusions sont à écarter. Ashby a redonné la loi en 1958 dans un article de la revue Cybernetica qui en conserve le nom ; la carte porte sur la formulation du livre de 1956, celle qui se démontre sur un tableau à double entrée. Et le corollaire le plus cité dans la littérature de gestion, « every good regulator of a system must be a model of that system », n'est pas dans ce livre et n'est pas signé du seul Ashby : il est de Roger C. Conant et W. Ross Ashby, en 1970, dans l'International Journal of Systems Science.",
+    "quotation": {
+      "text": "This is the law of Requisite Variety. […] only variety in R can force down the variety due to D; variety can destroy variety.",
+      "reference": "W. Ross Ashby, An Introduction to Cybernetics, Londres, Chapman & Hall, 1956 (tirage lu : seconde impression, 1957), chapitre 11 « Requisite Variety ». Édition électronique de 1999 préparée pour le Principia Cybernetica Web avec l'autorisation de la succession Ashby, ch. 11, section 11/7, p. 207"
+    },
+    "sources": [
+      {
+        "label": "W. Ross Ashby, An Introduction to Cybernetics, Londres, Chapman & Hall, 1956. Édition électronique de 1999 autorisée par la succession Ashby, Principia Cybernetica Web.",
+        "kind": "primary",
+        "reference": "ch. 11, p. 202-218",
+        "url": "https://pespmc1.vub.ac.be/books/IntroCyb.pdf"
+      },
+      {
+        "label": "Roger C. Conant et W. Ross Ashby, « Every good regulator of a system must be a model of that system », International Journal of Systems Science, 1(2), 1970, p. 89-97.",
+        "kind": "primary",
+        "reference": "10.1080/00207727008920220",
+        "url": "https://doi.org/10.1080/00207727008920220"
+      },
+      {
+        "label": "Ronan Le Roux, « L'impossible constitution d'une théorie générale des machines ? La cybernétique dans la France des années 1950 », Revue de synthèse, 130(1), 2009.",
+        "kind": "francophone-reception",
+        "reference": "10.1007/s11873-009-0065-8",
+        "url": "https://hal.science/hal-00478459/document"
       }
     ]
   },
@@ -1204,6 +1420,61 @@ export const generatedConcepts: Concept[] = [
         "kind": "primary",
         "reference": "10.1177/03063127241262457",
         "url": "https://doi.org/10.1177/03063127241262457"
+      }
+    ]
+  },
+  {
+    "id": "objet-de-la-cybernetique-economique",
+    "slug": "objet-de-la-cybernetique-economique",
+    "title": "L'objet de la cybernétique économique",
+    "authorLabel": "Anton Brender",
+    "hookQuestion": "Un diagramme qui boucle suffit-il à faire un mécanisme cybernétique ?",
+    "shortExplanation": "Une boucle n'est cybernétique que si une information y commande une action : ce que la cybernétique économique étudie est un réseau de comportements asservis.",
+    "authors": [],
+    "themes": [
+      "ou-passe-la-commande"
+    ],
+    "attributionNote": "L'article est signé d'un seul nom. L'expression « cybernétique économique » n'est pas de Brender et il ne la revendique nulle part : elle circulait avant lui, elle titre l'ouvrage d'Oskar Lange qu'il discute et elle circulait dans la série N des Cahiers de l'I.S.E.A. dirigée par Louis Couffignal. Ce que Brender signe seul, c'est la définition restrictive de son objet : contre Couffignal et contre Lange, nommés et cités l'un et l'autre dans le texte, il écrit « Selon nous, c'est l'étude de tels phénomènes qui doit constituer en propre l'objet de la cybernétique économique », et il présente son texte comme « un essai de définition ».",
+    "quotation": {
+      "text": "[…] c’est un réseau de comportements asservis qu’étudie la cybernétique économique.",
+      "reference": "Anton Brender, « L'objet de la cybernétique économique : un essai de définition », Économie appliquée, tome 31, n° 3-4, 1978, « Equilibre et Régulation », p. 353-364, p. 361, partie II"
+    },
+    "sources": [
+      {
+        "label": "Anton Brender, « L'objet de la cybernétique économique : un essai de définition », Économie appliquée, 31(3-4), 1978, p. 353-364.",
+        "kind": "primary",
+        "reference": "p. 359-361 · 10.3406/ecoap.1978.4249",
+        "url": "https://www.persee.fr/doc/ecoap_0013-0494_1978_num_31_3_4249"
+      }
+    ]
+  },
+  {
+    "id": "ordre-a-partir-du-bruit",
+    "slug": "ordre-a-partir-du-bruit",
+    "title": "L'ordre à partir du bruit",
+    "authorLabel": "Heinz von Foerster",
+    "hookQuestion": "D'où vient l'ordre quand rien d'ordonné n'est entré dans le système ?",
+    "shortExplanation": "Un système ne se nourrit pas que d'ordre : secoué par un bruit sans direction, il n'en retient, par des propriétés propres à ses éléments, que ce qui accroît son ordre.",
+    "authors": [],
+    "themes": [
+      "auto-organisation-et-bruit"
+    ],
+    "attributionNote": "La communication est signée d'un seul nom, et von Foerster nomme lui-même le principe dans le texte, en l'opposant aux deux principes qu'il attribue à Erwin Schrödinger. Le volume n'imprime nulle part son prénom : « Heinz » vient de la notice d'autorité du catalogue général de la Bibliothèque nationale de France. La formule française « ordre à partir de bruit » n'est pas de lui et n'est pas une traduction publiée de son texte : elle est d'Henri Atlan, qui la lui crédite en 1972. Enfin, la communication a été prononcée le 5 mai 1959, lors d'une conférence tenue les 5 et 6 mai 1959 et publiée en 1960 : c'est 1960 qui date le texte cité.",
+    "quotation": {
+      "text": "Thus, in my restaurant self-organizing systems do not only feed upon order, they will also find noise on the menu.",
+      "reference": "Heinz von Foerster, « On Self-Organizing Systems and Their Environments », dans Marshall C. Yovits et Scott Cameron (dir.), Self-Organizing Systems. Proceedings of an Interdisciplinary Conference, 5 and 6 May, 1959, Oxford, Pergamon Press, 1960, p. 31-50, p. 43"
+    },
+    "sources": [
+      {
+        "label": "Heinz von Foerster, « On Self-Organizing Systems and Their Environments », dans M. C. Yovits et S. Cameron (dir.), Self-Organizing Systems, Oxford, Pergamon Press, 1960, p. 31-50.",
+        "kind": "primary",
+        "reference": "LCCN 60-12574"
+      },
+      {
+        "label": "Henri Atlan, « Du bruit comme principe d'auto-organisation », Communications, n° 18, « L'événement », Paris, Seuil, 1972, p. 21-36.",
+        "kind": "francophone-reception",
+        "reference": "p. 23-24 · 10.3406/comm.1972.1256",
+        "url": "https://www.persee.fr/doc/comm_0588-8018_1972_num_18_1_1256"
       }
     ]
   },
@@ -1449,6 +1720,66 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "redondance-du-commandement-potentiel",
+    "slug": "redondance-du-commandement-potentiel",
+    "title": "La redondance du commandement potentiel",
+    "authorLabel": "Warren S. McCulloch",
+    "hookQuestion": "Dans un réseau, qui prend la main quand plusieurs pourraient commander ?",
+    "shortExplanation": "Plusieurs stations d'un réseau peuvent commander : celles qui ont réuni l'information s'accordent et font marcher l'ensemble. Le savoir fait l'autorité.",
+    "authors": [],
+    "themes": [
+      "ou-passe-la-commande"
+    ],
+    "attributionNote": "La communication est signée d'un seul nom. McCulloch y expose la notion et la sépare des trois autres redondances qu'il distingue, celles de code, de canal et de calcul ; il date lui-même cette séparation de « two or three weeks ago », l'exposé étant de mai 1959 et le volume de 1960. Ce texte n'est pas nécessairement celui où le mot est forgé : sa phrase suppose l'expression déjà en usage chez lui, et les deux textes qui pourraient porter une occurrence antérieure, sa communication de Teddington de 1958 et le recueil Embodiments of Mind, n'ont pas été ouverts. Il énonce et nomme la notion dans ce texte ; il n'est pas établi qu'il l'y invente.",
+    "quotation": {
+      "text": "Thus we have a redundancy of potential command in which knowledge constitutes authority.",
+      "reference": "Warren S. McCulloch, « The Reliability of Biological Systems », dans Marshall C. Yovits et Scott Cameron (dir.), Self-Organizing Systems. Proceedings of an Interdisciplinary Conference, 5 and 6 May, 1959, Oxford, Pergamon Press, 1960, p. 264-281, p. 266"
+    },
+    "sources": [
+      {
+        "label": "Warren S. McCulloch, « The Reliability of Biological Systems », dans M. C. Yovits et S. Cameron (dir.), Self-Organizing Systems, Oxford, Pergamon Press, 1960, p. 264-281.",
+        "kind": "primary",
+        "reference": "p. 265-266 · LCCN 60-12574"
+      },
+      {
+        "label": "Warren S. McCulloch, Embodiments of Mind, Cambridge (Mass.), MIT Press, 1965.",
+        "kind": "primary",
+        "reference": "ISBN 0262130181"
+      }
+    ]
+  },
+  {
+    "id": "regulateur-commande-par-l-ecart",
+    "slug": "regulateur-commande-par-l-ecart",
+    "title": "Le régulateur commandé par l'écart",
+    "authorLabel": "W. Ross Ashby",
+    "hookQuestion": "Que reste-t-il à corriger quand la correction a tari ce qui l'informait ?",
+    "shortExplanation": "Un régulateur qui ne s'informe que de l'écart ne peut pas réguler parfaitement : plus il tient la variable constante, plus il bloque le canal qui l'informe.",
+    "authors": [],
+    "themes": [
+      "la-boucle-et-l-ecart"
+    ],
+    "attributionNote": "W. Ross Ashby signe seul l'ouvrage, paru chez Chapman & Hall en 1956 ; l'exemplaire lu est la seconde impression de 1957. Le résultat porté ici, qu'un régulateur qui ne s'informe que de l'écart ne peut jamais réguler parfaitement, est démontré par lui au chapitre 12, sans coauteur et sans renvoi à un travail antérieur. Deux réserves de vocabulaire, qui ne touchent pas la paternité du résultat : Ashby met lui-même entre guillemets « error-controlled servo-mechanism » et « closed loop regulator », qu'il emprunte au vocabulaire de l'asservissement de son époque, et le titre français est notre rendu de « error-controlled regulator », aucune traduction française n'ayant été ouverte.",
+    "quotation": {
+      "text": "[…] the more successful R is in keeping E constant, the more does R block the channel by which it is receiving its necessary information.",
+      "reference": "W. Ross Ashby, An Introduction to Cybernetics, Londres, Chapman & Hall, 1956 (tirage lu : seconde impression, 1957), chapitre 12 « The Error-Controlled Regulator ». Édition électronique de 1999 préparée pour le Principia Cybernetica Web avec l'autorisation de la succession Ashby, ch. 12, section 12/5, p. 224"
+    },
+    "sources": [
+      {
+        "label": "W. Ross Ashby, An Introduction to Cybernetics, Londres, Chapman & Hall, 1956. Édition électronique de 1999 autorisée par la succession Ashby, Principia Cybernetica Web.",
+        "kind": "primary",
+        "reference": "ch. 12, p. 219-243",
+        "url": "https://pespmc1.vub.ac.be/books/IntroCyb.pdf"
+      },
+      {
+        "label": "W. Ross Ashby, An Introduction to Cybernetics, New York, John Wiley & Sons, 1956. Exemplaire numérisé à l'Internet Archive, item AnIntroductionToCybernetics.",
+        "kind": "primary",
+        "reference": "table des matières",
+        "url": "https://archive.org/details/AnIntroductionToCybernetics"
+      }
+    ]
+  },
+  {
     "id": "regulation-controle-autonome",
     "slug": "regulation-controle-autonome",
     "title": "Régulation de contrôle et régulation autonome",
@@ -1544,6 +1875,36 @@ export const generatedConcepts: Concept[] = [
         "kind": "secondary-academic",
         "reference": "10.4000/13g8p",
         "url": "https://journals.openedition.org/pistes/8921"
+      }
+    ]
+  },
+  {
+    "id": "regulation-proportionnelle-derivee-integrale",
+    "slug": "regulation-proportionnelle-derivee-integrale",
+    "title": "Contrôle proportionnel, dérivé et intégral",
+    "authorLabel": "Stanford Goldman",
+    "hookQuestion": "Un corps corrige-t-il la taille de l'écart, sa vitesse, ou ce qu'il en a accumulé ?",
+    "shortExplanation": "L'écart ne donne pas une information mais six : sa grandeur, sa vitesse, son accumulation, chacune en deux signes, dont le corps semble faire des usages différents.",
+    "authors": [],
+    "themes": [
+      "variete-et-moyens-de-la-regulation"
+    ],
+    "attributionNote": "Le chapitre porte une seule signature. Goldman n'est l'auteur ni de la notion d'homéostasie, qu'il rapporte à Walter B. Cannon et, plus loin en amont, à Claude Bernard, ni du trio proportionnel, dérivé, intégral, qu'il prend à la théorie des asservissements. Ce qui lui revient en propre est leur rapprochement : soutenir que le corps vivant émet six informations d'écart distinctes, trois grandeurs et deux signes, qu'il les achemine vers des organes différents et qu'il en fait des usages différents. Le millésime 1960 est celui des actes ; l'exposé est de mai 1959, et les notions qu'il rapproche lui sont antérieures.",
+    "quotation": {
+      "text": "Une idée trop peu reconnue des biologistes est que les contrôles proportionnel, dérivé et intégral peuvent tous être utilisés dans l'homéostasie.",
+      "reference": "Stanford Goldman, « Further Consideration of Cybernetic Aspects of Homeostasis », dans Marshall C. Yovits et Scott Cameron (dir.), Self-Organizing Systems. Proceedings of an Interdisciplinary Conference, 5 and 6 May, 1959, Oxford, Pergamon Press, 1960, p. 108-121, p. 108, ouverture de la section 1",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Stanford Goldman, « Further Consideration of Cybernetic Aspects of Homeostasis », dans M. C. Yovits et S. Cameron (dir.), Self-Organizing Systems, Oxford, Pergamon Press, 1960, p. 108-121.",
+        "kind": "primary",
+        "reference": "p. 108-110 · LCCN 60-12574"
+      },
+      {
+        "label": "Stanford Goldman, « Cybernetic Aspects of Homeostasis », dans C. L. Comar et F. Bronner (dir.), Mineral Metabolism. An Advanced Treatise, vol. I, partie A, New York et Londres, Academic Press, 1960, p. 61-100.",
+        "kind": "primary",
+        "reference": "p. 63-64 · LCCN 60-9067"
       }
     ]
   },
