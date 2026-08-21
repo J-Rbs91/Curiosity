@@ -119,6 +119,11 @@ La méthode, les critères de validation et le protocole sont dans
 [`corpus/perimeter.md`](corpus/perimeter.md) ; le branchement des bases dans
 [`scripts/mcp/README.md`](scripts/mcp/README.md).
 
+L'état du corpus se lit dans [`corpus/ETAT.md`](corpus/ETAT.md), et ce qu'il reste à
+instruire dans [`corpus/RESTE-A-FAIRE.md`](corpus/RESTE-A-FAIRE.md) : six domaines encore
+vides, la file de la sociologie des organisations, et vingt-cinq cartes validées qui
+attendent leur approfondissement.
+
 > Une référence introuvable n'existe pas. Une source qui ne dit pas ce qu'on lui fait dire
 > n'est pas une preuve. Une affirmation n'est pas validée par celui qui l'a produite.
 
