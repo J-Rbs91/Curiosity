@@ -205,99 +205,169 @@ export function lidEdge(stroke, offset) {
 }
 
 /**
- * La durée de la séquence entière — regards et clignements sur la même horloge.
+ * Les deux séquences du regard, et ce qui les sépare.
  *
- * Deux pistes d'images clés de durée identique restent synchronisées sans qu'on ait à les
- * accorder, et se relancent ensemble d'un seul geste. C'est la raison pour laquelle il n'y a
- * qu'une durée ici, et non une par piste.
+ * Le dessin est le même, l'orbite est la même, les fixations sont les mêmes. Ce qui distingue
+ * ces deux partitions n'est ni la géométrie ni l'amplitude : c'est **le temps**, et c'est la
+ * seule chose qui décide si un œil cherche ou s'il attend.
+ *
+ * - `scanning` — l'écran d'ouverture. Huit saccades, six fixations de 240 à 264 ms, un double
+ *   clignement rapide à la charnière de deux regards. C'est le rythme de la recherche
+ *   visuelle : l'œil parcourt, il trouve, il repart.
+ * - `waiting` — le titre d'Explorer. Quatre saccades, trois fixations de 864 à 1 656 ms, deux
+ *   clignements lents. C'est le rythme d'un regard qui ne cherche rien : il se pose, il reste,
+ *   il revient.
+ *
+ * **Ce que le second n'a pas le droit d'être.** Il aurait été économique de rejouer la
+ *  partition d'ouverture sur un second écran ; ce n'en aurait pas été une seconde, seulement la
+ * même deux fois. Un œil qui balaie six positions en 4,8 secondes dans un en-tête qu'on revient
+ * voir dit « cherche » là où l'écran dit « choisis » — le mouvement raconterait le contraire de
+ * ce que la page demande.
+ *
+ * Trois écarts font tout, et ils sont mesurables :
+ *
+ * | | `scanning` | `waiting` |
+ * |---|---|---|
+ * | Durée | 4 800 ms | 7 200 ms |
+ * | Saccades | 8 | 4 |
+ * | Fixation la plus longue | 264 ms | 1 656 ms |
+ * | Durée d'une saccade | 144 ms | 216 ms, 288 au retour |
+ * | Clignements | 3, dont un double rapide | 2, tous deux lents |
+ * | Pause entre deux passages | 2,34 à 5,67 s | 4,68 à 9,36 s |
+ *
+ * **Le retour au repos est la seule saccade plus lente que les autres**, dans les deux
+ * partitions comme dans un œil réel : revenir sur ce qu'on regardait est un mouvement décidé,
+ * pas un mouvement attiré.
+ *
+ * Une partition entre ici et nulle part ailleurs. La feuille de style en écrit les images clés
+ * à la main — le CSS ne sait pas les importer —, et `npm test` relit le CSS pour vérifier qu'il
+ * joue exactement ce qui est écrit ici, séquence par séquence.
  */
-export const MARK_SEQUENCE_MS = 4800;
+export const GAZE_SEQUENCES = {
+  /**
+   * Le regard qui parcourt — l'écran d'ouverture.
+   *
+   * Sur 4 800 ms, un point vaut 48 ms. Les valeurs ne sont donc pas rondes par hasard : une
+   * saccade vaut 3 points, soit 144 ms — la durée d'un retour à l'appui —, et une fixation 5 ou
+   * 5,5 points, soit 240 à 264 ms. Ce sont les ordres de grandeur du regard humain en recherche
+   * visuelle : l'œil ne balaie pas, il saute, et c'est ce rythme qui distingue un regard d'un
+   * point qui flotte.
+   *
+   * **Pourquoi la séquence est trois fois plus longue que celle qui la précédait sans être
+   * ralentie.** Étirer les mêmes quatre saccades donnerait des fixations de 1,1 s : un point qui
+   * fixe, plus un œil qui regarde. Le temps supplémentaire achète donc des **événements**, pas
+   * de la lenteur — un second regard sur trois fixations que le premier n'a pas visitées, et
+   * trois clignements. Le second regard emprunte le côté droit de l'orbite là où le premier
+   * tenait le gauche : rejouer le même arc se lirait comme une boucle dans la boucle.
+   *
+   * Les deux longs maintiens au repos — 32,5 à 52 et 79 à 100 — ne sont pas des temps morts :
+   * ce sont les moments où la paupière travaille, et où un œil réel ne déplace pas son regard.
+   *
+   * Les trois clignements ne sont pas interchangeables. **Deux rapides**, à la charnière des
+   * deux regards : un œil réel cligne au moment où il change de zone d'intérêt, pas au milieu
+   * d'une fixation, et c'est ce placement qui articule la séquence en deux temps au lieu de la
+   * couper en deux. **Un long**, à la fin, plus lent à se relever qu'à tomber — 336 ms contre
+   * 204 : c'est ce qui fait que la séquence se termine au lieu de s'arrêter.
+   */
+  scanning: {
+    durationMs: 4800,
+    /**
+     * Les pauses entre deux passages, tirées au hasard à chaque fin.
+     *
+     * Deux valeurs, et pas un intervalle continu : ce qui casse l'impression de mécanique n'est
+     * pas la finesse du tirage mais le fait qu'on ne puisse pas anticiper le prochain départ.
+     * Deux durées franchement différentes y suffisent, et restent des valeurs qu'on peut lire.
+     *
+     * La pause court **après** la séquence, elle n'est pas une période : la séquence dure déjà
+     * 4,8 s, une période de 2,34 s n'existerait pas.
+     */
+    replayPausesMs: [2340, 5670],
+    gaze: [
+      { position: "rest", from: 0, to: 4 },
+      { position: "up", from: 7, to: 12.5 },
+      { position: "right", from: 15.5, to: 21 },
+      { position: "down", from: 24, to: 29.5 },
+      { position: "rest", from: 32.5, to: 52 },
+      { position: "left", from: 55, to: 60 },
+      { position: "up-right", from: 63, to: 68 },
+      { position: "down-right", from: 71, to: 76 },
+      { position: "rest", from: 79, to: 100 },
+    ],
+    blink: [
+      { position: "open", from: 0, to: 34 },
+      { position: "closed", from: 36.25, to: 37 },
+      { position: "open", from: 39.75, to: 44 },
+      { position: "closed", from: 46.25, to: 47 },
+      { position: "open", from: 49.75, to: 80.5 },
+      { position: "closed", from: 84.75, to: 90.5 },
+      { position: "open", from: 97.5, to: 100 },
+    ],
+  },
+
+  /**
+   * Le regard qui attend — le titre d'Explorer.
+   *
+   * Sur 7 200 ms, un point vaut 72 ms. Quatre saccades seulement, et **elles vont toutes dans
+   * le même sens** : l'œil quitte le centre par le haut, descend le flanc gauche de l'orbite —
+   * `up`, `left`, `down` —, puis revient d'un seul mouvement. C'est ce qui manque au regard qui
+   * parcourt et qui fait toute la différence ici : aucun demi-tour, aucune position reprise, un
+   * seul quart d'orbite parcouru lentement. Un œil qui change huit fois de direction cherche
+   * quelque chose ; celui-ci n'a rien à trouver.
+   *
+   * **Les fixations sont ce qui coûte le temps, pas les déplacements.** 1 368, 1 656 et 864 ms,
+   * là où le regard qui parcourt tient 240. Ce n'est pas la même séquence ralentie : ralentir
+   * les saccades donnerait une pupille qui glisse, c'est-à-dire un point qui flotte et non plus
+   * un œil. Les saccades restent des sauts — 216 ms, et 288 pour le retour au repos, à peine
+   * plus longues que les 144 de l'ouverture parce qu'un mouvement sans urgence n'est pas un
+   * mouvement lent. Ce qui s'allonge, c'est ce qui se passe entre elles, c'est-à-dire rien.
+   *
+   * **Deux clignements, tous deux lents** — 288 ms de chute, 360 clos, 432 de relevé, contre
+   * 108/36/132 pour les rapides de l'ouverture. Le premier tombe au creux de la fixation
+   * latérale, le second sur le repos final : ce sont les deux moments où un œil qui attend
+   * cligne, et il n'y en a pas de troisième. Le double clignement rapide de l'ouverture n'a
+   * rien à faire ici — il articulait deux regards, et il n'y en a qu'un.
+   *
+   * **Ce que l'attente coûte au budget de mouvement, elle le rend.** La séquence dure une fois
+   * et demie l'autre, mais elle ne contient que la moitié de ses événements, et la pause qui la
+   * suit est deux fois plus longue. Sur un en-tête qu'on revient voir, la marque est donc
+   * immobile de 4,7 à 9,4 secondes sur chaque cycle de 12 à 17 — c'est cette proportion, et non
+   * l'amplitude, qui la rend supportable à la centième ouverture.
+   */
+  waiting: {
+    durationMs: 7200,
+    /**
+     * La pause la plus courte de l'ouverture, doublée et quadruplée.
+     *
+     * L'attente est ce que cette séquence raconte, et elle se joue autant **entre** deux
+     * passages qu'à l'intérieur d'un seul : un œil qui attend est immobile la plupart du temps.
+     * Deux valeurs franchement différentes, pour la même raison qu'à l'ouverture — on ne doit
+     * pas pouvoir anticiper le prochain départ.
+     */
+    replayPausesMs: [4680, 9360],
+    gaze: [
+      { position: "rest", from: 0, to: 12 },
+      { position: "up", from: 15, to: 34 },
+      { position: "left", from: 37, to: 60 },
+      { position: "down", from: 63, to: 75 },
+      { position: "rest", from: 79, to: 100 },
+    ],
+    blink: [
+      { position: "open", from: 0, to: 41 },
+      { position: "closed", from: 45, to: 50 },
+      { position: "open", from: 56, to: 84 },
+      { position: "closed", from: 88, to: 93 },
+      { position: "open", from: 99, to: 100 },
+    ],
+  },
+};
 
 /**
- * Les pauses entre deux passages, en millisecondes, tirées au hasard à chaque fin.
- *
- * Deux valeurs, et pas un intervalle continu : ce qui casse l'impression de mécanique n'est
- * pas la finesse du tirage mais le fait qu'on ne puisse pas anticiper le prochain départ.
- * Deux durées franchement différentes y suffisent, et restent des valeurs qu'on peut lire.
- *
- * La pause court **après** la séquence, elle n'est pas une période : la séquence dure déjà
- * 4,8 s, une période de 2,34 s n'existerait pas.
+ * Les noms des séquences. Déduits de la table plutôt qu'énumérés : en ajouter une troisième ne
+ * doit pas demander de penser à cette ligne, sans quoi elle serait écrite et jamais jouée.
  */
-export const REPLAY_PAUSES_MS = [2340, 5670];
-
-/**
- * La partition du regard, en intervalles de maintien.
- *
- * Chaque entrée dit « la pupille est à cette fixation, de tel pourcentage à tel autre ». Les
- * saccades ne sont pas écrites : ce sont les intervalles laissés vides entre deux maintiens,
- * que l'interpolation parcourt. C'est la forme même des images clés, et c'est ce qui rend
- * impossible d'oublier une saccade en modifiant une fixation.
- *
- * Sur 4 800 ms, un point vaut 48 ms. Les valeurs ne sont donc pas rondes par hasard : une
- * saccade vaut 3 points, soit 144 ms — la durée d'un retour à l'appui —, et une fixation
- * 5 ou 5,5 points, soit 240 à 264 ms. Ce sont les ordres de grandeur du regard humain, et ce
- * sont exactement ceux de la séquence de 1 600 ms qui précède celle-ci.
- *
- * **Pourquoi la séquence est trois fois plus longue sans être ralentie.** Étirer les mêmes
- * quatre saccades donnerait des fixations de 1,1 s : un point qui fixe, plus un œil qui
- * regarde. Le temps supplémentaire achète donc des **événements**, pas de la lenteur — un
- * second regard sur trois fixations que le premier n'a pas visitées, et trois clignements.
- * Le second regard emprunte le côté droit de l'orbite là où le premier tenait le gauche :
- * rejouer le même arc se lirait comme une boucle dans la boucle.
- *
- * Les deux longs maintiens au repos — 32,5 à 52 et 79 à 100 — ne sont pas des temps morts :
- * ce sont les moments où la paupière travaille, et où un œil réel ne déplace pas son regard.
- */
-export const GAZE_SCORE = [
-  { position: "rest", from: 0, to: 4 },
-  { position: "up", from: 7, to: 12.5 },
-  { position: "right", from: 15.5, to: 21 },
-  { position: "down", from: 24, to: 29.5 },
-  { position: "rest", from: 32.5, to: 52 },
-  { position: "left", from: 55, to: 60 },
-  { position: "up-right", from: 63, to: 68 },
-  { position: "down-right", from: 71, to: 76 },
-  { position: "rest", from: 79, to: 100 },
-];
-
-/**
- * La partition de la paupière, dans la même unité et sur la même horloge.
- *
- * Trois clignements, et ils ne sont pas interchangeables :
- *
- * - **Deux rapides**, à la charnière des deux regards. Un œil réel cligne au moment où il
- *   change de zone d'intérêt, pas au milieu d'une fixation ; c'est ce placement qui articule
- *   la séquence en deux temps au lieu de la couper en deux.
- * - **Un long**, à la fin, plus lent à se relever qu'à tomber — 336 ms contre 204. C'est ce
- *   qui fait que la séquence se termine au lieu de s'arrêter.
- *
- * **Ce qu'un clignement ne doit pas devenir.** Fermé, le O est un disque d'encre pleine : à
- * ce contraste, deux fermetures trop rapprochées seraient un scintillement, et la méthode
- * l'interdit sans condition. Deux garde-fous, tous deux vérifiés par les tests :
- *
- * 1. Les fermetures sont espacées d'au moins un tiers de seconde — ici 480 ms au plus serré,
- *    soit un peu plus de deux par seconde là où le seuil est à trois.
- * 2. La fermeture est un **balayage** de 108 ms, pas une bascule : ce qu'on voit est un bord
- *    qui descend, et le disque plein ne tient que 36 ms. C'est ce qui fait lire une paupière
- *    plutôt qu'un flash, et c'est pour cela que la durée de fermeture ne se raccourcit pas.
- */
-export const BLINK_SCORE = [
-  { position: "open", from: 0, to: 34 },
-  { position: "closed", from: 36.25, to: 37 },
-  { position: "open", from: 39.75, to: 44 },
-  { position: "closed", from: 46.25, to: 47 },
-  { position: "open", from: 49.75, to: 80.5 },
-  { position: "closed", from: 84.75, to: 90.5 },
-  { position: "open", from: 97.5, to: 100 },
-];
-
-/**
- * L'ordre dans lequel les fixations sont jouées, repos compris aux deux bouts.
- *
- * Déduit de la partition plutôt que réécrit : c'est elle qui décide, et deux listes finiraient
- * par ne plus dire la même chose.
- */
-export const GAZE_SEQUENCE = GAZE_SCORE.map(({ position }) => position);
+export const GAZE_SEQUENCE_NAMES = /** @type {(keyof typeof GAZE_SEQUENCES)[]} */ (
+  Object.keys(GAZE_SEQUENCES)
+);
 
 /**
  * Occupation de la marque selon le support, en fraction du côté du canevas.

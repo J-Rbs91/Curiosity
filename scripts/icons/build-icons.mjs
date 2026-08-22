@@ -28,9 +28,7 @@ import {
   counter,
   PUPIL_R,
   GAZE,
-  GAZE_SCORE,
-  BLINK_SCORE,
-  MARK_SEQUENCE_MS,
+  GAZE_SEQUENCES,
   lid,
   FILL,
   CORNER,
@@ -332,6 +330,10 @@ function groundRect(size, corner) {
  * c'est cette alternance saut/arrêt, bien plus que l'amplitude, qui fait qu'un point se lit
  * comme un œil.
  *
+ * **C'est la partition d'ouverture qui est gravée ici**, `scanning` — celle du O du nom. Ce
+ * fichier montre la marque, et la marque se présente sur l'écran d'ouverture ; `waiting` est le
+ * regard d'un titre d'écran, il n'a rien à dire sur une page de dépôt.
+ *
  * **L'animation ne joue qu'une fois, et c'est une décision, pas un oubli.** Dans
  * l'application, la séquence se relance après une pause aléatoire, parce qu'elle y occupe un
  * écran de présentation qu'on regarde. Ici, le fichier sert un README et une page de dépôt :
@@ -354,17 +356,18 @@ function sequenceStyle(stroke) {
   ];
 
   const lidPositions = lid(stroke);
+  const { durationMs, gaze, blink } = GAZE_SEQUENCES.scanning;
 
   return [
     `  <style>`,
     `    .pupil, .lid { transform-box: view-box; transform-origin: center; }`,
     `    .lid { transform: ${step(lidPositions.open)}; }`,
     `    @media (prefers-reduced-motion: no-preference) {`,
-    `      .pupil { animation: gaze ${MARK_SEQUENCE_MS}ms cubic-bezier(0.23, 1, 0.32, 1) both; }`,
-    `      .lid { animation: blink ${MARK_SEQUENCE_MS}ms cubic-bezier(0.23, 1, 0.32, 1) both; }`,
+    `      .pupil { animation: gaze ${durationMs}ms cubic-bezier(0.23, 1, 0.32, 1) both; }`,
+    `      .lid { animation: blink ${durationMs}ms cubic-bezier(0.23, 1, 0.32, 1) both; }`,
     `    }`,
-    ...track("gaze", GAZE_SCORE, GAZE),
-    ...track("blink", BLINK_SCORE, lidPositions),
+    ...track("gaze", gaze, GAZE),
+    ...track("blink", blink, lidPositions),
     `  </style>`,
   ].join("\n");
 }
@@ -456,5 +459,7 @@ write(
 );
 
 console.log(
-  `\n${GAZE_SCORE.length - 1} saccades, ${BLINK_SCORE.filter((s) => s.position === "closed").length} clignements, repos au centre. Terminé.`
+  `\n${GAZE_SEQUENCES.scanning.gaze.length - 1} saccades, ${
+    GAZE_SEQUENCES.scanning.blink.filter((s) => s.position === "closed").length
+  } clignements, repos au centre. Terminé.`
 );
