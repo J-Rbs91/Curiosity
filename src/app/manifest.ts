@@ -24,6 +24,14 @@ export default function manifest(): MetadataRoute.Manifest {
     scope: `${BASE_PATH}/`,
     display: "standalone",
     orientation: "portrait",
+    /*
+     * L'écran de démarrage et la barre système de l'application installée, dans le thème par
+     * défaut. Un manifeste est lu au lancement et ne porte qu'une valeur : il ne peut pas
+     * connaître une préférence qui vit dans le `localStorage` du lecteur. C'est donc le thème
+     * sombre qui s'affiche pendant l'ouverture, quelle que soit la préférence, et le thème
+     * choisi qui prend la main dès que la page est analysée. La limite est réelle et ne se
+     * contourne pas sans serveur ; elle est consignée au §11 de `docs/ux-direction.md`.
+     */
     background_color: "#000000",
     theme_color: "#000000",
     lang: "fr",

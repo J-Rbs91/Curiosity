@@ -7,12 +7,23 @@ import { Screen } from "@/components/motion/Screen";
 import { BackLink } from "@/components/ui/BackLink";
 import { climbTo } from "@/components/navigation/climb";
 import { Button } from "@/components/ui/Button";
+import { ThemeChoice } from "@/components/ui/ThemeChoice";
 
 /**
- * Il n'y a plus rien à régler : ni niveau d'explication, ni durée de lecture.
- * Ne reste que ce qu'un utilisateur doit pouvoir faire de ses propres données —
- * les effacer. Un écran pour une seule action, mais retirer cette action
- * enfermerait l'utilisateur dans un historique qu'il ne pourrait plus défaire.
+ * Deux choses, et la frontière entre elles est ce qui justifie que cet écran existe.
+ *
+ * **Ce qu'un lecteur doit pouvoir faire de ses données** — les effacer. Retirer cette action
+ * l'enfermerait dans un historique qu'il ne pourrait plus défaire.
+ *
+ * **La condition dans laquelle il lit** — le thème. Les réglages retirés au §5 de
+ * `docs/ux-direction.md` réglaient tous le *contenu* : niveau d'explication, durée de
+ * lecture. Ils ont été retirés parce que la difficulté d'un concept se lit dans son texte,
+ * pas dans une préférence choisie une fois pour toutes. Un thème ne règle rien du contenu ;
+ * il règle la lumière dans laquelle on le lit, et c'est la seule chose que le lecteur sait
+ * mieux que nous. Ce n'est donc pas la réouverture de la porte que le §5 a fermée.
+ *
+ * L'ordre suit la fréquence : on change de thème plus souvent qu'on n'efface son historique,
+ * et une action irréversible ne se met pas en tête d'écran.
  */
 export default function SettingsPage() {
   const router = useRouter();
@@ -37,6 +48,10 @@ export default function SettingsPage() {
         <h1 className="mt-4 font-serif-display text-2xl font-semibold text-ink">Réglages</h1>
 
         <div style={{ marginTop: "var(--gap-section)" }}>
+          <ThemeChoice />
+        </div>
+
+        <div style={{ marginTop: "var(--gap-group)" }}>
           {!confirming ? (
             <button
               type="button"

@@ -377,13 +377,156 @@
 }
 
 
-/*
- * Application sombre, sans variante claire. Le déclarer au navigateur plutôt
- * que le laisser deviner : c'est ce qui donne des contrôles de formulaire, des
- * barres de défilement et des sélections de texte accordés au reste.
- */
+/* --------------------------------------------------------------------------
+ * Le thème clair — une seconde échelle, et non l'inverse de la première
+ *
+ * **Pourquoi il existe.** L'application était sombre sans variante claire, et le §3 de
+ * `docs/ux-direction.md` le reconnaissait déjà comme un défaut plutôt que comme un parti
+ * pris : le critère de validation de la méthode est « le mode clair existe-t-il et tient-il ».
+ * Il existe maintenant. Ce qu'il règle est nommé au §11 — la lisibilité en plein soleil, qui
+ * était le coût connu de l'absence.
+ *
+ * **Ce n'est pas une inversion, et c'est la seule chose à retenir de ce bloc.** Retourner
+ * l'échelle de neutres — le fond au sommet, l'encre au pied — donne, selon la formule de la
+ * méthode, « un résultat vibrant et fatigant ». Trois raisons, et chacune se vérifie sur les
+ * valeurs ci-dessous :
+ *
+ * — **Le plafond de contraste n'est pas le même.** Sur le noir, l'écart maximal atteignable
+ *   vaut 21:1 ; sur le crème `#EDDDC0`, il vaut 15,70:1. Les deux barreaux les plus hauts du
+ *   thème sombre — 17,94 et 20,12 — n'ont donc **aucun** équivalent ici. Le haut de l'échelle
+ *   se recalcule ; il ne se reporte pas.
+ * — **Un écart de surface ne se voit pas au même prix.** Deux plans séparés par 1,12:1 se
+ *   distinguent nettement près du noir, où les luminances sont comprimées ; le même rapport
+ *   près du crème vaut deux tiers de l'écart de clarté perçue. Les trois surfaces sont donc
+ *   calées sur leur **écart de clarté** (L*), pas sur leur rapport de contraste — c'est ce
+ *   qu'on voit qui doit être équivalent.
+ * — **Les couleurs de signal se resaturent.** `--good` et `--warn` sont désaturés dans le
+ *   sombre pour ne pas vibrer sur du noir. Sur du crème, la même désaturation les rendrait
+ *   indistinguables du texte : elles remontent en saturation en descendant en clarté, à
+ *   ratio de contraste inchangé.
+ *
+ * Le texte et les filets, eux, sont calés sur le **rapport de contraste** du barreau sombre
+ * correspondant : c'est lui qui est opposable, et c'est lui qui doit se retrouver à
+ * l'identique d'un thème à l'autre.
+ *
+ * **La palette est un donné.** Cinq valeurs — `#260D02`, `#4A423A`, `#E3C68F`, `#EDDDC0`,
+ * `#9DABB3` — fixées par le propriétaire du produit. Quatre sont ici, à des rôles porteurs.
+ * La cinquième, `#9DABB3`, ne l'est pas : elle vaut 1,76:1 sur le crème, ce qui la place sous
+ * le seuil du texte (4,5) **et** sous celui des éléments d'interface (3). Le seul rôle qu'elle
+ * pourrait physiquement tenir est le filet, qui n'a pas de seuil — mais le §3 réserve la
+ * couleur à ce qui est juste, faux ou irréversible, et un filet bleu-gris sur une page chaude
+ * serait de la couleur qui ne signale rien. Elle est donc écartée, et la raison est écrite
+ * plutôt que tue.
+ *
+ * **Les cinq barreaux intermédiaires sont dérivés de la palette, pas importés.** Chacun est
+ * le point de la ligne brisée `#260D02 → #4A423A → #E3C68F → #EDDDC0` qui atteint le ratio
+ * visé. Ils restent donc dans la famille chromatique du donné : ce sont des neutres chauds,
+ * jamais des gris rapportés. C'est aussi ce qui satisfait la règle « au moins quatre niveaux
+ * exploitables entre le fond et le texte principal » — la palette imposée n'en offrait que
+ * deux.
+ *
+ * **Ce que ce bloc ne fait pas.** Il ne touche à aucun composant. Les rôles sont les seuls
+ * noms que l'application emploie — c'est la règle posée en tête de ce fichier —, et les
+ * redéfinir ici retourne l'interface entière sans qu'une seule classe change. Les onze gris
+ * du thème sombre restent la couche primitive du sombre, et rien d'autre.
+ * -------------------------------------------------------------------------- */
+
 :root {
+  /*
+   * Sombre par défaut. `data-theme` porte le thème **résolu**, jamais la préférence :
+   * « suivre le système » n'est pas un thème mais une règle qui en désigne un, et c'est
+   * `src/lib/theme.ts` qui la tranche. Sans cette résolution en amont, la palette claire
+   * s'écrirait deux fois — sous l'attribut et sous la requête média —, et deux copies d'une
+   * même palette divergent.
+   */
   color-scheme: dark;
+}
+
+:root[data-theme="light"] {
+  /*
+   * L'échelle chaude, numérotée dans le même sens que celle des neutres : **50 est la plus
+   * claire, 900 la plus sombre**. Ce qui change d'un thème à l'autre n'est pas la
+   * numérotation mais l'extrémité où se tient le fond.
+   *
+   * Le ratio inscrit est celui de la valeur **sur le fond crème**, calculé et non estimé ;
+   * `globals-contrast.test.ts` les relit et refuse toute dérive. Les seuils sont ceux du
+   * thème sombre : 4,5 pour du texte courant, 3 pour une bordure ou une icône qui porte une
+   * fonction, aucun pour un filet qui n'en porte pas.
+   */
+  --c-50: #edddc0;  /* fond                                    imposée         */
+  --c-150: #e8d1a7; /* surface levée                   1,11:1  dérivée         */
+  --c-200: #e3c68f; /* la même surface au contact      1,23:1  imposée         */
+  --c-400: #b59e75; /* séparateur, filet               1,94:1  dérivée         */
+  --c-500: #786a54; /* bordure et icône fonctionnelles 3,94:1  dérivée         */
+  --c-600: #5e5345; /* texte tertiaire, chapeau        5,61:1  dérivée         */
+  --c-700: #4a423a; /* texte secondaire                7,37:1  imposée         */
+  --c-800: #36241b; /* texte de lecture suivie        11,02:1  dérivée         */
+  --c-900: #260d02; /* texte principal, et l'action   13,77:1  imposée         */
+
+  --paper: var(--c-50);
+  --paper-raised: var(--c-150);
+  --paper-contact: var(--c-200);
+
+  --ink: var(--c-900);
+  /*
+   * La lecture suivie reste **sous** le texte principal, exactement comme dans le sombre —
+   * un titre se repère, un texte se lit, et c'est l'ordre des valeurs qui dit lequel est
+   * lequel. Le rapport entre les deux est conservé : 13,77 / 11,02 = 1,25 ici, 17,94 / 14,17
+   * = 1,27 là-bas.
+   *
+   * En revanche, la raison qui l'a fait naître ne se transpose pas. Dans le sombre, ce
+   * barreau existe parce que le texte clair sur fond noir essaime au bout de huit minutes.
+   * Sur du crème, l'encre foncée n'essaime pas : ce qui la remplace comme motif est le
+   * confort d'un contraste qui n'est pas poussé à son plafond — 15,70:1 est atteignable, et
+   * n'est employé nulle part.
+   */
+  --ink-reading: var(--c-800);
+  --ink-soft: var(--c-700);
+  --ink-faint: var(--c-600);
+
+  --line: var(--c-400);
+  --line-strong: var(--c-500);
+
+  /*
+   * L'accent partage la valeur du texte principal, et c'est un constat, pas un raccourci.
+   * Le crème plafonne à 15,70:1 et seul le noir pur l'atteint ; `#260D02` en tient 13,77,
+   * c'est-à-dire trois fois le seuil de tout ce que l'accent a à porter. Le noir n'est donc
+   * pas *exigé par le contraste*, qui est la seule condition à laquelle il était admis.
+   *
+   * Ce que ce partage coûte est mesuré : dans le sombre, l'accent et l'encre sont déjà à
+   * 1,12:1 l'un de l'autre — deux barreaux voisins qu'aucun œil ne sépare isolément. Ce qui
+   * distingue une action d'un texte n'a jamais été la valeur : c'est le **remplissage
+   * inversé**, doublé de la graisse et, dans la navigation, du repère de position.
+   */
+  --accent: var(--c-900);
+  --accent-soft: var(--c-200);
+  --accent-contrast: var(--c-50);
+
+  /*
+   * Les deux couleurs de signal, à ratio conservé et **déplacées en teinte**.
+   *
+   * Le sombre les désature pour qu'elles ne vibrent pas sur du noir. Sur du crème, la
+   * désaturation n'est pas seulement inutile : elle est fatale. Dans le sombre, `--warn` se
+   * détache parce que tout le reste est **gris** — n'importe quelle teinte y est un signal.
+   * Ici, tout le reste est brun, et un brun-orangé de plus n'est plus un signal du tout.
+   *
+   * La mesure qui décide est l'écart de teinte à l'encre, en OKLCH. Reporter la teinte du
+   * sombre donnait 9,8° d'écart : à cette distance et à cette clarté, ce n'est pas un rouge,
+   * c'est un brun. `#7c211a` en tient 18,8° pour le même rapport de contraste, et sa chroma
+   * passe de 0,099 à 0,127. Il reste un rouge brique — descendre à la teinte 0 en ferait un
+   * rouge pur, qui n'appartiendrait plus à cette page.
+   *
+   * `--good` n'a pas ce problème : 152,6° le séparent de l'encre, et aucun brun ne s'en
+   * approche.
+   *
+   * La règle du §3 ne bouge pas pour autant : elles ne sont jamais employées seules.
+   * « Effacer l'historique des cartes déjà lues » est écrit, et c'est le mot qui porte
+   * l'avertissement — la teinte ne fait que le trouver.
+   */
+  --good: #204a2e; /* 7,55:1 — sombre : 7,67:1 · teinte 152,6° */
+  --warn: #7c211a; /* 7,53:1 — sombre : 7,53:1 · teinte  28,4° */
+
+  color-scheme: light;
 }
 
 body {
@@ -668,19 +811,88 @@ body {
   outline-offset: 3px;
 }
 
-::selection {
-  background: var(--n-100);
-  color: var(--n-950);
+/* --------------------------------------------------------------------------
+ * Le choix du thème — un groupe de boutons radio, et un focus qui se voit
+ *
+ * L'entrée reste dans le document : la retirer avec `display: none` la sortirait de l'ordre
+ * de tabulation et des flèches, c'est-à-dire de tout ce pour quoi un radio natif a été
+ * préféré à trois boutons. Elle est donc réduite et transparente, à la place exacte de son
+ * intitulé, et c'est l'intitulé qui porte l'anneau à sa place.
+ *
+ * **La sélection et le focus ne se disent pas de la même façon**, et c'est une règle, pas une
+ * commodité : l'option retenue porte un remplissage et une graisse, l'option sous le curseur
+ * clavier porte un anneau décollé. Confondre les deux ferait qu'une personne au clavier ne
+ * saurait plus laquelle est active et laquelle est simplement atteinte.
+ * -------------------------------------------------------------------------- */
+
+.choice-input {
+  position: absolute;
+  inset: 0;
+  appearance: none;
+  margin: 0;
+  border-radius: inherit;
+  cursor: inherit;
+}
+
+.choice:has(.choice-input:focus-visible) {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }
 
 /*
- * Sur fond noir, une élévation se dit par la luminosité, pas par une ombre :
- * une ombre portée n'a rien à assombrir. Une surface qui monte s'éclaircit —
- * d'où `bg-paper-raised` puis `hover:bg-paper-contact` sur ce qui se manipule,
- * plutôt qu'une bordure. Une bordure sur du noir devrait atteindre le seuil de
- * contraste des éléments d'interface pour être perçue, ce qui la rend plus
- * bruyante que la surface qu'elle entoure.
+ * La sélection reprenait `--n-100` et `--n-950`, c'est-à-dire deux barreaux de l'échelle
+ * sombre lus au point d'usage. C'était le seul endroit du fichier à contredire sa propre
+ * règle de tête — « les composants n'emploient que ces noms » —, et le thème clair l'aurait
+ * rendu visible d'un coup : du texte presque blanc sur un fond noir, au milieu d'une page
+ * crème. Les rôles disent la même chose et suivent le thème.
  */
+::selection {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+/*
+ * L'élévation, et ce qu'elle devient d'un thème à l'autre.
+ *
+ * **Sur fond noir, elle se dit par la luminosité.** Une ombre portée n'a rien à assombrir ;
+ * une surface qui monte s'éclaircit — d'où `bg-paper-raised` puis `hover:bg-paper-contact`
+ * sur ce qui se manipule, plutôt qu'une bordure. Une bordure sur du noir devrait atteindre le
+ * seuil de contraste des éléments d'interface pour être perçue, ce qui la rend plus bruyante
+ * que la surface qu'elle entoure.
+ *
+ * **Sur fond clair, la luminosité continue de porter les plans fixes**, et c'est voulu : la
+ * même mécanique, les mêmes classes, les mêmes écarts de clarté perçue. Ce qui change est
+ * qu'une ombre y a de nouveau quelque chose à assombrir. La méthode la réserve alors à ce qui
+ * flotte **réellement** — un menu, une modale —, et l'application n'a qu'un objet de cette
+ * nature : la feuille « Ouvrir dans une IA ». Elle seule en reçoit une, et un seul niveau.
+ *
+ * Le motif n'est pas décoratif. Le voile masque le fond aussi bien dans les deux thèmes — il
+ * ramène le contenu masqué à 1,52:1 en clair contre 1,58 en sombre —, mais la feuille elle-
+ * même ne se détache de ce voile qu'à 1,16:1. Sur du noir, la feuille est la seule chose
+ * claire de l'écran et cela suffit ; sur du crème, elle est une surface crème sur une surface
+ * crème. L'ombre est ce qui rétablit le plan, et elle ne coûte qu'à l'objet qui flotte.
+ */
+:root[data-theme="light"] .sheet-floating {
+  box-shadow:
+    0 1px 2px rgb(38 13 2 / 0.08),
+    0 12px 32px rgb(38 13 2 / 0.18);
+}
+
+/*
+ * `prefers-reduced-transparency` — une préférence système, au même titre que le mouvement
+ * réduit, et le voile de la feuille est la seule surface translucide de l'application.
+ *
+ * Elle est exprimée par des personnes pour qui une surface translucide dégrade la lecture de
+ * ce qu'elle porte. Le voile devient donc opaque et le flou tombe. Ce qui est masqué l'est
+ * alors entièrement, ce qui est le comportement attendu — et la feuille garde son ombre en
+ * clair, qui est ce qui la sépare du voile une fois que la translucidité ne le fait plus.
+ */
+@media (prefers-reduced-transparency: reduce) {
+  .veil {
+    backdrop-filter: none;
+    background: var(--paper);
+  }
+}
 
 /* --------------------------------------------------------------------------
  * Réglages de transition

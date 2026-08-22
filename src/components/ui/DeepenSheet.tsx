@@ -96,7 +96,7 @@ export function DeepenSheet({ copied, text, onClose }: DeepenSheetProps) {
         type="button"
         aria-label="Fermer"
         onClick={onClose}
-        className="absolute inset-0 bg-paper/80 backdrop-blur-sm"
+        className="veil absolute inset-0 bg-paper/80 backdrop-blur-sm"
       />
 
       <div
@@ -105,7 +105,7 @@ export function DeepenSheet({ copied, text, onClose }: DeepenSheetProps) {
         aria-modal="true"
         aria-labelledby="approfondir-titre"
         tabIndex={-1}
-        className="enter-rise relative max-h-[88vh] w-full max-w-md overflow-y-auto rounded-t-3xl bg-paper-raised px-6 pt-7 outline-none lg:max-w-lg lg:rounded-3xl"
+        className="sheet-floating enter-rise relative max-h-[88vh] w-full max-w-md overflow-y-auto rounded-t-3xl bg-paper-raised px-6 pt-7 outline-none lg:max-w-lg lg:rounded-3xl"
         style={{ paddingBottom: "calc(2rem + env(safe-area-inset-bottom))" }}
       >
         <h2 id="approfondir-titre" className="font-serif-display text-[20px] leading-snug text-ink">
