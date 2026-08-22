@@ -193,6 +193,15 @@ sur une page chaude serait de la couleur qui ne signale rien. Si l'on veut cette
 son entrée honnête est une variante assombrie — `#56656e` tient 4,5:1 — et c'est une décision
 de palette, pas une correction.
 
+**Les deux thèmes n'ont pas le même chromatisme, et c'est assumé.** Le sombre reste
+achromatique, le clair est chaud : quelqu'un qui bascule ne change pas seulement de luminosité.
+Trois issues existaient — réchauffer le sombre, refroidir le clair vers un gris neutre, ou
+tenir l'écart. La troisième est retenue, et pour une raison de fait : la palette claire est un
+donné, et réchauffer le sombre serait rouvrir une décision que rien n'oblige à rouvrir. Ce qui
+tient les deux thèmes ensemble n'est de toute façon pas la teinte de leurs neutres — c'est le
+mouvement, la typographie, le rythme et la marque, identiques des deux côtés. Si l'écart devait
+gêner un jour, c'est le sombre qu'il faudrait réchauffer, pas le clair qu'il faudrait éteindre.
+
 **L'accent partage la valeur du texte principal.** Le crème plafonne à 15,70:1, que seul le
 noir pur atteint ; `#260d02` en tient 13,77, soit trois fois le seuil de tout ce que l'accent
 porte. Le noir n'est donc pas *exigé par le contraste*, qui était la seule condition à laquelle
@@ -1206,6 +1215,18 @@ Listé plutôt que supposé :
 - L'écran de démarrage de l'application installée, pour la même raison : un manifeste ne porte
   qu'une couleur, lue avant que la page existe. Il est noir quelle que soit la préférence, et
   le thème choisi prend la main dès que la page est analysée.
+- **L'état désactivé d'un bouton, dans les deux thèmes.** `disabled:opacity-40` compose le
+  lettrage *et* le remplissage vers la page : le rapport entre les deux tombe à 3,55:1 dans le
+  sombre et 2,49 dans le clair, sous le seuil du texte des deux côtés. Le contrôle du thème
+  clair l'a mis au jour ; il ne l'a pas créé. Aucun bouton de l'application n'est désactivé
+  aujourd'hui — la classe est déclarée, jamais atteinte —, et corriger l'état demanderait de
+  lui donner un second signal, ce que la méthode exige de toute façon d'un désactivé : une
+  baisse d'opacité seule est un anti-pattern. C'est une décision d'état, pas de palette, et
+  elle n'est pas prise.
+- `prefers-contrast` et `forced-colors`, que ni l'un ni l'autre thème ne traite. Le repli sous
+  `prefers-reduced-transparency` a été fait parce que le voile de la feuille est la seule
+  surface translucide du produit et qu'il était sur le chemin ; les deux autres préférences
+  demandent une passe qui leur soit propre.
 - La zone sûre sur un appareil à encoche, `env(safe-area-inset-bottom)` valant zéro
   sur un navigateur de bureau.
 - Le rendu du filet d'un pixel du repère de position sur un écran non HiDPI. Il
