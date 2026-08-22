@@ -7,11 +7,13 @@ import {
   CENTER,
   COVER_SHIFT,
   NEEDLE_PATH,
+  BOOK,
   NEEDLE_SWING,
   RING_R,
   SPINE_PATH,
   STROKE,
   leaf,
+  tiltOf,
 } from "@/components/ui/nav-icon-geometry";
 
 /**
@@ -94,18 +96,25 @@ function Glyph({ active, state, size, className, style, children }: GlyphProps) 
   );
 }
 
-/** Le déplacement de recentrage, passé à la feuille de style : la mesure n'a qu'une source. */
-const BOOK_VARIABLES = { "--book-shift": `${COVER_SHIFT}px` } as CSSProperties;
+/** Les mesures du livre, passées à la feuille de style : chacune n'a qu'une source. */
+const BOOK_VARIABLES = {
+  "--book-shift": `${COVER_SHIFT}px`,
+  "--spine-band": `${BOOK.band}px`,
+} as CSSProperties;
+
+/** Chaque plat porte son propre sens d'inclinaison ; la feuille de style décide quand il joue. */
+const leafStyle = (side: -1 | 1) => ({ "--leaf-tilt": tiltOf(side) }) as CSSProperties;
 
 /**
  * Le livre — ouvert sur « Aujourd'hui », fermé à plat ailleurs.
  *
- * Trois traits et deux états. Le plat de gauche bascule autour du dos, le groupe se recentre,
- * et c'est tout : voir `nav-icon-geometry.ts` pour la raison géométrique qui fait que le plat
- * rabattu retombe exactement sur celui de droite.
+ * Trois traits, deux rectangles et un dos. Ouvert, les plats s'inclinent vers la reliure ;
+ * fermé, ils sont droits, le plat de gauche s'est rabattu sur l'autre, le dos s'est décalé
+ * sur la couverture et le volume s'est recentré. Aucun de ces quatre mouvements ne redessine
+ * quoi que ce soit — voir `nav-icon-geometry.ts`.
  *
  * L'ordre du tracé compte : le plat mobile passe **sous** le plat fixe, comme une couverture
- * qu'on rabat sur le volume.
+ * qu'on rabat sur le volume, et le dos passe au-dessus des deux, parce qu'une reliure se voit.
  */
 export function BookIcon({ active, size, className }: NavIconProps) {
   return (
@@ -117,9 +126,9 @@ export function BookIcon({ active, size, className }: NavIconProps) {
       style={BOOK_VARIABLES}
     >
       <g className="nav-book">
-        <path className="nav-book-cover" d={leaf(-1)} />
-        <path d={leaf(1)} />
-        <path d={SPINE_PATH} />
+        <path className="nav-leaf nav-book-cover" style={leafStyle(-1)} d={leaf(-1)} />
+        <path className="nav-leaf" style={leafStyle(1)} d={leaf(1)} />
+        <path className="nav-spine" d={SPINE_PATH} />
       </g>
     </Glyph>
   );

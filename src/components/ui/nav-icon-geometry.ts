@@ -35,50 +35,66 @@ export const STROKE = { rest: 1.5, active: 2 };
  * -------------------------------------------------------------------------- */
 
 /**
- * Le livre est fait de **deux plats symétriques par rapport au dos**, et c'est cette symétrie
- * qui fait toute l'animation.
+ * Le livre est fait de **deux plats rectangulaires, symétriques par rapport au dos**, et rien
+ * d'autre n'est dessiné : ce qui penche, ce qui bascule et ce qui glisse est obtenu par
+ * transformation.
  *
- * Un plat qui bascule d'un demi-tour autour du dos se projette, vu de face, en un simple
- * `scaleX` : la largeur apparente d'une surface qui pivote vaut son cosinus, et le cosinus
- * passe de 1 à −1 en un demi-tour. Ce n'est donc pas une astuce d'animation, c'est la
- * projection orthographique exacte du geste — et comme les deux plats sont l'image l'un de
- * l'autre dans le miroir du dos, le plat rabattu **retombe exactement sur l'autre**. Le livre
- * fermé est un plat unique, sans décalage d'un demi-pixel à recaler à la main.
+ * **Un plat est un rectangle.** C'est la correction qui a tout remis en place : la descente des
+ * pages vers la reliure était d'abord écrite dans le tracé, et le livre fermé en héritait donc
+ * un trapèze — une forme qui n'est celle d'aucun livre. Or cette descente n'appartient pas au
+ * plat : elle appartient à l'*ouverture*. Un livre ouvert à plat a ses pages inclinées vers la
+ * gouttière, un livre fermé a ses plats droits, et c'est exactement ce qu'un cisaillement
+ * autour du dos exprime — `skewY`, d'un signe pour chaque plat, qui vaut zéro à l'état fermé.
  *
- * C'est aussi ce qui interdit le fondu enchaîné entre deux dessins : il n'y a qu'un dessin, et
- * une seule propriété change.
+ * **Un plat qui bascule d'un demi-tour se projette en un `scaleX`.** La largeur apparente d'une
+ * surface qui pivote vaut son cosinus, et le cosinus passe de 1 à −1 en un demi-tour : ce n'est
+ * pas une astuce d'animation, c'est la projection orthographique exacte du geste. Comme les
+ * deux plats sont l'image l'un de l'autre dans le miroir du dos, le plat rabattu **retombe
+ * exactement sur l'autre** — et il y retombe *cisaillement compris*, parce que le miroir d'un
+ * cisaillement d'un signe est le cisaillement de l'autre signe.
+ *
+ * **Le dos, lui, ne fait que se déplacer.** Ouvert, il est la ligne de gouttière, confondue
+ * avec le bord relié des deux plats ; fermé, il se décale sur la couverture et devient la
+ * reliure qu'on voit sur tout livre posé. C'est le même trait, vu par la tranche puis de face.
+ *
+ * Tout cela interdit le fondu enchaîné entre deux dessins : il n'y a qu'un dessin, et trois
+ * propriétés qui changent.
  */
 export const BOOK = {
   /** Demi-largeur du livre ouvert, c'est-à-dire la largeur d'un plat. */
-  half: 10,
-  /** Le bord extérieur d'un plat — la gouttière, celle qu'on tient entre les doigts. */
-  top: 3.2,
-  bottom: 19.2,
+  half: 10.5,
   /**
-   * Ce qui fait qu'un rectangle divisé en deux devient un livre ouvert.
+   * Le haut et le bas du plat.
    *
-   * Les deux plats ne sont pas des rectangles posés côte à côte : ils s'enfoncent vers le dos.
-   * Le premier dessin s'en passait, et il ne se lisait pas — il se lisait comme deux colonnes,
-   * ce qu'un rectangle à filet médian est effectivement. La descente vers le dos est le seul
-   * trait qui dise que ces deux surfaces sont les pages d'un même volume, vues de biais.
-   *
-   * Elle vaut aussi pour l'état fermé, et c'est ce qui rend ce dessin économe : refermé, le
-   * plat cisaillé n'est plus un rectangle mais un livre posé à plat et vu de trois quarts,
-   * c'est-à-dire exactement ce qu'on voulait y voir.
+   * La largeur, elle, ne se règle pas : à 10,5 de demi-largeur, le livre ouvert occupe déjà
+   * toute la boîte et pèse une unité de plus que le cadran de la boussole, sa voisine. Le
+   * rapport du plat se règle donc par la hauteur, et 10,5 × 13,6 est celui d'un livre tenu en
+   * main — l'ancien dessin, d'un cinquième plus étroit, se lisait comme une porte avant de se
+   * lire comme un volume.
    */
-  sag: 1.7,
-  /**
-   * Où la descente s'infléchit. Une droite du dos à la gouttière donnerait un plat en biseau ;
-   * la page, elle, descend d'abord près du dos puis se couche — d'où un point de contrôle
-   * placé du côté du dos.
-   */
-  curl: 4,
+  top: 5.2,
+  bottom: 18.8,
   /**
    * L'arrondi de la gouttière — les deux coins extérieurs. Les coins du dos, eux, restent
-   * vifs : c'est là que la page est reliée, et à 20 px un arrondi plus fin que le trait
-   * lui-même ne se rendrait pas.
+   * vifs : c'est là que le plat est relié, et un livre n'est arrondi que du côté où on l'ouvre.
    */
   radius: 2,
+  /**
+   * L'inclinaison des pages du livre ouvert, en degrés, autour du dos.
+   *
+   * Elle lève le bord extérieur d'une page et demie de trait — assez pour que la silhouette
+   * plonge vers la reliure et se lise comme un volume ouvert, trop peu pour qu'une page
+   * paraisse fuir. Au-delà d'une douzaine de degrés, le livre ouvert se met à ressembler à un
+   * oiseau.
+   */
+  tilt: 8.5,
+  /**
+   * La reliure : de combien le dos se décale sur la couverture quand le livre se referme.
+   *
+   * C'est le seul trait qui distingue un livre fermé d'un rectangle, et il faut qu'il tienne à
+   * 20 px : en deçà de deux unités, il se colle au bord et les deux traits n'en font plus qu'un.
+   */
+  band: 2.4,
 };
 
 /**
@@ -95,43 +111,46 @@ export const COVER_SHIFT = -BOOK.half / 2;
 const n = (value: number) => Number(value.toFixed(3));
 
 /**
- * Un plat, du dos au dos en passant par la gouttière.
+ * Un plat, tracé en entier — dos compris.
  *
- * Le segment du dos n'est pas tracé : il l'est une fois pour toutes par `SPINE_PATH`, sans
- * quoi le livre ouvert porterait un trait double en son milieu et le livre fermé un trait
- * triple sur son bord gauche.
+ * Il se referme sur lui-même parce que le dos n'est plus le trait qui joint les deux plats : ce
+ * trait s'en va former la reliure. Un plat qui compterait sur lui pour fermer son contour
+ * s'ouvrirait donc en même temps que le livre.
  *
  * `side` vaut −1 pour le plat de gauche, +1 pour celui de droite. Les deux plats sortent de la
  * même fonction : c'est ce qui garantit la symétrie dont dépend la bascule, et le test le
  * vérifie point par point.
  */
 export function leaf(side: -1 | 1): string {
-  const { half, top, bottom, sag, curl, radius: r } = BOOK;
+  const { half, top, bottom, radius: r } = BOOK;
   const outer = CENTER + side * half;
   const corner = outer - side * r;
-  const inflection = CENTER + side * curl;
   // Le sens de l'arc suit le sens de parcours : à droite on tourne dans le sens des aiguilles,
   // à gauche dans l'autre.
   const sweep = side > 0 ? 1 : 0;
 
   return [
-    `M${CENTER} ${n(top + sag)}`,
-    `Q${n(inflection)} ${top} ${n(corner)} ${top}`,
+    `M${CENTER} ${top}`,
+    `H${n(corner)}`,
     `A${r} ${r} 0 0 ${sweep} ${n(outer)} ${n(top + r)}`,
     `V${n(bottom - r)}`,
     `A${r} ${r} 0 0 ${sweep} ${n(corner)} ${bottom}`,
-    `Q${n(inflection)} ${bottom} ${CENTER} ${n(bottom + sag)}`,
+    `H${CENTER}`,
+    "Z",
   ].join(" ");
 }
 
+/** L'inclinaison d'un plat quand le livre est ouvert : le bord extérieur se lève. */
+export const tiltOf = (side: -1 | 1) => `${-side * BOOK.tilt}deg`;
+
 /**
- * Le dos, qui est aussi la charnière : le seul trait du livre qui ne bouge pas d'un état à
- * l'autre. Ouvert, il est la ligne médiane ; fermé, il est le bord relié du volume.
+ * Le dos — ligne de gouttière quand le livre est ouvert, reliure quand il est fermé.
  *
- * Il descend du cisaillement, comme les deux plats : c'est le fond de la gouttière, le point
- * le plus bas du livre ouvert.
+ * Il court sur toute la hauteur du plat, et le cisaillement ne le touche pas : celui-ci pivote
+ * autour de cette abscisse, où il ne déplace rien. Ouvert, le trait est donc exactement
+ * confondu avec le bord relié des deux plats ; il n'apparaît qu'en s'en écartant.
  */
-export const SPINE_PATH = `M${CENTER} ${n(BOOK.top + BOOK.sag)}V${n(BOOK.bottom + BOOK.sag)}`;
+export const SPINE_PATH = `M${CENTER} ${BOOK.top}V${BOOK.bottom}`;
 
 /* --------------------------------------------------------------------------
  * La boussole — un cadran, une aiguille

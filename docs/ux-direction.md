@@ -808,10 +808,17 @@ ensemble :
   l'application sur la section où on l'avait laissée, recharger la page : rien de tout cela
   n'est une activation, et rien ne bouge. C'est ce qui empêche ces icônes de devenir
   l'animation au repos que le produit s'interdit.
-- **Ce sont deux états d'un même dessin, pas deux dessins.** Le livre fermé est le livre ouvert
-  dont un plat a basculé autour du dos — la même géométrie, une propriété qui change. Un fondu
-  entre deux icônes aurait montré deux objets superposés là où il n'y en a qu'un, et c'est
-  exactement ce qui fait qu'une icône animée paraît décorative.
+- **Ce sont deux états d'un même dessin, pas deux dessins.** Le livre est fait de deux plats
+  rectangulaires : les ouvrir les incline vers la reliure, rabattre celui de gauche sur l'autre
+  les referme, et le dos glisse alors sur la couverture pour devenir la reliure qu'on voit sur
+  tout livre posé. Quatre déplacements, aucun redessin. Un fondu entre deux icônes aurait montré
+  deux objets superposés là où il n'y en a qu'un, et c'est exactement ce qui fait qu'une icône
+  animée paraît décorative.
+- **Et la forme du repos appartient au repos.** L'inclinaison des pages avait d'abord été écrite
+  dans le tracé du plat : le livre fermé en héritait un trapèze, c'est-à-dire une forme qui n'est
+  celle d'aucun livre. Une déformation qui n'existe que dans un état ne se met pas dans le
+  dessin, elle se met dans la transformation qui mène à cet état — le tracé, lui, reste ce que
+  l'objet est quand il ne fait rien.
 - **Elles s'arrêtent là.** Deux icônes, celles de la navigation, et aucune autre. Une icône de
   liste ou d'en-tête qui se mettrait à jouer serait du mouvement sous le contenu qu'on lit.
 
