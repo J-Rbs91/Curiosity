@@ -206,6 +206,17 @@ secondaire, est donc la **même teinte et la même saturation descendues** jusqu
 ratio du barreau sombre équivalent, à deux centièmes près. Ce n'est pas un choix de goût, c'est
 ce que le seuil impose.
 
+**Ce que le plafond plus bas coûte au mouvement, mesuré plutôt que supposé.** Un écran qui
+arrive se compose sur le fond pendant `--dur-fade` : son texte est donc sous le seuil de 4,5:1
+au début de chaque traversée, dans les deux thèmes. Le thème clair y reste plus longtemps,
+puisqu'il grimpe vers 13,77 quand le sombre grimpe vers 17,94. L'écart, exprimé dans la
+temporisation qui joue réellement — 300 ms et la courbe `--ease-out-soft`, qui porte l'opacité
+à 68 % dès 60 ms —, vaut **12 ms** : le texte devient lisible après 38 ms dans le sombre et
+50 ms dans le clair. C'est un cinquième d'un retour à l'appui, et bien en deçà du seuil auquel
+un délai d'affichage se remarque. Le §7 n'a rien à corriger. La mesure est ici parce qu'elle
+aurait été facile à supposer plus grave — en raisonnant sur l'opacité au lieu du temps, on
+trouve un écart quatre fois plus grand, et on retouche une grammaire de mouvement pour rien.
+
 **Les deux thèmes n'ont pas le même chromatisme, et c'est assumé.** Le sombre reste
 achromatique, le clair est chaud : quelqu'un qui bascule ne change pas seulement de luminosité.
 Trois issues existaient — réchauffer le sombre, refroidir le clair vers un gris neutre, ou
