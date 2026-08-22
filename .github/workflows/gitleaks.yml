@@ -6,6 +6,13 @@ on:
   pull_request:
   workflow_dispatch:
 
+# Le scan remonte tout l'historique (`fetch-depth: 0`) : le laisser tourner sur un commit
+# déjà remplacé coûte cher pour un verdict que plus personne ne lira. Sur main on ne coupe
+# rien — aucun état de main ne doit passer sans avoir été scanné.
+concurrency:
+  group: secret-scan-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
 jobs:
   gitleaks:
     runs-on: ubuntu-latest

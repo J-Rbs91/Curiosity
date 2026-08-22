@@ -12,10 +12,31 @@ name: ci
 # minute. Il est retiré.
 
 on:
+  # Une branche de PR est une branche : avec `branches: ["**"]`, chaque commit poussé sur
+  # une PR ouverte déclenchait ce fichier deux fois sur le même SHA — une fois par `push`,
+  # une fois par `pull_request` — à deux secondes d'intervalle, pour un résultat identique.
+  # Sur les trente derniers runs, les huit SHA vus par `pull_request` avaient tous leur
+  # jumeau `push`.
+  #
+  # `pull_request` couvre déjà les branches de travail, et il les couvre mieux : il teste la
+  # fusion dans main, non la branche seule. Ne reste donc ici que main, que `pull_request`
+  # ne voit pas — c'est le seul run qui contrôle ce qui est réellement sur main une fois la
+  # PR fermée, et il n'est pas redondant : main a pu bouger depuis le run de la PR.
+  #
+  # Contrepartie assumée : un commit poussé avant l'ouverture de la PR n'est plus contrôlé
+  # isolément. Il l'est à l'ouverture, avec les autres.
   push:
-    branches: ["**"]
+    branches: [main]
   pull_request:
   workflow_dispatch:
+
+# Un commit qui en remplace un autre sur la même branche rend le run précédent sans objet :
+# personne n'en attend plus le verdict. Quatre runs se sont ainsi chevauchés sur une même
+# branche en quarante minutes. Sur main en revanche on ne coupe rien — chaque état de main
+# mérite son verdict, et un run annulé y laisserait un trou.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
 
 jobs:
   corpus:
@@ -60,4 +81,8 @@ jobs:
         # `pages.yml` construisait déjà le site, mais seulement après fusion dans main :
         # l'export statique est exigeant — toute route dynamique doit énumérer ses chemins —
         # et un échec ne se découvrait donc qu'au déploiement, une fois la PR fermée.
+        #
+        # Sur main c'est `pages.yml` qui construit, et sa construction est celle qui part en
+        # ligne. La refaire ici ne vérifierait rien de plus : on la lui laisse.
+        if: github.ref != 'refs/heads/main'
         run: npm run build
