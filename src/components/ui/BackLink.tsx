@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
 import { TreeLink } from "@/components/navigation/TreeLink";
-import { parentEntry, parentOf, readTrail } from "@/lib/navigation-tree";
+import { parentEntry, parentOf, readTrail, TRAIL_EVENT } from "@/lib/navigation-tree";
 import { labelFor } from "@/lib/navigation-labels";
 
 /**
@@ -38,11 +38,22 @@ export function BackLink({ fallback }: { fallback?: string } = {}) {
   useEffect(() => {
     // La trace n'existe que côté client : lue au rendu, elle produirait une
     // différence entre le HTML du serveur et celui du navigateur.
-    const dessus = parentEntry(readTrail());
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setCible(
-      dessus ? { href: dessus.href, label: dessus.label } : { href: repli, label: labelFor(repli) }
-    );
+    const relire = () => {
+      const dessus = parentEntry(readTrail());
+      setCible(
+        dessus ? { href: dessus.href, label: dessus.label } : { href: repli, label: labelFor(repli) }
+      );
+    };
+    relire();
+    /*
+     * Et on relit à chaque écriture de la trace. Une seule lecture au montage tenait pour
+     * acquis que `TrailKeeper` a déjà écrit quand cet effet s'exécute — un ordre entre deux
+     * effets, que la frontière de suspension du gardien peut décaler. Quand il se décalait,
+     * le lien portait le parent de l'écran précédent : il annonçait une destination, le clic
+     * en atteignait une autre.
+     */
+    window.addEventListener(TRAIL_EVENT, relire);
+    return () => window.removeEventListener(TRAIL_EVENT, relire);
     /*
      * `pathname` suffit comme déclencheur, et c'est volontaire : lire aussi la
      * chaîne de recherche imposerait une frontière de suspension sur des pages

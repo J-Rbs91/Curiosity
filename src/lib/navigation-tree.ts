@@ -111,6 +111,11 @@ const NIVEAUX: { motif: RegExp; niveau: number; parent: string | null }[] = [
   { motif: /^\/explore\/concept\/approfondir$/, niveau: 5, parent: "/explore/concept" },
 ];
 
+/** Deux chemins désignent-ils le même écran, slash final et absence de slash confondus ? */
+export function samePath(a: string, b: string): boolean {
+  return normalise(a) === normalise(b);
+}
+
 /** Le niveau d'une route absente de l'arbre : plus profond que toute feuille connue. */
 const NIVEAU_INCONNU = 99;
 
@@ -178,6 +183,15 @@ export interface TrailEntry {
   level: number;
   /** Nom lisible du nœud, pour étiqueter un retour sans mentir. */
   label: string;
+  /**
+   * La place de ce nœud dans la pile d'historique réelle — voir `navigation-position.ts`.
+   *
+   * C'est elle qui fait qu'une remontée dépile le bon nombre de crans, et non le rang du
+   * nœud dans la trace : les deux divergent dès qu'un remplacement a consommé une entrée
+   * sans en retirer une de la trace. Absente quand le navigateur n'a pas pu la fournir —
+   * la remontée remplace alors au lieu de dépiler, ce qui ne peut pas se tromper d'écran.
+   */
+  position?: number;
 }
 
 const CLE = "curiosity.navigationTrail";
@@ -192,6 +206,17 @@ export function readTrail(): TrailEntry[] {
   }
 }
 
+/**
+ * Ce qu'écoute un écran pour savoir que la trace vient de changer.
+ *
+ * Elle vit dans le stockage de session, qui ne prévient personne. Le retour la lisait donc
+ * une fois, au montage, et gardait ce qu'il avait lu : quand sa lecture précédait l'écriture
+ * — deux effets, un ordre qui dépend de l'arbre des composants —, il portait le nom du
+ * parent de l'écran d'avant. Un lien qui n'annonce pas où il va est le défaut qu'on corrige
+ * ici ; le laisser dépendre d'un ordre d'exécution aurait été le laisser revenir.
+ */
+export const TRAIL_EVENT = "curiosity:trail";
+
 export function writeTrail(trail: TrailEntry[]): void {
   if (typeof window === "undefined") return;
   try {
@@ -200,6 +225,7 @@ export function writeTrail(trail: TrailEntry[]): void {
     // Le stockage peut être refusé : la trace se reconstruira, et la navigation
     // retombera simplement sur ses replis.
   }
+  window.dispatchEvent(new CustomEvent(TRAIL_EVENT));
 }
 
 /**
@@ -223,22 +249,52 @@ export function reconcileTrail(
     // Nœud déjà traversé : la trace se tronque jusqu'à lui.
     const tronquee = trail.slice(0, deja + 1);
     tronquee[deja] = complet;
-    return tronquee;
+    return tronquee.filter((e, i) => i === deja || dessous(e, complet));
   }
 
   // Sinon on garde les ancêtres strictement au-dessus et on ajoute le nœud.
-  return [...trail.filter((e) => e.level < level), complet];
+  return [...trail.filter((e) => e.level < level && dessous(e, complet)), complet];
 }
 
 /**
- * Combien d'entrées dépiler pour rejoindre `targetPathname`, ou `null` si ce
- * nœud n'est pas dans la trace — auquel cas il n'est pas sous nous dans la pile
- * et dépiler sortirait de l'application.
+ * Ce nœud est-il encore réellement sous nous dans la pile ?
+ *
+ * Un ancêtre de la trace peut être un **fantôme** : son entrée d'historique a été consommée
+ * par un remplacement, et plus rien ne l'attend en dessous. C'est ce fantôme qui faisait
+ * mentir le retour — il fournissait son nom au lien, une destination que le dépilement ne
+ * pouvait pas atteindre, et le geste finissait au fond de la pile, sur Aujourd'hui. Le
+ * comparer par sa place le démasque : deux nœuds ne peuvent pas occuper la même.
+ *
+ * Sans place — anciennes traces, stockage refusé —, on ne conclut pas : la trace garde
+ * l'ancêtre, et c'est `stepsBackTo` qui refusera de dépiler à l'aveugle.
  */
-export function stepsBackTo(trail: TrailEntry[], targetPathname: string): number | null {
-  const index = trail.findIndex((e) => normalise(e.pathname) === normalise(targetPathname));
-  if (index < 0) return null;
-  const pas = trail.length - 1 - index;
+function dessous(ancetre: TrailEntry, courant: TrailEntry): boolean {
+  if (ancetre.position === undefined || courant.position === undefined) return true;
+  return ancetre.position < courant.position;
+}
+
+/**
+ * Combien d'entrées dépiler pour rejoindre `targetPathname`, ou `null` quand la question
+ * n'a pas de réponse sûre — auquel cas il faut remplacer plutôt que dépiler.
+ *
+ * C'est un **écart entre deux places réelles**, et non un nombre de nœuds de la trace. Le
+ * compte par les nœuds tenait pour acquis ce que rien ne garantissait : une entrée
+ * d'historique par nœud. Un remplacement en consomme une sans en retirer de la trace, et
+ * dès lors `go(-n)` dépassait la cible — le retour annonçait « Explorer » et atterrissait
+ * sur Aujourd'hui, qui est le fond de la pile. Voir `navigation-position.ts`.
+ *
+ * Trois cas rendent `null`, et tous veulent dire la même chose : *ne dépile pas*.
+ * Le nœud n'est pas dans la trace ; les places manquent — arrivée directe, trace d'une
+ * version antérieure, stockage refusé ; ou la cible n'est pas sous nous.
+ */
+export function stepsBackTo(
+  trail: TrailEntry[],
+  targetPathname: string,
+  position: number | null
+): number | null {
+  const cible = trail.find((e) => normalise(e.pathname) === normalise(targetPathname));
+  if (!cible || cible.position === undefined || position === null) return null;
+  const pas = position - cible.position;
   return pas > 0 ? pas : null;
 }
 

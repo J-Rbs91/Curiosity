@@ -5,6 +5,7 @@ import {
   rootSectionOf,
   intentBetween,
   reconcileTrail,
+  samePath,
   stepsBackTo,
   parentEntry,
   type TrailEntry,
@@ -14,9 +15,34 @@ function entree(href: string, label = "x"): Omit<TrailEntry, "level"> {
   return { href, pathname: href.split("?")[0], label };
 }
 
-/** Rejoue un parcours complet et rend la trace obtenue. */
+/**
+ * Rejoue un parcours complet et rend la trace obtenue, places dans la pile comprises.
+ *
+ * Les places sont attribuées comme `TreeLink` et `navigation-position.ts` le font dans le
+ * navigateur : une descente en ouvre une de plus, un pas de côté réoccupe la même, une
+ * remontée revient sur celle de la cible. Sans elles, la trace serait plus optimiste que la
+ * pile — c'est exactement l'écart que ces fonctions doivent voir.
+ */
 function parcours(...hrefs: string[]): TrailEntry[] {
-  return hrefs.reduce<TrailEntry[]>((trail, href) => reconcileTrail(trail, entree(href)), []);
+  let place = 0;
+  let courant: string | null = null;
+  return hrefs.reduce<TrailEntry[]>((trail, href) => {
+    const chemin = href.split("?")[0];
+    if (courant !== null) {
+      const intention = intentBetween(courant, chemin);
+      if (intention === "descend") place += 1;
+      if (intention === "climb") {
+        place = trail.find((e) => samePath(e.pathname, chemin))?.position ?? place;
+      }
+    }
+    courant = chemin;
+    return reconcileTrail(trail, { ...entree(href), position: place });
+  }, []);
+}
+
+/** La place de l'écran courant d'une trace — ce que `position()` rend dans le navigateur. */
+function ici(trail: TrailEntry[]): number | null {
+  return trail[trail.length - 1]?.position ?? null;
 }
 
 describe("niveaux de l'arbre", () => {
@@ -143,19 +169,19 @@ describe("trace du parcours", () => {
       "/explore/themes/pouvoir",
     ]);
     expect(parentEntry(trail)?.pathname).toBe("/explore/domains/sociologie-des-organisations");
-    expect(stepsBackTo(trail, "/explore/domains/sociologie-des-organisations")).toBe(1);
+    expect(stepsBackTo(trail, "/explore/domains/sociologie-des-organisations", ici(trail))).toBe(1);
   });
 
   it("se tronque quand on remonte sur un nœud déjà traversé", () => {
     const descendu = parcours("/", "/explore", "/explore/authors/weber", "/explore/concept/?c=a");
-    const remonte = reconcileTrail(descendu, entree("/explore"));
+    const remonte = reconcileTrail(descendu, { ...entree("/explore"), position: 1 });
     expect(remonte.map((e) => e.pathname)).toEqual(["/", "/explore"]);
   });
 
   it("reconstruit un chemin cohérent depuis une arrivée directe en profondeur", () => {
     const froid = parcours("/explore/concept/?c=a");
     expect(froid).toHaveLength(1);
-    expect(stepsBackTo(froid, "/explore")).toBeNull();
+    expect(stepsBackTo(froid, "/explore", ici(froid))).toBeNull();
   });
 });
 
@@ -163,18 +189,18 @@ describe("dépilement", () => {
   const trail = parcours("/", "/explore", "/explore/authors/weber", "/explore/concept/?c=a");
 
   it("compte les pas jusqu'à un ancêtre", () => {
-    expect(stepsBackTo(trail, "/explore/authors/weber")).toBe(1);
-    expect(stepsBackTo(trail, "/explore")).toBe(2);
-    expect(stepsBackTo(trail, "/")).toBe(3);
+    expect(stepsBackTo(trail, "/explore/authors/weber", ici(trail))).toBe(1);
+    expect(stepsBackTo(trail, "/explore", ici(trail))).toBe(2);
+    expect(stepsBackTo(trail, "/", ici(trail))).toBe(3);
   });
 
   it("refuse de dépiler vers un nœud absent de la trace", () => {
     // Dépiler à l'aveugle ferait sortir de l'application.
-    expect(stepsBackTo(trail, "/explore/themes/pouvoir")).toBeNull();
+    expect(stepsBackTo(trail, "/explore/themes/pouvoir", ici(trail))).toBeNull();
   });
 
   it("refuse de dépiler vers le nœud courant", () => {
-    expect(stepsBackTo(trail, "/explore/concept/")).toBeNull();
+    expect(stepsBackTo(trail, "/explore/concept/", ici(trail))).toBeNull();
   });
 
   it("nomme le nœud du dessus, pour étiqueter un retour sans mentir", () => {
