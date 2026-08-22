@@ -278,8 +278,11 @@ export interface DailyPick {
 }
 
 /**
- * L'application ne propose aucun réglage, et n'en retient donc aucun : la difficulté d'un
- * concept se lit dans son texte, pas dans une préférence.
+ * L'application ne propose aucun réglage **de contenu**, et n'en retient donc aucun ici : la
+ * difficulté d'un concept se lit dans son texte, pas dans une préférence. Le seul réglage
+ * qu'elle offre — le thème — ne règle rien de ce qu'elle dit, et il vit sous sa propre clé
+ * (`src/lib/theme.ts`). Les deux mémoires n'ont ni la même durée de vie ni le même
+ * propriétaire : effacer un historique de lecture ne doit pas remettre l'écran en noir.
  *
  * Elle ne retient pas davantage si le premier lancement a eu lieu. L'accueil n'est plus un
  * écran de première fois mais le seuil de chaque ouverture — voir `src/app/page.tsx` — et

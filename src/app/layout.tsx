@@ -4,6 +4,7 @@ import "./globals.css";
 import { AppShell } from "@/components/ui/AppShell";
 import { ServiceWorkerRegistration } from "@/components/ui/ServiceWorkerRegistration";
 import { withBasePath } from "@/lib/base-path";
+import { THEME_SCRIPT } from "@/lib/theme";
 
 /*
  * Deux graisses, et c'est le compte exact de ce que l'application emploie.
@@ -80,16 +81,45 @@ export const viewport: Viewport = {
    * de `globals.css`). Les deux vont ensemble : rétablir l'un sans l'autre
    * n'aurait pas suffi.
    */
-  // Application sombre, sans variante claire : une seule couleur de barre système.
+  /*
+   * La couleur de la barre système, dans le thème par défaut.
+   *
+   * Elle est écrite en dur et non dérivée d'une requête média, parce que le thème de
+   * l'application ne suit pas `prefers-color-scheme` : il suit une préférence enregistrée,
+   * que seul le navigateur connaît. `ThemeKeeper` remet donc cette balise d'accord avec le
+   * thème réellement résolu, une fois la page ouverte — voir `src/lib/theme.ts`.
+   */
   themeColor: "#000000",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
+    /*
+     * `suppressHydrationWarning` : le script ci-dessous pose `data-theme` pendant l'analyse
+     * du HTML, donc avant que React hydrate. React trouve alors sur `<html>` un attribut que
+     * son rendu ne contient pas, et le signalerait comme une erreur d'hydratation — il doit
+     * au contraire garder ce que le DOM porte. Motif documenté par Next sous « Themes », dans
+     * `node_modules/next/dist/docs/01-app/02-guides/preventing-flash-before-hydration.md`.
+     */
     <html
       lang="fr"
       className={`${sourceSerif.variable} ${inter.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
+      <head>
+        {/*
+         * Le thème, appliqué avant la première peinture. Il est ici et pas ailleurs : un
+         * script dans `<head>` s'exécute pendant l'analyse du document, quand `next/script`
+         * — même en `beforeInteractive` — ne garantit que l'ordre de téléchargement, et
+         * qu'un effet, fût-il de mise en page, s'exécute après l'hydratation. Sur une
+         * connexion lente, ces deux replis laissent voir du noir puis du crème.
+         *
+         * Son contenu n'est pas tapé ici : il est assemblé à partir des constantes de
+         * `src/lib/theme.ts`, à côté de la fonction que le reste de l'application appelle.
+         * Deux implémentations d'une même résolution divergeraient.
+         */}
+        <script dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }} />
+      </head>
       <body className="min-h-full flex flex-col bg-paper text-ink">
         <ServiceWorkerRegistration />
         <AppShell>{children}</AppShell>

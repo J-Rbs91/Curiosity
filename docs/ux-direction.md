@@ -64,15 +64,30 @@ long, pas plus discret.
 
 ## 3. La palette
 
-**Application sombre, sans variante claire.** Fond noir, et une échelle de gris.
+**Deux thèmes. Sombre par défaut, clair au choix.** Le sombre est une échelle de gris sur
+fond noir ; le clair est une échelle de bruns chauds sur fond crème.
 
-C'est une décision assumée : la méthode considère normalement le sombre-par-défaut
-comme un choix esthétique déguisé en décision, et son critère de validation est
-« le mode clair existe-t-il et tient-il ». Ici il n'existe pas. Ce qu'on y gagne se
-paie par une lisibilité moindre en plein soleil ; les contrastes élevés ci-dessous
-limitent ce coût sans l'annuler.
+**Ce que le second thème corrige, et pourquoi ce n'est pas un ajout de confort.** Cette
+section disait auparavant « application sombre, sans variante claire », et le reconnaissait
+comme un défaut plutôt que comme un parti pris : la méthode range le sombre-seul parmi ses
+anti-patterns, et son critère de validation est « le mode clair existe-t-il et tient-il ». La
+réponse était non. Le §11 en portait la conséquence dans les points non réglés — la lisibilité
+en plein soleil, coût connu d'une application sans mode clair. Elle en sort.
 
-### L'échelle
+**Ce que cela ne change pas au parti pris du §2.** « Ce qui reste neutre : la palette » ne
+voulait pas dire « achromatique » : cela voulait dire *la couleur ne porte pas l'écart*. La
+dimension porteuse reste le mouvement, et le thème clair ne dépense aucun budget de
+différenciation — c'est une échelle de neutres chauds, sans accent chromatique, où la couleur
+continue de ne signaler que ce qui est juste, ce qui est faux et ce qui est irréversible. Un
+thème est un réglage d'affichage ; ce n'en est pas un d'intention.
+
+**Le réglage est dans les Réglages, et le défaut ne bouge pas.** Trois options — Système,
+Clair, Sombre — et `Sombre` reste ce que rencontre quelqu'un qui n'a rien demandé. Suivre le
+système par défaut aurait basculé en clair, du jour au lendemain, tous les lecteurs dont le
+téléphone est en clair, sans qu'aucun ait exprimé de préférence sur *cette* application. Le
+défaut est une ligne de `src/lib/theme.ts` le jour où l'on veut l'inverse.
+
+### L'échelle du thème sombre
 
 Onze valeurs, numérotées comme celles de Tailwind : **50 est la plus claire, 950 la
 plus sombre.** Ce n'est pas un dégradé — c'est une échelle de nuances, et chaque
@@ -129,6 +144,82 @@ contact. Une bordure ne réapparaît que lorsqu'elle porte un état : la bonne
 réponse, la mauvaise, le contour d'un bouton secondaire. Cette bordure est
 déclarée en permanence, transparente au repos — son apparition décalerait sinon la
 mise en page d'un pixel au moment de la réponse.
+
+### L'échelle du thème clair
+
+La palette est un **donné** : cinq valeurs fixées par le propriétaire du produit. Quatre y
+tiennent un rôle porteur ; les cinq barreaux intermédiaires sont dérivés d'elles, jamais
+importés d'ailleurs.
+
+| Valeur | Contraste sur le crème | Origine | Ce qu'elle a le droit de porter |
+|---|---|---|---|
+| `--c-50` `#edddc0` | — | imposée | Le fond |
+| `--c-150` `#e8d1a7` | 1,11:1 | dérivée | Une surface levée : ligne de liste au survol, onglet, feuille |
+| `--c-200` `#e3c68f` | 1,23:1 | imposée | La même surface au contact |
+| `--c-400` `#b59e75` | 1,94:1 | dérivée | Un séparateur, un filet |
+| `--c-500` `#786a54` | 3,94:1 | dérivée | Une bordure ou une icône **fonctionnelle** — au-dessus du seuil de 3 |
+| `--c-600` `#5e5345` | 5,61:1 | dérivée | Un intitulé en capitales, un texte tertiaire |
+| `--c-700` `#4a423a` | 7,37:1 | imposée | Le texte secondaire |
+| `--c-800` `#36241b` | 11,02:1 | dérivée | Le texte d'une lecture suivie — et lui seul |
+| `--c-900` `#260d02` | 13,77:1 | imposée | Le texte principal, et l'action |
+
+Les ratios sont calculés, pas estimés, et `src/app/globals-contrast.test.ts` les recalcule à
+chaque `npm test` : un barreau retouché qui ferait passer un couple sous son seuil fait échouer
+la construction, dans les deux thèmes.
+
+**Ce n'est pas l'inversion de l'échelle sombre, et trois mesures disent pourquoi.**
+
+- **Le plafond n'est pas le même.** Sur du noir, l'écart maximal atteignable vaut 21:1 ; sur ce
+  crème, 15,70:1. Les deux barreaux les plus hauts du sombre — 17,94 et 20,12 — n'ont donc
+  aucun équivalent. Le haut de l'échelle se recalcule.
+- **Un écart de surface ne se voit pas au même prix.** 1,12:1 sépare nettement deux plans près
+  du noir, où les luminances sont comprimées ; le même rapport près du crème ne vaut que les
+  deux tiers de l'écart de clarté perçue. Les trois surfaces sont donc calées sur leur écart de
+  **clarté**, le texte et les filets sur leur rapport de **contraste**.
+- **Les couleurs de signal changent de teinte, pas seulement de clarté.** Dans le sombre,
+  `--warn` se détache parce que tout le reste est **gris** : n'importe quelle teinte y est un
+  signal. Sur du crème, tout le reste est brun, et un brun-orangé de plus n'en est plus un.
+  La mesure qui décide est l'écart de teinte à l'encre, en OKLCH : reporter la teinte du sombre
+  n'en donnait que 9,8°, ce qui à cette clarté ne se lit pas comme un rouge mais comme un brun.
+  `--warn` vaut donc `#7c211a` — 18,8° d'écart, chroma 0,127 contre 0,099 — pour le **même**
+  rapport de contraste que dans le sombre, 7,53:1. `--good` `#204a2e` (7,55:1, contre 7,67) n'a
+  pas ce problème : 152,6° le séparent de l'encre.
+
+**La cinquième valeur imposée n'est pas employée, et c'est un constat mesuré.** `#9dabb3` vaut
+**1,76:1** sur le crème : sous le seuil du texte (4,5) et sous celui des éléments d'interface
+(3). Le seul rôle qu'elle pourrait tenir est le filet, qui n'a pas de seuil — mais la règle
+ci-dessus réserve la couleur à ce qui est juste, faux ou irréversible, et un filet bleu-gris
+sur une page chaude serait de la couleur qui ne signale rien. Si l'on veut cette note froide,
+son entrée honnête est une variante assombrie — `#56656e` tient 4,5:1 — et c'est une décision
+de palette, pas une correction.
+
+**Les deux thèmes n'ont pas le même chromatisme, et c'est assumé.** Le sombre reste
+achromatique, le clair est chaud : quelqu'un qui bascule ne change pas seulement de luminosité.
+Trois issues existaient — réchauffer le sombre, refroidir le clair vers un gris neutre, ou
+tenir l'écart. La troisième est retenue, et pour une raison de fait : la palette claire est un
+donné, et réchauffer le sombre serait rouvrir une décision que rien n'oblige à rouvrir. Ce qui
+tient les deux thèmes ensemble n'est de toute façon pas la teinte de leurs neutres — c'est le
+mouvement, la typographie, le rythme et la marque, identiques des deux côtés. Si l'écart devait
+gêner un jour, c'est le sombre qu'il faudrait réchauffer, pas le clair qu'il faudrait éteindre.
+
+**L'accent partage la valeur du texte principal.** Le crème plafonne à 15,70:1, que seul le
+noir pur atteint ; `#260d02` en tient 13,77, soit trois fois le seuil de tout ce que l'accent
+porte. Le noir n'est donc pas *exigé par le contraste*, qui était la seule condition à laquelle
+il était admis. Ce partage ne coûte rien de réel : dans le sombre, l'accent et l'encre sont
+déjà à 1,12:1 l'un de l'autre. Ce qui distingue une action d'un texte n'a jamais été la valeur,
+c'est le **remplissage inversé** — un bouton crème sur brun —, doublé de la graisse et, dans la
+navigation, du repère de position.
+
+### Ce qui ne s'inverse pas
+
+Quatre points où reporter le thème sombre aurait produit un défaut, et ce qui les remplace.
+
+| Ce qui tenait sur du noir | Ce qui le remplace sur du crème |
+|---|---|
+| Le texte principal n'est pas blanc pur, parce que le blanc pur essaime | Le texte principal n'est pas noir pur, mais pour une autre raison : 13,77:1 suffit, et 15,70 n'apporterait qu'une dureté |
+| L'élévation se dit par la luminosité, faute d'avoir quelque chose à assombrir | Les plans fixes gardent la luminosité ; **une ombre revient sur le seul objet qui flotte réellement**, la feuille « Ouvrir dans une IA », qui sans elle serait une surface crème sur une surface crème |
+| `::selection` était écrit avec deux barreaux de l'échelle, lus au point d'usage | Elle passe par les rôles — c'était le seul endroit du fichier à contredire sa propre règle, et le thème clair l'aurait rendu visible d'un coup |
+| Le voile de la feuille, à 80 % | Inchangé, et vérifié : il ramène le contenu masqué à 1,52:1 en clair contre 1,58 en sombre. Il gagne en revanche un repli sous `prefers-reduced-transparency`, qui n'existait dans aucun des deux |
 
 ---
 
@@ -387,11 +478,18 @@ répétition espacée et le score de maîtrise continuent de fonctionner : c'est
 qui choisissent le concept du jour et qui décident si l'on découvre ou si l'on
 revoit. Ils ne se consultent simplement plus, et ne se règlent plus.
 
-**Deux destinations.** « Aujourd'hui » et « Explorer ». Les réglages, réduits à
-l'effacement des données, sont derrière une icône dans l'en-tête d'Explorer.
-Retirer cet effacement enfermerait l'utilisateur dans un historique qu'il ne
-pourrait plus défaire — c'est la seule raison pour laquelle cet écran existe
-encore.
+**Deux destinations.** « Aujourd'hui » et « Explorer ». Les réglages sont derrière une icône
+dans l'en-tête d'Explorer, et ils portent deux choses : l'effacement des données, et le choix
+du thème. Retirer l'effacement enfermerait l'utilisateur dans un historique qu'il ne pourrait
+plus défaire.
+
+**Et la frontière que le thème ne franchit pas.** Les réglages retirés ci-dessus réglaient tous
+le *contenu* — quel niveau d'explication, quelle durée. Ils sont partis parce que la difficulté
+d'un concept se lit dans son texte, pas dans une préférence choisie une fois pour toutes. Un
+thème ne règle rien du contenu : il règle la lumière dans laquelle on le lit, et c'est la seule
+chose que le lecteur sait mieux que nous. Ce n'est donc pas la porte du §5 qui se rouvre, et la
+règle qui l'a fermée tient toujours : **un réglage qui change ce que l'application dit n'a pas
+sa place ici ; un réglage qui change la condition dans laquelle on la lit, oui.**
 
 ### Les trois coupes d'Explorer
 
@@ -1061,7 +1159,11 @@ Aucun écran n'a gagné ni perdu une information.
 
 | Fichier | Ce qu'il porte |
 |---|---|
-| `src/app/globals.css` | L'échelle de neutres, les rôles, l'échelle typographique, les trois mesures de colonne, les six rôles d'écart vertical, tous les tokens de mouvement, les deux seuils du desktop et tout ce qu'ils changent, la charpente — réserve de navigation, rail, repère de position —, le focus, les replis en mouvement réduit |
+| `src/app/globals.css` | Les **deux** échelles — neutres du sombre, bruns chauds du clair —, les rôles dans chaque thème, l'échelle typographique, les trois mesures de colonne, les six rôles d'écart vertical, tous les tokens de mouvement, les deux seuils du desktop et tout ce qu'ils changent, la charpente — réserve de navigation, rail, repère de position —, le focus, les replis en mouvement réduit et en transparence réduite |
+| `src/app/globals-contrast.test.ts` | Les couples de couleurs qui portent quelque chose, leur seuil, et l'ordre des quatre encres. Il relit la feuille de style : aucune valeur n'y est recopiée |
+| `src/lib/theme.ts` | La distinction préférence / thème résolu, la clé de stockage, la règle de résolution, le défaut, et le script qui applique le thème avant la première peinture — et rien de la palette |
+| `src/components/ui/ThemeKeeper.tsx` | Ce qui tient le thème à jour une fois la page ouverte : le système qui change d'avis, l'onglet voisin qui a choisi |
+| `src/components/ui/ThemeChoice.tsx` | Les trois options telles qu'elles s'affichent et se choisissent, et elles seules |
 | `src/lib/navigation-tree.ts` | Les niveaux de l'arbre, l'intention d'une navigation, la trace, la branche de premier niveau |
 | `src/lib/app-entry.ts` | Le critère qui distingue une reprise d'une réouverture, la mémoire de la sortie, et l'ouverture en attente que le seuil dépense |
 | `src/lib/app-version.ts` | L'empreinte de la version servie, et la seule question « faut-il recharger » |
@@ -1100,7 +1202,31 @@ Listé plutôt que supposé :
   fonctionnelle.
 - La feuille de partage réelle d'iOS et d'Android : quelles applications d'IA
   apparaissent, et si le prompt complet leur parvient sans troncature.
-- La lisibilité en plein soleil, coût connu d'une application sans mode clair.
+- Le rendu du thème clair **sur un écran réel en plein soleil**. C'est le problème que ce
+  thème existe pour régler, et il est le seul de la liste que rien ici ne peut établir : les
+  neuf couples porteurs sont calculés et contrôlés à chaque construction, les sept écrans ont
+  été rendus et regardés au pilote de navigateur dans les deux thèmes — mais un écran de
+  contrôle à l'intérieur ne dit rien d'un téléphone dehors.
+- La barre d'état d'iOS en thème clair, sur application **installée**. `appleWebApp.statusBarStyle`
+  vaut `black-translucent`, ce qui donne des glyphes blancs et laisse le contenu passer
+  dessous : sur du crème, ces glyphes tombent à 1,34:1. La valeur est lue au lancement et ne
+  peut pas suivre une préférence enregistrée. Elle reste réglée pour le thème par défaut, et
+  la corriger demanderait de dégrader le sombre — l'arbitrage n'est pas fait.
+- L'écran de démarrage de l'application installée, pour la même raison : un manifeste ne porte
+  qu'une couleur, lue avant que la page existe. Il est noir quelle que soit la préférence, et
+  le thème choisi prend la main dès que la page est analysée.
+- **L'état désactivé d'un bouton, dans les deux thèmes.** `disabled:opacity-40` compose le
+  lettrage *et* le remplissage vers la page : le rapport entre les deux tombe à 3,55:1 dans le
+  sombre et 2,49 dans le clair, sous le seuil du texte des deux côtés. Le contrôle du thème
+  clair l'a mis au jour ; il ne l'a pas créé. Aucun bouton de l'application n'est désactivé
+  aujourd'hui — la classe est déclarée, jamais atteinte —, et corriger l'état demanderait de
+  lui donner un second signal, ce que la méthode exige de toute façon d'un désactivé : une
+  baisse d'opacité seule est un anti-pattern. C'est une décision d'état, pas de palette, et
+  elle n'est pas prise.
+- `prefers-contrast` et `forced-colors`, que ni l'un ni l'autre thème ne traite. Le repli sous
+  `prefers-reduced-transparency` a été fait parce que le voile de la feuille est la seule
+  surface translucide du produit et qu'il était sur le chemin ; les deux autres préférences
+  demandent une passe qui leur soit propre.
 - La zone sûre sur un appareil à encoche, `env(safe-area-inset-bottom)` valant zéro
   sur un navigateur de bureau.
 - Le rendu du filet d'un pixel du repère de position sur un écran non HiDPI. Il

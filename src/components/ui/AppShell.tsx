@@ -1,5 +1,6 @@
 import { Suspense, type ReactNode } from "react";
 import { MainNav } from "@/components/ui/MainNav";
+import { ThemeKeeper } from "@/components/ui/ThemeKeeper";
 import { TrailKeeper } from "@/components/navigation/TrailKeeper";
 import { EntryPoint } from "@/components/navigation/EntryPoint";
 
@@ -45,6 +46,13 @@ export function AppShell({ children }: { children: ReactNode }) {
        * `TrailKeeper` vient de réconcilier.
        */}
       <EntryPoint />
+      {/*
+       * Le thème est déjà posé par le script d'ouverture ; ce qui se tient ici est ce que ce
+       * script ne peut pas faire, parce qu'il ne s'exécute qu'une fois : suivre le système
+       * quand il change d'avis en cours de lecture, et suivre l'onglet voisin quand c'est là
+       * que le choix a été fait.
+       */}
+      <ThemeKeeper />
       <MainNav />
       <div className="app-body flex-1">{children}</div>
     </>
