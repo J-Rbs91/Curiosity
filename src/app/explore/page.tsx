@@ -7,6 +7,7 @@ import { Settings } from "lucide-react";
 import { authors, taxonomy, themes } from "@/content";
 import { Screen } from "@/components/motion/Screen";
 import { ListRow } from "@/components/ui/ListRow";
+import { ExploreTitle } from "@/components/ui/Wordmark";
 
 /**
  * Trois entrées dans le corpus, et un ordre qui dit la hiérarchie.
@@ -40,7 +41,15 @@ export default function ExplorePage() {
     <Screen>
       <div className="mx-auto max-w-md px-6 pt-10 md:max-w-page">
         <div className="flex items-start justify-between gap-3">
-          <h1 className="font-serif-display text-2xl font-semibold text-ink">Explorer</h1>
+          {/*
+           * Le o du titre est l'œil de la marque, et il y joue la même séquence qu'à
+           * l'ouverture. Ce n'est pas une signature ajoutée en en-tête — le §4 de
+           * `docs/ux-direction.md` continue de l'exclure : c'est le titre de l'écran, dans la
+           * serif et à la taille des titres, dont une lettre est dessinée plutôt que composée.
+           */}
+          <h1 className="font-serif-display text-2xl font-semibold text-ink">
+            <ExploreTitle animate />
+          </h1>
           <TreeLink
             href="/settings"
             aria-label="Réglages"

@@ -22,11 +22,15 @@ import {
  *
  * **Ce que le mouvement a le droit de faire.** L'application n'anime rien au repos ; c'est
  * écrit dans `docs/ux-direction.md` et c'est ce qui rend son mouvement supportable à la
- * centième ouverture. Cette séquence n'est pas une exception à cette règle : elle ne vit qu'à
- * l'écran de premier lancement, le seul endroit où la marque s'affiche, où rien n'attend
- * derrière elle et que l'utilisateur ne reverra pas. Elle y joue deux regards articulés par un
- * double clignement, se termine sur un clignement long, se repose — puis se relance après une
- * pause tirée au hasard, tant que cet écran est à l'écran.
+ * centième ouverture. La séquence joue deux regards articulés par un double clignement, se
+ * termine sur un clignement long, se repose — puis se relance après une pause tirée au hasard,
+ * tant que l'écran qui la porte est affiché.
+ *
+ * **Elle ne vit qu'à deux endroits, et c'est `animate` qui les nomme.** L'ouverture, où rien
+ * n'attend derrière elle, et le o du titre d'Explorer, qui est un onglet et se revoit. Ce
+ * second endroit est une dépense sur le budget de mouvement, pas un droit acquis par la marque :
+ * le §7 de `docs/ux-direction.md` dit ce qui le borne, et la valeur par défaut de `animate` est
+ * `false` pour que l'ajouter reste un geste et non un oubli.
  *
  * **Pourquoi un composant client.** La pause aléatoire est la seule chose de cette séquence que
  * le CSS ne sait pas exprimer. Le reste — les positions, les temps, les courbes — reste

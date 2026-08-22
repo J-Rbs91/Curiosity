@@ -166,21 +166,26 @@ en bas de casse, l'œil serait plus petit que les hampes qui l'entourent et disp
 
 La pupille joue **deux regards de trois fixations**, articulés par un double clignement rapide
 et refermés par un clignement long. La séquence dure 4 800 ms, se repose au centre, puis se
-relance après une pause tirée entre 2,34 et 5,67 secondes, tant que l'écran de premier
-lancement est affiché.
+relance après une pause tirée entre 2,34 et 5,67 secondes, tant que l'écran qui la porte est
+affiché.
 
-**Ce que cette boucle ne remet pas en cause, et ce qu'elle coûte.** La règle « aucun mouvement
-continu » du §7 tient. Elle n'admet pas d'exception, et ce n'en est pas une : la règle de
-fréquence tranche avant tout le reste, et cette séquence se joue sur l'unique écran que
-l'utilisateur ne reverra pas, où rien n'attend derrière elle. C'est la ligne « rare et
-marquante » du tableau du §7, la seule qui autorise une séquence expressive. Nulle part
-ailleurs la marque ne s'affiche — pas d'en-tête permanent, pas de favicon animé.
+**Elle se joue à deux endroits, et le second se revoit.** À l'ouverture, dans le O du nom ; sur
+Explorer, dans le o du titre — la même séquence, le même dessin, à la seule différence des trois
+cotes qui l'ajustent à une minuscule de serif. L'écran d'ouverture était la surface idéale d'une
+séquence expressive : on ne la regarde pas deux fois de suite, et rien n'attend derrière elle.
+L'en-tête d'Explorer n'est pas cette surface — c'est un onglet, on y revient plusieurs fois par
+ouverture —, et **c'est là que cette boucle coûte quelque chose**. Le §7 dit ce que ce coût
+change au budget de mouvement, et à quelle condition il reste payé.
 
-Le coût est réel et il est nommé : **la boucle est solidaire de cet écran, pas de la marque.**
-Le jour où quelqu'un posera la marque dans un en-tête, ou même sur un second écran, c'est la
-boucle qu'il faudra retirer, pas la règle qu'il faudra assouplir. Le fichier animé du dépôt le
-montre déjà : il joue la séquence **une fois**, parce qu'une image qui boucle sur une page
-qu'on défile est exactement le mouvement permanent qu'on s'interdit.
+Ce que ce second endroit ne fait pas, en revanche, c'est ajouter une signature : **ce n'est pas
+la marque qui est dans cet en-tête, c'est le titre de l'écran.** Il est dans la serif des titres,
+à la taille des titres, et il se lit « Explorer » ; une seule de ses lettres est dessinée au lieu
+d'être composée, et elle en garde la casse, la hauteur d'œil et la chasse. Le §5 continue donc
+d'exclure ce qu'il excluait — un logo posé en en-tête, qui n'apprendrait rien à qui est déjà
+entré. Le nom du produit, lui, ne s'affiche toujours qu'au seuil.
+
+Le fichier animé du dépôt, lui, joue la séquence **une fois**, sans boucler : une image qui
+boucle sur une page qu'on défile est exactement le mouvement permanent qu'on s'interdit.
 
 Ce qui fait qu'un point se lit comme un œil n'est pas l'amplitude, c'est le **rythme** : l'œil
 humain ne balaie pas, il saute — quelques dizaines de millisecondes de saccade, puis deux à
@@ -230,13 +235,24 @@ perd rien : elle ne porte aucune information par son mouvement.
 
 | Support | Ce qui s'affiche |
 |---|---|
-| Écran d'ouverture | Le mot entier, et c'est le seul endroit où le regard joue |
+| Écran d'ouverture | Le mot entier, et le regard y joue |
+| En-tête d'Explorer | Le seul o du titre, et le regard y joue aussi |
 | Onglet du navigateur, écran d'accueil, feuille de partage | L'œil seul, immobile |
 | README, page de dépôt | `mark.svg`, ou `mark-animated.svg` qui joue la séquence une fois, sans boucler |
 
-**Il n'y a pas d'en-tête permanent avec une signature.** Le §5 dit ce qu'un écran a le droit de
-porter, et un logo n'y figure pas : il n'apprendrait rien à quelqu'un qui est déjà entré. La
-marque se montre au seuil, et nulle part après.
+**Il n'y a toujours pas d'en-tête permanent avec une signature.** Le §5 dit ce qu'un écran a le
+droit de porter, et un logo n'y figure pas : il n'apprendrait rien à quelqu'un qui est déjà
+entré. Le o d'Explorer n'en est pas un — c'est une lettre du titre, pas le nom du produit posé à
+côté. La marque, elle, se montre au seuil et nulle part après.
+
+**Le dessin s'ajuste à la lettre qu'il remplace, et les cotes se relèvent, elles ne se
+choisissent pas.** Trois valeurs en em : la hauteur de l'encre du glyphe, ce qu'elle descend sous
+la ligne de base, et l'approche qui rend au mot la chasse qu'il aurait sans substitution. Prendre
+la hauteur de l'encre plutôt que la hauteur de référence règle le débord d'un seul geste — une
+forme ronde doit dépasser en haut et en bas pour paraître aussi haute qu'une forme plate, et le
+glyphe remplacé le fait déjà. Le O d'Inter en capitale et le o de la Source Serif en bas de casse
+ne demandent donc pas deux méthodes, seulement deux relevés : ils sont dans
+`src/components/ui/Wordmark.tsx`, chacun avec le sien.
 
 **Le seuil se franchit à chaque ouverture, et non plus une seule fois.** L'écran était celui du
 premier lancement ; il est devenu celui de l'ouverture. On ouvre cette application pour une
@@ -649,13 +665,12 @@ le texte écrit.
 | Glissement d'un écran ou d'une phase | 560 ms sur 16 % / 10 % | `--ease-lift` |
 | Entrée et sortie de session | 640 ms | `--ease-lift` |
 | Le concept qu'on vient de travailler | 720 ms | `--ease-lift` |
-| Le regard de la marque | 4 800 ms, sur le seul écran d'ouverture | `--ease-out-soft` |
+| Le regard de la marque | 4 800 ms, à l'ouverture et dans le titre d'Explorer | `--ease-out-soft` |
 
-**La marque est la seule durée à dépasser la seconde, et la seule chose qui se relance.** La
-séquence ne joue qu'à l'écran d'ouverture — voir §4 —, et elle y boucle avec une pause tirée
-entre 2,34 et 5,67 secondes. Elle n'est pas une durée d'interface : c'est huit saccades de
-144 ms, six fixations et trois clignements. Une valeur de cet ordre sur quoi que ce soit d'autre
-serait à refuser, et la boucle plus encore.
+**La marque est la seule durée à dépasser la seconde, et la seule chose qui se relance.** Elle
+n'est pas une durée d'interface : c'est huit saccades de 144 ms, six fixations et trois
+clignements, suivis d'une pause tirée entre 2,34 et 5,67 secondes. Une valeur de cet ordre sur
+quoi que ce soit d'autre serait à refuser, et la boucle plus encore.
 
 Depuis que cet écran revient à chaque ouverture, la carte du jour attend bel et bien derrière
 lui — ce qui n'était pas le cas quand il ne servait qu'une fois. **Ce qui rend la durée
@@ -665,10 +680,28 @@ aucun affichage, et personne n'a jamais à attendre qu'elle finisse. Le jour où
 conditionnerait quelque chose, c'est la durée qu'il faudrait revoir, pas l'attente.
 
 **Ce que la règle « aucun mouvement continu » interdit, et ce qu'elle n'interdit pas.** Elle
-interdit qu'une chose bouge alors que rien n'a changé, sur une surface qu'on revient voir. La
-règle de fréquence tranche avant elle : cet écran-ci est vu une fois par installation, et c'est
-la seule raison pour laquelle la boucle y est admissible. Elle ne se déduit pas de la marque, ne
-se transpose à aucune autre surface, et disparaît avec l'écran qui la porte.
+interdit qu'une chose bouge alors que rien n'a changé, sur une surface qu'on revient voir. Sur
+l'écran d'ouverture, la règle de fréquence tranche avant elle et la boucle y est admissible sans
+discussion : on n'y revient pas.
+
+**Le o d'Explorer, lui, est bel et bien sur une surface qu'on revient voir, et c'est une dépense
+assumée.** Ce qui la rend tenable est ce qui la borne, et il faut que les trois tiennent
+ensemble :
+
+- **La séquence est petite et elle est loin.** Elle occupe une lettre de 15,6 px dans un titre
+  d'en-tête, à un demi-écran de la liste qu'on lit. Ce n'est pas le mouvement qu'on
+  s'interdit — une surface entière qui bouge sous le texte —, c'est un caractère qui vit dans
+  son propre corps.
+- **Elle ne retient rien et ne dit rien.** Aucun affichage ne l'attend, aucune information n'y
+  est portée, et le titre reste lisible et complet à la première image. Le jour où elle
+  conditionnerait quoi que ce soit, c'est elle qu'il faudrait retirer.
+- **Elle s'arrête là.** Elle ne se déduit pas de la marque et ne se transpose à aucune autre
+  surface : deux endroits, pas trois, et aucun sous le contenu qu'on lit. Le favicon ne bouge
+  toujours pas, et une page de fiche n'aura jamais d'œil dans son titre.
+
+Le levier de retrait est d'un mot, et c'est délibéré : `<ExploreTitle animate />` sans son
+`animate` laisse le titre exactement où il est, œil ouvert et pupille au centre. C'est aussi
+l'état qu'affiche le mouvement réduit.
 
 **Le déplacement et le fondu sont dissociés, et c'est ce qui rend un mouvement long
 agréable plutôt que lent.** Le contenu est entièrement lisible en 300 ms pendant
@@ -693,8 +726,9 @@ l'appui, lui, ne le dépasse pas : il est vu vingt fois par session.
 - **Le mouvement ne porte jamais seul une information.** Le repère de l'onglet
   actif est une barre qui glisse, mais aussi une couleur et un `aria-current`.
 - **Aucun mouvement continu.** Rien ne pulse, ne flotte ni ne tourne au repos. La seule
-  séquence qui se relance est celle de la marque, sur le seul écran vu une fois par
-  installation — voir le paragraphe ci-dessus, qui dit pourquoi ce n'est pas une exception.
+  séquence qui se relance est celle de la marque, à deux endroits nommés et à aucun
+  autre — voir les paragraphes ci-dessus, qui disent ce que le second coûte et ce qui le
+  borne.
 - **Une transition en cours n'avale pas les clics** — sans quoi un déplacement de
   560 ms serait un blocage de 560 ms.
 
@@ -888,7 +922,7 @@ Aucun écran n'a gagné ni perdu une information.
 | `src/components/ui/DeepenSheet.tsx` | Ce qui suit l'appui : copie faite, où coller, reprises |
 | `src/domain/concepts/sources.ts` | L'ordre de lecture des sources et le nom de leur niveau |
 | `src/components/ui/mark-geometry.mjs` | La géométrie de la marque, et elle seule |
-| `src/components/ui/Mark.tsx`, `Wordmark.tsx` | L'œil et le mot, aux deux tailles optiques |
+| `src/components/ui/Mark.tsx`, `Wordmark.tsx` | L'œil, et les deux mots qui le portent à la place d'une lettre |
 | `scripts/icons/build-icons.mjs` | Les neuf fichiers d'icônes, dérivés de la géométrie |
 
 Une seule implémentation par mécanisme. Deux implémentations divergent, toujours.
