@@ -47,10 +47,15 @@ function hash(text: string): number {
  *
  * La carte de la veille est écartée tant qu'il reste autre chose à montrer — deux jours de
  * suite sur le même concept donneraient l'impression que l'application est cassée.
+ *
+ * `seen` est la liste des cartes déjà rencontrées, **de la plus ancienne à la plus
+ * récente** : c'est l'ordre qui porte l'information, plus aucune date. Le rang y remplace
+ * l'horodatage que la version précédente comparait, et il dit exactement la même chose au
+ * troisième cas — il n'y a rien à faire d'un instant qu'on ne fasse d'un rang.
  */
 export function pickDailyConcept(
   concepts: Concept[],
-  seen: Map<ConceptId, string>,
+  seen: ConceptId[],
   today: string = dayKey(),
   previous?: DailyPick
 ): Concept | undefined {
@@ -64,8 +69,10 @@ export function pickDailyConcept(
   const eligible = previous ? concepts.filter((c) => c.id !== previous.conceptId) : concepts;
   const pool = eligible.length > 0 ? eligible : concepts;
 
-  const unseen = pool.filter((c) => !seen.has(c.id));
+  const rangs = new Map(seen.map((id, rang) => [id, rang] as const));
+
+  const unseen = pool.filter((c) => !rangs.has(c.id));
   if (unseen.length > 0) return unseen[hash(today) % unseen.length];
 
-  return [...pool].sort((a, b) => (seen.get(a.id) ?? "").localeCompare(seen.get(b.id) ?? ""))[0];
+  return [...pool].sort((a, b) => rangs.get(a.id)! - rangs.get(b.id)!)[0];
 }

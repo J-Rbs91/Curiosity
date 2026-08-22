@@ -265,18 +265,6 @@ export interface Deepening {
 // ---------------------------------------------------------------------------
 
 /**
- * La progression ne mesure plus rien : elle se souvient. Sans session ni quiz, il n'y a
- * pas de maîtrise à évaluer — seulement des cartes déjà vues, pour que la suivante en soit
- * une autre.
- */
-export interface SeenConcept {
-  conceptId: ConceptId;
-  firstSeenAt: string;
-  lastSeenAt: string;
-  encounters: number;
-}
-
-/**
  * La carte retenue pour aujourd'hui.
  *
  * « Chaque jour une carte » veut dire que le choix se fait une fois par jour, pas à chaque
@@ -296,9 +284,31 @@ export interface DailyPick {
  * Elle ne retient pas davantage si le premier lancement a eu lieu. L'accueil n'est plus un
  * écran de première fois mais le seuil de chaque ouverture — voir `src/app/page.tsx` — et
  * un état qui ne commande plus rien est pire qu'absent : on le croit encore en usage.
+ *
+ * **`seen` est une suite d'identifiants, et rien d'autre.**
+ *
+ * La v2 tenait un objet par carte — identifiant répété en clé et en valeur, première
+ * rencontre, dernière rencontre, nombre de rencontres — soit environ 175 octets pour une
+ * carte dont l'identifiant en fait trente. Aucun de ces quatre champs ne commandait quoi
+ * que ce soit : le tirage ne demande à cette mémoire que deux choses, *quelles cartes ont
+ * été vues* et *dans quel ordre*, et une liste ordonnée répond aux deux. Sur les
+ * cinquante-sept cartes du corpus, le stockage passe d'environ dix kilo-octets à moins de
+ * deux, et il reste borné par le corpus : une carte vue dix fois n'occupe pas plus qu'une
+ * carte vue une fois.
+ *
+ * **L'ordre est celui de la dernière rencontre, la plus ancienne en tête.** C'est ce qui
+ * remplace `lastSeenAt` : revoir une carte la déplace en fin de liste plutôt que d'y
+ * réécrire une date. Le tirage y lit la carte à reproposer quand tout a été vu ; l'écran
+ * des cartes passées la lit à l'envers, la plus récente d'abord.
+ *
+ * **Une carte n'y entre qu'ouverte.** L'inscription se fait à l'affichage de la carte du
+ * jour, jamais à l'échéance d'une journée : deux jours sans ouvrir l'application n'y
+ * laissent aucune trace, et les cartes de ces jours-là n'ont pas été tirées — elles sont
+ * encore à venir. La liste est donc l'histoire de ce qui a été lu, pas un calendrier.
  */
 export interface ProgressState {
   version: number;
-  concepts: Record<ConceptId, SeenConcept>;
+  /** Les cartes rencontrées, sans doublon, de la plus anciennement vue à la plus récente. */
+  seen: ConceptId[];
   daily?: DailyPick;
 }

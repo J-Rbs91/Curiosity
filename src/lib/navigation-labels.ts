@@ -19,6 +19,7 @@ export function labelFor(href: string): string {
   if (pathname === "/") return "Aujourd'hui";
   if (pathname === "/explore") return "Explorer";
   if (pathname === "/settings") return "Réglages";
+  if (pathname === "/passees") return "Cartes précédentes";
 
   const domaine = pathname.match(/^\/explore\/domains\/([^/]+)$/)?.[1];
   if (domaine) return taxonomy.domainBySlug(domaine)?.label ?? "Explorer";

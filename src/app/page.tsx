@@ -4,9 +4,11 @@ import { useEffect, useState } from "react";
 import { taxonomy } from "@/content";
 import { getProgressService } from "@/services/progress";
 import { dayKey, pickDailyConcept } from "@/domain/concepts/next-card";
+import { pastCards } from "@/domain/concepts/past-cards";
 import { onReentry, takeOpening } from "@/lib/app-entry";
 import type { Concept } from "@/types";
 import { Screen } from "@/components/motion/Screen";
+import { TreeLink } from "@/components/navigation/TreeLink";
 import { Button } from "@/components/ui/Button";
 import { ConceptQuotation } from "@/components/concept/ConceptQuotation";
 import { ConceptSourceList } from "@/components/concept/ConceptSources";
@@ -28,33 +30,54 @@ import { espacesFrancaises } from "@/lib/typographie";
  */
 const SCREEN_HEIGHT = "calc(100svh - var(--nav-height) - env(safe-area-inset-bottom))";
 
+/**
+ * Ce que la ligne des cartes passées retire à la carte quand elle est là : 52 px, soit sa
+ * hauteur de texte — la cible de 44 px est ramenée à 20 px de flux par `-my-3`, sans
+ * rétrécir — et l'écart de 32 px qui l'en sépare.
+ *
+ * **La carte ne rétrécit pas pour lui faire place, c'est la page qui défile.** Le tableau
+ * de mesures de `CARD_SCALE` a été relevé sans cette ligne : une carte qui tenait tout
+ * juste tient toujours, et c'est le lien qui passe sous la ligne de flottaison. Mesuré sur
+ * la même carte, la plus longue du corpus : 390 × 844 ne défile pas ; 375 × 667 défile de
+ * 38 px, la carte restant entière ; 320 × 568 défilait déjà de 37 px pour la carte seule,
+ * et défile de 89 px. Rétrécir le texte de tous les jours pour garder à l'écran un lien
+ * qu'on suit une fois par mois aurait été l'inverse de la bonne dépense — et il n'est pas
+ * mauvais qu'un lien fait pour ne pas se voir demande le geste qui l'appelle.
+ */
+const PAST_LINK_HEIGHT = "3.25rem";
+
 export default function TodayPage() {
   const [mounted, setMounted] = useState(false);
   const [ouverture, setOuverture] = useState(false);
   const [concept, setConcept] = useState<Concept | undefined>(undefined);
+  /*
+   * Combien de cartes le lecteur peut relire, celle du jour déduite. C'est ce compte qui
+   * décide si le lien vers les cartes passées existe : le proposer le premier jour
+   * ouvrirait sur une liste vide.
+   */
+  const [passees, setPassees] = useState(0);
 
   useEffect(() => {
     const tirer = () => {
       const service = getProgressService();
       const state = service.getState();
-      const seen = new Map(
-        Object.values(state.concepts).map((c) => [c.conceptId, c.lastSeenAt] as const)
-      );
-      const today = dayKey();
       /*
        * Le tirage porte sur tout le corpus, et il le dit — plutôt que de recevoir la liste des
        * cartes sans qu'on sache de quel périmètre elle vient. Le jour où l'on voudra une carte
        * d'une famille ou d'un domaine, c'est ce périmètre qui change, et rien d'autre : le
        * tirage lui-même ne connaît ni domaine ni discipline.
        */
-      const next = pickDailyConcept(
-        taxonomy.conceptsIn({ kind: "all" }),
-        seen,
-        today,
-        state.daily
-      );
+      const corpus = taxonomy.conceptsIn({ kind: "all" });
+      const today = dayKey();
+      const next = pickDailyConcept(corpus, state.seen, today, state.daily);
       // Lecture localStorage et tirage de la carte : impossibles pendant le rendu serveur.
       setConcept(next);
+      /*
+       * L'état lu ici précède l'enregistrement de la carte du jour, mais `pastCards` en
+       * écarte de toute façon la carte à l'écran : le compte est le même qu'elle ait déjà
+       * été rencontrée ou non.
+       */
+      setPassees(next ? pastCards(corpus, state.seen, next.id).length : 0);
       setMounted(true);
       if (next) {
         // Le tirage du jour est arrêté ici et pas ailleurs : rouvrir l'application dans
@@ -190,22 +213,66 @@ export default function TodayPage() {
        * l'écran refuserait de défiler pour la montrer en entier.
        */}
       <div
-        className="mx-auto flex max-w-md flex-col justify-center px-6 py-6"
+        className="mx-auto flex max-w-md flex-col px-6 py-6"
         style={{ minHeight: SCREEN_HEIGHT }}
       >
         {/*
-         * Le même surtitre qu'au seuil, et pour la même raison : la carte du jour peut venir
-         * de n'importe lequel des onze domaines, et rien d'autre sur cet écran ne dit de quel
-         * champ elle relève. Il se distingue du libellé de thème qui ouvre la carte par sa
-         * place — hors du cadre de la carte, au-dessus d'elle — et par son échelle, qui est
-         * celle de l'écran et non celle de la carte : `CARD_SCALE` ne le fait pas rétrécir.
+         * La carte reste centrée dans ce qui lui revient, et la ligne des cartes passées se
+         * pose au pied de l'écran. Le centrage est passé de la colonne entière à ce bloc :
+         * porté par la colonne, il aurait centré la carte *et* la ligne ensemble, ce qui
+         * aurait décalé la carte vers le haut sur les écrans où elle est courte.
          */}
-        <p className="mb-6 text-xs font-medium uppercase tracking-[0.12em] text-ink-faint">
-          Les sciences de l&apos;action organisée
-        </p>
-        <ConceptCard concept={concept} />
+        <div className="flex min-h-0 flex-1 flex-col justify-center">
+          {/*
+           * Le même surtitre qu'au seuil, et pour la même raison : la carte du jour peut venir
+           * de n'importe lequel des onze domaines, et rien d'autre sur cet écran ne dit de quel
+           * champ elle relève. Il se distingue du libellé de thème qui ouvre la carte par sa
+           * place — hors du cadre de la carte, au-dessus d'elle — et par son échelle, qui est
+           * celle de l'écran et non celle de la carte : `CARD_SCALE` ne le fait pas rétrécir.
+           */}
+          <p className="mb-6 text-xs font-medium uppercase tracking-[0.12em] text-ink-faint">
+            Les sciences de l&apos;action organisée
+          </p>
+          <ConceptCard
+            concept={concept}
+            maxHeight={
+              passees > 0 ? `calc(${SCREEN_HEIGHT} - ${PAST_LINK_HEIGHT})` : SCREEN_HEIGHT
+            }
+          />
+        </div>
+        {passees > 0 && <PastCardsLink />}
       </div>
     </Screen>
+  );
+}
+
+/**
+ * Le seul chemin vers les cartes déjà lues, et il est fait pour ne pas se voir.
+ *
+ * L'application produit **une** carte par jour : c'est sa promesse, et un historique mis en
+ * avant la défait — on ouvrirait pour parcourir une liste plutôt que pour lire une fiche.
+ * Il fallait pourtant qu'on puisse revenir sur une carte de la semaine passée sans la
+ * chercher dans le corpus par son auteur, en se rappelant seulement qu'on l'a lue. D'où ce
+ * traitement : le plus effacé de l'application — la graisse et la couleur d'un chapeau,
+ * sans son ancrage — au pied de l'écran, après la carte et après ses deux actions.
+ *
+ * Il n'apparaît qu'à partir de la deuxième carte : le premier jour, il ouvrirait sur une
+ * liste vide et n'aurait rien à effacer.
+ *
+ * Sa cible tactile fait 44 px, et les marges négatives rendent cliquables les 24 px que le
+ * texte n'occupe pas sans déplacer celui-ci d'un pixel — la même construction que le
+ * retour. Discret ne veut pas dire hors d'atteinte.
+ */
+function PastCardsLink() {
+  return (
+    <div className="mt-8 flex shrink-0 justify-center">
+      <TreeLink
+        href="/passees"
+        className="press -my-3 inline-flex min-h-11 items-center px-2 text-xs font-medium uppercase tracking-[0.12em] text-ink-faint hover:text-ink"
+      >
+        Cartes précédentes
+      </TreeLink>
+    </div>
   );
 }
 
@@ -267,7 +334,7 @@ const CARD_SCALE = "clamp(0.8rem, 0.01rem + 2.222vh, 1rem)";
  * le bloc citaire — encadré, sa légende en petit — ne s'interpose plus entre le titre et la
  * phrase qui l'ouvre : le haut de la carte reste du texte qui se lit d'un trait.
  */
-function ConceptCard({ concept }: { concept: Concept }) {
+function ConceptCard({ concept, maxHeight }: { concept: Concept; maxHeight: string }) {
   const [showSources, setShowSources] = useState(false);
   const sources = concept.sources ?? [];
 
@@ -280,7 +347,7 @@ function ConceptCard({ concept }: { concept: Concept }) {
        * n'y en a pas — si le contenu dépasse un écran, c'est la page qui défile plutôt que le
        * bas de la carte qui devient inaccessible.
        */
-      style={{ fontSize: CARD_SCALE, maxHeight: showSources ? SCREEN_HEIGHT : undefined }}
+      style={{ fontSize: CARD_SCALE, maxHeight: showSources ? maxHeight : undefined }}
     >
       <div className="flex flex-col gap-[0.6em]">
         {/* Rendu sous condition, et non laissé vide : une ligne absente ne doit pas laisser

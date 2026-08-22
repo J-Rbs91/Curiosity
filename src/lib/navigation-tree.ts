@@ -60,6 +60,19 @@ const NIVEAUX: { motif: RegExp; niveau: number; parent: string | null }[] = [
   { motif: /^\/explore\/authors\//, niveau: 2, parent: "/explore?vue=auteurs" },
   { motif: /^\/settings$/, niveau: 2, parent: "/explore" },
   /*
+   * Les cartes déjà lues sont **sous la carte du jour**, et pas sous Explorer.
+   *
+   * On n'y va que depuis la carte du jour — c'est le seul lien qui y mène — et un retour
+   * doit ramener à elle. Le rattachement décide aussi de l'onglet allumé : sous Explorer,
+   * la barre aurait désigné une branche qu'on n'a pas traversée pour y venir.
+   *
+   * Le niveau 2 plutôt que 1 : `rootSectionOf` s'arrête au premier niveau et rendrait
+   * `/passees`, qui n'est l'adresse d'aucun onglet — aucune entrée ne serait allumée. Un
+   * cran plus bas, la remontée passe par la racine, et « Aujourd'hui » reste allumé. Le
+   * saut de niveau depuis la racine est sans conséquence : seule la comparaison compte.
+   */
+  { motif: /^\/passees$/, niveau: 2, parent: "/" },
+  /*
    * Un thème est **sous** un domaine, et pas à côté.
    *
    * Il a longtemps porté le niveau 2, comme les domaines et les auteurs : les trois
