@@ -1,9 +1,9 @@
 "use client";
 
-import type { CSSProperties } from "react";
+import { useState, type CSSProperties } from "react";
 import { usePathname } from "next/navigation";
 import { TreeLink } from "@/components/navigation/TreeLink";
-import { BookOpen, Compass } from "lucide-react";
+import { BookIcon, CompassIcon } from "@/components/ui/NavIcons";
 import { rootSectionOf } from "@/lib/navigation-tree";
 
 /**
@@ -17,9 +17,43 @@ import { rootSectionOf } from "@/lib/navigation-tree";
  * une fois, et `rootSectionOf` ne saurait plus dire quelle branche allumer.
  */
 const ITEMS = [
-  { href: "/", label: "Aujourd'hui", icon: BookOpen },
-  { href: "/explore", label: "Explorer", icon: Compass },
+  { href: "/", label: "Aujourd'hui", icon: BookIcon },
+  { href: "/explore", label: "Explorer", icon: CompassIcon },
 ] as const;
+
+/**
+ * Le rang du changement de section — le seul renseignement dont les icônes ont besoin pour
+ * savoir qu'on vient de les activer.
+ *
+ * **Ce qu'il fallait distinguer.** « Explorer est la section courante » et « on vient d'entrer
+ * dans Explorer » sont deux choses différentes, et seule la seconde autorise un mouvement.
+ * L'adresse ne les distingue pas : elle change à chaque pas dans la branche, et elle ne change
+ * pas quand on revient à l'application sur la section où on l'avait laissée.
+ *
+ * **Pourquoi un compteur et non un booléen.** Deux allers-retours entre les deux sections sont
+ * deux activations, et un drapeau qui vaudrait deux fois « vrai » de suite ne dirait pas qu'il
+ * s'est passé quelque chose entre les deux. Un rang qui avance, si — et il donne aux icônes
+ * une clé de relance sans qu'aucune ne s'occupe de savoir quand se remettre à zéro.
+ *
+ * **Il vaut zéro à l'ouverture**, et c'est ce qui garde l'application silencieuse au
+ * démarrage : l'état s'affiche, il ne se joue pas. Une animation au montage se rejouerait à
+ * chaque retour sur l'application, pour un changement qui n'a pas eu lieu.
+ *
+ * L'ajustement se fait pendant le rendu plutôt que dans un effet : c'est la forme que React
+ * documente pour un état qui se déduit d'une valeur reçue, et la seule qui n'affiche pas une
+ * image de l'état précédent avant de se corriger.
+ */
+function useActivationRank(section: number) {
+  const [seen, setSeen] = useState(section);
+  const [rank, setRank] = useState(0);
+
+  if (seen !== section) {
+    setSeen(section);
+    setRank((previous) => previous + 1);
+  }
+
+  return rank;
+}
 
 /**
  * La navigation principale : une barre au bas du téléphone, un rail au bord
@@ -53,6 +87,7 @@ export function MainNav() {
    */
   const section = rootSectionOf(pathname);
   const activeIndex = ITEMS.findIndex((item) => item.href === section);
+  const activation = useActivationRank(activeIndex);
 
   /*
    * `main-nav` porte à la fois la géométrie et le nom de transition de vue, qui
@@ -99,10 +134,9 @@ export function MainNav() {
                 >
                   <Icon
                     size={20}
-                    strokeWidth={active ? 2 : 1.5}
-                    className={`transition-colors motion-ui ${
-                      active ? "text-accent" : "text-ink-faint"
-                    }`}
+                    active={active}
+                    activation={activation}
+                    className={active ? "text-accent" : "text-ink-faint"}
                   />
                   <span
                     className={`transition-colors motion-ui ${

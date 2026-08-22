@@ -100,6 +100,27 @@
   --dur-mark: 720ms;  /* moment marquant : le concept qu'on vient de travailler */
 
   /*
+   * Les deux icônes de la navigation, et les deux seules durées qui dépassent le plafond de
+   * 300 ms sans être un glissement d'écran.
+   *
+   * Ce qui les y autorise est ce qui les borne : elles ne se jouent qu'une fois par changement
+   * de section, elles ne retiennent rien — l'écran est là, l'entrée est allumée et cliquable
+   * dès la première image — et elles ne portent aucune information que la couleur, la graisse
+   * et le repère de position ne portent déjà.
+   *
+   * `--dur-fold` est le temps d'un demi-tour de couverture. À 220 ms le plat claque et le
+   * mouvement se lit comme un remplacement d'icône, ce qui est précisément ce qu'on voulait
+   * éviter ; à 560 il traîne derrière l'écran qui a déjà changé.
+   *
+   * `--dur-swing` est une partition, pas une durée : quatre mouvements amortis, dont le
+   * premier prend 30 % du temps et le dernier 8 %. Les écarts sont dans
+   * `nav-icon-geometry.ts`, les instants dans les images clés ci-dessous, et `npm test`
+   * vérifie que les deux disent la même chose.
+   */
+  --dur-fold: 420ms;
+  --dur-swing: 720ms;
+
+  /*
    * Le regard de la marque — les deux seules durées du produit à dépasser la seconde.
    *
    * Elles ne se paient qu'à deux endroits, et ce sont deux partitions différentes, pas une
@@ -887,6 +908,108 @@ body {
   to {
     opacity: 1;
     transform: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+ * Les deux icônes de la navigation — un pivot et une aiguille
+ *
+ * Le changement de section se voit à l'endroit où on vient de le demander. C'est la seule
+ * chose que ces deux mouvements ajoutent : l'état, lui, était déjà dit trois fois — par la
+ * couleur, par la graisse du trait et par le repère de position, qui glisse au même instant.
+ *
+ * **Ce qui garantit qu'ils ne se jouent qu'une fois.** Le livre est une *transition* : il n'a
+ * pas d'état de départ à rejouer, il a deux positions et le navigateur va de l'une à l'autre
+ * quand — et seulement quand — la position change. Rien à armer, rien à remettre à zéro, rien
+ * qui parte au montage. L'aiguille, elle, tient une partition en cinq temps que seule une
+ * animation sait écrire ; c'est le composant qui la relance, en remontant l'aiguille au
+ * changement de section, et lui seul sait qu'une descente dans la branche déjà ouverte n'en
+ * est pas un.
+ *
+ * **Les mesures viennent du dessin, les instants restent ici.** Le déplacement de recentrage
+ * du livre et les écarts de l'aiguille sont émis en propriétés personnalisées par
+ * `nav-icon-geometry.ts` : les recopier ici donnerait deux définitions d'une même géométrie,
+ * et c'est la seconde qui dériverait. Même partage que pour le regard de la marque.
+ *
+ * **Mouvement réduit.** L'animation de l'aiguille est déclarée en `no-preference` : sans elle,
+ * l'aiguille est au nord, ce qui est aussi son repos. Le livre garde sa transition — le repli
+ * général la ramène à une durée nulle, et les deux positions du livre sont ses deux états
+ * lisibles. Dans les deux cas, ce qui reste affiché est l'état, jamais une image intermédiaire.
+ * -------------------------------------------------------------------------- */
+
+/*
+ * La graisse s'épaissit avec la couleur, sur la durée d'un onglet. Les deux propriétés sont
+ * énumérées et portées par la même règle : `transition-colors` de Tailwind aurait redéclaré
+ * `transition-property` et emporté silencieusement la graisse.
+ */
+.nav-icon {
+  transition-property: color, stroke-width;
+  transition-duration: var(--dur-ui);
+  transition-timing-function: var(--ease-out-soft);
+}
+
+/*
+ * Le livre. Deux propriétés bougent, et pas une de plus : le plat de gauche bascule autour du
+ * dos, le volume se recentre. Aucune des deux ne provoque de remise en page.
+ *
+ * `scale: -1 1` n'est pas un retournement d'image, c'est la projection d'un demi-tour : la
+ * largeur apparente d'une surface qui pivote vaut son cosinus, et l'interpolation de 1 à −1
+ * passe par le zéro, où le plat est vu par la tranche. Voir `nav-icon-geometry.ts`.
+ */
+.nav-book {
+  transition: translate var(--dur-fold) var(--ease-out-soft);
+}
+
+.nav-book-cover {
+  transform-box: view-box;
+  transform-origin: 50% 50%;
+  transition: scale var(--dur-fold) var(--ease-out-soft);
+}
+
+[data-state="closed"] .nav-book {
+  translate: var(--book-shift);
+}
+
+[data-state="closed"] .nav-book-cover {
+  scale: -1 1;
+}
+
+/* L'aiguille pivote sur le centre du cadran, qui est aussi le sien. */
+.nav-needle {
+  transform-box: view-box;
+  transform-origin: 50% 50%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  [data-state="finding"] .nav-needle {
+    animation: compass-swing var(--dur-swing) var(--ease-out-soft) both;
+  }
+}
+
+/*
+ * Les instants de la partition. Chaque temps est plus court que le précédent : une aiguille
+ * qui s'amortit ne ralentit pas, elle a de moins en moins de chemin à faire. La courbe de
+ * sortie donne à chaque mouvement son arrêt net, et c'est cet arrêt — pas le trajet — qui fait
+ * lire une aiguille aimantée plutôt qu'un balancier.
+ */
+@keyframes compass-swing {
+  0% {
+    rotate: 0deg;
+  }
+  30% {
+    rotate: var(--swing-1);
+  }
+  58% {
+    rotate: var(--swing-2);
+  }
+  78% {
+    rotate: var(--swing-3);
+  }
+  92% {
+    rotate: var(--swing-4);
+  }
+  100% {
+    rotate: var(--swing-5);
   }
 }
 
