@@ -6,10 +6,10 @@ existe pour qu'une reprise reparte des fichiers, et non de la mémoire de quelqu
 Ce fichier dit ce que le corpus **est**. Ce qui lui **manque**, et par quel bout le prendre,
 est dans [`corpus/RESTE-A-FAIRE.md`](RESTE-A-FAIRE.md).
 
-`npm run corpus:validate` : **65 enregistrements, 64 validés, 0 erreur, 42 avertissements.**
-`npm run corpus:deepen` : **64 approfondissements pour 64 cartes validées, 92 698 mots,
-1 448 en moyenne.**
-`npm test` : **276 tests, 0 échec.** `npm run lint` et `npm run build` : sans erreur.
+`npm run corpus:validate` : **67 enregistrements, 66 validés, 0 erreur, 42 avertissements.**
+`npm run corpus:deepen` : **66 approfondissements pour 66 cartes validées, 95 772 mots,
+1 451 en moyenne.**
+`npm test` : **382 tests, 0 échec.** `npm run lint` et `npm run build` : sans erreur.
 
 **Six domaines instruits sur onze déclarés.** Les cinq autres sont configurés dans la
 taxonomie et n'ont pas de corpus ; `corpus:audit` les affiche « en cours de constitution ».
@@ -18,7 +18,7 @@ complet, périmètre puis scout puis thèmes puis cartes.
 
 | domaine | thèmes | cartes validées | approfondissements |
 |---|---:|---:|---:|
-| Sociologie des organisations | 9 | 8 | 8 |
+| Sociologie des organisations | 9 | 10 | 10 |
 | Ergonomie de l'activité | 4 | 15 | 15 |
 | Human Factors / ergonomie cognitive | 5 | 13 | 13 |
 | Théorie de la mesure / KPI | 4 | 9 | 9 |
@@ -26,9 +26,9 @@ complet, périmètre puis scout puis thèmes puis cartes.
 | Systems Thinking | 3 | 7 | 7 |
 
 **Aucune carte validée n'attend son approfondissement**, et c'est vrai depuis le 21 août.
-Le lot du 22 a écrit les siens dans le même passage que ses cartes, plutôt que de laisser
-l'écart se rouvrir. `npm run corpus:deepen` liste en fin de sortie les cartes qui n'en ont
-pas : c'est la file de travail, et elle est vide.
+Les lots qui ont suivi ont écrit les leurs dans le même passage que leurs cartes, plutôt que
+de laisser l'écart se rouvrir. `npm run corpus:deepen` liste en fin de sortie les cartes qui
+n'en ont pas : c'est la file de travail, et elle est vide.
 
 **La famille « Comprendre la production et les systèmes » est ouverte aux deux tiers.**
 Elle était entièrement vide le 20 août ; il lui reste `operations-management`.
@@ -446,9 +446,9 @@ prochain lot de ce domaine.
 
 ---
 
-# II. Sociologie des organisations — inchangée
+# II. Sociologie des organisations — huit cartes, puis deux
 
-Les huit cartes publiées et leurs réserves n'ont pas bougé depuis la refonte du format. Le
+Les huit premières cartes et leurs réserves n'ont pas bougé depuis la refonte du format. Le
 dispositif produisait alors **171 624 caractères d'enregistrement pour 600 caractères
 affichés** et n'avait jamais publié une seule fiche : les huit étaient bloquées en
 correction, et **aucun blocage ne portait sur leur carte**. Le format a été ramené à la
@@ -474,9 +474,64 @@ coattribue à Friedberg sur la réception de *L'Acteur et le système*, non ouve
 `isomorphisme-institutionnel` cite le résumé de l'article, le passage des trois mécanismes
 n'admettant aucune coupe honnête sous 150 caractères.
 
-**Trois thèmes restent sans aucune carte** : `autorite-domination`,
-`reaction-insatisfaction`, `apprentissage-organisationnel`. Weber, Hirschman et Argyris n'ont
-encore aucun concept instruit.
+**Deux thèmes restent sans aucune carte** : `autorite-domination` et
+`apprentissage-organisationnel`. Weber et Argyris n'ont encore aucun concept instruit.
+
+## Lot du 22 août 2026 — `reaction-insatisfaction`, publié
+
+Le thème était déclaré depuis la première heure et n'avait jamais porté de carte. Il en porte
+deux, prises au rang 6 de la file et à son voisinage immédiat.
+
+| id | thème | auteur | citation |
+|---|---|---|---|
+| `exit-voice-loyalty` | Réaction à l'insatisfaction | Hirschman | entretien *Politix*, 1995, p. 22 |
+| `compromis-defection-prise-de-parole` | Réaction à l'insatisfaction | R. B. Freeman | *QJE*, 1980, p. 645 |
+
+Les deux ont passé le contrôle aveugle en **un tour**, `PASS` sur les quatre points, aucun
+tour de correction consommé. La cartographie du thème, avec chaque voie d'accès essayée et
+son code de retour, est dans `corpus/map/reaction-insatisfaction.scouting.md`.
+
+**Ce lot a été instruit sans jamais ouvrir le livre qui le fonde**, et c'est le fait à en
+retenir. *Exit, Voice, and Loyalty* (Harvard, 1970) est sur archive.org sous deux notices,
+toutes deux en prêt contrôlé ; la recherche plein texte interne d'archive.org était hors
+d'atteinte par la politique réseau de la session ; la traduction Fayard 1995 et l'édition
+Éditions Ouvrières 1972 n'ont été localisées sous aucune forme numérique ; Milbank 1980
+(JSTOR) et « Exit, Voice, and the State » 1978 (Cambridge) sont fermés. Ce qui a sauvé le lot
+est une voie latérale : **deux textes signés de Hirschman, en français, ouverts page par page
+sur Persée**, un essai de 1992 dans *Allemagne d'aujourd'hui* (doi 10.3406/alauj.1992.3170) et
+un entretien de 1995 dans *Politix*. C'est la même route qui avait débloqué la cybernétique.
+
+Réserves conservées :
+
+- **`exit-voice-loyalty` ne repose sur aucune phrase du livre de 1970.** Ce qui en est su vient
+  de ce que Hirschman en cite lui-même dans ces deux reprises tardives. Si une édition ouverte
+  paraît, c'est la première fiche du corpus à rouvrir.
+- **L'essai de 1992 est une traduction dont le traducteur n'est nommé nulle part** — ni page de
+  titre, ni notice Persée, ni sommaire du numéro — alors que deux de ses notes portent « Ndt ».
+  Aucune de ses phrases n'est donc affichée : il fonde le résumé, il ne fournit pas de verbatim.
+- **La langue de l'entretien de 1995 n'est pas établie positivement.** `translation.kind: none`
+  repose sur l'absence de toute mention de traducteur, pas sur un fait positif. Le lecteur
+  primaire et le contrôleur le disent séparément.
+- **`compromis-defection-prise-de-parole` affiche le même texte sous trois formes** — article
+  *QJE*, fac-similé NBER, notice NBER — dont deux partagent le doi 10.3386/w0242. Le contrôleur
+  l'a relevé comme remarque d'inventaire, sans en faire un motif ; le lecteur, lui, voit trois
+  lignes voisines.
+- **Aucune réception francophone n'existe sur la carte Freeman**, cherchée deux fois avec des
+  termes différents.
+- L'`app_author_id` de Freeman est nul **à dessein** : `freeman` désigne dans l'application
+  John Freeman, l'écologie des populations, qui est un autre homme que Richard B. Freeman.
+
+Trois candidats du thème ont été écartés faute de source primaire ouvrable, et non pour un
+motif de périmètre : le silence organisationnel (Morrison et Milliken, 2000), le whistleblowing
+(Near et Miceli, 1985) et le modèle EVLN (Farrell, 1983). Aucune fiche n'a été ouverte pour
+eux ; leur état d'accès est consigné dans la cartographie du thème. **Farrell 1983 est le
+concept le plus proche de ce thème qui reste sans carte.**
+
+Reste enfin une décision de produit, qui n'est pas documentaire : les trois fiches
+d'échafaudage `exit`, `voice` et `loyalty` de `src/content/fixtures/concepts.fixture.ts`
+enseignent les trois options équivalentes que le rang 6 déclare fausses, et que les deux
+nouvelles cartes contredisent. Elles ne sortent jamais en production, et ne partagent pas les
+identifiants des cartes projetées, si bien que rien ne les a périmées.
 
 ## Le candidat qui doit rester sans carte
 

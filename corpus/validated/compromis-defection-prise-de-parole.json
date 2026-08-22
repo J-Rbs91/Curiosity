@@ -1,0 +1,97 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "compromis-defection-prise-de-parole",
+  "slug": "compromis-defection-prise-de-parole",
+  "status": "VALIDATED",
+  "title": "Compromis entre défection et prise de parole",
+  "themes": ["reaction-insatisfaction"],
+  "theme_labels": {
+    "reaction-insatisfaction": "Réaction à l'insatisfaction (Exit/Voice/Loyalty)"
+  },
+  "authors": [
+    {
+      "name": "Richard B. Freeman",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Le couple défection / prise de parole est d'Albert O. Hirschman, que Freeman cite dès son résumé. Ce qui revient à Freeman est de l'appliquer au syndicat et d'en éprouver le compromis dans l'entreprise, sur données individuelles.",
+  "hook": "Un salarié mécontent part-il moins s'il a, dans l'entreprise, où se plaindre ?",
+  "summary": "Là où le syndicat offre griefs et négociation pour dire l'insatisfaction, le salarié démissionne moins : faute de mesure directe, Freeman ne le prouve que par défaut.",
+  "quotation": {
+    "text": "the grievance and arbitration system […] offers dissatisfied workers who are considering quitting an alternative means of expressing discontent […]",
+    "reference": "Richard B. Freeman, « The Exit-Voice Tradeoff in the Labor Market: Unionism, Job Tenure, Quits, and Separations », The Quarterly Journal of Economics, vol. 94, n° 4, juin 1980, p. 643-673.",
+    "locator": "p. 645, section I",
+    "language": "en",
+    "original_text": null,
+    "original_language": null,
+    "translation": {
+      "kind": "none",
+      "translator": null,
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "Richard B. Freeman, « The Exit-Voice Tradeoff in the Labor Market: Unionism, Job Tenure, Quits, and Separations », The Quarterly Journal of Economics, vol. 94, n° 4, juin 1980, p. 643-673 ; reproduction NBER, WP n° 0242.",
+      "kind": "primary",
+      "locator": "p. 643-673",
+      "doi_isbn": "10.3386/w0242",
+      "url": "https://www.nber.org/system/files/working_papers/w0242/w0242.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Richard B. Freeman, « The Exit-Voice Tradeoff in the Labor Market: Unionism, Job Tenure, Quits, and Separations », The Quarterly Journal of Economics, vol. 94, n° 4, juin 1980, p. 643-673 : édition de revue.",
+      "kind": "primary",
+      "locator": "p. 643-673",
+      "doi_isbn": "10.2307/1885662",
+      "url": "https://doi.org/10.2307/1885662",
+      "consulted": "metadata-only"
+    },
+    {
+      "label": "National Bureau of Economic Research, notice du Working Paper n° 0242, reproduction autorisée du texte publié dans The Quarterly Journal of Economics en juin 1980.",
+      "kind": "primary",
+      "locator": null,
+      "doi_isbn": "10.3386/w0242",
+      "url": "https://www.nber.org/papers/w0242",
+      "consulted": "metadata-only"
+    },
+    {
+      "label": "Matthew M. C. Allen et Heinz-Josef Tüselmann, « All powerful voice? The need to include \"exit\", \"loyalty\" and \"neglect\" in empirical studies too », Employee Relations, vol. 31, n° 5, 2009, p. 538-552.",
+      "kind": "secondary-academic",
+      "locator": "p. 538-552",
+      "doi_isbn": "10.1108/01425450910979275",
+      "url": "https://pure.manchester.ac.uk/ws/files/23180401/POST-PEER-REVIEW-PUBLISHERS.PDF",
+      "consulted": "partial"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle",
+    "date": "2026-08-22",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "TEXTE OUVERT — https://www.nber.org/system/files/working_papers/w0242/w0242.pdf (téléchargé, 31 pages physiques). Ce PDF n'est pas un preprint : c'est le fac-similé photographique de l'article publié, avec les têtes de page imprimées « 644 QUARTERLY JOURNAL OF ECONOMICS », « THE EXIT-VOICE TRADEOFF IN THE LABOR MARKET 645 », etc., de la p. 643 (physique 1) à la p. 673 (physique 31), et la ligne de copyright en pied de première page : « 1980 by the President and Fellows of Harvard College. Published by John Wiley & Sons, Inc. The Quarterly Journal of Economics, June 1980 0033-5533/80/0094-0643$03.10 / Reproduced by Permission of John Wiley & Sons, Inc. » La pagination de revue portée par la fiche est donc lisible dans la source réellement consultée.",
+      "CITATION (Q2) — page physique 3 = page imprimée 645, section « I. UNIONISM AND EXIT BEHAVIOR ». La couche OCR du fac-similé est fautive (« grieL'-ance », « .system ») ; j'ai donc extrait l'image de page (pypdf, image I0.png, 1650x2556) et lu le passage sur l'image : « Perhaps the most important such institution is the grievance and arbitration system, which offers dissatisfied workers who are considering quitting an alternative means of expressing discontent and possibly changing work conditions. » (« grievance and arbitration system » en italique dans l'original). La citation de la fiche restitue ces mots exactement ; les deux coupes sont signalées par […] — la première remplace « , which », la seconde retire « and possibly changing work conditions ». Localisation p. 645, section I : exacte. Pas de traduction à déclarer (langue en, original_text à null : cohérent).",
+      "ATTRIBUTION (Q1) — vérifiée sur le texte lui-même, p. 643 : « In the exit-voice model of the social system [Hirschman, 1970, 1976] individuals react… » et « While little attention is paid to the labor market in Hirschman's book [1970], the exit-voice dichotomy provides a potentially fruitful framework for analyzing… the trade union. » La bibliographie p. 672 porte Hirschman, Exit, Voice, and Loyalty, Harvard University Press, 1970. La note d'attribution de la fiche (couple d'Hirschman, application au syndicat et test sur données individuelles à Freeman) est donc exacte, y compris le « cite dès son résumé » : le résumé de la p. 643 dit bien « in the context of Hirschman's exit-voice dichotomy ». Antériorité vérifiée : Freeman avait déjà exposé l'argument dans « Individual Mobility and Union Voice in the Labor Market », American Economic Review, 66-2, 1976, p. 361-368 (OpenAlex W1483289005), qu'il cite lui-même — c'est encore Freeman, aucun tiers ne s'interpose.",
+      "SOURCES (Q3) — les quatre références résolvent. (a) 10.2307/1885662 : Crossref donne titre exact avec « and Separations », Freeman, The Quarterly Journal of Economics, volume 94, issue 4, published-print 1980-06, page 643 (Crossref ne stocke que la page de début ; la fin 673 est confirmée par le fac-similé et par la notice NBER). (b) 10.3386/w0242 : Crossref et OpenAlex rendent un enregistrement de type « report », NBER, intitulé « The Exit-Voice Tradeoff in the Labor Market: Unionism, Job Tenure, Quits » — sans « and Separations » — published-online 1980-11, sans volume ni pagination. La fiche annonce précisément cet objet comme « reproduction NBER, WP n° 0242 » d'un article de revue : l'écart de titre et de date porte sur la notice du working paper, pas sur ce que la fiche affirme, et la page https://www.nber.org/papers/w0242 porte elle-même « Published as \"…Quits, and Separations\", QJE Vol. XCIV, No. 4 (June 1980), pp. 643-673 ». (c) Allen & Tüselmann : PDF ouvert (pure.manchester.ac.uk/ws/files/23180401), version éditeur, mention de page « Employee Relations Vol. 31 No. 5, 2009, pp. 538-552, DOI 10.1108/01425450910979275 » ; Crossref confirme volume 31, issue 5, pages 538-552, 2009, Emerald. Auteurs conformes.",
+      "SOURCES — remarque d'inventaire, non retenue comme motif : trois des quatre entrées « primary » portent sur un seul et même texte (l'article de QJE, son fac-similé NBER, la notice NBER), et deux d'entre elles partagent le même DOI 10.3386/w0242 avec des états de consultation différents (full-text pour le PDF, metadata-only pour la notice). Chacune résout vers ce qu'elle annonce et remplit un rôle distinct (texte lu / notice d'édition de revue / attestation de reproduction autorisée), donc rien ne manque au lecteur ; l'unique effet à surveiller est qu'un lecteur pressé compte trois appuis là où il y a un article.",
+      "PROSE (Q4) — chaque mot porteur trouve sa phrase. « le syndicat offre griefs et négociation » : p. 645-646, section I, « the grievance and arbitration system » puis « The regular process of collective negotiation of labor contracts can also be expected to reduce exit behavior ». « le salarié démissionne moins » : résumé p. 643, « significantly lower exit for unionists in several large data tapes », et p. 666, « unionism raises tenure and reduces quits » avec compensation tenue fixe. « faute de mesure directe … ne le prouve que par défaut » : c'est la phrase même de Freeman, p. 666, ouverture de la section IV — « Because of the lack of a direct measure of \"voice\" components of unionism, however, the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis. » Le hook (« part-il moins s'il a, dans l'entreprise, où se plaindre ? ») est interrogatif et n'affirme rien au-delà de l'hypothèse que Freeman teste ; « dans l'entreprise » est couvert par la comparaison Sargent & Clawson reprise p. 670 (hôpitaux avec / sans procédure écrite de griefs : taux de séparation 0,50 contre 0,81).",
+      "PROSE — nuance versée en note, sans conséquence sur le verdict : après la phrase de la p. 666, Freeman produit tout de même trois éléments directs (Tableau VI, taux de démission par niveau de satisfaction ; Tableau VII, effet de l'étendue des clauses de griefs BLS sur l'ancienneté ; Sargent & Clawson), qu'il qualifie lui-même de « no more than suggestive » (p. 669) et « suggestive rather than definitive » (p. 670), et conclut « finds some support for the hypothesis » (p. 666). Le « par défaut » du summary reste donc dans ce que la source porte ; une version future pourrait sans dommage mentionner ces appuis suggestifs.",
+      "NON ATTEINT, déclaré comme tel — l'édition de revue elle-même (academic.oup.com, vers où redirige 10.2307/1885662) renvoie 403 à toute requête : je ne l'ai pas ouverte et je n'ai pas cherché à contourner ce refus. Le verbatim n'est donc pas établi sur l'exemplaire OUP/JSTOR mais sur le fac-similé NBER de l'impression QJE, qui porte la même pagination et la mention de reproduction autorisée. Aucune base n'a été en échec sur les résolutions de DOI (champ failures vide pour les trois DOI interrogés)."
+    ]
+  },
+  "notes": [
+    "Note d'attribution complète de la lecture primaire, dont la ligne affichée est la version courte : « Richard B. Freeman signe seul l'article, affilié à Harvard University. Le couple sortie/prise de parole n'est pas de lui et il ne le revendique pas : il l'attribue en toutes lettres à Albert O. Hirschman dès la première ligne du résumé, “in the context of Hirschman's exit-voice dichotomy”, et renvoie en références à Exit, Voice, and Loyalty (Harvard University Press, 1970) ainsi qu'à un texte de Hirschman de 1976. Ce que Freeman pose comme sa contribution propre est ailleurs : appliquer ce modèle au syndicat, tenu pour l'institution de voix de l'entreprise, et en tester le compromis sur données individuelles, terrain que Hirschman avait laissé de côté selon lui, “little attention is paid to the labor market in Hirschman's book”. La carte attribue donc à Freeman l'application et la mise à l'épreuve du compromis dans l'entreprise, pas la paternité du modèle. »",
+    "Localisation matérielle de la citation, retirée du champ affiché : p. 645 = page physique 3 du PDF NBER w0242 (règle vérifiée sur les titres courants, page imprimée = page physique + 642). La page 645 a été rendue en image et la phrase relue caractère par caractère, la couche OCR du fac-similé étant fautive.",
+    "Coupes de la citation : la première remplace « , which », la seconde supprime « and possibly changing work conditions ». Phrase entière, p. 645 : « Perhaps the most important such institution is the grievance and arbitration system, which offers dissatisfied workers who are considering quitting an alternative means of expressing discontent and possibly changing work conditions. » (232 caractères, hors format). L'italique de « grievance and arbitration system » n'est pas conservée.",
+    "Le verbatim se localise sur la reproduction autorisée diffusée par le NBER, seule version ouverte : la mention « Reproduced by Permission of John Wiley & Sons, Inc. » figure au bas de la page imprimée 643. L'édition de revue (doi 10.2307/1885662) n'a pas été ouverte et n'est affichée qu'en metadata-only.",
+    "Périmètre tenu par la carte : le dispositif interne à l'entreprise, sections I (p. 645-648 : système de griefs et d'arbitrage, négociation collective comme canal d'expression, « industrial jurisprudence system », voix comme canal d'autorité parallèle dans la firme) et IV (p. 666-669 : effet plus fort du syndicat sur les insatisfaits, portée des clauses de griefs, hôpitaux avec et sans procédure écrite). Les sections II et III (p. 648-666) relèvent de l'économie du travail et servent à neutraliser la voie salariale ; la carte ne s'y appuie pas.",
+    "Freeman limite lui-même la portée de sa démonstration, et le résumé ne la durcit pas : « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666) ; séparer proprement l'effet de voix des autres composantes du fait syndical est « exceedingly difficult » (p. 644).",
+    "Allen et Tüselmann 2009, déclarée « partial » par CETTE lecture (résumé, introduction et recherche sur le texte intégral extrait) : cet article discute le triptyque de Hirschman et Freeman et Medoff, What Do Unions Do? (1984), mais ne cite nulle part l'article de 1980. Ce n'est donc pas une réception directe de ce texte.",
+    "Aucune littérature francophone discutant ce texte n'est remontée dans la lecture primaire : absence constatée sur des bases qui ont répondu, non vide de base. Whitford et Lee 2014 n'a pas été rouvert ; What Do Unions Do? n'a pas été ouvert."
+  ]
+}

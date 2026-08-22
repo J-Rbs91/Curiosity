@@ -290,6 +290,50 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "compromis-defection-prise-de-parole",
+    "slug": "compromis-defection-prise-de-parole",
+    "title": "Compromis entre défection et prise de parole",
+    "authorLabel": "Richard B. Freeman",
+    "hookQuestion": "Un salarié mécontent part-il moins s'il a, dans l'entreprise, où se plaindre ?",
+    "shortExplanation": "Là où le syndicat offre griefs et négociation pour dire l'insatisfaction, le salarié démissionne moins : faute de mesure directe, Freeman ne le prouve que par défaut.",
+    "authors": [],
+    "themes": [
+      "reaction-insatisfaction"
+    ],
+    "themeLabel": "Réaction à l'insatisfaction (Exit/Voice/Loyalty)",
+    "attributionNote": "Le couple défection / prise de parole est d'Albert O. Hirschman, que Freeman cite dès son résumé. Ce qui revient à Freeman est de l'appliquer au syndicat et d'en éprouver le compromis dans l'entreprise, sur données individuelles.",
+    "quotation": {
+      "text": "the grievance and arbitration system […] offers dissatisfied workers who are considering quitting an alternative means of expressing discontent […]",
+      "reference": "Richard B. Freeman, « The Exit-Voice Tradeoff in the Labor Market: Unionism, Job Tenure, Quits, and Separations », The Quarterly Journal of Economics, vol. 94, n° 4, juin 1980, p. 643-673, p. 645, section I"
+    },
+    "sources": [
+      {
+        "label": "Richard B. Freeman, « The Exit-Voice Tradeoff in the Labor Market: Unionism, Job Tenure, Quits, and Separations », The Quarterly Journal of Economics, vol. 94, n° 4, juin 1980, p. 643-673 ; reproduction NBER, WP n° 0242.",
+        "kind": "primary",
+        "reference": "10.3386/w0242",
+        "url": "https://www.nber.org/system/files/working_papers/w0242/w0242.pdf"
+      },
+      {
+        "label": "Richard B. Freeman, « The Exit-Voice Tradeoff in the Labor Market: Unionism, Job Tenure, Quits, and Separations », The Quarterly Journal of Economics, vol. 94, n° 4, juin 1980, p. 643-673 : édition de revue.",
+        "kind": "primary",
+        "reference": "10.2307/1885662",
+        "url": "https://doi.org/10.2307/1885662"
+      },
+      {
+        "label": "National Bureau of Economic Research, notice du Working Paper n° 0242, reproduction autorisée du texte publié dans The Quarterly Journal of Economics en juin 1980.",
+        "kind": "primary",
+        "reference": "10.3386/w0242",
+        "url": "https://www.nber.org/papers/w0242"
+      },
+      {
+        "label": "Matthew M. C. Allen et Heinz-Josef Tüselmann, « All powerful voice? The need to include \"exit\", \"loyalty\" and \"neglect\" in empirical studies too », Employee Relations, vol. 31, n° 5, 2009, p. 538-552.",
+        "kind": "secondary-academic",
+        "reference": "10.1108/01425450910979275",
+        "url": "https://pure.manchester.ac.uk/ws/files/23180401/POST-PEER-REVIEW-PUBLISHERS.PDF"
+      }
+    ]
+  },
+  {
     "id": "conception-ecologique-interface",
     "slug": "conception-ecologique-interface",
     "title": "Conception écologique d'interface",
@@ -817,6 +861,51 @@ export const generatedConcepts: Concept[] = [
         "kind": "primary",
         "reference": "§ 45 · 10.4000/activites.1149",
         "url": "https://journals.openedition.org/activites/1149"
+      }
+    ]
+  },
+  {
+    "id": "exit-voice-loyalty",
+    "slug": "exit-voice-loyalty",
+    "title": "Défection, prise de parole et loyauté",
+    "authorLabel": "Albert O. Hirschman",
+    "hookQuestion": "Quand une organisation se dégrade, qu'apprend-elle de qui part et de qui proteste ?",
+    "shortExplanation": "Face à la dégradation, un membre part ou se plaint : deux réactions qui alertent l'organisation, se contrecarrent, et que la loyauté rend possibles et retarde.",
+    "authors": [
+      "hirschman"
+    ],
+    "themes": [
+      "reaction-insatisfaction"
+    ],
+    "themeLabel": "Réaction à l'insatisfaction (Exit/Voice/Loyalty)",
+    "attributionNote": "Le modèle est d'Albert O. Hirschman seul, énoncé dans son livre de 1970 Exit, Voice, and Loyalty, qui n'a pas été ouvert ici. Les deux textes lus sont des reprises de sa propre main, un essai de 1992 et un entretien de 1995 dont les intervieweurs ne sont pas les auteurs du concept.",
+    "quotation": {
+      "text": "la loyauté est à mes yeux le phénomène à partir duquel se développe la possibilité même d'avoir recours à la prise de parole ou à la défection",
+      "reference": "Albert O. Hirschman, « Vertus et limites de la prise de parole. Un entretien avec Albert Hirschman », entretien recueilli par Dominique Cardon, Jean-Philippe Heurtin et Cyril Lemieux, Politix, vol. 8, n° 31, 1995, p. 20 à 29, p. 22"
+    },
+    "sources": [
+      {
+        "label": "Albert O. Hirschman, « Vertus et limites de la prise de parole. Un entretien avec Albert Hirschman », entretien recueilli par D. Cardon, J.-P. Heurtin et C. Lemieux, Politix, vol. 8, n° 31, 1995, p. 20-29.",
+        "kind": "primary",
+        "url": "https://www.persee.fr/doc/polix_0295-2319_1995_num_8_31_1917"
+      },
+      {
+        "label": "Albert O. Hirschman, « Défection, prise de parole et destin de la République démocratique allemande. Essai d'une histoire conceptuelle », Allemagne d'aujourd'hui, n° 121, juillet-septembre 1992, p. 8-19.",
+        "kind": "primary",
+        "reference": "10.3406/alauj.1992.3170",
+        "url": "https://www.persee.fr/doc/alauj_0002-5712_1992_num_121_1_3170"
+      },
+      {
+        "label": "Vincent Frigant, « Une lecture hirschmanienne de la coordination : le loyalisme dans les systèmes productifs territorialisés », Revue d'économie régionale et urbaine, n° 5, 2001, p. 743-762.",
+        "kind": "francophone-reception",
+        "reference": "hal-00671624",
+        "url": "https://hal.science/hal-00671624/document"
+      },
+      {
+        "label": "Matthew M. C. Allen et Heinz-Josef Tüselmann, « All powerful voice? The need to include \"exit\", \"loyalty\" and \"neglect\" in empirical studies too », Employee Relations, vol. 31, n° 5, 2009, p. 538-552.",
+        "kind": "secondary-academic",
+        "reference": "10.1108/01425450910979275",
+        "url": "https://pure.manchester.ac.uk/ws/files/23180401/POST-PEER-REVIEW-PUBLISHERS.PDF"
       }
     ]
   },
