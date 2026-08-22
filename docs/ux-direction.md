@@ -255,18 +255,35 @@ en bas de casse, l'œil serait plus petit que les hampes qui l'entourent et disp
 
 ### Le regard
 
-Il y a **deux partitions**, et il n'y en aura pas de troisième. Elles partagent le dessin,
-l'orbite et les fixations ; ce qui les sépare est le **temps**, et c'est la seule chose qui
-décide si un œil cherche ou s'il attend.
+Il y a **trois partitions**. Les deux premières partagent le dessin, l'orbite et les fixations ;
+ce qui les sépare est le **temps**, et c'est la seule chose qui décide si un œil cherche ou s'il
+attend.
 
-| | `scanning` — l'ouverture | `waiting` — le titre d'Explorer |
-|---|---|---|
-| Durée | 4 800 ms | 7 200 ms |
-| Saccades | 8 | 4 |
-| Fixations | 6, de 240 à 264 ms | 3, de 864 à 1 656 ms |
-| Clignements | 3, dont un double rapide | 2, tous deux lents |
-| Pause entre deux passages | 2,34 à 5,67 s | 4,68 à 9,36 s |
-| Part du temps où quelque chose bouge, pause moyenne comprise | 24,7 % | 16,7 % |
+La troisième est arrivée après, et il faut dire pourquoi, parce que ce paragraphe annonçait
+qu'il n'y en aurait pas. Ce qui l'a autorisée n'est pas un besoin de variété : c'est qu'un
+écran d'attente est apparu — celui d'« Approfondir », §6 —, que cet écran affiche un mot, et
+qu'aucune des deux partitions existantes ne sait faire ce qu'il demande. `scanning` et
+`waiting` regardent **autour** d'elles ; lire, c'est regarder **le long** de quelque chose.
+C'est la seule partition dont la géométrie diffère, et c'est ce qui prouve qu'elle n'est pas
+un doublon des deux autres. La règle qui tenait le nombre à deux n'était pas « deux », elle
+était « une partition par chose à dire » — elle tient toujours, et il y a maintenant trois
+choses à dire.
+
+| | `scanning` — l'ouverture | `waiting` — le titre d'Explorer | `reading` — l'attente d'« Approfondir » |
+|---|---|---|---|
+| Durée | 4 800 ms | 7 200 ms | 2 200 à 3 230 ms, tirée au sort |
+| Saccades | 8 | 4 | 5, dont le retour |
+| Fixations | 6, de 240 à 264 ms | 3, de 864 à 1 656 ms | 4, de 286 à 549 ms |
+| Clignements | 3, dont un double rapide | 2, tous deux lents | 2, un par bout |
+| Pause entre deux passages | 2,34 à 5,67 s | 4,68 à 9,36 s | sans objet — elle ne boucle pas |
+| Part du temps où quelque chose bouge, pause moyenne comprise | 24,7 % | 16,7 % | 100 % d'un écran qu'on traverse une fois |
+
+**Ce que la dernière colonne dit, et pourquoi elle ne se compare pas aux deux autres.** Les deux
+premières sont des boucles sur des surfaces qui restent ; leur dépense se mesure en fréquence,
+et c'est le dernier chiffre de la table. La troisième joue une fois, occupe une attente, et
+disparaît avec elle. Sa dépense ne se mesure donc pas en fréquence mais en **retenue** : elle
+est la seule animation du produit qui fasse attendre quelque chose. Ce coût-là est instruit au
+§6 et borné au §7.
 
 **Pourquoi la seconde n'est pas la première rejouée.** C'était le geste facile, et il aurait dit
 le contraire de l'écran. Un œil qui visite six positions en 4,8 secondes **cherche quelque
@@ -341,10 +358,50 @@ ses pas.
 | Fixations | 3, sur le flanc gauche | 1 368 ms, 1 656 et 864 |
 | Clignements lents | 2 — au creux de la fixation latérale, puis sur le repos final | 288 ms de chute, 360 clos, 432 de relevé |
 
-Le retour au repos est la seule saccade plus lente que les autres, dans les deux partitions comme
-dans un œil réel : revenir sur ce qu'on regardait est un mouvement décidé, pas un mouvement
+Le retour au repos est la seule saccade plus lente que les autres, dans les trois partitions
+comme dans un œil réel : revenir sur ce qu'on regardait est un mouvement décidé, pas un mouvement
 attiré. Le double clignement rapide de l'ouverture n'a rien à faire ici — il articulait deux
 regards, et il n'y en a qu'un.
+
+#### `reading` — le regard qui lit
+
+Quatre fixations sur une ligne, de gauche à droite, la dernière sur les points de suspension.
+Puis le regard revient au centre : le mot est lu.
+
+| Ce qui se joue | Combien | Durée unitaire |
+|---|---|---|
+| Saccades | 5, toutes vers la droite sauf le retour | 66 ms, et 88 pour le retour au repos |
+| Fixations | 4, alignées sous le centre | 330 ms, 286, 286 et 374 sur les points |
+| Clignements | 2, l'un avant le premier mot, l'autre après le dernier | 176 ms à l'entrée, 242 à la sortie |
+
+*Valeurs au plancher du tirage. Au plafond, tout s'allonge de moitié — voir plus bas.*
+
+**C'est la seule partition dont la géométrie diffère, et c'est ce qu'elle a à dire.** Ses quatre
+fixations ne sont pas sur l'orbite : elles sont alignées, à ordonnée constante et **sous** le
+centre. Une ligne de texte est droite, et elle est écrite sous l'œil. Poser ces fixations sur
+l'orbite aurait fait monter et redescendre un regard qui suit une ligne, c'est-à-dire le
+mouvement d'un œil qui cherche où lire, pas d'un œil qui lit.
+
+**Aucun retour en arrière.** Une régression — revenir sur un mot — est ce que fait un lecteur
+qui n'a pas compris, et cet écran dit le contraire : le texte arrive, la lecture aboutit. Le
+seul déplacement vers la gauche est le retour au repos, qui n'est pas une fixation mais la fin
+de la lecture.
+
+**Les clignements encadrent la lecture au lieu de la ponctuer.** Un lecteur ne cligne pas au
+milieu d'une ligne ; il cligne avant de s'y mettre et une fois arrivé au bout. Le second est
+plus lent à se relever qu'à tomber, et il finit à 99 % de la partition : la paupière achève de
+remonter à l'instant où le texte s'affiche. C'est ce qui fait que l'attente **se termine** au
+lieu de s'interrompre.
+
+**La durée est tirée au sort, et la partition ne le sait pas.** L'attente vaut de 2 200 à
+3 230 ms selon l'appui ; c'est cette durée qui devient celle de l'animation. Les pourcentages
+ne connaissent pas la durée qu'ils découpent, si bien que la lecture tombe juste quelle que
+soit la valeur tirée, sans qu'aucune image clé soit recalculée. Un point de partition vaut donc
+22 ms au plancher et 32,3 au plafond : ce sont les **arrêts** qui absorbent l'étirement — les
+fixations passent de 286-374 à 420-549 ms — pendant que les saccades restent des sauts, de 66
+à 97 ms. C'est la même règle qu'aux deux autres partitions : ralentir une saccade ne calme pas
+un regard, elle cesse d'être un saut et la pupille se met à flotter. C'est aussi ce qui borne
+le tirage à une fois et demie son plancher ; au double, la partition se déformerait.
 
 **Les amplitudes ne changent pas d'une partition à l'autre**, et c'est délibéré : l'orbite est
 la marque. Elles se trouvent déjà réduites de fait, le titre d'Explorer rendant la marque à
@@ -374,23 +431,29 @@ chacune corrige un défaut constaté à l'arrêt sur image :
   108 ms plutôt qu'une bascule. Fermé, le O est un disque d'encre pleine : le seuil opposable
   est de trois clignements par seconde, on en compte un peu plus de deux, et ce qu'on voit est
   un bord qui descend. `waiting` est trois fois plus large sur les trois valeurs, et ses deux
-  clignements sont séparés de plus de trois secondes ; le contrôle porte sur les deux partitions
-  sans distinction, parce que c'est celle qu'on écrira ensuite qui en aura besoin.
+  clignements sont séparés de plus de trois secondes ; le contrôle porte sur toutes les
+  partitions sans distinction, parce que c'est celle qu'on écrira ensuite qui en aura besoin —
+  et c'est exactement ce qui est arrivé à `reading`, qui est la plus courte des trois et donc
+  la plus serrée.
 
 Ces trois valeurs sont des tokens de géométrie, et `npm test` vérifie la couverture de la
 contre-forme aux deux extrêmes, dans les deux graisses, sur toute sa largeur.
 
 **En mouvement réduit, la pupille est au centre, la paupière est relevée, et rien ne se
-relance.** Aucune des deux séquences n'existe, donc aucune fin de séquence n'est annoncée et la
-pause ne s'arme jamais — le repli n'est pas neutralisé après coup, il est l'état de repos. La
-marque n'y perd rien : elle ne porte aucune information par son mouvement.
+relance.** Aucune séquence n'existe, donc aucune fin de séquence n'est annoncée et la pause ne
+s'arme jamais — le repli n'est pas neutralisé après coup, il est l'état de repos. La marque n'y
+perd rien : elle ne porte aucune information par son mouvement. `reading` va plus loin, parce
+qu'elle est la seule à retenir quelque chose : en mouvement réduit, l'attente qu'elle occupait
+n'a pas lieu du tout — voir le §6.
 
 **Le nom de la partition est ce qui la choisit, et il n'y a pas de booléen.** `Mark` reçoit
-`gaze="scanning"`, `gaze="waiting"`, ou rien — auquel cas la marque est immobile. Un `animate`
-vrai ou faux ne saurait pas dire laquelle des deux, il faudrait une seconde propriété pour le
-préciser, et l'on pourrait alors demander une séquence sans l'animer. Les deux mots, eux, gardent
-un `animate` booléen : **laquelle** jouer appartient au mot et se lit à côté de ses autres cotes,
-**si** elle joue appartient à l'écran et se paie sur le budget du §7.
+`gaze="scanning"`, `gaze="waiting"`, `gaze="reading"`, ou rien — auquel cas la marque est
+immobile. Un `animate` vrai ou faux ne saurait pas dire laquelle, il faudrait une seconde
+propriété pour le préciser, et l'on pourrait alors demander une séquence sans l'animer. C'est
+cette forme qui a permis d'ajouter la troisième sans toucher à rien : le composant nomme, la
+feuille de style joue. Les deux mots, eux, gardent un `animate` booléen : **laquelle** jouer
+appartient au mot et se lit à côté de ses autres cotes, **si** elle joue appartient à l'écran et
+se paie sur le budget du §7.
 
 ### Où elle se montre, et où elle ne se montre pas
 
@@ -398,13 +461,21 @@ un `animate` booléen : **laquelle** jouer appartient au mot et se lit à côté
 |---|---|
 | Écran d'ouverture | Le mot entier, et `scanning` y joue |
 | En-tête d'Explorer | Le seul o du titre, et `waiting` y joue |
+| Attente d'« Approfondir » | L'œil seul, au-dessus du mot qu'il lit, et `reading` y joue |
 | Onglet du navigateur, écran d'accueil, feuille de partage | L'œil seul, immobile |
 | README, page de dépôt | `mark.svg`, ou `mark-animated.svg` qui joue `scanning` une fois, sans boucler |
 
 **Il n'y a toujours pas d'en-tête permanent avec une signature.** Le §5 dit ce qu'un écran a le
 droit de porter, et un logo n'y figure pas : il n'apprendrait rien à quelqu'un qui est déjà
 entré. Le o d'Explorer n'en est pas un — c'est une lettre du titre, pas le nom du produit posé à
-côté. La marque, elle, se montre au seuil et nulle part après.
+côté.
+
+**Le troisième endroit n'en est pas un non plus, et c'est le seul où l'œil soit seul et vivant.**
+Sur l'écran d'attente, la marque n'est pas là comme signature : elle est là comme **sujet**. Ce
+qu'on regarde n'est pas qu'elle existe, c'est ce qu'elle fait — elle lit le mot posé sous elle.
+Un logo dit qui édite l'écran ; celui-ci dit ce que l'écran est en train de faire, et il
+disparaît avec l'attente qu'il occupe. La règle du §5 tient donc : aucun écran de contenu ne
+porte de marque, et celui-ci n'est pas un écran de contenu — c'est un seuil, comme l'ouverture.
 
 **Le dessin s'ajuste à la lettre qu'il remplace, et les cotes se relèvent, elles ne se
 choisissent pas.** Trois valeurs en em : la hauteur de l'encre du glyphe, ce qu'elle descend sous
@@ -453,6 +524,13 @@ dans aucune fixation et dans les deux graisses, que l'anneau reste visible à 16
 chaque fixation de la géométrie est bien celle que la feuille de style réclame. Ce dernier
 contrôle existe parce que la panne est arrivée : une propriété personnalisée qui ne résout
 rien ne produit pas d'erreur, elle produit une animation qui tourne sans que rien ne bouge.
+
+Il vérifie aussi ce qui sépare les partitions, parce que c'est ce qu'une retouche fait
+disparaître en premier : que `waiting` tienne ses fixations plus longtemps que `scanning` ne
+l'ait jamais fait et ne revienne jamais sur ses pas, et que `reading` garde les siennes sur une
+ligne, sous le centre, sans régression, avec un rythme qui reste entre les deux autres. Ces
+contrôles portent sur l'écart lui-même et non sur des valeurs : c'est l'écart qui fait qu'un
+regard cherche, attend ou lit.
 
 ---
 
@@ -658,6 +736,54 @@ même contrôle que le reste — les volumes, l'absence de balisage, l'interdict
 cadratin, les titres qui ne peuvent pas étiqueter un palier de difficulté, et un champ
 `limits` qui doit nommer ce qui manque plutôt que de multiplier les précautions.
 
+### L'attente qui précède le texte
+
+Entre l'appui et le texte, l'écran affiche l'œil de la marque au-dessus du mot « Chargement… »,
+et l'œil lit ce mot. Cela dure de **2 200 à 3 230 ms**, tiré au sort à chaque appui.
+
+**Cette attente est fabriquée, et il faut le dire avant tout le reste.** Rien ne charge. Le texte
+est dans le bundle, il a été projeté à la construction, et il serait à l'écran en une image. La
+seule chose qui se passe pendant ces trois secondes est que l'œil lit un mot. C'est la première
+fois que ce produit fait attendre quelqu'un, et c'est la seule ; le §7 en fait une dépense
+nommée plutôt qu'une facilité qui pourrait se reproduire ailleurs.
+
+**Ce qu'elle achète.** Un seuil, du même ordre que celui de l'ouverture. On passe d'une carte de
+quarante mots à un texte de mille cinq cents, et sauter de l'un à l'autre d'une image à la
+suivante ne dit rien de ce qu'on vient de demander : l'écran change, mais rien ne marque qu'on a
+demandé autre chose. L'attente le marque, et elle le marque avec le seul geste que la marque
+sache faire.
+
+**Pourquoi tirée au sort plutôt que fixe.** Une durée constante s'apprend en trois appuis et
+redevient une latence : on sait quand relever les yeux, et le seuil retombe au rang de délai. Le
+tirage garde à chaque passage la part d'incertitude qui fait qu'on regarde. C'est le même motif
+que les pauses de relance du regard, et pour la même raison.
+
+**Comment la lecture tombe juste, quelle que soit la durée tirée.** Le nombre tiré part à deux
+endroits, et il n'y en a qu'un : au minuteur, qui décide quand le texte s'affiche, et à la
+partition `reading`, qui devient longue d'autant. Les images clés étant écrites en pourcentages,
+elles ne connaissent pas la durée qu'elles découpent — l'œil finit donc le mot à l'instant où le
+texte arrive, sans qu'aucune valeur soit recalculée. Ce sont les fixations qui absorbent
+l'étirement, jamais les saccades : voir `reading` au §4.
+
+**Ce que l'attente ne fait pas.**
+
+- Elle ne s'affiche **pas** devant un lien périmé. Le concept est résolu avant elle : faire
+  patienter trois secondes pour finir sur « introuvable » ajouterait une cérémonie à une panne.
+- Elle n'a **pas lieu du tout en mouvement réduit**. Elle n'existe que pour porter la lecture ;
+  sans l'animation, il n'en resterait qu'un délai devant un texte qui est prêt, c'est-à-dire la
+  seule chose qu'elle n'a jamais eu le droit d'être.
+- Elle ne **retient pas le lecteur**. La barre de navigation reste là, le geste retour du système
+  fonctionne, et l'adresse a déjà changé — on peut partir pendant l'attente.
+- Elle ne **remplace pas un squelette par un second état de chargement**. Le repli de suspension
+  de cet écran est l'écran d'attente lui-même : un seul visuel occupe la suspension puis
+  l'attente, sans que rien ne change à l'image.
+- Elle ne se **transpose nulle part ailleurs**. Le relais vers une IA, plus bas, copie et ouvre
+  sans attendre : c'est une action qui s'exécute, pas un seuil qu'on franchit.
+
+**Et le texte n'apparaît pas d'un coup au bout.** Il arrive en fondu montant, comme tout contenu
+qui entre. Sans cela, mille cinq cents mots surgiraient d'une image à l'autre au terme d'une
+cérémonie de trois secondes — le seul endroit où elle pouvait encore se rater.
+
 ### Ce que le texte fait, et ce qu'il ne fait pas
 
 Il **prolonge** la carte, il ne la répète pas. Elle était à l'écran l'instant d'avant : le
@@ -843,11 +969,13 @@ le texte écrit.
 | L'aiguille qui cherche le nord | 720 ms — quatre mouvements amortis | `--ease-out-soft` |
 | Le regard de la marque, à l'ouverture | 4 800 ms — `scanning` | `--ease-out-soft` |
 | Le regard de la marque, dans le titre d'Explorer | 7 200 ms — `waiting` | `--ease-out-soft` |
+| Le regard de la marque, pendant l'attente d'« Approfondir » | 2 200 à 3 230 ms — `reading` | `--ease-out-soft` |
 
-**La marque porte les deux seules durées à dépasser la seconde, et la seule chose qui se
-relance.** Ce ne sont pas des durées d'interface : ce sont des partitions, huit saccades et six
-fixations pour l'une, quatre et trois pour l'autre, suivies d'une pause tirée au hasard. Une
-valeur de cet ordre sur quoi que ce soit d'autre serait à refuser, et la boucle plus encore.
+**La marque porte les trois seules durées à dépasser la seconde, et les deux seules choses qui
+se relancent.** Ce ne sont pas des durées d'interface : ce sont des partitions, huit saccades et
+six fixations pour la première, quatre et trois pour la deuxième, cinq et quatre pour la
+troisième. Une valeur de cet ordre sur quoi que ce soit d'autre serait à refuser, et la boucle
+plus encore.
 
 **Et la plus longue des deux est la moins chère.** `waiting` dure une fois et demie `scanning`,
 mais elle ne contient que la moitié de ses saccades et la pause qui la suit est deux fois plus
@@ -883,13 +1011,38 @@ ensemble :
 - **Elle ne retient rien et ne dit rien.** Aucun affichage ne l'attend, aucune information n'y
   est portée, et le titre reste lisible et complet à la première image. Le jour où elle
   conditionnerait quoi que ce soit, c'est elle qu'il faudrait retirer.
-- **Elle s'arrête là.** Elle ne se déduit pas de la marque et ne se transpose à aucune autre
-  surface : deux endroits, pas trois, et aucun sous le contenu qu'on lit. Le favicon ne bouge
-  toujours pas, et une page de fiche n'aura jamais d'œil dans son titre.
+- **Elle ne se transpose pas.** Elle ne se déduit pas de la marque et ne s'étend à aucune autre
+  surface, et **aucune séquence ne joue sous le contenu qu'on lit**. Le favicon ne bouge toujours
+  pas, et une page de fiche n'aura jamais d'œil dans son titre.
 
 Le levier de retrait est d'un mot, et c'est délibéré : `<ExploreTitle animate />` sans son
 `animate` laisse le titre exactement où il est, œil ouvert et pupille au centre. C'est aussi
 l'état qu'affiche le mouvement réduit.
+
+**Le troisième endroit est l'attente d'« Approfondir », et c'est la seule animation du produit
+qui retienne quelque chose.** Ce paragraphe disait « deux endroits, pas trois » ; il en dit
+maintenant trois, et ce qui a changé n'est pas la tolérance mais la nature de l'endroit. Les
+deux premiers sont des surfaces qui portent du contenu et sur lesquelles une boucle tourne ; le
+troisième est un écran qui n'existe que le temps d'une attente, ne porte rien d'autre, et
+disparaît avec elle. La règle de fréquence ne s'y applique donc pas — il n'y a pas de retour sur
+un écran qu'on traverse. Ce qui s'y applique est une règle que le produit n'avait pas encore eu
+à écrire, et quatre bornes la tiennent :
+
+- **Elle est la seule, et elle est nommée.** Une attente fabriquée est la facilité la plus
+  contagieuse qui soit : elle rend n'importe quelle action « importante » sans rien coûter à
+  écrire. Il y en a une, sur le seul geste du produit qui change de registre de lecture, et le
+  §6 dit ce qu'elle achète. Toute autre est à refuser sans discussion — un relais qui copie, un
+  onglet qui change, une liste qui s'ouvre ne sont pas des seuils.
+- **Elle ne dépasse pas ce que la partition sait porter.** 3 230 ms au plafond, soit une fois et
+  demie le plancher : au-delà, les fixations cessent d'être des fixations et la lecture se lit
+  comme un ralenti. La durée n'est donc pas un réglage de confort, c'est ce que la lecture d'un
+  mot demande.
+- **Elle ne retient rien d'autre qu'elle-même.** La barre de navigation reste, le geste retour
+  fonctionne, l'adresse a déjà changé. On peut partir pendant l'attente, ce qui est exactement
+  ce qu'on ne peut pas faire d'un chargement réel.
+- **Elle n'a pas lieu en mouvement réduit.** C'est la borne qui compte le plus : une attente qui
+  survivrait au retrait de son animation serait un délai, et un délai ne s'assume pas — il se
+  subit. Le §6 en fait la règle.
 
 **Les deux icônes de la barre bougent, et c'est la troisième dépense assumée du produit.** Le
 livre s'ouvre quand on entre dans « Aujourd'hui » et se referme quand on en sort ; l'aiguille
@@ -977,7 +1130,11 @@ l'appui, lui, ne le dépasse pas : il est vu vingt fois par session.
 - **Aucun mouvement continu.** Rien ne pulse, ne flotte ni ne tourne au repos. Les seules
   séquences qui se relancent sont celles de la marque, à deux endroits nommés, une partition
   par endroit, et à aucun autre — voir les paragraphes ci-dessus, qui disent ce que le second
-  coûte et ce qui le borne.
+  coûte et ce qui le borne. La troisième partition ne se relance pas : elle joue une fois et
+  s'arrête avec l'attente qu'elle occupe.
+- **Aucune animation ne retient un contenu qui est prêt**, sauf celle qui est nommée ci-dessus,
+  bornée dans le temps et supprimée en mouvement réduit. C'est la règle qui empêche l'attente
+  d'« Approfondir » de faire jurisprudence.
 - **Une transition en cours n'avale pas les clics** — sans quoi un déplacement de
   560 ms serait un blocage de 560 ms.
 
@@ -1183,7 +1340,9 @@ Aucun écran n'a gagné ni perdu une information.
 | `src/components/ui/DeepenSheet.tsx` | Ce qui suit l'appui : copie faite, où coller, reprises |
 | `src/domain/concepts/sources.ts` | L'ordre de lecture des sources et le nom de leur niveau |
 | `src/components/ui/mark-geometry.mjs` | La géométrie de la marque, et elle seule |
-| `src/components/ui/Mark.tsx`, `Wordmark.tsx` | L'œil, et les deux mots qui le portent à la place d'une lettre — un par partition |
+| `src/components/ui/Mark.tsx`, `Wordmark.tsx` | L'œil, et les deux mots qui le portent à la place d'une lettre — un par partition d'orbite |
+| `src/lib/deepening-wait.ts` | Les deux bornes de l'attente d'« Approfondir » et son tirage, et rien de ce qu'elle affiche |
+| `src/components/ui/ReadingLoader.tsx` | Ce que l'attente affiche — l'œil, le mot, et leur écart |
 | `scripts/icons/build-icons.mjs` | Les neuf fichiers d'icônes, dérivés de la géométrie |
 
 Une seule implémentation par mécanisme. Deux implémentations divergent, toujours.
@@ -1197,6 +1356,14 @@ Listé plutôt que supposé :
 - Le rendu sur un téléphone d'entrée de gamme réel — les transitions ont été
   vérifiées sur Chromium de bureau uniquement. C'est le point le plus sensible
   depuis que les déplacements durent 560 ms.
+- **La durée de l'attente d'« Approfondir », à l'usage et sur plusieurs jours.** 2 200 à
+  3 230 ms est la fourchette que la lecture d'un mot demande ; ce n'est pas la même question
+  que celle de savoir si un lecteur qui ouvre trois textes de suite la trouve encore juste. La
+  partition a été regardée image par image au pilote de navigateur, l'attente a été chronométrée
+  et son absence en mouvement réduit vérifiée — mais une cérémonie ne se juge qu'à la
+  centième fois, et c'est le genre de réglage qu'on ne peut que reprendre après usage. Si elle
+  devait bouger, c'est le plafond qui bouge en premier, et la partition suit sans être
+  retouchée.
 - Le comportement sur Safari, dont l'implémentation des transitions de vue diffère.
   Sans support, le contenu se substitue instantanément et l'application reste
   fonctionnelle.

@@ -157,8 +157,9 @@ describe("cohérence entre la géométrie et la feuille de style", () => {
     );
 
   /**
-   * Ce qui est vérifié pour chacune des deux partitions, sans en nommer aucune : en ajouter une
-   * troisième la soumet à tout ce qui suit sans qu'une ligne soit à écrire.
+   * Ce qui est vérifié pour chacune des partitions, sans en nommer aucune : en ajouter une la
+   * soumet à tout ce qui suit sans qu'une ligne soit à écrire. C'est ainsi que `reading` est
+   * entrée, et c'est ce qui a fait apparaître d'un coup ses images clés manquantes.
    */
   for (const name of GAZE_SEQUENCE_NAMES) {
     const sequence = GAZE_SEQUENCES[name];
@@ -354,5 +355,87 @@ describe("ce qui distingue le regard qui attend de celui qui parcourt", () => {
       );
 
     expect(Math.min(...spans(waiting))).toBeGreaterThan(Math.max(...spans(scanning)));
+  });
+});
+/**
+ * Ce qui fait que le troisième regard lit, au lieu de chercher ou d'attendre.
+ *
+ * `reading` est la seule partition dont la géométrie diffère : ses fixations sont sur une ligne
+ * et non sur l'orbite. C'est cette propriété-là qui porte tout le sens de l'écran d'attente —
+ * un œil qui monte et descend ne lit pas, il fouille —, et c'est aussi celle qu'une retouche
+ * bien intentionnée ferait disparaître en premier, en « harmonisant » les positions avec les
+ * six autres.
+ */
+describe("ce qui fait que le regard lit", () => {
+  const { reading, scanning, waiting } = GAZE_SEQUENCES;
+
+  /** Les fixations d'une partition, hors repos, en millisecondes réelles. */
+  const fixations = (sequence: typeof scanning) =>
+    sequence.gaze
+      .filter(({ position }) => position !== "rest")
+      .map(({ from, to }) => ((to - from) / 100) * sequence.durationMs);
+
+  /** Les positions tenues hors du centre, dans l'ordre où la partition les joue. */
+  const ligne = reading.gaze
+    .filter(({ position }) => position !== "rest")
+    .map(({ position }) => GAZE[position as keyof typeof GAZE]);
+
+  it("tient toutes ses fixations sur une seule ligne", () => {
+    // Une ligne de texte est droite. Une ordonnée qui varierait ferait remonter et redescendre
+    // le regard entre deux mots, ce qui est le mouvement d'un œil qui cherche où lire, pas d'un
+    // œil qui lit.
+    expect(new Set(ligne.map(([, dy]) => dy)).size).toBe(1);
+  });
+
+  it("regarde sous lui, là où le mot est écrit", () => {
+    // L'œil est au-dessus du mot sur l'écran d'attente. Une ordonnée nulle ou négative le ferait
+    // regarder droit devant ou au-dessus, c'est-à-dire ailleurs que sur ce qu'il est censé lire.
+    for (const [, dy] of ligne) expect(dy).toBeGreaterThan(0);
+  });
+
+  it("va de gauche à droite sans jamais revenir en arrière", () => {
+    // Une régression est ce que fait un lecteur qui n'a pas compris. L'écran dit le contraire :
+    // le texte arrive, et la lecture aboutit.
+    for (let i = 1; i < ligne.length; i++) {
+      expect(ligne[i][0], `fixation ${i + 1}`).toBeGreaterThan(ligne[i - 1][0]);
+    }
+  });
+
+  it("finit le mot avant de relever les yeux", () => {
+    // La dernière fixation est la plus longue et elle est la plus à droite : c'est celle des
+    // points de suspension, le seul endroit du mot où il y ait quelque chose à attendre. Le
+    // retour au repos qui suit n'est pas une fixation de plus, c'est la fin de la lecture.
+    const tenues = reading.gaze.filter(({ position }) => position !== "rest");
+    const maintiens = tenues.map(({ from, to }) => to - from);
+    expect(maintiens.at(-1)).toBe(Math.max(...maintiens));
+    expect(reading.gaze.at(-1)?.position).toBe("rest");
+  });
+
+  it("lit plus lentement qu'il ne cherche, et plus vite qu'il n'attend", () => {
+    // La lecture a son ordre de grandeur propre, entre les deux autres. Si ses fixations
+    // rejoignaient celles de « scanning », l'écran d'attente se remettrait à fouiller ; si elles
+    // rejoignaient « waiting », le mot ne serait plus lu, il serait fixé.
+    expect(Math.min(...fixations(reading))).toBeGreaterThan(Math.max(...fixations(scanning)));
+    expect(Math.max(...fixations(reading))).toBeLessThan(Math.min(...fixations(waiting)));
+  });
+
+  it("ne cligne qu'aux deux bouts de la lecture", () => {
+    // Un lecteur ne cligne pas au milieu d'une ligne. Les deux clignements encadrent donc les
+    // quatre fixations : le premier avant la première, le second après la dernière. Le contrôle
+    // général vérifie déjà qu'aucun ne recouvre une saccade ; celui-ci vérifie qu'aucun ne tombe
+    // au milieu du mot.
+    const lecture = {
+      from: reading.gaze[1].from,
+      to: reading.gaze.at(-2)?.to as number,
+    };
+    const clignements = reading.blink.flatMap(({ position }, i) =>
+      position === "closed"
+        ? [{ from: reading.blink[i - 1].to, to: reading.blink[i + 1].from }]
+        : []
+    );
+
+    expect(clignements).toHaveLength(2);
+    expect(clignements[0].to).toBeLessThanOrEqual(lecture.from);
+    expect(clignements[1].from).toBeGreaterThanOrEqual(lecture.to);
   });
 });

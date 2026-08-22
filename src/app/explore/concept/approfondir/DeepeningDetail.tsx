@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState, useSyncExternalStore } from "react";
 import { notFound, useSearchParams } from "next/navigation";
 import { concepts } from "@/content";
 import { generatedDeepenings } from "@/content/generated/deepenings.generated";
@@ -7,8 +8,53 @@ import { ConceptSourceList } from "@/components/concept/ConceptSources";
 import { Screen } from "@/components/motion/Screen";
 import { BackLink } from "@/components/ui/BackLink";
 import { HandoffButton } from "@/components/ui/HandoffButton";
+import { ReadingLoader } from "@/components/ui/ReadingLoader";
+import { drawDeepeningWaitMs } from "@/lib/deepening-wait";
 import { espacesFrancaises } from "@/lib/typographie";
 import type { Deepening } from "@/types";
+
+/**
+ * L'attente qui précède le texte, et le seul endroit du produit qui en fabrique une.
+ *
+ * Le raisonnement — pourquoi une attente sur un texte qui est déjà là, pourquoi tirée au sort,
+ * et ce qu'elle coûte — est écrit dans `src/lib/deepening-wait.ts` et au §6 de
+ * `docs/ux-direction.md`. Ce qui suit n'en est que la mécanique.
+ *
+ * **Le tirage a lieu au premier rendu, et il n'a lieu qu'une fois.** Un nombre tiré au sort
+ * dans le corps d'un composant serait retiré à chaque rendu ; l'initialiseur d'un état ne
+ * s'exécute qu'au montage, ce qui en fait le seul endroit correct. Et il est sans danger ici
+ * alors qu'il ne le serait pas ailleurs : cet écran appelle `useSearchParams`, donc il suspend
+ * au rendu pré-généré et n'écrit jamais de HTML — il n'y a pas d'hydratation qui pourrait
+ * démentir le tirage. C'est le repli de `page.tsx` qui occupe ce moment-là.
+ *
+ * **Le minuteur et l'animation portent la même durée, et c'est la seule raison pour laquelle
+ * la lecture tombe juste.** Le nombre tiré part à deux endroits : à `setTimeout`, qui décide
+ * quand le texte s'affiche, et à la partition, qui décide combien de temps l'œil met à lire le
+ * mot. Il n'y a rien à accorder, il n'y a qu'une valeur.
+ *
+ * **En mouvement réduit, il n'y a pas d'attente du tout.** L'attente n'existe que pour porter
+ * la lecture ; sans elle, il n'en resterait qu'un délai devant un texte qui est prêt, c'est-à-
+ * dire la seule chose que cet écran n'a jamais eu le droit d'être. La préférence est lue une
+ * fois à l'ouverture de l'écran, comme le partage natif l'est dans `DeepenSheet` : c'est une
+ * propriété de l'environnement, pas un état qui change pendant qu'on regarde.
+ */
+function useDeepeningWait() {
+  const mouvementReduit = useSyncExternalStore(
+    () => () => {},
+    () => window.matchMedia("(prefers-reduced-motion: reduce)").matches,
+    () => false
+  );
+  const [dureeMs] = useState(drawDeepeningWaitMs);
+  const [ecoulee, setEcoulee] = useState(false);
+
+  useEffect(() => {
+    if (mouvementReduit) return;
+    const minuteur = window.setTimeout(() => setEcoulee(true), dureeMs);
+    return () => window.clearTimeout(minuteur);
+  }, [mouvementReduit, dureeMs]);
+
+  return { dureeMs, terminee: ecoulee || mouvementReduit };
+}
 
 /**
  * Le texte qui prolonge la carte.
@@ -35,13 +81,32 @@ export function DeepeningDetail() {
   const slug = useSearchParams().get("c");
   const concept = concepts.find((c) => c.slug === slug);
   const deepening = concept && generatedDeepenings.find((d) => d.conceptId === concept.id);
+  const attente = useDeepeningWait();
 
   /*
    * Une carte sans approfondissement n'a pas d'écran ici, et n'en reçoit pas un de
    * remplacement : le bouton qui mène ici n'existe que lorsque le texte existe, si bien qu'une
    * arrivée sans texte est une adresse saisie ou un lien périmé, pas un état du produit.
+   *
+   * Le contrôle passe **avant** l'attente, et pas seulement par commodité de code : faire
+   * patienter trois secondes devant un lien périmé pour finir sur « introuvable » ajouterait
+   * une cérémonie à une panne. On n'attend que ce qui va venir.
    */
   if (!concept || !deepening) return notFound();
+
+  /*
+   * L'attente, et le seul écran qu'elle affiche — l'œil et le mot qu'il lit. Elle est dans le
+   * même `Screen` que le texte : c'est le même écran à deux moments, pas deux écrans, et une
+   * seconde transition de vue entre les deux se lirait comme une navigation qui n'a pas eu
+   * lieu.
+   */
+  if (!attente.terminee) {
+    return (
+      <Screen>
+        <ReadingLoader durationMs={attente.dureeMs} />
+      </Screen>
+    );
+  }
 
   return (
     <Screen>
@@ -70,7 +135,15 @@ export function DeepeningDetail() {
        * ligne. L'écart des trois signes qu'elle ajoute — 52 à 55 — n'est pas ce qui
        * justifie le changement ; c'est de cesser d'avoir une largeur propre à cet écran.
        */}
-      <article className="mx-auto max-w-[32rem] px-5 pt-10 pb-12 md:max-w-read">
+      {/*
+       * `enter-rise` porte l'arrivée du texte, et il ne la porte que parce que l'attente vient
+       * de finir : à l'intérieur d'un même `Screen`, le remplacement de l'écran d'attente par
+       * l'article n'est pas une navigation et ne déclenche aucune transition de vue. Sans lui,
+       * mille cinq cents mots apparaîtraient d'une image à l'autre au terme d'une cérémonie de
+       * trois secondes, ce qui est le seul endroit où elle pouvait encore se rater. En
+       * mouvement réduit, la classe ne joue pas et le texte est simplement là.
+       */}
+      <article className="enter-rise mx-auto max-w-[32rem] px-5 pt-10 pb-12 md:max-w-read">
         {/*
          * Le repli est la fiche du concept, avec son `?c=`. Sans lui, une arrivée directe ou
          * un rechargement remonterait vers `/explore/concept` sans slug, c'est-à-dire vers

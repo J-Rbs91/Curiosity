@@ -332,7 +332,8 @@ function groundRect(size, corner) {
  *
  * **C'est la partition d'ouverture qui est gravée ici**, `scanning` — celle du O du nom. Ce
  * fichier montre la marque, et la marque se présente sur l'écran d'ouverture ; `waiting` est le
- * regard d'un titre d'écran, il n'a rien à dire sur une page de dépôt.
+ * regard d'un titre d'écran et `reading` celui d'une attente devant un mot, ni l'un ni l'autre
+ * n'a rien à dire sur une page de dépôt.
  *
  * **L'animation ne joue qu'une fois, et c'est une décision, pas un oubli.** Dans
  * l'application, la séquence se relance après une pause aléatoire, parce qu'elle y occupe un
