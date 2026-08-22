@@ -18,7 +18,7 @@ import { Screen } from "@/components/motion/Screen";
 export default function NotFound() {
   return (
     <Screen>
-      <div className="mx-auto max-w-md px-6 pt-10 pb-12 md:max-w-page">
+      <div className="column column-editorial pt-10 pb-12">
         <p className="eyebrow">Page introuvable</p>
         <h1 className="mt-2 font-serif-display text-2xl font-semibold leading-tight text-ink">
           Cette adresse ne mène nulle part.

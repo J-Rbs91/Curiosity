@@ -42,7 +42,7 @@ export default function SettingsPage() {
 
   return (
     <Screen>
-      <div className="mx-auto max-w-md px-6 pt-10 pb-12 md:max-w-read">
+      <div className="column column-read pt-10 pb-12">
         <BackLink />
 
         <h1 className="mt-4 font-serif-display text-2xl font-semibold text-ink">Réglages</h1>
