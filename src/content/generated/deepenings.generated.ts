@@ -399,6 +399,66 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "compromis-defection-prise-de-parole",
+    "lead": [
+      "Quand un client n’est plus content d’un magasin, il en change. Personne ne lui demande pourquoi, et son départ passe pour un message suffisant : c’est ainsi qu’on décrit d’ordinaire le fonctionnement d’un marché. Un salarié mécontent dispose de la même issue, la démission, mais elle lui coûte beaucoup plus cher. Il perd son ancienneté, ses collègues, parfois une partie de ce qu’il a appris là et nulle part ailleurs. Son employeur, de son côté, perd quelqu’un qu’il a formé et recommence. Et le motif du départ ne remonte à personne : une démission ne dit pas ce qui aurait pu être corrigé.",
+      "Il existe une autre issue : rester, et le dire. Celle-ci ne dépend pas seulement du caractère de chacun. Elle suppose un endroit où porter la plainte, une procédure qui l’instruise, et de quoi empêcher qu’elle se retourne contre celui qui l’a formulée. Sans cela, se plaindre revient à s’exposer, et il ne reste que partir ou se taire. Richard B. Freeman fait de cette condition le cœur d’un article de 1980 : ce qui retient un salarié n’est pas seulement ce qu’on lui paie, c’est aussi de savoir à qui parler."
+    ],
+    "sections": [
+      {
+        "title": "Partir sans rien dire, ou rester et le dire",
+        "paragraphs": [
+          "Les deux issues portent un nom, et il ne vient pas de Freeman. Albert O. Hirschman les avait opposées en 1970 dans Exit, Voice, and Loyalty : la défection, qui consiste à quitter la relation, et la prise de parole, qui consiste à rester en manifestant son désaccord. Freeman le dit dès le résumé de son article, qu’il place « in the context of Hirschman’s exit-voice dichotomy », et il renvoie au livre de 1970 dans sa bibliographie.",
+          "Ce qu’il revendique est ailleurs. Le marché du travail, remarque-t-il, tient peu de place chez Hirschman : « While little attention is paid to the labor market in Hirschman’s book ». Sa contribution propre consiste à y installer le syndicat comme l’institution qui porte la parole à l’intérieur de l’entreprise, puis à vérifier, sur les données de personnes réelles, si cette parole se paie en départs évités. Le couple n’est pas de lui ; sa mise à l’épreuve l’est."
+        ]
+      },
+      {
+        "title": "Un endroit où porter une réclamation",
+        "paragraphs": [
+          "L’institution que Freeman met au premier plan n’est pas la négociation salariale, à laquelle on pense d’abord quand on parle de syndicat. C’est ce que l’anglais appelle le « grievance and arbitration system », et les deux mots disent l’essentiel : une réclamation peut être déposée, et si elle ne se règle pas, elle est tranchée par un arbitre. Freeman écrit, page 645 : « Perhaps the most important such institution is the grievance and arbitration system, which offers dissatisfied workers who are considering quitting an alternative means of expressing discontent and possibly changing work conditions. »",
+          "Le mot qui compte dans cette phrase est alternative. Une telle procédure ne rend pas les salariés contents ; elle leur ouvre une autre manière de dire qu’ils ne le sont pas, qui n’exige pas de partir. Freeman ajoute que la négociation collective des contrats de travail agit dans le même sens : « The regular process of collective negotiation of labor contracts can also be expected to reduce exit behavior ». Il parle à ce propos d’un « industrial jurisprudence system », d’un canal d’autorité qui vient doubler, à l’intérieur de l’entreprise, celui de la hiérarchie."
+        ]
+      },
+      {
+        "title": "Écarter le salaire avant de conclure",
+        "paragraphs": [
+          "Reste à savoir si cela se voit. On constate en effet, dans les données, que les salariés syndiqués restent plus longtemps et démissionnent moins : le résumé de l’article parle d’un « significantly lower exit for unionists in several large data tapes », d’un écart net retrouvé dans plusieurs grands fichiers de données individuelles. Ce constat, seul, n’établit rien, parce qu’une autre explication se présente aussitôt.",
+          "Les syndicats obtiennent de meilleures rémunérations, et un salarié mieux payé qu’il ne le serait ailleurs a de bonnes raisons de rester, sans qu’aucune procédure de réclamation y soit pour quelque chose. Une vingtaine de pages d’économie du travail servent à neutraliser cette voie salariale : comparer des salariés à rémunération comparable, et regarder si l’écart subsiste. Il subsiste. À compensation tenue fixe, écrit Freeman page 665, « unionism raises tenure and reduces quits »."
+        ]
+      },
+      {
+        "title": "Une démonstration par élimination",
+        "paragraphs": [
+          "Il manque pourtant quelque chose, et Freeman est le premier à le dire. Personne ne mesure la parole. On sait compter les départs, les années d’ancienneté, les salaires ; on ne dispose d’aucun instrument qui évaluerait, chez un salarié donné, la quantité d’expression que son syndicat lui rend possible. Il avait prévenu dès la page 644 que séparer cet effet des autres composantes du fait syndical serait « exceedingly difficult ».",
+          "D’où la phrase qui ouvre la quatrième section, page 666, et qui fixe la portée de tout ce qui précède : « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis ». L’explication par la parole tient donc à ce qu’aucun autre facteur ne parvient à rendre compte de l’écart, et non à un appui positif apporté à l’hypothèse. Ce n’est pas la même chose que de montrer que la parole est là : c’est montrer qu’une fois écarté ce qui pouvait en tenir lieu, il reste un écart qu’elle expliquerait bien.",
+          "La nuance n’est pas une coquetterie de méthode. Une explication qui occupe la place laissée vide par les autres reste exposée à la suivante : il suffit qu’un facteur non mesuré, jusque-là ignoré, vienne combler cet espace pour qu’elle perde son appui. L’écrire à l’endroit même où l’on annonce son résultat indique au lecteur où porter son effort s’il veut contester."
+        ]
+      },
+      {
+        "title": "Trois indices que Freeman ne durcit pas",
+        "paragraphs": [
+          "L’article ne s’arrête pourtant pas à ce constat. Freeman produit ensuite trois éléments qui vont dans le sens de son hypothèse. Le premier rapporte les taux de démission au niveau de satisfaction déclaré : l’effet du syndicat sur les départs est plus marqué chez les insatisfaits, ce qu’on attend précisément d’un canal fait pour l’insatisfaction. Le deuxième rapporte l’ancienneté à l’étendue des clauses de réclamation relevées par le Bureau of Labor Statistics : plus la procédure couvre de motifs, plus les salariés restent.",
+          "Le troisième est une comparaison empruntée à Sargent et Clawson, que Freeman reprend page 670 : dans les hôpitaux dotés d’une procédure écrite, le taux de séparation s’établit à 0,50, contre 0,81 là où elle n’existe pas. Trois observations différentes, qui pointent dans la même direction, et dont aucune ne mesure directement ce que l’on cherche.",
+          "Freeman qualifie lui-même ces appuis de « no more than suggestive », page 670, puis de « suggestive rather than definitive », page 670. Sa conclusion tient dans une formule tout aussi mesurée : son étude « finds some support for the hypothesis ». Elle trouve un certain appui à l’hypothèse. Elle ne dit pas qu’elle l’a établie."
+        ]
+      },
+      {
+        "title": "Ceux qui restent et ne disent rien",
+        "paragraphs": [
+          "Le raisonnement a une conséquence qu’il vaut la peine de tirer, parce qu’elle en marque aussi la limite. Ce que l’on compte, ce sont des départs. Or un départ est visible et une absence de départ ne l’est pas : dans les chiffres, celui qui reste parce qu’il a obtenu gain de cause ressemble trait pour trait à celui qui reste parce qu’il n’a nulle part où aller, et à celui qui reste après avoir renoncé à demander quoi que ce soit.",
+          "Un même écart de démissions peut donc recouvrir des situations opposées : une entreprise où l’on parle et où les choses bougent, une entreprise où l’on se tait faute de mieux. La remarque n’a rien perdu de son actualité : en 2009, Matthew Allen et Heinz-Josef Tüselmann plaident encore, dans Employee Relations, pour que les études empiriques cessent de tout ramener à la prise de parole et fassent leur place à la défection, à la loyauté et à la négligence.",
+          "Ce que décrit Freeman est par ailleurs un dispositif situé : le syndicalisme américain de son temps, avec ses conventions collectives et ses arbitres. Transposer le raisonnement ailleurs, dans un pays où l’expression au travail passe par d’autres institutions, revient à formuler une hypothèse, non à reprendre un résultat. Ce qui se transporte sans dommage, c’est la question : y a-t-il ici un endroit où dire que cela ne va pas, et qui ait des suites ?"
+        ]
+      }
+    ],
+    "limits": [
+      "Le couple lui-même vient d’ailleurs. Exit, Voice, and Loyalty, publié par Albert O. Hirschman en 1970 chez Harvard University Press, est l’ouvrage que Freeman nomme dans sa bibliographie et dont il ne reprend qu’une pièce. Ce que la loyauté y fait entre les deux autres termes, c’est ce livre qu’il faudra lire.",
+      "Freeman avait déjà exposé l’argument en 1976, dans « Individual Mobility and Union Voice in the Labor Market », American Economic Review, p. 361-368 : ces huit pages diront ce qu’il tenait déjà et ce qu’il a ajouté ensuite. Quatre ans plus tard, Freeman signe avec Medoff un livre entier sur les syndicats, What Do Unions Do?, et c’est lui qu’il faudra ouvrir pour la suite.",
+      "Le résultat, lui, se fabrique dans les pages 648 à 666, celles qui écartent la voie salariale : quelles enquêtes, quelles variables, quelles estimations, la démonstration est là, et elle demande un lecteur ligne à ligne.",
+      "Ce que cet article est devenu ensuite reste à retracer : l’étude d’Allen et Tüselmann discute Hirschman et le livre de 1984 sans mentionner celui de 1980, et aucune discussion en français de ce texte n’est apparue, ce qui ne prouve pas qu’il n’en existe aucune."
+    ]
+  },
+  {
     "conceptId": "conception-ecologique-interface",
     "lead": [
       "Quelqu’un qui refait chaque jour le même trajet ne délibère pas : ses mains suivent la route, et il ne saurait pas dire ce qu’il a fait des dix dernières minutes. Qu’un voyant connu s’allume, et le voilà qui reconnaît le signal et applique la conduite apprise pour ce cas-là. Qu’il entende en revanche un bruit inconnu, et il n’a plus de conduite apprise : il lui faut se faire une idée de ce qui se passe sous le capot, puis raisonner à partir de là. Trois façons d’agir dans la même journée, sur la même machine.",
@@ -1158,6 +1218,62 @@ export const generatedDeepenings: Deepening[] = [
       "La position de Maurice de Montmollin arrive ici par ce qu’en disent Hubault et Bourgeois, c’est-à-dire par ceux qui la combattent, et une dispute simplifie toujours la position qu’elle vise. Son propre ouvrage sur l’organisation du travail est le seul endroit où il se défend lui-même : le lire est la seule manière de mesurer ce qu’on lui fait dire.",
       "Tout ce qui précède tient à un unique texte, publié en 2004. Ce que Hubault a pu, seul et par la suite, prolonger ou reformuler se trouve dans ses publications ultérieures : la position a peut-être bougé depuis, et c’est là qu’on le verra.",
       "L’opposition entre tâche-horizon et tâche-moyen ne restitue qu’une partie du débat entre courants de l’ergonomie sur la finalité de la discipline. L’article de 2004 mentionne les autres positions sans les développer ; chacune de ces mentions est un fil à tirer, et l’article en donne les références."
+    ]
+  },
+  {
+    "conceptId": "exit-voice-loyalty",
+    "lead": [
+      "Imaginons une ligne d’autocars dont le service se dégrade : retards répétés, véhicules moins propres, correspondances manquées. Les usagers qui ont une voiture cessent peu à peu de la prendre, sans rien dire à personne. Les autres, ceux qui n’ont pas le choix, écrivent, téléphonent, viennent protester aux réunions publiques. Deux manières de réagir à la même dégradation : s’en aller, ou le dire. Pour l’exploitant, ce sont deux informations, et elles ne se valent pas. La première arrive sous forme de chiffres qui baissent, sans motif joint. La seconde arrive avec des motifs, mais de la bouche de ceux qui, précisément, restent.",
+      "Ces deux réactions, on les range d’ordinaire dans des mondes séparés : le départ du côté du commerce, la protestation du côté de la politique. Albert O. Hirschman les a mises côte à côte et a posé la question que cette séparation empêchait de voir : qu’est-ce que chacune fait à l’autre ? À quoi s’ajoute un troisième terme, la loyauté, dont la place dans son modèle est moins simple qu’elle n’en a l’air."
+    ],
+    "sections": [
+      {
+        "title": "Partir, ou se plaindre",
+        "paragraphs": [
+          "Dans un essai de 1992 où il revient sur son propre modèle, Hirschman définit les deux termes en une ligne chacun : la défection est le simple acte de partir, la prise de parole est l’acte par lequel on se plaint. Ce qui les réunit tient à leur point de départ commun : ce sont deux réactions possibles de clients ou de membres d’une organisation à ce qu’ils perçoivent comme une détérioration de la qualité. Ce qui les sépare tient à ce qu’elles font du lien : l’une le coupe, l’autre le maintient pour peser dessus.",
+          "Le champ visé est large, et le titre complet du livre de 1970 l’annonce : des réponses au déclin dans les entreprises, les organisations et les États. Un abonné qui résilie, un adhérent qui ne renouvelle pas sa cotisation, un salarié qui démissionne, un habitant qui s’en va : le même geste, dans des mondes qu’on n’a pas l’habitude de décrire ensemble. Et sous l’autre terme se rangent aussi bien la lettre de réclamation que la motion en assemblée générale, la grève ou la manifestation."
+        ]
+      },
+      {
+        "title": "Ce que le départ dit, et ce qu’il ne dit pas",
+        "paragraphs": [
+          "Dans ce même essai, les deux réactions sont décrites comme des mécanismes d’alerte. La défection est le mode habituel par lequel une direction est censée être avertie de ses défauts : un retour d’information direct, immédiatement lisible dans les comptes. La prise de parole vient en second signal d’alarme. C’est de là que le modèle tire son intérêt pratique : il ne décrit pas seulement ce que font les gens mécontents, il décrit ce qu’une organisation peut apprendre d’eux, et par quel canal.",
+          "Les deux canaux ne portent pas la même chose, et l’on peut en tirer une asymétrie simple : un départ signale qu’il y a un problème sans dire lequel, tandis qu’une plainte dit lequel, mais vient de quelqu’un qui reste, et dont on peut toujours juger qu’il exagère puisqu’il n’est pas parti. Dans l’entretien de 1995, Hirschman prend l’exemple de l’entretien de départ, l’exit interview que certaines entreprises conduisent avec ceux qui s’en vont : il relève que, dans les cas qu’il rapporte, ces entretiens « ne donnaient rien », les ouvriers n’étant pas en général disposés à révéler toutes les raisons de leur départ. Un dispositif entièrement dédié à recueillir la parole de celui qui part, au moment où celui-ci n’a plus rien à en attendre, ne remplace pas le canal par lequel parlent ceux qui restent."
+        ]
+      },
+      {
+        "title": "Deux réactions qui se sapent l’une l’autre",
+        "paragraphs": [
+          "Le point le plus tendu du modèle est là. Hirschman écrit, dans l’essai de 1992, que les deux réactions avaient tendance à se contrecarrer, à se saper l’une l’autre. La formulation est prudente : une tendance, pas une loi. Le mécanisme se représente pourtant sans peine. Celui qui part cesse de se plaindre, et son départ retire à la protestation de ceux qui restent une voix qui aurait pu compter. Inversement, une organisation où la parole circule et produit des effets donne moins de raisons de partir.",
+          "Or l’essai de 1992 est écrit pour un cas où la tendance s’inverse. Son titre le dit : « Défection, prise de parole et destin de la République démocratique allemande. Essai d’une histoire conceptuelle ». Hirschman y examine la fin de la République démocratique allemande en 1989, et il y trouve un moment où les deux réactions, loin de se neutraliser, se sont mutuellement renforcées. C’est l’auteur lui-même qui pose ainsi le contre-exemple de sa propre règle, ce qui en dit long sur le statut de celle-ci : un penchant ordinaire, dont il vaut la peine de repérer les exceptions."
+        ]
+      },
+      {
+        "title": "La loyauté, tenue un peu à l’écart",
+        "paragraphs": [
+          "Vingt-cinq ans après son livre, dans l’entretien de 1995, Hirschman rappelle que la loyauté constituait « le troisième terme de mon modèle » et ajoute aussitôt qu’il l’a « toujours tenu un peu à l’écart ». L’aveu mérite d’être pris au sérieux, parce qu’il corrige la façon dont on récite d’ordinaire le modèle, en alignant trois options de même rang. La loyauté n’est pas une troisième porte à côté des deux autres. On peut la comprendre comme le sol sur lequel ces portes existent : sans lien préalable, il n’y a rien à quitter, et personne à qui se plaindre puisqu’on n’attend plus rien.",
+          "L’essai de 1992 lui donne un second rôle, en apparence opposé : la loyauté y est vue comme une force qui retarde la défection, et aussi la prise de parole, lorsque les performances de l’organisation déclinent. L’ajout compte, car il interdit la lecture commode selon laquelle un membre loyal se contenterait de parler au lieu de partir : il fait attendre les deux. Les deux rôles ne se contredisent pas, ce qui rend une réaction possible peut aussi la différer. La loyauté agit alors comme un délai, et ce délai peut donner à l’organisation le temps de se corriger comme celui de s’enfoncer davantage."
+        ]
+      },
+      {
+        "title": "Défection ou sortie : ce que le mot juge",
+        "paragraphs": [
+          "Le premier mot du triptyque pose un problème que Hirschman soulève lui-même dans l’entretien de 1995 : il juge que le terme est « assez mal rendu par le français qui lui donne un caractère trop péjoratif », et estime qu’il vaudrait mieux parler, tout simplement, de sortie. La remarque n’est pas une coquetterie de vocabulaire. En français, la défection évoque la désertion, l’abandon, le manquement à une fidélité due. Dans le modèle, partir n’est ni une faute ni un renoncement : c’est un signal, au même titre qu’une plainte, et le seul que certains puissent émettre.",
+          "Cette attention au mot revient ailleurs dans le même entretien, où Hirschman relève que le terme d’exclusion a été façonné en France. Les mots par lesquels une société désigne ceux qui partent, ceux qui protestent et ceux qui restent ne sont jamais neutres, et le modèle voyage avec eux. Retenir la remarque évite un contresens courant : lire la défection comme une trahison, et la prise de parole comme la conduite loyale, alors que le modèle les traite comme deux voies d’information de valeur égale."
+        ]
+      },
+      {
+        "title": "Un triptyque qui a servi ailleurs",
+        "paragraphs": [
+          "Le schéma a été repris bien au-delà des terrains que Hirschman traite dans ces deux textes. En 2001, l’économiste Vincent Frigant en propose une lecture appliquée à la coordination entre entreprises, dans ce qu’il appelle les systèmes productifs territorialisés, et c’est le loyalisme qu’il place au centre de son titre. Le déplacement est instructif par lui-même : ce n’est plus un membre face à son organisation, mais des firmes liées entre elles, et le triptyque y devient une grille de coordination.",
+          "Du côté des études sur les relations de travail, le déséquilibre est d’un autre ordre. Un article de 2009 signé Matthew M. C. Allen et Heinz-Josef Tüselmann s’intitule « All powerful voice? » et plaide pour inclure aussi, dans les enquêtes empiriques, la défection, la loyauté et un quatrième terme, neglect. Le titre suffit à indiquer ce qui s’était produit : sur ce terrain, la prise de parole avait pris presque toute la place, au point qu’il fallait plaider pour que les autres réactions soient mesurées elles aussi."
+        ]
+      }
+    ],
+    "limits": [
+      "Tout ce qui précède passe par ce que Hirschman dit de son modèle plus de vingt ans après l’avoir formulé, dans deux textes de reprise. La démonstration d’origine, ses cas, et la question de savoir sous quelles conditions l’une des deux réactions l’emporte sur l’autre sont dans l’ouvrage de 1970, Exit, Voice, and Loyalty, chez Harvard University Press. C’est là qu’il faudra les lire.",
+      "L’essai de 1992 sur la République démocratique allemande est un extrait, traduit en français, d’un travail plus long écrit en anglais, que Hirschman annonce lui-même en note pour janvier 1993 dans la revue World Politics ; aucun traducteur n’est nommé. Les mots français de ses définitions sont donc des choix de traduction, et l’analyse complète de 1989 est dans cette version anglaise.",
+      "À quoi se reconnaît une loyauté autrement qu’au délai qu’elle produit, et à partir de quel seuil elle cesse de retenir, ces deux textes ne le disent pas. Les enquêtes en relations de travail s’y sont attelées : l’article de 2009 qui plaide pour y ajouter la défection, la loyauté et neglect indique par où entrer dans cette littérature."
     ]
   },
   {

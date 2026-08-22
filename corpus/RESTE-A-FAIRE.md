@@ -24,7 +24,7 @@ script ne peut pas dire : quel travail est possible aujourd'hui, ce qu'il coûte
 | chantier | volume | recherche documentaire ? | état |
 |---|---|---|---|
 | ~~**A.** Approfondissements~~ | ~~25 cartes~~ | non | **fait le 21 août 2026** |
-| **B.** File de la sociologie des organisations | 26 entrées | oui, cartographie déjà faite | ouvert |
+| **B.** File de la sociologie des organisations | 25 entrées | oui, cartographie déjà faite | ouvert |
 | **C.** Cinq domaines vides | 5 domaines | oui, **tout est à faire** | ouvert |
 | **D.** Reprises courtes de `systems-thinking` | 2 textes | oui, accès déjà constaté | ouvert |
 
@@ -73,8 +73,8 @@ lancé en parallèle doit préfixer ses fichiers de travail par l'identifiant de
 
 # B. La file de la sociologie des organisations
 
-**Vingt-six entrées sur trente restent à instruire** dans `corpus/map/queue.json`, établie par
-le cartographe le 16 août. Le domaine est le plus ancien du corpus et reste à huit cartes.
+**Vingt-cinq entrées sur trente restent à instruire** dans `corpus/map/queue.json`, établie par
+le cartographe le 16 août. Le domaine est le plus ancien du corpus et porte dix cartes.
 
 C'est le chantier au meilleur rendement documentaire : **la cartographie est faite**,
 l'accessibilité de chaque entrée a déjà été constatée et écrite, et le rang de chacune est
@@ -86,7 +86,6 @@ constatée :
 | rang | id | auteur pressenti | accès |
 |---:|---|---|---|
 | 3 | `couplage-lache` | Karl E. Weick | bonne, DOI résolu — **déjà en `corpus/candidates/`** |
-| 6 | `exit-voice-loyalty` | Albert O. Hirschman | moyenne, ouvrage sans DOI |
 | 7 | `dependance-aux-ressources` | Pfeffer et Salancik | moyenne, ouvrage sans DOI |
 | 8 | `loi-airain-oligarchie` | Robert Michels | bonne, par une voie inhabituelle |
 | 9 | `mythe-et-ceremonie-decouplage` | Meyer et Rowan | bonne, DOI résolu |
@@ -98,19 +97,21 @@ constatée :
 notes ni verdict, et `corpus:audit` la compte comme « 1 en cours » depuis plusieurs lots.
 C'est la reprise la plus courte du dépôt.
 
-## Trois thèmes déclarés ne portent aucune carte
+## Deux thèmes déclarés ne portent aucune carte
 
-`autorite-domination` · `reaction-insatisfaction` · `apprentissage-organisationnel`
+`autorite-domination` · `apprentissage-organisationnel`
 
 Ce sont des thèmes de la première heure, écrits **avant** toute instruction documentaire pour
 construire l'application, et `corpus/perimeter.md` le reconnaît en toutes lettres. Ils
 affichent aujourd'hui une page vide.
 
-Deux se combleraient par une entrée de la file, et le rapprochement est direct plutôt
-qu'approximatif :
+Ils étaient trois. **`reaction-insatisfaction` a été pourvu le 22 août** par le rang 6,
+`exit-voice-loyalty`, et par une seconde carte prise dans son voisinage : le rapprochement
+annoncé ici tenait, et le lot est rapporté dans `corpus/ETAT.md`.
 
-- **`reaction-insatisfaction`**, dont le titre déclaré est « Réaction à l'insatisfaction
-  (Exit/Voice/Loyalty) », attend `exit-voice-loyalty` (Hirschman), rang 6 ;
+Un seul des deux restants se comblerait par une entrée de la file, et le rapprochement est
+direct plutôt qu'approximatif :
+
 - **`apprentissage-organisationnel`**, « ajuster ses moyens, ou remettre en cause ses
   présupposés », attend `apprentissage-double-boucle` (Argyris et Schön), rang 10.
 
