@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useSyncExternalStore } from "react";
+import { useEffect, useState } from "react";
 import { notFound, useSearchParams } from "next/navigation";
 import { concepts } from "@/content";
 import { generatedDeepenings } from "@/content/generated/deepenings.generated";
@@ -10,6 +10,7 @@ import { BackLink } from "@/components/ui/BackLink";
 import { HandoffButton } from "@/components/ui/HandoffButton";
 import { ReadingLoader } from "@/components/ui/ReadingLoader";
 import { drawDeepeningWaitMs } from "@/lib/deepening-wait";
+import { useReducedMotion } from "@/lib/reduced-motion";
 import { espacesFrancaises } from "@/lib/typographie";
 import type { Deepening } from "@/types";
 
@@ -36,14 +37,12 @@ import type { Deepening } from "@/types";
  * la lecture ; sans elle, il n'en resterait qu'un délai devant un texte qui est prêt, c'est-à-
  * dire la seule chose que cet écran n'a jamais eu le droit d'être. La préférence est lue une
  * fois à l'ouverture de l'écran, comme le partage natif l'est dans `DeepenSheet` : c'est une
- * propriété de l'environnement, pas un état qui change pendant qu'on regarde.
+ * propriété de l'environnement, pas un état qui change pendant qu'on regarde. La lecture
+ * elle-même vit dans `reduced-motion.ts`, qu'on partage avec le clignement du seuil — c'est
+ * l'autre moment du produit qui doit être sauté et non accéléré.
  */
 function useDeepeningWait() {
-  const mouvementReduit = useSyncExternalStore(
-    () => () => {},
-    () => window.matchMedia("(prefers-reduced-motion: reduce)").matches,
-    () => false
-  );
+  const mouvementReduit = useReducedMotion();
   const [dureeMs] = useState(drawDeepeningWaitMs);
   const [ecoulee, setEcoulee] = useState(false);
 
