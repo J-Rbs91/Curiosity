@@ -313,7 +313,7 @@ export const FILL = {
   /** Icône maskable : la zone sûre est un cercle de 80 % du côté ; on reste bien en deçà. */
   maskable: 0.46,
   /** Favicon : la marque occupe presque tout, sans quoi elle disparaît dans l'onglet. */
-  favicon: 0.72,
+  favicon: 0.94,
 };
 
 /** Rayon des coins, en fraction du côté. Le favicon adoucit moins : à 16 px, un grand rayon mange la marque. */
