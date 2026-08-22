@@ -5,7 +5,7 @@ import { taxonomy } from "@/content";
 import { getProgressService } from "@/services/progress";
 import { dayKey, pickDailyConcept } from "@/domain/concepts/next-card";
 import { pastCards } from "@/domain/concepts/past-cards";
-import { onReentry, takeOpening } from "@/lib/app-entry";
+import { isOpeningPending, onReentry, spendOpening } from "@/lib/app-entry";
 import type { Concept } from "@/types";
 import { Screen } from "@/components/motion/Screen";
 import { TreeLink } from "@/components/navigation/TreeLink";
@@ -89,12 +89,23 @@ export default function TodayPage() {
     };
 
     /*
-     * L'accueil s'interpose quand une ouverture est en attente, et il la consomme. Il ne
-     * s'interpose donc pas quand on arrive ici depuis Explorer : ce serait une taxe sur
-     * chaque changement d'onglet, sur l'écran qu'on vient justement voir.
+     * L'accueil s'interpose tant qu'une ouverture attend d'être franchie — et il ne la
+     * dépense pas : c'est le bouton qui le fait, plus bas, parce que lui seul atteste du
+     * geste. L'afficher n'est pas le franchir.
+     *
+     * Cet écran se démonte dès qu'on passe sur Explorer, et son état avec lui : c'est donc
+     * la mémoire d'`app-entry` qu'on interroge à chaque montage, et elle seule. Partir sur
+     * Explorer depuis le seuil puis revenir — par le geste retour ou par l'onglet
+     * Aujourd'hui — retrouve le seuil intact, au lieu de découvrir la carte à la place du
+     * lecteur.
+     *
+     * Il ne s'interpose pour autant jamais deux fois : franchi, il ne revient qu'à
+     * l'ouverture suivante. Arriver ici depuis Explorer après l'avoir franchi rend la
+     * carte directement, et c'est ce qui empêche le seuil d'être une taxe sur chaque
+     * changement d'onglet.
      */
     const ouvrir = () => {
-      if (takeOpening()) setOuverture(true);
+      setOuverture(isOpeningPending());
     };
 
     tirer();
@@ -196,7 +207,18 @@ export default function TodayPage() {
            * chaque ouverture, il ne dit plus rien de ce qui attend derrière, alors que
            * c'est précisément la seule chose que le lecteur vient chercher.
            */}
-          <Button onClick={() => setOuverture(false)} className="w-fit">
+          {/*
+           * Le franchissement, et le seul endroit où l'ouverture se dépense : l'appui est
+           * ce qui atteste qu'on est venu lire cette carte. Tant qu'il n'a pas eu lieu,
+           * l'ouverture reste en attente et l'accueil se retrouve au retour.
+           */}
+          <Button
+            onClick={() => {
+              spendOpening();
+              setOuverture(false);
+            }}
+            className="w-fit"
+          >
             Concept du jour
           </Button>
         </div>

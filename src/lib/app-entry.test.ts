@@ -1,4 +1,4 @@
-import { describe, it, expect } from "vitest";
+import { describe, it, expect, vi } from "vitest";
 import { isReentry, REENTRY_AFTER_MS, type Departure } from "./app-entry";
 
 const MIDI = new Date("2026-08-18T12:00:00").getTime();
@@ -31,5 +31,47 @@ describe("réouverture ou reprise", () => {
   it("ne redirige pas sur une horloge qui recule", () => {
     // Changement de fuseau ou correction d'heure : un écart négatif n'est pas une absence.
     expect(isReentry(sortie(-3 * 60 * 60 * 1000), MIDI, "2026-08-18")).toBe(false);
+  });
+});
+
+/**
+ * L'ouverture en attente vit dans l'état du module : chaque cas repart d'un module neuf,
+ * comme un document neuf le ferait.
+ */
+async function documentNeuf() {
+  vi.resetModules();
+  return import("./app-entry");
+}
+
+describe("l'ouverture en attente", () => {
+  it("attend dès le document neuf", async () => {
+    const { isOpeningPending } = await documentNeuf();
+    expect(isOpeningPending()).toBe(true);
+  });
+
+  it("survit à un aller-retour par Explorer tant que le seuil n'est pas franchi", async () => {
+    const { isOpeningPending } = await documentNeuf();
+    // Le défaut corrigé : l'écran d'Aujourd'hui interroge l'ouverture à chaque montage — un
+    // par passage sur l'onglet — et la consulter ne doit pas la dépenser. Sans quoi partir
+    // sur Explorer depuis l'accueil puis revenir affichait la carte d'elle-même.
+    expect(isOpeningPending()).toBe(true);
+    expect(isOpeningPending()).toBe(true);
+  });
+
+  it("se dépense au franchissement, et une seule fois", async () => {
+    const { isOpeningPending, spendOpening } = await documentNeuf();
+    spendOpening();
+    expect(isOpeningPending()).toBe(false);
+    // Revenir sur Aujourd'hui après avoir franchi le seuil rend la carte, sans quoi
+    // l'accueil deviendrait une taxe sur chaque changement d'onglet.
+    spendOpening();
+    expect(isOpeningPending()).toBe(false);
+  });
+
+  it("se réarme à la réouverture", async () => {
+    const { announceReentry, isOpeningPending, spendOpening } = await documentNeuf();
+    spendOpening();
+    announceReentry();
+    expect(isOpeningPending()).toBe(true);
   });
 });

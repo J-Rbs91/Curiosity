@@ -122,7 +122,7 @@ export function announceReentry(): void {
 // ---------------------------------------------------------------------------
 
 /**
- * Une ouverture attend d'être montrée.
+ * Une ouverture attend d'être franchie.
  *
  * Vrai au chargement du module, donc à chaque document neuf : lancer
  * l'application depuis son icône, y revenir après que le système l'a
@@ -132,19 +132,38 @@ export function announceReentry(): void {
  * la distinction : c'est un déplacement dans l'application, pas une ouverture,
  * et l'écran d'accueil qui s'y interposerait serait une taxe sur chaque
  * changement d'onglet.
+ *
+ * **Elle se dépense au franchissement, pas à l'affichage**, et c'est là que se
+ * jouait un défaut : la consommer en montrant le seuil suffisait à le perdre.
+ * Quitter Aujourd'hui sans avoir touché « Concept du jour » démonte l'écran,
+ * et y revenir — par le geste retour ou par l'onglet — retrouvait alors une
+ * ouverture déjà dépensée : la carte s'affichait d'elle-même, sans que
+ * personne l'ait demandée. Le seuil affiché n'est pas un seuil franchi ; tant
+ * qu'il ne l'est pas, l'ouverture reste en attente et l'accueil se retrouve
+ * intact au retour.
  */
 let ouverture = true;
 
 /**
- * Consomme l'ouverture en attente : vrai une fois par ouverture, jamais deux.
+ * Une ouverture attend-elle encore ? Lecture seule : la poser ne l'épuise pas.
  *
- * Elle se consomme là où elle se montre — l'écran d'Aujourd'hui — ou, quand
- * l'application s'ouvre ailleurs qu'à son point d'entrée, dans `EntryPoint` :
- * une adresse partagée a été demandée pour elle-même, et rejoindre Aujourd'hui
- * plus tard reste alors un déplacement.
+ * C'est ce que l'écran d'Aujourd'hui interroge à chaque montage — et il en est
+ * monté un par passage sur l'onglet.
  */
-export function takeOpening(): boolean {
-  const attendue = ouverture;
+export function isOpeningPending(): boolean {
+  return ouverture;
+}
+
+/**
+ * Dépense l'ouverture en attente : elle ne se rejouera pas avant la prochaine.
+ *
+ * Deux appelants, et deux seulement. Le bouton du seuil, quand on le franchit
+ * — c'est le cas nominal, et le geste qui fait la différence entre lire une
+ * carte et tomber dessus. Et `EntryPoint`, quand l'application s'ouvre
+ * ailleurs qu'à son point d'entrée : une adresse partagée a été demandée pour
+ * elle-même, et rejoindre Aujourd'hui ensuite est un déplacement, pas une
+ * ouverture.
+ */
+export function spendOpening(): void {
   ouverture = false;
-  return attendue;
 }

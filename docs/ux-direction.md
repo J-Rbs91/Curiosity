@@ -246,6 +246,14 @@ rend tenable quotidiennement tient à la définition d'une ouverture : revenir d
 bout de dix secondes n'en est pas une, aller d'Explorer à Aujourd'hui non plus. Le critère est
 dans `src/lib/app-entry.ts`.
 
+**Une ouverture se dépense au franchissement, pas à l'affichage.** La distinction n'est pas
+scolastique : l'écran d'Aujourd'hui se démonte dès qu'on passe sur Explorer, et le tenir pour
+franchi parce qu'il s'est montré suffisait à perdre le rituel. Quitter le seuil sans l'avoir
+touché puis revenir — par le geste retour ou par l'onglet — affichait la carte d'elle-même, et
+la découverte était faite à la place du lecteur. Tant que « Concept du jour » n'a pas été
+pressé, l'ouverture reste en attente et l'accueil se retrouve intact. Une fois pressé, il ne
+revient qu'à l'ouverture suivante — sans quoi il serait bien la taxe qu'on refuse.
+
 **Le favicon n'est pas animé**, et pas seulement par convention : un onglet qui bouge est un
 mouvement qu'on n'a pas déclenché, dans une zone qu'on ne regardait pas.
 
@@ -717,6 +725,7 @@ disparaissent, les fondus restent.
 | **Rouvrir l'application, c'est entrer par Aujourd'hui** | Une application installée n'est presque jamais fermée : le système la ramène telle qu'elle était, et on rouvrait sur l'écran quitté la veille — la carte du jour n'était jamais atteinte, et le premier appui sur retour rejouait la session précédente. Une absence de plus de trente minutes, ou un changement de jour, ramène à la racine en dépilant. Revenir après dix secondes rend l'écran quitté : c'est le cas le plus fréquent, et le perdre serait pire que le défaut corrigé |
 | **La version publiée entre en service à la réouverture** | Une application installée n'est jamais fermée : le document chargé un jour exécute son code indéfiniment, et une correction publiée n'atteignait personne. On compare l'empreinte de la page d'entrée à celle retenue au chargement, et on ne recharge que si elle a changé — au point d'entrée, jamais pendant une lecture, jamais sur une supposition |
 | **L'accueil est le seuil de chaque ouverture** | Il ne servait qu'au premier lancement, et l'application s'ouvrait donc directement sur la carte — sans le geste qui distingue venir lire de tomber sur un écran. Il ne s'interpose ni au retour de dix secondes, ni quand on vient d'Explorer : sur ces deux cas, ce serait une taxe |
+| **Le seuil se dépense au franchissement** | Il se consommait à l'affichage : quitter l'accueil pour Explorer sans l'avoir franchi, puis revenir — geste retour ou onglet Aujourd'hui —, retrouvait une ouverture déjà dépensée et la carte s'affichait d'elle-même. La découverte était faite à la place du lecteur, sur le seul écran que l'application ait à montrer |
 | **Aucune cible sous 44 px** | Le bouton des sources mesurait 15 px de haut sur un écran de 667 points — sous le seuil de 24 px de WCAG 2.5.8 —, et « Revenir au concept » est le seul moyen de quitter cette vue |
 
 ---
@@ -727,7 +736,7 @@ disparaissent, les fondus restent.
 |---|---|
 | `src/app/globals.css` | L'échelle de neutres, les rôles, l'échelle typographique, les six rôles d'écart vertical, tous les tokens de mouvement, le focus, les replis en mouvement réduit |
 | `src/lib/navigation-tree.ts` | Les niveaux de l'arbre, l'intention d'une navigation, la trace, la branche de premier niveau |
-| `src/lib/app-entry.ts` | Le critère qui distingue une reprise d'une réouverture, et la mémoire de la sortie |
+| `src/lib/app-entry.ts` | Le critère qui distingue une reprise d'une réouverture, la mémoire de la sortie, et l'ouverture en attente que le seuil dépense |
 | `src/lib/app-version.ts` | L'empreinte de la version servie, et la seule question « faut-il recharger » |
 | `src/components/ui/ListRow.tsx` | La ligne de destination et l'en-tête de liste, pour toute l'application |
 | `src/components/ui/SituatingText.tsx` | L'ordre situation → liste → texte long, sur les trois pages de détail |
