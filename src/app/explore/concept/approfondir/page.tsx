@@ -16,7 +16,7 @@ import { ScreenSkeleton } from "@/components/ui/ScreenSkeleton";
  */
 export default function DeepeningPage() {
   return (
-    <Suspense fallback={<ScreenSkeleton lines={6} />}>
+    <Suspense fallback={<ScreenSkeleton lines={6} measure="read" />}>
       <DeepeningDetail />
     </Suspense>
   );

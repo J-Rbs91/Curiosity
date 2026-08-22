@@ -51,11 +51,11 @@ export default function PastCardsPage() {
 
   // La liste vient du `localStorage` : elle n'existe pas au rendu serveur, et cet écran
   // réserve donc sa place plutôt que d'afficher un titre suivi de rien.
-  if (cartes === null) return <ScreenSkeleton lines={5} />;
+  if (cartes === null) return <ScreenSkeleton lines={5} measure="page" />;
 
   return (
     <Screen>
-      <div className="mx-auto max-w-md px-6 pt-10 pb-12">
+      <div className="mx-auto max-w-md px-6 pt-10 pb-12 md:max-w-page">
         <BackLink />
 
         <h1 className="mt-6 font-serif-display text-2xl font-semibold text-ink">
@@ -68,7 +68,7 @@ export default function PastCardsPage() {
            * tant qu'il n'y a rien ici. La phrase dit pourquoi c'est vide plutôt que de le
            * constater — une liste vide sans raison se lit comme une panne.
            */
-          <p className="mt-6 text-md leading-relaxed text-ink-soft">
+          <p className="mt-6 max-w-read text-md leading-relaxed text-ink-soft">
             La carte d&apos;aujourd&apos;hui est la première. Les suivantes se rangeront ici,
             à mesure que vous les ouvrirez.
           </p>
@@ -83,13 +83,13 @@ export default function PastCardsPage() {
              * le dit, faute de date, et une liste dont on ne sait pas si elle commence ou
              * finit par hier se parcourt à l'envers une fois sur deux.
              */}
-            <p className="mt-3 text-sm leading-relaxed text-ink-faint">
+            <p className="mt-3 max-w-read text-sm leading-relaxed text-ink-faint">
               {cartes.length === 1
                 ? "Une carte déjà lue."
                 : `${cartes.length} cartes déjà lues.`}{" "}
               La plus récente en tête.
             </p>
-            <ul className="stagger rows" style={{ marginTop: "var(--gap-anchor)" }}>
+            <ul className="stagger rows rows-wide" style={{ marginTop: "var(--gap-anchor)" }}>
               {cartes.map((concept) => (
                 <ListRow
                   key={concept.id}

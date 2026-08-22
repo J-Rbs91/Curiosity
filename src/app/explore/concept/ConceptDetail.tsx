@@ -29,7 +29,7 @@ export function ConceptDetail() {
 
   return (
     <Screen>
-      <div className="mx-auto max-w-md px-6 pt-10 pb-12">
+      <div className="mx-auto max-w-md px-6 pt-10 pb-12 md:max-w-read">
         {/*
          * Une destination nommée plutôt qu'un retour d'historique : cette fiche s'atteint
          * depuis un auteur ou un thème, et un retour arrière renverrait parfois hors de
@@ -65,14 +65,14 @@ export function ConceptDetail() {
          * vérifié, et la confondre avec une fiche instruite fausserait toute relecture.
          */}
         {concept.provenance === "fixture" && (
-          <p className="mt-4 text-xs leading-relaxed text-ink-faint">
+          <p className="mt-4 max-w-note text-xs leading-relaxed text-ink-faint">
             Fiche d&apos;échafaudage : contenu écrit sans vérification documentaire, en
             attente d&apos;instruction. Ne pas s&apos;y fier.
           </p>
         )}
 
         {concept.attributionNote && (
-          <p className="mt-4 text-xs leading-relaxed text-ink-faint">
+          <p className="mt-4 max-w-note text-xs leading-relaxed text-ink-faint">
             {concept.attributionNote}
           </p>
         )}

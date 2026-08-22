@@ -42,7 +42,13 @@ export function SituatingText({
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="mt-5">
+    /*
+     * La prose reprend la mesure de lecture à l'intérieur d'un écran qui, lui,
+     * peut être large : une page de domaine porte les deux mesures, et c'est le
+     * cas nominal. Sans ce plafond, la phrase de situation s'étirerait à 688 px,
+     * soit 80 signes par ligne.
+     */
+    <div className="mt-5 max-w-read">
       <p className="text-md leading-relaxed text-ink-soft">{lead}</p>
 
       {/* Un texte long identique à sa phrase de situation n'a rien à déplier. */}

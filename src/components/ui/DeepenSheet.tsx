@@ -28,6 +28,13 @@ interface DeepenSheetProps {
  *
  * L'ordre des blocs suit celui des gestes : ce qui est fait, puis où aller, puis les reprises.
  *
+ * **Elle cesse d'être une feuille au bord bas quand l'écran a un curseur.** Une feuille
+ * remontée du bas est la convention du système sur un téléphone, où elle arrive du côté du
+ * pouce ; sur un écran de bureau, la même chose se lit comme une fenêtre tombée en bas de
+ * l'écran, et le regard doit descendre pour la lire alors qu'il était au milieu. Au-delà de
+ * 64 rem, elle se centre et referme ses quatre coins. Rien d'autre ne change : mêmes gestes,
+ * même ordre, même contenu — c'est une position, pas un second composant.
+ *
  * La feuille est posée dans `document.body` par un portail, et ce n'est pas un détail : le
  * bouton qui l'ouvre vit dans une carte animée, et une animation qui laisse un `transform`
  * derrière elle fait de son élément le référentiel de tout ce qui est `fixed` en dessous. La
@@ -83,7 +90,7 @@ export function DeepenSheet({ copied, text, onClose }: DeepenSheetProps) {
   }
 
   return createPortal(
-    <div className="fixed inset-0 z-50 flex items-end justify-center">
+    <div className="fixed inset-0 z-50 flex items-end justify-center lg:items-center">
       {/* Le fond ferme au toucher, comme toute feuille du système. */}
       <button
         type="button"
@@ -98,7 +105,7 @@ export function DeepenSheet({ copied, text, onClose }: DeepenSheetProps) {
         aria-modal="true"
         aria-labelledby="approfondir-titre"
         tabIndex={-1}
-        className="enter-rise relative max-h-[88vh] w-full max-w-md overflow-y-auto rounded-t-3xl bg-paper-raised px-6 pt-7 outline-none"
+        className="enter-rise relative max-h-[88vh] w-full max-w-md overflow-y-auto rounded-t-3xl bg-paper-raised px-6 pt-7 outline-none lg:max-w-lg lg:rounded-3xl"
         style={{ paddingBottom: "calc(2rem + env(safe-area-inset-bottom))" }}
       >
         <h2 id="approfondir-titre" className="font-serif-display text-[20px] leading-snug text-ink">

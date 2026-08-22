@@ -18,17 +18,17 @@ import { Screen } from "@/components/motion/Screen";
 export default function NotFound() {
   return (
     <Screen>
-      <div className="mx-auto max-w-md px-6 pt-10 pb-12">
+      <div className="mx-auto max-w-md px-6 pt-10 pb-12 md:max-w-page">
         <p className="eyebrow">Page introuvable</p>
         <h1 className="mt-2 font-serif-display text-2xl font-semibold leading-tight text-ink">
           Cette adresse ne mène nulle part.
         </h1>
-        <p className="mt-5 text-md leading-relaxed text-ink-soft">
+        <p className="mt-5 max-w-read text-md leading-relaxed text-ink-soft">
           La fiche a peut-être changé d&apos;adresse depuis que le lien a été partagé, ou
           elle n&apos;a pas encore terminé son instruction documentaire.
         </p>
 
-        <ul className="rows anchored">
+        <ul className="rows rows-wide anchored">
           <li>
             <TreeLink
               href="/"

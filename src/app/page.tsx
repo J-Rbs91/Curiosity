@@ -18,17 +18,22 @@ import { ScreenSkeleton } from "@/components/ui/ScreenSkeleton";
 import { espacesFrancaises } from "@/lib/typographie";
 
 /**
- * La hauteur d'un écran, barre de navigation déduite.
+ * La hauteur d'un écran, réserve de navigation déduite.
  *
- * `AppShell` réserve déjà la hauteur de la barre en remplissage bas : un enfant en `100svh`
- * occupe donc exactement un écran. C'est un plancher, pas une hauteur fixe : `CARD_SCALE`
+ * `AppShell` réserve déjà ce que la navigation prend au contenu : un enfant à cette hauteur
+ * occupe donc exactement un écran. C'est un plancher, pas une hauteur fixe : `--card-scale`
  * garde la carte courante compacte, mais rien ne garantit qu'une carte tienne toujours sans
  * défiler — et la forcer à tenir en rétrécissant encore le texte coûterait plus cher que le
  * défilement qu'on lui refuserait. Le plancher fait que la carte reste centrée quand elle
  * tient, et que la page défile plutôt que de perdre silencieusement son bas quand elle ne
  * tient pas.
+ *
+ * **La valeur est dans `globals.css`** depuis qu'elle en a deux : la barre basse retient
+ * 68 px de hauteur, le rail n'en retient aucun, et l'écran de bureau récupère donc la
+ * réserve. Une constante ici et un seuil là-bas auraient été deux réglages à tenir
+ * d'accord.
  */
-const SCREEN_HEIGHT = "calc(100svh - var(--nav-height) - env(safe-area-inset-bottom))";
+const SCREEN_HEIGHT = "var(--screen-height)";
 
 /**
  * Ce que la ligne des cartes passées retire à la carte quand elle est là : 52 px, soit sa
@@ -127,7 +132,7 @@ export default function TodayPage() {
   * n'a donc rien à pré-rendre. Il montrait un bloc vide ; il montre la place que la carte
   * va prendre, ce qui distingue une attente d'une panne.
   */
-  if (!mounted) return <ScreenSkeleton lines={4} />;
+  if (!mounted) return <ScreenSkeleton lines={4} measure="card" />;
 
   /*
    * Corpus vide : rien à proposer, et surtout rien à inventer. C'est l'état normal tant que
@@ -138,7 +143,7 @@ export default function TodayPage() {
     return (
       <Screen>
         <div
-          className="stagger mx-auto flex max-w-md flex-col justify-center gap-8 px-6"
+          className="stagger mx-auto flex max-w-md flex-col justify-center gap-8 px-6 lg:max-w-read"
           style={{ minHeight: SCREEN_HEIGHT }}
         >
           <h1 className="font-serif-display text-2xl font-semibold leading-tight text-ink">
@@ -169,7 +174,7 @@ export default function TodayPage() {
     return (
       <Screen>
         <div
-          className="stagger mx-auto flex max-w-md flex-col justify-center gap-10 px-6"
+          className="stagger mx-auto flex max-w-md flex-col justify-center gap-10 px-6 lg:max-w-read"
           style={{ minHeight: SCREEN_HEIGHT }}
         >
           {/*
@@ -178,7 +183,7 @@ export default function TodayPage() {
            * du §5 de `docs/ux-direction.md`, et une signature en en-tête permanent la casserait
            * pour ne rien apprendre à personne. Ici, on se présente ; ailleurs, jamais.
            */}
-          <Wordmark animate className="text-[2.125rem] text-ink" />
+          <Wordmark animate className="text-[2.125rem] text-ink lg:text-[2.75rem]" />
           {/*
            * Le surtitre nomme le champ, le titre nomme ce qu'on y couvre.
            *
@@ -234,7 +239,7 @@ export default function TodayPage() {
        * l'écran refuserait de défiler pour la montrer en entier.
        */}
       <div
-        className="mx-auto flex max-w-md flex-col px-6 py-6"
+        className="mx-auto flex max-w-md flex-col px-6 py-6 lg:max-w-read"
         style={{ minHeight: SCREEN_HEIGHT }}
       >
         {/*
@@ -333,8 +338,15 @@ function PastCardsLink() {
  * | 390 × 844 | 16,0 px | 17 px |
  *
  * La base reste en rem, donc indexée sur la préférence de taille de police du lecteur.
+ *
+ * **Sur un écran de bureau, le plafond monte à 18 px et la colonne à 544.** Les deux vont
+ * ensemble : agrandir le texte sans élargir la colonne l'aurait ramenée à 44 signes par
+ * ligne, et l'élargir sans agrandir le texte l'aurait poussée à 62 — soit, dans les deux
+ * cas, une carte moins lisible que sur un téléphone. Le seuil et son arithmétique sont
+ * dans `globals.css`, qui porte les deux valeurs ; la pente, elle, reste indexée sur la
+ * hauteur, parce que c'est toujours la hauteur qui décide si la carte tient.
  */
-const CARD_SCALE = "clamp(0.8rem, 0.01rem + 2.222vh, 1rem)";
+const CARD_SCALE = "var(--card-scale)";
 
 /**
  * La carte : thème, concept, citation, accroche, résumé, auteur, sources.

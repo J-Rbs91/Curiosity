@@ -38,7 +38,7 @@ function hrefForView(view: ViewId): string {
 export default function ExplorePage() {
   return (
     <Screen>
-      <div className="mx-auto max-w-md px-6 pt-10">
+      <div className="mx-auto max-w-md px-6 pt-10 md:max-w-page">
         <div className="flex items-start justify-between gap-3">
           <h1 className="font-serif-display text-2xl font-semibold text-ink">Explorer</h1>
           <TreeLink
@@ -77,7 +77,7 @@ function ExploreBody({ view }: { view: ViewId }) {
         * `(100% - 0.5rem) / 3` laissait le libellé déborder de la pastille.
         */}
       <div
-        className="relative mt-8 grid gap-1 rounded-full bg-paper-raised p-1"
+        className="relative mt-8 grid max-w-md gap-1 rounded-full bg-paper-raised p-1"
         style={{ gridTemplateColumns: `repeat(${VIEWS.length}, minmax(0, 1fr))` }}
       >
         <span
@@ -184,7 +184,7 @@ function FamilyList() {
              * Pas de compte de domaines : ils sont tous visibles juste en dessous, et le
              * chiffre s'intercalait exactement là où l'en-tête doit s'ancrer sur son groupe.
              */}
-            <ul className="rows anchored">
+            <ul className="rows rows-wide anchored">
               {familyDomains.map((domain) => (
                 <ListRow
                   key={domain.id}
@@ -250,14 +250,14 @@ function GroupedByDomain<T extends { id: string; domain: string }>({
     .map((domain) => ({ domain, items: items.filter((i) => i.domain === domain.id) }))
     .filter((g) => g.items.length > 0);
 
-  if (groups.length <= 1) return <ul className="rows">{items.map(row)}</ul>;
+  if (groups.length <= 1) return <ul className="rows rows-wide">{items.map(row)}</ul>;
 
   return (
     <div className="groups">
       {groups.map(({ domain, items: groupItems }) => (
         <section key={domain.id}>
           <h2 className="eyebrow">{domain.label}</h2>
-          <ul className="rows anchored">{groupItems.map(row)}</ul>
+          <ul className="rows rows-wide anchored">{groupItems.map(row)}</ul>
         </section>
       ))}
     </div>

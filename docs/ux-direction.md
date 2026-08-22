@@ -18,7 +18,7 @@ s'appuient sur le corpus de méthode local et sur la lecture du code existant.
 | Utilisateur | Adulte curieux — étudiant, encadrant, consultant — pas un spécialiste de la discipline |
 | Tâche principale | Rencontrer un concept, le comprendre, éventuellement le prolonger ailleurs |
 | Fréquence | Quotidienne, mais brève : une ouverture ou deux par jour, quelques minutes |
-| Contexte | Téléphone, une main, souvent en déplacement. Application installable, données locales |
+| Contexte | Téléphone, une main, souvent en déplacement — c'est l'usage qui commande. Aussi un navigateur de bureau, où la mise en page s'ouvre sans que le produit change (§9). Application installable, données locales |
 | Contrainte | Tout est côté client : la progression est lue dans le navigateur, jamais rendue par le serveur |
 
 ---
@@ -730,11 +730,147 @@ disparaissent, les fondus restent.
 
 ---
 
-## 9. Où vivent les décisions dans le code
+## 9. Desktop — ce que la largeur change, et ce qu'elle ne change pas
+
+L'application est née sur un téléphone et n'avait aucun point de rupture : les
+neuf écrans portaient la même colonne de 448 px, et la barre de navigation
+tenait le bas de la fenêtre. Sur un écran de 1440, cela produit une colonne au
+milieu du noir surmontée d'une barre de pouce — non pas une interface sobre,
+mais une capture de téléphone posée là.
+
+La version desktop répond à ce défaut. Elle ne réécrit pas le produit.
+
+### La décision qui commande les autres
+
+**Mêmes routes, même arbre, même grammaire de mouvement.** Ce qui change est la
+mise en page ; ce qui la traverse ne change pas.
+
+L'alternative sérieuse était un maître-détail : la liste tenue à gauche en
+permanence, la fiche s'ouvrant à droite sans quitter la liste. C'est la
+convention de bureau pour un corpus, et elle a été écartée pour trois raisons
+qui tiennent ensemble :
+
+| Raison | Ce qu'un maître-détail coûterait |
+|---|---|
+| Le budget d'écart est déjà dépensé | La dimension porteuse est le mouvement (§2). Une seconde signature portée par la mise en page ne s'ajouterait pas à la première, elle la contredirait : rien ne descend ni ne remonte quand un panneau se remplit sur place |
+| La promesse est « une chose à la fois » | Une liste permanente à côté d'une fiche permanente est exactement l'inverse de ce que l'application produit |
+| Le contrat de retour est bâti sur des écrans | `parentOf`, la trace et `climbTo` supposent qu'un écran remplace un écran. Un panneau demanderait un second modèle de navigation, c'est-à-dire deux implémentations d'un même mécanisme |
+
+Ce n'est pas un refus de principe. C'est le constat qu'un maître-détail est un
+autre produit, pas une version large de celui-ci.
+
+### Deux seuils, parce que deux choses cessent d'être vraies à deux moments
+
+| Seuil | Ce qui cesse d'être vrai | Ce qui change |
+|---|---|---|
+| **48 rem** (768 px) | La largeur est la ressource rare | La colonne d'un écran de liste s'ouvre à 736 px ; les listes passent à deux colonnes ; la prose qu'elles contiennent reste bornée |
+| **64 rem** (1024 px) | Il y a un pouce | La barre devient un rail ; la carte récupère la hauteur que la barre retenait ; sa base typographique passe de 16 à 18 px ; l'amplitude des déplacements est plafonnée |
+
+Le second n'est pas placé plus bas parce qu'en dessous l'appareil est
+plausiblement tenu en main. `--card-scale` y descend jusqu'à 12,8 px sur un
+téléphone couché, et une colonne de 544 px à cette taille repasserait au-dessus
+de 75 signes par ligne — soit une carte moins lisible que sur un téléphone
+debout, ce qui serait l'inverse du but.
+
+Les deux valeurs sont celles de `md` et `lg` de Tailwind. Inventer des seuils
+propres aurait fait deux échelles de rupture dans un même projet.
+
+### Le rail, et pourquoi pas les deux autres réponses
+
+Une barre basse est une commodité du pouce. Il n'y en a pas sur un écran de
+bureau, où le bord bas est le point le plus long à atteindre à la souris quand le
+coin haut-gauche est le plus court.
+
+Une barre haute était l'autre convention. Elle aurait demandé de poser la marque
+en en-tête permanent, ce que le §4 interdit — et amender une décision d'identité
+pour loger deux entrées de navigation aurait été un mauvais échange.
+
+Reste le rail, 104 px, deux entrées, et rien d'autre :
+
+- **Il ne porte pas la marque.** Le seuil reste le seul endroit où elle se
+  montre. Un rail vide sous ses deux entrées est un rail honnête : le produit a
+  deux destinations.
+- **Réglages n'y entre pas.** C'est un enfant d'Explorer dans l'arbre, atteint
+  par la roue de son en-tête. Lui ouvrir une seconde porte ferait deux chemins
+  vers un écran qu'on visite une fois, et `rootSectionOf` ne saurait plus dire
+  quelle branche allumer.
+- **Le repère de position se transpose, il ne se réinvente pas.** Le même filet
+  d'un pixel, la même couleur, le même calcul : il glisse en x au bas de la
+  barre, en y au bord droit du rail. La géométrie est paramétrée dans
+  `globals.css` ; le composant ne fournit que l'indice et le compte.
+- **La navigation passe en tête du document.** Sa position à l'écran ne dépend
+  pas de sa place dans le document — elle est `fixed` dans les deux cas —, mais
+  l'ordre de tabulation, lui, en dépend. Un rail annoncé au bord gauche et
+  atteint au clavier après l'écran entier aurait été la navigation la plus
+  visible et la plus longue à joindre.
+- **Le contenu se centre dans ce qui reste, pas dans la fenêtre.** À 1440, la
+  colonne est donc décalée de 40 px vers la droite par rapport au centre
+  optique. C'est le comportement attendu d'une mise en page à rail, et le tenir
+  sur les neuf écrans vaut mieux qu'une exception optique sur celui du jour.
+
+### Les trois mesures
+
+Une seule mesure ne peut pas servir une liste et un texte suivi : la première
+gagne à s'étaler, le second y perd dès 75 signes par ligne.
+
+| Mesure | Largeur | Contenu utile | Ce qu'elle porte | Signes par ligne |
+|---|---|---|---|---|
+| `--container-note` | 416 px | 416 px | Une mention en petit corps, à 12 px | 69 |
+| `--container-read` | 544 px | 496 px | Ce qui se lit ligne à ligne, à 17,3 px | 57 |
+| `--container-page` | 736 px | 688 px | Un en-tête et sa liste | — |
+
+**La mesure suit le corps.** La fourchette de 45 à 75 compte des signes, pas des
+pixels : une mention à 12 px dans la colonne calibrée pour 17,3 en porte 82.
+C'est la raison d'être de la première ligne, et elle ne sert qu'aux deux
+mentions de la fiche de concept — provenance et note d'attribution —, qui sont
+déjà ce qu'un écran a de plus coûteux à lire.
+
+Les trois se composent. Une page de domaine porte `--container-page` sur sa
+colonne, `--container-read` sur sa phrase de situation, et sa liste de thèmes en
+deux colonnes. C'est le cas nominal, pas l'exception.
+
+**Deux colonnes, et pas trois.** Sur 688 px utiles, deux colonnes en donnent 328
+à chacune, où la phrase de situation d'une ligne tient en deux lignes de texte.
+Trois la feraient tomber à 210 px et à quatre lignes : la liste gagnerait en
+hauteur ce que la troisième colonne prétendait lui faire économiser.
+
+### La carte du jour : la cérémonie ne bouge pas
+
+Le seuil, puis une carte, centrée, une seule colonne. La largeur ne sert qu'à
+deux choses, et elles vont ensemble : la colonne passe à 544 px et la base
+typographique à 18 px. L'une sans l'autre aurait empiré la carte — agrandir le
+texte seul l'aurait ramenée à 44 signes par ligne, élargir seul l'aurait poussée
+à 62 pour un texte inchangé.
+
+Ce qui n'y entre pas, et qui était l'autre option : mettre la citation et les
+sources en regard sur une seconde colonne. La carte est l'écran vu tous les
+jours, et la fréquence d'usage prime sur ce que la largeur permet.
+
+### Le mouvement, plafonné
+
+`--shift-screen` est un pourcentage de la surface qui bouge : les 16 % qui
+donnent 62 px sur un téléphone de 390 en donneraient 230 sur 1440, en 560 ms
+inchangées. Le même geste sur presque quatre fois la distance ne se lit plus
+comme le même geste. Au-delà de 64 rem, l'amplitude tombe à 8 % — 115 px, dans
+la même bande perceptive que le téléphone. La grammaire reste reconnaissable au
+lieu d'être littérale.
+
+### Ce que le desktop ne change pas
+
+La palette, les deux familles typographiques, l'échelle de six pas, les six
+rôles d'écart vertical, l'arbre de navigation, le contrat de retour, les quatre
+sens de circulation, les durées, les courbes, le repli en mouvement réduit, le
+budget de mouvement du §7, et la règle du §5 sur ce que l'interface affiche.
+
+Aucun écran n'a gagné ni perdu une information.
+
+---
+
+## 10. Où vivent les décisions dans le code
 
 | Fichier | Ce qu'il porte |
 |---|---|
-| `src/app/globals.css` | L'échelle de neutres, les rôles, l'échelle typographique, les six rôles d'écart vertical, tous les tokens de mouvement, le focus, les replis en mouvement réduit |
+| `src/app/globals.css` | L'échelle de neutres, les rôles, l'échelle typographique, les trois mesures de colonne, les six rôles d'écart vertical, tous les tokens de mouvement, les deux seuils du desktop et tout ce qu'ils changent, la charpente — réserve de navigation, rail, repère de position —, le focus, les replis en mouvement réduit |
 | `src/lib/navigation-tree.ts` | Les niveaux de l'arbre, l'intention d'une navigation, la trace, la branche de premier niveau |
 | `src/lib/app-entry.ts` | Le critère qui distingue une reprise d'une réouverture, la mémoire de la sortie, et l'ouverture en attente que le seuil dépense |
 | `src/lib/app-version.ts` | L'empreinte de la version servie, et la seule question « faut-il recharger » |
@@ -742,7 +878,8 @@ disparaissent, les fondus restent.
 | `src/components/ui/SituatingText.tsx` | L'ordre situation → liste → texte long, sur les trois pages de détail |
 | `src/components/motion/screen-motion.ts` | Les quatre sens de circulation, et eux seuls |
 | `src/components/motion/Screen.tsx` | La correspondance sens → animation, à poser dans chaque `page.tsx` |
-| `src/components/ui/AppShell.tsx` | Les écrans immersifs et la réserve sous le contenu |
+| `src/components/ui/AppShell.tsx` | L'ordre du document — navigation puis contenu — et la réserve que la navigation prend au contenu |
+| `src/components/ui/MainNav.tsx` | Les deux destinations, la branche allumée, et rien de la géométrie |
 | `src/content/taxonomy.ts` | Les quatre familles et les onze domaines, et eux seuls |
 | `src/domain/taxonomy/index.ts` | Rattachement, ordre, périmètres de sélection, état du corpus |
 | `src/domain/concepts/ai-prompt.ts` | Les instructions envoyées aux applications d'IA, et elles seules |
@@ -758,7 +895,7 @@ Une seule implémentation par mécanisme. Deux implémentations divergent, toujo
 
 ---
 
-## 10. Ce qui reste à vérifier
+## 11. Ce qui reste à vérifier
 
 Listé plutôt que supposé :
 
@@ -773,3 +910,15 @@ Listé plutôt que supposé :
 - La lisibilité en plein soleil, coût connu d'une application sans mode clair.
 - La zone sûre sur un appareil à encoche, `env(safe-area-inset-bottom)` valant zéro
   sur un navigateur de bureau.
+- Le rail et les deux colonnes ont été vérifiés sur Chromium, à 1440 × 900,
+  1024 × 768, 820 × 1180 et 390 × 844 : mise en page, ordre de tabulation et
+  absence d'erreur console. Restent à voir sur un poste réel le survol à la
+  souris sur les lignes de liste — la surface levée est la seule affordance de
+  contact —, et le rendu du filet d'un pixel du repère de position sur un écran
+  non HiDPI.
+- Le décalage de 40 px du contenu vers la droite, conséquence assumée du
+  centrage dans ce qui reste : à confirmer qu'il ne se remarque pas sur l'écran
+  du jour, qui est le seul où la colonne est isolée dans le noir.
+- L'amplitude plafonnée à 8 % : la valeur est raisonnée, pas mesurée sur des
+  yeux. C'est le réglage à reprendre en premier si le déplacement paraît court
+  sur un grand écran.

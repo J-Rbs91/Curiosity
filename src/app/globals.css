@@ -125,6 +125,29 @@
   /* Hauteur réelle de la barre de navigation, hors zone sûre du système. */
   --nav-height: 4.25rem;
 
+  /*
+   * Largeur du rail, qui remplace la barre à partir du second seuil. Elle est
+   * commandée par le plus long des deux intitulés — « Aujourd'hui », onze
+   * signes à 12 px — et non par l'icône, qui tiendrait dans la moitié.
+   */
+  --rail-width: 6.5rem;
+
+  /*
+   * La hauteur d'un écran, réserve de navigation déduite.
+   *
+   * Elle vivait dans `page.tsx`, seule à s'en servir. Elle en sort parce qu'elle
+   * cesse d'avoir une seule valeur : le rail ne prend plus rien en hauteur, et
+   * la carte récupère alors la réserve que la barre lui retenait.
+   */
+  --screen-height: calc(100svh - var(--nav-height) - env(safe-area-inset-bottom));
+
+  /*
+   * L'échelle typographique de la carte du jour — la base dont toutes ses
+   * tailles sont des `em`. Même motif de déménagement que ci-dessus : elle
+   * dépend maintenant du seuil, et un `clamp` écrit en deux endroits diverge.
+   */
+  --card-scale: clamp(0.8rem, 0.01rem + 2.222vh, 1rem);
+
   /* ------------------------------------------------------------------------
    * Rythme vertical — six rôles, pas six valeurs.
    *
@@ -147,6 +170,60 @@
   --gap-row: 2rem;         /* 32 px — deux frères d'une même liste           */
   --gap-section: 3rem;     /* 48 px — deux sections d'un même écran          */
   --gap-group: 4.5rem;     /* 72 px — deux groupes de premier niveau         */
+}
+
+/* --------------------------------------------------------------------------
+ * Les deux seuils du desktop
+ *
+ * Deux, et non un, parce que deux choses différentes cessent d'être vraies à
+ * deux moments différents.
+ *
+ * **48 rem — l'écran cesse d'être un téléphone.** La largeur n'est plus la
+ * ressource rare : la colonne d'un écran de liste s'ouvre à `--container-page`
+ * et les listes passent à deux colonnes. Ce qui se lit reste borné à
+ * `--container-read` : une ligne de 736 px porterait 85 signes, au-delà de la
+ * fourchette de 45 à 75.
+ *
+ * **64 rem — l'écran a un curseur.** La barre basse devient un rail, la carte
+ * récupère la hauteur que la barre retenait, sa base typographique monte de
+ * 16 à 18 px, et l'amplitude des déplacements est plafonnée. Ce seuil n'est
+ * pas placé plus bas parce qu'en dessous l'appareil est plausiblement tenu en
+ * main : `--card-scale` y descend jusqu'à 12,8 px sur un téléphone couché, et
+ * une colonne de 544 px à cette taille repasserait au-dessus de 75 signes.
+ *
+ * Les deux valeurs sont celles de `md` et `lg` de Tailwind : les écrire ici en
+ * dur plutôt que d'inventer des seuils propres évite deux échelles de rupture
+ * dans un même projet.
+ * -------------------------------------------------------------------------- */
+
+@media (min-width: 64rem) {
+  :root {
+    /* Le rail ne prend rien en hauteur : l'écran entier revient au contenu. */
+    --screen-height: 100svh;
+
+    /*
+     * La borne haute passe de 16 à 18 px, la borne basse de 12,8 à 14,4.
+     *
+     * La pente ne change pas : elle reste indexée sur la hauteur, parce que
+     * c'est toujours la hauteur qui décide si la carte tient. Ce qui change est
+     * le plafond, qui était calibré sur une colonne de 400 px. Sur les 496 px
+     * de `--container-read`, 18 px rendent 55 signes par ligne — contre 62 si
+     * l'on avait gardé 16, soit une ligne plus longue pour un texte plus petit,
+     * exactement l'inverse de ce qu'il faut sur un écran regardé de loin.
+     */
+    --card-scale: clamp(0.9rem, 0.01rem + 2.222vh, 1.125rem);
+
+    /*
+     * L'amplitude est un pourcentage de la surface qui bouge : la même valeur
+     * qui donne 62 px sur un téléphone de 390 en donnerait 230 sur 1440. La
+     * durée, elle, ne change pas — le même déplacement en 560 ms sur presque
+     * quatre fois la distance ne se lit plus comme le même geste. Le plafond
+     * ramène le trajet à 115 px, dans la même bande perceptive que le
+     * téléphone, et la grammaire reste reconnaissable au lieu d'être littérale.
+     */
+    --shift-screen: 8%;
+    --shift-phase: 5%;
+  }
 }
 
 @theme inline {
@@ -194,6 +271,52 @@
   --text-lg--line-height: 1.3;
   --text-xl--line-height: 1.2;
   --text-2xl--line-height: 1.2;
+}
+
+@theme {
+  /* ------------------------------------------------------------------------
+   * Les mesures de colonne — deux, et elles ne disent pas la même chose.
+   *
+   * L'application n'en avait qu'une, `max-w-md`, posée sur les neuf écrans.
+   * Elle est juste tant que la largeur est bornée par l'appareil ; sur un
+   * écran de 1440, elle produit une colonne de 448 px au milieu du noir, et
+   * l'application se lit comme une capture de téléphone posée là.
+   *
+   * Une seule mesure plus large ne suffit pas non plus : un écran de liste et
+   * un texte suivi n'ont pas le même besoin. Une liste gagne à s'étaler, un
+   * texte y perd — au-delà de 75 signes par ligne, l'œil rate le retour à la
+   * ligne suivante.
+   *
+   * D'où deux mesures, nommées par ce qu'elles portent :
+   *
+   * | Mesure | Largeur | Contenu utile | Ce qu'elle porte |
+   * |---|---|---|---|
+   * | `--container-note` | 416 px | 416 px | Une mention en petit corps |
+   * | `--container-read` | 544 px | 496 px | Ce qui se lit ligne à ligne |
+   * | `--container-page` | 736 px | 688 px | Un en-tête et sa liste |
+   *
+   * Le contenu utile retranche les 24 px de remplissage de chaque côté quand la
+   * mesure borne une colonne d'écran ; `--container-note` borne un paragraphe
+   * déjà à l'intérieur, et ne retranche donc rien.
+   *
+   * À 17,3 px, 496 px portent 57 signes ; à 18 px — la carte du jour sur un
+   * grand écran —, 55. Les deux sont au milieu de la fourchette.
+   *
+   * **La mesure suit le corps, et c'est la raison d'être de la première
+   * ligne.** La fourchette de 45 à 75 signes compte des signes, pas des
+   * pixels : une mention à 12 px dans une colonne calibrée pour 17,3 en porte
+   * 82. Sur du texte courant l'écart se rattrape, mais ces mentions-là sont
+   * déjà ce qu'un écran a de plus coûteux à lire — petit corps, gris sourd,
+   * plusieurs lignes. 416 px les ramènent à 69 signes.
+   *
+   * Les trois se composent : un écran de liste prend `--container-page`, la
+   * prose qu'il contient reprend `--container-read`, et une mention y reprend
+   * `--container-note`. Une page de domaine porte les deux premières, et c'est
+   * le cas nominal.
+   * ------------------------------------------------------------------------ */
+  --container-note: 26rem;
+  --container-read: 34rem;
+  --container-page: 46rem;
 }
 
 
@@ -331,6 +454,102 @@ body {
 }
 
 /* --------------------------------------------------------------------------
+ * Charpente — la réserve de navigation et le rail
+ *
+ * Ces deux règles portent la seule décision de structure que le desktop
+ * change : la navigation quitte le bas de l'écran pour son bord gauche.
+ *
+ * Le motif n'est pas la mode. Une barre basse est une commodité du pouce, et
+ * il n'y a pas de pouce sur un écran de bureau : le bord bas y est le point le
+ * plus long à atteindre à la souris, quand le coin haut-gauche est le plus
+ * court. Une barre haute aurait été l'autre convention, mais elle aurait
+ * demandé de poser la marque en en-tête permanent, ce que le §4 de
+ * `docs/ux-direction.md` interdit — et amender une décision d'identité pour
+ * loger deux entrées de navigation serait un mauvais échange.
+ *
+ * Elles sont ici et non dans les composants parce qu'elles changent au seuil :
+ * une classe utilitaire conditionnelle les aurait écrites deux fois.
+ * -------------------------------------------------------------------------- */
+
+/* La réserve que la navigation prend au contenu : en bas, puis à gauche. */
+.app-body {
+  padding-bottom: calc(var(--nav-height) + env(safe-area-inset-bottom));
+}
+
+/*
+ * Le nom de transition de vue est posé ici plutôt que dans la section des
+ * transitions : c'est la même règle qui décide où la navigation se tient, et
+ * deux règles pour un même élément finiraient par diverger. Ce que ce nom
+ * produit — l'ancrage pendant un changement d'écran — est expliqué plus bas,
+ * avec les pseudo-éléments qui l'exploitent.
+ */
+.main-nav {
+  view-transition-name: main-nav;
+  position: fixed;
+  z-index: 40;
+  inset-inline: 0;
+  bottom: 0;
+  background: var(--paper);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/*
+ * Le repère de position, en une seule géométrie paramétrée.
+ *
+ * `--nav-index` et `--nav-count` sont posés par le composant : c'est lui qui
+ * sait combien d'entrées existent et laquelle est allumée, et c'est la feuille
+ * de style qui sait dans quel sens le repère glisse. Le partage évite la seule
+ * chose qu'il fallait éviter ici — un calcul de position écrit en JavaScript
+ * pour la barre et un second pour le rail.
+ *
+ * Il double la couleur et la graisse de l'entrée active : le mouvement n'est
+ * jamais le seul porteur de l'information.
+ */
+.nav-marker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% / var(--nav-count));
+  height: 1px;
+  background: var(--accent);
+  transform: translateX(calc(var(--nav-index) * 100%));
+  transition: transform var(--dur-ui) var(--ease-out-soft);
+}
+
+@media (min-width: 64rem) {
+  .app-body {
+    padding-bottom: 0;
+    padding-inline-start: var(--rail-width);
+  }
+
+  .main-nav {
+    inset-inline: auto;
+    inset-block: 0;
+    inset-inline-start: 0;
+    width: var(--rail-width);
+    padding-bottom: 0;
+    /*
+     * Le rail commence au même retrait haut que le contenu — `pt-10`, sur les
+     * huit écrans qui en ont un. Un rail collé au bord se lirait comme une
+     * barre d'application, c'est-à-dire comme un cadre autour du contenu,
+     * alors qu'il en est le voisin.
+     */
+    padding-top: 2.5rem;
+  }
+
+  /* Le repère passe du bord haut de la barre au bord droit du rail : la
+     frontière entre la navigation et ce qu'elle ouvre. */
+  .nav-marker {
+    top: 0;
+    left: auto;
+    right: 0;
+    width: 1px;
+    height: calc(100% / var(--nav-count));
+    transform: translateY(calc(var(--nav-index) * 100%));
+  }
+}
+
+/* --------------------------------------------------------------------------
  * Rythme vertical — les trois écarts qui font comprendre un regroupement
  *
  * Les lignes de liste portent un remplissage qui agrandit la cible tactile
@@ -346,6 +565,34 @@ body {
 }
 .rows > li + li {
   margin-top: calc(var(--gap-row) - 2 * var(--gap-item));
+}
+
+/*
+ * La même liste, sur deux colonnes, à partir du premier seuil.
+ *
+ * Ce n'est pas la largeur qui l'appelle mais la hauteur : les onze domaines,
+ * les thèmes et les cartes déjà lues sont des listes de destinations qu'on
+ * parcourt du regard avant de choisir. Sur une seule colonne de 736 px, elles
+ * demandent un défilement pour rien, et un défilement fait perdre la
+ * comparaison — qui est exactement ce qu'on fait sur ces écrans.
+ *
+ * **Deux colonnes, et pas trois.** Sur 688 px utiles, deux colonnes en donnent
+ * 328 à chacune, où la phrase de situation d'une ligne tient en deux lignes de
+ * texte. Trois la feraient tomber à 210 px et à quatre lignes : la liste
+ * gagnerait en hauteur ce que la troisième colonne prétendait lui faire
+ * économiser. Le rythme vertical, lui, ne change pas — c'est le même écart
+ * entre deux frères, qu'ils soient empilés ou côte à côte.
+ */
+@media (min-width: 48rem) {
+  .rows-wide {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: var(--gap-row);
+    row-gap: calc(var(--gap-row) - 2 * var(--gap-item));
+  }
+  .rows-wide > li + li {
+    margin-top: 0;
+  }
 }
 
 /* L'en-tête et la liste qu'il commande : nettement plus serré qu'entre frères. */
@@ -653,20 +900,17 @@ body {
  * se superposent.
  * -------------------------------------------------------------------------- */
 
-.bottom-nav {
-  view-transition-name: bottom-nav;
-}
-
-::view-transition-group(bottom-nav) {
+/* Le nom est posé avec la géométrie, section « Charpente ». */
+::view-transition-group(main-nav) {
   animation: none;
   z-index: 100;
 }
 
-::view-transition-old(bottom-nav) {
+::view-transition-old(main-nav) {
   display: none;
 }
 
-::view-transition-new(bottom-nav) {
+::view-transition-new(main-nav) {
   animation: none;
 }
 
