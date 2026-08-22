@@ -242,10 +242,25 @@ O de labeur. Ce n'est pas une coquetterie typographique : c'est la seule chose q
 figure de retomber sur le disque concentrique, et elle ne s'applique qu'à ce caractère, qui
 n'est plus tout à fait une lettre.
 
-Deux graisses, pour une seule raison — la taille optique. Un favicon de 16 px rend un filet de
-moins de 1,5 px comme une tache grise ; à l'inverse, la graisse d'icône ferait du O le seul
-caractère gras du mot. Le rapport entre les deux épaisseurs de l'anneau, lui, ne change pas :
-c'est lui qui fait la forme.
+Trois graisses, pour une seule raison — la taille optique, au sens où la typographie l'entend :
+plus un dessin est rendu grand, plus son trait doit être **relativement** fin. Un favicon de
+16 px rend un filet de moins de 1,5 px comme une tache grise, d'où la graisse d'icône ; la même
+ferait du O le seul caractère gras du mot, d'où la graisse de texte ; et à 62 px, sur l'écran
+d'attente, elle donne un anneau épais qui écrase sa propre contre-forme et ramène la figure vers
+la cible, d'où une graisse d'affichage à 30 % de moins.
+
+| Graisse | Où | Côté fin | Côté épais |
+|---|---|---|---|
+| `icon` | Icônes, favicon, marque seule et petite | 9 | 14,5 |
+| `text` | Dans un mot — le nom, le titre d'Explorer | 7,4 | 12 |
+| `display` | L'œil seul et grand — l'écran d'attente | 6,3 | 10,15 |
+
+Le rapport entre les deux épaisseurs de l'anneau, lui, ne change jamais — 1,61 aux trois
+graisses. C'est lui qui fait la forme : ce qui varie d'une graisse à l'autre est le poids du
+trait, jamais le contraste qui ouvre la contre-forme et fait lire un œil. Et `npm test` vérifie
+le plancher de lisibilité de l'anneau à **toutes** les graisses, y compris celle qui n'est
+jamais rendue petite : c'est ce qui empêche qu'on la transpose un jour là où elle ne tiendrait
+pas.
 
 **Le mot est en sans-serif.** La règle du §5 s'applique — la serif porte ce qui se lit, le sans
 porte ce qui se choisit, et un nom est une étiquette. Elle se double d'une raison de dessin :
@@ -437,7 +452,7 @@ chacune corrige un défaut constaté à l'arrêt sur image :
   la plus serrée.
 
 Ces trois valeurs sont des tokens de géométrie, et `npm test` vérifie la couverture de la
-contre-forme aux deux extrêmes, dans les deux graisses, sur toute sa largeur.
+contre-forme aux deux extrêmes, dans toutes les graisses, sur toute sa largeur.
 
 **En mouvement réduit, la pupille est au centre, la paupière est relevée, et rien ne se
 relance.** Aucune séquence n'existe, donc aucune fin de séquence n'est annoncée et la pause ne
@@ -520,7 +535,7 @@ avec le `zlib` de Node. Ajouter plusieurs dizaines de mégaoctets de binaires na
 tracer un anneau et un disque aurait été hors de proportion.
 
 `npm test` vérifie ce qui casse silencieusement : que la pupille ne touche jamais son anneau
-dans aucune fixation et dans les deux graisses, que l'anneau reste visible à 16 px, et que
+dans aucune fixation et dans aucune graisse, que l'anneau reste visible à 16 px, et que
 chaque fixation de la géométrie est bien celle que la feuille de style réclame. Ce dernier
 contrôle existe parce que la panne est arrivée : une propriété personnalisée qui ne résout
 rien ne produit pas d'erreur, elle produit une animation qui tourne sans que rien ne bouge.
@@ -740,6 +755,17 @@ cadratin, les titres qui ne peuvent pas étiqueter un palier de difficulté, et 
 
 Entre l'appui et le texte, l'écran affiche l'œil de la marque au-dessus du mot « Chargement… »,
 et l'œil lit ce mot. Cela dure de **2 200 à 3 230 ms**, tiré au sort à chaque appui.
+
+**Trois réglages font tenir cette image, et ils se commandent l'un l'autre.** L'œil est rendu à
+62 px, parce que c'est la taille à laquelle le déplacement de la pupille devient lisible — 12 px
+de course. Il est dans la graisse d'affichage, parce qu'à cette taille la graisse d'icône
+donnerait un anneau épais qui écrase sa contre-forme, et qu'un œil dont l'ouverture se referme
+ne regarde plus rien. Et le mot est en Inter au poids courant, parce que c'est l'état de
+l'écran et non de la prose — la règle du §5 —, et parce que c'est la famille la moins contrastée
+des deux : sous un anneau qu'on vient d'affiner, une serif de labeur aurait été la chose la plus
+grasse de l'image. L'écart entre l'œil et le mot vaut la moitié de la hauteur de l'œil, comme
+l'écran d'ouverture espace ses blocs : assez pour qu'ils respirent, assez peu pour qu'on lise
+« cet œil-là lit ce mot-là ».
 
 **Cette attente est fabriquée, et il faut le dire avant tout le reste.** Rien ne charge. Le texte
 est dans le bundle, il a été projeté à la construction, et il serait à l'écran en une image. La

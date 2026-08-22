@@ -30,10 +30,12 @@ describe("géométrie de la marque", () => {
    * Première défaillance : la pupille sort de sa contre-forme, ou la frôle.
    *
    * Elle cesse alors de se lire comme un regard pour se lire comme un défaut de centrage. Le
-   * contrôle est fait dans les deux tailles optiques, parce que la contre-forme est plus
-   * étroite à la graisse d'icône et que c'est donc elle qui tranche.
+   * contrôle est fait dans **toutes** les tailles optiques, et non dans celles qu'on croit à
+   * risque : la contre-forme est plus étroite à la graisse d'icône, donc c'est elle qui
+   * tranche aujourd'hui, mais une graisse ajoutée demain doit passer les mêmes contrôles sans
+   * qu'on ait à penser à cette ligne. Elles sont donc déduites de la géométrie.
    */
-  for (const optical of ["icon", "text"] as const) {
+  for (const optical of Object.keys(STROKE) as (keyof typeof STROKE)[]) {
     const { rx, ry } = counter(STROKE[optical]);
 
     it(`garde la pupille dans la contre-forme à toutes les fixations — graisse ${optical}`, () => {

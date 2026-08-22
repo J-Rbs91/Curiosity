@@ -106,7 +106,7 @@ function EyedWord({
       {/*
        * La graisse optique est celle du texte dans les deux cas : l'anneau est dans un mot, et
        * doit peser ce que pèsent les lettres qui l'entourent. La graisse d'icône y ferait le
-       * seul caractère gras du mot — voir le motif des deux graisses dans `mark-geometry.mjs`.
+       * seul caractère gras du mot — voir le motif des trois graisses dans `mark-geometry.mjs`.
        *
        * La partition, elle, vient du mot ; `animate` ne décide que si elle joue.
        */}

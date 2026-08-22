@@ -25,16 +25,17 @@ import {
  * centième ouverture. Une séquence se joue, se repose au centre, puis se relance après une
  * pause tirée au hasard, tant que l'écran qui la porte est affiché.
  *
- * **Il y a deux séquences, et `gaze` dit laquelle joue.** `scanning` à l'ouverture, où rien
+ * **Il y a trois séquences, et `gaze` dit laquelle joue.** `scanning` à l'ouverture, où rien
  * n'attend derrière elle ; `waiting` dans le o du titre d'Explorer, qui est un onglet et se
- * revoit. Ce que ces deux partitions font du même dessin est écrit dans `mark-geometry.mjs` —
- * ici, on ne fait que nommer celle qui joue.
+ * revoit ; `reading` sur l'écran d'attente d'« Approfondir », où l'œil lit le mot posé sous
+ * lui. Ce que ces partitions font du même dessin est écrit dans `mark-geometry.mjs` — ici, on
+ * ne fait que nommer celle qui joue.
  *
- * **Pourquoi un nom et non un booléen.** Un `animate` vrai ou faux ne saurait pas dire laquelle
- * des deux, et il faudrait une seconde propriété pour le préciser — donc un état où l'on
- * demande une séquence sans l'animer. Une propriété qui vaut `undefined`, `scanning` ou
- * `waiting` rend cet état inexprimable, et son absence garde la marque immobile : l'animer reste
- * un geste, jamais un oubli.
+ * **Pourquoi un nom et non un booléen.** Un `animate` vrai ou faux ne saurait pas dire laquelle,
+ * et il faudrait une seconde propriété pour le préciser — donc un état où l'on demande une
+ * séquence sans l'animer. Une propriété qui vaut `undefined` ou le nom d'une partition rend cet
+ * état inexprimable, et son absence garde la marque immobile : l'animer reste un geste, jamais
+ * un oubli. C'est aussi ce qui a permis d'ajouter la troisième sans toucher à ce fichier.
  *
  * **Pourquoi un composant client.** La pause aléatoire est la seule chose de cette séquence que
  * le CSS ne sait pas exprimer. Le reste — les positions, les temps, les courbes — reste
@@ -71,13 +72,14 @@ const GAZE_VARIABLES = Object.fromEntries(
   Object.entries(GAZE).map(([name, position]) => [`--gaze-${name}`, at(position)])
 ) as CSSProperties;
 
-/** Le regard qui parcourt, ou celui qui attend — voir `GAZE_SEQUENCES`. */
+/** Le regard qui parcourt, celui qui attend, ou celui qui lit — voir `GAZE_SEQUENCES`. */
 export type GazeName = keyof typeof GAZE_SEQUENCES;
 
 export type MarkProps = {
   /**
-   * `icon` quand la marque est seule, `text` quand elle est dans le mot — voir le motif de ces
-   * deux graisses dans `mark-geometry.mjs`.
+   * `icon` quand la marque est seule et petite, `text` quand elle est dans le mot, `display`
+   * quand elle est seule et grande — voir le motif de ces trois graisses dans
+   * `mark-geometry.mjs`.
    */
   optical?: keyof typeof STROKE;
   /**

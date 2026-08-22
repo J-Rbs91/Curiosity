@@ -61,6 +61,25 @@ export const STROKE = {
    * gras du mot et se lirait comme une faute de composition.
    */
   text: { side: 7.4, cap: 12 },
+  /**
+   * Taille d'affichage : la marque est seule et grande — l'écran d'attente, à 62 px.
+   *
+   * C'est la logique du corps optique, dans le sens où la typographie l'entend : plus un
+   * dessin est rendu grand, plus son trait doit être **relativement** fin. La graisse d'icône
+   * est réglée pour survivre à 16 px, où le côté fin ne peut pas descendre sous 9 sans
+   * devenir une tache grise ; à 62 px, ce même réglage donne un anneau épais qui écrase sa
+   * propre contre-forme et ramène la figure vers la cible.
+   *
+   * Trente pour cent de moins sur les deux épaisseurs, et **le rapport entre elles est tenu**
+   * — 1,61, comme aux deux autres graisses. C'est lui qui fait la forme : ce qui change ici
+   * est le poids du trait, jamais le contraste qui ouvre la contre-forme et fait lire un œil.
+   *
+   * Le côté fin tombe à 6,3, ce qui reste au-dessus du plancher de lisibilité de l'anneau —
+   * `npm test` le vérifie à toutes les graisses, y compris à celle-ci qui n'est jamais rendue
+   * petite. Ce contrôle est volontairement plus strict que l'usage : il empêche qu'on
+   * transpose un jour cette graisse là où elle ne tiendrait pas.
+   */
+  display: { side: 6.3, cap: 10.15 },
 };
 
 /** Demi-axes de la contre-forme, déduits de l'épaisseur : le O n'a qu'un rayon extérieur. */
