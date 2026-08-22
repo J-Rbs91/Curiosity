@@ -477,6 +477,7 @@ se paie sur le budget du §7.
 | Écran d'ouverture | Le mot entier, et `scanning` y joue |
 | En-tête d'Explorer | Le seul o du titre, et `waiting` y joue |
 | Attente d'« Approfondir » | L'œil seul, au-dessus du mot qu'il lit, et `reading` y joue |
+| Franchissement du seuil | Rien de la marque — c'est l'écran entier qui cligne, voir le §7 |
 | Onglet du navigateur, écran d'accueil, feuille de partage | L'œil seul, immobile |
 | README, page de dépôt | `mark.svg`, ou `mark-animated.svg` qui joue `scanning` une fois, sans boucler |
 
@@ -516,6 +517,13 @@ touché puis revenir — par le geste retour ou par l'onglet — affichait la ca
 la découverte était faite à la place du lecteur. Tant que « Concept du jour » n'a pas été
 pressé, l'ouverture reste en attente et l'accueil se retrouve intact. Une fois pressé, il ne
 revient qu'à l'ouverture suivante — sans quoi il serait bien la taxe qu'on refuse.
+
+**Le clignement du seuil n'est pas un quatrième endroit où la marque se montre**, et la
+distinction n'est pas scolastique. Aux trois endroits ci-dessus, on regarde un œil ; au
+franchissement, il n'y a rien à regarder — c'est l'écran qui se défocalise, ferme et rouvre. La
+grammaire est la même, le sujet est inverse, et c'est pour cela que le mouvement ne dépose aucune
+signature sur un écran de contenu : rien n'y est ajouté, quelque chose y est momentanément
+retiré. Le §7 dit ce qu'il coûte et ce qui le borne.
 
 **Le favicon n'est pas animé**, et pas seulement par convention : un onglet qui bouge est un
 mouvement qu'on n'a pas déclenché, dans une zone qu'on ne regardait pas.
@@ -991,6 +999,8 @@ le texte écrit.
 | Glissement de la coupe qui arrive | 280 ms sur 8 % / 4 % | `--ease-lift` |
 | Entrée et sortie de session | 640 ms | `--ease-lift` |
 | Le concept qu'on vient de travailler | 720 ms | `--ease-lift` |
+| Le seuil qui se ferme — défocalisation, puis fondu au fond | 280 ms | `--ease-lift`, puis `--ease-out-soft` |
+| Le seuil qui rouvre — fondu, puis accommodation | 440 ms | `--ease-out-soft`, puis `--ease-lift` |
 | Le livre qui s'ouvre ou se referme | 420 ms | `--ease-out-soft` |
 | L'aiguille qui cherche le nord | 720 ms — quatre mouvements amortis | `--ease-out-soft` |
 | Le regard de la marque, à l'ouverture | 4 800 ms — `scanning` | `--ease-out-soft` |
@@ -1099,12 +1109,62 @@ ensemble :
 - **Elles s'arrêtent là.** Deux icônes, celles de la navigation, et aucune autre. Une icône de
   liste ou d'en-tête qui se mettrait à jouer serait du mouvement sous le contenu qu'on lit.
 
-**Et l'aiguille est le seul endroit du produit où l'on dépasse 300 ms sans glisser.** Ses
+**Et l'aiguille dépasse 300 ms sans glisser, ce que seul le clignement du seuil fait aussi.** Ses
 720 ms sont une partition — un dépassement, trois corrections de moins en moins amples —, pas
 une durée réglable : la raccourcir ne l'accélérerait pas, elle lui retirerait des mouvements.
 Ce qui l'autorise est ce qui autorisait déjà le regard de la marque : elle ne retient rien.
 L'écran est arrivé, l'entrée est allumée et cliquable dès la première image, et personne
 n'attend qu'elle se pose.
+
+**Le seuil se franchit comme un clignement, et c'est la quatrième dépense assumée.** On appuie
+sur « Concept du jour », l'écran se défocalise jusqu'à ce que plus rien ne soit lisible, le fond
+monte et ferme, la carte prend la place derrière, le fond redescend et l'œil accommode. C'est la
+grammaire de la marque portée par l'écran entier : elle est un œil qu'on regarde, ici **c'est le
+produit qui cligne**, et le lecteur est dedans plutôt que devant.
+
+**Ce qui justifie ce mouvement-là est que les quatre sens de circulation n'avaient rien à dire de
+ce geste.** Le seuil n'est pas une navigation : on ne change ni d'écran, ni de niveau, ni de
+coupe, et l'adresse ne bouge pas. Un glissement latéral y aurait raconté un déplacement qui n'a
+pas lieu. Ce qui a lieu est un changement de **ce qu'on regarde** sur place, et c'est exactement
+ce qu'un œil fait quand il cligne : il ne se déplace pas, il coupe et rouvre sur autre chose.
+C'est donc la seule transition du produit dont le déplacement ne soit pas le sujet, et la seule
+qui ait besoin de deux propriétés que le reste n'anime jamais — le flou d'arrière-plan et la
+couleur de fond. La règle d'exécution correspondante, plus bas, en tient compte et les borne.
+
+**Les deux moitiés ne coûtent pas le même prix, et c'est la dissociation du déplacement et du
+fondu appliquée à un autre couple.** 280 ms pour fermer, 440 pour rouvrir : ce qui part n'est pas regardé, ce qui
+arrive l'est. L'accommodation est le seul moment de la cérémonie que quelqu'un observe vraiment,
+et c'est elle qui reçoit le temps. Les deux ensemble valent 720 ms, soit exactement le moment
+marquant du produit — la carte du jour en est un, et le seuil se paie ce que coûte un moment
+marquant, pas plus.
+
+Quatre bornes le tiennent, et il faut qu'elles tiennent ensemble :
+
+- **Il est unique, et il est nommé.** Un fondu au fond est la facilité la plus contagieuse après
+  l'attente fabriquée : il rend n'importe quel geste solennel sans rien coûter à écrire. Il y en
+  a un, sur le seul geste du produit qui soit un seuil. Un onglet, un lien, une liste qui s'ouvre
+  ne sont pas des seuils, et un second fondu au fond serait à refuser sans discussion.
+- **Il ne retient que ce qu'il remplace.** La carte est montée **derrière** le fond opaque et non
+  après lui : à l'instant où le fond redescend, elle est là, entière et à sa place. Ce qui est
+  masqué pendant 720 ms est un écran qu'on vient de quitter, jamais un contenu qu'on attend — la
+  règle qui protège l'attente d'« Approfondir » de faire jurisprudence n'est donc pas entamée.
+  Le fond opaque est d'ailleurs un instant de bascule et non un palier : y ajouter un maintien
+  ferait précisément du clignement l'attente fabriquée qu'il n'est pas.
+- **Il ne se joue qu'une fois par ouverture.** Le seuil ne se retraverse pas dans la même
+  session, et changer d'onglet ne le rejoue pas — c'est le critère d'`app-entry.ts`, celui-là
+  même qui rend le seuil supportable tous les jours. La règle de fréquence tranche donc ici comme
+  elle tranche pour le regard de l'écran d'ouverture : une durée n'est pas une dépense, une
+  fréquence de mouvement en est une.
+- **Il n'a pas lieu en mouvement réduit.** Un flou de pleine surface est précisément ce que cette
+  préférence existe pour retirer, et le repli n'est pas un fondu plus sage : c'est l'échange
+  direct, sans voile. C'est la même borne que celle de l'attente d'« Approfondir », pour la même
+  raison — ce qui ne survit pas au retrait de son mouvement ne doit pas survivre du tout.
+
+**Et la carte qui arrive par là n'a pas de cascade.** L'accommodation **est** son entrée. Deux
+gestes simultanés qui ne racontent pas la même chose se lisent comme deux événements : c'est ce
+qu'on a retiré du changement d'onglet, et cela vaut ici pour la même raison. La cascade reste sur
+les arrivées ordinaires — revenir d'Explorer, rouvrir sur un seuil déjà franchi —, où rien
+d'autre ne porte l'entrée.
 
 **Le troisième cran est celui d'une coupe, et il est plus court que les deux autres.** Changer
 d'onglet dans Explorer n'est ni un changement d'écran ni un changement de phase : l'en-tête, les
@@ -1143,12 +1203,19 @@ l'appui, lui, ne le dépasse pas : il est vu vingt fois par session.
 - **Rien n'apparaît à partir de rien.** Les entrées partent d'une échelle déjà
   visible.
 - **Deux propriétés seulement sont animées** — le déplacement et l'opacité. Elles
-  ne déclenchent pas de remise en page. Les deux icônes de la barre y ajoutent la
-  bascule et la rotation, qui sont des transformations de même nature, et la
-  graisse de leur trait — la seule propriété de peinture animée du produit,
-  bornée à un dessin de 24 unités et changée en même temps que sa couleur.
+  ne déclenchent pas de remise en page. Trois endroits y ajoutent quelque chose,
+  et chacun est borné : les deux icônes de la barre ajoutent la bascule et la
+  rotation, qui sont des transformations de même nature, et la graisse de leur
+  trait, bornée à un dessin de 24 unités et changée en même temps que sa
+  couleur ; le clignement du seuil ajoute le flou d'arrière-plan et la couleur de
+  fond, qui sont les deux seules propriétés capables de dire une accommodation.
+  Ce sont les trois seules propriétés de peinture animées du produit, et un
+  quatrième emploi demanderait la même justification écrite que ces deux-là.
 - **Les amplitudes sont en pourcentage**, jamais en pixels : la même valeur tient
-  sur toutes les tailles d'écran.
+  sur toutes les tailles d'écran. L'unique exception est le flou du clignement,
+  et elle relève de la même règle plutôt qu'elle ne la casse : ce qu'il
+  défocalise est du texte et non une surface, il s'exprime donc en `rem` —
+  indexé sur la taille de police du lecteur, jamais sur celle de l'écran.
 - **Jamais de transition sur « toutes les propriétés ».** Elles sont énumérées.
 - **Aucune valeur en dur.** Courbes, durées et amplitudes sont des tokens.
 - **Le mouvement ne porte jamais seul une information.** Le repère de l'onglet
@@ -1354,6 +1421,8 @@ Aucun écran n'a gagné ni perdu une information.
 | `src/components/ui/SituatingText.tsx` | L'ordre situation → liste → texte long, sur les trois pages de détail |
 | `src/components/motion/screen-motion.ts` | Les quatre sens de circulation, et le sens d'un pas de côté quand la surface en connaît un |
 | `src/components/motion/Screen.tsx` | La correspondance sens → animation, à poser dans chaque `page.tsx` |
+| `src/components/motion/Blink.tsx` | La machine à états du clignement — fermer, échanger, rouvrir — et rien de sa durée ni de ses courbes |
+| `src/lib/reduced-motion.ts` | La préférence de mouvement réduit, pour les deux moments qui doivent être **sautés** et non accélérés |
 | `src/components/ui/AppShell.tsx` | L'ordre du document — navigation puis contenu — et la réserve que la navigation prend au contenu |
 | `src/components/ui/MainNav.tsx` | Les deux destinations, la branche allumée, le rang du changement de section, et rien de la géométrie |
 | `src/components/ui/nav-icon-geometry.ts` | Le dessin des deux icônes de la barre et la partition de l'aiguille, et eux seuls |

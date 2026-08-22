@@ -8,6 +8,7 @@ import { pastCards } from "@/domain/concepts/past-cards";
 import { isOpeningPending, onReentry, spendOpening } from "@/lib/app-entry";
 import type { Concept } from "@/types";
 import { Screen } from "@/components/motion/Screen";
+import { useBlink } from "@/components/motion/Blink";
 import { TreeLink } from "@/components/navigation/TreeLink";
 import { Button } from "@/components/ui/Button";
 import { ConceptQuotation } from "@/components/concept/ConceptQuotation";
@@ -54,6 +55,21 @@ const PAST_LINK_HEIGHT = "3.25rem";
 export default function TodayPage() {
   const [mounted, setMounted] = useState(false);
   const [ouverture, setOuverture] = useState(false);
+  /*
+   * Le franchissement du seuil se joue comme un clignement : l'écran se défocalise, se ferme,
+   * et rouvre sur la carte. Le voile est rendu plus bas, dans les deux écrans que le
+   * clignement relie ; ce qu'il porte et ce qui le borne sont dans `Blink.tsx` et au §7 de
+   * `docs/ux-direction.md`.
+   */
+  const { veil, blink } = useBlink();
+  /*
+   * Et si la carte est arrivée par là, elle n'a pas de cascade d'entrée. L'accommodation
+   * **est** son entrée : deux gestes simultanés qui ne racontent pas la même chose se lisent
+   * comme deux événements — c'est la règle que le §7 tire du changement d'onglet, et elle vaut
+   * ici pour la même raison. La cascade reste sur les arrivées ordinaires, où rien d'autre ne
+   * porte l'entrée : revenir d'Explorer, ou rouvrir sur un seuil déjà franchi.
+   */
+  const [parClignement, setParClignement] = useState(false);
   const [concept, setConcept] = useState<Concept | undefined>(undefined);
   /*
    * Combien de cartes le lecteur peut relire, celle du jour déduite. C'est ce compte qui
@@ -217,16 +233,33 @@ export default function TodayPage() {
            * ce qui atteste qu'on est venu lire cette carte. Tant qu'il n'a pas eu lieu,
            * l'ouverture reste en attente et l'accueil se retrouve au retour.
            */}
+          {/*
+           * L'ouverture se dépense tout de suite, l'échange attend la charnière du clignement.
+           * Les deux ne peuvent pas voyager ensemble : la dépense atteste du geste et doit
+           * survivre à tout ce qui pourrait interrompre le mouvement — un onglet touché
+           * pendant la fermeture, l'application mise en arrière-plan —, alors que l'échange
+           * n'a de sens qu'une fois le fond opaque.
+           */}
           <Button
             onClick={() => {
               spendOpening();
-              setOuverture(false);
+              blink(() => {
+                setParClignement(true);
+                setOuverture(false);
+              });
             }}
             className="w-fit"
           >
             Concept du jour
           </Button>
         </div>
+        {/*
+         * Hors de la colonne, parce que le voile couvre l'écran entier — navigation
+         * comprise — et n'appartient à aucune mise en page. Il est rendu dans les deux
+         * écrans que le clignement relie : le premier temps se joue ici, le second sur la
+         * carte, et l'échange a lieu entre les deux.
+         */}
+        {veil}
       </Screen>
     );
   }
@@ -264,10 +297,13 @@ export default function TodayPage() {
             maxHeight={
               passees > 0 ? `calc(${SCREEN_HEIGHT} - ${PAST_LINK_HEIGHT})` : SCREEN_HEIGHT
             }
+            stagger={!parClignement}
           />
         </div>
         {passees > 0 && <PastCardsLink />}
       </div>
+      {/* Le second temps du clignement, quand la carte est arrivée par le seuil. */}
+      {veil}
     </Screen>
   );
 }
@@ -367,13 +403,26 @@ const CARD_SCALE = "var(--card-scale)";
  * le bloc citaire — encadré, sa légende en petit — ne s'interpose plus entre le titre et la
  * phrase qui l'ouvre : le haut de la carte reste du texte qui se lit d'un trait.
  */
-function ConceptCard({ concept, maxHeight }: { concept: Concept; maxHeight: string }) {
+function ConceptCard({
+  concept,
+  maxHeight,
+  stagger = true,
+}: {
+  concept: Concept;
+  maxHeight: string;
+  /**
+   * La cascade d'entrée, et le seul cas où on la retire : l'arrivée par le clignement du
+   * seuil, où l'accommodation porte déjà l'entrée. Le défaut est `true` — une carte qui
+   * arrive sans que rien d'autre ne l'annonce garde sa cascade.
+   */
+  stagger?: boolean;
+}) {
   const [showSources, setShowSources] = useState(false);
   const sources = concept.sources ?? [];
 
   return (
     <div
-      className="stagger flex min-h-0 flex-col gap-[1.6em]"
+      className={`${stagger ? "stagger " : ""}flex min-h-0 flex-col gap-[1.6em]`}
       /*
        * Le plafond de hauteur ne vaut que pour la vue des sources : c'est lui qui force le
        * défilement à rester interne à cette vue (voir plus bas). Sur la face de la carte, il

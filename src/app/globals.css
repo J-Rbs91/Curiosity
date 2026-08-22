@@ -100,6 +100,45 @@
   --dur-mark: 720ms;  /* moment marquant : le concept qu'on vient de travailler */
 
   /*
+   * Le clignement — le franchissement du seuil, et la seule transition du produit
+   * qui ne déplace rien.
+   *
+   * L'écran se défocalise, se ferme sur le fond, puis rouvre et accommode sur la
+   * carte du jour. Les deux temps ne portent pas la même durée, et c'est la règle
+   * de dissociation ci-dessus appliquée à un autre couple de propriétés : **ce
+   * qui part n'est pas regardé, ce qui arrive l'est.** La fermeture est donc
+   * courte, l'ouverture longue — l'accommodation est le seul moment de la
+   * cérémonie que quelqu'un observe vraiment.
+   *
+   * Les deux ensemble valent 720 ms, soit `--dur-mark` : la carte du jour est le
+   * moment marquant du produit, et le seuil se paie exactement ce que coûte un
+   * moment marquant. Le fond opaque est un instant de bascule, jamais un
+   * maintien — un palier ajouté ici deviendrait une attente fabriquée, et il n'y
+   * en a qu'une dans le produit, nommée au §6 de `docs/ux-direction.md`.
+   *
+   * Le partage entre les deux temps de chaque moitié est dans les images clés, en
+   * pourcentage : 62 % de défocalisation puis 38 % de fondu à la fermeture,
+   * l'inverse à l'ouverture. Un point de partition vaut donc 2,8 ms à la
+   * fermeture et 4,4 ms à l'ouverture.
+   */
+  --dur-blink-shut: 280ms;
+  --dur-blink-open: 440ms;
+
+  /*
+   * L'amplitude du flou, et la seule amplitude du produit qui ne soit pas un
+   * pourcentage — parce que ce qu'elle défocalise est du texte, pas une surface.
+   *
+   * Elle est donc en `rem`, donc indexée sur la préférence de taille de police du
+   * lecteur : quelqu'un qui lit en 20 px reçoit un flou proportionnellement aussi
+   * total que quelqu'un qui lit en 16. Écrite en pixels, elle deviendrait
+   * insuffisante exactement chez les personnes qui ont agrandi leur texte. Douze
+   * pixels sur une hauteur d'x de sept ne laissent rien de lisible, ce qui est la
+   * définition du « flou total » que ce mouvement demande — et l'on reste sous le
+   * seuil au-delà duquel un flou de pleine surface commence à coûter au rendu.
+   */
+  --blur-blink: 0.75rem;
+
+  /*
    * L'icône Réglages, au survol : un dévissage, pas un appui. Plus long que
    * `--dur-ui` parce que la pièce doit se lire en train de tourner plutôt que
    * de sauter d'une position à l'autre ; en deçà de `--dur-move`, qui appartient
@@ -1239,6 +1278,142 @@ body {
   }
   99%, 100% {
     translate: var(--lid-open);
+  }
+}
+
+/* --------------------------------------------------------------------------
+ * Le clignement — le seuil franchi comme un œil qui se ferme et rouvre
+ *
+ * C'est la même grammaire que le regard de la marque, portée cette fois par
+ * l'écran entier. La marque est un œil qu'on regarde ; ici, **c'est le produit
+ * qui cligne**, et le lecteur est dedans plutôt que devant. Rien ne se déplace :
+ * la seule transition du produit dont ce ne soit pas le sujet.
+ *
+ * **Les quatre temps, et l'ordre dans lequel ils se lisent.** L'écran se
+ * défocalise jusqu'à ce que plus rien ne soit lisible ; le fond monte alors et
+ * ferme ; la carte du jour prend la place derrière ; le fond redescend ; l'œil
+ * accommode. La bascule est un instant, pas un palier — voir les tokens.
+ *
+ * **Pourquoi ce mouvement-là à cet endroit-là.** Le seuil n'est pas une
+ * navigation : on ne change ni d'écran, ni de niveau, ni de coupe, et l'adresse
+ * ne bouge pas. Les quatre sens de circulation du produit n'ont donc rien à en
+ * dire — un glissement latéral y aurait raconté un déplacement qui n'a pas lieu.
+ * Ce qui a lieu est un changement de **ce qu'on regarde** sur place, et c'est
+ * exactement ce qu'un œil fait quand il cligne : il ne se déplace pas, il coupe
+ * et rouvre sur autre chose.
+ *
+ * **Les quatre bornes, et il faut qu'elles tiennent ensemble.**
+ *
+ * — *Elle est unique, et elle est nommée.* Un fondu au fond est la facilité la
+ *   plus contagieuse après l'attente fabriquée : il rend n'importe quel geste
+ *   solennel sans rien coûter à écrire. Il y en a un, sur le seul geste du
+ *   produit qui soit un seuil, et le §7 de `docs/ux-direction.md` dit ce qu'il
+ *   achète. Un onglet, un lien, une liste qui s'ouvre ne sont pas des seuils.
+ * — *Elle ne retient que ce qu'elle remplace.* La carte est montée derrière le
+ *   fond et non après lui : à l'instant où le fond redescend, elle est déjà là,
+ *   entière et à sa place. Ce qui est masqué pendant 720 ms est un écran qu'on
+ *   vient de quitter, pas un contenu qu'on attend.
+ * — *Elle ne se joue qu'une fois par ouverture.* Le seuil ne se retraverse pas
+ *   dans la même session — `src/lib/app-entry.ts` en décide —, et changer
+ *   d'onglet ne le rejoue pas. C'est la règle de fréquence du §7 : une durée
+ *   n'est pas une dépense, une fréquence de mouvement en est une.
+ * — *Elle n'a pas lieu en mouvement réduit.* Un flou de pleine surface est
+ *   précisément ce que cette préférence existe pour retirer, et le repli n'est
+ *   pas un fondu plus sage : c'est l'échange direct, sans voile. Il est décidé
+ *   en JavaScript et non ici, parce que c'est la machine à états qui doit sauter
+ *   le voile, et non le voile qui doit s'animer plus vite — voir `Blink.tsx`.
+ *
+ * **Deux partitions et non une jouée à l'envers.** `blink-open` est le miroir
+ * géométrique de `blink-shut` — sa charnière est à 100 % moins la sienne —, mais
+ * elle est écrite en clair plutôt que jouée en `reverse`. Une animation inversée
+ * inverse aussi ses courbes : la sortie douce y devient une entrée douce, et
+ * l'accommodation démarrerait en retard sur le geste qui l'a demandée. C'est la
+ * première des règles d'exécution du §7 — aucune courbe entrante —, et c'est
+ * `npm test` qui vérifie que les deux partitions restent des miroirs.
+ *
+ * **Le voile passe au-dessus de la navigation, et la barre se défocalise avec le
+ * reste.** Elle est ancrée à 40 et le voile à 60 ; son `view-transition-name` ne
+ * la sort pas de l'arrière-plan que le flou capture — mesuré, parce que la
+ * promotion en surface de rendu qu'un tel nom entraîne rendait l'inverse
+ * plausible. Ce n'est pas une exception à la règle qui la fige pendant une
+ * traversée d'écran : elle ne bouge pas non plus ici, elle est simplement vue à
+ * travers l'œil qui se ferme. Une barre restée nette pendant que le reste
+ * s'efface aurait démenti le mouvement d'un seul détail.
+ * -------------------------------------------------------------------------- */
+
+.blink-veil {
+  position: fixed;
+  inset: 0;
+  /* Au-dessus de la navigation (40), sous la feuille de partage (50), qui est un
+     objet manipulable et ne coexiste jamais avec le seuil. */
+  z-index: 60;
+  /* Une transition en cours n'avale pas les clics — règle d'exécution du §7. */
+  pointer-events: none;
+  background-color: transparent;
+}
+
+.blink-veil[data-phase="shut"] {
+  animation: blink-shut var(--dur-blink-shut) both;
+}
+
+.blink-veil[data-phase="open"] {
+  animation: blink-open var(--dur-blink-open) both;
+}
+
+/*
+ * Les courbes sont dans les images clés et non dans le raccourci : chaque temps
+ * porte la sienne. La défocalisation prend `--ease-lift`, qui part vite — le
+ * flou suit le doigt ; le fond prend `--ease-out-soft`, qui ferme sans claquer.
+ */
+@keyframes blink-shut {
+  0% {
+    backdrop-filter: blur(0px);
+    background-color: transparent;
+    animation-timing-function: var(--ease-lift);
+  }
+  62% {
+    backdrop-filter: blur(var(--blur-blink));
+    background-color: transparent;
+    animation-timing-function: var(--ease-out-soft);
+  }
+  100% {
+    backdrop-filter: blur(var(--blur-blink));
+    background-color: var(--paper);
+  }
+}
+
+@keyframes blink-open {
+  0% {
+    backdrop-filter: blur(var(--blur-blink));
+    background-color: var(--paper);
+    animation-timing-function: var(--ease-out-soft);
+  }
+  38% {
+    backdrop-filter: blur(var(--blur-blink));
+    background-color: transparent;
+    animation-timing-function: var(--ease-lift);
+  }
+  100% {
+    backdrop-filter: blur(0px);
+    background-color: transparent;
+  }
+}
+
+/*
+ * `prefers-reduced-transparency` — la même préférence que celle qui rend le
+ * voile de la feuille opaque, et le même raisonnement : ce qui est demandé est
+ * qu'une surface cesse de laisser voir au travers. Le flou tombe, le fondu
+ * reste. Le clignement garde alors ses deux temps et son rythme ; il perd
+ * l'accommodation, qui est ce que cette préférence retire.
+ *
+ * C'est l'amplitude qu'on annule, et non la propriété : une déclaration posée
+ * ici ne battrait pas les images clés — une animation en cours ne cède qu'à un
+ * `!important` —, alors qu'une amplitude nulle traverse `var()` et laisse la
+ * partition intacte. Retirer la valeur plutôt que la règle, comme ailleurs.
+ */
+@media (prefers-reduced-transparency: reduce) {
+  :root {
+    --blur-blink: 0px;
   }
 }
 
