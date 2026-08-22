@@ -181,8 +181,8 @@
  * **48 rem — l'écran cesse d'être un téléphone.** La largeur n'est plus la
  * ressource rare : la colonne d'un écran de liste s'ouvre à `--container-page`
  * et les listes passent à deux colonnes. Ce qui se lit reste borné à
- * `--container-read` : une ligne de 736 px porterait 85 signes, au-delà de la
- * fourchette de 45 à 75.
+ * `--container-read` : la ligne y ferait 688 px et porterait 79 signes, au-delà
+ * de la fourchette de 45 à 75.
  *
  * **64 rem — l'écran a un curseur.** La barre basse devient un rail, la carte
  * récupère la hauteur que la barre retenait, sa base typographique monte de
@@ -578,7 +578,7 @@ body {
  *
  * **Deux colonnes, et pas trois.** Sur 688 px utiles, deux colonnes en donnent
  * 328 à chacune, où la phrase de situation d'une ligne tient en deux lignes de
- * texte. Trois la feraient tomber à 210 px et à quatre lignes : la liste
+ * texte. Trois la feraient tomber à 208 px et à quatre lignes : la liste
  * gagnerait en hauteur ce que la troisième colonne prétendait lui faire
  * économiser. Le rythme vertical, lui, ne change pas — c'est le même écart
  * entre deux frères, qu'ils soient empilés ou côte à côte.

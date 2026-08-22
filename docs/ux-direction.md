@@ -837,10 +837,12 @@ Reste le rail, 104 px, deux entrées, et rien d'autre :
   l'ordre de tabulation, lui, en dépend. Un rail annoncé au bord gauche et
   atteint au clavier après l'écran entier aurait été la navigation la plus
   visible et la plus longue à joindre.
-- **Le contenu se centre dans ce qui reste, pas dans la fenêtre.** À 1440, la
-  colonne est donc décalée de 40 px vers la droite par rapport au centre
-  optique. C'est le comportement attendu d'une mise en page à rail, et le tenir
-  sur les neuf écrans vaut mieux qu'une exception optique sur celui du jour.
+- **Le contenu se centre dans ce qui reste, pas dans la fenêtre.** La colonne
+  est donc décalée vers la droite de **52 px** — la moitié de la largeur du
+  rail, et cette valeur ne dépend ni de la largeur de la fenêtre ni de celle de
+  la colonne : le centre de ce qui reste vaut toujours `rail / 2 + fenêtre / 2`.
+  C'est le comportement attendu d'une mise en page à rail, et le tenir sur les
+  neuf écrans vaut mieux qu'une exception optique sur celui du jour.
 
 ### Les trois mesures
 
@@ -865,7 +867,7 @@ deux colonnes. C'est le cas nominal, pas l'exception.
 
 **Deux colonnes, et pas trois.** Sur 688 px utiles, deux colonnes en donnent 328
 à chacune, où la phrase de situation d'une ligne tient en deux lignes de texte.
-Trois la feraient tomber à 210 px et à quatre lignes : la liste gagnerait en
+Trois la feraient tomber à 208 px et à quatre lignes : la liste gagnerait en
 hauteur ce que la troisième colonne prétendait lui faire économiser.
 
 ### La carte du jour : la cérémonie ne bouge pas
@@ -944,15 +946,39 @@ Listé plutôt que supposé :
 - La lisibilité en plein soleil, coût connu d'une application sans mode clair.
 - La zone sûre sur un appareil à encoche, `env(safe-area-inset-bottom)` valant zéro
   sur un navigateur de bureau.
-- Le rail et les deux colonnes ont été vérifiés sur Chromium, à 1440 × 900,
-  1024 × 768, 820 × 1180 et 390 × 844 : mise en page, ordre de tabulation et
-  absence d'erreur console. Restent à voir sur un poste réel le survol à la
-  souris sur les lignes de liste — la surface levée est la seule affordance de
-  contact —, et le rendu du filet d'un pixel du repère de position sur un écran
-  non HiDPI.
-- Le décalage de 40 px du contenu vers la droite, conséquence assumée du
+- Le rendu du filet d'un pixel du repère de position sur un écran non HiDPI. Il
+  a été rendu et mesuré à un pixel au facteur d'échelle 1 ; ce qu'un écran réel
+  en fait n'est pas la même question.
+- Le décalage de 52 px du contenu vers la droite, conséquence assumée du
   centrage dans ce qui reste : à confirmer qu'il ne se remarque pas sur l'écran
   du jour, qui est le seul où la colonne est isolée dans le noir.
 - L'amplitude plafonnée à 8 % : la valeur est raisonnée, pas mesurée sur des
   yeux. C'est le réglage à reprendre en premier si le déplacement paraît court
   sur un grand écran.
+
+### Ce que le desktop a réellement établi
+
+Distingué du reste, parce que la méthode suivie interdit de compter une
+vérification qui n'a pas eu lieu — et que la réciproque vaut aussi : laisser en
+attente ce qui est fait rend la liste inutile.
+
+Mesuré au pilote de navigateur **sur l'artefact publié** — le build local a la
+même empreinte de fichier CSS que celui que la CI a déployé, `1mlm4i-vcc5m4` :
+
+| Ce qui est établi | Mesure |
+|---|---|
+| Le rail | 104 px, collé à gauche, pleine hauteur ; réserve du contenu 104 px |
+| Ses cibles | 104 × 66 px, au-dessus des 44 px de WCAG 2.5.8 |
+| Le focus au clavier | contour de 2 px, décalé de 3 px, sur les entrées du rail |
+| L'ordre de tabulation | `Aujourd'hui → Explorer → Réglages → onglets`, la navigation d'abord |
+| Le survol d'une ligne de liste | passe de transparent à `--paper-raised` `#121212`, cible de 328 × 120 px |
+| Les listes à deux colonnes | `328px 328px` exactement, à partir de 768 px |
+| Les quatre largeurs charnières | 767 et 768 pour la colonne et la grille, 1023 et 1024 pour le rail et la carte |
+| La carte | 448 px et 16 px jusqu'à 1023 ; 544 px et 18 px à partir de 1024, soit 55 signes par ligne |
+| L'ancrage de la navigation | géométrie identique avant et après un changement d'écran |
+
+Et le comportement que la collision de deux travaux avait laissé sans preuve : le
+seuil se dépense au franchissement **par le rail comme par la barre**. Les sept
+étapes — affichage, départ vers Explorer, retour par la navigation, retour par le
+geste du navigateur, franchissement, absence de rejeu, entrée directe ailleurs
+qu'au point d'entrée — passent à l'identique à 1440 × 900 et à 390 × 844.
