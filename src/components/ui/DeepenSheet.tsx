@@ -111,7 +111,7 @@ export function DeepenSheet({ copied, text, onClose }: DeepenSheetProps) {
          */}
         <p role="status" className="mt-2 text-[14px] leading-relaxed text-ink-soft">
           {inClipboard
-            ? "La carte, ses sources et les instructions sont dans le presse-papiers. Ouvrez une IA, puis collez."
+            ? "Le concept, ses sources et les instructions sont dans le presse-papiers. Ouvrez une IA, puis collez."
             : "La copie n'a pas abouti. Réessayez, ou passez par le partage du système."}
         </p>
 

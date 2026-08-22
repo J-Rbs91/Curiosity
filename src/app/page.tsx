@@ -134,9 +134,8 @@ export default function TodayPage() {
             Le corpus est en cours de constitution.
           </h1>
           <p className="text-md leading-relaxed text-ink-soft">
-            Aucun concept n&apos;a encore terminé son instruction documentaire. Rien ne
-            s&apos;affichera ici tant qu&apos;une carte n&apos;aura pas été établie sur ses
-            sources.
+            Aucun concept n&apos;a encore terminé son instruction documentaire. Le premier
+            s&apos;affichera ici dès qu&apos;il aura été établi sur ses sources.
           </p>
         </div>
       </Screen>
