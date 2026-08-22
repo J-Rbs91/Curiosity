@@ -63,8 +63,14 @@ export function DeepeningDetail() {
        * Le remplissage latéral passe de 24 à 20 px, du côté où la place manque vraiment :
        * sur un téléphone, la largeur est bornée par l'appareil et c'est la seule marge de
        * manœuvre qui reste. Elle ne rend que huit pixels, et c'est tout ce qu'il y a.
+       *
+       * Au-delà de 48 rem, la colonne rejoint `--container-read`, la mesure de lecture de
+       * l'application. Ce n'est pas une seconde décision : c'est la même, prise une fois
+       * ici quand la place manquait, et généralisée depuis à tout ce qui se lit ligne à
+       * ligne. L'écart des trois signes qu'elle ajoute — 52 à 55 — n'est pas ce qui
+       * justifie le changement ; c'est de cesser d'avoir une largeur propre à cet écran.
        */}
-      <article className="mx-auto max-w-[32rem] px-5 pt-10 pb-12">
+      <article className="mx-auto max-w-[32rem] px-5 pt-10 pb-12 md:max-w-read">
         {/*
          * Le repli est la fiche du concept, avec son `?c=`. Sans lui, une arrivée directe ou
          * un rechargement remonterait vers `/explore/concept` sans slug, c'est-à-dire vers

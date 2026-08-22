@@ -20,7 +20,7 @@ export function ThemeDetail({ slug }: { slug: string }) {
 
   return (
     <Screen>
-      <div className="mx-auto max-w-md px-6 pt-10 pb-12">
+      <div className="mx-auto max-w-md px-6 pt-10 pb-12 md:max-w-page">
         {/* Le retour ramène sur l'onglet d'où l'on vient, pas sur le premier. */}
         <BackLink />
 
@@ -34,7 +34,7 @@ export function ThemeDetail({ slug }: { slug: string }) {
         <SituatingText lead={theme.tagline} full={theme.description} label="la description" />
 
         {contributingAuthors.length > 0 && (
-          <p className="mt-4 text-sm text-ink-faint">
+          <p className="mt-4 max-w-read text-sm text-ink-faint">
             {contributingAuthors.map((a) => a.name).join(", ")}
           </p>
         )}
@@ -52,11 +52,11 @@ export function ThemeDetail({ slug }: { slug: string }) {
           <ListHeading count={themeConcepts.length}>Concepts</ListHeading>
 
           {themeConcepts.length === 0 ? (
-            <p className="mt-4 text-sm leading-relaxed text-ink-faint">
+            <p className="mt-4 max-w-read text-sm leading-relaxed text-ink-faint">
               Aucun concept de ce thème n&apos;a encore terminé son instruction documentaire.
             </p>
           ) : (
-            <ul className="stagger rows anchored">
+            <ul className="stagger rows rows-wide anchored">
               {themeConcepts.map((concept) => (
                 /* L'accroche sous le titre : elle dit ce qu'on trouvera derrière, ce qu'un
                    titre de concept seul ne fait jamais. */

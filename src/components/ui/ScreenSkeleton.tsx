@@ -1,24 +1,36 @@
 /**
- * La place que le contenu va prendre, avant qu'il arrive.
+ * La place que l'écran va prendre, en attendant qu'il l'occupe.
  *
- * Deux écrans ne pré-rendent rien : la carte du jour, qui a besoin du `localStorage` pour
- * savoir quel concept montrer, et la fiche d'un concept, dont l'identifiant est dans la
- * chaîne de recherche — `useSearchParams` impose une frontière de suspension sur une page
- * exportée statiquement. Leur HTML ne contenait donc, texte visible, que la barre de
- * navigation. Sur une connexion lente, celui qui suit un lien partagé regardait un écran
- * noir sans titre et sans message, et rien ne distinguait ce délai d'une panne.
+ * Deux écrans n'ont rien à pré-rendre — la carte du jour a besoin du `localStorage`, la
+ * fiche de la chaîne de recherche —, et un troisième attend le chargement du module des
+ * textes longs. Sans cette réserve, leur HTML ne contient que la navigation, et un lien
+ * partagé ouvre sur un écran noir que rien ne distingue d'une panne.
  *
- * Ce squelette ne raccourcit pas l'attente : il la rend lisible, et il réserve la place
- * pour que l'arrivée du texte ne déplace rien. C'est aussi pourquoi ce n'est pas un
- * tourniquet — un tourniquet dit qu'on attend, un squelette dit ce qu'on attend.
- *
- * Il ne pulse pas. La règle du produit est qu'aucune surface ne bouge sans qu'un état ait
- * changé, et une animation d'attente ne survit pas à cette règle : elle attirerait l'œil
- * sur le vide au moment précis où il cherche le texte.
+ * La mesure est un paramètre parce que la réserve doit faire la largeur de ce qu'elle
+ * réserve : sur un grand écran, un squelette de 448 px suivi d'une liste de 736 px
+ * produirait exactement le saut de mise en page qu'un squelette existe pour éviter. Les
+ * trois valeurs sont celles des trois familles d'écrans, et leurs seuils diffèrent pour la
+ * raison expliquée dans `globals.css` — la carte attend 64 rem parce que sa taille de texte
+ * dépend de la hauteur, les autres s'élargissent dès 48.
  */
-export function ScreenSkeleton({ lines = 3 }: { lines?: number }) {
+const MEASURES = {
+  /** La carte du jour. */
+  card: "max-w-md lg:max-w-read",
+  /** Un texte suivi : fiche de concept, approfondissement. */
+  read: "max-w-md md:max-w-read",
+  /** Un en-tête et sa liste. */
+  page: "max-w-md md:max-w-page",
+} as const;
+
+export function ScreenSkeleton({
+  lines = 3,
+  measure = "read",
+}: {
+  lines?: number;
+  measure?: keyof typeof MEASURES;
+}) {
   return (
-    <div className="mx-auto max-w-md px-6 pt-10" aria-hidden>
+    <div className={`mx-auto px-6 pt-10 ${MEASURES[measure]}`} aria-hidden>
       <div className="h-8 w-2/3 rounded-lg bg-paper-raised" />
       <div className="mt-5 space-y-3">
         {Array.from({ length: lines }, (_, i) => (

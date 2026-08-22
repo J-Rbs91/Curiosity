@@ -27,7 +27,7 @@ export function DomainDetail({ slug }: { slug: string }) {
 
   return (
     <Screen>
-      <div className="mx-auto max-w-md px-6 pt-10 pb-12">
+      <div className="mx-auto max-w-md px-6 pt-10 pb-12 md:max-w-page">
         <BackLink />
 
         {/*
@@ -57,12 +57,12 @@ export function DomainDetail({ slug }: { slug: string }) {
            * lecteur doit distinguer « il n'y a rien ici » de « il n'y a rien encore ».
            */}
           {domainThemes.length === 0 ? (
-            <p className="mt-4 text-sm leading-relaxed text-ink-faint">
+            <p className="mt-4 max-w-read text-sm leading-relaxed text-ink-faint">
               Corpus en cours de constitution. Ce domaine est ouvert, aucun de ses thèmes
               n&apos;a encore été instruit.
             </p>
           ) : (
-            <ul className="stagger rows anchored">
+            <ul className="stagger rows rows-wide anchored">
               {domainThemes.map((theme) => (
                 <ListRow
                   key={theme.id}

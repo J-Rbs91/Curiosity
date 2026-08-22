@@ -17,7 +17,7 @@ export function AuthorDetail({ slug }: { slug: string }) {
 
   return (
     <Screen>
-      <div className="mx-auto max-w-md px-6 pt-10 pb-12">
+      <div className="mx-auto max-w-md px-6 pt-10 pb-12 md:max-w-page">
         <BackLink />
 
         <h1 className="mt-6 font-serif-display text-2xl font-semibold leading-tight text-ink">
@@ -31,11 +31,11 @@ export function AuthorDetail({ slug }: { slug: string }) {
           <ListHeading count={authorConcepts.length}>Concepts</ListHeading>
 
           {authorConcepts.length === 0 ? (
-            <p className="mt-4 text-sm leading-relaxed text-ink-faint">
+            <p className="mt-4 max-w-read text-sm leading-relaxed text-ink-faint">
               Aucun concept de cet auteur n&apos;a encore terminé son instruction documentaire.
             </p>
           ) : (
-            <ul className="stagger rows anchored">
+            <ul className="stagger rows rows-wide anchored">
               {authorConcepts.map((concept) => (
                 <ListRow
                   key={concept.id}

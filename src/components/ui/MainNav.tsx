@@ -1,5 +1,6 @@
 "use client";
 
+import type { CSSProperties } from "react";
 import { usePathname } from "next/navigation";
 import { TreeLink } from "@/components/navigation/TreeLink";
 import { BookOpen, Compass } from "lucide-react";
@@ -9,13 +10,36 @@ import { rootSectionOf } from "@/lib/navigation-tree";
  * Deux destinations. L'écran de progression a disparu avec les compteurs qu'il
  * affichait : le suivi continue d'exister — c'est lui qui choisit le concept du
  * jour — mais il n'a plus à être consulté ni géré.
+ *
+ * Réglages n'en fait pas partie, et n'y entre pas en devenant un rail. C'est un
+ * enfant d'Explorer dans l'arbre, et il s'atteint par la roue de son en-tête :
+ * lui ouvrir une seconde porte ferait deux chemins vers un écran qu'on visite
+ * une fois, et `rootSectionOf` ne saurait plus dire quelle branche allumer.
  */
 const ITEMS = [
   { href: "/", label: "Aujourd'hui", icon: BookOpen },
   { href: "/explore", label: "Explorer", icon: Compass },
 ] as const;
 
-export function BottomNav() {
+/**
+ * La navigation principale : une barre au bas du téléphone, un rail au bord
+ * gauche de l'écran de bureau.
+ *
+ * **Un seul composant, et c'est le point.** Deux arbres conditionnés par la
+ * largeur auraient dupliqué la liste des entrées, la règle de la branche active
+ * et le repère de position — trois mécanismes qui n'ont aucune raison de
+ * différer d'un appareil à l'autre. Ce qui diffère est la géométrie, et elle
+ * seule : elle est dans `globals.css`, section « Charpente », où le seuil se
+ * lit avec son motif.
+ *
+ * Le composant est **en tête du `AppShell`**, avant le contenu. Sa position
+ * visuelle ne change pas — il est `fixed` dans les deux cas — mais l'ordre de
+ * tabulation, lui, suit le document : un rail annoncé à gauche et atteint au
+ * clavier après tout l'écran aurait été la navigation la plus visible et la
+ * plus longue à joindre. Deux entrées se traversent sans coût sur téléphone,
+ * où le clavier est de toute façon l'exception.
+ */
+export function MainNav() {
   const pathname = usePathname();
   /*
    * L'entrée allumée est celle de la **branche** où l'on se trouve, pas celle dont
@@ -31,11 +55,9 @@ export function BottomNav() {
   const activeIndex = ITEMS.findIndex((item) => item.href === section);
 
   /*
-   * Deux choses se jouent sur cette ligne de classes.
-   *
-   * `bottom-nav` porte le nom de transition de vue — il est défini dans
-   * `globals.css`, avec la raison. Il sort la barre de l'instantané racine, sans
-   * quoi elle traverse chaque changement d'écran au lieu d'y rester immobile.
+   * `main-nav` porte à la fois la géométrie et le nom de transition de vue, qui
+   * sort la navigation de l'instantané racine : sans lui, elle traverserait
+   * chaque changement d'écran au lieu d'y rester immobile.
    *
    * Et le fond est **plein**. Il était à 90 % avec un flou d'arrière-plan, ce qui
    * laissait passer un fantôme du texte défilant dessous : sur un fond noir pur, un
@@ -44,31 +66,32 @@ export function BottomNav() {
    * défilement pour un résultat entièrement recouvert.
    */
   return (
-    <nav
-      aria-label="Navigation principale"
-      className="bottom-nav fixed inset-x-0 bottom-0 z-40 bg-paper"
-      style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
-    >
-      <div className="relative mx-auto max-w-md">
-        {/*
-         * Le repère de position est une barre fine qui glisse. Il double la
-         * couleur et la graisse de l'entrée active — le mouvement n'est jamais
-         * le seul porteur de l'information.
-         */}
+    <nav aria-label="Navigation principale" className="main-nav">
+      {/*
+       * Le cadre du repère de position, et donc la surface dont les
+       * pourcentages de `.nav-marker` sont pris. Sur téléphone il est centré et
+       * borné comme le contenu ; dans le rail il occupe toute la largeur, et sa
+       * hauteur est celle des deux entrées empilées.
+       */}
+      <div
+        className="relative mx-auto max-w-md lg:mx-0 lg:max-w-none"
+        style={
+          {
+            "--nav-index": String(Math.max(activeIndex, 0)),
+            "--nav-count": String(ITEMS.length),
+          } as CSSProperties
+        }
+      >
         <span
           aria-hidden
-          className="absolute top-0 h-px bg-accent transition-transform motion-ui"
-          style={{
-            width: `${100 / ITEMS.length}%`,
-            transform: `translateX(${Math.max(activeIndex, 0) * 100}%)`,
-            opacity: activeIndex < 0 ? 0 : 1,
-          }}
+          className="nav-marker"
+          style={{ opacity: activeIndex < 0 ? 0 : 1 }}
         />
-        <ul className="flex items-stretch justify-around">
+        <ul className="flex items-stretch justify-around lg:flex-col lg:justify-start">
           {ITEMS.map(({ href, label, icon: Icon }, index) => {
             const active = index === activeIndex;
             return (
-              <li key={href} className="flex-1">
+              <li key={href} className="flex-1 lg:flex-none">
                 <TreeLink
                   href={href}
                   aria-current={active ? "page" : undefined}
