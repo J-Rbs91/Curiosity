@@ -2,7 +2,8 @@
 
 import { useEffect } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
-import { readTrail, reconcileTrail, writeTrail } from "@/lib/navigation-tree";
+import { readTrail, reconcileTrail, samePath, writeTrail } from "@/lib/navigation-tree";
+import { syncPosition } from "@/lib/navigation-position";
 import { labelFor } from "@/lib/navigation-labels";
 
 /**
@@ -22,7 +23,16 @@ export function TrailKeeper() {
   useEffect(() => {
     const recherche = searchParams.toString();
     const href = recherche ? `${pathname}?${recherche}` : pathname;
-    writeTrail(reconcileTrail(readTrail(), { href, pathname, label: labelFor(href) }));
+    const trail = readTrail();
+    /*
+     * La place que la trace retient pour ce chemin, quand elle en retient une. Elle ne sert
+     * qu'au cas où l'entrée aurait perdu son numéro — Next réécrit `history.state` à chaque
+     * navigation — et qu'on y revienne par une traversée : sans ce filet, l'entrée serait
+     * renumérotée comme une entrée neuve, et la remontée dépilerait de travers.
+     */
+    const connue = trail.find((e) => samePath(e.pathname, pathname))?.position ?? null;
+    const position = syncPosition(connue);
+    writeTrail(reconcileTrail(trail, { href, pathname, label: labelFor(href), position }));
   }, [pathname, searchParams]);
 
   return null;

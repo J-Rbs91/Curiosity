@@ -1,9 +1,11 @@
 "use client";
 
-import type { ReactNode } from "react";
+import type { MouseEvent, ReactNode } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { intentBetween, readTrail, stepsBackTo } from "@/lib/navigation-tree";
+import { intentBetween } from "@/lib/navigation-tree";
+import { noteGeste } from "@/lib/navigation-position";
+import { climbTo } from "@/components/navigation/climb";
 import { SCREEN_MOTION } from "@/components/motion/screen-motion";
 
 interface TreeLinkProps {
@@ -29,11 +31,26 @@ interface TreeLinkProps {
  * `navigation-tree.ts`, et tous les liens qui y mènent se comportent
  * correctement sans qu'il ait à y penser. C'est ce qui empêche le défaut de
  * revenir écran par écran.
+ *
+ * **Le geste est annoncé avant d'être fait.** Empiler ouvre une place de plus dans la pile,
+ * remplacer réoccupe la même, et le navigateur ne dit ni l'un ni l'autre. C'est ici, et
+ * seulement ici, qu'on le sait — d'où `noteGeste`, que `navigation-position.ts` consomme
+ * pour numéroter l'entrée qui vient. Sans ce numéro, une remontée ne saurait pas de combien
+ * de crans dépiler, et c'est de là que venait un retour qui atterrissait ailleurs que là où
+ * il l'annonçait.
  */
 export function TreeLink({ href, children, ...rest }: TreeLinkProps) {
   const router = useRouter();
   const pathname = usePathname();
   const intent = intentBetween(pathname, href.split("?")[0]);
+
+  /*
+   * Les clics qui ne sont pas une navigation ordinaire — nouvel onglet, nouvelle fenêtre,
+   * téléchargement — restent au navigateur. Ils n'annoncent donc aucun geste : l'écran
+   * courant ne bouge pas, et une annonce sans navigation ferait mal numéroter la suivante.
+   */
+  const navigationOrdinaire = (event: MouseEvent) =>
+    !(event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) && event.button === 0;
 
   if (intent === "climb") {
     return (
@@ -41,33 +58,9 @@ export function TreeLink({ href, children, ...rest }: TreeLinkProps) {
         {...rest}
         href={href}
         onClick={(event) => {
-          // Laisser au navigateur les clics qui ne sont pas une navigation
-          // ordinaire : nouvel onglet, nouvelle fenêtre, téléchargement.
-          if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-          if (event.button !== 0) return;
+          if (!navigationOrdinaire(event)) return;
           event.preventDefault();
-
-          const pas = stepsBackTo(readTrail(), href.split("?")[0]);
-          if (pas !== null) {
-            /*
-             * Dépiler plutôt que naviguer. C'est ce qui fait que la pile reste
-             * le chemin de la racine au nœud courant, et donc que le bouton
-             * retour du système continue de remonter l'arbre après ce geste.
-             *
-             * Une remontée n'emporte aucun type de transition — le navigateur
-             * pilote lui-même une traversée. C'est pourquoi l'animation par
-             * défaut d'un écran est celle du retour : voir Screen.
-             */
-            window.history.go(-pas);
-          } else {
-            /*
-             * Le nœud visé n'est pas sous nous dans la pile : arrivée directe
-             * par une URL partagée, ou rechargement. Dépiler à l'aveugle
-             * sortirait de l'application, donc on remplace l'entrée courante —
-             * la pile ne grandit pas, ce qui est le point important.
-             */
-            router.replace(href, { transitionTypes: SCREEN_MOTION.back });
-          }
+          climbTo(router, href);
         }}
       >
         {children}
@@ -82,14 +75,30 @@ export function TreeLink({ href, children, ...rest }: TreeLinkProps) {
      * ajoutait une entrée, et il fallait dix appuis sur retour pour sortir.
      */
     return (
-      <Link {...rest} href={href} replace scroll={false} transitionTypes={SCREEN_MOTION.lateral}>
+      <Link
+        {...rest}
+        href={href}
+        replace
+        scroll={false}
+        transitionTypes={SCREEN_MOTION.lateral}
+        onClick={(event) => {
+          if (navigationOrdinaire(event)) noteGeste("remplace");
+        }}
+      >
         {children}
       </Link>
     );
   }
 
   return (
-    <Link {...rest} href={href} transitionTypes={SCREEN_MOTION.deeper}>
+    <Link
+      {...rest}
+      href={href}
+      transitionTypes={SCREEN_MOTION.deeper}
+      onClick={(event) => {
+        if (navigationOrdinaire(event)) noteGeste("empile");
+      }}
+    >
       {children}
     </Link>
   );
