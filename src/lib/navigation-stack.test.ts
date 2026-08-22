@@ -212,6 +212,35 @@ describe("pile réelle et trace", () => {
     expect(apres.trail.map((e) => e.href)).toEqual(["/"]);
   });
 
+  it("n'hérite pas d'une trace dont la pile ne subsiste pas", () => {
+    /*
+     * Le cas mesuré au navigateur, et celui du défaut rapporté.
+     *
+     * La trace vit dans le stockage de session ; la pile, elle, appartient au document. Une
+     * application relancée sur un écran profond — lien partagé, dossier « Approfondir »,
+     * PWA rouverte sur sa dernière adresse — retrouve donc la trace de la session
+     * précédente et une pile qui repart de son point d'entrée. La trace annonçait
+     * « Explorer » juste au-dessus ; sous nous il n'y avait que la racine, et le
+     * dépilement d'un cran ramenait sur Aujourd'hui.
+     *
+     * La place tranche : l'écran chargé à froid en occupe une, et rien de la session
+     * d'avant n'est en dessous.
+     */
+    const heritee: TrailEntry[] = [
+      { href: "/", pathname: "/", level: 0, label: "Aujourd'hui", position: 0 },
+      { href: "/explore/", pathname: "/explore/", level: 1, label: "Explorer", position: 1 },
+    ];
+    const froid = reconcileTrail(heritee, {
+      href: "/explore/concept/approfondir/?c=a",
+      pathname: "/explore/concept/approfondir/",
+      label: "Régulation de contrôle et régulation autonome",
+      position: 0,
+    });
+    expect(froid.map((e) => e.href)).toEqual(["/explore/concept/approfondir/?c=a"]);
+    expect(parentEntry(froid)).toBeNull();
+    expect(stepsBackTo(froid, "/explore", 0)).toBeNull();
+  });
+
   it("remplace plutôt que dépiler quand les places manquent", () => {
     // Trace écrite par une version antérieure, ou stockage refusé : aucune place inscrite.
     const sansPlace: TrailEntry[] = [
