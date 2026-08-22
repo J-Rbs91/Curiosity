@@ -207,8 +207,8 @@ export function DeepeningDetail() {
          */}
         <div style={{ marginTop: "var(--gap-group)" }}>
           <p className="reading-aside text-sm leading-relaxed text-ink-soft">
-            Ce texte s&apos;arrête là où s&apos;arrête le corpus de la carte. Pour le
-            prolonger, emportez la carte et ses sources vers l&apos;IA de votre choix.
+            Ce texte s&apos;arrête là où s&apos;arrêtent ses sources. Pour le prolonger,
+            emportez-les avec le concept vers l&apos;IA de votre choix.
           </p>
           <div className="mt-4">
             <HandoffButton concept={concept} />
