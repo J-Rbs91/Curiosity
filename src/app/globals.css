@@ -100,6 +100,14 @@
   --dur-mark: 720ms;  /* moment marquant : le concept qu'on vient de travailler */
 
   /*
+   * L'icône Réglages, au survol : un dévissage, pas un appui. Plus long que
+   * `--dur-ui` parce que la pièce doit se lire en train de tourner plutôt que
+   * de sauter d'une position à l'autre ; en deçà de `--dur-move`, qui appartient
+   * au glissement d'écran, pour ne pas faire attendre un geste réversible.
+   */
+  --dur-unscrew: 420ms;
+
+  /*
    * Le cran d'en dessous : changer de coupe d'un même écran.
    *
    * Deux durées et non trois, parce que les deux coupes ne se croisent pas —
@@ -946,6 +954,34 @@ body {
 
 .press-soft:active:not(:disabled) {
   transform: scale(0.985);
+}
+
+/* --------------------------------------------------------------------------
+ * L'icône Réglages — un dévissage, pas un engrenage
+ *
+ * Au survol, l'icône tourne à 180° dans le sens antihoraire en grossissant de
+ * 20 % : le geste d'une pièce qu'on commence à dévisser et qui se rapproche,
+ * pas celui d'un engrenage qui tourne sur lui-même. La rotation et
+ * l'agrandissement voyagent dans la même transition pour rester
+ * synchronisés — deux transitions séparées dériveraient l'une de l'autre au
+ * moindre changement de durée.
+ *
+ * `--ease-firm` porte le mouvement plutôt que `--ease-out-soft` : symétrique
+ * et sans dépassement, elle lit comme un effort mécanique constant, là où la
+ * courbe de sortie douce aurait donné un élan puis un flottement — un rebond
+ * que le geste d'un pas de vis ne fait pas. Le retour, à la sortie du
+ * pointeur, est la même transition jouée en sens inverse : aucune image
+ * intermédiaire n'est perdue, quel que soit l'instant où le curseur quitte
+ * l'icône.
+ * -------------------------------------------------------------------------- */
+
+.settings-icon {
+  transition: transform var(--dur-unscrew) var(--ease-firm);
+  transform-origin: 50% 50%;
+}
+
+.settings-trigger:hover .settings-icon {
+  transform: rotate(-180deg) scale(1.2);
 }
 
 /* --------------------------------------------------------------------------
