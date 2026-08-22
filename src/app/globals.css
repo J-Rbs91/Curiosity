@@ -980,29 +980,56 @@ body {
 }
 
 /*
- * Le livre. Deux propriétés bougent, et pas une de plus : le plat de gauche bascule autour du
- * dos, le volume se recentre. Aucune des deux ne provoque de remise en page.
+ * Le livre, en quatre déplacements et aucun redessin. L'état écrit ici est l'état **ouvert** :
+ * c'est celui qui porte des valeurs, et le livre fermé est celui où tout revient à zéro.
+ *
+ * `skewY` incline les pages vers la reliure, d'un signe par plat. Il pivote autour du dos, où
+ * il ne déplace rien : le bord relié des deux plats y reste confondu avec le trait du dos.
+ * C'est ce qui rend le plat rectangulaire quand le cisaillement tombe — un livre fermé n'est
+ * pas un trapèze, et cette forme-là appartient à l'ouverture, pas au dessin.
  *
  * `scale: -1 1` n'est pas un retournement d'image, c'est la projection d'un demi-tour : la
  * largeur apparente d'une surface qui pivote vaut son cosinus, et l'interpolation de 1 à −1
- * passe par le zéro, où le plat est vu par la tranche. Voir `nav-icon-geometry.ts`.
+ * passe par le zéro, où le plat est vu par la tranche. Il s'applique **après** le
+ * cisaillement — l'ordre que le navigateur impose entre `transform` et les propriétés
+ * individuelles est ici exactement celui qu'il faut, puisque le miroir d'un cisaillement est
+ * le cisaillement de l'autre signe : le plat rabattu retombe sur son voisin, inclinaison
+ * comprise.
+ *
+ * Le dos glisse sur la couverture et y devient la reliure ; le volume se recentre. Voir
+ * `nav-icon-geometry.ts` pour les mesures, qui ne sont pas ici.
  */
 .nav-book {
   transition: translate var(--dur-fold) var(--ease-out-soft);
 }
 
-.nav-book-cover {
+.nav-leaf {
   transform-box: view-box;
   transform-origin: 50% 50%;
-  transition: scale var(--dur-fold) var(--ease-out-soft);
+  transform: skewY(var(--leaf-tilt));
+  transition:
+    transform var(--dur-fold) var(--ease-out-soft),
+    scale var(--dur-fold) var(--ease-out-soft);
+}
+
+.nav-spine {
+  transition: translate var(--dur-fold) var(--ease-out-soft);
 }
 
 [data-state="closed"] .nav-book {
   translate: var(--book-shift);
 }
 
+[data-state="closed"] .nav-leaf {
+  transform: skewY(0deg);
+}
+
 [data-state="closed"] .nav-book-cover {
   scale: -1 1;
+}
+
+[data-state="closed"] .nav-spine {
+  translate: var(--spine-band);
 }
 
 /* L'aiguille pivote sur le centre du cadran, qui est aussi le sien. */

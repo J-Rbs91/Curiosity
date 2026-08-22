@@ -10,6 +10,7 @@ import {
   RING_R,
   leaf,
   needleCorners,
+  tiltOf,
 } from "@/components/ui/nav-icon-geometry";
 import { GLOBALS_CSS, cssBlock } from "@/test/globals-css";
 
@@ -32,12 +33,13 @@ type Point = [number, number];
  * Les points d'un chemin, dans l'ordre du tracé — ancres et points de contrôle.
  *
  * La grammaire lue est celle que `leaf` produit, et rien de plus : un déplacement, des
- * segments horizontaux et verticaux, des arcs, des quadratiques. Un analyseur complet serait
- * une seconde implémentation du SVG ; celui-ci ne sert qu'à rendre comparables deux chemins
- * dont l'un doit être l'image de l'autre.
+ * segments horizontaux et verticaux, des arcs. Un analyseur complet serait une seconde
+ * implémentation du SVG ; celui-ci ne sert qu'à rendre comparables deux chemins dont l'un doit
+ * être l'image de l'autre.
  *
- * Les points de contrôle en font partie, et il le faut : deux plats dont seules les ancres
- * seraient symétriques auraient la même silhouette et deux courbures différentes.
+ * Les points de contrôle des courbes en font partie, s'il en revient un jour : deux plats dont
+ * seules les ancres seraient symétriques auraient la même silhouette et deux courbures
+ * différentes.
  */
 function anchors(path: string): Point[] {
   const tokens = path.match(/[MLHVAQ]|-?[\d.]+/g) ?? [];
@@ -94,14 +96,57 @@ describe("le livre", () => {
     expect(sweeps(right).every((sweep) => sweep === "1")).toBe(true);
   });
 
-  it("relie les deux plats par le dos, et ne le trace pas deux fois", () => {
-    // Chaque plat part du haut du dos et y revient par le bas, sans jamais tracer le segment
-    // qui les joint : ce segment est le dos, et il est tracé une fois pour toutes.
+  it("garde le plat rectangulaire — un livre fermé n'est pas un trapèze", () => {
+    /*
+     * La correction qui a rendu ce dessin juste, et celle qu'il faut empêcher de repartir.
+     *
+     * L'inclinaison des pages vers la reliure avait d'abord été écrite dans le tracé : le livre
+     * fermé héritait donc d'un plat cisaillé, c'est-à-dire d'une forme qui n'est celle d'aucun
+     * livre. Elle appartient à l'ouverture, pas au plat, et elle est aujourd'hui un
+     * `skewY` que l'état fermé ramène à zéro.
+     *
+     * Un rectangle se reconnaît à ceci : il est symétrique par rapport à sa médiane
+     * horizontale. Un trapèze ne l'est pas, quelle que soit la manière dont on l'écrit.
+     */
     for (const plat of [left, right]) {
       const points = anchors(plat);
-      expect(points.at(0)).toEqual([CENTER, BOOK.top + BOOK.sag]);
-      expect(points.at(-1)).toEqual([CENTER, BOOK.bottom + BOOK.sag]);
+      const middle = (BOOK.top + BOOK.bottom) / 2;
+      for (const [x, y] of points) {
+        const reflected = points.some(
+          ([ox, oy]) => Math.abs(ox - x) < 1e-9 && Math.abs(oy - (2 * middle - y)) < 1e-9
+        );
+        expect(reflected, `le point (${x}, ${y}) n'a pas son symétrique`).toBe(true);
+      }
     }
+  });
+
+  it("trace le plat en entier, dos compris", () => {
+    // Le dos ne joint plus les deux plats : il s'en va former la reliure. Un plat qui compterait
+    // sur lui pour fermer son contour s'ouvrirait donc en même temps que le livre.
+    for (const plat of [left, right]) {
+      expect(plat.endsWith("Z")).toBe(true);
+      const points = anchors(plat);
+      expect(points.at(0)).toEqual([CENTER, BOOK.top]);
+      expect(points.at(-1)).toEqual([CENTER, BOOK.bottom]);
+    }
+  });
+
+  it("incline les deux plats en sens contraires, et sans excès", () => {
+    // L'inclinaison est ce qui fait le livre *ouvert* : les pages plongent vers la reliure. Deux
+    // plats inclinés du même côté donneraient un livre gauchi ; au-delà d'une douzaine de
+    // degrés, la silhouette cesse d'être un volume ouvert pour devenir un oiseau.
+    expect(tiltOf(-1)).toBe(`${BOOK.tilt}deg`);
+    expect(tiltOf(1)).toBe(`${-BOOK.tilt}deg`);
+    expect(BOOK.tilt).toBeGreaterThan(4);
+    expect(BOOK.tilt).toBeLessThan(12);
+  });
+
+  it("garde la reliure visible sur la couverture", () => {
+    // Le seul trait qui distingue le livre fermé d'un rectangle. Il doit rester à l'intérieur du
+    // plat — dehors, il se lirait comme un objet posé à côté — et assez loin du bord pour ne pas
+    // s'y coller à 20 px, où une unité vaut moins d'un pixel.
+    expect(BOOK.band).toBeGreaterThan(2);
+    expect(BOOK.band).toBeLessThan(BOOK.half / 3);
   });
 
   it("centre le livre dans la boîte, ouvert comme fermé", () => {
@@ -253,11 +298,25 @@ describe("cohérence entre les icônes et la feuille de style", () => {
     expect(new Set(declarations)).toEqual(new Set(["rotate"]));
   });
 
-  it("lit le déplacement de recentrage du livre là où il est écrit", () => {
-    // La mesure vient de la géométrie, en propriété personnalisée. Un jour où le CSS la
-    // recopierait, la fermeture se ferait à côté du centre dès la première retouche du dessin.
+  it("lit les mesures du livre là où elles sont écrites", () => {
+    // Elles viennent de la géométrie, en propriétés personnalisées. Un jour où le CSS les
+    // recopierait, la fermeture se ferait à côté du centre et la reliure à côté du plat dès la
+    // première retouche du dessin.
     expect(GLOBALS_CSS).toContain("translate: var(--book-shift)");
+    expect(GLOBALS_CSS).toContain("translate: var(--spine-band)");
+    expect(GLOBALS_CSS).toContain("transform: skewY(var(--leaf-tilt))");
     expect(GLOBALS_CSS).not.toContain(`translate: ${COVER_SHIFT}px`);
+    expect(GLOBALS_CSS).not.toContain(`skewY(${BOOK.tilt}deg)`);
+  });
+
+  it("redresse les deux plats quand le livre se referme", () => {
+    /*
+     * Le point de bascule de tout le dessin : l'inclinaison est portée par l'état ouvert, et
+     * l'état fermé la ramène à zéro. Une règle qui l'oublierait rendrait au livre fermé le
+     * trapèze dont on vient de le sortir — et le test de rectangularité, lui, ne verrait rien :
+     * la faute serait dans la feuille de style, pas dans le tracé.
+     */
+    expect(GLOBALS_CSS).toMatch(/\[data-state="closed"\] \.nav-leaf \{\s*transform: skewY\(0deg\)/);
   });
 
   it("n'anime les deux icônes que sur l'état que les composants posent", () => {
@@ -266,6 +325,7 @@ describe("cohérence entre les icônes et la feuille de style", () => {
     expect(GLOBALS_CSS).toContain('[data-state="finding"] .nav-needle {');
     expect(GLOBALS_CSS).toContain('[data-state="closed"] .nav-book {');
     expect(GLOBALS_CSS).toContain('[data-state="closed"] .nav-book-cover {');
+    expect(GLOBALS_CSS).toContain('[data-state="closed"] .nav-spine {');
   });
 
   it("garde l'animation de l'aiguille sous condition de mouvement", () => {
