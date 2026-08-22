@@ -428,6 +428,10 @@ Trois décisions, et une contribution qui les casserait se verrait :
 - **Thèmes et auteurs ne se regroupent par domaine que lorsqu'il y en a plusieurs.** La
   condition porte sur les données, jamais sur un domaine nommé : tant qu'un seul domaine est
   pourvu, un en-tête unique n'apprendrait rien et la liste reste celle de la V1.
+- **Le contenu se déplace dans le sens de l'onglet**, et de lui seul : vers « Auteurs » il part
+  à gauche et le suivant arrive de la droite, vers « Domaines » l'inverse. C'est la position
+  relative des onglets qui décide, jamais le nom d'une coupe — l'ordre ci-dessus reste donc le
+  seul endroit qui dise le sens de lecture. Les valeurs sont au §7.
 
 ### La liste d'Explorer
 
@@ -733,6 +737,8 @@ le texte écrit.
 | Sortie d'un écran ou d'une phase | 220 ms | `--ease-out-soft` |
 | Apparition du nouveau contenu (fondu) | 300 ms | `--ease-out-soft` |
 | Glissement d'un écran ou d'une phase | 560 ms sur 16 % / 10 % | `--ease-lift` |
+| Sortie puis entrée d'une coupe d'Explorer (fondu) | 140 ms, puis 140 ms | `--ease-out-soft` |
+| Glissement de la coupe qui arrive | 280 ms sur 8 % / 4 % | `--ease-lift` |
 | Entrée et sortie de session | 640 ms | `--ease-lift` |
 | Le concept qu'on vient de travailler | 720 ms | `--ease-lift` |
 | Le livre qui s'ouvre ou se referme | 420 ms | `--ease-out-soft` |
@@ -815,6 +821,28 @@ une durée réglable : la raccourcir ne l'accélérerait pas, elle lui retirerai
 Ce qui l'autorise est ce qui autorisait déjà le regard de la marque : elle ne retient rien.
 L'écran est arrivé, l'entrée est allumée et cliquable dès la première image, et personne
 n'attend qu'elle se pose.
+
+**Le troisième cran est celui d'une coupe, et il est plus court que les deux autres.** Changer
+d'onglet dans Explorer n'est ni un changement d'écran ni un changement de phase : l'en-tête, les
+onglets et la barre ne bougent pas, et seule la liste se remplace. La structure du mouvement
+reste pourtant la même — sortie, puis entrée, jamais les deux ensemble ; le fondu plus court que
+le déplacement ; l'amplitude en pourcentage. Ce qui change est l'échelle, et elle change parce
+qu'un onglet se paie plusieurs fois par minute : 140 ms au lieu de 220, 280 au lieu de 560, 8 %
+d'une colonne au lieu de 16 % d'un écran.
+
+**Ce mouvement est horizontal, et il l'est parce que le repère l'est.** La pastille d'onglet
+glisse de côté ; le contenu partait vers le haut. Deux gestes simultanés qui ne racontent pas la
+même chose se lisent comme deux événements au lieu d'un seul, et le second démentait le premier.
+La coupe qui part suit maintenant la pastille, celle qui arrive vient du côté d'où la pastille
+vient de la pousser, et la cascade d'arrivée — qui n'avait de toute façon qu'un seul enfant à
+faire cascader sur cet écran — a été retirée d'ici. Le sens vient du lien cliqué : la barre
+d'onglets est la seule à savoir lequel est à droite de l'autre, l'arbre de navigation ne
+connaissant que la profondeur.
+
+**Et le contenu suit, il ne conduit pas.** Les 8 % valent 27 px sur un téléphone de 390, soit le
+quart des 111 px que parcourt la pastille juste au-dessus — et 28 px au desktop, contre 147. C'est
+ce rapport qui fait lire les deux comme un seul geste ; doubler l'amplitude donnerait un
+carrousel, c'est-à-dire un changement de lieu, ce que changer d'onglet n'est pas.
 
 **Le déplacement et le fondu sont dissociés, et c'est ce qui rend un mouvement long
 agréable plutôt que lent.** Le contenu est entièrement lisible en 300 ms pendant
@@ -1007,6 +1035,10 @@ comme le même geste. Au-delà de 64 rem, l'amplitude tombe à 8 % — 115 px, d
 la même bande perceptive que le téléphone. La grammaire reste reconnaissable au
 lieu d'être littérale.
 
+`--shift-lateral` tombe au même seuil et pour la même raison, à ceci près que la surface qui
+bouge n'est pas l'écran mais la colonne de contenu : elle double de largeur au seuil précédent,
+l'amplitude passe donc de 8 à 4 %, et le trajet reste celui du téléphone.
+
 ### Ce que le desktop ne change pas
 
 La palette, les deux familles typographiques, l'échelle de six pas, les six
@@ -1028,7 +1060,7 @@ Aucun écran n'a gagné ni perdu une information.
 | `src/lib/app-version.ts` | L'empreinte de la version servie, et la seule question « faut-il recharger » |
 | `src/components/ui/ListRow.tsx` | La ligne de destination et l'en-tête de liste, pour toute l'application |
 | `src/components/ui/SituatingText.tsx` | L'ordre situation → liste → texte long, sur les trois pages de détail |
-| `src/components/motion/screen-motion.ts` | Les quatre sens de circulation, et eux seuls |
+| `src/components/motion/screen-motion.ts` | Les quatre sens de circulation, et le sens d'un pas de côté quand la surface en connaît un |
 | `src/components/motion/Screen.tsx` | La correspondance sens → animation, à poser dans chaque `page.tsx` |
 | `src/components/ui/AppShell.tsx` | L'ordre du document — navigation puis contenu — et la réserve que la navigation prend au contenu |
 | `src/components/ui/MainNav.tsx` | Les deux destinations, la branche allumée, le rang du changement de section, et rien de la géométrie |

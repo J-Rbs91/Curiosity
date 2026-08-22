@@ -100,6 +100,24 @@
   --dur-mark: 720ms;  /* moment marquant : le concept qu'on vient de travailler */
 
   /*
+   * Le cran d'en dessous : changer de coupe d'un même écran.
+   *
+   * Deux durées et non trois, parce que les deux coupes ne se croisent pas —
+   * l'ancienne s'efface en `--dur-lateral-fade`, la suivante apparaît dans la
+   * même durée, à la suite. C'est la règle de toutes les traversées du produit,
+   * et c'est ce qui évite la seule chose que ce mouvement ne supporte pas : deux
+   * listes de texte lisibles en même temps, décalées de quelques pixels.
+   *
+   * `--dur-lateral-move` est plus long que le fondu, et c'est délibéré : la
+   * coupe qui arrive est déjà lisible pendant qu'elle finit de se poser. Sans
+   * cet écart, la translation se jouerait entièrement pendant que le contenu est
+   * encore transparent, et personne ne verrait d'où il vient — le sens, qui est
+   * tout ce que ce mouvement a à dire, serait perdu.
+   */
+  --dur-lateral-fade: 140ms;
+  --dur-lateral-move: 280ms;
+
+  /*
    * Les deux icônes de la navigation, et les deux seules durées qui dépassent le plafond de
    * 300 ms sans être un glissement d'écran.
    *
@@ -147,6 +165,17 @@
    */
   --shift-screen: 16%;
   --shift-phase: 10%;
+
+  /*
+   * Le troisième cran, et le plus court : on ne change ni d'écran ni de phase,
+   * on change de coupe. L'amplitude se lit sur la colonne de contenu et non sur
+   * l'écran — 8 % d'une colonne de 342 px valent 27 px, soit le quart des 111 px
+   * que parcourt la pastille d'onglet juste au-dessus. C'est ce rapport qui fait
+   * lire les deux comme un seul geste : le repère porte le déplacement, le
+   * contenu ne fait que le suivre. Doubler cette valeur donnerait un carrousel,
+   * c'est-à-dire un changement de lieu, ce que changer d'onglet n'est pas.
+   */
+  --shift-lateral: 8%;
 
   /* Hauteur réelle de la barre de navigation, hors zone sûre du système. */
   --nav-height: 4.25rem;
@@ -249,6 +278,8 @@
      */
     --shift-screen: 8%;
     --shift-phase: 5%;
+    /* La colonne double de largeur au seuil précédent : le trajet, lui, reste. */
+    --shift-lateral: 4%;
   }
 }
 
@@ -1140,6 +1171,66 @@ body {
   animation:
     var(--dur-fade) var(--ease-out-soft) var(--dur-exit) both vt-fade,
     var(--dur-move) var(--ease-lift) both vt-shift-x;
+}
+
+/* --------------------------------------------------------------------------
+ * Les trois coupes d'Explorer — le contenu suit l'onglet
+ *
+ * Même sens de lecture qu'au-dessus, un cran plus bas : on ne descend pas dans
+ * le corpus, on change de coupe du même écran. La pastille d'onglet part vers
+ * la droite, l'ancienne coupe part avec elle et la suivante arrive de la
+ * droite ; vers la gauche, l'inverse. Le sens vient du lien cliqué, seul à
+ * savoir quel onglet est à droite de quel autre.
+ *
+ * **La structure est celle d'une traversée d'écran, à une échelle près.** Sortie
+ * puis entrée, jamais les deux ensemble ; le fondu plus court que le
+ * déplacement ; l'amplitude en pourcentage. Ce qui change est le cran : 140 ms
+ * au lieu de 220 pour la sortie, 280 au lieu de 560 pour le glissement, et 8 %
+ * d'une colonne au lieu de 16 % d'un écran. Un changement d'onglet se paie
+ * plusieurs fois par minute — il descend sous les valeurs d'un changement de
+ * lieu au lieu de les rejoindre.
+ *
+ * **Aucune translation verticale.** Le contenu remontait du bas — la cascade
+ * `stagger`, retirée de cet écran — pendant que l'onglet se déplaçait de côté.
+ * Deux gestes simultanés qui ne racontent pas la même chose se lisent comme deux
+ * événements, et c'est cette incohérence que ces règles suppriment : le repère
+ * porte le déplacement, le contenu ne fait que le suivre.
+ *
+ * **Le groupe ne morphe pas.** Les trois coupes n'ont ni la même hauteur ni le
+ * même nombre de lignes, et faire glisser la boîte de l'une vers celle de
+ * l'autre ajouterait un mouvement vertical par la bande — exactement ce qu'on
+ * vient de retirer. Seul le contenu bouge, et il ne bouge que de côté.
+ * -------------------------------------------------------------------------- */
+
+::view-transition-group(.lateral-next),
+::view-transition-group(.lateral-prev) {
+  animation: none;
+}
+
+::view-transition-old(.lateral-next) {
+  --vt-shift: calc(-1 * var(--shift-lateral));
+  animation:
+    var(--dur-lateral-fade) var(--ease-out-soft) both vt-fade reverse,
+    var(--dur-lateral-fade) var(--ease-lift) both vt-shift-x reverse;
+}
+::view-transition-new(.lateral-next) {
+  --vt-shift: var(--shift-lateral);
+  animation:
+    var(--dur-lateral-fade) var(--ease-out-soft) var(--dur-lateral-fade) both vt-fade,
+    var(--dur-lateral-move) var(--ease-lift) var(--dur-lateral-fade) both vt-shift-x;
+}
+
+::view-transition-old(.lateral-prev) {
+  --vt-shift: var(--shift-lateral);
+  animation:
+    var(--dur-lateral-fade) var(--ease-out-soft) both vt-fade reverse,
+    var(--dur-lateral-fade) var(--ease-lift) both vt-shift-x reverse;
+}
+::view-transition-new(.lateral-prev) {
+  --vt-shift: calc(-1 * var(--shift-lateral));
+  animation:
+    var(--dur-lateral-fade) var(--ease-out-soft) var(--dur-lateral-fade) both vt-fade,
+    var(--dur-lateral-move) var(--ease-lift) var(--dur-lateral-fade) both vt-shift-x;
 }
 
 /* Entrée en session : la session monte par-dessus le reste de l'application. */
