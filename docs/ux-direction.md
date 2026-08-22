@@ -164,18 +164,51 @@ en bas de casse, l'œil serait plus petit que les hampes qui l'entourent et disp
 
 ### Le regard
 
-La pupille joue **deux regards de trois fixations**, articulés par un double clignement rapide
-et refermés par un clignement long. La séquence dure 4 800 ms, se repose au centre, puis se
-relance après une pause tirée entre 2,34 et 5,67 secondes, tant que l'écran qui la porte est
-affiché.
+Il y a **deux partitions**, et il n'y en aura pas de troisième. Elles partagent le dessin,
+l'orbite et les fixations ; ce qui les sépare est le **temps**, et c'est la seule chose qui
+décide si un œil cherche ou s'il attend.
 
-**Elle se joue à deux endroits, et le second se revoit.** À l'ouverture, dans le O du nom ; sur
-Explorer, dans le o du titre — la même séquence, le même dessin, à la seule différence des trois
-cotes qui l'ajustent à une minuscule de serif. L'écran d'ouverture était la surface idéale d'une
-séquence expressive : on ne la regarde pas deux fois de suite, et rien n'attend derrière elle.
-L'en-tête d'Explorer n'est pas cette surface — c'est un onglet, on y revient plusieurs fois par
-ouverture —, et **c'est là que cette boucle coûte quelque chose**. Le §7 dit ce que ce coût
-change au budget de mouvement, et à quelle condition il reste payé.
+| | `scanning` — l'ouverture | `waiting` — le titre d'Explorer |
+|---|---|---|
+| Durée | 4 800 ms | 7 200 ms |
+| Saccades | 8 | 4 |
+| Fixations | 6, de 240 à 264 ms | 3, de 864 à 1 656 ms |
+| Clignements | 3, dont un double rapide | 2, tous deux lents |
+| Pause entre deux passages | 2,34 à 5,67 s | 4,68 à 9,36 s |
+| Part du temps où quelque chose bouge, pause moyenne comprise | 24,7 % | 16,7 % |
+
+**Pourquoi la seconde n'est pas la première rejouée.** C'était le geste facile, et il aurait dit
+le contraire de l'écran. Un œil qui visite six positions en 4,8 secondes **cherche quelque
+chose** ; Explorer est précisément la page où c'est le lecteur qui cherche et qui choisit, et où
+l'interface n'a rien à trouver à sa place. Le mouvement aurait raconté l'inverse de ce que la
+page demande — et deux écrans jouant la même séquence auraient fait de la marque un motif décoratif
+plutôt qu'un regard.
+
+**Ce que `waiting` fait de moins, et pourquoi c'est le sujet.** Quatre saccades au lieu de huit,
+et **toutes dans le même sens** : l'œil quitte le centre par le haut, descend le flanc gauche de
+l'orbite — `up`, `left`, `down` —, puis revient d'un seul mouvement. Aucun demi-tour, aucune
+position reprise, un seul quart d'orbite parcouru lentement. C'est ce qui manque au regard qui
+parcourt, et c'est ce qui fait toute la différence : un œil qui change huit fois de direction
+fouille ; celui-ci n'attend rien de précis.
+
+**Ce n'est pas la même séquence ralentie, et la distinction n'est pas rhétorique.** Ralentir les
+saccades donnerait une pupille qui glisse, c'est-à-dire un point qui flotte et non plus un œil —
+c'est le rythme saut/arrêt qui fait lire un regard, et il ne se négocie dans aucune des deux
+partitions. Les saccades de `waiting` durent donc 216 ms, à peine plus que les 144 de
+l'ouverture : un mouvement sans urgence n'est pas un mouvement lent. Ce qui s'allonge, c'est ce
+qui se passe entre elles, c'est-à-dire rien. `npm test` vérifie que les deux ne convergent pas :
+la fixation la plus courte de `waiting` doit dépasser la plus longue de `scanning`, ses
+clignements être plus lents que le plus lent de l'autre, et son parcours ne jamais s'inverser.
+
+**Le second endroit se revoit, et c'est là que la boucle coûte quelque chose.** L'écran
+d'ouverture était la surface idéale d'une séquence expressive : on ne la regarde pas deux fois de
+suite, et rien n'attend derrière elle. L'en-tête d'Explorer n'est pas cette surface — c'est un
+onglet, on y revient plusieurs fois par ouverture. Le §7 dit ce que ce coût change au budget de
+mouvement, et à quelle condition il reste payé ; l'essentiel tient dans la dernière ligne du
+tableau ci-dessus, où `waiting` rend en immobilité ce qu'elle prend en durée. Ce dernier chiffre
+compte les saccades **et** les paupières en mouvement, rapportées au cycle entier — séquence plus
+pause moyenne. Sur l'en-tête qu'on revient voir, il y a donc un tiers de mouvement en moins que
+sur l'écran qu'on ne revoit pas.
 
 Ce que ce second endroit ne fait pas, en revanche, c'est ajouter une signature : **ce n'est pas
 la marque qui est dans cet en-tête, c'est le titre de l'écran.** Il est dans la serif des titres,
@@ -187,12 +220,17 @@ entré. Le nom du produit, lui, ne s'affiche toujours qu'au seuil.
 Le fichier animé du dépôt, lui, joue la séquence **une fois**, sans boucler : une image qui
 boucle sur une page qu'on défile est exactement le mouvement permanent qu'on s'interdit.
 
+#### `scanning` — le regard qui parcourt
+
+La pupille joue **deux regards de trois fixations**, articulés par un double clignement rapide
+et refermés par un clignement long.
+
 Ce qui fait qu'un point se lit comme un œil n'est pas l'amplitude, c'est le **rythme** : l'œil
 humain ne balaie pas, il saute — quelques dizaines de millisecondes de saccade, puis deux à
 trois cents millisecondes d'arrêt. C'est la raison pour laquelle une séquence trois fois plus
-longue **n'est pas la même trois fois ralentie** : étirer quatre saccades sur 4 800 ms
-donnerait des fixations de 1,1 s, c'est-à-dire un point qui fixe, plus un œil qui regarde. Le
-temps supplémentaire achète des événements, pas de la lenteur.
+longue que celle qui la précédait **n'est pas la même trois fois ralentie** : étirer quatre
+saccades sur 4 800 ms donnerait des fixations de 1,1 s, c'est-à-dire un point qui fixe, plus un
+œil qui regarde. Le temps supplémentaire achète des événements, pas de la lenteur.
 
 | Ce qui se joue | Combien | Durée unitaire |
 |---|---|---|
@@ -201,12 +239,35 @@ temps supplémentaire achète des événements, pas de la lenteur.
 | Clignements rapides | 2, à la charnière des deux regards | 108 ms de chute, 36 clos, 132 de relevé |
 | Clignement long | 1, à la fin | 204 ms de chute, 276 clos, 336 de relevé |
 
-Les six fixations sont à distance sensiblement égale du bord de la contre-forme — la pupille en
-occupe entre 52 et 60 % du dégagement disponible. Une orbite régulière, donc, et non six écarts
-d'amplitudes différentes. Le second regard emprunte le côté droit de l'orbite là où le premier
-tient le gauche : rejouer le même arc se lirait comme une boucle dans la boucle. Le déplacement
-latéral est le plus ample, comme dans un regard réel, et c'est ce que la contre-forme ouverte
-permet.
+#### `waiting` — le regard qui attend
+
+Un seul regard, trois fixations tenues, et un quart d'orbite descendu sans jamais revenir sur
+ses pas.
+
+| Ce qui se joue | Combien | Durée unitaire |
+|---|---|---|
+| Saccades | 4, toutes dans le même sens | 216 ms, et 288 pour le retour au repos |
+| Fixations | 3, sur le flanc gauche | 1 368 ms, 1 656 et 864 |
+| Clignements lents | 2 — au creux de la fixation latérale, puis sur le repos final | 288 ms de chute, 360 clos, 432 de relevé |
+
+Le retour au repos est la seule saccade plus lente que les autres, dans les deux partitions comme
+dans un œil réel : revenir sur ce qu'on regardait est un mouvement décidé, pas un mouvement
+attiré. Le double clignement rapide de l'ouverture n'a rien à faire ici — il articulait deux
+regards, et il n'y en a qu'un.
+
+**Les amplitudes ne changent pas d'une partition à l'autre**, et c'est délibéré : l'orbite est
+la marque. Elles se trouvent déjà réduites de fait, le titre d'Explorer rendant la marque à
+15,6 px là où le nom la rend à 25,6 — les déplacements y valent de 4,4 à 6,2 pixels d'écran,
+mesurés à l'écran et non déduits. Les réduire encore aurait rendu le regard illisible avant de le
+rendre calme ; c'est le temps qui porte le calme, jamais l'amplitude.
+
+Les six fixations de l'orbite sont à distance sensiblement égale du bord de la contre-forme — la
+pupille en occupe entre 52 et 60 % du dégagement disponible. Une orbite régulière, donc, et non
+six écarts d'amplitudes différentes. Le déplacement latéral est le plus ample, comme dans un
+regard réel, et c'est ce que la contre-forme ouverte permet. C'est cette même orbite que les deux
+partitions parcourent : `scanning` en visite les six positions — son second regard empruntant le
+côté droit là où le premier tient le gauche, rejouer le même arc se lisant comme une boucle dans
+la boucle —, `waiting` n'en descend qu'un quart.
 
 **Le clignement est une paupière, pas un clignotement.** Trois décisions le tiennent, et
 chacune corrige un défaut constaté à l'arrêt sur image :
@@ -221,24 +282,33 @@ chacune corrige un défaut constaté à l'arrêt sur image :
 - Les fermetures sont espacées de **480 ms au plus serré**, et la fermeture est un balayage de
   108 ms plutôt qu'une bascule. Fermé, le O est un disque d'encre pleine : le seuil opposable
   est de trois clignements par seconde, on en compte un peu plus de deux, et ce qu'on voit est
-  un bord qui descend.
+  un bord qui descend. `waiting` est trois fois plus large sur les trois valeurs, et ses deux
+  clignements sont séparés de plus de trois secondes ; le contrôle porte sur les deux partitions
+  sans distinction, parce que c'est celle qu'on écrira ensuite qui en aura besoin.
 
 Ces trois valeurs sont des tokens de géométrie, et `npm test` vérifie la couverture de la
 contre-forme aux deux extrêmes, dans les deux graisses, sur toute sa largeur.
 
 **En mouvement réduit, la pupille est au centre, la paupière est relevée, et rien ne se
-relance.** La séquence n'existe pas, donc aucune fin de séquence n'est annoncée et la pause ne
-s'arme jamais — le repli n'est pas neutralisé après coup, il est l'état de repos. La marque n'y
-perd rien : elle ne porte aucune information par son mouvement.
+relance.** Aucune des deux séquences n'existe, donc aucune fin de séquence n'est annoncée et la
+pause ne s'arme jamais — le repli n'est pas neutralisé après coup, il est l'état de repos. La
+marque n'y perd rien : elle ne porte aucune information par son mouvement.
+
+**Le nom de la partition est ce qui la choisit, et il n'y a pas de booléen.** `Mark` reçoit
+`gaze="scanning"`, `gaze="waiting"`, ou rien — auquel cas la marque est immobile. Un `animate`
+vrai ou faux ne saurait pas dire laquelle des deux, il faudrait une seconde propriété pour le
+préciser, et l'on pourrait alors demander une séquence sans l'animer. Les deux mots, eux, gardent
+un `animate` booléen : **laquelle** jouer appartient au mot et se lit à côté de ses autres cotes,
+**si** elle joue appartient à l'écran et se paie sur le budget du §7.
 
 ### Où elle se montre, et où elle ne se montre pas
 
 | Support | Ce qui s'affiche |
 |---|---|
-| Écran d'ouverture | Le mot entier, et le regard y joue |
-| En-tête d'Explorer | Le seul o du titre, et le regard y joue aussi |
+| Écran d'ouverture | Le mot entier, et `scanning` y joue |
+| En-tête d'Explorer | Le seul o du titre, et `waiting` y joue |
 | Onglet du navigateur, écran d'accueil, feuille de partage | L'œil seul, immobile |
-| README, page de dépôt | `mark.svg`, ou `mark-animated.svg` qui joue la séquence une fois, sans boucler |
+| README, page de dépôt | `mark.svg`, ou `mark-animated.svg` qui joue `scanning` une fois, sans boucler |
 
 **Il n'y a toujours pas d'en-tête permanent avec une signature.** Le §5 dit ce qu'un écran a le
 droit de porter, et un logo n'y figure pas : il n'apprendrait rien à quelqu'un qui est déjà
@@ -665,12 +735,19 @@ le texte écrit.
 | Glissement d'un écran ou d'une phase | 560 ms sur 16 % / 10 % | `--ease-lift` |
 | Entrée et sortie de session | 640 ms | `--ease-lift` |
 | Le concept qu'on vient de travailler | 720 ms | `--ease-lift` |
-| Le regard de la marque | 4 800 ms, à l'ouverture et dans le titre d'Explorer | `--ease-out-soft` |
+| Le regard de la marque, à l'ouverture | 4 800 ms — `scanning` | `--ease-out-soft` |
+| Le regard de la marque, dans le titre d'Explorer | 7 200 ms — `waiting` | `--ease-out-soft` |
 
-**La marque est la seule durée à dépasser la seconde, et la seule chose qui se relance.** Elle
-n'est pas une durée d'interface : c'est huit saccades de 144 ms, six fixations et trois
-clignements, suivis d'une pause tirée entre 2,34 et 5,67 secondes. Une valeur de cet ordre sur
-quoi que ce soit d'autre serait à refuser, et la boucle plus encore.
+**La marque porte les deux seules durées à dépasser la seconde, et la seule chose qui se
+relance.** Ce ne sont pas des durées d'interface : ce sont des partitions, huit saccades et six
+fixations pour l'une, quatre et trois pour l'autre, suivies d'une pause tirée au hasard. Une
+valeur de cet ordre sur quoi que ce soit d'autre serait à refuser, et la boucle plus encore.
+
+**Et la plus longue des deux est la moins chère.** `waiting` dure une fois et demie `scanning`,
+mais elle ne contient que la moitié de ses saccades et la pause qui la suit est deux fois plus
+longue. Rapporté au cycle entier — séquence plus pause moyenne —, **quelque chose bouge 16,7 %
+du temps contre 24,7 %**. C'est le seul chiffre qui compte ici : une durée n'est pas une dépense,
+une fréquence de mouvement en est une.
 
 Depuis que cet écran revient à chaque ouverture, la carte du jour attend bel et bien derrière
 lui — ce qui n'était pas le cas quand il ne servait qu'une fois. **Ce qui rend la durée
@@ -685,13 +762,18 @@ l'écran d'ouverture, la règle de fréquence tranche avant elle et la boucle y 
 discussion : on n'y revient pas.
 
 **Le o d'Explorer, lui, est bel et bien sur une surface qu'on revient voir, et c'est une dépense
-assumée.** Ce qui la rend tenable est ce qui la borne, et il faut que les trois tiennent
+assumée.** Ce qui la rend tenable est ce qui la borne, et il faut que les quatre tiennent
 ensemble :
 
+- **C'est une autre partition, et c'est la première des bornes.** Rejouer `scanning` ici aurait
+  posé un œil qui fouille sur l'écran où c'est le lecteur qui cherche. `waiting` fait moitié
+  moins de saccades, toutes dans le même sens, et tient ses fixations plus d'une seconde — voir
+  le §4. Un contributeur qui les ferait converger casserait cette borne avant toutes les autres,
+  et `npm test` échouerait.
 - **La séquence est petite et elle est loin.** Elle occupe une lettre de 15,6 px dans un titre
-  d'en-tête, à un demi-écran de la liste qu'on lit. Ce n'est pas le mouvement qu'on
-  s'interdit — une surface entière qui bouge sous le texte —, c'est un caractère qui vit dans
-  son propre corps.
+  d'en-tête, à un demi-écran de la liste qu'on lit, et ses déplacements valent de 4,4 à 6,2
+  pixels d'écran. Ce n'est pas le mouvement qu'on s'interdit — une surface entière qui bouge
+  sous le texte —, c'est un caractère qui vit dans son propre corps.
 - **Elle ne retient rien et ne dit rien.** Aucun affichage ne l'attend, aucune information n'y
   est portée, et le titre reste lisible et complet à la première image. Le jour où elle
   conditionnerait quoi que ce soit, c'est elle qu'il faudrait retirer.
@@ -725,10 +807,10 @@ l'appui, lui, ne le dépasse pas : il est vu vingt fois par session.
 - **Aucune valeur en dur.** Courbes, durées et amplitudes sont des tokens.
 - **Le mouvement ne porte jamais seul une information.** Le repère de l'onglet
   actif est une barre qui glisse, mais aussi une couleur et un `aria-current`.
-- **Aucun mouvement continu.** Rien ne pulse, ne flotte ni ne tourne au repos. La seule
-  séquence qui se relance est celle de la marque, à deux endroits nommés et à aucun
-  autre — voir les paragraphes ci-dessus, qui disent ce que le second coûte et ce qui le
-  borne.
+- **Aucun mouvement continu.** Rien ne pulse, ne flotte ni ne tourne au repos. Les seules
+  séquences qui se relancent sont celles de la marque, à deux endroits nommés, une partition
+  par endroit, et à aucun autre — voir les paragraphes ci-dessus, qui disent ce que le second
+  coûte et ce qui le borne.
 - **Une transition en cours n'avale pas les clics** — sans quoi un déplacement de
   560 ms serait un blocage de 560 ms.
 
@@ -924,7 +1006,7 @@ Aucun écran n'a gagné ni perdu une information.
 | `src/components/ui/DeepenSheet.tsx` | Ce qui suit l'appui : copie faite, où coller, reprises |
 | `src/domain/concepts/sources.ts` | L'ordre de lecture des sources et le nom de leur niveau |
 | `src/components/ui/mark-geometry.mjs` | La géométrie de la marque, et elle seule |
-| `src/components/ui/Mark.tsx`, `Wordmark.tsx` | L'œil, et les deux mots qui le portent à la place d'une lettre |
+| `src/components/ui/Mark.tsx`, `Wordmark.tsx` | L'œil, et les deux mots qui le portent à la place d'une lettre — un par partition |
 | `scripts/icons/build-icons.mjs` | Les neuf fichiers d'icônes, dérivés de la géométrie |
 
 Une seule implémentation par mécanisme. Deux implémentations divergent, toujours.

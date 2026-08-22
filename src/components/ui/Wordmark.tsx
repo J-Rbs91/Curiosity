@@ -1,14 +1,14 @@
 import type { CSSProperties } from "react";
 
-import { Mark } from "@/components/ui/Mark";
+import { Mark, type GazeName } from "@/components/ui/Mark";
 
 /**
  * Les deux mots dont le O est l'œil — le nom du produit, et le titre d'Explorer.
  *
- * Ils sont ensemble ici parce que ce qui les distingue est **la lettre qu'ils remplacent**, et
- * qu'on ne peut juger d'un de ces réglages qu'à côté de l'autre. Le mécanisme, lui, est le même
- * et n'est écrit qu'une fois : couper le mot, poser le dessin dans le trou, et le rendre à la
- * synthèse vocale comme un mot entier.
+ * Ils sont ensemble ici parce que ce qui les distingue est **la lettre qu'ils remplacent** et
+ * **le regard qu'ils portent**, et qu'on ne peut juger d'un de ces réglages qu'à côté de
+ * l'autre. Le mécanisme, lui, est le même et n'est écrit qu'une fois : couper le mot, poser le
+ * dessin dans le trou, et le rendre à la synthèse vocale comme un mot entier.
  *
  * **Ce que lit un lecteur d'écran.** Le mot est annoncé une fois, entier. Sans cela, l'œil étant
  * un dessin et non un caractère, la synthèse vocale dirait « curi » puis « sity ».
@@ -69,7 +69,16 @@ const INTER_CAP: Fit = { size: 0.752, shift: 0.0125, side: 0.032 };
 const SERIF_X: Fit = { size: 0.522, shift: 0.014, side: 0.034 };
 
 export type EyedWordProps = {
-  /** Joue la séquence du regard, en boucle espacée de pauses aléatoires — voir `Mark`. */
+  /**
+   * Joue le regard, en boucle espacée de pauses aléatoires — voir `Mark`.
+   *
+   * Un booléen, et non le nom d'une séquence : **laquelle** jouer est une décision de dessin,
+   * qui appartient au mot et se lit plus bas à côté de ses autres cotes ; **si** elle joue est
+   * une décision de place, qui appartient à l'écran et se paie sur le budget de mouvement du §7
+   * de `docs/ux-direction.md`. Laisser l'appelant choisir la partition permettrait de poser le
+   * regard qui cherche dans un en-tête qu'on revient voir, ce qui est exactement ce que ce
+   * fichier existe pour empêcher.
+   */
   animate?: boolean;
   className?: string;
   style?: CSSProperties;
@@ -80,10 +89,17 @@ function EyedWord({
   before,
   after,
   fit,
+  gaze,
   animate = false,
   className,
   style,
-}: EyedWordProps & { label: string; before: string; after: string; fit: Fit }) {
+}: EyedWordProps & {
+  label: string;
+  before: string;
+  after: string;
+  fit: Fit;
+  gaze: GazeName;
+}) {
   return (
     <span role="img" aria-label={label} className={className} style={style}>
       <span aria-hidden>{before}</span>
@@ -91,10 +107,12 @@ function EyedWord({
        * La graisse optique est celle du texte dans les deux cas : l'anneau est dans un mot, et
        * doit peser ce que pèsent les lettres qui l'entourent. La graisse d'icône y ferait le
        * seul caractère gras du mot — voir le motif des deux graisses dans `mark-geometry.mjs`.
+       *
+       * La partition, elle, vient du mot ; `animate` ne décide que si elle joue.
        */}
       <Mark
         optical="text"
-        animate={animate}
+        gaze={animate ? gaze : undefined}
         className="inline-block"
         style={{
           width: `${fit.size}em`,
@@ -120,6 +138,10 @@ function EyedWord({
  * marque : sans elle, l'œil serait un o de bas de casse, plus petit que les hampes qui
  * l'entourent, et il disparaîtrait. La capitale lui donne la hauteur du C initial, et le mot
  * se lit comme deux fois « curiosité » — le nom, et le geste.
+ *
+ * **Le regard qu'il porte est `scanning`.** C'est le mot qui dit « curiosité » : son œil
+ * parcourt, saute d'une fixation à l'autre et cligne à la charnière de deux regards. Le geste
+ * que le nom nomme est celui-là même que le dessin fait.
  */
 export function Wordmark({ animate = false, className, style }: EyedWordProps) {
   return (
@@ -128,6 +150,7 @@ export function Wordmark({ animate = false, className, style }: EyedWordProps) {
       before="Curi"
       after="sity"
       fit={INTER_CAP}
+      gaze="scanning"
       animate={animate}
       className={`font-sans font-semibold tracking-[-0.01em] whitespace-nowrap ${className ?? ""}`}
       style={style}
@@ -143,6 +166,14 @@ export function Wordmark({ animate = false, className, style }: EyedWordProps) {
  * de la même police, ni de la même casse — voir `SERIF_X`. Le titre ne fixe donc ni famille ni
  * taille : il les tient du `h1` qui le porte, comme le ferait le mot qu'il remplace.
  *
+ * **Le regard qu'il porte est `waiting`, et ce n'est pas une économie.** Rejouer ici la
+ * partition d'ouverture aurait été le geste facile, et il aurait dit le contraire de l'écran :
+ * un œil qui balaie six positions en 4,8 secondes cherche quelque chose, alors que cette page
+ * est celle où **c'est le lecteur qui choisit**. `waiting` ne fait que quatre saccades, toutes
+ * dans le même sens, tient ses fixations plus d'une seconde et ne cligne que lentement — un œil
+ * posé, qui attend qu'on se décide. Les deux partitions sont écrites côte à côte dans
+ * `mark-geometry.mjs`, et `npm test` vérifie qu'elles ne convergent pas.
+ *
  * **Pourquoi ce n'est pas une signature de plus.** Un logo posé en en-tête permanent
  * n'apprendrait rien à qui est déjà entré, et le §4 de `docs/ux-direction.md` l'exclut toujours.
  * Ce qui est ici n'est pas la marque : c'est le titre de l'écran, écrit dans la serif des titres
@@ -155,6 +186,7 @@ export function ExploreTitle({ animate = false, className, style }: EyedWordProp
       before="Expl"
       after="rer"
       fit={SERIF_X}
+      gaze="waiting"
       animate={animate}
       className={`whitespace-nowrap ${className ?? ""}`}
       style={style}

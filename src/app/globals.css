@@ -100,20 +100,25 @@
   --dur-mark: 720ms;  /* moment marquant : le concept qu'on vient de travailler */
 
   /*
-   * Le regard de la marque. Seule durée du produit à dépasser la seconde, et elle ne se paie
-   * qu'à l'écran de premier lancement — nulle part ailleurs la marque ne s'affiche.
+   * Le regard de la marque — les deux seules durées du produit à dépasser la seconde.
    *
-   * Elle vaut la somme de huit saccades de 144 ms — la durée d'un retour à l'appui —, de six
-   * fixations de 240 à 264 ms et de trois clignements, qui sont les ordres de grandeur du
-   * regard humain. C'est l'alternance saut/arrêt, et non l'amplitude, qui fait qu'un point se
-   * lit comme un œil ; c'est pourquoi une séquence trois fois plus longue compte trois fois
-   * plus d'événements plutôt que des mouvements trois fois plus lents.
+   * Elles ne se paient qu'à deux endroits, et ce sont deux partitions différentes, pas une
+   * durée réglable : le §4 de `docs/ux-direction.md` dit lequel joue où et pourquoi.
    *
-   * Un point de la partition vaut donc 48 ms, et les pourcentages des images clés ci-dessous
-   * se lisent dans cette unité. La partition elle-même est dans `mark-geometry.mjs`, et
-   * `npm test` vérifie que ces deux fichiers disent la même chose.
+   * `scanning` vaut la somme de huit saccades de 144 ms — la durée d'un retour à l'appui —, de
+   * six fixations de 240 à 264 ms et de trois clignements. `waiting` en fait une fois et demie
+   * pour deux fois moins d'événements : quatre saccades, trois fixations de 864 à 1 656 ms et
+   * deux clignements lents. C'est l'alternance saut/arrêt qui fait qu'un point se lit comme un
+   * œil, et c'est la longueur des arrêts — jamais la lenteur des sauts — qui décide s'il
+   * cherche ou s'il attend. Ralentir une saccade ne calme pas un regard : elle cesse d'être un
+   * saut, et la pupille se met à flotter.
+   *
+   * Un point de partition vaut donc 48 ms pour l'une et 72 ms pour l'autre, et les pourcentages
+   * des images clés ci-dessous se lisent dans cette unité. Les partitions elles-mêmes sont dans
+   * `mark-geometry.mjs`, et `npm test` vérifie que ces deux fichiers disent la même chose.
    */
-  --dur-gaze: 4800ms;
+  --dur-gaze-scanning: 4800ms;
+  --dur-gaze-waiting: 7200ms;
 
   /*
    * Amplitude des déplacements, en pourcentage de la surface qui bouge plutôt
@@ -717,31 +722,38 @@ body {
 }
 
 /* --------------------------------------------------------------------------
- * Le regard de la marque
+ * Le regard de la marque — deux partitions, un seul dessin
  *
- * La pupille du O saute d'une fixation à l'autre et la paupière descend trois fois, puis tout
- * se repose : la pupille au centre, la paupière relevée. La séquence commence et finit dans cet
- * état, et c'est la seule raison pour laquelle elle peut se relancer sans se voir sauter.
+ * La pupille saute d'une fixation à l'autre et la paupière descend, puis tout se repose : la
+ * pupille au centre, la paupière relevée. Chaque séquence commence et finit dans cet état, et
+ * c'est la seule raison pour laquelle elle peut se relancer sans se voir sauter.
  *
- * **Où cette boucle a le droit de tourner.** À deux endroits, nommés au §4 de
- * `docs/ux-direction.md` : l'écran d'ouverture, où rien n'attend derrière elle, et le o du titre
- * d'Explorer, qui est un caractère de 15,6 px dans un en-tête et non une surface sous le texte
- * qu'on lit. La règle « aucun mouvement continu » du §7 tient pour tout le reste — le favicon ne
- * bouge pas, aucune fiche n'a d'œil dans son titre —, et le §7 dit aussi ce que le second
- * endroit coûte. La feuille de style n'en décide rien : elle n'attache ces deux pistes qu'aux
- * classes que `Mark.tsx` ne pose que sur `animate`.
+ * **Deux partitions, et ce qui les sépare est le temps.** `scanning` joue à l'ouverture, dans
+ * le O du nom : huit saccades, six fixations courtes, trois clignements dont un double rapide —
+ * un œil qui parcourt. `waiting` joue dans le o du titre d'Explorer : quatre saccades toutes
+ * dans le même sens, trois fixations de 864 à 1 656 ms, deux clignements lents — un œil qui
+ * n'attend rien de précis. Mêmes positions, même orbite, même dessin : seuls les temps
+ * changent, et c'est tout ce qu'il faut pour que l'un cherche et que l'autre attende.
+ *
+ * **Où ces boucles ont le droit de tourner.** À ces deux endroits, nommés au §4 de
+ * `docs/ux-direction.md`, et nulle part ailleurs. La règle « aucun mouvement continu » du §7
+ * tient pour tout le reste — le favicon ne bouge pas, aucune fiche n'a d'œil dans son titre —,
+ * et le §7 dit aussi ce que le second endroit coûte et ce qui le rend tenable : deux fois moins
+ * d'événements que le premier, et deux fois plus de pause entre deux passages.
  *
  * Les positions viennent du composant, en propriétés personnalisées, parce qu'elles sont la
  * géométrie de la marque et qu'elle n'a qu'une définition — `mark-geometry.mjs`. Ce fichier ne
  * porte que le rythme, et la relance est dans `Mark.tsx`. Aucun des trois ne peut dériver sans
- * que `npm test` le dise.
+ * que `npm test` le dise : il relit ces images clés et les compare, séquence par séquence, à la
+ * partition écrite dans la géométrie.
  *
- * Les pourcentages se lisent sur `--dur-gaze`, où un point vaut 48 ms : 4 % valent 192 ms
- * d'attente avant le premier saut, chaque intervalle de 3 % vaut la saccade elle-même, et les
- * maintiens de 5 à 5,5 % sont les fixations.
+ * Les pourcentages se lisent sur la durée de leur séquence — un point vaut 48 ms pour
+ * `scanning`, 72 ms pour `waiting`. Les intervalles laissés vides entre deux maintiens sont les
+ * saccades ; ils ne sont pas écrits, ce qui rend impossible d'en oublier une en déplaçant une
+ * fixation.
  *
- * Les deux pistes portent la même durée. C'est ce qui les garde synchronisées sans qu'on ait à
- * les accorder, et ce qui permet de les relancer d'un seul geste.
+ * Les deux pistes d'une même séquence portent la même durée. C'est ce qui les garde
+ * synchronisées sans qu'on ait à les accorder, et ce qui permet de les relancer d'un seul geste.
  *
  * Déclaré en `no-preference` plutôt que neutralisé après coup : sans animation, la pupille est
  * au centre et la paupière est relevée, ce qui est aussi leur état de repos. La marque ne perd
@@ -749,16 +761,24 @@ body {
  * -------------------------------------------------------------------------- */
 
 @media (prefers-reduced-motion: no-preference) {
-  .gaze {
-    animation: gaze var(--dur-gaze) var(--ease-out-soft) both;
+  [data-gaze="scanning"] .gaze {
+    animation: gaze-scanning var(--dur-gaze-scanning) var(--ease-out-soft) both;
   }
 
-  .blink {
-    animation: blink var(--dur-gaze) var(--ease-out-soft) both;
+  [data-gaze="scanning"] .blink {
+    animation: blink-scanning var(--dur-gaze-scanning) var(--ease-out-soft) both;
+  }
+
+  [data-gaze="waiting"] .gaze {
+    animation: gaze-waiting var(--dur-gaze-waiting) var(--ease-out-soft) both;
+  }
+
+  [data-gaze="waiting"] .blink {
+    animation: blink-waiting var(--dur-gaze-waiting) var(--ease-out-soft) both;
   }
 }
 
-@keyframes gaze {
+@keyframes gaze-scanning {
   0%, 4% {
     translate: var(--gaze-rest);
   }
@@ -788,15 +808,7 @@ body {
   }
 }
 
-/*
- * Le clignement. Deux rapides à la charnière des deux regards, un long et plus lent à se
- * relever qu'à tomber pour finir — 336 ms contre 204.
- *
- * Les fermetures sont espacées de 480 ms au plus serré. Ce n'est pas un réglage de confort :
- * fermé, le O est un disque d'encre pleine, et deux fermetures plus rapprochées seraient un
- * scintillement. Le seuil est à trois par seconde ; on en compte deux.
- */
-@keyframes blink {
+@keyframes blink-scanning {
   0%, 34% {
     translate: var(--lid-open);
   }
@@ -816,6 +828,42 @@ body {
     translate: var(--lid-closed);
   }
   97.5%, 100% {
+    translate: var(--lid-open);
+  }
+}
+
+@keyframes gaze-waiting {
+  0%, 12% {
+    translate: var(--gaze-rest);
+  }
+  15%, 34% {
+    translate: var(--gaze-up);
+  }
+  37%, 60% {
+    translate: var(--gaze-left);
+  }
+  63%, 75% {
+    translate: var(--gaze-down);
+  }
+  79%, 100% {
+    translate: var(--gaze-rest);
+  }
+}
+
+@keyframes blink-waiting {
+  0%, 41% {
+    translate: var(--lid-open);
+  }
+  45%, 50% {
+    translate: var(--lid-closed);
+  }
+  56%, 84% {
+    translate: var(--lid-open);
+  }
+  88%, 93% {
+    translate: var(--lid-closed);
+  }
+  99%, 100% {
     translate: var(--lid-open);
   }
 }

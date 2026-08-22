@@ -8,7 +8,7 @@ import {
   PUPIL_R,
   STROKE,
   GAZE,
-  REPLAY_PAUSES_MS,
+  GAZE_SEQUENCES,
   counter,
   lid,
 } from "@/components/ui/mark-geometry.mjs";
@@ -22,15 +22,19 @@ import {
  *
  * **Ce que le mouvement a le droit de faire.** L'application n'anime rien au repos ; c'est
  * écrit dans `docs/ux-direction.md` et c'est ce qui rend son mouvement supportable à la
- * centième ouverture. La séquence joue deux regards articulés par un double clignement, se
- * termine sur un clignement long, se repose — puis se relance après une pause tirée au hasard,
- * tant que l'écran qui la porte est affiché.
+ * centième ouverture. Une séquence se joue, se repose au centre, puis se relance après une
+ * pause tirée au hasard, tant que l'écran qui la porte est affiché.
  *
- * **Elle ne vit qu'à deux endroits, et c'est `animate` qui les nomme.** L'ouverture, où rien
- * n'attend derrière elle, et le o du titre d'Explorer, qui est un onglet et se revoit. Ce
- * second endroit est une dépense sur le budget de mouvement, pas un droit acquis par la marque :
- * le §7 de `docs/ux-direction.md` dit ce qui le borne, et la valeur par défaut de `animate` est
- * `false` pour que l'ajouter reste un geste et non un oubli.
+ * **Il y a deux séquences, et `gaze` dit laquelle joue.** `scanning` à l'ouverture, où rien
+ * n'attend derrière elle ; `waiting` dans le o du titre d'Explorer, qui est un onglet et se
+ * revoit. Ce que ces deux partitions font du même dessin est écrit dans `mark-geometry.mjs` —
+ * ici, on ne fait que nommer celle qui joue.
+ *
+ * **Pourquoi un nom et non un booléen.** Un `animate` vrai ou faux ne saurait pas dire laquelle
+ * des deux, et il faudrait une seconde propriété pour le préciser — donc un état où l'on
+ * demande une séquence sans l'animer. Une propriété qui vaut `undefined`, `scanning` ou
+ * `waiting` rend cet état inexprimable, et son absence garde la marque immobile : l'animer reste
+ * un geste, jamais un oubli.
  *
  * **Pourquoi un composant client.** La pause aléatoire est la seule chose de cette séquence que
  * le CSS ne sait pas exprimer. Le reste — les positions, les temps, les courbes — reste
@@ -67,14 +71,20 @@ const GAZE_VARIABLES = Object.fromEntries(
   Object.entries(GAZE).map(([name, position]) => [`--gaze-${name}`, at(position)])
 ) as CSSProperties;
 
+/** Le regard qui parcourt, ou celui qui attend — voir `GAZE_SEQUENCES`. */
+export type GazeName = keyof typeof GAZE_SEQUENCES;
+
 export type MarkProps = {
   /**
    * `icon` quand la marque est seule, `text` quand elle est dans le mot — voir le motif de ces
    * deux graisses dans `mark-geometry.mjs`.
    */
   optical?: keyof typeof STROKE;
-  /** Joue la séquence du regard, en boucle espacée de pauses aléatoires. */
-  animate?: boolean;
+  /**
+   * La séquence à jouer, en boucle espacée de pauses aléatoires. Omise, la marque est
+   * immobile : pupille au centre, paupière relevée.
+   */
+  gaze?: GazeName;
   className?: string;
   style?: CSSProperties;
 };
@@ -89,7 +99,7 @@ export type MarkProps = {
  * Le repli en mouvement réduit n'a rien de particulier à faire : sans animation, aucune fin
  * d'animation n'est annoncée, la pause ne s'arme jamais, et la marque reste au repos.
  */
-function useSequenceLoop(enabled: boolean) {
+function useSequenceLoop(gaze: GazeName | undefined) {
   const root = useRef<SVGSVGElement | null>(null);
   const pending = useRef<number | undefined>(undefined);
 
@@ -100,9 +110,12 @@ function useSequenceLoop(enabled: boolean) {
     root,
     replayAfterPause: useCallback(() => {
       const svg = root.current;
-      if (!enabled || !svg || typeof svg.getAnimations !== "function") return;
+      if (!gaze || !svg || typeof svg.getAnimations !== "function") return;
 
-      const pause = REPLAY_PAUSES_MS[Math.floor(Math.random() * REPLAY_PAUSES_MS.length)];
+      // Chaque séquence a ses pauses : celle qui attend se repose deux fois plus longtemps
+      // entre deux passages, et c'est une part de ce qui la distingue de celle qui parcourt.
+      const pauses = GAZE_SEQUENCES[gaze].replayPausesMs;
+      const pause = pauses[Math.floor(Math.random() * pauses.length)];
       pending.current = window.setTimeout(() => {
         // Les deux pistes portent la même durée et le même état de départ : les remettre à
         // zéro ensemble suffit à les garder accordées, sans les nommer ni les compter.
@@ -111,20 +124,15 @@ function useSequenceLoop(enabled: boolean) {
           animation.play();
         }
       }, pause);
-    }, [enabled]),
+    }, [gaze]),
   };
 }
 
-export function Mark({
-  optical = "icon",
-  animate = false,
-  className,
-  style,
-}: MarkProps) {
+export function Mark({ optical = "icon", gaze, className, style }: MarkProps) {
   const stroke = STROKE[optical];
   const { rx, ry } = counter(stroke);
   const eyelid = lid(stroke);
-  const { root, replayAfterPause } = useSequenceLoop(animate);
+  const { root, replayAfterPause } = useSequenceLoop(gaze);
 
   // La contre-forme sert deux fois — de trou dans l'anneau, et de découpe pour la paupière.
   // L'identifiant est propre à l'instance : deux marques animées sur une même page se
@@ -141,8 +149,11 @@ export function Mark({
     <svg
       ref={root}
       viewBox={VIEW_BOX}
+      // La séquence est choisie par la feuille de style, pas par ce fichier : c'est elle qui
+      // attache une partition et une durée à chaque nom, et elle seule qui sait les écrire.
+      data-gaze={gaze}
       className={className}
-      style={animate ? { ...animation, ...style } : style}
+      style={gaze ? { ...animation, ...style } : style}
       fill="currentColor"
       aria-hidden
       focusable="false"
@@ -158,13 +169,13 @@ export function Mark({
         fillRule="evenodd"
       />
       <circle
-        className={animate ? "gaze" : undefined}
+        className={gaze ? "gaze" : undefined}
         cx={CENTER}
         cy={CENTER}
         r={PUPIL_R}
-        onAnimationEnd={animate ? replayAfterPause : undefined}
+        onAnimationEnd={gaze ? replayAfterPause : undefined}
       />
-      {animate && (
+      {gaze && (
         <>
           <defs>
             <clipPath id={counterId}>

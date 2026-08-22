@@ -7,11 +7,8 @@ import {
   PUPIL_R,
   STROKE,
   GAZE,
-  GAZE_SCORE,
-  GAZE_SEQUENCE,
-  BLINK_SCORE,
-  MARK_SEQUENCE_MS,
-  REPLAY_PAUSES_MS,
+  GAZE_SEQUENCES,
+  GAZE_SEQUENCE_NAMES,
   counter,
   lid,
   lidEdge,
@@ -140,9 +137,9 @@ describe("cohérence entre la géométrie et la feuille de style", () => {
    * simplement un peu fausse — le genre de défaut que personne ne voit et que personne ne
    * corrige.
    */
-  function played(name: string, prefix: string) {
+  function played(keyframes: string, prefix: string) {
     return [
-      ...block(css, `@keyframes ${name}`).matchAll(
+      ...block(css, `@keyframes ${keyframes}`).matchAll(
         /([\d.]+)%,\s*([\d.]+)%\s*\{\s*translate:\s*var\(--([a-z-]+)\)/g
       ),
     ].map(([, from, to, variable]) => ({
@@ -152,115 +149,224 @@ describe("cohérence entre la géométrie et la feuille de style", () => {
     }));
   }
 
-  const tracks = [
-    { name: "gaze", prefix: "gaze-", score: GAZE_SCORE, positions: Object.keys(GAZE) },
-    {
-      name: "blink",
-      prefix: "lid-",
-      score: BLINK_SCORE,
-      positions: ["open", "closed"],
-    },
-  ];
-
-  for (const { name, prefix, score, positions } of tracks) {
-    /**
-     * Seconde défaillance, et c'est celle qui est réellement arrivée pendant l'écriture : la
-     * séquence tourne, et rien ne bouge.
-     *
-     * Le composant émet une propriété personnalisée par position, la feuille de style les
-     * réclame par leur nom. Renommer une position dans la géométrie suffit à rompre le lien —
-     * un `var()` qui ne résout rien ne produit pas d'erreur, il produit un déplacement nul.
-     */
-    it(`joue exactement la partition de @keyframes ${name}`, () => {
-      expect(played(name, prefix)).toEqual(score);
-    });
-
-    it(`n'anime dans @keyframes ${name} aucune position que la géométrie ne définit pas`, () => {
-      const used = played(name, prefix).map(({ position }) => position);
-      expect(new Set(used).size).toBeGreaterThan(0);
-      for (const position of used) expect(positions).toContain(position);
-    });
-
-    it(`ne déplace rien d'autre dans @keyframes ${name}`, () => {
-      // La règle du produit : deux propriétés animées, le déplacement et l'opacité. Une
-      // animation de marque est le premier endroit où l'on est tenté d'ajouter une échelle ou
-      // une rotation, et le premier endroit où cela se remarquerait.
-      const declarations = [
-        ...block(css, `@keyframes ${name}`).matchAll(/^\s*([a-z-]+)\s*:/gm),
-      ].map((m) => m[1]);
-      expect(new Set(declarations)).toEqual(new Set(["translate"]));
-    });
-
-    it(`couvre la séquence entière dans @keyframes ${name}`, () => {
-      // Une partition qui ne part pas de 0 % ou ne va pas jusqu'à 100 % laisse l'état initial
-      // ou final au hasard de ce que le navigateur interpole.
-      expect(score.at(0)?.from).toBe(0);
-      expect(score.at(-1)?.to).toBe(100);
-    });
-  }
-
-  it("porte la même durée sur les deux pistes, et c'est celle de la partition", () => {
-    // Deux durées différentes désaccorderaient les pistes, et la relance ne pourrait plus les
-    // remettre à zéro d'un seul geste.
-    const declared = [...css.matchAll(/animation:\s*(gaze|blink)\s+var\(--dur-gaze\)/g)];
-    expect(declared.map((m) => m[1]).sort()).toEqual(["blink", "gaze"]);
-    expect(css).toContain(`--dur-gaze: ${MARK_SEQUENCE_MS}ms`);
-  });
-
-  it("commence et finit la séquence au repos", () => {
-    // La condition de la boucle : l'état de départ est l'état d'arrivée, donc une relance ne
-    // se voit pas sauter. C'est aussi l'état affiché en mouvement réduit.
-    expect(GAZE_SEQUENCE.at(0)).toBe("rest");
-    expect(GAZE_SEQUENCE.at(-1)).toBe("rest");
-    expect(GAZE.rest).toEqual([0, 0]);
-    expect(BLINK_SCORE.at(0)?.position).toBe("open");
-    expect(BLINK_SCORE.at(-1)?.position).toBe("open");
-  });
+  /**
+   * Les intervalles laissés vides entre deux maintiens : les saccades, que l'interpolation
+   * parcourt. Elles ne sont écrites nulle part, ce qui rend impossible d'en oublier une en
+   * déplaçant une fixation.
+   */
+  const saccades = (score: typeof GAZE_SEQUENCES.scanning.gaze) =>
+    score.slice(1).map(({ from }, i) => ({ from: score[i].to, to: from }));
 
   /**
    * Un clignement entier, paupière en mouvement comprise : de l'instant où elle quitte sa
    * position relevée à celui où elle y revient.
    *
    * C'est cette étendue qui compte, et non le seul maintien clos : ce qu'on voit d'un
-   * clignement, c'est le bord qui descend et remonte — 108 et 132 ms —, là où le disque plein
-   * ne tient que 36 ms. Juger sur le maintien reviendrait à mesurer le sixième du phénomène.
+   * clignement, c'est le bord qui descend et remonte, là où le disque plein ne tient qu'un
+   * instant. Juger sur le maintien reviendrait à mesurer le sixième du phénomène.
    */
-  const blinks = BLINK_SCORE.flatMap(({ position }, i) =>
-    position === "closed" ? [{ from: BLINK_SCORE[i - 1].to, to: BLINK_SCORE[i + 1].from }] : []
-  );
+  const blinksOf = (score: typeof GAZE_SEQUENCES.scanning.blink) =>
+    score.flatMap(({ position }, i) =>
+      position === "closed" ? [{ from: score[i - 1].to, to: score[i + 1].from }] : []
+    );
 
-  it("tient les clignements sous le seuil de scintillement", () => {
-    // Fermé, le O est un disque d'encre pleine : à ce contraste, des fermetures rapprochées
-    // seraient un scintillement, et la méthode l'interdit sans condition.
-    //
-    // Le seuil opposable est de trois par seconde, soit 333 ms entre deux départs. Le contrôle
-    // est posé à 400 ms pour garder une marge : la partition la plus serrée est à 480, c'est-à-
-    // dire un peu plus de deux clignements par seconde. Le contrôle porte sur la partition
-    // plutôt que sur la bonne volonté de celui qui la modifiera.
-    expect(blinks.length).toBeGreaterThan(0);
+  /**
+   * Ce qui est vérifié pour chacune des deux partitions, sans en nommer aucune : en ajouter une
+   * troisième la soumet à tout ce qui suit sans qu'une ligne soit à écrire.
+   */
+  for (const name of GAZE_SEQUENCE_NAMES) {
+    const sequence = GAZE_SEQUENCES[name];
 
-    // La boucle repasse par le début : le dernier clignement d'un passage et le premier du
-    // suivant sont séparés par la fin de séquence, puis par la plus courte des pauses.
-    const starts = blinks.map(({ from }) => (from / 100) * MARK_SEQUENCE_MS);
-    const wrapped = [...starts, starts[0] + MARK_SEQUENCE_MS + Math.min(...REPLAY_PAUSES_MS)];
+    const tracks = [
+      {
+        keyframes: `gaze-${name}`,
+        prefix: "gaze-",
+        score: sequence.gaze,
+        positions: Object.keys(GAZE),
+      },
+      {
+        keyframes: `blink-${name}`,
+        prefix: "lid-",
+        score: sequence.blink,
+        positions: ["open", "closed"],
+      },
+    ];
 
-    for (let i = 1; i < wrapped.length; i++) {
-      expect(wrapped[i] - wrapped[i - 1], `clignements ${i} et ${i + 1}`).toBeGreaterThan(400);
+    for (const { keyframes, prefix, score, positions } of tracks) {
+      /**
+       * Seconde défaillance, et c'est celle qui est réellement arrivée pendant l'écriture : la
+       * séquence tourne, et rien ne bouge.
+       *
+       * Le composant émet une propriété personnalisée par position, la feuille de style les
+       * réclame par leur nom. Renommer une position dans la géométrie suffit à rompre le lien —
+       * un `var()` qui ne résout rien ne produit pas d'erreur, il produit un déplacement nul.
+       */
+      it(`joue exactement la partition de @keyframes ${keyframes}`, () => {
+        expect(played(keyframes, prefix)).toEqual(score);
+      });
+
+      it(`n'anime dans @keyframes ${keyframes} aucune position que la géométrie ne définit pas`, () => {
+        const used = played(keyframes, prefix).map(({ position }) => position);
+        expect(new Set(used).size).toBeGreaterThan(0);
+        for (const position of used) expect(positions).toContain(position);
+      });
+
+      it(`ne déplace rien d'autre dans @keyframes ${keyframes}`, () => {
+        // La règle du produit : deux propriétés animées, le déplacement et l'opacité. Une
+        // animation de marque est le premier endroit où l'on est tenté d'ajouter une échelle ou
+        // une rotation, et le premier endroit où cela se remarquerait.
+        const declarations = [
+          ...block(css, `@keyframes ${keyframes}`).matchAll(/^\s*([a-z-]+)\s*:/gm),
+        ].map((m) => m[1]);
+        expect(new Set(declarations)).toEqual(new Set(["translate"]));
+      });
+
+      it(`couvre la séquence entière dans @keyframes ${keyframes}`, () => {
+        // Une partition qui ne part pas de 0 % ou ne va pas jusqu'à 100 % laisse l'état initial
+        // ou final au hasard de ce que le navigateur interpole.
+        expect(score.at(0)?.from).toBe(0);
+        expect(score.at(-1)?.to).toBe(100);
+      });
     }
+
+    it(`porte la même durée sur les deux pistes de « ${name} », et c'est celle de la partition`, () => {
+      // Deux durées différentes désaccorderaient les pistes, et la relance ne pourrait plus les
+      // remettre à zéro d'un seul geste.
+      const declared = [
+        ...css.matchAll(
+          new RegExp(`animation:\\s*(gaze|blink)-${name}\\s+var\\(--dur-gaze-${name}\\)`, "g")
+        ),
+      ];
+      expect(declared.map((m) => m[1]).sort()).toEqual(["blink", "gaze"]);
+      expect(css).toContain(`--dur-gaze-${name}: ${sequence.durationMs}ms`);
+    });
+
+    it(`n'attache « ${name} » qu'aux marques qui la demandent`, () => {
+      // La feuille de style choisit la partition sur l'attribut que `Mark.tsx` pose. Une règle
+      // qui viserait `.gaze` sans le qualifier ferait jouer les deux séquences à la fois, sur
+      // toutes les marques — y compris celles qu'on a voulues immobiles.
+      for (const track of ["gaze", "blink"]) {
+        expect(css).toContain(`[data-gaze="${name}"] .${track} {`);
+      }
+    });
+
+    it(`commence et finit « ${name} » au repos`, () => {
+      // La condition de la boucle : l'état de départ est l'état d'arrivée, donc une relance ne
+      // se voit pas sauter. C'est aussi l'état affiché en mouvement réduit.
+      expect(sequence.gaze.at(0)?.position).toBe("rest");
+      expect(sequence.gaze.at(-1)?.position).toBe("rest");
+      expect(GAZE.rest).toEqual([0, 0]);
+      expect(sequence.blink.at(0)?.position).toBe("open");
+      expect(sequence.blink.at(-1)?.position).toBe("open");
+    });
+
+    it(`tient les clignements de « ${name} » sous le seuil de scintillement`, () => {
+      // Fermé, le O est un disque d'encre pleine : à ce contraste, des fermetures rapprochées
+      // seraient un scintillement, et la méthode l'interdit sans condition.
+      //
+      // Le seuil opposable est de trois par seconde, soit 333 ms entre deux départs. Le contrôle
+      // est posé à 400 ms pour garder une marge. Il porte sur la partition plutôt que sur la
+      // bonne volonté de celui qui la modifiera.
+      const blinks = blinksOf(sequence.blink);
+      expect(blinks.length).toBeGreaterThan(0);
+
+      // La boucle repasse par le début : le dernier clignement d'un passage et le premier du
+      // suivant sont séparés par la fin de séquence, puis par la plus courte des pauses.
+      const starts = blinks.map(({ from }) => (from / 100) * sequence.durationMs);
+      const wrapped = [
+        ...starts,
+        starts[0] + sequence.durationMs + Math.min(...sequence.replayPausesMs),
+      ];
+
+      for (let i = 1; i < wrapped.length; i++) {
+        expect(wrapped[i] - wrapped[i - 1], `clignements ${i} et ${i + 1}`).toBeGreaterThan(400);
+      }
+    });
+
+    it(`laisse la paupière relevée pendant que le regard se déplace — « ${name} »`, () => {
+      // Un clignement au milieu d'une saccade masquerait le déplacement qui fait tout le
+      // travail, et un œil réel cligne au changement de zone d'intérêt, pas en route.
+      for (const saccade of saccades(sequence.gaze)) {
+        for (const blink of blinksOf(sequence.blink)) {
+          expect(
+            blink.from < saccade.to && blink.to > saccade.from,
+            `saccade ${saccade.from}–${saccade.to} % recouverte par un clignement ${blink.from}–${blink.to} %`
+          ).toBe(false);
+        }
+      }
+    });
+  }
+});
+
+/**
+ * Ce qui sépare les deux partitions — et c'est la seule chose qui les sépare.
+ *
+ * Elles partagent le dessin, l'orbite et les fixations. Si l'on retouche leurs temps sans y
+ * prendre garde, elles convergent : le regard qui attend se remet à parcourir, et l'écran
+ * d'Explorer redit « cherche » là où il dit « choisis ». Rien dans le rendu ne le signalerait —
+ * deux séquences un peu semblables restent deux séquences.
+ *
+ * Ces trois contrôles portent donc sur l'écart lui-même, pas sur des valeurs.
+ */
+describe("ce qui distingue le regard qui attend de celui qui parcourt", () => {
+  const { scanning, waiting } = GAZE_SEQUENCES;
+
+  /**
+   * Les fixations d'une partition, en millisecondes réelles — les maintiens **hors du centre**.
+   *
+   * Les retours au repos en sont exclus, et ce n'est pas une commodité : un maintien au centre
+   * n'est pas un regard tenu, c'est l'œil posé, et c'est là que la paupière travaille. Les
+   * compter reviendrait à opposer le temps que « scanning » passe à cligner au temps que
+   * « waiting » passe à regarder.
+   */
+  const fixations = (sequence: typeof scanning) =>
+    sequence.gaze
+      .filter(({ position }) => position !== "rest")
+      .map(({ from, to }) => ((to - from) / 100) * sequence.durationMs);
+
+  it("tient chaque fixation plus longtemps que l'autre ne l'a jamais tenue", () => {
+    // C'est le temps, et lui seul, qui fait la différence entre chercher et attendre. La
+    // fixation la plus courte de « waiting » doit dépasser la plus longue de « scanning » —
+    // 864 ms contre 264 —, sans quoi les deux rythmes se recouvrent et l'écart cesse de se voir.
+    expect(Math.min(...fixations(waiting))).toBeGreaterThan(Math.max(...fixations(scanning)));
   });
 
-  it("laisse la paupière relevée pendant que le regard se déplace", () => {
-    // Un clignement au milieu d'une saccade masquerait le déplacement qui fait tout le
-    // travail, et un œil réel cligne au changement de zone d'intérêt, pas en route.
-    const saccades = GAZE_SCORE.slice(1).map(({ from }, i) => ({ from: GAZE_SCORE[i].to, to: from }));
+  it("fait moitié moins de saccades sur une fois et demie le temps", () => {
+    // L'autre moitié de l'écart : le temps supplémentaire de « waiting » n'achète pas des
+    // événements — c'est ce que faisait « scanning » —, il achète leur absence. Un contributeur
+    // qui rallongerait la séquence en y ajoutant des étapes la ramènerait à un regard qui
+    // parcourt, en plus lent.
+    expect(waiting.gaze.length - 1).toBeLessThanOrEqual((scanning.gaze.length - 1) / 2);
+    expect(waiting.durationMs).toBeGreaterThan(scanning.durationMs);
+  });
 
-    for (const saccade of saccades) {
-      for (const blink of blinks) {
-        expect(
-          blink.from < saccade.to && blink.to > saccade.from,
-          `saccade ${saccade.from}–${saccade.to} % recouverte par un clignement ${blink.from}–${blink.to} %`
-        ).toBe(false);
-      }
-    }
+  it("ne revient jamais sur ses pas", () => {
+    // « waiting » descend un seul quart d'orbite — rest, up, left, down, puis retour. Aucun
+    // demi-tour : le sens de rotation ne s'inverse pas d'un déplacement au suivant. C'est ce
+    // qui manque à « scanning », qui change huit fois de direction, et c'est ce qui fait lire
+    // un regard posé plutôt qu'un regard qui fouille.
+    const path = waiting.gaze.map(({ position }) => GAZE[position as keyof typeof GAZE]);
+    const moves = path.slice(1).map(([x, y], i) => [x - path[i][0], y - path[i][1]]);
+    const turns = moves.slice(1).map(([x, y], i) => moves[i][0] * y - moves[i][1] * x);
+
+    expect(turns.length).toBeGreaterThan(0);
+    for (const turn of turns) expect(Math.sign(turn)).toBe(Math.sign(turns[0]));
+  });
+
+  it("ne cligne que lentement", () => {
+    // Le double clignement rapide de « scanning » articulait deux regards ; il n'y en a qu'un
+    // ici, et une fermeture vive y passerait pour un sursaut. Chaque clignement de « waiting »
+    // dure donc plus que le plus long de « scanning ».
+    const spans = (sequence: typeof scanning) =>
+      sequence.blink.flatMap(({ position }, i) =>
+        position === "closed"
+          ? [
+              ((sequence.blink[i + 1].from - sequence.blink[i - 1].to) / 100) *
+                sequence.durationMs,
+            ]
+          : []
+      );
+
+    expect(Math.min(...spans(waiting))).toBeGreaterThan(Math.max(...spans(scanning)));
   });
 });
