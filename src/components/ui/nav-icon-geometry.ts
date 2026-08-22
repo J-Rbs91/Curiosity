@@ -64,11 +64,16 @@ export const BOOK = {
   /** Demi-largeur du livre ouvert, c'est-à-dire la largeur d'un plat. */
   half: 10.5,
   /**
-   * Le haut et le bas du plat. 10,5 × 15 est un rapport de livre — l'ancien dessin, plus étroit
-   * d'un cinquième, se lisait comme une porte avant de se lire comme un volume.
+   * Le haut et le bas du plat.
+   *
+   * La largeur, elle, ne se règle pas : à 10,5 de demi-largeur, le livre ouvert occupe déjà
+   * toute la boîte et pèse une unité de plus que le cadran de la boussole, sa voisine. Le
+   * rapport du plat se règle donc par la hauteur, et 10,5 × 13,6 est celui d'un livre tenu en
+   * main — l'ancien dessin, d'un cinquième plus étroit, se lisait comme une porte avant de se
+   * lire comme un volume.
    */
-  top: 4.5,
-  bottom: 19.5,
+  top: 5.2,
+  bottom: 18.8,
   /**
    * L'arrondi de la gouttière — les deux coins extérieurs. Les coins du dos, eux, restent
    * vifs : c'est là que le plat est relié, et un livre n'est arrondi que du côté où on l'ouvre.
