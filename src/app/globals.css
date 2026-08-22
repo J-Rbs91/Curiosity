@@ -100,6 +100,45 @@
   --dur-mark: 720ms;  /* moment marquant : le concept qu'on vient de travailler */
 
   /*
+   * Le cran d'en dessous : changer de coupe d'un même écran.
+   *
+   * Deux durées et non trois, parce que les deux coupes ne se croisent pas —
+   * l'ancienne s'efface en `--dur-lateral-fade`, la suivante apparaît dans la
+   * même durée, à la suite. C'est la règle de toutes les traversées du produit,
+   * et c'est ce qui évite la seule chose que ce mouvement ne supporte pas : deux
+   * listes de texte lisibles en même temps, décalées de quelques pixels.
+   *
+   * `--dur-lateral-move` est plus long que le fondu, et c'est délibéré : la
+   * coupe qui arrive est déjà lisible pendant qu'elle finit de se poser. Sans
+   * cet écart, la translation se jouerait entièrement pendant que le contenu est
+   * encore transparent, et personne ne verrait d'où il vient — le sens, qui est
+   * tout ce que ce mouvement a à dire, serait perdu.
+   */
+  --dur-lateral-fade: 140ms;
+  --dur-lateral-move: 280ms;
+
+  /*
+   * Les deux icônes de la navigation, et les deux seules durées qui dépassent le plafond de
+   * 300 ms sans être un glissement d'écran.
+   *
+   * Ce qui les y autorise est ce qui les borne : elles ne se jouent qu'une fois par changement
+   * de section, elles ne retiennent rien — l'écran est là, l'entrée est allumée et cliquable
+   * dès la première image — et elles ne portent aucune information que la couleur, la graisse
+   * et le repère de position ne portent déjà.
+   *
+   * `--dur-fold` est le temps d'un demi-tour de couverture. À 220 ms le plat claque et le
+   * mouvement se lit comme un remplacement d'icône, ce qui est précisément ce qu'on voulait
+   * éviter ; à 560 il traîne derrière l'écran qui a déjà changé.
+   *
+   * `--dur-swing` est une partition, pas une durée : quatre mouvements amortis, dont le
+   * premier prend 30 % du temps et le dernier 8 %. Les écarts sont dans
+   * `nav-icon-geometry.ts`, les instants dans les images clés ci-dessous, et `npm test`
+   * vérifie que les deux disent la même chose.
+   */
+  --dur-fold: 420ms;
+  --dur-swing: 720ms;
+
+  /*
    * Le regard de la marque — les deux seules durées du produit à dépasser la seconde.
    *
    * Elles ne se paient qu'à deux endroits, et ce sont deux partitions différentes, pas une
@@ -126,6 +165,17 @@
    */
   --shift-screen: 16%;
   --shift-phase: 10%;
+
+  /*
+   * Le troisième cran, et le plus court : on ne change ni d'écran ni de phase,
+   * on change de coupe. L'amplitude se lit sur la colonne de contenu et non sur
+   * l'écran — 8 % d'une colonne de 342 px valent 27 px, soit le quart des 111 px
+   * que parcourt la pastille d'onglet juste au-dessus. C'est ce rapport qui fait
+   * lire les deux comme un seul geste : le repère porte le déplacement, le
+   * contenu ne fait que le suivre. Doubler cette valeur donnerait un carrousel,
+   * c'est-à-dire un changement de lieu, ce que changer d'onglet n'est pas.
+   */
+  --shift-lateral: 8%;
 
   /* Hauteur réelle de la barre de navigation, hors zone sûre du système. */
   --nav-height: 4.25rem;
@@ -228,6 +278,8 @@
      */
     --shift-screen: 8%;
     --shift-phase: 5%;
+    /* La colonne double de largeur au seuil précédent : le trajet, lui, reste. */
+    --shift-lateral: 4%;
   }
 }
 
@@ -891,6 +943,135 @@ body {
 }
 
 /* --------------------------------------------------------------------------
+ * Les deux icônes de la navigation — un pivot et une aiguille
+ *
+ * Le changement de section se voit à l'endroit où on vient de le demander. C'est la seule
+ * chose que ces deux mouvements ajoutent : l'état, lui, était déjà dit trois fois — par la
+ * couleur, par la graisse du trait et par le repère de position, qui glisse au même instant.
+ *
+ * **Ce qui garantit qu'ils ne se jouent qu'une fois.** Le livre est une *transition* : il n'a
+ * pas d'état de départ à rejouer, il a deux positions et le navigateur va de l'une à l'autre
+ * quand — et seulement quand — la position change. Rien à armer, rien à remettre à zéro, rien
+ * qui parte au montage. L'aiguille, elle, tient une partition en cinq temps que seule une
+ * animation sait écrire ; c'est le composant qui la relance, en remontant l'aiguille au
+ * changement de section, et lui seul sait qu'une descente dans la branche déjà ouverte n'en
+ * est pas un.
+ *
+ * **Les mesures viennent du dessin, les instants restent ici.** Le déplacement de recentrage
+ * du livre et les écarts de l'aiguille sont émis en propriétés personnalisées par
+ * `nav-icon-geometry.ts` : les recopier ici donnerait deux définitions d'une même géométrie,
+ * et c'est la seconde qui dériverait. Même partage que pour le regard de la marque.
+ *
+ * **Mouvement réduit.** L'animation de l'aiguille est déclarée en `no-preference` : sans elle,
+ * l'aiguille est au nord, ce qui est aussi son repos. Le livre garde sa transition — le repli
+ * général la ramène à une durée nulle, et les deux positions du livre sont ses deux états
+ * lisibles. Dans les deux cas, ce qui reste affiché est l'état, jamais une image intermédiaire.
+ * -------------------------------------------------------------------------- */
+
+/*
+ * La graisse s'épaissit avec la couleur, sur la durée d'un onglet. Les deux propriétés sont
+ * énumérées et portées par la même règle : `transition-colors` de Tailwind aurait redéclaré
+ * `transition-property` et emporté silencieusement la graisse.
+ */
+.nav-icon {
+  transition-property: color, stroke-width;
+  transition-duration: var(--dur-ui);
+  transition-timing-function: var(--ease-out-soft);
+}
+
+/*
+ * Le livre, en quatre déplacements et aucun redessin. L'état écrit ici est l'état **ouvert** :
+ * c'est celui qui porte des valeurs, et le livre fermé est celui où tout revient à zéro.
+ *
+ * `skewY` incline les pages vers la reliure, d'un signe par plat. Il pivote autour du dos, où
+ * il ne déplace rien : le bord relié des deux plats y reste confondu avec le trait du dos.
+ * C'est ce qui rend le plat rectangulaire quand le cisaillement tombe — un livre fermé n'est
+ * pas un trapèze, et cette forme-là appartient à l'ouverture, pas au dessin.
+ *
+ * `scale: -1 1` n'est pas un retournement d'image, c'est la projection d'un demi-tour : la
+ * largeur apparente d'une surface qui pivote vaut son cosinus, et l'interpolation de 1 à −1
+ * passe par le zéro, où le plat est vu par la tranche. Il s'applique **après** le
+ * cisaillement — l'ordre que le navigateur impose entre `transform` et les propriétés
+ * individuelles est ici exactement celui qu'il faut, puisque le miroir d'un cisaillement est
+ * le cisaillement de l'autre signe : le plat rabattu retombe sur son voisin, inclinaison
+ * comprise.
+ *
+ * Le dos glisse sur la couverture et y devient la reliure ; le volume se recentre. Voir
+ * `nav-icon-geometry.ts` pour les mesures, qui ne sont pas ici.
+ */
+.nav-book {
+  transition: translate var(--dur-fold) var(--ease-out-soft);
+}
+
+.nav-leaf {
+  transform-box: view-box;
+  transform-origin: 50% 50%;
+  transform: skewY(var(--leaf-tilt));
+  transition:
+    transform var(--dur-fold) var(--ease-out-soft),
+    scale var(--dur-fold) var(--ease-out-soft);
+}
+
+.nav-spine {
+  transition: translate var(--dur-fold) var(--ease-out-soft);
+}
+
+[data-state="closed"] .nav-book {
+  translate: var(--book-shift);
+}
+
+[data-state="closed"] .nav-leaf {
+  transform: skewY(0deg);
+}
+
+[data-state="closed"] .nav-book-cover {
+  scale: -1 1;
+}
+
+[data-state="closed"] .nav-spine {
+  translate: var(--spine-band);
+}
+
+/* L'aiguille pivote sur le centre du cadran, qui est aussi le sien. */
+.nav-needle {
+  transform-box: view-box;
+  transform-origin: 50% 50%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  [data-state="finding"] .nav-needle {
+    animation: compass-swing var(--dur-swing) var(--ease-out-soft) both;
+  }
+}
+
+/*
+ * Les instants de la partition. Chaque temps est plus court que le précédent : une aiguille
+ * qui s'amortit ne ralentit pas, elle a de moins en moins de chemin à faire. La courbe de
+ * sortie donne à chaque mouvement son arrêt net, et c'est cet arrêt — pas le trajet — qui fait
+ * lire une aiguille aimantée plutôt qu'un balancier.
+ */
+@keyframes compass-swing {
+  0% {
+    rotate: 0deg;
+  }
+  30% {
+    rotate: var(--swing-1);
+  }
+  58% {
+    rotate: var(--swing-2);
+  }
+  78% {
+    rotate: var(--swing-3);
+  }
+  92% {
+    rotate: var(--swing-4);
+  }
+  100% {
+    rotate: var(--swing-5);
+  }
+}
+
+/* --------------------------------------------------------------------------
  * Transitions d'écran et de phase (View Transitions API)
  *
  * Une direction, un sens de lecture : on descend dans le corpus, le contenu
@@ -1017,6 +1198,66 @@ body {
   animation:
     var(--dur-fade) var(--ease-out-soft) var(--dur-exit) both vt-fade,
     var(--dur-move) var(--ease-lift) both vt-shift-x;
+}
+
+/* --------------------------------------------------------------------------
+ * Les trois coupes d'Explorer — le contenu suit l'onglet
+ *
+ * Même sens de lecture qu'au-dessus, un cran plus bas : on ne descend pas dans
+ * le corpus, on change de coupe du même écran. La pastille d'onglet part vers
+ * la droite, l'ancienne coupe part avec elle et la suivante arrive de la
+ * droite ; vers la gauche, l'inverse. Le sens vient du lien cliqué, seul à
+ * savoir quel onglet est à droite de quel autre.
+ *
+ * **La structure est celle d'une traversée d'écran, à une échelle près.** Sortie
+ * puis entrée, jamais les deux ensemble ; le fondu plus court que le
+ * déplacement ; l'amplitude en pourcentage. Ce qui change est le cran : 140 ms
+ * au lieu de 220 pour la sortie, 280 au lieu de 560 pour le glissement, et 8 %
+ * d'une colonne au lieu de 16 % d'un écran. Un changement d'onglet se paie
+ * plusieurs fois par minute — il descend sous les valeurs d'un changement de
+ * lieu au lieu de les rejoindre.
+ *
+ * **Aucune translation verticale.** Le contenu remontait du bas — la cascade
+ * `stagger`, retirée de cet écran — pendant que l'onglet se déplaçait de côté.
+ * Deux gestes simultanés qui ne racontent pas la même chose se lisent comme deux
+ * événements, et c'est cette incohérence que ces règles suppriment : le repère
+ * porte le déplacement, le contenu ne fait que le suivre.
+ *
+ * **Le groupe ne morphe pas.** Les trois coupes n'ont ni la même hauteur ni le
+ * même nombre de lignes, et faire glisser la boîte de l'une vers celle de
+ * l'autre ajouterait un mouvement vertical par la bande — exactement ce qu'on
+ * vient de retirer. Seul le contenu bouge, et il ne bouge que de côté.
+ * -------------------------------------------------------------------------- */
+
+::view-transition-group(.lateral-next),
+::view-transition-group(.lateral-prev) {
+  animation: none;
+}
+
+::view-transition-old(.lateral-next) {
+  --vt-shift: calc(-1 * var(--shift-lateral));
+  animation:
+    var(--dur-lateral-fade) var(--ease-out-soft) both vt-fade reverse,
+    var(--dur-lateral-fade) var(--ease-lift) both vt-shift-x reverse;
+}
+::view-transition-new(.lateral-next) {
+  --vt-shift: var(--shift-lateral);
+  animation:
+    var(--dur-lateral-fade) var(--ease-out-soft) var(--dur-lateral-fade) both vt-fade,
+    var(--dur-lateral-move) var(--ease-lift) var(--dur-lateral-fade) both vt-shift-x;
+}
+
+::view-transition-old(.lateral-prev) {
+  --vt-shift: var(--shift-lateral);
+  animation:
+    var(--dur-lateral-fade) var(--ease-out-soft) both vt-fade reverse,
+    var(--dur-lateral-fade) var(--ease-lift) both vt-shift-x reverse;
+}
+::view-transition-new(.lateral-prev) {
+  --vt-shift: calc(-1 * var(--shift-lateral));
+  animation:
+    var(--dur-lateral-fade) var(--ease-out-soft) var(--dur-lateral-fade) both vt-fade,
+    var(--dur-lateral-move) var(--ease-lift) var(--dur-lateral-fade) both vt-shift-x;
 }
 
 /* Entrée en session : la session monte par-dessus le reste de l'application. */

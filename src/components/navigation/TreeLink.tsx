@@ -6,12 +6,25 @@ import { usePathname, useRouter } from "next/navigation";
 import { intentBetween } from "@/lib/navigation-tree";
 import { noteGeste } from "@/lib/navigation-position";
 import { climbTo } from "@/components/navigation/climb";
-import { SCREEN_MOTION } from "@/components/motion/screen-motion";
+import {
+  LATERAL_MOTION,
+  SCREEN_MOTION,
+  type LateralMotion,
+} from "@/components/motion/screen-motion";
 
 interface TreeLinkProps {
   href: string;
   children: ReactNode;
   className?: string;
+  /**
+   * Le sens du pas de côté, pour les seules surfaces qui affichent un ordre.
+   *
+   * C'est la seule chose qu'un appelant déclare ici, et il ne la déclare que
+   * parce qu'il est le seul à la connaître : l'arbre dit la profondeur, pas la
+   * position d'un onglet parmi ses voisins. Omis, le pas de côté reste ce qu'il
+   * était — un remplacement sans mouvement.
+   */
+  lateral?: LateralMotion;
   "aria-label"?: string;
   "aria-current"?: "page" | "true";
   "data-target"?: string;
@@ -39,7 +52,7 @@ interface TreeLinkProps {
  * de crans dépiler, et c'est de là que venait un retour qui atterrissait ailleurs que là où
  * il l'annonçait.
  */
-export function TreeLink({ href, children, ...rest }: TreeLinkProps) {
+export function TreeLink({ href, lateral, children, ...rest }: TreeLinkProps) {
   const router = useRouter();
   const pathname = usePathname();
   const intent = intentBetween(pathname, href.split("?")[0]);
@@ -73,6 +86,9 @@ export function TreeLink({ href, children, ...rest }: TreeLinkProps) {
      * Un pas de côté ne consomme pas de profondeur. C'est la règle qui
      * manquait : sans elle, changer d'onglet ou sauter à un concept voisin
      * ajoutait une entrée, et il fallait dix appuis sur retour pour sortir.
+     *
+     * Le sens, lui, ne change rien à la pile : il n'est là que pour que le
+     * contenu parte du côté où l'on vient de le pousser.
      */
     return (
       <Link
@@ -80,7 +96,7 @@ export function TreeLink({ href, children, ...rest }: TreeLinkProps) {
         href={href}
         replace
         scroll={false}
-        transitionTypes={SCREEN_MOTION.lateral}
+        transitionTypes={lateral ? LATERAL_MOTION[lateral] : SCREEN_MOTION.lateral}
         onClick={(event) => {
           if (navigationOrdinaire(event)) noteGeste("remplace");
         }}

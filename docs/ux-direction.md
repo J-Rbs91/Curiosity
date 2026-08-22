@@ -428,6 +428,10 @@ Trois décisions, et une contribution qui les casserait se verrait :
 - **Thèmes et auteurs ne se regroupent par domaine que lorsqu'il y en a plusieurs.** La
   condition porte sur les données, jamais sur un domaine nommé : tant qu'un seul domaine est
   pourvu, un en-tête unique n'apprendrait rien et la liste reste celle de la V1.
+- **Le contenu se déplace dans le sens de l'onglet**, et de lui seul : vers « Auteurs » il part
+  à gauche et le suivant arrive de la droite, vers « Domaines » l'inverse. C'est la position
+  relative des onglets qui décide, jamais le nom d'une coupe — l'ordre ci-dessus reste donc le
+  seul endroit qui dise le sens de lecture. Les valeurs sont au §7.
 
 ### La liste d'Explorer
 
@@ -733,8 +737,12 @@ le texte écrit.
 | Sortie d'un écran ou d'une phase | 220 ms | `--ease-out-soft` |
 | Apparition du nouveau contenu (fondu) | 300 ms | `--ease-out-soft` |
 | Glissement d'un écran ou d'une phase | 560 ms sur 16 % / 10 % | `--ease-lift` |
+| Sortie puis entrée d'une coupe d'Explorer (fondu) | 140 ms, puis 140 ms | `--ease-out-soft` |
+| Glissement de la coupe qui arrive | 280 ms sur 8 % / 4 % | `--ease-lift` |
 | Entrée et sortie de session | 640 ms | `--ease-lift` |
 | Le concept qu'on vient de travailler | 720 ms | `--ease-lift` |
+| Le livre qui s'ouvre ou se referme | 420 ms | `--ease-out-soft` |
+| L'aiguille qui cherche le nord | 720 ms — quatre mouvements amortis | `--ease-out-soft` |
 | Le regard de la marque, à l'ouverture | 4 800 ms — `scanning` | `--ease-out-soft` |
 | Le regard de la marque, dans le titre d'Explorer | 7 200 ms — `waiting` | `--ease-out-soft` |
 
@@ -785,6 +793,64 @@ Le levier de retrait est d'un mot, et c'est délibéré : `<ExploreTitle animate
 `animate` laisse le titre exactement où il est, œil ouvert et pupille au centre. C'est aussi
 l'état qu'affiche le mouvement réduit.
 
+**Les deux icônes de la barre bougent, et c'est la troisième dépense assumée du produit.** Le
+livre s'ouvre quand on entre dans « Aujourd'hui » et se referme quand on en sort ; l'aiguille
+cherche le nord quand on entre dans « Explorer », et ne bouge plus jamais tant qu'on y reste.
+Ce qui les distingue du regard de la marque est qu'elles **ne se relancent pas** : une
+activation, un passage, et l'icône se tait. Quatre bornes, et il faut qu'elles tiennent
+ensemble :
+
+- **Le mouvement ne dit rien que l'interface ne dise déjà.** L'état actif était porté trois
+  fois — la couleur, la graisse du trait, le repère de position qui glisse au même instant — et
+  il l'est toujours. Ce que ces deux animations ajoutent est un accusé de réception à l'endroit
+  précis où le doigt vient d'appuyer, pas une information de plus à lire.
+- **Une section déjà ouverte ne rejoue rien.** Descendre dans la branche d'Explorer, revenir à
+  l'application sur la section où on l'avait laissée, recharger la page : rien de tout cela
+  n'est une activation, et rien ne bouge. C'est ce qui empêche ces icônes de devenir
+  l'animation au repos que le produit s'interdit.
+- **Ce sont deux états d'un même dessin, pas deux dessins.** Le livre est fait de deux plats
+  rectangulaires : les ouvrir les incline vers la reliure, rabattre celui de gauche sur l'autre
+  les referme, et le dos glisse alors sur la couverture pour devenir la reliure qu'on voit sur
+  tout livre posé. Quatre déplacements, aucun redessin. Un fondu entre deux icônes aurait montré
+  deux objets superposés là où il n'y en a qu'un, et c'est exactement ce qui fait qu'une icône
+  animée paraît décorative.
+- **Et la forme du repos appartient au repos.** L'inclinaison des pages avait d'abord été écrite
+  dans le tracé du plat : le livre fermé en héritait un trapèze, c'est-à-dire une forme qui n'est
+  celle d'aucun livre. Une déformation qui n'existe que dans un état ne se met pas dans le
+  dessin, elle se met dans la transformation qui mène à cet état — le tracé, lui, reste ce que
+  l'objet est quand il ne fait rien.
+- **Elles s'arrêtent là.** Deux icônes, celles de la navigation, et aucune autre. Une icône de
+  liste ou d'en-tête qui se mettrait à jouer serait du mouvement sous le contenu qu'on lit.
+
+**Et l'aiguille est le seul endroit du produit où l'on dépasse 300 ms sans glisser.** Ses
+720 ms sont une partition — un dépassement, trois corrections de moins en moins amples —, pas
+une durée réglable : la raccourcir ne l'accélérerait pas, elle lui retirerait des mouvements.
+Ce qui l'autorise est ce qui autorisait déjà le regard de la marque : elle ne retient rien.
+L'écran est arrivé, l'entrée est allumée et cliquable dès la première image, et personne
+n'attend qu'elle se pose.
+
+**Le troisième cran est celui d'une coupe, et il est plus court que les deux autres.** Changer
+d'onglet dans Explorer n'est ni un changement d'écran ni un changement de phase : l'en-tête, les
+onglets et la barre ne bougent pas, et seule la liste se remplace. La structure du mouvement
+reste pourtant la même — sortie, puis entrée, jamais les deux ensemble ; le fondu plus court que
+le déplacement ; l'amplitude en pourcentage. Ce qui change est l'échelle, et elle change parce
+qu'un onglet se paie plusieurs fois par minute : 140 ms au lieu de 220, 280 au lieu de 560, 8 %
+d'une colonne au lieu de 16 % d'un écran.
+
+**Ce mouvement est horizontal, et il l'est parce que le repère l'est.** La pastille d'onglet
+glisse de côté ; le contenu partait vers le haut. Deux gestes simultanés qui ne racontent pas la
+même chose se lisent comme deux événements au lieu d'un seul, et le second démentait le premier.
+La coupe qui part suit maintenant la pastille, celle qui arrive vient du côté d'où la pastille
+vient de la pousser, et la cascade d'arrivée — qui n'avait de toute façon qu'un seul enfant à
+faire cascader sur cet écran — a été retirée d'ici. Le sens vient du lien cliqué : la barre
+d'onglets est la seule à savoir lequel est à droite de l'autre, l'arbre de navigation ne
+connaissant que la profondeur.
+
+**Et le contenu suit, il ne conduit pas.** Les 8 % valent 27 px sur un téléphone de 390, soit le
+quart des 111 px que parcourt la pastille juste au-dessus — et 28 px au desktop, contre 147. C'est
+ce rapport qui fait lire les deux comme un seul geste ; doubler l'amplitude donnerait un
+carrousel, c'est-à-dire un changement de lieu, ce que changer d'onglet n'est pas.
+
 **Le déplacement et le fondu sont dissociés, et c'est ce qui rend un mouvement long
 agréable plutôt que lent.** Le contenu est entièrement lisible en 300 ms pendant
 qu'il continue de glisser jusqu'à son repos pendant 560. Réunir les deux durées
@@ -800,7 +866,10 @@ l'appui, lui, ne le dépasse pas : il est vu vingt fois par session.
 - **Rien n'apparaît à partir de rien.** Les entrées partent d'une échelle déjà
   visible.
 - **Deux propriétés seulement sont animées** — le déplacement et l'opacité. Elles
-  ne déclenchent pas de remise en page.
+  ne déclenchent pas de remise en page. Les deux icônes de la barre y ajoutent la
+  bascule et la rotation, qui sont des transformations de même nature, et la
+  graisse de leur trait — la seule propriété de peinture animée du produit,
+  bornée à un dessin de 24 unités et changée en même temps que sa couleur.
 - **Les amplitudes sont en pourcentage**, jamais en pixels : la même valeur tient
   sur toutes les tailles d'écran.
 - **Jamais de transition sur « toutes les propriétés ».** Elles sont énumérées.
@@ -973,6 +1042,10 @@ comme le même geste. Au-delà de 64 rem, l'amplitude tombe à 8 % — 115 px, d
 la même bande perceptive que le téléphone. La grammaire reste reconnaissable au
 lieu d'être littérale.
 
+`--shift-lateral` tombe au même seuil et pour la même raison, à ceci près que la surface qui
+bouge n'est pas l'écran mais la colonne de contenu : elle double de largeur au seuil précédent,
+l'amplitude passe donc de 8 à 4 %, et le trajet reste celui du téléphone.
+
 ### Ce que le desktop ne change pas
 
 La palette, les deux familles typographiques, l'échelle de six pas, les six
@@ -994,10 +1067,12 @@ Aucun écran n'a gagné ni perdu une information.
 | `src/lib/app-version.ts` | L'empreinte de la version servie, et la seule question « faut-il recharger » |
 | `src/components/ui/ListRow.tsx` | La ligne de destination et l'en-tête de liste, pour toute l'application |
 | `src/components/ui/SituatingText.tsx` | L'ordre situation → liste → texte long, sur les trois pages de détail |
-| `src/components/motion/screen-motion.ts` | Les quatre sens de circulation, et eux seuls |
+| `src/components/motion/screen-motion.ts` | Les quatre sens de circulation, et le sens d'un pas de côté quand la surface en connaît un |
 | `src/components/motion/Screen.tsx` | La correspondance sens → animation, à poser dans chaque `page.tsx` |
 | `src/components/ui/AppShell.tsx` | L'ordre du document — navigation puis contenu — et la réserve que la navigation prend au contenu |
-| `src/components/ui/MainNav.tsx` | Les deux destinations, la branche allumée, et rien de la géométrie |
+| `src/components/ui/MainNav.tsx` | Les deux destinations, la branche allumée, le rang du changement de section, et rien de la géométrie |
+| `src/components/ui/nav-icon-geometry.ts` | Le dessin des deux icônes de la barre et la partition de l'aiguille, et eux seuls |
+| `src/components/ui/NavIcons.tsx` | Les deux états de chaque icône, et ce qui décide qu'on vient d'en activer une |
 | `src/content/taxonomy.ts` | Les quatre familles et les onze domaines, et eux seuls |
 | `src/domain/taxonomy/index.ts` | Rattachement, ordre, périmètres de sélection, état du corpus |
 | `src/domain/concepts/ai-prompt.ts` | Les instructions envoyées aux applications d'IA, et elles seules |

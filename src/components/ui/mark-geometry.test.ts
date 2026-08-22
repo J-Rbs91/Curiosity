@@ -1,4 +1,3 @@
-import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 
 import {
@@ -13,6 +12,7 @@ import {
   lid,
   lidEdge,
 } from "@/components/ui/mark-geometry.mjs";
+import { GLOBALS_CSS, cssBlock } from "@/test/globals-css";
 
 /**
  * Ce que ces tests protègent, et pourquoi ils existent.
@@ -114,20 +114,6 @@ describe("géométrie de la marque", () => {
 });
 
 describe("cohérence entre la géométrie et la feuille de style", () => {
-  const css = readFileSync(new URL("../../app/globals.css", import.meta.url), "utf8");
-
-  /** Le bloc d'une règle, accolades appariées : lire jusqu'à la fin du fichier lirait tout le reste. */
-  function block(source: string, opening: string) {
-    const start = source.indexOf(opening);
-    expect(start, `règle « ${opening} » absente de globals.css`).toBeGreaterThan(-1);
-    let depth = 0;
-    for (let i = source.indexOf("{", start); i < source.length; i++) {
-      if (source[i] === "{") depth++;
-      else if (source[i] === "}" && --depth === 0) return source.slice(start, i + 1);
-    }
-    throw new Error(`règle « ${opening} » non refermée`);
-  }
-
   /**
    * La partition telle que la feuille de style la joue réellement, relue depuis le CSS.
    *
@@ -139,7 +125,7 @@ describe("cohérence entre la géométrie et la feuille de style", () => {
    */
   function played(keyframes: string, prefix: string) {
     return [
-      ...block(css, `@keyframes ${keyframes}`).matchAll(
+      ...cssBlock(`@keyframes ${keyframes}`).matchAll(
         /([\d.]+)%,\s*([\d.]+)%\s*\{\s*translate:\s*var\(--([a-z-]+)\)/g
       ),
     ].map(([, from, to, variable]) => ({
@@ -216,7 +202,7 @@ describe("cohérence entre la géométrie et la feuille de style", () => {
         // animation de marque est le premier endroit où l'on est tenté d'ajouter une échelle ou
         // une rotation, et le premier endroit où cela se remarquerait.
         const declarations = [
-          ...block(css, `@keyframes ${keyframes}`).matchAll(/^\s*([a-z-]+)\s*:/gm),
+          ...cssBlock(`@keyframes ${keyframes}`).matchAll(/^\s*([a-z-]+)\s*:/gm),
         ].map((m) => m[1]);
         expect(new Set(declarations)).toEqual(new Set(["translate"]));
       });
@@ -233,12 +219,12 @@ describe("cohérence entre la géométrie et la feuille de style", () => {
       // Deux durées différentes désaccorderaient les pistes, et la relance ne pourrait plus les
       // remettre à zéro d'un seul geste.
       const declared = [
-        ...css.matchAll(
+        ...GLOBALS_CSS.matchAll(
           new RegExp(`animation:\\s*(gaze|blink)-${name}\\s+var\\(--dur-gaze-${name}\\)`, "g")
         ),
       ];
       expect(declared.map((m) => m[1]).sort()).toEqual(["blink", "gaze"]);
-      expect(css).toContain(`--dur-gaze-${name}: ${sequence.durationMs}ms`);
+      expect(GLOBALS_CSS).toContain(`--dur-gaze-${name}: ${sequence.durationMs}ms`);
     });
 
     it(`n'attache « ${name} » qu'aux marques qui la demandent`, () => {
@@ -246,7 +232,7 @@ describe("cohérence entre la géométrie et la feuille de style", () => {
       // qui viserait `.gaze` sans le qualifier ferait jouer les deux séquences à la fois, sur
       // toutes les marques — y compris celles qu'on a voulues immobiles.
       for (const track of ["gaze", "blink"]) {
-        expect(css).toContain(`[data-gaze="${name}"] .${track} {`);
+        expect(GLOBALS_CSS).toContain(`[data-gaze="${name}"] .${track} {`);
       }
     });
 
