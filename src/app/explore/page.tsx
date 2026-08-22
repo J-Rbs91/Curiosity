@@ -6,6 +6,10 @@ import { useSearchParams } from "next/navigation";
 import { Settings } from "lucide-react";
 import { authors, taxonomy, themes } from "@/content";
 import { Screen } from "@/components/motion/Screen";
+import {
+  LATERAL_MOTION_CLASSES,
+  type LateralMotion,
+} from "@/components/motion/screen-motion";
 import { ListRow } from "@/components/ui/ListRow";
 import { ExploreTitle } from "@/components/ui/Wordmark";
 
@@ -34,6 +38,19 @@ function viewFrom(value: string | null): ViewId {
 /** L'adresse d'un onglet. La vue par défaut n'écrit rien : `/explore` reste `/explore`. */
 function hrefForView(view: ViewId): string {
   return view === DEFAULT_VIEW ? "/explore" : `/explore?vue=${view}`;
+}
+
+/**
+ * Le sens dans lequel un onglet emmène, lu dans la barre et nulle part ailleurs.
+ *
+ * C'est la comparaison des positions qui décide, jamais le nom d'une coupe :
+ * l'ordre de `VIEWS` reste ainsi le seul endroit qui dise le sens de lecture, et
+ * y insérer une quatrième coupe n'oblige à rien réécrire ici. L'onglet déjà
+ * actif ne renvoie rien — il n'emmène nulle part, et rien ne doit bouger.
+ */
+function lateralTo(index: number, activeIndex: number): LateralMotion | undefined {
+  if (index === activeIndex) return undefined;
+  return index > activeIndex ? "next" : "prev";
 }
 
 export default function ExplorePage() {
@@ -99,10 +116,11 @@ function ExploreBody({ view }: { view: ViewId }) {
             transform: `translateX(${activeIndex * 100}%)`,
           }}
         />
-        {VIEWS.map(({ id, label }) => (
+        {VIEWS.map(({ id, label }, index) => (
           <TreeLink
             key={id}
             href={hrefForView(id)}
+            lateral={lateralTo(index, activeIndex)}
             aria-current={id === view ? "true" : undefined}
             className={`press relative z-10 flex min-h-11 items-center justify-center rounded-full px-2 text-sm ${
               id === view ? "font-medium text-accent-contrast" : "text-ink-faint hover:text-ink"
@@ -114,11 +132,37 @@ function ExploreBody({ view }: { view: ViewId }) {
       </div>
 
       {/*
-       * Changer d'onglet n'est pas changer de lieu : le contenu se substitue sur
-       * place par un fondu, pendant que l'en-tête et les onglets ne bougent pas.
+       * Changer d'onglet n'est pas changer de lieu : l'en-tête et les onglets ne
+       * bougent pas, et seul le contenu se substitue sur place.
+       *
+       * Mais il se substitue **dans le sens où la pastille vient de partir**.
+       * Le fondu seul laissait deux mouvements se contredire : la pastille
+       * glissait horizontalement pendant que le contenu remontait du bas, et
+       * deux gestes simultanés qui ne racontent pas la même chose se lisent
+       * comme deux événements au lieu d'un seul. Le déplacement du repère et
+       * l'arrivée du contenu sont maintenant le même geste, dans la même durée
+       * et sur la même courbe.
+       *
+       * Le sens vient du type de transition posé par l'onglet cliqué, pas d'un
+       * état gardé ici : l'ancien contenu part avec les propriétés qu'il avait
+       * au moment du clic, et une direction calculée après coup arriverait trop
+       * tard pour lui. Sans type — arrivée directe sur l'écran, révélation d'un
+       * `Suspense`, retour du navigateur —, `default` vaut « none » et rien ne
+       * joue : le contenu appartient alors à l'instantané de l'écran, qui porte
+       * déjà son propre mouvement.
+       *
+       * Pas de cascade d'arrivée ici, et c'est la contrepartie : elle ajoutait
+       * une translation verticale à un mouvement horizontal, sur un contenu qui
+       * n'a de toute façon qu'un seul enfant — la cascade n'y a jamais cascadé.
        */}
-      <ViewTransition key={view} name="explore-liste" share="auto" enter="auto" default="none">
-        <div className="stagger mt-8 pb-12">
+      <ViewTransition
+        key={view}
+        name="explore-liste"
+        share={LATERAL_MOTION_CLASSES}
+        enter={LATERAL_MOTION_CLASSES}
+        default="none"
+      >
+        <div className="mt-8 pb-12">
           {view === "domaines" && <FamilyList />}
 
           {view === "themes" && (

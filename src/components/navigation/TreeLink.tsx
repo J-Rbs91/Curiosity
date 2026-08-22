@@ -4,12 +4,25 @@ import type { ReactNode } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { intentBetween, readTrail, stepsBackTo } from "@/lib/navigation-tree";
-import { SCREEN_MOTION } from "@/components/motion/screen-motion";
+import {
+  LATERAL_MOTION,
+  SCREEN_MOTION,
+  type LateralMotion,
+} from "@/components/motion/screen-motion";
 
 interface TreeLinkProps {
   href: string;
   children: ReactNode;
   className?: string;
+  /**
+   * Le sens du pas de côté, pour les seules surfaces qui affichent un ordre.
+   *
+   * C'est la seule chose qu'un appelant déclare ici, et il ne la déclare que
+   * parce qu'il est le seul à la connaître : l'arbre dit la profondeur, pas la
+   * position d'un onglet parmi ses voisins. Omis, le pas de côté reste ce qu'il
+   * était — un remplacement sans mouvement.
+   */
+  lateral?: LateralMotion;
   "aria-label"?: string;
   "aria-current"?: "page" | "true";
   "data-target"?: string;
@@ -30,7 +43,7 @@ interface TreeLinkProps {
  * correctement sans qu'il ait à y penser. C'est ce qui empêche le défaut de
  * revenir écran par écran.
  */
-export function TreeLink({ href, children, ...rest }: TreeLinkProps) {
+export function TreeLink({ href, lateral, children, ...rest }: TreeLinkProps) {
   const router = useRouter();
   const pathname = usePathname();
   const intent = intentBetween(pathname, href.split("?")[0]);
@@ -80,9 +93,18 @@ export function TreeLink({ href, children, ...rest }: TreeLinkProps) {
      * Un pas de côté ne consomme pas de profondeur. C'est la règle qui
      * manquait : sans elle, changer d'onglet ou sauter à un concept voisin
      * ajoutait une entrée, et il fallait dix appuis sur retour pour sortir.
+     *
+     * Le sens, lui, ne change rien à la pile : il n'est là que pour que le
+     * contenu parte du côté où l'on vient de le pousser.
      */
     return (
-      <Link {...rest} href={href} replace scroll={false} transitionTypes={SCREEN_MOTION.lateral}>
+      <Link
+        {...rest}
+        href={href}
+        replace
+        scroll={false}
+        transitionTypes={lateral ? LATERAL_MOTION[lateral] : SCREEN_MOTION.lateral}
+      >
         {children}
       </Link>
     );
