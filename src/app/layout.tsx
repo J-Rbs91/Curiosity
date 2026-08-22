@@ -54,13 +54,13 @@ export const metadata: Metadata = {
   },
   icons: {
     /*
-     * Le SVG d'abord : un navigateur qui le comprend s'en tient là et affiche une marque nette
-     * à toutes les densités. Les autres descendent la liste, et `src/app/favicon.ico` — repris
-     * par Next au titre de sa convention de fichier, sans passer par ici — sert de dernier
-     * recours aux plus anciens.
+     * Le favicon d'onglet est distinct de l'icône d'application : son fond est transparent
+     * pour laisser vivre la couleur du chrome du navigateur, et son encre s'adapte au schéma
+     * clair/sombre. Les PNG restent ensuite disponibles pour les usages qui demandent une
+     * icône d'application complète. `src/app/favicon.ico` sert de repli transparent.
      */
     icon: [
-      { url: withBasePath("/icons/icon.svg"), type: "image/svg+xml" },
+      { url: withBasePath("/icons/favicon.svg"), type: "image/svg+xml" },
       { url: withBasePath("/icons/icon-192.png"), sizes: "192x192", type: "image/png" },
       { url: withBasePath("/icons/icon-512.png"), sizes: "512x512", type: "image/png" },
     ],
