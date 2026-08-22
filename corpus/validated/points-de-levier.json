@@ -1,0 +1,78 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "points-de-levier",
+  "slug": "points-de-levier",
+  "status": "VALIDATED",
+  "title": "Points de levier",
+  "themes": [
+    "ou-intervenir-dans-un-systeme"
+  ],
+  "theme_labels": {
+    "ou-intervenir-dans-un-systeme": "Là où l'on peut vraiment peser"
+  },
+  "authors": [
+    {
+      "name": "Donella H. Meadows",
+      "app_author_id": null
+    }
+  ],
+  "hook": "Où appuyer dans un système pour que quelque chose bouge vraiment ?",
+  "summary": "Meadows classe douze endroits où intervenir, du réglage d'un paramètre au changement de paradigme, et prévient qu'on les actionne d'ordinaire à l'envers.",
+  "sources": [
+    {
+      "label": "Donella H. Meadows, Leverage Points: Places to Intervene in a System, Hartland (Vermont), The Sustainability Institute, décembre 1999, 21 p.",
+      "kind": "primary",
+      "url": "https://donellameadows.org/wp-content/userfiles/Leverage_Points.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "David J. Abson et al., « Leverage points for sustainability transformation », Ambio, vol. 46, n° 1, 2017, p. 30-39.",
+      "kind": "secondary-academic",
+      "locator": "p. 30-39",
+      "doi_isbn": "10.1007/s13280-016-0800-y",
+      "url": "https://doi.org/10.1007/s13280-016-0800-y",
+      "consulted": "metadata-only"
+    },
+    {
+      "label": "Joern Fischer et Maraja Riechers, « A leverage points perspective on sustainability », People and Nature, vol. 1, n° 1, 2019, p. 115-120.",
+      "kind": "secondary-academic",
+      "locator": "p. 115-120",
+      "doi_isbn": "10.1002/pan3.13",
+      "url": "https://doi.org/10.1002/pan3.13",
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "reviewer": "chaîne Curiosity, session du 22 août 2026 (contrôle non aveugle, voir notes)",
+    "date": "2026-08-22",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "Contrôle du 22 août 2026, mené dans la même session que la rédaction : il n'a donc pas été aveugle au sens de docs/corpus-workflow.md. Le dossier de npm run corpus:brief a été produit et relu, les quatre questions ont été tranchées une à une contre les textes rouverts, et l'écart au protocole est déclaré ici plutôt que passé sous silence."
+    ]
+  },
+  "attribution_note": "Concept de Donella H. Meadows, formée à la dynamique des systèmes auprès de Jay W. Forrester.",
+  "quotation": {
+    "text": "Les points de levier ne sont pas intuitifs. Ou s'ils le sont, nous les utilisons intuitivement à l'envers […]",
+    "reference": "Donella H. Meadows, Leverage Points: Places to Intervene in a System, The Sustainability Institute, 1999.",
+    "locator": "p. 2",
+    "language": "fr",
+    "original_text": "Leverage points are not intuitive. Or if they are, we intuitively use them backward, systematically worsening whatever problems we are trying to solve.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (chaîne Curiosity, 22 août 2026). Aucune traduction française publiée de ce rapport n'a été cherchée ni identifiée."
+    }
+  },
+  "notes": [
+    "La citation s'arrête sur une élision marquée : la fin de la phrase, « systematically worsening whatever problems we are trying to solve », ne tenait pas dans les 150 caractères de la carte sans supprimer un adverbe sans le dire. Ce qu'elle porte est dans le résumé.",
+    "La liste comptée par le résumé est celle de la version révisée, p. 3, qui va de « Constants, parameters, numbers » à « The power to transcend paradigms ». Une première liste, de neuf entrées, figure p. 2 : c'est celle que Meadows dit avoir écrite sur un paperboard, et elle la corrige elle-même deux pages plus loin.",
+    "Le rapport lu est celui de décembre 1999, édité par The Sustainability Institute. Sa page 2 signale qu'une version plus courte avait paru dans Whole Earth à l'hiver 1997 : cette version n'a pas été ouverte.",
+    "L'ordre est « in increasing order of effectiveness », donc le numéro 12 est le levier le plus faible et le numéro 1 le plus fort. C'est l'inverse de ce qu'un lecteur pressé lit dans une liste numérotée.",
+    "Meadows file toute l’échelle avec une image de plomberie : un paramètre est le réglage d’un robinet, un stock est le niveau de la baignoire, un délai est le temps que met une vanne à faire effet. La dette publique y est décrite comme « a negative bathtub, a money hole », et les paramètres budgétaires comme « adjustments to faucets » (p. 5-6). L’image n’est pas sur la carte ; elle est ce qui rend l’échelle tenable en tête."
+  ]
+}

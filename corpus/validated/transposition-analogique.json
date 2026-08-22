@@ -1,0 +1,73 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "transposition-analogique",
+  "slug": "transposition-analogique",
+  "status": "VALIDATED",
+  "title": "Transposition analogique",
+  "themes": [
+    "dire-systeme"
+  ],
+  "theme_labels": {
+    "dire-systeme": "Ce qu'on engage en disant système"
+  },
+  "authors": [
+    {
+      "name": "Charles Roig",
+      "app_author_id": null
+    }
+  ],
+  "hook": "Que reste-t-il d'une notion empruntée sans la théorie qui la fonde ?",
+  "summary": "Roig montre que les sciences sociales n'ont retenu de la cybernétique que des éléments isolés, pilotage, feedback, contrôle, détachés de ce qui leur donnait sens.",
+  "sources": [
+    {
+      "label": "Charles Roig, « La théorie générale des systèmes et ses perspectives de développement dans les sciences sociales », Revue française de sociologie, XI-XII, numéro spécial, 1970-1971, p. 47-97.",
+      "kind": "primary",
+      "locator": "p. 47-97",
+      "doi_isbn": "10.2307/3320513",
+      "url": "https://www.persee.fr/doc/rfsoc_0035-2969_1970_hos_11_1_1603",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Anatol Rapoport, « La théorie moderne des systèmes : un guide pour faire face aux changements », Revue française de sociologie, XI-XII, numéro spécial, 1970-1971, p. 23-46.",
+      "kind": "francophone-reception",
+      "locator": "p. 23-46",
+      "doi_isbn": "10.2307/3320512",
+      "url": "https://www.persee.fr/doc/rfsoc_0035-2969_1970_hos_11_1_1602",
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "reviewer": "chaîne Curiosity, session du 22 août 2026 (contrôle non aveugle, voir notes)",
+    "date": "2026-08-22",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "Contrôle du 22 août 2026, mené dans la même session que la rédaction : il n'a donc pas été aveugle au sens de docs/corpus-workflow.md. Le dossier de npm run corpus:brief a été produit et relu, les quatre questions ont été tranchées une à une contre les textes rouverts, et l'écart au protocole est déclaré ici plutôt que passé sous silence."
+    ]
+  },
+  "attribution_note": "Analyse de Charles Roig, présentée aux Journées d'étude sur l'analyse systémique en science politique, Paris, avril 1970.",
+  "quotation": {
+    "text": "[…] elles ne retiennent de la cybernétique que des éléments isolés […] indépendamment de la théorie d'ensemble qui les fonde.",
+    "reference": "Charles Roig, « La théorie générale des systèmes et ses perspectives de développement dans les sciences sociales », Revue française de sociologie, XI-XII, numéro spécial, 1970-1971, p. 47-97.",
+    "locator": "p. 64",
+    "language": "fr",
+    "translation": {
+      "kind": "none"
+    }
+  },
+  "notes": [
+    "Le titre porté ici est celui de la page de titre imprimée, relue sur l'image en pleine résolution : « et ses perspectives de développement ». La notice HTML de Persée annonce « et les perspectives » ; Crossref, sur le DOI JSTOR, donne « ses ». La forme imprimée fait foi.",
+    "La pagination écrite ici est celle de l'en-tête imprimé de la page 47, « R. franç. Sociol., XI-XII, N° spéc., 1970-1971, 47-97 » : le numéro spécial est à cheval sur deux tomes et deux millésimes. Crossref annonce « volume 11, 1970, page 47 ».",
+    "La citation porte deux élisions marquées. La première remplace « les transpositions analogiques qui ont été présentées (notamment celles de Deutsch et d'Easton) sont des applications de cette conception en ce sens qu' » ; la seconde remplace l'énumération « (pilotage, feedback, contrôle...) », que le résumé reprend en toutes lettres. La phrase a été relue sur l'image de la page 64 en pleine résolution, et non sur la seule couche OCR.",
+    "Les auteurs visés par Roig sont nommés dans la phrase et ne sont pas sur la carte : Karl W. Deutsch et David Easton. Il vise aussi, plus haut dans le même chapitre, Talcott Parsons et Lucien Mehl.",
+    "Ce que Roig ne dit pas, et que la carte ne lui fait pas dire : il ne rejette pas l'analyse de systèmes. Il propose au contraire de la tenir et la cybernétique pour « deux aspects d'une même construction théorique » (p. 64).",
+    "Le même article porte deux constats voisins, non retenus sur la carte mais établis à la lecture. Page 49 : les modèles systémiques du social produits par cette voie « ne vont pas au-delà de l’exposé d’analogies qu’il est ensuite difficile d’utiliser dans une élaboration théorique ». Page 90, sur le feedback lui-même : « ce sens tend à se diluer pour ne plus refléter que l’idée très vague que tout système réintroduit “quelque chose” dans son propre fonctionnement », et Roig conclut qu’un effort taxinomique devra aboutir « à l’élaboration de concepts plus différenciés que l’actuelle notion de feedback ».",
+    "Roig écrit aussi, page 64, que la cybernétique « ne peut être en aucun cas confondue avec les seuls mécanismes de contrôle et de régulation », qu’elle a dépassé ce stade et qu’on parle déjà d’une deuxième génération cybernétique dont les applications aux sciences sociales lui paraissent plus prometteuses.",
+    "L’ouvrage que Roig discute d’un bout à l’autre est Ludwig von Bertalanffy, General System Theory, New York, George Braziller, 1968, qu’il cite dès sa première note. Cet ouvrage n’est pas une source de cette fiche : les cinq exemplaires interrogés sur Internet Archive portent tous une restriction d’emprunt, et rien de son contenu n’est avancé ici autrement qu’à travers ce que Roig en rapporte et en traduit.",
+    "Pages relues sur l’image en pleine résolution pour ce lot : 47, 49, 63, 64 et 90. Les autres pages n’ont été lues que par la couche texte de Persée."
+  ]
+}

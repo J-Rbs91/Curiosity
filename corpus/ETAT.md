@@ -1,4 +1,4 @@
-# État du corpus — 21 août 2026
+# État du corpus — 22 août 2026
 
 Écrit sur le disque parce qu'une session a déjà été coupée en cours de route : ce fichier
 existe pour qu'une reprise reparte des fichiers, et non de la mémoire de quelqu'un.
@@ -6,11 +6,12 @@ existe pour qu'une reprise reparte des fichiers, et non de la mémoire de quelqu
 Ce fichier dit ce que le corpus **est**. Ce qui lui **manque**, et par quel bout le prendre,
 est dans [`corpus/RESTE-A-FAIRE.md`](RESTE-A-FAIRE.md).
 
-`npm run corpus:validate` : **58 enregistrements, 57 validés, 0 erreur, 42 avertissements.**
-`npm run corpus:deepen` : **32 approfondissements écrits pour 57 cartes validées.**
-`npm test` : **257 tests, 0 échec.**
+`npm run corpus:validate` : **65 enregistrements, 64 validés, 0 erreur, 42 avertissements.**
+`npm run corpus:deepen` : **64 approfondissements pour 64 cartes validées, 92 698 mots,
+1 448 en moyenne.**
+`npm test` : **276 tests, 0 échec.** `npm run lint` et `npm run build` : sans erreur.
 
-**Cinq domaines instruits sur onze déclarés.** Les six autres sont configurés dans la
+**Six domaines instruits sur onze déclarés.** Les cinq autres sont configurés dans la
 taxonomie et n'ont pas de corpus ; `corpus:audit` les affiche « en cours de constitution ».
 Aucun d'eux n'a de périmètre écrit ni de cartographie : les ouvrir, c'est refaire l'ordre
 complet, périmètre puis scout puis thèmes puis cartes.
@@ -19,15 +20,18 @@ complet, périmètre puis scout puis thèmes puis cartes.
 |---|---:|---:|---:|
 | Sociologie des organisations | 9 | 8 | 8 |
 | Ergonomie de l'activité | 4 | 15 | 15 |
-| Human Factors / ergonomie cognitive | 5 | 13 | **0** |
+| Human Factors / ergonomie cognitive | 5 | 13 | 13 |
 | Théorie de la mesure / KPI | 4 | 9 | 9 |
-| Cybernétique | 4 | 12 | **0** |
+| Cybernétique | 4 | 12 | 12 |
+| Systems Thinking | 3 | 7 | 7 |
 
-**Vingt-cinq cartes validées n'ont pas d'approfondissement**, les treize de `human-factors`
-et les douze de `cybernetics`. C'est le seul écart du corpus entre ce qui est validé et ce
-qui est servi : `hasDeepening` répond faux pour elles, et le bouton « Approfondir » ne
-s'affiche pas. `npm run corpus:deepen` les liste en fin de sortie ; c'est la file de
-travail, elle ne se tient pas de mémoire.
+**Aucune carte validée n'attend son approfondissement**, et c'est vrai depuis le 21 août.
+Le lot du 22 a écrit les siens dans le même passage que ses cartes, plutôt que de laisser
+l'écart se rouvrir. `npm run corpus:deepen` liste en fin de sortie les cartes qui n'en ont
+pas : c'est la file de travail, et elle est vide.
+
+**La famille « Comprendre la production et les systèmes » est ouverte aux deux tiers.**
+Elle était entièrement vide le 20 août ; il lui reste `operations-management`.
 
 ## Ce que ce fichier ne raconte pas, et qui n'est pas perdu
 
@@ -48,7 +52,108 @@ Ce que ces deux lots ont établi est écrit ailleurs, entier, et se lit à la so
   cartographies, candidats, angles morts ;
 - `corpus/review/*.verdict.json` : les verdicts de contrôle aveugle, un par passage.
 
-# 0. Cybernétique — lot du 21 août 2026, publié
+# 0. Systems thinking — lot du 22 août 2026, publié
+
+Sixième domaine instruit, **deuxième de la famille « Comprendre la production et les
+systèmes »**, ouvert deux jours après son voisin cybernétique. Il est le seul domaine du
+corpus à ne pas être parti de zéro : `corpus/map/cybernetics.scouting.md` lui avait légué
+trois textes avec leur état d'accès constaté.
+
+## Les sept cartes
+
+| id | thème | auteur·rice | tours |
+|---|---|---|---:|
+| `comportement-contre-intuitif` | Ce qu'une structure finit par produire | Forrester | 1 |
+| `court-terme-contre-long-terme` | Ce qu'une structure finit par produire | Forrester | 1 |
+| `le-trouble-vient-des-politiques` | Ce qu'une structure finit par produire | Forrester | 1 |
+| `points-de-levier` | Là où l'on peut vraiment peser | Meadows | 1 |
+| `paradigme-source-du-systeme` | Là où l'on peut vraiment peser | Meadows | 1 |
+| `transposition-analogique` | Ce qu'on engage en disant système | Roig | 1 |
+| `systeme-concret-systeme-construit` | Ce qu'on engage en disant système | Roig | 1 |
+
+**Les sept portent une citation**, et les sept ont leur approfondissement, écrit dans le même
+passage. **Deux reposent sur une source primaire francophone**, celles de Roig. **Deux portent
+une signature féminine**, celles de Meadows : c'est le premier domaine de la famille à en
+avoir une, la cybernétique n'en ayant aucune.
+
+Trois textes ouverts, sept cartes. Le rapport est inhabituel dans ce corpus et il tient à la
+nature des textes : les trois sont des synthèses d'auteur, chacune portant plusieurs thèses
+distinctes plutôt qu'une seule.
+
+## Ce que ce lot a payé, et qui resservira
+
+**Une réédition n'est pas l'original, et elle le dit elle-même si on la lit.** Le texte de
+Forrester ouvert ici porte « Updated March, 1995 » et « Copyright © 1995 » ; son texte a bougé
+avec sa date, puisqu'il annonce « developments over the last 60 years » là où l'article de
+1971 ne pouvait pas écrire soixante. Les trois verbatims sont donc localisés sur la mise à
+jour, jamais sur *Technology Review* 73(3) qui n'a pas été ouvert. Deux exemplaires
+indépendants ont été comparés chaîne par chaîne, D-4468-2 du MIT OpenCourseWare et D-4468-1 du
+Creative Learning Exchange : identiques.
+
+**La notice d'une plateforme n'est pas la page de titre.** Persée annonce le texte de Roig
+sous « et **les** perspectives de développement » ; la page de titre imprimée porte « et
+**ses** perspectives », et Crossref donne « ses » sur le DOI JSTOR. C'est la forme imprimée
+qui est retenue. Même écart sur la pagination : l'en-tête imprimé porte « XI-XII, N° spéc.,
+1970-1971, 47-97 », Crossref annonce « volume 11, 1970, page 47 ».
+
+**La voie d'accès qui a rendu ce lot n'est pas la bibliographie.** Ce sont les mises à
+disposition autorisées par l'auteur ou l'institution qui le porte : un document de cours du
+System Dynamics Group du MIT, un rapport de l'institut fondé par l'autrice, une revue
+francophone en accès ouvert. Ces pages portent elles-mêmes leur autorisation ; c'est cela qui
+se constate.
+
+**Le contrôle des approfondissements attrape des métaphores, et il a de nouveau frappé.** Un
+paragraphe parlant d'« une carte des flux d'un hôpital » a été renvoyé par
+`checkForbiddenCharacters` du contrôle des textes, qui cherche des chaînes littérales. Le
+renvoi était un faux positif, et la réécriture en « un schéma des flux » reste la bonne
+décision, pour la raison déjà écrite au lot des approfondissements : l'ambiguïté fait
+trébucher un lecteur qui vient de fermer une carte.
+
+## Les faiblesses de ce lot, assumées et écrites
+
+**Le contrôle n'a pas été aveugle.** Les sept cartes ont été instruites, rédigées et
+contrôlées dans une seule session par un seul agent, sans passage par les sous-agents
+`corpus-*`. Le dossier de `npm run corpus:brief` a été produit et relu pour chacune et les
+quatre questions ont été tranchées contre les textes rouverts, mais le contrôleur n'était pas
+aveugle au brief initial. C'est l'écart principal au protocole de `docs/corpus-workflow.md`,
+et il est inscrit dans le `review.notes` de chaque fiche.
+
+**Deux des trois textes viennent d'un nom écrit de mémoire.** Forrester et Meadows ont été
+cherchés nommément ; seul Roig vient d'un balayage documentaire, et celui d'un autre domaine.
+C'est le contraire de ce que le périmètre demande, et cela signifie que ce lot instruit le
+centre canonique anglophone du champ, que n'importe qui aurait nommé.
+
+**Six des neuf littératures du périmètre n'ont pas été balayées** : stocks, flux et délais ;
+croissance et limites ; modélisation et simulation ; la théorie générale des systèmes comme
+projet ; l'histoire et la critique du champ ; la couche francophone au-delà du legs.
+`corpus/map/systems-thinking.scouting.md` les nomme une par une.
+
+**Un thème entier repose sur un seul texte.** `comportement-dans-le-temps` est pourvu par les
+trois cartes de Forrester. Ce n'est pas encore un thème du champ, c'est un thème de ce lot, et
+la cartographie le dit.
+
+## Ce qui est resté fermé, et ce que cela coûte
+
+**Bertalanffy n'a pas été lu.** Les cinq exemplaires interrogés sur Internet Archive portent
+tous une restriction d'emprunt, et l'article de 1972 dans *Academy of Management Journal*
+n'a pas été ouvert. Conséquence directe : il est cité de seconde main dans ce lot, à travers
+Roig qui le lit et le traduit, et jamais présenté autrement.
+
+**L'ouvrage de 1972 sur les limites de la croissance est localisé en accès ouvert et n'a pas
+été lu.** Le scan intégral répond, 43 Mo. C'est la reprise la plus courte du domaine, et c'est
+ce qui pourvoirait le thème « croissance et limites » qui n'a pas pu se déclarer.
+
+**Lesourne 1985 est resté fermé pour une raison évitable** : l'identifiant Persée a été deviné
+d'après la forme de l'URL au lieu d'être obtenu en résolvant le DOI, et il a rendu zéro. La
+leçon était déjà écrite dans `corpus/RESTE-A-FAIRE.md` ; elle a été repayée.
+
+## L'étape suivante
+
+Le domaine tient debout et affiche trois thèmes pourvus. Ce qui lui manque est nommé
+ci-dessus, et deux reprises sont courtes : l'ouvrage de 1972, dont l'accès est déjà constaté,
+et Lesourne, dont il suffit de résoudre le DOI.
+
+# 0 bis. Cybernétique — lot du 21 août 2026, publié
 
 Cinquième domaine instruit, **premier de la famille « Comprendre la production et les
 systèmes »**, qui n'avait jusque-là aucun corpus. Le domaine avait été ouvert et

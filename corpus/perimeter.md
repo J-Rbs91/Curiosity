@@ -1,6 +1,6 @@
 # Périmètre du corpus
 
-## Cinq domaines ouverts sur onze
+## Six domaines ouverts sur onze
 
 L'application couvre **quatre familles et onze domaines**, déclarés dans
 [`src/content/taxonomy.ts`](../src/content/taxonomy.ts). Déclarer un domaine et l'instruire
@@ -8,8 +8,9 @@ sont deux décisions distinctes, et elles ne se prennent pas ensemble : une fich
 admise parce qu'un domaine existe dans la taxonomie.
 
 > **Les périmètres d'instruction ouverts sont `organizational-sociology`,
-> `measurement-theory`, `activity-ergonomics`, `human-factors` et `cybernetics`.** Les six
-> autres domaines sont déclarés dans la taxonomie et restent fermés à l'instruction tant
+> `measurement-theory`, `activity-ergonomics`, `human-factors`, `cybernetics` et
+> `systems-thinking`.** Les cinq autres domaines sont déclarés dans la taxonomie et restent
+> fermés à l'instruction tant
 > qu'une décision explicite ne les ouvre pas — décision qui s'inscrit dans ce fichier, sous la forme d'une
 > section de périmètre comme celles qui suivent.
 
@@ -51,7 +52,10 @@ l'activité nomme autrement. La règle est l'**objet du travail cité**, pas sa 
   le met en défaut → human factors ;
 - le concept porte sur **le mécanisme par lequel un système corrige son écart et se
   maintient** — la boucle, la variété, la viabilité, prises comme principe et non comme
-  application → cybernétique.
+  application → cybernétique ;
+- le concept porte sur **le comportement qu'une structure de boucles engendre dans le
+  temps** — contre-intuition, dépassement, effet de levier — ou sur le modèle qui permet de
+  le voir → systems thinking.
 
 **Un concept déjà instruit ne se réinstruit pas dans un autre domaine.** Une carte a un
 identifiant unique ; deux domaines ne peuvent pas se partager le même concept, et le
@@ -808,11 +812,202 @@ La règle d'accès ne change pas et n'est pas négociable :
 
 ## Thèmes
 
-**Aucun thème n'est déclaré à cette date, et c'est l'état normal d'un domaine qui vient de
-s'ouvrir.** Ils se déclareront dans `src/content/themes.ts` après la cartographie et à partir
-de ce qu'elle aura fait apparaître, jamais avant elle. La règle qui s'est réapprise à chaque
-domaine tient toujours : **un thème sans carte validée ne se déclare pas** — il afficherait
-une page vide et compterait pour de la couverture.
+**Quatre thèmes déclarés le 21 août 2026**, après le contrôle aveugle des douze cartes du
+domaine : `variete-et-moyens-de-la-regulation`, `la-boucle-et-l-ecart`,
+`auto-organisation-et-bruit` et `ou-passe-la-commande`. Ils s'écartent de la proposition
+faite par la cartographie, et `src/content/themes.ts` dit en quoi. La règle qui s'est
+réapprise à chaque domaine tient toujours : **un thème sans carte validée ne se déclare
+pas** — il afficherait une page vide et compterait pour de la couverture.
+
+---
+
+# Domaine ouvert — `systems-thinking`
+
+Ouvert le 22 août 2026. Sixième domaine instruit, et le deuxième de la famille « Comprendre
+la production et les systèmes », que la cybernétique avait ouverte deux jours plus tôt.
+
+**Ce domaine ne repart pas de zéro, et c'est le seul dans ce cas.**
+[`corpus/map/cybernetics.scouting.md`](map/cybernetics.scouting.md) lui a légué trois textes
+avec leur état d'accès constaté, dont un que la cartographie qualifiait elle-même de
+« cadeau pour qui ouvrira ce domaine » : Roig 1970, cinquante et une pages de texte intégral
+sur Persée. Ce legs n'est pas un raccourci de méthode — le périmètre s'écrit ici avant que le
+balayage reprenne — mais il dispense de chercher ce qui a déjà été trouvé.
+
+## Le périmètre est la discipline
+
+> **Systems thinking** — l'étude du **comportement dans le temps** qu'engendre une structure
+> de boucles, de stocks et de délais, et de la **modélisation** par laquelle on la représente
+> pour agir sur elle.
+
+Le domaine ne porte pas sur le principe de la régulation, qui est chez son voisin
+cybernétique : il porte sur ce que produit, dans la durée, un jeu de boucles déjà en place.
+Contre-intuition, oscillation, dépassement, résistance aux politiques, points de levier : ce
+sont des **comportements de structure**, et leur trait commun est qu'aucun ne se déduit de
+l'intention de ceux qui peuplent le système. C'est ce qui rend le champ enseignable, et c'est
+aussi ce qui le rend dangereux à instruire — « système », « levier », « boucle », « modèle »
+circulent partout, et un texte qui les emploie n'en décrit pas un pour autant.
+
+Seconde particularité, symétrique de celle de la cybernétique : le champ a **deux souches qui
+ne se citent pas**. Une souche anglophone, née à l'école d'ingénieurs, qui modélise et simule ;
+une souche francophone qui n'a jamais simulé grand-chose et qui a passé son temps à demander
+ce qu'on fait au juste quand on dit « système ». Un balayage anglophone seul manquerait la
+seconde entièrement, et rendrait un domaine qui ne sait modéliser que ce dont il ne sait pas
+si c'est là.
+
+## Points d'entrée
+
+Aucun auteur n'est retenu d'avance. Un signal de la cartographie voisine est à prendre au
+sérieux plutôt qu'à corriger : **Bertalanffy et Forrester n'ont pas été rencontrés
+spontanément** par les requêtes du périmètre cybernétique. C'est une information sur les
+requêtes, pas sur le champ, et elle dit qu'ici il faudra couvrir des **littératures** :
+
+- le comportement contre-intuitif des systèmes sociaux : pourquoi une politique raisonnable
+  produit l'inverse de son intention, et pourquoi la cause n'est pas là où le symptôme la
+  fait chercher ;
+- les points de levier : où l'on intervient dans un système, dans quel ordre d'efficacité, et
+  pourquoi ces points se poussent d'ordinaire dans le mauvais sens ;
+- stocks, flux et délais : ce qu'un retard fait à une boucle, et le comportement qu'engendre
+  une accumulation ;
+- la dynamique de la croissance et de ses limites : dépassement, effondrement, ressource qui
+  se renouvelle moins vite qu'on la prend ;
+- la modélisation et la simulation de politiques : ce qu'un modèle établit, ce qu'il ne peut
+  pas établir, et ce qu'on lui fait dire ;
+- l'épistémologie du système en sciences sociales : le découpage entre système et
+  environnement, le rapport entre le système concret et le modèle qui l'exprime, et ce que
+  vaut une notion importée d'une autre discipline ;
+- la théorie générale des systèmes elle-même, en tant que **projet** dont il faut savoir ce
+  qu'il a tenu ;
+- l'histoire et la critique du champ, y compris ce qui lui a été reproché de plus dur — elle
+  situe, elle ne remplace jamais la source primaire ;
+- **la couche francophone, cherchée en parallèle et non après coup** : la systémique
+  française s'est écrite pour l'essentiel hors des bases anglophones. Persée, HAL,
+  OpenEdition Books, theses.fr.
+
+## Le test d'entrée
+
+La question n'est pas « est-ce du systems thinking ? » : l'étiquette est postérieure à la
+plupart des textes qui comptent, et plusieurs de ses auteurs se disaient ingénieurs,
+politistes ou biologistes. La question est :
+
+> **Ce travail éclaire-t-il le comportement qu'une structure engendre dans le temps, ou la
+> façon de le représenter pour agir dessus ?**
+
+Trois conditions cumulatives :
+
+1. il porte sur un **comportement de structure** — contre-intuition, dépassement, oscillation,
+   résistance à une politique, effet de levier — ou sur la **construction du modèle** qui
+   permet de le voir, et non sur un domaine d'application où le mot « système » ne ferait que
+   passer ;
+2. il est **rattachable à un auteur identifié**, et cette attribution est documentable ;
+3. il est **enseignable** : un lecteur non spécialiste doit pouvoir reconnaître le
+   comportement décrit dans un système qu'il côtoie — un service, une ville, un budget, une
+   équipe.
+
+## Hors périmètre — rejet direct
+
+- **Le mot « système » employé sans mécanisme.** C'est le rejet le plus fréquent à prévoir, et
+  il se tranche sans état d'âme : `corpus/rejected/`, `rejection_reason: "OUT_OF_SCOPE"`,
+  jamais une mise en attente. Un candidat gris non tranché revient toujours par une autre
+  porte.
+- **L'ingénierie système et la gestion de projet** : découpage d'exigences, cycle en V,
+  architecture de produit. Le mot est le même, l'objet ne l'est pas.
+- **La théorie du chaos et les systèmes dynamiques comme branche des mathématiques** : elles
+  entrent par ce qu'elles font comprendre d'un comportement observable, jamais par leurs
+  théorèmes.
+- **La méthodologie de l'intervention en organisation** qui se réclame de la pensée systémique
+  sans en exposer de mécanisme : elle relève du conseil, pas du champ.
+- **Le développement durable comme cause.** Le champ y a beaucoup servi, et l'engagement de
+  plusieurs de ses auteurs est un fait de leur biographie, pas un critère d'entrée. Ce qui
+  entre est le mécanisme, jamais la thèse politique qu'on lui fait porter.
+
+## Les frontières, tranchées à l'avance
+
+### Avec `cybernetics`, ouvert — la frontière décisive, et déjà tranchée depuis l'autre côté
+
+Elle a été écrite avant l'ouverture de ce domaine, dans la section `cybernetics` de ce même
+fichier, qui l'annonçait comme « la seule qui puisse coûter cher ». **Elle ne se rouvre pas
+ici, et son tableau de départage fait foi** : le **principe** de la régulation — écart,
+boucle, variété requise, clôture, viabilité — est là-bas ; le **comportement dans le temps**
+qu'engendre une structure de boucles, de stocks et de délais est ici, ainsi que la
+modélisation d'un système et la simulation de ses politiques.
+
+Un rappel qui vaut d'être répété parce qu'il se présentera : le cas de **l'organisation
+régulée** ne se tranche ni par l'auteur ni par l'année, mais par l'objet du texte. La
+condition qu'un régulateur doit remplir pour tenir un système est chez le voisin ; ce que
+produit dans la durée un jeu de boucles déjà en place est ici.
+
+Conséquence pratique, et elle est asymétrique : ce domaine s'ouvrant **après** son voisin, un
+texte qui relèverait de la cybernétique ne se consigne pas en angle mort — il part chez lui,
+où il sera instruit.
+
+### Avec `organizational-sociology`, ouvert
+
+`garbage-can-model` et `couplage-lache` y sont ou y entrent, et décrivent eux aussi des
+comportements que personne n'a voulus. Ce qui décide reste l'objet : un travail qui explique
+ces comportements par **ce que des acteurs font des règles, du pouvoir et de l'ambiguïté**
+relève de la sociologie des organisations ; un travail qui les explique par **la structure de
+boucles, de stocks et de délais** relève d'ici. Le mot « organisation » ne décide de rien.
+
+### Avec `measurement-theory`, ouvert
+
+`mesure-devenue-cible`, `loi-de-campbell` et `gouvernement-par-les-chiffres` y sont instruits,
+et le point de contact est réel : un indicateur qui devient cible est un point d'entrée dans
+une boucle. Ce qui porte sur **l'indicateur lui-même** — ce qu'il saisit, ce qu'il omet, ce
+que sa seule existence provoque — reste là-bas. Ce qui porte sur **le comportement du système
+qui l'a intégré** est ici.
+
+### Avec `operations-management` et `decision-science`, fermés
+
+Deux domaines déclarés que ce champ touche de près et qui ne sont pas ouverts. Un candidat
+mal placé se **consigne en angle mort de la cartographie**, jamais en rejet : son objet n'est
+pas hors sujet, il relève d'un voisin fermé. La règle est celle de `human-factors` et de
+`cybernetics`, et elle a déjà rapporté — c'est ainsi que ce domaine a hérité de son stock
+d'entrée.
+
+- vers `operations-management` : la conduite des flux, des stocks et des files comme
+  **problème de gestion** — dimensionner, ordonnancer, arbitrer un coût ;
+- vers `decision-science` : ce qui se passe **dans la tête de celui qui décide** — heuristique,
+  biais, recherche de solution.
+
+### Avec `activity-ergonomics` et `human-factors`, ouverts
+
+Un modèle de simulation destiné à l'apprentissage ou une interface qui donne à voir un système
+ne changent pas de domaine par leur support. Ce que l'opérateur perçoit, comprend ou manque
+est en `human-factors` ; ce qu'il fait pour tenir sa tâche est en `activity-ergonomics` ; le
+comportement du système qu'il regarde est ici.
+
+## L'accès — ce que ce domaine impose
+
+Deux constats du balayage d'ouverture, à tenir pour acquis par le prochain passage :
+
+- **les textes vivants du champ sont chez des éditeurs actifs, et les textes ouverts sont
+  ailleurs.** La voie qui a rendu ce lot n'est pas la bibliographie : ce sont les mises à
+  disposition **autorisées par l'auteur ou par l'institution qui le porte** — un document de
+  cours du System Dynamics Group du MIT, un rapport d'un institut fondé par l'autrice, une
+  revue francophone en accès ouvert. Ces pages disent elles-mêmes leur autorisation ; c'est
+  cela qui se constate, et rien d'autre.
+- **une réédition n'est pas l'original.** Le texte de Forrester ouvert pour ce lot est une
+  **mise à jour de 1995** d'un article de 1971, et il le dit dans sa propre note : des chiffres
+  y ont bougé. Un verbatim relevé dessus se localise sur elle, jamais sur l'article d'origine
+  qu'on n'a pas ouvert.
+
+La règle d'accès ne change pas :
+
+> **Aucun agent ne contourne un contrôle d'accès.** Un texte qu'on ne peut pas ouvrir
+> légitimement est un texte qu'on n'a pas ouvert : on le dit, et on ne conclut pas au
+> verbatim.
+
+## Thèmes
+
+**Trois thèmes déclarés le 22 août 2026**, après le contrôle des sept cartes du lot
+d'ouverture et non après leur seule rédaction : `comportement-dans-le-temps`,
+`ou-intervenir-dans-un-systeme` et `dire-systeme`. Aucun ne repose sur une carte unique.
+
+Ce que la cartographie proposait et qui n'a **pas** été déclaré : un thème sur les stocks, les
+flux et les délais, et un thème sur la croissance et ses limites. Les deux sont au centre du
+champ, et aucune source primaire ouvrable n'a été établie pour eux dans ce passage — l'ouvrage
+de 1972 sur les limites de la croissance a bien été localisé en accès ouvert, il n'a pas été
+lu. **Un thème sans carte validée ne se déclare pas.**
 
 ---
 

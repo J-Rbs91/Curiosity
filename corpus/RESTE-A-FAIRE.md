@@ -1,11 +1,11 @@
 # Ce qui reste à faire
 
 Ce fichier existe pour qu'une session qui reprend le corpus sache **par où commencer**, sans
-relire tout le dépôt et sans redécouvrir ce que quatre lots ont déjà appris.
+relire tout le dépôt et sans redécouvrir ce que six lots ont déjà appris.
 
 Il ne double pas `corpus/ETAT.md`, qui dit ce que le corpus **est** ; celui-ci dit ce qu'il
 lui **manque**. Et il ne remplace aucun script : les chiffres ci-dessous sont un instantané
-du 21 août 2026, les commandes sont la vérité.
+du 22 août 2026, les commandes sont la vérité.
 
 ```bash
 npm run corpus:audit    # domaines, thèmes, cartes validées, sujets jamais instruits
@@ -19,17 +19,21 @@ script ne peut pas dire : quel travail est possible aujourd'hui, ce qu'il coûte
 
 ---
 
-## Les trois chantiers, par coût croissant
+## Les quatre chantiers, par coût croissant
 
 | chantier | volume | recherche documentaire ? | état |
 |---|---|---|---|
 | ~~**A.** Approfondissements~~ | ~~25 cartes~~ | non | **fait le 21 août 2026** |
 | **B.** File de la sociologie des organisations | 26 entrées | oui, cartographie déjà faite | ouvert |
-| **C.** Six domaines vides | 6 domaines | oui, **tout est à faire** | ouvert |
+| **C.** Cinq domaines vides | 5 domaines | oui, **tout est à faire** | ouvert |
+| **D.** Reprises courtes de `systems-thinking` | 2 textes | oui, accès déjà constaté | ouvert |
 
 Le chantier A est vidé : les vingt-cinq approfondissements manquants ont été écrits et
 projetés, et **plus aucune carte validée n'en attend**. Ce que ce passage a appris est gardé
 plus bas ; ce qui reste à faire commence au chantier B.
+
+Le chantier C a perdu un domaine le 22 août : `systems-thinking` est ouvert et pourvu. Ce que
+ce passage a laissé derrière lui, et qui se reprend vite, est au chantier D.
 
 ---
 
@@ -129,7 +133,12 @@ tradition germanophone, que la file ne couvre pas.
 
 ---
 
-# C. Les six domaines vides
+# C. Les cinq domaines vides
+
+**`systems-thinking` est sorti de cette liste le 22 août 2026.** Il avait le meilleur stock
+d'entrée des six, et c'est par lui que le chantier a été entamé : périmètre écrit,
+cartographie, sept cartes, trois thèmes. Ce que ce passage a appris est au chantier D et dans
+`corpus/ETAT.md`.
 
 | famille | domaine | périmètre | cartographie | stock d'entrée |
 |---|---|---|---|---|
@@ -137,10 +146,9 @@ tradition germanophone, que la file ne couvre pas.
 | Humains et organisations | Psychologie du travail | — | — | 1 cas de frontière |
 | Humains et organisations | Économie comportementale | — | — | aucun |
 | Production et systèmes | Operations Management | — | — | 3 rapports repérés |
-| Production et systèmes | Systems Thinking | — | — | **3 textes, dont un ouvert** |
 | Pilotage | Science de la décision | — | — | **5 textes repérés** |
 
-**Aucun des six n'a de périmètre écrit ni de cartographie.** Les ouvrir, c'est refaire l'ordre
+**Aucun des cinq n'a de périmètre écrit ni de cartographie.** Les ouvrir, c'est refaire l'ordre
 complet, et cet ordre n'est pas négociable : il a été appris en le violant.
 
 > le périmètre s'écrit → le scout cartographie → **puis** les thèmes se déclarent → puis les
@@ -148,26 +156,23 @@ complet, et cet ordre n'est pas négociable : il a été appris en le violant.
 
 Les neuf thèmes de la sociologie des organisations ont été posés de mémoire avant toute
 lecture, et le périmètre le reconnaît lui-même comme un découpage a priori : c'est pourquoi
-trois d'entre eux affichent une page vide. La règle qui en découle vaut pour les six :
+trois d'entre eux affichent une page vide. La règle qui en découle vaut pour les cinq :
 **un thème sans carte validée ne se déclare pas.**
 
 ## Ce dont l'ouverture hérite déjà, et qui n'est pas à rechercher
 
-Trois de ces domaines ne partent pas de rien. Les périmètres et cartographies existants ont
+Deux de ces domaines ne partent pas de rien. Les périmètres et cartographies existants ont
 tranché leurs frontières **depuis l'autre côté**, et consigné en angle mort ce qui leur
-revient plutôt que de le rejeter. Un scout qui ouvre l'un des trois commence par lire ces
+revient plutôt que de le rejeter. Un scout qui ouvre l'un des deux commence par lire ces
 sections.
 
-**`systems-thinking`** — `corpus/perimeter.md` lui consacre la frontière que le périmètre de
-la cybernétique appelle « la seule qui puisse coûter cher », avec un tableau de départage
-déjà écrit : le **principe** de la régulation est en cybernétique, le **comportement dans le
-temps** qu'engendre une structure de boucles est ici. Et
-`corpus/map/cybernetics.scouting.md` lui lègue Roig 1970 sur la théorie générale des systèmes
-en sciences sociales, **51 pages de texte intégral vérifiées sur Persée** — la cartographie
-écrit elle-même que « c'est un cadeau pour qui ouvrira ce domaine ». Plus Lesourne 1985, neuf
-pages listées, et un sourcebook de Buckley en accès restreint. Signal à ne pas manquer :
-Bertalanffy et Forrester **n'ont pas été rencontrés spontanément**, ce qui est une information
-sur les requêtes, pas sur le champ.
+**Le legs se vérifie : c'est ce qui a ouvert `systems-thinking`.** Les trois textes que
+`corpus/map/cybernetics.scouting.md` lui avait consignés ont été repris tels quels le 22 août.
+Un des trois a rendu, et c'était le plus riche, celui que la cartographie appelait « un cadeau
+pour qui ouvrira ce domaine ». Le signal joint au legs s'est vérifié lui aussi : Bertalanffy et
+Forrester, qui n'avaient pas été rencontrés spontanément, remontent immédiatement dès qu'on les
+cherche nommément. Une section d'angle mort bien tenue vaut donc un balayage, et cela justifie
+le temps qu'elle coûte.
 
 **`decision-science`** — deux cartographies lui ont légué cinq textes avec leur état d'accès
 constaté : Tversky & Kahneman 1974 (version publiée fermée, mais **un rapport technique ONR
@@ -186,15 +191,38 @@ résultat, pas un manque, et il signifie qu'ouvrir ces trois-là demandera un ba
 Un seul cas de frontière est consigné, Mackworth 1948 sur la vigilance, **tranché du côté de
 `human-factors`** et donc pas à réclamer.
 
-## Le piège que ces six domaines partagent
+## Le piège que ces cinq domaines partagent
 
 La cybernétique a montré ce que coûte un champ dont le vocabulaire est disponible pour
-n'importe quel usage métaphorique. Les six le sont autant : « système », « décision »,
+n'importe quel usage métaphorique. Les cinq le sont autant : « système », « décision »,
 « flux », « motivation », « biais » circulent partout. Le rejet le plus fréquent à prévoir
 sera le même — **un texte qui invoque le mot sans mécanisme identifiable ni auteur
 rattachable** — et il se traite de la même façon : `corpus/rejected/` avec
 `rejection_reason: "OUT_OF_SCOPE"`, jamais une mise en attente. Un candidat gris non tranché
 revient toujours par une autre porte.
+
+---
+
+# D. Les reprises courtes de `systems-thinking`
+
+Deux textes localisés en accès ouvert et non lus, laissés par le lot du 22 août. Ce sont les
+deux entrées les moins chères du dépôt, l'accès étant déjà constaté dans les deux cas.
+
+**L'ouvrage de 1972 sur les limites de la croissance**, de Meadows, Meadows, Randers et
+Behrens. Scan intégral qui répond, 43 Mo, sur le site du Donella Meadows Project. C'est lui
+qui pourvoirait le thème « croissance et limites » que le lot n'a pas pu déclarer, faute de
+carte pour le porter.
+
+**Lesourne 1985**, « Introduction : à la recherche d'une théorie de l'auto-organisation »,
+*Économie appliquée* 38(3-4), p. 559-567. Neuf pages annoncées en texte intégral sur Persée.
+Le lot du 22 a échoué dessus **pour une raison évitable et déjà écrite ici** : l'identifiant
+Persée a été deviné d'après la forme de l'URL au lieu d'être obtenu en résolvant le DOI. La
+reprise consiste à trouver le DOI.
+
+Trois autres manques du domaine sont plus lourds et demandent un vrai balayage : six des neuf
+littératures de son périmètre n'ont pas été ouvertes, deux de ses trois textes viennent d'un
+nom écrit de mémoire, et un de ses trois thèmes repose entièrement sur Forrester.
+`corpus/map/systems-thinking.scouting.md` les nomme un par un et dit ce qui a été essayé.
 
 ---
 
@@ -255,6 +283,25 @@ contre Crossref, l'entrepôt OAI de Persée, le MARC de la Bibliothèque du Cong
 OpenLibrary. **OpenAlex a répondu « Insufficient budget » et Semantic Scholar en 429** : ce
 que ces deux bases auraient fait remonter est inconnu, pas absent, et plusieurs cartographies
 le signalent comme leur limite principale.
+
+**Une réédition n'est pas l'original, et elle le dit si on la lit.** Le texte de Forrester
+ouvert le 22 août porte « Updated March, 1995 » sous un article de 1971, et son contenu a bougé
+avec sa date : il annonce des développements sur soixante ans, ce que l'article d'origine ne
+pouvait pas écrire. Un verbatim se localise sur l'exemplaire réellement ouvert, jamais sur
+l'édition d'origine qu'on n'a pas vue. Corollaire utile : deux mises à disposition
+indépendantes du même document, ici le MIT OpenCourseWare et le Creative Learning Exchange,
+permettent de comparer chaîne par chaîne sans emprunter quoi que ce soit.
+
+**La notice d'une plateforme n'est pas la page de titre.** Persée annonce l'article de Roig
+1970 sous « et les perspectives » quand la page imprimée porte « et ses perspectives », et sa
+pagination de numéro spécial diffère de celle que donne Crossref. La forme imprimée fait foi,
+et elle se lit sur l'image.
+
+**Les mises à disposition autorisées par l'auteur ou son institution sont une voie d'accès à
+part entière.** Documents de cours d'un laboratoire, rapports d'un institut fondé par l'auteur,
+archives d'une société savante : ces pages portent souvent leur autorisation en toutes lettres.
+C'est cette voie, et non la bibliographie, qui a rendu le lot de `systems-thinking`. Elle se
+constate sur la page qui héberge, comme toutes les autres.
 
 **OpenEdition Books sert des ouvrages entiers en texte intégral.** Voie découverte en cours de
 lot sur la théorie de la mesure, où elle a débloqué l'ouvrage central du domaine. Plusieurs

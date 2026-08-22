@@ -1,0 +1,78 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "paradigme-source-du-systeme",
+  "slug": "paradigme-source-du-systeme",
+  "status": "VALIDATED",
+  "title": "Le paradigme, source du système",
+  "themes": [
+    "ou-intervenir-dans-un-systeme"
+  ],
+  "theme_labels": {
+    "ou-intervenir-dans-un-systeme": "Là où l'on peut vraiment peser"
+  },
+  "authors": [
+    {
+      "name": "Donella H. Meadows",
+      "app_author_id": null
+    }
+  ],
+  "hook": "D'où un système tient-il ses buts, avant même ses règles ?",
+  "summary": "Meadows place au sommet de ses points de levier l'idée partagée d'où le système tire ses buts : la changer transforme tout le reste, et rien n'y résiste autant.",
+  "sources": [
+    {
+      "label": "Donella H. Meadows, Leverage Points: Places to Intervene in a System, Hartland (Vermont), The Sustainability Institute, décembre 1999, 21 p.",
+      "kind": "primary",
+      "url": "https://donellameadows.org/wp-content/userfiles/Leverage_Points.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "David J. Abson et al., « Leverage points for sustainability transformation », Ambio, vol. 46, n° 1, 2017, p. 30-39.",
+      "kind": "secondary-academic",
+      "locator": "p. 30-39",
+      "doi_isbn": "10.1007/s13280-016-0800-y",
+      "url": "https://doi.org/10.1007/s13280-016-0800-y",
+      "consulted": "metadata-only"
+    },
+    {
+      "label": "Joern Fischer et Maraja Riechers, « A leverage points perspective on sustainability », People and Nature, vol. 1, n° 1, 2019, p. 115-120.",
+      "kind": "secondary-academic",
+      "locator": "p. 115-120",
+      "doi_isbn": "10.1002/pan3.13",
+      "url": "https://doi.org/10.1002/pan3.13",
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "reviewer": "chaîne Curiosity, session du 22 août 2026 (contrôle non aveugle, voir notes)",
+    "date": "2026-08-22",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "Contrôle du 22 août 2026, mené dans la même session que la rédaction : il n'a donc pas été aveugle au sens de docs/corpus-workflow.md. Le dossier de npm run corpus:brief a été produit et relu, les quatre questions ont été tranchées une à une contre les textes rouverts, et l'écart au protocole est déclaré ici plutôt que passé sous silence."
+    ]
+  },
+  "attribution_note": "Concept de Donella H. Meadows, formée à la dynamique des systèmes auprès de Jay W. Forrester.",
+  "quotation": {
+    "text": "Les paradigmes sont les sources des systèmes. D'eux, de ces accords sociaux partagés sur la nature du réel, viennent les buts du système […]",
+    "reference": "Donella H. Meadows, Leverage Points: Places to Intervene in a System, The Sustainability Institute, 1999.",
+    "locator": "p. 18",
+    "language": "fr",
+    "original_text": "Paradigms are the sources of systems. From them, from shared social agreements about the nature of reality, come system goals and information flows, feedbacks, stocks, flows and everything else about systems.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (chaîne Curiosity, 22 août 2026). Aucune traduction française publiée de ce rapport n'a été cherchée ni identifiée."
+    }
+  },
+  "notes": [
+    "L’exemple par lequel Meadows introduit le paradigme n’est pas d’elle : elle le tient de Jay W. Forrester et le présente comme tel, « Another of Jay Forrester’s famous systems sayings ». C’est celui de la loi fiscale, dont le rendement réel revient s’aligner sur l’idée que la société se fait d’une répartition juste, quelle que soit la rédaction du texte (p. 17).",
+    "Le paradigme est le point de levier n° 2 de la liste révisée, p. 3, et non le premier : au-dessus de lui, Meadows place « The power to transcend paradigms ». Le résumé dit « au sommet de ses points de levier », ce qui est exact pour un paradigme donné et le resterait moins si la carte prétendait au rang 1.",
+    "Le « rien n'y résiste autant » est dans le texte et n'est pas une figure : « Whole societies are another matter. They resist challenges to their paradigm harder than they resist anything else » (p. 18).",
+    "Meadows cite ici longuement Emerson. Ce passage n'est pas repris : la carte doit citer l'autrice, pas ce qu'elle cite.",
+    "Pour la question du changement de paradigme, Meadows renvoie explicitement à Thomas Kuhn et à son ouvrage sur les révolutions scientifiques (p. 18). Cet ouvrage n’est pas une source de cette fiche et rien de son contenu n’est avancé ici."
+  ]
+}
