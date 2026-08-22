@@ -90,6 +90,13 @@ export const PUPIL_R = 11;
  * Les noms disent la direction dominante, et non un axe exact : `up` penche vers la gauche,
  * `down` aussi. C'est l'orbite d'un œil, pas une rose des vents.
  *
+ * **Les quatre dernières ne sont pas sur l'orbite, et c'est la seule exception.** Elles servent
+ * la partition `reading`, où l'œil ne regarde pas autour de lui mais **sous lui**, le long d'un
+ * mot. Une ligne de texte est droite : ces quatre fixations sont donc alignées — ordonnée
+ * constante, sous le centre — au lieu d'être réparties sur le pourtour. Les poser sur l'orbite
+ * aurait fait monter et descendre un regard qui suit une ligne, c'est-à-dire exactement ce qu'un
+ * lecteur ne fait pas.
+ *
  * Une pupille qui toucherait son anneau ne se lirait plus comme un regard mais comme un
  * défaut de centrage ; `npm test` vérifie ce dégagement plutôt que de le supposer.
  */
@@ -101,6 +108,17 @@ export const GAZE = {
   left: [-11, 2],
   "up-right": [9, -4.5],
   "down-right": [5.5, 6.5],
+
+  /*
+   * La ligne — quatre fixations réparties sur la largeur d'un mot, la dernière sur ses points
+   * de suspension. L'ordonnée est la même partout et elle est positive : le mot est droit, et
+   * il est écrit sous l'œil. C'est cette inclinaison constante vers le bas qui fait la
+   * différence entre un regard qui lit ce qui est là et un regard qui balaie le vide.
+   */
+  "line-start": [-10, 4.5],
+  "line-early": [-3.5, 4.5],
+  "line-late": [3, 4.5],
+  "line-end": [10, 4.5],
 };
 
 /**
@@ -205,11 +223,11 @@ export function lidEdge(stroke, offset) {
 }
 
 /**
- * Les deux séquences du regard, et ce qui les sépare.
+ * Les trois séquences du regard, et ce qui les sépare.
  *
- * Le dessin est le même, l'orbite est la même, les fixations sont les mêmes. Ce qui distingue
- * ces deux partitions n'est ni la géométrie ni l'amplitude : c'est **le temps**, et c'est la
- * seule chose qui décide si un œil cherche ou s'il attend.
+ * Le dessin est le même et les amplitudes sont du même ordre. Ce qui distingue ces partitions
+ * n'est presque jamais la géométrie : c'est **le temps**, et c'est lui qui décide si un œil
+ * cherche, s'il attend ou s'il lit.
  *
  * - `scanning` — l'écran d'ouverture. Huit saccades, six fixations de 240 à 264 ms, un double
  *   clignement rapide à la charnière de deux regards. C'est le rythme de la recherche
@@ -217,6 +235,10 @@ export function lidEdge(stroke, offset) {
  * - `waiting` — le titre d'Explorer. Quatre saccades, trois fixations de 864 à 1 656 ms, deux
  *   clignements lents. C'est le rythme d'un regard qui ne cherche rien : il se pose, il reste,
  *   il revient.
+ * - `reading` — l'attente d'« Approfondir ». Cinq saccades dont un retour, quatre fixations
+ *   alignées sous le centre, deux clignements qui encadrent la lecture. C'est la seule des
+ *   trois où la géométrie change aussi : l'œil ne fait pas le tour de son orbite, il suit une
+ *   ligne.
  *
  * **Ce que le second n'a pas le droit d'être.** Il aurait été économique de rejouer la
  *  partition d'ouverture sur un second écran ; ce n'en aurait pas été une seconde, seulement la
@@ -226,14 +248,24 @@ export function lidEdge(stroke, offset) {
  *
  * Trois écarts font tout, et ils sont mesurables :
  *
- * | | `scanning` | `waiting` |
- * |---|---|---|
- * | Durée | 4 800 ms | 7 200 ms |
- * | Saccades | 8 | 4 |
- * | Fixation la plus longue | 264 ms | 1 656 ms |
- * | Durée d'une saccade | 144 ms | 216 ms, 288 au retour |
- * | Clignements | 3, dont un double rapide | 2, tous deux lents |
- * | Pause entre deux passages | 2,34 à 5,67 s | 4,68 à 9,36 s |
+ * | | `scanning` | `waiting` | `reading` |
+ * |---|---|---|---|
+ * | Durée | 4 800 ms | 7 200 ms | 2 200 ms, étirés jusqu'à 3 230 |
+ * | Saccades | 8 | 4 | 5 |
+ * | Fixation la plus longue | 264 ms | 1 656 ms | 374 ms |
+ * | Durée d'une saccade | 144 ms | 216 ms, 288 au retour | 66 ms, 88 au retour |
+ * | Clignements | 3, dont un double rapide | 2, tous deux lents | 2, un par bout |
+ * | Pause entre deux passages | 2,34 à 5,67 s | 4,68 à 9,36 s | 0,44 à 0,88 s |
+ *
+ * **La troisième est la seule dont la durée n'est pas écrite ici pour de bon.** Les deux
+ * premières durent ce que dit la table ; celle-ci dure ce que l'écran qui la joue a tiré au
+ * sort, entre 2 200 et 3 230 ms — voir `src/lib/deepening-wait.ts`. Les pourcentages ci-dessous
+ * restent donc les mêmes et c'est l'unité qui change : un point vaut 22 ms au plancher du
+ * tirage et 32,3 ms au plafond. C'est ce qui permet à la lecture de se terminer exactement
+ * quand le texte arrive, quelle que soit la durée tirée, sans qu'aucune image clé ne soit
+ * recalculée. La valeur écrite dans la feuille de style est le **plancher** : elle est la seule
+ * qu'on puisse déclarer, et c'est aussi le cas le plus serré pour le seuil de scintillement,
+ * donc le bon côté où se tromper.
  *
  * **Le retour au repos est la seule saccade plus lente que les autres**, dans les deux
  * partitions comme dans un œil réel : revenir sur ce qu'on regardait est un mouvement décidé,
@@ -356,6 +388,74 @@ export const GAZE_SEQUENCES = {
       { position: "closed", from: 45, to: 50 },
       { position: "open", from: 56, to: 84 },
       { position: "closed", from: 88, to: 93 },
+      { position: "open", from: 99, to: 100 },
+    ],
+  },
+
+  /**
+   * Le regard qui lit — l'attente d'« Approfondir ».
+   *
+   * L'écran affiche le mot « Chargement… » et, au-dessus, l'œil de la marque. La partition n'a
+   * qu'une chose à faire : donner à voir que ce mot est **lu**. Trois propriétés y suffisent, et
+   * aucune n'est un effet.
+   *
+   * **Les fixations sont sur une ligne, et elles vont dans un seul sens.** Quatre arrêts de
+   * gauche à droite, à ordonnée constante et sous le centre — le mot est droit, et il est écrit
+   * en dessous. Aucun retour en arrière : une régression est ce que fait un lecteur qui n'a pas
+   * compris, et ce serait dire autre chose que ce que l'écran dit. La dernière fixation est la
+   * plus longue et elle tombe sur les points de suspension, qui sont le seul endroit du mot où
+   * il y ait quelque chose à attendre.
+   *
+   * **Le retour au repos n'est pas une cinquième fixation, c'est la fin de la lecture.** Il est
+   * la seule saccade plus lente que les autres, comme dans les deux autres partitions, et il
+   * ramène la pupille au centre : l'œil a fini le mot, il relève la tête.
+   *
+   * **Les deux clignements encadrent la lecture au lieu de la ponctuer.** Un lecteur ne cligne
+   * pas au milieu d'une ligne, il cligne avant de s'y mettre et une fois arrivé au bout. Le
+   * premier est vif — l'œil se pose sur le mot ; le second est plus lent à se relever qu'à
+   * tomber, et il finit à 99 % : la paupière achève de remonter à l'instant où le texte
+   * s'affiche. C'est ce qui fait que l'attente se **termine** au lieu de s'interrompre.
+   *
+   * **Ce que cette partition ne fait pas, et pourquoi c'est ce qui la rend admissible.** Elle ne
+   * boucle pas : elle joue une fois, elle est calée sur la durée tirée, et l'écran change quand
+   * elle finit. La règle de fréquence, qui est la vraie dépense d'une animation, ne se paie donc
+   * pas ici — on ne revient pas sur cet écran, on le traverse. Les pauses de relance existent
+   * pour le seul cas où l'appareil aurait pris du retard sur son propre minuteur : le lecteur
+   * relit le mot plutôt que de fixer une image arrêtée.
+   */
+  reading: {
+    /**
+     * Le plancher du tirage — voir `src/lib/deepening-wait.ts`.
+     *
+     * C'est la seule durée qu'on puisse écrire dans une feuille de style, et c'est la bonne :
+     * les clignements sont d'autant plus rapprochés que la séquence est courte, si bien que le
+     * contrôle du seuil de scintillement porte ici sur le cas le plus serré. L'écran qui joue
+     * la partition remplace cette valeur par celle qu'il a tirée, et rien d'autre ne bouge :
+     * les pourcentages ne connaissent pas la durée qu'ils découpent.
+     */
+    durationMs: 2200,
+    /**
+     * Deux pauses courtes, et elles ne servent presque jamais.
+     *
+     * La séquence finit avec l'attente : la relance n'a lieu que si le minuteur de l'écran est
+     * en retard sur l'animation — un onglet qui revient au premier plan, un appareil chargé.
+     * Le lecteur relit alors le mot après un temps d'arrêt de l'ordre d'une fixation ou de
+     * deux, ce qui est exactement ce qu'on fait devant un mot qui ne change pas.
+     */
+    replayPausesMs: [440, 880],
+    gaze: [
+      { position: "rest", from: 0, to: 12 },
+      { position: "line-start", from: 15, to: 30 },
+      { position: "line-early", from: 33, to: 46 },
+      { position: "line-late", from: 49, to: 62 },
+      { position: "line-end", from: 65, to: 82 },
+      { position: "rest", from: 86, to: 100 },
+    ],
+    blink: [
+      { position: "open", from: 0, to: 1.5 },
+      { position: "closed", from: 5, to: 6.5 },
+      { position: "open", from: 9.5, to: 88 },
+      { position: "closed", from: 91.5, to: 94 },
       { position: "open", from: 99, to: 100 },
     ],
   },

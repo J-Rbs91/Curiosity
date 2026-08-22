@@ -147,10 +147,10 @@
   --dur-swing: 720ms;
 
   /*
-   * Le regard de la marque — les deux seules durées du produit à dépasser la seconde.
+   * Le regard de la marque — les seules durées du produit à dépasser la seconde.
    *
-   * Elles ne se paient qu'à deux endroits, et ce sont deux partitions différentes, pas une
-   * durée réglable : le §4 de `docs/ux-direction.md` dit lequel joue où et pourquoi.
+   * Elles ne se paient qu'à trois endroits, et ce sont trois partitions différentes, pas une
+   * durée réglable : le §4 de `docs/ux-direction.md` dit laquelle joue où et pourquoi.
    *
    * `scanning` vaut la somme de huit saccades de 144 ms — la durée d'un retour à l'appui —, de
    * six fixations de 240 à 264 ms et de trois clignements. `waiting` en fait une fois et demie
@@ -166,6 +166,26 @@
    */
   --dur-gaze-scanning: 4800ms;
   --dur-gaze-waiting: 7200ms;
+
+  /*
+   * La troisième partition, et la seule dont cette valeur n'est pas la durée réelle.
+   *
+   * `reading` joue pendant l'attente d'« Approfondir », et cette attente est tirée au sort
+   * entre 2 200 et 3 230 ms à chaque appui — `src/lib/deepening-wait.ts`. L'écran remplace donc
+   * cette propriété par la durée qu'il a tirée, et c'est tout ce qu'il fait : les images clés
+   * ne connaissent pas la durée qu'elles découpent, si bien que la lecture se termine
+   * exactement quand le texte arrive sans qu'aucun pourcentage n'ait à être recalculé.
+   *
+   * La valeur écrite ici est le **plancher** du tirage. C'est celle qu'affiche la fraction de
+   * seconde où l'écran n'a pas encore tiré, c'est celle que `npm test` compare à la partition,
+   * et c'est le cas le plus serré pour l'écart entre deux clignements : au plafond du tirage,
+   * la séquence ne fait que s'étirer.
+   *
+   * Un point de partition vaut donc 22 ms au plancher et 32,3 ms au plafond. Les fixations
+   * s'allongent de 286 à 549 ms, les saccades de 66 à 97 : c'est l'arrêt qui absorbe le temps
+   * supplémentaire, jamais le saut — la même règle qu'aux deux partitions précédentes.
+   */
+  --dur-gaze-reading: 2200ms;
 
   /*
    * Amplitude des déplacements, en pourcentage de la surface qui bouge plutôt
@@ -1022,24 +1042,30 @@ body {
 }
 
 /* --------------------------------------------------------------------------
- * Le regard de la marque — deux partitions, un seul dessin
+ * Le regard de la marque — trois partitions, un seul dessin
  *
  * La pupille saute d'une fixation à l'autre et la paupière descend, puis tout se repose : la
  * pupille au centre, la paupière relevée. Chaque séquence commence et finit dans cet état, et
  * c'est la seule raison pour laquelle elle peut se relancer sans se voir sauter.
  *
- * **Deux partitions, et ce qui les sépare est le temps.** `scanning` joue à l'ouverture, dans
- * le O du nom : huit saccades, six fixations courtes, trois clignements dont un double rapide —
- * un œil qui parcourt. `waiting` joue dans le o du titre d'Explorer : quatre saccades toutes
- * dans le même sens, trois fixations de 864 à 1 656 ms, deux clignements lents — un œil qui
- * n'attend rien de précis. Mêmes positions, même orbite, même dessin : seuls les temps
- * changent, et c'est tout ce qu'il faut pour que l'un cherche et que l'autre attende.
+ * **Trois partitions, et ce qui les sépare est presque toujours le temps.** `scanning` joue à
+ * l'ouverture, dans le O du nom : huit saccades, six fixations courtes, trois clignements dont
+ * un double rapide — un œil qui parcourt. `waiting` joue dans le o du titre d'Explorer : quatre
+ * saccades toutes dans le même sens, trois fixations de 864 à 1 656 ms, deux clignements lents
+ * — un œil qui n'attend rien de précis. Mêmes positions, même orbite, même dessin : seuls les
+ * temps changent, et c'est tout ce qu'il faut pour que l'un cherche et que l'autre attende.
  *
- * **Où ces boucles ont le droit de tourner.** À ces deux endroits, nommés au §4 de
+ * `reading` est la seule où la géométrie change aussi, et elle change pour une raison qu'on
+ * peut voir : l'œil y suit une ligne de texte, donc ses quatre fixations sont alignées et sous
+ * le centre, au lieu de faire le tour de l'orbite. Cinq saccades, un seul sens, un retour au
+ * repos plus lent, et deux clignements qui encadrent la lecture au lieu de la ponctuer.
+ *
+ * **Où ces séquences ont le droit de jouer.** Aux trois endroits nommés au §4 de
  * `docs/ux-direction.md`, et nulle part ailleurs. La règle « aucun mouvement continu » du §7
  * tient pour tout le reste — le favicon ne bouge pas, aucune fiche n'a d'œil dans son titre —,
- * et le §7 dit aussi ce que le second endroit coûte et ce qui le rend tenable : deux fois moins
- * d'événements que le premier, et deux fois plus de pause entre deux passages.
+ * et le §7 dit aussi ce que chacun coûte. Les deux premières bouclent, et c'est leur fréquence
+ * qui les borne. La troisième ne boucle pas : elle joue une fois, sur un écran qu'on traverse,
+ * et elle s'arrête avec l'attente qu'elle occupe.
  *
  * Les positions viennent du composant, en propriétés personnalisées, parce qu'elles sont la
  * géométrie de la marque et qu'elle n'a qu'une définition — `mark-geometry.mjs`. Ce fichier ne
@@ -1048,7 +1074,8 @@ body {
  * partition écrite dans la géométrie.
  *
  * Les pourcentages se lisent sur la durée de leur séquence — un point vaut 48 ms pour
- * `scanning`, 72 ms pour `waiting`. Les intervalles laissés vides entre deux maintiens sont les
+ * `scanning`, 72 ms pour `waiting`, et de 22 à 32,3 ms pour `reading`, dont la durée est tirée
+ * au sort à chaque appui. Les intervalles laissés vides entre deux maintiens sont les
  * saccades ; ils ne sont pas écrits, ce qui rend impossible d'en oublier une en déplaçant une
  * fixation.
  *
@@ -1075,6 +1102,14 @@ body {
 
   [data-gaze="waiting"] .blink {
     animation: blink-waiting var(--dur-gaze-waiting) var(--ease-out-soft) both;
+  }
+
+  [data-gaze="reading"] .gaze {
+    animation: gaze-reading var(--dur-gaze-reading) var(--ease-out-soft) both;
+  }
+
+  [data-gaze="reading"] .blink {
+    animation: blink-reading var(--dur-gaze-reading) var(--ease-out-soft) both;
   }
 }
 
@@ -1161,6 +1196,45 @@ body {
     translate: var(--lid-open);
   }
   88%, 93% {
+    translate: var(--lid-closed);
+  }
+  99%, 100% {
+    translate: var(--lid-open);
+  }
+}
+
+@keyframes gaze-reading {
+  0%, 12% {
+    translate: var(--gaze-rest);
+  }
+  15%, 30% {
+    translate: var(--gaze-line-start);
+  }
+  33%, 46% {
+    translate: var(--gaze-line-early);
+  }
+  49%, 62% {
+    translate: var(--gaze-line-late);
+  }
+  65%, 82% {
+    translate: var(--gaze-line-end);
+  }
+  86%, 100% {
+    translate: var(--gaze-rest);
+  }
+}
+
+@keyframes blink-reading {
+  0%, 1.5% {
+    translate: var(--lid-open);
+  }
+  5%, 6.5% {
+    translate: var(--lid-closed);
+  }
+  9.5%, 88% {
+    translate: var(--lid-open);
+  }
+  91.5%, 94% {
     translate: var(--lid-closed);
   }
   99%, 100% {
