@@ -476,12 +476,13 @@ body {
  * se repose : la pupille au centre, la paupière relevée. La séquence commence et finit dans cet
  * état, et c'est la seule raison pour laquelle elle peut se relancer sans se voir sauter.
  *
- * **Ce que la boucle ne remet pas en cause.** La règle « aucun mouvement continu » du §7 de
- * `docs/ux-direction.md` tient toujours, et cette séquence n'en est pas une exception : elle ne
- * vit qu'à l'écran de premier lancement, où l'utilisateur n'attend aucune information et qu'il
- * ne reverra pas. Nulle part ailleurs la marque ne s'affiche, et le favicon ne bouge pas. Le
- * jour où quelqu'un poserait la marque dans un en-tête permanent, c'est la boucle qu'il
- * faudrait retirer, pas la règle qu'il faudrait assouplir.
+ * **Où cette boucle a le droit de tourner.** À deux endroits, nommés au §4 de
+ * `docs/ux-direction.md` : l'écran d'ouverture, où rien n'attend derrière elle, et le o du titre
+ * d'Explorer, qui est un caractère de 15,6 px dans un en-tête et non une surface sous le texte
+ * qu'on lit. La règle « aucun mouvement continu » du §7 tient pour tout le reste — le favicon ne
+ * bouge pas, aucune fiche n'a d'œil dans son titre —, et le §7 dit aussi ce que le second
+ * endroit coûte. La feuille de style n'en décide rien : elle n'attache ces deux pistes qu'aux
+ * classes que `Mark.tsx` ne pose que sur `animate`.
  *
  * Les positions viennent du composant, en propriétés personnalisées, parce qu'elles sont la
  * géométrie de la marque et qu'elle n'a qu'une définition — `mark-geometry.mjs`. Ce fichier ne
