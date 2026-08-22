@@ -9,7 +9,7 @@ est dans [`corpus/RESTE-A-FAIRE.md`](RESTE-A-FAIRE.md).
 `npm run corpus:validate` : **67 enregistrements, 66 validés, 0 erreur, 42 avertissements.**
 `npm run corpus:deepen` : **66 approfondissements pour 66 cartes validées, 95 772 mots,
 1 451 en moyenne.**
-`npm test` : **320 tests, 0 échec.** `npm run lint` et `npm run build` : sans erreur.
+`npm test` : **382 tests, 0 échec.** `npm run lint` et `npm run build` : sans erreur.
 
 **Six domaines instruits sur onze déclarés.** Les cinq autres sont configurés dans la
 taxonomie et n'ont pas de corpus ; `corpus:audit` les affiche « en cours de constitution ».
