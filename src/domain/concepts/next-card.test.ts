@@ -28,65 +28,52 @@ describe("dayKey", () => {
 
 describe("pickDailyConcept", () => {
   it("ne propose rien sur un corpus vide", () => {
-    expect(pickDailyConcept([], new Map(), "2026-08-17")).toBeUndefined();
+    expect(pickDailyConcept([], [], "2026-08-17")).toBeUndefined();
   });
 
   it("rend la même carte à chaque ouverture d'une même journée", () => {
-    const first = pickDailyConcept(corpus, new Map(), "2026-08-17");
+    const first = pickDailyConcept(corpus, [], "2026-08-17");
     const held = { day: "2026-08-17", conceptId: first!.id };
     // Le lecteur rouvre l'application dans l'heure : c'est la même carte, même si elle
     // est désormais marquée comme vue.
-    const seen = new Map([[first!.id, "2026-08-17T09:00:00.000Z"]]);
-    expect(pickDailyConcept(corpus, seen, "2026-08-17", held)?.id).toBe(first!.id);
+    expect(pickDailyConcept(corpus, [first!.id], "2026-08-17", held)?.id).toBe(first!.id);
   });
 
   it("tire la même carte sans mémoire, la date suffisant à la déterminer", () => {
     // Un lecteur qui vide son stockage en cours de journée ne doit pas changer de carte.
-    expect(pickDailyConcept(corpus, new Map(), "2026-08-17")?.id).toBe(
-      pickDailyConcept(corpus, new Map(), "2026-08-17")?.id
+    expect(pickDailyConcept(corpus, [], "2026-08-17")?.id).toBe(
+      pickDailyConcept(corpus, [], "2026-08-17")?.id
     );
   });
 
   it("change de carte au jour suivant", () => {
-    const today = pickDailyConcept(corpus, new Map(), "2026-08-17")!;
+    const today = pickDailyConcept(corpus, [], "2026-08-17")!;
     const held = { day: "2026-08-17", conceptId: today.id };
-    const seen = new Map([[today.id, "2026-08-17T09:00:00.000Z"]]);
-    expect(pickDailyConcept(corpus, seen, "2026-08-18", held)?.id).not.toBe(today.id);
+    expect(pickDailyConcept(corpus, [today.id], "2026-08-18", held)?.id).not.toBe(today.id);
   });
 
   it("montre d'abord ce qui n'a pas été vu", () => {
-    const seen = new Map([
-      ["a", "2026-01-01T00:00:00.000Z"],
-      ["b", "2026-01-01T00:00:00.000Z"],
-      ["c", "2026-01-01T00:00:00.000Z"],
-    ]);
-    expect(pickDailyConcept(corpus, seen, "2026-08-17")?.id).toBe("d");
+    expect(pickDailyConcept(corpus, ["a", "b", "c"], "2026-08-17")?.id).toBe("d");
   });
 
   it("recommence par la plus ancienne quand tout a été vu", () => {
-    const seen = new Map([
-      ["a", "2026-03-01T00:00:00.000Z"],
-      ["b", "2026-01-01T00:00:00.000Z"],
-      ["c", "2026-02-01T00:00:00.000Z"],
-      ["d", "2026-04-01T00:00:00.000Z"],
-    ]);
-    expect(pickDailyConcept(corpus, seen, "2026-08-17")?.id).toBe("b");
+    // Le rang remplace l'horodatage : la tête de liste est la carte le plus anciennement
+    // rencontrée, et c'est elle qui revient.
+    expect(pickDailyConcept(corpus, ["b", "c", "a", "d"], "2026-08-17")?.id).toBe("b");
   });
 
   it("ne redonne pas la carte de la veille tant qu'il reste autre chose", () => {
-    const seen = new Map(corpus.map((c) => [c.id, "2026-01-01T00:00:00.000Z"]));
     const held = { day: "2026-08-16", conceptId: "a" };
-    expect(pickDailyConcept(corpus, seen, "2026-08-17", held)?.id).not.toBe("a");
+    expect(pickDailyConcept(corpus, ["a", "b", "c", "d"], "2026-08-17", held)?.id).not.toBe("a");
   });
 
   it("propose la seule carte du corpus même si elle vient d'être vue", () => {
-    const seen = new Map([["a", "2026-01-01T00:00:00.000Z"]]);
     const held = { day: "2026-08-16", conceptId: "a" };
-    expect(pickDailyConcept([concept("a")], seen, "2026-08-17", held)?.id).toBe("a");
+    expect(pickDailyConcept([concept("a")], ["a"], "2026-08-17", held)?.id).toBe("a");
   });
 
   it("retire une carte du jour disparue du corpus au lieu de laisser l'écran vide", () => {
     const held = { day: "2026-08-17", conceptId: "disparue" };
-    expect(pickDailyConcept(corpus, new Map(), "2026-08-17", held)).toBeDefined();
+    expect(pickDailyConcept(corpus, [], "2026-08-17", held)).toBeDefined();
   });
 });

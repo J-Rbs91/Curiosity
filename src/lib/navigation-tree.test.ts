@@ -26,6 +26,7 @@ describe("niveaux de l'arbre", () => {
     expect(levelOf("/explore/authors/weber")).toBe(2);
     expect(levelOf("/explore/domains/sociologie-des-organisations")).toBe(2);
     expect(levelOf("/settings")).toBe(2);
+    expect(levelOf("/passees")).toBe(2);
     // Un thème est sous un domaine, parce que la page d'un domaine liste ses thèmes : le
     // lien qu'on y suit est une descente dans le contenu. Au même niveau, il remplaçait
     // l'entrée d'historique et faisait disparaître le domaine de la trace.
@@ -196,6 +197,9 @@ describe("branche de premier niveau", () => {
     // Route de premier niveau dans l'URL, enfant d'Explorer dans l'arbre : c'est le cas
     // qui laissait la barre de navigation sans aucune entrée allumée.
     expect(rootSectionOf("/settings")).toBe("/explore");
+    // Les cartes précédentes ne s'atteignent que depuis la carte du jour : c'est cet
+    // onglet-là qui reste allumé, et non celui d'Explorer où l'on n'est pas passé.
+    expect(rootSectionOf("/passees")).toBe("/");
   });
 
   it("n'allume aucune entrée sur une route absente de l'arbre", () => {

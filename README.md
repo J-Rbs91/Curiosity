@@ -16,7 +16,8 @@ le vrai travail du projet.
 
 - Next.js 16 (App Router, export statique) · React 19 · TypeScript strict · Tailwind CSS 4
 - PWA (manifeste + service worker, installable, consultable hors-ligne)
-- Stockage 100 % local (`localStorage`) — aucun compte, aucun serveur applicatif
+- Stockage 100 % local (`localStorage`) — aucun compte, aucun serveur applicatif, et une
+  seule donnée : la suite des identifiants des cartes lues, quelques centaines d'octets
 - Vitest pour les tests unitaires
 
 ## Démarrer
@@ -73,10 +74,11 @@ aucune condition, aucun menu n'est à écrire — et un test le vérifie.
 
 ```
 src/
-├── app/           # Écrans (Aujourd'hui, Explorer, domaine, thème, auteur, concept, Réglages)
+├── app/           # Écrans (Aujourd'hui, cartes précédentes, Explorer, domaine, thème,
+│                 #         auteur, concept, Réglages)
 ├── components/    # UI : concept/ motion/ navigation/ ui/
 ├── domain/        # Logique pure : taxonomie, tirage de la carte, prompt d'approfondissement
-├── services/      # Progression (ce qui a déjà été vu)
+├── services/      # Progression (les cartes déjà vues, dans l'ordre)
 ├── repositories/  # Persistance (localStorage, remplaçable)
 ├── content/       # Taxonomie + corpus projeté + échafaudage de développement
 └── types/         # Modèle de données partagé
