@@ -1,6 +1,7 @@
 import { Suspense, type ReactNode } from "react";
 import { MainNav } from "@/components/ui/MainNav";
 import { ThemeKeeper } from "@/components/ui/ThemeKeeper";
+import { AppIconReminder } from "@/components/ui/AppIconReminder";
 import { TrailKeeper } from "@/components/navigation/TrailKeeper";
 import { EntryPoint } from "@/components/navigation/EntryPoint";
 
@@ -53,6 +54,13 @@ export function AppShell({ children }: { children: ReactNode }) {
        * que le choix a été fait.
        */}
       <ThemeKeeper />
+      {/*
+       * Et le rappel porté par l'icône, pour la même raison que le thème : ce n'est l'affaire
+       * d'aucun écran. Il doit rester juste pendant qu'on lit, pendant qu'on explore, et
+       * survivre à une navigation qui démonte les écrans — voir `AppIconReminder`, et
+       * `docs/icone-de-rappel.md` pour ce que les plateformes en acceptent.
+       */}
+      <AppIconReminder />
       <MainNav />
       <div className="app-body flex-1">{children}</div>
     </>

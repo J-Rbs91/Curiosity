@@ -77,7 +77,8 @@ src/
 ├── app/           # Écrans (Aujourd'hui, cartes précédentes, Explorer, domaine, thème,
 │                 #         auteur, concept, Réglages)
 ├── components/    # UI : concept/ motion/ navigation/ ui/
-├── domain/        # Logique pure : taxonomie, tirage de la carte, prompt d'approfondissement
+├── domain/        # Logique pure : taxonomie, tirage de la carte, prompt d'approfondissement,
+│                 #                rappel porté par l'icône
 ├── services/      # Progression (les cartes déjà vues, dans l'ordre)
 ├── repositories/  # Persistance (localStorage, remplaçable)
 ├── content/       # Taxonomie + corpus projeté + échafaudage de développement
@@ -98,6 +99,27 @@ tout le reste. Les longueurs affichables (titre 48, accroche 85, résumé 170, c
 5 sources) sont mesurées sur le rendu réel du plus petit écran encore en circulation, et le
 validateur du corpus les fait respecter — voir `CARD_LIMITS` dans
 `scripts/corpus/lib/validate.mjs`.
+
+## Le rappel porté par l'icône
+
+Tant que la carte du jour n'a pas été découverte, le fond de l'icône passe du noir au rouge par
+paliers d'une heure, de 11 h à 23 h ; ouvrir la carte le remet au noir jusqu'au lendemain. Le
+pictogramme, lui, ne change jamais.
+
+La règle tient en trois entrées — la date, l'heure locale, et un booléen — et se calcule dans un
+module pur (`src/domain/reminder/`). **Le statut est porté par l'enregistrement de la carte du
+jour**, si bien que minuit ne demande aucune réinitialisation : passé minuit, le jour enregistré
+n'est plus le jour courant. Un état se calcule et ne se rejoue pas — une application restée
+fermée onze heures affiche le palier de l'heure d'arrivée.
+
+**Ce que les plateformes en acceptent est une autre question, et elle a été vérifiée avant
+d'écrire une ligne :** aucune ne permet à une PWA de repeindre l'icône installée. Les icônes du
+manifeste sont figées à l'installation, et les mises à jour de manifeste les excluent
+explicitement. Le rappel se rend donc là où une API standard l'autorise — le favicon de l'onglet,
+qui porte la progression complète — et se double de la pastille de l'icône installée là où elle
+existe, qui est le comportement natif le plus proche. La vérification plateforme par plateforme
+— Android, iOS, PWA — et ce qu'il faudrait pour aller plus loin sont dans
+[`docs/icone-de-rappel.md`](docs/icone-de-rappel.md).
 
 ## Le corpus
 

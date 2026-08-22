@@ -1585,6 +1585,12 @@ Listé plutôt que supposé :
 - L'écran de démarrage de l'application installée, pour la même raison : un manifeste ne porte
   qu'une couleur, lue avant que la page existe. Il est noir quelle que soit la préférence, et
   le thème choisi prend la main dès que la page est analysée.
+- **L'icône de l'application installée, qui ne se repeint pas** — même limite, poussée à son
+  terme. Les icônes d'un manifeste sont figées à l'installation, et les mises à jour de
+  manifeste les excluent explicitement : le rappel du jour se rend donc dans le favicon de
+  l'onglet, et sur l'icône installée par la seule pastille que les plateformes proposent. La
+  vérification plateforme par plateforme est dans
+  [`icone-de-rappel.md`](icone-de-rappel.md).
 - **L'état désactivé d'un bouton, dans les deux thèmes.** `disabled:opacity-40` compose le
   lettrage *et* le remplissage vers la page : le rapport entre les deux tombe à 3,55:1 dans le
   sombre et 2,49 dans le clair, sous le seuil du texte des deux côtés. Le contrôle du thème

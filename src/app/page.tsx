@@ -6,6 +6,7 @@ import { getProgressService } from "@/services/progress";
 import { dayKey, pickDailyConcept } from "@/domain/concepts/next-card";
 import { pastCards } from "@/domain/concepts/past-cards";
 import { isOpeningPending, onReentry, spendOpening } from "@/lib/app-entry";
+import { markDailyCardDiscovered } from "@/lib/daily-discovery";
 import type { Concept } from "@/types";
 import { Screen } from "@/components/motion/Screen";
 import { useBlink } from "@/components/motion/Blink";
@@ -142,6 +143,26 @@ export default function TodayPage() {
       ouvrir();
     });
   }, []);
+
+  /*
+   * La découverte de la carte du jour, et le seul endroit d'où elle peut se déclarer.
+   *
+   * Les trois conditions réunies ici sont exactement ce que « la carte est ouverte » veut
+   * dire : l'écran est monté, une carte a été tirée, et le seuil n'est plus interposé. Le
+   * tirage, lui, ne suffit pas — il a lieu au montage, seuil compris, et déclarer la
+   * découverte là aurait éteint le rappel sans que personne n'ait rien lu.
+   *
+   * C'est de cette déclaration que dépend le rappel porté par l'icône : elle est la seule
+   * source de vérité du « concept du jour découvert », et tout le reste — le palier, la
+   * couleur, l'échéance — s'en déduit avec l'heure. Voir `src/lib/daily-discovery.ts`.
+   *
+   * L'appel est idempotent : il n'écrit qu'une fois par jour civil, quel que soit le nombre
+   * de fois où cet écran se remonte.
+   */
+  useEffect(() => {
+    if (!mounted || !concept || ouverture) return;
+    markDailyCardDiscovered();
+  }, [mounted, concept, ouverture]);
 
   /*
   * Le tirage a besoin du `localStorage`, qui n'existe pas au rendu serveur : cet écran
