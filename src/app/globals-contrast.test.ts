@@ -113,6 +113,13 @@ const COUPLES: Array<[Role, Role, number, string]> = [
   ["--ink-soft", "--paper-raised", 4.5, "une pastille de mot-clé"],
   ["--ink-faint", "--paper-raised", 4.5, "un onglet inactif d'Explorer, une option de thème non retenue"],
   ["--ink", "--paper-contact", 4.5, "une pastille de mot-clé au ton accent"],
+  /*
+   * Ce couple n'a pas d'usage aujourd'hui : la pastille au ton accent porte `--ink`. Il figure
+   * quand même, et c'est délibéré — c'est la surface la plus foncée du thème clair, donc celle
+   * où le texte tertiaire passerait sous son seuil en premier. Le garder ici fait que le jour
+   * où quelqu'un l'emploie, la garantie existe déjà.
+   */
+  ["--ink-faint", "--paper-contact", 4.5, "le texte tertiaire sur la surface la plus foncée"],
   ["--accent-contrast", "--accent", 4.5, "le bouton principal, « Approfondir », l'onglet actif"],
   ["--warn", "--paper", 4.5, "« Effacer l'historique des cartes déjà lues »"],
   ["--good", "--paper", 4.5, "déclaré, sans usage aujourd'hui — le seuil vaut d'avance"],

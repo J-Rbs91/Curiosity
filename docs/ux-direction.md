@@ -176,10 +176,14 @@ la construction, dans les deux thèmes.
   du noir, où les luminances sont comprimées ; le même rapport près du crème ne vaut que les
   deux tiers de l'écart de clarté perçue. Les trois surfaces sont donc calées sur leur écart de
   **clarté**, le texte et les filets sur leur rapport de **contraste**.
-- **Les couleurs de signal se resaturent.** `--good` et `--warn` sont désaturés dans le sombre
-  pour ne pas vibrer sur du noir. Sur du crème, la même désaturation les rendrait
-  indiscernables d'un texte brun. Elles remontent en saturation en descendant en clarté, à
-  ratio inchangé : `#204a2e` (7,55:1) et `#702e1a` (7,50:1), contre 7,67 et 7,53 dans le sombre.
+- **Les couleurs de signal changent de teinte, pas seulement de clarté.** Dans le sombre,
+  `--warn` se détache parce que tout le reste est **gris** : n'importe quelle teinte y est un
+  signal. Sur du crème, tout le reste est brun, et un brun-orangé de plus n'en est plus un.
+  La mesure qui décide est l'écart de teinte à l'encre, en OKLCH : reporter la teinte du sombre
+  n'en donnait que 9,8°, ce qui à cette clarté ne se lit pas comme un rouge mais comme un brun.
+  `--warn` vaut donc `#7c211a` — 18,8° d'écart, chroma 0,127 contre 0,099 — pour le **même**
+  rapport de contraste que dans le sombre, 7,53:1. `--good` `#204a2e` (7,55:1, contre 7,67) n'a
+  pas ce problème : 152,6° le séparent de l'encre.
 
 **La cinquième valeur imposée n'est pas employée, et c'est un constat mesuré.** `#9dabb3` vaut
 **1,76:1** sur le crème : sous le seuil du texte (4,5) et sous celui des éléments d'interface

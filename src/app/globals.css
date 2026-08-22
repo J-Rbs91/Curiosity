@@ -503,16 +503,28 @@
   --accent-contrast: var(--c-50);
 
   /*
-   * Les deux couleurs de signal, à ratio conservé et à saturation remontée. Le sombre les
-   * désature pour qu'elles ne vibrent pas sur du noir ; sur du crème, la même désaturation
-   * les rendrait impossibles à distinguer du texte, qui est brun. La teinte est ce qui les
-   * sépare ici — d'où 62 % de saturation contre 50, et 40 contre 25.
+   * Les deux couleurs de signal, à ratio conservé et **déplacées en teinte**.
    *
-   * La règle du §3 ne bouge pas : elles ne sont jamais employées seules. « Effacer
-   * l'historique des cartes déjà lues » est écrit, et c'est le mot qui porte l'avertissement.
+   * Le sombre les désature pour qu'elles ne vibrent pas sur du noir. Sur du crème, la
+   * désaturation n'est pas seulement inutile : elle est fatale. Dans le sombre, `--warn` se
+   * détache parce que tout le reste est **gris** — n'importe quelle teinte y est un signal.
+   * Ici, tout le reste est brun, et un brun-orangé de plus n'est plus un signal du tout.
+   *
+   * La mesure qui décide est l'écart de teinte à l'encre, en OKLCH. Reporter la teinte du
+   * sombre donnait 9,8° d'écart : à cette distance et à cette clarté, ce n'est pas un rouge,
+   * c'est un brun. `#7c211a` en tient 18,8° pour le même rapport de contraste, et sa chroma
+   * passe de 0,099 à 0,127. Il reste un rouge brique — descendre à la teinte 0 en ferait un
+   * rouge pur, qui n'appartiendrait plus à cette page.
+   *
+   * `--good` n'a pas ce problème : 152,6° le séparent de l'encre, et aucun brun ne s'en
+   * approche.
+   *
+   * La règle du §3 ne bouge pas pour autant : elles ne sont jamais employées seules.
+   * « Effacer l'historique des cartes déjà lues » est écrit, et c'est le mot qui porte
+   * l'avertissement — la teinte ne fait que le trouver.
    */
-  --good: #204a2e; /* 7,55:1 — sombre : 7,67:1 */
-  --warn: #702e1a; /* 7,50:1 — sombre : 7,53:1 */
+  --good: #204a2e; /* 7,55:1 — sombre : 7,67:1 · teinte 152,6° */
+  --warn: #7c211a; /* 7,53:1 — sombre : 7,53:1 · teinte  28,4° */
 
   color-scheme: light;
 }
