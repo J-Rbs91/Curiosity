@@ -1,0 +1,82 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "court-terme-contre-long-terme",
+  "slug": "court-terme-contre-long-terme",
+  "status": "VALIDATED",
+  "title": "Le court terme contre le long terme",
+  "themes": [
+    "comportement-dans-le-temps"
+  ],
+  "theme_labels": {
+    "comportement-dans-le-temps": "Ce qu'une structure finit par produire"
+  },
+  "authors": [
+    {
+      "name": "Jay W. Forrester",
+      "app_author_id": null
+    }
+  ],
+  "hook": "Et si ce qui améliore tout de suite était ce qui dégrade à la fin ?",
+  "summary": "Forrester : dans un système social, la réponse de court terme et celle de long terme sont le plus souvent de sens contraire, et c'est la première qui se voit.",
+  "sources": [
+    {
+      "label": "Jay W. Forrester, « Counterintuitive Behavior of Social Systems », D-4468-2, System Dynamics Group, Massachusetts Institute of Technology, 1995, 28 p. Mise à jour de l'article paru dans Technology Review en janvier 1971.",
+      "kind": "primary",
+      "url": "https://ocw.mit.edu/courses/15-988-system-dynamics-self-study-fall-1998-spring-1999/65cdf0faf132dec7ec75e91f9651b31f_behavior.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Jay W. Forrester, « Counterintuitive Behavior of Social Systems », D-4468-1, Creative Learning Exchange, 1995, 30 p. Second exemplaire de la même mise à jour, distribué avec l'autorisation portée en tête du document.",
+      "kind": "primary",
+      "url": "http://static.clexchange.org/ftp/documents/system-dynamics/SD1993-01CounterintuitiveBe.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Jay W. Forrester, « Counterintuitive Behavior of Social Systems », Simulation, vol. 16, n° 2, février 1971, p. 61-76.",
+      "kind": "primary",
+      "locator": "p. 61-76",
+      "doi_isbn": "10.1177/003754977101600202",
+      "url": "https://doi.org/10.1177/003754977101600202",
+      "consulted": "metadata-only"
+    },
+    {
+      "label": "John D. Sterman, « System Dynamics Modeling: Tools for Learning in a Complex World », California Management Review, vol. 43, n° 4, 2001, p. 8-25.",
+      "kind": "secondary-academic",
+      "locator": "p. 8-25",
+      "doi_isbn": "10.2307/41166098",
+      "url": "https://doi.org/10.2307/41166098",
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "reviewer": "chaîne Curiosity, session du 22 août 2026 (contrôle non aveugle, voir notes)",
+    "date": "2026-08-22",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "Contrôle du 22 août 2026, mené dans la même session que la rédaction : il n'a donc pas été aveugle au sens de docs/corpus-workflow.md. Le dossier de npm run corpus:brief a été produit et relu, les quatre questions ont été tranchées une à une contre les textes rouverts, et l'écart au protocole est déclaré ici plutôt que passé sous silence."
+    ]
+  },
+  "attribution_note": "Concept de Jay W. Forrester, fondateur de la dynamique des systèmes au Massachusetts Institute of Technology.",
+  "quotation": {
+    "text": "Une politique qui produit une amélioration à court terme est généralement une politique qui dégrade le système à long terme.",
+    "reference": "Jay W. Forrester, « Counterintuitive Behavior of Social Systems », D-4468-2, System Dynamics Group, Massachusetts Institute of Technology, 1995.",
+    "locator": "p. 12, section VI",
+    "language": "fr",
+    "original_text": "A policy that produces improvement in the short run is usually one that degrades a system in the long run.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (chaîne Curiosity, 22 août 2026). Aucune traduction française publiée de ce texte n'a été cherchée ni identifiée."
+    }
+  },
+  "notes": [
+    "La citation est relevée sur D-4468-2, mise à jour de mars 1995, et non sur l'article de Technology Review 73(3), janvier 1971, qui n'a pas été ouvert. Le document porte lui-même sa date de révision et son texte a bougé avec elle : il annonce « developments over the last 60 years », ce que l'article de 1971 ne pouvait pas écrire. Le verbatim retenu a été comparé chaîne par chaîne sur un second exemplaire indépendant, D-4468-1 du Creative Learning Exchange : identique.",
+    "Forrester énonce la réciproque dans la phrase suivante, et elle n'est pas sur la carte faute de place : « policies that produce long-run improvement may initially depress behavior of a system » (p. 12).",
+    "Ce que l'accroche appelle « ce qui se voit » est dans le texte : « The short run is more visible and more compelling » (p. 12). Le résumé ne va pas au-delà."
+  ]
+}

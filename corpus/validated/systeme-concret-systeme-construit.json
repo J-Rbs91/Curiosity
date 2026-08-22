@@ -1,0 +1,74 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "systeme-concret-systeme-construit",
+  "slug": "systeme-concret-systeme-construit",
+  "status": "VALIDATED",
+  "title": "Le système concret et le système construit",
+  "themes": [
+    "dire-systeme"
+  ],
+  "theme_labels": {
+    "dire-systeme": "Ce qu'on engage en disant système"
+  },
+  "authors": [
+    {
+      "name": "Charles Roig",
+      "app_author_id": null
+    }
+  ],
+  "hook": "Le système que vous étudiez : dehors, ou dans votre modèle ?",
+  "summary": "Pour Roig, l'essentiel de la démarche systémique tient dans un seul rapport : celui du système réel au système intellectuel bâti pour l'exprimer.",
+  "sources": [
+    {
+      "label": "Charles Roig, « La théorie générale des systèmes et ses perspectives de développement dans les sciences sociales », Revue française de sociologie, XI-XII, numéro spécial, 1970-1971, p. 47-97.",
+      "kind": "primary",
+      "locator": "p. 47-97",
+      "doi_isbn": "10.2307/3320513",
+      "url": "https://www.persee.fr/doc/rfsoc_0035-2969_1970_hos_11_1_1603",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Anatol Rapoport, « La théorie moderne des systèmes : un guide pour faire face aux changements », Revue française de sociologie, XI-XII, numéro spécial, 1970-1971, p. 23-46.",
+      "kind": "francophone-reception",
+      "locator": "p. 23-46",
+      "doi_isbn": "10.2307/3320512",
+      "url": "https://www.persee.fr/doc/rfsoc_0035-2969_1970_hos_11_1_1602",
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "reviewer": "chaîne Curiosity, session du 22 août 2026 (contrôle non aveugle, voir notes)",
+    "date": "2026-08-22",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "Contrôle du 22 août 2026, mené dans la même session que la rédaction : il n'a donc pas été aveugle au sens de docs/corpus-workflow.md. Le dossier de npm run corpus:brief a été produit et relu, les quatre questions ont été tranchées une à une contre les textes rouverts, et l'écart au protocole est déclaré ici plutôt que passé sous silence."
+    ]
+  },
+  "attribution_note": "Analyse de Charles Roig, présentée aux Journées d'étude sur l'analyse systémique en science politique, Paris, avril 1970.",
+  "quotation": {
+    "text": "[…] l'étude du rapport entre le système concret situé dans le monde réel et le système intellectuel construit pour l'exprimer symboliquement.",
+    "reference": "Charles Roig, « La théorie générale des systèmes et ses perspectives de développement dans les sciences sociales », Revue française de sociologie, XI-XII, numéro spécial, 1970-1971, p. 47-97.",
+    "locator": "p. 63",
+    "language": "fr",
+    "translation": {
+      "kind": "none"
+    }
+  },
+  "notes": [
+    "Le titre porté ici est celui de la page de titre imprimée, relue sur l'image en pleine résolution : « et ses perspectives de développement ». La notice HTML de Persée annonce « et les perspectives » ; Crossref, sur le DOI JSTOR, donne « ses ». La forme imprimée fait foi.",
+    "La pagination écrite ici est celle de l'en-tête imprimé de la page 47, « R. franç. Sociol., XI-XII, N° spéc., 1970-1971, 47-97 » : le numéro spécial est à cheval sur deux tomes et deux millésimes. Crossref annonce « volume 11, 1970, page 47 ».",
+    "L'élision marquée en tête remplace « Elle a aussi le mérite d'être centrée sur ce qui constitue à mon avis l'essentiel de la démarche méthodologique, à savoir : ». Le « pour Roig » du résumé rend le « à mon avis » ainsi retiré. Passage relu sur l'image de la page 63 en pleine résolution.",
+    "Le « elle » de la phrase d'origine désigne une définition que Roig emprunte à Ashby et qu'il qualifie d'opérationnelle. La carte attribue à Roig ce qu'il dit de cette définition, pas la définition elle-même.",
+    "Roig écrit dans la même page que cette voie est « la seule qui puisse servir de base à une épistémologie systémique libérée des postulats fonctionnalistes ». La carte ne porte pas cette thèse : elle demanderait d'établir ce que sont les postulats fonctionnalistes, ce qui ne tient pas en 170 caractères.",
+    "Ce que Roig écarte est nommé dans la même page : les définitions qu’il appelle fonctionnalistes, fondées « sur des propriétés définies a priori ce qui lui confère un caractère tautologique » (p. 62). Il leur oppose l’étude des relations entre composants « en termes de propriétés des systèmes, lesquelles ne prennent tout leur sens que par rapport à une des lois de composition interne de ces systèmes, à savoir la loi (ou principe) de totalité définie par une déduction formelle » (p. 62).",
+    "La définition d’environnement que Roig cite est celle de Hall et Fagen : « pour un système donné, l’environnement est l’ensemble des objets dont un changement affecte ce système et qui sont eux-mêmes affectés par les variations dans le comportement de celui-ci » (p. 62). Celle d’Ashby qu’il commente ensuite : « Le système n’est plus alors une chose mais une liste de variables. Cette liste n’est pas fixe, et la tâche de l’expérimentateur est de la modifier […] jusqu’à ce qu’il trouve un groupe qui présente la particularité recherchée » (p. 63).",
+    "Roig renvoie en note de la page 62 à son propre rapport « Théorie du système administratif, cadre théorique et conceptuel », Grenoble, Institut d’étude politique, 1970, où le principe de totalité est développé. Ce rapport n’est pas une source de cette fiche.",
+    "Page 49 : « La formalisation mathématique n’est pas toujours réalisable, mais elle n’est pas une condition nécessaire à l’analyse de systèmes. » Passage relu sur l’image de la page.",
+    "Pages relues sur l’image en pleine résolution pour ce lot : 47, 49, 63, 64 et 90. Les autres pages n’ont été lues que par la couche texte de Persée."
+  ]
+}

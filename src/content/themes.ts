@@ -338,4 +338,39 @@ export const themes: Theme[] = [
       "Commander n'est pas toujours occuper une place dans une hiérarchie : dans certains systèmes, la main revient à l'endroit où l'information s'est accumulée. Ce thème porte sur la façon dont la commande se répartit, et sur ce qui fait qu'un ensemble est gouverné par des informations plutôt que par des ordres.",
     domain: "cybernetics",
   },
+
+  // --- Systems Thinking -----------------------------------------------------
+  {
+    id: "comportement-dans-le-temps",
+    slug: "comportement-dans-le-temps",
+    title: "Ce qu'une structure finit par produire",
+    tagline:
+      "Le résultat d'un système n'est pas la somme des intentions.",
+    keywords: ["Contre-intuition", "Court terme", "Cause éloignée"],
+    description:
+      "Un jeu de boucles, de stocks et de délais produit dans la durée des comportements que personne n'a voulus et que l'intuition lit à l'envers. Ce thème porte sur la distance entre la cause et le symptôme, sur ce que le temps fait à une politique, et sur ce qui arrive quand on cherche la cause du trouble au dehors.",
+    domain: "systems-thinking",
+  },
+  {
+    id: "ou-intervenir-dans-un-systeme",
+    slug: "ou-intervenir",
+    title: "Là où l'on peut vraiment peser",
+    tagline:
+      "Tous les endroits où l'on peut pousser ne se valent pas.",
+    keywords: ["Point de levier", "Paramètre", "Paradigme"],
+    description:
+      "Agir sur un système, c'est choisir un endroit où appuyer, et ces endroits n'ont ni la même portée ni la même difficulté. Ce thème porte sur leur classement, du réglage d'un nombre à l'idée partagée d'où le système tire ses buts, et sur la raison pour laquelle on les actionne d'ordinaire dans le mauvais sens.",
+    domain: "systems-thinking",
+  },
+  {
+    id: "dire-systeme",
+    slug: "dire-systeme",
+    title: "Ce qu'on engage en disant système",
+    tagline:
+      "Le système n'est pas toujours dehors : il est parfois dans le modèle.",
+    keywords: ["Analogie", "Modèle", "Découpage"],
+    description:
+      "Appeler quelque chose un système n'est pas un constat mais un découpage, et une notion empruntée à une autre discipline n'emporte pas avec elle ce qui la fondait. Ce thème porte sur le rapport entre le système réel et celui qu'on construit pour l'exprimer, et sur ce que coûte l'emprunt fait par analogie.",
+    domain: "systems-thinking",
+  },
 ];

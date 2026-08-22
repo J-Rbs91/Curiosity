@@ -342,6 +342,63 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "comportement-contre-intuitif",
+    "lead": [
+      "Une ville manque de logements abordables, alors elle en construit. Dix ans plus tard, elle en manque davantage, et elle est plus pauvre qu’avant. Un service croule sous les appels, alors on renforce l’équipe qui les traite. Un an plus tard, le nombre d’appels a monté. Chaque décision était raisonnable, prise par des gens compétents qui voyaient correctement le problème devant eux. Et chacune a produit le contraire de ce qu’elle visait.",
+      "Jay W. Forrester, ingénieur devenu au Massachusetts Institute of Technology le fondateur de la dynamique des systèmes, a passé sa carrière sur cette énigme. Sa réponse n’est pas que les décideurs se trompent par négligence ou par intérêt. Elle est plus dérangeante : dans un ensemble où tout se boucle sur tout, notre manière ordinaire de repérer une cause devient un guide qui nous égare, et il nous égare de façon régulière, prévisible, presque mécanique."
+    ],
+    "sections": [
+      {
+        "title": "Là où l’intuition a appris à chercher",
+        "paragraphs": [
+          "Notre façon de remonter d’un effet à sa cause s’est formée sur des situations simples, où les deux sont voisins. On touche une plaque brûlante, la douleur vient tout de suite et vient de là. On lâche un verre, il tombe. Dans ce monde-là, la règle qui consiste à chercher juste avant et juste à côté fonctionne remarquablement bien, et elle a été apprise si tôt qu’elle ne se présente plus comme une règle : elle se présente comme l’évidence.",
+          "Forrester observe que cette règle cesse d’être valable dès qu’on a affaire à un ensemble dont les parties s’influencent en retour. Sa formulation est directe : dans ces ensembles, écrit-il, « in complex dynamic systems, causes are often far removed in both time and space from the symptoms ». La vraie cause peut se trouver des années plus tôt, et dans une partie du système sans rapport apparent avec l’endroit où le symptôme se manifeste.",
+          "Le problème n’est pas seulement que la cause soit loin. Il est qu’il y a presque toujours, tout près du symptôme, quelque chose qui a l’air d’être la cause. Ce quelque chose est en réalité un autre effet, produit par les mêmes boucles, et qui arrive à peu près en même temps. L’intuition l’attrape, s’y arrête, et se déclare satisfaite.",
+          "Il vaut la peine de nommer ce qui rend un ensemble « complexe » au sens où Forrester l’entend, parce que le mot sert à tout. Il ne s’agit ni du nombre de pièces ni de la difficulté du sujet. Il s’agit de la présence de boucles : ce que produit une partie revient modifier ce qui la produit, parfois après un long détour. Un moteur d’avion est compliqué et n’est pas bouclé de cette façon ; un quartier, un budget public ou une équipe le sont, et le sont même quand ils paraissent modestes."
+        ]
+      },
+      {
+        "title": "Le système désigne lui-même la mauvaise porte",
+        "paragraphs": [
+          "C’est ici que l’analyse devient tranchante. Forrester ne dit pas seulement que les points d’intervention efficaces sont difficiles à trouver. Il dit que le système attire activement l’attention ailleurs, et que cet ailleurs est précisément l’endroit où agir ne donnera rien : « En réalité, les systèmes sociaux attirent l’attention sur les points mêmes où toute tentative d’intervention échouera ».",
+          "Ce n’est pas une malveillance du système, c’est une conséquence de sa structure. Le symptôme le plus douloureux est aussi le plus visible, il occupe le débat, il commande l’urgence. Or c’est un symptôme, pas un levier. L’effort s’y concentre parce que la souffrance s’y concentre, et l’effort y est absorbé sans effet durable.",
+          "On peut le formuler autrement. Un système bouclé produit deux sortes de choses en même temps : des états douloureux, et des explications toutes faites de ces états. Les secondes sont fabriquées par la même machinerie que les premiers, et elles ont l’avantage d’être disponibles immédiatement, sans enquête. C’est pourquoi elles gagnent presque toujours contre une explication qui demanderait de remonter dix ans en arrière et de traverser trois services.",
+          "Une conséquence pratique en découle immédiatement : le fait qu’une mesure soit consensuelle, qu’elle réponde à une évidence partagée, qu’elle porte sur ce dont tout le monde parle, n’est pas un indice qu’elle est bonne. Cela peut être l’indice inverse."
+        ]
+      },
+      {
+        "title": "Pourquoi l’effort redouble quand il échoue",
+        "paragraphs": [
+          "Le mécanisme se referme par un dernier tour, et c’est lui qui rend la situation durable plutôt que passagère. Une politique appliquée sur un faux levier ne produit pas rien : elle produit souvent une aggravation, différée et donc difficile à lui imputer. On constate que le problème empire. On en conclut qu’on n’en a pas fait assez. On en fait davantage.",
+          "Imaginons un service d’assistance dont les délais s’allongent. On y ajoute des agents. Les délais baissent, les usagers apprennent que l’assistance répond vite, ils appellent pour des questions qu’ils auraient résolues seuls, la charge remonte, et les délais avec elle. Six mois plus tard, la conclusion qui s’impose au comité de direction est qu’il faut encore recruter. Cet exemple est fabriqué pour montrer la forme du raccourci, non tiré d’une enquête.",
+          "Il n’y a dans cette spirale ni faute morale ni incompétence. Les gens font ce que l’observation leur commande de faire. Le défaut est dans le rapport entre une structure de boucles et une manière d’observer qui n’a pas été faite pour elle."
+        ]
+      },
+      {
+        "title": "Ce que ce renversement ne dit pas",
+        "paragraphs": [
+          "Le concept se prête à deux contresens, et ils sont symétriques. Le premier consiste à en tirer que l’intuition est nulle et qu’il faut cesser de s’y fier. Forrester dit autre chose : les gens perçoivent très correctement leur environnement immédiat, ils savent ce qu’ils cherchent à obtenir, ils énoncent leurs raisons sans se mentir. C’est le passage de ces perceptions justes à une conclusion sur l’ensemble qui échoue.",
+          "Le second contresens consiste à faire de ce renversement une règle : puisque l’intuition se trompe, il suffirait de faire l’inverse de ce qu’elle suggère. Cela ne fonctionne pas davantage. Rien ne garantit que le contraire d’un mauvais levier soit un bon levier ; il faut établir, ensemble par ensemble, comment il est bouclé. C’est précisément ce que la modélisation sert à faire, et c’est un travail, pas un réflexe.",
+          "Un troisième malentendu guette, plus discret : croire que la contre-intuition serait une propriété des grands systèmes seulement, États, économies, planète. Rien dans le raisonnement ne dépend de la taille. Ce qui la produit est la présence de boucles et de délais, et une équipe de dix personnes en contient assez pour que le mécanisme joue."
+        ]
+      },
+      {
+        "title": "Ce que le concept change pour qui décide",
+        "paragraphs": [
+          "La première conséquence est un doute méthodique, appliqué non pas aux solutions mais à la façon dont le problème a été posé. Avant de demander quelle mesure prendre, il devient utile de demander qui a désigné ce point-là comme le point à traiter, et sur quelle observation. Si la seule réponse est que c’est là que la douleur se voit, le travail n’a pas commencé.",
+          "La seconde est un rapport différent au temps. Une politique dont on n’observe l’effet que sur quelques mois est évaluée exactement dans la fenêtre où le système répond le moins fidèlement. Chercher l’écart entre ce qu’une mesure produit tout de suite et ce qu’elle produit à terme est le prolongement direct de cette analyse.",
+          "La troisième est une exigence de représentation. Tant que les politiques suivies restent dans la tête de ceux qui les appliquent, personne ne peut voir ce qu’elles font ensemble. Les mettre à plat, les relier, et regarder ce que le tout engendre est le geste que Forrester propose contre une intuition qui, seule, ne peut pas y arriver."
+        ]
+      }
+    ],
+    "limits": [
+      "Le texte de Forrester qui porte cette analyse est une mise à jour de 1995 d’une communication de 1971. Ce que la version de janvier 1971, parue dans Technology Review, disait dans ses propres termes, et ce qui a bougé entre les deux, se lira dans cette version-là.",
+      "Les modèles qui ont conduit Forrester à ces conclusions, en particulier son modèle urbain et son modèle mondial, ne sont pas exposés ici. Ce sont eux qui portent la démonstration chiffrée, avec leurs équations et leurs hypothèses, et ce sont eux qu’il faudra ouvrir pour juger de sa solidité plutôt que de sa vraisemblance.",
+      "L’ampleur du phénomène reste ouverte. Rien de ce qui est disponible ici ne permet de dire dans quelle proportion des décisions publiques ou privées se trompent ainsi de levier : le texte établit un mécanisme et le montre à l’œuvre, il ne le mesure pas.",
+      "Enfin, ce que la psychologie a établi depuis sur notre façon de raisonner en présence de boucles et de retards se trouve dans une littérature expérimentale que Forrester ne pouvait pas connaître en 1971. Les travaux de John D. Sterman sur l’apprentissage dans les systèmes complexes en sont l’entrée la plus directe, et ce sont leurs protocoles qu’il faudra lire pour savoir jusqu’où le constat tient à l’épreuve."
+    ]
+  },
+  {
     "conceptId": "conception-ecologique-interface",
     "lead": [
       "Quelqu’un qui refait chaque jour le même trajet ne délibère pas : ses mains suivent la route, et il ne saurait pas dire ce qu’il a fait des dix dernières minutes. Qu’un voyant connu s’allume, et le voilà qui reconnaît le signal et applique la conduite apprise pour ce cas-là. Qu’il entende en revanche un bruit inconnu, et il n’a plus de conduite apprise : il lui faut se faire une idée de ce qui se passe sous le capot, puis raisonner à partir de là. Trois façons d’agir dans la même journée, sur la même machine.",
@@ -621,6 +678,64 @@ export const generatedDeepenings: Deepening[] = [
       "L’expression est plus ancienne que ces deux textes, qui l’emploient comme reçue. La bibliographie du rapport renvoie à des travaux antérieurs dont le titre la porte déjà, en particulier un texte de W. R. Ferrell paru en 1973 dans Remotely Manned Systems. Ce sont les racines de la notion, et c’est là qu’il faudra chercher qui l’a employée le premier.",
       "La version de l’échelle qui circule aujourd’hui n’est pas celle de 1978 : elle vient des reprises ultérieures, par Sheridan lui-même dans Telerobotics, Automation and Human Supervisory Control (MIT Press, 1992), puis par Parasuraman, Sheridan et Wickens en 2000. Ce sont ces pages qui portent la formulation devenue canonique, et qui diront ce qui s’est déplacé en chemin.",
       "La section 5 de la communication décrit un système nommé SUPERMAN, tiré de la thèse alors en cours de T. L. Brooks, publiée en 1979 dans la série MIT Sea Grant : c’est la machine sur laquelle ces idées ont été essayées, et le détail de ce qu’elle faisait tient dans ces 280 pages. Le prénom du troisième signataire, Thurston, vient de notices de catalogue et non d’une page signée. Et aucune traduction française publiée de l’un ou l’autre texte ne circule : chaque terme se vérifie sur l’anglais."
+    ]
+  },
+  {
+    "conceptId": "court-terme-contre-long-terme",
+    "lead": [
+      "Un service tient ses délais en repoussant la maintenance. Les délais tiennent, et pendant un an tout le monde constate que la décision était bonne. La deuxième année, les pannes commencent, et il faut à la fois réparer et tenir les délais. La troisième, plus rien ne tient. Personne, à aucun moment, n’a pris de décision absurde : chaque arbitrage a été fait au vu de ce qui était mesurable au moment où il fallait trancher.",
+      "Jay W. Forrester range ce scénario parmi les comportements les plus dangereux des systèmes sociaux, et il en donne une raison qui n’est pas morale. Dans un ensemble où les effets circulent en boucle avec des retards, la réponse qu’une décision produit tout de suite et celle qu’elle produit au bout de plusieurs années ne vont pas dans le même sens. Ce n’est pas un risque parmi d’autres : c’est, dit-il, le cas ordinaire."
+    ],
+    "sections": [
+      {
+        "title": "Deux réponses de sens contraire",
+        "paragraphs": [
+          "La formulation de Forrester est sans détour : « Une politique qui produit une amélioration à court terme est généralement une politique qui dégrade le système à long terme ». Le mot qui compte est « généralement ». Il ne s’agit pas d’un accident réservé aux mauvaises décisions, mais de la forme habituelle que prend la réponse d’un ensemble bouclé.",
+          "La proposition symétrique est vraie aussi, et elle est plus dure à vivre : « policies that produce long-run improvement may initially depress behavior of a system ». Une décision saine commence donc souvent par faire empirer les choses, ce qui la rend indéfendable exactement au moment où il faudrait la défendre.",
+          "Mises ensemble, ces deux propositions dessinent un piège complet. Ce qui soulage se paie, ce qui répare coûte d’abord, et les deux se ressemblent au moment où l’on observe. Rien dans les premiers mois ne distingue une mesure qui abîme d’une mesure qui guérit."
+        ]
+      },
+      {
+        "title": "Pourquoi le court terme parle plus fort",
+        "paragraphs": [
+          "Si les deux horizons se contredisent, encore faut-il expliquer pourquoi c’est presque toujours le premier qui l’emporte. Forrester le note en une phrase : « The short run is more visible and more compelling ». Le court terme n’est pas seulement plus proche, il est plus bruyant. Il se présente sous forme de plaintes, d’alertes, de chiffres du mois, de réunions convoquées en urgence.",
+          "Le long terme, lui, n’a pas de porte-parole. Il ne produit aucun signal au moment où l’on décide, et quand il en produit un, il est trop tard pour que quiconque relie ce signal à la décision qui l’a causé. L’asymétrie n’est pas une faiblesse de caractère des décideurs : elle est inscrite dans la façon dont l’information leur parvient.",
+          "S’ajoute une asymétrie de responsabilité qui n’est pas dans le texte mais qui en découle sans effort : celui qui prend la mesure de soulagement en récolte le bénéfice, celui qui en paiera la facture est souvent quelqu’un d’autre, quelques années plus tard. Rien dans la structure ne rappelle le premier au second.",
+          "Il y a là une conséquence que le raisonnement impose : plus une organisation raccourcit le cycle par lequel elle juge ses décisions, plus elle se rend aveugle au versant qui compte. Un pilotage mensuel n’observe pas mieux qu’un pilotage annuel, il observe seulement plus souvent la partie de la réponse qui trompe."
+        ]
+      },
+      {
+        "title": "L’accumulation, et le moment où plus rien ne suffit",
+        "paragraphs": [
+          "Le mécanisme ne serait qu’ennuyeux s’il se répétait à l’identique. Ce qui le rend redoutable est qu’il s’empile. Chaque décision de soulagement laisse derrière elle une dégradation qui ne se voit pas encore, et la suivante s’ajoute à la précédente au lieu de la remplacer.",
+          "Le mot qui manque à l’intuition ordinaire pour saisir cela est celui de stock. Une décision de soulagement ne modifie pas seulement un flux, ce qui entre et ce qui sort au moment où l’on regarde : elle modifie lentement une réserve, l’état d’un réseau, la confiance d’une équipe, l’usure d’un équipement. Un stock ne se voit pas d’un mois sur l’autre, il se voit quand il est vide.",
+          "Forrester en tire une conséquence qui vaut d’être prise au sérieux : une suite de mesures toutes destinées à améliorer l’immédiat peut charger un système d’une telle dette que les mesures d’urgence, un jour, ne suffisent plus. Ce n’est pas un effondrement soudain, c’est le moment où la manœuvre habituelle cesse d’avoir prise.",
+          "Il en tire aussi une lecture du présent qui prolonge directement le mécanisme : beaucoup des difficultés qu’une organisation ou un pays affronte aujourd’hui ne sont pas des problèmes nouveaux. Ce sont les intérêts cumulés d’arbitrages de court terme pris des décennies plus tôt, par des gens qui avaient de bonnes raisons."
+        ]
+      },
+      {
+        "title": "Ce que le concept n’autorise pas à conclure",
+        "paragraphs": [
+          "Une lecture pressée en fait une règle d’inversion : puisque ce qui soulage abîme, il suffirait de choisir ce qui fait mal. C’est un contresens. Rien n’assure qu’une mesure douloureuse soit une mesure qui répare ; la douleur immédiate n’est pas davantage un indicateur de qualité que le soulagement immédiat.",
+          "Une autre lecture, plus subtile, transforme l’analyse en dispense d’évaluation : si les effets ne se voient qu’à long terme, autant ne pas mesurer. C’est l’inverse de ce que propose Forrester, dont tout le travail consiste à construire des représentations qui donnent à voir le comportement d’un ensemble sur la durée, précisément parce que l’observation directe n’y arrive pas.",
+          "Enfin, l’opposition entre les deux horizons ne dit rien de la durée exacte que recouvre chacun d’eux. Elle dépend du système : dans une équipe, le retournement peut se jouer sur quelques mois ; dans une ville, sur une génération. Ce qui est général, c’est la contradiction, pas son échéance."
+        ]
+      },
+      {
+        "title": "Ce que cela change pour qui arbitre",
+        "paragraphs": [
+          "La première conséquence pratique est une question à poser avant toute décision qui soulage : par quel mécanisme ce soulagement se paie-t-il, et où ? Si personne ne sait répondre, cela ne signifie pas que la réponse est « nulle part ». Cela signifie que le prix est simplement invisible depuis l’endroit où l’on se tient.",
+          "La seconde touche à la façon dont on juge une décision passée. Évaluer une mesure sur la fenêtre où le système répond à l’envers revient à valider systématiquement les mauvaises et à condamner les bonnes. Une évaluation utile suppose de savoir sur quel horizon le retournement se produit, ce qui demande de connaître les boucles et les retards en jeu.",
+          "La troisième est un usage défensif du concept. Devant une mesure présentée comme évidemment bénéfique et dont les effets se constatent déjà, l’analyse de Forrester ne conseille pas de refuser : elle conseille de chercher le versant retardé, et de le chercher ailleurs que là où le bénéfice se manifeste.",
+          "Reste une quatrième conséquence, moins confortable. Si le versant long d’une décision n’émet aucun signal au moment où elle se prend, alors aucune vigilance individuelle ne le rattrapera. Ce qui peut le rattraper est une représentation partagée du système, construite à froid, que l’on interroge avant de trancher plutôt qu’après avoir constaté les dégâts. C’est le geste que Forrester oppose à l’arbitrage au jugé, et il demande du travail plutôt que de la prudence."
+        ]
+      }
+    ],
+    "limits": [
+      "Ces phrases sont relevées dans un texte de 1995, mise à jour d’une communication de 1971. Ce que l’article paru dans Technology Review en janvier 1971 formulait exactement, et ce qui a changé dans l’intervalle, se lira dans cette version-là.",
+      "La démonstration proprement dite n’est pas dans ces quelques phrases : elle est dans les modèles urbains et mondiaux que Forrester a construits, avec leurs équations, leurs constantes et les hypothèses qui les portent. Ce sont ces ouvrages qui donnent au retournement une forme précise et une échéance chiffrée, et ce sont eux qu’il faudra ouvrir pour discuter l’une ou l’autre.",
+      "Rien ici ne permet de dire à partir de quel délai un système donné retourne sa réponse, ni comment le reconnaître à l’avance. La question est au centre des travaux sur les délais dans les boucles, et c’est cette littérature-là qui la traite.",
+      "Les travaux expérimentaux menés depuis sur la façon dont des personnes gèrent des systèmes à retard, en particulier ceux de John D. Sterman, portent sur ce point précis. Leurs résultats attendent leur lecteur."
     ]
   },
   {
@@ -1593,6 +1708,64 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "le-trouble-vient-des-politiques",
+    "lead": [
+      "Une entreprise perd des parts de marché depuis trois ans. Tout le monde en connaît la cause : la concurrence est plus agressive, le marché a changé, les clients sont devenus infidèles. Ces explications sont sincères, elles circulent dans la presse professionnelle, et elles ont un point commun : elles désignent toutes quelque chose qui se passe dehors.",
+      "Jay W. Forrester a passé des années à entrer dans des entreprises en difficulté pour y écouter ces explications, puis à faire un travail que personne ne faisait : il recueillait les règles de conduite que chacun appliquait réellement, les mettait ensemble dans un modèle, et regardait ce que ces règles produisaient quand elles tournaient les unes sur les autres. Le résultat l’a surpris assez souvent pour qu’il en fasse une thèse générale."
+    ],
+    "sections": [
+      {
+        "title": "Ce que Forrester trouvait en entrant dans l’entreprise",
+        "paragraphs": [
+          "Sa première observation n’est pas critique, elle est presque rassurante. Les gens perçoivent correctement ce qui les entoure, savent ce qu’ils cherchent à obtenir, connaissent les crises qui vont forcer telle ou telle décision, et savent expliquer leurs choix. Il insiste sur leur bonne foi : « people are usually trying in good conscience and to the best of their abilities to help solve the major difficulties ».",
+          "La difficulté n’est donc pas dans la qualité des jugements locaux. Chacun, à sa place, décide raisonnablement au vu de ce qu’il voit. Le problème apparaît quand ces décisions raisonnables se rencontrent, et personne n’occupe la place d’où cette rencontre serait visible.",
+          "C’est précisément cette place que le modèle occupe. Il n’ajoute aucune connaissance : il prend les règles telles que les gens les ont énoncées, et il les fait tourner ensemble sur plusieurs années, ce qu’aucune tête ne sait faire.",
+          "Il vaut la peine de préciser ce que « règle » veut dire ici, parce que le mot évoque un règlement. Il s’agit plutôt d’une manière constante de réagir à une information : commander quand le stock descend sous tel niveau, embaucher quand le carnet dépasse tel volume, baisser un prix quand un concurrent bouge. Prise isolément, chacune est défendable et se justifie par une expérience réelle. C’est leur composition qui n’est pas pensée."
+        ]
+      },
+      {
+        "title": "Le résultat, et pourquoi il dérange",
+        "paragraphs": [
+          "La conclusion à laquelle ce travail aboutit souvent tient en une phrase : « Autrement dit, les pratiques connues et voulues de l’organisation suffisent à créer les difficultés qu’elle éprouve ». Aucun facteur extérieur n’est requis pour expliquer le trouble. Les règles déclarées, connues de tous, voulues par tous, y suffisent.",
+          "Le mot important est « suffisent ». Forrester ne dit pas que l’extérieur n’existe pas ni qu’il ne pèse jamais. Il dit qu’on n’a pas besoin de lui pour engendrer ce qu’on observe, et que l’invoquer dispense de regarder ce qui, à l’intérieur, produit déjà le résultat.",
+          "Il ajoute un constat sur la manière dont les explications se distribuent : « Usually, problems are blamed on outside forces, but a dynamic analysis often shows how internal policies are causing the troubles ». Le réflexe d’attribution vers l’extérieur est donc lui aussi régulier, et il n’est pas un signe de mauvaise foi : c’est ce que l’observation depuis n’importe quel poste suggère."
+        ]
+      },
+      {
+        "title": "La spirale, quand le remède nourrit le mal",
+        "paragraphs": [
+          "Le mécanisme comporte un dernier étage, et c’est lui qui le rend durable. Si les politiques suivies produisent le trouble, alors les remèdes tirés de ces mêmes politiques l’aggravent. Le trouble augmente, l’inquiétude aussi, et l’inquiétude pousse à appliquer plus vigoureusement ce qui était déjà appliqué.",
+          "Forrester décrit cette descente comme une spirale où les solutions supposées empirent la situation et fournissent par là même une raison de redoubler les actions qui causent le mal. La boucle se referme sur elle-même, et de l’intérieur elle ressemble à de la détermination.",
+          "Il note que le même enchaînement se produit dans l’action publique : un débat aboutit à un programme qui paraît solide, l’engagement grandit autour de la solution retenue, et si cette solution dégrade les choses, le processus par lequel la dégradation arrive n’est pas apparent. Alors on intensifie.",
+          "Imaginons une équipe qui répond mal aux demandes urgentes et décide d’y consacrer ses meilleurs éléments. Les urgences sont mieux traitées, donc plus de demandes arrivent par ce canal, donc les tâches de fond reculent, donc les incidents se multiplient, donc les urgences augmentent. Au bout d’un an, la conclusion évidente est qu’il faut affecter davantage de monde aux urgences. Cet enchaînement est construit pour montrer la forme de la spirale, non tiré d’une observation."
+        ]
+      },
+      {
+        "title": "Ce que le concept ne dit pas",
+        "paragraphs": [
+          "Il ne dit pas que l’environnement est sans effet. Un marché peut réellement se retourner, un financement disparaître, une technologie rendre un métier obsolète. La thèse porte sur ce qu’il faut pour expliquer un trouble donné, pas sur la clôture du monde.",
+          "Il ne dit pas non plus que quelqu’un est fautif. C’est même l’inverse : la démonstration a de la valeur parce qu’elle tient sans supposer d’incompétence ni d’intention mauvaise. Une organisation peuplée de gens excellents, tous cohérents avec ce qu’on leur demande, produit le résultat quand même.",
+          "Il ne dit pas enfin qu’il suffit de vouloir changer les règles. Une règle de conduite est rarement un texte : c’est souvent une habitude d’arbitrage, un seuil implicite, une priorité que personne n’a écrite. Les recueillir est déjà l’essentiel du travail, et c’est ce que Forrester faisait par entretiens avant de modéliser quoi que ce soit."
+        ]
+      },
+      {
+        "title": "Ce que cela change quand on cherche une cause",
+        "paragraphs": [
+          "La première conséquence est un ordre d’enquête inversé. Devant un dysfonctionnement persistant, l’analyse invite à commencer par l’intérieur : quelles règles applique-t-on, avec quels seuils, quelles priorités, quels délais de réaction ? L’extérieur vient après, et seulement si l’intérieur ne suffit pas.",
+          "La deuxième porte sur un signal qu’il devient utile de reconnaître. Quand l’intensification d’une mesure ne produit aucune amélioration durable mais que chacun conclut qu’il en faut davantage, la configuration décrite ici est plausible. Ce n’est pas une preuve, c’est une raison d’aller regarder les boucles plutôt que d’augmenter la dose.",
+          "La troisième est plus rude à admettre. Si les règles déclarées suffisent à produire le trouble, alors l’organisation qui souffre détient déjà tout ce qu’il faut pour comprendre : les informations manquantes sont chez elle, éparpillées entre des gens qui les énoncent volontiers. Ce qui manque n’est pas un diagnostic extérieur, c’est un endroit où les mettre ensemble.",
+          "Une quatrième conséquence, enfin, concerne la façon de faire parler l’organisation. Puisque les règles sont connues de ceux qui les appliquent et méconnues de ceux qui décident, l’entretien avec les gens en place n’est pas une formalité de diagnostic : c’est la source. Ce que Forrester recueillait n’était pas l’avis des personnes sur la cause du problème, mais la description de ce qu’elles faisaient et à quel signal elles réagissaient. Les deux ne se recouvrent pas."
+        ]
+      }
+    ],
+    "limits": [
+      "Ces phrases sont relevées dans un texte de 1995, mise à jour d’une communication de 1971. La formulation de l’article paru dans Technology Review en janvier 1971 se lira dans cette version-là.",
+      "Ce texte rapporte le résultat d’un travail sans en montrer la mécanique. Comment on recueille des règles de conduite, comment on les écrit en équations, comment on vérifie qu’un modèle reproduit bien le comportement observé : c’est l’objet des ouvrages de méthode de la dynamique des systèmes, à commencer par ceux de Forrester lui-même, et ce sont eux qui donnent à cette thèse ses moyens de preuve.",
+      "La portée du constat n’est pas quantifiée. Forrester dit que le résultat apparaît souvent, ce qui indique une fréquence sans la mesurer. Savoir dans quelle proportion de cas les politiques internes suffisent réellement à expliquer un trouble demanderait une enquête que ce passage ne contient pas, et c’est la littérature empirique de la dynamique des systèmes qui la porte.",
+      "Ce que la recherche a établi depuis sur la façon dont des personnes comprennent, ou ne comprennent pas, un ensemble de règles bouclées se trouve dans les travaux expérimentaux de John D. Sterman. Leurs protocoles et leurs résultats attendent leur lecteur."
+    ]
+  },
+  {
     "conceptId": "loi-de-campbell",
     "lead": [
       "Imaginons un centre d’appel dont la performance se résume à un seul chiffre : la durée moyenne d’un appel. Dès que ce chiffre commande les primes des employés, il ne faut pas longtemps pour apprendre à le faire baisser sans améliorer le service rendu : on raccroche plus vite, on transfère l’appelant, on met fin à l’appel avant d’avoir réglé le problème. Le chiffre progresse. Ce qu’il devait mesurer, la qualité réellement rendue, ne progresse pas forcément, et peut même se dégrader.",
@@ -2221,6 +2394,66 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "paradigme-source-du-systeme",
+    "lead": [
+      "Prenez la fiscalité d’un pays. On peut réécrire entièrement le code des impôts, ajouter des tranches, supprimer des niches, durcir les contrôles. Au bout de quelques années, la part réellement prélevée revient s’aligner sur ce que la société considère comme une répartition juste de la charge. Les exemptions, les montages, les contestations et les tolérances font ce travail sans que personne ne l’ait organisé.",
+      "Donella H. Meadows rapporte cet exemple de Jay W. Forrester, et il lui sert à désigner l’endroit le plus profond où l’on puisse intervenir dans un ensemble : non pas ses règles, non pas ses buts affichés, mais l’idée partagée dont ses buts sortent. Cette idée n’est écrite nulle part, précisément parce que tout le monde la tient déjà pour acquise."
+    ],
+    "sections": [
+      {
+        "title": "Ce qu’un paradigme désigne ici",
+        "paragraphs": [
+          "Le mot vient de l’histoire des sciences et il a beaucoup circulé. Meadows lui donne un sens précis : l’ensemble des hypothèses si profondément partagées qu’il n’est pas nécessaire de les énoncer, parce que chacun les connaît déjà. C’est le fonds d’évidences d’une société sur la façon dont le monde fonctionne.",
+          "Elle en donne des exemples pris chez nous plutôt qu’ailleurs, ce qui rend l’exercice inconfortable : que l’argent mesure quelque chose de réel, que la croissance soit un bien, que la nature soit un stock de ressources à convertir, qu’on puisse posséder une terre. Aucune de ces propositions n’a besoin d’être défendue dans une conversation ordinaire, et toutes ont paru absurdes à d’autres cultures.",
+          "La différence avec un but est importante. Un but se déclare, se négocie, s’inscrit dans un texte. Un paradigme ne se déclare pas : il est ce à partir de quoi un but paraît raisonnable.",
+          "Une conséquence suit de cette définition, et elle explique pourquoi le mot est si difficile à manier : on ne voit jamais son propre paradigme, on ne voit que celui des autres. Ce qui apparaît comme une croyance chez un voisin apparaît chez soi comme un simple constat sur la réalité. C’est ce qui rend l’exercice possible sur les Égyptiens et pénible sur nous."
+        ]
+      },
+      {
+        "title": "Pourquoi il commande tout le reste",
+        "paragraphs": [
+          "La proposition centrale tient en une phrase : « Les paradigmes sont les sources des systèmes. D’eux, de ces accords sociaux partagés sur la nature du réel, viennent les buts du système […] ». Meadows poursuit en nommant ce qui en découle avec les buts : les flux d’information, les boucles, les réserves, et tout le reste.",
+          "L’ordre est donc celui-ci. Une idée partagée engendre des buts ; des buts engendrent des règles et des circuits d’information ; des règles engendrent des comportements. Agir sur les comportements, c’est agir tout au bout de la chaîne, là où l’inertie est maximale.",
+          "C’est ce qui explique le sort du code des impôts. Les règles sont un niveau inférieur au but, et le but lui-même est inférieur à l’idée de ce qui est juste. Réécrire les règles en laissant intacte l’idée revient à faire varier ce qui compte le moins.",
+          "Le raisonnement mérite d’être tenu jusqu’au bout, parce qu’il déplace la notion de cause. Dans cette lecture, une institution n’est pas un objet qui existerait d’abord et auquel on donnerait ensuite une justification : c’est une idée qui s’est donné des murs, des budgets, des postes et des procédures. Ce qu’on prend pour la solidité du réel est la trace matérielle d’une pensée partagée."
+        ]
+      },
+      {
+        "title": "Le plus puissant, et le plus défendu",
+        "paragraphs": [
+          "Meadows range le paradigme au deuxième rang de son échelle des points d’intervention, juste sous la capacité à ne s’attacher à aucun paradigme. Elle observe que les personnes ayant réussi à intervenir à ce niveau, en montrant que la Terre n’occupait pas le centre du monde ou que la matière et l’énergie s’échangeaient, ont transformé des systèmes entiers.",
+          "Cette dissymétrie entre l’individu et la société vaut d’être tenue, parce qu’elle explique une expérience courante : celle de quelqu’un qui a compris quelque chose, qui le dit clairement, et qui constate que sa démonstration ne produit aucun effet. Il n’y a pas là un défaut d’argumentation. Une évidence collective ne se défait pas par le même chemin qu’une conviction personnelle, et le temps propre de chacune n’a rien à voir avec celui de l’autre.",
+          "Elle ajoute une remarque contre-intuitive : rien, dans un changement de paradigme, n’est nécessairement lent ou coûteux. Chez une personne seule, cela peut prendre un instant, le temps d’un basculement du regard.",
+          "Les sociétés, elles, se comportent autrement, et sa formule est sans ménagement : « Whole societies are another matter. They resist challenges to their paradigm harder than they resist anything else ». Elle rappelle ce que ces résistances ont produit historiquement, et la liste n’a rien d’une métaphore."
+        ]
+      },
+      {
+        "title": "Les contresens à écarter",
+        "paragraphs": [
+          "Le premier consiste à faire du paradigme le sommet de l’échelle. Il ne l’est pas : au-dessus de lui, Meadows place la capacité à en changer sans s’attacher à aucun, c’est-à-dire à tenir que toute vision du monde, y compris la nouvelle, reste une vision.",
+          "Le deuxième consiste à croire qu’il suffit de dénoncer une évidence pour la déplacer. Rien dans l’analyse ne le laisse penser, et le constat sur la résistance des sociétés dit exactement l’inverse. Nommer l’évidence est nécessaire ; ce n’est pas suffisant.",
+          "Le troisième, plus insidieux, transforme le concept en dispense d’agir : puisque seul le niveau le plus profond compte vraiment, à quoi bon changer une règle. C’est un mauvais usage du classement, qui hiérarchise des effets et n’a jamais dit qu’un levier faible était inutile.",
+          "Un quatrième malentendu mérite d’être écarté : celui qui range le paradigme du côté des idées et les règles du côté du concret, comme si le premier était mou et les secondes dures. Le classement de Meadows dit l’inverse. C’est l’idée partagée qui tient, et c’est la règle qui cède."
+        ]
+      },
+      {
+        "title": "Ce que l’on peut en faire",
+        "paragraphs": [
+          "Un premier usage consiste à chercher, derrière un désaccord qui ne se résout pas, l’hypothèse que les deux camps partagent sans la voir. Les débats les plus enlisés opposent souvent des positions qui reposent sur la même évidence non discutée, et c’est cette évidence qui produit l’impasse.",
+          "Un deuxième consiste à repérer les endroits où un système résiste sans raison technique apparente. Quand une réforme cohérente, financée et soutenue s’érode toujours de la même manière, l’hypothèse d’un désaccord silencieux sur ce qui est légitime mérite d’être examinée avant celle de l’incompétence.",
+          "Un troisième, enfin, est un exercice individuel que Meadows pratique dans son texte : écrire les hypothèses de sa propre culture comme les écrirait quelqu’un qui n’y appartient pas. L’exercice ne change rien à lui seul, mais il rend visible ce qui, autrement, n’a pas de nom.",
+          "Un dernier usage, plus modeste, consiste à s’en servir comme d’un avertissement sur soi. Quiconque a réussi à déplacer une évidence est immédiatement tenté d’installer la sienne à la place, avec la même invisibilité et la même force. C’est exactement ce que Meadows range au-dessus du paradigme dans son échelle, et ce qui empêche son texte d’être un manuel de conversion."
+        ]
+      }
+    ],
+    "limits": [
+      "Le texte lu est le rapport publié par The Sustainability Institute en décembre 1999. Une version plus courte avait paru dans la revue Whole Earth à l’hiver 1997 : ce qu’elle contenait, et ce que Meadows y disait déjà du paradigme, se lira dans ce numéro-là.",
+      "Meadows renvoie ici à Thomas Kuhn pour la question du changement de paradigme, et l’ouvrage de 1962 sur les révolutions scientifiques est la source du terme. Ce que Kuhn établit exactement, et ce que Meadows en retient ou en déplace, ce sont ses pages qui le disent.",
+      "Elle cite aussi longuement Emerson pour dire que les idées d’une époque se coulent dans ses matériaux et ses institutions. Ce passage n’est pas repris ici, et c’est dans cet article qu’il faudra aller le chercher.",
+      "Comment on s’y prend concrètement pour intervenir au niveau d’un paradigme reste largement ouvert. Meadows esquisse une réponse dans les dernières pages de son rapport, et c’est là que se trouve ce qu’elle propose."
+    ]
+  },
+  {
     "conceptId": "performance-totale",
     "lead": [
       "Imaginez un hôpital, une agence pour l’emploi, un service public quelconque. Pour savoir s’il fonctionne bien, quelqu’un doit en juger. Longtemps, ce jugement pouvait prendre plusieurs formes à la fois : interroger les usagers, comparer des situations locales, peser des critères différents et parfois contradictoires entre eux. De plus en plus, pourtant, ce jugement se resserre autour d’un seul indicateur : un objectif atteint ou manqué, un score, un classement. Et ce chiffre s’impose à tout le monde, du dirigeant qui le fixe à l’agent qui l’exécute, même quand personne, au fond, n’est tout à fait convaincu qu’il dise grand-chose du travail réellement accompli.",
@@ -2268,6 +2501,64 @@ export const generatedDeepenings: Deepening[] = [
       "L’analyse que Christophe Dejours donne de la qualité totale en 2003 arrive ici par la façon dont Jany-Catrice la mobilise dans son propre texte. Son argumentation, ses exemples et ses nuances sont dans le sien : une reprise, si fidèle soit-elle, ne rend jamais le détail d’une démonstration.",
       "L’article ne dit pas dans quels secteurs précis, à quelle échelle ni selon quel calendrier ce basculement vers la mesure des performances se serait généralisé : il expose un mouvement d’ensemble, pas un inventaire de cas par cas. Pour voir comment il se manifeste dans tel hôpital, telle agence ou telle administration locale, il faudra un travail empirique que l’article ne fournit pas lui-même.",
       "Rien ne permet d’affirmer que l’expression n’ait jamais été employée avant 2012, par quelqu’un d’autre, dans un sens voisin. Aucune trace antérieure n’a refait surface jusqu’ici, ce qui n’est pas une preuve : la question reste ouverte pour qui voudra la creuser."
+    ]
+  },
+  {
+    "conceptId": "points-de-levier",
+    "lead": [
+      "Devant un ensemble qui fonctionne mal, la question pratique n’est presque jamais « faut-il agir ». Elle est « où appuyer ». On peut changer un montant, un délai, une règle, la personne qui décide, ou la raison même pour laquelle l’ensemble existe. Ces gestes ne demandent ni le même effort ni la même autorité, et ils n’ont surtout pas la même portée.",
+      "Donella H. Meadows, formée à la modélisation des systèmes auprès de Jay W. Forrester, a passé sa vie à observer des gens intelligents pousser très fort sur des endroits qui ne bougent pas. Elle a fini par écrire une liste : douze endroits où l’on peut intervenir dans un ensemble, classés du plus faible au plus puissant. Cette liste est devenue l’un des textes les plus repris du domaine, et son avertissement compte autant qu’elle."
+    ],
+    "sections": [
+      {
+        "title": "Un classement, et non un catalogue",
+        "paragraphs": [
+          "Ce qui fait la valeur de la liste n’est pas qu’elle recense des façons d’agir : chacun en connaît. C’est qu’elle les ordonne, « in increasing order of effectiveness », du levier le plus faible au plus fort. Le numéro 12 est donc le moins puissant et le numéro 1 le plus puissant, ce qui est l’inverse de ce qu’une liste numérotée suggère au premier regard.",
+          "Au bas de l’échelle, Meadows range ce qu’elle appelle « Constants, parameters, numbers » : les montants, les taux, les seuils, les budgets. Ce sont les points sur lesquels se concentre l’essentiel du débat public et de la négociation interne, et ce sont les plus faibles de tous.",
+          "En montant, on rencontre la taille des réserves, la structure des flux, la longueur des délais, la force des boucles qui stabilisent, le gain des boucles qui emballent, la circulation de l’information, les règles, le pouvoir de changer les règles, les buts poursuivis, l’idée partagée d’où ces buts sortent, et enfin « The power to transcend paradigms ».",
+          "Une image aide à tenir l’échelle en tête, et Meadows l’emploie elle-même : celle de la baignoire. Un paramètre, c’est la vitesse à laquelle le robinet tourne. La réserve, c’est le niveau de l’eau. Le délai, c’est le temps que met le bouchon à faire effet. La règle, c’est ce qui décide qu’on ouvre ou qu’on ferme. Le but, c’est la raison pour laquelle on veut de l’eau. On sent immédiatement lequel de ces éléments il est le plus facile de toucher, et lequel changerait vraiment la situation."
+        ]
+      },
+      {
+        "title": "Pourquoi les leviers forts restent inutilisés",
+        "paragraphs": [
+          "Le classement obéit à une logique simple, qui se déduit de ce qu’un système est. Un paramètre agit à l’intérieur d’une structure qu’il ne modifie pas ; une règle modifie la structure ; un but modifie ce que la structure cherche ; une idée partagée engendre les buts. Plus on monte, plus on agit tôt dans cette chaîne, et plus l’effet se propage.",
+          "Le même mouvement explique pourquoi on n’y touche pas. Un paramètre se change par décision, il est mesurable, il ne menace personne. Un but se change en défaisant ce qui tient ensemble ceux qui poursuivaient l’ancien. Le classement de Meadows est donc aussi, lu à l’envers, un classement par difficulté politique.",
+          "Il en résulte une répartition de l’effort systématiquement mal placée : l’essentiel de l’énergie va aux leviers faibles, précisément parce qu’ils sont accessibles, et le sentiment d’avoir beaucoup agi sans rien obtenir vient de là."
+        ]
+      },
+      {
+        "title": "L’avertissement qui accompagne la liste",
+        "paragraphs": [
+          "Meadows ne présente pas sa liste comme une méthode, et elle l’assortit d’une mise en garde qui touche à l’intuition : « Les points de levier ne sont pas intuitifs. Ou s’ils le sont, nous les utilisons intuitivement à l’envers […] ». La fin de sa phrase précise ce que produit ce renversement, « systematically worsening whatever problems we are trying to solve ».",
+          "Ce n’est pas une formule. Elle tient de Forrester une observation qu’elle rapporte : quand il identifiait un point de levier dans une entreprise, il découvrait presque toujours que tout le monde s’en occupait déjà, et le poussait dans la mauvaise direction. Trouver le bon endroit ne suffit donc pas ; il reste à déterminer de quel côté pousser, et l’évidence n’est d’aucun secours.",
+          "Elle ajoute une difficulté supplémentaire, que peu de textes de méthode reconnaissent : une fois le point de levier établi, il est probable que personne ne le croie. Un résultat contre-intuitif reste contre-intuitif après démonstration.",
+          "Le renversement a une explication qui tient à ce qui précède. Un point de levier puissant est puissant parce qu’il commande une boucle ; or une boucle produit dans le temps l’inverse de ce qu’elle semble faire dans l’instant. Celui qui agit au vu de l’instant agit donc au rebours de la boucle, et il agit d’autant plus fort qu’il a bien identifié l’endroit sensible."
+        ]
+      },
+      {
+        "title": "Ce que la liste n’est pas",
+        "paragraphs": [
+          "Meadows la présente elle-même comme un travail en cours plutôt que comme une recette, et elle raconte comment elle est née : une phrase jetée sur un paperboard au milieu d’une réunion, en neuf entrées, qu’elle a ensuite retravaillée en douze après discussion avec des collègues et des militants. Les deux versions figurent dans son texte, et la première y reste visible avec ses défauts.",
+          "Elle n’est pas non plus une hiérarchie stricte à appliquer sans discernement. Agir sur un paramètre reste parfois la seule action possible, et vaut mieux que rien. Ce que le classement interdit, c’est de confondre ce geste avec un changement de trajectoire.",
+          "Enfin, elle ne dit pas comment trouver, dans un ensemble donné, où se situe concrètement chacun de ces niveaux. C’est le travail de modélisation, et Meadows est claire sur le fait que sa liste ne le remplace pas."
+        ]
+      },
+      {
+        "title": "Ce que l’on gagne à s’en servir",
+        "paragraphs": [
+          "Le premier usage est un test de position. Devant une action proposée, on peut demander à quel niveau elle intervient : règle-t-elle un nombre, change-t-elle une règle, déplace-t-elle un but ? La réponse ne juge pas de l’action, mais elle indique ce qu’on peut raisonnablement en attendre.",
+          "Le deuxième est un test de proportion. Quand une difficulté est décrite comme profonde et que toutes les mesures envisagées se situent dans le bas de l’échelle, l’écart entre le diagnostic et le remède devient visible sans avoir besoin d’argumenter contre chaque mesure prise séparément.",
+          "Le troisième est un test de direction. Puisque le sens dans lequel on pousse est aussi souvent faux que le lieu est bien choisi, il devient utile de formuler explicitement pourquoi on croit qu’il faut augmenter plutôt que réduire, et de vérifier que cette raison tient à la structure et non à l’évidence.",
+          "Il y a enfin un usage moins technique et peut-être plus utile : la liste donne un vocabulaire à ceux qui sentent qu’un débat porte à côté sans pouvoir dire pourquoi. Nommer le niveau auquel une discussion se tient permet de la déplacer sans accuser personne de mauvaise volonté, ce qui est rarement possible autrement."
+        ]
+      }
+    ],
+    "limits": [
+      "Le texte lu ici est le rapport publié par The Sustainability Institute en décembre 1999. Une version plus courte avait paru dans la revue Whole Earth à l’hiver 1997, et ce que cette première publication disait, dans quels termes et avec quelles entrées, se lira dans ce numéro-là.",
+      "Les douze niveaux ne sont pas exposés en détail ici. Chacun occupe dans le rapport plusieurs pages, avec ses exemples, ses exceptions et les cas où il ne s’applique pas : c’est cet article qu’il faudra lire pour s’en servir sur un cas réel.",
+      "La liste n’est appuyée sur aucun protocole de vérification, et Meadows ne le prétend pas. Savoir si l’ordre qu’elle propose se retrouve dans des interventions observées relève d’une littérature postérieure, qui a repris la notion en sciences de la durabilité et l’a discutée.",
+      "L’ouvrage sur les limites de la croissance, publié en 1972 par Meadows avec ses coauteurs, est le travail qui a rendu ces questions publiques et où le modèle mondial est exposé. Ses pages attendent leur lecteur."
     ]
   },
   {
@@ -3040,6 +3331,122 @@ export const generatedDeepenings: Deepening[] = [
       "Daniellou renvoie, pour situer l’origine de cette façon de simuler avec les futurs occupants du poste, à trois publications : un article coécrit avec Garrigou, Kerguelen et Laville en 1990, un autre coécrit avec Garrigou, Carballeda et Ruaud en 1995, et l’ouvrage de Maline de 1994 sur les propriétés des supports de simulation. Ce que chacun y a apporté est écrit dans ces textes, et c’est là qu’il faudra le chercher.",
       "La formule « activité future probable », que l’on rencontre parfois associée à cette démarche, n’apparaît nulle part dans l’article de 2007 : celui-ci écrit « l’activité future possible ». Elle figure en revanche dans un chapitre cosigné à trois, en 2013, par Barcellini, Van Belleghem et Daniellou, qui parle de « la conduite de simulations du travail permettant de se projeter dans l’activité future probable ». Quand le mot a changé, et sous quelle plume, se lit dans ce chapitre.",
       "Comprendre le travail pour le transformer, l’ouvrage cosigné par Daniellou le plus souvent cité comme porte d’entrée sur ce sujet en ergonomie francophone, ne circule pas librement en ligne. C’est pourtant le livre qui reprend en long ce que l’article de 2007 pose en bref, et le seul endroit où vérifier si la formule « activité future probable » s’y trouve déjà."
+    ]
+  },
+  {
+    "conceptId": "systeme-concret-systeme-construit",
+    "lead": [
+      "Deux personnes parlent du même hôpital. La première y voit un système de flux : des patients entrent, des lits se libèrent, des files se forment. La seconde y voit un système de métiers : des soignants, des cadres, des règles négociées, des rapports de force. Elles ne se contredisent pas et elles ne parlent pas de la même chose. Chacune a découpé, dans un même bâtiment, un objet différent.",
+      "Charles Roig, en 1970, place ce constat au centre de ce que l’analyse systémique devrait faire. Pour lui, l’essentiel n’est ni de définir ce qu’est un système en général, ni de dresser une classification des systèmes possibles. L’essentiel est de tenir ensemble deux choses distinctes et de ne jamais les confondre : ce qui est là, dehors, et la construction que l’on bâtit pour l’exprimer."
+    ],
+    "sections": [
+      {
+        "title": "Le découpage précède l’objet",
+        "paragraphs": [
+          "Roig rappelle qu’un système, dans les définitions les plus utilisables, naît d’un acte intellectuel : on partage la réalité en deux, ce qu’on appelle système et ce qu’on appelle environnement. Rien dans le monde ne trace cette ligne. C’est l’observateur qui la trace, en fonction de ce qui l’intéresse.",
+          "Il rapporte à ce sujet une formule d’Ashby, dont il fait la définition la plus opératoire disponible : le système cesse d’être une chose pour devenir une liste de variables retenues, et cette liste n’est pas fixe. Le travail consiste précisément à la modifier jusqu’à ce qu’elle fasse apparaître ce qu’on cherche.",
+          "Cette manière de poser les choses a une conséquence immédiate et libératrice. Deux découpages différents du même hôpital ne sont pas l’un vrai et l’autre faux : ce sont deux listes de variables, chacune jugée sur ce qu’elle permet d’expliquer, aucune sur sa fidélité à un système qui existerait avant elle.",
+          "Le mot d’environnement prend alors un sens précis, et Roig le reprend d’une définition qu’il cite : l’environnement d’un système, c’est l’ensemble des objets dont un changement affecte ce système et qui sont eux-mêmes affectés par ce qu’il fait. Ce qui n’a pas cette double propriété n’est pas l’environnement du système : c’est le reste du monde, et on n’a pas à s’en occuper."
+        ]
+      },
+      {
+        "title": "Le rapport que Roig met au centre",
+        "paragraphs": [
+          "De là vient sa proposition, et elle tient en une phrase : ce qui compte est « […] l’étude du rapport entre le système concret situé dans le monde réel et le système intellectuel construit pour l’exprimer symboliquement ». L’objet de la méthode n’est ni l’un ni l’autre pris séparément, mais leur relation.",
+          "Ce déplacement est plus radical qu’il n’en a l’air. La question « ce système existe-t-il vraiment » est écartée, non parce qu’elle serait interdite, mais parce qu’elle est mal posée. Les questions qui la remplacent sont vérifiables : que ma construction laisse-t-elle dehors, que fait-elle voir, à partir de quel moment cesse-t-elle de correspondre à ce que j’observe ?",
+          "Roig ajoute que des notions comme la contrainte, la variété nécessaire ou l’adaptation sont impliquées par cette façon de définir. Elles ne sont donc pas des ornements empruntés : elles viennent avec le geste, dès lors qu’on tient la construction pour un instrument dont il faut évaluer la portée."
+        ]
+      },
+      {
+        "title": "Ce que ce cadrage évite",
+        "paragraphs": [
+          "Il vise en premier lieu un défaut précis, celui des définitions qui posent d’avance les propriétés du système. Roig les appelle fonctionnalistes : elles décident au départ que le tout prime sur les parties, que les éléments sont interdépendants, que l’ensemble tend à se conserver. Ces propriétés étant posées comme définition, on les retrouve nécessairement partout où l’on applique le mot.",
+          "Le défaut est logique avant d’être idéologique. Une définition qui contient déjà ses conclusions ne peut plus rien apprendre : elle confirme. Roig estime que c’est là ce qui justifie la méfiance de tous les chercheurs qui refusent les postulats fonctionnalistes.",
+          "La définition par la liste de variables ne présente pas ce défaut, parce qu’elle n’affirme rien sur le monde. Elle décrit une opération, dit ce qu’elle a retenu, et laisse ouvert ce que l’on trouvera.",
+          "Roig ne se contente pas d’écarter ces définitions : il propose ce qu’il faut mettre à leur place. Plutôt que de poser d’avance que le tout prime, il propose d’étudier les relations entre les composants et leurs attributs comme des propriétés des systèmes, lesquelles ne prennent leur sens que rapportées à une loi de composition interne établie par déduction. La totalité devient ainsi une chose à démontrer et non un point de départ."
+        ]
+      },
+      {
+        "title": "Ce que le concept ne permet pas de dire",
+        "paragraphs": [
+          "Il ne dit pas que le réel serait indifférent et qu’un découpage en vaudrait un autre. Le rapport que Roig met au centre est un rapport à quelque chose : le système concret est bien situé dans le monde, et c’est lui qui sanctionne la construction en cessant, à un moment, de se comporter comme elle le prévoit.",
+          "Il ne dit pas non plus que tout modèle serait un modèle mathématique. Roig note ailleurs que la formalisation mathématique n’est pas une condition nécessaire de l’analyse de systèmes, même si elle est féconde. Une construction peut être conceptuelle et se juger de la même façon.",
+          "Il ne dit pas enfin que ce geste serait propre aux sciences sociales. Il tient pour la physique comme pour la sociologie ; ce qui change d’un domaine à l’autre est la difficulté de fixer les variables, et la place qu’y prennent les convictions de celui qui découpe.",
+          "Un dernier malentendu vaut d’être écarté, parce qu’il vient naturellement à l’esprit : celui qui ferait de ce cadrage une invitation au relativisme confortable, où chacun garderait son découpage et où la discussion s’arrêterait. C’est l’inverse. Deux découpages explicites sont comparables, précisément parce qu’ils disent ce qu’ils ont retenu ; deux systèmes tenus pour donnés ne le sont pas."
+        ]
+      },
+      {
+        "title": "Ce que cela vaut pour qui modélise",
+        "paragraphs": [
+          "Le premier usage est une exigence de déclaration. Toute représentation d’un ensemble devrait dire ce qu’elle a retenu comme variables et ce qu’elle a rejeté dans l’environnement. Un schéma des flux d’un hôpital qui ne mentionne pas qu’il a laissé les rapports de métier dehors n’est pas faux ; il est simplement muet sur sa propre limite.",
+          "Le deuxième est un critère de révision. Puisque la liste des variables n’est pas fixe, une construction qui ne rend plus compte de ce qu’on observe n’est pas à défendre : elle est à modifier. Roig décrit cette modification comme la tâche même de celui qui enquête, non comme un aveu d’échec.",
+          "Le troisième est un usage critique, applicable aux représentations des autres. Devant un schéma qui présente une organisation comme un système, la question utile n’est pas de savoir si le schéma est juste, mais quelles variables il a retenues, qui a choisi ces variables, et ce que ce choix rend invisible."
+        ]
+      }
+    ],
+    "limits": [
+      "Ce que Roig discute ici est une définition qu’il emprunte à W. Ross Ashby et qu’il commente. Ce qu’Ashby en fait dans son propre ouvrage, avec ses machines, ses tableaux de transformation et sa notion de variété, ce sont ses chapitres qui le disent.",
+      "Le texte lu est une communication présentée à Paris en avril 1970 et publiée dans un numéro spécial de la Revue française de sociologie. Roig y renvoie à un rapport qu’il avait rédigé la même année pour l’Institut d’études politiques de Grenoble, où il développe le principe de totalité : c’est ce rapport qui contient l’argument complet.",
+      "Ce que la théorie générale des systèmes soutient dans ses propres termes, et non à travers ce qu’en rapporte Roig, se trouve dans l’ouvrage de Ludwig von Bertalanffy publié en 1968, qui est sa référence constante. Ses pages attendent leur lecteur.",
+      "Enfin, savoir comment ce cadrage a été reçu, et ce que la modélisation des systèmes sociaux en a effectivement retenu depuis 1970, demanderait de suivre cette littérature. Rien de ce qui est disponible ici ne l’établit."
+    ]
+  },
+  {
+    "conceptId": "transposition-analogique",
+    "lead": [
+      "Dans une réunion, quelqu’un dit qu’il faut « une boucle de rétroaction » sur un projet. Tout le monde acquiesce, et personne ne demande quelle grandeur est mesurée, à quelle valeur elle est comparée, ce qui est corrigé quand l’écart apparaît, ni combien de temps met la correction à faire effet. Le mot a circulé, le mécanisme est resté là d’où il vient.",
+      "Charles Roig, politiste, a décrit ce geste en 1970 devant des collègues réunis pour discuter de l’analyse systémique en science politique. Il ne l’a pas décrit comme une facilité de langage mais comme une opération intellectuelle repérable, avec ses auteurs, ses textes et son coût. Il l’appelle la transposition analogique, et il montre ce qu’une notion perd quand on la déménage sans ce qui la portait."
+    ],
+    "sections": [
+      {
+        "title": "Ce que la génération précédente avait fait",
+        "paragraphs": [
+          "Roig écrit à un moment précis. Les schémas venus de la cybernétique, la boucle, le pilotage, la commande par l’écart, ont été repris dans les années cinquante et soixante par des auteurs importants des sciences sociales. Il en nomme quatre : Karl W. Deutsch et David Easton aux États-Unis, Talcott Parsons pour la référence, Lucien Mehl en France.",
+          "Ce qu’il constate, c’est que ces reprises ne se ressemblent pas. Chez Parsons, la cybernétique reste une référence dont l’auteur ne tire pas grand-chose. Chez Deutsch, elle devient le modèle explicite du processus politique, assimilé à une commande par l’erreur. Entre les deux, toute une gamme d’usages plus ou moins engagés.",
+          "Sa conclusion est la même dans tous les cas, et c’est elle que la formule retient : « […] elles ne retiennent de la cybernétique que des éléments isolés […] indépendamment de la théorie d’ensemble qui les fonde ». Les éléments qu’il énumère sont le pilotage, le feedback et le contrôle."
+        ]
+      },
+      {
+        "title": "Pourquoi un morceau détaché ne fonctionne plus",
+        "paragraphs": [
+          "L’idée que Roig défend est qu’une notion scientifique n’est pas une pièce détachée. Elle tient sa précision de l’ensemble théorique dans lequel elle se définit : ce que « feedback » veut dire dépend de ce que sont l’information, le canal, l’écart et la référence dans la même théorie.",
+          "Détachée de cet ensemble, la notion garde son nom et perd son contenu. Elle continue à désigner quelque chose, mais ce quelque chose devient élastique : n’importe quel retour, n’importe quelle influence en retour, n’importe quelle réaction peut désormais s’appeler ainsi.",
+          "Roig le dit ailleurs dans le même texte à propos du feedback : son sens, hérité de la théorie de l’information où il était précis et opératoire, tend à se diluer jusqu’à ne plus refléter que l’idée très vague que tout système réintroduit quelque chose dans son propre fonctionnement. Il conclut qu’il faudra redéfinir la notion, et probablement la remplacer par des concepts plus différenciés.",
+          "Le mot que Roig emploie pour désigner ce qu’il faudrait faire mérite d’être retenu : un effort taxinomique. Il ne réclame pas qu’on abandonne la notion, il réclame qu’on la découpe, qu’on distingue des cas qui ne se ressemblent que de loin, et qu’on donne des noms différents à ce qui n’est pas la même chose. C’est le travail que l’emprunt avait permis de ne pas faire."
+        ]
+      },
+      {
+        "title": "Une analogie n’est pas une explication",
+        "paragraphs": [
+          "Le mot « analogique » est le cœur de l’affaire. Une analogie est un rapprochement de formes : ce système-ci ressemble à ce système-là. Elle est féconde pour trouver des idées, et elle ne démontre rien. Le glissement que Roig décrit consiste à traiter la ressemblance comme si elle établissait une identité de mécanisme.",
+          "Il y a une raison pour laquelle ce glissement se produit si facilement dans les sciences sociales, et Roig la donne en ouvrant son article : la notion de système y était devenue d’un emploi si large qu’elle revêtait, écrit-il, un caractère magique quelque peu inquiétant pour des recherches se voulant scientifiques. Système de pouvoir, système urbain, système de comportement : le mot désignait partout quelque chose et nulle part la même chose.",
+          "Il en donne le symptôme dans l’ordre du travail. Les modèles systémiques du social produits par cette voie, écrit-il, ne vont pas au-delà de l’exposé d’analogies qu’il devient ensuite difficile d’utiliser dans une élaboration théorique. Autrement dit, on obtient une image plaisante avec laquelle on ne peut plus rien faire.",
+          "L’avertissement dépasse largement la cybernétique. Toute discipline qui emprunte un vocabulaire à une autre court le même risque, et le risque est d’autant plus grand que le vocabulaire emprunté est prestigieux et que le mot importé est court."
+        ]
+      },
+      {
+        "title": "Ce que Roig ne dit pas",
+        "paragraphs": [
+          "Il ne rejette pas l’analyse de systèmes, et c’est le contresens le plus facile à commettre en le lisant. Sa position est exactement inverse : il propose de tenir l’analyse de systèmes et la cybernétique pour « deux aspects d’une même construction théorique », l’une plus tournée vers la définition et le classement, l’autre vers le comportement et le changement.",
+          "Il ne dit pas non plus que les auteurs qu’il vise se seraient trompés par légèreté. Il discute leurs textes, relève ce que chacun a réellement retenu, et distingue soigneusement une simple référence d’une transposition assumée. Le reproche porte sur une opération, pas sur des personnes.",
+          "Il ne dit pas enfin que la cybernétique se réduirait aux mécanismes de contrôle. Il note au contraire qu’elle a dépassé ce stade et qu’on parle déjà, en 1970, d’une seconde génération dont les applications aux sciences sociales lui paraissent plus prometteuses."
+        ]
+      },
+      {
+        "title": "Ce qu’on en fait aujourd’hui",
+        "paragraphs": [
+          "Le premier usage est un test simple, applicable dans n’importe quelle discussion. Quand un terme technique apparaît, on peut demander ce qui, dans la situation dont on parle, joue le rôle de chacune de ses parties. Si le terme survit à la question, il apporte quelque chose. S’il se dissout, il servait d’ornement.",
+          "Le deuxième concerne l’importation de modèles entiers. Reprendre un schéma venu d’une autre discipline demande de reprendre aussi les conditions dans lesquelles il vaut, et de vérifier qu’elles sont réunies. Cette vérification est du travail, et c’est précisément elle que la transposition analogique saute.",
+          "Le troisième est une hygiène de vocabulaire. Un champ qui accueille des mots venus d’ailleurs sans les redéfinir finit par disposer d’une langue riche et d’aucune prise : chaque phrase y est compréhensible, aucune n’est réfutable. La mise en garde de Roig porte sur ce point, et elle n’a pas vieilli.",
+          "Il reste un usage plus rare, et c’est celui que Roig pratique. On peut prendre au sérieux l’emprunt lui-même comme objet d’étude, en demandant ce que le champ receveur a retenu, ce qu’il a laissé, et ce que ce tri révèle de ses propres attentes. Ce que Deutsch garde de la cybernétique en dit autant sur la science politique de son temps que sur la cybernétique."
+        ]
+      }
+    ],
+    "limits": [
+      "Le texte de Roig est une communication présentée à Paris en avril 1970 devant l’Association française de science politique, publiée dans un numéro spécial de la Revue française de sociologie. Ce que la discussion qui l’a suivie a produit, et ce que ses collègues lui ont répondu, se lira dans les autres articles de ce numéro.",
+      "Les auteurs que Roig discute sont ici nommés et non lus. Ce que Karl W. Deutsch fait exactement du pilotage et du feedback négatif, ce que David Easton construit avec eux, ce que Talcott Parsons en retient : ce sont leurs ouvrages qui le disent, et Roig les cite précisément assez pour qu’on aille les ouvrir.",
+      "L’ouvrage de Ludwig von Bertalanffy sur la théorie générale des systèmes, publié en 1968, est la référence que Roig discute tout au long de son article. Il est cité ici à travers lui seul. Ce que Bertalanffy soutient dans ses propres termes attend son lecteur.",
+      "Enfin, ce que la sociologie et la science politique ont fait de cet avertissement depuis 1970 n’est pas établi ici. Savoir si la transposition analogique a reculé, changé de source ou simplement changé de vocabulaire demanderait de suivre cette littérature."
     ]
   },
   {

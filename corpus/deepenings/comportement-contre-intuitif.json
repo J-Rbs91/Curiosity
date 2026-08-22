@@ -1,0 +1,58 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "comportement-contre-intuitif",
+  "lead": [
+    "Une ville manque de logements abordables, alors elle en construit. Dix ans plus tard, elle en manque davantage, et elle est plus pauvre qu’avant. Un service croule sous les appels, alors on renforce l’équipe qui les traite. Un an plus tard, le nombre d’appels a monté. Chaque décision était raisonnable, prise par des gens compétents qui voyaient correctement le problème devant eux. Et chacune a produit le contraire de ce qu’elle visait.",
+    "Jay W. Forrester, ingénieur devenu au Massachusetts Institute of Technology le fondateur de la dynamique des systèmes, a passé sa carrière sur cette énigme. Sa réponse n’est pas que les décideurs se trompent par négligence ou par intérêt. Elle est plus dérangeante : dans un ensemble où tout se boucle sur tout, notre manière ordinaire de repérer une cause devient un guide qui nous égare, et il nous égare de façon régulière, prévisible, presque mécanique."
+  ],
+  "sections": [
+    {
+      "title": "Là où l’intuition a appris à chercher",
+      "paragraphs": [
+        "Notre façon de remonter d’un effet à sa cause s’est formée sur des situations simples, où les deux sont voisins. On touche une plaque brûlante, la douleur vient tout de suite et vient de là. On lâche un verre, il tombe. Dans ce monde-là, la règle qui consiste à chercher juste avant et juste à côté fonctionne remarquablement bien, et elle a été apprise si tôt qu’elle ne se présente plus comme une règle : elle se présente comme l’évidence.",
+        "Forrester observe que cette règle cesse d’être valable dès qu’on a affaire à un ensemble dont les parties s’influencent en retour. Sa formulation est directe : dans ces ensembles, écrit-il, « in complex dynamic systems, causes are often far removed in both time and space from the symptoms ». La vraie cause peut se trouver des années plus tôt, et dans une partie du système sans rapport apparent avec l’endroit où le symptôme se manifeste.",
+        "Le problème n’est pas seulement que la cause soit loin. Il est qu’il y a presque toujours, tout près du symptôme, quelque chose qui a l’air d’être la cause. Ce quelque chose est en réalité un autre effet, produit par les mêmes boucles, et qui arrive à peu près en même temps. L’intuition l’attrape, s’y arrête, et se déclare satisfaite.",
+        "Il vaut la peine de nommer ce qui rend un ensemble « complexe » au sens où Forrester l’entend, parce que le mot sert à tout. Il ne s’agit ni du nombre de pièces ni de la difficulté du sujet. Il s’agit de la présence de boucles : ce que produit une partie revient modifier ce qui la produit, parfois après un long détour. Un moteur d’avion est compliqué et n’est pas bouclé de cette façon ; un quartier, un budget public ou une équipe le sont, et le sont même quand ils paraissent modestes."
+      ]
+    },
+    {
+      "title": "Le système désigne lui-même la mauvaise porte",
+      "paragraphs": [
+        "C’est ici que l’analyse devient tranchante. Forrester ne dit pas seulement que les points d’intervention efficaces sont difficiles à trouver. Il dit que le système attire activement l’attention ailleurs, et que cet ailleurs est précisément l’endroit où agir ne donnera rien : « En réalité, les systèmes sociaux attirent l’attention sur les points mêmes où toute tentative d’intervention échouera ».",
+        "Ce n’est pas une malveillance du système, c’est une conséquence de sa structure. Le symptôme le plus douloureux est aussi le plus visible, il occupe le débat, il commande l’urgence. Or c’est un symptôme, pas un levier. L’effort s’y concentre parce que la souffrance s’y concentre, et l’effort y est absorbé sans effet durable.",
+        "On peut le formuler autrement. Un système bouclé produit deux sortes de choses en même temps : des états douloureux, et des explications toutes faites de ces états. Les secondes sont fabriquées par la même machinerie que les premiers, et elles ont l’avantage d’être disponibles immédiatement, sans enquête. C’est pourquoi elles gagnent presque toujours contre une explication qui demanderait de remonter dix ans en arrière et de traverser trois services.",
+        "Une conséquence pratique en découle immédiatement : le fait qu’une mesure soit consensuelle, qu’elle réponde à une évidence partagée, qu’elle porte sur ce dont tout le monde parle, n’est pas un indice qu’elle est bonne. Cela peut être l’indice inverse."
+      ]
+    },
+    {
+      "title": "Pourquoi l’effort redouble quand il échoue",
+      "paragraphs": [
+        "Le mécanisme se referme par un dernier tour, et c’est lui qui rend la situation durable plutôt que passagère. Une politique appliquée sur un faux levier ne produit pas rien : elle produit souvent une aggravation, différée et donc difficile à lui imputer. On constate que le problème empire. On en conclut qu’on n’en a pas fait assez. On en fait davantage.",
+        "Imaginons un service d’assistance dont les délais s’allongent. On y ajoute des agents. Les délais baissent, les usagers apprennent que l’assistance répond vite, ils appellent pour des questions qu’ils auraient résolues seuls, la charge remonte, et les délais avec elle. Six mois plus tard, la conclusion qui s’impose au comité de direction est qu’il faut encore recruter. Cet exemple est fabriqué pour montrer la forme du raccourci, non tiré d’une enquête.",
+        "Il n’y a dans cette spirale ni faute morale ni incompétence. Les gens font ce que l’observation leur commande de faire. Le défaut est dans le rapport entre une structure de boucles et une manière d’observer qui n’a pas été faite pour elle."
+      ]
+    },
+    {
+      "title": "Ce que ce renversement ne dit pas",
+      "paragraphs": [
+        "Le concept se prête à deux contresens, et ils sont symétriques. Le premier consiste à en tirer que l’intuition est nulle et qu’il faut cesser de s’y fier. Forrester dit autre chose : les gens perçoivent très correctement leur environnement immédiat, ils savent ce qu’ils cherchent à obtenir, ils énoncent leurs raisons sans se mentir. C’est le passage de ces perceptions justes à une conclusion sur l’ensemble qui échoue.",
+        "Le second contresens consiste à faire de ce renversement une règle : puisque l’intuition se trompe, il suffirait de faire l’inverse de ce qu’elle suggère. Cela ne fonctionne pas davantage. Rien ne garantit que le contraire d’un mauvais levier soit un bon levier ; il faut établir, ensemble par ensemble, comment il est bouclé. C’est précisément ce que la modélisation sert à faire, et c’est un travail, pas un réflexe.",
+        "Un troisième malentendu guette, plus discret : croire que la contre-intuition serait une propriété des grands systèmes seulement, États, économies, planète. Rien dans le raisonnement ne dépend de la taille. Ce qui la produit est la présence de boucles et de délais, et une équipe de dix personnes en contient assez pour que le mécanisme joue."
+      ]
+    },
+    {
+      "title": "Ce que le concept change pour qui décide",
+      "paragraphs": [
+        "La première conséquence est un doute méthodique, appliqué non pas aux solutions mais à la façon dont le problème a été posé. Avant de demander quelle mesure prendre, il devient utile de demander qui a désigné ce point-là comme le point à traiter, et sur quelle observation. Si la seule réponse est que c’est là que la douleur se voit, le travail n’a pas commencé.",
+        "La seconde est un rapport différent au temps. Une politique dont on n’observe l’effet que sur quelques mois est évaluée exactement dans la fenêtre où le système répond le moins fidèlement. Chercher l’écart entre ce qu’une mesure produit tout de suite et ce qu’elle produit à terme est le prolongement direct de cette analyse.",
+        "La troisième est une exigence de représentation. Tant que les politiques suivies restent dans la tête de ceux qui les appliquent, personne ne peut voir ce qu’elles font ensemble. Les mettre à plat, les relier, et regarder ce que le tout engendre est le geste que Forrester propose contre une intuition qui, seule, ne peut pas y arriver."
+      ]
+    }
+  ],
+  "limits": [
+    "Le texte de Forrester qui porte cette analyse est une mise à jour de 1995 d’une communication de 1971. Ce que la version de janvier 1971, parue dans Technology Review, disait dans ses propres termes, et ce qui a bougé entre les deux, se lira dans cette version-là.",
+    "Les modèles qui ont conduit Forrester à ces conclusions, en particulier son modèle urbain et son modèle mondial, ne sont pas exposés ici. Ce sont eux qui portent la démonstration chiffrée, avec leurs équations et leurs hypothèses, et ce sont eux qu’il faudra ouvrir pour juger de sa solidité plutôt que de sa vraisemblance.",
+    "L’ampleur du phénomène reste ouverte. Rien de ce qui est disponible ici ne permet de dire dans quelle proportion des décisions publiques ou privées se trompent ainsi de levier : le texte établit un mécanisme et le montre à l’œuvre, il ne le mesure pas.",
+    "Enfin, ce que la psychologie a établi depuis sur notre façon de raisonner en présence de boucles et de retards se trouve dans une littérature expérimentale que Forrester ne pouvait pas connaître en 1971. Les travaux de John D. Sterman sur l’apprentissage dans les systèmes complexes en sont l’entrée la plus directe, et ce sont leurs protocoles qu’il faudra lire pour savoir jusqu’où le constat tient à l’épreuve."
+  ]
+}

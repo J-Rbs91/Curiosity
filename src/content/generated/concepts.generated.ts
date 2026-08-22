@@ -247,6 +247,49 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "comportement-contre-intuitif",
+    "slug": "comportement-contre-intuitif",
+    "title": "Comportement contre-intuitif",
+    "authorLabel": "Jay W. Forrester",
+    "hookQuestion": "Pourquoi le remède raisonnable aggrave-t-il si souvent le problème ?",
+    "shortExplanation": "Forrester : dans un système de boucles, la cause est loin du symptôme dans le temps et l'espace, et le système désigne lui-même les points où intervenir ne sert à rien.",
+    "authors": [],
+    "themes": [
+      "comportement-dans-le-temps"
+    ],
+    "themeLabel": "Ce qu'une structure finit par produire",
+    "attributionNote": "Concept de Jay W. Forrester, fondateur de la dynamique des systèmes au Massachusetts Institute of Technology.",
+    "quotation": {
+      "text": "En réalité, les systèmes sociaux attirent l'attention sur les points mêmes où toute tentative d'intervention échouera.",
+      "reference": "Jay W. Forrester, « Counterintuitive Behavior of Social Systems », D-4468-2, System Dynamics Group, Massachusetts Institute of Technology, 1995, p. 11, section VI",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Jay W. Forrester, « Counterintuitive Behavior of Social Systems », D-4468-2, System Dynamics Group, Massachusetts Institute of Technology, 1995, 28 p. Mise à jour de l'article paru dans Technology Review en janvier 1971.",
+        "kind": "primary",
+        "url": "https://ocw.mit.edu/courses/15-988-system-dynamics-self-study-fall-1998-spring-1999/65cdf0faf132dec7ec75e91f9651b31f_behavior.pdf"
+      },
+      {
+        "label": "Jay W. Forrester, « Counterintuitive Behavior of Social Systems », D-4468-1, Creative Learning Exchange, 1995, 30 p. Second exemplaire de la même mise à jour, distribué avec l'autorisation portée en tête du document.",
+        "kind": "primary",
+        "url": "http://static.clexchange.org/ftp/documents/system-dynamics/SD1993-01CounterintuitiveBe.pdf"
+      },
+      {
+        "label": "Jay W. Forrester, « Counterintuitive Behavior of Social Systems », Simulation, vol. 16, n° 2, février 1971, p. 61-76.",
+        "kind": "primary",
+        "reference": "10.1177/003754977101600202",
+        "url": "https://doi.org/10.1177/003754977101600202"
+      },
+      {
+        "label": "John D. Sterman, « Learning from Evidence in a Complex World », American Journal of Public Health, vol. 96, n° 3, mars 2006, p. 505-514.",
+        "kind": "secondary-academic",
+        "reference": "10.2105/ajph.2005.066043",
+        "url": "https://doi.org/10.2105/ajph.2005.066043"
+      }
+    ]
+  },
+  {
     "id": "conception-ecologique-interface",
     "slug": "conception-ecologique-interface",
     "title": "Conception écologique d'interface",
@@ -447,6 +490,49 @@ export const generatedConcepts: Concept[] = [
         "kind": "primary",
         "reference": "Avant-propos et table des matières · NTRS 19790007417",
         "url": "https://ntrs.nasa.gov/api/citations/19790007417/downloads/19790007417.txt"
+      }
+    ]
+  },
+  {
+    "id": "court-terme-contre-long-terme",
+    "slug": "court-terme-contre-long-terme",
+    "title": "Le court terme contre le long terme",
+    "authorLabel": "Jay W. Forrester",
+    "hookQuestion": "Et si ce qui améliore tout de suite était ce qui dégrade à la fin ?",
+    "shortExplanation": "Forrester : dans un système social, la réponse de court terme et celle de long terme sont le plus souvent de sens contraire, et c'est la première qui se voit.",
+    "authors": [],
+    "themes": [
+      "comportement-dans-le-temps"
+    ],
+    "themeLabel": "Ce qu'une structure finit par produire",
+    "attributionNote": "Concept de Jay W. Forrester, fondateur de la dynamique des systèmes au Massachusetts Institute of Technology.",
+    "quotation": {
+      "text": "Une politique qui produit une amélioration à court terme est généralement une politique qui dégrade le système à long terme.",
+      "reference": "Jay W. Forrester, « Counterintuitive Behavior of Social Systems », D-4468-2, System Dynamics Group, Massachusetts Institute of Technology, 1995, p. 12, section VI",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Jay W. Forrester, « Counterintuitive Behavior of Social Systems », D-4468-2, System Dynamics Group, Massachusetts Institute of Technology, 1995, 28 p. Mise à jour de l'article paru dans Technology Review en janvier 1971.",
+        "kind": "primary",
+        "url": "https://ocw.mit.edu/courses/15-988-system-dynamics-self-study-fall-1998-spring-1999/65cdf0faf132dec7ec75e91f9651b31f_behavior.pdf"
+      },
+      {
+        "label": "Jay W. Forrester, « Counterintuitive Behavior of Social Systems », D-4468-1, Creative Learning Exchange, 1995, 30 p. Second exemplaire de la même mise à jour, distribué avec l'autorisation portée en tête du document.",
+        "kind": "primary",
+        "url": "http://static.clexchange.org/ftp/documents/system-dynamics/SD1993-01CounterintuitiveBe.pdf"
+      },
+      {
+        "label": "Jay W. Forrester, « Counterintuitive Behavior of Social Systems », Simulation, vol. 16, n° 2, février 1971, p. 61-76.",
+        "kind": "primary",
+        "reference": "10.1177/003754977101600202",
+        "url": "https://doi.org/10.1177/003754977101600202"
+      },
+      {
+        "label": "John D. Sterman, « System Dynamics Modeling: Tools for Learning in a Complex World », California Management Review, vol. 43, n° 4, 2001, p. 8-25.",
+        "kind": "secondary-academic",
+        "reference": "10.2307/41166098",
+        "url": "https://doi.org/10.2307/41166098"
       }
     ]
   },
@@ -1124,6 +1210,49 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "le-trouble-vient-des-politiques",
+    "slug": "le-trouble-vient-des-politiques",
+    "title": "Le trouble vient des politiques suivies",
+    "authorLabel": "Jay W. Forrester",
+    "hookQuestion": "Et si les difficultés d'une organisation venaient de ses propres règles ?",
+    "shortExplanation": "Forrester : mises bout à bout dans un modèle, les politiques que chacun applique de bonne foi suffisent à produire le trouble qu'on impute au dehors.",
+    "authors": [],
+    "themes": [
+      "comportement-dans-le-temps"
+    ],
+    "themeLabel": "Ce qu'une structure finit par produire",
+    "attributionNote": "Concept de Jay W. Forrester, fondateur de la dynamique des systèmes au Massachusetts Institute of Technology.",
+    "quotation": {
+      "text": "Autrement dit, les pratiques connues et voulues de l'organisation suffisent à créer les difficultés qu'elle éprouve.",
+      "reference": "Jay W. Forrester, « Counterintuitive Behavior of Social Systems », D-4468-2, System Dynamics Group, Massachusetts Institute of Technology, 1995, p. 7, section III",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Jay W. Forrester, « Counterintuitive Behavior of Social Systems », D-4468-2, System Dynamics Group, Massachusetts Institute of Technology, 1995, 28 p. Mise à jour de l'article paru dans Technology Review en janvier 1971.",
+        "kind": "primary",
+        "url": "https://ocw.mit.edu/courses/15-988-system-dynamics-self-study-fall-1998-spring-1999/65cdf0faf132dec7ec75e91f9651b31f_behavior.pdf"
+      },
+      {
+        "label": "Jay W. Forrester, « Counterintuitive Behavior of Social Systems », D-4468-1, Creative Learning Exchange, 1995, 30 p. Second exemplaire de la même mise à jour, distribué avec l'autorisation portée en tête du document.",
+        "kind": "primary",
+        "url": "http://static.clexchange.org/ftp/documents/system-dynamics/SD1993-01CounterintuitiveBe.pdf"
+      },
+      {
+        "label": "Jay W. Forrester, « Counterintuitive Behavior of Social Systems », Simulation, vol. 16, n° 2, février 1971, p. 61-76.",
+        "kind": "primary",
+        "reference": "10.1177/003754977101600202",
+        "url": "https://doi.org/10.1177/003754977101600202"
+      },
+      {
+        "label": "John D. Sterman, « Learning from Evidence in a Complex World », American Journal of Public Health, vol. 96, n° 3, mars 2006, p. 505-514.",
+        "kind": "secondary-academic",
+        "reference": "10.2105/ajph.2005.066043",
+        "url": "https://doi.org/10.2105/ajph.2005.066043"
+      }
+    ]
+  },
+  {
     "id": "loi-de-campbell",
     "slug": "loi-de-campbell",
     "title": "Loi de Campbell",
@@ -1531,6 +1660,44 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "paradigme-source-du-systeme",
+    "slug": "paradigme-source-du-systeme",
+    "title": "Le paradigme, source du système",
+    "authorLabel": "Donella H. Meadows",
+    "hookQuestion": "D'où un système tient-il ses buts, avant même ses règles ?",
+    "shortExplanation": "Meadows place au sommet de ses points de levier l'idée partagée d'où le système tire ses buts : la changer transforme tout le reste, et rien n'y résiste autant.",
+    "authors": [],
+    "themes": [
+      "ou-intervenir-dans-un-systeme"
+    ],
+    "themeLabel": "Là où l'on peut vraiment peser",
+    "attributionNote": "Concept de Donella H. Meadows, formée à la dynamique des systèmes auprès de Jay W. Forrester.",
+    "quotation": {
+      "text": "Les paradigmes sont les sources des systèmes. D'eux, de ces accords sociaux partagés sur la nature du réel, viennent les buts du système […]",
+      "reference": "Donella H. Meadows, Leverage Points: Places to Intervene in a System, The Sustainability Institute, 1999, p. 18",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Donella H. Meadows, Leverage Points: Places to Intervene in a System, Hartland (Vermont), The Sustainability Institute, décembre 1999, 21 p.",
+        "kind": "primary",
+        "url": "https://donellameadows.org/wp-content/userfiles/Leverage_Points.pdf"
+      },
+      {
+        "label": "David J. Abson et al., « Leverage points for sustainability transformation », Ambio, vol. 46, n° 1, 2017, p. 30-39.",
+        "kind": "secondary-academic",
+        "reference": "10.1007/s13280-016-0800-y",
+        "url": "https://doi.org/10.1007/s13280-016-0800-y"
+      },
+      {
+        "label": "Joern Fischer et Maraja Riechers, « A leverage points perspective on sustainability », People and Nature, vol. 1, n° 1, 2019, p. 115-120.",
+        "kind": "secondary-academic",
+        "reference": "10.1002/pan3.13",
+        "url": "https://doi.org/10.1002/pan3.13"
+      }
+    ]
+  },
+  {
     "id": "performance-totale",
     "slug": "performance-totale",
     "title": "Performance totale",
@@ -1560,6 +1727,44 @@ export const generatedConcepts: Concept[] = [
         "label": "Florence Jany-Catrice, La performance totale : nouvel esprit du capitalisme ?, Villeneuve-d'Ascq, Presses universitaires du Septentrion, coll. « Capitalisme, éthique, institutions », 2012, 176 p.",
         "kind": "primary",
         "url": "https://hal.science/hal-04148612"
+      }
+    ]
+  },
+  {
+    "id": "points-de-levier",
+    "slug": "points-de-levier",
+    "title": "Points de levier",
+    "authorLabel": "Donella H. Meadows",
+    "hookQuestion": "Où appuyer dans un système pour que quelque chose bouge vraiment ?",
+    "shortExplanation": "Meadows classe douze endroits où intervenir, du réglage d'un paramètre au changement de paradigme, et prévient qu'on les actionne d'ordinaire à l'envers.",
+    "authors": [],
+    "themes": [
+      "ou-intervenir-dans-un-systeme"
+    ],
+    "themeLabel": "Là où l'on peut vraiment peser",
+    "attributionNote": "Concept de Donella H. Meadows, formée à la dynamique des systèmes auprès de Jay W. Forrester.",
+    "quotation": {
+      "text": "Les points de levier ne sont pas intuitifs. Ou s'ils le sont, nous les utilisons intuitivement à l'envers […]",
+      "reference": "Donella H. Meadows, Leverage Points: Places to Intervene in a System, The Sustainability Institute, 1999, p. 2",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Donella H. Meadows, Leverage Points: Places to Intervene in a System, Hartland (Vermont), The Sustainability Institute, décembre 1999, 21 p.",
+        "kind": "primary",
+        "url": "https://donellameadows.org/wp-content/userfiles/Leverage_Points.pdf"
+      },
+      {
+        "label": "David J. Abson et al., « Leverage points for sustainability transformation », Ambio, vol. 46, n° 1, 2017, p. 30-39.",
+        "kind": "secondary-academic",
+        "reference": "10.1007/s13280-016-0800-y",
+        "url": "https://doi.org/10.1007/s13280-016-0800-y"
+      },
+      {
+        "label": "Joern Fischer et Maraja Riechers, « A leverage points perspective on sustainability », People and Nature, vol. 1, n° 1, 2019, p. 115-120.",
+        "kind": "secondary-academic",
+        "reference": "10.1002/pan3.13",
+        "url": "https://doi.org/10.1002/pan3.13"
       }
     ]
   },
@@ -2080,6 +2285,70 @@ export const generatedConcepts: Concept[] = [
         "kind": "primary",
         "reference": "10.4000/activites.1704",
         "url": "https://journals.openedition.org/activites/1704"
+      }
+    ]
+  },
+  {
+    "id": "systeme-concret-systeme-construit",
+    "slug": "systeme-concret-systeme-construit",
+    "title": "Le système concret et le système construit",
+    "authorLabel": "Charles Roig",
+    "hookQuestion": "Le système que vous étudiez : dehors, ou dans votre modèle ?",
+    "shortExplanation": "Pour Roig, l'essentiel de la démarche systémique tient dans un seul rapport : celui du système réel au système intellectuel bâti pour l'exprimer.",
+    "authors": [],
+    "themes": [
+      "dire-systeme"
+    ],
+    "themeLabel": "Ce qu'on engage en disant système",
+    "attributionNote": "Analyse de Charles Roig, présentée aux Journées d'étude sur l'analyse systémique en science politique, Paris, avril 1970.",
+    "quotation": {
+      "text": "[…] l'étude du rapport entre le système concret situé dans le monde réel et le système intellectuel construit pour l'exprimer symboliquement.",
+      "reference": "Charles Roig, « La théorie générale des systèmes et ses perspectives de développement dans les sciences sociales », Revue française de sociologie, XI-XII, numéro spécial, 1970-1971, p. 47-97, p. 63"
+    },
+    "sources": [
+      {
+        "label": "Charles Roig, « La théorie générale des systèmes et ses perspectives de développement dans les sciences sociales », Revue française de sociologie, XI-XII, numéro spécial, 1970-1971, p. 47-97.",
+        "kind": "primary",
+        "reference": "10.2307/3320513",
+        "url": "https://www.persee.fr/doc/rfsoc_0035-2969_1970_hos_11_1_1603"
+      },
+      {
+        "label": "Anatol Rapoport, « La théorie moderne des systèmes : un guide pour faire face aux changements », Revue française de sociologie, XI-XII, numéro spécial, 1970-1971, p. 23-46.",
+        "kind": "francophone-reception",
+        "reference": "10.2307/3320512",
+        "url": "https://www.persee.fr/doc/rfsoc_0035-2969_1970_hos_11_1_1602"
+      }
+    ]
+  },
+  {
+    "id": "transposition-analogique",
+    "slug": "transposition-analogique",
+    "title": "Transposition analogique",
+    "authorLabel": "Charles Roig",
+    "hookQuestion": "Que reste-t-il d'une notion empruntée sans la théorie qui la fonde ?",
+    "shortExplanation": "Roig montre que les sciences sociales n'ont retenu de la cybernétique que des éléments isolés, pilotage, feedback, contrôle, détachés de ce qui leur donnait sens.",
+    "authors": [],
+    "themes": [
+      "dire-systeme"
+    ],
+    "themeLabel": "Ce qu'on engage en disant système",
+    "attributionNote": "Analyse de Charles Roig, présentée aux Journées d'étude sur l'analyse systémique en science politique, Paris, avril 1970.",
+    "quotation": {
+      "text": "[…] elles ne retiennent de la cybernétique que des éléments isolés […] indépendamment de la théorie d'ensemble qui les fonde.",
+      "reference": "Charles Roig, « La théorie générale des systèmes et ses perspectives de développement dans les sciences sociales », Revue française de sociologie, XI-XII, numéro spécial, 1970-1971, p. 47-97, p. 64"
+    },
+    "sources": [
+      {
+        "label": "Charles Roig, « La théorie générale des systèmes et ses perspectives de développement dans les sciences sociales », Revue française de sociologie, XI-XII, numéro spécial, 1970-1971, p. 47-97.",
+        "kind": "primary",
+        "reference": "10.2307/3320513",
+        "url": "https://www.persee.fr/doc/rfsoc_0035-2969_1970_hos_11_1_1603"
+      },
+      {
+        "label": "Anatol Rapoport, « La théorie moderne des systèmes : un guide pour faire face aux changements », Revue française de sociologie, XI-XII, numéro spécial, 1970-1971, p. 23-46.",
+        "kind": "francophone-reception",
+        "reference": "10.2307/3320512",
+        "url": "https://www.persee.fr/doc/rfsoc_0035-2969_1970_hos_11_1_1602"
       }
     ]
   },

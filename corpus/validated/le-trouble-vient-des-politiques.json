@@ -1,0 +1,82 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "le-trouble-vient-des-politiques",
+  "slug": "le-trouble-vient-des-politiques",
+  "status": "VALIDATED",
+  "title": "Le trouble vient des politiques suivies",
+  "themes": [
+    "comportement-dans-le-temps"
+  ],
+  "theme_labels": {
+    "comportement-dans-le-temps": "Ce qu'une structure finit par produire"
+  },
+  "authors": [
+    {
+      "name": "Jay W. Forrester",
+      "app_author_id": null
+    }
+  ],
+  "hook": "Et si les difficultés d'une organisation venaient de ses propres règles ?",
+  "summary": "Forrester : mises bout à bout dans un modèle, les politiques que chacun applique de bonne foi suffisent à produire le trouble qu'on impute au dehors.",
+  "sources": [
+    {
+      "label": "Jay W. Forrester, « Counterintuitive Behavior of Social Systems », D-4468-2, System Dynamics Group, Massachusetts Institute of Technology, 1995, 28 p. Mise à jour de l'article paru dans Technology Review en janvier 1971.",
+      "kind": "primary",
+      "url": "https://ocw.mit.edu/courses/15-988-system-dynamics-self-study-fall-1998-spring-1999/65cdf0faf132dec7ec75e91f9651b31f_behavior.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Jay W. Forrester, « Counterintuitive Behavior of Social Systems », D-4468-1, Creative Learning Exchange, 1995, 30 p. Second exemplaire de la même mise à jour, distribué avec l'autorisation portée en tête du document.",
+      "kind": "primary",
+      "url": "http://static.clexchange.org/ftp/documents/system-dynamics/SD1993-01CounterintuitiveBe.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Jay W. Forrester, « Counterintuitive Behavior of Social Systems », Simulation, vol. 16, n° 2, février 1971, p. 61-76.",
+      "kind": "primary",
+      "locator": "p. 61-76",
+      "doi_isbn": "10.1177/003754977101600202",
+      "url": "https://doi.org/10.1177/003754977101600202",
+      "consulted": "metadata-only"
+    },
+    {
+      "label": "John D. Sterman, « Learning from Evidence in a Complex World », American Journal of Public Health, vol. 96, n° 3, mars 2006, p. 505-514.",
+      "kind": "secondary-academic",
+      "locator": "p. 505-514",
+      "doi_isbn": "10.2105/ajph.2005.066043",
+      "url": "https://doi.org/10.2105/ajph.2005.066043",
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "reviewer": "chaîne Curiosity, session du 22 août 2026 (contrôle non aveugle, voir notes)",
+    "date": "2026-08-22",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "Contrôle du 22 août 2026, mené dans la même session que la rédaction : il n'a donc pas été aveugle au sens de docs/corpus-workflow.md. Le dossier de npm run corpus:brief a été produit et relu, les quatre questions ont été tranchées une à une contre les textes rouverts, et l'écart au protocole est déclaré ici plutôt que passé sous silence."
+    ]
+  },
+  "attribution_note": "Concept de Jay W. Forrester, fondateur de la dynamique des systèmes au Massachusetts Institute of Technology.",
+  "quotation": {
+    "text": "Autrement dit, les pratiques connues et voulues de l'organisation suffisent à créer les difficultés qu'elle éprouve.",
+    "reference": "Jay W. Forrester, « Counterintuitive Behavior of Social Systems », D-4468-2, System Dynamics Group, Massachusetts Institute of Technology, 1995.",
+    "locator": "p. 7, section III",
+    "language": "fr",
+    "original_text": "In other words, the known and intended practices of the organization are sufficient to create the difficulties being experienced.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (chaîne Curiosity, 22 août 2026). Aucune traduction française publiée de ce texte n'a été cherchée ni identifiée."
+    }
+  },
+  "notes": [
+    "La citation est relevée sur D-4468-2, mise à jour de mars 1995, et non sur l'article de Technology Review 73(3), janvier 1971, qui n'a pas été ouvert. Le document porte lui-même sa date de révision et son texte a bougé avec elle : il annonce « developments over the last 60 years », ce que l'article de 1971 ne pouvait pas écrire. Le verbatim retenu a été comparé chaîne par chaîne sur un second exemplaire indépendant, D-4468-1 du Creative Learning Exchange : identique.",
+    "Le « de bonne foi » du résumé n'est pas un adoucissement : le texte l'écrit, « people are usually trying in good conscience and to the best of their abilities to help solve the major difficulties » (p. 7).",
+    "Le « qu'on impute au dehors » vient de la phrase suivante, « Usually, problems are blamed on outside forces, but a dynamic analysis often shows how internal policies are causing the troubles » (p. 7). La carte ne dit rien de plus que ces deux phrases."
+  ]
+}
