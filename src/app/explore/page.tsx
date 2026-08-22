@@ -70,9 +70,9 @@ export default function ExplorePage() {
           <TreeLink
             href="/settings"
             aria-label="Réglages"
-            className="press -mr-2 flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-ink-faint hover:bg-paper-raised hover:text-ink"
+            className="press settings-trigger -mr-2 flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-ink-faint hover:bg-paper-raised hover:text-ink"
           >
-            <Settings size={18} strokeWidth={1.75} />
+            <Settings size={18} strokeWidth={1.75} className="settings-icon" />
           </TreeLink>
         </div>
 
