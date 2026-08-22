@@ -255,6 +255,29 @@
   --rail-width: 6.5rem;
 
   /*
+   * La ligne de lecture, gouttière déduite — 496 px, soit 57 signes à 17,3 px.
+   *
+   * Elle double `--container-read` sans la répéter : celle-là borne une
+   * **colonne d'écran**, remplissage compris, celle-ci borne le **texte** à
+   * l'intérieur d'une colonne qui peut être bien plus large. Les deux étaient
+   * la même valeur tant qu'un écran de lecture n'était qu'une colonne ; elles
+   * cessent de l'être dès qu'un en-tête et un rail l'accompagnent.
+   */
+  --measure-read: 31rem;
+
+  /*
+   * Le rail contextuel — celui du contenu, à ne pas confondre avec
+   * `--rail-width`, qui est celui de la navigation.
+   *
+   * 240 px est la largeur en dessous de laquelle une notice bibliographique
+   * — un nom, un titre entre guillemets, une année, une pagination — se casse
+   * en six lignes. 320 px est celle au-delà de laquelle elle cesserait de se
+   * lire comme un appareil pour se lire comme une seconde colonne de texte.
+   */
+  --rail-context-min: 15rem;
+  --rail-context-max: 20rem;
+
+  /*
    * La hauteur d'un écran, réserve de navigation déduite.
    *
    * Elle vivait dans `page.tsx`, seule à s'en servir. Elle en sort parce qu'elle
@@ -312,6 +335,14 @@
  * pas placé plus bas parce qu'en dessous l'appareil est plausiblement tenu en
  * main : `--card-scale` y descend jusqu'à 12,8 px sur un téléphone couché, et
  * une colonne de 544 px à cette taille repasserait au-dessus de 75 signes.
+ *
+ * C'est aussi là que la **composition** cesse d'être celle d'un téléphone
+ * élargi, et non seulement sa largeur : la colonne d'exploration s'ouvre à
+ * `--container-wide`, l'écran de lecture sépare son en-tête de son corps, la
+ * gouttière se met à suivre la fenêtre, et un rail contextuel devient
+ * possible à droite du texte. Ce que ce seuil ouvre est décrit à la section
+ * « Composition » ; ce qu'il change vraiment est qu'une page cesse d'imposer
+ * sa largeur à ses paragraphes.
  *
  * Les deux valeurs sont celles de `md` et `lg` de Tailwind : les écrire ici en
  * dur plutôt que d'inventer des seuils propres évite deux échelles de rupture
@@ -399,7 +430,7 @@
 
 @theme {
   /* ------------------------------------------------------------------------
-   * Les mesures de colonne — deux, et elles ne disent pas la même chose.
+   * Les mesures de colonne — une échelle, et non une largeur
    *
    * L'application n'en avait qu'une, `max-w-md`, posée sur les neuf écrans.
    * Elle est juste tant que la largeur est bornée par l'appareil ; sur un
@@ -411,36 +442,60 @@
    * texte y perd — au-delà de 75 signes par ligne, l'œil rate le retour à la
    * ligne suivante.
    *
-   * D'où deux mesures, nommées par ce qu'elles portent :
+   * Trois mesures ont d'abord répondu à ce constat, et elles ont tenu jusqu'au
+   * second seuil. Ce qu'elles ne disaient pas est ce qu'un **écran de bureau**
+   * demande : la plus large des trois, 736 px, avait été calibrée quand la
+   * question était « la tablette », et personne ne l'a rouverte quand le rail
+   * est apparu. Sur 1440, elle laisse 600 px de vide à droite d'une grille qui
+   * a de quoi les employer.
+   *
+   * D'où une échelle. Chaque barreau est nommé par **ce qu'il porte**, jamais
+   * par la taille d'écran où il apparaît — c'est la seule façon de savoir
+   * lequel choisir en écrivant un écran :
    *
    * | Mesure | Largeur | Contenu utile | Ce qu'elle porte |
    * |---|---|---|---|
+   * | `--container-hand` | 448 px | 400 px | Ce que l'appareil borne déjà |
    * | `--container-note` | 416 px | 416 px | Une mention en petit corps |
    * | `--container-read` | 544 px | 496 px | Ce qui se lit ligne à ligne |
-   * | `--container-page` | 736 px | 688 px | Un en-tête et sa liste |
+   * | `--container-page` | 736 px | 688 px | Un en-tête et sa liste, au premier seuil |
+   * | `--container-title` | 768 px | 768 px | Un titre et ce qui le situe |
+   * | `--container-editorial` | 880 px | 780 px | Un écran de lecture entier |
+   * | `--container-reading` | 976 px | 876 px | Le même, quand un rail l'accompagne |
+   * | `--container-wide` | 1120 px | 1020 px | Un écran d'exploration, au second seuil |
    *
-   * Le contenu utile retranche les 24 px de remplissage de chaque côté quand la
-   * mesure borne une colonne d'écran ; `--container-note` borne un paragraphe
-   * déjà à l'intérieur, et ne retranche donc rien.
+   * Le contenu utile retranche la gouttière de chaque côté quand la mesure
+   * borne une colonne d'écran ; `--container-note` et `--container-title`
+   * bornent un bloc déjà à l'intérieur, et ne retranchent donc rien. La
+   * gouttière n'est plus constante au-delà du second seuil — voir `.column`,
+   * section « Composition ».
    *
    * À 17,3 px, 496 px portent 57 signes ; à 18 px — la carte du jour sur un
    * grand écran —, 55. Les deux sont au milieu de la fourchette.
    *
-   * **La mesure suit le corps, et c'est la raison d'être de la première
-   * ligne.** La fourchette de 45 à 75 signes compte des signes, pas des
-   * pixels : une mention à 12 px dans une colonne calibrée pour 17,3 en porte
-   * 82. Sur du texte courant l'écart se rattrape, mais ces mentions-là sont
-   * déjà ce qu'un écran a de plus coûteux à lire — petit corps, gris sourd,
-   * plusieurs lignes. 416 px les ramènent à 69 signes.
+   * **La mesure suit le corps, et c'est la raison d'être de `--container-note`.**
+   * La fourchette de 45 à 75 signes compte des signes, pas des pixels : une
+   * mention à 12 px dans une colonne calibrée pour 17,3 en porte 82. Sur du
+   * texte courant l'écart se rattrape, mais ces mentions-là sont déjà ce qu'un
+   * écran a de plus coûteux à lire — petit corps, gris sourd, plusieurs
+   * lignes. 416 px les ramènent à 69 signes.
    *
-   * Les trois se composent : un écran de liste prend `--container-page`, la
-   * prose qu'il contient reprend `--container-read`, et une mention y reprend
-   * `--container-note`. Une page de domaine porte les deux premières, et c'est
-   * le cas nominal.
+   * **Les quatre dernières ne se substituent pas aux trois premières : elles
+   * les composent.** Un écran d'exploration prend `--container-wide`, la prose
+   * qu'il contient reprend `--container-read`, et une mention y reprend
+   * `--container-note`. Un écran de lecture prend `--container-editorial`, son
+   * titre `--container-title`, son corps la mesure de lecture. C'est le cas
+   * nominal, et c'est ce qui interdit à la largeur d'une page de commander
+   * celle de ses paragraphes.
    * ------------------------------------------------------------------------ */
+  --container-hand: 28rem;
   --container-note: 26rem;
   --container-read: 34rem;
   --container-page: 46rem;
+  --container-title: 48rem;
+  --container-editorial: 55rem;
+  --container-reading: 61rem;
+  --container-wide: 70rem;
 }
 
 
@@ -817,6 +872,265 @@ body {
 }
 
 /* --------------------------------------------------------------------------
+ * Composition — la colonne d'un écran, et les trois choses qui la décident
+ *
+ * Un écran n'a pas une largeur, il a une **fonction**, et c'est elle qui
+ * décide de la mesure. Cette section porte le mécanisme ; l'échelle des
+ * mesures est plus haut, dans `@theme`.
+ *
+ * Une classe, trois modificateurs, et rien d'autre : c'est ce qui remplace les
+ * `mx-auto max-w-md px-6 md:max-w-page` recopiés sur chaque écran. Neuf
+ * exemplaires d'une même décision divergent toujours — c'est exactement ce
+ * qui était arrivé aux lignes de liste avant qu'il n'en reste une.
+ *
+ * **Trois états de composition, pas trois tailles d'appareil.** Le palier
+ * change quand une composition nouvelle devient possible, jamais quand un
+ * appareil change de nom :
+ *
+ * | Palier | Mesure d'un écran d'exploration | Ce qui devient possible |
+ * |---|---|---|
+ * | En dessous de 48 rem | `--container-hand` | Rien : la largeur est celle de l'appareil |
+ * | 48 à 64 rem | `--container-page` | Les listes passent à deux colonnes |
+ * | Au-delà de 64 rem | `--container-wide` | La grille cesse d'être une liste élargie |
+ *
+ * **La gouttière cesse d'être constante au second seuil.** 24 px sur un
+ * téléphone sont le maximum qu'on puisse rendre au texte ; les mêmes 24 px
+ * contre le bord d'une fenêtre de 1440 collent le contenu au vide. Elle suit
+ * donc la fenêtre entre 24 et 56 px, et c'est elle — non la mesure — qui fait
+ * qu'un conteneur au plafond garde de grandes marges extérieures.
+ *
+ * **Ce que la colonne ne fait pas : centrer sur la fenêtre.** `margin-inline:
+ * auto` centre dans ce qui reste après le rail, parce que `.app-body` a déjà
+ * retranché sa largeur. Le contenu est donc décalé de la moitié du rail vers
+ * la droite, ce qui est le comportement attendu d'une mise en page à rail.
+ * -------------------------------------------------------------------------- */
+
+.column {
+  /*
+   * La gouttière est déclarée ici et non sur `:root` pour une seule raison :
+   * `--gutter-hand` doit pouvoir être remplacé par l'écran qui en a besoin
+   * (voir `.column-tight`), et une substitution ne se résout qu'à l'endroit
+   * où elle est écrite.
+   */
+  --gutter: var(--gutter-hand, 1.5rem);
+  --column-measure: var(--container-read);
+  width: 100%;
+  max-width: var(--column-hand, var(--container-hand));
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+/* Ce qui se lit seul : une fiche sans rail, les réglages. */
+.column-read {
+  --column-measure: var(--container-read);
+}
+
+/*
+ * Un écran de lecture : un en-tête éditorial, un corps borné par la ligne, et
+ * un rail quand il y a réellement quelque chose à y mettre.
+ */
+.column-editorial {
+  --column-measure: var(--container-page);
+}
+
+/* Un écran d'exploration : une grille qu'on parcourt du regard. */
+.column-wide {
+  --column-measure: var(--container-page);
+}
+
+/*
+ * Un texte long en serif, sur un téléphone — et les deux seules choses que
+ * cette situation change.
+ *
+ * **La colonne est plus large que celle des autres écrans.** 28 rem étaient
+ * justes tant que le texte était en Inter : 400 px portaient 47 signes par
+ * ligne, dans la fourchette de 45 à 75. La serif la lui fait perdre — à
+ * hauteur d'x égale, elle occupe 7 % de plus par signe, et la même colonne
+ * serait retombée à 42 signes, sous le plancher. 32 rem la portent à 472 px
+ * et la ligne à 52 signes.
+ *
+ * **La gouttière rend quatre pixels au texte**, du côté où la place manque
+ * vraiment : sur un téléphone, la largeur est bornée par l'appareil et c'est
+ * la seule marge de manœuvre qui reste. Elle ne rend que huit pixels, et c'est
+ * tout ce qu'il y a.
+ *
+ * Au-delà du premier seuil, ni l'une ni l'autre n'a plus de raison d'être :
+ * la mesure de l'écran reprend la main, et la règle ci-dessous ramène la
+ * gouttière dans le rang.
+ */
+.column-serif {
+  --column-hand: 32rem;
+  --gutter-hand: 1.25rem;
+}
+
+@media (min-width: 48rem) {
+  .column {
+    max-width: var(--column-measure);
+  }
+  .column-serif {
+    --gutter-hand: 1.5rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .column {
+    --gutter: clamp(1.5rem, 3.5vw, 3.5rem);
+  }
+  .column-editorial {
+    --column-measure: var(--container-editorial);
+  }
+  /*
+   * La colonne d'un écran de lecture s'élargit **de la largeur du rail**, et
+   * seulement quand ce rail existe. Sans lui, la même mesure laisserait le
+   * corps de lecture accroché au bord gauche d'un conteneur qu'il ne remplit
+   * pas — c'est-à-dire le défaut qu'on corrige, déplacé d'un cran.
+   *
+   * Le `:has` évite le seul mécanisme qu'il fallait éviter : une classe
+   * conditionnelle posée par le composant, c'est-à-dire une seconde
+   * implémentation de la question « ce rail a-t-il un contenu ». Le rail est
+   * rendu ou il ne l'est pas ; la feuille de style lit la réponse.
+   */
+  .column-editorial:has(.reading-rail) {
+    --column-measure: var(--container-reading);
+  }
+  .column-wide {
+    --column-measure: var(--container-wide);
+  }
+}
+
+/* --------------------------------------------------------------------------
+ * L'écran de lecture — un en-tête large, un corps étroit, un rail facultatif
+ *
+ * C'est la seule composition de l'application qui change de forme, et elle
+ * répond à un constat mesurable : la fiche d'un concept et l'approfondissement
+ * portaient la mesure de lecture sur **tout** l'écran, titre compris. Un titre
+ * de 30 px borné à 496 px se casse en trois lignes là où il en tiendrait sur
+ * une seule, et les cinq notices bibliographiques attendaient tout en bas d'un
+ * écran qui avait 300 px de vide à droite du texte.
+ *
+ * | Zone | Mesure | Pourquoi celle-là |
+ * |---|---|---|
+ * | En-tête | `--container-title` | Un titre gagne à la largeur ; il ne se lit pas ligne à ligne |
+ * | Corps | `--measure-read` | La ligne, et rien d'autre : 496 px portent 57 signes à 17,3 px |
+ * | Rail | 240 à 320 px | Assez pour une notice bibliographique, jamais assez pour un second article |
+ *
+ * **La largeur de la page ne commande pas celle des paragraphes.** C'est la
+ * seule règle de cette section, et les deux plafonds ci-dessous existent
+ * uniquement pour la tenir, y compris dans l'état empilé où aucune grille
+ * n'est là pour le faire.
+ *
+ * **Le seuil est posé sur le conteneur, pas sur la fenêtre.** Une requête de
+ * fenêtre dirait « il y a 1024 px quelque part » ; ce qu'il faut savoir est
+ * « ce bloc dispose-t-il de la place pour deux colonnes ». Les deux se
+ * séparent dès qu'on agrandit la police du système : les mesures étant en rem,
+ * la colonne rétrécit en pixels de mise en page alors que la fenêtre n'a pas
+ * bougé, et la requête de conteneur replie le rail au lieu d'écraser le texte.
+ *
+ * **L'ordre du document est celui de la lecture, dans les deux états.**
+ * En-tête, corps, appareil documentaire, action : empilé sur un téléphone,
+ * réparti en deux colonnes sur un écran de bureau, mais jamais réordonné. La
+ * grille ne déplace rien — elle place l'appareil documentaire à droite du
+ * corps au lieu de dessous.
+ * -------------------------------------------------------------------------- */
+
+.reading-shell {
+  container: reading / inline-size;
+}
+
+.reading-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.reading-head {
+  max-width: var(--container-title);
+}
+
+.reading-body {
+  max-width: var(--measure-read);
+  margin-top: var(--gap-row);
+}
+
+/*
+ * Empilé sous le texte, le rail reprend la mesure de lecture — 496 px, celle
+ * qu'il avait quand il était encore la dernière section de l'écran. Sans ce
+ * plafond, une notice bibliographique à 13,8 px s'étalerait sur les 688 px de
+ * la colonne d'une tablette et porterait 100 signes par ligne : la colonne se
+ * serait élargie pour le titre, et l'appareil documentaire aurait suivi sans
+ * qu'on le lui demande. En deux colonnes, la piste de la grille est plus
+ * étroite et ce plafond ne fait plus rien.
+ */
+.reading-rail {
+  max-width: var(--measure-read);
+  margin-top: var(--reading-stack-gap, var(--gap-section));
+}
+
+.reading-after {
+  max-width: var(--measure-read);
+  margin-top: var(--reading-stack-gap, var(--gap-section));
+}
+
+/*
+ * Un texte long — mille cinq cents mots et ses sections — sépare ses blocs de
+ * premier niveau d'un écart de groupe et non d'un écart de section. C'est la
+ * règle du rythme vertical appliquée à ce que ces blocs sont réellement : les
+ * seules ruptures d'un défilement de huit écrans, et non deux sections d'un
+ * même écran.
+ */
+.reading-long {
+  --reading-stack-gap: var(--gap-group);
+}
+
+/*
+ * 52 rem : la place qu'il faut pour poser 496 px de texte, une gouttière de
+ * 40 px et un rail de 296 px sans rien comprimer. En dessous, les deux
+ * colonnes se prendraient l'une sur l'autre, et c'est le texte qui perdrait.
+ */
+@container reading (min-width: 52rem) {
+  .reading-layout {
+    /*
+     * La ligne est une piste **fixe**, le rail est la piste souple, et l'ordre
+     * n'est pas indifférent : deux pistes élastiques se partagent la place
+     * manquante au prorata, ce qui rognait le texte de quelques pixels quand
+     * la gouttière montait avec la fenêtre. Une piste fixe ne se rogne pas —
+     * c'est le rail qui respire entre ses 240 et ses 320 px, et c'est bien lui
+     * qui doit le faire.
+     */
+    grid-template-columns:
+      var(--measure-read)
+      minmax(var(--rail-context-min), var(--rail-context-max));
+    column-gap: clamp(2.5rem, 6cqi, 5rem);
+    align-items: start;
+  }
+
+  .reading-head {
+    grid-column: 1 / -1;
+  }
+
+  .reading-body,
+  .reading-after {
+    grid-column: 1;
+  }
+
+  /*
+   * Le rail suit le défilement, et c'est sa seule raison d'être sticky : on
+   * consulte une source **pendant** qu'on lit le passage qui s'y appuie, et
+   * un appareil documentaire resté trois écrans plus haut ne sert à rien.
+   *
+   * Il ne porte que ce qui tient : cinq notices au plus, plafonnées par le
+   * validateur du corpus. Un bloc plus grand que la fenêtre cesserait de
+   * coller et se mettrait à défiler à contretemps du texte, ce qui est pire
+   * que de ne pas coller du tout.
+   */
+  .reading-rail {
+    grid-column: 2;
+    margin-top: var(--gap-row);
+    position: sticky;
+    top: var(--gap-section);
+  }
+}
+
+/* --------------------------------------------------------------------------
  * Rythme vertical — les trois écarts qui font comprendre un regroupement
  *
  * Les lignes de liste portent un remplissage qui agrandit la cible tactile
@@ -843,18 +1157,29 @@ body {
  * demandent un défilement pour rien, et un défilement fait perdre la
  * comparaison — qui est exactement ce qu'on fait sur ces écrans.
  *
- * **Deux colonnes, et pas trois.** Sur 688 px utiles, deux colonnes en donnent
- * 328 à chacune, où la phrase de situation d'une ligne tient en deux lignes de
- * texte. Trois la feraient tomber à 208 px et à quatre lignes : la liste
- * gagnerait en hauteur ce que la troisième colonne prétendait lui faire
- * économiser. Le rythme vertical, lui, ne change pas — c'est le même écart
- * entre deux frères, qu'ils soient empilés ou côte à côte.
+ * **Deux colonnes, et pas trois.** Sur les 688 px utiles du premier seuil,
+ * deux colonnes en donnent 328 à chacune, où la phrase de situation d'une
+ * ligne tient en deux lignes de texte. Trois la feraient tomber à 208 px et à
+ * quatre lignes : la liste gagnerait en hauteur ce que la troisième colonne
+ * prétendait lui faire économiser. Sur les 1020 px du second, deux colonnes en
+ * donnent 474, soit 66 signes pour une phrase à 14,4 px — dans la fourchette,
+ * et le raisonnement ne change pas : une troisième colonne coûterait à la
+ * hauteur ce qu'elle prétend lui faire gagner. Le rythme vertical, lui, ne
+ * change pas — c'est le même écart entre deux frères, qu'ils soient empilés ou
+ * côte à côte.
+ *
+ * **La gouttière, elle, suit la fenêtre.** Deux colonnes séparées par 32 px
+ * sur 1020 px de large ne se lisent plus comme deux colonnes mais comme une
+ * liste coupée en deux : c'est l'écart entre elles qui dit qu'on peut lire
+ * l'une sans l'autre. Elle part donc de l'écart entre deux frères — là où
+ * elle a toujours valu, au premier seuil — et monte jusqu'à 96 px, où elle
+ * cesse d'être une gouttière pour devenir un vide.
  */
 @media (min-width: 48rem) {
   .rows-wide {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    column-gap: var(--gap-row);
+    column-gap: clamp(var(--gap-row), 5vw, 6rem);
     row-gap: calc(var(--gap-row) - 2 * var(--gap-item));
   }
   .rows-wide > li + li {

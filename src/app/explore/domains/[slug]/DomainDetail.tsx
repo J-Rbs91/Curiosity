@@ -27,7 +27,7 @@ export function DomainDetail({ slug }: { slug: string }) {
 
   return (
     <Screen>
-      <div className="mx-auto max-w-md px-6 pt-10 pb-12 md:max-w-page">
+      <div className="column column-wide pt-10 pb-12">
         <BackLink />
 
         {/*
@@ -36,7 +36,7 @@ export function DomainDetail({ slug }: { slug: string }) {
          * situe en une ligne, puis s'efface.
          */}
         {family && <p className="mt-6 eyebrow">{family.label}</p>}
-        <h1 className="mt-2 font-serif-display text-2xl font-semibold leading-tight text-ink">
+        <h1 className="mt-2 max-w-title font-serif-display text-2xl font-semibold leading-tight text-ink">
           {domain.label}
         </h1>
 

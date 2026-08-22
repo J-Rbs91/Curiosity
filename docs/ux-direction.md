@@ -1297,7 +1297,7 @@ autre produit, pas une version large de celui-ci.
 | Seuil | Ce qui cesse d'être vrai | Ce qui change |
 |---|---|---|
 | **48 rem** (768 px) | La largeur est la ressource rare | La colonne d'un écran de liste s'ouvre à 736 px ; les listes passent à deux colonnes ; la prose qu'elles contiennent reste bornée |
-| **64 rem** (1024 px) | Il y a un pouce | La barre devient un rail ; la carte récupère la hauteur que la barre retenait ; sa base typographique passe de 16 à 18 px ; l'amplitude des déplacements est plafonnée |
+| **64 rem** (1024 px) | Il y a un pouce, et la composition est encore celle d'un téléphone élargi | La barre devient un rail ; la carte récupère la hauteur que la barre retenait ; sa base typographique passe de 16 à 18 px ; l'amplitude des déplacements est plafonnée ; la colonne d'exploration s'ouvre à 1120 px ; l'écran de lecture sépare son en-tête de son corps et peut porter un rail contextuel ; la gouttière se met à suivre la fenêtre |
 
 Le second n'est pas placé plus bas parce qu'en dessous l'appareil est
 plausiblement tenu en main. `--card-scale` y descend jusqu'à 12,8 px sur un
@@ -1343,31 +1343,139 @@ Reste le rail, 104 px, deux entrées, et rien d'autre :
   C'est le comportement attendu d'une mise en page à rail, et le tenir sur les
   neuf écrans vaut mieux qu'une exception optique sur celui du jour.
 
-### Les trois mesures
+### L'échelle des mesures
 
 Une seule mesure ne peut pas servir une liste et un texte suivi : la première
 gagne à s'étaler, le second y perd dès 75 signes par ligne.
 
+Trois mesures ont d'abord répondu à ce constat. Elles ont tenu, et elles n'ont
+pas suffi : la plus large des trois avait été calibrée quand la question était
+« la tablette », et personne ne l'a rouverte quand le rail est apparu. Sur 1440,
+736 px laissent 600 px de vide à droite d'une grille qui a de quoi les employer,
+et un écran de lecture y portait la mesure du texte sur son titre comme sur ses
+sources. Le défaut n'était plus une colonne trop étroite : c'était une page qui
+imposait sa largeur à ses paragraphes.
+
+D'où une **échelle**, dont chaque barreau est nommé par ce qu'il porte :
+
 | Mesure | Largeur | Contenu utile | Ce qu'elle porte | Signes par ligne |
 |---|---|---|---|---|
+| `--container-hand` | 448 px | 400 px | Ce que l'appareil borne déjà | — |
 | `--container-note` | 416 px | 416 px | Une mention en petit corps, à 12 px | 69 |
 | `--container-read` | 544 px | 496 px | Ce qui se lit ligne à ligne, à 17,3 px | 57 |
-| `--container-page` | 736 px | 688 px | Un en-tête et sa liste | — |
+| `--container-page` | 736 px | 688 px | Un en-tête et sa liste, au premier seuil | — |
+| `--container-title` | 768 px | 768 px | Un titre et ce qui le situe | — |
+| `--container-editorial` | 880 px | 780 px | Un écran de lecture entier | — |
+| `--container-reading` | 976 px | 876 px | Le même, quand un rail l'accompagne | — |
+| `--container-wide` | 1120 px | 1020 px | Un écran d'exploration, au second seuil | — |
 
 **La mesure suit le corps.** La fourchette de 45 à 75 compte des signes, pas des
 pixels : une mention à 12 px dans la colonne calibrée pour 17,3 en porte 82.
-C'est la raison d'être de la première ligne, et elle ne sert qu'aux deux
+C'est la raison d'être de `--container-note`, et elle ne sert qu'aux deux
 mentions de la fiche de concept — provenance et note d'attribution —, qui sont
 déjà ce qu'un écran a de plus coûteux à lire.
 
-Les trois se composent. Une page de domaine porte `--container-page` sur sa
-colonne, `--container-read` sur sa phrase de situation, et sa liste de thèmes en
-deux colonnes. C'est le cas nominal, pas l'exception.
+**Les barreaux ne se substituent pas, ils se composent.** Une page de domaine
+porte `--container-wide` sur sa colonne, `--container-title` sur son titre,
+`--container-read` sur sa phrase de situation, et sa liste de thèmes en deux
+colonnes. C'est le cas nominal, pas l'exception.
 
-**Deux colonnes, et pas trois.** Sur 688 px utiles, deux colonnes en donnent 328
-à chacune, où la phrase de situation d'une ligne tient en deux lignes de texte.
-Trois la feraient tomber à 208 px et à quatre lignes : la liste gagnerait en
-hauteur ce que la troisième colonne prétendait lui faire économiser.
+**La gouttière cesse d'être constante au second seuil.** 24 px sur un téléphone
+sont le maximum qu'on puisse rendre au texte ; les mêmes 24 px contre le bord
+d'une fenêtre de 1440 collent le contenu au vide. Elle suit donc la fenêtre
+entre 24 et 56 px — `clamp(1.5rem, 3.5vw, 3.5rem)` —, et c'est elle, non la
+mesure, qui fait qu'un conteneur au plafond garde de grandes marges
+extérieures.
+
+**Deux colonnes, et pas trois.** Sur les 688 px du premier seuil, deux colonnes
+en donnent 328 à chacune, où la phrase de situation d'une ligne tient en deux
+lignes de texte. Sur les 1020 px du second, elles en donnent 474, soit 66 signes
+à 14,4 px. Trois les feraient tomber sous le seuil où une phrase de situation
+tient en deux lignes : la liste gagnerait en hauteur ce que la troisième colonne
+prétendait lui faire économiser. La gouttière entre elles, elle, suit la
+fenêtre — de 32 à 96 px : deux colonnes séparées par 32 px sur 1020 de large ne
+se lisent plus comme deux colonnes mais comme une liste coupée en deux.
+
+### Une classe, trois modificateurs
+
+Les mesures ne sont pas posées écran par écran. Elles l'étaient : neuf
+exemplaires de `mx-auto max-w-md px-6 md:max-w-page`, c'est-à-dire neuf
+exemplaires d'une même décision — et deux implémentations d'un même objet
+divergent toujours, comme les lignes de liste l'avaient déjà montré.
+
+`.column` porte le mécanisme, trois modificateurs portent la fonction :
+
+| Classe | Écrans | Mesure sous 48 rem / 48 à 64 rem / au-delà |
+|---|---|---|
+| `.column-read` | Réglages | 448 / 544 / 544 |
+| `.column-editorial` | Fiche de concept, approfondissement, introuvable | 448 / 736 / 880 — 976 avec un rail |
+| `.column-wide` | Explorer, domaine, thème, auteur, cartes précédentes | 448 / 736 / 1120 |
+
+Deux modificateurs secondaires s'ajoutent là où un écran a une raison nommée de
+se distinguer : `.column-serif` porte les deux réglages de téléphone du texte
+long — 32 rem de colonne, 20 px de gouttière — et `.reading-long` porte l'écart
+de groupe entre ses blocs de premier niveau. Aucun des deux n'invente une
+largeur : ils déplacent un point de réglage déjà existant.
+
+**La carte du jour n'entre pas dans ce système**, et c'est délibéré : sa largeur
+suit sa base typographique, laquelle suit la hauteur. Elle n'est pas une colonne
+d'écran, elle est une carte qui tient dans un écran.
+
+### L'écran de lecture — un en-tête large, un corps étroit, un rail facultatif
+
+C'est la seule composition de l'application qui change de forme, et elle répond
+à un constat mesurable : un titre de 30 px borné à 496 px se casse en trois
+lignes là où il en tiendrait sur une, et cinq notices bibliographiques
+attendaient tout en bas d'un écran qui avait 300 px de vide à droite du texte.
+
+| Zone | Mesure | Pourquoi celle-là |
+|---|---|---|
+| En-tête | 768 px | Un titre gagne à la largeur ; il ne se lit pas ligne à ligne |
+| Corps | 496 px | La ligne, et rien d'autre — inchangé, à toutes les largeurs |
+| Rail | 240 à 320 px | Assez pour une notice, jamais assez pour un second article |
+
+Quatre choses valent d'être dites, parce qu'elles sont ce qui distingue cette
+composition d'un simple élargissement :
+
+- **Le corps ne bouge pas.** 496 px de 320 à 2560 px de fenêtre. La largeur de
+  la page ne commande pas celle des paragraphes, et c'est la seule règle de
+  cette section.
+- **Le rail ne contient rien de neuf.** Ce sont les sources de la carte, le même
+  composant et la même liste, déplacés par la grille. Aucune donnée n'est
+  dupliquée, aucun sommaire n'est fabriqué, aucune statistique n'est inventée.
+  Il n'apparaît que lorsqu'il y a des sources.
+- **Le seuil est posé sur le conteneur, pas sur la fenêtre.** `@container
+  (min-width: 52rem)`. Une requête de fenêtre dirait « il y a 1024 px quelque
+  part » ; ce qu'il faut savoir est « ce bloc a-t-il la place de deux colonnes ».
+  Les deux se séparent dès qu'on agrandit la police du système : à 24 px de
+  racine sur une fenêtre de 1440, le rail se replie sous le texte au lieu de
+  l'écraser.
+- **L'ordre du document ne change pas.** En-tête, corps, appareil documentaire,
+  action — empilé sur un téléphone, réparti en deux colonnes sur un écran de
+  bureau, jamais réordonné. La tabulation traverse les sources avant
+  « Approfondir » dans les deux états, exactement comme avant.
+
+Ce que le rail ne devient pas : une seconde colonne de lecture. La frontière
+documentaire de l'approfondissement — « ce que les sources ne permettent pas
+d'établir » — reste dans le corps, en fin de texte, alors qu'elle en a la
+nature : au rail, elle serait visible dès la première ligne, c'est-à-dire
+exactement l'avertissement en tête que le §6 s'interdit.
+
+### Ce que la refonte de composition n'a pas fait
+
+- **Aucun maître-détail.** La décision qui commande, plus haut, n'est pas
+  rouverte : Explorer reste une grille, une fiche reste un écran.
+- **Aucune carte, aucun panneau, aucun encadré.** Le regroupement continue de se
+  faire par l'espacement. Le seul filet ajouté est celui qui existait déjà.
+- **Aucun contenu décoratif.** Là où l'espace reste vide après que le contenu a
+  été correctement disposé — une page de domaine à quatre thèmes sur une fenêtre
+  de 1440 —, il reste vide. Le blanc appartient à l'identité.
+- **Le rail de navigation n'a pas bougé.** 104 px, deux entrées. L'élargir pour
+  réduire le vide aurait été traiter un symptôme sur l'élément qui n'en est pas
+  la cause.
+- **Le téléphone n'a pas bougé d'un pixel.** Vérifié en comparant les rendus
+  avant et après sur les dix écrans, à 360, 390, 430 et 640 px : les images sont
+  identiques octet pour octet.
 
 ### La carte du jour : la cérémonie ne bouge pas
 
@@ -1409,7 +1517,7 @@ Aucun écran n'a gagné ni perdu une information.
 
 | Fichier | Ce qu'il porte |
 |---|---|
-| `src/app/globals.css` | Les **deux** échelles — neutres du sombre, bruns chauds du clair —, les rôles dans chaque thème, l'échelle typographique, les trois mesures de colonne, les six rôles d'écart vertical, tous les tokens de mouvement, les deux seuils du desktop et tout ce qu'ils changent, la charpente — réserve de navigation, rail, repère de position —, le focus, les replis en mouvement réduit et en transparence réduite |
+| `src/app/globals.css` | Les **deux** échelles — neutres du sombre, bruns chauds du clair —, les rôles dans chaque thème, l'échelle typographique, l'échelle des mesures de colonne, les primitives de composition — `.column` et ses modificateurs, la grille de l'écran de lecture —, les six rôles d'écart vertical, tous les tokens de mouvement, les deux seuils du desktop et tout ce qu'ils changent, la charpente — réserve de navigation, rail, repère de position —, le focus, les replis en mouvement réduit et en transparence réduite |
 | `src/app/globals-contrast.test.ts` | Les couples de couleurs qui portent quelque chose, leur seuil, et l'ordre des quatre encres. Il relit la feuille de style : aucune valeur n'y est recopiée |
 | `src/lib/theme.ts` | La distinction préférence / thème résolu, la clé de stockage, la règle de résolution, le défaut, et le script qui applique le thème avant la première peinture — et rien de la palette |
 | `src/components/ui/ThemeKeeper.tsx` | Ce qui tient le thème à jour une fois la page ouverte : le système qui change d'avis, l'onglet voisin qui a choisi |

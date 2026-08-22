@@ -20,13 +20,13 @@ export function ThemeDetail({ slug }: { slug: string }) {
 
   return (
     <Screen>
-      <div className="mx-auto max-w-md px-6 pt-10 pb-12 md:max-w-page">
+      <div className="column column-wide pt-10 pb-12">
         {/* Le retour ramène sur l'onglet d'où l'on vient, pas sur le premier. */}
         <BackLink />
 
         {/* Le domaine situe le thème, comme le thème situe le concept sur la carte. */}
         {domain && <p className="mt-6 eyebrow">{domain.label}</p>}
-        <h1 className="mt-2 font-serif-display text-2xl font-semibold leading-tight text-ink">
+        <h1 className="mt-2 max-w-title font-serif-display text-2xl font-semibold leading-tight text-ink">
           {theme.title}
         </h1>
 

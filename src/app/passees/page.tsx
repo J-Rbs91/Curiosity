@@ -51,14 +51,14 @@ export default function PastCardsPage() {
 
   // La liste vient du `localStorage` : elle n'existe pas au rendu serveur, et cet écran
   // réserve donc sa place plutôt que d'afficher un titre suivi de rien.
-  if (cartes === null) return <ScreenSkeleton lines={5} measure="page" />;
+  if (cartes === null) return <ScreenSkeleton lines={5} measure="wide" />;
 
   return (
     <Screen>
-      <div className="mx-auto max-w-md px-6 pt-10 pb-12 md:max-w-page">
+      <div className="column column-wide pt-10 pb-12">
         <BackLink />
 
-        <h1 className="mt-6 font-serif-display text-2xl font-semibold text-ink">
+        <h1 className="mt-6 max-w-title font-serif-display text-2xl font-semibold text-ink">
           Cartes précédentes
         </h1>
 

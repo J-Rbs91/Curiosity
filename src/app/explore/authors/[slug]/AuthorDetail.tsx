@@ -17,10 +17,10 @@ export function AuthorDetail({ slug }: { slug: string }) {
 
   return (
     <Screen>
-      <div className="mx-auto max-w-md px-6 pt-10 pb-12 md:max-w-page">
+      <div className="column column-wide pt-10 pb-12">
         <BackLink />
 
-        <h1 className="mt-6 font-serif-display text-2xl font-semibold leading-tight text-ink">
+        <h1 className="mt-6 max-w-title font-serif-display text-2xl font-semibold leading-tight text-ink">
           {author.name}
         </h1>
         {author.years && <p className="mt-1 text-sm text-ink-faint">{author.years}</p>}

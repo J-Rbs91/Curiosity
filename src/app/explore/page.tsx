@@ -56,7 +56,7 @@ function lateralTo(index: number, activeIndex: number): LateralMotion | undefine
 export default function ExplorePage() {
   return (
     <Screen>
-      <div className="mx-auto max-w-md px-6 pt-10 md:max-w-page">
+      <div className="column column-wide pt-10">
         <div className="flex items-start justify-between gap-3">
           {/*
            * Le o du titre est l'œil de la marque, et il y joue la même séquence qu'à
@@ -229,7 +229,7 @@ function FamilyList() {
              * par la graisse et la taille ensemble, la couleur restant la même : sur du
              * noir, deux blancs voisins se disputent plus qu'ils ne se hiérarchisent.
              */}
-            <p className="mt-3 font-serif-display text-lg font-semibold text-ink">
+            <p className="mt-3 max-w-title font-serif-display text-lg font-semibold text-ink">
               {family.question}
             </p>
 
