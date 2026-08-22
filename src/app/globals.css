@@ -410,18 +410,14 @@
  * l'identique d'un thème à l'autre.
  *
  * **La palette est un donné.** Cinq valeurs — `#260D02`, `#4A423A`, `#E3C68F`, `#EDDDC0`,
- * `#9DABB3` — fixées par le propriétaire du produit. Quatre sont ici, à des rôles porteurs.
- * La cinquième, `#9DABB3`, ne l'est pas : elle vaut 1,76:1 sur le crème, ce qui la place sous
- * le seuil du texte (4,5) **et** sous celui des éléments d'interface (3). Le seul rôle qu'elle
- * pourrait physiquement tenir est le filet, qui n'a pas de seuil — mais le §3 réserve la
- * couleur à ce qui est juste, faux ou irréversible, et un filet bleu-gris sur une page chaude
- * serait de la couleur qui ne signale rien. Elle est donc écartée, et la raison est écrite
- * plutôt que tue.
+ * `#9DABB3` — fixées par le propriétaire du produit, et les cinq tiennent un rôle. Les quatre
+ * premières font la rampe chaude, qui porte ce qui se lit et ce qui se pose. La cinquième fait
+ * les filets, qui bornent — voir la note sur les deux barreaux de filet, plus bas.
  *
- * **Les cinq barreaux intermédiaires sont dérivés de la palette, pas importés.** Chacun est
- * le point de la ligne brisée `#260D02 → #4A423A → #E3C68F → #EDDDC0` qui atteint le ratio
- * visé. Ils restent donc dans la famille chromatique du donné : ce sont des neutres chauds,
- * jamais des gris rapportés. C'est aussi ce qui satisfait la règle « au moins quatre niveaux
+ * **Les barreaux intermédiaires sont dérivés de la palette, pas importés.** Les trois de la
+ * rampe chaude sont le point de la ligne brisée `#260D02 → #4A423A → #E3C68F → #EDDDC0` qui
+ * atteint le ratio visé ; le quatrième, `--c-500`, est `#9DABB3` descendu à la sienne. Aucun
+ * n'est un gris rapporté. C'est aussi ce qui satisfait la règle « au moins quatre niveaux
  * exploitables entre le fond et le texte principal » — la palette imposée n'en offrait que
  * deux.
  *
@@ -453,11 +449,30 @@
    * thème sombre : 4,5 pour du texte courant, 3 pour une bordure ou une icône qui porte une
    * fonction, aucun pour un filet qui n'en porte pas.
    */
+  /*
+   * Les deux barreaux de filet sortent de la rampe chaude, et c'est la seule chose de ce
+   * bloc qui ne se déduit pas d'un calcul.
+   *
+   * **La règle qui en sort.** La rampe chaude porte ce qui se lit et ce qui se pose — les
+   * quatre encres, les trois surfaces. La note froide porte ce qui **sépare**. Un filet ne
+   * dit rien : il borne. C'est le seul rôle du thème dont la teinte peut quitter la famille
+   * sans que rien ne se mette à signaler quelque chose, et c'est ce qui rend l'écart chaud /
+   * froid lisible comme une intention plutôt que comme un accident.
+   *
+   * **Ce que la mesure autorise, et ce qu'elle interdit.** `#9dabb3` vaut 1,76:1 sur le
+   * crème. Un séparateur n'a aucun seuil — le filet du thème sombre en vaut 1,93, celui-ci
+   * 1,76, et la rampe chaude en donnait 1,94 : les trois sont dans la même bande. En
+   * revanche il ne peut porter **ni texte ni bordure fonctionnelle** : 1,76 est sous le
+   * seuil de 4,5 comme sous celui de 3, et il l'est aussi sur les deux autres surfaces
+   * (1,58 et 1,43). `--c-500`, qui porte le contour d'un bouton, est donc la même teinte et
+   * la même saturation descendues jusqu'à 3,96:1 — le ratio du barreau sombre équivalent,
+   * à deux centièmes près. Ce n'est pas un choix de goût : c'est ce que le seuil impose.
+   */
   --c-50: #edddc0;  /* fond                                    imposée         */
   --c-150: #e8d1a7; /* surface levée                   1,11:1  dérivée         */
   --c-200: #e3c68f; /* la même surface au contact      1,23:1  imposée         */
-  --c-400: #b59e75; /* séparateur, filet               1,94:1  dérivée         */
-  --c-500: #786a54; /* bordure et icône fonctionnelles 3,94:1  dérivée         */
+  --c-400: #9dabb3; /* séparateur, filet               1,76:1  imposée         */
+  --c-500: #5d6e78; /* bordure et icône fonctionnelles 3,96:1  dérivée du 400  */
   --c-600: #5e5345; /* texte tertiaire, chapeau        5,61:1  dérivée         */
   --c-700: #4a423a; /* texte secondaire                7,37:1  imposée         */
   --c-800: #36241b; /* texte de lecture suivie        11,02:1  dérivée         */

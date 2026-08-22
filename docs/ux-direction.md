@@ -147,17 +147,17 @@ mise en page d'un pixel au moment de la réponse.
 
 ### L'échelle du thème clair
 
-La palette est un **donné** : cinq valeurs fixées par le propriétaire du produit. Quatre y
-tiennent un rôle porteur ; les cinq barreaux intermédiaires sont dérivés d'elles, jamais
-importés d'ailleurs.
+La palette est un **donné** : cinq valeurs fixées par le propriétaire du produit. Les cinq y
+tiennent un rôle ; les quatre barreaux intermédiaires en sont dérivés, jamais importés
+d'ailleurs.
 
 | Valeur | Contraste sur le crème | Origine | Ce qu'elle a le droit de porter |
 |---|---|---|---|
 | `--c-50` `#edddc0` | — | imposée | Le fond |
 | `--c-150` `#e8d1a7` | 1,11:1 | dérivée | Une surface levée : ligne de liste au survol, onglet, feuille |
 | `--c-200` `#e3c68f` | 1,23:1 | imposée | La même surface au contact |
-| `--c-400` `#b59e75` | 1,94:1 | dérivée | Un séparateur, un filet |
-| `--c-500` `#786a54` | 3,94:1 | dérivée | Une bordure ou une icône **fonctionnelle** — au-dessus du seuil de 3 |
+| `--c-400` `#9dabb3` | 1,76:1 | imposée | Un séparateur, un filet |
+| `--c-500` `#5d6e78` | 3,96:1 | dérivée du 400 | Une bordure ou une icône **fonctionnelle** — au-dessus du seuil de 3 |
 | `--c-600` `#5e5345` | 5,61:1 | dérivée | Un intitulé en capitales, un texte tertiaire |
 | `--c-700` `#4a423a` | 7,37:1 | imposée | Le texte secondaire |
 | `--c-800` `#36241b` | 11,02:1 | dérivée | Le texte d'une lecture suivie — et lui seul |
@@ -185,13 +185,26 @@ la construction, dans les deux thèmes.
   rapport de contraste que dans le sombre, 7,53:1. `--good` `#204a2e` (7,55:1, contre 7,67) n'a
   pas ce problème : 152,6° le séparent de l'encre.
 
-**La cinquième valeur imposée n'est pas employée, et c'est un constat mesuré.** `#9dabb3` vaut
-**1,76:1** sur le crème : sous le seuil du texte (4,5) et sous celui des éléments d'interface
-(3). Le seul rôle qu'elle pourrait tenir est le filet, qui n'a pas de seuil — mais la règle
-ci-dessus réserve la couleur à ce qui est juste, faux ou irréversible, et un filet bleu-gris
-sur une page chaude serait de la couleur qui ne signale rien. Si l'on veut cette note froide,
-son entrée honnête est une variante assombrie — `#56656e` tient 4,5:1 — et c'est une décision
-de palette, pas une correction.
+**La note froide porte les filets, et elle ne porte qu'eux.** C'est la seule décision de ce
+thème qui ne se déduit pas d'un calcul, et la règle tient en une phrase : **la rampe chaude
+porte ce qui se lit et ce qui se pose — les quatre encres, les trois surfaces ; la note froide
+porte ce qui sépare.**
+
+Le motif n'est pas décoratif. Un filet ne dit rien, il borne — c'est le seul rôle du thème dont
+la teinte peut quitter la famille sans qu'un élément se mette à signaler quelque chose. La
+règle « la couleur ne signale que ce qui est juste, ce qui est faux, ce qui est irréversible »
+n'est pas contredite : un filet froid ne signale pas plus qu'un filet brun, et l'un comme
+l'autre sont des neutres, simplement d'une autre teinte. Toute cette échelle est déjà faite de
+neutres chauds ; personne n'appelle `#b59e75` une couleur.
+
+**Ce que la mesure autorise, et ce qu'elle interdit.** `#9dabb3` vaut **1,76:1** sur le crème.
+Un séparateur n'a aucun seuil — celui du thème sombre en vaut 1,93, la rampe chaude en donnait
+1,94, les trois sont dans la même bande. En revanche il ne peut porter **ni texte ni bordure
+fonctionnelle** : 1,76 est sous le seuil de 4,5 comme sous celui de 3, et il l'est encore sur
+les deux autres surfaces (1,58 et 1,43). `--c-500`, qui porte le contour d'un bouton
+secondaire, est donc la **même teinte et la même saturation descendues** jusqu'à 3,96:1 — le
+ratio du barreau sombre équivalent, à deux centièmes près. Ce n'est pas un choix de goût, c'est
+ce que le seuil impose.
 
 **Les deux thèmes n'ont pas le même chromatisme, et c'est assumé.** Le sombre reste
 achromatique, le clair est chaud : quelqu'un qui bascule ne change pas seulement de luminosité.
