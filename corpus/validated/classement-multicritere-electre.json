@@ -1,0 +1,89 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "classement-multicritere-electre",
+  "slug": "classement-multicritere-electre",
+  "status": "VALIDATED",
+  "title": "Le classement multicritère (ELECTRE)",
+  "themes": [
+    "instruire-un-arbitrage"
+  ],
+  "theme_labels": {
+    "instruire-un-arbitrage": "Aider quelqu'un à trancher"
+  },
+  "authors": [
+    {
+      "name": "Bernard Roy",
+      "app_author_id": null
+    },
+    {
+      "name": "R. Benayoun",
+      "app_author_id": null
+    },
+    {
+      "name": "B. Sussmann",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "L'article de 1968 est signé « par B. Roy » seul, et il est le texte d'une conférence prononcée le 22 janvier 1968 au Séminaire d'économétrie du C.N.R.S. Mais la méthode et son nom sont antérieurs et collectifs, et c'est l'article qui le dit : sa bibliographie porte une note de travail de la Direction scientifique de la SEMA, de juin 1966, cosignée par R. Benayoun, B. Roy et B. Sussmann, déjà intitulée « ELECTRE : Une méthode pour guider le choix en présence de points de vue multiples ». Cette note n'a pas été ouverte.",
+  "hook": "Comment comparer des objets sur plusieurs points de vue qui ne s'accordent pas ?",
+  "summary": "De plusieurs points de vue on tire non une valeur globale mais une relation : un objet en surclasse un autre si une majorité l'appuie sans opposition trop forte.",
+  "quotation": {
+    "text": "C'est en ce sens que la relation de surclassement peut apparaître comme une résultante convenable des divers points de vue […]",
+    "reference": "Bernard Roy, « Classement et choix en présence de points de vue multiples (La méthode ELECTRE) », Revue française d'informatique et de recherche opérationnelle [Série verte], tome 2, 1968, p. 57-75.",
+    "locator": "p. 71, section B.2",
+    "language": "fr",
+    "original_text": null,
+    "original_language": null,
+    "translation": {
+      "kind": "none",
+      "translator": null,
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "Bernard Roy, « Classement et choix en présence de points de vue multiples (La méthode ELECTRE) », Revue française d'informatique et de recherche opérationnelle [Série verte], tome 2, 1968, p. 57-75.",
+      "kind": "primary",
+      "locator": "p. 57-75",
+      "doi_isbn": "10.1051/ro/196802v100571",
+      "url": "https://www.numdam.org/article/RO_1968__2_1_57_0.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Bernard Roy, « Classement et choix en présence de points de vue multiples (La méthode ELECTRE) », Revue française d'informatique et de recherche opérationnelle, tome 2, n° 8, 1968, p. 57-75, EDP Sciences.",
+      "kind": "primary",
+      "locator": "p. 57-75",
+      "doi_isbn": "10.1051/ro/196802v100571",
+      "url": "https://doi.org/10.1051/ro/196802v100571",
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle",
+    "date": "2026-08-23",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "Source primaire ouverte en plein texte : PDF Numdam https://www.numdam.org/article/RO_1968__2_1_57_0.pdf (20 pages numérisées, article paginé 57-75), téléchargé et converti en texte. Page de garde Numdam : « Revue française d'informatique et de recherche opérationnelle [Série verte], tome 2, no V1 (1968), p. 57-75 ». En-tête de l'article lui-même : « R.I.R.O., 2e année, N° 8, 1968, p. 57-75 ». Notice Numdam https://www.numdam.org/item/RO_1968__2_1_57_0/ : HTTP 200.",
+      "CITATION — vérifiée dans le PDF, page imprimée 71 (en-tête « CLASSEMENT ET CHOIX (LA METHODE ELECTRE) 71 »). Texte lu : « C'est en ce sens que la relation de surclassement peut apparaître comme une résultante convenable des divers points de vue sur laquelle on peut, pour des valeurs appropriées de p et de q, fonder une réponse aux problèmes posés au commencement du paragraphe A.3. » La fiche reprend le segment mot pour mot et signale la coupe par […]. Aucune traduction en jeu (texte français d'origine), le champ translation « none » est correct.",
+      "LOCATOR — « p. 71, section B.2 » exact. Le plan de l'article comporte « A. — GENERALITES » (p. 57 s.) puis « B. — LA METHODE ELECTRE » (p. 66), dont « 1. — Les indicateurs de concordance et de discordance » et « 2. — La relation de surclassement » (débute p. 69). La phrase citée se trouve bien dans B.2, page 71.",
+      "ATTRIBUTION — les trois éléments de l'attribution_note sont vérifiés dans le texte même. (a) Signature : « par B. ROY (2) », seul, avec note (1) « Metra International-Sema (Directeur de la Direction Scientifique) ». (b) Note (2), p. 57 : « Texte d'une conférence prononcée par l'auteur le 22 janvier 1968 au Séminaire d'Économétrie du C.N.R.S., (Paris). » (c) Bibliographie, réf. [3] : « R. BENAYOUN, B. ROY, B. SUSSMANN, ELECTRE : Une méthode pour guider le choix en présence de points de vue multiples, Note de travail n° 49 de la Direction Scientifique de la SEMA, juin 1966. » (réf. [4] : Benayoun & Sussmann, Manuel de référence du programme ELECTRE, Note de Synthèse et Formation n° 25, mai 1966). Le corps du texte renvoie d'ailleurs « aux documents de la SEMA [3] et [4] ». Le triple crédit porté par la fiche est donc fondé sur la source elle-même, pas sur une autorité extérieure. La note de travail de 1966 n'a pas été ouverte de mon côté non plus : elle n'est pas en ligne à ma connaissance.",
+      "ATTRIBUTION, contre-épreuve — la littérature secondaire est partagée dans sa formulation : Wikipédia (https://en.wikipedia.org/wiki/%C3%89LECTRE) ne cite que Roy 1968 et le dit « father of the ELECTRE method », sans mentionner Benayoun ni Sussmann ; les revues spécialisées (Govindan & Jepsen, EJOR 2016 ; chapitre « ELECTRE Methods » de Figueira, Mousseau & Roy) font remonter la première présentation à Benayoun, Roy & Sussmann 1966. Le chapitre Springer (10.1007/978-1-4939-3094-4_5) et l'article ScienceDirect sont derrière authentification : je n'ai pas pu les ouvrir, ce n'est pas une infirmation. La formulation prudente de la fiche (trois auteurs + note expliquant que l'article de 1968 est signé Roy seul) est la plus exacte des deux versions.",
+      "SOURCES — DOI 10.1051/ro/196802v100571 interrogé sur l'API Crossref (https://api.crossref.org/works/10.1051/ro/196802v100571) : publisher « EDP Sciences », container-title « Revue française d'informatique et de recherche opérationnelle », volume 2, issue 8, page 57-75, published-print 1968, auteur unique « B. Roy », titre « Classement et choix en présence de points de vue multiples », 15 références. Tout concorde avec les deux libellés de la fiche, y compris « n° 8 » et la mention EDP Sciences. L'outil MCP verify_reference n'était pas exposé dans cette session ; j'ai résolu le DOI directement contre Crossref, ce qui est concluant.",
+      "SOURCES, limite d'accès — https://doi.org/10.1051/ro/196802v100571 redirige bien vers https://www.rairo-ro.org/10.1051/ro/196802V100571, mais le site EDP/RAIRO renvoie HTTP 403 (protection anti-robot) depuis cet environnement, y compris sur la page d'abstract. Le DOI résout donc correctement ; seul l'affichage éditeur m'est refusé. Ce refus d'accès n'entame pas la validation, la notice Crossref et le plein texte Numdam suffisant à établir édition, année et pagination.",
+      "PROSE — hook « Comment comparer des objets sur plusieurs points de vue qui ne s'accordent pas ? » : le vocabulaire est celui de l'article (résumé, p. 57 : « Soit E un ensemble d'objets sur lesquels n points de vue permettent de définir n préordres complets »), et le problème du désaccord est posé tel quel p. 66 (« un graphe G qui soit en aussi “bon accord” que possible avec les divers points de vue »). Summary : « on tire non une valeur globale mais une relation » est porté par le résumé (« La méthode consiste à élaborer une relation résultante ») et par la remarque p. 64 selon laquelle les échelons d'une échelle peuvent n'avoir aucune signification métrique précise ; « un objet en surclasse un autre si une majorité l'appuie sans opposition trop forte » restitue exactement la double condition énoncée p. 71 : « une majorité suffisante (seuil p) se dégage parmi les points de vue […] pour placer e au moins aussi haut que e' ; aucun des points de vue en désaccord avec cette majorité ne révèle une supériorité trop fort[e] (seuil q) de e' par rapport à e. » Aucun débordement, aucun rétrécissement.",
+      "Hors mandat, sans conséquence sur le verdict : le titre de la carte, « Le classement multicritère (ELECTRE) », emploie un terme que l'article de 1968 n'utilise jamais — Roy parle constamment de « points de vue multiples », le vocabulaire « multicritère » s'imposant plus tard. C'est une modernisation admissible et le hook comme le summary reviennent, eux, à « points de vue ». À noter aussi que l'article ne traite qu'imparfaitement le rangement en préordre complet : Roy écrit p. 71 que la relation de surclassement est « bien adaptée » au problème de sélection et « peut-être moins » à celui du rangement complet. Rien dans le hook ni le summary ne promet un classement complet, donc rien à corriger ; mais si une version ultérieure de la carte affirmait qu'ELECTRE I produit un classement, ce serait inexact."
+    ]
+  },
+  "notes": [
+    "Le mot « critère » n'apparaît pas une seule fois dans le corps de l'article : Roy écrit « points de vue » de bout en bout. Le mot du titre de la carte est le nôtre, il ne doit pas lui être prêté, et le résumé le tient hors de sa bouche.",
+    "Le refus d'agréger est fait, non argumenté. Roy construit une relation binaire sur l'ensemble des objets et ne combine jamais les états en un score, mais il ne charge nulle part contre la fonction d'utilité unique : la seule phrase qui en approche, p. 66, dit des approches concurrentes qu'« aucune ne paraît toutefois avoir pleinement abouti ».",
+    "Le mot « incomparabilité » ne figure pas dans l'article, et l'absence de comparaison n'y est pas théorisée comme relation de préférence à part entière. Ce que le texte porte est plus modeste : le graphe de l'unanimité est « loin d'être complet », et un noyau trop gros s'explique par « l'antagonisme des points de vue ».",
+    "La cosignature de 1966 est établie sur la bibliographie imprimée de l'article, référence [3], relue p. 74, et non sur la note de travail de la SEMA elle-même, qui n'a pas été ouverte. Une preuve directe reste à produire.",
+    "La page imprimée 57 porte « 2e année, N° 8, 1968 » là où Numdam donne « tome 2, no V1 » : la référence retenue ne porte pas de numéro de fascicule. L'accès par l'éditeur (rairo-ro.org) répond 403 ; tout le travail a été fait sur le fac-similé Numdam."
+  ]
+}

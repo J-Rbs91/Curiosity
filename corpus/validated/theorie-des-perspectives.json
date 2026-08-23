@@ -1,0 +1,84 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "theorie-des-perspectives",
+  "slug": "theorie-des-perspectives",
+  "status": "VALIDATED",
+  "title": "La théorie des perspectives",
+  "themes": [
+    "choisir-sous-risque"
+  ],
+  "theme_labels": {
+    "choisir-sous-risque": "Choisir quand on ne sait pas"
+  },
+  "authors": [
+    {
+      "name": "Daniel Kahneman",
+      "app_author_id": null
+    },
+    {
+      "name": "Amos Tversky",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Rapport signé des deux noms : la couverture, la page de titre et le formulaire DD 1473 portent Daniel Kahneman et Amos Tversky, dans cet ordre. Le nom du concept est des auteurs eux-mêmes, le sommaire annonçant « prospect theory » ; le titre français est une traduction due à des tiers non identifiés. Le rapport d'avril 1977 n'est pas l'article paru dans Econometrica en 1979 : la citation est localisée sur le rapport, seul des deux textes qui ait été ouvert.",
+  "hook": "Le risque se juge-t-il sur ce qu'on possède, ou sur ce qui change ?",
+  "summary": "Ce qui est évalué, ce sont des gains et des pertes rapportés à un point de référence : la fonction de valeur y est concave au-dessus de ce point, convexe en dessous.",
+  "quotation": {
+    "text": "In contrast, we hypothesize that the value function is concave above the reference point and convex below it […]",
+    "reference": "Daniel Kahneman et Amos Tversky, Prospect Theory: An Analysis of Decision Making Under Risk, Technical Report PTR-1042-77-4, Eugene (Oregon), Decision Research, a branch of Perceptronics, avril 1977.",
+    "locator": "p. 2-5, section 2.1",
+    "language": "en",
+    "original_text": null,
+    "original_language": null,
+    "translation": {
+      "kind": "none",
+      "translator": null,
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "Daniel Kahneman et Amos Tversky, Prospect Theory: An Analysis of Decision Making Under Risk, Technical Report PTR-1042-77-4, Eugene (Oregon), Decision Research, a branch of Perceptronics, avril 1977.",
+      "kind": "primary",
+      "locator": "chap. 2, p. 2-1 à 2-11",
+      "doi_isbn": "10.21236/ada045771",
+      "url": "https://archive.org/details/DTIC_ADA045771",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Daniel Kahneman et Amos Tversky, « Prospect Theory: An Analysis of Decision under Risk », Econometrica, vol. 47, n° 2, mars 1979, p. 263-291.",
+      "kind": "primary",
+      "locator": "p. 263-291",
+      "doi_isbn": "10.2307/1914185",
+      "url": "https://doi.org/10.2307/1914185",
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle",
+    "date": "2026-08-23",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "Ce que j'ai ouvert moi-même. (1) Le rapport de 1977 en fac-similé sur archive.org, item DTIC_ADA045771 : métadonnées (https://archive.org/metadata/DTIC_ADA045771, date 1977-04-01, 50 folios, 300 ppi), couche OCR complète (https://ia801502.us.archive.org/26/items/DTIC_ADA045771/DTIC_ADA045771_djvu.txt, 71 444 octets), structure page à page (DTIC_ADA045771_djvu.xml, 50 OBJECT) et surtout l'IMAGE du folio 26 (https://archive.org/download/DTIC_ADA045771/page/n26_w1200.jpg, 1275x1651), lue à l'œil et pas seulement en couche texte. (2) Le texte de 1979 en PDF (https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Behavioral_Decision_Theory/Kahneman_Tversky_1979_Prospect_theory.pdf, 29 pages). (3) Crossref sur les deux DOI.",
+      "CITATION — verbatim, à l'endroit exact annoncé. L'image du folio 26 porte, en tout premier paragraphe : « In contrast, we hypothesize that the value function is concave above the reference point and convex below it; that is, the marginal utility of money decreases with the distance from the reference point. » Le pied de page de cette même image porte imprimé « 2-5 ». La fiche coupe après « below it » et signale la coupe par […] : la coupe est régulière et ne fait rien dire d'autre à la phrase (la suite est une reformulation en termes d'utilité marginale). La table des matières du rapport (folio « iii ») donne « 2.1 The Value Function ... 2-4 » et « 2.2 Uncertainty Weights ... 2-6 » : la phrase citée est donc bien à l'intérieur de la section 2.1, à sa deuxième page. Locator « p. 2-5, section 2.1 » : exact sur les deux membres. La citation est affichée en anglais, language = en, translation.kind = none, aucune traduction n'est revendiquée : cohérent.",
+      "ATTRIBUTION — confirmée, et cosignature exacte. Page de couverture du rapport : « PROSPECT THEORY: AN ANALYSIS OF DECISION MAKING UNDER RISK / DECISION RESEARCH, A BRANCH OF PERCEPTRONICS / Daniel Kahneman / Amos Tversky ». Page de titre : « TECHNICAL REPORT PTR-1042-77-4 [...] by Daniel Kahneman and Amos Tversky [...] April 1977 / DECISION RESEARCH / A BRANCH OF PERCEPTRONICS / 1201 Oak Street / Eugene, Oregon 97401 ». Formulaire DD 1473 en fin de volume, blocs 4 et 7 : titre identique, « 7. AUTHORS : Daniel Kahneman / Amos Tversky », bloc 9 « Decision Research, A Branch of Perceptronics, 1201 Oak Street, Eugene, Oregon 97401 ». Les trois pièces que la note d'attribution invoque disent bien ce qu'elle leur fait dire, et dans cet ordre de noms. Le nom du concept est des auteurs eux-mêmes : la table des matières intitule le chapitre 2 « PROSPECT THEORY » et le résumé du DD 1473 (bloc 20) écrit « offers an alternative, \"prospect theory\" ». Rien n'indique une paternité tierce du concept : le rapport, folio 2-3, revendique la formulation (« although the above formulation is new ») tout en créditant explicitement ses composants à des prédécesseurs — Pfanzagl (1959) pour la condition de translation, Edwards (1962), Tversky (1967) et Shanteau (1975) pour le modèle bilinéaire, et « the role of the reference point on the utility scale was discussed by Markowitz (1952), Edwards (1954) and Hansson (1975) ». La carte ne revendique pas plus que cela, et la citation retenue porte précisément sur ce que les auteurs présentent comme leur hypothèse (« we hypothesize »).",
+      "SOURCE 1 — résout. DOI 10.21236/ada045771 en négociation de contenu (curl -H 'Accept: application/vnd.citationstyles.csl+json' https://doi.org/10.21236/ada045771, HTTP 200) : type = report, title = « Prospect Theory. An Analysis of Decision Making Under Risk », auteurs Kahneman et Tversky, published-print 1977-04-01, publisher = Defense Technical Information Center, resource = https://apps.dtic.mil/sti/citations/tr/ADA045771. L'URL archive.org affichée rend le même document en plein texte. Le locator « chap. 2, p. 2-1 à 2-11 » est vérifié : la table des matières donne le chapitre 2 à partir de 2-1 et le chapitre 3 à partir de 3-1, et les folios numérotés 2-8, 2-9, 2-11 puis 3-1 se lisent en séquence dans la couche OCR. Deux points de forme, sans effet sur la résolution : Crossref écrit le titre avec un point (« Prospect Theory. An Analysis... ») là où la couverture et le DD 1473 portent un deux-points, la fiche suivant la pièce ; et Crossref déclare comme organisme exécutant « DECISIONS AND DESIGNS INC MCLEAN VA » là où la fiche écrit Decision Research / Perceptronics à Eugene — la page de titre tranche en faveur de la fiche, le rapport précisant « Under Subcontract from Decisions and Designs, Incorporated » (remerciements : contrat N00014-76-C-0074). La fiche affiche l'éditeur du document, Crossref le contractant principal.",
+      "SOURCE 2 — résout. DOI 10.2307/1914185 (Crossref, HTTP 200) : « Prospect Theory: An Analysis of Decision under Risk », Econometrica, vol. 47, n° 2, mars 1979, first page 263, Kahneman puis Tversky. Crossref et OpenAlex ne donnent que la page de début ; j'ai vérifié la page de fin sur le PDF ouvert : 29 pages, bandeau de la première « ECONOMETRICA / VOLUME 47 / MARCH, 1979 / NUMBER 2 », titres courants portant 264, 265... et 291 sur la dernière page (bibliographie, entrée [48] Williams). La pagination affichée « p. 263-291 » est donc exacte. La fiche déclare cette source consulted = metadata-only et localise la citation sur le seul rapport de 1977 : ce partage est correct et je ne lui reproche rien.",
+      "PROSE — fidèle. Le summary (« des gains et des pertes rapportés à un point de référence : la fonction de valeur y est concave au-dessus de ce point, convexe en dessous ») est porté mot pour mot par la section 2.1 : hypothèse (i), folio 2-4, « The domain of the value function consists of (positive or negative) changes in wealth, that is, gains and losses » ; hypothèse (ii), folio 2-5, la phrase citée. Le hook (« Le risque se juge-t-il sur ce qu'on possède, ou sur ce qui change ? ») oppose exactement les deux domaines que le rapport oppose au folio 1-2 : « the domain of the utility function u is final consequences (which includes one's asset position) rather than gains or losses ». C'est une question, elle n'affirme rien au-delà.",
+      "Hors des quatre points, à verser au dossier sans en faire un motif de reprise. La formulation de 1977 est catégorique là où la version publiée de 1979 est prudente : Econometrica, p. 263 (résumé) et p. 279, écrit « The value function is normally concave for gains, commonly convex for losses » et « (ii) generally concave for gains and commonly convex for losses ». La carte cite le rapport et son summary est fidèle au rapport ; mais un lecteur qui irait à l'article de 1979 y trouverait des adverbes de réserve que la carte n'a pas — ils ne sont pas dans la source citée, il n'y a donc rien à corriger, seulement à savoir. Autre point de contexte, également hors mandat : le folio 2-5 énonce la propriété sous le nom de « steepness hypothesis », dont la concavité/convexité est la conséquence géométrique, la troisième hypothèse (gain-loss) fournissant l'aversion aux pertes ; la carte ne parle pas d'aversion aux pertes et ne se trompe donc pas.",
+      "Non atteint, déclaré comme tel. Le PDF servi par le DTIC (https://apps.dtic.mil/sti/tr/pdf/ADA045771.pdf) m'a été refusé : réponse HTML « The request is blocked », 1 484 octets, pas de PDF. C'est un accès refusé, pas un silence : le même rapport est intégralement lisible sur archive.org, et c'est là que j'ai lu la citation. JSTOR (page de l'article de 1979) n'a pas été sollicité. Précaution de méthode à signaler pour la reproductibilité : mon premier téléchargement de DTIC_ADA045771_djvu.txt a rendu un tout autre document (AD-767 426, « Judgment under Uncertainty: Heuristics and Biases », Oregon Research Institute) — artefact de transport, la même URL redemandée a rendu le bon fichier ; c'est pourquoi j'ai confirmé la citation sur l'image du folio et non sur la seule couche OCR."
+    ]
+  },
+  "notes": [
+    "La citation ne porte que la forme de la fonction de valeur. L'aversion aux pertes (« losses loom larger than gains », p. 2-5) et la pondération non linéaire des probabilités (section 2.2) sont dans le rapport, mais dans d'autres paragraphes : le lecteur primaire a refusé de les souder à cette phrase, et la carte ne le fait pas davantage.",
+    "La phrase est coupée après « below it » : la suite reformule la même hypothèse en termes d'utilité marginale décroissant avec la distance au point de référence. Le « In contrast » initial s'oppose à la formule traditionnelle citée deux lignes plus haut, « utility is a concave function of money ».",
+    "Le rapport est folioté par chapitre : « p. 2-5 » désigne le cinquième feuillet du chapitre 2, et non la cinquième page du volume.",
+    "L'article d'Econometrica de 1979 est nommé et écarté : il n'a pas été ouvert, aucune phrase de cette carte ne s'y localise, et rien n'est dit ici de sa terminologie.",
+    "Écart entre les deux états du texte, à connaître sans rien corriger ici : le rapport de 1977 est catégorique là où l'article de 1979 est prudent, celui-ci écrivant « normally concave for gains, commonly convex for losses ». Le résumé est fidèle à la source qu'il cite, le rapport, et ne se corrige donc pas ; un lecteur qui irait à l'article de 1979 y trouverait des adverbes de réserve que la carte n'a pas."
+  ]
+}

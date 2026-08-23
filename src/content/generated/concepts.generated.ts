@@ -247,6 +247,38 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "classement-multicritere-electre",
+    "slug": "classement-multicritere-electre",
+    "title": "Le classement multicritère (ELECTRE)",
+    "authorLabel": "Bernard Roy, R. Benayoun, B. Sussmann",
+    "hookQuestion": "Comment comparer des objets sur plusieurs points de vue qui ne s'accordent pas ?",
+    "shortExplanation": "De plusieurs points de vue on tire non une valeur globale mais une relation : un objet en surclasse un autre si une majorité l'appuie sans opposition trop forte.",
+    "authors": [],
+    "themes": [
+      "instruire-un-arbitrage"
+    ],
+    "themeLabel": "Aider quelqu'un à trancher",
+    "attributionNote": "L'article de 1968 est signé « par B. Roy » seul, et il est le texte d'une conférence prononcée le 22 janvier 1968 au Séminaire d'économétrie du C.N.R.S. Mais la méthode et son nom sont antérieurs et collectifs, et c'est l'article qui le dit : sa bibliographie porte une note de travail de la Direction scientifique de la SEMA, de juin 1966, cosignée par R. Benayoun, B. Roy et B. Sussmann, déjà intitulée « ELECTRE : Une méthode pour guider le choix en présence de points de vue multiples ». Cette note n'a pas été ouverte.",
+    "quotation": {
+      "text": "C'est en ce sens que la relation de surclassement peut apparaître comme une résultante convenable des divers points de vue […]",
+      "reference": "Bernard Roy, « Classement et choix en présence de points de vue multiples (La méthode ELECTRE) », Revue française d'informatique et de recherche opérationnelle [Série verte], tome 2, 1968, p. 57-75, p. 71, section B.2"
+    },
+    "sources": [
+      {
+        "label": "Bernard Roy, « Classement et choix en présence de points de vue multiples (La méthode ELECTRE) », Revue française d'informatique et de recherche opérationnelle [Série verte], tome 2, 1968, p. 57-75.",
+        "kind": "primary",
+        "reference": "10.1051/ro/196802v100571",
+        "url": "https://www.numdam.org/article/RO_1968__2_1_57_0.pdf"
+      },
+      {
+        "label": "Bernard Roy, « Classement et choix en présence de points de vue multiples (La méthode ELECTRE) », Revue française d'informatique et de recherche opérationnelle, tome 2, n° 8, 1968, p. 57-75, EDP Sciences.",
+        "kind": "primary",
+        "reference": "10.1051/ro/196802v100571",
+        "url": "https://doi.org/10.1051/ro/196802v100571"
+      }
+    ]
+  },
+  {
     "id": "comportement-contre-intuitif",
     "slug": "comportement-contre-intuitif",
     "title": "Comportement contre-intuitif",
@@ -606,6 +638,38 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "critique-de-l-utilite-esperee-subjective",
+    "slug": "critique-de-l-utilite-esperee-subjective",
+    "title": "La critique de l'utilité espérée subjective",
+    "authorLabel": "Glenn Shafer",
+    "hookQuestion": "Maximiser l'utilité espérée est-il la seule façon d'être rationnel ?",
+    "shortExplanation": "Analyser une décision par l'utilité espérée subjective est un argument par analogie avec le pari : un outil parmi d'autres, non le canon unique de la rationalité.",
+    "authors": [],
+    "themes": [
+      "choisir-sous-risque"
+    ],
+    "themeLabel": "Choisir quand on ne sait pas",
+    "attributionNote": "Chapitre signé de Glenn Shafer seul ; le recueil est dirigé par David E. Bell, Howard Raiffa et Amos Tversky, ce qui n'est pas une coécriture. Le texte n'est pas inédit : une note de la page 233 le donne pour première publication dans Statistical Science en 1986. Les postulats critiqués sont de L. J. Savage, cités d'après The Foundations of Statistics (1954), ouvrage qui n'a pas été ouvert. À ne pas confondre avec le chapitre 11 du même volume, cosigné par Shafer et Tversky.",
+    "quotation": {
+      "text": "Thus subjective expected utility is just one of several possible tools for constructing a decision.",
+      "reference": "Glenn Shafer, « Savage revisited », dans David E. Bell, Howard Raiffa et Amos Tversky (dir.), Decision Making: Descriptive, Normative, and Prescriptive Interactions, Cambridge University Press, 1988, p. 193-234, p. 193, section 1 « Introduction »"
+    },
+    "sources": [
+      {
+        "label": "Glenn Shafer, « Savage revisited », dans D. E. Bell, H. Raiffa et A. Tversky (dir.), Decision Making, Cambridge University Press, 1988, p. 193-234.",
+        "kind": "primary",
+        "reference": "chap. 10, p. 193-234 · 9780521351492",
+        "url": "https://archive.org/details/DecisionMaking"
+      },
+      {
+        "label": "Glenn Shafer, « Savage Revisited », Statistical Science, vol. 1, n° 4, 1986, p. 463-485.",
+        "kind": "primary",
+        "reference": "10.1214/ss/1177013518",
+        "url": "https://doi.org/10.1214/ss/1177013518"
+      }
+    ]
+  },
+  {
     "id": "debat-de-normes",
     "slug": "debat-de-normes",
     "title": "Débats de normes",
@@ -797,6 +861,45 @@ export const generatedConcepts: Concept[] = [
         "kind": "secondary-academic",
         "reference": "10.1037/0033-2909.100.3.398",
         "url": "https://doi.org/10.1037/0033-2909.100.3.398"
+      }
+    ]
+  },
+  {
+    "id": "effet-de-cadrage",
+    "slug": "effet-de-cadrage",
+    "title": "L'effet de cadrage",
+    "authorLabel": "Amos Tversky, Daniel Kahneman",
+    "hookQuestion": "Une décision dite en vies sauvées ou en vies perdues reste-t-elle la même ?",
+    "shortExplanation": "Deux présentations d'un même problème de choix, identiques dans leurs conséquences, appellent des préférences différentes : c'est l'invariance qui est violée.",
+    "authors": [],
+    "themes": [
+      "choisir-sous-risque"
+    ],
+    "themeLabel": "Choisir quand on ne sait pas",
+    "attributionNote": "Chapitre signé « Amos Tversky and Daniel Kahneman », dans cet ordre. Il n'est pas inédit en 1988 : une note de la page 189 le donne pour la reprise, révisée dans sa première et sa dernière section, d'un article paru dans le Journal of Business en 1986. Les auteurs ne revendiquent pas la paternité entière de la notion : ils écrivent page 184 que le concept de cadrage vient de l'analyse des problèmes d'Allais par Savage (1954) et Raiffa (1968).",
+    "quotation": {
+      "text": "Par la persistance de leur attrait, les effets de cadrage ressemblent davantage à des illusions visuelles qu'à des erreurs de calcul.",
+      "reference": "Amos Tversky et Daniel Kahneman, « Rational Choice and the Framing of Decisions », dans D. E. Bell, H. Raiffa et A. Tversky (dir.), Decision Making: Descriptive, Normative, and Prescriptive Interactions, Cambridge University Press, 1988, p. 167-192, p. 175, section « Framing outcomes »",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Amos Tversky et Daniel Kahneman, « Rational Choice and the Framing of Decisions », dans D. E. Bell, H. Raiffa et A. Tversky (dir.), Decision Making, Cambridge University Press, 1988, p. 167-192.",
+        "kind": "primary",
+        "reference": "chap. 9, p. 167-192 · 9780521351492",
+        "url": "https://archive.org/details/DecisionMaking"
+      },
+      {
+        "label": "Amos Tversky et Daniel Kahneman, « Rational Choice and the Framing of Decisions », The Journal of Business, vol. 59, n° 4 (supplément), 1986, p. S251-S278.",
+        "kind": "primary",
+        "reference": "10.1086/296365",
+        "url": "https://doi.org/10.1086/296365"
+      },
+      {
+        "label": "Amos Tversky et Daniel Kahneman, « The Framing of Decisions and the Psychology of Choice », Science, vol. 211, n° 4481, 30 janvier 1981, p. 453-458.",
+        "kind": "primary",
+        "reference": "10.1126/science.7455683",
+        "url": "https://doi.org/10.1126/science.7455683"
       }
     ]
   },
@@ -1165,6 +1268,45 @@ export const generatedConcepts: Concept[] = [
         "kind": "secondary-academic",
         "reference": "10.4000/books.pressesmines.341",
         "url": "https://doi.org/10.4000/books.pressesmines.341"
+      }
+    ]
+  },
+  {
+    "id": "heuristiques-de-jugement",
+    "slug": "heuristiques-de-jugement",
+    "title": "Les heuristiques de jugement",
+    "authorLabel": "Amos Tversky, Daniel Kahneman",
+    "hookQuestion": "Comment évalue-t-on la vraisemblance d'un événement incertain ?",
+    "shortExplanation": "Un nombre limité de principes ramènent l'évaluation des vraisemblances à des jugements plus simples : utiles en général, ils mènent parfois à des erreurs systématiques.",
+    "authors": [],
+    "themes": [
+      "choisir-sous-risque"
+    ],
+    "themeLabel": "Choisir quand on ne sait pas",
+    "attributionNote": "Coécriture attestée sur le document lui-même : la couverture, le bloc « AUTHOR(S) » du formulaire DD 1473 et la ligne de signature de la première page portent « Amos Tversky and Daniel Kahneman », alors rattachés tous deux à l'Université hébraïque de Jérusalem. Le rapport porte « Date of Report: August, 1973 » ; le millésime 1974 est celui de la parution dans Science, qui n'a pas été ouverte. Le rapport rassemble des résultats que les auteurs avaient déjà publiés ailleurs, et ses notes y renvoient.",
+    "quotation": {
+      "text": "on s'appuie sur un nombre limité de principes heuristiques par lesquels on réduit les tâches complexes […] à des opérations de jugement plus simples.",
+      "reference": "Amos Tversky et Daniel Kahneman, Judgment under Uncertainty: Heuristics and Biases, ONR Technical Report, Eugene (Oregon), Oregon Research Institute, août 1973, rapport DTIC AD 767 426, p. 1, premier paragraphe",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Amos Tversky et Daniel Kahneman, Judgment under Uncertainty: Heuristics and Biases, ONR Technical Report, Eugene (Oregon), Oregon Research Institute, août 1973, 33 p., aussi paru comme Research Bulletin, vol. 13, n° 1.",
+        "kind": "primary",
+        "reference": "p. 1-31, réf. et notes p. 32-33 · 10.21236/ad0767426",
+        "url": "https://archive.org/details/DTIC_AD0767426"
+      },
+      {
+        "label": "Amos Tversky et Daniel Kahneman, « Judgment under Uncertainty: Heuristics and Biases », Science, vol. 185, n° 4157, 27 septembre 1974, p. 1124-1131.",
+        "kind": "primary",
+        "reference": "10.1126/science.185.4157.1124",
+        "url": "https://doi.org/10.1126/science.185.4157.1124"
+      },
+      {
+        "label": "Amos Tversky et Daniel Kahneman, « Judgment under uncertainty: Heuristics and biases », dans D. Kahneman, P. Slovic et A. Tversky (dir.), Judgment under Uncertainty: Heuristics and Biases, Cambridge University Press, 1982.",
+        "kind": "primary",
+        "reference": "chap. 1 · 10.1017/cbo9780511809477.002",
+        "url": "https://doi.org/10.1017/cbo9780511809477.002"
       }
     ]
   },
@@ -1642,6 +1784,39 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "normatif-descriptif-prescriptif",
+    "slug": "normatif-descriptif-prescriptif",
+    "title": "Normatif, descriptif, prescriptif",
+    "authorLabel": "David E. Bell, Howard Raiffa, Amos Tversky",
+    "hookQuestion": "Entre décrire comment on décide et dire comment il faudrait, que manque-t-il ?",
+    "shortExplanation": "Au partage habituel entre le normatif et le descriptif s'ajoute un troisième terme, le prescriptif : aider une personne réelle, avec ses limites, à mieux décider.",
+    "authors": [],
+    "themes": [
+      "instruire-un-arbitrage"
+    ],
+    "themeLabel": "Aider quelqu'un à trancher",
+    "attributionNote": "Chapitre signé des trois directeurs du recueil, David E. Bell, Howard Raiffa et Amos Tversky. Leur accord n'est pas entier, et c'est imprimé page 2 : la catégorie prescriptive a été ajoutée d'abord parce que le métier de deux d'entre eux n'entre pas dans le partage habituel, et le troisième, Amos Tversky, juge qu'il ne serait peut-être pas nécessaire de faire du prosélytisme pour ce découpage, utile au demeurant à leurs discussions internes, si la catégorie normative était mieux clarifiée. Une note de la page 16 pose la distinction « pour les besoins de ce chapitre seulement ».",
+    "quotation": {
+      "text": "[…] nous augmentons la dichotomie habituelle […] entre les côtés normatif et descriptif […] en ajoutant une troisième composante : le prescriptif.",
+      "reference": "David E. Bell, Howard Raiffa et Amos Tversky, « Descriptive, normative, and prescriptive interactions in decision making », dans les mêmes (dir.), Decision Making: Descriptive, Normative, and Prescriptive Interactions, Cambridge University Press, 1988, p. 9-30, p. 9, deuxième paragraphe",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "David E. Bell, Howard Raiffa et Amos Tversky, « Descriptive, normative, and prescriptive interactions in decision making », dans les mêmes (dir.), Decision Making, Cambridge University Press, 1988, p. 9-30.",
+        "kind": "primary",
+        "reference": "chap. 1, p. 9-30 · 9780521351492",
+        "url": "https://archive.org/details/DecisionMaking"
+      },
+      {
+        "label": "David E. Bell, Howard Raiffa et Amos Tversky (dir.), Decision Making: Descriptive, Normative, and Prescriptive Interactions, Cambridge, Cambridge University Press, 1988.",
+        "kind": "primary",
+        "reference": "chap. 1, p. 9-30 · 10.1017/cbo9780511598951.003",
+        "url": "https://doi.org/10.1017/cbo9780511598951.003"
+      }
+    ]
+  },
+  {
     "id": "objet-de-la-cybernetique-economique",
     "slug": "objet-de-la-cybernetique-economique",
     "title": "L'objet de la cybernétique économique",
@@ -1783,6 +1958,39 @@ export const generatedConcepts: Concept[] = [
         "kind": "secondary-academic",
         "reference": "10.1002/pan3.13",
         "url": "https://doi.org/10.1002/pan3.13"
+      }
+    ]
+  },
+  {
+    "id": "penser-a-partir-des-valeurs",
+    "slug": "penser-a-partir-des-valeurs",
+    "title": "Penser à partir des valeurs",
+    "authorLabel": "Ralph L. Keeney",
+    "hookQuestion": "Pourquoi une décision commence-t-elle si souvent par les options déjà là ?",
+    "shortExplanation": "La notion primitive d'un problème de décision devrait être les valeurs et non les alternatives : on part de ce qu'on veut atteindre, puis on crée les alternatives.",
+    "authors": [],
+    "themes": [
+      "instruire-un-arbitrage"
+    ],
+    "themeLabel": "Aider quelqu'un à trancher",
+    "attributionNote": "Chapitre signé de Ralph L. Keeney seul, le recueil étant dirigé par David E. Bell, Howard Raiffa et Amos Tversky. Le volume réunit les communications d'une conférence tenue à la Harvard Business School en juin 1983, mais ce texte a été révisé ensuite, puisqu'il cite Bell (1985) : le seul millésime attesté est celui de la publication, 1988. L'ouvrage que Keeney tirera de cette thèse en 1992 n'a pas été ouvert.",
+    "quotation": {
+      "text": "Il en découle que la notion primitive d'un problème de décision devrait être les valeurs, et non les alternatives.",
+      "reference": "Ralph L. Keeney, « Value-Focused Thinking and the Study of Values », dans David E. Bell, Howard Raiffa et Amos Tversky (dir.), Decision Making: Descriptive, Normative, and Prescriptive Interactions, Cambridge University Press, 1988, p. 465-494, p. 466, section 1",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Ralph L. Keeney, « Value-Focused Thinking and the Study of Values », dans D. E. Bell, H. Raiffa et A. Tversky (dir.), Decision Making, Cambridge University Press, 1988, p. 465-494.",
+        "kind": "primary",
+        "reference": "chap. 21, p. 465-494 · 9780521351492",
+        "url": "https://archive.org/details/DecisionMaking"
+      },
+      {
+        "label": "Ralph L. Keeney, Value-Focused Thinking: A Path to Creative Decisionmaking, Cambridge (Massachusetts), Harvard University Press, 1992.",
+        "kind": "primary",
+        "reference": "9780674931978",
+        "url": "https://doi.org/10.2307/j.ctv322v4g7"
       }
     ]
   },
@@ -2406,6 +2614,71 @@ export const generatedConcepts: Concept[] = [
         "kind": "francophone-reception",
         "reference": "10.2307/3320512",
         "url": "https://www.persee.fr/doc/rfsoc_0035-2969_1970_hos_11_1_1602"
+      }
+    ]
+  },
+  {
+    "id": "theorie-des-perspectives",
+    "slug": "theorie-des-perspectives",
+    "title": "La théorie des perspectives",
+    "authorLabel": "Daniel Kahneman, Amos Tversky",
+    "hookQuestion": "Le risque se juge-t-il sur ce qu'on possède, ou sur ce qui change ?",
+    "shortExplanation": "Ce qui est évalué, ce sont des gains et des pertes rapportés à un point de référence : la fonction de valeur y est concave au-dessus de ce point, convexe en dessous.",
+    "authors": [],
+    "themes": [
+      "choisir-sous-risque"
+    ],
+    "themeLabel": "Choisir quand on ne sait pas",
+    "attributionNote": "Rapport signé des deux noms : la couverture, la page de titre et le formulaire DD 1473 portent Daniel Kahneman et Amos Tversky, dans cet ordre. Le nom du concept est des auteurs eux-mêmes, le sommaire annonçant « prospect theory » ; le titre français est une traduction due à des tiers non identifiés. Le rapport d'avril 1977 n'est pas l'article paru dans Econometrica en 1979 : la citation est localisée sur le rapport, seul des deux textes qui ait été ouvert.",
+    "quotation": {
+      "text": "In contrast, we hypothesize that the value function is concave above the reference point and convex below it […]",
+      "reference": "Daniel Kahneman et Amos Tversky, Prospect Theory: An Analysis of Decision Making Under Risk, Technical Report PTR-1042-77-4, Eugene (Oregon), Decision Research, a branch of Perceptronics, avril 1977, p. 2-5, section 2.1"
+    },
+    "sources": [
+      {
+        "label": "Daniel Kahneman et Amos Tversky, Prospect Theory: An Analysis of Decision Making Under Risk, Technical Report PTR-1042-77-4, Eugene (Oregon), Decision Research, a branch of Perceptronics, avril 1977.",
+        "kind": "primary",
+        "reference": "chap. 2, p. 2-1 à 2-11 · 10.21236/ada045771",
+        "url": "https://archive.org/details/DTIC_ADA045771"
+      },
+      {
+        "label": "Daniel Kahneman et Amos Tversky, « Prospect Theory: An Analysis of Decision under Risk », Econometrica, vol. 47, n° 2, mars 1979, p. 263-291.",
+        "kind": "primary",
+        "reference": "10.2307/1914185",
+        "url": "https://doi.org/10.2307/1914185"
+      }
+    ]
+  },
+  {
+    "id": "theories-normatives-du-choix-sous-risque",
+    "slug": "theories-normatives-du-choix-sous-risque",
+    "title": "Les théories normatives du choix sous risque",
+    "authorLabel": "Peter C. Fishburn",
+    "hookQuestion": "Les axiomes du choix rationnel disent-ils ce qu'il faudrait préférer ?",
+    "shortExplanation": "Une théorie normative propose des règles que l'on devrait suivre. Fishburn ne tient plus la transitivité ni l'indépendance pour des principes normatifs inviolables.",
+    "authors": [],
+    "themes": [
+      "choisir-sous-risque"
+    ],
+    "themeLabel": "Choisir quand on ne sait pas",
+    "attributionNote": "Chapitre signé d'un seul nom, « P. C. FISHBURN », le volume ne développant jamais le prénom. Les théories exposées ne sont pas de lui : il attribue la théorie standard du risque à John von Neumann et Oskar Morgenstern (1944), celle de l'incertitude à Frank P. Ramsey (1931) et Leonard J. Savage (1954), et le couple risque / incertitude à Luce et Raiffa (1957). Lui appartiennent l'exposé lui-même et la théorie SSB qu'il présente sous son nom.",
+    "quotation": {
+      "text": "La théorie normative de la décision est l'étude des lignes directrices pour l'action juste.",
+      "reference": "P. C. Fishburn, « Normative Theories of Decision Making under Risk and under Uncertainty », dans David E. Bell, Howard Raiffa et Amos Tversky (dir.), Decision Making: Descriptive, Normative, and Prescriptive Interactions, Cambridge University Press, 1988, p. 78-98, p. 78, section 1 « Introduction »",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "P. C. Fishburn, « Normative Theories of Decision Making under Risk and under Uncertainty », dans D. E. Bell, H. Raiffa et A. Tversky (dir.), Decision Making, Cambridge University Press, 1988, p. 78-98.",
+        "kind": "primary",
+        "reference": "chap. 4, p. 78-98 · 9780521351492",
+        "url": "https://archive.org/details/DecisionMaking"
+      },
+      {
+        "label": "P. C. Fishburn, « Normative Theories of Decision Making under Risk and under Uncertainty », dans J. Kacprzyk et M. Roubens (dir.), Non-Conventional Preference Relations in Decision Making, Springer, 1988, p. 1-21. Texte homonyme.",
+        "kind": "primary",
+        "reference": "10.1007/978-3-642-51711-2_1",
+        "url": "https://doi.org/10.1007/978-3-642-51711-2_1"
       }
     ]
   },

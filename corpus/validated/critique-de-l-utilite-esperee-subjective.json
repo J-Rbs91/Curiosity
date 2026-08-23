@@ -1,0 +1,81 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "critique-de-l-utilite-esperee-subjective",
+  "slug": "critique-de-l-utilite-esperee-subjective",
+  "status": "VALIDATED",
+  "title": "La critique de l'utilité espérée subjective",
+  "themes": [
+    "choisir-sous-risque"
+  ],
+  "theme_labels": {
+    "choisir-sous-risque": "Choisir quand on ne sait pas"
+  },
+  "authors": [
+    {
+      "name": "Glenn Shafer",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Chapitre signé de Glenn Shafer seul ; le recueil est dirigé par David E. Bell, Howard Raiffa et Amos Tversky, ce qui n'est pas une coécriture. Le texte n'est pas inédit : une note de la page 233 le donne pour première publication dans Statistical Science en 1986. Les postulats critiqués sont de L. J. Savage, cités d'après The Foundations of Statistics (1954), ouvrage qui n'a pas été ouvert. À ne pas confondre avec le chapitre 11 du même volume, cosigné par Shafer et Tversky.",
+  "hook": "Maximiser l'utilité espérée est-il la seule façon d'être rationnel ?",
+  "summary": "Analyser une décision par l'utilité espérée subjective est un argument par analogie avec le pari : un outil parmi d'autres, non le canon unique de la rationalité.",
+  "quotation": {
+    "text": "Thus subjective expected utility is just one of several possible tools for constructing a decision.",
+    "reference": "Glenn Shafer, « Savage revisited », dans David E. Bell, Howard Raiffa et Amos Tversky (dir.), Decision Making: Descriptive, Normative, and Prescriptive Interactions, Cambridge University Press, 1988, p. 193-234.",
+    "locator": "p. 193, section 1 « Introduction »",
+    "language": "en",
+    "original_text": null,
+    "original_language": null,
+    "translation": {
+      "kind": "none",
+      "translator": null,
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "Glenn Shafer, « Savage revisited », dans D. E. Bell, H. Raiffa et A. Tversky (dir.), Decision Making, Cambridge University Press, 1988, p. 193-234.",
+      "kind": "primary",
+      "locator": "chap. 10, p. 193-234",
+      "doi_isbn": "9780521351492",
+      "url": "https://archive.org/details/DecisionMaking",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Glenn Shafer, « Savage Revisited », Statistical Science, vol. 1, n° 4, 1986, p. 463-485.",
+      "kind": "primary",
+      "locator": "p. 463-485",
+      "doi_isbn": "10.1214/ss/1177013518",
+      "url": "https://doi.org/10.1214/ss/1177013518",
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle",
+    "date": "2026-08-23",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "OUVERT — texte intégral du livre sur archive.org (item https://archive.org/details/DecisionMaking, métadonnées https://archive.org/metadata/DecisionMaking, OCR téléchargé : https://archive.org/download/DecisionMaking/DecisionMaking_djvu.txt, 631 images, 1,9 Mo de texte). Page de copyright de l'exemplaire numérisé : « T57.95.D394 1988 658.4'03 87-25698 ISBN 0 521 35149 9 » — c'est exactement l'ISBN cité par la fiche (9780521351492). Table des matières : « 10 Glenn Shafer / Savage revisited … 193 », puis « III BELIEFS AND JUDGMENTS ABOUT UNCERTAINTIES … 237 ».",
+      "CITATION — verbatim, à l'endroit annoncé. Le chapitre s'ouvre p. 193 sur « 10 / SAVAGE REVISITED / GLENN SHAFER / 1. INTRODUCTION ». La dernière phrase avant le folio « 193 » (le titre courant « Glenn Shafer » qui suit est celui de la p. 194) est : « Thus subjective expected utility is just one of several possible tools for constructing a decision. » Aucun écart de mot, aucune coupe, pas de traduction : la fiche affiche l'anglais et déclare translation.kind = none, ce qui est exact. Contexte immédiat, même page : « the analysis of a decision problem by subjective expected utility is merely an argument by analogy. It draws an analogy between that decision problem and the problem of a gambler who must decide how to bet in a pure game of chance. »",
+      "ATTRIBUTION — confirmée. Le chapitre 10 est signé du seul Glenn Shafer ; Bell, Raiffa et Tversky ne figurent que comme directeurs du volume (page de titre et notice LC de l'exemplaire numérisé), ce qui n'est pas une coécriture. La distinction faite avec le chapitre 11 est exacte : « 11 / LANGUAGES AND DESIGNS FOR PROBABILITY JUDGMENT / GLENN SHAFER AND AMOS TVERSKY », qui commence p. 237. L'ancrage sur Savage est celui du texte lui-même : « More than three decades have passed since 1954, when L. J. Savage published The Foundations of Statistics » (p. 193). Je n'ai pas ouvert Savage 1954, ce que la note d'attribution déclare d'ailleurs.",
+      "SOURCES — les deux résolvent. (1) ISBN 9780521351492 : OpenLibrary (https://openlibrary.org/api/books?bibkeys=ISBN:9780521351492) rend « Decision making — descriptive, normative, and prescriptive interactions », éd. David E. Bell, Howard Raiffa, Amos Tversky, Cambridge University Press, 1988, x + 623 p., ISBN-10 0521351499, LCCN 87025698 — édition, année, éditeur et directeurs conformes à ce que la fiche annonce. (2) DOI 10.1214/ss/1177013518 : redirection 302 vers https://projecteuclid.org/journals/statistical-science/volume-1/issue-4/Savage-Revisited/10.1214/ss/1177013518.full, qui donne « Savage Revisited », Glenn Shafer, Statistical Science, vol. 1, n° 4 (nov. 1986), p. 463-485 — conforme. Recoupé par le livre lui-même, NOTE de fin de chapitre (p. 233) : « First published in Statistical Science, 1 (1986), 463-485. » La note d'attribution est donc exacte sur ce point.",
+      "PAGINATION — un flottement interne, non bloquant, à harmoniser. La référence de la citation et le label de la source 1 disent « p. 193-234 » ; le champ locator de la même source dit « chap. 10, p. 193-232 ». Dans l'exemplaire : le corps du chapitre se termine p. 232, la NOTE est p. 233, les références courent jusqu'au folio « 234 », après quoi vient la page de partie « III ». Le chapitre entier est donc bien p. 193-234 (certains catalogues en ligne annoncent 193-235, ce que le scan ne confirme pas) ; « 193-232 » ne désigne que le corps sans note ni bibliographie. Les deux pointent dans le bon chapitre du bon livre : je ne compte pas cela comme un défaut de résolution, mais je recommande d'aligner le locator sur 193-234.",
+      "PROSE — fidèle. Le hook (« Maximiser l'utilité espérée est-il la seule façon d'être rationnel ? ») reprend la question que Shafer pose explicitement : « Savage believed that a rational person's preferences should satisfy these postulates … He concluded that it is normative to make choices that maximize subjective expected utility. To do otherwise is to violate a canon of rationality » (p. 193), thèse dont il annonce la révision. Le summary (« argument par analogie avec le pari : un outil parmi d'autres, non le canon unique de la rationalité ») est porté mot pour mot par le même paragraphe, y compris le « pari » (« the problem of a gambler who must decide how to bet in a pure game of chance »). Rien n'y déborde les sources ; rien n'y est plus étroit que la citation retenue.",
+      "NON ATTEINT — le PDF de l'article de 1986 sur Project Euclid est bloqué par Incapsula (HTTP 200 renvoyant une page anti-robot, incident 1016000042533423607) : je n'ai lu de l'original que la page de notice, pas son texte. Ce n'est pas un silence de la littérature, c'est un accès refusé. La fiche déclare cette source « metadata-only », ce qui correspond exactement à ce que j'ai pu atteindre, et la citation n'est pas rattachée à cette source. Par ailleurs l'outil verify_reference (serveur documentary) n'était pas exposé dans ma session : j'ai résolu l'ISBN et le DOI directement (OpenLibrary, résolveur DOI, Project Euclid), plus la page de copyright du scan.",
+      "HORS MANDAT, pour information et sans conséquence sur le verdict — le titre de la carte, « La critique de l'utilité espérée subjective », est plus large que ce que Shafer revendique. La critique de l'UES lui préexiste et il la cite (Allais 1953 et les études empiriques figurent dans sa propre bibliographie, p. 233-234) ; ce qui lui appartient en propre ici, c'est la relecture de ces réfutations comme argument par analogie et la thèse constructive qui en découle. Le summary, lui, se tient précisément à cette thèse-là, et la note d'attribution borne correctement le propos : je ne demande donc aucune correction, mais un titre du type « L'utilité espérée subjective comme argument par analogie » serait plus juste si le champ peut encore bouger."
+    ]
+  },
+  "notes": [
+    "Cette carte repose sur le même exemplaire numérisé que quatre autres du même lot : le recueil de 1988 dirigé par Bell, Raiffa et Tversky, déposé sur Internet Archive sous l'identifiant DecisionMaking. Aucune contre-lecture sur un second exemplaire n'a été possible, et un défaut de ce scan se propagerait aux cinq fiches sans être détecté ici.",
+    "Constat matériel sur cet exemplaire : les pages imprimées 204 et 205 sont absentes du scan. Le feuillet 212 s'achève au folio 203 et le suivant s'ouvre en milieu de phrase pour finir au folio 206. Le saut emporte deux sous-sections de la partie 3, dont ni le titre ni le contenu ne sont connus ici. Ni la citation ni aucun passage rapporté n'en dépend.",
+    "Shafer critique une norme du choix, celle qui fait de l'utilité espérée subjective le canon unique de la rationalité. Il ne conteste pas le moment décisionnel : il écrit au contraire p. 197, à propos de l'acheteur de voiture, que la nécessité de trancher est réelle mais tient à la situation et non à la logique. Une carte qui lui prêterait cette seconde thèse excéderait sa source.",
+    "L'article de 1986 paru dans Statistical Science, dont ce chapitre est la reprise, n'a pas été atteint : les deux adresses annoncées ouvertes rendent une page de défi anti-robot, qui n'a pas été contournée. La citation vaut pour la reprise de 1988, et les deux états du texte n'ont pas pu être comparés.",
+    "Une phrase plus frontale a été écartée par le lecteur primaire, p. 194 : « This means repudiating the claim that subjective expected utility provides a uniquely normative way of constructing decisions. » Son « This » renvoie à la phrase précédente et la laisserait sans antécédent sur la carte.",
+    "Le locator de la source primaire disait « p. 193-232 » quand le libellé et la référence disaient « p. 193-234 » : deux nombres se contredisaient sur la même carte. Le chapitre entier va bien de 193 à 234, le corps s'arrêtant p. 232, la NOTE occupant la p. 233 et les références allant jusqu'à 234. Le locator est aligné sur 234."
+  ]
+}
