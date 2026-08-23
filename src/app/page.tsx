@@ -22,6 +22,7 @@ import { DeepenButton } from "@/components/ui/DeepenButton";
 import { Wordmark } from "@/components/ui/Wordmark";
 import { ScreenSkeleton } from "@/components/ui/ScreenSkeleton";
 import { espacesFrancaises } from "@/lib/typographie";
+import { AUDIENCE_EVENTS, countEvent } from "@/lib/analytics";
 
 /**
  * La hauteur d'un écran, réserve de navigation déduite.
@@ -289,6 +290,13 @@ export default function TodayPage() {
            */}
           <Button
             onClick={() => {
+              /*
+               * Le seul endroit d'où le geste se compte : le seuil et la carte partagent
+               * `/`, si bien qu'aucune adresse ne change entre les deux et qu'aucune vue
+               * ne distingue « ouvrir l'application » de « venir lire la carte ». C'est
+               * précisément la distinction que ce bouton fait, et il est le seul.
+               */
+              countEvent(AUDIENCE_EVENTS.carteDuJour);
               spendOpening();
               blink(() => {
                 setParClignement(true);

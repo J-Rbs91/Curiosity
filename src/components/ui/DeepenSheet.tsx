@@ -4,6 +4,7 @@ import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { createPortal } from "react-dom";
 import { ArrowUpRight } from "lucide-react";
 import { AI_DESTINATIONS } from "@/lib/ai-destinations";
+import { AUDIENCE_EVENTS, countEvent } from "@/lib/analytics";
 import { Button } from "@/components/ui/Button";
 
 interface DeepenSheetProps {
@@ -129,7 +130,20 @@ export function DeepenSheet({ copied, text, onClose }: DeepenSheetProps) {
                 href={destination.url}
                 target="_blank"
                 rel="noreferrer"
-                onClick={onClose}
+                onClick={() => {
+                  /*
+                   * Le geste se compte ici et pas à l'ouverture de la feuille : ouvrir la
+                   * feuille est une intention, choisir une destination est le départ. Seul
+                   * le second dit que le dossier a servi.
+                   *
+                   * Le service choisi n'est pas transmis. Le compte demandé est celui des
+                   * lecteurs qui poursuivent ; nommer les services ferait de cette liste un
+                   * classement d'usage, quand elle est rangée par ordre alphabétique
+                   * précisément pour ne recommander personne.
+                   */
+                  countEvent(AUDIENCE_EVENTS.poursuiteIa);
+                  onClose();
+                }}
                 className="press-soft flex min-h-12 items-center justify-between gap-4 py-3 text-[16px] text-ink hover:text-accent"
               >
                 {destination.name}
