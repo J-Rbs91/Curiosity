@@ -23,28 +23,35 @@ script ne peut pas dire : quel travail est possible aujourd'hui, ce qu'il coûte
 
 | chantier | volume | recherche documentaire ? | état |
 |---|---|---|---|
-| ~~**A.** Approfondissements~~ | ~~25 cartes~~ | non | **fait le 21 août 2026** |
+| **A.** Approfondissements | 8 cartes | non | **rouvert le 23 août 2026** |
 | **B.** File de la sociologie des organisations | 25 entrées | oui, cartographie déjà faite | ouvert |
-| **C.** Cinq domaines vides | 5 domaines | oui, **tout est à faire** | ouvert |
-| **D.** Reprises courtes de `systems-thinking` | 2 textes | oui, accès déjà constaté | ouvert |
+| **C.** Quatre domaines vides | 4 domaines | oui, **tout est à faire** | ouvert |
+| **D.** Reprises courtes de `systems-thinking` et de `decision-science` | 4 textes | oui, accès déjà constaté | ouvert |
 
-Le chantier A est vidé : les vingt-cinq approfondissements manquants ont été écrits et
-projetés, et **plus aucune carte validée n'en attend**. Ce que ce passage a appris est gardé
-plus bas ; ce qui reste à faire commence au chantier B.
+Le chantier A s'était vidé le 21 août et **il se rouvre le 23** : les huit cartes de la science
+de la décision n'ont pas d'approfondissement. C'est délibéré, et non un oubli, la routine
+nocturne consacrant une phase entière à ce travail. **C'est le chantier que prend la nuit
+suivante**, et sa file est celle de `corpus:deepen`, pas celle de ce fichier.
 
-Le chantier C a perdu un domaine le 22 août : `systems-thinking` est ouvert et pourvu. Ce que
-ce passage a laissé derrière lui, et qui se reprend vite, est au chantier D.
+Le chantier C a perdu un domaine le 22 août, `systems-thinking`, et un second le 23,
+`decision-science`. **La famille « Comprendre le pilotage » est complète.** Ce que ces deux
+passages ont laissé derrière eux, et qui se reprend vite, est au chantier D.
 
 ---
 
-# A. Les approfondissements, faits
+# A. Les approfondissements
 
-**Vidé le 21 août 2026.** Les vingt-cinq cartes qui n'avaient pas d'approfondissement en ont
-un : les treize de human factors, ouvertes le 19 août, et les douze de cybernétique, ouvertes
-le 21. `corpus:deepen` projette désormais **57 approfondissements, 83 469 mots, 1 464 en
-moyenne**, et sa fin de sortie ne liste plus aucune carte.
+**Vidé le 21 août 2026, rouvert le 23.** Les vingt-cinq cartes qui n'en avaient pas en ont un :
+les treize de human factors et les douze de cybernétique. `corpus:deepen` projette
+**66 approfondissements, 95 772 mots, 1 451 en moyenne**.
 
-C'était le seul écart du corpus entre ce qui est validé et ce qui est servi.
+Mais sa fin de sortie liste de nouveau **huit cartes**, celles du lot d'ouverture de la science
+de la décision, ouvert le 23 août. C'est le seul écart actuel du corpus entre ce qui est validé
+et ce qui est servi, et il se comble par `/corpus-deepen`, sans aucune recherche documentaire :
+la matière est la carte elle-même, sa lecture primaire et son verdict de contrôle.
+
+**La file n'est pas tenue ici.** `npm run corpus:deepen` l'affiche en fin de sortie, et c'est
+elle qui fait foi.
 
 ## Ce que ce passage a appris, et qui resservira
 
@@ -134,12 +141,12 @@ tradition germanophone, que la file ne couvre pas.
 
 ---
 
-# C. Les cinq domaines vides
+# C. Les quatre domaines vides
 
-**`systems-thinking` est sorti de cette liste le 22 août 2026.** Il avait le meilleur stock
-d'entrée des six, et c'est par lui que le chantier a été entamé : périmètre écrit,
-cartographie, sept cartes, trois thèmes. Ce que ce passage a appris est au chantier D et dans
-`corpus/ETAT.md`.
+**`systems-thinking` est sorti de cette liste le 22 août 2026**, et **`decision-science` le
+23**. Les deux avaient le meilleur stock d'entrée du lot, et c'est par eux que le chantier a
+été entamé : périmètre écrit, cartographie, cartes, puis thèmes. Ce que ces passages ont appris
+est au chantier D et dans `corpus/ETAT.md`.
 
 | famille | domaine | périmètre | cartographie | stock d'entrée |
 |---|---|---|---|---|
@@ -147,25 +154,29 @@ cartographie, sept cartes, trois thèmes. Ce que ce passage a appris est au chan
 | Humains et organisations | Psychologie du travail | — | — | 1 cas de frontière |
 | Humains et organisations | Économie comportementale | — | — | aucun |
 | Production et systèmes | Operations Management | — | — | 3 rapports repérés |
-| Pilotage | Science de la décision | — | — | **5 textes repérés** |
 
-**Aucun des cinq n'a de périmètre écrit ni de cartographie.** Les ouvrir, c'est refaire l'ordre
-complet, et cet ordre n'est pas négociable : il a été appris en le violant.
+**Les trois domaines de la famille « Comprendre les humains et les organisations » sont
+désormais les seuls sans stock d'entrée sérieux**, et `operations-management` est le dernier à
+en avoir un. C'est lui qui a le meilleur rendement des quatre.
+
+**Aucun des quatre n'a de périmètre écrit ni de cartographie.** Les ouvrir, c'est refaire
+l'ordre complet, et cet ordre n'est pas négociable : il a été appris en le violant.
 
 > le périmètre s'écrit → le scout cartographie → **puis** les thèmes se déclarent → puis les
 > concepts s'instruisent
 
 Les neuf thèmes de la sociologie des organisations ont été posés de mémoire avant toute
 lecture, et le périmètre le reconnaît lui-même comme un découpage a priori : c'est pourquoi
-trois d'entre eux affichent une page vide. La règle qui en découle vaut pour les cinq :
-**un thème sans carte validée ne se déclare pas.**
+deux d'entre eux affichent encore une page vide. La règle qui en découle vaut pour les quatre :
+**un thème sans carte validée ne se déclare pas.** Elle a de nouveau tenu le 23 août, où deux
+thèmes proposés par la cartographie de `decision-science` n'ont pas été déclarés faute de cartes
+pour les porter, alors même que leurs textes étaient ouverts et lus.
 
 ## Ce dont l'ouverture hérite déjà, et qui n'est pas à rechercher
 
-Deux de ces domaines ne partent pas de rien. Les périmètres et cartographies existants ont
+Un seul de ces domaines ne part pas de rien. Les périmètres et cartographies existants ont
 tranché leurs frontières **depuis l'autre côté**, et consigné en angle mort ce qui leur
-revient plutôt que de le rejeter. Un scout qui ouvre l'un des deux commence par lire ces
-sections.
+revient plutôt que de le rejeter. Un scout qui l'ouvre commence par lire ces sections.
 
 **Le legs se vérifie : c'est ce qui a ouvert `systems-thinking`.** Les trois textes que
 `corpus/map/cybernetics.scouting.md` lui avait consignés ont été repris tels quels le 22 août.
@@ -175,15 +186,22 @@ Forrester, qui n'avaient pas été rencontrés spontanément, remontent immédia
 cherche nommément. Une section d'angle mort bien tenue vaut donc un balayage, et cela justifie
 le temps qu'elle coûte.
 
-**`decision-science`** — deux cartographies lui ont légué cinq textes avec leur état d'accès
-constaté : Tversky & Kahneman 1974 (version publiée fermée, mais **un rapport technique ONR
-antérieur miré sur Internet Archive sans restriction**, repéré non ouvert), Tversky 1972,
-l'ouvrage collectif de 1982, la théorie de l'utilité multi-attributs, et Newell, Shaw & Simon
-1960 dans les actes de 1960, **texte intégral ouvert et repéré non lu**.
+**Le legs se vérifie une seconde fois, et il a rendu davantage : c'est ce qui a ouvert
+`decision-science` le 23 août.** Les cinq textes que deux cartographies lui avaient consignés
+ont été repris tels quels. Deux ont rendu une carte ; deux autres, jamais testés jusque-là, ont
+été **vérifiés et déclarés fermés** plutôt que laissés en suspens ; le cinquième n'était pas un
+texte mais un courant, et il l'est resté. Surtout, la vérification d'accès du legs a fait
+découvrir ce qu'aucune requête par littérature n'avait donné : **un recueil de 1988 entièrement
+ouvert**, d'où sont sorties cinq des huit cartes du lot. Aller vérifier un legs vaut donc mieux
+que de le croire, et pas seulement pour ce qu'il annonce.
 
-**`operations-management`** — trois rapports du Department of Defense appliquant la loi de la
-variété requise à l'acquisition de systèmes d'armes, mirés sur Internet Archive, repérés non
-ouverts.
+**`operations-management`**, le dernier domaine à hériter de quelque chose — trois rapports du
+Department of Defense appliquant la loi de la variété requise à l'acquisition de systèmes
+d'armes, mirés sur Internet Archive, repérés non ouverts. **À quoi s'ajoute une voie d'accès
+que le lot du 23 août a établie et qui vaut pour lui plus que pour tout autre** : la collection
+`dticarchive` d'Internet Archive sert sans restriction des rapports techniques ONR, ARPA et RAND
+dont la publication en revue est fermée. Deux cartes de ce lot en viennent. Les trois rapports
+légués relèvent exactement de ce fonds.
 
 **`work-psychology`, `sociology-of-work`, `behavioral-economics`** — les deux cartographies
 qui les ont explicitement balayés **se déclarent vides pour eux**, et disent pourquoi : les
@@ -192,7 +210,15 @@ résultat, pas un manque, et il signifie qu'ouvrir ces trois-là demandera un ba
 Un seul cas de frontière est consigné, Mackworth 1948 sur la vigilance, **tranché du côté de
 `human-factors`** et donc pas à réclamer.
 
-## Le piège que ces cinq domaines partagent
+Une nuance à porter sur `behavioral-economics` depuis le 23 août : le périmètre de
+`decision-science` a écrit la frontière avec lui, et il la donne pour **la plus coûteuse à
+tenir** de ses six. La coupure retenue est celle-ci, et elle ne se rouvre pas depuis l'autre
+côté : un écart de jugement pris comme **fait de raisonnement** est en science de la décision ;
+le même écart pris comme **fait économique**, avec ses conséquences agrégées, est là-bas. La
+cartographie du 23 août n'a toutefois **rien cherché de ciblé** vers ce domaine : elle ne
+constitue donc aucun stock d'entrée, et son silence n'est pas un vide établi.
+
+## Le piège que ces quatre domaines partagent
 
 La cybernétique a montré ce que coûte un champ dont le vocabulaire est disponible pour
 n'importe quel usage métaphorique. Les cinq le sont autant : « système », « décision »,
@@ -204,10 +230,34 @@ revient toujours par une autre porte.
 
 ---
 
-# D. Les reprises courtes de `systems-thinking`
+# D. Les reprises courtes de `systems-thinking` et de `decision-science`
 
-Deux textes localisés en accès ouvert et non lus, laissés par le lot du 22 août. Ce sont les
-deux entrées les moins chères du dépôt, l'accès étant déjà constaté dans les deux cas.
+## Deux textes ouverts et **déjà lus**, laissés par le lot du 23 août
+
+Ce sont les deux entrées les moins chères du dépôt, plus courtes encore que celles du 22 août :
+leur accès n'est pas seulement constaté, **leur texte a été ouvert**. Ils n'ont pas été
+instruits parce que le plafond de volume du lot était atteint, et parce que chacun aurait
+ouvert un thème à une seule carte, ce que la règle refuse.
+
+**Arrow 1948**, *The Possibility of a Universal Social Welfare Function*, RAND Paper P-41.
+Internet Archive, identifiant `DTIC_AD0603806`, collection `dticarchive`, sans restriction,
+page de titre confirmée. C'est la forme la plus ancienne du théorème d'impossibilité, et il
+pourvoirait le thème « agréger des préférences » que le lot n'a pas pu déclarer. **Une réserve
+à porter dans le brief** : le document porte lui-même un avis du Clearinghouse disant que sa
+lisibilité est « in part unsatisfactory », et la couche texte le confirme. Toute citation devra
+se relire sur l'image, plus encore que d'ordinaire.
+
+**Newell, Shaw & Simon**, 1958 dans *Psychological Review* et 1960 dans *Self-Organizing
+Systems*. Les deux sont ouverts et lus : le premier par un tiré à part servi par le serveur IIIF
+des archives de Carnegie Mellon, le second sur l'item Internet Archive `SelfOrganizingSystems`.
+Ils pourvoiraient le thème « chercher une solution plutôt que la calculer ». **La cartographie
+dit elle-même qu'un seul concept devrait en sortir**, les deux textes portant sur le même
+programme et la même thèse : la décision de fusionner ou de partager revient à l'instruction.
+Une réserve d'accès est déclarée sur le tiré à part de 1958, la page de notice d'archives ayant
+répondu `HTTP 503` : le fichier est servi publiquement par une bibliothèque universitaire, mais
+l'autorisation n'a pas pu être lue noir sur blanc.
+
+## Deux textes localisés en accès ouvert et non lus, laissés par le lot du 22 août
 
 **L'ouvrage de 1972 sur les limites de la croissance**, de Meadows, Meadows, Randers et
 Behrens. Scan intégral qui répond, 43 Mo, sur le site du Donella Meadows Project. C'est lui
@@ -307,3 +357,34 @@ constate sur la page qui héberge, comme toutes les autres.
 **OpenEdition Books sert des ouvrages entiers en texte intégral.** Voie découverte en cours de
 lot sur la théorie de la mesure, où elle a débloqué l'ouvrage central du domaine. Plusieurs
 francophones classés fermés dans les cartographies antérieures méritent d'y être retentés.
+
+**La collection `dticarchive` d'Internet Archive est une voie d'accès à part entière.** Établi
+par le lot du 23 août, qui en a tiré deux cartes : des textes fondateurs publiés dans des revues
+aujourd'hui fermées existent sous forme de rapport technique ONR, ARPA ou RAND, mirés **sans
+restriction d'emprunt**. Le réflexe à prendre est de chercher le rapport avant de conclure de
+la fermeture de l'article. Deux précautions vont avec : le rapport et l'article publié **ne sont
+pas le même texte** et leurs écarts se constatent plutôt qu'ils ne se supposent ; et le millésime
+du rapport n'est pas celui de l'article, ce que le lot a payé une fois, le rapport dit « de 1974 »
+étant en fait daté d'août 1973 sur sa propre couverture.
+
+**Un défi anti-robot ne se franchit pas, et il ne clôt rien.** Deux textes annoncés ouverts par
+Unpaywall se sont révélés servis derrière un mur, Incapsula chez Project Euclid et DataDome chez
+`rairo-ro.org`. Aucun n'a été contourné et **les deux ont rendu par une voie légitime** : une
+reprise en recueil, et le miroir Numdam, qui republie en accès libre les anciens numéros de RIRO
+et RAIRO. Un `is_oa: true` d'Unpaywall ne garantit donc pas plus l'accès qu'un `is_oa: false` ne
+le refuse.
+
+**La leçon la plus répandue d'une citation célèbre peut être la mauvaise.** Le lot du 23 août a
+constaté deux fois que la formule qui circule vient d'un autre état du texte que celui qu'on
+cite : « stubborn appeal » et « perceptual illusions » viennent du texte de 1984, non de celui de
+1986 ; « which reduce » et « probabilities » viennent de l'article de *Science*, non du rapport
+de 1973. **Une carte qui cite l'exemplaire qu'elle a ouvert a raison contre la mémoire du champ**,
+et ses `notes` doivent le dire pour qu'un passage ultérieur ne la « corrige » pas vers l'erreur.
+
+**Un agent qui télécharge vérifie l'empreinte de ce qu'il a reçu.** Le répertoire de travail
+temporaire est partagé entre agents parallèles, et trois agents du lot du 23 août ont lu ou écrit
+le fichier d'un voisin, l'un d'eux recevant l'OCR d'un tout autre ouvrage que le sien. La mise en
+garde existait déjà, plus bas dans ce fichier, et elle n'a pas suffi : **ce qui a sauvé les trois
+est la comparaison de la taille et du MD5 à la notice d'Internet Archive**, pas la vigilance. Le
+préfixage des fichiers de travail par l'identifiant de la carte reste nécessaire ; il n'est pas
+suffisant.
