@@ -1,4 +1,4 @@
-# État du corpus — 22 août 2026
+# État du corpus — 23 août 2026
 
 Écrit sur le disque parce qu'une session a déjà été coupée en cours de route : ce fichier
 existe pour qu'une reprise reparte des fichiers, et non de la mémoire de quelqu'un.
@@ -6,12 +6,12 @@ existe pour qu'une reprise reparte des fichiers, et non de la mémoire de quelqu
 Ce fichier dit ce que le corpus **est**. Ce qui lui **manque**, et par quel bout le prendre,
 est dans [`corpus/RESTE-A-FAIRE.md`](RESTE-A-FAIRE.md).
 
-`npm run corpus:validate` : **67 enregistrements, 66 validés, 0 erreur, 42 avertissements.**
-`npm run corpus:deepen` : **66 approfondissements pour 66 cartes validées, 95 772 mots,
+`npm run corpus:validate` : **75 enregistrements, 74 validés, 0 erreur, 50 avertissements.**
+`npm run corpus:deepen` : **66 approfondissements pour 74 cartes validées, 95 772 mots,
 1 451 en moyenne.**
-`npm test` : **382 tests, 0 échec.** `npm run lint` et `npm run build` : sans erreur.
+`npm test` : **419 tests, 0 échec.** `npm run lint` et `npm run corpus:build` : sans erreur.
 
-**Six domaines instruits sur onze déclarés.** Les cinq autres sont configurés dans la
+**Sept domaines instruits sur onze déclarés.** Les quatre autres sont configurés dans la
 taxonomie et n'ont pas de corpus ; `corpus:audit` les affiche « en cours de constitution ».
 Aucun d'eux n'a de périmètre écrit ni de cartographie : les ouvrir, c'est refaire l'ordre
 complet, périmètre puis scout puis thèmes puis cartes.
@@ -24,14 +24,207 @@ complet, périmètre puis scout puis thèmes puis cartes.
 | Théorie de la mesure / KPI | 4 | 9 | 9 |
 | Cybernétique | 4 | 12 | 12 |
 | Systems Thinking | 3 | 7 | 7 |
+| Science de la décision | 2 | 8 | **0** |
 
-**Aucune carte validée n'attend son approfondissement**, et c'est vrai depuis le 21 août.
-Les lots qui ont suivi ont écrit les leurs dans le même passage que leurs cartes, plutôt que
-de laisser l'écart se rouvrir. `npm run corpus:deepen` liste en fin de sortie les cartes qui
-n'en ont pas : c'est la file de travail, et elle est vide.
+**Huit cartes validées attendent leur approfondissement**, et ce sont les huit du lot du
+23 août. L'écart s'était refermé le 21 août et il se rouvre ici volontairement : la routine
+nocturne consacre une phase entière aux approfondissements, et une nuit d'ouverture de domaine
+n'en écrit pas. `npm run corpus:deepen` liste ces huit en fin de sortie : **c'est la file de
+travail, et c'est ce que prend la nuit suivante.**
+
+**La famille « Comprendre le pilotage » est complète.** Ses deux domaines, la théorie de la
+mesure et la science de la décision, sont instruits. C'est la première des quatre familles à
+l'être entièrement.
 
 **La famille « Comprendre la production et les systèmes » est ouverte aux deux tiers.**
 Elle était entièrement vide le 20 août ; il lui reste `operations-management`.
+
+# 0. Science de la décision — lot d'ouverture du 23 août 2026, publié
+
+Septième domaine instruit, **deuxième et dernier de la famille « Comprendre le pilotage »**.
+Premier lot conduit par la routine nocturne (passage 01 sur 15, voir
+[`corpus/JOURNAL-ROUTINE.md`](JOURNAL-ROUTINE.md)).
+
+Comme `systems-thinking` avant lui, il ne partait pas de zéro : deux cartographies voisines
+lui avaient légué cinq textes avec leur état d'accès constaté. **Le legs a de nouveau rendu**,
+et cette fois par un chemin que personne n'avait prévu, décrit plus bas.
+
+## Les huit cartes
+
+| id | thème | auteur·s | tours |
+|---|---|---|---:|
+| `theorie-des-perspectives` | Choisir quand on ne sait pas | Kahneman, Tversky | 1 |
+| `effet-de-cadrage` | Choisir quand on ne sait pas | Tversky, Kahneman | 1 |
+| `heuristiques-de-jugement` | Choisir quand on ne sait pas | Tversky, Kahneman | **2** |
+| `theories-normatives-du-choix-sous-risque` | Choisir quand on ne sait pas | Fishburn | 1 |
+| `critique-de-l-utilite-esperee-subjective` | Choisir quand on ne sait pas | Shafer | 1 |
+| `normatif-descriptif-prescriptif` | Aider quelqu'un à trancher | Bell, Raiffa, Tversky | 1 |
+| `penser-a-partir-des-valeurs` | Aider quelqu'un à trancher | Keeney | 1 |
+| `classement-multicritere-electre` | Aider quelqu'un à trancher | Benayoun, Roy, Sussmann | 1 |
+
+**Les huit portent une citation**, ce que seul le lot de cybernétique avait obtenu avant.
+**Une repose sur une source primaire francophone**, celle de Roy, et elle pourvoit à elle seule
+la couche francophone du domaine. **Le domaine n'a aucune signature féminine** : c'est à
+surveiller et à porter au prochain passage, pas à corriger par quota.
+
+Huit candidats instruits sur onze repérés, aucune fiche perdue, aucun rejet. Les trois non
+instruits l'ont été par le plafond de volume, pas par un défaut documentaire.
+
+## Ce que ce lot a payé, et qui resservira
+
+**Le filon des rapports techniques est systématique dans ce champ, et il n'était connu que
+par un cas.** La cartographie de `human-factors` avait légué un seul rapport ONR miré sans
+restriction. Ce passage en a fait une **voie** : plusieurs textes fondateurs, publiés dans des
+revues aujourd'hui fermées, existent sous forme de rapport ONR, ARPA ou RAND dans la collection
+`dticarchive` d'Internet Archive. Deux des huit cartes en viennent, et la troisième découverte
+du filon, Arrow 1948, n'a pas été instruite faute de place. C'est la voie d'accès la plus
+rentable identifiée depuis OpenEdition Books.
+
+**Une réédition n'est pas l'original, et ce lot l'a payé quatre fois plutôt qu'une.** Chacune
+des quatre cartes anglophones du thème du risque cite un exemplaire dont la publication
+d'origine est fermée : le rapport de 1977 contre l'article d'*Econometrica* de 1979, le rapport
+de 1973 contre l'article de *Science* de 1974, le chapitre de 1988 contre l'article du *Journal
+of Business* de 1986 et contre celui de *Science* de 1981. **Les quatre lecteurs ont localisé
+leur verbatim sur ce qu'ils avaient ouvert**, et deux d'entre eux ont établi des écarts réels
+entre les deux états du texte. Le plus net est celui des heuristiques : le rapport de 1973 dit
+« by which they reduce » et « likelihoods » là où l'article de *Science* dit « which reduce » et
+« probabilities ». Le second contrôleur l'a retrouvé indépendamment.
+
+**Le piège symétrique existe et il est plus dangereux : la leçon fausse peut être la plus
+répandue.** Le contrôleur de `effet-de-cadrage` a trouvé que la variante qui circule le plus
+(« stubborn appeal », « perceptual illusions ») vient du texte de 1984, non de celui que la
+fiche cite. Elle est consignée dans les `notes` de la carte avec sa conséquence écrite en clair :
+**qui « corrigerait » en aval vers cette variante introduirait l'erreur.**
+
+**Un défi anti-robot ne se franchit pas, et il ne clôt rien non plus.** Deux textes annoncés
+ouverts par Unpaywall sont servis derrière un mur : Shafer 1986 chez Project Euclid (Incapsula)
+et Roy 1968 chez `rairo-ro.org` (DataDome). **Aucun n'a été contourné, et les deux ont rendu par
+une voie légitime** : la reprise en recueil pour l'un, le miroir Numdam pour l'autre. Le second
+est le plus instructif : l'identifiant Numdam a été **résolu par recherche du titre exact, pas
+deviné d'après la forme de l'URL**, ce qui est précisément la leçon qu'un lot précédent avait
+écrite puis repayée.
+
+**La couche OCR a menti trois fois, et l'image l'a rattrapée trois fois.** Un mot substitué et un
+mot supprimé dans la dernière phrase du chapitre de Shafer ; la première ligne de la page 78
+tronquée chez Fishburn, ce qui aurait fait conclure à tort à un écart ; et un « 23 » lu pour
+« 33 » dans la table des matières, qui est l'origine probable d'une pagination fausse. **La règle
+« toute citation se relit sur l'image de la page » a payé son coût trois fois dans une seule
+nuit.**
+
+**Le répertoire de travail partagé a contaminé trois agents, et la mise en garde était déjà
+écrite.** `corpus/RESTE-A-FAIRE.md` demandait depuis le lot des approfondissements qu'un agent
+lancé en parallèle préfixe ses fichiers de travail. Trois agents de cette nuit ont lu ou écrit le
+fichier d'un voisin, et **l'un d'eux a téléchargé l'OCR d'un tout autre ouvrage** : un lecteur a
+failli instruire les heuristiques sur le texte du recueil de 1988. **Les trois l'ont détecté par
+contrôle d'empreinte** (taille et MD5 comparés à la notice d'Internet Archive) et ont tout refait
+dans un répertoire privé. Aucune conclusion de ce lot ne repose sur un fichier contaminé, et
+c'est le contrôle d'empreinte, non la vigilance, qui l'a garanti.
+
+## Ce que le contrôle a réellement attrapé
+
+| question | résultat sur huit fiches |
+|---|---|
+| citation verbatim, à l'endroit annoncé | 8/8 dès le premier passage |
+| attribution | 8/8 dès le premier passage |
+| prose fidèle aux sources | 8/8 dès le premier passage |
+| sources qui résolvent | 7/8, un renvoi, sur un décompte de pages |
+
+**Le seul renvoi du lot porte sur deux pages.** Le libellé de `heuristiques-de-jugement`
+annonçait « 31 p. » ; le formulaire DD 1473 du rapport lui-même déclare 33 pages au champ 7a, les
+deux dernières portant les références et les notes. Le contrôleur a compté sur le document, pas
+sur un catalogue. Corrigé, recontrôlé par un contrôleur distinct, passé au second tour.
+
+**Quatre corrections ont été signalées hors mandat par des contrôleurs qui rendaient `PASS`, et
+toutes ont été appliquées.** C'est le troisième lot consécutif où ce dispositif rapporte plus que
+les renvois eux-mêmes :
+
+- une accroche disait « presque toujours » là où Keeney écrit « often », « it is common », « many
+  decision situations » ;
+- un résumé disait « les axiomes » là où **Fishburn ne conteste que la transitivité et
+  l'indépendance**, conservant la continuité qu'il reconduit dans ses propres axiomes ;
+- une note d'attribution prêtait à Tversky l'idée que la catégorie prescriptive « pourrait ne pas
+  être nécessaire », quand la page dit que c'est le **prosélytisme** pour ce découpage qui serait
+  superflu, la catégorie restant « utile à leurs discussions internes » ;
+- un locator disait « p. 193-232 » quand le libellé de la même source disait « p. 193-234 ».
+
+## Trois enseignements de méthode, à ne pas perdre
+
+**1. Une cartographie se fait contredire par la lecture, et c'est ce pour quoi elle est
+écrite.** Trois annonces du repérage ont été **infirmées** par les lecteurs primaires, chaque
+fois sur pièce :
+
+- la cartographie donnait Keeney comme opposé à l'utilité multi-attributs. **Faux** : il s'oppose
+  au cadrage centré sur les alternatives, et la MAUT reste son outillage, qu'il dit
+  complémentaire. Il déplace le moment où on la convoque, il ne la récuse pas ;
+- le repérage donnait Fishburn comme une défense normative. **Faux** : c'est un axiomaticien qui
+  expose les arguments de rationalité en faveur des axiomes standards, puis dit pourquoi il ne
+  les tient plus pour inviolables ;
+- la cartographie annonçait le chapitre 1 aux pages 9 à 22 et celui de Keeney aux pages 465 à
+  491. **Faux les deux fois** : 9-30 et 465-494, établis sur les folios imprimés et confirmés
+  après coup par Crossref.
+
+**2. L'attribution la plus juste peut être écrite dans la bibliographie du texte qu'on cite.**
+L'article de Roy 1968 est signé de lui seul. Sa propre référence [3] renvoie à une note de
+travail SEMA de 1966 signée **Benayoun, Roy et Sussmann**, qui porte déjà le nom ELECTRE et
+presque le même titre. Ranger la méthode sous le seul nom de Roy aurait contredit le texte
+fondateur qu'on cite. Le contrôleur aveugle a vérifié la chaîne et noté que Wikipédia s'en tient
+à Roy seul : **la fiche est plus exacte que sa source de réception la plus lue.**
+
+**3. Un mot du champ n'est pas un mot de l'auteur, et la vulgarisation est la source du
+contresens.** Deux cas dans le même lot. **Le rapport de 1973 ne nomme heuristiques que deux
+des trois procédés**, l'ancrage y étant un *phénomène* et l'heuristique « un ajustement à partir
+d'un point de départ » ; le texte dit « un nombre limité », jamais « trois ». Et **le mot
+« critère » n'apparaît pas une fois chez Roy**, qui écrit « points de vue » : il est resté hors du
+résumé, et ne survit que dans le titre de la carte, ce qu'un contrôleur a relevé et jugé
+admissible.
+
+## Réserves conservées, et ce qui reste à reprendre
+
+Elles sont dans le champ `notes` de chaque carte. Les principales :
+
+- **Cinq des huit cartes reposent sur le même exemplaire numérisé**, le recueil de 1988 servi par
+  Internet Archive. Les cinq fiches le déclarent. Deux constats matériels sur cet exemplaire sont
+  conservés parce qu'ils resserviront : **son fichier de pagination décale d'une unité** par
+  rapport aux folios imprimés, et **les pages 204 et 205 sont absentes du scan**.
+- **La version de 1986 de Shafer n'a pas été atteinte**, l'éditeur la servant derrière un mur
+  anti-robot. Aucune comparaison entre les deux états du texte n'a donc pu être faite.
+- **Un texte homonyme de Fishburn existe**, même auteur, même année, même titre, chez un autre
+  éditeur, et personne n'a pu établir s'il est identique, abrégé ou augmenté. La fiche l'affiche
+  en `metadata-only` et dit qu'elle n'en sait rien.
+- **Une question de priorité reste ouverte sur `normatif-descriptif-prescriptif`** : Baron 2012
+  écrit que la distinction à trois termes a émergé indépendamment chez Freeling 1984, Baron 1985
+  et Bell *et al.* 1988. Freeling 1984 n'a pas pu être ouvert. La fiche ne revendique aucune
+  paternité première, et c'est ce qui la sauve.
+- **Aucune réception francophone n'est ouverte sur aucune des huit cartes**, y compris celle de
+  Roy.
+
+## Angles morts qui commandent le prochain passage sur ce domaine
+
+Détaillés dans `corpus/map/decision-science.scouting.md`.
+
+- **La représentation du problème avant sa résolution est la littérature la moins bien servie**,
+  et elle n'est couverte que de biais, par Keeney. Simon 1973, « The Structure of Ill-Structured
+  Problems », est fermé et confirmé tel ; son complément probable, Newell 1969, « Heuristic
+  Programming: Ill-Structured Problems », a répondu `HTTP 503` à quatre tentatives et **reste ni
+  confirmé ni infirmé**. C'est la reprise la plus prometteuse.
+- **Deux thèmes proposés par la cartographie n'ont pas été déclarés**, faute de cartes pour les
+  porter sans page à une seule entrée. Leurs textes sont ouverts et lus : Arrow 1948 pour
+  l'agrégation des préférences, Newell, Shaw et Simon 1958 et 1960 pour la recherche heuristique.
+  **Ce sont les deux reprises les moins chères du domaine.**
+- **Le jugement de probabilité n'a pas été balayé pour lui-même** : les textes distincts sur la
+  disponibilité (1973) et la représentativité (1972) n'ont fait l'objet d'aucune recherche dédiée,
+  probablement accessibles par la même voie DTIC.
+- **La critique du concept même de décision reste sans texte.** Sfez, *Critique de la décision*
+  (1973), a été cherché sur HAL, theses.fr, Internet Archive et le web général : seul un compte
+  rendu a été trouvé, donc une source secondaire. **Angle mort déclaré, pas case vide.**
+- **La couche francophone tient sur un seul texte, et par un manque de méthode assumé** : Persée
+  n'a été interrogé qu'une fois par mots-clés larges sans que les résultats soient exploités, et
+  **OpenEdition Books, que le périmètre nommait comme voie prioritaire, n'a fait l'objet d'aucune
+  recherche aboutie**.
+- **Aucun des quatre domaines voisins fermés n'a été cherché de façon ciblée.** Contrairement aux
+  passages `human-factors` et `cybernetics`, qui avaient vérifié l'absence de dette sur des textes
+  précis, ce passage n'a rien établi : **c'est un vide de méthode, pas un résultat sur le champ**,
+  et il ne doit pas se lire comme un vide déclaré.
 
 ## Ce que ce fichier ne raconte pas, et qui n'est pas perdu
 
@@ -52,7 +245,7 @@ Ce que ces deux lots ont établi est écrit ailleurs, entier, et se lit à la so
   cartographies, candidats, angles morts ;
 - `corpus/review/*.verdict.json` : les verdicts de contrôle aveugle, un par passage.
 
-# 0. Systems thinking — lot du 22 août 2026, publié
+# 0 bis. Systems thinking — lot du 22 août 2026, publié
 
 Sixième domaine instruit, **deuxième de la famille « Comprendre la production et les
 systèmes »**, ouvert deux jours après son voisin cybernétique. Il est le seul domaine du
@@ -153,7 +346,7 @@ Le domaine tient debout et affiche trois thèmes pourvus. Ce qui lui manque est 
 ci-dessus, et deux reprises sont courtes : l'ouvrage de 1972, dont l'accès est déjà constaté,
 et Lesourne, dont il suffit de résoudre le DOI.
 
-# 0 bis. Cybernétique — lot du 21 août 2026, publié
+# 0 ter. Cybernétique — lot du 21 août 2026, publié
 
 Cinquième domaine instruit, **premier de la famille « Comprendre la production et les
 systèmes »**, qui n'avait jusque-là aucun corpus. Le domaine avait été ouvert et
@@ -562,6 +755,27 @@ Ces limites ont pesé sur tout le lot et se reproduiront si rien ne change.
   Six des neuf textes du lot étaient des PDF.
 - `CORPUS_CONTACT_EMAIL` remettrait OpenAlex dans son *polite pool*, au prix de transmettre
   une adresse personnelle à chaque requête. Décision non prise.
+
+Deux constats ajoutés par le lot du 23 août, et le premier est le plus important :
+
+- **`corpus-orchestrator` ne peut pas piloter la chaîne quand son outil `Task` est
+  désactivé.** C'est arrivé le 23 août : l'agent n'a pu lancer ni lecteur primaire, ni
+  rédacteur, ni contrôleur. Il a testé la voie de repli, constaté que les sessions filles
+  n'héritent d'aucune permission réseau, et **refusé de s'accorder cette permission lui-même**
+  par `--allowedTools` ou par un fichier de réglages écrit pour l'occasion. **C'était la bonne
+  décision.** Le contournement, lui, est écrit ici pour la prochaine fois : **la session
+  appelante conduit la chaîne elle-même, un agent par maillon**, ce qui préserve exactement ce
+  qui compte, la séparation des contextes et l'aveuglement du contrôle. Ce qu'il ne faut
+  surtout pas faire est ce que l'orchestrateur a refusé de faire : instruire, rédiger et
+  contrôler dans un seul contexte, où le contrôleur aurait sous les yeux le brief et la
+  confiance amont au moment de rendre son verdict.
+- **Le répertoire de travail temporaire est partagé entre agents parallèles, et cela a
+  contaminé trois agents en une nuit.** Un lecteur a téléchargé l'OCR d'un tout autre ouvrage
+  que le sien. La mise en garde était déjà écrite dans `corpus/RESTE-A-FAIRE.md` depuis le lot
+  des approfondissements et elle n'a pas suffi : **ce qui a sauvé les trois est le contrôle
+  d'empreinte** (taille et MD5 comparés à la notice d'Internet Archive), pas la vigilance. Un
+  agent qui télécharge un fichier doit vérifier son empreinte contre la notice, et préfixer ses
+  fichiers de travail par l'identifiant de sa carte.
 
 ## Produit
 

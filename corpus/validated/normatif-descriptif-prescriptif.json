@@ -1,0 +1,91 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "normatif-descriptif-prescriptif",
+  "slug": "normatif-descriptif-prescriptif",
+  "status": "VALIDATED",
+  "title": "Normatif, descriptif, prescriptif",
+  "themes": [
+    "instruire-un-arbitrage"
+  ],
+  "theme_labels": {
+    "instruire-un-arbitrage": "Aider quelqu'un à trancher"
+  },
+  "authors": [
+    {
+      "name": "David E. Bell",
+      "app_author_id": null
+    },
+    {
+      "name": "Howard Raiffa",
+      "app_author_id": null
+    },
+    {
+      "name": "Amos Tversky",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Chapitre signé des trois directeurs du recueil, David E. Bell, Howard Raiffa et Amos Tversky. Leur accord n'est pas entier, et c'est imprimé page 2 : la catégorie prescriptive a été ajoutée d'abord parce que le métier de deux d'entre eux n'entre pas dans le partage habituel, et le troisième, Amos Tversky, juge qu'il ne serait peut-être pas nécessaire de faire du prosélytisme pour ce découpage, utile au demeurant à leurs discussions internes, si la catégorie normative était mieux clarifiée. Une note de la page 16 pose la distinction « pour les besoins de ce chapitre seulement ».",
+  "hook": "Entre décrire comment on décide et dire comment il faudrait, que manque-t-il ?",
+  "summary": "Au partage habituel entre le normatif et le descriptif s'ajoute un troisième terme, le prescriptif : aider une personne réelle, avec ses limites, à mieux décider.",
+  "quotation": {
+    "text": "[…] nous augmentons la dichotomie habituelle […] entre les côtés normatif et descriptif […] en ajoutant une troisième composante : le prescriptif.",
+    "reference": "David E. Bell, Howard Raiffa et Amos Tversky, « Descriptive, normative, and prescriptive interactions in decision making », dans les mêmes (dir.), Decision Making: Descriptive, Normative, and Prescriptive Interactions, Cambridge University Press, 1988, p. 9-30.",
+    "locator": "p. 9, deuxième paragraphe",
+    "language": "fr",
+    "original_text": "[…] we shall augment the usual dichotomy […] between the normative and descriptive sides […] by adding a third component: the prescriptive side.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (agent lecteur, chaîne Curiosity). Aucune traduction française publiée de ce chapitre n'a été identifiée. Deux choix de traduction sont à signaler. D'abord « sides » est rendu par « côtés » et non par « approches » : les auteurs glosent eux-mêmes les deux « sides » par « the “ought” and the “is” », ce sont deux faces d'une même question, pas deux méthodes. Ensuite, la limite de 150 caractères a obligé à rendre « the prescriptive side » par « le prescriptif » et non par « le côté prescriptif » : le parallélisme des trois termes, intact en anglais, est donc légèrement affaibli en français. L'anglais est conservé dans `original_text` et fait seul foi.",
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "David E. Bell, Howard Raiffa et Amos Tversky, « Descriptive, normative, and prescriptive interactions in decision making », dans les mêmes (dir.), Decision Making, Cambridge University Press, 1988, p. 9-30.",
+      "kind": "primary",
+      "locator": "chap. 1, p. 9-30",
+      "doi_isbn": "9780521351492",
+      "url": "https://archive.org/details/DecisionMaking",
+      "consulted": "full-text"
+    },
+    {
+      "label": "David E. Bell, Howard Raiffa et Amos Tversky (dir.), Decision Making: Descriptive, Normative, and Prescriptive Interactions, Cambridge, Cambridge University Press, 1988.",
+      "kind": "primary",
+      "locator": "chap. 1, p. 9-30",
+      "doi_isbn": "10.1017/cbo9780511598951.003",
+      "url": "https://doi.org/10.1017/cbo9780511598951.003",
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle",
+    "date": "2026-08-23",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "CITATION — vérifiée sur deux exemplaires ouverts par moi. (1) PDF du chapitre diffusé par Cambridge University Press, https://elfarchive2021.foi.hr/pluginfile.php/62169/mod_resource/content/0/03a_DM_theories.pdf : 22 pages, métadonnées XMP dc:source = https://doi.org/10.1017/CBO9780511598951.003, filigrane Cambridge Core sur chaque page, pagination imprimée 9 à 30. Page 1 du PDF = p. 9 du livre. Deuxième paragraphe, texte extrait tel quel : « For our purposes we shall augment the usual dichotomy that distinguishes between the normative and descriptive sides (the \"ought\" and the \"is\") of decision making, by adding a third component: the prescriptive side. » (2) Numérisation intégrale du volume, https://archive.org/details/DecisionMaking (collection Universal Library / Million Books, creator « Bell, David E.; Raiffa, Howard; Tversky, Amos, Eds », 1988, 631 vues), fichier DecisionMaking_djvu.txt : même phrase, même position, marqueur de page « 9 » en pied du bloc. L'`original_text` de la fiche coupe « For our purposes », « that distinguishes » et « (the \"ought\" and the \"is\") of decision making, » — les trois coupes sont signalées par […] et aucune n'altère le sens. Le locator « p. 9, deuxième paragraphe » est exact.",
+      "TRADUCTION — déclarée `in-house` avec traducteur et justification des deux partis pris (« sides » → « côtés » ; « the prescriptive side » → « le prescriptif » sous contrainte de longueur). Le glosé « the “ought” and the “is” » qui motive le choix de « côtés » est bien dans la phrase originale, je l'ai lu. Aucune traduction française publiée de ce chapitre n'est apparue dans mes recherches non plus. Seul écart non signalé, mineur : « we shall augment » (futur) est rendu par le présent « nous augmentons » ; l'anglais fait foi et est conservé.",
+      "SOURCES — les deux références résolvent. Crossref sur 10.1017/cbo9780511598951.003 rend : type `book-chapter`, titre « DESCRIPTIVE, NORMATIVE, AND PRESCRIPTIVE INTERACTIONS IN DECISION MAKING », container « Decision Making », Cambridge University Press, page « 9-30 », auteurs Bell / Raiffa / Tversky dans cet ordre, published-print 1988-10-28, ISBN 9780521351492, 9780521368513, 9780511598951. OpenLibrary sur ISBN 9780521351492 rend OL2395967M, « Decision making : descriptive, normative, and prescriptive interactions », édité par les trois mêmes, x-623 p. La page Cambridge Core du chapitre affiche « pp. 9-30 ». L'URL archive.org de la source 1 ouvre bien ce livre-là en texte intégral, ce qui rend le `consulted: full-text` exact.",
+      "PAGINATION — le « p. 9-30 » a été contrôlé contre le texte lui-même et non seulement contre les notices : la dernière page du PDF CUP porte le folio 30 et se termine sur la bibliographie du chapitre ; le chapitre 2 (March) s'ouvre juste après dans la numérisation. À signaler pour un contrôleur ultérieur : la table des matières OCRisée d'archive.org donne « 23 » pour le chapitre de March, ce qui est une erreur de colonne de l'OCR, contredite par les folios imprimés — ne pas s'y fier.",
+      "ATTRIBUTION — le chapitre est bien des trois auteurs affichés (page de titre du chapitre p. 9, notice Crossref). L'`attribution_note` est exacte sur ses deux appuis, que j'ai lus : p. 2 de l'Introduction, « Observe that we have moved from the usual dichotomy (descriptive and normative) to a trichotomy by adding a “prescriptive” category. We have done this primarily because so much of what two of us (David and Howard) do professionally is not adequately captured in the usual descriptive/normative breakdown. One of us (Amos) feels, however… » ; et p. 16, note de bas de page appelée sur « we propose to treat these terms quite distinctly » : « For the purposes of this chapter only; we are not attempting to change common usage. »",
+      "ATTRIBUTION, réserve de priorité à verser au dossier sans que j'en fasse un motif de REWORK — la fiche n'affirme nulle part la paternité première de la trichotomie, et c'est ce qui la sauve. Mais elle ne la borne pas non plus. Jonathan Baron, « The point of normative models in judgment and decision making », Frontiers in Psychology 3:577 (2012), https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2012.00577/full, écrit : « The three-way distinction emerged clearly in the 1980s (Freeling, 1984; Baron, 1985; Bell et al., 1988—all of whom wrote independently of each other), although various parts of it were implicit in the writing of Herbert Simon and many philosophers (such as J. S. Mill). » J'ai vérifié l'existence de l'antécédent le plus ancien : A. N. S. Freeling, « A philosophical basis for decision aiding », Theory and Decision, vol. 16, 1984, p. 179-206, DOI 10.1007/BF00125877 (notice Crossref confirmée). Je n'ai PAS pu ouvrir cet article : Springer renvoie une redirection d'authentification (303 vers idp.springer.com) et Semantic Scholar déclare le résumé élidé par l'éditeur. Je ne sais donc rien de première main du contenu de Freeling 1984, et ce silence n'est pas une réfutation dans un sens ni dans l'autre. Si la carte devait un jour être lue comme une revendication de paternité, il faudrait mentionner Freeling 1984 et Baron 1985 ; en l'état, l'énoncé affiché reste dans ce que le chapitre porte.",
+      "PROSE — `hook` (« Entre décrire comment on décide et dire comment il faudrait, que manque-t-il ? ») reprend exactement l'opposition « the “ought” and the “is” » du paragraphe cité. `summary` (« aider une personne réelle, avec ses limites, à mieux décider ») est couvert mot pour mot par p. 9 : « how we might help less rational people, who nevertheless aspire to rationality, to do better » et « How can real people - as opposed to imaginary, idealized, super-rational people without psyches - make better choices… ». Rien n'y déborde, rien n'y est rétréci.",
+      "Hors mandat, une imprécision de paraphrase à corriger si le champ est repris — l'`attribution_note` prête à Tversky l'idée que la catégorie prescriptive « pourrait ne pas être nécessaire ». Le texte de la p. 2 dit autre chose et de plus tiède : « although the prescriptive category has been useful for our internal discussions, it may not be necessary to proselytize for this more elaborate breakdown if we were to clarify further the normative category ». C'est la promotion du découpage qui serait superflue, pas la catégorie ; et la concession sur son utilité interne disparaît dans la fiche. Formulation plus juste : « il ne serait peut-être pas nécessaire de faire du prosélytisme pour ce découpage, utile au demeurant à leurs discussions internes, si la catégorie normative était mieux clarifiée ». Cela ne touche ni le concept ni son auteur : l'attribution reste confirmée.",
+      "Non atteint / à déclarer : l'outil `verify_reference` du serveur `documentary` n'était pas exposé dans cette session ; les deux identifiants ont donc été résolus à la main via api.crossref.org et openlibrary.org, dont les réponses sont citées ci-dessus. Springer (Freeling 1984) et le PDF Harvard de Raiffa « Decision Analysis: A Personal Account » (403) m'ont été refusés."
+    ]
+  },
+  "notes": [
+    "Cette carte repose sur le même exemplaire numérisé que quatre autres du même lot : le recueil de 1988 dirigé par Bell, Raiffa et Tversky, déposé sur Internet Archive sous l'identifiant DecisionMaking. Aucune contre-lecture sur un second exemplaire n'a été possible, et un défaut de ce scan se propagerait aux cinq fiches sans être détecté ici.",
+    "La distinction est posée « pour les besoins de ce chapitre seulement » : la note de la page 16 ajoute « we are not attempting to change common usage ». Présenter ce texte comme une redéfinition du vocabulaire du champ irait plus loin que ce que ses auteurs revendiquent.",
+    "L'accord des trois signataires n'est pas entier, et le volume l'imprime page 2 : « although the prescriptive category has been useful for our internal discussions, it may not be necessary to proselytize for this more elaborate breakdown if we were to clarify further the normative category ». C'est le prosélytisme pour ce découpage qui serait superflu, non la catégorie elle-même, et son utilité interne est concédée dans la même phrase.",
+    "La citation est coupée trois fois. La troisième coupe retire la glose « (the “ought” and the “is”) », qui donnait en six mots la teneur des deux pôles anciens ; les crochets la signalent, ils ne la remplacent pas.",
+    "Le chapitre 1 n'est pas l'introduction éditoriale du volume : celle-ci est un autre texte, non signé, imprimé p. 1-6 avant la partie I. Les deux se recoupent sur la trichotomie, et la citation vient du chapitre signé.",
+    "Le critère qui sépare les trois pôles est celui de leur évaluation, p. 17-18 : validité empirique pour le descriptif, adéquation théorique pour le normatif, valeur pragmatique pour le prescriptif. Le passage court à cheval sur deux pages et n'a pas pu être cité.",
+    "Lacune déclarée sur la priorité, que la carte ne revendique pas mais qu'elle ne borne pas non plus. Jonathan Baron (2012) écrit que la distinction à trois termes a émergé dans les années 1980 chez Freeling 1984, Baron 1985 et Bell et al. 1988, tous indépendamment les uns des autres. L'antécédent le plus ancien, A. N. S. Freeling, « A philosophical basis for decision aiding », Theory and Decision, vol. 16, 1984, p. 179-206, DOI 10.1007/BF00125877, existe mais n'a pas pu être ouvert : Springer renvoie à une authentification. Rien n'est donc su de première main de son contenu, dans un sens ni dans l'autre."
+  ]
+}

@@ -34,6 +34,14 @@ import type { Theme } from "@/types";
  * disparu quand il est apparu que Paquette expose le mécanisme au lieu d'en critiquer
  * l'usage. Aucun des quatre ne repose sur une carte unique.
  *
+ * Les deux thèmes de `decision-science` sont écrits le 23 août 2026, à l'ouverture du
+ * septième domaine, et ils sont **deux là où la cartographie en proposait quatre**. Les deux
+ * écartés le sont pour la raison qui se répète depuis six lots : « Agréger des préférences »
+ * n'aurait porté qu'une carte, et « Chercher une solution plutôt que la calculer » repose sur
+ * deux textes du même trio d'auteurs sur le même programme, dont la cartographie dit
+ * elle-même qu'un seul concept devrait en sortir. Les deux courants existent, leurs textes
+ * sont ouverts et lus, et ils attendent le passage suivant plutôt qu'une page à une carte.
+ *
  * Conséquence directe, visible ci-dessous : aucun thème n'est déclaré ici pour la santé
  * publique ni pour la mesure du bien-être, alors que le périmètre de `measurement-theory`
  * demandait de les balayer ; ni, en ergonomie de l'activité, pour la charge de travail comme
@@ -372,5 +380,28 @@ export const themes: Theme[] = [
     description:
       "Appeler quelque chose un système n'est pas un constat mais un découpage, et une notion empruntée à une autre discipline n'emporte pas avec elle ce qui la fondait. Ce thème porte sur le rapport entre le système réel et celui qu'on construit pour l'exprimer, et sur ce que coûte l'emprunt fait par analogie.",
     domain: "systems-thinking",
+  },
+  // --- Science de la décision ----------------------------------------------
+  {
+    id: "choisir-sous-risque",
+    slug: "choisir-sous-risque",
+    title: "Choisir quand on ne sait pas",
+    tagline:
+      "Le même choix, dit autrement, ne se décide pas pareil.",
+    keywords: ["Utilité", "Cadrage", "Perte"],
+    description:
+      "Une théorie dit ce qu'un choix cohérent devrait être, et l'observation montre que personne ne choisit ainsi. Ce thème porte sur ce différend : ce que la norme du choix rationnel exige, ce que le jugement fait à sa place, et ce que la formulation d'un problème décide avant qu'on y réponde.",
+    domain: "decision-science",
+  },
+  {
+    id: "instruire-un-arbitrage",
+    slug: "instruire-un-arbitrage",
+    title: "Aider quelqu'un à trancher",
+    tagline:
+      "Avant de comparer des options, il faut savoir ce qu'on veut.",
+    keywords: ["Critère", "Valeur", "Surclassement"],
+    description:
+      "Entre la théorie qui prescrit et l'observation qui décrit, il reste à outiller celui qui doit décider pour de bon. Ce thème porte sur ce qu'une méthode d'aide construit à sa place : les critères qu'elle retient, ce qu'elle refuse d'agréger, et le moment où le problème lui-même se formule.",
+    domain: "decision-science",
   },
 ];

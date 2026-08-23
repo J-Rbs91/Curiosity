@@ -1,6 +1,6 @@
 # Périmètre du corpus
 
-## Six domaines ouverts sur onze
+## Sept domaines ouverts sur onze
 
 L'application couvre **quatre familles et onze domaines**, déclarés dans
 [`src/content/taxonomy.ts`](../src/content/taxonomy.ts). Déclarer un domaine et l'instruire
@@ -8,9 +8,9 @@ sont deux décisions distinctes, et elles ne se prennent pas ensemble : une fich
 admise parce qu'un domaine existe dans la taxonomie.
 
 > **Les périmètres d'instruction ouverts sont `organizational-sociology`,
-> `measurement-theory`, `activity-ergonomics`, `human-factors`, `cybernetics` et
-> `systems-thinking`.** Les cinq autres domaines sont déclarés dans la taxonomie et restent
-> fermés à l'instruction tant
+> `measurement-theory`, `activity-ergonomics`, `human-factors`, `cybernetics`,
+> `systems-thinking` et `decision-science`.** Les quatre autres domaines sont déclarés dans
+> la taxonomie et restent fermés à l'instruction tant
 > qu'une décision explicite ne les ouvre pas — décision qui s'inscrit dans ce fichier, sous la forme d'une
 > section de périmètre comme celles qui suivent.
 
@@ -1008,6 +1008,229 @@ flux et les délais, et un thème sur la croissance et ses limites. Les deux son
 champ, et aucune source primaire ouvrable n'a été établie pour eux dans ce passage — l'ouvrage
 de 1972 sur les limites de la croissance a bien été localisé en accès ouvert, il n'a pas été
 lu. **Un thème sans carte validée ne se déclare pas.**
+
+---
+
+# Domaine ouvert — `decision-science`
+
+Ouvert le 23 août 2026. Septième domaine instruit, et le **deuxième de la famille
+« Comprendre le pilotage »**, que la théorie de la mesure avait ouverte seule.
+
+**Ce domaine ne repart pas de zéro.** Deux cartographies lui ont légué cinq textes avec leur
+état d'accès constaté, et l'une d'elles a poussé jusqu'à vérifier l'hébergement :
+[`corpus/map/cybernetics.scouting.md`](map/cybernetics.scouting.md) lui consigne Newell, Shaw
+& Simon 1960 en texte intégral ouvert, non lu ;
+[`corpus/map/human-factors.scouting.md`](map/human-factors.scouting.md) lui consigne Tversky &
+Kahneman 1974 sous sa forme de rapport technique ONR, mirée sans restriction d'emprunt, non
+ouverte, ainsi que Tversky 1972, l'ouvrage collectif de 1982 et la théorie de l'utilité
+multi-attributs, ces trois derniers sans accès testé. Ce legs ne dispense d'aucune étape :
+le périmètre s'écrit ici avant que le balayage reprenne, et il dispense seulement de chercher
+ce qui a déjà été trouvé.
+
+## Le périmètre est la discipline
+
+> **Science de la décision** — l'étude de **la façon dont un choix s'établit** quand
+> l'information est incomplète et les conséquences incertaines : les procédures que suit
+> réellement celui qui décide, les écarts systématiques entre ces procédures et ce que la
+> théorie du choix prescrit, et les méthodes construites pour instruire un arbitrage.
+
+Le domaine ne porte pas sur ce que l'organisation fait de la décision, qui est en sociologie
+des organisations ; ni sur ce que l'opérateur perçoit d'une situation, qui est en human
+factors. Il porte sur **l'opération de choix elle-même** : comment un problème est représenté
+avant d'être résolu, comment une solution est cherchée plutôt que calculée, quels jugements de
+probabilité et de valeur y entrent, et ce qu'une méthode d'aide peut ou ne peut pas trancher à
+la place de celui qui décide.
+
+Le champ a une particularité qu'il faut tenir dès l'ouverture : **il est écrit par deux camps
+qui se citent en s'opposant.** Une souche normative, qui dit ce qu'un choix cohérent devrait
+être et mesure les écarts à cette norme ; une souche descriptive, qui prend ces écarts pour
+l'objet et cherche les procédures effectives. Un balayage qui ne rapporterait qu'un des deux
+camps rendrait un domaine sans son différend, c'est-à-dire un domaine faux. La couche
+francophone en ajoute un troisième, l'aide multicritère à la décision, qui s'est constituée
+en contestant qu'un problème de choix soit donné avant d'être construit.
+
+## Points d'entrée
+
+Aucun auteur n'est retenu d'avance, et ce domaine a plus que les autres besoin de cette
+règle : ses noms les plus disponibles de mémoire sont aussi ceux que la vulgarisation a le
+plus répétés, au point que leurs énoncés circulent détachés de tout texte. Ce qui se balaie,
+ce sont des **littératures** :
+
+- la représentation du problème avant sa résolution : ce qu'un décideur construit comme
+  espace de recherche, et ce que ce cadrage décide déjà du résultat ;
+- la recherche heuristique d'une solution : chercher plutôt que calculer, s'arrêter à ce qui
+  convient plutôt qu'optimiser, et ce qu'une procédure de recherche coûte ;
+- le jugement de probabilité et ses écarts systématiques : sur quoi repose une estimation de
+  vraisemblance quand la fréquence n'est pas connue ;
+- le choix sous risque et sa modélisation : utilité, préférence, cohérence, et les
+  observations qui contredisent ces modèles ;
+- l'aide à la décision comme méthode : critères multiples, agrégation, incomparabilité,
+  valeur de l'information, et ce qu'une méthode transfère de l'analyste au décideur ;
+- la décision collective et le vote comme problème d'agrégation de préférences, quand le
+  texte porte sur le mécanisme et non sur l'institution qui l'emploie ;
+- la critique du concept même de décision : ce qu'on prête à un moment de choix qui n'existe
+  peut-être pas comme tel ;
+- **la couche francophone, cherchée en parallèle et non après coup** : l'aide multicritère,
+  la recherche opérationnelle appliquée au choix, la critique française de la décision. Persée,
+  HAL, OpenEdition Books, theses.fr. Elle ne remontera pas des bases anglophones.
+
+## Le test d'entrée
+
+La question n'est pas « est-ce de la science de la décision ? » : l'étiquette recouvre des
+travaux d'économistes, de psychologues, de mathématiciens et d'informaticiens qui ne se
+reconnaissaient pas dans un même champ. La question est :
+
+> **Ce travail éclaire-t-il l'opération par laquelle un choix s'établit sous incertitude ?**
+
+Trois conditions cumulatives :
+
+1. il porte sur **le choix comme opération** — sa représentation, sa procédure, son critère,
+   son écart à une norme de cohérence, ou la méthode construite pour l'instruire — et non sur
+   un domaine d'application où une décision ne fait que se produire ;
+2. il est **rattachable à un auteur identifié**, et cette attribution est documentable ;
+3. il est **enseignable** : un lecteur non spécialiste doit pouvoir reconnaître l'opération
+   décrite dans un arbitrage qu'il a lui-même à rendre.
+
+## Hors périmètre — rejet direct
+
+- **Le mot « décision » employé sans opération identifiable.** C'est le rejet le plus fréquent
+  à prévoir, et il se tranche sans état d'âme : `corpus/rejected/`,
+  `rejection_reason: "OUT_OF_SCOPE"`, jamais une mise en attente. Un candidat gris non tranché
+  revient toujours par une autre porte.
+- **L'intelligence artificielle comme technique** : architectures, performances, comparaison
+  de systèmes. Un texte de ce champ n'entre que s'il expose une procédure de choix **présentée
+  comme un modèle de celle d'un humain**, et il entre alors par cette thèse, jamais par le
+  programme qui l'illustre.
+- **La statistique et la théorie des probabilités comme branches des mathématiques**, y compris
+  l'inférence bayésienne prise comme calcul. Elles entrent par ce qu'elles font comprendre d'un
+  jugement effectif, jamais par leurs théorèmes.
+- **La littérature de conseil au dirigeant** : matrices d'aide au management, méthodes de
+  réunion, modèles de leadership décisionnel sans mécanisme exposé.
+- **La finance comportementale appliquée aux marchés** : l'objet y est le prix, pas le choix.
+  Un texte qui expose un mécanisme de jugement et l'illustre sur un marché reste recevable ;
+  un texte qui documente une anomalie de marché ne l'est pas.
+- **Le libre choix comme thèse politique ou morale.** Le champ y a beaucoup servi, et cet
+  usage est un fait de réception, pas un critère d'entrée.
+
+## Les frontières, tranchées à l'avance
+
+### Avec `organizational-sociology`, ouvert — la frontière décisive
+
+C'est ici que ce domaine peut coûter cher, et pour une raison qu'aucun autre n'a rencontrée :
+**deux de ses concepts les plus canoniques sont déjà instruits chez le voisin.**
+`rationalite-limitee`, attribuée à Simon, et `garbage-can-model`, attribué à Cohen, March et
+Olsen, sont des cartes publiées de `organizational-sociology`.
+
+> **Un concept déjà instruit ne se réinstruit pas dans un autre domaine.** La règle est
+> générale et elle est en tête de ce fichier ; elle se rappelle ici parce que c'est le seul
+> domaine où elle porte sur le centre du champ et non sur sa périphérie.
+
+Ce n'est ni une erreur du voisin ni une amputation de celui-ci. Ces deux cartes existent par
+leur thème, et leur thème est « Décision » en sociologie des organisations : elles portent sur
+ce qu'une organisation fait de ses choix. Ce qui reste entier et n'est instruit nulle part,
+c'est la **procédure de choix elle-même** — la façon dont un problème est représenté, dont une
+solution est cherchée, dont une vraisemblance est estimée. Un même auteur peut donc être
+présent des deux côtés, et un texte de Simon n'est pas disqualifié parce que Simon est déjà au
+corpus : c'est l'objet du texte qui décide, et l'identifiant qui doit être neuf.
+
+Le départage, quand un candidat hésite :
+
+| le texte porte sur | domaine |
+|---|---|
+| ce que des acteurs font des règles, du pouvoir et de l'ambiguïté quand il faut choisir | `organizational-sociology` |
+| la procédure par laquelle un choix s'établit, ses critères et ses écarts | `decision-science` |
+
+### Avec `human-factors`, ouvert — et déjà tranchée depuis l'autre côté
+
+Elle a été écrite avant l'ouverture de ce domaine, dans la section `human-factors` de ce même
+fichier. **Elle ne se rouvre pas ici, et sa formulation fait foi** : ce qui reste là-bas, c'est
+la décision d'un opérateur dans une tâche réelle, sous temps contraint et information
+incomplète, où l'objet est la cognition qui produit le choix en situation ; ce qui vient ici,
+c'est la théorie du choix, les heuristiques et les biais de jugement pris comme objet général.
+
+Conséquence pratique, et elle est asymétrique : ce domaine s'ouvrant **après** son voisin, un
+texte qui relèverait de human factors ne se consigne pas en angle mort, il part chez lui, où il
+sera instruit. Le cas le plus probable est celui de la décision naturaliste, dont la carte
+`decision-reconnue-d-emblee` est déjà publiée là-bas : le rapport de Klein qui la porte
+construit son argumentaire **contre** les textes que ce domaine hérite. Instruire ces textes ici
+est donc légitime et attendu ; les instruire par ce que Klein en dit ne le serait pas.
+
+### Avec `measurement-theory`, ouvert
+
+Même famille, et le point de contact est réel : une décision se prend souvent sur un
+indicateur. Ce qui porte sur **l'indicateur lui-même** — ce qu'il saisit, ce qu'il omet, ce que
+sa seule existence provoque — reste là-bas. Ce qui porte sur **l'opération de choix qui s'en
+sert** est ici. La valeur de l'information est un cas limite et il se tranche par cette même
+règle : la question de ce qu'un renseignement supplémentaire change à un arbitrage est ici ;
+la question de ce que ce renseignement mesure est là-bas.
+
+### Avec `cybernetics` et `systems-thinking`, ouverts
+
+La régulation par l'écart et le comportement d'une structure de boucles ne sont pas des
+décisions, même quand un texte les décrit comme telles. Un régulateur qui corrige un écart ne
+choisit pas au sens de ce domaine, il applique une loi de commande : c'est en cybernétique.
+Ce qu'un jeu de boucles produit dans le temps est en systems thinking. Ce qui vient ici est la
+délibération d'un décideur, y compris quand elle porte sur un système.
+
+**Une vigilance particulière est due à la recherche opérationnelle**, qui a fourni des auteurs
+aux trois domaines. La règle est celle déjà écrite en cybernétique : **c'est le texte qui
+tranche, pas le parcours de celui qui l'a écrit.**
+
+### Avec `activity-ergonomics`, ouvert
+
+Ce qu'un travailleur fait réellement pour tenir sa tâche, et ce que cela lui coûte, est
+là-bas, y compris quand cela suppose des arbitrages permanents. L'arbitrage n'est pas l'objet :
+l'activité l'est.
+
+### Avec quatre domaines fermés : `operations-management`, `work-psychology`, `sociology-of-work`, `behavioral-economics`
+
+Quatre domaines déclarés que ce champ touche, et qui ne sont pas ouverts. Un candidat mal placé
+se **consigne en angle mort de la cartographie**, jamais en rejet : son objet n'est pas hors
+sujet, il relève d'un voisin fermé. C'est la règle qui a doté ce domaine de son stock d'entrée,
+et elle se rend ici.
+
+- vers `operations-management` : l'ordonnancement, le dimensionnement et l'arbitrage de coût
+  comme **problème de gestion**, quand la méthode vise à produire un plan et non à éclairer un
+  choix ;
+- vers `behavioral-economics` : ce qui porte sur **le comportement économique** et ses
+  conséquences agrégées — préférences temporelles, marchés, politiques d'incitation, dispositif
+  d'architecture du choix. La coupure avec ce domaine est fine et elle sera la plus coûteuse à
+  tenir : un écart de jugement pris comme **fait de raisonnement** est ici ; le même écart pris
+  comme **fait économique** est là-bas ;
+- vers `work-psychology` : la décision comme charge, source de stress ou objet de
+  satisfaction ;
+- vers `sociology-of-work` : ce que la position sociale de celui qui décide fait à sa décision.
+
+## L'accès — ce que ce domaine impose
+
+Trois constats à tenir pour acquis avant le premier balayage, les deux premiers hérités et
+déjà vérifiés par les cartographies voisines :
+
+- **la version publiée d'un article peut être fermée quand une version antérieure est
+  ouverte.** Le legs le montre : la publication de 1974 dans *Science* est fermée, et un
+  rapport technique antérieur du même travail est miré sans restriction. Un `is_oa: false`
+  d'Unpaywall clôt donc encore moins ici qu'ailleurs, et une recherche de rapport technique
+  fait partie du balayage, pas de la reprise ;
+- **une réédition n'est pas l'original, et un recueil n'est pas la publication d'origine.**
+  Ce champ republie beaucoup : ses textes fondateurs circulent en chapitres de recueils, en
+  traductions et en versions révisées. Un verbatim se localise sur l'exemplaire réellement
+  ouvert, jamais sur l'édition d'origine qu'on n'a pas vue ;
+- **la vulgarisation de ce champ est massive, et elle est un piège de détection.** Quinze pages
+  concordantes qui ne remontent à aucun texte académique ne valent rien, et ce domaine en
+  produira plus que les six autres. Le web général sert **uniquement à détecter**.
+
+La règle d'accès ne change pas :
+
+> **Aucun agent ne contourne un contrôle d'accès.** Un texte qu'on ne peut pas ouvrir
+> légitimement est un texte qu'on n'a pas ouvert : on le dit, et on ne conclut pas au
+> verbatim.
+
+## Thèmes
+
+**Aucun thème déclaré à l'ouverture.** Ils se déclarent après le contrôle aveugle des cartes du
+premier lot, et non après leur rédaction ni d'après la proposition de la cartographie. Un thème
+sans carte validée ne se déclare pas : le dépôt en porte déjà deux qui affichent une page vide,
+et c'est deux de trop.
 
 ---
 
