@@ -3,6 +3,7 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 import { getProgressService } from "@/services/progress";
 import { dayKey } from "@/domain/concepts/next-card";
 import {
+  dailyThresholdLabel,
   isDailyCardDiscovered,
   markDailyCardDiscovered,
   onDailyDiscovery,
@@ -100,5 +101,40 @@ describe("le statut « concept du jour découvert »", () => {
     markDailyCardDiscovered(AUJOURD_HUI);
     getProgressService().reset();
     expect(isDailyCardDiscovered(AUJOURD_HUI)).toBe(false);
+  });
+});
+
+describe("le libellé du seuil", () => {
+  beforeEach(() => {
+    window.localStorage.clear();
+    getProgressService().reset();
+  });
+
+  it("annonce la découverte tant que la carte du jour n'a pas été ouverte", () => {
+    tirer(AUJOURD_HUI);
+    expect(dailyThresholdLabel(isDailyCardDiscovered(AUJOURD_HUI))).toBe("Concept du jour");
+  });
+
+  /*
+   * Le cas visé : rouvrir l'application dans la journée après avoir lu la carte. Le seuil
+   * se réaffiche — c'est la règle de l'ouverture, elle ne change pas — mais ce qu'il promet
+   * est une relecture, et il le dit.
+   */
+  it("annonce la relecture quand la carte du jour a déjà été découverte", () => {
+    tirer(AUJOURD_HUI);
+    markDailyCardDiscovered(AUJOURD_HUI);
+    expect(dailyThresholdLabel(isDailyCardDiscovered(AUJOURD_HUI))).toBe(
+      "Revoir le concept du jour",
+    );
+  });
+
+  /*
+   * Et il repart de lui-même au passage de minuit : le statut est porté par la carte du
+   * jour, donc la relecture d'hier ne déteint pas sur la découverte d'aujourd'hui.
+   */
+  it("redevient une découverte le lendemain", () => {
+    tirer(AUJOURD_HUI);
+    markDailyCardDiscovered(AUJOURD_HUI);
+    expect(dailyThresholdLabel(isDailyCardDiscovered(DEMAIN))).toBe("Concept du jour");
   });
 });

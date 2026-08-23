@@ -6,7 +6,11 @@ import { getProgressService } from "@/services/progress";
 import { dayKey, pickDailyConcept } from "@/domain/concepts/next-card";
 import { pastCards } from "@/domain/concepts/past-cards";
 import { isOpeningPending, onReentry, spendOpening } from "@/lib/app-entry";
-import { markDailyCardDiscovered } from "@/lib/daily-discovery";
+import {
+  dailyThresholdLabel,
+  isDailyCardDiscovered,
+  markDailyCardDiscovered,
+} from "@/lib/daily-discovery";
 import type { Concept } from "@/types";
 import { Screen } from "@/components/motion/Screen";
 import { useBlink } from "@/components/motion/Blink";
@@ -71,6 +75,12 @@ export default function TodayPage() {
    * porte l'entrée : revenir d'Explorer, ou rouvrir sur un seuil déjà franchi.
    */
   const [parClignement, setParClignement] = useState(false);
+  /*
+   * La carte du jour est-elle déjà lue ? Le seuil seul s'en sert, et seulement pour nommer
+   * ce qu'il y a derrière — découvrir la première fois de la journée, revoir ensuite. Il ne
+   * décide de rien d'autre : la carte rendue est la même, le franchissement aussi.
+   */
+  const [dejaDecouvert, setDejaDecouvert] = useState(false);
   const [concept, setConcept] = useState<Concept | undefined>(undefined);
   /*
    * Combien de cartes le lecteur peut relire, celle du jour déduite. C'est ce compte qui
@@ -128,6 +138,17 @@ export default function TodayPage() {
      */
     const ouvrir = () => {
       setOuverture(isOpeningPending());
+      /*
+       * Lu ici, et donc après `tirer` : c'est le tirage qui pose la carte du jour, et le
+       * statut de découverte est porté par elle. Le lire avant reviendrait, au premier
+       * passage après minuit, à interroger l'enregistrement de la veille — et à proposer
+       * de revoir une carte qui vient d'être remplacée.
+       *
+       * Une lecture par ouverture suffit : le seuil est justement ce qui empêche la
+       * découverte d'avoir lieu tant qu'il est à l'écran, si bien que le statut ne peut
+       * pas changer sous le libellé.
+       */
+      setDejaDecouvert(isDailyCardDiscovered());
     };
 
     tirer();
@@ -248,6 +269,11 @@ export default function TodayPage() {
            * convenait à un écran de première fois — il ouvrait l'application. Au seuil de
            * chaque ouverture, il ne dit plus rien de ce qui attend derrière, alors que
            * c'est précisément la seule chose que le lecteur vient chercher.
+           *
+           * Et ce qui attend derrière n'est pas le même selon l'heure de la journée : la
+           * carte est à découvrir à la première ouverture, à revoir aux suivantes. Le mot
+           * suit, sans que rien d'autre ne bouge — le geste, le clignement et la carte sont
+           * identiques dans les deux cas. Voir `dailyThresholdLabel`.
            */}
           {/*
            * Le franchissement, et le seul endroit où l'ouverture se dépense : l'appui est
@@ -271,7 +297,7 @@ export default function TodayPage() {
             }}
             className="w-fit"
           >
-            Concept du jour
+            {dailyThresholdLabel(dejaDecouvert)}
           </Button>
         </div>
         {/*
