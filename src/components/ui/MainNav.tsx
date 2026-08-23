@@ -2,19 +2,25 @@
 
 import { useState, type CSSProperties } from "react";
 import { usePathname } from "next/navigation";
+import { Settings } from "lucide-react";
 import { TreeLink } from "@/components/navigation/TreeLink";
 import { BookIcon, CompassIcon } from "@/components/ui/NavIcons";
-import { rootSectionOf } from "@/lib/navigation-tree";
+import { rootSectionOf, samePath } from "@/lib/navigation-tree";
 
 /**
  * Deux destinations. L'écran de progression a disparu avec les compteurs qu'il
  * affichait : le suivi continue d'exister — c'est lui qui choisit le concept du
  * jour — mais il n'a plus à être consulté ni géré.
  *
- * Réglages n'en fait pas partie, et n'y entre pas en devenant un rail. C'est un
- * enfant d'Explorer dans l'arbre, et il s'atteint par la roue de son en-tête :
- * lui ouvrir une seconde porte ferait deux chemins vers un écran qu'on visite
- * une fois, et `rootSectionOf` ne saurait plus dire quelle branche allumer.
+ * Réglages n'en fait pas partie et n'en fera pas partie. C'est un enfant
+ * d'Explorer dans l'arbre, et il n'a pas à devenir une troisième section parce
+ * que le rail lui offre une place : `rootSectionOf` continue d'allumer Explorer
+ * quand on y est, et le repère de position ne connaît que `ITEMS`.
+ *
+ * Sa roue se tient donc **hors** de cette liste, et il n'y en a jamais deux à la
+ * fois : au bas du rail sur un écran de bureau, dans l'en-tête d'Explorer en
+ * dessous du seuil, où le rail n'existe pas. Deux chemins simultanés vers un
+ * écran qu'on visite une fois seraient un chemin de trop.
  */
 const ITEMS = [
   { href: "/", label: "Aujourd'hui", icon: BookIcon },
@@ -88,6 +94,7 @@ export function MainNav() {
   const section = rootSectionOf(pathname);
   const activeIndex = ITEMS.findIndex((item) => item.href === section);
   const activation = useActivationRank(activeIndex);
+  const onSettings = samePath(pathname, "/settings");
 
   /*
    * `main-nav` porte à la fois la géométrie et le nom de transition de vue, qui
@@ -151,6 +158,42 @@ export function MainNav() {
           })}
         </ul>
       </div>
+
+      {/*
+       * La roue, au pied du rail — et nulle part ailleurs sur un écran de bureau.
+       *
+       * **Pourquoi en bas.** Le rail range ses entrées dans l'ordre où on les
+       * traverse, et Réglages n'est pas la troisième : c'est l'écran qu'on ouvre
+       * une fois puis plus jamais. Le poser sous les deux sections, séparé d'elles
+       * par tout l'espace disponible, dit cette différence de rang sans avoir à
+       * l'écrire. C'est aussi le coin le plus stable de la fenêtre — celui qui ne
+       * bouge pas quand le contenu change de hauteur.
+       *
+       * **Pourquoi hors du cadre du repère.** Le voisin du dessus porte
+       * `--nav-count` et les pourcentages de `.nav-marker` : y glisser une
+       * troisième cible étirerait le cadre jusqu'au bas de la fenêtre et le repère
+       * de position se retrouverait à côté de l'entrée qu'il désigne. La roue est
+       * donc une sœur du cadre, poussée par `mt-auto`, et le repère continue de ne
+       * compter que les sections.
+       *
+       * **Pourquoi elle disparaît sous le seuil.** En dessous, la navigation est
+       * une barre basse : il n'y a pas de « pied » où la ranger, et l'en-tête
+       * d'Explorer garde sa roue. Une seule porte de chaque côté du seuil.
+       *
+       * Elle s'allume quand on est dans les réglages, en même temps qu'Explorer :
+       * les deux sont vrais — on est dans la branche Explorer, et sur cet
+       * écran-là.
+       */}
+      <TreeLink
+        href="/settings"
+        aria-label="Réglages"
+        aria-current={onSettings ? "page" : undefined}
+        className={`press settings-trigger mt-auto hidden h-11 w-11 shrink-0 items-center justify-center self-center rounded-full lg:flex ${
+          onSettings ? "text-accent" : "text-ink-faint hover:bg-paper-raised hover:text-ink"
+        }`}
+      >
+        <Settings size={20} strokeWidth={1.75} className="settings-icon" />
+      </TreeLink>
     </nav>
   );
 }

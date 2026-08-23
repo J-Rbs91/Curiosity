@@ -849,7 +849,6 @@ body {
     inset-block: 0;
     inset-inline-start: 0;
     width: var(--rail-width);
-    padding-bottom: 0;
     /*
      * Le rail commence au même retrait haut que le contenu — `pt-10`, sur les
      * huit écrans qui en ont un. Un rail collé au bord se lirait comme une
@@ -857,6 +856,21 @@ body {
      * alors qu'il en est le voisin.
      */
     padding-top: 2.5rem;
+    /*
+     * En bas, le retrait est celui d'une marge de sécurité et non d'une
+     * composition : la roue est censée être au pied du rail, et l'y descendre
+     * autant que possible est précisément ce qui la sépare des deux sections.
+     * On garde de quoi ne pas coller sa cible au bord de la fenêtre.
+     */
+    padding-bottom: 1rem;
+
+    /*
+     * La colonne qui range le rail : le cadre des sections en haut, la roue
+     * poussée au pied par son `mt-auto`. Rien de tout cela n'existe sous le
+     * seuil, où la roue est absente et où le seul enfant est le cadre.
+     */
+    display: flex;
+    flex-direction: column;
   }
 
   /* Le repère passe du bord haut de la barre au bord droit du rail : la

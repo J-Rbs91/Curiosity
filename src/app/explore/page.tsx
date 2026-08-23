@@ -67,10 +67,19 @@ export default function ExplorePage() {
           <h1 className="font-serif-display text-2xl font-semibold text-ink">
             <ExploreTitle animate />
           </h1>
+          {/*
+           * La roue de l'en-tête s'arrête au seuil du rail.
+           *
+           * Au-delà, la navigation est une colonne qui a un pied, et Réglages y
+           * est rangé — c'est `MainNav` qui le porte. Laisser les deux ouvrirait
+           * deux chemins vers le même écran sur la même fenêtre, dont l'un
+           * n'existe qu'ici : le lecteur apprendrait deux gestes pour un écran
+           * qu'il ouvre une fois.
+           */}
           <TreeLink
             href="/settings"
             aria-label="Réglages"
-            className="press settings-trigger -mr-2 flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-ink-faint hover:bg-paper-raised hover:text-ink"
+            className="press settings-trigger -mr-2 flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-ink-faint hover:bg-paper-raised hover:text-ink lg:hidden"
           >
             <Settings size={18} strokeWidth={1.75} className="settings-icon" />
           </TreeLink>
