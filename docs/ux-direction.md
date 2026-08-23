@@ -510,6 +510,15 @@ rend tenable quotidiennement tient à la définition d'une ouverture : revenir d
 bout de dix secondes n'en est pas une, aller d'Explorer à Aujourd'hui non plus. Le critère est
 dans `src/lib/app-entry.ts`.
 
+**Le libellé du bouton dit ce qu'il y a derrière, et cela change dans la journée.** La
+première ouverture du jour mène à une carte qu'on n'a pas lue : « Concept du jour ». Les
+suivantes mènent à celle de ce matin, et le bouton annonce « Revoir le concept du jour ».
+Rien d'autre ne bouge — même geste, même clignement, même carte : c'est la promesse qui
+s'ajuste, pas le rituel. Un seuil qui annonce une découverte pour rendre une relecture crée
+exactement l'écart entre l'annonce et l'arrivée que le seuil existe pour supprimer. Le mot se
+déduit du statut de découverte, celui-là même qui éteint le rappel de l'icône
+(`src/lib/daily-discovery.ts`) : il repart donc de lui-même à minuit, sans remise à zéro.
+
 **Une ouverture se dépense au franchissement, pas à l'affichage.** La distinction n'est pas
 scolastique : l'écran d'Aujourd'hui se démonte dès qu'on passe sur Explorer, et le tenir pour
 franchi parce qu'il s'est montré suffisait à perdre le rituel. Quitter le seuil sans l'avoir

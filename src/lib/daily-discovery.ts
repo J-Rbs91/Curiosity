@@ -49,6 +49,25 @@ export function markDailyCardDiscovered(now: Date = new Date()): void {
   if (service.hasDiscovered(today)) announce();
 }
 
+/**
+ * Le libellé du seuil, et ce qu'il change.
+ *
+ * Le seuil se franchit à chaque ouverture, mais on ne franchit pas deux fois la même
+ * chose : la première fois de la journée, on va découvrir une carte qu'on n'a pas lue ;
+ * les suivantes, on va relire celle du matin. Le bouton disait « Concept du jour » dans
+ * les deux cas, et promettait donc à la seconde ouverture une découverte qui n'aurait pas
+ * lieu — l'écart entre ce qui est annoncé et ce qui arrive est précisément ce que le seuil
+ * existe pour éviter.
+ *
+ * Le libellé se déduit du seul statut de découverte, sans mémoire propre : la même
+ * comparaison de jours civils qui éteint le rappel de l'icône décide ici du mot, si bien
+ * que le passage de minuit rend « Concept du jour » sans qu'aucune remise à zéro n'ait à
+ * l'y remettre.
+ */
+export function dailyThresholdLabel(discovered: boolean): string {
+  return discovered ? "Revoir le concept du jour" : "Concept du jour";
+}
+
 function announce(): void {
   for (const listener of [...listeners]) listener();
 }
