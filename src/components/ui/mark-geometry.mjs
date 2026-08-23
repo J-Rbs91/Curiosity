@@ -503,6 +503,16 @@ export const FILL = {
   maskable: 0.46,
   /** Favicon : la marque occupe presque tout, sans quoi elle disparaît dans l'onglet. */
   favicon: 0.94,
+  /**
+   * Favicon de rappel : le seul cadrage où le fond compte autant que la marque.
+   *
+   * Le favicon ordinaire n'a pas de fond — l'onglet fournit le sien —, et son cadrage à 94 %
+   * ne laisse donc aucune marge à colorer. Quand l'icône porte le rappel du jour
+   * (`src/lib/app-icon.ts`), c'est précisément le fond qu'il faut voir : la marque recule
+   * jusqu'à laisser une bordure lisible à 16 px, sans descendre au cadrage de l'icône
+   * d'application, qui la rendrait minuscule dans un onglet.
+   */
+  reminder: 0.68,
 };
 
 /** Rayon des coins, en fraction du côté. Le favicon adoucit moins : à 16 px, un grand rayon mange la marque. */

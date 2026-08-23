@@ -275,6 +275,20 @@ export interface Deepening {
 export interface DailyPick {
   day: string;
   conceptId: ConceptId;
+  /**
+   * La carte de ce jour-là a-t-elle été **effectivement découverte** ?
+   *
+   * Distinct de `seen` : le tirage enregistre la carte du jour dès qu'il a lieu, c'est-à-dire
+   * avant même que le seuil ait été franchi. Ce drapeau-là n'est posé que lorsque la carte
+   * s'affiche, et il commande le rappel porté par l'icône (`src/domain/reminder`).
+   *
+   * Il est porté par la carte du jour plutôt que par un champ à côté, et c'est ce qui le
+   * réinitialise sans code : au changement de jour, `daily` est réécrit en entier, drapeau
+   * compris. Aucune remise à zéro à programmer à minuit, rien qui puisse survivre à une nuit,
+   * à un redémarrage du téléphone ou à un changement de fuseau — la seule comparaison est
+   * celle de `day` avec le jour civil courant.
+   */
+  discovered?: boolean;
 }
 
 /**
