@@ -5,17 +5,11 @@ import { usePathname, useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useRef } from "react";
 import {
   countedPath,
+  countPageview,
   GOATCOUNTER_ENDPOINT,
   GOATCOUNTER_SCRIPT,
   GOATCOUNTER_SETTINGS,
 } from "@/lib/analytics";
-
-declare global {
-  interface Window {
-    /** Ce que `count.js` dépose une fois chargé — et rien avant, d'où les gardes. */
-    goatcounter?: { count?: (vars: { path: string }) => void };
-  }
-}
 
 /**
  * Le comptage des vues, une fois pour toute l'application.
@@ -44,11 +38,13 @@ function Counter() {
   const dernier = useRef<string | null>(null);
 
   const compter = useCallback(() => {
-    const count = window.goatcounter?.count;
-    if (!count) return;
     if (dernier.current === courant.current) return;
-    dernier.current = courant.current;
-    count({ path: courant.current });
+    /*
+     * Retenu seulement si la vue est effectivement partie : le script peut n'être pas
+     * encore là, et marquer l'écran comme compté ferait perdre la vue que `onLoad` doit
+     * rattraper.
+     */
+    if (countPageview(courant.current)) dernier.current = courant.current;
   }, []);
 
   useEffect(() => {

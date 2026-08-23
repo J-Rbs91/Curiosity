@@ -46,3 +46,72 @@ export function countedPath(pathname: string, search: string): string {
   const chemin = pathname || "/";
   return search ? `${chemin}?${search}` : chemin;
 }
+
+/**
+ * Les gestes comptés en plus des écrans, et pourquoi ils ne peuvent pas l'être comme eux.
+ *
+ * Un compteur de pages ne voit que des adresses. Or trois des actes qui disent si
+ * l'application sert à quelque chose n'en changent pas : le seuil et la carte du jour
+ * partagent `/`, la feuille de partage s'ouvre par-dessus l'écran, et le départ vers une IA
+ * quitte le site. Aucun des trois n'apparaîtrait donc dans la liste des pages, quelle que
+ * soit la finesse du comptage.
+ *
+ * GoatCounter sait compter autre chose que des pages — des événements, tenus dans une liste
+ * à part. C'est ce que sont ces trois noms. Ils sont écrits ici, et pas à l'endroit du clic,
+ * pour la raison qui vaut pour toute étiquette qu'on relit plus tard : renommée d'un côté et
+ * pas de l'autre, elle ouvrirait une seconde ligne dans le tableau de bord au lieu de
+ * continuer la première, et l'historique se couperait en deux sans que rien ne le signale.
+ */
+export const AUDIENCE_EVENTS = {
+  /**
+   * Le seuil franchi : quelqu'un est venu chercher la carte du jour.
+   *
+   * Découvrir et revoir sont confondus — c'est le même geste, et le libellé du bouton est la
+   * seule chose qui les distingue.
+   */
+  carteDuJour: "carte-du-jour",
+  /**
+   * « Approfondir », les deux branches confondues : le développement écrit quand la carte en
+   * a un, le passage au presse-papiers quand elle n'en a pas. La question est de savoir
+   * combien de lecteurs veulent aller plus loin, pas par quel chemin le corpus les y mène.
+   */
+  approfondir: "approfondir",
+  /** Une IA choisie dans la feuille : le lecteur poursuit vraiment, et ailleurs. */
+  poursuiteIa: "poursuite-ia",
+} as const;
+
+/**
+ * Envoie une vue, et dit si elle est partie.
+ *
+ * Le script arrive de façon asynchrone : tant qu'il n'est pas là, il n'y a rien à appeler.
+ * L'appelant a besoin de le savoir — c'est ce qui lui permet de recompter au chargement
+ * plutôt que de tenir pour envoyée une vue qui ne l'est pas.
+ */
+export function countPageview(path: string): boolean {
+  if (typeof window === "undefined") return false;
+  const count = window.goatcounter?.count;
+  if (!count) return false;
+  count({ path });
+  return true;
+}
+
+/**
+ * Envoie un geste.
+ *
+ * Rien n'est mis en attente ici, contrairement aux vues : un geste suppose un lecteur qui
+ * agit, donc une application ouverte depuis un moment, donc un script déjà chargé. Le seul
+ * cas où il manque encore est celui où il ne viendra pas — bloqueur, réseau coupé,
+ * développement — et retenir l'événement pour cette éventualité coûterait un état à tenir
+ * pour un compte qui ne partira jamais.
+ */
+export function countEvent(name: string): void {
+  if (typeof window === "undefined") return;
+  window.goatcounter?.count?.({ path: name, event: true });
+}
+
+declare global {
+  interface Window {
+    /** Ce que `count.js` dépose une fois chargé — et rien avant, d'où les gardes. */
+    goatcounter?: { count?: (vars: { path: string; event?: boolean }) => void };
+  }
+}

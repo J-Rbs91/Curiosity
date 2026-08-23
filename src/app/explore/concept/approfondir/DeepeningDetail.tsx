@@ -9,6 +9,7 @@ import { Screen } from "@/components/motion/Screen";
 import { BackLink } from "@/components/ui/BackLink";
 import { HandoffButton } from "@/components/ui/HandoffButton";
 import { ReadingLoader } from "@/components/ui/ReadingLoader";
+import { AUDIENCE_EVENTS, countEvent } from "@/lib/analytics";
 import { drawDeepeningWaitMs } from "@/lib/deepening-wait";
 import { useReducedMotion } from "@/lib/reduced-motion";
 import { espacesFrancaises } from "@/lib/typographie";
@@ -81,6 +82,21 @@ export function DeepeningDetail() {
   const concept = concepts.find((c) => c.slug === slug);
   const deepening = concept && generatedDeepenings.find((d) => d.conceptId === concept.id);
   const attente = useDeepeningWait();
+
+  /*
+   * L'autre moitié du geste « Approfondir » — la branche que `DeepenButton` ne peut pas
+   * compter au clic, `TreeLink` détournant le sien. Arriver ici, c'est avoir appuyé : le
+   * bouton est le seul chemin que le produit ouvre vers cet écran. Une adresse partagée en
+   * est un autre, et elle sera comptée comme un appui ; c'est la marge d'erreur admise, et
+   * elle est du même ordre que celle de n'importe quel lien profond.
+   *
+   * L'attente n'y change rien : c'est la demande qui se compte, pas la lecture qui suit.
+   * Le texte, lui, se lit dans la liste des pages, qui dit lequel a été ouvert.
+   */
+  useEffect(() => {
+    if (!deepening) return;
+    countEvent(AUDIENCE_EVENTS.approfondir);
+  }, [deepening]);
 
   /*
    * Une carte sans approfondissement n'a pas d'écran ici, et n'en reçoit pas un de

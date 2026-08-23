@@ -176,6 +176,29 @@ avec son chemin, son référent et le format de l'écran, rien d'autre ne quitte
 navigateur, et le `localStorage` du lecteur — la seule donnée que l'application garde — n'est
 jamais lu.
 
+Quatre nombres sont lisibles, et ils ne viennent pas tous du même endroit :
+
+| Ce qu'on veut savoir | Où ça se lit | Ce qui le déclenche |
+|---|---|---|
+| Combien viennent chercher la carte du jour | événement `carte-du-jour` | le franchissement du seuil, sur l'accueil |
+| Combien demandent « Approfondir » | événement `approfondir` | le bouton, ses deux branches confondues |
+| Combien poursuivent avec une IA | événement `poursuite-ia` | le choix d'un service dans la feuille |
+| Combien passent par Explorer | page `/explore/` | l'affichage de l'écran |
+
+Les trois premiers sont des **événements**, tenus par GoatCounter dans une liste à part.
+C'est ce qu'ils doivent être : aucun des trois ne change d'adresse — le seuil et la carte
+partagent `/`, la feuille s'ouvre par-dessus l'écran, et le départ vers une IA quitte le
+site —, si bien qu'un compteur de pages ne les verrait jamais. Le quatrième, lui, est un
+écran : il est déjà une page, et le compter une seconde fois en événement aurait été
+enregistrer deux fois le même fait. Les noms sont dans
+[`src/lib/analytics.ts`](src/lib/analytics.ts), pas aux endroits du clic : renommés d'un
+côté et pas de l'autre, ils couperaient l'historique en deux sans que rien ne le signale.
+
+Ce que ces nombres ne disent pas : **quelle** carte du jour a été lue. Le tirage dépend du
+lecteur et de sa progression, et l'événement ne porte que le geste, pas le concept. Les
+cartes ouvertes depuis Explorer et les développements lus, eux, se lisent carte par carte
+dans la liste des pages.
+
 Deux détails tiennent à la nature de l'application :
 
 - elle n'ouvre qu'une page et change ensuite d'écran sans recharger. Le comptage

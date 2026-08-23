@@ -44,15 +44,26 @@ export function HandoffButton({
   concept,
   label = "Continuer avec une IA",
   variant = "secondary",
+  onOpen,
 }: {
   concept: Concept;
   label?: string;
   variant?: "primary" | "secondary";
+  /**
+   * Prévenu à l'ouverture de la feuille, sans rien décider.
+   *
+   * Ce bouton porte deux intentions selon l'endroit où il est posé — « Approfondir » quand
+   * la carte n'a pas de développement écrit, « Continuer avec une IA » au bas de celui
+   * qu'elle a —, et lui seul ne peut pas les distinguer. C'est donc l'appelant qui nomme le
+   * geste, ici, plutôt qu'un test sur le libellé qui casserait au premier mot changé.
+   */
+  onOpen?: () => void;
 }) {
   const [handoff, setHandoff] = useState<Handoff | null>(null);
   const trigger = useRef<HTMLButtonElement>(null);
 
   async function deepen() {
+    onOpen?.();
     // Le domaine est résolu ici plutôt que passé par l'appelant : les écrans qui portent ce
     // bouton n'ont pas à savoir dans quelle discipline se trouve la carte, ni sous quelle
     // adresse l'application est servie.
