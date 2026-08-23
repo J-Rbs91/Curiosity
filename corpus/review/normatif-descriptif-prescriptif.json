@@ -1,0 +1,72 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "normatif-descriptif-prescriptif",
+  "slug": "normatif-descriptif-prescriptif",
+  "status": "IN_REVIEW",
+  "title": "Normatif, descriptif, prescriptif",
+  "themes": [
+    "instruire-un-arbitrage"
+  ],
+  "theme_labels": {
+    "instruire-un-arbitrage": "Aider quelqu'un à trancher"
+  },
+  "authors": [
+    {
+      "name": "David E. Bell",
+      "app_author_id": null
+    },
+    {
+      "name": "Howard Raiffa",
+      "app_author_id": null
+    },
+    {
+      "name": "Amos Tversky",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Chapitre signé des trois directeurs du recueil, David E. Bell, Howard Raiffa et Amos Tversky. Leur accord n'est pas entier, et c'est imprimé page 2 : la catégorie prescriptive a été ajoutée d'abord parce que le métier de deux d'entre eux n'entre pas dans le partage habituel, et le troisième, Amos Tversky, estime qu'elle pourrait ne pas être nécessaire si la catégorie normative était mieux clarifiée. Une note de la page 16 pose la distinction « pour les besoins de ce chapitre seulement ».",
+  "hook": "Entre décrire comment on décide et dire comment il faudrait, que manque-t-il ?",
+  "summary": "Au partage habituel entre le normatif et le descriptif s'ajoute un troisième terme, le prescriptif : aider une personne réelle, avec ses limites, à mieux décider.",
+  "quotation": {
+    "text": "[…] nous augmentons la dichotomie habituelle […] entre les côtés normatif et descriptif […] en ajoutant une troisième composante : le prescriptif.",
+    "reference": "David E. Bell, Howard Raiffa et Amos Tversky, « Descriptive, normative, and prescriptive interactions in decision making », dans les mêmes (dir.), Decision Making: Descriptive, Normative, and Prescriptive Interactions, Cambridge University Press, 1988, p. 9-30.",
+    "locator": "p. 9, deuxième paragraphe",
+    "language": "fr",
+    "original_text": "[…] we shall augment the usual dichotomy […] between the normative and descriptive sides […] by adding a third component: the prescriptive side.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (agent lecteur, chaîne Curiosity). Aucune traduction française publiée de ce chapitre n'a été identifiée. Deux choix de traduction sont à signaler. D'abord « sides » est rendu par « côtés » et non par « approches » : les auteurs glosent eux-mêmes les deux « sides » par « the “ought” and the “is” », ce sont deux faces d'une même question, pas deux méthodes. Ensuite, la limite de 150 caractères a obligé à rendre « the prescriptive side » par « le prescriptif » et non par « le côté prescriptif » : le parallélisme des trois termes, intact en anglais, est donc légèrement affaibli en français. L'anglais est conservé dans `original_text` et fait seul foi.",
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "David E. Bell, Howard Raiffa et Amos Tversky, « Descriptive, normative, and prescriptive interactions in decision making », dans les mêmes (dir.), Decision Making, Cambridge University Press, 1988, p. 9-30.",
+      "kind": "primary",
+      "locator": "chap. 1, p. 9-30",
+      "doi_isbn": "9780521351492",
+      "url": "https://archive.org/details/DecisionMaking",
+      "consulted": "full-text"
+    },
+    {
+      "label": "David E. Bell, Howard Raiffa et Amos Tversky (dir.), Decision Making: Descriptive, Normative, and Prescriptive Interactions, Cambridge, Cambridge University Press, 1988.",
+      "kind": "primary",
+      "locator": "chap. 1, p. 9-30",
+      "doi_isbn": "10.1017/cbo9780511598951.003",
+      "url": "https://doi.org/10.1017/cbo9780511598951.003",
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "verdict": "PENDING"
+  },
+  "notes": [
+    "Cette carte repose sur le même exemplaire numérisé que quatre autres du même lot : le recueil de 1988 dirigé par Bell, Raiffa et Tversky, déposé sur Internet Archive sous l'identifiant DecisionMaking. Aucune contre-lecture sur un second exemplaire n'a été possible, et un défaut de ce scan se propagerait aux cinq fiches sans être détecté ici.",
+    "La distinction est posée « pour les besoins de ce chapitre seulement » : la note de la page 16 ajoute « we are not attempting to change common usage ». Présenter ce texte comme une redéfinition du vocabulaire du champ irait plus loin que ce que ses auteurs revendiquent.",
+    "L'accord des trois signataires n'est pas entier, et le volume l'imprime page 2 : Amos Tversky estime que la catégorie prescriptive pourrait ne pas être nécessaire si la catégorie normative était mieux clarifiée.",
+    "La citation est coupée trois fois. La troisième coupe retire la glose « (the “ought” and the “is”) », qui donnait en six mots la teneur des deux pôles anciens ; les crochets la signalent, ils ne la remplacent pas.",
+    "Le chapitre 1 n'est pas l'introduction éditoriale du volume : celle-ci est un autre texte, non signé, imprimé p. 1-6 avant la partie I. Les deux se recoupent sur la trichotomie, et la citation vient du chapitre signé.",
+    "Le critère qui sépare les trois pôles est celui de leur évaluation, p. 17-18 : validité empirique pour le descriptif, adéquation théorique pour le normatif, valeur pragmatique pour le prescriptif. Le passage court à cheval sur deux pages et n'a pas pu être cité."
+  ]
+}

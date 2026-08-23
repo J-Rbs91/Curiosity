@@ -1,0 +1,74 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "heuristiques-de-jugement",
+  "slug": "heuristiques-de-jugement",
+  "status": "IN_REVIEW",
+  "title": "Les heuristiques de jugement",
+  "themes": [
+    "choisir-sous-risque"
+  ],
+  "theme_labels": {
+    "choisir-sous-risque": "Choisir quand on ne sait pas"
+  },
+  "authors": [
+    {
+      "name": "Amos Tversky",
+      "app_author_id": null
+    },
+    {
+      "name": "Daniel Kahneman",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Coécriture attestée sur le document lui-même : la couverture, le bloc « AUTHOR(S) » du formulaire DD 1473 et la ligne de signature de la première page portent « Amos Tversky and Daniel Kahneman », alors rattachés tous deux à l'Université hébraïque de Jérusalem. Le rapport porte « Date of Report: August, 1973 » ; le millésime 1974 est celui de la parution dans Science, qui n'a pas été ouverte. Le rapport rassemble des résultats que les auteurs avaient déjà publiés ailleurs, et ses notes y renvoient.",
+  "hook": "Comment évalue-t-on la vraisemblance d'un événement incertain ?",
+  "summary": "Un nombre limité de principes ramènent l'évaluation des vraisemblances à des jugements plus simples : utiles en général, ils mènent parfois à des erreurs systématiques.",
+  "quotation": {
+    "text": "on s'appuie sur un nombre limité de principes heuristiques par lesquels on réduit les tâches complexes […] à des opérations de jugement plus simples.",
+    "reference": "Amos Tversky et Daniel Kahneman, Judgment under Uncertainty: Heuristics and Biases, ONR Technical Report, Eugene (Oregon), Oregon Research Institute, août 1973, rapport DTIC AD 767 426.",
+    "locator": "p. 1, premier paragraphe",
+    "language": "fr",
+    "original_text": "people rely on a limited number of heuristic principles by which they reduce the complex tasks […] to simpler judgmental operations.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (agent lecteur, chaîne Curiosity), 23 août 2026. Aucune traduction française publiée de ce rapport ONR n'a été identifiée. Quatre choix à signaler. Premièrement, le début : la phrase du rapport commence par « The theme of the present paper is that people rely on... » ; la citation entre à « people rely », ce que la référence dit et ce que le lecteur peut vérifier, et rien n'a été ajouté pour raccorder. Deuxièmement, la coupe : elle remplace « of assessing likelihoods and predicting values », c'est à dire l'objet de ces tâches complexes, l'évaluation des vraisemblances et la prédiction des valeurs. Elle ne retourne pas le sens, elle laisse la mécanique intacte, mais elle enlève le domaine, que le titre de la carte restitue et que definition_de_lauteur donne en entier. Troisièmement, « people » est rendu par « on » et non par « les gens » : c'est le générique français ordinaire, il permet de conserver la construction exacte « par lesquels on réduit » qui traduit « by which they reduce » et qui maintient les personnes, et non les heuristiques, en position de sujet ; avec « les gens » la phrase passait à 161 caractères et il fallait sacrifier soit cette construction, soit « de jugement ». Quatrièmement, « judgmental operations » est rendu par « opérations de jugement » et non par « opérations mentales » : le rapport emploie les deux expressions et ne les confond pas, « mental operations » figurant dans le résumé de la p. 31 ; les rabattre l'une sur l'autre effacerait la distinction.",
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "Amos Tversky et Daniel Kahneman, Judgment under Uncertainty: Heuristics and Biases, ONR Technical Report, Eugene (Oregon), Oregon Research Institute, août 1973, 31 p.",
+      "kind": "primary",
+      "locator": "p. 1 à 31",
+      "doi_isbn": "10.21236/ad0767426",
+      "url": "https://archive.org/details/DTIC_AD0767426",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Amos Tversky et Daniel Kahneman, « Judgment under Uncertainty: Heuristics and Biases », Science, vol. 185, n° 4157, 27 septembre 1974, p. 1124-1131.",
+      "kind": "primary",
+      "locator": "p. 1124-1131",
+      "doi_isbn": "10.1126/science.185.4157.1124",
+      "url": "https://doi.org/10.1126/science.185.4157.1124",
+      "consulted": "metadata-only"
+    },
+    {
+      "label": "Amos Tversky et Daniel Kahneman, « Judgment under uncertainty: Heuristics and biases », dans D. Kahneman, P. Slovic et A. Tversky (dir.), Judgment under Uncertainty: Heuristics and Biases, Cambridge University Press, 1982.",
+      "kind": "primary",
+      "locator": "chap. 1",
+      "doi_isbn": "10.1017/cbo9780511809477.002",
+      "url": "https://doi.org/10.1017/cbo9780511809477.002",
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "verdict": "PENDING"
+  },
+  "notes": [
+    "Ne pas écrire « les trois heuristiques : représentativité, disponibilité, ancrage ». Le corps du rapport n'appelle heuristiques que la représentativité (p. 3) et la disponibilité (p. 15 et 20) ; l'ancrage y est nommé comme un phénomène, l'heuristique étant « an adjustment from a starting point ». L'expression « anchoring heuristic » ne figure nulle part dans le texte.",
+    "La thèse de la première page dit « a limited number of heuristic principles », et non trois. Le compte de trois n'apparaît que dans l'annonce de plan (p. 2) et dans le résumé (p. 31) ; la discussion revient à l'indéfini, « some heuristics » (p. 26).",
+    "Le rapport est daté d'août 1973 sur sa couverture. Le millésime 1974 est celui de l'article de Science, fermé et non ouvert : les deux textes ne se confondent pas, leurs résumés diffèrent déjà.",
+    "Les deux premières pages de l'article ne portent pas de folio imprimé. La page citée est la première de l'article, reconnaissable à la ligne de signature qui la surmonte, et le cinquième feuillet du fichier."
+  ]
+}

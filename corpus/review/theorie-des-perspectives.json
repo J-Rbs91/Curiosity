@@ -1,0 +1,66 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "theorie-des-perspectives",
+  "slug": "theorie-des-perspectives",
+  "status": "IN_REVIEW",
+  "title": "La théorie des perspectives",
+  "themes": [
+    "choisir-sous-risque"
+  ],
+  "theme_labels": {
+    "choisir-sous-risque": "Choisir quand on ne sait pas"
+  },
+  "authors": [
+    {
+      "name": "Daniel Kahneman",
+      "app_author_id": null
+    },
+    {
+      "name": "Amos Tversky",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Rapport signé des deux noms : la couverture, la page de titre et le formulaire DD 1473 portent Daniel Kahneman et Amos Tversky, dans cet ordre. Le nom du concept est des auteurs eux-mêmes, le sommaire annonçant « prospect theory » ; le titre français est une traduction due à des tiers non identifiés. Le rapport d'avril 1977 n'est pas l'article paru dans Econometrica en 1979 : la citation est localisée sur le rapport, seul des deux textes qui ait été ouvert.",
+  "hook": "Le risque se juge-t-il sur ce qu'on possède, ou sur ce qui change ?",
+  "summary": "Ce qui est évalué, ce sont des gains et des pertes rapportés à un point de référence : la fonction de valeur y est concave au-dessus de ce point, convexe en dessous.",
+  "quotation": {
+    "text": "In contrast, we hypothesize that the value function is concave above the reference point and convex below it […]",
+    "reference": "Daniel Kahneman et Amos Tversky, Prospect Theory: An Analysis of Decision Making Under Risk, Technical Report PTR-1042-77-4, Eugene (Oregon), Decision Research, a branch of Perceptronics, avril 1977.",
+    "locator": "p. 2-5, section 2.1",
+    "language": "en",
+    "original_text": null,
+    "original_language": null,
+    "translation": {
+      "kind": "none",
+      "translator": null,
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "Daniel Kahneman et Amos Tversky, Prospect Theory: An Analysis of Decision Making Under Risk, Technical Report PTR-1042-77-4, Eugene (Oregon), Decision Research, a branch of Perceptronics, avril 1977.",
+      "kind": "primary",
+      "locator": "chap. 2, p. 2-1 à 2-11",
+      "doi_isbn": "10.21236/ada045771",
+      "url": "https://archive.org/details/DTIC_ADA045771",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Daniel Kahneman et Amos Tversky, « Prospect Theory: An Analysis of Decision under Risk », Econometrica, vol. 47, n° 2, mars 1979, p. 263-291.",
+      "kind": "primary",
+      "locator": "p. 263-291",
+      "doi_isbn": "10.2307/1914185",
+      "url": "https://doi.org/10.2307/1914185",
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "verdict": "PENDING"
+  },
+  "notes": [
+    "La citation ne porte que la forme de la fonction de valeur. L'aversion aux pertes (« losses loom larger than gains », p. 2-5) et la pondération non linéaire des probabilités (section 2.2) sont dans le rapport, mais dans d'autres paragraphes : le lecteur primaire a refusé de les souder à cette phrase, et la carte ne le fait pas davantage.",
+    "La phrase est coupée après « below it » : la suite reformule la même hypothèse en termes d'utilité marginale décroissant avec la distance au point de référence. Le « In contrast » initial s'oppose à la formule traditionnelle citée deux lignes plus haut, « utility is a concave function of money ».",
+    "Le rapport est folioté par chapitre : « p. 2-5 » désigne le cinquième feuillet du chapitre 2, et non la cinquième page du volume.",
+    "L'article d'Econometrica de 1979 est nommé et écarté : il n'a pas été ouvert, aucune phrase de cette carte ne s'y localise, et rien n'est dit ici de sa terminologie."
+  ]
+}
