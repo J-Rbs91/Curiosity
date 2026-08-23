@@ -2,6 +2,7 @@ import { Suspense, type ReactNode } from "react";
 import { MainNav } from "@/components/ui/MainNav";
 import { ThemeKeeper } from "@/components/ui/ThemeKeeper";
 import { AppIconReminder } from "@/components/ui/AppIconReminder";
+import { AudienceCounter } from "@/components/ui/AudienceCounter";
 import { TrailKeeper } from "@/components/navigation/TrailKeeper";
 import { EntryPoint } from "@/components/navigation/EntryPoint";
 
@@ -61,6 +62,17 @@ export function AppShell({ children }: { children: ReactNode }) {
        * `docs/icone-de-rappel.md` pour ce que les plateformes en acceptent.
        */}
       <AppIconReminder />
+      {/*
+       * Et la mesure d'audience, au même endroit et pour la même raison : combien de
+       * personnes ouvrent l'application et quels écrans elles regardent n'est l'affaire
+       * d'aucun écran en particulier. Elle est ici, après la trace, parce qu'elle lit le
+       * chemin affiché comme elle — et sous `Suspense` parce qu'elle lit aussi la
+       * recherche, ce qu'une route pré-rendue n'autorise que derrière une frontière de
+       * suspension.
+       */}
+      <Suspense fallback={null}>
+        <AudienceCounter />
+      </Suspense>
       <MainNav />
       <div className="app-body flex-1">{children}</div>
     </>

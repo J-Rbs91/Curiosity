@@ -18,6 +18,7 @@ le vrai travail du projet.
 - PWA (manifeste + service worker, installable, consultable hors-ligne)
 - Stockage 100 % local (`localStorage`) — aucun compte, aucun serveur applicatif, et une
   seule donnée : la suite des identifiants des cartes lues, quelques centaines d'octets
+- Mesure d'audience par GoatCounter, sans cookie ni identifiant — voir plus bas
 - Vitest pour les tests unitaires
 
 ## Démarrer
@@ -165,6 +166,32 @@ worker — passent tous par `src/lib/base-path.ts`.
 
 **À faire une fois, à la main :** dans Settings → Pages, choisir « GitHub Actions » comme
 source. Sans cela le déploiement échoue sur une erreur d'environnement.
+
+## Mesure d'audience
+
+Le site compte ses vues avec [GoatCounter](https://www.goatcounter.com/) — le compteur que
+porte déjà le CV, sur un site distinct pour que les deux audiences ne se mélangent pas :
+<https://curiosity.goatcounter.com>. Il est sans cookie et sans identifiant : une vue part
+avec son chemin, son référent et le format de l'écran, rien d'autre ne quitte le
+navigateur, et le `localStorage` du lecteur — la seule donnée que l'application garde — n'est
+jamais lu.
+
+Deux détails tiennent à la nature de l'application :
+
+- elle n'ouvre qu'une page et change ensuite d'écran sans recharger. Le comptage
+  automatique du script n'aurait donc vu que la première ouverture : il est désarmé
+  (`no_onload`) et repris à chaque changement de chemin, par
+  [`AudienceCounter`](src/components/ui/AudienceCounter.tsx) ;
+- le chemin enregistré est celui que Next expose, sans le préfixe d'hébergement —
+  `/explore/concept/?c=<concept>` et non `/Curiosity/explore/concept/?c=<concept>`. Les
+  statistiques garderont la même forme si le site déménage un jour sous un domaine propre.
+
+Rien n'est chargé ni compté hors production, pour la même raison que le service worker ne
+s'y enregistre pas.
+
+**À faire une fois, à la main :** créer le site `curiosity` sur
+[goatcounter.com](https://www.goatcounter.com/) ; son code doit correspondre à l'adresse
+écrite dans [`src/lib/analytics.ts`](src/lib/analytics.ts).
 
 ## Principe directeur
 
