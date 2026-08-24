@@ -25,17 +25,19 @@ script ne peut pas dire : quel travail est possible aujourd'hui, ce qu'il coûte
 |---|---|---|---|
 | **A.** Approfondissements | 8 cartes | non | **rouvert le 23 août 2026** |
 | **B.** File de la sociologie des organisations | 25 entrées | oui, cartographie déjà faite | ouvert |
-| **C.** Quatre domaines vides | 4 domaines | oui, **tout est à faire** | ouvert |
+| **C.** Domaines vides | 3 fermés + 1 ouvert sans carte | oui | ouvert |
 | **D.** Reprises courtes de `systems-thinking` et de `decision-science` | 4 textes | oui, accès déjà constaté | ouvert |
 
 Le chantier A s'était vidé le 21 août et **il se rouvre le 23** : les huit cartes de la science
 de la décision n'ont pas d'approfondissement. C'est délibéré, et non un oubli, la routine
-nocturne consacrant une phase entière à ce travail. **C'est le chantier que prend la nuit
-suivante**, et sa file est celle de `corpus:deepen`, pas celle de ce fichier.
+nocturne consacrant une phase entière à ce travail. Il reste ouvert le 24, la nuit ayant repris
+une ouverture de domaine plutôt que ce chantier.
 
 Le chantier C a perdu un domaine le 22 août, `systems-thinking`, et un second le 23,
-`decision-science`. **La famille « Comprendre le pilotage » est complète.** Ce que ces deux
-passages ont laissé derrière eux, et qui se reprend vite, est au chantier D.
+`decision-science`. **Le 24, `operations-management` est ouvert au stade périmètre +
+cartographie, mais sans carte** : il reste donc au chantier C, avec le statut particulier « ouvert,
+à instruire directement » — sa prochaine nuit saute périmètre et scout. Ce que le passage 02 a
+laissé derrière lui est détaillé plus bas, au bloc de ce domaine.
 
 ---
 
@@ -141,25 +143,33 @@ tradition germanophone, que la file ne couvre pas.
 
 ---
 
-# C. Les quatre domaines vides
+# C. Les domaines vides
 
 **`systems-thinking` est sorti de cette liste le 22 août 2026**, et **`decision-science` le
 23**. Les deux avaient le meilleur stock d'entrée du lot, et c'est par eux que le chantier a
 été entamé : périmètre écrit, cartographie, cartes, puis thèmes. Ce que ces passages ont appris
 est au chantier D et dans `corpus/ETAT.md`.
 
+**`operations-management` a été ouvert le 24 août au stade périmètre + cartographie, mais sans
+carte** (passage 02). Il ne quitte donc pas ce chantier : il y reste avec le statut « ouvert, à
+instruire directement ». Sa prochaine nuit saute périmètre et scout et attaque les concepts, en
+commençant par les deux candidats propres de sa cartographie (Shewhart 1931 ; Bellman, RAND
+P-651, 1965), puis les deux à identité à préciser (HMMS, AD 422810), en menant **en parallèle** le
+balayage complémentaire que la cartographie réclame (couche francophone, files d'attente,
+quantité économique de commande, flux tiré, contrainte).
+
 | famille | domaine | périmètre | cartographie | stock d'entrée |
 |---|---|---|---|---|
 | Humains et organisations | Sociologie du travail | — | — | aucun |
 | Humains et organisations | Psychologie du travail | — | — | 1 cas de frontière |
 | Humains et organisations | Économie comportementale | — | — | aucun |
-| Production et systèmes | Operations Management | — | — | 3 rapports repérés |
+| Production et systèmes | Operations Management | **écrit (24 août)** | **écrite (24 août)** | 4 candidats lus, 0 carte |
 
 **Les trois domaines de la famille « Comprendre les humains et les organisations » sont
-désormais les seuls sans stock d'entrée sérieux**, et `operations-management` est le dernier à
-en avoir un. C'est lui qui a le meilleur rendement des quatre.
+désormais les seuls sans périmètre ni cartographie** : ce sont les trois derniers à ouvrir dans
+l'ordre complet. `operations-management`, lui, n'a plus qu'à être instruit.
 
-**Aucun des quatre n'a de périmètre écrit ni de cartographie.** Les ouvrir, c'est refaire
+**Aucun des trois fermés n'a de périmètre écrit ni de cartographie.** Les ouvrir, c'est refaire
 l'ordre complet, et cet ordre n'est pas négociable : il a été appris en le violant.
 
 > le périmètre s'écrit → le scout cartographie → **puis** les thèmes se déclarent → puis les
@@ -174,9 +184,11 @@ pour les porter, alors même que leurs textes étaient ouverts et lus.
 
 ## Ce dont l'ouverture hérite déjà, et qui n'est pas à rechercher
 
-Un seul de ces domaines ne part pas de rien. Les périmètres et cartographies existants ont
-tranché leurs frontières **depuis l'autre côté**, et consigné en angle mort ce qui leur
-revient plutôt que de le rejeter. Un scout qui l'ouvre commence par lire ces sections.
+Un seul de ces domaines ne partait pas de rien, `operations-management`, et il est désormais
+ouvert (voir plus bas). Les périmètres et cartographies existants ont tranché leurs frontières
+**depuis l'autre côté**, et consigné en angle mort ce qui leur revient plutôt que de le rejeter.
+Un scout qui ouvre un domaine commence par lire ces sections ; l'historique ci-dessous dit ce
+que chaque legs a réellement rendu une fois testé.
 
 **Le legs se vérifie : c'est ce qui a ouvert `systems-thinking`.** Les trois textes que
 `corpus/map/cybernetics.scouting.md` lui avait consignés ont été repris tels quels le 22 août.
@@ -195,13 +207,19 @@ découvrir ce qu'aucune requête par littérature n'avait donné : **un recueil 
 ouvert**, d'où sont sorties cinq des huit cartes du lot. Aller vérifier un legs vaut donc mieux
 que de le croire, et pas seulement pour ce qu'il annonce.
 
-**`operations-management`**, le dernier domaine à hériter de quelque chose — trois rapports du
+**Le legs se vérifie une troisième fois, et cette fois il n'a pas suffi : c'est ce qui a
+ouvert `operations-management` le 24 août.** Le domaine a bien hérité — trois rapports du
 Department of Defense appliquant la loi de la variété requise à l'acquisition de systèmes
-d'armes, mirés sur Internet Archive, repérés non ouverts. **À quoi s'ajoute une voie d'accès
-que le lot du 23 août a établie et qui vaut pour lui plus que pour tout autre** : la collection
-`dticarchive` d'Internet Archive sert sans restriction des rapports techniques ONR, ARPA et RAND
-dont la publication en revue est fermée. Deux cartes de ce lot en viennent. Les trois rapports
-légués relèvent exactement de ce fonds.
+d'armes, mirés sur Internet Archive, repérés non ouverts par `cybernetics`, plus Delatour et al.
+consigné par `human-factors`. **Mais le legs, une fois testé ce passage, s'est révélé tout entier
+non ouvert** : les trois rapports DoD restent des items `dticarchive` à restriction non vérifiée,
+et les deux notices HAL de Delatour n'ont ni fichier ni DOI. La voie d'accès rentable que le lot
+du 23 août avait établie — la collection `dticarchive` sert sans restriction des rapports ONR,
+ARPA et RAND — **a servi ailleurs** : c'est par elle que les scouts ont ouvert Bellman (RAND
+P-651) et le rapport de stock AD 422810. Le domaine part donc avec **quatre candidats lus en texte
+intégral mais aucune carte** (voir le bloc « Operations Management » plus bas et
+`corpus/map/operations-management.scouting.md`) : son ouverture s'est arrêtée au périmètre et à la
+cartographie, le maillon `corpus-scout` ayant consommé la nuit.
 
 **`work-psychology`, `sociology-of-work`, `behavioral-economics`** — les deux cartographies
 qui les ont explicitement balayés **se déclarent vides pour eux**, et disent pourquoi : les
@@ -218,7 +236,34 @@ le même écart pris comme **fait économique**, avec ses conséquences agrégé
 cartographie du 23 août n'a toutefois **rien cherché de ciblé** vers ce domaine : elle ne
 constitue donc aucun stock d'entrée, et son silence n'est pas un vide établi.
 
-## Le piège que ces quatre domaines partagent
+## Operations Management — ouvert, à instruire directement (passage 02, 24 août)
+
+Le domaine a son périmètre et sa cartographie ; il n'a plus qu'à être instruit, et sa prochaine
+nuit **saute périmètre et scout**. La file d'instruction, dans l'ordre de solidité établi par
+`corpus/map/operations-management.scouting.md` :
+
+1. **Shewhart, *Economic Control of Quality of Manufactured Product* (1931)** — maîtrise
+   statistique de la qualité, carte de contrôle, causes assignables contre variation de hasard.
+   Full-text lu. **Réserve** : l'édition et l'item Internet Archive exacts ne sont pas
+   reconfirmés, à documenter avant la fiche.
+2. **Bellman, *Mathematical Aspects of Scheduling Theory*, RAND P-651 (1965)** — l'ordonnancement
+   comme problème mathématique structuré. Full-text lu, rapport RAND en accès ouvert.
+3. **Rapport ASTIA/DTIC du filon HMMS** (planification agrégée production–stocks–main-d'œuvre) —
+   full-text lu, mais **identité bibliographique à préciser** avant toute fiche.
+4. **Rapport DTIC AD 422810** (politique de stock) — full-text lu, **identité à préciser**.
+
+Et, **en parallèle et non après coup**, le balayage complémentaire que la cartographie réclame
+avant toute déclaration de thème : la **couche francophone** non cherchée (Persée, HAL, Cairn,
+OpenEdition Books, theses.fr — gestion industrielle, productique, génie industriel), puis les
+files d'attente (Erlang, Little), la quantité économique de commande (Harris), le flux tiré et la
+théorie des contraintes, dont aucune source n'a encore été vérifiée en accès.
+
+**Leçon opératoire à appliquer dès le lancement des agents** : les scouts et lecteurs de cette
+chaîne accumulent tout en contexte et n'écrivent qu'en dernière action ; le passage 02 a perdu sa
+nuit d'instruction là-dessus. Pré-identifier les sources, interdire la relecture intégrale des
+gros textes déjà extraits, borner le nombre de requêtes, et exiger l'écriture tôt.
+
+## Le piège que ces domaines partagent
 
 La cybernétique a montré ce que coûte un champ dont le vocabulaire est disponible pour
 n'importe quel usage métaphorique. Les cinq le sont autant : « système », « décision »,

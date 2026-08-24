@@ -1,4 +1,4 @@
-# État du corpus — 23 août 2026
+# État du corpus — 24 août 2026
 
 Écrit sur le disque parce qu'une session a déjà été coupée en cours de route : ce fichier
 existe pour qu'une reprise reparte des fichiers, et non de la mémoire de quelqu'un.
@@ -7,13 +7,17 @@ Ce fichier dit ce que le corpus **est**. Ce qui lui **manque**, et par quel bout
 est dans [`corpus/RESTE-A-FAIRE.md`](RESTE-A-FAIRE.md).
 
 `npm run corpus:validate` : **75 enregistrements, 74 validés, 0 erreur, 50 avertissements.**
-`npm run corpus:deepen` : **66 approfondissements pour 74 cartes validées, 95 772 mots,
-1 451 en moyenne.**
-`npm test` : **419 tests, 0 échec.** `npm run lint` et `npm run corpus:build` : sans erreur.
+`npm run corpus:deepen` : **66 approfondissements pour 74 cartes validées.** Fin de sortie :
+les huit cartes de la science de la décision sont toujours sans approfondissement (voir
+plus bas), et c'est le seul écart entre validé et servi.
+`npm test` : **476 tests, 0 échec.** `npm run lint` et `npm run corpus:build` : sans erreur.
 
-**Sept domaines instruits sur onze déclarés.** Les quatre autres sont configurés dans la
-taxonomie et n'ont pas de corpus ; `corpus:audit` les affiche « en cours de constitution ».
-Aucun d'eux n'a de périmètre écrit ni de cartographie : les ouvrir, c'est refaire l'ordre
+**Sept domaines instruits sur onze déclarés, un huitième ouvert sans carte.** `operations-management`
+a désormais son périmètre (`corpus/perimeter.md`) et sa cartographie
+(`corpus/map/operations-management.scouting.md`) écrits au passage 02 de la routine nocturne,
+mais **aucune carte validée** : `corpus:audit` l'affiche encore « en cours de constitution ».
+Les trois derniers domaines fermés (`sociology-of-work`, `work-psychology`,
+`behavioral-economics`) n'ont ni périmètre ni cartographie : les ouvrir, c'est refaire l'ordre
 complet, périmètre puis scout puis thèmes puis cartes.
 
 | domaine | thèmes | cartes validées | approfondissements |
@@ -36,8 +40,59 @@ travail, et c'est ce que prend la nuit suivante.**
 mesure et la science de la décision, sont instruits. C'est la première des quatre familles à
 l'être entièrement.
 
-**La famille « Comprendre la production et les systèmes » est ouverte aux deux tiers.**
-Elle était entièrement vide le 20 août ; il lui reste `operations-management`.
+**La famille « Comprendre la production et les systèmes » a ses trois domaines touchés.**
+Elle était entièrement vide le 20 août. La cybernétique et le systems thinking sont instruits ;
+`operations-management` est ouvert au stade périmètre + cartographie le 24 août, sans carte
+encore. La famille n'est donc pas complète : son dernier domaine attend son premier lot.
+
+# 0bis. Operations Management — ouverture partielle du 24 août 2026 (passage 02), sans carte
+
+Huitième domaine touché, **troisième et dernier de la famille « Comprendre la production et les
+systèmes »**. Deuxième passage de la routine nocturne. **Ce passage n'a pas rendu de carte** : il
+a écrit le périmètre et la cartographie, et c'est là son livrable, conformément à la règle « pas
+de preuve documentaire suffisante, pas de fiche ; le périmètre et la cartographie écrits sont le
+livrable de la nuit ».
+
+## Ce que le passage a établi
+
+- **Le périmètre** (`corpus/perimeter.md`, section `operations-management`) : la discipline en
+  une phrase (le comportement d'un système qui produit — capacité, files, stocks, délais,
+  variabilité), le test d'entrée en trois conditions, le hors-périmètre, et **six frontières dont
+  quatre étaient déjà tranchées depuis l'autre côté** (`cybernetics`, `systems-thinking`,
+  `human-factors`, `decision-science`), reprises telles quelles.
+- **La cartographie** (`corpus/map/operations-management.scouting.md`, 244 lignes) : quatre
+  candidats atteignables, tous lus en texte intégral par les scouts, dont **deux propres**
+  (Shewhart, *Economic Control of Quality of Manufactured Product*, 1931 ; Bellman,
+  *Mathematical Aspects of Scheduling Theory*, RAND P-651, 1965) et **deux à identité
+  bibliographique « à préciser »** (un rapport ASTIA/DTIC du filon HMMS sur la planification
+  agrégée ; le rapport DTIC AD 422810 sur une politique de stock).
+
+## Ce que le contrôle n'a pas eu à attraper, et pourquoi
+
+Aucune carte n'a été produite, donc aucun contrôle aveugle n'a tourné. La cause n'est pas
+documentaire, elle est opératoire : **le maillon `corpus-scout` a consommé la nuit.** Trois scouts
+successifs — deux arrêtés après avoir rassemblé les sources sans jamais écrire la cartographie,
+le troisième chirurgical qui l'a écrite en une passe. La leçon, portée au journal : ces agents
+n'écrivent qu'en dernière action ; il faut leur pré-identifier les sources, leur interdire la
+relecture des gros fichiers, et borner leurs requêtes.
+
+## Réserves conservées, et angles morts qui commandent le prochain passage
+
+- **La couche francophone n'a pas été cherchée** — manque le plus net, à combler en priorité
+  (Persée, HAL, Cairn, OpenEdition Books, theses.fr : gestion industrielle, productique, génie
+  industriel).
+- **Le legs des deux voisins est tout entier non ouvert** : trois rapports DoD de `cybernetics`
+  (`DTIC_AD1046519`, `DTIC_ADA371943`, `DTIC_ADA341017`, items `dticarchive` non ouverts) et
+  Delatour et al. de `human-factors` (notices HAL `hal-02271544`/`hal-02953423` sans fichier).
+- **L'identité bibliographique exacte des candidats 3 et 4 (HMMS, AD 422810) reste à établir**
+  avant toute fiche : une référence qui ne résout pas n'existe pas.
+- **Les grandes littératures du champ n'ont pas été vérifiées en accès** : files d'attente
+  (Erlang, Little), quantité économique de commande (Harris), flux tiré, théorie des contraintes.
+  Ni candidates ni rejetées : pas encore instruites.
+- **Les trois domaines fermés** ont reçu leur requête ciblée obligatoire, sans candidat vérifié :
+  Taylor/Braverman repérés (accès non vérifié) pour `sociology-of-work` ; littérature dispersée
+  sans texte primaire pour `work-psychology` ; Schweitzer & Cachon 2000 repéré mais paywallé pour
+  `behavioral-economics`. Trois repérages, aucun « vide » établi.
 
 # 0. Science de la décision — lot d'ouverture du 23 août 2026, publié
 
