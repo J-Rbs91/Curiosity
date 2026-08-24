@@ -2,68 +2,99 @@ import { dayKey } from "@/domain/concepts/next-card";
 import { getProgressService } from "@/services/progress";
 
 /**
- * « La carte du jour a-t-elle été découverte ? » — la question, et le seul endroit où elle
- * se pose.
+ * Le statut « carte du jour découverte » reste stocké dans la progression web.
  *
- * Le rappel de l'icône ne dépend que de trois choses : la date du jour, l'heure locale, et
- * cette réponse-ci. Les deux premières sont dans `src/domain/reminder/daily-urgency.ts` ;
- * celle-ci est ici, avec la comparaison au jour civil qu'elle suppose — comparaison faite à
- * chaque lecture plutôt qu'une fois pour toutes, ce qui la rend juste après une nuit, un
- * redémarrage ou un changement de fuseau sans qu'aucun réveil de minuit n'ait à l'y remettre.
- *
- * **Découverte, et non tirée.** Le tirage enregistre la carte du jour au montage de l'écran
- * d'Aujourd'hui, seuil compris ; ce module n'est notifié que lorsque la carte s'affiche
- * réellement. C'est la différence entre ouvrir l'application et ouvrir la carte, et c'est
- * exactement ce que le rappel existe pour distinguer.
- *
- * L'annonce suit le motif de `app-entry.ts` : un abonnement, parce que découvrir la carte et
- * peindre l'icône se passent dans deux composants qui ne se connaissent pas — l'un est un
- * écran, l'autre vit dans la coque et survit à sa navigation.
+ * Android a cependant besoin de connaître ce seul fait alors que le WebView est gelé ou fermé.
+ * On lui en expose donc une projection minimale dans un cookie local au conteneur Capacitor :
+ * uniquement le jour civil découvert (AAAA-MM-JJ). Ce marqueur n'est jamais la source de vérité
+ * côté web ; il est réparé à chaque lecture à partir de `ProgressService`.
  */
+const NATIVE_DISCOVERY_COOKIE = "curiosity_daily_discovered";
+const NATIVE_DISCOVERY_MAX_AGE_SECONDS = 3 * 24 * 60 * 60;
 
 const listeners = new Set<() => void>();
+
+type CapacitorWindow = Window & {
+  Capacitor?: {
+    getPlatform?: () => string;
+  };
+};
+
+function isNativeAndroid(): boolean {
+  if (typeof window === "undefined") return false;
+  return (window as CapacitorWindow).Capacitor?.getPlatform?.() === "android";
+}
+
+function writeNativeDiscoveryMarker(day: string | null): void {
+  if (typeof document === "undefined" || !isNativeAndroid()) return;
+
+  if (day) {
+    document.cookie = [
+      `${NATIVE_DISCOVERY_COOKIE}=${day}`,
+      "Path=/",
+      `Max-Age=${NATIVE_DISCOVERY_MAX_AGE_SECONDS}`,
+      "SameSite=Lax",
+    ].join("; ");
+    return;
+  }
+
+  document.cookie = [
+    `${NATIVE_DISCOVERY_COOKIE}=`,
+    "Path=/",
+    "Max-Age=0",
+    "SameSite=Lax",
+  ].join("; ");
+}
 
 /** La carte du jour est-elle déjà découverte, à cet instant ? */
 export function isDailyCardDiscovered(now: Date = new Date()): boolean {
   if (typeof window === "undefined") return false;
-  return getProgressService().hasDiscovered(dayKey(now));
+
+  const today = dayKey(now);
+  const discovered = getProgressService().hasDiscovered(today);
+
+  // Projection idempotente vers Android. Elle efface aussi un marqueur de la veille qui
+  // aurait survécu au redémarrage du WebView.
+  writeNativeDiscoveryMarker(discovered ? today : null);
+  return discovered;
 }
 
 /**
  * Signale que la carte du jour vient de s'afficher.
  *
- * Appelée à chaque rendu de la carte, et c'est voulu : l'écriture est idempotente côté
- * service, et l'annonce n'a lieu que si l'état a réellement changé. Un appelant n'a donc
- * pas à savoir s'il est le premier de la journée — savoir cela serait un état de plus à
- * tenir juste, dans un composant qui se démonte à chaque changement d'onglet.
+ * Le tirage ne suffit pas : la découverte n'est vraie qu'après franchissement du seuil et
+ * affichage effectif de la carte. Les appels répétés restent idempotents.
  */
 export function markDailyCardDiscovered(now: Date = new Date()): void {
   if (typeof window === "undefined") return;
+
   const service = getProgressService();
   const today = dayKey(now);
-  if (service.hasDiscovered(today)) return;
+
+  if (service.hasDiscovered(today)) {
+    writeNativeDiscoveryMarker(today);
+    return;
+  }
 
   service.markDailyDiscovered(today);
-  // L'écriture peut n'avoir rien fait — aucune carte du jour enregistrée. On n'annonce que
-  // ce qui a effectivement changé, faute de quoi l'icône se repeindrait pour rien.
-  if (service.hasDiscovered(today)) announce();
+  if (!service.hasDiscovered(today)) return;
+
+  writeNativeDiscoveryMarker(today);
+  announce();
 }
 
 /**
- * Le libellé du seuil, et ce qu'il change.
+ * À appeler lorsqu'une action utilisateur efface la progression.
  *
- * Le seuil se franchit à chaque ouverture, mais on ne franchit pas deux fois la même
- * chose : la première fois de la journée, on va découvrir une carte qu'on n'a pas lue ;
- * les suivantes, on va relire celle du matin. Le bouton disait « Concept du jour » dans
- * les deux cas, et promettait donc à la seconde ouverture une découverte qui n'aurait pas
- * lieu — l'écart entre ce qui est annoncé et ce qui arrive est précisément ce que le seuil
- * existe pour éviter.
- *
- * Le libellé se déduit du seul statut de découverte, sans mémoire propre : la même
- * comparaison de jours civils qui éteint le rappel de l'icône décide ici du mot, si bien
- * que le passage de minuit rend « Concept du jour » sans qu'aucune remise à zéro n'ait à
- * l'y remettre.
+ * L'historique web reste la source de vérité ; on retire simplement sa projection native afin
+ * qu'Android puisse reprendre immédiatement le palier correspondant à l'heure courante.
  */
+export function resetDailyDiscoverySignal(): void {
+  writeNativeDiscoveryMarker(null);
+  announce();
+}
+
+/** Le libellé du seuil selon qu'il s'agit d'une découverte ou d'une relecture. */
 export function dailyThresholdLabel(discovered: boolean): string {
   return discovered ? "Revoir le concept du jour" : "Concept du jour";
 }
@@ -72,7 +103,7 @@ function announce(): void {
   for (const listener of [...listeners]) listener();
 }
 
-/** S'abonner aux découvertes. Rend la fonction de désabonnement. */
+/** S'abonner aux changements du statut de découverte. Rend la fonction de désabonnement. */
 export function onDailyDiscovery(listener: () => void): () => void {
   listeners.add(listener);
   return () => {
