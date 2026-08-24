@@ -1,6 +1,6 @@
 # Périmètre du corpus
 
-## Sept domaines ouverts sur onze
+## Huit domaines ouverts sur onze
 
 L'application couvre **quatre familles et onze domaines**, déclarés dans
 [`src/content/taxonomy.ts`](../src/content/taxonomy.ts). Déclarer un domaine et l'instruire
@@ -9,8 +9,9 @@ admise parce qu'un domaine existe dans la taxonomie.
 
 > **Les périmètres d'instruction ouverts sont `organizational-sociology`,
 > `measurement-theory`, `activity-ergonomics`, `human-factors`, `cybernetics`,
-> `systems-thinking` et `decision-science`.** Les quatre autres domaines sont déclarés dans
-> la taxonomie et restent fermés à l'instruction tant
+> `systems-thinking`, `decision-science` et `operations-management`.** Les trois autres
+> domaines — `sociology-of-work`, `work-psychology` et `behavioral-economics` — sont déclarés
+> dans la taxonomie et restent fermés à l'instruction tant
 > qu'une décision explicite ne les ouvre pas — décision qui s'inscrit dans ce fichier, sous la forme d'une
 > section de périmètre comme celles qui suivent.
 
@@ -55,7 +56,10 @@ l'activité nomme autrement. La règle est l'**objet du travail cité**, pas sa 
   application → cybernétique ;
 - le concept porte sur **le comportement qu'une structure de boucles engendre dans le
   temps** — contre-intuition, dépassement, effet de levier — ou sur le modèle qui permet de
-  le voir → systems thinking.
+  le voir → systems thinking ;
+- le concept porte sur **ce que rend un système qui produit** — sa capacité, sa file, son
+  stock, son délai, la variabilité qui les travaille — et sur ce qu'on y dimensionne ou
+  arbitre → operations management.
 
 **Un concept déjà instruit ne se réinstruit pas dans un autre domaine.** Une carte a un
 identifiant unique ; deux domaines ne peuvent pas se partager le même concept, et le
@@ -1224,6 +1228,271 @@ La règle d'accès ne change pas :
 > **Aucun agent ne contourne un contrôle d'accès.** Un texte qu'on ne peut pas ouvrir
 > légitimement est un texte qu'on n'a pas ouvert : on le dit, et on ne conclut pas au
 > verbatim.
+
+## Thèmes
+
+**Aucun thème déclaré à l'ouverture.** Ils se déclarent après le contrôle aveugle des cartes du
+premier lot, et non après leur rédaction ni d'après la proposition de la cartographie. Un thème
+sans carte validée ne se déclare pas : le dépôt en porte déjà deux qui affichent une page vide,
+et c'est deux de trop.
+
+---
+
+# Domaine ouvert — `operations-management`
+
+Ouvert le 24 août 2026. Huitième domaine instruit, et le **troisième et dernier de la famille
+« Comprendre la production et les systèmes »**, que la cybernétique puis le systems thinking
+avaient ouverte.
+
+**Ce domaine ne repart pas de zéro, et son legs est le mieux qualifié des quatre restants.**
+Deux cartographies lui ont consigné des textes avec leur état d'accès constaté :
+
+- [`corpus/map/cybernetics.scouting.md`](map/cybernetics.scouting.md) lui consigne **trois
+  rapports du Department of Defense appliquant la loi de la variété requise à l'acquisition de
+  systèmes d'armes** — `DTIC_AD1046519` (2017), `DTIC_ADA371943` (1999), `DTIC_ADA341017`
+  (1997), mirés sur Internet Archive en collection `dticarchive`. **État d'accès : items
+  publics, restriction non vérifiée individuellement, non ouverts.** Le motif de frontière est
+  écrit : l'objet y est le dimensionnement d'un dispositif, pas le principe ;
+- [`corpus/map/human-factors.scouting.md`](map/human-factors.scouting.md) lui consigne
+  **Delatour, Laclemence, Calcei & Mazri (2014/2015)**, sur le modèle canonique d'un système
+  de gestion de la sécurité industrielle, rangé ici parce que son objet est le système et non
+  l'humain dans le système. **État d'accès constaté et négatif** : deux notices HAL
+  (`hal-02271544`, `hal-02953423`), **aucune ne porte de fichier déposé ni de DOI** — notice
+  seule, texte non atteignable par cette voie. Ce legs-là est déjà à moitié dépensé, et c'est
+  ce qui le rend utile : il dit où ne pas retourner.
+
+**À quoi s'ajoute une voie d'accès, et elle vaut ici plus que pour tout autre domaine.** Le lot
+du 23 août a établi que la collection `dticarchive` d'Internet Archive sert sans restriction des
+rapports techniques ONR, ARPA et RAND dont la publication en revue est fermée ; deux cartes de
+`decision-science` en viennent. Les trois rapports légués relèvent exactement de ce fonds, et
+la recherche opérationnelle d'après-guerre — dont ce domaine hérite pour une large part — s'est
+écrite dans ce type de littérature grise avant de passer en revue.
+
+**Deux cartographies se sont en revanche déclarées sans rien pour lui, et les deux qualifient
+leur propre silence.** `systems-thinking` et `decision-science` écrivent toutes deux que leur
+balayage n'a rien cherché de ciblé vers ce domaine : **c'est un vide de méthode, pas un
+résultat sur le champ.** Ce silence ne se lit pas comme le vide déclaré qu'ont su établir
+`human-factors` et `cybernetics` après un balayage entier.
+
+Ce legs ne dispense d'aucune étape : le périmètre s'écrit ici avant que le balayage reprenne,
+et il dispense seulement de chercher ce qui a déjà été trouvé.
+
+## Le périmètre est la discipline
+
+> **Operations Management** — l'étude du **comportement d'un système qui produit** : comment
+> une capacité, une file, un stock et un délai se déterminent les uns les autres, ce que la
+> variabilité leur fait, et par quelles décisions de conception ou de pilotage on agit dessus.
+
+Le domaine ne porte pas sur le principe par lequel un système corrige son écart, qui est en
+cybernétique ; ni sur le comportement dans le temps qu'une structure de boucles engendre, qui
+est en systems thinking ; ni sur l'opération de choix de celui qui arbitre, qui est en science
+de la décision. Il porte sur **le système de production ou de service comme objet de gestion** :
+ce qu'il rend, à quel délai, à quel niveau d'encours, et ce qui arrive à ces trois grandeurs
+quand la demande, la durée des opérations ou la disponibilité des ressources ne sont pas
+constantes.
+
+Le champ a une particularité qu'il faut tenir dès l'ouverture, et elle est symétrique de celle
+de `decision-science` : **il est écrit par deux traditions qui ne se citent pas.** Une souche
+d'ingénierie et de recherche opérationnelle, mathématisée, qui modélise files, stocks et
+ordonnancements et cherche des propriétés démontrables ; une souche de gestion de la production
+et de terrain, qui part d'ateliers réels et énonce des principes de conduite. Un balayage qui
+ne rapporterait que la première rendrait un domaine sans ses praticiens, et l'inverse un
+domaine sans ses résultats. **La couche francophone en ajoute une troisième**, la gestion
+industrielle et l'école de la productique, qui ne remontera d'aucune base anglophone.
+
+## Points d'entrée
+
+Aucun auteur n'est retenu d'avance, et ce domaine en a plus besoin que les précédents : ses
+noms les plus disponibles de mémoire sont des **noms de méthodes commerciales** — des sigles,
+des systèmes de production baptisés, des programmes de certification — dont la littérature de
+conseil a produit plus de pages que la recherche. Ce qui se balaie, ce sont des
+**littératures** :
+
+- la théorie des files d'attente appliquée à la production et au service : ce que l'attente
+  coûte, et ce qui la fait croître avant que la capacité soit saturée ;
+- la relation entre encours, débit et délai, et les lois qui la contraignent quel que soit le
+  détail de l'atelier ;
+- la variabilité comme grandeur de gestion : d'où elle vient, comment elle se propage le long
+  d'une chaîne, et ce qu'on lui oppose — stock, capacité, ou temps ;
+- les stocks et leur dimensionnement : ce qu'un lot économique suppose, et ce qui arrive quand
+  ces suppositions tombent ;
+- l'ordonnancement et l'affectation comme problèmes de décision structurés, quand le texte
+  porte sur la structure du problème et non sur la performance d'un algorithme ;
+- les systèmes de production à flux tiré et la conduite par le juste-à-temps, pris par le
+  mécanisme exposé et jamais par le récit d'entreprise ;
+- la contrainte et le goulot comme principe de conduite d'un système entier ;
+- la qualité, la fiabilité et la maintenance **au sens de l'ingénieur** — maîtrise statistique
+  d'un procédé, sûreté de fonctionnement, disponibilité — que trois périmètres ouverts ont
+  explicitement renvoyés ici ;
+- la conception des systèmes de service, où le client est dans le système et où la capacité ne
+  se stocke pas ;
+- **la couche francophone, cherchée en parallèle et non après coup** : gestion industrielle,
+  productique, génie industriel, logistique. Persée, HAL, Cairn, OpenEdition Books, theses.fr.
+
+## Le test d'entrée
+
+La question n'est pas « est-ce de l'*operations management* ? » : l'étiquette est un intitulé
+d'enseignement qui recouvre des travaux de mathématiciens, d'ingénieurs, d'économistes et de
+gestionnaires qui ne se reconnaissaient pas dans un même champ. La question est :
+
+> **Ce travail éclaire-t-il le comportement d'un système qui produit, sous l'angle de ce
+> qu'on peut y concevoir ou y piloter ?**
+
+Trois conditions cumulatives :
+
+1. il porte sur **le système de production ou de service lui-même** — sa capacité, ses files,
+   ses stocks, ses délais, sa variabilité, ou la décision de conception ou de conduite qui les
+   fixe — et non sur un principe général dont un atelier ne serait que l'illustration ;
+2. il est **rattachable à un auteur identifié**, et cette attribution est documentable ;
+3. il est **enseignable** : un lecteur non spécialiste doit pouvoir reconnaître le mécanisme
+   décrit dans une file d'attente, un délai ou un encours qu'il a lui-même sous les yeux.
+
+## Hors périmètre — rejet direct
+
+- **Le mot « flux », « processus » ou « performance » employé sans mécanisme identifiable.**
+  C'est le rejet le plus fréquent à prévoir, et il se tranche sans état d'âme :
+  `corpus/rejected/`, `rejection_reason: "OUT_OF_SCOPE"`, jamais une mise en attente. Un
+  candidat gris non tranché revient toujours par une autre porte.
+- **La littérature de méthode et de certification** : manuels de déploiement, guides de
+  démarche, référentiels, contenus de formation à un système de production baptisé. Un texte
+  n'entre que s'il expose un mécanisme et l'établit ; il n'entre jamais par la notoriété de la
+  méthode qu'il sert.
+- **Le récit d'entreprise et l'étude de cas promotionnelle**, y compris écrits par un
+  praticien du champ : l'objet y est la réussite d'une firme, pas le comportement d'un système.
+- **La recherche opérationnelle prise comme branche des mathématiques** : preuves de
+  complexité, comparaison de performances d'algorithmes, théorèmes d'optimisation. Elle entre
+  par ce qu'elle fait comprendre d'un système qui produit, jamais par ses résultats propres.
+- **La chaîne logistique comme objet économique ou géopolitique** : coûts de transaction,
+  délocalisation, souveraineté industrielle. L'objet y est le marché ou l'État, pas le système
+  de production.
+- **Le *lean* comme doctrine de management** appliqué à des activités qui ne produisent rien
+  de dénombrable. C'est un fait de réception, considérable, et ce n'est pas un critère
+  d'entrée.
+
+## Les frontières, tranchées à l'avance
+
+**Quatre des six frontières de ce domaine ont déjà été tranchées depuis l'autre côté**, ce
+qu'aucun domaine ouvert avant lui n'avait connu. Elles sont reprises telles quelles, et non
+rediscutées : un périmètre qui rouvrirait une frontière que son voisin a fermée rendrait
+inutile le travail que ce voisin a fait pour lui.
+
+### Avec `cybernetics`, ouvert — la frontière décisive, et déjà tranchée depuis l'autre côté
+
+`cybernetics` écrit : « Files d'attente, capacité, stocks et pilotage de production » relèvent
+d'ici, **en angle mort et jamais en rejet**. Et il ajoute l'avertissement qui fait de cette
+frontière la plus coûteuse des six : **« la recherche opérationnelle demande ici une attention
+particulière — plusieurs auteurs du champ en viennent, et c'est le texte qui tranche, pas le
+parcours de celui qui l'a écrit. »**
+
+La coupure retenue, et elle ne se rouvre pas :
+
+- le texte expose **le mécanisme par lequel un système corrige son écart et se maintient** — la
+  boucle, la variété, la viabilité, pris comme principe → `cybernetics` ;
+- le texte expose **ce que rend un système qui produit** — combien, en combien de temps, à quel
+  encours — et ce qu'on y décide → ici.
+
+Un même auteur peut tomber des deux côtés selon le texte, et c'est précisément ce que
+l'avertissement annonce. Les trois rapports du Department of Defense qui sont son legs en sont
+l'exemple : ils appliquent la loi d'Ashby, et ils sont ici parce que leur objet est le
+dimensionnement d'un dispositif d'acquisition, pas la loi.
+
+### Avec `systems-thinking`, ouvert — déjà tranchée depuis l'autre côté
+
+`systems-thinking` écrit que relèvent d'ici « la conduite des flux, des stocks et des files
+comme **problème de gestion** — dimensionner, ordonnancer, arbitrer un coût ». La coupure est
+donc celle-ci :
+
+- le texte porte sur **le comportement qu'une structure de boucles engendre dans le temps** —
+  contre-intuition, dépassement, effet de levier — ou sur le modèle qui permet de le voir →
+  `systems-thinking` ;
+- le texte porte sur **une grandeur qu'on dimensionne ou qu'on arbitre** → ici.
+
+Le cas limite est connu d'avance et il sera fréquent : la dynamique des systèmes s'est
+constituée sur des modèles de chaînes de distribution, et ses textes fondateurs parlent de
+stocks, de délais et de commandes. **Le partage ne se fait pas sur le vocabulaire mais sur la
+question posée** : « pourquoi le système se comporte-t-il ainsi ? » est chez le voisin ;
+« combien faut-il en tenir ? » est ici.
+
+### Avec `human-factors`, ouvert — déjà tranchée depuis l'autre côté
+
+`human-factors` écrit : « Fiabilité industrielle, maintenance, qualité, sûreté de
+fonctionnement au sens de l'ingénieur : angles morts. **Ici, l'objet est l'humain dans le
+système, pas le système.** » Ces quatre littératures relèvent donc d'ici, et elles y sont
+inscrites en points d'entrée. La réciproque tient sans reste : ce que l'opérateur perçoit,
+comprend, anticipe ou manque reste là-bas, quel que soit l'atelier où il se tient.
+
+### Avec `decision-science`, ouvert — déjà tranchée depuis l'autre côté
+
+`decision-science` écrit que relèvent d'ici « l'ordonnancement, le dimensionnement et
+l'arbitrage de coût comme **problème de gestion**, quand la méthode vise à produire un plan et
+non à éclairer un choix ». La coupure est donc dans la finalité de la méthode, pas dans son
+appareil : un modèle qui rend un plan est ici ; un modèle qui rend un arbitrage instruit à
+celui qui décide est là-bas. Une méthode multicritère reste chez le voisin même appliquée à un
+atelier.
+
+### Avec `activity-ergonomics`, ouvert
+
+Un poste, une cadence et un temps alloué se décrivent des deux côtés, et le partage est net :
+**ce que le système impose** — la cadence, le lot, l'attente que la file produit — est ici ;
+**ce que quelqu'un fait réellement pour tenir la tâche malgré cela**, et ce que cela lui coûte,
+est là-bas. Un texte sur le temps de cycle est ici ; le même atelier vu par la régulation que
+l'opératrice y opère est chez le voisin. `organizational-sociology` prend, lui, ce qui porte
+sur la règle, le pouvoir ou la structure de l'atelier plutôt que sur son débit.
+
+### Avec `measurement-theory`, ouvert
+
+Un indicateur de production traverse les deux. La règle du corpus s'applique sans amendement :
+le concept porte sur **l'indicateur lui-même** — ce qu'il saisit, ce qu'il omet, ce que sa
+seule existence provoque → `measurement-theory` ; le concept porte sur **la grandeur mesurée
+et son comportement** → ici. Le taux de rendement d'un équipement pris comme grandeur physique
+d'un atelier est ici ; le même taux pris comme cible qui déforme la conduite est chez le
+voisin, où `mesure-devenue-cible` et `loi-de-campbell` sont déjà instruites.
+
+### Avec trois domaines fermés : `sociology-of-work`, `work-psychology`, `behavioral-economics`
+
+Trois domaines déclarés que ce champ touche et qui ne sont pas ouverts. Un candidat mal placé
+se **consigne en angle mort de la cartographie**, jamais en rejet : son objet n'est pas hors
+sujet, il relève d'un voisin fermé. C'est la règle qui a doté ce domaine de son propre stock
+d'entrée, et elle se rend ici — **avec une obligation que ce passage doit à ses trois
+successeurs** : ces trois domaines sont les derniers, ils n'ont aujourd'hui aucun stock, et
+deux cartographies ont déjà avoué n'avoir rien cherché pour eux. **Ce balayage-ci doit les
+chercher de façon ciblée**, et écrire ce qu'il trouve ou ce qu'il a vérifié vide.
+
+- vers `sociology-of-work` : la division du travail, la qualification et le conflit dans
+  l'atelier pris comme **rapport social** — l'organisation scientifique du travail vue par ce
+  qu'elle fait au métier, et non par le temps de cycle qu'elle règle ;
+- vers `work-psychology` : la cadence, la répétitivité ou la charge prises comme **fait
+  psychique** — monotonie, satisfaction, stress ;
+- vers `behavioral-economics` : le comportement de commande et de stockage pris comme **fait
+  économique**, avec ses conséquences agrégées sur un marché.
+
+## L'accès — ce que ce domaine impose
+
+Trois constats à tenir pour acquis avant le premier balayage, tous hérités et deux d'entre eux
+déjà vérifiés par les cartographies voisines :
+
+- **la littérature grise est ici une voie principale, et non un recours.** La collection
+  `dticarchive` d'Internet Archive sert sans restriction des rapports ONR, ARPA et RAND dont la
+  publication en revue est fermée ; c'est la voie d'accès la plus rentable identifiée depuis
+  OpenEdition Books, et la recherche opérationnelle d'après-guerre s'y est écrite. Un `is_oa:
+  false` d'Unpaywall ne clôt donc rien : **la recherche de rapport technique fait partie du
+  balayage, pas de la reprise** ;
+- **les textes vivants du champ sont chez des éditeurs actifs, et ses manuels sont des produits
+  commerciaux toujours exploités.** L'ancienneté n'ouvre rien par elle-même : un texte présumé
+  libre se vérifie sur la source qui le sert, sinon il est fermé. **Une autorisation d'ayant
+  droit se constate ; elle ne se déduit ni de l'âge du texte ni de l'absence de restriction
+  d'emprunt** ;
+- **une réédition n'est pas l'original, et ce champ réédite plus que les autres** : ses textes
+  fondateurs circulent en manuels successivement révisés, en traductions et en chapitres de
+  recueils. Un verbatim se localise sur l'exemplaire réellement ouvert, jamais sur l'édition
+  d'origine qu'on n'a pas vue.
+
+La règle d'accès ne change pas :
+
+> **Aucun agent ne contourne un contrôle d'accès.** Face à un défi anti-robot, à un mur de
+> connexion, à un prêt numérique ou à une restriction d'emprunt, on essaie une autre voie
+> légitime. **Un texte qu'on ne peut pas ouvrir légitimement est un texte qu'on n'a pas
+> ouvert** : on le dit, et on ne conclut pas au verbatim.
 
 ## Thèmes
 
