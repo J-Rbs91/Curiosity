@@ -14,13 +14,13 @@ public class MainActivity extends BridgeActivity {
     }
 
     @Override
-    protected void onResume() {
+    public void onResume() {
         super.onResume();
         DynamicIconManager.sync(this);
     }
 
     @Override
-    protected void onPause() {
+    public void onPause() {
         try {
             CookieManager.getInstance().flush();
         } catch (RuntimeException ignored) {
