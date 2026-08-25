@@ -7,20 +7,38 @@ import {
   isDailyCardDiscovered,
   markDailyCardDiscovered,
   onDailyDiscovery,
+  resetDailyDiscoverySignal,
 } from "./daily-discovery";
 
 const AUJOURD_HUI = new Date(2026, 7, 15, 14, 30);
 const DEMAIN = new Date(2026, 7, 16, 9, 0);
+const NATIVE_COOKIE = "curiosity_daily_discovered";
 
-/** Poser une carte du jour, comme le fait le tirage de l'écran d'Aujourd'hui. */
 function tirer(jour: Date, conceptId = "bureaucratie") {
   getProgressService().setDaily(dayKey(jour), conceptId);
+}
+
+function activerAndroidNatif() {
+  Object.defineProperty(window, "Capacitor", {
+    configurable: true,
+    value: { getPlatform: () => "android" },
+  });
+}
+
+function desactiverAndroidNatif() {
+  Reflect.deleteProperty(window, "Capacitor");
+}
+
+function effacerCookie() {
+  document.cookie = `${NATIVE_COOKIE}=; Path=/; Max-Age=0`;
 }
 
 describe("le statut « concept du jour découvert »", () => {
   beforeEach(() => {
     window.localStorage.clear();
     getProgressService().reset();
+    desactiverAndroidNatif();
+    effacerCookie();
   });
 
   it("est faux tant que la carte n'a pas été ouverte", () => {
@@ -34,12 +52,7 @@ describe("le statut « concept du jour découvert »", () => {
     expect(isDailyCardDiscovered(AUJOURD_HUI)).toBe(true);
   });
 
-  /*
-   * Le cœur de la règle de minuit : le statut est porté par la carte du jour, donc il cesse
-   * de valoir avec elle. Aucun réveil, aucune purge programmée — juste une comparaison de
-   * jours civils, qui reste juste après une nuit, un redémarrage ou un changement de fuseau.
-   */
-  it("ne vaut plus le lendemain, sans qu'aucune remise à zéro n'ait lieu", () => {
+  it("ne vaut plus le lendemain, sans remise à zéro programmée", () => {
     tirer(AUJOURD_HUI);
     markDailyCardDiscovered(AUJOURD_HUI);
     expect(isDailyCardDiscovered(DEMAIN)).toBe(false);
@@ -52,11 +65,7 @@ describe("le statut « concept du jour découvert »", () => {
     expect(isDailyCardDiscovered(DEMAIN)).toBe(false);
   });
 
-  /*
-   * Le rappel ne doit dépendre en rien du nombre d'ouvertures : découvrir la carte dix fois
-   * n'écrit qu'une fois, et n'annonce qu'une fois.
-   */
-  it("n'écrit et n'annonce qu'une fois par jour, quel que soit le nombre d'ouvertures", () => {
+  it("n'écrit et n'annonce qu'une fois par jour", () => {
     tirer(AUJOURD_HUI);
     const temoin = vi.fn();
     const off = onDailyDiscovery(temoin);
@@ -92,10 +101,6 @@ describe("le statut « concept du jour découvert »", () => {
     expect(temoin).not.toHaveBeenCalled();
   });
 
-  /*
-   * L'oubli demandé depuis les Réglages efface aussi le statut : le lecteur repart d'une
-   * mémoire vide, et le rappel doit repartir avec elle.
-   */
   it("s'efface avec la progression", () => {
     tirer(AUJOURD_HUI);
     markDailyCardDiscovered(AUJOURD_HUI);
@@ -104,10 +109,58 @@ describe("le statut « concept du jour découvert »", () => {
   });
 });
 
+describe("la projection vers le shell Android", () => {
+  beforeEach(() => {
+    window.localStorage.clear();
+    getProgressService().reset();
+    activerAndroidNatif();
+    effacerCookie();
+  });
+
+  it("écrit uniquement le jour découvert", () => {
+    tirer(AUJOURD_HUI);
+    markDailyCardDiscovered(AUJOURD_HUI);
+
+    expect(document.cookie).toContain(
+      `${NATIVE_COOKIE}=${dayKey(AUJOURD_HUI)}`,
+    );
+  });
+
+  it("répare un marqueur périmé à la lecture", () => {
+    document.cookie = `${NATIVE_COOKIE}=${dayKey(AUJOURD_HUI)}; Path=/`;
+    expect(document.cookie).toContain(NATIVE_COOKIE);
+
+    expect(isDailyCardDiscovered(DEMAIN)).toBe(false);
+    expect(document.cookie).not.toContain(NATIVE_COOKIE);
+  });
+
+  it("retire le marqueur et annonce après un effacement utilisateur", () => {
+    tirer(AUJOURD_HUI);
+    markDailyCardDiscovered(AUJOURD_HUI);
+
+    const temoin = vi.fn();
+    const off = onDailyDiscovery(temoin);
+    resetDailyDiscoverySignal();
+
+    expect(document.cookie).not.toContain(NATIVE_COOKIE);
+    expect(temoin).toHaveBeenCalledTimes(1);
+    off();
+  });
+
+  it("ne crée aucun cookie dans la PWA web", () => {
+    desactiverAndroidNatif();
+    tirer(AUJOURD_HUI);
+    markDailyCardDiscovered(AUJOURD_HUI);
+    expect(document.cookie).not.toContain(NATIVE_COOKIE);
+  });
+});
+
 describe("le libellé du seuil", () => {
   beforeEach(() => {
     window.localStorage.clear();
     getProgressService().reset();
+    desactiverAndroidNatif();
+    effacerCookie();
   });
 
   it("annonce la découverte tant que la carte du jour n'a pas été ouverte", () => {
@@ -115,11 +168,6 @@ describe("le libellé du seuil", () => {
     expect(dailyThresholdLabel(isDailyCardDiscovered(AUJOURD_HUI))).toBe("Concept du jour");
   });
 
-  /*
-   * Le cas visé : rouvrir l'application dans la journée après avoir lu la carte. Le seuil
-   * se réaffiche — c'est la règle de l'ouverture, elle ne change pas — mais ce qu'il promet
-   * est une relecture, et il le dit.
-   */
   it("annonce la relecture quand la carte du jour a déjà été découverte", () => {
     tirer(AUJOURD_HUI);
     markDailyCardDiscovered(AUJOURD_HUI);
@@ -128,10 +176,6 @@ describe("le libellé du seuil", () => {
     );
   });
 
-  /*
-   * Et il repart de lui-même au passage de minuit : le statut est porté par la carte du
-   * jour, donc la relecture d'hier ne déteint pas sur la découverte d'aujourd'hui.
-   */
   it("redevient une découverte le lendemain", () => {
     tirer(AUJOURD_HUI);
     markDailyCardDiscovered(AUJOURD_HUI);

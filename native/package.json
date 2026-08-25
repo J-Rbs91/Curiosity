@@ -1,0 +1,17 @@
+{
+  "name": "curiosity-native",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "sync:android": "node scripts/sync-android.mjs",
+    "open:android": "cap open android",
+    "run:android": "npm run sync:android && cap run android"
+  },
+  "dependencies": {
+    "@capacitor/android": "8.5.0",
+    "@capacitor/core": "8.5.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.5.0"
+  }
+}

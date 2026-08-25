@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/native/node_modules
 /.pnp
 .pnp.*
 .yarn/*
@@ -16,6 +17,9 @@
 # next.js
 /.next/
 /out/
+
+# Capacitor Android : généré reproductiblement par `npm run android:sync`
+/native/android/
 
 # production
 /build

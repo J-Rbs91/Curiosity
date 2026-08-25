@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { getProgressService } from "@/services/progress";
+import { resetDailyDiscoverySignal } from "@/lib/daily-discovery";
 import { Screen } from "@/components/motion/Screen";
 import { BackLink } from "@/components/ui/BackLink";
 import { climbTo } from "@/components/navigation/climb";
@@ -12,18 +13,8 @@ import { ThemeChoice } from "@/components/ui/ThemeChoice";
 /**
  * Deux choses, et la frontière entre elles est ce qui justifie que cet écran existe.
  *
- * **Ce qu'un lecteur doit pouvoir faire de ses données** — les effacer. Retirer cette action
- * l'enfermerait dans un historique qu'il ne pourrait plus défaire.
- *
- * **La condition dans laquelle il lit** — le thème. Les réglages retirés au §5 de
- * `docs/ux-direction.md` réglaient tous le *contenu* : niveau d'explication, durée de
- * lecture. Ils ont été retirés parce que la difficulté d'un concept se lit dans son texte,
- * pas dans une préférence choisie une fois pour toutes. Un thème ne règle rien du contenu ;
- * il règle la lumière dans laquelle on le lit, et c'est la seule chose que le lecteur sait
- * mieux que nous. Ce n'est donc pas la réouverture de la porte que le §5 a fermée.
- *
- * L'ordre suit la fréquence : on change de thème plus souvent qu'on n'efface son historique,
- * et une action irréversible ne se met pas en tête d'écran.
+ * **Ce qu'un lecteur doit pouvoir faire de ses données** — les effacer.
+ * **La condition dans laquelle il lit** — le thème.
  */
 export default function SettingsPage() {
   const router = useRouter();
@@ -31,12 +22,13 @@ export default function SettingsPage() {
 
   function resetProgress() {
     getProgressService().reset();
+
+    // Le shell Android ne lit pas le localStorage : il reçoit uniquement une projection du
+    // statut « carte du jour découverte ». L'effacement doit donc retirer ce signal au même
+    // instant que la progression, puis prévenir le rappel web.
+    resetDailyDiscoverySignal();
+
     setConfirming(false);
-    /*
-     * Quitter les réglages est une remontée : on dépile plutôt que d'empiler,
-     * sans quoi l'écran d'effacement resterait derrière et le bouton retour du
-     * système y ramènerait après que les données ont été effacées.
-     */
     climbTo(router, "/");
   }
 
@@ -63,8 +55,8 @@ export default function SettingsPage() {
           ) : (
             <div className="enter-rise space-y-4">
               <p className="text-sm leading-relaxed text-ink-soft">
-                Les cartes déjà rencontrées seront oubliées
-                définitivement. Les propositions repartiront de zéro.
+                Les cartes déjà rencontrées seront oubliées définitivement. Les propositions
+                repartiront de zéro.
               </p>
               <div className="flex gap-3">
                 <Button variant="secondary" onClick={() => setConfirming(false)}>
