@@ -1,4 +1,4 @@
-# État du corpus — 24 août 2026
+# État du corpus — 25 août 2026
 
 Écrit sur le disque parce qu'une session a déjà été coupée en cours de route : ce fichier
 existe pour qu'une reprise reparte des fichiers, et non de la mémoire de quelqu'un.
@@ -6,17 +6,15 @@ existe pour qu'une reprise reparte des fichiers, et non de la mémoire de quelqu
 Ce fichier dit ce que le corpus **est**. Ce qui lui **manque**, et par quel bout le prendre,
 est dans [`corpus/RESTE-A-FAIRE.md`](RESTE-A-FAIRE.md).
 
-`npm run corpus:validate` : **75 enregistrements, 74 validés, 0 erreur, 50 avertissements.**
-`npm run corpus:deepen` : **66 approfondissements pour 74 cartes validées.** Fin de sortie :
-les huit cartes de la science de la décision sont toujours sans approfondissement (voir
-plus bas), et c'est le seul écart entre validé et servi.
+`npm run corpus:validate` : **84 enregistrements, 82 validés, 0 erreur, 55 avertissements.**
+`npm run corpus:deepen` : **66 approfondissements pour 82 cartes validées.** Fin de sortie :
+**seize cartes sans approfondissement**, les huit de la science de la décision et les huit de
+l'operations management, et c'est le seul écart entre validé et servi.
 `npm test` : **476 tests, 0 échec.** `npm run lint` et `npm run corpus:build` : sans erreur.
 
-**Sept domaines instruits sur onze déclarés, un huitième ouvert sans carte.** `operations-management`
-a désormais son périmètre (`corpus/perimeter.md`) et sa cartographie
-(`corpus/map/operations-management.scouting.md`) écrits au passage 02 de la routine nocturne,
-mais **aucune carte validée** : `corpus:audit` l'affiche encore « en cours de constitution ».
-Les trois derniers domaines fermés (`sociology-of-work`, `work-psychology`,
+**Huit domaines instruits sur onze déclarés.** `operations-management` a rendu son premier lot le
+25 août, au passage 03 de la routine nocturne, deux nuits après avoir reçu son périmètre et sa
+cartographie. Les trois derniers domaines fermés (`sociology-of-work`, `work-psychology`,
 `behavioral-economics`) n'ont ni périmètre ni cartographie : les ouvrir, c'est refaire l'ordre
 complet, périmètre puis scout puis thèmes puis cartes.
 
@@ -29,23 +27,195 @@ complet, périmètre puis scout puis thèmes puis cartes.
 | Cybernétique | 4 | 12 | 12 |
 | Systems Thinking | 3 | 7 | 7 |
 | Science de la décision | 2 | 8 | **0** |
+| Operations Management | 3 | 8 | **0** |
 
-**Huit cartes validées attendent leur approfondissement**, et ce sont les huit du lot du
-23 août. L'écart s'était refermé le 21 août et il se rouvre ici volontairement : la routine
-nocturne consacre une phase entière aux approfondissements, et une nuit d'ouverture de domaine
-n'en écrit pas. `npm run corpus:deepen` liste ces huit en fin de sortie : **c'est la file de
-travail, et c'est ce que prend la nuit suivante.**
+**Seize cartes validées attendent leur approfondissement**, les huit du 23 août et les huit du
+25. L'écart s'était refermé le 21 août et il se rouvre depuis, volontairement : la routine
+nocturne consacre une phase entière à ce travail, et une nuit d'ouverture de domaine n'en écrit
+pas. `npm run corpus:deepen` les liste en fin de sortie : **c'est la file, et elle fait foi
+contre ce fichier.**
 
 **La famille « Comprendre le pilotage » est complète.** Ses deux domaines, la théorie de la
-mesure et la science de la décision, sont instruits. C'est la première des quatre familles à
-l'être entièrement.
+mesure et la science de la décision, sont instruits.
 
-**La famille « Comprendre la production et les systèmes » a ses trois domaines touchés.**
-Elle était entièrement vide le 20 août. La cybernétique et le systems thinking sont instruits ;
-`operations-management` est ouvert au stade périmètre + cartographie le 24 août, sans carte
-encore. La famille n'est donc pas complète : son dernier domaine attend son premier lot.
+**La famille « Comprendre la production et les systèmes » est complète elle aussi.** Elle était
+entièrement vide le 20 août : la cybernétique le 21, le systems thinking le 22, et
+`operations-management` le 25 après une ouverture en deux temps. **Deux des quatre familles sont
+donc entièrement instruites**, et les trois domaines qui restent appartiennent tous à la même,
+« Comprendre les humains et les organisations ».
 
-# 0bis. Operations Management — ouverture partielle du 24 août 2026 (passage 02), sans carte
+# 0. Operations Management — premier lot du 25 août 2026 (passage 03), publié
+
+Huitième domaine instruit, **troisième et dernier de la famille « Comprendre la production et les
+systèmes »**. Ce lot est le second passage sur ce domaine : le premier, le 24 août, avait écrit le
+périmètre et la cartographie **sans rendre une seule carte**, la chaîne de scouts ayant consommé
+la nuit. Celui-ci a sauté périmètre et scout, comme le passage précédent l'avait prescrit, et a
+instruit directement.
+
+## Les huit cartes
+
+| id | thème | auteur·s | tours |
+|---|---|---|---:|
+| `cause-de-hasard-et-cause-assignable` | Ce qu'un procédé fait varier | Shewhart | 1 |
+| `trois-sigmas-arbitrage-de-cout` | Ce qu'un procédé fait varier | Shewhart | 1 |
+| `regle-de-commande-a-deux-niveaux` | Combien produire, combien en tenir | Arrow, Harris, Marschak | 1 |
+| `penalite-de-rupture` | Combien produire, combien en tenir | Arrow, Harris, Marschak | 1 |
+| `regle-lineaire-de-decision` | Combien produire, combien en tenir | Holt, Modigliani, Simon | 1 |
+| `absorber-les-fluctuations-de-commandes` | Combien produire, combien en tenir | Holt, Modigliani, Simon | 1 |
+| `attente-du-poste-aval` | L'ordre dans lequel les choses passent | Bellman, d'après Johnson | 1 |
+| `fragilite-d-un-ordonnancement-optimal` | L'ordre dans lequel les choses passent | Bellman | 1 |
+
+**Les huit portent une citation, et les huit ont passé le contrôle aveugle en un seul tour**,
+`PASS` sur les quatre questions, sans un renvoi. Aucun lot du corpus n'avait obtenu cela.
+**Le domaine n'a aucune signature féminine et aucune source primaire francophone** : c'est à
+surveiller et à porter au prochain passage, pas à corriger par quota. Les trois candidats
+francophones repérés cette nuit sont atteignables et n'ont pas été lus.
+
+**Une neuvième carte a été instruite, contrôlée, et reçue `PASS`** : `etat-de-controle-statistique`.
+Elle n'est pas publiée, et **le motif est le plafond de volume du lot, pas un défaut**. Elle
+attend en `corpus/candidates/` avec son verdict, et c'est la reprise la moins chère du dépôt.
+
+## Ce que ce lot a payé, et qui resservira
+
+**La leçon opératoire du passage 02 a été appliquée à la lettre, et elle a tenu.** Ce passage
+avait écrit : ces agents accumulent tout en contexte et n'écrivent qu'à leur dernière action ; il
+faut leur pré-identifier les sources, leur interdire la relecture des gros fichiers, borner leurs
+requêtes et exiger l'écriture tôt. **Les cinq agents de la première vague ont tous écrit leur
+fichier dans les deux minutes**, aucun n'a été arrêté, et les quatre lectures primaires ont rendu
+neuf concepts. Là où trois scouts consécutifs avaient consommé une nuit entière, la même chaîne a
+rendu un lot complet. **Une leçon d'atelier écrite au journal a donc valu une nuit de travail**,
+et c'est ce qui justifie le coût de l'écrire.
+
+**Trois des quatre candidats étaient mal décrits par la cartographie, et la pièce a corrigé les
+trois.** Le détail est dans `corpus/map/operations-management.scouting.md`, section « Reprise du
+25 août 2026 », qui fait foi contre les sections antérieures du même fichier :
+
+- le rapport de Bellman est de **1955**, non de 1965 : la cartographie se trompait de dix ans,
+  **et la couche OCR de l'item la trompe encore**, transcrivant « 1965 » là où la couverture
+  imprime « 1955 ». Seule l'image dit vrai ;
+- le rapport du filon HMMS, déclaré « identité à préciser », est l'**O.N.R. Research Memorandum
+  No. 30**, signé **Holt, Modigliani et Simon**, mai 1955. **Muth n'est pas auteur de cette
+  pièce** : il est remercié parmi sept étudiants, et le sigle HMMS est celui du livre de 1960 ;
+- le rapport de stock, connu sous le seul numéro `AD 422810`, est le **papier RAND P-189,
+  « Optimal Inventory Policy », de Kenneth Arrow, Theodore Harris et Jacob Marschak**, révisé le
+  16 novembre 1950.
+
+**Un mur anti-robot a été contourné par la bibliographie, jamais par la technique.** La
+cartographie consignait en angle mort un `om-scout-randp189.html` fermé par un 403 chez RAND.
+C'est le même texte que le rapport de stock ci-dessus. **Le mur n'a pas été franchi ; le texte a
+été atteint par le miroir `dticarchive`**, et l'angle mort se ferme. C'est la troisième fois que
+cette conduite rend, et elle est désormais un réflexe du dépôt : chercher le rapport avant de
+conclure de la fermeture de l'article.
+
+**Un dérivé d'image d'Internet Archive ment par troncature, et deux lecteurs l'ont trouvé
+séparément.** Le rendu `.../page/n<N>_x1600.jpg` **rogne le feuillet à gauche** sur ces items et
+ampute le début de chaque ligne sans que rien ne le signale : sur un des rapports, 3 126 pixels
+rendus pour 4 726 réels, ce qui fait perdre à la page de titre le « O. » de « O. N. R. » et le
+« Ch » de « Charles ». **Le dérivé sans suffixe, `.../page/n<N>.jpg`, rend la page entière.**
+C'est un piège d'accès inédit, et le plus insidieux rencontré jusqu'ici : il ne casse rien, il
+tronque en silence, et un agent qui relit sur ce dérivé croit relire une image.
+
+**Trois attributions ont été corrigées par la lecture, et chacune aurait faussé une carte.**
+
+- **Le lot économique n'est pas d'Arrow, Harris et Marschak**, et leur propre texte le dit p. 9 :
+  « We believe this is, in essence, the solution advanced by R. H. Wilson, formerly of the Bell
+  Telephone Company ». Ce qui leur revient en propre est le traitement de l'incertitude.
+- **Le résultat sur deux postes n'est pas de Bellman**, et son rapport crédite S. Johnson trois
+  fois, jusque dans ses titres de section. La carte le dit en toutes lettres.
+- **Shewhart n'invente pas le terme « assignable »** : il écrit « these causes were called
+  assignable », au passif et au passé, en rapportant une pratique antérieure sans nommer personne.
+
+## La question de droits, tranchée dans deux sens opposés la même nuit
+
+C'est le résultat de méthode du lot, et il ne vient pas d'une consigne : **deux exemplaires sans
+autorisation lisible n'ont pas reçu le même traitement, et le motif de l'écart est écrit.**
+
+**Les trois rapports techniques gardent leur URL.** Aucun des trois items `dticarchive` ne porte
+de champ `rights`, `licenseurl` ni `possible-copyright-status`, et les mentions imprimées sur les
+pièces (« for OTS release », tampon DDC) sont des autorisations administratives de diffusion et
+non des licences d'éditeur. La réserve est portée en clair dans les `notes` des six cartes. Elle
+n'empêche pas la carte, **cette voie étant déjà celle de deux cartes publiées de
+`decision-science`** : le dépôt ne rouvre pas contre lui-même une question qu'il a tranchée.
+
+**Shewhart perd la sienne, et le motif n'est pas le même.** L'exemplaire ouvert appartient à
+`digitallibraryindia` / `JaiGyan`, numérisation de masse dont l'item ne porte aucun champ de
+droits ; sa seule mention, `dc.rights: In Public Domain`, est une auto-déclaration du numériseur
+logée dans un champ descriptif **qui contient par ailleurs deux erreurs bibliographiques avérées**
+(date « 1923 », éditeur « London »). Trois vérifications ont été jouées et écrites avec leur
+issue, dont celle-ci qui vaut d'être conservée : **aucun renouvellement de copyright n'a été
+retrouvé dans la base de Stanford, et le zéro est interprétable**, `Shewhart` et `Economic Control
+of Quality` rendant 0 dans la même fenêtre de quatre secondes où trois témoins positifs rendaient
+5, 7 et 1. Le défi anti-robot de l'interface **n'a pas été contourné** : la voie employée est
+l'API JSON publique de Blacklight. La réserve reste entière, un renouvellement introuvable n'étant
+pas un renouvellement inexistant.
+
+**Décision, dans le sens le plus strict : les cartes de Shewhart se font sans l'URL de cet
+exemplaire**, `consulted` restant `full-text` puisque le texte a été lu, la référence résolue
+seule par son **LCCN `31032090`** contre l'export MODS de la Bibliothèque du Congrès. Deux
+contrôleurs aveugles ont résolu ce LCCN indépendamment et confirmé chaque élément affiché : privée
+de son URL, la référence résout seule. **Cette décision vaut désormais pour toute la collection
+`digitallibraryindia` dans ce dépôt.**
+
+## Ce que le contrôle a réellement attrapé
+
+| question | résultat sur neuf fiches |
+|---|---|
+| citation verbatim, à l'endroit annoncé | 9/9 dès le premier passage |
+| attribution | 9/9 dès le premier passage |
+| prose fidèle aux sources | 9/9 dès le premier passage |
+| sources qui résolvent | 9/9 dès le premier passage |
+
+**Aucun renvoi, pour la première fois dans ce corpus.** Ce n'est pas que le contrôle a été
+indulgent : **vingt remarques ont été signalées hors mandat par des contrôleurs qui rendaient
+`PASS`, et toutes ont été appliquées.** C'est le quatrième lot consécutif où ce dispositif
+rapporte plus que les renvois, et cette fois il les remplace entièrement. Les plus utiles :
+
+- un mot tombé dans un verbatim stocké : « the decision **rule** solution », relu sur l'image ;
+- deux sources typées `secondary-academic` qui étaient **la publication en revue du même travail
+  par les mêmes auteurs**, donc des sources primaires ; retypées, au prix de deux avertissements
+  nouveaux, « aucune source secondaire affichée », qui sont exacts et qu'on garde ;
+- une note d'attribution qui rattachait aux Bell Telephone Laboratories une pratique que la page
+  citée ne rattache à personne ;
+- une collation « 42 p. » qui décrivait l'exemplaire numérisé et non le mémorandum, **dont
+  l'appendice annoncé au folio 43 est absent du scan** ;
+- une ambiguïté qui aurait rendu une phrase fausse selon la façon de la lire : « le nom s'est fixé
+  après ces pages » est exact des deux pages citées, et faux du livre, où l'expression figure
+  p. 146. **C'est cette remarque qui a désigné la neuvième carte comme celle qui attend.**
+
+## Réserves conservées, et ce qui commande le prochain passage sur ce domaine
+
+Elles sont dans le champ `notes` de chaque carte. Les principales :
+
+- **Aucune source secondaire n'a été ouverte sur les huit cartes**, et aucune réception
+  francophone n'existe sur aucune. C'est la faiblesse structurelle du lot, et elle est déclarée
+  fiche par fiche. Les lectures primaires n'en ont porté aucune plutôt que d'en inventer.
+- **L'exemplaire de Shewhart n'est pas l'édition de 1931** : c'est un septième tirage postérieur
+  à 1943, dont le bloc de copyright est illisible sur le scan, et **dont la préface est datée
+  « April, 1923 » sur l'imprimé**, ce qui est bibliographiquement impossible et qui est l'origine
+  du « 1923 » de la notice. Les folios ne sont donc pas certifiés contre l'original.
+- **L'appendice de démonstration du mémorandum ONR est absent du scan.**
+- **Un homonyme quasi parfait de Bellman existe et il est coécrit** : Bellman, Esogbue et
+  Nabeshima, *Mathematical Aspects of Scheduling and Applications*, Pergamon, 1982. Les libellés
+  de source portent le numéro de papier et l'année pour l'écarter.
+- **Deux gisements restent ouverts dans des textes déjà lus** : les parties V et VI de Shewhart,
+  et surtout **limites de contrôle contre limites de tolérance** ; la partie III de Bellman,
+  lissage industriel et stock optimal.
+- **Les cinq candidats hérités des voisins restent tous non ouverts**, et ce passage ne les a pas
+  retentés : trois rapports du Department of Defense légués par `cybernetics`, deux notices HAL
+  léguées par `human-factors`.
+- **La couche francophone est repérée et non lue.** Trois candidats atteignables, chacun avec sa
+  réserve : Guihéneuf 1956 sur Persée, DOI résolu ; Fiore 1987 sur Persée, **identifiant venu d'un
+  moteur de recherche et non d'une résolution de DOI**, à reconfirmer avant usage ; De Almeida
+  1998 sur Numdam, **GET du PDF non testé**. HAL, Cairn et OpenEdition Books **n'ont jamais été
+  interrogés par leur propre moteur**, et quatre points d'entrée du périmètre n'ont reçu aucune
+  requête ciblée.
+
+## Ce qu'avait établi le passage 02 du 24 août, qui n'avait pas rendu de carte
+
+Cette section est conservée telle qu'elle a été écrite le 24 août. Elle reste utile parce qu'elle
+dit ce que l'ouverture a coûté, et parce que trois de ses réserves ont été levées le 25 : les
+identités des candidats 3 et 4, la date du candidat 2, et la couche francophone jamais cherchée.
+**Là où elle contredit le lot du 25 août ci-dessus, c'est le lot du 25 qui fait foi.**
 
 Huitième domaine touché, **troisième et dernier de la famille « Comprendre la production et les
 systèmes »**. Deuxième passage de la routine nocturne. **Ce passage n'a pas rendu de carte** : il
@@ -94,7 +264,7 @@ relecture des gros fichiers, et borner leurs requêtes.
   sans texte primaire pour `work-psychology` ; Schweitzer & Cachon 2000 repéré mais paywallé pour
   `behavioral-economics`. Trois repérages, aucun « vide » établi.
 
-# 0. Science de la décision — lot d'ouverture du 23 août 2026, publié
+# 0 bis. Science de la décision — lot d'ouverture du 23 août 2026, publié
 
 Septième domaine instruit, **deuxième et dernier de la famille « Comprendre le pilotage »**.
 Premier lot conduit par la routine nocturne (passage 01 sur 15, voir
@@ -300,7 +470,7 @@ Ce que ces deux lots ont établi est écrit ailleurs, entier, et se lit à la so
   cartographies, candidats, angles morts ;
 - `corpus/review/*.verdict.json` : les verdicts de contrôle aveugle, un par passage.
 
-# 0 bis. Systems thinking — lot du 22 août 2026, publié
+# 0 ter. Systems thinking — lot du 22 août 2026, publié
 
 Sixième domaine instruit, **deuxième de la famille « Comprendre la production et les
 systèmes »**, ouvert deux jours après son voisin cybernétique. Il est le seul domaine du
@@ -401,7 +571,7 @@ Le domaine tient debout et affiche trois thèmes pourvus. Ce qui lui manque est 
 ci-dessus, et deux reprises sont courtes : l'ouvrage de 1972, dont l'accès est déjà constaté,
 et Lesourne, dont il suffit de résoudre le DOI.
 
-# 0 ter. Cybernétique — lot du 21 août 2026, publié
+# 0 quater. Cybernétique — lot du 21 août 2026, publié
 
 Cinquième domaine instruit, **premier de la famille « Comprendre la production et les
 systèmes »**, qui n'avait jusque-là aucun corpus. Le domaine avait été ouvert et

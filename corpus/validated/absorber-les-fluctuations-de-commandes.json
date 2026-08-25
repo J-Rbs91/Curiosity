@@ -1,0 +1,93 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "absorber-les-fluctuations-de-commandes",
+  "slug": "absorber-les-fluctuations-de-commandes",
+  "status": "VALIDATED",
+  "title": "Stock, heures ou effectif : le coût se déplace",
+  "themes": [
+    "produire-et-stocker"
+  ],
+  "theme_labels": {
+    "produire-et-stocker": "Combien produire, combien en tenir"
+  },
+  "authors": [
+    {
+      "name": "Charles C. Holt",
+      "app_author_id": null
+    },
+    {
+      "name": "Franco Modigliani",
+      "app_author_id": null
+    },
+    {
+      "name": "Herbert A. Simon",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Concept coécrit par Charles C. Holt, Franco Modigliani et Herbert A. Simon, dont les trois noms se lisent sur la page de titre du mémorandum de recherche O.N.R. n° 30, daté de mai 1955.",
+  "hook": "Par où faire passer une fluctuation de commandes qu'on ne peut pas supprimer ?",
+  "summary": "Une fluctuation de commandes se répartit entre le stock, les heures et l'effectif : aucune voie pure ne convient, et le dosage dépend des coûts de l'usine.",
+  "quotation": {
+    "text": "Order fluctuations should, in general, be absorbed partly by inventory, partly by overtime, and partly by hiring and layoffs […].",
+    "reference": "Charles C. Holt, Franco Modigliani et Herbert A. Simon, A Linear Decision Rule for Production and Employment Scheduling, O.N.R. Research Memorandum n° 30, 1955.",
+    "locator": "p. 8",
+    "language": "en",
+    "original_text": "Order fluctuations should, in general, be absorbed partly by inventory, partly by overtime, and partly by hiring and layoffs, and the best allocation among these parts will depend upon the costs in each particular factory.",
+    "original_language": "en",
+    "translation": {
+      "kind": "none"
+    }
+  },
+  "sources": [
+    {
+      "label": "Charles C. Holt, Franco Modigliani et Herbert A. Simon, A Linear Decision Rule for Production and Employment Scheduling, O.N.R. Research Memorandum n° 30, Carnegie Institute of Technology, mai 1955, 42 p. hors appendice.",
+      "kind": "primary",
+      "locator": "p. 8, chapitre II",
+      "url": "https://archive.org/details/DTIC_AD0089515",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Charles C. Holt, Franco Modigliani et Herbert A. Simon, « A Linear Decision Rule for Production and Employment Scheduling », Management Science, vol. 2, n° 1, octobre 1955, p. 1-30.",
+      "kind": "secondary-academic",
+      "locator": "p. 1-30",
+      "doi_isbn": "10.1287/mnsc.2.1.1",
+      "url": "https://doi.org/10.1287/mnsc.2.1.1",
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle, session du 25 août 2026",
+    "date": "2026-08-25",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "Source primaire ouverte moi-même : PDF complet téléchargé depuis https://archive.org/download/DTIC_AD0089515/DTIC_AD0089515.pdf (item https://archive.org/details/DTIC_AD0089515, 57 images, 600 ppi). J'ai rendu les pages en images à 150-170 dpi avec PyMuPDF et je les ai lues à l'écran, sans me fier à la couche OCR (dont j'ai d'ailleurs constaté les fautes : elle transcrit « ani » pour « and », « Page k2 » pour « Page 42 »).",
+      "ATTRIBUTION — Page de titre (image de l'index PDF 2) lue : « O. N. R. RESEARCH MEMORANDUM NO. 30 / A LINEAR DECISION RULE FOR PRODUCTION AND EMPLOYMENT SCHEDULING / by / Charles C. Holt, Franco Modigliani and Herbert A. Simon* / May 1955 / Graduate School of Industrial Administration / Carnegie Institute of Technology ». Les trois noms, le numéro de mémorandum, le mois et l'institution affichés par la fiche s'y lisent tous. La note d'attribution est donc exacte. La note de bas de page de cette même page ajoute une nuance qui la conforte plutôt qu'elle ne l'affaiblit : « This paper was written by Mr. Holt, but it rests on research done by all three authors. » — rédaction par Holt, recherche des trois. Crossref (api.crossref.org/works/10.1287/mnsc.2.1.1) donne les mêmes trois auteurs, tous affiliés au Carnegie Institute of Technology.",
+      "CITATION — Lue sur l'image de la page portant l'en-tête imprimé « Page 8. » (index PDF 11), deuxième paragraphe : « In general, none of the pure alternatives discussed above will prove best, but rather some carefully weighted combination of them. Order fluctuations should, in general, be absorbed partly by inventory, partly by overtime, and partly by hiring and layoffs, and the best allocation among these parts will depend upon the costs in each particular factory. » Le champ original_text de la fiche reproduit cette seconde phrase mot pour mot ; le champ text affiché la coupe après « hiring and layoffs » et signale la coupe par […]. Pas de traduction, et la fiche déclare translation.kind = none, ce qui est correct puisque la carte affiche l'anglais.",
+      "LOCALISATION — « p. 8, chapitre II » est exact. La table des matières (image de l'index PDF 3) donne : « II. THE DECISION PROBLEM: SCHEDULING PRODUCTION RATE AND WORK FORCE 3 / The Costs of Responding to Fluctuations in Orders 5 / Errors in Forecasting Orders 8 / The Time Sequence of Decisions 9 / III. ... 10 ». Le chapitre II couvre donc les p. 3 à 9, et la citation tombe à la fin de la section « The Costs of Responding to Fluctuations in Orders », juste avant le titre « Errors in Forecasting Orders » que j'ai lu au bas de la même image de p. 8.",
+      "SOURCES 1/2 — La référence primaire résout : l'URL archive.org ouvre bien le mémorandum O.N.R. n° 30 de mai 1955 des trois auteurs annoncés (métadonnées de l'item : date 1955-05-01, titre « DTIC AD0089515: A LINEAR DECISION RULE FOR PRODUCTION AND EMPLOYMENT SCHEDULING »), et le locator p. 8 y est vérifié sur l'image. Réserve d'extension signalée en hors_mandat.",
+      "SOURCES 2/2 — Le DOI 10.1287/mnsc.2.1.1 résout (302 vers pubsonline.informs.org/doi/10.1287/mnsc.2.1.1). Crossref confirme chacun des éléments affichés : Management Science, vol. 2, n° 1, pages 1-30, published-print 1955-10, éditeur INFORMS, auteurs Holt / Modigliani / Simon. Aucun écart. La fiche déclare consulted = metadata-only, ce qui correspond à ce que j'ai pu faire moi aussi : le texte intégral chez INFORMS est sous péage et je ne l'ai pas ouvert.",
+      "PROSE — L'accroche (« Par où faire passer une fluctuation de commandes qu'on ne peut pas supprimer ? ») reprend la question posée p. 5 : « orders (or more precisely, ordered shipments) are subject to substantial fluctuation, and the question arises as to how these fluctuations should be \"absorbed\". » Le résumé est porté phrase par phrase par la p. 8 : les trois canaux (« partly by inventory, partly by overtime, and partly by hiring and layoffs »), le refus des voies pures (« none of the pure alternatives discussed above will prove best »), la dépendance aux coûts locaux (« will depend upon the costs in each particular factory »). Le titre « le coût se déplace » est couvert par les p. 5-7, qui détaillent les coûts propres à chacune des trois alternatives pures. Rien dans l'accroche ni le résumé ne va au-delà.",
+      "NUANCE DE PROSE, examinée et jugée non disqualifiante : le résumé écrit « aucune voie pure ne convient » là où le texte dit « in general, none of the pure alternatives ... will prove best », et emploie l'indicatif (« se répartit ») pour un énoncé normatif (« should ... be absorbed »). La citation affichée sur la carte porte elle-même le « in general », de sorte que le lecteur voit la réserve ; et le présent français y est celui de la règle générale, non une description empirique. Je le consigne pour mémoire, pas comme un motif de reprise.",
+      "NON ATTEINT — La notice DTIC de l'AD0089515 (apps.dtic.mil/sti/citations/AD0089515) m'a renvoyé un HTTP 403 « The request is blocked » : c'est un mur anti-robot, pas un silence de la littérature. Je n'ai donc pas pu confronter l'extension déclarée du mémorandum à sa notice d'origine, et je n'en conclus rien. Le texte intégral de l'article Management Science n'a pas été ouvert non plus (péage INFORMS) ; la vérification de cette seconde référence est métadonnées seules, comme la fiche l'annonce.",
+      "ÉDITION, 25 août 2026 — correction hors mandat appliquée : le label de la source primaire écrit désormais « 42 p. hors appendice », la collation décrivant l'exemplaire numérisé et non la pièce, dont la table des matières annonce un appendice au folio 43. Ni le locator ni la citation ne sont touchés."
+    ]
+  },
+  "notes": [
+    "Le passage cité est une prescription (« should be absorbed »), non un résultat démontré à cet endroit du texte : la démonstration vient ensuite, par la fonction de coût. La carte ne le donne pas pour une loi.",
+    "La coupe finale retire « and the best allocation among these parts will depend upon the costs in each particular factory », que le résumé reprend. Le chapitre II ajoute que le dosage dépend aussi de la fréquence et de la sévérité des fluctuations, et ne se fixe donc pas une fois pour toutes, y compris dans une seule et même usine : cette nuance n'a pas tenu dans les plafonds d'affichage.",
+    "La phrase est entière sur le folio 8, ouverte en fin de ligne avec la césure typographique « Order fluc-/tuations » : ce n'est pas un passage recomposé entre deux pages.",
+    "La signature de cette pièce est à trois noms. John F. Muth n'en est pas auteur : il figure dans la note de la page de titre parmi sept graduate students remerciés. Le sigle HMMS est celui du livre de 1960.",
+    "La note appelée sur la page de titre dit : « Research undertaken for the project Planning and Control of Industrial Operations, under a grant from the Office of Naval Research. This paper was written by Mr. Holt, but it rests on research done by all three authors. » C'est une cosignature, non une paternité unique.",
+    "L'annexe annoncée p. 43 par la table des matières est absente de l'exemplaire numérisé, qui s'arrête au folio 42. Le numéro du contrat ONR n'est pas lisible sur la pièce et n'est pas complété depuis une source tierce.",
+    "Tout le chiffrage du rapport porte sur une seule usine, un fabricant de peinture non nommé, sur 1949-1954. Le rapport écrit p. 40 qu'il serait « rash of the authors to generalize these conclusions to industry generally » : aucune généralisation ne se prend sur cette pièce.",
+    "L'article de Management Science d'octobre 1955 n'a pas été ouvert : source non ouverte, aucun verbatim ne s'y localise.",
+    "Autorisation d'ayant droit : l'item Internet Archive DTIC_AD0089515 est servi publiquement, sans restriction d'emprunt, mais sa notice ne porte aucune mention de licence ni de statut de droits, et la couverture ASTIA porte une clause de restitution au gouvernement des États-Unis. Accès public constaté, autorisation d'ayant droit non constatée.",
+    "Citation relue sur le dérivé pleine largeur https://archive.org/download/DTIC_AD0089515/page/n11.jpg, et non sur le dérivé _x1600, qui rogne le feuillet à gauche.",
+    "Correction appliquée au tour d'édition du 25 août 2026, sur remarque hors mandat du contrôle : le label de la source primaire écrivait « 42 p. » et écrit désormais « 42 p. hors appendice ». Le scan s'arrête bien au folio 42, mais la table des matières annonce « APPENDIX: Derivation of the Conditions for Minimum Costs 43 » et la dernière page dit « a technical appendix is attached ». Le mémorandum d'origine dépasse donc 42 pages : la collation affichée décrit l'exemplaire numérisé, non la pièce complète. Ni le locator ni la citation ne sont touchés."
+  ]
+}

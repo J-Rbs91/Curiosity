@@ -1,0 +1,85 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "cause-de-hasard-et-cause-assignable",
+  "slug": "cause-de-hasard-et-cause-assignable",
+  "status": "VALIDATED",
+  "title": "Cause de hasard et cause assignable",
+  "themes": [
+    "variation-et-controle"
+  ],
+  "theme_labels": {
+    "variation-et-controle": "Ce qu'un procédé fait varier"
+  },
+  "authors": [
+    {
+      "name": "W. A. Shewhart",
+      "app_author_id": null
+    }
+  ],
+  "hook": "Quelles variations d'un procédé méritent qu'on leur cherche une cause ?",
+  "summary": "Shewhart partage la variabilité d'un procédé entre un système constant de causes de hasard et des causes dites assignables, que le fabricant doit trouver et supprimer.",
+  "attribution_note": "Distinction exposée par W. A. Shewhart, seul auteur de l'ouvrage. Le terme d'assignable n'est pas revendiqué par lui : il écrit que ces causes « ont été appelées » ainsi, en rapportant une pratique antérieure de l'ingénierie d'inspection du système Bell, sans nommer personne.",
+  "quotation": {
+    "text": "Hence, to secure control, the manufacturer must seek to find and eliminate assignable causes.",
+    "reference": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931.",
+    "locator": "p. 14",
+    "language": "en",
+    "original_text": "Hence, to secure control, the manufacturer must seek to find and eliminate assignable causes.",
+    "original_language": "en",
+    "translation": {
+      "kind": "none",
+      "translator": null,
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931, xiv-501 p. (LCCN 31032090)",
+      "kind": "primary",
+      "locator": "p. 6, 12-14",
+      "doi_isbn": "LCCN 31032090",
+      "consulted": "full-text"
+    },
+    {
+      "label": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, Milwaukee, American Society for Quality Control, 1980 (réimpression).",
+      "kind": "primary",
+      "doi_isbn": "978-0-87389-076-2",
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle, session du 25 août 2026",
+    "date": "2026-08-25",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "CITATION — vérifiée sur l'image de la page, pas sur l'OCR. Exemplaire ouvert : Internet Archive, item in.ernet.dli.2015.150272 (scan Digital Library of India du volume Van Nostrand). Page de titre (image https://archive.org/download/in.ernet.dli.2015.150272/page/n0.jpg) : « Economic Control of Quality of Manufactured Product / By W. A. SHEWHART, Ph.D., Member of the Technical Staff, Bell Telephone Laboratories, Inc. / SEVENTH PRINTING / D. VAN NOSTRAND COMPANY, Inc. » — tirage ultérieur des mêmes plaques, pagination identique à l'édition de 1931.",
+      "CITATION — page 14 lue en image (https://archive.org/download/in.ernet.dli.2015.150272/page/n25.jpg, feuillet n25 = p. 14 imprimée, en-tête « 14 ECONOMIC CONTROL OF QUALITY »). Le paragraphe qui suit le Postulat 3 porte exactement : « Hence, to secure control, the manufacturer must seek to find and eliminate assignable causes. » Ponctuation, ordre des mots et point final conformes à la fiche. Aucune coupe, aucune traduction : la déclaration translation.kind = none est exacte, la langue est bien l'anglais d'origine.",
+      "ATTRIBUTION — confirmée, et bien calibrée. La page de titre ne porte qu'un auteur, W. A. Shewhart. La même p. 14 écrit : « This fact was discovered very early in the development of control methods, and these causes were called assignable » (assignable en italique dans le texte), puis « Postulate 3 — Assignable causes of variation may be found and eliminated. » Shewhart emploie donc bien le passif et ne revendique pas la paternité du terme, exactement comme l'énonce attribution_note. Recherche complémentaire (Quality Magazine « Statistical Process Control: A History », Encyclopedia.com notice Shewhart, Springer « Assignable causes of variations ») : aucune source ne rattache la distinction hasard/assignable à un autre auteur ni n'atteste un usage antérieur documenté du terme dans ce domaine ; la fiche ne réclame de toute façon que l'exposition, pas la création.",
+      "SOURCES 1/2 — LCCN 31032090 résolu par l'export MODS (https://lccn.loc.gov/31032090/mods), la page HTML étant une application JavaScript inutilisable. La notice rend : titre « Economic control of quality of manufactured product », auteur Shewhart, Walter A. 1891-1967, New York, D. Van Nostrand Company, Inc., dateIssued 1931, extent « xiv, 501 p. illus., diagrs. 24 cm. ». Éditeur, ville, année, pagination xiv-501 : les quatre éléments affichés par le libellé concordent.",
+      "SOURCES 2/2 — ISBN 978-0-87389-076-2 résolu via OpenLibrary (https://openlibrary.org/api/books?bibkeys=ISBN:9780873890762&format=json&jscmd=data → OL1641789M) : Milwaukee, Wis., American Society for Quality Control, 1980, xiv-501 p., note « 50th anniversary commemorative reissue » et « Reprint. Originally published: New York : Van Nostrand, 1931 ». L'annonce « réimpression » est exacte. Clé de contrôle de l'ISBN-13 recalculée : 2, valide. Cet exemplaire (IA economiccontrolo0000shew) n'est accessible qu'en prêt, je ne l'ai donc pas ouvert — ce que la fiche déclare elle-même par consulted: metadata-only, sans en tirer d'affirmation.",
+      "SOURCES — locators contrôlés page par page sur les images. p. 6 (feuillet n17) : fin du § sur la variabilité constante dans des limites (« This distinguishable and, as it were, constant variability within limits is the second characteristic of control ») et section « 3. Definition of Control ». p. 13 (feuillet n24) : planche pleine page, Fig. 3 « Should These Variations be Left to Chance? ». p. 14 (feuillet n25) : Postulat 3 et la citation. Les trois pages annoncées portent bien la matière annoncée.",
+      "PROSE — hook : « Quelles variations d'un procédé méritent qu'on leur cherche une cause ? » recouvre littéralement la légende de la Fig. 3 (p. 13, « Should These Variations be Left to Chance? ») et l'intitulé de la section p. 14 (« 2. When do Fluctuations Indicate Trouble? »), ainsi que « What we need is some yardstick to detect in such variations any evidence of the presence of assignable causes ». Rien n'y excède la source.",
+      "PROSE — summary : le partage entre « système constant de causes de hasard » et « causes dites assignables » est porté par le texte même : Postulat 2 p. 12, « Constant systems of chance causes do exist in nature », et p. 14, « unknown causes of variability in the quality of a product which do not belong to a constant system […] these causes were called assignable ». Le « doit trouver et supprimer » traduit sans excès « must seek to find and eliminate ». La tournure « dites assignables » reproduit fidèlement le passif de Shewhart : c'est le point où un résumé aurait pu déborder, il ne déborde pas.",
+      "Ce que je n'ai pas pu atteindre : la réimpression ASQC 1980 elle-même (prêt contrôlé sur Internet Archive) ; le premier tirage de 1931 en image (je n'ai trouvé en ligne que le septième tirage, de pagination identique). Ni l'un ni l'autre n'est un silence de la littérature.",
+      "ÉDITION, 25 août 2026 — corrections hors mandat appliquées : attribution_note ne nomme plus les « Bell Telephone Laboratories » et dit « l'ingénierie d'inspection du système Bell », la phrase citée ne nommant aucune institution ; le locator de la source primaire passe de « p. 6, 13-14 » à « p. 6, 12-14 » pour couvrir le Postulat 2, qui se lit p. 12 ; la fausseté des métadonnées Internet Archive de l'item in.ernet.dli.2015.150272 (date « 1923 », éditeur « London ») est consignée dans les notes de la fiche."
+    ]
+  },
+  "notes": [
+    "Attribution du terme : Shewhart écrit p. 14 « this fact was discovered very early in the development of control methods, and these causes were called assignable », au passif et au passé, en renvoyant à un moment antérieur de la mise au point des méthodes de contrôle, sans nommer ni personne ni institution. La formulation systématique et la démonstration sont de lui ; le vocabulaire est présenté comme reçu. La carte ne lui attribue donc pas l'invention du mot. Les mémorandums Bell de 1924 à 1926, où ce vocabulaire a pu se fixer avant le livre, n'ont pas été ouverts : toute affirmation d'antériorité serait ici sans pièce.",
+    "La préface (folio viii) remercie T. C. Fry et E. C. Molina « on the theoretical side », H. F. Dodge « on the practical side », puis R. L. Jones et G. D. Edwards « under whose helpful guidance the present basis for economic control of quality of manufactured product has been developed ». Ces personnes sont remerciées, pas cosignataires : l'attribution reste à Shewhart seul.",
+    "Exemplaire ouvert : un septième tirage, sans année à la page de titre, postérieur à 1943 (l'adresse de l'éditeur emploie la zone postale à un chiffre, « 250 Fourth Avenue, New York 3 », introduite en 1943), donc situé entre 1943 et 1963 environ. Le bloc de copyright est illisible sur le scan : ni millésime, ni mention de réserve de droits, ni historique de tirages. La référence affichée, 1931, D. Van Nostrand Company, Inc., New York, est prise sur le catalogue de la Library of Congress (LCCN 31032090, export MODS : xiv, 501 p.), et non sur la pièce. Les folios cités sont ceux du tirage lu et n'ont pas été collationnés contre l'édition de 1931.",
+    "La source primaire est citée sans URL, et c'est une décision motivée. L'exemplaire lu appartient à une numérisation de masse (collections digitallibraryindia et JaiGyan sur Internet Archive) dont la notice ne porte aucun champ de droits : ni rights, ni licenseurl, ni possible-copyright-status, ni sponsor. La seule mention de droits du dossier est un « dc.rights: In Public Domain » auto-déclaré par le numériseur, logé dans un bloc descriptif qui contient par ailleurs deux erreurs bibliographiques avérées (date 1923, éditeur donné à Londres). Aucun renouvellement de copyright n'a été retrouvé dans la base des renouvellements de Stanford, avec témoins positifs concluants, mais un renouvellement introuvable n'est pas un renouvellement inexistant ; et le titre est toujours exploité commercialement. Aucune autorisation d'ayant droit n'est donc constatée. Le texte a bien été lu intégralement, d'où consulted : full-text ; c'est l'URL qui tombe, pas la lecture. La référence résout seule par son LCCN.",
+    "La préface de l'imprimé est datée « April, 1923 », relue caractère par caractère sur l'image. C'est bibliographiquement impossible : l'ouvrage paraît en 1931 et met en épigraphe Eddington (1928) et Bridgman (1927). C'est de cette ligne que vient le « 1923 » de la notice du numériseur. Elle est constatée ici, pas corrigée.",
+    "Aucune source secondaire n'a été ouverte pour cette carte et aucune réception francophone n'a été cherchée : le passage dont elle sort était une lecture primaire et rien d'autre. L'avertissement du validateur sur l'absence de source secondaire est donc exact. La seconde source affichée n'est pas un commentaire : c'est la réimpression de l'ouvrage par l'American Society for Quality Control (1980), retenue parce qu'elle résout par ISBN et donne au lecteur un exemplaire trouvable. Elle n'a pas été ouverte, sa pagination n'a pas été vérifiée, et les folios cités ne sont pas les siens.",
+    "Variante de citation écartée : « there are unknown causes of variability in the quality of a product which do not belong to a constant system. […] these causes were called assignable. » porte mieux la distinction mais fait exactement 150 caractères, soit le plafond au caractère près, et demande une coupe.",
+    "Aucune traduction française publiée n'a été vérifiée : la citation reste en anglais, translation.kind à none.",
+    "Correction appliquée au tour d'édition du 25 août 2026, sur remarque hors mandat du contrôle : l'attribution_note rattachait la pratique antérieure aux « Bell Telephone Laboratories ». La phrase de la p. 14 ne nomme aucune institution, elle dit « in the production of telephone equipment » et « discovered very early in the development of control methods » ; le rattachement venait de l'affiliation portée en page de titre. La formule affichée dit désormais « l'ingénierie d'inspection du système Bell », sans nommer d'institution que la page ne nomme pas.",
+    "Correction appliquée au même tour : le locator de la source primaire passe de « p. 6, 13-14 » à « p. 6, 12-14 ». Le Postulat 2, « Constant systems of chance causes do exist in nature », se lit p. 12 et non p. 13 ; la p. 13 est la planche de la figure 3, « Should These Variations be Left to Chance? ». Le locator couvre donc maintenant le Postulat 2 que le résumé mobilise.",
+    "Piège documentaire à connaître avant tout recontrôle : les métadonnées de l'item Internet Archive in.ernet.dli.2015.150272 sont fausses sur deux points, la date affichée « 1923 » et l'éditeur donné à « London ». L'image de la page de titre les dément : elle porte D. Van Nostrand Company, Inc., New York, septième tirage. C'est l'image qui fait foi, jamais la notice ni la couche OCR."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "regle-de-commande-a-deux-niveaux",
+  "reviewer": "contrôle aveugle, session du 25 août 2026",
+  "date": "2026-08-25",
+  "attribution": "confirmee",
+  "quotation": "verbatim",
+  "sources": "resolvent",
+  "prose": "fidele",
+  "verdict": "PASS",
+  "rounds": 1,
+  "notes": [
+    "ATTRIBUTION — Page de titre du rapport ouverte en image (https://archive.org/download/DTIC_AD0422810/page/n3.jpg, sans suffixe de dérivé) : « OPTIMAL INVENTORY POLICY by Kenneth Arrow, Theodore Harris, Jacob Marschak / P-189 / Revised 16 November 1950 / The RAND Corporation, Santa Monica, California ». Les trois noms se lisent bien sur la page de titre, la carte crédite les trois et ne fait pas de l'un d'eux l'auteur unique.",
+    "ATTRIBUTION — La double date affichée est vérifiée sur l'image de la première page de texte (page/n4.jpg), dont l'en-tête porte « 5 September 1950 / Revised 16 November 1950 / P-189 ». La couche OCR de cet item lit « l6 November » sur plusieurs feuillets et transcrit « Page 66 » là où l'image dit « Page 46 » : je n'ai retenu que l'image.",
+    "ATTRIBUTION — Recherche indépendante sur la paternité : la littérature de synthèse (survey Perera & Sethi, Production and Operations Management 2023 ; notices Econometric Society, Semantic Scholar, scispace) situe l'énoncé de la règle à deux niveaux chez Arrow, Harris et Marschak 1951, la preuve d'optimalité venant plus tard avec Scarf (1960, « The Optimality of (S, s) Policies in the Dynamic Inventory Problem »). Aucune antériorité documentée pour l'énoncé lui-même n'est ressortie. La carte ne revendique pas l'optimalité, donc pas de sur-attribution.",
+    "CITATION — Relue sur l'image de page/n27.jpg, dont l'en-tête porte « 16 November 1950 / Page 24, P-189 ». Le bas de la page porte exactement : « Choose two numbers S and s, S > s > 0, and let them define the following rule of action: », suivi immédiatement de (4.4) « If y_t > s, o_t = 0 (and hence z_t = y_t), if y_t ≤ s, o_t = S − y_t (and hence z_t = S). » Verbatim, ponctuation comprise, à l'endroit annoncé (p. 24, règle 4.4). Texte anglais, aucune traduction déclarée et aucune n'est nécessaire.",
+    "SOURCES 1/2 — https://archive.org/details/DTIC_AD0422810 résout vers le scan DTIC AD0422810 du P-189 révisé ; PDF téléchargé (2 505 053 octets) depuis ia903103.us.archive.org. Le rapport compte bien 47 pages : le dernier feuillet (page/n50.jpg) porte en tête « 16 November 1950 / Page 47, P-189 » (fin des références). Le locator « p. 24, règle (4.4) » est exact.",
+    "SOURCES 2/2 — L'outil verify_reference (serveur documentary) n'était pas exposé dans cette session ; j'ai résolu le DOI par les API publiques. Crossref pour 10.2307/1906813 rend : Arrow (Kenneth J.), Harris (Theodore), Marschak (Jacob), « Optimal Inventory Policy », Econometrica, vol. 19, n° 3, juillet 1951, première page 250, éditeur JSTOR ; OpenAlex confirme vol. 19, n° 3, 1951-07-01, p. 250. https://doi.org/10.2307/1906813 redirige (302) vers https://www.jstor.org/stable/1906813. La fiche déclare « metadata-only » pour cette source, ce qui correspond à ce que j'ai pu atteindre.",
+    "SOURCES — Non atteint, et je le dis comme tel : https://www.rand.org/pubs/papers/P189.html et la notice de l'Econometric Society rendent tous deux HTTP 403 (mur anti-robot) ; ces refus d'accès ne contredisent rien, la notice RAND n'était de toute façon pas nécessaire, l'exemplaire numérisé faisant foi.",
+    "PROSE — L'accroche « Quand faut-il recommander, et jusqu'où remonter le stock ? » correspond terme à terme aux deux paramètres de (4.4) : seuil de déclenchement s et niveau cible S. Le résumé ne dit pas « optimal » ni « prouvé », ce qui est prudent puisque AHM posent la règle sans en démontrer l'optimalité.",
+    "PROSE — La clause « au-dessus, rien » est exacte au sens strict du texte (y_t > s ⇒ o_t = 0). La clause causale « Le coût fixe d'une commande impose l'écart » est portée par le texte : § 4:B, p. 26 : « we shall assume [...] that the cost of handling an order does not depend on the amount ordered. Let this cost be K, a constant » ; et p. 36, l'équation (5.17) — a[F(S) − F(s)] = c(S − s) + K + ∫ ... — fait entrer K précisément dans la condition du premier ordre qui détermine S − s, alors que les auteurs notent juste avant que « K does not enter into (5.15) and (5.16) », les conditions obtenues à S − s fixé. L'écart est bien ce que le coût fixe commande dans le modèle."
+  ],
+  "hors_mandat": [
+    "Point de rigueur, sans conséquence sur la carte : dans (4.4) la commande se déclenche à y_t ≤ s (inférieur ou égal), pas strictement en dessous. Le résumé dit « sous un seuil […] au-dessus, rien », dont la seconde moitié est exacte au sens strict et la première approxime le cas d'égalité. Rien à corriger, mais si une reformulation intervient, « au seuil ou en dessous » serait le mot juste.",
+    "La couche OCR de l'item Internet Archive DTIC_AD0422810 est fautive sur les en-têtes (dates lues « l6 November », pagination « Page 66 » pour 46, « Vage » pour Page). Toute vérification ultérieure sur cet item doit se faire sur page/nN.jpg, jamais sur le djvu.txt."
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "penalite-de-rupture",
+  "slug": "penalite-de-rupture",
+  "status": "VALIDATED",
+  "title": "La pénalité de rupture rend le stock calculable",
+  "themes": [
+    "produire-et-stocker"
+  ],
+  "theme_labels": {
+    "produire-et-stocker": "Combien produire, combien en tenir"
+  },
+  "authors": [
+    {
+      "name": "Kenneth Arrow",
+      "app_author_id": null
+    },
+    {
+      "name": "Theodore Harris",
+      "app_author_id": null
+    },
+    {
+      "name": "Jacob Marschak",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Concept coécrit par Kenneth Arrow, Theodore Harris et Jacob Marschak, énoncé dans le papier RAND P-189 daté du 5 septembre 1950 et révisé le 16 novembre 1950, dont les trois noms se lisent sur la page de titre.",
+  "hook": "Combien garder d'avance, quand on n'a jamais chiffré ce que coûte de manquer ?",
+  "summary": "Chiffrer la pénalité de rupture rend le stock calculable : le niveau à tenir est celui où le coût d'une unité de plus égale son utilité marginale espérée.",
+  "quotation": {
+    "text": "The organization […] has a general idea of the value it would attach to the damage that would be caused by the non-availability of an item",
+    "reference": "Kenneth Arrow, Theodore Harris et Jacob Marschak, Optimal Inventory Policy, RAND Corporation, P-189, 1950.",
+    "locator": "p. 19",
+    "language": "en",
+    "original_text": "We assume the penalty function as given. The organization — whether commercial or noncommercial — has a general idea of the value it would attach to the damage that would be caused by the non-availability of an item; it knows the cost and the poorer performance of emergency substitutes.",
+    "original_language": "en",
+    "translation": {
+      "kind": "none"
+    }
+  },
+  "sources": [
+    {
+      "label": "Kenneth Arrow, Theodore Harris et Jacob Marschak, Optimal Inventory Policy, RAND Corporation, P-189, 5 septembre 1950, révisé le 16 novembre 1950, 47 p.",
+      "kind": "primary",
+      "locator": "p. 19-21, sections 3:B à 3:E",
+      "url": "https://archive.org/details/DTIC_AD0422810",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Kenneth J. Arrow, Theodore Harris et Jacob Marschak, « Optimal Inventory Policy », Econometrica, vol. 19, n° 3, juillet 1951, p. 250 et suivantes.",
+      "kind": "primary",
+      "locator": "p. 250 et suivantes",
+      "doi_isbn": "10.2307/1906813",
+      "url": "https://doi.org/10.2307/1906813",
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle, session du 25 août 2026",
+    "date": "2026-08-25",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "ATTRIBUTION — Ouvert l'item https://archive.org/details/DTIC_AD0422810 (collection dticarchive, item public, PDF servi sans restriction : HTTP 200, 2,5 Mo, 51 images à 300 ppi). Lu la PAGE DE TITRE sur l'image du feuillet https://archive.org/download/DTIC_AD0422810/page/n3.jpg (sans suffixe, feuillet entier) : elle porte, dans le cartouche, « OPTIMAL INVENTORY POLICY / by Kenneth Arrow, Theodore Harris and Jacob Marschak / P-189 / Revised 16 November 1950 », au-dessus du logo « The RAND Corporation · SANTA MONICA · CALIFORNIA ». Les trois noms se lisent donc bien sur la page de titre, comme la fiche l'affirme, et dans cet ordre. La couche OCR de l'item (DTIC_AD0422810_djvu.txt) ne contient aucune occurrence de « Arrow », « Harris » ni « Marschak » : la page de titre y est illisible pour l'OCR. C'est l'image qui fait foi, et elle est nette. Coécriture confirmée, sans auteur principal isolé ni auteur omis.",
+      "ATTRIBUTION — Corroboration indépendante par la version publiée : Crossref sur le DOI 10.2307/1906813 rend « Optimal Inventory Policy », Econometrica, vol. 19, n° 3, juillet 1951, première page 250, ISSN 0012-9682, éditeur JSTOR, avec exactement trois auteurs — Kenneth J. Arrow (first), Theodore Harris, Jacob Marschak. Aucun quatrième nom, aucune paternité concurrente affichée.",
+      "CITATION — Relue sur l'IMAGE de la page, jamais sur la couche texte : https://archive.org/download/DTIC_AD0422810/page/n22.jpg. L'en-tête de ce feuillet porte « 16 November 1950 / Page 19, P-189 ». Le locator « p. 19 » est donc exact, et le passage se trouve bien en section 3:B, qui commence sur cette même page. Le texte lu à l'image, ligne à ligne : « We assume the penalty function as given. The organization — whether commercial or noncommercial — has a general idea of the value it would attach to the damage that would be caused by the non-availability of an item; it knows the cost and the poorer performance of emergency substitutes. » Il est identique caractère pour caractère au champ original_text de la fiche (« non-availability » est coupé par un tiret de fin de ligne dans l'original : « non-/availability » ; la recomposition en « non-availability » est la bonne). Le champ text affiché élide « — whether commercial or noncommercial — » et signale la coupe par […], à sa place exacte. Pas de traduction : language « en », original_language « en », translation kind « none », et la fiche affiche effectivement l'anglais. Verbatim.",
+      "CITATION — Vérifié aussi que ce n'est pas un extrait recueilli chez un tiers citant les auteurs : le passage est lu dans le rapport P-189 lui-même, dans le corps du texte, entre l'équation (3.5) et la section 3:C, sur la page qui porte son propre folio.",
+      "SOURCES (1/2) — La référence primaire annonce « Optimal Inventory Policy, RAND Corporation, P-189, 5 septembre 1950, révisé le 16 novembre 1950, 47 p. ». Les trois éléments datables ont été vérifiés sur images, la consigne signalant qu'au moins un rapport de ce lot a une date fausse dans sa couche OCR : (a) l'en-tête de la première page de texte, feuillet n4, porte « 5 September 1950 / Revised 16 November 1950 / P-189 » — les deux dates sont bien à l'image, et l'OCR ne les a pas inventées ici ; (b) la page de titre (n3) ne porte que « Revised 16 November 1950 », ce qui est cohérent et non contradictoire ; (c) la pagination : le dernier feuillet (n50) porte « 16 November 1950 / Page 47, P-189 » et termine la bibliographie sur l'entrée [10] Wilson, R. H. Le rapport compte donc bien 47 pages numérotées. Le locator « p. 19-21, sections 3:B à 3:E » résout : 3:B et 3:C sont sur la page 19 (n22), 3:D sur la page 20 (n23), 3:E sur la page 21 (n24). L'URL affichée résout vers cet item exact (HTTP 200), et « consulted: full-text » est justifié — le plein texte est effectivement servi.",
+      "SOURCES (2/2) — La référence Econometrica résout intégralement contre Crossref sur le DOI affiché : titre, revue, vol. 19, n° 3, juillet 1951, première page 250, et les trois auteurs sous la forme « Kenneth J. Arrow » que la fiche emploie. « p. 250 et suivantes » est exact. « consulted: metadata-only » est déclaré, et c'est bien ce que j'ai pu atteindre moi aussi : je n'ai pas ouvert le texte JSTOR. Une carte qui déclare sa limite d'accès n'a pas de défaut de ce fait. Note : le serveur documentary/verify_reference n'était pas exposé dans ma session ; j'ai résolu le DOI directement contre api.crossref.org, ce qui a répondu de façon concluante (notice complète). Aucun ISBN à résoudre dans ce dossier.",
+      "PROSE — Le summary affirme deux choses, et les deux sont portées par le texte, à la page même que le locator annonce. (a) « le niveau à tenir est celui où le coût d'une unité de plus égale son utilité marginale espérée » : lu à l'image de la page 21 (n24), section 3:E : « In the economist's language, the first bracketed term in (3.8) is the \"marginal cost\" (of buying and carrying an additional unit in stock); the remaining two terms yield the \"marginal expected utility.\" » ; et (3.8), lue sur la même image, pose cette différence égale à zéro — soit exactement l'égalité du coût marginal d'une unité supplémentaire et de l'utilité marginale espérée. La formulation française de la fiche est une traduction fidèle des termes mêmes des auteurs, y compris « espérée » pour « expected ». (b) « Chiffrer la pénalité de rupture rend le stock calculable » : la page 21 ajoute que z* « is determined by the following \"physical data\" » dont les paramètres A et (B + a) de la fonction de pénalité définie en 3:D — le stock optimal est donc bien calculable une fois la pénalité chiffrée, et pas avant. Le hook (« Combien garder d'avance, quand on n'a jamais chiffré ce que coûte de manquer ? ») pose une question et n'affirme rien au-delà de 3:B, où les auteurs écrivent précisément « We assume the penalty function as given ». Aucun adjectif en excès : la fiche ne dit ni « premier », ni « fondateur », ni « unique », ni « universellement admis », et ne prête aux auteurs aucune portée qu'ils ne revendiquent.",
+      "PROSE — Vérifié aussi le sens du mot « rupture » contre le texte : les auteurs parlent de « depletion penalty » et du cas x > z, « the excess of demand over available stock » (p. 19, 3:B). « Pénalité de rupture » rend cela sans le déformer, et ne glisse pas vers un coût de rupture de contrat ou de rupture d'approvisionnement amont.",
+      "NON ATTEINT — https://www.rand.org/pubs/papers/P189.html a répondu HTTP 403 (blocage éditeur). Je n'ai donc pas pu confronter la notice RAND officielle. Ce n'est pas un silence de la littérature : l'exemplaire scanné du rapport, ouvert page par page, suffit à établir tout ce que la fiche affiche. Je n'ai pas non plus ouvert le texte intégral de la version Econometrica (JSTOR, accès fermé), ce que la fiche déclare elle-même.",
+      "ÉDITION, 25 août 2026 — correction hors mandat appliquée : la seconde source, l'article d'Econometrica de juillet 1951, passe de secondary-academic à primary, étant la version publiée du même travail par les trois mêmes auteurs, son consulted restant metadata-only. Le motif du changement est consigné dans les notes de la fiche pour qu'un passage ultérieur ne le retourne pas. La fiche n'affiche plus de source secondaire : le validateur le signale en avertissement, et l'avertissement est exact."
+    ]
+  },
+  "notes": [
+    "La pénalité de rupture est supposée donnée par les auteurs : « We assume the penalty function as given. » Ils argumentent que l'organisation la connaît en pratique, ils n'établissent pas comment la mesurer, et la carte ne le laisse pas croire.",
+    "La coupe de la citation retire l'incise « whether commercial or noncommercial », qui élargit la portée sans la modifier. Elle retire du même coup les deux tirets cadratins de l'original, que la règle d'affichage du corpus interdit : les remplacer par des virgules aurait été retoucher un verbatim. L'original complet est conservé dans original_text.",
+    "Le texte n'emploie pas l'expression « stock de sécurité » : il écrit « cushion stocks » et « safety-margin » stocks. Le terme français est postérieur, il ne figure ni dans la citation ni dans le résumé.",
+    "Autre passage relu sur image, non retenu ici, p. 2 : « However, we have not been able to find in the business literature an explicit rule of determining \"cushion stocks\" that would maximize expected profit (or minimize expected loss), given the relevant probability distribution. » C'est une déclaration de lacune dans la littérature de gestion de 1950, non un énoncé de mécanisme.",
+    "Le lot économique de la section 2 n'est pas des trois auteurs : page 9, ils écrivent « We believe this is, in essence, the solution advanced by R. H. Wilson [10], formerly of the Bell Telephone Company; and also by other writers; see [1]. » Ce qui leur revient en propre, et ce que porte cette carte, est le traitement de l'incertitude des sections 3 à 6.",
+    "Les références internes relevées dans le texte (Wilson [10], Whitin et Haack, Markowitz) n'ont pas été résolues par la lecture primaire et ne sont pas reportées en source.",
+    "Autorisation d'ayant droit : l'item Internet Archive DTIC_AD0422810 est servi publiquement, sans restriction d'emprunt, mais ses métadonnées ne portent aucun champ rights, licenseurl ni possible-copyright-status. Les mentions imprimées sur la pièce sont des mentions administratives et non une licence d'éditeur. Accès public constaté, autorisation d'ayant droit non constatée.",
+    "Citation relue sur le dérivé pleine largeur https://archive.org/download/DTIC_AD0422810/page/n22.jpg, et non sur le dérivé _x1600, qui rogne le feuillet à gauche.",
+    "Typage de la seconde source, corrigé au tour d'édition du 25 août 2026 sur remarque hors mandat du contrôle, et à ne pas « corriger » en sens inverse : l'article d'Econometrica de juillet 1951 est la version publiée du même travail, signée des trois mêmes auteurs. Ce n'est pas de la littérature secondaire sur le concept, c'est une seconde source primaire. Son kind passe donc de secondary-academic à primary. Le consulted reste metadata-only : le texte JSTOR n'a été ouvert ni par la lecture primaire, ni par le contrôle. Conséquence assumée : la fiche n'affiche plus aucune source secondaire, ce que le validateur signale en avertissement, et cet avertissement est exact.",
+    "Précision de pagination relevée par le contrôle, non appliquée faute de vérification propre : Crossref ne rend que la première page (250) pour le DOI 10.2307/1906813 et ne donne pas de page de fin. La pagination couramment citée est p. 250-272, mais la borne 272 n'a été confirmée par aucune base interrogée de première main. « p. 250 et suivantes » reste donc affiché, juste mais moins utile qu'un intervalle."
+  ]
+}

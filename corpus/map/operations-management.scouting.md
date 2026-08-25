@@ -242,3 +242,136 @@ future :
   sans chevauchement d'objet identifié à ce stade.
 
 Aucun des quatre candidats retenus ne recoupe un concept déjà validé dans un autre domaine.
+
+---
+
+# Reprise du 25 août 2026 (passage 03) — ce que la lecture a corrigé de cette cartographie
+
+Cette section est ajoutée plutôt que la cartographie n'est réécrite : elle dit ce que quatre
+lectures primaires ont établi **sur la pièce**, contre ce que les sections ci-dessus affirmaient
+depuis un fichier de travail perdu. Là où les deux divergent, **c'est cette section qui fait foi**,
+et le motif est écrit à chaque fois.
+
+## Les quatre candidats ont désormais une identité, et trois sur quatre étaient mal décrits
+
+| ancienne entrée | ce que la pièce dit | établi sur |
+|---|---|---|
+| Candidat 1, Shewhart 1931, « édition et item IA exacts à reconfirmer » | Item ouvrable : `in.ernet.dli.2015.150272`. L'autre exemplaire, `economiccontrolo0000shew`, porte `access-restricted-item: true` et **n'a pas été ouvert**. La pièce ouverte est un **septième tirage postérieur à 1943**, sans année sur la page de titre. | Page de titre et verso lus en image ; adresse « 250 Fourth Avenue, New York 3 », zone postale introduite en 1943 |
+| Candidat 2, Bellman, « P-651, révisé le 23 mai **1965** » | **P-651, révisé le 23 mai 1955.** La cartographie se trompait de dix ans, et **la couche OCR de l'item la trompe encore** : elle transcrit « 1965 » là où la couverture imprime « 1955 ». Item : `DTIC_AD0604647`. | Couverture lue en image, corroborée par le tampon de réception de 1964, par la référence la plus tardive de la bibliographie (janvier 1955) et par le voisinage de série |
+| Candidat 3, « rapport ASTIA/DTIC du filon HMMS, identité à préciser » | **O.N.R. Research Memorandum No. 30**, « A Linear Decision Rule for Production and Employment Scheduling », **Charles C. Holt, Franco Modigliani et Herbert A. Simon**, mai 1955, Graduate School of Industrial Administration, Carnegie Institute of Technology. Item : `DTIC_AD0089515`. **Muth n'est pas auteur de cette pièce** : il est remercié parmi sept étudiants. Le sigle HMMS est celui du livre de 1960. | Page de titre lue en image |
+| Candidat 4, « rapport DTIC AD 422810, politique de stock, identité à préciser » | **RAND, papier P-189, « Optimal Inventory Policy », Kenneth Arrow, Theodore Harris et Jacob Marschak**, 5 septembre 1950, révisé le 16 novembre 1950. Item : `DTIC_AD0422810`. | Page de titre RAND présente dans le scan, image `n3`, les trois noms lus en clair ; DOI `10.2307/1906813` résolu en confirmation indépendante |
+
+**Le candidat 4 lève un angle mort d'accès de cette cartographie.** La section « Angles morts »
+consigne un `om-scout-randp189.html` fermé par un 403 anti-robot chez RAND. C'est le même texte.
+**Le mur n'a pas été franchi ; le texte a été atteint par une autre voie légitime**, le miroir
+`dticarchive`. C'est la conduite que le protocole prescrit devant un défi anti-robot, et elle a
+rendu deux fois cette nuit.
+
+## Deux pièges d'accès, constatés indépendamment par plusieurs lecteurs
+
+**Le dérivé d'image `.../page/n<N>_x1600.jpg` d'Internet Archive rogne le feuillet à gauche** sur
+ces items, et ampute le début de chaque ligne sans que rien ne le signale : 3 126 pixels rendus
+pour 4 726 réels sur un des rapports, ce qui fait perdre à la page de titre le « O. » de
+« O. N. R. » et le « Ch » de « Charles ». **Le dérivé sans suffixe, `.../page/n<N>.jpg`, rend la
+page entière.** Deux lecteurs l'ont trouvé séparément. Un agent qui citerait sur `_x1600`
+citerait des lignes tronquées en croyant relire une image.
+
+**La couche texte d'un de ces rapports porte une date fausse**, et c'est probablement l'origine
+de l'erreur de dix ans ci-dessus. La règle du corpus tient sans amendement : l'image fait foi,
+l'OCR ne suffit jamais.
+
+## La question de droits, tranchée dans deux sens opposés, et pour deux motifs distincts
+
+**Les trois rapports techniques gardent leur URL.** Aucun des trois items `dticarchive` ne porte
+de champ `rights`, `licenseurl` ni `possible-copyright-status`, et les mentions imprimées sur les
+pièces (« for OTS release », tampon DDC) sont des autorisations administratives de diffusion,
+pas des licences d'éditeur. La réserve est portée en clair dans les `notes` des six cartes. Elle
+n'empêche pas la carte, **cette voie étant déjà celle de deux cartes publiées de
+`decision-science`**, qui citent leur source primaire sous la forme
+`https://archive.org/details/DTIC_<identifiant>` en `consulted: full-text`.
+
+**Shewhart perd la sienne, et le motif n'est pas le même.** L'exemplaire ouvert appartient à
+`digitallibraryindia` / `JaiGyan`, numérisation de masse dont l'item ne porte **aucun** champ de
+droits sur Internet Archive ; sa seule mention, `dc.rights: In Public Domain`, est une
+auto-déclaration du numériseur logée dans un champ descriptif qui contient par ailleurs deux
+erreurs bibliographiques avérées (`dc.date.citation: 1923`, `dc.publisher: [...] London`). Trois
+vérifications ont été jouées et écrites avec leur issue :
+
+1. aucune autorisation lisible sur l'hébergeur ;
+2. **aucun renouvellement de copyright retrouvé** dans la base de Stanford, et **le zéro est
+   interprétable** : `Shewhart` et `Economic Control of Quality` rendent 0 dans la même fenêtre de
+   quatre secondes où `Van Nostrand` rend 5, `Nostrand` 7 et `Eddington` 1. Le défi anti-robot F5
+   de l'interface HTML **n'a pas été contourné** : la voie employée est l'API JSON publique de
+   Blacklight, `catalog.json?q=<terme>&search_field=search`, servie sans challenge. La réserve
+   reste entière, un renouvellement introuvable n'étant pas un renouvellement inexistant ;
+3. la pièce n'est pas l'original, et son bloc de copyright est illisible sur le scan.
+
+**Décision : les trois cartes de Shewhart se font sans l'URL de cet exemplaire**, `consulted`
+restant `full-text` puisque le texte a été lu, la référence résolue seule par son **LCCN
+`31032090`** contre l'export MODS de la Bibliothèque du Congrès (la page HTML de ce service est
+une application JavaScript inutilisable). C'est la même règle que celle qui avait fait retirer les
+URL de six sources au lot de cybernétique, et **elle vaut désormais pour toute la collection
+`digitallibraryindia` dans ce dépôt**.
+
+## Trois attributions que la lecture a corrigées, et qui auraient faussé une carte
+
+- **Le lot économique n'est pas d'Arrow, Harris et Marschak, et leur propre texte le dit** :
+  page 9, « We believe this is, in essence, the solution advanced by R. H. Wilson, formerly of the
+  Bell Telephone Company ». Ce qui leur revient en propre est le traitement de l'incertitude.
+- **Le résultat sur deux postes n'est pas de Bellman, et son rapport le crédite trois fois** :
+  « Lemmas of S. Johnson », « The Result of S. Johnson », « the original one due to S. Johnson ».
+  Référence de Johnson vérifiée par DOI `10.1002/nav.3800010110` ; le rapport écrit d'ailleurs le
+  titre de la revue à l'envers, la forme juste étant *Naval Research Logistics Quarterly*.
+- **Shewhart n'invente pas le terme « assignable »** : il écrit « these causes were called
+  assignable », au passif et au passé, en rapportant une pratique antérieure des Bell Labs sans
+  nommer personne.
+
+Un homonyme à écarter, signalé par le lecteur de Bellman : **Bellman, Esogbue et Nabeshima,
+*Mathematical Aspects of Scheduling and Applications*, Pergamon, 1982**. Une source mal libellée
+y basculerait et daterait faussement une coécriture de 1955.
+
+## Ce que le balayage francophone a rendu, et ce qu'il n'a pas cherché
+
+Le manque le plus net de la cartographie d'ouverture est comblé pour un tiers. **Trois candidats
+atteignables, aucun lu**, chacun avec son URL testée et son code de retour :
+
+1. **Robert Guihéneuf, « Remarques sur la gestion des stocks dans l'entreprise »**, *Revue
+   économique*, vol. 7, n° 1, 1956, p. 68-91. DOI `10.3406/reco.1956.407156` **résolu**, et
+   l'identifiant Persée `reco_0035-2764_1956_num_7_1_407156` en vient, il n'a pas été deviné.
+   Page servie en 200. Porte le dimensionnement des stocks et la discussion du lot économique.
+2. **Claude Fiore, « Une démarche nouvelle : la production en flux tendus »**, *Revue française de
+   gestion*, n° 63, 1987, p. 51-61. Persée `rfg_0338-4551_1987_num_63_1_2668`, page servie en 200.
+   **Réserve à lever avant toute lecture** : cet identifiant vient d'un moteur de recherche et
+   **non d'une résolution de DOI**, aucun DOI n'ayant été trouvé. La règle du dépôt n'est donc pas
+   honorée sur ce candidat, et elle doit l'être avant qu'il serve.
+3. **David De Almeida, « Agrégation des données pour l'évaluation des performances de systèmes
+   flexibles de production par modèles à réseaux de files d'attente »**, *RAIRO Recherche
+   opérationnelle*, vol. 32, n° 2, 1998, p. 145-192. Numdam `RO_1998__32_2_145_0`, page servie en
+   200 ; **le GET du PDF n'a pas été testé**, seul un HEAD a rendu 405. Vigilance de périmètre
+   transmise telle quelle : ce texte vient de la souche mathématisée, et c'est la lecture qui doit
+   trancher s'il éclaire le comportement d'un système ou seulement ses résultats propres. Sa
+   thèse de 1996 au LIMOS est citée dans sa bibliographie et pourrait être la meilleure source.
+
+**Un vide vérifié, et il est étroit** : l'API de theses.fr rend 0 pour la requête « théorie des
+contraintes » et « goulot ». C'est un vide **pour cette requête**, pas sur le sujet.
+
+**Ce que ce balayage n'a pas fait, et qui reste donc entier** : HAL, Cairn et OpenEdition Books
+n'ont reçu que des recherches web générales, **jamais une interrogation de leur propre moteur**.
+Quatre points d'entrée du périmètre n'ont reçu aucune requête ciblée : les files d'attente pour le
+service, la maintenance et la fiabilité au sens de l'ingénieur, la conception des systèmes de
+service, et la variabilité propagée le long d'une chaîne. Le budget de vingt requêtes a été
+consommé par le triage de Persée et de Numdam.
+
+## Ce qui reste en réserve dans les textes déjà ouverts
+
+Ce sont les reprises les moins chères du domaine, leur accès étant constaté et leur texte lu :
+
+- **Shewhart, parties V et VI** : la carte de contrôle comme objet graphique, et surtout **limites
+  de contrôle contre limites de tolérance**. Non instruites, lues en OCR seulement, donc aucune
+  citation relevable en l'état.
+- **Bellman, partie III** (p. 37-48) : lissage industriel, problème du traiteur, stock optimal.
+  Le lecteur la donne pour le second gisement du texte.
+- **Le rapport de planification** : son appendice de démonstration, annoncé au folio 43, **est
+  absent du scan**, qui s'arrête au folio 42.
+- **Les cinq candidats hérités des voisins restent tous non ouverts** : les trois rapports DoD de
+  `cybernetics` et les deux notices HAL de `human-factors`. Ce passage ne les a pas retentés.

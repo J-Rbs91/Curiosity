@@ -1,0 +1,87 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "etat-de-controle-statistique",
+  "slug": "etat-de-controle-statistique",
+  "status": "CANDIDATE",
+  "title": "L'état de contrôle statistique",
+  "themes": [
+    "variation-et-controle"
+  ],
+  "theme_labels": {
+    "variation-et-controle": "Ce qu'un procédé fait varier"
+  },
+  "authors": [
+    {
+      "name": "W. A. Shewhart",
+      "app_author_id": null
+    }
+  ],
+  "hook": "Un procédé sous contrôle est-il un procédé qui ne varie pas ?",
+  "summary": "Un phénomène est contrôlé quand l'expérience passée permet de prévoir, au moins dans des limites, comment il variera : une qualité contrôlée est variable, pas constante.",
+  "attribution_note": "Définition de W. A. Shewhart, seul auteur de l'ouvrage. Le nom sous lequel le concept circule aujourd'hui s'est fixé après ces deux pages, qui écrivent « controlled » et « objective state of control » ; l'expression consacrée apparaît plus loin dans le même livre, p. 146.",
+  "quotation": {
+    "text": "a controlled quality will not be a constant quality. Instead, a controlled quality must be a variable quality.",
+    "reference": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931.",
+    "locator": "p. 6",
+    "language": "en",
+    "original_text": "...that we must also accept as axiomatic that a controlled quality will not be a constant quality. Instead, a controlled quality must be a variable quality. This is the first characteristic.",
+    "original_language": "en",
+    "translation": {
+      "kind": "none",
+      "translator": null,
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931, xiv-501 p. (LCCN 31032090)",
+      "kind": "primary",
+      "locator": "p. 6 et p. 34",
+      "doi_isbn": "LCCN 31032090",
+      "consulted": "full-text"
+    },
+    {
+      "label": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, Milwaukee, American Society for Quality Control, 1980 (réimpression).",
+      "kind": "primary",
+      "doi_isbn": "978-0-87389-076-2",
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle, session du 25 août 2026",
+    "date": "2026-08-25",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "CITATION — relue sur l'image de page, pas sur l'OCR. Exemplaire ouvert : Internet Archive, item in.ernet.dli.2015.150272 (scan d'un tirage D. Van Nostrand, page de titre https://archive.org/download/in.ernet.dli.2015.150272/page/n0.jpg : « Economic Control of Quality of Manufactured Product / By W. A. SHEWHART, Ph.D. / Member of the Technical Staff / Bell Telephone Laboratories, Inc. / SEVENTH PRINTING / D. VAN NOSTRAND COMPANY, Inc. »). Feuillet n17 = page numérotée 6 (en-tête « 6  ECONOMIC CONTROL OF QUALITY ») : « It follows, therefore, since we are thus willing to accept as axiomatic that we cannot do what we want to do and cannot hope to understand why we cannot, that we must also accept as axiomatic that a controlled quality will not be a constant quality. Instead, a controlled quality must be a variable quality. This is the first characteristic. » Le texte de la fiche et son original_text sont mot pour mot ce qui est imprimé, et l'amorce coupée est signalée par les points de suspension. Langue anglaise, aucune traduction : la déclaration translation.kind = none est juste.",
+      "CITATION, précision typographique (n'affecte pas le verdict) : sur la page imprimée, « variable » est en italique dans « must be a variable quality ». La fiche restitue le mot sans emphase ; le libellé est identique.",
+      "LOCATOR p. 34 (deuxième renvoi de la source primaire) — vérifié sur l'image, feuillet n45, en-tête « 34  ECONOMIC CONTROL OF QUALITY », section « 6. Conclusion » : « It seems reasonable to believe that there is an objective state of control, making possible the prediction of quality within limits even though the causes of variability are unknown. » Le locator « p. 6 et p. 34 » et la mention consulted = full-text sont exacts.",
+      "PROSE — le résumé décalque la définition imprimée à la même page 6, section « 3. Definition of Control » (image n17, bas de page, en italique dans l'original) : « For our present purpose a phenomenon will be said to be controlled when, through the use of past experience, we can predict, at least within limits, how the phenomenon may be expected to vary in the future. » La seconde moitié du résumé (« une qualité contrôlée est variable, pas constante ») est le premier caractère de contrôle énoncé douze lignes plus haut sur la même page. L'accroche est une question, elle n'affirme rien que la page ne porte. Aucun adjectif en excès relevé ; le glissement « phenomenon » → « procédé » dans l'accroche reste dans l'objet déclaré du livre (le produit manufacturé) et ne durcit pas le propos.",
+      "SOURCES 1 — LCCN 31032090 résolu par l'export MODS (https://lccn.loc.gov/31032090/mods, la page HTML étant une application JavaScript) : titre « Economic control of quality of manufactured product », auteur « Shewhart, Walter A. (Walter Andrew), 1891-1967 », New York, D. Van Nostrand Company, Inc., 1931, extent « xiv, 501 p. illus., diagrs. 24 cm. », OCLC 1045408, LCC TS155 .S47. Chaque élément affiché par la fiche (lieu, éditeur, année, xiv-501 p.) correspond à la notice.",
+      "SOURCES 2 — ISBN 978-0-87389-076-2 (= 0873890760) résolu par Open Library (https://openlibrary.org/api/books?bibkeys=ISBN:0873890760, notice OL1641789M) : Shewhart, American Society for Quality Control, réimpression 1980, xiv-501 p., LC TS155 .S47 1980. Conforme au libellé et à la mention consulted = metadata-only.",
+      "ATTRIBUTION — ouvrage signé du seul W. A. Shewhart (page de titre ci-dessus, et notice LC : « by W.A. Shewhart »), pas de coauteur ni d'éditeur scientifique masqué. Le concept lui revient bien : le mémorandum de mai 1924 à Bell Telephone Laboratories, l'article « Economic Quality Control of Manufactured Product » (Bell System Technical Journal, 9-2, avril 1930, item IA bstj9-2-364) puis le livre de 1931 forment la première formulation publiée de l'état de contrôle statistique. Aucune source rencontrée n'attribue le concept à un prédécesseur ; je n'ai relevé que des attributions de popularisation ultérieure (Deming, ASQC), ce qui ne conteste pas la paternité.",
+      "CE QUE JE N'AI PAS PU ATTEINDRE — HathiTrust renvoie un 403 sur la recherche plein texte comme sur le catalogue ; la réimpression ASQC 1980 (IA economiccontrolo0000shew) est en prêt restreint et sa recherche interne ne m'a rien rendu. La collation page à page a donc été faite sur un tirage postérieur (« Seventh printing ») de la même édition Van Nostrand, à composition et pagination identiques (mêmes numéros de page, même mise en page ; extent xiv-501 p. identique à la notice LC de 1931). Je n'ai pas eu sous les yeux le premier tirage de 1931 lui-même ; rien dans ce que j'ai ouvert ne suggère une pagination différente.",
+      "ÉDITION, 25 août 2026 — corrections hors mandat appliquées : l'ambiguïté de l'attribution_note est levée, elle dit « ces deux pages » et signale que l'expression consacrée apparaît p. 146 du même ouvrage ; la fausseté des métadonnées Internet Archive de l'item in.ernet.dli.2015.150272 est consignée dans les notes de la fiche. La fiche reste en candidats : le plafond de volume du lot est de huit cartes et neuf ont reçu PASS. Ce n'est pas un défaut, et la raison de la désignation est écrite dans ses notes."
+    ]
+  },
+  "notes": [
+    "Réserve de vocabulaire, et elle porte sur le titre de la carte. Le syntagme « state of statistical control » n'est pas celui des deux pages fondatrices retenues ici : la p. 6 écrit « controlled » et la p. 34 « objective state of control ». L'expression complète apparaît plus loin dans le livre (partie III). Le concept est bien de 1931 ; l'étiquette usuelle s'est stabilisée ensuite, y compris par la réception de W. Edwards Deming, qui a édité et diffusé Shewhart. Cette réception n'a pas été instruite et n'est affirmée nulle part sur la carte. Le titre garde la formule parce que c'est sous ce nom que le concept se cherche.",
+    "La définition entière de la p. 6, en italiques dans le texte, est : « a phenomenon will be said to be controlled when, through the use of past experience, we can predict, at least within limits, how the phenomenon may be expected to vary in the future ». Elle fait 182 caractères et ne pouvait pas être citée : la seule coupe qui la ramène sous le plafond supprime « through the use of past experience », qui est la condition même de la définition. C'est le résumé qui la porte.",
+    "Seconde citation possible, écartée : « there is an objective state of control, making possible the prediction of quality within limits even though the causes of variability are unknown » (p. 34) est verbatim et tient dans le plafond, mais elle commence au milieu d'une phrase dont le début, « It seems reasonable to believe that », porte la prudence de l'auteur. La citer ainsi durcirait une hypothèse en affirmation.",
+    "Le mot « variable » est en italiques dans l'imprimé ; l'italique tombe à l'affichage, ce qui ne change pas le sens. La citation retenue commence à une frontière de proposition et ne coupe rien à l'intérieur : elle n'appelle pas de marque d'ellipse.",
+    "Matériau non porté sur la carte : la p. 34 énumère cinq avantages de l'état de contrôle, tous de gestion (réduction du coût d'inspection, réduction du coût de rebut, plein bénéfice de la production de masse, qualité uniforme même quand le contrôle est destructif, resserrement des tolérances quand la mesure de qualité est indirecte). Ils mériteraient peut-être une carte à eux seuls.",
+    "Exemplaire ouvert : un septième tirage, sans année à la page de titre, postérieur à 1943 (l'adresse de l'éditeur emploie la zone postale à un chiffre, « 250 Fourth Avenue, New York 3 », introduite en 1943), donc situé entre 1943 et 1963 environ. Le bloc de copyright est illisible sur le scan : ni millésime, ni mention de réserve de droits, ni historique de tirages. La référence affichée, 1931, D. Van Nostrand Company, Inc., New York, est prise sur le catalogue de la Library of Congress (LCCN 31032090, export MODS : xiv, 501 p.), et non sur la pièce. Les folios cités sont ceux du tirage lu et n'ont pas été collationnés contre l'édition de 1931.",
+    "La source primaire est citée sans URL, et c'est une décision motivée. L'exemplaire lu appartient à une numérisation de masse (collections digitallibraryindia et JaiGyan sur Internet Archive) dont la notice ne porte aucun champ de droits : ni rights, ni licenseurl, ni possible-copyright-status, ni sponsor. La seule mention de droits du dossier est un « dc.rights: In Public Domain » auto-déclaré par le numériseur, logé dans un bloc descriptif qui contient par ailleurs deux erreurs bibliographiques avérées (date 1923, éditeur donné à Londres). Aucun renouvellement de copyright n'a été retrouvé dans la base des renouvellements de Stanford, avec témoins positifs concluants, mais un renouvellement introuvable n'est pas un renouvellement inexistant ; et le titre est toujours exploité commercialement. Aucune autorisation d'ayant droit n'est donc constatée. Le texte a bien été lu intégralement, d'où consulted : full-text ; c'est l'URL qui tombe, pas la lecture. La référence résout seule par son LCCN.",
+    "La préface de l'imprimé est datée « April, 1923 », relue caractère par caractère sur l'image. C'est bibliographiquement impossible : l'ouvrage paraît en 1931 et met en épigraphe Eddington (1928) et Bridgman (1927). C'est de cette ligne que vient le « 1923 » de la notice du numériseur. Elle est constatée ici, pas corrigée.",
+    "Aucune source secondaire n'a été ouverte pour cette carte et aucune réception francophone n'a été cherchée : le passage dont elle sort était une lecture primaire et rien d'autre. L'avertissement du validateur sur l'absence de source secondaire est donc exact. La seconde source affichée n'est pas un commentaire : c'est la réimpression de l'ouvrage par l'American Society for Quality Control (1980), retenue parce qu'elle résout par ISBN et donne au lecteur un exemplaire trouvable. Elle n'a pas été ouverte, sa pagination n'a pas été vérifiée, et les folios cités ne sont pas les siens.",
+    "Statistical Method from the Viewpoint of Quality Control (1939), où Shewhart reprend et déplace cette définition, n'a pas été ouvert : rien n'est affirmé ici sur l'évolution de sa pensée entre 1931 et 1939.",
+    "Aucune traduction française publiée n'a été vérifiée : la citation reste en anglais, translation.kind à none.",
+    "Correction appliquée au tour d'édition du 25 août 2026, sur remarque hors mandat du contrôle : l'attribution_note était ambiguë. Lue comme portant sur les deux pages citées (p. 6 et p. 34), elle était exacte ; lue comme portant sur le livre, elle était fausse, « the state of statistical control » figurant p. 146 du même ouvrage, dans un chapitre intitulé « Statistical Control ». Le contrôleur l'y a vérifié sur l'image du feuillet. La note dit désormais « ces deux pages » et signale la p. 146.",
+    "Piège documentaire à connaître avant tout recontrôle : les métadonnées de l'item Internet Archive in.ernet.dli.2015.150272 sont fausses sur deux points, la date affichée « 1923 » et l'éditeur donné à « London ». L'image de la page de titre les dément. C'est l'image qui fait foi, jamais la notice ni la couche OCR.",
+    "Pourquoi cette fiche reste en candidats alors qu'elle a reçu PASS sur les quatre questions du contrôle aveugle du 25 août 2026 : elle n'est écartée pour aucun défaut, c'est le plafond de volume du lot, huit cartes, qui la retient, et neuf ont été instruites et reçues. Elle a été désignée plutôt qu'une autre parce que son titre porte un syntagme, « état de contrôle statistique », que les deux pages qui la fondent n'emploient pas : la p. 6 écrit « controlled », la p. 34 « objective state of control ». Le contrôleur a établi que l'expression consacrée se trouve p. 146, dans une partie du livre que personne n'a dépouillée. Un passage qui lira cette partie écrira une meilleure carte. Son verdict est conservé dans corpus/review/etat-de-controle-statistique.verdict.json."
+  ]
+}

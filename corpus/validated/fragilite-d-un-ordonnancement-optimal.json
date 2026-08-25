@@ -1,0 +1,74 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "fragilite-d-un-ordonnancement-optimal",
+  "slug": "fragilite-d-un-ordonnancement-optimal",
+  "status": "VALIDATED",
+  "title": "Un ordonnancement optimal peut être fragile",
+  "themes": [
+    "ordonnancer"
+  ],
+  "theme_labels": {
+    "ordonnancer": "L'ordre dans lequel les choses passent"
+  },
+  "authors": [
+    {
+      "name": "Richard Bellman",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Richard Bellman signe seul le rapport RAND P-651, révisé le 23 mai 1955, et ce paragraphe ne crédite aucun tiers. Bellman écrit toutefois lui-même que ces idées sont bien connues des praticiens et qu'une formulation mathématique précise lui semble difficile : il les met en forme, il ne les revendique pas.",
+  "hook": "Un plan optimal en moyenne tient-il quand les durées varient ?",
+  "summary": "Si les temps opératoires varient, l'ordre qui minimise le temps total espéré peut admettre une grande variance : un plan plus lâche, doté de marge, peut être préférable.",
+  "quotation": {
+    "text": "[…] a \"looser\" solution with more flexibility and slack, which is comparatively unaffected by minor variations, may be more desirable.",
+    "reference": "Richard Bellman, Mathematical Aspects of Scheduling Theory, RAND Corporation, rapport P-651, révisé le 23 mai 1955.",
+    "locator": "p. 26",
+    "language": "en",
+    "original_text": "Consequently, for many purposes a \"looser\" solution with more flexibility and slack, which is comparatively unaffected by minor variations, may be more desirable.",
+    "original_language": "en",
+    "translation": {
+      "kind": "none"
+    }
+  },
+  "sources": [
+    {
+      "label": "Richard Bellman, Mathematical Aspects of Scheduling Theory, RAND Corporation, rapport P-651, révisé le 23 mai 1955, 70 p.",
+      "kind": "primary",
+      "locator": "p. 25-26, § 11",
+      "url": "https://archive.org/details/DTIC_AD0604647",
+      "consulted": "full-text"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle, session du 25 août 2026",
+    "date": "2026-08-25",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "Pièce ouverte : le PDF du scan DTIC AD0604647 téléchargé depuis https://archive.org/download/DTIC_AD0604647/DTIC_AD0604647.pdf (2 940 744 octets, md5 f430e85e68acbf1f7aa2ee13cce9b5ad, 74 images). Les deux autres voies ont été refusées et je le déclare comme tel : https://www.rand.org/content/dam/rand/pubs/papers/2014/P651.pdf et https://apps.dtic.mil/sti/tr/pdf/AD0604647.pdf renvoient tous deux un 403 (mur CloudFront / DTIC). Je n'ai donc pas pu confronter la notice éditeur RAND ; l'exemplaire lu est le scan officiel du même rapport.",
+      "SOURCES — la page https://archive.org/details/DTIC_AD0604647 répond 200 ; sa notice donne title « DTIC AD0604647: MATHEMATICAL ASPECTS OF SCHEDULING THEORY », date « 1955-05-23 », imagecount 74. La page de titre du document (image, 250 dpi, pas la couche OCR) porte, dans le cartouche : « MATHEMATICAL ASPECTS OF SCHEDULING THEORY / by / Richard Bellman / P-651 / Revised 23 May 1955 », avec l'accession « AD-604647 » manuscrite en marge. La couche OCR d'Internet Archive transcrit ici « Revised 23 M*iy 19^5 » : l'image tranche, la date de la fiche (23 mai 1955) est la bonne. La pagination imprimée s'arrête à « -70- » (index PDF 73), ce qui valide le « 70 p. » de la fiche ; les 74 images comprennent la page de titre et le liminaire en chiffres romains (i, ii, iii).",
+      "SOURCES — le locator « p. 25-26, § 11 » résout. L'en-tête de l'index PDF 28 porte « P-651 / -25- » et cette page ouvre « §11. Stochastic Versions » ; l'index PDF 29 porte « P-651 / -26- » et s'y achève le §11 avant « §12. Queuing Theory ». La table des matières (index PDF 1) annonce d'ailleurs « 11. Stochastic Versions 25 » et « 12. Queuing Theory 26 ».",
+      "CITATION — relue sur l'image de la page 26 (rendu PyMuPDF 400 dpi du feuillet entier, aucune couche OCR employée pour trancher). Le texte imprimé est : « This problem introduces some interesting questions concerning the \"stability\" or \"stiffness\" of a scheduling policy. An ordering which minimizes the expected total time may very well permit of a large variance. Consequently, for many purposes a \"looser\" solution with more flexibility and slack, which is comparatively unaffected by minor variations, may be more desirable. » Le champ original_text de la fiche reproduit cette dernière phrase mot pour mot ; le champ text la donne coupée en tête, coupe signalée par […] à la place de « Consequently, for many purposes ». Langue déclarée en, translation kind none : conforme, il n'y a pas de traduction à déclarer.",
+      "ATTRIBUTION — Bellman signe seul (page de titre, aucun coauteur), et le §11 ne crédite aucun tiers : les crédits nominatifs du rapport portent ailleurs (S. Johnson aux §3-4). L'attribution_note de la fiche est exacte et vérifiée sur l'image : la phrase qui suit immédiatement la citation, p. 26, est bien « Although these ideas are, of course, well-known in practice, a precise mathematical formulation seems difficult. » La fiche déclare donc elle-même que Bellman met en forme sans revendiquer la paternité de l'idée — c'est une réserve énoncée, pas une lacune tue. Mes recherches n'ont fait apparaître aucun antécédent nommé pour cette formulation de la « stability »/« stiffness » d'une politique d'ordonnancement.",
+      "PROSE — le hook (« Un plan optimal en moyenne tient-il quand les durées varient ? ») reprend exactement la situation posée en tête du §11 : les temps opératoires deviennent stochastiques, et « a knowledge of expected values of individual processing times will not be sufficient to determine the minimum total expected time » (p. 25-26). Le summary suit phrase à phrase la source : « l'ordre qui minimise le temps total espéré peut admettre une grande variance » = « An ordering which minimizes the expected total time may very well permit of a large variance » ; « un plan plus lâche, doté de marge, peut être préférable » = « a \"looser\" solution with more flexibility and slack […] may be more desirable ». Le modal « peut » conserve le « may » ; aucun adjectif n'ajoute de portée. Le titre « Un ordonnancement optimal peut être fragile » reste dans la marge des termes de Bellman (« stability » ou « stiffness » d'une politique).",
+      "ÉDITION, 25 août 2026 — correction hors mandat appliquée : les notes de la fiche consignent que ce rapport a été publié ensuite en revue, Journal of the Society for Industrial and Applied Mathematics, vol. 4, n° 3, septembre 1956, p. 168-205, et que la fiche cite le rapport RAND, qui est la pièce consultée, avec la pagination du rapport et non celle de la revue. Aucun champ affiché n'est touché."
+    ]
+  },
+  "notes": [
+    "Bellman écrit lui-même, au même paragraphe : « Although these ideas are, of course, well-known in practice, a precise mathematical formulation seems difficult. » La carte ne présente donc pas cette idée comme une découverte de sa part.",
+    "Bellman ne propose ici aucune méthode : il écrit, juste avant, que « Nothing is known about the solution even in the two stage process » pour la version stochastique. Il pose un manque, et la carte ne doit pas laisser croire le contraire.",
+    "Il ne quantifie rien dans ce paragraphe et n'en donne aucun exemple chiffré : aucune loi ni aucun ordre de grandeur ne peut lui être prêté.",
+    "Il range la question sous le nom de « stabilité » ou de « raideur » d'une politique d'ordonnancement. Aucun verbatim retenu ne porte le mot « stiffness » : le tracé de ses guillemets est ambigu sur le scan, et la lecture primaire a refusé de fixer une typographie qu'elle ne lisait pas avec certitude.",
+    "Autre verbatim relu sur la même image, non retenu, p. 26 : « An ordering which minimizes the expected total time may very well permit of a large variance. » Le résumé en porte le contenu.",
+    "La date se lit sur la couverture de l'exemplaire numérisé : « P-651 / Revised 23 May 1955 ». La couche texte OCR de l'item transcrit « Revised 23 May 1965 », et la cartographie du domaine reprend cette date fausse. La couverture dit « révisé », non « publié » : il a existé une version antérieure, dont la date n'est pas connue.",
+    "Confusion bibliographique à empêcher : un homonyme quasi parfait existe, coécrit, Bellman, Esogbue et Nabeshima, Mathematical Aspects of Scheduling and Applications, Pergamon, 1982. Ce n'est pas le texte lu. La source porte donc en clair le rapport RAND, son numéro de papier et son année. P-651 est un rapport technique, non un article publié : aucune publication en revue n'a été vérifiée.",
+    "Aucune source secondaire n'est portée sur cette carte : la lecture primaire n'en a vérifié aucune sur ce point précis, et préfère n'en donner aucune plutôt qu'une source non ouverte.",
+    "Autorisation d'ayant droit : l'item Internet Archive DTIC_AD0604647 est servi publiquement, sans restriction d'emprunt, mais sa notice ne porte aucun champ rights, licenseurl ni possible-copyright-status. Les mentions « for OTS release » et le tampon DDC portés par la pièce sont des autorisations administratives de diffusion, non une licence de l'ayant droit, qui est la RAND Corporation. Accès public constaté, autorisation d'ayant droit non constatée.",
+    "Citation relue sur https://archive.org/download/DTIC_AD0604647/page/n29.jpg, dérivé pleine largeur ; le dérivé _x1600 rogne le feuillet à gauche et ampute le début de chaque ligne. Le mot « looser » est bien entre guillemets doubles sur la page, et le mot « solution » y est coupé en fin de ligne, la transcription le recolle.",
+    "Publication ultérieure, signalée par le contrôle du 25 août 2026 : ce rapport RAND P-651 a été publié ensuite en revue sous le même titre, Journal of the Society for Industrial and Applied Mathematics, vol. 4, n° 3, septembre 1956, p. 168-205. La fiche cite le rapport RAND, qui est la pièce consultée, et la pagination affichée pour le § 11 est celle du rapport, non celle de la revue."
+  ]
+}
