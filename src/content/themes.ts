@@ -42,6 +42,21 @@ import type { Theme } from "@/types";
  * elle-même qu'un seul concept devrait en sortir. Les deux courants existent, leurs textes
  * sont ouverts et lus, et ils attendent le passage suivant plutôt qu'une page à une carte.
  *
+ * Les trois thèmes d'`operations-management` sont écrits le 25 août 2026, après le contrôle
+ * aveugle des huit cartes du lot d'ouverture, et non d'après la proposition de la
+ * cartographie. Celle-ci en avançait quatre, un par candidat, en prévenant elle-même que
+ * c'était trop peu : « aucun de ces quatre thèmes n'atteint le seuil de plusieurs candidats
+ * indépendants ». La lecture a tranché autrement, et par le bas plutôt que par le haut :
+ * deux des quatre candidats répondent à la même question, combien produire et combien en
+ * tenir, l'un par les stocks et l'autre par le couple production et effectifs, et ils se
+ * réunissent donc sous un seul thème qui porte quatre cartes. Les deux autres se séparent,
+ * l'un sur la variation d'un procédé, l'autre sur l'ordre de passage, et portent deux cartes
+ * chacun. Aucun des trois ne repose sur une carte unique.
+ *
+ * Une neuvième carte a été instruite, contrôlée et reçue `PASS` la même nuit, et elle n'est
+ * pas projetée : le plafond de volume du lot est de huit. Elle attend en `corpus/candidates/`
+ * avec son verdict, et elle est le premier travail du passage suivant sur ce domaine.
+ *
  * Conséquence directe, visible ci-dessous : aucun thème n'est déclaré ici pour la santé
  * publique ni pour la mesure du bien-être, alors que le périmètre de `measurement-theory`
  * demandait de les balayer ; ni, en ergonomie de l'activité, pour la charge de travail comme
@@ -403,5 +418,39 @@ export const themes: Theme[] = [
     description:
       "Entre la théorie qui prescrit et l'observation qui décrit, il reste à outiller celui qui doit décider pour de bon. Ce thème porte sur ce qu'une méthode d'aide construit à sa place : les critères qu'elle retient, ce qu'elle refuse d'agréger, et le moment où le problème lui-même se formule.",
     domain: "decision-science",
+  },
+  // --- Operations Management ------------------------------------------------
+  {
+    id: "variation-et-controle",
+    slug: "variation-et-controle",
+    title: "Ce qu'un procédé fait varier",
+    tagline:
+      "Deux pièces ne sont jamais identiques, et ce n'est pas toujours une panne.",
+    keywords: ["Hasard", "Cause assignable", "Limites"],
+    description:
+      "Un procédé qui répète la même opération ne rend jamais deux fois le même résultat, et la question de gestion n'est pas de supprimer cet écart mais de savoir lequel mérite qu'on aille chercher sa cause. Ce thème porte sur le partage entre ce qui varie sans raison particulière et ce qui signale un dérangement, et sur le critère qui tranche entre les deux.",
+    domain: "operations-management",
+  },
+  {
+    id: "produire-et-stocker",
+    slug: "produire-et-stocker",
+    title: "Combien produire, combien en tenir",
+    tagline:
+      "Un stock coûte, une rupture aussi : il faut trancher entre les deux.",
+    keywords: ["Stock", "Rupture", "Capacité"],
+    description:
+      "Décider combien fabriquer, combien tenir en réserve et combien de gens employer sont trois questions qu'on ne peut pas trancher séparément, chacune reportant son coût sur les deux autres. Ce thème porte sur les règles qui rendent ce partage calculable, sur ce que le coût d'une rupture y pèse, et sur ce qu'elles supposent pour tenir.",
+    domain: "operations-management",
+  },
+  {
+    id: "ordonnancer",
+    slug: "ordonnancer",
+    title: "L'ordre dans lequel les choses passent",
+    tagline:
+      "Le même travail, rangé autrement, ne prend pas le même temps.",
+    keywords: ["Ordonnancement", "Temps mort", "Aléa"],
+    description:
+      "Quand des tâches doivent passer les unes après les autres sur les mêmes postes, le total de travail ne change pas mais le temps qu'il faut pour l'écouler, si. Ce thème porte sur ce que l'ordre déplace réellement, sur le temps mort où il agit, et sur ce qui arrive à un ordre optimal quand les durées ne sont pas celles qu'on croyait.",
+    domain: "operations-management",
   },
 ];

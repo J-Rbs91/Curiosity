@@ -1,0 +1,95 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "regle-lineaire-de-decision",
+  "slug": "regle-lineaire-de-decision",
+  "status": "VALIDATED",
+  "title": "Une règle linéaire calculée une fois pour toutes",
+  "themes": [
+    "produire-et-stocker"
+  ],
+  "theme_labels": {
+    "produire-et-stocker": "Combien produire, combien en tenir"
+  },
+  "authors": [
+    {
+      "name": "Charles C. Holt",
+      "app_author_id": null
+    },
+    {
+      "name": "Franco Modigliani",
+      "app_author_id": null
+    },
+    {
+      "name": "Herbert A. Simon",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Concept coécrit par Charles C. Holt, Franco Modigliani et Herbert A. Simon, dont les trois noms se lisent sur la page de titre du mémorandum de recherche O.N.R. n° 30, daté de mai 1955.",
+  "hook": "Faut-il refaire le calcul chaque mois, ou appliquer une formule fixe ?",
+  "summary": "Approcher les coûts de l'atelier par une forme quadratique rend des règles linéaires : le calcul lourd est fait une fois, la conduite mensuelle devient une formule.",
+  "quotation": {
+    "text": "We obtain a set of linear equations, and then invert the matrix of these equations to obtain the decision rules.",
+    "reference": "Charles C. Holt, Franco Modigliani et Herbert A. Simon, A Linear Decision Rule for Production and Employment Scheduling, O.N.R. Research Memorandum n° 30, 1955.",
+    "locator": "p. 24",
+    "language": "en",
+    "original_text": "Once the parameters of the cost function are estimated, the decision rule solution may be obtained by differentiating with respect to each decision variable. We obtain a set of linear equations, and then invert the matrix of these equations to obtain the decision rules. Fortunately, the results of this procedure can be reduced to a formula, requiring only a routine computation.",
+    "original_language": "en",
+    "translation": {
+      "kind": "none"
+    }
+  },
+  "sources": [
+    {
+      "label": "Charles C. Holt, Franco Modigliani et Herbert A. Simon, A Linear Decision Rule for Production and Employment Scheduling, O.N.R. Research Memorandum n° 30, Carnegie Institute of Technology, mai 1955, 42 p.",
+      "kind": "primary",
+      "locator": "p. 24",
+      "url": "https://archive.org/details/DTIC_AD0089515",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Charles C. Holt, Franco Modigliani et Herbert A. Simon, « A Linear Decision Rule for Production and Employment Scheduling », Management Science, vol. 2, n° 1, octobre 1955, p. 1-30.",
+      "kind": "primary",
+      "locator": "p. 1-30",
+      "doi_isbn": "10.1287/mnsc.2.1.1",
+      "url": "https://doi.org/10.1287/mnsc.2.1.1",
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle, session du 25 août 2026",
+    "date": "2026-08-25",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "ATTRIBUTION — Ouvert l'image de la page de titre du mémorandum, feuillet n2 de l'item Internet Archive DTIC_AD0089515 (https://archive.org/download/DTIC_AD0089515/page/n2.jpg, 4735x6135 px). J'y lis, sur l'image et non sur l'OCR : « O. N. R. RESEARCH MEMORANDUM NO. 30 / A LINEAR DECISION RULE FOR PRODUCTION AND EMPLOYMENT SCHEDULING / by / Charles C. Holt, Franco Modigliani / and Herbert A. Simon* », puis « May 1955 / Graduate School of Industrial Administration / Carnegie Institute of Technology ». La note d'appel de l'astérisque ajoute : « This paper was written by Mr. Holt, but it rests on research done by all three authors. » L'attribution_note de la fiche est donc exacte mot pour mot, y compris la coécriture à trois et la date de mai 1955.",
+      "ATTRIBUTION (contrôle du risque de sur- et de sous-attribution) — La règle linéaire de décision est bien née de ce trio en 1955, et non d'un prédécesseur : la littérature de synthèse (Singhal & Singhal, « Holt, Modigliani, Muth, and Simon's work and its role in the renaissance and evolution of operations management », Journal of Operations Management, 2007, doi 10.1016/j.jom.2006.06.003) situe l'origine à Holt, Modigliani & Simon 1955, John F. Muth n'entrant en signature qu'avec « Derivation of a Linear Decision Rule for Production and Employment », Management Science, vol. 2 n° 2, 1956, p. 159-177, puis avec le livre de 1960. Dans le mémorandum de 1955, Muth n'est remercié que comme étudiant de troisième cycle, ce que confirme la note de la page de titre lue ci-dessus. La fiche ne l'ajoute pas aux auteurs : c'est le choix correct, et c'est l'erreur usuelle qu'elle évite (le sigle « HMMS » à quatre lettres circule couramment pour ce corpus).",
+      "CITATION — Ouvert l'image du feuillet portant le folio imprimé « Page 24. » : feuillet n30 de l'item (https://archive.org/download/DTIC_AD0089515/page/n30.jpg, 4726x6127 px, sans suffixe _x1600, donc feuillet entier et non rogné à gauche). J'ai localisé le feuillet par le DjVu XML (OBJECT n° 31, usemap DTIC_AD0089515_0030.djvu), puis relu sur l'image. La page s'ouvre sur le titre de section « IV. The Optimal Decision Rules for the Paint Factory », et le premier paragraphe porte, à l'image : « Once the parameters of the cost function are estimated, the decision rule solution may be obtained by differentiating with respect to each decision variable. We obtain a set of linear equations, and then invert the matrix of these equations to obtain the decision rules. Fortunately, the results of this procedure can be reduced to a formula, requiring only a routine computation. » Le champ quotation.text de la fiche — « We obtain a set of linear equations, and then invert the matrix of these equations to obtain the decision rules. » — est verbatim, sans coupe, et le locator « p. 24 » est celui du folio imprimé sur la page. Pas de traduction à déclarer : la citation est donnée en anglais, langue de l'original, et translation.kind vaut bien « none ».",
+      "CITATION (réserve consignée, sans effet sur la valeur) — Le champ quotation.original_text, qui donne le contexte élargi, transcrit « the decision solution may be obtained » là où l'image porte « the decision rule solution may be obtained ». Un mot, « rule », y manque, et l'omission n'est pas signalée par […]. Le passage effectivement cité n'est pas touché ; je le signale comme correction à appliquer plutôt que comme motif de renvoi, et je le reporte sous hors_mandat.",
+      "SOURCES (1/2) — La source primaire résout intégralement. L'item https://archive.org/details/DTIC_AD0089515 porte en métadonnées date 1955-05-01, 57 feuillets, collection dticarchive ; la page de titre confirme le n° 30, l'institution et le mois. La collation « 42 p. » est exacte : j'ai vérifié le dernier folio imprimé sur l'image du feuillet n56 (https://archive.org/download/DTIC_AD0089515/page/n56.jpg), qui porte « Page 42. » suivi du dernier paragraphe (« Since it is anticipated that the decision rule discussed in this paper will be applicable in its present form to a good many other factories, a technical appendix is attached… »). L'écart entre 57 feuillets et 42 pages s'explique par les deux couvertures ASTIA/Carnegie, la page de titre, la table des matières et les planches de figures hors folio, que j'ai vues au dépouillement feuillet par feuillet du DjVu XML.",
+      "SOURCES (2/2) — La source secondaire résout exactement à ce qu'elle annonce. Le DOI 10.1287/mnsc.2.1.1 rend chez Crossref (api.crossref.org/v1/works/10.1287/mnsc.2.1.1) : titre « A Linear Decision Rule for Production and Employment Scheduling », Management Science, volume 2, issue 1, pages 1-30, published-print 1955-10, éditeur INFORMS, et les trois auteurs Charles C. Holt, Franco Modigliani, Herbert A. Simon, tous affiliés au Carnegie Institute of Technology. La page d'atterrissage https://pubsonline.informs.org/doi/10.1287/mnsc.2.1.1 affiche les mêmes éléments (vol. 2, n° 1, 1er octobre 1955, p. 1-30). Tous les champs affichés par la fiche pour cette référence sont confirmés. La fiche déclare pour elle consulted = metadata-only : la déclaration est exacte, je n'ai pas non plus atteint le texte intégral de la version Management Science, qui est sous péage INFORMS — c'est un accès refusé, pas un silence de la littérature, et la fiche ne s'appuie de toute façon sur elle pour aucune assertion de contenu.",
+      "SOURCES (moyen employé) — L'outil verify_reference du serveur documentary n'était pas exposé dans cette session ; j'ai résolu le DOI par interrogation directe de Crossref et par la page d'éditeur, ce qui donne le même contrôle notice contre fiche. Aucun ISBN ni LCCN à résoudre dans ce dossier.",
+      "PROSE (hook) — « Faut-il refaire le calcul chaque mois, ou appliquer une formule fixe ? » L'alternative est portée mot pour mot par la page 24 lue à l'image : d'un côté « the decision rule solution may be obtained by differentiating […] and then invert the matrix », de l'autre « the results of this procedure can be reduced to a formula, requiring only a routine computation » ; et la périodicité mensuelle est explicite au paragraphe suivant, « There are two decision rules to be applied at the beginning of each month ». L'accroche n'ajoute rien.",
+      "PROSE (summary) — « Approcher les coûts de l'atelier par une forme quadratique rend des règles linéaires : le calcul lourd est fait une fois, la conduite mensuelle devient une formule. » Chaque membre se vérifie sur le mémorandum. Le caractère approché est dans le texte même et non prêté par la fiche : la planche du feuillet n17 est intitulée « APPROXIMATING COST FUNCTION », et la section III s'intitule « A Quadratic Criterion for the Scheduling Decisions in a Paint Factory ». Le passage du quadratique au linéaire est le contenu exact de la phrase citée. « Fait une fois » est soutenu par « It can be proved mathematically, once and for all, that the decisions yielded by the optimal decision rule are the best possible for the given cost function », lu à l'image p. 24. Le résumé se garde de toute majoration : il ne dit pas « optimal » sans condition, il ne parle pas de règle valable pour toute usine, il ne promet pas de gain de coût — trois débordements qu'autorisaient les sources et que la fiche n'a pas commis. Un seul mot est plus lâche que l'original, « atelier » pour la paint factory du mémorandum, mais il reste en deçà du texte au lieu de l'excéder, et il ne fait porter au résumé aucune affirmation que la source ne porte pas.",
+      "RATTACHEMENT — Vérifié contre corpus/perimeter.md, section operations-management (lignes 1241 et suivantes), au seul titre de la définition de périmètre : le thème affiché « produire-et-stocker / Combien produire, combien en tenir » correspond à l'objet du mémorandum, qui règle conjointement le taux de production agrégé et l'effectif au vu des stocks et des commandes prévues. Rien à signaler.",
+      "ÉDITION, 25 août 2026 — corrections hors mandat appliquées : quotation.original_text lit désormais « the decision rule solution may be obtained by differentiating », le mot « rule » étant tombé à la transcription ; le champ affiché quotation.text est inchangé, reste verbatim et fait 112 caractères, sous le plafond de 150. La source Management Science passe de secondary-academic à primary, étant la publication en revue du même texte, son consulted restant metadata-only. La fiche n'affiche plus de source secondaire : le validateur le signale en avertissement, et l'avertissement est exact."
+    ]
+  },
+  "notes": [
+    "L'annexe qui démontre le résultat est absente de l'exemplaire numérisé : la table des matières annonce « APPENDIX: Derivation of the Conditions for Minimum Costs 43 », et le scan s'arrête au folio 42. La phrase du texte « It can be proved mathematically, once and for all, that the decisions yielded by the optimal decision rule are the best possible for the given cost function » a donc été lue sans sa démonstration, et rien n'est affirmé ici sur cette démonstration.",
+    "Cette phrase a été écartée comme citation : elle fait 157 caractères, et la seule coupe qui la ramènerait sous le plafond supprimerait « for the given cost function », c'est-à-dire la condition qui la borne. Elle deviendrait une promesse d'optimalité inconditionnelle. La citation retenue est la phrase qui la précède immédiatement, dans le même paragraphe.",
+    "La signature de cette pièce est à trois noms. John F. Muth n'en est pas auteur : il figure dans la note de la page de titre parmi sept graduate students remerciés pour leur assistance. Le sigle HMMS est celui du livre de 1960, pas de ce mémorandum de 1955.",
+    "La note appelée sur la page de titre dit : « Research undertaken for the project Planning and Control of Industrial Operations, under a grant from the Office of Naval Research. This paper was written by Mr. Holt, but it rests on research done by all three authors. » C'est une cosignature, non une paternité unique.",
+    "Le numéro du contrat ONR n'est pas lisible sur la pièce : la note dit seulement « under a grant from the Office of Naval Research », sans numéro, et le tampon d'autorisation de reproduction de la page de titre est trop pâle pour être lu en entier. Il n'est pas complété depuis une source tierce.",
+    "Les règles chiffrées (équations 11 et suivantes, p. 24-28) sont dans un OCR fortement dégradé et n'ont pas été relues sur image : aucun coefficient numérique ne passe sur la carte. Tout le chiffrage du rapport porte sur une seule usine, un fabricant de peinture non nommé, sur 1949-1954, et le rapport écrit lui-même p. 40 qu'il serait « rash of the authors to generalize these conclusions to industry generally ».",
+    "La règle est rétroactive, elle prend en argument l'effectif et le stock de fin du mois précédent. Ce caractère n'est pas instruit ici : le principe de la boucle relève du domaine voisin cybernetics.",
+    "L'article de Management Science d'octobre 1955 est postérieur de cinq mois au rapport et plus court de douze pages ; le rapport écrit p. 1 « The new method, published for the first time in this paper ». L'article n'a pas été ouvert, il figure en source non ouverte, et aucun verbatim ne s'y localise.",
+    "Autorisation d'ayant droit : l'item Internet Archive DTIC_AD0089515 est servi publiquement, sans restriction d'emprunt, mais sa notice ne porte aucune mention de licence ni de statut de droits. La couverture ASTIA porte au contraire une clause de restitution au gouvernement des États-Unis. Accès public constaté, autorisation d'ayant droit non constatée.",
+    "Piège d'accès : le dérivé d'image .../page/n<N>_x1600.jpg rogne ce feuillet à gauche et ampute la première colonne de caractères de chaque ligne ; le dérivé sans suffixe, .../page/n<N>.jpg, rend le feuillet entier. Citation relue sur https://archive.org/download/DTIC_AD0089515/page/n30.jpg.",
+    "Correction appliquée au tour d'édition du 25 août 2026, sur remarque hors mandat du contrôle : le champ quotation.original_text portait « the decision solution may be obtained by differentiating ». Le mot « rule » était tombé à la transcription, et le contrôleur l'a relu sur l'image du feuillet portant le folio « Page 24. ». Le champ affiché, quotation.text, n'est pas touché : il cite la phrase suivante, « We obtain a set of linear equations… », qui reste verbatim et sous le plafond de 150 caractères.",
+    "Typage de la seconde source, corrigé au même tour et à ne pas « corriger » en sens inverse : l'article de Management Science d'octobre 1955 est la publication en revue du même texte, signée des trois mêmes auteurs, non un commentaire. Son kind passe de secondary-academic à primary, le consulted restant metadata-only, le texte INFORMS étant sous péage et n'ayant été ouvert ni par la lecture primaire ni par le contrôle. La fiche n'affiche donc plus aucune source secondaire, ce que le validateur signale en avertissement, et cet avertissement est exact."
+  ]
+}

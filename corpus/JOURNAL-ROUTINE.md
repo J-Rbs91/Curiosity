@@ -5,6 +5,42 @@ coup d'œil ce que la précédente a fait, sur quelle branche elle l'a laissé, 
 reprendre. **Les scripts priment sur ce fichier** : il dit ce qui a été tenté et pourquoi, ils
 disent ce qui est.
 
+## Passage 03/15 — 2026-08-25
+
+- branche      : `claude/zen-johnson-f21p0e` (imposée par la session, pas `main`), pull request [#78](https://github.com/J-Rbs91/Curiosity/pull/78) vers `main`, **ouverte et non fusionnée à la clôture**. **Le travail du passage 02 est fusionné dans `main`** (PR #76, commit `45cbae0`), et cette branche part de `main` à jour : rien n'est refait. Tant que la présente pull request n'est pas fusionnée, **la nuit suivante reprend depuis cette branche**.
+- phase        : 1 (ouverture de domaine) — `operations-management`, huitième domaine, **le domaine rend enfin ses cartes**. Périmètre et cartographie existaient depuis le passage 02 : cette nuit a sauté ces deux étapes et instruit directement, comme le passage 02 l'avait prescrit.
+- validées     : 8 — `cause-de-hasard-et-cause-assignable`, `trois-sigmas-arbitrage-de-cout`, `regle-de-commande-a-deux-niveaux`, `penalite-de-rupture`, `regle-lineaire-de-decision`, `absorber-les-fluctuations-de-commandes`, `attente-du-poste-aval`, `fragilite-d-un-ordonnancement-optimal` (**les 8 avec citation, toutes relues sur l'image de la page**)
+- en review    : 1 — `etat-de-controle-statistique`, **`PASS` sur les quatre questions au premier tour**, retenue par le seul plafond de volume et non par un défaut. Reste en `corpus/candidates/` avec son verdict.
+- rejetées     : 0
+- approfondies : 0 (une nuit d'ouverture n'en écrit pas)
+- contrôles    : validate 0 erreur (84 enregistrements, 82 validés, 55 avertissements) · build à jour, `git diff` propre sur `src/content/generated/` après commit · test 476/0 · lint 0 · audit : `operations-management` passe de « corpus en cours de constitution » à **3 thèmes / 8 validés / 1 en cours**
+- commit       : `379ed46`, commit unique de clôture du passage 03 (les huit cartes, les trois thèmes, la cartographie corrigée et les trois écritures de consignation).
+- bloqué par   : **rien.** La leçon opératoire du passage 02 a été appliquée à la lettre et elle a tenu : sources pré-identifiées avant le lancement des agents, interdiction de relire les gros fichiers en entier, écriture du fichier de sortie exigée tôt, requêtes bornées. Les cinq agents de la première vague ont tous écrit dans les deux minutes et aucun n'a été arrêté, là où trois scouts consécutifs avaient consommé la nuit précédente. Deux manques subsistent, déclarés et non masqués : **aucune source secondaire n'a été ouverte sur les huit cartes**, et **le balayage francophone a rendu trois candidats atteignables sans qu'aucun soit lu**, son budget de vingt requêtes ayant été consommé par le triage de Persée et de Numdam.
+- la nuit suivante prend : **phase 1, `work-psychology`.** Trois domaines restent à zéro carte, la condition A est donc encore vraie, et l'ordre de rendement de la §2 désigne la psychologie du travail. C'est un balayage entier : ni périmètre, ni cartographie, ni stock d'entrée, un seul cas de frontière consigné (Mackworth 1948 sur la vigilance, **tranché du côté de `human-factors` et donc pas à réclamer**). L'ordre d'ouverture est alors non négociable : périmètre, puis scout, puis thèmes, puis concepts.
+
+### Ce que cette nuit a établi, en une phrase
+
+Le huitième domaine sur onze, ouvert sans carte depuis deux passages, rend huit cartes qui portent
+toutes une citation relue sur l'image, et trois thèmes dont aucun ne repose sur une carte unique.
+
+### Ce qu'il faut savoir avant de reprendre ce domaine
+
+- **La reprise la moins chère du dépôt est `etat-de-controle-statistique`** : écrite, contrôlée,
+  reçue `PASS`, et retenue par le plafond. Ce qui la ferait meilleure est nommé : son titre porte
+  un syntagme que les deux pages qui la fondent n'emploient pas, et le contrôleur a établi que
+  l'expression consacrée se lit p. 146, dans une partie du livre que personne n'a dépouillée.
+- **Les identités bibliographiques des quatre candidats sont désormais établies sur la pièce**, et
+  trois des quatre étaient mal décrites par la cartographie. Le détail est dans la section
+  « Reprise du 25 août 2026 » de `corpus/map/operations-management.scouting.md`, qui fait foi
+  contre les sections antérieures du même fichier.
+- **Trois candidats francophones sont atteignables et non lus** : Guihéneuf 1956 sur Persée (DOI
+  résolu), Fiore 1987 sur Persée (**identifiant non confirmé par DOI, à reconfirmer avant usage**),
+  De Almeida 1998 sur Numdam (**GET du PDF non testé**). C'est la reprise la plus rentable du
+  domaine, et elle comble le manque que le passage 02 déclarait comme son principal.
+- **Deux gisements restent ouverts dans des textes déjà lus** : les parties V et VI de Shewhart
+  (limites de contrôle contre limites de tolérance) et la partie III de Bellman (lissage
+  industriel, stock optimal).
+
 ## Passage 02/15 — 2026-08-24
 
 - branche      : `claude/zen-johnson-zfxtk9` (imposée par la session, pas `main`), pull request vers `main`. Le travail du passage 01 (PR #71) **est fusionné dans `main`**, et cette branche part de `main` à jour : rien n'est refait. Tant que la présente pull request n'est pas fusionnée, **la nuit suivante reprend depuis cette branche**.

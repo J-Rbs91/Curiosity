@@ -12,6 +12,38 @@ import type { Concept } from "@/types";
 
 export const generatedConcepts: Concept[] = [
   {
+    "id": "absorber-les-fluctuations-de-commandes",
+    "slug": "absorber-les-fluctuations-de-commandes",
+    "title": "Stock, heures ou effectif : le coût se déplace",
+    "authorLabel": "Charles C. Holt, Franco Modigliani, Herbert A. Simon",
+    "hookQuestion": "Par où faire passer une fluctuation de commandes qu'on ne peut pas supprimer ?",
+    "shortExplanation": "Une fluctuation de commandes se répartit entre le stock, les heures et l'effectif : aucune voie pure ne convient, et le dosage dépend des coûts de l'usine.",
+    "authors": [],
+    "themes": [
+      "produire-et-stocker"
+    ],
+    "themeLabel": "Combien produire, combien en tenir",
+    "attributionNote": "Concept coécrit par Charles C. Holt, Franco Modigliani et Herbert A. Simon, dont les trois noms se lisent sur la page de titre du mémorandum de recherche O.N.R. n° 30, daté de mai 1955.",
+    "quotation": {
+      "text": "Order fluctuations should, in general, be absorbed partly by inventory, partly by overtime, and partly by hiring and layoffs […].",
+      "reference": "Charles C. Holt, Franco Modigliani et Herbert A. Simon, A Linear Decision Rule for Production and Employment Scheduling, O.N.R. Research Memorandum n° 30, 1955, p. 8"
+    },
+    "sources": [
+      {
+        "label": "Charles C. Holt, Franco Modigliani et Herbert A. Simon, A Linear Decision Rule for Production and Employment Scheduling, O.N.R. Research Memorandum n° 30, Carnegie Institute of Technology, mai 1955, 42 p. hors appendice.",
+        "kind": "primary",
+        "reference": "p. 8, chapitre II",
+        "url": "https://archive.org/details/DTIC_AD0089515"
+      },
+      {
+        "label": "Charles C. Holt, Franco Modigliani et Herbert A. Simon, « A Linear Decision Rule for Production and Employment Scheduling », Management Science, vol. 2, n° 1, octobre 1955, p. 1-30.",
+        "kind": "secondary-academic",
+        "reference": "10.1287/mnsc.2.1.1",
+        "url": "https://doi.org/10.1287/mnsc.2.1.1"
+      }
+    ]
+  },
+  {
     "id": "activite-empechee",
     "slug": "activite-empechee",
     "title": "Le réel de l'activité",
@@ -130,6 +162,38 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "attente-du-poste-aval",
+    "slug": "attente-du-poste-aval",
+    "title": "L'ordre ne change que l'attente du poste aval",
+    "authorLabel": "Richard Bellman",
+    "hookQuestion": "Sur deux machines, que change vraiment l'ordre dans lequel les pièces passent ?",
+    "shortExplanation": "La charge du second poste ne dépend pas de l'ordre : le temps total, c'est ce travail plus l'attente du poste aval. L'ordonnancement n'agit que sur cette attente.",
+    "authors": [],
+    "themes": [
+      "ordonnancer"
+    ],
+    "themeLabel": "L'ordre dans lequel les choses passent",
+    "attributionNote": "Le rapport RAND P-651, révisé le 23 mai 1955, est signé de Richard Bellman seul. Bellman y présente le résultat sur l'ordonnancement à deux postes comme celui de S. Johnson : il intitule ses paragraphes 3 et 4 « Lemmas of S. Johnson » et « The Result of S. Johnson », et renvoie pour la démonstration à l'article de Johnson paru en mars 1954. Ce qui revient à Bellman dans ces pages est l'exposition, l'exemple chiffré et une redérivation par la programmation dynamique.",
+    "quotation": {
+      "text": "The rule yields (5, 1, 4, 3, 2) as the minimal order with a total time of 47 units […]. For the reversed order, the total time is 78 […].",
+      "reference": "Richard Bellman, Mathematical Aspects of Scheduling Theory, RAND Corporation, rapport P-651, révisé le 23 mai 1955, p. 15"
+    },
+    "sources": [
+      {
+        "label": "Richard Bellman, Mathematical Aspects of Scheduling Theory, RAND Corporation, rapport P-651, révisé le 23 mai 1955, 70 p.",
+        "kind": "primary",
+        "reference": "p. 11-15",
+        "url": "https://archive.org/details/DTIC_AD0604647"
+      },
+      {
+        "label": "S. M. Johnson, « Optimal two- and three-stage production schedules with setup times included », Naval Research Logistics Quarterly, vol. 1, n° 1, mars 1954, p. 61-68.",
+        "kind": "secondary-academic",
+        "reference": "10.1002/nav.3800010110",
+        "url": "https://doi.org/10.1002/nav.3800010110"
+      }
+    ]
+  },
+  {
     "id": "automatisation-centree-humain",
     "slug": "automatisation-centree-humain",
     "title": "Automatisation centrée sur l'humain",
@@ -243,6 +307,36 @@ export const generatedConcepts: Concept[] = [
         "kind": "primary",
         "reference": "« The notion of catachresis » · HAL hal-01020705",
         "url": "https://hal.science/hal-01020705v1"
+      }
+    ]
+  },
+  {
+    "id": "cause-de-hasard-et-cause-assignable",
+    "slug": "cause-de-hasard-et-cause-assignable",
+    "title": "Cause de hasard et cause assignable",
+    "authorLabel": "W. A. Shewhart",
+    "hookQuestion": "Quelles variations d'un procédé méritent qu'on leur cherche une cause ?",
+    "shortExplanation": "Shewhart partage la variabilité d'un procédé entre un système constant de causes de hasard et des causes dites assignables, que le fabricant doit trouver et supprimer.",
+    "authors": [],
+    "themes": [
+      "variation-et-controle"
+    ],
+    "themeLabel": "Ce qu'un procédé fait varier",
+    "attributionNote": "Distinction exposée par W. A. Shewhart, seul auteur de l'ouvrage. Le terme d'assignable n'est pas revendiqué par lui : il écrit que ces causes « ont été appelées » ainsi, en rapportant une pratique antérieure de l'ingénierie d'inspection du système Bell, sans nommer personne.",
+    "quotation": {
+      "text": "Hence, to secure control, the manufacturer must seek to find and eliminate assignable causes.",
+      "reference": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931, p. 14"
+    },
+    "sources": [
+      {
+        "label": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931, xiv-501 p. (LCCN 31032090)",
+        "kind": "primary",
+        "reference": "p. 6, 12-14 · LCCN 31032090"
+      },
+      {
+        "label": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, Milwaukee, American Society for Quality Control, 1980 (réimpression).",
+        "kind": "primary",
+        "reference": "978-0-87389-076-2"
       }
     ]
   },
@@ -1034,6 +1128,32 @@ export const generatedConcepts: Concept[] = [
         "kind": "primary",
         "reference": "p. 385-387 · 10.3406/psy.1953.8725",
         "url": "https://www.persee.fr/doc/psy_0003-5033_1953_num_53_1_8725"
+      }
+    ]
+  },
+  {
+    "id": "fragilite-d-un-ordonnancement-optimal",
+    "slug": "fragilite-d-un-ordonnancement-optimal",
+    "title": "Un ordonnancement optimal peut être fragile",
+    "authorLabel": "Richard Bellman",
+    "hookQuestion": "Un plan optimal en moyenne tient-il quand les durées varient ?",
+    "shortExplanation": "Si les temps opératoires varient, l'ordre qui minimise le temps total espéré peut admettre une grande variance : un plan plus lâche, doté de marge, peut être préférable.",
+    "authors": [],
+    "themes": [
+      "ordonnancer"
+    ],
+    "themeLabel": "L'ordre dans lequel les choses passent",
+    "attributionNote": "Richard Bellman signe seul le rapport RAND P-651, révisé le 23 mai 1955, et ce paragraphe ne crédite aucun tiers. Bellman écrit toutefois lui-même que ces idées sont bien connues des praticiens et qu'une formulation mathématique précise lui semble difficile : il les met en forme, il ne les revendique pas.",
+    "quotation": {
+      "text": "[…] a \"looser\" solution with more flexibility and slack, which is comparatively unaffected by minor variations, may be more desirable.",
+      "reference": "Richard Bellman, Mathematical Aspects of Scheduling Theory, RAND Corporation, rapport P-651, révisé le 23 mai 1955, p. 26"
+    },
+    "sources": [
+      {
+        "label": "Richard Bellman, Mathematical Aspects of Scheduling Theory, RAND Corporation, rapport P-651, révisé le 23 mai 1955, 70 p.",
+        "kind": "primary",
+        "reference": "p. 25-26, § 11",
+        "url": "https://archive.org/details/DTIC_AD0604647"
       }
     ]
   },
@@ -1962,6 +2082,38 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "penalite-de-rupture",
+    "slug": "penalite-de-rupture",
+    "title": "La pénalité de rupture rend le stock calculable",
+    "authorLabel": "Kenneth Arrow, Theodore Harris, Jacob Marschak",
+    "hookQuestion": "Combien garder d'avance, quand on n'a jamais chiffré ce que coûte de manquer ?",
+    "shortExplanation": "Chiffrer la pénalité de rupture rend le stock calculable : le niveau à tenir est celui où le coût d'une unité de plus égale son utilité marginale espérée.",
+    "authors": [],
+    "themes": [
+      "produire-et-stocker"
+    ],
+    "themeLabel": "Combien produire, combien en tenir",
+    "attributionNote": "Concept coécrit par Kenneth Arrow, Theodore Harris et Jacob Marschak, énoncé dans le papier RAND P-189 daté du 5 septembre 1950 et révisé le 16 novembre 1950, dont les trois noms se lisent sur la page de titre.",
+    "quotation": {
+      "text": "The organization […] has a general idea of the value it would attach to the damage that would be caused by the non-availability of an item",
+      "reference": "Kenneth Arrow, Theodore Harris et Jacob Marschak, Optimal Inventory Policy, RAND Corporation, P-189, 1950, p. 19"
+    },
+    "sources": [
+      {
+        "label": "Kenneth Arrow, Theodore Harris et Jacob Marschak, Optimal Inventory Policy, RAND Corporation, P-189, 5 septembre 1950, révisé le 16 novembre 1950, 47 p.",
+        "kind": "primary",
+        "reference": "p. 19-21, sections 3:B à 3:E",
+        "url": "https://archive.org/details/DTIC_AD0422810"
+      },
+      {
+        "label": "Kenneth J. Arrow, Theodore Harris et Jacob Marschak, « Optimal Inventory Policy », Econometrica, vol. 19, n° 3, juillet 1951, p. 250 et suivantes.",
+        "kind": "primary",
+        "reference": "10.2307/1906813",
+        "url": "https://doi.org/10.2307/1906813"
+      }
+    ]
+  },
+  {
     "id": "penser-a-partir-des-valeurs",
     "slug": "penser-a-partir-des-valeurs",
     "title": "Penser à partir des valeurs",
@@ -2247,6 +2399,70 @@ export const generatedConcepts: Concept[] = [
         "label": "Warren S. McCulloch, Embodiments of Mind, Cambridge (Mass.), MIT Press, 1965.",
         "kind": "primary",
         "reference": "ISBN 0262130181"
+      }
+    ]
+  },
+  {
+    "id": "regle-de-commande-a-deux-niveaux",
+    "slug": "regle-de-commande-a-deux-niveaux",
+    "title": "La règle de commande à deux niveaux, s et S",
+    "authorLabel": "Kenneth Arrow, Theodore Harris, Jacob Marschak",
+    "hookQuestion": "Quand faut-il recommander, et jusqu'où remonter le stock ?",
+    "shortExplanation": "Deux nombres suffisent : sous un seuil, on commande de quoi remonter le stock au niveau cible ; au-dessus, rien. Le coût fixe d'une commande impose l'écart.",
+    "authors": [],
+    "themes": [
+      "produire-et-stocker"
+    ],
+    "themeLabel": "Combien produire, combien en tenir",
+    "attributionNote": "Concept coécrit par Kenneth Arrow, Theodore Harris et Jacob Marschak, énoncé dans le papier RAND P-189 daté du 5 septembre 1950 et révisé le 16 novembre 1950, dont les trois noms se lisent sur la page de titre.",
+    "quotation": {
+      "text": "Choose two numbers S and s, S > s > 0, and let them define the following rule of action:",
+      "reference": "Kenneth Arrow, Theodore Harris et Jacob Marschak, Optimal Inventory Policy, RAND Corporation, P-189, 1950, p. 24"
+    },
+    "sources": [
+      {
+        "label": "Kenneth Arrow, Theodore Harris et Jacob Marschak, Optimal Inventory Policy, RAND Corporation, P-189, 5 septembre 1950, révisé le 16 novembre 1950, 47 p.",
+        "kind": "primary",
+        "reference": "p. 24, règle (4.4)",
+        "url": "https://archive.org/details/DTIC_AD0422810"
+      },
+      {
+        "label": "Kenneth J. Arrow, Theodore Harris et Jacob Marschak, « Optimal Inventory Policy », Econometrica, vol. 19, n° 3, juillet 1951, p. 250 et suivantes.",
+        "kind": "secondary-academic",
+        "reference": "10.2307/1906813",
+        "url": "https://doi.org/10.2307/1906813"
+      }
+    ]
+  },
+  {
+    "id": "regle-lineaire-de-decision",
+    "slug": "regle-lineaire-de-decision",
+    "title": "Une règle linéaire calculée une fois pour toutes",
+    "authorLabel": "Charles C. Holt, Franco Modigliani, Herbert A. Simon",
+    "hookQuestion": "Faut-il refaire le calcul chaque mois, ou appliquer une formule fixe ?",
+    "shortExplanation": "Approcher les coûts de l'atelier par une forme quadratique rend des règles linéaires : le calcul lourd est fait une fois, la conduite mensuelle devient une formule.",
+    "authors": [],
+    "themes": [
+      "produire-et-stocker"
+    ],
+    "themeLabel": "Combien produire, combien en tenir",
+    "attributionNote": "Concept coécrit par Charles C. Holt, Franco Modigliani et Herbert A. Simon, dont les trois noms se lisent sur la page de titre du mémorandum de recherche O.N.R. n° 30, daté de mai 1955.",
+    "quotation": {
+      "text": "We obtain a set of linear equations, and then invert the matrix of these equations to obtain the decision rules.",
+      "reference": "Charles C. Holt, Franco Modigliani et Herbert A. Simon, A Linear Decision Rule for Production and Employment Scheduling, O.N.R. Research Memorandum n° 30, 1955, p. 24"
+    },
+    "sources": [
+      {
+        "label": "Charles C. Holt, Franco Modigliani et Herbert A. Simon, A Linear Decision Rule for Production and Employment Scheduling, O.N.R. Research Memorandum n° 30, Carnegie Institute of Technology, mai 1955, 42 p.",
+        "kind": "primary",
+        "reference": "p. 24",
+        "url": "https://archive.org/details/DTIC_AD0089515"
+      },
+      {
+        "label": "Charles C. Holt, Franco Modigliani et Herbert A. Simon, « A Linear Decision Rule for Production and Employment Scheduling », Management Science, vol. 2, n° 1, octobre 1955, p. 1-30.",
+        "kind": "primary",
+        "reference": "10.1287/mnsc.2.1.1",
+        "url": "https://doi.org/10.1287/mnsc.2.1.1"
       }
     ]
   },
@@ -2752,6 +2968,36 @@ export const generatedConcepts: Concept[] = [
         "kind": "primary",
         "reference": "chap. 4, p. 89-107 · HAL tel-00464801",
         "url": "https://theses.hal.science/tel-00464801/document"
+      }
+    ]
+  },
+  {
+    "id": "trois-sigmas-arbitrage-de-cout",
+    "slug": "trois-sigmas-arbitrage-de-cout",
+    "title": "Trois sigmas, un arbitrage de coût",
+    "authorLabel": "W. A. Shewhart",
+    "hookQuestion": "Sur quoi repose le choix de trois sigmas plutôt que d'une autre limite ?",
+    "shortExplanation": "Faute de loi connue, Shewhart tient la base des limites pour empirique et arbitre entre le coût de chercher une panne inexistante et celui d'en manquer une réelle.",
+    "authors": [],
+    "themes": [
+      "variation-et-controle"
+    ],
+    "themeLabel": "Ce qu'un procédé fait varier",
+    "attributionNote": "Règle posée par W. A. Shewhart, seul auteur de l'ouvrage, et posée comme un choix d'expérience, pas comme un théorème. Le seul nom tiers de ces pages est celui de Tchebychev, dont l'inégalité borne les limites sans fixer la valeur retenue.",
+    "quotation": {
+      "text": "We are still faced with the choice of t. Experience indicates that t = 3 seems to be an acceptable economic value.",
+      "reference": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931, p. 277"
+    },
+    "sources": [
+      {
+        "label": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931, xiv-501 p. (LCCN 31032090)",
+        "kind": "primary",
+        "reference": "p. 276-277 · LCCN 31032090"
+      },
+      {
+        "label": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, Milwaukee, American Society for Quality Control, 1980 (réimpression).",
+        "kind": "primary",
+        "reference": "978-0-87389-076-2"
       }
     ]
   },

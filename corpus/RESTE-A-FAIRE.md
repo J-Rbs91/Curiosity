@@ -5,7 +5,7 @@ relire tout le dépôt et sans redécouvrir ce que six lots ont déjà appris.
 
 Il ne double pas `corpus/ETAT.md`, qui dit ce que le corpus **est** ; celui-ci dit ce qu'il
 lui **manque**. Et il ne remplace aucun script : les chiffres ci-dessous sont un instantané
-du 22 août 2026, les commandes sont la vérité.
+du 25 août 2026, les commandes sont la vérité.
 
 ```bash
 npm run corpus:audit    # domaines, thèmes, cartes validées, sujets jamais instruits
@@ -23,34 +23,37 @@ script ne peut pas dire : quel travail est possible aujourd'hui, ce qu'il coûte
 
 | chantier | volume | recherche documentaire ? | état |
 |---|---|---|---|
-| **A.** Approfondissements | 8 cartes | non | **rouvert le 23 août 2026** |
+| **A.** Approfondissements | 16 cartes | non | **ouvert, et il a doublé le 25 août 2026** |
 | **B.** File de la sociologie des organisations | 25 entrées | oui, cartographie déjà faite | ouvert |
-| **C.** Domaines vides | 3 fermés + 1 ouvert sans carte | oui | ouvert |
-| **D.** Reprises courtes de `systems-thinking` et de `decision-science` | 4 textes | oui, accès déjà constaté | ouvert |
+| **C.** Domaines vides | 3 fermés | oui | ouvert |
+| **D.** Reprises courtes de trois domaines instruits | 9 textes | oui, accès déjà constaté | ouvert |
 
-Le chantier A s'était vidé le 21 août et **il se rouvre le 23** : les huit cartes de la science
-de la décision n'ont pas d'approfondissement. C'est délibéré, et non un oubli, la routine
-nocturne consacrant une phase entière à ce travail. Il reste ouvert le 24, la nuit ayant repris
-une ouverture de domaine plutôt que ce chantier.
+Le chantier A s'était vidé le 21 août et il se rouvre depuis. **Le 25, il double** : aux huit
+cartes de la science de la décision s'ajoutent les huit de l'operations management. C'est
+délibéré, et non un oubli, la routine nocturne consacrant une phase entière à ce travail et une
+nuit d'ouverture de domaine n'en écrivant pas. **La file est celle de `npm run corpus:deepen`,
+pas celle de ce fichier.**
 
-Le chantier C a perdu un domaine le 22 août, `systems-thinking`, et un second le 23,
-`decision-science`. **Le 24, `operations-management` est ouvert au stade périmètre +
-cartographie, mais sans carte** : il reste donc au chantier C, avec le statut particulier « ouvert,
-à instruire directement » — sa prochaine nuit saute périmètre et scout. Ce que le passage 02 a
-laissé derrière lui est détaillé plus bas, au bloc de ce domaine.
+Le chantier C a perdu un domaine le 22 août, `systems-thinking`, un second le 23,
+`decision-science`, et **un troisième le 25, `operations-management`**, qui a rendu huit cartes
+et trois thèmes deux nuits après avoir reçu son périmètre et sa cartographie. **Il n'y reste plus
+que les trois domaines de la famille « Comprendre les humains et les organisations »**, tous
+trois sans périmètre, sans cartographie et sans stock d'entrée.
 
 ---
 
 # A. Les approfondissements
 
-**Vidé le 21 août 2026, rouvert le 23.** Les vingt-cinq cartes qui n'en avaient pas en ont un :
-les treize de human factors et les douze de cybernétique. `corpus:deepen` projette
-**66 approfondissements, 95 772 mots, 1 451 en moyenne**.
+**Vidé le 21 août 2026, rouvert le 23, doublé le 25.** `corpus:deepen` projette toujours
+**66 approfondissements, 95 772 mots, 1 451 en moyenne**, et sa fin de sortie liste désormais
+**seize cartes** : les huit du lot d'ouverture de la science de la décision, du 23 août, et les
+huit du lot d'ouverture de l'operations management, du 25.
 
-Mais sa fin de sortie liste de nouveau **huit cartes**, celles du lot d'ouverture de la science
-de la décision, ouvert le 23 août. C'est le seul écart actuel du corpus entre ce qui est validé
-et ce qui est servi, et il se comble par `/corpus-deepen`, sans aucune recherche documentaire :
-la matière est la carte elle-même, sa lecture primaire et son verdict de contrôle.
+C'est le seul écart actuel du corpus entre ce qui est validé et ce qui est servi, et il se comble
+par `/corpus-deepen`, sans aucune recherche documentaire : la matière est la carte elle-même, sa
+lecture primaire et son verdict de contrôle. **Deux lots d'ouverture consécutifs l'ayant nourri,
+c'est aujourd'hui le chantier au meilleur rapport entre ce qu'il coûte et ce qu'il rend au
+lecteur.**
 
 **La file n'est pas tenue ici.** `npm run corpus:deepen` l'affiche en fin de sortie, et c'est
 elle qui fait foi.
@@ -150,24 +153,27 @@ tradition germanophone, que la file ne couvre pas.
 été entamé : périmètre écrit, cartographie, cartes, puis thèmes. Ce que ces passages ont appris
 est au chantier D et dans `corpus/ETAT.md`.
 
-**`operations-management` a été ouvert le 24 août au stade périmètre + cartographie, mais sans
-carte** (passage 02). Il ne quitte donc pas ce chantier : il y reste avec le statut « ouvert, à
-instruire directement ». Sa prochaine nuit saute périmètre et scout et attaque les concepts, en
-commençant par les deux candidats propres de sa cartographie (Shewhart 1931 ; Bellman, RAND
-P-651, 1965), puis les deux à identité à préciser (HMMS, AD 422810), en menant **en parallèle** le
-balayage complémentaire que la cartographie réclame (couche francophone, files d'attente,
-quantité économique de commande, flux tiré, contrainte).
+**`operations-management` a quitté ce chantier le 25 août** (passage 03) : ouvert au stade
+périmètre et cartographie le 24, il a rendu huit cartes et trois thèmes le 25. Son bloc de reprise
+est désormais au chantier D, avec les autres domaines instruits.
 
 | famille | domaine | périmètre | cartographie | stock d'entrée |
 |---|---|---|---|---|
-| Humains et organisations | Sociologie du travail | — | — | aucun |
-| Humains et organisations | Psychologie du travail | — | — | 1 cas de frontière |
-| Humains et organisations | Économie comportementale | — | — | aucun |
-| Production et systèmes | Operations Management | **écrit (24 août)** | **écrite (24 août)** | 4 candidats lus, 0 carte |
+| Humains et organisations | Sociologie du travail | — | — | Taylor et Braverman repérés, accès non vérifié |
+| Humains et organisations | Psychologie du travail | — | — | 1 cas de frontière, tranché ailleurs |
+| Humains et organisations | Économie comportementale | — | — | Schweitzer et Cachon 2000 repéré, paywallé |
 
-**Les trois domaines de la famille « Comprendre les humains et les organisations » sont
-désormais les seuls sans périmètre ni cartographie** : ce sont les trois derniers à ouvrir dans
-l'ordre complet. `operations-management`, lui, n'a plus qu'à être instruit.
+**Les trois domaines de la famille « Comprendre les humains et les organisations » sont désormais
+les seuls qui restent**, et ils n'ont ni périmètre, ni cartographie, ni stock d'entrée vérifié.
+Ce sont les trois derniers à ouvrir dans l'ordre complet.
+
+**Ce que chacun a reçu, et qui ne vaut pas stock d'entrée.** Le passage 02 leur a consacré à
+chacun une requête ciblée obligatoire, et aucune n'a produit de candidat vérifié en accès :
+Taylor (1911) et Braverman (1974) repérés pour le premier sans qu'aucun des deux textes primaires
+soit vérifié ; pour le deuxième, une littérature dispersée sans texte primaire identifiable, le
+classique attendu (Walker et Guest, *The Man on the Assembly Line*, 1952) n'étant pas remonté ;
+pour le troisième, Schweitzer et Cachon 2000 repéré et donné pour payant. **Trois repérages, aucun
+vide établi** : leur ouverture demandera un balayage entier.
 
 **Aucun des trois fermés n'a de périmètre écrit ni de cartographie.** Les ouvrir, c'est refaire
 l'ordre complet, et cet ordre n'est pas négociable : il a été appris en le violant.
@@ -236,32 +242,22 @@ le même écart pris comme **fait économique**, avec ses conséquences agrégé
 cartographie du 23 août n'a toutefois **rien cherché de ciblé** vers ce domaine : elle ne
 constitue donc aucun stock d'entrée, et son silence n'est pas un vide établi.
 
-## Operations Management — ouvert, à instruire directement (passage 02, 24 août)
+## La leçon opératoire qui a rendu le lot du 25 août, et qui vaut pour les trois derniers
 
-Le domaine a son périmètre et sa cartographie ; il n'a plus qu'à être instruit, et sa prochaine
-nuit **saute périmètre et scout**. La file d'instruction, dans l'ordre de solidité établi par
-`corpus/map/operations-management.scouting.md` :
+Elle est écrite ici parce qu'elle a été payée une nuit entière et remboursée la nuit suivante.
+**Les scouts et lecteurs de cette chaîne accumulent tout en contexte et n'écrivent qu'à leur
+dernière action.** Le passage 02 y a perdu son instruction, trois scouts consécutifs ayant été
+arrêtés pour cette raison. Le passage 03 a appliqué quatre contre-mesures et **ses cinq agents ont
+tous écrit dans les deux minutes, aucun n'a été arrêté** :
 
-1. **Shewhart, *Economic Control of Quality of Manufactured Product* (1931)** — maîtrise
-   statistique de la qualité, carte de contrôle, causes assignables contre variation de hasard.
-   Full-text lu. **Réserve** : l'édition et l'item Internet Archive exacts ne sont pas
-   reconfirmés, à documenter avant la fiche.
-2. **Bellman, *Mathematical Aspects of Scheduling Theory*, RAND P-651 (1965)** — l'ordonnancement
-   comme problème mathématique structuré. Full-text lu, rapport RAND en accès ouvert.
-3. **Rapport ASTIA/DTIC du filon HMMS** (planification agrégée production–stocks–main-d'œuvre) —
-   full-text lu, mais **identité bibliographique à préciser** avant toute fiche.
-4. **Rapport DTIC AD 422810** (politique de stock) — full-text lu, **identité à préciser**.
-
-Et, **en parallèle et non après coup**, le balayage complémentaire que la cartographie réclame
-avant toute déclaration de thème : la **couche francophone** non cherchée (Persée, HAL, Cairn,
-OpenEdition Books, theses.fr — gestion industrielle, productique, génie industriel), puis les
-files d'attente (Erlang, Little), la quantité économique de commande (Harris), le flux tiré et la
-théorie des contraintes, dont aucune source n'a encore été vérifiée en accès.
-
-**Leçon opératoire à appliquer dès le lancement des agents** : les scouts et lecteurs de cette
-chaîne accumulent tout en contexte et n'écrivent qu'en dernière action ; le passage 02 a perdu sa
-nuit d'instruction là-dessus. Pré-identifier les sources, interdire la relecture intégrale des
-gros textes déjà extraits, borner le nombre de requêtes, et exiger l'écriture tôt.
+1. **pré-identifier les sources avant de lancer un agent** : identifiant d'item, URL de l'OCR,
+   URL des images, taille attendue du fichier. Un scout ne doit pas chercher ce qu'une requête de
+   trente secondes peut lui donner ;
+2. **interdire la relecture intégrale d'un gros fichier** : les OCR font 70 à 780 Ko, ils se
+   travaillent au `grep` par fenêtres, jamais avec l'outil de lecture ;
+3. **borner le nombre de requêtes réseau**, et demander à l'agent d'en tenir le compte ;
+4. **exiger l'écriture du fichier de sortie tôt**, dès la première section, et par éditions
+   successives. « Un fichier partiel vaut infiniment mieux qu'un fichier parfait jamais écrit. »
 
 ## Le piège que ces domaines partagent
 
@@ -275,7 +271,43 @@ revient toujours par une autre porte.
 
 ---
 
-# D. Les reprises courtes de `systems-thinking` et de `decision-science`
+# D. Les reprises courtes des domaines instruits
+
+## Cinq reprises laissées par le lot du 25 août, sur `operations-management`
+
+Ce sont les moins chères du dépôt, et la première ne demande aucune recherche.
+
+**`etat-de-controle-statistique` est écrite, contrôlée et reçue `PASS`**, et elle attend en
+`corpus/candidates/` avec son verdict dans `corpus/review/`. Elle n'a pas été publiée pour un
+défaut mais **pour le plafond de volume du lot**. Ce qui la rendrait meilleure est nommé par son
+contrôleur : son titre porte un syntagme que les deux pages qui la fondent n'emploient pas, et
+l'expression consacrée se lit p. 146 du même livre, dans une partie que personne n'a dépouillée.
+
+**Trois candidats francophones sont atteignables et non lus**, et ils comblent le manque que la
+cartographie déclarait comme son principal :
+
+1. **Guihéneuf, « Remarques sur la gestion des stocks dans l'entreprise »**, *Revue économique*
+   7(1), 1956, p. 68-91. DOI `10.3406/reco.1956.407156` **résolu**, page Persée servie en 200.
+   Porte le dimensionnement des stocks et la discussion du lot économique.
+2. **Fiore, « Une démarche nouvelle : la production en flux tendus »**, *Revue française de
+   gestion*, n° 63, 1987, p. 51-61, Persée `rfg_0338-4551_1987_num_63_1_2668`, servie en 200.
+   **Réserve à lever avant tout usage** : cet identifiant vient d'un moteur de recherche et non
+   d'une résolution de DOI. La règle du dépôt n'est pas honorée tant qu'elle ne l'est pas.
+3. **De Almeida**, *RAIRO Recherche opérationnelle* 32(2), 1998, p. 145-192, Numdam
+   `RO_1998__32_2_145_0`, page servie en 200, **GET du PDF non testé**. Souche mathématisée : la
+   lecture doit trancher s'il éclaire le comportement d'un système ou ses seuls résultats propres.
+
+**Deux gisements restent ouverts dans des textes déjà lus en texte intégral** : les parties V et
+VI de Shewhart, et surtout limites de contrôle contre limites de tolérance ; la partie III de
+Bellman, lissage industriel et stock optimal.
+
+**Et un balayage qui n'a jamais eu lieu** : HAL, Cairn et OpenEdition Books n'ont jamais été
+interrogés par leur propre moteur pour ce domaine, et quatre points d'entrée de son périmètre
+n'ont reçu aucune requête ciblée (files d'attente pour le service, maintenance et fiabilité au
+sens de l'ingénieur, conception des systèmes de service, variabilité propagée le long d'une
+chaîne).
+
+## Les reprises courtes de `systems-thinking` et de `decision-science`
 
 ## Deux textes ouverts et **déjà lus**, laissés par le lot du 23 août
 
@@ -425,6 +457,33 @@ cite : « stubborn appeal » et « perceptual illusions » viennent du texte de 
 1986 ; « which reduce » et « probabilities » viennent de l'article de *Science*, non du rapport
 de 1973. **Une carte qui cite l'exemplaire qu'elle a ouvert a raison contre la mémoire du champ**,
 et ses `notes` doivent le dire pour qu'un passage ultérieur ne la « corrige » pas vers l'erreur.
+
+**Un dérivé d'image d'Internet Archive tronque en silence, et c'est le piège le plus insidieux
+rencontré jusqu'ici.** Le rendu `https://archive.org/download/<item>/page/n<N>_x1600.jpg` **rogne
+le feuillet à gauche** sur plusieurs items et ampute le début de chaque ligne : 3 126 pixels
+rendus pour 4 726 réels sur un des rapports du lot du 25 août, ce qui fait perdre à la page de
+titre le « O. » de « O. N. R. » et le « Ch » de « Charles ». Rien ne le signale, et un agent qui
+relit sur ce dérivé **croit relire une image**. **Le dérivé sans suffixe, `.../page/n<N>.jpg`,
+rend la page entière**, et c'est lui qu'on emploie. Deux lecteurs l'ont trouvé séparément le même
+soir, et l'un des deux avait déjà bâti sa lecture dessus avant de tout revérifier.
+
+**La collection `digitallibraryindia` / `JaiGyan` est ouvrable et ne se cite pas par son URL.**
+Ses items ne portent **aucun champ de droits** sur Internet Archive, ni `rights`, ni `licenseurl`,
+ni `possible-copyright-status` ; la seule mention qu'on y trouve, `dc.rights: In Public Domain`,
+est une auto-déclaration du numériseur logée dans un champ descriptif, qui voisinait sur l'item
+lu le 25 août avec deux erreurs bibliographiques avérées. Tranché dans le sens strict : le texte
+se lit, `consulted` reste `full-text`, **l'URL sort, et la référence résout seule par son numéro
+de catalogue**. Un LCCN se résout contre `https://lccn.loc.gov/<numero>/mods`, l'export MODS et
+non la page HTML, qui est une application JavaScript inutilisable. C'est la même règle qui avait
+fait retirer les URL de six sources au lot de cybernétique.
+
+**Une absence de renouvellement de copyright se joue avec ses témoins, et elle ne conclut
+rien seule.** La base de Stanford se cherche par l'**API JSON publique de Blacklight**,
+`https://exhibits.stanford.edu/copyrightrenewals/catalog.json?q=<terme>&search_field=search` :
+son interface HTML est derrière un défi anti-robot F5 qui **ne se contourne pas**. Un zéro n'est
+interprétable que si des témoins positifs sont joués dans la même minute, sur le même moteur.
+Le lot du 25 août en a joué trois pour deux tests. **Et même alors, un renouvellement introuvable
+n'est pas un renouvellement inexistant** : la réserve se garde en clair.
 
 **Un agent qui télécharge vérifie l'empreinte de ce qu'il a reçu.** Le répertoire de travail
 temporaire est partagé entre agents parallèles, et trois agents du lot du 23 août ont lu ou écrit
