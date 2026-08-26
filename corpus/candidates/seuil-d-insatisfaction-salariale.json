@@ -1,54 +1,56 @@
 {
-  "$schema": "../schema/carte.schema.json",
-  "id": "seuil-d-insatisfaction-salariale",
-  "slug": "seuil-d-insatisfaction-salariale",
-  "status": "CANDIDATE",
-  "title": "Le seuil au-dessous duquel on se dit mal payé",
-  "themes": [
-    "ce-que-l-emploi-depose"
-  ],
-  "theme_labels": {
-    "ce-que-l-emploi-depose": "Ce que l'emploi laisse sur soi"
-  },
-  "domain": "work-psychology",
-  "authors": [
-    {
-      "name": "Bernard Ghesquière-Dierickx",
-      "app_author_id": null
-    }
-  ],
-  "attribution_note": "Article signé d'un seul auteur, Bernard Ghesquière-Dierickx, dont le prénom se lit sur la signature imprimée sous le titre, page 413, là où la notice Persée ne donne que l'initiale.",
-  "hook": "Augmenter un salaire suffit-il à changer ce que le salarié en ressent ?",
-  "summary": "Ce que le salarié éprouve tient moins au montant qu'à sa place dans un niveau d'aspiration : une plage à trois zones dont la limite basse est un seuil nettement perçu.",
-  "quotation": {
-    "text": "La limite de la zone frustrante est un seuil nettement perçu par la plupart des sujets.",
-    "reference": "Bernard Ghesquière-Dierickx, « Signification de la rémunération chez le salarié. Recherche d'un seuil d'insatisfaction », Bulletin de psychologie, tome XXXIII, n° 344, 1980, p. 413-416.",
-    "locator": "p. 415",
-    "language": "fr",
-    "original_text": null,
-    "original_language": null,
-    "translation": {
-      "kind": "none",
-      "translator": null,
-      "edition": null
-    }
-  },
-  "sources": [
-    {
-      "label": "Bernard Ghesquière-Dierickx, « Signification de la rémunération chez le salarié. Recherche d'un seuil d'insatisfaction », Bulletin de psychologie, tome XXXIII, n° 344, 1980, p. 413-416.",
-      "kind": "primary",
-      "locator": "p. 413-416",
-      "doi_isbn": "10.3406/bupsy.1980.11728",
-      "url": "https://www.persee.fr/doc/bupsy_0007-4403_1980_num_33_344_11728",
-      "consulted": "full-text"
-    }
-  ],
-  "notes": [
-    "Aucune source secondaire n'est affichée, et c'est une lacune déclarée : la lecture primaire n'a ouvert aucune réception, aucun commentaire, aucune reprise de ce texte. Rien n'est donc dit ici de sa postérité.",
-    "Le texte écrit « peut ne pas entraîner » et non « n'entraîne pas » : page 413, « Il en résulte qu'un “avancement” ou une augmentation de la rémunération peut ne pas entraîner de réaction euphorique ou une incitation à “en faire davantage.” » C'est une possibilité conditionnée à la zone atteinte, pas une absence générale de réaction. L'accroche pose la question sans trancher, et le résumé ne l'affirme pas.",
-    "L'asymétrie que porte la citation est empirique et non spéculative : page 415, les estimations du « bon salaire » se distribuent selon la courbe de Gauss, celles de « mal payé » se groupent sur une valeur unique. Le seuil bas est net, le seuil haut ne l'est pas.",
-    "L'estime de soi figure parmi les facteurs du niveau d'aspiration à titre d'hypothèse seulement : l'auteur écrit page 416 qu'il reste à la rechercher. Elle n'est pas portée sur la carte comme un déterminant établi.",
-    "Réserves matérielles relevées par la lecture primaire. Le tome et le numéro ne viennent pas d'une page vue mais des métadonnées Persée. La page 413 ne porte aucun folio imprimé. La forme accentuée du nom, Ghesquière-Dierickx, n'est pas attestée par l'imprimé, qui compose la signature en capitales ; elle est reprise de la notice. L'imprimé porte enfin des incohérences internes, vérifiées à l'image par la lecture primaire, qui n'ont été ni corrigées ni propagées ici.",
-    "Base empirique de l'article : un questionnaire écrit à deux questions, passé anonymement à des candidats à l'embauchage, ouvriers qualifiés ou spécialisés d'établissements industriels, en quatre passations de 1974 à 1977. Cent cas, quatre-vingt-quatorze utilisables. Aucun de ces chiffres n'est porté sur la carte."
-  ]
+ "$schema": "../schema/carte.schema.json",
+ "id": "seuil-d-insatisfaction-salariale",
+ "slug": "seuil-d-insatisfaction-salariale",
+ "status": "CANDIDATE",
+ "title": "Le seuil au-dessous duquel on se dit mal payé",
+ "themes": [
+  "ce-que-l-emploi-depose"
+ ],
+ "theme_labels": {
+  "ce-que-l-emploi-depose": "Ce que l'emploi laisse sur soi"
+ },
+ "domain": "work-psychology",
+ "authors": [
+  {
+   "name": "Bernard Ghesquière-Dierickx",
+   "app_author_id": null
+  }
+ ],
+ "attribution_note": "Article signé d'un seul auteur, Bernard Ghesquière-Dierickx, dont le prénom se lit sur la signature imprimée sous le titre, page 413, là où la notice d'autorité de Persée ne donne que l'initiale.",
+ "hook": "Augmenter un salaire suffit-il à changer ce que le salarié en ressent ?",
+ "summary": "Ce que le salarié éprouve tient moins au montant qu'à sa place dans un niveau d'aspiration : une plage à trois zones dont la limite basse est un seuil nettement perçu.",
+ "quotation": {
+  "text": "La limite de la zone frustrante est un seuil nettement perçu par la plupart des sujets.",
+  "reference": "Bernard Ghesquière-Dierickx, « Signification de la rémunération chez le salarié. Recherche d'un seuil d'insatisfaction », Bulletin de psychologie, tome XXXIII, n° 344, 1980, p. 413-416.",
+  "locator": "p. 415",
+  "language": "fr",
+  "original_text": null,
+  "original_language": null,
+  "translation": {
+   "kind": "none",
+   "translator": null,
+   "edition": null
+  }
+ },
+ "sources": [
+  {
+   "label": "Bernard Ghesquière-Dierickx, « Signification de la rémunération chez le salarié. Recherche d'un seuil d'insatisfaction », Bulletin de psychologie, tome XXXIII, n° 344, 1980, p. 413-416.",
+   "kind": "primary",
+   "locator": "p. 413-416",
+   "doi_isbn": "10.3406/bupsy.1980.11728",
+   "url": "https://www.persee.fr/doc/bupsy_0007-4403_1980_num_33_344_11728",
+   "consulted": "full-text"
+  }
+ ],
+ "notes": [
+  "Aucune source secondaire n'est affichée, et c'est une lacune déclarée : la lecture primaire n'a ouvert aucune réception, aucun commentaire, aucune reprise de ce texte. Rien n'est donc dit ici de sa postérité.",
+  "Le texte écrit « peut ne pas entraîner » et non « n'entraîne pas » : page 413, « Il en résulte qu'un “avancement” ou une augmentation de la rémunération peut ne pas entraîner de réaction euphorique ou une incitation à “en faire davantage.” » C'est une possibilité conditionnée à la zone atteinte, pas une absence générale de réaction. L'accroche pose la question sans trancher, et le résumé ne l'affirme pas.",
+  "L'asymétrie que porte la citation est empirique et non spéculative : page 415, les estimations du « bon salaire » se distribuent selon la courbe de Gauss, celles de « mal payé » se groupent sur une valeur unique. Le seuil bas est net, le seuil haut ne l'est pas.",
+  "L'estime de soi figure parmi les facteurs du niveau d'aspiration à titre d'hypothèse seulement : l'auteur écrit page 416 qu'il reste à la rechercher. Elle n'est pas portée sur la carte comme un déterminant établi.",
+  "Réserves matérielles relevées par la lecture primaire. Le tome et le numéro ne viennent pas d'une page vue mais des métadonnées Persée. La page 413 ne porte aucun folio imprimé. La forme accentuée du nom, Ghesquière-Dierickx, n'est pas attestée par l'imprimé, qui compose la signature en capitales ; elle est reprise de la notice. L'imprimé porte enfin des incohérences internes, vérifiées à l'image par la lecture primaire, qui n'ont été ni corrigées ni propagées ici.",
+  "Base empirique de l'article : un questionnaire écrit à deux questions, passé anonymement à des candidats à l'embauchage, ouvriers qualifiés ou spécialisés d'établissements industriels, en quatre passations de 1974 à 1977. Cent cas, quatre-vingt-quatorze utilisables. Aucun de ces chiffres n'est porté sur la carte.",
+  "La note d'attribution vise la notice d'autorité de Persée (authority/168798), qui abrège le prénom en initiale ; la notice de l'article et le sommaire du numéro donnent bien « Bernard », de même que Crossref. Précision signalée hors mandat par le contrôle aveugle et appliquée.",
+  "Le résumé reprend « nettement perçu » sans la restriction « par la plupart des sujets » que porte la phrase citée : le plafond de 170 caractères ne laissait pas la place, et la restriction reste lisible dans la citation affichée juste à côté. Signalé hors mandat par le contrôle aveugle, conservé en l'état et déclaré ici."
+ ]
 }
