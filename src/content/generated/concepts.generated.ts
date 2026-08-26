@@ -162,6 +162,32 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "asservissement-des-activites-hors-travail",
+    "slug": "asservissement-des-activites-hors-travail",
+    "title": "L'asservissement des activités hors travail",
+    "authorLabel": "Charles Gadbois",
+    "hookQuestion": "Le travail fini, comment continue-t-il d'agir sur ce qu'on fait ensuite ?",
+    "shortExplanation": "Ayant altéré l'état du travailleur, les conditions de travail perturbent le système des activités hors travail et modifient les conditions d'exécution de ces activités.",
+    "authors": [],
+    "themes": [
+      "ce-que-l-emploi-depose"
+    ],
+    "themeLabel": "Ce que l'emploi laisse sur soi",
+    "attributionNote": "Article signé de Charles Gadbois seul, page de titre relue sur l'imprimé, folio 449. Gadbois déclare emprunter la notion d'asservissement à la théorie des systèmes et ne revendique que son application au rapport entre le travail et la vie hors travail. Il rapporte le constat lui-même à Marx et à Friedmann, et renvoie à son propre article de 1975 pour les difficultés des recherches antérieures.",
+    "quotation": {
+      "text": "Par rapport au système des activités hors travail ainsi décrit, les conditions de travail s'analysent comme des sources de perturbations",
+      "reference": "Charles Gadbois, « Les conditions de travail comme facteurs d'asservissement du système des activités hors travail », Bulletin de psychologie, tome XXXIII, n° 344, 1980, p. 449-455, p. 451"
+    },
+    "sources": [
+      {
+        "label": "Charles Gadbois, « Les conditions de travail comme facteurs d'asservissement du système des activités hors travail », Bulletin de psychologie, tome XXXIII, n° 344, 1980, p. 449-455.",
+        "kind": "primary",
+        "reference": "10.3406/bupsy.1980.11736",
+        "url": "https://www.persee.fr/doc/bupsy_0007-4403_1980_num_33_344_11736"
+      }
+    ]
+  },
+  {
     "id": "attente-du-poste-aval",
     "slug": "attente-du-poste-aval",
     "title": "L'ordre ne change que l'attente du poste aval",
@@ -337,6 +363,32 @@ export const generatedConcepts: Concept[] = [
         "label": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, Milwaukee, American Society for Quality Control, 1980 (réimpression).",
         "kind": "primary",
         "reference": "978-0-87389-076-2"
+      }
+    ]
+  },
+  {
+    "id": "cinq-dimensions-de-l-emploi",
+    "slug": "cinq-dimensions-de-l-emploi",
+    "title": "Les cinq dimensions centrales de l'emploi",
+    "authorLabel": "J. Richard Hackman, Greg R. Oldham",
+    "hookQuestion": "Qu'y a-t-il dans un emploi qui donne envie de bien le faire ?",
+    "shortExplanation": "Trois états psychologiques critiques naissent de cinq dimensions de l'emploi : variété des compétences, identité et signification de la tâche, autonomie, feed-back.",
+    "authors": [],
+    "themes": [
+      "ce-qui-engage-au-travail"
+    ],
+    "themeLabel": "Ce qui donne envie de s'y mettre",
+    "attributionNote": "Rapport signé conjointement par J. Richard Hackman (Yale University) et Greg R. Oldham (University of Illinois), page de titre du Technical Report No. 4 du Department of Administrative Sciences de Yale, mai 1974. Les auteurs rattachent explicitement la théorie qu'ils y exposent à des travaux antérieurs : Turner et Lawrence (1965) et Hackman et Lawler (1971).",
+    "quotation": {
+      "text": "The theory proposes that the three Critical Psychological States are created by the presence of five \"core\" job dimensions.",
+      "reference": "J. Richard Hackman et Greg R. Oldham, The Job Diagnostic Survey, Technical Report No. 4, Yale University, mai 1974, section « Conceptual Basis of the Instrument », p. 4"
+    },
+    "sources": [
+      {
+        "label": "J. Richard Hackman et Greg R. Oldham, The Job Diagnostic Survey: An Instrument for the Diagnosis of Jobs and the Evaluation of Job Redesign Projects, Technical Report No. 4, Yale University, mai 1974",
+        "kind": "primary",
+        "reference": "p. 4",
+        "url": "https://archive.org/details/DTIC_AD0779828"
       }
     ]
   },
@@ -1132,6 +1184,32 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "force-du-besoin-de-developpement",
+    "slug": "force-du-besoin-de-developpement",
+    "title": "La force du besoin de développement",
+    "authorLabel": "J. Richard Hackman, Greg R. Oldham",
+    "hookQuestion": "Le même emploi motive-t-il de la même façon tout le monde ?",
+    "shortExplanation": "La théorie n'est pas donnée pour universelle : le besoin de développement modère ses relations, et un emploi à fort potentiel motivant peut être vécu comme anxiogène.",
+    "authors": [],
+    "themes": [
+      "ce-qui-engage-au-travail"
+    ],
+    "themeLabel": "Ce qui donne envie de s'y mettre",
+    "attributionNote": "Rapport signé conjointement par J. Richard Hackman (Yale University) et Greg R. Oldham (University of Illinois), page de titre du Technical Report No. 4 du Department of Administrative Sciences de Yale, mai 1974. Les auteurs rattachent explicitement la théorie qu'ils y exposent à des travaux antérieurs : Turner et Lawrence (1965) et Hackman et Lawler (1971).",
+    "quotation": {
+      "text": "The theory is not expected to \"work\" with equal effectiveness for all individuals.",
+      "reference": "J. Richard Hackman et Greg R. Oldham, The Job Diagnostic Survey, Technical Report No. 4, Yale University, mai 1974, section « Conceptual Basis of the Instrument », p. 4"
+    },
+    "sources": [
+      {
+        "label": "J. Richard Hackman et Greg R. Oldham, The Job Diagnostic Survey: An Instrument for the Diagnosis of Jobs and the Evaluation of Job Redesign Projects, Technical Report No. 4, Yale University, mai 1974",
+        "kind": "primary",
+        "reference": "p. 4",
+        "url": "https://archive.org/details/DTIC_AD0779828"
+      }
+    ]
+  },
+  {
     "id": "fragilite-d-un-ordonnancement-optimal",
     "slug": "fragilite-d-un-ordonnancement-optimal",
     "title": "Un ordonnancement optimal peut être fragile",
@@ -1706,6 +1784,32 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "mecanismes-de-l-objectif",
+    "slug": "mecanismes-de-l-objectif",
+    "title": "Par quels mécanismes un objectif agit",
+    "authorLabel": "Edwin A. Locke, Karyll N. Shaw, Lise M. Saari, Gary P. Latham",
+    "hookQuestion": "Un objectif fait mieux faire, mais par quoi agit-il au juste ?",
+    "shortExplanation": "Les auteurs comptent au moins quatre mécanismes : diriger l'attention et l'action, mobiliser l'effort, le prolonger dans le temps, pousser à développer des stratégies.",
+    "authors": [],
+    "themes": [
+      "ce-qui-engage-au-travail"
+    ],
+    "themeLabel": "Ce qui donne envie de s'y mettre",
+    "attributionNote": "Rapport technique coécrit par quatre auteurs, dans l'ordre imprimé sur la page de titre : Edwin A. Locke et Karyll N. Shaw (University of Maryland), Lise M. Saari et Gary P. Latham (University of Washington). Technical Report GS-1, daté de juin 1980 sur la page de titre. Le rapport est une revue de la littérature parue depuis 1968, et non une étude nouvelle : il consolide et chiffre une thèse que Locke avait déjà formulée seul en 1968, et que les auteurs eux-mêmes rattachent, page 1, à Ryan, à Lewin, à l'école de Wurtzbourg d'un côté, à la direction par objectifs et à Taylor de l'autre.",
+    "quotation": {
+      "text": "There are at least four interrelated mechanisms by which goals regulate task performance",
+      "reference": "Edwin A. Locke, Karyll N. Shaw, Lise M. Saari et Gary P. Latham, Goal Setting and Task Performance: 1969-1980, Technical Report GS-1, University of Maryland, juin 1980, section « Mechanisms for Goal Setting Effects », p. 19"
+    },
+    "sources": [
+      {
+        "label": "Edwin A. Locke, Karyll N. Shaw, Lise M. Saari et Gary P. Latham, Goal Setting and Task Performance: 1969-1980, Technical Report GS-1, University of Maryland, juin 1980, 94 p. Accession DTIC AD-A086584.",
+        "kind": "primary",
+        "reference": "p. 19-24",
+        "url": "https://archive.org/details/DTIC_ADA086584"
+      }
+    ]
+  },
+  {
     "id": "mesure-devenue-cible",
     "slug": "mesure-devenue-cible",
     "title": "Quand la mesure devient cible",
@@ -1933,6 +2037,32 @@ export const generatedConcepts: Concept[] = [
         "kind": "primary",
         "reference": "chap. 1, p. 9-30 · 10.1017/cbo9780511598951.003",
         "url": "https://doi.org/10.1017/cbo9780511598951.003"
+      }
+    ]
+  },
+  {
+    "id": "objectif-specifique-et-difficile",
+    "slug": "objectif-specifique-et-difficile",
+    "title": "Un objectif spécifique et difficile",
+    "authorLabel": "Edwin A. Locke, Karyll N. Shaw, Lise M. Saari, Gary P. Latham",
+    "hookQuestion": "Vaut-il mieux fixer un objectif précis ou dire « faites de votre mieux » ?",
+    "shortExplanation": "Ceux qui ont un objectif spécifique et difficile font mieux que ceux qui ont un objectif spécifique facile, une consigne de faire au mieux, ou aucun objectif assigné.",
+    "authors": [],
+    "themes": [
+      "ce-qui-engage-au-travail"
+    ],
+    "themeLabel": "Ce qui donne envie de s'y mettre",
+    "attributionNote": "Rapport technique coécrit par quatre auteurs, dans l'ordre imprimé sur la page de titre : Edwin A. Locke et Karyll N. Shaw (University of Maryland), Lise M. Saari et Gary P. Latham (University of Washington). Technical Report GS-1, daté de juin 1980 sur la page de titre. Le rapport est une revue de la littérature parue depuis 1968, et non une étude nouvelle : il consolide et chiffre une thèse que Locke avait déjà formulée seul en 1968, et que les auteurs eux-mêmes rattachent, page 1, à Ryan, à Lewin, à l'école de Wurtzbourg d'un côté, à la direction par objectifs et à Taylor de l'autre.",
+    "quotation": {
+      "text": "Individuals with specific and hard or challenging goals outperform individuals with specific easy goals, \"do best\" goals, or no assigned goals.",
+      "reference": "Edwin A. Locke, Karyll N. Shaw, Lise M. Saari et Gary P. Latham, Goal Setting and Task Performance: 1969-1980, Technical Report GS-1, University of Maryland, juin 1980, section « Conclusions », p. 59"
+    },
+    "sources": [
+      {
+        "label": "Edwin A. Locke, Karyll N. Shaw, Lise M. Saari et Gary P. Latham, Goal Setting and Task Performance: 1969-1980, Technical Report GS-1, University of Maryland, juin 1980, 94 p. Accession DTIC AD-A086584.",
+        "kind": "primary",
+        "reference": "p. 59",
+        "url": "https://archive.org/details/DTIC_ADA086584"
       }
     ]
   },
@@ -2698,6 +2828,32 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "seuil-d-insatisfaction-salariale",
+    "slug": "seuil-d-insatisfaction-salariale",
+    "title": "Le seuil au-dessous duquel on se dit mal payé",
+    "authorLabel": "Bernard Ghesquière-Dierickx",
+    "hookQuestion": "Augmenter un salaire suffit-il à changer ce que le salarié en ressent ?",
+    "shortExplanation": "Ce que le salarié éprouve tient moins au montant qu'à sa place dans un niveau d'aspiration : une plage à trois zones dont la limite basse est un seuil nettement perçu.",
+    "authors": [],
+    "themes": [
+      "ce-que-l-emploi-depose"
+    ],
+    "themeLabel": "Ce que l'emploi laisse sur soi",
+    "attributionNote": "Article signé d'un seul auteur, Bernard Ghesquière-Dierickx, dont le prénom se lit sur la signature imprimée sous le titre, page 413, là où la notice d'autorité de Persée ne donne que l'initiale.",
+    "quotation": {
+      "text": "La limite de la zone frustrante est un seuil nettement perçu par la plupart des sujets.",
+      "reference": "Bernard Ghesquière-Dierickx, « Signification de la rémunération chez le salarié. Recherche d'un seuil d'insatisfaction », Bulletin de psychologie, tome XXXIII, n° 344, 1980, p. 413-416, p. 415"
+    },
+    "sources": [
+      {
+        "label": "Bernard Ghesquière-Dierickx, « Signification de la rémunération chez le salarié. Recherche d'un seuil d'insatisfaction », Bulletin de psychologie, tome XXXIII, n° 344, 1980, p. 413-416.",
+        "kind": "primary",
+        "reference": "10.3406/bupsy.1980.11728",
+        "url": "https://www.persee.fr/doc/bupsy_0007-4403_1980_num_33_344_11728"
+      }
+    ]
+  },
+  {
     "id": "sexe-des-operateurs",
     "slug": "sexe-des-operateurs",
     "title": "Le sexe des opérateurs en analyse du travail",
@@ -2968,6 +3124,32 @@ export const generatedConcepts: Concept[] = [
         "kind": "primary",
         "reference": "chap. 4, p. 89-107 · HAL tel-00464801",
         "url": "https://theses.hal.science/tel-00464801/document"
+      }
+    ]
+  },
+  {
+    "id": "trois-etats-psychologiques-critiques",
+    "slug": "trois-etats-psychologiques-critiques",
+    "title": "Les trois états psychologiques critiques",
+    "authorLabel": "J. Richard Hackman, Greg R. Oldham",
+    "hookQuestion": "Que faut-il que la personne éprouve pour qu'un emploi la motive ?",
+    "shortExplanation": "Un emploi n'agit qu'en produisant trois états vécus : sens du travail, responsabilité des résultats, connaissance des résultats, et les trois doivent être présents.",
+    "authors": [],
+    "themes": [
+      "ce-qui-engage-au-travail"
+    ],
+    "themeLabel": "Ce qui donne envie de s'y mettre",
+    "attributionNote": "Rapport signé conjointement par J. Richard Hackman (Yale University) et Greg R. Oldham (University of Illinois), page de titre du Technical Report No. 4 du Department of Administrative Sciences de Yale, mai 1974. Les auteurs rattachent explicitement la théorie qu'ils y exposent à des travaux antérieurs : Turner et Lawrence (1965) et Hackman et Lawler (1971).",
+    "quotation": {
+      "text": "All three of the Critical Psychological States must be present for the positive outcomes to be realized.",
+      "reference": "J. Richard Hackman et Greg R. Oldham, The Job Diagnostic Survey, Technical Report No. 4, Yale University, mai 1974, section « Conceptual Basis of the Instrument », p. 4"
+    },
+    "sources": [
+      {
+        "label": "J. Richard Hackman et Greg R. Oldham, The Job Diagnostic Survey: An Instrument for the Diagnosis of Jobs and the Evaluation of Job Redesign Projects, Technical Report No. 4, Yale University, mai 1974",
+        "kind": "primary",
+        "reference": "p. 4",
+        "url": "https://archive.org/details/DTIC_AD0779828"
       }
     ]
   },

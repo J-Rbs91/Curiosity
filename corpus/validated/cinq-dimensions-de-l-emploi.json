@@ -1,0 +1,78 @@
+{
+ "$schema": "../schema/carte.schema.json",
+ "id": "cinq-dimensions-de-l-emploi",
+ "slug": "cinq-dimensions-de-l-emploi",
+ "status": "VALIDATED",
+ "title": "Les cinq dimensions centrales de l'emploi",
+ "themes": [
+  "ce-qui-engage-au-travail"
+ ],
+ "theme_labels": {
+  "ce-qui-engage-au-travail": "Ce qui donne envie de s'y mettre"
+ },
+ "authors": [
+  {
+   "name": "J. Richard Hackman",
+   "app_author_id": null
+  },
+  {
+   "name": "Greg R. Oldham",
+   "app_author_id": null
+  }
+ ],
+ "attribution_note": "Rapport signé conjointement par J. Richard Hackman (Yale University) et Greg R. Oldham (University of Illinois), page de titre du Technical Report No. 4 du Department of Administrative Sciences de Yale, mai 1974. Les auteurs rattachent explicitement la théorie qu'ils y exposent à des travaux antérieurs : Turner et Lawrence (1965) et Hackman et Lawler (1971).",
+ "hook": "Qu'y a-t-il dans un emploi qui donne envie de bien le faire ?",
+ "summary": "Trois états psychologiques critiques naissent de cinq dimensions de l'emploi : variété des compétences, identité et signification de la tâche, autonomie, feed-back.",
+ "quotation": {
+  "text": "The theory proposes that the three Critical Psychological States are created by the presence of five \"core\" job dimensions.",
+  "reference": "J. Richard Hackman et Greg R. Oldham, The Job Diagnostic Survey, Technical Report No. 4, Yale University, mai 1974, section « Conceptual Basis of the Instrument ».",
+  "locator": "p. 4",
+  "language": "en",
+  "original_language": "en",
+  "translation": {
+   "kind": "none"
+  }
+ },
+ "sources": [
+  {
+   "label": "J. Richard Hackman et Greg R. Oldham, The Job Diagnostic Survey: An Instrument for the Diagnosis of Jobs and the Evaluation of Job Redesign Projects, Technical Report No. 4, Yale University, mai 1974",
+   "kind": "primary",
+   "locator": "p. 4",
+   "url": "https://archive.org/details/DTIC_AD0779828",
+   "consulted": "full-text"
+  }
+ ],
+ "review": {
+  "reviewer": "contrôle aveugle, session du 26 août 2026",
+  "date": "2026-08-26",
+  "attribution": "confirmee",
+  "quotation": "verbatim",
+  "sources": "resolvent",
+  "prose": "fidele",
+  "verdict": "PASS",
+  "rounds": 2,
+  "notes": [
+   "PIÈCES OUVERTES. (1) archive.org/details/DTIC_AD0779828 : métadonnées (https://archive.org/metadata/DTIC_AD0779828, 88 images, ppi 300) puis le PDF original https://archive.org/download/DTIC_AD0779828/DTIC_AD0779828.pdf (5 157 620 o, md5 777d2b456c1fa5a8faedffb1cd636d30 — identique au md5 déclaré dans la notice IA), rendu page à page à 170 dpi. (2) Feuillet image natif https://archive.org/download/DTIC_AD0779828/page/n7.jpg (2720 × 3415, marge gauche entière, dérivé _x1600 non employé). (3) Reproduction indépendante ERIC ED099580 : notice https://eric.ed.gov/?id=ED099580 et texte intégral https://files.eric.ed.gov/fulltext/ED099580.pdf (87 p. — l'exemplaire IA en compte 88 parce qu'il porte en tête la couverture NTIS absente de l'exemplaire ERIC).",
+   "PAGINATION — règle vérifiée, non crue. Feuillet n0 = couverture NTIS (non foliotée) ; n1 = folio « i. » (DD Form 1473, PAGE 1) ; n2 = folio « ii. » (DD 1473 BACK, PAGE 2) ; n3 = folio « iii » (page de titre) ; n4 = première page de texte, non chiffrée mais valant 1 ; n5 porte « 2 » en tête à droite ; n6 porte « 3 » (Figure 1, pleine page, à l'italienne) ; n7 porte « 4 ». La correspondance folio N = feuillet n(N+3) est donc exacte pour la pagination arabe, et je l'ai lue sur l'image, pas dans page_numbers.json.",
+   "CITATION — verbatim, à l'endroit annoncé. Sur l'image n7.jpg (folio « 4 » visible en haut à droite), deuxième paragraphe, première phrase : « The theory proposes that the three Critical Psychological States are created by the presence of five \"core\" job dimensions. » Caractère pour caractère la phrase de la fiche, guillemets droits autour de core compris, sans coupe ni ajout — aucun […] n'était donc requis. Pas de traduction : original en anglais, langue déclarée « en », translation.kind « none » — conforme. La section annoncée est la bonne : le titre courant « Conceptual Basis of the Instrument » s'ouvre au bas du folio 2 (feuillet n5) et court jusqu'au titre suivant « Summary of Concepts Measured by the Job Diagnostic Survey », qui n'apparaît qu'en bas du folio 4, sous le passage cité. Contre-épreuve sur ERIC ED099580, p. 8 du PDF, folio imprimé « 4 » : phrase identique. Je n'ai à aucun moment cité d'après la couche OCR, dont j'ai confirmé la médiocrité (le djvu.txt rend « pr sence », « Eackman », « TIork Outcomes »).",
+   "ATTRIBUTION — confirmée, et l'antériorité est correctement bornée. Page de titre (feuillet n3, folio iii) : « J. Richard Hackman / Yale University   and   Greg R. Oldham / University of Illinois », puis « Technical Report No. 4 / Department of Administrative Sciences / Yale University / May, 1974 ». Les deux signatures sont conjointes, sans ordre d'auteur secondaire ni mention d'un tiers. La formulation à cinq dimensions est bien des deux signataires : la fiche affiche des antécédents que le rapport énonce lui-même au folio 2 (feuillet n5) — « The theory which gave rise to the present instrument is based on earlier work by Turner & Lawrence (1965) and by Hackman & Lawler (1971) » — et j'ai vérifié que Hackman & Lawler 1971 (Journal of Applied Psychology, 55, 259-286) n'en portait que quatre (variety, autonomy, task identity, feedback) : la cinquième, Task Significance, et le regroupement en trois états psychologiques critiques apparaissent ici. L'attribution_note ne revendique donc pas une paternité qu'elle n'aurait pas : elle dit « rapport signé conjointement » et renvoie les antécédents à qui de droit.",
+   "SOURCES — chaque élément affiché par le label est vrai de la pièce ouverte, élément par élément. Noms « J. Richard Hackman et Greg R. Oldham » : conformes à la page de titre (n3) ET au champ 5 AUTHOR(S) du DD Form 1473 (n1), « J. Richard Hackman and Greg R. Oldham ». Titre « The Job Diagnostic Survey: An Instrument for the Diagnosis of Jobs and the Evaluation of Job Redesign Projects » : conforme au mot près (le champ 3 REPORT TITLE du DD 1473 ajoute un point final, la page de titre n'en porte pas, la fiche non plus). Numéro « Technical Report No. 4 » : confirmé deux fois — page de titre, et champ 9a ORIGINATOR'S REPORT NUMBER(S) du DD 1473, « T. R. No. 4 ». Rattachement « Yale University » : confirmé — page de titre (« Department of Administrative Sciences / Yale University »), champ 1 ORIGINATING ACTIVITY (« Department of Administrative Sciences / Yale University / New Haven, Ct. 06520 ») et notice ERIC. Date « mai 1974 » : confirmée trois fois — page de titre « May, 1974 », champ 6 REPORT DATE « May, 1974 », champ 4 DESCRIPTIVE NOTES « Technical Report, May, 1974 ». URL : résout bien vers cette pièce et non vers une autre édition. Locator « p. 4 » : exact, cf. supra.",
+   "SOURCES — sur ce que le label n'affiche pas. Le label tait le département (« Department of Administrative Sciences ») et le rattachement d'Oldham (University of Illinois), qui figurent tous deux sur la page de titre. Je ne le compte pas comme un défaut : la référence résout déjà sans eux — auteurs + titre exact + numéro de rapport + institution + date + URL désignent une pièce et une seule, et j'y suis arrivé sans rien deviner. Le rattachement d'Oldham, lui, n'est pas tu au lecteur : il est porté par attribution_note, où il est exact. Aucun élément descriptif n'est ici affiché au jugé.",
+   "SOURCES — ce que je n'ai pas pu faire. Le serveur documentary / verify_reference ne m'était pas exposé dans cette session ; il n'aurait de toute façon rien eu à résoudre, un rapport technique ONR de 1974 ne portant ni DOI ni ISBN. J'ai donc résolu la référence directement, contre deux reproductions indépendantes (Internet Archive/DTIC AD-779 828 et ERIC ED099580), qui concordent sur la page de titre comme sur le folio 4. Aucun accès ne m'a été refusé ; aucun contrôle d'accès n'a été contourné.",
+   "PROSE — rien qui excède les sources. Le hook (« Qu'y a-t-il dans un emploi qui donne envie de bien le faire ? ») reste dans ce que porte la Figure 1 du folio 3 (feuillet n6), qui relie les Core Job Dimensions aux Personal and Work Outcomes « High Internal Work Motivation » et « High Quality Work Performance » : question, pas thèse, et question que le rapport pose. Le summary décalque la phrase du folio 4 sans la durcir : « naissent de » rend « are created by the presence of » sans ajouter de preuve ni de portée ; les cinq dimensions énumérées (variété des compétences, identité et signification de la tâche, autonomie, feed-back) sont bien les cinq du texte — Skill Variety, Task Identity, Task Significance, Autonomy, Feedback — le regroupement « identité et signification de la tâche » condensant deux dimensions distinctes sans en perdre aucune, et suivant du reste le texte lui-même, qui rattache ces trois-là au même état psychologique. Aucun adjectif n'ajoute de force à ce que le rapport affirme ; le summary ne revendique ni validation empirique ni généralité, et la fiche ne s'étend pas au modérateur (growth need strength) qu'elle ne mentionne pas — ce qui est une réserve, pas une étroitesse : les cinq dimensions et les trois états sont bien le contenu annoncé par le titre de la fiche.",
+   "HORS MANDAT (ne fonde aucun REWORK). (a) Le rapport renvoie deux fois, aux folios 2 et 4, à « Hackman & Oldham (1974) » pour l'exposé détaillé de la théorie elle-même et du Motivating Potential Score — c'est-à-dire à un autre texte que celui-ci, celui qui paraîtra en 1976 dans Organizational Behavior and Human Performance. La fiche n'en dépend pas, sa citation étant bien dans le rapport qu'elle cite, mais un lecteur qui voudrait la théorie plutôt que l'instrument serait renvoyé ailleurs par les auteurs eux-mêmes. (b) Les deux entrées de `authors` ont `app_author_id` à null. Aucun de ces deux points ne touche l'une des quatre questions."
+  ]
+ },
+ "notes": [
+  "DROITS. L'item Internet Archive DTIC_AD0779828 ne porte aucun champ rights, licenseurl ni possible-copyright-status : vérifié sur la sortie complète de https://archive.org/metadata/DTIC_AD0779828. La page de titre porte en revanche, imprimé : « Reproduction in whole or in part is permitted for any purpose of the United States Government. Approved for public release; distribution unlimited. » C'est une autorisation de reproduction pour les besoins du gouvernement des États-Unis et une levée de restriction de diffusion, ce n'est pas une mise dans le domaine public et il ne faut pas la présenter comme telle. Le dépôt a déjà tranché ce cas pour trois rapports techniques identiques : l'URL se garde, la réserve s'écrit.",
+  "SOURCE SECONDAIRE. Aucune n'est affichée, et aucune n'a été fabriquée pour faire nombre : la lecture primaire n'a ouvert que cette pièce. Les deux antécédents déclarés par les auteurs, dont la notice complète est imprimée p. 40, ne sont pas portés en sources parce que la lecture n'en a établi ni DOI, ni ISBN, ni URL.",
+  "ANTÉCÉDENTS, et rectification d'une erreur de la cartographie. Celle-ci annonçait « des travaux antérieurs convergents de Lawler sur six dimensions de l'emploi ». La note 1, p. 39, relue à l'image, dit autre chose et dit deux choses : Turner & Lawrence (1965) mesurent six « task attributes » (variety, required interaction, autonomy, optional interaction, knowledge and skill required, responsibility) ; Hackman & Lawler (1971) mesurent six « job dimensions » (variety, autonomy, task identity, feedback, friendship opportunities, dealing with others). Les listes diffèrent, et la seconde est le travail antérieur de Hackman lui-même, coauteur du présent rapport, non un antécédent extérieur. Le corps du texte le dit p. 2 : « The theory which gave rise to the present instrument is based on earlier work by Turner & Lawrence (1965) and by Hackman & Lawler (1971). »",
+  "PÉRIMÈTRE. Ce qui est instruit ici est la thèse, jamais le Job Diagnostic Survey comme questionnaire : ni ses huit sections, ni ses clés de cotation, ni ses appendices. Le motivating potential score, imprimé p. 4 dans le paragraphe même de ce concept, est signalé par la lecture primaire comme un point limite qu'elle n'a pas retenu comme concept ; il n'est pas réintroduit ici et n'a pas été fondu dans la carte.",
+  "CINQ, ET NON SEPT. Deux autres dimensions sont mesurées par le rapport et explicitement exclues du noyau, p. 5 : « Feedback from Agents », dont les auteurs écrivent « This dimension is not, strictly speaking, a characteristic of the job itself », et « Dealing with Others ». Un passage ultérieur qui en ferait sept dimensions centrales corrigerait vers l'erreur.",
+  "LE MOT « FEED-BACK » DU RÉSUMÉ. La cinquième dimension est nommée p. 5 « Feedback from the Job Itself » ; c'est la formule du motivating potential score, p. 4, qui l'abrège en « Feedback ». Le résumé abrège pour tenir sous le plafond d'affichage de 170 caractères, et il faut l'entendre au sens du texte : le retour d'information que donne le travail lui-même, non le retour donné par des tiers, lequel est exclu du noyau.",
+  "CITATION, CHOIX ET RENONCEMENT. La phrase retenue est la phrase de cadrage de la p. 4, sans coupe, relue sur le feuillet image n7. Aucune définition n'a pu être citée : aucune phrase de moins de 150 caractères ne définit une des cinq dimensions en la nommant, la plus courte, celle de Task Identity, faisant 171 caractères et la plus longue, celle d'Autonomy, 200. La citation de rechange proposée par la lecture, « Experienced Meaningfulness of the Work is enhanced primarily by three of the Core Dimensions: Skill Variety, Task Identity, and Task Significance. » (146 caractères, même page), n'a pas été prise : elle ne nomme que trois des cinq dimensions.",
+  "CORRECTION OCR DÉJÀ FAITE PAR LA LECTURE, à ne pas défaire : l'OCR à plat donne « Core Dimensions 2 Skill Variety » là où l'image donne « Core Dimensions: Skill Variety », le deux-points ayant été lu comme un 2. De même, les incises du bloc de définitions p. 5 sont composées avec deux traits d'union dans l'original, non avec un cadratin.",
+  "CE QUE LA PIÈCE NE PORTE PAS. Le rapport renvoie, pour l'exposé et le test de la théorie, à Hackman & Oldham, Technical Report No. 6, 1974, que la lecture primaire n'a pas ouvert. La Figure 1, p. 3, n'a pas été relue à l'image et rien n'est cité d'elle. Le rapport ne date les concepts que par sa propre signature, mai 1974 : aucune date d'antériorité ne doit être composée à partir de ce fichier.",
+  "La collation ne s'affiche pas, et c'est une décision plutôt qu'un oubli. Le label portait « [1] f., 80 p., [4] f. », qui ne décrit aucun des deux exemplaires ouverts : les folios imprimés se lisent 81 au feuillet n84 et 84 au feuillet n87 de l'item DTIC_AD0779828, relus sur l'image, et la notice ERIC de la même pièce porte 87 p., soit iii et 84. L'hypothèse la plus favorable, des tampons NTIS sur feuillets nus, ne rend pas 80 non plus : dans l'exemplaire ERIC, non tamponné, la pagination propre s'arrête à 38 et les annexes repartent à 1. Les deux reproductions ne sont pas feuillet à feuillet identiques au delà du folio 38, et aucune notice de catalogue n'a pu être atteinte, WorldCat répondant 429. Faute de collation vérifiée, elle sort du champ affiché : elle n'est pas requise pour que la référence résolve."
+ ]
+}

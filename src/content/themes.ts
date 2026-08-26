@@ -57,6 +57,28 @@ import type { Theme } from "@/types";
  * pas projetée : le plafond de volume du lot est de huit. Elle attend en `corpus/candidates/`
  * avec son verdict, et elle est le premier travail du passage suivant sur ce domaine.
  *
+ * Les deux thèmes de `work-psychology` sont écrits le 26 août 2026, après le contrôle aveugle
+ * des cartes du lot d'ouverture. La cartographie en proposait **cinq**, un par candidat, et
+ * elle avait prévenu que le cinquième restait à confirmer côté frontière. Le lot en déclare
+ * deux, et l'écart s'explique entièrement :
+ *
+ * - les deux textes anglophones ouverts, le rapport de Hackman et Oldham sur les
+ *   caractéristiques de l'emploi et celui de Locke et al. sur la fixation d'objectifs,
+ *   répondent à la même question, ce qui dans un emploi engage celui qui l'occupe, l'un par
+ *   les propriétés de la tâche, l'autre par l'objectif assigné. Ils se réunissent donc sous
+ *   un seul thème qui porte cinq cartes et repose sur deux textes indépendants plutôt que
+ *   sur un seul ;
+ * - les deux textes francophones portent chacun un état que l'emploi dépose sur la personne,
+ *   une frustration salariale et une vie hors travail contrainte, et forment le second thème,
+ *   à deux cartes ;
+ * - le cinquième thème proposé, la sélection psychotechnique, **n'est pas déclaré**, et le
+ *   motif n'est pas documentaire. La carte existe, elle est écrite, mais sa source primaire
+ *   est en `partial` : onze pages ouvertes sur soixante-sept, ce qui ne satisfait pas la
+ *   règle du dépôt exigeant une source primaire lue en texte intégral. Elle attend en
+ *   `corpus/candidates/`, et un thème sans carte validée ne se déclare pas.
+ *
+ * Aucun des deux thèmes déclarés ne repose sur une carte unique.
+ *
  * Conséquence directe, visible ci-dessous : aucun thème n'est déclaré ici pour la santé
  * publique ni pour la mesure du bien-être, alors que le périmètre de `measurement-theory`
  * demandait de les balayer ; ni, en ergonomie de l'activité, pour la charge de travail comme
@@ -452,5 +474,28 @@ export const themes: Theme[] = [
     description:
       "Quand des tâches doivent passer les unes après les autres sur les mêmes postes, le total de travail ne change pas mais le temps qu'il faut pour l'écouler, si. Ce thème porte sur ce que l'ordre déplace réellement, sur le temps mort où il agit, et sur ce qui arrive à un ordre optimal quand les durées ne sont pas celles qu'on croyait.",
     domain: "operations-management",
+  },
+  // --- Psychologie du travail -----------------------------------------------
+  {
+    id: "ce-qui-engage-au-travail",
+    slug: "ce-qui-engage-au-travail",
+    title: "Ce qui donne envie de s'y mettre",
+    tagline:
+      "Ce n'est pas la paie qui décide si on a envie de bien faire.",
+    keywords: ["Autonomie", "Objectif", "Motivation"],
+    description:
+      "Deux traditions de recherche répondent séparément à la même question : qu'est-ce qui, dans un emploi, engage celui qui l'occupe. L'une regarde les propriétés de la tâche elle-même et les états qu'elles produisent chez la personne, l'autre l'objectif qu'on lui assigne et ce qu'il règle de sa conduite. Ce thème porte sur ce que chacune établit, et sur les conditions qu'elles posent à leur propre validité.",
+    domain: "work-psychology",
+  },
+  {
+    id: "ce-que-l-emploi-depose",
+    slug: "ce-que-l-emploi-depose",
+    title: "Ce que l'emploi laisse sur soi",
+    tagline:
+      "Le travail ne s'arrête pas quand on quitte le poste.",
+    keywords: ["Rémunération", "Seuil", "Hors travail"],
+    description:
+      "Un emploi ne se contente pas d'occuper des heures : il dépose sur la personne des états qui lui survivent, une frustration qui se mesure à un seuil plutôt qu'à un montant, une vie hors travail dont il commande les conditions. Ce thème porte sur ce que la situation d'emploi laisse chez celui qui l'occupe, et sur ce qui décide de son intensité.",
+    domain: "work-psychology",
   },
 ];

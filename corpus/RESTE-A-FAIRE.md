@@ -23,37 +23,39 @@ script ne peut pas dire : quel travail est possible aujourd'hui, ce qu'il coûte
 
 | chantier | volume | recherche documentaire ? | état |
 |---|---|---|---|
-| **A.** Approfondissements | 16 cartes | non | **ouvert, et il a doublé le 25 août 2026** |
+| **A.** Approfondissements | 23 cartes | non | **ouvert, et il a encore grossi le 26 août 2026** |
 | **B.** File de la sociologie des organisations | 25 entrées | oui, cartographie déjà faite | ouvert |
-| **C.** Domaines vides | 3 fermés | oui | ouvert |
-| **D.** Reprises courtes de trois domaines instruits | 9 textes | oui, accès déjà constaté | ouvert |
+| **C.** Domaines vides | **2 fermés** | oui | ouvert |
+| **D.** Reprises courtes de quatre domaines instruits | 10 textes | oui, accès déjà constaté | ouvert |
 
-Le chantier A s'était vidé le 21 août et il se rouvre depuis. **Le 25, il double** : aux huit
-cartes de la science de la décision s'ajoutent les huit de l'operations management. C'est
-délibéré, et non un oubli, la routine nocturne consacrant une phase entière à ce travail et une
-nuit d'ouverture de domaine n'en écrivant pas. **La file est celle de `npm run corpus:deepen`,
-pas celle de ce fichier.**
+Le chantier A s'était vidé le 21 août et il se rouvre depuis. **Le 25 il double, le 26 il
+grossit encore** : aux huit cartes de la science de la décision et aux huit de l'operations
+management s'ajoutent les sept de la psychologie du travail. C'est délibéré, et non un oubli, la
+routine nocturne consacrant une phase entière à ce travail et une nuit d'ouverture de domaine
+n'en écrivant pas. **La file est celle de `npm run corpus:deepen`, pas celle de ce fichier.**
 
 Le chantier C a perdu un domaine le 22 août, `systems-thinking`, un second le 23,
-`decision-science`, et **un troisième le 25, `operations-management`**, qui a rendu huit cartes
-et trois thèmes deux nuits après avoir reçu son périmètre et sa cartographie. **Il n'y reste plus
-que les trois domaines de la famille « Comprendre les humains et les organisations »**, tous
-trois sans périmètre, sans cartographie et sans stock d'entrée.
+`decision-science`, un troisième le 25, `operations-management`, et **un quatrième le 26,
+`work-psychology`**, qui a été ouvert et instruit dans la même nuit et rend sept cartes et deux
+thèmes. **Il n'y reste plus que deux domaines**, `sociology-of-work` et `behavioral-economics`,
+tous deux sans périmètre et sans cartographie. **Le premier des deux n'est plus sans stock
+d'entrée** : voir plus bas.
 
 ---
 
 # A. Les approfondissements
 
-**Vidé le 21 août 2026, rouvert le 23, doublé le 25.** `corpus:deepen` projette toujours
-**66 approfondissements, 95 772 mots, 1 451 en moyenne**, et sa fin de sortie liste désormais
-**seize cartes** : les huit du lot d'ouverture de la science de la décision, du 23 août, et les
-huit du lot d'ouverture de l'operations management, du 25.
+**Vidé le 21 août 2026, rouvert le 23, doublé le 25, encore grossi le 26.** `corpus:deepen`
+projette toujours **66 approfondissements, 95 772 mots, 1 451 en moyenne**, et sa fin de sortie
+liste désormais **vingt-trois cartes** : les huit du lot d'ouverture de la science de la
+décision, du 23 août, les huit de l'operations management, du 25, et les sept de la psychologie
+du travail, du 26.
 
 C'est le seul écart actuel du corpus entre ce qui est validé et ce qui est servi, et il se comble
 par `/corpus-deepen`, sans aucune recherche documentaire : la matière est la carte elle-même, sa
-lecture primaire et son verdict de contrôle. **Deux lots d'ouverture consécutifs l'ayant nourri,
-c'est aujourd'hui le chantier au meilleur rapport entre ce qu'il coûte et ce qu'il rend au
-lecteur.**
+lecture primaire et son verdict de contrôle. **Trois lots d'ouverture consécutifs l'ayant nourri,
+c'est aujourd'hui, et de loin, le chantier au meilleur rapport entre ce qu'il coûte et ce qu'il
+rend au lecteur.**
 
 **La file n'est pas tenue ici.** `npm run corpus:deepen` l'affiche en fin de sortie, et c'est
 elle qui fait foi.
@@ -159,13 +161,26 @@ est désormais au chantier D, avec les autres domaines instruits.
 
 | famille | domaine | périmètre | cartographie | stock d'entrée |
 |---|---|---|---|---|
-| Humains et organisations | Sociologie du travail | — | — | Taylor et Braverman repérés, accès non vérifié |
-| Humains et organisations | Psychologie du travail | — | — | 1 cas de frontière, tranché ailleurs |
+| Humains et organisations | Sociologie du travail | — | — | **Taylor 1911 ouvert, accès vérifié le 26 août** |
 | Humains et organisations | Économie comportementale | — | — | Schweitzer et Cachon 2000 repéré, paywallé |
 
-**Les trois domaines de la famille « Comprendre les humains et les organisations » sont désormais
-les seuls qui restent**, et ils n'ont ni périmètre, ni cartographie, ni stock d'entrée vérifié.
-Ce sont les trois derniers à ouvrir dans l'ordre complet.
+**`work-psychology` a quitté ce chantier le 26 août** (passage 04), ouvert et instruit dans la
+même nuit : sept cartes, deux thèmes. **Les deux domaines qui restent sont les derniers du
+corpus**, et ils n'ont ni périmètre ni cartographie.
+
+**Mais l'un des deux n'est plus sans stock, et c'est nouveau.** La cartographie de
+`work-psychology` devait une requête ciblée à ses successeurs, et elle l'a payée pour la
+sociologie du travail avec un résultat que le legs précédent n'avait pas su obtenir :
+**Frederick Winslow Taylor, *The Principles of Scientific Management*, item Internet Archive
+`cu31924085713331`** (tirage 1919, exemplaire Cornell University Library), collections `cornell`
+et `americana`, **sans champ `access-restricted-item` et sans restriction de prêt constatée**,
+métadonnées vérifiées. C'est un candidat d'ouverture **avec accès vérifié positif**, là où
+`operations-management` avait laissé ce même texte en « repéré, accès non vérifié ». Le pendant
+critique attendu, Braverman 1974, **n'a pas été cherché**.
+
+**L'économie comportementale, elle, n'a rien reçu.** Le plafond de requêtes du scout du 26 août a
+été atteint avant qu'une requête dédiée ait pu partir : **c'est un vide de méthode, pas un vide
+vérifié**, et le prochain passage qui doit cette dette repart de zéro sur ce domaine.
 
 **Ce que chacun a reçu, et qui ne vaut pas stock d'entrée.** Le passage 02 leur a consacré à
 chacun une requête ciblée obligatoire, et aucune n'a produit de candidat vérifié en accès :
@@ -272,6 +287,34 @@ revient toujours par une autre porte.
 ---
 
 # D. Les reprises courtes des domaines instruits
+
+## Quatre reprises laissées par le lot du 26 août, sur `work-psychology`
+
+**La moins chère du dépôt est `attention-diffusee-et-selection`**, d'après Lahy 1924. Elle est
+**écrite et non contrôlée**, et elle attend en `corpus/candidates/`. Le motif n'est pas
+documentaire : sa source primaire est en `consulted: partial`, **onze pages ouvertes sur
+soixante-sept**, et une fiche publiée exige une source primaire lue en texte intégral. Ce qui la
+débloque est nommé : lire l'article en entier, et en particulier trois sections désignées et non
+localisées, le protocole du test d'attention diffusée (probablement p. 131-142), les tableaux de
+corrélation (p. 168-169) et le barème des 2 000 sujets. Une fois lue, elle passe en contrôle et
+**son thème `juger-quelqu-un-apte` se déclare avec elle**. Accès : Persée, DOI
+`10.3406/psy.1924.6140`, endpoint page vérifié.
+
+**Le numéro 344 du *Bulletin de psychologie*, 1980, est un gisement à moitié dépensé.** Numéro
+entier de psychologie du travail, servi en texte intégral par l'endpoint page. Sept articles lus,
+deux retenus, **cinq écartés avec leur motif écrit** (Leplat 11696 et Francès 11726, textes
+d'orientation sans thèse propre ; Lévy-Leboyer 11734, dette socio-technique ; Grisez 11729 et
+Savall 11735, penchant vers des voisins), et **le reste du numéro n'a pas été dépouillé**. C'est
+aussi là que se trouve la seule autrice repérée du domaine.
+
+**Une piste ouverte et non lue** : `DTIC_ADA065892`, « An Integration of Contemporary Theories of
+Work Motivation » (1978), collection `dticarchive`, accès a priori ouvert, **contenu non ouvert
+faute de budget**.
+
+**Et deux impasses qu'il ne faut pas retenter** : Herzberg 1959 (`motivationtowork0000unse`) et
+Walker & Guest 1952 (`manonassemblylin0000unse`) sont en **prêt numérique** sur Internet Archive,
+vérifié le 26 août. Un prêt numérique ne s'emprunte pas. La voie qui rend dans ce domaine est la
+littérature grise de l'Office of Naval Research, pas le canon en librairie.
 
 ## Cinq reprises laissées par le lot du 25 août, sur `operations-management`
 
@@ -484,6 +527,35 @@ son interface HTML est derrière un défi anti-robot F5 qui **ne se contourne pa
 interprétable que si des témoins positifs sont joués dans la même minute, sur le même moteur.
 Le lot du 25 août en a joué trois pour deux tests. **Et même alors, un renouvellement introuvable
 n'est pas un renouvellement inexistant** : la réserve se garde en clair.
+
+**Un fichier de métadonnées d'Internet Archive n'est pas une lecture, et `page_numbers.json` est
+le pire des deux.** Établi par le lot du 26 août, qui lui doit son seul renvoi. Ce fichier est une
+**inférence automatique** de la pagination, pas une transcription : il annonce 94 feuillets pour
+88 sur l'item `DTIC_AD0779828`, et c'est lui qui a fait écrire une collation fausse à trois
+cartes. **Deux contrôleurs aveugles ont conclu en sens opposé sur cette même collation**, l'un en
+la déduisant de la structure du `djvu.xml`, l'autre **en lisant les folios imprimés sur les
+images** : c'est la lecture sur l'image qui avait raison. Le premier avait pourtant signalé
+lui-même, hors mandat, que cette pagination automatique est fausse. La règle est la même que pour
+l'OCR : **ce qui n'a pas été lu sur l'image n'a pas été lu**. Et quand aucune collation ne peut
+être vérifiée, **elle ne s'affiche pas** plutôt que de s'afficher au jugé.
+
+**La couche OCR d'un item peut être inexploitable sans que rien ne le signale.** Celle de
+`DTIC_AD0779828` rend « shot® » pour « shown » et « Oat cones » pour « Outcomes », au point qu'une
+recherche plein texte sur une phrase citée y échoue. Deux contrôleurs l'ont constatée séparément
+le 26 août. Un OCR muet n'est pas un OCR fiable : la vérification se fait sur l'image, toujours.
+
+**Un squelette écrit tôt ne garantit pas un fichier écrit.** La contre-mesure n° 4 du lot du
+25 août (« exiger l'écriture du fichier de sortie tôt ») a été appliquée à tous les agents du
+26 et **elle a tenu à moitié** : tous ont écrit un squelette dans les deux minutes, mais **deux
+se sont ensuite arrêtés d'écrire pendant près de dix minutes**, un scout et un lecteur, et il a
+fallu leur envoyer un « écris maintenant » pour qu'ils rendent. Ce qui les a rattrapés est une
+**surveillance de la taille du fichier de sortie**, qui coûte presque rien et qui a été décisive
+deux fois dans la même nuit. À faire systématiquement.
+
+**Un auteur qui rapporte un énoncé n'en est pas l'auteur.** Le lot du 26 août a failli attribuer à
+Gadbois la phrase qu'il présente comme « la proposition de départ de toutes les études » avant de
+lui opposer son propre article. Dans un texte de problématique, **la thèse d'ouverture est souvent
+celle dont l'auteur se démarque** : la citation se prend après la charnière, pas avant.
 
 **Un agent qui télécharge vérifie l'empreinte de ce qu'il a reçu.** Le répertoire de travail
 temporaire est partagé entre agents parallèles, et trois agents du lot du 23 août ont lu ou écrit

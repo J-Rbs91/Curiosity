@@ -1,4 +1,4 @@
-# État du corpus — 25 août 2026
+# État du corpus — 26 août 2026
 
 Écrit sur le disque parce qu'une session a déjà été coupée en cours de route : ce fichier
 existe pour qu'une reprise reparte des fichiers, et non de la mémoire de quelqu'un.
@@ -6,17 +6,18 @@ existe pour qu'une reprise reparte des fichiers, et non de la mémoire de quelqu
 Ce fichier dit ce que le corpus **est**. Ce qui lui **manque**, et par quel bout le prendre,
 est dans [`corpus/RESTE-A-FAIRE.md`](RESTE-A-FAIRE.md).
 
-`npm run corpus:validate` : **84 enregistrements, 82 validés, 0 erreur, 55 avertissements.**
-`npm run corpus:deepen` : **66 approfondissements pour 82 cartes validées.** Fin de sortie :
-**seize cartes sans approfondissement**, les huit de la science de la décision et les huit de
-l'operations management, et c'est le seul écart entre validé et servi.
-`npm test` : **476 tests, 0 échec.** `npm run lint` et `npm run corpus:build` : sans erreur.
+`npm run corpus:validate` : **92 enregistrements, 89 validés, 0 erreur, 63 avertissements.**
+`npm run corpus:deepen` : **66 approfondissements pour 89 cartes validées.** Fin de sortie :
+**vingt-trois cartes sans approfondissement**, les huit de la science de la décision, les huit de
+l'operations management et les sept de la psychologie du travail, et c'est le seul écart entre
+validé et servi.
+`npm test` : **480 tests, 0 échec.** `npm run lint` et `npm run corpus:build` : sans erreur.
 
-**Huit domaines instruits sur onze déclarés.** `operations-management` a rendu son premier lot le
-25 août, au passage 03 de la routine nocturne, deux nuits après avoir reçu son périmètre et sa
-cartographie. Les trois derniers domaines fermés (`sociology-of-work`, `work-psychology`,
+**Neuf domaines instruits sur onze déclarés.** `work-psychology` a été ouvert et instruit le
+26 août, au passage 04 de la routine nocturne, **en une seule nuit** là où son prédécesseur en
+avait demandé deux. Les deux derniers domaines fermés (`sociology-of-work`,
 `behavioral-economics`) n'ont ni périmètre ni cartographie : les ouvrir, c'est refaire l'ordre
-complet, périmètre puis scout puis thèmes puis cartes.
+complet, périmètre puis scout puis cartes puis thèmes.
 
 | domaine | thèmes | cartes validées | approfondissements |
 |---|---:|---:|---:|
@@ -28,15 +29,20 @@ complet, périmètre puis scout puis thèmes puis cartes.
 | Systems Thinking | 3 | 7 | 7 |
 | Science de la décision | 2 | 8 | **0** |
 | Operations Management | 3 | 8 | **0** |
+| Psychologie du travail | 2 | 7 | **0** |
 
-**Seize cartes validées attendent leur approfondissement**, les huit du 23 août et les huit du
-25. L'écart s'était refermé le 21 août et il se rouvre depuis, volontairement : la routine
-nocturne consacre une phase entière à ce travail, et une nuit d'ouverture de domaine n'en écrit
-pas. `npm run corpus:deepen` les liste en fin de sortie : **c'est la file, et elle fait foi
-contre ce fichier.**
+**Vingt-trois cartes validées attendent leur approfondissement**, les huit du 23 août, les huit
+du 25 et les sept du 26. L'écart s'était refermé le 21 août et il se rouvre depuis,
+volontairement : la routine nocturne consacre une phase entière à ce travail, et une nuit
+d'ouverture de domaine n'en écrit pas. `npm run corpus:deepen` les liste en fin de sortie :
+**c'est la file, et elle fait foi contre ce fichier.**
 
 **La famille « Comprendre le pilotage » est complète.** Ses deux domaines, la théorie de la
 mesure et la science de la décision, sont instruits.
+
+**La famille « Comprendre les humains et les organisations » n'est plus vide en son milieu.**
+Elle était la seule famille encore incomplète au 25 août, avec trois domaines fermés sur quatre ;
+il lui en reste deux, la sociologie du travail et l'économie comportementale.
 
 **La famille « Comprendre la production et les systèmes » est complète elle aussi.** Elle était
 entièrement vide le 20 août : la cybernétique le 21, le systems thinking le 22, et
@@ -44,7 +50,141 @@ entièrement vide le 20 août : la cybernétique le 21, le systems thinking le 2
 donc entièrement instruites**, et les trois domaines qui restent appartiennent tous à la même,
 « Comprendre les humains et les organisations ».
 
-# 0. Operations Management — premier lot du 25 août 2026 (passage 03), publié
+# 0. Psychologie du travail — lot d'ouverture du 26 août 2026 (passage 04), publié
+
+Neuvième domaine instruit, **premier des trois derniers de la famille « Comprendre les humains et
+les organisations »**. Ouvert et instruit **dans la même nuit**, dans l'ordre complet : périmètre,
+cartographie, cartes, puis thèmes après le contrôle aveugle.
+
+**Ce domaine partait avec le legs le plus maigre du dépôt**, et c'était un résultat plutôt qu'un
+oubli : trois cartographies voisines s'étaient déclarées vides pour lui, et la seule frontière
+qu'on lui avait consignée, Mackworth 1948, avait été **tranchée contre lui**. Il n'a donc rien
+hérité, et il a fallu tout balayer.
+
+## Les sept cartes
+
+| id | thème | auteur·s | tours |
+|---|---|---|---:|
+| `cinq-dimensions-de-l-emploi` | Ce qui donne envie de s'y mettre | Hackman, Oldham | **2** |
+| `trois-etats-psychologiques-critiques` | Ce qui donne envie de s'y mettre | Hackman, Oldham | 1 |
+| `force-du-besoin-de-developpement` | Ce qui donne envie de s'y mettre | Hackman, Oldham | 1 |
+| `objectif-specifique-et-difficile` | Ce qui donne envie de s'y mettre | Locke, Shaw, Saari, Latham | 1 |
+| `mecanismes-de-l-objectif` | Ce qui donne envie de s'y mettre | Locke, Shaw, Saari, Latham | 1 |
+| `seuil-d-insatisfaction-salariale` | Ce que l'emploi laisse sur soi | Ghesquière-Dierickx | 1 |
+| `asservissement-des-activites-hors-travail` | Ce que l'emploi laisse sur soi | Gadbois | 1 |
+
+**Les sept portent une citation, relue sur l'image de la page.** **Deux reposent sur une source
+primaire francophone**, et c'est ici que le lot est inhabituel : **la couche francophone ouverte
+de ce domaine est plus riche que sa couche anglophone ouverte**, ce qui n'était jamais arrivé
+dans ce corpus. **Le domaine n'a aucune signature féminine**, et il faut le dire précisément : la
+seule autrice repérée du numéro dépouillé, Claude Lévy-Leboyer, a été écartée pour un motif de
+frontière et non par inadvertance. À surveiller au prochain passage, pas à corriger par quota.
+
+**Une huitième carte est écrite et n'est pas publiée**, `attention-diffusee-et-selection`, d'après
+Lahy 1924. **Le motif est une règle du dépôt, pas un défaut** : sa source primaire est en
+`consulted: partial`, onze pages ouvertes sur soixante-sept, et une fiche publiée exige une source
+primaire lue en texte intégral. Elle n'a même pas été soumise au contrôle, et c'est délibéré : la
+faire contrôler avant qu'elle puisse passer aurait dépensé un contrôleur pour rien. Son thème,
+`juger-quelqu-un-apte`, **n'est donc pas déclaré**, un thème sans carte validée ne se déclarant
+pas.
+
+## Ce que ce lot a payé, et qui resservira
+
+**La leçon opératoire tient pour la deuxième nuit consécutive, et elle a de nouveau été
+nécessaire.** Les quatre contre-mesures du passage 03 (sources pré-identifiées, relecture des gros
+fichiers interdite, requêtes bornées, écriture exigée tôt) ont été écrites dans chaque prompt.
+**Tous les agents ont écrit un squelette dans les deux premières minutes**, ce qui est le résultat
+recherché. Mais **deux d'entre eux se sont ensuite arrêtés d'écrire pendant près de dix minutes**,
+le scout et un lecteur, et il a fallu leur envoyer un « écris maintenant » pour qu'ils rendent.
+**La contre-mesure n° 4 ne suffit donc pas seule** : elle garantit qu'un squelette existe, pas que
+le corps soit écrit. Ce qui a rattrapé les deux cas est une **surveillance de la taille du fichier
+de sortie**, qui coûte peu et qui a été décisive deux fois dans la même nuit.
+
+**Le contrôle aveugle a corrigé le contrôle aveugle.** C'est le résultat de méthode du lot. Deux
+contrôleurs indépendants ont conclu en sens opposé sur la même collation : l'un a déclaré exacte
+la mention « [1] f., 80 p., [4] f. » en la déduisant de la structure du `djvu.xml`, l'autre l'a
+déclarée fausse **en lisant les folios imprimés sur les images**, 81 au feuillet n84 et 84 au
+feuillet n87. **C'est la lecture sur l'image qui a raison**, vérifiée une troisième fois avant
+correction. Le premier contrôleur avait d'ailleurs signalé lui-même, hors mandat, que la
+pagination automatique de cet item est une inférence fausse : **il tenait l'indice qui invalidait
+sa propre conclusion.** La collation a été retirée des trois cartes concernées plutôt que
+remplacée par une estimation.
+
+**Une lecture primaire vaut mieux qu'une cartographie, et ce lot l'a vérifié quatre fois.** Les
+quatre corrections portaient toutes sur des annonces du repérage, et chacune aurait faussé une
+carte :
+
+- **le passage que la cartographie donnait pour citable chez Gadbois n'est pas de lui.** Il le
+  présente comme « la proposition de départ de toutes les études » et lui oppose aussitôt son
+  article. Le citer aurait attribué à l'auteur l'énoncé qu'il reprend pour le juger insuffisant ;
+- **Ghesquière-Dierickx est un homme**, Bernard, prénom lu sur la signature imprimée là où la
+  notice d'autorité de Persée n'en donne que l'initiale ;
+- **les antécédents de Hackman et Oldham sont deux et non un** : les six dimensions de Hackman et
+  Lawler 1971, donc le travail antérieur de Hackman lui-même, et les six attributs de tâche de
+  Turner et Lawrence 1965, qui en sont distincts. La cartographie les avait fondus sous le seul
+  nom de Lawler ;
+- **le sujet B. de Lahy est donné pour « un cas typique »**, une illustration. La cartographie en
+  faisait une démonstration d'indépendance à l'égard de l'ancienneté : elle ne l'est pas.
+
+**Un dérivé d'image ment, et un fichier de métadonnées ment aussi.** Le piège du suffixe `_x1600`,
+établi le 25 août, a été évité partout. Il s'y ajoute un piège nouveau et de même famille : le
+`page_numbers.json` d'Internet Archive **est une inférence automatique et non une lecture**, il
+annonce 94 feuillets pour 88 sur l'item de Hackman et Oldham, et c'est lui qui a fait écrire une
+collation fausse à trois cartes. La règle qui en sort est la même que pour l'OCR : **ce qui n'a
+pas été lu sur l'image n'a pas été lu.**
+
+**La couche OCR d'un item peut être inexploitable sans que rien ne le signale.** Celle de
+`DTIC_AD0779828` rend « shot® » pour « shown » et « Oat cones » pour « Outcomes », au point qu'une
+recherche plein texte sur la phrase citée échoue sur le fichier téléchargé. **Deux contrôleurs
+l'ont constatée séparément.** C'est porté dans les notes des trois cartes concernées.
+
+## Ce que le contrôle a réellement attrapé
+
+| question | résultat sur sept fiches |
+|---|---|
+| citation verbatim, à l'endroit annoncé | 7/7 dès le premier passage |
+| attribution | 7/7 dès le premier passage |
+| prose fidèle aux sources | 7/7 dès le premier passage |
+| sources qui résolvent | 6/7, un renvoi, sur une collation affichée |
+
+**Le seul renvoi du lot porte sur une ligne de description**, et pas sur un texte, une attribution
+ou notre prose. Il a été corrigé et recontrôlé par un contrôleur distinct, qui a **vérifié la
+règle de pagination sur l'image au lieu de la croire** avant de rendre `PASS` au second tour.
+
+**Quatre corrections ont été signalées hors mandat par des contrôleurs qui rendaient `PASS`, et
+trois ont été appliquées.** C'est le cinquième lot consécutif où ce dispositif rapporte :
+
+- la source de Locke oppose l'objectif difficile à des *specific easy goals*, et le résumé omettait
+  « spécifique », ce qui élargissait la comparaison au-delà de ce que la page énonce ;
+- Gadbois rattache les conditions d'exécution **aux activités hors travail** et non au système qui
+  les organise ;
+- c'est la **notice d'autorité** de Persée, et non la notice de l'article, qui abrège le prénom de
+  Ghesquière-Dierickx.
+
+**La quatrième est déclarée et non appliquée, faute de place** : le résumé du seuil salarial
+reprend « nettement perçu » sans la restriction « par la plupart des sujets », qui ne tenait pas
+sous le plafond de 170 caractères et qui reste lisible dans la citation affichée juste à côté.
+
+## Réserves conservées, et ce qui commande le prochain passage sur ce domaine
+
+- **Aucune source secondaire n'a été ouverte sur les sept cartes**, et aucune réception
+  francophone n'existe sur aucune. C'est la faiblesse structurelle du lot, déclarée fiche par
+  fiche. Les lectures n'en ont porté aucune plutôt que d'en inventer.
+- **Le canon anglophone du champ reste fermé et il faut cesser de le retenter** : Herzberg 1959
+  (`motivationtowork0000unse`) et Walker & Guest 1952 (`manonassemblylin0000unse`) sont en prêt
+  numérique sur Internet Archive, et **un prêt numérique ne s'emprunte pas**. La voie qui rend
+  dans ce domaine est la littérature grise de l'Office of Naval Research.
+- **Le numéro 344 du *Bulletin de psychologie* n'est dépouillé qu'à moitié.** Sept articles lus,
+  deux retenus, cinq écartés avec leur motif, et le reste du numéro non ouvert.
+- **Une piste ouverte et non lue** : `DTIC_ADA065892`, « An Integration of Contemporary Theories
+  of Work Motivation » (1978).
+- **La théorie de Hackman et Oldham n'est pas démontrée par la pièce citée** : le rapport renvoie
+  son test empirique au Technical Report No. 6, qui n'a pas été ouvert, et les cartes le disent.
+- **La dette envers `behavioral-economics` n'a pas été payée**, le plafond de requêtes du scout
+  ayant été atteint avant. C'est un vide de méthode, pas un vide vérifié, et le prochain passage
+  qui doit cette dette repart de zéro sur ce domaine.
+
+# 0 bis. Operations Management — premier lot du 25 août 2026 (passage 03), publié
 
 Huitième domaine instruit, **troisième et dernier de la famille « Comprendre la production et les
 systèmes »**. Ce lot est le second passage sur ce domaine : le premier, le 24 août, avait écrit le
