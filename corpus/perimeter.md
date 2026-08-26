@@ -1,6 +1,6 @@
 # Périmètre du corpus
 
-## Huit domaines ouverts sur onze
+## Neuf domaines ouverts sur onze
 
 L'application couvre **quatre familles et onze domaines**, déclarés dans
 [`src/content/taxonomy.ts`](../src/content/taxonomy.ts). Déclarer un domaine et l'instruire
@@ -9,8 +9,8 @@ admise parce qu'un domaine existe dans la taxonomie.
 
 > **Les périmètres d'instruction ouverts sont `organizational-sociology`,
 > `measurement-theory`, `activity-ergonomics`, `human-factors`, `cybernetics`,
-> `systems-thinking`, `decision-science` et `operations-management`.** Les trois autres
-> domaines — `sociology-of-work`, `work-psychology` et `behavioral-economics` — sont déclarés
+> `systems-thinking`, `decision-science`, `operations-management` et `work-psychology`.** Les
+> deux autres domaines — `sociology-of-work` et `behavioral-economics` — sont déclarés
 > dans la taxonomie et restent fermés à l'instruction tant
 > qu'une décision explicite ne les ouvre pas — décision qui s'inscrit dans ce fichier, sous la forme d'une
 > section de périmètre comme celles qui suivent.
@@ -59,7 +59,10 @@ l'activité nomme autrement. La règle est l'**objet du travail cité**, pas sa 
   le voir → systems thinking ;
 - le concept porte sur **ce que rend un système qui produit** — sa capacité, sa file, son
   stock, son délai, la variabilité qui les travaille — et sur ce qu'on y dimensionne ou
-  arbitre → operations management.
+  arbitre → operations management ;
+- le concept porte sur **ce que la personne éprouve durablement de son emploi** — satisfaction,
+  motivation, implication, monotonie, usure — et sur les propriétés de la situation d'emploi
+  auxquelles cet état se rapporte → psychologie du travail.
 
 **Un concept déjà instruit ne se réinstruit pas dans un autre domaine.** Une carte a un
 identifiant unique ; deux domaines ne peuvent pas se partager le même concept, et le
@@ -1493,6 +1496,265 @@ La règle d'accès ne change pas :
 > connexion, à un prêt numérique ou à une restriction d'emprunt, on essaie une autre voie
 > légitime. **Un texte qu'on ne peut pas ouvrir légitimement est un texte qu'on n'a pas
 > ouvert** : on le dit, et on ne conclut pas au verbatim.
+
+## Thèmes
+
+**Aucun thème déclaré à l'ouverture.** Ils se déclarent après le contrôle aveugle des cartes du
+premier lot, et non après leur rédaction ni d'après la proposition de la cartographie. Un thème
+sans carte validée ne se déclare pas : le dépôt en porte déjà deux qui affichent une page vide,
+et c'est deux de trop.
+
+---
+
+# Domaine ouvert — `work-psychology`
+
+Ouvert le 26 août 2026, au passage 04 de la routine nocturne. Neuvième domaine instruit, et
+**le premier des trois derniers**, tous de la famille « Comprendre les humains et les
+organisations ».
+
+**Ce domaine part avec le legs le plus maigre du dépôt, et c'est un résultat plutôt qu'un
+oubli.** Trois cartographies l'ont explicitement balayé et **les trois se déclarent vides pour
+lui**, en disant pourquoi :
+
+- [`corpus/map/human-factors.scouting.md`](map/human-factors.scouting.md) écrit que « ni le
+  stress, ni l'épuisement professionnel, ni la motivation n'ont été le sujet spontané d'aucune
+  des recherches menées », les mots-clés de son périmètre ne recoupant pas naturellement ceux
+  d'ici. Elle lui consigne **un seul cas de frontière, et elle le tranche contre lui** :
+  Mackworth 1948 sur la vigilance reste du côté `human-factors`, la dégradation d'une ressource
+  attentionnelle pendant une tâche de surveillance n'étant pas un état affectif ou motivationnel
+  durable. **Ce texte n'est donc pas à réclamer ici** ;
+- [`corpus/map/cybernetics.scouting.md`](map/cybernetics.scouting.md) se déclare vide pour lui
+  dans les mêmes termes, et pour la même raison de vocabulaire ;
+- [`corpus/map/operations-management.scouting.md`](map/operations-management.scouting.md) lui a
+  consacré la requête ciblée que son périmètre lui imposait, et **rapporte un résultat non
+  concluant qu'elle refuse de maquiller** : le classique attendu du champ, Walker & Guest,
+  *The Man on the Assembly Line* (1952), n'est pas remonté, et elle écrit « je ne porte aucun
+  titre de mémoire en candidat, faute d'avoir vérifié son accès ». Statut légué : **non
+  concluant**, à retenter avec une base bibliographique structurée.
+
+**Le legs n'est donc pas un stock, c'est une carte des impasses**, et elle a de la valeur à ce
+titre : elle dit que ce domaine ne s'ouvrira pas par un texte tombé d'un voisin, mais par un
+balayage entier.
+
+## Le périmètre est la discipline
+
+> **Psychologie du travail** — l'étude de **ce que le travail fait à celui qui l'exerce, et de
+> ce qui l'y engage ou l'en détourne** : la satisfaction, la motivation, l'implication, la
+> monotonie, le stress et l'usure, pris comme états d'une personne et rapportés aux propriétés
+> de son emploi.
+
+Le domaine ne porte pas sur ce que l'opérateur **fait** pour tenir sa tâche malgré les
+conditions, qui est en ergonomie de l'activité ; ni sur ce qu'il **perçoit, comprend ou
+manque**, qui est en human factors ; ni sur le **rapport social** dans lequel son travail
+l'inscrit, qui sera en sociologie du travail. Il porte sur **la personne au travail comme
+porteuse d'états durables** — content ou non, engagé ou non, usé ou non — et sur les propriétés
+de la situation d'emploi auxquelles ces états se rapportent.
+
+La coupure décisive, héritée de `human-factors` et reprise ici telle quelle : **ce qui porte sur
+un état affectif ou motivationnel durable est ici ; ce qui porte sur une ressource cognitive
+engagée dans une tâche est là-bas.** Elle a été écrite depuis l'autre côté et elle ne se rouvre
+pas.
+
+Le champ a une particularité qu'il faut tenir dès l'ouverture : **il mesure ce dont il parle.**
+L'essentiel de sa littérature primaire est faite d'instruments — questionnaires, échelles,
+inventaires — et d'articles qui les construisent et les valident. Cela crée un risque propre au
+domaine, et il faut le nommer avant le balayage : **un instrument n'est pas un concept.** Ce qui
+s'instruit ici, c'est la thèse que l'instrument sert à établir, jamais l'instrument pour
+lui-même. Une carte sur un questionnaire serait une carte sur un outil de recherche, et le
+lecteur n'a rien à en faire.
+
+## Points d'entrée
+
+Aucun auteur n'est retenu d'avance, et ce domaine en a un besoin particulier : ses noms les plus
+disponibles de mémoire sont ceux d'une **vulgarisation managériale** qui a plus publié que la
+recherche, et dont les formules circulent sans leur texte. Ce qui se balaie, ce sont des
+**littératures** :
+
+- la satisfaction au travail : ce qu'elle est, ce qui la prédit, et pourquoi elle se laisse si
+  mal rapporter à une cause unique ;
+- la motivation au travail et ce qui la distingue de la satisfaction, y compris la question de
+  savoir si une récompense extérieure ajoute ou retranche à l'engagement ;
+- **les propriétés de l'emploi qui font la différence** : variété, identité et signification de
+  la tâche, autonomie, retour d'information, et le mécanisme par lequel elles agiraient ;
+- la monotonie et la répétitivité prises comme fait psychique, que le périmètre
+  d'`operations-management` a explicitement renvoyées ici ;
+- les exigences du poste et la latitude décisionnelle, et ce que leur combinaison produit ;
+- le stress professionnel, l'usure et l'épuisement, pris par le mécanisme exposé et jamais par
+  le récit de cas ;
+- l'implication, l'attachement à l'emploi et le départ volontaire, quand l'objet est l'état de
+  la personne et non le taux de rotation comme grandeur de gestion ;
+- la sélection et l'évaluation professionnelles, y compris la psychotechnique qui est l'origine
+  historique du champ en France ;
+- **la couche francophone, cherchée en parallèle et non après coup** : psychologie du travail,
+  psychopathologie du travail, psychotechnique, conditions de travail. Persée, HAL, Cairn,
+  OpenEdition Books, theses.fr.
+
+## Le test d'entrée
+
+La question n'est pas « est-ce de la psychologie du travail ? » : l'étiquette recouvre en France
+une discipline instituée, et dans le monde anglophone un découpage qui va de la psychométrie au
+comportement organisationnel. La question est :
+
+> **Ce travail éclaire-t-il un état durable de la personne au travail, rapporté à ce que son
+> emploi a de particulier ?**
+
+Trois conditions cumulatives :
+
+1. il porte sur **un état de la personne** — satisfaction, motivation, implication, monotonie
+   ressentie, tension, usure — et non sur une opération cognitive qu'elle exécute, ni sur la
+   structure qui l'emploie prise pour elle-même ;
+2. il est **rattachable à un auteur identifié**, et cette attribution est documentable ;
+3. il est **enseignable** : un lecteur non spécialiste doit pouvoir reconnaître ce dont il
+   s'agit dans un emploi qu'il a lui-même occupé ou observé.
+
+## Hors périmètre — rejet direct
+
+- **Le mot « motivation », « bien-être » ou « épanouissement » employé sans mécanisme
+  identifiable ni auteur rattachable.** C'est le rejet le plus fréquent à prévoir dans ce
+  domaine, plus encore que dans les précédents, parce que la littérature de conseil en a fait
+  son fonds de commerce. Il se tranche sans état d'âme : `corpus/rejected/`,
+  `rejection_reason: "OUT_OF_SCOPE"`, jamais une mise en attente. Un candidat gris non tranché
+  revient toujours par une autre porte.
+- **Un instrument présenté pour lui-même** — une échelle, un inventaire, un questionnaire —
+  sans la thèse qu'il sert à établir.
+- **La psychologie clinique ou la psychiatrie prises hors du travail**, même quand le patient
+  travaille. L'objet doit être le rapport entre l'état et l'emploi.
+- **La physiologie et la biologie de la fatigue** prises comme fait organique. La cartographie
+  de `cybernetics` a déjà tranché un cas de cette nature en rejet direct pour objet biologique,
+  et la décision vaut ici.
+- **Le conseil en organisation et la littérature de management** qui reprennent ces mots sans
+  remonter à un travail de recherche.
+
+## Les frontières, tranchées à l'avance
+
+Elles se tranchent ici et maintenant, avant la cartographie, parce qu'une frontière arbitrée en
+cours de lot est arbitrée par ce que le lot contient. Deux régimes distincts :
+
+- **avec un domaine ouvert**, un candidat mal placé part chez le voisin ou ne s'instruit pas ;
+  il ne se réinstruit jamais en double, le validateur refuse le doublon d'`id` comme de `slug` ;
+- **avec un domaine encore fermé**, un candidat ne part pas en rejet : il se **consigne dans les
+  angles morts** de la cartographie. Ce domaine doit cette consigne à ses deux successeurs,
+  `sociology-of-work` et `behavioral-economics`, qui sont les derniers et n'ont aucun stock.
+
+### Avec `activity-ergonomics` et `human-factors`, ouverts — la frontière décisive
+
+C'est la seule qui puisse coûter cher, et pour une raison matérielle : **la revue francophone
+qui porte ce domaine porte aussi les deux autres.** Le *Bulletin de psychologie* publie dans un
+même numéro des ergonomes de l'activité, des psychologues cognitifs et des psychologues du
+travail, et Leplat a écrit des trois côtés. La frontière ne se tranche donc ni par la revue, ni
+par le numéro, ni par l'auteur, mais par **ce dont le texte parle** :
+
+| le texte porte sur | domaine |
+|---|---|
+| ce que l'opérateur **fait** pour tenir la tâche, et ce que cela lui coûte en cours d'activité | `activity-ergonomics` |
+| ce que l'opérateur **perçoit, comprend, anticipe ou manque** | `human-factors` |
+| ce que l'opérateur **éprouve durablement** de son emploi, et ce qui l'y engage | `work-psychology` |
+| l'écart tâche prescrite / travail réel, la régulation, les marges de manœuvre | `activity-ergonomics` |
+| l'erreur, la fiabilité, la charge mesurée, l'automatisation | `human-factors` |
+| la satisfaction, la motivation, l'implication, la monotonie, l'usure | `work-psychology` |
+
+Un cas limite mérite d'être nommé parce qu'il se présentera : **la charge de travail**, déjà
+partagée entre les deux domaines ouverts. La règle existante ne bouge pas — la charge comme
+compromis que l'opérateur arbitre est en ergonomie de l'activité, la charge comme grandeur qu'on
+définit et qu'on mesure est en human factors. **Ce domaine n'en prend que ce qui devient un état
+durable** : la tension, l'usure, l'épuisement, c'est-à-dire ce qui reste quand la tâche est
+finie.
+
+### Avec `organizational-sociology`, ouvert
+
+Ce qui porte sur la **règle, le pouvoir, la structure ou la décision** d'une organisation est
+chez le voisin, même quand le texte parle de ce que les gens y ressentent. Ce qui porte sur
+**l'état de la personne**, même quand le texte remonte ensuite à l'organisation qui l'a produit,
+est ici. Un cas est déjà tranché de fait et il faut le respecter : `exit-voice-loyalty` et le
+thème `reaction-insatisfaction` sont instruits en sociologie des organisations, et
+l'insatisfaction y est prise comme **déclencheur d'une conduite** dans une organisation. Ce
+domaine ne réinstruit pas ce concept ; il peut instruire l'insatisfaction comme **état rapporté
+aux propriétés de l'emploi**, ce qui est un autre objet.
+
+### Avec `measurement-theory`, ouvert
+
+Un questionnaire de satisfaction n'entre pas en théorie de la mesure du seul fait qu'il mesure.
+Il y entrerait si l'objet du texte était **l'effet en retour de la mesure sur le mesuré**. Tant
+que l'objet est ce que l'instrument saisit d'un état et ce qu'il en manque, c'est ici, sous la
+réserve déjà écrite : un instrument ne s'instruit pas pour lui-même.
+
+### Avec `decision-science`, ouvert
+
+Le périmètre de `decision-science` a écrit cette frontière depuis l'autre côté et elle se rend
+ici telle quelle : **la décision comme charge, source de stress ou objet de satisfaction est
+ici** ; la théorie du choix, les heuristiques et les biais de jugement sont là-bas.
+
+### Avec `operations-management`, ouvert
+
+Le périmètre d'`operations-management` a écrit cette frontière depuis l'autre côté et elle se
+rend ici telle quelle : **la cadence, la répétitivité et la charge prises comme fait psychique
+sont ici** ; le temps de cycle, l'ordonnancement et le dimensionnement sont là-bas. C'est cette
+frontière qui donne au domaine son entrée la plus canonique, le travail à la chaîne.
+
+### Avec `cybernetics` et `systems-thinking`, ouverts
+
+Sans objet prévisible. Les deux cartographies se sont déclarées vides pour ce domaine et la
+réciproque devrait valoir : un texte de psychologie du travail qui emploie le mot « système »
+n'instruit pas un concept systémique. Le cas à surveiller est celui des **systèmes
+socio-techniques**, dont ce champ a hérité un vocabulaire : la dette se signale dans
+l'attribution, elle ne s'instruit pas ici.
+
+### Avec `sociology-of-work`, fermé et suivant dans l'ordre
+
+**C'est la frontière la plus coûteuse à tenir de toutes celles de ce domaine**, et elle mérite
+d'être écrite avec soin parce que le domaine voisin s'ouvrira juste après et lira cette section.
+Les deux champs partagent leurs terrains, leurs revues francophones et souvent leurs enquêtes :
+la revue *Sociologie du travail* publie sur la satisfaction, et le *Bulletin de psychologie* sur
+les rapports collectifs. La coupure retenue est celle-ci :
+
+- ce qui prend l'état de la personne comme **rapporté aux propriétés de son emploi** — ce que
+  cette tâche, ce salaire, cet horaire lui font — est **ici** ;
+- ce qui prend le même état comme **rapporté à sa position sociale** — sa classe, sa
+  qualification, son collectif, son rapport au patron — est **là-bas**.
+
+Un candidat de la seconde veine se consigne en angle mort, jamais en rejet. Et **ce balayage-ci
+doit chercher pour lui de façon ciblée**, comme `operations-management` l'a fait pour ce
+domaine-ci : c'est une dette entre passages, et elle se paie.
+
+### Avec `behavioral-economics`, fermé
+
+Ce qui porte sur **le comportement économique et ses conséquences agrégées** — préférences
+temporelles, incitations prises comme dispositif économique, effets de marché — se consigne en
+angle mort. La rémunération est le cas partagé : le **salaire comme source de satisfaction ou
+d'insatisfaction** est ici ; le **salaire comme incitation dont on mesure l'effet sur un
+marché** est là-bas.
+
+## L'accès — ce que ce domaine impose, et il impose plus que les précédents
+
+Trois constats, dont le premier est une prévision qu'il faut faire avant le balayage pour ne pas
+la prendre pour un échec :
+
+- **le canon anglophone de ce champ est fait d'ouvrages, et il restera fermé.** Les deux textes
+  que n'importe qui nommerait, Herzberg, *The Motivation to Work* (1959), et Walker & Guest,
+  *The Man on the Assembly Line* (1952), existent sur Internet Archive **en collection
+  `internetarchivebooks` avec restriction d'emprunt**, vérifié le 26 août 2026 sur les items
+  `motivationtowork0000unse` et `manonassemblylin0000unse`. **Un prêt numérique ne s'emprunte
+  pas**, et ces textes sont donc des textes non ouverts. Cela s'écrit dans les angles morts, pas
+  dans les cartes ;
+- **la littérature grise sauve une partie du canon, et elle est ici la voie principale.** La
+  collection `dticarchive` d'Internet Archive, établie comme voie rentable par le lot du
+  23 août, sert des rapports techniques universitaires produits sous contrat de l'Office of
+  Naval Research dont la publication en revue est fermée. **La psychologie du travail américaine
+  des années 1960 et 1970 s'est écrite dans ce fonds**, et `ERIC` en est le doublon partiel. Un
+  `is_oa: false` d'Unpaywall ne clôt donc rien tant que le rapport n'a pas été cherché ;
+- **la couche francophone est ici plus riche que la couche anglophone ouverte, ce qui est
+  inhabituel dans ce corpus.** Persée sert le *Bulletin de psychologie* en texte intégral par
+  son endpoint page, et la discipline y a publié ses numéros de synthèse. C'est une inversion à
+  exploiter, et non une compensation.
+
+Et la règle qui ne se négocie dans aucun domaine, rappelée ici parce que la restriction
+d'emprunt s'y présentera plus souvent qu'ailleurs :
+
+> **Aucun agent ne contourne un contrôle d'accès.** Face à un défi anti-robot, à un mur de
+> connexion, à un prêt numérique ou à une restriction d'emprunt, on essaie une autre voie
+> légitime ; on ne résout pas le défi, on ne se présente pas sous l'identité d'un navigateur,
+> on n'emprunte pas ce qui demande un compte. **Un texte qu'on ne peut pas ouvrir légitimement
+> est un texte qu'on n'a pas ouvert** : on le dit, et on ne conclut pas au verbatim.
 
 ## Thèmes
 
