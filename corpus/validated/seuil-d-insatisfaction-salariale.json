@@ -1,0 +1,79 @@
+{
+ "$schema": "../schema/carte.schema.json",
+ "id": "seuil-d-insatisfaction-salariale",
+ "slug": "seuil-d-insatisfaction-salariale",
+ "status": "VALIDATED",
+ "title": "Le seuil au-dessous duquel on se dit mal payé",
+ "themes": [
+  "ce-que-l-emploi-depose"
+ ],
+ "theme_labels": {
+  "ce-que-l-emploi-depose": "Ce que l'emploi laisse sur soi"
+ },
+ "authors": [
+  {
+   "name": "Bernard Ghesquière-Dierickx",
+   "app_author_id": null
+  }
+ ],
+ "attribution_note": "Article signé d'un seul auteur, Bernard Ghesquière-Dierickx, dont le prénom se lit sur la signature imprimée sous le titre, page 413, là où la notice d'autorité de Persée ne donne que l'initiale.",
+ "hook": "Augmenter un salaire suffit-il à changer ce que le salarié en ressent ?",
+ "summary": "Ce que le salarié éprouve tient moins au montant qu'à sa place dans un niveau d'aspiration : une plage à trois zones dont la limite basse est un seuil nettement perçu.",
+ "quotation": {
+  "text": "La limite de la zone frustrante est un seuil nettement perçu par la plupart des sujets.",
+  "reference": "Bernard Ghesquière-Dierickx, « Signification de la rémunération chez le salarié. Recherche d'un seuil d'insatisfaction », Bulletin de psychologie, tome XXXIII, n° 344, 1980, p. 413-416.",
+  "locator": "p. 415",
+  "language": "fr",
+  "original_text": null,
+  "original_language": null,
+  "translation": {
+   "kind": "none",
+   "translator": null,
+   "edition": null
+  }
+ },
+ "sources": [
+  {
+   "label": "Bernard Ghesquière-Dierickx, « Signification de la rémunération chez le salarié. Recherche d'un seuil d'insatisfaction », Bulletin de psychologie, tome XXXIII, n° 344, 1980, p. 413-416.",
+   "kind": "primary",
+   "locator": "p. 413-416",
+   "doi_isbn": "10.3406/bupsy.1980.11728",
+   "url": "https://www.persee.fr/doc/bupsy_0007-4403_1980_num_33_344_11728",
+   "consulted": "full-text"
+  }
+ ],
+ "review": {
+  "reviewer": "contrôle aveugle, session du 26 août 2026",
+  "date": "2026-08-26",
+  "attribution": "confirmee",
+  "quotation": "verbatim",
+  "sources": "resolvent",
+  "prose": "fidele",
+  "verdict": "PASS",
+  "rounds": 1,
+  "notes": [
+   "OUTIL : le serveur `documentary` / `verify_reference` n'était pas exposé dans cette session. J'ai résolu le DOI moi-même par négociation de contenu Crossref (`Accept: application/vnd.citationstyles.csl+json` sur https://doi.org/10.3406/bupsy.1980.11728) puis par lecture page à page sur Persée. Aucun contournement d'accès : `docAsPDF` n'a pas été sollicité, la lecture image a suffi.",
+   "DOI : https://doi.org/10.3406/bupsy.1980.11728 redirige (302) vers https://www.persee.fr/doc/bupsy_0007-4403_1980_num_33_344_11728. La notice CSL Crossref rend : titre « Signification de la rémunération chez le salarié. Recherche d'un seuil d'insatisfaction », auteur unique given=Bernard / family=Ghesquière-Dierickx, container « Bulletin de psychologie », ISSN 0007-4403, volume 33, issue 344, published-print 1980, page 413-416. Tous les éléments de la référence affichée sur la fiche (tome XXXIII, n° 344, 1980, p. 413-416) sont couverts.",
+   "ATTRIBUTION — page de titre relue sur l'image pleine résolution https://www.persee.fr/renderPage/bupsy_0007-4403_1980_num_33_344_11728/bupsy_0007-4403_1980_num_33_344_T1_0413_0000_1422.jpg (1422 x 2316). Sous le double titre « Signification de la rémunération chez le salarié / Recherche d'un seuil d'insatisfaction », la signature imprimée est « Bernard GHESQUIERE-DIERICKX » (capitales sans accent), seule, sans co-signataire ni note d'institution. Article de quatre pages, signature unique : la paternité de la construction (niveau d'aspiration salarial, plage à trois niveaux, seuil d'insatisfaction) est bien celle de cet auteur, exposée en son nom propre p. 413 (« Pour plus de précision, nous l'appellerons NIVEAU D'ASPIRATION SALARIAL »), sans renvoi à un prédécesseur pour cette construction. Les seules références qu'il donne p. 416 (Iff, Reuchlin éd., Robine, Vinot) portent sur le niveau d'aspiration en général, notion qu'il n'annexe pas et que la fiche ne lui attribue pas non plus.",
+   "ATTRIBUTION — recherche d'un revendicateur antérieur : aucune trace, dans mes recherches web, d'un « seuil d'insatisfaction » salarial ou d'une plage à trois zones de ce type antérieure à 1980 et attribuable à un autre auteur. Rien ne vient contredire la paternité.",
+   "CITATION — relue sur l'image https://www.persee.fr/renderPage/bupsy_0007-4403_1980_num_33_344_11728/bupsy_0007-4403_1980_num_33_344_T1_0415_0000_1422.jpg (1426 x 2316), colonne de droite, 3e-5e lignes du premier paragraphe, sous le titre courant « BULLETIN DE PSYCHOLOGIE » et le folio « 415 » (donc ni anomalie de cache ni article étranger : la page porte bien le titre courant du périodique et enchaîne le texte de l'article). Je lis, mot pour mot : « La limite de la zone frustrante est un seuil nettement perçu par la plupart des sujets. » Phrase complète, ponctuation comprise, sans coupe : identique au champ `quotation.text`, à l'endroit annoncé (`locator` p. 415). Texte français d'origine, aucune traduction à déclarer — le champ `translation.kind: none` est correct.",
+   "SOURCES — la pagination annoncée p. 413-416 est vérifiée sur les images : 413 porte le titre et la signature, 414 et 415 portent le titre courant « BULLETIN DE PSYCHOLOGIE » avec folios imprimés, 416 se termine par la conclusion puis la rubrique « Références » (Iff, Reuchlin, Robine, Vinot). L'article occupe donc bien quatre pages, 413 à 416. La fiche ne porte qu'une source, primaire, consultée en texte intégral : elle résout vers ce qu'elle annonce.",
+   "PROSE — `hook` (« Augmenter un salaire suffit-il à changer ce que le salarié en ressent ? ») est interrogatif et épouse exactement la modalité de l'auteur, p. 413 : « Il en résulte qu'un « avancement » ou une augmentation de la rémunération peut ne pas entraîner de réaction euphorique ou une incitation à « en faire davantage ». » Le « peut ne pas » n'est pas durci en règle.",
+   "PROSE — `summary` : « une plage à trois zones » est littéralement porté par p. 413 : « Ce niveau n'est pas une espèce de ligne-frontière, exprimé par un salaire déterminé. Il couvre plutôt une plage des barèmes de salaire. C'est une plage à trois niveaux » — partie supérieure (« c'est vraiment bien payé »), partie inférieure (« est exploité »), zone de « neutralité » entre les deux ; le Tableau II p. 415 parle bien de « zones frustrantes et stimulantes ». « Ce que le salarié éprouve tient moins au montant qu'à sa place » est porté, non par le « peut ne pas » ci-dessus, mais par l'énoncé catégorique de l'auteur p. 413 : « Les réactions consécutives à cette modification se déterminent selon la zone où se situe cette nouvelle rémunération. » Aucun durcissement modal relevé.",
+   "HORS MANDAT (1) — nuance sur `attribution_note`. La note dit que la notice Persée « ne donne que l'initiale ». C'est vrai de la notice d'autorité (https://www.persee.fr/authority/168798, intitulée « Ghesquière-Dierickx, B. », qui range « Ghesquière-Dierickx, Bernard » en « Autres formes du nom »), mais faux de la notice de l'article et du sommaire du numéro (https://www.persee.fr/issue/bupsy_0007-4403_1980_num_33_344), qui affichent tous deux « Bernard Ghesquiere-Dierickx » ; Crossref donne également given=\"Bernard\". La conclusion de la note reste juste — le prénom se lit bien sur la signature imprimée p. 413 —, seule sa justification gagnerait à préciser « la notice d'autorité Persée ». N'affecte pas l'attribution.",
+   "HORS MANDAT (2) — le `summary` reprend « nettement perçu » de la citation mais laisse tomber la restriction « par la plupart des sujets ». Le lecteur retrouve la restriction dans la citation affichée juste à côté, et l'énoncé du résumé n'est pas universalisé (pas de « pour tous »), donc je ne le tiens pas pour un débordement ; je le signale parce qu'une reprise du qualificatif coûterait peu.",
+   "HORS MANDAT (3) — divergence notice / imprimé sans conséquence : le nom est imprimé sans accent en capitales sur la page de titre (« GHESQUIERE-DIERICKX ») là où la fiche et la référence bibliographique Persée écrivent « Ghesquière-Dierickx ». La forme accentuée est celle que Persée et Crossref retiennent en minuscules ; aucun motif de correction.",
+   "NON ATTEINT — je n'ai pas ouvert d'exemplaire papier du Bulletin de psychologie tome XXXIII n° 344 : la vérification de la forme imprimée repose sur les fac-similés pleine résolution servis par `renderPage`, pas sur l'objet physique. `docAsPDF` est protégé par un défi anti-robot et n'a pas été sollicité ; ce n'est pas un silence de la littérature, la lecture page à page a suffi."
+  ]
+ },
+ "notes": [
+  "Aucune source secondaire n'est affichée, et c'est une lacune déclarée : la lecture primaire n'a ouvert aucune réception, aucun commentaire, aucune reprise de ce texte. Rien n'est donc dit ici de sa postérité.",
+  "Le texte écrit « peut ne pas entraîner » et non « n'entraîne pas » : page 413, « Il en résulte qu'un “avancement” ou une augmentation de la rémunération peut ne pas entraîner de réaction euphorique ou une incitation à “en faire davantage.” » C'est une possibilité conditionnée à la zone atteinte, pas une absence générale de réaction. L'accroche pose la question sans trancher, et le résumé ne l'affirme pas.",
+  "L'asymétrie que porte la citation est empirique et non spéculative : page 415, les estimations du « bon salaire » se distribuent selon la courbe de Gauss, celles de « mal payé » se groupent sur une valeur unique. Le seuil bas est net, le seuil haut ne l'est pas.",
+  "L'estime de soi figure parmi les facteurs du niveau d'aspiration à titre d'hypothèse seulement : l'auteur écrit page 416 qu'il reste à la rechercher. Elle n'est pas portée sur la carte comme un déterminant établi.",
+  "Réserves matérielles relevées par la lecture primaire. Le tome et le numéro ne viennent pas d'une page vue mais des métadonnées Persée. La page 413 ne porte aucun folio imprimé. La forme accentuée du nom, Ghesquière-Dierickx, n'est pas attestée par l'imprimé, qui compose la signature en capitales ; elle est reprise de la notice. L'imprimé porte enfin des incohérences internes, vérifiées à l'image par la lecture primaire, qui n'ont été ni corrigées ni propagées ici.",
+  "Base empirique de l'article : un questionnaire écrit à deux questions, passé anonymement à des candidats à l'embauchage, ouvriers qualifiés ou spécialisés d'établissements industriels, en quatre passations de 1974 à 1977. Cent cas, quatre-vingt-quatorze utilisables. Aucun de ces chiffres n'est porté sur la carte.",
+  "La note d'attribution vise la notice d'autorité de Persée (authority/168798), qui abrège le prénom en initiale ; la notice de l'article et le sommaire du numéro donnent bien « Bernard », de même que Crossref. Précision signalée hors mandat par le contrôle aveugle et appliquée.",
+  "Le résumé reprend « nettement perçu » sans la restriction « par la plupart des sujets » que porte la phrase citée : le plafond de 170 caractères ne laissait pas la place, et la restriction reste lisible dans la citation affichée juste à côté. Signalé hors mandat par le contrôle aveugle, conservé en l'état et déclaré ici."
+ ]
+}
