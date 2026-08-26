@@ -5,6 +5,51 @@ coup d'œil ce que la précédente a fait, sur quelle branche elle l'a laissé, 
 reprendre. **Les scripts priment sur ce fichier** : il dit ce qui a été tenté et pourquoi, ils
 disent ce qui est.
 
+## Passage 04/15 — 2026-08-26
+
+- branche      : `claude/zen-johnson-gg1vwh` (imposée par la session, pas `main`), pull request vers `main`. **Le travail du passage 03 est fusionné dans `main`** (PR [#78](https://github.com/J-Rbs91/Curiosity/pull/78), puis PR #77), et cette branche partait de `main` à jour, au commit `3ac78f8` : rien n'a été refait. Tant que la présente pull request n'est pas fusionnée, **la nuit suivante reprend depuis cette branche**.
+- phase        : 1 (ouverture de domaine) — `work-psychology`, **neuvième domaine sur onze**, premier des trois derniers de la famille « Comprendre les humains et les organisations ». Ouverture dans l'ordre complet et en une seule nuit : périmètre, puis cartographie, puis cartes, puis thèmes.
+- validées     : 7 — `cinq-dimensions-de-l-emploi`, `trois-etats-psychologiques-critiques`, `force-du-besoin-de-developpement`, `objectif-specifique-et-difficile`, `mecanismes-de-l-objectif`, `seuil-d-insatisfaction-salariale`, `asservissement-des-activites-hors-travail` (**les 7 avec citation, toutes relues sur l'image de la page**)
+- en review    : 1 — `attention-diffusee-et-selection` (Lahy 1924), **écrite et non contrôlée**, retenue avant le contrôle par une règle du dépôt et non par un défaut : sa source primaire est en `consulted: partial`, onze pages ouvertes sur soixante-sept, et une fiche publiée exige une source primaire lue en texte intégral. Reste en `corpus/candidates/`.
+- rejetées     : 0
+- approfondies : 0 (une nuit d'ouverture n'en écrit pas ; la file passe de 16 à 23)
+- contrôles    : validate 0 erreur (92 enregistrements, 89 validés, 63 avertissements) · build à jour, `git diff --exit-code src/content/generated/` **propre** · test 480/0 · lint 0 · audit : `work-psychology` passe de « corpus en cours de constitution » à **2 thèmes / 7 validés / 1 en cours**
+- commit       : `b508362` pour la projection ; la nuit a été commitée par étapes plutôt qu'en un commit de clôture, chaque maillon étant poussé dès qu'il tenait debout.
+- bloqué par   : **rien de documentaire.** Deux manques sont déclarés et non masqués. **La dette envers `behavioral-economics` n'a pas été payée** : le plafond de requêtes du scout a été atteint avant qu'une requête ciblée ait pu partir, et c'est un vide de méthode, pas un vide vérifié. Et **aucune source secondaire n'a été ouverte sur les sept cartes**, ce qui est la faiblesse structurelle du lot, déclarée fiche par fiche.
+- la nuit suivante prend : **phase 1, `sociology-of-work`.** Deux domaines restent à zéro carte, la condition A est donc encore vraie, et l'ordre de rendement de la §2 désigne la sociologie du travail. **Elle ne part pas de rien** : ce passage lui lègue Taylor, *The Principles of Scientific Management*, item Internet Archive `cu31924085713331`, collections `cornell` et `americana`, **sans restriction de prêt constatée**, ce que le legs d'`operations-management` avait laissé en suspens. L'ordre d'ouverture reste non négociable : périmètre, puis scout, puis cartes, puis thèmes.
+
+### Ce que cette nuit a établi, en une phrase
+
+Le neuvième domaine sur onze est ouvert en une seule nuit, là où le huitième en avait demandé
+deux, et il rend sept cartes dont la couche francophone est plus riche que la couche
+anglophone, ce qui n'était jamais arrivé dans ce corpus.
+
+### Ce qu'il faut savoir avant de reprendre ce domaine
+
+- **La reprise la moins chère est `attention-diffusee-et-selection`**, et ce qui lui manque est
+  nommé : une lecture complète de l'article de Lahy, dont onze pages seulement ont été ouvertes.
+  Trois sections sont désignées et non localisées : le protocole du test d'attention diffusée
+  (probablement p. 131-142), les tableaux de corrélation (p. 168-169), et le barème des
+  2 000 sujets. Une fois le texte lu en entier, la fiche passe en contrôle et son thème,
+  `juger-quelqu-un-apte`, se déclare avec elle.
+- **Le numéro 344 du *Bulletin de psychologie*, de 1980, est un gisement à moitié dépensé.**
+  C'est un numéro entier de psychologie du travail, servi en texte intégral par l'endpoint page
+  de Persée. Deux de ses articles ont rendu une carte ; **cinq autres ont été lus et écartés
+  pour un motif écrit** (Leplat 11696 et Francès 11726 sont des textes d'orientation sans thèse
+  propre, Lévy-Leboyer 11734 relève de la dette socio-technique, Grisez 11729 et Savall 11735
+  penchent vers des voisins), et **le reste du numéro n'a pas été dépouillé**.
+- **La couche anglophone ouverte tient sur deux rapports de l'Office of Naval Research**, et
+  c'est tout ce que ce champ offre en accès libre : le canon que tout le monde nommerait,
+  Herzberg 1959 et Walker & Guest 1952, est en prêt numérique et **un prêt numérique ne
+  s'emprunte pas**. Ce n'est pas à retenter, c'est à contourner par la littérature grise.
+- **Une piste ouverte et non lue** : `DTIC_ADA065892`, « An Integration of Contemporary Theories
+  of Work Motivation » (1978), accès a priori ouvert, contenu non ouvert faute de budget.
+- **Deux pièges d'exemplaire, payés cette nuit et transposables.** La couche OCR de
+  `DTIC_AD0779828` est inexploitable pour citer, deux contrôleurs l'ont constatée séparément. Et
+  le `page_numbers.json` d'Internet Archive est **une inférence automatique, pas une lecture** :
+  il annonce 94 feuillets pour 88 sur cet item, et c'est lui qui a fait écrire une collation
+  fausse à trois cartes.
+
 ## Passage 03/15 — 2026-08-25
 
 - branche      : `claude/zen-johnson-f21p0e` (imposée par la session, pas `main`), pull request [#78](https://github.com/J-Rbs91/Curiosity/pull/78) vers `main`, **ouverte et non fusionnée à la clôture**. **Le travail du passage 02 est fusionné dans `main`** (PR #76, commit `45cbae0`), et cette branche part de `main` à jour : rien n'est refait. Tant que la présente pull request n'est pas fusionnée, **la nuit suivante reprend depuis cette branche**.
