@@ -1,11 +1,11 @@
 # Ce qui reste à faire
 
 Ce fichier existe pour qu'une session qui reprend le corpus sache **par où commencer**, sans
-relire tout le dépôt et sans redécouvrir ce que six lots ont déjà appris.
+relire tout le dépôt et sans redécouvrir ce que sept lots ont déjà appris.
 
 Il ne double pas `corpus/ETAT.md`, qui dit ce que le corpus **est** ; celui-ci dit ce qu'il
 lui **manque**. Et il ne remplace aucun script : les chiffres ci-dessous sont un instantané
-du 25 août 2026, les commandes sont la vérité.
+du 27 août 2026, les commandes sont la vérité.
 
 ```bash
 npm run corpus:audit    # domaines, thèmes, cartes validées, sujets jamais instruits
@@ -23,37 +23,39 @@ script ne peut pas dire : quel travail est possible aujourd'hui, ce qu'il coûte
 
 | chantier | volume | recherche documentaire ? | état |
 |---|---|---|---|
-| **A.** Approfondissements | 23 cartes | non | **ouvert, et il a encore grossi le 26 août 2026** |
+| **A.** Approfondissements | 30 cartes | non | **ouvert, et il a encore grossi le 27 août 2026** |
 | **B.** File de la sociologie des organisations | 25 entrées | oui, cartographie déjà faite | ouvert |
-| **C.** Domaines vides | **2 fermés** | oui | ouvert |
+| **C.** Domaines vides | **1 fermé, le dernier** | oui | ouvert |
 | **D.** Reprises courtes de quatre domaines instruits | 10 textes | oui, accès déjà constaté | ouvert |
 
-Le chantier A s'était vidé le 21 août et il se rouvre depuis. **Le 25 il double, le 26 il
-grossit encore** : aux huit cartes de la science de la décision et aux huit de l'operations
-management s'ajoutent les sept de la psychologie du travail. C'est délibéré, et non un oubli, la
-routine nocturne consacrant une phase entière à ce travail et une nuit d'ouverture de domaine
-n'en écrivant pas. **La file est celle de `npm run corpus:deepen`, pas celle de ce fichier.**
+Le chantier A s'était vidé le 21 août et il se rouvre depuis. **Le 25 il double, le 26 et le 27
+il grossit encore** : aux huit cartes de la science de la décision et aux huit de l'operations
+management s'ajoutent les sept de la psychologie du travail et les sept de la sociologie du
+travail. C'est délibéré, et non un oubli, la routine nocturne consacrant une phase entière à ce
+travail et une nuit d'ouverture de domaine n'en écrivant pas. **La file est celle de `npm run
+corpus:deepen`, pas celle de ce fichier.** Avec trente cartes en attente, ce chantier est
+désormais le plus gros du dépôt, et il ne demande aucune recherche documentaire.
 
 Le chantier C a perdu un domaine le 22 août, `systems-thinking`, un second le 23,
-`decision-science`, un troisième le 25, `operations-management`, et **un quatrième le 26,
-`work-psychology`**, qui a été ouvert et instruit dans la même nuit et rend sept cartes et deux
-thèmes. **Il n'y reste plus que deux domaines**, `sociology-of-work` et `behavioral-economics`,
-tous deux sans périmètre et sans cartographie. **Le premier des deux n'est plus sans stock
-d'entrée** : voir plus bas.
+`decision-science`, un troisième le 25, `operations-management`, un quatrième le 26,
+`work-psychology`, et **un cinquième le 27, `sociology-of-work`**, ouvert et instruit dans la même
+nuit, qui rend sept cartes et un thème déclaré sur cinq disponibles. **Il n'y reste plus qu'un
+domaine, `behavioral-economics`, le dernier du corpus**, sans périmètre et sans cartographie mais
+**avec un legs enfin vérifié** : voir plus bas.
 
 ---
 
 # A. Les approfondissements
 
-**Vidé le 21 août 2026, rouvert le 23, doublé le 25, encore grossi le 26.** `corpus:deepen`
-projette toujours **66 approfondissements, 95 772 mots, 1 451 en moyenne**, et sa fin de sortie
-liste désormais **vingt-trois cartes** : les huit du lot d'ouverture de la science de la
-décision, du 23 août, les huit de l'operations management, du 25, et les sept de la psychologie
-du travail, du 26.
+**Vidé le 21 août 2026, rouvert le 23, doublé le 25, encore grossi le 26 et le 27.**
+`corpus:deepen` projette toujours **66 approfondissements, 95 772 mots, 1 451 en moyenne**, et sa
+fin de sortie liste désormais **trente cartes** : les huit du lot d'ouverture de la science de la
+décision, du 23 août, les huit de l'operations management, du 25, les sept de la psychologie du
+travail, du 26, et les sept de la sociologie du travail, du 27.
 
 C'est le seul écart actuel du corpus entre ce qui est validé et ce qui est servi, et il se comble
 par `/corpus-deepen`, sans aucune recherche documentaire : la matière est la carte elle-même, sa
-lecture primaire et son verdict de contrôle. **Trois lots d'ouverture consécutifs l'ayant nourri,
+lecture primaire et son verdict de contrôle. **Quatre lots d'ouverture consécutifs l'ayant nourri,
 c'est aujourd'hui, et de loin, le chantier au meilleur rapport entre ce qu'il coûte et ce qu'il
 rend au lecteur.**
 
@@ -161,26 +163,48 @@ est désormais au chantier D, avec les autres domaines instruits.
 
 | famille | domaine | périmètre | cartographie | stock d'entrée |
 |---|---|---|---|---|
-| Humains et organisations | Sociologie du travail | — | — | **Taylor 1911 ouvert, accès vérifié le 26 août** |
-| Humains et organisations | Économie comportementale | — | — | Schweitzer et Cachon 2000 repéré, paywallé |
+| Humains et organisations | Économie comportementale | — | — | **quatre pièces vérifiées le 27 août, voir ci-dessous** |
 
-**`work-psychology` a quitté ce chantier le 26 août** (passage 04), ouvert et instruit dans la
-même nuit : sept cartes, deux thèmes. **Les deux domaines qui restent sont les derniers du
-corpus**, et ils n'ont ni périmètre ni cartographie.
+**`sociology-of-work` a quitté ce chantier le 27 août** (passage 05), ouvert et instruit dans la
+même nuit : sept cartes, un thème déclaré sur cinq disponibles. **Il ne reste donc qu'un seul
+domaine fermé, le dernier du corpus**, et il n'a ni périmètre ni cartographie.
 
-**Mais l'un des deux n'est plus sans stock, et c'est nouveau.** La cartographie de
-`work-psychology` devait une requête ciblée à ses successeurs, et elle l'a payée pour la
-sociologie du travail avec un résultat que le legs précédent n'avait pas su obtenir :
-**Frederick Winslow Taylor, *The Principles of Scientific Management*, item Internet Archive
-`cu31924085713331`** (tirage 1919, exemplaire Cornell University Library), collections `cornell`
-et `americana`, **sans champ `access-restricted-item` et sans restriction de prêt constatée**,
-métadonnées vérifiées. C'est un candidat d'ouverture **avec accès vérifié positif**, là où
-`operations-management` avait laissé ce même texte en « repéré, accès non vérifié ». Le pendant
-critique attendu, Braverman 1974, **n'a pas été cherché**.
+**Mais il n'est plus sans stock, et c'est le fait notable du passage 05.** La dette envers lui
+avait été promise par trois cartographies successives et jamais payée : deux avaient écrit
+n'avoir rien cherché, la troisième avait épuisé son budget avant d'y arriver. Elle a été payée le
+27 août **par un balayage distinct, avec son propre budget de dix requêtes**, précisément pour
+qu'elle ne meure pas une quatrième fois du plafond d'un autre. Le détail est dans la section « La
+dette envers `behavioral-economics` » de `corpus/map/sociology-of-work.scouting.md` ; en résumé :
 
-**L'économie comportementale, elle, n'a rien reçu.** Le plafond de requêtes du scout du 26 août a
-été atteint avant qu'une requête dédiée ait pu partir : **c'est un vide de méthode, pas un vide
-vérifié**, et le prochain passage qui doit cette dette repart de zéro sur ce domaine.
+- **Kahneman, Knetsch et Thaler (1991)**, « Anomalies: The Endowment Effect, Loss Aversion, and
+  Status Quo Bias », *Journal of Economic Perspectives* 5(1), DOI `10.1257/jep.5.1.193` : **propre
+  sur le fond**, le *JEP* étant éditorialement en accès libre chez l'American Economic
+  Association. Le `curl` brut contre `pubs.aeaweb.org` rend **403**, ce qui est un filtrage
+  anti-robot et non un paywall constaté ; il ne se contourne pas, une autre voie légitime se
+  cherche.
+- **Thaler (1980)**, « Toward a Positive Theory of Consumer Choice », *JEBO* 1(1), DOI
+  `10.1016/0167-2681(80)90051-7` : **à traiter comme fermé.** Le PDF a bien été atteint en
+  HTTP 200, mais sur le **miroir d'une page de cours universitaire**, et la revue est une revue
+  Elsevier sous abonnement dont l'édition officielle est derrière un paywall non ambigu. Un code
+  200 constate qu'un fichier est atteignable, **pas qu'un ayant droit l'autorise**, et la règle du
+  dépôt est que l'autorisation se constate. Ne pas citer depuis ce miroir.
+- **Katona (1951)**, *Psychological Analysis of Economic Behavior*, item `psychologicalana0000geor_l5v4` :
+  **vérifié fermé**, `access-restricted-item: true`, prêt numérique contrôlé. Katona (1975),
+  `psychologicaleco00kato`, porte la même signature technique mais son champ n'a pas été extrait :
+  probablement fermé, sur indice et non sur constat.
+- **Quatre candidats francophones sur Persée, repérés et non testés**, à un seul appel de la
+  vérification chacun : *Bulletin de psychologie* 15/207 (1962), 36/358 (1982), 35/354 (1982), et
+  *Revue française d'économie* 23/1 (2008). Les trois premiers sont dans une revue déjà partagée
+  avec `work-psychology` : la frontière se tranchera par la lecture, pas par la revue.
+- **Un candidat de frontière vérifié ouvert**, venu de l'autre balayage : Brunet et Havet,
+  « Propriété immobilière et déqualification dans l'emploi », PDF HAL `halshs-00267041/document`,
+  HTTP 200 vérifié.
+
+**Ce qui n'est toujours pas un résultat, et qu'il ne faut pas lire comme tel** : Vernon Smith,
+Selten, Camerer et Loewenstein, Thaler et Benartzi, Loewenstein et Prelec, l'*Econometrica*
+ancien et le fonds `dticarchive` sont des **noms cités de mémoire**, aucun recherché, aucun
+vérifié. Et Kahneman et Tversky (1979) n'a délibérément pas été cherché : `theorie-des-perspectives`
+est **déjà instruit** en `decision-science` et ne se réinstruit pas.
 
 **Ce que chacun a reçu, et qui ne vaut pas stock d'entrée.** Le passage 02 leur a consacré à
 chacun une requête ciblée obligatoire, et aucune n'a produit de candidat vérifié en accès :
