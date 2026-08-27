@@ -104,6 +104,26 @@ conclusions en page pleine sont les premiers concernés.
   de psychologie* (1980), toujours à moitié dépensé, et les pages impaires 91 à 109 de Chapoulie,
   jamais servies ou jamais ouvertes, dont la page 109 que le serveur n'a jamais rendue.
 
+### Un faux rouge de `gitleaks` à connaitre, il se reproduira
+
+Le scan de secrets est passé au rouge sur cette pull request, et **ce n'était pas une fuite** :
+il n'a rien scanné du tout. Le job a rendu `fatal: Invalid revision range c23486f^..fe6120b`,
+puis « scanned ~0 bytes », puis un code de sortie 1.
+
+**Cause** : `gitleaks-action` résout le SHA de tête par l'API, mais travaille sur le `merge` ref
+déjà construit. Cette nuit ayant été commitée par étapes et poussée plusieurs fois de suite, un
+run lancé pour `d1e6f0e` s'est vu demander de scanner jusqu'à `fe6120b`, poussé quelques secondes
+plus tard et absent de son graphe d'objets. Le run suivant, sur la tête à jour, a scanné
+**28 commits et 388 Ko** et rendu « no leaks found ». `fetch-depth: 0` est déjà réglé dans
+`.github/workflows/gitleaks.yml` : ce n'est pas le problème.
+
+**Ce qu'il faut en faire** : rien, sinon ne pas s'en alarmer. Le rouge porte sur un commit
+dépassé, il se résout seul au run suivant, et la concurrence du workflow annule déjà les runs
+périmés hors `main`. **Une nuit qui voit `gitleaks` au rouge doit d'abord lire le log** : si elle
+y trouve « Invalid revision range » et « scanned ~0 bytes », c'est cette course et non un secret.
+Le seul geste qui l'éviterait serait de grouper les pushes, ce qui coûterait la garantie que le
+commit par étapes a apportée cette nuit quand le quota a coupé la session.
+
 ### Le serveur MCP `documentary` échouera à chaque nuit, et la cause est identifiée
 
 Ce n'est pas un aléa : c'est structurel, et aucun des quatre passages précédents ne l'avait
