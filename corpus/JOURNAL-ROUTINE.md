@@ -7,7 +7,7 @@ disent ce qui est.
 
 ## Passage 05/15 — 2026-08-27
 
-- branche      : `claude/zen-johnson-hjfz2m` (imposée par la session, pas `main`). **Le travail du passage 04 est fusionné dans `main`** (PR [#79](https://github.com/J-Rbs91/Curiosity/pull/79), commit de merge `ff3a443`), et cette branche partait de `main` à jour : rien n'a été refait. **Aucune pull request ouverte à la clôture** : la branche est poussée, la pull request reste à ouvrir. Tant qu'elle n'est pas fusionnée, **la nuit suivante reprend depuis cette branche**.
+- branche      : `claude/zen-johnson-hjfz2m` (imposée par la session, pas `main`). **Le travail du passage 04 est fusionné dans `main`** (PR [#79](https://github.com/J-Rbs91/Curiosity/pull/79), commit de merge `ff3a443`), et cette branche partait de `main` à jour : rien n'a été refait. Pull request [#81](https://github.com/J-Rbs91/Curiosity/pull/81) vers `main`, **ouverte et non fusionnée à la clôture**. Tant qu'elle n'est pas fusionnée, **la nuit suivante reprend depuis cette branche**, et non depuis `main`, sinon elle refera ce qui est déjà fait.
 - phase        : 1 (ouverture de domaine) — `sociology-of-work`, **dixième domaine sur onze**, deuxième des trois derniers de la famille « Comprendre les humains et les organisations ». Ouverture dans l'ordre complet et en une seule nuit : périmètre, cartographie, cartes, puis thèmes.
 - validées     : 7 — `flanerie-systematique`, `savoir-ouvrier-mis-en-regles`, `division-sexuelle-et-rapports-de-sexe`, `analyse-des-groupes-professionnels`, `fonctions-sociales-de-la-greve`, `mobilite-et-segmentation-de-l-emploi`, `precarite-des-trajectoires` (**les 7 avec citation, toutes relues sur l'image de la page**). Trois au premier tour, quatre au second.
 - en review    : 0
