@@ -7,7 +7,6 @@
   "themes": [
     "marche-du-travail-et-trajectoires"
   ],
-  "domain": "sociology-of-work",
   "theme_labels": {
     "marche-du-travail-et-trajectoires": "Marché du travail et trajectoires"
   },
@@ -65,6 +64,7 @@
     "Lecture partielle assumée, et la source l'affiche : pages 87 à 93 sur 87 à 99, via la couche OCR de Persée, plus les images des pages 87 et 92. La troisième partie annoncée page 88, sur la façon dont les analyses des chercheurs ont en retour modifié les instruments d'observation, n'a pas été ouverte. Une publication exigerait une source primaire en texte intégral : elle n'est pas atteinte en l'état.",
     "La citation a été relue mot pour mot sur l'image de la page 92, y compris l'appel de note qui la précède. La signature des deux autrices a été relue sur l'image de la page 87.",
     "La pagination p. 87-99 provient de la notice Persée, non des images : les dernières pages de l'article n'ont pas été ouvertes.",
-    "Un passage plus complet a été écarté faute d'avoir été relu sur l'image : « le caractère stable de l'emploi ne peut être apprécié qu'a posteriori, lorsqu'on le replace dans l'ensemble de la trajectoire d'activité » (p. 91), vu sur l'OCR seulement."
+    "Un passage plus complet a été écarté faute d'avoir été relu sur l'image : « le caractère stable de l'emploi ne peut être apprécié qu'a posteriori, lorsqu'on le replace dans l'ensemble de la trajectoire d'activité » (p. 91), vu sur l'OCR seulement.",
+    "Champ domain retire apres declaration du theme marche-du-travail-et-trajectoires dans src/content/themes.ts : ce champ n'existe que pour le cas ou aucun theme de la fiche n'est connu de l'application, et l'invariant est verifie par taxonomy.test.ts."
   ]
 }

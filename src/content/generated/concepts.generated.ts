@@ -942,6 +942,33 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "division-sexuelle-et-rapports-de-sexe",
+    "slug": "division-sexuelle-et-rapports-de-sexe",
+    "title": "Division sexuelle du travail comme enjeu",
+    "authorLabel": "Danièle Kergoat",
+    "hookQuestion": "La division sexuelle du travail décrit-elle les rapports de sexe ou s'y joue-t-elle ?",
+    "shortExplanation": "Les rapports sociaux organisent les divisions de la société ; la division sexuelle du travail en est un enjeu fondamental, et la chaîne se lit dans les deux sens.",
+    "authors": [],
+    "themes": [
+      "division-sexuelle-du-travail"
+    ],
+    "themeLabel": "Division du travail et rapports de sexe",
+    "domain": "sociology-of-work",
+    "attributionNote": "Le texte est signé du seul nom de Danièle Kergoat. Hélène Le Doaré y est nommée dès la première phrase comme celle avec qui ont été tenues les deux séances de séminaire dont ce papier est issu, et la proposition de poser les problèmes en termes de continuité ou de discontinuité lui est explicitement attribuée page 24 ; mais Kergoat précise à la même page qu'elle ne parle plus qu'en son nom propre, et la proposition citée ici est la sienne. Une note liminaire indique que le texte présenté date de juin 1990, alors que la livraison où il paraît porte le millésime 1992.",
+    "quotation": {
+      "text": "La division (sexuelle) du travail est un enjeu fondamental des rapports sociaux (entre les sexes).",
+      "reference": "Danièle Kergoat, « Des rapports sociaux de sexe et de la division sexuelle du travail », Cahiers du GEDISST, n° 3, 1992, p. 23-26 ; phrase conclusive de la section « Une proposition de travail », p. 25"
+    },
+    "sources": [
+      {
+        "label": "Danièle Kergoat, « Des rapports sociaux de sexe et de la division sexuelle du travail », Cahiers du GEDISST, n° 3, 1992, p. 23-26.",
+        "kind": "primary",
+        "reference": "p. 23-26, ici p. 25 · 10.3406/genre.1992.879",
+        "url": "https://www.persee.fr/doc/genre_1165-3558_1992_num_3_1_879"
+      }
+    ]
+  },
+  {
     "id": "documents-prescripteurs",
     "slug": "documents-prescripteurs",
     "title": "Documents prescripteurs",
@@ -1180,6 +1207,60 @@ export const generatedConcepts: Concept[] = [
         "kind": "primary",
         "reference": "p. 385-387 · 10.3406/psy.1953.8725",
         "url": "https://www.persee.fr/doc/psy_0003-5033_1953_num_53_1_8725"
+      }
+    ]
+  },
+  {
+    "id": "flanerie-systematique",
+    "slug": "flanerie-systematique",
+    "title": "Flânerie systématique",
+    "authorLabel": "Frederick Winslow Taylor",
+    "hookQuestion": "Pourquoi les meilleurs ouvriers se règlent-ils sur le rythme des plus lents ?",
+    "shortExplanation": "Taylor sépare la flânerie d'instinct de la systématique, née du rapport employeur-ouvrier : elle vise surtout à tenir l'employeur dans l'ignorance du rythme possible.",
+    "authors": [],
+    "themes": [
+      "organisation-scientifique-du-travail"
+    ],
+    "themeLabel": "L'organisation scientifique du travail",
+    "domain": "sociology-of-work",
+    "attributionNote": "Taylor nomme et distingue lui-même les deux flâneries, la naturelle et la systématique : le terme est de lui, il n'a pas été forgé par un commentateur. Le passage cité figure dans The Principles of Scientific Management, mais Taylor l'y reproduit entre guillemets en le reprenant à sa propre communication Shop Management, lue devant l'American Society of Mechanical Engineers en juin 1903, ce qu'il annonce en toutes lettres à la page précédente. L'auteur est le même dans les deux textes ; seule la date de première formulation est antérieure au livre.",
+    "quotation": {
+      "text": "Second, from more intricate second thought and reasoning caused by their relations with other men, which may be called systematic soldiering.",
+      "reference": "Frederick Winslow Taylor, The Principles of Scientific Management, New York et Londres, Harper & Brothers, 1919, chapitre I « Fundamentals of Scientific Management » (exemplaire de la Cornell University Library, Internet Archive), chap. I, p. 19"
+    },
+    "sources": [
+      {
+        "label": "Frederick Winslow Taylor, The Principles of Scientific Management, New York et Londres, Harper & Brothers, 1919 (copyright 1911). Exemplaire de la Cornell University Library numérisé par Internet Archive.",
+        "kind": "primary",
+        "reference": "chap. I, p. 19 à 23",
+        "url": "https://archive.org/details/cu31924085713331"
+      }
+    ]
+  },
+  {
+    "id": "fonctions-sociales-de-la-greve",
+    "slug": "fonctions-sociales-de-la-greve",
+    "title": "Fonctions sociales de la grève",
+    "authorLabel": "Michelle Durand",
+    "hookQuestion": "Faut-il choisir entre trois façons de penser la grève, ou les exerce-t-elle toutes ?",
+    "shortExplanation": "Durand refuse de choisir : les trois cadres désignent trois fonctions exercées simultanément, deux relativement stables, le bargaining seul lié à la conjoncture.",
+    "authors": [],
+    "themes": [
+      "conflit-et-greve"
+    ],
+    "themeLabel": "Le conflit et la grève",
+    "domain": "sociology-of-work",
+    "attributionNote": "Article signé de la seule Michelle Durand : son nom figure en tête de la page 274 et la signature de fin, page 296, porte le rattachement CNRS, CREST, Université Paris-Sud. Une note d'auteur précise, en toutes lettres sur la pièce, que le texte reprend une communication présentée au Congrès mondial de sociologie d'Uppsala, du 14 au 19 août 1978. Une note de la page 276 remercie S. Erbès et C. Casassus, du Groupe de sociologie du travail, d'avoir fourni les données de base des années 1966-1967 et 1974-1975 : c'est une fourniture de données, elle n'emporte pas coécriture.",
+    "quotation": {
+      "text": "Nous ferons l'hypothèse qu'à ces conceptualisations de la grève correspondent de fait différentes « fonctions sociales » de la grève",
+      "reference": "Michelle Durand, « La grève : conflit structurel, système de relations industrielles ou facteur de changement social », Sociologie du travail, 21e année, n° 3, 1979, p. 274-296, p. 275"
+    },
+    "sources": [
+      {
+        "label": "Michelle Durand, « La grève : conflit structurel, système de relations industrielles ou facteur de changement social », Sociologie du travail, 21e année, n° 3, 1979, p. 274-296.",
+        "kind": "primary",
+        "reference": "p. 274-276 et 295-296 · 10.3406/sotra.1979.1609",
+        "url": "https://www.persee.fr/doc/sotra_0038-0296_1979_num_21_3_1609"
       }
     ]
   },
@@ -1843,6 +1924,32 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "mobilite-et-segmentation-de-l-emploi",
+    "slug": "mobilite-et-segmentation-de-l-emploi",
+    "title": "Mobilité et segmentation de l'emploi",
+    "authorLabel": "Jean Grisez",
+    "hookQuestion": "Changer souvent d'emploi tient-il à l'individu ou à la structure des emplois ?",
+    "shortExplanation": "Grisez écarte le psychologisme : les comportements de mobilité se rapportent d'abord aux structures du marché du travail et à l'existence de filières entre les emplois.",
+    "authors": [],
+    "themes": [
+      "marche-du-travail-et-trajectoires"
+    ],
+    "themeLabel": "Marché du travail et trajectoires",
+    "attributionNote": "Jean Grisez signe seul, sa signature est lue sur la page 417. Mais il ne fonde ni la segmentation du marché du travail ni la notion de filières : il les reçoit, et il l'écrit par un « on » qui ne nomme personne, sa note bibliographique ne citant aucun texte fondateur de la théorie segmentationniste. Ce qui lui revient en propre est l'articulation de cette segmentation avec les comportements de mobilité, établie sur les données de sa propre enquête, Mobilité et milieu professionnel, publiée au Bulletin du CERP en 1970.",
+    "quotation": {
+      "text": "il serait imprudent de rapporter, sans plus, à une « instabilité » individuelle les comportements caractérisés par de nombreux changements",
+      "reference": "Jean Grisez, « Emploi et comportements de mobilité », Bulletin de psychologie, tome 33, n° 344, 1980, numéro thématique « La psychologie du travail », p. 417-420, p. 417"
+    },
+    "sources": [
+      {
+        "label": "Jean Grisez, « Emploi et comportements de mobilité », Bulletin de psychologie, tome 33, n° 344, 1980, numéro thématique « La psychologie du travail », p. 417-420.",
+        "kind": "primary",
+        "reference": "p. 417-420, ici p. 417 · 10.3406/bupsy.1980.11729",
+        "url": "https://www.persee.fr/doc/bupsy_0007-4403_1980_num_33_344_11729"
+      }
+    ]
+  },
+  {
     "id": "modele-du-fromage-suisse",
     "slug": "modele-du-fromage-suisse",
     "title": "Modèle du fromage suisse",
@@ -2348,6 +2455,32 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "precarite-des-trajectoires",
+    "slug": "precarite-des-trajectoires",
+    "title": "Précarité des trajectoires",
+    "authorLabel": "Yvette Grelet, Michèle Mansuy",
+    "hookQuestion": "Faut-il mesurer la précarité au contrat du moment, ou au parcours entier ?",
+    "shortExplanation": "Un statut d'emploi précaire ne fait pas une trajectoire précaire : ce qui pose problème est moins la fragilité instantanée que le maintien durable dans la précarité.",
+    "authors": [],
+    "themes": [
+      "marche-du-travail-et-trajectoires"
+    ],
+    "themeLabel": "Marché du travail et trajectoires",
+    "attributionNote": "Article cosigné, dont la signature imprimée porte les deux noms sans hiérarchie. Le rattachement n'est pas commun aux deux autrices, contrairement à ce qu'on lit souvent : la note liminaire donne Yvette Grelet codirectrice du Centre régional associé au Céreq de Caen, et Michèle Mansuy, économiste, chargée de mission pour le Réseau régional à l'INSEE. Elles formulent le déplacement de la précarité du statut vers la trajectoire comme un mouvement du champ dont elles retracent l'histoire, non comme une notion qu'elles fonderaient : elles en créditent un ensemble de travaux, dont certains sont les leurs.",
+    "quotation": {
+      "text": "ce n'est pas tant la fragilité instantanée de l'emploi qui pose problème que le maintien durable dans la précarité",
+      "reference": "Yvette Grelet et Michèle Mansuy, « De la précarité de l'emploi à celle des trajectoires : une analyse de l'insertion en évolution », Formation Emploi, n° 85, 2004, p. 87-99, p. 92"
+    },
+    "sources": [
+      {
+        "label": "Yvette Grelet et Michèle Mansuy, « De la précarité de l'emploi à celle des trajectoires : une analyse de l'insertion en évolution », Formation Emploi, n° 85, 2004, p. 87-99.",
+        "kind": "primary",
+        "reference": "p. 87-93, ici p. 92 · ISSN 0759-6340",
+        "url": "https://www.persee.fr/doc/forem_0759-6340_2004_num_85_1_1655"
+      }
+    ]
+  },
+  {
     "id": "probabilite-erreur-humaine",
     "slug": "probabilite-erreur-humaine",
     "title": "Probabilité d'erreur humaine",
@@ -2824,6 +2957,33 @@ export const generatedConcepts: Concept[] = [
         "kind": "primary",
         "reference": "10.1098/rstb.1990.0101",
         "url": "https://doi.org/10.1098/rstb.1990.0101"
+      }
+    ]
+  },
+  {
+    "id": "savoir-ouvrier-mis-en-regles",
+    "slug": "savoir-ouvrier-mis-en-regles",
+    "title": "Le savoir ouvrier mis en règles",
+    "authorLabel": "Frederick Winslow Taylor",
+    "hookQuestion": "Le savoir de métier accumulé par les ouvriers peut-il changer de mains ?",
+    "shortExplanation": "La direction se charge de rassembler le savoir traditionnel des ouvriers, puis de le classer, le mettre en tableaux et le réduire en règles, lois et formules.",
+    "authors": [],
+    "themes": [
+      "organisation-scientifique-du-travail"
+    ],
+    "themeLabel": "L'organisation scientifique du travail",
+    "domain": "sociology-of-work",
+    "attributionNote": "Taylor signe seul, et la page de titre du tirage de 1919 ne porte aucun autre nom, non plus que son verso, qui donne le copyright de 1911 à son seul nom. Une précision que le texte autorise : Taylor présente ce volume comme un mémoire et non comme la première formulation de sa doctrine, puisqu'il renvoie à ses propres communications antérieures devant l'American Society of Mechanical Engineers, dont Shop Management, citée en note de la page 33. Carl G. Barth, seul collaborateur nommé dans le voisinage, l'est pour une règle à calcul décrite au chapitre suivant, non pour le principe instruit ici.",
+    "quotation": {
+      "text": "The managers assume […] the burden of gathering together all of the traditional knowledge which in the past has been possessed by the workmen […]",
+      "reference": "Frederick Winslow Taylor, The Principles of Scientific Management, New York et Londres, Harper & Brothers, 1919 (copyright 1911), chapitre II « The Principles of Scientific Management » (exemplaire de la Cornell University Library, Internet Archive), chap. II, p. 36"
+    },
+    "sources": [
+      {
+        "label": "Frederick Winslow Taylor, The Principles of Scientific Management, New York et Londres, Harper & Brothers, 1919 (copyright 1911). Exemplaire de la Cornell University Library numérisé par Internet Archive.",
+        "kind": "primary",
+        "reference": "chap. II, p. 32 à 38",
+        "url": "https://archive.org/details/cu31924085713331"
       }
     ]
   },

@@ -7,7 +7,6 @@
   "themes": [
     "marche-du-travail-et-trajectoires"
   ],
-  "domain": "sociology-of-work",
   "theme_labels": {
     "marche-du-travail-et-trajectoires": "Marché du travail et trajectoires"
   },
@@ -62,6 +61,7 @@
     "Les résultats rapportés dans l'article, qui est un exposé de synthèse de quatre pages, viennent de l'enquête antérieure de l'auteur, Bulletin du CERP, 1970, p. 155-296, cent quarante pages qui n'ont pas été ouvertes. Rien ne vérifie ces chiffres à leur source ; ils sont rapportés tels que l'auteur les résume dix ans plus tard.",
     "Inégalité de canal entre les pages : seule la page 417, d'où vient la citation, a été lue par les deux canaux, couche texte et fac-similé. Les pages 418 et 419 n'ont été lues qu'en couche OCR, qui y laisse des coquilles visibles ; la page 420 n'a été lue que sur l'image, l'endpoint texte ne l'ayant jamais servie.",
     "Le millésime 1980 n'a pas été lu sur les images de page : il vient de la notice Persée et du suffixe du DOI. Ce qui est vérifié sur la pièce est le tome et le numéro, « Tome XXXIII, N° 344 ».",
-    "Le titre diverge entre la notice et la pièce : la notice Persée écrit « comportement » au singulier, le titre imprimé en tête de la page 417 porte le pluriel, retenu ici."
+    "Le titre diverge entre la notice et la pièce : la notice Persée écrit « comportement » au singulier, le titre imprimé en tête de la page 417 porte le pluriel, retenu ici.",
+    "Champ domain retire apres declaration du theme marche-du-travail-et-trajectoires dans src/content/themes.ts : ce champ n'existe que pour le cas ou aucun theme de la fiche n'est connu de l'application, et l'invariant est verifie par taxonomy.test.ts."
   ]
 }

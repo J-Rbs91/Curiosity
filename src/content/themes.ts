@@ -498,4 +498,16 @@ export const themes: Theme[] = [
       "Un emploi ne se contente pas d'occuper des heures : il dépose sur la personne des états qui lui survivent, une frustration qui se mesure à un seuil plutôt qu'à un montant, une vie hors travail dont il commande les conditions. Ce thème porte sur ce que la situation d'emploi laisse chez celui qui l'occupe, et sur ce qui décide de son intensité.",
     domain: "work-psychology",
   },
+  // --- Sociologie du travail ------------------------------------------------
+  {
+    id: "marche-du-travail-et-trajectoires",
+    slug: "marche-du-travail-et-trajectoires",
+    title: "Ce qui trie les gens entre les emplois",
+    tagline:
+      "Changer souvent d'emploi ne dit rien de celui qui change.",
+    keywords: ["Segmentation", "Mobilité", "Trajectoire"],
+    description:
+      "Une même conduite, changer d'emploi, se lit de deux façons : comme un trait de la personne, ou comme la marque de la place qu'elle occupe sur un marché du travail qui n'est pas homogène. Ce thème porte sur ce que la position déplace dans l'explication, et sur le déplacement du regard qui a suivi, du statut tenu à un instant vers le parcours entier.",
+    domain: "sociology-of-work",
+  },
 ];
