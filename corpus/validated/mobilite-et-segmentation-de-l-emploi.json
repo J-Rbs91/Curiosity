@@ -1,0 +1,67 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "mobilite-et-segmentation-de-l-emploi",
+  "slug": "mobilite-et-segmentation-de-l-emploi",
+  "status": "VALIDATED",
+  "title": "Mobilité et segmentation de l'emploi",
+  "themes": [
+    "marche-du-travail-et-trajectoires"
+  ],
+  "theme_labels": {
+    "marche-du-travail-et-trajectoires": "Marché du travail et trajectoires"
+  },
+  "authors": [
+    {
+      "name": "Jean Grisez",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Jean Grisez signe seul, sa signature est lue sur la page 417. Mais il ne fonde ni la segmentation du marché du travail ni la notion de filières : il les reçoit, et il l'écrit par un « on » qui ne nomme personne, sa note bibliographique ne citant aucun texte fondateur de la théorie segmentationniste. Ce qui lui revient en propre est l'articulation de cette segmentation avec les comportements de mobilité, établie sur les données de sa propre enquête, Mobilité et milieu professionnel, publiée au Bulletin du CERP en 1970.",
+  "quotation": {
+    "text": "il serait imprudent de rapporter, sans plus, à une « instabilité » individuelle les comportements caractérisés par de nombreux changements",
+    "reference": "Jean Grisez, « Emploi et comportements de mobilité », Bulletin de psychologie, tome 33, n° 344, 1980, numéro thématique « La psychologie du travail », p. 417-420.",
+    "locator": "p. 417",
+    "language": "fr",
+    "original_text": null,
+    "original_language": null,
+    "translation": {
+      "kind": "none",
+      "translator": null,
+      "edition": null
+    }
+  },
+  "hook": "Changer souvent d'emploi tient-il à l'individu ou à la structure des emplois ?",
+  "summary": "Grisez écarte le psychologisme : les comportements de mobilité se rapportent d'abord aux structures du marché du travail et à l'existence de filières entre les emplois.",
+  "sources": [
+    {
+      "label": "Jean Grisez, « Emploi et comportements de mobilité », Bulletin de psychologie, tome 33, n° 344, 1980, numéro thématique « La psychologie du travail », p. 417-420.",
+      "kind": "primary",
+      "locator": "p. 417-420, ici p. 417",
+      "doi_isbn": "10.3406/bupsy.1980.11729",
+      "url": "https://www.persee.fr/doc/bupsy_0007-4403_1980_num_33_344_11729",
+      "consulted": "full-text"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle, session du 27 août 2026",
+    "date": "2026-08-27",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": []
+  },
+  "notes": [
+    "Aucune source secondaire n'a été ouverte sur cette fiche, et aucune n'a été cherchée. La lacune est déclarée et non comblée : rien n'est dit ici de la réception de ce texte, de sa reprise, ni de la place de Jean Grisez dans la littérature française sur la mobilité professionnelle.",
+    "L'attribution est une association, pas une paternité, et l'attribution_note le dit sans le gonfler. Grisez écrit que le modèle économique classique « est très largement amendé notamment à la suite de l'introduction des théories de la segmentation du marché du travail », puis « on a fait largement place à la notion de filières » : ce « on » ne nomme personne. La filiation du concept vers ses auteurs d'origine n'est pas établie par cette lecture et n'a pas été complétée depuis le web.",
+    "Ce que le résumé n'a pas la place de porter, et qui est le résultat de l'auteur, page 420 : « lorsque les emplois sont intégrés dans des filières les changements sont peu fréquents mais lorsqu'ils se produisent ils ont tendance à en entraîner d'autres, tandis que lorsque les emplois ne sont pas intégrés dans des filières les mouvements sont fréquents mais tendent à être indépendants les uns des autres. »",
+    "Nuance de l'auteur qu'il serait malhonnête de taire : Grisez ne nie pas la part individuelle, il la subordonne. Il admet que les emplois ont pour l'individu des valeurs et que les changements ont une utilité matérielle et psychologique, mais ajoute que l'accent mis sur les déterminants individuels ferait négliger les caractéristiques structurelles des marchés du travail. Il qualifie lui-même la situation qu'il décrit de psycho-sociologique, et non de sociologique.",
+    "Les résultats rapportés dans l'article, qui est un exposé de synthèse de quatre pages, viennent de l'enquête antérieure de l'auteur, Bulletin du CERP, 1970, p. 155-296, cent quarante pages qui n'ont pas été ouvertes. Rien ne vérifie ces chiffres à leur source ; ils sont rapportés tels que l'auteur les résume dix ans plus tard.",
+    "Inégalité de canal entre les pages : seule la page 417, d'où vient la citation, a été lue par les deux canaux, couche texte et fac-similé. Les pages 418 et 419 n'ont été lues qu'en couche OCR, qui y laisse des coquilles visibles ; la page 420 n'a été lue que sur l'image, l'endpoint texte ne l'ayant jamais servie.",
+    "Le millésime 1980 n'a pas été lu sur les images de page : il vient de la notice Persée et du suffixe du DOI. Ce qui est vérifié sur la pièce est le tome et le numéro, « Tome XXXIII, N° 344 ».",
+    "Le titre diverge entre la notice et la pièce : la notice Persée écrit « comportement » au singulier, le titre imprimé en tête de la page 417 porte le pluriel, retenu ici.",
+    "Champ domain retire apres declaration du theme marche-du-travail-et-trajectoires dans src/content/themes.ts : ce champ n'existe que pour le cas ou aucun theme de la fiche n'est connu de l'application, et l'invariant est verifie par taxonomy.test.ts."
+  ]
+}

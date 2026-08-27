@@ -1,4 +1,4 @@
-# État du corpus — 26 août 2026
+# État du corpus — 27 août 2026
 
 Écrit sur le disque parce qu'une session a déjà été coupée en cours de route : ce fichier
 existe pour qu'une reprise reparte des fichiers, et non de la mémoire de quelqu'un.
@@ -6,18 +6,18 @@ existe pour qu'une reprise reparte des fichiers, et non de la mémoire de quelqu
 Ce fichier dit ce que le corpus **est**. Ce qui lui **manque**, et par quel bout le prendre,
 est dans [`corpus/RESTE-A-FAIRE.md`](RESTE-A-FAIRE.md).
 
-`npm run corpus:validate` : **92 enregistrements, 89 validés, 0 erreur, 63 avertissements.**
-`npm run corpus:deepen` : **66 approfondissements pour 89 cartes validées.** Fin de sortie :
-**vingt-trois cartes sans approfondissement**, les huit de la science de la décision, les huit de
-l'operations management et les sept de la psychologie du travail, et c'est le seul écart entre
-validé et servi.
+`npm run corpus:validate` : **99 enregistrements, 96 validés, 0 erreur, 75 avertissements.**
+`npm run corpus:deepen` : **66 approfondissements pour 96 cartes validées.** Fin de sortie :
+**trente cartes sans approfondissement**, les huit de la science de la décision, les huit de
+l'operations management, les sept de la psychologie du travail et les sept de la sociologie du
+travail, et c'est le seul écart entre validé et servi.
 `npm test` : **480 tests, 0 échec.** `npm run lint` et `npm run corpus:build` : sans erreur.
 
-**Neuf domaines instruits sur onze déclarés.** `work-psychology` a été ouvert et instruit le
-26 août, au passage 04 de la routine nocturne, **en une seule nuit** là où son prédécesseur en
-avait demandé deux. Les deux derniers domaines fermés (`sociology-of-work`,
-`behavioral-economics`) n'ont ni périmètre ni cartographie : les ouvrir, c'est refaire l'ordre
-complet, périmètre puis scout puis cartes puis thèmes.
+**Dix domaines instruits sur onze déclarés.** `sociology-of-work` a été ouvert et instruit le
+27 août, au passage 05 de la routine nocturne, **en une seule nuit**, dans l'ordre complet :
+périmètre, cartographie, cartes, puis thèmes. **Il ne reste qu'un domaine fermé**,
+`behavioral-economics`, qui n'a ni périmètre ni cartographie : l'ouvrir, c'est refaire l'ordre
+complet. Mais il ne part plus de rien, un legs vérifié lui ayant enfin été constitué.
 
 | domaine | thèmes | cartes validées | approfondissements |
 |---|---:|---:|---:|
@@ -30,9 +30,10 @@ complet, périmètre puis scout puis cartes puis thèmes.
 | Science de la décision | 2 | 8 | **0** |
 | Operations Management | 3 | 8 | **0** |
 | Psychologie du travail | 2 | 7 | **0** |
+| Sociologie du travail | 1 | 7 | **0** |
 
-**Vingt-trois cartes validées attendent leur approfondissement**, les huit du 23 août, les huit
-du 25 et les sept du 26. L'écart s'était refermé le 21 août et il se rouvre depuis,
+**Trente cartes validées attendent leur approfondissement**, les huit du 23 août, les huit du 25,
+les sept du 26 et les sept du 27. L'écart s'était refermé le 21 août et il se rouvre depuis,
 volontairement : la routine nocturne consacre une phase entière à ce travail, et une nuit
 d'ouverture de domaine n'en écrit pas. `npm run corpus:deepen` les liste en fin de sortie :
 **c'est la file, et elle fait foi contre ce fichier.**
@@ -40,9 +41,9 @@ d'ouverture de domaine n'en écrit pas. `npm run corpus:deepen` les liste en fin
 **La famille « Comprendre le pilotage » est complète.** Ses deux domaines, la théorie de la
 mesure et la science de la décision, sont instruits.
 
-**La famille « Comprendre les humains et les organisations » n'est plus vide en son milieu.**
+**La famille « Comprendre les humains et les organisations » n'a plus qu'un domaine fermé.**
 Elle était la seule famille encore incomplète au 25 août, avec trois domaines fermés sur quatre ;
-il lui en reste deux, la sociologie du travail et l'économie comportementale.
+il ne lui reste que l'économie comportementale, et c'est le dernier domaine du corpus.
 
 **La famille « Comprendre la production et les systèmes » est complète elle aussi.** Elle était
 entièrement vide le 20 août : la cybernétique le 21, le systems thinking le 22, et
@@ -50,7 +51,86 @@ entièrement vide le 20 août : la cybernétique le 21, le systems thinking le 2
 donc entièrement instruites**, et les trois domaines qui restent appartiennent tous à la même,
 « Comprendre les humains et les organisations ».
 
-# 0. Psychologie du travail — lot d'ouverture du 26 août 2026 (passage 04), publié
+# 0. Sociologie du travail — lot d'ouverture du 27 août 2026 (passage 05), publié
+
+Dixième domaine instruit, **deuxième des trois derniers de la famille « Comprendre les humains et
+les organisations »**. Ouvert et instruit **dans la même nuit**, dans l'ordre complet : périmètre,
+cartographie, cartes, puis thèmes après le contrôle aveugle.
+
+**Sept cartes validées, sept citations, toutes relues sur l'image de la page.** Trois au premier
+tour du contrôle, quatre au second. Aucun rejet, aucune fiche laissée en review.
+
+## Ce que le contrôle a attrapé, et c'est la leçon du lot
+
+**Quatre `REWORK` sur sept, et les quatre portent sur la même question : la prose.** Aucun ne
+porte sur l'attribution, aucun sur la citation, aucun sur les sources. Le dispositif a donc
+travaillé exactement là où il devait, et le fait mérite d'être noté : après cinq lots, **la
+quatrième question du contrôle aveugle est celle qui rattrape tout le reste.**
+
+Les quatre défauts sont du même genre, un mot qui élargit ou rétrécit ce que le texte dit :
+
+- **`flanerie-systematique`** faisait naître la flânerie « des relations entre ouvriers ». Taylor
+  écrit « caused by their relations with other men », mais il glose lui-même cette cause une page
+  plus tôt par « the relations which exist between employers and employes ». La pression entre
+  pairs est le **mode de transmission**, pas l'origine.
+- **`division-sexuelle-et-rapports-de-sexe`** faisait de la division sexuelle du travail
+  « l'enjeu » des rapports sociaux de sexe. Kergoat écrit « **un** enjeu fondamental », et oppose
+  délibérément les deux formulations à trois lignes d'écart, « l'enjeu » étant en gras dans
+  l'imprimé et portant sur autre chose. La carte disait en outre « rapports sociaux de sexe » là
+  où le texte énonce des rapports sociaux tout court.
+- **`fonctions-sociales-de-la-greve`** faisait varier avec la conjoncture le poids des trois
+  fonctions. La conclusion ne fait varier que le **bargaining**, les deux autres domaines étant
+  « relativement stables avec des bases permanentes ». Le résumé reprenait en fait l'annonce de
+  programme de la page 276, que le corps corrige ensuite en variation asymétrique.
+- **`analyse-des-groupes-professionnels`** visait l'interactionnisme. Le corps de l'article
+  combat le **fonctionnalisme** d'un bout à l'autre, l'interactionnisme lui servant de munition
+  avant de devenir cible en conclusion.
+
+**Deux de ces quatre défauts viennent d'avoir lu la conclusion ou l'annonce plutôt que le corps.**
+C'est la réserve à porter au prochain lot : une carte écrite sur la seule conclusion d'un article
+est une carte à risque, et un article annonce parfois plus qu'il ne démontre.
+
+## Les réserves conservées
+
+- **Aucune source secondaire n'a été ouverte sur les sept cartes.** C'est la faiblesse
+  structurelle du lot, la même que celle des trois lots précédents, déclarée fiche par fiche dans
+  `notes` et non masquée. Chaque carte repose sur sa source primaire seule, et rien n'est dit de
+  la réception d'aucun de ces textes.
+- **`analyse-des-groupes-professionnels` est en `full-text` sur 19 pages ouvertes sur 29.** Le
+  critère retenu est la couverture de l'argument, non celle de la pagination, et la fiche énumère
+  les dix pages impaires restées fermées. Rien dans le dossier ne repose sur elles. La page 109
+  n'a jamais été servie par le serveur, ce qui est un silence d'accès et non une absence de texte.
+- **`fonctions-sociales-de-la-greve` est en `full-text` sans son appareil statistique.** Les
+  tableaux 1 à 7 sont des images dont l'OCR ne rend que la légende : le raisonnement est vérifié,
+  les chiffres qui le portent ne le sont pas. La limite est écrite comme telle.
+- **`mobilite-et-segmentation-de-l-emploi` repose sur trois canaux inégaux.** Seule la page 417 a
+  été lue en OCR et sur image ; les pages 418 et 419 en OCR seul, avec des coquilles corrigées à
+  la main, ce qui est une intervention et non une transcription ; la page 420 sur l'image seule,
+  sa couche texte n'ayant jamais été servie.
+- **`precarite-des-trajectoires` laisse un encadré non lu**, l'encadré 4 de la page 95, dont l'OCR
+  ne donne que le titre et dont l'image n'a pas été ouverte. Il n'entre dans aucun élément de la
+  carte.
+- **Un seul thème est déclaré sur cinq disponibles**, et c'est une décision écrite. Voir le
+  journal du passage 05 pour le raisonnement : `organisation-scientifique-du-travail` porte deux
+  cartes mais toutes deux de Taylor et du même livre, et le précédent de la cybernétique interdit
+  qu'un ouvrage unique fasse un thème.
+
+## Les angles morts qui commandent le prochain passage sur ce domaine
+
+- **Dassa 1983 est la reprise la moins chère**, repéré et jamais vérifié en accès, sur la même
+  route Persée que Durand. Il donnerait à `conflit-et-greve` sa seconde carte, donc son droit à
+  être déclaré.
+- **Piore 1975 est un échec réseau à retenter** (HTTP 429 trois fois sur le PDF MIT DSpace), et
+  avec lui toute la littérature de la segmentation, dont le corpus n'a que le versant francophone.
+- **Le métier et le collectif de travail comme forme sociale n'ont pas été sondés du tout**, la
+  prudence ayant fait reporter cette recherche devant le risque de doublon avec Reynaud et
+  `travail-collectif-collectif-de-travail`, déjà instruits ailleurs. C'est le manque le plus net
+  de la cartographie.
+- **Naville et Touraine restent sans source primaire atteignable**, seuls des comptes rendus
+  d'époque étant ouverts sur Persée. **Braverman est clos négativement**, sauf sa traduction
+  française chez Maspero (1976), jamais cherchée.
+
+# 0 bis. Psychologie du travail — lot d'ouverture du 26 août 2026 (passage 04), publié
 
 Neuvième domaine instruit, **premier des trois derniers de la famille « Comprendre les humains et
 les organisations »**. Ouvert et instruit **dans la même nuit**, dans l'ordre complet : périmètre,
