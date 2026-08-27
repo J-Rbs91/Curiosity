@@ -1,6 +1,6 @@
 # Périmètre du corpus
 
-## Neuf domaines ouverts sur onze
+## Dix domaines ouverts sur onze
 
 L'application couvre **quatre familles et onze domaines**, déclarés dans
 [`src/content/taxonomy.ts`](../src/content/taxonomy.ts). Déclarer un domaine et l'instruire
@@ -9,10 +9,10 @@ admise parce qu'un domaine existe dans la taxonomie.
 
 > **Les périmètres d'instruction ouverts sont `organizational-sociology`,
 > `measurement-theory`, `activity-ergonomics`, `human-factors`, `cybernetics`,
-> `systems-thinking`, `decision-science`, `operations-management` et `work-psychology`.** Les
-> deux autres domaines — `sociology-of-work` et `behavioral-economics` — sont déclarés
-> dans la taxonomie et restent fermés à l'instruction tant
-> qu'une décision explicite ne les ouvre pas — décision qui s'inscrit dans ce fichier, sous la forme d'une
+> `systems-thinking`, `decision-science`, `operations-management`, `work-psychology` et
+> `sociology-of-work`.** Le dernier domaine — `behavioral-economics` — est déclaré
+> dans la taxonomie et reste fermé à l'instruction tant
+> qu'une décision explicite ne l'ouvre pas — décision qui s'inscrit dans ce fichier, sous la forme d'une
 > section de périmètre comme celles qui suivent.
 
 Un domaine s'ouvre à l'instruction dans cet ordre, et pas dans un autre :
@@ -1755,6 +1755,302 @@ d'emprunt s'y présentera plus souvent qu'ailleurs :
 > légitime ; on ne résout pas le défi, on ne se présente pas sous l'identité d'un navigateur,
 > on n'emprunte pas ce qui demande un compte. **Un texte qu'on ne peut pas ouvrir légitimement
 > est un texte qu'on n'a pas ouvert** : on le dit, et on ne conclut pas au verbatim.
+
+## Thèmes
+
+**Aucun thème déclaré à l'ouverture.** Ils se déclarent après le contrôle aveugle des cartes du
+premier lot, et non après leur rédaction ni d'après la proposition de la cartographie. Un thème
+sans carte validée ne se déclare pas : le dépôt en porte déjà deux qui affichent une page vide,
+et c'est deux de trop.
+
+---
+
+# Domaine ouvert — `sociology-of-work`
+
+Ouvert le 27 août 2026, **dixième domaine sur onze**, deuxième des trois derniers de la famille
+« Comprendre les humains et les organisations ». Il ne reste ensuite que
+`behavioral-economics`.
+
+## Ce dont ce domaine hérite, avant toute recherche
+
+Quatre passages ont écrit quelque chose pour lui depuis l'autre côté d'une frontière, et **rien
+de cela ne se recherche à nouveau.** Le legs se lit avant le balayage, il ne se redécouvre pas :
+
+- **Un texte primaire avec accès vérifié positif**, et c'est le seul du legs. Taylor, F. W.,
+  *The Principles of Scientific Management*, tirage 1919, exemplaire Cornell University Library,
+  item Internet Archive `cu31924085713331`, collections `cornell` et `americana`,
+  `access-restricted-item` **absent**, aucune restriction de prêt constatée. Métadonnées
+  vérifiées le 26 août 2026 par `https://archive.org/metadata/cu31924085713331` au passage
+  `work-psychology`, qui a fait la requête que le périmètre lui imposait. À ne pas rechercher :
+  l'identifiant est exact.
+- **Le pendant critique attendu, nommé et jamais cherché.** Braverman, H., *Labor and Monopoly
+  Capital* (1974), sur la déqualification. Deux passages l'ont nommé, aucun n'a vérifié son
+  accès. C'est un vide de méthode, pas un vide vérifié : à traiter comme une recherche à faire,
+  pas comme une impasse constatée.
+- **Un candidat consigné en angle mort depuis `work-psychology`**, avec sa raison écrite :
+  Grisez, J. (1980), « Emploi et comportements de mobilité », *Bulletin de psychologie* n° 344,
+  p. 417-420, DOI `10.3406/bupsy.1980.11729`, page 417 lue en OCR, HTTP 200. L'auteur y met
+  lui-même en garde contre le « psychologisme » et déplace l'explication vers les structures du
+  marché du travail, segmentation et filières, plutôt que vers un trait individuel. Il a été
+  écarté de la psychologie du travail **pour appartenir ici**, en application de la frontière
+  écrite d'avance.
+- **Un gisement à moitié dépensé**, et il est francophone : le numéro 344 du *Bulletin de
+  psychologie*, 1980, servi en texte intégral par l'endpoint page de Persée. Le passage
+  `work-psychology` en a tiré deux cartes, en a écarté cinq articles pour un motif écrit, et
+  **n'a pas dépouillé le reste du numéro**. Grisez ci-dessus en vient.
+- **Trois déclarations de vide, dont une seule est établie.** `cybernetics` s'est déclaré vide
+  pour ce domaine après un balayage entier, et le motif rend le vide crédible : ses dix
+  littératures ne recoupent pas celles-ci. `decision-science` s'est déclaré vide **sans avoir
+  cherché**, et l'écrit ainsi. `operations-management` a cherché et n'a rien vérifié en accès.
+  Un vide de méthode ne se lit pas comme un résultat sur le champ.
+
+**Le legs n'est donc pas un stock : c'est un texte, un titre à chercher, un article à lire et un
+numéro de revue à finir de dépouiller.** Ce domaine s'ouvre par un balayage entier, comme
+`work-psychology` avant lui, mais il s'ouvre avec une porte d'entrée dont l'accès est vérifié,
+ce que son prédécesseur n'avait pas.
+
+## Le périmètre est la discipline
+
+> **Sociologie du travail** — l'étude du **travail comme rapport social** : la division du
+> travail et ce qu'elle fait au métier, la qualification et sa contestation, le collectif de
+> travail, le conflit et la négociation, les carrières et les transformations de l'emploi.
+
+Le domaine ne porte pas sur ce que le travail fait **éprouver** à celui qui l'exerce, qui est en
+psychologie du travail ; ni sur ce que l'opérateur **fait** pour tenir sa tâche, qui est en
+ergonomie de l'activité ; ni sur le fonctionnement de **l'organisation** prise comme structure
+de règles et de pouvoir, qui est en sociologie des organisations. Il porte sur **la position
+sociale que le travail assigne** — un métier, une qualification, un collectif, un rapport
+d'emploi — et sur ce qui la fait, la défait et la conteste.
+
+La coupure décisive est héritée de `work-psychology`, qui l'a écrite depuis l'autre côté en la
+désignant comme « la frontière la plus coûteuse à tenir » de son domaine. Elle se rend ici telle
+quelle et **elle ne se rouvre pas** :
+
+> ce qui prend l'état de la personne comme **rapporté aux propriétés de son emploi** — ce que
+> cette tâche, ce salaire, cet horaire lui font — est **là-bas** ; ce qui prend le même état
+> comme **rapporté à sa position sociale** — sa classe, sa qualification, son collectif, son
+> rapport au patron — est **ici**.
+
+Le champ a une particularité qu'il faut tenir dès l'ouverture, et elle est l'inverse de celle de
+son prédécesseur. La psychologie du travail **mesure ce dont elle parle**, et le risque y était
+de prendre un instrument pour un concept. La sociologie du travail, elle, **enquête sur ce dont
+elle parle** : sa littérature primaire est faite de monographies d'atelier, d'enquêtes de
+terrain et d'entretiens. Le risque propre est donc symétrique et il faut le nommer avant le
+balayage : **une monographie n'est pas un concept.** Ce qui s'instruit ici, c'est la thèse que
+l'enquête établit et le mécanisme qu'elle rend visible, jamais le terrain pour lui-même. Une
+carte sur une usine serait une carte sur un cas, et le lecteur n'a rien à en faire.
+
+## Points d'entrée
+
+Aucun auteur n'est retenu d'avance, et ce domaine s'en défie pour une raison qui lui est propre :
+c'est un champ à **canon national**, et le canon francophone et le canon anglophone ne se
+recouvrent pas. Nommer d'avance une liste reviendrait à choisir un des deux sans le dire. Ce qui
+se balaie, ce sont des **littératures** :
+
+- **la division du travail et la déqualification** : ce que l'organisation scientifique du
+  travail fait au métier, la séparation de la conception et de l'exécution, et la controverse
+  qu'elle a ouverte. C'est l'entrée que le legs ouvre déjà par un accès vérifié ;
+- **la qualification** : ce qu'elle est, si elle tient à la personne ou au poste, et ce qui la
+  fait reconnaître ou disparaître ;
+- **le métier et le collectif de travail** comme forme sociale, ses règles propres et ce qui les
+  tient ;
+- **le conflit, la grève et la négociation** pris par le mécanisme, jamais par le récit
+  d'événement ;
+- **les carrières, la mobilité et la segmentation du marché du travail** : filières, marchés
+  internes, ce qui trie les gens entre les emplois. Grisez 1980 est déjà ici ;
+- **les transformations de l'emploi** : salariat, précarité, sous-traitance, travail
+  indépendant, pris comme rapports d'emploi et non comme actualité économique ;
+- **la sociologie des professions**, quand l'objet est la constitution d'un groupe professionnel
+  et son monopole, et non la psychologie de ses membres ;
+- **le genre au travail et la division sexuelle du travail**, que ce corpus a déjà croisée par
+  l'ergonomie et qui a ici son objet propre ;
+- **la couche francophone, cherchée en parallèle et non après coup** : c'est ici qu'elle pèse le
+  plus lourd de tout le corpus, la sociologie du travail étant une discipline instituée en
+  France avec sa revue éponyme. *Sociologie du travail*, *Revue française de sociologie*,
+  *Travail et Emploi*, *Actes de la recherche en sciences sociales*, *Formation Emploi*. Persée,
+  HAL, Cairn, OpenEdition Books, theses.fr.
+
+## Le test d'entrée
+
+La question n'est pas « est-ce de la sociologie ? » : le champ a été fait par des économistes,
+des historiens et des ergonomes autant que par des sociologues, et l'étiquette recouvre en
+France une discipline instituée que le monde anglophone découpe autrement, entre *industrial
+sociology*, *labor process theory* et *sociology of occupations*. La question est :
+
+> **Ce travail éclaire-t-il ce que le travail fait à la position sociale de celui qui
+> l'exerce ?**
+
+Trois conditions cumulatives :
+
+1. il porte sur **un rapport social** — division du travail, qualification, métier, collectif,
+   conflit, carrière, rapport d'emploi — et non sur un état intérieur de la personne, ni sur une
+   opération qu'elle exécute, ni sur la structure qui l'emploie prise pour elle-même ;
+2. il est **rattachable à un auteur identifié**, et cette attribution est documentable ;
+3. il est **enseignable** : un lecteur non spécialiste doit pouvoir reconnaître ce dont il
+   s'agit dans un emploi qu'il a lui-même occupé ou observé.
+
+## Hors périmètre — rejet direct
+
+- **Le récit d'un conflit social, d'une usine ou d'une profession, sans mécanisme
+  transposable.** C'est le rejet le plus fréquent à prévoir dans ce domaine, comme le mot
+  « motivation » l'était dans le précédent, et pour une raison symétrique : la richesse du
+  terrain y tient lieu d'argument. Il se tranche sans état d'âme : `corpus/rejected/`,
+  `rejection_reason: "OUT_OF_SCOPE"`, jamais une mise en attente. Un candidat gris non tranché
+  revient toujours par une autre porte.
+- **La théorie sociale générale** — les classes, l'État, le capital — quand le travail n'y est
+  qu'une illustration parmi d'autres et non l'objet.
+- **L'économie du travail prise comme modèle de marché** : offre, demande, élasticités,
+  rendements de l'éducation. Ce qui porte sur le comportement économique et ses conséquences
+  agrégées se consigne en angle mort vers `behavioral-economics`, qui est le dernier domaine
+  fermé, et non en rejet.
+- **L'actualité sociale, le droit du travail pris comme norme, la statistique publique commentée
+  sans thèse.** Un rapport administratif n'est pas un texte primaire du champ.
+- **La littérature syndicale et militante** qui reprend ces mots sans remonter à un travail de
+  recherche, au même titre que la littérature de conseil est écartée ailleurs.
+
+## Les frontières, tranchées à l'avance
+
+Elles se tranchent ici et maintenant, avant la cartographie, parce qu'une frontière arbitrée en
+cours de lot est arbitrée par ce que le lot contient. Deux régimes distincts :
+
+- **avec un domaine ouvert**, un candidat mal placé part chez le voisin ou ne s'instruit pas ;
+  il ne se réinstruit jamais en double, le validateur refuse le doublon d'`id` comme de `slug` ;
+- **avec un domaine encore fermé**, un candidat ne part pas en rejet : il se **consigne dans les
+  angles morts** de la cartographie. Ce domaine ne doit plus cette consigne qu'à un seul
+  successeur, `behavioral-economics`, qui est le dernier et n'a **aucun stock ni aucun legs** —
+  trois passages successifs ont écrit n'avoir rien cherché pour lui, ou n'avoir rien vérifié.
+  **Ce balayage-ci est le dernier qui puisse lui payer cette dette**, et il la doit d'autant plus
+  que son propre prédécesseur a laissé la sienne impayée faute de budget. Elle se paie tôt dans
+  la nuit, pas avec ce qui reste.
+
+### Avec `work-psychology`, ouvert depuis la veille — la frontière décisive
+
+C'est la seule qui puisse coûter cher, et son coût est matériel autant que conceptuel : **les
+deux domaines partagent leurs terrains, leurs enquêtes et leurs revues francophones.** La revue
+*Sociologie du travail* publie sur la satisfaction, le *Bulletin de psychologie* publie sur les
+rapports collectifs, et le numéro 344 dont ce domaine hérite est un numéro de psychologie du
+travail dont un article relève d'ici. La frontière ne se tranche donc ni par la revue, ni par le
+numéro, ni par l'auteur, mais par **ce à quoi le texte rapporte ce dont il parle** :
+
+| le texte rapporte l'objet à | domaine |
+|---|---|
+| les propriétés de l'emploi occupé : cette tâche, ce salaire, cet horaire | `work-psychology` |
+| la position sociale de celui qui l'occupe : classe, qualification, collectif, rapport au patron | `sociology-of-work` |
+| la satisfaction, la motivation, l'implication, la monotonie ressentie, l'usure | `work-psychology` |
+| la division du travail, le métier, le conflit, la carrière, le rapport d'emploi | `sociology-of-work` |
+
+Deux cas limites méritent d'être nommés parce qu'ils se présenteront.
+
+**Le travail à la chaîne** est l'entrée la plus canonique des deux domaines à la fois, et le
+périmètre de `work-psychology` le dit lui-même. La règle ne bouge pas : la cadence et la
+répétitivité prises comme **fait psychique** sont là-bas ; la même chaîne prise comme
+**dépossession du métier** est ici. Le même terrain rendra donc deux cartes différentes, et ce
+n'est pas un doublon tant que l'objet diffère.
+
+**Le salaire** est partagé par trois. Le salaire comme source de satisfaction ou
+d'insatisfaction est en psychologie du travail, où `seuil-d-insatisfaction-salariale` est déjà
+instruit. Le salaire comme incitation dont on mesure l'effet sur un marché est en économie
+comportementale, et se consigne en angle mort. Le salaire comme **enjeu d'un rapport de force et
+mesure d'une qualification reconnue** est ici.
+
+### Avec `organizational-sociology`, ouvert
+
+Le voisin le plus proche par le nom, et la frontière se tranche par l'unité dont le texte parle.
+Ce qui porte sur **une organisation** — sa règle, son pouvoir, sa structure, sa décision, son
+apprentissage — est là-bas, même quand le texte décrit du travail. Ce qui porte sur **le
+travail** — un métier, une qualification, un collectif, un rapport d'emploi — est ici, même
+quand le texte décrit une entreprise.
+
+Trois cas sont déjà tranchés de fait et se respectent sans se rouvrir : la règle de contrôle et
+la règle autonome de Reynaud sont instruites en sociologie des organisations, et le fait que
+Reynaud soit un sociologue du travail ne les déplace pas, l'objet étant la production de règles
+dans une organisation ; `exit-voice-loyalty` et le thème `reaction-insatisfaction` y sont
+également instruits ; et le thème `autorite-domination`, déclaré et sans carte, y appartient.
+**Ce domaine ne réinstruit aucun des trois.**
+
+### Avec `activity-ergonomics` et `human-factors`, ouverts
+
+Sans difficulté prévisible sur l'objet, mais avec un recouvrement d'auteurs à surveiller : ce
+corpus a déjà instruit en ergonomie de l'activité des textes sur le collectif de travail et sur
+la division sexuelle du travail, et `travail-collectif-collectif-de-travail` est validé là-bas.
+La règle qui s'applique est celle de l'unité : le collectif pris comme **ressource de
+l'activité**, ce qui permet de tenir la tâche, est en ergonomie ; le collectif pris comme
+**forme sociale**, ce qui fait tenir un métier et ses règles, est ici. Le doublon d'`id` est
+refusé par le validateur, mais il faut d'abord ne pas l'écrire.
+
+### Avec `measurement-theory`, ouvert
+
+Une nomenclature de professions, une grille de classification, un indice de qualification
+n'entrent pas en théorie de la mesure du seul fait qu'ils classent. Ils y entreraient si l'objet
+du texte était **l'effet en retour de la classification sur le classé**, et le domaine voisin a
+déjà instruit ce mécanisme. Tant que l'objet est le rapport social que la nomenclature
+enregistre, c'est ici. Le cas est réel et non théorique : Desrosières est déjà instruit là-bas.
+
+### Avec `operations-management`, ouvert
+
+Le périmètre d'`operations-management` a écrit cette frontière depuis l'autre côté et elle se
+rend ici telle quelle : **la division du travail, la qualification et le conflit dans l'atelier
+pris comme rapport social sont ici** — l'organisation scientifique du travail vue par ce qu'elle
+fait au métier ; le temps de cycle, l'ordonnancement et le dimensionnement qu'elle règle sont
+là-bas.
+
+### Avec `decision-science`, ouvert
+
+Le périmètre de `decision-science` a écrit cette frontière depuis l'autre côté et elle se rend
+ici telle quelle : **ce que la position sociale de celui qui décide fait à sa décision est
+ici** ; le choix, le jugement et leurs écarts pris comme faits de raisonnement sont là-bas.
+
+### Avec `cybernetics` et `systems-thinking`, ouverts
+
+Sans objet prévisible, et c'est la seule des trois déclarations de vide du legs qui repose sur un
+balayage entier plutôt que sur une absence de recherche. La réciproque vaut : un texte de
+sociologie du travail qui emploie le mot « système » n'instruit pas un concept systémique. Le
+cas à surveiller est celui des **systèmes socio-techniques**, dont ce champ a hérité un
+vocabulaire par le Tavistock Institute, et dont la psychologie du travail a déjà consigné la
+dette : elle se signale dans l'attribution, elle ne s'instruit pas ici.
+
+### Avec `behavioral-economics`, fermé et dernier
+
+Ce qui porte sur **le comportement économique et ses conséquences agrégées** — préférences,
+incitations prises comme dispositif économique, effets de marché — se consigne en angle mort,
+jamais en rejet. Le salaire est le cas partagé, et sa répartition est écrite plus haut.
+
+## L'accès — ce que ce domaine impose
+
+Trois constats à tenir pour acquis avant le premier balayage, et le premier est une prévision
+qu'il faut faire maintenant pour ne pas la prendre pour un échec.
+
+1. **Le canon anglophone de ce champ est en prêt numérique, et il n'y a pas de raison d'espérer
+   autrement.** Braverman 1974, et la plupart des monographies d'atelier des années 1950 à 1980,
+   sont des livres d'éditeurs commerciaux encore actifs. Le domaine précédent a payé ce constat
+   sur Herzberg et sur Walker & Guest, et sa conclusion se reprend telle quelle : ce n'est pas à
+   retenter, c'est à contourner par ce qui est réellement ouvert. Taylor 1911 est ouvert parce
+   qu'il est de 1911 et parce qu'un exemplaire Cornell a été versé en `americana` — **c'est la
+   raison de son accès, et non son ancienneté seule**.
+2. **L'inversion francophone joue ici plus fort que partout ailleurs dans ce corpus.** Persée
+   sert *Sociologie du travail* et la *Revue française de sociologie* en texte intégral par son
+   endpoint page, et ces deux revues sont le cœur de la discipline, pas sa périphérie. C'est une
+   inversion à exploiter d'emblée, et non une compensation à chercher quand l'anglophone a
+   échoué.
+3. **Un numéro de revue déjà ouvert coûte moins qu'un livre à trouver.** Le numéro 344 du
+   *Bulletin de psychologie* est à moitié dépensé et sa route d'accès est établie. Deux pièges
+   d'exemplaire payés par le passage précédent se transposent sans être repayés : une couche OCR
+   peut être inexploitable pour citer, et le `page_numbers.json` d'Internet Archive est une
+   inférence automatique et non une lecture, qui a déjà fait écrire une collation fausse à trois
+   cartes.
+
+Et la règle qui ne se négocie dans aucun domaine, rappelée ici parce que la restriction d'emprunt
+s'y présentera aussi souvent que dans le précédent :
+
+> **Aucun agent ne contourne un contrôle d'accès.** Face à un défi anti-robot, à un mur de
+> connexion, à un prêt numérique ou à une restriction d'emprunt, on essaie une autre voie
+> légitime ; on ne résout pas le défi, on ne se présente pas sous l'identité d'un navigateur,
+> on n'emprunte pas ce qui demande un compte. **Un texte qu'on ne peut pas ouvrir légitimement
+> est un texte qu'on n'a pas ouvert** : on le dit, et on ne conclut pas au verbatim.
+
+Une autorisation d'ayant droit **se constate** : elle ne se déduit ni de l'âge du texte, ni de
+l'absence de restriction d'emprunt affichée. Le cas de Taylor est réglé parce que les métadonnées
+de l'item ont été lues, pas parce que le livre a cent quinze ans.
 
 ## Thèmes
 
