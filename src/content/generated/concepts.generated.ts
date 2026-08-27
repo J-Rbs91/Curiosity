@@ -115,6 +115,33 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "analyse-des-groupes-professionnels",
+    "slug": "analyse-des-groupes-professionnels",
+    "title": "Analyse sociologique des groupes professionnels",
+    "authorLabel": "Jean-Michel Chapoulie",
+    "hookQuestion": "Que manque-t-il à la théorie fonctionnaliste des professions, et pas à elle seule ?",
+    "shortExplanation": "Chapoulie critique la théorie fonctionnaliste des professions, puis les recherches d'Hughes, au nom de la position des corps professionnels dans la structure de classe.",
+    "authors": [],
+    "themes": [
+      "groupes-professionnels"
+    ],
+    "themeLabel": "Les groupes professionnels",
+    "domain": "sociology-of-work",
+    "attributionNote": "L'article est signé d'un seul nom, lu sur le fac-similé des pages 86 et 114. Une précision s'impose, parce que l'auteur l'écrit lui-même : la note 1 de la page 86 rattache ce travail à une enquête collective, un ensemble de recherches menées au Centre de Sociologie Européenne, en collaboration avec Dominique Merllié, sur les professeurs de l'enseignement secondaire, et Chapoulie y déclare que les analyses présentées doivent beaucoup à cette collaboration constante. Le matériau empirique est donc coproduit ; la thèse méthodologique que porte cette carte est avancée et signée par Chapoulie seul.",
+    "quotation": {
+      "text": "[…] on peut s'interroger d'abord sur les propriétés que les corps professionnels doivent à leur position dans la structure de classe.",
+      "reference": "Jean-Michel Chapoulie, « Sur l'analyse sociologique des groupes professionnels », Revue française de sociologie, vol. 14, n° 1, 1973, p. 86-114 ; dernière section de l'article, p. 114"
+    },
+    "sources": [
+      {
+        "label": "Jean-Michel Chapoulie, « Sur l'analyse sociologique des groupes professionnels », Revue française de sociologie, vol. 14, n° 1, 1973, p. 86-114.",
+        "kind": "primary",
+        "reference": "p. 86-114, ici p. 111-114 · 10.2307/3320324",
+        "url": "https://www.persee.fr/doc/rfsoc_0035-2969_1973_num_14_1_2179"
+      }
+    ]
+  },
+  {
     "id": "analyse-du-travail",
     "slug": "analyse-du-travail",
     "title": "Analyse du travail",
