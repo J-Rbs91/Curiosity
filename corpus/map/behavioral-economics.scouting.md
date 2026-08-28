@@ -4,7 +4,7 @@ Balayage d'ouverture du 28 août 2026. **Onzième et dernier domaine** du corpus
 aucun domaine n'est fermé : un candidat mal placé part chez un voisin ouvert ou ne s'instruit
 pas.
 
-**requêtes consommées : 8/30**
+**requêtes consommées : 12/30**
 
 ## Méthode et budget réseau
 
@@ -61,40 +61,93 @@ Plus un candidat de frontière hérité de `sociology-of-work`, vérifié ouvert
 
 ## Candidats retenus, par ordre de rendement
 
-*(section en cours — chaque bloc n'est écrit qu'après constat d'accès sur la pièce)*
+Un bloc n'est écrit ici **qu'après constat d'accès sur la pièce**, code HTTP et taille à
+l'appui. Ce qui n'est que repéré reste dans les sections « Direction ».
 
-### En cours de vérification (repérés, accès non encore constaté)
+### 1. Tarde, Gabriel (1902). *Psychologie économique*, tome premier — VÉRIFIÉ OUVERT
 
-- **Tarde, Gabriel (1902), *Psychologie économique*, 2 vol., Félix Alcan.** Huit items
-  Internet Archive identifiés (R1), et **les huit portent `access-restricted-item: None`**
-  (R5), c'est-à-dire aucun verrou de prêt numérique : `psychologiecono00tardgoog` (vol. 1),
-  `psychologiecono03tardgoog` (vol. 1), `psychologiecono01tardgoog` (vol. 2),
-  `psychologiecono02tardgoog` (vol. 2), `psychologiecono05tardgoog`,
-  `psychologieecono0000gabr` (vol. 2), `psychologieecono0001gabr` (vol. 1). **Statut :
-  ouvert d'après le champ d'accès, texte non encore lu — à confirmer sur l'OCR.**
-  Seconde route repérée par OpenAlex (R7) : **Les Classiques des sciences sociales (UQAC)**,
-  DOI `10.1522/cla.tag.psy2`, PDF annoncé `oa: bronze` à
-  `http://classiques.uqac.ca/classiques/tarde_gabriel/psycho_economique_t2/psycho_economique_t2.pdf`
-  (tome 2). Le tome 1 y porte le DOI `10.1522/cla.tag.psy`, sans URL PDF dans OpenAlex.
-- **« How the Custom Suppresses the Endowment Effect: Exchange Paradigm in Kanak Country »**,
-  HAL `hal-04086005` (2022), *Frontiers in Psychology*, `submitType_s:file`. Porte
-  explicitement l'**effet de dotation**, que le périmètre désigne comme la veine que
-  `decision-science` n'a pas prise. Accès non encore constaté.
-- **« Don, droit, coutume, cultures — Études expérimentales sur "l'effet de dotation" »**,
-  HAL `hal-04108632` (2017), chapitre d'ouvrage (`COUV`), `submitType_s:file`. Même veine,
-  en français. Accès non encore constaté.
-- **Jacquemet, N., L'Haridon, O. & Vialle, I. (2014), « Marché du travail, évaluation et
-  économie expérimentale »**, *Revue française d'économie*, HAL `halshs-01082352`, PDF
-  déclaré présent. Frontière `sociology-of-work` déjà tranchée en faveur d'ici (marché du
-  travail pris comme modèle de marché).
-- **Ferey, S., Gabuthy, Y. & Jacquemet, N. (2013), « L'apport de l'économie expérimentale
-  dans l'élaboration des politiques publiques »**, *RFE*, HAL `halshs-00879205`, PDF déclaré
-  présent. **Risque de condition 2** : texte d'orientation, à écarter s'il ne porte pas de
-  thèse propre.
-- **Jacquemet, N., L'Haridon, O. & Morin, P. (2013), « Économie expérimentale et
-  comportements : introduction »**, *RFE*, HAL `halshs-00921105`, PDF déclaré présent.
-  **Risque de condition 2 élevé** : une introduction de numéro est le cas type du texte
-  d'orientation sans thèse, déjà rejeté deux fois en psychologie du travail.
+- **Concept pressenti** : **la valeur comme composée du désir et de la croyance**. La table
+  des matières du tome I porte les chapitres « La valeur et les sciences sociales » (p. 63,
+  qui distingue valeur-vérité, valeur-gloire, valeur-crédit), « Rôle économique du désir »
+  (p. 151, où l'offre et la demande sont traitées comme un **couple de désirs**), « Rôle
+  économique de la croyance » (p. 185), « Les besoins » (p. 202, « besoins, combinaison de
+  croyances et de désirs »), « Les travaux » (p. 222), « La monnaie » (p. 281, dont le
+  « caractère tout subjectif »). Deux concepts distincts sont extractibles de ce seul tome :
+  **la valeur comme quantité psychologique** et **l'offre et la demande comme couple de
+  désirs**.
+- **Auteur** : Gabriel Tarde, seul signataire. L'avant-propos déclare : « Ce livre est la
+  substance d'un cours professé au Collège de France en 1900-1901 » — lu dans l'OCR.
+- **Périmètre** : dedans, et il fonde la lignée que le périmètre désigne comme la voie
+  principale du domaine. Seconde branche du test d'entrée (texte qui fonde la discipline),
+  **avec thèse propre** : la valeur n'est pas une propriété de la chose mais un fait
+  inter-mental, écart assumé au modèle de l'économie politique de son temps (le chapitre IV,
+  p. 107, discute « Adam Smith psychologue »).
+- **Source primaire** : Tarde, G., *Psychologie économique*, tome premier, Paris, Félix
+  Alcan (ancienne librairie Germer Baillière), 1902. Page de titre « TOME PREMIER / PARIS /
+  FÉLIX ALCAN, ÉDITEUR / … / 1902 » **lue dans l'OCR**.
+- **Accès constaté** :
+  `https://archive.org/download/psychologiecono00tardgoog/psychologiecono00tardgoog_djvu.txt`,
+  **HTTP 200, 836 659 octets, `text/plain`**, OCR complet du volume, table des matières
+  incluse. Le champ `access-restricted-item` est **absent** sur les huit items Tarde
+  interrogés (R5) : aucun verrou de prêt numérique. La page liminaire du scan porte la
+  notice Google « the copyright to expire and the book to enter the public domain ».
+- **Autres exemplaires vérifiés non restreints** (R5, même statut) :
+  `psychologiecono03tardgoog` (t. 1), `psychologieecono0001gabr` (t. 1),
+  `psychologiecono01tardgoog` et `psychologiecono02tardgoog` (t. 2),
+  `psychologieecono0000gabr` (t. 2), `psychologiecono05tardgoog`.
+- **Seconde route repérée, non vérifiée** : Les Classiques des sciences sociales (UQAC), DOI
+  `10.1522/cla.tag.psy2` (t. 2), PDF annoncé `oa: bronze` à
+  `classiques.uqac.ca/classiques/tarde_gabriel/psycho_economique_t2/psycho_economique_t2.pdf` ;
+  t. 1 sous DOI `10.1522/cla.tag.psy`, sans URL dans OpenAlex.
+- **Secondaire** : repérée, non vérifiée — « Tarde's *Psychologie Économique*: An Unknown
+  Classic by a Forgotten Sociologist », DOI `10.4324/9781315135045-57` (`oa: closed`) ;
+  compte rendu de 1903 dans l'*Economic Journal*, DOI `10.2307/2221341` (`oa: closed`).
+- **SIGNAL** : Tarde est aujourd'hui lu comme sociologue, et sa *Psychologie économique* est
+  le volume le moins repris de son œuvre — attribution non contestée, mais **réception
+  tardive** (la secondaire repérée date de 2017). Le texte est un cours, donc discursif.
+  **Piège d'OCR** : le scan Google de 1902 dégrade les accents (« thaï » pour « that ») ; la
+  citation devra être relue sur l'image de la page, ce que le périmètre exige déjà.
+- **ACCESSIBILITÉ** : texte intégral (OCR complet, 836 Ko).
+- **CITABLE** : oui, en français, sans traduction à chercher. Pagination d'origine
+  disponible ; les chapitres cibles sont courts et localisés (p. 151-185 pour le désir,
+  p. 185-202 pour la croyance).
+
+### 2. Baratgin, J., Godin, P. & Jamet, F. (2022). « How the Custom Suppresses the Endowment Effect: Exchange Paradigm in Kanak Country » — VÉRIFIÉ OUVERT
+
+- **Concept pressenti** : **l'effet de dotation** pris comme fait d'échange, et sa
+  **suppression par une norme sociale**. Le résumé lu dans le PDF définit l'effet dans le
+  paradigme d'échange de Knetsch : le participant reçoit un objet, se voit offrir de
+  l'échanger contre un objet équivalent, et refuse — « the observed refusal to exchange is
+  called the endowment effect ». Thèse propre : ce refus vient d'une **implicature** sur les
+  attentes de l'expérimentateur (l'objet reçu est perçu comme un don, que les normes de
+  politesse occidentales interdisent d'échanger), et des participants de culture kanak, chez
+  qui le don appelle un contre-don, ne devraient pas produire cette implicature.
+- **Auteurs** : Jean Baratgin (Université Paris 8, LCHA ; correspondant), Patrice Godin
+  (Université de la Nouvelle-Calédonie, TROCA), Frank Jamet (Paris 8 / CY Cergy Paris
+  Université). Trois signataires.
+- **Périmètre** : dedans — un échange de biens réels est engagé, l'écart au modèle est
+  établi et **orienté** (refus d'échanger). **Frontière avec `decision-science` à
+  surveiller** : le périmètre nomme explicitement l'effet de dotation comme ce que la
+  science de la décision n'a pas pris, donc la voie est libre, mais l'article paraît dans la
+  section « Cognition » de la revue et argumente en pragmatique — c'est le point de contrôle.
+- **Source primaire** : *Frontiers in Psychology*, 12:785721, publié le 25 janvier 2022,
+  DOI `10.3389/fpsyg.2021.785721`. Reçu le 29 septembre 2021, accepté le 13 décembre 2021 —
+  dates lues sur la première page du PDF.
+- **Accès constaté** : `https://hal.science/hal-04086005/document`, **HTTP 200, 839 103
+  octets, `application/pdf`**. Texte extrait localement (146 303 caractères), résumé et
+  corps lisibles. Revue en accès libre intégral : route HAL et route éditeur légitimes.
+- **Secondaire** : ABSENTE dans ce passage (aucune base de citations interrogée, scite non
+  connecté).
+- **Francophone** : le même objet est traité en français par `hal-04108632` (voir plus bas),
+  dont l'accès est constaté mais la lecture bloquée.
+- **SIGNAL** : l'article **conteste l'interprétation standard** de l'effet de dotation
+  (aversion à la perte) au profit d'une explication par la norme sociale. À traiter comme
+  **mécanisme contesté**, non comme attribution de concept contestée : Knetsch est crédité du
+  paradigme. Intérêt de chaîne : c'est une voie légitime pour instruire l'effet de dotation
+  **sans passer par Kahneman, Knetsch & Thaler 1991, vérifié fermé**.
+- **ACCESSIBILITÉ** : texte intégral.
+- **CITABLE** : oui, en **anglais**. Aucune traduction publiée repérée. Le résumé est
+  autonome et court.
 
 ---
 
