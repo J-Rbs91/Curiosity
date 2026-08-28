@@ -4,7 +4,7 @@ Balayage d'ouverture du 28 août 2026. **Onzième et dernier domaine** du corpus
 aucun domaine n'est fermé : un candidat mal placé part chez un voisin ouvert ou ne s'instruit
 pas.
 
-**requêtes consommées : 14/30**
+**requêtes consommées : 17/30**
 
 ## Méthode et budget réseau
 
@@ -38,6 +38,9 @@ fichiers préfixés `be-`.
 | R12 | HAL — PDF `halshs-01082352` (marché du travail, éco. expérimentale) | 200 | 474 593 o |
 | R13 | `archive.org` — OCR `psychologiecono01tardgoog_djvu.txt` (Tarde t. 2) | 200 | 990 188 o |
 | R14 | `archive.org` — image `psychologiecono00tardgoog/page/n170.jpg` | 200 | 1 573 756 o |
+| R15 | Persée — page Albou 1962 (`…_16_211_T1_0001_0000`) | **000** | 0 o (échec de connexion, **pas un 404** — à retenter) |
+| R16 | Persée — page Milet 1982 (`…_35_357_T1_0907_0000`) | **404** | 0 o (motif d'URL à corriger : fascicule probablement découpé en T2/T3) |
+| R17 | `archive.org/advancedsearch` — `dticarchive` resserré sur l'expérimentation | 200 | 13 509 o |
 
 ---
 
@@ -249,16 +252,36 @@ d'économie expérimentale* (`halshs-02283347`).
 
 ---
 
-## Direction 3 — la veine des rapports techniques (`dticarchive`, RAND, ONR)
+## Direction 3 — la veine des rapports techniques (`dticarchive`, RAND, ONR) : RENDEMENT NUL, ET C'EST UN RÉSULTAT
 
-**Première requête (R4) : rendement nul.** `collection:dticarchive` + titres
-bargaining/utility/economic behavior/risk taking donne 783 résultats **dominés par le bruit
-lexical de « utility »** au sens de véhicule ou de réseau électrique militaire (« Truck,
-Utility, 1/4-Ton », « Utility Tax Avoidance Program »). Trois seuls titres pertinents
-apparus : `DTIC_AD0267309` « Coalition Bargaining in N-Person Games » (1961),
-`DTIC_ADA149287` « Two Papers on Sequential Bargaining » (1984), `DTIC_ADA197135` « Deriving
-a Utility Function For the U.S. Economy » (1988). **Aucun vérifié.** Une seconde requête
-mieux ciblée (auteurs Siegel/Fouraker, ONR, « experiment ») reste à faire.
+**Deux requêtes structurées contre `archive.org/advancedsearch.php`, aucune pièce retenue.**
+Ce n'est pas un vide de méthode : c'est un constat, et il contredit une attente du dépôt.
+
+- **R4**, `collection:dticarchive` croisé avec `bargaining`, `economic behavior`, `utility`,
+  `risk taking` : 783 résultats, **dominés par le bruit lexical de « utility »** au sens
+  militaire de véhicule ou de réseau technique (« Truck, Utility, 1/4-Ton, 4X4, M151 »,
+  « Utility Tax Avoidance Program in Germany », « Replace Utility Poles »). Trois titres
+  seulement approchaient l'objet : `DTIC_AD0267309` « Coalition Bargaining in N-Person
+  Games » (1961), `DTIC_ADA149287` « Two Papers on Sequential Bargaining » (1984),
+  `DTIC_ADA197135` « Deriving a Utility Function For the U.S. Economy » (1988).
+- **R17**, requête resserrée sur les formes de titre propres à l'expérimentation
+  (`"bargaining behavior"`, `"experimental study of"`, `"decision making under risk"`,
+  `"choice behavior"`, `"risk taking behavior"`, `"economic decision"`), triée par année :
+  562 résultats, dont les 45 premiers sont **de la mécanique des fluides, de l'antenne et du
+  matériau** (« An Experimental Study of Boundary Layer Transition », « … of Pressure Waves
+  in Gun Chambers »). **Une seule pièce pertinente est apparue** : `DTIC_AD0130718` (1957),
+  « A Theory of Individual Choice Behavior » — selon toute vraisemblance le rapport
+  technique de R. D. Luce, mais **l'auteur n'a pas été vérifié et l'accès non plus**. Et
+  quand bien même : un modèle probabiliste du choix est un **fait de raisonnement**, pas un
+  écart économique orienté. Il relèverait de `decision-science` ou de `measurement-theory`,
+  tous deux ouverts, et non d'ici.
+
+**Conclusion à consigner pour les passages suivants** : la veine des rapports techniques,
+établie comme la voie la plus rentable du dépôt sur d'autres domaines, **ne l'est pas sur
+celui-ci**, et le motif est structurel, non conjoncturel. L'économie comportementale ne
+s'est pas constituée dans la littérature grise de la défense américaine : elle s'est
+constituée dans des revues d'économie, qui sont précisément les plus fermées. Deux requêtes
+bien formées suffisent à l'établir ; une troisième ne se justifie pas.
 
 ---
 
