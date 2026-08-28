@@ -1,11 +1,11 @@
 # Ce qui reste à faire
 
 Ce fichier existe pour qu'une session qui reprend le corpus sache **par où commencer**, sans
-relire tout le dépôt et sans redécouvrir ce que sept lots ont déjà appris.
+relire tout le dépôt et sans redécouvrir ce que huit lots ont déjà appris.
 
 Il ne double pas `corpus/ETAT.md`, qui dit ce que le corpus **est** ; celui-ci dit ce qu'il
 lui **manque**. Et il ne remplace aucun script : les chiffres ci-dessous sont un instantané
-du 27 août 2026, les commandes sont la vérité.
+du 28 août 2026, les commandes sont la vérité.
 
 ```bash
 npm run corpus:audit    # domaines, thèmes, cartes validées, sujets jamais instruits
@@ -23,41 +23,51 @@ script ne peut pas dire : quel travail est possible aujourd'hui, ce qu'il coûte
 
 | chantier | volume | recherche documentaire ? | état |
 |---|---|---|---|
-| **A.** Approfondissements | 30 cartes | non | **ouvert, et il a encore grossi le 27 août 2026** |
+| **A.** Approfondissements | 34 cartes | non | **ouvert, et il a encore grossi le 28 août 2026** |
 | **B.** File de la sociologie des organisations | 25 entrées | oui, cartographie déjà faite | ouvert |
-| **C.** Domaines vides | **1 fermé, le dernier** | oui | ouvert |
-| **D.** Reprises courtes de quatre domaines instruits | 10 textes | oui, accès déjà constaté | ouvert |
+| **C.** Domaines vides | **aucun** | — | **fermé le 28 août 2026** |
+| **D.** Reprises courtes de cinq domaines instruits | 14 textes | oui, accès déjà constaté | ouvert |
 
-Le chantier A s'était vidé le 21 août et il se rouvre depuis. **Le 25 il double, le 26 et le 27
-il grossit encore** : aux huit cartes de la science de la décision et aux huit de l'operations
-management s'ajoutent les sept de la psychologie du travail et les sept de la sociologie du
-travail. C'est délibéré, et non un oubli, la routine nocturne consacrant une phase entière à ce
-travail et une nuit d'ouverture de domaine n'en écrivant pas. **La file est celle de `npm run
-corpus:deepen`, pas celle de ce fichier.** Avec trente cartes en attente, ce chantier est
-désormais le plus gros du dépôt, et il ne demande aucune recherche documentaire.
+Le chantier A s'était vidé le 21 août et il se rouvre depuis. **Le 25 il double, et il grossit
+encore les 26, 27 et 28** : aux huit cartes de la science de la décision et aux huit de
+l'operations management s'ajoutent les sept de la psychologie du travail, les sept de la sociologie
+du travail et les quatre de l'économie comportementale. C'est délibéré, et non un oubli, la routine
+nocturne consacrant une phase entière à ce travail et une nuit d'ouverture de domaine n'en écrivant
+pas. **La file est celle de `npm run corpus:deepen`, pas celle de ce fichier.** Avec trente-quatre
+cartes en attente, ce chantier est de loin le plus gros du dépôt, il ne demande aucune recherche
+documentaire, et **c'est désormais le seul que la routine nocturne ait à prendre**, le chantier C
+étant clos.
 
-Le chantier C a perdu un domaine le 22 août, `systems-thinking`, un second le 23,
+**Le chantier C est fermé.** Il a perdu un domaine le 22 août, `systems-thinking`, un second le 23,
 `decision-science`, un troisième le 25, `operations-management`, un quatrième le 26,
-`work-psychology`, et **un cinquième le 27, `sociology-of-work`**, ouvert et instruit dans la même
-nuit, qui rend sept cartes et un thème déclaré sur cinq disponibles. **Il n'y reste plus qu'un
-domaine, `behavioral-economics`, le dernier du corpus**, sans périmètre et sans cartographie mais
-**avec un legs enfin vérifié** : voir plus bas.
+`work-psychology`, un cinquième le 27, `sociology-of-work`, et **le dernier le 28,
+`behavioral-economics`**, ouvert et instruit dans la même nuit, qui rend quatre cartes et un thème
+déclaré. **Les onze domaines déclarés sont instruits, et aucun n'est plus vide.**
+
+**Une règle du dépôt disparaît avec ce chantier, et il faut le savoir avant de reprendre
+n'importe quelle cartographie.** La catégorie « angle mort vers un domaine fermé », qui a doté cinq
+domaines de leur stock d'entrée, **n'a plus de destinataire** : un candidat mal placé part
+désormais chez un voisin ouvert, ou ne s'instruit pas. Il ne se consigne plus en attente d'une
+ouverture qui n'aura pas lieu.
 
 ---
 
 # A. Les approfondissements
 
-**Vidé le 21 août 2026, rouvert le 23, doublé le 25, encore grossi le 26 et le 27.**
+**Vidé le 21 août 2026, rouvert le 23, doublé le 25, encore grossi les 26, 27 et 28.**
 `corpus:deepen` projette toujours **66 approfondissements, 95 772 mots, 1 451 en moyenne**, et sa
-fin de sortie liste désormais **trente cartes** : les huit du lot d'ouverture de la science de la
-décision, du 23 août, les huit de l'operations management, du 25, les sept de la psychologie du
-travail, du 26, et les sept de la sociologie du travail, du 27.
+fin de sortie liste désormais **trente-quatre cartes** : les huit du lot d'ouverture de la science
+de la décision, du 23 août, les huit de l'operations management, du 25, les sept de la psychologie
+du travail, du 26, les sept de la sociologie du travail, du 27, et les quatre de l'économie
+comportementale, du 28.
 
 C'est le seul écart actuel du corpus entre ce qui est validé et ce qui est servi, et il se comble
 par `/corpus-deepen`, sans aucune recherche documentaire : la matière est la carte elle-même, sa
-lecture primaire et son verdict de contrôle. **Quatre lots d'ouverture consécutifs l'ayant nourri,
+lecture primaire et son verdict de contrôle. **Cinq lots d'ouverture consécutifs l'ayant nourri,
 c'est aujourd'hui, et de loin, le chantier au meilleur rapport entre ce qu'il coûte et ce qu'il
-rend au lecteur.**
+rend au lecteur.** Et depuis la fermeture du chantier C, le 28 août, **c'est le seul que la routine
+nocturne ait à prendre** : sa §2 fait décider la première condition vraie, aucun domaine n'est plus
+vide, et la file du script est donc ce qui commande.
 
 **La file n'est pas tenue ici.** `npm run corpus:deepen` l'affiche en fin de sortie, et c'est
 elle qui fait foi.
@@ -150,167 +160,151 @@ tradition germanophone, que la file ne couvre pas.
 
 ---
 
-# C. Les domaines vides
+# C. Les domaines vides, chantier fermé le 28 août 2026
 
-**`systems-thinking` est sorti de cette liste le 22 août 2026**, et **`decision-science` le
-23**. Les deux avaient le meilleur stock d'entrée du lot, et c'est par eux que le chantier a
-été entamé : périmètre écrit, cartographie, cartes, puis thèmes. Ce que ces passages ont appris
-est au chantier D et dans `corpus/ETAT.md`.
+**Il n'y a plus de domaine vide.** Les onze domaines déclarés dans `src/content/taxonomy.ts` sont
+instruits, et ce chantier n'a plus d'objet. Il est conservé ici pour ce qu'il a appris, non pour ce
+qu'il resterait à faire.
 
-**`operations-management` a quitté ce chantier le 25 août** (passage 03) : ouvert au stade
-périmètre et cartographie le 24, il a rendu huit cartes et trois thèmes le 25. Son bloc de reprise
-est désormais au chantier D, avec les autres domaines instruits.
+Il s'est vidé en sept passages : `systems-thinking` le 22 août 2026, `decision-science` le 23,
+`operations-management` le 25 après une ouverture en deux temps, `work-psychology` le 26,
+`sociology-of-work` le 27, et **`behavioral-economics` le 28**, onzième et dernier, ouvert et
+instruit dans la même nuit pour quatre cartes et un thème.
 
-| famille | domaine | périmètre | cartographie | stock d'entrée |
-|---|---|---|---|---|
-| Humains et organisations | Économie comportementale | — | — | **quatre pièces vérifiées le 27 août, voir ci-dessous** |
+**Une règle du dépôt disparaît avec ce chantier, et c'est la conséquence la plus concrète de sa
+fermeture.** La catégorie « angle mort vers un domaine fermé » **n'a plus de destinataire**. Elle a
+doté cinq domaines de leur stock d'entrée et elle a été le meilleur investissement de méthode du
+dépôt ; elle est désormais sans emploi. Un candidat mal placé part chez un voisin ouvert, ou ne
+s'instruit pas. Il ne se consigne plus en attente d'une ouverture qui n'aura pas lieu.
 
-**`sociology-of-work` a quitté ce chantier le 27 août** (passage 05), ouvert et instruit dans la
-même nuit : sept cartes, un thème déclaré sur cinq disponibles. **Il ne reste donc qu'un seul
-domaine fermé, le dernier du corpus**, et il n'a ni périmètre ni cartographie.
+## Les trois leçons qui survivent au chantier, et qui valent pour tout le reste du dépôt
 
-**Mais il n'est plus sans stock, et c'est le fait notable du passage 05.** La dette envers lui
-avait été promise par trois cartographies successives et jamais payée : deux avaient écrit
-n'avoir rien cherché, la troisième avait épuisé son budget avant d'y arriver. Elle a été payée le
-27 août **par un balayage distinct, avec son propre budget de dix requêtes**, précisément pour
-qu'elle ne meure pas une quatrième fois du plafond d'un autre. Le détail est dans la section « La
-dette envers `behavioral-economics` » de `corpus/map/sociology-of-work.scouting.md` ; en résumé :
-
-- **Kahneman, Knetsch et Thaler (1991)**, « Anomalies: The Endowment Effect, Loss Aversion, and
-  Status Quo Bias », *Journal of Economic Perspectives* 5(1), DOI `10.1257/jep.5.1.193` : **propre
-  sur le fond**, le *JEP* étant éditorialement en accès libre chez l'American Economic
-  Association. Le `curl` brut contre `pubs.aeaweb.org` rend **403**, ce qui est un filtrage
-  anti-robot et non un paywall constaté ; il ne se contourne pas, une autre voie légitime se
-  cherche.
-- **Thaler (1980)**, « Toward a Positive Theory of Consumer Choice », *JEBO* 1(1), DOI
-  `10.1016/0167-2681(80)90051-7` : **à traiter comme fermé.** Le PDF a bien été atteint en
-  HTTP 200, mais sur le **miroir d'une page de cours universitaire**, et la revue est une revue
-  Elsevier sous abonnement dont l'édition officielle est derrière un paywall non ambigu. Un code
-  200 constate qu'un fichier est atteignable, **pas qu'un ayant droit l'autorise**, et la règle du
-  dépôt est que l'autorisation se constate. Ne pas citer depuis ce miroir.
-- **Katona (1951)**, *Psychological Analysis of Economic Behavior*, item `psychologicalana0000geor_l5v4` :
-  **vérifié fermé**, `access-restricted-item: true`, prêt numérique contrôlé. Katona (1975),
-  `psychologicaleco00kato`, porte la même signature technique mais son champ n'a pas été extrait :
-  probablement fermé, sur indice et non sur constat.
-- **Quatre candidats francophones sur Persée, repérés et non testés**, à un seul appel de la
-  vérification chacun : *Bulletin de psychologie* 15/207 (1962), 36/358 (1982), 35/354 (1982), et
-  *Revue française d'économie* 23/1 (2008). Les trois premiers sont dans une revue déjà partagée
-  avec `work-psychology` : la frontière se tranchera par la lecture, pas par la revue.
-- **Un candidat de frontière vérifié ouvert**, venu de l'autre balayage : Brunet et Havet,
-  « Propriété immobilière et déqualification dans l'emploi », PDF HAL `halshs-00267041/document`,
-  HTTP 200 vérifié.
-
-**Ce qui n'est toujours pas un résultat, et qu'il ne faut pas lire comme tel** : Vernon Smith,
-Selten, Camerer et Loewenstein, Thaler et Benartzi, Loewenstein et Prelec, l'*Econometrica*
-ancien et le fonds `dticarchive` sont des **noms cités de mémoire**, aucun recherché, aucun
-vérifié. Et Kahneman et Tversky (1979) n'a délibérément pas été cherché : `theorie-des-perspectives`
-est **déjà instruit** en `decision-science` et ne se réinstruit pas.
-
-**Ce que chacun a reçu, et qui ne vaut pas stock d'entrée.** Le passage 02 leur a consacré à
-chacun une requête ciblée obligatoire, et aucune n'a produit de candidat vérifié en accès :
-Taylor (1911) et Braverman (1974) repérés pour le premier sans qu'aucun des deux textes primaires
-soit vérifié ; pour le deuxième, une littérature dispersée sans texte primaire identifiable, le
-classique attendu (Walker et Guest, *The Man on the Assembly Line*, 1952) n'étant pas remonté ;
-pour le troisième, Schweitzer et Cachon 2000 repéré et donné pour payant. **Trois repérages, aucun
-vide établi** : leur ouverture demandera un balayage entier.
-
-**Aucun des trois fermés n'a de périmètre écrit ni de cartographie.** Les ouvrir, c'est refaire
-l'ordre complet, et cet ordre n'est pas négociable : il a été appris en le violant.
+**1. L'ordre d'ouverture n'est pas négociable, et il a été appris en le violant.**
 
 > le périmètre s'écrit → le scout cartographie → **puis** les thèmes se déclarent → puis les
 > concepts s'instruisent
 
-Les neuf thèmes de la sociologie des organisations ont été posés de mémoire avant toute
-lecture, et le périmètre le reconnaît lui-même comme un découpage a priori : c'est pourquoi
-deux d'entre eux affichent encore une page vide. La règle qui en découle vaut pour les quatre :
-**un thème sans carte validée ne se déclare pas.** Elle a de nouveau tenu le 23 août, où deux
-thèmes proposés par la cartographie de `decision-science` n'ont pas été déclarés faute de cartes
-pour les porter, alors même que leurs textes étaient ouverts et lus.
+Les neuf thèmes de la sociologie des organisations ont été posés de mémoire avant toute lecture, et
+le périmètre le reconnaît lui-même comme un découpage a priori : c'est pourquoi deux d'entre eux
+affichent encore une page vide. La règle qui en découle vaut partout : **un thème sans carte
+validée ne se déclare pas.** Elle a tenu à chaque ouverture depuis, y compris la dernière, où un
+seul thème a été déclaré là où la cartographie en proposait cinq.
 
-## Ce dont l'ouverture hérite déjà, et qui n'est pas à rechercher
+**2. Un legs se vérifie, et il rend.** C'est le résultat de méthode le plus net de ce chantier,
+constaté cinq fois. Les textes qu'une cartographie consigne en angle mort pour un voisin sont
+repris tels quels par le passage qui ouvre ce voisin, et ils rendent : `systems-thinking` a ouvert
+sur trois textes légués, `decision-science` sur cinq, `behavioral-economics` sur quatre pièces
+Persée dont **trois de ses quatre cartes sont issues**. Le cas de ce dernier est le plus
+instructif, parce qu'il a failli ne pas avoir lieu : trois passages avaient écrit n'avoir rien
+cherché pour lui, et la dette n'a été payée qu'au quatrième, la veille de son ouverture, par un
+balayage doté de son propre budget. **Une dette payée une nuit rend la nuit suivante ; une dette
+reportée coûte un balayage entier.**
 
-Un seul de ces domaines ne partait pas de rien, `operations-management`, et il est désormais
-ouvert (voir plus bas). Les périmètres et cartographies existants ont tranché leurs frontières
-**depuis l'autre côté**, et consigné en angle mort ce qui leur revient plutôt que de le rejeter.
-Un scout qui ouvre un domaine commence par lire ces sections ; l'historique ci-dessous dit ce
-que chaque legs a réellement rendu une fois testé.
+**3. La leçon opératoire, qui a rendu quatre lots et qui s'est aggravée.** Ces agents accumulent
+tout en contexte et n'écrivent qu'à leur dernière action. Quatre contre-mesures :
 
-**Le legs se vérifie : c'est ce qui a ouvert `systems-thinking`.** Les trois textes que
-`corpus/map/cybernetics.scouting.md` lui avait consignés ont été repris tels quels le 22 août.
-Un des trois a rendu, et c'était le plus riche, celui que la cartographie appelait « un cadeau
-pour qui ouvrira ce domaine ». Le signal joint au legs s'est vérifié lui aussi : Bertalanffy et
-Forrester, qui n'avaient pas été rencontrés spontanément, remontent immédiatement dès qu'on les
-cherche nommément. Une section d'angle mort bien tenue vaut donc un balayage, et cela justifie
-le temps qu'elle coûte.
-
-**Le legs se vérifie une seconde fois, et il a rendu davantage : c'est ce qui a ouvert
-`decision-science` le 23 août.** Les cinq textes que deux cartographies lui avaient consignés
-ont été repris tels quels. Deux ont rendu une carte ; deux autres, jamais testés jusque-là, ont
-été **vérifiés et déclarés fermés** plutôt que laissés en suspens ; le cinquième n'était pas un
-texte mais un courant, et il l'est resté. Surtout, la vérification d'accès du legs a fait
-découvrir ce qu'aucune requête par littérature n'avait donné : **un recueil de 1988 entièrement
-ouvert**, d'où sont sorties cinq des huit cartes du lot. Aller vérifier un legs vaut donc mieux
-que de le croire, et pas seulement pour ce qu'il annonce.
-
-**Le legs se vérifie une troisième fois, et cette fois il n'a pas suffi : c'est ce qui a
-ouvert `operations-management` le 24 août.** Le domaine a bien hérité — trois rapports du
-Department of Defense appliquant la loi de la variété requise à l'acquisition de systèmes
-d'armes, mirés sur Internet Archive, repérés non ouverts par `cybernetics`, plus Delatour et al.
-consigné par `human-factors`. **Mais le legs, une fois testé ce passage, s'est révélé tout entier
-non ouvert** : les trois rapports DoD restent des items `dticarchive` à restriction non vérifiée,
-et les deux notices HAL de Delatour n'ont ni fichier ni DOI. La voie d'accès rentable que le lot
-du 23 août avait établie — la collection `dticarchive` sert sans restriction des rapports ONR,
-ARPA et RAND — **a servi ailleurs** : c'est par elle que les scouts ont ouvert Bellman (RAND
-P-651) et le rapport de stock AD 422810. Le domaine part donc avec **quatre candidats lus en texte
-intégral mais aucune carte** (voir le bloc « Operations Management » plus bas et
-`corpus/map/operations-management.scouting.md`) : son ouverture s'est arrêtée au périmètre et à la
-cartographie, le maillon `corpus-scout` ayant consommé la nuit.
-
-**`work-psychology`, `sociology-of-work`, `behavioral-economics`** — les deux cartographies
-qui les ont explicitement balayés **se déclarent vides pour eux**, et disent pourquoi : les
-mots-clés de leurs périmètres ne recoupent pas naturellement ceux de ces domaines. C'est un
-résultat, pas un manque, et il signifie qu'ouvrir ces trois-là demandera un balayage entier.
-Un seul cas de frontière est consigné, Mackworth 1948 sur la vigilance, **tranché du côté de
-`human-factors`** et donc pas à réclamer.
-
-Une nuance à porter sur `behavioral-economics` depuis le 23 août : le périmètre de
-`decision-science` a écrit la frontière avec lui, et il la donne pour **la plus coûteuse à
-tenir** de ses six. La coupure retenue est celle-ci, et elle ne se rouvre pas depuis l'autre
-côté : un écart de jugement pris comme **fait de raisonnement** est en science de la décision ;
-le même écart pris comme **fait économique**, avec ses conséquences agrégées, est là-bas. La
-cartographie du 23 août n'a toutefois **rien cherché de ciblé** vers ce domaine : elle ne
-constitue donc aucun stock d'entrée, et son silence n'est pas un vide établi.
-
-## La leçon opératoire qui a rendu le lot du 25 août, et qui vaut pour les trois derniers
-
-Elle est écrite ici parce qu'elle a été payée une nuit entière et remboursée la nuit suivante.
-**Les scouts et lecteurs de cette chaîne accumulent tout en contexte et n'écrivent qu'à leur
-dernière action.** Le passage 02 y a perdu son instruction, trois scouts consécutifs ayant été
-arrêtés pour cette raison. Le passage 03 a appliqué quatre contre-mesures et **ses cinq agents ont
-tous écrit dans les deux minutes, aucun n'a été arrêté** :
-
-1. **pré-identifier les sources avant de lancer un agent** : identifiant d'item, URL de l'OCR,
-   URL des images, taille attendue du fichier. Un scout ne doit pas chercher ce qu'une requête de
+1. **pré-identifier les sources avant de lancer un agent** : identifiant d'item, URL de l'OCR, URL
+   des images, taille attendue du fichier. Un scout ne doit pas chercher ce qu'une requête de
    trente secondes peut lui donner ;
-2. **interdire la relecture intégrale d'un gros fichier** : les OCR font 70 à 780 Ko, ils se
+2. **interdire la relecture intégrale d'un gros fichier** : les OCR font 70 à 990 Ko, ils se
    travaillent au `grep` par fenêtres, jamais avec l'outil de lecture ;
 3. **borner le nombre de requêtes réseau**, et demander à l'agent d'en tenir le compte ;
 4. **exiger l'écriture du fichier de sortie tôt**, dès la première section, et par éditions
    successives. « Un fichier partiel vaut infiniment mieux qu'un fichier parfait jamais écrit. »
 
-## Le piège que ces domaines partagent
+**Ces quatre ne suffisent plus, et le passage 06 l'a payé.** Sept agents sur huit ont écrit leur
+squelette dans les deux premières minutes, puis se sont tus vingt à quarante minutes, et il a fallu
+envoyer à chacun un « écris maintenant ». Tous ont rendu ensuite, aucun n'a été perdu. **Mais la
+surveillance de la taille du fichier donne une image en retard sur l'état réel de l'agent** :
+plusieurs ont répondu qu'ils avaient déjà écrit leur fichier complet au moment où le rappel
+arrivait, et un rappel envoyé sur cette foi leur coûte un tour. La contre-mesure reste bonne, elle
+a rendu quatre agents cette nuit-là ; **elle se déclenche plus tard qu'on ne le croyait.**
 
-La cybernétique a montré ce que coûte un champ dont le vocabulaire est disponible pour
-n'importe quel usage métaphorique. Les cinq le sont autant : « système », « décision »,
-« flux », « motivation », « biais » circulent partout. Le rejet le plus fréquent à prévoir
-sera le même — **un texte qui invoque le mot sans mécanisme identifiable ni auteur
-rattachable** — et il se traite de la même façon : `corpus/rejected/` avec
+## Le piège que ces domaines partageaient, et qui n'a plus de chantier mais reste vrai
+
+La cybernétique a montré ce que coûte un champ dont le vocabulaire est disponible pour n'importe
+quel usage métaphorique. « Système », « décision », « flux », « motivation », « biais » circulent
+partout. Le rejet le plus fréquent reste le même, **un texte qui invoque le mot sans mécanisme
+identifiable ni auteur rattachable**, et il se traite de la même façon : `corpus/rejected/` avec
 `rejection_reason: "OUT_OF_SCOPE"`, jamais une mise en attente. Un candidat gris non tranché
 revient toujours par une autre porte.
 
+**Ce répertoire a enfin reçu son premier enregistrement le 28 août 2026**, `reciprocite`, après
+avoir été vide depuis l'origine du dépôt. Le motif n'est pas le vocabulaire métaphorique mais son
+symétrique : un texte de synthèse, qui rapporte l'écart au lieu de l'établir. C'est le cas que le
+périmètre du domaine avait prévu et écarté d'avance, et le rejet applique donc une règle écrite
+avant la lecture.
+
+## Où est passé ce que cette section portait
+
+Le legs de `behavioral-economics`, ses accès vérifiés positifs et négatifs, et ce qu'il reste à en
+tirer ne sont plus ici : ils vivent désormais à leur place.
+
+- **Le périmètre du domaine**, avec son legs détaillé et ses six frontières, est dans
+  `corpus/perimeter.md`, section « Domaine ouvert — `behavioral-economics` ».
+- **La cartographie**, ses cinq candidats vérifiés ouverts, son appui secondaire et ses angles
+  morts, est dans `corpus/map/behavioral-economics.scouting.md`, 627 lignes.
+- **Le compte rendu du lot** est dans `corpus/ETAT.md`, section « Économie comportementale ».
+- **Les reprises courtes** qu'il laisse sont au chantier D ci-dessous, avec celles des autres
+  domaines instruits.
+
 ---
 
+
 # D. Les reprises courtes des domaines instruits
+
+## Cinq reprises laissées par le lot du 28 août, sur `behavioral-economics`
+
+**Ce domaine est le dernier ouvert, et il laisse la reprise la moins chère de tout le dépôt.**
+
+**1. Les deux cartes de Tarde, et il ne manque que de les écrire.** La lecture primaire est faite,
+complète et rendue, **les deux citations relues sur l'image du feuillet** :
+`corpus/evidence/valeur-comme-fait-psychologique/lecture.json` et
+`corpus/evidence/critique-de-l-homo-oeconomicus/lecture.json`. L'exemplaire est
+`psychologiecono03tardgoog` (University of Michigan, collection `americana`,
+`possible-copyright-status: NOT_IN_COPYRIGHT`, aucune restriction de prêt), OCR de 836 659 octets,
+images appelées en `.../page/nN.jpg` **sans suffixe de dérivé**, décalage de folio établi
+`n<N> = page + 13`. Il ne manque que la rédaction des cartes et leur contrôle aveugle : elles n'ont
+pas été écrites faute de temps, pas faute de matière. **C'est la reprise la moins chère du dépôt.**
+
+**2. Une troisième carte de Tarde, repérée et non citable en l'état.** Le tome II porte une théorie
+psychologique des prix, au livre « L'opposition économique » : « le juste prix [...] n'est
+définissable qu'en termes psychologiques », et le prix déterminé « non pas par les quantités
+réelles des marchandises offertes ou demandées, mais par leurs quantités supposées ». **Vue en
+couche OCR seulement, non relue sur image**, et l'OCR du tome II est nettement dégradé. Ce serait
+la plus directement comportementale des trois.
+
+**3. L'effet de dotation, par la voie légitime qui a été trouvée.** Baratgin, J., Godin, P. et
+Jamet, F. (2022), « How the Custom Suppresses the Endowment Effect: Exchange Paradigm in Kanak
+Country », *Frontiers in Psychology* 12:785721, **PDF vérifié `HTTP 200`, 839 103 octets**. Son
+pendant francophone, Jamet, Baratgin et Godin (2017), « Don, droit, coutume, cultures », HAL
+`hal-04108632`, p. 123-152, **PDF servi en `200`, 499 074 octets, corps non lu** faute
+d'extracteur PDF dans l'environnement : c'est une limite d'outillage, pas un défaut d'accès.
+**Réserve à ne pas manquer** : les deux sont du **même collectif d'auteurs**, l'un en anglais
+l'autre en français. Ce n'est pas une double attestation indépendante, et un thème bâti sur eux
+seuls reposerait sur une seule équipe.
+
+**4. La source secondaire, et c'est le premier remède au manque structurel de cinq lots.** Milet,
+Jean (1982), « Gabriel Tarde (1843-1904) : le créateur de la psychologie économique », *Bulletin de
+psychologie* 35(357), p. 907-913, id Persée `bupsy_0007-4403_1982_num_35_357_12030`, page 907 lue
+sur la pièce. **Signal à ne pas escamoter** : c'est une revendication d'antériorité formulée par un
+tardien, dans la revue même où Albou et Reynaud tenaient la discipline. **L'attribution de la
+fondation est disputée dans la lignée elle-même**, et un lecteur doit la traiter comme une
+position, pas comme un fait. Coquille d'OCR à connaître : la signature est rendue « J. MUET ».
+
+**5. Deux pistes repérées et non vérifiées.** Maurice Roche-Agussol, **jalon de la lignée que le
+périmètre ne connaissait pas**, entre Tarde et Reynaud : items `IA41555614_0038` et `jstor-1883573`
+repérés, aucun vérifié. Et Albou, P. (1962), « Initiation à la psychologie économique », *Bulletin
+de psychologie* 16(211), p. 1-81, DOI `10.3406/bupsy.1962.8918`, **notice `200`, 82 pages liées,
+`DC.rights: free`, thèse propre établie sur la pièce** : Albou y prend parti contre Reynaud,
+nommément. C'est la pièce qui documenterait la querelle d'antériorité que le lot a consignée sans
+la trancher.
+
+**Ce qui est vérifié fermé et ne se retente pas.** Kahneman, Knetsch et Thaler 1991 (filtrage
+anti-robot `403` sur `pubs.aeaweb.org`, retenté et confirmé le 28 août) ; Thaler 1980 (revue
+Elsevier, seul miroir une page de cours, motif de droits et non d'accès) ; Katona 1951 (prêt
+numérique contrôlé). **Et la veine `dticarchive` ne porte pas ce domaine** : deux requêtes bien
+formées, 1 345 résultats cumulés, une seule pièce approchante et hors objet. Ne pas y revenir.
 
 ## Quatre reprises laissées par le lot du 26 août, sur `work-psychology`
 

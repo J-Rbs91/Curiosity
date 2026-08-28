@@ -609,6 +609,32 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "conduite-economique",
+    "slug": "conduite-economique",
+    "title": "Conduite et comportement",
+    "authorLabel": "Paul Albou",
+    "hookQuestion": "Enregistrer un comportement suffit-il, si l'on ignore ce qu'il veut dire ?",
+    "shortExplanation": "Albou ne retient que la conduite, comportement significatif, situé et continu, non le fait que le behaviorisme enregistre sans sa signification.",
+    "authors": [],
+    "themes": [
+      "psychologie-economique"
+    ],
+    "themeLabel": "Psychologie économique",
+    "attributionNote": "Article signé du seul Paul Albou. Il donne la distinction pour la sienne et la date : il écrit l'avoir défendue dans des réunions internationales où elle n'a pas toujours été comprise, et rappelle qu'une table ronde de l'Association française de psychologie économique, tenue à Paris le 30 septembre 1980, l'a reprise à son compte.",
+    "quotation": {
+      "text": "[…] nous estimons que la Psychologie économique ne s'intéresse qu'aux « conduites économiques », c'est-à-dire à des comportements significatifs.",
+      "reference": "Paul Albou, « Contribution à une définition de la psychologie économique », Bulletin de psychologie, tome XXXVI, n° 358, 1982, p. 195-205, section B, « Conduite et comportement », p. 201"
+    },
+    "sources": [
+      {
+        "label": "Paul Albou, « Contribution à une définition de la psychologie économique », Bulletin de psychologie, tome XXXVI, n° 358, 1982, p. 195-205.",
+        "kind": "primary",
+        "reference": "p. 201-202 · 10.3406/bupsy.1982.12417",
+        "url": "https://www.persee.fr/doc/bupsy_0007-4403_1982_num_36_358_12417"
+      }
+    ]
+  },
+  {
     "id": "conscience-de-la-situation",
     "slug": "conscience-de-la-situation",
     "title": "Conscience de la situation",
@@ -914,6 +940,32 @@ export const generatedConcepts: Concept[] = [
         "kind": "secondary-academic",
         "reference": "Notice seule, texte non ouvert · 10.1002/bdm.381",
         "url": "https://doi.org/10.1002/bdm.381"
+      }
+    ]
+  },
+  {
+    "id": "definition-de-la-psychologie-economique",
+    "slug": "definition-de-la-psychologie-economique",
+    "title": "Science des conduites économiques",
+    "authorLabel": "Paul Albou",
+    "hookQuestion": "Étudier les conduites économiques : une discipline, ou un point de vue ?",
+    "shortExplanation": "Albou définit la psychologie économique comme l'étude scientifique des conduites économiques : issue de la psychologie sociale, elle ne s'y réduit plus.",
+    "authors": [],
+    "themes": [
+      "psychologie-economique"
+    ],
+    "themeLabel": "Psychologie économique",
+    "attributionNote": "Article signé du seul Paul Albou. Il présente la formule comme sa propre définition et la date lui-même : une première version en 1962, la formule brève arrêtée en 1974 dans le Traité de psychologie appliquée, et cette reprise actualisée de 1982.",
+    "quotation": {
+      "text": "Telle est la définition que nous proposons de la Psychologie économique, science des conduites économiques […]",
+      "reference": "Paul Albou, « Contribution à une définition de la psychologie économique », Bulletin de psychologie, tome XXXVI, n° 358, 1982, p. 195-205, section B, « Pour une définition de la Psychologie économique », p. 199, en tête, avant l'intitulé B"
+    },
+    "sources": [
+      {
+        "label": "Paul Albou, « Contribution à une définition de la psychologie économique », Bulletin de psychologie, tome XXXVI, n° 358, 1982, p. 195-205.",
+        "kind": "primary",
+        "reference": "10.3406/bupsy.1982.12417",
+        "url": "https://www.persee.fr/doc/bupsy_0007-4403_1982_num_36_358_12417"
       }
     ]
   },
@@ -2107,6 +2159,32 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "niveaux-de-rationalite-economique",
+    "slug": "niveaux-de-rationalite-economique",
+    "title": "Niveaux de rationalité économique",
+    "authorLabel": "Pierre-Louis Reynaud",
+    "hookQuestion": "Et si le mécanisme économique variait avec le degré de rationalité des individus ?",
+    "shortExplanation": "Reynaud échelonne la rationalité : de l'acte irrationnel, qui obéit aux lois des réflexes, à l'acte rationnel, les comportements intermédiaires étant les plus fréquents.",
+    "authors": [],
+    "themes": [
+      "psychologie-economique"
+    ],
+    "themeLabel": "Psychologie économique",
+    "attributionNote": "Article signé d'un seul nom, sans coauteur. L'imprimé ne donne que les initiales, « par P.-L. Reynaud », professeur à la faculté de droit et des sciences économiques et politiques de Strasbourg : il s'agit de Pierre-Louis Reynaud, et non du sociologue Jean-Daniel Reynaud.",
+    "quotation": {
+      "text": "[…] les courbes seront des lignes au niveau rationnel, elles seront des bandes, d’autant plus larges que le sujet sera moins rationnel […]",
+      "reference": "Pierre-Louis Reynaud, « Nature et contenu de la psychologie économique », Bulletin de psychologie, vol. 15, n° 207, 1962, p. 865-872, section III B, « La théorie en psychologie économique », p. 870"
+    },
+    "sources": [
+      {
+        "label": "Pierre-Louis Reynaud, « Nature et contenu de la psychologie économique », Bulletin de psychologie, vol. 15, n° 207, 1962, p. 865-872.",
+        "kind": "primary",
+        "reference": "10.3406/bupsy.1962.8719",
+        "url": "https://www.persee.fr/doc/bupsy_0007-4403_1962_num_15_207_8719"
+      }
+    ]
+  },
+  {
     "id": "nombres-et-emotions",
     "slug": "nombres-et-emotions",
     "title": "Nombres et émotions",
@@ -3037,6 +3115,32 @@ export const generatedConcepts: Concept[] = [
         "kind": "primary",
         "reference": "10.3406/bupsy.1980.11728",
         "url": "https://www.persee.fr/doc/bupsy_0007-4403_1980_num_33_344_11728"
+      }
+    ]
+  },
+  {
+    "id": "seuils-de-rupture-et-d-ajustement",
+    "slug": "seuils-de-rupture-et-d-ajustement",
+    "title": "Seuils de rupture et d'ajustement",
+    "authorLabel": "Pierre-Louis Reynaud",
+    "hookQuestion": "À certains points critiques, pourquoi la panique plutôt que l'adaptation ?",
+    "shortExplanation": "Reynaud constate en économie des points critiques : au seuil de rupture la conduite bascule dans la panique des crises, au seuil d'ajustement elle s'adapte sans panique.",
+    "authors": [],
+    "themes": [
+      "psychologie-economique"
+    ],
+    "themeLabel": "Psychologie économique",
+    "attributionNote": "Article signé d'un seul nom, sans coauteur. L'imprimé ne donne que les initiales, « par P.-L. Reynaud », professeur à la faculté de droit et des sciences économiques et politiques de Strasbourg : il s'agit de Pierre-Louis Reynaud, et non du sociologue Jean-Daniel Reynaud.",
+    "quotation": {
+      "text": "[…] ce sont les seuils de rupture, tantôt de simples adaptations sans panique, ce sont les seuils d’ajustement constatés au début des récessions.",
+      "reference": "Pierre-Louis Reynaud, « Nature et contenu de la psychologie économique », Bulletin de psychologie, vol. 15, n° 207, 1962, p. 865-872, section III B, « La théorie en psychologie économique », p. 870"
+    },
+    "sources": [
+      {
+        "label": "Pierre-Louis Reynaud, « Nature et contenu de la psychologie économique », Bulletin de psychologie, vol. 15, n° 207, 1962, p. 865-872.",
+        "kind": "primary",
+        "reference": "p. 870 · 10.3406/bupsy.1962.8719",
+        "url": "https://www.persee.fr/doc/bupsy_0007-4403_1962_num_15_207_8719"
       }
     ]
   },

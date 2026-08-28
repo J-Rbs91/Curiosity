@@ -5,6 +5,212 @@ coup d'œil ce que la précédente a fait, sur quelle branche elle l'a laissé, 
 reprendre. **Les scripts priment sur ce fichier** : il dit ce qui a été tenté et pourquoi, ils
 disent ce qui est.
 
+## Passage 06/15 — 2026-08-28
+
+- branche      : `claude/zen-johnson-r5n04e` (imposée par la session, pas `main`). **Le travail du passage 05 est fusionné dans `main`** (PR [#81](https://github.com/J-Rbs91/Curiosity/pull/81), commit de merge `996f8b5`), et cette branche partait de `main` à jour, au commit `996f8b5` : rien n'a été refait. Pull request [#82](https://github.com/J-Rbs91/Curiosity/pull/82) vers `main`, **ouverte et non fusionnée à la clôture**. Tant qu'elle n'est pas fusionnée, **la nuit suivante reprend depuis cette branche**, et non depuis `main`, sinon elle refera ce qui est déjà fait.
+- phase        : 1 (ouverture de domaine) — `behavioral-economics`, **onzième et dernier domaine sur onze**. Ouverture dans l'ordre complet et en une seule nuit : périmètre, cartographie, cartes, puis thème. **Après ce passage, aucun domaine déclaré n'est fermé à l'instruction, et la phase 1 n'a plus d'objet.**
+- validées     : 4 — `definition-de-la-psychologie-economique`, `conduite-economique` (Albou 1982), `niveaux-de-rationalite-economique`, `seuils-de-rupture-et-d-ajustement` (Pierre-Louis Reynaud 1962). **Les 4 avec citation, toutes relues sur l'image de la page, et les 4 en `PASS` au premier tour sur les quatre questions**, par quatre contrôleurs distincts.
+- en review    : 0
+- rejetées     : 1 — `reciprocite` (Bonein 2008), `OUT_OF_SCOPE`. **C'est le premier enregistrement de rejet du dépôt** : `corpus/rejected/` était vide depuis l'origine.
+- approfondies : 0 (une nuit d'ouverture n'en écrit pas ; la file passe de 30 à 34)
+- contrôles    : validate 0 erreur (104 enregistrements, 100 validés, 80 avertissements) · build à jour, `git diff --exit-code src/content/generated/` **propre** · test 480/0 · lint 0 · audit : `Économie comportementale` passe de « corpus en cours de constitution » à **1 thème / 4 validés / 0 en cours**
+- commit       : `3733f1f` pour la projection ; la nuit a été commitée par étapes, quinze fois, chaque maillon poussé dès qu'il tenait debout.
+- bloqué par   : **la lenteur des agents, et c'est le fait dominant de cette nuit.** Sept agents sur huit ont dû être relancés par un « écris maintenant » avant de rendre quoi que ce soit, contre deux au passage 04. Aucun n'a échoué, tous ont rendu, mais la surveillance a coûté plus que l'instruction. Trois manques subsistent, déclarés : **aucune source secondaire n'a été ouverte sur les quatre cartes**, faiblesse structurelle pour le cinquième lot consécutif, **mais une secondaire ouverte est désormais identifiée et vérifiée** (Milet 1982) ; **les deux cartes de Tarde n'ont pas été écrites**, sa lecture ayant rendu trop tard ; et le serveur MCP `documentary` n'était toujours pas exposé.
+- la nuit suivante prend : **phase 2, les approfondissements.** La condition A est désormais fausse, aucun domaine n'étant vide, et `corpus:deepen` liste **34 cartes sans approfondissement** en fin de sortie : c'est la file, et elle fait foi. Aucune ouverture, aucune nouvelle carte. Par lots de 8 agents `corpus-deepener` au plus, deux lots au maximum.
+
+### Ce que cette nuit a établi, en une phrase
+
+Le onzième et dernier domaine du corpus est ouvert et instruit en une seule nuit, il rend quatre
+cartes qui passent toutes le contrôle aveugle du premier coup, et le corpus n'a plus aucun
+domaine vide pour la première fois depuis sa création.
+
+### Ce que la fin de la phase 1 change au dépôt, et il faut le savoir avant de reprendre
+
+**La catégorie « angle mort vers un domaine fermé » n'a plus de destinataire.** Elle a doté cinq
+domaines de leur stock d'entrée, et elle disparaît avec ce passage : un candidat mal placé part
+désormais chez un voisin ouvert, ou ne s'instruit pas. Le périmètre le dit en toutes lettres dans
+sa section d'en-tête, qui passe de « Dix domaines ouverts sur onze » à « Onze domaines ouverts sur
+onze ».
+
+**Ce domaine a été le plus mal servi du corpus, et le legs payé au passage 05 l'a sauvé.** Trois
+passages avaient écrit n'avoir rien cherché pour lui, ou n'avoir rien vérifié. Les quatre pièces
+Persée que le passage 05 lui a léguées étaient « à un appel de la vérification » : cet appel a été
+fait avant d'écrire le périmètre, les quatre ont répondu, et **trois des quatre cartes de la nuit
+en viennent**. Une dette payée une nuit a rendu la nuit suivante.
+
+### Le fait de méthode de la nuit : trois corrections sur Persée, à porter telles quelles
+
+Ce dépôt lit Persée depuis quatre passages et croyait sa route établie. Trois constats la
+corrigent, tous payés cette nuit :
+
+1. **Le motif de l'URL de page n'est pas toujours `_T1_`.** Il vaut `_T1_` sur certains fascicules
+   et **`_F_`** sur d'autres : la page 907 de Milet 1982 rend `404` en `_T1_` et `200` en `_F_`.
+   **Il se lit sur la notice de l'article**, `https://www.persee.fr/doc/<id_article>`, qui publie
+   une URL par page. Il ne se présume pas.
+2. **`curl` est réinitialisé par Persée sur le chemin `/doc/page/`** dans cet environnement,
+   `Connection reset by peer`, code 000, y compris en `--http1.1`, proxy sortant sain. **Ce n'est
+   ni un 404 ni un vide**, et un agent qui conclurait à l'absence de texte se tromperait.
+   **`WebFetch` passe sur la même URL.** Le dérivé d'image `renderPage`, lui, passe en `curl`.
+3. **Le PDF complet `docAsPDF` répond `403` sur les trois articles ouverts cette nuit.** Le
+   recoupement de l'OCR se fait donc sur l'image, pas sur le PDF. Aucun de ces refus n'a été
+   contourné.
+
+### Ce que la relecture sur l'image a rattrapé, et une fois de plus elle a payé
+
+Cinq écarts, sur trois exemplaires, dont deux auraient produit un faux :
+
+1. **Une notice d'Internet Archive ment sur la tomaison.** L'item `psychologieecono0001gabr` est
+   annoncé « volume 1 » et **sa page de titre porte TOME SECOND**. Les sept tomaisons de Tarde ont
+   été établies sur la page de titre imprimée, et confirmées par la signature de volume au pied de
+   la page 65, « TARDE. Psych. écon. I. 5 ».
+2. **Une ligature, et deux couches OCR qui se contredisent.** L'imprimé de 1902 porte `homo
+   æconomicus` ; l'OCR de `03tardgoog` l'aplatit en « œconomicus », celui de `02tardgoog` la rend
+   correctement. **C'est l'image qui tranche**, et la citation suit l'imprimé.
+3. **L'OCR de Persée corrompt un nom propre et un millésime** dans l'article d'Albou : « Pierre-Louis
+   **Renaud** » pour Reynaud, et « septembre-octobre **1981** » là où le contexte impose 1881. Il
+   double aussi des mots, « elle saisit ces saisit ces conduites ».
+4. **L'OCR corrige silencieusement une coquille de l'imprimé**, ce qui est le piège inverse et
+   moins connu : l'intertitre est composé « B. **Puor** une définition » sur la pièce.
+5. **L'OCR de Reynaud est fautif au point de rendre tout verbatim faux** : « un terrain privilégié
+   recherche esse » facilement accessible ars sondages » pour « un terrain privilégié de recherche
+   assez facilement accessible aux sondages ».
+
+### Ce que le contrôle aveugle a réellement attrapé
+
+| question | résultat sur quatre fiches |
+|---|---|
+| citation verbatim, à l'endroit annoncé | 4/4 dès le premier passage |
+| attribution | 4/4 dès le premier passage |
+| prose fidèle aux sources | 4/4 dès le premier passage |
+| sources qui résolvent | 4/4 dès le premier passage |
+
+**Aucun renvoi, pour la deuxième fois seulement dans ce corpus**, après le lot d'operations
+management. Ce n'est pas de l'indulgence : les quatre contrôleurs ont rendu des remarques hors
+mandat, et **deux d'entre elles ont changé quelque chose**.
+
+- **La correction appliquée porte sur `conduite-economique`, et elle est du genre exact que ce
+  corpus surveille.** Le résumé écartait une position sans dire à qui elle appartient. Or Albou
+  l'impute nommément, page 201 : « Alors que les behavioristes [...] ont, **notamment avec
+  Watson**, proposé d'enregistrer les "faits" sans se préoccuper de leur signification », et sa
+  note 13 vise un contemporain, Katona, « qui m'a dit, en 1966, se vouloir exclusivement *fact
+  finding* ». Le résumé nomme désormais le behaviorisme, à longueur constante.
+- **Le contrôle des seuils est allé chercher l'antériorité et l'a trouvée.** La notice d'autorité
+  Persée signalait un article antérieur du même auteur ; le contrôleur l'a ouvert et a établi que
+  **Pierre-Louis Reynaud, « Récessions et seuils économiques », *Revue économique* 8-6, 1957,
+  p. 1032-1052, porte déjà « il existe en économie des points critiques »**. L'article de 1962
+  n'est donc pas la première formulation. La carte n'en souffre pas, parce qu'elle ne revendiquait
+  rien : le résumé écrit « Reynaud constate ». **C'est la prudence de rédaction qui a sauvé la
+  carte, pas la chance.**
+- **Le piège d'homonymie a été tranché deux fois, séparément.** Le corpus porte déjà une carte de
+  Jean-Daniel Reynaud, le sociologue de la régulation conjointe. Les deux contrôleurs ont établi
+  sur la signature imprimée de la page 865, et non sur une notice, qu'il s'agit de **Pierre-Louis**
+  Reynaud, économiste à Strasbourg, l'un par son affiliation, l'autre par le renvoi que l'auteur
+  fait à son propre ouvrage de 1946.
+
+### Le rejet, et pourquoi il compte plus que son volume
+
+**`corpus/rejected/` était vide depuis l'origine du dépôt.** Il reçoit son premier enregistrement,
+et le motif est écrit pour que personne n'ait à rouvrir l'article.
+
+Bonein 2008 satisfait la première condition du test d'entrée, son objet étant bien un comportement
+économique observé, et la troisième, sa source étant ouverte et lue en texte intégral sur trente
+pages. **Elle échoue à la deuxième, sur ses propres mots relus sur l'image** : page 207, « il
+semble pertinent de fournir une synthèse relative à la réciprocité [...] en vue d'initier
+l'économiste à cette notion » ; page 226, « au regard de la synthèse effectuée ici ». Entre les
+deux, aucune expérience conduite, aucun modèle construit, chaque résultat rapporté d'autrui.
+
+**C'est le cas que le périmètre avait prévu et écarté d'avance**, à son troisième constat d'accès :
+les textes francophones ouverts de ce champ définissent souvent la discipline plutôt qu'ils
+n'établissent un écart. Le rejet applique donc une règle écrite **avant** la lecture, et non un
+arbitrage rendu par ce que le lot contenait. C'était l'objet même de la règle.
+
+### Ce qu'il faut savoir avant de reprendre ce domaine
+
+- **Les deux cartes de Tarde sont la reprise la moins chère du dépôt, et de loin.** La lecture est
+  faite, complète, et rendue : `corpus/evidence/valeur-comme-fait-psychologique/lecture.json` et
+  `corpus/evidence/critique-de-l-homo-oeconomicus/lecture.json`, **les deux citations relues sur
+  l'image du feuillet**, sur l'exemplaire `psychologiecono03tardgoog` (University of Michigan,
+  collection `americana`, `possible-copyright-status: NOT_IN_COPYRIGHT`). Il ne manque que la
+  rédaction des cartes et leur contrôle. Elles n'ont pas été écrites faute de temps, pas faute de
+  matière.
+- **Une troisième carte de Tarde est repérée et non citable en l'état** : le tome II porte une
+  théorie psychologique des prix, « le juste prix [...] n'est définissable qu'en termes
+  psychologiques », et le prix déterminé « non pas par les quantités réelles des marchandises
+  offertes ou demandées, mais par leurs quantités supposées ». **Vue en couche OCR seulement, non
+  relue sur image.** Ce serait la plus directement comportementale des trois.
+- **L'effet de dotation a une voie légitime, et il faut la prendre.** Kahneman, Knetsch et Thaler
+  1991 est vérifié fermé, deux fois plutôt qu'une : le *Journal of Economic Perspectives* est
+  éditorialement en accès libre, mais le lien de téléchargement publié par l'éditeur redirige vers
+  `pubs.aeaweb.org`, qui rend **403**. C'est un filtrage anti-robot, pas un paywall, et il ne se
+  contourne pas. **La voie de rechange est vérifiée ouverte** : Baratgin, Godin et Jamet (2022),
+  « How the Custom Suppresses the Endowment Effect: Exchange Paradigm in Kanak Country »,
+  *Frontiers in Psychology* 12:785721, PDF `200`, 839 103 octets.
+- **Une source secondaire ouverte existe enfin, et c'est le premier remède au manque structurel de
+  cinq lots.** Milet, Jean (1982), « Gabriel Tarde (1843-1904) : le créateur de la psychologie
+  économique », *Bulletin de psychologie* 35(357), p. 907-913, id Persée
+  `bupsy_0007-4403_1982_num_35_357_12030`, page 907 lue. **Signal à ne pas escamoter** : c'est une
+  revendication d'antériorité formulée par un tardien, dans la revue même où Albou et Reynaud
+  tenaient la discipline. **L'attribution de la fondation est disputée dans la lignée elle-même**,
+  et un lecteur doit la traiter comme une position, pas comme un fait. Coquille à connaître : l'OCR
+  signe « J. MUET » pour Jean Milet.
+- **Une querelle d'antériorité traverse le lot et n'est pas tranchée.** Albou revendique page 199
+  d'avoir posé sa définition « comme Reynaud, et avant même qu'il ne se préoccupe de ce problème »,
+  et page 204 que Reynaud a repris ses éléments en 1974 « parfois sans mention d'origine ». Le
+  corpus la consigne et ne la tranche pas.
+- **La veine `dticarchive` ne porte pas ce domaine, et c'est un résultat, pas un manque.** Deux
+  requêtes bien formées, 1 345 résultats cumulés, une seule pièce approchante et hors objet. La
+  voie qui a rendu quatre lots précédents est close ici, pour un motif structurel : le bruit
+  lexical de « utility » au sens de véhicule ou de réseau électrique militaire. **Ne pas y
+  revenir.**
+- **Un jalon de la lignée que le périmètre ne connaissait pas** : Maurice Roche-Agussol, entre
+  Tarde et Reynaud, items `IA41555614_0038` et `jstor-1883573` repérés, **non vérifiés**.
+- **Deux thèmes possibles ne porteraient qu'un candidat** et ne se déclarent pas en l'état :
+  réciprocité et économie expérimentale (Bonein seul, et rejeté), marché du travail (Brunet et
+  Havet seul, hérité et non lu).
+
+### La lenteur des agents est devenue le coût dominant, et la contre-mesure ne suffit plus
+
+C'est la leçon opératoire de cette nuit, et elle aggrave celle du passage 04. **Sept agents sur
+huit ont écrit leur squelette dans les deux premières minutes, puis se sont tus pendant vingt à
+quarante minutes**, et il a fallu leur envoyer un « écris maintenant » à chacun. Tous ont rendu
+ensuite, aucun n'a été perdu, et plusieurs ont répondu qu'ils avaient déjà écrit leur fichier
+complet au moment où le rappel arrivait.
+
+**C'est le point à retenir, et il nuance la contre-mesure** : la surveillance de la taille du
+fichier de sortie donne une image en retard sur l'état réel de l'agent, et un rappel envoyé sur
+cette foi coûte à l'agent un tour de plus. La contre-mesure reste bonne, elle a rendu quatre
+agents cette nuit ; **mais elle se paie, et il faut attendre plus longtemps avant de la
+déclencher** que ce que les passages précédents laissaient croire.
+
+### Un piège de séquencement à ne pas repayer, et il a failli coûter le contrôle
+
+**Un dossier aveugle produit par `npm run corpus:brief` est un instantané, et il périme.** Le
+rédacteur a modifié le résumé de `niveaux-de-rationalite-economique` **après** que son dossier eut
+été produit, et le contrôleur travaillait donc sur une version antérieure du champ que sa quatrième
+question contrôle précisément. Le dossier a été régénéré et le contrôleur averti.
+
+**La régénération a été décisive** : le nouveau résumé portait une affirmation de fréquence que
+l'ancien n'avait pas, et le contrôleur est allé chercher, puis a trouvé, la phrase qui l'autorise,
+page 870, « qui sont celles qui se rencontrent le plus fréquemment dans la pratique ». Sans la
+régénération, cette affirmation ne serait passée sous aucun contrôle. **Règle qui en sort : ne
+produire le dossier aveugle qu'une fois le rédacteur clos, et le régénérer si la fiche bouge.**
+
+### Le serveur MCP `documentary`, troisième nuit consécutive sans lui
+
+Le diagnostic du passage 05 se confirme et rien n'a changé : le client MCP se connecte au démarrage
+de la session, **avant** que le `npm ci` de l'étape 0 n'ait installé `node_modules`, et le serveur,
+qui dépend d'une devDependency, échoue donc toujours en `CONNECTION_CLOSED` sans se reconnecter.
+Crossref, OpenAlex, Semantic Scholar et Zotero n'ont été interrogés par aucune API cette nuit, sauf
+OpenAlex par `curl` direct, **qui a lui-même épuisé son quota journalier en cours de passage**
+(HTTP 429, remise à zéro à minuit UTC). Gallica a rendu `403` sur son endpoint SRU.
+
+**La correction n'a de nouveau pas été faite, et le motif est le même** : elle sort du périmètre
+documentaire que la §2 de la routine assigne à la nuit, laquelle prescrit que la première condition
+vraie décide et décide seule. Elle reste la reprise à plus fort rendement du dépôt, elle ne coûte
+pas une nuit d'instruction, et il faudrait que `node_modules` existe **avant** le démarrage de la
+session, par un hook `SessionStart` ou par l'image de l'environnement. **C'est la troisième nuit
+qu'elle est écrite ici sans être faite** : elle demande une décision hors routine.
+
 ## Passage 05/15 — 2026-08-27
 
 - branche      : `claude/zen-johnson-hjfz2m` (imposée par la session, pas `main`). **Le travail du passage 04 est fusionné dans `main`** (PR [#79](https://github.com/J-Rbs91/Curiosity/pull/79), commit de merge `ff3a443`), et cette branche partait de `main` à jour : rien n'a été refait. Pull request [#81](https://github.com/J-Rbs91/Curiosity/pull/81) vers `main`, **ouverte et non fusionnée à la clôture**. Tant qu'elle n'est pas fusionnée, **la nuit suivante reprend depuis cette branche**, et non depuis `main`, sinon elle refera ce qui est déjà fait.

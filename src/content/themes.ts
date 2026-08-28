@@ -79,6 +79,16 @@ import type { Theme } from "@/types";
  *
  * Aucun des deux thèmes déclarés ne repose sur une carte unique.
  *
+ * L'unique thème de `behavioral-economics` est écrit le 28 août 2026, à l'ouverture du
+ * onzième et dernier domaine, après le contrôle aveugle des quatre cartes du lot
+ * d'ouverture. Il se déclare parce qu'il satisfait le critère appliqué depuis le lot de
+ * cybernétique, et que le lot de sociologie du travail a rappelé en refusant un thème dont
+ * les deux cartes venaient du même auteur et du même livre : ses quatre cartes validées
+ * viennent de deux auteurs distincts et de deux articles distincts, Paul Albou en 1982 et
+ * Pierre-Louis Reynaud en 1962, chacun fournissant deux concepts qui ont leur intertitre et
+ * leur citation propres. C'est plus que le critère n'exige. Aucun autre thème n'est déclaré
+ * pour ce domaine : un thème sans carte validée afficherait une page vide.
+ *
  * Conséquence directe, visible ci-dessous : aucun thème n'est déclaré ici pour la santé
  * publique ni pour la mesure du bien-être, alors que le périmètre de `measurement-theory`
  * demandait de les balayer ; ni, en ergonomie de l'activité, pour la charge de travail comme
@@ -509,5 +519,17 @@ export const themes: Theme[] = [
     description:
       "Une même conduite, changer d'emploi, se lit de deux façons : comme un trait de la personne, ou comme la marque de la place qu'elle occupe sur un marché du travail qui n'est pas homogène. Ce thème porte sur ce que la position déplace dans l'explication, et sur le déplacement du regard qui a suivi, du statut tenu à un instant vers le parcours entier.",
     domain: "sociology-of-work",
+  },
+  // --- Économie comportementale ---------------------------------------------
+  {
+    id: "psychologie-economique",
+    slug: "psychologie-economique",
+    title: "Étudier les conduites économiques",
+    tagline:
+      "La conduite économique s'observe, elle ne se déduit pas d'un calcul.",
+    keywords: ["Conduite économique", "Rationalité", "Discipline"],
+    description:
+      "Une psychologie qui prend pour objet les conduites économiques s'est constituée en France autour d'une question de définition : de quoi traite-t-elle au juste, et à quoi refuse-t-elle de se réduire. Ce thème porte sur ce que ses auteurs ont entendu par conduite économique, et sur ce qu'ils mettent à la place de l'agent supposé rationnel : des degrés de rationalité, dont le mécanisme économique lui-même dépend.",
+    domain: "behavioral-economics",
   },
 ];
