@@ -80,13 +80,14 @@ import type { Theme } from "@/types";
  * Aucun des deux thèmes déclarés ne repose sur une carte unique.
  *
  * L'unique thème de `behavioral-economics` est écrit le 28 août 2026, à l'ouverture du
- * onzième et dernier domaine, après le contrôle aveugle des deux premières cartes du lot.
- * Il se déclare parce qu'il satisfait le critère appliqué depuis le lot de cybernétique, et
- * que le lot de sociologie du travail a rappelé en refusant un thème dont les deux cartes
- * venaient du même auteur et du même livre : ses deux cartes validées viennent de deux
- * auteurs distincts et de deux articles distincts, Paul Albou en 1982 et Pierre-Louis
- * Reynaud en 1962. Aucun autre thème n'est déclaré pour ce domaine, deux fiches étant
- * encore en contrôle : un thème sans carte validée afficherait une page vide.
+ * onzième et dernier domaine, après le contrôle aveugle des quatre cartes du lot
+ * d'ouverture. Il se déclare parce qu'il satisfait le critère appliqué depuis le lot de
+ * cybernétique, et que le lot de sociologie du travail a rappelé en refusant un thème dont
+ * les deux cartes venaient du même auteur et du même livre : ses quatre cartes validées
+ * viennent de deux auteurs distincts et de deux articles distincts, Paul Albou en 1982 et
+ * Pierre-Louis Reynaud en 1962, chacun fournissant deux concepts qui ont leur intertitre et
+ * leur citation propres. C'est plus que le critère n'exige. Aucun autre thème n'est déclaré
+ * pour ce domaine : un thème sans carte validée afficherait une page vide.
  *
  * Conséquence directe, visible ci-dessous : aucun thème n'est déclaré ici pour la santé
  * publique ni pour la mesure du bien-être, alors que le périmètre de `measurement-theory`
