@@ -1,19 +1,22 @@
 # Périmètre du corpus
 
-## Dix domaines ouverts sur onze
+## Onze domaines ouverts sur onze
 
 L'application couvre **quatre familles et onze domaines**, déclarés dans
 [`src/content/taxonomy.ts`](../src/content/taxonomy.ts). Déclarer un domaine et l'instruire
 sont deux décisions distinctes, et elles ne se prennent pas ensemble : une fiche n'est pas
 admise parce qu'un domaine existe dans la taxonomie.
 
-> **Les périmètres d'instruction ouverts sont `organizational-sociology`,
+> **Les onze périmètres d'instruction sont ouverts** : `organizational-sociology`,
 > `measurement-theory`, `activity-ergonomics`, `human-factors`, `cybernetics`,
-> `systems-thinking`, `decision-science`, `operations-management`, `work-psychology` et
-> `sociology-of-work`.** Le dernier domaine — `behavioral-economics` — est déclaré
-> dans la taxonomie et reste fermé à l'instruction tant
-> qu'une décision explicite ne l'ouvre pas — décision qui s'inscrit dans ce fichier, sous la forme d'une
-> section de périmètre comme celles qui suivent.
+> `systems-thinking`, `decision-science`, `operations-management`, `work-psychology`,
+> `sociology-of-work` et, depuis le 28 août 2026, `behavioral-economics`. **Aucun domaine
+> déclaré n'est plus fermé à l'instruction.** Une conséquence en découle pour tout le corpus :
+> un candidat mal placé part désormais chez un voisin ouvert ou ne s'instruit pas, et la
+> catégorie « angle mort vers un domaine fermé », qui a doté cinq domaines de leur stock
+> d'entrée, n'a plus d'objet. Ouvrir un douzième domaine resterait une décision explicite, qui
+> s'inscrirait dans ce fichier sous la forme d'une section de périmètre comme celles qui
+> suivent.
 
 Un domaine s'ouvre à l'instruction dans cet ordre, et pas dans un autre :
 
@@ -2051,6 +2054,260 @@ s'y présentera aussi souvent que dans le précédent :
 Une autorisation d'ayant droit **se constate** : elle ne se déduit ni de l'âge du texte, ni de
 l'absence de restriction d'emprunt affichée. Le cas de Taylor est réglé parce que les métadonnées
 de l'item ont été lues, pas parce que le livre a cent quinze ans.
+
+## Thèmes
+
+**Aucun thème déclaré à l'ouverture.** Ils se déclarent après le contrôle aveugle des cartes du
+premier lot, et non après leur rédaction ni d'après la proposition de la cartographie. Un thème
+sans carte validée ne se déclare pas : le dépôt en porte déjà deux qui affichent une page vide,
+et c'est deux de trop.
+
+---
+
+# Domaine ouvert — `behavioral-economics`
+
+Ouvert le 28 août 2026, **onzième et dernier domaine sur onze**, dernier de la famille
+« Comprendre les humains et les organisations ». Après lui, plus aucun domaine n'est fermé, et
+ce fait change une règle du dépôt : **ce périmètre est le premier qui ne doive de dette à
+personne.** Les dix sections qui précèdent ont toutes eu un successeur fermé à qui consigner un
+candidat mal placé ; celle-ci n'en a pas. Un candidat qui n'est pas d'ici part désormais chez un
+voisin ouvert, ou ne s'instruit pas. **La catégorie « angle mort vers un domaine fermé »
+disparaît du corpus avec cette section.**
+
+## Ce dont ce domaine hérite, avant toute recherche
+
+Ce domaine a été le plus mal servi du corpus, et le dire est utile : **trois passages successifs
+ont écrit n'avoir rien cherché pour lui, ou n'avoir rien vérifié.** La dette n'a été payée qu'au
+quatrième, le 27 août 2026, par un balayage distinct doté de son propre budget précisément pour
+qu'elle ne meure pas une cinquième fois du plafond d'un autre. **Rien de ce qui suit ne se
+recherche à nouveau** : le legs se lit avant le balayage, il ne se redécouvre pas.
+
+- **Quatre candidats francophones sur Persée, repérés le 27 août et vérifiés le 28.** Ils
+  étaient à un seul appel de la vérification, et cet appel a été fait avant d'ouvrir ce
+  périmètre : les quatre répondent `HTTP 200`, portent un DOI Persée propre et une pagination
+  déclarée. Ce sont eux qui font que ce domaine n'ouvre pas sur une page blanche.
+- **Un texte propre sur le fond dont la route légitime restait à trouver**, et elle ne s'est pas
+  trouvée. Kahneman, Knetsch et Thaler (1991), « Anomalies: The Endowment Effect, Loss Aversion,
+  and Status Quo Bias », *Journal of Economic Perspectives* 5(1), 193-206, DOI
+  `10.1257/jep.5.1.193`. Le *JEP* est éditorialement en accès libre chez l'American Economic
+  Association : le fond est propre, et c'est ce qui rendait la piste sérieuse. **La route de
+  l'éditeur a été retentée le 28 août et elle est fermée par un filtrage anti-robot**, non par un
+  paywall : la page d'article `www.aeaweb.org/articles?id=10.1257/jep.5.1.193` répond 200 et
+  publie un lien de téléchargement, mais ce lien redirige vers `pubs.aeaweb.org`, qui rend
+  **403**. Le filtre n'a pas été contourné et il ne doit pas l'être. **Ce texte est donc à
+  traiter comme non ouvert**, jusqu'à ce qu'une autre voie légitime soit constatée.
+- **Un texte à traiter comme fermé, et le motif est un motif de droits, pas d'accès.** Thaler
+  (1980), « Toward a Positive Theory of Consumer Choice », *Journal of Economic Behavior &
+  Organization* 1(1), 39-60, DOI `10.1016/0167-2681(80)90051-7`. Le PDF a été atteint en
+  `HTTP 200`, mais sur le **miroir d'une page de cours universitaire**, qui n'est ni le site de
+  l'éditeur, ni un dépôt institutionnel, ni le site de l'auteur ; la revue est une revue Elsevier
+  sous abonnement dont l'édition officielle est derrière un paywall non ambigu. **Un code 200
+  constate qu'un fichier est atteignable, pas qu'un ayant droit l'autorise.** Ne pas citer depuis
+  ce miroir.
+- **Un fondateur vérifié fermé.** Katona, G. (1951), *Psychological Analysis of Economic
+  Behavior*, item Internet Archive `psychologicalana0000geor_l5v4`, `access-restricted-item:
+  true`, dérivés en `LCP Encrypted PDF` marqués `private`. Prêt numérique contrôlé, non
+  emprunté. Son *Psychological Economics* (1975), item `psychologicaleco00kato`, porte la même
+  signature technique mais son champ d'accès n'a pas été extrait : **probablement fermé, sur
+  indice et non sur constat.**
+- **Un candidat de frontière vérifié ouvert**, venu d'un autre balayage. Brunet, C. et Havet, N.,
+  « Propriété immobilière et déqualification dans l'emploi », dépôts HAL `halshs-00267041` (2008)
+  et `halshs-00406500` (2009), PDF vérifié `HTTP 200`, `application/pdf`, 342 870 octets à
+  `https://shs.hal.science/halshs-00267041/document`. Il traite l'effet de la propriété
+  immobilière sur l'appariement emploi-qualification par une analyse économétrique du marché du
+  travail : `sociology-of-work` l'a écarté **pour qu'il revienne ici**, en application d'une
+  frontière écrite d'avance.
+- **Des noms qui ne sont pas des candidats.** Vernon Smith, Selten, Camerer et Loewenstein,
+  Thaler et Benartzi, Loewenstein et Prelec, l'*Econometrica* ancien, le fonds `dticarchive`, et
+  Schweitzer et Cachon 2000 sur le newsvendor : **cités de mémoire, aucun recherché, aucun
+  vérifié.** Le passage qui ouvre ce domaine ne doit pas les lire autrement. Un nom n'est pas un
+  candidat tant qu'un accès n'a pas été constaté sur la pièce.
+
+**Le legs est donc quatre pièces francophones vérifiées ouvertes, un candidat de frontière
+vérifié ouvert, deux textes anglophones fondateurs vérifiés inaccessibles, et une liste de noms
+qui ne vaut rien.** C'est peu, et c'est plus que ce que ce domaine a eu pendant quatre passages.
+
+## Le périmètre est la discipline
+
+> **Économie comportementale** — l'étude du **comportement économique réel** et des écarts
+> **systématiques**, non aléatoires, entre ce comportement et le modèle de l'agent parfaitement
+> rationnel : ce qu'un agent préfère, ce à quoi il réagit, ce qu'il échange, et les
+> conséquences que ces écarts ont **au-delà de lui**, sur un prix, un marché, un contrat ou une
+> politique.
+
+Le domaine ne porte pas sur le raisonnement pris pour lui-même, qui est en science de la
+décision ; ni sur ce que le travail fait éprouver, qui est en psychologie du travail ; ni sur le
+travail comme rapport social, qui est en sociologie du travail. Il porte sur **le comportement
+en tant qu'il est économique** : il engage une ressource, il rencontre un prix ou une
+contrepartie, et il se répercute sur autre chose que celui qui l'a eu.
+
+Deux mots de cette phrase font tout le travail, et il faut les tenir séparément.
+
+**« Systématique »** exclut l'erreur. Un agent qui se trompe au hasard ne fonde rien : le champ
+s'est constitué sur des écarts qui se reproduisent, dans le même sens, chez des sujets
+différents. Un texte qui rapporte une variabilité sans en établir la direction n'est pas de ce
+champ.
+
+**« Économique »** exclut le mental pris pour lui-même. Le champ n'étudie pas une préférence
+parce qu'elle est intéressante, mais parce qu'elle décide d'un échange. Un texte qui décrit un
+état psychique sans qu'aucune ressource ne change de main est en psychologie, pas ici.
+
+## Le test d'entrée, en trois conditions
+
+Les trois se vérifient **sur le texte**, jamais sur la revue qui le publie, ni sur la discipline
+d'origine de son auteur. La revue est un mauvais juge dans ce domaine plus qu'ailleurs : le
+*Bulletin de psychologie* a publié la psychologie économique francophone dans les mêmes numéros
+que la psychologie du travail, et la *Revue française d'économie* publie de l'économie standard à
+côté de l'économie expérimentale.
+
+1. **L'objet est un comportement économique**, pris comme fait observé : un choix qui engage une
+   ressource, un échange, une offre, une demande, une réaction à un prix, à une incitation ou à
+   une règle. Un raisonnement qui ne débouche sur aucun engagement de ressource ne suffit pas.
+2. **L'écart au modèle de l'agent rationnel est établi et orienté**, ou bien le texte fonde la
+   discipline qui l'établit. Cette seconde branche est nécessaire et elle est étroite : elle
+   admet les textes qui définissent le champ, son objet et sa méthode, **à condition qu'ils
+   portent une thèse propre** sur ce que l'économie doit à la psychologie. Un texte d'orientation
+   qui récapitule l'état d'un domaine sans thèse n'entre pas, et c'est le rejet déjà appliqué
+   deux fois en psychologie du travail.
+3. **Le texte est une source primaire réellement ouverte**, lue en texte intégral, dont la
+   citation se relit sur l'image de la page. Cette condition n'est pas propre au domaine ; elle
+   est rappelée ici parce que ce domaine a déjà quatre textes fondateurs vérifiés fermés, et que
+   la tentation d'un miroir sera plus forte que partout ailleurs.
+
+## Le hors-périmètre, en rejet direct
+
+Un candidat qui tombe ici ne se consigne pas : il part en `corpus/rejected/`, avec
+`rejection_reason: "OUT_OF_SCOPE"`, jamais une mise en attente.
+
+- **L'économie standard sans écart au modèle** : la théorie des prix, l'équilibre général, la
+  macroéconomie, la croissance, l'économie publique. Le champ ne se définit pas par son objet
+  économique mais par l'écart qu'il établit ; un texte d'économie sans écart n'est pas d'ici,
+  quelle que soit sa notoriété.
+- **La finance appliquée et la stratégie d'entreprise**, quand la thèse vise à produire un
+  rendement ou un avantage plutôt qu'à établir un fait sur le comportement.
+- **La psychologie cognitive du jugement prise pour elle-même**, sans qu'aucune ressource ne soit
+  engagée. C'est le rejet le plus fréquent à prévoir, et le plus difficile, parce que le
+  vocabulaire est le même des deux côtés de la ligne.
+- **Le marketing, la publicité et l'économie du consommateur pris comme technique de vente** :
+  la littérature de conseil est écartée ici comme elle l'est dans les dix autres domaines.
+- **La neuroéconomie prise comme localisation cérébrale.** Ce qui porte sur le siège d'une
+  décision et non sur la décision est un objet biologique, écarté au même titre que Soulairac
+  l'a été en cybernétique.
+- **Le « nudge » pris comme recette d'action publique**, quand le texte prescrit un dispositif
+  sans établir le fait comportemental sur lequel il repose.
+
+## Les frontières, toutes tranchées à l'avance et toutes depuis l'autre côté
+
+C'est la situation propre au dernier domaine, et elle est confortable : **les cinq frontières qui
+comptent ont déjà été écrites par les périmètres voisins, et aucune ne se rouvre ici.** Elles se
+reprennent telles quelles. Un candidat mal placé part chez le voisin, qui est ouvert, ou ne
+s'instruit pas ; il ne se réinstruit jamais en double, le validateur refusant le doublon d'`id`
+comme de `slug`.
+
+### Avec `decision-science` — la frontière décisive, et son propre périmètre l'a dit
+
+Elle est la plus coûteuse à tenir des six que `decision-science` s'était données, et il l'a écrit
+lui-même en l'écrivant. La coupure est celle-ci, et elle ne se rouvre pas depuis ce côté :
+
+> un écart de jugement pris comme **fait de raisonnement** est en science de la décision ; le même
+> écart pris comme **fait économique**, avec ses conséquences agrégées, est ici.
+
+**Une conséquence matérielle et immédiate**, qui n'est pas une règle mais un état du corpus :
+`theorie-des-perspectives`, `effet-de-cadrage` et `heuristiques-de-jugement` **sont déjà
+instruits** en science de la décision, depuis le 23 août 2026. Kahneman et Tversky ne se
+réinstruisent pas ici, et le balayage qui a payé la dette de ce domaine avait déjà pris cette
+décision en refusant délibérément de chercher *Prospect Theory*. **C'est la bonne décision et
+elle se maintient.** Ce que ce domaine peut encore prendre de cette veine est ce que la science
+de la décision n'a pas pris : l'effet de dotation, l'aversion à la perte comme fait de marché, le
+biais de statu quo, la comptabilité mentale, la préférence temporelle.
+
+### Avec `work-psychology`, ouvert
+
+Le salaire est le cas partagé, et la répartition est écrite depuis là-bas : le **salaire comme
+source de satisfaction ou d'insatisfaction** est en psychologie du travail ; le **salaire comme
+incitation dont on mesure l'effet sur un marché** est ici. Le corpus porte déjà
+`seuil-d-insatisfaction-salariale` du premier côté.
+
+### Avec `sociology-of-work`, ouvert
+
+Écrite depuis là-bas également : **l'économie du travail prise comme modèle de marché** — offre,
+demande, élasticités, rendements de l'éducation, frictions de mobilité — est ici ; le travail
+pris comme **rapport social** est là-bas. C'est cette frontière qui a fait revenir Brunet et
+Havet dans le legs de ce domaine plutôt que de les instruire en sociologie du travail.
+
+### Avec `operations-management`, ouvert
+
+Écrite depuis là-bas : le **comportement de commande et de stockage pris comme fait économique**,
+avec ses conséquences agrégées sur un marché, est ici ; le dimensionnement et l'arbitrage de coût
+pris comme **problème de gestion**, quand la méthode vise à produire un plan, sont là-bas. C'est
+la frontière du newsvendor comportemental, et elle est déjà tranchée : le comportement de
+commande observé est ici, la règle de commande à deux niveaux est là-bas et publiée.
+
+### Avec `cybernetics`, ouvert
+
+`cybernetics` s'est déclaré vide pour ce domaine **après un balayage entier**, et le motif rend
+le vide crédible : aucun de ses dix corpus n'a pour objet les préférences d'un agent économique.
+C'est la seule des déclarations de vide reçues par ce domaine qui repose sur une recherche plutôt
+que sur une absence de recherche, et elle se tient.
+
+### Avec les cinq autres domaines ouverts
+
+`organizational-sociology`, `measurement-theory`, `activity-ergonomics`, `human-factors` et
+`systems-thinking` ne se touchent avec ce domaine que par des cas prévisibles, et chacun se
+tranche par l'objet du texte cité :
+
+- un indicateur qui **change le comportement de celui qu'il mesure** est en théorie de la
+  mesure quand le concept porte sur l'indicateur, et ici quand il porte sur la réaction
+  économique qu'il provoque ;
+- une décision d'achat ou d'investissement prise dans une **organisation** relève de la
+  sociologie des organisations quand l'objet est la règle ou le pouvoir qui la produit ;
+- l'anticipation d'un opérateur en situation est en human factors, et elle n'y devient pas
+  économique parce qu'elle a un coût ;
+- un modèle de boucles qui engendre un comportement de marché est en systems thinking quand le
+  concept porte sur la structure, et ici quand il porte sur l'écart de l'agent.
+
+## L'accès — ce que ce domaine impose, et il impose plus que les dix précédents
+
+Quatre constats, à tenir pour acquis avant le premier balayage. Les trois premiers sont des
+prévisions qu'il faut faire maintenant pour ne pas les prendre pour des échecs.
+
+1. **Le canon anglophone de ce champ est fermé, et il l'est de trois façons différentes**, ce qui
+   est le cas le plus défavorable du corpus. Katona est en prêt numérique ; Thaler 1980 est chez
+   un éditeur sous abonnement et n'existe qu'en miroir illégitime ; Kahneman, Knetsch et Thaler
+   1991 est dans une revue en accès libre servie derrière un filtrage anti-robot. **Trois
+   fermetures, trois causes distinctes, et aucune ne se contourne.** Il ne faut pas les
+   retenter : il faut chercher ailleurs.
+2. **L'inversion francophone est ici la voie principale, et non une compensation.** Persée sert
+   le *Bulletin de psychologie* et la *Revue française d'économie* en texte intégral par son
+   endpoint page, et la **psychologie économique francophone est une lignée constituée**, fondée
+   par Gabriel Tarde en 1902, tenue par Pierre-Louis Reynaud à Strasbourg puis par Paul Albou à
+   Paris V. Ce n'est pas la périphérie d'un champ anglophone : c'est une tradition propre, et
+   elle est ouverte. **C'est par elle que ce domaine ouvre.**
+3. **La seconde branche du test d'entrée est faite pour cette tradition, et elle est un risque.**
+   Les textes francophones ouverts de ce champ définissent souvent la discipline plutôt qu'ils
+   n'établissent un écart. Ils entrent **s'ils portent une thèse propre**, et pas autrement. Le
+   précédent est écrit : la psychologie du travail a écarté deux textes d'orientation sans thèse
+   du même *Bulletin de psychologie*, et ce motif est le bon.
+4. **Un article Persée n'est pas ouvert en texte intégral par principe.** L'endpoint page sert
+   parfois une page sur plusieurs, et une page servie en `HTTP 200` n'est pas une page lue : le
+   rendu peut omettre des blocs entiers sans le signaler, et les tableaux, encadrés et
+   conclusions en page pleine sont les premiers concernés. Ce piège a été payé au passage
+   précédent, sur un article dont **la conclusion entière était absente de la couche OCR**. Il ne
+   se repaie pas.
+
+Et la règle qui ne se négocie dans aucun domaine, rappelée ici parce que ce domaine y sera plus
+exposé que les autres :
+
+> **Aucun agent ne contourne un contrôle d'accès.** Face à un défi anti-robot, à un mur de
+> connexion, à un prêt numérique ou à une restriction d'emprunt, on essaie une autre voie
+> légitime ; on ne résout pas le défi, on ne se présente pas sous l'identité d'un navigateur, on
+> n'emprunte pas ce qui demande un compte. **Un texte qu'on ne peut pas ouvrir légitimement est
+> un texte qu'on n'a pas ouvert** : on le dit, et on ne conclut pas au verbatim.
+
+Une autorisation d'ayant droit **se constate** : elle ne se déduit ni de l'âge du texte, ni de
+l'absence de restriction d'emprunt affichée, ni du fait que la revue se déclare en accès libre.
+Le cas de Kahneman, Knetsch et Thaler est réglé dans ce sens : le fond est propre, la route ne
+l'est pas, et c'est la route qui décide.
 
 ## Thèmes
 
