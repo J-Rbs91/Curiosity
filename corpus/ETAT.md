@@ -1,4 +1,4 @@
-# État du corpus — 27 août 2026
+# État du corpus — 28 août 2026
 
 Écrit sur le disque parce qu'une session a déjà été coupée en cours de route : ce fichier
 existe pour qu'une reprise reparte des fichiers, et non de la mémoire de quelqu'un.
@@ -6,18 +6,21 @@ existe pour qu'une reprise reparte des fichiers, et non de la mémoire de quelqu
 Ce fichier dit ce que le corpus **est**. Ce qui lui **manque**, et par quel bout le prendre,
 est dans [`corpus/RESTE-A-FAIRE.md`](RESTE-A-FAIRE.md).
 
-`npm run corpus:validate` : **99 enregistrements, 96 validés, 0 erreur, 75 avertissements.**
-`npm run corpus:deepen` : **66 approfondissements pour 96 cartes validées.** Fin de sortie :
-**trente cartes sans approfondissement**, les huit de la science de la décision, les huit de
-l'operations management, les sept de la psychologie du travail et les sept de la sociologie du
-travail, et c'est le seul écart entre validé et servi.
+`npm run corpus:validate` : **104 enregistrements, 100 validés, 0 erreur, 80 avertissements.**
+`npm run corpus:deepen` : **66 approfondissements pour 100 cartes validées.** Fin de sortie :
+**trente-quatre cartes sans approfondissement**, les huit de la science de la décision, les huit
+de l'operations management, les sept de la psychologie du travail, les sept de la sociologie du
+travail et les quatre de l'économie comportementale, et c'est le seul écart entre validé et servi.
 `npm test` : **480 tests, 0 échec.** `npm run lint` et `npm run corpus:build` : sans erreur.
 
-**Dix domaines instruits sur onze déclarés.** `sociology-of-work` a été ouvert et instruit le
-27 août, au passage 05 de la routine nocturne, **en une seule nuit**, dans l'ordre complet :
-périmètre, cartographie, cartes, puis thèmes. **Il ne reste qu'un domaine fermé**,
-`behavioral-economics`, qui n'a ni périmètre ni cartographie : l'ouvrir, c'est refaire l'ordre
-complet. Mais il ne part plus de rien, un legs vérifié lui ayant enfin été constitué.
+**Les onze domaines déclarés sont instruits. Le corpus n'a plus aucun domaine vide.**
+`behavioral-economics` a été ouvert et instruit le 28 août, au passage 06 de la routine nocturne,
+**en une seule nuit**, dans l'ordre complet : périmètre, cartographie, cartes, puis thème. C'était
+le onzième et dernier.
+
+**Une règle du dépôt disparaît avec lui, et il faut le savoir.** La catégorie « angle mort vers un
+domaine fermé », qui a doté cinq domaines de leur stock d'entrée, **n'a plus de destinataire** : un
+candidat mal placé part désormais chez un voisin ouvert, ou ne s'instruit pas.
 
 | domaine | thèmes | cartes validées | approfondissements |
 |---|---:|---:|---:|
@@ -31,25 +34,171 @@ complet. Mais il ne part plus de rien, un legs vérifié lui ayant enfin été c
 | Operations Management | 3 | 8 | **0** |
 | Psychologie du travail | 2 | 7 | **0** |
 | Sociologie du travail | 1 | 7 | **0** |
+| Économie comportementale | 1 | 4 | **0** |
 
-**Trente cartes validées attendent leur approfondissement**, les huit du 23 août, les huit du 25,
-les sept du 26 et les sept du 27. L'écart s'était refermé le 21 août et il se rouvre depuis,
-volontairement : la routine nocturne consacre une phase entière à ce travail, et une nuit
-d'ouverture de domaine n'en écrit pas. `npm run corpus:deepen` les liste en fin de sortie :
-**c'est la file, et elle fait foi contre ce fichier.**
+**Trente-quatre cartes validées attendent leur approfondissement**, les huit du 23 août, les huit
+du 25, les sept du 26, les sept du 27 et les quatre du 28. L'écart s'était refermé le 21 août et il
+se rouvre depuis, volontairement : la routine nocturne consacre une phase entière à ce travail, et
+une nuit d'ouverture de domaine n'en écrit pas. `npm run corpus:deepen` les liste en fin de sortie :
+**c'est la file, et elle fait foi contre ce fichier.** Aucun domaine n'étant plus vide, **c'est
+désormais le seul chantier que la routine ait à prendre.**
 
-**La famille « Comprendre le pilotage » est complète.** Ses deux domaines, la théorie de la
-mesure et la science de la décision, sont instruits.
+**Les quatre familles sont complètes.** « Comprendre le pilotage » et « Comprendre le travail
+réel » l'étaient depuis le 23 août, « Comprendre la production et les systèmes » depuis le 25, et
+« Comprendre les humains et les organisations » l'est depuis le 28 : elle était la dernière
+incomplète, avec trois domaines fermés sur quatre au 25 août.
 
-**La famille « Comprendre les humains et les organisations » n'a plus qu'un domaine fermé.**
-Elle était la seule famille encore incomplète au 25 août, avec trois domaines fermés sur quatre ;
-il ne lui reste que l'économie comportementale, et c'est le dernier domaine du corpus.
+# 0. Économie comportementale — lot d'ouverture du 28 août 2026 (passage 06), publié
 
-**La famille « Comprendre la production et les systèmes » est complète elle aussi.** Elle était
-entièrement vide le 20 août : la cybernétique le 21, le systems thinking le 22, et
-`operations-management` le 25 après une ouverture en deux temps. **Deux des quatre familles sont
-donc entièrement instruites**, et les trois domaines qui restent appartiennent tous à la même,
-« Comprendre les humains et les organisations ».
+Onzième et **dernier domaine instruit du corpus**. Ouvert et instruit **dans la même nuit**, dans
+l'ordre complet : périmètre, cartographie, cartes, puis thème après le contrôle aveugle.
+
+**Quatre cartes validées, quatre citations, toutes relues sur l'image de la page. Les quatre en
+`PASS` au premier tour, sur les quatre questions, par quatre contrôleurs distincts.** Aucun renvoi,
+ce que seul le lot d'operations management avait obtenu avant. Une fiche rejetée.
+
+| id | auteur | tours |
+|---|---|---:|
+| `definition-de-la-psychologie-economique` | Paul Albou, 1982 | 1 |
+| `conduite-economique` | Paul Albou, 1982 | 1 |
+| `niveaux-de-rationalite-economique` | Pierre-Louis Reynaud, 1962 | 1 |
+| `seuils-de-rupture-et-d-ajustement` | Pierre-Louis Reynaud, 1962 | 1 |
+
+**Les quatre reposent sur une source primaire francophone**, et c'est la deuxième fois seulement
+dans ce corpus qu'un domaine ouvre sans aucune source anglophone. Ce n'est pas une compensation :
+le périmètre l'avait prévu et en avait fait la voie principale du domaine. **La lignée francophone
+de la psychologie économique est une tradition constituée**, fondée par Gabriel Tarde en 1902,
+tenue par Pierre-Louis Reynaud à Strasbourg puis par Paul Albou à Paris V, et Persée la sert en
+texte intégral. **Le domaine n'a aucune signature féminine parmi ses cartes**, et il faut le dire
+précisément : la seule autrice ouverte du lot, Aurélie Bonein, a été **rejetée sur un motif de
+fond**, écrit et vérifiable, et non écartée par inadvertance.
+
+## Le premier rejet du dépôt, et pourquoi il compte plus que son volume
+
+**`corpus/rejected/` était vide depuis l'origine.** Il reçoit son premier enregistrement,
+`reciprocite`, `rejection_reason: "OUT_OF_SCOPE"`, avec son motif écrit pour que personne n'ait à
+rouvrir l'article.
+
+Bonein 2008 satisfait la première condition du test d'entrée, son objet étant un comportement
+économique observé (le salaire contre l'effort, l'acceptation ou le refus d'un partage, la
+contribution à un bien public, la punition coûteuse d'un resquilleur), et la troisième, sa source
+étant ouverte et lue en texte intégral sur trente pages. **Elle échoue à la deuxième, sur ses
+propres mots relus sur l'image** : page 207, « il semble pertinent de fournir une synthèse relative
+à la réciprocité [...] en vue d'initier l'économiste à cette notion » ; page 226, « au regard de la
+synthèse effectuée ici ». Entre les deux, aucune expérience conduite, aucun modèle construit :
+chaque résultat est rapporté d'autrui avec sa référence, et l'autrice cite son propre modèle **à la
+troisième personne**, page 225, en renvoyant à un autre article.
+
+**C'est le cas que le périmètre avait prévu et écarté d'avance**, à son troisième constat d'accès.
+Le rejet applique donc une règle écrite **avant** la lecture, et non un arbitrage rendu par ce que
+le lot contenait : c'était l'objet même de la règle.
+
+**Le piège d'attribution était réel.** Une carte faite sur ce texte aurait porté la réciprocité au
+nom d'Aurélie Bonein. Or elle rend tout au champ, page après page : le don contre-don à Mauss,
+l'*homo reciprocans* à Fehr et Gächter, la réciprocité forte à Gintis, l'altruisme réciproque à
+Trivers, et le modèle fondateur à Rabin, **sous un intertitre qu'elle écrit elle-même « Le modèle
+fondateur de Rabin »**. C'est la troisième fois que ce corpus manque de prêter à un auteur ce qu'il
+refuse, et la troisième fois que la lecture l'évite.
+
+## Ce que le contrôle a réellement attrapé
+
+| question | résultat sur quatre fiches |
+|---|---|
+| citation verbatim, à l'endroit annoncé | 4/4 dès le premier passage |
+| attribution | 4/4 dès le premier passage |
+| prose fidèle aux sources | 4/4 dès le premier passage |
+| sources qui résolvent | 4/4 dès le premier passage |
+
+**Aucun renvoi, et ce n'est pas de l'indulgence.** Les quatre contrôleurs ont rendu des remarques
+hors mandat, et deux ont changé quelque chose. C'est le sixième lot consécutif où ce dispositif
+rapporte.
+
+- **La correction appliquée porte sur `conduite-economique`**, et elle est du genre exact que ce
+  corpus surveille : le résumé écartait une position sans dire à qui elle appartient. Albou
+  l'impute nommément, page 201, aux behavioristes « notamment avec Watson », et sa note 13 vise un
+  contemporain, Katona, « qui m'a dit, en 1966, se vouloir exclusivement *fact finding* ». Le
+  résumé nomme désormais le behaviorisme, à longueur constante.
+- **Le contrôle des seuils est allé chercher l'antériorité, et il l'a trouvée.** Pierre-Louis
+  Reynaud, « Récessions et seuils économiques », *Revue économique* 8-6, 1957, p. 1032-1052, porte
+  déjà « il existe en économie des points critiques ». L'article de 1962 n'est donc pas la première
+  formulation. **La carte n'en souffre pas parce qu'elle ne revendiquait rien** : son résumé écrit
+  « Reynaud constate ». C'est la prudence de rédaction qui l'a sauvée, pas la chance.
+- **Le piège d'homonymie a été tranché deux fois, séparément, sur la signature imprimée** de la
+  page 865 et non sur une notice. Le corpus porte déjà une carte de Jean-Daniel Reynaud, le
+  sociologue de la régulation conjointe : celui-ci est **Pierre-Louis** Reynaud, économiste à
+  Strasbourg, ce qu'un contrôleur a établi par l'affiliation et l'autre par le renvoi que l'auteur
+  fait à son propre ouvrage de 1946.
+
+## Ce que ce lot a payé, et qui resservira
+
+**Trois corrections sur la route d'accès de Persée, que ce dépôt croyait établie depuis quatre
+passages.** Le motif de l'URL de page **n'est pas toujours `_T1_`** : il vaut `_F_` sur certains
+fascicules, et il se lit sur la notice de l'article, qui publie une URL par page. **`curl` est
+réinitialisé sur le chemin `/doc/page/`** dans cet environnement, ce qui n'est ni un 404 ni un
+vide, et **`WebFetch` passe sur la même URL** ; le dérivé d'image `renderPage`, lui, passe en
+`curl`. Enfin le PDF complet `docAsPDF` **répond 403** sur les trois articles ouverts cette nuit,
+si bien que le recoupement de l'OCR s'est fait sur l'image et non sur le PDF.
+
+**Cinq écarts entre l'OCR et l'imprimé, dont deux auraient produit un faux.** Une notice
+d'Internet Archive **ment sur la tomaison** de Tarde, annonçant « volume 1 » un exemplaire dont la
+page de titre porte TOME SECOND. Deux couches OCR **se contredisent sur une ligature**, l'imprimé
+de 1902 portant `homo æconomicus` que l'une aplatit et l'autre rend, et c'est l'image qui tranche.
+L'OCR de Persée **corrompt un nom propre et un millésime** chez Albou, « Renaud » pour Reynaud et
+1981 pour 1881, et double des mots. Il **corrige silencieusement une coquille de l'imprimé**, qui
+compose « B. Puor une définition », et c'est le piège inverse, moins connu. Et l'OCR de Reynaud est
+fautif au point de rendre tout verbatim faux.
+
+**La veine `dticarchive` ne porte pas ce domaine, et c'est un résultat.** Deux requêtes bien
+formées, 1 345 résultats cumulés, une seule pièce approchante et hors objet. La voie qui avait
+rendu quatre lots précédents est close ici pour un motif structurel, le bruit lexical de
+« utility » au sens de véhicule ou de réseau électrique militaire. **Ne pas y revenir.**
+
+## Les réserves conservées
+
+- **Aucune source secondaire n'a été ouverte sur les quatre cartes.** C'est la faiblesse
+  structurelle du lot, la même que celle des quatre lots précédents, déclarée fiche par fiche dans
+  `notes` et non masquée. **Mais une secondaire ouverte est désormais identifiée et vérifiée**, et
+  c'est le premier remède depuis cinq lots : Milet, Jean (1982), « Gabriel Tarde (1843-1904) : le
+  créateur de la psychologie économique », *Bulletin de psychologie* 35(357), p. 907-913, id Persée
+  `bupsy_0007-4403_1982_num_35_357_12030`.
+- **Cette secondaire porte un signal à ne pas escamoter** : c'est une revendication d'antériorité
+  formulée par un tardien, dans la revue même où Albou et Reynaud tenaient la discipline.
+  **L'attribution de la fondation est disputée dans la lignée elle-même**, et un lecteur doit la
+  traiter comme une position, pas comme un fait. Coquille d'OCR à connaître : la signature est
+  rendue « J. MUET » pour Jean Milet.
+- **Une querelle d'antériorité traverse le lot et n'est pas tranchée.** Albou revendique page 199
+  d'avoir posé sa définition « comme Reynaud, et avant même qu'il ne se préoccupe de ce problème »,
+  et page 204 que Reynaud a repris ses éléments en 1974 « parfois sans mention d'origine ». Le
+  corpus la consigne et ne la tranche pas.
+- **Deux cartes sortent du même article d'Albou et deux du même article de Reynaud**, et c'est une
+  décision, pas un accident : chez Albou la distinction entre conduite et comportement a son
+  intertitre propre p. 201-202, chez Reynaud les seuils sont un point numéroté distinct de celui
+  des niveaux de rationalité. Le thème repose donc sur **deux auteurs et deux articles**, ce qui
+  reste au-dessus du critère du dépôt, mais il faut le savoir : il ne repose pas sur quatre
+  sources.
+- **Le seuil est chez Reynaud un opérateur plus large que ce que la page citée en montre**, jusqu'à
+  sa théorie du développement. Une carte voisine sur le seuil comme opérateur du développement
+  serait fondée, et l'article de 1957 en serait le point d'entrée chronologique.
+
+## Les angles morts qui commandent le prochain passage sur ce domaine
+
+- **Les deux cartes de Tarde sont la reprise la moins chère du dépôt, et de loin.** La lecture est
+  faite, complète et rendue, les deux citations relues sur l'image du feuillet, sur l'exemplaire
+  `psychologiecono03tardgoog`. Il ne manque que la rédaction des cartes et leur contrôle. Elles
+  n'ont pas été écrites faute de temps, pas faute de matière.
+- **Une troisième carte de Tarde est repérée et non citable en l'état** : le tome II porte une
+  théorie psychologique des prix, vue en couche OCR seulement, non relue sur image. Ce serait la
+  plus directement comportementale des trois.
+- **L'effet de dotation a une voie légitime et vérifiée** : Baratgin, Godin et Jamet (2022),
+  *Frontiers in Psychology* 12:785721, PDF ouvert. **Kahneman, Knetsch et Thaler 1991 est vérifié
+  fermé deux fois** : le *JEP* est éditorialement en accès libre, mais le lien de téléchargement de
+  l'éditeur redirige vers `pubs.aeaweb.org`, qui rend 403. C'est un filtrage anti-robot, pas un
+  paywall, et il ne se contourne pas.
+- **Un jalon de la lignée que le périmètre ne connaissait pas** : Maurice Roche-Agussol, entre
+  Tarde et Reynaud, items `IA41555614_0038` et `jstor-1883573` repérés, **non vérifiés**.
+- **Deux thèmes possibles ne porteraient qu'un candidat** et ne se déclarent pas en l'état :
+  réciprocité et économie expérimentale (Bonein seul, et rejeté), marché du travail (Brunet et
+  Havet seul, hérité et non lu).
 
 # 0. Sociologie du travail — lot d'ouverture du 27 août 2026 (passage 05), publié
 
