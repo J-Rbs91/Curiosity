@@ -4,7 +4,7 @@ Balayage d'ouverture du 28 août 2026. **Onzième et dernier domaine** du corpus
 aucun domaine n'est fermé : un candidat mal placé part chez un voisin ouvert ou ne s'instruit
 pas.
 
-**requêtes consommées : 12/30**
+**requêtes consommées : 14/30**
 
 ## Méthode et budget réseau
 
@@ -32,6 +32,12 @@ fichiers préfixés `be-`.
 | R6 | HAL — réciprocité / dotation / biens publics / confiance, `submitType_s:file` | 200 | 16 092 o |
 | R7 | OpenAlex — `title.search:psychologie economique` | 200 | 109 202 o |
 | R8 | Persée — recherche HTML « psychologie économique » | 200 | 370 393 o |
+| R9 | `archive.org` — OCR `psychologiecono00tardgoog_djvu.txt` (Tarde t. 1) | 200 | 836 659 o |
+| R10 | HAL — PDF `hal-04086005` (effet de dotation, pays kanak) | 200 | 839 103 o |
+| R11 | HAL — PDF `hal-04108632` (« Don, droit, coutume, cultures ») | 200 | 499 074 o |
+| R12 | HAL — PDF `halshs-01082352` (marché du travail, éco. expérimentale) | 200 | 474 593 o |
+| R13 | `archive.org` — OCR `psychologiecono01tardgoog_djvu.txt` (Tarde t. 2) | 200 | 990 188 o |
+| R14 | `archive.org` — image `psychologiecono00tardgoog/page/n170.jpg` | 200 | 1 573 756 o |
 
 ---
 
@@ -111,6 +117,58 @@ l'appui. Ce qui n'est que repéré reste dans les sections « Direction ».
 - **CITABLE** : oui, en français, sans traduction à chercher. Pagination d'origine
   disponible ; les chapitres cibles sont courts et localisés (p. 151-185 pour le désir,
   p. 185-202 pour la croyance).
+
+- **Image de page vérifiée sur la pièce** :
+  `https://archive.org/download/psychologiecono00tardgoog/page/n170.jpg`, **HTTP 200,
+  1 573 756 octets, `image/jpeg`**, feuillet **entier et non rogné**, 2744 × 4912 px, titre
+  courant « RÔLE ÉCONOMIQUE DU DÉSIR » et folio imprimé **157** lisibles. Le piège du 25 août
+  est évité : c'est bien la forme `/page/n<N>.jpg` **sans suffixe** qui est employée, et non
+  `_x1600`. **Décalage établi : `n<N>` = page imprimée + 13** (n170 → p. 157). Une citation
+  de ce volume est donc relisible sur l'image, condition 3 du test d'entrée satisfaite.
+
+### 3. Tarde, Gabriel (1902). *Psychologie économique*, tome second — VÉRIFIÉ OUVERT
+
+Volume distinct du précédent, et **plus économique que lui** : c'est le tome qui traite le
+prix. Il est consigné à part parce qu'il porterait un autre concept et parce que **sa couche
+OCR n'a pas la même qualité**.
+
+- **Concept pressenti** : **le prix comme fait psychologique**, contre l'explication par des
+  considérations objectives. La table des matières du Livre second (« L'OPPOSITION
+  ÉCONOMIQUE ») porte au chapitre II, « Les prix » : « Deux sens du mot valeur » ;
+  « Double échelle des consommateurs suivant l'intensité de leur désir ou le degré de leur
+  fortune » ; « Comparaison avec la théorie de l'utilité finale » ; « **Rôle grandissant du
+  prestige personnel, de la contagion psychologique dans les marchés. Influence de la
+  conversation** » ; « L'idée du juste prix. Son action sur le prix réel » ;
+  « **Impossibilité de rendre compte des prix par des considérations simplement
+  objectives** » ; « La loi de l'offre et de la demande ». Trois concepts au moins y sont
+  distincts : la **contagion psychologique dans les marchés**, le **juste prix** et le refus
+  de l'explication objective des prix.
+- **Périmètre** : dedans, et sans la réserve du tome I : il y a un prix, un marché, une offre
+  et une demande, et l'écart au modèle objectif est la thèse même du chapitre.
+- **Source primaire** : Tarde, G., *Psychologie économique*, tome second, Paris, Félix Alcan,
+  1902.
+- **Accès constaté** :
+  `https://archive.org/download/psychologiecono01tardgoog/psychologiecono01tardgoog_djvu.txt`,
+  **HTTP 200, 990 188 octets, `text/plain`**. Contenu confirmé comme étant bien le tome
+  second **par le corps du texte et la table des matières** (Livre second, « L'opposition
+  économique », titres courants « L'OPPOSITION ÉCONOMIQUE »), et **non par la notice**.
+- **Réserve à ne pas escamoter** : sur cet item, **la page de titre n'est pas dans la couche
+  OCR** — la chaîne « TOME » y est introuvable, alors qu'elle est nette sur le tome I. La
+  mention « tome second » est donc établie par le contenu, pas par la page de titre imprimée.
+  Un lecteur primaire devra la constater sur l'image avant de citer la collation.
+- **Seconde réserve, plus lourde** : **l'OCR de ce volume est nettement plus dégradé que
+  celui du tome I** (« Chapitbe », « L'OI'POSITION ^CONOMIQUli », « rien de phu Euu » pour
+  « rien de plus faux »). Le texte reste lisible pour repérer, **il n'est pas citable en
+  l'état** : toute citation devra être transcrite depuis l'image de page. Le dérivé image
+  n'a pas été vérifié sur cet item faute de budget ; il l'a été sur le tome I et le schéma
+  d'URL est le même.
+- **SIGNAL** : Tarde discute explicitement la théorie de l'utilité marginale (« utilité
+  finale ») de son époque — le texte se situe donc lui-même par rapport au modèle
+  économique standard, ce qui sert la condition 2. À vérifier au moment de la lecture : quel
+  décalage `n<N>` s'applique à cet item, qui n'a aucune raison d'être le même que sur le
+  tome I.
+- **ACCESSIBILITÉ** : texte intégral (OCR complet, 990 Ko), qualité médiocre.
+- **CITABLE** : oui en français, **mais uniquement par transcription depuis l'image**.
 
 ### 2. Baratgin, J., Godin, P. & Jamet, F. (2022). « How the Custom Suppresses the Endowment Effect: Exchange Paradigm in Kanak Country » — VÉRIFIÉ OUVERT
 
