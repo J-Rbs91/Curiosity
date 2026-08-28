@@ -4,7 +4,7 @@ Balayage d'ouverture du 28 août 2026. **Onzième et dernier domaine** du corpus
 aucun domaine n'est fermé : un candidat mal placé part chez un voisin ouvert ou ne s'instruit
 pas.
 
-**requêtes consommées : 23/30**
+**requêtes consommées : 25/30**
 
 ## Méthode et budget réseau
 
@@ -46,7 +46,9 @@ fichiers préfixés `be-`.
 | R20 | Persée — notice article Albou 1962 | 200 | 198 419 o |
 | R21 | Persée — page Milet 1982 en `_F_` | **000** | 0 o (connexion réinitialisée) |
 | R22 | Persée — page Albou 1962 en `--http1.1` | **000** | 0 o (`Recv failure: Connection reset by peer`) |
-| R23 | **`WebFetch`** — page Albou 1962, même URL que R19/R22 | **200** | texte rendu |
+| R23 | **`WebFetch`** — page Albou 1962 p. 1, même URL que R19/R22 | **200** | texte rendu |
+| R24 | **`WebFetch`** — page Milet 1982 p. 907 (forme `_F_`) | **200** | texte rendu |
+| R25 | **`WebFetch`** — page Albou 1962 p. 10 (corps de texte) | **200** | texte rendu |
 
 ---
 
@@ -216,6 +218,73 @@ OCR n'a pas la même qualité**.
 - **CITABLE** : oui, en **anglais**. Aucune traduction publiée repérée. Le résumé est
   autonome et court.
 
+### 4. Albou, Paul (1962). « Initiation à la psychologie économique » — VÉRIFIÉ OUVERT, THÈSE PROPRE ÉTABLIE
+
+- **Concept pressenti** : **la psychologie économique comme discipline autonome, définie par
+  le comportement économique et non par l'application de la psychologie à l'économie.** Deux
+  définitions sont explicitement opposées dans le texte : celle de Wärneryd (Stockholm),
+  dite « classique » — « l'application des principes et des méthodes psychologiques à la
+  solution des problèmes économiques » — et celle qu'Albou propose et dit « assez
+  généralement acceptée par les chercheurs français ».
+- **Auteur** : Paul Albou, seul signataire.
+- **Périmètre** : dedans, **par la seconde branche du test d'entrée, et sans la réserve
+  habituelle**. Le texte ne se contente pas de récapituler : il **prend parti contre
+  Reynaud**, l'autre pilier de la lignée, en toutes lettres — « l'histoire de la Psychologie
+  économique ne doit pas se faire, contrairement aux efforts de P.L. REYNAUD, du point de
+  vue de l'économiste, mais bien en fonction de son évolution propre, dans le cadre des
+  Sciences de l'Homme » (p. 10). Et il annonce une « critique » du programme de Katona et
+  Lauterbach (plan, chap. IV, § 1). **C'est une thèse propre sur ce que l'économie doit à la
+  psychologie, ce que la condition 2 exige exactement.**
+- **Source primaire** : *Bulletin de psychologie*, tome XVI, n° 211 (1962), pp. 1-81. DOI
+  **`10.3406/bupsy.1962.8918`**, id Persée `bupsy_0007-4403_1962_num_16_211_8918`.
+  `DC.rights: free`, `DC.language: fre`.
+- **Accès constaté** : notice `https://www.persee.fr/doc/bupsy_0007-4403_1962_num_16_211_8918`,
+  **HTTP 200, 198 419 octets**, liant **82 URL de page**. Deux pages lues sur la pièce par
+  `WebFetch` : la **page 1** (plan détaillé) et la **page 10** (corps de texte, chapitre I
+  § 2 « Vers une approche unitaire » et début du chapitre II « Définitions »), toutes deux
+  rendues en texte continu et lisible, avec appels de notes et références en bas de page
+  (Albou 1956 ; Wärneryd, *Ekonomisk Psykologi*, Stockholm, 1959, 220 p.).
+- **Secondaire** : ABSENTE (aucune base de citations interrogée). Mais le texte est lui-même
+  en dialogue direct avec deux pièces du corpus : **Reynaud 1962** (même revue, même année,
+  déjà vérifié ouvert) et **Katona 1951** (vérifié fermé).
+- **Francophone** : c'est la source primaire elle-même.
+- **SIGNAL** : **désaccord documenté entre les deux tenants français de la discipline**,
+  publiés la même année dans la même revue — Albou p. 10 contre Reynaud. C'est le contraire
+  d'un concept repris sans discussion, et cela se voit sans scite. Second signal : le texte
+  fait de Katona l'adversaire théorique, ce qui donne une **voie francophone ouverte pour
+  parler du programme de Katona sans avoir à ouvrir Katona**, vérifié fermé. Réserve
+  d'attribution : Albou, dans un autre texte de 1982, se présente comme définisseur de la
+  discipline ; ici, en 1962, il en écrit l'« initiation ». La chronologie interne à cet
+  auteur est à établir par le lecteur primaire.
+- **ACCESSIBILITÉ** : texte intégral, page par page, **par `WebFetch` uniquement**
+  (`curl` réinitialisé sur ce chemin, voir la correction de méthode ci-dessus).
+- **CITABLE** : oui, en français, sans traduction à chercher. Le passage de la p. 10 sur la
+  définition de Wärneryd et le désaccord avec Reynaud est court et autonome. **Attention** :
+  81 pages, dont la p. 1 est un sommaire — le repérage de la page utile coûte des appels.
+
+### Appui secondaire vérifié — Milet, Jean (1982). « Gabriel Tarde (1843-1904) : le créateur de la psychologie économique »
+
+Ce n'est pas un candidat mais **la littérature secondaire francophone qui manquait aux
+candidats 1 et 3**, et elle est ouverte.
+
+- **Référence** : *Bulletin de psychologie*, tome XXXV, n° 357 (1982), pp. 907-913, rubrique
+  « Feuilles volantes de l'histoire de la psychologie ». Id Persée
+  `bupsy_0007-4403_1982_num_35_357_12030`.
+- **Accès constaté** : page 907 lue sur la pièce par `WebFetch` à
+  `…/doc/page/bupsy_0007-4403_1982_num_35_357_12030/bupsy_0007-4403_1982_num_35_357_F_0907_0000`
+  — **texte rendu, continu et lisible**. La notice (`HTTP 200`, 81 909 o) publie les sept
+  URL de page.
+- **Ce que le texte établit** : Milet soutient que « le véritable créateur » de la
+  psychologie économique est Tarde, qui « va déterminer l'objet de cette science, en
+  préciser les méthodes et en élaborer tout le programme », et rattache la *Psychologie
+  économique* aux *Lois de l'imitation* (1890) par la thèse des « réseaux d'imitation ».
+- **SIGNAL, à ne pas escamoter** : c'est une **revendication d'antériorité**, formulée en
+  1982 par un tardien, dans la revue même où Albou et Reynaud tenaient la discipline. Elle
+  atteste que **l'attribution de la fondation est disputée** dans la lignée elle-même. Un
+  lecteur primaire doit la traiter comme une position, pas comme un fait.
+- **Coquille d'OCR à connaître** : la signature est rendue « J. MUET » par la couche texte de
+  Persée ; l'auteur déclaré en notice est **Jean Milet**.
+
 ---
 
 ## Direction 1 — la lignée francophone de la « psychologie économique »
@@ -277,8 +346,8 @@ Deux constats coûteux, faits ici, qui contredisent la consigne d'entrée :
   explicitement le programme de Katona** peut porter une thèse propre — et ce serait
   précieux, puisque **Katona lui-même est vérifié fermé** (prêt numérique). Mais le plan lu
   est aussi celui d'un texte d'orientation, et le périmètre a déjà rejeté deux fois ce genre
-  au motif de la condition 2. **Statut : accès vérifié, thèse non établie.** Une seule page
-  de contenu suffira à trancher, et elle n'a pas été lue faute de budget.
+  au motif de la condition 2. **Statut : tranché — la page 10 a été lue et la thèse est établie.** Voir le bloc
+  candidat n° 4 ci-dessus, qui fait foi.
 - **ACCESSIBILITÉ** : texte intégral, page par page, par `WebFetch`.
 - **CITABLE** : oui, en français, sous réserve que la thèse existe. Attention au piège que le
   périmètre signale : une page servie n'est pas une page lue, et la page 1 lue ici est un
