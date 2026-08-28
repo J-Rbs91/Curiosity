@@ -4,7 +4,7 @@ Balayage d'ouverture du 28 août 2026. **Onzième et dernier domaine** du corpus
 aucun domaine n'est fermé : un candidat mal placé part chez un voisin ouvert ou ne s'instruit
 pas.
 
-**requêtes consommées : 27/30**
+**requêtes consommées : 29/30** (1 de marge volontairement non consommée)
 
 ## Méthode et budget réseau
 
@@ -38,8 +38,8 @@ fichiers préfixés `be-`.
 | R12 | HAL — PDF `halshs-01082352` (marché du travail, éco. expérimentale) | 200 | 474 593 o |
 | R13 | `archive.org` — OCR `psychologiecono01tardgoog_djvu.txt` (Tarde t. 2) | 200 | 990 188 o |
 | R14 | `archive.org` — image `psychologiecono00tardgoog/page/n170.jpg` | 200 | 1 573 756 o |
-| R15 | Persée — page Albou 1962 (`…_16_211_T1_0001_0000`) | **000** | 0 o (échec de connexion, **pas un 404** — à retenter) |
-| R16 | Persée — page Milet 1982 (`…_35_357_T1_0907_0000`) | **404** | 0 o (motif d'URL à corriger : fascicule probablement découpé en T2/T3) |
+| R15 | Persée — page Albou 1962 (`…_16_211_T1_0001_0000`) | **000** | 0 o (échec de connexion ; le motif, lui, était **correct**, confirmé par R20) |
+| R16 | Persée — page Milet 1982 (`…_35_357_T1_0907_0000`) | **404** | 0 o (**mauvais motif** : ce fascicule emploie `_F_`, pas `_T1_`) |
 | R17 | `archive.org/advancedsearch` — `dticarchive` resserré sur l'expérimentation | 200 | 13 509 o |
 | R18 | Persée — notice article Milet 1982 | 200 | 81 909 o |
 | R19 | Persée — page Albou 1962, 2ᵉ tentative `curl` | **000** | 0 o (connexion réinitialisée) |
@@ -51,6 +51,8 @@ fichiers préfixés `be-`.
 | R25 | **`WebFetch`** — page Albou 1962 p. 10 (corps de texte) | **200** | texte rendu |
 | R26 | HAL — notice `hal-04108632` (résumé, pagination) | 200 | 3 290 o |
 | R27 | OpenAlex — concepts francophones OA | **429** | 350 o (**quota journalier épuisé**, `retryAfter: 71621 s`) |
+| R28 | UQAC — PDF Tarde t. 2, `curl` | **000** | 0 o |
+| R29 | UQAC — PDF Tarde t. 2, `WebFetch` | **503** | serveur indisponible, **pas un refus d'accès** |
 
 ---
 
@@ -139,6 +141,43 @@ l'appui. Ce qui n'est que repéré reste dans les sections « Direction ».
   `_x1600`. **Décalage établi : `n<N>` = page imprimée + 13** (n170 → p. 157). Une citation
   de ce volume est donc relisible sur l'image, condition 3 du test d'entrée satisfaite.
 
+### 2. Baratgin, J., Godin, P. & Jamet, F. (2022). « How the Custom Suppresses the Endowment Effect: Exchange Paradigm in Kanak Country » — VÉRIFIÉ OUVERT
+
+- **Concept pressenti** : **l'effet de dotation** pris comme fait d'échange, et sa
+  **suppression par une norme sociale**. Le résumé lu dans le PDF définit l'effet dans le
+  paradigme d'échange de Knetsch : le participant reçoit un objet, se voit offrir de
+  l'échanger contre un objet équivalent, et refuse — « the observed refusal to exchange is
+  called the endowment effect ». Thèse propre : ce refus vient d'une **implicature** sur les
+  attentes de l'expérimentateur (l'objet reçu est perçu comme un don, que les normes de
+  politesse occidentales interdisent d'échanger), et des participants de culture kanak, chez
+  qui le don appelle un contre-don, ne devraient pas produire cette implicature.
+- **Auteurs** : Jean Baratgin (Université Paris 8, LCHA ; correspondant), Patrice Godin
+  (Université de la Nouvelle-Calédonie, TROCA), Frank Jamet (Paris 8 / CY Cergy Paris
+  Université). Trois signataires.
+- **Périmètre** : dedans — un échange de biens réels est engagé, l'écart au modèle est
+  établi et **orienté** (refus d'échanger). **Frontière avec `decision-science` à
+  surveiller** : le périmètre nomme explicitement l'effet de dotation comme ce que la
+  science de la décision n'a pas pris, donc la voie est libre, mais l'article paraît dans la
+  section « Cognition » de la revue et argumente en pragmatique — c'est le point de contrôle.
+- **Source primaire** : *Frontiers in Psychology*, 12:785721, publié le 25 janvier 2022,
+  DOI `10.3389/fpsyg.2021.785721`. Reçu le 29 septembre 2021, accepté le 13 décembre 2021 —
+  dates lues sur la première page du PDF.
+- **Accès constaté** : `https://hal.science/hal-04086005/document`, **HTTP 200, 839 103
+  octets, `application/pdf`**. Texte extrait localement (146 303 caractères), résumé et
+  corps lisibles. Revue en accès libre intégral : route HAL et route éditeur légitimes.
+- **Secondaire** : ABSENTE dans ce passage (aucune base de citations interrogée, scite non
+  connecté).
+- **Francophone** : le même objet est traité en français par `hal-04108632` (voir plus bas),
+  dont l'accès est constaté mais la lecture bloquée.
+- **SIGNAL** : l'article **conteste l'interprétation standard** de l'effet de dotation
+  (aversion à la perte) au profit d'une explication par la norme sociale. À traiter comme
+  **mécanisme contesté**, non comme attribution de concept contestée : Knetsch est crédité du
+  paradigme. Intérêt de chaîne : c'est une voie légitime pour instruire l'effet de dotation
+  **sans passer par Kahneman, Knetsch & Thaler 1991, vérifié fermé**.
+- **ACCESSIBILITÉ** : texte intégral.
+- **CITABLE** : oui, en **anglais**. Aucune traduction publiée repérée. Le résumé est
+  autonome et court.
+
 ### 3. Tarde, Gabriel (1902). *Psychologie économique*, tome second — VÉRIFIÉ OUVERT
 
 Volume distinct du précédent, et **plus économique que lui** : c'est le tome qui traite le
@@ -182,43 +221,6 @@ OCR n'a pas la même qualité**.
   tome I.
 - **ACCESSIBILITÉ** : texte intégral (OCR complet, 990 Ko), qualité médiocre.
 - **CITABLE** : oui en français, **mais uniquement par transcription depuis l'image**.
-
-### 2. Baratgin, J., Godin, P. & Jamet, F. (2022). « How the Custom Suppresses the Endowment Effect: Exchange Paradigm in Kanak Country » — VÉRIFIÉ OUVERT
-
-- **Concept pressenti** : **l'effet de dotation** pris comme fait d'échange, et sa
-  **suppression par une norme sociale**. Le résumé lu dans le PDF définit l'effet dans le
-  paradigme d'échange de Knetsch : le participant reçoit un objet, se voit offrir de
-  l'échanger contre un objet équivalent, et refuse — « the observed refusal to exchange is
-  called the endowment effect ». Thèse propre : ce refus vient d'une **implicature** sur les
-  attentes de l'expérimentateur (l'objet reçu est perçu comme un don, que les normes de
-  politesse occidentales interdisent d'échanger), et des participants de culture kanak, chez
-  qui le don appelle un contre-don, ne devraient pas produire cette implicature.
-- **Auteurs** : Jean Baratgin (Université Paris 8, LCHA ; correspondant), Patrice Godin
-  (Université de la Nouvelle-Calédonie, TROCA), Frank Jamet (Paris 8 / CY Cergy Paris
-  Université). Trois signataires.
-- **Périmètre** : dedans — un échange de biens réels est engagé, l'écart au modèle est
-  établi et **orienté** (refus d'échanger). **Frontière avec `decision-science` à
-  surveiller** : le périmètre nomme explicitement l'effet de dotation comme ce que la
-  science de la décision n'a pas pris, donc la voie est libre, mais l'article paraît dans la
-  section « Cognition » de la revue et argumente en pragmatique — c'est le point de contrôle.
-- **Source primaire** : *Frontiers in Psychology*, 12:785721, publié le 25 janvier 2022,
-  DOI `10.3389/fpsyg.2021.785721`. Reçu le 29 septembre 2021, accepté le 13 décembre 2021 —
-  dates lues sur la première page du PDF.
-- **Accès constaté** : `https://hal.science/hal-04086005/document`, **HTTP 200, 839 103
-  octets, `application/pdf`**. Texte extrait localement (146 303 caractères), résumé et
-  corps lisibles. Revue en accès libre intégral : route HAL et route éditeur légitimes.
-- **Secondaire** : ABSENTE dans ce passage (aucune base de citations interrogée, scite non
-  connecté).
-- **Francophone** : le même objet est traité en français par `hal-04108632` (voir plus bas),
-  dont l'accès est constaté mais la lecture bloquée.
-- **SIGNAL** : l'article **conteste l'interprétation standard** de l'effet de dotation
-  (aversion à la perte) au profit d'une explication par la norme sociale. À traiter comme
-  **mécanisme contesté**, non comme attribution de concept contestée : Knetsch est crédité du
-  paradigme. Intérêt de chaîne : c'est une voie légitime pour instruire l'effet de dotation
-  **sans passer par Kahneman, Knetsch & Thaler 1991, vérifié fermé**.
-- **ACCESSIBILITÉ** : texte intégral.
-- **CITABLE** : oui, en **anglais**. Aucune traduction publiée repérée. Le résumé est
-  autonome et court.
 
 ### 4. Albou, Paul (1962). « Initiation à la psychologie économique » — VÉRIFIÉ OUVERT, THÈSE PROPRE ÉTABLIE
 
@@ -481,35 +483,145 @@ bien formées suffisent à l'établir ; une troisième ne se justifie pas.
 
 ## Concepts repérés sans source atteignable
 
-- **Effet de dotation / aversion à la perte / biais de statu quo** dans leur formulation
-  canonique (Kahneman, Knetsch & Thaler 1991) : **vérifié fermé** au passage précédent
-  (filtrage anti-robot `pubs.aeaweb.org`, 403). Non retenté ici, conformément au périmètre.
-- **Comptabilité mentale / théorie positive du choix du consommateur** (Thaler 1980) :
-  **fermé pour motif de droits** (revue Elsevier, seul miroir un site de cours). Non retenté.
-- **Comportement économique psychologique** (Katona 1951) : prêt numérique contrôlé.
-- **Albou 1981 en *Journal of Economic Psychology*** : Elsevier, `oa: closed`.
+Distinguer, ici plus qu'ailleurs, ce qui est **vérifié fermé** de ce qui est **non ouvert
+faute de budget**.
+
+**Vérifié fermé (constat d'accès, non retenté dans ce passage) :**
+
+- **Effet de dotation, aversion à la perte, biais de statu quo** dans leur formulation
+  canonique — Kahneman, Knetsch & Thaler (1991), *JEP* 5(1), DOI `10.1257/jep.5.1.193` :
+  filtrage anti-robot `pubs.aeaweb.org`, 403, vérifié au passage précédent. **Contournement
+  trouvé, et il est légitime** : les candidats n° 2 et n° 5 permettent d'instruire l'effet de
+  dotation par d'autres textes primaires ouverts, qui définissent l'effet et le discutent.
+- **Comptabilité mentale, théorie positive du choix du consommateur** — Thaler (1980),
+  *JEBO* 1(1), DOI `10.1016/0167-2681(80)90051-7` : fermé pour motif de droits. **Aucun
+  substitut ouvert trouvé dans ce passage** : la comptabilité mentale reste sans source.
+- **Comportement économique psychologique** — Katona (1951) : prêt numérique contrôlé.
+  **Substitut partiel trouvé** : Albou 1962 annonce une critique du programme de Katona et
+  Lauterbach (candidat n° 4). On peut donc instruire *la discussion française du programme
+  de Katona* ; on ne peut toujours pas instruire *Katona*.
+- **Albou, P. (1981), « Niveau de comportement et prise de conscience en psychologie
+  économique »**, *Journal of Economic Psychology*, DOI `10.1016/0167-4870(81)90037-4` :
+  OpenAlex donne `oa: closed`, revue Elsevier. Même motif de droits que Thaler 1980.
+- **Compte rendu de *Psychologie économique* dans l'*Economic Journal* (1903)**, DOI
+  `10.2307/2221341` : `oa: closed`.
+- **Tarde, tome 2 chez les Classiques des sciences sociales (UQAC)** : **route non
+  confirmée, et le motif n'est pas un refus d'accès.** Deux tentatives sur
+  `classiques.uqac.ca/.../psycho_economique_t2.pdf` — `curl` en `000` (connexion), `WebFetch`
+  en **503 Service Unavailable**. Le serveur était indisponible pendant le passage. **À
+  retenter** : c'est la route qui réglerait la réserve d'OCR du candidat n° 3.
+
+**Non ouvert faute de budget ou de dépôt, à ne pas confondre avec un vide :**
+
+- Les quatre articles d'Emmanuel Petit sur l'ultimatum et le dictateur, et cinq autres
+  pièces d'économie expérimentale francophone : **notices HAL sans fichier** (voir direction
+  2). Une route éditeur (Cairn, Érudit) n'a pas été essayée.
+- **Reynaud, P.-L., *La psychologie économique*** (l'ouvrage, dont Persée porte un compte
+  rendu de 1965 par J. Austruy) : l'ouvrage lui-même n'a pas été cherché. Année, éditeur et
+  ISBN **non établis** — ne pas les reconstituer.
+- Les six autres articles de la lignée repérés sur Persée (Albou 1968, 1978, 1984, 1993 ;
+  Albou 1962 bibliographie ; Austruy 1965) : `title-free`, **accès non constaté page à page**.
+- `DTIC_AD0130718` (1957), « A Theory of Individual Choice Behavior » : ni auteur ni accès
+  vérifiés, et probablement hors périmètre de toute façon.
 
 ---
 
 ## Angles morts
 
-- **Gallica n'a pas répondu** : `HTTP 403` sur son endpoint SRU (R2). C'est un **vide de
-  méthode**, pas un vide vérifié : la BnF porte certainement Tarde 1902 en mode texte, et
-  cette route n'a pas été ouverte.
-- **Crossref, Semantic Scholar, scite, Zotero** : non appelés (voir dernière section).
+**Vides vérifiés** (une recherche a eu lieu, elle a rendu un constat) :
+
+- **La veine des rapports techniques ne porte pas ce domaine.** Deux requêtes structurées sur
+  `dticarchive`, 1 345 résultats cumulés, une seule pièce approchante et hors objet. Le motif
+  est structurel : ce champ ne s'est pas constitué dans la littérature grise de la défense.
+  **Un passage suivant ne doit pas y revenir** sans raison neuve.
+- **Le canon anglophone reste fermé par trois causes distinctes**, et ce passage n'en a levé
+  aucune. Il a en revanche établi qu'**on peut instruire l'effet de dotation sans lui**.
+
+**Vides de méthode** (personne n'a regardé, ou l'instrument n'a pas répondu) :
+
+- **OpenAlex s'est épuisé en cours de passage** : `HTTP 429`, « Insufficient budget […]
+  Resets at midnight UTC », `retryAfter: 71621`. Les deux requêtes passées avant l'épuisement
+  ont été très productives (c'est OpenAlex qui a révélé la route UQAC et le corpus
+  Roche-Agussol). **Tout ce qu'OpenAlex aurait pu dire après R27 est un silence
+  d'instrument, pas une absence de littérature.**
+- **Gallica n'a pas été ouverte** : `HTTP 403` sur son endpoint SRU au premier appel, non
+  retenté. La BnF porte très probablement Tarde 1902 en mode texte, avec une couche OCR
+  possiblement meilleure que celle du scan Google du tome 2.
+- **Cairn, OpenEdition, Érudit, theses.fr, Persée-OAI** : non appelés. Érudit et Cairn sont
+  les routes les plus prometteuses pour les articles d'économie expérimentale francophone
+  repérés sans fichier sur HAL (*L'Actualité économique*, *Revue d'économie politique*,
+  *Négociations*).
+- **Roche-Agussol, Maurice**, troisième jalon de la lignée entre Tarde et Reynaud, apparu par
+  R1 et R7 (items `IA41555614_0038`, 1929 ; `jstor-1883573`, 1920) : **repéré, aucun accès
+  vérifié**. C'est l'angle mort le plus regrettable de ce passage, parce que le périmètre ne
+  connaissait pas ce nom et que les items sont sur une plateforme qui a répondu à tous les
+  autres appels.
+- **Le PDF du candidat n° 5 est servi mais n'a pas été lu**, faute d'extracteur PDF dans
+  l'environnement. Vide d'outillage, pas vide d'accès.
+
+**Ce qui n'existe plus comme catégorie** : ce domaine étant le dernier, il n'y a pas d'« angle
+mort vers un domaine fermé ». Deux candidats touchent des voisins **ouverts** et la frontière
+est déjà tranchée depuis l'autre côté : Brunet & Havet (marché du travail) revient de
+`sociology-of-work` et reste ici ; `DTIC_AD0130718`, s'il devait être instruit, partirait vers
+`decision-science` ou `measurement-theory`.
 
 ---
 
 ## Proposition de thèmes
 
-*(section en cours — aucun thème ne se déclare à ce stade)*
+**Aucun thème n'est déclaré ici** — ils se déclarent après le contrôle aveugle des cartes du
+premier lot. Ce qui suit est une proposition, avec le nombre de candidats qui la porteraient.
+
+1. **La lignée francophone de la psychologie économique** — **7 candidats potentiels** :
+   Tarde t. 1 (n° 1), Tarde t. 2 (n° 3), Albou 1962 (n° 4), plus les quatre pièces du legs
+   (Reynaud 1962, Albou 1982 ×2, Bonein 2008). C'est le seul thème largement porté, et il est
+   soutenu par une secondaire ouverte (Milet 1982) et par une controverse interne documentée
+   (Albou contre Reynaud, 1962). **Réserve** : ce thème risque d'être un thème d'*histoire de
+   la discipline* plutôt que de *concepts*. S'il est déclaré, il faut qu'il porte des concepts
+   (la valeur, le prix, le besoin, l'objet de la discipline), pas une chronologie.
+2. **L'effet de dotation et la contestation de son mécanisme** — **2 candidats** (n° 2 et
+   n° 5). **Signal à ne pas manquer : les deux sont du même collectif d'auteurs** (Baratgin,
+   Godin, Jamet), l'un en anglais, l'autre en français. Ce n'est **pas** une double
+   attestation indépendante, et un thème bâti sur eux seuls reposerait sur une seule équipe.
+3. **La valeur et le prix comme faits psychologiques** — **2 candidats**, mais tous deux
+   tirés de Tarde (t. 1 et t. 2) : **il recoupe entièrement le thème 1** et ne doit pas être
+   déclaré en plus de lui sans arbitrage.
+4. **Réciprocité et économie expérimentale** — **1 seul candidat** (Bonein 2008, hérité).
+   **Thème mono-candidat : à ne pas déclarer en l'état.** La direction 2 n'a produit aucun
+   second texte primaire ouvert avec résultat propre.
+5. **Comportement économique sur le marché du travail** — **1 seul candidat** (Brunet &
+   Havet, hérité). **Thème mono-candidat : à ne pas déclarer en l'état.**
+
+**Bilan d'accès du passage** : **5 candidats avec accès vérifié positif** (n° 1 à 5), dont 4
+lus sur la pièce et 1 servi mais non lu ; **1 appui secondaire vérifié** (Milet 1982) ; **1
+candidat ouvert mais écarté sur le fond** (Jacquemet et al. 2014) ; **6 pièces héritées déjà
+vérifiées**. La cible de 6 à 10 candidats vérifiés n'est pas atteinte : il y en a 5. Les deux
+qui manquent sont à portée immédiate et identifiés — Roche-Agussol et une seconde page de
+corps sur Reynaud 1962.
 
 ---
 
 ## Bases et plateformes non appelées
 
-- **Crossref**, **Semantic Scholar**, **scite**, **Zotero (bibliothèque locale)** : aucun
-  appel, le MCP `documentary` n'étant pas connecté et aucune de ces bases n'ayant été
-  interrogée par `curl` dans ce passage.
-- **Cairn**, **OpenEdition**, **theses.fr**, **Érudit** : non appelés.
-- **Gallica** : appelé une fois, refus `403`.
+- **Le serveur MCP `documentary` n'était pas connecté** (dépendance `node_modules`, installée
+  après le démarrage du client MCP). Aucun appel `search_literature`, `search_francophone`,
+  `verify_reference`, `zotero_search`.
+- **Crossref** : **non appelé par API**, dans cette session, ni par MCP ni par `curl`. Aucun
+  DOI n'a été validé contre Crossref ; les DOI cités ici viennent des notices Persée, des
+  PDF eux-mêmes ou d'OpenAlex.
+- **Semantic Scholar** : non appelé.
+- **scite** : non connecté. Conséquence directe : **aucun candidat ne porte d'indication
+  quantitative de reprise ou de contestation.** Les signaux de contestation écrits plus haut
+  (Albou contre Reynaud, Milet sur l'antériorité de Tarde, Baratgin et al. contre
+  l'explication standard de l'effet de dotation) ont été lus **dans les textes eux-mêmes**,
+  pas dans une base de citations. Rappel du périmètre : scite est de toute façon faible sur
+  les ouvrages, donc sur Tarde.
+- **Zotero (bibliothèque locale)** : non interrogée. On ne sait pas si le dépôt possède déjà
+  Tarde 1902 ou les traités d'économie expérimentale repérés en notice.
+- **OpenAlex** : appelé **deux fois**, puis **épuisé (429, quota journalier)**. Ce n'est pas
+  une absence de couverture.
+- **Gallica** : appelée une fois, **403**.
+- **Cairn, OpenEdition, Érudit, theses.fr, HathiTrust, Google Books** : non appelées.
+- **Persée** : appelée par recherche HTML et par notice d'article (`curl`, `HTTP 200`), et
+  par endpoint page (**`WebFetch` uniquement** — `curl` y est réinitialisé, voir la
+  correction de méthode en direction 1).

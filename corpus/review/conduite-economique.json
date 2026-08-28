@@ -1,0 +1,48 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "conduite-economique",
+  "slug": "conduite-economique",
+  "status": "IN_REVIEW",
+  "title": "Conduite et comportement",
+  "themes": ["psychologie-economique"],
+  "theme_labels": {
+    "psychologie-economique": "Psychologie économique"
+  },
+  "domain": "behavioral-economics",
+  "authors": [{ "name": "Paul Albou", "app_author_id": null }],
+  "attribution_note": "Article signé du seul Paul Albou. Il donne la distinction pour la sienne et la date : il écrit l'avoir défendue dans des réunions internationales où elle n'a pas toujours été comprise, et rappelle qu'une table ronde de l'Association française de psychologie économique, tenue à Paris le 30 septembre 1980, l'a reprise à son compte.",
+  "quotation": {
+    "text": "[…] nous estimons que la Psychologie économique ne s'intéresse qu'aux « conduites économiques », c'est-à-dire à des comportements significatifs.",
+    "reference": "Paul Albou, « Contribution à une définition de la psychologie économique », Bulletin de psychologie, tome XXXVI, n° 358, 1982, p. 195-205, section B, « Conduite et comportement »",
+    "locator": "p. 201",
+    "language": "fr",
+    "original_text": null,
+    "original_language": null,
+    "translation": { "kind": "none", "translator": null, "edition": null }
+  },
+  "hook": "Enregistrer un comportement suffit-il, si l'on ignore ce qu'il veut dire ?",
+  "summary": "Contre le comportement enregistré sans sa signification, Albou ne retient que la conduite : un comportement significatif, situé, continu, qui veut dire quelque chose.",
+  "sources": [
+    {
+      "label": "Paul Albou, « Contribution à une définition de la psychologie économique », Bulletin de psychologie, tome XXXVI, n° 358, 1982, p. 195-205.",
+      "kind": "primary",
+      "locator": "p. 201-202",
+      "doi_isbn": "10.3406/bupsy.1982.12417",
+      "url": "https://www.persee.fr/doc/bupsy_0007-4403_1982_num_36_358_12417",
+      "consulted": "full-text"
+    }
+  ],
+  "review": { "verdict": "PENDING", "notes": [] },
+  "notes": [
+    "Aucune source secondaire n'a été ouverte sur ce lot, ni par la cartographie ni par la lecture primaire : la carte repose sur sa seule source primaire, et rien n'est établi de la réception de ce texte.",
+    "Le PDF complet servi par Persée à l'adresse docAsPDF répond HTTP 403. La lecture a été faite page par page sur l'endpoint page, les onze pages 195 à 205 en HTTP 200, et croisée avec les images de page servies par renderPage ; aucun bloc manquant n'a été constaté et le passage cité a été relu sur l'image de la page 201.",
+    "La couche OCR de Persée porte des fautes qui ne sont pas dans l'imprimé et qui n'ont pas été reprises : « Pierre-Louis Renaud » page 195 pour Reynaud, « septembre-octobre 1981 » page 195 là où le contexte impose 1881, et un doublement de mots page 205.",
+    "Deuxième fiche tirée du même article que « definition-de-la-psychologie-economique ». Le concept en est le pivot, mais il s'énonce séparément aux pages 201 et 202, sous l'intertitre propre « Conduite et comportement ». Si le contrôle juge que les deux fiches n'en font qu'une, c'est celle-ci qui doit céder : la définition de la discipline est l'objet déclaré de l'article.",
+    "La citation s'ouvre sur une coupe parce que la phrase imprimée commence par la partie adverse, les économistes français et beaucoup de psychologues qui parlent de comportement économique. La coupe retire l'adversaire, non la thèse.",
+    "L'apologue de la perle, page 202, aurait été la citation la plus parlante : le promeneur qui ramasse une perle n'a pas encore eu de conduite économique, et sa démarche ne revêt une vocation économique que s'il la conserve comme réserve de valeur au lieu de la dissoudre dans du vinaigre. Il ne tient pas sous 150 caractères, et toute coupe assez courte supprimait l'un des deux termes.",
+    "Le résumé n'épuise pas le concept : le motif antibehavioriste explicite chez Albou, l'appui sur Watson et la psychologie animale, la sémiologie généralisée dont les conduites relèveraient, et le fait que le caractère économique se lise sur les suites de l'acte et non sur l'acte pris à part ne sont pas portés à la carte.",
+    "Albou fonde la distinction sur la langue française et l'oppose à un usage anglophone, behavior étant selon lui « un terme massif ». Il ne discute pas le fait que l'anglais dispose aussi de conduct, et ne cite aucun auteur anglophone qui aurait fait la distinction dans sa propre langue. Cette limite est dans le texte et n'a pas été comblée depuis un commentaire extérieur.",
+    "Querelle d'antériorité avec l'autre auteur de ce lot, consignée et non tranchée : Albou revendique page 199 l'antériorité de ses éléments sur Pierre-Louis Reynaud, « Comme Reynaud, et avant même qu'il ne se préoccupe de ce problème », et écrit page 204 que Reynaud les a repris en 1974 « parfois sans mention d'origine ». Le corpus ne dispose d'aucune pièce du côté de Reynaud sur ce point, et la carte ne prend pas parti.",
+    "Le thème n'est pas déclaré : « psychologie-economique » est provisoire et inconnu de l'application, en attente du contrôle aveugle. Le rattachement est porté par le champ domain."
+  ]
+}
