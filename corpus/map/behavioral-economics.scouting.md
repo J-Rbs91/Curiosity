@@ -4,7 +4,7 @@ Balayage d'ouverture du 28 août 2026. **Onzième et dernier domaine** du corpus
 aucun domaine n'est fermé : un candidat mal placé part chez un voisin ouvert ou ne s'instruit
 pas.
 
-**requêtes consommées : 17/30**
+**requêtes consommées : 23/30**
 
 ## Méthode et budget réseau
 
@@ -41,6 +41,12 @@ fichiers préfixés `be-`.
 | R15 | Persée — page Albou 1962 (`…_16_211_T1_0001_0000`) | **000** | 0 o (échec de connexion, **pas un 404** — à retenter) |
 | R16 | Persée — page Milet 1982 (`…_35_357_T1_0907_0000`) | **404** | 0 o (motif d'URL à corriger : fascicule probablement découpé en T2/T3) |
 | R17 | `archive.org/advancedsearch` — `dticarchive` resserré sur l'expérimentation | 200 | 13 509 o |
+| R18 | Persée — notice article Milet 1982 | 200 | 81 909 o |
+| R19 | Persée — page Albou 1962, 2ᵉ tentative `curl` | **000** | 0 o (connexion réinitialisée) |
+| R20 | Persée — notice article Albou 1962 | 200 | 198 419 o |
+| R21 | Persée — page Milet 1982 en `_F_` | **000** | 0 o (connexion réinitialisée) |
+| R22 | Persée — page Albou 1962 en `--http1.1` | **000** | 0 o (`Recv failure: Connection reset by peer`) |
+| R23 | **`WebFetch`** — page Albou 1962, même URL que R19/R22 | **200** | texte rendu |
 
 ---
 
@@ -214,26 +220,69 @@ OCR n'a pas la même qualité**.
 
 ## Direction 1 — la lignée francophone de la « psychologie économique »
 
-**Tarde, la source de la lignée, semble ouverte par deux routes indépendantes** (Internet
-Archive sans restriction d'accès ; Classiques des sciences sociales). C'est le résultat le
-plus important de ce balayage à ce stade, et il doit être confirmé sur l'OCR avant d'être
-tenu pour acquis.
+C'est la voie principale, et elle a rendu davantage que les deux autres réunies. **Tarde est
+ouvert et vérifié** (candidats 1 et 3). Autour de lui, une seule requête de recherche Persée
+(R8), exploitée localement sans consommer d'appel supplémentaire, a produit **dix notices
+supplémentaires de la lignée, toutes marquées `title-free`** :
 
-Autres pièces de la lignée repérées par OpenAlex (R7), **non vérifiées** :
+| id Persée | auteur | année | titre | pages |
+|---|---|---|---|---|
+| `bupsy_0007-4403_1962_num_16_211_8918` | Albou, Paul | 1962 | **Initiation à la psychologie économique** | pp. 1-81 |
+| `bupsy_0007-4403_1962_num_16_212_9457` | Albou, P. | 1962 | Initiation à la psychologie économique : bibliographie sommaire | pp. 156-157 |
+| `bupsy_0007-4403_1982_num_35_357_12030` | Milet, Jean | 1982 | **Gabriel Tarde (1843-1904) : créateur de la psychologie économique** | pp. 907-913 |
+| `bupsy_0007-4403_1978_num_32_338_11565` | Albou, Paul | 1978 | La psychologie économique aujourd'hui (Augsbourg, 27-29 juillet 1978) | pp. 75-85 |
+| `bupsy_0007-4403_1984_num_37_364_12592` | Albou, Paul | 1984 | Psychologie économique et problèmes de travail (VIII<sup>e</sup> colloque, Bologne, 1983) | pp. 438-439 |
+| `bupsy_0007-4403_1993_num_46_412_15431` | Albou, Paul | 1993 | Psychologie économique et tourisme international | pp. 794-802 |
+| `colan_1268-7251_1968_num_19_1_5048` | Albou, Paul | 1968 | Formation : la psychologie économique et les consommateurs | pp. 116-118 |
+| `tiers_0040-7356_1965_num_6_23_2145…` | Austruy, Jacques | 1965 | compte rendu de **P.-L. Reynaud, *La psychologie économique*** | pp. 790-791 |
 
-- **Roche-Agussol, Maurice** — « Étude bibliographique des sources de la psychologie
-  économique chez les Anglo-Américains » (1929), item Internet Archive `IA41555614_0038`
-  (repéré en R1). Et un compte rendu anglophone de son travail : Dickinson, Z. C. (1920),
-  « Roche-Agussol's *Psychologie Économique chez les Anglo-Américains* », *QJE*, DOI
-  `10.2307/1883573` — `oa: closed`, mais item Internet Archive `jstor-1883573` repéré en R1.
-  **Roche-Agussol est un nom que le périmètre ne portait pas** : il constitue un troisième
-  jalon de la lignée, entre Tarde et Reynaud.
-- Albou, P. (1981), « Niveau de comportement et prise de conscience en psychologie
-  économique », *Journal of Economic Psychology*, DOI `10.1016/0167-4870(81)90037-4` —
-  OpenAlex donne `oa: closed`. Revue Elsevier : **à traiter comme fermé**, même motif de
-  droits que Thaler 1980.
-- Un compte rendu de 1903 de *Psychologie économique* dans l'*Economic Journal*, DOI
-  `10.2307/2221341`, `oa: closed`.
+**La lignée que le périmètre décrit est donc entièrement documentée sur une seule
+plateforme ouverte** : Tarde (1902) → Reynaud (1962, plus un compte rendu de son livre en
+1965) → Albou (1962, 1968, 1978, 1982 ×2, 1984, 1993) → Bonein (2008). Le legs d'entrée en
+avait quatre pièces ; il y en a au moins douze.
+
+### Correction de méthode sur l'endpoint page de Persée — à reprendre par les passages suivants
+
+Deux constats coûteux, faits ici, qui contredisent la consigne d'entrée :
+
+1. **Le segment central du nom de page n'est pas toujours `T1`.** Il vaut `T1` sur Albou 1962
+   (fascicule 16-211), mais **`F`** sur Milet 1982 (fascicule 35-357) : la page 907 en `T1`
+   rend **404**, et la notice de l'article publie la forme
+   `…_35_357_F_0907_0000`. Le segment ne se présume pas : **il se lit sur la notice de
+   l'article** (`https://www.persee.fr/doc/<id_article>`, HTTP 200), qui liste une URL de
+   page par page de l'article. Cette route de notice a fonctionné à chaque appel.
+2. **`curl` est réinitialisé par Persée sur le chemin `/doc/page/` dans cette session**, avec
+   `Recv failure: Connection reset by peer` (curl 35) — quatre tentatives, y compris en
+   `--http1.1`, toutes en `000`. Ce n'est **pas** un 404 et **pas** un vide : le proxy
+   sortant est sain (`recentRelayFailures: []`). **`WebFetch` passe sur la même URL et rend
+   le texte.** C'est la route à employer pour ce chemin.
+
+### Albou, Paul (1962). « Initiation à la psychologie économique » — VÉRIFIÉ OUVERT, à qualifier
+
+- **Notice constatée** : `https://www.persee.fr/doc/bupsy_0007-4403_1962_num_16_211_8918`,
+  **HTTP 200, 198 419 octets**. `DC.rights: free`, `DC.language: fre`, `DC.creator: Albou,
+  Paul`, `DC.date: 1962`, DOI **`10.3406/bupsy.1962.8918`**. La notice lie **82 URL de
+  page** (`…_T1_0001_0000` à `…_T1_0081_0000`, plus une page `P_0001_0000`) : l'article
+  entier est servi page à page, ce n'est pas un article servi partiellement.
+- **Page 1 lue** (par `WebFetch`, `curl` étant réinitialisé) : c'est le **plan détaillé** du
+  texte. On y lit le chapitre IV, « Domaine de la psychologie économique », dont le § 1 est
+  « **Le programme de Katona et Lauterbach. 1. Présentation ; 2. Critique de ce
+  programme.** », puis un § 2 qui découpe le domaine (théorie générale du comportement
+  économique, psychologie du consommateur, psychologie du producteur, le marché, la
+  psychologie économique appliquée, « la psychiatrie économique : la fraude fiscale,
+  psychopathologie de la transposition, l'angoisse économique »), puis un § 3 sur les
+  rapports avec la psychologie, la psychologie sociale, l'économique et la sociologie
+  économique.
+- **Ce que cela vaut pour le test d'entrée** : une monographie de 81 pages qui **critique
+  explicitement le programme de Katona** peut porter une thèse propre — et ce serait
+  précieux, puisque **Katona lui-même est vérifié fermé** (prêt numérique). Mais le plan lu
+  est aussi celui d'un texte d'orientation, et le périmètre a déjà rejeté deux fois ce genre
+  au motif de la condition 2. **Statut : accès vérifié, thèse non établie.** Une seule page
+  de contenu suffira à trancher, et elle n'a pas été lue faute de budget.
+- **ACCESSIBILITÉ** : texte intégral, page par page, par `WebFetch`.
+- **CITABLE** : oui, en français, sous réserve que la thèse existe. Attention au piège que le
+  périmètre signale : une page servie n'est pas une page lue, et la page 1 lue ici est un
+  sommaire, non du corps de texte.
 
 ---
 
