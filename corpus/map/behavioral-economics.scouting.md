@@ -4,7 +4,7 @@ Balayage d'ouverture du 28 août 2026. **Onzième et dernier domaine** du corpus
 aucun domaine n'est fermé : un candidat mal placé part chez un voisin ouvert ou ne s'instruit
 pas.
 
-**requêtes consommées : 25/30**
+**requêtes consommées : 27/30**
 
 ## Méthode et budget réseau
 
@@ -49,6 +49,8 @@ fichiers préfixés `be-`.
 | R23 | **`WebFetch`** — page Albou 1962 p. 1, même URL que R19/R22 | **200** | texte rendu |
 | R24 | **`WebFetch`** — page Milet 1982 p. 907 (forme `_F_`) | **200** | texte rendu |
 | R25 | **`WebFetch`** — page Albou 1962 p. 10 (corps de texte) | **200** | texte rendu |
+| R26 | HAL — notice `hal-04108632` (résumé, pagination) | 200 | 3 290 o |
+| R27 | OpenAlex — concepts francophones OA | **429** | 350 o (**quota journalier épuisé**, `retryAfter: 71621 s`) |
 
 ---
 
@@ -262,6 +264,46 @@ OCR n'a pas la même qualité**.
   définition de Wärneryd et le désaccord avec Reynaud est court et autonome. **Attention** :
   81 pages, dont la p. 1 est un sommaire — le repérage de la page utile coûte des appels.
 
+### 5. Jamet, F., Baratgin, J. & Godin, P. (2017). « Don, droit, coutume, cultures. Études expérimentales sur "l'effet de dotation" » — FICHIER VÉRIFIÉ SERVI, TEXTE NON LU
+
+C'est le pendant francophone du candidat n° 2, par les mêmes trois auteurs, cinq ans plus
+tôt et sous un ordre de signature différent.
+
+- **Concept pressenti** : **l'effet de dotation expliqué par le droit coutumier**, contre les
+  explications classiques. Le résumé, lu sur la notice HAL, annonce « une série de
+  recherches originales développée depuis quatre années par les auteurs », rappelle
+  « brièvement ce qu'est l'effet de dotation », expose « les principales explications
+  classiques », puis en présente une nouvelle « étayée sur la base d'une série d'études »,
+  qui mobilise « le droit et, plus spécifiquement, le droit coutumier » et « une
+  compréhension anthropologique fine ».
+- **Auteurs** : Frank Jamet, Jean Baratgin, Patrice Godin.
+- **Périmètre** : dedans, sous la même réserve de frontière que le candidat n° 2 — le résumé
+  qualifie lui-même l'effet de dotation de « l'un des biais cognitifs les plus connus en
+  sciences cognitives » et situe le travail « dans le cadre de travaux sur la prise de
+  décision ». **C'est la formule qui appellerait `decision-science`.** Ce qui le maintient
+  ici est l'objet : un échange de biens réels, et la reprise explicite du paradigme d'échange.
+  À trancher par le lecteur primaire, sur le texte et non sur le résumé.
+- **Source primaire** : chapitre in *Décision et prise de décision*, 2017, **pp. 123-152**,
+  langue déclarée `fr`. Éditeur et ISBN **non établis** : le champ `publisher_s` est absent
+  de la notice HAL, et aucun ISBN n'a été vérifié. **Ne pas reconstituer cette référence de
+  mémoire.**
+- **Accès constaté** : `https://hal.science/hal-04108632/document`, **HTTP 200, 499 074
+  octets, `application/pdf`**. Notice HAL vérifiée (`HTTP 200`, 3 290 o), `fileMain_s`
+  présent.
+- **Limite à ne pas maquiller** : **le texte du PDF n'a pas pu être extrait dans cette
+  session.** Les polices du fichier n'exposent ni `/Differences` ni table exploitable par
+  l'extracteur écrit sur place, et l'environnement ne dispose ni de `pdftotext` ni de
+  `pypdf`. **Le fichier est servi, son contenu n'a pas été lu.** C'est une limite de mon
+  outillage, pas une restriction d'accès : un lecteur muni d'un lecteur PDF ordinaire
+  l'ouvrira. **Statut : accès vérifié positif, lecture à faire.**
+- **SIGNAL** : même contestation de mécanisme que le candidat n° 2, formulée cette fois en
+  français et adossée au droit coutumier plutôt qu'à la pragmatique. Les deux textes sont du
+  même collectif : **ce n'est pas une confirmation indépendante**, et il ne faut pas les
+  compter deux fois comme deux appuis.
+- **ACCESSIBILITÉ** : PDF intégral servi ; résumé lu ; corps non lu.
+- **CITABLE** : vraisemblablement, en français, avec pagination d'ouvrage (123-152). À
+  confirmer sur le texte.
+
 ### Appui secondaire vérifié — Milet, Jean (1982). « Gabriel Tarde (1843-1904) : le créateur de la psychologie économique »
 
 Ce n'est pas un candidat mais **la littérature secondaire francophone qui manquait aux
@@ -357,16 +399,50 @@ Deux constats coûteux, faits ici, qui contredisent la consigne d'entrée :
 
 ## Direction 2 — économie expérimentale, réciprocité, jeux
 
-Le gisement HAL est réel mais **la majorité des références repérées n'ont pas de fichier
-déposé** (`fileMain_s` absent) : sur les 40 premiers résultats de R3, seuls 8 portent un
-PDF. Les travaux d'**Emmanuel Petit** sur le jeu de l'ultimatum et le jeu du dictateur
-(`hal-00650140`, `hal-00650146`, `hal-00646554`, `hal-00650178`) sont **tous en notice
-seule** : repérés, non accessibles par HAL.
+Le legs y a déjà une entrée ouverte (**Bonein 2008**, réciprocité, Persée). Deux requêtes HAL
+(R3, R6) ont cartographié le champ francophone, et le résultat est net : **le champ est
+abondant en notices et pauvre en fichiers**. Sur les 40 premiers résultats de R3, **8
+seulement portent un PDF déposé**.
 
-Manuels et traités de référence du champ francophone, repérés en notice (utiles pour
-cartographier, **non citables**) : Eber & Willinger, *L'économie expérimentale* (La
-Découverte, `hal-02833413`, `hal-03701292`) ; Jacquemet, Le Lec & L'Haridon, *Précis
-d'économie expérimentale* (`halshs-02283347`).
+**Ce qui est repéré et fermé sur HAL, faute de dépôt** — c'est un vide vérifié, pas un vide
+de méthode : les quatre articles d'**Emmanuel Petit** sur le jeu de l'ultimatum et le jeu du
+dictateur (`hal-00650140`, *Négociations*, 2010 ; `hal-00650146`, *Cahiers internationaux de
+psychologie sociale*, 2009 ; `hal-00646554`, avec S. Rouillon, *Négociations*, 2010 ;
+`hal-00650178`, avec A. Tcherkassof) sont **tous en notice seule**. Même chose pour
+`hal-01723719` (Attanasi & Boun My, *L'Actualité économique*, 2016, jeu du dictateur et jeu
+de la confiance), `hal-02634673` (Ibanez, Moureau & Roussel, *Revue d'économie politique*,
+2014) et `halshs-00661110` (Villeval, biens publics et préférences sociales, 2011).
+
+**Ce qui est ouvert mais écarté sur le fond** — et le motif est celui, déjà appliqué deux
+fois en psychologie du travail, du texte d'orientation sans thèse :
+
+- **Jacquemet, N., L'Haridon, O. & Vialle, I. (2014), « Marché du travail, évaluation et
+  économie expérimentale »**, *Revue française d'économie*, HAL `halshs-01082352`. **Accès
+  vérifié : HTTP 200, 474 593 octets, `application/pdf`**, texte extrait et lu. Le résumé
+  déclare : « L'objectif de cet article est de présenter, au travers d'un cadre général
+  d'analyse et d'exemples d'applications, l'intérêt de l'économie expérimentale pour
+  l'évaluation des politiques publiques sur le marché du travail. » L'introduction lue
+  définit la méthode expérimentale et énumère ses avantages de contrôle. **Aucun écart
+  orienté n'y est établi : c'est une présentation de méthode.** Condition 2 non satisfaite —
+  **candidat non retenu, accès pourtant ouvert.** Il est consigné ici pour qu'un passage
+  suivant ne le redécouvre pas comme une trouvaille.
+- Mêmes réserves, non vérifiées faute de budget, sur `halshs-00921105` (Jacquemet, L'Haridon
+  & Morin, « Économie expérimentale et comportements : **introduction** », RFE 2013),
+  `halshs-01562649` (Jacquemet & L'Haridon, introduction, *L'Actualité économique* 2016) et
+  `halshs-00879205` (Ferey, Gabuthy & Jacquemet, « L'apport de l'économie expérimentale dans
+  l'élaboration des politiques publiques », RFE 2013). Les trois portent un PDF déclaré ;
+  **une introduction de numéro est le cas type du rejet par la condition 2.**
+
+**Manuels et traités repérés, utiles pour cartographier et non citables comme primaires** :
+Eber & Willinger, *L'économie expérimentale* (`hal-02833413`, `hal-03701292`) ; Jacquemet,
+Le Lec & L'Haridon, *Précis d'économie expérimentale* (`halshs-02283347`). Aucun n'a de
+fichier déposé.
+
+**Ce que cette direction n'a pas produit, et qu'il faut dire** : aucun texte primaire ouvert
+présentant un **résultat expérimental propre** sur l'ultimatum, le dictateur, la confiance ou
+les biens publics n'a été atteint dans ce passage, en dehors de Bonein 2008 hérité. Ce n'est
+pas un vide vérifié du champ : c'est un vide d'accès sur HAL, et deux plateformes qui
+pourraient le combler — **Cairn et Érudit** — n'ont pas été appelées.
 
 ---
 
