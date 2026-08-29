@@ -64,5 +64,9 @@ Deux tours de correction au maximum.
 - Fabriquer une citation, la recomposer à partir de plusieurs pages, ou reprendre comme
   parole de l'auteur une phrase écrite par un texte qui le cite. `quotation` est
   facultative : pas de passage citable établi, pas de citation.
+- Publier une citation dans une autre langue que le français. Le corpus lit des textes
+  anglais, allemands, russes ; la carte, elle, se lit en français. Le passage se traduit,
+  l'original va dans `original_text`, et la traduction se déclare — `translation.kind` à
+  `none` ne vaut que pour un auteur qui écrivait en français.
 - Écrire une note de dossier dans un champ qui s'affiche (`label`, `locator`,
   `attribution_note`). Elle va dans `notes`.

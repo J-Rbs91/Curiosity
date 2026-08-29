@@ -20,14 +20,16 @@
   "hook": "Sur deux machines, que change vraiment l'ordre dans lequel les pièces passent ?",
   "summary": "La charge du second poste ne dépend pas de l'ordre : le temps total, c'est ce travail plus l'attente du poste aval. L'ordonnancement n'agit que sur cette attente.",
   "quotation": {
-    "text": "The rule yields (5, 1, 4, 3, 2) as the minimal order with a total time of 47 units […]. For the reversed order, the total time is 78 […].",
+    "text": "La règle donne (5, 1, 4, 3, 2) comme ordre minimal, avec un temps total de 47 unités […]. Pour l'ordre inverse, le temps total est de 78 […].",
     "reference": "Richard Bellman, Mathematical Aspects of Scheduling Theory, RAND Corporation, rapport P-651, révisé le 23 mai 1955.",
     "locator": "p. 15",
-    "language": "en",
+    "language": "fr",
     "original_text": "The rule yields (5, 1, 4, 3, 2) as the minimal order with a total time of 47 units, and 4 units of idle time. For the reversed order, the total time is 78, the longest time.",
     "original_language": "en",
     "translation": {
-      "kind": "none"
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (chaîne Curiosity, session du 29 août 2026). Aucune traduction française publiée du rapport RAND P-651 n'a été identifiée. Les coupes sont celles de la citation anglaise, inchangées : la première retire « and 4 units of idle time », la seconde « the longest time ». « Units » est laissé en « unités » : Bellman ne donne pas d'unité de temps.",
+      "edition": null
     }
   },
   "sources": [

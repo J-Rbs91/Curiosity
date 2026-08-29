@@ -28,14 +28,16 @@
   "hook": "Faut-il refaire le calcul chaque mois, ou appliquer une formule fixe ?",
   "summary": "Approcher les coûts de l'atelier par une forme quadratique rend des règles linéaires : le calcul lourd est fait une fois, la conduite mensuelle devient une formule.",
   "quotation": {
-    "text": "We obtain a set of linear equations, and then invert the matrix of these equations to obtain the decision rules.",
+    "text": "Nous obtenons un système d'équations linéaires, puis nous inversons la matrice de ces équations pour obtenir les règles de décision.",
     "reference": "Charles C. Holt, Franco Modigliani et Herbert A. Simon, A Linear Decision Rule for Production and Employment Scheduling, O.N.R. Research Memorandum n° 30, 1955.",
     "locator": "p. 24",
-    "language": "en",
+    "language": "fr",
     "original_text": "Once the parameters of the cost function are estimated, the decision rule solution may be obtained by differentiating with respect to each decision variable. We obtain a set of linear equations, and then invert the matrix of these equations to obtain the decision rules. Fortunately, the results of this procedure can be reduced to a formula, requiring only a routine computation.",
     "original_language": "en",
     "translation": {
-      "kind": "none"
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (chaîne Curiosity, session du 29 août 2026). Aucune traduction française publiée de ce mémorandum n'a été identifiée. « A set of linear equations » est rendu par « un système d'équations linéaires » et non par « un ensemble » : c'est le terme mathématique français, et c'est bien un système, puisqu'on en inverse la matrice à la phrase suivante. Le passage cité est encadré, dans original_text, par les deux phrases qui l'entourent dans le texte.",
+      "edition": null
     }
   },
   "sources": [
