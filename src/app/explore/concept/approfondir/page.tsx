@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import { DeepeningDetail } from "./DeepeningDetail";
 import { ReadingLoader } from "@/components/ui/ReadingLoader";
+import "./deepening.css";
 
 /**
  * L'approfondissement d'une carte, le concept étant désigné par `?c=<slug>`.
