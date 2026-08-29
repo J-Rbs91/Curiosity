@@ -6,13 +6,22 @@ existe pour qu'une reprise reparte des fichiers, et non de la mémoire de quelqu
 Ce fichier dit ce que le corpus **est**. Ce qui lui **manque**, et par quel bout le prendre,
 est dans [`corpus/RESTE-A-FAIRE.md`](RESTE-A-FAIRE.md).
 
-`npm run corpus:validate` : **104 enregistrements, 100 validés, 0 erreur, 80 avertissements.**
+`npm run corpus:validate` : **104 enregistrements, 100 validés, 0 erreur, 81 avertissements.**
 `npm run corpus:deepen` : **82 approfondissements pour 100 cartes validées**, 119 639 mots,
 1 459 en moyenne. Fin de sortie : **dix-huit cartes sans approfondissement**, cinq de la science
 de la décision, quatre de l'operations management, quatre de la psychologie du travail, trois de
 la sociologie du travail et deux de l'économie comportementale, et c'est le seul écart entre
 validé et servi.
-`npm test` : **480 tests, 0 échec.** `npm run lint` et `npm run corpus:build` : sans erreur.
+`npm test` : **482 tests, 0 échec.** `npm run lint` et `npm run corpus:build` : sans erreur.
+
+**Les cent cartes affichent leur citation en français.** Vingt-six d'entre elles la montraient
+encore en anglais : la fiche déclarait `translation.kind: "none"`, ce qui était exact — le texte
+affiché était bien dans sa langue d'origine — et ce qui laissait le lecteur d'une application
+française devant une phrase qu'il ne lit pas. Les vingt-six passages ont été traduits le 29 août,
+l'anglais conservé dans `original_text`, chaque traduction déclarée `in-house` avec ses choix de
+mot dans `translator`. `validate.mjs` refuse désormais de publier une carte dont la citation n'est
+pas en français ; une fiche encore en instruction n'y est qu'avertie, ce qui explique le
+quatre-vingt-unième avertissement, porté par `candidates/etat-de-controle-statistique.json`.
 
 **Les onze domaines déclarés sont instruits. Le corpus n'a plus aucun domaine vide.**
 `behavioral-economics` a été ouvert et instruit le 28 août, au passage 06 de la routine nocturne,

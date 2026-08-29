@@ -129,6 +129,23 @@ function checkQuotation(record, errors, warnings) {
     );
   if (isFilled(q.original_language) && !isFilled(t.kind))
     errors.push(`${at} : une langue d'origine est déclarée sans dire si le texte affiché est traduit`);
+
+  /*
+   * Une carte se lit en français. Vingt-six fiches ont été publiées avec leur citation en
+   * anglais, `translation.kind` à `none` : rien ne l'interdisait, puisque `none` déclare
+   * simplement que le texte affiché est dans sa langue d'origine — ce qui était vrai, et
+   * ce qui laissait quand même le lecteur devant une phrase qu'il ne lit pas. La langue
+   * d'affichage n'est donc plus une information, c'est une contrainte. Comme la longueur,
+   * elle bloque la publication sans interrompre le travail en cours : une fiche en
+   * instruction a le droit de garder son passage dans la langue où il a été lu.
+   */
+  if (isFilled(q.language) && !/^fr/i.test(q.language.trim())) {
+    const message =
+      `${at}.language : « ${q.language} » — la carte affiche du français ; traduisez le passage, ` +
+      `mettez l'original dans original_text et déclarez la traduction`;
+    if (record.status === "VALIDATED") errors.push(message);
+    else warnings.push(message);
+  }
 }
 
 /** Une référence introuvable n'existe pas ; une source non lue ne fonde rien. */

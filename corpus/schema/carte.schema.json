@@ -83,7 +83,10 @@
           "description": "La notice qui permet de rouvrir le texte, sans note de dossier : l'affichage est un affichage."
         },
         "locator": { "type": "string", "description": "Chapitre, section, page du passage cité." },
-        "language": { "type": ["string", "null"] },
+        "language": {
+          "type": ["string", "null"],
+          "description": "La langue de `text`, c'est-à-dire celle que le lecteur verra. Une carte validée affiche du français : un passage lu ailleurs se traduit, il ne se recopie pas."
+        },
         "original_text": {
           "type": ["string", "null"],
           "description": "Obligatoire dès que `text` est une traduction de notre fait : le lecteur doit pouvoir revenir au texte."

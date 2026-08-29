@@ -25,8 +25,9 @@ export const generatedConcepts: Concept[] = [
     "themeLabel": "Combien produire, combien en tenir",
     "attributionNote": "Concept coécrit par Charles C. Holt, Franco Modigliani et Herbert A. Simon, dont les trois noms se lisent sur la page de titre du mémorandum de recherche O.N.R. n° 30, daté de mai 1955.",
     "quotation": {
-      "text": "Order fluctuations should, in general, be absorbed partly by inventory, partly by overtime, and partly by hiring and layoffs […].",
-      "reference": "Charles C. Holt, Franco Modigliani et Herbert A. Simon, A Linear Decision Rule for Production and Employment Scheduling, O.N.R. Research Memorandum n° 30, 1955, p. 8"
+      "text": "Les fluctuations de commandes doivent […] être absorbées en partie par le stock, les heures supplémentaires, les embauches et les licenciements […].",
+      "reference": "Charles C. Holt, Franco Modigliani et Herbert A. Simon, A Linear Decision Rule for Production and Employment Scheduling, O.N.R. Research Memorandum n° 30, 1955, p. 8",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {
@@ -96,8 +97,9 @@ export const generatedConcepts: Concept[] = [
     ],
     "attributionNote": "Le nom du concept est de l'auteur : « Amplifying Regulation » est le titre du chapitre 14 d'An Introduction to Cybernetics, et Ashby emploie la tournure « an amplification of regulation » dans sa propre préface pour annoncer ce que fera la troisième partie du livre. Le titre français traduit donc un intitulé d'auteur, il n'est pas un baptême par un tiers. Le concept est un corollaire de la loi de la variété requise, qu'Ashby énonce lui-même au chapitre 11 du même ouvrage, et il s'appuie explicitement sur les sections du chapitre précédent : c'est un enchaînement interne à un livre d'un seul auteur.",
     "quotation": {
-      "text": "The law of Requisite Variety […] absolutely prohibits any direct and simple magnification but it does not prohibit supplementation.",
-      "reference": "W. Ross Ashby, An Introduction to Cybernetics, Londres, Chapman & Hall, 1956 (tirage lu : seconde impression, 1957), chapitre 14 « Amplifying Regulation », section 14/4 « Regulation and selection ». Édition électronique de 1999 préparée pour le Principia Cybernetica Web avec l'autorisation de la succession Ashby, ch. 14, section 14/4, p. 268"
+      "text": "La loi de la variété requise […] interdit absolument tout grossissement direct et simple, mais elle n'interdit pas la supplémentation.",
+      "reference": "W. Ross Ashby, An Introduction to Cybernetics, Londres, Chapman & Hall, 1956 (tirage lu : seconde impression, 1957), chapitre 14 « Amplifying Regulation », section 14/4 « Regulation and selection ». Édition électronique de 1999 préparée pour le Principia Cybernetica Web avec l'autorisation de la succession Ashby, ch. 14, section 14/4, p. 268",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {
@@ -228,8 +230,9 @@ export const generatedConcepts: Concept[] = [
     "themeLabel": "L'ordre dans lequel les choses passent",
     "attributionNote": "Le rapport RAND P-651, révisé le 23 mai 1955, est signé de Richard Bellman seul. Bellman y présente le résultat sur l'ordonnancement à deux postes comme celui de S. Johnson : il intitule ses paragraphes 3 et 4 « Lemmas of S. Johnson » et « The Result of S. Johnson », et renvoie pour la démonstration à l'article de Johnson paru en mars 1954. Ce qui revient à Bellman dans ces pages est l'exposition, l'exemple chiffré et une redérivation par la programmation dynamique.",
     "quotation": {
-      "text": "The rule yields (5, 1, 4, 3, 2) as the minimal order with a total time of 47 units […]. For the reversed order, the total time is 78 […].",
-      "reference": "Richard Bellman, Mathematical Aspects of Scheduling Theory, RAND Corporation, rapport P-651, révisé le 23 mai 1955, p. 15"
+      "text": "La règle donne (5, 1, 4, 3, 2) comme ordre minimal, avec un temps total de 47 unités […]. Pour l'ordre inverse, le temps total est de 78 […].",
+      "reference": "Richard Bellman, Mathematical Aspects of Scheduling Theory, RAND Corporation, rapport P-651, révisé le 23 mai 1955, p. 15",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {
@@ -377,8 +380,9 @@ export const generatedConcepts: Concept[] = [
     "themeLabel": "Ce qu'un procédé fait varier",
     "attributionNote": "Distinction exposée par W. A. Shewhart, seul auteur de l'ouvrage. Le terme d'assignable n'est pas revendiqué par lui : il écrit que ces causes « ont été appelées » ainsi, en rapportant une pratique antérieure de l'ingénierie d'inspection du système Bell, sans nommer personne.",
     "quotation": {
-      "text": "Hence, to secure control, the manufacturer must seek to find and eliminate assignable causes.",
-      "reference": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931, p. 14"
+      "text": "Donc, pour s'assurer la maîtrise, le fabricant doit chercher à trouver et à éliminer les causes assignables.",
+      "reference": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931, p. 14",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {
@@ -407,8 +411,9 @@ export const generatedConcepts: Concept[] = [
     "themeLabel": "Ce qui donne envie de s'y mettre",
     "attributionNote": "Rapport signé conjointement par J. Richard Hackman (Yale University) et Greg R. Oldham (University of Illinois), page de titre du Technical Report No. 4 du Department of Administrative Sciences de Yale, mai 1974. Les auteurs rattachent explicitement la théorie qu'ils y exposent à des travaux antérieurs : Turner et Lawrence (1965) et Hackman et Lawler (1971).",
     "quotation": {
-      "text": "The theory proposes that the three Critical Psychological States are created by the presence of five \"core\" job dimensions.",
-      "reference": "J. Richard Hackman et Greg R. Oldham, The Job Diagnostic Survey, Technical Report No. 4, Yale University, mai 1974, section « Conceptual Basis of the Instrument », p. 4"
+      "text": "La théorie pose que les trois états psychologiques critiques sont créés par la présence de cinq dimensions « centrales » de l'emploi.",
+      "reference": "J. Richard Hackman et Greg R. Oldham, The Job Diagnostic Survey, Technical Report No. 4, Yale University, mai 1974, section « Conceptual Basis of the Instrument », p. 4",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {
@@ -508,8 +513,9 @@ export const generatedConcepts: Concept[] = [
     "themeLabel": "Réaction à l'insatisfaction (Exit/Voice/Loyalty)",
     "attributionNote": "Le couple défection / prise de parole est d'Albert O. Hirschman, que Freeman cite dès son résumé. Ce qui revient à Freeman est de l'appliquer au syndicat et d'en éprouver le compromis dans l'entreprise, sur données individuelles.",
     "quotation": {
-      "text": "the grievance and arbitration system […] offers dissatisfied workers who are considering quitting an alternative means of expressing discontent […]",
-      "reference": "Richard B. Freeman, « The Exit-Voice Tradeoff in the Labor Market: Unionism, Job Tenure, Quits, and Separations », The Quarterly Journal of Economics, vol. 94, n° 4, juin 1980, p. 643-673, p. 645, section I"
+      "text": "le système de griefs et d'arbitrage […] offre aux salariés mécontents qui envisagent de partir un autre moyen d'exprimer leur mécontentement […]",
+      "reference": "Richard B. Freeman, « The Exit-Voice Tradeoff in the Labor Market: Unionism, Job Tenure, Quits, and Separations », The Quarterly Journal of Economics, vol. 94, n° 4, juin 1980, p. 643-673, p. 645, section I",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {
@@ -695,8 +701,9 @@ export const generatedConcepts: Concept[] = [
     ],
     "attributionNote": "Les textes lus sont signés de Powers seul ; Dag Forssell est l'éditeur du recueil de 2016, pas un coauteur ni un coauteur du concept. Powers désamorce lui-même le piège de datation : l'article de 1960 dont on fait souvent la naissance de la théorie est une coécriture avec R. K. Clark et R. L. MacFarland, et il n'a pas été ouvert ici. Le sous-titre du recueil, « An Overview of the Third Grand Theory in Psychology », est une formule de son éditeur ajoutée en 2016 et rapportée à un article de partisans : c'est une position revendiquée par l'auteur et par ses proches, pas un état constaté du champ.",
     "quotation": {
-      "text": "In which we see that behavior is the process by which we act on the world to control perceptions that matter to us",
-      "reference": "William T. Powers, Making Sense of Behavior: The Meaning of Control, Bloomfield (NJ), Benchmark Publications, chapitre 2 « Perceptual Control ». Extrait reproduit dans Dag Forssell (dir.), Perceptual Control Theory, Menlo Park (CA), Living Control Systems Publishing, 2016, p. 17 du livre, p. 147 du recueil"
+      "text": "Où l'on voit que le comportement est le processus par lequel nous agissons sur le monde pour contrôler les perceptions qui comptent pour nous",
+      "reference": "William T. Powers, Making Sense of Behavior: The Meaning of Control, Bloomfield (NJ), Benchmark Publications, chapitre 2 « Perceptual Control ». Extrait reproduit dans Dag Forssell (dir.), Perceptual Control Theory, Menlo Park (CA), Living Control Systems Publishing, 2016, p. 17 du livre, p. 147 du recueil",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {
@@ -850,8 +857,9 @@ export const generatedConcepts: Concept[] = [
     "themeLabel": "Choisir quand on ne sait pas",
     "attributionNote": "Chapitre signé de Glenn Shafer seul ; le recueil est dirigé par David E. Bell, Howard Raiffa et Amos Tversky, ce qui n'est pas une coécriture. Le texte n'est pas inédit : une note de la page 233 le donne pour première publication dans Statistical Science en 1986. Les postulats critiqués sont de L. J. Savage, cités d'après The Foundations of Statistics (1954), ouvrage qui n'a pas été ouvert. À ne pas confondre avec le chapitre 11 du même volume, cosigné par Shafer et Tversky.",
     "quotation": {
-      "text": "Thus subjective expected utility is just one of several possible tools for constructing a decision.",
-      "reference": "Glenn Shafer, « Savage revisited », dans David E. Bell, Howard Raiffa et Amos Tversky (dir.), Decision Making: Descriptive, Normative, and Prescriptive Interactions, Cambridge University Press, 1988, p. 193-234, p. 193, section 1 « Introduction »"
+      "text": "Ainsi l'utilité espérée subjective n'est que l'un des divers outils possibles pour construire une décision.",
+      "reference": "Glenn Shafer, « Savage revisited », dans David E. Bell, Howard Raiffa et Amos Tversky (dir.), Decision Making: Descriptive, Normative, and Prescriptive Interactions, Cambridge University Press, 1988, p. 193-234, p. 193, section 1 « Introduction »",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {
@@ -1304,8 +1312,9 @@ export const generatedConcepts: Concept[] = [
     "domain": "sociology-of-work",
     "attributionNote": "Taylor nomme et distingue lui-même les deux flâneries, la naturelle et la systématique : le terme est de lui, il n'a pas été forgé par un commentateur. Le passage cité figure dans The Principles of Scientific Management, mais Taylor l'y reproduit entre guillemets en le reprenant à sa propre communication Shop Management, lue devant l'American Society of Mechanical Engineers en juin 1903, ce qu'il annonce en toutes lettres à la page précédente. L'auteur est le même dans les deux textes ; seule la date de première formulation est antérieure au livre.",
     "quotation": {
-      "text": "Second, from more intricate second thought and reasoning caused by their relations with other men, which may be called systematic soldiering.",
-      "reference": "Frederick Winslow Taylor, The Principles of Scientific Management, New York et Londres, Harper & Brothers, 1919, chapitre I « Fundamentals of Scientific Management » (exemplaire de la Cornell University Library, Internet Archive), chap. I, p. 19"
+      "text": "Deuxièmement, d'une réflexion et d'un raisonnement plus élaborés, nés de leurs rapports avec autrui, qu'on peut appeler la flânerie systématique.",
+      "reference": "Frederick Winslow Taylor, The Principles of Scientific Management, New York et Londres, Harper & Brothers, 1919, chapitre I « Fundamentals of Scientific Management » (exemplaire de la Cornell University Library, Internet Archive), chap. I, p. 19",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {
@@ -1357,8 +1366,9 @@ export const generatedConcepts: Concept[] = [
     "themeLabel": "Ce qui donne envie de s'y mettre",
     "attributionNote": "Rapport signé conjointement par J. Richard Hackman (Yale University) et Greg R. Oldham (University of Illinois), page de titre du Technical Report No. 4 du Department of Administrative Sciences de Yale, mai 1974. Les auteurs rattachent explicitement la théorie qu'ils y exposent à des travaux antérieurs : Turner et Lawrence (1965) et Hackman et Lawler (1971).",
     "quotation": {
-      "text": "The theory is not expected to \"work\" with equal effectiveness for all individuals.",
-      "reference": "J. Richard Hackman et Greg R. Oldham, The Job Diagnostic Survey, Technical Report No. 4, Yale University, mai 1974, section « Conceptual Basis of the Instrument », p. 4"
+      "text": "On n'attend pas de la théorie qu'elle « marche » avec la même efficacité pour tous les individus.",
+      "reference": "J. Richard Hackman et Greg R. Oldham, The Job Diagnostic Survey, Technical Report No. 4, Yale University, mai 1974, section « Conceptual Basis of the Instrument », p. 4",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {
@@ -1383,8 +1393,9 @@ export const generatedConcepts: Concept[] = [
     "themeLabel": "L'ordre dans lequel les choses passent",
     "attributionNote": "Richard Bellman signe seul le rapport RAND P-651, révisé le 23 mai 1955, et ce paragraphe ne crédite aucun tiers. Bellman écrit toutefois lui-même que ces idées sont bien connues des praticiens et qu'une formulation mathématique précise lui semble difficile : il les met en forme, il ne les revendique pas.",
     "quotation": {
-      "text": "[…] a \"looser\" solution with more flexibility and slack, which is comparatively unaffected by minor variations, may be more desirable.",
-      "reference": "Richard Bellman, Mathematical Aspects of Scheduling Theory, RAND Corporation, rapport P-651, révisé le 23 mai 1955, p. 26"
+      "text": "[…] une solution plus « lâche », plus souple et dotée de marge, que les variations mineures affectent comparativement peu, peut être préférable.",
+      "reference": "Richard Bellman, Mathematical Aspects of Scheduling Theory, RAND Corporation, rapport P-651, révisé le 23 mai 1955, p. 26",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {
@@ -1681,8 +1692,9 @@ export const generatedConcepts: Concept[] = [
     ],
     "attributionNote": "Gordon Pask signe seul, et le concept n'a pas de nom chez lui : il avance « a pair of contentions », dont il n'intitule que la seconde, « Second Contention », et qu'il ne baptise jamais. Le titre de la carte est celui de l'article traduit littéralement, seul intitulé qui n'invente rien ; le rendu « historien naturel » est de nous, et « naturaliste » a été écarté parce que Pask récuse expressément le collectionneur classificateur, « he is not a meticulous and classifying person ». Ce texte n'est pas ce pour quoi la postérité retient Pask : sa théorie de la conversation est publiée une quinzaine d'années plus tard et n'a pas été consultée.",
     "quotation": {
-      "text": "[…] if an observer wishes to use any self-organizing potentialities […], then he must look at the network as though he were a natural historian.",
-      "reference": "Gordon Pask, « The Natural History of Networks », dans Marshall C. Yovits et Scott Cameron (dir.), Self-Organizing Systems. Proceedings of an Interdisciplinary Conference, 5 and 6 May, 1959, Oxford, Pergamon Press, 1960, p. 232-263, p. 232, « Introductory Remarks »"
+      "text": "[…] si un observateur veut user des capacités d'auto-organisation […], il lui faut regarder le réseau comme s'il était un naturaliste.",
+      "reference": "Gordon Pask, « The Natural History of Networks », dans Marshall C. Yovits et Scott Cameron (dir.), Self-Organizing Systems. Proceedings of an Interdisciplinary Conference, 5 and 6 May, 1959, Oxford, Pergamon Press, 1960, p. 232-263, p. 232, « Introductory Remarks »",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {
@@ -1883,8 +1895,9 @@ export const generatedConcepts: Concept[] = [
     ],
     "attributionNote": "La loi est d'Ashby seul, et son nom est de lui : il écrit « This is the law of Requisite Variety » au chapitre 11 d'An Introduction to Cybernetics, paru chez Chapman & Hall en 1956. Deux confusions sont à écarter. Ashby a redonné la loi en 1958 dans un article de la revue Cybernetica qui en conserve le nom ; la carte porte sur la formulation du livre de 1956, celle qui se démontre sur un tableau à double entrée. Et le corollaire le plus cité dans la littérature de gestion, « every good regulator of a system must be a model of that system », n'est pas dans ce livre et n'est pas signé du seul Ashby : il est de Roger C. Conant et W. Ross Ashby, en 1970, dans l'International Journal of Systems Science.",
     "quotation": {
-      "text": "This is the law of Requisite Variety. […] only variety in R can force down the variety due to D; variety can destroy variety.",
-      "reference": "W. Ross Ashby, An Introduction to Cybernetics, Londres, Chapman & Hall, 1956 (tirage lu : seconde impression, 1957), chapitre 11 « Requisite Variety ». Édition électronique de 1999 préparée pour le Principia Cybernetica Web avec l'autorisation de la succession Ashby, ch. 11, section 11/7, p. 207"
+      "text": "C'est la loi de la variété requise. […] seule la variété de R peut faire tomber la variété due à D ; la variété peut détruire la variété.",
+      "reference": "W. Ross Ashby, An Introduction to Cybernetics, Londres, Chapman & Hall, 1956 (tirage lu : seconde impression, 1957), chapitre 11 « Requisite Variety ». Édition électronique de 1999 préparée pour le Principia Cybernetica Web avec l'autorisation de la succession Ashby, ch. 11, section 11/7, p. 207",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {
@@ -1957,8 +1970,9 @@ export const generatedConcepts: Concept[] = [
     "themeLabel": "Ce qui donne envie de s'y mettre",
     "attributionNote": "Rapport technique coécrit par quatre auteurs, dans l'ordre imprimé sur la page de titre : Edwin A. Locke et Karyll N. Shaw (University of Maryland), Lise M. Saari et Gary P. Latham (University of Washington). Technical Report GS-1, daté de juin 1980 sur la page de titre. Le rapport est une revue de la littérature parue depuis 1968, et non une étude nouvelle : il consolide et chiffre une thèse que Locke avait déjà formulée seul en 1968, et que les auteurs eux-mêmes rattachent, page 1, à Ryan, à Lewin, à l'école de Wurtzbourg d'un côté, à la direction par objectifs et à Taylor de l'autre.",
     "quotation": {
-      "text": "There are at least four interrelated mechanisms by which goals regulate task performance",
-      "reference": "Edwin A. Locke, Karyll N. Shaw, Lise M. Saari et Gary P. Latham, Goal Setting and Task Performance: 1969-1980, Technical Report GS-1, University of Maryland, juin 1980, section « Mechanisms for Goal Setting Effects », p. 19"
+      "text": "Il y a au moins quatre mécanismes liés entre eux par lesquels les objectifs règlent la performance dans la tâche",
+      "reference": "Edwin A. Locke, Karyll N. Shaw, Lise M. Saari et Gary P. Latham, Goal Setting and Task Performance: 1969-1980, Technical Report GS-1, University of Maryland, juin 1980, section « Mechanisms for Goal Setting Effects », p. 19",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {
@@ -1985,8 +1999,9 @@ export const generatedConcepts: Concept[] = [
     "themeLabel": "Ce que la mesure fait au mesuré",
     "attributionNote": "La phrase citée est de la main de Marilyn Strathern : elle ouvre un paragraphe, sans guillemets ni appel de note. Mais elle resserre une formulation déjà publiée, celle par laquelle Keith Hoskin ouvre son chapitre de 1996 : « “Goodhart's Law” – that every measure which becomes a target becomes a bad measure » (p. 265), texte dont Strathern écrit « I draw freely on his observations ». Elle reformule donc la loi plus qu'elle ne la crée, et c'est Hoskin qui la nomme « loi de Goodhart », d'après une observation d'origine monétaire. Charles Goodhart, lui, ne figure dans aucune des quinze références de l'article : Strathern ne le nomme qu'une fois, dans le paragraphe même de la citation, et par le relais de Hoskin. La désignation « loi de Strathern » ne vient pas d'elle non plus : elle ne nomme jamais sa propre formule.",
     "quotation": {
-      "text": "When a measure becomes a target, it ceases to be a good measure.",
-      "reference": "Marilyn Strathern, « “Improving ratings”: audit in the British University system », European Review, vol. 5, n° 3, juillet 1997, p. 305-321, p. 308, section « Improving the examination system »"
+      "text": "Quand une mesure devient une cible, elle cesse d'être une bonne mesure.",
+      "reference": "Marilyn Strathern, « “Improving ratings”: audit in the British University system », European Review, vol. 5, n° 3, juillet 1997, p. 305-321, p. 308, section « Improving the examination system »",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {
@@ -2266,8 +2281,9 @@ export const generatedConcepts: Concept[] = [
     "themeLabel": "Ce qui donne envie de s'y mettre",
     "attributionNote": "Rapport technique coécrit par quatre auteurs, dans l'ordre imprimé sur la page de titre : Edwin A. Locke et Karyll N. Shaw (University of Maryland), Lise M. Saari et Gary P. Latham (University of Washington). Technical Report GS-1, daté de juin 1980 sur la page de titre. Le rapport est une revue de la littérature parue depuis 1968, et non une étude nouvelle : il consolide et chiffre une thèse que Locke avait déjà formulée seul en 1968, et que les auteurs eux-mêmes rattachent, page 1, à Ryan, à Lewin, à l'école de Wurtzbourg d'un côté, à la direction par objectifs et à Taylor de l'autre.",
     "quotation": {
-      "text": "Individuals with specific and hard or challenging goals outperform individuals with specific easy goals, \"do best\" goals, or no assigned goals.",
-      "reference": "Edwin A. Locke, Karyll N. Shaw, Lise M. Saari et Gary P. Latham, Goal Setting and Task Performance: 1969-1980, Technical Report GS-1, University of Maryland, juin 1980, section « Conclusions », p. 59"
+      "text": "Ceux qui ont un objectif spécifique et difficile surpassent ceux qui ont un objectif spécifique facile, « faire au mieux », ou aucun objectif assigné.",
+      "reference": "Edwin A. Locke, Karyll N. Shaw, Lise M. Saari et Gary P. Latham, Goal Setting and Task Performance: 1969-1980, Technical Report GS-1, University of Maryland, juin 1980, section « Conclusions », p. 59",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {
@@ -2316,8 +2332,9 @@ export const generatedConcepts: Concept[] = [
     ],
     "attributionNote": "La communication est signée d'un seul nom, et von Foerster nomme lui-même le principe dans le texte, en l'opposant aux deux principes qu'il attribue à Erwin Schrödinger. Le volume n'imprime nulle part son prénom : « Heinz » vient de la notice d'autorité du catalogue général de la Bibliothèque nationale de France. La formule française « ordre à partir de bruit » n'est pas de lui et n'est pas une traduction publiée de son texte : elle est d'Henri Atlan, qui la lui crédite en 1972. Enfin, la communication a été prononcée le 5 mai 1959, lors d'une conférence tenue les 5 et 6 mai 1959 et publiée en 1960 : c'est 1960 qui date le texte cité.",
     "quotation": {
-      "text": "Thus, in my restaurant self-organizing systems do not only feed upon order, they will also find noise on the menu.",
-      "reference": "Heinz von Foerster, « On Self-Organizing Systems and Their Environments », dans Marshall C. Yovits et Scott Cameron (dir.), Self-Organizing Systems. Proceedings of an Interdisciplinary Conference, 5 and 6 May, 1959, Oxford, Pergamon Press, 1960, p. 31-50, p. 43"
+      "text": "Ainsi, dans mon restaurant, les systèmes auto-organisateurs ne se nourrissent pas seulement d'ordre : ils trouveront aussi du bruit au menu.",
+      "reference": "Heinz von Foerster, « On Self-Organizing Systems and Their Environments », dans Marshall C. Yovits et Scott Cameron (dir.), Self-Organizing Systems. Proceedings of an Interdisciplinary Conference, 5 and 6 May, 1959, Oxford, Pergamon Press, 1960, p. 31-50, p. 43",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {
@@ -2437,8 +2454,9 @@ export const generatedConcepts: Concept[] = [
     "themeLabel": "Combien produire, combien en tenir",
     "attributionNote": "Concept coécrit par Kenneth Arrow, Theodore Harris et Jacob Marschak, énoncé dans le papier RAND P-189 daté du 5 septembre 1950 et révisé le 16 novembre 1950, dont les trois noms se lisent sur la page de titre.",
     "quotation": {
-      "text": "The organization […] has a general idea of the value it would attach to the damage that would be caused by the non-availability of an item",
-      "reference": "Kenneth Arrow, Theodore Harris et Jacob Marschak, Optimal Inventory Policy, RAND Corporation, P-189, 1950, p. 19"
+      "text": "L'organisation […] a une idée générale de la valeur qu'elle attribuerait au dommage que causerait l'indisponibilité d'un article",
+      "reference": "Kenneth Arrow, Theodore Harris et Jacob Marschak, Optimal Inventory Policy, RAND Corporation, P-189, 1950, p. 19",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {
@@ -2754,8 +2772,9 @@ export const generatedConcepts: Concept[] = [
     ],
     "attributionNote": "La communication est signée d'un seul nom. McCulloch y expose la notion et la sépare des trois autres redondances qu'il distingue, celles de code, de canal et de calcul ; il date lui-même cette séparation de « two or three weeks ago », l'exposé étant de mai 1959 et le volume de 1960. Ce texte n'est pas nécessairement celui où le mot est forgé : sa phrase suppose l'expression déjà en usage chez lui, et les deux textes qui pourraient porter une occurrence antérieure, sa communication de Teddington de 1958 et le recueil Embodiments of Mind, n'ont pas été ouverts. Il énonce et nomme la notion dans ce texte ; il n'est pas établi qu'il l'y invente.",
     "quotation": {
-      "text": "Thus we have a redundancy of potential command in which knowledge constitutes authority.",
-      "reference": "Warren S. McCulloch, « The Reliability of Biological Systems », dans Marshall C. Yovits et Scott Cameron (dir.), Self-Organizing Systems. Proceedings of an Interdisciplinary Conference, 5 and 6 May, 1959, Oxford, Pergamon Press, 1960, p. 264-281, p. 266"
+      "text": "Nous avons donc une redondance du commandement potentiel, où le savoir constitue l'autorité.",
+      "reference": "Warren S. McCulloch, « The Reliability of Biological Systems », dans Marshall C. Yovits et Scott Cameron (dir.), Self-Organizing Systems. Proceedings of an Interdisciplinary Conference, 5 and 6 May, 1959, Oxford, Pergamon Press, 1960, p. 264-281, p. 266",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {
@@ -2784,8 +2803,9 @@ export const generatedConcepts: Concept[] = [
     "themeLabel": "Combien produire, combien en tenir",
     "attributionNote": "Concept coécrit par Kenneth Arrow, Theodore Harris et Jacob Marschak, énoncé dans le papier RAND P-189 daté du 5 septembre 1950 et révisé le 16 novembre 1950, dont les trois noms se lisent sur la page de titre.",
     "quotation": {
-      "text": "Choose two numbers S and s, S > s > 0, and let them define the following rule of action:",
-      "reference": "Kenneth Arrow, Theodore Harris et Jacob Marschak, Optimal Inventory Policy, RAND Corporation, P-189, 1950, p. 24"
+      "text": "Choisissez deux nombres S et s, avec S > s > 0, et qu'ils définissent la règle d'action suivante :",
+      "reference": "Kenneth Arrow, Theodore Harris et Jacob Marschak, Optimal Inventory Policy, RAND Corporation, P-189, 1950, p. 24",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {
@@ -2816,8 +2836,9 @@ export const generatedConcepts: Concept[] = [
     "themeLabel": "Combien produire, combien en tenir",
     "attributionNote": "Concept coécrit par Charles C. Holt, Franco Modigliani et Herbert A. Simon, dont les trois noms se lisent sur la page de titre du mémorandum de recherche O.N.R. n° 30, daté de mai 1955.",
     "quotation": {
-      "text": "We obtain a set of linear equations, and then invert the matrix of these equations to obtain the decision rules.",
-      "reference": "Charles C. Holt, Franco Modigliani et Herbert A. Simon, A Linear Decision Rule for Production and Employment Scheduling, O.N.R. Research Memorandum n° 30, 1955, p. 24"
+      "text": "Nous obtenons un système d'équations linéaires, puis nous inversons la matrice de ces équations pour obtenir les règles de décision.",
+      "reference": "Charles C. Holt, Franco Modigliani et Herbert A. Simon, A Linear Decision Rule for Production and Employment Scheduling, O.N.R. Research Memorandum n° 30, 1955, p. 24",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {
@@ -2847,8 +2868,9 @@ export const generatedConcepts: Concept[] = [
     ],
     "attributionNote": "W. Ross Ashby signe seul l'ouvrage, paru chez Chapman & Hall en 1956 ; l'exemplaire lu est la seconde impression de 1957. Le résultat porté ici, qu'un régulateur qui ne s'informe que de l'écart ne peut jamais réguler parfaitement, est démontré par lui au chapitre 12, sans coauteur et sans renvoi à un travail antérieur. Deux réserves de vocabulaire, qui ne touchent pas la paternité du résultat : Ashby met lui-même entre guillemets « error-controlled servo-mechanism » et « closed loop regulator », qu'il emprunte au vocabulaire de l'asservissement de son époque, et le titre français est notre rendu de « error-controlled regulator », aucune traduction française n'ayant été ouverte.",
     "quotation": {
-      "text": "[…] the more successful R is in keeping E constant, the more does R block the channel by which it is receiving its necessary information.",
-      "reference": "W. Ross Ashby, An Introduction to Cybernetics, Londres, Chapman & Hall, 1956 (tirage lu : seconde impression, 1957), chapitre 12 « The Error-Controlled Regulator ». Édition électronique de 1999 préparée pour le Principia Cybernetica Web avec l'autorisation de la succession Ashby, ch. 12, section 12/5, p. 224"
+      "text": "[…] mieux R réussit à maintenir E constant, plus R bloque le canal par lequel il reçoit l'information dont il a besoin.",
+      "reference": "W. Ross Ashby, An Introduction to Cybernetics, Londres, Chapman & Hall, 1956 (tirage lu : seconde impression, 1957), chapitre 12 « The Error-Controlled Regulator ». Édition électronique de 1999 préparée pour le Principia Cybernetica Web avec l'autorisation de la succession Ashby, ch. 12, section 12/5, p. 224",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {
@@ -3080,8 +3102,9 @@ export const generatedConcepts: Concept[] = [
     "domain": "sociology-of-work",
     "attributionNote": "Taylor signe seul, et la page de titre du tirage de 1919 ne porte aucun autre nom, non plus que son verso, qui donne le copyright de 1911 à son seul nom. Une précision que le texte autorise : Taylor présente ce volume comme un mémoire et non comme la première formulation de sa doctrine, puisqu'il renvoie à ses propres communications antérieures devant l'American Society of Mechanical Engineers, dont Shop Management, citée en note de la page 33. Carl G. Barth, seul collaborateur nommé dans le voisinage, l'est pour une règle à calcul décrite au chapitre suivant, non pour le principe instruit ici.",
     "quotation": {
-      "text": "The managers assume […] the burden of gathering together all of the traditional knowledge which in the past has been possessed by the workmen […]",
-      "reference": "Frederick Winslow Taylor, The Principles of Scientific Management, New York et Londres, Harper & Brothers, 1919 (copyright 1911), chapitre II « The Principles of Scientific Management » (exemplaire de la Cornell University Library, Internet Archive), chap. II, p. 36"
+      "text": "Les dirigeants assument […] la charge de rassembler tout le savoir traditionnel que les ouvriers possédaient par le passé […]",
+      "reference": "Frederick Winslow Taylor, The Principles of Scientific Management, New York et Londres, Harper & Brothers, 1919 (copyright 1911), chapitre II « The Principles of Scientific Management » (exemplaire de la Cornell University Library, Internet Archive), chap. II, p. 36",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {
@@ -3294,8 +3317,9 @@ export const generatedConcepts: Concept[] = [
     "themeLabel": "Choisir quand on ne sait pas",
     "attributionNote": "Rapport signé des deux noms : la couverture, la page de titre et le formulaire DD 1473 portent Daniel Kahneman et Amos Tversky, dans cet ordre. Le nom du concept est des auteurs eux-mêmes, le sommaire annonçant « prospect theory » ; le titre français est une traduction due à des tiers non identifiés. Le rapport d'avril 1977 n'est pas l'article paru dans Econometrica en 1979 : la citation est localisée sur le rapport, seul des deux textes qui ait été ouvert.",
     "quotation": {
-      "text": "In contrast, we hypothesize that the value function is concave above the reference point and convex below it […]",
-      "reference": "Daniel Kahneman et Amos Tversky, Prospect Theory: An Analysis of Decision Making Under Risk, Technical Report PTR-1042-77-4, Eugene (Oregon), Decision Research, a branch of Perceptronics, avril 1977, p. 2-5, section 2.1"
+      "text": "En revanche, nous faisons l'hypothèse que la fonction de valeur est concave au-dessus du point de référence et convexe en dessous […]",
+      "reference": "Daniel Kahneman et Amos Tversky, Prospect Theory: An Analysis of Decision Making Under Risk, Technical Report PTR-1042-77-4, Eugene (Oregon), Decision Research, a branch of Perceptronics, avril 1977, p. 2-5, section 2.1",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {
@@ -3432,8 +3456,9 @@ export const generatedConcepts: Concept[] = [
     "themeLabel": "Ce qui donne envie de s'y mettre",
     "attributionNote": "Rapport signé conjointement par J. Richard Hackman (Yale University) et Greg R. Oldham (University of Illinois), page de titre du Technical Report No. 4 du Department of Administrative Sciences de Yale, mai 1974. Les auteurs rattachent explicitement la théorie qu'ils y exposent à des travaux antérieurs : Turner et Lawrence (1965) et Hackman et Lawler (1971).",
     "quotation": {
-      "text": "All three of the Critical Psychological States must be present for the positive outcomes to be realized.",
-      "reference": "J. Richard Hackman et Greg R. Oldham, The Job Diagnostic Survey, Technical Report No. 4, Yale University, mai 1974, section « Conceptual Basis of the Instrument », p. 4"
+      "text": "Les trois états psychologiques critiques doivent tous être présents pour que les effets positifs se réalisent.",
+      "reference": "J. Richard Hackman et Greg R. Oldham, The Job Diagnostic Survey, Technical Report No. 4, Yale University, mai 1974, section « Conceptual Basis of the Instrument », p. 4",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {
@@ -3458,8 +3483,9 @@ export const generatedConcepts: Concept[] = [
     "themeLabel": "Ce qu'un procédé fait varier",
     "attributionNote": "Règle posée par W. A. Shewhart, seul auteur de l'ouvrage, et posée comme un choix d'expérience, pas comme un théorème. Le seul nom tiers de ces pages est celui de Tchebychev, dont l'inégalité borne les limites sans fixer la valeur retenue.",
     "quotation": {
-      "text": "We are still faced with the choice of t. Experience indicates that t = 3 seems to be an acceptable economic value.",
-      "reference": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931, p. 277"
+      "text": "Il nous reste le choix de t. L'expérience indique que t = 3 semble être une valeur économique acceptable.",
+      "reference": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931, p. 277",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
     },
     "sources": [
       {

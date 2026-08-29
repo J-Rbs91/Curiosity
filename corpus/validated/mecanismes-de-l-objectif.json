@@ -1,83 +1,86 @@
 {
- "$schema": "../schema/carte.schema.json",
- "id": "mecanismes-de-l-objectif",
- "slug": "mecanismes-de-l-objectif",
- "status": "VALIDATED",
- "title": "Par quels mécanismes un objectif agit",
- "themes": [
-  "ce-qui-engage-au-travail"
- ],
- "theme_labels": {
-  "ce-qui-engage-au-travail": "Ce qui donne envie de s'y mettre"
- },
- "authors": [
-  {
-   "name": "Edwin A. Locke",
-   "app_author_id": null
+  "$schema": "../schema/carte.schema.json",
+  "id": "mecanismes-de-l-objectif",
+  "slug": "mecanismes-de-l-objectif",
+  "status": "VALIDATED",
+  "title": "Par quels mécanismes un objectif agit",
+  "themes": [
+    "ce-qui-engage-au-travail"
+  ],
+  "theme_labels": {
+    "ce-qui-engage-au-travail": "Ce qui donne envie de s'y mettre"
   },
-  {
-   "name": "Karyll N. Shaw",
-   "app_author_id": null
+  "authors": [
+    {
+      "name": "Edwin A. Locke",
+      "app_author_id": null
+    },
+    {
+      "name": "Karyll N. Shaw",
+      "app_author_id": null
+    },
+    {
+      "name": "Lise M. Saari",
+      "app_author_id": null
+    },
+    {
+      "name": "Gary P. Latham",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Rapport technique coécrit par quatre auteurs, dans l'ordre imprimé sur la page de titre : Edwin A. Locke et Karyll N. Shaw (University of Maryland), Lise M. Saari et Gary P. Latham (University of Washington). Technical Report GS-1, daté de juin 1980 sur la page de titre. Le rapport est une revue de la littérature parue depuis 1968, et non une étude nouvelle : il consolide et chiffre une thèse que Locke avait déjà formulée seul en 1968, et que les auteurs eux-mêmes rattachent, page 1, à Ryan, à Lewin, à l'école de Wurtzbourg d'un côté, à la direction par objectifs et à Taylor de l'autre.",
+  "hook": "Un objectif fait mieux faire, mais par quoi agit-il au juste ?",
+  "summary": "Les auteurs comptent au moins quatre mécanismes : diriger l'attention et l'action, mobiliser l'effort, le prolonger dans le temps, pousser à développer des stratégies.",
+  "quotation": {
+    "text": "Il y a au moins quatre mécanismes liés entre eux par lesquels les objectifs règlent la performance dans la tâche",
+    "reference": "Edwin A. Locke, Karyll N. Shaw, Lise M. Saari et Gary P. Latham, Goal Setting and Task Performance: 1969-1980, Technical Report GS-1, University of Maryland, juin 1980, section « Mechanisms for Goal Setting Effects ».",
+    "locator": "p. 19",
+    "language": "fr",
+    "original_text": "There are at least four interrelated mechanisms by which goals regulate task performance",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (chaîne Curiosity, session du 29 août 2026). Aucune traduction française publiée du Technical Report GS-1 n'a été identifiée. « Regulate » est rendu par « règlent » et non par « régulent » : le verbe dit ici que l'objectif commande la performance, ce que « réguler » — qui appellerait une boucle — laisserait entendre à tort. « Task performance » est rendu par « la performance dans la tâche », l'apposition anglaise n'ayant pas d'équivalent direct.",
+      "edition": null
+    }
   },
-  {
-   "name": "Lise M. Saari",
-   "app_author_id": null
+  "sources": [
+    {
+      "label": "Edwin A. Locke, Karyll N. Shaw, Lise M. Saari et Gary P. Latham, Goal Setting and Task Performance: 1969-1980, Technical Report GS-1, University of Maryland, juin 1980, 94 p. Accession DTIC AD-A086584.",
+      "kind": "primary",
+      "locator": "p. 19-24",
+      "url": "https://archive.org/details/DTIC_ADA086584",
+      "consulted": "full-text"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle, session du 26 août 2026",
+    "date": "2026-08-26",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "ATTRIBUTION — Page de titre lue sur l'image https://archive.org/download/DTIC_ADA086584/page/n2.jpg : « Goal Setting and Task Performance: 1969-1980 », puis quatre noms dans cet ordre exact, avec affiliations : Edwin A. Locke (University of Maryland), Karyll N. Shaw (University of Maryland), Lise M. Saari (University of Washington), Gary P. Latham (University of Washington). Le bas du même feuillet porte « TECHNICAL REPORT GS-1 » et « June 1980 ». Le formulaire DD-1473 (feuillet n0, OCR relu) donne l'organisme exécutant « College of Business & Management, Univ. of Md., College Park » et le contrat N00014-79-C-0680 (Office of Naval Research). L'énumération des quatre mécanismes est bien un énoncé de ce rapport à quatre signataires, et non un report d'un texte antérieur : le mécanisme 4 (Strategy Development) s'appuie sur des travaux de 1975-1980 (Latham & Baldes 1975, Terborg 1976, Bandura & Simon 1977, Christensen-Szalanski 1980) et ne pouvait donc figurer chez Locke seul en 1968. La note d'attribution de la fiche ne revendique d'ailleurs aucune invention : elle rattache le rapport à Locke 1968 et à la généalogie que les auteurs se donnent eux-mêmes — vérifiée sur l'image n4.jpg (page imprimée 1) : « The academic source goes back from Ryan (1970) and Miller, Galanter and Pribram (1960), through Lewin to the Wurzburg School […] The organizational source traces from Management by Objectives […] back to the Scientific Management movement founded by Frederick W. Taylor (1911/1967). »",
+      "CITATION — Vérifiée sur l'image, pas sur l'OCR : https://archive.org/download/DTIC_ADA086584/page/n22.jpg. Le feuillet porte « 19 » en tête de page, puis le titre souligné « Mechanisms for Goal Setting Effects », puis, mot pour mot : « There are at least four interrelated mechanisms by which goals regulate task performance: ». La fiche reprend la phrase sans les deux-points terminaux, sans coupe interne ni modification ; langue d'origine anglaise, aucune traduction annoncée ni nécessaire. Le locator « p. 19 » et le nom de section indiqués sont exacts. (Attention au piège de pagination : dans ce rapport le folio est en HAUT de page, si bien qu'une lecture de l'OCR seul pourrait faire croire que la section commence p. 20 — l'image tranche.)",
+      "SOURCES — L'URL https://archive.org/details/DTIC_ADA086584 résout vers l'item scanné du rapport DTIC AD-A086584, daté 1980-06-01, 94 images à 300 ppi. Le locator « p. 19-24 » est exact : la section « Mechanisms for Goal Setting Effects » s'ouvre en tête de la page imprimée 19 (image n22.jpg) et se referme sur la page imprimée 24 (image n27.jpg), où l'on lit « Conclusions / There are four known mechanisms by which goals affect task performance… », immédiatement suivi du titre de section suivant « Knowledge of Results (Feedback) ». Le « 94 p. » du label correspond à l'annotation de catalogage manuscrite portée sur la page de titre (champ 12 encerclé : « 94 ») et au nombre de vues de l'item ; le formulaire DD-1473 déclare de son côté « ninety (90) » et la pagination imprimée s'arrête en effet à 90 (dernier feuillet numéroté, leaf 93). Écart de convention, pas de référence fausse. Aucun DOI ni ISBN n'est affiché sur la fiche : verify_reference n'avait rien à résoudre ici et n'a pas été appelé. Non atteint : la notice DTIC apps.dtic.mil/sti/citations/ADA086584 répond HTTP 403 « request is blocked » derrière le proxy — je n'ai donc pas pu corroborer la notice de catalogue à sa source institutionnelle ; c'est un accès refusé, pas une absence.",
+      "PROSE — Le résumé se calque sur la conclusion n° 2 du rapport, relue sur l'image https://archive.org/download/DTIC_ADA086584/page/n62.jpg (page imprimée 59) : « There are at least four mechanisms by which goals affect task performance: (a) by directing attention and action; (b) by mobilizing energy expenditure or effort; (c) by prolonging effort over time (persistence); and (d) by motivating the individual to develop relevant strategies for goal attainment. » Correspondance terme à terme, y compris « le prolonger dans le temps » pour « prolonging effort over time ». Sur le degré de certitude, la fiche ne durcit rien : elle écrit « Les auteurs comptent au moins quatre mécanismes », c'est-à-dire (i) elle attribue le décompte aux auteurs au lieu de l'énoncer comme un fait établi, et (ii) elle conserve le « at least » de la source. Le décompte est juste : quatre items énumérés, quatre items dans le texte.",
+      "HORS MANDAT (n'entre pas dans le verdict) — 1) Le rapport hésite avec lui-même sur le statut du décompte : « at least four » p. 19 (n22.jpg) et p. 59 (n62.jpg), mais « There are four known mechanisms » p. 24 (n27.jpg). La fiche a retenu la formule ouverte, la plus prudente des deux ; elle ne lisse donc pas l'hésitation en sa faveur, mais un lecteur curieux ne saura pas qu'elle existe.",
+      "HORS MANDAT — 2) Le rapport lui-même relativise deux des quatre mécanismes, ce que la liste de la fiche met nécessairement à plat : la persistance y est dite « nothing more than directed effort extended over time; thus it is a combination of the previous two mechanisms », avec l'aveu que « Most laboratory experiments on goal setting have not been designed to allow for the measurement of persistence effects » et « More studies of this type would be highly desirable » (p. 22) ; et le développement de stratégies est présenté comme « indirect » et de nature cognitive, non motivationnelle (p. 22). Les quatre mécanismes ne sont donc pas quatre voies parallèles et également étayées.",
+      "HORS MANDAT — 3) L'accroche « Un objectif fait mieux faire » généralise « objectif » là où le rapport conditionne l'effet à des objectifs spécifiques et difficiles (résumé DD-1473 : « specific, challenging goals led more often to higher performance than easy goals, 'do your best' goals or no goals »). J'ai examiné ce point au titre de la question PROSE et ne le retiens pas comme débordement : la conclusion n° 1 des auteurs eux-mêmes, p. 59, généralise de la même façon (« The beneficial effect of goal setting on task performance is one of the most robust and replicable findings in the psychological literature »), et l'accroche n'affirme aucun degré de preuve."
+    ]
   },
-  {
-   "name": "Gary P. Latham",
-   "app_author_id": null
-  }
- ],
- "attribution_note": "Rapport technique coécrit par quatre auteurs, dans l'ordre imprimé sur la page de titre : Edwin A. Locke et Karyll N. Shaw (University of Maryland), Lise M. Saari et Gary P. Latham (University of Washington). Technical Report GS-1, daté de juin 1980 sur la page de titre. Le rapport est une revue de la littérature parue depuis 1968, et non une étude nouvelle : il consolide et chiffre une thèse que Locke avait déjà formulée seul en 1968, et que les auteurs eux-mêmes rattachent, page 1, à Ryan, à Lewin, à l'école de Wurtzbourg d'un côté, à la direction par objectifs et à Taylor de l'autre.",
- "hook": "Un objectif fait mieux faire, mais par quoi agit-il au juste ?",
- "summary": "Les auteurs comptent au moins quatre mécanismes : diriger l'attention et l'action, mobiliser l'effort, le prolonger dans le temps, pousser à développer des stratégies.",
- "quotation": {
-  "text": "There are at least four interrelated mechanisms by which goals regulate task performance",
-  "reference": "Edwin A. Locke, Karyll N. Shaw, Lise M. Saari et Gary P. Latham, Goal Setting and Task Performance: 1969-1980, Technical Report GS-1, University of Maryland, juin 1980, section « Mechanisms for Goal Setting Effects ».",
-  "locator": "p. 19",
-  "language": "en",
-  "original_language": "en",
-  "translation": {
-   "kind": "none"
-  }
- },
- "sources": [
-  {
-   "label": "Edwin A. Locke, Karyll N. Shaw, Lise M. Saari et Gary P. Latham, Goal Setting and Task Performance: 1969-1980, Technical Report GS-1, University of Maryland, juin 1980, 94 p. Accession DTIC AD-A086584.",
-   "kind": "primary",
-   "locator": "p. 19-24",
-   "url": "https://archive.org/details/DTIC_ADA086584",
-   "consulted": "full-text"
-  }
- ],
- "review": {
-  "reviewer": "contrôle aveugle, session du 26 août 2026",
-  "date": "2026-08-26",
-  "attribution": "confirmee",
-  "quotation": "verbatim",
-  "sources": "resolvent",
-  "prose": "fidele",
-  "verdict": "PASS",
-  "rounds": 1,
   "notes": [
-   "ATTRIBUTION — Page de titre lue sur l'image https://archive.org/download/DTIC_ADA086584/page/n2.jpg : « Goal Setting and Task Performance: 1969-1980 », puis quatre noms dans cet ordre exact, avec affiliations : Edwin A. Locke (University of Maryland), Karyll N. Shaw (University of Maryland), Lise M. Saari (University of Washington), Gary P. Latham (University of Washington). Le bas du même feuillet porte « TECHNICAL REPORT GS-1 » et « June 1980 ». Le formulaire DD-1473 (feuillet n0, OCR relu) donne l'organisme exécutant « College of Business & Management, Univ. of Md., College Park » et le contrat N00014-79-C-0680 (Office of Naval Research). L'énumération des quatre mécanismes est bien un énoncé de ce rapport à quatre signataires, et non un report d'un texte antérieur : le mécanisme 4 (Strategy Development) s'appuie sur des travaux de 1975-1980 (Latham & Baldes 1975, Terborg 1976, Bandura & Simon 1977, Christensen-Szalanski 1980) et ne pouvait donc figurer chez Locke seul en 1968. La note d'attribution de la fiche ne revendique d'ailleurs aucune invention : elle rattache le rapport à Locke 1968 et à la généalogie que les auteurs se donnent eux-mêmes — vérifiée sur l'image n4.jpg (page imprimée 1) : « The academic source goes back from Ryan (1970) and Miller, Galanter and Pribram (1960), through Lewin to the Wurzburg School […] The organizational source traces from Management by Objectives […] back to the Scientific Management movement founded by Frederick W. Taylor (1911/1967). »",
-   "CITATION — Vérifiée sur l'image, pas sur l'OCR : https://archive.org/download/DTIC_ADA086584/page/n22.jpg. Le feuillet porte « 19 » en tête de page, puis le titre souligné « Mechanisms for Goal Setting Effects », puis, mot pour mot : « There are at least four interrelated mechanisms by which goals regulate task performance: ». La fiche reprend la phrase sans les deux-points terminaux, sans coupe interne ni modification ; langue d'origine anglaise, aucune traduction annoncée ni nécessaire. Le locator « p. 19 » et le nom de section indiqués sont exacts. (Attention au piège de pagination : dans ce rapport le folio est en HAUT de page, si bien qu'une lecture de l'OCR seul pourrait faire croire que la section commence p. 20 — l'image tranche.)",
-   "SOURCES — L'URL https://archive.org/details/DTIC_ADA086584 résout vers l'item scanné du rapport DTIC AD-A086584, daté 1980-06-01, 94 images à 300 ppi. Le locator « p. 19-24 » est exact : la section « Mechanisms for Goal Setting Effects » s'ouvre en tête de la page imprimée 19 (image n22.jpg) et se referme sur la page imprimée 24 (image n27.jpg), où l'on lit « Conclusions / There are four known mechanisms by which goals affect task performance… », immédiatement suivi du titre de section suivant « Knowledge of Results (Feedback) ». Le « 94 p. » du label correspond à l'annotation de catalogage manuscrite portée sur la page de titre (champ 12 encerclé : « 94 ») et au nombre de vues de l'item ; le formulaire DD-1473 déclare de son côté « ninety (90) » et la pagination imprimée s'arrête en effet à 90 (dernier feuillet numéroté, leaf 93). Écart de convention, pas de référence fausse. Aucun DOI ni ISBN n'est affiché sur la fiche : verify_reference n'avait rien à résoudre ici et n'a pas été appelé. Non atteint : la notice DTIC apps.dtic.mil/sti/citations/ADA086584 répond HTTP 403 « request is blocked » derrière le proxy — je n'ai donc pas pu corroborer la notice de catalogue à sa source institutionnelle ; c'est un accès refusé, pas une absence.",
-   "PROSE — Le résumé se calque sur la conclusion n° 2 du rapport, relue sur l'image https://archive.org/download/DTIC_ADA086584/page/n62.jpg (page imprimée 59) : « There are at least four mechanisms by which goals affect task performance: (a) by directing attention and action; (b) by mobilizing energy expenditure or effort; (c) by prolonging effort over time (persistence); and (d) by motivating the individual to develop relevant strategies for goal attainment. » Correspondance terme à terme, y compris « le prolonger dans le temps » pour « prolonging effort over time ». Sur le degré de certitude, la fiche ne durcit rien : elle écrit « Les auteurs comptent au moins quatre mécanismes », c'est-à-dire (i) elle attribue le décompte aux auteurs au lieu de l'énoncer comme un fait établi, et (ii) elle conserve le « at least » de la source. Le décompte est juste : quatre items énumérés, quatre items dans le texte.",
-   "HORS MANDAT (n'entre pas dans le verdict) — 1) Le rapport hésite avec lui-même sur le statut du décompte : « at least four » p. 19 (n22.jpg) et p. 59 (n62.jpg), mais « There are four known mechanisms » p. 24 (n27.jpg). La fiche a retenu la formule ouverte, la plus prudente des deux ; elle ne lisse donc pas l'hésitation en sa faveur, mais un lecteur curieux ne saura pas qu'elle existe.",
-   "HORS MANDAT — 2) Le rapport lui-même relativise deux des quatre mécanismes, ce que la liste de la fiche met nécessairement à plat : la persistance y est dite « nothing more than directed effort extended over time; thus it is a combination of the previous two mechanisms », avec l'aveu que « Most laboratory experiments on goal setting have not been designed to allow for the measurement of persistence effects » et « More studies of this type would be highly desirable » (p. 22) ; et le développement de stratégies est présenté comme « indirect » et de nature cognitive, non motivationnelle (p. 22). Les quatre mécanismes ne sont donc pas quatre voies parallèles et également étayées.",
-   "HORS MANDAT — 3) L'accroche « Un objectif fait mieux faire » généralise « objectif » là où le rapport conditionne l'effet à des objectifs spécifiques et difficiles (résumé DD-1473 : « specific, challenging goals led more often to higher performance than easy goals, 'do your best' goals or no goals »). J'ai examiné ce point au titre de la question PROSE et ne le retiens pas comme débordement : la conclusion n° 1 des auteurs eux-mêmes, p. 59, généralise de la même façon (« The beneficial effect of goal setting on task performance is one of the most robust and replicable findings in the psychological literature »), et l'accroche n'affirme aucun degré de preuve."
+    "DROITS. L'item Internet Archive DTIC_ADA086584 ne porte aucun champ rights, licenseurl, possible-copyright-status ni access-restricted-item. La page de titre porte en revanche, imprimé : « Reproduction in whole or in part is permitted for any purpose of the U.S.Government. » et « APPROVED FOR PUBLIC RELEASE: DISTRIBUTION UNLIMITED ». Ce sont des autorisations administratives de diffusion et de reproduction pour les besoins du gouvernement des États-Unis, ce n'est pas une mise dans le domaine public. Le dépôt a déjà tranché ce cas pour des rapports techniques identiques : l'URL se garde, la réserve s'écrit.",
+    "ÉCART INTERNE DU DOCUMENT, à ne pas lisser. Les auteurs écrivent « There are at least four interrelated mechanisms » p. 19 et « There are at least four mechanisms » p. 59, mais « There are four known mechanisms » p. 24, en tête des conclusions du chapitre. Ces formules ne sont pas équivalentes, et un rédacteur qui n'ouvrirait qu'une seule de ces pages croirait le texte plus assuré, ou moins assuré, qu'il ne l'est. Le résumé retient « au moins quatre » : c'est la formule des deux pages sur trois, et c'est la moins assurée. Les trois pages ont été relues sur image.",
+    "DEGRÉ DE CERTITUDE, SUITE : LA PERSISTANCE. P. 21, les auteurs écrivent que la persistance « is nothing more than directed effort extended over time; thus it is a combination of the previous two mechanisms », puis que « Most laboratory experiments on goal setting have not been designed to allow for the measurement of persistence effects since time limits have been typically imposed; and field studies to date have measured only the end results of goal setting rather than how they were obtained ». La même page finit sur « More studies of this type would be highly desirable. » (51 caractères) : c'est la phrase la plus honnête du chapitre sur son propre degré de certitude, mais elle est inintelligible hors contexte et n'a donc pas été portée seule sur la carte.",
+    "DEGRÉ DE CERTITUDE, SUITE : UNE SEULE ÉTUDE TIERCE. La seule preuve que les auteurs présentent comme établissant que ce sont bien les mécanismes en jeu vient de Terborg (1976), dont ils écrivent p. 24 : « He found that when these mechanisms were partialed out, there was no relationship between goals and task performance. This supports the argument that these are (at least some of) the mechanisms by which goals affect performance. » L'incise « (at least some of) » est des auteurs. La phrase chevauche la fin de la p. 22 et la p. 23, non relue sur image : elle n'est pas citée, un verbatim ne se recompose pas à partir de deux pages dont une n'a pas été ouverte.",
+    "NATURE DU QUATRIÈME MÉCANISME. P. 22 : « While the above three mechanisms are relatively direct in their effects, this last mechanism is indirect » (121 caractères, citation courte disponible), et « While strategy development is motivated by goals, the mechanism itself is cognitive in essence; it involves skill development and/or creative problem solving. » P. 24 : « This latter mechanism seems especially important in complex tasks; if the requisite strategies are not developed, the increased motivation provided by the goals will not be translated into effective performance. » Le résumé ne peut porter cette distinction direct / indirect sous le plafond de 170 caractères : elle est déclarée ici plutôt que perdue.",
+    "CITATION, CHOIX ET RENONCEMENT. La phrase retenue est la première de la section « Mechanisms for Goal Setting Effects », p. 19, sans coupe ; le texte imprimé enchaîne par un deux-points et l'énumération numérotée, non repris dans la citation. L'énumération propre des quatre mécanismes, p. 59, fait 202 caractères, au-dessus du plafond d'affichage : toute coupe qui la ramènerait sous 150 amputerait un des quatre, c'est-à-dire retournerait le sens de la phrase, qui est justement qu'il y en a quatre. Écartée pour cette raison, non par préférence. Les quatre premières phrases de la p. 24 font 155 caractères et dépassent également.",
+    "CE QUI EST DES AUTEURS ET CE QUI EST RAPPORTÉ. La taxinomie des quatre mécanismes et leur hiérarchisation, p. 19 à 24, sont des auteurs, ainsi que les réserves sur la persistance et sur les tâches complexes. Tous les résultats cités par nom et par date dans ce chapitre (Locke & Bryan, Kahneman, Sales, Latham & Locke, LaPorte & Nath, Bandura & Simon, Terborg, entre autres) sont rapportés d'autrui et ne doivent jamais passer pour une affirmation propre.",
+    "LA THÈSE NE DATE PAS DE 1980. Le rapport le dit lui-même, p. 1 : elle remonte à Locke (1968), à Ryan, à Lewin et à l'école de Wurtzbourg d'un côté, à la direction par objectifs et à Taylor de l'autre. Ce rapport de juin 1980 est une revue qui établit un résultat, non l'acte de naissance de la thèse.",
+    "SOURCE SECONDAIRE ET PAGES NON OUVERTES. Aucune source secondaire n'est affichée et aucune n'a été fabriquée pour faire nombre : la lecture primaire n'a ouvert que cette pièce. La p. 20, qui porte le mécanisme de l'effort, et la p. 23 n'ont été relevées que sur l'OCR : rien n'en est cité en verbatim."
   ]
- },
- "notes": [
-  "DROITS. L'item Internet Archive DTIC_ADA086584 ne porte aucun champ rights, licenseurl, possible-copyright-status ni access-restricted-item. La page de titre porte en revanche, imprimé : « Reproduction in whole or in part is permitted for any purpose of the U.S.Government. » et « APPROVED FOR PUBLIC RELEASE: DISTRIBUTION UNLIMITED ». Ce sont des autorisations administratives de diffusion et de reproduction pour les besoins du gouvernement des États-Unis, ce n'est pas une mise dans le domaine public. Le dépôt a déjà tranché ce cas pour des rapports techniques identiques : l'URL se garde, la réserve s'écrit.",
-  "ÉCART INTERNE DU DOCUMENT, à ne pas lisser. Les auteurs écrivent « There are at least four interrelated mechanisms » p. 19 et « There are at least four mechanisms » p. 59, mais « There are four known mechanisms » p. 24, en tête des conclusions du chapitre. Ces formules ne sont pas équivalentes, et un rédacteur qui n'ouvrirait qu'une seule de ces pages croirait le texte plus assuré, ou moins assuré, qu'il ne l'est. Le résumé retient « au moins quatre » : c'est la formule des deux pages sur trois, et c'est la moins assurée. Les trois pages ont été relues sur image.",
-  "DEGRÉ DE CERTITUDE, SUITE : LA PERSISTANCE. P. 21, les auteurs écrivent que la persistance « is nothing more than directed effort extended over time; thus it is a combination of the previous two mechanisms », puis que « Most laboratory experiments on goal setting have not been designed to allow for the measurement of persistence effects since time limits have been typically imposed; and field studies to date have measured only the end results of goal setting rather than how they were obtained ». La même page finit sur « More studies of this type would be highly desirable. » (51 caractères) : c'est la phrase la plus honnête du chapitre sur son propre degré de certitude, mais elle est inintelligible hors contexte et n'a donc pas été portée seule sur la carte.",
-  "DEGRÉ DE CERTITUDE, SUITE : UNE SEULE ÉTUDE TIERCE. La seule preuve que les auteurs présentent comme établissant que ce sont bien les mécanismes en jeu vient de Terborg (1976), dont ils écrivent p. 24 : « He found that when these mechanisms were partialed out, there was no relationship between goals and task performance. This supports the argument that these are (at least some of) the mechanisms by which goals affect performance. » L'incise « (at least some of) » est des auteurs. La phrase chevauche la fin de la p. 22 et la p. 23, non relue sur image : elle n'est pas citée, un verbatim ne se recompose pas à partir de deux pages dont une n'a pas été ouverte.",
-  "NATURE DU QUATRIÈME MÉCANISME. P. 22 : « While the above three mechanisms are relatively direct in their effects, this last mechanism is indirect » (121 caractères, citation courte disponible), et « While strategy development is motivated by goals, the mechanism itself is cognitive in essence; it involves skill development and/or creative problem solving. » P. 24 : « This latter mechanism seems especially important in complex tasks; if the requisite strategies are not developed, the increased motivation provided by the goals will not be translated into effective performance. » Le résumé ne peut porter cette distinction direct / indirect sous le plafond de 170 caractères : elle est déclarée ici plutôt que perdue.",
-  "CITATION, CHOIX ET RENONCEMENT. La phrase retenue est la première de la section « Mechanisms for Goal Setting Effects », p. 19, sans coupe ; le texte imprimé enchaîne par un deux-points et l'énumération numérotée, non repris dans la citation. L'énumération propre des quatre mécanismes, p. 59, fait 202 caractères, au-dessus du plafond d'affichage : toute coupe qui la ramènerait sous 150 amputerait un des quatre, c'est-à-dire retournerait le sens de la phrase, qui est justement qu'il y en a quatre. Écartée pour cette raison, non par préférence. Les quatre premières phrases de la p. 24 font 155 caractères et dépassent également.",
-  "CE QUI EST DES AUTEURS ET CE QUI EST RAPPORTÉ. La taxinomie des quatre mécanismes et leur hiérarchisation, p. 19 à 24, sont des auteurs, ainsi que les réserves sur la persistance et sur les tâches complexes. Tous les résultats cités par nom et par date dans ce chapitre (Locke & Bryan, Kahneman, Sales, Latham & Locke, LaPorte & Nath, Bandura & Simon, Terborg, entre autres) sont rapportés d'autrui et ne doivent jamais passer pour une affirmation propre.",
-  "LA THÈSE NE DATE PAS DE 1980. Le rapport le dit lui-même, p. 1 : elle remonte à Locke (1968), à Ryan, à Lewin et à l'école de Wurtzbourg d'un côté, à la direction par objectifs et à Taylor de l'autre. Ce rapport de juin 1980 est une revue qui établit un résultat, non l'acte de naissance de la thèse.",
-  "SOURCE SECONDAIRE ET PAGES NON OUVERTES. Aucune source secondaire n'est affichée et aucune n'a été fabriquée pour faire nombre : la lecture primaire n'a ouvert que cette pièce. La p. 20, qui porte le mécanisme de l'effort, et la p. 23 n'ont été relevées que sur l'OCR : rien n'en est cité en verbatim."
- ]
 }

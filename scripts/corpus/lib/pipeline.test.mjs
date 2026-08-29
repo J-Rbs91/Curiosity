@@ -227,6 +227,20 @@ describe("validateRecord — citation", () => {
     expect(errorsOf(carte({ quotation: q }))).toContainEqual(expect.stringContaining("traducteur"));
   });
 
+  it("refuse de publier une citation qui n'est pas en français", () => {
+    const q = { ...carte().quotation, language: "en", translation: { kind: "none" } };
+    expect(errorsOf(carte({ quotation: q }))).toContainEqual(
+      expect.stringContaining("la carte affiche du français")
+    );
+  });
+
+  it("laisse une fiche en instruction garder son passage dans sa langue", () => {
+    const q = { ...carte().quotation, language: "en", translation: { kind: "none" } };
+    expect(errorsOf(carte({ status: "CANDIDATE", quotation: q }))).not.toContainEqual(
+      expect.stringContaining("la carte affiche du français")
+    );
+  });
+
   it("exige que la provenance d'une traduction de notre fait soit dite", () => {
     const q = { ...carte().quotation, translation: { kind: "in-house" } };
     expect(errorsOf(carte({ quotation: q }))).toContainEqual(

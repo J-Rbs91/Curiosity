@@ -49,9 +49,16 @@ C'est le seul élément de l'application qui ne passe pas par nos mots. Donc :
 - **Facultative.** Beaucoup de concepts n'ont pas de passage court et autonome qui les
   énonce. `quotation: null` est un résultat légitime. En exiger un partout ferait fabriquer
   la belle phrase que ce dispositif existe pour empêcher.
+- **En français.** La carte se lit en français, et une phrase que le lecteur ne lit pas
+  n'est pas une citation pour lui. Un passage lu dans une autre langue se traduit donc
+  toujours : `text` en français, l'original dans `original_text`, la langue d'origine dans
+  `original_language`. `translation.kind: "none"` ne vaut que pour un texte écrit en
+  français par son auteur ; la validation le refuse partout ailleurs.
 - **Honnête sur sa traduction.** Une traduction publiée se cite avec son traducteur et son
   édition. Une traduction de ton fait le dit, et conserve `original_text` : c'est une
-  interprétation, elle ne doit jamais passer pour la parole de l'auteur.
+  interprétation, elle ne doit jamais passer pour la parole de l'auteur. La contrainte des
+  150 caractères s'applique au français, qui est plus long que l'anglais : la coupe se
+  marque par […] et se justifie dans `translator`.
 
 **Jamais** : une phrase reprise d'un article qui cite l'auteur, un passage recomposé à
 partir de deux pages, un extrait de résumé d'éditeur. Ce sont des tiers qui parlent.
