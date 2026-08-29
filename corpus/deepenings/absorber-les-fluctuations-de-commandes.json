@@ -1,0 +1,60 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "absorber-les-fluctuations-de-commandes",
+  "lead": [
+    "Les commandes d’un atelier ne tombent pas au même rythme toute l’année : un mois elles s’entassent, le mois suivant elles se font rares. Personne, à l’intérieur, n’a le moyen de demander aux clients d’étaler leurs achats. Ce qui reste à décider tient alors en deux nombres, et il faut les reprendre période après période : à quelle cadence faire tourner l’atelier, et avec combien de personnes.",
+    "Ces deux nombres se décident souvent dans deux bureaux séparés, l’un qui surveille les entrepôts, l’autre les effectifs, comme s’il s’agissait de deux problèmes sans rapport. En mai 1955, trois chercheurs de la Graduate School of Industrial Administration du Carnegie Institute of Technology, Charles C. Holt, Franco Modigliani et Herbert A. Simon, publient un mémorandum qui les traite comme une seule et même question, et qui cherche à y répondre par le calcul. Leur point de départ tient en une observation : l’écart entre ce qui est commandé et ce que l’atelier produit ne disparaît jamais, il se loge quelque part, et chacun des endroits où il peut se loger a son prix."
+  ],
+  "sections": [
+    {
+      "title": "Trois endroits où loger un écart",
+      "paragraphs": [
+        "Un atelier peut d’abord produire à cadence constante, sans se soucier des commandes du mois, et laisser le stock encaisser la différence : on fabrique d’avance pour la pointe, on vide les entrepôts quand elle arrive. Il peut au contraire garder le même personnel et faire varier les heures, en allongeant les journées quand les commandes montent et en les raccourcissant quand elles retombent. Il peut enfin caler l’effectif lui-même sur les commandes, en embauchant puis en licenciant au fil des saisons.",
+        "Le mémorandum examine ces trois voies l’une après l’autre, sous un titre de section qui dit exactement son objet : « The Costs of Responding to Fluctuations in Orders ». Chacune fonctionne, et aucune n’est gratuite : le stock immobilise de l’argent et de la place et prend le risque de ne pas trouver preneur, les heures supplémentaires se paient plus cher que les heures ordinaires, faire tourner l’effectif coûte en recrutement, en apprentissage du poste et en désorganisation. Ces dépenses ne sont ni des anomalies ni du gaspillage : ce sont les prix affichés de trois manières de répondre à la même variation.",
+        "Poser les trois ensemble a déjà un effet, avant tout calcul : la question cesse d’être celle d’un service. Le responsable des stocks qui refuse de gonfler les entrepôts déplace la charge vers les heures ou vers l’embauche, sans que cela apparaisse dans ses propres comptes."
+      ]
+    },
+    {
+      "title": "Une phrase qui recommande, et ce qui la soutient",
+      "paragraphs": [
+        "À la page 8, au moment de conclure cet inventaire, les auteurs écrivent : « In general, none of the pure alternatives discussed above will prove best, but rather some carefully weighted combination of them. » Vient alors la phrase qui donne sa forme au conseil : une fluctuation de commandes doit être absorbée pour partie par le stock, pour partie par les heures supplémentaires, pour partie par l’embauche et le licenciement.",
+        "Deux détails de cette phrase fixent son statut, et méritent qu’on s’y arrête. Elle est écrite au registre du conseil, « should be absorbed » : c’est une règle d’action, pas le compte rendu de ce que font les usines. Et elle est tenue par un « in general » qui laisse la porte ouverte : ailleurs, avec d’autres prix, une voie unique pourrait faire l’affaire.",
+        "À cet endroit du texte, la recommandation n’est pas encore démontrée. Elle clôt un examen des coûts, et ce qui la justifie vient après : les auteurs construisent une fonction de coût, c’est-à-dire une formule qui met un prix sur chaque combinaison possible de stock, d’heures et d’effectif, puis cherchent la combinaison qui rend ce prix le plus bas. La phrase de la page 8 annonce ce que la suite du rapport a pour tâche d’établir."
+      ]
+    },
+    {
+      "title": "Un dosage qui se calcule usine par usine",
+      "paragraphs": [
+        "La phrase ne s’arrête pas à l’énumération des trois voies. Elle se termine par une clause qui compte autant que le reste : « and the best allocation among these parts will depend upon the costs in each particular factory ». Il n’existe donc pas de bon partage en général, valable pour l’industrie : le partage se calcule à partir des prix que chaque usine constate chez elle, et il change avec eux.",
+        "Le chapitre où cette phrase figure ajoute une seconde dépendance, moins visible. Le bon dosage tient aussi à la fréquence et à la sévérité des fluctuations auxquelles l’usine fait face : une pointe rare et modérée ne se traite pas comme une oscillation forte et répétée. Le partage ne se fixe donc pas une fois pour toutes, y compris à l’intérieur d’une seule et même usine : ce qui convenait une année peut cesser de convenir quand le régime des commandes change.",
+        "C’est ce qui sépare cette règle d’une recette. Elle ne dit à personne combien mettre dans chaque case. Elle dit quelles cases existent, qu’elles sont ouvertes en même temps plutôt qu’en concurrence, et quelles grandeurs il faut connaître pour trancher entre elles : les coûts propres à l’usine, et la forme de ses variations."
+      ]
+    },
+    {
+      "title": "Prévoir des commandes, et se tromper",
+      "paragraphs": [
+        "Répartir une fluctuation suppose de savoir qu’elle vient. Fabriquer d’avance pour une pointe, embaucher avant une montée des commandes, ce sont des décisions qui se prennent sur une prévision, et une prévision se trompe. Le rapport n’esquive pas la difficulté : la section qui suit immédiatement ce passage s’intitule « Errors in Forecasting Orders », et celle d’après « The Time Sequence of Decisions ».",
+        "L’ordre de ces titres dessine la forme du problème tel que les auteurs le posent. Il ne s’agit pas d’un choix unique, arrêté une fois pour l’année, mais d’une décision reprise à chaque période, à partir de commandes anticipées dont on sait par avance qu’elles ne se réaliseront pas exactement. Ce que ces deux sections établissent exactement se lit dans leurs pages, aux pages 8 et 9 du mémorandum."
+      ]
+    },
+    {
+      "title": "Un fabricant de peinture, de 1949 à 1954",
+      "paragraphs": [
+        "Le rapport ne reste pas dans le principe. Tout son chiffrage porte sur une usine réelle, un fabricant de peinture qui n’est pas nommé, observé de 1949 à 1954. C’est de là que viennent les nombres, et c’est un seul cas : une industrie, un carnet de commandes, une organisation du travail.",
+        "Les auteurs sont eux-mêmes prudents sur ce qu’on peut en tirer. À la page 40, ils écrivent qu’il serait « rash of the authors to generalize these conclusions to industry generally ». Ce qui voyage au-delà de cette usine n’est donc ni le dosage trouvé pour elle, ni les économies qu’il aurait permises, mais la manière de poser le problème : trois voies ouvertes ensemble, des coûts locaux à connaître, un partage à calculer plutôt qu’une doctrine à choisir."
+      ]
+    },
+    {
+      "title": "Trois noms sur la page de titre",
+      "paragraphs": [
+        "La page de titre porte les trois noms, et une note appelée sur cette même page précise le partage du travail : « This paper was written by Mr. Holt, but it rests on research done by all three authors. » La rédaction est d’un seul, la recherche des trois. La même note situe la commande : « Research undertaken for the project Planning and Control of Industrial Operations, under a grant from the Office of Naval Research. », ce qui explique le numéro de mémorandum sous lequel la pièce circule.",
+        "Une confusion vaut d’être écartée au passage. Le sigle HMMS, formé sur quatre noms, ne désigne pas ce texte de 1955 : il renvoie au livre de 1960, et le quatrième nom, celui de John F. Muth, figure ici parmi sept étudiants remerciés dans la note de la page de titre, non parmi les signataires."
+      ]
+    }
+  ],
+  "limits": [
+    "Le même travail a paru en octobre 1955 dans Management Science, sous les trois mêmes noms et le même titre. Ce que cet article resserre, reformule ou ajoute par rapport au mémorandum, et sous quelle forme exacte la phrase de la page 8 s’y retrouve, se lit dans ses trente pages : c’est là qu’il faudra aller pour le savoir.",
+    "La table des matières du mémorandum annonce au folio 43 un appendice intitulé « APPENDIX: Derivation of the Conditions for Minimum Costs ». Ce sont ces pages qui démontrent ce que le passage de la page 8 se contente de recommander, et l’exemplaire numérisé mis en ligne s’arrête au folio 42. Le calcul dont dépend toute la règle attend là son lecteur.",
+    "Enfin, les données de ce fabricant de peinture ne donnent pas un dosage transposable, et les auteurs le disent à la page 40. Savoir si la règle tient ailleurs, avec d’autres coûts et d’autres saisons, demande d’autres travaux que celui-ci, qui n’en propose pas."
+  ]
+}
