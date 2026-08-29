@@ -23,20 +23,18 @@ script ne peut pas dire : quel travail est possible aujourd'hui, ce qu'il coûte
 
 | chantier | volume | recherche documentaire ? | état |
 |---|---|---|---|
-| **A.** Approfondissements | 34 cartes | non | **ouvert, et il a encore grossi le 28 août 2026** |
+| **A.** Approfondissements | 18 cartes | non | **ouvert, mais il a reculé de moitié le 29 août 2026** |
 | **B.** File de la sociologie des organisations | 25 entrées | oui, cartographie déjà faite | ouvert |
 | **C.** Domaines vides | **aucun** | — | **fermé le 28 août 2026** |
 | **D.** Reprises courtes de cinq domaines instruits | 14 textes | oui, accès déjà constaté | ouvert |
 
-Le chantier A s'était vidé le 21 août et il se rouvre depuis. **Le 25 il double, et il grossit
-encore les 26, 27 et 28** : aux huit cartes de la science de la décision et aux huit de
-l'operations management s'ajoutent les sept de la psychologie du travail, les sept de la sociologie
-du travail et les quatre de l'économie comportementale. C'est délibéré, et non un oubli, la routine
-nocturne consacrant une phase entière à ce travail et une nuit d'ouverture de domaine n'en écrivant
-pas. **La file est celle de `npm run corpus:deepen`, pas celle de ce fichier.** Avec trente-quatre
-cartes en attente, ce chantier est de loin le plus gros du dépôt, il ne demande aucune recherche
-documentaire, et **c'est désormais le seul que la routine nocturne ait à prendre**, le chantier C
-étant clos.
+Le chantier A s'était vidé le 21 août, il s'est rouvert et creusé pendant cinq lots d'ouverture
+consécutifs jusqu'à trente-quatre cartes le 28 août, **et le 29 il recule pour la première fois** :
+le passage 07 de la routine nocturne, première nuit de phase 2, en sert **seize en une nuit**, deux
+lots pleins de huit, qui est son plafond. **Dix-huit cartes restent.** Le chantier demeure le plus
+gros du dépôt et le seul que la routine ait à prendre, le chantier C étant clos, mais il ne
+représente plus qu'un peu plus d'une nuit pleine. **La file est celle de `npm run corpus:deepen`,
+pas celle de ce fichier.**
 
 **Le chantier C est fermé.** Il a perdu un domaine le 22 août, `systems-thinking`, un second le 23,
 `decision-science`, un troisième le 25, `operations-management`, un quatrième le 26,
@@ -54,12 +52,11 @@ ouverture qui n'aura pas lieu.
 
 # A. Les approfondissements
 
-**Vidé le 21 août 2026, rouvert le 23, doublé le 25, encore grossi les 26, 27 et 28.**
-`corpus:deepen` projette toujours **66 approfondissements, 95 772 mots, 1 451 en moyenne**, et sa
-fin de sortie liste désormais **trente-quatre cartes** : les huit du lot d'ouverture de la science
-de la décision, du 23 août, les huit de l'operations management, du 25, les sept de la psychologie
-du travail, du 26, les sept de la sociologie du travail, du 27, et les quatre de l'économie
-comportementale, du 28.
+**Vidé le 21 août 2026, rouvert le 23, doublé le 25, encore grossi les 26, 27 et 28, réduit de
+moitié le 29.** `corpus:deepen` projette désormais **82 approfondissements, 119 639 mots, 1 459 en
+moyenne**, et sa fin de sortie liste **dix-huit cartes** : cinq de la science de la décision,
+quatre de l'operations management, quatre de la psychologie du travail, trois de la sociologie du
+travail et deux de l'économie comportementale.
 
 C'est le seul écart actuel du corpus entre ce qui est validé et ce qui est servi, et il se comble
 par `/corpus-deepen`, sans aucune recherche documentaire : la matière est la carte elle-même, sa
@@ -68,6 +65,12 @@ c'est aujourd'hui, et de loin, le chantier au meilleur rapport entre ce qu'il co
 rend au lecteur.** Et depuis la fermeture du chantier C, le 28 août, **c'est le seul que la routine
 nocturne ait à prendre** : sa §2 fait décider la première condition vraie, aucun domaine n'est plus
 vide, et la file du script est donc ce qui commande.
+
+**Ce qu'une nuit de phase 2 rend, mesuré une fois.** Le passage 07 a servi seize cartes : deux lots
+de huit, seize agents lancés en parallèle, environ cinq minutes par agent, aucun refus de
+projection et aucun renvoi. Seize est le plafond que la routine se donne, et **il est atteignable
+en une nuit** : le reste du chantier vaut donc une nuit pleine et une nuit courte, ce qui le rend
+prévisible pour la première fois.
 
 **La file n'est pas tenue ici.** `npm run corpus:deepen` l'affiche en fin de sortie, et c'est
 elle qui fait foi.
@@ -94,6 +97,16 @@ portait reformulés sans guillemets plutôt que présentés comme du verbatim.
 ont vu leur script de fabrication écrasé par celui d'un voisin, et l'un d'eux a régénéré le
 fichier d'un autre. Rien n'a été perdu, vérification faite fichier par fichier, mais un lot
 lancé en parallèle doit préfixer ses fichiers de travail par l'identifiant de sa carte.
+**La consigne a tenu au passage 07** : seize agents en parallèle, aucun écrasement.
+
+**Le contrôle de projection achoppe sur les guillemets, et c'est la leçon du 29 août.** Le
+comparateur de citations normalise `«` et `“` en `"` mais ne recolle pas les espaces : un verbatim
+recopié avec des guillemets anglais là où l'imprimé porte des guillemets français à espaces fines
+insécables est signalé absent alors qu'il est juste. **Il se rétablit en reprenant la typographie
+de l'imprimé, jamais en retirant la citation.** Même famille de piège sur des guillemets doubles
+imbriqués, que l'échappement JSON fait trébucher : la parade est de citer par fragments courts.
+Un rédacteur qui rencontre ce signalement doit d'abord comparer sa typographie à celle de la
+source, avant de conclure à une erreur de recopie.
 
 ---
 

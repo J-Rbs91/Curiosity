@@ -5,6 +5,68 @@ coup d'œil ce que la précédente a fait, sur quelle branche elle l'a laissé, 
 reprendre. **Les scripts priment sur ce fichier** : il dit ce qui a été tenté et pourquoi, ils
 disent ce qui est.
 
+## Passage 07/15 — 2026-08-29
+
+- branche      : `claude/zen-johnson-a8t77x` (imposée par la session, pas `main`). **Le travail du passage 06 est fusionné dans `main`** (PR [#82](https://github.com/J-Rbs91/Curiosity/pull/82), commit de merge `973db4d`), et cette branche partait de `main` à jour, à ce commit : rien n'a été refait. Pull request vers `main` ouverte à la clôture. Tant qu'elle n'est pas fusionnée, **la nuit suivante reprend depuis cette branche**, et non depuis `main`.
+- phase        : 2 (approfondissements). **Première nuit de phase 2 de la routine.** La condition A est fausse depuis le passage 06, aucun domaine n'étant vide ; `corpus:deepen` listait 34 cartes sans approfondissement, la condition B était donc vraie et elle décidait seule. Aucune ouverture, aucune nouvelle carte, aucune recherche documentaire.
+- domaine      : aucun. La file du script traverse les domaines et ne se range pas par domaine : les seize cartes servies relèvent de six domaines (operations management 4, sociologie du travail 4, science de la décision 3, économie comportementale 2, psychologie du travail 2, sociologie des organisations 1).
+- validées     : 0 — une nuit de phase 2 n'écrit aucune carte. Le corpus reste à **100 cartes validées**, inchangé.
+- en review    : 0
+- rejetées     : 0
+- approfondies : **16 — deux lots pleins de huit**, le plafond de la nuit. Lot 1 : `absorber-les-fluctuations-de-commandes`, `analyse-des-groupes-professionnels`, `asservissement-des-activites-hors-travail`, `attente-du-poste-aval`, `cause-de-hasard-et-cause-assignable`, `cinq-dimensions-de-l-emploi`, `classement-multicritere-electre`, `conduite-economique`. Lot 2 : `critique-de-l-utilite-esperee-subjective`, `definition-de-la-psychologie-economique`, `division-sexuelle-et-rapports-de-sexe`, `effet-de-cadrage`, `flanerie-systematique`, `fonctions-sociales-de-la-greve`, `force-du-besoin-de-developpement`, `fragilite-d-un-ordonnancement-optimal`. **Seize agents, seize textes, aucun refus de projection, aucun renvoi.** La file passe de **34 à 18**, et les approfondissements projetés de 66 à **82** (119 639 mots, 1 459 en moyenne).
+- contrôles    : validate 0 erreur (104 enregistrements, 100 validés, 80 avertissements) · build à jour, `git diff --exit-code src/content/generated/` **propre** · test 480/0 · lint 0 · audit inchangé, ce qui est le résultat attendu d'une nuit qui ne crée aucune carte
+- commit       : `6c8ceeab` pour la projection du second lot ; la nuit a été commitée par étapes, à mesure que les textes tombaient.
+- bloqué par   : rien. **Le fait dominant de la nuit est l'inverse de celui du passage 06** : quatre agents sur seize ont demandé un « écris maintenant », contre sept sur huit la nuit précédente. Aucun n'a échoué. Le serveur MCP `documentary` était toujours en échec de connexion, sans conséquence ici : un `corpus-deepener` ne mène aucune recherche documentaire et n'en a pas l'usage.
+- la nuit suivante prend : **phase 2 encore, et le reste de la file.** Dix-huit cartes restent sans approfondissement, soit plus que ce qu'une nuit peut servir à seize. La condition B restera vraie après elle. La file est celle de `npm run corpus:deepen`, en fin de sortie, et elle fait foi contre tout fichier.
+
+### Ce que cette nuit a établi, en une phrase
+
+La routine sert seize approfondissements en une nuit, son plafond, et ramène à dix-huit un
+retard qui en comptait trente-quatre au lever du jour précédent.
+
+### Ce que la première nuit de phase 2 a appris, et qui resservira
+
+**Le plafond de seize est atteignable, et il l'est en une nuit.** Les deux lots de huit ont
+tenu, aucun n'a été amputé, et la durée moyenne d'un agent s'est établie autour de cinq
+minutes. Une nuit de phase 2 vaut donc mécaniquement seize cartes servies tant que la file en
+porte assez, ce qui rend le reste du chantier prévisible : dix-huit cartes, soit une nuit
+pleine et une nuit courte.
+
+**Le contrôle de projection achoppe sur les guillemets, et trois textes l'ont rencontré.** Le
+comparateur de citations normalise `«` et `“` en `"` mais ne recolle pas les espaces : un
+verbatim recopié avec des guillemets anglais là où l'imprimé porte des guillemets français à
+espaces insécables est signalé absent alors qu'il est juste. Il se rétablit en reprenant la
+typographie de l'imprimé, jamais en retirant les guillemets. Un cas voisin s'est présenté sur
+des guillemets doubles imbriqués, que l'échappement JSON fait trébucher : la parade est de
+citer par fragments courts. **Aucun de ces signalements n'était une erreur documentaire**, et
+aucun n'a été contourné en supprimant la citation.
+
+**Un renvoi de contrôle peut être un faux positif et rester une bonne correction.** Sur
+`division-sexuelle-et-rapports-de-sexe`, une phrase amputée de ses parenthèses était présentée
+entre guillemets : le contrôle la signalait absente, à juste titre, puisqu'elle résultait d'une
+manipulation. Les guillemets ont été retirés, le contenu gardé. C'est la deuxième fois que ce
+dépôt observe qu'un signalement littéral rend un service que sa règle ne visait pas.
+
+**Le répertoire de travail partagé n'a posé aucun problème cette fois**, la consigne écrite au
+passage précédent (préfixer les fichiers de travail par l'identifiant de la carte) ayant été
+suivie par les seize agents.
+
+### La faiblesse structurelle que cette nuit n'a pas corrigée, et ne pouvait pas corriger
+
+**Les seize textes déclarent, presque tous, l'absence de source secondaire ouverte.** Le compte
+est constant depuis cinq lots d'ouverture et il se lit maintenant dans les approfondissements,
+qui l'écrivent noir sur blanc dans leurs `limits`. Un `corpus-deepener` n'y peut rien : il n'ouvre
+aucune source et n'en ajoute aucune. **Cette dette ne se paiera qu'en phase 3**, sur des reprises
+courtes de domaines déjà instruits, et le chantier D de `RESTE-A-FAIRE.md` en tient la liste avec
+l'accès déjà constaté. Elle est signalée ici pour qu'une nuit de phase 3 sache par où commencer.
+
+**Ce que les textes ont refusé d'écrire est, cette nuit encore, le meilleur signe de leur
+qualité.** Les comptes rendus les plus solides du lot sont ceux qui nomment une source
+`metadata-only` par ce qu'elle détient et jamais par ce qu'elle dirait : l'article de Management
+Science d'octobre 1955 pour `absorber-les-fluctuations-de-commandes`, l'article de Johnson de
+mars 1954 pour `attente-du-poste-aval`, `The Foundations of Statistics` pour la critique de
+l'utilité espérée subjective, dont les postulats restent innommés un à un faute d'ouverture.
+
 ## Passage 06/15 — 2026-08-28
 
 - branche      : `claude/zen-johnson-r5n04e` (imposée par la session, pas `main`). **Le travail du passage 05 est fusionné dans `main`** (PR [#81](https://github.com/J-Rbs91/Curiosity/pull/81), commit de merge `996f8b5`), et cette branche partait de `main` à jour, au commit `996f8b5` : rien n'a été refait. Pull request [#82](https://github.com/J-Rbs91/Curiosity/pull/82) vers `main`, **ouverte et non fusionnée à la clôture**. Tant qu'elle n'est pas fusionnée, **la nuit suivante reprend depuis cette branche**, et non depuis `main`, sinon elle refera ce qui est déjà fait.
