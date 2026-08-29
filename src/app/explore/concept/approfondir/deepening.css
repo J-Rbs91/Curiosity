@@ -1,0 +1,36 @@
+/*
+ * Approfondissement — adaptation des grands écrans
+ *
+ * L'écran de lecture long est le seul endroit où le coût vertical du texte
+ * devient réellement dominant. La composition générale de Curiosity sépare
+ * déjà correctement la largeur d'une page de la mesure de lecture ; ce fichier
+ * ne remplace pas ce système, il ajoute uniquement son palier « grand bureau ».
+ *
+ * Sous 80 rem, le comportement commun reste strictement inchangé : téléphone,
+ * tablette, petit desktop, zoom important et reflow continuent donc d'utiliser
+ * les mesures définies dans `globals.css`.
+ *
+ * À partir de 80 rem :
+ * - la mesure de lecture passe de 31 à 42 rem. Au corps actuel, cela reste dans
+ *   une ligne de lecture d'environ 70 à 75 signes, mais réduit sensiblement le
+ *   nombre de retours à la ligne et donc la hauteur de défilement ;
+ * - le rail documentaire gagne un peu d'air sans devenir une seconde colonne
+ *   éditoriale ;
+ * - la colonne complète peut occuper 78 rem afin que texte + sources utilisent
+ *   réellement l'espace disponible au lieu de rester dans une composition de
+ *   61 rem au milieu d'un grand écran.
+ *
+ * Les sélecteurs sont volontairement bornés à `.reading-long`. Les autres
+ * écrans de lecture gardent les mesures communes de Curiosity.
+ */
+@media (min-width: 80rem) {
+  .reading-layout.reading-long {
+    --measure-read: 42rem;
+    --rail-context-min: 17rem;
+    --rail-context-max: 21rem;
+  }
+
+  .column-editorial:has(.reading-layout.reading-long):has(.reading-rail) {
+    --column-measure: 78rem;
+  }
+}
