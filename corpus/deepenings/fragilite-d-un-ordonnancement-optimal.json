@@ -2,7 +2,7 @@
   "$schema": "../schema/deepening.schema.json",
   "conceptId": "fragilite-d-un-ordonnancement-optimal",
   "lead": [
-    "Un atelier bâtit le planning de sa semaine avec des durées moyennes : cette opération prend quarante minutes, celle-là un quart d’heure. On range les travaux dans l’ordre qui, sur le papier, fait finir le plus tôt. Puis le lundi arrive. Une pièce se présente en retard, un réglage demande dix minutes de plus, un opérateur est appelé ailleurs, et à midi le planning ne décrit plus rien. Il n’était pas faux : il avait été calculé pour une semaine où chaque durée vaut exactement sa moyenne, et cette semaine-là n’a jamais lieu.",
+    "Imaginons un atelier qui bâtit le planning de sa semaine avec des durées moyennes : cette opération prend quarante minutes, celle-là un quart d’heure. On range les travaux dans l’ordre qui, sur le papier, fait finir le plus tôt. Puis le lundi arrive. Une pièce se présente en retard, un réglage demande dix minutes de plus, un opérateur est appelé ailleurs, et à midi le planning ne décrit plus rien. Il n’était pas faux : il avait été calculé pour une semaine où chaque durée vaut exactement sa moyenne, et cette semaine-là n’a jamais lieu.",
     "Reste alors une question que le calcul ne pose pas de lui-même : entre deux ordres possibles, faut-il préférer celui qui finit le plus tôt en moyenne, ou celui qui finira à peu près à la même heure quoi qu’il arrive ? Richard Bellman lui consacre deux pages, les pages 25 et 26 d’un rapport de la RAND Corporation révisé le 23 mai 1955, à l’endroit précis où il cesse de traiter les durées comme des nombres fixes."
   ],
   "sections": [
