@@ -12,6 +12,65 @@ import type { Deepening } from "@/types";
 
 export const generatedDeepenings: Deepening[] = [
   {
+    "conceptId": "absorber-les-fluctuations-de-commandes",
+    "lead": [
+      "Les commandes d’un atelier ne tombent pas au même rythme toute l’année : un mois elles s’entassent, le mois suivant elles se font rares. Personne, à l’intérieur, n’a le moyen de demander aux clients d’étaler leurs achats. Ce qui reste à décider tient alors en deux nombres, et il faut les reprendre période après période : à quelle cadence faire tourner l’atelier, et avec combien de personnes.",
+      "Ces deux nombres se décident souvent dans deux bureaux séparés, l’un qui surveille les entrepôts, l’autre les effectifs, comme s’il s’agissait de deux problèmes sans rapport. En mai 1955, trois chercheurs de la Graduate School of Industrial Administration du Carnegie Institute of Technology, Charles C. Holt, Franco Modigliani et Herbert A. Simon, publient un mémorandum qui les traite comme une seule et même question, et qui cherche à y répondre par le calcul. Leur point de départ tient en une observation : l’écart entre ce qui est commandé et ce que l’atelier produit ne disparaît jamais, il se loge quelque part, et chacun des endroits où il peut se loger a son prix."
+    ],
+    "sections": [
+      {
+        "title": "Trois endroits où loger un écart",
+        "paragraphs": [
+          "Un atelier peut d’abord produire à cadence constante, sans se soucier des commandes du mois, et laisser le stock encaisser la différence : on fabrique d’avance pour la pointe, on vide les entrepôts quand elle arrive. Il peut au contraire garder le même personnel et faire varier les heures, en allongeant les journées quand les commandes montent et en les raccourcissant quand elles retombent. Il peut enfin caler l’effectif lui-même sur les commandes, en embauchant puis en licenciant au fil des saisons.",
+          "Le mémorandum examine ces trois voies l’une après l’autre, sous un titre de section qui dit exactement son objet : « The Costs of Responding to Fluctuations in Orders ». Chacune fonctionne, et aucune n’est gratuite : le stock immobilise de l’argent et de la place et prend le risque de ne pas trouver preneur, les heures supplémentaires se paient plus cher que les heures ordinaires, faire tourner l’effectif coûte en recrutement, en apprentissage du poste et en désorganisation. Ces dépenses ne sont ni des anomalies ni du gaspillage : ce sont les prix affichés de trois manières de répondre à la même variation.",
+          "Poser les trois ensemble a déjà un effet, avant tout calcul : la question cesse d’être celle d’un service. Le responsable des stocks qui refuse de gonfler les entrepôts déplace la charge vers les heures ou vers l’embauche, sans que cela apparaisse dans ses propres comptes."
+        ]
+      },
+      {
+        "title": "Une phrase qui recommande, et ce qui la soutient",
+        "paragraphs": [
+          "À la page 8, au moment de conclure cet inventaire, les auteurs écrivent : « In general, none of the pure alternatives discussed above will prove best, but rather some carefully weighted combination of them. » Vient alors la phrase qui donne sa forme au conseil : une fluctuation de commandes doit être absorbée pour partie par le stock, pour partie par les heures supplémentaires, pour partie par l’embauche et le licenciement.",
+          "Deux détails de cette phrase fixent son statut, et méritent qu’on s’y arrête. Elle est écrite au registre du conseil, « should be absorbed » : c’est une règle d’action, pas le compte rendu de ce que font les usines. Et elle est tenue par un « in general » qui laisse la porte ouverte : ailleurs, avec d’autres prix, une voie unique pourrait faire l’affaire.",
+          "À cet endroit du texte, la recommandation n’est pas encore démontrée. Elle clôt un examen des coûts, et ce qui la justifie vient après : les auteurs construisent une fonction de coût, c’est-à-dire une formule qui met un prix sur chaque combinaison possible de stock, d’heures et d’effectif, puis cherchent la combinaison qui rend ce prix le plus bas. La phrase de la page 8 annonce ce que la suite du rapport a pour tâche d’établir."
+        ]
+      },
+      {
+        "title": "Un dosage qui se calcule usine par usine",
+        "paragraphs": [
+          "La phrase ne s’arrête pas à l’énumération des trois voies. Elle se termine par une clause qui compte autant que le reste : « and the best allocation among these parts will depend upon the costs in each particular factory ». Il n’existe donc pas de bon partage en général, valable pour l’industrie : le partage se calcule à partir des prix que chaque usine constate chez elle, et il change avec eux.",
+          "Le chapitre où cette phrase figure ajoute une seconde dépendance, moins visible. Le bon dosage tient aussi à la fréquence et à la sévérité des fluctuations auxquelles l’usine fait face : une pointe rare et modérée ne se traite pas comme une oscillation forte et répétée. Le partage ne se fixe donc pas une fois pour toutes, y compris à l’intérieur d’une seule et même usine : ce qui convenait une année peut cesser de convenir quand le régime des commandes change.",
+          "C’est ce qui sépare cette règle d’une recette. Elle ne dit à personne combien mettre dans chaque case. Elle dit quelles cases existent, qu’elles sont ouvertes en même temps plutôt qu’en concurrence, et quelles grandeurs il faut connaître pour trancher entre elles : les coûts propres à l’usine, et la forme de ses variations."
+        ]
+      },
+      {
+        "title": "Prévoir des commandes, et se tromper",
+        "paragraphs": [
+          "Répartir une fluctuation suppose de savoir qu’elle vient. Fabriquer d’avance pour une pointe, embaucher avant une montée des commandes, ce sont des décisions qui se prennent sur une prévision, et une prévision se trompe. Le rapport n’esquive pas la difficulté : la section qui suit immédiatement ce passage s’intitule « Errors in Forecasting Orders », et celle d’après « The Time Sequence of Decisions ».",
+          "L’ordre de ces titres dessine la forme du problème tel que les auteurs le posent. Il ne s’agit pas d’un choix unique, arrêté une fois pour l’année, mais d’une décision reprise à chaque période, à partir de commandes anticipées dont on sait par avance qu’elles ne se réaliseront pas exactement. Ce que ces deux sections en tirent exactement, les pages 8 et 9 du mémorandum le disent, et il faudra les lire pour le voir."
+        ]
+      },
+      {
+        "title": "Un fabricant de peinture, de 1949 à 1954",
+        "paragraphs": [
+          "Le rapport ne reste pas dans le principe. Tout son chiffrage porte sur une usine réelle, un fabricant de peinture qui n’est pas nommé, observé de 1949 à 1954. C’est de là que viennent les nombres, et c’est un seul cas : une industrie, un carnet de commandes, une organisation du travail.",
+          "Les auteurs sont eux-mêmes prudents sur ce qu’on peut en tirer. À la page 40, ils écrivent qu’il serait « rash of the authors to generalize these conclusions to industry generally ». Ce qui voyage au-delà de cette usine n’est donc ni le dosage trouvé pour elle, ni les économies qu’il aurait permises, mais la manière de poser le problème : trois voies ouvertes ensemble, des coûts locaux à connaître, un partage à calculer plutôt qu’une doctrine à choisir."
+        ]
+      },
+      {
+        "title": "Trois noms sur la page de titre",
+        "paragraphs": [
+          "La page de titre porte les trois noms, et une note appelée sur cette même page précise le partage du travail : « This paper was written by Mr. Holt, but it rests on research done by all three authors. » La rédaction est d’un seul, la recherche des trois. La même note situe la commande : « Research undertaken for the project Planning and Control of Industrial Operations, under a grant from the Office of Naval Research. », ce qui explique le numéro de mémorandum sous lequel la pièce circule.",
+          "Une confusion vaut d’être écartée au passage. Le sigle HMMS, formé sur quatre noms, ne désigne pas ce texte de 1955 : il renvoie au livre de 1960, et le quatrième nom, celui de John F. Muth, figure ici parmi sept étudiants remerciés dans la note de la page de titre, non parmi les signataires."
+        ]
+      }
+    ],
+    "limits": [
+      "Le même travail a paru en octobre 1955 dans Management Science, sous les trois mêmes noms et le même titre. Ce que cet article resserre, reformule ou ajoute par rapport au mémorandum, et sous quelle forme exacte la phrase de la page 8 s’y retrouve, se lit dans ses trente pages : c’est là qu’il faudra aller pour le savoir.",
+      "La table des matières du mémorandum annonce au folio 43 un appendice intitulé « APPENDIX: Derivation of the Conditions for Minimum Costs ». Ce sont ces pages qui démontrent ce que le passage de la page 8 se contente de recommander, et l’exemplaire numérisé mis en ligne s’arrête au folio 42. Le calcul dont dépend toute la règle attend là son lecteur.",
+      "Enfin, les données de ce fabricant de peinture ne donnent pas un dosage transposable, et les auteurs le disent à la page 40. Savoir si la règle tient ailleurs, avec d’autres coûts et d’autres saisons, demande d’autres travaux que celui-ci, qui n’en propose pas."
+    ]
+  },
+  {
     "conceptId": "activite-empechee",
     "lead": [
       "Posez-vous la question un soir de semaine : qu’avez-vous fait aujourd’hui ? Vous répondrez sans doute par une liste : les tâches terminées, les dossiers envoyés, les personnes reçues, tout ce qui s’est vu et qui compte. Mais cette liste laisse forcément de côté autre chose : le message commencé trois fois avant d’être abandonné, la méthode essayée puis écartée parce qu’elle ne fonctionnait pas, ce que vous vouliez faire avant qu’une réunion imprévue ne redistribue toute votre journée, ce que vous avez fait à contrecœur parce qu’il fallait bien avancer. Rien de tout cela n’apparaît dans le compte rendu qu’on ferait de votre journée, et pourtant cela a occupé une bonne partie de ce que vous avez vécu au travail.",
@@ -113,6 +172,64 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "analyse-des-groupes-professionnels",
+    "lead": [
+      "Demandez ce qui distingue un médecin d’un employé quelconque, et la réponse viendra presque toujours de l’intérieur du métier : les années d’études, l’examen qui filtre l’entrée, les règles que les praticiens se donnent entre eux, la façon dont ils traitent ceux qui viennent les voir, le droit qu’ils ont d’interdire à d’autres certains actes. Tout cela se décrit sans jamais sortir du groupe : on observe les gens du métier entre eux, on fait l’inventaire de ce qui les tient ensemble, et l’on croit tenir du même coup ce qui les caractérise.",
+      "En 1973, dans la Revue française de sociologie, Jean-Michel Chapoulie passe en revue les manières dont la sociologie s’y est prise pour étudier ces groupes, et il termine par une objection qui ne vise pas une seule école : décrire un corps professionnel par ce qui se passe en son sein laisse de côté ce qu’il doit à la place qu’il occupe dans la société autour de lui. Cette place, il l’appelle la position dans la structure de classe, et c’est par elle qu’il propose de commencer."
+    ],
+    "sections": [
+      {
+        "title": "Une place dans la société, pas seulement dans un métier",
+        "paragraphs": [
+          "La dernière page de l’article ramasse la démarche en une phrase : « […] on peut s’interroger d’abord sur les propriétés que les corps professionnels doivent à leur position dans la structure de classe. » Le mot qui porte est celui de position. On peut le comprendre ainsi : situer un groupe dans la structure de classe, c’est le rapporter aux autres groupes de la société, à ce que possèdent ceux qui y entrent, aux milieux d’où ils viennent, à ceux qu’ils servent et devant qui ils répondent, à ceux sur qui s’exerce l’autorité qu’ils détiennent. Rien de tout cela ne se lit sur le métier pris à part.",
+          "La différence se voit mieux sur un cas fabriqué. Imaginons deux groupes de praticiens qui, décrits de l’intérieur, se ressembleraient trait pour trait : même durée de formation, mêmes règles internes, même monopole sur un acte technique. Ils peuvent malgré tout ne pas recruter dans les mêmes milieux, ne pas servir la même clientèle, ne pas dépendre des mêmes autorités. Un inventaire de leurs caractéristiques internes les rendrait interchangeables ; la question que pose Chapoulie les sépare aussitôt."
+        ]
+      },
+      {
+        "title": "Le reproche adressé aux théories fonctionnalistes",
+        "paragraphs": [
+          "L’adversaire principal de l’article n’est pas une école marginale : ce sont les théories fonctionnalistes des professions, dont l’examen occupe le gros du texte, des pages 88 à 108. Chapoulie ne leur reproche pas de décrire faux. Il leur reproche, page 113, de n’attribuer aux corps professionnels « que des propriétés de condition ».",
+          "L’opposition entre la condition d’un groupe et sa position commande toute la fin de l’article. On peut l’entendre ainsi : la condition, ce sont les traits qu’un groupe présente lorsqu’on le considère à part, sa formation, ses règles, son savoir, son service ; la position, c’est ce qu’il est relativement aux autres. Décrire la première sans poser la seconde conduit à prendre pour des propriétés du métier ce qui pourrait bien tenir à sa place dans un ensemble plus vaste.",
+          "Le ton n’est pourtant pas celui du congédiement. À la dernière page, l’article tient les études fonctionnalistes pour « pas inutiles » : ce qu’elles ont établi n’est pas effacé, c’est la portée qu’on leur prête qui se trouve rabattue."
+        ]
+      },
+      {
+        "title": "Hughes, appui de la critique puis mis en cause",
+        "paragraphs": [
+          "Pour mettre en difficulté les théories fonctionnalistes, Chapoulie s’appuie largement sur des travaux d’une autre famille, celle qu’on dit interactionniste, attachée à ce qui s’observe des relations entre les membres d’un métier et ceux qui les entourent. Il l’écrit lui-même en note, page 113 : « la plupart des travaux cités à l’appui des critiques des théories fonctionnalistes adoptaient la problématique d’Hughes ». Pendant l’essentiel de l’article, cette tradition est de son côté.",
+          "Puis, dans les trois dernières pages, le même critère se retourne contre elle. Ce que Chapoulie reproche alors à Hughes et à ses élèves n’est pas de mal observer, mais de s’en tenir aux relations observables. La longue phrase de la page 114 d’où vient la formule citée plus haut oppose d’ailleurs sa démarche à « l’étude des seules relations sociales entretenues par les membres des professions ». Un groupe peut ainsi être suivi dans le détail de ses échanges quotidiens sans qu’un mot ait été dit de ce qui le situe dans la société."
+        ]
+      },
+      {
+        "title": "Un guide plutôt qu’une théorie de rechange",
+        "paragraphs": [
+          "Ce qui est proposé en fin de parcours n’est pas un modèle concurrent, et Chapoulie prend soin de le dire : on peut ébaucher « non les éléments d’une autre théorie des groupes professionnels, mais une sorte de guide pour l’analyse sociologique d’exemples concrets ». La nuance décide de l’usage qu’on peut en faire.",
+          "Une théorie des groupes professionnels dirait ce qu’est une profession en général et permettrait de trancher si tel métier en est une. Un guide ne tranche rien : il indique par où prendre un cas particulier quand on veut l’analyser. L’article s’achève donc moins sur des réponses que sur des questions à poser, et il les pose à propos d’exemples que l’on rencontre, non d’une catégorie que l’on définirait une fois pour toutes."
+        ]
+      },
+      {
+        "title": "Trois directions d’enquête",
+        "paragraphs": [
+          "Le guide tient en trois entrées. La première est celle des carrières des praticiens : par où l’on entre dans le métier, ce qu’on y devient, ce qui décide des trajectoires. La deuxième porte sur « les formes d’intégration et de différenciation internes », c’est-à-dire sur ce qui tient les membres ensemble et sur ce qui les distingue les uns des autres à l’intérieur d’un même corps. La troisième vise « les caractéristiques des délégations d’autorité », ce que l’expression donne à entendre comme la question de savoir ce qu’un groupe s’est vu confier, par qui, et à quelles conditions.",
+          "Ces trois entrées ont ceci de commun qu’aucune ne se contente du groupe pris isolément. Une carrière traverse des institutions ; une différenciation interne peut renvoyer à des origines sociales distinctes ; une délégation d’autorité suppose toujours quelqu’un qui délègue. En les suivant, on se trouve conduit hors du métier presque à chaque pas, et c’est bien l’effet recherché."
+        ]
+      },
+      {
+        "title": "Une enquête sur les professeurs derrière l’article",
+        "paragraphs": [
+          "Cette proposition de méthode ne sort pas d’une discussion purement livresque. La première note de la page 86 rattache le travail à une enquête collective menée au Centre de Sociologie Européenne, en collaboration avec Dominique Merllié, sur les professeurs de l’enseignement secondaire, et Chapoulie y déclare que les analyses présentées doivent beaucoup à cette collaboration constante. Le matériau empirique est donc coproduit ; la thèse de méthode, elle, est avancée sous un seul nom.",
+          "L’article annonce du reste sa propre suite : l’illustration de la démarche sur le corps professoral du secondaire public français, avec renvoi à un document multigraphié de 1972. Dans les pages de la Revue française de sociologie, ce terrain reste à l’état de programme : on y voit ce qu’il faudrait regarder chez les professeurs, pas encore ce qu’on y a trouvé."
+        ]
+      }
+    ],
+    "limits": [
+      "L’examen des théories fonctionnalistes se déploie des pages 88 à 108, et c’est là que les auteurs discutés sont cités, pesés, parfois suivis. C’est là aussi qu’il faudra chercher en quels termes se construit l’opposition que la page 113 résume d’un mot, celle des propriétés de condition. Ces pages attendent leur lecteur.",
+      "Parsons, T. H. Marshall, Carr-Saunders et Wilson, Hughes, Freidson, Becker, Bourdieu, Mills : ces noms traversent l’article, et ce qui en est rapporté ici est la lecture qu’en fait Chapoulie, non un état vérifié de leurs textes. Pour savoir si elle leur rend justice, ce sont leurs propres écrits qu’il faut ouvrir.",
+      "L’illustration promise sur le corps professoral du secondaire public français renvoie à un document multigraphié de 1972. C’est dans ce texte-là que le guide s’éprouve sur un cas réel, et il faudra le lire pour voir ce que les trois directions d’enquête donnent une fois appliquées.",
+      "Quant à ce que la sociologie des professions a fait de cet article depuis 1973, qui l’a repris et qui l’a contesté, sa postérité se lit dans les travaux venus après lui."
+    ]
+  },
+  {
     "conceptId": "analyse-du-travail",
     "lead": [
       "Un poste de travail se décrit facilement comme une liste de gestes : saisir la pièce, la retourner, positionner un boulon, serrer, reposer l’ensemble, recommencer. Chaque ligne de cette liste, prise seule, est exacte. Mais lue dans son ensemble, elle ne redonne pas le travail : on y cherche en vain pourquoi ces gestes s’enchaînent dans cet ordre plutôt qu’un autre, ce que l’un prépare pour le suivant, ce qui change quand la pièce arrive de travers. Le détail est là, entier ; ce qui reliait les gestes entre eux a disparu.",
@@ -167,6 +284,118 @@ export const generatedDeepenings: Deepening[] = [
       "La distinction entre tâche et activité, en particulier, ne parvient jusqu’ici que par cette voie indirecte : le texte de 1952 ne l’emploie pas. La dater dans l’ouvrage commun et en citer les termes exacts suppose d’ouvrir ce livre, où la formule se trouve, quelque part, dans sa forme d’origine.",
       "Le lien souvent avancé entre le texte de 1952 et un chapitre particulier de l’ouvrage de 1955 repose sur une seule affirmation d’un commentateur ultérieur. Le chapitre lui-même tranchera, pour qui va le lire.",
       "La citation reproduite plus haut est concordante d’une reprise à l’autre. Sa ponctuation d’origine, en revanche, ne se vérifie que sur le numéro de 1952 lui-même : une divergence minime, une virgule, un point-virgule, y resterait possible."
+    ]
+  },
+  {
+    "conceptId": "asservissement-des-activites-hors-travail",
+    "lead": [
+      "Imaginons quelqu’un qui rentre chez lui à sept heures du matin après une nuit de travail. Il doit dormir, mais il doit aussi faire des courses, appeler une administration qui ferme à seize heures, préparer un repas, voir ses enfants avant qu’ils ne partent. Prise séparément, chacune de ces choses reste possible. C’est leur agencement qui devient impraticable : il faut décider laquelle sera sacrifiée, laquelle abrégée, laquelle repoussée à un autre jour. On résume souvent cela d’un seul mot, la fatigue, et le mot est juste sans expliquer grand-chose : il ne dit ni pourquoi c’est tel repas qui saute plutôt qu’un autre, ni pourquoi l’invitation de vendredi est refusée.",
+      "Charles Gadbois, chercheur en psychologie du travail, publie en 1980 un article qui déplace la question. Plutôt que de demander si le travail fatigue, il propose de regarder ce que devient l’ensemble de ce qu’une personne fait en dehors de lui. Non pas les activités une à une, comme autant de choses indépendantes qu’on ferait ou qu’on ne ferait pas, mais l’arrangement qu’elles forment, avec ses horaires, ses dépendances et ses points de rupture."
+    ],
+    "sections": [
+      {
+        "title": "Les activités du soir tiennent les unes aux autres",
+        "paragraphs": [
+          "Traiter un ensemble comme un système, c’est faire une hypothèse simple : ses éléments ne sont pas seulement côte à côte, ils dépendent les uns des autres, si bien qu’on ne peut pas en modifier un sans que les autres bougent. C’est le point de vue que Gadbois annonce dès sa première page : «  Les activités hors travail sont à considérer comme un système  ». La phrase paraît anodine, et elle écarte pourtant la manière la plus courante d’étudier les effets du travail sur la vie privée, qui consiste à isoler une activité, le sommeil, les repas, les sorties, puis à mesurer ce qu’il en reste.",
+          "La conséquence est immédiate. Si ces activités forment un ensemble solidaire, l’effet du travail ne se lit pas dans l’une d’elles prise à part, mais dans la façon dont l’ensemble se réorganise. Une heure de sommeil perdue ne se perd pas toute seule : elle se reprend quelque part, sur un repas, sur une visite, sur le temps où l’on ne fait rien. Constater qu’une personne dort moins, sans regarder ce que cette heure a coûté ailleurs, revient à examiner une pièce d’un montage en ignorant le montage."
+        ]
+      },
+      {
+        "title": "Ce que «  perturbation  » veut dire ici",
+        "paragraphs": [
+          "Une fois ce système décrit, la thèse tient dans une phrase de la page 451 : «  Par rapport au système des activités hors travail ainsi décrit, les conditions de travail s’analysent comme des sources de perturbations dans la mesure où, ayant provoqué une altération de l’état physique et psychologique du travailleur, elles modifient les conditions d’exécution des activités hors travail.  » Elle est plus précise qu’il n’y paraît, parce qu’elle passe par un intermédiaire, et que tout se joue là.",
+          "Cet intermédiaire, c’est l’état de la personne. Les conditions de travail n’agissent pas directement sur la soirée : elles ont d’abord altéré quelque chose chez celui qui rentre, physiquement et psychologiquement, et c’est cette altération qui change les conditions dans lesquelles les activités du soir vont s’exécuter. La nuance porte : ce ne sont pas les activités qui disparaissent, ce sont leurs conditions d’exécution qui changent. Imaginons le repas du soir. Il est préparé quand même, mais debout, plus vite, sans la conversation qui allait avec. Vu de l’extérieur, rien ne manque ; vu de l’intérieur, presque tout a changé."
+        ]
+      },
+      {
+        "title": "Ce que l’idée d’un simple prolongement laisse échapper",
+        "paragraphs": [
+          "Toutes les recherches du domaine partent, écrit Gadbois, d’une même proposition de départ : les contraintes du travail altèrent l’état du travailleur, et «  les effets se font sentir bien au-delà des seules heures de travail  ». Il ne la conteste pas. Il la juge trop peu spécifiée : elle affirme qu’il se passe quelque chose après le travail, elle ne dit ni quoi ni par quel chemin.",
+          "Ce qu’il écarte, en revanche, c’est une façon répandue de combler ce vide : celle qui voit dans la vie hors travail une simple prolongation du travail, ou un modelage psychique de la personne par son métier. De cette conception il écrit, à la page 450, que «  s’en tenir à une telle conception ne peut conduire qu’à une analyse tronquée  ». Tronquée, parce qu’elle fait du travailleur une empreinte : ce que le travail a imprimé se retrouverait ensuite, en plus pâle, dans ses loisirs et ses relations. Elle ne laisse aucune place à ce que la personne fait activement pour tenir le reste debout, aux arbitrages, aux renoncements, aux rattrapages."
+        ]
+      },
+      {
+        "title": "Ce qui se déplace d’une activité sur une autre",
+        "paragraphs": [
+          "C’est là que le point de vue du système rend son second service, dans les pages qui suivent l’énoncé de la thèse. Une perturbation ne s’absorbe pas sur place : elle se compense, et la compensation a un coût, prélevé ailleurs. Gadbois y développe le déplacement de la contrainte d’une activité sur une autre, et les marges de tolérance dont l’ensemble dispose, c’est-à-dire ce qu’il peut encaisser avant de céder.",
+          "Cela implique quelque chose pour qui observe de l’extérieur. Un ensemble d’activités qui paraît intact peut être en réalité tendu au maximum : rien n’a disparu parce que tout a été redistribué, et la moindre contrainte supplémentaire, un enfant malade, un déménagement, un horaire modifié, fera céder l’activité qui semblait la moins concernée. Inversement, l’activité abandonnée n’est pas forcément celle que le travail atteint le plus : c’est souvent celle qui avait le plus de jeu, et qui a servi de variable d’ajustement pour préserver les autres."
+        ]
+      },
+      {
+        "title": "Un mot emprunté à la théorie des systèmes",
+        "paragraphs": [
+          "Reste le mot d’asservissement, qui sonne comme une accusation. En français courant, asservir, c’est réduire en servitude, et on lirait volontiers cet article comme une dénonciation du travail qui asservit ceux qui l’exercent. Ce n’est pas le sens que Gadbois revendique. Il annonce vouloir montrer que «  l’étude des emprises du travail sur la vie hors travail peut tirer profit d’un approfondissement de la notion d’asservissement, dans son acception la plus précise, dérivée de la théorie des systèmes  ».",
+          "Deux choses en découlent. La relation décrite a d’abord une direction : ce sont les conditions de travail qui font office de facteurs d’asservissement du système des activités hors travail, et l’article examine ce sens-là. Ensuite, Gadbois ne revendique pas la notion elle-même, seulement son application au rapport entre le travail et la vie hors travail. Le vocabulaire vient d’ailleurs, et son article ne cite aucun texte de ce domaine pour en fixer le sens technique."
+        ]
+      },
+      {
+        "title": "Un texte de problématique, pas une enquête",
+        "paragraphs": [
+          "Il vaut la peine de savoir quel genre d’affirmation on vient de lire. Cet article ne rend compte d’aucune étude : il se donne lui-même, à la page 453, pour un texte de problématique, c’est-à-dire un texte qui propose une façon de poser le problème et d’orienter les recherches. Ses appuis sont des exemples empruntés, sans effectif ni protocole : une étude de 1978 sur des opératrices des renseignements téléphoniques, d’autres travaux des années 1970, dont les siens. La thèse ne se présente donc pas comme un résultat mesuré, et la lire ainsi serait une erreur.",
+          "Gadbois ne prétend pas davantage découvrir le fait. Il le dit ancien et toujours actuel, «  pour n’être pas nouveau n’en reste pas moins actuel  », et il le rapporte à Marx, qu’il cite pour deux expressions, «  l’idée et la matière d’une pathologie industrielle  » et le «  rabougrissement du corps et de l’esprit  », puis à Friedmann, cité pour «  l’oppression de la personnalité  ». Ce qu’il propose de neuf n’est pas le constat, c’est l’instrument : un ensemble organisé plutôt qu’une somme d’activités, et un mécanisme en deux temps plutôt qu’un débordement du travail sur le reste."
+        ]
+      }
+    ],
+    "limits": [
+      "L’acception précise d’asservissement dont Gadbois se réclame vient de la théorie des systèmes, et il ne la définit pas : son article ne renvoie à aucun ouvrage de ce domaine. Ce que le terme y désigne exactement, c’est cette littérature qui le porte, et il faudra la lire pour juger ce que l’emprunt apporte.",
+      "L’antécédent qu’il se donne est son propre article de 1975, « L’analyse des emprises réciproques de la vie de travail et de la vie hors travail », au Bulletin du C.E.R.P. Il y examine « des difficultés et des insuffisances » qu’il ne reprend pas en 1980, et son titre annonce l’autre sens de l’emprise, celui qui va du hors travail vers le travail.",
+      "Les deux expressions prêtées à Marx le sont sans référence bibliographique, et Friedmann avec le seul millésime 1964 : ces œuvres diront dans quel texte et à quel propos ces formules ont été écrites.",
+      "La réception de cet article et sa reprise éventuelle après 1980 ne sont pas établies par les sources disponibles. Quant aux observations que Gadbois cite comme illustrations, celle de 1978 sur les opératrices des renseignements téléphoniques et les travaux voisins, ce qu’elles ont mesuré se trouve dans ces publications, pas dans les pages qui les citent."
+    ]
+  },
+  {
+    "conceptId": "attente-du-poste-aval",
+    "lead": [
+      "Imaginons un atelier où chaque pièce subit deux opérations dans un ordre imposé : elle passe d’abord sur une première machine, puis sur une seconde. Les cinq pièces du jour sont là, on peut les lancer dans le rang que l’on veut, et le chef d’atelier soupçonne que ce rang compte. Il a raison. Mais s’il espère qu’un bon rangement fera travailler la seconde machine plus vite, il se trompe : quel que soit l’ordre choisi, elle fera exactement le même travail, puisque ce sont les mêmes cinq pièces, et que l’addition ne se soucie pas de l’ordre des termes.",
+      "Il ne reste alors qu’une seule chose sur laquelle un rangement puisse mordre : les moments où cette seconde machine ne fait rien et attend qu’une pièce lui parvienne. Richard Bellman écrit cette évidence en une ligne d’arithmétique, à la page 11 d’un rapport de la RAND Corporation révisé en mai 1955, et cette ligne change la question posée. On ne cherche plus à finir plus tôt : on cherche à raboter une somme d’attentes, et l’on sait dès le départ combien il y a au plus à gagner."
+    ],
+    "sections": [
+      {
+        "title": "La feuille de temps du second poste",
+        "paragraphs": [
+          "Tenez-vous près de la seconde machine, du premier instant du chantier jusqu’à celui où la dernière pièce en sort. Son temps se partage en deux, et en deux seulement : les intervalles pendant lesquels elle usine quelque chose, et les intervalles pendant lesquels elle attend. Il n’y a pas de troisième cas. La durée totale, mesurée à cet endroit, est donc la somme de ses temps de travail augmentée de la somme de ses temps morts.",
+          "C’est exactement ce que pose Bellman à la page 11. Il appelle x_i le temps d’inactivité de la seconde machine juste avant qu’elle ne prenne le i-ème article : « inactive time on the second machine, the binding machine, immediately before processing the i-th item ». Il en fait la somme, qu’il note I_n, et conclut que « the total time required for the process is I_n + Σ b_i », où b_i désigne la durée de l’article i sur cette seconde machine. L’égalité n’énonce rien de plus que le partage décrit à l’instant.",
+          "Sa force est ailleurs. Le second terme, la charge de travail du poste aval, ne dépend pas du rangement : les mêmes articles y passent, chacun une fois, chacun pour sa durée propre, et changer leur rang change l’ordre des termes sans toucher au total. Tout ce qu’un ordonnancement déplace est donc logé dans le premier terme, l’attente. Bellman en tire aussitôt la conséquence : « we may take I_n as our measure of the efficiency of a scheduling of operations », et c’est cette quantité, écrit-il, que l’on cherche à minimiser."
+        ]
+      },
+      {
+        "title": "Cinq articles, deux ordres, trente et une unités",
+        "paragraphs": [
+          "Le rapport donne un exemple chiffré page 15. Cinq articles, chacun avec sa durée sur la première machine puis sur la seconde : (4, 5), (4, 1), (30, 4), (6, 30) et (2, 3). Additionnez le second nombre de chaque paire, 5 plus 1 plus 4 plus 30 plus 3 : le poste aval a quarante-trois unités de travail devant lui. Ce total est acquis avant qu’on ait décidé quoi que ce soit, et il vaudra quarante-trois pour n’importe quel rangement des cinq articles.",
+          "La règle exposée dans ces pages donne l’ordre (5, 1, 4, 3, 2), et Bellman en note le résultat : « The rule yields (5, 1, 4, 3, 2) as the minimal order with a total time of 47 units, and 4 units of idle time. For the reversed order, the total time is 78, the longest time. » Les deux nombres se lisent alors sans mystère. Quarante-sept, ce sont les quarante-trois unités de travail et quatre unités d’attente. Soixante-dix-huit, ce sont les mêmes quarante-trois unités de travail et trente-cinq unités d’attente.",
+          "Entre le meilleur rangement et le pire, l’écart atteint trente et une unités, et ces trente et une unités sont de l’attente pure. Le travail, lui, n’a pas bougé. On voit là ce qu’un ordonnancement est et ce qu’il n’est pas : il ne fait travailler personne plus vite, il fait attendre moins."
+        ]
+      },
+      {
+        "title": "Ce qu’un changement d’ordre peut promettre",
+        "paragraphs": [
+          "La conséquence est très concrète pour qui envisage de réorganiser un atelier de ce genre. Avant de toucher au rangement, on peut mesurer ce qu’il y a à espérer : il suffit de chronométrer le temps pendant lequel le poste aval reste sans rien à faire. Ce temps est le gain maximal, et il n’y en a pas d’autre à aller chercher de ce côté. Un poste aval qui n’attend jamais travaille déjà au plus court, et le meilleur ordonnancement du monde ne lui fera pas gagner une minute.",
+          "En sens inverse, cette attente ne tombe jamais à zéro. Au premier instant, la seconde machine n’a rien à se mettre sous la dent : l’article de tête est encore sur le poste amont, et l’aval doit patienter au moins le temps de cette première opération. C’est pourquoi le meilleur ordre de l’exemple laisse encore quatre unités d’attente et non pas aucune : deux d’entre elles sont le temps que met l’article placé en tête, dont l’opération amont dure deux unités, à parvenir jusqu’au second poste.",
+          "Le déplacement du regard est discret, et il compte. Une date de fin ne se décompose pas, elle se constate. Une somme d’attentes se regarde attente par attente, et l’on peut demander de chacune d’où elle vient, et laquelle un autre rangement supprimerait. Le problème n’a pas changé de nature, il a changé d’objet, et le nouvel objet se laisse examiner morceau par morceau."
+        ]
+      },
+      {
+        "title": "Deux machines, soixante-dix pages, mai 1955",
+        "paragraphs": [
+          "L’égalité ne vaut que dans une situation bien délimitée, et il vaut la peine de la nommer. Chaque article passe sur la première machine, puis sur la seconde, dans cet ordre et une seule fois. Le chantier commence lorsque le premier article entre sur le poste amont, il s’achève lorsque le dernier quitte le poste aval. C’est le cas à deux machines, celui auquel la première partie du rapport est consacrée.",
+          "Ce qui distingue ce cas est la brièveté de la chaîne : l’attente de l’aval ne dépend que d’un seul amont, et le plan de charge du second poste suffit à tout comptabiliser. L’article de S. M. Johnson auquel Bellman renvoie annonce dès son titre deux et trois étapes, temps de réglage compris : c’est de ce côté que la question se prolonge.",
+          "Quant au texte de Bellman, ce n’est pas un article de revue. P-651 est un papier de la RAND Corporation, soixante-dix pages, révisé le 23 mai 1955, sans volume ni numéro, dont la bibliographie court jusqu’à la dernière page et s’achève sur une entrée au nom de G. Pólya."
+        ]
+      },
+      {
+        "title": "Le nom de S. Johnson dans les titres de paragraphe",
+        "paragraphs": [
+          "Le rapport est signé de Richard Bellman seul, et pourtant le résultat qu’il expose ne lui appartient pas. Il l’écrit dès la page 8 : « Two solutions will be presented, the original one due to S. Johnson, based upon an explicit formula of interest in itself, and a solution based upon the functional equation approach of the theory of dynamic programming. » Ses paragraphes portent la même mention en toutes lettres : le troisième s’intitule « Lemmas of S. Johnson », le quatrième « The Result of S. Johnson ». Le partage du temps entre travail et attente, celui-là même qu’on vient de lire, appartient au troisième.",
+          "Page 13, il ferme la question de la preuve : « For Johnson’s derivation of his result and the remainder of the proof that this criterion yields the absolute minimum, we refer to his paper, [5]. We shall give another derivation below. » L’entrée [5] de sa bibliographie est l’article de Johnson de mars 1954. L’autre dérivation annoncée vient plus loin, au sixième paragraphe, et celle-là est de lui : il refait le résultat par équation fonctionnelle, selon l’approche de la programmation dynamique, à laquelle il renvoie par la première entrée de la même bibliographie.",
+          "Qui voudra remonter jusqu’à Johnson depuis ces pages a intérêt à connaître un détail : le rapport écrit le nom de la revue à l’envers, « Naval Logistics Research Quarterly », alors que la forme juste est Naval Research Logistics Quarterly. Bellman n’écrit par ailleurs que l’initiale du prénom, S. Johnson ; la notice de l’article de 1954 donne S. M. Johnson."
+        ]
+      }
+    ],
+    "limits": [
+      "Le texte que Bellman désigne par [5] est un article de huit pages, paru en mars 1954. C’est lui qui porte la démonstration que le critère de rangement donne le minimum absolu, et Bellman y renvoie plutôt que de la refaire. En quels termes Johnson pose lui-même le partage entre travail et attente, ce sont ces huit pages qui le diront.",
+      "L’exemple des cinq articles et de ses deux ordres passe ici pour un apport propre à Bellman. Les sources disponibles ne permettent pas d’affirmer qu’il ne figure pas déjà chez Johnson : la comparaison se fait au même endroit.",
+      "La couverture porte « Revised 23 May 1955 » : révisé, donc, et non paru pour la première fois ce jour-là. Une version antérieure a existé, dont la date n’est pas établie, et P-651 est resté un papier de la RAND Corporation, sans parution en revue établie.",
+      "Un volume de 1982 porte un titre presque identique, Mathematical Aspects of Scheduling and Applications, chez Pergamon, signé Bellman, Esogbue et Nabeshima. Ce n’est pas le texte dont il est question ici, et ce que vingt-sept années y ont ajouté, ce sont ses pages qui le montrent."
     ]
   },
   {
@@ -339,6 +568,172 @@ export const generatedDeepenings: Deepening[] = [
       "L’attribution du mot à Winsemius, en 1969, et l’exemple donné par Faverge, en 1970, passent l’un et l’autre par ce qu’en écrit Rabardel : ce qu’on en lit plus haut est ce que Rabardel en rapporte, et rien de plus. Les deux articles d’origine, l’un en néerlandais, l’autre paru dans la revue Ergonomics, diront d’eux-mêmes ce que la reprise a laissé de côté.",
       "Les passages cités plus haut viennent de la version que l’auteur a lui-même déposée en ligne, et non de l’édition imprimée chez Armand Colin en 1995 : la pagination donnée est celle de ce dépôt, et qui citera le livre relèvera la sienne sur l’exemplaire imprimé.",
       "Ce que la notion est devenue après 1995, qui l’a reprise, discutée ou déplacée, commence là où ce qui précède s’arrête. Les études ultérieures consacrées à la catachrèse au sens ergonomique restent à lire, et ce sont elles qui diront ce que le mot a tenu."
+    ]
+  },
+  {
+    "conceptId": "cause-de-hasard-et-cause-assignable",
+    "lead": [
+      "Dans un atelier qui fabrique la même pièce toute la journée, deux pièces ne sont jamais exactement identiques. On les mesure, et les chiffres bougent un peu, un peu au-dessus, un peu en dessous, sans que rien de particulier ne se soit passé. Puis un matin, une mesure s’écarte davantage. Faut-il arrêter la machine et chercher ce qui a changé ? Celui qui court après chaque écart passe ses journées à corriger des choses qui n’en avaient pas besoin, et finit souvent par dérégler ce qui allait bien. Celui qui ne bouge jamais laisse passer le jour où quelque chose s’est réellement cassé.",
+      "La variation ne se supprime pas : la question est de savoir laquelle mérite une enquête. W. A. Shewhart, membre du personnel technique des Bell Telephone Laboratories, la pose dans ces termes-là dans un livre paru chez D. Van Nostrand en 1931. Une planche pleine page, page 13, la met en légende sous une série de courbes : « Should These Variations be Left to Chance? », faut-il laisser ces variations au hasard ? Et le titre de la section qui suit la reformule à l’usage de l’atelier : « When do Fluctuations Indicate Trouble? », quand des fluctuations signalent-elles un ennui ?"
+    ],
+    "sections": [
+      {
+        "title": "Ce que « sous contrôle » veut dire ici",
+        "paragraphs": [
+          "Le mot « contrôle » ne désigne pas, chez Shewhart, le fait de surveiller ou de piloter. Il en donne une définition, dans une section intitulée « Definition of Control », et cette définition part de la variation plutôt que de l’action. Un procédé sous contrôle n’est pas un procédé qui ne varie pas : c’est un procédé dont la variation reste reconnaissable et tenue dans des limites. Page 6, il écrit de cette variabilité qu’elle est « distinguishable and, as it were, constant variability within limits », et il en fait la seconde caractéristique du contrôle.",
+          "La conséquence déplace l’objectif. Ce qu’on cherche à faire disparaître n’est pas la variation, c’est l’imprévisibilité. Tant que les mesures dansent de la même façon, jour après jour, à l’intérieur de la même fourchette, l’état des choses est stable et l’on sait entre quelles bornes il se tient. Ce qui doit alerter n’est donc pas l’écart en soi, mais l’écart qui ne ressemble plus au comportement habituel du procédé. Un même chiffre peut être anodin sur une machine et alarmant sur une autre : ce qui le juge, c’est ce que cette machine-là fait d’ordinaire."
+        ]
+      },
+      {
+        "title": "Un système constant, posé en postulat",
+        "paragraphs": [
+          "D’où vient cette variabilité constante ? D’un ensemble de causes qui agissent en permanence et forment système. Ce qui frappe, page 12, c’est le statut que Shewhart donne à cette idée : elle est numérotée et posée comme un postulat, « Constant systems of chance causes do exist in nature ». Des systèmes constants de causes de hasard existent bel et bien dans la nature : ce n’est pas démontré, c’est posé, et le reste s’appuie dessus.",
+          "L’autre versant se définit par exclusion, et la formule mérite qu’on s’y arrête. Ce sont, page 14, « unknown causes of variability in the quality of a product which do not belong to a constant system », des causes inconnues de variabilité qui n’appartiennent pas à un système constant. Une cause n’est donc pas assignable parce qu’elle serait grosse, spectaculaire ou facile à voir : elle l’est parce qu’elle n’appartient pas au système constant. Le critère porte sur l’appartenance, pas sur la taille de l’effet.",
+          "Un troisième postulat suit immédiatement : « Assignable causes of variation may be found and eliminated. » Le verbe compte. Il ne dit pas que ces causes seront trouvées, ni qu’elles se trouvent facilement : il dit qu’elles peuvent l’être. C’est là que le partage devient une consigne de travail. On ne supprime pas un système constant de causes de hasard, on apprend à vivre avec ; ce qui n’en fait pas partie peut en droit être retiré."
+        ]
+      },
+      {
+        "title": "Un mot que Shewhart ne s’attribue pas",
+        "paragraphs": [
+          "Le mot « assignable » a fait fortune, et son auteur n’en revendique pas la paternité. Page 14, il écrit : « This fact was discovered very early in the development of control methods, and these causes were called assignable », le mot en italique dans le texte. Passif, passé : ces causes ont été appelées ainsi, par des gens qu’il ne nomme pas, à un moment qu’il situe seulement comme très précoce dans la mise au point des méthodes de contrôle. La phrase ne nomme pas davantage d’institution, seulement un domaine de fabrication, « in the production of telephone equipment ».",
+          "Ce qui lui revient est autre chose, et ce n’est pas mince : la mise en forme systématique, les postulats numérotés, la démonstration. Le vocabulaire, lui, est présenté comme reçu. La différence importe à qui veut citer juste : attribuer à Shewhart l’invention du terme irait au-delà de ce que sa propre phrase autorise.",
+          "La page de titre ne porte qu’un nom. La préface en porte cinq autres : T. C. Fry et E. C. Molina, remerciés « on the theoretical side », H. F. Dodge « on the practical side », puis R. L. Jones et G. D. Edwards, « under whose helpful guidance the present basis for economic control of quality of manufactured product has been developed ». Ce sont des remerciements et non des cosignatures, et le livre reste de Shewhart seul. Ils disent tout de même d’où sort une idée pareille : d’un travail collectif dont l’ouvrage est la mise en forme."
+        ]
+      },
+      {
+        "title": "Trouver, puis supprimer",
+        "paragraphs": [
+          "Juste après le troisième postulat vient une phrase qui commence par « Hence », donc : « to secure control, the manufacturer must seek to find and eliminate assignable causes. » Elle n’ajoute pas un fait, elle tire une conséquence. Et elle place la charge sur les épaules du fabricant, pas sur celles d’un statisticien : le partage sert à décider quoi faire, dans un atelier, avec des moyens finis.",
+          "Deux verbes, et le second ne va pas de soi : trouver, puis supprimer. Identifier la cause ne suffit pas, il faut qu’elle cesse d’agir. Le but visé n’est pas la connaissance du procédé mais son état. C’est ce qui donne à la distinction son tranchant pratique : elle ne classe pas des causes pour le plaisir de les classer, elle désigne ce sur quoi il vaut la peine d’intervenir, et par différence tout ce qu’il est inutile de poursuivre.",
+          "Elle dit aussi quand s’arrêter, ce qui est plus rare. Puisque l’objectif est d’assurer le contrôle, et que le contrôle est cet état où la variation reste dans ses limites habituelles, la recherche a un terme : quand il ne reste plus de cause assignable à retirer, il ne reste que le système constant, et il n’y a plus rien à chercher. Imaginons un régleur qui reprendrait sa machine après chaque mesure un peu haute : il traiterait comme assignable ce qui appartient au système constant, et courrait après une cause qui n’existe pas."
+        ]
+      },
+      {
+        "title": "L’étalon qui manque encore",
+        "paragraphs": [
+          "Reste le plus difficile, et Shewhart le formule lui-même : rien, dans la distinction, ne dit de quel côté tombe l’écart qu’on a sous les yeux. Une mesure un peu haute ne porte pas d’étiquette. D’où cette phrase, qui est un aveu autant qu’un programme : « What we need is some yardstick to detect in such variations any evidence of the presence of assignable causes ». Ce qu’il nous faut, c’est un étalon capable de déceler, dans de telles variations, le signe qu’une cause assignable est présente.",
+          "Tant que cet étalon manque, le partage reste juste et inutilisable. On peut toujours appeler assignable ce qui dérange et hasard ce qu’on préfère ne pas expliquer, et la distinction n’y opposera rien. Ce qui la rend opérante, c’est la règle de décision qui vient ensuite : une procédure qui, à partir des mesures elles-mêmes, tranche entre les deux versants sans qu’on ait à en juger d’avance. Le partage énoncé aux pages 12 à 14 est ce qui rend cette règle nécessaire, et il n’en tient pas lieu."
+        ]
+      }
+    ],
+    "limits": [
+      "Qui a appelé ces causes « assignables », et quand ? La phrase de la page 14 renvoie au passé sans donner de nom. Le vocabulaire a pu se fixer plus tôt, dans les mémorandums d’inspection du système Bell des années 1924 à 1926 : ce sont eux qu’il faudra lire pour établir une antériorité, qu’aucune pièce ne permet d’affirmer ici.",
+      "Les pages 6 à 14 posent le partage et réclament un étalon ; elles ne le construisent pas. La règle qui décide, dans une suite de mesures, qu’une cause assignable est présente, et ce que le mot « economic » du titre recouvre exactement, occupent les cinq cents pages suivantes : elles attendent leur lecteur.",
+      "L’exemplaire le plus facile à se procurer aujourd’hui est la réimpression publiée en 1980 à Milwaukee par l’American Society for Quality Control pour le cinquantenaire du livre. Les folios cités ici sont ceux de l’édition Van Nostrand ; qui travaille sur cette réimpression vérifiera les siens en l’ouvrant.",
+      "Les traductions données plus haut servent à faire comprendre, pas à faire référence : les phrases de Shewhart se citent en anglais, et une traduction française publiée de l’ouvrage reste à identifier."
+    ]
+  },
+  {
+    "conceptId": "cinq-dimensions-de-l-emploi",
+    "lead": [
+      "Imaginons deux personnes payées le même salaire, dans le même bâtiment. La première monte un appareil entier, décide de l’ordre de ses opérations, voit l’objet partir vers quelqu’un qui s’en servira, et sait le soir même si ce qu’elle a fait tient. La seconde visse une pièce sur un ensemble qui arrive et repart sur un convoyeur, sans savoir d’où il vient ni à quoi il servira, et n’apprend qu’un mois plus tard si les lots sont passés. Dire que la première est plus motivée que la seconde n’explique rien : ce qui les sépare n’est pas dans les deux personnes, il est dans les deux postes.",
+      "Encore faut-il dire ce qui, dans un poste, produit cet écart, et le dire assez précisément pour pouvoir le mesurer avant et après une transformation. C’est ce que tentent J. Richard Hackman et Greg R. Oldham dans un rapport technique déposé à Yale en mai 1974. Ils y avancent une liste courte, cinq caractéristiques du travail, et surtout un chemin : ces caractéristiques n’agiraient pas directement sur la qualité de ce qui est fait, elles produiraient d’abord quelque chose chez la personne qui travaille, et c’est cela qui ferait le reste."
+    ],
+    "sections": [
+      {
+        "title": "Ce que la liste contient",
+        "paragraphs": [
+          "Les cinq caractéristiques portent, dans le rapport, des noms anglais qu’il vaut mieux garder tels quels : Skill Variety, Task Identity, Task Significance, Autonomy, et « Feedback from the Job Itself ». En français : la variété des compétences que le poste met en jeu, l’identité de la tâche, sa signification, l’autonomie, et le retour d’information que donne le travail lui-même. Chacune reçoit, dans le rapport, une définition écrite d’une seule phrase, et ce sont ces phrases qui fixent en quels termes les auteurs entendent chaque mot : le sens ordinaire d’« autonomie » ou de « signification » n’en est pas la mesure.",
+          "Cette liste n’est pas faite pour décrire ce qui rend un travail agréable. Elle est faite pour être mesurée. Le rapport est d’abord un questionnaire, et son titre dit à quoi il sert : « An Instrument for the Diagnosis of Jobs and the Evaluation of Job Redesign Projects », un instrument pour diagnostiquer des postes et évaluer des projets de refonte. Une liste courte, nommée et notée, permet de dire d’un poste ce qui lui manque, de le modifier, puis de reprendre la mesure et de comparer. C’est cet usage qui explique la forme de la liste : cinq entrées seulement, chacune définie d’assez près pour qu’on puisse la coter."
+        ]
+      },
+      {
+        "title": "Le détour par ce que la personne éprouve",
+        "paragraphs": [
+          "Le point le moins évident de la théorie tient à ce qu’elle ne relie pas directement les cinq caractéristiques aux résultats attendus. Entre les deux, elle place trois « états psychologiques critiques ». L’expression est technique, l’idée l’est moins : un poste ne fait rien par lui-même, il ne fait quelque chose que s’il produit une certaine expérience chez la personne qui l’occupe, et c’est cette expérience qui soutient ensuite l’effort et le soin. Une figure du rapport range d’un côté les cinq caractéristiques, sous le titre Core Job Dimensions, et de l’autre les résultats attendus, parmi lesquels une forte motivation interne au travail et une qualité de travail élevée.",
+          "Des trois états, un seul est nommé dans le passage qui expose ce lien : « Experienced Meaningfulness of the Work », l’expérience que le travail a du sens. Et il n’est pas alimenté indifféremment par les cinq caractéristiques : « Experienced Meaningfulness of the Work is enhanced primarily by three of the Core Dimensions: Skill Variety, Task Identity, and Task Significance. » Trois des cinq, donc, poussent dans le même sens, et c’est pourquoi la variété, l’identité et la signification de la tâche se tiennent ensemble plutôt que de compter chacune pour soi.",
+          "Cela implique une conséquence pratique qu’on oublie facilement. Ajouter de la variété à un poste ne produit rien par soi : dans ce raisonnement, cela ne compte que si la personne en retire effectivement le sentiment que son travail a du sens. Le même aménagement, apporté à deux postes différents, peut donc réussir ici et ne rien donner là, sans que la liste des cinq caractéristiques ait pour autant à être révisée."
+        ]
+      },
+      {
+        "title": "Ce qui est mesuré mais tenu hors du noyau",
+        "paragraphs": [
+          "Dans la phrase qui annonce les cinq, le mot « core » est mis entre guillemets par les auteurs eux-mêmes. Il désigne un noyau, c’est-à-dire le résultat d’un tri : le rapport mesure plus de choses qu’il n’en compte comme centrales. Deux dimensions supplémentaires sont relevées à la page suivante et explicitement mises de côté. La première est le retour d’information donné par des tiers plutôt que par le travail lui-même, nommée Feedback from Agents ; la seconde est nommée Dealing with Others.",
+          "La raison de l’exclusion est donnée pour la première, et elle vaut critère : « This dimension is not, strictly speaking, a characteristic of the job itself ». Ce n’est pas, à strictement parler, une caractéristique du poste lui-même. Un chef qui commente le travail peut changer demain sans que le poste ait bougé d’une ligne ; ce qui entre dans le noyau doit tenir au travail, non à son entourage.",
+          "De là suit une précision qui évite un contresens sur le cinquième terme. Le feed-back qui figure parmi les cinq est celui que donne le travail lui-même : la soudure dont on voit immédiatement si elle a pris, l’essai qui passe ou ne passe pas. Le retour que donnent les personnes, lui, est mesuré et écarté. Compter sept dimensions centrales plutôt que cinq reviendrait donc à remettre ensemble exactement ce que le rapport a pris soin de séparer."
+        ]
+      },
+      {
+        "title": "Ce que 1965 et 1971 mesuraient déjà",
+        "paragraphs": [
+          "La liste n’est pas née en 1974, et le rapport l’écrit lui-même dès sa deuxième page : « The theory which gave rise to the present instrument is based on earlier work by Turner & Lawrence (1965) and by Hackman & Lawler (1971). » L’un des deux antécédents est donc le travail antérieur de l’un des deux signataires : Hackman prolonge ici quelque chose qu’il avait commencé ailleurs, avec un autre coauteur.",
+          "Une note de bas de page, vers la fin du rapport, donne le détail des deux listes antérieures. Turner et Lawrence mesuraient six attributs de la tâche : variety, required interaction, autonomy, optional interaction, knowledge and skill required, responsibility. Hackman et Lawler en mesuraient six aussi, découpés autrement : variety, autonomy, task identity, feedback, friendship opportunities, dealing with others. Passer à cinq n’est donc pas un élagage arithmétique.",
+          "En comparant les trois listes, on voit ce qui se déplace. La signification de la tâche, Task Significance, ne figurait dans aucune des deux précédentes. À l’inverse, Dealing with Others, qui comptait en 1971 comme une dimension de l’emploi parmi les autres, est encore mesurée en 1974 mais rangée hors du noyau. Ce qui est neuf tient ainsi moins au nombre d’entrées qu’au critère qui décide de l’appartenance : être une propriété du travail, et non de ce qui l’entoure."
+        ]
+      },
+      {
+        "title": "L’instrument, et la théorie qu’il applique",
+        "paragraphs": [
+          "Ce rapport est un instrument, et il ne prétend pas être autre chose. La théorie qu’il applique est exposée ailleurs : deux fois, à sa deuxième page et à sa quatrième, il renvoie son lecteur à un autre texte des deux mêmes auteurs, daté lui aussi de 1974, pour l’exposé détaillé de cette théorie et pour son test. Qui vient chercher ici la démonstration est donc réorienté par les auteurs eux-mêmes.",
+          "Sur cette même quatrième page figure aussi une formule, appelée motivating potential score, qui assemble les dimensions du noyau. C’est le geste qu’on attend d’un outil de diagnostic : ramener un poste à une note, pour pouvoir comparer deux postes, ou le même poste avant et après une transformation. Ce que vaut une telle note, ce qu’elle suppose et ce qu’elle écrase, ne se lit pas dans la formule seule."
+        ]
+      }
+    ],
+    "limits": [
+      "Des trois états psychologiques, un seul est nommé dans le passage qui les relie aux dimensions : l’expérience que le travail a du sens. Les deux autres sont dans les pages voisines, avec la définition d’une phrase que le rapport donne de chacune des cinq dimensions ; ce sont ces phrases qu’il faudra lire pour savoir en quels termes les auteurs entendent chaque mot.",
+      "Le rapport n’expose pas la théorie qu’il met en œuvre : il renvoie pour cela, et pour son test, à un autre de ses rapports techniques, le numéro 6. C’est là que se trouvent la démonstration, ce que vaut la formule du motivating potential score, et le rôle du facteur appelé growth need strength.",
+      "Les deux travaux antérieurs, Turner et Lawrence en 1965 et Hackman et Lawler en 1971, ne se connaissent ici que par les listes qu’en donne une note de bas de page et par leur référence, imprimée à la fin. Ce que chacun établissait, ces deux textes le disent.",
+      "Le rapport ne date que lui-même, mai 1974 : depuis quand cette formulation existait, ces pages ne le disent pas. Et la figure de la page 3, qui met la chaîne entière sous les yeux, se regarde plutôt qu’elle ne se raconte."
+    ]
+  },
+  {
+    "conceptId": "classement-multicritere-electre",
+    "lead": [
+      "Trois appartements à visiter. Le premier est le moins cher, le deuxième est à dix minutes du travail, le troisième a une pièce de plus. Le réflexe le plus répandu consiste à noter chacun sur chacun de ces points, à décider qu’un peu de loyer vaut tant de minutes de trajet, à additionner, puis à comparer les totaux. L’opération réussit toujours : elle finit par désigner un gagnant, même quand personne ne sait dire combien de minutes de transport valent cinquante euros de loyer par mois. C’est précisément ce qui devrait inquiéter. Le total n’a pas résolu le désaccord entre les trois manières de regarder les appartements, il l’a fait disparaître dans un chiffre.",
+      "En 1968, Bernard Roy expose une façon de procéder qui prend le problème par l’autre bout. Elle renonce à dire ce que vaut chaque appartement. Elle se demande seulement, pour deux d’entre eux pris ensemble, ce qu’on a le droit d’affirmer de l’un par rapport à l’autre, et à quelles conditions cette affirmation tient encore quand une partie des points de vue s’y oppose."
+    ],
+    "sections": [
+      {
+        "title": "Ce qu’un point de vue doit fournir",
+        "paragraphs": [
+          "L’article pose d’abord ce qu’il faut avoir en main : « Soit E un ensemble d’objets sur lesquels n points de vue permettent de définir n préordres complets ». Sous ce vocabulaire, l’exigence est modeste. Un préordre complet, c’est un classement de tous les objets du meilleur au moins bon, où deux objets peuvent occuper le même rang. Chaque point de vue doit donc savoir ranger les appartements les uns par rapport aux autres, et rien de plus : ni les noter, ni dire de combien l’un devance l’autre.",
+          "Cette modestie est délibérée. Page 64, Roy remarque que les échelons d’une échelle peuvent n’avoir aucune signification métrique précise : que deux barreaux successifs portent les numéros 2 et 3 n’oblige pas à croire que l’écart entre eux vaut celui qui sépare 3 de 4. Une méthode qui additionne des notes traite pourtant ces écarts comme des quantités, et suppose des données bien plus qu’elles ne portent. En ne demandant qu’un ordre, on s’interdit ce supplément.",
+          "Le prix à payer se voit aussitôt. Sans valeur commune, on ne peut plus comparer deux objets par une soustraction : il faut construire la comparaison autrement, et c’est là que commence le travail."
+        ]
+      },
+      {
+        "title": "L’unanimité ne compare presque rien",
+        "paragraphs": [
+          "La première idée qui vient est la plus sûre : ne déclarer un objet meilleur qu’un autre que lorsque tous les points de vue sont d’accord. Contre une conclusion pareille, personne ne peut protester. Elle a un défaut, et Roy le constate : le réseau de comparaisons obtenu ainsi reste « loin d’être complet ». Dès que les points de vue divergent un peu, la plupart des paires d’objets ne sont reliées par rien, et l’unanimité cesse de dire quoi faire.",
+          "Reste donc à trouver un terrain entre deux extrêmes : la note globale, qui compare tout au prix d’hypothèses invérifiables, et l’unanimité, qui ne suppose rien mais ne compare presque rien. Page 66, Roy formule cet objectif en termes de graphe, c’est-à-dire d’un jeu de flèches tracées d’un objet vers un autre : ce qu’il cherche est un graphe « en aussi “bon accord” que possible avec les divers points de vue ». Le mot qui compte est accord. Il ne s’agit plus de mesurer les objets, mais de rester fidèle à ce que les points de vue en disent."
+        ]
+      },
+      {
+        "title": "Une majorité, et aucune opposition trop forte",
+        "paragraphs": [
+          "La partie de l’article qui porte la méthode s’ouvre sur deux indicateurs, l’un de concordance, l’autre de discordance. Le premier mesure ce qui appuie une comparaison, le second surveille ce qui s’y oppose. Deux conditions doivent être remplies ensemble pour qu’on puisse dire d’un objet qu’il en surclasse un autre : d’abord qu’« une majorité suffisante (seuil p) se dégage parmi les points de vue » « pour placer e au moins aussi haut que e’ », e et e’ étant les deux objets comparés ; ensuite qu’« aucun des points de vue en désaccord avec cette majorité ne révèle une supériorité » trop forte de e’ sur e, appréciée par un second seuil, q.",
+          "Les deux conditions ne sont pas de même nature, et c’est ce qui fait la méthode. La première compte des voix : elle demande qu’un nombre suffisant de points de vue soutienne la comparaison. La seconde ne compte rien : elle regarde l’intensité d’un seul désaccord. On peut y lire un droit de veto accordé à l’écart excessif. Un point de vue minoritaire dont l’objection est faible ne bloque pas ; un point de vue isolé dont l’objection est massive bloque, quelle que soit la majorité en face.",
+          "C’est exactement ce que l’addition des notes autorisait et que cette double condition interdit : une compensation. Reprenons les trois appartements. Un loyer très légèrement supérieur ne suffit pas à empêcher qu’un logement en surclasse un autre, parce que l’objection est mince. Un trajet trois fois plus long, lui, bloque la conclusion, même si le prix et la surface s’accordent à la soutenir. Aucun avantage confortable sur deux points ne rachète un défaut rédhibitoire sur le troisième."
+        ]
+      },
+      {
+        "title": "Deux seuils que les données ne fixent pas",
+        "paragraphs": [
+          "Les lettres p et q ne sont pas des résultats, ce sont des réglages. Rien dans les points de vue eux-mêmes ne dit où placer la majorité requise, ni à partir de quel écart une opposition devient rédhibitoire. La phrase qui referme cette partie de l’article le reconnaît sans détour : c’est une relation « sur laquelle on peut, pour des valeurs appropriées de p et de q, fonder une réponse aux problèmes posés au commencement du paragraphe A.3 ».",
+          "Deux personnes qui règlent p et q différemment n’obtiendront donc pas les mêmes comparaisons, ni la même réponse. On peut y voir une faiblesse. On peut aussi y voir un déplacement du lieu où loge l’arbitraire. Une note globale contient elle aussi des décisions discutables, mais elles sont enfouies dans le calcul et le résultat ne les montre plus. Ici, elles tiennent en deux nombres qu’on peut annoncer, contester, faire varier pour voir ce qui change. Un désaccord entre deux personnes redevient alors un désaccord sur une exigence nommée : combien de points de vue doivent appuyer une conclusion, et quel écart interdit de la tirer."
+        ]
+      },
+      {
+        "title": "Choisir, plus que ranger",
+        "paragraphs": [
+          "Une relation construite de cette façon laisse des paires sans verdict. Quand la majorité manque, ou quand une opposition trop forte s’exprime, aucune flèche n’est tracée, et les deux objets restent côte à côte sans être départagés. Cela suffit à écarter des candidats, puisqu’un objet surclassé par un autre a peu de raisons de rester en lice. Cela ne suffit pas à ranger tout le monde du premier au dernier.",
+          "Roy l’écrit lui-même page 71, et la nuance mérite d’être retenue : la relation de surclassement lui paraît « bien adaptée » au problème de la sélection, et « peut-être moins » à celui du rangement complet. Le titre de l’article annonce pourtant le classement autant que le choix. Ce que ces pages donnent le mieux, c’est un moyen de réduire un ensemble d’objets à un petit groupe défendable, non une liste ordonnée de bout en bout.",
+          "Et quand ce groupe reste large, il n’y a pas forcément eu de faute de méthode. Roy en donne la raison lorsque l’ensemble des objets encore en lice demeure trop nombreux : c’est « l’antagonisme des points de vue ». Un résultat indécis dit alors quelque chose du problème lui-même, à savoir que les points de vue s’y opposent frontalement, et une procédure qui trancherait quand même le dirait moins bien."
+        ]
+      },
+      {
+        "title": "Des points de vue, pas encore des critères",
+        "paragraphs": [
+          "Le mot « critère » n’apparaît pas une seule fois dans le corps de cet article. Roy écrit « points de vue » du début à la fin, y compris dans le titre du document de 1966 qui a donné son nom à la méthode. Le vocabulaire du multicritère, celui qui désigne aujourd’hui toute une famille de travaux, s’est imposé plus tard : l’employer pour parler de ce texte est commode, ce n’est pas la langue de son auteur.",
+          "Le mot « incomparabilité » n’y figure pas davantage, et l’absence de comparaison entre deux objets n’y est pas érigée en relation de préférence à part entière. Ce que le texte porte est plus discret : un réseau de comparaisons unanimes « loin d’être complet », un ensemble de candidats que l’antagonisme des points de vue empêche de réduire. L’idée est là en creux, elle n’a pas encore reçu son nom.",
+          "Enfin, le renoncement à fabriquer une valeur globale est pratiqué, jamais plaidé. On chercherait en vain dans ces pages une charge contre la note unique : Roy construit sa relation, et passe à autre chose. La seule phrase qui s’en approche, page 66, dit des approches concurrentes qu’« aucune ne paraît toutefois avoir pleinement abouti »."
+        ]
+      }
+    ],
+    "limits": [
+      "La méthode et son nom sont antérieurs de deux ans à cet article : ils viennent de la note de travail n° 49 de la Direction scientifique de la SEMA, juin 1966, cosignée par R. Benayoun, B. Roy et B. Sussmann. Le seul témoin de cette cosignature est la bibliographie imprimée de 1968. C’est dans ces pages de 1966 que la méthode a pris sa première forme, et il faudra les retrouver pour établir en propre l’apport de chacun.",
+      "L’article renvoie à un second document de la même maison, un « Manuel de référence du programme ELECTRE » de mai 1966, signé Benayoun et Sussmann. Son titre annonce un programme de calcul déjà en service : ce qu’il calculait, et sur quels cas, c’est ce manuel qui le dira.",
+      "Pourquoi renoncer à une note globale plutôt que la corriger, ce texte ne le discute nulle part. Les quinze références de sa bibliographie sont les travaux avec lesquels Roy se situait alors, et c’est là qu’il faut aller chercher l’argument qu’il ne développe pas. Quant à ce que la famille de méthodes née de celle-ci est devenue, et à la place qu’y a prise l’incomparabilité, un chapitre intitulé « ELECTRE Methods », signé Figueira, Mousseau et Roy, en est l’entrée."
     ]
   },
   {
@@ -567,6 +962,66 @@ export const generatedDeepenings: Deepening[] = [
       "La même revue a publié une version en langue anglaise de ce texte. Une seule de ses phrases sert ici, celle qui recoupe la citation retenue ; qui voudra savoir où les deux versions divergent ailleurs les lira l’une à côté de l’autre.",
       "L’idée de cristallisation est antérieure à ce texte de 2007 : elle apparaît dès 1995 sous la plume de Pierre Rabardel, qui la rattache lui-même aux travaux de Léontiev. Cette filiation se lit donc à travers Rabardel. Ce que Léontiev en écrit dans ses propres pages, c’est chez Léontiev qu’on ira le chercher.",
       "Chacune des trois voies que Béguin distingue s’adosse à des travaux qu’il nomme, parmi d’autres ceux de Bannon, de Freyssenet, de Suchman, de Daniellou, de Pastré ou de Clot. L’article établit qu’ils comptent, il n’en donne pas le contenu : c’est une bibliographie à suivre, et chacun de ces noms ouvre une piste qui se lit pour elle-même."
+    ]
+  },
+  {
+    "conceptId": "conduite-economique",
+    "lead": [
+      "Imaginons une caméra installée au-dessus d’un rayon de supermarché. Elle enregistre tout : la main qui prend un paquet, le regard sur l’étiquette, le paquet reposé, la personne qui s’éloigne. Le film est complet, et pourtant il ne dit pas ce qui vient de se passer. Cette personne a-t-elle renoncé à cause du prix, vérifié une composition pour quelqu’un d’autre, ou simplement occupé une minute d’attente ? Le geste est le même dans les trois cas, et ce qui les sépare ne se voit pas sur l’image.",
+      "C’est cet écart qui occupe Paul Albou en 1982, dans un article du Bulletin de psychologie où il cherche à dire de quoi sa discipline s’occupe exactement. Il y consacre une sous-section entière à deux mots que le français distingue et que l’usage courant confond, le comportement et la conduite. Ce n’est pas une querelle de vocabulaire : de la réponse dépend ce qu’une discipline accepte de compter comme un fait."
+    ],
+    "sections": [
+      {
+        "title": "Deux mots français pour un seul mot anglais",
+        "paragraphs": [
+          "Albou part d’une observation de langue. Les économistes français, et beaucoup de psychologues avec eux, parlent selon lui de comportement économique, alors que la discipline n’aurait affaire qu’à des conduites. Ce qui justifie l’écart tient, écrit-il page 201, à l’anglais : le mot behavio(u)r « est un terme massif que connote deux idées que le français distingue ». Le français disposerait de deux mots là où l’anglais n’en a qu’un, et cette différence ne serait pas décorative : elle permettrait de séparer ce qui s’observe du dehors de ce qui a un sens pour celui qui le fait.",
+          "Ramené au rayon de supermarché, l’écart devient simple. La main qui prend le paquet et le repose, c’est le comportement : il se filme, il se compte, il se décrit sans rien savoir de la personne. Ce que cette personne était en train de faire, renoncer, comparer, patienter, c’est la conduite : elle ne se filme pas, elle se comprend.",
+          "L’argument s’arrête pourtant là où l’anglais aurait pu lui répondre. Albou ne discute pas le fait que cette langue dispose aussi du mot conduct, et il ne nomme aucun auteur anglophone qui aurait posé chez lui la même différence. La distinction se donne comme un avantage du français, sans que la démonstration aille le vérifier dans l’usage anglais lui-même."
+        ]
+      },
+      {
+        "title": "Ce qu’un fait enregistré ne dit pas encore",
+        "paragraphs": [
+          "Ce qu’Albou refuse a un nom et une adresse. Il vise le behaviorisme, « notamment avec Watson », pour avoir proposé d’enregistrer les faits « sans se préoccuper de leur signification ». Sur ce point il ne transige pas : « la Psychologie économique, telle que nous la concevons, ne saurait admettre ce point de vue ».",
+          "L’objection n’est pas que l’enregistrement soit inutile. Elle est qu’un fait enregistré sans sa signification ne dit pas encore ce que quelqu’un était en train de faire, et qu’une discipline qui s’en contenterait collectionnerait des gestes sans jamais rencontrer d’économie. Le programme adverse existait de son temps sous une forme très nette : dans une note, Albou rapporte qu’un contemporain, Katona, lui aurait déclaré en 1966 se vouloir exclusivement « fact finding », occupé à recueillir des faits et rien de plus."
+        ]
+      },
+      {
+        "title": "La perle ramassée sur le chemin",
+        "paragraphs": [
+          "Page 202, Albou raconte une petite histoire qui fait tenir sa thèse dans une image. Un promeneur ramasse une perle. A-t-il eu, à cet instant, une conduite économique ? Non : le geste ne suffit pas. Ce qui décidera, c’est la suite. S’il garde la perle comme une réserve de valeur, sa démarche prend une vocation économique. S’il la dissout dans du vinaigre, elle n’en a aucune.",
+          "La leçon de l’exemple est un déplacement du regard : le caractère économique d’un acte ne se lit pas sur l’acte pris à part, mais sur ce qui le suit. Cela implique qu’aucun instantané ne classe quoi que ce soit. Photographier la main qui se referme sur la perle laisse la question entière, et c’est la seule question qui intéresse Albou."
+        ]
+      },
+      {
+        "title": "Une conduite tient à sa situation",
+        "paragraphs": [
+          "Si le geste seul ne suffit pas, où loge la signification ? Pas d’abord dans une intention cachée qu’il faudrait deviner. Albou écrit page 201 que « la conduite économique ne peut être comprise isolément, sans référence à la situation ». Ce qu’une personne fait se comprend à partir de ce dans quoi elle le fait : un marché, une pénurie, un salaire, une file d’attente.",
+          "Le second appui est la continuité. Une conduite est organisée selon des structures, et « elle s’inscrit dans un courant qui n’est pas nécessairement ni toujours conscient » : c’est à cette continuité, à cette fluidité, qu’elle doit selon lui d’être significative. La signification ne se dépose pas dans l’acte isolé, elle vient du cours dans lequel l’acte se trouve pris.",
+          "On peut en tirer deux conséquences que le texte ne formule pas ainsi. Puisque le courant n’est pas toujours conscient, interroger l’intéressé sur ses raisons ne règle pas tout. Et puisque la signification vient du cours, aucune mesure prélevée sur un instant unique ne la restitue : il faut au moins deux moments pour que quelque chose se dise."
+        ]
+      },
+      {
+        "title": "Une définition empruntée à Daniel Lagache",
+        "paragraphs": [
+          "Albou ne présente pas la conduite comme sa trouvaille. Il en emprunte la définition à Daniel Lagache et la cite page 202 : c’est « un ensemble d’opérations matérielles et symboliques par lesquelles un organisme en situation tend à réaliser ses possibilités ou à réduire les tensions qui, en compromettant son intégrité, le mettent en mouvement ».",
+          "Chaque membre de cette phrase porte quelque chose. Les opérations sont « matérielles et symboliques » : les gestes comptent, les signes aussi, une signature ou une promesse autant qu’un déplacement de marchandise. L’organisme est dit « en situation » : la situation est dans la définition même, elle n’est pas ajoutée après coup. Et la conduite est orientée, elle va vers quelque chose, réaliser des possibilités ou faire baisser une tension. Cette définition ne vient pas de l’économie mais de la psychologie générale, et ce qu’Albou en fait consiste à la transporter d’un domaine à l’autre.",
+          "L’emprunt n’est pas la seule dette qu’il reconnaisse. Il existe un état antérieur de sa formule : dès 1974, dans un ouvrage collectif publié par les Presses Universitaires de France, la discipline était définie comme « l’étude scientifique des conduites économiques », et il écrit que les auteurs en étaient alors convenus ensemble. Ce qu’il défend en 1982 vient donc au terme d’un accord déjà pris, non d’une idée de l’année."
+        ]
+      },
+      {
+        "title": "Une thèse défendue, et datée",
+        "paragraphs": [
+          "Ces pages n’ont rien d’un état de l’art. Albou parle à la première personne, il nomme la position qu’il écarte, et il raconte la résistance qu’il a rencontrée : « La distinction est d’importance, si même elle n’a pas toujours été comprise », écrit-il, en renvoyant aux réunions internationales où il avait eu l’occasion de la présenter.",
+          "Il l’adosse aussi à une décision collective et datée. Lors d’une table ronde tenue à Paris le 30 septembre 1980, l’Association française de psychologie économique « a fortement souligné la nécessité de ne pas confondre ces deux concepts ». La distinction relève donc d’un choix de frontière, pris à une date, par un groupe qui décidait de ce que sa discipline aurait à étudier. Le plan de l’article le dit sans détour : la section où tout cela se trouve s’intitule « b) la Psychologie économique étudie les conduites économiques. »",
+          "Une querelle traverse ces pages, et elle reste ouverte. Albou revendique page 199 l’antériorité de ses éléments sur ceux de Pierre-Louis Reynaud, « Comme Reynaud, et avant même qu’il ne se préoccupe de ce problème », et il écrit page 204 que Reynaud les a repris en 1974, « parfois sans mention d’origine »."
+        ]
+      }
+    ],
+    "limits": [
+      "Albou date sa formule d’un accord plus ancien : le fascicule X du Traité de Psychologie appliquée, publié en 1974 par les Presses Universitaires de France, page 42. Savoir si « l’étude scientifique des conduites économiques » y est de sa seule plume ou d’un collectif, ce sont ces pages-là qui le disent, et il faudra les lire.",
+      "L’antériorité qu’il revendique sur Pierre-Louis Reynaud n’a ici qu’une voix, la sienne. Ce que Reynaud a écrit de son côté en 1974, et dans quels termes il nommait ou non ses origines, se trouve dans ses propres publications : c’est là que l’autre version de l’histoire attend son lecteur.",
+      "Ce que cette distinction est devenue après 1982, qui l’a reprise et qui l’a laissée de côté, les sources disponibles ne permettent pas de l’établir. Les travaux de psychologie économique publiés dans les années suivantes sont l’endroit où cette réception se lira."
     ]
   },
   {
@@ -850,6 +1305,69 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "critique-de-l-utilite-esperee-subjective",
+    "lead": [
+      "À la roulette, celui qui mise sait tout ce qu’il y a à savoir. La roue a un nombre fixe de cases, aucune ne tombe plus souvent que les autres, et ce qui se gagne ou se perd se compte en jetons. Sa seule question est de savoir combien engager, et sur quoi. Un médecin qui hésite à opérer, une famille qui hésite à déménager ne sont dans aucune de ces conditions : personne ne leur a dit à quelle fréquence les choses tournent mal, et ce qu’ils risquent ne se compte pas en jetons.",
+      "La manière savante d’analyser une décision consiste pourtant, depuis les années cinquante, à traiter la seconde situation comme la première : on met des nombres sur ce que la personne croit, d’autres sur ce que les résultats valent pour elle, on multiplie, on additionne, et on retient le total le plus élevé. Glenn Shafer ne dit pas que ce calcul est faux. Il dit ce qu’il est : un rapprochement entre deux situations. Et un rapprochement, cela peut ne pas convenir."
+    ],
+    "sections": [
+      {
+        "title": "Ce que « subjectif » veut dire ici",
+        "paragraphs": [
+          "Fixons le vocabulaire, parce que trois mots portent toute l’affaire. L’utilité, c’est le nombre qui dit ce qu’un résultat vaut pour la personne, et non ce qu’il coûte en euros : une même somme ne pèse pas pareil selon qui la reçoit. L’espérance, c’est la moyenne de ces valeurs, chacune pondérée par la chance qu’elle a de survenir. Reste le mot le plus important, subjectif : les chances en question ne viennent pas d’un mécanisme observable, elles expriment ce que la personne croit.",
+          "Ce dernier point ressemble à un aveu de faiblesse ; c’était au contraire ce qui faisait la force de la construction. Devant une roue de casino, les fréquences sont données par l’objet lui-même, et n’importe qui les lirait de la même façon. Devant une opération chirurgicale ou un déménagement, il n’y a pas de roue. Laisser les probabilités venir de la personne, c’est rendre le calcul applicable là où rien ne se compte, c’est-à-dire à peu près partout.",
+          "L’opération est donc une extension : elle emporte hors du casino un raisonnement qui y était chez lui. Toute la question est de savoir jusqu’où cette extension porte, et ce qu’elle laisse derrière elle en chemin."
+        ]
+      },
+      {
+        "title": "Le pari pris pour modèle",
+        "paragraphs": [
+          "Shafer nomme cette extension pour ce qu’elle est dès l’ouverture de son chapitre : « the analysis of a decision problem by subjective expected utility is merely an argument by analogy. It draws an analogy between that decision problem and the problem of a gambler who must decide how to bet in a pure game of chance. » Analyser une décision de cette façon, ce n’est donc pas la résoudre : c’est soutenir qu’elle ressemble assez au problème d’un joueur, dans un jeu où seul le hasard tranche, pour être traitée comme lui.",
+          "On peut détailler ce que possède ce joueur, puisque c’est précisément ce dont l’autre manque. Les fréquences lui sont fournies par le dispositif du jeu et non par ses convictions. Ses gains et ses pertes se comptent tous dans la même unité, si bien que deux enjeux se comparent sans discussion. Enfin la partie est engagée : s’abstenir de miser est encore une façon de jouer. Chacune de ces conditions peut manquer ailleurs, et la ressemblance s’affaiblit d’autant.",
+          "Un argument par analogie n’est pas une démonstration. Il se discute, on peut lui opposer que les deux situations diffèrent sur le point qui compte, et celui qui l’écarte ne commet pas une erreur de calcul : il conteste une ressemblance. Ce déplacement paraît mince, il change entièrement le genre d’objection qu’on a le droit de formuler."
+        ]
+      },
+      {
+        "title": "Le canon que Savage croyait tenir",
+        "paragraphs": [
+          "La cible est datée dès la première page : « More than three decades have passed since 1954, when L. J. Savage published The Foundations of Statistics ». L. J. Savage y énonce des postulats auxquels les préférences d’une personne peuvent se conformer ou non. Shafer résume ainsi la position qu’il vient discuter : « Savage believed that a rational person’s preferences should satisfy these postulates ». Puis vient la conclusion que Savage en tirait : « He concluded that it is normative to make choices that maximize subjective expected utility. To do otherwise is to violate a canon of rationality ».",
+          "Le mot qui porte tout le poids est normative. Une théorie descriptive dit ce que les gens font ; une théorie normative dit ce qu’ils devraient faire. La différence n’a rien d’académique. Si la maximisation est un canon, alors celui qui choisit autrement ne fait pas un autre choix : il enfreint une règle, et c’est à lui de se justifier.",
+          "C’est cette position que Shafer annonce vouloir réviser, trois décennies après. Non pas les postulats un à un, mais le statut qu’ils avaient reçu : celui d’une mesure à laquelle une décision doit se soumettre pour avoir le droit d’être dite raisonnable."
+        ]
+      },
+      {
+        "title": "Un outil se choisit, un canon s’impose",
+        "paragraphs": [
+          "La conséquence de l’analogie, il l’énonce page 194 sans chercher à l’adoucir : « This means repudiating the claim that subjective expected utility provides a uniquely normative way of constructing decisions. » L’unicité est visée, non la validité. Il ne s’agit pas de montrer que le calcul se trompe, il s’agit de lui retirer le monopole du raisonnable.",
+          "La nuance est étroite et elle décide de tout. On peut refuser qu’une méthode soit la seule bonne sans soutenir qu’elles se valent toutes, ni qu’aucune ne vaut. Une décision peut rester mauvaise, un raisonnement rester incohérent ; simplement, l’écart à un calcul particulier n’en fait plus la preuve à lui seul. Devant un canon, la seule question est de savoir si l’on s’y conforme, et l’écart s’appelle une faute. Devant un jeu d’outils, la question devient : celui-ci convient-il à ce qu’on a sous les yeux ?",
+          "Le vocabulaire de Shafer est d’ailleurs celui de la construction. Une décision s’y construit, comme se construit un argument, et le calcul y figure parmi les instruments dont on dispose pour cela. On peut lire dans ce déplacement une redistribution des rôles : le calcul cesse d’être le juge de la décision pour devenir un moyen de la fabriquer, et le jugement revient à celui qui s’en sert."
+        ]
+      },
+      {
+        "title": "L’acheteur de voiture doit trancher quand même",
+        "paragraphs": [
+          "Une conclusion trop rapide guette ici : si le calcul n’est qu’un outil parmi plusieurs, peut-être n’y a-t-il plus d’urgence à conclure, et l’hésitation prolongée devient-elle une position tenable. Shafer ne va pas là. Page 197, à propos de quelqu’un qui achète une voiture, il tient que la nécessité de trancher est bien réelle. Mais il en situe autrement l’origine : elle vient de la situation dans laquelle l’acheteur se trouve, non d’une exigence de la logique.",
+          "L’effet est immédiat sur ce qu’on a le droit d’invoquer. On ne peut plus défendre la maximisation en disant qu’il faut bien décider d’une façon ou d’une autre. L’obligation de conclure est bien là, mais elle ne désigne aucun instrument en particulier : les circonstances imposent une échéance, elles ne disent pas comment y répondre.",
+          "Imaginons une équipe qui doit retenir un fournisseur avant la fin du mois. La date la contraint réellement, et personne ne peut la reporter. Elle n’indique pourtant pas s’il faut noter chaque candidat, éliminer ceux qui échouent sur un point rédhibitoire, ou demander à voir un chantier déjà livré. La pression du calendrier et le choix de la méthode sont deux questions séparées, et les confondre revient à faire décider l’horloge."
+        ]
+      },
+      {
+        "title": "Une critique plus ancienne que ce chapitre",
+        "paragraphs": [
+          "Les objections à l’utilité espérée n’ont pas attendu ce texte, et Shafer ne le dissimule pas : sa bibliographie, aux pages 233 et 234, nomme Allais et son article de 1953, ainsi que des travaux empiriques sur la façon dont les gens choisissent réellement. Le titre même du chapitre, « Savage revisited », annonce une relecture plutôt qu’une réfutation inédite.",
+          "Ce qui lui appartient en propre tient dans le sens qu’il donne à ces objections accumulées. Prises séparément, ce sont autant d’objections adressées aux postulats de Savage. Rassemblées sous l’idée d’un argument par analogie, elles cessent d’être une liste d’anomalies pour devenir la raison de rétrograder une norme au rang d’instrument.",
+          "C’est aussi pourquoi ce chapitre ne se lit pas comme un procès. Il conserve au calcul son usage, il lui refuse son autorité, et il rend discutable une question que le canon rendait inutile : à quelles conditions cette décision-ci ressemble-t-elle assez à un pari pour être traitée comme tel ?"
+        ]
+      }
+    ],
+    "limits": [
+      "Les postulats discutés ici sont ceux que L. J. Savage énonce dans The Foundations of Statistics, paru en 1954. Leur formulation exacte, et l’argument qui en fait une norme plutôt qu’une description, sont dans ce livre : c’est là qu’il faudra les lire.",
+      "Ce chapitre de 1988 est la reprise d’un article publié dans Statistical Science en 1986, comme l’indique une note de la page 233. Le premier état du raisonnement se trouve là ; ce que deux ans ont changé d’une version à l’autre se verra en les lisant l’une contre l’autre.",
+      "Les objections que Shafer réinterprète ont leurs textes propres, à commencer par l’article d’Allais de 1953 et les études empiriques que sa bibliographie énumère. Ce que chacune établit exactement, ce sont ces travaux qui le disent.",
+      "Enfin, l’exemplaire numérisé du volume accessible en ligne saute les pages imprimées 204 et 205 : deux sous-sections de la troisième partie du chapitre y manquent, dont on ignore jusqu’au titre. Un exemplaire imprimé les rendra."
+    ]
+  },
+  {
     "conceptId": "debat-de-normes",
     "lead": [
       "Une infirmière doit administrer un médicament en suivant un protocole écrit pour éviter les erreurs. Le patient qu’elle a devant elle n’est pourtant jamais tout à fait celui que le protocole avait en tête : ses antécédents médicaux ne sont pas tous connus, le produit prescrit n’est plus en stock, il a peur et comprend mal ce qu’on lui demande. Elle doit décider, sur le moment, ce qu’il convient réellement de faire. Suit-elle encore la règle, ou bien s’en écarte-t-elle ?",
@@ -963,6 +1481,68 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "definition-de-la-psychologie-economique",
+    "lead": [
+      "Imaginons qu’un prix double du jour au lendemain. Un économiste dira combien d’acheteurs ont renoncé, de combien les ventes ont reculé, au bout de combien de semaines elles sont remontées. Il aura raison, et il n’aura rien dit de ce qui s’est passé chez ceux qui ont renoncé : la crainte que d’autres prix suivent, l’habitude à laquelle on tient, la façon dont on finit par se convaincre que c’était de toute manière superflu.",
+      "Reste à savoir qui s’occupe de cette seconde moitié, et à quel titre. On peut répondre qu’il s’agit d’un éclairage parmi d’autres : le fait économique demeure au centre, on l’observe seulement d’un côté un peu différent. On peut répondre qu’il y a là un objet à part entière, avec ses questions et ses méthodes. Paul Albou, qui signe en 1982 depuis le laboratoire de psychologie économique de l’université René Descartes, tient la seconde réponse, et une bonne partie de son article sert à montrer qu’elle ne va pas de soi."
+    ],
+    "sections": [
+      {
+        "title": "Ce qu’Albou appelle les deux impérialismes",
+        "paragraphs": [
+          "Il décrit la situation de sa discipline sans ménagement. Page 198, il écrit qu’elle « reste encore aujourd’hui […] ballotée entre deux impérialismes : l’impérialisme économique qui, se réclamant des travaux de l’Ecole autrichienne, n’y voit qu’un point de vue particulier sur le fait économique, et l’impérialisme psychosocial qui réduit la conduite économique à un simple état de contamination intermental ».",
+          "Les deux mots visent deux façons de faire disparaître un objet d’étude. Le premier lui refuse un domaine : ce que la psychologie apporterait ne serait qu’une manière de regarder des faits économiques déjà constitués, utile en marge, jamais fondatrice. Le second lui refuse une consistance propre : ce que fait un agent se ramènerait à l’influence que d’autres esprits exercent sur le sien, et il n’y aurait plus rien d’économique à expliquer, seulement de la contagion entre personnes.",
+          "L’enjeu n’est pas de préséance, il est de travail. Selon la réponse retenue, on ne cherche pas les mêmes choses : un point de vue s’ajoute à des résultats acquis ailleurs, tandis qu’une discipline se donne ses propres questions, ses propres façons de recueillir ce qu’elle observe, et le droit de contredire ses voisines. C’est cette seconde position qu’Albou entreprend de tenir en une phrase."
+        ]
+      },
+      {
+        "title": "Une phrase, et les trois choses qu’elle règle",
+        "paragraphs": [
+          "La phrase s’imprime tout en haut de la page 199 : « Telle est la définition que nous proposons de la Psychologie économique, science des conduites économiques, et cette définition comprend trois aspects : 1. elle caractérise la discipline ; 2. elle est centrée sur les conduites d’agents déterminés ; 3. elle précise la nature des activités économiques. »",
+          "Les trois aspects ne sont pas trois nuances : chacun répond à une objection. Le premier tranche la question laissée ouverte plus haut, puisque ce qui est défini est une discipline et non un angle de vue. Le deuxième déplace le regard vers ce que fait quelqu’un en particulier : ce ne sont pas des grandeurs qui se conduisent, ce sont des agents déterminés, dont on peut dire où ils sont et ce qu’ils font. Le troisième engage à dire ce qui rend une activité économique plutôt qu’autre chose, et c’est peut-être le plus exigeant des trois, puisque rien dans un geste ne porte cette qualité écrite sur lui.",
+          "L’article traite ensuite ces aspects un à un, dans des sous-sections qui se suivent des pages 199 à 202. La définition tient en une ligne, mais elle fonctionne comme un programme : chaque membre de la phrase ouvre une question à laquelle il faudra répondre séparément."
+        ]
+      },
+      {
+        "title": "Expliquer ce que l’économie établit",
+        "paragraphs": [
+          "Une fois la discipline distinguée d’un point de vue, il reste à dire ce qu’elle fait que sa voisine ne fait pas. Albou s’en tire page 198 par une formule glissée dans une longue parenthèse : la psychologie économique se sépare de la science économique « en ce qu’elle tente d’expliquer ce que l’autre établit ».",
+          "Reprenons le prix qui double. Que les ventes reculent de tant, puis remontent au bout de tant de semaines, cela s’établit : on le mesure, on le date, on le compare. Pourquoi elles remontent, et pourquoi plus vite chez les uns que chez les autres, cela se cherche ailleurs. Le partage est net, et il n’est pas hiérarchique : expliquer ne vient pas après compter comme un commentaire vient après un résultat, c’est un autre travail, avec ses preuves à faire.",
+          "L’exigence engage aussi la façon de travailler, et Albou tranche : page 200, il écarte la voie de la modélisation. On peut y lire que l’autonomie qu’il revendique ne porte pas seulement sur l’objet, mais sur les outils que la discipline accepte de reprendre à ses voisines."
+        ]
+      },
+      {
+        "title": "Issue de la psychologie sociale, et pas seulement",
+        "paragraphs": [
+          "L’autre voisine, c’est la psychologie sociale, et là Albou ne renie rien. Page 198, il parle de « l’autonomie de la Psychologie économique (certes, issue de la psychologie sociale, mais qui ne s’y réduit plus…) ». La filiation est reconnue dans la parenthèse même où l’indépendance est réclamée : ce n’est pas contre son origine qu’il argumente, c’est contre l’idée que cette origine suffise à la contenir.",
+          "Page 199, la formule revient et se déplace : « autonome, elle s’efforce de l’être et par rapport à la psychologie sociale (dont elle est issue) ». Deux endroits de cette phrase comptent. Le « et par rapport à » annonce une suite, car l’autonomie se réclame des deux côtés à la fois, vers la psychologie sociale et vers l’économie. Et « s’efforce » dit le reste : l’indépendance n’est pas un état acquis dont on hériterait, c’est une chose qu’une discipline a à faire, et à refaire.",
+          "Ce qu’Albou revendique, d’ailleurs, ce n’est pas d’avoir fondé quoi que ce soit. Page 195, il rapporte l’origine de la psychologie économique à Tarde. Ce qu’il tient pour sien, c’est la définition, et il la défend avec des dates."
+        ]
+      },
+      {
+        "title": "La même définition, en anglais",
+        "paragraphs": [
+          "Cette définition doit-elle rester française ? Page 205, Albou accepte la traduction : la psychologie économique peut se dire « the study of economic behavior », et il l’écrit en compagnie de Katona et de van Raaij. Ce qu’il refuse dans le même mouvement, c’est l’acception behavioriste du mot comportement, celle qui ferait de la discipline une collecte de faits observables dont on ne demande pas la signification.",
+          "L’accord sur la formule n’efface pas les désaccords : dans ces mêmes pages, page 199 puis page 205, c’est la position de van Raaij qu’il conteste. Deux chercheurs peuvent signer la même phrase sans entendre la même chose sous son mot central, et c’est bien pourquoi Albou consacre un article entier à une définition qu’il aurait pu tenir pour acquise depuis vingt ans."
+        ]
+      },
+      {
+        "title": "Vingt ans pour une phrase",
+        "paragraphs": [
+          "Cette histoire, il la raconte lui-même en notes. Page 199, il renvoie à 1962, année d’un rapport remis au Commissariat Général du Plan et d’un ouvrage d’« Initiation à la Psychologie économique ». Puis à 1974 : c’est dans « La psychologie économique », fascicule X du Traité de Psychologie appliquée publié aux Presses Universitaires de France, page 42, que se fixe la formule brève, « l’étude scientifique des conduites économiques ».",
+          "Vingt ans plus tard, il ne présente donc pas une trouvaille. Page 204, il écrit que sa définition « reprend en l’actualisant et en la précisant » celle de 1962, et il ajoute une remarque qui en dit long sur ce qu’il a vécu entre-temps : « Cette première formulation a été, depuis lors, utilisée et commentée (parfois sans mention d’origine) par différents auteurs. »",
+          "La revendication a un nom en face d’elle. Page 197, Albou discute les définitions de Pierre-Louis Reynaud et les écarte ; page 199, il rappelle l’ordre des choses : « Comme Reynaud, et avant même qu’il ne se préoccupe de ce problème, nous avions tenté de définir… ». Ces pages font ainsi deux choses à la fois, elles proposent une définition et elles en défendent la propriété.",
+          "Un dernier détail change la façon de les lire. Ce n’est pas d’abord un article de revue : c’est une communication, et Albou écrit page 198 qu’il vient d’organiser le colloque où il parle. La définition est prononcée devant des collègues réunis, dans un moment où une discipline naissante se compte et se nomme."
+        ]
+      }
+    ],
+    "limits": [
+      "Trois textes plus anciens portent l’état antérieur de cette définition : le rapport remis en 1962 au Commissariat Général du Plan, l’« Initiation à la Psychologie économique » de la même année, et le fascicule X du Traité de Psychologie appliquée, où la formule brève est arrêtée en 1974, page 42. En quels termes la première version était écrite, et ce qu’elle disait déjà de l’autonomie de la discipline, ce sont ces pages qui le tiennent : il faudra les lire.",
+      "L’antériorité revendiquée sur Pierre-Louis Reynaud, comme le désaccord avec van Raaij, n’ont ici qu’une voix, celle d’Albou. L’autre version de l’histoire, et les termes exacts des définitions qu’il écarte, se trouvent dans les publications de ces deux auteurs.",
+      "Ce que cette définition est devenue après 1982, qui l’a reprise et sous quel nom la discipline s’est enseignée ensuite, les sources disponibles ne permettent pas de l’établir : la réponse est dans les travaux de psychologie économique publiés depuis. Quant au colloque où ces pages ont été prononcées, l’article n’en imprime ni l’intitulé ni la date."
+    ]
+  },
+  {
     "conceptId": "deplacement-des-buts",
     "lead": [
       "Imaginons un employé au guichet qui refuse un remboursement pourtant justifié, en invoquant le règlement, alors que ce règlement avait été écrit précisément pour que les clients soient bien traités. Imaginons de même un enseignant qui suit son programme heure par heure sans se soucier de savoir si les élèves comprennent, parce que le programme, lui, a été respecté. Dans les deux cas, quelque chose s’est inversé : la règle, censée rendre un service possible, a fini par compter plus que ce service lui-même.",
@@ -1018,6 +1598,65 @@ export const generatedDeepenings: Deepening[] = [
       "Merton reprend cette analyse dans un ouvrage plus tardif, Social Theory and Social Structure. Ce qu’il y retravaille, ce qu’il y nuance de son propos de 1940, se lit dans ce livre et nulle part ailleurs : c’est la suite de l’article de 1940, pour qui veut la voir.",
       "Les travaux plus tardifs sur les conditions précises de ce déplacement sont signalés plus haut sans être déployés. Sous quelles conditions exactement le mécanisme s’enclenche, et quand il ne s’enclenche pas, ces articles le disent ; il faudra les lire pour l’apprendre.",
       "L’exemple étudié par Merton porte sur une administration organisée par des règles écrites ; son extension à d’autres types d’organisations, entreprise privée ou association, n’est pas discutée dans ce texte de 1940 et reste une hypothèse de lecture plutôt qu’un point établi."
+    ]
+  },
+  {
+    "conceptId": "division-sexuelle-et-rapports-de-sexe",
+    "lead": [
+      "Dans un service, un atelier, un immeuble de bureaux, on repère assez vite que certaines tâches reviennent aux femmes et d’autres aux hommes, sans que personne n’ait signé de règlement en ce sens. Le constat est si banal qu’on ne sait plus quoi en faire. On peut le traiter comme un tableau : la photographie d’une inégalité dont la cause serait ailleurs, dans les mentalités, l’éducation, une histoire longue. On peut aussi le traiter comme un terrain : l’endroit précis où quelque chose se gagne et se perd, et non le reflet d’une partie qui se jouerait plus loin.",
+      "C’est la seconde réponse que défend Danièle Kergoat, sociologue du travail, dans quatre pages écrites en juin 1990 pour un séminaire. Mais avant de pouvoir la formuler, elle doit reprendre deux expressions que la question emploie sans y penser : « rapport social » et « division du travail ». Dans le langage courant comme dans le vocabulaire de la sociologie, l’une et l’autre disent presque le contraire de ce qu’elle veut leur faire dire."
+    ],
+    "sections": [
+      {
+        "title": "« Rapport social » n’est pas « relation »",
+        "paragraphs": [
+          "Deux personnes qui se parlent entretiennent une relation ; deux collègues qui négocient un planning ont une interaction. Kergoat écarte les deux sens. Un rapport social, tel qu’elle l’emploie, ne désigne ni l’un ni l’autre : il nomme un antagonisme et une contradiction, qui s’expriment en même temps que se met en place une hiérarchisation. Trois choses sont donc tenues ensemble dans ce seul mot : des groupes qui s’opposent, une opposition qui ne se résorbe pas d’elle-même, et un classement qui donne davantage à l’un des deux.",
+          "La conséquence est immédiate pour qui voudrait vérifier quelque chose en observant. On ne trouvera pas un rapport social en regardant un couple s’entendre ou se disputer, ni en prenant la température d’une équipe. Deux personnes peuvent très bien s’apprécier et occuper des positions produites par un antagonisme entre les groupes auxquels elles appartiennent ; une brouille, à l’inverse, ne prouve rien. Ce qui se cherche est d’un autre ordre : la manière dont le travail se répartit, se nomme et se classe."
+        ]
+      },
+      {
+        "title": "Diviser le travail sans produire de la solidarité",
+        "paragraphs": [
+          "Le second mot est encore plus piégé. « Division du travail » a une longue carrière en sociologie, et le nom de Durkheim y est attaché : l’idée qu’une société tient ensemble parce que ses membres, en se spécialisant, deviennent nécessaires les uns aux autres, de sorte que diviser le travail revient à fabriquer du lien. Kergoat prend soin de préciser qu’en employant cette expression elle ne se situe pas dans ce paradigme d’une société solidaire.",
+          "Le déplacement n’a rien de cosmétique. Si diviser produit de la complémentarité, une répartition inégale est un déséquilibre à corriger à l’intérieur d’un ensemble qui, lui, tient. Si diviser est la forme que prend un antagonisme, alors la répartition n’est plus un défaut de réglage : elle est le lieu où l’antagonisme se poursuit. Les mêmes faits observables, les mêmes listes de tâches, changent alors complètement de sens selon celui des deux cadres où on les place."
+        ]
+      },
+      {
+        "title": "Un enjeu, et non l’enjeu",
+        "paragraphs": [
+          "La proposition tient en une phrase, qui clôt la section intitulée « Une proposition de travail » : « La division (sexuelle) du travail est un enjeu fondamental des rapports sociaux (entre les sexes). » L’article est indéfini, et il est marqué. Kergoat n’écrit pas que cette division serait l’enjeu des rapports de sexe, comme si tout s’y ramenait ; elle écrit qu’elle en est un enjeu, fondamental, parmi d’autres.",
+          "Le contraste se voit à trois lignes de là, sur la même page, dans une phrase que l’imprimé met en gras : « les modalités matérielles de ces (bi-)catégorisations sont donc l’enjeu des rapports sociaux ». Là, l’article est défini. Ici, il ne l’est plus. Un écart de deux lettres sépare une thèse générale sur ce qui se joue dans les rapports sociaux et le statut, plus modeste et plus précis, qu’elle accorde à la répartition sexuée des tâches.",
+          "Cette prudence a une raison, que le texte donne juste avant : les rapports sociaux y sont dits consubstanciels les uns aux autres, ou, si l’on veut un postulat minimum, coextensifs. Autrement dit, on ne rencontre jamais un rapport de sexe à l’état pur, détaché du rapport entre classes ou des autres divisions qui traversent une société. Faire de la division sexuelle du travail l’enjeu unique reviendrait à isoler ce qui, dans cette façon de voir, ne s’isole pas."
+        ]
+      },
+      {
+        "title": "Ce que font les parenthèses de la phrase",
+        "paragraphs": [
+          "La phrase porte deux parenthèses, et elles ne sont pas décoratives. Retirez-les, et il reste une phrase entière, qui ne parle plus des sexes du tout : la division du travail est un enjeu fondamental des rapports sociaux. La spécification au sexe est ajoutée par-dessus une proposition qui vaut d’abord des rapports sociaux en général, et ce sont les parenthèses, et elles seules, qui l’ajoutent.",
+          "Les exemples qui entourent cette phrase le confirment, car aucun n’est sexué : le privé et le public, le manuel et l’intellectuel, le capital et le travail, la division internationale du travail. Ce sont des partages qui traversent une société entière et qui hiérarchisent, chacun à sa manière, ce qu’ils séparent.",
+          "On se tromperait donc en lisant cette proposition comme une thèse portant seulement sur la situation des femmes. C’est une manière de penser la façon dont une société se divise, dont la division entre les sexes est un cas, particulièrement travaillé par l’auteure. Cela implique aussi que le raisonnement ne perd pas sa forme quand on change de division : c’est ce que les parenthèses rendent visible d’un seul coup d’œil."
+        ]
+      },
+      {
+        "title": "Une chaîne qui se lit dans les deux sens",
+        "paragraphs": [
+          "La proposition articule trois termes : les rapports sociaux de sexe, la division sexuelle du travail qui en est l’enjeu, et les pratiques sociales, c’est-à-dire ce que les gens font effectivement. Lue dans un sens, la chaîne décrit une reconduction : l’antagonisme produit une répartition, la répartition se traduit en gestes quotidiens, et ces gestes réinstallent l’antagonisme. Chacun tient sa place, et rien ne bouge parce que tout, chaque jour, se remet en place.",
+          "Or Kergoat pose cette chaîne comme réversible : elle permet de penser tant la reproduction des rapports sociaux que leur remise en cause. Les pratiques peuvent déplacer la répartition, et déplacer la répartition atteint les rapports eux-mêmes, précisément parce que c’est là qu’ils se jouent. C’est ce que gagne le mot « enjeu » sur le mot « reflet » : un reflet, on peut le modifier sans rien changer à ce qu’il reflète.",
+          "Réversible ne veut pas dire prometteur. La même chaîne, lue dans l’autre sens, explique pourquoi une répartition tient malgré les intentions de ceux qui la subissent, et pourquoi un déplacement obtenu quelque part peut se rattraper ailleurs. Ce que la proposition offre n’est pas une garantie de changement, c’est un endroit où le chercher, et une raison de penser que ce qui s’y passe compte."
+        ]
+      },
+      {
+        "title": "Un texte de juin 1990, laissé en l’état",
+        "paragraphs": [
+          "L’article s’ouvre sur un avertissement rare. Une note liminaire signale que le texte publié date de juin 1990, alors que la livraison porte le millésime 1992, et que certaines des idées qui y sont avancées n’ont pas été reprises ensuite par l’auteure, qui a néanmoins choisi de laisser le papier tel quel. Ce que l’on lit là est donc l’état d’une réflexion à une date, revendiqué comme tel, et non le dernier mot de celle qui l’écrit.",
+          "Le papier est issu de deux séances de séminaire tenues avec Hélène Le Doaré, nommée dès la première phrase. La proposition de poser les problèmes en termes de continuité ou de discontinuité lui revient, et Kergoat la lui attribue explicitement page 24 ; à la même page, elle précise qu’à partir de là elle ne parle plus qu’en son nom propre. La phrase sur l’enjeu, avec ses parenthèses et son article indéfini, vient après cette précision : elle est de Kergoat seule."
+        ]
+      }
+    ],
+    "limits": [
+      "Ces quatre pages ne portent que la voix de leur auteure. Comment cette proposition a été reçue, discutée, reprise ou contestée par d’autres chercheuses et chercheurs du même champ, cela se lit dans leurs textes, un par un.",
+      "L’avertissement de la première page est une invitation ouverte : Danièle Kergoat annonce que certaines idées avancées ici n’ont pas été reprises plus tard, sans dire lesquelles. En quels termes ses textes ultérieurs ont reformulé la consubstantialité des rapports sociaux, et ce qu’ils ont fait de la chaîne réversible, cela s’établira en les lisant.",
+      "Les deux séances de séminaire dont l’article est issu ont eu lieu avec Hélène Le Doaré, et c’est d’elle que vient la façon de poser les problèmes en termes de continuité ou de discontinuité. Ce qu’elle en tirait pour son compte, et ce qui s’est dit d’autre au cours de ces séances, ces quatre pages ne le rapportent pas."
     ]
   },
   {
@@ -1119,6 +1758,59 @@ export const generatedDeepenings: Deepening[] = [
       "Un article de 1986, signé par le psychologue Joel Michell et intitulé « Measurement scales and statistics: A clash of paradigms », est le signe d’un désaccord réel autour de cette typologie. Le titre annonce l’affrontement ; les arguments qu’il oppose à Stevens et la conclusion qu’il en tire sont dans l’article, et c’est le premier texte à lire pour entendre l’autre partie.",
       "Plus loin dans son article, Stevens cite une seconde définition de la mesure, entre guillemets, attribuée à un membre non identifié d’un comité britannique. Ni sa formulation exacte ni le nom de son auteur ne figurent plus haut : ils sont dans les pages de Stevens, à quelques paragraphes de la phrase citée.",
       "La traduction française donnée plus haut n’a pas été publiée : elle sert à faire comprendre, pas à faire référence, et qui veut citer Stevens le citera en anglais. Quant au rapport de Campbell auquel il renvoie, le « Final Report » mentionné en page 340, c’est lui qui dira si la reformulation de Stevens lui rend justice."
+    ]
+  },
+  {
+    "conceptId": "effet-de-cadrage",
+    "lead": [
+      "Devant deux devis identiques, personne n’accepterait de payer plus cher parce que le second est rédigé dans un autre ordre. Nous tenons pour acquis qu’une décision porte sur ce qui va se passer et non sur la phrase qui le décrit, et surtout qu’une préférence qui dépendrait de la phrase serait corrigée aussitôt qu’on nous la montrerait. C’est cette seconde certitude, plus encore que la première, que le travail d’Amos Tversky et Daniel Kahneman met en difficulté.",
+      "Le résultat qui l’ébranle tient en deux énoncés soumis à deux groupes de répondants, à quelques mots près les mêmes. Le plus embarrassant vient ensuite : à des personnes qui ont vu les deux versions et à qui l’on a expliqué qu’elles reviennent au même, celle qui invite à la prudence continue d’appeler la prudence, et l’autre le risque. Ces mêmes personnes souhaitent que leurs réponses soient cohérentes, et disent les deux choses ensemble. C’est là que la comparaison avec les illusions visuelles cesse d’être une image, et il vaut la peine de regarder ce qu’elle affirme au juste."
+    ],
+    "sections": [
+      {
+        "title": "Deux groupes, deux énoncés, une épidémie",
+        "paragraphs": [
+          "Dans le chapitre de 1988, la démonstration occupe la page 174. Deux problèmes y sont numérotés 5 et 6, et posés à propos d’une épidémie : c’est le problème dit de la maladie asiatique. Le premier a reçu 152 réponses, le second 155. Chacun propose deux programmes, l’un dont le résultat est acquis, l’autre qui joue sur des probabilités. La seule chose qui les sépare est la manière de compter les issues : « the former is framed in terms of the number of lives saved », le premier est formulé en nombre de vies sauvées, « whereas the latter is framed in terms of the number of lives lost », tandis que le second l’est en nombre de vies perdues.",
+          "Les réponses se renversent. D’un côté, 72 % contre 28 % ; de l’autre, 22 % contre 78 %. Là où les issues se comptent en vies sauvées, le programme sans aléa l’emporte largement ; là où elles se comptent en vies perdues, c’est le pari qui rassemble une majorité comparable. Les auteurs ne laissent aucune échappatoire sur la nature de l’écart : « Problems 5 and 6, however, are essentially identical », les problèmes 5 et 6 sont pourtant essentiellement identiques, et ils ne diffèrent que par ce point."
+        ]
+      },
+      {
+        "title": "Ce que l’invariance exige, et ce qu’elle n’exige pas",
+        "paragraphs": [
+          "L’exigence à laquelle ces réponses contreviennent est énoncée page 168, et elle est d’une modestie qui surprend : « different representations of the same choice problem should yield the same preference », des représentations différentes d’un même problème de choix devraient conduire à la même préférence. Elle ne demande à personne de calculer juste, ni de connaître les probabilités, ni d’être indifférent au risque. Elle demande seulement que la description ne compte pas. C’est le genre de principe qu’on n’a pas idée d’écrire tant qu’il tient tout seul.",
+          "Tout le poids porte alors sur « un même problème ». Si deux présentations diffèrent par leurs conséquences, préférer l’une n’a rien d’un effet de cadrage : c’est une préférence ordinaire, et il n’y a rien à y corriger. L’intérêt des problèmes 5 et 6 est que l’écart est confiné à la façon de compter les issues, depuis un état de départ ou depuis un état d’arrivée. Sans cette identité des conséquences, l’argument s’effondrerait, et c’est pourquoi les auteurs l’établissent avant de commenter le moindre taux.",
+          "Le chapitre tire le bilan page 173 : « variations in the framing of decision problems produce systematic violations of invariance and dominance that cannot be defended on normative grounds ». Deux mots y portent. Systématiques : l’écart n’est pas du bruit, il va toujours dans le même sens. Indéfendables : personne, une fois le renversement mis sous ses yeux, ne se porte à sa défense. La dominance, nommée à côté de l’invariance, est la seconde exigence qui cède, celle qui veut qu’une option meilleure sous tous les rapports soit préférée à une autre."
+        ]
+      },
+      {
+        "title": "L’attrait qui survit à l’explication",
+        "paragraphs": [
+          "Le passage décisif se trouve page 175, et il ne rapporte plus un taux mais un aveu. Des répondants à qui les deux versions ont été présentées et expliquées continuent de vouloir rester prudents dans celle qui compte les vies sauvées, et preneurs de risque dans celle qui compte les vies perdues, « although they also expressed a wish for their answers to be consistent », alors même qu’ils souhaitent que leurs réponses soient cohérentes. Ils tiennent les deux souhaits à la fois, et ne tranchent pas.",
+          "C’est ce qui sépare l’effet d’une faute. Une faute, montrée, disparaît : on refait l’addition, on adopte le résultat, l’attachement à la réponse fausse ne survit pas à sa réfutation. Ici, la démonstration déplace le jugement que la personne porte sur sa réponse sans déplacer son attirance pour elle. Elle sait qu’elle devrait répondre pareil des deux côtés, et les deux côtés continuent de ne pas se ressembler.",
+          "Cela implique quelque chose de désagréable pour qui voudrait s’en prémunir : avertir ne suffit pas. Si la lucidité de celui qui décide ne dissout pas l’effet, ce qui reste à traiter est la formulation elle-même, c’est-à-dire le document, le tableau, la façon dont les issues lui sont présentées, plutôt que son attention."
+        ]
+      },
+      {
+        "title": "Ce que la comparaison avec les illusions dit",
+        "paragraphs": [
+          "La comparaison n’est pas une image jetée en passant. Le chapitre y revient page 187 : « The example of visual illusion is instructive », l’exemple de l’illusion visuelle est instructif. Et l’illusion en question n’est pas une catégorie générale : c’est une figure imprimée dans le chapitre même, aux pages 179 et 180, celle de Müller-Lyer, deux segments de même longueur que leurs pointes font voir inégaux. L’index du volume ne porte que deux renvois sous cette entrée, la page de la phrase et celle où elle est reprise.",
+          "Ce que la comparaison affirme est précis. Mesurés à la règle, les segments sont égaux, on le sait, et ils continuent d’être vus inégaux : la connaissance n’a aucun effet sur l’apparence. Voilà ce que les effets de cadrage partagent avec eux. Ce qu’elle n’affirme pas est tout aussi net : rien n’y range la décision du côté de l’œil, ni ne suggère que la formulation agirait par un mécanisme optique.",
+          "Le prolongement est presque forcé. Devant deux segments, on prend une règle plutôt que de s’en remettre à son impression ; devant un problème de choix, l’équivalent serait de l’écrire dans les deux sens, en vies sauvées et en vies perdues, en gains et en pertes, puis de vérifier que la préférence tient d’un sens à l’autre. Les auteurs ne prescrivent pas ce geste dans ce chapitre. Ils rendent visible pourquoi la seule bonne volonté ne peut pas en tenir lieu."
+        ]
+      },
+      {
+        "title": "D’où vient le cadrage",
+        "paragraphs": [
+          "Le concept n’est pas revendiqué comme une trouvaille. Page 184, les auteurs écrivent : « The present concept of framing originated from the analysis of Allais’s problems », le présent concept de cadrage est né de l’analyse des problèmes d’Allais, et ils créditent nommément Savage (1954, pages 101 à 104) et Raiffa (1968, pages 80 à 86), qui les avaient reformulés. La notion vient donc d’une discussion technique de théorie de la décision, et la psychologie l’a reprise plutôt qu’inventée.",
+          "Une précaution s’impose ici, qui n’est pas des auteurs. Le mot voyage ailleurs en sciences sociales, dans une lignée distincte qui suit Goffman (1974) : les cadres dont il s’agit là ne sont pas ceux-ci, et rien dans ce chapitre ne prétend le contraire. Le cadrage dont parlent Tversky et Kahneman a un objet étroit et vérifiable : la présentation d’un problème de choix, et l’effet qu’elle produit sur les préférences quand tout le reste est tenu constant."
+        ]
+      }
+    ],
+    "limits": [
+      "Les deux problèmes ne sont pas nés en 1988 : le chapitre renvoie à « Tversky and Kahneman, 1981, p. 453 ». C’est cette page de Science qui porte leur libellé exact, le nombre de vies mis en jeu et la population interrogée ; page 458, une version à enjeu monétaire réel attend son lecteur.",
+      "La note de la page 189 annonce une perspective nouvelle, « discussed primarily in the first and last sections ». Ce que la version de 1986 soutenait avant ce déplacement, et les problèmes 3, 4, 7, 8 et 12 qu’elle publiait pour la première fois, c’est l’article du Journal of Business qui le montre.",
+      "Savage, pages 101 à 104, et Raiffa, pages 80 à 86 : les auteurs y renvoient l’origine du concept. En quels termes ces pages reformulent les problèmes d’Allais, et ce que la reformulation cherchait à établir, elles seules le disent.",
+      "Aucune traduction française publiée n’est connue, ni pour ce chapitre ni pour l’article de 1986. La formule qui circule le plus largement vient du texte de 1984, et elle dit autre chose : « In their stubborn appeal, framing effects resemble perceptual illusions more than computational errors. » Attrait obstiné plutôt que persistant, illusions perceptives plutôt que visuelles : c’est l’état de 1986, repris en 1988, que porte la citation."
     ]
   },
   {
@@ -1325,6 +2017,231 @@ export const generatedDeepenings: Deepening[] = [
       "Ce texte compare, il ne démontre pas. Rien n’y établit que le feed back et l’opération soient une seule et même chose, et Piaget prend soin d’écrire comparable, puis mutatis mutandis. Ce que ce rapprochement est devenu chez lui ensuite, ce sont deux livres qui le portent, Biologie et connaissance (1967) et L’équilibration des structures cognitives (1975), où le rapport entre régulation et opération dispose d’autre chose que de dix pages. Il faudra les lire.",
       "La communication de 1953 s’appuie sur deux textes antérieurs de Piaget qu’elle nomme en note : un article de 1949 sur le problème neurologique de l’intériorisation des actions en opérations réversibles, paru dans les Archives de psychologie, p. 241-258, et un article de L’Année psychologique du volume jubilaire Piéron, p. 27-38. C’est là que se trouve ce que ces dix pages tiennent pour acquis avant même de commencer.",
       "Ce que cette communication a produit après sa lecture reste à retrouver. Deux articles consacrés à l’histoire de la cybernétique, lus intégralement, ne nomment Piaget à aucun endroit, et aucun travail postérieur repéré ne discute ce rapprochement de 1953. Qui l’a repris, qui l’a contesté, et sous quel nom, c’est dans la littérature qui a suivi qu’on le trouvera."
+    ]
+  },
+  {
+    "conceptId": "flanerie-systematique",
+    "lead": [
+      "Imaginons un atelier où arrive quelqu’un de rapide. Personne ne lui demande de mal travailler, personne ne lui interdit rien : on lui fait seulement comprendre, en deux ou trois remarques, qu’il va trop fort et que cette allure-là, si elle se voit, finira par être attendue de tout le monde. Quelques semaines plus tard, il tient le rythme de l’équipe, et il ne saurait plus dire à quel moment il a décidé de le tenir.",
+      "Frederick Winslow Taylor ouvre son livre le plus connu sur une scène de ce genre, et son premier geste est de la couper en deux. Qu’un homme travaille moins vite qu’il ne pourrait, cela s’explique sans difficulté : c’est une pente ordinaire, et Taylor la traite comme telle. Ce qui l’occupe est autre chose, et beaucoup plus embarrassant pour lui : un ralentissement qui a été raisonné, qui s’apprend, qui se tient à plusieurs et qui poursuit un but précis. Sous un mot unique, il y a deux phénomènes qui n’ont ni la même cause ni la même consistance."
+    ],
+    "sections": [
+      {
+        "title": "Deux ralentissements sous le même mot",
+        "paragraphs": [
+          "Le mot que Taylor emploie est soldiering, que le français rend par flânerie. Il désigne le fait de travailler en dessous de ce que l’on pourrait faire, et il couvrait déjà, dans la langue des ateliers, aussi bien la paresse d’un moment que la retenue calculée. Taylor refuse de laisser les deux ensemble et sépare : d’un côté ce qui vient de l’instinct, de l’autre ce qui vient d’un raisonnement plus élaboré, « caused by their relations with other men », causé par les relations des hommes avec d’autres hommes. La première flânerie, il l’appelle naturelle ; la seconde, systématique.",
+          "La différence n’est pas de degré. Ralentir par pente naturelle, c’est un comportement qu’un homme a seul, qui ne suppose ni règle ni accord, et dont l’explication s’arrête à lui. Ralentir de la seconde manière suppose au contraire quelque chose qui circule entre plusieurs personnes : une évaluation de ce qui arrivera si l’on va vite, une règle sur ce qu’il ne faut pas dépasser, et une certaine idée de ce que l’autre partie sait ou ne sait pas. Le second phénomène demande donc une tout autre explication, et c’est celui que Taylor entreprend de décrire."
+        ]
+      },
+      {
+        "title": "Payés au même taux, alignés sur le plus lent",
+        "paragraphs": [
+          "Le mécanisme, tel que Taylor l’écrit, tient à une situation banale : des hommes de rapidités inégales travaillent côte à côte et sont payés au même taux journalier. Ce qui se produit alors n’est pas ce qu’on attendrait. « The better men gradually but surely slow down their gait to that of the poorest and least efficient » : les meilleurs, graduellement mais sûrement, ralentissent leur allure jusqu’à celle du plus médiocre et du moins efficace. Ce ne sont pas les lents qui accélèrent, ce sont les rapides qui descendent.",
+          "Deux mots de la phrase font tout le travail. Graduellement : il n’y a pas de moment de bascule, pas de décision qu’on pourrait dater, seulement une dérive assez lente pour que celui qui la vit ne la remarque pas. Sûrement : la dérive n’est pas un accident de situation, elle arrive à chaque fois. C’est une régularité, pas une anecdote d’atelier.",
+          "Ce que la situation contient déjà, avant toute intention, c’est un décalage : un taux journalier paie la journée et non ce qui en sort. Celui qui produit le double n’en tire rien de plus le jour même, et il lui faut donc, pour tenir son allure, plus de conviction que pour la lâcher. La suite de l’analyse montre qu’il a même une raison active de ne pas la tenir."
+        ]
+      },
+      {
+        "title": "Une règle apprise, et tenue par le groupe",
+        "paragraphs": [
+          "Cette raison, Taylor l’énonce en une phrase : « It evidently becomes for each man’s interest, then, to see that no job is done faster than it has been in the past. » Il devient de l’intérêt de chacun de veiller à ce qu’aucune tâche ne soit faite plus vite qu’elle ne l’a été par le passé. La formule est exacte et vaut d’être lue lentement : ce qui est protégé n’est pas un niveau d’effort, c’est un record. Une tâche faite une fois en moitié moins de temps devient, à partir de ce jour, ce qu’on sait possible ; et ce qu’on sait possible, on peut le redemander.",
+          "Un intérêt partagé ne suffirait pas à faire tenir une règle, car il suffirait qu’un seul homme s’en écarte pour que la protection tombe. Taylor ajoute donc les deux choses qui la font tenir. Elle s’apprend : les nouveaux venus sont, écrit-il, « taught this by their elders », instruits de cela par les anciens. Et elle est sanctionnée par la pression du groupe, celle qui s’exerce sur celui qui va trop vite et que personne n’a besoin d’organiser.",
+          "On tient là de quoi comprendre la scène du départ sans supposer aucun complot, aucune réunion, aucune consigne. Personne n’a décidé du rythme de l’atelier ; il a été transmis comme se transmettent les manières de faire d’un métier, et il se maintient parce qu’il est dans l’intérêt de chacun qu’il se maintienne. C’est ce qui rend cette flânerie systématique au sens propre : elle a une règle, une transmission et une sanction."
+        ]
+      },
+      {
+        "title": "Ce que Taylor place à l’origine",
+        "paragraphs": [
+          "Arrivé ici, on conclurait volontiers que la cause de tout cela est la pression des collègues. C’est une erreur de lecture, et Taylor lui-même la ferme. La seconde flânerie, il l’attribue aux relations des hommes avec d’autres hommes, et il précise, quelques pages plus haut, de quelles relations il parle : « the relations which exist between employers and employes », les relations qui existent entre employeurs et employés. La cause qu’il assigne est la relation d’emploi.",
+          "La distinction est fine et elle change tout. Les anciens qui instruisent les nouveaux, le regard des collègues sur celui qui force l’allure, sont le mode de transmission de la règle : ils expliquent qu’elle se maintienne et qu’elle se propage. Ils n’expliquent pas qu’elle existe. Ce qui la fait naître, dans l’analyse de Taylor, c’est la manière dont le travail est payé et dont il est connu par celui qui le paie.",
+          "L’écart entre les deux lectures se mesure à ce qu’elles désignent comme point d’application. Si le ralentissement naissait des rapports entre ouvriers, on chercherait à agir sur le groupe. S’il naît de la relation d’emploi, agir sur le groupe revient à traiter le canal plutôt que la source. Taylor, qui écrit ces pages en tête d’un livre où il propose une méthode, place la cause du côté de la relation elle-même."
+        ]
+      },
+      {
+        "title": "Que l’employeur ne sache pas ce qui est possible",
+        "paragraphs": [
+          "Reste le mobile, et Taylor le nomme sans détour : « The greater part of the systematic soldiering, however, is done by the men with the deliberate object of keeping their employers ignorant of how fast work can be done. » La plus grande part de la flânerie systématique est faite dans le but délibéré de tenir les employeurs dans l’ignorance de la vitesse à laquelle le travail peut être fait.",
+          "Ce que cette phrase désigne n’est pas une quantité d’effort retenue, c’est une information retenue. L’enjeu se déplace du muscle vers le savoir : ce qui se protège, c’est l’écart entre ce que le travail donne et ce qu’il pourrait donner, et cet écart n’a de valeur que tant qu’il reste inconnu de l’autre partie. On comprend alors pourquoi la règle porte sur les records plutôt que sur les cadences : un record est précisément le moment où l’information s’échappe.",
+          "Deux mots de la phrase méritent qu’on s’y arrête. Délibéré : le comportement est visé, il n’est ni subi ni inconscient, ce qui le sépare franchement de la flânerie naturelle. Et la plus grande part : Taylor n’écrit pas que toute flânerie systématique poursuive ce but. Il énonce un constat partiel, non une loi générale, et lui prêter la seconde forme serait durcir ce qu’il avance."
+        ]
+      },
+      {
+        "title": "Une description signée de celui qui propose le remède",
+        "paragraphs": [
+          "Ces pages ne sont pas une enquête neutre déposée quelque part. Elles ouvrent le premier chapitre d’un ouvrage qui s’intitule The Principles of Scientific Management, et ce chapitre porte lui-même le titre « Fundamentals of Scientific Management » : la flânerie systématique y est posée comme le problème auquel la méthode proposée ensuite doit répondre. Cela n’en fait pas une description fausse, et le mécanisme qu’elle décrit se laisse reconnaître ailleurs. Cela situe la description : elle est faite par celui qui vend le remède, et le mobile qu’elle assigne aux ouvriers est celui qui justifie le mieux l’intervention.",
+          "Il faut y ajouter ce que le passage ne contient pas. Les ouvriers y sont décrits, ils n’y parlent pas : on lit ce qu’un ingénieur tient pour leur intérêt et leur but délibéré, jamais ce qu’ils diraient eux-mêmes de leur retenue, ni ce qu’elle leur coûte ou leur épargne. Un lecteur d’aujourd’hui reconnaîtra dans la même conduite une forme de protection collective, ou une négociation muette sur la charge de travail. Ces lectures sont légitimes, mais ce sont des lectures : elles ne sont pas dans le texte, et elles ne se réclament pas de Taylor."
+        ]
+      }
+    ],
+    "limits": [
+      "Le commentaire de référence sur ces pages est le livre de Harry Braverman, Labor and Monopoly Capital (1974). Un vocabulaire s’est attaché depuis à la relecture de Taylor, celui de la séparation de la conception et de l’exécution, de la déqualification, de la dépossession : aucun de ces termes n’est de Taylor, qui ne les écrit pas ici. Dans quel argument ils viennent, et ce que ce livre fait exactement de la flânerie systématique, ses pages le tiennent ; il faudra les lire.",
+      "La réception de la notion et ses contestations ne sont pas établies par les sources disponibles ici, qui s’en tiennent au texte de Taylor. Ce que les sociologues et les historiens du travail ont ensuite fait de ce mot, repris, retourné ou récusé, se lit dans leurs travaux.",
+      "Le passage cité a d’abord été lu en juin 1903 devant la société américaine des ingénieurs mécaniciens, et Taylor le reproduit ensuite dans son livre. Qui voudra la formulation première et ce qui l’entoure la trouvera dans Shop Management, à une autre pagination.",
+      "L’exemplaire collationné est le tirage de 1919. La pagination de l’édition originale de 1911 est réputée identique, ce qui n’est pas affirmé ici : qui a besoin du folio exact dans l’édition de 1911 devra le relever sur un exemplaire de ce tirage."
+    ]
+  },
+  {
+    "conceptId": "fonctions-sociales-de-la-greve",
+    "lead": [
+      "Un atelier s’arrête un matin. Trois personnes regardent la même scène et n’y voient pas la même chose. La première y reconnaît un épisode de plus dans une opposition d’intérêts qui n’a pas commencé ce jour-là et ne s’éteindra pas avec la reprise. La deuxième y voit un moment ordinaire de la vie de l’entreprise : on s’arrête, on se compte, on discute, on repartira avec un accord un peu meilleur. La troisième entend, dans ce qui se dit devant les grilles, autre chose qu’une affaire de salaire, quelque chose qui vise plus haut que la direction de l’établissement. Aucune des trois ne se trompe sur ce qu’elle a vu, et l’arrêt de travail, lui, est le même.",
+      "Reste à savoir comment on choisit entre elles. L’habitude, en sociologie, veut qu’on tranche au départ : on adopte une lecture, et l’enquête vient ensuite la remplir. En 1979, dans la revue Sociologie du travail, Michelle Durand prend le problème par l’autre bout. Plutôt que de discuter laquelle des trois lectures a raison, elle demande aux grèves elles-mêmes, à ce qu’elles réclament et à ce sur quoi elles reviennent d’une année sur l’autre, de régler la question."
+    ],
+    "sections": [
+      {
+        "title": "Choisir sa lecture avant de regarder",
+        "paragraphs": [
+          "Michelle Durand part d’un constat d’usage : « les sociologues font généralement un choix théorique au départ ». On tient la grève pour la manifestation d’un conflit structurel, ou pour une pièce réglée d’un système de relations industrielles, ou pour un facteur de changement social, et tout le reste suit. Le choix n’est pas anodin, parce qu’il décide de ce qui comptera ensuite comme un fait pertinent : celui qui a retenu le marchandage comptera des salaires, celui qui a retenu le conflit structurel comptera des rapports de force, et chacun trouvera dans les mêmes grèves de quoi se donner raison.",
+          "À cette manière de faire, elle oppose une décision de méthode qu’elle annonce en toutes lettres : « nous proposons de donner à ces questions une réponse empirique ». La question de savoir ce qu’est une grève ne sera donc pas réglée par un argument, mais par un examen. Et l’hypothèse qui guide cet examen déplace la difficulté au lieu de la trancher : « Nous ferons l’hypothèse qu’à ces conceptualisations de la grève correspondent de fait différentes « fonctions sociales » de la grève ». Les trois lectures ne sont plus trois candidates à la vérité : chacune a mis la main sur quelque chose que la grève fait réellement."
+        ]
+      },
+      {
+        "title": "Ce que « fonction » ne veut pas dire ici",
+        "paragraphs": [
+          "Le mot est piégé, et l’auteure le désamorce dans la phrase même où elle l’emploie. Sa proposition ne s’arrête pas où on vient de la lire : elle se poursuit par une précision sur le mot, qu’elle demande de prendre dans son acception la plus générale, et non au sens fonctionnaliste.",
+          "La précaution vaut d’être tenue. Dans son emploi savant, dire d’une institution qu’elle remplit une fonction revient souvent à dire qu’elle contribue au maintien de l’ensemble, et l’on glisse vite de là à l’idée que la grève servirait finalement la bonne marche du système qui la produit. Ce n’est pas ce qui est avancé. Une fonction, au sens le plus courant du terme, c’est ce qu’une chose fait, l’office qu’elle remplit pour ceux qui s’en servent. Dire que la grève exerce une fonction d’affrontement, c’est dire qu’on s’y affronte, et rien de plus."
+        ]
+      },
+      {
+        "title": "Marchander, s’affronter, s’opposer",
+        "paragraphs": [
+          "Trois fonctions sont nommées, et leurs noms disent déjà à quoi elles servent. La première est une fonction de bargaining permanent : le mot anglais désigne le marchandage ordinaire, cette négociation jamais close où s’ajustent les salaires, les horaires, les classements, et dont l’arrêt de travail est l’un des moyens. La deuxième est une fonction d’affrontement entre les partenaires et d’affirmation de leurs intérêts antagonistes : on ne discute plus un montant, on rappelle qu’on n’est pas du même côté. La troisième est une fonction d’opposition politique, qui vise au-delà de l’entreprise et de celui qui la dirige.",
+          "Le titre de l’article aligne les trois lectures qui leur répondent : le conflit structurel, le système de relations industrielles, le facteur de changement social. On devine sans peine laquelle appelle laquelle. L’essentiel est ailleurs : ces fonctions ne servent pas à répartir les grèves en trois tas, puisque ce sont les mêmes arrêts de travail qui les exercent ensemble, dans des proportions qui varient."
+        ]
+      },
+      {
+        "title": "Des revendications plutôt que des grèves",
+        "paragraphs": [
+          "Pour donner une réponse empirique, encore faut-il quelque chose à compter. Ce ne sont pas les grèves qui sont classées, mais ce qu’elles réclament : des thèmes de revendication, trente-quatre en tout, relevés sur deux fenêtres éloignées l’une de l’autre, les années 1966-1967 et les années 1974-1975. Une note de l’article précise que les données de base de ces deux périodes ont été fournies par S. Erbès et C. Casassus, du Groupe de sociologie du travail. L’intervalle entre les deux fenêtres n’est pas indifférent : c’est lui qui permet de voir ce qui revient et ce qui se déplace.",
+          "Le résultat est énoncé à la dernière page, et il prend la forme de deux refus avant d’affirmer quoi que ce soit : « Nous n’avons donc pas isolé des types de revendications, ni à proprement parler des types de grèves, mais les différentes fonctions exercées par la grève. » Ni types de revendications, ni types de grèves : ce qui sort de l’analyse n’est pas un classement, mais des dimensions que tout arrêt de travail possède à des degrés divers. La question de savoir de quelle sorte de grève il s’agit perd ainsi son objet, et une autre la remplace : dans cet arrêt-là, laquelle des trois fonctions pèse le plus ?"
+        ]
+      },
+      {
+        "title": "Deux domaines stables, un qui suit la conjoncture",
+        "paragraphs": [
+          "Restait à savoir si ces trois fonctions se comportent de la même façon dans le temps. La conclusion dit que non, et elle le dit d’une phrase : « Alors que les domaines de l’“interdit” et de “l’affrontement” sont relativement stables avec des bases permanentes [...], l’importance et le contenu même du système de bargaining sont liés à la conjoncture économique et sociale. »",
+          "Deux choses tiennent donc, et une bouge. Ce qui relève de l’interdit et ce qui relève de l’affrontement reposent sur des bases permanentes : ces domaines-là ne naissent pas avec la crise et ne disparaîtront pas avec elle. Le marchandage, lui, varie deux fois plutôt qu’une, en importance et jusque dans son contenu. Ce dont on discute, autant que la place qu’occupe la discussion, dépend de l’état de l’économie et de la société.",
+          "Cela change la manière de lire une courbe de grèves. Imaginons deux années où les arrêts de travail portent massivement sur les salaires, et deux autres, dix ans plus tard, où ils portent surtout sur l’emploi : le mouvement se lit d’abord comme un déplacement du marchandage, et non comme la preuve que l’antagonisme se serait apaisé ou aggravé. Ce qui bouge le plus vite dans les chiffres est aussi ce qui dépend le plus de la conjoncture ; ce qui dure ne se laisse pas compter aussi commodément."
+        ]
+      },
+      {
+        "title": "Ne pas choisir n’est pas tout accepter",
+        "paragraphs": [
+          "Refuser de trancher entre trois cadres peut ressembler à une facilité. Un modèle qui admet tout n’explique plus rien, et l’on pourrait toujours dire d’une grève qu’elle marchande un peu, s’affronte un peu et conteste un peu. La différence tient à l’endroit où la décision se prend.",
+          "Ici, le partage n’est pas décrété au départ, il est établi à l’arrivée. Les trois fonctions ne sont pas trois cases également disponibles pour l’interprétation : leur poids respectif se lit sur les revendications relevées, et c’est ce qui autorise à dire que deux d’entre elles tiennent pendant que la troisième suit la conjoncture. Une thèse qui prétend tout englober se reconnaît à ceci qu’aucune observation ne pourrait la contredire ; celle-ci s’expose à des chiffres, et son résultat aurait pu être autre."
+        ]
+      }
+    ],
+    "limits": [
+      "Le cœur du travail tient dans les pages 277 à 294, et c’est là que le résultat se fabrique : le modèle d’ajustement, les tableaux, les trente-quatre thèmes de revendication et la façon dont ils se regroupent en fonctions. Ces dix-huit pages demandent un lecteur ligne à ligne, et elles seules diront si les regroupements tiennent.",
+      "Le vocabulaire se déplace entre l’annonce et la conclusion : trois fonctions sont d’abord nommées, dont une fonction d’opposition politique, tandis que la dernière page parle du domaine de l’interdit. Ce que ce terme recouvre exactement, et par quel chemin il vient prendre cette place, ce sont les pages intermédiaires de l’article qui l’établissent.",
+      "La réception de ce texte, la place qu’il occupe dans l’œuvre de Michelle Durand et ce que d’autres sociologues en ont fait depuis 1979 ne sont pas établis par les sources disponibles. Quant aux travaux qu’elle vise en écrivant que le choix théorique se fait généralement au départ, ce sont les renvois de l’article qui les nomment."
+    ]
+  },
+  {
+    "conceptId": "force-du-besoin-de-developpement",
+    "lead": [
+      "Imaginons un atelier qui réorganise ses postes : chacun y suit désormais une commande du début à la fin, choisit l’ordre de ses opérations et voit tout de suite si ce qu’il a fait tient. Trois personnes sur quatre s’en trouvent mieux. La quatrième demande à revenir à son ancien poste, où elle faisait une seule opération et savait à chaque heure où elle en était. On met en général ce cas sur le compte de la résistance au changement, ou d’un accompagnement mal conduit.",
+      "Il existe une autre lecture, et elle vient de ceux-là mêmes qui ont écrit la règle. Dans un rapport technique déposé à Yale en mai 1974, J. Richard Hackman et Greg R. Oldham prennent la peine d’écrire que ce qu’ils avancent ne vaut pas de la même manière pour tout le monde. La quatrième personne n’est alors plus l’exception qui embarrasse la règle : c’est un cas que la règle prévoit, et dont elle dit par quoi il se distingue des trois autres."
+    ],
+    "sections": [
+      {
+        "title": "Deux réponses possibles au même emploi",
+        "paragraphs": [
+          "La page 4 du rapport tient les deux versants côte à côte. Les personnes qui valorisent fortement l’accomplissement et le développement personnels devraient répondre très positivement à ce que les auteurs appellent « a job high in motivating potential », un emploi à fort potentiel motivant. Les autres, écrivent-ils aussitôt après : « individuals who do not value personal growth and accomplishment may find such a job anxiety-arousing », elles peuvent trouver un tel emploi générateur d’anxiété, et s’y sentir inconfortablement étirées, le mot employé étant « stretched ».",
+          "Deux choses s’y jouent, qu’il vaut la peine de séparer. La première est que le second cas n’est pas une version affaiblie du premier : ce n’est pas un peu moins de motivation, c’est un inconfort d’une autre nature, qui peut aller jusqu’à l’anxiété. La seconde tient au verbe : les auteurs écrivent que ces personnes peuvent éprouver cela, non qu’elles l’éprouvent. Une possibilité est ouverte, rien n’est annoncé comme certain. Et ce qui change d’un cas à l’autre n’est pas l’emploi, qui est le même dans les deux phrases : c’est ce que la personne attend de son travail."
+        ]
+      },
+      {
+        "title": "Ce que veut dire modérer une relation",
+        "paragraphs": [
+          "Une théorie qui relie les caractéristiques d’un poste à ce qu’en retire la personne qui l’occupe énonce des relations : plus d’autonomie, plus de motivation venue du travail lui-même. Un modérateur est une troisième grandeur qui n’ajoute rien à ce résultat et n’en retranche rien non plus, mais qui décide de la force du lien. Selon qu’elle est haute ou basse, la même augmentation d’autonomie produit beaucoup, un peu, ou rien.",
+          "C’est cette place exactement que les auteurs donnent au besoin de développement, sous le nom de growth need strength : « Therefore, growth need strength is shown in Figure 1 as a moderator of the other relationships specified by the theory. » Il ne figure donc pas dans leur schéma comme un maillon de plus dans la chaîne, en amont ou en aval, mais en travers des relations que la théorie pose par ailleurs.",
+          "Cela implique une conséquence que l’on oublie facilement devant un résultat moyen. Si une même transformation est évaluée sur un ensemble de personnes dont les besoins diffèrent, la moyenne obtenue additionne deux situations distinctes et n’en décrit exactement aucune. Un effet moyen faible peut recouvrir un effet fort chez les uns et nul chez les autres, et la moyenne, seule, ne permet pas de distinguer ce cas d’un effet également faible pour tous."
+        ]
+      },
+      {
+        "title": "Une réserve posée juste après un score",
+        "paragraphs": [
+          "L’endroit du rapport où cette réserve se trouve compte autant qu’elle. Juste au-dessus, sur la même page, figure la formule du motivating potential score, qui ramène un poste à une note unique et permet ainsi de comparer deux postes, ou le même poste avant et après une transformation. La phrase qui limite la portée de la théorie ouvre le paragraphe suivant, et le titre de section qui vient ensuite annonce le récapitulatif des concepts mesurés. Elle n’est reléguée ni en note ni en fin de volume : elle est posée contre le chiffre.",
+          "Les auteurs y mettent d’ailleurs un guillemet significatif : c’est le verbe « work », fonctionner, qu’ils encadrent. Ce n’est pas la théorie qui serait fausse pour certaines personnes, c’est son fonctionnement attendu qui n’a pas la même efficacité pour toutes. Une note élevée dit quelque chose du poste ; elle ne dit pas à elle seule ce que ce poste produira chez la personne qui l’occupera.",
+          "Cela change ce qu’on peut attendre d’une comparaison. Imaginons deux équipes dont les postes obtiennent, après refonte, la même note en forte hausse : le chiffre dit que les deux postes ont changé dans le même sens, il ne dit pas que les personnes qui les occupent y ont trouvé la même chose. Suivre la seule note revient à mesurer ce qui a été installé plutôt que ce qui a été vécu, alors que la théorie fait dépendre le second du premier par un lien dont la force varie d’une personne à l’autre."
+        ]
+      },
+      {
+        "title": "Un besoin décrit comme malléable",
+        "paragraphs": [
+          "Deux pages plus loin, en décrivant ce que leur questionnaire mesure, les auteurs qualifient ce besoin de « malleable individual difference characteristic » : une caractéristique qui distingue les individus, et qui est malléable. Le mot apparaît dans une phrase dont le sujet grammatical est l’instrument et non la personne, mais il oriente la lecture de tout le reste : ce besoin n’est pas présenté comme un trait fixe que l’on aurait ou non.",
+          "La différence est lourde de conséquences pratiques. Tenu pour un trait stable, ce besoin sert à trier : celui-ci est fait pour un poste enrichi, celle-là ne l’est pas, et l’on distribue les emplois d’après un classement des personnes. Tenu pour une caractéristique malléable, il décrit un état mesuré à un moment, chez quelqu’un dont la situation et l’histoire ne sont pas closes. Le premier usage va au-delà de ce que ce texte autorise à dire ; c’est le second que le mot « malleable » soutient."
+        ]
+      },
+      {
+        "title": "Un attendu de la théorie, pas un résultat",
+        "paragraphs": [
+          "Reste une question de statut, et c’est la plus facile à perdre de vue. Ce que ces pages énoncent, c’est ce que la théorie prévoit : il n’est pas attendu qu’elle opère avec la même efficacité chez tous. Elles ne rapportent pas une observation, et la page ne porte aucune donnée. Entre « la théorie pose que » et « une étude établit que », il y a toute la distance qui sépare une attente d’un résultat.",
+          "Le rapport dit lui-même ce qu’il est : un instrument, destiné au diagnostic des postes et à l’évaluation des projets de refonte. Dès sa deuxième page, il renvoie ailleurs pour la théorie : « The theory which gave rise to the present instrument is based on earlier work by Turner & Lawrence (1965) and by Hackman & Lawler (1971). », puis « For a more detailed description and discussion of the theory itself, see Hackman & Oldham (1974). » Qui vient chercher ici la démonstration est réorienté par les auteurs eux-mêmes.",
+          "Pour qui veut s’en servir, cette distinction est utile plutôt que scolaire. Une raison sérieuse d’attendre des réponses différentes à un même aménagement, et donc de les regarder une à une plutôt que d’en faire la moyenne, n’est pas la même chose qu’une proportion mesurée de personnes chez qui l’aménagement échouera. La première invite à observer, la seconde permettrait de prévoir."
+        ]
+      }
+    ],
+    "limits": [
+      "L’épreuve empirique de cette modération n’est pas dans ces pages. Pour l’exposé détaillé de la théorie et pour son test, les auteurs renvoient à un autre de leurs rapports de la même année 1974, le Technical Report No. 6, Motivation through the design of work: Test of a theory. Ce que les données y disent de l’écart entre les personnes, il faudra l’ouvrir pour le savoir.",
+      "Les deux travaux dont la théorie est issue sont nommés par les auteurs eux-mêmes : Turner et Lawrence en 1965, Hackman et Lawler en 1971. Le nom de growth need strength et sa mesure appartiennent au texte de 1974 ; sous quels termes ces deux textes antérieurs posaient déjà une différence entre les personnes, ce sont eux qui le disent.",
+      "Ce qui rend ce besoin malléable, ce qui le fait croître ou décroître chez quelqu’un, ces pages ne l’indiquent pas : elles décrivent un instrument et ce qu’il mesure. La formulation de la page 6 en est le point de départ, et les questions par lesquelles ce besoin est effectivement mesuré, c’est le questionnaire lui-même qui les porte."
+    ]
+  },
+  {
+    "conceptId": "fragilite-d-un-ordonnancement-optimal",
+    "lead": [
+      "Imaginons un atelier qui bâtit le planning de sa semaine avec des durées moyennes : cette opération prend quarante minutes, celle-là un quart d’heure. On range les travaux dans l’ordre qui, sur le papier, fait finir le plus tôt. Puis le lundi arrive. Une pièce se présente en retard, un réglage demande dix minutes de plus, un opérateur est appelé ailleurs, et à midi le planning ne décrit plus rien. Il n’était pas faux : il avait été calculé pour une semaine où chaque durée vaut exactement sa moyenne, et cette semaine-là n’a jamais lieu.",
+      "Reste alors une question que le calcul ne pose pas de lui-même : entre deux ordres possibles, faut-il préférer celui qui finit le plus tôt en moyenne, ou celui qui finira à peu près à la même heure quoi qu’il arrive ? Richard Bellman lui consacre deux pages, les pages 25 et 26 d’un rapport de la RAND Corporation révisé le 23 mai 1955, à l’endroit précis où il cesse de traiter les durées comme des nombres fixes."
+    ],
+    "sections": [
+      {
+        "title": "Ce que le temps moyen ne dit pas",
+        "paragraphs": [
+          "Mesurer un ordre par son temps total moyen suppose une expérience de pensée : on refait la même semaine un très grand nombre de fois, les durées tombant chaque fois un peu autrement, et on fait la moyenne des heures de sortie. Ce nombre unique résume une foule de semaines possibles. Il ne dit rien de leur dispersion, c’est-à-dire de l’écart entre les meilleures et les pires. Deux plannings de même moyenne peuvent se comporter tout autrement : l’un livre presque toujours vers seize heures, l’autre tantôt à midi, tantôt à vingt heures.",
+          "C’est ce que Bellman écrit en une phrase : « An ordering which minimizes the expected total time may very well permit of a large variance. » L’ordre qui rend le temps total moyen le plus petit possible, dit-il, peut fort bien admettre une grande variance, la variance étant la mesure habituelle de cette dispersion. Le verbe compte : cet ordre ne produit pas la dispersion, il la permet. Rien, dans le critère qu’on s’est donné, ne s’y oppose.",
+          "Minimiser une moyenne est donc un choix, et un choix silencieux : il classe les ordres possibles sur un seul chiffre et accepte d’avance tout ce que ce chiffre laisse dans l’ombre. Tant que les durées sont fixes, la question ne se pose pas, puisqu’il n’y a qu’une semaine possible. Elle apparaît avec la variation, et elle apparaît d’un coup."
+        ]
+      },
+      {
+        "title": "Un plan plus lâche, et ce qu’il achète",
+        "paragraphs": [
+          "Un planning serré est un planning où chaque opération commence à l’instant où la précédente s’achève. Sur le papier, c’est la perfection : aucune minute perdue. Dans l’atelier, c’est un enchaînement où le moindre retard se transmet à tout ce qui suit, puisqu’il n’existe aucun intervalle pour l’absorber. Un planning lâche fait l’inverse : il laisse çà et là du temps inoccupé, de la marge, et une partie des aléas s’y perd avant d’atteindre la suite.",
+          "Bellman en tire une préférence, et chacun des mots avec lesquels il l’écrit est pesé. La solution qu’il désigne est « looser », plus lâche ; ce qu’elle apporte tient en deux termes, « more flexibility and slack », de la souplesse et de la marge ; et elle est « comparatively unaffected by minor variations ». Non pas insensible, mais relativement insensible. Non pas à tout, mais à des variations mineures. La promesse est bornée des deux côtés.",
+          "La conclusion est du même tissu : une telle solution « may be more desirable », elle peut être préférable, et cela « for many purposes », pour bien des usages. Bellman ne dit pas que le plan lâche est meilleur, ni qu’il faille cesser d’optimiser. Il dit qu’un plan payé un peu plus cher en moyenne peut valoir mieux qu’un plan optimal qui se défait au premier grain de sable, et que trancher dépend de l’usage qu’on en a."
+        ]
+      },
+      {
+        "title": "Remplacer chaque durée par sa moyenne ne suffit pas",
+        "paragraphs": [
+          "Il existe une manière très naturelle d’escamoter tout le problème : puisque les durées varient, remplacer chacune par sa moyenne, puis appliquer au planning ainsi figé les méthodes qui traitent les durées fixes. Bellman ferme cette porte dès l’ouverture du passage : « a knowledge of expected values of individual processing times will not be sufficient to determine the minimum total expected time ». Connaître la durée moyenne de chaque opération ne suffit pas à déterminer le temps total moyen le plus court.",
+          "Le résultat mérite qu’on s’y arrête, car il ne va pas de soi. La durée d’un chantier n’est pas la simple addition des durées de ses opérations : il s’y mêle des attentes, et une attente naît d’une comparaison, savoir laquelle de deux choses s’achève la première. Or une comparaison ne se laisse pas faire sur des moyennes : de deux opérations dont l’une dure en moyenne plus longtemps que l’autre, ce n’est pas à chaque fois la même qui finit d’abord. Cette explication est une façon de se représenter la chose ; Bellman, lui, énonce l’insuffisance de l’information sans en donner la mesure.",
+          "La conséquence pratique est nette. L’outil qui calcule un ordre à partir de durées moyennes ne répond pas à la question qu’on lui pose : il répond à une question voisine, celle d’un atelier où rien ne varie. De combien il s’écarte de la bonne réponse, ces deux pages ne le disent pas."
+        ]
+      },
+      {
+        "title": "Stabilité et raideur d’une politique",
+        "paragraphs": [
+          "Bellman donne un nom à ce qu’il vient d’ouvrir : « This problem introduces some interesting questions concerning the […] of a scheduling policy. » Les deux mots qu’il place dans cet intervalle sont stability et stiffness, la stabilité ou la raideur d’une politique d’ordonnancement. Il n’en définit aucun dans ces pages et n’en fait pas des grandeurs qu’on mesurerait : il nomme une famille de questions, et laisse le nom faire son travail.",
+          "Ce sont les mots dont on qualifie une pièce mécanique, et l’image aide à condition de la tenir pour ce qu’elle est, une image que ce texte ne développe pas : une pièce raide transmet intégralement le moindre choc, une pièce qui a du jeu l’encaisse. Un ordonnancement raide se comporterait de même, excellent tant que rien ne bouge, démuni dès que quelque chose bouge.",
+          "Juger un plan de cette manière, c’est lui poser deux questions au lieu d’une : ce qu’il vaut, et ce qu’il devient quand les choses ne se passent pas comme prévu. La seconde n’est pas une nuance de la première, et un même plan peut gagner l’une en perdant l’autre. C’est exactement le cas que ces deux pages signalent."
+        ]
+      },
+      {
+        "title": "Une idée connue des ateliers, difficile à écrire",
+        "paragraphs": [
+          "Le rapport est signé de Richard Bellman seul, et ce passage ne crédite personne : les seuls crédits nominatifs du texte vont à S. Johnson, ailleurs, aux paragraphes 3 et 4. Bellman ne revendique pourtant pas l’idée. La phrase qui suit immédiatement sa conclusion est celle-ci : « Although these ideas are, of course, well-known in practice, a precise mathematical formulation seems difficult. » Ces idées sont bien connues dans la pratique, écrit-il, et une formulation mathématique précise semble difficile.",
+          "Ce qu’il apporte tient donc dans un déplacement : faire entrer dans un traité de théorie de l’ordonnancement une chose que tout chef d’atelier sait, et constater du même mouvement qu’on ne sait pas l’écrire. Il ne propose d’ailleurs aucune méthode. Quelques lignes plus haut, à propos de la version où les durées varient, il note que « Nothing is known about the solution even in the two stage process » : rien n’est connu de la solution, pas même pour un enchaînement à deux étapes.",
+          "Rien n’est chiffré non plus. Aucune loi de probabilité, aucun exemple numérique, aucun ordre de grandeur : on ne trouvera pas ici combien de marge acheter ni ce qu’elle coûte. Intitulées « Stochastic Versions » et suivies d’un paragraphe sur les files d’attente, ces deux pages tiennent la place qu’elles annoncent dans un rapport de soixante-dix : elles ouvrent une question, elles ne la referment pas."
+        ]
+      }
+    ],
+    "limits": [
+      "Comment mesurer la raideur d’un plan, et comment arbitrer entre une minute de temps moyen et un écart de dispersion : ces deux pages ne l’indiquent pas. Ce qui s’est construit depuis 1955 sur l’ordonnancement à durées variables ne s’établit pas non plus à partir des sources disponibles ici.",
+      "Le même texte a paru l’année suivante en revue, sous le même titre, dans le Journal of the Society for Industrial and Applied Mathematics, vol. 4, n° 3, septembre 1956, p. 168-205. Les pages citées ici sont celles du rapport ; si la version imprimée en revue a retouché ce passage, ce sont ces pages-là qui le montreront.",
+      "L’exemplaire numérisé est un tapuscrit dont la typographie des guillemets entourant stability et stiffness ne se lit pas avec certitude : un exemplaire net trancherait. Sa couverture porte « Revised 23 May 1955 », révisé et non paru : une version antérieure a existé, dont la date n’est pas établie.",
+      "Un titre presque jumeau existe, Mathematical Aspects of Scheduling and Applications, chez Pergamon en 1982, signé Bellman, Esogbue et Nabeshima. Ce n’est pas ce texte, et ce que vingt-sept années y ont ajouté, ses pages le diront."
     ]
   },
   {

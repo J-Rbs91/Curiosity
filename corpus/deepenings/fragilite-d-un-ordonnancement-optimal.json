@@ -1,0 +1,56 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "fragilite-d-un-ordonnancement-optimal",
+  "lead": [
+    "Imaginons un atelier qui bâtit le planning de sa semaine avec des durées moyennes : cette opération prend quarante minutes, celle-là un quart d’heure. On range les travaux dans l’ordre qui, sur le papier, fait finir le plus tôt. Puis le lundi arrive. Une pièce se présente en retard, un réglage demande dix minutes de plus, un opérateur est appelé ailleurs, et à midi le planning ne décrit plus rien. Il n’était pas faux : il avait été calculé pour une semaine où chaque durée vaut exactement sa moyenne, et cette semaine-là n’a jamais lieu.",
+    "Reste alors une question que le calcul ne pose pas de lui-même : entre deux ordres possibles, faut-il préférer celui qui finit le plus tôt en moyenne, ou celui qui finira à peu près à la même heure quoi qu’il arrive ? Richard Bellman lui consacre deux pages, les pages 25 et 26 d’un rapport de la RAND Corporation révisé le 23 mai 1955, à l’endroit précis où il cesse de traiter les durées comme des nombres fixes."
+  ],
+  "sections": [
+    {
+      "title": "Ce que le temps moyen ne dit pas",
+      "paragraphs": [
+        "Mesurer un ordre par son temps total moyen suppose une expérience de pensée : on refait la même semaine un très grand nombre de fois, les durées tombant chaque fois un peu autrement, et on fait la moyenne des heures de sortie. Ce nombre unique résume une foule de semaines possibles. Il ne dit rien de leur dispersion, c’est-à-dire de l’écart entre les meilleures et les pires. Deux plannings de même moyenne peuvent se comporter tout autrement : l’un livre presque toujours vers seize heures, l’autre tantôt à midi, tantôt à vingt heures.",
+        "C’est ce que Bellman écrit en une phrase : « An ordering which minimizes the expected total time may very well permit of a large variance. » L’ordre qui rend le temps total moyen le plus petit possible, dit-il, peut fort bien admettre une grande variance, la variance étant la mesure habituelle de cette dispersion. Le verbe compte : cet ordre ne produit pas la dispersion, il la permet. Rien, dans le critère qu’on s’est donné, ne s’y oppose.",
+        "Minimiser une moyenne est donc un choix, et un choix silencieux : il classe les ordres possibles sur un seul chiffre et accepte d’avance tout ce que ce chiffre laisse dans l’ombre. Tant que les durées sont fixes, la question ne se pose pas, puisqu’il n’y a qu’une semaine possible. Elle apparaît avec la variation, et elle apparaît d’un coup."
+      ]
+    },
+    {
+      "title": "Un plan plus lâche, et ce qu’il achète",
+      "paragraphs": [
+        "Un planning serré est un planning où chaque opération commence à l’instant où la précédente s’achève. Sur le papier, c’est la perfection : aucune minute perdue. Dans l’atelier, c’est un enchaînement où le moindre retard se transmet à tout ce qui suit, puisqu’il n’existe aucun intervalle pour l’absorber. Un planning lâche fait l’inverse : il laisse çà et là du temps inoccupé, de la marge, et une partie des aléas s’y perd avant d’atteindre la suite.",
+        "Bellman en tire une préférence, et chacun des mots avec lesquels il l’écrit est pesé. La solution qu’il désigne est « looser », plus lâche ; ce qu’elle apporte tient en deux termes, « more flexibility and slack », de la souplesse et de la marge ; et elle est « comparatively unaffected by minor variations ». Non pas insensible, mais relativement insensible. Non pas à tout, mais à des variations mineures. La promesse est bornée des deux côtés.",
+        "La conclusion est du même tissu : une telle solution « may be more desirable », elle peut être préférable, et cela « for many purposes », pour bien des usages. Bellman ne dit pas que le plan lâche est meilleur, ni qu’il faille cesser d’optimiser. Il dit qu’un plan payé un peu plus cher en moyenne peut valoir mieux qu’un plan optimal qui se défait au premier grain de sable, et que trancher dépend de l’usage qu’on en a."
+      ]
+    },
+    {
+      "title": "Remplacer chaque durée par sa moyenne ne suffit pas",
+      "paragraphs": [
+        "Il existe une manière très naturelle d’escamoter tout le problème : puisque les durées varient, remplacer chacune par sa moyenne, puis appliquer au planning ainsi figé les méthodes qui traitent les durées fixes. Bellman ferme cette porte dès l’ouverture du passage : « a knowledge of expected values of individual processing times will not be sufficient to determine the minimum total expected time ». Connaître la durée moyenne de chaque opération ne suffit pas à déterminer le temps total moyen le plus court.",
+        "Le résultat mérite qu’on s’y arrête, car il ne va pas de soi. La durée d’un chantier n’est pas la simple addition des durées de ses opérations : il s’y mêle des attentes, et une attente naît d’une comparaison, savoir laquelle de deux choses s’achève la première. Or une comparaison ne se laisse pas faire sur des moyennes : de deux opérations dont l’une dure en moyenne plus longtemps que l’autre, ce n’est pas à chaque fois la même qui finit d’abord. Cette explication est une façon de se représenter la chose ; Bellman, lui, énonce l’insuffisance de l’information sans en donner la mesure.",
+        "La conséquence pratique est nette. L’outil qui calcule un ordre à partir de durées moyennes ne répond pas à la question qu’on lui pose : il répond à une question voisine, celle d’un atelier où rien ne varie. De combien il s’écarte de la bonne réponse, ces deux pages ne le disent pas."
+      ]
+    },
+    {
+      "title": "Stabilité et raideur d’une politique",
+      "paragraphs": [
+        "Bellman donne un nom à ce qu’il vient d’ouvrir : « This problem introduces some interesting questions concerning the […] of a scheduling policy. » Les deux mots qu’il place dans cet intervalle sont stability et stiffness, la stabilité ou la raideur d’une politique d’ordonnancement. Il n’en définit aucun dans ces pages et n’en fait pas des grandeurs qu’on mesurerait : il nomme une famille de questions, et laisse le nom faire son travail.",
+        "Ce sont les mots dont on qualifie une pièce mécanique, et l’image aide à condition de la tenir pour ce qu’elle est, une image que ce texte ne développe pas : une pièce raide transmet intégralement le moindre choc, une pièce qui a du jeu l’encaisse. Un ordonnancement raide se comporterait de même, excellent tant que rien ne bouge, démuni dès que quelque chose bouge.",
+        "Juger un plan de cette manière, c’est lui poser deux questions au lieu d’une : ce qu’il vaut, et ce qu’il devient quand les choses ne se passent pas comme prévu. La seconde n’est pas une nuance de la première, et un même plan peut gagner l’une en perdant l’autre. C’est exactement le cas que ces deux pages signalent."
+      ]
+    },
+    {
+      "title": "Une idée connue des ateliers, difficile à écrire",
+      "paragraphs": [
+        "Le rapport est signé de Richard Bellman seul, et ce passage ne crédite personne : les seuls crédits nominatifs du texte vont à S. Johnson, ailleurs, aux paragraphes 3 et 4. Bellman ne revendique pourtant pas l’idée. La phrase qui suit immédiatement sa conclusion est celle-ci : « Although these ideas are, of course, well-known in practice, a precise mathematical formulation seems difficult. » Ces idées sont bien connues dans la pratique, écrit-il, et une formulation mathématique précise semble difficile.",
+        "Ce qu’il apporte tient donc dans un déplacement : faire entrer dans un traité de théorie de l’ordonnancement une chose que tout chef d’atelier sait, et constater du même mouvement qu’on ne sait pas l’écrire. Il ne propose d’ailleurs aucune méthode. Quelques lignes plus haut, à propos de la version où les durées varient, il note que « Nothing is known about the solution even in the two stage process » : rien n’est connu de la solution, pas même pour un enchaînement à deux étapes.",
+        "Rien n’est chiffré non plus. Aucune loi de probabilité, aucun exemple numérique, aucun ordre de grandeur : on ne trouvera pas ici combien de marge acheter ni ce qu’elle coûte. Intitulées « Stochastic Versions » et suivies d’un paragraphe sur les files d’attente, ces deux pages tiennent la place qu’elles annoncent dans un rapport de soixante-dix : elles ouvrent une question, elles ne la referment pas."
+      ]
+    }
+  ],
+  "limits": [
+    "Comment mesurer la raideur d’un plan, et comment arbitrer entre une minute de temps moyen et un écart de dispersion : ces deux pages ne l’indiquent pas. Ce qui s’est construit depuis 1955 sur l’ordonnancement à durées variables ne s’établit pas non plus à partir des sources disponibles ici.",
+    "Le même texte a paru l’année suivante en revue, sous le même titre, dans le Journal of the Society for Industrial and Applied Mathematics, vol. 4, n° 3, septembre 1956, p. 168-205. Les pages citées ici sont celles du rapport ; si la version imprimée en revue a retouché ce passage, ce sont ces pages-là qui le montreront.",
+    "L’exemplaire numérisé est un tapuscrit dont la typographie des guillemets entourant stability et stiffness ne se lit pas avec certitude : un exemplaire net trancherait. Sa couverture porte « Revised 23 May 1955 », révisé et non paru : une version antérieure a existé, dont la date n’est pas établie.",
+    "Un titre presque jumeau existe, Mathematical Aspects of Scheduling and Applications, chez Pergamon en 1982, signé Bellman, Esogbue et Nabeshima. Ce n’est pas ce texte, et ce que vingt-sept années y ont ajouté, ses pages le diront."
+  ]
+}

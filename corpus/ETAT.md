@@ -1,4 +1,4 @@
-# État du corpus — 28 août 2026
+# État du corpus — 29 août 2026
 
 Écrit sur le disque parce qu'une session a déjà été coupée en cours de route : ce fichier
 existe pour qu'une reprise reparte des fichiers, et non de la mémoire de quelqu'un.
@@ -7,10 +7,11 @@ Ce fichier dit ce que le corpus **est**. Ce qui lui **manque**, et par quel bout
 est dans [`corpus/RESTE-A-FAIRE.md`](RESTE-A-FAIRE.md).
 
 `npm run corpus:validate` : **104 enregistrements, 100 validés, 0 erreur, 80 avertissements.**
-`npm run corpus:deepen` : **66 approfondissements pour 100 cartes validées.** Fin de sortie :
-**trente-quatre cartes sans approfondissement**, les huit de la science de la décision, les huit
-de l'operations management, les sept de la psychologie du travail, les sept de la sociologie du
-travail et les quatre de l'économie comportementale, et c'est le seul écart entre validé et servi.
+`npm run corpus:deepen` : **82 approfondissements pour 100 cartes validées**, 119 639 mots,
+1 459 en moyenne. Fin de sortie : **dix-huit cartes sans approfondissement**, cinq de la science
+de la décision, quatre de l'operations management, quatre de la psychologie du travail, trois de
+la sociologie du travail et deux de l'économie comportementale, et c'est le seul écart entre
+validé et servi.
 `npm test` : **480 tests, 0 échec.** `npm run lint` et `npm run corpus:build` : sans erreur.
 
 **Les onze domaines déclarés sont instruits. Le corpus n'a plus aucun domaine vide.**
@@ -30,23 +31,97 @@ candidat mal placé part désormais chez un voisin ouvert, ou ne s'instruit pas.
 | Théorie de la mesure / KPI | 4 | 9 | 9 |
 | Cybernétique | 4 | 12 | 12 |
 | Systems Thinking | 3 | 7 | 7 |
-| Science de la décision | 2 | 8 | **0** |
-| Operations Management | 3 | 8 | **0** |
-| Psychologie du travail | 2 | 7 | **0** |
-| Sociologie du travail | 1 | 7 | **0** |
-| Économie comportementale | 1 | 4 | **0** |
+| Science de la décision | 2 | 8 | **3** |
+| Operations Management | 3 | 8 | **4** |
+| Psychologie du travail | 2 | 7 | **3** |
+| Sociologie du travail | 1 | 7 | **4** |
+| Économie comportementale | 1 | 4 | **2** |
 
-**Trente-quatre cartes validées attendent leur approfondissement**, les huit du 23 août, les huit
-du 25, les sept du 26, les sept du 27 et les quatre du 28. L'écart s'était refermé le 21 août et il
-se rouvre depuis, volontairement : la routine nocturne consacre une phase entière à ce travail, et
-une nuit d'ouverture de domaine n'en écrit pas. `npm run corpus:deepen` les liste en fin de sortie :
-**c'est la file, et elle fait foi contre ce fichier.** Aucun domaine n'étant plus vide, **c'est
-désormais le seul chantier que la routine ait à prendre.**
+**Dix-huit cartes validées attendent leur approfondissement**, contre trente-quatre au 28 août.
+L'écart s'était refermé le 21 août, il s'était rouvert et creusé pendant cinq lots d'ouverture
+consécutifs, et **le passage 07 de la routine nocturne en a repris la moitié en une nuit**, le 29
+août : seize approfondissements écrits, deux lots pleins de huit, qui est le plafond d'une nuit.
+`npm run corpus:deepen` les liste en fin de sortie : **c'est la file, et elle fait foi contre ce
+fichier.** Aucun domaine n'étant plus vide, **c'est le seul chantier que la routine ait à
+prendre**, et il lui reste un peu plus d'une nuit pleine.
 
 **Les quatre familles sont complètes.** « Comprendre le pilotage » et « Comprendre le travail
 réel » l'étaient depuis le 23 août, « Comprendre la production et les systèmes » depuis le 25, et
 « Comprendre les humains et les organisations » l'est depuis le 28 : elle était la dernière
 incomplète, avec trois domaines fermés sur quatre au 25 août.
+
+# 0. Seize approfondissements — lot du 29 août 2026 (passage 07), projeté
+
+**Première nuit de phase 2 de la routine nocturne, et premier lot du dépôt qui ne crée aucune
+carte.** La condition A de la routine était fausse, aucun domaine n'étant vide depuis le 28 août ;
+`corpus:deepen` listait trente-quatre cartes sans approfondissement, la condition B était donc
+vraie et elle décidait seule. Aucune ouverture, aucune nouvelle carte, aucune recherche
+documentaire : un `corpus-deepener` n'ouvre aucune source et n'en ajoute aucune.
+
+**Seize agents, seize textes, aucun refus de projection, aucun renvoi.** La file passe de
+trente-quatre à dix-huit, et les approfondissements projetés de 66 à 82.
+
+| lot | cartes servies |
+|---:|---|
+| 1 | `absorber-les-fluctuations-de-commandes`, `analyse-des-groupes-professionnels`, `asservissement-des-activites-hors-travail`, `attente-du-poste-aval`, `cause-de-hasard-et-cause-assignable`, `cinq-dimensions-de-l-emploi`, `classement-multicritere-electre`, `conduite-economique` |
+| 2 | `critique-de-l-utilite-esperee-subjective`, `definition-de-la-psychologie-economique`, `division-sexuelle-et-rapports-de-sexe`, `effet-de-cadrage`, `flanerie-systematique`, `fonctions-sociales-de-la-greve`, `force-du-besoin-de-developpement`, `fragilite-d-un-ordonnancement-optimal` |
+
+La file du script traverse les domaines et ne se range pas par domaine : les seize cartes relèvent
+de six domaines, quatre en operations management, quatre en sociologie du travail, trois en science
+de la décision, deux en économie comportementale, deux en psychologie du travail, une en sociologie
+des organisations.
+
+## Ce que le contrôle a attrapé
+
+Le contrôle de projection est mécanique et il porte sur ce qui est mécanique : volumes, balisage,
+tirets cadratins, et la présence effective, dans l'enregistrement validé, de tout passage cité de
+cinq mots ou plus. Trois textes s'y sont heurtés, **et aucun de ces signalements n'était une erreur
+documentaire.**
+
+**Le comparateur de citations achoppe sur les guillemets.** Il normalise `«` et `“` en `"` mais ne
+recolle pas les espaces : un verbatim recopié avec des guillemets anglais là où l'imprimé porte des
+guillemets français à espaces fines insécables est signalé absent alors qu'il est juste. C'est le
+cas de la page 275 dans `fonctions-sociales-de-la-greve`. **Il se rétablit en reprenant la
+typographie de l'imprimé, jamais en retirant la citation.** Un cas voisin s'est présenté sur
+`fragilite-d-un-ordonnancement-optimal`, où des guillemets doubles imbriqués font trébucher
+l'échappement JSON : la parade retenue est de citer par fragments courts.
+
+**Un signalement peut être un faux positif et rester une bonne correction.** Sur
+`division-sexuelle-et-rapports-de-sexe`, une phrase amputée de ses parenthèses était présentée
+entre guillemets. Le contrôle la disait absente, à juste titre, puisqu'elle résultait d'une
+manipulation et non du texte de Kergoat. Les guillemets ont été retirés, le contenu gardé. C'est la
+deuxième fois que ce dépôt observe qu'un contrôle littéral rend un service que sa règle ne visait
+pas : la première était le renvoi sur « la carte », métaphore du menu, au lot du 21 août.
+
+## Les réserves conservées
+
+**Les seize textes déclarent, presque tous, l'absence de source secondaire ouverte**, et ils
+l'écrivent dans leurs `limits`. C'est la même faiblesse structurelle que les cinq lots d'ouverture
+précédents ont léguée, et **elle est désormais visible du lecteur**, ce qu'elle n'était pas tant
+qu'elle ne vivait que dans les avertissements du validateur. Un approfondissement ne peut pas la
+corriger : il n'ouvre aucune source.
+
+Les sources `metadata-only` ont été tenues à leur place, et c'est le point de méthode le mieux
+respecté du lot : nommées par ce qu'elles détiennent, jamais par ce qu'elles diraient. L'article de
+*Management Science* d'octobre 1955 pour `absorber-les-fluctuations-de-commandes`, celui de Johnson
+de mars 1954 pour `attente-du-poste-aval`, *The Foundations of Statistics* pour
+`critique-de-l-utilite-esperee-subjective`, dont les postulats restent innommés un à un faute
+d'ouverture, et les deux pièces de 1981 et 1986 pour `effet-de-cadrage`, dont le libellé exact des
+programmes et le nombre de vies en jeu ne sont écrits nulle part dans le texte.
+
+## Les angles morts qui commandent le prochain passage
+
+**Le retard d'approfondissement n'est pas résorbé** : dix-huit cartes restent, soit un peu plus
+qu'une nuit pleine. La condition B restera vraie au passage 08, et elle décidera encore seule.
+
+**La dette de sources secondaires ne se paiera qu'en phase 3**, sur des reprises courtes de
+domaines déjà instruits. Le chantier D de `RESTE-A-FAIRE.md` en tient la liste avec l'accès déjà
+constaté pour chaque texte. Elle est notée ici pour que la première nuit de phase 3 sache par où
+commencer plutôt que de la redécouvrir.
+
+**Le serveur MCP `documentary` était de nouveau en échec de connexion.** Sans conséquence sur cette
+nuit, qui n'a mené aucune recherche, mais c'est le deuxième passage consécutif qui le constate, et
+une nuit de phase 1 ou 3 s'en trouverait ralentie.
 
 # 0. Économie comportementale — lot d'ouverture du 28 août 2026 (passage 06), publié
 

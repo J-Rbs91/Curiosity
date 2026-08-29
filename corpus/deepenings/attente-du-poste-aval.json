@@ -1,0 +1,56 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "attente-du-poste-aval",
+  "lead": [
+    "Imaginons un atelier où chaque pièce subit deux opérations dans un ordre imposé : elle passe d’abord sur une première machine, puis sur une seconde. Les cinq pièces du jour sont là, on peut les lancer dans le rang que l’on veut, et le chef d’atelier soupçonne que ce rang compte. Il a raison. Mais s’il espère qu’un bon rangement fera travailler la seconde machine plus vite, il se trompe : quel que soit l’ordre choisi, elle fera exactement le même travail, puisque ce sont les mêmes cinq pièces, et que l’addition ne se soucie pas de l’ordre des termes.",
+    "Il ne reste alors qu’une seule chose sur laquelle un rangement puisse mordre : les moments où cette seconde machine ne fait rien et attend qu’une pièce lui parvienne. Richard Bellman écrit cette évidence en une ligne d’arithmétique, à la page 11 d’un rapport de la RAND Corporation révisé en mai 1955, et cette ligne change la question posée. On ne cherche plus à finir plus tôt : on cherche à raboter une somme d’attentes, et l’on sait dès le départ combien il y a au plus à gagner."
+  ],
+  "sections": [
+    {
+      "title": "La feuille de temps du second poste",
+      "paragraphs": [
+        "Tenez-vous près de la seconde machine, du premier instant du chantier jusqu’à celui où la dernière pièce en sort. Son temps se partage en deux, et en deux seulement : les intervalles pendant lesquels elle usine quelque chose, et les intervalles pendant lesquels elle attend. Il n’y a pas de troisième cas. La durée totale, mesurée à cet endroit, est donc la somme de ses temps de travail augmentée de la somme de ses temps morts.",
+        "C’est exactement ce que pose Bellman à la page 11. Il appelle x_i le temps d’inactivité de la seconde machine juste avant qu’elle ne prenne le i-ème article : « inactive time on the second machine, the binding machine, immediately before processing the i-th item ». Il en fait la somme, qu’il note I_n, et conclut que « the total time required for the process is I_n + Σ b_i », où b_i désigne la durée de l’article i sur cette seconde machine. L’égalité n’énonce rien de plus que le partage décrit à l’instant.",
+        "Sa force est ailleurs. Le second terme, la charge de travail du poste aval, ne dépend pas du rangement : les mêmes articles y passent, chacun une fois, chacun pour sa durée propre, et changer leur rang change l’ordre des termes sans toucher au total. Tout ce qu’un ordonnancement déplace est donc logé dans le premier terme, l’attente. Bellman en tire aussitôt la conséquence : « we may take I_n as our measure of the efficiency of a scheduling of operations », et c’est cette quantité, écrit-il, que l’on cherche à minimiser."
+      ]
+    },
+    {
+      "title": "Cinq articles, deux ordres, trente et une unités",
+      "paragraphs": [
+        "Le rapport donne un exemple chiffré page 15. Cinq articles, chacun avec sa durée sur la première machine puis sur la seconde : (4, 5), (4, 1), (30, 4), (6, 30) et (2, 3). Additionnez le second nombre de chaque paire, 5 plus 1 plus 4 plus 30 plus 3 : le poste aval a quarante-trois unités de travail devant lui. Ce total est acquis avant qu’on ait décidé quoi que ce soit, et il vaudra quarante-trois pour n’importe quel rangement des cinq articles.",
+        "La règle exposée dans ces pages donne l’ordre (5, 1, 4, 3, 2), et Bellman en note le résultat : « The rule yields (5, 1, 4, 3, 2) as the minimal order with a total time of 47 units, and 4 units of idle time. For the reversed order, the total time is 78, the longest time. » Les deux nombres se lisent alors sans mystère. Quarante-sept, ce sont les quarante-trois unités de travail et quatre unités d’attente. Soixante-dix-huit, ce sont les mêmes quarante-trois unités de travail et trente-cinq unités d’attente.",
+        "Entre le meilleur rangement et le pire, l’écart atteint trente et une unités, et ces trente et une unités sont de l’attente pure. Le travail, lui, n’a pas bougé. On voit là ce qu’un ordonnancement est et ce qu’il n’est pas : il ne fait travailler personne plus vite, il fait attendre moins."
+      ]
+    },
+    {
+      "title": "Ce qu’un changement d’ordre peut promettre",
+      "paragraphs": [
+        "La conséquence est très concrète pour qui envisage de réorganiser un atelier de ce genre. Avant de toucher au rangement, on peut mesurer ce qu’il y a à espérer : il suffit de chronométrer le temps pendant lequel le poste aval reste sans rien à faire. Ce temps est le gain maximal, et il n’y en a pas d’autre à aller chercher de ce côté. Un poste aval qui n’attend jamais travaille déjà au plus court, et le meilleur ordonnancement du monde ne lui fera pas gagner une minute.",
+        "En sens inverse, cette attente ne tombe jamais à zéro. Au premier instant, la seconde machine n’a rien à se mettre sous la dent : l’article de tête est encore sur le poste amont, et l’aval doit patienter au moins le temps de cette première opération. C’est pourquoi le meilleur ordre de l’exemple laisse encore quatre unités d’attente et non pas aucune : deux d’entre elles sont le temps que met l’article placé en tête, dont l’opération amont dure deux unités, à parvenir jusqu’au second poste.",
+        "Le déplacement du regard est discret, et il compte. Une date de fin ne se décompose pas, elle se constate. Une somme d’attentes se regarde attente par attente, et l’on peut demander de chacune d’où elle vient, et laquelle un autre rangement supprimerait. Le problème n’a pas changé de nature, il a changé d’objet, et le nouvel objet se laisse examiner morceau par morceau."
+      ]
+    },
+    {
+      "title": "Deux machines, soixante-dix pages, mai 1955",
+      "paragraphs": [
+        "L’égalité ne vaut que dans une situation bien délimitée, et il vaut la peine de la nommer. Chaque article passe sur la première machine, puis sur la seconde, dans cet ordre et une seule fois. Le chantier commence lorsque le premier article entre sur le poste amont, il s’achève lorsque le dernier quitte le poste aval. C’est le cas à deux machines, celui auquel la première partie du rapport est consacrée.",
+        "Ce qui distingue ce cas est la brièveté de la chaîne : l’attente de l’aval ne dépend que d’un seul amont, et le plan de charge du second poste suffit à tout comptabiliser. L’article de S. M. Johnson auquel Bellman renvoie annonce dès son titre deux et trois étapes, temps de réglage compris : c’est de ce côté que la question se prolonge.",
+        "Quant au texte de Bellman, ce n’est pas un article de revue. P-651 est un papier de la RAND Corporation, soixante-dix pages, révisé le 23 mai 1955, sans volume ni numéro, dont la bibliographie court jusqu’à la dernière page et s’achève sur une entrée au nom de G. Pólya."
+      ]
+    },
+    {
+      "title": "Le nom de S. Johnson dans les titres de paragraphe",
+      "paragraphs": [
+        "Le rapport est signé de Richard Bellman seul, et pourtant le résultat qu’il expose ne lui appartient pas. Il l’écrit dès la page 8 : « Two solutions will be presented, the original one due to S. Johnson, based upon an explicit formula of interest in itself, and a solution based upon the functional equation approach of the theory of dynamic programming. » Ses paragraphes portent la même mention en toutes lettres : le troisième s’intitule « Lemmas of S. Johnson », le quatrième « The Result of S. Johnson ». Le partage du temps entre travail et attente, celui-là même qu’on vient de lire, appartient au troisième.",
+        "Page 13, il ferme la question de la preuve : « For Johnson’s derivation of his result and the remainder of the proof that this criterion yields the absolute minimum, we refer to his paper, [5]. We shall give another derivation below. » L’entrée [5] de sa bibliographie est l’article de Johnson de mars 1954. L’autre dérivation annoncée vient plus loin, au sixième paragraphe, et celle-là est de lui : il refait le résultat par équation fonctionnelle, selon l’approche de la programmation dynamique, à laquelle il renvoie par la première entrée de la même bibliographie.",
+        "Qui voudra remonter jusqu’à Johnson depuis ces pages a intérêt à connaître un détail : le rapport écrit le nom de la revue à l’envers, « Naval Logistics Research Quarterly », alors que la forme juste est Naval Research Logistics Quarterly. Bellman n’écrit par ailleurs que l’initiale du prénom, S. Johnson ; la notice de l’article de 1954 donne S. M. Johnson."
+      ]
+    }
+  ],
+  "limits": [
+    "Le texte que Bellman désigne par [5] est un article de huit pages, paru en mars 1954. C’est lui qui porte la démonstration que le critère de rangement donne le minimum absolu, et Bellman y renvoie plutôt que de la refaire. En quels termes Johnson pose lui-même le partage entre travail et attente, ce sont ces huit pages qui le diront.",
+    "L’exemple des cinq articles et de ses deux ordres passe ici pour un apport propre à Bellman. Les sources disponibles ne permettent pas d’affirmer qu’il ne figure pas déjà chez Johnson : la comparaison se fait au même endroit.",
+    "La couverture porte « Revised 23 May 1955 » : révisé, donc, et non paru pour la première fois ce jour-là. Une version antérieure a existé, dont la date n’est pas établie, et P-651 est resté un papier de la RAND Corporation, sans parution en revue établie.",
+    "Un volume de 1982 porte un titre presque identique, Mathematical Aspects of Scheduling and Applications, chez Pergamon, signé Bellman, Esogbue et Nabeshima. Ce n’est pas le texte dont il est question ici, et ce que vingt-sept années y ont ajouté, ce sont ses pages qui le montrent."
+  ]
+}

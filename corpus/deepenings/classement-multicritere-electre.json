@@ -1,0 +1,61 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "classement-multicritere-electre",
+  "lead": [
+    "Trois appartements à visiter. Le premier est le moins cher, le deuxième est à dix minutes du travail, le troisième a une pièce de plus. Le réflexe le plus répandu consiste à noter chacun sur chacun de ces points, à décider qu’un peu de loyer vaut tant de minutes de trajet, à additionner, puis à comparer les totaux. L’opération réussit toujours : elle finit par désigner un gagnant, même quand personne ne sait dire combien de minutes de transport valent cinquante euros de loyer par mois. C’est précisément ce qui devrait inquiéter. Le total n’a pas résolu le désaccord entre les trois manières de regarder les appartements, il l’a fait disparaître dans un chiffre.",
+    "En 1968, Bernard Roy expose une façon de procéder qui prend le problème par l’autre bout. Elle renonce à dire ce que vaut chaque appartement. Elle se demande seulement, pour deux d’entre eux pris ensemble, ce qu’on a le droit d’affirmer de l’un par rapport à l’autre, et à quelles conditions cette affirmation tient encore quand une partie des points de vue s’y oppose."
+  ],
+  "sections": [
+    {
+      "title": "Ce qu’un point de vue doit fournir",
+      "paragraphs": [
+        "L’article pose d’abord ce qu’il faut avoir en main : « Soit E un ensemble d’objets sur lesquels n points de vue permettent de définir n préordres complets ». Sous ce vocabulaire, l’exigence est modeste. Un préordre complet, c’est un classement de tous les objets du meilleur au moins bon, où deux objets peuvent occuper le même rang. Chaque point de vue doit donc savoir ranger les appartements les uns par rapport aux autres, et rien de plus : ni les noter, ni dire de combien l’un devance l’autre.",
+        "Cette modestie est délibérée. Page 64, Roy remarque que les échelons d’une échelle peuvent n’avoir aucune signification métrique précise : que deux barreaux successifs portent les numéros 2 et 3 n’oblige pas à croire que l’écart entre eux vaut celui qui sépare 3 de 4. Une méthode qui additionne des notes traite pourtant ces écarts comme des quantités, et suppose des données bien plus qu’elles ne portent. En ne demandant qu’un ordre, on s’interdit ce supplément.",
+        "Le prix à payer se voit aussitôt. Sans valeur commune, on ne peut plus comparer deux objets par une soustraction : il faut construire la comparaison autrement, et c’est là que commence le travail."
+      ]
+    },
+    {
+      "title": "L’unanimité ne compare presque rien",
+      "paragraphs": [
+        "La première idée qui vient est la plus sûre : ne déclarer un objet meilleur qu’un autre que lorsque tous les points de vue sont d’accord. Contre une conclusion pareille, personne ne peut protester. Elle a un défaut, et Roy le constate : le réseau de comparaisons obtenu ainsi reste « loin d’être complet ». Dès que les points de vue divergent un peu, la plupart des paires d’objets ne sont reliées par rien, et l’unanimité cesse de dire quoi faire.",
+        "Reste donc à trouver un terrain entre deux extrêmes : la note globale, qui compare tout au prix d’hypothèses invérifiables, et l’unanimité, qui ne suppose rien mais ne compare presque rien. Page 66, Roy formule cet objectif en termes de graphe, c’est-à-dire d’un jeu de flèches tracées d’un objet vers un autre : ce qu’il cherche est un graphe « en aussi “bon accord” que possible avec les divers points de vue ». Le mot qui compte est accord. Il ne s’agit plus de mesurer les objets, mais de rester fidèle à ce que les points de vue en disent."
+      ]
+    },
+    {
+      "title": "Une majorité, et aucune opposition trop forte",
+      "paragraphs": [
+        "La partie de l’article qui porte la méthode s’ouvre sur deux indicateurs, l’un de concordance, l’autre de discordance. Le premier mesure ce qui appuie une comparaison, le second surveille ce qui s’y oppose. Deux conditions doivent être remplies ensemble pour qu’on puisse dire d’un objet qu’il en surclasse un autre : d’abord qu’« une majorité suffisante (seuil p) se dégage parmi les points de vue » « pour placer e au moins aussi haut que e’ », e et e’ étant les deux objets comparés ; ensuite qu’« aucun des points de vue en désaccord avec cette majorité ne révèle une supériorité » trop forte de e’ sur e, appréciée par un second seuil, q.",
+        "Les deux conditions ne sont pas de même nature, et c’est ce qui fait la méthode. La première compte des voix : elle demande qu’un nombre suffisant de points de vue soutienne la comparaison. La seconde ne compte rien : elle regarde l’intensité d’un seul désaccord. On peut y lire un droit de veto accordé à l’écart excessif. Un point de vue minoritaire dont l’objection est faible ne bloque pas ; un point de vue isolé dont l’objection est massive bloque, quelle que soit la majorité en face.",
+        "C’est exactement ce que l’addition des notes autorisait et que cette double condition interdit : une compensation. Reprenons les trois appartements. Un loyer très légèrement supérieur ne suffit pas à empêcher qu’un logement en surclasse un autre, parce que l’objection est mince. Un trajet trois fois plus long, lui, bloque la conclusion, même si le prix et la surface s’accordent à la soutenir. Aucun avantage confortable sur deux points ne rachète un défaut rédhibitoire sur le troisième."
+      ]
+    },
+    {
+      "title": "Deux seuils que les données ne fixent pas",
+      "paragraphs": [
+        "Les lettres p et q ne sont pas des résultats, ce sont des réglages. Rien dans les points de vue eux-mêmes ne dit où placer la majorité requise, ni à partir de quel écart une opposition devient rédhibitoire. La phrase qui referme cette partie de l’article le reconnaît sans détour : c’est une relation « sur laquelle on peut, pour des valeurs appropriées de p et de q, fonder une réponse aux problèmes posés au commencement du paragraphe A.3 ».",
+        "Deux personnes qui règlent p et q différemment n’obtiendront donc pas les mêmes comparaisons, ni la même réponse. On peut y voir une faiblesse. On peut aussi y voir un déplacement du lieu où loge l’arbitraire. Une note globale contient elle aussi des décisions discutables, mais elles sont enfouies dans le calcul et le résultat ne les montre plus. Ici, elles tiennent en deux nombres qu’on peut annoncer, contester, faire varier pour voir ce qui change. Un désaccord entre deux personnes redevient alors un désaccord sur une exigence nommée : combien de points de vue doivent appuyer une conclusion, et quel écart interdit de la tirer."
+      ]
+    },
+    {
+      "title": "Choisir, plus que ranger",
+      "paragraphs": [
+        "Une relation construite de cette façon laisse des paires sans verdict. Quand la majorité manque, ou quand une opposition trop forte s’exprime, aucune flèche n’est tracée, et les deux objets restent côte à côte sans être départagés. Cela suffit à écarter des candidats, puisqu’un objet surclassé par un autre a peu de raisons de rester en lice. Cela ne suffit pas à ranger tout le monde du premier au dernier.",
+        "Roy l’écrit lui-même page 71, et la nuance mérite d’être retenue : la relation de surclassement lui paraît « bien adaptée » au problème de la sélection, et « peut-être moins » à celui du rangement complet. Le titre de l’article annonce pourtant le classement autant que le choix. Ce que ces pages donnent le mieux, c’est un moyen de réduire un ensemble d’objets à un petit groupe défendable, non une liste ordonnée de bout en bout.",
+        "Et quand ce groupe reste large, il n’y a pas forcément eu de faute de méthode. Roy en donne la raison lorsque l’ensemble des objets encore en lice demeure trop nombreux : c’est « l’antagonisme des points de vue ». Un résultat indécis dit alors quelque chose du problème lui-même, à savoir que les points de vue s’y opposent frontalement, et une procédure qui trancherait quand même le dirait moins bien."
+      ]
+    },
+    {
+      "title": "Des points de vue, pas encore des critères",
+      "paragraphs": [
+        "Le mot « critère » n’apparaît pas une seule fois dans le corps de cet article. Roy écrit « points de vue » du début à la fin, y compris dans le titre du document de 1966 qui a donné son nom à la méthode. Le vocabulaire du multicritère, celui qui désigne aujourd’hui toute une famille de travaux, s’est imposé plus tard : l’employer pour parler de ce texte est commode, ce n’est pas la langue de son auteur.",
+        "Le mot « incomparabilité » n’y figure pas davantage, et l’absence de comparaison entre deux objets n’y est pas érigée en relation de préférence à part entière. Ce que le texte porte est plus discret : un réseau de comparaisons unanimes « loin d’être complet », un ensemble de candidats que l’antagonisme des points de vue empêche de réduire. L’idée est là en creux, elle n’a pas encore reçu son nom.",
+        "Enfin, le renoncement à fabriquer une valeur globale est pratiqué, jamais plaidé. On chercherait en vain dans ces pages une charge contre la note unique : Roy construit sa relation, et passe à autre chose. La seule phrase qui s’en approche, page 66, dit des approches concurrentes qu’« aucune ne paraît toutefois avoir pleinement abouti »."
+      ]
+    }
+  ],
+  "limits": [
+    "La méthode et son nom sont antérieurs de deux ans à cet article : ils viennent de la note de travail n° 49 de la Direction scientifique de la SEMA, juin 1966, cosignée par R. Benayoun, B. Roy et B. Sussmann. Le seul témoin de cette cosignature est la bibliographie imprimée de 1968. C’est dans ces pages de 1966 que la méthode a pris sa première forme, et il faudra les retrouver pour établir en propre l’apport de chacun.",
+    "L’article renvoie à un second document de la même maison, un « Manuel de référence du programme ELECTRE » de mai 1966, signé Benayoun et Sussmann. Son titre annonce un programme de calcul déjà en service : ce qu’il calculait, et sur quels cas, c’est ce manuel qui le dira.",
+    "Pourquoi renoncer à une note globale plutôt que la corriger, ce texte ne le discute nulle part. Les quinze références de sa bibliographie sont les travaux avec lesquels Roy se situait alors, et c’est là qu’il faut aller chercher l’argument qu’il ne développe pas. Quant à ce que la famille de méthodes née de celle-ci est devenue, et à la place qu’y a prise l’incomparabilité, un chapitre intitulé « ELECTRE Methods », signé Figueira, Mousseau et Roy, en est l’entrée."
+  ]
+}
