@@ -3465,6 +3465,62 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "objectif-specifique-et-difficile",
+    "lead": [
+      "Un chef d’équipe qui veut que le travail avance a le choix entre deux phrases. Il peut dire « faites de votre mieux » : rien à redire, personne n’est humilié, chacun reste juge de son propre effort. Il peut aussi annoncer un nombre et une échéance, en sachant qu’on lui reprochera d’être arbitraire, voire de placer la barre là où personne ne l’atteindra. L’intuition penche du premier côté, et elle a ses raisons. Entre 1969 et 1980, la question a pourtant été posée plus de cent fois, en laboratoire et sur le terrain, avec des consignes contrôlées et des performances mesurées.",
+      "Ce qui rend le résultat instructif n’est pas seulement son classement, c’est la façon dont les cas y sont découpés. Dire « faites de votre mieux » n’est pas traité comme une absence de consigne : c’est un cas à part, distinct de l’objectif facile comme du silence. Quatre situations se trouvent donc mises en concurrence, et l’ordre qui en sort ne se comprend qu’en regardant de près les mots qui les nomment, puis la manière dont on compte plus de cent études pour en tirer une phrase de deux lignes."
+    ],
+    "sections": [
+      {
+        "title": "Quatre consignes, et non deux",
+        "paragraphs": [
+          "La phrase qui tranche se trouve à la page 59 d’un rapport technique de juin 1980, dans la partie intitulée « Conclusions », sous un intertitre qui annonce son objet : « Range of Goals », l’éventail des objectifs. Quatre termes y sont alignés. Un objectif précis et difficile. Un objectif précis mais facile. La consigne de faire au mieux, que les auteurs écrivent « do best » et gardent entre guillemets parce que c’est ce qu’on dit aux personnes. Et enfin l’absence, formulée « no assigned goals », aucun objectif assigné.",
+          "Ce dernier mot mérite qu’on s’y arrête, car il ne dit pas la même chose qu’aucun objectif du tout. Ce qui est retiré dans ce quatrième cas, c’est la consigne venue de l’extérieur, non ce que la personne se donne à elle-même en s’installant à sa tâche. La comparaison porte donc sur ce qu’un chef, un dispositif ou un expérimentateur assigne, et non sur ce qui se passe dans la tête de celui qui travaille. La distinction se perd vite quand on résume le résultat en disant qu’il vaut mieux se fixer un objectif."
+        ]
+      },
+      {
+        "title": "Deux adjectifs, dont un seul varie",
+        "paragraphs": [
+          "L’énoncé anglais se lit : « Individuals with specific and hard or challenging goals outperform individuals with specific easy goals ». Ceux qui reçoivent un objectif précis et difficile font mieux que ceux qui reçoivent un objectif précis et facile. L’adjectif précis se trouve des deux côtés de la comparaison. Entre ces deux premiers termes, une seule chose change donc, le niveau d’exigence ; la précision, elle, sépare ce couple des deux autres cas, la consigne ouverte et le silence.",
+          "Le doublet anglais « hard or challenging » n’a pas d’équivalent commode en français, où difficile fait le travail des deux mots. Reste que la phrase ne dit ni à partir de quel niveau un objectif devient difficile, ni pour qui, ni ce qui se produit lorsqu’il devient inatteignable. Elle établit un ordre entre quatre consignes ; elle ne fournit pas de règle pour en fabriquer une. C’est une conclusion de bilan, pas un mode d’emploi."
+        ]
+      },
+      {
+        "title": "Ce que compte un taux de réussite de 90 %",
+        "paragraphs": [
+          "Le chiffre qui soutient cette conclusion figure page 18, et les auteurs le calculent eux-mêmes : « ninety nine out of 110 studies found specific hard goals produced better performance », quatre-vingt-dix-neuf études sur cent dix ont trouvé que des objectifs précis et difficiles produisaient une meilleure performance, soit « a success rate of 90% ».",
+          "Ce que ce taux dénombre, ce sont des études, non des personnes ni des points de performance. La page 59 le formule d’ailleurs autrement : « Ninety percent of the studies showed positive or partially positive effects », quatre-vingt-dix pour cent des études ont montré des effets positifs ou partiellement positifs. Le mot partiellement appartient au décompte, et il n’est pas neutre : le total ne sépare pas les études où l’effet est net de celles où il ne l’est qu’en partie. C’est en connaissant cette convention qu’il faut lire la déclaration qui ouvre la même page : « The beneficial effect of goal setting on task performance is one of the most robust and replicable findings in the psychological literature », l’un des résultats les plus solides et les plus reproductibles de la littérature psychologique. Les auteurs ajoutent que l’effet se retrouve aussi fiablement sur le terrain qu’en laboratoire."
+        ]
+      },
+      {
+        "title": "Là où l’écart cesse de se voir",
+        "paragraphs": [
+          "La page 59 ne s’arrête pas à la phrase citée. Elle enchaîne aussitôt sur un cas que le classement en quatre termes laissait de côté, celui des objectifs moyens : « People with specific moderate goals show performance levels between those of people with easy and hard goals », ceux qui reçoivent un objectif précis et modéré se situent entre les deux extrêmes, mais, ajoutent les auteurs, ils ne font pas nécessairement mieux que ceux à qui l’on a simplement dit de faire au mieux.",
+          "La même page signale une difficulté de méthode à l’autre bout de l’échelle. Les personnes à qui l’on assigne un objectif facile ne s’y tiennent pas : elles s’en donnent spontanément de plus élevés. La condition facile est donc moins stable qu’il n’y paraît, ce qui rappelle une fois de plus que la comparaison porte sur des consignes données et non sur les objectifs réellement poursuivis. Un résultat solide n’est pas un résultat sans zone d’ombre, et les auteurs sont les premiers à situer les leurs."
+        ]
+      },
+      {
+        "title": "La même conclusion, deux fois, dans un rapport",
+        "paragraphs": [
+          "Un rapport technique s’ouvre par une page de résumé, et celle-ci dit déjà la même chose, en d’autres mots : « specific,challenging goals lead to higher performance than easy goals », la virgule collée au mot suivant sur cette page dactylographiée, puis viennent la consigne de faire de son mieux et l’absence d’objectif. Trois différences avec la page 59, toutes minuscules et toutes réelles : ce résumé écrit « do your best » là où la conclusion écrit « do best », il laisse tomber le précis devant facile, et il dit « no goals » là où la conclusion dit « no assigned goals ».",
+          "Ce résumé est en outre suspendu, grammaticalement, à ce qui le précède : « A review of both laboratory and field studies », une revue d’études de laboratoire et de terrain a trouvé que. Détaché de cette amorce, il se lit comme une affirmation générale alors qu’il énonce le résultat d’un décompte. La formule lisse qui circule aujourd’hui sous les noms de Locke et Latham ressemble d’ailleurs davantage à ce résumé qu’à la conclusion de la page 59, et lisser l’une sur l’autre reviendrait à prêter à une page les mots d’une autre."
+        ]
+      },
+      {
+        "title": "Ce que juin 1980 consolide",
+        "paragraphs": [
+          "Le document n’est pas le compte rendu d’une expérience. C’est une revue, ses auteurs l’écrivent dès la première ligne de leur résumé, et elle porte sur la littérature parue depuis 1968. Quatre-vingt-quatorze pages, quatre signataires venus de deux universités, un numéro de rapport technique : ce genre de texte sert à faire le point, à rassembler des résultats épars et à les compter. La phrase de la page 59 est ce point de bilan, non une découverte annoncée.",
+          "Les auteurs eux-mêmes refusent de dater leur thèse de 1980. Leur page 1 la fait venir de deux courants. D’un côté : « The academic source goes back from Ryan (1970) and Miller, Galanter and Pribram (1960), through Lewin to the Wurzburg School ». De l’autre, la direction par objectifs, qu’ils rattachent au mouvement d’organisation scientifique du travail fondé par Frederick W. Taylor. Et ils écrivent où les deux se rejoignent : « Both strains of thought come together in the more recent work of Locke (1968), Latham (Latham & Yukl, 1975a) and others ». Attribuer l’idée à ce rapport, c’est donc lui prêter ce qu’il ne revendique pas : il consolide et il chiffre, il n’invente pas."
+        ]
+      }
+    ],
+    "limits": [
+      "Les mêmes quatre auteurs donnent l’année suivante l’état publié de cette revue : « Goal setting and task performance: 1969-1980 », Psychological Bulletin, 90(1), 1981, p. 125-152. C’est cette version que la littérature cite depuis, et c’est vraisemblablement d’elle, ou du livre que Locke et Latham font paraître en 1990, que vient la formule plus lisse qu’on rencontre partout. En quels termes exacts le résultat s’y trouve posé, ces pages-là le diront.",
+      "La thèse est plus ancienne que son décompte : Locke l’avait formulée seul en 1968, dans « Toward a theory of task motivation and incentives », Organizational Behavior and Human Performance, 3, p. 157-189. L’argument d’avant les statistiques, ses raisons et ses réserves, c’est dans cet article qu’il se lit.",
+      "Reste le corps du rapport de 1980, quatre-vingt-dix pages en accès libre derrière une conclusion de deux lignes : quelles études ont été retenues, sur quelles tâches, pendant combien de temps, et selon quel critère chacune a été rangée du côté positif ou du côté partiellement positif. Ce sont ces pages qui décident de ce que vaut le taux de 90 %."
+    ]
+  },
+  {
     "conceptId": "objet-de-la-cybernetique-economique",
     "lead": [
       "Décider de produire mille automobiles ne fait pas apparaître la tôle, le verre et les pneus qu’il faudra pour les monter. Il faut qu’une commande parte, qu’un fournisseur la reçoive, qu’un atelier s’y mette. Un tableau qui relie les industries entre elles montre très bien que ces quantités se correspondent, et il ne montre rien de ce qui les fait se correspondre : entre les chiffres qui s’ajustent et les gestes qui les ajustent, il y a tout un trafic de messages et de réponses dont l’équation ne dit pas un mot.",
@@ -3704,6 +3760,65 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "penalite-de-rupture",
+    "lead": [
+      "Dans le magasin d’un atelier, deux erreurs sont possibles et une seule se voit. Garder trop de pièces s’inscrit quelque part : de l’argent immobilisé, des rayonnages occupés, des articles qui vieillissent sans servir. En garder trop peu ne produit aucune ligne comptable. Il y a seulement une machine qui attend, quelqu’un qu’on envoie chercher la pièce ailleurs, un remplacement de fortune qui tient moins bien que l’original. Personne n’émet de facture pour cela, et c’est pourtant un coût.",
+      "Tant que ce second coût n’a pas de chiffre, le niveau de stock ne se décide qu’à l’estime : le prudent en garde beaucoup, l’économe en garde peu, et aucun des deux ne peut montrer à l’autre qu’il se trompe. En septembre 1950, dans un rapport de la RAND Corporation révisé au mois de novembre suivant, Kenneth Arrow, Theodore Harris et Jacob Marschak font tenir le déplacement dans une hypothèse : le dommage causé par l’absence d’un article a une valeur, cette valeur peut s’écrire, et l’organisation en a déjà une idée avant qu’on la lui demande."
+    ],
+    "sections": [
+      {
+        "title": "Le cas où la demande dépasse le stock",
+        "paragraphs": [
+          "À la fin d’une période, il n’y a que deux situations. Ou bien le stock a couvert la demande, et ce qui reste sur les rayonnages a coûté à porter. Ou bien la demande l’a dépassé, et c’est cet écart que les auteurs mettent au centre, sous l’expression qu’ils emploient page 19 : « the excess of demand over available stock », la part de la demande qui excède le stock disponible. La pénalité dont parle le rapport est attachée à cette part-là, et à rien d’autre. Ce n’est pas une pénalité contractuelle, ce n’est pas la défaillance d’un fournisseur en amont : c’est le dommage subi parce que l’article n’était pas là quand on l’a demandé.",
+          "Ce dommage, la même page le décrit par ce qui le rend visible. Quand un article manque, l’organisation, écrivent les auteurs, « it knows the cost and the poorer performance of emergency substitutes » : elle connaît le coût des remplaçants d’urgence, et leur moindre performance. Deux choses se disent là en même temps, et la seconde s’oublie plus vite que la première. Manquer coûte ce que l’on paie en catastrophe, et coûte aussi ce que l’on perd en qualité de service, même lorsque le dépannage a marché."
+        ]
+      },
+      {
+        "title": "Une pénalité supposée connue",
+        "paragraphs": [
+          "La section qui porte tout cela s’ouvre sur une phrase qu’il vaut la peine de lire pour ce qu’elle avoue : « We assume the penalty function as given. » La fonction de pénalité, c’est-à-dire ce qui associe à chaque quantité manquante un montant de dommage, est supposée donnée. Elle n’est ni construite, ni mesurée, ni déduite d’observations : elle entre dans le raisonnement comme une donnée du problème.",
+          "Ce qui suit ne lève pas l’hypothèse, il la défend. L’organisation, poursuivent les auteurs, « has a general idea of the value it would attach to the damage that would be caused by the non-availability of an item » : elle a une idée générale de la valeur qu’elle attribuerait au dommage causé par l’indisponibilité d’un article. L’argument est que ce jugement existe déjà, en pratique, chez ceux qui décident, même s’ils ne l’ont jamais écrit ni chiffré.",
+          "La distinction mérite d’être tenue fermement, parce qu’elle sépare deux choses très inégales : savoir calculer un niveau de stock une fois la pénalité chiffrée, et savoir chiffrer la pénalité. Le rapport fait la première et pose la seconde comme acquise. Rien dans ces pages n’indique comment convertir en monnaie une réparation retardée, une livraison manquée ou un service rendu moins bien."
+        ]
+      },
+      {
+        "title": "L’unité de plus, et ce qu’elle évite",
+        "paragraphs": [
+          "Le calcul ne pose pas la question sous la forme « combien faut-il en garder ». Il la pose, à chaque niveau déjà atteint, sous la forme : cette unité de plus vaut-elle ce qu’elle coûte ? Ainsi tournée, elle devient décidable, parce que ses deux termes ne sont pas de même nature. Ce que l’unité coûte est certain : on l’achète, on la range, on la garde. Ce qu’elle rapporte est incertain, et pour une raison précise : elle ne servira que si la demande dépasse le niveau que l’on tenait déjà sans elle.",
+          "D’où l’entrée d’une moyenne dans le raisonnement. On ne peut pas dire ce que cette unité évitera ; on peut dire ce qu’elle évite en moyenne, en pesant la pénalité épargnée par la chance que la demande monte assez haut pour la rendre utile. C’est ce que veut dire « espérée » ici : non pas souhaitée, mais calculée sur l’ensemble des demandes possibles, chacune comptée selon sa probabilité.",
+          "À la page 21, les auteurs nomment les deux côtés dans leur propre vocabulaire d’économistes : d’un côté le coût marginal, celui d’acheter et de porter une unité supplémentaire en stock ; de l’autre l’utilité marginale espérée. Tant que la seconde l’emporte, il faut monter d’une unité. Le niveau à tenir est celui où les deux se rejoignent, et c’est exactement ce que pose l’équation de cette page, en écrivant leur différence égale à zéro."
+        ]
+      },
+      {
+        "title": "Ce dont dépend le niveau à tenir",
+        "paragraphs": [
+          "Une fois cette égalité posée, le niveau optimal cesse d’être une affaire de tempérament. Il se déduit d’un petit nombre de quantités, que les auteurs présentent comme les données physiques du problème, et parmi lesquelles figurent les paramètres de la fonction de pénalité définie quelques lignes plus haut. Il n’y a donc pas de bon niveau en général : il y en a un par jeu de valeurs, et le prix du manque y compte au même titre que le prix d’achat.",
+          "Cela déplace la discussion plutôt que de l’éteindre. Imaginons deux responsables qui ne s’entendent pas sur la quantité à tenir : en remontant le calcul, ils peuvent découvrir que leur désaccord porte en réalité sur ce que vaut, à leurs yeux, le dommage d’un manque. Le désaccord ne disparaît pas, il change d’endroit et devient un nombre : quelque chose qui s’écrit, se compare d’un article à l’autre et se corrige quand l’expérience le dément. C’est une conséquence de la façon dont le problème est posé, plus qu’un conseil des auteurs."
+        ]
+      },
+      {
+        "title": "Ce que la littérature de gestion ne donnait pas",
+        "paragraphs": [
+          "Dès la page 2, les trois auteurs situent leur travail par un manque. Ils indiquent n’avoir pas trouvé, dans la littérature de gestion de leur époque, de règle explicite pour déterminer ces stocks d’avance qui maximiserait le profit espéré, ou minimiserait la perte espérée, étant donnée la distribution de probabilité pertinente. Ce n’est pas un mécanisme qu’ils énoncent là, c’est une lacune qu’ils déclarent : les stocks de précaution existaient, se pratiquaient, se recommandaient même, sans règle qui les rattache à la distribution des demandes.",
+          "Le vocabulaire de 1950 n’est d’ailleurs pas le nôtre. Le rapport ignore l’expression « stock de sécurité », qui viendra plus tard en français ; il écrit « cushion stocks », des stocks qui font coussin, et parle de stocks de marge de sécurité. Lire ces pages avec les mots d’aujourd’hui ferait croire que les auteurs héritent d’une notion déjà formée, alors qu’ils travaillent à lui donner une règle."
+        ]
+      },
+      {
+        "title": "Ce qui revient en propre aux trois auteurs",
+        "paragraphs": [
+          "Le rapport ne prétend pas tout inventer, et il le dit à l’endroit voulu. La formule du lot économique, exposée dans sa deuxième partie, est rendue à un autre en toutes lettres : page 9, les auteurs écrivent « We believe this is, in essence, the solution advanced by R. H. Wilson [10], formerly of the Bell Telephone Company; and also by other writers; see [1]. » Ce n’est donc pas là qu’il faut chercher leur apport.",
+          "Il est ailleurs : dans le traitement de l’incertitude, à partir de la troisième partie, là où la demande cesse d’être un nombre connu pour devenir une distribution, et où le prix du manque prend sa place dans le calcul. La page de titre porte les trois noms dans cet ordre, sous la mention d’une révision datée du 16 novembre 1950, pour un rapport de quarante-sept pages : c’est un travail à trois, sans auteur principal détaché des autres."
+        ]
+      }
+    ],
+    "limits": [
+      "La pénalité demeure, dans ces pages, une donnée d’entrée. Par quelles observations et quelles conventions une organisation établit le montant qu’elle attache à un manque, le rapport ne l’établit pas : il affirme ce jugement déjà formé et passe au calcul. C’est une limite du raisonnement lui-même, et non un détail d’édition.",
+      "Le même travail a paru en juillet 1951 dans Econometrica, sous les trois mêmes noms, à partir de la page 250 du volume 19. Ce que cette version publiée resserre, reformule ou ajoute, et en quels termes la fonction de pénalité y est introduite, se lit dans ces pages : c’est là qu’il faudra aller. Les notices en donnent la première page, jamais la dernière ; l’article dira lui-même où il s’arrête.",
+      "Aucune traduction française publiée de ce rapport n’est connue à ce jour. Pour les termes exacts des auteurs, y compris ceux que le français rend mal, c’est l’anglais de 1950 qu’il faudra lire.",
+      "Le rapport nomme enfin ses propres appuis, R. H. Wilson pour le lot économique, Whitin et Haack, Markowitz, et une bibliographie de dix entrées. Ce que ces travaux tenaient déjà, et ce que les trois auteurs y ajoutent, se voit en les ouvrant à leur tour."
+    ]
+  },
+  {
     "conceptId": "penser-a-partir-des-valeurs",
     "lead": [
       "Une réunion s’ouvre avec trois devis sur la table. On compare les prix, on pèse les délais, on tranche, et la séance passe pour efficace. Presque personne ne demande d’où viennent ces trois-là, qui les a rassemblés, ni ce qu’il aurait fallu chercher pour qu’un quatrième existe. Le travail de décision a commencé au moment où la liste est arrivée ; ce qui s’est joué avant elle est resté hors de la salle.",
@@ -3722,7 +3837,7 @@ export const generatedDeepenings: Deepening[] = [
         "title": "Ce que « primitive » veut dire ici",
         "paragraphs": [
           "Un mot doit être fixé tout de suite, sans quoi tout le reste se lit de travers. Les valeurs, ici, ne sont pas des principes moraux : ce sont les choses qu’on cherche à obtenir ou à éviter dans la situation, ce à quoi on tient assez pour que la décision compte. Keeney le pose en une phrase : « This desire to achieve more in terms of values is the motivation for any interest in any decision problem. » Sans rien à atteindre, il n’y aurait pas de problème du tout.",
-          "De là vient le mot que la phrase suivante emploie, et qui est emprunté au vocabulaire des systèmes axiomatiques. Une notion primitive n’est pas une notion rudimentaire : c’est ce qu’on pose avant tout le reste, le point de départ dont les autres notions se déduisent et qui ne se déduit de rien. Dire que les valeurs sont la notion primitive d’un problème de décision, ce n’est donc pas leur donner une place plus haute dans une liste d’étapes : c’est dire que ce sont elles qui font qu’il y a un problème, et que les possibilités d’action viennent après.",
+          "La phrase que Keeney enchaîne aussitôt, et qui est celle par laquelle on le cite, emprunte son mot central au vocabulaire des systèmes axiomatiques. Une notion primitive n’est pas une notion rudimentaire : c’est ce qu’on pose avant tout le reste, le point de départ dont les autres notions se déduisent et qui ne se déduit de rien. Dire que les valeurs sont la notion primitive d’un problème de décision, ce n’est donc pas leur donner une place plus haute dans une liste d’étapes : c’est dire que ce sont elles qui font qu’il y a un problème, et que les possibilités d’action viennent après.",
           "La conséquence pratique est immédiate. Tant qu’on part des options, les valeurs n’interviennent que pour les départager : elles servent de règle de mesure appliquée à un matériau déjà donné. Prises comme point de départ, elles servent d’abord à fabriquer ce matériau."
         ]
       },
@@ -3760,7 +3875,7 @@ export const generatedDeepenings: Deepening[] = [
       }
     ],
     "limits": [
-      "Quatre ans plus tard, Keeney a tiré de cette thèse un livre entier, Value-Focused Thinking: A Path to Creative Decisionmaking, publié par Harvard University Press en 1992. Ce que ces années lui ont ajouté, retranché ou précisé, ce sont ses quatre cents pages qui le disent : c’est là qu’il faudra les lire.",
+      "Quatre ans plus tard, Keeney a tiré de cette thèse un livre entier, Value-Focused Thinking: A Path to Creative Decisionmaking, publié par Harvard University Press en 1992. Ce que ces années lui ont ajouté, retranché ou précisé, ce sont ses quelque quatre cents pages qui le disent : c’est là qu’il faudra les lire.",
       "La date de naissance de l’expression « value-focused thinking » reste ouverte. Dans ce chapitre, Keeney ne la rattache à aucun texte antérieur de lui, et rien n’y indique depuis quand il la formulait ainsi. Ce sont ses publications des années précédentes qui l’apprendront.",
       "Les appuis du chapitre sont des exemples professionnels et un unique renvoi à un travail expérimental, dont il donne la référence sans en refaire l’épreuve. Pour savoir ce qui a été mesuré, sur qui et avec quel résultat, c’est ce travail-là qu’il faudra ouvrir.",
       "Enfin, ce chapitre n’a pas de traduction française publiée connue, et le choix des mots français n’y va pas de soi : « alternatives » est un anglicisme, retenu parce que Keeney en fait un terme d’art qu’il oppose à sa propre approche. Pour la lettre, c’est le texte anglais des pages 465 à 494 qui fait foi."
