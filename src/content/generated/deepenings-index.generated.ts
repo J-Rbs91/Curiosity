@@ -88,6 +88,7 @@ export const deepenedConceptIds: readonly ConceptId[] = [
   "penser-a-partir-des-valeurs",
   "performance-totale",
   "points-de-levier",
+  "precarite-des-trajectoires",
   "probabilite-erreur-humaine",
   "quantifier-convenir-et-mesurer",
   "rationalite-limitee",
