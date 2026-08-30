@@ -3013,7 +3013,7 @@ export const generatedDeepenings: Deepening[] = [
       }
     ],
     "limits": [
-      "Les études recensées dans ce chapitre y sont citées par nom et par date, jamais reproduites. Ce que Terborg a réellement mesuré en 1976, et jusqu’où porte son résultat, se lit dans son article et nulle part ailleurs : c’est le seul moyen de savoir si l’appui qu’il donne à la liste est aussi net que le résumé qu’on en fait ici.",
+      "Les études recensées dans ce chapitre y sont citées par nom et par date, jamais reproduites. Ce que Terborg a réellement mesuré en 1976, et jusqu’où porte son résultat, se lit dans son article et nulle part ailleurs : c’est le seul moyen de savoir si l’appui qu’il donne à la liste des quatre mécanismes est aussi net qu’il y paraît.",
       "L’article de 1968 par lequel Locke a posé la thèse seul porte l’état de la question avant ces douze années de travaux. C’est en le lisant que l’on mesure ce que le rapport de 1980 y ajoute, et à quel prix.",
       "Le mécanisme de l’effort occupe la page 20, et son étayage la page 23. Les termes exacts dans lesquels les auteurs y parlent de la mobilisation de l’énergie sont sur le fac-similé du rapport, accessible en ligne : ils attendent leur lecteur.",
       "Ce rapport n’a pas de traduction française publiée connue. Les phrases rendues ici en français le sont pour l’occasion ; l’anglais du fac-similé reste le texte de référence, et c’est à lui qu’il faut revenir pour discuter d’un mot, à commencer par le verbe qui dit comment les objectifs commandent la performance."
@@ -3311,8 +3311,8 @@ export const generatedDeepenings: Deepening[] = [
   {
     "conceptId": "niveaux-de-rationalite-economique",
     "lead": [
-      "Deux personnes achètent le même appareil le même jour. La première a comparé cinq modèles, relevé les prix, calculé ce que l’un consomme de plus que l’autre sur cinq ans. La seconde est entrée, a vu une affiche, et elle est ressortie avec le carton sous le bras. Sur le ticket de caisse, les deux achats sont identiques, et ils comptent pour un dans les chiffres de vente. Ce qui les sépare ne se lit ni sur le prix ni sur l’objet : c’est la quantité de réflexion que chacune y a mise.",
-      "Une science des marchés peut décider que cette différence ne la regarde pas : elle suppose que chacun calcule, et elle décrit ce que ferait un calculateur. Pierre-Louis Reynaud, qui enseigne à la faculté de droit et des sciences économiques et politiques de Strasbourg, publie en 1962 un article où il refuse ce raccourci. Son idée n’est pas que les gens se trompent, ni qu’il suffirait de corriger leurs erreurs pour retrouver le bon modèle. Elle est que la réflexion engagée dans un acte se range par étages, du geste presque automatique à la décision conduite pas à pas, et que le mécanisme économique n’est pas le même selon l’étage où l’on se trouve."
+      "Imaginons deux personnes qui achètent le même appareil le même jour. La première a comparé cinq modèles, relevé les prix, calculé ce que l’un consomme de plus que l’autre sur cinq ans. La seconde est entrée, a vu une affiche, et est ressortie avec le carton sous le bras. Sur le ticket de caisse, les deux achats sont identiques, et comptent pour un dans les chiffres de vente. Ce qui les sépare ne se lit ni sur le prix ni sur l’objet : c’est la quantité de réflexion que chacune y a mise.",
+      "Une science des marchés peut décider que cette différence ne la regarde pas : elle suppose que chacun calcule, et elle décrit ce que ferait un calculateur. Pierre-Louis Reynaud, qui enseigne à la faculté de droit et des sciences économiques et politiques de Strasbourg, publie en 1962 un article où il refuse ce raccourci. Son idée n’est pas que les gens se trompent et qu’il faudrait corriger leurs erreurs. Elle est que la réflexion engagée dans un acte se range par étages, du geste presque automatique à la décision conduite pas à pas, et que le mécanisme économique n’est pas le même selon l’étage où l’on se trouve."
     ],
     "sections": [
       {
@@ -3409,6 +3409,59 @@ export const generatedDeepenings: Deepening[] = [
       "La citation placée en ouverture vient de la version que l’auteur a lui-même déposée en ligne avant publication, et non de la mise en pages finale de la revue : la pagination donnée, page 16, est celle de ce manuscrit. Entre un manuscrit et son épreuve, une formulation se retouche parfois ; l’article imprimé le dira, et lui seul.",
       "Le mot que Didier propose pour désigner cette prolifération de chiffres ne se retrouve nulle part avant lui dans les deux répertoires de publications scientifiques où il a été cherché. Deux autres répertoires restent à interroger : affirmer que le terme est de lui suppose d’y avoir regardé aussi.",
       "Un mot proche, « statactivisme », qui désigne un usage plus militant des statistiques, n’apparaît nulle part dans le corps de l’article : il ne figure que dans sa bibliographie, par renvoi à deux autres ouvrages du même auteur, qui sont l’endroit où ce courant se déclare. Ranger cet article dans ce courant irait au-delà de ce qu’il établit lui-même."
+    ]
+  },
+  {
+    "conceptId": "normatif-descriptif-prescriptif",
+    "lead": [
+      "Une amie vous demande si elle doit accepter un poste dans une autre ville. Deux sortes de réponses savantes existent, et ni l’une ni l’autre ne répond vraiment à sa question. La première décrit comment les gens s’y prennent devant ce genre de choix : ce qu’ils regardent, ce qu’ils négligent, à quel moment ils tranchent. La seconde énonce ce que ferait quelqu’un de parfaitement cohérent, qui saurait tout ce qu’il y a à savoir et n’oublierait rien en chemin.",
+      "Votre amie n’est ni les gens en général, ni cette personne parfaitement cohérente. Elle a trois semaines pour répondre, une idée assez floue de ce qu’elle veut, et quelqu’un à consulter à la maison. Ce qu’elle demande n’est donc ni un constat ni un idéal : elle demande quoi faire, avec ce qu’elle a. En 1988, dans le premier chapitre d’un recueil qu’ils dirigent ensemble, David E. Bell, Howard Raiffa et Amos Tversky donnent un nom à cette troisième demande. L’essentiel n’est pas le nom : c’est ce qui change quand on cesse de la confondre avec les deux autres."
+    ],
+    "sections": [
+      {
+        "title": "À qui la troisième réponse s’adresse",
+        "paragraphs": [
+          "Le chapitre s’ouvre sur la personne à aider, et il la décrit d’abord par ce qu’elle n’est pas. Les auteurs y demandent, page 9, « how we might help less rational people, who nevertheless aspire to rationality, to do better », et posent la même question autrement à la même page : « How can real people - as opposed to imaginary, idealized, super-rational people without psyches - make better choices ». Le mot qui porte le plus est psyches : la personne qu’on aide a une mémoire, des humeurs, de la fatigue, des angles morts. Celle que les modèles idéalisent n’en a pas.",
+          "Deux précisions comptent dans ces formules. La première : il ne s’agit pas de décrire cette personne, ni de lui dire ce qu’elle devrait faire, mais de l’aider à faire mieux. Mieux que ce qu’elle ferait sans aide, pas mieux qu’il n’est concevable. La seconde : elle aspire à la rationalité. Le lien avec l’exigence de cohérence n’est pas rompu, il est déplacé. C’est un but que la personne tient elle-même, non une règle qu’on lui oppose de l’extérieur.",
+          "Le prescriptif se définit ainsi par une relation avant de se définir par un contenu. Il y faut quelqu’un qui décide et quelqu’un qui l’aide, et la question change de forme : elle ne demande plus ce qui se passe d’habitude, ni ce qui serait juste en droit, mais ce que l’on peut faire pour cette personne-ci."
+        ]
+      },
+      {
+        "title": "À quoi se juge chacun des trois",
+        "paragraphs": [
+          "Reste à savoir ce que ce troisième terme fait gagner, puisque n’importe qui peut allonger une liste d’un mot. La réponse tient au critère d’évaluation, que le chapitre pose une dizaine de pages plus loin, aux pages 17 et 18 : les trois ne comparaissent pas devant le même tribunal. Une théorie descriptive se juge à sa validité empirique, une théorie normative à son adéquation théorique, une démarche prescriptive à sa valeur pragmatique.",
+          "Ce que ce partage permet de trancher se voit sur les objections. Dire d’un modèle descriptif que personne ne se comporte comme il l’annonce est une réfutation : c’était exactement ce qu’on lui demandait. Dire d’un modèle normatif que personne ne s’y conforme n’en est pas une, puisqu’il ne prétendait pas décrire ce qui se fait. Et reprocher à une démarche d’aide de s’appuyer sur un modèle imparfait ne suffit pas davantage : ce qu’on lui demande est d’améliorer la décision de celui qui s’en sert.",
+          "L’inverse vaut aussi, et c’est le plus utile. Une méthode d’aide peut être irréprochable dans sa construction et rester sans effet sur les décisions qu’elle accompagne. Jugée comme théorie, elle est bonne ; jugée comme aide, elle ne vaut rien. Sans un troisième terme et son critère propre, on n’a tout simplement pas les mots pour dire cela."
+        ]
+      },
+      {
+        "title": "Ce que « valeur pragmatique » veut dire",
+        "paragraphs": [
+          "Imaginons un comité qui doit choisir entre trois sites d’implantation, avec des données incomplètes sur chacun et un vote prévu dans quinze jours. Quelqu’un lui propose une méthode : lister les critères, les pondérer, noter chaque site, faire la somme. La question que pose le critère de valeur pragmatique n’est pas de savoir si cette méthode est la meilleure en théorie. Elle est de savoir si ce comité, l’ayant employée, décide mieux qu’il n’aurait décidé sans elle.",
+          "Le contrôle se déplace donc en aval, du côté de l’usage, et cela implique deux choses auxquelles la seule opposition du descriptif et du normatif ne laissait pas de place. L’aide doit d’abord tenir compte de ce que la personne est capable de faire, puisqu’une procédure que l’on n’arrive pas à suivre n’aide personne. Ensuite, ce que les travaux descriptifs ont établi cesse d’être un simple constat pour devenir une ressource : savoir où les décisions dérapent d’ordinaire est utile à qui veut les redresser. Le titre du chapitre nomme d’ailleurs des « interactions » entre les trois versants, et non trois territoires séparés."
+        ]
+      },
+      {
+        "title": "Un vocabulaire posé pour un seul chapitre",
+        "paragraphs": [
+          "Ces trois mots ne leur appartiennent pas : ils avaient déjà un usage courant, et c’est précisément cet usage que les auteurs prennent soin de ne pas déranger. La phrase de la page 16 où ils annoncent qu’ils vont traiter ces termes de façon nettement distincte, « we propose to treat these terms quite distinctly », porte un appel de note, et la note dit : « For the purposes of this chapter only; we are not attempting to change common usage. »",
+          "La distinction est donc posée « pour les besoins de ce chapitre seulement ». Lire ce texte comme une refondation du vocabulaire du domaine irait plus loin que ce qu’il revendique. Ce qui est proposé est un instrument de travail, valable dans l’espace d’un chapitre, et qui se juge à ce qu’il fait voir.",
+          "Cette modestie n’est pas une formule de politesse. Elle s’accorde avec ce qui précède : un découpage qui se juge à ce qu’il permet de faire ne peut pas, dans le même souffle, se donner pour le classement vrai des choses."
+        ]
+      },
+      {
+        "title": "Le désaccord imprimé avant le chapitre",
+        "paragraphs": [
+          "Le volume s’ouvre sur une introduction, imprimée avant le premier chapitre, où les trois directeurs expliquent pourquoi ils passent d’un partage à deux termes à un partage à trois. La raison est professionnelle avant d’être théorique : « We have done this primarily because so much of what two of us (David and Howard) do professionally is not adequately captured in the usual descriptive/normative breakdown. » La catégorie sort de ce que font Bell et Raiffa lorsqu’ils aident quelqu’un à décider, et qui n’entrait proprement ni dans une case ni dans l’autre.",
+          "La même page enregistre la réserve du troisième signataire, Amos Tversky : « although the prescriptive category has been useful for our internal discussions, it may not be necessary to proselytize for this more elaborate breakdown if we were to clarify further the normative category ». Cette phrase dit moins qu’on ne lui fait souvent dire. Ce qui serait peut-être inutile, c’est de faire campagne pour ce découpage plus élaboré, non la catégorie elle-même, dont l’utilité pour leurs discussions internes est concédée dans le même souffle. Et la condition posée renvoie à un travail à faire ailleurs : clarifier davantage la catégorie normative.",
+          "On peut lire cette réserve comme un indice de ce que la trichotomie prétend être. Elle est imprimée dans le livre même qu’elle nuance, à quelques pages du chapitre qu’elle discute, et rien n’y présente le désaccord comme une querelle à trancher. Un instrument qu’on se donne pour discuter n’a pas besoin que tous ses auteurs le tiennent pour indispensable."
+        ]
+      }
+    ],
+    "limits": [
+      "Bell, Raiffa et Tversky ne revendiquent nulle part d’avoir inventé ce partage à trois termes, et il ne leur revient pas à eux seuls. Jonathan Baron écrivait en 2012 qu’il est apparu nettement dans les années quatre-vingt chez trois auteurs qui écrivaient indépendamment les uns des autres : A. N. S. Freeling en 1984, lui-même en 1985, ce chapitre en 1988. La plus ancienne de ces formulations est dans « A philosophical basis for decision aiding », Theory and Decision, volume 16, 1984, p. 179-206 : c’est cet article qu’il faudra ouvrir pour savoir en quels termes la distinction y est posée.",
+      "Ce qui a été dit ici du critère d’évaluation tient à deux pages, 17 et 18, dans un chapitre qui en compte vingt-deux. Le reste, à commencer par les interactions entre les trois versants que le titre annonce, est dans les pages 9 à 30 du volume de 1988.",
+      "Ce chapitre n’existe, semble-t-il, qu’en anglais. Le français lu ici en est un rendu de travail : « sides » y devient « côtés », et le parallélisme des trois termes, intact dans la phrase anglaise, s’y affaiblit un peu. Pour la lettre, c’est l’anglais qui fait foi."
     ]
   },
   {
@@ -3648,6 +3701,69 @@ export const generatedDeepenings: Deepening[] = [
       "Meadows renvoie ici à Thomas Kuhn pour la question du changement de paradigme, et l’ouvrage de 1962 sur les révolutions scientifiques est la source du terme. Ce que Kuhn établit exactement, et ce que Meadows en retient ou en déplace, ce sont ses pages qui le disent.",
       "Elle cite aussi longuement Emerson pour dire que les idées d’une époque se coulent dans ses matériaux et ses institutions. Ce passage n’est pas repris ici, et c’est dans cet article qu’il faudra aller le chercher.",
       "Comment on s’y prend concrètement pour intervenir au niveau d’un paradigme reste largement ouvert. Meadows esquisse une réponse dans les dernières pages de son rapport, et c’est là que se trouve ce qu’elle propose."
+    ]
+  },
+  {
+    "conceptId": "penser-a-partir-des-valeurs",
+    "lead": [
+      "Une réunion s’ouvre avec trois devis sur la table. On compare les prix, on pèse les délais, on tranche, et la séance passe pour efficace. Presque personne ne demande d’où viennent ces trois-là, qui les a rassemblés, ni ce qu’il aurait fallu chercher pour qu’un quatrième existe. Le travail de décision a commencé au moment où la liste est arrivée ; ce qui s’est joué avant elle est resté hors de la salle.",
+      "Ralph L. Keeney soutient que ce moment d’avant se paie deux fois. Une première fois parce que la meilleure façon d’agir n’était peut-être dans aucun des trois devis. Une seconde, plus discrète, parce qu’une liste d’options n’apporte pas que des options : elle apporte avec elle les termes dans lesquels on va les comparer. Le prix, le délai, la garantie sont là parce que les devis les affichent, et ce qui n’y figure pas ne sera pas discuté. Inverser l’ordre ne consiste donc pas à ajouter une étape de réflexion avant le choix : cela change ce que veut dire décider."
+    ],
+    "sections": [
+      {
+        "title": "Le moment où la liste arrive",
+        "paragraphs": [
+          "L’observation dont part le chapitre est banale, et Keeney la donne pour telle : « Much of the focus of decision making is on the choice among alternatives. » L’essentiel de l’attention, dans une décision, va au choix entre des possibilités déjà formées. Il ajoute qu’il est courant de définir un problème de décision par les possibilités disponibles : « it is common to characterize a decision problem by the alternatives available ».",
+          "Le registre de ces phrases mérite d’être noté, parce qu’il est modeste. Keeney écrit souvent, il écrit que c’est courant, et il conclut : « Descriptively, I think this represents many decision situations ». Beaucoup de situations, donc, et non toutes : ce n’est pas une loi de la pensée humaine, c’est un constat de fréquence, avancé comme une impression de praticien plutôt que comme un résultat établi.",
+          "Cette modestie compte pour la suite. Ce qui est décrit n’est pas une faute que les gens commettraient par distraction, mais une pente : les possibilités se présentent, elles ont l’air d’être le problème, et l’on se met à travailler dessus. Le reste du chapitre s’occupe de ce que cette pente coûte."
+        ]
+      },
+      {
+        "title": "Ce que « primitive » veut dire ici",
+        "paragraphs": [
+          "Un mot doit être fixé tout de suite, sans quoi tout le reste se lit de travers. Les valeurs, ici, ne sont pas des principes moraux : ce sont les choses qu’on cherche à obtenir ou à éviter dans la situation, ce à quoi on tient assez pour que la décision compte. Keeney le pose en une phrase : « This desire to achieve more in terms of values is the motivation for any interest in any decision problem. » Sans rien à atteindre, il n’y aurait pas de problème du tout.",
+          "De là vient le mot que la phrase suivante emploie, et qui est emprunté au vocabulaire des systèmes axiomatiques. Une notion primitive n’est pas une notion rudimentaire : c’est ce qu’on pose avant tout le reste, le point de départ dont les autres notions se déduisent et qui ne se déduit de rien. Dire que les valeurs sont la notion primitive d’un problème de décision, ce n’est donc pas leur donner une place plus haute dans une liste d’étapes : c’est dire que ce sont elles qui font qu’il y a un problème, et que les possibilités d’action viennent après.",
+          "La conséquence pratique est immédiate. Tant qu’on part des options, les valeurs n’interviennent que pour les départager : elles servent de règle de mesure appliquée à un matériau déjà donné. Prises comme point de départ, elles servent d’abord à fabriquer ce matériau."
+        ]
+      },
+      {
+        "title": "Chercher les occasions plutôt que les subir",
+        "paragraphs": [
+          "Le titre de la section où cette phrase se lit annonce le déplacement : « IDENTIFYING DECISION OPPORTUNITIES », identifier des occasions de décision. Un problème de décision se subit : il arrive, avec sa liste et souvent avec son échéance. Une occasion, elle, se cherche, et rien ne signale son arrivée. Quelqu’un qui part de ce qu’il veut atteindre peut découvrir qu’une décision est possible là où personne n’en voyait, simplement parce qu’un but resté implicite serait mieux servi autrement.",
+          "Parmi les thèmes que Keeney annonce en ouverture, le troisième énonce exactement cela : « approaches to facilitate the creation of alternatives based on stated values », des façons de faire qui aident à créer des possibilités à partir de valeurs énoncées. Le verbe compte, puisqu’il s’agit de créer et non de sélectionner. L’adjectif compte autant : les valeurs doivent avoir été formulées, mises en mots, pour pouvoir servir de matrice à autre chose.",
+          "Ce qu’il attend de ce travail, il le dit sans emphase : « The thinking process might suggest creative alternatives ». Le fil de la réflexion pourrait suggérer des possibilités inventives. Le conditionnel est de lui, et il situe bien la promesse : on est dans l’ordre du fécond, non du garanti."
+        ]
+      },
+      {
+        "title": "L’ancrage ne porte pas que sur les options",
+        "paragraphs": [
+          "Reste à comprendre pourquoi partir des possibilités déjà là rétrécit la pensée. Keeney nomme le mécanisme et ne le revendique pas : c’est l’ancrage, tel que Tversky et Kahneman l’ont décrit en 1974. Une première valeur, une fois posée, retient l’esprit dans son voisinage ; les ajustements qui suivent partent d’elle et s’en éloignent trop peu.",
+          "Son apport tient dans ce qu’il ajoute à cette idée connue. Chacun admet volontiers que la première option proposée sert de point de comparaison aux suivantes. Il tient l’effet pour « potentially far worse » que cela, parce qu’une liste n’ancre pas seulement les possibilités : elle ancre les attributs, c’est-à-dire les dimensions selon lesquelles on va les évaluer, donc les termes mêmes dans lesquels la pensée va s’exercer.",
+          "Imaginons une équipe qui compare deux logiciels sur le prix, la vitesse et le nombre de fonctions, parce que ce sont les trois lignes des fiches commerciales. Le désaccord portera sur l’importance à donner à chacune, il paraîtra sérieux, et personne ne remarquera que le temps qu’il faudra pour apprendre à s’en servir n’est nulle part. Un critère absent ne se discute pas : il ne se voit pas."
+        ]
+      },
+      {
+        "title": "Ce à quoi cette approche ne s’oppose pas",
+        "paragraphs": [
+          "Une confusion est facile ici, et elle inverse le propos. On pourrait croire que partir des valeurs revient à congédier l’appareil de calcul de l’analyse de décision, ses critères pondérés et ses fonctions chiffrées. C’est le contraire. La théorie de l’utilité multi-attributs, qui sert à représenter par une fonction des préférences portant sur plusieurs critères à la fois, figure comme le cinquième des cinq éléments de la démarche que Keeney expose, une sous-section lui est consacrée, et la procédure détaillée de la fin du chapitre part d’une telle fonction déjà évaluée.",
+          "Ce qu’il vise est plus étroit : l’analyse de décision centrée sur les alternatives déjà présentes, autrement dit l’usage qui consiste à recevoir la liste, puis à la traiter. Et l’opposition elle-même est mesurée, puisqu’il tient les deux démarches pour complémentaires dans ses dernières pages.",
+          "Ce chapitre ne remplace donc pas un outillage par un autre. Il déplace le moment où l’outillage entre en scène, et il réclame un travail avant lui, quand il n’y a encore rien à comparer."
+        ]
+      },
+      {
+        "title": "Un texte qui prescrit, et ce qui l’appuie",
+        "paragraphs": [
+          "Le volume où ce chapitre paraît porte dans son titre trois adjectifs qui séparent trois façons de parler d’une décision : descriptive, normative, prescriptive. Décrire ce que les gens font ; énoncer ce que la cohérence exigerait ; recommander une manière de s’y prendre à quelqu’un qui doit s’y prendre. Keeney annonce dès sa première page que son texte relève du troisième registre.",
+          "Cela change ce qu’on est en droit de lui demander. Ses appuis ne sont pas des expériences : ce sont des exemples professionnels qu’il rapporte lui-même, et un unique renvoi à un travail expérimental. Le chapitre n’établit donc pas que commencer par les valeurs produit de meilleures décisions ; il soutient qu’il vaut mieux s’y prendre ainsi, et il donne ses raisons de le penser.",
+          "Cette différence n’affaiblit pas la proposition, elle indique où la juger. Une recommandation de méthode s’éprouve à l’usage, sur une décision qu’on est en train de préparer. La question qu’elle pose y est simple : que se passerait-il si l’on écrivait d’abord, seul ou à plusieurs, la liste de ce qu’on cherche à obtenir, avant de regarder ce qui est sur la table ?"
+        ]
+      }
+    ],
+    "limits": [
+      "Quatre ans plus tard, Keeney a tiré de cette thèse un livre entier, Value-Focused Thinking: A Path to Creative Decisionmaking, publié par Harvard University Press en 1992. Ce que ces années lui ont ajouté, retranché ou précisé, ce sont ses quatre cents pages qui le disent : c’est là qu’il faudra les lire.",
+      "La date de naissance de l’expression « value-focused thinking » reste ouverte. Dans ce chapitre, Keeney ne la rattache à aucun texte antérieur de lui, et rien n’y indique depuis quand il la formulait ainsi. Ce sont ses publications des années précédentes qui l’apprendront.",
+      "Les appuis du chapitre sont des exemples professionnels et un unique renvoi à un travail expérimental, dont il donne la référence sans en refaire l’épreuve. Pour savoir ce qui a été mesuré, sur qui et avec quel résultat, c’est ce travail-là qu’il faudra ouvrir.",
+      "Enfin, ce chapitre n’a pas de traduction française publiée connue, et le choix des mots français n’y va pas de soi : « alternatives » est un anglicisme, retenu parce que Keeney en fait un terme d’art qu’il oppose à sa propre approche. Pour la lettre, c’est le texte anglais des pages 465 à 494 qui fait foi."
     ]
   },
   {
