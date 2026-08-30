@@ -91,3 +91,15 @@ tu écris, et elle sert uniquement à ce qu'on puisse juger le résumé.
 
 Une lacune se **déclare** (`reserves`), elle ne se comble pas. Un texte que tu n'as pas pu
 ouvrir se dit ; il ne se devine pas depuis un commentaire.
+
+Mais une lacune se déclare **après** avoir essayé de l'atteindre, jamais avant. Devant un
+texte que tu n'as pas ouvert, deux gestes sont honnêtes : abaisser ce que tu affirmes
+(`consulted: metadata-only`, une réserve, une citation écartée), ou aller ouvrir le texte
+et garder l'affirmation. Les deux rendent ta lecture exacte ; le second produit en plus un
+fait, et un fait ne se réacquiert jamais. Le premier laisse la question entière au
+contrôleur, qui la repaiera en entier.
+
+Donc : ouvrir d'abord, rétrograder ensuite, et dire alors dans `reserves` ce que tu as
+demandé, où, et comment cela a échoué. Une réserve motivée est le compte rendu exact d'une
+limite réelle ; ce n'est pas du travail terminé. Avant d'écrire une réserve, la question
+est : *est-ce que je viens de répondre à la question, ou de la rendre plus petite ?*
