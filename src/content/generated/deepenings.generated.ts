@@ -5251,6 +5251,67 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "theories-normatives-du-choix-sous-risque",
+    "lead": [
+      "Trois voitures d’occasion, ou trois offres d’emploi, peu importe. Vous préférez la première à la deuxième, la deuxième à la troisième, puis, placé devant la première et la troisième, vous choisissez la troisième. Quelqu’un vous le fait remarquer, et vous répondez : et alors ? La réponse n’a rien d’évident. Personne ne vient de vous montrer que vous vous trompiez sur les voitures, ni que l’une d’elles est mauvaise. On vous a seulement montré que vos trois préférences, prises ensemble, tournent en rond. Reste à savoir pourquoi ce serait un défaut, et au nom de quoi on pourrait exiger que vous en changiez une.",
+      "Depuis les années 1940, les théories de la décision proposent des règles de ce genre à qui doit choisir quand les résultats dépendent en partie du hasard. Elles ne se contentent pas de décrire ce que les gens font : elles disent ce qu’il conviendrait de faire. En 1988, Peter C. Fishburn consacre un chapitre entier à ces règles, à ce qui les rend recommandables, et à ce qu’elles ne recommandent pas."
+    ],
+    "sections": [
+      {
+        "title": "Des règles qu’on devrait, ou qu’on voudrait, suivre",
+        "paragraphs": [
+          "Le chapitre s’ouvre sur une définition d’une ligne : la théorie normative de la décision est, pour Fishburn, « l’étude des lignes directrices pour l’action juste ». Le mot anglais qu’il emploie, guidelines, désigne des indications et non des obligations, et la phrase suivante précise l’intention : il s’agit de formuler et de défendre des principes de comparaison et de choix, « proposed as rules that individuals or societies ought to, or perhaps would want to, follow ».",
+          "Deux choses tiennent dans cette phrase. D’abord, une théorie normative n’énonce pas seulement ses principes, elle doit les défendre : leur autorité n’est pas donnée d’avance, elle s’argumente. Ensuite, l’hésitation entre les deux verbes, ce qu’on devrait suivre ou ce qu’on voudrait peut-être suivre, laisse la question ouverte au moment même où elle est posée. Trois lignes plus bas, Fishburn range son sujet auprès des « numerous ethical and normative social theories developed during the past few millennia » : la parenté qu’il revendique est celle de la philosophie morale, pas celle de la psychologie du choix.",
+          "Un mot qu’on lui prête souvent est pourtant absent de ces pages. Le volume dans lequel il écrit s’intitule Decision Making: Descriptive, Normative, and Prescriptive Interactions, et cette partition en trois appartient à ses directeurs, qui l’exposent au premier chapitre. Fishburn, lui, écrit normative de bout en bout, et jamais prescriptive. Ce que le troisième mot recouvre se joue ailleurs dans le volume, pas chez lui."
+        ]
+      },
+      {
+        "title": "Ordre, indépendance, continuité",
+        "paragraphs": [
+          "La théorie qu’il appelle standard, celle du choix entre loteries, il ne se l’attribue pas : il la rapporte à « John von Neumann and Oskar Morgenstern (1944) in the case of risk ». Page 80, il en résume l’armature en une phrase, « The standard theory uses three axioms that formalize notions of order, independence, and continuity », et ces trois axiomes portent dans le chapitre les étiquettes A1, A2 et A3.",
+          "Pris au sens courant de leurs noms, ils demandent ceci. L’ordre veut qu’on puisse comparer deux options quelconques et que les comparaisons ne se contredisent pas entre elles : c’est là que loge la transitivité, l’interdiction du circuit qui ramène à son point de départ. L’indépendance veut que ce que deux options ont en commun ne pèse pas sur la comparaison entre elles. La continuité écarte les sauts : aucune option n’est si précieuse, ou si redoutée, qu’aucune probabilité ne puisse être mise en balance avec elle.",
+          "Ce sont des contraintes sur la forme d’un ensemble de préférences, non sur son contenu. Aucune ne dit qu’il vaut mieux être en bonne santé que malade, ni qu’un gain sûr vaut mieux qu’un pari. Elles disent comment des préférences doivent s’accorder entre elles, et c’est à cette condition que l’ensemble peut se résumer par un nombre attaché à chaque option, comme le fait la théorie standard du risque, celle de l’utilité espérée."
+        ]
+      },
+      {
+        "title": "Ce que la cohérence ne dit pas",
+        "paragraphs": [
+          "Page 82, Fishburn écrit ce que ces axiomes établissent, et la formule est nette : ils « only provide internal consistency and coherence to systems of preferences and say nothing otherwise about what ought to be preferred or chosen ».",
+          "Le contrôle porte donc sur l’ensemble, jamais sur les éléments pris un à un. Des préférences peuvent être cohérentes de bout en bout et rester, chacune, discutables. Imaginons quelqu’un qui préfère systématiquement le pari le plus risqué, quel que soit l’enjeu, et dont les choix ne se contredisent jamais : les trois axiomes n’ont rien à lui reprocher. Ils ne fournissent aucun contenu, ils vérifient un accord.",
+          "La conséquence est plus gênante qu’il n’y paraît pour une théorie qui se veut normative. Si ces règles ne disent rien de ce qu’il faudrait préférer, tout ce qu’elles recommandent tient dans l’exigence de ne pas se contredire. Il faut alors que cette exigence, à elle seule, ait valeur de devoir. C’est exactement ce que Fishburn va cesser d’accorder."
+        ]
+      },
+      {
+        "title": "Deux axiomes sur trois",
+        "paragraphs": [
+          "Le chapitre expose d’abord les arguments de rationalité qui plaident pour les axiomes standards. Puis il change de pied : « I believe that the latter situation is now changing », écrit Fishburn, avant d’annoncer qu’il va donner brièvement ses raisons de ne pas tenir la transitivité et l’indépendance pour des principes normatifs inviolables.",
+          "Le compte mérite d’être retenu : deux, et pas trois. La continuité n’est pas visée, et elle revient telle quelle dans les axiomes B1 à B3 de la théorie que Fishburn présente ensuite comme la sienne. La transitivité, de son côté, n’est qu’une partie de A1, l’axiome d’ordre. Ce n’est donc pas l’édifice entier qui est mis en cause, ce sont deux exigences nommées.",
+          "Le déplacement change pourtant le statut de tout le reste. Tant que les axiomes passent pour inviolables, un écart entre ce qu’une personne préfère et ce qu’ils prescrivent est une erreur de la personne. S’ils ne le sont plus, le même écart peut signaler que la règle demandait trop. Le chapitre ne se contente pas de l’envisager : il présente, aux pages 86 à 90, des théories construites pour s’en passer."
+        ]
+      },
+      {
+        "title": "Ce que le sigle SSB désigne",
+        "paragraphs": [
+          "Parmi ces théories figure la sienne, et il l’introduit à la troisième personne, comme il ferait d’un auteur tiers : Fishburn « refers to his theory as the SSB theory because its numerical representation for preference uses a skew-symmetric bilinear (SSB) functional », avec renvoi à un texte de 1982 qu’il signe seul.",
+          "Le sigle ne nomme pas une doctrine, il décrit une forme mathématique. Une fonction antisymétrique change de signe quand on échange ses deux arguments : ce qu’une telle représentation chiffre est une comparaison entre deux options, non une valeur attachée à chacune séparément. On voit par là comment une théorie peut renoncer à la transitivité sans renoncer à calculer, puisqu’un jeu de comparaisons deux à deux n’a pas besoin de s’aligner sur une échelle unique.",
+          "Que la continuité reste en place dans ses axiomes B1 à B3 n’est pas un détail. Fishburn ne propose pas d’abandonner la méthode axiomatique, il en propose une autre application, plus faible sur deux points et inchangée sur le troisième. La théorie demeure normative : elle continue de dire ce qu’il conviendrait de faire, elle a seulement révisé ce qu’elle tenait pour indiscutable."
+        ]
+      },
+      {
+        "title": "Sous risque, sous incertitude",
+        "paragraphs": [
+          "Le titre du chapitre nomme deux situations, et la seconde occupe presque la moitié des pages. L’usage reçu veut que les probabilités soient données dans le premier cas et pas dans le second. Fishburn ne s’attribue pas davantage cette partition : il la rapporte à Luce et Raiffa, dont le vocabulaire de 1957 a fixé les deux expressions, decision making under risk et decision making under uncertainty.",
+          "Aux sections 6 à 8, pages 90 à 95, un second jeu d’axiomes entre en scène pour les choix dont les probabilités ne sont pas fournies, et la lignée invoquée n’est plus la même : « Frank P. Ramsey (1931) and Leonard J. Savage (1954) in the case of uncertainty ». La démonstration se fait ainsi deux fois, avec la même question à chaque fois : ce que les axiomes obligent à faire, et ce qu’ils laissent entièrement libre. Qui s’arrête au risque n’a lu que la moitié du chapitre."
+        ]
+      }
+    ],
+    "limits": [
+      "Les énoncés exacts de A1, A2 et A3, comme ceux des axiomes B1 à B3 de la théorie SSB, sont dans le chapitre lui-même, à partir de la page 80, et le sens courant de leurs noms n’en donne qu’une idée. Les raisons pour lesquelles Fishburn cesse de tenir la transitivité et l’indépendance pour des principes inviolables occupent, elles, les pages 84 à 90, et aucun résumé ne les remplace. Quant à la démonstration de la théorie SSB, c’est le texte de 1982 auquel il renvoie, sous la forme Fishburn (1982b), qui la porte.",
+      "Deux textes portent la même année le même titre et le même nom d’auteur : ce chapitre des pages 78 à 98 chez Cambridge, et vingt et une pages parues chez Springer dans un volume dirigé par Kacprzyk et Roubens. Identiques, abrégé, augmenté ? Ce sont ces vingt et une pages qui le diront, et elles attendent leur lecteur.",
+      "Ce chapitre n’a pas de traduction française publiée connue : pour la lettre de Fishburn, l’anglais des pages 78 à 98 reste le seul texte. Et pour qui ira le vérifier sur l’exemplaire numérisé accessible en ligne, un avertissement utile : la reconnaissance de caractères y tronque la première ligne de la page 78. La phrase entière est sur l’image du feuillet, pas dans le fichier texte."
+    ]
+  },
+  {
     "conceptId": "transposition-analogique",
     "lead": [
       "Dans une réunion, quelqu’un dit qu’il faut « une boucle de rétroaction » sur un projet. Tout le monde acquiesce, et personne ne demande quelle grandeur est mesurée, à quelle valeur elle est comparée, ce qui est corrigé quand l’écart apparaît, ni combien de temps met la correction à faire effet. Le mot a circulé, le mécanisme est resté là d’où il vient.",

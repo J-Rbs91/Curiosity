@@ -110,6 +110,7 @@ export const deepenedConceptIds: readonly ConceptId[] = [
   "simulation-activite-future",
   "systeme-concret-systeme-construit",
   "theorie-des-perspectives",
+  "theories-normatives-du-choix-sous-risque",
   "transposition-analogique",
   "travail-collectif-collectif-de-travail",
   "zones-incertitude"
