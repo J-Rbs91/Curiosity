@@ -1,0 +1,56 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "theorie-des-perspectives",
+  "lead": [
+    "Deux personnes referment leur relevé bancaire sur le même chiffre, disons huit cents euros. La première en avait deux mille le mois dernier, la seconde en avait cent. Elles ne lisent pas le même nombre : l’une a perdu, l’autre a gagné, et personne ne s’étonnerait qu’elles ne soient pas de la même humeur. Les descriptions savantes du choix risqué faisaient pourtant l’inverse depuis longtemps : elles évaluaient la situation d’arrivée, la fortune une fois l’affaire close, soit huit cents euros dans les deux cas.",
+    "En avril 1977, dans un rapport technique signé à Eugene, en Oregon, Daniel Kahneman et Amos Tversky posent l’écart comme une hypothèse en règle, avec ses conséquences chiffrables. Ce déplacement ne relève pas de la remarque de bon sens : il modifie la forme de la courbe qui sert à calculer ce qu’un pari vaut, et donc les paris qu’on s’attend à voir accepter ou refuser. C’est cette forme, et ce qu’elle engage, qui mérite d’être regardée de près."
+  ],
+  "sections": [
+    {
+      "title": "Des changements plutôt que des états",
+      "paragraphs": [
+        "Le rapport commence par nommer ce qu’il quitte. Dès son deuxième feuillet, il rappelle que dans la description reçue, « the domain of the utility function u is final consequences (which includes one’s asset position) rather than gains or losses » : le domaine de la fonction d’utilité, ce sont les conséquences finales, position patrimoniale comprise, plutôt que des gains ou des pertes. Le domaine, ici, désigne simplement la liste des choses que la fonction accepte en entrée, c’est-à-dire ce qui est évalué. Dans cette tradition, ce qui est évalué est un état du monde décrit en entier.",
+        "La première hypothèse de la théorie des perspectives change cette liste. Ce que la fonction reçoit, écrivent les auteurs au feuillet 2-4, ce sont des variations : « The domain of the value function consists of (positive or negative) changes in wealth, that is, gains and losses », le domaine de la fonction de valeur est fait de changements de richesse, positifs ou négatifs, c’est-à-dire de gains et de pertes. Le changement de nom accompagne le changement d’objet : ce n’est plus l’utilité d’une fortune, c’est la valeur d’un écart.",
+        "La conséquence est immédiate, et c’est elle qui rend le reste intelligible. Un écart ne se mesure qu’à partir d’un endroit. Tant qu’on n’a pas dit d’où l’on compte, la description d’un choix reste incomplète : les huit cents euros du relevé ne sont ni un gain ni une perte, ils ne deviennent l’un ou l’autre qu’une fois le point de départ précisé. C’est ce point que les auteurs appellent le point de référence, et il devient une donnée du problème au même titre que les sommes en jeu."
+      ]
+    },
+    {
+      "title": "Une courbe qui se retourne au point de référence",
+      "paragraphs": [
+        "La phrase du feuillet 2-5 ne s’arrête pas là où on la cite d’ordinaire. Elle se poursuit par sa propre explication : « In contrast, we hypothesize that the value function is concave above the reference point and convex below it; that is, the marginal utility of money decreases with the distance from the reference point. » Autrement dit, l’utilité marginale de l’argent décroît à mesure qu’on s’éloigne du point de référence, et ce dans les deux sens.",
+        "Concave et convexe se disent sans mathématiques. Au-dessus du point de référence, la courbe monte de moins en moins vite : le premier euro gagné compte plus que le centième, qui compte plus que le millième. En dessous, la même chose à l’envers : la courbe descend d’abord brutalement, puis de moins en moins, si bien que le premier euro perdu pèse plus lourd que le centième. Une seule courbe, deux courbures qui se rejoignent au point de référence, et l’ensemble dessine un S allongé.",
+        "Cela implique quelque chose de précis sur les paris. Imaginons deux propositions, chacune de valeur moyenne identique. Du côté des gains, encaisser cent euros à coup sûr ou jouer à pile ou face deux cents euros contre rien : une courbe qui s’aplatit vers le haut donne l’avantage au montant certain. Du côté des pertes, payer cent euros à coup sûr ou jouer deux cents euros contre rien : la même géométrie, retournée, donne cette fois l’avantage au pari. Le goût du risque cesse alors d’être un trait de caractère stable ; il dépend du côté du point de référence où l’on se trouve."
+      ]
+    },
+    {
+      "title": "La formule que cette phrase contredit",
+      "paragraphs": [
+        "Le « In contrast » qui ouvre la citation vise une cible que le rapport vient d’écrire, deux lignes plus haut, dans sa forme la plus ramassée : « utility is a concave function of money », l’utilité est une fonction concave de l’argent. Une seule courbure, valable partout, appliquée à la quantité d’argent possédée. Une courbure de ce genre, tenue partout, revient à dire qu’une somme sûre l’emporte toujours sur un pari de même espérance.",
+        "L’hypothèse de 1977 ne l’efface pas, elle la borne. La concavité subsiste, mais du seul côté des gains, et sur un axe qui n’est plus la fortune totale. En dessous du point de référence, la courbure s’inverse. Ce qui se joue dans cette phrase n’est donc pas le rejet d’un outil, c’est la restriction de son domaine de validité et le remplacement de ce qu’il mesure.",
+        "Un détail matériel évite ici un contresens fréquent sur la référence. Le rapport est folioté par chapitre : « p. 2-5 » désigne le cinquième feuillet du chapitre 2, et non la cinquième page du volume. Le chapitre 2, celui qui porte le nom de la théorie, court du feuillet 2-1 au feuillet 2-11, et sa section 2.1, consacrée à la fonction de valeur, commence au feuillet 2-4."
+      ]
+    },
+    {
+      "title": "La pente, les pertes, les poids des probabilités",
+      "paragraphs": [
+        "Sur ce même feuillet, la propriété est énoncée sous un autre nom que celui de sa forme : celui de « steepness hypothesis », l’hypothèse de pente. La concavité au-dessus et la convexité en dessous en sont la traduction géométrique. La phrase citée décrit donc l’allure d’une courbe, elle ne fournit pas à elle seule la raison qu’on lui prête souvent.",
+        "Il faut en particulier ne pas confondre cette forme avec l’aversion aux pertes, qui est une hypothèse distincte, celle qui compare les deux versants entre eux et que le rapport résume au même feuillet par une formule ramassée : « losses loom larger than gains », les pertes pèsent plus lourd que les gains. La courbure dit comment la valeur croît à l’intérieur d’un versant ; l’aversion aux pertes dit lequel des deux versants est le plus raide. Ce sont deux affirmations séparées, portées par des paragraphes séparés, et l’une ne se déduit pas de l’autre.",
+        "La fonction de valeur n’est par ailleurs que la moitié de l’appareil. Le chapitre 2 lui consacre sa section 2.1 puis passe, à partir du feuillet 2-6, à une section 2.2 intitulée « Uncertainty Weights », les poids d’incertitude. Une perspective se juge en combinant ce que valent ses issues et le poids accordé à leur probabilité. Ce que ces poids font des probabilités relève de cette seconde section, et la phrase du feuillet 2-5 n’en dit rien."
+      ]
+    },
+    {
+      "title": "Une formulation neuve, des pièces créditées",
+      "paragraphs": [
+        "Les auteurs revendiquent leur assemblage et pas davantage. Au feuillet 2-3, la nouveauté est affirmée par une concession : « although the above formulation is new », bien que la formulation ci-dessus soit nouvelle, et la suite de la phrase renvoie à des travaux antérieurs. Ils créditent nommément Pfanzagl (1959) pour la condition de translation, Edwards (1962), Tversky (1967) et Shanteau (1975) pour le modèle bilinéaire dont ils se servent.",
+        "Le point de référence lui-même est explicitement daté d’avant eux : « the role of the reference point on the utility scale was discussed by Markowitz (1952), Edwards (1954) and Hansson (1975) ». L’idée qu’une échelle de satisfaction dépende d’un repère mobile circulait donc depuis un quart de siècle. Ce que 1977 apporte, c’est l’hypothèse de forme qui s’y ajoute, et l’ensemble cohérent qu’elle permet de construire.",
+        "Le nom, en revanche, est bien des auteurs : le chapitre 2 du rapport s’intitule « PROSPECT THEORY », et c’est le sommaire du document lui-même qui l’annonce ainsi. Sa traduction française par « théorie des perspectives » est le fait de tiers, et les sources disponibles ne disent pas lesquels."
+      ]
+    }
+  ],
+  "limits": [
+    "Ce qui fixe le point de référence, ce qui peut le déplacer et ce qui décide qu’une somme sera comptée comme un gain plutôt que comme une perte : les passages cités ici n’en disent rien, et les sources disponibles ne permettent pas de trancher. La réponse, si elle est dans ce texte, est dans les onze feuillets du chapitre 2, de 2-1 à 2-11, qu’il faudra lire en entier.",
+    "La version que tout le monde cite n’est pas celle-ci. L’article paru dans Econometrica en mars 1979, vol. 47, n° 2, p. 263-291, porte un titre légèrement différent et vingt-neuf pages de texte publié. En quels termes il reprend l’hypothèse de forme, ce qu’il en atténue ou en durcit, et ce qu’il ajoute au rapport de 1977, cet article seul le dit : c’est lui qu’il faudra ouvrir.",
+    "Markowitz (1952), Edwards (1954) et Hansson (1975) pour le rôle du point de référence, Pfanzagl (1959) pour la condition de translation, Edwards (1962), Tversky (1967) et Shanteau (1975) pour le modèle bilinéaire : ce sont les racines de la notion, et les auteurs les nomment eux-mêmes. Ce que chacun de ces textes établit au juste, seuls ces textes le portent.",
+    "Aucune traduction française publiée de ce rapport n’est connue. Les mots français dans lesquels la phrase de 1977 se lit ici sont donc un choix et non une référence : « we hypothesize » y devient « nous faisons l’hypothèse » plutôt que « nous supposons », parce que les auteurs posent là ce qu’ils entreprennent d’établir. Pour la lettre exacte, c’est l’anglais du feuillet 2-5 qui fait foi."
+  ]
+}

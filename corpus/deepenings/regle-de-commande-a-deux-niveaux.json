@@ -1,0 +1,54 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "regle-de-commande-a-deux-niveaux",
+  "lead": [
+    "Dans une réserve de pièces détachées, quelqu’un passe devant les rayons et doit trancher deux fois : faut-il repasser commande aujourd’hui, et si oui, de combien ? Les deux questions n’ont pas la même nature. La première est un déclenchement, la seconde une quantité. Et un fait très ordinaire les relie : passer une commande coûte quelque chose en soi, indépendamment de ce qu’elle contient. Le bon à établir, l’appel au fournisseur, la réception à faire, le camion qui se déplace, tout cela se paie une fois par commande, qu’elle porte sur trois pièces ou sur trois cents.",
+    "Commander chaque matin de quoi remplacer ce qui est parti la veille écarterait presque tout risque de rupture, et acquitterait ce prix fixe trois cent soixante-cinq fois dans l’année. Attendre le dernier moment l’économiserait, et laisserait le comptoir vide un jour sur dix. En 1950, à la RAND Corporation, à Santa Monica, Kenneth Arrow, Theodore Harris et Jacob Marschak consacrent quarante-sept pages à cette tension. Ce qu’ils en tirent tient en deux lignes numérotées, applicables par quelqu’un qui n’aurait rien à calculer."
+  ],
+  "sections": [
+    {
+      "title": "La règle, telle qu’elle est écrite",
+      "paragraphs": [
+        "Elle apparaît à la page 24 du rapport, sous le numéro (4.4), et elle est donnée en deux temps : d’abord la phrase qui installe les deux nombres comme on pose une convention de calcul, ensuite la consigne elle-même, composée en formule : « If y_t > s, o_t = 0 (and hence z_t = y_t), if y_t ≤ s, o_t = S − y_t (and hence z_t = S). » Les trois symboles se lisent dans la ligne même : y_t est le stock dont on dispose au moment de décider, o_t la quantité commandée, z_t le stock une fois la commande passée.",
+        "Ce qui frappe dans cette ligne, c’est ce qui y varie et ce qui n’y varie pas. La quantité commandée n’est jamais la même : elle vaut l’écart entre le niveau cible et ce qui reste en rayon, donc elle est d’autant plus grande que le stock est tombé bas. Ce qui est fixe, c’est le point d’arrivée. Chaque commande, quelle que soit sa taille, remet le stock exactement à la même hauteur. La règle ne dit donc pas de commander toujours la même quantité : elle dit de viser toujours le même niveau.",
+        "Un détail mérite d’être relevé, parce qu’il décide de ce que ferait un programme qui appliquerait la règle : le déclenchement s’écrit y_t ≤ s, c’est-à-dire au seuil ou en dessous. Un stock qui tombe exactement sur s déclenche une commande. Au-dessus du seuil, la consigne est de ne rien faire, et c’est une consigne à part entière : l’inaction y est prescrite, elle n’est pas subie."
+      ]
+    },
+    {
+      "title": "Ce que le prix d’une commande achète",
+      "paragraphs": [
+        "Rien n’oblige a priori les deux nombres à différer. On pourrait viser un niveau unique et le rétablir à chaque période, en commandant chaque fois ce qui vient de partir. Ce serait même la conduite la plus prudente, si passer une commande était gratuit. C’est cette gratuité que le rapport écarte d’emblée.",
+        "Au paragraphe 4:B, page 26, l’hypothèse est posée en toutes lettres : « we shall assume [...] that the cost of handling an order does not depend on the amount ordered. Let this cost be K, a constant ». Un coût nommé K, identique à chaque commande, qu’elle soit grosse ou minuscule. Dès lors, remonter le stock tous les jours revient à payer K tous les jours, pour des livraisons de plus en plus dérisoires. L’écart entre s et S est exactement ce qu’on accepte de laisser filer avant de payer K une nouvelle fois.",
+        "Le calcul du rapport confirme ce partage des rôles. À la page 36, l’équation (5.17), celle d’où sort l’écart entre les deux nombres, fait entrer K ; et les auteurs notent juste avant que « K does not enter into (5.15) and (5.16) », les conditions obtenues en tenant cet écart pour fixé. Dans ce modèle, le coût fixe d’une commande ne gouverne donc rien d’autre que la distance entre le seuil et la cible. La lecture que cela suggère est simple : plus une commande coûte cher à passer, plus il faut laisser le stock descendre avant de la passer."
+      ]
+    },
+    {
+      "title": "Une forme posée, deux nombres réglés",
+      "paragraphs": [
+        "Le rapport s’intitule Optimal Inventory Policy, et le mot d’optimalité y a un sens plus étroit que le titre ne le laisse croire. La forme de la règle, deux nombres et deux branches, n’est pas déduite : elle est posée à la page 24, et la phrase qui l’introduit ne la justifie pas, elle l’adopte. Ce qui est optimisé ensuite, ce sont les deux nombres à l’intérieur de cette forme.",
+        "La distinction n’a rien de scolastique. Voici les meilleures valeurs de s et de S, et voici la meilleure façon de conduire un stock, sont deux affirmations différentes, et seule la première est établie dans ces pages. Rien n’y interdit qu’une règle d’une autre forme, plus compliquée ou simplement autre, fasse mieux dans les mêmes conditions.",
+        "Procéder ainsi, choisir d’abord une forme simple puis en régler les paramètres, est une manière courante de traiter une décision qui revient période après période : on renonce à chercher dans l’ensemble de toutes les conduites imaginables, et on gagne une consigne qu’un magasinier peut tenir sans rien recalculer. Le prix de ce gain est celui qu’on vient de dire, et il est payé sciemment."
+      ]
+    },
+    {
+      "title": "Le cas où les auteurs annoncent une révision",
+      "paragraphs": [
+        "Ils indiquent eux-mêmes un endroit où leur règle cesse de convenir. À la section 7, page 41, ils signalent que (4.4) devra être modifiée si les économies réalisables sur les gros lots ne sont pas négligeables.",
+        "Ce que cela vise se comprend depuis n’importe quel comptoir : quand un fournisseur baisse son prix unitaire à partir d’une certaine quantité, ou quand un camion coûte le même prix à moitié plein qu’à ras bord, la taille de la commande cesse d’être indifférente. Le coût d’une commande ne se résume plus au K constant de la page 26, il dépend de ce qu’elle contient, et l’hypothèse tombe. Viser exactement S n’a plus alors de raison d’être : il peut valoir mieux dépasser la cible pour attraper la remise.",
+        "Cette réserve dit quelque chose de la portée de la règle en général. Elle ne vaut pas parce qu’elle décrirait les stocks tels qu’ils sont : elle vaut sous des hypothèses nommées, et chacune de ces hypothèses désigne du même coup un cas où elle ne vaut plus. Les auteurs pointent celui du gros lot ; la façon dont ils traitent l’incertitude sur la demande, dans les sections 3 à 6, en porte d’autres."
+      ]
+    },
+    {
+      "title": "Ce qui revient à ces trois-là",
+      "paragraphs": [
+        "Une confusion fréquente s’écarte à la lecture du rapport lui-même. Ses premières sections reprennent le calcul classique du lot économique, celui qui fait apparaître une racine carrée, et les auteurs prennent soin de dire à qui il revient. Page 9, sous la formule (2.11), ils écrivent : « We believe this is, in essence, the solution advanced by R. H. Wilson [10], formerly of the Bell Telephone Company; and also by other writers; see [1]. » Ce qui leur appartient en propre est ailleurs, dans les sections 3 à 6, là où la demande cesse d’être connue d’avance et où le stock devient une réponse à ce qu’on ignore. La règle à deux niveaux appartient à cette partie du texte.",
+        "La pièce, elle, s’identifie sans peine. Sa page de titre porte « OPTIMAL INVENTORY POLICY by Kenneth Arrow, Theodore Harris, Jacob Marschak », le numéro P-189 et la mention d’une révision au 16 novembre 1950, sous le nom de la RAND Corporation, à Santa Monica. La première page de texte porte les deux dates : 5 septembre 1950 pour la version d’origine, 16 novembre pour celle qui circule. Les trois noms sont là, dans cet ordre, et aucun des trois ne signe seul."
+      ]
+    }
+  ],
+  "limits": [
+    "Que la forme à deux niveaux soit la meilleure de toutes celles qu’on pourrait écrire n’est pas démontré dans ces quarante-sept pages : elle y est posée, puis réglée. La littérature de synthèse situe la démonstration dix ans plus tard, dans un article de Scarf de 1960, « The Optimality of (S, s) Policies in the Dynamic Inventory Problem ». À quelles conditions cette optimalité tient, ce sont ces pages-là qui le disent, et c’est là qu’il faudra aller.",
+    "Sous le même titre et les mêmes trois noms, un article a paru dans Econometrica en juillet 1951, à partir de la page 250. Ce n’est pas le texte du rapport, qui est plus long. Ce que l’article resserre, écarte ou reformule, et la forme exacte qu’y prend la règle, se lisent dans ces pages d’Econometrica.",
+    "Le rapport est écrit en anglais et aucune traduction française publiée n’en est répertoriée : les phrases rendues ici en français le sont pour l’occasion. La lettre de la règle reste celle des pages anglaises du P-189, que l’exemplaire numérisé donne à lire en entier."
+  ]
+}
