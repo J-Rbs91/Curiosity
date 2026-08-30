@@ -5,6 +5,112 @@ coup d'œil ce que la précédente a fait, sur quelle branche elle l'a laissé, 
 reprendre. **Les scripts priment sur ce fichier** : il dit ce qui a été tenté et pourquoi, ils
 disent ce qui est.
 
+## Passage 08/15 — 2026-08-30
+
+- branche      : `claude/zen-johnson-u4gu6o` (imposée par la session, pas `main`). **Le travail du passage 07 est fusionné dans `main`** (PR [#84](https://github.com/J-Rbs91/Curiosity/pull/84), commit de merge `bcf27c5`), et cette branche partait de `main` à jour, au commit `d281b23`, à zéro commit d'écart : rien n'a été refait. Pull request vers `main` ouverte à la clôture. Tant qu'elle n'est pas fusionnée, **la nuit suivante reprend depuis cette branche**.
+- phase        : 2 (approfondissements). **Deuxième nuit de phase 2, et deuxième nuit pleine.** La condition A est fausse depuis le passage 06, aucun domaine n'étant à zéro carte validée à l'audit ; `corpus:deepen` listait dix-huit cartes sans approfondissement, la condition B était donc vraie et elle décidait seule. Aucune ouverture, aucune nouvelle carte, aucune recherche documentaire.
+- domaine      : aucun. La file du script traverse les domaines : les seize cartes servies relèvent de cinq domaines (science de la décision 5, operations management 3, sociologie du travail 3, psychologie du travail 3, économie comportementale 2).
+- validées     : 0 — une nuit de phase 2 n'écrit aucune carte. Le corpus reste à **100 cartes validées**, inchangé.
+- en review    : 0
+- rejetées     : 0
+- approfondies : **16 — deux lots pleins de huit**, le plafond de la nuit pour la deuxième fois. Lot 1 : `heuristiques-de-jugement`, `mecanismes-de-l-objectif`, `mobilite-et-segmentation-de-l-emploi`, `niveaux-de-rationalite-economique`, `normatif-descriptif-prescriptif`, `objectif-specifique-et-difficile`, `penalite-de-rupture`, `penser-a-partir-des-valeurs`. Lot 2 : `precarite-des-trajectoires`, `regle-de-commande-a-deux-niveaux`, `regle-lineaire-de-decision`, `savoir-ouvrier-mis-en-regles`, `seuil-d-insatisfaction-salariale`, `seuils-de-rupture-et-d-ajustement`, `theorie-des-perspectives`, `theories-normatives-du-choix-sous-risque`. **Seize agents, seize textes, aucun refus de projection, aucun renvoi.** Les seize contrôles de projection sont verts à l'état rendu ; **deux textes y étaient passés en cours d'écriture** (`mobilite-et-segmentation-de-l-emploi` et `normatif-descriptif-prescriptif`), et les deux se sont corrigés en retirant les guillemets de questions rhétoriques qu'un lecteur aurait prises pour des paroles d'auteur, jamais en retirant un contenu. **C'est la troisième fois que ce dépôt observe qu'un contrôle littéral rend un service que sa règle ne visait pas.** La file passe de **dix-huit à deux**, et les approfondissements projetés de 82 à **98** (143 130 mots, 1 461 en moyenne).
+- contrôles    : validate 0 erreur (104 enregistrements, 100 validés, 81 avertissements) · build à jour, `git diff --exit-code src/content/generated/` **propre** · test 482/0 · lint 0 · audit inchangé, ce qui est le résultat attendu d'une nuit qui ne crée aucune carte
+- commit       : `55faa4d` pour la projection du second lot ; la nuit a été commitée par étapes, huit fois, chaque texte poussé dès qu'il tenait debout.
+- bloqué par   : rien de documentaire. **Un écart trouvé et corrigé au démarrage**, qui n'est pas de cette nuit : voir plus bas. Le serveur MCP `documentary` était toujours en échec de connexion, quatrième nuit consécutive, sans conséquence ici, un `corpus-deepener` ne menant aucune recherche documentaire.
+- la nuit suivante prend : **phase 2 encore, et les deux dernières cartes de la file**, `trois-etats-psychologiques-critiques` et `trois-sigmas-arbitrage-de-cout`. La condition B reste vraie tant qu'elles n'ont pas leur texte, et elle décide seule : ce sera donc une nuit courte, un seul lot de deux agents. **C'est la conséquence assumée du plafond de deux lots**, respecté cette nuit plutôt que débordé pour vider la file d'un coup. **La nuit d'après, la condition C sera vraie pour la première fois** et la routine passera en phase 3, enrichissement d'un domaine par nuit en rotation. Le chantier D de `RESTE-A-FAIRE.md` dit par où elle commence.
+
+### Ce que cette nuit a établi, en une phrase
+
+La routine sert seize approfondissements pour la deuxième nuit de suite, ramène à deux un
+retard qui en comptait dix-huit au lever du jour, et referme le chantier des
+approfondissements à la carte près.
+
+### L'écart trouvé au démarrage, et il n'était pas visible de la CI
+
+C'est le résultat de méthode de la nuit, et il ne vient pas du travail de la nuit.
+
+**Le fichier généré des approfondissements avait divergé de son enregistrement maître.** La
+toute première exécution de `npm run corpus:deepen`, avant qu'un seul agent ne soit lancé, a
+rendu `src/content/generated/deepenings.generated.ts` modifié : deux paragraphes de
+`effet-de-cadrage`, où le maître écrit « options » et où le généré portait encore
+« programmes ». Le maître a été corrigé au commit de clôture du passage 07 (`c84eac6`) **sans
+que `corpus:deepen` soit rejoué**, et le passage 07 a donc fermé sur un `git diff --exit-code`
+qui ne portait que sur ce que `corpus:build` avait reprojeté.
+
+**Et la CI ne pouvait pas l'attraper.** Son étape « Vérifier que la projection est à jour »
+(`.github/workflows/ci.yml`, et de même `pages.yml`) lance `npm run corpus:build` puis
+`git diff --exit-code src/content/generated/` : **elle ne lance jamais `corpus:deepen`**. Le
+même fichier généré est écrit par deux projecteurs et n'est vérifié que par un. Une divergence
+d'approfondissement peut donc traverser une CI verte, et celle-ci l'a fait.
+
+**Corrigé pour ce qu'il était** (commit `8470301`, reprojection), **et non pour ce qui l'a
+laissé passer.** Ajouter `corpus:deepen` à l'étape de CI sort du périmètre documentaire que la
+§2 de la routine assigne à la nuit, laquelle prescrit que la première condition vraie décide et
+décide seule. C'est le même motif que pour le démarrage du serveur MCP, et le même statut :
+une correction courte, à décider hors routine. **Elle est écrite ici pour ne pas être
+redécouverte par la nuit qui la repaiera.**
+
+### Le fait d'atelier de la nuit : les seize agents ont rendu seuls
+
+**Aucun « écris maintenant » n'a été nécessaire, pour la première fois depuis le passage 03.**
+Les seize agents ont écrit et rendu sans relance, en quatre à sept minutes chacun, le lot 2
+étant sensiblement plus lent que le lot 1. La contre-mesure de surveillance, décisive aux
+passages 04 et 06 et coûteuse au passage 07, **n'a servi à rien cette nuit et n'a rien coûté
+non plus** : elle n'a pas été déclenchée. Le tableau se lit maintenant sur quatre nuits, et il
+sépare nettement les nuits d'ouverture, où l'agent lit des textes, des nuits de phase 2, où il
+ne lit que le dépôt.
+
+### Un piège du commit par étapes, payé cette nuit et facile à repayer
+
+**Un fichier d'approfondissement existe sur le disque avant que son agent ait fini de
+l'écrire**, et un commit déclenché par la présence du fichier capture un état intermédiaire.
+Six des seize textes ont été commités une première fois dans un état non final, puis
+recommités dans leur état rendu : `mecanismes-de-l-objectif`, `niveaux-de-rationalite-economique`,
+`normatif-descriptif-prescriptif`, `objectif-specifique-et-difficile`, `penalite-de-rupture`,
+`penser-a-partir-des-valeurs`. **Rien n'a été perdu**, la projection finale et le
+`git diff --exit-code` de clôture le garantissent, et chaque état intermédiaire était lui-même
+un texte projetable. Mais un commit par étapes doit se déclencher **sur le rendu de l'agent**,
+jamais sur l'apparition de son fichier, et un lot qui s'arrêterait entre les deux laisserait un
+texte tronqué projeté.
+
+### Ce que les seize textes ont refusé d'écrire, et c'est encore le meilleur signe
+
+Le trait le plus constant du lot est le traitement des sources en `metadata-only`, nommées par
+ce qu'elles détiennent et jamais par ce qu'elles diraient : l'article d'*Econometrica* de 1979
+pour `theorie-des-perspectives`, dont l'écart d'adverbes relevé au contrôle n'est pas affirmé
+mais donné comme une raison d'ouvrir l'article ; celui d'*Econometrica* pour
+`penalite-de-rupture` et `regle-de-commande-a-deux-niveaux` ; la version de *Management
+Science* d'octobre 1955 pour `regle-lineaire-de-decision` ; l'ouvrage de Keeney de 1992 pour
+`penser-a-partir-des-valeurs` ; l'article de Freeling de 1984 pour
+`normatif-descriptif-prescriptif`, dont l'antériorité est rapportée d'après Baron sans que rien
+n'y soit lu.
+
+**Trois textes ont refusé de citer ce qu'ils ne pouvaient citer que sur l'OCR**, et l'ont écrit
+plutôt que de le taire : `savoir-ouvrier-mis-en-regles` paraphrase la page 38 de Taylor sans
+guillemets et renvoie au fac-similé pour le mot à mot ; `precarite-des-trajectoires` développe
+sans l'attribuer une idée que seule la couche texte porte ; `mobilite-et-segmentation-de-l-emploi`
+retire les guillemets d'une question rhétorique que le contrôle signalait, plutôt que de la
+faire passer pour une parole d'auteur.
+
+**Deux textes ont rendu à un auteur ce que la carte ne pouvait pas montrer, et c'est le
+service propre de ce format** : `seuil-d-insatisfaction-salariale` restitue la restriction
+« par la plupart des sujets », que le plafond de 170 caractères du résumé avait fait tomber au
+passage 04, et le passage 04 l'avait déclaré comme une correction non appliquée faute de place.
+**Une réserve écrite au journal il y a quatre nuits a donc été payée par l'approfondissement**,
+sans que personne n'ait eu à la rechercher. `theories-normatives-du-choix-sous-risque` établit
+de son côté que le mot « prescriptive » n'est pas de Fishburn : la trichotomie du titre du
+volume revient à ses directeurs, et c'est exactement la carte que le même lot a servie sous
+`normatif-descriptif-prescriptif`.
+
+### La faiblesse structurelle, inchangée, et son échéance est maintenant datée
+
+**Les seize textes déclarent, presque tous, l'absence de source secondaire ouverte**, et ils
+l'écrivent dans leurs `limits`. C'est le même constat que le passage 07, pour la même raison :
+un `corpus-deepener` n'ouvre aucune source et n'en ajoute aucune. **Cette dette ne se paiera
+qu'en phase 3**, et la phase 3 commence dans deux nuits : c'est la première fois que cette
+échéance est datée plutôt que reportée. Le chantier D de `RESTE-A-FAIRE.md` en tient la liste
+avec l'accès déjà constaté pour chaque texte.
+
 ## Passage 07/15 — 2026-08-29
 
 - branche      : `claude/zen-johnson-a8t77x` (imposée par la session, pas `main`). **Le travail du passage 06 est fusionné dans `main`** (PR [#82](https://github.com/J-Rbs91/Curiosity/pull/82), commit de merge `973db4d`), et cette branche partait de `main` à jour, à ce commit : rien n'a été refait. Pull request [#83](https://github.com/J-Rbs91/Curiosity/pull/83) vers `main`, ouverte à la clôture, **puis fusionnée dans `main`** le 29 août à 06h35 UTC, commit de merge `f72ddc1`, CI verte sur les trois checks (`corpus`, `app`, `gitleaks`). **La nuit suivante repart donc de `main`**, et non de cette branche : tout le travail du passage 07 y est.

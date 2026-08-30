@@ -23,18 +23,19 @@ script ne peut pas dire : quel travail est possible aujourd'hui, ce qu'il coûte
 
 | chantier | volume | recherche documentaire ? | état |
 |---|---|---|---|
-| **A.** Approfondissements | 18 cartes | non | **ouvert, mais il a reculé de moitié le 29 août 2026** |
+| **A.** Approfondissements | **2 cartes** | non | **ouvert, et à un lot de deux agents de sa fermeture** |
 | **B.** File de la sociologie des organisations | 25 entrées | oui, cartographie déjà faite | ouvert |
 | **C.** Domaines vides | **aucun** | — | **fermé le 28 août 2026** |
 | **D.** Reprises courtes de cinq domaines instruits | 14 textes | oui, accès déjà constaté | ouvert |
 
 Le chantier A s'était vidé le 21 août, il s'est rouvert et creusé pendant cinq lots d'ouverture
-consécutifs jusqu'à trente-quatre cartes le 28 août, **et le 29 il recule pour la première fois** :
-le passage 07 de la routine nocturne, première nuit de phase 2, en sert **seize en une nuit**, deux
-lots pleins de huit, qui est son plafond. **Dix-huit cartes restent.** Le chantier demeure le plus
-gros du dépôt et le seul que la routine ait à prendre, le chantier C étant clos, mais il ne
-représente plus qu'un peu plus d'une nuit pleine. **La file est celle de `npm run corpus:deepen`,
-pas celle de ce fichier.**
+consécutifs jusqu'à trente-quatre cartes le 28 août, et **deux nuits de phase 2 l'ont ramené à
+deux** : seize approfondissements le 29 août au passage 07, seize de plus le 30 au passage 08,
+deux lots pleins de huit chaque fois, qui est le plafond d'une nuit. **Deux cartes restent**,
+`trois-etats-psychologiques-critiques` et `trois-sigmas-arbitrage-de-cout`. Le chantier reste le
+seul que la routine ait à prendre, le chantier C étant clos, mais il ne vaut plus qu'un lot de
+deux agents : **il se fermera au passage 09, et la routine passera en phase 3 au passage 10.**
+**La file est celle de `npm run corpus:deepen`, pas celle de ce fichier.**
 
 **Le chantier C est fermé.** Il a perdu un domaine le 22 août, `systems-thinking`, un second le 23,
 `decision-science`, un troisième le 25, `operations-management`, un quatrième le 26,
@@ -53,10 +54,11 @@ ouverture qui n'aura pas lieu.
 # A. Les approfondissements
 
 **Vidé le 21 août 2026, rouvert le 23, doublé le 25, encore grossi les 26, 27 et 28, réduit de
-moitié le 29.** `corpus:deepen` projette désormais **82 approfondissements, 119 639 mots, 1 459 en
-moyenne**, et sa fin de sortie liste **dix-huit cartes** : cinq de la science de la décision,
-quatre de l'operations management, quatre de la psychologie du travail, trois de la sociologie du
-travail et deux de l'économie comportementale.
+moitié le 29, ramené à deux le 30.** `corpus:deepen` projette désormais **98 approfondissements,
+143 130 mots, 1 461 en moyenne**, et sa fin de sortie ne liste plus que **deux cartes**,
+`trois-etats-psychologiques-critiques` en psychologie du travail et
+`trois-sigmas-arbitrage-de-cout` en operations management. **Neuf domaines sur onze sont servis
+intégralement.**
 
 C'est le seul écart actuel du corpus entre ce qui est validé et ce qui est servi, et il se comble
 par `/corpus-deepen`, sans aucune recherche documentaire : la matière est la carte elle-même, sa
@@ -66,11 +68,35 @@ rend au lecteur.** Et depuis la fermeture du chantier C, le 28 août, **c'est le
 nocturne ait à prendre** : sa §2 fait décider la première condition vraie, aucun domaine n'est plus
 vide, et la file du script est donc ce qui commande.
 
-**Ce qu'une nuit de phase 2 rend, mesuré une fois.** Le passage 07 a servi seize cartes : deux lots
-de huit, seize agents lancés en parallèle, environ cinq minutes par agent, aucun refus de
-projection et aucun renvoi. Seize est le plafond que la routine se donne, et **il est atteignable
-en une nuit** : le reste du chantier vaut donc une nuit pleine et une nuit courte, ce qui le rend
-prévisible pour la première fois.
+**Ce qu'une nuit de phase 2 rend, mesuré deux fois.** Les passages 07 et 08 ont servi seize cartes
+chacun : deux lots de huit, seize agents lancés en parallèle, quatre à sept minutes par agent,
+aucun refus de projection et aucun renvoi ni l'une ni l'autre nuit. Seize est le plafond que la
+routine se donne, et **il est atteignable en une nuit, deux nuits de suite**. Ce qui reste vaut un
+lot de deux agents.
+
+**Et les agents ont rendu seuls au passage 08.** Aucun « écris maintenant » n'a été nécessaire,
+pour la première fois depuis le passage 03 : la surveillance de la taille du fichier de sortie,
+décisive aux passages 04 et 06 et coûteuse au passage 07, n'a pas eu à être déclenchée. Le
+tableau se lit maintenant sur quatre nuits et il sépare les nuits d'ouverture, où l'agent lit des
+textes du dehors, des nuits de phase 2, où il ne lit que le dépôt.
+
+**Un piège du commit par étapes, payé le 30 août.** Un fichier d'approfondissement existe sur le
+disque **avant** que son agent ait fini de l'écrire, et un commit déclenché par la présence du
+fichier capture un état intermédiaire : six des seize textes ont été commités une première fois
+dans un état non final, puis recommités dans leur état rendu. Rien n'a été perdu, la projection
+finale et le `git diff --exit-code` de clôture le garantissent. **Mais un commit par étapes se
+déclenche sur le rendu de l'agent, jamais sur l'apparition de son fichier**, et un lot interrompu
+entre les deux laisserait un texte tronqué projeté.
+
+**La projection des approfondissements n'est vérifiée par aucune CI, et c'est un trou de contrôle
+constaté le 30 août.** L'étape « Vérifier que la projection est à jour » de
+`.github/workflows/ci.yml`, et de même celle de `pages.yml`, lance `corpus:build` puis
+`git diff --exit-code src/content/generated/` : **elle ne lance jamais `corpus:deepen`**. Le même
+fichier généré est écrit par deux projecteurs et n'est vérifié que par un. Une divergence
+d'approfondissement traverse donc une CI verte, et l'une l'a fait, entre le commit de clôture du
+passage 07 et le démarrage du passage 08. Elle a été corrigée par reprojection ; **le trou de
+contrôle, lui, reste ouvert**, et sa correction est courte : ajouter `npm run corpus:deepen` à
+cette étape, dans les deux workflows.
 
 **La file n'est pas tenue ici.** `npm run corpus:deepen` l'affiche en fin de sortie, et c'est
 elle qui fait foi.

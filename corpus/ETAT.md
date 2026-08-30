@@ -1,4 +1,4 @@
-# État du corpus — 29 août 2026
+# État du corpus — 30 août 2026
 
 Écrit sur le disque parce qu'une session a déjà été coupée en cours de route : ce fichier
 existe pour qu'une reprise reparte des fichiers, et non de la mémoire de quelqu'un.
@@ -7,11 +7,10 @@ Ce fichier dit ce que le corpus **est**. Ce qui lui **manque**, et par quel bout
 est dans [`corpus/RESTE-A-FAIRE.md`](RESTE-A-FAIRE.md).
 
 `npm run corpus:validate` : **104 enregistrements, 100 validés, 0 erreur, 81 avertissements.**
-`npm run corpus:deepen` : **82 approfondissements pour 100 cartes validées**, 119 639 mots,
-1 459 en moyenne. Fin de sortie : **dix-huit cartes sans approfondissement**, cinq de la science
-de la décision, quatre de l'operations management, quatre de la psychologie du travail, trois de
-la sociologie du travail et deux de l'économie comportementale, et c'est le seul écart entre
-validé et servi.
+`npm run corpus:deepen` : **98 approfondissements pour 100 cartes validées**, 143 130 mots,
+1 461 en moyenne. Fin de sortie : **deux cartes sans approfondissement**,
+`trois-etats-psychologiques-critiques` et `trois-sigmas-arbitrage-de-cout`, et c'est le seul
+écart entre validé et servi.
 `npm test` : **482 tests, 0 échec.** `npm run lint` et `npm run corpus:build` : sans erreur.
 
 **Les cent cartes affichent leur citation en français.** Vingt-six d'entre elles la montraient
@@ -40,24 +39,125 @@ candidat mal placé part désormais chez un voisin ouvert, ou ne s'instruit pas.
 | Théorie de la mesure / KPI | 4 | 9 | 9 |
 | Cybernétique | 4 | 12 | 12 |
 | Systems Thinking | 3 | 7 | 7 |
-| Science de la décision | 2 | 8 | **3** |
-| Operations Management | 3 | 8 | **4** |
-| Psychologie du travail | 2 | 7 | **3** |
-| Sociologie du travail | 1 | 7 | **4** |
-| Économie comportementale | 1 | 4 | **2** |
+| Science de la décision | 2 | 8 | 8 |
+| Operations Management | 3 | 8 | **7** |
+| Psychologie du travail | 2 | 7 | **6** |
+| Sociologie du travail | 1 | 7 | 7 |
+| Économie comportementale | 1 | 4 | 4 |
 
-**Dix-huit cartes validées attendent leur approfondissement**, contre trente-quatre au 28 août.
-L'écart s'était refermé le 21 août, il s'était rouvert et creusé pendant cinq lots d'ouverture
-consécutifs, et **le passage 07 de la routine nocturne en a repris la moitié en une nuit**, le 29
-août : seize approfondissements écrits, deux lots pleins de huit, qui est le plafond d'une nuit.
-`npm run corpus:deepen` les liste en fin de sortie : **c'est la file, et elle fait foi contre ce
-fichier.** Aucun domaine n'étant plus vide, **c'est le seul chantier que la routine ait à
-prendre**, et il lui reste un peu plus d'une nuit pleine.
+**Deux cartes validées attendent leur approfondissement**, contre dix-huit au 29 août et
+trente-quatre au 28. L'écart s'était refermé le 21 août, il s'était rouvert et creusé pendant
+cinq lots d'ouverture consécutifs, et **deux nuits de phase 2 l'ont vidé aux deux tiers puis à
+la carte près** : seize approfondissements le 29 août au passage 07, seize de plus le 30 au
+passage 08, deux lots pleins de huit chaque fois, qui est le plafond d'une nuit.
+`npm run corpus:deepen` liste les deux restantes en fin de sortie : **c'est la file, et elle
+fait foi contre ce fichier.** Aucun domaine n'étant plus vide, **c'est le seul chantier que la
+routine ait à prendre**, et il ne lui reste qu'un lot de deux agents. **Neuf domaines sur onze
+sont désormais servis intégralement**, chaque carte validée y portant son approfondissement.
 
 **Les quatre familles sont complètes.** « Comprendre le pilotage » et « Comprendre le travail
 réel » l'étaient depuis le 23 août, « Comprendre la production et les systèmes » depuis le 25, et
 « Comprendre les humains et les organisations » l'est depuis le 28 : elle était la dernière
 incomplète, avec trois domaines fermés sur quatre au 25 août.
+
+# 0. Seize approfondissements — lot du 30 août 2026 (passage 08), projeté
+
+**Deuxième nuit de phase 2 de la routine nocturne, et deuxième lot du dépôt qui ne crée aucune
+carte.** La condition A était fausse, aucun domaine n'étant à zéro carte validée à l'audit ;
+`corpus:deepen` listait dix-huit cartes sans approfondissement, la condition B était donc vraie
+et elle décidait seule. Aucune ouverture, aucune nouvelle carte, aucune recherche documentaire.
+
+**Seize agents, seize textes, aucun refus de projection, aucun renvoi.** La file passe de
+dix-huit à **deux**, et les approfondissements projetés de 82 à **98**.
+
+| lot | cartes servies |
+|---:|---|
+| 1 | `heuristiques-de-jugement`, `mecanismes-de-l-objectif`, `mobilite-et-segmentation-de-l-emploi`, `niveaux-de-rationalite-economique`, `normatif-descriptif-prescriptif`, `objectif-specifique-et-difficile`, `penalite-de-rupture`, `penser-a-partir-des-valeurs` |
+| 2 | `precarite-des-trajectoires`, `regle-de-commande-a-deux-niveaux`, `regle-lineaire-de-decision`, `savoir-ouvrier-mis-en-regles`, `seuil-d-insatisfaction-salariale`, `seuils-de-rupture-et-d-ajustement`, `theorie-des-perspectives`, `theories-normatives-du-choix-sous-risque` |
+
+Les seize cartes relèvent de cinq domaines : cinq en science de la décision, trois en operations
+management, trois en sociologie du travail, trois en psychologie du travail, deux en économie
+comportementale. **La science de la décision, la sociologie du travail et l'économie
+comportementale sont désormais servies intégralement**, et il ne manque plus qu'une carte à
+l'operations management et une à la psychologie du travail.
+
+## Ce que le contrôle a attrapé
+
+**Deux textes seulement**, et ni l'un ni l'autre n'était une erreur documentaire. Sur
+`mobilite-et-segmentation-de-l-emploi` et sur `normatif-descriptif-prescriptif`, le comparateur
+a signalé des questions rhétoriques présentées entre guillemets. Les guillemets ont été retirés,
+le contenu gardé : un lecteur pouvait les prendre pour des paroles d'auteur. **C'est la
+troisième fois que ce dépôt observe qu'un contrôle littéral rend un service que sa règle ne
+visait pas**, après le renvoi sur « la carte » du 21 août et la phrase amputée de ses
+parenthèses chez Kergoat le 29.
+
+Le piège des guillemets français à espaces insécables, qui avait touché trois textes le 29 août,
+**ne s'est pas reproduit**.
+
+## L'écart trouvé avant le premier agent, et que la CI ne pouvait pas voir
+
+Il n'est pas de cette nuit, et c'est pourquoi il compte.
+
+La toute première exécution de `npm run corpus:deepen` a rendu
+`src/content/generated/deepenings.generated.ts` modifié, avant qu'un seul agent ne soit lancé :
+deux paragraphes de `effet-de-cadrage` où le maître écrit « options » et où le généré portait
+encore « programmes ». **Le maître a été corrigé au commit de clôture du passage 07 sans que
+`corpus:deepen` soit rejoué.**
+
+**La CI ne pouvait pas l'attraper.** Son étape « Vérifier que la projection est à jour »
+(`.github/workflows/ci.yml`, et de même `pages.yml`) lance `corpus:build` puis
+`git diff --exit-code src/content/generated/`, et **jamais `corpus:deepen`**. Le même fichier
+généré est écrit par deux projecteurs et n'est vérifié que par un : une divergence
+d'approfondissement traverse donc une CI verte, et celle-ci l'a fait. L'écart est corrigé par
+reprojection ; **le trou de contrôle ne l'est pas**, et il est consigné au journal du passage 08
+comme une correction courte à décider hors routine, au même titre que l'ordre de démarrage du
+serveur MCP.
+
+## Les réserves conservées
+
+**Les seize textes déclarent, presque tous, l'absence de source secondaire ouverte**, et ils
+l'écrivent dans leurs `limits`. C'est la même faiblesse structurelle que les lots d'ouverture ont
+léguée, et un approfondissement ne peut pas la corriger : il n'ouvre aucune source.
+
+Les sources `metadata-only` ont de nouveau été tenues à leur place, nommées par ce qu'elles
+détiennent et jamais par ce qu'elles diraient : les articles d'*Econometrica* de 1951 et de 1979,
+la version de *Management Science* d'octobre 1955, l'ouvrage de Keeney de 1992, l'article de
+Freeling de 1984 dont l'antériorité est rapportée d'après Baron sans que rien n'y soit lu.
+
+**Trois textes ont refusé de citer ce que seule une couche océrisée porte**, et l'ont écrit :
+`savoir-ouvrier-mis-en-regles` paraphrase la page 38 de Taylor sans guillemets et renvoie au
+fac-similé, `precarite-des-trajectoires` développe sans l'attribuer une idée que l'enregistrement
+avait écartée pour ce motif, `mobilite-et-segmentation-de-l-emploi` fait de même.
+
+## Ce que ce format rend, et que la carte ne pouvait pas montrer
+
+Deux cas valent d'être gardés, parce qu'ils montrent à quoi sert le second étage.
+
+**`seuil-d-insatisfaction-salariale` restitue la restriction « par la plupart des sujets »**, que
+le plafond de 170 caractères du résumé avait fait tomber au passage 04. Ce passage l'avait
+déclarée comme une correction signalée et non appliquée faute de place. **Une réserve écrite au
+journal quatre nuits plus tôt a donc été payée par l'approfondissement**, sans que personne
+n'ait eu à la rechercher.
+
+**`theories-normatives-du-choix-sous-risque` établit que le mot « prescriptive » n'est pas de
+Fishburn** : la trichotomie du titre du volume revient à ses directeurs. C'est exactement la
+carte que le même lot a servie sous `normatif-descriptif-prescriptif`, et les deux textes se
+tiennent sans se contredire.
+
+## Les angles morts qui commandent le prochain passage
+
+**Le retard d'approfondissement tient en deux cartes**, `trois-etats-psychologiques-critiques` et
+`trois-sigmas-arbitrage-de-cout`. La condition B restera vraie au passage 09, qui sera donc une
+nuit courte, un seul lot de deux agents. **La condition C sera vraie au passage 10, et la routine
+passera en phase 3 pour la première fois.**
+
+**La dette de sources secondaires a désormais une échéance datée** plutôt que reportée : deux
+nuits. Le chantier D de `RESTE-A-FAIRE.md` en tient la liste avec l'accès déjà constaté pour
+chaque texte, et c'est par là que la première nuit de phase 3 commence.
+
+**Le serveur MCP `documentary` était de nouveau en échec de connexion**, quatrième passage
+consécutif à le constater. Sans conséquence sur une nuit qui ne mène aucune recherche ; **une
+nuit de phase 3 s'en trouvera ralentie**, et il n'en reste que deux avant.
 
 # 0. Seize approfondissements — lot du 29 août 2026 (passage 07), projeté
 
