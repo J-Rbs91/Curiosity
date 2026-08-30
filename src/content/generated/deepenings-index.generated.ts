@@ -62,6 +62,7 @@ export const deepenedConceptIds: readonly ConceptId[] = [
   "gestion-du-risque-fatigue",
   "glissements-de-l-action",
   "gouvernement-par-les-chiffres",
+  "heuristiques-de-jugement",
   "histoire-naturelle-des-reseaux",
   "inertie-structurelle-et-selection",
   "isomorphisme-institutionnel",

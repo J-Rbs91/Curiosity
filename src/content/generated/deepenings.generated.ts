@@ -2562,6 +2562,60 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "heuristiques-de-jugement",
+    "lead": [
+      "Un chef de projet dit si la livraison tiendra la date. Un médecin estime les chances qu’un traitement agisse. Un jury pressent qu’un candidat s’en sortira. Aucun d’eux ne dispose d’une table de fréquences, personne ne calcule quoi que ce soit, et pourtant la réponse vient en quelques secondes, souvent assortie d’une belle assurance. D’où sort-elle ? Amos Tversky et Daniel Kahneman ne demandent pas d’abord si elle est juste. Ils demandent par quelle opération elle a été obtenue.",
+      "Leur réponse tient en peu de mots : la tâche difficile a été ramenée à une opération plus simple, et c’est cette opération là qui a été effectuée. Non par paresse ni par défaut d’attention. C’est ce qui permet de répondre du tout, et cela réussit assez souvent pour qu’on ne s’en aperçoive pas. Le même mouvement, pourtant, produit dans certaines situations des écarts qui ne s’annulent pas, parce qu’ils penchent toujours du même côté."
+    ],
+    "sections": [
+      {
+        "title": "Ramener une tâche complexe à quelque chose de simple",
+        "paragraphs": [
+          "Le rapport où cette idée est posée s’ouvre sur un constat, puis sur une question. Le constat : « Most important decisions are based on beliefs concerning the likelihood of uncertain events », les décisions qui comptent reposent sur des croyances relatives à la vraisemblance d’événements incertains. La question suit immédiatement : « How do people assess the likelihood of an uncertain event or the value of an uncertain quantity? » Comment évalue-t-on la vraisemblance d’un événement incertain, ou la valeur d’une quantité incertaine ?",
+          "Deux tâches, donc, et non une seule. La thèse les tient ensemble : « on s’appuie sur un nombre limité de principes heuristiques par lesquels on réduit les tâches complexes […] à des opérations de jugement plus simples. » Ce que les points de suspension escamotent est précisément ce couple : dans la phrase entière, les tâches complexes sont celles qui consistent à « assessing likelihoods and predicting values », évaluer des vraisemblances et prédire des valeurs. Dire si un retard est probable, et avancer un chiffre de jours, sont deux exercices que la même thèse recouvre.",
+          "Le mot heuristique, ici, ne désigne ni un défaut ni un raccourci fautif : il désigne une manière de s’y prendre. Et la construction de la phrase maintient les personnes en position de sujet. Ce sont elles qui s’appuient, elles qui réduisent. Le principe n’agit pas tout seul dans une tête ; il est ce sur quoi quelqu’un s’appuie pour répondre à une question à laquelle il ne saurait pas répondre autrement."
+        ]
+      },
+      {
+        "title": "Utiles en général, fautives par système",
+        "paragraphs": [
+          "La phrase suivante donne la balance, et son ordre compte : « In general, these heuristics are quite useful, but sometimes they lead to severe and systematic errors. » En général, ces heuristiques sont fort utiles, mais elles conduisent parfois à des erreurs graves et systématiques. Utiles d’abord, et en général ; fautives ensuite, et parfois. Ce n’est pas l’inventaire des faiblesses de l’esprit humain, c’est la description d’un procédé qui marche, assortie de la mention de ses ratés.",
+          "Le mot qui porte le plus est systématique. Une erreur systématique ne se disperse pas autour de la bonne réponse : elle penche du même côté. Cela entraîne deux conséquences désagréables. Multiplier les jugements ne l’efface pas, puisqu’il ne s’agit pas d’un bruit qui s’annulerait en moyenne. Et redoubler d’attention ne suffit pas davantage, puisque l’écart ne vient pas d’un relâchement mais de la procédure même qui fournit la réponse.",
+          "On peut y voir, à l’inverse, la raison de l’intérêt que ces erreurs présentent. Une faute d’inattention ne dit rien de celui qui la commet. Un écart qui revient, dans les mêmes conditions et chez des personnes différentes, indique par quelle voie la réponse a été obtenue : il devient un moyen d’observer une opération de jugement que personne ne peut décrire de l’intérieur."
+        ]
+      },
+      {
+        "title": "Un nombre limité, et non un compte arrêté",
+        "paragraphs": [
+          "L’usage a retenu trois heuristiques ; le texte, lui, n’en promet pas trois. La thèse de la première page parle d’« a limited number of heuristic principles », d’un nombre limité de principes heuristiques. Le compte de trois n’apparaît qu’à deux endroits, l’annonce du plan page 2 et le résumé page 31. Entre les deux, page 26, la discussion revient à l’indéfini et parle de « some heuristics », quelques heuristiques.",
+          "L’écart n’est pas de pure forme. Un nombre limité annonce un programme de travail : il existe peu de procédures de ce genre, et on peut espérer les décrire. Trois annonce une liste, et une liste se récite. Le premier énoncé engage moins et tient plus longtemps, puisqu’il reste vrai le jour où l’on en décrit une quatrième."
+        ]
+      },
+      {
+        "title": "Représentativité, disponibilité, et le cas de l’ancrage",
+        "paragraphs": [
+          "Des trois noms que l’on récite, deux seulement sont employés dans ce rapport au titre d’heuristique : la représentativité, nommée ainsi page 3, et la disponibilité, pages 15 et 20. Pour le troisième, le vocabulaire change. L’ancrage y est traité comme un phénomène, et l’heuristique correspondante est décrite comme « an adjustment from a starting point », un ajustement à partir d’un point de départ. L’expression « anchoring heuristic » ne se lit nulle part dans ces pages.",
+          "On peut comprendre cet écart de vocabulaire comme une différence de niveau. Un ajustement est quelque chose que fait celui qui juge : il part d’une valeur et il la corrige. Un ancrage nomme plutôt ce qui s’observe du côté de la réponse, la marque qu’y laisse le point de départ. Réciter les trois noms sur le même plan revient à mettre côte à côte une opération et l’effet auquel on la reconnaît, ce qui est commode et un peu trompeur.",
+          "Ce troisième cas est aussi celui qui répond à la seconde moitié de la question initiale. Le résumé de la page 31 précise que cet ajustement à partir d’un point de départ est « usually employed in numerical prediction », employé d’ordinaire dans la prédiction numérique : non pas pour dire si un événement est vraisemblable, mais pour avancer un nombre. Qui ne retient de la thèse que l’évaluation des vraisemblances laisse donc de côté la moitié de son objet, et l’exercice le plus ordinaire dans une organisation, qui est d’estimer un délai, un coût ou un volume."
+        ]
+      },
+      {
+        "title": "Ce que rassemble un rapport d’août 1973",
+        "paragraphs": [
+          "Le texte où tout cela se lit n’est pas un article de revue. C’est un rapport technique de trente-trois pages, daté d’août 1973 sur sa page de titre, produit à l’Oregon Research Institute d’Eugene, en Oregon, et diffusé aussi comme le numéro 1 du volume 13 de ses Research Bulletins. Le corps s’arrête page 31, sur un résumé ; les pages 32 et 33 portent les références et les notes, numérotées de 1 à 16. Ses deux auteurs sont alors l’un et l’autre à l’Université hébraïque de Jérusalem.",
+          "Ces notes disent ce qu’est ce texte. Plusieurs renvoient à des résultats que Tversky et Kahneman avaient déjà publiés ailleurs : la note 2 à un article paru dans Cognitive Psychology en 1972, la note 5 à un article du Psychological Bulletin de 1971, tandis que les notes 1 et 6 portent la mention in press, sous presse. Le rapport rassemble donc une série de travaux et en tire l’énoncé général ; les expériences, elles, sont dans ces travaux.",
+          "Cela explique le statut singulier de ces pages. Elles n’apportent pas un résultat de plus : elles proposent le mot sous lequel une série de résultats va désormais se ranger. Le millésime que l’on cite d’ordinaire, 1974, n’est pas celui de ce rapport ; c’est celui d’une parution dans Science, un an plus tard, sous le même titre."
+        ]
+      }
+    ],
+    "limits": [
+      "L’article par lequel ces pages sont devenues célèbres a paru dans Science le 27 septembre 1974, sous le même titre, aux pages 1124 à 1131. Ce n’est pas tout à fait le même texte : les deux résumés diffèrent déjà. Dans quels termes exacts la thèse y est reprise, et ce que l’année de passage y a changé, c’est cette version qu’il faut lire pour le savoir.",
+      "En 1982, le même titre devient celui d’un volume de Cambridge University Press dirigé par Kahneman, Slovic et Tversky, dont ce texte forme le chapitre 1. L’état dans lequel il y reparaît, et les travaux que le recueil dispose autour de lui, se trouvent dans ce livre.",
+      "Ce que fait au juste chacune de ces heuristiques, et sur quelles épreuves elle a été établie, se lit dans les pages que le rapport lui consacre, à partir de la page 3 pour la représentativité et de la page 15 pour la disponibilité, puis dans les travaux antérieurs que ses notes appellent : l’article de Cognitive Psychology de 1972, celui du Psychological Bulletin de 1971. Ce sont eux qui portent les expériences.",
+      "En français, il n’existe pas de traduction publiée connue de ce rapport. La phrase citée plus haut est donc traduite, et l’un de ses choix se discute : « judgmental operations » y devient opérations de jugement plutôt qu’opérations mentales, parce que le rapport emploie les deux expressions sans les confondre, « mental operations » figurant dans le résumé de la page 31. Pour les mots des auteurs eux-mêmes, c’est la page 1."
+    ]
+  },
+  {
     "conceptId": "histoire-naturelle-des-reseaux",
     "lead": [
       "Une équipe de recherche, une colonie de micro-organismes, un marais : Gordon Pask range ces trois choses dans la même catégorie, et il y ajoute un homme. Elles n’ont ni la même matière ni la même taille. Elles ont en commun de s’arranger toutes seules, sans rien devoir de cet arrangement à qui les regarde. On peut les décrire, les mesurer, en dresser l’inventaire ; ce qu’on ne peut pas faire, c’est désigner d’avance la pièce qui remplit telle fonction, ni prévoir par quel bout l’ensemble va se réorganiser.",
@@ -3421,7 +3475,7 @@ export const generatedDeepenings: Deepening[] = [
       {
         "title": "À qui la troisième réponse s’adresse",
         "paragraphs": [
-          "Le chapitre s’ouvre sur la personne à aider, et il la décrit d’abord par ce qu’elle n’est pas. Les auteurs y demandent, page 9, « how we might help less rational people, who nevertheless aspire to rationality, to do better », et posent la même question autrement à la même page : « How can real people - as opposed to imaginary, idealized, super-rational people without psyches - make better choices ». Le mot qui porte le plus est psyches : la personne qu’on aide a une mémoire, des humeurs, de la fatigue, des angles morts. Celle que les modèles idéalisent n’en a pas.",
+          "Le chapitre s’ouvre sur la personne à aider, et il la décrit d’abord par ce qu’elle n’est pas. Les auteurs y demandent, page 9, «  how we might help less rational people, who nevertheless aspire to rationality, to do better  », et posent la même question autrement à la même page : «  How can real people - as opposed to imaginary, idealized, super-rational people without psyches - make better choices  ». Le mot qui porte le plus est psyches : la personne qu’on aide a une mémoire, des humeurs, de la fatigue, des angles morts. Celle que les modèles idéalisent n’en a pas.",
           "Deux précisions comptent dans ces formules. La première : il ne s’agit pas de décrire cette personne, ni de lui dire ce qu’elle devrait faire, mais de l’aider à faire mieux. Mieux que ce qu’elle ferait sans aide, pas mieux qu’il n’est concevable. La seconde : elle aspire à la rationalité. Le lien avec l’exigence de cohérence n’est pas rompu, il est déplacé. C’est un but que la personne tient elle-même, non une règle qu’on lui oppose de l’extérieur.",
           "Le prescriptif se définit ainsi par une relation avant de se définir par un contenu. Il y faut quelqu’un qui décide et quelqu’un qui l’aide, et la question change de forme : elle ne demande plus ce qui se passe d’habitude, ni ce qui serait juste en droit, mais ce que l’on peut faire pour cette personne-ci."
         ]
@@ -3435,39 +3489,39 @@ export const generatedDeepenings: Deepening[] = [
         ]
       },
       {
-        "title": "Ce que « valeur pragmatique » veut dire",
+        "title": "Ce que «  valeur pragmatique  » veut dire",
         "paragraphs": [
           "Imaginons un comité qui doit choisir entre trois sites d’implantation, avec des données incomplètes sur chacun et un vote prévu dans quinze jours. Quelqu’un lui propose une méthode : lister les critères, les pondérer, noter chaque site, faire la somme. La question que pose le critère de valeur pragmatique n’est pas de savoir si cette méthode est la meilleure en théorie. Elle est de savoir si ce comité, l’ayant employée, décide mieux qu’il n’aurait décidé sans elle.",
-          "Le contrôle se déplace donc en aval, du côté de l’usage, et cela implique deux choses auxquelles la seule opposition du descriptif et du normatif ne laissait pas de place. L’aide doit d’abord tenir compte de ce que la personne est capable de faire, puisqu’une procédure que l’on n’arrive pas à suivre n’aide personne. Ensuite, ce que les travaux descriptifs ont établi cesse d’être un simple constat pour devenir une ressource : savoir où les décisions dérapent d’ordinaire est utile à qui veut les redresser. Le titre du chapitre nomme d’ailleurs des « interactions » entre les trois versants, et non trois territoires séparés."
+          "Le contrôle se déplace donc en aval, du côté de l’usage, et cela implique deux choses auxquelles la seule opposition du descriptif et du normatif ne laissait pas de place. L’aide doit d’abord tenir compte de ce que la personne est capable de faire, puisqu’une procédure que l’on n’arrive pas à suivre n’aide personne. Ensuite, ce que les travaux descriptifs ont établi cesse d’être un simple constat pour devenir une ressource : savoir où les décisions dérapent d’ordinaire est utile à qui veut les redresser. Le titre du chapitre nomme d’ailleurs des «  interactions  » entre les trois versants, et non trois territoires séparés."
         ]
       },
       {
         "title": "Un vocabulaire posé pour un seul chapitre",
         "paragraphs": [
-          "Ces trois mots ne leur appartiennent pas : ils avaient déjà un usage courant, et c’est précisément cet usage que les auteurs prennent soin de ne pas déranger. La phrase de la page 16 où ils annoncent qu’ils vont traiter ces termes de façon nettement distincte, « we propose to treat these terms quite distinctly », porte un appel de note, et la note dit : « For the purposes of this chapter only; we are not attempting to change common usage. »",
-          "La distinction est donc posée « pour les besoins de ce chapitre seulement ». Lire ce texte comme une refondation du vocabulaire du domaine irait plus loin que ce qu’il revendique. Ce qui est proposé est un instrument de travail, valable dans l’espace d’un chapitre, et qui se juge à ce qu’il fait voir.",
+          "Ces trois mots ne leur appartiennent pas : ils avaient déjà un usage courant, et c’est précisément cet usage que les auteurs prennent soin de ne pas déranger. La phrase de la page 16 où ils annoncent qu’ils vont traiter ces termes de façon nettement distincte, «  we propose to treat these terms quite distinctly  », porte un appel de note, et la note dit : «  For the purposes of this chapter only; we are not attempting to change common usage.  »",
+          "La distinction est donc posée «  pour les besoins de ce chapitre seulement  ». Lire ce texte comme une refondation du vocabulaire du domaine irait plus loin que ce qu’il revendique. Ce qui est proposé est un instrument de travail, valable dans l’espace d’un chapitre, et qui se juge à ce qu’il fait voir.",
           "Cette modestie n’est pas une formule de politesse. Elle s’accorde avec ce qui précède : un découpage qui se juge à ce qu’il permet de faire ne peut pas, dans le même souffle, se donner pour le classement vrai des choses."
         ]
       },
       {
         "title": "Le désaccord imprimé avant le chapitre",
         "paragraphs": [
-          "Le volume s’ouvre sur une introduction, imprimée avant le premier chapitre, où les trois directeurs expliquent pourquoi ils passent d’un partage à deux termes à un partage à trois. La raison est professionnelle avant d’être théorique : « We have done this primarily because so much of what two of us (David and Howard) do professionally is not adequately captured in the usual descriptive/normative breakdown. » La catégorie sort de ce que font Bell et Raiffa lorsqu’ils aident quelqu’un à décider, et qui n’entrait proprement ni dans une case ni dans l’autre.",
-          "La même page enregistre la réserve du troisième signataire, Amos Tversky : « although the prescriptive category has been useful for our internal discussions, it may not be necessary to proselytize for this more elaborate breakdown if we were to clarify further the normative category ». Cette phrase dit moins qu’on ne lui fait souvent dire. Ce qui serait peut-être inutile, c’est de faire campagne pour ce découpage plus élaboré, non la catégorie elle-même, dont l’utilité pour leurs discussions internes est concédée dans le même souffle. Et la condition posée renvoie à un travail à faire ailleurs : clarifier davantage la catégorie normative.",
+          "Le volume s’ouvre sur une introduction, imprimée avant le premier chapitre, où les trois directeurs expliquent pourquoi ils passent d’un partage à deux termes à un partage à trois. La raison est professionnelle avant d’être théorique : «  We have done this primarily because so much of what two of us (David and Howard) do professionally is not adequately captured in the usual descriptive/normative breakdown.  » La catégorie sort de ce que font Bell et Raiffa lorsqu’ils aident quelqu’un à décider, et qui n’entrait proprement ni dans une case ni dans l’autre.",
+          "La même page enregistre la réserve du troisième signataire, Amos Tversky : «  although the prescriptive category has been useful for our internal discussions, it may not be necessary to proselytize for this more elaborate breakdown if we were to clarify further the normative category  ». Cette phrase dit moins qu’on ne lui fait souvent dire. Ce qui serait peut-être inutile, c’est de faire campagne pour ce découpage plus élaboré, non la catégorie elle-même, dont l’utilité pour leurs discussions internes est concédée dans le même souffle. Et la condition posée renvoie à un travail à faire ailleurs : clarifier davantage la catégorie normative.",
           "On peut lire cette réserve comme un indice de ce que la trichotomie prétend être. Elle est imprimée dans le livre même qu’elle nuance, à quelques pages du chapitre qu’elle discute, et rien n’y présente le désaccord comme une querelle à trancher. Un instrument qu’on se donne pour discuter n’a pas besoin que tous ses auteurs le tiennent pour indispensable."
         ]
       }
     ],
     "limits": [
-      "Bell, Raiffa et Tversky ne revendiquent nulle part d’avoir inventé ce partage à trois termes, et il ne leur revient pas à eux seuls. Jonathan Baron écrivait en 2012 qu’il est apparu nettement dans les années quatre-vingt chez trois auteurs qui écrivaient indépendamment les uns des autres : A. N. S. Freeling en 1984, lui-même en 1985, ce chapitre en 1988. La plus ancienne de ces formulations est dans « A philosophical basis for decision aiding », Theory and Decision, volume 16, 1984, p. 179-206 : c’est cet article qu’il faudra ouvrir pour savoir en quels termes la distinction y est posée.",
+      "Bell, Raiffa et Tversky ne revendiquent nulle part d’avoir inventé ce partage à trois termes. Jonathan Baron écrivait en 2012 qu’il est apparu nettement dans les années quatre-vingt chez trois auteurs qui écrivaient indépendamment les uns des autres : A. N. S. Freeling en 1984, lui-même en 1985, ce chapitre en 1988. La plus ancienne de ces formulations est dans «  A philosophical basis for decision aiding  », Theory and Decision, volume 16, 1984, p. 179-206 : c’est cet article qu’il faudra ouvrir pour savoir en quels termes la distinction y est posée.",
       "Ce qui a été dit ici du critère d’évaluation tient à deux pages, 17 et 18, dans un chapitre qui en compte vingt-deux. Le reste, à commencer par les interactions entre les trois versants que le titre annonce, est dans les pages 9 à 30 du volume de 1988.",
-      "Ce chapitre n’existe, semble-t-il, qu’en anglais. Le français lu ici en est un rendu de travail : « sides » y devient « côtés », et le parallélisme des trois termes, intact dans la phrase anglaise, s’y affaiblit un peu. Pour la lettre, c’est l’anglais qui fait foi."
+      "En français, ce chapitre ne dispose d’aucune traduction publiée connue : la phrase où les trois termes sont posés se lit ici dans un rendu de travail. «  sides  » y devient «  côtés  », et le parallélisme des trois termes, intact dans l’anglais, s’y affaiblit un peu. Pour la lettre, c’est l’anglais qui fait foi."
     ]
   },
   {
     "conceptId": "objectif-specifique-et-difficile",
     "lead": [
-      "Un chef d’équipe qui veut que le travail avance a le choix entre deux phrases. Il peut dire « faites de votre mieux » : rien à redire, personne n’est humilié, chacun reste juge de son propre effort. Il peut aussi annoncer un nombre et une échéance, en sachant qu’on lui reprochera d’être arbitraire, voire de placer la barre là où personne ne l’atteindra. L’intuition penche du premier côté, et elle a ses raisons. Entre 1969 et 1980, la question a pourtant été posée plus de cent fois, en laboratoire et sur le terrain, avec des consignes contrôlées et des performances mesurées.",
+      "Un chef d’équipe qui veut que le travail avance a le choix entre deux phrases. Il peut dire « faites de votre mieux » : rien à redire, personne n’est humilié, chacun reste juge de son propre effort. Il peut aussi annoncer un nombre et une échéance, en sachant qu’on lui reprochera d’être arbitraire, voire de placer la barre là où personne ne l’atteindra. L’intuition penche du premier côté, et elle a ses raisons. La question a pourtant été posée plus de cent fois avant 1980, en laboratoire et sur le terrain, avec des consignes contrôlées et des performances mesurées.",
       "Ce qui rend le résultat instructif n’est pas seulement son classement, c’est la façon dont les cas y sont découpés. Dire « faites de votre mieux » n’est pas traité comme une absence de consigne : c’est un cas à part, distinct de l’objectif facile comme du silence. Quatre situations se trouvent donc mises en concurrence, et l’ordre qui en sort ne se comprend qu’en regardant de près les mots qui les nomment, puis la manière dont on compte plus de cent études pour en tirer une phrase de deux lignes."
     ],
     "sections": [
@@ -3763,7 +3817,7 @@ export const generatedDeepenings: Deepening[] = [
     "conceptId": "penalite-de-rupture",
     "lead": [
       "Dans le magasin d’un atelier, deux erreurs sont possibles et une seule se voit. Garder trop de pièces s’inscrit quelque part : de l’argent immobilisé, des rayonnages occupés, des articles qui vieillissent sans servir. En garder trop peu ne produit aucune ligne comptable. Il y a seulement une machine qui attend, quelqu’un qu’on envoie chercher la pièce ailleurs, un remplacement de fortune qui tient moins bien que l’original. Personne n’émet de facture pour cela, et c’est pourtant un coût.",
-      "Tant que ce second coût n’a pas de chiffre, le niveau de stock ne se décide qu’à l’estime : le prudent en garde beaucoup, l’économe en garde peu, et aucun des deux ne peut montrer à l’autre qu’il se trompe. En septembre 1950, dans un rapport de la RAND Corporation révisé au mois de novembre suivant, Kenneth Arrow, Theodore Harris et Jacob Marschak font tenir le déplacement dans une hypothèse : le dommage causé par l’absence d’un article a une valeur, cette valeur peut s’écrire, et l’organisation en a déjà une idée avant qu’on la lui demande."
+      "Tant que ce second coût n’a pas de chiffre, le niveau de stock ne se décide qu’à l’estime : le prudent en garde beaucoup, l’économe en garde peu, et aucun des deux ne peut montrer à l’autre qu’il se trompe. En septembre 1950, dans un rapport de la RAND Corporation révisé au mois de novembre suivant, Kenneth Arrow, Theodore Harris et Jacob Marschak posent une hypothèse qui change la nature de la question : le dommage causé par l’absence d’un article a une valeur, cette valeur peut s’écrire, et l’organisation en a déjà une idée avant qu’on la lui demande."
     ],
     "sections": [
       {
@@ -3799,7 +3853,7 @@ export const generatedDeepenings: Deepening[] = [
       {
         "title": "Ce que la littérature de gestion ne donnait pas",
         "paragraphs": [
-          "Dès la page 2, les trois auteurs situent leur travail par un manque. Ils indiquent n’avoir pas trouvé, dans la littérature de gestion de leur époque, de règle explicite pour déterminer ces stocks d’avance qui maximiserait le profit espéré, ou minimiserait la perte espérée, étant donnée la distribution de probabilité pertinente. Ce n’est pas un mécanisme qu’ils énoncent là, c’est une lacune qu’ils déclarent : les stocks de précaution existaient, se pratiquaient, se recommandaient même, sans règle qui les rattache à la distribution des demandes.",
+          "Dès la page 2, les trois auteurs situent leur travail par un manque. Ils indiquent n’avoir pas trouvé, dans la littérature de gestion de leur époque, de règle explicite pour déterminer ces stocks d’avance qui maximiserait le profit espéré, ou minimiserait la perte espérée, étant donné la distribution de probabilité pertinente. Ce n’est pas un mécanisme qu’ils énoncent là, c’est une lacune qu’ils déclarent : les stocks de précaution existaient, se pratiquaient, se recommandaient même, sans règle qui les rattache à la distribution des demandes.",
           "Le vocabulaire de 1950 n’est d’ailleurs pas le nôtre. Le rapport ignore l’expression « stock de sécurité », qui viendra plus tard en français ; il écrit « cushion stocks », des stocks qui font coussin, et parle de stocks de marge de sécurité. Lire ces pages avec les mots d’aujourd’hui ferait croire que les auteurs héritent d’une notion déjà formée, alors qu’ils travaillent à lui donner une règle."
         ]
       },
@@ -3814,8 +3868,8 @@ export const generatedDeepenings: Deepening[] = [
     "limits": [
       "La pénalité demeure, dans ces pages, une donnée d’entrée. Par quelles observations et quelles conventions une organisation établit le montant qu’elle attache à un manque, le rapport ne l’établit pas : il affirme ce jugement déjà formé et passe au calcul. C’est une limite du raisonnement lui-même, et non un détail d’édition.",
       "Le même travail a paru en juillet 1951 dans Econometrica, sous les trois mêmes noms, à partir de la page 250 du volume 19. Ce que cette version publiée resserre, reformule ou ajoute, et en quels termes la fonction de pénalité y est introduite, se lit dans ces pages : c’est là qu’il faudra aller. Les notices en donnent la première page, jamais la dernière ; l’article dira lui-même où il s’arrête.",
-      "Aucune traduction française publiée de ce rapport n’est connue à ce jour. Pour les termes exacts des auteurs, y compris ceux que le français rend mal, c’est l’anglais de 1950 qu’il faudra lire.",
-      "Le rapport nomme enfin ses propres appuis, R. H. Wilson pour le lot économique, Whitin et Haack, Markowitz, et une bibliographie de dix entrées. Ce que ces travaux tenaient déjà, et ce que les trois auteurs y ajoutent, se voit en les ouvrant à leur tour."
+      "Aucune traduction française publiée de ce rapport n’est connue. Pour les termes exacts des auteurs, y compris ceux que le français rend mal, c’est l’anglais de 1950 qu’il faudra lire.",
+      "Le rapport nomme enfin ses propres appuis, R. H. Wilson pour le lot économique, Whitin et Haack, Markowitz, et dix entrées de bibliographie. Ce que ces travaux tenaient déjà, et ce que les trois auteurs y ajoutent, se voit en les ouvrant."
     ]
   },
   {
