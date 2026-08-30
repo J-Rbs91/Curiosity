@@ -154,6 +154,54 @@ Trois règles, appliquées par `npm run corpus:validate` :
 Le web général (Wikipédia, blogs, cours en ligne) sert **uniquement à détecter**. Quinze
 pages concordantes qui ne remontent à aucun texte académique ne valent rien.
 
+### Combler le trou plutôt que changer l'étiquette
+
+La règle 3 dit qu'une lacune se déclare. Elle ne dit pas *quand* : c'est après avoir essayé
+de l'atteindre, jamais avant. Et combler le trou n'est pas combler la lacune, qui reste
+interdit : ce n'est pas écrire ce qu'on ne sait pas, c'est aller le chercher.
+
+Quand une affirmation se révèle plus forte que ce qui a été établi, deux gestes la rendent
+honnête.
+
+- **Changer l'étiquette** : abaisser l'affirmation au niveau de ce qui a réellement été
+  fait. Un `full-text` redevient `metadata-only`, une source sort, une accroche se rétracte
+  jusqu'à ne plus rien affirmer.
+- **Combler le trou** : aller faire ce qui manquait, et garder l'affirmation. Ouvrir la
+  page, résoudre le DOI, chercher l'édition française.
+
+Les deux produisent une fiche exacte. Le second produit en plus un fait, et un fait ne se
+réacquiert jamais.
+
+La règle est nécessaire parce que les deux gestes sont indiscernables là où on les relit :
+dans un diff, c'est la même ligne et quelques mots, et rien ne signale que l'un a coûté
+trente secondes et l'autre dix minutes. Le contrôle qui voit passer une rétrogradation voit
+une fiche devenue correcte, et il a raison ; il ne voit pas la question restée sans réponse.
+Cette question ne disparaît pas : elle est repayée en entier par le prochain agent qui
+rencontre la même fiche.
+
+Dans l'ordre :
+
+1. Un contrôle qui se déclenche demande du travail. Il nomme un écart ; il ne dit jamais de
+   rendre l'affirmation plus petite.
+2. Ouvrir la source d'abord. Elle répond plus souvent qu'on ne l'anticipe, et « ce n'est
+   sûrement pas accessible » est elle-même une affirmation non vérifiée.
+3. Ne rétrograder qu'après une tentative réelle, et dire alors, en clair, ce qui a été
+   demandé, où, et comment cela a échoué. Sans ce compte rendu, la tentative sera refaite à
+   l'identique.
+
+Une rétrogradation motivée n'est pas un échec : c'est le compte rendu exact d'une limite
+réelle. Ce qu'elle n'est pas, c'est du travail terminé.
+
+Ce n'est pas propre au champ `consulted`. Même forme partout où une contrainte peut être
+satisfaite en abaissant ce qu'on affirme plutôt qu'en établissant ce qu'on ignore : une
+citation abandonnée au lieu d'être cherchée ailleurs dans le même texte, une source retirée
+au lieu d'être résolue, un résumé rendu vague au lieu d'être fondé — c'est le verdict
+`trop-etroite`. Chaque fois, la fiche redevient exacte et la question passe à quelqu'un
+d'autre.
+
+Le test qui discrimine, à poser avant de valider le geste : **est-ce que je viens de
+répondre à la question, ou de la rendre plus petite ?**
+
 ---
 
 ## 4. La chaîne — quatre agents

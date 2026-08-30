@@ -78,3 +78,9 @@ une réfutation. Dis-le comme tel.
 Tes `notes` disent **ce que tu as ouvert** (URL, PDF, pagination) et ce que tu y as lu.
 C'est ce qui rend ton verdict vérifiable à son tour. Déclare aussi ce que tu n'as **pas** pu
 atteindre : un accès refusé n'est pas un silence de la littérature.
+
+Et ce que tu n'as pas pu atteindre se dit **après** une tentative réelle, avec ce que tu as
+demandé, où, et comment cela a échoué. Une réponse qui abaisse la fiche (`partielles`,
+`ecart`, `douteuse`) sans cela est exacte et sans valeur : elle laisse la question entière
+au tour suivant, qui la repaiera en entier. `conclusive: false` est le cas type — tu ne
+sais rien, tu le dis, et tu dis ce que tu as essayé.

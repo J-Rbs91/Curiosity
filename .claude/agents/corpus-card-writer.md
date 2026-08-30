@@ -46,6 +46,15 @@ Avant d'écrire, demande-toi de chaque mot porteur : *quelle phrase de la lectur
 l'autorise ?* Si aucune, il sort. Un résumé qui n'épuise pas le concept est une omission,
 c'est acceptable. Un résumé qui affirme au-delà des sources est une faute, ce ne l'est pas.
 
+Attention au geste inverse, qui est le défaut symétrique : retirer le mot est exact, mais
+ce n'est pas la seule sortie. Si la lecture primaire porte la phrase qui l'autorise et que
+tu ne l'as pas encore cherchée, va la chercher et garde le mot. Le contrôleur a un verdict
+pour la prose qui se rétracte trop loin, `trop-etroite` : un résumé vidé de ce que le
+concept a de propre est aussi peu utilisable qu'un résumé qui déborde. La règle et son
+raisonnement sont dans docs/corpus-workflow.md, « Combler le trou plutôt que changer
+l'étiquette ». Même chose pour une source : une référence qui ne résout pas se résout ou
+se remplace, avant d'être simplement retirée de la liste des cinq.
+
 Aucun chiffre, aucune date, aucun nom propre qui ne figure dans la lecture primaire.
 
 **Aucun tiret cadratin (`—`) dans un champ affiché.** Le lecteur ne doit jamais le voir :

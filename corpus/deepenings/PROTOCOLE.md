@@ -180,6 +180,14 @@ Ne jamais écrire une citation, un numéro de page, un DOI, une date, une statis
 d'ouvrage ou un passage attribué à un auteur qui ne figure pas dans la documentation de
 travail.
 
+Devant un passage que la documentation de travail n'appuie pas, le premier geste n'est pas
+de l'affaiblir : c'est d'aller voir si elle l'appuie ailleurs. Les `notes` et le bloc
+`review` de l'enregistrement portent souvent le verbatim exact, la pagination ou la réserve
+qui fondent la phrase que tu voulais écrire, et personne ne les a relus avant toi. Affaiblir
+une phrase produit un texte exact ; la fonder produit en plus un fait. On ne rétrograde
+qu'après avoir cherché. Le raisonnement complet est dans docs/corpus-workflow.md, « Combler
+le trou plutôt que changer l'étiquette ».
+
 **Toute citation est vérifiée automatiquement.** `npm run corpus:deepen` compare chaque
 passage entre guillemets de cinq mots ou plus à l'enregistrement de la carte. Tu peux citer ce
 que la carte porte, et aussi les verbatim relevés dans les `notes` et le bloc `review`, qui
