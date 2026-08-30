@@ -2962,6 +2962,64 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "mecanismes-de-l-objectif",
+    "lead": [
+      "Un responsable qui dit « faites de votre mieux » et un responsable qui dit « trente dossiers avant midi » n’obtiennent pas la même journée de travail. La seconde consigne fait en général mieux travailler que la première, et à peu près tout le monde l’a vérifié une fois ou l’autre, en salle de sport comme au bureau. Reste que constater n’explique rien. Dire qu’un objectif « motive », c’est donner un nom à ce qu’on vient d’observer, ce n’est pas décrire ce qui s’est passé entre le moment où la consigne est tombée et celui où le travail s’est trouvé mieux fait.",
+      "C’est cette question, et non l’existence de l’effet, qui occupe quatre chercheurs américains au terme d’une revue des travaux publiés entre 1969 et 1980. Leur réponse ne tient pas en une force unique : elle prend la forme d’une liste de trajets distincts par lesquels une consigne chiffrée finit par changer un résultat. Et ce qui rend cette liste intéressante n’est pas son décompte, c’est qu’elle est inégale. L’un de ses termes n’est, de l’aveu même des auteurs, qu’une combinaison des deux précédents ; il reposait alors sur presque rien de mesuré ; et le dernier n’est pas de la même espèce que les autres."
+    ],
+    "sections": [
+      {
+        "title": "Un objectif dit d’abord où regarder",
+        "paragraphs": [
+          "Le premier trajet est le plus facile à voir à l’œil nu : une consigne précise trie. Elle désigne ce qui compte dans une situation qui en contient toujours trop, et laisse le reste de côté. Imaginons quelqu’un à qui l’on confie la relecture d’un texte. Sans autre indication, il corrigera une virgule, reformulera une phrase lourde, vérifiera une date au passage, sans ordre particulier. Demandez-lui de traquer les fautes d’accord, et son regard change d’objet : les mêmes pages lui présentent autre chose. Rien n’a été ajouté à ses capacités, ce qui a changé est ce qu’il perçoit comme pertinent, et par suite ce qu’il fait de ses mains.",
+          "Encore faut-il que la consigne dise quelque chose. Les résultats rassemblés dans ce rapport portent sur des objectifs précis et exigeants, comparés à des objectifs faciles, à la consigne « do your best » et à l’absence de tout objectif : c’est cette comparaison qui soutient le résultat d’ensemble, et non l’idée qu’un objectif, n’importe lequel, ferait mieux travailler. Un but vague ne dirige rien, parce qu’il ne désigne rien. C’est déjà une indication pratique : la première chose qu’un objectif doit être, avant d’être ambitieux, c’est assez précis pour que l’on puisse dire à quoi il fait regarder."
+        ]
+      },
+      {
+        "title": "L’effort mobilisé, et l’effort qui dure",
+        "paragraphs": [
+          "Le deuxième trajet ne porte plus sur la direction mais sur l’intensité. À travail comparable, un objectif plus exigeant appelle une dépense d’énergie plus grande : la personne ne fait pas autre chose, elle en fait davantage. On tient là deux effets bien séparés, l’un qui oriente et l’autre qui pousse, et ils peuvent parfaitement jouer l’un sans l’autre : on peut savoir exactement où regarder sans y mettre grand-chose, comme on peut se dépenser beaucoup dans une direction mal choisie.",
+          "Le troisième terme de la liste est la persistance, l’effort prolongé dans le temps. Il a l’air d’un mécanisme de plein droit, et les auteurs sont les premiers à dire qu’il n’en est pas tout à fait un : la persistance, écrivent-ils, n’est rien de plus que de l’effort dirigé étendu dans la durée, donc une combinaison des deux mécanismes précédents. La liste de quatre n’est donc pas une liste de quatre voies parallèles. Son troisième terme est le premier et le deuxième regardés sur un axe de temps.",
+          "Les auteurs ajoutent, à la même page, une remarque plus gênante encore pour eux-mêmes : la plupart des expériences de laboratoire sur les objectifs n’ont pas été conçues pour permettre de mesurer des effets de persistance, puisqu’on y impose d’ordinaire une durée fixe, et les études de terrain menées jusque-là n’avaient enregistré que les résultats finaux, non la manière dont ils avaient été obtenus. La page se termine sur le constat que de telles études seraient hautement souhaitables. Autrement dit, au moment où ce troisième mécanisme est nommé, il est celui qui a été le moins observé pour lui-même."
+        ]
+      },
+      {
+        "title": "Le quatrième n’agit pas comme les trois autres",
+        "paragraphs": [
+          "Le dernier trajet est d’une autre nature, et les auteurs le signalent expressément : alors que les trois premiers mécanismes agissent de façon relativement directe, celui-ci est indirect. Un objectif difficile ne se contente pas de faire regarder ailleurs et de faire forcer davantage : il pousse à chercher comment s’y prendre. Changer de méthode, apprendre un geste qu’on ne possédait pas, inventer un arrangement auquel personne n’avait pensé. Les auteurs le disent en toutes lettres : ce développement de stratégies est motivé par l’objectif, mais le mécanisme lui-même est cognitif par essence, il relève de l’acquisition d’habileté et de la résolution créative de problèmes.",
+          "La conséquence qu’ils en tirent est celle qui se transporte le mieux hors du laboratoire. Ce mécanisme paraît particulièrement important dans les tâches complexes : si les stratégies requises ne sont pas développées, le surcroît de motivation apporté par l’objectif ne se traduira pas en performance effective. Sur une tâche simple, vouloir plus suffit à peu près à faire plus. Sur une tâche compliquée, un objectif ambitieux donné à quelqu’un qui ne dispose pas de la manière de s’y prendre, et qui ne la trouve pas, produit de la motivation sans résultat, c’est-à-dire de l’usure."
+        ]
+      },
+      {
+        "title": "Ce qui permet de dire que ce sont bien ces trajets",
+        "paragraphs": [
+          "Nommer des mécanismes est une chose, montrer que l’effet passe bien par eux en est une autre. Le test est en principe simple : neutraliser les mécanismes supposés et regarder s’il reste quelque chose de l’effet. Les auteurs s’appuient sur ce point sur une étude de 1976, due à Terborg, où, une fois ces mécanismes mis statistiquement de côté, il ne subsiste plus de relation entre les objectifs et la performance. Ils y voient un appui à leur thèse, et prennent soin d’écrire, entre parenthèses, qu’il s’agit là d’au moins certains des mécanismes en jeu, non nécessairement de tous.",
+          "Il faut se souvenir de ce qu’est ce chapitre : une revue. Les résultats qui y défilent, cités par nom d’auteur et par date, appartiennent à d’autres et n’ont pas été produits pour l’occasion. Ce qui revient en propre aux quatre signataires, c’est le classement, la hiérarchie qu’ils y mettent, et les réserves qu’ils formulent sur leurs propres termes. C’est déjà beaucoup, et c’est d’une autre nature qu’une démonstration expérimentale : une liste de mécanismes est un ordre mis dans une littérature, pas une mesure."
+        ]
+      },
+      {
+        "title": "Au moins quatre, ou quatre connus",
+        "paragraphs": [
+          "Le décompte lui-même ne tient pas tout à fait le même langage d’une page à l’autre. Deux fois, à l’ouverture du chapitre et dans les conclusions générales, le rapport écrit « at least four », au moins quatre. Une fois, en tête des conclusions du chapitre, il écrit « There are four known mechanisms », il y a quatre mécanismes connus. Les deux formules ne disent pas la même chose : la première laisse la liste ouverte et prévient qu’il y en a peut-être d’autres, la seconde la referme sur l’état des connaissances.",
+          "L’écart vaut mieux qu’une coquetterie d’auteur. Il rappelle qu’un inventaire de mécanismes n’est pas un décompte fermé, comme le sont les côtés d’un triangle : c’est l’état d’une littérature à une date, et cet état peut se dire avec plus ou moins d’assurance selon la page où l’on tombe. La formule prudente est celle de deux pages sur trois, et c’est elle qu’il vaut mieux retenir : au moins quatre, c’est-à-dire quatre bien identifiés, et rien qui interdise qu’il en existe un cinquième."
+        ]
+      },
+      {
+        "title": "Une thèse plus ancienne que ce rapport",
+        "paragraphs": [
+          "Ce texte de juin 1980 n’est pas l’acte de naissance de l’idée, et ses auteurs sont les premiers à le dire. Dès leur première page, ils s’inscrivent dans deux généalogies. Une généalogie savante, qui remonte par Ryan et par Miller, Galanter et Pribram, puis par Lewin, jusqu’à l’école de Wurtzbourg. Et une généalogie de gestion, qui part de la direction par objectifs et redescend jusqu’au mouvement de l’organisation scientifique du travail fondé par Frederick W. Taylor. L’idée qu’un but assigné change la conduite de celui qui le reçoit circulait donc depuis longtemps, en psychologie comme dans les bureaux.",
+          "Ce qui appartient bien à ce rapport, et à ses quatre signataires, c’est l’inventaire lui-même. Locke avait formulé la thèse seul en 1968 ; le quatrième mécanisme, lui, ne pouvait pas y figurer, puisqu’il s’appuie sur des travaux publiés entre 1975 et 1980. Douze années de recherches séparent l’énoncé initial de cette mise en ordre. C’est une différence de statut qu’il vaut mieux garder en tête quand on croise la formule ailleurs : entre affirmer qu’un objectif fait mieux faire et énumérer par quoi il agit, il y a le travail d’une décennie."
+        ]
+      }
+    ],
+    "limits": [
+      "Les études recensées dans ce chapitre y sont citées par nom et par date, jamais reproduites. Ce que Terborg a réellement mesuré en 1976, et jusqu’où porte son résultat, se lit dans son article et nulle part ailleurs : c’est le seul moyen de savoir si l’appui qu’il donne à la liste est aussi net que le résumé qu’on en fait ici.",
+      "L’article de 1968 par lequel Locke a posé la thèse seul porte l’état de la question avant ces douze années de travaux. C’est en le lisant que l’on mesure ce que le rapport de 1980 y ajoute, et à quel prix.",
+      "Le mécanisme de l’effort occupe la page 20, et son étayage la page 23. Les termes exacts dans lesquels les auteurs y parlent de la mobilisation de l’énergie sont sur le fac-similé du rapport, accessible en ligne : ils attendent leur lecteur.",
+      "Ce rapport n’a pas de traduction française publiée connue. Les phrases rendues ici en français le sont pour l’occasion ; l’anglais du fac-similé reste le texte de référence, et c’est à lui qu’il faut revenir pour discuter d’un mot, à commencer par le verbe qui dit comment les objectifs commandent la performance."
+    ]
+  },
+  {
     "conceptId": "mesure-devenue-cible",
     "lead": [
       "Imaginons une école jugée sur la part de ses élèves qui obtiennent la meilleure mention à un examen national. Au départ, ce chiffre est utile : il donne une idée assez fiable de la qualité de l’enseignement qu’on y reçoit. Mais si le financement de l’école, son classement, la carrière de ses professeurs finissent par dépendre directement de ce pourcentage, quelque chose change. On cesse d’enseigner pour que les élèves comprennent, et l’on commence à enseigner pour que le pourcentage monte, ce qui n’est pas tout à fait la même chose. Le chiffre continue d’exister ; il ne mesure plus ce pour quoi il avait été créé.",
@@ -3011,6 +3069,58 @@ export const generatedDeepenings: Deepening[] = [
       "L’observation monétaire à laquelle le nom de Goodhart reste attaché arrive ici par le résumé qu’en donne Hoskin, et non par le texte où Goodhart la formule lui-même. Ses termes exacts sont dans ce texte-là : c’est celui qu’il faut lire avant de lui prêter une phrase.",
       "Du chapitre de Hoskin, ce qui précède retient des passages, pas la continuité de l’argument. Ce que le chapitre démontre d’un bout à l’autre, dans quel ordre et contre quoi, se lit d’une traite ; les extraits n’en donnent que les points d’appui.",
       "Qui, le premier, a employé l’expression « loi de Goodhart » n’est pas tranché. Hoskin la présente en 1996 comme une appellation déjà répandue plutôt que comme la sienne, et aucune occurrence imprimée antérieure n’a refait surface jusqu’ici : la question attend celui qui remontera la littérature monétaire des années quatre-vingt."
+    ]
+  },
+  {
+    "conceptId": "mobilite-et-segmentation-de-l-emploi",
+    "lead": [
+      "Un parcours professionnel où les employeurs se succèdent tous les dix-huit mois se lit vite, et presque toujours dans le même sens : on y voit quelqu’un qui ne tient pas en place. Imaginons deux personnes entrées la même année sur le marché du travail d’une même ville. La première est embauchée dans un atelier où l’on commence sans qualification, où l’on passe ensuite aux machines, puis à l’encadrement d’une équipe. La seconde enchaîne des remplacements, des saisons, des chantiers qui finissent. Dix ans plus tard, l’une a changé deux fois d’employeur, l’autre douze.",
+      "On dira de la seconde qu’elle est instable, et le mot désignera son caractère. Jean Grisez, psychologue du travail, suspend ce jugement dans quatre pages parues en 1980 dans un numéro du Bulletin de psychologie consacré à la psychologie du travail. Selon les emplois, soutient-il, changer est un accident rare ou la règle ordinaire : compter des changements ici et là ne mesure donc pas la même chose. Reste à dire ce qui, dans un marché du travail, fabrique cette différence."
+    ],
+    "sections": [
+      {
+        "title": "« Sans plus » : ce que la phrase refuse",
+        "paragraphs": [
+          "Sa mise en garde tient en une phrase : « il serait imprudent de rapporter, sans plus, à une « instabilité » individuelle les comportements caractérisés par de nombreux changements ». Deux détails y comptent. Le premier est le mot instabilité, que Grisez tient entre guillemets : il ne le reprend pas à son compte, il cite une manière de parler. Le second est « sans plus ». Ce qui est écarté n’est pas l’explication par la personne, c’est l’explication immédiate, celle qui va du nombre de changements au caractère sans rien traverser entre les deux.",
+          "La différence est pratique. Compter les changements d’un parcours est facile ; en tirer une propriété de celui qui l’a vécu suppose que ces changements soient comparables d’un cas à l’autre, et c’est précisément ce qui n’est pas acquis. Avant de conclure sur les personnes, il faut donc regarder les emplois entre lesquels elles circulent."
+        ]
+      },
+      {
+        "title": "Des emplois reliés, des emplois isolés",
+        "paragraphs": [
+          "Un emploi peut être relié aux autres, ou ne l’être pas. Dans certaines entreprises et certaines branches, les postes s’enchaînent : on entre par le bas, on progresse par étapes, chaque poste prépare le suivant et se paie du temps passé au précédent. C’est ce que l’on appelle une filière. Ailleurs, les emplois ne s’enchaînent pas : ils se ressemblent, ils s’échangent, aucun ne conduit à l’autre, et passer de l’un à l’autre ne fait rien perdre ni rien gagner de durable.",
+          "Ce qui revient en propre à Grisez est d’avoir rapporté à cette différence la fréquence et la forme des changements. Son résultat, à la dernière page de l’article : « lorsque les emplois sont intégrés dans des filières les changements sont peu fréquents mais lorsqu’ils se produisent ils ont tendance à en entraîner d’autres, tandis que lorsque les emplois ne sont pas intégrés dans des filières les mouvements sont fréquents mais tendent à être indépendants les uns des autres. »",
+          "Deux choses y sont dites, et l’on ne retient d’ordinaire que la première. La fréquence d’abord : là où les emplois sont reliés, on bouge peu. Mais surtout la liaison entre les mouvements. Dans une filière, un changement en appelle d’autres, comme si le premier pas engageait une suite ; hors filière, les mouvements sont nombreux et restent sans conséquence les uns pour les autres. Deux personnes ayant changé trois fois d’emploi n’ont donc pas nécessairement fait la même chose, selon que ces trois changements se tiennent ou se dispersent."
+        ]
+      },
+      {
+        "title": "Un marché du travail qui n’en est pas un seul",
+        "paragraphs": [
+          "Dans le modèle économique le plus simple, il n’existe qu’un marché du travail : des offres, des demandes, un prix qui les ajuste, et des travailleurs interchangeables qui vont là où il y a à prendre. Grisez rappelle que ce modèle « est très largement amendé notamment à la suite de l’introduction des théories de la segmentation du marché du travail », et qu’« on a fait largement place à la notion de filières ».",
+          "Segmenter veut dire ici que le marché du travail ne fonctionne pas partout de la même façon : il se divise en parties qui obéissent à des règles distinctes, et l’on ne passe pas librement de l’une à l’autre. Demander pourquoi telle personne change si souvent revient alors à poser deux questions moins spectaculaires et plus utiles : dans quelle partie du marché se trouve-t-elle, et qu’y fait-on ordinairement ?",
+          "Ces théories, Grisez ne les fonde pas : il les reçoit, et la façon dont il l’écrit mérite d’être remarquée. « On a fait largement place » : ce « on » ne nomme personne, et la note bibliographique de l’article ne renvoie à aucun des textes qui ont formé la théorie segmentationniste. Ce qui lui appartient est ailleurs, dans le rapprochement entre cette division du marché et les comportements de ceux qui y circulent."
+        ]
+      },
+      {
+        "title": "Ce que Grisez n’abandonne pas à la structure",
+        "paragraphs": [
+          "Rien de tout cela n’efface la personne, et il serait facile de faire dire à ce texte plus qu’il n’en dit. Grisez admet que les emplois ont, pour celui qui les occupe, des valeurs, et que changer d’emploi présente une utilité, matérielle autant que psychologique. Ce qu’il conteste est un ordre de priorité : l’accent mis sur les déterminants individuels fait négliger les caractéristiques structurelles des marchés du travail.",
+          "Il qualifie d’ailleurs lui-même la situation qu’il décrit de psycho-sociologique, et non de sociologique. Le mot compte. Une explication purement sociologique se passerait des personnes ; celle-ci les garde et les place en second. La structure ne remplace pas le sujet, elle donne la forme du terrain sur lequel il avance.",
+          "Cela implique une prudence symétrique, plus rarement exercée. Si un grand nombre de changements ne prouve pas l’instabilité de qui les a faits, une longue permanence dans le même emploi ne prouve pas davantage la fidélité, le goût du métier ou la prudence de qui y est resté. Elle peut simplement décrire un endroit du marché où l’on ne part pas, parce que partir coûterait tout ce qu’on y a accumulé."
+        ]
+      },
+      {
+        "title": "Quatre pages, et l’enquête qui les précède",
+        "paragraphs": [
+          "L’article de 1980 ne rapporte pas une recherche en cours : c’est un exposé de synthèse, quatre pages, où l’auteur résume des résultats acquis dix ans plus tôt. Ils viennent de sa propre enquête, Mobilité et milieu professionnel, publiée en 1970 au Bulletin du CERP, cent quarante pages. Ce que l’on lit en 1980 est donc l’état auquel il ramène son travail après une décennie : ce qui, à ses yeux, en subsiste et mérite d’être redit devant des psychologues du travail.",
+          "Cette forme explique la sobriété du texte. Une synthèse de quatre pages énonce un résultat ; elle ne montre pas le chemin qui y mène. Qui veut savoir sur quelles populations les observations ont été faites, à quoi l’on reconnaît une filière dans des parcours réels, ou comment se mesure la dépendance entre deux changements successifs, ne trouvera pas ces réponses dans les pages de 1980."
+        ]
+      }
+    ],
+    "limits": [
+      "Les observations que l’article résume ont leur source ailleurs : dans les cent quarante pages de Mobilité et milieu professionnel, parues au Bulletin du CERP en 1970. Qui a été interrogé, à quoi une filière s’y reconnaît, sur quelles données repose la comparaison entre emplois reliés et emplois isolés : c’est ce volume qui le dit, et il faudra le lire pour retrouver les chiffres à leur source plutôt que dans le résumé qu’en donne leur auteur dix ans après.",
+      "La segmentation du marché du travail et la notion de filière arrivent dans ce texte sans généalogie : le « on » de l’auteur ne nomme personne, et sa note bibliographique ne renvoie à aucun texte fondateur. En quels termes ces notions ont été posées, contre quoi et pour rendre compte de quoi, ce sont les travaux qui les ont formées qui le diront.",
+      "Ce que ce texte est devenu, qui l’a repris, quelle place Jean Grisez occupe dans les travaux français sur la mobilité professionnelle : les sources disponibles ne permettent pas de l’établir."
     ]
   },
   {
@@ -3196,6 +3306,60 @@ export const generatedDeepenings: Deepening[] = [
       "Le modèle se fabrique dans deux textes antérieurs, dont « Outlines of a Hybrid Model of the Process Operator », de 1976, où Rasmussen dit l’avoir développé : on l’y verra se faire plutôt que servir.",
       "Ce que les trois niveaux doivent à James Reason et à Donald Norman n’est pas établi : le rapport les cite tous deux sur l’erreur, à la même période, mais jamais à propos des niveaux, qu’il rattache à ses seuls travaux. Qui suivra ces renvois y verra un Reason de 1979 absent de sa bibliographie.",
       "Il n’existe pas de traduction française publiée de ce rapport, dont les phrases sont rendues ici au fil de la lecture ; l’anglais est en accès libre. En français, la reprise du modèle passe par Jean-Michel Hoc et René Amalberti, dont les textes diront ce que l’ergonomie francophone en a retenu."
+    ]
+  },
+  {
+    "conceptId": "niveaux-de-rationalite-economique",
+    "lead": [
+      "Deux personnes achètent le même appareil le même jour. La première a comparé cinq modèles, relevé les prix, calculé ce que l’un consomme de plus que l’autre sur cinq ans. La seconde est entrée, a vu une affiche, et elle est ressortie avec le carton sous le bras. Sur le ticket de caisse, les deux achats sont identiques, et ils comptent pour un dans les chiffres de vente. Ce qui les sépare ne se lit ni sur le prix ni sur l’objet : c’est la quantité de réflexion que chacune y a mise.",
+      "Une science des marchés peut décider que cette différence ne la regarde pas : elle suppose que chacun calcule, et elle décrit ce que ferait un calculateur. Pierre-Louis Reynaud, qui enseigne à la faculté de droit et des sciences économiques et politiques de Strasbourg, publie en 1962 un article où il refuse ce raccourci. Son idée n’est pas que les gens se trompent, ni qu’il suffirait de corriger leurs erreurs pour retrouver le bon modèle. Elle est que la réflexion engagée dans un acte se range par étages, du geste presque automatique à la décision conduite pas à pas, et que le mécanisme économique n’est pas le même selon l’étage où l’on se trouve."
+    ],
+    "sections": [
+      {
+        "title": "Deux extrêmes, et toute la gamme entre les deux",
+        "paragraphs": [
+          "Le point de départ est donné pour une constatation, non pour un postulat : « L’observation a montré qu’il existe deux types de comportement extrêmes, et entre eux des conduites intermédiaires. » Le bas de l’échelle est occupé par des actes qui n’ont rien délibéré. Reynaud écrit : « Au bas de l’échelle, on trouve les actes économiques de faible niveau mental, les actes irrationnels qui obéissent aux lois des réflexes. » Le mot réflexe n’est pas ici une image commode : dans ces pages, le seul nom convoqué à son sujet est celui de Pavlov.",
+          "Au sommet se tient l’acte qui délibère, et ce que Reynaud en dit vaut d’être lu lentement : « Le mécanisme de l’acte rationnel, situé au sommet de la hiérarchie psychologique se rapproche au contraire du fonctionnement classique du calcul économique. » Autrement dit, le calcul décrit par l’économie ne décrit pas les gens en général. Il décrit un étage, et c’est le plus haut.",
+          "Ce qui ordonne l’échelle n’est ni la richesse, ni l’information disponible, ni l’expérience du marché : c’est ce que l’auteur nomme, en donnant les deux expressions pour équivalentes, « le degré de rationalité (ou niveau mental) des individus ». L’échelle range donc des personnes en situation, et non des types de biens ou des catégories de dépenses."
+        ]
+      },
+      {
+        "title": "Le milieu de l’échelle, et sa fréquence",
+        "paragraphs": [
+          "Entre les deux bouts, un critère se lit dans la phrase même qui les sépare : « Entre le comportement rationnel, dirigé méthodiquement par le sujet et la conduite irrationnelle, dominée par l’influence du milieu, se trouve toute la gamme des comportements intermédiaires. » Ce qui distingue le haut du bas, c’est ce qui commande l’acte : la personne, ou ce qui l’entoure. Descendre l’échelle, c’est céder progressivement la direction de sa conduite à l’environnement.",
+          "Vient alors l’affirmation qui décide de l’intérêt de toute la construction : « La psychologie économique étudie ces formes de transition, qui sont celles qui se rencontrent le plus fréquemment dans la pratique, avec un soin particulier. » Le milieu n’est pas une zone grise à ranger plus tard, c’est le cas ordinaire. Cela renverse l’ordre habituel : une discipline qui ne modélise que le sommet de l’échelle modélise l’exception, et traite le cas courant comme un écart.",
+          "Ce milieu n’est d’ailleurs pas un fourre-tout. Reynaud y nomme deux paliers, le rationnel discontinu et le rationnel occasionnel, que l’imprimé détache en italiques comme des termes qu’il institue, à côté du niveau qu’il appelle semi-rationnel."
+        ]
+      },
+      {
+        "title": "Le graphique du prix, tracé en bandes",
+        "paragraphs": [
+          "Reste à savoir ce que cette échelle change pour l’économie elle-même, et Reynaud le montre sur le dessin que tout le monde a vu : deux courbes, l’offre et la demande, qui se croisent en un point, et ce point donne le prix. Sa phrase entière est celle-ci : « Par exemple, en ce qui concerne le schéma bien connu du prix, représenté comme le point d’intersection des courbes d’offre et de demande, les courbes seront des lignes au niveau rationnel, elles seront des bandes, d’autant plus larges que le sujet sera moins rationnel, pour marquer l’imprécision du calcul, au niveau semi-rationnel. »",
+          "Le trait fin devient donc un ruban, et sa largeur n’est pas une manière d’avouer qu’on ne sait pas bien dessiner : elle mesure quelque chose, l’imprécision du calcul de celui qui achète ou qui vend. Deux rubans qui se croisent ne se coupent plus en un point mais sur une petite surface. Il n’y a plus un prix, il y a une plage de prix, et cette plage s’élargit à mesure que l’on descend l’échelle.",
+          "On peut lire ce passage comme une façon de garder le schéma classique en le rendant à son domaine : il reste exact tout en haut, là où les courbes sont des lignes, et il devient un cas limite dès que l’on descend d’un cran. Le dessin n’est pas déclaré faux, il est redessiné, et l’épaisseur du trait y porte désormais une information sur les personnes."
+        ]
+      },
+      {
+        "title": "Un système que Reynaud donne pour le sien",
+        "paragraphs": [
+          "Ces paliers ne sont pas présentés comme un état des travaux existants. Ils arrivent au terme d’une phrase qui les rattache à une construction personnelle : « Prenons comme exemple le système d’intégration psycho-économique reposant sur la notion d’énergie mentale ». C’est le système que l’auteur expose depuis son ouvrage de 1946, Economie Politique et Psychologie Expérimentale, auquel il renvoie dès la première colonne de l’article.",
+          "La manière dont il nomme les autres confirme la répartition des rôles. Dans ces pages, les distinctions de niveaux sont posées sans être attribuées à quiconque, tandis que les noms qui apparaissent servent des points voisins et jouent par contraste : Pavlov pour le réflexe, Marx et les économistes autrichiens à propos de la valeur. La thèse est donnée comme sienne.",
+          "Sa place dans l’article dit encore autre chose. L’échelle apparaît sous un sous-titre, « B) La théorie en Psychologie économique », lui-même placé sous « III) Le contenu de la psychologie économique », et une section consacrée à la politique économique vient ensuite. Les niveaux ne sont donc pas une curiosité de laboratoire : ils occupent la place de l’outil théorique dans un programme qui se prolonge du côté de l’action."
+        ]
+      },
+      {
+        "title": "Une question posée d’un seul côté de la frontière",
+        "paragraphs": [
+          "Pourquoi personne n’avait-il tracé ces bandes avant ? Reynaud répond en une phrase qui vaut diagnostic de discipline : « L’économie traditionnelle ne tenant pas compte du niveau mental, et supposant en théorie tous les individus rationnels, ce problème théorique n’a été abordé qu’en psychologie économique. » L’hypothèse de rationalité universelle n’est pas seulement une simplification : elle rend la question invisible. Si tout le monde calcule pareil, il n’y a pas de variation à étudier, et la largeur du trait n’a aucun sens.",
+          "L’ensemble tient alors à une exigence que la première phrase de la démonstration assume : que les niveaux s’observent. Reynaud n’écrit pas qu’il suppose deux extrêmes, il écrit que l’observation les a montrés. Toute la construction repose sur ce pari, et c’est aussi par là qu’elle se discute : situer une conduite sur l’échelle suppose de savoir reconnaître, du dehors, la part de direction que la personne garde sur ce qu’elle fait."
+        ]
+      }
+    ],
+    "limits": [
+      "Deux paliers sont nommés dans ces pages, le rationnel discontinu et le rationnel occasionnel, et ils y sont ici seulement nommés. Ce que Reynaud met exactement sous chacun d’eux, la section III B de l’article de 1962 le formule en propres termes : c’est là qu’il faudra aller le chercher.",
+      "La même page avance deux autres notions dont rien n’est dit ici, les seuils de rupture et les seuils d’ajustement. Elles voisinent immédiatement avec l’échelle des niveaux, et le texte qui les porte est celui qu’on vient de lire par fragments.",
+      "L’échelle n’est pas née en 1962. Reynaud la rattache à un système qu’il expose depuis Economie Politique et Psychologie Expérimentale, publié en 1946 : depuis quand ses paliers portent ces noms-là, et ce qu’ils doivent à d’autres travaux, ce sont ses propres livres qui le diront.",
+      "Enfin, ce que ce texte est devenu, qui l’a repris et qui l’a laissé de côté, les sources disponibles ne permettent pas de l’établir : rien n’est établi de sa réception. Les publications de psychologie économique postérieures sont l’endroit où elle se lira."
     ]
   },
   {
