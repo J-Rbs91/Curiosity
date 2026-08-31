@@ -1,0 +1,54 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "regle-de-commande-a-deux-niveaux",
+  "lead": [
+    "Imaginons un magasin de pièces détachées, un matin ordinaire. Le responsable regarde ses rayonnages et doit répondre à une question qui revient tous les jours : est-ce qu’on commande aujourd’hui ? S’il commande souvent et par petites quantités, il ne manquera jamais de rien, mais chaque commande lui coûte quelque chose avant même le premier article : un bon à établir, une livraison à recevoir, une réception à contrôler. S’il commande rarement et en gros, il paie ce coût-là moins souvent, mais il immobilise des rayonnages pleins, et il lui arrive de se trouver à court entre deux livraisons.",
+    "La difficulté n’est pas de trancher ce matin-là. C’est que la question se reposera demain, et le jour d’après, avec un stock différent et une demande toujours inconnue. En 1950, dans un rapport de la RAND Corporation, Kenneth Arrow, Theodore Harris et Jacob Marschak déplacent le problème : ils ne cherchent pas la bonne commande du jour, ils cherchent la consigne qu’on remettra au magasinier une fois pour toutes, celle qui répondra à sa place chaque matin. Toute la difficulté se déplace alors dans le réglage de cette consigne."
+  ],
+  "sections": [
+    {
+      "title": "Ce que le magasinier a à faire chaque matin",
+      "paragraphs": [
+        "À la page 24 du rapport, la consigne tient en une ligne de conditions. Appelons y le stock dont on dispose au moment de décider, avant toute commande. Si y dépasse le seuil, la quantité commandée est nulle et le stock reste ce qu’il était. Si y est au seuil ou en dessous, on commande exactement ce qui manque pour atteindre le niveau visé, si bien qu’après la commande le stock vaut ce niveau, quel qu’ait été le point de départ. Les auteurs l’écrivent ainsi, avec o pour la quantité commandée et z pour le stock une fois la commande passée : « If y_t > s, o_t = 0 (and hence z_t = y_t), if y_t ≤ s, o_t = S − y_t (and hence z_t = S). »",
+        "Un détail de cette ligne compte plus qu’il n’y paraît : la commande se déclenche à y_t ≤ s, donc au seuil autant qu’en dessous. Toucher le seuil suffit, il n’est pas nécessaire de passer sous lui. Un cas d’égalité mal placé change la conduite d’un magasin réel un jour sur beaucoup, et c’est le genre de précision qu’une formulation en français courant émousse toujours un peu.",
+        "Ce que la consigne ne demande pas mérite autant d’attention que ce qu’elle demande. Ni prévision, ni calcul, ni mémoire de ce qui s’est passé la semaine précédente : il faut lire un chiffre sur un rayonnage et le comparer à un autre. La quantité commandée, elle, n’est pas fixe. Elle varie d’une fois sur l’autre, puisqu’elle vaut ce qui manque pour remonter au niveau visé. Ce qui est fixe, ce n’est pas ce qu’on achète, c’est le point d’arrivée."
+      ]
+    },
+    {
+      "title": "Le prix d’une commande, quelle que soit sa taille",
+      "paragraphs": [
+        "Pourquoi ne pas remettre le stock à niveau tous les jours, un peu à la fois ? La réponse est dans une hypothèse posée deux pages plus loin, au paragraphe 4:B : « we shall assume [...] that the cost of handling an order does not depend on the amount ordered. Let this cost be K, a constant ». Traiter une commande coûte un montant qui ne dépend pas de la quantité commandée. On le paie entier dès qu’on commande, pour un article comme pour mille.",
+        "Dès lors, commander devient un événement avec un droit d’entrée, et l’on n’acquitte pas ce droit tous les matins pour trois pièces. Il faut que le stock, une fois remonté, tienne un certain temps avant de retomber au seuil ; autrement dit, que le niveau visé soit assez au-dessus du seuil pour que l’intervalle entre deux commandes vaille le prix de la commande.",
+        "Le rapport donne à cette intuition sa place exacte dans le calcul. Page 36, la condition qui détermine l’écart entre les deux nombres fait entrer K, alors que les conditions obtenues à écart fixé ne le contiennent pas : les auteurs le notent juste avant, « K does not enter into (5.15) and (5.16) ». Le coût fixe ne règle donc pas où placer le seuil dans l’absolu, il règle la distance entre le seuil et le niveau visé. Cela implique que si commander ne coûtait rien en soi, plus rien n’imposerait de maintenir cet écart, et la consigne se réduirait à un seul nombre, remis à niveau en permanence."
+      ]
+    },
+    {
+      "title": "Ce qui vient de R. H. Wilson, et ce qui n’en vient pas",
+      "paragraphs": [
+        "Le rapport ne commence pas par l’incertitude. Il traite d’abord le cas où la demande est connue d’avance, celui où l’on peut calculer une taille de lot et un rythme de réapprovisionnement, et où la réponse classique prend la forme d’une racine carrée. Les trois auteurs ne s’attribuent pas cette réponse. Page 9, sous la formule qui la porte, ils écrivent : « We believe this is, in essence, the solution advanced by R. H. Wilson [10], formerly of the Bell Telephone Company; and also by other writers; see [1]. »",
+        "Ce qui leur revient en propre commence après, dans les sections consacrées à l’incertitude. Le déplacement est celui-ci : quand la demande est connue, on peut établir un calendrier, décider aujourd’hui ce qu’on commandera dans six semaines et s’y tenir. Quand elle ne l’est pas, aucun calendrier ne survit au premier écart, et ce qu’il faut fixer d’avance n’est plus une suite de commandes mais une manière de répondre à un état de stock, quel qu’il soit.",
+        "C’est ce que dit le mot que les auteurs emploient : une règle d’action. Elle ne prescrit aucune commande en particulier, elle prescrit ce qu’il faudra faire dans chacune des situations qui peuvent se présenter. Le hasard n’est pas éliminé, il est absorbé : la consigne accepte d’avance de ne pas savoir ce qui arrivera, et elle reste applicable dans tous les cas."
+      ]
+    },
+    {
+      "title": "Une forme posée d’avance, deux nombres à régler",
+      "paragraphs": [
+        "Il faut lire avec attention la phrase qui introduit la règle, page 24 : elle commence par un impératif. On choisit deux nombres, et on décide qu’ils définissent la conduite à tenir. Ce n’est pas la conclusion d’une démonstration, c’est le point de départ d’un calcul. La forme de la consigne est posée, et ce que le rapport optimise ensuite, ce sont ses deux paramètres. Établir que cette forme est la meilleure parmi toutes les consignes concevables serait un autre travail, et le rapport ne le revendique pas.",
+        "Les auteurs marquent eux-mêmes une frontière, à la section 7 : la règle devra être modifiée si les économies de gros lots ne sont pas négligeables. Le cas est facile à se représenter. Si le fournisseur consent une remise à partir de la palette, la quantité commandée a désormais ses raisons propres, qui ne se déduisent plus de la seule distance entre le stock et le niveau visé. Deux nombres ne suffisent plus à porter la décision.",
+        "Ce qui est revendiqué est donc à la fois plus modeste et plus solide qu’une prétention à l’optimalité générale : une consigne applicable sans calcul quotidien, dont on sait régler les deux nombres à partir des coûts, et dont les auteurs nomment eux-mêmes le cas où elle ne conviendra plus."
+      ]
+    },
+    {
+      "title": "Deux dates, 47 pages, et deux lettres",
+      "paragraphs": [
+        "L’objet lui-même mérite d’être décrit, parce qu’il n’a pas la forme habituelle d’une référence savante. Optimal Inventory Policy est un papier de la RAND Corporation, à Santa Monica, numéroté P-189, daté du 5 septembre 1950 et révisé le 16 novembre 1950 : les deux dates se lisent en tête de sa première page de texte. Quarante-sept pages, dont les dernières sont les références. Ni volume, ni numéro de revue. Les trois noms se lisent sur la page de titre, dans l’ordre Arrow, Harris, Marschak, et un exemplaire numérisé de la version révisée se consulte en ligne, page à page.",
+        "Reste la notation, qui fait de cette règle un objet reconnaissable et une source d’erreurs de lecture. Les deux nombres s’écrivent s et S : deux fois la même lettre, que seule la casse distingue. La minuscule est le seuil qui déclenche, la majuscule le niveau où l’on remonte, et l’ordre S > s > 0 est posé avec eux. Une consigne entière tient donc dans une différence typographique, ce qui la rend très commode à écrire et impossible à prononcer sans précaution."
+      ]
+    }
+  ],
+  "limits": [
+    "Sous le même titre et les mêmes trois noms, un article a paru dans Econometrica en juillet 1951, à partir de la page 250. Ce n’est pas le même texte que le rapport de 1950. Ce qu’il en conserve, ce qu’il en resserre, et en quels termes il pose la règle devant le public d’une revue d’économétrie, ce sont ses pages qui le diront.",
+    "Que cette forme à deux niveaux soit la meilleure possible et non pas seulement commode n’est pas établi dans le rapport, et cette démonstration a une adresse : la littérature de synthèse la situe dix ans plus tard, dans l’article de Herbert Scarf, « The Optimality of (S, s) Policies in the Dynamic Inventory Problem », paru en 1960. Sous quelles hypothèses il l’obtient, c’est cet article qu’il faudra lire.",
+    "Enfin, les sources disponibles ne permettent pas d’affirmer qu’aucun texte antérieur n’ait posé une consigne de cette forme. Le rapport renvoie lui-même, sous les numéros [1] et [10] de sa bibliographie, aux travaux dont il tient la solution du cas certain ; les titres que ces numéros désignent se lisent dans ses dernières pages, et c’est de là que part toute recherche d’antériorité."
+  ]
+}

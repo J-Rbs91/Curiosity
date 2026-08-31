@@ -1,0 +1,55 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "penalite-de-rupture",
+  "lead": [
+    "Un magasin de pièces détachées se vide un jour où la pièce absente arrête une machine. Personne ne reçoit de facture pour cet arrêt : il se paie en heures perdues, en commande passée en urgence chez un fournisseur plus cher, en client qui patiente. Rien de tout cela n’apparaît sur la ligne comptable du magasin, qui ne connaît que le prix des pièces achetées et la place qu’elles occupent.",
+    "D’un côté une dépense visible, chiffrée, dont on peut faire reproche à quelqu’un ; de l’autre un dommage réel dont personne n’a jamais écrit le montant. La discussion sur le niveau à tenir tourne alors en rond, entre ceux qui trouvent le stock trop gros et ceux qui redoutent le jour où il manquera, et aucun des deux camps ne peut convaincre l’autre. En 1950, à la RAND Corporation, Kenneth Arrow, Theodore Harris et Jacob Marschak s’attaquent à ce déséquilibre par un geste d’apparence banale : donner un prix au manque, pour que les deux termes deviennent enfin comparables."
+  ],
+  "sections": [
+    {
+      "title": "Mettre un prix sur ce qui n’a pas été servi",
+      "paragraphs": [
+        "La pénalité dont parle leur rapport porte sur un cas précis : celui où la demande dépasse le stock disponible. Les auteurs nomment cet écart, « the excess of demand over available stock », et c’est sur lui, unité par unité, que se compte le dommage. Le mot rupture ne désigne donc ici ni un contrat rompu, ni une livraison amont qui n’arrive pas : il désigne exactement la part de la demande que le stock n’a pas pu servir.",
+        "Ce dommage n’est pas seulement un manque à gagner, et les auteurs le décrivent par ses substituts. Quand l’article n’est pas là, on se rabat sur autre chose, et cette solution d’urgence coûte plus cher et fonctionne moins bien. Une organisation, écrivent-ils, connaît ce coût et cette moindre performance. Le dommage a donc déjà, dans les faits, une existence chiffrable ; ce qui manque, c’est qu’on l’ait écrit quelque part.",
+        "Rien dans leur phrase ne réserve cela au commerce : elle vise l’organisation, qu’elle soit commerciale ou non. Un service qui ne vend rien perd lui aussi quelque chose quand l’article manque, sous la forme d’un travail retardé ou d’un résultat dégradé, et ce quelque chose entre dans le même compte."
+      ]
+    },
+    {
+      "title": "Une pénalité supposée connue",
+      "paragraphs": [
+        "Reste à savoir d’où vient le chiffre, et sur ce point les auteurs sont d’une franchise qu’il vaut la peine de relever : « We assume the penalty function as given. » Ils supposent la pénalité donnée. Leur argument n’est pas qu’on sait la mesurer, mais que l’organisation en a déjà une idée générale, et qu’elle saurait dire, si on l’interrogeait, ce que lui coûterait l’indisponibilité d’un article.",
+        "La différence entre supposer et établir compte ici plus qu’ailleurs. Tout ce qui suit est rigoureux à condition qu’un nombre entre dans le calcul, et ces pages ne fournissent pas de méthode pour le produire. Qui cherche comment reconstituer des incidents passés, interroger les services concernés ou faire dire à un responsable ce que vaut une journée d’arrêt ne le trouvera pas là. Ce que le rapport apporte est ailleurs : il montre ce qu’un tel chiffre, une fois posé, permet de décider.",
+        "L’exigence est du reste plus légère qu’il n’y paraît. Il ne s’agit pas d’un tarif exact, établi article par article : une idée générale de la valeur du dommage suffit à faire démarrer le raisonnement. C’est une condition qu’une organisation attentive à ses propres incidents peut remplir sans enquête savante."
+      ]
+    },
+    {
+      "title": "L’unité de plus, et ce qu’elle épargne",
+      "paragraphs": [
+        "Une fois le manque chiffré, la question change de nature. Elle ne se pose plus en gros, mais unité par unité : cette unité supplémentaire, faut-il la garder ? D’un côté elle coûte, et les auteurs nomment les deux dépenses qu’elle entraîne, celle de l’acheter et celle de la porter en stock, « of buying and carrying an additional unit in stock ». De l’autre elle rapporte, mais seulement dans les situations où la demande serait montée assez haut pour qu’elle serve.",
+        "C’est là que le mot espérée fait son travail. L’unité de plus n’épargne pas une pénalité à coup sûr : elle l’épargne dans certains états de la demande et pas dans d’autres. Ce qu’on met en balance avec son coût n’est donc pas un gain constaté, mais une moyenne des gains possibles, pondérée par les chances que chaque cas survienne. Les auteurs le disent dans les termes de l’économiste : coût marginal d’un côté, utilité marginale espérée de l’autre.",
+        "L’équation qui fixe le stock optimal, à la page 21 du rapport, ne fait rien de plus que poser la différence entre ces deux quantités égale à zéro. Au-dessus de ce point, chaque unité gardée coûte plus qu’elle n’épargne en moyenne ; en dessous, il reste de la pénalité à éviter à bon compte. Le niveau à tenir n’est ni prudent ni téméraire : il est l’endroit où les deux comptes se rejoignent."
+      ]
+    },
+    {
+      "title": "Ce qu’il faut apporter pour que le calcul tourne",
+      "paragraphs": [
+        "Les auteurs énumèrent, sur cette même page, les quantités dont dépend le stock optimal, qu’ils rangent sous le nom de données physiques. Les paramètres de la fonction de pénalité, définie juste avant, en font partie. Aucun de ces nombres ne sort du calcul : ils doivent tous y entrer. La formule ne fabrique pas le prix du manque, elle le consomme.",
+        "C’est ce qui donne à l’ensemble son statut, modeste et utile à la fois. Il ne s’agit pas d’une recette qui dirait combien tenir, mais d’un dispositif qui dit quelles grandeurs il faut connaître pour le décider, et comment elles se combinent. Le travail difficile reste devant : mettre un montant sur ce que coûte de manquer.",
+        "On peut retourner l’argument, et il devient inconfortable. Une organisation qui refuse de chiffrer le manque tient malgré tout un niveau de stock, et ce niveau correspond à un prix du manque qu’elle n’a jamais formulé. Chiffrer la pénalité n’ajoute donc pas une hypothèse au problème : cela expose une décision qui était déjà prise, en silence."
+      ]
+    },
+    {
+      "title": "Le lot économique n’est pas d’eux",
+      "paragraphs": [
+        "Le rapport ne se réduit pas à ces trois pages. Sa deuxième partie traite le cas où tout est connu d’avance, et les auteurs en attribuent eux-mêmes la solution à quelqu’un d’autre : à la page 9, ils écrivent que c’est « in essence, the solution advanced by R. H. Wilson [10], formerly of the Bell Telephone Company », et renvoient aussi à d’autres auteurs. Ce qui leur revient en propre commence après, quand la demande cesse d’être connue et se décrit par une distribution de probabilités.",
+        "Ils situent d’ailleurs eux-mêmes le vide qu’ils entendent combler. Dès la page 2, ils notent qu’ils n’ont pas trouvé dans la littérature de gestion de règle explicite pour déterminer les stocks de précaution : « we have not been able to find in the business literature an explicit rule of determining ». La suite de la phrase précise ce qu’une telle règle devrait faire, maximiser le profit espéré ou minimiser la perte espérée, une fois donnée la distribution de probabilités pertinente. C’est un constat sur l’état d’une littérature en 1950, non une démonstration.",
+        "Leur vocabulaire n’est pas encore le nôtre, et cela vaut d’être noté pour ne pas leur prêter des mots venus plus tard. L’expression stock de sécurité ne figure pas dans le rapport : ils écrivent « cushion stocks », des stocks qui font coussin, et parlent de stocks de marge de sécurité."
+      ]
+    }
+  ],
+  "limits": [
+    "La forme exacte que les auteurs donnent à la fonction de pénalité, avec les paramètres dont dépend ensuite le niveau optimal, tient à la page 20 du rapport. C’est là que se voit ce qu’un chiffre du manque doit être pour entrer dans le calcul, et il faudra y aller pour le lire. Comment obtenir ce chiffre, en revanche, aucune de ces pages ne le dit, et les sources disponibles n’établissent sur ce point aucune méthode de mesure.",
+    "Le même travail a paru dans Econometrica en juillet 1951, sous les trois mêmes noms, à partir de la page 250 du volume 19. Ce que cette version resserre, reformule ou ajoute par rapport au rapport de 1950, et sous quelle forme la pénalité y est présentée, se lit dans ces pages : c’est là qu’il faudra aller. Sa page de fin, elle, ne s’établit avec certitude que sur le volume lui-même.",
+    "Le rapport renvoie enfin à des travaux qu’il nomme lui-même, celui de Wilson pour le lot économique, ceux de Whitin et Haack, celui de Markowitz. Ce sont les racines de la notion, et ce qu’elles portent chacune se lit chez elles."
+  ]
+}

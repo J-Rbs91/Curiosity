@@ -23,18 +23,21 @@ script ne peut pas dire : quel travail est possible aujourd'hui, ce qu'il coûte
 
 | chantier | volume | recherche documentaire ? | état |
 |---|---|---|---|
-| **A.** Approfondissements | 18 cartes | non | **ouvert, mais il a reculé de moitié le 29 août 2026** |
+| **A.** Approfondissements | **2 cartes** | non | **ouvert, presque clos — un lot de deux suffit** |
 | **B.** File de la sociologie des organisations | 25 entrées | oui, cartographie déjà faite | ouvert |
 | **C.** Domaines vides | **aucun** | — | **fermé le 28 août 2026** |
 | **D.** Reprises courtes de cinq domaines instruits | 14 textes | oui, accès déjà constaté | ouvert |
+| **E.** Le garde de la CI ne couvre qu'une moitié du répertoire projeté | 2 lignes | non | **ouvert, découvert le 31 août 2026** |
 
 Le chantier A s'était vidé le 21 août, il s'est rouvert et creusé pendant cinq lots d'ouverture
-consécutifs jusqu'à trente-quatre cartes le 28 août, **et le 29 il recule pour la première fois** :
-le passage 07 de la routine nocturne, première nuit de phase 2, en sert **seize en une nuit**, deux
-lots pleins de huit, qui est son plafond. **Dix-huit cartes restent.** Le chantier demeure le plus
-gros du dépôt et le seul que la routine ait à prendre, le chantier C étant clos, mais il ne
-représente plus qu'un peu plus d'une nuit pleine. **La file est celle de `npm run corpus:deepen`,
-pas celle de ce fichier.**
+consécutifs jusqu'à trente-quatre cartes le 28 août, **et depuis il recule de seize par nuit** :
+les passages 07 et 08 de la routine nocturne, les 29 et 31 août, en servent chacun seize, deux
+lots pleins de huit, qui est le plafond d'une nuit. **Deux cartes restent**,
+`trois-etats-psychologiques-critiques` et `trois-sigmas-arbitrage-de-cout`. Le chantier a cessé
+d'être le plus gros du dépôt : c'est désormais le chantier B. Il reste néanmoins le seul que la
+routine ait à prendre tant qu'il n'est pas vide, et **un lot de deux le clôt**, après quoi la
+condition B de la routine devient fausse et la phase 3 commence. **La file est celle de
+`npm run corpus:deepen`, pas celle de ce fichier.**
 
 **Le chantier C est fermé.** Il a perdu un domaine le 22 août, `systems-thinking`, un second le 23,
 `decision-science`, un troisième le 25, `operations-management`, un quatrième le 26,
@@ -53,10 +56,11 @@ ouverture qui n'aura pas lieu.
 # A. Les approfondissements
 
 **Vidé le 21 août 2026, rouvert le 23, doublé le 25, encore grossi les 26, 27 et 28, réduit de
-moitié le 29.** `corpus:deepen` projette désormais **82 approfondissements, 119 639 mots, 1 459 en
-moyenne**, et sa fin de sortie liste **dix-huit cartes** : cinq de la science de la décision,
-quatre de l'operations management, quatre de la psychologie du travail, trois de la sociologie du
-travail et deux de l'économie comportementale.
+moitié le 29, ramené à deux le 31.** `corpus:deepen` projette désormais **98 approfondissements,
+143 346 mots, 1 463 en moyenne**, et sa fin de sortie ne liste plus que **deux cartes** :
+`trois-etats-psychologiques-critiques`, en psychologie du travail, et
+`trois-sigmas-arbitrage-de-cout`, en operations management. **Neuf domaines sur onze sont
+entièrement servis.**
 
 C'est le seul écart actuel du corpus entre ce qui est validé et ce qui est servi, et il se comble
 par `/corpus-deepen`, sans aucune recherche documentaire : la matière est la carte elle-même, sa
@@ -66,11 +70,16 @@ rend au lecteur.** Et depuis la fermeture du chantier C, le 28 août, **c'est le
 nocturne ait à prendre** : sa §2 fait décider la première condition vraie, aucun domaine n'est plus
 vide, et la file du script est donc ce qui commande.
 
-**Ce qu'une nuit de phase 2 rend, mesuré une fois.** Le passage 07 a servi seize cartes : deux lots
-de huit, seize agents lancés en parallèle, environ cinq minutes par agent, aucun refus de
-projection et aucun renvoi. Seize est le plafond que la routine se donne, et **il est atteignable
-en une nuit** : le reste du chantier vaut donc une nuit pleine et une nuit courte, ce qui le rend
-prévisible pour la première fois.
+**Ce qu'une nuit de phase 2 rend, mesuré deux fois.** Les passages 07 et 08 ont servi seize cartes
+chacun : deux lots de huit, seize agents lancés en parallèle, environ cinq minutes par agent,
+aucun refus de projection et aucun renvoi, ni l'une ni l'autre nuit. Seize est le plafond que la
+routine se donne, et **il est atteignable en une nuit, deux nuits de suite**. Le passage 08 ajoute
+un fait qui n'était pas acquis : **aucun de ses seize agents n'a eu besoin d'un « écris
+maintenant »**, contre quatre sur seize au passage 07 et sept sur huit au passage 06. La
+surveillance, coût dominant des nuits d'ouverture, ne pèse pas sur les nuits de phase 2.
+
+**Ce qu'il reste vaut un lot de deux, et il clôt le chantier.** Après lui, la condition B de la
+routine devient fausse et la phase 3 commence.
 
 **La file n'est pas tenue ici.** `npm run corpus:deepen` l'affiche en fin de sortie, et c'est
 elle qui fait foi.
@@ -425,6 +434,32 @@ Trois autres manques du domaine sont plus lourds et demandent un vrai balayage :
 littératures de son périmètre n'ont pas été ouvertes, deux de ses trois textes viennent d'un
 nom écrit de mémoire, et un de ses trois thèmes repose entièrement sur Forrester.
 `corpus/map/systems-thinking.scouting.md` les nomme un par un et dit ce qui a été essayé.
+
+---
+
+# E. Le garde de la CI ne couvre qu'une moitié du répertoire projeté
+
+**Découvert le 31 août 2026, au passage 08, sans l'avoir cherché.** Le premier
+`npm run corpus:deepen` de la nuit, lancé pour constater l'état, a rendu un fichier différent de
+celui qui était commité : l'approfondissement d'`effet-de-cadrage` avait été corrigé dans
+`corpus/deepenings/` au passage 07, commit `c84eac6`, sans être reprojeté. Deux phrases disaient
+« programme » dans la projection là où l'enregistrement maître dit « option ». Le lecteur de
+l'application a vu, du 29 au 31 août, un texte que le dépôt ne portait plus.
+
+**Le diagnostic tient en une phrase, et il vaut plus que le cas.** `ci.yml` et `pages.yml` lancent
+`npm run corpus:build` puis `git diff --exit-code src/content/generated/`, ce qui a l'air de
+couvrir tout le répertoire projeté. Mais `corpus:build` n'écrit que `concepts.generated.ts` :
+`deepenings.generated.ts` n'est écrit que par `corpus:deepen`, que la CI ne lance jamais.
+**Toute correction portée à un enregistrement de `corpus/deepenings/` sans reprojection passe donc
+la CI sans être vue**, et le dépôt ne s'en apercevra qu'à la prochaine nuit de phase 2 — ou jamais,
+une fois cette phase close.
+
+**Le remède tient en une ligne dans chacun des deux workflows** : lancer `npm run corpus:deepen`
+avant le `git diff --exit-code`, ou l'ajouter au script `corpus:build` lui-même, ce qui a
+l'avantage de n'avoir à corriger aucun workflow et l'inconvénient de mêler deux projections que le
+dépôt a jusqu'ici tenues séparées. **Le choix n'a pas été fait, et il n'appartient pas à une
+routine nocturne de phase 2**, qui n'a pas mandat de toucher à la CI : il revient à une session
+de développement. La dérive elle-même est corrigée depuis le 31 août.
 
 ---
 

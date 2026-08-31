@@ -5,6 +5,78 @@ coup d'œil ce que la précédente a fait, sur quelle branche elle l'a laissé, 
 reprendre. **Les scripts priment sur ce fichier** : il dit ce qui a été tenté et pourquoi, ils
 disent ce qui est.
 
+## Passage 08/15 — 2026-08-31
+
+- branche      : `claude/zen-johnson-jbbigs` (imposée par la session, pas `main`). **Le travail du passage 07 est fusionné dans `main`** (PR [#83](https://github.com/J-Rbs91/Curiosity/pull/83), commit de merge `f72ddc1`), et cette branche partait de `main` à jour, au commit `1929441` : rien n'a été refait. Pull request [#89](https://github.com/J-Rbs91/Curiosity/pull/89) vers `main`, **ouverte et non fusionnée à la clôture**. Tant qu'elle n'est pas fusionnée, **la nuit suivante reprend depuis cette branche**, et non depuis `main`.
+- phase        : 2 (approfondissements), **deuxième nuit de phase 2**. Condition A fausse — aucun domaine à zéro carte validée depuis le passage 06. Condition B vraie — `corpus:deepen` listait 18 cartes sans approfondissement en début de nuit, et elle décidait seule. Aucune ouverture, aucune nouvelle carte, aucune recherche documentaire.
+- domaine      : aucun. La file du script traverse les domaines : les seize cartes servies relèvent de cinq domaines (science de la décision 5, operations management 3, psychologie du travail 3, sociologie du travail 3, économie comportementale 2).
+- validées     : 0 — une nuit de phase 2 n'écrit aucune carte. Le corpus reste à **100 cartes validées**, inchangé.
+- en review    : 0
+- rejetées     : 0
+- approfondies : **16 — deux lots pleins de huit**, le plafond de la nuit. Lot 1 : `heuristiques-de-jugement`, `mecanismes-de-l-objectif`, `mobilite-et-segmentation-de-l-emploi`, `niveaux-de-rationalite-economique`, `normatif-descriptif-prescriptif`, `objectif-specifique-et-difficile`, `penalite-de-rupture`, `penser-a-partir-des-valeurs`. Lot 2 : `precarite-des-trajectoires`, `regle-de-commande-a-deux-niveaux`, `regle-lineaire-de-decision`, `savoir-ouvrier-mis-en-regles`, `seuil-d-insatisfaction-salariale`, `seuils-de-rupture-et-d-ajustement`, `theorie-des-perspectives`, `theories-normatives-du-choix-sous-risque`. **Seize agents, seize textes, aucun refus de projection, aucun renvoi.** La file passe de **18 à 2**, et les approfondissements projetés de 82 à **98** (143 346 mots, 1 463 en moyenne).
+- contrôles    : validate 0 erreur (104 enregistrements, 100 validés, 81 avertissements) · build à jour, `git diff --exit-code src/content/generated/` **propre après reprojection** · test 482/0 · lint 0 · audit inchangé, ce qui est le résultat attendu d'une nuit qui ne crée aucune carte. Rien à drainer dans `src/content/fixtures/concepts.fixture.ts` : `corpus:build` n'a listé aucune entrée caduque, et une nuit de phase 2 ne peut pas en produire.
+- commit       : la nuit a été commitée par étapes, à mesure que les textes tombaient ; voir la branche.
+- bloqué par   : rien pour le travail de la nuit. Deux constats, en revanche, qui ne sont pas de son fait. **La nuit du 30 août n'a pas eu lieu** : le journal saute du passage 07, daté du 29, à celui-ci, daté du 31, et aucun commit de la routine ne porte la date manquante. Le compteur suit les passages, pas le calendrier, et il n'a donc pas été avancé pour elle. **Le serveur MCP `documentary` était toujours en échec de connexion** (`CONNECTION_CLOSED`), pour la troisième nuit consécutive : sans conséquence ici, un `corpus-deepener` n'ouvrant aucune source, mais il redeviendra bloquant dès qu'une nuit de phase 3 cherchera une secondaire.
+- la nuit suivante prend : **phase 2 une dernière fois, puis phase 3.** Deux cartes restent sans approfondissement, `trois-etats-psychologiques-critiques` (psychologie du travail) et `trois-sigmas-arbitrage-de-cout` (operations management). Un lot de deux les sert, et **la condition B devient fausse pour la première fois depuis le passage 06.** La nuit suivante enchaîne alors sur la phase 3, dont la §2 désigne la cible : le domaine dont le journal donne l'enrichissement le plus ancien, et en son sein d'abord les thèmes déclarés sans aucune carte validée, que `corpus:audit` liste en fin de sortie — **ils ne sont plus que deux, `autorite-domination` et `apprentissage-organisationnel`**, tous deux en sociologie des organisations, `reaction-insatisfaction` ayant été comblé entre-temps. La file est celle de `npm run corpus:deepen`, en fin de sortie, et elle fait foi contre tout fichier.
+
+### Ce que cette nuit a établi, en une phrase
+
+La routine sert seize approfondissements pour la deuxième nuit consécutive, vide le chantier à
+deux cartes près, et la phase 2 touche à sa fin.
+
+### Ce que la nuit a trouvé sans le chercher : la projection avait dérivé de son enregistrement maître
+
+**Le premier `npm run corpus:deepen` de la nuit, lancé pour constater l'état, a rendu un fichier
+différent de celui qui était commité.** L'approfondissement d'`effet-de-cadrage` avait été corrigé
+dans `corpus/deepenings/` au passage 07, au commit `c84eac6`, sans être reprojeté : deux phrases
+disaient « programme » dans `src/content/generated/deepenings.generated.ts` là où l'enregistrement
+maître dit « option ». Le lecteur de l'application voyait donc un texte que le dépôt ne portait
+plus.
+
+**Aucune CI ne pouvait l'attraper, et c'est le point qui resservira.** Le workflow lance
+`npm run corpus:build` puis `git diff --exit-code src/content/generated/`, ce qui a l'air de
+couvrir tout le répertoire projeté. Mais `corpus:build` n'écrit que `concepts.generated.ts` :
+`deepenings.generated.ts` n'est écrit que par `corpus:deepen`, que la CI ne lance pas. **Le garde
+existe, il ne garde qu'une moitié du répertoire.** Le remède tient en une ligne dans les deux
+workflows, `ci.yml` et `pages.yml` ; il n'a pas été posé cette nuit, une routine de phase 2
+n'ayant pas mandat de toucher à la CI, et il est inscrit au chantier E de `RESTE-A-FAIRE.md`.
+La dérive elle-même a été corrigée au premier commit de la nuit.
+
+### Ce que la deuxième nuit de phase 2 confirme, et ce qu'elle corrige
+
+**Le plafond de seize se tient, et il se tient sans surveillance.** Comme au passage 07, les deux
+lots de huit ont rendu entiers. **Aucun agent n'a eu besoin d'un « écris maintenant »** cette nuit,
+contre quatre sur seize au passage 07 et sept sur huit au passage 06 : la relance, qui était le
+coût dominant des nuits d'ouverture, a disparu des nuits de phase 2. La durée moyenne d'un agent
+s'est établie autour de cinq minutes, la plus longue à six.
+
+**Un agent peut corriger son texte après avoir rendu son compte rendu, et il faut projeter
+après lui, pas avant.** L'agent d'`objectif-specifique-et-difficile` a retiré, une fois son
+rapport remis, deux guillemets imbriqués que l'échappement JSON faisait trébucher — le cas repéré
+au passage 07 —, en remplaçant la portion citée par « […] » et en rendant le sens omis en français.
+La projection du lot 1 avait déjà eu lieu : elle a été refaite à la clôture. **La parade est de
+reprojeter une dernière fois avant les contrôles de fermeture**, ce qui a été fait, et non de
+projeter dès le dernier compte rendu.
+
+### La faiblesse structurelle, inchangée, et désormais mesurable
+
+**Les seize textes déclarent, presque tous, l'absence de source secondaire ouverte**, et plusieurs
+le disent maintenant avec une précision qui vaut plan de travail : `mobilite-et-segmentation-de-l-emploi`
+renvoie aux travaux que Grelet et Mansuy créditent elles-mêmes ; `savoir-ouvrier-mis-en-regles`
+nomme le Braverman de 1974 comme la source du vocabulaire courant du commentaire, sans l'avoir
+ouvert ; `seuils-de-rupture-et-d-ajustement` renvoie à l'article de 1957 du même auteur, connu par
+sa seule notice. **Un `corpus-deepener` n'y peut rien**, il n'ouvre aucune source. Cette dette ne
+se paiera qu'en phase 3, sur des reprises courtes, et le chantier D de `RESTE-A-FAIRE.md` en tient
+la liste. **Elle deviendra la difficulté dominante de la routine dès la nuit d'après la
+suivante**, et elle suppose que le serveur `documentary` réponde.
+
+**Ce que les textes ont refusé d'écrire reste le meilleur signe de leur qualité.** Trois refus
+méritent d'être notés parce qu'ils portent sur des points qu'un texte pressé aurait comblés :
+`regle-lineaire-de-decision` ne dit rien de la démonstration du résultat, l'annexe qui la porte
+manquant à l'exemplaire numérisé ; `theorie-des-perspectives` refuse de souder l'aversion aux
+pertes à la citation affichée, faute de verbatim ; `normatif-descriptif-prescriptif` ne nomme pas
+le métier de deux des trois directeurs du volume, que le texte laisse deviner sans le dire.
+
 ## Passage 07/15 — 2026-08-29
 
 - branche      : `claude/zen-johnson-a8t77x` (imposée par la session, pas `main`). **Le travail du passage 06 est fusionné dans `main`** (PR [#82](https://github.com/J-Rbs91/Curiosity/pull/82), commit de merge `973db4d`), et cette branche partait de `main` à jour, à ce commit : rien n'a été refait. Pull request [#83](https://github.com/J-Rbs91/Curiosity/pull/83) vers `main`, ouverte à la clôture, **puis fusionnée dans `main`** le 29 août à 06h35 UTC, commit de merge `f72ddc1`, CI verte sur les trois checks (`corpus`, `app`, `gitleaks`). **La nuit suivante repart donc de `main`**, et non de cette branche : tout le travail du passage 07 y est.

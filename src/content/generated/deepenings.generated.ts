@@ -1770,8 +1770,8 @@ export const generatedDeepenings: Deepening[] = [
       {
         "title": "Deux groupes, deux énoncés, une épidémie",
         "paragraphs": [
-          "Dans le chapitre de 1988, la démonstration occupe la page 174. Deux problèmes y sont numérotés 5 et 6, et posés à propos d’une épidémie : c’est le problème dit de la maladie asiatique. Le premier a reçu 152 réponses, le second 155. Chacun propose deux programmes, l’un dont le résultat est acquis, l’autre qui joue sur des probabilités. La seule chose qui les sépare est la manière de compter les issues : « the former is framed in terms of the number of lives saved », le premier est formulé en nombre de vies sauvées, « whereas the latter is framed in terms of the number of lives lost », tandis que le second l’est en nombre de vies perdues.",
-          "Les réponses se renversent. D’un côté, 72 % contre 28 % ; de l’autre, 22 % contre 78 %. Là où les issues se comptent en vies sauvées, le programme sans aléa l’emporte largement ; là où elles se comptent en vies perdues, c’est le pari qui rassemble une majorité comparable. Les auteurs ne laissent aucune échappatoire sur la nature de l’écart : « Problems 5 and 6, however, are essentially identical », les problèmes 5 et 6 sont pourtant essentiellement identiques, et ils ne diffèrent que par ce point."
+          "Dans le chapitre de 1988, la démonstration occupe la page 174. Deux problèmes y sont numérotés 5 et 6, et posés à propos d’une épidémie : c’est le problème dit de la maladie asiatique. Le premier a reçu 152 réponses, le second 155. Chacun propose deux options, l’une dont le résultat est acquis, l’autre qui joue sur des probabilités. La seule chose qui les sépare est la manière de compter les issues : « the former is framed in terms of the number of lives saved », le premier est formulé en nombre de vies sauvées, « whereas the latter is framed in terms of the number of lives lost », tandis que le second l’est en nombre de vies perdues.",
+          "Les réponses se renversent. D’un côté, 72 % contre 28 % ; de l’autre, 22 % contre 78 %. Là où les issues se comptent en vies sauvées, l’option sans aléa l’emporte largement ; là où elles se comptent en vies perdues, c’est le pari qui rassemble une majorité comparable. Les auteurs ne laissent aucune échappatoire sur la nature de l’écart : « Problems 5 and 6, however, are essentially identical », les problèmes 5 et 6 sont pourtant essentiellement identiques, et ils ne diffèrent que par ce point."
         ]
       },
       {
@@ -2562,6 +2562,60 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "heuristiques-de-jugement",
+    "lead": [
+      "Quelqu’un vous demande si le train de 18 h 40 sera à l’heure, si le chantier d’en face sera fini avant l’hiver, si la personne que vous venez de recevoir tiendra le poste. Vous répondez, et vous répondez vite : sans table de fréquences, sans avoir rien compté, et pourtant avec une idée assez nette de votre degré de confiance. La question intéressante n’est pas de savoir si vous avez raison. C’est de savoir ce que vous avez fait à la place du calcul que vous n’avez pas fait.",
+      "Amos Tversky et Daniel Kahneman ouvrent là-dessus un rapport d’août 1973, et sans détour : « What determines such beliefs? How do people assess the likelihood of an uncertain event or the value of an uncertain quantity? », qu’est-ce qui détermine de telles croyances, comment évalue-t-on la vraisemblance d’un événement incertain ou la valeur d’une quantité incertaine. Leur réponse ne parle ni de paresse ni d’ignorance. Elle dit qu’il existe un petit jeu de procédés par lesquels une tâche hors d’atteinte devient une opération que l’on sait faire, et que ces procédés rendent service la plupart du temps."
+    ],
+    "sections": [
+      {
+        "title": "La croyance qui précède la décision",
+        "paragraphs": [
+          "Le rapport ne commence pas par des erreurs, il commence par des croyances. Sa première phrase pose que « Most important decisions are based on beliefs concerning the likelihood of uncertain events », que la plupart des décisions importantes reposent sur des croyances relatives à la vraisemblance d’événements incertains. L’objet d’étude se place donc en amont du choix : avant de trancher, il faut bien s’être fait une idée de ce qui risque d’arriver, et cette idée ne tombe pas du ciel.",
+          "Les deux questions qui suivent séparent deux choses que l’on confond volontiers. Évaluer une vraisemblance, c’est dire quelle chance une chose a d’arriver ; prédire une valeur, c’est dire combien : un délai, une note, un chiffre. La thèse porte sur les deux à la fois, et la phrase les nomme l’une et l’autre : « people rely on a limited number of heuristic principles by which they reduce the complex tasks of assessing likelihoods and predicting values to simpler judgmental operations », on s’appuie sur un nombre limité de principes heuristiques par lesquels on réduit les tâches complexes que sont l’évaluation des vraisemblances et la prédiction des valeurs à des opérations de jugement plus simples.",
+          "Le mot heuristique n’est pas défini dans ce paragraphe, et mieux vaut s’en tenir à ce que la phrase en montre : est heuristique un principe qui permet de traiter la question par une opération plus simple que celle qu’elle réclame. On peut comprendre le geste comme un échange. La tâche qu’il faudrait accomplir est laissée de côté ; une autre, plus courte, est accomplie à sa place ; et c’est le résultat de celle-ci qui est donné en réponse à la première."
+        ]
+      },
+      {
+        "title": "Utiles d’abord, fautives par système",
+        "paragraphs": [
+          "La phrase suivante est celle que l’on cite le moins et qui décide de tout : « In general, these heuristics are quite useful, but sometimes they lead to severe and systematic errors. » En général ces heuristiques sont fort utiles, mais elles conduisent parfois à des erreurs graves et systématiques. Les deux moitiés se tiennent. Sans la première, on ne comprendrait pas pourquoi de tels procédés se maintiennent ; sans la seconde, il n’y aurait rien à étudier.",
+          "Le mot qui porte est « systématiques ». On peut comprendre son intérêt ainsi : une erreur systématique n’est pas une bévue, elle penche toujours du même côté, chez des personnes différentes et sur des questions différentes. C’est ce qui la rend montrable. Une erreur qui varie au hasard ne renseigne sur rien ; une erreur qui se répète dans le même sens trahit la règle qui l’a produite, et c’est par là que le procédé, invisible en lui-même, devient observable.",
+          "Il en découle une lecture qui n’est pas toujours celle qu’on prête à ce travail. Le biais n’y est pas le symptôme d’un esprit défaillant qu’un peu de calcul viendrait redresser : c’est la trace laissée par un procédé qui rend service ailleurs. L’adjectif « graves » figure d’ailleurs à côté de « systématiques » dans la même phrase, si bien que rien n’y minimise les conséquences. Ce qui est refusé, c’est de faire de l’erreur le fond de l’affaire."
+        ]
+      },
+      {
+        "title": "Ce que le rapport appelle une heuristique",
+        "paragraphs": [
+          "Trois noms circulent aujourd’hui comme allant de soi : représentativité, disponibilité, ancrage. Le texte de 1973 est plus économe. Il appelle heuristique la représentativité, à la page 3, et la disponibilité, aux pages 15 et 20. Le troisième cas est traité autrement : l’ancrage y est nommé comme un phénomène, et ce qui reçoit le nom d’heuristique est « an adjustment from a starting point », un ajustement à partir d’un point de départ. L’expression « anchoring heuristic » ne figure nulle part dans ces trente-trois pages.",
+          "La nuance n’est pas d’érudition. Un phénomène est ce que l’on constate ; un procédé de jugement est ce que la personne fait, et c’est lui que la thèse met en cause. Appeler « heuristique d’ancrage » ce que le texte tient pour un phénomène revient à donner d’avance pour acquis le mécanisme qu’il s’agit justement d’établir.",
+          "Le résumé de la page 31 rattache l’ancrage-ajustement à un emploi précis, « usually employed in numerical prediction », employé d’ordinaire dans la prédiction numérique. C’est le versant combien de la thèse, celui qui répond par un nombre plutôt que par une chance, et qu’il serait dommage de perdre en ne retenant du travail que la question des probabilités."
+        ]
+      },
+      {
+        "title": "« Un nombre limité » n’est pas un compte",
+        "paragraphs": [
+          "La thèse de la première page ne dit pas trois, elle dit un nombre limité. Le compte de trois apparaît ailleurs, à deux endroits qui ont une fonction d’affichage : l’annonce de plan de la page 2 et le résumé de la page 31. Entre les deux, à la page 26, la discussion revient à l’indéfini et parle de « some heuristics », de certaines heuristiques.",
+          "L’écart entre les deux formulations décide de ce que l’on croit lire. Une liste fermée appelle la question de savoir si elle est complète, et fait de l’ensemble un inventaire à vérifier. La formule ouverte affirme autre chose : qu’il existe un petit nombre de tels procédés, et qu’ils suffisent à rendre compte de beaucoup. Les trois exposés sont des cas, et le texte en annonce trois parce qu’il en traite trois. Rien dans cette page n’interdit qu’on en décrive d’autres."
+        ]
+      },
+      {
+        "title": "La phrase de 1973 et celle de 1974",
+        "paragraphs": [
+          "Le texte cité ici n’est pas l’article que l’on connaît. C’est un rapport technique de contrat, daté d’août 1973, signé par Amos Tversky et Daniel Kahneman, tous deux rattachés à l’Université hébraïque de Jérusalem, trente-trois pages, portant aussi un numéro de bulletin d’institut, Research Bulletin, volume 13, numéro 1. Son corps s’arrête à la page 31 sur un résumé ; les pages 32 et 33 portent seize notes. Ces notes renvoient à des résultats déjà parus, dans le Psychological Bulletin en 1971 et dans Cognitive Psychology en 1972, et deux d’entre elles annoncent des articles encore à paraître. Ce n’est pas le compte rendu d’une expérience : c’est une mise en ordre.",
+          "La version par laquelle ce travail est connu paraît un an plus tard, dans Science, le 27 septembre 1974. Elle commence presque de la même façon, et pas tout à fait : « This article shows that people rely on a limited number of heuristic principles which reduce the complex tasks of assessing probabilities and predicting values to simpler judgmental operations. » Trois écarts. L’annonce d’un thème est devenue la promesse d’une démonstration. Les vraisemblances sont devenues des probabilités. Et « by which they reduce » est devenu « which reduce ».",
+          "Ce dernier déplacement change le sujet de la phrase. En 1973, ce sont les personnes qui réduisent la tâche, les principes étant ce par quoi elles la réduisent ; en 1974, ce sont les principes qui la réduisent. La différence est mince à l’oreille et sérieuse à l’usage : selon la version que l’on cite, on décrit une chose que les gens font, ou un mécanisme qui opère en eux. Les deux tournures ont cours, chacune adossée à son texte, et la seconde est celle que la postérité a retenue."
+        ]
+      }
+    ],
+    "limits": [
+      "Ce que la représentativité et la disponibilité recouvrent au juste tient dans les trente et une pages de texte du rapport d’août 1973 ; les pages 3, 15 et 20 sont celles où les deux noms se posent. Les résultats, eux, avaient d’abord paru ailleurs, et les notes finales y renvoient : le Psychological Bulletin de 1971, Cognitive Psychology de 1972.",
+      "Au-delà de sa première phrase, ce que la version de Science du 27 septembre 1974, pages 1124 à 1131, déplace dans l’argument, ce sont ses huit pages qui le disent.",
+      "Le chapitre premier du volume dirigé par Kahneman, Slovic et Tversky en 1982 remet ce texte en tête d’un recueil qui rassemble un domaine entier. L’état où il le donne alors, et ce que le recueil construit autour de lui, se lisent là.",
+      "Aucune traduction française publiée de ce rapport n’est connue. Le rendu français proposé ici tranche deux points que l’anglais laisse ouverts : « likelihood » y devient vraisemblance plutôt que probabilité, et « judgmental operations » opérations de jugement plutôt qu’opérations mentales, expression que le rapport emploie aussi, dans son résumé de la page 31. Pour la lettre, c’est l’anglais qui fait foi."
+    ]
+  },
+  {
     "conceptId": "histoire-naturelle-des-reseaux",
     "lead": [
       "Une équipe de recherche, une colonie de micro-organismes, un marais : Gordon Pask range ces trois choses dans la même catégorie, et il y ajoute un homme. Elles n’ont ni la même matière ni la même taille. Elles ont en commun de s’arranger toutes seules, sans rien devoir de cet arrangement à qui les regarde. On peut les décrire, les mesurer, en dresser l’inventaire ; ce qu’on ne peut pas faire, c’est désigner d’avance la pièce qui remplit telle fonction, ni prévoir par quel bout l’ensemble va se réorganiser.",
@@ -2962,6 +3016,67 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "mecanismes-de-l-objectif",
+    "lead": [
+      "Deux consignes pour le même travail. La première dit : faites de votre mieux. La seconde dit : quarante dossiers traités avant vendredi. La seconde obtient presque toujours davantage, et c’est un des résultats les plus répétés de la psychologie du travail. Reste une question que ce constat laisse entière : par quoi cet effet passe-t-il ? Un objectif n’est qu’une phrase. Il n’ajoute ni bras ni heures à la journée, il ne pousse personne dans le dos. Entre le moment où quelqu’un l’a en tête et celui où le travail avance mieux, quelque chose se produit, et ce quelque chose demande à être nommé.",
+      "En juin 1980, quatre chercheurs, Edwin A. Locke, Karyll N. Shaw, Lise M. Saari et Gary P. Latham, remettent un rapport technique, écrit sous contrat avec l’Office of Naval Research, qui fait le bilan de douze années de recherches sur les objectifs de travail. Leur réponse tient dans une décomposition : l’effet d’un objectif ne serait pas une force unique, mais plusieurs choses distinctes qu’il fait à la personne qui le poursuit, et qui s’additionnent."
+    ],
+    "sections": [
+      {
+        "title": "Ce qu’un objectif fait regarder",
+        "paragraphs": [
+          "Le premier des mécanismes que les auteurs isolent est le plus facile à observer, et il ne concerne pas l’énergie dépensée : un objectif oriente. Une personne qui poursuit un but précis ne travaille pas plus dur dans les premières minutes, elle travaille sur autre chose. Ce qui compte pour le but passe devant, le reste sort du champ. Les auteurs le nomment d’une formule brève, diriger l’attention et l’action.",
+          "Imaginons une équipe à qui l’on demande de réduire le délai de réponse aux clients. Sans consigne chiffrée, chacun traite ce qui se présente dans l’ordre où cela se présente. Avec elle, les tâches qui pèsent sur le délai passent en premier, celles qui n’y changent rien reculent, et personne n’a eu besoin de décider de les négliger. C’est le tri qui fait la différence, avant l’ardeur.",
+          "Cela implique aussitôt un revers, qui tient à la même logique : ce qui n’entre pas dans l’objectif recule avec tout le reste, y compris quand cela importe. Un mécanisme qui trie ne trie pas seulement en faveur de quelque chose."
+        ]
+      },
+      {
+        "title": "L’effort, puis le fait de le tenir",
+        "paragraphs": [
+          "Le deuxième mécanisme est celui auquel on pense spontanément : un objectif mobilise de l’effort, et il en mobilise à peu près à la mesure de ce qu’il demande. Le troisième prolonge le deuxième dans le temps : c’est la persistance, le fait de continuer quand la tâche dure. Les auteurs les comptent séparément, et pourtant ils écrivent eux-mêmes de la persistance qu’elle n’est « nothing more than directed effort extended over time; thus it is a combination of the previous two mechanisms », rien de plus que de l’effort dirigé prolongé dans la durée, donc une combinaison des deux mécanismes précédents.",
+          "La liste est ainsi moins plate qu’elle en a l’air : son troisième terme n’est pas une voie parallèle aux deux premières, il en est le produit lorsque le temps passe. Les auteurs signalent d’ailleurs, sur ce point, un trou dans les preuves : « Most laboratory experiments on goal setting have not been designed to allow for the measurement of persistence effects since time limits have been typically imposed ». Les expériences de laboratoire, dont la durée est fixée d’avance, ne sont pas construites pour mesurer un effet de persistance, et les études de terrain, ajoutent-ils, n’ont mesuré que les résultats obtenus, non la manière dont ils l’ont été.",
+          "Ils referment le paragraphe d’une phrase courte : « More studies of this type would be highly desirable. » Il serait hautement souhaitable d’avoir plus d’études de ce type. C’est la remarque la plus franche du chapitre sur son propre degré de certitude, et elle porte sur l’un des quatre mécanismes."
+        ]
+      },
+      {
+        "title": "Le quatrième n’est pas de même nature",
+        "paragraphs": [
+          "Le dernier mécanisme appartient à une autre espèce, et les auteurs le disent en toutes lettres : « While the above three mechanisms are relatively direct in their effects, this last mechanism is indirect ». Un but exigeant pousse à chercher comment s’y prendre : essayer un autre ordre, apprendre un geste, inventer une façon de faire qui n’existait pas dans l’équipe. Cet effet ne passe pas par la quantité d’énergie versée dans la tâche, il passe par ce que la personne finit par savoir faire.",
+          "La précision compte, parce qu’elle sort du registre de la motivation. Le but déclenche la recherche, mais « the mechanism itself is cognitive in essence » : ce qui produit le résultat relève de la compétence acquise et de la résolution de problème, non de l’envie ou de l’engagement.",
+          "La conséquence pratique est peut-être celle qui porte le plus loin. « This latter mechanism seems especially important in complex tasks; if the requisite strategies are not developed, the increased motivation provided by the goals will not be translated into effective performance. » Sur une tâche complexe, si les stratégies nécessaires ne se développent pas, le surcroît de motivation apporté par l’objectif ne se traduit pas en performance. Le travail devient plus tendu sans devenir meilleur."
+        ]
+      },
+      {
+        "title": "Quatre, ou au moins quatre",
+        "paragraphs": [
+          "Combien de mécanismes, au juste ? Le rapport ne répond pas partout de la même manière. En tête du chapitre, page 19, et de nouveau dans les conclusions générales, page 59, il y en a au moins quatre : la formule laisse la porte ouverte à d’autres. Mais à la fin du même chapitre, page 24, la phrase devient « There are four known mechanisms by which goals affect task performance ». Les deux tournures ne disent pas la même chose, et le texte ne tranche pas entre elles : selon la page que l’on ouvre, il paraît plus assuré ou moins assuré sur son propre décompte.",
+          "Ce flottement se comprend mieux quand on regarde ce qui soutient la liste. Que les objectifs améliorent la performance est, pour les auteurs, hors de doute : c’est, écrivent-ils dans leurs conclusions, « one of the most robust and replicable findings in the psychological literature ». Que ce soient précisément ces quatre mécanismes qui produisent l’effet relève d’un autre degré de certitude.",
+          "Leur appui principal sur ce point est une étude de Terborg, parue en 1976, dans laquelle la relation entre objectifs et performance s’évanouit une fois ces mécanismes neutralisés statistiquement. Les auteurs y voient une confirmation, et prennent soin d’ajouter entre parenthèses qu’il s’agit là d’au moins une partie des mécanismes en jeu. L’effet est solidement établi ; son explication est une hypothèse étayée, et ils l’écrivent comme telle."
+        ]
+      },
+      {
+        "title": "Quel genre d’objectif produit cet effet",
+        "paragraphs": [
+          "Un mot mérite d’être resserré, car il est trop large : « objectif » ne désigne pas ici n’importe quelle intention. Ce que ces travaux documentent, ce sont des buts précis et difficiles. Le résumé du rapport le formule ainsi : « specific, challenging goals led more often to higher performance than easy goals », des objectifs spécifiques et exigeants ont conduit plus souvent à une performance supérieure que des objectifs faciles, que la consigne de faire de son mieux, ou que l’absence d’objectif.",
+          "On peut le comprendre à partir des mécanismes eux-mêmes. « Faites de votre mieux » ne dirige l’attention vers rien de particulier, ne fixe aucune quantité d’effort à mobiliser, ne fournit aucun repère pour savoir jusqu’à quand insister, et ne dit pas quelle stratégie il faudrait inventer. Les quatre mécanismes n’ont là aucune prise. C’est pourquoi cette consigne sert de point de comparaison si commode dans ces recherches : elle a la forme d’un objectif sans en avoir les propriétés."
+        ]
+      },
+      {
+        "title": "Une idée plus ancienne que ce rapport",
+        "paragraphs": [
+          "Ce rapport n’est pas l’acte de naissance de la thèse, et il ne le prétend pas. C’est une revue : il rassemble et pèse ce qui a été publié depuis 1968, année où Locke avait formulé l’idée seul. Dès sa première page, le texte se donne deux ascendances. Une ascendance savante, qui remonte « from Ryan (1970) and Miller, Galanter and Pribram (1960), through Lewin to the Wurzburg School », donc jusqu’à la psychologie allemande du début du vingtième siècle. Une ascendance gestionnaire, qui part de la direction par objectifs et redescend jusqu’au mouvement d’organisation scientifique du travail fondé par Frederick W. Taylor.",
+          "Le décompte en quatre, lui, appartient bien à ce texte de 1980 et à ses quatre signataires. Le mécanisme du développement de stratégies s’appuie sur des travaux parus entre 1975 et 1980 : il ne pouvait pas figurer dans la formulation de 1968. Ce que ces douze années de recherches ont ajouté n’est donc pas l’idée que les objectifs font mieux travailler, c’est l’inventaire de ce qui, dans un objectif, produit cet effet."
+        ]
+      }
+    ],
+    "limits": [
+      "Ce que Locke soutenait en 1968, et lesquels de ces mécanismes il nommait déjà, se lit dans son article de cette année-là : c’est lui qu’il faudra ouvrir pour dater chaque élément de la liste.",
+      "Les résultats sur lesquels s’appuie ce chapitre sont ceux d’autres chercheurs, résumés en quelques lignes chacun. L’étude de Terborg surtout, seul appui présenté comme montrant que ce sont bien ces mécanismes qui font l’effet : ce qu’elle mesure exactement, et sur qui, est dans l’article de 1976.",
+      "Aucune traduction française publiée de ce rapport n’est repérée à ce jour. La phrase citée a été traduite pour l’occasion, et « regulate » y devient « règlent » plutôt que « régulent », qui laisserait entendre une boucle de correction. Qui veut la lettre du texte la trouvera en anglais.",
+      "Ce que quarante années de travaux postérieurs ont fait de ce décompte, confirmé, allongé ou déplacé, ne se lit pas dans un texte arrêté en 1980 : c’est la littérature publiée depuis qu’il faudra suivre pour le savoir."
+    ]
+  },
+  {
     "conceptId": "mesure-devenue-cible",
     "lead": [
       "Imaginons une école jugée sur la part de ses élèves qui obtiennent la meilleure mention à un examen national. Au départ, ce chiffre est utile : il donne une idée assez fiable de la qualité de l’enseignement qu’on y reçoit. Mais si le financement de l’école, son classement, la carrière de ses professeurs finissent par dépendre directement de ce pourcentage, quelque chose change. On cesse d’enseigner pour que les élèves comprennent, et l’on commence à enseigner pour que le pourcentage monte, ce qui n’est pas tout à fait la même chose. Le chiffre continue d’exister ; il ne mesure plus ce pour quoi il avait été créé.",
@@ -3011,6 +3126,57 @@ export const generatedDeepenings: Deepening[] = [
       "L’observation monétaire à laquelle le nom de Goodhart reste attaché arrive ici par le résumé qu’en donne Hoskin, et non par le texte où Goodhart la formule lui-même. Ses termes exacts sont dans ce texte-là : c’est celui qu’il faut lire avant de lui prêter une phrase.",
       "Du chapitre de Hoskin, ce qui précède retient des passages, pas la continuité de l’argument. Ce que le chapitre démontre d’un bout à l’autre, dans quel ordre et contre quoi, se lit d’une traite ; les extraits n’en donnent que les points d’appui.",
       "Qui, le premier, a employé l’expression « loi de Goodhart » n’est pas tranché. Hoskin la présente en 1996 comme une appellation déjà répandue plutôt que comme la sienne, et aucune occurrence imprimée antérieure n’a refait surface jusqu’ici : la question attend celui qui remontera la littérature monétaire des années quatre-vingt."
+    ]
+  },
+  {
+    "conceptId": "mobilite-et-segmentation-de-l-emploi",
+    "lead": [
+      "Deux personnes ont dix ans de travail derrière elles. La première a gardé le même poste tout du long ; la seconde en a changé sept fois. Devant leurs deux parcours, un mot vient presque tout seul : la seconde serait instable. Le mot a l’air d’expliquer, et surtout il ferme la question, parce qu’il loge la cause dans la personne et l’y laisse. Il suppose au passage que les deux trajets étaient également possibles pour l’une et pour l’autre, et que ce qui les sépare tient à un tempérament ou à une suite de choix.",
+      "Or les emplois ne s’enchaînent pas partout de la même manière. Il existe des métiers où l’on passe d’un poste au suivant par des chemins connus d’avance, et d’autres où chaque emploi est une impasse dont on ne sort qu’en recommençant ailleurs. C’est de ce côté que regarde Jean Grisez, dans un exposé de quatre pages paru en 1980 dans un numéro du Bulletin de psychologie consacré à la psychologie du travail : avant de qualifier les personnes, décrire la façon dont les emplois eux-mêmes sont reliés, ou ne le sont pas."
+    ],
+    "sections": [
+      {
+        "title": "« Instable », un mot qui ferme la question",
+        "paragraphs": [
+          "La phrase par laquelle Grisez ouvre son propos est prudente, et sa prudence est exactement le point : « il serait imprudent de rapporter, sans plus, à une « instabilité » individuelle les comportements caractérisés par de nombreux changements ». Deux détails y comptent. Le premier est qu’il met lui-même le mot instabilité entre guillemets, comme on tient à distance un terme dont on se sert sans y souscrire. Le second est « sans plus » : il n’écrit pas qu’une part individuelle n’existe pas, il écrit qu’on ne peut pas y aller directement, sans avoir regardé autre chose avant.",
+          "Ce qui est visé, c’est une manière de raisonner qui tourne sur elle-même : on observe que quelqu’un change souvent d’emploi, on en conclut qu’il est instable, et l’on explique ensuite ses changements par son instabilité. Le trait a été fabriqué à partir du comportement qu’il doit rendre compréhensible, et il n’ajoute rien à ce qu’on savait déjà. Le nombre de changements reste alors la seule chose observée, et il est traité comme un symptôme au lieu d’être traité comme une question."
+        ]
+      },
+      {
+        "title": "Ce que l’individu y trouve, et ce qui reste dehors",
+        "paragraphs": [
+          "Grisez ne fait pas disparaître la personne du tableau. Il admet que les emplois ont, pour celui qui les occupe, des valeurs, et que changer d’emploi a une utilité, matérielle autant que psychologique : on part parce qu’on gagnera mieux, parce qu’on sera plus près de chez soi, parce qu’on ne supporte plus une équipe. Rien de cela n’est nié. Ce qu’il conteste, c’est la place que ces raisons occupent dans l’explication : mettre l’accent sur les déterminants individuels conduit à négliger les caractéristiques structurelles des marchés du travail.",
+          "Le mot structurel n’a rien de mystérieux ici : il désigne ce qui, dans un marché du travail, ne dépend d’aucun des candidats en particulier. Quels emplois existent dans un métier et dans une région, lesquels ouvrent sur d’autres, à quelles conditions on y entre, ce que l’on peut espérer y faire ensuite. Chacun rencontre cela comme un état de fait, et deux personnes de mêmes dispositions ne feront pas le même parcours si elles ne rencontrent pas le même état de fait. C’est cette part-là que l’explication par le tempérament laisse hors du champ.",
+          "La différence entre nier et subordonner est ici décisive, et l’auteur la marque lui-même : il qualifie de psycho-sociologique, et non de sociologique, la situation qu’il décrit. Autrement dit, il ne remplace pas une explication par les personnes par une explication par les structures. Les personnes continuent d’avoir des raisons et d’agir sur elles ; simplement, elles agissent dans un espace d’emplois qui n’est pas le même pour tout le monde, et cet espace décide en partie de ce que leurs raisons peuvent produire."
+        ]
+      },
+      {
+        "title": "Des emplois qui se suivent, des emplois isolés",
+        "paragraphs": [
+          "Le mot que Grisez reprend pour nommer cet espace est celui de filière : des emplois reliés entre eux, de telle sorte que l’un mène quelque part plutôt que nulle part. Son résultat tient en une phrase, à la dernière page de l’exposé : « lorsque les emplois sont intégrés dans des filières les changements sont peu fréquents mais lorsqu’ils se produisent ils ont tendance à en entraîner d’autres, tandis que lorsque les emplois ne sont pas intégrés dans des filières les mouvements sont fréquents mais tendent à être indépendants les uns des autres. »",
+          "Deux régimes, donc, et ils ne se distinguent pas par la seule quantité de mouvement. Là où des filières existent, on bouge peu, et un mouvement en appelle d’autres : le premier pas ouvre le suivant, la suite forme une progression. Là où il n’y en a pas, on bouge beaucoup, et chaque déplacement reste seul : le suivant ne se déduit pas du précédent, on repart d’un point voisin de celui d’où l’on était parti la fois d’avant.",
+          "Le contraste est plus instructif qu’il n’y paraît, parce qu’il inverse une attente courante. On associe volontiers la fréquence des changements à l’élan et à la réussite ; ici, la fréquence élevée signale plutôt l’absence de liens entre les emplois disponibles, et la rareté des changements accompagne les parcours où chaque pas compte. Cela implique que le nombre de changements, pris seul, ne renseigne pas d’abord sur la personne : il renseigne sur le monde d’emplois dans lequel elle se déplace."
+        ]
+      },
+      {
+        "title": "Compter les changements sans savoir lesquels",
+        "paragraphs": [
+          "Imaginons deux personnes qui présentent le même chiffre, quatre employeurs en huit ans. La première a suivi une progression où chaque poste rendait le suivant accessible, et son quatrième emploi ne lui aurait pas été ouvert sans les trois autres. La seconde a occupé quatre postes équivalents, sans qu’aucun ait rien ouvert : elle serait aujourd’hui au même endroit si elle n’avait jamais bougé. Le chiffre est identique, il ne décrit pas la même chose, et il ne dit rien de qui l’une et l’autre sont.",
+          "C’est la conséquence pratique du raisonnement de Grisez : un parcours ne se lit pas en comptant ses ruptures, mais en regardant si les emplois qu’il traverse se tiennent les uns aux autres. Un même comportement peut alors relever, selon le secteur, d’une progression ordinaire ou d’une agitation sans effet, et ce n’est pas la personne qui change d’une lecture à l’autre. Juger sur le décompte revient à faire porter à des individus le dessin du marché où ils cherchent du travail."
+        ]
+      },
+      {
+        "title": "Ce que Grisez reçoit, et ce qu’il ajoute",
+        "paragraphs": [
+          "Ni la segmentation du marché du travail ni la notion de filières ne sont de lui, et il ne le cache pas : il les présente comme des acquis venus d’ailleurs. Le modèle économique classique, écrit-il, « est très largement amendé notamment à la suite de l’introduction des théories de la segmentation du marché du travail », et « on a fait largement place à la notion de filières ». Ce « on » ne nomme personne, et sa note bibliographique ne renvoie à aucun des textes qui ont fondé ces théories.",
+          "Ce qui lui revient en propre est ailleurs : dans le fait de brancher cette description du marché sur des comportements observés, et d’en tirer une conclusion sur la mobilité. Les résultats qu’il rapporte viennent de sa propre enquête antérieure, Mobilité et milieu professionnel, publiée au Bulletin du CERP en 1970. L’exposé de 1980 est une synthèse de quatre pages : il donne le point d’arrivée d’un travail conduit dix ans plus tôt, tel que son auteur le résume après coup."
+        ]
+      }
+    ],
+    "limits": [
+      "Les chiffres, les métiers observés et la manière dont une filière a été repérée sur le terrain sont dans l’enquête de 1970, Mobilité et milieu professionnel, cent quarante pages du Bulletin du CERP. L’exposé de 1980 en donne le résultat, pas la démonstration : pour les données elles-mêmes, c’est ce volume qu’il faudra ouvrir.",
+      "Qui a introduit les théories de la segmentation du marché du travail, et dans quels textes la notion de filières a pris sa forme, cet article ne le dit pas : Grisez écrit « on », et sa bibliographie ne renvoie à aucun de ces travaux. Ce sont eux qu’il faudra lire pour savoir en quels termes la segmentation a d’abord été posée, et si la filière y signifie exactement ce qu’elle signifie ici.",
+      "Ce que ce texte est devenu ensuite, qui l’a repris, discuté ou contredit, et quelle place Jean Grisez occupe dans les travaux français sur la mobilité professionnelle : les sources disponibles ne permettent pas de l’établir."
     ]
   },
   {
@@ -3199,6 +3365,63 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "niveaux-de-rationalite-economique",
+    "lead": [
+      "Deux personnes achètent le même article, le même jour, au même prix. La première a comparé les étiquettes, calculé ce qu’elle pouvait mettre, attendu une baisse et fini par céder au bon moment. La seconde a pris ce qu’elle prend toujours, sans y penser, parce que le paquet était à hauteur des yeux ou parce qu’elle était pressée. Le prix payé est le même, et rien dans les chiffres du magasin ne distingue les deux achats.",
+      "On peut traiter cet écart comme un accident : la seconde personne aurait mal calculé, il suffirait de la tenir pour une version dégradée de la première. On peut aussi soutenir que ces deux achats ne relèvent pas du même mécanisme, et que la différence n’est pas d’exactitude mais de fonctionnement. C’est la position que défend Pierre-Louis Reynaud dans un article de 1962 du Bulletin de psychologie, qu’il signe depuis la faculté de droit et des sciences économiques et politiques de Strasbourg. Elle coûte plus cher qu’il n’y paraît, parce qu’elle oblige à retoucher les figures mêmes de l’économie."
+    ],
+    "sections": [
+      {
+        "title": "Une question que l’économie ne posait pas",
+        "paragraphs": [
+          "Reynaud ouvre sa partie théorique par une question qu’il numérote et met en italique, page 870 : « 1) Comment varie le mécanisme économique suivant le degré de rationalité (ou niveau mental) des individus ? » Tout tient dans la parenthèse. Le degré de rationalité n’est pas ici une hypothèse commode qu’on ferait sur des agents en général, c’est un niveau mental : quelque chose qui appartient à une personne et qui peut être plus bas chez elle que chez sa voisine.",
+          "Pourquoi cette question n’avait-elle pas trouvé d’adresse ailleurs ? La réponse vient dans les mêmes lignes : « L’économie traditionnelle ne tenant pas compte du niveau mental, et supposant en théorie tous les individus rationnels, ce problème théorique n’a été abordé qu’en psychologie économique. »",
+          "Le reproche n’est pas que l’économie se tromperait sur les faits. C’est qu’en supposant la rationalité de tous, elle prive la question d’objet : là où chacun est rationnel, il n’y a pas de degré, donc rien à faire varier. L’hypothèse ne répond pas à la question, elle l’empêche de se poser. La lever suppose en revanche de fournir une échelle, c’est-à-dire deux bouts et de quoi nommer ce qu’il y a entre eux."
+        ]
+      },
+      {
+        "title": "Du réflexe au calcul",
+        "paragraphs": [
+          "L’échelle est donnée comme un constat plutôt que comme une commodité de présentation : « L’observation a montré qu’il existe deux types de comportement extrêmes, et entre eux des conduites intermédiaires. » Les deux bouts sont ensuite décrits séparément, et ils ne se ressemblent pas.",
+          "En bas : « Au bas de l’échelle, on trouve les actes économiques de faible niveau mental, les actes irrationnels qui obéissent aux lois des réflexes. » Le mot réflexe est à prendre au sérieux, et Pavlov est nommé dans ces pages à ce propos. Un acte de ce niveau se décrit comme une réponse déclenchée : on y cherche moins ce que la personne a voulu que ce qui l’a atteinte. Rien n’y délibère, ce qui ne signifie pas que rien n’y soit régulier, puisque ces actes obéissent à des lois ; simplement, la régularité qu’on peut en attendre n’est pas celle du calcul.",
+          "En haut : « Le mécanisme de l’acte rationnel, situé au sommet de la hiérarchie psychologique se rapproche au contraire du fonctionnement classique du calcul économique. » Le verbe compte. L’acte rationnel se rapproche du calcul de l’économie classique, il ne se confond pas avec lui. Le modèle habituel n’est donc pas déclaré faux : il est déplacé, et il décrit désormais un bout de l’échelle, le plus élevé."
+        ]
+      },
+      {
+        "title": "Le milieu, et pourquoi il est le cas ordinaire",
+        "paragraphs": [
+          "Entre les deux, la phrase est celle-ci : « Entre le comportement rationnel, dirigé méthodiquement par le sujet et la conduite irrationnelle, dominée par l’influence du milieu, se trouve toute la gamme des comportements intermédiaires. »",
+          "Deux mots y font le partage, et ils ne parlent pas de quantité de calcul : dirigé, dominée. En haut, c’est le sujet qui mène, et il mène méthodiquement. En bas, c’est l’entourage qui l’emporte. L’échelle mesure donc moins une performance intellectuelle qu’un rapport de forces entre quelqu’un et ce qui l’environne, et l’on voit mieux, à ce compte, pourquoi une file d’attente, une odeur de pain chaud ou une étiquette rouge peuvent devenir des données économiques.",
+          "Reste le point qui change la portée de l’ensemble : « La psychologie économique étudie ces formes de transition, qui sont celles qui se rencontrent le plus fréquemment dans la pratique, avec un soin particulier. » Le milieu de l’échelle n’est pas un cas mixte à examiner après les autres, c’est le cas courant. Une théorie qui prend le sommet pour norme décrit alors la situation la plus rare, et traite comme des écarts ce qui fait l’ordinaire des conduites.",
+          "Ce milieu porte d’ailleurs son propre vocabulaire. Page 870, deux paliers semi-rationnels sont nommés, en italique dans l’imprimé : le « rationnel discontinu » et le « rationnel occasionnel ». Ces appellations ne renvoient à aucun autre auteur. L’entre-deux n’est donc pas laissé en bloc : il se divise à son tour."
+        ]
+      },
+      {
+        "title": "Des lignes, puis des bandes",
+        "paragraphs": [
+          "La conséquence, Reynaud la prend au pied de la lettre, sur le schéma le plus connu de la discipline : « Par exemple, en ce qui concerne le schéma bien connu du prix, représenté comme le point d’intersection des courbes d’offre et de demande, les courbes seront des lignes au niveau rationnel, elles seront des bandes, d’autant plus larges que le sujet sera moins rationnel, pour marquer l’imprécision du calcul, au niveau semi-rationnel. »",
+          "Le schéma en question est celui qu’on trace dès les premières heures de cours : une courbe qui descend, la demande, une courbe qui monte, l’offre, et leur croisement, qui donne le prix. Ce croisement n’est un point que parce que les courbes sont des lignes, c’est-à-dire parce qu’on a supposé des sujets dont le calcul est exact. Rendez-leur de l’imprécision, et les lignes s’épaississent.",
+          "L’imprimé met lignes et bandes en italique, et le geste est là tout entier. La rationalité cesse d’être une hypothèse qu’on accepte ou qu’on refuse en bloc, elle devient une largeur, une grandeur que la figure affiche. Cela implique que ce qu’annonce le schéma n’est plus un prix mais un intervalle, d’autant plus large que les sujets sont moins rationnels : le flou de la prévision devient lui-même l’indice du niveau mental de ceux dont elle parle.",
+          "La fin de la phrase précise à quel palier la bande appartient : au niveau semi-rationnel, celui-là même dont Reynaud dit qu’il se rencontre le plus souvent. Le dessin épaissi n’est donc pas un cas limite qu’on garderait pour les exceptions, c’est la figure du cas ordinaire."
+        ]
+      },
+      {
+        "title": "Le système d’intégration psycho-économique",
+        "paragraphs": [
+          "L’échelle ne tombe pas de nulle part. Page 869, elle arrive comme illustration : « Prenons comme exemple le système d’intégration psycho-économique reposant sur la notion d’énergie mentale ». Ce que Reynaud dit des niveaux de rationalité est donc tiré d’un ensemble plus vaste, bâti sur une notion d’énergie mentale, et il renvoie dès sa première colonne à son propre ouvrage de 1946, Economie Politique et Psychologie Expérimentale.",
+          "Les noms d’auteurs, dans ces pages, servent à autre chose. Pavlov est nommé à propos du réflexe, Marx et les économistes autrichiens à propos de la valeur, par contraste. La graduation elle-même, ses paliers et leurs appellations, est posée sans renvoi à un tiers : c’est une thèse que Reynaud tient pour sienne, et non l’inventaire de ce que d’autres auraient établi avant lui.",
+          "L’endroit où tout cela s’écrit dit encore quelque chose. Le passage appartient à la section « B) La théorie en Psychologie économique », ouverte au bas de la page 869 et courant sur les pages 870 et 871, à l’intérieur d’une partie consacrée au contenu de la psychologie économique qui commence page 868. Vient ensuite, page 871, « C) La politique économique ». Les niveaux de rationalité sont ainsi donnés comme une pièce de théorie, et la section suivante passe à l’action publique.",
+          "Sur cette même page 870, Reynaud nomme encore autre chose : des seuils de rupture et des seuils d’ajustement. Le passage porte donc plus que l’échelle seule, et l’échelle y ressemble moins à une classification qu’à la première pièce d’un mécanisme."
+        ]
+      }
+    ],
+    "limits": [
+      "Deux paliers du milieu ont un nom sans que les lignes citées ici disent ce qui les sépare, le rationnel discontinu et le rationnel occasionnel ; de même pour les seuils de rupture et les seuils d’ajustement, nommés sur la même page. Ce que Reynaud met sous chacun de ces termes, ce sont les pages 870 et 871 qui le portent, et l’article est en ligne sur Persée. Ce qu’il entend exactement par psychologie économique, il l’expose plus tôt, des pages 865 à 869 : ces pages-là attendent leur lecteur.",
+      "L’énergie mentale, qui soutient tout l’édifice, n’est pas définie dans le passage cité. C’est un ouvrage antérieur qui la porte, Economie Politique et Psychologie Expérimentale, publié en 1946, auquel Reynaud renvoie dès l’ouverture de son article, et il a publié d’autres livres en 1954 et en 1974. Comment un niveau mental se reconnaît, et à quoi se mesure qu’un sujet soit moins rationnel qu’un autre, ce sont ces volumes qui peuvent le dire.",
+      "Ce que d’autres ont fait de cette échelle après 1962, qui l’a reprise, discutée ou laissée de côté, les sources disponibles ne permettent pas de l’établir : la réponse est dans la littérature de psychologie économique parue depuis. Rien n’exclut non plus qu’une graduation comparable ait circulé ailleurs auparavant. L’article la pose comme sienne, ce qui est une revendication d’auteur, et non une preuve d’antériorité."
+    ]
+  },
+  {
     "conceptId": "nombres-et-emotions",
     "lead": [
       "Pendant la pandémie de Covid-19, un même geste s’est répété chaque jour dans des millions de foyers : ouvrir un journal ou une application de santé pour regarder un chiffre. Le nombre de morts annoncé la veille serrait la gorge avant même d’être lu en entier. Le taux de personnes vaccinées, lui, rassurait. Et un jour, un chiffre rond, cent mille décès cumulés dans un pays donné, a occupé les titres alors qu’il n’ajoutait, statistiquement, rien de plus que le compte de la veille. Ces chiffres n’informaient pas seulement : ils faisaient peur, ils donnaient de l’espoir, ils pesaient.",
@@ -3245,6 +3468,115 @@ export const generatedDeepenings: Deepening[] = [
       "La citation placée en ouverture vient de la version que l’auteur a lui-même déposée en ligne avant publication, et non de la mise en pages finale de la revue : la pagination donnée, page 16, est celle de ce manuscrit. Entre un manuscrit et son épreuve, une formulation se retouche parfois ; l’article imprimé le dira, et lui seul.",
       "Le mot que Didier propose pour désigner cette prolifération de chiffres ne se retrouve nulle part avant lui dans les deux répertoires de publications scientifiques où il a été cherché. Deux autres répertoires restent à interroger : affirmer que le terme est de lui suppose d’y avoir regardé aussi.",
       "Un mot proche, « statactivisme », qui désigne un usage plus militant des statistiques, n’apparaît nulle part dans le corps de l’article : il ne figure que dans sa bibliographie, par renvoi à deux autres ouvrages du même auteur, qui sont l’endroit où ce courant se déclare. Ranger cet article dans ce courant irait au-delà de ce qu’il établit lui-même."
+    ]
+  },
+  {
+    "conceptId": "normatif-descriptif-prescriptif",
+    "lead": [
+      "Un collègue passe vous voir la veille d’un arbitrage qu’il redoute. Deux offres se valent à peu près, le budget n’en couvre qu’une, l’équipe est partagée, et il faut répondre demain. Vous avez lu sur la décision. D’un côté, des travaux qui expliquent, expériences à l’appui, pourquoi les gens dans sa position se trompent presque toujours de la même façon. De l’autre, des théories qui exposent la règle que suivrait quelqu’un de parfaitement cohérent. Ni les uns ni les autres ne vous disent quoi lui répondre ce soir-là, à lui, avec le temps qui reste.",
+      "Ce silence n’est pas un défaut de lecture, c’est un trou dans le vocabulaire. Tant qu’on ne dispose que de deux mots, l’un pour ce qui se constate et l’autre pour ce qui devrait être, le travail de celui qui aide un autre à trancher n’a pas de nom propre. Or ce qui n’a pas de nom n’a pas de critère : on ne sait pas à quoi juger qu’il est bien ou mal fait."
+    ],
+    "sections": [
+      {
+        "title": "Ce qui est, et ce qu’il faudrait",
+        "paragraphs": [
+          "Le partage habituel tient en deux questions. La première demande comment les gens décident réellement : on observe, on interroge, on met des personnes devant des choix construits, et l’on rend compte de ce qui se passe. La seconde demande comment il faudrait décider : on ne regarde plus personne, on cherche à quelles conditions un ensemble de préférences se tient debout. Le premier versant s’appelle descriptif, le second normatif, et l’on peut travailler des années sans éprouver le besoin d’un troisième mot.",
+          "David E. Bell, Howard Raiffa et Amos Tversky glosent eux-mêmes cette opposition en quatre mots, que la traduction perd : les deux côtés sont le « ought » et le « is », ce qui doit et ce qui est. Le terme de côté n’est pas indifférent. Il ne s’agit pas de deux méthodes rivales mais de deux faces d’un même objet, la décision, regardée une fois comme un fait et une fois comme une exigence.",
+          "La phrase qui ajoute le troisième terme, en 1988, dans le premier chapitre d’un recueil que les trois dirigent, commence d’ailleurs par une précaution qu’il vaut la peine de relire : « For our purposes we shall augment the usual dichotomy that distinguishes between the normative and descriptive sides ». Pour nos besoins. L’ajout est présenté comme un instrument de travail avant même d’être décrit."
+        ]
+      },
+      {
+        "title": "Aider une personne qui n’est pas idéale",
+        "paragraphs": [
+          "Ce que le troisième mot désigne, les auteurs l’écrivent sans détour dès cette page : il s’agit de savoir « how we might help less rational people, who nevertheless aspire to rationality, to do better », comment aider des gens moins rationnels, qui aspirent pourtant à la rationalité, à faire mieux. La phrase pose deux conditions d’un coup, et elles se tiennent. D’abord, la personne n’est pas parfaitement rationnelle, et l’on n’attend pas qu’elle le devienne. Ensuite, elle y aspire tout de même : sans cela, il n’y aurait rien à quoi rattacher l’aide qu’on lui apporte.",
+          "La même page pose la question autrement, et l’incise y fait tout le travail : « How can real people - as opposed to imaginary, idealized, super-rational people without psyches - make better choices ». Des gens réels, par opposition à des êtres imaginaires, idéalisés, super-rationnels et sans psychisme. Celui que décrit la théorie n’a ni mémoire qui flanche, ni fatigue, ni crainte de se tromper devant témoins. Celui qu’on aide a tout cela, et c’est pourquoi ce qui l’aiderait ne se déduit pas de la théorie seule.",
+          "Un dernier mot mérite qu’on s’y arrête : mieux. Pas le meilleur choix, un meilleur choix. Le comparatif déplace la cible. Il ne s’agit plus d’atteindre un point d’arrivée défini à l’avance, mais de faire progresser quelqu’un depuis l’endroit où il se trouve, avec ce dont il dispose."
+        ]
+      },
+      {
+        "title": "Trois manières de juger qu’un travail est bon",
+        "paragraphs": [
+          "Un mot de plus ne vaudrait pas grand-chose s’il ne servait qu’à ranger les livres. Ce qui donne à celui-ci sa consistance vient plus loin dans le chapitre, aux pages 17 et 18 : chacun des trois pôles y est associé au critère qui permet de juger le travail qu’on y fait. Un énoncé descriptif se juge à sa validité empirique, son accord avec ce que les gens font observablement. Un énoncé normatif se juge à son adéquation théorique, que l’on peut entendre comme sa tenue interne. Un énoncé prescriptif se juge à sa valeur pragmatique : est-ce que cela aide, en fait, quelqu’un à mieux décider ?",
+          "Ce troisième critère est le plus exigeant, parce qu’aucun des deux autres ne peut en tenir lieu. Montrer qu’une méthode d’aide n’est pas la solution théoriquement optimale ne suffit pas à la disqualifier. Montrer que personne ne raisonne spontanément ainsi ne suffit pas davantage : on n’aide pas les gens en leur proposant ce qu’ils feraient sans nous. La question reste entière, et elle se tranche par les faits, à sa façon : ceux qui s’en servent décident-ils mieux ?",
+          "Imaginons une grille de questions qu’une équipe s’oblige à remplir avant tout recrutement, la même liste pour tous les candidats, écrite avant les entretiens. Rien ne garantit qu’elle soit la procédure optimale, et il est certain que personne ne procède ainsi de lui-même. Ces deux constats sont hors sujet. Le seul point qui décide est de savoir si les recrutements faits avec elle valent mieux que ceux faits sans."
+        ]
+      },
+      {
+        "title": "Le désaccord imprimé page 2",
+        "paragraphs": [
+          "D’où vient ce troisième terme ? Les premières pages du volume le disent avec une franchise rare : « We have done this primarily because so much of what two of us (David and Howard) do professionally is not adequately captured in the usual descriptive/normative breakdown. » Le mot ajouté vient d’abord d’un métier, celui que deux des trois exercent, et que les deux mots disponibles ne nommaient pas correctement.",
+          "La même page imprime aussitôt la réserve du troisième signataire. Amos Tversky accorde à la catégorie prescriptive son utilité dans leurs échanges et doute de l’intérêt d’en faire la promotion au dehors : « although the prescriptive category has been useful for our internal discussions, it may not be necessary to proselytize for this more elaborate breakdown if we were to clarify further the normative category ».",
+          "La nuance se déforme facilement, et elle vaut d’être tenue. Ce qu’il juge peut-être superflu n’est pas la catégorie elle-même, dont il concède qu’elle a servi ; c’est le prosélytisme en sa faveur, et à une condition qu’il énonce : que la catégorie normative soit d’abord mieux clarifiée. On peut lire cette réserve ainsi, le troisième terme serait alors le symptôme d’un flou logé dans le deuxième."
+        ]
+      },
+      {
+        "title": "Une distinction posée pour un chapitre seulement",
+        "paragraphs": [
+          "Page 16, les auteurs annoncent qu’ils vont traiter ces mots de façon nettement séparée : « we propose to treat these terms quite distinctly ». Une note de bas de page accompagne l’annonce et en réduit aussitôt la portée : « For the purposes of this chapter only; we are not attempting to change common usage. » Pour les besoins de ce chapitre seulement ; nous n’essayons pas de changer l’usage courant.",
+          "La conséquence est simple et elle protège d’un contresens. Ces trois mots ne sont pas offerts comme la terminologie que le domaine devrait adopter. Ailleurs, sous d’autres plumes, normatif garde d’autres sens, dont certains ne recoupent pas celui-ci. Présenter ce chapitre comme une refonte du vocabulaire de la discipline irait plus loin que ce que ses auteurs revendiquent.",
+          "Ce qui s’en emporte est plus modeste et plus solide : une question à se poser devant n’importe quel travail sur la décision, y compris le sien. Est-ce que je décris ce qui se passe, est-ce que j’établis ce qui serait cohérent, ou est-ce que j’essaie d’aider quelqu’un ? Les trois sont légitimes, ils ne se jugent pas de la même manière, et la confusion la plus coûteuse consiste à faire l’un en se réclamant du critère d’un autre."
+        ]
+      }
+    ],
+    "limits": [
+      "Ce chapitre ne revendique nulle part d’avoir inventé le découpage à trois termes. Jonathan Baron, revenant en 2012 sur les modèles normatifs, situe son émergence dans les années 1980, chez des auteurs qui écrivaient indépendamment les uns des autres : Freeling en 1984, lui-même en 1985, ce texte en 1988. Le plus ancien est l’article d’A. N. S. Freeling, « A philosophical basis for decision aiding », Theory and Decision, vol. 16, 1984 : ce qu’il pose, et en quels termes, c’est lui qui le dira.",
+      "Les trois critères d’évaluation, un par pôle, courent à cheval sur les pages 17 et 18 : les mots exacts par lesquels les auteurs les séparent se lisent là, dans ces deux pages.",
+      "Aucune traduction française publiée de ce chapitre n’est connue. Le parallélisme des trois termes, et la glose des deux côtés par « ought » et « is », tiennent dans l’anglais : c’est lui qui fait foi.",
+      "Le recueil qui porte ce chapitre en compte d’autres, et son titre annonce des interactions entre les trois termes plutôt que leur simple juxtaposition. Ce que chaque contribution fait du découpage, ce sont ces pages-là qui le diront."
+    ]
+  },
+  {
+    "conceptId": "objectif-specifique-et-difficile",
+    "lead": [
+      "Un chef d’équipe a le choix entre deux phrases, et il les emploie sans y penser. Ou bien il dit « faites de votre mieux », ou bien il annonce un chiffre : trente dossiers traités avant vendredi. La première est plus aimable, elle ne met personne en défaut et elle a l’air de faire confiance. La seconde ressemble à de la pression, et l’on hésite d’autant plus à la choisir qu’on la croit décourageante dès que la barre monte. L’intuition ordinaire clôt alors le raisonnement : si l’on doit vraiment donner un chiffre, autant qu’il reste atteignable.",
+      "Depuis la fin des années 1960, la question a été mise à l’épreuve plus de cent fois, en laboratoire et dans des entreprises, avec un protocole d’une simplicité brutale : un groupe reçoit une cible chiffrée, l’autre un encouragement, et l’on compare ce qu’ils produisent. En juin 1980, quatre chercheurs, Edwin A. Locke, Karyll N. Shaw, Lise M. Saari et Gary P. Latham, en dressent le compte dans un rapport technique de quatre-vingt-quatorze pages, écrit au titre d’un contrat de recherche et versé au fonds documentaire de la défense américaine. Ils comptent les études une par une, et ils annoncent le score."
+    ],
+    "sections": [
+      {
+        "title": "« Spécifique » n’est pas « difficile »",
+        "paragraphs": [
+          "Une consigne peut varier de deux façons, et on les confond facilement. Elle peut être précise ou vague : « trente dossiers avant vendredi » a un contour, « faites de votre mieux » n’en a pas. Elle peut aussi être haute ou basse : trente dossiers, ce n’est pas la même chose que dix quand on en traite douze d’ordinaire. Ces deux propriétés sont indépendantes l’une de l’autre. Un objectif chiffré peut être dérisoire, un encouragement vague peut porter sur une tâche redoutable. « Faites de votre mieux » n’est donc pas un objectif facile : c’est un objectif sans bord, dont personne ne peut dire à quel moment il est atteint.",
+          "La comparaison que tranche la page 59 tient en quatre termes, et le deuxième est celui qui surprend. La cible précise et haute ne l’emporte pas seulement sur l’absence de consigne et sur l’encouragement vague, ce qui se devine ; elle l’emporte aussi sur la cible tout aussi précise, mais basse. La précision seule ne suffit donc pas. Chiffrer une exigence sans la relever revient à peu près à ne rien chiffrer du tout, et c’est exactement le compromis que l’on croit prudent.",
+          "La phrase se trouve dans la section « Conclusions » du rapport, au point 3, sous un alinéa intitulé « Range of Goals », l’étendue des objectifs. Ce n’est donc pas un résultat pris au vol dans une expérience, mais ce que les auteurs retiennent au terme d’un dépouillement. Et le dernier terme de leur énumération mérite qu’on s’y arrête : ils écrivent « no assigned goals », aucun objectif assigné, et non aucun objectif. Ce qui est comparé n’est pas ce que les gens visent dans leur tête, c’est ce qu’on leur a donné à viser."
+        ]
+      },
+      {
+        "title": "Quatre-vingt-dix-neuf études sur cent dix",
+        "paragraphs": [
+          "Le rapport n’affirme pas seulement, il compte. Page 18, les auteurs donnent leur propre décompte : « ninety nine out of 110 studies found specific hard goals produced better performance than medium, easy, […] or no goals ». Quatre-vingt-dix-neuf études sur cent dix ont trouvé que des objectifs précis et difficiles produisaient de meilleures performances que des objectifs moyens, faciles, qu’une consigne de faire au mieux ou qu’aucun objectif. Soit, écrivent-ils, « a success rate of 90% ».",
+          "Le chapitre de conclusions élargit la portée. « The beneficial effect of goal setting on task performance is one of the most robust and replicable findings in the psychological literature » : l’effet bénéfique de la fixation d’objectifs sur la performance est l’un des résultats les plus solides et les plus reproductibles de la littérature psychologique. Le chiffre suit aussitôt, « Ninety percent of the studies showed positive or partially positive effects », quatre-vingt-dix pour cent des études ont montré des effets positifs ou partiellement positifs. La même page ajoute que l’effet se retrouve aussi fiablement sur le terrain qu’en laboratoire, ce qui est rare et vaut d’être noté.",
+          "Trois mots de cette phrase demandent pourtant qu’on ralentisse : ou partiellement positifs. Le décompte réunit les études qui confirment et celles qui ne confirment qu’en partie, sans dire, sous cette forme, comment les deux se répartissent. C’est un score de dépouillement, pas un taux de réussite d’expérience. Le document se présente d’ailleurs lui-même, dès sa première ligne, comme « A review of both laboratory and field studies », une revue d’études de laboratoire et de terrain : il n’apporte pas une preuve de plus, il compte celles qui existaient déjà, et c’est là sa force autant que sa limite."
+        ]
+      },
+      {
+        "title": "L’objectif moyen, et celui qu’on se donne",
+        "paragraphs": [
+          "Entre l’objectif facile et l’objectif difficile, il reste de la place pour un objectif moyen, que l’énumération de la conclusion ne range nulle part. La page 59 s’en explique quelques lignes plus loin : « People with specific moderate goals show performance levels between those of people with easy and hard goals but may not perform better than individuals with […] goals ». Ceux qui reçoivent une cible précise et modérée se situent entre les uns et les autres, mais ne font pas nécessairement mieux que ceux à qui l’on a simplement dit de faire au mieux.",
+          "L’avantage tient donc au haut de l’échelle, et non au seul fait d’avoir chiffré quelque chose. La cible précise et raisonnable, celle que retient d’ordinaire une organisation soucieuse de ne décourager personne, tombe dans la zone où l’écart avec un simple encouragement cesse d’être garanti. C’est une conclusion inconfortable, et elle est bien celle que les auteurs écrivent.",
+          "La même page signale en outre une difficulté de méthode qui vaut avertissement : les personnes à qui l’on assigne un objectif facile s’en fixent spontanément de plus élevés. L’étiquette de la condition expérimentale et ce que la personne vise réellement cessent alors de coïncider, ce qui rend la comparaison moins nette que ses catégories. On peut en tirer une conséquence pour qui voudrait s’en servir un lundi matin : ce qui agit n’est pas la phrase prononcée, c’est l’objectif que la personne finit par tenir pour le sien, et une consigne trop basse se fait remplacer en silence."
+        ]
+      },
+      {
+        "title": "Une thèse plus ancienne que son décompte",
+        "paragraphs": [
+          "Le rapport date de juin 1980, l’idée est bien plus vieille, et les auteurs sont les premiers à le dire. Dès leur première page, ils lui reconnaissent deux ascendances. Une ascendance savante d’abord, qui remonte à Ryan (1970), à Miller, Galanter et Pribram (1960), puis, écrivent-ils, « through Lewin to the Wurzburg School », en passant par Lewin jusqu’à l’école de Wurtzbourg. Une ascendance de gestion ensuite : la direction par objectifs, et derrière elle le mouvement de l’organisation scientifique du travail fondé par Frederick W. Taylor, qu’ils citent dans une édition de 1967 d’un texte de 1911.",
+          "Les deux courants se rejoignent, disent-ils, « in the more recent work of Locke (1968), Latham (Latham & Yukl, 1975a) and others », dans les travaux plus récents de Locke, de Latham et d’autres. Locke, premier signataire du rapport, avait posé la thèse seul douze ans plus tôt, dans un article de 1968. Dater de 1980 l’idée qu’un objectif difficile fait mieux travailler serait donc une erreur de douze ans au moins : ce que 1980 date, c’est le moment où on l’a comptée."
+        ]
+      },
+      {
+        "title": "Trois écritures d’une même phrase",
+        "paragraphs": [
+          "Un même document peut énoncer son résultat de plusieurs façons, et celui-ci ne s’en prive pas. La conclusion de la page 59 parle d’objectifs « hard or challenging », difficiles ou stimulants, de consignes « do best » et d’absence d’objectif assigné. Le résumé placé en tête du volume écrit, lui, des objectifs précis et stimulants opposés à des objectifs faciles, à « do your best » et à l’absence d’objectifs. Le formulaire de catalogage qui ouvre le volume ajoute sa propre variante, et saisit même le titre du rapport de travers.",
+          "Ces écarts ne sont pas décoratifs. Dire qu’il n’y avait aucun objectif affirme plus que dire qu’aucun objectif n’avait été assigné : la première formule prête aux gens une tête vide de projet, la seconde constate seulement qu’on ne leur avait rien donné, et l’on vient de voir que la différence porte. De même, la conclusion écrit « do best » là où le résumé écrit « do your best », et ces deux consignes ne se prononcent pas de la même façon. Une formule plus lisse circule aujourd’hui sous les noms de Locke et Latham ; qui veut citer juste gagne à dire de quelle page il la tire.",
+          "Le volume, lui, se laisse ouvrir. Il porte imprimé sur sa page de titre « Reproduction in whole or in part is permitted for any purpose of the U.S.Government. » et « APPROVED FOR PUBLIC RELEASE: DISTRIBUTION UNLIMITED » : des autorisations administratives de diffusion et de reproduction, non une mise dans le domaine public. L’exemplaire numérisé compte quatre-vingt-quatorze feuillets, le texte est folioté de la page 1 à la page 90, et la page 59 s’y ouvre sous son titre de section."
+        ]
+      }
+    ],
+    "limits": [
+      "La formule qui circule aujourd’hui sous les noms de Locke et Latham n’est pas celle de la page 59. Vient-elle de l’article paru l’année suivante sous les quatre mêmes signatures, « Goal setting and task performance: 1969-1980 », Psychological Bulletin, 90(1), 1981, p. 125-152, ou de l’ouvrage de 1990 ? C’est en les ouvrant qu’on le saura.",
+      "La thèse a été posée avant d’être comptée, et sous une seule signature : Locke, « Toward a theory of task motivation and incentives », Organizational Behavior and Human Performance, 3, 1968, p. 157-189. Les termes exacts de cette première formulation sont là, et nulle part ailleurs.",
+      "Les racines que le rapport se donne en une page, Ryan, Lewin, l’école de Wurtzbourg, la direction par objectifs et Taylor, sont nommées par les auteurs eux-mêmes ; ce que chacune apporte se lit dans ces textes.",
+      "Pourquoi une cible haute fait mieux travailler, et à quelles conditions elle cesse de le faire, la conclusion de la page 59 n’en dit rien : ce sont les quatre-vingt-dix pages qui la précèdent qui le portent. Aucune traduction française publiée de ce rapport n’est connue : ces phrases se citent en anglais."
     ]
   },
   {
@@ -3487,6 +3819,115 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "penalite-de-rupture",
+    "lead": [
+      "Un magasin de pièces détachées se vide un jour où la pièce absente arrête une machine. Personne ne reçoit de facture pour cet arrêt : il se paie en heures perdues, en commande passée en urgence chez un fournisseur plus cher, en client qui patiente. Rien de tout cela n’apparaît sur la ligne comptable du magasin, qui ne connaît que le prix des pièces achetées et la place qu’elles occupent.",
+      "D’un côté une dépense visible, chiffrée, dont on peut faire reproche à quelqu’un ; de l’autre un dommage réel dont personne n’a jamais écrit le montant. La discussion sur le niveau à tenir tourne alors en rond, entre ceux qui trouvent le stock trop gros et ceux qui redoutent le jour où il manquera, et aucun des deux camps ne peut convaincre l’autre. En 1950, à la RAND Corporation, Kenneth Arrow, Theodore Harris et Jacob Marschak s’attaquent à ce déséquilibre par un geste d’apparence banale : donner un prix au manque, pour que les deux termes deviennent enfin comparables."
+    ],
+    "sections": [
+      {
+        "title": "Mettre un prix sur ce qui n’a pas été servi",
+        "paragraphs": [
+          "La pénalité dont parle leur rapport porte sur un cas précis : celui où la demande dépasse le stock disponible. Les auteurs nomment cet écart, « the excess of demand over available stock », et c’est sur lui, unité par unité, que se compte le dommage. Le mot rupture ne désigne donc ici ni un contrat rompu, ni une livraison amont qui n’arrive pas : il désigne exactement la part de la demande que le stock n’a pas pu servir.",
+          "Ce dommage n’est pas seulement un manque à gagner, et les auteurs le décrivent par ses substituts. Quand l’article n’est pas là, on se rabat sur autre chose, et cette solution d’urgence coûte plus cher et fonctionne moins bien. Une organisation, écrivent-ils, connaît ce coût et cette moindre performance. Le dommage a donc déjà, dans les faits, une existence chiffrable ; ce qui manque, c’est qu’on l’ait écrit quelque part.",
+          "Rien dans leur phrase ne réserve cela au commerce : elle vise l’organisation, qu’elle soit commerciale ou non. Un service qui ne vend rien perd lui aussi quelque chose quand l’article manque, sous la forme d’un travail retardé ou d’un résultat dégradé, et ce quelque chose entre dans le même compte."
+        ]
+      },
+      {
+        "title": "Une pénalité supposée connue",
+        "paragraphs": [
+          "Reste à savoir d’où vient le chiffre, et sur ce point les auteurs sont d’une franchise qu’il vaut la peine de relever : « We assume the penalty function as given. » Ils supposent la pénalité donnée. Leur argument n’est pas qu’on sait la mesurer, mais que l’organisation en a déjà une idée générale, et qu’elle saurait dire, si on l’interrogeait, ce que lui coûterait l’indisponibilité d’un article.",
+          "La différence entre supposer et établir compte ici plus qu’ailleurs. Tout ce qui suit est rigoureux à condition qu’un nombre entre dans le calcul, et ces pages ne fournissent pas de méthode pour le produire. Qui cherche comment reconstituer des incidents passés, interroger les services concernés ou faire dire à un responsable ce que vaut une journée d’arrêt ne le trouvera pas là. Ce que le rapport apporte est ailleurs : il montre ce qu’un tel chiffre, une fois posé, permet de décider.",
+          "L’exigence est du reste plus légère qu’il n’y paraît. Il ne s’agit pas d’un tarif exact, établi article par article : une idée générale de la valeur du dommage suffit à faire démarrer le raisonnement. C’est une condition qu’une organisation attentive à ses propres incidents peut remplir sans enquête savante."
+        ]
+      },
+      {
+        "title": "L’unité de plus, et ce qu’elle épargne",
+        "paragraphs": [
+          "Une fois le manque chiffré, la question change de nature. Elle ne se pose plus en gros, mais unité par unité : cette unité supplémentaire, faut-il la garder ? D’un côté elle coûte, et les auteurs nomment les deux dépenses qu’elle entraîne, celle de l’acheter et celle de la porter en stock, « of buying and carrying an additional unit in stock ». De l’autre elle rapporte, mais seulement dans les situations où la demande serait montée assez haut pour qu’elle serve.",
+          "C’est là que le mot espérée fait son travail. L’unité de plus n’épargne pas une pénalité à coup sûr : elle l’épargne dans certains états de la demande et pas dans d’autres. Ce qu’on met en balance avec son coût n’est donc pas un gain constaté, mais une moyenne des gains possibles, pondérée par les chances que chaque cas survienne. Les auteurs le disent dans les termes de l’économiste : coût marginal d’un côté, utilité marginale espérée de l’autre.",
+          "L’équation qui fixe le stock optimal, à la page 21 du rapport, ne fait rien de plus que poser la différence entre ces deux quantités égale à zéro. Au-dessus de ce point, chaque unité gardée coûte plus qu’elle n’épargne en moyenne ; en dessous, il reste de la pénalité à éviter à bon compte. Le niveau à tenir n’est ni prudent ni téméraire : il est l’endroit où les deux comptes se rejoignent."
+        ]
+      },
+      {
+        "title": "Ce qu’il faut apporter pour que le calcul tourne",
+        "paragraphs": [
+          "Les auteurs énumèrent, sur cette même page, les quantités dont dépend le stock optimal, qu’ils rangent sous le nom de données physiques. Les paramètres de la fonction de pénalité, définie juste avant, en font partie. Aucun de ces nombres ne sort du calcul : ils doivent tous y entrer. La formule ne fabrique pas le prix du manque, elle le consomme.",
+          "C’est ce qui donne à l’ensemble son statut, modeste et utile à la fois. Il ne s’agit pas d’une recette qui dirait combien tenir, mais d’un dispositif qui dit quelles grandeurs il faut connaître pour le décider, et comment elles se combinent. Le travail difficile reste devant : mettre un montant sur ce que coûte de manquer.",
+          "On peut retourner l’argument, et il devient inconfortable. Une organisation qui refuse de chiffrer le manque tient malgré tout un niveau de stock, et ce niveau correspond à un prix du manque qu’elle n’a jamais formulé. Chiffrer la pénalité n’ajoute donc pas une hypothèse au problème : cela expose une décision qui était déjà prise, en silence."
+        ]
+      },
+      {
+        "title": "Le lot économique n’est pas d’eux",
+        "paragraphs": [
+          "Le rapport ne se réduit pas à ces trois pages. Sa deuxième partie traite le cas où tout est connu d’avance, et les auteurs en attribuent eux-mêmes la solution à quelqu’un d’autre : à la page 9, ils écrivent que c’est « in essence, the solution advanced by R. H. Wilson [10], formerly of the Bell Telephone Company », et renvoient aussi à d’autres auteurs. Ce qui leur revient en propre commence après, quand la demande cesse d’être connue et se décrit par une distribution de probabilités.",
+          "Ils situent d’ailleurs eux-mêmes le vide qu’ils entendent combler. Dès la page 2, ils notent qu’ils n’ont pas trouvé dans la littérature de gestion de règle explicite pour déterminer les stocks de précaution : « we have not been able to find in the business literature an explicit rule of determining ». La suite de la phrase précise ce qu’une telle règle devrait faire, maximiser le profit espéré ou minimiser la perte espérée, une fois donnée la distribution de probabilités pertinente. C’est un constat sur l’état d’une littérature en 1950, non une démonstration.",
+          "Leur vocabulaire n’est pas encore le nôtre, et cela vaut d’être noté pour ne pas leur prêter des mots venus plus tard. L’expression stock de sécurité ne figure pas dans le rapport : ils écrivent « cushion stocks », des stocks qui font coussin, et parlent de stocks de marge de sécurité."
+        ]
+      }
+    ],
+    "limits": [
+      "La forme exacte que les auteurs donnent à la fonction de pénalité, avec les paramètres dont dépend ensuite le niveau optimal, tient à la page 20 du rapport. C’est là que se voit ce qu’un chiffre du manque doit être pour entrer dans le calcul, et il faudra y aller pour le lire. Comment obtenir ce chiffre, en revanche, aucune de ces pages ne le dit, et les sources disponibles n’établissent sur ce point aucune méthode de mesure.",
+      "Le même travail a paru dans Econometrica en juillet 1951, sous les trois mêmes noms, à partir de la page 250 du volume 19. Ce que cette version resserre, reformule ou ajoute par rapport au rapport de 1950, et sous quelle forme la pénalité y est présentée, se lit dans ces pages : c’est là qu’il faudra aller. Sa page de fin, elle, ne s’établit avec certitude que sur le volume lui-même.",
+      "Le rapport renvoie enfin à des travaux qu’il nomme lui-même, celui de Wilson pour le lot économique, ceux de Whitin et Haack, celui de Markowitz. Ce sont les racines de la notion, et ce qu’elles portent chacune se lit chez elles."
+    ]
+  },
+  {
+    "conceptId": "penser-a-partir-des-valeurs",
+    "lead": [
+      "Une réunion s’ouvre sur trois possibilités : garder le prestataire actuel, en changer, reprendre le travail en interne. Pendant une heure, on les compare, on chiffre, on tranche. Personne ne demande d’où sortent ces trois-là, ni pourquoi il n’y en a pas une quatrième. Elles étaient sur la table en arrivant, et à partir de ce moment, ce qui sera décidé ne peut pas être meilleur que la meilleure d’entre elles.",
+      "Presque tout ce qu’on sait faire en matière de décision se joue après cet instant : comparer, noter, pondérer, départager. Ces opérations supposent la liste déjà close. Ralph L. Keeney, spécialiste américain de l’aide à la décision, s’intéresse à ce qui se passe avant, et à ce qu’il en coûte de laisser cette étape se faire toute seule."
+    ],
+    "sections": [
+      {
+        "title": "La liste arrive avant la question",
+        "paragraphs": [
+          "Keeney commence par une description, et elle est nette : « Much of the focus of decision making is on the choice among alternatives », l’essentiel de l’attention se porte sur le choix entre des options. Il ajoute qu’il est courant de caractériser un problème de décision par les options disponibles. Autrement dit, on tient qu’il y a quelque chose à décider quand il y a une liste ; tant qu’aucune option n’est formulée, il ne se passe rien.",
+          "Il note aussi la manière dont ces options arrivent : « Often it seems as if the alternatives present themselves with little background investigation », souvent, elles semblent se présenter d’elles-mêmes, sans grand travail préalable. La formulation reste mesurée, et c’est important pour la suite : « Descriptively, I think this represents many decision situations », beaucoup de situations, non pas toutes. Il décrit une pente très répandue, pas une loi du comportement humain.",
+          "Le chapitre se donne d’ailleurs pour prescriptif, et le dit dès sa première page : il ne cherche pas d’abord à établir comment les gens décident, il propose une manière de s’y prendre. La conséquence de la pente qu’il décrit est immédiate. Quelle que soit la finesse de la comparaison, le résultat reste borné par ce que contient la liste : bien choisir entre trois options médiocres donne une décision médiocre, prise avec rigueur."
+        ]
+      },
+      {
+        "title": "Ce que « primitive » veut dire ici",
+        "paragraphs": [
+          "Deux mots demandent qu’on s’y arrête. Le premier est valeurs, qui désigne moins ici une morale que ce à quoi on tient dans une situation donnée : ce qu’on cherche à obtenir, ce qu’on veut éviter. Le second est primitive, et il ne veut pas dire rudimentaire. C’est un emprunt au vocabulaire de l’axiomatique, où l’on appelle notions primitives les termes posés avant tous les autres et à partir desquels le reste se définit. Dire que les valeurs sont la notion primitive d’un problème de décision, ce n’est donc pas les dire vagues ou préliminaires : c’est dire qu’elles viennent en premier dans l’ordre de construction.",
+          "La phrase qui précède immédiatement, chez Keeney, en donne la raison : « This desire to achieve more in terms of values is the motivation for any interest in any decision problem. » Ce désir d’obtenir davantage au regard de ce à quoi l’on tient est le motif de tout intérêt porté à un problème de décision. Sans lui, une situation n’a aucune raison d’apparaître comme un problème : elle est simplement là.",
+          "Les valeurs sont donc déjà présentes, en silence, dès l’instant où quelqu’un juge qu’il y a lieu de décider quelque chose. L’usage ordinaire les fait pourtant intervenir en fin de parcours, sous forme de critères appliqués à des options constituées. L’inversion consiste à les remettre à leur place logique : non pas la grille de notation, mais la raison d’être du problème."
+        ]
+      },
+      {
+        "title": "Créer les options plutôt que les recevoir",
+        "paragraphs": [
+          "Cet énoncé, chez Keeney, figure dans une section consacrée à l’identification des occasions de décider, et le déplacement n’est pas seulement une question d’ordre. Si rien n’est à décider tant qu’aucune option n’est sur la table, alors on ne décide que lorsqu’une situation vient l’imposer, et les moments où l’on décide sont ceux que les circonstances désignent. Partir de ce qu’on veut atteindre permet d’aller dans l’autre sens : repérer un endroit où agir là où personne n’avait posé de question.",
+          "C’est l’un des thèmes que le chapitre annonce d’entrée, des « approaches to facilitate the creation of alternatives based on stated values », des manières de faciliter la création d’options à partir de valeurs explicitées. Le verbe est celui de la fabrication, non de la comparaison. Quelques lignes plus loin, Keeney écrit que ce travail de pensée peut suggérer des options créatives : « The thinking process might suggest creative alternatives ».",
+          "Imaginons une équipe à qui l’on demande de choisir entre deux logiciels de suivi des demandes. En partant des deux produits, la discussion portera sur leurs fonctions respectives et sur leur prix. En partant de ce à quoi l’équipe tient, réduire l’attente des demandeurs, cesser de ressaisir trois fois les mêmes informations, elle peut découvrir qu’une partie du problème se règle en changeant l’ordre des étapes, et qu’il existait un troisième terme que personne n’avait proposé."
+        ]
+      },
+      {
+        "title": "L’ancrage porte aussi sur les critères",
+        "paragraphs": [
+          "Reste à comprendre pourquoi la liste initiale pèse si lourd. Le mécanisme est connu sous le nom d’ancrage : une première proposition, un premier chiffre, fixe le terrain sur lequel tout le reste se discute, et l’on s’en écarte moins qu’on ne le croit. Keeney rapporte lui-même le phénomène aux travaux de Tversky et Kahneman de 1974.",
+          "Mais il tient le cas qui l’occupe pour « potentially far worse », potentiellement bien pire. Car des options déjà constituées n’ancrent pas seulement ce entre quoi on choisit : elles ancrent les attributs, c’est-à-dire les aspects selon lesquels on juge. Chaque option arrive avec les dimensions qui la rendent comparable aux autres, et ce qu’aucune d’elles n’aborde ne devient pas seulement discutable : cela devient invisible.",
+          "On peut en tirer une conséquence pratique. Ajouter une option à une liste est facile, et une réunion le fait volontiers. Ajouter une dimension de jugement, une fois que la discussion s’est fixée sur trois ou quatre critères, est autrement difficile : il faut reprendre l’évaluation de tout ce qui a déjà été évalué. L’avertissement porte là, sur le rétrécissement des dimensions mêmes de la pensée."
+        ]
+      },
+      {
+        "title": "Ce à quoi Keeney ne s’oppose pas",
+        "paragraphs": [
+          "Une lecture rapide ferait de tout cela un rejet du calcul, et ce serait un contresens. La théorie de l’utilité multi-attributs, qui consiste à donner un poids à chaque aspect d’une option pour ramener l’ensemble à une mesure unique, n’est pas la cible : elle est le cinquième des cinq éléments de la démarche que Keeney expose, une sous-section lui est consacrée, et la procédure qu’il détaille plus loin part d’une fonction d’utilité multi-attributs déjà évaluée.",
+          "Ce qu’il vise est plus étroit : l’analyse de décision qui prend pour point de départ les options déjà là. Les deux approches forment un couple dans son vocabulaire, l’une centrée sur les alternatives, l’autre sur les valeurs, et il tient la première pour complémentaire de la sienne plutôt que pour fautive.",
+          "Ce qu’on fait une fois la liste constituée garde donc toute sa valeur, et il faudra bien constituer une liste. La thèse ne porte pas sur les instruments de comparaison, elle porte sur l’endroit où l’on commence, et sur le fait que cet endroit décide d’avance de ce qu’on pourra choisir."
+        ]
+      }
+    ],
+    "limits": [
+      "L’expression a donné son titre à un livre entier, Value-Focused Thinking: A Path to Creative Decisionmaking, paru chez Harvard University Press en 1992. Comment la démarche s’y outille, ce qu’elle y gagne et où elle s’y corrige, ce sont ses pages qui le diront : il faudra les lire.",
+      "La date de naissance de l’expression reste indéterminée : le chapitre ne la renvoie à aucun texte antérieur de Keeney, et le seul millésime attesté est celui du volume, 1988. Le recueil rassemble des communications d’une conférence de juin 1983, mais ce texte a été révisé depuis, puisqu’il cite un article de 1985.",
+      "Le chapitre n’apporte aucune preuve empirique de sa thèse : ses appuis sont des exemples professionnels que l’auteur rapporte, et un unique renvoi expérimental. Savoir si partir des valeurs produit effectivement de meilleures options que partir d’une liste demande des études, et ce n’est pas ce chapitre qui les fournit.",
+      "Quant à l’ancrage, Keeney nomme sa source : Tversky et Kahneman, 1974. Les expériences qui établissent le phénomène et disent jusqu’où il porte sont dans cet article."
+    ]
+  },
+  {
     "conceptId": "performance-totale",
     "lead": [
       "Imaginez un hôpital, une agence pour l’emploi, un service public quelconque. Pour savoir s’il fonctionne bien, quelqu’un doit en juger. Longtemps, ce jugement pouvait prendre plusieurs formes à la fois : interroger les usagers, comparer des situations locales, peser des critères différents et parfois contradictoires entre eux. De plus en plus, pourtant, ce jugement se resserre autour d’un seul indicateur : un objectif atteint ou manqué, un score, un classement. Et ce chiffre s’impose à tout le monde, du dirigeant qui le fixe à l’agent qui l’exécute, même quand personne, au fond, n’est tout à fait convaincu qu’il dise grand-chose du travail réellement accompli.",
@@ -3592,6 +4033,59 @@ export const generatedDeepenings: Deepening[] = [
       "Les douze niveaux ne sont pas exposés en détail ici. Chacun occupe dans le rapport plusieurs pages, avec ses exemples, ses exceptions et les cas où il ne s’applique pas : c’est cet article qu’il faudra lire pour s’en servir sur un cas réel.",
       "La liste n’est appuyée sur aucun protocole de vérification, et Meadows ne le prétend pas. Savoir si l’ordre qu’elle propose se retrouve dans des interventions observées relève d’une littérature postérieure, qui a repris la notion en sciences de la durabilité et l’a discutée.",
       "L’ouvrage sur les limites de la croissance, publié en 1972 par Meadows avec ses coauteurs, est le travail qui a rendu ces questions publiques et où le modèle mondial est exposé. Ses pages attendent leur lecteur."
+    ]
+  },
+  {
+    "conceptId": "precarite-des-trajectoires",
+    "lead": [
+      "Imaginons deux personnes qui signent le même contrat de six mois, le même jour, dans la même entreprise. Un an plus tard, la première occupe un poste stable et n’y pense plus. La seconde en est à son septième contrat court, entrecoupé de périodes sans emploi et de missions d’intérim. Le jour de la signature, rien ne les distinguait : même statut, même case dans les tableaux. Le mot « précaire » les désignait l’une comme l’autre, et il ne disait pourtant pas du tout la même chose dans les deux cas.",
+      "D’où une question qui a l’air technique et qui ne l’est pas : à quel moment regarde-t-on ? Tant qu’on compte les emplois fragiles à une date donnée, on obtient une photographie, et une photographie ne sait pas distinguer un passage d’une installation. C’est ce changement de regard, du contrat qu’on tient aujourd’hui vers la suite d’emplois qu’on a occupés, qu’Yvette Grelet et Michèle Mansuy retracent en 2004 dans la revue Formation Emploi, pour un terrain précis : l’analyse de l’insertion, c’est-à-dire de l’entrée dans la vie active."
+    ],
+    "sections": [
+      {
+        "title": "Ce qu’une photographie de l’emploi ne montre pas",
+        "paragraphs": [
+          "On peut compter, à une date donnée, combien de personnes occupent un emploi à durée limitée. Le chiffre est net, il se calcule vite, il se compare d’une année sur l’autre. Son défaut n’est pas d’être faux, il est d’additionner des situations opposées : le contrat court qui précède une embauche durable et le contrat court qui succède à cinq autres tombent dans la même case, avec le même poids.",
+          "L’article avance sur ce point un argument qui déplace tout le reste : le caractère stable d’un emploi ne s’apprécie qu’après coup, une fois cet emploi replacé dans l’ensemble de la trajectoire d’activité de la personne. Autrement dit, la stabilité n’est pas une propriété qu’on lirait sur un contrat au moment de sa signature. Elle se constate, plus tard, à ce qui a suivi.",
+          "La conséquence est directe pour qui veut mesurer. Si la qualité d’une situation ne se révèle qu’ensuite, alors l’unité pertinente n’est plus l’emploi occupé un jour donné, mais la suite des situations traversées. Ce n’est pas la fragilité d’un moment qui devient le problème, c’est son installation dans la durée : rester des années dans des emplois qui se remplacent les uns les autres sans jamais mener ailleurs."
+        ]
+      },
+      {
+        "title": "Un halo plutôt qu’une frontière",
+        "paragraphs": [
+          "On pourrait croire que ce déplacement simplifie la mesure, en remplaçant un critère par un autre. C’est l’inverse qui se produit, et les autrices l’écrivent nettement : « la précarité d’emploi n’est plus considérée comme une notion simple, caractérisée par le contrat de travail ». Ce qui vient à la place n’est pas un second critère unique, mais un ensemble de descriptions qui se recoupent : « une description plurielle dessine aujourd’hui un halo de précarité ».",
+          "Dans cette description, le type de contrat n’est plus qu’un descripteur parmi d’autres, aux côtés du salaire, du temps de travail, et de l’appréciation que la personne interrogée porte elle-même sur sa situation. Ce dernier mérite qu’on s’y arrête, parce qu’il fait entrer dans la mesure ce que l’intéressé en dit. Un emploi à durée indéterminée mal payé et vécu comme sans issue peut ainsi se retrouver dans le halo ; un contrat court, dans un métier où l’usage est de travailler ainsi, peut ne pas y figurer.",
+          "Le mot de halo est bien choisi, car un halo n’a pas de bord. On y entre par degrés, on s’en éloigne par degrés, et il n’existe aucun point où le passage se ferait franchement. Cela implique que toute frontière tracée ensuite, pour compter, pour ouvrir un droit ou pour cibler un dispositif, soit une décision assumée plutôt que la lecture d’une limite déjà là."
+        ]
+      },
+      {
+        "title": "Du cliché unique aux indicateurs longitudinaux",
+        "paragraphs": [
+          "Ce changement de notion s’accompagne d’un changement d’instrument, et la phrase qui le dit vient juste après celle qui oppose la fragilité instantanée au maintien durable : « On est donc passé d’une mesure unique faite à un moment unique lui aussi, à des indicateurs longitudinaux et à la prise en compte de l’ensemble du parcours ».",
+          "Longitudinal veut dire ici : construit en suivant les mêmes personnes pendant plusieurs années, au lieu d’interroger des personnes différentes à chaque nouvelle enquête. La différence n’est pas de degré. Une enquête ponctuelle, même répétée, dit combien de personnes sont en emploi fragile chaque année ; elle ne dit jamais si ce sont les mêmes. Ces deux mondes peuvent donner exactement la même courbe : l’un où beaucoup de gens passent brièvement par des emplois précaires, l’autre où toujours les mêmes y restent.",
+          "Suivre les mêmes personnes coûte évidemment plus cher, et suppose qu’on ait décidé à l’avance qui suivre, pendant combien de temps, et quelles dates enregistrer. On peut en tirer une remarque qui vaut bien au-delà de cette question : un instrument d’enquête ne se contente jamais d’enregistrer ce qui arrive, il décide de ce qui pourra devenir visible."
+        ]
+      },
+      {
+        "title": "Un déplacement que les autrices ne s’attribuent pas",
+        "paragraphs": [
+          "Il serait commode d’attribuer cette idée aux deux signataires de l’article, et ce serait leur prêter ce qu’elles refusent. Elles ne présentent pas la précarité des trajectoires comme une notion qu’elles fonderaient : elles racontent un déplacement accompli par tout un domaine de recherche, dont elles retracent l’histoire, et elles en créditent un ensemble de travaux. Certains sont les leurs, avec d’autres coauteurs, Grelet et Viney en 1991, Bordigoni et Mansuy en 1997 ; d’autres sont ceux de Nicole-Drancourt, de Paugam ou de Fougère, qu’elles citent à leurs côtés.",
+          "La signature de l’article, elle, porte les deux noms sans hiérarchie, et les deux autrices ne viennent pas du même endroit, contrairement à ce qu’on lit souvent. La note liminaire donne Yvette Grelet codirectrice du Centre régional associé au Céreq de Caen, et Michèle Mansuy, économiste, chargée de mission pour le Réseau régional à l’INSEE. Le texte est donc écrit depuis deux positions distinctes, ce qui vaut d’être su quand on cite l’une des deux seule."
+        ]
+      },
+      {
+        "title": "Ce que « durable » oblige à décider",
+        "paragraphs": [
+          "Passer du statut à la trajectoire ne supprime aucune difficulté de mesure : cela en change la nature. Il fallait auparavant décider quels contrats comptaient comme précaires ; il faut désormais décider à partir de quand un maintien devient durable. Trois ans dans des emplois qui se succèdent, est-ce un parcours précaire, ou l’entrée normale dans un métier où l’on commence ainsi ? La réponse n’est pas dans les données, elle précède leur traitement.",
+          "S’y ajoute le choix de la fenêtre d’observation, qui n’est jamais neutre. Imaginons deux façons de suivre les mêmes personnes, l’une sur trois ans, l’autre sur sept. La première comptera comme durablement précaires des gens que la seconde verra sortir la quatrième année ; la seconde révélera des retours en arrière que la première ignorait. Aucune des deux ne ment, et elles ne décrivent pas la même population.",
+          "C’est là que la notion devient utile hors de la statistique. Tant que la précarité se définit par le contrat, l’action publique vise des statuts et les compte. Si le problème est le maintien, alors ce qui compte est ce qui relie un emploi au suivant : ce que les années enchaînées font apprendre ou désapprendre, et ce qu’elles laissent espérer."
+        ]
+      }
+    ],
+    "limits": [
+      "L’article court de la page 87 à la page 99, et il annonce dès son ouverture une troisième partie qui prend le mouvement dans l’autre sens : comment les analyses produites par les chercheurs ont, en retour, modifié les instruments d’observation eux-mêmes. C’est la boucle entière entre ce qu’on mesure et ce qu’on parvient à voir qui se joue dans ces pages, et elles attendent leur lecteur.",
+      "Les travaux auxquels les deux autrices créditent le déplacement, ceux de Grelet et Viney en 1991, de Bordigoni et Mansuy en 1997, et les recherches de Nicole-Drancourt, de Paugam ou de Fougère citées à leurs côtés, sont les racines de la notion, et elles les nomment elles-mêmes. Ce que chacun de ces textes établit exactement, il faudra les lire pour le dire.",
+      "En combien de mois un maintien devient durable, à partir de quel seuil un parcours bascule, quels indicateurs longitudinaux ont effectivement été construits et sur quelles enquêtes : les pages où la formule est posée n’en fixent rien. C’est l’article suivi jusqu’au bout, avec les données qu’il analyse, qui permet de l’établir."
     ]
   },
   {
@@ -3851,6 +4345,114 @@ export const generatedDeepenings: Deepening[] = [
       "La date de naissance de l’expression reste ouverte. McCulloch date de « two or three weeks ago » non pas son invention, mais le moment où il a cessé de la confondre avec la redondance de calcul : le terme est donc déjà en usage chez lui. Pour savoir depuis quand, c’est sa communication de novembre 1958 au symposium de Teddington qu’il faudra lire, celle qu’il place en tête de sa propre bibliographie.",
       "Une seconde version de la phrase circule, avec un autre mot de liaison, rapportée au chapitre « Where Is Fancy Bred? » du recueil Embodiments of Mind, page 226. Seule celle qu’il prononce en 1959, relue sur l’image de sa page, est citée ici ; ce que porte exactement cette page-là, c’est ce recueil qui le dira.",
       "En français, la phrase n’a pas d’édition de référence : aucune traduction publiée de cette communication n’apparaît dans les sources disponibles, et elle se lit dans l’anglais du volume de 1960. Quant à sa réception francophone, elle est à chercher ailleurs que dans la piste la plus proche, l’article de Gaston Richard sur cybernétique et biologie paru en 1968, qui ne nomme jamais McCulloch."
+    ]
+  },
+  {
+    "conceptId": "regle-de-commande-a-deux-niveaux",
+    "lead": [
+      "Imaginons un magasin de pièces détachées, un matin ordinaire. Le responsable regarde ses rayonnages et doit répondre à une question qui revient tous les jours : est-ce qu’on commande aujourd’hui ? S’il commande souvent et par petites quantités, il ne manquera jamais de rien, mais chaque commande lui coûte quelque chose avant même le premier article : un bon à établir, une livraison à recevoir, une réception à contrôler. S’il commande rarement et en gros, il paie ce coût-là moins souvent, mais il immobilise des rayonnages pleins, et il lui arrive de se trouver à court entre deux livraisons.",
+      "La difficulté n’est pas de trancher ce matin-là. C’est que la question se reposera demain, et le jour d’après, avec un stock différent et une demande toujours inconnue. En 1950, dans un rapport de la RAND Corporation, Kenneth Arrow, Theodore Harris et Jacob Marschak déplacent le problème : ils ne cherchent pas la bonne commande du jour, ils cherchent la consigne qu’on remettra au magasinier une fois pour toutes, celle qui répondra à sa place chaque matin. Toute la difficulté se déplace alors dans le réglage de cette consigne."
+    ],
+    "sections": [
+      {
+        "title": "Ce que le magasinier a à faire chaque matin",
+        "paragraphs": [
+          "À la page 24 du rapport, la consigne tient en une ligne de conditions. Appelons y le stock dont on dispose au moment de décider, avant toute commande. Si y dépasse le seuil, la quantité commandée est nulle et le stock reste ce qu’il était. Si y est au seuil ou en dessous, on commande exactement ce qui manque pour atteindre le niveau visé, si bien qu’après la commande le stock vaut ce niveau, quel qu’ait été le point de départ. Les auteurs l’écrivent ainsi, avec o pour la quantité commandée et z pour le stock une fois la commande passée : « If y_t > s, o_t = 0 (and hence z_t = y_t), if y_t ≤ s, o_t = S − y_t (and hence z_t = S). »",
+          "Un détail de cette ligne compte plus qu’il n’y paraît : la commande se déclenche à y_t ≤ s, donc au seuil autant qu’en dessous. Toucher le seuil suffit, il n’est pas nécessaire de passer sous lui. Un cas d’égalité mal placé change la conduite d’un magasin réel un jour sur beaucoup, et c’est le genre de précision qu’une formulation en français courant émousse toujours un peu.",
+          "Ce que la consigne ne demande pas mérite autant d’attention que ce qu’elle demande. Ni prévision, ni calcul, ni mémoire de ce qui s’est passé la semaine précédente : il faut lire un chiffre sur un rayonnage et le comparer à un autre. La quantité commandée, elle, n’est pas fixe. Elle varie d’une fois sur l’autre, puisqu’elle vaut ce qui manque pour remonter au niveau visé. Ce qui est fixe, ce n’est pas ce qu’on achète, c’est le point d’arrivée."
+        ]
+      },
+      {
+        "title": "Le prix d’une commande, quelle que soit sa taille",
+        "paragraphs": [
+          "Pourquoi ne pas remettre le stock à niveau tous les jours, un peu à la fois ? La réponse est dans une hypothèse posée deux pages plus loin, au paragraphe 4:B : « we shall assume [...] that the cost of handling an order does not depend on the amount ordered. Let this cost be K, a constant ». Traiter une commande coûte un montant qui ne dépend pas de la quantité commandée. On le paie entier dès qu’on commande, pour un article comme pour mille.",
+          "Dès lors, commander devient un événement avec un droit d’entrée, et l’on n’acquitte pas ce droit tous les matins pour trois pièces. Il faut que le stock, une fois remonté, tienne un certain temps avant de retomber au seuil ; autrement dit, que le niveau visé soit assez au-dessus du seuil pour que l’intervalle entre deux commandes vaille le prix de la commande.",
+          "Le rapport donne à cette intuition sa place exacte dans le calcul. Page 36, la condition qui détermine l’écart entre les deux nombres fait entrer K, alors que les conditions obtenues à écart fixé ne le contiennent pas : les auteurs le notent juste avant, « K does not enter into (5.15) and (5.16) ». Le coût fixe ne règle donc pas où placer le seuil dans l’absolu, il règle la distance entre le seuil et le niveau visé. Cela implique que si commander ne coûtait rien en soi, plus rien n’imposerait de maintenir cet écart, et la consigne se réduirait à un seul nombre, remis à niveau en permanence."
+        ]
+      },
+      {
+        "title": "Ce qui vient de R. H. Wilson, et ce qui n’en vient pas",
+        "paragraphs": [
+          "Le rapport ne commence pas par l’incertitude. Il traite d’abord le cas où la demande est connue d’avance, celui où l’on peut calculer une taille de lot et un rythme de réapprovisionnement, et où la réponse classique prend la forme d’une racine carrée. Les trois auteurs ne s’attribuent pas cette réponse. Page 9, sous la formule qui la porte, ils écrivent : « We believe this is, in essence, the solution advanced by R. H. Wilson [10], formerly of the Bell Telephone Company; and also by other writers; see [1]. »",
+          "Ce qui leur revient en propre commence après, dans les sections consacrées à l’incertitude. Le déplacement est celui-ci : quand la demande est connue, on peut établir un calendrier, décider aujourd’hui ce qu’on commandera dans six semaines et s’y tenir. Quand elle ne l’est pas, aucun calendrier ne survit au premier écart, et ce qu’il faut fixer d’avance n’est plus une suite de commandes mais une manière de répondre à un état de stock, quel qu’il soit.",
+          "C’est ce que dit le mot que les auteurs emploient : une règle d’action. Elle ne prescrit aucune commande en particulier, elle prescrit ce qu’il faudra faire dans chacune des situations qui peuvent se présenter. Le hasard n’est pas éliminé, il est absorbé : la consigne accepte d’avance de ne pas savoir ce qui arrivera, et elle reste applicable dans tous les cas."
+        ]
+      },
+      {
+        "title": "Une forme posée d’avance, deux nombres à régler",
+        "paragraphs": [
+          "Il faut lire avec attention la phrase qui introduit la règle, page 24 : elle commence par un impératif. On choisit deux nombres, et on décide qu’ils définissent la conduite à tenir. Ce n’est pas la conclusion d’une démonstration, c’est le point de départ d’un calcul. La forme de la consigne est posée, et ce que le rapport optimise ensuite, ce sont ses deux paramètres. Établir que cette forme est la meilleure parmi toutes les consignes concevables serait un autre travail, et le rapport ne le revendique pas.",
+          "Les auteurs marquent eux-mêmes une frontière, à la section 7 : la règle devra être modifiée si les économies de gros lots ne sont pas négligeables. Le cas est facile à se représenter. Si le fournisseur consent une remise à partir de la palette, la quantité commandée a désormais ses raisons propres, qui ne se déduisent plus de la seule distance entre le stock et le niveau visé. Deux nombres ne suffisent plus à porter la décision.",
+          "Ce qui est revendiqué est donc à la fois plus modeste et plus solide qu’une prétention à l’optimalité générale : une consigne applicable sans calcul quotidien, dont on sait régler les deux nombres à partir des coûts, et dont les auteurs nomment eux-mêmes le cas où elle ne conviendra plus."
+        ]
+      },
+      {
+        "title": "Deux dates, 47 pages, et deux lettres",
+        "paragraphs": [
+          "L’objet lui-même mérite d’être décrit, parce qu’il n’a pas la forme habituelle d’une référence savante. Optimal Inventory Policy est un papier de la RAND Corporation, à Santa Monica, numéroté P-189, daté du 5 septembre 1950 et révisé le 16 novembre 1950 : les deux dates se lisent en tête de sa première page de texte. Quarante-sept pages, dont les dernières sont les références. Ni volume, ni numéro de revue. Les trois noms se lisent sur la page de titre, dans l’ordre Arrow, Harris, Marschak, et un exemplaire numérisé de la version révisée se consulte en ligne, page à page.",
+          "Reste la notation, qui fait de cette règle un objet reconnaissable et une source d’erreurs de lecture. Les deux nombres s’écrivent s et S : deux fois la même lettre, que seule la casse distingue. La minuscule est le seuil qui déclenche, la majuscule le niveau où l’on remonte, et l’ordre S > s > 0 est posé avec eux. Une consigne entière tient donc dans une différence typographique, ce qui la rend très commode à écrire et impossible à prononcer sans précaution."
+        ]
+      }
+    ],
+    "limits": [
+      "Sous le même titre et les mêmes trois noms, un article a paru dans Econometrica en juillet 1951, à partir de la page 250. Ce n’est pas le même texte que le rapport de 1950. Ce qu’il en conserve, ce qu’il en resserre, et en quels termes il pose la règle devant le public d’une revue d’économétrie, ce sont ses pages qui le diront.",
+      "Que cette forme à deux niveaux soit la meilleure possible et non pas seulement commode n’est pas établi dans le rapport, et cette démonstration a une adresse : la littérature de synthèse la situe dix ans plus tard, dans l’article de Herbert Scarf, « The Optimality of (S, s) Policies in the Dynamic Inventory Problem », paru en 1960. Sous quelles hypothèses il l’obtient, c’est cet article qu’il faudra lire.",
+      "Enfin, les sources disponibles ne permettent pas d’affirmer qu’aucun texte antérieur n’ait posé une consigne de cette forme. Le rapport renvoie lui-même, sous les numéros [1] et [10] de sa bibliographie, aux travaux dont il tient la solution du cas certain ; les titres que ces numéros désignent se lisent dans ses dernières pages, et c’est de là que part toute recherche d’antériorité."
+    ]
+  },
+  {
+    "conceptId": "regle-lineaire-de-decision",
+    "lead": [
+      "Au début de chaque mois, dans une usine, deux nombres sont à fixer : ce qu’on va produire, et le nombre de personnes qui vont le produire. Les fixer correctement demande un calcul, parce que les deux se tiennent et qu’aucun ne se règle sans l’autre : produire davantage à effectif constant, c’est des heures supplémentaires ; embaucher pour éviter ces heures, c’est du recrutement et de l’apprentissage ; produire d’avance, c’est remplir les entrepôts. Le calcul est long, il demande quelqu’un qui sache le conduire, et il faudrait le reprendre douze fois par an. Autant dire qu’il ne sera pas repris.",
+      "Le mémorandum que Charles C. Holt, Franco Modigliani et Herbert A. Simon font paraître en mai 1955 à la Graduate School of Industrial Administration du Carnegie Institute of Technology déplace cette difficulté plutôt qu’il ne la supprime. Le calcul lourd y est mené une seule fois. Ce qui en sort n’est pas une décision, c’est une formule : quelques coefficients fixes, deux ou trois nombres relevés dans l’atelier, une multiplication et une addition. Les auteurs annoncent dès leur première page une méthode nouvelle, « The new method, published for the first time in this paper »."
+    ],
+    "sections": [
+      {
+        "title": "Deux calculs qui n’ont pas le même prix",
+        "paragraphs": [
+          "La page 24, qui ouvre une section intitulée « IV. The Optimal Decision Rules for the Paint Factory », décrit le premier de ces calculs en trois gestes. Il faut d’abord estimer les paramètres de la fonction de coût, c’est-à-dire chiffrer ce que valent réellement, dans cette usine, une heure supplémentaire, une embauche, un mois de stock. Vient ensuite la dérivation : « Once the parameters of the cost function are estimated, the decision rule solution may be obtained by differentiating with respect to each decision variable. » Puis l’inversion de la matrice du système ainsi obtenu, qui livre les règles.",
+          "Ce travail se fait une fois. Ce qui reste ensuite est d’un tout autre ordre, et les auteurs le disent avec un adverbe de soulagement : « Fortunately, the results of this procedure can be reduced to a formula, requiring only a routine computation. » Le paragraphe suivant en donne le rythme : « There are two decision rules to be applied at the beginning of each month », une pour la cadence de production, une pour l’effectif.",
+          "La difficulté n’a donc pas disparu, elle a changé de place. Elle n’est plus dans la décision mensuelle, devenue une opération d’arithmétique, elle est passée en amont, dans l’estimation des coûts et dans l’algèbre qui en tire les coefficients. Cela implique qu’un atelier qui adopte une telle règle achète sa simplicité mensuelle au prix d’un travail préparatoire considérable, et qu’il devra recommencer ce travail si ses coûts changent."
+        ]
+      },
+      {
+        "title": "Un coût au carré, une règle en ligne droite",
+        "paragraphs": [
+          "Reste à comprendre pourquoi le calcul se termine si bien. La section qui précède porte un titre qui donne la clé : « A Quadratic Criterion for the Scheduling Decisions in a Paint Factory ». Quadratique veut dire ici que les écarts sont comptés au carré : un écart deux fois plus grand ne coûte pas deux fois plus cher, il coûte quatre fois plus cher. Le prix de l’écart monte plus vite que l’écart lui-même, ce qui pénalise fortement les grands décalages et laisse passer les petits.",
+          "Ce choix a une conséquence mathématique qui n’a rien de mystérieux. Chercher le minimum d’une fonction revient à annuler ses dérivées, et la dérivée d’un carré est une expression du premier degré, proportionnelle à l’écart lui-même. Les conditions du minimum sont donc des équations sans carré ni puissance, et un système de telles équations se résout par les moyens ordinaires de l’algèbre : c’est ce que fait l’inversion de matrice.",
+          "Linéaire, appliqué à la règle qui en sort, veut dire la même chose du côté de l’atelier : chaque grandeur observée est multipliée par un coefficient fixe, et les produits s’additionnent. Pas de seuil, pas de cas particulier, pas de table à consulter. C’est cette forme, et elle seule, qui rend le calcul mensuel exécutable par quelqu’un qui n’a pas à savoir d’où viennent les coefficients."
+        ]
+      },
+      {
+        "title": "Ce que la forme quadratique laisse de côté",
+        "paragraphs": [
+          "Les coûts réels d’une usine n’ont aucune raison d’avoir la forme d’une parabole. Rien ne garantit que licencier coûte exactement le symétrique d’embaucher, les heures supplémentaires se paient par paliers, un stock qui dépasse la place disponible change brutalement de prix. La forme quadratique n’est pas un relevé de ces coûts, c’est une courbe régulière qu’on ajuste dessus, et le rapport le dit lui-même : la planche qui la présente s’intitule « APPROXIMATING COST FUNCTION ».",
+          "Cette précaution éclaire une phrase de la page 24 qui pourrait autrement s’entendre comme une promesse sans réserve : « It can be proved mathematically, once and for all, that the decisions yielded by the optimal decision rule are the best possible for the given cost function ». Ce sont les derniers mots qui portent toute la restriction. Les décisions sont les meilleures possibles pour la fonction de coût retenue, celle qu’on a ajustée, et non pour l’usine telle qu’elle est.",
+          "L’optimalité change ainsi de sens. Elle ne dit pas que la règle donne le meilleur résultat imaginable, elle dit qu’aucune autre règle ne fait mieux au regard du prix qu’on a accepté de mettre sur chaque écart. Toute la valeur pratique du procédé se reporte donc sur la qualité de cet ajustement, c’est-à-dire sur un travail de chiffrage qui, lui, n’a rien de mathématique."
+        ]
+      },
+      {
+        "title": "Ce que la règle demande de savoir chaque mois",
+        "paragraphs": [
+          "Une formule ne sert à rien si les nombres qu’elle réclame ne sont pas disponibles au moment de décider. Les deux règles prennent en argument l’effectif et le stock de la fin du mois précédent, ainsi que les commandes prévues. Ce sont des grandeurs qu’une usine connaît déjà : l’une se lit sur le registre du personnel, l’autre à l’inventaire, la troisième vient du carnet de commandes et de la prévision qu’on en tire.",
+          "La décision d’un mois repart donc de l’état où la précédente a laissé l’atelier. Une embauche décidée en janvier se retrouve dans l’effectif de départ de février et pèse sur ce que la règle recommandera alors. La formule n’aligne pas douze mois indépendants, elle les enchaîne, et c’est ce qui la sépare d’un barème.",
+          "Par construction, une règle de cette forme ne dit rien d’elle-même sur sa propre validité. Elle ne prévient pas quand les coûts sur lesquels elle a été construite ont changé, ni quand les commandes cessent de ressembler à ce qu’elles étaient. Rien dans son application mensuelle ne signale qu’il faudrait reprendre le calcul du début : cela se juge en dehors d’elle."
+        ]
+      },
+      {
+        "title": "Ce qui voyage hors de l’usine de peinture",
+        "paragraphs": [
+          "Les titres de section ne cachent pas d’où viennent les nombres : c’est toujours la paint factory, un fabricant de peinture qui n’est pas nommé, dont les données couvrent les années 1949 à 1954. Une seule usine, un seul carnet de commandes, une seule organisation du travail. Les coefficients calculés là valent pour elle.",
+          "Les auteurs sont nets sur ce point à la page 40 : il serait, écrivent-ils, « rash of the authors to generalize these conclusions to industry generally ». Les conclusions ne voyagent pas. Deux pages plus loin, pourtant, ils écrivent autre chose, et ce n’est pas une contradiction : « Since it is anticipated that the decision rule discussed in this paper will be applicable in its present form to a good many other factories, a technical appendix is attached ». Ce qu’ils tiennent pour transposable, c’est la forme de la règle, pas le résultat chiffré.",
+          "La distinction mérite d’être tenue, parce qu’elle décide de ce qu’on peut emporter ailleurs. Il ne s’agit pas de reprendre les coefficients d’un fabricant de peinture, mais de refaire chez soi le chiffrage des coûts, puis la même dérivation. Et cette transposition est présentée comme une attente, non comme un résultat démontré : le mot employé est « anticipated »."
+        ]
+      }
+    ],
+    "limits": [
+      "L’annexe qui démontre le résultat manque à l’exemplaire numérisé accessible en ligne : la table des matières l’annonce au folio 43, sous le titre « APPENDIX: Derivation of the Conditions for Minimum Costs », et la numérisation s’arrête au folio 42. La phrase de la page 24 qui promet une preuve valable une fois pour toutes se lit donc sans cette preuve, laquelle attend encore son lecteur.",
+      "La dérivation a d’ailleurs un texte à elle, signé d’un quatrième nom : « Derivation of a Linear Decision Rule for Production and Employment », de John F. Muth, paru dans Management Science en 1956, p. 159-177. Muth figure en 1955 parmi les étudiants remerciés et non parmi les auteurs ; ce que son article établit, ses pages le disent.",
+      "Le même travail a paru en octobre 1955 dans Management Science sous les trois mêmes noms, en trente pages contre quarante-deux. Ce que cette version resserre ou reformule, et sous quelle forme la phrase de la page 24 s’y retrouve, se lit dans ces trente pages.",
+      "Les coefficients calculés pour le fabricant de peinture sont dans les équations numérotées des pages 24 à 28 ; aucun ne figure ici, et c’est sur l’image de ces pages qu’ils se relèvent. Aucune traduction française publiée du mémorandum n’en est connue : les phrases citées ici en anglais sont celles de l’original."
     ]
   },
   {
@@ -4205,6 +4807,174 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "savoir-ouvrier-mis-en-regles",
+    "lead": [
+      "Dans un atelier, un tourneur de vingt ans de métier sait à quelle vitesse attaquer une pièce, à quel moment l’outil va chauffer, jusqu’où il peut pousser sans rien casser. Il ne l’a lu nulle part : il l’a appris en regardant faire, en ratant, en écoutant un ancien. Ce savoir-là n’existe que dans ses mains et dans sa tête, il ne se trouve dans aucun classeur, et le jour où il s’en va, il part avec lui. Longtemps, cela a paru dans l’ordre des choses : un métier s’apprend auprès de ceux qui le tiennent.",
+      "En 1911, Frederick Winslow Taylor écrit une phrase qui refuse cet ordre des choses. Ce savoir accumulé, il ne le laisse pas là où il est : il en fait la matière d’une opération, et il confie cette opération à ceux qui dirigent. Le mot qu’il emploie pour la nommer est inattendu, c’est celui de charge, « burden » en anglais : la direction ne s’empare de rien, elle assume. C’est sur une page de son deuxième chapitre que ce déplacement s’écrit, en une seule phrase."
+    ],
+    "sections": [
+      {
+        "title": "Ce que Taylor appelle le savoir traditionnel",
+        "paragraphs": [
+          "Le savoir dont il est question n’est pas celui des écoles. C’est celui qui se transmet dans l’atelier, d’ouvrier à ouvrier, et qui reste attaché à ceux qui l’exercent. L’anglais du temps l’appelle « rule of thumb » : la mesure à l’estime, l’évaluation apprise par l’habitude, le tour de main qu’on tient d’un ancien et qu’on ne saurait justifier autrement que par l’expérience. Ce n’est pas une ignorance, c’est une compétence, mais une compétence qui ne se sépare pas de la personne qui la porte.",
+          "C’est à cette manière de faire que Taylor oppose le premier des principes qu’il énumère, sur cette même page 36 : « They develop a science for each element of a man’s work, which replaces the old rule-of-thumb method. » Ils développent une science pour chaque élément du travail d’un homme, science qui remplace l’ancienne méthode à l’estime. Ce que ce mot de science recouvre exactement, la phrase ne le dit pas ; ce qu’elle dit sans ambiguïté, c’est ce qu’il vient remplacer."
+        ]
+      },
+      {
+        "title": "Une charge, et non une conquête",
+        "paragraphs": [
+          "La phrase commence par un verbe qui étonne : les dirigeants assument. Taylor n’écrit pas qu’ils prennent, ni qu’ils retirent quoi que ce soit à personne ; il écrit qu’ils se chargent de quelque chose, et le mot anglais, « burden », dit un poids qu’on porte. Rassembler le savoir des ouvriers est présenté comme un devoir nouveau qui s’ajoute au travail de la direction, et il ouvre la série des quatre principes exposés dans ce chapitre.",
+          "Le mot « managers » ne désigne pas ici un grade dans une hiérarchie, mais ceux qui prennent cette fonction en charge ; c’est pourquoi il se rend mieux par dirigeants que par cadres. Et ce qu’ils prennent en charge tient en deux temps. Rassembler, d’abord, ce qui suppose d’aller chercher ce savoir là où il se trouve, c’est-à-dire auprès des ouvriers eux-mêmes, un par un. Puis le réécrire en règles, en lois et en formules, c’est-à-dire le mettre dans une forme où un autre pourra le lire et l’appliquer."
+        ]
+      },
+      {
+        "title": "Le bénéfice que Taylor annonce à l’ouvrier",
+        "paragraphs": [
+          "La phrase ne s’arrête pas au moment où le savoir devient règle. Elle continue, et sa fin change son visage : ces règles, ces lois et ces formules sont, écrit Taylor, « immensely helpful to the workmen in doing their daily work », d’un immense secours aux ouvriers dans leur travail quotidien. L’opération n’est donc pas présentée comme une perte pour eux, mais comme un service qu’on leur rend : c’est le sens que Taylor lui donne, et c’est celui qu’il défend.",
+          "Dans cette phrase, il annonce ce bénéfice, il ne le démontre pas. Il le pose, et il l’introduit d’ailleurs à titre d’exemple, « for instance », parmi les devoirs nouveaux qu’il assigne à la direction. Savoir si ce secours s’est vérifié demande tout autre chose que la lecture de cette page : cela se tranche dans les ateliers où la méthode a été appliquée, et non dans la phrase qui l’annonce."
+        ]
+      },
+      {
+        "title": "Prévoir d’un côté, exécuter de l’autre",
+        "paragraphs": [
+          "Deux pages plus loin, Taylor tire de ce principe une conséquence d’organisation : dans la plupart des cas, écrit-il, il faut un type d’homme pour prévoir et planifier, et un type entièrement différent pour exécuter le travail. La conséquence est nette, et elle installe dans l’atelier une frontière qui n’y passait pas : d’un côté ceux qui établissent les règles, de l’autre ceux qui les suivent.",
+          "Il vaut la peine de remarquer ce que cette phrase ne dit pas. Elle parle de deux sortes d’hommes et d’une répartition des tâches. Elle ne dit rien d’une qualification qui se perdrait, rien d’un savoir qui appartiendrait à quelqu’un et qu’on lui prendrait. La question qui vient pourtant la première à un lecteur d’aujourd’hui, celle de savoir à qui appartient le savoir de métier, Taylor ne la pose pas dans ces pages : il y décrit une opération et une division du travail, pas un transfert de propriété."
+        ]
+      },
+      {
+        "title": "Les mots des commentateurs, et ceux de l’auteur",
+        "paragraphs": [
+          "Pour parler de ces pages, on emploie couramment un vocabulaire qui n’est pas celui de Taylor : séparation de la conception et de l’exécution, déqualification, dépossession. Ces termes sont ceux de ses lecteurs, et principalement de la lecture qu’en donne Harry Braverman en 1974, plus de soixante ans après le livre. Ils sont commodes, et ils ne sont pas neutres : chacun ajoute à l’opération décrite un jugement sur ses effets.",
+          "La distinction mérite d’être tenue, parce qu’elle sépare deux affirmations très différentes. La première : la direction rassemble le savoir des ouvriers et le réécrit en règles. C’est ce que Taylor écrit, et il le revendique comme un progrès. La seconde : ce faisant, elle vide leur métier de sa substance. C’est une thèse sur les conséquences, qui demande ses propres preuves, et qui ne se lit pas dans la phrase de la page 36. Prêter à Taylor les mots de ses critiques a d’ailleurs un effet paradoxal : cela rend sa position plus facile à réfuter qu’elle ne l’est réellement."
+        ]
+      },
+      {
+        "title": "Un mémoire, et non un commencement",
+        "paragraphs": [
+          "Il serait tentant de lire ce volume de 1911 comme le point de départ de l’organisation scientifique du travail. Taylor, lui, ne le présente pas ainsi : il en fait un mémoire, et il renvoie à ses propres communications antérieures devant l’American Society of Mechanical Engineers, dont Shop Management, qu’il cite en note à la page 33. Le principe exposé ici n’est donc pas formulé pour la première fois ; il est repris, resserré, et adressé à un public plus large que celui des ingénieurs.",
+          "Dans le voisinage de ces pages, un seul collaborateur est nommé, Carl G. Barth, et c’est pour une règle à calcul décrite au chapitre suivant, non pour le principe instruit ici. La page de titre du tirage de 1919 ne porte aucun autre nom que celui de Taylor, et son verso donne le copyright de 1911 à lui seul. Ce qui s’affirme dans ce chapitre n’est partagé avec personne."
+        ]
+      }
+    ],
+    "limits": [
+      "Ce que ce principe est devenu là où il a été appliqué ne se lit pas dans ce chapitre. Comment il a été reçu, ce que les organisations ouvrières du temps y ont répondu, ce qu’il en est advenu dans les enquêtes parlementaires qui ont suivi la publication : d’autres textes que celui-ci le diront, et ils restent à lire.",
+      "Le vocabulaire qui sert aujourd’hui à commenter ces pages, la déqualification, la séparation de la conception et de l’exécution, vient pour l’essentiel d’un livre de 1974, celui de Harry Braverman. En quels termes exacts il lit ce chapitre de Taylor, ce sont ses propres pages qui le diront, et il faudra les ouvrir.",
+      "Shop Management, la communication antérieure que Taylor cite lui-même en note à la page 33, est le texte où se lira ce qu’il disait de ce transfert avant 1911, et ce qui a bougé d’une formulation à l’autre.",
+      "Les formulations françaises données plus haut n’ont pas l’autorité d’une traduction publiée : ce sont des rendus de travail faits sur l’anglais de l’édition Harper de 1919, et le choix de dirigeants pour « managers » en est un. La lettre exacte est à la page 36 de cette édition."
+    ]
+  },
+  {
+    "conceptId": "seuil-d-insatisfaction-salariale",
+    "lead": [
+      "Une augmentation tombe. Le montant est réel, il se lit sur la feuille de paie, et pourtant il ne dit pas d’avance ce que la personne qui la reçoit va en penser. La même somme peut passer pour une reconnaissance, pour un dû sans importance, ou pour une manière polie de ne rien donner. Ce n’est pas affaire d’humeur : chez celui qui reçoit, quelque chose sert de repère et décide du sens du chiffre. Reste à savoir quoi, et si ce repère se laisse mesurer.",
+      "En 1980, Bernard Ghesquière-Dierickx consacre quatre pages du Bulletin de psychologie à cette question. Sa manière de la prendre est désarmante de simplicité : il demande à des gens à partir de quel salaire ils se diraient bien payés, puis au-dessous de quel salaire ils se diraient mal payés. Les deux réponses ne se ressemblent pas du tout, et c’est de cet écart que sort tout le reste."
+    ],
+    "sections": [
+      {
+        "title": "Deux questions posées à des candidats",
+        "paragraphs": [
+          "L’enquête tient dans un questionnaire écrit très bref, rempli anonymement par des ouvriers qualifiés ou spécialisés qui se présentaient à l’embauchage dans des établissements industriels. Quatre passations étalées de 1974 à 1977, cent cas recueillis, quatre-vingt-quatorze exploitables. Deux questions, pas davantage. On mesure la modestie du matériel, et il faut la garder en tête : les résultats qui suivent viennent de là, et de nulle part ailleurs.",
+          "Le fait qui déclenche tout est dans la comparaison des deux séries de réponses, page 415. Les montants avancés pour le bon salaire s’étalent : ils se répartissent en cloche, beaucoup de valeurs voisines d’une moyenne et des extrêmes de part et d’autre, comme se distribuent la plupart des grandeurs qu’on mesure sur un groupe. Les montants avancés pour le mal payé, eux, ne s’étalent pas : ils se groupent sur une valeur unique.",
+          "Interrogées séparément, ces personnes s’accordaient donc bien mieux sur le plancher que sur le plafond. Chacune avait son idée de ce qui serait vraiment bien payé ; elles avaient presque la même idée de ce qui serait mal payé."
+        ]
+      },
+      {
+        "title": "Un repère qui couvre une plage, pas un chiffre",
+        "paragraphs": [
+          "Pour rendre compte de cela, l’auteur reprend une notion plus ancienne que son article et qu’il ne s’attribue pas, le niveau d’aspiration : ce à quoi une personne s’attend, et à quoi elle rapporte ce qu’elle obtient. Appliquée à la rémunération, il tient à la nommer sans équivoque, page 413 : « Pour plus de précision, nous l’appellerons niveau d’aspiration salarial ».",
+          "L’essentiel vient juste après, et prend la forme d’un refus. On attendrait un montant, une valeur pivot au-dessus de laquelle on serait content et au-dessous de laquelle on ne le serait plus. C’est exactement ce que l’auteur écarte : « Ce niveau n’est pas une espèce de ligne-frontière, exprimé par un salaire déterminé. Il couvre plutôt une plage des barèmes de salaire. » Et cette plage n’est pas homogène : « C’est une plage à trois niveaux ».",
+          "Les trois se distinguent par ce que la personne s’y dit. En haut, on se dit que « c’est vraiment bien payé ». En bas, le jugement change de nature : il n’est plus question d’une paie insuffisante, mais de quelqu’un qui « est exploité », c’est-à-dire d’un tort et de celui qui le commet. Entre les deux s’étend une zone que l’auteur qualifie de « neutralité », où la rémunération n’appelle ni gratitude ni grief."
+        ]
+      },
+      {
+        "title": "Ce qu’une augmentation devient selon la zone",
+        "paragraphs": [
+          "De ce découpage sort une conséquence immédiate pour quiconque modifie un salaire. L’auteur l’écrit sans précaution, page 413 : « Les réactions consécutives à cette modification se déterminent selon la zone où se situe cette nouvelle rémunération. » Ce qui compte n’est donc pas le montant ajouté, ni même son pourcentage : c’est l’endroit où la nouvelle paie atterrit dans la plage de celui qui la touche.",
+          "D’où une possibilité qui déconcerte : un avancement ou une augmentation « peut ne pas entraîner de réaction euphorique », ni pousser à en faire davantage. Le verbe mérite qu’on s’y arrête, parce que la phrase est souvent durcie quand on la résume. L’auteur écrit que cela peut ne pas se produire, non que cela ne se produit jamais. Il décrit une éventualité commandée par la zone atteinte, pas une indifférence générale des salariés à ce qu’on leur verse.",
+          "Cela implique qu’une même somme n’a pas partout le même rendement. Imaginons deux personnes qui reçoivent le même supplément mensuel. Chez la première, il fait passer la paie au-dessus de la limite basse, et il retire un grief. Chez la seconde, il déplace un chiffre à l’intérieur de la zone neutre, où par définition rien ne s’exprime : le bulletin a changé, le jugement non. L’exemple est inventé, la règle qu’il illustre est bien celle de l’article."
+        ]
+      },
+      {
+        "title": "Frustrant, stimulant : des zones nommées par leur effet",
+        "paragraphs": [
+          "Un tableau de la page 415 nomme ces régions par ce qu’elles font, non par ce qu’elles valent : il parle de « zones frustrantes et stimulantes ». Le vocabulaire est celui de l’effet produit sur la conduite, et il déplace la question. On ne demande plus si un salaire est élevé ou bas dans l’absolu, on demande ce qu’il déclenche chez celui qui le perçoit.",
+          "C’est aussi ce qui explique que la limite basse soit d’une autre nature que la limite haute. La première est un bord que la plupart des personnes interrogées savent situer, et sur lequel elles se rejoignent ; la seconde varie d’une personne à l’autre, comme varient les montants qu’elles donnent pour le bon salaire. Pourquoi le bas se sait mieux que le haut, l’article ne le démontre pas ; il l’établit comme un résultat d’enquête.",
+          "Cette asymétrie a une portée pratique qui dépasse le cas étudié. On peut agir sur le mécontentement avec une précision qu’on n’aura pas sur la satisfaction : la première a une frontière que les gens partagent, la seconde n’en a pas. Une politique salariale peut supprimer un sentiment d’injustice sans pour autant produire de l’enthousiasme, et ces deux effets ne se commandent pas avec les mêmes leviers."
+        ]
+      },
+      {
+        "title": "L’estime de soi, laissée comme une piste",
+        "paragraphs": [
+          "Reste la question de savoir d’où vient la plage elle-même : pourquoi la limite basse d’un individu se place ici plutôt que là. L’article ne la referme pas. Page 416, l’estime de soi figure parmi les facteurs envisagés du niveau d’aspiration, mais à titre d’hypothèse : l’auteur écrit qu’il reste à la rechercher. Ce n’est pas un déterminant établi, c’est une direction proposée à qui voudrait continuer.",
+          "Il faut lire ces quatre pages pour ce qu’elles sont : une construction de vocabulaire adossée à un petit ensemble de réponses, qui donne un nom à une observation robuste et laisse ouverte son explication. Le niveau d’aspiration, lui, vient d’ailleurs, et l’auteur ne se l’approprie pas : il en cite les travaux en fin d’article. Ce qui lui revient en propre, c’est la plage à trois zones et le seuil qui en marque le bas."
+        ]
+      }
+    ],
+    "limits": [
+      "Ce que cet article est devenu après 1980, qui l’a repris, qui l’a discuté, qui a cherché le même seuil ailleurs, les sources disponibles ne permettent pas de le dire. Sa postérité se lira dans les travaux de psychologie du travail publiés après lui.",
+      "Le niveau d’aspiration n’est pas de l’auteur, et il nomme lui-même page 416 ceux à qui la notion revient : Iff, Robine, Vinot, et un volume dirigé par Reuchlin. Ce sont les racines de la construction ; ce qu’ils en disent, ce sont leurs pages qui le portent, et il faudra les lire.",
+      "La portée du seuil reste bornée par l’enquête : quatre-vingt-quatorze réponses d’ouvriers se présentant à l’embauchage industriel entre 1974 et 1977. Que la même netteté du plancher se retrouve dans d’autres métiers ou d’autres époques, aucune donnée ici ne l’établit.",
+      "Pour la forme exacte du nom et la numérotation du fascicule, c’est l’exemplaire imprimé du Bulletin de psychologie qu’il faudra prendre en main : la page qui ouvre l’article ne porte pas de folio, la signature y est composée en capitales sans accent, et le tome comme le numéro viennent des notices de Persée."
+    ]
+  },
+  {
+    "conceptId": "seuils-de-rupture-et-d-ajustement",
+    "lead": [
+      "Le prix d’un produit monte de quelques centimes par mois. On rogne ailleurs, on change de marque, on s’arrange, et rien dans les habitudes ne paraît vraiment bouger. Puis une hausse du même ordre tombe un matin, et le rayon est vide avant midi. Entre les deux situations, la quantité a peu changé ; la conduite, elle, a changé de nature. Ce n’est plus la même réaction en plus fort, c’est une autre réaction.",
+      "Une variation régulière produit donc, par endroits, des effets qui ne le sont pas. Reste à savoir où passe la ligne, et surtout de quel côté on tombe : franchir un point de bascule ne conduit pas toujours à la débandade, il arrive qu’on s’adapte, posément, à ce qui vient de changer. C’est ce double régime que Pierre-Louis Reynaud aborde en 1962 dans le Bulletin de psychologie, où il signe depuis la faculté de droit et des sciences économiques et politiques de Strasbourg. Sa réponse tient en quelques lignes, et elle déplace la question : ce qui décide n’est pas la taille du choc."
+    ],
+    "sections": [
+      {
+        "title": "Des points critiques, et non des degrés",
+        "paragraphs": [
+          "Chauffer de l’eau, c’est d’abord la rendre plus chaude, degré après degré ; portée à ébullition, ce n’est plus de l’eau chaude qu’on obtient, c’est de la vapeur. Le chauffage n’a pas changé de nature, la matière si. Reynaud soutient qu’il se passe quelque chose de comparable dans les conduites économiques : « La conséquence de cette discontinuité s’observe en économie, où l’on constate l’existence de points critiques. »",
+          "Un point critique est un endroit où une variation qui se poursuit tranquillement cesse de produire des effets proportionnés. En deçà, une hausse un peu plus forte donne une réaction un peu plus forte. Au-delà, la réaction n’est plus du même ordre : elle a changé de forme. La différence pèse lourd pour qui veut prévoir, car une observation faite juste avant le point ne dit plus rien de ce qui suit juste après.",
+          "Le verbe employé mérite d’être noté : on constate. L’existence de ces points est donnée comme un fait relevé sur les conjonctures, et non comme une hypothèse commode dont on discuterait la vraisemblance."
+        ]
+      },
+      {
+        "title": "Deux façons de franchir un seuil",
+        "paragraphs": [
+          "La phrase qui suit, page 870, nomme les deux cas : « Au niveau de ces seuils se produisent tantôt des modifications brutales dans la conduite (par exemple, la panique brusque en cas de crise), ce sont les seuils de rupture, tantôt de simples adaptations sans panique, ce sont les seuils d’ajustement constatés au début des récessions. »",
+          "Deux choses s’y remarquent. La première est que le seuil ne se définit pas par une grandeur, mais par ce qui s’y produit : le mot rupture désigne une conduite qui se modifie brutalement, le mot ajustement une conduite qui se recompose sans éclat. Rien n’indique qu’un seuil de rupture serait situé plus haut, ou plus bas, qu’un seuil d’ajustement.",
+          "La seconde est plus fine. La panique arrive dans la phrase précédée d’un par exemple : elle est un cas de modification brutale, elle n’est pas la définition du seuil de rupture. Mais l’autre branche, elle, est décrite par une négation, de simples adaptations sans panique. C’est donc bien la panique qui sert de marqueur au couple, et le contraste appartient à Reynaud, dans la même phrase.",
+          "Le second membre porte en outre une indication de moment : les seuils d’ajustement sont constatés au début des récessions. Un seuil n’est pas un état où l’économie s’installerait, c’est un passage, et il se repère à l’entrée dans un retournement."
+        ]
+      },
+      {
+        "title": "1929 et 1958, deux formes de dépression",
+        "paragraphs": [
+          "Comment savoir devant lequel des deux on se trouve ? La suite du texte répond, et elle ne parle ni de pourcentages ni de volumes : « L’étude de la mentalité des producteurs pendant les différents types de dépression a donc permis de différencier très nettement les crises de type classique (1929) et les récessions actuelles (1958). »",
+          "Le critère est psychologique et observé. Ce qu’on regarde pour trancher, c’est l’état d’esprit de ceux qui produisent, pendant l’épisode lui-même, et non l’ampleur du recul enregistré. Le couple crise et récession, que l’usage courant traite volontiers comme deux intensités d’une même chose, devient à ce compte une différence de type.",
+          "Les deux dates ancrent la distinction dans ce que ses lecteurs de 1962 avaient traversé : la crise de type classique de 1929 d’un côté, la récession de 1958 de l’autre, qualifiée d’actuelle sous sa plume. Cela implique qu’un recul d’activité, si sévère soit-il en chiffres, ne relève pas automatiquement du régime de rupture : c’est du côté des conduites qu’il faut aller le vérifier."
+        ]
+      },
+      {
+        "title": "L’énergie mentale et le quantum d’action",
+        "paragraphs": [
+          "D’où vient l’idée qu’il existerait de tels points ? D’une analogie, que Reynaud pose explicitement : « L’idée d’énergie mentale évoque, comme les autres formes d’énergie » celle du quantum d’action et de la discontinuité. Si l’énergie, en physique, ne se dépense pas en flux continu mais par paquets, alors une énergie mentale doit être discontinue elle aussi, et cette discontinuité laisse sa trace dans l’économie sous la forme de points critiques.",
+          "L’énergie mentale n’est pas de lui, et il ne le cache pas : page 867, il en rapporte la notion à Pierre Janet, à Spearman et à Moreno. Ce qui lui revient en propre, c’est l’application au comportement économique, le passage d’une propriété supposée de l’énergie psychique à des seuils repérables dans une conjoncture.",
+          "Le mot seuil est d’ailleurs, à cette date, un terme de son vocabulaire théorique : la même page annonce un ouvrage de lui « intitulé Economie Généralisée et seuils de croissance actuellement en cours d’impression ».",
+          "Sur la page 870, le passage n’est pas isolé. Reynaud y expose à la suite, en deux points numérotés, ces seuils et une graduation des niveaux de rationalité des sujets économiques. Les deux idées sont distinctes, mais elles dérivent l’une comme l’autre de son énergie mentale, et elles occupent la même section théorique, ouverte au bas de la page 869 sous le titre « B) La théorie en Psychologie économique »."
+        ]
+      },
+      {
+        "title": "Un plancher, un plafond, une région",
+        "paragraphs": [
+          "Le seuil, chez Reynaud, ne sert pas qu’à départager crises et récessions. Sur cette même page 870, l’équilibre total est décrit comme le maintien des tensions psychologiques au-dessous de certains seuils : l’équilibre cesse d’y être une égalité entre des quantités, il devient une distance conservée à un point de bascule.",
+          "Page 871, le schéma passe à la croissance. La marge dans laquelle une économie peut croître y est bornée par le bas et par le haut, avec un plancher chiffré, situé « aux environs de 3 % » pour la France, et un plafond. Le seuil reçoit là un nombre, ce que le couple de la rupture et de l’ajustement n’avait pas reçu.",
+          "La même page applique encore le point critique aux dynamismes locaux d’une région. Le seuil est donc un outil général chez lui, qu’il déplace de la conjoncture à la croissance puis au territoire. Les deux seuils de la page 870 en sont un emploi parmi d’autres, et non la notion tout entière."
+        ]
+      }
+    ],
+    "limits": [
+      "Ce qui décide qu’un seuil sera de rupture plutôt que d’ajustement, ces lignes le désignent sans le mesurer : l’étude de la mentalité des producteurs. Comment cette étude a été conduite, auprès de qui, avec quels moyens d’enquête, la page qui l’invoque ne le dit pas. L’article ouvre page 868, avant d’en venir aux seuils, une section consacrée à la méthode de la psychologie économique : c’est de ce côté qu’il faut aller chercher, et le texte entier est en ligne sur Persée.",
+      "Les pages de 1962 ne sont pas le premier endroit où Reynaud pose ces seuils. Cinq ans plus tôt, il publiait sur le même objet, dans la Revue économique, « Récessions et seuils économiques » (vol. 8, n° 6, 1957, p. 1032-1052). En quels termes le seuil s’y trouve posé, et ce qu’il y fait déjà du couple de la crise et de la récession, ce sont ces pages-là qui le portent, et il faudra les lire.",
+      "Le livre annoncé comme sous presse, Economie Généralisée et seuils de croissance, lie le seuil à la croissance dès son titre ; ce qu’il en fait, il faudra l’ouvrir pour le voir. Quant à l’énergie mentale d’où tout dérive ici, Reynaud en nomme lui-même les racines, Pierre Janet, Spearman et Moreno : ce que chacun d’eux met sous ce terme, ce sont leurs propres textes qui le disent.",
+      "Ce que d’autres ont fait de ces seuils après 1962, qui les a repris, discutés ou laissés de côté, les sources disponibles ne permettent pas de l’établir. La réponse est dans la littérature de psychologie économique parue depuis, et elle reste à ouvrir."
+    ]
+  },
+  {
     "conceptId": "sexe-des-operateurs",
     "lead": [
       "Dans une équipe de jardiniers municipaux, soixante personnes ont été appariées deux par deux, un homme et une femme occupant officiellement le même poste. Chez celles et ceux qui occupaient encore ce même poste un peu plus tard, « pour les 34 paires qui étaient demeurées au même emploi, il y avait eu divergence au niveau des tâches » : l’un des deux se retrouvait plus souvent à planter des arbres et à manier la machinerie, l’autre plus souvent à désherber les plates-bandes. Le titre du poste n’avait pas changé. Ce que chacun faisait réellement, si.",
@@ -4422,6 +5192,130 @@ export const generatedDeepenings: Deepening[] = [
       "Le texte lu est une communication présentée à Paris en avril 1970 et publiée dans un numéro spécial de la Revue française de sociologie. Roig y renvoie à un rapport qu’il avait rédigé la même année pour l’Institut d’études politiques de Grenoble, où il développe le principe de totalité : c’est ce rapport qui contient l’argument complet.",
       "Ce que la théorie générale des systèmes soutient dans ses propres termes, et non à travers ce qu’en rapporte Roig, se trouve dans l’ouvrage de Ludwig von Bertalanffy publié en 1968, qui est sa référence constante. Ses pages attendent leur lecteur.",
       "Enfin, savoir comment ce cadrage a été reçu, et ce que la modélisation des systèmes sociaux en a effectivement retenu depuis 1970, demanderait de suivre cette littérature. Rien de ce qui est disponible ici ne l’établit."
+    ]
+  },
+  {
+    "conceptId": "theorie-des-perspectives",
+    "lead": [
+      "Deux personnes ont ce soir exactement la même somme sur leur compte. La première a gagné cent euros dans la journée, la seconde en a perdu cent. Demandez-leur si la journée a été bonne : elles ne répondront pas la même chose. Proposez-leur un pari : il y a peu de chances qu’elles le prennent de la même façon. Leur situation, arrêtée à cet instant précis, est pourtant la même.",
+      "Les descriptions savantes du choix devant le risque n’avaient longtemps pas de place pour cet écart. Elles supposaient quelqu’un qui compare des états de fortune : combien il aura en tout, une fois l’affaire terminée. D’où l’on vient n’entre pas dans le compte, puisque seul le point d’arrivée est évalué. En avril 1977, dans un rapport de contrat d’une cinquantaine de feuillets, Daniel Kahneman et Amos Tversky changent l’axe sur lequel on mesure, et presque tout ce qui suit tient à ce déplacement."
+    ],
+    "sections": [
+      {
+        "title": "Ce que l’ancienne courbe mesurait",
+        "paragraphs": [
+          "Les auteurs commencent par rappeler ce qu’ils quittent. Dès le premier chapitre du rapport, ils écrivent que « the domain of the utility function u is final consequences (which includes one’s asset position) rather than gains or losses » : ce que la fonction d’utilité évalue, ce sont les conséquences finales, position de fortune comprise, et non des gains ou des pertes. Une fonction d’utilité, ici, n’est rien d’autre qu’une manière de traduire chaque issue possible en un nombre qui dit à quel point elle est désirable ; choisir, c’est retenir l’option dont le nombre, pondéré par les chances, est le plus élevé.",
+          "Cette fonction avait en outre une forme connue : « utility is a concave function of money », l’utilité est une fonction concave de l’argent. Concave se dit vite en mots courants : chaque euro supplémentaire ajoute un peu moins que le précédent. Le millième euro compte moins que le premier, et c’est de là que vient la prudence attendue de qui décide, la préférence pour ce qui est acquis sur ce qui est joué. La courbure étant la même partout, cette prudence est censée valoir partout : dans l’aisance comme dans la difficulté, sur ce qu’on gagne comme sur ce qu’on perd.",
+          "C’est cette phrase-là que la formule citée vient contredire, et elle s’ouvre pour cette raison sur un « In contrast », en revanche. Ce qui est refusé n’est pas le fait que les gens soient prudents. C’est l’idée qu’une seule courbure, posée sur le total possédé, puisse rendre compte de ce qu’ils font."
+        ]
+      },
+      {
+        "title": "Un point d’où l’on compte",
+        "paragraphs": [
+          "La première hypothèse du chapitre, un feuillet plus haut, pose le nouvel axe : « The domain of the value function consists of (positive or negative) changes in wealth, that is, gains and losses », le domaine de la fonction de valeur est fait de variations de richesse, positives ou négatives, c’est-à-dire de gains et de pertes. Le vocabulaire suit l’axe : la fonction du modèle ancien s’appelait fonction d’utilité, celle-ci s’appelle fonction de valeur.",
+          "Mesurer une variation oblige à dire depuis quand on compte. C’est là qu’un point de référence devient indispensable, et il ne s’agit pas d’un raffinement technique : sans lui, l’énoncé n’a pas de sens. Cent euros en poche sont un gain pour qui partait de rien et une perte pour qui partait de deux cents. La même situation, décrite à l’identique, change de signe selon le point retenu.",
+          "On tient là de quoi comprendre les deux personnes du début. Elles ne diffèrent ni par leurs goûts ni par leur fortune, mais par l’endroit d’où elles regardent la soirée. Aucune théorie qui évalue des états finaux ne peut enregistrer cette différence, puisque l’état final est le même."
+        ]
+      },
+      {
+        "title": "Deux courbures pour une seule idée",
+        "paragraphs": [
+          "La phrase citée continue, et sa suite l’explique : « the marginal utility of money decreases with the distance from the reference point », l’utilité marginale de l’argent décroît à mesure qu’on s’éloigne du point de référence. Concave au-dessus et convexe en dessous sont deux manières géométriques de dire cette chose unique : plus on s’écarte du point, dans un sens ou dans l’autre, moins l’unité suivante fait de différence.",
+          "L’expérience ordinaire le rend lisible. Passer de rien à cent euros se remarque ; passer de mille à mille cent se remarque à peine, alors que la somme ajoutée est la même. Vers le bas, c’est symétrique : les cent premiers euros perdus se sentent, les cent perdus après mille beaucoup moins. La sensibilité est maximale près du point de départ et s’émousse ensuite, des deux côtés.",
+          "Cette forme entraîne, pour qui la suit jusqu’au bout, une conséquence qui surprend. Au-dessus du point, une courbe concave fait préférer un gain sûr à un pari de même espérance ; en dessous, une courbe convexe fait l’inverse et rend le pari préférable à la perte certaine. La même personne, avec les mêmes goûts, serait donc prudente sur ses gains et joueuse sur ses pertes, sans que rien ait changé en elle sinon le côté du point où elle se trouve."
+        ]
+      },
+      {
+        "title": "Le nom de la propriété, et ce qui reste dehors",
+        "paragraphs": [
+          "Au feuillet 2-5, la propriété est énoncée sous un nom qui ne parle pas de courbure mais de pente : « steepness hypothesis ». La concavité au-dessus du point et la convexité en dessous en sont la conséquence géométrique. Ce n’est pas un détail d’étiquette : ce que les auteurs posent, c’est d’abord une manière dont la courbe s’incline, et la forme dessinée en découle.",
+          "La citation ne dit rien de plus que cela, et il vaut la peine de voir ce qu’elle laisse hors d’elle. Une troisième hypothèse, dans le même chapitre, porte sur la comparaison des gains et des pertes et fonde ce qu’on appelle l’aversion aux pertes : « losses loom larger than gains », les pertes pèsent plus lourd que les gains. C’est une autre propriété, qui met les deux versants en regard l’un de l’autre, là où la phrase citée décrit la forme de chacun pris à part.",
+          "La fonction de valeur ne fait d’ailleurs que la moitié du travail. La table des matières du rapport annonce, après « The Value Function », une seconde section intitulée « Uncertainty Weights », qui commence au feuillet 2-6 et où les probabilités ne sont pas non plus prises telles quelles : elles reçoivent des poids qui ne leur sont pas proportionnels. Une théorie du choix a besoin des deux, la valeur attachée aux issues et le poids accordé à leurs chances ; la courbe seule ne prédit encore rien."
+        ]
+      },
+      {
+        "title": "Ce qui est emprunté, ce qui est signé",
+        "paragraphs": [
+          "Les auteurs ne présentent pas leur construction comme surgie de nulle part. Deux feuillets plus haut, ils écrivent « although the above formulation is new », bien que la formulation ci-dessus soit nouvelle, et créditent aussitôt chacune de ses pièces : Pfanzagl (1959) pour la condition de translation, Edwards (1962), Tversky (1967) et Shanteau (1975) pour le modèle bilinéaire. Sur le point qui nous occupe ici, ils sont plus explicites encore : « the role of the reference point on the utility scale was discussed by Markowitz (1952), Edwards (1954) and Hansson (1975) ».",
+          "L’idée qu’un point de référence organise l’échelle n’est donc pas de 1977, et les auteurs sont les premiers à le dire. Ce qu’ils revendiquent est l’assemblage : ce point, cette pente, ces poids, tenus ensemble dans un même modèle et opposés terme à terme à la formulation classique.",
+          "Le nom, lui, est bien d’eux. Le deuxième chapitre du rapport s’intitule « Prospect Theory », et le résumé documentaire placé en fin de volume présente l’ensemble comme une solution de rechange, en reprenant l’expression. « Théorie des perspectives » est une traduction française venue plus tard et due à des tiers ; rien dans le rapport ne baptise la chose en français."
+        ]
+      },
+      {
+        "title": "Un rapport de contrat, folioté par chapitre",
+        "paragraphs": [
+          "Le texte d’avril 1977 n’est pas un article de revue. C’est le rapport technique PTR-1042-77-4, publié à Eugene, dans l’Oregon, par Decision Research, a branch of Perceptronics, sous contrat de l’administration américaine, et le volume se termine par le formulaire de documentation réglementaire qui porte le titre et les deux noms, Daniel Kahneman puis Amos Tversky. C’est un rapport de recherche antérieur de deux ans à l’article d’Econometrica, et distinct de lui : la phrase sur la fonction de valeur se lit ici, dans ce volume-là.",
+          "Un détail pratique pour qui voudra vérifier la phrase dans le fac-similé : ce rapport est folioté chapitre par chapitre. « p. 2-5 » ne désigne pas la cinquième page du volume mais le cinquième feuillet du chapitre 2, celui qui porte la théorie. La phrase sur la concavité et la convexité s’y trouve en tout premier paragraphe, et le numéro imprimé en pied de page le confirme."
+        ]
+      }
+    ],
+    "limits": [
+      "Deux ans plus tard, la même hypothèse reparaît dans une revue : Econometrica, mars 1979, vingt-neuf pages, de la page 263 à la page 291. La même hypothèse y est énoncée avec des adverbes de réserve que le rapport n’a pas, « normally concave for gains, commonly convex for losses ». Ce qui a fait venir cette prudence entre les deux états du texte, et ce que la publication a déplacé par ailleurs, seules ces pages-là le disent.",
+      "Ce qui fixe le point de référence, et ce qui le fait bouger, la phrase citée ne l’aborde pas. Les auteurs renvoient eux-mêmes aux travaux qui en avaient discuté le rôle sur l’échelle d’utilité, Markowitz (1952), Edwards (1954) et Hansson (1975). Ce sont les racines de la notion, et en quels termes le point de référence y était déjà posé, leurs pages le diront.",
+      "Aucune traduction française publiée de ce rapport technique n’est connue. Les mots français lus ici en rendent le sens, mais l’état de référence de la citation reste l’anglais du feuillet 2-5, lisible en fac-similé."
+    ]
+  },
+  {
+    "conceptId": "theories-normatives-du-choix-sous-risque",
+    "lead": [
+      "Quand quelqu’un explique comment on choisit, il peut viser deux choses très différentes. Décrire, d’abord : voici ce que font les gens devant une assurance à souscrire, un traitement à accepter, un billet à acheter, et voici les régularités que l’on observe. Ou bien conseiller : voici comment il faudrait s’y prendre, et celui qui fait autrement a tort. La seconde ambition pèse beaucoup plus lourd que la première, parce qu’elle réclame une autorité. Il faut pouvoir dire d’où vient le « il faudrait ».",
+      "Chez ceux qui étudient la décision, cette autorité repose sur quelques règles de cohérence si simples qu’on les croit indiscutables : personne, réflexion faite, ne voudrait s’y soustraire. Fishburn ouvre son exposé en rangeant l’entreprise dans une compagnie qu’on n’attendait pas là, celle des doctrines qui cherchent à dire l’action juste. Puis il fait, au milieu d’un chapitre d’allure paisible, une chose qui l’est beaucoup moins : il retire à deux de ces règles leur caractère d’obligation."
+    ],
+    "sections": [
+      {
+        "title": "Une théorie qui dit ce qu’il faudrait faire",
+        "paragraphs": [
+          "Une théorie descriptive dit ce que les gens font ; une théorie normative dit ce qu’ils devraient faire. La phrase qui ouvre le chapitre place la seconde du côté des règles de conduite, et celle qui suit précise le genre de règles dont il s’agit : des principes d’évaluation et de choix entre options concurrentes, « proposed as rules that individuals or societies ought to […] follow », proposés comme des règles que des individus ou des sociétés devraient suivre, ou voudraient peut-être suivre.",
+          "Le mot anglais employé n’est pas le plus impérieux : Fishburn écrit guidelines, des lignes directrices, et garde rules pour la phrase suivante. Trois lignes plus bas, il rapproche explicitement son domaine des « numerous ethical and normative social theories developed during the past few millennia », les nombreuses théories éthiques et sociales normatives élaborées depuis quelques millénaires. Une théorie mathématique de la décision se retrouve ainsi dans le voisinage des morales, ce qui est un endroit inconfortable pour un système d’axiomes.",
+          "Le volume qui accueille le chapitre s’intitule Decision Making: Descriptive, Normative, and Prescriptive Interactions et distingue donc trois registres, dont un troisième, le prescriptif. Fishburn n’en fait rien : il écrit normative d’un bout à l’autre et n’emploie jamais prescriptive. Le partage en trois est celui des directeurs de l’ouvrage ; le lui prêter reviendrait à lui prêter un vocabulaire qui n’est pas le sien."
+        ]
+      },
+      {
+        "title": "À qui appartient chacune de ces théories",
+        "paragraphs": [
+          "L’exposé porte sur deux familles de théories, et Fishburn ne les présente jamais comme siennes. Il les rapporte à leurs auteurs, en les datant. La théorie standard du risque revient à John von Neumann et Oskar Morgenstern, en 1944 ; celle de l’incertitude à Frank P. Ramsey, en 1931, et à Leonard J. Savage, en 1954. Le partage lui-même ne lui appartient pas davantage : les deux sous-familles se distinguent, écrit-il, par les expressions de Luce et Raiffa (1957), decision making under risk d’un côté, decision making under uncertainty de l’autre.",
+          "Cette manière de citer n’est pas une politesse d’usage. Elle indique ce qu’est le chapitre : un état des lieux, où celui qui écrit se tient d’abord en position d’exposant. C’est ce qui rend remarquable le moment où il cesse de l’être.",
+          "Le versant du risque occupe la première moitié, avec son jeu d’axiomes. Celui de l’incertitude vient ensuite, aux sections 6 à 8, pages 90 à 95, avec un second jeu d’axiomes qui lui est propre. Les deux situations ne se traitent donc pas avec le même appareil, et c’est déjà une indication sur ce qui les sépare."
+        ]
+      },
+      {
+        "title": "Ordre, indépendance, continuité",
+        "paragraphs": [
+          "Sur quoi tient l’autorité de la théorie standard du risque ? Sur trois exigences, que Fishburn énonce dès sa deuxième section : « The standard theory uses three axioms that formalize notions of order, independence, and continuity ». Trois axiomes, numérotés A1, A2 et A3, qui mettent en forme des idées d’ordre, d’indépendance et de continuité.",
+          "Un axiome, ici, n’est pas une vérité que l’on démontre : c’est une condition que les préférences d’une personne respectent ou non. L’ordre demande de pouvoir comparer les options et de ne pas tourner en rond : préférer A à B et B à C oblige à préférer A à C. Cette dernière exigence porte un nom, la transitivité, et elle n’est qu’une partie du premier axiome. Les énoncés exacts des trois conditions sont dans les pages où Fishburn les pose ; leurs noms suffisent ici à voir ce qu’elles réclament, de la comparabilité, une certaine indifférence à ce que deux options ont en commun, et pas de rupture brutale.",
+          "Ce que ces conditions ont d’attirant, c’est qu’aucune ne dit quoi préférer. Elles ne portent pas sur les goûts, elles portent sur la façon dont les goûts s’articulent entre eux. C’est ce qui a permis de les présenter comme des exigences de rationalité pure, que n’importe qui devrait accepter quels que soient ses désirs."
+        ]
+      },
+      {
+        "title": "Cohérent ne veut pas dire raisonnable",
+        "paragraphs": [
+          "Cette qualité est aussi la limite, et Fishburn l’écrit lui-même quelques pages plus loin. Ces axiomes, dit-il, « only provide internal consistency and coherence to systems of preferences and say nothing otherwise about what ought to be preferred or chosen » : ils n’apportent que consistance interne et cohérence à des systèmes de préférences, et ne disent rien d’autre sur ce qu’il faudrait préférer ou choisir.",
+          "Le constat est lourd pour une théorie qui se dit normative. On attendait des règles pour l’action juste, on obtient des règles de tenue interne. Imaginons quelqu’un qui préfère invariablement la solution la plus coûteuse, sans jamais se contredire d’une comparaison à l’autre : rien dans ces axiomes ne lui donne tort. Ils excluent l’incohérence, non la déraison.",
+          "La question que pose le chapitre n’a donc rien d’une chicane. Des règles de cohérence peuvent mériter d’être suivies sans dire pour autant ce qu’il faudrait préférer. Reste à savoir si elles méritent d’être suivies toujours."
+        ]
+      },
+      {
+        "title": "Deux principes qui cessent d’être inviolables",
+        "paragraphs": [
+          "Fishburn expose d’abord les arguments de rationalité qui plaident pour les axiomes standards. Puis, au milieu du chapitre, la première personne apparaît. Les choses bougent, écrit-il : « I believe that the latter situation is now changing ». Et il annonce ce qu’il va faire : « I shall briefly cite reasons why transitivity and independence are not inviolable normative principles ».",
+          "Deux cibles, et deux seulement. La transitivité, cette partie du premier axiome qui interdit de tourner en rond, et l’indépendance. La continuité n’est pas contestée, il la reconduit dans les axiomes de sa propre théorie. Le retrait est mesuré, et c’est ce qui le rend sérieux : il ne s’agit pas de renoncer à toute contrainte, mais de dire lesquelles ne peuvent plus être posées comme des obligations.",
+          "Cela change le sort de celui qui préfère A à B, B à C, et pourtant C à A. Sous le régime précédent, il était en faute, et sa faute se démontrait sans même regarder sa situation. Si la transitivité n’est plus un principe normatif inviolable, il faut désormais discuter son cas et montrer, chez lui, ce qui rend le cycle coûteux ou supportable. L’argument ne disparaît pas, il redevient un argument."
+        ]
+      },
+      {
+        "title": "La théorie SSB, avancée sous son nom",
+        "paragraphs": [
+          "Retirer une règle oblige à dire ce qui reste. La suite de l’exposé présente des théories qui affaiblissent les axiomes standards, et l’une d’elles est la sienne. Il l’introduit à la troisième personne, comme les autres : « Fishburn (1982b) refers to his theory as the SSB theory because its numerical representation for preference uses a skew-symmetric bilinear (SSB) functional ».",
+          "Les trois lettres viennent de la forme mathématique de la représentation, skew-symmetric bilinear, bilinéaire antisymétrique. Le nom ne décrit pas ce qu’il faudrait préférer, il décrit un instrument. Et cet instrument a ses propres axiomes, B1 à B3, où la continuité reparaît : abandonner deux exigences ne dispense pas d’en poser d’autres, et le prix du renoncement se lit dans ce qu’il faut mettre à la place.",
+          "La troisième personne mérite d’être remarquée. Celui qui écrit range sa propre proposition parmi celles qu’il recense, au même rang et dans le même style. C’est la position de quelqu’un qui a pris parti sans changer de ton, et qui laisse au lecteur le soin de voir que l’exposant est devenu partie prenante."
+        ]
+      }
+    ],
+    "limits": [
+      "Le même exposé, sous le même titre et la même année, paraît aussi chez Springer, aux pages 1 à 21 d’un volume dirigé par Janusz Kacprzyk et Marc Roubens. Identique au chapitre de Cambridge, abrégé, augmenté ? Ces vingt et une pages le diront à qui les ouvrira.",
+      "Les théories que Fishburn expose ont leurs textes propres, et il les nomme lui-même : von Neumann et Morgenstern en 1944 pour le risque, Ramsey en 1931 et Savage en 1954 pour l’incertitude. C’est là que les axiomes sont posés dans les termes de leurs auteurs, avec les raisons qui les accompagnent.",
+      "La théorie SSB tient ici en quelques lignes, qui l’annoncent sans l’exposer. Sa construction, ses axiomes B1 à B3 et ce qu’elle fait des préférences intransitives sont dans le travail de 1982 auquel il renvoie.",
+      "Enfin, la lecture du chapitre s’appuie sur un seul exemplaire numérisé du volume de 1988, dont la transcription automatique tronque d’ailleurs la première phrase du texte. Un exemplaire imprimé permettrait de tout recouper, page par page."
     ]
   },
   {
