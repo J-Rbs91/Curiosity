@@ -1,4 +1,4 @@
-# État du corpus — 29 août 2026
+# État du corpus — 31 août 2026
 
 Écrit sur le disque parce qu'une session a déjà été coupée en cours de route : ce fichier
 existe pour qu'une reprise reparte des fichiers, et non de la mémoire de quelqu'un.
@@ -7,12 +7,22 @@ Ce fichier dit ce que le corpus **est**. Ce qui lui **manque**, et par quel bout
 est dans [`corpus/RESTE-A-FAIRE.md`](RESTE-A-FAIRE.md).
 
 `npm run corpus:validate` : **104 enregistrements, 100 validés, 0 erreur, 81 avertissements.**
-`npm run corpus:deepen` : **82 approfondissements pour 100 cartes validées**, 119 639 mots,
-1 459 en moyenne. Fin de sortie : **dix-huit cartes sans approfondissement**, cinq de la science
-de la décision, quatre de l'operations management, quatre de la psychologie du travail, trois de
-la sociologie du travail et deux de l'économie comportementale, et c'est le seul écart entre
-validé et servi.
+`npm run corpus:deepen` : **98 approfondissements pour 100 cartes validées**, 143 346 mots,
+1 463 en moyenne. Fin de sortie : **deux cartes sans approfondissement**,
+`trois-etats-psychologiques-critiques` en psychologie du travail et
+`trois-sigmas-arbitrage-de-cout` en operations management, et c'est le seul écart entre validé et
+servi. **Neuf domaines sur onze sont entièrement servis.**
 `npm test` : **482 tests, 0 échec.** `npm run lint` et `npm run corpus:build` : sans erreur.
+
+**Un garde de la CI ne couvre qu'une moitié de ce qu'il a l'air de couvrir, et il faut le savoir.**
+Les workflows `ci.yml` et `pages.yml` lancent `npm run corpus:build` puis
+`git diff --exit-code src/content/generated/`. Or `corpus:build` n'écrit que
+`concepts.generated.ts` : `deepenings.generated.ts` n'est écrit que par `npm run corpus:deepen`,
+que la CI ne lance pas. **Une correction portée à un enregistrement de `corpus/deepenings/` sans
+reprojection passe donc la CI sans être vue.** C'est arrivé : `effet-de-cadrage` a vécu du 29 au
+31 août avec deux phrases divergentes entre son enregistrement maître et sa projection, corrigées
+au passage 08. Le remède tient en une ligne dans les deux workflows, il est au chantier E de
+[`RESTE-A-FAIRE.md`](RESTE-A-FAIRE.md), et il n'appartient pas à une nuit de phase 2.
 
 **Les cent cartes affichent leur citation en français.** Vingt-six d'entre elles la montraient
 encore en anglais : la fiche déclarait `translation.kind: "none"`, ce qui était exact — le texte
@@ -40,26 +50,88 @@ candidat mal placé part désormais chez un voisin ouvert, ou ne s'instruit pas.
 | Théorie de la mesure / KPI | 4 | 9 | 9 |
 | Cybernétique | 4 | 12 | 12 |
 | Systems Thinking | 3 | 7 | 7 |
-| Science de la décision | 2 | 8 | **3** |
-| Operations Management | 3 | 8 | **4** |
-| Psychologie du travail | 2 | 7 | **3** |
-| Sociologie du travail | 1 | 7 | **4** |
-| Économie comportementale | 1 | 4 | **2** |
+| Science de la décision | 2 | 8 | 8 |
+| Sociologie du travail | 1 | 7 | 7 |
+| Économie comportementale | 1 | 4 | 4 |
+| Operations Management | 3 | 8 | **7** |
+| Psychologie du travail | 2 | 7 | **6** |
 
-**Dix-huit cartes validées attendent leur approfondissement**, contre trente-quatre au 28 août.
-L'écart s'était refermé le 21 août, il s'était rouvert et creusé pendant cinq lots d'ouverture
-consécutifs, et **le passage 07 de la routine nocturne en a repris la moitié en une nuit**, le 29
-août : seize approfondissements écrits, deux lots pleins de huit, qui est le plafond d'une nuit.
-`npm run corpus:deepen` les liste en fin de sortie : **c'est la file, et elle fait foi contre ce
-fichier.** Aucun domaine n'étant plus vide, **c'est le seul chantier que la routine ait à
-prendre**, et il lui reste un peu plus d'une nuit pleine.
+**Deux cartes validées attendent leur approfondissement**, contre dix-huit au 29 août et
+trente-quatre au 28. L'écart s'était refermé le 21 août, il s'était rouvert et creusé pendant cinq
+lots d'ouverture consécutifs, et **les passages 07 et 08 de la routine nocturne en ont servi seize
+chacun**, les 29 et 31 août, deux lots pleins de huit par nuit, qui est le plafond d'une nuit.
+`npm run corpus:deepen` liste ce qui reste en fin de sortie : **c'est la file, et elle fait foi
+contre ce fichier.** Aucun domaine n'étant plus vide, **c'est le seul chantier que la routine ait
+à prendre**, et il ne lui reste qu'un lot de deux : après lui, la condition B de la routine
+devient fausse et la phase 3 commence.
 
 **Les quatre familles sont complètes.** « Comprendre le pilotage » et « Comprendre le travail
 réel » l'étaient depuis le 23 août, « Comprendre la production et les systèmes » depuis le 25, et
 « Comprendre les humains et les organisations » l'est depuis le 28 : elle était la dernière
 incomplète, avec trois domaines fermés sur quatre au 25 août.
 
-# 0. Seize approfondissements — lot du 29 août 2026 (passage 07), projeté
+# 0. Seize approfondissements — lot du 31 août 2026 (passage 08), projeté
+
+**Deuxième nuit de phase 2, et la file passe de dix-huit à deux.** Condition A fausse, aucun
+domaine n'étant vide depuis le 28 août ; condition B vraie, `corpus:deepen` listant dix-huit
+cartes sans approfondissement au lever de la nuit. Aucune ouverture, aucune carte nouvelle,
+aucune recherche documentaire. **Seize agents, seize textes, aucun refus de projection, aucun
+renvoi**, en deux lots pleins de huit : lot 1 `heuristiques-de-jugement`,
+`mecanismes-de-l-objectif`, `mobilite-et-segmentation-de-l-emploi`,
+`niveaux-de-rationalite-economique`, `normatif-descriptif-prescriptif`,
+`objectif-specifique-et-difficile`, `penalite-de-rupture`, `penser-a-partir-des-valeurs` ; lot 2
+`precarite-des-trajectoires`, `regle-de-commande-a-deux-niveaux`, `regle-lineaire-de-decision`,
+`savoir-ouvrier-mis-en-regles`, `seuil-d-insatisfaction-salariale`,
+`seuils-de-rupture-et-d-ajustement`, `theorie-des-perspectives`,
+`theories-normatives-du-choix-sous-risque`. Les projections passent de 82 à **98**, et de 119 639
+à **143 346 mots**.
+
+## Ce que le contrôle a attrapé
+
+**Rien de documentaire, et c'est le fait de la nuit.** Aucun texte n'a été renvoyé, aucun n'a
+demandé de second tour, et le contrôle de projection n'a signalé aucune citation absente de son
+enregistrement — la difficulté des guillemets français à espaces insécables, qui avait touché
+trois textes au passage 07, ne s'est pas représentée.
+
+**Un seul incident, et il est de forme.** L'agent d'`objectif-specifique-et-difficile` a corrigé
+son texte *après* avoir rendu son compte rendu, pour retirer deux guillemets imbriqués que
+l'échappement JSON fait trébucher : la portion citée est remplacée par « […] » et le sens omis
+rendu en français. La projection du lot 1 était déjà faite ; elle a été refaite à la clôture.
+**La règle qui s'en tire : reprojeter une dernière fois avant les contrôles de fermeture**, jamais
+au dernier compte rendu reçu.
+
+**Aucun agent n'a eu besoin d'être relancé.** Quatre sur seize l'avaient été au passage 07, sept
+sur huit au passage 06. La relance, coût dominant des nuits d'ouverture, a disparu des nuits de
+phase 2.
+
+## Les réserves conservées
+
+**Les seize textes déclarent presque tous l'absence de source secondaire ouverte**, et plusieurs
+nomment désormais précisément ce qu'il faudrait ouvrir : les travaux que Grelet et Mansuy
+créditent elles-mêmes pour `mobilite-et-segmentation-de-l-emploi` ; le Braverman de 1974 pour
+`savoir-ouvrier-mis-en-regles`, donné comme la source du vocabulaire courant du commentaire et
+jamais ouvert ; l'article de 1957 de Pierre-Louis Reynaud pour `seuils-de-rupture-et-d-ajustement`,
+connu par sa seule notice. Ces réserves sont écrites dans les `limits` des textes, elles ne sont
+pas comblées, et elles constituent le plan de travail de la phase 3.
+
+**Trois refus valent d'être notés**, parce qu'ils portent sur des points qu'un texte pressé aurait
+comblés : `regle-lineaire-de-decision` ne dit rien de la démonstration du résultat, l'annexe qui
+la porte manquant à l'exemplaire numérisé ; `theorie-des-perspectives` refuse de souder l'aversion
+aux pertes à la citation affichée, faute de verbatim ; `normatif-descriptif-prescriptif` ne nomme
+pas le métier de deux des trois directeurs du volume, que le texte laisse deviner sans le dire.
+
+## Les angles morts qui commandent le prochain passage
+
+1. **Deux cartes restent à servir**, `trois-etats-psychologiques-critiques` et
+   `trois-sigmas-arbitrage-de-cout`. Un lot de deux les sert, et la phase 2 est close.
+2. **La dette de source secondaire devient alors la difficulté dominante**, et elle suppose que le
+   serveur MCP `documentary` réponde : il était en échec de connexion pour la troisième nuit
+   consécutive, sans conséquence en phase 2, bloquant en phase 3.
+3. **Deux thèmes déclarés n'ont toujours aucune carte validée**, `autorite-domination` et
+   `apprentissage-organisationnel`, tous deux en sociologie des organisations. Ils sont la
+   première priorité que la §2 de la routine assigne à une nuit de phase 3.
+
+# 0 bis. Seize approfondissements — lot du 29 août 2026 (passage 07), projeté
 
 **Première nuit de phase 2 de la routine nocturne, et premier lot du dépôt qui ne crée aucune
 carte.** La condition A de la routine était fausse, aucun domaine n'étant vide depuis le 28 août ;
