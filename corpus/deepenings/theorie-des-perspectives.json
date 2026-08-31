@@ -1,0 +1,62 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "theorie-des-perspectives",
+  "lead": [
+    "Deux personnes ont ce soir exactement la même somme sur leur compte. La première a gagné cent euros dans la journée, la seconde en a perdu cent. Demandez-leur si la journée a été bonne : elles ne répondront pas la même chose. Proposez-leur un pari : il y a peu de chances qu’elles le prennent de la même façon. Leur situation, arrêtée à cet instant précis, est pourtant la même.",
+    "Les descriptions savantes du choix devant le risque n’avaient longtemps pas de place pour cet écart. Elles supposaient quelqu’un qui compare des états de fortune : combien il aura en tout, une fois l’affaire terminée. D’où l’on vient n’entre pas dans le compte, puisque seul le point d’arrivée est évalué. En avril 1977, dans un rapport de contrat d’une cinquantaine de feuillets, Daniel Kahneman et Amos Tversky changent l’axe sur lequel on mesure, et presque tout ce qui suit tient à ce déplacement."
+  ],
+  "sections": [
+    {
+      "title": "Ce que l’ancienne courbe mesurait",
+      "paragraphs": [
+        "Les auteurs commencent par rappeler ce qu’ils quittent. Au deuxième feuillet du rapport, ils écrivent que « the domain of the utility function u is final consequences (which includes one’s asset position) rather than gains or losses » : ce que la fonction d’utilité évalue, ce sont les conséquences finales, position de fortune comprise, et non des gains ou des pertes. Une fonction d’utilité, ici, n’est rien d’autre qu’une manière de traduire chaque issue possible en un nombre qui dit à quel point elle est désirable ; choisir, c’est retenir l’option dont le nombre, pondéré par les chances, est le plus élevé.",
+        "Cette fonction avait en outre une forme connue : « utility is a concave function of money », l’utilité est une fonction concave de l’argent. Concave se dit vite en mots courants : chaque euro supplémentaire ajoute un peu moins que le précédent. Le millième euro compte moins que le premier, et c’est de là que vient la prudence attendue de qui décide, la préférence pour ce qui est acquis sur ce qui est joué. La courbure étant la même partout, cette prudence est censée valoir partout : dans l’aisance comme dans la difficulté, sur ce qu’on gagne comme sur ce qu’on perd.",
+        "C’est cette phrase-là que la formule citée vient contredire, et elle s’ouvre pour cette raison sur un « In contrast », en revanche. Ce qui est refusé n’est pas le fait que les gens soient prudents. C’est l’idée qu’une seule courbure, posée sur le total possédé, puisse rendre compte de ce qu’ils font."
+      ]
+    },
+    {
+      "title": "Un point d’où l’on compte",
+      "paragraphs": [
+        "La première hypothèse du chapitre, au feuillet précédent, pose le nouvel axe : « The domain of the value function consists of (positive or negative) changes in wealth, that is, gains and losses », le domaine de la fonction de valeur est fait de variations de richesse, positives ou négatives, c’est-à-dire de gains et de pertes. Le vocabulaire suit l’axe : la fonction du modèle ancien s’appelait fonction d’utilité, celle-ci s’appelle fonction de valeur.",
+        "Mesurer une variation oblige à dire depuis quand on compte. C’est là qu’un point de référence devient indispensable, et il ne s’agit pas d’un raffinement technique : sans lui, l’énoncé n’a pas de sens. Cent euros en poche sont un gain pour qui partait de rien et une perte pour qui partait de deux cents. La même situation, décrite à l’identique, change de signe selon le point retenu.",
+        "On tient là de quoi comprendre les deux personnes du début. Elles ne diffèrent ni par leurs goûts ni par leur fortune, mais par l’endroit d’où elles regardent la soirée. Aucune théorie qui évalue des états finaux ne peut enregistrer cette différence, puisque l’état final est le même."
+      ]
+    },
+    {
+      "title": "Deux courbures pour une seule idée",
+      "paragraphs": [
+        "La phrase citée continue, et sa suite l’explique : « the marginal utility of money decreases with the distance from the reference point », l’utilité marginale de l’argent décroît à mesure qu’on s’éloigne du point de référence. Concave au-dessus et convexe en dessous sont deux manières géométriques de dire cette chose unique : plus on s’écarte du point, dans un sens ou dans l’autre, moins l’unité suivante fait de différence.",
+        "L’expérience ordinaire le rend lisible. Passer de rien à cent euros se remarque ; passer de mille à mille cent se remarque à peine, alors que la somme ajoutée est la même. Vers le bas, c’est symétrique : les cent premiers euros perdus se sentent, les cent perdus après mille beaucoup moins. La sensibilité est maximale près du point de départ et s’émousse ensuite, des deux côtés.",
+        "Cette forme entraîne, pour qui la suit jusqu’au bout, une conséquence qui surprend. Au-dessus du point, une courbe concave fait préférer un gain sûr à un pari de même espérance ; en dessous, une courbe convexe fait l’inverse et rend le pari préférable à la perte certaine. La même personne, avec les mêmes goûts, serait donc prudente sur ses gains et joueuse sur ses pertes, sans que rien ait changé en elle sinon le côté du point où elle se trouve."
+      ]
+    },
+    {
+      "title": "Le nom de la propriété, et ce qui reste dehors",
+      "paragraphs": [
+        "Au feuillet 2-5, la propriété est énoncée sous un nom qui ne parle pas de courbure mais de pente : « steepness hypothesis ». La concavité au-dessus du point et la convexité en dessous en sont la conséquence géométrique. Ce n’est pas un détail d’étiquette : ce que les auteurs posent, c’est d’abord une manière dont la courbe s’incline, et la forme dessinée en découle.",
+        "La citation ne dit rien de plus que cela, et il vaut la peine de voir ce qu’elle laisse hors d’elle. Une troisième hypothèse, dans le même chapitre, porte sur la comparaison des gains et des pertes et fonde ce qu’on appelle l’aversion aux pertes : « losses loom larger than gains », les pertes pèsent plus lourd que les gains. C’est une autre propriété, qui met les deux versants en regard l’un de l’autre, là où la phrase citée décrit la forme de chacun pris à part.",
+        "La fonction de valeur ne fait d’ailleurs que la moitié du travail. La table des matières du rapport annonce, après « The Value Function », une seconde section intitulée « Uncertainty Weights », qui commence au feuillet 2-6 et où les probabilités ne sont pas non plus prises telles quelles : elles reçoivent des poids qui ne leur sont pas proportionnels. Une théorie du choix a besoin des deux, la valeur attachée aux issues et le poids accordé à leurs chances ; la courbe seule ne prédit encore rien."
+      ]
+    },
+    {
+      "title": "Ce qui est emprunté, ce qui est signé",
+      "paragraphs": [
+        "Les auteurs ne présentent pas leur construction comme surgie de nulle part. Trois feuillets plus haut, ils écrivent « although the above formulation is new », bien que la formulation ci-dessus soit nouvelle, et créditent aussitôt chacune de ses pièces : Pfanzagl (1959) pour la condition de translation, Edwards (1962), Tversky (1967) et Shanteau (1975) pour le modèle bilinéaire. Sur le point qui nous occupe ici, ils sont plus explicites encore : « the role of the reference point on the utility scale was discussed by Markowitz (1952), Edwards (1954) and Hansson (1975) ».",
+        "L’idée qu’un point de référence organise l’échelle n’est donc pas de 1977, et les auteurs sont les premiers à le dire. Ce qu’ils revendiquent est l’assemblage : ce point, cette pente, ces poids, tenus ensemble dans un même modèle et opposés terme à terme à la formulation classique.",
+        "Le nom, lui, est bien d’eux. Le deuxième chapitre du rapport s’intitule « Prospect Theory », et le résumé documentaire placé en fin de volume présente l’ensemble comme une solution de rechange, en reprenant l’expression. « Théorie des perspectives » est une traduction française venue plus tard et due à des tiers ; rien dans le rapport ne baptise la chose en français."
+      ]
+    },
+    {
+      "title": "Un rapport de contrat, folioté par chapitre",
+      "paragraphs": [
+        "Le texte d’avril 1977 n’est pas un article de revue. C’est le rapport technique PTR-1042-77-4, publié à Eugene, dans l’Oregon, par Decision Research, a branch of Perceptronics, sous contrat de l’administration américaine, et le volume se termine par le formulaire de documentation réglementaire qui porte le titre et les deux noms, Daniel Kahneman puis Amos Tversky. On y lit une livraison de recherche sous contrat, avec ce que cela suppose de rédaction directe et peu apprêtée.",
+        "Un détail pratique pour qui voudra vérifier la phrase dans le fac-similé : ce rapport est folioté chapitre par chapitre. « p. 2-5 » ne désigne pas la cinquième page du volume mais le cinquième feuillet du chapitre 2, celui qui porte la théorie. La phrase sur la concavité et la convexité s’y trouve en tout premier paragraphe, et le numéro imprimé en pied de page le confirme."
+      ]
+    }
+  ],
+  "limits": [
+    "La version que la profession cite d’ordinaire n’est pas celle-ci : c’est l’article paru dans Econometrica en mars 1979, vingt-neuf pages, aux pages 263 à 291. La même hypothèse y est énoncée avec des adverbes de réserve que le rapport n’a pas, « normally concave for gains, commonly convex for losses ». Ce qui a fait venir cette prudence entre les deux états du texte, et ce que la publication a déplacé par ailleurs, ce sont ces vingt-neuf pages qui le diront.",
+    "Ce qui fixe le point de référence, et ce qui le fait bouger, la phrase citée ne l’aborde pas. Les auteurs renvoient eux-mêmes aux travaux qui en avaient discuté le rôle sur l’échelle d’utilité, Markowitz (1952), Edwards (1954) et Hansson (1975) : ce sont les racines de la notion, et elles se lisent chez eux.",
+    "Aucune traduction française publiée de ce rapport technique n’est connue. Les mots français lus ici en rendent le sens, mais l’état de référence de la citation reste l’anglais du feuillet 2-5, lisible en fac-similé."
+  ]
+}
