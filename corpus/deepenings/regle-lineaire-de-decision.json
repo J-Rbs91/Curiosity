@@ -1,0 +1,56 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "regle-lineaire-de-decision",
+  "lead": [
+    "Au début de chaque mois, dans une usine, deux nombres sont à fixer : ce qu'on va produire, et le nombre de personnes qui vont le produire. Les fixer correctement demande un calcul, parce que les deux se tiennent et qu'aucun ne se règle sans l'autre : produire davantage à effectif constant, c'est des heures supplémentaires ; embaucher pour éviter ces heures, c'est du recrutement et de l'apprentissage ; produire d'avance, c'est remplir les entrepôts. Le calcul est long, il demande quelqu'un qui sache le conduire, et il faudrait le reprendre douze fois par an. Autant dire qu'il ne sera pas repris.",
+    "Le mémorandum que Charles C. Holt, Franco Modigliani et Herbert A. Simon font paraître en mai 1955 à la Graduate School of Industrial Administration du Carnegie Institute of Technology déplace cette difficulté plutôt qu'il ne la supprime. Le calcul lourd y est mené une seule fois. Ce qui en sort n'est pas une décision, c'est une formule : quelques coefficients fixes, deux ou trois nombres relevés dans l'atelier, une multiplication et une addition. Les auteurs annoncent dès leur première page une méthode nouvelle, « The new method, published for the first time in this paper »."
+  ],
+  "sections": [
+    {
+      "title": "Deux calculs qui n'ont pas le même prix",
+      "paragraphs": [
+        "La page 24, qui ouvre une section intitulée « IV. The Optimal Decision Rules for the Paint Factory », décrit le premier de ces calculs en trois gestes. Il faut d'abord estimer les paramètres de la fonction de coût, c'est-à-dire chiffrer ce que valent réellement, dans cette usine, une heure supplémentaire, une embauche, un mois de stock. Vient ensuite la dérivation : « Once the parameters of the cost function are estimated, the decision rule solution may be obtained by differentiating with respect to each decision variable. » Puis l'inversion de la matrice du système ainsi obtenu, qui livre les règles.",
+        "Ce travail se fait une fois. Ce qui reste ensuite est d'un tout autre ordre, et les auteurs le disent avec un adverbe de soulagement : « Fortunately, the results of this procedure can be reduced to a formula, requiring only a routine computation. » Le paragraphe suivant en donne le rythme : « There are two decision rules to be applied at the beginning of each month », une pour la cadence de production, une pour l'effectif.",
+        "La difficulté n'a donc pas disparu, elle a changé de place. Elle n'est plus dans la décision mensuelle, devenue une opération d'arithmétique, elle est passée en amont, dans l'estimation des coûts et dans l'algèbre qui en tire les coefficients. Cela implique qu'un atelier qui adopte une telle règle achète sa simplicité mensuelle au prix d'un travail préparatoire considérable, et qu'il devra recommencer ce travail si ses coûts changent."
+      ]
+    },
+    {
+      "title": "Un coût au carré, une règle en ligne droite",
+      "paragraphs": [
+        "Reste à comprendre pourquoi le calcul se termine si bien. La section qui précède porte un titre qui donne la clé : « A Quadratic Criterion for the Scheduling Decisions in a Paint Factory ». Quadratique veut dire ici que les écarts sont comptés au carré : un écart deux fois plus grand ne coûte pas deux fois plus cher, il coûte quatre fois plus cher. Le prix de l'écart monte plus vite que l'écart lui-même, ce qui pénalise fortement les grands décalages et laisse passer les petits.",
+        "Ce choix a une conséquence mathématique qui n'a rien de mystérieux. Chercher le minimum d'une fonction revient à annuler ses dérivées, et la dérivée d'un carré est une expression du premier degré, proportionnelle à l'écart lui-même. Les conditions du minimum sont donc des équations sans carré ni puissance, et un système de telles équations se résout par les moyens ordinaires de l'algèbre : c'est ce que fait l'inversion de matrice.",
+        "Linéaire, appliqué à la règle qui en sort, veut dire la même chose du côté de l'atelier : chaque grandeur observée est multipliée par un coefficient fixe, et les produits s'additionnent. Pas de seuil, pas de cas particulier, pas de table à consulter. C'est cette forme, et elle seule, qui rend le calcul mensuel exécutable par quelqu'un qui n'a pas à savoir d'où viennent les coefficients."
+      ]
+    },
+    {
+      "title": "Ce que la forme quadratique laisse de côté",
+      "paragraphs": [
+        "Les coûts réels d'une usine n'ont aucune raison d'avoir la forme d'une parabole. Rien ne garantit que licencier coûte exactement le symétrique d'embaucher, les heures supplémentaires se paient par paliers, un stock qui dépasse la place disponible change brutalement de prix. La forme quadratique n'est pas un relevé de ces coûts, c'est une courbe régulière qu'on ajuste dessus, et le rapport le dit lui-même : la planche qui la présente s'intitule « APPROXIMATING COST FUNCTION ».",
+        "Cette précaution éclaire une phrase de la page 24 qui pourrait autrement s'entendre comme une promesse sans réserve : « It can be proved mathematically, once and for all, that the decisions yielded by the optimal decision rule are the best possible for the given cost function ». Ce sont les derniers mots qui portent toute la restriction. Les décisions sont les meilleures possibles pour la fonction de coût retenue, celle qu'on a ajustée, et non pour l'usine telle qu'elle est.",
+        "L'optimalité change ainsi de sens. Elle ne dit pas que la règle donne le meilleur résultat imaginable, elle dit qu'aucune autre règle ne fait mieux au regard du prix qu'on a accepté de mettre sur chaque écart. Toute la valeur pratique du procédé se reporte donc sur la qualité de cet ajustement, c'est-à-dire sur un travail de chiffrage qui, lui, n'a rien de mathématique."
+      ]
+    },
+    {
+      "title": "Ce que la règle demande de savoir chaque mois",
+      "paragraphs": [
+        "Une formule ne sert à rien si les nombres qu'elle réclame ne sont pas disponibles au moment de décider. Les deux règles prennent en argument l'effectif et le stock de la fin du mois précédent, ainsi que les commandes prévues. Ce sont des grandeurs qu'une usine connaît déjà : l'une se lit sur le registre du personnel, l'autre à l'inventaire, la troisième vient du carnet de commandes et de la prévision qu'on en tire.",
+        "La décision d'un mois repart donc de l'état où la précédente a laissé l'atelier. Une embauche décidée en janvier se retrouve dans l'effectif de départ de février et pèse sur ce que la règle recommandera alors. La formule n'aligne pas douze mois indépendants, elle les enchaîne, et c'est ce qui la sépare d'un barème.",
+        "Par construction, une règle de cette forme ne dit rien d'elle-même sur sa propre validité. Elle ne prévient pas quand les coûts sur lesquels elle a été construite ont changé, ni quand les commandes cessent de ressembler à ce qu'elles étaient. Rien dans son application mensuelle ne signale qu'il faudrait reprendre le calcul du début : cela se juge en dehors d'elle."
+      ]
+    },
+    {
+      "title": "Ce qui voyage hors de l'usine de peinture",
+      "paragraphs": [
+        "Les titres de section ne cachent pas d'où viennent les nombres : c'est toujours la paint factory, un fabricant de peinture qui n'est pas nommé, dont les données couvrent les années 1949 à 1954. Une seule usine, un seul carnet de commandes, une seule organisation du travail. Les coefficients calculés là valent pour elle.",
+        "Les auteurs sont nets sur ce point à la page 40 : il serait, écrivent-ils, « rash of the authors to generalize these conclusions to industry generally ». Les conclusions ne voyagent pas. Deux pages plus loin, pourtant, ils écrivent autre chose, et ce n'est pas une contradiction : « Since it is anticipated that the decision rule discussed in this paper will be applicable in its present form to a good many other factories, a technical appendix is attached ». Ce qu'ils tiennent pour transposable, c'est la forme de la règle, pas le résultat chiffré.",
+        "La distinction mérite d'être tenue, parce qu'elle décide de ce qu'on peut emporter ailleurs. Il ne s'agit pas de reprendre les coefficients d'un fabricant de peinture, mais de refaire chez soi le chiffrage des coûts, puis la même dérivation. Et cette transposition est présentée comme une attente, non comme un résultat démontré : le mot employé est « anticipated »."
+      ]
+    }
+  ],
+  "limits": [
+    "L'annexe qui démontre le résultat manque à l'exemplaire numérisé accessible en ligne : la table des matières l'annonce au folio 43, sous le titre « APPENDIX: Derivation of the Conditions for Minimum Costs », et la numérisation s'arrête au folio 42. La phrase de la page 24 qui promet une preuve valable une fois pour toutes se lit donc sans cette preuve, laquelle attend encore son lecteur.",
+    "La dérivation a d'ailleurs un texte à elle, signé d'un quatrième nom : « Derivation of a Linear Decision Rule for Production and Employment », de John F. Muth, paru dans Management Science en 1956, p. 159-177. Muth figure en 1955 parmi les étudiants remerciés et non parmi les auteurs ; ce que son article établit, ses pages le disent.",
+    "Le même travail a paru en octobre 1955 dans Management Science sous les trois mêmes noms, en trente pages contre quarante-deux. Ce que cette version resserre ou reformule, et sous quelle forme la phrase de la page 24 s'y retrouve, se lit dans ces trente pages.",
+    "Les coefficients calculés pour le fabricant de peinture sont dans les équations numérotées des pages 24 à 28 ; aucun ne figure ici, et c'est sur l'image de ces pages qu'ils se relèvent. Aucune traduction française publiée du mémorandum n'en est connue : les phrases citées ici en anglais sont celles de l'original."
+  ]
+}
