@@ -113,5 +113,7 @@ export const deepenedConceptIds: readonly ConceptId[] = [
   "theories-normatives-du-choix-sous-risque",
   "transposition-analogique",
   "travail-collectif-collectif-de-travail",
+  "trois-etats-psychologiques-critiques",
+  "trois-sigmas-arbitrage-de-cout",
   "zones-incertitude"
 ];

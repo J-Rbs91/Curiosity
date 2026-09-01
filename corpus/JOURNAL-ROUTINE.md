@@ -5,6 +5,62 @@ coup d'œil ce que la précédente a fait, sur quelle branche elle l'a laissé, 
 reprendre. **Les scripts priment sur ce fichier** : il dit ce qui a été tenté et pourquoi, ils
 disent ce qui est.
 
+## Passage 09/15 — 2026-09-01
+
+- branche      : `claude/zen-johnson-ilrf7b` (imposée par la session, pas `main`). **Le travail du passage 08 est fusionné dans `main`** (PR [#89](https://github.com/J-Rbs91/Curiosity/pull/89) puis [#90](https://github.com/J-Rbs91/Curiosity/pull/90), commit de merge `ffdb1d2`), et cette branche partait de `main` à jour, à ce commit : rien n'a été refait. Pull request [#91](https://github.com/J-Rbs91/Curiosity/pull/91) vers `main`, ouverte à la clôture. **Tant qu'elle n'est pas fusionnée, la nuit suivante reprend depuis cette branche**, et non depuis `main`.
+- phase        : 2 (approfondissements), **troisième et dernière nuit de phase 2**. Condition A fausse — aucun domaine à zéro carte validée depuis le passage 06. Condition B vraie au lever de la nuit — `corpus:deepen` listait deux cartes sans approfondissement — et elle décidait seule. Aucune ouverture, aucune nouvelle carte, aucune recherche documentaire. **Elle est fausse à la fermeture, pour la première fois depuis le passage 06.**
+- domaine      : aucun. Les deux cartes servies relèvent de deux domaines, psychologie du travail et operations management.
+- validées     : 0 — une nuit de phase 2 n'écrit aucune carte. Le corpus reste à **100 cartes validées**, inchangé.
+- en review    : 0
+- rejetées     : 0
+- approfondies : **2 — `trois-etats-psychologiques-critiques` (psychologie du travail, 1 535 mots) et `trois-sigmas-arbitrage-de-cout` (operations management, 1 443 mots).** Deux agents, deux textes, aucun refus de projection, aucun renvoi, aucun « écris maintenant ». **La file passe de 2 à 0** : `corpus:deepen` projette **100 approfondissements pour 100 cartes validées**, 146 324 mots, 1 463 en moyenne, et sa fin de sortie ne liste plus rien. **Les onze domaines sont entièrement servis.** Le chantier A de `RESTE-A-FAIRE.md`, ouvert le 23 août et remonté à trente-quatre cartes le 28, est clos.
+- contrôles    : validate 0 erreur (104 enregistrements, 100 validés, 81 avertissements) · build à jour, `git diff --exit-code src/content/generated/` propre avant reprojection puis reprojeté à la clôture · deepen 100/100 · test 482/0 · lint 0 · audit inchangé, ce qui est le résultat attendu d'une nuit qui ne crée aucune carte. Rien à drainer dans `src/content/fixtures/concepts.fixture.ts` : `corpus:build` n'a listé aucune entrée caduque.
+- commit       : `ad84359` pour le premier texte ; la nuit a été commitée par étapes, voir la branche.
+- bloqué par   : rien pour le travail de la nuit, qui était le plus court de la routine. **Un blocage attend la nuit suivante, et il faut le lire avant elle : le serveur MCP `documentary` est en échec de connexion (`CONNECTION_CLOSED`) pour la quatrième nuit consécutive.** Sans conséquence pendant trois nuits de phase 2, un `corpus-deepener` n'ouvrant aucune source. **La phase 3 en dépend** : `corpus-scout`, `corpus-primary-reader` et `corpus-blind-reviewer` s'appuient tous les trois sur ses outils de recherche et de vérification de référence. Une nuit de phase 3 peut encore travailler sans lui par `WebSearch` et `WebFetch`, mais elle perd la vérification de référence, et la règle « une référence introuvable n'existe pas » se durcit d'autant : dans le doute, la carte ne se publie pas.
+- la nuit suivante prend : **phase 3, et c'est la première.** Condition A fausse, condition B désormais fausse : la condition C est vraie. La §2 désigne la cible par une règle et non par une préférence. **Aucun domaine n'a jamais été enrichi par la routine** — les passages 01 à 06 étaient des ouvertures, les 07 à 09 des nuits de phase 2 sans domaine — donc le journal ne donne d'enrichissement pour aucun, et le critère de repli s'applique : **le domaine qui a le moins de cartes validées, soit `behavioral-economics` avec quatre**, seul à ce niveau (les suivants en portent sept). En son sein, la priorité 1 est sans objet — les deux thèmes déclarés sans carte, `autorite-domination` et `apprentissage-organisationnel`, sont en sociologie des organisations, pas ici — et la priorité 2 aussi, `corpus/map/queue.json` ne couvrant que la sociologie des organisations. **C'est donc la priorité 3 qui commande : les angles morts de `corpus/map/behavioral-economics.scouting.md`**, et le chantier D de `RESTE-A-FAIRE.md` en tient déjà la liste chiffrée. Les deux cartes de Tarde y sont **la reprise la moins chère du dépôt** : la lecture primaire est faite, complète et rendue, les deux citations relues sur l'image du feuillet, et il ne manque que la rédaction et le contrôle aveugle. En phase 3, la nuit se termine par les approfondissements des cartes qu'elle vient de créer.
+
+### Ce que cette nuit a établi, en une phrase
+
+Deux textes suffisent à clore un chantier qui en comptait trente-quatre quatre nuits plus tôt :
+chaque carte du corpus a désormais son approfondissement, et la phase 2 n'a plus d'objet.
+
+### Ce que les trois nuits de phase 2 auront rendu, mesuré
+
+**Trente-quatre cartes servies en trois nuits, du 29 août au 1er septembre.** Seize au passage 07,
+seize au passage 08, deux ici. Le plafond de seize s'est tenu deux nuits de suite, et la troisième
+n'avait plus que le reliquat à prendre. Les approfondissements projetés passent de 66 à **100**, et
+le total de mots de 96 000 environ à **146 324**. Aucune des trois nuits n'a subi de refus de
+projection ni de renvoi.
+
+**Le coût de surveillance a disparu au fil des trois nuits, et la courbe est nette** : sept agents
+sur huit ont eu besoin d'un « écris maintenant » au passage 06, quatre sur seize au passage 07,
+aucun sur seize au passage 08, aucun sur deux ici. La contre-mesure du chantier C reste écrite,
+mais elle ne sert plus en phase 2 ; **c'est en phase 1 et en phase 3 qu'elle vaut**, là où un agent
+télécharge, océrise et attend le réseau.
+
+**Une nuit de phase 2 est bornée par sa file, pas par son plafond.** Celle-ci a servi deux cartes
+en une fraction de sa durée disponible et s'est arrêtée là, la §2 lui interdisant d'ouvrir ou de
+créer quoi que ce soit. C'est le comportement attendu : la première condition vraie décide seule,
+et une nuit courte vaut mieux qu'une nuit qui déborde sur la phase suivante sans en avoir le
+mandat.
+
+### Ce qui reste ouvert derrière la phase 2, et que la phase 3 hérite
+
+**Le garde de la CI ne couvre toujours qu'une moitié du répertoire projeté.** `ci.yml` et
+`pages.yml` lancent `corpus:build` puis `git diff --exit-code src/content/generated/`, mais
+`corpus:build` n'écrit que `concepts.generated.ts` : `deepenings.generated.ts` n'est écrit que par
+`corpus:deepen`, que la CI ne lance pas. Le trou a laissé passer une divergence réelle du 29 au
+31 août, corrigée au passage 08. **Il n'a pas été bouché cette nuit non plus** : une nuit de
+phase 2 n'a pas mandat de toucher à la CI, et c'est resté vrai jusqu'à sa dernière. Chantier E de
+`RESTE-A-FAIRE.md`, deux lignes. **La phase 3 écrit des cartes et des approfondissements dans la
+même nuit : c'est elle qui rendra ce trou le plus coûteux**, et elle a le mandat de le boucher.
+
+**La dette de sources secondaires, elle, ne bougera qu'en phase 3.** Les trente-quatre textes
+servis en trois nuits déclarent presque tous l'absence de source secondaire ouverte, plusieurs en
+nommant précisément ce qu'il faudrait ouvrir. Un `corpus-deepener` n'y peut rien par construction.
+**Elle devient la difficulté dominante dès la nuit suivante**, et elle suppose que le serveur
+`documentary` réponde.
+
 ## Passage 08/15 — 2026-08-31
 
 - branche      : `claude/zen-johnson-jbbigs` (imposée par la session, pas `main`). **Le travail du passage 07 est fusionné dans `main`** (PR [#83](https://github.com/J-Rbs91/Curiosity/pull/83), commit de merge `f72ddc1`), et cette branche partait de `main` à jour, au commit `1929441` : rien n'a été refait. Pull request [#89](https://github.com/J-Rbs91/Curiosity/pull/89) vers `main`, ouverte à la clôture, **puis fusionnée dans `main`** le 31 août à 06h04 UTC, commit de merge `74e74af`, CI verte sur les trois checks (`corpus`, `app`, `gitleaks`). **La nuit suivante repart donc de `main`**, et non de cette branche : tout le travail du passage 08 y est. Tant qu'elle n'est pas fusionnée, **la nuit suivante reprend depuis cette branche**, et non depuis `main`.

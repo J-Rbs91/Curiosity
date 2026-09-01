@@ -1,0 +1,56 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "trois-sigmas-arbitrage-de-cout",
+  "lead": [
+    "Une machine tourne, on mesure ce qu’elle sort, et les chiffres bougent d’une pièce à l’autre. Il faut bien tracer quelque part une ligne au delà de laquelle on ira voir ce qui se passe. Trop près de la moyenne, l’alerte sonne sans arrêt : on démonte une machine qui n’avait rien, on perd des heures, et il arrive qu’on la dérègle en la corrigeant. Trop loin, la dérive s’installe et personne ne bouge pendant des semaines. Les deux erreurs se paient, mais pas au même guichet : l’une en temps perdu, l’autre en pièces mauvaises.",
+    "Où placer cette ligne se décide en deux pages, 276 et 277, d’un livre publié à New York en 1931, Economic Control of Quality of Manufactured Product. W. A. Shewhart le signe seul et se présente sur la page de titre comme membre du personnel technique des Bell Telephone Laboratories. La réponse qu’il donne ne ressemble pas à une démonstration. Deux mots y sont mis en italiques par l’imprimeur, empirical et economic, et ce sont eux qui portent l’argument."
+  ],
+  "sections": [
+    {
+      "title": "Deux façons de se tromper, et ce qu’elles coûtent",
+      "paragraphs": [
+        "Shewhart met les deux erreurs face à face dans une même phrase, page 276, et il les traite comme deux postes de dépense : « We must try to strike a balance between the advantages to be gained by increasing the value P through reduction in the cost of looking for trouble when it does not exist and the disadvantages occasioned by overlooking troubles that do exist ». Il faut chercher un équilibre entre ce qu’on gagne à réduire le coût de chercher un ennui qui n’existe pas, et ce qu’on perd à laisser passer ceux qui existent.",
+        "Le P de cette phrase est la probabilité qu’un point relevé tombe à l’intérieur des limites. L’augmenter, c’est écarter les limites : moins de fausses alertes, donc moins de courses inutiles, et du même geste davantage d’ennuis réels qui passent inaperçus. Une seule commande, deux effets contraires. Il n’existe pas de réglage qui améliore les deux à la fois, seulement un point où l’on accepte de perdre le moins.",
+        "La conséquence est immédiate : aucune largeur de limites n’est bonne en soi, elle dépend de ce que chaque erreur coûte là où l’on travaille. Imaginons deux ateliers voisins. Dans le premier, arrêter la ligne pour rien immobilise trente personnes une demi-journée. Dans le second, un défaut non détecté part chez le client et revient en réclamation. Le même écart n’y mérite pas la même réaction, et aucun calcul de probabilité ne décide à la place de celui qui paie."
+      ]
+    },
+    {
+      "title": "Pourquoi la limite ne se déduit pas",
+      "paragraphs": [
+        "On pourrait croire que la valeur se calcule. Il suffirait de connaître la loi de la grandeur qu’on porte sur le graphique, c’est-à-dire la façon dont ses valeurs se répartissent quand rien d’autre que le hasard n’agit ; on choisirait un niveau de confiance, et la limite en découlerait. C’est cette voie que Shewhart ferme, en constatant que la plupart du temps cette loi nous échappe : « we never know f(θ, n) in sufficient detail to set up such limits ».",
+        "Vient alors la question, et une réponse qui tient en une ligne : « How then shall we establish allowable limits on the variability of samples? Obviously, the basis for such limits must be, in the last analysis, empirical ». Comment fixer, dès lors, des limites admissibles à la variabilité des échantillons ? La base de telles limites doit être, en dernière analyse, empirique. Le mot empirical est en italiques dans l’imprimé, comme economic deux lignes plus bas.",
+        "Dire que la base est empirique n’est pas un aveu de faiblesse : c’est un changement de justification. Une limite déduite se défend par le théorème dont elle sort ; une limite empirique se défend par ce qu’elle a donné jusqu’ici, atelier après atelier. On conteste la première en montrant une erreur de calcul, la seconde en montrant qu’elle revient trop cher. Ce n’est pas la même conversation, et ce n’est pas non plus la même autorité."
+      ]
+    },
+    {
+      "title": "Ce que l’inégalité de Tchebychev laisse ouvert",
+      "paragraphs": [
+        "Shewhart n’en reste pas au constat. Juste au-dessus de la phrase où il tranche, il imprime une inégalité due à Tchebychev, P > 1 − 1/t², et c’est le seul nom propre étranger de ces deux pages. Elle relie la largeur des limites, comptée en multiples t d’une même unité, celle qu’on note sigma et qui mesure la dispersion ordinaire des mesures, à la proportion des valeurs qui restent à l’intérieur.",
+        "Son intérêt est qu’elle ne suppose aucune forme particulière de distribution, ce qui est exactement ce qui manquait. Sa limite est qu’elle vaut pour n’importe quel t : plus t est grand, plus la garantie est forte, et elle ne désigne aucune valeur plutôt qu’une autre. D’où la phrase qui suit immédiatement la formule, « We are still faced with the choice of t ». L’inégalité borne, elle ne choisit pas.",
+        "Ce qui vient ensuite n’est plus un calcul mais un constat d’expérience : t = 3 semble une valeur économiquement acceptable. L’en-tête de la page annonce « DETECTION OF LACK OF CONTROL ». Il s’agit bien de détecter quelque chose, et le seuil de détection est réglé sur ce qu’il en coûte de se tromper dans un sens ou dans l’autre, non sur ce qu’une loi de probabilité permettrait de garantir."
+      ]
+    },
+    {
+      "title": "Empirique ne veut pas dire sans probabilité",
+      "paragraphs": [
+        "Il est tentant de tirer de ces pages une opposition entre les limites de contrôle et le calcul des probabilités. À la lettre, elle serait fausse. Shewhart emploie la probabilité : l’inégalité de Tchebychev en est une, et le P qu’il cherche à augmenter en est une autre. Son arbitrage lui-même se joue entre deux probabilités d’erreur, celle de s’alarmer pour rien et celle de ne pas s’alarmer à temps.",
+        "Ce qu’il écarte est plus précis : la voie déductive, celle qui tirerait la valeur de t d’un niveau de confiance choisi sur une loi supposée connue. La formulation qui reste fidèle à ces pages est donc « économique et empirique, contre déductive ». « Économique et non probabiliste » serait un raccourci, et un raccourci inexact.",
+        "La nuance a des effets pratiques. Qui cite Shewhart pour refuser tout raisonnement probabiliste dans un atelier lui fait dire l’inverse de ce qu’il écrit. Ce qu’on peut en revanche lui faire dire, c’est qu’une probabilité ne suffit jamais à fixer un seuil : il y faut encore le prix des deux erreurs, et ce prix ne se lit dans aucune distribution."
+      ]
+    },
+    {
+      "title": "Les 0,27 % qu’on prête à Shewhart",
+      "paragraphs": [
+        "Une justification circule dans les manuels : sous la loi normale, à peine 0,27 % des points tombent au delà de trois sigmas, ce qui donnerait un taux de fausses alertes acceptable. Le calcul est juste, il est couramment attribué à Shewhart, et il ne figure pas dans ces deux pages.",
+        "Il y contredirait même l’argument. Pour obtenir ce 0,27 %, il faut connaître la loi de la grandeur suivie et la supposer normale, quand la phrase de la page 276 vient précisément d’écarter cette connaissance. La justification par le taux de fausses alertes refait en déduction ce que Shewhart pose comme un choix d’expérience : elle aboutit au bon nombre par une raison qui n’est pas la sienne.",
+        "L’écart n’est pas anodin pour qui veut se servir de la règle. Si trois sigmas valent parce que la loi normale le dit, la règle tombe dès que la distribution cesse d’être normale. Si trois sigmas valent parce que l’expérience a montré que le compte y était, la règle survit à l’ignorance de la loi, et elle reste révisable par la même voie : en montrant qu’ailleurs, le compte n’y est plus."
+      ]
+    }
+  ],
+  "limits": [
+    "L’argument de Shewhart tient sur les pages 276 et 277. Le livre revient plus loin, dans sa sixième partie, sur le choix des limites : c’est là qu’on verra si le motif économique s’y nuance ou s’y complète, et ces pages de l’ouvrage attendent leur lecteur.",
+    "Le 0,27 % est introuvable sur ces deux pages, ce qui ne dit rien des cinq cents autres. Que Shewhart ait ailleurs adossé ses limites à la loi normale ne peut ni s’affirmer ni s’exclure : c’est le reste du volume qui répondra.",
+    "Le choix de t = 3 est plus ancien que le livre : il apparaît dans un mémorandum interne des Bell Telephone Laboratories daté du 16 mai 1924. En quels termes ce texte pose déjà la valeur, c’est lui qu’il faudra lire pour le savoir.",
+    "Les phrases de Shewhart se citent en anglais : il n’existe pas d’édition française identifiée, et le français donné ici sert à faire comprendre, non à faire référence. Les folios sont ceux de la composition Van Nostrand ; qui travaille sur la réimpression publiée en 1980 par l’American Society for Quality Control vérifiera les siens en l’ouvrant."
+  ]
+}

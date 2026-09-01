@@ -5,7 +5,7 @@ relire tout le dépôt et sans redécouvrir ce que huit lots ont déjà appris.
 
 Il ne double pas `corpus/ETAT.md`, qui dit ce que le corpus **est** ; celui-ci dit ce qu'il
 lui **manque**. Et il ne remplace aucun script : les chiffres ci-dessous sont un instantané
-du 28 août 2026, les commandes sont la vérité.
+du 1er septembre 2026, les commandes sont la vérité.
 
 ```bash
 npm run corpus:audit    # domaines, thèmes, cartes validées, sujets jamais instruits
@@ -23,21 +23,23 @@ script ne peut pas dire : quel travail est possible aujourd'hui, ce qu'il coûte
 
 | chantier | volume | recherche documentaire ? | état |
 |---|---|---|---|
-| **A.** Approfondissements | **2 cartes** | non | **ouvert, presque clos — un lot de deux suffit** |
+| **A.** Approfondissements | **aucun** | — | **fermé le 1er septembre 2026** |
 | **B.** File de la sociologie des organisations | 25 entrées | oui, cartographie déjà faite | ouvert |
 | **C.** Domaines vides | **aucun** | — | **fermé le 28 août 2026** |
-| **D.** Reprises courtes de cinq domaines instruits | 14 textes | oui, accès déjà constaté | ouvert |
-| **E.** Le garde de la CI ne couvre qu'une moitié du répertoire projeté | 2 lignes | non | **ouvert, découvert le 31 août 2026** |
+| **D.** Reprises courtes de cinq domaines instruits | 14 textes | oui, accès déjà constaté | **ouvert, et c'est par lui que la phase 3 commence** |
+| **E.** Le garde de la CI ne couvre qu'une moitié du répertoire projeté | 2 lignes | non | ouvert, découvert le 31 août 2026 |
 
-Le chantier A s'était vidé le 21 août, il s'est rouvert et creusé pendant cinq lots d'ouverture
-consécutifs jusqu'à trente-quatre cartes le 28 août, **et depuis il recule de seize par nuit** :
-les passages 07 et 08 de la routine nocturne, les 29 et 31 août, en servent chacun seize, deux
-lots pleins de huit, qui est le plafond d'une nuit. **Deux cartes restent**,
-`trois-etats-psychologiques-critiques` et `trois-sigmas-arbitrage-de-cout`. Le chantier a cessé
-d'être le plus gros du dépôt : c'est désormais le chantier B. Il reste néanmoins le seul que la
-routine ait à prendre tant qu'il n'est pas vide, et **un lot de deux le clôt**, après quoi la
-condition B de la routine devient fausse et la phase 3 commence. **La file est celle de
-`npm run corpus:deepen`, pas celle de ce fichier.**
+**Le chantier A est fermé.** Il s'était vidé le 21 août, rouvert et creusé pendant cinq lots
+d'ouverture consécutifs jusqu'à trente-quatre cartes le 28 août, puis refermé en trois nuits :
+seize cartes servies au passage 07 le 29 août, seize au passage 08 le 31, **les deux dernières au
+passage 09 le 1er septembre**. `corpus:deepen` projette **100 approfondissements pour 100 cartes
+validées** et sa fin de sortie ne liste plus rien. **La file est celle du script, pas celle de ce
+fichier**, et elle est vide.
+
+**Deux chantiers restent ouverts pour la routine, et la §2 de son prompt désigne lequel elle
+prend.** Aucun domaine n'étant vide et aucune carte n'étant sans approfondissement, ses conditions
+A et B sont fausses : **la condition C décide, et la phase 3 commence.** Elle enrichit un domaine
+par nuit, en rotation, et le premier se déduit sans arbitrage — voir la fin du chantier D.
 
 **Le chantier C est fermé.** Il a perdu un domaine le 22 août, `systems-thinking`, un second le 23,
 `decision-science`, un troisième le 25, `operations-management`, un quatrième le 26,
@@ -53,36 +55,42 @@ ouverture qui n'aura pas lieu.
 
 ---
 
-# A. Les approfondissements
+# A. Les approfondissements, chantier fermé le 1er septembre 2026
 
-**Vidé le 21 août 2026, rouvert le 23, doublé le 25, encore grossi les 26, 27 et 28, réduit de
-moitié le 29, ramené à deux le 31.** `corpus:deepen` projette désormais **98 approfondissements,
-143 346 mots, 1 463 en moyenne**, et sa fin de sortie ne liste plus que **deux cartes** :
-`trois-etats-psychologiques-critiques`, en psychologie du travail, et
-`trois-sigmas-arbitrage-de-cout`, en operations management. **Neuf domaines sur onze sont
-entièrement servis.**
+**Il n'y a plus de carte validée sans approfondissement.** `corpus:deepen` projette **100
+approfondissements pour 100 cartes, 146 324 mots, 1 463 en moyenne**, et sa fin de sortie ne liste
+plus rien. **Les onze domaines sont entièrement servis.** Ce chantier est conservé ici pour ce
+qu'il a appris, non pour ce qu'il resterait à faire.
 
-C'est le seul écart actuel du corpus entre ce qui est validé et ce qui est servi, et il se comble
-par `/corpus-deepen`, sans aucune recherche documentaire : la matière est la carte elle-même, sa
-lecture primaire et son verdict de contrôle. **Cinq lots d'ouverture consécutifs l'ayant nourri,
-c'est aujourd'hui, et de loin, le chantier au meilleur rapport entre ce qu'il coûte et ce qu'il
-rend au lecteur.** Et depuis la fermeture du chantier C, le 28 août, **c'est le seul que la routine
-nocturne ait à prendre** : sa §2 fait décider la première condition vraie, aucun domaine n'est plus
-vide, et la file du script est donc ce qui commande.
+**La file n'est pas tenue ici, et c'est ce qui a permis de la fermer.** `npm run corpus:deepen`
+l'affiche en fin de sortie, et c'est elle qui fait foi contre ce fichier.
 
-**Ce qu'une nuit de phase 2 rend, mesuré deux fois.** Les passages 07 et 08 ont servi seize cartes
-chacun : deux lots de huit, seize agents lancés en parallèle, environ cinq minutes par agent,
-aucun refus de projection et aucun renvoi, ni l'une ni l'autre nuit. Seize est le plafond que la
-routine se donne, et **il est atteignable en une nuit, deux nuits de suite**. Le passage 08 ajoute
-un fait qui n'était pas acquis : **aucun de ses seize agents n'a eu besoin d'un « écris
-maintenant »**, contre quatre sur seize au passage 07 et sept sur huit au passage 06. La
-surveillance, coût dominant des nuits d'ouverture, ne pèse pas sur les nuits de phase 2.
+## Ce que les trois nuits de phase 2 ont rendu, et ce que la mesure vaut pour la suite
 
-**Ce qu'il reste vaut un lot de deux, et il clôt le chantier.** Après lui, la condition B de la
-routine devient fausse et la phase 3 commence.
+Vidé le 21 août 2026, rouvert le 23, doublé le 25, encore grossi les 26, 27 et 28 jusqu'à
+trente-quatre cartes, **puis refermé en trois nuits** : seize au passage 07 le 29 août, seize au
+passage 08 le 31, les deux dernières au passage 09 le 1er septembre. Les projections passent de 66
+à 100, et d'environ 96 000 à 146 324 mots. **Aucun refus de projection, aucun renvoi, sur les
+trente-quatre.**
 
-**La file n'est pas tenue ici.** `npm run corpus:deepen` l'affiche en fin de sortie, et c'est
-elle qui fait foi.
+**Seize est le plafond d'une nuit, et il est atteignable deux nuits de suite** : deux lots de huit
+agents en parallèle, environ cinq minutes par agent. Une nuit de phase 2 est bornée par sa file,
+pas par son plafond : la troisième n'a servi que deux cartes et s'est arrêtée là, la §2 lui
+interdisant d'ouvrir ou de créer quoi que ce soit.
+
+**Le coût de surveillance disparaît en phase 2, et la courbe est nette** : sept agents sur huit ont
+eu besoin d'un « écris maintenant » au passage 06, quatre sur seize au 07, **aucun sur seize au 08,
+aucun sur deux au 09**. La contre-mesure du chantier C reste écrite, mais **c'est en phase 1 et en
+phase 3 qu'elle vaut**, là où un agent télécharge, océrise et attend le réseau. Elle n'a pas encore
+été éprouvée en phase 3.
+
+## Ce que ce chantier laisse derrière lui, et qui n'est pas de son ressort
+
+**Les trente-quatre textes servis déclarent presque tous l'absence de source secondaire ouverte**,
+et plusieurs le disent avec une précision qui vaut plan de travail. Un `corpus-deepener` n'y peut
+rien par construction : il n'ouvre aucune source. **Cette dette est au chantier D**, elle ne se
+paie qu'en phase 3, sur des reprises courtes, et elle suppose que le serveur MCP `documentary`
+réponde — il est en échec de connexion (`CONNECTION_CLOSED`) depuis le 29 août.
 
 ## Ce que ce passage a appris, et qui resservira
 
@@ -274,6 +282,38 @@ tirer ne sont plus ici : ils vivent désormais à leur place.
 
 
 # D. Les reprises courtes des domaines instruits
+
+**Depuis la fermeture du chantier A, le 1er septembre 2026, c'est ici que la routine nocturne
+reprend.** Ses conditions A et B sont fausses — aucun domaine vide, aucune carte sans
+approfondissement —, sa condition C est donc vraie et sa phase 3 commence : un domaine enrichi par
+nuit, en rotation.
+
+**Le premier domaine se déduit sans arbitrage, et il vaut d'être écrit ici pour que la nuit qui
+reprend n'ait pas à le recalculer.** La règle veut le domaine dont le journal donne
+l'enrichissement le plus ancien. **Aucun domaine n'a jamais été enrichi** : les passages 01 à 06 de
+la routine étaient des ouvertures, les 07 à 09 des nuits de phase 2 qui ne prennent aucun domaine.
+Le critère de repli s'applique donc, et il désigne **celui qui a le moins de cartes validées :
+`behavioral-economics`, avec quatre**, seul à ce niveau, les suivants en portant sept. Le décompte
+qui tranche est le tableau par domaine de [`corpus/ETAT.md`](ETAT.md), et `npm run corpus:audit`
+le rend à la demande.
+
+**En son sein, les deux premières priorités sont sans objet et la troisième commande.** Les thèmes
+déclarés sans carte validée que `corpus:audit` liste en fin de sortie, `autorite-domination` et
+`apprentissage-organisationnel`, sont **en sociologie des organisations, pas ici** ; et
+`corpus/map/queue.json` ne couvre que la sociologie des organisations elle aussi. Reste la priorité
+trois, **les angles morts écrits dans `corpus/map/behavioral-economics.scouting.md`** — et la
+section ci-dessous en tient déjà la liste chiffrée, accès constatés compris. **La reprise 1, les
+deux cartes de Tarde, est la moins chère du dépôt** : la lecture primaire est faite, complète et
+rendue, les deux citations relues sur l'image du feuillet, et il ne manque que la rédaction et le
+contrôle aveugle. En phase 3, la nuit se termine par les approfondissements des cartes qu'elle
+vient de créer.
+
+**Une condition matérielle pèse sur tout ce chantier, et elle n'est pas satisfaite au 1er
+septembre.** Le serveur MCP `documentary` est en échec de connexion (`CONNECTION_CLOSED`) depuis
+le 29 août. `corpus-scout`, `corpus-primary-reader` et `corpus-blind-reviewer` s'appuient tous les
+trois sur ses outils de recherche et de vérification de référence. Une nuit peut encore travailler
+par `WebSearch` et `WebFetch`, mais **elle perd la vérification de référence**, et la règle « une
+référence introuvable n'existe pas » se durcit d'autant : dans le doute, la carte ne se publie pas.
 
 ## Cinq reprises laissées par le lot du 28 août, sur `behavioral-economics`
 

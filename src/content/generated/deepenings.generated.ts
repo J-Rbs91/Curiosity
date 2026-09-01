@@ -5427,6 +5427,119 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "trois-etats-psychologiques-critiques",
+    "lead": [
+      "Imaginons deux emplois. Dans le premier, on sait chaque vendredi soir combien de pièces sont sorties conformes, on répond de ce qui a été produit, et l’on n’a jamais trouvé le moindre intérêt à ce que l’on fabrique. Dans le second, on croit à ce que l’on fait, on s’en sent pleinement responsable, et l’on quitte le poste sans avoir jamais appris si cela avait servi à quelque chose. Les deux personnes ne se plaignent pas de la même chose, et aucune des deux ne dirait que son travail la porte.",
+      "La question n’est alors pas de savoir lequel de ces deux emplois est le meilleur, mais ce qu’il faudrait ajouter à chacun pour que quelque chose change. En mai 1974, dans un rapport technique déposé au département des sciences administratives de Yale, J. Richard Hackman et Greg R. Oldham proposent une réponse qui déplace le regard : ce qui décide n’est pas ce que l’emploi contient, mais ce qu’il produit chez la personne qui l’occupe, et il faut que trois choses s’y produisent ensemble, aucune ne pouvant tenir lieu des autres."
+    ],
+    "sections": [
+      {
+        "title": "Trois états qui sont du côté de la personne",
+        "paragraphs": [
+          "Les trois termes que le rapport emploie se lisent à sa page 2 : « experienced meaningfulness of the work, experienced responsibility for the outcomes of the work, and knowledge of the results of the work activities », le sens vécu du travail, la responsabilité vécue de ses résultats, la connaissance des résultats de l’activité. Aucun des trois ne décrit une propriété de l’emploi. Deux d’entre eux portent l’adjectif experienced, éprouvé, et le troisième commence par une connaissance : ce sont trois choses qui se passent chez quelqu’un.",
+          "L’écart entre l’emploi et l’état n’est pas une subtilité de vocabulaire. Une responsabilité peut être inscrite dans un organigramme sans que celui qui l’exerce s’en sente responsable ; un travail peut être décisif pour d’autres et n’avoir aucun sens pour celui qui le fait ; des résultats peuvent être mesurés, consignés et archivés sans jamais revenir jusqu’à lui. Ce que la théorie exige, c’est l’état, jamais son équivalent organisationnel. Cela implique qu’aucun des trois ne se décrète : on n’agit que sur les conditions qui les rendent probables."
+        ]
+      },
+      {
+        "title": "Ce que la théorie met dans la même liste",
+        "paragraphs": [
+          "Ces trois états commandent, dans le texte, une série d’effets qui n’ont pas l’habitude de voyager ensemble. La page 2 les énumère : « high internal motivation, high work satisfaction, high quality performance, and low absenteeism and turnover », soit une motivation interne élevée, une satisfaction élevée au travail, une performance de qualité élevée, peu d’absentéisme et peu de départs.",
+          "Deux choses méritent d’y être remarquées. La première est l’adjectif accolé à la motivation : elle est dite interne, et l’on peut comprendre par là celle qui vient de l’activité elle-même plutôt que d’une récompense posée à côté d’elle. La seconde est la cohabitation, dans une seule liste, de ce que la personne éprouve et de ce que l’organisation observe : la satisfaction et la qualité du travail, l’absentéisme et les départs y dépendent des mêmes trois conditions. C’est ce qui rend la proposition intéressante, et c’est aussi ce qui la rend exigeante."
+        ]
+      },
+      {
+        "title": "Une conjonction, pas une addition",
+        "paragraphs": [
+          "La phrase de la page 4 ne dit pas que chacun des trois états contribue aux effets attendus : elle fait de leur présence simultanée la condition de ces effets. La différence est celle qui sépare une addition d’une conjonction. Dans une addition, chaque terme apporte sa part et un manque se compense : beaucoup de sens et beaucoup de responsabilité rattraperaient une faible connaissance des résultats. Dans une conjonction, rien ne se rattrape, et le terme absent annule le produit.",
+          "C’est ce qui distingue cet énoncé d’une simple liste de facteurs favorables, et ce qui en fait un instrument de diagnostic plutôt qu’un inventaire de bonnes pratiques. Devant un emploi qui ne motive personne, la question n’est plus de savoir lequel des trois états est le plus faible, mais lequel manque. Renforcer un état déjà présent ne produira rien tant que celui qui fait défaut demeure absent : ajouter du sens à un travail dont personne n’apprend jamais les résultats revient à augmenter un facteur dans un produit dont un autre est nul."
+        ]
+      },
+      {
+        "title": "La place des trois états dans la chaîne",
+        "paragraphs": [
+          "Le rapport ne pose pas ces trois états à côté des caractéristiques de l’emploi : il les pose entre elles et leurs effets. La page 5 le dit en décrivant ce que l’instrument mesure : les trois états y sont « shown in Figure 1 as mediating between the core job dimensions and the outcomes of the work », représentés comme médiateurs entre les dimensions centrales de l’emploi et les effets du travail.",
+          "Médier a ici un sens précis : les caractéristiques de l’emploi n’agissent pas directement sur la motivation ou sur la qualité du travail, elles n’agissent qu’en passant par les trois états. La conséquence pratique est immédiate. Deux ateliers peuvent recevoir la même transformation, décrite dans les mêmes termes, et ne pas en obtenir les mêmes effets, sans qu’il faille chercher plus loin qu’un état produit dans l’un et pas dans l’autre. L’aménagement n’est jamais le résultat : il est le moyen d’un état, et c’est l’état qu’il faut aller regarder.",
+          "Le document où cette phrase figure n’est d’ailleurs pas un exposé de théorie. C’est la présentation d’un questionnaire de diagnostic, le Job Diagnostic Survey, destiné à évaluer des emplois et des projets de refonte. Les trois états y ont un statut d’objet de mesure, au même titre que les caractéristiques de l’emploi qui les précèdent et les effets qui les suivent."
+        ]
+      },
+      {
+        "title": "Ce qui n’est pas promis également à tous",
+        "paragraphs": [
+          "Une lecture rapide ferait de ces trois états une recette : réunissez-les, et l’emploi motivera. Le rapport écarte cette lecture sur la page même où il pose leur présence conjointe. Il y est écrit que la théorie n’est pas censée fonctionner « with equal effectiveness for all individuals », avec une égale efficacité pour tous les individus, et le verbe fonctionner y est placé entre guillemets par les auteurs eux-mêmes.",
+          "Le schéma de la page 3 fait apparaître à cet endroit une quatrième grandeur, la force du besoin de développement de la personne. Elle ne s’ajoute pas aux trois états et ne se substitue à aucun d’eux : elle module la force des liens que la théorie pose par ailleurs. Les trois états restent conjointement requis ; ce qui varie d’une personne à l’autre, c’est ce que leur présence produit. Un emploi bien conçu au sens de ce modèle n’est donc pas une promesse tenue de la même façon pour tout le monde."
+        ]
+      },
+      {
+        "title": "D’où vient la triade",
+        "paragraphs": [
+          "Les auteurs ne revendiquent pas cette construction comme neuve. Dès la page 2, ils écrivent : « The theory which gave rise to the present instrument is based on earlier work by Turner & Lawrence (1965) and by Hackman & Lawler (1971). » La théorie qui a donné naissance à l’instrument repose donc sur des travaux antérieurs, ceux de Turner et Lawrence en 1965 et ceux de Hackman et Lawler en 1971. Une note du rapport, page 39, distingue les deux héritages : six attributs de la tâche chez les premiers, six dimensions de l’emploi chez les seconds, et les deux listes ne se recouvrent pas.",
+          "Deux ans plus tard, dans « Motivation through the Design of Work: Test of a Theory » (Organizational Behavior and Human Performance, volume 16, 1976, p. 250-279), les deux mêmes auteurs replient la triade dans une seule phrase, page 255 : « Following Hackman and Lawler (1971), the model postulates that an individual experiences positive affect to the extent that he learns (knowledge of results) that he personally (experienced responsibility) has performed well on a task that he cares about (experienced meaningfulness). » On y lit d’un trait le moment que les trois états décrivent ensemble : quelqu’un apprend qu’il a bien fait, par lui-même, une chose à laquelle il tient.",
+          "Le nom, lui, appartient au rapport de 1974 : c’est là que ces trois états sont appelés Critical Psychological States, en majuscules, et qu’ils reçoivent leur place de médiateurs dans le schéma. On peut donc lire ce texte comme celui qui fixe la triade plutôt que comme celui qui l’invente. La matière lui vient de plus loin, la forme est la sienne, et c’est cette forme qui a circulé ensuite."
+        ]
+      }
+    ],
+    "limits": [
+      "La triade est plus ancienne que le rapport de 1974, et ce sont ses auteurs qui le disent. En quels termes exacts Hackman et Lawler la posaient dès 1971, c’est leur article qui le porte : « Employee reactions to job characteristics », Journal of Applied Psychology, volume 55, 1971, p. 259-286.",
+      "Le rapport situe les trois états entre les caractéristiques de l’emploi et ses effets, mais il ne dit pas par quel mécanisme telle caractéristique produit tel état, et il ne rapporte pas l’épreuve des faits. Pour l’exposé détaillé de la théorie et pour son test, les auteurs renvoient à un autre de leurs rapports de la même année, le Technical Report No. 6 : ce sont ces pages-là qu’il faudra ouvrir.",
+      "Chacun des trois états reçoit par ailleurs sa définition propre à la page 6, et c’est là, dans les termes mêmes des auteurs, que se lit ce qu’il faut entendre exactement par sens du travail, responsabilité éprouvée et connaissance des résultats. Ces pages se lisent en anglais, faute de traduction française publiée connue."
+    ]
+  },
+  {
+    "conceptId": "trois-sigmas-arbitrage-de-cout",
+    "lead": [
+      "Une machine tourne, on mesure ce qu’elle sort, et les chiffres bougent d’une pièce à l’autre. Il faut bien tracer quelque part une ligne au delà de laquelle on ira voir ce qui se passe. Trop près de la moyenne, l’alerte sonne sans arrêt : on démonte une machine qui n’avait rien, on perd des heures, et il arrive qu’on la dérègle en la corrigeant. Trop loin, la dérive s’installe et personne ne bouge pendant des semaines. Les deux erreurs se paient, mais pas au même guichet : l’une en temps perdu, l’autre en pièces mauvaises.",
+      "Où placer cette ligne se décide en deux pages, 276 et 277, d’un livre publié à New York en 1931, Economic Control of Quality of Manufactured Product. W. A. Shewhart le signe seul et se présente sur la page de titre comme membre du personnel technique des Bell Telephone Laboratories. La réponse qu’il donne ne ressemble pas à une démonstration. Deux mots y sont mis en italiques par l’imprimeur, empirical et economic, et ce sont eux qui portent l’argument."
+    ],
+    "sections": [
+      {
+        "title": "Deux façons de se tromper, et ce qu’elles coûtent",
+        "paragraphs": [
+          "Shewhart met les deux erreurs face à face dans une même phrase, page 276, et il les traite comme deux postes de dépense : « We must try to strike a balance between the advantages to be gained by increasing the value P through reduction in the cost of looking for trouble when it does not exist and the disadvantages occasioned by overlooking troubles that do exist ». Il faut chercher un équilibre entre ce qu’on gagne à réduire le coût de chercher un ennui qui n’existe pas, et ce qu’on perd à laisser passer ceux qui existent.",
+          "Le P de cette phrase est la probabilité qu’un point relevé tombe à l’intérieur des limites. L’augmenter, c’est écarter les limites : moins de fausses alertes, donc moins de courses inutiles, et du même geste davantage d’ennuis réels qui passent inaperçus. Une seule commande, deux effets contraires. Il n’existe pas de réglage qui améliore les deux à la fois, seulement un point où l’on accepte de perdre le moins.",
+          "La conséquence est immédiate : aucune largeur de limites n’est bonne en soi, elle dépend de ce que chaque erreur coûte là où l’on travaille. Imaginons deux ateliers voisins. Dans le premier, arrêter la ligne pour rien immobilise trente personnes une demi-journée. Dans le second, un défaut non détecté part chez le client et revient en réclamation. Le même écart n’y mérite pas la même réaction, et aucun calcul de probabilité ne décide à la place de celui qui paie."
+        ]
+      },
+      {
+        "title": "Pourquoi la limite ne se déduit pas",
+        "paragraphs": [
+          "On pourrait croire que la valeur se calcule. Il suffirait de connaître la loi de la grandeur qu’on porte sur le graphique, c’est-à-dire la façon dont ses valeurs se répartissent quand rien d’autre que le hasard n’agit ; on choisirait un niveau de confiance, et la limite en découlerait. C’est cette voie que Shewhart ferme, en constatant que la plupart du temps cette loi nous échappe : « we never know f(θ, n) in sufficient detail to set up such limits ».",
+          "Vient alors la question, et une réponse qui tient en une ligne : « How then shall we establish allowable limits on the variability of samples? Obviously, the basis for such limits must be, in the last analysis, empirical ». Comment fixer, dès lors, des limites admissibles à la variabilité des échantillons ? La base de telles limites doit être, en dernière analyse, empirique. Le mot empirical est en italiques dans l’imprimé, comme economic deux lignes plus bas.",
+          "Dire que la base est empirique n’est pas un aveu de faiblesse : c’est un changement de justification. Une limite déduite se défend par le théorème dont elle sort ; une limite empirique se défend par ce qu’elle a donné jusqu’ici, atelier après atelier. On conteste la première en montrant une erreur de calcul, la seconde en montrant qu’elle revient trop cher. Ce n’est pas la même conversation, et ce n’est pas non plus la même autorité."
+        ]
+      },
+      {
+        "title": "Ce que l’inégalité de Tchebychev laisse ouvert",
+        "paragraphs": [
+          "Shewhart n’en reste pas au constat. Juste au-dessus de la phrase où il tranche, il imprime une inégalité due à Tchebychev, P > 1 − 1/t², et c’est le seul nom propre étranger de ces deux pages. Elle relie la largeur des limites, comptée en multiples t d’une même unité, celle qu’on note sigma et qui mesure la dispersion ordinaire des mesures, à la proportion des valeurs qui restent à l’intérieur.",
+          "Son intérêt est qu’elle ne suppose aucune forme particulière de distribution, ce qui est exactement ce qui manquait. Sa limite est qu’elle vaut pour n’importe quel t : plus t est grand, plus la garantie est forte, et elle ne désigne aucune valeur plutôt qu’une autre. D’où la phrase qui suit immédiatement la formule, « We are still faced with the choice of t ». L’inégalité borne, elle ne choisit pas.",
+          "Ce qui vient ensuite n’est plus un calcul mais un constat d’expérience : t = 3 semble une valeur économiquement acceptable. L’en-tête de la page annonce « DETECTION OF LACK OF CONTROL ». Il s’agit bien de détecter quelque chose, et le seuil de détection est réglé sur ce qu’il en coûte de se tromper dans un sens ou dans l’autre, non sur ce qu’une loi de probabilité permettrait de garantir."
+        ]
+      },
+      {
+        "title": "Empirique ne veut pas dire sans probabilité",
+        "paragraphs": [
+          "Il est tentant de tirer de ces pages une opposition entre les limites de contrôle et le calcul des probabilités. À la lettre, elle serait fausse. Shewhart emploie la probabilité : l’inégalité de Tchebychev en est une, et le P qu’il cherche à augmenter en est une autre. Son arbitrage lui-même se joue entre deux probabilités d’erreur, celle de s’alarmer pour rien et celle de ne pas s’alarmer à temps.",
+          "Ce qu’il écarte est plus précis : la voie déductive, celle qui tirerait la valeur de t d’un niveau de confiance choisi sur une loi supposée connue. La formulation qui reste fidèle à ces pages est donc « économique et empirique, contre déductive ». « Économique et non probabiliste » serait un raccourci, et un raccourci inexact.",
+          "La nuance a des effets pratiques. Qui cite Shewhart pour refuser tout raisonnement probabiliste dans un atelier lui fait dire l’inverse de ce qu’il écrit. Ce qu’on peut en revanche lui faire dire, c’est qu’une probabilité ne suffit jamais à fixer un seuil : il y faut encore le prix des deux erreurs, et ce prix ne se lit dans aucune distribution."
+        ]
+      },
+      {
+        "title": "Les 0,27 % qu’on prête à Shewhart",
+        "paragraphs": [
+          "Une justification circule dans les manuels : sous la loi normale, à peine 0,27 % des points tombent au delà de trois sigmas, ce qui donnerait un taux de fausses alertes acceptable. Le calcul est juste, il est couramment attribué à Shewhart, et il ne figure pas dans ces deux pages.",
+          "Il y contredirait même l’argument. Pour obtenir ce 0,27 %, il faut connaître la loi de la grandeur suivie et la supposer normale, quand la phrase de la page 276 vient précisément d’écarter cette connaissance. La justification par le taux de fausses alertes refait en déduction ce que Shewhart pose comme un choix d’expérience : elle aboutit au bon nombre par une raison qui n’est pas la sienne.",
+          "L’écart n’est pas anodin pour qui veut se servir de la règle. Si trois sigmas valent parce que la loi normale le dit, la règle tombe dès que la distribution cesse d’être normale. Si trois sigmas valent parce que l’expérience a montré que le compte y était, la règle survit à l’ignorance de la loi, et elle reste révisable par la même voie : en montrant qu’ailleurs, le compte n’y est plus."
+        ]
+      }
+    ],
+    "limits": [
+      "L’argument de Shewhart tient sur les pages 276 et 277. Le livre revient plus loin, dans sa sixième partie, sur le choix des limites : c’est là qu’on verra si le motif économique s’y nuance ou s’y complète, et ces pages de l’ouvrage attendent leur lecteur.",
+      "Le 0,27 % est introuvable sur ces deux pages, ce qui ne dit rien des cinq cents autres. Que Shewhart ait ailleurs adossé ses limites à la loi normale ne peut ni s’affirmer ni s’exclure : c’est le reste du volume qui répondra.",
+      "Le choix de t = 3 est plus ancien que le livre : il apparaît dans un mémorandum interne des Bell Telephone Laboratories daté du 16 mai 1924. En quels termes ce texte pose déjà la valeur, c’est lui qu’il faudra lire pour le savoir.",
+      "Les phrases de Shewhart se citent en anglais : il n’existe pas d’édition française identifiée, et le français donné ici sert à faire comprendre, non à faire référence. Les folios sont ceux de la composition Van Nostrand ; qui travaille sur la réimpression publiée en 1980 par l’American Society for Quality Control vérifiera les siens en l’ouvrant."
+    ]
+  },
+  {
     "conceptId": "zones-incertitude",
     "lead": [
       "Dans beaucoup d’organisations, presque tout finit par être écrit quelque part : qui fait quoi, dans quel ordre, avec quelle marge d’initiative. Et pourtant, il arrive régulièrement qu’une personne au poste modeste pèse plus lourd que son intitulé ne le laisse deviner. Imaginons un atelier où chaque geste de production est minutieusement décrit dans un manuel, sauf ce qu’il faut faire lorsqu’une machine tombe en panne d’une façon que personne n’a prévue. Celui qui sait s’en sortir dans ce cas précis devient, sur ce point précis, quelqu’un dont tout le monde a besoin.",
