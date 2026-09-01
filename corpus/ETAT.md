@@ -1,4 +1,4 @@
-# État du corpus — 31 août 2026
+# État du corpus — 1er septembre 2026
 
 Écrit sur le disque parce qu'une session a déjà été coupée en cours de route : ce fichier
 existe pour qu'une reprise reparte des fichiers, et non de la mémoire de quelqu'un.
@@ -7,11 +7,11 @@ Ce fichier dit ce que le corpus **est**. Ce qui lui **manque**, et par quel bout
 est dans [`corpus/RESTE-A-FAIRE.md`](RESTE-A-FAIRE.md).
 
 `npm run corpus:validate` : **104 enregistrements, 100 validés, 0 erreur, 81 avertissements.**
-`npm run corpus:deepen` : **98 approfondissements pour 100 cartes validées**, 143 346 mots,
-1 463 en moyenne. Fin de sortie : **deux cartes sans approfondissement**,
-`trois-etats-psychologiques-critiques` en psychologie du travail et
-`trois-sigmas-arbitrage-de-cout` en operations management, et c'est le seul écart entre validé et
-servi. **Neuf domaines sur onze sont entièrement servis.**
+`npm run corpus:deepen` : **100 approfondissements pour 100 cartes validées**, 146 324 mots,
+1 463 en moyenne. Fin de sortie : **rien**. Il n'y a plus aucune carte validée sans
+approfondissement, et **les onze domaines sont entièrement servis**. L'écart entre ce qui est
+validé et ce qui est servi, ouvert le 23 août et remonté à trente-quatre cartes le 28, est refermé
+depuis le passage 09 de la routine nocturne, le 1er septembre.
 `npm test` : **482 tests, 0 échec.** `npm run lint` et `npm run corpus:build` : sans erreur.
 
 **Un garde de la CI ne couvre qu'une moitié de ce qu'il a l'air de couvrir, et il faut le savoir.**
@@ -22,7 +22,10 @@ que la CI ne lance pas. **Une correction portée à un enregistrement de `corpus
 reprojection passe donc la CI sans être vue.** C'est arrivé : `effet-de-cadrage` a vécu du 29 au
 31 août avec deux phrases divergentes entre son enregistrement maître et sa projection, corrigées
 au passage 08. Le remède tient en une ligne dans les deux workflows, il est au chantier E de
-[`RESTE-A-FAIRE.md`](RESTE-A-FAIRE.md), et il n'appartient pas à une nuit de phase 2.
+[`RESTE-A-FAIRE.md`](RESTE-A-FAIRE.md), et **il n'a été posé par aucune des trois nuits de
+phase 2**, qui n'avaient pas mandat de toucher à la CI. Il revient à la phase 3, qui écrit des
+cartes et des approfondissements dans la même nuit et qui est donc celle que ce trou coûtera le
+plus cher.
 
 **Les cent cartes affichent leur citation en français.** Vingt-six d'entre elles la montraient
 encore en anglais : la fiche déclarait `translation.kind: "none"`, ce qui était exact — le texte
@@ -53,24 +56,79 @@ candidat mal placé part désormais chez un voisin ouvert, ou ne s'instruit pas.
 | Science de la décision | 2 | 8 | 8 |
 | Sociologie du travail | 1 | 7 | 7 |
 | Économie comportementale | 1 | 4 | 4 |
-| Operations Management | 3 | 8 | **7** |
-| Psychologie du travail | 2 | 7 | **6** |
+| Operations Management | 3 | 8 | 8 |
+| Psychologie du travail | 2 | 7 | 7 |
 
-**Deux cartes validées attendent leur approfondissement**, contre dix-huit au 29 août et
+**Aucune carte validée n'attend son approfondissement**, contre deux au 31 août, dix-huit au 29 et
 trente-quatre au 28. L'écart s'était refermé le 21 août, il s'était rouvert et creusé pendant cinq
-lots d'ouverture consécutifs, et **les passages 07 et 08 de la routine nocturne en ont servi seize
-chacun**, les 29 et 31 août, deux lots pleins de huit par nuit, qui est le plafond d'une nuit.
+lots d'ouverture consécutifs, et **trois nuits de la routine nocturne l'ont refermé** : seize
+cartes au passage 07 le 29 août, seize au passage 08 le 31, les deux dernières au passage 09 le
+1er septembre. Seize est le plafond d'une nuit, et il s'est tenu deux nuits de suite.
 `npm run corpus:deepen` liste ce qui reste en fin de sortie : **c'est la file, et elle fait foi
-contre ce fichier.** Aucun domaine n'étant plus vide, **c'est le seul chantier que la routine ait
-à prendre**, et il ne lui reste qu'un lot de deux : après lui, la condition B de la routine
-devient fausse et la phase 3 commence.
+contre ce fichier.** Elle est vide. **La condition B de la routine est donc fausse, pour la
+première fois depuis le 28 août, et la phase 3 commence** : aucun domaine n'est vide, aucune carte
+n'est sans approfondissement, c'est la condition C qui décide désormais.
+
+**Le domaine que la phase 3 prendra la première nuit se déduit sans arbitrage.** La règle veut le
+domaine dont le journal donne l'enrichissement le plus ancien ; **aucun domaine n'a jamais été
+enrichi** — six passages d'ouverture, trois de phase 2 —, donc le critère de repli s'applique et
+désigne **celui qui a le moins de cartes validées, `behavioral-economics` avec quatre**, seul à ce
+niveau, les suivants en portant sept. Le tableau ci-dessus est le décompte qui tranche.
 
 **Les quatre familles sont complètes.** « Comprendre le pilotage » et « Comprendre le travail
 réel » l'étaient depuis le 23 août, « Comprendre la production et les systèmes » depuis le 25, et
 « Comprendre les humains et les organisations » l'est depuis le 28 : elle était la dernière
 incomplète, avec trois domaines fermés sur quatre au 25 août.
 
-# 0. Seize approfondissements — lot du 31 août 2026 (passage 08), projeté
+# 0. Deux approfondissements, et la file se vide — lot du 1er septembre 2026 (passage 09), projeté
+
+**Troisième et dernière nuit de phase 2, et la file passe de deux à zéro.** Condition A fausse,
+aucun domaine n'étant vide depuis le 28 août ; condition B vraie au lever de la nuit,
+`corpus:deepen` listant deux cartes sans approfondissement. Aucune ouverture, aucune carte
+nouvelle, aucune recherche documentaire. **Deux agents, deux textes, aucun refus de projection,
+aucun renvoi, aucune relance** : `trois-etats-psychologiques-critiques` en psychologie du travail,
+1 535 mots, et `trois-sigmas-arbitrage-de-cout` en operations management, 1 443 mots. Les
+projections passent de 98 à **100**, et de 143 346 à **146 324 mots**. **Les onze domaines sont
+désormais entièrement servis.**
+
+## Ce que le contrôle a attrapé
+
+**Rien, pour la troisième nuit de suite.** Les deux textes sont passés au premier tour, sans
+avertissement de citation : leurs verbatim se retrouvent mot pour mot dans les enregistrements
+maîtres. Aucun des deux agents n'a eu besoin d'un « écris maintenant », ce qui prolonge le constat
+du passage 08 et achève une série nette — sept relances sur huit agents au passage 06, quatre sur
+seize au 07, zéro sur seize au 08, zéro sur deux ici. **Le coût de surveillance n'existe pas en
+phase 2** ; il reste à vérifier qu'il réapparaît en phase 3, où un agent télécharge et attend le
+réseau.
+
+## Les réserves conservées, et elles sont du même genre que les trente-deux précédentes
+
+**Les deux textes déclarent ce qu'ils n'ont pas pu établir plutôt que de le combler.**
+
+`trois-sigmas-arbitrage-de-cout` garde quatre réserves. La plus utile pour un lecteur est celle
+qui refuse un chiffre que tout le monde attend : **le 0,27 % que la littérature d'enseignement
+prête à Shewhart ne figure pas sur les pages lues**, et il supposerait la normalité que Shewhart
+vient précisément d'écarter. Le texte le dit et n'écrit pas le chiffre. Les trois autres bornent la
+lecture aux pages 276-277, la partie VI n'ayant pas été dépouillée ; rappellent qu'une absence de
+trouvaille n'est pas une démonstration d'absence ; et signalent que la réimpression ASQC de 1980
+reste en `metadata-only`, folios non collationnés.
+
+`trois-etats-psychologiques-critiques` en garde trois, toutes de même nature : **la triade est plus
+ancienne que le rapport de 1974 et ce sont ses auteurs qui le disent**, l'article de Hackman et
+Lawler de 1971 restant à ouvrir ; le rapport renvoie pour l'exposé détaillé et pour le test au
+Technical Report No. 6, non ouvert ; et les définitions propres des trois états, page 6, se lisent
+en anglais, faute de traduction française publiée connue.
+
+## L'angle mort qui commande le prochain passage sur ces deux domaines
+
+**Aucun des deux textes n'a de source secondaire ouverte**, et c'est le trait commun aux
+trente-quatre servis en trois nuits. Un `corpus-deepener` n'y peut rien : il n'ouvre aucune source
+et n'en a pas le mandat. La dette est donc entière et elle est désormais chiffrée au chantier D de
+[`RESTE-A-FAIRE.md`](RESTE-A-FAIRE.md). **Elle ne se paiera qu'en phase 3, sur des reprises
+courtes**, et elle suppose que le serveur MCP `documentary` réponde : il est en échec de connexion
+depuis quatre nuits, sans conséquence en phase 2, bloquant dès la première nuit de phase 3.
+
+# 0 bis. Seize approfondissements — lot du 31 août 2026 (passage 08), projeté
 
 **Deuxième nuit de phase 2, et la file passe de dix-huit à deux.** Condition A fausse, aucun
 domaine n'étant vide depuis le 28 août ; condition B vraie, `corpus:deepen` listant dix-huit
