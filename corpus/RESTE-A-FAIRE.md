@@ -308,12 +308,22 @@ rendue, les deux citations relues sur l'image du feuillet, et il ne manque que l
 contrôle aveugle. En phase 3, la nuit se termine par les approfondissements des cartes qu'elle
 vient de créer.
 
-**Une condition matérielle pèse sur tout ce chantier, et elle n'est pas satisfaite au 1er
-septembre.** Le serveur MCP `documentary` est en échec de connexion (`CONNECTION_CLOSED`) depuis
-le 29 août. `corpus-scout`, `corpus-primary-reader` et `corpus-blind-reviewer` s'appuient tous les
-trois sur ses outils de recherche et de vérification de référence. Une nuit peut encore travailler
-par `WebSearch` et `WebFetch`, mais **elle perd la vérification de référence**, et la règle « une
-référence introuvable n'existe pas » se durcit d'autant : dans le doute, la carte ne se publie pas.
+**Une condition matérielle pèse sur tout ce chantier, et elle est intermittente au 1er septembre.**
+Le serveur MCP `documentary` a été en échec de connexion (`CONNECTION_CLOSED`) du 29 août au
+1er septembre, quatre nuits, sans conséquence tant que la routine était en phase 2.
+`corpus-scout`, `corpus-primary-reader` et `corpus-blind-reviewer` s'appuient tous les trois sur
+ses outils de recherche et de vérification de référence, et la phase 3 en dépend donc.
+
+**Il a répondu le 1er septembre à 06h10 UTC, et sur une référence de ce chantier même** : le DOI
+`10.3389/fpsyg.2021.785721` de la reprise 3 ci-dessous rend `reachable: true`, `conclusive: true`,
+`resolved: true`, aucun écart sur Baratgin, Godin et Jamet 2022, `also_in_openalex: true`.
+**Mais il a disparu et réapparu trois fois en quelques minutes pendant ce contrôle** : il bat, il
+n'est pas rétabli, et **la nuit qui ouvre la phase 3 le constate elle-même** par un appel réel
+avant de bâtir un lot dessus. Elle ne tient pas son retour pour acquis sur la foi de cette ligne.
+
+Sans lui, une nuit peut encore travailler par `WebSearch` et `WebFetch`, mais **elle perd la
+vérification de référence**, et la règle « une référence introuvable n'existe pas » se durcit
+d'autant : dans le doute, la carte ne se publie pas.
 
 ## Cinq reprises laissées par le lot du 28 août, sur `behavioral-economics`
 

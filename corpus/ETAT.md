@@ -125,8 +125,11 @@ en anglais, faute de traduction française publiée connue.
 trente-quatre servis en trois nuits. Un `corpus-deepener` n'y peut rien : il n'ouvre aucune source
 et n'en a pas le mandat. La dette est donc entière et elle est désormais chiffrée au chantier D de
 [`RESTE-A-FAIRE.md`](RESTE-A-FAIRE.md). **Elle ne se paiera qu'en phase 3, sur des reprises
-courtes**, et elle suppose que le serveur MCP `documentary` réponde : il est en échec de connexion
-depuis quatre nuits, sans conséquence en phase 2, bloquant dès la première nuit de phase 3.
+courtes**, et elle suppose que le serveur MCP `documentary` réponde. Il a été en échec de connexion
+pendant les quatre nuits du 29 août au 1er septembre, sans conséquence en phase 2. **Il a répondu
+le 1er septembre à 06h10 UTC** — le DOI `10.3389/fpsyg.2021.785721` résolu sans écart —, **mais il
+a disparu et réapparu trois fois en quelques minutes** : il bat, il n'est pas rétabli, et la nuit
+qui ouvre la phase 3 le constate elle-même plutôt que de s'y fier sur la foi de cette ligne.
 
 # 0 bis. Seize approfondissements — lot du 31 août 2026 (passage 08), projeté
 
