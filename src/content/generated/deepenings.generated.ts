@@ -121,6 +121,62 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "amenagement-onereux-du-monde-exterieur",
+    "lead": [
+      "Pour qu’il y ait de l’eau au robinet, il a fallu capter une source, poser des conduites, entretenir un réseau, et quelqu’un a payé. Pour qu’un logement soit chaud en janvier, il faut y consacrer une part de ce dont on dispose, qui n’ira pas ailleurs. Rien de ce qui rend le monde habitable ne se donne de soi-même : chaque arrangement se paie, en travail, en argent, et surtout en renoncements.",
+      "Ce prix laisse des traces qui ne sont pas comptables. On hésite avant d’engager la dépense, on arbitre entre deux besoins également réels, on se dispute en famille sur ce qui vient d’abord, on regrette ensuite, on finit par s’expliquer à soi-même que l’autre solution n’en valait pas la peine. Qui étudie cela ? En 1962, dans un long article du Bulletin de psychologie, Paul Albou répond que ces problèmes ne sont ni un reste ni un supplément d’âme : ils forment l’objet propre d’une discipline, et il en propose la définition."
+    ],
+    "sections": [
+      {
+        "title": "Ce que « onéreux » veut dire ici",
+        "paragraphs": [
+          "Sa phrase tient en une ligne, et il annonce aussitôt qu’il va la démonter : « Reprenons, pour en commenter les termes, cette partie de la définition. » Le mot qui reçoit le commentaire le plus fourni est l’adjectif. Page 12, Albou écrit que le qualificatif onéreux « rappelle que la réalisation des objectifs que l’homme poursuit en tant qu’agent économique est loin d’être aisée ». Il ne s’agit donc pas du prix inscrit sur une étiquette : « Il renvoie à l’idée d’équilibre des fins et des moyens, par l’intermédiaire de trois problèmes », la rareté, le choix et le coût.",
+          "La rareté d’abord, qu’Albou appuie sur la définition de l’économie donnée par Lionel Robbins dans son Essai sur la nature et la signification de la Science Economique, cité en note à cette page. Ses exemples sont l’eau potable et l’air pur, devenus des valeurs. Le choix de ces exemples dit l’essentiel : la rareté n’est pas une propriété que l’air posséderait ou non, c’est un rapport qui s’installe entre ce qu’on veut et ce dont on dispose. Un bien dont personne ne manquait peut y entrer, et c’est en y entrant qu’il devient économique.",
+          "Le choix ensuite, dont Albou marque le prix par un renvoi à Spinoza : toute détermination est une négation, et tout choix appauvrit celui qui le fait, puisque retenir une possibilité écarte les autres. Le coût enfin, qui est le nom de ce qu’on abandonne en chemin. Les trois ne sont pas trois obstacles matériels : ce sont trois façons dont une situation devient un problème pour quelqu’un. C’est aussi pourquoi Albou range le calcul économique et la décision parmi les questions les plus importantes de sa discipline.",
+          "L’adjectif n’est pas un ornement de définition, il travaille tout au long de l’article. Page 67, Albou s’en ressert pour délimiter la psychologie de la vente, qu’il présente comme l’étude des relations qui s’instituent à l’occasion d’un échange onéreux, et il parle page 72 d’une psychologie de l’échange onéreux. Le même opérateur sert à cadrer la discipline entière et à découper l’un de ses chantiers."
+        ]
+      },
+      {
+        "title": "Aménager, c’est agencer selon un plan",
+        "paragraphs": [
+          "Le deuxième mot demande autant d’attention, et on le lit trop vite. Aménager n’est pas subir : c’est agencer quelque chose selon un plan et un programme. Albou en tire une conséquence directe sur ce qu’il faut attendre d’un agent économique : son comportement n’est pas une suite désordonnée de réactions aux circonstances, il dessine des schèmes, des manières de faire qui reviennent et qu’on peut reconnaître.",
+          "L’enjeu est de méthode. Une réaction sans plan ne se laisse guère étudier autrement qu’en dénombrant : on la compte, on la corrèle, on n’en dit rien de plus. Une activité organisée, elle, a une structure, et une structure se décrit. Le mot aménagement fait ainsi de l’économie une affaire d’action plutôt que de réflexe, et c’est pour cette raison qu’Albou le rapproche de la praxis chez Marx.",
+          "Cette activité est individuelle ou sociale, et le mot vaut aux deux échelles : il couvre ce qu’une personne organise autour d’elle comme ce qu’un groupe entreprend, sans obliger à commencer par l’individu."
+        ]
+      },
+      {
+        "title": "Un monde extérieur qui est d’abord social",
+        "paragraphs": [
+          "Reste le troisième terme, et c’est le plus trompeur. Le monde extérieur n’est pas seulement fait de matière et d’objets à transformer. Albou y insiste : il est aussi institutionnel et culturel, composé de symboles, de normes et de valeurs, et il est aussi et surtout un monde social. Ce qu’on aménage, ce sont donc des ressources, mais également des règles, des attentes et des rapports avec d’autres.",
+          "La phrase de la page 11 n’est du reste que le premier caractère d’une définition plus longue, dont Albou rappellera l’énoncé complet vingt ans plus tard : « la Psychologie économique est l’étude, par les méthodes de la psychologie sociale, des problèmes humains qui naissent de l’interaction des individus et des groupes, à l’occasion de l’aménagement onéreux du monde extérieur ». Deux ajouts s’y voient : une méthode, et l’interaction des individus et des groupes.",
+          "Ce second ajout fixe le genre de problèmes visés. Ils ne sont pas ceux d’un homme seul devant la rareté, ils naissent entre des personnes : on peut y ranger les tensions d’un ménage autour d’une dépense, la pression de l’entourage sur ce qu’il convient d’acheter, ou la manière dont un prix se discute.",
+          "Le premier ajout, lui, a une histoire. En 1962, Albou écrit que les chercheurs français préfèrent rattacher le développement de la psychologie économique non à celui de la science économique, mais à celui de la psychologie sociale : la filiation est alors revendiquée. Vingt ans plus tard, il juge que sa définition faisait « peut-être par réaction, la part trop belle à la psychologie sociale ». Ce qui fondait la discipline en 1962 est devenu ce qu’il tient à corriger."
+        ]
+      },
+      {
+        "title": "Un ouvrage qui ne définissait pas son objet",
+        "paragraphs": [
+          "Définir a l’air d’un exercice d’école. En 1962, c’est un enjeu, parce que la discipline existe sans que personne se soit chargé de dire ce qu’elle étudie. Albou ouvre son chapitre sur les définitions en annonçant celle qu’il proposera, et qui, écrit-il page 10, « paraît être assez généralement acceptée par les chercheurs français ».",
+          "Le cas qui l’occupe est celui de Pierre-Louis Reynaud, dont La Psychologie Economique avait paru chez Marcel Rivière en 1954, dans une collection de bilans. Albou n’en conteste pas l’antériorité : il écrit page 7 que ce petit livre est un essai historique et bibliographique, le bilan d’un demi-siècle de recherches, puis ajoute : « Enfin, cet ouvrage ne définit nulle part la discipline dont il traite. » Page 10, il précise ce qu’il lui reproche vraiment : l’histoire de la psychologie économique ne doit pas s’écrire, contrairement aux efforts de Reynaud, du point de vue de l’économiste.",
+          "La remarque dit ce que vaut une définition à ses yeux. Publier le premier sur un sujet ne fonde pas une discipline ; il faut encore énoncer ce dont elle se charge, et depuis quel point de vue elle le fait. C’est le travail de la phrase de la page 11, et c’est pourquoi Albou la donne pour sienne, lui consacre le chapitre où il en commente les mots un à un, et la revendique encore vingt ans après comme « notre définition de 1962 »."
+        ]
+      },
+      {
+        "title": "L’origine incertaine de trois mots",
+        "paragraphs": [
+          "Une question reste ouverte, et elle porte sur les trois mots eux-mêmes. Albou ne les attribue à personne. La page 11 ne comporte ni note ni appel de note, et la définition y est imprimée sans référence ; la seule dette d’économiste inscrite à cet endroit est celle de Robbins, cité à la page suivante.",
+          "Or la même expression se lit dans une définition de l’économie politique couramment attribuée à Raymond Barre, dont le premier tome d’Economie politique, publié sous la direction d’André Marchal aux Presses Universitaires de France, paraît en 1955, sept ans avant l’article. Cette attribution circule dans des documents d’enseignement et des ouvrages de compilation, dont aucun ne donne de page chez Barre, et elle n’est pas unanime : des recueils de citations portent la même formule au crédit de François Perroux. Rien de tout cela ne tranche, ni dans un sens ni dans l’autre.",
+          "Ce qui est acquis est plus étroit, et sans doute plus intéressant. Dans les revues françaises de sciences humaines aujourd’hui numérisées, cette expression ne se rencontre guère qu’à la suite d’Albou : ses propres articles, et des comptes rendus d’ouvrages qui reprennent sa définition. Le geste qui lui revient n’est donc pas d’avoir forgé une formule, c’est de l’avoir déplacée : prise à l’économie, elle sert chez lui à délimiter l’objet d’une psychologie."
+        ]
+      }
+    ],
+    "limits": [
+      "Le premier tome de l’Economie politique de Raymond Barre, paru aux Presses Universitaires de France en 1955 dans la collection Thémis, est l’ouvrage qui déciderait de l’origine de l’expression. En quels termes il définit l’économie politique, et si ces mots y figurent tels quels, ce volume le tient, et il faudra l’ouvrir : les documents qui la lui attribuent aujourd’hui n’en donnent jamais la page. La piste concurrente, qui porte la même formule au crédit de François Perroux en la rapportant à un traité de sociologie, appelle la même vérification.",
+      "Le jugement porté page 7 sur La Psychologie Economique de Pierre-Louis Reynaud, Marcel Rivière, 1954, n’a ici qu’une voix, celle d’Albou. Ce que cet ouvrage dit de la discipline, et s’il la définit quelque part, ses propres pages sont le seul endroit où le lire.",
+      "Comment l’article de 1962 a été reçu, discuté ou contesté, les sources disponibles ne permettent pas de l’établir : rien n’en est rapporté ici qui vienne d’un autre auteur que lui. Et la définition est peut-être un peu plus ancienne que l’article : en 1982, Albou la fait aussi remonter à un rapport remis la même année 1962 au Commissariat Général du Plan d’équipement et de la Productivité. Pour dater la formule au plus juste, c’est ce rapport qu’il faudra lire."
+    ]
+  },
+  {
     "conceptId": "amplification-de-la-regulation",
     "lead": [
       "Un bouton de volume ne fabrique pas de son, et la pédale d’accélérateur ne fabrique pas la puissance qui pousse la voiture. Dans les deux cas, un geste minuscule commande un effet sans commune mesure avec lui : l’énergie est déjà là, dans le secteur ou dans le réservoir, et le geste se contente de la libérer. W. Ross Ashby part de cette évidence pour la retourner en remarque : un amplificateur n’agrandit presque jamais ce qu’on lui donne, il lui ajoute quelque chose qui vient d’ailleurs. L’exception qu’il cite, c’est la lentille du projectionniste de cinéma, qui grossit vraiment l’image qu’elle reçoit.",
@@ -1302,6 +1358,59 @@ export const generatedDeepenings: Deepening[] = [
       "Le grief qui ouvre l’article est emprunté à Gabriel Veraldi : « l’emprunt abusif de certains concepts à d’autres disciplines, mais surtout leur utilisation dénaturée ». Il est ici tel que Paquette le rapporte. Ce que Veraldi visait au juste, et ce qu’il proposait à la place, se lit dans son propre article de 1969, « Communication : une science et non une idéologie », paru dans la même revue.",
       "La définition dont Paquette part, il l’attribue à Norbert Wiener, et aucune date n’est reprise ici pour l’entrée du mot feedback dans le vocabulaire scientifique : l’article en avance une dans son texte et sa note de bas de page en cite une autre, sous un titre d’ouvrage inexact. Le livre de Wiener porte la définition, la date et le titre : c’est lui qu’il faudra ouvrir.",
       "Quant à ce que les sciences de la communication ont fait de cette terminologie, si elles l’ont suivie, discutée ou laissée de côté, cet article seul ne peut pas le dire. La réponse est dans les revues du domaine, dans les années qui l’ont suivi."
+    ]
+  },
+  {
+    "conceptId": "critique-de-l-homo-oeconomicus",
+    "lead": [
+      "Pour raisonner sur un marché, on commence d’ordinaire par simplifier. On suppose des gens qui savent ce qu’ils veulent, qui comptent, et qui ne cherchent que leur avantage. Personne ne prétend que quiconque soit ainsi : c’est une figure d’étude, du même genre que le plan sans frottement du physicien. L’amitié, la crainte du qu’en-dira-t-on, l’attachement à un métier ou à une croyance, on les met de côté, quitte à les remettre ensuite.",
+      "L’opération est légitime à une condition, qu’on discute rarement : il faut que ce qu’on retire soit séparable de ce qu’on garde. Un plan débarrassé du frottement reste un plan. Un homme débarrassé des autres reste-t-il un homme ? En 1902, chez l’éditeur Félix Alcan, un professeur au Collège de France ouvre son livre d’économie par un chapitre d’histoire des doctrines, et c’est là qu’il pose son objection. Elle ne porte pas sur ce que la figure laisse dehors : elle porte sur ce qu’elle prétend garder dedans."
+    ],
+    "sections": [
+      {
+        "title": "Incomplet, ou impossible",
+        "paragraphs": [
+          "La phrase court sur deux pages, du bas de la page 114 au haut de la page 115, et elle tient en une seule respiration : « Cet homo æconomicus, qui poursuivrait exclusivement et méthodiquement son intérêt égoïste, abstraction faite de tout sentiment, de toute foi, de tout parti pris, n’est pas seulement un être incomplet, il implique contradiction. » Deux reproches y sont faits, et le second n’est pas de la même espèce que le premier. Un être incomplet est un portrait auquel il manque des traits : on peut travailler avec, à condition de savoir ce qu’on a laissé de côté. Un être qui implique contradiction est un portrait dont les traits se chassent les uns les autres.",
+          "La raison tient en une ligne, page 114. Vouloir isoler l’intérêt individuel, écrit Tarde, « c’est oublier que la conscience du moi ne se précise et ne s’accentue, ne se réalise à vrai dire, que par la conscience d’autrui ». Les trois verbes montent en intensité, et c’est le dernier qui emporte l’affaire : autrui ne rend pas seulement le moi plus net, il le rend réel. Le sentiment de soi dont l’homme économique est censé tirer son calcul est fabriqué par la relation même qu’on a retirée pour le construire. D’où la conclusion, immédiate chez Tarde : « la prétention d’isoler le premier est chimérique ».",
+          "L’objection ne vient pas du dehors de l’économie. Au bas de la page 114, une note appelle en renfort l’économiste américain Henry Charles Carey : « L’économie politique, dit Carey, ayant créé à son usage un être auquel elle a donné le nom d’homme… » L’appui est net, mais il reste un appui : c’est Tarde qui énonce à la première personne la thèse de la contradiction, et Carey qui lui prête une formule."
+        ]
+      },
+      {
+        "title": "Si l’homme se refroidissait avec le temps",
+        "paragraphs": [
+          "Une échappatoire s’offre ici, et elle a beaucoup servi : l’homme du calcul pur n’existe pas encore, soit, mais il vient. Les sociétés modernes multiplieraient les comptes, les contrats, les prévisions ; l’abstraction ne décrirait pas le présent, elle anticiperait une humanité en train de se refroidir. Ainsi comprise, la figure ne serait pas fausse, seulement en avance sur son objet.",
+          "Tarde ferme cette porte page 115. Il ne voit nulle trace d’un refroidissement graduel de l’homme, et il tient que « la passion et la raison, d’âge en âge, progressent ensemble ». Il faut mesurer ce que cette thèse coûte à l’abstraction : si le calcul et la croyance croissent du même pas, aucun progrès de la rationalité ne viendra jamais rendre vrai le personnage. Ce qui se gagne en comptabilité ne se prend pas sur la ferveur."
+        ]
+      },
+      {
+        "title": "Le cortège invisible du vendeur et de l’acheteur",
+        "paragraphs": [
+          "Un second retrait est reproché à la même figure, page 116, et il s’observe plus facilement que le premier. L’homme économique n’est pas seulement seul avec son intérêt, il est détaché de tout groupe : sans corporation, sans secte, sans parti, sans patrie. Or personne n’entre ainsi sur un marché.",
+          "Tarde donne l’image qui manquait : le vendeur et l’acheteur sont « escortés chacun d’un cortège invisible d’associés, d’amis, de coreligionnaires ». Ces absents ne restent pas au vestiaire. Leur pensée impose le prix, et elle l’impose, écrit-il, le plus souvent au détriment de l’intérêt strictement individuel de celui qui traite. Le coup porte à l’endroit sensible : ce n’est pas dans les marges sentimentales de la vie économique que l’abstraction manque son objet, c’est sur le prix, c’est-à-dire sur ce qu’elle avait été construite pour expliquer.",
+          "Un fait vient à l’appui, page 117 : les grèves sympathiques, ces arrêts de travail faits par des ouvriers qui n’y ont aucun intérêt et qui en souffrent, dont Tarde remarque qu’elles ont été inventées « dans le pays le plus utilitaire ». L’exemple vaut par sa provenance autant que par son contenu : la solidarité coûteuse ne surgit pas là où l’on calcule le moins, elle surgit là où l’on est réputé calculer le mieux."
+        ]
+      },
+      {
+        "title": "Une abstraction née au dix-huitième siècle",
+        "paragraphs": [
+          "Ces pages appartiennent à un chapitre intitulé « Coup d’œil historique », qui court de la page 107 à la page 142. Le lieu compte. Tarde n’attaque pas l’homme économique en passant : il le date. Aux pages 117 et 118, il rapproche la psychologie du plaisir et de la peine, celle du dix-huitième siècle, de la date de naissance de l’économie politique classique. Une économie vient au monde avec une psychologie, et elle en hérite les partis pris.",
+          "La conséquence est claire, et elle commande le livre entier : si la psychologie de départ change, l’économie bâtie dessus est à refaire. L’objection n’est d’ailleurs pas neuve en 1902. À la fin du même chapitre, page 142, Tarde présente ses théories comme « le développement de germes posés en substance » vingt ans plus tôt, dans deux livraisons de la Revue philosophique de septembre et octobre 1881, sous le titre « la Psychologie en économie politique ».",
+          "Un détail d’impression garde la trace de cet âge. Chez Alcan, le mot se compose en italique avec la ligature a-e, homo æconomicus, quand l’article qui le commentera en 1982 écrit œconomicus. La graphie a bougé ; ce que Tarde vise sous ce nom, un être que l’économie politique s’est fabriqué à son usage, n’a pas changé."
+        ]
+      },
+      {
+        "title": "Ce que Jean Milet en retient en 1982",
+        "paragraphs": [
+          "Quatre-vingts ans plus tard, dans le Bulletin de psychologie, Jean Milet reprend la Psychologie économique et en dégage quatre thèses majeures. La première, page 909, est « une critique sévère des notions reçues alors en matière d’économie » : les pages sur l’homme économique ne sont donc pas, pour ce lecteur, une humeur logée dans un chapitre historique, mais l’un des appuis de l’ouvrage. Sa page 910 le redit dans le vocabulaire de la machine : « Jusqu’ici tous les économistes ont pris en considération dans leurs théories les réactions d’une sorte d’homo œconomicus, qui se comporterait comme une mécanique, comme un automate… »",
+          "L’article s’intitule « Gabriel Tarde (1843-1904) : Le créateur de la psychologie économique », et ce titre promet plus que son texte ne soutient. Milet écarte lui-même la lecture large, page 909 : « l’idée de fonder l’économie sur la psychologie, et non plus sur les facteurs matériels, était dans l’air à cette époque ». Il nomme Schmoller, Wagner et Menger, chefs d’écoles qui « arborent le titre de psychologie économique » avant Tarde, puis Bagehot, Royce, Baldwin, et plus tard Giddings. Ce qu’il maintient tient dans une seule phrase : Tarde « a été le premier à échafauder une véritable théorie économique, complète et conséquente, s’appuyant intégralement sur les analyses de la psychologie sociale ». Sa conclusion, page 913, en fait « un initiateur ».",
+          "Il faut savoir en outre que Milet plaide. Il écrit en 1982 dans la revue qui servait alors d’organe à la psychologie économique française, il renvoie trois fois, en notes des pages 908, 911 et 912, à son propre ouvrage de 1970 sur Tarde, et l’attribution qu’il défend est disputée à l’intérieur même de cette lignée. Lues comme une revendication de priorité plutôt que comme un inventaire, ces pages gardent tout leur prix : elles disent où la critique de l’homme économique se range dans l’œuvre, et elles ne font pas de Tarde le fondateur d’une discipline."
+        ]
+      }
+    ],
+    "limits": [
+      "Le premier état de l’argument est ailleurs : dans deux livraisons de la Revue philosophique, septembre et octobre 1881, sous le titre « la Psychologie en économie politique », que Tarde désigne lui-même page 142. Sous quelle forme l’objection s’y présentait, ces pages seules le disent, et il faudra les lire. Quant à Carey, dont une seule phrase passe en note, son argument entier est dans ses livres.",
+      "L’ouvrage ne s’arrête pas à ce chapitre historique. Les chapitres sur les besoins, les travaux, la monnaie et le capital, pages 202 à 383, sont l’endroit où l’objection devient ou non un instrument de travail. Et le tome second annonce une théorie des prix en termes psychologiques, au livre « L’opposition économique » : si l’homo æconomicus y reparaît, et sous quel visage, c’est ce volume qui le dira.",
+      "Reste la formule latine elle-même : qui l’a forgée, et par quels traités elle est passée dans l’usage des économistes, les sources disponibles ne l’établissent pas. Et la démonstration de Jean Milet repose sur son propre livre de 1970, Gabriel Tarde et la philosophie de l’Histoire, chez Vrin : c’est là que sa lecture est déployée, et là qu’il faudra aller pour peser sa revendication."
     ]
   },
   {
@@ -5137,6 +5246,60 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "substitution-des-problemes-aux-secteurs",
+    "lead": [
+      "Imaginons une question toute simple : pourquoi des gens continuent-ils d’acheter alors qu’ils disent eux-mêmes que les prix les inquiètent ? Elle intéresse plusieurs métiers à la fois. L’économiste regardera les revenus et les prix, le psychologue les motifs et les craintes, le sociologue les milieux et les habitudes. Chacun travaillera sérieusement, chacun rendra un texte solide, et la question restera entre eux trois sans que personne l’ait prise en charge tout entière.",
+      "On peut alors se dire qu’il suffit de mettre les trois textes bout à bout. On peut aussi reconnaître que le partage lui-même est en cause : les frontières entre spécialités ne se trouvent pas dans les choses, elles viennent de l’histoire des universités, des revues et des carrières. En 1962, dans un article de quatre-vingt-une pages où il entreprend de raconter comment une discipline nouvelle est venue au monde, Paul Albou choisit la seconde réponse, et il lui donne un titre."
+    ],
+    "sections": [
+      {
+        "title": "Deux façons de découper la connaissance",
+        "paragraphs": [
+          "Page 10, dans la colonne de droite, un intertitre en capitales annonce la substitution des « problèmes » aux « secteurs ». La phrase qui suit dit tout : « Au lieu de découper des secteurs clos, spécialisés, dans le domaine de la Connaissance, les Sciences Humaines conduisent à définir des « problèmes » qu’il faudra également relier entre eux. »",
+          "Un secteur, ici, c’est une part du savoir qu’une spécialité s’attribue et qu’elle ferme : elle y définit ses objets, elle y impose ses méthodes, et ce qui déborde appartient au voisin. Un problème part de l’autre bout, d’une chose qu’on veut comprendre et qui ne demande pas leur avis aux frontières existantes. Albou ne concède pas grand-chose au découpage en vigueur : quelques lignes plus haut, il tient ces découpes pour arbitraires, « les secteurs découpés dans cette réalité par les diverses spécialités étant, on le voit, largement arbitraires ».",
+          "La seconde moitié de la phrase compte autant que la première. Les problèmes, il faudra « également relier entre eux ». Substituer des problèmes à des secteurs n’est donc pas émietter le savoir en questions séparées : c’est changer l’unité qu’il faut relier. Deux secteurs juxtaposés restent clos, chacun gardant sa définition de ce qu’il y a à observer ; deux problèmes, eux, sont posés pour communiquer."
+        ]
+      },
+      {
+        "title": "L’homme total, et ce qu’on ne recolle pas",
+        "paragraphs": [
+          "Albou ne présente pas cette idée comme une trouvaille personnelle. Il l’adosse à Marcel Mauss, qu’il cite deux fois dans la même page. Une première fois pour la règle générale : « Dans une Société, rien ne se comprend si ce n’est par rapport au tout… ». Une seconde fois pour ce que cette règle impose aux spécialités, puisque ce qui est en jeu « dépasse toujours normalement les sphères même étroitement fixées d’une spécialité ». Il nomme encore une règle qu’il appelle « la totalité solidaire » et qu’il attribue à Mauss et à Malinowski.",
+          "De là vient l’insuffisance de l’addition, et Albou l’écrit dans la même page : « Toutefois, la juxtaposition de données hétérogènes ne suffit pas à reconstituer cet homme total ». La raison tient en peu de mots. Quand on additionne des rapports, chacun a déjà taillé son objet à sa manière, et la somme hérite des tailles. Trois descriptions d’une même conduite, faites avec trois définitions différentes de ce qu’il fallait observer, ne se recollent pas : il n’y a pas de morceau commun par où les rapprocher.",
+          "La construction du passage se lit ainsi de bout en bout : la règle vient de l’ethnologie, le programme d’une science de l’homme, et ce qu’Albou revendique en propre est la conséquence qu’il en tire pour sa propre discipline."
+        ]
+      },
+      {
+        "title": "Ce que la substitution fait naître",
+        "paragraphs": [
+          "Le sommaire imprimé en tête de l’article donne l’ordre des idées. Le paragraphe où figure ce passage s’intitule « Vers une approche unitaire » et se déroule en cinq moments : les tentatives de rapprochement ; « Le retour au syncrétisme : syncrétisme du fait, pluralisme des méthodes » ; l’approche multidisciplinaire ; la substitution des problèmes aux secteurs ; et, pour finir, la naissance de la psychologie économique. Les trois premiers moments nomment des rapprochements entre disciplines, et c’est le passage de la page 10 qui les déclare insuffisants.",
+          "On peut lire la place de ce passage dans la série comme sa fonction même. Il ne vient pas décrire une manière de travailler déjà pratiquée : il vient lever l’objection qui interdirait à une discipline nouvelle d’exister. Si les secteurs étaient dans les choses, une science installée entre l’économie et la psychologie serait une intruse, un mélange sans domaine à soi. S’ils sont arbitraires, et si l’unité de travail est le problème, alors une discipline qui se définit par un problème est en règle.",
+          "Le cinquième moment tire la conclusion, et Albou l’écrit en toutes lettres : « quand on s’aperçoit que les phénomènes économiques ne peuvent être saisis que dans des comportements, alors naît la Psychologie Economique ». Le mot compte : en 1962, c’est de comportement qu’il parle, et la discipline naît pour lui de ce que les problèmes s’intègrent au niveau du comportement économique. Une science ne se fonde donc pas ici en réclamant un territoire vacant, mais en désignant le niveau où les questions éparses se rejoignent."
+        ]
+      },
+      {
+        "title": "Le chapitre où le mot secteur revient",
+        "paragraphs": [
+          "Une chose surprend qui lit l’article en entier. Le programme annoncé page 10 n’est pas appliqué à la lettre dans les pages qui suivent. Le chapitre IV, Domaine de la psychologie économique, procède précisément par domaines : psychologie du consommateur, psychologie du producteur, psychologie de la vente, psychiatrie économique. Le mot secteur y revient d’ailleurs à son compte, ainsi pages 13 et 15, où il parle des principaux secteurs de la recherche psycho-économique.",
+          "Le reproche qu’il adresse page 12 au programme de Katona et de Lauterbach éclaire ce retour : il leur fait grief de se présenter de façon désordonnée et de placer sur le même plan des ensembles de problèmes et des questions de détail, puis propose de regrouper plus logiquement les différents domaines. Ce qu’il demande là n’est pas la fin des regroupements, c’est un regroupement qui se tienne.",
+          "La substitution est donc une thèse d’épistémologie, soutenue et intitulée dans le texte, et non une recette que l’article appliquerait sous nos yeux. Albou ne résout pas cette tension, et mieux vaut la garder en tête que la lisser : un exposé a besoin d’un ordre, et l’ordre le plus commode reste celui des domaines, même chez celui qui vient d’en contester la valeur."
+        ]
+      },
+      {
+        "title": "Une histoire de la discipline, et qui l’écrit",
+        "paragraphs": [
+          "Ce passage n’a pas qu’un usage théorique : il sert aussi d’arme. C’est de là que part une attaque contre Pierre-Louis Reynaud. L’histoire de la psychologie économique, écrit Albou, ne doit pas se faire du point de vue de l’économiste, contrairement aux efforts de P.L. Reynaud, mais en fonction de son évolution propre, dans le cadre des sciences de l’homme.",
+          "L’attaque se complète page 7. Albou y cite en note l’ouvrage de Reynaud, La Psychologie Economique, paru chez Marcel Rivière en 1954, le ramène à un essai historique et bibliographique, et conclut : « Enfin, cet ouvrage ne définit nulle part la discipline dont il traite. » Il reconnaît ainsi l’antériorité de publication de Reynaud, et lui refuse ce qui, à ses yeux, fait une discipline : une définition.",
+          "L’enchaînement devient alors visible. Substituer les problèmes aux secteurs, c’est retirer à l’économie le droit de dire où commence et où finit une science des comportements économiques ; c’est du même geste retirer à un économiste le droit d’en écrire l’histoire. La thèse a une portée large et un usage très précis, à quelques lignes de distance l’un de l’autre."
+        ]
+      }
+    ],
+    "limits": [
+      "La règle sur laquelle tout repose n’est pas d’Albou. La totalité solidaire, il l’attribue à Mauss et à Malinowski, et il ne retient de Mauss que deux fragments de phrase. En quels termes ces deux ethnologues l’ont posée, sur quels matériaux et avec quelles réserves, ce sont leurs propres textes qui le tiennent, et ils restent à ouvrir.",
+      "Dans la querelle qui l’oppose à Pierre-Louis Reynaud, une seule voix se fait entendre ici. Ce que Reynaud dit de la psychologie économique, et s’il la laisse vraiment sans définition, son ouvrage de 1954 chez Marcel Rivière le dira mieux que son adversaire : c’est ce livre qu’il faut lire pour trancher.",
+      "De ce que ce texte de 1962 est devenu, les sources disponibles ne disent rien : ni qui l’a lu, ni qui a repris cette substitution, ni ce qu’elle est devenue dans l’enseignement de la discipline. Albou lui-même en a repris le plan dans un ouvrage, La psychologie économique, publié aux Presses Universitaires de France, dont le chapitre II porte le même intitulé, « Les étapes de la psychologie économique ». Ce qu’il fait alors du passage de la page 10, ce livre le garde, et il faudra l’ouvrir."
+    ]
+  },
+  {
     "conceptId": "systeme-concret-systeme-construit",
     "lead": [
       "Deux personnes parlent du même hôpital. La première y voit un système de flux : des patients entrent, des lits se libèrent, des files se forment. La seconde y voit un système de métiers : des soignants, des cadres, des règles négociées, des rapports de force. Elles ne se contredisent pas et elles ne parlent pas de la même chose. Chacune a découpé, dans un même bâtiment, un objet différent.",
@@ -5537,6 +5700,70 @@ export const generatedDeepenings: Deepening[] = [
       "Le 0,27 % est introuvable sur ces deux pages, ce qui ne dit rien des cinq cents autres. Que Shewhart ait ailleurs adossé ses limites à la loi normale ne peut ni s’affirmer ni s’exclure : c’est le reste du volume qui répondra.",
       "Le choix de t = 3 est plus ancien que le livre : il apparaît dans un mémorandum interne des Bell Telephone Laboratories daté du 16 mai 1924. En quels termes ce texte pose déjà la valeur, c’est lui qu’il faudra lire pour le savoir.",
       "Les phrases de Shewhart se citent en anglais : il n’existe pas d’édition française identifiée, et le français donné ici sert à faire comprendre, non à faire référence. Les folios sont ceux de la composition Van Nostrand ; qui travaille sur la réimpression publiée en 1980 par l’American Society for Quality Control vérifiera les siens en l’ouvrant."
+    ]
+  },
+  {
+    "conceptId": "valeur-comme-fait-psychologique",
+    "lead": [
+      "Une action cotée en Bourse perd un tiers de son prix dans la matinée. Rien n’a bougé dans l’usine qu’elle représente : les mêmes machines, les mêmes stocks, les mêmes ouvriers à leur poste. Ce qui a changé tient tout entier dans ce que quelques milliers de personnes croient désormais de cette usine, et dans ce qu’elles en attendent. Où se trouvait donc, la veille au soir, le tiers de prix qui a disparu ?",
+      "L’objection vient aussitôt : si la valeur loge dans les têtes, l’économie perd ce qui faisait sa force, la possibilité de compter. Gabriel Tarde, dans le cours qu’il professe au Collège de France au tournant du siècle, répond exactement l’inverse. Ce qui se passe dans les têtes se compte, à condition de savoir quoi compter : non plus des choses, mais des personnes, ce qu’elles pèsent les unes par rapport aux autres, et la force avec laquelle elles tiennent à ce qu’elles croient."
+    ],
+    "sections": [
+      {
+        "title": "Une qualité que nous attribuons aux choses",
+        "paragraphs": [
+          "Le premier geste consiste à retirer la valeur de l’objet. De la Valeur, Tarde écrit page 63 : « Elle est une qualité que nous attribuons aux choses, comme la couleur, mais qui, en réalité, comme la couleur, n’existe qu’en nous, d’une vie toute subjective ».",
+          "La comparaison avec la couleur fait deux choses à la fois, et la seconde importe autant que la première. Elle déloge la valeur de l’objet : rien dans le bois d’une table ne porte son prix, comme rien dans ce bois ne porte sa couleur. Mais elle interdit d’en conclure que la valeur soit une illusion. Personne ne tient la couleur pour un caprice sans règle : deux personnes s’accordent d’ordinaire sur elle, on sait la nommer, la comparer, la retrouver. Ce qui n’existe qu’en nous n’en est pas moins constant, partagé, et observable.",
+          "Le déplacement change la question qu’on pose devant un prix qui bouge. Si la valeur est logée dans la chose au même titre que son poids, une variation sans transformation de la chose devient une anomalie qu’il faut expliquer par autre chose. Si la valeur est ce que nous attribuons, la variation n’est plus une anomalie : c’est le phénomène lui-même, et c’est du côté de ceux qui attribuent qu’il faut aller voir."
+        ]
+      },
+      {
+        "title": "La croyance et le désir",
+        "paragraphs": [
+          "Retirée des choses, la valeur doit bien se loger quelque part. Tarde la ramène à deux états, et à deux seulement : croire et désirer. Ce sont, aux pages 63 et 64, les deux quantités élémentaires de l’âme, celles dont tout le reste se compose.",
+          "La valeur s’y divise en trois espèces : la valeur-vérité, la valeur-utilité, la valeur-beauté. Imaginons une proposition scientifique, un sac de blé et un tableau : les trois valent, et pas de la même manière, mais chacun tire ce qu’il vaut de l’un de ces deux états, ou des deux ensemble. Ce qu’une vérité vaut tient à ce qu’on y croit ; ce qu’un bien utile vaut tient à ce qu’on le désire.",
+          "On peut lire dans cet élargissement autre chose qu’un raffinement de classement. Faire entrer la vérité et la beauté dans une théorie de la valeur, c’est dire que le marché n’est pas le seul lieu où quelque chose vaut, et que ce qui s’y joue relève des mêmes ressorts que ce qui se joue dans une académie ou devant un tableau."
+        ]
+      },
+      {
+        "title": "Le nombre, le poids social, l’intensité",
+        "paragraphs": [
+          "Reste à compter, et Tarde dit page 64 avec quoi. Pour la valeur d’une vérité : « le plus ou moins grand nombre, le plus ou moins grand poids social […] des personnes qui s’accordent à l’admettre, et le plus ou moins d’intensité de leur croyance en elle ». Pour celle d’un objet utile, la même série revient, terme pour terme : « le plus ou moins grand nombre de gens qui le désirent […] le plus ou moins grand poids social […] et le plus ou moins d’intensité du désir qu’elles en éprouvent ».",
+          "Trois mesures, donc, et elles ne se confondent pas. Le nombre se compte par têtes. Le poids social reconnaît que les têtes ne pèsent pas toutes le même poids : la croyance de qui est écouté entraîne d’autres croyances, celle de qui ne l’est pas reste où elle est. L’intensité sépare l’assentiment poli de la conviction qui fait agir.",
+          "Cela implique qu’une même hausse puisse recouvrir trois histoires distinctes. Plus de gens y croient ; ou les mêmes y croient, mais ce sont désormais des gens qu’on écoute ; ou personne n’a changé d’avis, sauf que chacun tient au sien beaucoup plus fermement. Le prix affiché confond les trois, et la psychologie économique commence à l’endroit où l’on demande laquelle des trois s’est produite."
+        ]
+      },
+      {
+        "title": "La Bourse et le baromètre",
+        "paragraphs": [
+          "Le chapitre où Tarde retrace l’histoire de sa discipline porte un reproche précis aux fondateurs de l’économie politique : avoir traité le crédit, le service et le travail « comme des objets, des objets réels et matériels », des grandeurs qui tomberaient sous la loi du nombre et de la mesure comme un sac de grain tombe sous la balance.",
+          "La conséquence vient page 109, et il la donne par un exemple : « les hausses et les baisses des valeurs de Bourse, à la différence des oscillations du baromètre, ne sauraient s’expliquer le moins du monde sans la considération de leurs causes psychologiques ». Il les nomme dans la foulée : « accès d’espérance ou de découragement du public », « propagation d’une bonne ou d’une mauvaise nouvelle à sensation dans l’esprit des spéculateurs ».",
+          "Le baromètre n’est pas là par hasard. Son aiguille monte et descend elle aussi, et l’on peut en tenir la courbe sans rien savoir de personne : ce qui la fait bouger est dans l’air, indifférent à ce qu’on en pense. La courbe de Bourse a la même allure et n’a pas la même nature. Prendre l’une pour l’autre, c’est se condamner à décrire des mouvements dont on a par principe écarté les causes.",
+          "D’où le programme, énoncé page 110 en cinq mots : « faire du verso le recto ». Ce que l’économie politique reléguait au dos de ses tableaux, les espoirs, les découragements, les rumeurs, passe au recto et devient l’objet principal ; les grandeurs qui occupaient le recto deviennent les signes de ces états. La monnaie elle-même, précise Tarde dans cette phrase de la page 109, n’est que le signe de la valeur."
+        ]
+      },
+      {
+        "title": "Ce que Tarde accorde aux écoles autrichiennes",
+        "paragraphs": [
+          "Une théorie qui fait de la valeur une affaire de désir n’est plus isolée en 1902, et Tarde ne feint pas de l’ignorer. Page 142, il reconnaît d’éventuelles coïncidences entre ses vues et celles des écoles allemandes et autrichiennes.",
+          "La démarcation qu’il maintient tient en un mot. Ces écoles, écrit-il, font jouer au désir un rôle considérable, mais non à la croyance. Or c’est la croyance qui porte chez lui la moitié de l’édifice : sans elle, pas de valeur-vérité, et, pourrait-on ajouter, pas de crédit, mot qui dit de lui-même qu’il s’agit d’abord de croire quelqu’un.",
+          "La distinction est de Tarde et décrit ses voisins tels qu’il les lit. Elle indique surtout où il situe l’originalité de sa propre théorie : non dans le fait de partir des états d’esprit, que d’autres faisaient déjà, mais dans le fait d’en compter deux là où l’on n’en comptait qu’un."
+        ]
+      },
+      {
+        "title": "Ce que Jean Milet revendique, et jusqu’où",
+        "paragraphs": [
+          "En 1982, dans le Bulletin de psychologie, Jean Milet consacre à Tarde un article dont le titre annonce beaucoup : « Le créateur de la psychologie économique ». Il y dégage de la Psychologie économique quatre thèses majeures, dont « une nouvelle théorie de la valeur », et expose page 910 les expressions de la Valeur.",
+          "L’article dit pourtant autre chose que son titre, et c’est Milet qui le dit. Page 909, il écrit que « l’idée de fonder l’économie sur la psychologie, et non plus sur les facteurs matériels, était dans l’air à cette époque » ; il nomme Schmoller, Wagner et Menger, chefs d’écoles qui « arborent le titre de psychologie économique » avant Tarde, puis Bagehot, Royce, Baldwin, et Giddings plus tard. Ce qu’il revendique tient dans une phrase adversative : Tarde « a été le premier à échafauder une véritable théorie économique, complète et conséquente, s’appuyant intégralement sur les analyses de la psychologie sociale ». Sa conclusion, page 913, ne dit plus créateur, mais « un initiateur ».",
+          "Le recul n’est pas une coquetterie de modestie. Milet est un spécialiste de Tarde qui plaide pour son auteur, dans la revue qui servait alors d’organe à la psychologie économique française, et son argumentation s’appuie trois fois sur son propre ouvrage de 1970. Il est partie dans la querelle de paternité plutôt qu’arbitre, et c’est lui-même qui en restreint l’enjeu : ce qui se dispute n’est pas l’idée d’asseoir l’économie sur la psychologie, mais le fait d’en avoir tiré une théorie entière."
+        ]
+      }
+    ],
+    "limits": [
+      "Tarde renvoie lui-même, page 142, aux germes de sa doctrine : deux livraisons de la Revue philosophique, en septembre et octobre 1881, sous le titre « la Psychologie en économie politique ». En quels termes la thèse s’y énonçait pour la première fois, et ce qui avait changé vingt ans plus tard, ce sont ces pages qui le tiennent, et il faudra les lire.",
+      "La démonstration de Jean Milet s’appuie, aux notes des pages 908, 911 et 912, sur son Gabriel Tarde et la philosophie de l’Histoire, paru chez Vrin en 1970. L’article de 1982 en donne les conclusions ; le livre en porte l’argument, et il reste à ouvrir.",
+      "Un point demeure ouvert : sur l’imprimé de 1902, aux pages 63 et 64, la valeur se divise en trois espèces, quand Milet annonce page 910 « les quatre expressions de la Valeur » et n’en nomme que trois, les mêmes. Ces deux passages, relus l’un contre l’autre, diront lequel des deux comptes est le bon.",
+      "Enfin, ce que Menger, Schmoller et Wagner accordent au désir et refusent à la croyance n’est connu ici que par la lecture qu’en fait Tarde page 142 : leurs textes disent le reste. Quant à cette théorie une fois appliquée aux besoins, au travail, à la monnaie et au capital, elle occupe la suite du premier tome et le second tout entier."
     ]
   },
   {

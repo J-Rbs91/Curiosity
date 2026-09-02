@@ -85,6 +85,38 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "amenagement-onereux-du-monde-exterieur",
+    "slug": "amenagement-onereux-du-monde-exterieur",
+    "title": "L'aménagement onéreux, objet de la discipline",
+    "authorLabel": "Paul Albou",
+    "hookQuestion": "Aménager le monde extérieur est onéreux : quels problèmes humains en naissent ?",
+    "shortExplanation": "Objet de la psychologie économique : les problèmes humains nés de l'interaction des individus et des groupes aménageant, sous rareté, choix et coût, le monde extérieur.",
+    "authors": [],
+    "themes": [
+      "psychologie-economique"
+    ],
+    "themeLabel": "Psychologie économique",
+    "attributionNote": "Article signé du seul Paul Albou. Il donne la définition pour sienne, page 11, « d'où la définition que nous proposons », l'annonce page 10 comme « assez généralement acceptée par les chercheurs français », et la revendique encore vingt ans plus tard comme « notre définition de 1962 ». Le syntagme « aménagement onéreux du monde extérieur » n'est pas pour autant établi comme étant de lui : Albou ne crédite personne, mais la même formule se lit dans une définition de l'économie politique couramment attribuée à Raymond Barre, dont le manuel précède l'article de sept ans. Cette attribution n'a pas pu être vérifiée sur le texte de Barre, qui n'a pas été ouvert, et elle n'est pas unanime, des recueils donnant la formule à François Perroux. Ce qui revient à Albou de façon établie est le transfert : la définition de la psychologie économique bâtie sur cette formule est de lui.",
+    "quotation": {
+      "text": "La Psychologie économique porte sur les problèmes humains qui naissent à l’occasion de l’aménagement onéreux du monde extérieur.",
+      "reference": "Paul Albou, « Initiation à la psychologie économique », Bulletin de psychologie, tome XVI, n° 211, 1962, p. 1-81, chapitre III, Définitions, § 2, La conception française de la Psychologie Economique, premier caractère de la définition, p. 11, colonne de droite"
+    },
+    "sources": [
+      {
+        "label": "Paul Albou, « Initiation à la psychologie économique », Bulletin de psychologie, tome XVI, n° 211, 1962, p. 1-81.",
+        "kind": "primary",
+        "reference": "p. 11-12 · 10.3406/bupsy.1962.8918",
+        "url": "https://www.persee.fr/doc/bupsy_0007-4403_1962_num_16_211_8918"
+      },
+      {
+        "label": "Paul Albou, « Contribution à une définition de la psychologie économique », Bulletin de psychologie, tome XXXVI, n° 358, 1982, p. 195-205.",
+        "kind": "primary",
+        "reference": "p. 199, note 8 · 10.3406/bupsy.1982.12417",
+        "url": "https://www.persee.fr/doc/bupsy_0007-4403_1982_num_36_358_12417"
+      }
+    ]
+  },
+  {
     "id": "amplification-de-la-regulation",
     "slug": "amplification-de-la-regulation",
     "title": "L'amplification de la régulation",
@@ -840,6 +872,38 @@ export const generatedConcepts: Concept[] = [
         "kind": "primary",
         "reference": "p. 6-16 · 10.3406/colan.1987.984",
         "url": "https://www.persee.fr/doc/colan_0336-1500_1987_num_73_1_984"
+      }
+    ]
+  },
+  {
+    "id": "critique-de-l-homo-oeconomicus",
+    "slug": "critique-de-l-homo-oeconomicus",
+    "title": "Critique de l'homo æconomicus",
+    "authorLabel": "Gabriel Tarde",
+    "hookQuestion": "Un homme mû par son seul intérêt : est-ce seulement un être incomplet ?",
+    "shortExplanation": "Pour Tarde, l'homme abstrait des économistes, mû par le seul intérêt personnel, implique contradiction : la conscience du moi ne se réalise que par celle d'autrui.",
+    "authors": [],
+    "themes": [
+      "psychologie-economique"
+    ],
+    "themeLabel": "Psychologie économique",
+    "attributionNote": "Un seul nom sur la page de titre, relue sur l'image du feuillet : « PSYCHOLOGIE ÉCONOMIQUE PAR G. TARDE, de l'Institut, Professeur au Collège de France. TOME PREMIER. PARIS, FÉLIX ALCAN, ÉDITEUR. 1902. » L'argument est de Tarde, qui le donne comme le développement de germes posés, écrit-il en note page 142, « pour la première fois, dans la Revue philosophique, en septembre et octobre 1881 », sous le titre « la Psychologie en économie politique ». Il appuie sa critique d'une citation de l'économiste Henry Charles Carey, mise en note de la page 114, mais la thèse de la contradiction interne de l'homo æconomicus est la sienne.",
+    "quotation": {
+      "text": "Cet homo æconomicus, qui poursuivrait […] son intérêt égoïste […] n'est pas seulement un être incomplet, il implique contradiction.",
+      "reference": "Gabriel Tarde, Psychologie économique, Paris, Félix Alcan, 1902, tome premier, partie préliminaire, chapitre IV « Coup d'œil historique », t. I, p. 114-115"
+    },
+    "sources": [
+      {
+        "label": "Gabriel Tarde, Psychologie économique, Paris, Félix Alcan, 1902, tome premier, 383 p.",
+        "kind": "primary",
+        "reference": "t. I, p. 114-118",
+        "url": "https://archive.org/details/psychologiecono03tardgoog"
+      },
+      {
+        "label": "Jean Milet, « Gabriel Tarde (1843-1904) : Le créateur de la psychologie économique », Bulletin de psychologie, tome XXXV, n° 357, 1982, p. 907-913.",
+        "kind": "francophone-reception",
+        "reference": "p. 909-910 · 10.3406/bupsy.1982.12030",
+        "url": "https://www.persee.fr/doc/bupsy_0007-4403_1982_num_35_357_12030"
       }
     ]
   },
@@ -3272,6 +3336,32 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "substitution-des-problemes-aux-secteurs",
+    "slug": "substitution-des-problemes-aux-secteurs",
+    "title": "La substitution des problèmes aux secteurs",
+    "authorLabel": "Paul Albou",
+    "hookQuestion": "Faut-il découper la connaissance en secteurs clos, ou en problèmes à relier ?",
+    "shortExplanation": "Juxtaposer des données hétérogènes ne suffit pas : les secteurs des spécialités étant largement arbitraires, Albou veut leur substituer des problèmes à relier entre eux.",
+    "authors": [],
+    "themes": [
+      "psychologie-economique"
+    ],
+    "themeLabel": "Psychologie économique",
+    "attributionNote": "Signature relevée sur la page de titre de l'article, en capitales sous le titre : PAR PAUL ALBOU. Aucun coauteur. Albou expose la thèse en son nom propre, sous un intertitre imprimé en capitales page 10, mais il ne la présente pas comme une trouvaille personnelle : il l'adosse explicitement à Marcel Mauss, qu'il cite deux fois, et à la règle de la totalité solidaire qu'il attribue à Mauss et à Malinowski. Ce qu'il revendique en propre est la conséquence qu'il en tire, à savoir que la psychologie économique naît de cette substitution.",
+    "quotation": {
+      "text": "Au lieu de découper des secteurs clos […] les Sciences Humaines conduisent à définir des « problèmes » qu’il faudra également relier entre eux.",
+      "reference": "Paul Albou, « Initiation à la psychologie économique », Bulletin de psychologie, tome XVI, n° 211, 1962, p. 1-81, chapitre II, § 2, Vers une approche unitaire, second temps, intitulé La substitution des problèmes aux secteurs, p. 10, colonne de droite"
+    },
+    "sources": [
+      {
+        "label": "Paul Albou, « Initiation à la psychologie économique », Bulletin de psychologie, tome XVI, n° 211, 1962, p. 1-81.",
+        "kind": "primary",
+        "reference": "p. 1-81, citation p. 10 · 10.3406/bupsy.1962.8918",
+        "url": "https://www.persee.fr/doc/bupsy_0007-4403_1962_num_16_211_8918"
+      }
+    ]
+  },
+  {
     "id": "systeme-concret-systeme-construit",
     "slug": "systeme-concret-systeme-construit",
     "title": "Le système concret et le système construit",
@@ -3497,6 +3587,38 @@ export const generatedConcepts: Concept[] = [
         "label": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, Milwaukee, American Society for Quality Control, 1980 (réimpression).",
         "kind": "primary",
         "reference": "978-0-87389-076-2"
+      }
+    ]
+  },
+  {
+    "id": "valeur-comme-fait-psychologique",
+    "slug": "valeur-comme-fait-psychologique",
+    "title": "La valeur comme fait psychologique",
+    "authorLabel": "Gabriel Tarde",
+    "hookQuestion": "La valeur est-elle une qualité des choses, ou un fait de croyance et de désir ?",
+    "shortExplanation": "La valeur n'est rien qu'une combinaison de croyances et de désirs, quantité que mesurent le nombre de ceux qui croient ou désirent, leur poids social et leur intensité.",
+    "authors": [],
+    "themes": [
+      "psychologie-economique"
+    ],
+    "themeLabel": "Psychologie économique",
+    "attributionNote": "Un seul nom sur la page de titre, relue sur l'image du feuillet : G. Tarde, de l'Institut, professeur au Collège de France. Il écrit en tête de l'avant-propos que le livre est la substance de son cours du Collège de France de 1900-1901, et précise page 142 qu'il y développe des germes posés dans la Revue philosophique en septembre et octobre 1881, sous le titre « la Psychologie en économie politique ».",
+    "quotation": {
+      "text": "[…] la valeur […] n'est rien, absolument rien, si ce n'est une combinaison de choses toutes subjectives, de croyances et de désirs […]",
+      "reference": "Gabriel Tarde, Psychologie économique, Paris, Félix Alcan, 1902, tome premier, partie préliminaire, chapitre IV « Coup d'œil historique », t. I, p. 109"
+    },
+    "sources": [
+      {
+        "label": "Gabriel Tarde, Psychologie économique, Paris, Félix Alcan, 1902, tome premier, 383 p.",
+        "kind": "primary",
+        "reference": "t. I, p. 63-64, 108-110 et 142",
+        "url": "https://archive.org/details/psychologiecono03tardgoog"
+      },
+      {
+        "label": "Jean Milet, « Gabriel Tarde (1843-1904) : Le créateur de la psychologie économique », Bulletin de psychologie, tome XXXV, n° 357, 1982, p. 907-913.",
+        "kind": "francophone-reception",
+        "reference": "p. 909-910 · 10.3406/bupsy.1982.12030",
+        "url": "https://www.persee.fr/doc/bupsy_0007-4403_1982_num_35_357_12030"
       }
     ]
   },

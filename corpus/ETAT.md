@@ -1,4 +1,4 @@
-# État du corpus — 1er septembre 2026
+# État du corpus — 2 septembre 2026
 
 Écrit sur le disque parce qu'une session a déjà été coupée en cours de route : ce fichier
 existe pour qu'une reprise reparte des fichiers, et non de la mémoire de quelqu'un.
@@ -6,26 +6,32 @@ existe pour qu'une reprise reparte des fichiers, et non de la mémoire de quelqu
 Ce fichier dit ce que le corpus **est**. Ce qui lui **manque**, et par quel bout le prendre,
 est dans [`corpus/RESTE-A-FAIRE.md`](RESTE-A-FAIRE.md).
 
-`npm run corpus:validate` : **104 enregistrements, 100 validés, 0 erreur, 81 avertissements.**
-`npm run corpus:deepen` : **100 approfondissements pour 100 cartes validées**, 146 324 mots,
-1 463 en moyenne. Fin de sortie : **rien**. Il n'y a plus aucune carte validée sans
+`npm run corpus:validate` : **108 enregistrements, 104 validés, 0 erreur, 83 avertissements.**
+`npm run corpus:deepen` : **104 approfondissements pour 104 cartes validées**, 152 648 mots,
+1 468 en moyenne. Fin de sortie : **rien**. Il n'y a plus aucune carte validée sans
 approfondissement, et **les onze domaines sont entièrement servis**. L'écart entre ce qui est
-validé et ce qui est servi, ouvert le 23 août et remonté à trente-quatre cartes le 28, est refermé
-depuis le passage 09 de la routine nocturne, le 1er septembre.
+validé et ce qui est servi, ouvert le 23 août et remonté à trente-quatre cartes le 28, a été
+refermé au passage 09 le 1er septembre ; le passage 10 l'a rouvert de quatre cartes et refermé la
+même nuit, la phase 3 se terminant par les approfondissements des cartes qu'elle crée.
 `npm test` : **482 tests, 0 échec.** `npm run lint` et `npm run corpus:build` : sans erreur.
 
-**Un garde de la CI ne couvre qu'une moitié de ce qu'il a l'air de couvrir, et il faut le savoir.**
-Les workflows `ci.yml` et `pages.yml` lancent `npm run corpus:build` puis
-`git diff --exit-code src/content/generated/`. Or `corpus:build` n'écrit que
-`concepts.generated.ts` : `deepenings.generated.ts` n'est écrit que par `npm run corpus:deepen`,
-que la CI ne lance pas. **Une correction portée à un enregistrement de `corpus/deepenings/` sans
-reprojection passe donc la CI sans être vue.** C'est arrivé : `effet-de-cadrage` a vécu du 29 au
-31 août avec deux phrases divergentes entre son enregistrement maître et sa projection, corrigées
-au passage 08. Le remède tient en une ligne dans les deux workflows, il est au chantier E de
-[`RESTE-A-FAIRE.md`](RESTE-A-FAIRE.md), et **il n'a été posé par aucune des trois nuits de
-phase 2**, qui n'avaient pas mandat de toucher à la CI. Il revient à la phase 3, qui écrit des
-cartes et des approfondissements dans la même nuit et qui est donc celle que ce trou coûtera le
-plus cher.
+**Le garde de la CI couvre désormais les deux fichiers du répertoire projeté**, et c'est la
+correction du 2 septembre. Les workflows `ci.yml` et `pages.yml` lançaient `npm run corpus:build`
+puis `git diff --exit-code src/content/generated/`, ce qui avait l'air de couvrir tout le
+répertoire. Or `corpus:build` n'écrit que `concepts.generated.ts` : `deepenings.generated.ts` n'est
+écrit que par `npm run corpus:deepen`, que la CI ne lançait pas. **Une correction portée à un
+enregistrement de `corpus/deepenings/` sans reprojection passait donc la CI sans être vue**, et
+c'est arrivé : `effet-de-cadrage` a vécu du 29 au 31 août avec deux phrases divergentes entre son
+enregistrement maître et sa projection, corrigées au passage 08. **Les workflows lancent
+maintenant les deux projections avant le diff**, avec le motif écrit en commentaire à côté de la
+correction. Chantier E de [`RESTE-A-FAIRE.md`](RESTE-A-FAIRE.md), **fermé**.
+
+**Ils sont trois, et le troisième est arrivé pendant la nuit du 2 septembre** : `deploy-vps.yml`,
+fusionné dans `main` par la pull request #80, portait le même garde à moitié. La correction y a
+été portée aussi, après fusion de `main` dans la branche de la nuit. **C'est sur le chemin de
+déploiement qu'elle vaut le plus cher** : une projection divergente n'y serait pas seulement
+invisible, elle serait mise en ligne. **Un garde de projection se cherche dans tous les workflows**,
+et `git grep -n "corpus:build" -- .github/` le dit en une commande.
 
 **Les cent cartes affichent leur citation en français.** Vingt-six d'entre elles la montraient
 encore en anglais : la fiche déclarait `translation.kind: "none"`, ce qui était exact — le texte
@@ -55,7 +61,7 @@ candidat mal placé part désormais chez un voisin ouvert, ou ne s'instruit pas.
 | Systems Thinking | 3 | 7 | 7 |
 | Science de la décision | 2 | 8 | 8 |
 | Sociologie du travail | 1 | 7 | 7 |
-| Économie comportementale | 1 | 4 | 4 |
+| Économie comportementale | 1 | 8 | 8 |
 | Operations Management | 3 | 8 | 8 |
 | Psychologie du travail | 2 | 7 | 7 |
 
@@ -69,18 +75,163 @@ contre ce fichier.** Elle est vide. **La condition B de la routine est donc faus
 première fois depuis le 28 août, et la phase 3 commence** : aucun domaine n'est vide, aucune carte
 n'est sans approfondissement, c'est la condition C qui décide désormais.
 
-**Le domaine que la phase 3 prendra la première nuit se déduit sans arbitrage.** La règle veut le
-domaine dont le journal donne l'enrichissement le plus ancien ; **aucun domaine n'a jamais été
-enrichi** — six passages d'ouverture, trois de phase 2 —, donc le critère de repli s'applique et
-désigne **celui qui a le moins de cartes validées, `behavioral-economics` avec quatre**, seul à ce
-niveau, les suivants en portant sept. Le tableau ci-dessus est le décompte qui tranche.
+**La phase 3 a eu lieu une fois, le 2 septembre, et elle a pris `behavioral-economics`** : le
+domaine désigné par le critère de repli, faute d'enrichissement au journal pour quiconque, comme
+celui qui avait le moins de cartes validées. Il en avait quatre, il en a huit, **et il n'est plus
+le moins doté du corpus**.
+
+**Le domaine que la nuit suivante prendra se déduit de la même règle.** `behavioral-economics` a
+désormais un enrichissement au journal, daté du 2 septembre : il sort de la rotation jusqu'à ce que
+les autres soient passés. Aucun autre n'en a, donc le critère de repli s'applique de nouveau et
+désigne **celui qui a le moins de cartes validées : trois domaines sont à égalité avec sept**,
+`sociology-of-work`, `work-psychology` et `systems-thinking`. **L'ordre de `src/content/taxonomy.ts`
+tranche l'égalité et désigne `sociology-of-work`.** Le tableau ci-dessus est le décompte qui
+tranche, et `npm run corpus:audit` le rend à la demande.
 
 **Les quatre familles sont complètes.** « Comprendre le pilotage » et « Comprendre le travail
 réel » l'étaient depuis le 23 août, « Comprendre la production et les systèmes » depuis le 25, et
 « Comprendre les humains et les organisations » l'est depuis le 28 : elle était la dernière
 incomplète, avec trois domaines fermés sur quatre au 25 août.
 
-# 0. Deux approfondissements, et la file se vide — lot du 1er septembre 2026 (passage 09), projeté
+# 0. Économie comportementale enrichie — lot du 2 septembre 2026 (passage 10), publié
+
+**Première nuit de phase 3 de la routine**, et la première où des cartes et leurs
+approfondissements sont écrits dans la même nuit. Conditions A et B fausses, condition C vraie :
+un domaine par nuit, en rotation, et la règle a désigné `behavioral-economics` sans arbitrage,
+comme le moins doté. **Quatre cartes validées, toutes citées, toutes relues sur l'image, trois en
+`PASS` au premier tour et une au second.** Le domaine passe de quatre à huit cartes, le corpus de
+cent à cent quatre. Les quatre approfondissements ont été écrits dans la foulée : la file de
+`corpus:deepen` est repartie de zéro et y est revenue.
+
+Les quatre cartes, toutes rattachées au thème existant `psychologie-economique`, aucun thème
+nouveau n'ayant été déclaré :
+
+| carte | source primaire | tour |
+|---|---|---|
+| `valeur-comme-fait-psychologique` | Tarde 1902, t. I, p. 109 | 1 |
+| `critique-de-l-homo-oeconomicus` | Tarde 1902, t. I, p. 114-115 | 1 |
+| `substitution-des-problemes-aux-secteurs` | Albou 1962, p. 10 | 1 |
+| `amenagement-onereux-du-monde-exterieur` | Albou 1962, p. 11 | 2 |
+
+**Aucun thème nouveau, et c'est une décision, pas un manque.** La cartographie en proposait deux :
+« l'effet de dotation et la contestation de son mécanisme » ne reposerait que sur **un seul
+collectif d'auteurs**, Baratgin, Godin et Jamet, l'un en anglais et l'autre en français, ce qui
+n'est pas une double attestation ; « la valeur et le prix comme faits psychologiques » ne
+reposerait que sur **Tarde**, ce que le dépôt a déjà refusé une fois en sociologie du travail. Le
+dépôt porte trois thèmes déclarés sans aucune carte validée : il n'en voulait pas un quatrième.
+
+## La première source secondaire du dépôt, et sa réserve
+
+**C'est le fait dominant du lot, et il solde une faiblesse structurelle vieille de six lots.** Jean
+Milet, « Gabriel Tarde (1843-1904) : Le créateur de la psychologie économique », *Bulletin de
+psychologie* 35(357), 1982, p. 907-913, id Persée `bupsy_0007-4403_1982_num_35_357_12030`, DOI
+`10.3406/bupsy.1982.12030` résolu par l'API Crossref. **Ouvert en entier : sept pages sur sept lues
+sur l'image**, notes de bas de page comprises, aucune en OCR seul, signature établie sur l'imprimé
+contre la coquille d'OCR « J. MUET ». Portée en `francophone-reception` sur les deux cartes de
+Tarde, **qui ne déclenchent plus l'avertissement « aucune source secondaire affichée »**.
+
+**Elle est portée avec sa réserve, et la réserve a demandé plus de soin que la lecture.** Milet est
+un tardien qui plaide pour son auteur, dans la revue qui servait alors d'organe à la psychologie
+économique française, et il renvoie trois fois, en notes des pages 908, 911 et 912, à son propre
+ouvrage de 1970 comme appui de démonstration. **Il récuse lui-même la lecture large de son titre**,
+page 909 : « l'idée de fonder l'économie sur la psychologie, et non plus sur les facteurs matériels,
+était dans l'air à cette époque » ; il nomme Schmoller, Wagner et Menger comme chefs d'écoles qui
+« arborent le titre de psychologie économique » avant Tarde, puis Bagehot, Royce, Baldwin et
+Giddings. Ce qu'il revendique tient dans une phrase adversative : Tarde « a été le premier à
+échafauder une véritable théorie économique, complète et conséquente, s'appuyant intégralement sur
+les analyses de la psychologie sociale ». Sa conclusion, page 913, ne dit plus créateur mais
+« un initiateur ».
+
+**Conséquence appliquée et vérifiée sur les quatre textes** : une carte qui écrirait que Tarde est
+le fondateur, le créateur ou le père de la psychologie économique sur la foi de Milet écrirait un
+faux, que Milet dément à la page 909 de l'article dont le titre semble l'autoriser. Aucune ne
+l'écrit. **Le titre d'un article est une notice bibliographique, pas une thèse reçue** : c'est la
+leçon à porter aux nuits qui iront chercher d'autres secondaires.
+
+**Les deux cartes d'Albou n'affichent aucune secondaire**, aucune n'ayant été ouverte, et les deux
+avertissements de `corpus:validate` qui en résultent sont le compte rendu exact de leur dossier.
+Ils ne se comblent pas.
+
+## Ce que le contrôle a attrapé
+
+**Un renvoi sur quatre, et il portait sur l'attribution — ce que ce corpus surveille le plus.** Le
+contrôleur d'`amenagement-onereux-du-monde-exterieur` a établi que le syntagme « aménagement onéreux
+du monde extérieur » circule comme la définition de l'économie politique par **Raymond Barre**, là
+où la carte le donnait pour la formule d'Albou : `attribution: douteuse`, `REWORK`.
+
+**Le renvoi est parti au lecteur primaire et non au rédacteur**, la question étant documentaire.
+Ce que le lecteur a établi sur la pièce : « Barre » est **absent des 81 pages** ; la page 11 ne
+porte **aucune note ni aucun appel de note**, la définition y étant donnée en capitales sans
+référence ; la seule dette d'économiste inscrite est Robbins, page 12 ; et le manuel de Barre est
+daté de sept ans avant l'article. **Ce qu'il n'a pas pu établir** : le texte de Barre lui-même,
+qu'aucune des six routes essayées n'a ouvert. `authorship` est passé de `SOLE_AUTHOR` à
+`ASSOCIATED_WITH`, `PASS` au tour 2, **et la carte n'écrit ni qu'Albou a forgé la formule ni qu'il
+l'emprunte** : les deux sont également non établies. Une variante attribue d'ailleurs la formule
+courte à François Perroux, ce qui affaiblit encore le faisceau et reste visible dans les notes.
+
+**Un piège d'OCR annoncé a été rencontré et bien tranché.** Le contrôleur de
+`critique-de-l-homo-oeconomicus` a vu la couche ABBYY donner « œconomicus » là où l'imprimé de 1902
+porte « æconomicus », et **il a tranché sur l'image en faveur de la fiche** au lieu de conclure à un
+écart. C'est le comportement que les cinq lots précédents cherchaient à obtenir, et c'est la
+première fois qu'un contrôleur l'exerce sur un piège déjà consigné.
+
+## Les réserves conservées
+
+**Le doublon de fond a été écarté sur pièce, et par un seul mot.** Le corpus portait déjà
+`definition-de-la-psychologie-economique` et `conduite-economique`, tirées de l'article d'Albou de
+1982. Le dépouillement des 81 pages de 1962 établit que **la chaîne « science des conduites » n'y
+figure pas** : le texte dit « comportement » vingt-huit fois. Le risque n'était pas le doublon
+d'`id`, que le validateur refuse, mais le doublon de fond sous un autre nom.
+
+**L'écart chronologique entre 1962 et 1982 est consigné et non tranché.** Albou écrit en 1982 avoir
+posé une première version de sa définition en 1962 ; le texte de 1962 porte bien une définition
+qu'il donne pour sienne, mais elle définit la discipline **par les méthodes de la psychologie
+sociale**, là où l'article de 1982 en revendique l'autonomie. Le rapport est inversé, et aucune
+antériorité n'est tranchée ici.
+
+**La querelle Albou contre Reynaud est documentée sur la pièce et laissée ouverte.** Le texte de
+1962 mentionne Pierre-Louis Reynaud aux pages 7, 9, 10 et 12, et l'attaque est nette page 7 : « cet
+ouvrage ne définit nulle part la discipline dont il traite ». **La pièce ne contient rien du côté de
+Reynaud**, et la position de celui-ci n'a jamais été ouverte.
+
+**Une tension interne à Albou 1962, relevée et non résolue** : la substitution des problèmes aux
+secteurs est annoncée page 10 comme un programme, mais le chapitre IV procède précisément par
+domaines et par secteurs, le mot revenant pages 13 et 15. Le texte l'expose au lieu de la lisser.
+
+**Une divergence entre les deux dossiers de Tarde, non arbitrée et non portée à la carte** : la
+lecture primaire relève trois espèces de valeur page 63-64, le dossier Milet annonce page 910
+« les quatre expressions de la Valeur » en n'en nommant que trois, les mêmes. Aucune des deux
+pièces n'a été rouverte pour trancher.
+
+## Deux rectifications de méthode sur les plateformes, à porter telles quelles
+
+Elles corrigent des lignes écrites au passage 06 et reprises depuis :
+
+1. **`curl` n'est pas réinitialisé par Persée sur le chemin `/doc/page/`.** Les resets rencontrés
+   venaient du **proxy d'agent** (`ws_closed_mid_exchange`, tunnel fermé en cours d'échange vers
+   `www.persee.fr`), et la reprise avec relances a obtenu les 81 pages d'Albou en `HTTP 200`. La
+   cause n'était pas là où le passage 06 l'avait placée.
+2. **L'endpoint image d'Internet Archive est plafonné** : les dérivés `_1500` et `_2000` rendent le
+   même fichier. Demander plus grand ne sert à rien.
+
+Ce qui se confirme : **le PDF complet `docAsPDF` de Persée répond `403`**, corps « This resource is
+protected by altcha », constaté par trois appels successifs et non contourné. Le recoupement se
+fait sur l'image de page.
+
+## Les angles morts qui commandent le prochain passage sur ce domaine
+
+- **Barre 1959 reste fermé après six routes essayées** — l'API Google Books répond `429`, Internet
+  Archive n'a pas l'ouvrage —, et c'est lui qui trancherait l'origine du syntagme.
+- **La position de Reynaud dans la querelle n'a jamais été ouverte.**
+- **La critique du programme de Katona, annoncée au chapitre IV d'Albou 1962, n'est pas instruite**,
+  et c'est **la voie francophone ouverte vers Katona**, dont les deux ouvrages sont vérifiés fermés
+  en prêt numérique.
+- **La troisième carte de Tarde, sur les prix**, reste non citable : sa matière n'est vue qu'en
+  couche OCR dégradée du tome second.
+- **L'effet de dotation reste hors lot**, faute d'un thème qui puisse le porter sans reposer sur une
+  seule équipe.
+
+# 0 bis. Deux approfondissements, et la file se vide — lot du 1er septembre 2026 (passage 09), projeté
 
 **Troisième et dernière nuit de phase 2, et la file passe de deux à zéro.** Condition A fausse,
 aucun domaine n'étant vide depuis le 28 août ; condition B vraie au lever de la nuit,

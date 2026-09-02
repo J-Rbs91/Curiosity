@@ -18,6 +18,7 @@ import type { ConceptId } from "@/types";
 export const deepenedConceptIds: readonly ConceptId[] = [
   "absorber-les-fluctuations-de-commandes",
   "activite-empechee",
+  "amenagement-onereux-du-monde-exterieur",
   "amplification-de-la-regulation",
   "analyse-des-groupes-professionnels",
   "analyse-du-travail",
@@ -39,6 +40,7 @@ export const deepenedConceptIds: readonly ConceptId[] = [
   "controle-supervise",
   "court-terme-contre-long-terme",
   "critere-de-la-retroaction",
+  "critique-de-l-homo-oeconomicus",
   "critique-de-l-utilite-esperee-subjective",
   "debat-de-normes",
   "decision-reconnue-d-emblee",
@@ -108,6 +110,7 @@ export const deepenedConceptIds: readonly ConceptId[] = [
   "sexe-des-operateurs",
   "signification-et-invariance",
   "simulation-activite-future",
+  "substitution-des-problemes-aux-secteurs",
   "systeme-concret-systeme-construit",
   "theorie-des-perspectives",
   "theories-normatives-du-choix-sous-risque",
@@ -115,5 +118,6 @@ export const deepenedConceptIds: readonly ConceptId[] = [
   "travail-collectif-collectif-de-travail",
   "trois-etats-psychologiques-critiques",
   "trois-sigmas-arbitrage-de-cout",
+  "valeur-comme-fait-psychologique",
   "zones-incertitude"
 ];

@@ -59,8 +59,17 @@ jobs:
         # Une projection divergente signifie qu'un fichier généré a été édité à la main, ou
         # qu'une fiche a changé sans être reprojetée — donc qu'une phrase pourrait s'afficher
         # sans enregistrement sourcé derrière elle.
+        #
+        # Les deux commandes sont nécessaires, et le `git diff` seul le laissait croire à
+        # tort : `corpus:build` n'écrit que `concepts.generated.ts`, `deepenings.generated.ts`
+        # n'étant écrit que par `corpus:deepen`. Le garde ne couvrait donc qu'une moitié du
+        # répertoire qu'il nomme, et une divergence réelle de l'approfondissement
+        # d'`effet-de-cadrage` a vécu trois jours dans le dépôt, du 29 au 31 août 2026, sans
+        # qu'aucun run ne la voie. Le texte affiché par « Approfondir » n'était plus celui de
+        # son enregistrement maître.
         run: |
           npm run corpus:build
+          npm run corpus:deepen
           git diff --exit-code src/content/generated/
 
   app:

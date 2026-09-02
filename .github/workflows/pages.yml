@@ -42,8 +42,14 @@ jobs:
       - name: Vérifier que la projection du corpus est à jour
         # Le site ne doit pas publier un contenu que le corpus maître ne produit plus.
         # Voir docs/corpus-workflow.md.
+        #
+        # `corpus:build` n'écrit que `concepts.generated.ts` ; `deepenings.generated.ts` est
+        # écrit par `corpus:deepen`. Sans les deux, le garde ne couvre qu'une moitié du
+        # répertoire qu'il nomme, et c'est exactement par là qu'un approfondissement divergent
+        # est passé du 29 au 31 août 2026.
         run: |
           npm run corpus:build
+          npm run corpus:deepen
           git diff --exit-code src/content/generated/
 
       - name: Construire l'export statique
