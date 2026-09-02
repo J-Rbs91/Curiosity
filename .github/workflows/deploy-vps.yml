@@ -1,0 +1,78 @@
+name: deploy-vps
+
+# Déploiement manuel initial de Curiosity Orga sur le VPS.
+#
+# Le build reste effectué sur GitHub Actions : le VPS ne reçoit que l'export statique `out/`.
+# Une fois le premier déploiement validé, ce workflow pourra être déclenché automatiquement
+# sur chaque mise à jour de `main`.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-vps-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: build-and-deploy
+    runs-on: ubuntu-latest
+    environment: production
+
+    env:
+      DEPLOY_ROOT: /var/www/curiosity-orga
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+          cache: npm
+
+      - run: npm ci
+
+      - name: Vérifier que la projection du corpus est à jour
+        run: |
+          npm run corpus:build
+          git diff --exit-code src/content/generated/
+
+      - name: Construire l'export statique pour le domaine racine
+        env:
+          NEXT_PUBLIC_BASE_PATH: ""
+        run: npm run build
+
+      - name: Vérifier l'artefact
+        run: |
+          test -f out/index.html
+          du -sh out
+          find out -type f | wc -l
+
+      - name: Configurer SSH
+        env:
+          VPS_SSH_KEY: ${{ secrets.VPS_SSH_KEY }}
+          VPS_KNOWN_HOSTS: ${{ secrets.VPS_KNOWN_HOSTS }}
+        run: |
+          test -n "$VPS_SSH_KEY"
+          test -n "$VPS_KNOWN_HOSTS"
+          install -d -m 700 ~/.ssh
+          printf '%s\n' "$VPS_SSH_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          printf '%s\n' "$VPS_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          chmod 600 ~/.ssh/known_hosts
+
+      - name: Déployer les fichiers statiques
+        env:
+          VPS_HOST: ${{ secrets.VPS_HOST }}
+          VPS_USER: ${{ secrets.VPS_USER }}
+        run: |
+          test -n "$VPS_HOST"
+          test -n "$VPS_USER"
+          ssh "$VPS_USER@$VPS_HOST" "mkdir -p '$DEPLOY_ROOT/site'"
+          rsync -az --delete --delay-updates \
+            -e ssh \
+            out/ "$VPS_USER@$VPS_HOST:$DEPLOY_ROOT/site/"
+          ssh "$VPS_USER@$VPS_HOST" "test -f '$DEPLOY_ROOT/site/index.html'"
