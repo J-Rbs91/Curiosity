@@ -36,8 +36,15 @@ jobs:
       - run: npm ci
 
       - name: Vérifier que la projection du corpus est à jour
+        # Les deux commandes sont nécessaires : `corpus:build` n'écrit que
+        # `concepts.generated.ts`, `deepenings.generated.ts` n'étant écrit que par
+        # `corpus:deepen`. Avec la seule première, le garde ne couvre qu'une moitié du
+        # répertoire qu'il nomme, et c'est par là qu'un approfondissement divergent est passé
+        # du 29 au 31 août 2026 : le déploiement aurait mis en ligne un texte que le dépôt ne
+        # portait plus. Même correction que dans `ci.yml` et `pages.yml`.
         run: |
           npm run corpus:build
+          npm run corpus:deepen
           git diff --exit-code src/content/generated/
 
       - name: Construire l'export statique pour le domaine racine
