@@ -5,7 +5,7 @@ relire tout le dépôt et sans redécouvrir ce que huit lots ont déjà appris.
 
 Il ne double pas `corpus/ETAT.md`, qui dit ce que le corpus **est** ; celui-ci dit ce qu'il
 lui **manque**. Et il ne remplace aucun script : les chiffres ci-dessous sont un instantané
-du 1er septembre 2026, les commandes sont la vérité.
+du 2 septembre 2026, les commandes sont la vérité.
 
 ```bash
 npm run corpus:audit    # domaines, thèmes, cartes validées, sujets jamais instruits
@@ -26,8 +26,8 @@ script ne peut pas dire : quel travail est possible aujourd'hui, ce qu'il coûte
 | **A.** Approfondissements | **aucun** | — | **fermé le 1er septembre 2026** |
 | **B.** File de la sociologie des organisations | 25 entrées | oui, cartographie déjà faite | ouvert |
 | **C.** Domaines vides | **aucun** | — | **fermé le 28 août 2026** |
-| **D.** Reprises courtes de cinq domaines instruits | 14 textes | oui, accès déjà constaté | **ouvert, et c'est par lui que la phase 3 commence** |
-| **E.** Le garde de la CI ne couvre qu'une moitié du répertoire projeté | 2 lignes | non | ouvert, découvert le 31 août 2026 |
+| **D.** Reprises courtes de cinq domaines instruits | 9 textes | oui, accès déjà constaté | **ouvert, et c'est par lui que la phase 3 avance** |
+| **E.** Le garde de la CI ne couvrait qu'une moitié du répertoire projeté | **aucun** | non | **fermé le 2 septembre 2026** |
 
 **Le chantier A est fermé.** Il s'était vidé le 21 août, rouvert et creusé pendant cinq lots
 d'ouverture consécutifs jusqu'à trente-quatre cartes le 28 août, puis refermé en trois nuits :
@@ -36,10 +36,16 @@ passage 09 le 1er septembre**. `corpus:deepen` projette **100 approfondissements
 validées** et sa fin de sortie ne liste plus rien. **La file est celle du script, pas celle de ce
 fichier**, et elle est vide.
 
+**Le chantier E est fermé**, par la première nuit de phase 3, le 2 septembre. Les deux workflows
+lancent désormais `corpus:build` **et** `corpus:deepen` avant leur `git diff --exit-code
+src/content/generated/` : le garde couvre les deux fichiers du répertoire qu'il nomme.
+
 **Deux chantiers restent ouverts pour la routine, et la §2 de son prompt désigne lequel elle
 prend.** Aucun domaine n'étant vide et aucune carte n'étant sans approfondissement, ses conditions
-A et B sont fausses : **la condition C décide, et la phase 3 commence.** Elle enrichit un domaine
-par nuit, en rotation, et le premier se déduit sans arbitrage — voir la fin du chantier D.
+A et B sont fausses : **la condition C décide, et la phase 3 a commencé le 2 septembre**, sur
+`behavioral-economics`, qui passe de quatre à huit cartes. Elle enrichit un domaine par nuit, en
+rotation, et **le suivant se déduit sans arbitrage : `sociology-of-work`** — voir la fin du
+chantier D.
 
 **Le chantier C est fermé.** Il a perdu un domaine le 22 août, `systems-thinking`, un second le 23,
 `decision-science`, un troisième le 25, `operations-management`, un quatrième le 26,
@@ -57,10 +63,15 @@ ouverture qui n'aura pas lieu.
 
 # A. Les approfondissements, chantier fermé le 1er septembre 2026
 
-**Il n'y a plus de carte validée sans approfondissement.** `corpus:deepen` projette **100
-approfondissements pour 100 cartes, 146 324 mots, 1 463 en moyenne**, et sa fin de sortie ne liste
+**Il n'y a plus de carte validée sans approfondissement.** `corpus:deepen` projette **104
+approfondissements pour 104 cartes, 152 648 mots, 1 468 en moyenne**, et sa fin de sortie ne liste
 plus rien. **Les onze domaines sont entièrement servis.** Ce chantier est conservé ici pour ce
 qu'il a appris, non pour ce qu'il resterait à faire.
+
+**Il ne se rouvrira plus durablement, et la phase 3 en est la raison** : une nuit de phase 3 crée
+des cartes et écrit leurs approfondissements dans la même nuit. Le passage 10, le 2 septembre, a
+ainsi fait passer la file de zéro à quatre puis de quatre à zéro entre le soir et la clôture. **La
+file reste celle de `npm run corpus:deepen`, et elle fait foi contre ce fichier.**
 
 **La file n'est pas tenue ici, et c'est ce qui a permis de la fermer.** `npm run corpus:deepen`
 l'affiche en fin de sortie, et c'est elle qui fait foi contre ce fichier.
@@ -288,25 +299,27 @@ reprend.** Ses conditions A et B sont fausses — aucun domaine vide, aucune car
 approfondissement —, sa condition C est donc vraie et sa phase 3 commence : un domaine enrichi par
 nuit, en rotation.
 
-**Le premier domaine se déduit sans arbitrage, et il vaut d'être écrit ici pour que la nuit qui
-reprend n'ait pas à le recalculer.** La règle veut le domaine dont le journal donne
-l'enrichissement le plus ancien. **Aucun domaine n'a jamais été enrichi** : les passages 01 à 06 de
-la routine étaient des ouvertures, les 07 à 09 des nuits de phase 2 qui ne prennent aucun domaine.
-Le critère de repli s'applique donc, et il désigne **celui qui a le moins de cartes validées :
-`behavioral-economics`, avec quatre**, seul à ce niveau, les suivants en portant sept. Le décompte
-qui tranche est le tableau par domaine de [`corpus/ETAT.md`](ETAT.md), et `npm run corpus:audit`
-le rend à la demande.
+**Le premier domaine a été pris le 2 septembre 2026, au passage 10 : `behavioral-economics`**,
+désigné par le critère de repli comme le moins doté, avec quatre cartes. Il en porte huit, **et il
+n'est plus le moins doté du corpus**. La reprise 1 ci-dessous, les deux cartes de Tarde, est faite ;
+la reprise 4, la source secondaire Milet, aussi, et elle a donné **la première source secondaire
+affichée du dépôt** ; la reprise 5 a rendu Albou 1962, ouvert page à page sur ses 81 pages, dont
+deux cartes sont tirées. **Restent ouvertes les reprises 2 et 3**, et ce que le lot a lui-même
+ouvert, listé en fin de section.
 
-**En son sein, les deux premières priorités sont sans objet et la troisième commande.** Les thèmes
-déclarés sans carte validée que `corpus:audit` liste en fin de sortie, `autorite-domination` et
-`apprentissage-organisationnel`, sont **en sociologie des organisations, pas ici** ; et
-`corpus/map/queue.json` ne couvre que la sociologie des organisations elle aussi. Reste la priorité
-trois, **les angles morts écrits dans `corpus/map/behavioral-economics.scouting.md`** — et la
-section ci-dessous en tient déjà la liste chiffrée, accès constatés compris. **La reprise 1, les
-deux cartes de Tarde, est la moins chère du dépôt** : la lecture primaire est faite, complète et
-rendue, les deux citations relues sur l'image du feuillet, et il ne manque que la rédaction et le
-contrôle aveugle. En phase 3, la nuit se termine par les approfondissements des cartes qu'elle
-vient de créer.
+**Le domaine suivant se déduit de la même règle, et il vaut d'être écrit ici pour que la nuit qui
+reprend n'ait pas à le recalculer.** `behavioral-economics` a désormais un enrichissement au
+journal, daté du 2 septembre, et sort de la rotation jusqu'à ce que les autres soient passés. Aucun
+autre domaine n'en a : le critère de repli s'applique de nouveau et désigne celui qui a le moins de
+cartes validées. **Trois domaines sont à égalité avec sept** — `sociology-of-work`,
+`work-psychology`, `systems-thinking` — et l'ordre de `src/content/taxonomy.ts` tranche l'égalité :
+**c'est `sociology-of-work`**. En son sein, la priorité 1 est sans objet, tous ses thèmes portant
+une carte, et la priorité 2 aussi, `corpus/map/queue.json` ne couvrant que la sociologie des
+organisations : **la priorité 3 commande, les angles morts de
+`corpus/map/sociology-of-work.scouting.md`**. Le décompte qui tranche est le tableau par domaine de
+[`corpus/ETAT.md`](ETAT.md), et `npm run corpus:audit` le rend à la demande. **En phase 3, la nuit
+se termine par les approfondissements des cartes qu'elle vient de créer** : le passage 10 l'a fait,
+et la file de `corpus:deepen` est repartie de zéro et y est revenue dans la même nuit.
 
 **Une condition matérielle pèse sur tout ce chantier, et elle est intermittente au 1er septembre.**
 Le serveur MCP `documentary` a été en échec de connexion (`CONNECTION_CLOSED`) du 29 août au
@@ -325,9 +338,20 @@ Sans lui, une nuit peut encore travailler par `WebSearch` et `WebFetch`, mais **
 vérification de référence**, et la règle « une référence introuvable n'existe pas » se durcit
 d'autant : dans le doute, la carte ne se publie pas.
 
-## Cinq reprises laissées par le lot du 28 août, sur `behavioral-economics`
+## Cinq reprises laissées par le lot du 28 août, sur `behavioral-economics` — trois faites le 2 septembre
 
-**Ce domaine est le dernier ouvert, et il laisse la reprise la moins chère de tout le dépôt.**
+**Trois des cinq sont soldées par le passage 10.** La reprise 1 a rendu les deux cartes de Tarde,
+la reprise 4 a donné la première source secondaire affichée du dépôt, et la reprise 5 a rendu
+Albou 1962, dont deux cartes sont tirées. **Restent ouvertes la 2 et la 3**, et le lot en a ouvert
+quatre autres, écrites en fin de section. Les cinq entrées d'origine sont conservées telles quelles
+ci-dessous, avec leur état, parce que les accès qu'elles constatent servent encore.
+
+**1. Les deux cartes de Tarde — FAITE le 2 septembre 2026.** `valeur-comme-fait-psychologique`
+(t. I, p. 109) et `critique-de-l-homo-oeconomicus` (t. I, p. 114-115) sont validées et publiées,
+toutes deux en `PASS` au premier tour, toutes deux avec citation relue sur l'image, toutes deux
+portant Milet 1982 en source secondaire. Le pronostic tenait : la lecture primaire étant faite, il
+n'a manqué que la rédaction et le contrôle. Description d'origine conservée pour ses constats
+d'accès :
 
 **1. Les deux cartes de Tarde, et il ne manque que de les écrire.** La lecture primaire est faite,
 complète et rendue, **les deux citations relues sur l'image du feuillet** :
@@ -356,6 +380,19 @@ d'extracteur PDF dans l'environnement : c'est une limite d'outillage, pas un dé
 l'autre en français. Ce n'est pas une double attestation indépendante, et un thème bâti sur eux
 seuls reposerait sur une seule équipe.
 
+**4. La source secondaire — FAITE le 2 septembre 2026, et c'est le fait dominant du passage 10.**
+Milet 1982 a été ouvert en entier, **ses sept pages sur sept lues sur l'image**, notes comprises,
+aucune en OCR seul, DOI `10.3406/bupsy.1982.12030` résolu par l'API Crossref, signature établie sur
+l'imprimé contre la coquille « J. MUET ». Elle est portée en `francophone-reception` sur les deux
+cartes de Tarde, **qui sont les deux premières fiches du dépôt à ne pas déclencher l'avertissement
+« aucune source secondaire affichée »**. La réserve d'antériorité est portée en entier sur les deux
+cartes et dans leurs approfondissements : Milet **récuse lui-même** la lecture large de son titre
+page 909, nomme Schmoller, Wagner, Menger, puis Bagehot, Royce, Baldwin et Giddings, réduit sa
+revendication à une phrase adversative, et conclut page 913 sur « un initiateur ». **Une carte qui
+ferait de Tarde le fondateur de la discipline sur sa foi écrirait un faux** : aucune ne l'écrit.
+Ce qui reste vrai pour la suite : **le titre d'un article est une notice bibliographique, pas une
+thèse reçue**. Description d'origine conservée :
+
 **4. La source secondaire, et c'est le premier remède au manque structurel de cinq lots.** Milet,
 Jean (1982), « Gabriel Tarde (1843-1904) : le créateur de la psychologie économique », *Bulletin de
 psychologie* 35(357), p. 907-913, id Persée `bupsy_0007-4403_1982_num_35_357_12030`, page 907 lue
@@ -363,6 +400,17 @@ sur la pièce. **Signal à ne pas escamoter** : c'est une revendication d'antér
 tardien, dans la revue même où Albou et Reynaud tenaient la discipline. **L'attribution de la
 fondation est disputée dans la lignée elle-même**, et un lecteur doit la traiter comme une
 position, pas comme un fait. Coquille d'OCR à connaître : la signature est rendue « J. MUET ».
+
+**5. Albou 1962 — FAITE le 2 septembre 2026 ; Roche-Agussol reste ouvert.** L'article a été ouvert
+**page à page sur ses 81 pages**, toutes obtenues en `HTTP 200`, la plus courte à 3 058 caractères
+et aucune vide, ce qui écarte le piège d'une couche OCR amputée. Deux cartes en sont tirées,
+`substitution-des-problemes-aux-secteurs` (p. 10) et `amenagement-onereux-du-monde-exterieur`
+(p. 11). **Le doublon de fond avec les deux cartes de 1982 est écarté sur pièce** : la chaîne
+« science des conduites » ne figure pas dans le texte de 1962, qui dit « comportement » vingt-huit
+fois. **La querelle contre Reynaud est documentée et non tranchée** — l'attaque est page 7, « cet
+ouvrage ne définit nulle part la discipline dont il traite », et la pièce ne contient rien du côté
+de Reynaud. **Maurice Roche-Agussol n'a pas été touché** et reste l'angle mort d'origine.
+Description conservée :
 
 **5. Deux pistes repérées et non vérifiées.** Maurice Roche-Agussol, **jalon de la lignée que le
 périmètre ne connaissait pas**, entre Tarde et Reynaud : items `IA41555614_0038` et `jstor-1883573`
@@ -377,6 +425,34 @@ anti-robot `403` sur `pubs.aeaweb.org`, retenté et confirmé le 28 août) ; Tha
 Elsevier, seul miroir une page de cours, motif de droits et non d'accès) ; Katona 1951 (prêt
 numérique contrôlé). **Et la veine `dticarchive` ne porte pas ce domaine** : deux requêtes bien
 formées, 1 345 résultats cumulés, une seule pièce approchante et hors objet. Ne pas y revenir.
+
+**S'y ajoute, depuis le 2 septembre : Barre 1959, vérifié fermé après six routes.** L'API Google
+Books répond `429`, quota journalier épuisé ; Internet Archive n'a pas l'ouvrage. C'est lui, et lui
+seul, qui trancherait l'origine du syntagme « aménagement onéreux du monde extérieur », qu'un
+contrôleur aveugle a établi comme circulant sous le nom de Raymond Barre là où la carte le donnait
+pour la formule d'Albou. **Ni l'une ni l'autre attribution n'est établie, et la carte n'en écrit
+aucune.** Une variante prête d'ailleurs la formule courte à François Perroux.
+
+## Quatre reprises ouvertes par le lot du 2 septembre, sur `behavioral-economics`
+
+Elles sont écrites ici parce qu'elles n'existaient pas avant ce lot, et qu'elles sont toutes des
+suites directes de ce qu'il a lu.
+
+1. **La position de Reynaud dans la querelle d'antériorité n'a jamais été ouverte.** Albou porte
+   l'attaque en 1962 aux pages 7 et 10, et la revendique de nouveau en 1982 ; le corpus porte deux
+   cartes tirées de Reynaud 1962 et n'a jamais lu ce qu'il répond, s'il répond. C'est la reprise la
+   moins chère de cette liste, la pièce de Reynaud étant déjà ouverte et vérifiée sur Persée.
+2. **La critique du programme de Katona, annoncée au chapitre IV d'Albou 1962, n'est pas
+   instruite** — le reproche est fait page 12, à Katona et à Lauterbach. **C'est la voie
+   francophone ouverte vers Katona**, dont les deux ouvrages sont vérifiés fermés en prêt numérique
+   contrôlé : ce qu'on ne peut pas lire chez lui se lit sur lui, en français, dans une pièce déjà
+   ouverte.
+3. **Barre 1959**, fermé après six routes, seul à pouvoir trancher l'origine du syntagme.
+4. **La réception d'Albou 1962 n'est établie par rien.** Aucune source secondaire n'a été ouverte
+   sur ce texte, ni par la cartographie ni par la lecture primaire, et les deux cartes qui en
+   viennent portent l'avertissement de `corpus:validate` en conséquence. Le remède est du même
+   genre que celui qui a marché pour Tarde : chercher une secondaire francophone ouverte, dans le
+   *Bulletin de psychologie* lui-même ou autour.
 
 ## Quatre reprises laissées par le lot du 26 août, sur `work-psychology`
 
@@ -487,7 +563,7 @@ nom écrit de mémoire, et un de ses trois thèmes repose entièrement sur Forre
 
 ---
 
-# E. Le garde de la CI ne couvre qu'une moitié du répertoire projeté
+# E. Le garde de la CI ne couvrait qu'une moitié du répertoire projeté — fermé le 2 septembre 2026
 
 **Découvert le 31 août 2026, au passage 08, sans l'avoir cherché.** Le premier
 `npm run corpus:deepen` de la nuit, lancé pour constater l'état, a rendu un fichier différent de
@@ -504,12 +580,20 @@ couvrir tout le répertoire projeté. Mais `corpus:build` n'écrit que `concepts
 la CI sans être vue**, et le dépôt ne s'en apercevra qu'à la prochaine nuit de phase 2 — ou jamais,
 une fois cette phase close.
 
-**Le remède tient en une ligne dans chacun des deux workflows** : lancer `npm run corpus:deepen`
-avant le `git diff --exit-code`, ou l'ajouter au script `corpus:build` lui-même, ce qui a
-l'avantage de n'avoir à corriger aucun workflow et l'inconvénient de mêler deux projections que le
-dépôt a jusqu'ici tenues séparées. **Le choix n'a pas été fait, et il n'appartient pas à une
-routine nocturne de phase 2**, qui n'a pas mandat de toucher à la CI : il revient à une session
-de développement. La dérive elle-même est corrigée depuis le 31 août.
+**Fermé le 2 septembre 2026, au passage 10, par la première nuit de phase 3.** Des deux remèdes
+envisagés, c'est le premier qui a été retenu : `npm run corpus:deepen` est lancé après
+`npm run corpus:build` et avant le `git diff --exit-code`, dans `ci.yml` comme dans `pages.yml`.
+L'autre voie, ajouter la projection des approfondissements au script `corpus:build` lui-même,
+aurait mêlé deux projections que le dépôt tient séparées depuis l'origine : le garde a été élargi,
+les scripts n'ont pas bougé. Le motif est écrit en commentaire à côté de la correction, dans les
+deux fichiers, pour qu'il ne se reperde pas.
+
+**La phase 3 avait le mandat que les trois nuits de phase 2 n'avaient pas**, et elle est aussi
+celle que ce trou aurait coûté le plus cher : elle écrit des cartes et leurs approfondissements
+dans la même nuit. Contrôle fait sur l'état courant au moment de la correction, puis à la clôture :
+build 104 concepts, deepen 104 approfondissements, `git diff --exit-code src/content/generated/`
+propre, projection déterministe sur deux exécutions successives. La dérive elle-même était corrigée
+depuis le 31 août.
 
 ---
 

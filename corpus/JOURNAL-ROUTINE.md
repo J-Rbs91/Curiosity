@@ -5,6 +5,150 @@ coup d'œil ce que la précédente a fait, sur quelle branche elle l'a laissé, 
 reprendre. **Les scripts priment sur ce fichier** : il dit ce qui a été tenté et pourquoi, ils
 disent ce qui est.
 
+## Passage 10/15 — 2026-09-02
+
+- branche      : `claude/zen-johnson-9itxcp` (imposée par la session, pas `main`). **Le travail des passages 07 à 09 est fusionné dans `main`**, y compris la suite documentaire [#92](https://github.com/J-Rbs91/Curiosity/pull/92) que le passage 09 laissait en suspens : `main` était au commit de merge `94b1086`, cette branche en part, et **rien n'a été refait**. Pull request vers `main` ouverte à la clôture. Tant qu'elle n'est pas fusionnée, **la nuit suivante reprend depuis cette branche**, et non depuis `main`.
+- phase        : **3 (enrichissement d'un domaine), et c'est la première de la routine.** Condition A fausse — aucun domaine à zéro carte validée depuis le passage 06. Condition B fausse — `corpus:deepen` projetait 100 approfondissements pour 100 cartes et sa fin de sortie ne listait rien. La condition C décidait donc, et elle décidait seule.
+- domaine      : **`behavioral-economics`**, désigné sans arbitrage. Aucun domaine n'ayant jamais été enrichi, le journal n'en donne d'enrichissement pour aucun et le critère de repli s'applique : celui qui a le moins de cartes validées, **quatre**, seul à ce niveau. En son sein, les priorités 1 et 2 sont sans objet — les deux thèmes déclarés sans carte sont en sociologie des organisations, et `corpus/map/queue.json` ne couvre que ce même domaine —, donc **la priorité 3 commande : les angles morts de `corpus/map/behavioral-economics.scouting.md`**, dont le chantier D de `RESTE-A-FAIRE.md` tenait la liste chiffrée.
+- validées     : **4 — `valeur-comme-fait-psychologique`, `critique-de-l-homo-oeconomicus` (Tarde 1902, t. I), `substitution-des-problemes-aux-secteurs`, `amenagement-onereux-du-monde-exterieur` (Albou 1962), les 4 avec citation**, toutes relues sur l'image de la page. Trois en `PASS` au premier tour, une au second. **Le domaine passe de 4 à 8 cartes validées et cesse d'être le moins doté du corpus.** Le corpus passe de 100 à **104 cartes**.
+- en review    : 0
+- rejetées     : 0
+- approfondies : **4 — les quatre cartes de la nuit**, la phase 3 se terminant par les approfondissements des cartes qu'elle vient de créer. 1 452 à 1 681 mots, aucun refus de projection, aucun renvoi. `corpus:deepen` projette **104 approfondissements pour 104 cartes**, 152 648 mots, 1 468 en moyenne, **et la file est de nouveau vide à la clôture, comme elle l'était au lever**.
+- contrôles    : validate 0 erreur (108 enregistrements, 104 validés, 83 avertissements, dont **deux nouveaux et attendus**, les deux cartes d'Albou n'affichant aucune source secondaire) · build 104 concepts · deepen 104/104 · `git diff --exit-code src/content/generated/` propre après reprojection · test 482/0 · lint 0 · audit : `Économie comportementale` passe de **1 thème / 4 validés** à **1 thème / 8 validés**. Rien à drainer dans `src/content/fixtures/concepts.fixture.ts` : `corpus:build` n'a listé aucune entrée caduque, aucun des quatre identifiants n'ayant d'homonyme d'échafaudage.
+- commit       : la nuit a été commitée par étapes, six fois, chaque maillon poussé dès qu'il tenait debout ; `97286d7` pour la CI, `e264eaf` pour les quatre cartes, `90fc5e6` puis la projection finale pour l'application.
+- bloqué par   : **le serveur MCP `documentary`, en échec de connexion (`CONNECTION_CLOSED`) pour la cinquième nuit consécutive.** Constat fait par appel réel avant le lot, et non sur la foi du journal, comme le passage 09 le demandait : aucun outil `mcp__documentary__*` n'est exposé à la session. Son retour du 1er septembre à 06h10 ne s'est pas confirmé. **La phase 3 a donc travaillé sans vérification structurée de référence**, par `WebSearch`, `WebFetch` et `curl` seuls, et le contrôle aveugle a résolu ses DOI par l'API Crossref directe. Aucune carte n'en a souffert, mais la règle « une référence introuvable n'existe pas » a été appliquée durcie, et c'est elle qui a laissé l'origine du syntagme d'Albou non tranchée. **Second blocage, de dispositif** : `Task` n'était pas exposé à l'orchestrateur, qui a lancé ses sous-agents en headless, un processus par agent, avec les outils que déclare chaque définition. Les deux premiers lecteurs ont rendu un refus d'écrire faute d'accès réseau avant que ce point ne soit corrigé, **et ce refus était le bon geste**.
+- la nuit suivante prend : **phase 3, et le domaine que la règle désignera alors.** Les conditions A et B resteront fausses. Le journal donne désormais un enrichissement pour `behavioral-economics`, daté du 2 septembre, donc **il sort de la rotation jusqu'à ce que tous les autres soient passés** ; aucun autre domaine n'ayant d'enrichissement au journal, le critère de repli s'applique de nouveau et désigne **le domaine qui a le moins de cartes validées : `sociology-of-work`, `work-psychology` et `systems-thinking` sont à égalité avec sept**, et l'ordre de `src/content/taxonomy.ts` tranche cette égalité — il place `sociology-of-work` avant `work-psychology`, tous deux avant `systems-thinking`. **C'est donc `sociology-of-work`.** En son sein, la priorité 1 est sans objet (ses thèmes portent tous une carte), la priorité 2 aussi (`queue.json` ne couvre que la sociologie des organisations), et **la priorité 3 commande : les angles morts de `corpus/map/sociology-of-work.scouting.md`**. La nuit se terminera par les approfondissements des cartes qu'elle aura créées.
+
+### Ce que cette nuit a établi, en une phrase
+
+La première nuit de phase 3 rend quatre cartes au domaine le moins doté du corpus, qui cesse de
+l'être, et elle affiche **la première source secondaire du dépôt** après six lots où l'avertissement
+« aucune source secondaire affichée » n'avait pas de remède.
+
+### La source secondaire, et pourquoi elle vaut plus que son volume
+
+**C'est le fait dominant de la nuit, et il solde une faiblesse structurelle vieille de six lots.**
+Jean Milet, « Gabriel Tarde (1843-1904) : Le créateur de la psychologie économique », *Bulletin de
+psychologie* 35(357), 1982, p. 907-913, a été **ouvert en entier, ses sept pages sur sept lues sur
+l'image**, notes de bas de page comprises, aucune en OCR seul. Elle est portée en
+`francophone-reception` sur les deux cartes de Tarde, **qui ne déclenchent plus l'avertissement**.
+
+**Mais elle est portée avec sa réserve, et la réserve est ce qui a demandé le plus de soin.** Milet
+est un tardien qui plaide pour son auteur, dans la revue qui servait alors d'organe à la
+psychologie économique française, et il renvoie trois fois à son propre ouvrage de 1970 comme appui
+de démonstration. **Il récuse lui-même la lecture large de son titre**, page 909 : « l'idée de
+fonder l'économie sur la psychologie [...] était dans l'air à cette époque », et il nomme Schmoller,
+Wagner et Menger comme chefs d'écoles qui « arborent le titre de psychologie économique » avant
+Tarde, puis Bagehot, Royce, Baldwin et Giddings. Ce qu'il revendique tient dans une seule phrase
+adversative, et sa conclusion de la page 913 ne dit plus créateur mais « un initiateur ».
+
+**Conséquence appliquée, et vérifiée sur les quatre textes** : une carte qui écrirait que Tarde est
+le fondateur, le créateur ou le père de la psychologie économique sur la foi de Milet écrirait un
+faux, que Milet dément à la page 909 de l'article dont le titre semble l'autoriser. Ni les cartes,
+ni leurs approfondissements ne l'écrivent. **Une source secondaire ouverte ne se résume pas par son
+titre**, et c'est la leçon à porter aux nuits qui iront en chercher d'autres : le titre d'un article
+est une notice bibliographique, pas une thèse reçue.
+
+### Ce que le contrôle aveugle a réellement attrapé
+
+| question | résultat sur quatre fiches |
+|---|---|
+| citation verbatim, à l'endroit annoncé | 4/4 dès le premier passage |
+| attribution | **3/4 au premier passage** |
+| prose fidèle aux sources | 4/4 dès le premier passage |
+| sources qui résolvent | 4/4 dès le premier passage |
+
+**Un seul renvoi, et il portait sur ce que ce corpus surveille le plus.** Le contrôleur d'
+`amenagement-onereux-du-monde-exterieur` a établi que le syntagme « aménagement onéreux du monde
+extérieur » circule comme la définition de l'économie politique par **Raymond Barre**, quand la
+carte le présentait comme la formule d'Albou : `attribution: douteuse`, `REWORK`.
+
+**Le renvoi est parti au lecteur primaire et non au rédacteur**, la question étant documentaire et
+non rédactionnelle. Ce que le lecteur a établi : « Barre » est **absent des 81 pages**, la page 11
+ne porte **aucune note ni aucun appel de note**, la seule dette d'économiste inscrite est Robbins
+page 12, et le manuel de Barre est daté de sept ans avant l'article. **Ce qu'il n'a pas pu établir**
+: le texte de Barre lui-même, qu'aucune des six routes essayées n'a ouvert. La carte est passée au
+second tour avec `authorship` ramené de `SOLE_AUTHOR` à `ASSOCIATED_WITH`, et **elle n'écrit ni
+qu'Albou a forgé la formule, ni qu'il l'emprunte** : les deux sont également non établies.
+
+**Un piège d'OCR annoncé a été rencontré et bien tranché.** Le contrôleur de
+`critique-de-l-homo-oeconomicus` a vu la couche ABBYY donner « œconomicus » là où l'imprimé porte
+« æconomicus », et **il a tranché sur l'image en faveur de la fiche** au lieu de conclure à un
+écart. C'est le comportement que les cinq lots précédents cherchaient à obtenir.
+
+### Ce que les agents ont refusé d'écrire, et c'est encore le meilleur signe
+
+- **Que Tarde soit le fondateur de la discipline**, sur aucune des deux cartes ni des deux
+  approfondissements, Milet le démentant lui-même.
+- **Qu'Albou ait forgé le syntagme**, et symétriquement **qu'il l'emprunte à Barre** : les deux
+  sont non établies, et la carte s'arrête à ce qui l'est, le transfert vers la psychologie.
+- **Le mot « conduite » sur les cartes de 1962**, absent du texte, qui dit « comportement »
+  vingt-huit fois. **C'est ce mot qui écarte le doublon de fond** avec
+  `definition-de-la-psychologie-economique`, tirée de l'article de 1982 : le risque n'était pas le
+  doublon d'`id`, que le validateur refuse, mais le doublon de fond sous un autre nom.
+- **Toute source secondaire sur les deux cartes d'Albou**, aucune n'ayant été ouverte. Les deux
+  avertissements de `corpus:validate` qui en résultent sont le compte rendu exact de leur dossier,
+  et ils ne se comblent pas.
+
+### Deux rectifications de méthode sur Persée, à porter telles quelles
+
+Elles corrigent des lignes écrites au passage 06 et reprises depuis :
+
+1. **`curl` n'est pas réinitialisé par Persée sur le chemin `/doc/page/`.** Les resets rencontrés
+   venaient du **proxy d'agent** (`ws_closed_mid_exchange`, tunnel fermé en cours d'échange), et la
+   reprise avec relances a obtenu les 81 pages d'Albou en `HTTP 200`. La cause n'était pas là où le
+   passage 06 l'avait placée.
+2. **L'endpoint image d'Internet Archive est plafonné** : les dérivés `_1500` et `_2000` rendent le
+   même fichier. Demander plus grand ne sert à rien.
+
+Ce qui se confirme, en revanche : **le PDF complet `docAsPDF` de Persée répond `403`** — corps
+« This resource is protected by altcha », constaté par trois appels successifs, non contourné —, et
+le recoupement se fait donc sur l'image de page.
+
+### Ce que la phase 3 a coûté et rendu, première mesure
+
+**Quatre cartes et quatre approfondissements dans la même nuit**, ce qu'aucune phase 1 ni phase 2
+n'avait fait. Le lot visait quatre cartes et en a rendu quatre, toutes citées, ce qui tient la règle
+« deux cartes solides valent mieux que huit fragiles » sans avoir eu à s'en servir.
+
+**Le coût de surveillance reste nul, et la courbe du passage 09 se prolonge en phase 3** : aucun
+agent n'a eu besoin d'un « écris maintenant », ni les quatre rédacteurs d'approfondissement, ni la
+chaîne documentaire. La contre-mesure du chantier C reste écrite sans avoir servi depuis le
+passage 07.
+
+**Deux rédacteurs d'approfondissement ont corrigé leur texte après avoir rendu leur compte rendu**,
+comme au passage 08. **La parade tient** : reprojeter une dernière fois avant les contrôles de
+fermeture, ce qui a été fait, et non projeter dès le dernier compte rendu.
+
+### Le chantier E est fermé, et c'était le mandat de la phase 3
+
+`ci.yml` et `pages.yml` lançaient `corpus:build` puis `git diff --exit-code src/content/generated/`,
+ce qui avait l'air de couvrir tout le répertoire projeté. **Mais `corpus:build` n'écrit que
+`concepts.generated.ts`** : `deepenings.generated.ts` n'est écrit que par `corpus:deepen`, que la CI
+ne lançait pas. Le garde existait, il ne gardait qu'une moitié, et c'est par là qu'une divergence
+réelle de l'approfondissement d'`effet-de-cadrage` a vécu trois jours dans le dépôt, du 29 au
+31 août.
+
+**Les deux workflows lancent désormais les deux projections avant le diff**, et le motif est écrit
+en commentaire à côté de la correction pour qu'il ne se reperde pas. Contrôle fait sur l'état
+courant : build 104, deepen 104, diff propre. **Les trois nuits de phase 2 n'avaient pas mandat d'y
+toucher ; la phase 3, qui écrit des cartes et des approfondissements dans la même nuit, l'avait, et
+c'est elle que ce trou aurait coûté le plus cher.**
+
+### Ce qui reste ouvert sur ce domaine, et commande le prochain passage sur lui
+
+- **Barre 1959 reste fermé après six routes essayées**, et c'est lui qui trancherait l'origine du
+  syntagme. L'API Google Books répond `429`, Internet Archive n'a pas l'ouvrage.
+- **La position de Reynaud dans la querelle n'a jamais été ouverte.** La pièce d'Albou porte
+  l'attaque, aux pages 7 et 10, et rien de la réponse.
+- **La critique du programme de Katona, annoncée au chapitre IV d'Albou 1962, n'est pas instruite**,
+  et c'est **la voie francophone ouverte vers Katona**, dont les deux ouvrages sont vérifiés fermés
+  en prêt numérique.
+- **La troisième carte de Tarde, sur les prix**, reste non citable : sa matière n'est vue qu'en
+  couche OCR dégradée du tome second.
+- **L'effet de dotation reste hors lot**, faute d'un thème qui puisse le porter sans reposer sur une
+  seule équipe d'auteurs.
+
 ## Passage 09/15 — 2026-09-01
 
 - branche      : `claude/zen-johnson-ilrf7b` (imposée par la session, pas `main`). **Le travail du passage 08 est fusionné dans `main`** (PR [#89](https://github.com/J-Rbs91/Curiosity/pull/89) puis [#90](https://github.com/J-Rbs91/Curiosity/pull/90), commit de merge `ffdb1d2`), et cette branche partait de `main` à jour, à ce commit : rien n'a été refait. Pull request [#91](https://github.com/J-Rbs91/Curiosity/pull/91) vers `main`, ouverte à la clôture, CI verte sur les trois checks (`corpus`, `app`, `gitleaks`), **puis fusionnée dans `main`** le 1er septembre à 06h09 UTC, commit de merge `08c2093`. **La nuit suivante repart donc de `main`**, et non de cette branche : tout le travail du passage 09 y est. Une suite documentaire, [#92](https://github.com/J-Rbs91/Curiosity/pull/92), rouvre la même branche depuis `main` après la fusion pour porter deux corrections aux fichiers d'état — la fusion elle-même, et ce que la nuit disait du serveur `documentary`. Elle ne touche à aucune carte. **Si elle n'est pas fusionnée, la nuit suivante la lit avant de partir de `main`** : la ligne « bloqué par » ci-dessous en dépend.
