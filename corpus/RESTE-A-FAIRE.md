@@ -582,7 +582,12 @@ une fois cette phase close.
 
 **Fermé le 2 septembre 2026, au passage 10, par la première nuit de phase 3.** Des deux remèdes
 envisagés, c'est le premier qui a été retenu : `npm run corpus:deepen` est lancé après
-`npm run corpus:build` et avant le `git diff --exit-code`, dans `ci.yml` comme dans `pages.yml`.
+`npm run corpus:build` et avant le `git diff --exit-code`, dans `ci.yml`, dans `pages.yml`, **et
+dans `deploy-vps.yml`, troisième workflow arrivé sur `main` pendant cette nuit même** par la pull
+request #80, qui portait le même garde à moitié. **Sur le chemin de déploiement, une projection
+divergente n'est pas seulement invisible : elle est mise en ligne.** Ce qu'il faut retenir pour la
+prochaine correction de ce genre : **un garde se cherche dans tous les workflows, pas dans ceux
+qu'on connaît**, et `git grep -n "corpus:build" -- .github/` le dit en une commande.
 L'autre voie, ajouter la projection des approfondissements au script `corpus:build` lui-même,
 aurait mêlé deux projections que le dépôt tient séparées depuis l'origine : le garde a été élargi,
 les scripts n'ont pas bougé. Le motif est écrit en commentaire à côté de la correction, dans les

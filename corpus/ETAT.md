@@ -22,9 +22,16 @@ répertoire. Or `corpus:build` n'écrit que `concepts.generated.ts` : `deepening
 écrit que par `npm run corpus:deepen`, que la CI ne lançait pas. **Une correction portée à un
 enregistrement de `corpus/deepenings/` sans reprojection passait donc la CI sans être vue**, et
 c'est arrivé : `effet-de-cadrage` a vécu du 29 au 31 août avec deux phrases divergentes entre son
-enregistrement maître et sa projection, corrigées au passage 08. **Les deux workflows lancent
+enregistrement maître et sa projection, corrigées au passage 08. **Les workflows lancent
 maintenant les deux projections avant le diff**, avec le motif écrit en commentaire à côté de la
 correction. Chantier E de [`RESTE-A-FAIRE.md`](RESTE-A-FAIRE.md), **fermé**.
+
+**Ils sont trois, et le troisième est arrivé pendant la nuit du 2 septembre** : `deploy-vps.yml`,
+fusionné dans `main` par la pull request #80, portait le même garde à moitié. La correction y a
+été portée aussi, après fusion de `main` dans la branche de la nuit. **C'est sur le chemin de
+déploiement qu'elle vaut le plus cher** : une projection divergente n'y serait pas seulement
+invisible, elle serait mise en ligne. **Un garde de projection se cherche dans tous les workflows**,
+et `git grep -n "corpus:build" -- .github/` le dit en une commande.
 
 **Les cent cartes affichent leur citation en français.** Vingt-six d'entre elles la montraient
 encore en anglais : la fiche déclarait `translation.kind: "none"`, ce qui était exact — le texte

@@ -129,11 +129,20 @@ ne lançait pas. Le garde existait, il ne gardait qu'une moitié, et c'est par l
 réelle de l'approfondissement d'`effet-de-cadrage` a vécu trois jours dans le dépôt, du 29 au
 31 août.
 
-**Les deux workflows lancent désormais les deux projections avant le diff**, et le motif est écrit
-en commentaire à côté de la correction pour qu'il ne se reperde pas. Contrôle fait sur l'état
+**Les workflows lancent désormais les deux projections avant le diff**, et le motif est écrit en
+commentaire à côté de la correction pour qu'il ne se reperde pas. Contrôle fait sur l'état
 courant : build 104, deepen 104, diff propre. **Les trois nuits de phase 2 n'avaient pas mandat d'y
 toucher ; la phase 3, qui écrit des cartes et des approfondissements dans la même nuit, l'avait, et
 c'est elle que ce trou aurait coûté le plus cher.**
+
+**Ils sont trois, et non deux, et la nuit l'a appris après avoir ouvert sa pull request.** `main` a
+bougé pendant le passage : la pull request [#80](https://github.com/J-Rbs91/Curiosity/pull/80) y a
+fusionné un troisième workflow, `deploy-vps.yml`, **qui porte le même garde à moitié**. La branche
+de la nuit a donc fusionné `main` — sans conflit — et la correction y a été portée aussi.
+**C'est là qu'elle vaut le plus cher** : sur le chemin de déploiement, une projection divergente ne
+serait pas seulement invisible, elle serait mise en ligne. **Leçon à porter : un garde de
+projection se cherche dans tous les workflows, pas dans ceux qu'on connaît**, et un `git grep` sur
+`corpus:build` dans `.github/` le dit en une commande.
 
 ### Ce qui reste ouvert sur ce domaine, et commande le prochain passage sur lui
 
