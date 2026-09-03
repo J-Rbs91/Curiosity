@@ -1,4 +1,4 @@
-# État du corpus — 2 septembre 2026
+# État du corpus — 3 septembre 2026
 
 Écrit sur le disque parce qu'une session a déjà été coupée en cours de route : ce fichier
 existe pour qu'une reprise reparte des fichiers, et non de la mémoire de quelqu'un.
@@ -6,13 +6,14 @@ existe pour qu'une reprise reparte des fichiers, et non de la mémoire de quelqu
 Ce fichier dit ce que le corpus **est**. Ce qui lui **manque**, et par quel bout le prendre,
 est dans [`corpus/RESTE-A-FAIRE.md`](RESTE-A-FAIRE.md).
 
-`npm run corpus:validate` : **108 enregistrements, 104 validés, 0 erreur, 83 avertissements.**
-`npm run corpus:deepen` : **104 approfondissements pour 104 cartes validées**, 152 648 mots,
-1 468 en moyenne. Fin de sortie : **rien**. Il n'y a plus aucune carte validée sans
+`npm run corpus:validate` : **112 enregistrements, 108 validés, 0 erreur, 87 avertissements.**
+`npm run corpus:deepen` : **108 approfondissements pour 108 cartes validées**, 158 917 mots,
+1 471 en moyenne. Fin de sortie : **rien**. Il n'y a plus aucune carte validée sans
 approfondissement, et **les onze domaines sont entièrement servis**. L'écart entre ce qui est
 validé et ce qui est servi, ouvert le 23 août et remonté à trente-quatre cartes le 28, a été
-refermé au passage 09 le 1er septembre ; le passage 10 l'a rouvert de quatre cartes et refermé la
-même nuit, la phase 3 se terminant par les approfondissements des cartes qu'elle crée.
+refermé au passage 09 le 1er septembre ; les passages 10 et 11 l'ont rouvert de quatre cartes
+chacun et refermé la même nuit, la phase 3 se terminant par les approfondissements des cartes
+qu'elle crée.
 `npm test` : **482 tests, 0 échec.** `npm run lint` et `npm run corpus:build` : sans erreur.
 
 **Le garde de la CI couvre désormais les deux fichiers du répertoire projeté**, et c'est la
@@ -60,7 +61,7 @@ candidat mal placé part désormais chez un voisin ouvert, ou ne s'instruit pas.
 | Cybernétique | 4 | 12 | 12 |
 | Systems Thinking | 3 | 7 | 7 |
 | Science de la décision | 2 | 8 | 8 |
-| Sociologie du travail | 1 | 7 | 7 |
+| Sociologie du travail | 1 | 11 | 11 |
 | Économie comportementale | 1 | 8 | 8 |
 | Operations Management | 3 | 8 | 8 |
 | Psychologie du travail | 2 | 7 | 7 |
@@ -75,25 +76,190 @@ contre ce fichier.** Elle est vide. **La condition B de la routine est donc faus
 première fois depuis le 28 août, et la phase 3 commence** : aucun domaine n'est vide, aucune carte
 n'est sans approfondissement, c'est la condition C qui décide désormais.
 
-**La phase 3 a eu lieu une fois, le 2 septembre, et elle a pris `behavioral-economics`** : le
-domaine désigné par le critère de repli, faute d'enrichissement au journal pour quiconque, comme
-celui qui avait le moins de cartes validées. Il en avait quatre, il en a huit, **et il n'est plus
-le moins doté du corpus**.
+**La phase 3 a eu lieu deux fois.** Le 2 septembre elle a pris `behavioral-economics`, le domaine
+désigné par le critère de repli, faute d'enrichissement au journal pour quiconque, comme celui qui
+avait le moins de cartes validées : il en avait quatre, il en a huit. Le 3 septembre elle a pris
+`sociology-of-work`, désigné par le même critère de repli puis par l'ordre de
+`src/content/taxonomy.ts`, qui tranchait une égalité à sept entre trois domaines : il en avait
+sept, **il en a onze, et il est désormais le troisième domaine du corpus par le volume**.
 
-**Le domaine que la nuit suivante prendra se déduit de la même règle.** `behavioral-economics` a
-désormais un enrichissement au journal, daté du 2 septembre : il sort de la rotation jusqu'à ce que
-les autres soient passés. Aucun autre n'en a, donc le critère de repli s'applique de nouveau et
-désigne **celui qui a le moins de cartes validées : trois domaines sont à égalité avec sept**,
-`sociology-of-work`, `work-psychology` et `systems-thinking`. **L'ordre de `src/content/taxonomy.ts`
-tranche l'égalité et désigne `sociology-of-work`.** Le tableau ci-dessus est le décompte qui
-tranche, et `npm run corpus:audit` le rend à la demande.
+**Le domaine que la nuit suivante prendra se déduit de la même règle, et l'égalité est plus large
+qu'hier.** `behavioral-economics` et `sociology-of-work` ont désormais un enrichissement au
+journal, daté du 2 et du 3 septembre : ils sortent de la rotation jusqu'à ce que les autres soient
+passés. Aucun des neuf autres n'en a, donc le critère de repli s'applique de nouveau et désigne
+**celui qui a le moins de cartes validées : `work-psychology` et `systems-thinking` sont à égalité
+avec sept**, et l'ordre de `src/content/taxonomy.ts` tranche l'égalité en plaçant
+`work-psychology` (famille 1, order 3) avant `systems-thinking` (famille 3). **C'est donc
+`work-psychology`.** Le tableau ci-dessus est le décompte qui tranche, et `npm run corpus:audit`
+le rend à la demande.
 
 **Les quatre familles sont complètes.** « Comprendre le pilotage » et « Comprendre le travail
 réel » l'étaient depuis le 23 août, « Comprendre la production et les systèmes » depuis le 25, et
 « Comprendre les humains et les organisations » l'est depuis le 28 : elle était la dernière
 incomplète, avec trois domaines fermés sur quatre au 25 août.
 
-# 0. Économie comportementale enrichie — lot du 2 septembre 2026 (passage 10), publié
+# 0. Sociologie du travail enrichie — lot du 3 septembre 2026 (passage 11), publié
+
+**Deuxième nuit de phase 3.** Conditions A et B fausses, condition C vraie ; la règle a désigné
+`sociology-of-work` sans arbitrage, comme le moins doté à égalité, l'ordre de `taxonomy.ts`
+tranchant l'égalité. Priorités 1 et 2 sans objet, les deux thèmes vides étant en sociologie des
+organisations et `queue.json` ne couvrant que ce domaine : **c'est la priorité 3 qui a commandé,
+les angles morts de `corpus/map/sociology-of-work.scouting.md`**.
+
+**Quatre cartes validées, quatre citations, quatre `PASS` au premier tour sur les quatre
+questions.** Le domaine passe de sept à onze cartes, le corpus de cent quatre à cent huit. Les
+quatre approfondissements ont été écrits dans la foulée, 1 514 à 1 680 mots.
+
+| carte | source primaire | thème |
+|---|---|---|
+| `predominance-du-conflit-sur-la-negociation` | Dassa 1983, *Sociologie du travail* 25-1, p. 43 | `conflit-et-greve` |
+| `travail-sale-et-division-morale-du-travail` | Hughes 1958, *Men and Their Work*, p. 49 | `groupes-professionnels` |
+| `effet-societal` | Maurice, Sellier & Silvestre 1979, *RFS* 20-2, p. 363 | `qualification-et-hierarchie` |
+| `classification-negociee-et-salaire-effectif` | Dubois 1982, *Économie et statistique* 140, p. 11 | `qualification-et-hierarchie` |
+
+Un thème a été forgé, `qualification-et-hierarchie`, et il porte **deux** cartes de deux auteurs
+et de deux textes distincts, ce qui était la condition. **Rien n'a été ajouté à
+`src/content/themes.ts`** : les quatre fiches déclarent `domain: "sociology-of-work"` et portent
+leur thème par `theme_labels`, selon la convention déjà suivie par les cinq cartes du domaine.
+Les deux thèmes déclarés sans carte, `autorite-domination` et `apprentissage-organisationnel`,
+sont donc toujours deux, et non trois.
+
+## La dette dominante du domaine est soldée
+
+**C'est le fait de la nuit.** Les sept cartes antérieures de `sociologie du travail` portaient
+toutes l'avertissement « aucune source secondaire affichée » : sept sur sept. **Les quatre
+nouvelles portent chacune au moins une secondaire ouverte et lue dans son corps**, et aucune ne
+déclenche l'avertissement. Les quatre seuls avertissements ajoutés par ce lot portent sur les
+thèmes nouveaux, pas sur les sources.
+
+Le geste vient du passage 10, qui avait affiché la première secondaire du dépôt, et il s'est
+appliqué ici quatre fois avec sa leçon : **une source secondaire ouverte ne se résume pas par son
+titre, et ce qu'elle n'atteste pas se dit.** Chapoulie 1997 porte sur la manière de faire de
+Hughes et n'expose jamais le sale boulot ; Segrestin 2019 ne mentionne ni Dassa ni son article et
+n'atteste donc rien de sa réception ; Saglio 2007 ne cite pas Dubois et impute le décrochage à
+une autre cause ; d'Iribarne 1991 n'est pas un commentaire favorable mais une objection, et il
+vise l'ouvrage de 1982, non l'article de 1979 porté par la carte. Les quatre réserves sont
+écrites en `notes`.
+
+## Ce que le contrôle a attrapé
+
+**Rien qui ait renvoyé une carte**, pour la troisième fois seulement dans ce corpus. Les
+contrôleurs ont relevé trois choses hors des quatre questions, et l'une a été **comblée plutôt
+qu'étiquetée** :
+
+- Le `doi_isbn` de la source primaire de Dassa portait l'ISSN de la revue là où l'article a son
+  DOI propre. Le trou a été comblé : `10.3406/sotra.1983.1912` résolu 200 par Crossref avant
+  écriture, notice concordante, DOI porté sur la fiche. Même geste que sur
+  `fonctions-sociales-de-la-greve`, et c'est le test de la §3 du workflow appliqué dans le bon
+  sens : répondre à la question plutôt que la rendre plus petite.
+- **Le titre de Dassa a trois états**, et la fiche suit l'imprimé : la page de titre porte
+  « Conflits ou négociation ? » au pluriel, les titres courants portent le singulier, et Persée
+  comme Crossref ont suivi les titres courants.
+- La conclusion « Entreprise et société » de Maurice, Sellier & Silvestre commence p. 362 et non
+  363 ; la page de la citation, elle, était juste.
+
+**Un incident de dispositif, sur un piège déjà connu.** Le verdict de la carte de Dubois est sorti
+en JSON invalide, à cause de guillemets doubles imbriqués (`"qualification"` cité dans une note),
+le même piège d'échappement rencontré aux passages 07 et 08. Réparé par l'échappement seul, aucun
+caractère du contrôleur modifié.
+
+## Ce que la relecture sur image a corrigé, et une fois elle a décidé du périmètre
+
+- **Dubois.** L'encadré méthodologique de la page 7, qui déclare que les quatre entreprises ne
+  prétendent pas être représentatives et que l'objet est le lien formation / qualification /
+  salaire, **n'existe que sur l'image** : la couche texte de Persée l'omet purement et simplement.
+  **C'est la pièce qui fait passer le test « une monographie n'est pas un concept »**, le rejet
+  que le périmètre de ce domaine annonçait comme le plus fréquent. Une lecture faite sur le seul
+  OCR aurait manqué ce qui décidait de la fiche.
+- **Maurice, Sellier & Silvestre.** L'OCR de Persée écrit « societal » sans accent à ses quatre
+  occurrences ; l'image montre l'accent. Le nom de François Sellier est rétabli avec sa cédille,
+  que la page 331 porte et que la signature de la page 364 omet.
+- **Dassa.** L'OCR rend « résultais » pour *résultats* p. 39. **Piège inverse à la page 44** :
+  l'imprimé porte lui-même *trarail* et *sup*, que l'OCR reproduit fidèlement, ainsi qu'un
+  « Laboratoire de Sociologie du Travail et des Relations Proportionnelles » qui est une coquille
+  de l'imprimé et ne se recopie pas.
+
+## Ce que les agents ont refusé d'écrire
+
+- **Le chapeau liminaire d'un article n'est pas de son auteur.** Deux lecteurs ont écarté le
+  passage le plus net de leur texte pour cette seule raison, chez Dassa p. 32 et chez Dubois p. 3 :
+  rien sur la page ne permet de dire s'il est de l'auteur ou de la rédaction de la revue.
+- **Une citation qui se retourne hors contexte.** La phrase de Dassa p. 39, « la grande entreprise
+  est donc un handicap », 112 caractères et parfaitement citable, se lit hors contexte comme un
+  handicap *pour l'entreprise* alors qu'elle est écrite du point de vue des grévistes.
+- **Une définition trop longue ne se coupe pas de force.** La définition canonique de l'effet
+  sociétal, p. 364, fait 225 caractères et sa meilleure coupe honnête 153 : elle a été écartée au
+  profit d'une phrase de la p. 363 qui tient en 136 sans aucune coupe, et conservée en entier dans
+  les réserves.
+- **Une traduction publiée qu'on n'a pas ouverte ne se cite pas** : *Le regard sociologique*
+  (Chapoulie dir., EHESS, 1996) n'a pas été ouvert, et la carte de Hughes déclare sa traduction
+  `in-house`.
+- **Une paternité ne se déduit pas d'un titre.** « Effet sociétal » figure déjà au titre du
+  rapport LEST d'octobre 1977 des mêmes auteurs ; l'article de 1979 ne le rattache à personne et
+  n'en revendique pas la paternité, et l'`attribution_note` s'arrête là. De même la distinction
+  qualification de l'individu / de l'emploi n'est pas de Dubois, qui la donne pour acquise en
+  renvoyant au CEREQ 1978 et à Salais 1976 : la fiche nomme ce qui est de lui, l'emboîtement des
+  trois niveaux et la déconnexion du salaire au rendement.
+
+## Trois rectifications de méthode, à porter telles quelles
+
+Elles corrigent ou précisent des lignes écrites aux passages 06 et 10, et elles ne se repaient
+pas :
+
+1. **Le motif d'URL de page de Persée n'est pas binaire.** Le passage 06 avait établi qu'il vaut
+   `_T1_` ou `_F_` selon le fascicule. Il vaut aussi **`_T12_`**, constaté sur
+   `socco_1150-1944_1997_num_27_1_1465`. La règle reste la seule sûre : **il se lit sur la notice
+   de l'article**, il ne se présume dans aucun des trois sens.
+2. **Le dérivé d'image le plus lisible de Persée est `_1000`, et demander plus grand rend plus
+   petit.** `_1400` et `_2000` rendent un fichier inférieur à `_1000` (480 ko), et `_710` fait
+   154 ko. C'est le pendant, sur Persée, du plafonnement déjà constaté sur Internet Archive au
+   passage 10.
+3. **Le `page_numbers.json` d'un item Internet Archive peut répondre vide**, et le contournement
+   est le `_djvu.xml`. Sur `mentheirwork00hugh`, le décalage entre la page imprimée et l'image est
+   constant, n = page + 5, établi par lecture et non par inférence : c'est le piège que trois
+   cartes avaient payé au passage 04.
+
+## Les réserves conservées
+
+- **La réception de l'article de 1979 de Maurice, Sellier & Silvestre n'est attestée par
+  personne.** Ses deux sources secondaires commentent l'ouvrage de 1982, non l'article, et toutes
+  deux sont en `consulted: partial`. La carte le dit.
+- **Le mécanisme de l'effet sociétal est établi sur un seul couple de pays**, et les auteurs le
+  posent eux-mêmes p. 363 : leur démarche est « hypothético-inductive » et « la généralisation
+  théorique à laquelle elle prétend suppose la multiplication des expériences comparatives ».
+- **Les tableaux I à IV de l'article de 1979 ne sont rendus par l'OCR que par leur légende.**
+  Aucun chiffre du dossier n'en provient : les coefficients de variation cités viennent du texte
+  courant de la page 331.
+- **La déqualification reste sans source primaire atteignable.** Braverman 1974 est vérifié fermé
+  dans ses deux éditions anglaises, et la traduction Maspero 1976 rend **zéro résultat** sur
+  Internet Archive. La piste est close, et c'est un constat, pas une lacune à combler par autre
+  chose.
+
+## Les angles morts qui commandent le prochain passage sur ce domaine
+
+- **Hughes, « Licence and Mandate »**, *Men and Their Work* ch. 6, p. 78-87. Repéré par le lecteur
+  **dans un volume déjà ouvert et vérifié**, et délibérément non instruit pour ne pas écrire deux
+  cartes sur un même texte dans un même lot. **C'est l'angle mort le moins cher du domaine** :
+  accès acquis, décalage de pagination connu, secondaire francophone déjà lue. À prendre en
+  premier.
+- **Touraine 1957**, « Qualification, salaire et homogénéité du groupe ouvrier », *Revue
+  économique* 8-5, Persée `reco_0035-2764_1957_num_8_5_407260`. **Texte différent du Touraine 1955
+  clos au balayage d'ouverture** : autre revue, autre objet. Non vérifié page à page, et le risque
+  est à trancher sur pièce, une note de discussion pouvant n'être ni un concept ni du périmètre.
+- **Salais 1976**, *Économie et statistique* 81, accès vérifié 200. Porte la distinction que
+  Dubois reprend sans la revendiquer, mais sa frontière avec le hors-périmètre « statistique
+  publique commentée sans thèse » n'est pas tranchée. À trancher par la lecture, pas par la revue.
+- **Piore 1975 reste un échec réseau, et non un vide.** Sixième HTTP 429 cumulé sur le bitstream
+  MIT, plus 429 sur l'API CORE et sur Semantic Scholar. **Aucun `access-restricted-item` n'a
+  jamais été vu sur cet item** : le texte n'est pas fermé par nature, il est limité en débit.
+- **Le numéro 344 du *Bulletin de psychologie* est clos, et négativement.** Son sommaire a été
+  dépouillé en entier, cinquante-cinq articles ; le seul qui méritait vérification, Labrousse
+  p. 493-495, rapporte son objet à un fait psychosocial individuel et reste côté
+  `work-psychology`. **Ce gisement ne doit plus recevoir de budget.**
+- **Les déterminants de marché des écarts de salaire inter-entreprises**, exposés par Dubois
+  p. 11-12, sont consignés en angle mort vers `behavioral-economics`, et non rejetés.
+
+# 0 bis. Économie comportementale enrichie — lot du 2 septembre 2026 (passage 10), publié
 
 **Première nuit de phase 3 de la routine**, et la première où des cartes et leurs
 approfondissements sont écrits dans la même nuit. Conditions A et B fausses, condition C vraie :

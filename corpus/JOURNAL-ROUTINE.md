@@ -5,6 +5,182 @@ coup d'œil ce que la précédente a fait, sur quelle branche elle l'a laissé, 
 reprendre. **Les scripts priment sur ce fichier** : il dit ce qui a été tenté et pourquoi, ils
 disent ce qui est.
 
+## Passage 11/15 — 2026-09-03
+
+- branche      : `claude/zen-johnson-48i2i8` (imposée par la session, pas `main`). **Le travail du passage 10 est fusionné dans `main`**, pull request [#94](https://github.com/J-Rbs91/Curiosity/pull/94), commit de merge `7bc7e4f`, et **cette branche partait exactement de là** : constaté par `git log claude/zen-johnson-48i2i8..origin/main`, vide dans les deux sens. **Rien n'a été refait.** Le travail de la nuit est poussé sur cette branche. Tant qu'il n'est pas fusionné dans `main`, **la nuit suivante reprend depuis cette branche**, et non depuis `main`.
+- phase        : **3 (enrichissement d'un domaine), et c'est la deuxième de la routine.** Condition A fausse, aucun domaine à zéro carte validée depuis le passage 06. Condition B fausse, `corpus:deepen` projetant 104 approfondissements pour 104 cartes et sa fin de sortie ne listant rien. La condition C décidait donc, et elle décidait seule.
+- domaine      : **`sociology-of-work`**, désigné sans arbitrage. `behavioral-economics` ayant un enrichissement au journal daté du 2 septembre, il sort de la rotation ; aucun autre n'en a, donc le critère de repli s'applique et désigne celui qui a le moins de cartes validées, **sept, à égalité entre `sociology-of-work`, `work-psychology` et `systems-thinking`**, et l'ordre de `src/content/taxonomy.ts` tranche l'égalité en plaçant `sociology-of-work` en tête (ligne 72, contre 82 et 136). En son sein, les priorités 1 et 2 sont sans objet, les deux thèmes déclarés sans carte étant en sociologie des organisations et `corpus/map/queue.json` ne couvrant que ce même domaine : **la priorité 3 commande, les angles morts de `corpus/map/sociology-of-work.scouting.md`**.
+- validées     : **4 — `predominance-du-conflit-sur-la-negociation` (Dassa 1983), `travail-sale-et-division-morale-du-travail` (Hughes 1958), `effet-societal` (Maurice, Sellier & Silvestre 1979), `classification-negociee-et-salaire-effectif` (Dubois 1982), les 4 avec citation**, toutes relues sur l'image de la page, **et les 4 en `PASS` au premier tour sur les quatre questions**. **Le domaine passe de 7 à 11 cartes** et devient le troisième du corpus par le volume. Le corpus passe de 104 à **108 cartes**.
+- en review    : 0
+- rejetées     : 0
+- approfondies : **4 — les quatre cartes de la nuit**, la phase 3 se terminant par les approfondissements des cartes qu'elle vient de créer. 1 514 à 1 680 mots, aucun refus de projection, aucun renvoi. `corpus:deepen` projette **108 approfondissements pour 108 cartes**, 158 917 mots, 1 471 en moyenne, **et la file est de nouveau vide à la clôture, comme elle l'était au lever**.
+- contrôles    : validate 0 erreur (112 enregistrements, 108 validés, 87 avertissements, **les quatre nouveaux portant tous sur un thème nouveau et aucun sur les sources**) · build 108 concepts · deepen 108/108 · `git diff --exit-code src/content/generated/` propre après reprojection · test 482/0 · lint 0 · audit : `Sociologie du travail` passe de **1 thème / 7 validés** à **1 thème / 11 validés**. Rien à drainer dans `src/content/fixtures/concepts.fixture.ts` : `corpus:build` n'a listé aucune entrée caduque, et aucun des quatre identifiants n'a d'homonyme d'échafaudage.
+- commit       : `fe304e1` pour les quatre cartes et la cartographie, `f00a43e` pour les approfondissements et la projection.
+- bloqué par   : **le serveur MCP `documentary`, en échec de connexion (`CONNECTION_CLOSED`) pour la sixième nuit consécutive.** Constat fait par appel réel avant le lot, et non sur la foi du journal : aucun outil `mcp__documentary__*` n'est exposé à la session. **Son retour du 1er septembre à 06h10 ne s'est toujours pas confirmé.** La nuit a donc travaillé sans vérification structurée de référence, par `WebSearch`, `WebFetch`, `curl`, l'API Crossref directe et l'API Unpaywall. **Deux textes ont été écartés pour cette seule raison**, Penissat 2009 et *Le regard sociologique*, faute d'en avoir pu lire une ligne de corps : la règle « une référence introuvable n'existe pas » a été appliquée durcie, et elle a coûté deux sources, pas une carte. **Second blocage, de dispositif, et il est identique à celui du passage 10** : `Task` n'était toujours pas exposé à l'orchestrateur, qui a lancé ses sous-agents en headless, un processus par maillon, `claude -p --agent <nom>` avec le prompt en stdin et les outils de chaque définition passés par `--allowedTools`. **Deux nuits de suite, donc : ce n'est pas un accident, c'est l'état du dispositif**, et la nuit suivante n'a pas à le rediagnostiquer.
+- la nuit suivante prend : **phase 3, et `work-psychology`.** Les conditions A et B resteront fausses. `behavioral-economics` et `sociology-of-work` ont désormais un enrichissement au journal, daté du 2 et du 3 septembre, et sortent de la rotation jusqu'à ce que les autres soient passés ; aucun des neuf autres n'en a, donc le critère de repli s'applique de nouveau et désigne **celui qui a le moins de cartes validées : `work-psychology` et `systems-thinking` sont à égalité avec sept**, et l'ordre de `src/content/taxonomy.ts` tranche en plaçant `work-psychology` (ligne 82) avant `systems-thinking` (ligne 136). **C'est donc `work-psychology`.** En son sein, la priorité 1 est sans objet, la priorité 2 aussi, et **la priorité 3 commande : les angles morts de `corpus/map/work-psychology.scouting.md`**, dont la section « Quatre reprises laissées par le lot du 26 août » de `RESTE-A-FAIRE.md` tient déjà la liste avec l'accès constaté. La nuit se terminera par les approfondissements des cartes qu'elle aura créées.
+
+### Ce que cette nuit a établi, en une phrase
+
+La deuxième nuit de phase 3 rend quatre cartes au domaine désigné par la rotation, quatre `PASS`
+au premier tour, **et elle solde la dette de sources secondaires d'un domaine entier** : les sept
+cartes antérieures n'en affichaient aucune, les quatre nouvelles en portent chacune une, ouverte
+et lue dans son corps.
+
+### La dette de secondaires, soldée pour un deuxième domaine
+
+Le passage 10 avait affiché **la première source secondaire du dépôt** après six lots où
+l'avertissement « aucune source secondaire affichée » n'avait pas de remède. Cette nuit-ci
+généralise le geste : **quatre cartes, quatre secondaires ou réceptions francophones ouvertes**,
+et les seuls avertissements que le lot ajoute portent sur les thèmes nouveaux.
+
+**Et la leçon du 2 septembre s'est appliquée quatre fois, dans le sens qui coûte.** Une source
+secondaire ouverte ne se résume pas par son titre, et ce qu'elle **n'atteste pas** se dit :
+
+- **Chapoulie 1997** porte sur la manière de faire de Hughes et **n'expose jamais le sale
+  boulot** ; il avertit p. 108 que le privilège accordé aux positions de faible statut est
+  seulement méthodologique.
+- **Segrestin 2019** ne mentionne ni Dassa ni son article de 1983 : il **n'atteste rien** de sa
+  réception, et la carte ne lui fait rien dire.
+- **Saglio 2007** ne cite pas Dubois et impute le décrochage du salaire à une autre cause.
+- **D'Iribarne 1991** n'est pas un commentaire favorable mais **une objection**, et il vise
+  l'ouvrage de 1982, non l'article de 1979 que la carte porte.
+
+**Conséquence à porter aux nuits qui iront chercher d'autres secondaires** : une secondaire vaut
+pour ce que son corps établit, jamais pour la caution que son titre semble donner. Les quatre
+réserves sont écrites en `notes`, et deux des trois sources en `consulted: partial` le sont pour
+cette raison exacte.
+
+### Ce que le contrôle aveugle a réellement attrapé
+
+| question | résultat sur quatre fiches |
+|---|---|
+| citation verbatim, à l'endroit annoncé | 4/4 dès le premier passage |
+| attribution | 4/4 dès le premier passage |
+| prose fidèle aux sources | 4/4 dès le premier passage |
+| sources qui résolvent | 4/4 dès le premier passage |
+
+**Aucun renvoi, pour la troisième fois seulement dans ce corpus.** Ce n'est pas de l'indulgence :
+les contrôleurs ont rendu trois remarques hors mandat, et **la première a été comblée plutôt
+qu'étiquetée**.
+
+- **Le `doi_isbn` de Dassa portait l'ISSN de la revue** là où l'article a son DOI propre. Le trou
+  a été comblé : `10.3406/sotra.1983.1912` résolu 200 par Crossref **avant écriture**, notice
+  concordante, DOI porté sur la fiche. C'est le test de la §3 du workflow appliqué dans le bon
+  sens, et c'est le même geste que sur `fonctions-sociales-de-la-greve`.
+- **Le titre de Dassa a trois états**, et la fiche suit l'imprimé : page de titre au pluriel
+  « Conflits ou négociation ? », titres courants au singulier, Persée et Crossref ayant suivi les
+  titres courants.
+- La conclusion de Maurice, Sellier & Silvestre commence p. 362 et non 363 ; la page de la
+  citation était juste.
+
+**Un incident de dispositif, sur un piège déjà connu et déjà écrit.** Le verdict de la carte de
+Dubois est sorti en JSON invalide, sur les guillemets doubles imbriqués repérés aux passages 07 et
+08. Réparé par l'échappement seul, aucun caractère du contrôleur modifié. **La parade écrite reste
+la bonne** : citer par fragments courts, ou rendre la portion omise par « […] ».
+
+### La relecture sur image a décidé du périmètre, et pas seulement de la lettre
+
+C'est le fait de méthode le plus important de la nuit, parce qu'il déplace ce que la règle sert à
+faire.
+
+**Chez Dubois, l'encadré méthodologique de la page 7 n'existe que sur l'image** : la couche texte
+de Persée l'omet purement et simplement. C'est lui qui déclare que les quatre entreprises ne
+prétendent pas être représentatives et que l'objet est le lien formation / qualification /
+salaire. **C'est la pièce qui fait passer le test « une monographie n'est pas un concept »**, le
+rejet que le périmètre de ce domaine annonçait comme le plus fréquent. Une lecture faite sur le
+seul OCR aurait manqué non pas un mot, mais **ce qui décidait de l'admission de la fiche**.
+
+Jusqu'ici, la relecture sur image servait à rattraper des écarts de lettre. Elle a servi ici à
+trancher une frontière. Trois écarts de lettre ont été rattrapés par ailleurs : l'OCR de Persée
+écrit « societal » sans accent à ses quatre occurrences chez Maurice, Sellier & Silvestre, et
+« résultais » pour *résultats* chez Dassa p. 39. Et **le piège inverse s'est présenté une
+troisième fois** : à la page 44 de Dassa, l'imprimé porte lui-même *trarail*, *sup* et un
+« Laboratoire de Sociologie du Travail et des Relations **Proportionnelles** », que l'OCR
+reproduit fidèlement et qui ne se recopient pas.
+
+### Ce que les agents ont refusé d'écrire, et c'est encore le meilleur signe
+
+- **Le chapeau liminaire d'un article n'est pas de son auteur.** Deux lecteurs ont écarté le
+  passage le plus net de leur texte pour cette seule raison, chez Dassa p. 32 et chez Dubois p. 3.
+  **Règle nouvelle et à porter** : rien sur la page ne permet de dire si un chapeau est de
+  l'auteur ou de la rédaction, donc il ne se cite pas.
+- **Une citation qui se retourne hors contexte.** La phrase de Dassa p. 39, « la grande entreprise
+  est donc un handicap », 112 caractères et parfaitement citable, se lit hors contexte comme un
+  handicap *pour l'entreprise* alors qu'elle est écrite du point de vue des grévistes.
+- **Une définition trop longue ne se coupe pas de force.** La définition canonique de l'effet
+  sociétal, p. 364, fait 225 caractères, sa meilleure coupe honnête 153 : écartée au profit d'une
+  phrase de la p. 363 qui tient en 136 sans aucune coupe, et **conservée en entier dans les
+  réserves**. Même geste chez Dubois, dont la récapitulation de la p. 10 a trois membres
+  solidaires.
+- **Une traduction publiée qu'on n'a pas ouverte ne se cite pas** : *Le regard sociologique*
+  (EHESS, 1996) n'a pas été ouvert, et la carte de Hughes déclare sa traduction `in-house`.
+- **Une paternité ne se déduit pas d'un titre.** « Effet sociétal » figure déjà au titre du
+  rapport LEST d'octobre 1977 des mêmes auteurs ; l'article de 1979 ne le rattache à personne et
+  n'en revendique pas la paternité, et l'`attribution_note` s'arrête là. De même, la distinction
+  qualification de l'individu / de l'emploi n'est pas de Dubois, qui la donne pour acquise en
+  renvoyant au CEREQ 1978 et à Salais 1976.
+
+### Trois rectifications de méthode sur les plateformes, à porter telles quelles
+
+Elles corrigent ou précisent des lignes écrites aux passages 04, 06 et 10 :
+
+1. **Le motif d'URL de page de Persée n'est pas binaire.** Le passage 06 avait établi qu'il vaut
+   `_T1_` ou `_F_` selon le fascicule. **Il vaut aussi `_T12_`**, constaté sur
+   `socco_1150-1944_1997_num_27_1_1465`. La règle sûre est la seule qui reste : **il se lit sur la
+   notice de l'article**, et il ne se présume dans aucun des trois sens.
+2. **Le dérivé d'image le plus lisible de Persée est `_1000`, et demander plus grand rend plus
+   petit.** `_1400` et `_2000` rendent un fichier inférieur à `_1000` (480 ko), `_710` fait
+   154 ko. C'est, sur Persée, le pendant du plafonnement d'Internet Archive constaté au
+   passage 10, et la leçon se généralise : **sur ces deux plateformes, le plus grand dérivé
+   demandé n'est pas le meilleur.**
+3. **Le `page_numbers.json` d'un item Internet Archive peut répondre vide**, et le contournement
+   est le `_djvu.xml`. Sur `mentheirwork00hugh`, le décalage image / page imprimée est constant,
+   n = page + 5, **établi par lecture et non par inférence** : c'est exactement le piège qui avait
+   fait écrire une collation fausse à trois cartes au passage 04.
+
+### Trois angles morts fermés, un qui reste ouvert et n'est pas un vide
+
+**Fermés, et ils ne doivent plus recevoir de budget :**
+
+- **La traduction Maspero 1976 de Braverman rend zéro résultat** sur Internet Archive. Avec les
+  deux éditions anglaises de 1974 déjà vérifiées fermées en prêt numérique contrôlé, **la
+  déqualification reste sans source primaire atteignable**. C'est un constat, pas une lacune à
+  combler par autre chose.
+- **Le numéro 344 du *Bulletin de psychologie* est clos négativement**, son sommaire dépouillé en
+  entier, cinquante-cinq articles. Le seul qui méritait vérification, Labrousse p. 493-495, lu en
+  texte intégral, rapporte son objet à un fait psychosocial individuel et **reste côté
+  `work-psychology`** : la frontière écrite d'avance a tenu.
+- **Dassa 1983 n'était que repéré**, jamais vérifié en accès, faute de budget au balayage
+  d'ouverture. Il a rendu une carte, et c'était bien la reprise la moins chère du domaine.
+
+**Ouvert, et c'est un échec réseau, pas un vide :** **Piore 1975**, sixième HTTP 429 cumulé sur le
+bitstream MIT, plus 429 sur l'API CORE et sur Semantic Scholar. **Aucun `access-restricted-item`
+n'a jamais été vu sur cet item** : le texte n'est pas fermé par nature, il est limité en débit. Il
+se retente hors période de limitation, ou avec une clé d'API CORE si une nuit en obtient une.
+
+### Une entrée de la file voisine a été consommée, et c'est écrit dans la file
+
+`effet-societal` était le **rang 29 de `corpus/map/queue.json`**, la file de la sociologie des
+organisations, et il a été instruit ici. Deux écarts avec ce que cette file anticipait, tous deux
+inscrits dans son en-tête pour qu'une nuit de chantier B ne les redécouvre pas : **la source
+primaire n'est pas l'ouvrage PUF de 1982 mais l'article fondateur de 1979**, servi en texte
+intégral par Persée, ce qui rend caduque l'atteignabilité « FAIBLE À MOYENNE » inscrite pour le
+livre ; et **la carte est rangée en sociologie du travail**, la frontière se tranchant par l'unité
+dont le texte parle, le rapport social qui produit la hiérarchie et non l'organisation prise comme
+structure de règles. L'`id` est pris, et le validateur refusera tout doublon.
+
+### Ce que ce lot laisse ouvert sur ce domaine, et commande le prochain passage sur lui
+
+- **Hughes, « Licence and Mandate »**, *Men and Their Work* ch. 6, p. 78-87, repéré par le lecteur
+  **dans un volume déjà ouvert et vérifié**, délibérément non instruit pour ne pas écrire deux
+  cartes sur un même texte dans un même lot. **C'est l'angle mort le moins cher du domaine.**
+- **Touraine 1957**, *Revue économique* 8-5, Persée `reco_0035-2764_1957_num_8_5_407260`,
+  **texte différent du Touraine 1955 clos au balayage d'ouverture**, non vérifié page à page.
+- **Salais 1976**, accès vérifié 200, frontière non tranchée avec le hors-périmètre « statistique
+  publique commentée sans thèse ».
+- **Le salaire comme rapport de force reste à moitié ouvert** : une carte l'aborde désormais, par
+  la classification, et non par le conflit salarial lui-même.
+
 ## Passage 10/15 — 2026-09-02
 
 - branche      : `claude/zen-johnson-9itxcp` (imposée par la session, pas `main`). **Le travail des passages 07 à 09 est fusionné dans `main`**, y compris la suite documentaire [#92](https://github.com/J-Rbs91/Curiosity/pull/92) que le passage 09 laissait en suspens : `main` était au commit de merge `94b1086`, cette branche en part, et **rien n'a été refait**. Pull request [#93](https://github.com/J-Rbs91/Curiosity/pull/93) vers `main`, ouverte à la clôture, CI verte sur les trois checks (`corpus`, `app`, `gitleaks`), **puis fusionnée dans `main`** le 2 septembre à 06h17 UTC, commit de merge `00d7393`. **La nuit suivante repart donc de `main`**, et non de cette branche : tout le travail du passage 10 y est. Cette branche a été redémarrée depuis `main` après la fusion pour porter la présente correction, qui ne touche à aucune carte.
