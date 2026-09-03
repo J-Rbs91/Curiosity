@@ -1,0 +1,101 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "classification-negociee-et-salaire-effectif",
+  "slug": "classification-negociee-et-salaire-effectif",
+  "status": "VALIDATED",
+  "title": "Classification négociée et salaire effectif",
+  "themes": [
+    "qualification-et-hierarchie"
+  ],
+  "domain": "sociology-of-work",
+  "theme_labels": {
+    "qualification-et-hierarchie": "La qualification et la hiérarchie"
+  },
+  "authors": [
+    {
+      "name": "Pierre Dubois",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "L'article est signé d'un seul nom, relu sur le fac-similé de la page 3 : sous le titre figure la seule mention « par Pierre Dubois », renvoyant à une note d'affiliation. L'enquête n'est pas solitaire pour autant, et l'encadré de la page 7 le dit : elle a été financée par le ministère du Travail et a bénéficié de la collaboration du Centre d'études et des techniques de l'industrie de l'habillement. Un financement et une collaboration technique ne font pas une coécriture, et aucun coauteur n'est nommé. Une précision est en revanche nécessaire sur ce qui est de Dubois. La distinction entre qualification de l'individu et qualification de l'emploi n'est pas de lui : il la présente comme un acquis et sa note 1 renvoie à un ouvrage du CEREQ de 1978 et à Robert Salais, 1976. Ce qui est de lui est l'emboîtement des trois niveaux, convention de branche, pratiques d'entreprise, salaire, et la déconnexion entre classification et salaire qui en résulte.",
+  "quotation": {
+    "text": "[…] plus généralement, la pratique du salaire au rendement contribue à déconnecter le système de salaire du système de classification",
+    "reference": "Pierre Dubois, « Qualification et salaire dans l'habillement : approche monographique », Économie et statistique, n° 140, janvier 1982, p. 3-13 ; section « Prime de rendement et hiérarchie des salaires ».",
+    "locator": "p. 11",
+    "language": "fr",
+    "original_text": null,
+    "original_language": null,
+    "translation": {
+      "kind": "none",
+      "translator": null,
+      "edition": null
+    }
+  },
+  "hook": "Ce que gagne un ouvrier se lit-il dans la catégorie où on l'a classé ?",
+  "summary": "Sur quatre entreprises : la convention de branche ne classe que des postes, l'entreprise y mêle des critères d'individu, et le salaire au rendement s'en déconnecte.",
+  "sources": [
+    {
+      "label": "Pierre Dubois, « Qualification et salaire dans l'habillement : approche monographique », Économie et statistique, n° 140, janvier 1982, p. 3-13.",
+      "kind": "primary",
+      "locator": "p. 3-13, ici p. 3, 7 et 10-11",
+      "doi_isbn": "10.3406/estat.1982.4566",
+      "url": "https://www.persee.fr/doc/estat_0336-1454_1982_num_140_1_4566",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Jean Saglio, « Les arrêtés Parodi sur les salaires : un moment de la construction de la place de l'État dans le système français de relations professionnelles », Travail et Emploi, n° 111, 2007, p. 53-73.",
+      "kind": "secondary-academic",
+      "locator": "paragraphes 7, 68 et 82",
+      "doi_isbn": "10.4000/travailemploi.4652",
+      "url": "https://journals.openedition.org/travailemploi/4652",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Robert Salais, « Qualification individuelle et qualification de l'emploi : quelques définitions et interrogations », Économie et statistique, n° 81-82, 1976, p. 3-11.",
+      "kind": "secondary-academic",
+      "locator": "p. 3",
+      "doi_isbn": "10.3406/estat.1976.2368",
+      "url": "https://www.persee.fr/doc/estat_0336-1454_1976_num_81_1_2368",
+      "consulted": "partial"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle",
+    "date": "2026-09-03",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "CITATION — relue sur l'image de la page, pas seulement sur l'OCR. Fac-similé https://www.persee.fr/renderPage/estat_0336-1454_1982_num_140_1_4566/estat_0336-1454_1982_num_140_1_T1_0011_0000_1000.jpg (motif de page lu sur la notice, non présumé ; pied de page imprimé « POPULATION ACTIVE 11 »). Colonne 2, sous le titre de section « Prime de rendement et hiérarchie des salaires », je lis : « Enfin, plus généralement, la pratique du salaire au rendement contribue à déconnecter le système de salaire du système de classification : des ouvriers classés dans des catégories basses peuvent percevoir des salaires plus élevés que ceux qui occupent les postes du haut de la hiérarchie ouvrière et même que certains agents de maîtrise. » La fiche donne exactement ce texte à partir de « plus généralement », le […] initial couvrant la seule élision de « Enfin, ». Locator p. 11 et section annoncée : tous deux exacts. Aucune traduction en jeu (texte français d'origine, translation.kind = none, cohérent).",
+      "CITATION, point de vigilance vérifié — la fiche cite le verbe « déconnecter », alors que l'article emploie ailleurs le substantif « déconnection » (p. 3 « une certaine déconnection entre classification et salaire », p. 10 « La déconnection entre salaire moyen et... »). L'image de la p. 11 porte bien le verbe « déconnecter » dans le passage cité : pas de normalisation silencieuse.",
+      "ATTRIBUTION — signature relue sur le fac-similé de la p. 3 (https://www.persee.fr/renderPage/estat_0336-1454_1982_num_140_1_4566/estat_0336-1454_1982_num_140_1_T1_0003_0000_1000.jpg) : sous le titre, la seule mention « par Pierre Dubois * », l'astérisque renvoyant à « Pierre Dubois, professeur de sociologie à l'université de Lille III, est chercheur au Groupe de sociologie du travail du CNRS ». Aucun coauteur nommé. Crossref (api.crossref.org/works/10.3406/estat.1982.4566) et les métadonnées Persée (citation_author) ne donnent également qu'un auteur.",
+      "ATTRIBUTION — la réserve de la fiche est exacte et vérifiée sur pièce. La p. 3, col. 3, pose la distinction comme un acquis (« On peut opposer sommairement deux grands systèmes de qualification : celui basé sur la qualification de l'individu, celui basé sur la qualification de l'emploi occupé »), avec appel de note 1 renvoyant à « La qualification, de quoi parle-t-on ? », 1978, bibliothèque du CEREQ, La Documentation française, puis « R. Salais : Qualification individuelle et qualification de l'emploi, Économie et statistique, n° 81-82, octobre 1976 ». La fiche ne prête donc pas cette distinction à Dubois. Ce qu'elle lui attribue — l'emboîtement des trois niveaux et la déconnexion qui en résulte — est énoncé par l'article en propre : chapeau de la p. 3, « A un premier niveau, la convention collective exclut la prise en compte de l'individu [...] A un second niveau, les pratiques des entreprises sont souvent un mélange de critères liés aux postes et aux ouvriers qui les occupent. Enfin les salaires tiennent encore plus nettement compte des individus [...] Il en résulte une certaine déconnection entre classification et salaire. » Recherche complémentaire (WebSearch) sur un revendicant antérieur de cette thèse : rien qui contredise la fiche.",
+      "ATTRIBUTION — l'encadré de la p. 7 (fac-similé lu) confirme au mot près ce qu'en dit la fiche : « Les enquêtes ont été réalisées de mai à juillet 1980. Elles ont été financées par le ministère du Travail et ont bénéficié de la collaboration du Centre d'études et des techniques de l'industrie de l'habillement (CETIH). » Financement et collaboration technique, sans coauteur : la fiche a raison de ne pas en tirer une coécriture.",
+      "SOURCES 1/3 — Dubois : DOI 10.3406/estat.1982.4566 résolu par api.crossref.org → titre, auteur unique, « Economie et statistique », vol. 140, p. 3-13, 1982. Le mois se lit sur la notice Persée, qui propose elle-même la citation « In: Economie et statistique, n°140, Janvier 1982. [...] pp. 3-13 ». La notice liste les pages T1_0003 à T1_0013 : l'étendue p. 3-13 affichée est exacte. Pages 3, 7, 10 et 11 du locator ouvertes en image, toutes portantes.",
+      "SOURCES 2/3 — Saglio : DOI 10.4000/travailemploi.4652 résolu par Crossref → titre, auteur, « Travail et emploi », vol. 111, p. 53-73, 2007 : conforme à l'affichage. Texte intégral ouvert sur https://journals.openedition.org/travailemploi/4652 ; l'article compte 95 paragraphes numérotés, les trois du locator existent et sont portants. §7 : « ce qui est déterminé par la décision ministérielle n'est en effet pas le salaire effectif, mais la fourchette dans laquelle doit s'inscrire le salaire moyen de la catégorie », et rappelle que « bon nombre d'ouvriers sont encore payés aux pièces ». §68 : la tactique d'« exclure progressivement de la réglementation certaines formes de rémunération, notamment pour les ouvriers payés au rendement ». §82 : arbitrages entre ministères et décrochage des barèmes face à l'inflation — le plus lâche des trois par rapport au propos de la carte, mais il existe, il est correctement localisé, et la carte ne lui fait rien dire (elle ne cite pas Saglio).",
+      "SOURCES 3/3 — Salais : DOI 10.3406/estat.1976.2368 résolu par Crossref → titre complet, « Salais, Robert », p. 3-11, 1976. La notice Persée affiche le fascicule « 81-82 » : la forme « n° 81-82, 1976 » de la fiche est donc juste, et recoupe la note 1 de Dubois (« n° 81-82, octobre 1976 »). P. 3 ouverte en image (renderPage .../estat_0336-1454_1976_num_81_1_T1_0003_0000_1000.jpg) : titre, « par Robert SALAIS », et le chapeau porte bien ce pour quoi la fiche l'invoque — « Le terme de \"qualification\" recouvre deux notions : la qualification de l'individu d'une part, et celle de l'emploi d'autre part. » Le marquage consulted: partial est cohérent avec un locator limité à la p. 3.",
+      "PROSE — le résumé se recoupe terme à terme avec le texte. « la convention de branche ne classe que des postes » ↔ p. 10 « le système national de classification exclut la prise en compte de l'individu (c'est le poste qui est qualifié ou non) » ; « l'entreprise y mêle des critères d'individu » ↔ p. 10 « le système de classification pratiqué par les entreprises est un mixte de critères liés au poste et à l'individu » (et p. 3, « un mélange de critères ») ; « le salaire au rendement s'en déconnecte » ↔ p. 11. « Sur quatre entreprises » est exact : l'encadré de la p. 7 en décrit quatre, et la p. 11 parle des « quatre entreprises étudiées ». Aucun adjectif ne va au-delà des sources ; rien n'est non plus rabattu, la déconnexion étant nommée comme telle.",
+      "PROSE — l'accroche « Ce que gagne un ouvrier se lit-il dans la catégorie où on l'a classé ? » pose la question à laquelle la p. 11 répond par la négative, dans les mêmes termes (« des ouvriers classés dans des catégories basses peuvent percevoir des salaires plus élevés que ceux qui occupent les postes du haut de la hiérarchie ouvrière »). Elle n'annonce pas de mécanisme que les sources ne porteraient pas.",
+      "Hors des quatre points, sans effet sur le verdict — l'article précise que les ouvrières constituent 85 % des effectifs salariés du secteur (p. 3) et l'essentiel des développements de la p. 11 est au féminin (« les ouvrières les plus performantes ») ; l'accroche et le résumé emploient le masculin. Ce n'est pas une infidélité, l'article écrivant lui-même « des ouvriers classés dans des catégories basses » dans la phrase citée, mais un féminin serait plus proche du terrain.",
+      "Accès — aucun obstacle rencontré : je n'ai eu besoin ni du PDF docAsPDF de Persée ni d'aucune ressource sous contrôle d'accès, les fac-similés renderPage et les notices suffisant. Plusieurs coupures « Recv failure: Connection reset by peer » et un 500 sur persee.fr, imputés au proxy d'agent et résolus par simple relance (pages 3, 7, 10 obtenues au second essai, notice Salais au second, image Salais p. 3 au second) : aucune n'a été traitée comme une absence de texte. Le serveur MCP documentary n'étant pas exposé, les trois DOI ont été résolus par l'API Crossref directe ; ces résolutions ont abouti pour les trois, aucune n'est restée non concluante."
+    ]
+  },
+  "notes": [
+    "La modalité de la thèse est plus faible qu'un résultat, et le résumé la porte par ses trois premiers mots. Dubois n'affirme pas une loi : page 3, « il s'en dégage une impression d'escalier » ; page 5, « l'observation, même approfondie, de quelques entreprises ne saurait suffire pour répondre à ces questions. Elle permet cependant de les éclairer » ; page 8, « on pourrait faire l'hypothèse d'une large indépendance entre classification et salaire ». Quatre entreprises, un établissement observé dans chacune, enquêtes de mai à juillet 1980.",
+    "Les valeurs publiées valent pour la branche et pour la date, et ne sont pas des ordres de grandeur généraux : écart conventionnel de 1 à 1,39 entre la catégorie la plus qualifiée et la moins qualifiée, écarts observés de 1 à plus de 2 dans les entreprises étudiées, 45,2 pour cent des ouvriers de l'habillement rémunérés en tenant compte du rendement en 1978. La carte n'en affiche aucune.",
+    "Le mécanisme n'est pas propre à l'habillement, et c'est l'auteur qui le dit. L'encadré de la page 7 : « Au total, les caractéristiques de ces quatre entreprises sont spécifiques, de sorte qu'elles ne peuvent prétendre être représentatives de l'ensemble de l'industrie de l'habillement. En revanche, et c'est l'objet de cette étude, l'analyse de leurs pratiques permet d'éclairer et de mieux comprendre les liens qui peuvent exister entre formation, qualification et salaire. » Cet encadré est absent de la couche texte de Persée et n'apparaît que sur l'image de la page.",
+    "Comment l'individu entre au niveau de l'entreprise, ce que le résumé ne peut détailler : les entreprises installent « un minimum de carrière ouvrière, au moyen d'un circuit de postes de travail », postes d'accès, postes tout-venant, postes de promotion, postes de relégation ; sur un poste tout-venant, « sans changer de travail et sans que le contenu de l'activité soit modifié, l'ouvrière peut se voir attribuer une classification plus élevée », qui récompense son expérience, son ancienneté ou son comportement au travail (p. 8-9).",
+    "La déconnexion a un effet en retour sur les conduites, qui montre qu'elle n'est pas seulement comptable : « Il peut être parfois plus rentable d'avoir une opération simple à exécuter (donc un niveau de classification peu élevé) où l'on parvient à obtenir une forte prime de rendement qu'une opération complexe (plus qualifiée) où la prime de rendement sera dérisoire. C'est ainsi que certaines entreprises ont des difficultés à obtenir de certaines ouvrières qu'elles acceptent d'être volantes ou polyvalentes. » (p. 11).",
+    "Le chapô de la page 3, qui porte la formule de l'escalier et résume le mieux l'article, a été écarté comme citation pour une raison d'attribution et non de longueur : dans Économie et statistique, le texte liminaire en italique qui précède la signature relève de la présentation de la revue, et rien sur la page ne permet d'établir qu'il est de la main de Dubois. La récapitulation de la page 10, qui énonce les trois niveaux d'un seul tenant, a été écartée pour sa longueur : elle fait plus de quatre cents caractères et ses trois membres sont solidaires.",
+    "Source secondaire, ce qu'elle atteste et ce qu'elle n'atteste pas. L'article de Jean Saglio a été ouvert en texte intégral et lu dans son corps. Il ne cite pas Dubois et ne commente pas l'article de 1982 : ce n'est pas une réception, c'est une attestation indépendante du même type d'écart, sur un autre matériau, les arrêtés Parodi de 1945, et pour une autre période. Il rapporte à cette politique « l'une des origines du décrochage habituel entre les salaires conventionnels négociés et les salaires réels », formule prudente qui propose une origine parmi d'autres. Son décrochage tient d'abord à l'inflation et au gel d'un salaire de référence, celui du manoeuvre de la métallurgie parisienne, alors que celui de Dubois tient à la prime de rendement et à l'entrée de critères individuels dans le classement : deux causes distinctes d'un même type d'écart, et il ne faut pas faire dire à Saglio qu'il valide le mécanisme de Dubois.",
+    "La source de Salais n'a été ouverte que par sa première page, et elle ne sert qu'à une chose, établir que la distinction entre qualification individuelle et qualification de l'emploi est bien portée avant Dubois : « Le terme de qualification recouvre deux notions : la qualification de l'individu d'une part, et celle de l'emploi d'autre part. » Les pages 4 à 11 n'ont pas été ouvertes : on ne peut rien dire ici de ce que Salais lui-même fait de cette distinction, ni s'il aborde la rémunération au rendement.",
+    "Aucune source secondaire portant sur l'article de 1982 lui-même n'a été trouvée en accès ouvert. La piste signalée au repérage, un chapitre de l'ouvrage Le travail non qualifié sur Cairn, a rendu 403 et n'a pas été forcée. La réception de cet article n'est donc appuyée sur rien.",
+    "Datation corrigée sur pièce contre le repérage, qui donnait octobre 1982 : le numéro 140 est de janvier 1982. La notice Persée le porte, et l'article le confirme, sa note 9 citant le numéro 139 comme datant de décembre 1981 et sa note 10 deux articles du numéro 138 comme datant de novembre 1981. Le mois n'a pas pu être relu sur une page de couverture, qui n'est pas accessible.",
+    "Angle mort consigné et non repris dans la carte : les pages 11 et 12 expliquent les écarts de salaire moyen entre les quatre entreprises par des déterminants de marché, protection contre la concurrence étrangère, gamme des produits, partage des gains de productivité, appartenance à un groupe, donnés « à titre d'hypothèses ». Cette part de l'article relève du salaire comme donnée de marché et non comme mesure d'une qualification reconnue.",
+    "Une hypothèse est soulevée par l'auteur et n'est pas tranchée par lui : page 7, « dans la confection, les coupeurs sont encore en majorité des hommes ; serait-ce à cause de cela que ce poste est situé haut dans l'échelle des classifications ? » La carte ne lui fait rien dire de plus, et la voisine division-sexuelle-et-rapports-de-sexe n'est pas engagée par cette fiche.",
+    "Le thème « La qualification et la hiérarchie » n'est pas déclaré dans src/content/themes.ts : il est porté par theme_labels et par le domaine, conformément à la consigne du lot. Il réunit cette carte et effet-societal, deux textes et deux signatures distincts."
+  ]
+}

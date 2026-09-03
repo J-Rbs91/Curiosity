@@ -489,6 +489,45 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "classification-negociee-et-salaire-effectif",
+    "slug": "classification-negociee-et-salaire-effectif",
+    "title": "Classification négociée et salaire effectif",
+    "authorLabel": "Pierre Dubois",
+    "hookQuestion": "Ce que gagne un ouvrier se lit-il dans la catégorie où on l'a classé ?",
+    "shortExplanation": "Sur quatre entreprises : la convention de branche ne classe que des postes, l'entreprise y mêle des critères d'individu, et le salaire au rendement s'en déconnecte.",
+    "authors": [],
+    "themes": [
+      "qualification-et-hierarchie"
+    ],
+    "themeLabel": "La qualification et la hiérarchie",
+    "domain": "sociology-of-work",
+    "attributionNote": "L'article est signé d'un seul nom, relu sur le fac-similé de la page 3 : sous le titre figure la seule mention « par Pierre Dubois », renvoyant à une note d'affiliation. L'enquête n'est pas solitaire pour autant, et l'encadré de la page 7 le dit : elle a été financée par le ministère du Travail et a bénéficié de la collaboration du Centre d'études et des techniques de l'industrie de l'habillement. Un financement et une collaboration technique ne font pas une coécriture, et aucun coauteur n'est nommé. Une précision est en revanche nécessaire sur ce qui est de Dubois. La distinction entre qualification de l'individu et qualification de l'emploi n'est pas de lui : il la présente comme un acquis et sa note 1 renvoie à un ouvrage du CEREQ de 1978 et à Robert Salais, 1976. Ce qui est de lui est l'emboîtement des trois niveaux, convention de branche, pratiques d'entreprise, salaire, et la déconnexion entre classification et salaire qui en résulte.",
+    "quotation": {
+      "text": "[…] plus généralement, la pratique du salaire au rendement contribue à déconnecter le système de salaire du système de classification",
+      "reference": "Pierre Dubois, « Qualification et salaire dans l'habillement : approche monographique », Économie et statistique, n° 140, janvier 1982, p. 3-13 ; section « Prime de rendement et hiérarchie des salaires », p. 11"
+    },
+    "sources": [
+      {
+        "label": "Pierre Dubois, « Qualification et salaire dans l'habillement : approche monographique », Économie et statistique, n° 140, janvier 1982, p. 3-13.",
+        "kind": "primary",
+        "reference": "p. 3-13, ici p. 3, 7 et 10-11 · 10.3406/estat.1982.4566",
+        "url": "https://www.persee.fr/doc/estat_0336-1454_1982_num_140_1_4566"
+      },
+      {
+        "label": "Jean Saglio, « Les arrêtés Parodi sur les salaires : un moment de la construction de la place de l'État dans le système français de relations professionnelles », Travail et Emploi, n° 111, 2007, p. 53-73.",
+        "kind": "secondary-academic",
+        "reference": "paragraphes 7, 68 et 82 · 10.4000/travailemploi.4652",
+        "url": "https://journals.openedition.org/travailemploi/4652"
+      },
+      {
+        "label": "Robert Salais, « Qualification individuelle et qualification de l'emploi : quelques définitions et interrogations », Économie et statistique, n° 81-82, 1976, p. 3-11.",
+        "kind": "secondary-academic",
+        "reference": "10.3406/estat.1976.2368",
+        "url": "https://www.persee.fr/doc/estat_0336-1454_1976_num_81_1_2368"
+      }
+    ]
+  },
+  {
     "id": "comportement-contre-intuitif",
     "slug": "comportement-contre-intuitif",
     "title": "Comportement contre-intuitif",
@@ -1224,6 +1263,44 @@ export const generatedConcepts: Concept[] = [
         "kind": "primary",
         "reference": "10.1126/science.7455683",
         "url": "https://doi.org/10.1126/science.7455683"
+      }
+    ]
+  },
+  {
+    "id": "effet-societal",
+    "slug": "effet-societal",
+    "title": "Effet sociétal",
+    "authorLabel": "Marc Maurice, François Sellier, Jean-Jacques Silvestre",
+    "hookQuestion": "Pourquoi l'entreprise n'est-elle pas la même d'une société à l'autre ?",
+    "shortExplanation": "L'entreprise exprime des rapports sociaux qu'elle contribue elle-même à produire ou à reproduire ; leurs modalités et leurs combinaisons varient d'une société à l'autre.",
+    "authors": [],
+    "themes": [
+      "qualification-et-hierarchie"
+    ],
+    "themeLabel": "La qualification et la hiérarchie",
+    "domain": "sociology-of-work",
+    "attributionNote": "Article coécrit, signé de trois noms dans cet ordre en tête de la page 331, Marc Maurice, François Sellier et Jean-Jacques Silvestre ; la signature de fin, page 364, reprend les trois mêmes noms sous un rattachement unique, le Laboratoire d'économie et de sociologie du travail d'Aix-en-Provence, sans distinguer de part individuelle. L'article se donne lui-même pour la reprise abrégée d'une recherche collective plus vaste : sa note 1 renvoie au rapport des trois mêmes auteurs, Production de la hiérarchie dans l'Entreprise : recherche d'un effet sociétal, 800 pages ronéotypées, L.E.S.T., octobre 1977, réalisé avec la collaboration de cinq personnes nommées qui ne signent pas l'article. Le terme n'est donc pas forgé par cette publication : il figure déjà dans le titre du rapport d'octobre 1977. L'article ne le rattache à aucun auteur tiers, ne le présente pas comme emprunté et n'en revendique pas non plus la paternité.",
+    "quotation": {
+      "text": "L'approche de l'effet sociétal tend en effet à « socialiser » la notion d'entreprise en fonction des rapports sociaux qui la constituent",
+      "reference": "Marc Maurice, François Sellier et Jean-Jacques Silvestre, « La production de la hiérarchie dans l'entreprise : recherche d'un effet sociétal. Comparaison France-Allemagne », Revue française de sociologie, 20-2, 1979, p. 331-365 ; conclusion « Entreprise et société », p. 363"
+    },
+    "sources": [
+      {
+        "label": "Marc Maurice, François Sellier et Jean-Jacques Silvestre, « La production de la hiérarchie dans l'entreprise : recherche d'un effet sociétal. Comparaison France-Allemagne », Revue française de sociologie, 20-2, 1979, p. 331-365.",
+        "kind": "primary",
+        "reference": "p. 331-365, ici p. 331-333 et 363-364 · 10.2307/3321089",
+        "url": "https://www.persee.fr/doc/rfsoc_0035-2969_1979_num_20_2_6697"
+      },
+      {
+        "label": "Philippe d'Iribarne, « Culture et “effet sociétal” », Revue française de sociologie, 32-4, 1991, p. 599-614.",
+        "kind": "secondary-academic",
+        "reference": "p. 599-602 et 611-614 · 10.2307/3322076",
+        "url": "https://www.persee.fr/doc/rfsoc_0035-2969_1991_num_32_4_4077"
+      },
+      {
+        "label": "Françoise Meunier et Annie Novelli, compte rendu de Politique d'éducation et organisation industrielle en France et en Allemagne (PUF, 1982), Formation Emploi, n° 1, 1983, p. 90.",
+        "kind": "francophone-reception",
+        "url": "https://www.persee.fr/doc/forem_0759-6340_1983_num_1_1_1028_t1_0090_0000_4"
       }
     ]
   },
@@ -2668,6 +2745,39 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "predominance-du-conflit-sur-la-negociation",
+    "slug": "predominance-du-conflit-sur-la-negociation",
+    "title": "Prédominance du conflit sur la négociation",
+    "authorLabel": "Sami Dassa",
+    "hookQuestion": "Là où l'appareil de négociation est le mieux installé, la grève pèse-t-elle moins ?",
+    "shortExplanation": "Une fois instauré par le conflit, le système de négociation en reste tributaire : la sensibilité au rapport de forces est principalement le fait des grandes entreprises.",
+    "authors": [],
+    "themes": [
+      "conflit-et-greve"
+    ],
+    "themeLabel": "Le conflit et la grève",
+    "domain": "sociology-of-work",
+    "attributionNote": "Article signé du seul Sami Dassa : son nom figure seul en tête de la page 32, au-dessus du titre, et la signature de fin, page 44, porte son rattachement au CNRS et au CNAM. Une note d'auteur au bas de la page 32 remercie des collègues qui ont enrichi l'article, en particulier Odile Benoit-Guilbot et Annette Jobert : c'est un remerciement, il n'emporte pas coécriture. Les données exploitées sont les fiches de conflits du travail rédigées par les Inspecteurs du Travail pour l'année 1976, matériau que l'auteur avait déjà traité dans ses propres travaux antérieurs, auxquels il renvoie page 33.",
+    "quotation": {
+      "text": "C’est dans les grandes entreprises plus que dans les petites que la pression des travailleurs est indispensable pour obtenir des résultats.",
+      "reference": "Sami Dassa, « Conflits ou négociation ? Les grèves, leurs résultats et la taille des entreprises », Sociologie du travail, 25e année, n° 1, 1983, p. 32-44 ; section IV, Conclusions, p. 43"
+    },
+    "sources": [
+      {
+        "label": "Sami Dassa, « Conflits ou négociation ? Les grèves, leurs résultats et la taille des entreprises », Sociologie du travail, 25e année, n° 1, 1983, p. 32-44.",
+        "kind": "primary",
+        "reference": "p. 32-44, ici p. 33, 39, 41 et 43-44 · 10.3406/sotra.1983.1912",
+        "url": "https://www.persee.fr/doc/sotra_0038-0296_1983_num_25_1_1912"
+      },
+      {
+        "label": "Denis Segrestin, « Jean-Daniel Reynaud (1926-2019). Un itinéraire scientifique », Sociologie du travail, vol. 61, n° 2, 2019.",
+        "kind": "secondary-academic",
+        "reference": "10.4000/sdt.18092",
+        "url": "https://journals.openedition.org/sdt/18092"
+      }
+    ]
+  },
+  {
     "id": "probabilite-erreur-humaine",
     "slug": "probabilite-erreur-humaine",
     "title": "Probabilité d'erreur humaine",
@@ -3529,6 +3639,46 @@ export const generatedConcepts: Concept[] = [
         "kind": "primary",
         "reference": "chap. 4, p. 89-107 · HAL tel-00464801",
         "url": "https://theses.hal.science/tel-00464801/document"
+      }
+    ]
+  },
+  {
+    "id": "travail-sale-et-division-morale-du-travail",
+    "slug": "travail-sale-et-division-morale-du-travail",
+    "title": "Le sale boulot et la division morale du travail",
+    "authorLabel": "Everett C. Hughes",
+    "hookQuestion": "Quel métier n'a pas sa part de sale boulot, et qui finit par la faire ?",
+    "shortExplanation": "Tout métier a son sale boulot ; le déléguer à d'autres fait la respectabilité des uns et l'antagonisme de ceux qui l'exécutent sans en recevoir le prestige.",
+    "authors": [],
+    "themes": [
+      "groupes-professionnels"
+    ],
+    "themeLabel": "Les groupes professionnels",
+    "domain": "sociology-of-work",
+    "attributionNote": "Le volume est signé d'un seul nom : la page de titre porte « Men and Their Work by Everett Cherrington Hughes », et aucun second nom n'apparaît en tête des chapitres d'où viennent les passages lus. Deux précisions, parce que l'auteur les écrit lui-même. Le matériau empirique n'est pas de lui : page 49, il rappelle que plusieurs de ses étudiants ont étudié des métiers modestes, et sa note 3 de la page 51 rattache l'enquête sur les concierges à Ray Gold ; la notion de sale boulot, sa généralisation à tout métier et le raisonnement sur la délégation sont écrits dans sa voix, sans emprunt déclaré. Le terme lui-même est une expression du langage ordinaire, qu'il met entre guillemets page 49 pour la convertir en catégorie d'analyse, et l'expression « division morale du travail », page 71, est introduite par « One might even call it », c'est-à-dire proposée par lui, non citée d'ailleurs.",
+    "quotation": {
+      "text": "Or tout métier est non pas une activité mais plusieurs ; certaines d'entre elles sont le « sale boulot » de ce métier.",
+      "reference": "Everett C. Hughes, Men and Their Work, Glencoe (Illinois), The Free Press, 1958, chapitre 3 « Work and the Self », p. 42-55, ici p. 49. Sans ISBN, antérieur à l'ISBN ; L. C. Catalog Card No. 58-6483, p. 49, chapitre 3 « Work and the Self »",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Everett C. Hughes, Men and Their Work, Glencoe (Illinois), The Free Press, 1958, 184 p. Exemplaire de la University of Florida, tirage de juillet 1964, numérisé sur Internet Archive.",
+        "kind": "primary",
+        "reference": "p. 49-52, p. 71-72 et p. 122 · L. C. Catalog Card No. 58-6483",
+        "url": "https://archive.org/details/mentheirwork00hugh"
+      },
+      {
+        "label": "Jean-Michel Chapoulie, « La conception de la sociologie empirique d'Everett Hughes », Sociétés contemporaines, n° 27, 1997, p. 97-109.",
+        "kind": "francophone-reception",
+        "reference": "p. 97-109, ici p. 99, 102-106 et 108 · 10.3406/socco.1997.1465",
+        "url": "https://www.persee.fr/doc/socco_1150-1944_1997_num_27_1_1465"
+      },
+      {
+        "label": "Everett Hughes, « Le drame social du travail », Actes de la recherche en sciences sociales, n° 115, 1996, p. 94-99, traduction française de « The Social Drama of Work » (1976).",
+        "kind": "francophone-reception",
+        "reference": "10.3406/arss.1996.3207",
+        "url": "https://www.persee.fr/doc/arss_0335-5322_1996_num_115_1_3207"
       }
     ]
   },

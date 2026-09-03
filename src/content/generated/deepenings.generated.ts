@@ -793,6 +793,63 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "classification-negociee-et-salaire-effectif",
+    "lead": [
+      "Un bulletin de paie porte deux mentions qui sont censées se répondre : une catégorie, et une somme. La catégorie vient d’un texte négocié entre syndicats et employeurs pour toute une branche d’activité, qui range les emplois du moins qualifié au plus qualifié et attache à chaque rang un minimum. On en conclut volontiers que le classement commande la paie : monter d’un cran, c’est gagner plus, et gagner plus que quelqu’un, c’est être classé plus haut que lui.",
+      "Dans quatre entreprises de l’habillement observées de mai à juillet 1980, les deux mentions ne se répondaient plus. Pierre Dubois, sociologue du travail, y a suivi le trajet qui va de la grille signée pour la branche à la somme versée à une ouvrière. Ce trajet passe par au moins deux mains, celles de l’entreprise puis celles du mode de rémunération, et le classement perd quelque chose à chaque passage."
+    ],
+    "sections": [
+      {
+        "title": "Ce que la convention classe, ce n’est pas l’ouvrière",
+        "paragraphs": [
+          "Au premier niveau, celui du texte de branche, le classement ne regarde personne. Ce qui reçoit une catégorie, c’est l’opération à exécuter, pas celle qui l’exécute : « le système national de classification exclut la prise en compte de l’individu (c’est le poste qui est qualifié ou non) », écrit Dubois. Deux femmes assises devant la même machine, l’une depuis vingt ans, l’autre depuis trois semaines, relèvent donc du même rang. Ce n’est pas un oubli du texte, c’est son principe : une grille de branche doit valoir dans des centaines d’ateliers qu’aucun négociateur n’a vus, et le seul objet commun à tous ces ateliers est le travail à faire.",
+          "Ce partage porte un nom, et il n’est pas de Dubois. Il l’expose comme un acquis : « On peut opposer sommairement deux grands systèmes de qualification : celui basé sur la qualification de l’individu, celui basé sur la qualification de l’emploi occupé », et sa première note renvoie à un ouvrage du CEREQ de 1978 et à un article de Robert Salais publié en 1976, dont l’ouverture pose bien les deux notions, « la qualification de l’individu d’une part, et celle de l’emploi d’autre part ». Ce que Dubois ajoute est ailleurs : il regarde ce qui arrive quand un texte de branche tranche pour l’une des deux options, et que les entreprises ont besoin de l’autre."
+        ]
+      },
+      {
+        "title": "Une carrière fabriquée avec des postes",
+        "paragraphs": [
+          "Une entreprise, elle, connaît ses ouvrières. Elle a besoin de les garder, de reconnaître qu’une opératrice expérimentée ne vaut pas une débutante, de distinguer celles sur qui l’on peut compter. Or l’outil dont elle dispose ne sait ranger que des postes. Les entreprises observées s’en arrangent en installant « un minimum de carrière ouvrière, au moyen d’un circuit de postes de travail » : des postes d’accès par lesquels on entre, des postes tout-venant où l’on reste, des postes de promotion, des postes de relégation.",
+          "Le classement change alors de fonction sans changer de forme. Sur un poste tout-venant, « sans changer de travail et sans que le contenu de l’activité soit modifié, l’ouvrière peut se voir attribuer une classification plus élevée », qui récompense son ancienneté, son expérience ou son comportement au travail. Dubois le résume d’un mot : « le système de classification pratiqué par les entreprises est un mixte de critères liés au poste et à l’individu ». Un même intitulé de catégorie ne dit donc plus la même chose selon l’endroit où on le lit. Dans la convention, il désigne un travail ; dans l’atelier, il désigne en partie une personne."
+        ]
+      },
+      {
+        "title": "La prime de rendement défait la hiérarchie",
+        "paragraphs": [
+          "Reste le troisième niveau, le seul que l’on touche à la fin du mois. Dans cette branche, une part importante de la rémunération dépend de ce que l’ouvrière a produit : en 1978, 45,2 pour cent des ouvriers de l’habillement étaient rémunérés en tenant compte du rendement. Ce qui décide alors du montant n’est plus le rang de l’opération, mais la vitesse et la régularité de celle qui la tient.",
+          "L’effet est mesurable dans l’ordre même de la hiérarchie. La phrase de Dubois ne s’arrête pas à la déconnexion : « des ouvriers classés dans des catégories basses peuvent percevoir des salaires plus élevés que ceux qui occupent les postes du haut de la hiérarchie ouvrière et même que certains agents de maîtrise ». L’amplitude suit le même mouvement. Entre la catégorie la plus qualifiée et la moins qualifiée, l’écart prévu par la convention était de 1 à 1,39 ; les écarts constatés dans les entreprises étudiées allaient de 1 à plus de 2. Ces valeurs valent pour cette branche et pour ces années : ce ne sont pas des ordres de grandeur généraux."
+        ]
+      },
+      {
+        "title": "Refuser d’être polyvalente",
+        "paragraphs": [
+          "Une déconnexion pourrait n’être qu’une curiosité de comptable. Celle-ci se retourne sur les conduites, et Dubois le montre en une phrase : « Il peut être parfois plus rentable d’avoir une opération simple à exécuter (donc un niveau de classification peu élevé) où l’on parvient à obtenir une forte prime de rendement qu’une opération complexe (plus qualifiée) où la prime de rendement sera dérisoire. »",
+          "La conséquence est immédiate dans l’atelier : « C’est ainsi que certaines entreprises ont des difficultés à obtenir de certaines ouvrières qu’elles acceptent d’être volantes ou polyvalentes. » Un classement qui ne commande plus la paie cesse d’être un encouragement, et une promotion peut coûter à celle qui l’accepte. La direction se retrouve alors à demander comme une faveur ce que sa grille était censée rendre désirable."
+        ]
+      },
+      {
+        "title": "Le même écart, une autre cause : les arrêtés Parodi",
+        "paragraphs": [
+          "L’écart entre ce qui se négocie et ce qui se touche n’est ni propre à l’habillement ni propre à 1980. Jean Saglio, étudiant les arrêtés Parodi de 1945 sur les salaires, note que « ce qui est déterminé par la décision ministérielle n’est en effet pas le salaire effectif, mais la fourchette dans laquelle doit s’inscrire le salaire moyen de la catégorie », et rappelle qu’à cette date « bon nombre d’ouvriers sont encore payés aux pièces ». Il décrit aussi la tactique consistant à « exclure progressivement de la réglementation certaines formes de rémunération, notamment pour les ouvriers payés au rendement ».",
+          "Saglio rapporte à cette politique « l’une des origines du décrochage habituel entre les salaires conventionnels négociés et les salaires réels ». La formule est prudente, et il faut la garder telle quelle : elle propose une origine parmi d’autres. Son article ne discute pas celui de Dubois, il porte sur un autre matériau et sur une autre époque, et le décrochage qu’il décrit tient d’abord à l’inflation et au gel d’un salaire de référence, celui du manoeuvre de la métallurgie parisienne. Les deux textes attestent le même type d’écart par deux causes distinctes : c’est une convergence, ce n’est pas une confirmation."
+        ]
+      },
+      {
+        "title": "Quatre entreprises, et ce qu’elles autorisent à dire",
+        "paragraphs": [
+          "L’enquête est étroite et le déclare. Un établissement a été observé dans chacune des quatre entreprises, entre mai et juillet 1980, avec un financement du ministère du Travail et la collaboration du Centre d’études et des techniques de l’industrie de l’habillement. Le texte prévient lui-même : « Au total, les caractéristiques de ces quatre entreprises sont spécifiques, de sorte qu’elles ne peuvent prétendre être représentatives de l’ensemble de l’industrie de l’habillement. »",
+          "La modalité de la thèse s’en ressent, et c’est Dubois qui la fixe. Il écrit que « l’observation, même approfondie, de quelques entreprises ne saurait suffire pour répondre à ces questions. Elle permet cependant de les éclairer », et il avance ailleurs qu’« on pourrait faire l’hypothèse d’une large indépendance entre classification et salaire ». Ce qui est établi, c’est un mécanisme vu à l’oeuvre en quatre endroits ; ce qui est proposé, c’est l’hypothèse qu’il vaut au-delà. Les deux ne se confondent pas.",
+          "Une question du même article reste d’ailleurs ouverte sous la plume de son auteur. Les ouvrières forment 85 pour cent des effectifs salariés du secteur, et les postes les mieux classés ne sont pas les leurs : « dans la confection, les coupeurs sont encore en majorité des hommes ; serait-ce à cause de cela que ce poste est situé haut dans l’échelle des classifications ? » Dubois pose la question et ne la tranche pas."
+        ]
+      }
+    ],
+    "limits": [
+      "L’article de Robert Salais paru en 1976 est ce qui porte, avant Dubois, l’opposition entre qualification de l’individu et qualification de l’emploi, et sa première page l’énonce d’entrée. Ce qu’il en tire sur les huit pages suivantes, et s’il y rencontre la rémunération au rendement, ce sont ces pages qui le diront.",
+      "Ce que la sociologie du travail a fait ensuite de cette monographie, aucune des sources disponibles ne l’établit : ni discussion, ni reprise, ni objection. La réception de cet article se lit dans les travaux qui le citent, et c’est en les ouvrant qu’on saura si son emboîtement des trois niveaux a servi ailleurs.",
+      "Que le décrochage rapporté par Jean Saglio aux arrêtés de 1945 et celui que Dubois observe en 1980 tiennent l’un à l’autre, rien ici ne permet de le dire. L’article de Saglio suit la construction de la place de l’État dans la négociation des salaires : c’est ce fil-là qu’il faudra remonter pour savoir ce que la réglementation a laissé au rendement."
+    ]
+  },
+  {
     "conceptId": "comportement-contre-intuitif",
     "lead": [
       "Une ville manque de logements abordables, alors elle en construit. Dix ans plus tard, elle en manque davantage, et elle est plus pauvre qu’avant. Un service croule sous les appels, alors on renforce l’équipe qui les traite. Un an plus tard, le nombre d’appels a monté. Chaque décision était raisonnable, prise par des gens compétents qui voyaient correctement le problème devant eux. Et chacune a produit le contraire de ce qu’elle visait.",
@@ -1920,6 +1977,68 @@ export const generatedDeepenings: Deepening[] = [
       "La note de la page 189 annonce une perspective nouvelle, « discussed primarily in the first and last sections ». Ce que la version de 1986 soutenait avant ce déplacement, et les problèmes 3, 4, 7, 8 et 12 qu’elle publiait pour la première fois, c’est l’article du Journal of Business qui le montre.",
       "Savage, pages 101 à 104, et Raiffa, pages 80 à 86 : les auteurs y renvoient l’origine du concept. En quels termes ces pages reformulent les problèmes d’Allais, et ce que la reformulation cherchait à établir, elles seules le disent.",
       "Aucune traduction française publiée n’est connue, ni pour ce chapitre ni pour l’article de 1986. La formule qui circule le plus largement vient du texte de 1984, et elle dit autre chose : « In their stubborn appeal, framing effects resemble perceptual illusions more than computational errors. » Attrait obstiné plutôt que persistant, illusions perceptives plutôt que visuelles : c’est l’état de 1986, repris en 1988, que porte la citation."
+    ]
+  },
+  {
+    "conceptId": "effet-societal",
+    "lead": [
+      "Deux ateliers fabriquent la même chose, avec des machines venues des mêmes constructeurs, l’un en France, l’autre en Allemagne. Le problème technique est le même de part et d’autre, et l’on s’attendrait donc à ce que la solution le soit aussi. Elle ne l’est pas. La forme que prend la hiérarchie, l’écart des salaires à l’intérieur d’un même atelier, ce que recouvre exactement le titre de celui qui commande une équipe : rien de tout cela ne se retrouve à l’identique.",
+      "Deux explications viennent d’ordinaire à l’esprit. La première fait de l’écart un retard : l’un des deux pays n’aurait pas encore adopté la bonne organisation, et il finira par s’y ranger. La seconde le met au compte du caractère national, des habitudes, de ce qu’on appelle vaguement la culture. Marc Maurice, François Sellier et Jean-Jacques Silvestre, qui comparent des entreprises françaises et allemandes à la fin des années soixante-dix, écartent l’une et l’autre. Pour eux, l’entreprise ne subit pas du dehors une société qui la façonnerait : elle est un des lieux où se fabriquent les rapports qu’elle donne à voir."
+    ],
+    "sections": [
+      {
+        "title": "Des techniques universelles, des entreprises différentes",
+        "paragraphs": [
+          "Le point de départ de l’article est un étonnement, et il est formulé page 333 : « l’entreprise, l’école, qui pourtant, chacune dans leur sphère, gèrent des techniques relativement universelles pour obtenir des buts considérés comme communs à tous les pays, ne se ressemblent jamais ici et là. » Une machine-outil, une méthode d’enseignement, une comptabilité circulent d’un pays à l’autre sans se déformer beaucoup. Les institutions qui les emploient, elles, ne se superposent jamais.",
+          "Un chiffre donne la mesure de l’écart. Page 331, la dispersion des salaires individuels masculins est mesurée par son coefficient de variation, c’est-à-dire par l’ampleur de l’éventail rapportée au salaire moyen : 55 % en France, 33 % en Allemagne. Pour des techniques largement semblables, l’éventail salarial s’ouvre donc, du côté français, dans une proportion sensiblement plus large.",
+          "Devant un tel écart, on peut classer : l’un des deux systèmes serait en avance, l’autre à la traîne, et il n’y aurait qu’une seule échelle. Ou bien on peut poser que les deux tiennent, chacun à sa manière, et chercher ce qui les fait tenir. C’est la seconde voie que l’article prend, et le prix à payer est de renoncer à comparer poste par poste."
+        ]
+      },
+      {
+        "title": "Trois rapports, et ce qui varie en eux",
+        "paragraphs": [
+          "Pour tenir ensemble deux systèmes sans les aligner sur une échelle unique, il faut un petit nombre de termes qui vaillent des deux côtés. Page 333, ce sont trois rapports : le rapport éducatif, le rapport organisationnel et le rapport industriel. Les noms se laissent lire : l’un passe par la formation, l’autre par la façon dont le travail est réparti et commandé, le troisième par les relations entre les groupes qui composent l’industrie. Ce qu’ils ont en commun importe davantage encore : chacun est défini comme un lien des individus à la société.",
+          "Reste à dire ce qui, dans ces trois rapports, est partout le même et ce qui change d’un pays à l’autre. La phrase est explicite : « Les invariants, dans une telle analyse, sont constitués par les types de rapports sociaux qu’on retrouve partout mais dont les modalités et les combinaisons peuvent varier. » Les types sont universels ; leurs formes et leurs agencements ne le sont pas.",
+          "La suite est plus tranchante encore : « ces rapports sociaux ne se construisent ni ne se combinent de la même façon dans deux types de société ». Le mot qui porte est celui de combinaison. Il ne s’agit pas seulement de constater que la formation diffère d’un côté et le commandement de l’autre ; c’est la manière dont l’une tient à l’autre qui diffère. On ne compare donc pas des éléments, on compare des ensembles."
+        ]
+      },
+      {
+        "title": "Une entreprise sans intérieur ni extérieur",
+        "paragraphs": [
+          "On se représente d’ordinaire une entreprise comme une boîte : dedans l’organisation, les ateliers, les salaires ; dehors un environnement fait de marchés, de lois, d’écoles et de syndicats, qui exerce sur elle des pressions. L’article démonte cette image. Après avoir dit que son approche socialise la notion d’entreprise, il enchaîne, page 363 : « en ce sens, l’entreprise n’a ni d’intérieur ni d’extérieur, elle est étudiée dans la société ».",
+          "La définition donnée page 364 va plus loin : « L’effet sociétal correspond alors à l’ensemble des rapports sociaux (particuliers) qui s’expriment dans l’entreprise, et que celle-ci contribue à produire ou à reproduire ce qui souligne son autonomie tout en la relativisant. » Deux verbes s’y suivent, et ils tirent en sens opposés. Exprimer : ce qui se voit dans l’entreprise vient de plus loin qu’elle. Produire ou reproduire : elle n’est pas pour autant le miroir de quelque chose qui se jouerait ailleurs, puisqu’elle fabrique ce qu’elle exprime.",
+          "D’où l’équilibre de la fin de la phrase, où l’autonomie de l’entreprise est soulignée et relativisée du même mouvement. Elle a une capacité propre, elle produit quelque chose ; ce qu’elle produit la dépasse. La hiérarchie qu’on y observe, écrivent les auteurs à la même page, « exprime l’ensemble des rapports sociaux à l’œuvre dans l’entreprise » : elle n’est pas un simple outil de coordination interne, elle est l’endroit où une société se rend visible."
+        ]
+      },
+      {
+        "title": "Le contremaître français et le Meister allemand",
+        "paragraphs": [
+          "Cette façon de voir a une conséquence immédiate, et gênante, pour quiconque compare deux pays. Comparer suppose des catégories : ouvriers, techniciens, contremaîtres, cadres. Si ces catégories sont elles-mêmes des produits d’une société donnée, les aligner en deux colonnes revient à tenir pour acquis ce qu’il fallait établir. Les auteurs le disent sans détour, page 364 : les catégories d’analyse « doivent être alors elles-mêmes socialisées ».",
+          "L’exemple qu’ils en donnent tient en une phrase : « Le contremaître français n’est plus dans ce cas tout à fait comparable au Meister allemand, ni le cadre supérieur au Leitende Angestellte ». Deux mots se traduisent l’un par l’autre ; les positions qu’ils désignent ne se recouvrent pas. Le dictionnaire fait l’équivalence des termes, il ne fait pas celle des places.",
+          "L’approche assume ce résultat : elle « tend à conceptualiser davantage les différences que les similitudes en mettant en évidence le caractère de non-comparabilité des catégories d’analyse considérées, a priori, comme comparables ». C’est un renversement de programme. Là où une comparaison ordinaire cherche ce que deux pays ont en commun et traite l’écart comme un résidu, celle-ci fait de l’écart son objet, et de la ressemblance des étiquettes un piège."
+        ]
+      },
+      {
+        "title": "La comparaison comme instrument, non comme décor",
+        "paragraphs": [
+          "On pourrait croire que la comparaison entre la France et l’Allemagne n’est ici qu’une illustration, et que le concept vaudrait sans elle. Les auteurs disent l’inverse, page 364 : « Il n’y a alors d’effet sociétal que dans la mesure où la comparaison fait apparaître les modalités particulières par lesquelles s’expriment dans des sociétés différentes les rapports sociaux fondamentaux. » Sans second terme, il n’y a rien à voir : une organisation observée seule paraît toujours aller de soi.",
+          "Il faut en tirer la conséquence sur ce qui, dans ce travail, se transporte ailleurs. Les trois rapports, le partage entre les types et leurs modalités, l’exigence de comparer des ensembles plutôt que des postes : cela s’emporte. Le résultat franco-allemand, lui, ne s’emporte pas. La France et l’Allemagne ne sont pas des termes de la théorie, ce sont les deux cas par lesquels elle a été construite, et deux autres pays donneraient d’autres modalités et d’autres combinaisons.",
+          "La limite, les auteurs la posent eux-mêmes, page 363. Leur démarche y est dite « hypothético-inductive », et ils ajoutent que « la généralisation théorique à laquelle elle prétend suppose la multiplication des expériences comparatives ». Autrement dit : en 1979, le mécanisme repose sur un seul couple de pays, et il se donne pour tel. Une note signale d’ailleurs qu’un prolongement du programme a été engagé en Grande-Bretagne, en 1976-1977."
+        ]
+      },
+      {
+        "title": "Ce que la cohérence n’explique pas",
+        "paragraphs": [
+          "Douze ans plus tard, dans la même revue, Philippe d’Iribarne revient sur cette approche. Il commence par lui rendre justice : l’école d’Aix, du nom de la ville où travaille le laboratoire des trois auteurs, répudie sincèrement le culturalisme, et lui prêter une explication par le caractère national des Français ou des Allemands serait la manquer.",
+          "Son objection porte ailleurs. Les deux systèmes, écrit-il, sont montrés cohérents, chacun dans son ordre, mais ni la genèse de cette cohérence ni sa stabilité ne sont expliquées : d’où vient-elle, et pourquoi tient-elle si longtemps ? Il propose d’y répondre par des traits culturels de longue durée, une logique du rang du côté français, une logique communautaire du côté allemand.",
+          "L’enjeu du désaccord se voit alors d’un coup. La notion d’effet sociétal a été construite précisément pour se passer d’une explication par la culture, et c’est là que son critique la réintroduit, au point où il juge l’explication inachevée. Une précision compte pour lire ce débat : d’Iribarne discute l’ouvrage que les trois auteurs ont publié en 1982, Politique d’éducation et organisation industrielle en France et en Allemagne, et non l’article de 1979."
+        ]
+      }
+    ],
+    "limits": [
+      "L’article de 1979 est la reprise abrégée d’une recherche bien plus vaste : un rapport de 800 pages ronéotypées, Production de la hiérarchie dans l’Entreprise : recherche d’un effet sociétal, L.E.S.T., octobre 1977, mené avec cinq collaborateurs qui ne signent pas l’article. L’enquête y est en entier, avec ses terrains et ses chiffres. Il n’en existe pas d’édition en ligne : c’est dans les fonds qui le conservent qu’il faudra le chercher.",
+      "Ce qu’a donné le prolongement engagé en Grande-Bretagne en 1976-1977, une note de bas de page l’annonce sans le dire ; les publications qui en sont sorties le diront. Et la réponse des trois auteurs à l’objection culturaliste se lit dans leurs textes postérieurs, non dans ces trente-cinq pages écrites douze ans plus tôt.",
+      "Les deux commentaires disponibles portent sur l’ouvrage de 1982 : la réception de l’article de 1979 lui-même reste à établir. L’argument de Philippe d’Iribarne se déploie entre son ouverture et sa conclusion, dans la Revue française de sociologie de 1991, p. 599-614. Quant à ce que Françoise Meunier et Annie Novelli appellent la cohérence sociétale, leur page de Formation Emploi (1983, n° 1, p. 90) la porte en entier."
     ]
   },
   {
@@ -4198,6 +4317,59 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "predominance-du-conflit-sur-la-negociation",
+    "lead": [
+      "Dans une entreprise de plusieurs milliers de salariés, il y a des délégués, des réunions inscrites au calendrier, des accords signés et des habitudes de discussion vieilles de vingt ans. Dans un atelier de trente personnes, rien de tout cela n’existe : on se parle, ou on ne se parle pas. L’idée qui vient alors est simple, et presque tout le monde l’a eue : là où la discussion est organisée, un arrêt de travail devrait peser moins, puisque l’essentiel se règle autour d’une table.",
+      "Sami Dassa a soumis cette idée à un comptage. En 1976, chaque conflit du travail donnait lieu en France à un imprimé rempli par l’inspecteur du travail : la durée de l’arrêt, le nombre de grévistes, l’objet du désaccord, et ce que les grévistes ont fini par obtenir. Dassa a repris ces imprimés pour une année entière et il a cherché ce qui, concrètement, sépare une grève qui obtient quelque chose d’une grève qui n’obtient rien. La réponse ne va pas dans le sens attendu."
+    ],
+    "sections": [
+      {
+        "title": "Une formule retournée, et retournée encore",
+        "paragraphs": [
+          "Dans la sociologie du travail française des années 1970, une phrase circule : « Le conflit est la poursuite de la négociation par d’autres moyens. » Elle décalque, en la déplaçant, une formule célèbre de Clausewitz sur la guerre et la politique. Dassa la renvoie, en note de sa première page, à un ouvrage de Gérard Adam et Jean-Daniel Reynaud, Conflits du travail et changement social, paru aux Presses universitaires de France en 1978, page 127 ; un article de Denis Segrestin consacré à l’itinéraire scientifique de Reynaud confirme qu’elle est bien de ce dernier.",
+          "Ce que la phrase soutient est fort. Elle ne dit pas que la grève et la discussion se succèdent, elle dit qu’elles sont le même processus vu à deux moments : un arrêt de travail est un coup joué dans une partie qui reste une partie de négociation. Segrestin décrit cette conception où conflits et négociations forment « un seul et même sujet ». Elle porte avec elle une conséquence tranquille : à mesure que les institutions de discussion s’installent, la grève devient un moyen parmi d’autres, et un moyen coûteux, dont on peut espérer qu’il s’efface.",
+          "Dassa annonce l’inverse dès sa deuxième page : « Nous voulons démontrer qu’une fois instauré par le conflit, le système de négociation reste tributaire du conflit. » Le mot qui porte est tributaire. La négociation existe bel et bien, elle produit des textes, elle occupe des gens à plein temps ; simplement, elle ne s’émancipe pas de ce qui l’a fait naître, et ce qu’elle accorde continue de dépendre de ce que les salariés sont capables d’arrêter."
+        ]
+      },
+      {
+        "title": "Un jour d’un côté, cinq de l’autre",
+        "paragraphs": [
+          "Pour trancher, il faut une mesure de la pression exercée, et Dassa en retient une très simple : la durée de la grève. Si le rapport de forces décide de l’issue, les arrêts qui obtiennent quelque chose doivent être plus longs que ceux qui n’obtiennent rien, et l’écart entre les deux durées mesure alors ce que coûte un résultat. Si l’issue se joue ailleurs, dans la qualité des relations ou dans la routine de la discussion, cet écart doit rester faible.",
+          "L’écart, page 40, vaut un jour dans les petites entreprises, 4,8 jours dans les moyennes et 5,2 jours dans les grandes. Dassa commente : « Cela montre bien, contre toute attente, que la sensibilité au rapport de forces est principalement le fait des grandes entreprises. » Dans les grandes, tenir cinq jours de plus est ce qui sépare l’échec du résultat. Dans les petites, page 41, « on relève une quasi indépendance entre durée des grèves et résultats obtenus » : durer davantage n’y change presque rien.",
+          "La conclusion est tirée page 43 sans détour : « Les grandes entreprises sont plus sensibles que les petites au rapport des forces ». Elle se lit dans les deux sens, et les deux surprennent. Là où la discussion est la mieux outillée, l’issue dépend le plus de la force déployée. Là où elle n’existe guère, le sort d’une grève tient visiblement à autre chose qu’à l’endurance de ceux qui la font."
+        ]
+      },
+      {
+        "title": "Des entreprises qui ont toutes connu une grève",
+        "paragraphs": [
+          "Une comparaison de ce genre ne vaut que si l’on sait sur quoi elle porte, et Dassa le précise avant tout le reste, page 34 : « Il faut immédiatement préciser que nous travaillons sur des entreprises qui ont connu des grèves. » Rien de ce qui suit ne concerne donc les entreprises en général : tout se dit à l’intérieur du monde, restreint, de celles où un arrêt de travail a effectivement eu lieu en 1976.",
+          "La précaution n’est pas de pure forme, car ce monde-là n’est pas peuplé de la même façon selon la taille. Faire grève est rare dans les petites entreprises, de l’ordre de 3 pour cent, contre 30 pour cent dans celles d’au moins 1 000 travailleurs. La combativité que l’on croit lire du côté des petites, avertit Dassa, « ne veut pas dire que les travailleurs de toutes les petites entreprises sont plus combatifs que ceux des grandes entreprises » : elle ne renseigne que sur les rares ateliers où la grève a éclaté.",
+          "Le champ est borné par ailleurs. L’agriculture et les administrations publiques en sont exclues, ainsi que les longs conflits sur l’emploi qui suivent une liquidation judiciaire, les grèves répétitives interrompues plus de quarante-huit heures et les grèves généralisées. Ce qui est mesuré, ce sont les arrêts de travail ordinaires d’une seule année, dans le secteur privé, tels que l’administration du travail les enregistrait alors."
+        ]
+      },
+      {
+        "title": "Ce que l’appareil de négociation ne remplace pas",
+        "paragraphs": [
+          "Une anomalie était connue avant ce comptage, et Dassa la rappelle page 33 en citant Michelle Durand : « ce sont les grandes entreprises qui ont le plus de grèves, bien qu’elles soient le lieu d’un plus grand développement des pratiques contractuelles diverses ». Là où l’on discute le plus, on s’arrête le plus. Les durées ajoutent à cette anomalie une seconde, plus gênante encore, qui ne porte plus sur le nombre des grèves mais sur ce qu’elles obtiennent.",
+          "Dassa la formule page 44 : ses tableaux « montrent avec éclat que la sensibilité au rapport des forces est particulièrement nette dans les grandes entreprises », et cela « là où précisément on pensait que l’appareil de négociation et l’institutionnalisation du conflit se substituait à ce rapport des forces ». Le verbe se substituer est le nœud de l’affaire : l’outillage de la discussion ne prend pas la place du rapport de forces, il travaille avec lui, et d’autant plus étroitement qu’il est mieux installé.",
+          "On peut lire ces chiffres ainsi, et c’est une lecture plutôt qu’une phrase de l’auteur : avoir des délégués, un calendrier de réunions et des accords signés ne crée aucune capacité propre à obtenir des résultats, cela déplace seulement le niveau de pression à partir duquel un résultat s’obtient. Dans un atelier sans institutions, ce qui décide n’est manifestement pas la longueur de l’arrêt. Dans une grande entreprise équipée pour discuter, c’est elle, et il en faut cinq jours de plus."
+        ]
+      },
+      {
+        "title": "Deux mots pour une même conclusion",
+        "paragraphs": [
+          "La thèse est écrite page 41 : « Nous pensons avoir montré ainsi, et surtout pour les grandes entreprises, la prédominance du conflit sur la négociation. » L’incise compte autant que le reste : la démonstration est donnée comme valant surtout au pôle des grandes entreprises, et non comme une loi générale du travail. Le résumé imprimé en tête de l’article, page 32, dit la même chose avec un autre mot, « prééminence du conflit sur la négociation » : les deux sont de Dassa, et le second est celui qui a voyagé.",
+          "Trente-six ans plus tard, Denis Segrestin écrit qu’« un article de Sami Dassa, publié en 1983, renverse l’audacieuse formule à l’aide d’une analyse statistique qui tend à montrer la prééminence du conflit sur la négociation ». La thèse est donc imputée à Dassa par un tiers, et pas seulement par lui-même. Reste à mesurer ce qui lui revient en propre : l’opposition du conflit et de la négociation traversait déjà le débat qu’il cite, et ce qu’il y ajoute est la démonstration chiffrée par la taille des entreprises, avec la formule qui la résume."
+        ]
+      }
+    ],
+    "limits": [
+      "Deux réserves sont posées par Dassa lui-même, en note de sa page 36, et il ne les lève pas. Une reprise du travail contre promesses a été comptée du côté des conflits avec résultats, or « la proportion de résultats informels ou différés, donc non notés dans les fiches, varie peut-être suivant la dimension des entreprises ». Quant à la négociation à froid, celle qui se passe de grève, elle est peut-être plus fréquente dans les grandes entreprises, « mais cela reste à établir » : d’autres données que celles de 1976 y répondront.",
+      "La formule que l’article combat se lit page 127 de Conflits du travail et changement social, de Gérard Adam et Jean-Daniel Reynaud, aux Presses universitaires de France, 1978. C’est là qu’elle est posée, avec l’argument qui la soutient et les réserves dont ses auteurs l’entourent ; il faudra ouvrir ce livre pour les connaître.",
+      "Ce que la sociologie du travail a ensuite fait de ce résultat n’est pas établi par les sources disponibles. La mention qu’en donne Denis Segrestin appartient à un texte consacré à Jean-Daniel Reynaud : elle atteste une lecture, non une discussion. Les travaux qui ont repris ou contesté ce comptage se trouveront dans les revues des années suivantes."
+    ]
+  },
+  {
     "conceptId": "probabilite-erreur-humaine",
     "lead": [
       "Un calcul de sûreté avance par probabilités : un chiffre pour la défaillance d’une pompe, un autre pour celle d’un capteur, et l’on combine le tout. Puis vient le moment où il faut un chiffre pour la personne qui referme une vanne après un essai. Dire d’elle qu’elle est consciencieuse ne se combine avec rien. Dire qu’elle omettra ce geste une fois sur tant d’exécutions entre au contraire dans le calcul, à condition de savoir d’où sort ce nombre, ce qu’il compte exactement, et ce qu’on a le droit d’en faire.",
@@ -5587,6 +5759,63 @@ export const generatedDeepenings: Deepening[] = [
       "L’article de Sandrine Caroly et Yves Clot, « Du travail collectif au collectif de travail », publié en 2004, porte la distinction dans son titre même, et son introduction établit qu’elle y était déjà posée. Les définitions qu’il en donne ensuite ne peuvent pas être présumées identiques à celles de 2007 : c’est le premier texte à ouvrir pour voir d’où vient le couple.",
       "Sandrine Caroly a consacré en 2016 une entrée de dictionnaire spécialisé au terme « Collectif de travail », sans doute son texte le plus directement définitionnel sur la question. À côté, l’ouvrage de Gilbert de Terssac, Le travail : une activité collective, publié en 2002, et les deux volumes parus chez Octarès sur le travail collectif font référence sur ce sujet. Ce sont les lectures qui prolongent ce qui précède.",
       "Établir la chronologie complète des textes qui ont précédé et préparé la distinction de 2007, et la part exacte que chacune des deux autrices y a prise, demande de revenir à ces textes plutôt qu’à la formulation courte qui les résume."
+    ]
+  },
+  {
+    "conceptId": "travail-sale-et-division-morale-du-travail",
+    "lead": [
+      "Demandez à quelqu’un ce qu’il fait dans la vie, il répondra par ce que son métier a de plus présentable : l’infirmière soigne, l’avocat défend, le gardien d’immeuble tient l’immeuble. Aucune de ces réponses n’est fausse, et aucune ne dit à quoi passe la journée. Dans chaque emploi, il y a une part qu’on ne met pas en avant : les ordures des autres à descendre, un corps à laver, le formulaire que personne ne veut remplir, le refus qu’il faut bien annoncer à quelqu’un. Cette part-là ne figure dans aucune description de poste, et pourtant quelqu’un s’en charge tous les jours.",
+      "En 1958, Everett C. Hughes réunit ses essais sous le titre Men and Their Work. L’un d’eux part d’enquêtes que ses étudiants ont conduites sur des métiers modestes, gardiens d’immeuble compris : page 49, il rappelle que « a number of my students have studied some more or less lowly occupations ». Puis il fait un geste inattendu. L’expression ordinaire par laquelle chacun désigne la corvée, il la met entre guillemets et en fait un instrument d’analyse. Ce qui suit ne parle plus des métiers modestes : cela parle de tous les métiers."
+    ],
+    "sections": [
+      {
+        "title": "Trois manières d’être du sale boulot",
+        "paragraphs": [
+          "Le mot ne désigne pas d’abord la saleté au sens propre. Aux pages 49 et 50, trois registres se distinguent. Il y a ce qui répugne physiquement : les déchets, les fluides, les odeurs, ce dont le corps se détourne. Il y a ce qui vaut comme symbole de dégradation : la tâche qui ne salit pas les mains, mais qui désigne celui qui l’exécute comme un subalterne et blesse sa dignité. Il y a enfin ce qui va, écrit Hughes, « counter to the more heroic of our moral conceptions », à l’encontre de l’idée noble qu’un métier se fait de lui-même.",
+          "Le troisième registre est le moins visible et le plus étendu. Il ne se mesure ni à l’odeur ni aux taches, mais à l’écart entre ce qu’un métier proclame et ce qu’il exige réellement de ceux qui l’exercent. Page 122 du même volume, Hughes note que « Some tasks are considered nuisances and impositions, or even dirty work », des tâches tenues pour au-dessous de la dignité de la profession, physiquement, socialement ou moralement. Le jugement est social avant d’être hygiénique : est sale ce qu’un groupe tient pour indigne de lui."
+        ]
+      },
+      {
+        "title": "Pourquoi aucun métier n’y échappe",
+        "paragraphs": [
+          "La proposition qui commande tout le reste tient en deux phrases, page 50 : « Dirty work of some kind is found in all occupations. It is hard to imagine an occupation in which one does not appear, in certain repeated contingencies, to be practically compelled to play a role of which he thinks he ought to be a little ashamed. » Il est difficile d’imaginer un métier où l’on ne se trouve pas, dans certaines circonstances qui reviennent, pratiquement contraint de tenir un rôle dont on juge qu’il y a de quoi avoir un peu honte.",
+          "L’affirmation coupe court au contresens le plus commode : il n’existe pas d’un côté des métiers sales et de l’autre des métiers propres. La part sale n’est pas une catégorie de métiers, c’est une composante de chacun. Un cabinet d’avocats, un service hospitalier, une salle de rédaction ont chacun la leur. Ce qui varie d’un métier à l’autre n’est donc pas la présence de cette part, mais qui finit par l’exécuter et ce qu’elle lui coûte."
+        ]
+      },
+      {
+        "title": "Se décharger sur quelqu’un d’autre",
+        "paragraphs": [
+          "De là le mouvement décrit page 51 : « Now the delegation of dirty work to someone else is common among humans. » Se décharger sur autrui de ce qui répugne est une conduite ordinaire, et Hughes en tire aussitôt une conséquence qui déplace la question : « Many cleanliness taboos, and perhaps even many moral scruples, depend for their practice upon success in delegating the tabooed activity to someone else. » Un scrupule moral n’est pas seulement une disposition intérieure. Le tenir est un résultat pratique, et ce résultat dépend de quelqu’un d’autre.",
+          "Il ajoute que cette délégation participe aussi du processus de mobilité professionnelle. Monter dans un métier, c’est souvent transmettre à ceux qui entrent la part dont on se sépare. Ce qui se raconte comme une progression, du côté de celui qui monte, se lit aussi comme un déplacement de tâches vers le bas : le dernier arrivé dans un service hérite fréquemment de ce que les anciens ont cessé de faire, sans que personne ait eu à l’écrire nulle part."
+        ]
+      },
+      {
+        "title": "Ce que le médecin ne délègue pas",
+        "paragraphs": [
+          "La délégation a une limite, et Hughes la pose dans la foulée, page 52. Dans certains travaux, dont quelques-uns de très haut prestige, elle ne va pas loin, parce que la part répugnante est intime à ce qui fait la force du métier : le maniement du corps humain par le médecin en est le cas exemplaire. Le sale boulot y est alors, écrit-il, « integrated into the whole, and into the prestige-bearing role of the person who does it ».",
+          "C’est cette intégration qui fait la différence, et non la nature de la tâche. Là où la part sale est « knit into some satisfying and prestige-giving definition of role », elle est tenable : celui qui l’exécute y voit une preuve de compétence, et elle nourrit son titre. Là où elle ne l’est pas, elle est subie sans rien rapporter. Imaginons deux personnes qui lavent le même corps dans le même service : pour l’une, le geste appartient au métier dont elle tire son autorité ; pour l’autre, c’est ce qu’on lui a laissé."
+        ]
+      },
+      {
+        "title": "L’antagonisme dans les hôpitaux",
+        "paragraphs": [
+          "Le cas que Hughes développe est l’hôpital, page 52. L’une des sources les plus profondes des antagonismes qu’on y observe tient, écrit-il, à « the belief of the people in the humblest jobs that the physician in charge calls upon them to do his dirty work in the name of the role of “healing the sick,” although none of the prestige and little of the money reward of that role reaches them ».",
+          "La restriction compte autant que le constat : ce qui produit l’antagonisme n’est pas la tâche, c’est la tâche exécutée sans que le prestige ni l’argent du rôle invoqué n’atteignent celui qui l’accomplit. La même structure se retrouve aux pages 52 et 53 chez les gardiens de prison et les surveillants d’hôpital psychiatrique, et chez le gardien d’immeuble, dont Hughes relève « his antagonism to the people whose dirt he handles ». Le ressentiment ne vise pas le travail : il vise ceux dont on manie la saleté."
+        ]
+      },
+      {
+        "title": "Une division morale du travail",
+        "paragraphs": [
+          "Quelques pages plus loin, dans le chapitre « Social Role and the Division of Labor », Hughes donne un nom à ce partage, et il le propose plutôt qu’il ne l’impose, page 71 : « One might even call it a moral division of labor, if one keeps in mind that the term means not simply that some lawyers […] are more moral than others; but that the very demand for highly scrupulous and respectable lawyers depends in various ways upon the availability of less scrupulous people ». La demande d’avocats scrupuleux et respectables dépend de la disponibilité de gens moins scrupuleux pour les affaires qui le sont moins.",
+          "Deux malentendus sont écartés dans la phrase même. Le premier est moralisant : il ne s’agit pas de dire que les uns valent mieux que les autres, mais de décrire une répartition. Le second est celui du complot, et Hughes s’en défait explicitement : « I do not mean that the good lawyers all consciously delegate their dirty work to others (although many do). It is rather a game of live and let live. » Page 72, il en tire que le prestige du médecin n’est pas sui generis : il tient à la place qu’il occupe dans le partage médical du travail. La respectabilité cesse d’être une qualité que l’on aurait pour devenir une position que d’autres rendent possible."
+        ]
+      }
+    ],
+    "limits": [
+      "Ce que les gardiens d’immeuble disaient d’eux-mêmes, et dans quels termes, ne se lit pas chez Hughes : sa note du bas de la page 51 crédite l’enquête à Ray Gold, « Janitors vs. Tenants; a status-income Dilemma », The American Journal of Sociology, LVII, mars 1952, p. 487-493. Le matériau est là, et c’est cet article qu’il faudra lire pour l’entendre.",
+      "Le chapitre « Work and the Self » n’est pas né en 1958 : il vient d’un texte paru en 1951 dans Social Psychology at the Crossroads, de Rohrer et Sherif, p. 313-323. C’est là qu’on verra si la catégorie s’y trouvait déjà formée dans ces termes.",
+      "Les phrases citées ici sont traduites de l’imprimé américain, non d’une édition française. Un recueil de textes de Hughes existe en français, Le regard sociologique, aux Éditions de l’EHESS, 1996 : c’est de ce côté qu’il faudra chercher si ces pages y sont, et en quels mots. La traduction parue en revue, « Le drame social du travail », ne porte aucun développement sur le sale boulot.",
+      "Une tentation guette enfin ce concept : faire du poste le plus humble le point de vue vrai sur le travail. Jean-Michel Chapoulie rappelle, page 108 de son article de 1997, que « c’est seulement un privilège méthodologique, leur meilleure lisibilité, que Hughes reconnaît aux positions de faible statut », qui vont aussi avec des perceptions tronquées de la réalité sociale. Cet article porte sur la manière d’enquêter de Hughes, non sur le sale boulot lui-même."
     ]
   },
   {

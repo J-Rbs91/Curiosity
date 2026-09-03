@@ -5,7 +5,7 @@ relire tout le dépôt et sans redécouvrir ce que huit lots ont déjà appris.
 
 Il ne double pas `corpus/ETAT.md`, qui dit ce que le corpus **est** ; celui-ci dit ce qu'il
 lui **manque**. Et il ne remplace aucun script : les chiffres ci-dessous sont un instantané
-du 2 septembre 2026, les commandes sont la vérité.
+du 3 septembre 2026, les commandes sont la vérité.
 
 ```bash
 npm run corpus:audit    # domaines, thèmes, cartes validées, sujets jamais instruits
@@ -26,7 +26,7 @@ script ne peut pas dire : quel travail est possible aujourd'hui, ce qu'il coûte
 | **A.** Approfondissements | **aucun** | — | **fermé le 1er septembre 2026** |
 | **B.** File de la sociologie des organisations | 25 entrées | oui, cartographie déjà faite | ouvert |
 | **C.** Domaines vides | **aucun** | — | **fermé le 28 août 2026** |
-| **D.** Reprises courtes de cinq domaines instruits | 9 textes | oui, accès déjà constaté | **ouvert, et c'est par lui que la phase 3 avance** |
+| **D.** Reprises courtes des domaines instruits | voir les sections | oui, accès déjà constaté | **ouvert, et c'est par lui que la phase 3 avance** |
 | **E.** Le garde de la CI ne couvrait qu'une moitié du répertoire projeté | **aucun** | non | **fermé le 2 septembre 2026** |
 
 **Le chantier A est fermé.** Il s'était vidé le 21 août, rouvert et creusé pendant cinq lots
@@ -43,9 +43,9 @@ src/content/generated/` : le garde couvre les deux fichiers du répertoire qu'il
 **Deux chantiers restent ouverts pour la routine, et la §2 de son prompt désigne lequel elle
 prend.** Aucun domaine n'étant vide et aucune carte n'étant sans approfondissement, ses conditions
 A et B sont fausses : **la condition C décide, et la phase 3 a commencé le 2 septembre**, sur
-`behavioral-economics`, qui passe de quatre à huit cartes. Elle enrichit un domaine par nuit, en
-rotation, et **le suivant se déduit sans arbitrage : `sociology-of-work`** — voir la fin du
-chantier D.
+`behavioral-economics`, qui passe de quatre à huit cartes, puis a continué le 3 septembre sur
+`sociology-of-work`, qui passe de sept à onze. Elle enrichit un domaine par nuit, en rotation, et
+**le suivant se déduit sans arbitrage : `work-psychology`** — voir la fin du chantier D.
 
 **Le chantier C est fermé.** Il a perdu un domaine le 22 août, `systems-thinking`, un second le 23,
 `decision-science`, un troisième le 25, `operations-management`, un quatrième le 26,
@@ -307,36 +307,57 @@ affichée du dépôt** ; la reprise 5 a rendu Albou 1962, ouvert page à page su
 deux cartes sont tirées. **Restent ouvertes les reprises 2 et 3**, et ce que le lot a lui-même
 ouvert, listé en fin de section.
 
+**Le deuxième domaine a été pris le 3 septembre 2026, au passage 11 : `sociology-of-work`**, par le
+même critère de repli puis par l'ordre de `taxonomy.ts`, qui tranchait une égalité à sept entre
+trois domaines. Il en porte **onze**. Le lot a travaillé la priorité 3, les angles morts de
+`corpus/map/sociology-of-work.scouting.md`, et il en a fermé trois définitivement : la traduction
+Maspero 1976 de Braverman, **zéro résultat**, ce qui laisse la déqualification sans source primaire
+atteignable ; le reste du numéro 344 du *Bulletin de psychologie*, dépouillé en entier, 55 articles,
+**clos négativement** ; et Dassa 1983, qui n'était que repéré et qui a rendu une carte. **Piore 1975
+reste ouvert et reste un échec réseau**, sixième HTTP 429 cumulé, sans qu'aucun
+`access-restricted-item` n'ait jamais été vu sur l'item. Ce que ce lot a lui-même ouvert est écrit
+dans son compte rendu et dans sa cartographie ; **le moins cher est Hughes, « Licence and Mandate »,
+dans un volume déjà ouvert et vérifié.**
+
+**Ce lot a aussi soldé la faiblesse structurelle de ce domaine.** Ses sept cartes antérieures
+portaient toutes l'avertissement « aucune source secondaire affichée » ; les quatre nouvelles en
+portent chacune au moins une, ouverte et lue dans son corps, avec sa réserve écrite. C'est le
+deuxième domaine, après `behavioral-economics`, à sortir de cette dette.
+
 **Le domaine suivant se déduit de la même règle, et il vaut d'être écrit ici pour que la nuit qui
-reprend n'ait pas à le recalculer.** `behavioral-economics` a désormais un enrichissement au
-journal, daté du 2 septembre, et sort de la rotation jusqu'à ce que les autres soient passés. Aucun
-autre domaine n'en a : le critère de repli s'applique de nouveau et désigne celui qui a le moins de
-cartes validées. **Trois domaines sont à égalité avec sept** — `sociology-of-work`,
-`work-psychology`, `systems-thinking` — et l'ordre de `src/content/taxonomy.ts` tranche l'égalité :
-**c'est `sociology-of-work`**. En son sein, la priorité 1 est sans objet, tous ses thèmes portant
-une carte, et la priorité 2 aussi, `corpus/map/queue.json` ne couvrant que la sociologie des
-organisations : **la priorité 3 commande, les angles morts de
-`corpus/map/sociology-of-work.scouting.md`**. Le décompte qui tranche est le tableau par domaine de
-[`corpus/ETAT.md`](ETAT.md), et `npm run corpus:audit` le rend à la demande. **En phase 3, la nuit
-se termine par les approfondissements des cartes qu'elle vient de créer** : le passage 10 l'a fait,
-et la file de `corpus:deepen` est repartie de zéro et y est revenue dans la même nuit.
+reprend n'ait pas à le recalculer.** `behavioral-economics` et `sociology-of-work` ont désormais un
+enrichissement au journal, daté du 2 et du 3 septembre, et sortent de la rotation jusqu'à ce que les
+autres soient passés. Aucun des neuf autres n'en a : le critère de repli s'applique de nouveau et
+désigne celui qui a le moins de cartes validées. **`work-psychology` et `systems-thinking` sont à
+égalité avec sept**, et l'ordre de `src/content/taxonomy.ts` tranche l'égalité en plaçant
+`work-psychology` avant : **c'est `work-psychology`**. En son sein, la priorité 1 est sans objet,
+les deux thèmes déclarés sans carte étant en sociologie des organisations, et la priorité 2 aussi,
+`corpus/map/queue.json` ne couvrant que ce même domaine : **la priorité 3 commande, les angles morts
+de `corpus/map/work-psychology.scouting.md`**, dont la section « Quatre reprises laissées par le lot
+du 26 août » ci-dessous tient déjà la liste avec l'accès constaté. Le décompte qui tranche est le
+tableau par domaine de [`corpus/ETAT.md`](ETAT.md), et `npm run corpus:audit` le rend à la demande.
+**En phase 3, la nuit se termine par les approfondissements des cartes qu'elle vient de créer** :
+les passages 10 et 11 l'ont fait, et la file de `corpus:deepen` est repartie de zéro et y est
+revenue dans la même nuit, les deux fois.
 
-**Une condition matérielle pèse sur tout ce chantier, et elle est intermittente au 1er septembre.**
-Le serveur MCP `documentary` a été en échec de connexion (`CONNECTION_CLOSED`) du 29 août au
-1er septembre, quatre nuits, sans conséquence tant que la routine était en phase 2.
-`corpus-scout`, `corpus-primary-reader` et `corpus-blind-reviewer` s'appuient tous les trois sur
-ses outils de recherche et de vérification de référence, et la phase 3 en dépend donc.
+**Une condition matérielle pèse sur tout ce chantier, et elle ne s'est pas levée.** Le serveur MCP
+`documentary` est en échec de connexion (`CONNECTION_CLOSED`) depuis le 29 août, **six nuits
+consécutives au 3 septembre**. `corpus-scout`, `corpus-primary-reader` et `corpus-blind-reviewer`
+s'appuient tous les trois sur ses outils de recherche et de vérification de référence, et la
+phase 3 en dépend donc.
 
-**Il a répondu le 1er septembre à 06h10 UTC, et sur une référence de ce chantier même** : le DOI
-`10.3389/fpsyg.2021.785721` de la reprise 3 ci-dessous rend `reachable: true`, `conclusive: true`,
-`resolved: true`, aucun écart sur Baratgin, Godin et Jamet 2022, `also_in_openalex: true`.
-**Mais il a disparu et réapparu trois fois en quelques minutes pendant ce contrôle** : il bat, il
-n'est pas rétabli, et **la nuit qui ouvre la phase 3 le constate elle-même** par un appel réel
-avant de bâtir un lot dessus. Elle ne tient pas son retour pour acquis sur la foi de cette ligne.
+**Le retour du 1er septembre à 06h10 UTC ne s'est jamais confirmé.** Il avait répondu une fois, sur
+une référence de ce chantier même, le DOI `10.3389/fpsyg.2021.785721` de la reprise 3 ci-dessous,
+puis disparu et réapparu trois fois en quelques minutes. Les passages 10 et 11 l'ont constaté fermé
+par appel réel, chacun avant son lot, et non sur la foi de cette ligne. **La nuit suivante fait de
+même** : elle ne tient ni son retour ni sa fermeture pour acquis sur ce qui est écrit ici.
 
-Sans lui, une nuit peut encore travailler par `WebSearch` et `WebFetch`, mais **elle perd la
-vérification de référence**, et la règle « une référence introuvable n'existe pas » se durcit
-d'autant : dans le doute, la carte ne se publie pas.
+Sans lui, une nuit peut encore travailler par `WebSearch`, `WebFetch` et `curl`, et résoudre ses
+DOI par l'API Crossref directe, ce que les deux nuits de phase 3 ont fait. Mais **elle perd la
+vérification de référence structurée**, et la règle « une référence introuvable n'existe pas » se
+durcit d'autant : dans le doute, la carte ne se publie pas. Deux textes ont été écartés pour cette
+seule raison au passage 11, Penissat 2009 et *Le regard sociologique*, faute d'en avoir pu lire une
+ligne de corps.
 
 ## Cinq reprises laissées par le lot du 28 août, sur `behavioral-economics` — trois faites le 2 septembre
 

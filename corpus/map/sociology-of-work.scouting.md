@@ -352,3 +352,212 @@ déclarer qu'après un lot plus large) :
 Aucun thème ne se propose donc avec une base large ; le passage suivant devrait prioriser la
 vérification de Dassa (coût quasi nul, même route que Durand) et la reprise de Piore (échec
 réseau à retenter) avant tout élargissement.
+
+---
+
+# Enrichissement du 3 septembre 2026 (passage 11/15, phase 3)
+
+Deux passes de repérage, 57 requêtes réseau au total (38 + 19), puis quatre lectures primaires
+et quatre contrôles aveugles. **Quatre cartes validées, quatre `PASS` au premier tour**, ce qui
+porte le domaine de 7 à 11 cartes. Le serveur MCP `documentary` était toujours en échec de
+connexion, constaté par appel réel (`⏸ Pending approval`, aucun outil `mcp__documentary__*`
+exposé) : tout ce qui suit vient de `WebSearch`, `WebFetch`, `curl`, de l'API Crossref directe
+et de l'API Unpaywall.
+
+## Ce que le lot a produit
+
+| carte | texte primaire | accès |
+|---|---|---|
+| `predominance-du-conflit-sur-la-negociation` | Dassa 1983, *Sociologie du travail* 25-1, p. 32-44 | Persée, motif `_T1_` |
+| `travail-sale-et-division-morale-du-travail` | Hughes 1958, *Men and Their Work* | Internet Archive `mentheirwork00hugh` |
+| `effet-societal` | Maurice, Sellier & Silvestre 1979, *RFS* 20-2, p. 331-365 | Persée, motif `_T1_` |
+| `classification-negociee-et-salaire-effectif` | Dubois 1982, *Économie et statistique* 140, p. 3-13 | Persée, motif `_T1_` |
+
+**La dette dominante du domaine est soldée.** Les sept cartes antérieures portaient toutes
+l'avertissement « aucune source secondaire affichée » ; les quatre nouvelles portent chacune au
+moins une secondaire ouverte et lue dans son corps, avec sa réserve écrite en `notes`.
+
+Un thème nouveau a été forgé, `qualification-et-hierarchie` (« La qualification et la
+hiérarchie »), porté par **deux** cartes de deux auteurs distincts. **Rien n'a été ajouté à
+`src/content/themes.ts`** : les quatre fiches déclarent `domain: "sociology-of-work"` et portent
+leur thème par `theme_labels`, selon la convention du domaine.
+
+## Accès vérifiés, positifs
+
+Ils ne se repaient pas.
+
+- **Persée, image de page** : `https://www.persee.fr/renderPage/<id_article>/<id_page>_<largeur>.jpg`.
+  Le fragment `https://www.persee.fr/doc/page/<id_article>/<id_page>` publie l'URL de l'image en
+  plus de l'OCR. **`_1000` est le dérivé le plus lisible** (480 ko sur la page testée) ; `_1400`
+  et `_2000` rendent un fichier **plus petit** que `_1000`, et `_710` fait 154 ko.
+- `sotra_0038-0296_1983_num_25_1_1912` (Dassa 1983), motif `_T1_`, 13 pages, HTTP 200. DOI
+  d'article `10.3406/sotra.1983.1912`, résolu 200 par Crossref.
+- `rfsoc_0035-2969_1979_num_20_2_6697` (Maurice, Sellier & Silvestre 1979), motif `_T1_`, HTTP 200.
+- `estat_0336-1454_1982_num_140_1_4566` (Dubois 1982), motif `_T1_`, HTTP 200.
+- `estat_0336-1454_1976_num_81_1_2368` (Salais 1976, « Qualification individuelle et
+  qualification de l'emploi »), motif `_T1_`, HTTP 200. **Texte adjacent, non instruit** : c'est
+  lui qui porte la distinction individu/emploi que Dubois reprend comme acquise.
+- `socco_1150-1944_1997_num_27_1_1465` (Chapoulie 1997 sur Hughes), **motif de page atypique
+  `_T12_`**, ni `_T1_` ni `_F_`, HTTP 200 : la preuve concrète que le motif se lit sur la notice
+  et ne se présume jamais.
+- `arss_0335-5322_1996_num_115_1_3207` (Hughes, « Le drame social du travail », *ARSS* 115),
+  HTTP 200, lu en entier. **Fait acquis, à ne pas repayer** : ce n'est pas la traduction du
+  chapitre de 1958 mais celle du texte de 1976, et il **ne contient pas** le passage sur le
+  « dirty work ». Il n'existe donc pas de traduction publiée accessible de ce passage.
+- **Internet Archive, `mentheirwork00hugh`** (exemplaire University of Florida) et
+  `mentheirwork00hugh_0` (Princeton) : `access-restricted-item` **absent** sur les deux, OCR
+  intégral en HTTP 200 (401 431 caractères), images de page par
+  `archive.org/download/mentheirwork00hugh/page/n<N>_w1200.jpg`, **décalage constant n = page
+  imprimée + 5**. Le `page_numbers.json` de l'item répond vide, contourner par le `_djvu.xml`.
+- **OpenEdition** sert en accès libre intégral, sans mur : `journals.openedition.org/sdt/18092`
+  (Segrestin 2019 sur Reynaud), `journals.openedition.org/travailemploi/4652` (Saglio 2007).
+
+## Accès vérifiés, négatifs
+
+- **`mentheirwork0000hugh`** (Trent University), troisième exemplaire du même livre :
+  `access-restricted-item: true`. **Ne pas le confondre avec les deux ouverts, ne pas le retenter.**
+- **Braverman, traduction française Maspero 1976** (*Travail et capitalisme monopoliste*) :
+  recherche Internet Archive par titre exact → **0 résultat**. Aucune source ouverte en texte
+  intégral. Seuls des comptes rendus sur Persée (`reco_0035-2764_1977_num_28_5_408352`,
+  `forem_0759-6340_2001_num_76_1_2454`) et une préface de réédition sur ORBI Liège, qui est du
+  paratexte de commentateur. **La piste est close** : avec les deux éditions anglaises 1974 déjà
+  vérifiées fermées (`labormonopolycap00brav`, `labormonopolycap00harr`), la déqualification
+  reste sans source primaire atteignable, et c'est un constat, pas une lacune à combler par
+  autre chose.
+- **Roy, Donald (1952), « Quota Restriction and Goldbricking in a Machine Shop »**, *AJS* 57(5),
+  DOI `10.1086/221011`. **API Unpaywall, HTTP 200** : `"is_oa": false`,
+  `"has_repository_copy": false`, `"oa_status": "closed"`, `"oa_locations": []`. Unpaywall
+  interroge les dépôts institutionnels et les archives ouvertes déclarées : c'est le résultat le
+  plus proche d'une preuve d'absence qu'on obtienne sans ouvrir chaque dépôt. JSTOR et University
+  of Chicago Press en paywall, aucun contournement tenté. **Piste close.**
+- **Segrestin, Denis (1985), *Le phénomène corporatiste*** : Cairn **403** sans même la page de
+  redirection ; Internet Archive, 0 résultat par titre. Persée n'indexe que des comptes rendus
+  (`sotra_0038-0296_1986_num_28_1_2033`, `rfsoc_0035-2969_1987_num_28_2_2410`,
+  `mots_0243-6450_1987_num_14_1_1346`), donc de la secondaire. Pas de source primaire.
+- **Cairn ferme en 403** tout ce qui a été tenté cette nuit, y compris « Revisiter l'analyse
+  sociétale aujourd'hui », *Terrains & Travaux* 2012-2 p. 109 (301 puis 403). Ne pas y retourner
+  sans route nouvelle.
+- **Penissat 2009**, *Politix* 86, sur l'histoire des fiches de conflits : échec par trois voies,
+  Cairn 403, HAL 404 sur le fichier, LILLOA 404. Non versé au dossier, même en `metadata-only`,
+  faute d'avoir pu en lire une ligne de corps.
+- **Le PDF `docAsPDF` de Persée répond 403** (« protected by altcha »), quatrième confirmation.
+  Non contourné.
+
+## Angle mort qui reste un échec réseau, et non un vide
+
+- **Piore, Michael J. (1975), « Notes for a Theory of Labor Market Stratification »**.
+  `https://dspace.mit.edu/bitstream/handle/1721.1/64001/notesfortheoryof00pior.pdf` → **HTTP 429**,
+  **sixième échec cumulé** toutes nuits confondues ; notice `dspace.mit.edu/handle/1721.1/64001`
+  → 429 en `curl`, 405 par `WebFetch`. Routes alternatives essayées et closes : EconPapers/RePEc
+  `mit/worpap/95` (200, mais lien institutionnel `econ-www.mit.edu` mort) ; le volume
+  *Labor market segmentation* sur Internet Archive, `labormarketsegme0000conf`,
+  `access-restricted-item: true` ; **API CORE `api.core.ac.uk/v3/search/works` → 429** (clé
+  requise pour un usage non anonyme) ; **API Semantic Scholar → 429** également.
+  **Aucun `access-restricted-item` n'a jamais été vu sur l'item MIT** : le texte n'est pas fermé
+  par nature, il est rate-limité. À retenter hors période de limitation, ou avec une clé d'API
+  CORE si une nuit en obtient une.
+
+## Angles morts que ce lot laisse ouverts
+
+- **Hughes, « Licence and Mandate »**, *Men and Their Work*, chapitre 6, p. 78-87. Repéré par le
+  lecteur primaire **dans un volume déjà ouvert et vérifié**, et délibérément non instruit pour
+  ne pas écrire deux cartes sur un même texte dans un même lot. C'est l'angle mort le moins cher
+  du domaine : l'accès est acquis, le décalage de pagination des images est connu, la secondaire
+  francophone (Chapoulie 1997) est déjà lue. **À prendre en premier.**
+- **Touraine, Alain (1957), « Qualification, salaire et homogénéité du groupe ouvrier »**,
+  *Revue économique* 8-5, p. 841-850, Persée `reco_0035-2764_1957_num_8_5_407260`, listé
+  « title-free » donc libre présumé, **non vérifié page à page**. C'est un texte **différent** du
+  Touraine 1955 clos au balayage d'ouverture : autre revue, autre objet, une critique
+  méthodologique d'une étude de Lecaillon sur l'hétérogénéité des salaires ouvriers. Route
+  nouvelle et concrète, donc à vérifier avant de la retenir ou de la classer. Risque à trancher
+  sur pièce : une note de discussion dans une revue d'économie peut n'être ni un concept ni du
+  périmètre.
+- **Salais, Robert (1976)**, ci-dessus, accès vérifié : porte la distinction qualification de
+  l'individu / qualification de l'emploi, que Dubois reprend sans la revendiquer. Sa frontière
+  n'est pas tranchée : son objet penche vers la statistique de planification du marché du travail
+  (projections INSEE pour le VII<sup>e</sup> Plan), ce qui peut le faire tomber dans le
+  hors-périmètre « statistique publique commentée sans thèse ». À trancher par la lecture.
+- **Le salaire comme rapport de force reste à moitié ouvert.** Une carte l'aborde désormais
+  (Dubois), mais par la classification et non par le conflit salarial lui-même. HAL n'a rien
+  rendu de pertinent sur ce thème en deux requêtes (`salaire rapport de force qualification`,
+  `grille qualification convention collective`).
+- **Les déterminants de marché des écarts de salaire inter-entreprises**, exposés par Dubois
+  p. 11-12, sont **consignés en angle mort vers `behavioral-economics`** et non rejetés,
+  conformément à la frontière écrite du périmètre.
+- **Le reste du numéro 344 du *Bulletin de psychologie* (1980) est clos, et négativement.** Le
+  sommaire a été dépouillé en entier (55 articles hors notes de lecture) depuis
+  `https://www.persee.fr/issue/bupsy_0007-4403_1980_num_33_344`. Un seul titre méritait la
+  vérification, Labrousse, « Projets d'autogestion et psychologie sociale », p. 493-495, lu en
+  texte intégral (`bupsy_0007-4403_1980_num_33_344_11741`, motif `_T1_`, HTTP 200) : l'auteur y
+  écrit que ce n'est pas au psychologue de définir l'autogestion comme fait social, seulement
+  d'en étudier le vécu et les représentations. Il rapporte donc son objet à un fait psychosocial
+  individuel et **reste côté `work-psychology`**. Ce gisement ne doit plus recevoir de budget.
+
+## Ce que le contrôle aveugle a réellement attrapé
+
+**Rien qui ait renvoyé une carte** : quatre `PASS` au premier tour, sur les quatre questions.
+Ce que les contrôleurs ont relevé **hors** des quatre questions, et qui a été traité :
+
+- Le `doi_isbn` de la source primaire de Dassa portait l'ISSN de la revue là où l'article a son
+  DOI propre. Le trou a été comblé plutôt que l'étiquette changée : `10.3406/sotra.1983.1912`
+  résolu 200 par Crossref avant écriture, notice concordante, DOI porté sur la fiche, note
+  écrite. C'est exactement le geste déjà appliqué à `fonctions-sociales-de-la-greve`.
+- Le titre de Dassa a **trois états**, et la fiche suit l'imprimé : la page de titre porte
+  « **Conflits** ou négociation ? » au pluriel, les titres courants des pages impaires portent le
+  singulier, et Persée comme Crossref ont suivi les titres courants. La bibliographie de
+  Segrestin 2019 porte elle aussi le pluriel.
+- La conclusion « Entreprise et société » de Maurice, Sellier & Silvestre commence p. 362 et non
+  p. 363 ; la page de la citation, elle, est juste.
+
+## Ce que la relecture sur image a réellement corrigé
+
+Elle n'a été formelle sur aucune des quatre fiches, et sur l'une d'elles elle a décidé du
+périmètre.
+
+- **Dubois** : l'encadré méthodologique de la page 7, qui déclare que les quatre entreprises ne
+  prétendent pas être représentatives et que l'objet de l'étude est le lien entre formation,
+  qualification et salaire, **n'existe que sur l'image** : la couche texte de Persée l'omet
+  purement et simplement. C'est la pièce qui fait passer le test « une monographie n'est pas un
+  concept ». Une lecture faite sur le seul OCR aurait manqué ce qui décidait de la fiche.
+- **Maurice, Sellier & Silvestre** : l'OCR de Persée écrit « societal » sans accent aux quatre
+  occurrences ; l'image montre l'accent.
+- **Dassa** : l'OCR rend « résultais » pour *résultats* p. 39 et insère une espace parasite dans
+  les décimales p. 40. **Piège inverse à la page 44** : l'imprimé porte lui-même *trarail* et
+  *sup*, que l'OCR reproduit fidèlement. L'imprimé porte aussi « Laboratoire de Sociologie du
+  Travail et des Relations **Proportionnelles** », coquille de l'imprimé signalée pour qu'elle ne
+  soit pas recopiée.
+- **Hughes** : aucun écart d'OCR sur la phrase citée, mais une variation de l'imprimé lui-même,
+  « self-conception » p. 50 contre « self concept » p. 71, que l'OCR restitue fidèlement.
+
+## Ce que les agents ont refusé d'écrire
+
+- **Le chapeau liminaire d'un article n'est pas de son auteur.** Deux lecteurs ont écarté le
+  passage le plus net de leur texte pour cette seule raison : le chapeau de la page 32 de Dassa,
+  et celui de la page 3 de Dubois, où rien sur la page ne permet de dire s'il est de l'auteur ou
+  de la rédaction de la revue.
+- **Une citation qui se retourne hors de son contexte.** La phrase en italique de Dassa p. 39,
+  « la grande entreprise est donc un handicap », 112 caractères et parfaitement citable, se lit
+  hors contexte comme un handicap **pour l'entreprise** alors que Dassa parle du point de vue des
+  grévistes. Écartée.
+- **Une définition trop longue ne se coupe pas de force.** La définition canonique de l'effet
+  sociétal, p. 364, fait 225 caractères et sa meilleure coupe honnête 153 : elle a été écartée au
+  profit d'une phrase de la p. 363, et conservée en entier dans les réserves. De même chez
+  Dubois, la récapitulation de la p. 10 a trois membres solidaires et toute coupe sous 150
+  caractères supprime un étage de l'escalier.
+- **Une traduction publiée qu'on n'a pas lue ne se cite pas.** *Le regard sociologique*
+  (Chapoulie dir., EHESS, 1996) n'a pas été ouvert, donc pas cité, et la carte de Hughes déclare
+  sa traduction comme `in-house`.
+- **Une paternité ne se déduit pas d'un titre.** Le terme « effet sociétal » figure déjà au titre
+  du rapport LEST d'octobre 1977 des mêmes auteurs ; l'article de 1979 ne le rattache à personne
+  et n'en revendique pas la paternité, et l'`attribution_note` s'arrête là. De même, la
+  distinction qualification de l'individu / de l'emploi n'est pas de Dubois, qui la donne pour
+  acquise en renvoyant au CEREQ 1978 et à Salais 1976 : la fiche nomme ce qui est de lui,
+  l'emboîtement des trois niveaux et la déconnexion.
+- **Une secondaire ne s'autorise pas au delà de son corps.** La leçon du 2 septembre s'est
+  appliquée quatre fois : Chapoulie 1997 porte sur la manière de faire de Hughes et n'expose
+  jamais le sale boulot, et avertit p. 108 que le privilège des positions de faible statut est
+  seulement méthodologique ; Segrestin 2019 ne mentionne ni Dassa ni l'article de 1983 et
+  n'atteste donc rien de sa réception ; Saglio 2007 ne cite pas Dubois et impute le décrochage à
+  une autre cause ; d'Iribarne 1991 n'est pas un commentaire favorable mais une objection, et il
+  discute l'ouvrage de 1982 et non l'article de 1979. Chacune de ces réserves est écrite dans les
+  `notes` de la carte qui porte la source.
