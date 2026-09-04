@@ -840,6 +840,16 @@ interprétable que si des témoins positifs sont joués dans la même minute, su
 Le lot du 25 août en a joué trois pour deux tests. **Et même alors, un renouvellement introuvable
 n'est pas un renouvellement inexistant** : la réserve se garde en clair.
 
+**Un `git fetch` à plusieurs refspecs est tout ou rien, et son échec est silencieux pour qui ne
+le lit pas.** Payé par le passage 12. Un `git fetch origin main <branche>` où la branche n'existe
+pas encore côté distant rend `fatal: couldn't find remote ref` et **ne met à jour aucune des deux
+références**, `main` comprise. La nuit a donc raisonné pendant six heures sur un `origin/main`
+vieux d'un jour, et écrit dans son journal et dans sa pull request que six passages n'étaient pas
+fusionnés alors qu'ils l'étaient. **On fetch une référence à la fois**, ou l'on relit le code de
+sortie avant de conclure quoi que ce soit de ce qui a été rapporté. Corollaire : la comparaison
+`git rev-list --left-right --count origin/main...HEAD` ne vaut que si le fetch qui la précède a
+réussi.
+
 **Un fichier de métadonnées d'Internet Archive n'est pas une lecture, et `page_numbers.json` est
 le pire des deux.** Établi par le lot du 26 août, qui lui doit son seul renvoi. Ce fichier est une
 **inférence automatique** de la pagination, pas une transcription : il annonce 94 feuillets pour
