@@ -455,6 +455,69 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "attention-diffusee-et-selection",
+    "lead": [
+      "Un autobus parisien des années 1920 avance au pas dans une rue encombrée. Celui qui le conduit, qu’on appelle alors le machiniste, doit à la même seconde suivre la voiture qui le précède, surveiller le trottoir d’où un enfant peut descendre, apercevoir un cycliste sur sa gauche, entendre une sonnerie derrière lui. Aucun de ces objets ne mérite à lui seul qu’on s’y absorbe, et c’est là toute la difficulté. Ce qu’on appelle ordinairement l’attention est un resserrement : on fixe une chose et on oublie le reste. Sur ce siège, se concentrer serait une faute professionnelle.",
+      "Reste à donner un nom à l’aptitude inverse, celle qui consiste à ne rien perdre de plusieurs choses à la fois, si l’on veut pouvoir la chercher chez un homme qui se présente à l’embauche et qu’on ne verra jamais conduire. C’est ce que fait J.-M. Lahy en 1924, dans un long article où il rend compte du laboratoire qu’il dirige pour la compagnie des transports parisiens."
+    ],
+    "sections": [
+      {
+        "title": "Ce que « diffusée » veut dire ici",
+        "paragraphs": [
+          "La phrase de baptême est à la page 117, et elle décrit une tâche avant de nommer une faculté : « Pour reconnaître ces dernières excitations sur le fond mobile des images de la rue, pour les classer, les juger, y répondre par des gestes adaptés, le machiniste utilise une forme particulière de l’attention, à laquelle nous avons donné le nom d’attention diffusée. »",
+          "Quatre verbes se suivent, et ils ne décrivent pas une veille passive : reconnaître, classer, juger, répondre. Il ne suffit pas d’avoir vu, il faut avoir trié, et le tri se termine par un geste. L’adjectif dit l’étalement de l’attention sur plusieurs objets, non son affaiblissement : diffusée ne veut pas dire distraite. Et la difficulté tient à ce que ces objets se détachent sur un fond qui bouge sans arrêt, la rue elle-même.",
+          "Lahy nomme à la première personne du pluriel, au nom de son laboratoire, et les titres de ces pages portent la même chose : « 2° Mesure de l’attention diffusée », puis « A. L’attention diffusée ». La notion arrive dans un texte qui s’apprête à la mesurer."
+        ]
+      },
+      {
+        "title": "Neuf lampes, deux vibreurs, un fond de rue projeté",
+        "paragraphs": [
+          "Les pages 118 à 128 ne discutent pas la notion, elles décrivent une machine. Une chambre noire, un siège de machiniste, une projection cinématographique qui sert de fond mobile, neuf lampes de couleur et deux vibreurs. Le candidat répond de l’index droit et des deux pieds, et ses réactions s’inscrivent sur un cylindre. La cote se calcule à la page 127 : c’est « le rapport du nombre des réactions justes au nombre des excitations ».",
+          "Rien là-dedans ne mesure une intensité d’attention. Ce qui est compté, c’est la part des sollicitations qui ont reçu la bonne réponse, et ce déplacement est décisif : une aptitude devient examinable parce qu’on a accepté de la remplacer par un comptage de réponses justes. Les deux planches d’étalonnage de la page 128, datées de décembre 1924, séparent d’ailleurs les excitations visuelles seules des visuelles et auditives combinées : la même aptitude est éprouvée deux fois, dans deux conditions.",
+          "Le plan de ces pages est celui d’un outilleur autant que d’un psychologue : la technique et l’outillage, l’organisation du test, son apprentissage, le calcul des résultats et sa constance. Une partie entière porte sur ce fait qu’on n’est pas noté au premier contact : il faut d’abord apprendre l’appareil."
+        ]
+      },
+      {
+        "title": "Une note qui n’existe que par rapport aux autres",
+        "paragraphs": [
+          "Un rapport de réponses justes ne dit rien tout seul. Ce qui en fait un verdict, c’est une population de comparaison. Les planches de la page 128 sont graduées en rangs, en déciles et en quartiles ; le tableau de référence imprimé porte pour titre « Valeurs du classement (1.000 candidats machinistes de 20 à 35 ans) », et les courbes d’exactitude sont établies « d’après nos 1.000 premiers sujets ». Un candidat n’est pas bon ou mauvais : il est placé.",
+          "Deux conséquences suivent aussitôt. La même performance change de sens quand la population change, et il faut donc savoir à qui l’on compare avant de lire une note. Surtout, le nombre d’éliminés dépend de l’endroit où l’on trace le trait, et cet endroit n’est pas donné par la mesure. Lahy le reconnaît sans détour : il fait dépendre le seuil d’élimination du marché de la main-d’oeuvre et non de la science. Quand les bras manquent, la barre descend.",
+          "Dans le classement général des candidats, l’attention diffusée entre deux fois, une valeur pour les excitations visuelles, une autre pour les visuelles et auditives. Elle y est une entrée parmi d’autres : l’épreuve la plus emblématique du laboratoire ne décide pas seule d’une embauche."
+        ]
+      },
+      {
+        "title": "Trois cents machinistes examinés après l’accident",
+        "paragraphs": [
+          "Les dernières pages changent de terrain. Il ne s’agit plus de candidats, mais de trois cents machinistes compromis dans un accident, responsables ou non, examinés après coup. La conclusion tient dans une phrase de la page 170 : « l’attention diffusée, c’est-à-dire celle qui porte sur plusieurs objets à la fois, manque presque toujours au machiniste qui se rend fautif d’un accident grave ».",
+          "« Presque toujours » n’est pas une proportion, et l’article n’en donne pas. Il ne mentionne pas non plus de groupe de comparaison, c’est-à-dire de machinistes sans accident examinés dans les mêmes conditions. Le dispositif regarde en arrière, depuis l’accident : il peut montrer que les fautifs se classent bas, il ne peut pas dire à lui seul combien de mal classés n’ont jamais rien accroché. Les deux questions se ressemblent et n’ont pas la même réponse.",
+          "Un homme sert d’illustration, et Lahy le présente pour ce qu’il est, « un cas typique » : il « se classe parmi les derniers sur 2.000 sujets ». La phrase qui suit est la plus troublante de l’article : « Cette infériorité psychologique ne pouvait pas apparaître à ses inspecteurs. Il a fallu l’accident pour la déceler. » Quelque chose de réel échapperait à ceux qui voient l’homme travailler tous les jours, et ne se montrerait qu’en laboratoire ou dans la catastrophe. C’est ce qui rend l’épreuve désirable, et ce qui oblige à l’examiner de près."
+        ]
+      },
+      {
+        "title": "Quand le test et les chefs ne disent pas la même chose",
+        "paragraphs": [
+          "La page 169 confronte chaque épreuve à l’appréciation professionnelle donnée par la hiérarchie, sous forme de corrélations de rang. Les deux valeurs d’attention diffusée y sont les plus basses des cinq : + 0,21 pour les excitations visuelles seules, + 0,15 pour les visuelles et auditives combinées. Lue vite, la chose ressemble à un démenti : l’aptitude tenue pour centrale est justement celle qui s’accorde le moins avec le jugement des chefs.",
+          "Lahy lit dans l’autre sens, et impute la faiblesse aux évaluateurs plutôt qu’à l’épreuve : « nos informateurs ne font pas suffisamment intervenir l’aptitude à l’attention diffusée ». Le chiffre ne tranche pas entre les deux lectures. Ce qui tranche, c’est la mesure qu’on prend pour référence. Tenir l’appréciation hiérarchique pour la vérité rend le test suspect ; tenir le test pour le révélateur de ce que la hiérarchie ne voit pas fait de la corrélation basse un argument en sa faveur. Le même nombre sert aux deux thèses.",
+          "L’auteur n’est pourtant pas un enthousiaste, et sa prudence appartient au texte autant que sa découverte. Il juge ses propres coefficients trop bas pour qu’on emploie les tests isolément, tient les lois tirées de phénomènes biologiques pour dépourvues de rigueur absolue, et refuse dès l’ouverture de reprendre à son compte la littérature enthousiaste de son temps. Sur cette même page 169, une singularité de l’imprimé reste d’ailleurs inexpliquée : il y discute « la valeur + 0,55 trouvée pour le meilleur de nos tests » alors que la liste de coefficients qui la précède de dix lignes plafonne à + 0,36."
+        ]
+      },
+      {
+        "title": "Un laboratoire commandé par une compagnie d’autobus",
+        "paragraphs": [
+          "La notion n’est pas née dans une université. Le laboratoire est celui de la Société des Transports en commun de la région parisienne, et la compagnie avait adjoint à Lahy un ingénieur en chef, Gaston Guyot, pour construire les appareils. Les instruments qui mesurent l’aptitude ont donc été fabriqués sur commande par l’employeur qui recrute, ce qui n’invalide rien, mais se sait.",
+          "Les travaux historiques consacrés à ce laboratoire montrent que le dispositif a duré au-delà du recrutement : des visites psychotechniques périodiques ont été appliquées à ceux qui étaient déjà en place, et la réception syndicale fut critique. Le chiffre de 16,5 % d’accidents en moins a circulé dans cette réception, assorti d’une mise en garde.",
+          "Deux actes distincts se laissent confondre par le vocabulaire de l’aptitude : mesurer une capacité, et décider qui conduit. Le premier revient au laboratoire, le second à l’entreprise. Nommer l’attention diffusée n’a pas seulement enrichi la psychologie : cela a donné au second acte une forme qu’il n’avait pas, un rang à la place d’une impression d’inspecteur. Que ce soit un gain de justice ou un instrument de tri plus ferme, l’article ne le décide pas, et c’est la question que les syndicats ont posée."
+        ]
+      }
+    ],
+    "limits": [
+      "Le détail complet de l’épreuve est ailleurs : Lahy renvoie en note de la page 155 à un livre paru chez Dunod en 1927, La Sélection des travailleurs. Conducteurs de tramways et d’autobus, dont il dit qu’il donne « tous les détails techniques et les résultats ». La plupart des commentateurs le citent plutôt que l’article de 1924 ; c’est lui qu’il faudra ouvrir.",
+      "Le résultat sur les accidents tient au seul témoignage de Lahy. Les études qui lui ont été consacrées ensuite nomment le test sans le discuter, et aucune ne rapporte ce cas : une contre-épreuve par un tiers reste à trouver.",
+      "La date de naissance de l’épreuve n’est pas fixée : une bio-bibliographie de 1983 la fait remonter à 1910, sans référence et en tension avec une autre de ses pages, et l’ouverture du laboratoire est située tantôt en 1921, tantôt en 1924, un autre récit la répartissant entre une autorisation de 1923, une mise en service en juin 1924 et une inauguration en janvier 1925. Les textes de Lahy sur les conducteurs de tramways antérieurs à 1924 sont l’endroit où chercher.",
+      "Les rangs reposent enfin sur une population que l’article ne stabilise pas : ses tableaux portent 1.000 candidats, quand le machiniste accidenté « se classe parmi les derniers sur 2.000 sujets ». Effectif accru ou coquille, le texte ne tranche pas."
+    ]
+  },
+  {
     "conceptId": "automatisation-centree-humain",
     "lead": [
       "Une machine qui fonctionne bien finit par se faire oublier, et c’est même à cela qu’on la reconnaît. Elle tient le cap, elle maintient l’allure, elle rattrape seule les petits écarts, et la personne qui reste responsable de ce qui arrive pense pendant ce temps à autre chose. La situation est confortable tant que rien ne cloche. Elle cesse de l’être à la seconde où il faut reprendre la main, car reprendre la main suppose de savoir ce que la machine faisait, pourquoi elle le faisait, et depuis quand.",
@@ -790,6 +853,68 @@ export const generatedDeepenings: Deepening[] = [
       "La méthode et son nom sont antérieurs de deux ans à cet article : ils viennent de la note de travail n° 49 de la Direction scientifique de la SEMA, juin 1966, cosignée par R. Benayoun, B. Roy et B. Sussmann. Le seul témoin de cette cosignature est la bibliographie imprimée de 1968. C’est dans ces pages de 1966 que la méthode a pris sa première forme, et il faudra les retrouver pour établir en propre l’apport de chacun.",
       "L’article renvoie à un second document de la même maison, un « Manuel de référence du programme ELECTRE » de mai 1966, signé Benayoun et Sussmann. Son titre annonce un programme de calcul déjà en service : ce qu’il calculait, et sur quels cas, c’est ce manuel qui le dira.",
       "Pourquoi renoncer à une note globale plutôt que la corriger, ce texte ne le discute nulle part. Les quinze références de sa bibliographie sont les travaux avec lesquels Roy se situait alors, et c’est là qu’il faut aller chercher l’argument qu’il ne développe pas. Quant à ce que la famille de méthodes née de celle-ci est devenue, et à la place qu’y a prise l’incomparabilité, un chapitre intitulé « ELECTRE Methods », signé Figueira, Mousseau et Roy, en est l’entrée."
+    ]
+  },
+  {
+    "conceptId": "classement-par-valeurs-compensatrices",
+    "lead": [
+      "Un candidat se présente, on lui fait passer plusieurs épreuves, il en sort avec autant de notes que d’épreuves. Reste à dire un seul mot : apte, ou non. Le passage des notes séparées au verdict unique ressemble à un problème d’arithmétique, et l’arithmétique la plus simple consiste à faire une moyenne. Elle a pourtant un défaut visible dès qu’on la regarde : elle laisse une note très basse se noyer dans les autres, et traite comme interchangeables des épreuves qui ne mesurent pas la même chose.",
+      "En 1924, J.-M. Lahy publie dans L’année psychologique le compte rendu d’une campagne de sélection menée pour la Société des Transports en commun de la région parisienne, qui recrutait des machinistes pour conduire ses véhicules. Il lui fallait une règle capable de transformer une série de résultats en une décision d’embauche. Cette règle, il l’a écrite, justifiée, nommée, et il a pris soin de dire lui-même ce qu’elle avait d’assuré et ce qu’elle avait de conventionnel."
+    ],
+    "sections": [
+      {
+        "title": "Pourquoi une seule épreuve ne classe personne",
+        "paragraphs": [
+          "Lahy part d’une observation sur l’organisme plutôt que sur les tests. Pour lui, « l’organisme humain est un complexe de fonctions diverses dont les activités se chevauchent et dont les valeurs, variables avec chaque individu, se suppléent les unes les autres ». Suppléer, ici, c’est prendre en charge : ce qu’une fonction fait mal, une autre le rattrape, et la performance d’ensemble s’en trouve tenue.",
+          "La conséquence porte directement sur la méthode d’examen : « le rendement pour un seul test ne peut classer un groupe de sujets dans une activité professionnelle, en raison des suppléances qui se créent entre les diverses fonctions mises en jeu ». Une épreuve isolée ne mesure pas une aptitude au métier, elle mesure une fonction, et une fonction n’est jamais seule à travailler. Lahy en tire un avertissement à l’adresse de ceux qui jugeraient sa méthode sur une seule colonne de chiffres : « on ferait donc une erreur grossière en jugeant la valeur de notre méthode par le rapport du rendement dans un seul test avec la valeur professionnelle du sujet ».",
+          "Ce principe n’est pas né avec les machinistes. Lahy écrit qu’il « découle de nos recherches antérieures sur la supériorité professionnelle de certains travailleurs », et renvoie en note à deux de ses propres travaux, sur les ouvriers linotypistes en 1910 et sur les dactylographes en 1913."
+        ]
+      },
+      {
+        "title": "Le point où la compensation cesse",
+        "paragraphs": [
+          "Une telle idée a une pente : si tout se compense, personne n’est jamais écarté, il suffirait d’être bon quelque part. Lahy coupe cette pente immédiatement. Il prévient qu’« il ne faudrait pas exagérer l’importance des phénomènes de suppléance », et il pose la borne comme un résultat d’observation, non comme une précaution de style.",
+          "La formulation complète vient plus loin, sous l’intertitre qui donne son nom au procédé : « la supériorité très affirmée d’une fonction mentale ou motrice supplée à l’infériorité relative de certaines autres. Pourtant, lorsque cette infériorité est trop grande, la compensation ne s’établit pas. Nous avons tiré de ces remarques un principe de classement par l’usage des valeurs compensatrices. » Trois conditions tiennent en trois phrases : la supériorité doit être très affirmée, l’infériorité qu’elle rattrape doit rester relative, et au-delà d’un certain écart le rattrapage ne se produit plus.",
+          "On peut le formuler ainsi : ce que Lahy construit n’est pas une note globale, c’est un tri. Une note globale accepte n’importe quel échange entre les épreuves, puisque tout se ramène à un total. Un classement par valeurs compensatrices autorise l’échange jusqu’à un point et le refuse au-delà, ce qui suppose de regarder le profil des résultats et pas seulement leur somme."
+        ]
+      },
+      {
+        "title": "Du rendement au rang, puis du rang au mot",
+        "paragraphs": [
+          "Avant de faire jouer des épreuves les unes contre les autres, il faut les rendre comparables. Un rendement brut ne l’est pas : il « prend une signification différente selon les tests considérés », un même écart chiffré n’ayant pas la même portée d’une épreuve à l’autre. Lahy remplace donc la mesure par le rang du sujet dans le groupe examiné, sur une échelle de cinquante degrés découpée en déciles.",
+          "Chaque décile reçoit ensuite un mot : « très bien, bien, passable, mal ou très mal ». Lahy relève lui-même que ces termes sont ceux « habituellement employés pour des appréciations subjectives », à ceci près qu’ils sont ici « déterminés par le décile dans lequel se place chaque sujet dans chaque test ». Le vocabulaire du jugement scolaire est repris tel quel, son mode d’attribution est changé.",
+          "Les profils ainsi écrits se rangent en quatre catégories, elles-mêmes subdivisées en sept groupes. La première repose sur « la notation très bien obtenue pour l’un des cinq tests », c’est-à-dire sur une supériorité franche quelque part. La quatrième ne relève pas du même ordre de raisons : elle réunit les sujets « chez qui, au cours de l’examen, nous avons décelé des tares psychopathiques ». On peut la lire comme une exclusion posée à côté du calcul plutôt que comme un résultat de ce calcul."
+        ]
+      },
+      {
+        "title": "Ce que Lahy déclare arbitraire dans sa règle",
+        "paragraphs": [
+          "Deux pages plus loin, sous le titre « Équilibre des valeurs dans les groupes », Lahy retourne son propre appareil. Les cinq épreuves ne mesurent pas cinq fonctions : deux portent sur l’attention diffusée, deux sur l’exactitude motrice, une sur la suggestibilité motrice. Compter cinq valeurs revenait à peser deux fois certaines fonctions, et il l’écrit sans détour : « Rien ne nous autorise à agir ainsi ». Il ramène alors la base effective du classement à trois valeurs, une par fonction, en retenant pour chaque fonction mesurée deux fois celui des deux résultats qui donne au sujet le meilleur rang.",
+          "Deux autres choix sont déclarés conventionnels au même endroit. Le poids d’un « très bien » dépend du nombre d’épreuves employées : « si, au lieu de cinq tests, nous en avions utilisé 10 par exemple, l’importance compensatrice d’un seul eût été diminuée ». Et le découpage en déciles aurait pu être autre : « une autre répartition des déciles eut amené une autre application du principe général de classement ». La règle est donc double : une thèse sur l’organisme, qui se veut vraie, et un barème, qui se sait conventionnel.",
+          "Lahy ne donne pas non plus son classement pour achevé : « Ce principe général de classement sera précisé quelque jour dans son application. » La phrase est de 1924 et vaut pour ce qu’elle dit, l’annonce d’un travail à reprendre."
+        ]
+      },
+      {
+        "title": "Ce que la méthode vaut, selon ses propres chiffres",
+        "paragraphs": [
+          "Lahy confronte son classement à l’appréciation professionnelle portée sur des hommes déjà en service. Sur trente-sept machinistes, il relève un écart de 10,81 % entre le rang obtenu à l’examen et la valeur professionnelle ; sur cent trente-six sujets répartis en trois séries, il donne un pourcentage d’accords de 80 %.",
+          "Il borne aussitôt la portée de ces nombres, et de deux façons. Sur la nature des lois en jeu d’abord : « les phénomènes que nous étudions sont des phénomènes biologiques pour lesquels les lois qui découlent de l’observation ou de l’expérience n’ont jamais une rigueur absolue ». Sur l’étalon ensuite, car le classement professionnel auquel il se compare est lui-même « à quelque degré subjectif ». Un désaccord entre les deux ne dit donc pas de quel côté est l’erreur, ce qui interdit de lire l’écart comme un taux de fautes de la méthode."
+        ]
+      },
+      {
+        "title": "Où passe le couperet, et qui le décide",
+        "paragraphs": [
+          "Ranger n’est pas éliminer. Une fois les candidats répartis en catégories, il reste à dire à partir de laquelle on n’embauche plus, et cette décision, Lahy ne la demande pas à ses mesures. De la troisième catégorie, il écrit qu’il serait prudent de ne l’employer « pour la conduite des véhicules que dans la mesure où le recrutement serait appauvri au point de n’en pas trouver de meilleurs ».",
+          "Le raisonnement général vient à la fin de l’article : « Si nous voulons absorber dans notre sélection tous les cas d’élimination des candidats machinistes, il suffira de rendre notre règle plus rigide […]. L’élimination se fera plus précise, mais nous rejetterons de nos services un plus grand nombre de sujets aptes à conduire un véhicule. » Durcir le seuil ne rend donc pas la sélection plus juste : cela déplace l’erreur, du candidat inapte qu’on laisse passer vers le candidat apte qu’on écarte.",
+          "D’où la conclusion, qui sort du laboratoire : « C’est donc le marché de la main-d’oeuvre qui doit régler la rigueur de notre loi de sélection. Le point optimum est déterminé par les réserves en personnel et les nécessités du service. » Le verbe compte. Lahy écrit « doit régler » : il énonce une règle de conduite pour son propre service, plutôt qu’il ne décrit un mécanisme subi. Le seuil d’aptitude n’est pas une propriété des candidats, c’est un réglage, et ce qui le règle est l’état du recrutement."
+        ]
+      }
+    ],
+    "limits": [
+      "Le principe vient d’ailleurs, et Lahy le dit : de ses recherches sur les linotypistes, parues au Bulletin de l’Inspection du Travail en 1910, et sur les dactylographes, communiquées à l’Académie des sciences le 2 juin 1913. Par quel chemin elles mènent à l’idée de compensation, ce sont ces deux textes qui le portent, et il faudra les lire.",
+      "La suite annoncée en 1924 existe sous deux titres qui visent la question laissée ouverte, celle de la mise en rapport de valeurs hétérogènes : « La recherche d’une méthode pour déterminer le rapport entre deux valeurs relatives à des fonctions différentes, fournies par un même test », L’encéphale, 1927, et « Notation automatique des résultats de quelques tests psychomoteurs », Revue de la science du travail, 1930. Ces deux revues s’ouvriront en bibliothèque.",
+      "Le tableau des pages 166 et 167 attend encore son lecteur : il applique le classement aux cinquante candidats un par un et porte une colonne « Affectation ultérieure », où se lit ce que chacun est devenu.",
+      "Ce que la psychotechnique a fait ensuite de cette règle, les sources disponibles ne l’établissent pas : l’expression « valeurs compensatrices » ne se retrouve, pour ces années, que sous la plume de Lahy. Un article du Bulletin de psychologie de 2006 lui est consacré, n° 482, p. 217 : s’il aborde ce classement, c’est là qu’on le verra."
     ]
   },
   {
@@ -1873,6 +1998,67 @@ export const generatedDeepenings: Deepening[] = [
     "limits": [
       "Les formulations attribuées à Mayen et Savoyant, ainsi qu’à Veyrac, Cellier et Bertrand, passent par les phrases que l’auteur en rapporte, et rien au-delà de ces expressions ne peut leur être attribué. Comment ils construisent cette description, quels exemples ils en donnent, cela se trouve dans leurs textes : une communication de congrès pour les premiers, un article de revue pour les seconds.",
       "L’article de 2004 a été repris en 2008 dans un ouvrage collectif, comme troisième chapitre d’un recueil qui rassemble plusieurs textes déjà publiés ailleurs. Que cet ouvrage existe, qu’il porte ce titre et ce chapitre, est établi. Si le chapitre reprend l’article à l’identique ou s’il y ajoute quelque chose, il faudra ouvrir cette édition pour le voir."
+    ]
+  },
+  {
+    "conceptId": "double-emploi-entre-epreuves",
+    "lead": [
+      "Faire passer six exercices plutôt qu’un seul paraît toujours plus prudent : on croit voir six choses là où l’on n’en voyait qu’une, et le résultat d’ensemble semble d’autant plus solide qu’il repose sur davantage d’observations. Rien ne garantit pourtant que la sixième épreuve apporte quelque chose que les cinq autres n’avaient pas déjà dit. Elle peut demander, sous un autre matériel et une autre consigne, à peu près le même effort, et son résultat être devinable dès qu’on connaît les précédents. La série ne mesure alors pas six choses : elle en compte deux fois quelques-unes.",
+      "Encore faut-il pouvoir s’en apercevoir, car deux épreuves peuvent se ressembler très peu sur le papier et se répéter tout de même. En 1922, dans L’année psychologique, une psychologue fait passer six tests à cent dix-sept enfants de trois écoles primaires communales de Paris et de Boulogne-sur-Seine. Elle ne regarde pas seulement comment chaque test se comporte par rapport au classement d’ensemble : elle regarde comment chacun se comporte par rapport à chacun des autres, et fait de cette comparaison croisée un objet d’étude à part entière."
+    ],
+    "sections": [
+      {
+        "title": "Six tests, cent dix-sept enfants",
+        "paragraphs": [
+          "Les six épreuves n’ont pas été réunies au hasard : elles ont été choisies, écrit-elle, « au but de différenciation de certaines aptitudes », c’est-à-dire pour éclairer chacune un aspect distinct. Chaque test range les enfants du premier au dernier, et un classement d’ensemble les range une fois de plus, tous tests confondus. À partir de là, tout se joue sur des rangs plutôt que sur des notes brutes.",
+          "Les corrélations sont calculées « par la méthode de Spearman, applicable aux rangs », entre chaque test et le classement d’ensemble, « et aussi entre chaque test et les autres tests employés pris individuellement », chaque coefficient étant assorti de son erreur probable. Une corrélation de rangs se lit simplement : élevée quand deux épreuves rangent les enfants dans un ordre voisin, proche de zéro quand les deux ordres n’ont rien à voir l’un avec l’autre.",
+          "Les deux comparaisons ne répondent pas à la même question. Confronter un test au classement d’ensemble dit s’il tire dans le même sens que le reste, ce qui rassure sur sa place dans la série. Confronter les tests deux à deux dit tout autre chose : si l’un peut être deviné à partir de l’autre. La première question fait un instrument cohérent, la seconde décide s’il est économe."
+        ]
+      },
+      {
+        "title": "Une forte corrélation lue comme une parenté",
+        "paragraphs": [
+          "De ces corrélations réciproques l’autrice fait un objet à part entière : elle trace pour chaque test un « profil de corrélation autour d’une médiane représentant la corrélation O », c’est-à-dire la suite des coefficients qui le lient à toutes les autres épreuves, alignée sur une ligne de référence où la corrélation est nulle. Une épreuve se caractérise alors moins par sa difficulté que par la place qu’elle occupe dans ce réseau de liens.",
+          "Le pas décisif tient dans un mot. Des tests 4 et 2, elle relève « une corrélation forte de l’un vis-à-vis de l’autre ; ce sont donc deux tests qui offrent une grande parenté ». Ce « donc » fait passer d’une relation entre deux séries de rangs à une affirmation sur ce que les deux épreuves sollicitent chez l’enfant. La seconde partie de l’article, intitulée « Étude comparative des tests et recherche de leur signification », s’emploie précisément à nommer ces fonctions, comme lorsqu’elle écrit que « la mémoire entre pour une grande part dans ce que nous apprécions avec ce test ».",
+          "La conclusion tient en une phrase, à la dernière page : « En résumé, nos six tests représentent bien des modalités différentes du fonctionnement cérébral ; ils ne présentent pas de double emploi et ne sont pas interchangeables. » Les deux membres se répondent : aucune épreuve n’en redouble une autre, et par conséquent aucune ne peut en remplacer une autre."
+        ]
+      },
+      {
+        "title": "Deux profils identiques, deux épreuves distinctes",
+        "paragraphs": [
+          "Le critère paraît alors simple, et l’autrice se charge elle-même d’interdire de le simplifier. Les tests 5 et 6, note-t-elle, « se comportent de façon tout à fait identique » vis-à-vis de tous les autres, « et cependant ils ne représentent pas le même mécanisme intellectuel et n’ont entre eux aucune corrélation ».",
+          "Deux épreuves peuvent donc occuper la même position dans le réseau, entretenir les mêmes rapports avec chacune des autres, et rester parfaitement indépendantes l’une de l’autre. Ce qui décide du recouvrement, c’est le lien direct entre les deux épreuves, pas la ressemblance de leurs relations au reste de la série. Confondre les deux conduirait à écarter comme redondantes deux épreuves qui n’ont, entre elles, rien de commun."
+        ]
+      },
+      {
+        "title": "Un seuil de convention et des erreurs probables",
+        "paragraphs": [
+          "La partie où tout cela se joue s’ouvre sur un avertissement exprès. L’autrice y ajoute « quelques hypothèses sur le jeu des fonctions nécessaires à l’exécution de ces épreuves », et précise que c’est « simplement à titre de suggestion, plutôt pour amorcer de nouvelles études de ces tests, qu’avec la prétention d’apporter une analyse définitive ». La conclusion sur le double emploi est donnée comme une inférence, non comme un résultat tenu pour acquis.",
+          "Deux fragilités sont visibles dans le calcul lui-même. Le seuil au-dessus duquel une corrélation est tenue pour nette, 0,30, est posé par convention et non déduit d’un calcul. Et plusieurs erreurs probables sont du même ordre de grandeur que les coefficients qu’elles accompagnent, ce qui revient à dire que la valeur réelle pourrait être sensiblement différente de celle qui est imprimée.",
+          "S’y ajoutent les défauts de calibrage que l’autrice reconnaît à ses propres épreuves : le test 1 « trop dense », le test 5 « trop simple pour l’âge de nos sujets », le test 6 « à la fois trop facile et trop difficile ». On peut comprendre cela comme une réserve portant sur les coefficients eux-mêmes : une épreuve qui sépare mal les enfants les range mal, et un classement mal assuré ne peut pas corréler franchement avec un autre."
+        ]
+      },
+      {
+        "title": "Ce que l’article ne compare pas",
+        "paragraphs": [
+          "Les cent dix-sept enfants n’ont pas été réunis par hasard : ils devaient se présenter cinq jours plus tard au certificat d’études. Il serait tentant d’en conclure que l’étude mesure ce que valent les tests pour prédire cet examen. Elle ne le fait pas : le certificat sert à recruter les sujets, et aucune corrélation entre un score et un résultat au certificat n’est calculée dans ces pages.",
+          "L’autrice l’annonce elle-même, en dernière phrase : « Quant à la signification générale de leur emploi simultané et à la comparaison du classement obtenu avec celui correspondant aux épreuves scolaires et à l’examen du certificat d’études, ce sera l’objet d’un autre travail, en collaboration avec le Dr Laugier. » L’article établit donc que les six épreuves ne se redoublent pas, et renvoie à plus tard la question de savoir ce que leur emploi simultané permet de prévoir. Ce sont deux questions distinctes, et seule la première est tranchée ici."
+        ]
+      },
+      {
+        "title": "Une signature sans prénom",
+        "paragraphs": [
+          "La première page porte le titre, son sous-titre et la signature « Par Mme Henri Piéron. » ; la dernière se clôt sur « Mme H. Piéron. ». Nulle part la pièce ne donne de prénom de femme, et un siècle plus tard les répertoires bibliographiques ont tranché dans le mauvais sens, en composant la référence au nom du mari.",
+          "Les lecteurs de l’époque ne s’y trompaient pas. En 1925, une chronique publiée à Louvain recense le contenu du volume et distingue, dans une même liste, les mémoires signés « par H. Piéron » et celui-ci, signé « par Mad. H. Piéron ». Annick Ohayon a depuis décrit cet effacement : ces femmes ont collaboré aux travaux de leur mari « au point d’y perdre leurs prénoms, et de n’être connues que comme Madame Henri Piéron et Madame Henri Wallon », et c’est bien Piéron qui « nomme son épouse responsable du service de la recherche ».",
+          "Le millésime se dédouble lui aussi : le tome XXIII de L’année psychologique est daté de 1922 et a paru chez Alcan l’année suivante, ce qui explique que Maurice Reuchlin écrive, en 1969, que « dès 1923, L’Année psychologique publiait un mémoire de Mme Piéron intitulé : Etude psychotechnique de quelques tests d’aptitude ». Sa notice nécrologique porte aussi le seul jugement d’ensemble disponible sur cette oeuvre : l’analyse factorielle, note-t-il, « offrait la possibilité de mettre à l’épreuve les hypothèses sur lesquelles se fondait l’usage de profils », et « on ne trouve guère de traces des différents aspects de cette évolution dans l’oeuvre de Mme Piéron ». Le mot vise là les profils individuels que produisaient ses tests collectifs, non les profils de corrélation de 1922."
+        ]
+      }
+    ],
+    "limits": [
+      "Ce que la psychotechnique française a fait de ce critère reste à établir. La notice que Maurice Reuchlin lui consacre en 1969 nomme ce mémoire pour dater ses débuts dans les tests, sans un mot de son contenu, et la chronique de 1925 se borne à en recopier le titre. Les textes qui auraient repris ou contesté la conclusion de 1922 sont à chercher dans les revues de psychotechnique des années suivantes.",
+      "Le travail annoncé avec le Dr Laugier est celui qui devait comparer le classement obtenu aux épreuves scolaires et au certificat d’études : c’est lui qui dirait ce que vaut l’emploi simultané des six tests. Il reste à retrouver, et l’article ne nomme jamais ce collaborateur autrement que « le Dr Laugier ».",
+      "« Faire double emploi » appartient au français courant, et l’autrice ne revendique pas d’avoir forgé le terme. Savoir si quelqu’un l’avait employé avant elle pour désigner ce recouvrement entre épreuves demande une recherche plein texte dans les revues antérieures à 1922.",
+      "Sa date de naissance reste en suspens : 1878 chez Annick Ohayon, 1877 dans le titre de la notice de Reuchlin. Aucune notice d’autorité ne porte son nom, et l’attribution repose sur les pièces imprimées elles-mêmes."
     ]
   },
   {
@@ -4206,6 +4392,65 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "personnalite-professionnelle",
+    "lead": [
+      "En 1931, le service de la solde de la Compagnie du Nord change ses machines comptables : les Dalton laissent la place à des Elliott-Fischer, et il faut décider qui les tiendra. Le réseau n’a pas de laboratoire à lui, et les opératrices sont « envoyées pour examens au laboratoire de la STCRP », celui de la société qui exploite alors les transports parisiens.",
+      "Deux manières de s’y prendre s’offrent, et l’une comme l’autre paraît raisonnable. On peut regarder le travail : ce que font les mains, ce que suit l’œil, dans quel ordre, avec quelles erreurs possibles. On peut aussi examiner les candidates : leur rapidité, leur mémoire, leur attention. Tant que les deux listes restent chacune de son côté, tout va bien. La difficulté commence lorsqu’il faut les rapprocher, car elles ne sont pas écrites dans la même langue : d’un côté des gestes et des opérations, de l’autre des noms de fonctions mentales, et rien ne garantit qu’une ligne de la première réponde à une ligne de la seconde."
+    ],
+    "sections": [
+      {
+        "title": "Trente jours passés à apprendre le métier",
+        "paragraphs": [
+          "Lahy et Korngold ne commencent pas par faire passer des épreuves. Ils commencent par apprendre le métier eux-mêmes, à la machine : « ces études préalables ont duré 30 jours consécutifs », notent-ils page 134. Le principe est simple et coûteux : on ne décrit bien un travail qu’après l’avoir fait, parce que ce qui se voit du dehors, la posture, la vitesse, le bruit des touches, ne dit à peu près rien de ce qu’il faut y surveiller.",
+          "De ce mois d’apprentissage sort une description du poste : seize opérations distinctes et cinq causes d’erreurs, établies aux pages 134 à 136. C’est encore une description extérieure, celle d’un observateur qui saurait faire. Elle dit ce qui est exécuté, dans quel ordre, et ce qui peut mal tourner ; elle ne dit pas encore ce que cela demande à celle qui l’exécute.",
+          "Ce travail se fait au laboratoire de Lahy, à l’École pratique des hautes études. Suzanne Korngold y est préparateur en 1931 et n’a pas de traitement avant 1933, année où elle devient chef de travaux ; Marcel Turbiaux la décrira plus tard comme « sa plus active collaboratrice ». L’étude n’est pas un coup isolé : elle ouvre une série d’au moins quatre publications consacrées aux opératrices de machines de bureau entre 1931 et 1936."
+        ]
+      },
+      {
+        "title": "Le geste s’automatise, l’attention ne le peut pas",
+        "paragraphs": [
+          "Une seconde analyse reprend le même poste par l’autre bout : non plus ce qui s’y fait, mais ce qu’il réclame de celle qui le tient. Elle tient dans une phrase qui commande tout le reste, « l’automatisation porte sur les gestes, mais l’attention doit être continue et concentrée sur le travail » (p. 137). Le métier s’apprend au point que les doigts se passent de surveillance, et c’est justement pour cela que l’attention, elle, ne peut jamais se relâcher.",
+          "De cette double lecture, les auteurs tirent huit exigences du métier, page 138. Le choix des épreuves ne vient qu’ensuite, pages 138 et 139. L’ordre n’est pas une commodité d’exposition : les tests ne sont pas là pour mesurer ce que le laboratoire sait mesurer, ils sont convoqués pour répondre à une liste établie avant eux et sans eux."
+        ]
+      },
+      {
+        "title": "Quand la psychologie n’a pas le mot qui correspond",
+        "paragraphs": [
+          "Reste le point difficile, et les auteurs le posent eux-mêmes page 133. Une fois déterminées les attitudes mentales et motrices du sujet pendant qu’il travaille, « il faut les exprimer en langage psychologique ». Or, écrivent-ils, « il n’y a pas de correspondance rigoureuse » entre ces attitudes et les « fonctions » que reconnaît la psychologie de leur temps, ces fonctions qui, selon leur mot, « morcellent » l’individu.",
+          "L’écart est facile à sentir. Imaginons ce que peut demander une ligne de comptes : garder un chiffre en tête le temps de le frapper, sans lâcher des yeux la colonne suivante, et recommencer mille fois. Aucune des rubriques disponibles, mémoire, attention, rapidité, ne recouvre exactement cette exigence-là. C’est pour franchir cet écart que les auteurs passent « par le détour de l’analyse », page 132, et ce détour produit une chose qui ne s’observait nulle part : un tableau psychologique de la candidate, dressé en regard d’un tableau du poste. Les guillemets dont ils entourent l’expression ne renvoient à aucune référence ; ils signalent qu’ils la posent.",
+          "La parade est déclarée telle quelle, même page : « A défaut de tests spéciaux, qu’il serait d’ailleurs prématuré d’établir, nous augmentons le nombre de nos tests se rapportant à l’attention ou à des fonctions analogues. » Faute d’une épreuve qui viserait juste, on en multiplie qui visent à côté, et quatre tests distincts seront finalement retenus pour la seule attention (p. 142). Le risque du découpage, eux-mêmes le formulent page 132 : « si la forme que revêt l’activité psychomotrice dans un travail professionnel est détruite par l’analyse, nécessaire dans toute recherche, le phénomène que l’on veut atteindre s’évanouit »."
+        ]
+      },
+      {
+        "title": "Deux exigences qui disparaissent en chemin",
+        "paragraphs": [
+          "La chaîne fuit par endroits, et l’endroit est instructif. La résistance à la fatigue figure au septième rang des huit exigences déduites du métier, page 138 ; aucune épreuve de fatigabilité ne figure parmi celles qui sont retenues page 139. L’acuité visuelle, premier item de la même liste, s’évapore de la même façon. Une exigence peut donc être établie et rester sans mesure.",
+          "Les auteurs le reconnaissent page 147, en écrivant qu’« il serait nécessaire d’introduire dans la sélection préalable un test de fatigabilité ». Une autre épreuve est écartée page 139 comme « ne donnant pas satisfaction ». Ce qui finit par être mesuré dépend donc aussi de ce que l’on sait mesurer, et une liste d’exigences, si soigneusement tirée du poste soit-elle, ne suffit pas à faire exister l’instrument qui lui répondrait."
+        ]
+      },
+      {
+        "title": "Onze opératrices, et la preuve qu’on en tire",
+        "paragraphs": [
+          "Onze sujets seulement ont été examinés. C’est trop peu pour les formules de corrélation, et les auteurs l’écrivent : « mais, dans le cas qui nous occupe, la simple comparaison entre les deux classements suffit » (p. 145-146). D’un côté le classement issu des épreuves, de l’autre celui que donne le travail réellement fourni, la production se comptant ici en lignes par jour.",
+          "L’accord se gagne ensuite en changeant de grain : « la coïncidence qui était presque complète, dans les classements individuels, devient parfaite dans les classements par catégories » (p. 146). Et l’avis du chef de service, qu’on serait tenté de prendre pour un juge extérieur, ne l’est pas, puisque « l’appréciation du chef de service a été déduite de la combinaison des deux informations précédentes » (p. 140). Cela implique que la concordance finale est moins probante qu’elle n’en a l’air : une part en était acquise avant la comparaison."
+        ]
+      },
+      {
+        "title": "Un jugement qui ne vaut que devant ce poste",
+        "paragraphs": [
+          "Le dernier paragraphe de l’étude, page 149, borne lui-même ce qu’on a le droit d’en conclure : « Ce que notre étude peut avoir de péjoratif pour quelques sujets (deux au moins) n’implique pas chez eux une déficience les rendant impropres à tous les autres travaux d’administration. Nous nous sommes placés pour les juger au seul point de vue du travail des opératrices aux machines Elliot-Fischer. »",
+          "C’est la clause la plus importante du procédé, et celle qu’on perd le plus facilement. Une personnalité professionnelle n’est pas le portrait de quelqu’un : c’est un tableau construit en face d’un poste, et il ne vaut que devant ce poste. Changez la machine, la cadence ou la façon de compter la réussite, et la comparaison est à refaire, y compris pour les mêmes personnes. Ce qui a été jugé en 1931 ne dit rien de ce que ces onze femmes valaient ailleurs ; cela dit ce qu’on croyait pouvoir prévoir de leur travail sur une machine donnée, à une date donnée."
+        ]
+      }
+    ],
+    "limits": [
+      "L’expression semble bien naître ici : sur les revues numérisées de Persée, elle ne se lit avant des reprises tardives, d’un tout autre sens, que dans ce mémoire de 1931. L’imprimé français antérieur garde pourtant le dernier mot : c’est dans les fonds numérisés de la Bibliothèque nationale et d’Internet Archive qu’un usage plus ancien se trouverait.",
+      "Le long mémoire de Lahy de 1924 ne porte l’expression sur aucune des pages dont la transcription automatique a été fouillée ; mais celle-ci est fautive par endroits, et deux pages manquent à l’examen. L’imprimé d’origine tranchera.",
+      "Les trois historiens qui éclairent cette étude n’écrivent nulle part l’expression ni ne décrivent le procédé des deux tableaux : ils établissent la commande industrielle, la série qui suit, la trajectoire de la cosignataire. Ce que ce mémoire est devenu après 1931, qui l’a lu et repris, se trouvera ailleurs.",
+      "Annick Ohayon rapporte une phrase de Marcel Turbiaux, selon laquelle Lahy « ne citait pas très souvent ses collaborateurs, lançant des idées, leur laissant ensuite faire le travail, puis signant le papier ». Elle est générale, ne vise aucun titre, et se tient mal ici, où Korngold cosigne l’étude. Le texte de 2006 où Turbiaux l’écrit porte les cas qu’il avait en vue : ce sont eux qu’il faudra lire."
+    ]
+  },
+  {
     "conceptId": "points-de-levier",
     "lead": [
       "Devant un ensemble qui fonctionne mal, la question pratique n’est presque jamais « faut-il agir ». Elle est « où appuyer ». On peut changer un montant, un délai, une règle, la personne qui décide, ou la raison même pour laquelle l’ensemble existe. Ces gestes ne demandent ni le même effort ni la même autorité, et ils n’ont surtout pas la même portée.",
@@ -4418,6 +4663,62 @@ export const generatedDeepenings: Deepening[] = [
       "Les valeurs elles-mêmes, tâche par tâche, sont dans les chapitres qui suivent celui des définitions, et un addendum du 1er septembre 1985, signé de Swain seul, en corrige une partie, ainsi que des tableaux et des figures, sans toucher au chapitre où la probabilité est définie. Qui veut reprendre un de ces chiffres lira les deux ensemble.",
       "L’expression est plus ancienne que ce manuel : les auteurs renvoient à leurs rapports antérieurs, dont la section 6.1 de WASH-1400, et à un texte de Swain de 1963. Sous quelle forme la notion y était déjà posée, ce sont ces pages qui le diront. Une version préliminaire du même rapport, datée de 1980, circule d’ailleurs sous le même numéro et se trouve parfois citée à sa place : les phrases reprises plus haut sont celles du rapport final d’août 1983.",
       "Pour citer ce manuel, c’est l’anglais qui fait référence : aucune traduction française publiée n’en est connue, et le français donné plus haut sert à comprendre, non à référencer. Sur ce que cinquante ans d’usage ont fait de la méthode, il y a un article de 2012 signé Boring, « Fifty Years of THERP and Human Reliability Analysis »."
+    ]
+  },
+  {
+    "conceptId": "profils-divergents-a-score-egal",
+    "lead": [
+      "Deux enfants de douze ans passent le même test le même jour et obtiennent le même total, quarante-cinq points sur quatre-vingts. Ce total les range exactement au même endroit parmi les enfants de leur âge, à mi-hauteur. S’il faut dire un mot de leur avenir scolaire, ou du métier vers lequel les pousser, rien ne permet de les distinguer : pour le barème, ils sont le même enfant. Mais le test n’était pas une épreuve unique. Il en comportait plusieurs, très différentes les unes des autres, et le total les additionne sans rien garder de leur diversité. Rien n’oblige deux enfants à avoir gagné leurs quarante-cinq points aux mêmes endroits.",
+      "L’objection reste en l’air tant qu’on n’a pas les chiffres. En 1926, une psychologue publie dans une revue française l’étalonnage d’un test destiné à l’orientation professionnelle, c’est-à-dire le barème qui dit, âge par âge, ce que vaut tel total. Au moment d’expliquer comment on s’en sert, elle va chercher dans ses propres données des enfants que ce total rend indiscernables, puis regarde épreuve par épreuve ce que chacun a fait. Ce qu’elle y trouve retourne l’usage du barème qu’elle vient de construire."
+    ],
+    "sections": [
+      {
+        "title": "Sept groupes de questions, une place dans chacun",
+        "paragraphs": [
+          "Les questions du test sont réparties en sept groupes, chacun sollicitant une manière de penser distincte : « nous avons donc formé des groupes correspondant à des formes différentes de pensée », écrit l’autrice. Pour chaque groupe et pour chaque âge, elle calcule ensuite ce qu’il faut avoir réussi pour se situer dans le dixième le plus faible des enfants, dans le deuxième dixième, et ainsi de suite. C’est ce qu’on appelle un décilage, et c’est ce que désigne le mot décile : non pas une note, mais un rang exprimé en dixièmes d’une population de référence. Un enfant ne reçoit donc pas un chiffre, il en reçoit sept.",
+          "Reportées côte à côte sur un graphique, ces sept positions dessinent une ligne brisée : c’est le profil de l’enfant. La forme n’a pas été inventée là. Dans une notice consacrée à Henri Piéron en 1964, Maurice Reuchlin et Colette Bénassy-Chauffard en donnent la lignée en une phrase : « De tels profils avaient été utilisés au cours de la première guerre mondiale par le français Fontègne travaillant en Suisse à l’étude des aptitudes professionnelles des téléphonistes, sous la direction de Claparède, qui en avait trouvé le principe chez Rossolimo et la technique statistique chez Galton. » Ce qui se joue en 1926 n’est donc pas l’invention du procédé, c’est ce qu’on lui fait dire."
+        ]
+      },
+      {
+        "title": "Quatre enfants à quarante-cinq points",
+        "paragraphs": [
+          "La démonstration tient en quelques pages. « Prenons, parmi les enfants d’un même âge, plusieurs enfants se plaçant, pour l’échelle globale […] au même décile », propose l’autrice. Elle en retient trois, âgés de douze ans, crédités chacun de quarante-cinq points sur quatre-vingts, « si l’on se contente de l’étalonnage du chiffre global ». À ces trois enfants réels elle en ajoute un quatrième, explicitement hypothétique : à chaque groupe, il reçoit la note exacte du cinquième décile, celle d’un enfant juste moyen partout. C’est l’étalon plat auquel les trois autres vont se comparer.",
+          "Leurs totaux, écrit-elle, « les classeraient donc, si l’on se rapporte à l’étalonnage général du test, au même décile et désigneraient des sujets de même niveau et identiques ». Puis vient le renversement : « Et cependant, si l’on fait le profil de chacun d’eux, on voit qu’ils constituent des types d’enfants différents et même opposés ayant chacun une prédominance très marquée. » Chacun l’emporte là où les autres cèdent, et l’addition avait effacé la différence en la compensant."
+        ]
+      },
+      {
+        "title": "Ce que l’autrice demande de regarder",
+        "paragraphs": [
+          "Montrer qu’un total peut tromper ne dit pas encore ce qu’il faut regarder à sa place. L’autrice le dit, et positivement : « c’est cette prédominance seule qui est intéressante dans tous les cas où il est question d’orientation ou de dépistage des bien doués ou d’enfants ayant des aptitudes spéciales ». L’information utile n’est pas la hauteur de la ligne, c’est l’endroit où elle monte. Deux enfants de niveau moyen n’appellent pas le même conseil si l’un culmine sur les questions de forme numérique et l’autre s’y effondre.",
+          "Elle borne pourtant elle-même la portée de ce qu’elle a montré. Les trois enfants comparés sont des « cas extrêmes choisis pour la démonstration dans l’ensemble des données numériques recueillies », et ils représentent « trois possibilités assez brillantes dans des directions différentes ». Elle ne soutient donc pas que deux enfants à score égal diffèrent en règle générale : elle établit que cela se produit, sur les cas les plus favorables à son propos. Et nulle part elle n’interdit d’orienter sur le seul total. L’insuffisance qu’elle constate n’est pas une prohibition qu’elle prononce, et c’est une distinction que la postérité des tests a souvent perdue."
+        ]
+      },
+      {
+        "title": "Un barème publié pour cinq âges",
+        "paragraphs": [
+          "L’étalonnage repose sur des écoles communales de la Ville de Paris, prises dans différents quartiers et différents milieux à la fin de l’année scolaire 1925-1926, le test étant passé collectivement en classe, en trente minutes, par les instituteurs eux-mêmes. Neuf cent quatre-vingt-quatre élèves ont été examinés ; le barème n’en retient que huit cent soixante-quatre, une fois écartés les élèves de seize ans, trop peu nombreux, et ceux de dix ans, « comme trop jeunes pour ce test ». Une seule école, rue Blomet, en a fourni « plus de 350 élèves », soit plus du tiers de l’ensemble.",
+          "Le barème est publié pour cinq âges, de onze à quinze ans, et l’autrice reconnaît dans le même texte que l’ensemble des questions est « nettement trop difficile pour l’âge de 11 ans, un peu trop facile pour 13, notablement trop facile pour 14 et surtout 15 ans ». Le test n’est donc réellement calibré que pour douze ans, ce qui est aussi l’âge des quatre sujets comparés. Une des séries, de forme numérique, cesse par ailleurs de progresser après douze ans et repose sur « un groupe trop petit ». Ces réserves sont de sa main, et elles voisinent avec la démonstration."
+        ]
+      },
+      {
+        "title": "Sept groupes distincts, une hypothèse de départ",
+        "paragraphs": [
+          "Le profil suppose quelque chose que l’article ne démontre pas. Pour que sept positions apportent sept informations, il faut que les sept groupes de questions mesurent bien des choses différentes et ne fassent pas double emploi. Or les groupes ont été formés a priori, par correspondance avec des formes de pensée que l’autrice distingue, et rien dans ces pages ne vérifie qu’ils ne se recouvrent pas. Le mot corrélation n’apparaît pas une seule fois dans l’article.",
+          "La conséquence se partage en deux. La démonstration reste entière telle qu’elle est faite : à totaux identiques, les lignes des quatre sujets divergent, et ce constat ne demande de croire à rien. Mais la lecture de chaque écart, elle, dépend de la solidité du découpage en sept groupes, qui est posé plutôt qu’établi. La même autrice avait traité cette question-là quatre ans plus tôt, pour d’autres épreuves, en dressant la matrice de leurs corrélations réciproques ; ce n’est pas ce que fait le texte de 1926, et la preuve de 1922 ne se transporte pas ici, puisqu’elle portait sur d’autres épreuves."
+        ]
+      },
+      {
+        "title": "Une signature que les catalogues ont mal lue",
+        "paragraphs": [
+          "Sur la page de titre du mémoire, la signature imprimée est « Par Mme HENRI PIÉRON. » Le titre courant des pages impaires porte « Mme PIÉRON. UN TEST D’INTELLIGENCE. SON ÉTALONNAGE », et l’article se clôt sur la même signature : le texte est d’elle seule, sans cosignataire. Les notices électroniques en décident autrement. Celle que Crossref attache à l’article donne pour auteur Henri Piéron, et sur Persée la mention affichée renvoie à une notice d’autorité intitulée « Piéron, Henri (1881-1964) », celle du professeur au Collège de France.",
+          "Elle a pourtant un nom : Mathilde Victorine Félicie Angenout, psychologue, épouse d’Henri Piéron depuis 1902. Annick Ohayon, qui a retracé les itinéraires de plusieurs femmes psychologues de ces décennies, rappelle qu’elle fut responsable du service de la recherche à l’institut national d’étude du travail et d’orientation professionnelle, et qu’elle y publia treize articles entre 1928 et la guerre, « tous sous le nom de Mme Henri Piéron ». La réception a suivi la signature plutôt que la personne : la notice de 1964 fait commencer les tests à profil analytique au moment où Henri Piéron publie « avec Mme Piéron, à partir de 1928 », soit deux ans après un article qu’elle avait signé seule."
+        ]
+      }
+    ],
+    "limits": [
+      "Le profil vient de plus loin que 1926, et la notice de 1964 en nomme la chaîne sans la déplier : Rossolimo pour le principe, Galton pour la technique statistique, Claparède qui la transmet, Fontègne qui l’applique aux téléphonistes suisses pendant la guerre. Ce que l’article de 1926 ajoute à cette lignée se lit dans ces textes, et c’est là qu’il faudra le chercher.",
+      "Les cotes des quatre sujets forment un tableau, page 199, et leurs profils trois figures, pages 200 et 201 ; les tables de décilage de l’article occupent les pages 184 à 197. Ces trois lignes brisées donnent à voir d’un coup d’œil la divergence que les phrases décrivent : c’est là qu’on la constate soi-même.",
+      "Aucune des notices disponibles ne discute la démonstration : celle de 1964 rattache les tests à profil au couple à partir de 1928, celle de 1969 rapporte les recherches de Mme Piéron aux conceptions de son mari sans mentionner 1926, et l’étude d’Annick Ohayon porte sur la carrière, non sur la méthode. Un article de 1942 de M. Bénassy et C. Chauffard emploie « la partie centrale du test de Mme Piéron » : c’est lui qui dira s’il s’agit du test de 1926 ou d’un des tests collectifs plus tardifs."
     ]
   },
   {

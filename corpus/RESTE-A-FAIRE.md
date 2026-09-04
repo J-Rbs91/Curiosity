@@ -5,7 +5,7 @@ relire tout le dépôt et sans redécouvrir ce que huit lots ont déjà appris.
 
 Il ne double pas `corpus/ETAT.md`, qui dit ce que le corpus **est** ; celui-ci dit ce qu'il
 lui **manque**. Et il ne remplace aucun script : les chiffres ci-dessous sont un instantané
-du 3 septembre 2026, les commandes sont la vérité.
+du 4 septembre 2026, les commandes sont la vérité.
 
 ```bash
 npm run corpus:audit    # domaines, thèmes, cartes validées, sujets jamais instruits
@@ -32,9 +32,12 @@ script ne peut pas dire : quel travail est possible aujourd'hui, ce qu'il coûte
 **Le chantier A est fermé.** Il s'était vidé le 21 août, rouvert et creusé pendant cinq lots
 d'ouverture consécutifs jusqu'à trente-quatre cartes le 28 août, puis refermé en trois nuits :
 seize cartes servies au passage 07 le 29 août, seize au passage 08 le 31, **les deux dernières au
-passage 09 le 1er septembre**. `corpus:deepen` projette **100 approfondissements pour 100 cartes
+passage 09 le 1er septembre**. `corpus:deepen` projette **113 approfondissements pour 113 cartes
 validées** et sa fin de sortie ne liste plus rien. **La file est celle du script, pas celle de ce
-fichier**, et elle est vide.
+fichier**, et elle est vide. Les passages 10, 11 et 12 l'ont rouverte de quatre, quatre et cinq
+cartes et refermée la même nuit chaque fois : en phase 3, la nuit se termine par les
+approfondissements des cartes qu'elle vient de créer, et le chantier ne se rouvre donc jamais
+d'une nuit sur l'autre.
 
 **Le chantier E est fermé**, par la première nuit de phase 3, le 2 septembre. Les deux workflows
 lancent désormais `corpus:build` **et** `corpus:deepen` avant leur `git diff --exit-code
@@ -43,9 +46,11 @@ src/content/generated/` : le garde couvre les deux fichiers du répertoire qu'il
 **Deux chantiers restent ouverts pour la routine, et la §2 de son prompt désigne lequel elle
 prend.** Aucun domaine n'étant vide et aucune carte n'étant sans approfondissement, ses conditions
 A et B sont fausses : **la condition C décide, et la phase 3 a commencé le 2 septembre**, sur
-`behavioral-economics`, qui passe de quatre à huit cartes, puis a continué le 3 septembre sur
-`sociology-of-work`, qui passe de sept à onze. Elle enrichit un domaine par nuit, en rotation, et
-**le suivant se déduit sans arbitrage : `work-psychology`** — voir la fin du chantier D.
+`behavioral-economics`, qui passe de quatre à huit cartes, a continué le 3 septembre sur
+`sociology-of-work`, qui passe de sept à onze, et le 4 septembre sur `work-psychology`, qui passe
+de sept à douze et de deux thèmes à trois. Elle enrichit un domaine par nuit, en rotation, et
+**le suivant se déduit sans arbitrage, sans même une égalité à trancher : `systems-thinking`**,
+seul à sept cartes contre huit pour les deux domaines qui le suivent — voir la fin du chantier D.
 
 **Le chantier C est fermé.** Il a perdu un domaine le 22 août, `systems-thinking`, un second le 23,
 `decision-science`, un troisième le 25, `operations-management`, un quatrième le 26,
@@ -63,15 +68,15 @@ ouverture qui n'aura pas lieu.
 
 # A. Les approfondissements, chantier fermé le 1er septembre 2026
 
-**Il n'y a plus de carte validée sans approfondissement.** `corpus:deepen` projette **104
-approfondissements pour 104 cartes, 152 648 mots, 1 468 en moyenne**, et sa fin de sortie ne liste
+**Il n'y a plus de carte validée sans approfondissement.** `corpus:deepen` projette **113
+approfondissements pour 113 cartes, 166 955 mots, 1 477 en moyenne**, et sa fin de sortie ne liste
 plus rien. **Les onze domaines sont entièrement servis.** Ce chantier est conservé ici pour ce
 qu'il a appris, non pour ce qu'il resterait à faire.
 
 **Il ne se rouvrira plus durablement, et la phase 3 en est la raison** : une nuit de phase 3 crée
-des cartes et écrit leurs approfondissements dans la même nuit. Le passage 10, le 2 septembre, a
-ainsi fait passer la file de zéro à quatre puis de quatre à zéro entre le soir et la clôture. **La
-file reste celle de `npm run corpus:deepen`, et elle fait foi contre ce fichier.**
+des cartes et écrit leurs approfondissements dans la même nuit. Les passages 10, 11 et 12 ont fait
+passer la file de zéro à quatre, quatre et cinq, puis de nouveau à zéro entre le soir et la
+clôture. **La file reste celle de `npm run corpus:deepen`, et elle fait foi contre ce fichier.**
 
 **La file n'est pas tenue ici, et c'est ce qui a permis de la fermer.** `npm run corpus:deepen`
 l'affiche en fin de sortie, et c'est elle qui fait foi contre ce fichier.
@@ -92,8 +97,11 @@ interdisant d'ouvrir ou de créer quoi que ce soit.
 **Le coût de surveillance disparaît en phase 2, et la courbe est nette** : sept agents sur huit ont
 eu besoin d'un « écris maintenant » au passage 06, quatre sur seize au 07, **aucun sur seize au 08,
 aucun sur deux au 09**. La contre-mesure du chantier C reste écrite, mais **c'est en phase 1 et en
-phase 3 qu'elle vaut**, là où un agent télécharge, océrise et attend le réseau. Elle n'a pas encore
-été éprouvée en phase 3.
+phase 3 qu'elle vaut**, là où un agent télécharge, océrise et attend le réseau. **Le passage 12 l'a
+éprouvée en phase 3 et elle a servi deux fois sur onze agents** : un lecteur primaire et un second
+en sont restés à leur squelette pendant plus de dix minutes, et un « écris maintenant » les a
+rattrapés. La surveillance de la taille du fichier de sortie coûte presque rien et reste à faire
+systématiquement.
 
 ## Ce que ce chantier laisse derrière lui, et qui n'est pas de son ressort
 
@@ -325,39 +333,62 @@ portent chacune au moins une, ouverte et lue dans son corps, avec sa réserve é
 deuxième domaine, après `behavioral-economics`, à sortir de cette dette.
 
 **Le domaine suivant se déduit de la même règle, et il vaut d'être écrit ici pour que la nuit qui
-reprend n'ait pas à le recalculer.** `behavioral-economics` et `sociology-of-work` ont désormais un
-enrichissement au journal, daté du 2 et du 3 septembre, et sortent de la rotation jusqu'à ce que les
-autres soient passés. Aucun des neuf autres n'en a : le critère de repli s'applique de nouveau et
-désigne celui qui a le moins de cartes validées. **`work-psychology` et `systems-thinking` sont à
-égalité avec sept**, et l'ordre de `src/content/taxonomy.ts` tranche l'égalité en plaçant
-`work-psychology` avant : **c'est `work-psychology`**. En son sein, la priorité 1 est sans objet,
-les deux thèmes déclarés sans carte étant en sociologie des organisations, et la priorité 2 aussi,
-`corpus/map/queue.json` ne couvrant que ce même domaine : **la priorité 3 commande, les angles morts
-de `corpus/map/work-psychology.scouting.md`**, dont la section « Quatre reprises laissées par le lot
-du 26 août » ci-dessous tient déjà la liste avec l'accès constaté. Le décompte qui tranche est le
-tableau par domaine de [`corpus/ETAT.md`](ETAT.md), et `npm run corpus:audit` le rend à la demande.
+reprend n'ait pas à le recalculer.** `behavioral-economics`, `sociology-of-work` et
+`work-psychology` ont désormais un enrichissement au journal, daté du 2, du 3 et du 4 septembre, et
+sortent de la rotation jusqu'à ce que les autres soient passés. Aucun des huit autres n'en a : le
+critère de repli s'applique de nouveau et désigne celui qui a le moins de cartes validées.
+**`systems-thinking` est seul à sept**, contre huit pour `decision-science` et pour
+`operations-management` : **il n'y a plus d'égalité à trancher, c'est `systems-thinking`**. En son
+sein, la priorité 1 est sans objet, les deux thèmes déclarés sans carte étant en sociologie des
+organisations, et la priorité 2 aussi, `corpus/map/queue.json` ne couvrant que ce même domaine :
+**la priorité 3 commande, les angles morts de `corpus/map/systems-thinking.scouting.md`**, dont la
+section « Les reprises courtes de `systems-thinking` et de `decision-science` » ci-dessous tient
+déjà la liste avec l'accès constaté. Le décompte qui tranche est le tableau par domaine de
+[`corpus/ETAT.md`](ETAT.md), et `npm run corpus:audit` le rend à la demande.
 **En phase 3, la nuit se termine par les approfondissements des cartes qu'elle vient de créer** :
-les passages 10 et 11 l'ont fait, et la file de `corpus:deepen` est repartie de zéro et y est
-revenue dans la même nuit, les deux fois.
+les passages 10, 11 et 12 l'ont fait, et la file de `corpus:deepen` est repartie de zéro et y est
+revenue dans la même nuit, les trois fois.
+
+**Ce domaine part avec le legs le plus riche des quatre nuits de rotation.** Deux de ses entrées ne
+sont pas seulement d'accès constaté : **leur texte a été ouvert et lu** par le lot du 23 août, et
+il n'a pas été instruit parce que le plafond de volume était atteint. C'est moins cher que tout ce
+que les trois nuits précédentes ont eu à leur disposition.
 
 **Une condition matérielle pèse sur tout ce chantier, et elle ne s'est pas levée.** Le serveur MCP
-`documentary` est en échec de connexion (`CONNECTION_CLOSED`) depuis le 29 août, **six nuits
-consécutives au 3 septembre**. `corpus-scout`, `corpus-primary-reader` et `corpus-blind-reviewer`
+`documentary` est en échec de connexion (`CONNECTION_CLOSED`) depuis le 29 août, **sept nuits
+consécutives au 4 septembre**. `corpus-scout`, `corpus-primary-reader` et `corpus-blind-reviewer`
 s'appuient tous les trois sur ses outils de recherche et de vérification de référence, et la
 phase 3 en dépend donc.
 
 **Le retour du 1er septembre à 06h10 UTC ne s'est jamais confirmé.** Il avait répondu une fois, sur
 une référence de ce chantier même, le DOI `10.3389/fpsyg.2021.785721` de la reprise 3 ci-dessous,
-puis disparu et réapparu trois fois en quelques minutes. Les passages 10 et 11 l'ont constaté fermé
-par appel réel, chacun avant son lot, et non sur la foi de cette ligne. **La nuit suivante fait de
-même** : elle ne tient ni son retour ni sa fermeture pour acquis sur ce qui est écrit ici.
+puis disparu et réapparu trois fois en quelques minutes. Les passages 10, 11 et 12 l'ont constaté
+fermé, chacun avant son lot, et non sur la foi de cette ligne. **La nuit suivante fait de même** :
+elle ne tient ni son retour ni sa fermeture pour acquis sur ce qui est écrit ici.
 
 Sans lui, une nuit peut encore travailler par `WebSearch`, `WebFetch` et `curl`, et résoudre ses
-DOI par l'API Crossref directe, ce que les deux nuits de phase 3 ont fait. Mais **elle perd la
+DOI par l'API Crossref directe, ce que les trois nuits de phase 3 ont fait. Mais **elle perd la
 vérification de référence structurée**, et la règle « une référence introuvable n'existe pas » se
 durcit d'autant : dans le doute, la carte ne se publie pas. Deux textes ont été écartés pour cette
 seule raison au passage 11, Penissat 2009 et *Le regard sociologique*, faute d'en avoir pu lire une
 ligne de corps.
+
+**Un second blocage de dispositif dure depuis trois nuits, et il n'est plus à rediagnostiquer.**
+`Task` n'est pas exposé à `corpus-orchestrator` : il ne peut lancer aucun sous-agent, donc les
+cinq maillons de la chaîne lui sont indéclenchables. Constaté par appel réel au passage 12, un
+orchestrateur lancé en diagnostic ayant énuméré ses six outils et confirmé qu'aucun ne lance de
+sous-agent. **La parade du passage 12 est la meilleure des trois essayées, et c'est celle à
+reprendre** : la session orchestre elle-même et lance les sous-agents `corpus-*` un par un par
+l'outil `Agent` du harnais, sans produire elle-même aucune connaissance. Les passages 10 et 11
+avaient lancé des processus `claude -p --agent <nom>` en headless, ce qui marche aussi mais coûte
+plus cher et prive l'orchestrateur des comptes rendus structurés.
+
+**Trois accès sont fermés et constatés sur pièce au 4 septembre**, à ne pas retenter à
+l'identique : **Cairn**, `HTTP 403` derrière un défi anti-robot DataDome sur deux points d'entrée
+distincts ; **l'API SRU de Gallica**, `403 Access Denied`, constaté par trois agents indépendants
+dans la même nuit ; et **l'API plein texte d'Internet Archive**, refusée par le proxy sortant
+(`CONNECT 502, connect_rejected`). Aucun n'a été contourné, et aucun ne conclut rien sur le fond de
+la littérature : ce sont des refus d'accès, pas des silences.
 
 ## Cinq reprises laissées par le lot du 28 août, sur `behavioral-economics` — trois faites le 2 septembre
 
@@ -475,33 +506,88 @@ suites directes de ce qu'il a lu.
    genre que celui qui a marché pour Tarde : chercher une secondaire francophone ouverte, dans le
    *Bulletin de psychologie* lui-même ou autour.
 
-## Quatre reprises laissées par le lot du 26 août, sur `work-psychology`
+## `work-psychology`, enrichi le 4 septembre : ce qui est soldé, ce qui reste
 
-**La moins chère du dépôt est `attention-diffusee-et-selection`**, d'après Lahy 1924. Elle est
-**écrite et non contrôlée**, et elle attend en `corpus/candidates/`. Le motif n'est pas
-documentaire : sa source primaire est en `consulted: partial`, **onze pages ouvertes sur
-soixante-sept**, et une fiche publiée exige une source primaire lue en texte intégral. Ce qui la
-débloque est nommé : lire l'article en entier, et en particulier trois sections désignées et non
-localisées, le protocole du test d'attention diffusée (probablement p. 131-142), les tableaux de
-corrélation (p. 168-169) et le barème des 2 000 sujets. Une fois lue, elle passe en contrôle et
-**son thème `juger-quelqu-un-apte` se déclare avec elle**. Accès : Persée, DOI
-`10.3406/psy.1924.6140`, endpoint page vérifié.
+**Les quatre reprises laissées par le lot du 26 août sont traitées, et trois d'entre elles sont
+closes définitivement.**
 
-**Le numéro 344 du *Bulletin de psychologie*, 1980, est un gisement à moitié dépensé.** Numéro
-entier de psychologie du travail, servi en texte intégral par l'endpoint page. Sept articles lus,
-deux retenus, **cinq écartés avec leur motif écrit** (Leplat 11696 et Francès 11726, textes
-d'orientation sans thèse propre ; Lévy-Leboyer 11734, dette socio-technique ; Grisez 11729 et
-Savall 11735, penchant vers des voisins), et **le reste du numéro n'a pas été dépouillé**. C'est
-aussi là que se trouve la seule autrice repérée du domaine.
+- **`attention-diffusee-et-selection` est publiée.** Son blocage était l'accès, pas le fond : la
+  source primaire était en `partial`, onze pages sur soixante-sept. **Les 67 pages ont été
+  ouvertes**, quinze relues sur fac-similé, la source est en `full-text`, la fiche a reçu `PASS`
+  au premier tour. Le trou comblé a rendu une seconde carte,
+  `classement-par-valeurs-compensatrices`, et a démenti trois affirmations du dossier du 26 août,
+  dont **le barème des 2 000 sujets, qui n'existe pas**.
+- **Le numéro 344 du *Bulletin de psychologie* est clos**, pour ce domaine comme pour
+  `sociology-of-work`. Le passage 11 en avait dépouillé les 55 articles ; le seul resté en suspens
+  de ce côté-ci, Labrousse 1980, `10.3406/bupsy.1980.11741`, a été lu en entier et écarté comme
+  texte d'orientation sans thèse propre. **Aucun budget ne doit plus lui être consacré.**
+- **`DTIC_ADA065892` est clos.** Ce n'est pas un texte de Porter et Lawler : la page de titre, lue
+  en image sur le dérivé sans suffixe, porte « Paul F. Daspit, Capt USAF », mémoire de master de
+  l'Air Force Institute of Technology, septembre 1978. Le tampon « DDC RECEIVED MAR 15 1979 » est
+  une date d'enregistrement. Contribution propre réelle, résultats mitigés de l'aveu de l'auteur,
+  aucune reprise trouvée.
+- **Herzberg 1959 et Walker & Guest 1952 restent des impasses**, prêt numérique, non retentées.
 
-**Une piste ouverte et non lue** : `DTIC_ADA065892`, « An Integration of Contemporary Theories of
-Work Motivation » (1978), collection `dticarchive`, accès a priori ouvert, **contenu non ouvert
-faute de budget**.
+**Et la couche francophone a été balayée pour de bon.** Les quatre bases que la cartographie
+d'ouverture déclarait « non interrogées du tout » l'ont été, et **aucune n'a rendu de candidat** :
+HAL en huit requêtes n'indexe que de la recherche appliquée testant des modèles anglophones ;
+**Cairn est fermé**, `HTTP 403` derrière un défi anti-robot sur deux points d'entrée, à ne pas
+retenter ; OpenEdition Books a rendu du texte intégral, par ses pages de collection qui sont du
+HTML statique, mais son seul candidat sérieux a été écarté après lecture complète ; theses.fr ne
+sert qu'à vérifier une thèse déjà nommée. Le détail des requêtes est dans la section « Reprise du
+4 septembre 2026 » de `corpus/map/work-psychology.scouting.md`.
 
-**Et deux impasses qu'il ne faut pas retenter** : Herzberg 1959 (`motivationtowork0000unse`) et
-Walker & Guest 1952 (`manonassemblylin0000unse`) sont en **prêt numérique** sur Internet Archive,
-vérifié le 26 août. Un prêt numérique ne s'emprunte pas. La voie qui rend dans ce domaine est la
-littérature grise de l'Office of Naval Research, pas le canon en librairie.
+### Ce qui reste, par coût croissant
+
+**La reprise courte, et elle ne demande aucune recherche.** Le contrôleur de
+`classement-par-valeurs-compensatrices` a relevé, sans renvoyer, que le résumé écrit que le seuil
+d'élimination « suit » le marché de la main-d'œuvre là où Lahy écrit qu'il « doit régler » la
+rigueur de la sélection : **un énoncé normatif rendu en descriptif**. Il l'a jugé soutenable, la
+p. 171 décrivant le mécanisme dans les deux sens. La correction n'a pas été portée parce qu'elle
+aurait voulu dire qu'un orchestrateur réécrive une prose qu'aucun contrôleur n'aurait relue.
+**À trancher par un rédacteur puis un contrôleur**, sur la seule ligne du `summary`.
+
+**Le plus gros manque du domaine n'est pas francophone, et c'est le résultat que cette nuit a
+établi.** Les modèles de tension au travail, **Karasek et Theorell, Siegrist**, sont structurants
+pour le champ et anglophones ou germanophones dans leur source ; la lecture du chapitre IV de
+Machado 2015 le confirme depuis la littérature francophone elle-même. **Aucune recherche n'a
+jamais porté sur eux.** C'est par là qu'un prochain passage sur ce domaine doit commencer, et la
+voie à essayer d'abord est celle qui a déjà rendu deux fois ici : la littérature grise, rapports
+ONR, ARPA, NPRDC, dans la collection `dticarchive` d'Internet Archive.
+
+**Les autres, avec leur état d'accès :**
+
+1. **`dticarchive` n'a pas été re-balayé** après l'échec du candidat Daspit, faute de budget.
+   Aucune requête structurée `advancedsearch.php` supplémentaire n'a été lancée. **Manque de
+   méthode, pas vide vérifié.**
+2. **Hirigoyen 1998**, *Le Harcèlement moral*, texte fondateur. Son objet passerait
+   vraisemblablement le test d'entrée. Aucune version en texte intégral atteinte sur les quatre
+   bases. Voie à tenter : un compte rendu substantiel en revue académique ouverte, pas le livre.
+3. **Lahy & Korngold 1931, p. 142-146**, non exploitées et **interdites à la carte de ce lot** :
+   elles réappliquent le classement de 1924 et redoubleraient
+   `classement-par-valeurs-compensatrices`. Le chiffre des 60 000 francs est dans le même cas.
+4. **L'ouvrage Dunod de 1927 de Lahy**, que trois sources secondaires citent **à la place** de
+   l'article de 1924, et que Lahy lui-même annonce p. 155 comme portant « tous les détails
+   techniques et les résultats ». Non trouvé en accès libre.
+5. **Fontègne, J.**, cofondateur de l'INOP en 1928. Aucun article primaire identifié sur Persée,
+   dont la recherche est rendue en JavaScript et n'expose aucun lien `/doc/` extractible en `curl`.
+   **Non cherché à fond, pas vérifié vide.**
+6. **Lahy & Pacaud 1948**, Gallica `ark:/12148/bpt6k33531659`. **Restriction constatée sur la page
+   et non déduite** : `DC.rights: "restricted use"`, bandeau « Projet de numérisation des
+   indisponibles », 15 % des pages consultables. À conserver pour un passage disposant d'un accès
+   de prêt.
+7. **Suzanne Pacaud publiant seule** : « Travaux pratiques de Mme Pacaud (II) », *Bulletin du
+   Groupe d'études de psychologie de l'Université de Paris*, 1948,
+   `bupsy_0242-5432_1948_num_1_9_5431` (ISSN 0242-5432, **à ne pas confondre** avec le *Bulletin de
+   psychologie*, ISSN 0007-4403). Accès non vérifié, texte non lu. Son objet annoncé, l'analyse du
+   travail des opératrices téléphoniques, la rapprocherait d'`activity-ergonomics` : **à trancher
+   sur pièce, pas avant.** C'est la même personne que la S. Korngold qui cosigne l'article de
+   1931, identifiée en cours de contrôle.
+8. **Deux textes ouverts mais non lus en profondeur** par le scout du 4 septembre, ni retenus ni
+   formellement écartés, à ne pas redécouvrir depuis zéro : Piéron 1922 a finalement été instruit,
+   mais son axe « validité prédictive contre le certificat d'études » **n'existe pas dans ce
+   texte**, qui le renvoie explicitement à un travail ultérieur avec Laugier. Ce travail-là n'a pas
+   été retrouvé.
 
 ## Cinq reprises laissées par le lot du 25 août, sur `operations-management`
 
@@ -753,6 +839,16 @@ son interface HTML est derrière un défi anti-robot F5 qui **ne se contourne pa
 interprétable que si des témoins positifs sont joués dans la même minute, sur le même moteur.
 Le lot du 25 août en a joué trois pour deux tests. **Et même alors, un renouvellement introuvable
 n'est pas un renouvellement inexistant** : la réserve se garde en clair.
+
+**Un `git fetch` à plusieurs refspecs est tout ou rien, et son échec est silencieux pour qui ne
+le lit pas.** Payé par le passage 12. Un `git fetch origin main <branche>` où la branche n'existe
+pas encore côté distant rend `fatal: couldn't find remote ref` et **ne met à jour aucune des deux
+références**, `main` comprise. La nuit a donc raisonné pendant six heures sur un `origin/main`
+vieux d'un jour, et écrit dans son journal et dans sa pull request que six passages n'étaient pas
+fusionnés alors qu'ils l'étaient. **On fetch une référence à la fois**, ou l'on relit le code de
+sortie avant de conclure quoi que ce soit de ce qui a été rapporté. Corollaire : la comparaison
+`git rev-list --left-right --count origin/main...HEAD` ne vaut que si le fetch qui la précède a
+réussi.
 
 **Un fichier de métadonnées d'Internet Archive n'est pas une lecture, et `page_numbers.json` est
 le pire des deux.** Établi par le lot du 26 août, qui lui doit son seul renvoi. Ce fichier est une

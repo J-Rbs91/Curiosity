@@ -1,0 +1,107 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "profils-divergents-a-score-egal",
+  "slug": "profils-divergents-a-score-egal",
+  "status": "VALIDATED",
+  "title": "Profils divergents à score égal",
+  "themes": [
+    "juger-quelqu-un-apte"
+  ],
+  "theme_labels": {
+    "juger-quelqu-un-apte": "Juger quelqu'un apte à un emploi"
+  },
+  "authors": [
+    {
+      "name": "Mme Henri Piéron",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "L'article est signé « Par Mme Henri Piéron », sans aucun prénom de femme sur la pièce. L'autrice n'est pas Henri Piéron : c'est Mathilde Victorine Félicie Angenout, son épouse depuis 1902, psychologue. Les notices Crossref et Persée reversent pourtant le texte à Henri Piéron, la mention affichée pointant vers une notice d'autorité qui est la sienne.",
+  "hook": "Deux enfants au même total sont-ils au même niveau ?",
+  "summary": "Rangés au même décile par un même total, des enfants présentent des profils opposés : chacun a sa prédominance, que le chiffre global ne montre pas.",
+  "quotation": {
+    "text": "Mais cette réussite globale n'est pas suffisante pour caractériser un enfant.",
+    "reference": "Mme Henri Piéron, « Un test d'intelligence pour l'orientation professionnelle. Son étalonnage », L'année psychologique, tome 27, 1926, p. 174-202.",
+    "locator": "p. 186",
+    "language": "fr",
+    "original_text": null,
+    "original_language": null,
+    "translation": {
+      "kind": "none",
+      "translator": null,
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "Mme Henri Piéron, « Un test d'intelligence pour l'orientation professionnelle. Son étalonnage », L'année psychologique, tome 27, 1926, p. 174-202.",
+      "kind": "primary",
+      "locator": "p. 186 et p. 199-201",
+      "doi_isbn": "10.3406/psy.1926.6315",
+      "url": "https://www.persee.fr/doc/psy_0003-5033_1926_num_27_1_6315",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Maurice Reuchlin et C. Bénassy-Chauffard, « Henri Piéron (1881-1964) », BINOP, Bulletin de l'Institut national d'étude du travail et d'orientation professionnelle, 20e année, n° 5, 1964, p. 291-299.",
+      "kind": "francophone-reception",
+      "locator": "p. 296-297",
+      "doi_isbn": null,
+      "url": "https://www.persee.fr/doc/binop_0005-3147_1964_num_20_5_3873",
+      "consulted": "partial"
+    },
+    {
+      "label": "Maurice Reuchlin, « Mme H. Piéron (1877-1969) », BINOP, Bulletin de l'Institut national d'étude du travail et d'orientation professionnelle, 25e année, n° 4, 1969, p. 219-220.",
+      "kind": "francophone-reception",
+      "locator": "p. 219-220",
+      "doi_isbn": null,
+      "url": "https://www.persee.fr/doc/binop_0005-3147_1969_num_25_4_3846",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Annick Ohayon, « D'épouse dévouée à professeur de faculté, itinéraires de quelques femmes psychologues des années 1930 aux années 1960 », Revue d'histoire des sciences humaines, n° 35, 2019, p. 135-150.",
+      "kind": "secondary-academic",
+      "locator": "§ 3 à 7",
+      "doi_isbn": "10.4000/rhsh.4157",
+      "url": "https://journals.openedition.org/rhsh/4157",
+      "consulted": "full-text"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle",
+    "date": "2026-09-04",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "CITATION. Vérifiée sur l'image de la page, pas sur l'OCR. Dérivé image ouvert en curl : https://www.persee.fr/renderPage/psy_0003-5033_1926_num_27_1_6315/psy_0003-5033_1926_num_27_1_T1_0186_0000_1130.jpg (200, PNG 976x1684), puis recadrage agrandi de la zone. Titre courant de la page reçue : « MÉMOIRES ORIGINAUX », folio 186 : c'est bien la page annoncée, pas un article servi par erreur. On y lit, en deux lignes avec césure imprimée « caracté-riser » : Mais cette réussite globale n'est pas suffisante pour caractériser un enfant. Identique au caractère près à la fiche, ponctuation et apostrophes comprises. Aucune coupe, aucune traduction : la fiche déclare translation.kind = none, ce qui est correct pour un texte français d'origine.",
+      "ATTRIBUTION, page de titre imprimée. Image de la p. 174 ouverte au même format (200, PNG 968x1688) : sous le numéro de mémoire VI et le titre en capitales, la ligne de signature imprimée est « Par Mme HENRI PIÉRON. ». Deux attestations supplémentaires sur l'imprimé : le titre courant des pages impaires porte « Mme PIÉRON. UN TEST D'INTELLIGENCE. SON ÉTALONNAGE » (vérifié p. 199 et p. 201), et l'article se clôt p. 202 sur la signature « Mme HENRI PIÉRON ». Le texte est donc signé de la seule Mme Piéron, sans cosignataire.",
+      "ATTRIBUTION, la notice contre l'imprimé. La fiche affirme que Crossref et Persée reversent le texte à Henri Piéron : je l'ai constaté moi-même. https://api.crossref.org/works/10.3406/psy.1926.6315 rend author = [{given: Henri, family: Piéron}]. Sur https://www.persee.fr/doc/psy_0003-5033_1926_num_27_1_6315, la référence bibliographique proposée commence par « Piéron Henri. » et la mention affichée « Mme Henri Piéron » est un lien vers https://www.persee.fr/authority/49280, notice d'autorité intitulée « Piéron, Henri (1881-1964) », 394 contributions, professeur au Collège de France. La notice se trompe donc bien d'auteur, et la page de titre fait foi : l'attribution_note dit exactement ce que j'ai vu.",
+      "ATTRIBUTION, identité civile de l'autrice, vérifiée sur deux sources indépendantes. (1) Annick Ohayon, RHSH 35, ouvert sur https://journals.openedition.org/rhsh/4157 : § 4 ouvre par « Mathilde Victorine Félicie Angenout est née en 1878 » ; § 5 : « Il l'épouse en 1902 » ; § 7 : Piéron la nomme responsable du service de la recherche de l'INOP, elle y publie treize articles entre 1928 et la guerre, « tous sous le nom de Mme Henri Piéron ». (2) Notice 77, PIERON (Louis, Charles, Henri), Histoire biographique de l'enseignement 3, INRP 1988, p. 203-205, ouverte sur https://www.persee.fr/doc/inrp_0298-5632_1988_ant_3_1_6156 : « Mariage : Le 25 octobre 1902 à Paris 11ème avec Mathilde, Victorine, Félicie Angenout […] Psychologue, elle collabora à ses travaux. » Nom, date de mariage et qualité de psychologue sont donc établis hors de la seule source déjà citée par la fiche.",
+      "ATTRIBUTION, généalogie de l'idée, et pourquoi elle ne fait pas tomber la carte. J'ai cherché si le dispositif du profil analytique préexistait, et il préexiste : Reuchlin et Bénassy-Chauffard, BINOP 1964, p. 296 (image ouverte, https://www.persee.fr/renderPage/binop_0005-3147_1964_num_20_5_3873/binop_0005-3147_1964_num_20_5_T1_0296_0000_710.jpg) écrivent que de tels profils avaient été utilisés pendant la Première Guerre par Fontègne en Suisse, sous la direction de Claparède, « qui en avait trouvé le principe chez Rossolimo et la technique statistique chez Galton ». Reuchlin, BINOP 1969, p. 219, ajoute que les travaux de Mme Piéron furent marqués par les conceptions de son mari, notamment l'importance qu'il accordait à l'hétérogénéité intra-individuelle des aptitudes. La carte n'affirme cependant nulle part la paternité du profil : son titre, son accroche et son résumé portent sur la démonstration faite dans ce texte-ci, à partir des données de l'autrice, et cette démonstration est bien la sienne. Attribution confirmée. Le point est consigné pour qu'un approfondissement éventuel ne glisse pas de « elle l'a montré » à « elle l'a inventé » : le profil analytique vient de Rossolimo et de Galton, par Claparède et Fontègne.",
+      "PROSE. Le résumé est fondé presque mot pour mot, sur des pages que j'ai ouvertes en image. P. 199 : « Prenons, parmi les enfants d'un même âge, plusieurs enfants se plaçant, pour l'échelle globale […] au même décile », puis trois enfants de 12 ans « ayant leurs places au décile 5 de cet âge (45 points sur 80) » ; le tableau donne les sujets 2, 3 et 4 à 45 points chacun. P. 200 : « Les totaux de ces 4 sujets les classeraient donc […] au même décile et désigneraient des sujets de même niveau et identiques. Et cependant, si l'on fait le profil de chacun d'eux, on voit qu'ils constituent des types d'enfants différents et même opposés ayant chacun une prédominance très marquée. » P. 201 : trois sujets « se plaçant dans l'étalonnage global, au même niveau » et représentant « trois possibilités assez brillantes dans des directions différentes ». Chaque terme du résumé (même décile, même total, profils opposés, prédominance, chiffre global qui ne le montre pas) a son répondant. L'accroche est une question et n'affirme rien de plus : le texte pose exactement le cas de sujets que le total ferait tenir pour « de même niveau et identiques ». Rien ne déborde, rien ne rétrécit : l'article ne présente ces cas que comme des « cas extrêmes choisis pour la démonstration » (p. 201) et le résumé, en écrivant « des enfants » et non « les enfants », reste sur l'énoncé d'existence que la source porte.",
+      "SOURCES. Les quatre résolvent vers ce qu'elles annoncent. (1) Primaire : DOI 10.3406/psy.1926.6315 rendu par Crossref avec container-title « L'année psychologique », volume 27, published-print 1926, page 174-202 ; pagination recoupée sur l'imprimé, la p. 174 ouvre le mémoire et la p. 202 le clôt sur la signature. Les deux localisateurs annoncés, p. 186 et p. 199-201, ont été ouverts en image un par un. (2) BINOP 1964 : la page Persée donne « Reuchlin Maurice, Bénassy-Chauffard Colette. Henri Piéron (1881-1964). In: BINOP : Bulletin de l'Institut national d'étude du travail et d'orientation professionnelle, 20e année numéro 5 […] pp. 291-299 » ; le localisateur p. 296-297 est dans la plage et j'ai ouvert la p. 296 en image. (3) BINOP 1969 : « Reuchlin Maurice. Mme H. Piéron. (1877-1969). In: BINOP […] 25e année numéro 4 […] pp. 219-220 » ; les deux pages annoncées ont été ouvertes en image, la p. 220 se terminant sur la signature « M. REUCHLIN ». (4) Ohayon : le DOI 10.4000/rhsh.4157 rend chez Crossref auteur unique Annick Ohayon, titre exact, Revue d'histoire des sciences humaines, volume 35, page 135-150, 2019 ; les paragraphes 3 à 7 du localisateur sont bien ceux qui portent le propos.",
+      "Écart de dates relevé mais sans effet sur la carte, qui n'affiche aucune année de naissance : le titre de la notice nécrologique de 1969 date Mme Piéron (1877-1969), tandis qu'Ohayon la fait naître en 1878. Je n'ai pas tranché et la carte n'a pas à le faire.",
+      "Ce que je n'ai pas atteint. Le docAsPDF de Persée n'a pas été demandé, il est derrière un défi anti-robot que je n'essaie pas de franchir ; je n'en avais pas besoin, le dérivé image page à page a répondu. Deux incidents réseau, sans conséquence : le rendu de la p. 199 de l'article et celui de la p. 220 du BINOP 1969 ont d'abord échoué en « Recv failure: Connection reset by peer » (code 000, 0 octet), tous deux obtenus au rejeu immédiat sur la même URL. L'API IdRef interrogée en https://www.idref.fr/Sru/Solr/sudoc/select a rendu un 404 Tomcat (ressource /autorites/Solr/sudoc/select indisponible) et le point SPARQL de data.bnf.fr n'a rendu aucun résultat pour Angenout : ces deux échecs ne réfutent rien, et la question qu'ils devaient trancher a été réglée autrement, par la notice biographique INRP citée plus haut."
+    ]
+  },
+  "notes": [
+    "Aucune des trois sources secondaires portées ici ne discute le concept de la carte, et aucune ne nomme l'article de 1926. Elles attestent que le profil analytique est la forme constante de restitution des tests Piéron et que l'hétérogénéité intra-individuelle des aptitudes en est le ressort (1964, p. 296 ; 1969, p. 219) ; elles ne formulent nulle part la thèse propre de la carte, qu'un même score global recouvre des profils différents, et l'expression « réussite globale » n'apparaît chez aucune. Ohayon 2019 est portée pour l'identité civile et la carrière de l'autrice, non pour la méthode, dont elle ne dit rien. Le passage du profil comme forme de restitution à la divergence des profils à score égal reste donc à la charge du texte primaire seul.",
+    "La réception ouverte est elle-même un spécimen de l'anomalie d'attribution, et c'est à consigner plutôt qu'à lisser : la notice de 1964, p. 296, attribue les tests à profil analytique à Henri Piéron publiant « avec Mme Piéron, à partir de 1928 », soit deux ans après l'article de la carte, qui est signé d'elle seule ; la notice de 1969, p. 219, rapporte ses recherches aux « conceptions de Henri Piéron » et ne mentionne pas 1926 dans sa liste. C'est un fait de réception, pas une raison de changer l'attribution portée par l'imprimé.",
+    "L'identité rétablie repose sur deux pièces lues sur image, et non sur un moteur de recherche : la notice biographique de Charle et Telkès sur Henri Piéron (Les professeurs du Collège de France. Dictionnaire biographique 1901-1939, 1988, p. 203), dont la rubrique « Mariage » porte « Le 25 octobre 1902 à Paris 11ème avec Mathilde, Victorine, Félicie Angenout […] Psychologue, elle collabora à ses travaux » ; et G. Bernyer, L'année psychologique, 1962, qui écrit p. 3 « le gravimètre de Piéron (Mathilde Piéron, 1933) » et distingue en bibliographie p. 15 « PIÉRON (Mme H.) » de « PIÉRON (H.) ». Un troisième témoin, contemporain, figure au dossier de réception de la fiche voisine : la chronique de Louvain de 1925 distingue typographiquement « par H. Piéron » et « par Mad. H. Piéron » dans une même liste. Le nom affiché reste la forme imprimée, par application du précédent Lahy, qui affiche « J.-M. Lahy » et non « Jean-Maurice ». Le catalogue de la BnF retient de même deux vedettes distinctes, « Piéron, Mme Henri » et « Piéron, Henri (1881-1964) », sans développer le prénom de la première.",
+    "La carte ne prête pas à l'autrice une mise en garde qu'elle n'a pas écrite. Il n'y a nulle part dans le texte d'interdiction d'orienter sur le seul chiffre global. Il y a trois choses : un constat d'insuffisance, p. 186, qui est la citation portée ; une réserve incidente, p. 199, « tous trois ayant leurs places au décile 5 de cet âge (45 points sur 80), si l'on se contente de l'étalonnage du chiffre global » ; et un énoncé positif, p. 200, « c'est cette prédominance seule qui est intéressante dans tous les cas où il est question d'orientation ou de dépistage des bien doués ou d'enfants ayant des aptitudes spéciales ». Le résumé s'en tient là.",
+    "La démonstration, que la carte n'affiche pas : quatre sujets de 12 ans portant le même total et rangés au même décile, dont trois enfants réels tirés des données et un « sujet hypothétique » dont chaque note est le chiffre du décile 5 de son groupe. P. 200 : « Les totaux de ces 4 sujets les classeraient donc, si l'on se rapporte à l'étalonnage général du test, au même décile et désigneraient des sujets de même niveau et identiques. Et cependant, si l'on fait le profil de chacun d'eux, on voit qu'ils constituent des types d'enfants différents et même opposés ayant chacun une prédominance très marquée. » La p. 200 parle de quatre sujets et la p. 201 de trois : ce n'est pas une contradiction, le quatrième étant le sujet hypothétique.",
+    "L'autrice borne elle-même sa démonstration, p. 201 : les trois enfants comparés sont des « cas extrêmes choisis pour la démonstration dans l'ensemble des données numériques recueillies ». Elle ne soutient donc pas que la divergence des profils à score égal soit la règle, mais qu'elle est possible, et elle la montre sur les cas les plus favorables. Deux autres concessions à ne pas effacer : le barème n'est donné pour valide qu'à 12 ans, l'ensemble des questions étant « nettement trop difficile pour l'âge de 11 ans, un peu trop facile pour 13, notablement trop facile pour 14 et surtout 15 ans » (p. 186), alors qu'il est publié pour cinq âges ; et la série A, forme numérique, ne progresse plus après 12 ans et est « un groupe trop petit » (p. 192).",
+    "Ce que la carte ne peut pas revendiquer, et c'est un point de contrôle : la différenciation des sept groupes est postulée, pas établie. L'autrice les forme a priori, « nous avons donc formé des groupes correspondant à des formes différentes de pensée » (p. 186), et ne démontre à aucun moment qu'ils ne se recouvrent pas. Le mot « corrélation » n'apparaît pas une seule fois dans l'article, non plus que « double emploi » ou « interchangeable », comptage fait sur la couche texte des 29 pages. La preuve de non-recouvrement est celle de l'article de 1922, qui porte sur d'autres épreuves : cette carte ne se l'attribue pas.",
+    "Population, si un chiffre devait entrer sur la carte : ce serait 864. Le chiffre de 984, donné deux fois par l'autrice p. 174 et p. 182, est celui des élèves examinés ; mais la p. 183, dont le tableau a été relu sur image, élimine de l'étalonnage les 32 élèves de 16 ans « comme trop peu nombreux » et les 88 de 10 ans « comme trop jeunes pour ce test ». Le barème repose donc sur 864 enfants de 11 à 15 ans, ce que confirme la suite de l'article, dont tous les décilages vont de 11 à 15 ans. « De 12 à 13 ans » est l'âge auquel le test est destiné, p. 174, et non l'âge de la population : les 12-13 ans ne sont que 518 des 984.",
+    "Recrutement, pour qui voudrait juger de la portée : écoles communales de la Ville de Paris, différents quartiers et différents milieux, fin de l'année scolaire 1925-1926, passation collective en classe de 30 minutes conduite par les instituteurs (p. 182-183). La p. 202 signale que l'école de la rue Blomet a fourni à elle seule « plus de 350 élèves », soit plus du tiers de l'échantillon.",
+    "Généalogie du procédé, à ne pas ignorer si la carte parlait d'invention, ce qu'elle ne fait pas. Reuchlin et Bénassy-Chauffard écrivent p. 296 : « De tels profils avaient été utilisés au cours de la première guerre mondiale par le français Fontègne travaillant en Suisse à l'étude des aptitudes professionnelles des téléphonistes, sous la direction de Claparède, qui en avait trouvé le principe chez Rossolimo et la technique statistique chez Galton. » Le profil analytique n'est donc né ni en 1926 ni chez l'autrice ; aucun texte de cette chaîne n'a été ouvert, et ce que l'article de 1926 y ajoute n'est pas établi par la réception.",
+    "Frontière avec la fiche double-emploi-entre-epreuves, de la même autrice : l'unité d'analyse diffère. Ici c'est l'enfant, la question est de savoir si un total unique le caractérise, et la preuve est la comparaison des profils de quatre sujets rangés au même décile. En 1922 c'est l'épreuve, et la preuve est une matrice de corrélations réciproques. Le mot « profil » est un faux ami entre les deux textes : ici le profil d'un enfant, sa position en décile dans chacun des sept groupes ; là le profil de corrélation d'un test. Symétriquement, le mot « décile » n'apparaît pas une seule fois dans l'article de 1922.",
+    "Citation retenue et citation écartée, mesures faites. Le passage de la p. 201, « Voici donc 3 sujets, cas extrêmes choisis pour la démonstration […] se plaçant dans l'étalonnage global, au même niveau, et qui représentent cependant, à côté de notre sujet hypothétique qui serait juste moyen en tout, trois possibilités assez brillantes dans des directions différentes », fait 337 caractères ; la coupe la plus économe qui garde la thèse tombe à 166, et descendre sous 150 supposerait de supprimer soit « au même niveau », soit « dans des directions différentes », c'est-à-dire l'un des deux termes de l'opposition. La phrase de la p. 186, retenue, énonce la même insuffisance en 77 caractères, sans aucune coupe.",
+    "Les tableaux et les figures n'ont pas été transcrits : Persée les sert comme images et la couche texte ne les rend pas. Cela vaut pour le tableau des cotes des quatre sujets (p. 199), les figures 11 à 13 qui en tracent les profils (p. 200-201) et l'ensemble des tables de décilage par âge et par groupe (p. 184 à 197). Le seul tableau lu sur image est celui de la répartition par âge, p. 183, parce que le chiffre de l'échantillon en dépendait. Le docAsPDF de Persée n'a pas été tenté, il est derrière un défi anti-robot.",
+    "Consultation partielle assumée pour la notice de 1964 : les pages 291 et 292 ne sont pas servies en couche texte par Persée et n'ont pas été lues ; les pages 293 à 299 l'ont été, et la page 296 a été relue sur l'image. Rien de ce qui est affirmé ici ne repose sur les deux pages manquantes.",
+    "Piste de réception la plus prometteuse, non suivie : M. Bénassy et C. Chauffard, « Le test F de Cattell est-il un test objectif de tempérament ? », L'année psychologique, 1942, t. 43-44, p. 200-230, qui emploie « la partie centrale du test de Mme Piéron ». Rien n'indique dans l'extrait s'il s'agit du test de 1926 ou d'une des fiches collectives des années 1930 recensées par Reuchlin ; l'établir supposerait une filiation que la lecture n'a pas su faire."
+  ]
+}

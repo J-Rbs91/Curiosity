@@ -376,3 +376,162 @@ aucun n'étant un doublon avéré :
 - HAL, Cairn, OpenEdition Books, theses.fr — non interrogés du tout dans ce passage ; c'est
   un déséquilibre à signaler explicitement, comme `operations-management` l'avait fait pour
   sa propre couche francophone.
+
+---
+
+# Reprise du 4 septembre 2026, passage 12 de la routine nocturne
+
+Ce qui suit ne remplace rien de ce qui précède : c'est une seconde couche, posée par un
+passage d'enrichissement et non d'ouverture. Deux scouts et cinq lecteurs primaires y ont
+travaillé, et le lot a rendu **cinq cartes validées**, toutes en `PASS` au premier tour, sur
+le thème `juger-quelqu-un-apte`, déclaré à cette occasion.
+
+**Le déséquilibre que la cartographie d'ouverture signalait comme son principal est levé, et
+il l'est par un résultat négatif.** Les quatre bases francophones qu'elle disait « non
+interrogées du tout » l'ont été. Elles n'ont rien rendu, et c'est un fait, pas un manque.
+
+## Les quatre bases francophones, interrogées et ce qu'elles rendent
+
+- **HAL** (`api.archives-ouvertes.fr/search/`), huit requêtes jouées, la base exigeant des
+  requêtes courtes de deux ou trois mots dont tous les termes sont obligatoires :
+  `title_t:(monotonie travail)` 0 résultat ; `monotonie travail` 93, aucun pertinent ;
+  `title_t:"épuisement professionnel"` 132, exclusivement de la recherche appliquée ou des
+  notices sans texte ; `title_t:"implication organisationnelle"` 57, toutes des applications
+  d'un modèle anglophone ; `Pacaud vigilance` 0 ; `title_t:"monotonie du travail"` 0 ;
+  `title_t:"usure professionnelle"` 16, dont deux à texte intégral, écartées par la
+  frontière ; `Hirigoyen harcelement` 14, aucun texte primaire de l'autrice.
+  **Motif constant du rejet : ce que HAL indexe pour ce domaine est de la recherche
+  appliquée qui teste un modèle anglophone, pas la source du modèle.**
+- **Cairn** est **fermé**, et le constat est ferme : HTTP 403 sur `shs.cairn.info/recherche`
+  et sur `shs.cairn.info/?q=`, corps de réponse identifiable comme un défi anti-robot
+  DataDome, jeton `dd={...}`. Aucune tentative de résolution du défi. **Un futur passage ne
+  doit pas retenter l'accès direct** : il n'existe pas de voie légitime identifiée vers ce
+  moteur. C'est cohérent avec ce que `human-factors` avait déjà constaté pour *Le travail
+  humain*.
+- **OpenEdition Books** est la base qui a le mieux répondu, et la seule à avoir rendu du
+  texte intégral. Son portail de recherche est rendu côté client et n'expose aucune route
+  d'API en clair dans son bundle ; **le catalogue de collection, lui, est du HTML statique et
+  se parcourt directement** (`/pur/127` pour la collection « Psychologie(s) » des Presses
+  universitaires de Rennes). Six pages de contenu lues en entier, dont quatre chapitres de
+  Machado 2015.
+- **theses.fr** (`theses.fr/api/v1/theses/recherche/`), deux requêtes, aucun candidat, et un
+  constat de méthode à retenir : **cette base sert à vérifier l'existence d'une thèse déjà
+  nommée, pas à découvrir un concept par mots-clés seuls.** L'API n'expose pas d'opérateur de
+  phrase exacte et remonte du bruit massif hors sujet dès que les termes ne sont pas déjà
+  dans les métadonnées structurées.
+
+## Le numéro 344 du *Bulletin de psychologie* est clos, pour les deux domaines qui s'y intéressaient
+
+La cartographie d'ouverture le décrivait comme « un gisement à moitié dépensé ». Il ne l'est
+plus. Le lot `sociology-of-work` du 3 septembre en a dépouillé le sommaire entier, 55
+articles. Le seul article resté en suspens de ce côté-ci, **Labrousse, « Projets
+d'autogestion et psychologie sociale », p. 493-495, DOI `10.3406/bupsy.1980.11741`**, a été
+lu en entier cette nuit, ses trois pages servies en 200, et **écarté** : texte d'orientation
+qui trace un programme sans thèse propre, même famille de rejet que Leplat et Francès dans le
+même numéro. **Aucun budget ne doit plus lui être consacré.**
+
+## Écartés après lecture complète, et non pour défaut d'accès
+
+- **Machado, T. (2015), le « risque psycho-socio-organisationnel »**, chapitre III de *La
+  prévention des risques psychosociaux*, PUR, `books.openedition.org/pur/61697`, lu en
+  entier. C'est bien une thèse propre et attribuable, mais son objet est **une catégorie de
+  risque et une méthodologie de diagnostic**, pas un état durable de la personne rapporté aux
+  propriétés de son emploi. Candidat gris tranché en rejet, jamais mis en attente.
+- **Ravon, B. (2014/2022), « Usure professionnelle »**, texte intégral ouvert sur
+  `shs.hal.science/halshs-01086666/document`. **Sa propre thèse l'expulse du domaine** :
+  il soutient que l'usure doit se saisir comme un processus collectif imputable à une
+  organisation et non comme un état individuel, et mobilise la grammaire de la reconnaissance
+  au sens de la psychodynamique du travail, que le périmètre range en `activity-ergonomics`.
+  Cas symétrique de Grisez au lot d'ouverture.
+- **Daspit, P. F. (1978)**, `DTIC_ADA065892`, que la cartographie d'ouverture désignait comme
+  « la piste à ouvrir en premier au prochain passage, identifiant en main ». **Elle est
+  ouverte, et elle est close.** La page de titre, lue en image sur le dérivé sans suffixe,
+  porte « Paul F. Daspit, Capt USAF », mémoire de master de l'Air Force Institute of
+  Technology, code AFIT/GSM/SM/78S-4, **septembre 1978** ; le tampon « DDC RECEIVED MAR 15
+  1979 » est une date d'enregistrement, pas celle du texte. Ce n'est donc pas un texte de
+  Porter et Lawler, mais un texte qui part de leur modèle. Il porte bien une contribution
+  propre, un modèle modifié en trois points et un test empirique sur 126 employés, mais les
+  résultats sont mitigés de l'aveu de l'auteur, qui écrit que son modèle « requires further
+  testing and refinement », et aucune reprise n'a pu être trouvée. **Écarté sur le fond, pas
+  sur l'accès.**
+- **Lahy, J.-M. & Pacaud, S. (1948)**, Gallica `ark:/12148/bpt6k33531659`, thématiquement le
+  candidat le plus proche de la validité prédictive d'une épreuve. **Restriction constatée
+  sur la page et non déduite** : `DC.rights: "restricted use"`, bandeau « Projet de
+  numérisation des indisponibles », « seulement 15 % des pages peuvent être consultées ».
+  Aucun contournement tenté. Piste à conserver pour un passage disposant d'un accès de prêt.
+
+## Ce que les lectures primaires ont acquis, et qui ne se réacquerra pas
+
+- **L'article de Lahy 1924 est ouvert en entier**, 67 pages sur 67, quinze relues sur
+  fac-similé. Sa source primaire est en `full-text`. Trois affirmations du dossier du 26 août
+  sont démenties sur pièce : **le barème des 2 000 sujets n'existe pas**, le mot ne figure
+  nulle part dans l'article et le seul tableau de référence porte sur 1 000 candidats,
+  p. 161 ; **le dispositif du test est p. 117-128** et non p. 131-142, qui décrivent la
+  suggestibilité motrice, le dynamographe et le tachodomètre ; et la **discordance du +0,55
+  de la p. 169 appartient à l'imprimé**, Lahy y discutant une valeur que sa propre liste, dix
+  lignes plus haut, ne contient pas. Cette dernière est consignée pour qu'un passage
+  ultérieur ne la « corrige » pas vers l'erreur.
+- **L'anomalie d'attribution de Persée sur M<sup>me</sup> Henri Piéron a sa cause, et elle est
+  systématique.** La mention affichée « Mme Henri Piéron » pointe, sur les pages d'article,
+  vers la notice d'autorité Persée **49280**, intitulée « Piéron, Henri (1881-1964) ».
+  Crossref en hérite comme déposant, le membre 2000 étant le programme Persée. Constaté sur
+  deux articles distincts, 1922 et 1926. **Toute notice bibliométrique portant sur cette
+  autrice est suspecte par défaut et se vérifie sur l'image de la page.** Trois
+  contre-témoins ont été ouverts et lus sur image : une chronique de la *Revue
+  néo-scolastique* de Louvain, 1925, qui distingue typographiquement « par H. Piéron » et
+  « par Mad. H. Piéron » dans une même liste ; la notice 77 de Charle et Telkès, *Les
+  professeurs du Collège de France*, INRP 1988, p. 203, qui donne le mariage du 25 octobre
+  1902 avec **Mathilde, Victorine, Félicie Angenout**, « psychologue, elle collabora à ses
+  travaux » ; et Bernyer, *L'année psychologique* 1962, qui distingue en bibliographie
+  « PIÉRON (Mme H.) » de « PIÉRON (H.) » tout en nommant la première **Mathilde Piéron** dans
+  son corps.
+- **« S. Korngold », cosignataire de l'article de 1931, est Suzanne Korngold, devenue
+  Suzanne Pacaud.** Établi sur trois pièces ouvertes : Ribeill 1994 p. 117, qui la dit
+  « élève de Lahy à son laboratoire de l'École pratique des hautes études » puis « sa fidèle
+  collaboratrice » ; Turbiaux 1983 p. 984, qui liste l'article sous « (avec S. KORNGOLD) » ;
+  Ohayon 2019 § 13, qui donne « Suzanne Korngold (1902-1988), qui deviendra Suzanne Pacaud ».
+  **C'est la même personne que le balayage francophone de cette nuit avait laissée en angle
+  mort**, cheffe du laboratoire de psychotechnique de la SNCF, sans savoir qu'elle était déjà
+  dans le lot sous son nom de jeune fille.
+- **Le tome XXIII de *L'année psychologique*, daté 1922, a paru chez Alcan en 1923.** Établi
+  sur image (Wallerand 1925, p. 218). Les deux dates désignent le même texte ; les cartes
+  gardent 1922, qui est le millésime du tome.
+
+## Angles morts laissés par ce passage
+
+- **`dticarchive` n'a pas été re-balayé** après l'échec du candidat Daspit. La voie reste
+  bonne pour ce domaine, c'est elle qui a rendu Hackman & Oldham et Locke et al. ; aucune
+  requête structurée `advancedsearch.php` supplémentaire n'a été lancée. Manque de méthode,
+  pas vide vérifié.
+- **Karasek et Theorell, Siegrist** : la lecture du chapitre IV de Machado confirme que les
+  modèles structurants du champ sur la tension au travail sont anglophones ou germanophones
+  dans leur source. Aucune recherche n'a porté sur eux. **C'est probablement le plus gros
+  manque du domaine**, et il ne se comblera pas par la couche francophone.
+- **Hirigoyen 1998**, texte fondateur du harcèlement moral : aucune version en texte intégral
+  atteinte sur les quatre bases. L'objet passerait vraisemblablement le test d'entrée. Voie à
+  tenter : un compte rendu substantiel en revue académique ouverte, plutôt que le livre.
+- **Fontègne, J.** : aucun article primaire identifié sur Persée, la recherche du site étant
+  rendue en JavaScript et non extractible en `curl`. **Non cherché à fond, pas vérifié vide.**
+- **Suzanne Pacaud publiant seule** : « Travaux pratiques de M<sup>me</sup> Pacaud (II) »,
+  *Bulletin du Groupe d'études de psychologie de l'Université de Paris*, 1948,
+  `bupsy_0242-5432_1948_num_1_9_5431` (ISSN 0242-5432, à ne pas confondre avec le *Bulletin
+  de psychologie*, ISSN 0007-4403). Accès non vérifié, texte non lu. Son objet annoncé est
+  l'analyse du travail des opératrices téléphoniques, ce qui la rapprocherait
+  d'`activity-ergonomics` : **à trancher sur pièce, pas avant.**
+- **Lahy & Korngold 1931, p. 142-146**, non exploitées et interdites à la carte de ce lot :
+  elles réappliquent le classement de 1924 et redoubleraient
+  `classement-par-valeurs-compensatrices`.
+- **L'ouvrage Dunod de 1927 de Lahy** n'a pas été trouvé en accès libre, alors que trois
+  sources secondaires le citent **à la place** de l'article de 1924.
+- **Persée s'arrête à 2004 pour le *Bulletin de psychologie***, vérifié sur sa page de
+  collection, et ne sert pas *Le travail humain*. Ce qui est postérieur reste derrière Cairn.
+
+## Deux pièges d'accès payés par ce passage
+
+- **`hal.science` est passé derrière Anubis** et rend une page HTML en HTTP 200 là où l'on
+  attend un PDF. La voie qui a fonctionné est de viser l'URL exacte du champ `files_s` rendu
+  par `api.archives-ouvertes.fr/search/`, avec un en-tête `Accept: application/pdf`.
+- **Sur Persée, l'identifiant de page peut différer en casse de celui du document**, par
+  exemple `phlou_0776-555X_...` pour les pages contre `...555x_...` pour le document, ce qui
+  produit des 404 trompeurs. Et la largeur `_1130` du dérivé `renderPage` n'est pas toujours
+  servie : `_1136` et `_710` prennent le relais, sans que rien ne le signale.
