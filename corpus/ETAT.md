@@ -1,4 +1,4 @@
-# État du corpus — 3 septembre 2026
+# État du corpus — 4 septembre 2026
 
 Écrit sur le disque parce qu'une session a déjà été coupée en cours de route : ce fichier
 existe pour qu'une reprise reparte des fichiers, et non de la mémoire de quelqu'un.
@@ -6,14 +6,14 @@ existe pour qu'une reprise reparte des fichiers, et non de la mémoire de quelqu
 Ce fichier dit ce que le corpus **est**. Ce qui lui **manque**, et par quel bout le prendre,
 est dans [`corpus/RESTE-A-FAIRE.md`](RESTE-A-FAIRE.md).
 
-`npm run corpus:validate` : **112 enregistrements, 108 validés, 0 erreur, 87 avertissements.**
-`npm run corpus:deepen` : **108 approfondissements pour 108 cartes validées**, 158 917 mots,
-1 471 en moyenne. Fin de sortie : **rien**. Il n'y a plus aucune carte validée sans
+`npm run corpus:validate` : **116 enregistrements, 113 validés, 0 erreur, 87 avertissements.**
+`npm run corpus:deepen` : **113 approfondissements pour 113 cartes validées**, 166 955 mots,
+1 477 en moyenne. Fin de sortie : **rien**. Il n'y a plus aucune carte validée sans
 approfondissement, et **les onze domaines sont entièrement servis**. L'écart entre ce qui est
 validé et ce qui est servi, ouvert le 23 août et remonté à trente-quatre cartes le 28, a été
-refermé au passage 09 le 1er septembre ; les passages 10 et 11 l'ont rouvert de quatre cartes
-chacun et refermé la même nuit, la phase 3 se terminant par les approfondissements des cartes
-qu'elle crée.
+refermé au passage 09 le 1er septembre ; les passages 10, 11 et 12 l'ont rouvert de quatre,
+quatre et cinq cartes et refermé la même nuit chaque fois, la phase 3 se terminant par les
+approfondissements des cartes qu'elle crée.
 `npm test` : **482 tests, 0 échec.** `npm run lint` et `npm run corpus:build` : sans erreur.
 
 **Le garde de la CI couvre désormais les deux fichiers du répertoire projeté**, et c'est la
@@ -64,7 +64,7 @@ candidat mal placé part désormais chez un voisin ouvert, ou ne s'instruit pas.
 | Sociologie du travail | 1 | 11 | 11 |
 | Économie comportementale | 1 | 8 | 8 |
 | Operations Management | 3 | 8 | 8 |
-| Psychologie du travail | 2 | 7 | 7 |
+| Psychologie du travail | 3 | 12 | 12 |
 
 **Aucune carte validée n'attend son approfondissement**, contre deux au 31 août, dix-huit au 29 et
 trente-quatre au 28. L'écart s'était refermé le 21 août, il s'était rouvert et creusé pendant cinq
@@ -76,29 +76,176 @@ contre ce fichier.** Elle est vide. **La condition B de la routine est donc faus
 première fois depuis le 28 août, et la phase 3 commence** : aucun domaine n'est vide, aucune carte
 n'est sans approfondissement, c'est la condition C qui décide désormais.
 
-**La phase 3 a eu lieu deux fois.** Le 2 septembre elle a pris `behavioral-economics`, le domaine
+**La phase 3 a eu lieu trois fois.** Le 2 septembre elle a pris `behavioral-economics`, le domaine
 désigné par le critère de repli, faute d'enrichissement au journal pour quiconque, comme celui qui
 avait le moins de cartes validées : il en avait quatre, il en a huit. Le 3 septembre elle a pris
 `sociology-of-work`, désigné par le même critère de repli puis par l'ordre de
 `src/content/taxonomy.ts`, qui tranchait une égalité à sept entre trois domaines : il en avait
-sept, **il en a onze, et il est désormais le troisième domaine du corpus par le volume**.
+sept, il en a onze. Le 4 septembre elle a pris `work-psychology`, désigné par le même
+enchaînement, l'égalité à sept n'opposant plus que deux domaines : il en avait sept, **il en a
+douze, et il est passé de deux thèmes à trois**.
 
-**Le domaine que la nuit suivante prendra se déduit de la même règle, et l'égalité est plus large
-qu'hier.** `behavioral-economics` et `sociology-of-work` ont désormais un enrichissement au
-journal, daté du 2 et du 3 septembre : ils sortent de la rotation jusqu'à ce que les autres soient
-passés. Aucun des neuf autres n'en a, donc le critère de repli s'applique de nouveau et désigne
-**celui qui a le moins de cartes validées : `work-psychology` et `systems-thinking` sont à égalité
-avec sept**, et l'ordre de `src/content/taxonomy.ts` tranche l'égalité en plaçant
-`work-psychology` (famille 1, order 3) avant `systems-thinking` (famille 3). **C'est donc
-`work-psychology`.** Le tableau ci-dessus est le décompte qui tranche, et `npm run corpus:audit`
-le rend à la demande.
+**Le domaine que la nuit suivante prendra se déduit de la même règle, et il n'y a plus d'égalité à
+trancher.** `behavioral-economics`, `sociology-of-work` et `work-psychology` ont désormais un
+enrichissement au journal, daté du 2, du 3 et du 4 septembre : ils sortent de la rotation jusqu'à
+ce que les autres soient passés. Aucun des huit autres n'en a, donc le critère de repli s'applique
+de nouveau et désigne **celui qui a le moins de cartes validées, seul à ce niveau :
+`systems-thinking`, sept cartes**, contre huit pour `decision-science` et pour
+`operations-management`. **C'est donc `systems-thinking`.** Le tableau ci-dessus est le décompte
+qui tranche, et `npm run corpus:audit` le rend à la demande.
+
+**Et ce domaine part avec le legs le plus riche de la rotation**, ce qu'aucun des trois
+précédents n'avait. `RESTE-A-FAIRE.md` tient, sous « Les reprises courtes de `systems-thinking` et
+de `decision-science` », **deux textes dont l'accès n'est pas seulement constaté mais dont le
+contenu a été ouvert et lu** par le lot du 23 août, laissés uniquement parce que le plafond de
+volume était atteint ; et deux autres localisés en accès ouvert et non lus, dont l'ouvrage de 1972
+sur les limites de la croissance, scan intégral qui répond.
 
 **Les quatre familles sont complètes.** « Comprendre le pilotage » et « Comprendre le travail
 réel » l'étaient depuis le 23 août, « Comprendre la production et les systèmes » depuis le 25, et
 « Comprendre les humains et les organisations » l'est depuis le 28 : elle était la dernière
 incomplète, avec trois domaines fermés sur quatre au 25 août.
 
-# 0. Sociologie du travail enrichie — lot du 3 septembre 2026 (passage 11), publié
+# 0. Psychologie du travail enrichie — lot du 4 septembre 2026 (passage 12), publié
+
+**Troisième nuit de phase 3.** Conditions A et B fausses, condition C vraie ; la règle a désigné
+`work-psychology` sans arbitrage, comme le moins doté à égalité, l'ordre de `taxonomy.ts`
+tranchant l'égalité à sept entre lui et `systems-thinking`. Priorités 1 et 2 sans objet, les deux
+thèmes vides étant en sociologie des organisations et `queue.json` ne couvrant que ce domaine :
+**c'est la priorité 3 qui a commandé, les angles morts de
+`corpus/map/work-psychology.scouting.md`**.
+
+**Cinq cartes validées, cinq citations, cinq `PASS` au premier tour sur les quatre questions.** Le
+domaine passe de sept à douze cartes et de deux thèmes à trois, le corpus de cent huit à cent
+treize. C'est le lot le plus gros des trois nuits de phase 3, et le seul des quatre lots sans
+renvoi du corpus à en compter cinq.
+
+| carte | texte primaire | citation |
+|---|---|---|
+| `attention-diffusee-et-selection` | Lahy 1924, *L'année psychologique* t. 25, p. 106-172 | p. 117 |
+| `classement-par-valeurs-compensatrices` | Lahy 1924, même article | p. 157 |
+| `personnalite-professionnelle` | Lahy et Korngold 1931, t. 32, p. 131-149 | p. 132 |
+| `double-emploi-entre-epreuves` | Mme Henri Piéron 1922, t. 23, p. 144-175 | p. 175 |
+| `profils-divergents-a-score-egal` | Mme Henri Piéron 1926, t. 27, p. 174-202 | p. 186 |
+
+Quatre articles, trois signatures, un thème déclaré à cette occasion : `juger-quelqu-un-apte`.
+
+## Ce que le contrôle a attrapé, et qui n'est pas rien malgré cinq PASS
+
+**Les cinq contrôleurs ont refait leur propre recherche et ouvert les images des pages.** Aucun
+n'a renvoyé, et six remarques hors mandat sont sorties, dont trois qui valent au delà de leur
+carte.
+
+- **L'identification de Suzanne Korngold vient d'un contrôleur, pas d'un lecteur.** La « S.
+  Korngold » qui cosigne l'article de 1931 est **Suzanne Korngold, devenue Suzanne Pacaud**,
+  cheffe du laboratoire de psychotechnique de la SNCF. Trois pièces ouvertes le disent : Ribeill
+  1994 p. 117, Turbiaux 1983 p. 984, Ohayon 2019 § 13. **C'est la figure que le balayage
+  francophone de la même nuit avait laissée en angle mort**, sans savoir qu'elle était déjà dans
+  le lot sous son nom de jeune fille.
+- **Un contrôleur a apporté une pièce que la carte ne citait pas**, la notice 77 de Charle et
+  Telkès (INRP 1988), qui confirme l'identité civile de l'autrice des deux cartes Piéron.
+- **Une erreur d'une source secondaire a été constatée contre l'imprimé** : Ribeill p. 125 arrête
+  l'article de 1931 à la page 148 ; le folio imprimé donne 149, et la carte a raison contre lui.
+
+**Réserve conservée, et le motif est de méthode.** Le contrôleur du classement a relevé, sans
+renvoyer, que le résumé écrit que le seuil d'élimination « suit » le marché de la main-d'œuvre là
+où Lahy écrit qu'il « doit régler » la rigueur de la sélection : un énoncé normatif rendu en
+descriptif. Il l'a jugé soutenable, la page décrivant le mécanisme dans les deux sens. **La
+remarque n'a pas été corrigée**, parce que la corriger aurait voulu dire que l'orchestrateur
+réécrive lui-même une prose qu'aucun contrôleur n'aurait relue. Elle est portée à
+`RESTE-A-FAIRE.md` comme reprise courte, à trancher par un rédacteur puis un contrôleur.
+
+**Deux remarques sans effet**, consignées pour qu'on ne les recherche pas : un désaccord entre
+secondaires sur l'année de naissance de l'autrice, 1877 ou 1878, qu'aucune carte n'affiche ; et
+une généalogie du profil analytique remontant à Rossolimo et Galton via Claparède et Fontègne,
+que la carte ne revendique nulle part et que l'approfondissement ne doit jamais laisser glisser
+vers « elle l'a inventé ».
+
+## Une fiche débloquée en ouvrant sa source, pas en abaissant son exigence
+
+`attention-diffusee-et-selection` attendait depuis le 26 août en `corpus/candidates/`, écrite et
+jamais contrôlée. **Son blocage n'était pas documentaire, il était d'accès** : sa source primaire
+était en `consulted: partial`, onze pages ouvertes sur soixante-sept, et une carte publiée exige
+une source primaire lue en texte intégral.
+
+Les 67 pages ont été ouvertes, quinze relues sur fac-similé. C'est le geste que le §3 du workflow
+appelle **combler le trou** plutôt que **changer l'étiquette**, et il a rendu plus que la fiche
+qu'il débloquait :
+
+- **une seconde carte**, `classement-par-valeurs-compensatrices`, tirée de pages que personne
+  n'avait lues, et dont la limite fait la moitié du concept : au delà d'une certaine valeur,
+  l'infériorité dans une épreuve ne se compense plus ;
+- **trois affirmations du dossier du 26 août démenties sur pièce.** La plus lourde : **le barème
+  des 2 000 sujets n'existe pas.** Le mot « barème » ne figure nulle part dans l'article,
+  « 2.000 » n'y apparaît qu'une fois, p. 170, comme population de rangement d'un cas, et le seul
+  tableau de référence porte sur 1 000 candidats, p. 161. La fiche affirmait le contraire depuis
+  neuf jours. Le dispositif du test est en outre p. 117-128 et non p. 131-142, qui décrivent trois
+  autres épreuves ;
+- **une discordance qui appartient à l'imprimé** et non à la lecture : p. 169, Lahy discute « la
+  valeur + 0,55 trouvée pour le meilleur de nos tests » alors que sa propre liste, dix lignes plus
+  haut, plafonne à + 0,36. Consignée pour qu'un passage ultérieur ne la « corrige » pas vers
+  l'erreur.
+
+## La première autrice du corpus, et l'anomalie de référentiel qui l'effaçait
+
+Deux des cinq cartes sont signées **« Mme Henri Piéron »**. Jusqu'à cette nuit, le corpus
+n'affichait aucune autrice.
+
+**L'anomalie a sa cause.** Sur les pages d'article de Persée, la mention affichée « Mme Henri
+Piéron » **pointe vers la notice d'autorité 49280**, intitulée « Piéron, Henri (1881-1964) ».
+Crossref en hérite comme déposant, le membre 2000 étant le programme Persée. Constaté sur deux
+articles distincts, 1922 et 1926, par deux lecteurs et deux contrôleurs indépendants. **Toute
+notice bibliométrique portant sur cette autrice est suspecte par défaut**, et la règle générale
+qui s'en déduit est déjà celle du dépôt : la page de titre imprimée fait foi, et elle se lit sur
+l'image.
+
+**L'identité est rétablie sur pièces.** Mathilde Victorine Félicie Angenout, épouse d'Henri Piéron
+depuis le 25 octobre 1902, psychologue. Trois témoins lus sur image : la notice 77 de Charle et
+Telkès (INRP 1988, p. 203) ; Bernyer dans *L'année psychologique* de 1962, qui distingue en
+bibliographie « PIÉRON (Mme H.) » de « PIÉRON (H.) » tout en nommant la première Mathilde Piéron
+dans son corps ; et une chronique de la *Revue néo-scolastique* de Louvain de 1925, **contemporaine
+de la publication**, qui distingue typographiquement « par H. Piéron » et « par Mad. H. Piéron »
+dans une même liste.
+
+**Et la carte affiche pourtant la forme imprimée.** C'est la décision la plus stricte, et c'est le
+précédent Lahy : la fiche de 1924 affiche « J.-M. Lahy » et non « Jean-Maurice ». Aucun prénom de
+femme ne figure sur les deux articles. L'identité rétablie tient en trois phrases dans
+`attribution_note`, l'appareil de preuve va dans `notes`, qui ne s'affiche pas.
+
+## Une carte sans source secondaire, et c'est délibéré
+
+Quatre des cinq cartes en portent. `classement-par-valeurs-compensatrices` n'en porte aucune, et
+le motif est vérifiable : la recherche plein texte de Persée sur « valeurs compensatrices » rend
+28 résultats dont **un seul dans le corpus psychotechnique, l'article de Lahy lui-même**, et le
+mot « compensation » est absent des quatre secondaires ouvertes pour ce lot. **Une caution fausse
+vaut moins qu'un avertissement**, et c'est le quatre-vingt-septième.
+
+**La leçon du 3 septembre s'est appliquée cinq fois.** Sur les neuf pièces de réception ouvertes,
+**aucune ne discute le concept de la carte à laquelle elle est rattachée** ; cinq nomment le texte
+primaire, toutes en bibliographie ou en signalement, jamais en s'en servant. Chaque dossier de
+réception porte trois champs, ce que le corps établit, ce qu'il n'atteste pas, et si la pièce
+nomme ou non le texte de la carte ; et chaque carte servie le dit dans ses `notes`. Sans cette
+phrase, la carte laisserait croire que son interprétation est confirmée par quelqu'un.
+
+## Les angles morts qui commandent le prochain passage sur ce domaine
+
+**Le plus gros manque du domaine n'est pas francophone.** Les quatre bases francophones que la
+cartographie d'ouverture déclarait non interrogées l'ont été, et n'ont rien rendu : HAL en huit
+requêtes n'indexe que de la recherche appliquée testant des modèles anglophones ; Cairn est fermé
+par un défi anti-robot constaté deux fois ; OpenEdition Books a rendu du texte intégral mais un
+seul candidat, écarté après lecture ; theses.fr ne sert qu'à vérifier une thèse déjà nommée. **Ce
+qui manque au domaine est Karasek et Theorell, Siegrist**, c'est-à-dire les modèles de tension au
+travail, anglophones et germanophones dans leur source, sur lesquels aucune recherche n'a porté.
+
+Les autres, par coût croissant : `dticarchive` non re-balayé après l'échec du candidat Daspit ;
+Hirigoyen 1998 sans texte intégral atteint ; Fontègne sans article primaire localisé, la recherche
+de Persée étant rendue en JavaScript ; Suzanne Pacaud publiant seule en 1948, dont l'objet annoncé
+la rapprocherait d'`activity-ergonomics` et qui est **à trancher sur pièce, pas avant** ; les
+pages 142-146 de Lahy et Korngold 1931, interdites à la carte de ce lot parce qu'elles
+redoubleraient le classement de 1924 ; et l'ouvrage Dunod de 1927 de Lahy, que trois secondaires
+citent **à la place** de l'article de 1924 et qui n'a pas été trouvé en accès libre.
+
+# 0 bis. Sociologie du travail enrichie — lot du 3 septembre 2026 (passage 11), publié
 
 **Deuxième nuit de phase 3.** Conditions A et B fausses, condition C vraie ; la règle a désigné
 `sociology-of-work` sans arbitrage, comme le moins doté à égalité, l'ordre de `taxonomy.ts`

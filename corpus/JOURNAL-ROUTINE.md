@@ -5,6 +5,194 @@ coup d'œil ce que la précédente a fait, sur quelle branche elle l'a laissé, 
 reprendre. **Les scripts priment sur ce fichier** : il dit ce qui a été tenté et pourquoi, ils
 disent ce qui est.
 
+## Passage 12/15 — 2026-09-04
+
+- branche      : `claude/zen-johnson-vf0bdp` (imposée par la session, pas `main`). **Cette branche contenait déjà tout le travail des passages antérieurs** : `git merge-base --is-ancestor origin/main HEAD` répond oui, et la branche était en avance de 65 commits sur `origin/main` au lever. **Rien n'a été refait.** `origin/main` est resté à `973db4d`, le merge de la pull request [#82](https://github.com/J-Rbs91/Curiosity/pull/82) ; les travaux des passages 07 à 11 ne sont donc pas dans `main`, ils sont dans cette branche, qui les porte tous. Le travail de la nuit y est poussé, en sept commits. **Tant que ces commits ne sont pas fusionnés dans `main`, la nuit suivante reprend depuis cette branche**, et non depuis `main`, sinon elle refera onze nuits de travail.
+- phase        : **3 (enrichissement d'un domaine), et c'est la troisième de la routine.** Condition A fausse, aucun domaine à zéro carte validée depuis le passage 06. Condition B fausse, `corpus:deepen` projetant 108 approfondissements pour 108 cartes au lever et sa fin de sortie ne listant rien. La condition C décidait donc, et elle décidait seule.
+- domaine      : **`work-psychology`**, désigné sans arbitrage. `behavioral-economics` et `sociology-of-work` ont un enrichissement au journal, daté du 2 et du 3 septembre, et sortent de la rotation ; aucun des neuf autres n'en a, donc le critère de repli s'applique et désigne celui qui a le moins de cartes validées, **sept, à égalité entre `work-psychology` et `systems-thinking`**, l'ordre de `src/content/taxonomy.ts` tranchant en plaçant `work-psychology` (ligne 82) avant `systems-thinking` (ligne 136). En son sein, les priorités 1 et 2 sont sans objet, les deux thèmes déclarés sans carte étant en sociologie des organisations et `corpus/map/queue.json` ne couvrant que ce même domaine : **la priorité 3 commande, les angles morts de `corpus/map/work-psychology.scouting.md`.**
+- validées     : **5 — `attention-diffusee-et-selection` (Lahy 1924), `classement-par-valeurs-compensatrices` (Lahy 1924), `personnalite-professionnelle` (Lahy et Korngold 1931), `double-emploi-entre-epreuves` (Mme Henri Piéron 1922), `profils-divergents-a-score-egal` (Mme Henri Piéron 1926), les 5 avec citation**, toutes relues sur l'image de la page, **et les 5 en `PASS` au premier tour sur les quatre questions**. **Le domaine passe de 7 à 12 cartes et de 2 à 3 thèmes.** Le corpus passe de 108 à **113 cartes**.
+- en review    : 0
+- rejetées     : 0. Trois candidats ont été écartés après lecture complète et non par défaut d'accès, et un quatrième pour restriction constatée : voir la section de cartographie du 4 septembre.
+- approfondies : **5 — les cinq cartes de la nuit**, la phase 3 se terminant par les approfondissements des cartes qu'elle vient de créer. 1 580 à 1 674 mots, aucun refus de projection, aucun renvoi. `corpus:deepen` projette **113 approfondissements pour 113 cartes**, 166 955 mots, 1 477 en moyenne, **et la file est de nouveau vide à la clôture, comme elle l'était au lever**.
+- contrôles    : validate 0 erreur (116 enregistrements, 113 validés, 87 avertissements, **inchangés en nombre : les cinq avertissements de thème nouveau ont disparu à la déclaration du thème, et un seul avertissement nouveau subsiste, délibéré**) · build 113 concepts · deepen 113/113 · `git diff --exit-code src/content/generated/` propre après reprojection, projection vérifiée idempotente · test 482/0 · lint 0 · audit : `Psychologie du travail` passe de **2 thèmes / 7 validés / 1 en cours** à **3 thèmes / 12 validés / 0 en cours**. Rien à drainer dans `src/content/fixtures/concepts.fixture.ts` : `corpus:build` n'a listé aucune entrée caduque, et aucun des cinq identifiants n'a d'homonyme d'échafaudage.
+- commit       : `dc6f5e9` et `6409116` pour les lectures primaires, `dea319d` pour les cinq dépôts, `3e41484` pour la réception, `c54b467` pour les cartes et leurs dossiers aveugles, `6dbd7c4` pour les cinq fiches validées et le thème, `64d01b9` pour la cartographie, `621c886` pour les cinq approfondissements, `a40c9e9` pour la consignation.
+- bloqué par   : **le serveur MCP `documentary`, en échec de connexion (`CONNECTION_CLOSED`) pour la septième nuit consécutive.** Constat fait par le harnais lui-même au lever, et non sur la foi du journal : aucun outil `mcp__documentary__*` n'est exposé à la session. La nuit a donc travaillé sans vérification structurée de référence, par `WebSearch`, `WebFetch`, `curl` et l'API Crossref directe, qui a répondu à chaque DOI interrogé. **Second blocage, de dispositif, et il est identique à celui des passages 10 et 11** : `Task` n'est toujours pas exposé à l'orchestrateur. Constaté cette fois par appel réel, un `corpus-orchestrator` lancé en diagnostic ayant énuméré ses outils et confirmé qu'il n'en a aucun pour lancer un sous-agent. **Trois nuits de suite : ce n'est pas un accident, c'est l'état du dispositif**, et la nuit suivante n'a pas à le rediagnostiquer. La parade employée cette nuit est différente de celle des deux précédentes et elle est meilleure : **la session a orchestré elle-même**, lançant les treize sous-agents `corpus-*` un par un par l'outil `Agent` du harnais, sans produire elle-même aucune connaissance. **Troisième blocage, d'accès, et il est constaté sur pièce** : Cairn répond `HTTP 403` derrière un défi anti-robot DataDome sur deux points d'entrée distincts, l'API SRU de Gallica répond `403 Access Denied` à trois contrôleurs indépendants, et l'API plein texte d'Internet Archive est refusée par le proxy sortant (`CONNECT 502`). Aucun n'a été contourné.
+- la nuit suivante prend : **phase 3, et `systems-thinking`.** Les conditions A et B resteront fausses. Trois domaines ont désormais un enrichissement au journal, `behavioral-economics` le 2 septembre, `sociology-of-work` le 3, `work-psychology` le 4, et ils sortent de la rotation jusqu'à ce que les autres soient passés ; aucun des huit autres n'en a, donc le critère de repli s'applique et désigne **celui qui a le moins de cartes validées, et il est seul à ce niveau : `systems-thinking`, sept cartes**, contre huit pour `decision-science` et `operations-management`. **Il n'y a plus d'égalité à trancher.** En son sein, la priorité 1 est sans objet, les deux thèmes déclarés sans carte étant en sociologie des organisations ; la priorité 2 aussi, `queue.json` ne couvrant que ce même domaine ; et **la priorité 3 commande : les angles morts de `corpus/map/systems-thinking.scouting.md`**, dont la section « Les reprises courtes de `systems-thinking` et de `decision-science` » de `RESTE-A-FAIRE.md` tient déjà la liste avec l'accès constaté. Deux entrées y sont **ouvertes et déjà lues** et n'attendent que d'être instruites, et deux autres sont localisées en accès ouvert et non lues, dont l'ouvrage de 1972 sur les limites de la croissance, scan intégral qui répond. La nuit se terminera par les approfondissements des cartes qu'elle aura créées.
+
+### Ce que cette nuit a établi, en une phrase
+
+La troisième nuit de phase 3 rend cinq cartes au domaine désigné par la rotation, cinq `PASS`
+au premier tour, **et elle débloque une fiche qui attendait depuis neuf jours en ouvrant sa
+source plutôt qu'en abaissant son exigence** : le thème qu'elle bloquait se déclare avec cinq
+cartes au lieu d'une.
+
+### Ce qui a débloqué la fiche, et pourquoi c'est le geste qui compte
+
+`attention-diffusee-et-selection` était écrite depuis le 26 août et ne publiait pas : sa source
+primaire était en `consulted: partial`, **onze pages ouvertes sur soixante-sept**, et une carte
+publiée exige une source primaire lue en texte intégral. Le dépôt écrit noir sur blanc, au §3 de
+son workflow, que deux gestes rendent une affirmation honnête et qu'ils sont indiscernables dans
+un diff : **changer l'étiquette**, en abaissant l'affirmation, ou **combler le trou**, en allant
+chercher ce qui manquait. Le second seul produit un fait.
+
+Les 67 pages ont été ouvertes, quinze relues sur fac-similé. Et le trou comblé a rendu plus que
+la fiche qu'il débloquait :
+
+- **une seconde carte**, `classement-par-valeurs-compensatrices`, tirée de pages que personne
+  n'avait lues ;
+- **trois affirmations du dossier du 26 août démenties sur pièce**, dont une qui n'aurait jamais
+  été trouvée autrement : **le barème des 2 000 sujets n'existe pas.** Le mot « barème » ne
+  figure nulle part dans l'article, « 2.000 » n'y apparaît qu'une fois, p. 170, comme population
+  de rangement d'un cas, et le seul tableau de référence porte sur 1 000 candidats, p. 161. La
+  fiche affirmait le contraire depuis neuf jours ;
+- **le dispositif du test localisé** p. 117-128 et non p. 131-142, qui décrivent trois autres
+  épreuves. La note du 26 août interdisait à la carte de décrire l'appareil : elle le peut
+  désormais.
+
+### La première autrice du corpus, et l'anomalie qui l'effaçait
+
+Deux des cinq cartes sont signées **« Mme Henri Piéron »**. Jusqu'à cette nuit, **le corpus
+n'affichait aucune autrice.**
+
+**L'anomalie qui l'effaçait a sa cause, et elle est systématique.** Sur les pages d'article de
+Persée, la mention affichée « Mme Henri Piéron » **pointe vers la notice d'autorité 49280**, qui
+est intitulée « Piéron, Henri (1881-1964) ». Crossref en hérite comme déposant, le membre 2000
+étant le programme Persée. Constaté sur deux articles distincts, 1922 et 1926, par deux lecteurs
+et deux contrôleurs indépendants. **Toute notice bibliométrique portant sur cette autrice est
+suspecte par défaut**, et la règle qui s'en déduit vaut au delà d'elle : la page de titre
+imprimée fait foi, et elle se lit sur l'image.
+
+**L'identité est rétablie, et elle est établie sur pièces, non fabriquée depuis un moteur de
+recherche.** Mathilde Victorine Félicie Angenout, épouse d'Henri Piéron depuis le 25 octobre
+1902, psychologue. Trois témoins ouverts et lus sur image : la notice 77 de Charle et Telkès,
+*Les professeurs du Collège de France*, INRP 1988, p. 203, qui donne le mariage et écrit
+« psychologue, elle collabora à ses travaux » ; Bernyer dans *L'année psychologique* de 1962,
+qui distingue en bibliographie « PIÉRON (Mme H.) » de « PIÉRON (H.) » tout en nommant la première
+**Mathilde Piéron** dans son corps ; et une chronique de la *Revue néo-scolastique* de Louvain de
+1925, qui distingue typographiquement « par H. Piéron » et « par Mad. H. Piéron » dans une même
+liste, contre-témoignage **contemporain** de la publication.
+
+**Et la carte affiche pourtant la forme imprimée, pas le prénom.** C'est la décision la plus
+stricte, et c'est le précédent Lahy du dépôt : la fiche de 1924 affiche « J.-M. Lahy » et non
+« Jean-Maurice » parce que la signature fait foi. Aucun prénom de femme ne figure sur les deux
+articles. L'identité rétablie va dans `attribution_note`, qui la dit en trois phrases, et
+l'appareil de preuve dans `notes`, qui ne s'affiche pas.
+
+**Une quatrième signature a été identifiée en cours de contrôle, et elle referme un angle mort
+de la même nuit.** La « S. Korngold » qui cosigne l'article de 1931 est **Suzanne Korngold,
+devenue Suzanne Pacaud**, cheffe du laboratoire de psychotechnique de la SNCF. Établi sur trois
+pièces : Ribeill 1994 p. 117, qui la dit élève de Lahy à l'École pratique des hautes études puis
+sa fidèle collaboratrice ; Turbiaux 1983 p. 984, qui liste l'article sous « (avec S. KORNGOLD) » ;
+Ohayon 2019 § 13, qui donne les dates. **C'est exactement la figure que le balayage francophone
+de la même nuit avait laissée en angle mort**, sans savoir qu'elle était déjà dans le lot sous
+son nom de jeune fille.
+
+### Le balayage francophone n'a rien rendu, et c'est le résultat
+
+La cartographie d'ouverture du domaine déclarait son déséquilibre principal : HAL, Cairn,
+OpenEdition Books et theses.fr **n'avaient jamais reçu la moindre requête** pour ce domaine. Ils
+en ont reçu cette nuit, et **aucun candidat n'en est sorti**.
+
+- **HAL**, huit requêtes. Le motif du rejet est constant et il vaut d'être écrit : ce que HAL
+  indexe pour ce domaine est de la **recherche appliquée qui teste un modèle anglophone**, pas
+  la source du modèle.
+- **Cairn** est fermé, `HTTP 403` sur deux points d'entrée, défi anti-robot DataDome. Non
+  contourné. **À traiter comme définitif tant qu'aucune autre voie n'est proposée**, et non
+  comme un échec réseau à rejouer.
+- **OpenEdition Books** est la seule des quatre à avoir rendu du texte intégral, et la voie qui
+  fonctionne est de **parcourir les pages de collection, qui sont du HTML statique**, le moteur
+  de recherche étant rendu côté client. Un candidat sérieux en est sorti, lu en entier, puis
+  écarté : son objet est une catégorie de risque, pas un état de la personne.
+- **theses.fr** ne sert qu'à **vérifier l'existence d'une thèse déjà nommée**, pas à découvrir
+  un concept par mots-clés : son API n'a pas d'opérateur de phrase exacte et rend du bruit
+  massif.
+
+**Le constat qui en sort dépasse la nuit** : le canon francophone de la psychologie du travail
+au sens strict du périmètre est mince, et ce qui manque le plus au domaine est anglophone ou
+germanophone. Karasek et Theorell, Siegrist : aucune recherche n'a porté sur eux, et c'est
+probablement le plus gros manque du domaine.
+
+### Deux pistes que la cartographie désignait sont closes, avec leur motif
+
+- **Le rapport `DTIC_ADA065892`**, que la cartographie d'ouverture appelait « la piste à ouvrir
+  en premier au prochain passage, identifiant en main ». Ouverte, et close. Ce n'est pas un texte
+  de Porter et Lawler : la page de titre, lue sur le dérivé image **sans suffixe** comme la règle
+  du dépôt l'impose, porte « Paul F. Daspit, Capt USAF », mémoire de master, septembre 1978. Le
+  tampon « DDC RECEIVED MAR 15 1979 » est une date d'enregistrement, **et le piège que le lot du
+  23 août avait payé une fois a donc été évité cette nuit**. Le texte porte bien une contribution
+  propre, mais ses résultats sont mitigés de l'aveu de l'auteur et aucune reprise n'a pu être
+  trouvée.
+- **Le numéro 344 du *Bulletin de psychologie***, « gisement à moitié dépensé » d'après la
+  cartographie. Il ne l'est plus : le passage 11 en avait dépouillé les 55 articles pour un autre
+  domaine, et le seul resté en suspens de ce côté-ci a été lu en entier cette nuit et écarté.
+  **Aucun budget ne doit plus lui être consacré, par aucun des deux domaines.**
+
+### Ce que le contrôle aveugle a réellement attrapé
+
+| question | résultat sur cinq fiches |
+|---|---|
+| citation verbatim, à l'endroit annoncé | 5/5 dès le premier passage |
+| attribution | 5/5 dès le premier passage |
+| prose fidèle aux sources | 5/5 dès le premier passage |
+| sources qui résolvent | 5/5 dès le premier passage |
+
+**Aucun renvoi, pour la quatrième fois dans ce corpus, et sur le lot le plus gros des trois
+précédents.** Ce n'est pas de l'indulgence : les cinq contrôleurs ont refait leur propre
+recherche, ouvert les images des pages, et rendu six remarques hors mandat, dont trois qui
+enrichissent le dépôt.
+
+- **L'identification de Suzanne Korngold** vient d'un contrôleur, pas d'un lecteur.
+- **Un contrôleur a trouvé une pièce que la carte ne citait pas** et qui confirme l'identité de
+  l'autrice : la notice INRP de 1988.
+- **Un contrôleur a relevé une nuance de mode dans un résumé sans la renvoyer** : la carte du
+  classement écrit que le seuil d'élimination « suit » le marché de la main-d'œuvre, là où Lahy
+  écrit qu'il « doit régler » la rigueur de la sélection, c'est-à-dire un énoncé normatif rendu
+  en descriptif. Il l'a jugé soutenable, la page décrivant le mécanisme dans les deux sens.
+  **La remarque n'a pas été corrigée, et le motif est de méthode** : la corriger aurait voulu
+  dire que l'orchestrateur réécrive lui-même une prose qu'aucun contrôleur n'aurait relue, ce
+  que le protocole interdit. Elle est portée à `RESTE-A-FAIRE.md` comme reprise courte, à
+  trancher par un rédacteur puis un contrôleur.
+- **Une erreur de pagination dans une source secondaire a été constatée contre l'imprimé** :
+  Ribeill p. 125 arrête l'article de 1931 à la page 148, le folio imprimé donne 149, et la carte
+  a raison contre lui.
+- Deux remarques sans effet : un désaccord entre secondaires sur l'année de naissance de
+  l'autrice, 1877 ou 1878, qu'aucune carte n'affiche ; et une généalogie du profil analytique
+  remontant à Rossolimo et Galton, que la carte ne revendique nulle part.
+
+### Le garde de projection s'est déclenché en local, sur le cas exact que le chantier E décrivait
+
+**Un fichier projeté est resté en retard d'un enregistrement maître pendant quelques minutes, et
+c'est le `git diff --exit-code src/content/generated/` de la clôture qui l'a vu.** Un
+`corpus-deepener` a repoli son fichier **après** que la projection de la nuit eut été calculée : le
+commit a donc emporté le maître dans son dernier état et la projection dans l'avant-dernier.
+Quatre phrases de l'approfondissement de `attention-diffusee-et-selection` divergeaient entre les
+deux.
+
+**C'est exactement le défaut qui a fait vivre `effet-de-cadrage` deux jours avec deux phrases
+divergentes**, découvert au passage 08 et corrigé au 02 septembre par le chantier E. Ici il n'a
+duré que le temps d'un contrôle, et il n'a jamais atteint `main`. **La leçon qui s'ajoute** : le
+`git diff --exit-code` de la §4 ne se lance pas une fois, il se relance **après** que le dernier
+agent a rendu, et la projection se vérifie **idempotente** en la rejouant deux fois. C'est ce qui
+a été fait, et la seconde exécution ne bouge plus.
+
+### Une seule carte n'affiche aucune source secondaire, et c'est délibéré
+
+Les deux passages précédents ont commencé à solder la dette des 87 avertissements « aucune
+source secondaire affichée ». Cette nuit-ci en sert quatre sur cinq, et **elle refuse d'en servir
+la cinquième**.
+
+`classement-par-valeurs-compensatrices` n'en porte pas, et le motif est vérifiable : la recherche
+plein texte de Persée sur « valeurs compensatrices » rend 28 résultats dont **un seul dans le
+corpus psychotechnique, l'article de Lahy lui-même**, et le mot « compensation » est absent des
+quatre secondaires ouvertes pour ce lot. **Une caution fausse vaut moins qu'un avertissement.**
+
+Et la leçon du 3 septembre s'est appliquée cinq fois : **une source secondaire ouverte ne se
+résume pas par son titre, et ce qu'elle n'atteste pas se dit.** Sur les neuf pièces ouvertes,
+**aucune ne discute le concept de la carte à laquelle elle est rattachée** ; cinq nomment le
+texte primaire, toutes en bibliographie ou en signalement. Chaque dossier de réception porte les
+trois mêmes champs, ce que le corps établit, ce qu'il n'atteste pas, et si la pièce nomme ou non
+le texte de la carte, et chaque carte servie le dit dans ses `notes`.
+
 ## Passage 11/15 — 2026-09-03
 
 - branche      : `claude/zen-johnson-48i2i8` (imposée par la session, pas `main`). **Le travail du passage 10 est fusionné dans `main`**, pull request [#94](https://github.com/J-Rbs91/Curiosity/pull/94), commit de merge `7bc7e4f`, et **cette branche partait exactement de là** : constaté par `git log claude/zen-johnson-48i2i8..origin/main`, vide dans les deux sens. **Rien n'a été refait.** Le travail de la nuit est poussé sur cette branche. Pull request [#96](https://github.com/J-Rbs91/Curiosity/pull/96) vers `main`, ouverte à la clôture. Tant qu'elle n'est pas fusionnée, **la nuit suivante reprend depuis cette branche**, et non depuis `main`, sinon elle refera ce qui est déjà fait.
