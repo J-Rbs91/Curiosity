@@ -2,7 +2,7 @@
   "$schema": "../schema/carte.schema.json",
   "id": "classement-par-valeurs-compensatrices",
   "slug": "classement-par-valeurs-compensatrices",
-  "status": "CANDIDATE",
+  "status": "VALIDATED",
   "title": "Le classement par valeurs compensatrices",
   "themes": [
     "juger-quelqu-un-apte"
@@ -10,7 +10,6 @@
   "theme_labels": {
     "juger-quelqu-un-apte": "Juger quelqu'un apte à un emploi"
   },
-  "domain": "work-psychology",
   "authors": [
     {
       "name": "J.-M. Lahy",
@@ -44,8 +43,27 @@
     }
   ],
   "review": {
-    "verdict": "PENDING",
-    "notes": []
+    "reviewer": "contrôle aveugle",
+    "date": "2026-09-04",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "CITATION — vérifiée sur l'image de la page, pas sur l'OCR. Dérivé image récupéré en curl : https://www.persee.fr/renderPage/psy_0003-5033_1924_num_25_1_6140/psy_0003-5033_1924_num_25_1_T1_0157_0000_1130.jpg (HTTP 200, 210 230 o, servi en image/png). Titre courant lu sur l'image : LAHY. — LA SÉLECTION PSYCHO-PHYSIOLOGIQUE DES MACHINISTES 157 — c'est bien la page annoncée et bien cet article (pas de substitution de cache). Le paragraphe qui commence par « Cependant il ne faudrait pas exagérer l'importance des phénomènes de suppléance » porte, mot pour mot : Nous avons constaté que, au delà d'une certaine valeur, l'infériorité dans un test ne peut pas être compensée par une supériorité dans un autre. Recadrage agrandi de ces trois lignes pour lever le doute sur la ponctuation : les deux virgules (après « que » et après « valeur ») sont bien à l'encre sur l'imprimé, « au delà » est sans trait d'union, la phrase se clôt sur « dans un autre. » La citation de la fiche est identique, sans coupe ni ajout ; pas de traduction en jeu (texte français d'origine).",
+      "ATTRIBUTION — le concept est nommé par Lahy lui-même, et je l'ai lu sur l'image de la page 163 (…_T1_0163_0000_1130.jpg, HTTP 200), sous l'intertitre « LE PRINCIPE DU CLASSEMENT ET LA CONSTITUTION DES CATÉGORIES ET DES GROUPES » : « Nous avons tiré de ces remarques un principe de classement par l'usage des valeurs compensatrices. » Le titre de la carte reprend donc une formule de l'auteur, et non une étiquette rapportée.",
+      "ATTRIBUTION — filiation vérifiée sur l'image de la page 156 (…_T1_0156_0000_1130.jpg) : « Le principe sur lequel nous nous sommes appuyé […] découle de nos recherches antérieures sur la supériorité professionnelle de certains travailleurs, notamment des linotypistes 1 et des dactylographes 2 », avec les deux notes de bas de page lisibles : 1. J. M. Lahy, Recherches sur les conditions de travail des ouvriers typographes composant à la machine dite « linotype », Bulletin de l'Inspection du Travail, 1910, p. 45 à 103 ; 2. J. M. Lahy, Les signes physiques de la supériorité professionnelle chez les dactylographes, C. R. Acad. des Sciences, 2 juin 1913. Ce sont bien deux travaux de Lahy, et ils sont bien en note p. 156.",
+      "ATTRIBUTION — signature unique et rôle des tiers vérifiés en balayant la transcription page à page de tout l'article (https://www.persee.fr/doc/page/psy_0003-5033_1924_num_25_1_6140/psy_0003-5033_1924_num_25_1_T1_<PPPP>_0000, pages 106 à 172 ; 5 pages n'ont pas répondu et ont été rejouées, 5 pages de planches sont sans texte). L'article s'ouvre p. 106 sur « Par J. M. Lahy » et se clôt p. 172 sur « J.-M. Lahy. » Recherche plein texte : Fessard n'apparaît qu'aux p. 135, 147 et 148 (une idée de planimétrage, des expériences sur le réflexe psychogalvanique) ; Guyot aux p. 109, 149 et 155, comme ingénieur affecté par la S.T.C.R.P. à l'outillage. Aucun des deux n'est associé au classement. Münsterberg est cité p. 107, mais comme auteur d'un chapitre parallèle sur la sélection des conducteurs en 1913, pas comme source du principe de compensation ; la fiche ne lui doit donc rien à rendre.",
+      "SOURCES — la référence unique résout. https://api.crossref.org/works/10.3406/psy.1924.6140 rend : L'année psychologique, vol. 25, n° 1, 1924, p. 106-172, auteur unique « J.-M. Lahy », éditeur PERSEE Program. https://doi.org/10.3406/psy.1924.6140 redirige (HTTP 200) exactement sur l'URL affichée par la fiche, https://www.persee.fr/doc/psy_0003-5033_1924_num_25_1_6140. La pagination annoncée est confirmée par les pages elles-mêmes : le texte commence bien p. 106 et la signature tombe p. 172.",
+      "SOURCES — le locator « p. 156-165 et p. 171-172 » porte bien ce qu'il annonce : p. 156 le principe physiologique et les deux notes de filiation ; p. 157 la limite de la compensation ; p. 158-159 les déciles et les profils ; p. 161-165 la coïncidence des tests, les catégories, les groupes et l'équilibre des valeurs ; p. 171-172 le pourcentage d'accords puis le réglage du seuil.",
+      "PROSE — les trois affirmations du summary ont chacune leur page. (1) « Les fonctions se suppléent, donc un seul test ne classe personne » : p. 156, « le rendement pour un seul test ne peut classer un groupe de sujets dans une activité professionnelle, en raison des suppléances qui se créent entre les diverses fonctions mises en jeu ». (2) « la compensation a une limite » : p. 157 (la citation) et p. 163, « Pourtant, lorsque cette infériorité est trop grande, la compensation ne s'établit pas ». (3) « le seuil d'élimination suit le marché de la main-d'oeuvre » : lu sur l'image de la page 171 (…_T1_0171_0000_1130.jpg, HTTP 200, titre courant « … MACHINISTES 171 »), dernière ligne de la page : « C'est donc le marché de la main-d'œuvre qui doit régler la » — la phrase s'achève p. 172 par « rigueur de notre loi de sélection. Le point optimum est déterminé par les réserves en personnel et les nécessités du service. » Le hook (« Une faiblesse dans une épreuve se rattrape-t-elle ailleurs, et jusqu'où ? ») est exactement la question que traitent les p. 156-157 et 163 ; il n'ajoute rien.",
+      "Nuance relevée, insuffisante pour un renvoi : le summary écrit « suit » là où Lahy écrit « doit régler ». Lahy énonce une règle de conduite pour son laboratoire, la carte la restitue comme un fonctionnement. La p. 171 décrit toutefois le mécanisme dans les deux sens (durcir la règle rejette plus de sujets aptes ; l'optimum dépend des réserves en personnel), ce qui rend la formulation soutenable en l'état.",
+      "Hors mandat, pour information et sans effet sur le verdict : la notice Crossref porte le titre avec son énumérateur de fascicule, « V. La sélection psycho-physiologique… », que la référence de la fiche omet. Il s'agit du numéro de section des Mémoires originaux, pas d'un élément du titre.",
+      "Ce que je n'ai pas pu atteindre. (a) Le docAsPDF de Persée n'a pas été demandé : il est derrière un défi anti-robot, et la règle d'accès interdit de le franchir. Toute la vérification repose donc sur les dérivés image page à page, qui eux sont servis librement. (b) L'article de corroboration secondaire sur Lahy dans le Bulletin de psychologie (2006, n° 482, p. 217) : GET https://shs.cairn.info/article/BUPSY_482_0217?lang=fr rend HTTP 403 avec une page de vérification JavaScript (« Please enable JS and disable any ad blocker »). Je n'ai pas contourné ce mur et je n'ai vu de ce texte que des extraits de résultats de recherche ; aucune conclusion de ce contrôle ne s'appuie dessus. (c) Le serveur MCP documentary n'était pas exposé ; la vérification de référence a été faite contre Crossref, qui a répondu — l'issue n'est donc pas un « conclusive: false ».",
+      "Sur les rappels de dispositif : l'anomalie de cache Persée ne s'est pas manifestée ici, le titre courant de chacune des quatre pages images a été lu et correspond à l'article. Les fausses virgules de l'OCR ont bien été rencontrées (la transcription texte de la p. 157 en pose), et c'est pourquoi la citation n'a été tranchée que sur l'image agrandie."
+    ]
   },
   "notes": [
     "Aucune source secondaire n'est portée sur cette carte, et c'est un choix motivé plutôt qu'une lacune : la recherche plein texte de Persée sur l'expression exacte « valeurs compensatrices » rend vingt-huit résultats dont un seul appartient au corpus psychotechnique, l'article de Lahy lui-même. Les quatre secondaires ouvertes cette nuit sur Lahy (Turbiaux 1983 et 2004, Passalacqua 2014, la nécrologie de 1940) ne contiennent ni « compensation » ni « compensatrices », n'exposent aucune règle de classement, aucun seuil, aucune catégorie d'aptitude, et aucune ne cite les p. 156-157 ni les p. 162-165. Les porter ici aurait donné au lecteur une caution que leur corps n'établit pas. L'avertissement du validateur sur l'absence de secondaire est donc attendu.",

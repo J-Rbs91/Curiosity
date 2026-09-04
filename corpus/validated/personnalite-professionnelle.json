@@ -2,7 +2,7 @@
   "$schema": "../schema/carte.schema.json",
   "id": "personnalite-professionnelle",
   "slug": "personnalite-professionnelle",
-  "status": "CANDIDATE",
+  "status": "VALIDATED",
   "title": "La personnalité professionnelle",
   "themes": [
     "juger-quelqu-un-apte"
@@ -10,7 +10,6 @@
   "theme_labels": {
     "juger-quelqu-un-apte": "Juger quelqu'un apte à un emploi"
   },
-  "domain": "work-psychology",
   "authors": [
     {
       "name": "J.-M. Lahy",
@@ -72,8 +71,24 @@
     }
   ],
   "review": {
-    "verdict": "PENDING",
-    "notes": []
+    "reviewer": "contrôle aveugle",
+    "date": "2026-09-04",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "CITATION, vérifiée sur l'image de la page et non sur l'OCR. Image téléchargée en curl : https://www.persee.fr/renderPage/psy_0003-5033_1931_num_32_1_5030/psy_0003-5033_1931_num_32_1_T1_0132_0000_710.jpg (200, 263 878 octets ; la variante _1130 rend un PNG 976 x 1652, même page). Le folio imprimé porte bien 132 et le titre courant « MÉMOIRES ORIGINAUX ». Recadrage agrandi du paragraphe : la phrase se lit « C'est donc par le détour de l'analyse que l'on constitue la « per-/sonnalité professionnelle » des sujets dont on désire connaître la valeur. » Seule différence avec la fiche : la coupure typographique per-/sonnalité en fin de ligne, restituée en un mot, et les apostrophes courbes de 1931 rendues droites. Le circonflexe de connaître est bien présent sur l'image. Aucun autre écart : ponctuation, guillemets et ordre des mots identiques.",
+      "SOURCE PRIMAIRE, ouverte en entier. La page 131 (renderPage ..._0131_0000_710.jpg) porte le bandeau « V / SÉLECTION DES OPÉRATRICES DE MACHINES COMPTABLES / Par J. M. LAHY et S. KORNGOLD », le sommaire et le début de la section I. La page 149 (..._0149_0000_710.jpg) porte le titre courant « LAHY ET KORNGOLD. — SÉLECTION DES OPÉRATRICES, ETC. 149 » et la signature finale « J.-M. LAHY et S. KORNGOLD. ». Les deux mentions de l'attribution_note sont donc exactes sur la pièce, et le texte est bien écrit à la première personne du pluriel (nous sommes contraints, nous avons pu, notre étude) sans aucun partage du travail déclaré. Pagination 131-149 confirmée par la liste des pages de l'article et par le folio de la dernière page.",
+      "SOURCES. DOI 10.3406/psy.1931.5030 résolu sur https://api.crossref.org/works/10.3406/psy.1931.5030 : Lahy J.-M. (first) et Korngold S. (additional), L'année psychologique, volume 32, 1931, pages 131-149, ISSN 0003-5033. Le titre Crossref est « V. Sélection des opératrices de machines comptables » ; le « V. » est le numéro d'ordre du mémoire imprimé au-dessus du titre sur la page 131, son omission dans le label est correcte. DOI 10.4000/rhsh.4157 résolu sur Crossref : Annick Ohayon, Revue d'histoire des sciences humaines, 2019, vol. 35, p. 135-150, titre conforme. Les deux références sans DOI ont été ouvertes sur Persée : Ribeill, métadonnées citation_ = Bulletin de psychologie vol. 48, n° 418, p. 115-125, DOI Persée 10.3406/bupsy.1994.14388 ; Turbiaux, vol. 36, n° 362, p. 969-985, DOI Persée 10.3406/bupsy.1983.12531. Les intitulés affichés concordent, à la ponctuation près pour Turbiaux (Persée écrit « J. M. Lahy (1872-1943) essai de bio-bibliographie », la fiche intercale un deux-points).",
+      "LOCALISATEURS DES SOURCES, tous ouverts et non pas seulement présumés. Ribeill p. 116-117 : la page 116 raconte la commande du réseau du Nord à Lahy pour la conversion des machines Dalton en machines Elliott-Fischer et la sélection des opératrices, c'est-à-dire l'objet même de l'article de 1931 ; la page 117 porte la phrase « Elève de Lahy à son laboratoire de l'Ecole Pratique des Hautes Etudes, Suzanne Korngold est devenue en effet sa fidèle collaboratrice ». Ribeill p. 125 est la bibliographie complémentaire, qui liste l'article de 1931 (elle l'arrête à la page 148, alors que le folio imprimé de la dernière page est 149 : l'erreur est chez Ribeill, pas sur la carte). Turbiaux p. 978 : « Suzanne Korngold-Pacaud, qui fut sa plus active collaboratrice » ; p. 984 : entrée bibliographique « (avec S. KORNGOLD) : Sélection des opératrices de machines comptables. L'année psychologique, 1931, t. XXXII, pp. 131-149 ». Ohayon, § 13 : « Suzanne Korngold (1902-1988), qui deviendra Suzanne Pacaud et fera l'essentiel de sa carrière sous ce nom » ; les § 11 à 15 couvrent bien le laboratoire de Lahy, Weinberg et Korngold. Les dates de vie et le nom ultérieur portés par l'attribution_note sont donc sourcés mot pour mot.",
+      "ATTRIBUTION. La cosignature est établie sur la pièce elle-même (page de titre et signature finale) et confirmée par Crossref et par la bibliographie de Turbiaux, qui range l'article sous « avec S. KORNGOLD ». Aucun élément ne permet de retirer la paternité à l'un des deux signataires : le texte ne répartit rien, et la fiche ne prétend rien de plus. Recherche d'un usage antérieur du terme : la recherche plein texte de Persée sur l'expression exacte rend 88 documents, dont un seul de Lahy et un seul de Korngold, tous deux l'article de 1931 ; les 86 autres sont postérieurs et relèvent d'un autre sens, la personnalité professionnelle de l'enseignant en sciences de l'éducation. Les guillemets qui entourent l'expression page 132 ne renvoient à aucune référence dans le texte : ils marquent l'introduction d'une désignation, non un emprunt cité.",
+      "CE QUE JE N'AI PAS PU ATTEINDRE, et il faut le lire comme une limite du balayage négatif et non comme une réfutation. L'API SRU de Gallica, interrogée en https://gallica.bnf.fr/SRU?operation=searchRetrieve&query=gallica all \"personnalité professionnelle\", répond 403 « Access Denied: Access Interdit » ; l'API de recherche plein texte d'Internet Archive (ia-fts.archive.org) est refusée au niveau du proxy sortant (CONNECT 502, connect_rejected). Je n'ai donc pas pu balayer l'imprimé français antérieur à 1931 hors Persée, et je ne peux pas exclure qu'un usage plus ancien existe dans un fonds que ces deux guichets auraient rendu. Ce que j'ai pu vérifier ne fait apparaître aucun antécédent.",
+      "PROSE. Le résumé est fondé phrase par phrase à l'intérieur du localisateur annoncé, p. 131-139. « Rien ne traduit terme à terme les gestes d'un poste en fonctions psychologiques » a son appui littéral p. 133, ouverte en image : « Or, il n'y a pas de correspondance rigoureuse entre chacune de ces attitudes et les « fonctions » qui, suivant les données de la psychologie classique, « morcellent » l'individu. » « On analyse les deux côtés, poste et travailleur » reprend p. 132 l'analyse technique du travail professionnel puis l'étude analytique du travailleur, et se retrouve p. 137 où la section 3 complète la description extérieure du travail par l'analyse des états mentaux et affectifs. « On met les tableaux face à face » rend p. 132 « Nous sommes contraints, en résumé, de comparer deux tableaux analytiques ». L'accroche, « Que compare-t-on au juste quand on juge quelqu'un apte à un poste ? », est exactement la question à laquelle cette dernière phrase répond. Rien n'est affirmé au-delà : la prose ne reprend pas à son compte la valeur du procédé, que les auteurs eux-mêmes disent précaire.",
+      "Hors mandat, sans effet sur le verdict : aucun tiret cadratin dans les champs affichés, et les longueurs tiennent (titre 31, accroche 67, résumé 166, citation 139 caractères). Anomalie de cache Persée non rencontrée : chaque page reçue a été contrôlée par son titre courant, les pages 133, 136, 137 et 149 portant « LAHY ET KORNGOLD. — SÉLECTION DES OPÉRATRICES, ETC. » et la page 132, verso, « MÉMOIRES ORIGINAUX ». Plusieurs téléchargements ont dû être rejoués après un « Recv failure: Connection reset by peer » ; le contenu obtenu après relance était conforme."
+    ]
   },
   "notes": [
     "Les trois sources secondaires portées ici ne discutent pas le concept de la carte, et c'est à dire en clair. L'expression « personnalité professionnelle » n'apparaît dans aucune des trois, non plus que le procédé des deux tableaux analytiques mis face à face. Ribeill p. 125 et Turbiaux p. 984 nomment l'article, mais seulement dans une liste bibliographique, sans qu'aucune page de leur corps y renvoie ; Ohayon ne le nomme pas. Elles sont versées pour ce que leur corps établit : la commande industrielle, la série de publications, l'identité et la trajectoire de la cosignataire.",

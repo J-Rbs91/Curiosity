@@ -57,10 +57,10 @@ import type { Theme } from "@/types";
  * pas projetée : le plafond de volume du lot est de huit. Elle attend en `corpus/candidates/`
  * avec son verdict, et elle est le premier travail du passage suivant sur ce domaine.
  *
- * Les deux thèmes de `work-psychology` sont écrits le 26 août 2026, après le contrôle aveugle
- * des cartes du lot d'ouverture. La cartographie en proposait **cinq**, un par candidat, et
- * elle avait prévenu que le cinquième restait à confirmer côté frontière. Le lot en déclare
- * deux, et l'écart s'explique entièrement :
+ * Les deux premiers thèmes de `work-psychology` sont écrits le 26 août 2026, après le
+ * contrôle aveugle des cartes du lot d'ouverture. La cartographie en proposait **cinq**, un
+ * par candidat, et elle avait prévenu que le cinquième restait à confirmer côté frontière. Le
+ * lot en déclare deux ce soir-là, et l'écart s'explique entièrement :
  *
  * - les deux textes anglophones ouverts, le rapport de Hackman et Oldham sur les
  *   caractéristiques de l'emploi et celui de Locke et al. sur la fixation d'objectifs,
@@ -71,13 +71,28 @@ import type { Theme } from "@/types";
  * - les deux textes francophones portent chacun un état que l'emploi dépose sur la personne,
  *   une frustration salariale et une vie hors travail contrainte, et forment le second thème,
  *   à deux cartes ;
- * - le cinquième thème proposé, la sélection psychotechnique, **n'est pas déclaré**, et le
- *   motif n'est pas documentaire. La carte existe, elle est écrite, mais sa source primaire
- *   est en `partial` : onze pages ouvertes sur soixante-sept, ce qui ne satisfait pas la
- *   règle du dépôt exigeant une source primaire lue en texte intégral. Elle attend en
- *   `corpus/candidates/`, et un thème sans carte validée ne se déclare pas.
+ * - le cinquième thème proposé, la sélection psychotechnique, **n'est pas déclaré ce soir-là**,
+ *   et le motif n'est pas documentaire. La carte existe, elle est écrite, mais sa source
+ *   primaire est en `partial` : onze pages ouvertes sur soixante-sept, ce qui ne satisfait pas
+ *   la règle du dépôt exigeant une source primaire lue en texte intégral. Elle attend en
+ *   `corpus/candidates/`.
  *
- * Aucun des deux thèmes déclarés ne repose sur une carte unique.
+ * Ce cinquième thème, `juger-quelqu-un-apte`, se déclare dans la nuit du 4 septembre 2026.
+ * Les soixante-sept pages de l'article de Lahy de 1924 ont été rouvertes et lues en entier :
+ * sa source primaire passe de `partial` à `full-text`, la carte qui en dépendait a reçu le
+ * contrôle aveugle et le verdict `PASS`, et le même contrôle a porté dans la foulée sur quatre
+ * autres cartes du même champ, elles aussi reçues `PASS` au premier tour. Le thème se déclare
+ * donc avec **cinq** cartes et non une, tirées de quatre articles distincts de L'année
+ * psychologique (1922, 1924, 1926, 1931) et de trois signatures : J.-M. Lahy seul, J.-M. Lahy
+ * et S. Korngold, et Mme Henri Piéron seule. Cette dernière forme est celle imprimée sur les
+ * deux articles qu'elle signe : elle est retenue par le même principe que pour « J.-M. Lahy »
+ * plutôt que « Jean-Maurice », et l'identité rétablie, Mathilde Piéron, est portée par
+ * l'attribution_note de chacune des deux cartes. Sur `classement-par-valeurs-compensatrices`,
+ * l'absence de source secondaire est délibérée et reste signalée par le validateur : la
+ * recherche plein texte n'a rendu, dans le corpus psychotechnique, que l'article de Lahy
+ * lui-même, et aucune caution de complaisance n'a été ajoutée à sa place.
+ *
+ * Aucun des trois thèmes déclarés ne repose sur une carte unique.
  *
  * L'unique thème de `behavioral-economics` est écrit le 28 août 2026, à l'ouverture du
  * onzième et dernier domaine, après le contrôle aveugle des quatre cartes du lot
@@ -506,6 +521,17 @@ export const themes: Theme[] = [
     keywords: ["Rémunération", "Seuil", "Hors travail"],
     description:
       "Un emploi ne se contente pas d'occuper des heures : il dépose sur la personne des états qui lui survivent, une frustration qui se mesure à un seuil plutôt qu'à un montant, une vie hors travail dont il commande les conditions. Ce thème porte sur ce que la situation d'emploi laisse chez celui qui l'occupe, et sur ce qui décide de son intensité.",
+    domain: "work-psychology",
+  },
+  {
+    id: "juger-quelqu-un-apte",
+    slug: "juger-quelqu-un-apte",
+    title: "Juger quelqu'un apte à un emploi",
+    tagline:
+      "Juger par l'épreuve, c'est aussi buter sur ce qu'elle ne dit pas.",
+    keywords: ["Épreuve", "Classement", "Aptitude"],
+    description:
+      "Entre 1922 et 1931, la psychotechnique française décide par l'épreuve si une personne convient à un emploi : mesurer une aptitude, agréger des tests en un classement dont le seuil suit le marché du travail, mettre poste et travailleur analysés face à face. Ce thème porte sur ces dispositifs de jugement, et sur ce qu'ils peinent eux-mêmes à montrer : qu'une épreuve redouble une autre, qu'un score recouvre des profils opposés.",
     domain: "work-psychology",
   },
   // --- Sociologie du travail ------------------------------------------------

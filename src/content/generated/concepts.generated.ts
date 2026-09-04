@@ -282,6 +282,44 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "attention-diffusee-et-selection",
+    "slug": "attention-diffusee-et-selection",
+    "title": "L'attention diffusée",
+    "authorLabel": "J.-M. Lahy",
+    "hookQuestion": "Ce qui manque au machiniste fautif peut-il échapper à sa hiérarchie ?",
+    "shortExplanation": "Cette attention qui porte sur plusieurs objets à la fois se mesure et se classe en rangs : elle manque presque toujours au machiniste fautif d'un accident grave.",
+    "authors": [],
+    "themes": [
+      "juger-quelqu-un-apte"
+    ],
+    "themeLabel": "Juger quelqu'un apte à un emploi",
+    "attributionNote": "Article signé de J.-M. Lahy seul. Il rend compte des travaux du laboratoire de psychotechnique qu'il dirige pour la Société des Transports en commun de la région parisienne, et y crédite nommément des collaborateurs, A. Fessard et l'ingénieur Guyot, pour des apports ponctuels : ces contributions sont créditées sans être cosignées.",
+    "quotation": {
+      "text": "[…] le machiniste utilise une forme particulière de l'attention, à laquelle nous avons donné le nom d'attention diffusée.",
+      "reference": "J.-M. Lahy, « La sélection psycho-physiologique des machinistes de la Société des Transports en commun de la région parisienne », L'année psychologique, tome 25, 1924, p. 106-172, p. 117"
+    },
+    "sources": [
+      {
+        "label": "J.-M. Lahy, « La sélection psycho-physiologique des machinistes de la Société des Transports en commun de la région parisienne », L'année psychologique, tome 25, 1924, p. 106-172.",
+        "kind": "primary",
+        "reference": "p. 117-128 et p. 169-170 · 10.3406/psy.1924.6140",
+        "url": "https://www.persee.fr/doc/psy_0003-5033_1924_num_25_1_6140"
+      },
+      {
+        "label": "Marcel Turbiaux, « J.M. Lahy (1872-1943) : essai de bio-bibliographie », Bulletin de psychologie, tome XXXVI, n° 362, 1983, p. 969-985.",
+        "kind": "secondary-academic",
+        "reference": "p. 974-975, 978 et 983",
+        "url": "https://www.persee.fr/doc/bupsy_0007-4403_1983_num_36_362_12531"
+      },
+      {
+        "label": "Arnaud Passalacqua, « Les autobus parisiens et le développement pionnier de la psychotechnique : Jean-Maurice Lahy à la STCRP, années 1910-années 1920 », Les Cahiers de RECITS, n° 10, 2014, p. 89-107.",
+        "kind": "secondary-academic",
+        "reference": "p. 98-101 et p. 105",
+        "url": "https://hal.science/hal-02415449/file/LesCahiersDeRECITSn10_pp089-107_ArnaudPassalacqua.pdf"
+      }
+    ]
+  },
+  {
     "id": "automatisation-centree-humain",
     "slug": "automatisation-centree-humain",
     "title": "Automatisation centrée sur l'humain",
@@ -485,6 +523,32 @@ export const generatedConcepts: Concept[] = [
         "kind": "primary",
         "reference": "10.1051/ro/196802v100571",
         "url": "https://doi.org/10.1051/ro/196802v100571"
+      }
+    ]
+  },
+  {
+    "id": "classement-par-valeurs-compensatrices",
+    "slug": "classement-par-valeurs-compensatrices",
+    "title": "Le classement par valeurs compensatrices",
+    "authorLabel": "J.-M. Lahy",
+    "hookQuestion": "Une faiblesse dans une épreuve se rattrape-t-elle ailleurs, et jusqu'où ?",
+    "shortExplanation": "Les fonctions se suppléent, donc un seul test ne classe personne ; mais la compensation a une limite, et le seuil d'élimination suit le marché de la main-d'oeuvre.",
+    "authors": [],
+    "themes": [
+      "juger-quelqu-un-apte"
+    ],
+    "themeLabel": "Juger quelqu'un apte à un emploi",
+    "attributionNote": "Article signé de J.-M. Lahy seul. Il rattache lui-même ce principe de classement à ses recherches antérieures sur les linotypistes (1910) et sur les dactylographes (1913), qu'il référence en note p. 156. Les collaborateurs qu'il crédite dans le texte, A. Fessard et l'ingénieur Guyot, le sont pour des apports ponctuels qui ne portent pas sur le classement.",
+    "quotation": {
+      "text": "Nous avons constaté que, au delà d'une certaine valeur, l'infériorité dans un test ne peut pas être compensée par une supériorité dans un autre.",
+      "reference": "J.-M. Lahy, « La sélection psycho-physiologique des machinistes de la Société des Transports en commun de la région parisienne », L'année psychologique, tome 25, 1924, p. 106-172, p. 157"
+    },
+    "sources": [
+      {
+        "label": "J.-M. Lahy, « La sélection psycho-physiologique des machinistes de la Société des Transports en commun de la région parisienne », L'année psychologique, tome 25, 1924, p. 106-172.",
+        "kind": "primary",
+        "reference": "p. 156-165 et p. 171-172 · 10.3406/psy.1924.6140",
+        "url": "https://www.persee.fr/doc/psy_0003-5033_1924_num_25_1_6140"
       }
     ]
   },
@@ -1189,6 +1253,48 @@ export const generatedConcepts: Concept[] = [
         "kind": "primary",
         "reference": "978-2-13-056839-1",
         "url": "https://openlibrary.org/books/OL23608015M"
+      }
+    ]
+  },
+  {
+    "id": "double-emploi-entre-epreuves",
+    "slug": "double-emploi-entre-epreuves",
+    "title": "Le double emploi entre épreuves",
+    "authorLabel": "Mme Henri Piéron",
+    "hookQuestion": "Deux épreuves qui vont de pair mesurent-elles deux choses ou la même ?",
+    "shortExplanation": "Deux épreuves qui corrèlent fortement mobilisent la même chose et se redoublent : c'est l'absence de recouvrement qui justifie de les employer ensemble.",
+    "authors": [],
+    "themes": [
+      "juger-quelqu-un-apte"
+    ],
+    "themeLabel": "Juger quelqu'un apte à un emploi",
+    "attributionNote": "L'article est signé « Par Mme Henri Piéron », sans aucun prénom de femme sur la pièce. L'autrice n'est pas Henri Piéron : c'est Mathilde Victorine Félicie Angenout, son épouse depuis 1902, psychologue. Les notices Crossref et Persée reversent pourtant le texte à Henri Piéron, la mention affichée pointant vers une notice d'autorité qui est la sienne.",
+    "quotation": {
+      "text": "[…] nos six tests représentent bien des modalités différentes du fonctionnement cérébral ; ils ne présentent pas de double emploi […]",
+      "reference": "Mme Henri Piéron, « Étude psychotechnique de quelques tests d'aptitude (Analyse, étalonnage, corrélations réciproques, etc.) », L'année psychologique, tome 23, 1922, p. 144-175, p. 175"
+    },
+    "sources": [
+      {
+        "label": "Mme Henri Piéron, « Étude psychotechnique de quelques tests d'aptitude (Analyse, étalonnage, corrélations réciproques, etc.) », L'année psychologique, tome 23, 1922, p. 144-175.",
+        "kind": "primary",
+        "reference": "p. 145, 148, 160-161 et 171-175 · 10.3406/psy.1922.29785",
+        "url": "https://www.persee.fr/doc/psy_0003-5033_1922_num_23_1_29785"
+      },
+      {
+        "label": "Maurice Reuchlin, « Mme H. Piéron (1877-1969) », BINOP, Bulletin de l'Institut national d'étude du travail et d'orientation professionnelle, 25e année, n° 4, 1969, p. 219-220.",
+        "kind": "francophone-reception",
+        "url": "https://www.persee.fr/doc/binop_0005-3147_1969_num_25_4_3846"
+      },
+      {
+        "label": "Gaston Wallerand, « Chronique », Revue néo-scolastique de philosophie, 27e année, n° 6, 1925, p. 214-224 ; signalement de L'Année psychologique, tome XXIII, p. 218.",
+        "kind": "francophone-reception",
+        "url": "https://www.persee.fr/doc/phlou_0776-555x_1925_num_27_6_2693"
+      },
+      {
+        "label": "Annick Ohayon, « D'épouse dévouée à professeur de faculté, itinéraires de quelques femmes psychologues des années 1930 aux années 1960 », Revue d'histoire des sciences humaines, n° 35, 2019, p. 135-150.",
+        "kind": "secondary-academic",
+        "reference": "§ 3 à 7 · 10.4000/rhsh.4157",
+        "url": "https://journals.openedition.org/rhsh/4157"
       }
     ]
   },
@@ -2681,6 +2787,50 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "personnalite-professionnelle",
+    "slug": "personnalite-professionnelle",
+    "title": "La personnalité professionnelle",
+    "authorLabel": "J.-M. Lahy, S. Korngold",
+    "hookQuestion": "Que compare-t-on au juste quand on juge quelqu'un apte à un poste ?",
+    "shortExplanation": "Rien ne traduit terme à terme les gestes d'un poste en fonctions psychologiques : on analyse les deux côtés, poste et travailleur, et on met les tableaux face à face.",
+    "authors": [],
+    "themes": [
+      "juger-quelqu-un-apte"
+    ],
+    "themeLabel": "Juger quelqu'un apte à un emploi",
+    "attributionNote": "Article cosigné : la page de titre porte « Par J. M. LAHY et S. KORNGOLD », la signature finale « J.-M. LAHY et S. KORNGOLD. ». Aucun prénom n'est développé sur la pièce, et le partage du travail n'y est dit nulle part, le texte étant écrit d'un bout à l'autre à la première personne du pluriel. S. Korngold est Suzanne Korngold (1902-1988), collaboratrice de Lahy à son laboratoire de l'École pratique des hautes études, connue plus tard sous le nom de Suzanne Pacaud.",
+    "quotation": {
+      "text": "C'est donc par le détour de l'analyse que l'on constitue la « personnalité professionnelle » des sujets dont on désire connaître la valeur.",
+      "reference": "J.-M. Lahy et S. Korngold, « Sélection des opératrices de machines comptables », L'année psychologique, tome 32, 1931, p. 131-149, p. 132"
+    },
+    "sources": [
+      {
+        "label": "J.-M. Lahy et S. Korngold, « Sélection des opératrices de machines comptables », L'année psychologique, tome 32, 1931, p. 131-149.",
+        "kind": "primary",
+        "reference": "p. 131-139 · 10.3406/psy.1931.5030",
+        "url": "https://www.persee.fr/doc/psy_0003-5033_1931_num_32_1_5030"
+      },
+      {
+        "label": "Georges Ribeill, « Les difficiles débuts de la psychotechnique dans les chemins de fer français durant les années trente », Bulletin de psychologie, tome XLVIII, n° 418, 1994, p. 115-125.",
+        "kind": "secondary-academic",
+        "reference": "p. 116-117 et p. 125",
+        "url": "https://www.persee.fr/doc/bupsy_0007-4403_1994_num_48_418_14388"
+      },
+      {
+        "label": "Marcel Turbiaux, « J.M. Lahy (1872-1943) : essai de bio-bibliographie », Bulletin de psychologie, tome XXXVI, n° 362, 1983, p. 969-985.",
+        "kind": "secondary-academic",
+        "reference": "p. 978 et p. 984-985",
+        "url": "https://www.persee.fr/doc/bupsy_0007-4403_1983_num_36_362_12531"
+      },
+      {
+        "label": "Annick Ohayon, « D'épouse dévouée à professeur de faculté, itinéraires de quelques femmes psychologues des années 1930 aux années 1960 », Revue d'histoire des sciences humaines, n° 35, 2019, p. 135-150.",
+        "kind": "secondary-academic",
+        "reference": "§ 11 à 15 · 10.4000/rhsh.4157",
+        "url": "https://journals.openedition.org/rhsh/4157"
+      }
+    ]
+  },
+  {
     "id": "points-de-levier",
     "slug": "points-de-levier",
     "title": "Points de levier",
@@ -2816,6 +2966,49 @@ export const generatedConcepts: Concept[] = [
         "kind": "primary",
         "reference": "Notice 5752058 · 10.2172/5752058",
         "url": "https://www.osti.gov/biblio/5752058"
+      }
+    ]
+  },
+  {
+    "id": "profils-divergents-a-score-egal",
+    "slug": "profils-divergents-a-score-egal",
+    "title": "Profils divergents à score égal",
+    "authorLabel": "Mme Henri Piéron",
+    "hookQuestion": "Deux enfants au même total sont-ils au même niveau ?",
+    "shortExplanation": "Rangés au même décile par un même total, des enfants présentent des profils opposés : chacun a sa prédominance, que le chiffre global ne montre pas.",
+    "authors": [],
+    "themes": [
+      "juger-quelqu-un-apte"
+    ],
+    "themeLabel": "Juger quelqu'un apte à un emploi",
+    "attributionNote": "L'article est signé « Par Mme Henri Piéron », sans aucun prénom de femme sur la pièce. L'autrice n'est pas Henri Piéron : c'est Mathilde Victorine Félicie Angenout, son épouse depuis 1902, psychologue. Les notices Crossref et Persée reversent pourtant le texte à Henri Piéron, la mention affichée pointant vers une notice d'autorité qui est la sienne.",
+    "quotation": {
+      "text": "Mais cette réussite globale n'est pas suffisante pour caractériser un enfant.",
+      "reference": "Mme Henri Piéron, « Un test d'intelligence pour l'orientation professionnelle. Son étalonnage », L'année psychologique, tome 27, 1926, p. 174-202, p. 186"
+    },
+    "sources": [
+      {
+        "label": "Mme Henri Piéron, « Un test d'intelligence pour l'orientation professionnelle. Son étalonnage », L'année psychologique, tome 27, 1926, p. 174-202.",
+        "kind": "primary",
+        "reference": "p. 186 et p. 199-201 · 10.3406/psy.1926.6315",
+        "url": "https://www.persee.fr/doc/psy_0003-5033_1926_num_27_1_6315"
+      },
+      {
+        "label": "Maurice Reuchlin et C. Bénassy-Chauffard, « Henri Piéron (1881-1964) », BINOP, Bulletin de l'Institut national d'étude du travail et d'orientation professionnelle, 20e année, n° 5, 1964, p. 291-299.",
+        "kind": "francophone-reception",
+        "reference": "p. 296-297",
+        "url": "https://www.persee.fr/doc/binop_0005-3147_1964_num_20_5_3873"
+      },
+      {
+        "label": "Maurice Reuchlin, « Mme H. Piéron (1877-1969) », BINOP, Bulletin de l'Institut national d'étude du travail et d'orientation professionnelle, 25e année, n° 4, 1969, p. 219-220.",
+        "kind": "francophone-reception",
+        "url": "https://www.persee.fr/doc/binop_0005-3147_1969_num_25_4_3846"
+      },
+      {
+        "label": "Annick Ohayon, « D'épouse dévouée à professeur de faculté, itinéraires de quelques femmes psychologues des années 1930 aux années 1960 », Revue d'histoire des sciences humaines, n° 35, 2019, p. 135-150.",
+        "kind": "secondary-academic",
+        "reference": "§ 3 à 7 · 10.4000/rhsh.4157",
+        "url": "https://journals.openedition.org/rhsh/4157"
       }
     ]
   },

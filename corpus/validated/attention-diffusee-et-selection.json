@@ -2,7 +2,7 @@
   "$schema": "../schema/carte.schema.json",
   "id": "attention-diffusee-et-selection",
   "slug": "attention-diffusee-et-selection",
-  "status": "CANDIDATE",
+  "status": "VALIDATED",
   "title": "L'attention diffusée",
   "themes": [
     "juger-quelqu-un-apte"
@@ -10,7 +10,6 @@
   "theme_labels": {
     "juger-quelqu-un-apte": "Juger quelqu'un apte à un emploi"
   },
-  "domain": "work-psychology",
   "authors": [
     {
       "name": "J.-M. Lahy",
@@ -60,8 +59,26 @@
     }
   ],
   "review": {
-    "verdict": "PENDING",
-    "notes": []
+    "reviewer": "contrôle aveugle",
+    "date": "2026-09-04",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "CITATION, vérifiée sur l'image de la page et non sur l'OCR. Dérivé image ouvert en curl : https://www.persee.fr/renderPage/psy_0003-5033_1924_num_25_1_6140/psy_0003-5033_1924_num_25_1_T1_0117_0000_1130.jpg (PNG 980x1664, gris). Titre courant lu sur l'image : « LAHY.— LA SÉLECTION PSYCHO-PHYSIOLOGIQUE DES MACHINISTES 117 » : c'est bien l'article annoncé, pas un rendu de cache étranger. La phrase entière y est : « Pour reconnaître ces dernières excitations sur le fond mobile des images de la rue, pour les classer, les juger, y répondre par des gestes adaptés, le machiniste utilise une forme particulière de l'attention, à laquelle nous avons donné le nom d'attention diffusée. » Le fragment affiché reprend mot pour mot la seconde moitié, la coupe initiale est signalée par […]. Seule différence : la source compose « attention diffusée » en italique, la fiche en romain. C'est un fait typographique, pas un écart de texte.",
+      "ATTRIBUTION, établie sur trois pièces distinctes. (a) Le texte lui-même, p. 117 : « à laquelle nous avons donné le nom d'attention diffusée » ; le titre de section p. 117 est « 2° Mesure de l'attention diffusée » et la sous-section « A. — L'attention diffusée ». (b) Crossref, https://api.crossref.org/works/10.3406/psy.1924.6140 : auteur unique J.-M. Lahy, sequence first, aucun coauteur. (c) Turbiaux 1983, p. 978, ouverte en image : Lahy « est l'auteur de nombreux tests : d'attention diffusée, dont la version originale date de 1910 et constitue le premier aboutissement de ses travaux sur les conducteurs de tramways ». Un tiers, hors du texte de Lahy, lui rapporte donc le test nommément.",
+      "ATTRIBUTION, contre-épreuve sur la cosignature. La note de la fiche affirme que Fessard et l'ingénieur Guyot sont crédités sans être cosignataires : vérifié en balayant les 67 transcriptions de pages de l'article (https://www.persee.fr/doc/page/psy_0003-5033_1924_num_25_1_6140/..._T1_<PPPP>_0000, OCR utilisé pour repérer des noms, jamais pour un verbatim). Fessard est nommé p. 135, p. 147 et p. 148 ; Guyot p. 149 et p. 155. Aucun des deux ne figure à la signature. Turbiaux p. 975 identifie Gaston Guyot comme ingénieur en chef que la S.T.C.R.P. avait adjoint à Lahy pour construire les appareils : la mention « l'ingénieur Guyot » est exacte. La bibliographie de Turbiaux, p. 983, porte l'article de 1924 sans la mention « (avec … ) » dont elle assortit ailleurs les textes coécrits de Lahy.",
+      "ATTRIBUTION, deux antériorités rencontrées, aucune ne déplace la paternité. Turbiaux date de 1910 la version originale du test (p. 978) : l'article de 1924 n'est donc pas la première apparition du dispositif, mais l'antériorité reste chez Lahy, et la fiche ne prétend nulle part que 1924 soit l'origine. Turbiaux, p. 974 note 28, signale que Lahy « avait été précédé » par Münsterberg, dont une étude de 1913 avait examiné des wattmen : cela vise la sélection des conducteurs par tests, pas le concept nommé d'attention diffusée, et le nom n'apparaît chez aucun de ces prédécesseurs dans ce que j'ai lu.",
+      "SOURCES 1. DOI 10.3406/psy.1924.6140 résolu sur Crossref : L'année psychologique, volume 25, published-print 1924, page 106-172, auteur J.-M. Lahy, titre « V. La sélection psycho-physiologique des machinistes de la Société des Transports en commun de la région parisienne ». La fiche affiche le même titre sans le numéro d'ordre « V. » et la même pagination. Locator p. 117-128 : la section sur l'attention diffusée commence bien p. 117 et court jusqu'aux deux planches de la p. 128, ouverte en image, qui portent en tête « ATTENTION DIFFUSÉE / EXCITATIONS VISUELLES » et « … VISUELLES ET AUDITIVES », S.T.C.R.P., déc. 1924. Locator p. 169-170 : ouvert en image, p. 169 donne les corrélations de rang de Spearman par test, p. 170 le passage sur les accidents.",
+      "SOURCES 2. Turbiaux : page Persée bupsy_0007-4403_1983_num_36_362_12531 ouverte, métadonnées citation_* lues dans le HTML : titre « J. M. Lahy (1872-1943) essai de bio-bibliographie », auteur Turbiaux Marcel, Bulletin de psychologie, volume 36 (soit XXXVI), issue 362, 1983, firstpage 969, lastpage 985. Concorde entièrement avec l'étiquette affichée. Les trois pages du locator ont été ouvertes en image et portent ce qu'elles annoncent : p. 974-975 la création du laboratoire de la S.T.C.R.P. en 1924 et Gaston Guyot, p. 978 la paternité des tests, p. 983 la notice bibliographique de l'article de 1924.",
+      "SOURCES 3. Passalacqua : PDF téléchargé depuis HAL (hal-02415449, 21 pages, 448 ko) et texte extrait. Les en-têtes de pages paires portent « C. de RECITS 10, 2014 » et les impaires « Les autobus parisiens et le développement pionnier de la psychotechnique, 89-107 » : numéro 10, année 2014 et pagination 89-107 sont confirmés sur la pièce même. Locator p. 98-101 : la description du test d'attention diffusée, combinant lumières, klaxons et projection cinématographique de scènes de rue, est page 99. Locator p. 105 : la pérennité du dispositif à la S.T.C.R.P., les visites psychotechniques périodiques et la critique syndicale. Les deux localisations tiennent.",
+      "PROSE. Le résumé se lit presque mot pour mot p. 170 : « l'attention diffusée, c'est-à-dire celle qui porte sur plusieurs objets à la fois, manque presque toujours au machiniste qui se rend fautif d'un accident grave ». Le volet « se mesure et se classe en rangs » est porté par le titre de section p. 117, par les planches de la p. 128 dont les abscisses sont graduées en rangs, déciles et quartiles, par les pages 159, 162 et 165 où deux valeurs d'attention diffusée entrent dans le classement général, et par la corrélation de rang p. 169. L'accroche est portée par la fin de la p. 170 : « Cette infériorité psychologique ne pouvait pas apparaître à ses inspecteurs. Il a fallu l'accident pour la déceler », doublée p. 170 par « nos informateurs ne font pas suffisamment intervenir l'aptitude à l'attention diffusée ». Rendre les inspecteurs et les informateurs professionnels par « sa hiérarchie » reste dans ce que le texte porte. Rien dans l'accroche ni dans le résumé n'excède les sources, et rien n'y est rétracté en deçà.",
+      "Ce que je n'ai pas pu atteindre. J'ai voulu chercher un emploi de « attention diffusée » antérieur à Lahy dans la presse et les périodiques numérisés : l'API SRU de Gallica m'a refusé l'accès deux fois, sur https://gallica.bnf.fr/SRU?operation=searchRetrieve&query=gallica%20all%20%22attention%20diffusee%22 puis sur /services/engine/search/sru, avec un HTTP 403 « Access Denied » et un corps de 34 octets. Je ne sais donc rien de ce que Gallica contiendrait : c'est un refus d'accès, pas un silence de la littérature. Le docAsPDF de Persée n'a pas été tenté, il est derrière un défi anti-robot. Le rendu image de Persée a par ailleurs coupé la connexion à cinq reprises (ws_closed_mid_exchange) ; chaque page a été rejouée jusqu'à un HTTP 200 et son titre courant vérifié.",
+      "Hors des quatre questions, pour information et sans conséquence sur le verdict : les longueurs d'affichage tiennent (titre 20, accroche 69, résumé 161, citation 121 caractères) et aucun champ projeté ne porte de tiret cadratin."
+    ]
   },
   "notes": [
     "Étendue de la lecture primaire, qui remplace la déclaration de lacune du 26 août : l'article a été ouvert en entier, ses 67 pages de transcription récupérées et lues une à une, et quinze pages relues sur le fac-similé image parce qu'elles portent un chiffre, une citation ou un crédit (106, 117, 118, 119, 122, 125, 127, 135, 148, 161, 168, 169, 170, 171, 172). La source primaire passe donc de partial à full-text.",
