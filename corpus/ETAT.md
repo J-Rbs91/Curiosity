@@ -1,4 +1,4 @@
-# État du corpus — 4 septembre 2026
+# État du corpus — 5 septembre 2026
 
 Écrit sur le disque parce qu'une session a déjà été coupée en cours de route : ce fichier
 existe pour qu'une reprise reparte des fichiers, et non de la mémoire de quelqu'un.
@@ -6,15 +6,17 @@ existe pour qu'une reprise reparte des fichiers, et non de la mémoire de quelqu
 Ce fichier dit ce que le corpus **est**. Ce qui lui **manque**, et par quel bout le prendre,
 est dans [`corpus/RESTE-A-FAIRE.md`](RESTE-A-FAIRE.md).
 
-`npm run corpus:validate` : **116 enregistrements, 113 validés, 0 erreur, 87 avertissements.**
-`npm run corpus:deepen` : **113 approfondissements pour 113 cartes validées**, 166 955 mots,
-1 477 en moyenne. Fin de sortie : **rien**. Il n'y a plus aucune carte validée sans
+`npm run corpus:validate` : **125 enregistrements, 121 validés, 0 erreur, 87 avertissements.**
+`npm run corpus:deepen` : **121 approfondissements pour 121 cartes validées**, 179 676 mots,
+1 485 en moyenne. Fin de sortie : **rien**. Il n'y a plus aucune carte validée sans
 approfondissement, et **les onze domaines sont entièrement servis**. L'écart entre ce qui est
 validé et ce qui est servi, ouvert le 23 août et remonté à trente-quatre cartes le 28, a été
-refermé au passage 09 le 1er septembre ; les passages 10, 11 et 12 l'ont rouvert de quatre,
-quatre et cinq cartes et refermé la même nuit chaque fois, la phase 3 se terminant par les
+refermé au passage 09 le 1er septembre ; les passages 10 à 13 l'ont rouvert de quatre, quatre,
+cinq et huit cartes et refermé la même nuit chaque fois, la phase 3 se terminant par les
 approfondissements des cartes qu'elle crée.
 `npm test` : **482 tests, 0 échec.** `npm run lint` et `npm run corpus:build` : sans erreur.
+La projection a été vérifiée **idempotente** sur deux exécutions successives, et
+`git diff --exit-code src/content/generated/` est propre après reprojection.
 
 **Le garde de la CI couvre désormais les deux fichiers du répertoire projeté**, et c'est la
 correction du 2 septembre. Les workflows `ci.yml` et `pages.yml` lançaient `npm run corpus:build`
@@ -105,6 +107,193 @@ sur les limites de la croissance, scan intégral qui répond.
 réel » l'étaient depuis le 23 août, « Comprendre la production et les systèmes » depuis le 25, et
 « Comprendre les humains et les organisations » l'est depuis le 28 : elle était la dernière
 incomplète, avec trois domaines fermés sur quatre au 25 août.
+
+# 0. Systems Thinking enrichi — lot du 5 septembre 2026 (passage 13), publié
+
+**Huit cartes, six `PASS` au premier tour, deux au second. Le domaine passe de 7 à 15 cartes
+validées et de 3 à 5 thèmes ; le corpus de 113 à 121.** C'est le plafond de volume du prompt,
+atteint exactement, et deux concepts entièrement instruits ont dû être laissés hors du lot.
+
+**Ce lot répare l'aveu que la cartographie d'ouverture faisait sur elle-même.** Le 22 août, elle
+écrivait que six des neuf littératures de son périmètre n'avaient reçu aucune requête et que deux
+de ses trois textes ouverts venaient d'un nom écrit de mémoire : « c'est le contraire de ce que le
+périmètre demande, et c'est la limite principale de ce lot ». Le balayage par littératures a été
+fait, et **les huit cartes en viennent, aucune ne creusant une littérature déjà ouverte.**
+
+Les huit, par thème :
+
+| thème | cartes | état |
+|---|---|---|
+| `croissance-et-limites` (**nouveau**) | `depassement-et-effondrement`, `modele-mondial-et-modes-de-comportement`, `etat-d-equilibre-global`, `echec-a-apprendre-malgre-l-experience` | 4 |
+| `ce-qui-s-accumule` (**nouveau**) | `stocks-et-flux`, `ligne-d-approvisionnement-ignoree` | 2 |
+| `dire-systeme` (déjà déclaré) | `systemographie`, `modele-mental-et-modele-de-simulation` | 2 |
+
+**Les deux thèmes nouveaux ne sont déclarés que parce que quatre et deux cartes les portent.**
+La liste des thèmes sans fiche validée reste à deux, `autorite-domination` et
+`apprentissage-organisationnel`, tous deux en sociologie des organisations.
+
+## Deux voies d'accès nouvelles, constatées sur pièce
+
+**La mise en ligne d'un ouvrage par son auteur.** *La théorie du système général* de Le Moigne est
+sur Internet Archive avec `access-restricted-item` **absent**, déposée par l'auteur après
+épuisement de la quatrième édition PUF, sous licence Creative Commons `by-nc-nd/2.0/fr`, et la note
+liminaire de la collection porte l'autorisation en toutes lettres : « ces ouvrages sont et seront,
+avec l'accord de leurs auteurs, libres de tous droits de consultation et duplication pour l'usage
+privé du copiste ». C'est le candidat le plus solide du passage.
+
+**Les extraits autorisés d'UNESCO-EOLSS**, plateforme **jamais mentionnée par le périmètre ni par
+`RESTE-A-FAIRE.md`**, découverte en cours de balayage. Elle sert des extraits d'articles fermés
+ailleurs, chacun portant sa propre mention « Reproduced by permission ». **C'est une voie
+comparable à `dticarchive` pour `decision-science`, et elle est portée au fichier des reprises.**
+
+## Ce que valent les extraits autorisés, et la limite qu'ils ont
+
+**C'est le point de méthode le plus important du lot, et il a été payé deux fois.** Les deux
+extraits EOLSS **annoncent leur résultat dans leur résumé et s'interrompent avant de le
+démontrer**, sur un pavé « TO ACCESS ALL THE 30 PAGES OF THIS CHAPTER » : neuf pages sur trente
+pour Sterman, dix sur trente pour Paich et Sterman.
+
+Les deux lecteurs primaires ont fait, chacun de son côté et sans se concerter, **le geste que le §3
+du workflow appelle combler le trou plutôt que changer l'étiquette** : ils sont allés ouvrir le
+texte ailleurs, et ils l'ont trouvé sur le dépôt DSpace du MIT, servi sans authentification.
+Document de travail Sloan 1933-87 / D-3919 de septembre 1987 pour Sterman, 42 pages ; document de
+travail Sloan 3441-92-BPS de juillet 1992 pour Paich et Sterman. **Les verbatim s'y localisent, et
+non sur l'extrait.**
+
+**Deux constats en sortent, et ils resserviront.**
+
+- **L'extrait n'est pas le texte antérieur.** Même paragraphe, deux états qui diffèrent mot pour
+  mot : `the larger the quantity on order must be` en 1987 contre `the larger the supply line must
+  be` dans l'extrait. Aucun verbatim ne se déplace de l'un à l'autre.
+- **Une mention de permission peut nommer deux sources.** Celle de l'extrait Sterman porte une
+  seconde ligne, découverte par le lecteur et absente du brief, qui nomme aussi *Business Dynamics*
+  de 2000. **Le chapitre est un composite autorisé de deux textes, et rien n'y dit quelle phrase
+  vient de laquelle.** Aucun verbatim ne peut s'y localiser, et il faut lire la mention en entier
+  avant de s'y fier.
+
+## Ce que le contrôle a attrapé, et il ne l'a pas attrapé depuis le brief
+
+Deux renvois sur huit, et **aucun des deux motifs n'était visible sans ouvrir les textes**.
+
+**`depassement-et-effondrement`, attribution `douteuse`.** La note mettait au point que le Club de
+Rome a commandité sans écrire, ce qui est exact, mais **le vrai revendicant est Jay W. Forrester et
+le livre le dit lui-même en note de sa page 21** : « The prototype model on which we have based our
+work was designed by Professor Jay W. Forrester ». Ce que la note disait était vrai ; ce qu'elle
+omettait la faussait. **Le contrôleur du second tour a vérifié le partage dans les deux sens**, en
+ouvrant *World Dynamics* dans sa deuxième édition faute d'accès à celle de 1971 : l'index de
+Forrester ne porte ni « Overshoot », ni « Collapse », ni « Behavior modes », quand le livre de 1972
+intitule une section « The overshoot mode ». Le « nommé, diagrammé et rendu public » laissé aux
+quatre auteurs résiste, et la note ne leur attribue ni trop ni trop peu.
+
+**`modele-mental-et-modele-de-simulation`, prose `deborde`.** Le résumé faisait révéler à la
+simulation **le comportement du monde**. Le contrôleur a relevé **les trois seules occurrences du
+verbe dans les dix-sept pages** : les deux emplois positifs portent sur le comportement qu'implique
+la structure qu'on a donnée au modèle, le troisième est négatif, et ce que Forrester laisse remonter
+vers le réel il le confie à un autre verbe, « begins to tell something about real life ».
+**L'écart se jouait sur un mot.**
+
+**Et le second contrôle a corrigé le premier.** Le contrôleur du tour 1 affirmait que Forrester
+porte « complexe » des deux côtés de sa restriction ; celui du tour 2 a vérifié qu'il ne le fait
+pas, la concession portant sur « the pieces of a system » et le refus sur « the known pieces of a
+complex system ». **Un contrôle aveugle se trompe aussi, et c'est le contrôle suivant qui l'attrape.**
+
+## Un détail relevé trois fois, et l'arbitrage qu'il a coûté
+
+**Trois contrôleurs indépendants** ont noté, chacun **hors de ses quatre questions**, que le libellé
+de la source primaire des cartes Meadows créditait la numérisation du scan de 1972 au Donella
+Meadows Project, quand la page qui héberge crédite un partenariat entre **la bibliothèque du
+Dartmouth College**, Dennis Meadows et le Sustainability Institute, Dartmouth déclarant la licence
+Creative Commons. Aucun n'en a fait un motif de renvoi, et ils ont eu raison : la référence résout
+exactement. **Relevé trois fois par trois lecteurs qui ne se sont pas parlé, le crédit approximatif
+devient une correction due**, et elle a été faite à la réception.
+
+**Elle a coûté quelque chose, et c'est une réserve conservée.** Le libellé combiné faisait 271
+caractères pour un plafond de 230 : **la mention « cinquième tirage de la première édition » a été
+retirée du champ affiché** pour faire tenir le crédit exact, et les trois libellés sont désormais à
+230 sur 230. Le fait reste dans les `notes` et dans les verdicts. **On peut soutenir l'inverse** :
+le tirage permet de vérifier une citation, le nom du numériseur non. **L'arbitrage est écrit ici
+pour pouvoir être rouvert, et un libellé à 230 sur 230 n'a plus aucune marge.**
+
+Deux corrections de la même famille : le lieu d'édition de *Business Dynamics*, **Boston au MARC de
+la Bibliothèque du Congrès** et non New York comme le disait la mention de permission d'EOLSS ; et
+le prénom de **Linda** Booth Sweeney, abrégé en initiale.
+
+## Les réserves conservées
+
+- **Bertalanffy reste cité de seconde main**, à travers Roig qui le lit et le traduit. L'article de
+  1972 est fermé sur Crossref, Unpaywall et OpenAlex ; les cinq exemplaires de *General System
+  Theory* sur Internet Archive restent en prêt restreint. **Boulding 1956 est fermé lui aussi.**
+  C'est l'angle mort le plus visible du domaine, et il n'a pas bougé.
+- **`ce-qui-s-accumule` ne porte pas les délais.** La cartographie du 22 août appelait cette
+  littérature « stocks, flux et délais » ; **le mot *delay* ne figure pas une fois dans les
+  dix-sept pages de Forrester**, et le seul énoncé reliant structure et durée y explique
+  l'oscillation par le nombre de niveaux, pas par un retard. **Le manque est comblé aux deux tiers**,
+  et la description du thème ne prétend pas l'inverse. Le tiers restant est dans *Principles of
+  Systems* (1968) ou *Industrial Dynamics* (1961), ni l'un ni l'autre ouvert.
+- **`stocks-et-flux` tient d'un cheveu du bon côté de la frontière avec la cybernétique.** La
+  figure de la page 7 *est* un régulateur commandé par l'écart et Forrester l'écrit. **La carte est
+  bâtie sur deux phrases seulement**, et ni le but, ni la comparaison à un but, ni la boucle de
+  rétroaction n'apparaissent nulle part sur elle ; les phrases écartées sont nommées dans ses
+  `notes` avec renvoi aux deux cartes de cybernétique qui les attendent. **Une réécriture qui
+  relâcherait cette ligne ferait basculer la carte chez le voisin.**
+- **La couche francophone reste mince et repose sur un seul texte.** Le Moigne est le seul auteur
+  francophone ouvert de ce lot, et c'est une source de seconde génération (1977), pas un des deux
+  textes fondateurs anglophones. Durand et Morin n'ont aucun texte primaire identifié en accès
+  ouvert.
+- **Le rendu français de *supply line* n'est appuyé sur aucun usage attesté.** Giard et Sali 2012,
+  lu en entier, fixe « effet coup de fouet » et « jeu de la bière » mais **ne cite Sterman nulle
+  part** sur une cinquantaine de références. La traduction est déclarée de la main du lecteur.
+
+## Deux concepts lus et instruits, écartés du lot faute de place
+
+Le plafond de huit était atteint. **Leurs dossiers de lecture sont au dépôt, et ce sont les deux
+reprises les moins chères du prochain passage sur ce domaine.**
+
+- **`referentiel-tef`** (Le Moigne, le référentiel Temps-Espace-Forme). Écarté sur le constat de son
+  propre lecteur : aucun tiers consulté ne le reprend, décompte fait sur les textes intégraux de
+  Pesqueux et de Schmitt, et il l'a rangé dans `dire-systeme` « comme meilleur choix disponible et
+  non comme choix juste ». **Un concept dont le lecteur dit que son thème d'accueil n'est pas le
+  sien attend le thème qui lui convient**, ou un second texte qui le porte.
+- **`croissance-exponentielle-et-doublement`** (Meadows et al.). Le verbatim est sûr, mais **ni la
+  croissance exponentielle, ni le temps de doublement, ni la règle des 70 ne sont d'eux**, et la
+  devinette du nénuphar leur a été donnée par un tiers, nommé en note de la page 29. Une carte qui
+  leur attribuerait la notion serait fausse.
+
+## Trois faits de méthode relevés en passant, et ils dépassent ce lot
+
+- **La notice d'un hébergeur peut être fausse sur deux points à la fois, et un miroir n'est pas un
+  témoin.** L'item Internet Archive qui diffuse Le Moigne le date de 1977 et l'annonce comme « la
+  5eme édition révisée 2006 » : c'est la **quatrième édition de 1994**, établi sur la page de titre,
+  le propos liminaire et le sommaire. **Et son fichier est identique octet pour octet à l'autre
+  miroir**, hachage SHA-256 vérifié. **Deux mises à disposition ne font pas deux attestations si
+  c'est le même fichier**, et cela se vérifie en une commande.
+- **La pagination imprimée peut avoir tort contre la notice.** Le titre courant de tout le numéro
+  d'*Économie appliquée* imprime « tome XXXVII » quand sa propre table des auteurs porte
+  « Tome XXXVIII ». La règle « la notice n'est pas la page de titre » **ne se retourne pas** en
+  « l'imprimé fait toujours foi » : chaque cas se tranche sur pièce.
+- **La correspondance folio/feuillet d'un scan n'est pas constante.** Dans le scan de 1972, folio + 2
+  jusqu'à la page 102, folio + 1 ensuite. **Une citation introuvable au feuillet homonyme n'est pas
+  une citation absente**, et un contrôleur a vérifié folio par folio plutôt que de conclure.
+
+## Les angles morts qui commandent le prochain passage sur ce domaine
+
+Ils sont écrits en détail dans la section du 5 septembre de
+[`corpus/map/systems-thinking.scouting.md`](map/systems-thinking.scouting.md). Les plus lourds :
+
+- **Bertalanffy et Boulding**, les deux textes fondateurs, fermés partout où la nuit a vérifié.
+  Une republication de Boulding dans *E:CO* est signalée mais son domaine n'a jamais répondu.
+- **Le tiers manquant de `ce-qui-s-accumule`, les délais**, à chercher dans *Principles of Systems*
+  ou *Industrial Dynamics*.
+- **`modélisation et simulation de politiques`** reste la littérature la moins couverte : le volume
+  EOLSS compte dix chapitres sur la méthode qui n'ont jamais été ouverts, et quatre chapitres du
+  même volume sont nommés sans avoir été vus.
+- **OpenEdition Books n'a toujours reçu aucune requête par son propre moteur** pour ce domaine, et
+  **theses.fr non plus**. Le web général n'a rendu aucun point d'entrée exploitable : il faut
+  identifier d'abord quel ouvrage avant de parcourir des pages de collection.
+- **Durand et Morin restent sans texte primaire identifié**, à chercher probablement du côté d'une
+  thèse ou d'un cours qui les citerait longuement avec autorisation.
+
+---
 
 # 0. Psychologie du travail enrichie — lot du 4 septembre 2026 (passage 12), publié
 
