@@ -1,0 +1,56 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "ligne-d-approvisionnement-ignoree",
+  "lead": [
+    "Vous commandez un plat au restaurant. Il ne vient pas. Le serveur repasse, vous commandez à nouveau ; il repasse encore, vous commandez une troisième fois, puisque rien n’est arrivé. La règle est simple, elle regarde la table et corrige ce qui manque, et elle conduit droit à l’absurde : « Using this rule one would order another meal each time the waiter passed by… Soon your table would be piled high with redundant dinners. » C’est John D. Sterman qui pose cette scène, à la page 9 d’une étude écrite en 1987, avant d’en venir aux entrepôts.",
+    "Un magasin, un atelier, une usine sont dans la même position, à ceci près que le délai n’est pas de quelques minutes mais de plusieurs semaines. Entre la commande passée et la marchandise reçue, il existe un intervalle pendant lequel le stock reste bas alors même que ce qu’il faut pour le remplir existe déjà, quelque part, en chemin. Toute la question tient à savoir si celui qui décide compte ce qui roule, ou seulement ce qu’il voit sur ses étagères."
+  ],
+  "sections": [
+    {
+      "title": "Ce qui est en route, et où cela se trouve",
+      "paragraphs": [
+        "Sterman donne à cette quantité en chemin un nom et une composition précise. Dans son expérience, elle est « the sum of orders in the mail delays, the backlog of the subject’s supplier (if any), and the beer in the shipping delays » (p. 16) : les commandes encore en route vers le fournisseur, celles qu’il a reçues et n’a pas encore servies, et la marchandise expédiée mais pas encore livrée. Trois endroits, dont aucun n’est chez soi.",
+        "C’est ce qui rend l’omission facile. Le stock, lui, se voit : il est sur les étagères, un inventaire le donne. Ce qui est en route ne se trouve nulle part en un seul morceau, puisqu’il est réparti entre le courrier, le carnet du fournisseur et les camions. Une règle de décision qui compare le stock à sa cible et commande la différence reste parfaitement défendable, à ceci près qu’elle recommence le même calcul à chaque période, sans rien retrancher de ce qu’elle a demandé la fois d’avant.",
+        "Un seul manque se comble alors plusieurs fois. Puis tout arrive ensemble, le stock déborde, les commandes s’arrêtent net, et le fournisseur reçoit à son tour une demande qui varie plus fort que celle à laquelle son client faisait face."
+      ]
+    },
+    {
+      "title": "Un plateau de jeu, quarante-quatre joueurs",
+      "paragraphs": [
+        "L’expérience se déroule sur un plateau. Sterman fait jouer le jeu de la bière, une simulation de rôles reproduisant un système industriel de production et de distribution, et il prend soin d’en situer l’origine ailleurs que chez lui : mis au point au MIT pour initier des étudiants en gestion à la dynamique économique et à la simulation, l’exercice est déjà ancien quand il écrit. « In use for nearly three decades, the game has been played all over the world » (p. 10).",
+        "Quarante-quatre joueurs y tiennent chacun un maillon de la chaîne et passent, période après période, une commande à leur fournisseur. Ce que Sterman en tire n’est pas une anecdote sur des erreurs de débutants. Il écrit une règle de décision générale, puis cherche pour chaque joueur les valeurs de paramètres qui reproduisent au plus près les commandes réellement passées (p. 17 à 20). Il ne demande donc pas aux joueurs pourquoi ils ont commandé : il ajuste une formule sur leur comportement, et lit ensuite ce que cette formule dit d’eux.",
+        "Le résultat d’ensemble tient en une phrase : « Inspection of the results shows that most subjects failed to account adequately for the supply line » (p. 20). Non pas que les joueurs soient mauvais, mais que la plupart tiennent trop peu compte de ce qu’ils ont déjà commandé."
+      ]
+    },
+    {
+      "title": "Un nombre entre zéro et un",
+      "paragraphs": [
+        "Le paramètre qui porte cette conclusion, que Sterman note β, mesure la part de ce qui est en route dont le joueur tient compte au moment de commander. Il en donne les deux bouts : « If β = 1, the subjects fully recognize the supply line and do not double order. If β = 0, orders placed are forgotten until they arrive » (p. 17). Entre les deux, tous les degrés existent, et c’est là que la question devient intéressante : ignorer n’est pas ici un oui ou un non, c’est une fraction.",
+        "Cette fraction vaut 0,34 en moyenne. Un joueur ordinaire ne défalque donc qu’un tiers environ de ce qu’il a déjà demandé, et recommande les deux autres tiers. Ils sont cinq sur quarante-quatre à faire mieux que les deux tiers : « only five subjects (11%) accounted for more than two-thirds of the supply line » (p. 21). La valeur la meilleure dans les simulations, elle, est de 1, c’est-à-dire le compte entier de ce qui est en chemin.",
+        "On voit alors pourquoi une meilleure prévision ne réglerait rien. Ce paramètre ne porte pas sur ce que le marché va demander, mais sur ce que le joueur a lui-même déjà envoyé. Se tromper moins sur l’avenir laisse entière une erreur qui porte sur le présent."
+      ]
+    },
+    {
+      "title": "Grizzly et Suds, deux issues du même choc",
+      "paragraphs": [
+        "Deux équipes montrent que la même règle, avec deux valeurs différentes, produit deux mondes. L’usine Grizzly joue avec un paramètre estimé à zéro : « By ignoring the supply line the factory’s ordering policy is highly destabilizing » (p. 21), et son facteur d’amplification atteint 290 %. Ce qu’elle renvoie vers l’amont varie près de trois fois plus fort que ce qu’elle a reçu.",
+        "L’usine Suds, elle, compte ce qui est en route en entier, et même un peu plus : son paramètre vaut 1,05. Elle subit pourtant un choc plus fort que Grizzly et le transmet plus faible. Ses commandes montent puis redescendent avant que le retard accumulé n’atteigne son maximum, parce que le joueur voit que « sufficient orders to correct the problem are already in the pipeline » (p. 22). Le facteur tombe à 85 % : « the amplification factor is 85%, meaning the parameters which characterize the factory attenuate demand shocks rather than exacerbating them ».",
+        "Ce seul cas suffit à interdire d’en faire une fatalité. L’amplification n’est pas inscrite dans la longueur des délais ni dans la forme de la chaîne : elle dépend d’un nombre, et ce nombre décrit une manière de décider, non une nature humaine."
+      ]
+    },
+    {
+      "title": "Non pas l’oubli, mais l’agrégation",
+      "paragraphs": [
+        "Une lecture court sur ce genre de résultat, et il faut l’écarter parce que Sterman l’écarte lui-même : les gestionnaires oublieraient ce qu’ils ont commandé. Il répond, page 25 : « It is not credible that individual managers forget that they have goods on order. The problem in the real economy is one of aggregation. » L’oubli pur n’est chez lui que la borne basse du paramètre, le cas où β vaut zéro, et non ce qu’il observe chez les décideurs.",
+        "La prudence va plus loin, et elle porte sur son propre résultat : « Verification of the supply line hypothesis requires further empirical work. » Ce qui est acquis à ce stade tient à quarante-quatre joueurs autour d’un plateau, et à une ressemblance de forme entre les oscillations du jeu et celles de la production industrielle américaine de 1947 à 1987. C’est peu pour une loi.",
+        "C’est beaucoup, en revanche, pour une hypothèse. Là où l’on aurait parlé d’imprévoyance ou de panique, il y a désormais une grandeur, une manière de l’estimer sur des décisions réelles plutôt que sur des déclarations, et deux cas opposés qui montrent ce qu’elle change. Le déséquilibre cesse d’être un trait de caractère pour devenir un terme absent d’un calcul, ce qui n’est pas la même chose : un trait de caractère se déplore, un terme absent s’ajoute."
+      ]
+    }
+  ],
+  "limits": [
+    "Le même travail a paru en mars 1989 dans Management Science, sous un titre presque identique. Les deux états du texte ne coïncident pas mot pour mot : là où celui de 1987 écrit « the larger the quantity on order must be », une reprise ultérieure écrit « the larger the supply line must be ». Ce que l’article de 1989 resserre, reformule ou ajoute se lit dans ses pages 321 à 339.",
+    "Sterman est aussi revenu sur la question dans Business Dynamics, son livre de 2000, mille huit pages où le stock et son délai occupent une tout autre place que dans une étude de quarante-deux feuillets. L’extrait de neuf pages tiré de son chapitre d’encyclopédie mêle ce livre et l’article de 1989 sans dire quelle phrase vient d’où ; les trente pages entières du chapitre sont payantes.",
+    "« Ligne d’approvisionnement » est un rendu littéral de supply line, et aucun usage francophone attesté ne l’appuie. La revue de littérature de Vincent Giard et Mustapha Sali, parue en 2012, qui fixe en français le vocabulaire du phénomène, effet coup de fouet et jeu de la bière, ne cite Sterman dans aucune de ses quelque cinquante références. Le terme français adossé à un usage établi reste à trouver.",
+    "Sterman ne dit pas non plus qui a construit le jeu de la bière, seulement qu’il vient du MIT et qu’il circulait depuis près de trente ans. Une histoire de cet exercice a paru en 2024 dans System Dynamics Review, sous la signature d’Ignacio J. Martinez-Moyano : les étapes de sa fabrication, depuis les travaux de Jay Forrester chez General Electric, s’y suivent une à une."
+  ]
+}
