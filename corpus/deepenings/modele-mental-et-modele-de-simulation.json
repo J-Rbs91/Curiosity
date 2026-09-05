@@ -1,0 +1,63 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "modele-mental-et-modele-de-simulation",
+  "lead": [
+    "Demandez à quelqu’un qui travaille depuis dix ans dans le même service qui prévient qui lorsqu’une livraison prend du retard, quelle information arrive sur quel bureau, ce que chaque équipe cherche à obtenir de son côté. Sa réponse sera fine, nuancée, souvent plus juste qu’aucune procédure écrite. Demandez-lui maintenant ce qu’il adviendra des délais si l’on double la taille du stock d’avance : la réponse viendra encore, avec la même assurance tranquille. Celle-là, elle, a de bonnes chances d’être fausse.",
+    "L’écart entre ces deux réponses est le sujet de Jay W. Forrester, l’ingénieur du Massachusetts Institute of Technology qui a fondé la dynamique des systèmes. Connaître les pièces d’un ensemble et savoir ce que cet ensemble va faire sont pour lui deux opérations distinctes. La première nous réussit remarquablement bien. La seconde ne s’obtient pas en réfléchissant plus fort à la première."
+  ],
+  "sections": [
+    {
+      "title": "Ce que la tête détient d’un système",
+      "paragraphs": [
+        "Forrester appelle modèle mental l’image qu’une personne porte en elle de l’ensemble où elle agit : son entreprise, sa ville, sa famille. Le mot n’a rien de dépréciatif sous sa plume, et son premier geste est de reconnaître ce que cette image contient : « Mental models are rich and often sufficiently accurate about the pieces of a system ». Riches, et souvent assez exacts sur les pièces d’un système.",
+        "Il dit lesquelles, et l’énumération vaut d’être lue lentement : « what information is available, who is connected to whom, what are different people trying to achieve ». Quelle information est disponible, qui est relié à qui, ce que chacun cherche à obtenir. Ce sont là les données les plus difficiles à rassembler autrement : aucun organigramme ne les porte, aucune base ne les enregistre, et elles vieillissent le jour même où on les écrit.",
+        "La raison de fond est qu’il n’existe pas d’autre endroit où elles soient. Aucune tête ne contient une famille, une ville, une école, un pays ni une entreprise, écrit Forrester : ce que nous manipulons quand nous parlons de notre organisation est déjà une représentation, et non la chose. Sa figure de la page 10 range d’ailleurs le stock d’information que le modèle mental détient parmi ses forces majeures, non parmi ses faiblesses."
+      ]
+    },
+    {
+      "title": "Retenir n’est pas déduire",
+      "paragraphs": [
+        "Le refus de Forrester porte sur un verbe précis, et sur lui seul : déduire. Ce que nous savons des pièces ne nous dit pas ce que leur assemblage va faire. Entre l’inventaire exact d’un ensemble et le comportement qui en résulte, il y a un calcul, et ce calcul, la tête ne le mène pas de façon fiable.",
+        "Il le montre par une échelle plutôt que par un principe. Une personne comprend parfaitement ce qui se passe quand elle remplit un verre d’eau, « A person understands filling a water glass » : elle voit le niveau monter, elle ferme le robinet au bon moment. Mais dès qu’on passe à un système « only five times as complicated », l’intuition décroche. Il ne faut pas un monde pour la mettre en défaut, il suffit de cinq fois un verre d’eau.",
+        "L’asymétrie de sa phrase mérite d’être remarquée, parce qu’elle est facile à durcir. Ce qu’il accorde, il l’accorde des pièces d’un système, sans autre qualificatif. Ce qu’il refuse, il le refuse sur les éléments connus d’un système complexe. Et son mot est unreliable : on ne peut pas s’y fier, ce qui ne revient pas à dire que la chose serait impossible. La thèse n’est donc ni que l’intuition est nulle, ni qu’elle vaudrait partout : elle tient pour le verre d’eau et lâche pour ce qui boucle."
+      ]
+    },
+    {
+      "title": "Le comportement qu’implique une structure",
+      "paragraphs": [
+        "À ce calcul que la tête ne fait pas, Forrester oppose la simulation sur ordinateur, et il est très précis sur ce qu’elle apporte : « a computer simulation can, without doubt, reveal the behavior implicit in the structure from which it is constructed ». Elle peut, à coup sûr, révéler le comportement implicite dans la structure à partir de laquelle on l’a construite. Une page plus tôt, la même idée : « Only by using computer simulation can the implied behavior be revealed. »",
+        "Chaque mot de cette phrase compte, et le plus important en est la fin. Ce que la machine révèle n’est pas le comportement du monde : c’est le comportement qu’implique la structure qu’on lui a donnée. Si les hypothèses sont fausses, la simulation en déduira fidèlement des conséquences fausses. Elle n’est pas un oracle sur le réel, elle est un exécutant intraitable de ce qu’on a écrit.",
+        "Forrester ne franchit pas ce pas à la légère. Quand un modèle produit un comportement surprenant, la première chose à faire est d’y chercher une erreur de modèle ; ce n’est qu’ensuite, « as a model becomes better », qu’il accorde à la surprise une autre valeur : « surprising behavior often does not reveal model errors but instead begins to tell something about real life that was not previously realized ». Le passage vers le réel existe donc, mais il vient au bout d’une séquence, et il change de verbe : le modèle ne révèle pas le monde, il commence à en dire quelque chose."
+      ]
+    },
+    {
+      "title": "Deux représentations, dont aucune n’est le système",
+      "paragraphs": [
+        "L’opposition que Forrester construit n’est pas celle du modèle et de la réalité. Le modèle mental est une représentation, le modèle de simulation en est une autre, et les deux sont de nous. Ce qu’il institue entre elles est une répartition du travail : la tête détient l’information, la machine en tire le comportement, et la question de savoir si l’ensemble ressemble au monde reste entière, qui se traite ailleurs.",
+        "Cela rend trompeuse l’idée d’un calcul qui viendrait remplacer l’intuition. Un modèle de simulation ne se construit pas à partir de rien : ce qu’on y met vient d’abord de ce que des gens savent de leur système. Forrester va jusqu’à suggérer, page 12, que l’information sur le monde se trouve principalement dans la tête de ceux qui y travaillent. Il l’avance sans mesure ni référence à l’appui, et c’est bien une suggestion, non un résultat."
+      ]
+    },
+    {
+      "title": "Les quatre offices d’un modèle formel",
+      "paragraphs": [
+        "La figure de la page 10 énumère ce que Forrester attend d’un modèle de simulation, et l’ordre de la liste en dit long : rendre explicites les modèles mentaux, en découvrir les incohérences, déterminer les implications futures, améliorer les modèles mentaux.",
+        "Le premier et le dernier point se répondent. Le modèle formel part du modèle mental et y revient : il n’est pas là pour le congédier, mais pour l’expliciter, l’éprouver, le corriger. Entre les deux se tiennent les offices que la tête n’assure pas seule : voir que deux choses qu’on croit ensemble ne peuvent pas être vraies en même temps, et suivre jusqu’au bout ce que la structure engendre dans le temps.",
+        "Forrester écrit à la première personne, et le bénéfice qu’il rapporte est de cet ordre : « I have usually had such new insights from models ». Ce qu’il en tire est un aperçu nouveau, quelque chose qu’il ne voyait pas avant, et non une prédiction qu’il aurait vérifiée."
+      ]
+    },
+    {
+      "title": "Une position d’auteur, et une mesure",
+      "paragraphs": [
+        "Le texte de 2009 où se lit cette distinction est un exposé d’introduction, écrit à la première personne par quelqu’un qui défend une position tenue de longue date. Forrester y interroge des salles, « I sometimes ask an audience », il argumente, il donne des exemples. Il ne rapporte pas une enquête, et rien dans ces pages ne mesure l’échec de déduction qu’il affirme.",
+        "La mesure existe ailleurs. Linda Booth Sweeney et John D. Sterman, dans « Bathtub dynamics: initial results of a systems thinking inventory », mettent des sujets réels devant des tâches de ce genre et y constatent l’échec que Forrester énonce. L’affirmation d’auteur trouve là un appui expérimental qu’elle n’avait pas.",
+        "Le même article signale que l’explication ordinairement donnée à cet échec, dans cette littérature, est la rationalité limitée, et ce n’est pas celle de Forrester. Le désaccord porte sur la cause, non sur le fait, et il reste ouvert."
+      ]
+    }
+  ],
+  "limits": [
+    "L’expression modèle mental n’est pas de Forrester, et il ne la revendique nulle part. L’origine qu’on lui retient communément est The Nature of Explanation, le livre de Kenneth Craik paru en 1943, où se trouve l’idée d’un modèle réduit du monde extérieur porté dans la tête. Ce que le terme veut dire dans la psychologie qui l’emploie depuis, c’est là qu’il faudra aller le lire.",
+    "Depuis quand Forrester tient cette position, l’exposé de 2009 ne le dit pas : il ne se présente pas comme une première formulation. Sa bibliographie renvoie aux propres livres de l’auteur, 1961, 1968, 1969 et 1971 ; c’est dans ceux-là que se lira l’état antérieur de la thèse.",
+    "Deux articles parus en 1994 dans la System Dynamics Review restent à ouvrir : « System dynamics, systems thinking, and soft OR », de Forrester, et « Learning in and about complex systems », de John D. Sterman. L’accès en est fermé. En quels termes chacun y pose le rapport du modèle formel au modèle mental, et laquelle des deux explications de l’échec de déduction l’emporte, c’est en les lisant qu’on le saura.",
+    "Enfin, la suggestion selon laquelle l’information sur les systèmes sociaux se tiendrait principalement dans la tête des gens est avancée page 12 sans mesure ni référence. Elle est lourde de conséquences pour tout le reste, et elle n’est pas établie en l’état."
+  ]
+}
