@@ -1,0 +1,205 @@
+{
+  "id": "auto-organisation-du-marche",
+  "slug": "auto-organisation-du-marche",
+  "status": "REJECTED",
+  "rejection_reason": "OUT_OF_SCOPE",
+  "_format": "Dossier de lecture primaire, passage 13, nuit du 5 septembre 2026, domaine systems-thinking. Il n'adopte pas le format des neuf enregistrements de ce répertoire, qui datent de la première version du dispositif et pèsent de 96 à 171 kilo-octets pour une carte de 600 caractères : docs/corpus-workflow.md, section 1, les conserve sans plus rien en exiger. Ce qui est repris ici est la charpente restée utile, ce qui a été ouvert, ce qui y a été lu, l'attribution relevée sur la page de titre imprimée, et le motif. La fiche de rejet correspondante, qui est la pièce opposable au validateur, est corpus/rejected/auto-organisation-du-marche.json.",
+  "objet": "Le numéro spécial « La science économique et l'auto-organisation », Economie appliquée, tome XXXVIII, numéros 3-4, 1985, déposé sur Persée sous l'identifiant de numéro ecoap_0013-0494_1985_num_38_3. Douze pièces, dont neuf textes. Six ont été ouvertes en texte intégral pour cette lecture.",
+  "scope": {
+    "in_scope": false,
+    "domaine_teste": "systems-thinking",
+    "domaines_ecartes": [
+      "cybernetics",
+      "behavioral-economics"
+    ],
+    "rationale": "Le test d'entrée de systems-thinking, corpus/perimeter.md, demande d'abord que le travail porte sur un comportement de structure, ou sur la construction du modèle qui permet de le voir, et non sur un domaine d'application où le mot système ne ferait que passer. Les six textes lus portent tous sur le marché comme objet de la théorie micro-économique, et Lesourne le déclare : il refuse explicitement, page 560, d'importer des notions venues d'ailleurs et veut développer l'auto-organisation « d'une manière endogène », « en partant de la théorie micro-économique elle-même ». Aucun de ces textes ne décrit une structure de boucles, de stocks et de délais ; ce qu'ils décrivent est un processus stochastique de recherche, de négociation et d'adaptation entre agents. La cybernétique est écartée par son propre rejet direct, qui vise l'économie de la régulation « dès lors que l'objet du texte est le phénomène étudié et non le principe qu'il permet d'énoncer ». L'économie comportementale est écartée par la deuxième condition de son test : aucun de ces textes n'établit d'écart orienté au modèle de l'agent rationnel, la rationalité limitée y étant une hypothèse de construction et non un fait observé. Le doute a été tranché au plus strict, comme demandé : rejet direct, pas de mise en attente."
+  },
+  "attribution": {
+    "authors": [
+      {
+        "name": "Jacques Lesourne",
+        "app_author_id": null
+      }
+    ],
+    "authorship": "SOLE_AUTHOR",
+    "note": "Signature relevée sur les pages de titre imprimées, lues sur l'image en pleine résolution. Page 559 : « J. Lesourne », puis « Laboratoire d'Econométrie, Conservatoire National des Arts et Métiers ». Page 663 : « J. Lesourne », puis « Professeur d'Economie au Conservatoire National des Arts et Métiers, Paris ». Les deux textes sont d'un seul nom. La note 1 de la page 663 nomme l'équipe sans la cosigner : « Ont participé à ces recherches Gilbert Laffond, Hélène Caron-Salmona, Eric Renault, Jean-François Laslier. » Les deux autres textes du laboratoire dans le même numéro sont, eux, cosignés sur leur page de titre imprimée : page 703, « E. Renault » puis « J. Lesourne » ; page 767, « G. Laffond et J. Lesourne ». La paternité du concept, en revanche, n'est revendiquée nulle part : page 561, Lesourne rattache l'auto-organisation à la théorie générale des systèmes en citant Von Bertalanffy, Ashby, Mesarovic, Beer, Atlan, Laborit, Deutsch, Bateson, Simon, Prigogine, Von Foerster et Varela ; page 696, il emprunte l'autopoïèse à Milan Zeleny, qu'il cite en anglais avec cette note de bas de page : « C'est volontairement que nous n'avons pas traduit. » Le classement d'attribution qui conviendrait à une carte serait donc ASSOCIATED_WITH, et non SOLE_AUTHOR, qui ne vaut ici que pour la signature des deux articles."
+  },
+  "reference_annoncee_p_559_567": {
+    "question": "corpus/map/systems-thinking.scouting.md et corpus/RESTE-A-FAIRE.md annoncent depuis deux semaines un texte de Lesourne intitulé « Introduction : à la recherche d'une théorie de l'auto-organisation », p. 559-567, absent des trente notices Crossref du volume.",
+    "reponse": "Le texte existe, il est entier, il est ouvert, et il a été lu en texte intégral. Ce qui n'existe pas, c'est son DOI.",
+    "constats": [
+      "10.3406/ecoap.1985.4052 répond HTTP 404 sur api.crossref.org comme sur doi.org. Aucun DOI n'est enregistré pour cette pièce.",
+      "https://www.persee.fr/doc/ecoap_0013-0494_1985_num_38_3_4052 répond HTTP 200 et sert les neuf pages 559 à 567 en texte intégral. Deux requêtes successives ont rendu le même document : l'anomalie de cache ne s'est pas manifestée.",
+      "Le titre imprimé, relu sur l'image de la page 559, est « Introduction : A la recherche d'une théorie de l'auto-organisation », avec un A majuscule sans accent, et non « à » comme l'écrivent les deux fichiers du dépôt.",
+      "La table des matières du numéro marque cette pièce « [liminaire] » quand les huit autres textes sont marqués « [article] ». Les trois pièces non marquées « [article] » du numéro, l'introduction 4052, la liste des auteurs 4416 et la table anglaise 4061, sont exactement les trois qui n'ont pas de DOI.",
+      "La reprise annoncée par RESTE-A-FAIRE, « trouver le DOI », est close et sa réponse est négative. La route qui marche est la table des matières du numéro, atteinte en résolvant le DOI d'un article voisin puis en remplaçant la partie document par issue.",
+      "Le lot du 22 août avait deviné juste la forme de l'URL de cette introduction. Son échec à 000 vient d'ailleurs, et non de la forme devinée."
+    ]
+  },
+  "textes_ouverts": [
+    {
+      "doi": null,
+      "persee": "ecoap_0013-0494_1985_num_38_3_4052",
+      "auteurs_page_de_titre": "J. Lesourne",
+      "titre_imprime": "Introduction : A la recherche d'une théorie de l'auto-organisation",
+      "pages": "559-567",
+      "consulted": "full-text",
+      "images_relues": [
+        559,
+        561,
+        562,
+        563
+      ]
+    },
+    {
+      "doi": "10.3406/ecoap.1985.4053",
+      "persee": "ecoap_0013-0494_1985_num_38_3_4053",
+      "auteurs_page_de_titre": "Ulrich Witt",
+      "titre_imprime": "Coordination of Individual Economic Activities as an Evolving Process of Self-Organization",
+      "pages": "569-595",
+      "consulted": "full-text",
+      "images_relues": [
+        569
+      ]
+    },
+    {
+      "doi": "10.3406/ecoap.1985.4054",
+      "persee": "ecoap_0013-0494_1985_num_38_3_4054",
+      "auteurs_page_de_titre": "Alan P. Kirman",
+      "titre_imprime": "Organisation et communication dans les marchés",
+      "pages": "597-609",
+      "consulted": "full-text",
+      "images_relues": []
+    },
+    {
+      "doi": "10.3406/ecoap.1985.4057",
+      "persee": "ecoap_0013-0494_1985_num_38_3_4057",
+      "auteurs_page_de_titre": "J. Lesourne",
+      "titre_imprime": "Le marché et l'auto-organisation",
+      "pages": "663-701",
+      "consulted": "full-text",
+      "images_relues": [
+        663,
+        698
+      ]
+    },
+    {
+      "doi": "10.3406/ecoap.1985.4058",
+      "persee": "ecoap_0013-0494_1985_num_38_3_4058",
+      "auteurs_page_de_titre": "E. Renault, J. Lesourne",
+      "titre_imprime": "Auto-organisation et dispersion géographique des marchés",
+      "pages": "703-738",
+      "consulted": "full-text",
+      "images_relues": []
+    },
+    {
+      "doi": "10.3406/ecoap.1985.4060",
+      "persee": "ecoap_0013-0494_1985_num_38_3_4060",
+      "auteurs_page_de_titre": "G. Laffond et J. Lesourne",
+      "titre_imprime": "Un exemple d'auto-organisation: la création de capacités professionnelles par le marché du travail",
+      "pages": "767-788",
+      "consulted": "full-text",
+      "images_relues": [
+        767
+      ]
+    },
+    {
+      "doi": null,
+      "persee": "ecoap_0013-0494_1985_num_38_3_4416",
+      "auteurs_page_de_titre": null,
+      "titre_imprime": "Liste alphabétique des auteurs de la revue Economie appliquée, Tome XXXVIII - 1985",
+      "pages": "789-790",
+      "consulted": "partial",
+      "images_relues": [
+        789
+      ]
+    }
+  ],
+  "textes_non_ouverts": [
+    "10.3406/ecoap.1985.4055, Elaine Bennett, p. 611-635. Non demandé, accès non constaté.",
+    "10.3406/ecoap.1985.4056, Hélène Caron-Salmona, p. 637-661. Non demandé, accès non constaté.",
+    "10.3406/ecoap.1985.4059, Gilbert Laffond et Jacques Lesourne, p. 739-765. Non demandé, accès non constaté.",
+    "10.3406/ecoap.1985.4061, table anglaise, p. 794-796. Non demandée.",
+    "Jacques Lesourne, Economie de l'ordre et du désordre, Economica, 1991, ISBN 2717819258, et The Economics of Order and Disorder, Clarendon Press, 1992, ISBN 0198287399. Les deux notices résolvent sur OpenLibrary, aucun des deux ouvrages n'a été ouvert.",
+    "Jacques Lesourne, « La science économique et l'auto-organisation », Colloque de Cerisy en l'honneur de l'oeuvre d'Ilya Prigogine, 1983, dont Lesourne écrit page 701 qu'elle « constitue une première version de cet article ». Non localisée.",
+    "Jacques Lesourne, « L'auto-organisation et le marché », dans Marchés, capital et incertitude, essais en l'honneur de Maurice Allais, Economica, 1986. Non localisé."
+  ],
+  "evidence": {
+    "key_quotation": null,
+    "motif_de_l_absence_de_citation": "Aucune citation n'est retenue parce qu'aucune carte n'est écrite. Les quatre passages qui auraient pu la porter ont été mesurés, relus sur l'image de leur page, puis écartés un par un ; ils sont reproduits ci-dessous avec leur motif d'écart, pour qu'un passage ultérieur n'ait pas à rouvrir les mêmes pages.",
+    "passages_mesures_et_ecartes": [
+      {
+        "texte": "Aussi suffit-il de désigner par ce terme la possibilité pour un système d'acquérir des propriétés nouvelles en modifiant lui-même son organisation.",
+        "localisation": "p. 561-562, la phrase enjambe le changement de page ; elle suit immédiatement « Que faut-il entendre par auto-organisation? La rigueur, à ce stade, n'est pas encore de mise. »",
+        "longueur": 147,
+        "relue_sur_image": true,
+        "motif_d_ecart": "L'auteur qualifie lui-même sa définition de non rigoureuse et provisoire dans la phrase qui la précède. Une carte qui l'afficherait seule ferait passer pour une définition ce que le texte donne pour un pis-aller, et le lecteur ne pourrait pas le savoir.",
+        "longueur_verifiee": "comptée sur la chaîne exacte reproduite ci-dessus, espaces et ponctuation compris"
+      },
+      {
+        "texte": "Les mécanismes de cette alchimie sont complexes, mais trois éléments y interviennent presque toujours: le frottement, l'incertitude, la rationalité limitée des acteurs.",
+        "localisation": "p. 562, deuxième phrase de la page, les trois termes en italique dans l'imprimé",
+        "longueur": 168,
+        "relue_sur_image": true,
+        "motif_d_ecart": "Dix-huit caractères de trop, et aucune coupe honnête ne les rend sans perdre l'un des trois termes. Mais ce n'est pas la longueur qui décide : les trois éléments sont des grandeurs économiques, le texte les déclinant même page en coût d'investissement, coût d'information et attitude psychologique conservatrice. Aucun n'est une boucle, un stock ou un délai. Le troisième est déjà instruit sous rationalite-limitee et appartient à Simon, que Lesourne cite page 561 comme sa source.",
+        "longueur_verifiee": "comptée sur la chaîne exacte reproduite ci-dessus, espaces et ponctuation compris"
+      },
+      {
+        "texte": "Que le frottement l'emporte et le système, au risque de s'effondrer, maintiendra son organisation envers et contre tout.",
+        "localisation": "p. 563, troisième paragraphe, après « Ce couple étonnant de l'aléatoire et du frottement est, pour tout système, à la fois source de menaces [...] et source d'autonomie »",
+        "longueur": 120,
+        "relue_sur_image": true,
+        "motif_d_ecart": "C'est le seul énoncé du numéro qui vaille « pour tout système » et non pour un marché. Il relève de la cybernétique, où l'arbitrage entre le bruit qui varie et la redondance qui conserve est déjà porté par ordre-a-partir-du-bruit et bruit-comme-principe-d-auto-organisation sous le thème auto-organisation-et-bruit ; Lesourne cite Atlan et Von Foerster page 561 parmi ses sources. Et le rejet direct du périmètre cybernétique vise l'économie de la régulation quand l'objet du texte est le phénomène étudié.",
+        "longueur_verifiee": "comptée sur la chaîne exacte reproduite ci-dessus, espaces et ponctuation compris"
+      },
+      {
+        "texte": "Une question fondamentale se pose alors : le marché tel qu'il a été décrit dans cet article constitue-t-il un système autopoïétique? La réponse est incontestablement oui.",
+        "localisation": "p. 698, avant-dernier et dernier paragraphes de la section « Le concept d'auto-organisation », la question en italique dans l'imprimé",
+        "longueur": 170,
+        "relue_sur_image": true,
+        "motif_d_ecart": "Le concept n'est pas de Lesourne. Il en donne page 696 la définition de Milan Zeleny (1980) en anglais, non traduite, et sa bibliographie page 701 renvoie à Varela 1979 et à Maturana et Varela 1975. Ce que Lesourne établit est que son modèle satisfait un critère emprunté : une carte qui porterait cette phrase attribuerait à son auteur le concept d'un autre.",
+        "longueur_verifiee": "comptée sur la chaîne exacte reproduite ci-dessus, espaces et ponctuation compris"
+      }
+    ],
+    "definition_de_lauteur": "Lesourne définit l'auto-organisation en refusant d'abord de la définir. Page 561, après avoir nommé les trois courants où sa tentative doit se placer, la théorie générale des systèmes, la théorie économique elle-même et le flot évolutionniste de Stuart Mill à Nelson : « Que faut-il entendre par auto-organisation? La rigueur, à ce stade, n'est pas encore de mise. Aussi suffit-il de désigner par ce terme la possibilité pour un système d'acquérir des propriétés nouvelles en modifiant lui-même son organisation. » Suivent quatre exemples, page 562 : « l'entreprise qui réussit à structurer la concurrence, le marché qui donne naissance à des marchés nouveaux, le système de l'emploi qui engendre des syndicats, l'économie urbaine ou nationale qui devient le centre d'une économie-monde ». Puis les trois ingrédients : « le frottement, l'incertitude, la rationalité limitée des acteurs ». Le frottement, page 562, est ce qui « garantit de la même manière la survie de situations qui dans le monde parfait de la réversibilité se dissoudraient dans l'éphémère », et il prend trois formes économiques, le coût d'investissement, le coût d'accès à l'information et l'attitude psychologique conservatrice. L'incertitude, page 563, vient des acteurs « que tenaille la curiosité, qui inventent des solutions, qui expérimentent des règles de conduite » et d'« un environnement qui perturbe, rend aléatoire les quantités, mêle du bruit aux informations ». La rationalité limitée, même page, est renvoyée à Simon et justifiée par deux raisons dont la seconde est une raison de modélisation : sans elle « il serait en pratique bien difficile de modéliser le comportement des acteurs parfaits de la théorie néoclassique ». Ce que ce montage sert est déclaré page 560 : « il est plus urgent que jamais de tenter d'élaborer une théorie de l'auto-organisation en micro-économie », et le but « n'est pas d'introduire dans cette discipline des notions venues d'ailleurs ». Dans l'article principal, la même notion devient opératoire par emprunt : page 698, le marché du modèle initial est déclaré autopoïétique au sens de Zeleny, ses composants étant les individus et les postes, le processus de recherche d'information tenant lieu de production, la négociation tenant lieu de chaînage et de désintégration, et l'adaptation des exigences tenant lieu de règles de mouvement ; page 699, « le marché tend à reconstituer sa séparation entre l'intérieur et l'extérieur, mais sa pérennité en tant que système dépend des valeurs respectives de sa vitesse de convergence et de la fréquence et de l'intensité des perturbations ». Ce dernier énoncé est le plus proche d'un comportement de structure que le numéro produise, et il reste indexé sur un modèle de marché du travail."
+  },
+  "entrees_concurrentes_examinees": [
+    {
+      "texte": "Ulrich Witt, 10.3406/ecoap.1985.4053",
+      "verdict": "écarté",
+      "motif": "Candidat le plus sérieux du numéro : article autonome, quatre hypothèses numérotées, un corridor de comportement dans l'espace prix-qualité-quantité-temps borné par les forces de sélection internes et externes, et une équation aux différences avec attracteur pour la fréquence des firmes hors corridor. Il est écarté sur sa propre conclusion, page 593 : « It does not seem likely that their characteristic, dramatic discontinuity phenomena have a plausible analogue in the coordination process established by the individuals which interact in the market, at least not on the level of analysis chosen in the model. » Witt teste l'analogie avec l'auto-organisation des sciences de la nature et la retire. Son objet est annoncé page 569, relue sur l'image : « This paper deals with a core problem in economics ». Ce qui resterait, le coût d'une notion empruntée par analogie, est déjà instruit sous transposition-analogique, thème dire-systeme, sur un texte de Roig qui l'énonce pour lui-même et non sur un cas."
+    },
+    {
+      "texte": "Alan Kirman, 10.3406/ecoap.1985.4054",
+      "verdict": "écarté",
+      "motif": "Porte le seul emploi du mot boucle au sens du périmètre, page 599 : les décisions prises selon les croyances d'un agent affectent les réalisations qui servent à réviser ces croyances, ce qui empêche l'apprentissage de converger. Passage lu sur la couche OCR seulement et non relu sur image, faute d'avoir été retenu. Écarté parce que Kirman ne l'établit ni ne le revendique : il renvoie à Azariades et Guesnerie (1984) et à Frydman et Phelps (1983). L'objet annoncé page 597 est de « proposer un outil qui aiderait à la construction de modèles plus pertinents », l'outil étant le graphe aléatoire de communication."
+    },
+    {
+      "texte": "Eric Renault et Jacques Lesourne, 10.3406/ecoap.1985.4058",
+      "verdict": "écarté",
+      "motif": "Modèle de marchés du travail géographiquement dispersés avec coûts de migration irréversibles. Introduit l'optimum différentiel par rapport à l'état initial et la stabilité différentielle. La conclusion, page 733, est d'économie du bien-être : quel optimum définir quand les coûts de déplacement sont irréversibles. Aucun mécanisme de structure n'y est énoncé pour lui-même."
+    },
+    {
+      "texte": "Gilbert Laffond et Jacques Lesourne, 10.3406/ecoap.1985.4060",
+      "verdict": "écarté",
+      "motif": "Modèle où des ouvriers acquièrent aléatoirement des compétences de technicien chez certaines firmes, d'où l'apparition d'un second marché du travail. Page 767 : « la structure finale de l'économie dépend non seulement de sa structure initiale, mais aussi de son évolution historique aléatoire à partir de cette structure. » C'est une dépendance au chemin, mais le concept n'est pas revendiqué par les auteurs et ne leur appartient pas ; la section de signification, pages 785 à 787, part vers la politique de l'emploi en France et dans les pays en développement."
+    }
+  ],
+  "notes": [
+    "Route d'accès, reproductible telle quelle. Texte : https://www.persee.fr/doc/page/<identifiant du document>/<identifiant du numéro>_T1_<page sur quatre chiffres>_0000. Image : https://www.persee.fr/renderPage/<identifiant du document>/<identifiant du numéro>_T1_<page>_0000_2000.jpg. Une largeur demandée de 2000 rend un PNG natif d'environ 1155 par 1751 pixels, pleinement lisible ; la largeur 710 que porte la page HTML rend un JPEG où l'on ne peut pas arbitrer une coquille. Le PDF docAsPDF n'a été demandé pour aucun des six textes. Une seule page a échoué au premier passage, la 672 de 4057, sur une remise à zéro de connexion, reprise avec succès.",
+    "Anomalie de pagination imprimée, et elle retourne un piège déjà payé. Le titre courant de toutes les pages de ce numéro imprime « Economie appliquée, tome XXXVII - 1985 », soit 37, alors que Persée et Crossref donnent tome 38. Vérifié sur les images des pages 559, 569, 663 et 767 : XXXVII partout. Mais la table des auteurs du tome, page 789, relue sur image, s'intitule « Liste alphabétique des auteurs de la revue Economie appliquée, Tome XXXVIII - 1985 ». C'est le titre courant qui est fautif, pas la notice. La règle « la notice d'une plateforme n'est pas la page de titre » reste vraie ; elle ne se retourne pas en « la forme imprimée fait toujours foi », car ici deux formes imprimées se contredisent et c'est la table du tome qui tranche.",
+    "Écart d'attribution sur la plateforme, à signaler au-delà de ce dossier. Crossref et la table des matières de Persée donnent 10.3406/ecoap.1985.4060 sans aucun auteur. La page 767 imprime « G. Laffond et J. Lesourne » sous le titre, avec l'affiliation « Laboratoire d'Econométrie, Conservatoire des Arts et Métiers, Paris », et les titres courants des pages paires impriment « G. LAFFOND and J. LESOURNE ». Une notice sans auteur n'est pas un texte anonyme.",
+    "Deux autres écarts notice contre imprimé. Crossref donne le titre de Witt avec « Economie Activities », coquille d'océrisation, là où la page 569 imprime « Economic Activities ». Et la table des auteurs du tome, page 789, donne l'article d'Elaine Bennett sous un titre français, « Prévoir la formation des coalitions: la situation, l'espace des possibles et le concept de solution », quand Crossref et Persée le donnent sous « Endogenous vs. Exogenous Coalition Formation ». Cet article n'a pas été ouvert et l'écart n'est pas expliqué ici.",
+    "Deux coquilles d'imprimerie vérifiées sur image, pour qu'elles ne soient pas prises pour des fautes d'océrisation. Page 559, la dédicace imprime « A François Perroux, Ilya Prigogine, Hubert Simon » alors que la page 561 écrit correctement « Herbert Simon ». Page 559 toujours, la première phrase imprime « le noyau dur de la théorique économique ignore l'histoire », avec « théorique » pour « théorie ». Aucune de ces deux lignes n'est citée nulle part.",
+    "État de la couche OCR. Utilisable sur ce numéro, mais fautive : élisions perdues, « Marutama » pour « Maturana » page 561, « rutilité » et « Putilité » pour « l'utilité » page 668, deux blocs illisibles, un demi-paragraphe de la page 563 et une ligne de la page 783. Elle escamote surtout les résumés français et anglais de fin d'article, qui apparaissent comme des titres vides : rien n'a été lu des résumés d'auteur et rien n'en est rapporté. Tout ce que ce dossier cite entre guillemets a été relu sur l'image de la page, à la seule exception signalée de la phrase de Kirman page 599, qui n'est pas retenue.",
+    "Ce qui n'a pas été cherché, et le motif. Aucune source secondaire ni de réception francophone n'a été cherchée : le motif de rejet est un motif de périmètre, il se lit sur les textes primaires, et une réception ne le retournerait pas. Une piste déjà connue du dépôt résout et n'a pas été rouverte : Bernard Paulré, « Évolutionnisme contemporain et auto-organisation », Economie appliquée 50(3), 1997, DOI 10.3406/ecoap.1997.1643, ouvert sur Persée et employé par la fiche bruit-comme-principe-d-auto-organisation. Je ne sais pas s'il traite de Lesourne.",
+    "Vérification d'unicité faite avant écriture : ni auto-organisation-du-marche comme identifiant ni comme slug n'existe dans les 113 fiches de corpus/validated/, ni dans corpus/candidates/, ni dans corpus/rejected/. Le seul voisin de vocabulaire est bruit-comme-principe-d-auto-organisation, en cybernétique, qui porte un autre concept et un autre auteur.",
+    "Ce que ce passage laisse au suivant, et ce n'est pas une invitation à rouvrir ce numéro. La reprise annoncée par corpus/RESTE-A-FAIRE.md sur Lesourne 1985 est close, et sa conclusion est négative pour la carte : le texte existe, il a été lu en entier, et il ne fait pas de carte dans ce domaine. Ce qui reste ouvert est ailleurs, et n'a pas été ouvert : Economie de l'ordre et du désordre (Economica, 1991, ISBN 2717819258) et The Economics of Order and Disorder (Clarendon Press, 1992, ISBN 0198287399), dont les deux notices OpenLibrary résolvent. Le motif de périmètre écrit ici vaut contre les articles lus, pas contre un livre que je n'ai pas vu."
+  ],
+  "provenance": {
+    "created_at": "2026-09-05",
+    "pipeline_version": "lecture primaire, passage 13, phase 3",
+    "candidate_origin": "legs de corpus/map/cybernetics.scouting.md vers systems-thinking, repris par corpus/map/systems-thinking.scouting.md et corpus/RESTE-A-FAIRE.md section D",
+    "fiche_opposable": "corpus/rejected/auto-organisation-du-marche.json"
+  }
+}

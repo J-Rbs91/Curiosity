@@ -47,10 +47,12 @@ src/content/generated/` : le garde couvre les deux fichiers du répertoire qu'il
 prend.** Aucun domaine n'étant vide et aucune carte n'étant sans approfondissement, ses conditions
 A et B sont fausses : **la condition C décide, et la phase 3 a commencé le 2 septembre**, sur
 `behavioral-economics`, qui passe de quatre à huit cartes, a continué le 3 septembre sur
-`sociology-of-work`, qui passe de sept à onze, et le 4 septembre sur `work-psychology`, qui passe
-de sept à douze et de deux thèmes à trois. Elle enrichit un domaine par nuit, en rotation, et
-**le suivant se déduit sans arbitrage, sans même une égalité à trancher : `systems-thinking`**,
-seul à sept cartes contre huit pour les deux domaines qui le suivent — voir la fin du chantier D.
+`sociology-of-work`, qui passe de sept à onze, le 4 septembre sur `work-psychology`, qui passe
+de sept à douze et de deux thèmes à trois, et le 5 septembre sur `systems-thinking`, **qui passe de
+sept à quinze cartes et de trois thèmes à cinq**. Elle enrichit un domaine par nuit, en rotation, et
+**le suivant se déduit d'une égalité réelle, à huit cartes, que l'ordre de `taxonomy.ts` tranche :
+`operations-management`**, placé ligne 126 contre la ligne 168 de `decision-science` — voir la fin
+du chantier D.
 
 **Le chantier C est fermé.** Il a perdu un domaine le 22 août, `systems-thinking`, un second le 23,
 `decision-science`, un troisième le 25, `operations-management`, un quatrième le 26,
@@ -332,18 +334,33 @@ portaient toutes l'avertissement « aucune source secondaire affichée » ; les 
 portent chacune au moins une, ouverte et lue dans son corps, avec sa réserve écrite. C'est le
 deuxième domaine, après `behavioral-economics`, à sortir de cette dette.
 
+**Le quatrième domaine a été pris le 5 septembre 2026, au passage 13 : `systems-thinking`**, seul à
+sept cartes et donc désigné sans arbitrage. **Il en porte quinze, et il passe de trois à cinq
+thèmes** : c'est le lot le plus volumineux de la phase 3, au plafond exact de huit cartes. Il n'a
+creusé aucune littérature déjà ouverte : **les six que la cartographie du 22 août déclarait non
+balayées l'ont été**, et les huit cartes en viennent. Les trois reprises courtes que ce fichier
+portait pour ce domaine sont closes, **deux d'entre elles négativement** : voir la section qui les
+concernait, réécrite ci-dessous. Le compte rendu du lot est dans `corpus/ETAT.md`, section
+« Systems Thinking enrichi ».
+
+**Deux voies d'accès nouvelles en sont sorties**, et elles valent pour tout le dépôt : la mise en
+ligne d'un ouvrage par son auteur sur Internet Archive **sans restriction d'emprunt**, et les
+**extraits autorisés d'UNESCO-EOLSS**. Elles sont portées aux pièges d'accès transversaux, en fin
+de fichier.
+
 **Le domaine suivant se déduit de la même règle, et il vaut d'être écrit ici pour que la nuit qui
-reprend n'ait pas à le recalculer.** `behavioral-economics`, `sociology-of-work` et
-`work-psychology` ont désormais un enrichissement au journal, daté du 2, du 3 et du 4 septembre, et
-sortent de la rotation jusqu'à ce que les autres soient passés. Aucun des huit autres n'en a : le
-critère de repli s'applique de nouveau et désigne celui qui a le moins de cartes validées.
-**`systems-thinking` est seul à sept**, contre huit pour `decision-science` et pour
-`operations-management` : **il n'y a plus d'égalité à trancher, c'est `systems-thinking`**. En son
-sein, la priorité 1 est sans objet, les deux thèmes déclarés sans carte étant en sociologie des
-organisations, et la priorité 2 aussi, `corpus/map/queue.json` ne couvrant que ce même domaine :
-**la priorité 3 commande, les angles morts de `corpus/map/systems-thinking.scouting.md`**, dont la
-section « Les reprises courtes de `systems-thinking` et de `decision-science` » ci-dessous tient
-déjà la liste avec l'accès constaté. Le décompte qui tranche est le tableau par domaine de
+reprend n'ait pas à le recalculer.** `behavioral-economics`, `sociology-of-work`, `work-psychology`
+et `systems-thinking` ont désormais un enrichissement au journal, daté du 2, du 3, du 4 et du 5
+septembre, et sortent de la rotation jusqu'à ce que les autres soient passés. Aucun des six autres
+n'en a : le critère de repli s'applique et désigne celui qui a le moins de cartes validées.
+**Ils sont deux à huit, `operations-management` et `decision-science` : l'égalité est réelle cette
+fois, et c'est l'ordre de `src/content/taxonomy.ts` qui la tranche**, en plaçant
+`operations-management` (ligne 126) avant `decision-science` (ligne 168). **C'est donc
+`operations-management`.** En son sein, la priorité 1 est sans objet, les deux thèmes déclarés sans
+carte étant en sociologie des organisations, et la priorité 2 aussi, `corpus/map/queue.json` ne
+couvrant que ce même domaine : **la priorité 3 commande, les angles morts de
+`corpus/map/operations-management.scouting.md`**, dont ce fichier dit qu'il hérite de trois rapports
+mirés sur Internet Archive. Le décompte qui tranche est le tableau par domaine de
 [`corpus/ETAT.md`](ETAT.md), et `npm run corpus:audit` le rend à la demande.
 **En phase 3, la nuit se termine par les approfondissements des cartes qu'elle vient de créer** :
 les passages 10, 11 et 12 l'ont fait, et la file de `corpus:deepen` est repartie de zéro et y est
@@ -623,14 +640,52 @@ n'ont reçu aucune requête ciblée (files d'attente pour le service, maintenanc
 sens de l'ingénieur, conception des systèmes de service, variabilité propagée le long d'une
 chaîne).
 
-## Les reprises courtes de `systems-thinking` et de `decision-science`
+## Les reprises courtes de `decision-science`, et ce que `systems-thinking` a rendu
 
-## Deux textes ouverts et **déjà lus**, laissés par le lot du 23 août
+**Les trois reprises de `systems-thinking` sont closes, le 5 septembre 2026, au passage 13.** Deux
+le sont négativement, ce qui est un résultat et non un échec. Elles ne sont plus à faire, et ce qui
+suit dit ce qu'elles ont donné pour que personne ne les repaie.
 
-Ce sont les deux entrées les moins chères du dépôt, plus courtes encore que celles du 22 août :
-leur accès n'est pas seulement constaté, **leur texte a été ouvert**. Ils n'ont pas été
-instruits parce que le plafond de volume du lot était atteint, et parce que chacun aurait
-ouvert un thème à une seule carte, ce que la règle refuse.
+- **Meadows et al. 1972, *The Limits to Growth*.** Ouvert, téléchargé, lu ; page de copyright lue
+  sur image, **cinquième tirage de la première édition**. **Quatre concepts relevés, trois cardés.**
+  L'autorisation se constate sur la page qui héberge : licence Creative Commons BY-NC, partenariat
+  entre la bibliothèque du Dartmouth College, Dennis Meadows et le Sustainability Institute. Deux
+  faits à garder : **le nom « World3 » ne figure pas dans l'ouvrage de 1972**, qui dit « our world
+  model » ; et **la correspondance folio/feuillet du scan n'est pas constante**, folio + 2 jusqu'à
+  la page 102 puis folio + 1.
+- **Lesourne 1985.** La reprise disait « trouver le DOI » : **il n'existe pas.** Les trois pièces
+  non-article du volume, marquées `[liminaire]` par la table des matières, sont exactement les trois
+  sans dépôt DOI chez Crossref. Le texte, lui, existe et a été lu en entier sur Persée,
+  `ecoap_0013-0494_1985_num_38_3_4052`, résolu par la table des matières du numéro et non par une
+  URL devinée. **Le titre imprimé porte « Introduction : A la recherche »**, et non « à » comme
+  l'écrivaient deux fichiers de ce dépôt. **Puis le texte a été rejeté au fond**,
+  `corpus/rejected/auto-organisation-du-marche.json` : Lesourne veut développer l'auto-organisation
+  « en partant de la théorie micro-économique elle-même », ce qui n'est pas une structure de
+  boucles, de stocks et de délais ; et il renvoie lui-même la notion à la théorie générale des
+  systèmes, empruntant l'autopoïèse à Zeleny, Maturana et Varela. **Ni `systems-thinking`, ni
+  `cybernetics`, ni `behavioral-economics` : `OUT_OF_SCOPE` sec.** Cinq autres articles du même
+  volume ont été ouverts et écartés avec leur motif.
+- **Bertalanffy.** L'article de 1972 (`10.2307/255139`) est **fermé sur Crossref, Unpaywall et
+  OpenAlex**, et les cinq exemplaires de *General System Theory* restent en prêt restreint sur
+  Internet Archive. **Le domaine continue de citer Bertalanffy de seconde main, à travers Roig**, et
+  c'est son angle mort le plus visible. **Boulding 1956 est fermé lui aussi** ; une republication
+  dans *E:CO* est signalée par le web général mais son domaine n'a jamais répondu, y compris par la
+  Wayback Machine.
+
+**Ce que `systems-thinking` laisse de moins cher au passage suivant**, et ce sont deux concepts
+**déjà lus et instruits**, écartés du lot du 5 septembre parce que son plafond de huit était
+atteint : `referentiel-tef` (Le Moigne, le référentiel Temps-Espace-Forme, dont aucun tiers consulté
+ne reprend le sigle, et dont le lecteur écrit que son thème d'accueil est le meilleur disponible et
+non le juste) et `croissance-exponentielle-et-doublement` (Meadows et al., verbatim sûr mais
+attribution à écarter : ni la croissance exponentielle, ni le temps de doublement, ni la règle des
+70 ne sont d'eux). Leurs dossiers sont au dépôt. Les autres angles morts du domaine sont dans la
+section du 5 septembre de `corpus/map/systems-thinking.scouting.md`.
+
+## Deux textes ouverts et **déjà lus**, laissés par le lot du 23 août — `decision-science`
+
+Ce sont les deux entrées les moins chères du dépôt : leur accès n'est pas seulement constaté,
+**leur texte a été ouvert**. Ils n'ont pas été instruits parce que le plafond de volume du lot était
+atteint, et parce que chacun aurait ouvert un thème à une seule carte, ce que la règle refuse.
 
 **Arrow 1948**, *The Possibility of a Universal Social Welfare Function*, RAND Paper P-41.
 Internet Archive, identifiant `DTIC_AD0603806`, collection `dticarchive`, sans restriction,
@@ -638,7 +693,7 @@ page de titre confirmée. C'est la forme la plus ancienne du théorème d'imposs
 pourvoirait le thème « agréger des préférences » que le lot n'a pas pu déclarer. **Une réserve
 à porter dans le brief** : le document porte lui-même un avis du Clearinghouse disant que sa
 lisibilité est « in part unsatisfactory », et la couche texte le confirme. Toute citation devra
-se relire sur l'image, plus encore que d'ordinaire.
+se relire sur l'image de la page, plus encore que d'ordinaire.
 
 **Newell, Shaw & Simon**, 1958 dans *Psychological Review* et 1960 dans *Self-Organizing
 Systems*. Les deux sont ouverts et lus : le premier par un tiré à part servi par le serveur IIIF
@@ -649,24 +704,6 @@ programme et la même thèse : la décision de fusionner ou de partager revient 
 Une réserve d'accès est déclarée sur le tiré à part de 1958, la page de notice d'archives ayant
 répondu `HTTP 503` : le fichier est servi publiquement par une bibliothèque universitaire, mais
 l'autorisation n'a pas pu être lue noir sur blanc.
-
-## Deux textes localisés en accès ouvert et non lus, laissés par le lot du 22 août
-
-**L'ouvrage de 1972 sur les limites de la croissance**, de Meadows, Meadows, Randers et
-Behrens. Scan intégral qui répond, 43 Mo, sur le site du Donella Meadows Project. C'est lui
-qui pourvoirait le thème « croissance et limites » que le lot n'a pas pu déclarer, faute de
-carte pour le porter.
-
-**Lesourne 1985**, « Introduction : à la recherche d'une théorie de l'auto-organisation »,
-*Économie appliquée* 38(3-4), p. 559-567. Neuf pages annoncées en texte intégral sur Persée.
-Le lot du 22 a échoué dessus **pour une raison évitable et déjà écrite ici** : l'identifiant
-Persée a été deviné d'après la forme de l'URL au lieu d'être obtenu en résolvant le DOI. La
-reprise consiste à trouver le DOI.
-
-Trois autres manques du domaine sont plus lourds et demandent un vrai balayage : six des neuf
-littératures de son périmètre n'ont pas été ouvertes, deux de ses trois textes viennent d'un
-nom écrit de mémoire, et un de ses trois thèmes repose entièrement sur Forrester.
-`corpus/map/systems-thinking.scouting.md` les nomme un par un et dit ce qui a été essayé.
 
 ---
 
@@ -789,6 +826,30 @@ constate sur la page qui héberge, comme toutes les autres.
 **OpenEdition Books sert des ouvrages entiers en texte intégral.** Voie découverte en cours de
 lot sur la théorie de la mesure, où elle a débloqué l'ouvrage central du domaine. Plusieurs
 francophones classés fermés dans les cartographies antérieures méritent d'y être retentés.
+
+**Un auteur peut avoir mis son propre ouvrage en ligne, et alors il n'y a pas de restriction
+d'emprunt.** Établi le 5 septembre 2026 sur *La théorie du système général* de Le Moigne : l'item
+Internet Archive porte `access-restricted-item` **absent**, la description dit que l'auteur y a
+déposé son texte après épuisement de la quatrième édition PUF, une licence Creative Commons
+`by-nc-nd/2.0/fr` est déclarée, et la note liminaire de la collection porte l'autorisation en toutes
+lettres. **Le réflexe est de chercher le dépôt d'auteur avant de conclure de la fermeture des
+exemplaires en prêt contrôlé.** Deux précautions vont avec, payées le même soir : **la notice de
+l'hébergeur peut être fausse** (celle-ci date l'ouvrage de 1977 et l'annonce comme une cinquième
+édition révisée de 2006, alors que c'est la quatrième de 1994, établi sur la page de titre et le
+sommaire) ; et **deux miroirs ne font pas deux témoins si c'est le même fichier**, ce qu'un hachage
+SHA-256 dit en une commande.
+
+**UNESCO-EOLSS sert des extraits autorisés d'articles fermés ailleurs, et c'est une voie d'accès à
+part entière.** Découverte le 5 septembre 2026, en cherchant les publications d'un auteur. Chaque
+extrait porte sa propre mention « Reproduced by permission » nommant l'éditeur d'origine. **Deux
+limites, et elles sont sévères.** L'extrait s'interrompt sur un pavé « TO ACCESS ALL THE 30 PAGES OF
+THIS CHAPTER », neuf ou dix pages sur trente : **il annonce son résultat dans son résumé et
+s'arrête avant de le démontrer**. Et **la mention de permission peut nommer deux sources** : celle
+d'un extrait de Sterman nomme à la fois l'article de 1989 et *Business Dynamics* de 2000, sans dire
+quelle phrase vient de laquelle. **Aucun verbatim ne se localise sur un extrait EOLSS.** La parade
+qui a marché deux fois le même soir est d'aller chercher le texte sur **le dépôt DSpace du MIT**,
+qui sert les documents de travail de la Sloan School sans authentification : c'est là que les deux
+verbatim se localisent, et les états du texte diffèrent mot pour mot de l'extrait.
 
 **La collection `dticarchive` d'Internet Archive est une voie d'accès à part entière.** Établi
 par le lot du 23 août, qui en a tiré deux cartes : des textes fondateurs publiés dans des revues

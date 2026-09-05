@@ -5,6 +5,177 @@ coup d'œil ce que la précédente a fait, sur quelle branche elle l'a laissé, 
 reprendre. **Les scripts priment sur ce fichier** : il dit ce qui a été tenté et pourquoi, ils
 disent ce qui est.
 
+## Passage 13/15 — 2026-09-05
+
+- branche      : **`claude/zen-johnson-cwir6d`, imposée par la session, pas `main`.** Elle partait exactement d'`origin/main`, à `5ef1acc`, qui porte la pull request [#97](https://github.com/J-Rbs91/Curiosity/pull/97) du passage 12 : **le travail des passages 07 à 12 est donc bien dans `main`**, vérifié par `git rev-list --left-right --count`, qui rend `0 0` au lever. Le travail de la nuit est poussé sur cette branche, **pull request [#98](https://github.com/J-Rbs91/Curiosity/pull/98) vers `main`, ouverte à la clôture, vingt-neuf commits, un par étape de la chaîne**. **Tant qu'elle n'est pas fusionnée, la nuit suivante reprend depuis cette branche.** La parade écrite par le passage 12 a été appliquée sans y penser : `git fetch origin main`, une référence à la fois, jamais deux refspecs dans le même appel.
+- phase        : **3 (enrichissement d'un domaine), la quatrième de la routine.** Condition A fausse, `corpus:audit` n'affichant aucun domaine « en cours de constitution ». Condition B fausse, `corpus:deepen` projetant 113 approfondissements pour 113 cartes au lever et sa fin de sortie ne listant rien. **La condition C décidait, et elle décidait seule.**
+- domaine      : **`systems-thinking`**, désigné sans arbitrage. Quatre domaines ont un enrichissement au journal et sortent de la rotation ; aucun des sept autres n'en a, donc le critère de repli s'applique et désigne celui qui a le moins de cartes validées : **`systems-thinking`, sept cartes, seul à ce niveau** contre huit pour `decision-science` et `operations-management`. Aucune égalité à trancher. En son sein, la priorité 1 est sans objet, les deux thèmes déclarés sans carte étant en sociologie des organisations ; la priorité 2 aussi, `queue.json` ne couvrant que ce même domaine ; **la priorité 3 commande, les angles morts de `corpus/map/systems-thinking.scouting.md`**.
+- validées     : **8 — `depassement-et-effondrement`, `modele-mondial-et-modes-de-comportement`, `etat-d-equilibre-global`, `echec-a-apprendre-malgre-l-experience`, `stocks-et-flux`, `ligne-d-approvisionnement-ignoree`, `modele-mental-et-modele-de-simulation`, `systemographie`, les 8 avec citation**, toutes relues sur l'image de la page. **Six en `PASS` au premier tour, deux au second.** C'est le plafond du prompt, atteint exactement. **Le domaine passe de 7 à 15 cartes et de 3 à 5 thèmes**, deux thèmes nouveaux étant déclarés parce que quatre et deux cartes les portent : `croissance-et-limites` et `ce-qui-s-accumule`. Le corpus passe de 113 à **121 cartes**.
+- en review    : 0
+- rejetées     : 1 — `auto-organisation-du-marche`, `OUT_OF_SCOPE`. Deux concepts lus et instruits ont par ailleurs été **écartés du lot** plutôt que rejetés, leurs dossiers déposés pour un passage suivant : voir la section « Deux concepts lus, écartés, et pourquoi ce n'est pas un rejet ».
+- approfondies : **8 — les huit cartes de la nuit**, la phase 3 se terminant par les approfondissements des cartes qu'elle vient de créer. 1 481 à 1 717 mots, aucun refus de projection. `corpus:deepen` projette **121 approfondissements pour 121 cartes**, 179 676 mots, 1 485 en moyenne, **et la file est de nouveau vide à la clôture, comme elle l'était au lever**.
+- contrôles    : validate 0 erreur (125 enregistrements, 121 validés, **87 avertissements, inchangés en nombre**) · build 121 concepts · deepen 121/121 · `git diff --exit-code src/content/generated/` propre après reprojection, **projection vérifiée idempotente sur deux exécutions successives** · test 482/0 · lint 0 · audit : `Systems Thinking` passe de **3 thèmes / 7 validés** à **5 thèmes / 15 validés / 0 en cours**, et la liste des thèmes sans fiche validée reste à deux, `autorite-domination` et `apprentissage-organisationnel`. Rien à drainer dans `src/content/fixtures/concepts.fixture.ts` : `corpus:build` n'a listé aucune entrée caduque, et aucun des huit identifiants n'a d'homonyme d'échafaudage.
+- commit       : voir la pull request de la nuit ; les commits sont un par étape de la chaîne, du balayage à la consignation.
+- bloqué par   : **le serveur MCP `documentary`, en échec de connexion (`CONNECTION_CLOSED`) pour la huitième nuit consécutive**, constat fait par le harnais au lever et non sur la foi du journal. **Second blocage, de dispositif, et il est identique à celui des passages 10, 11 et 12** : `Task` n'est pas exposé à `corpus-orchestrator`, donc **la session a orchestré elle-même**, lançant les vingt-deux sous-agents `corpus-*` un par un par l'outil `Agent` du harnais, sans produire elle-même aucune connaissance. **Quatre nuits de suite : c'est l'état du dispositif, pas un accident**, et la nuit suivante n'a pas à le rediagnostiquer. **Troisième blocage, d'accès, constaté sur pièce** : Cairn répond `403` derrière DataDome, OpenAlex répond « Insufficient budget » avec remise à zéro à minuit UTC, Semantic Scholar `429` sur deux tentatives espacées, le domaine `mcxapc.org` et son sous-domaine `archive.` sont **refusés par le proxy sortant** (`connect_rejected`), l'API plein texte d'Internet Archive est coupée (`CONNECT 502`), et Wiley répond `403` derrière Cloudflare. Aucun n'a été contourné.
+- la nuit suivante prend : **phase 3, et `operations-management`.** Les conditions A et B resteront fausses. Cinq domaines ont désormais un enrichissement au journal, `behavioral-economics` le 2 septembre, `sociology-of-work` le 3, `work-psychology` le 4, `systems-thinking` le 5, et ils sortent de la rotation ; aucun des six autres n'en a, donc le critère de repli s'applique et **désigne une égalité à huit cartes entre `operations-management` et `decision-science`**, que l'ordre de `src/content/taxonomy.ts` tranche en plaçant `operations-management` (ligne 126) avant `decision-science` (ligne 168). **L'égalité est réelle cette fois, et c'est la taxonomie qui la tranche.** En son sein, les priorités 1 et 2 sont sans objet pour la même raison que cette nuit, et **la priorité 3 commande : les angles morts de `corpus/map/operations-management.scouting.md`**, dont `RESTE-A-FAIRE.md` dit qu'il hérite de trois rapports mirés sur Internet Archive. La nuit se terminera par les approfondissements des cartes qu'elle aura créées.
+
+### Ce que cette nuit a établi, en une phrase
+
+La quatrième nuit de phase 3 double le domaine qu'elle prend, de sept cartes à quinze,
+**et elle le fait en ouvrant six littératures que le lot d'ouverture avait déclarées non
+balayées** plutôt qu'en creusant celles qu'il avait déjà ouvertes.
+
+### Ce que le balayage par littératures a rendu, et pourquoi il fallait le faire
+
+La cartographie d'ouverture du 22 août 2026 écrivait sur elle-même deux aveux que peu de
+rapports font : **six des neuf littératures de son périmètre n'avaient reçu aucune requête**,
+et **deux de ses trois textes ouverts venaient d'un nom écrit de mémoire**. Elle concluait :
+« C'est le contraire de ce que le périmètre demande, et c'est la limite principale de ce lot. »
+
+Le balayage a été fait cette nuit, et il a rendu **deux voies d'accès que le dépôt ne
+connaissait pas**, l'une et l'autre constatées sur pièce :
+
+- **La mise en ligne d'un ouvrage par son auteur, sans restriction d'emprunt.** *La théorie du
+  système général* de Le Moigne est sur Internet Archive avec `access-restricted-item` **absent**,
+  déposée par l'auteur après épuisement de la quatrième édition PUF, et la note liminaire de la
+  collection porte l'autorisation en toutes lettres. C'est le candidat le plus solide du passage
+  et il a rendu la carte `systemographie`.
+- **Les extraits autorisés d'UNESCO-EOLSS**, plateforme **jamais mentionnée par le périmètre ni
+  par `RESTE-A-FAIRE.md`**, découverte en cours de balayage. Elle sert des extraits d'articles
+  fermés ailleurs, chacun portant sa propre mention « Reproduced by permission ». Deux cartes de
+  la nuit en viennent, et c'est une voie comparable à `dticarchive` pour `decision-science`.
+
+### Ce que les extraits autorisés valent, et ce qu'ils ne valent pas
+
+**C'est le point de méthode le plus important de la nuit, et il a été payé deux fois.**
+
+Les deux extraits EOLSS annoncent leur résultat dans leur résumé **et s'interrompent avant de
+le démontrer**, sur un pavé imprimé « TO ACCESS ALL THE 30 PAGES OF THIS CHAPTER ». Neuf pages
+sur trente pour Sterman, dix sur trente pour Paich et Sterman. Les deux lecteurs primaires ont
+fait, chacun de son côté, **le geste que le §3 du workflow appelle « combler le trou plutôt que
+changer l'étiquette »** : plutôt que de porter la lacune en réserve, ils sont allés ouvrir le
+texte ailleurs, et ils l'ont trouvé sur le dépôt DSpace du MIT, servi sans authentification.
+
+- **Sterman** : document de travail Sloan 1933-87 / D-3919, septembre 1987, 42 pages, lu en
+  entier. Le verbatim s'y localise, folio 23.
+- **Paich et Sterman** : document de travail Sloan 3441-92-BPS, juillet 1992, lu en entier.
+  C'est de là que viennent les 122 sujets, les cinq essais, les 13 puis 63 pour cent.
+
+**Et la règle du 22 août se confirme sur pièce** : l'extrait n'est pas le texte de 1987. Même
+paragraphe, deux états qui diffèrent mot pour mot, `the larger the quantity on order must be`
+contre `the larger the supply line must be`. **Aucun verbatim ne se déplace de l'un à l'autre.**
+
+Une découverte s'ajoute, faite par le lecteur et non par le brief : **la mention de permission
+de l'extrait Sterman porte une seconde ligne**, qui nomme aussi *Business Dynamics* de 2000.
+Le chapitre est un **composite autorisé de deux sources, et rien n'y dit quelle phrase vient de
+laquelle**. Raison de plus pour n'y localiser aucun verbatim.
+
+### Les deux renvois du contrôle aveugle, et ce qu'ils ont attrapé
+
+Deux cartes sur huit sont revenues en `REWORK`, et **aucun des deux motifs n'était visible
+depuis le brief seul** : les deux contrôleurs sont allés ouvrir les textes.
+
+**`depassement-et-effondrement`, attribution `douteuse`.** La note d'attribution mettait au point
+que le Club de Rome a commandité sans écrire, ce qui est exact. Mais **le vrai revendicant est
+Jay W. Forrester**, et **le livre le dit lui-même en note de sa page 21** : « The prototype model
+on which we have based our work was designed by Professor Jay W. Forrester ». Ce que la note
+disait était vrai ; ce qu'elle omettait la faussait. Le contrôleur du second tour est allé
+ouvrir *World Dynamics* dans sa deuxième édition, faute d'accès à celle de 1971, **et a vérifié
+que le partage tenait dans les deux sens** : l'index de Forrester ne porte ni « Overshoot », ni
+« Collapse », ni « Behavior modes », quand le livre de 1972 intitule une section « The overshoot
+mode ». Le « nommé, diagrammé et rendu public » laissé aux quatre auteurs résiste.
+
+**`modele-mental-et-modele-de-simulation`, prose `deborde`.** Le résumé écrivait « la simulation,
+elle, le révèle », le pronom reprenant « le comportement » du système : la carte faisait révéler
+à la simulation **le comportement du monde**. Le contrôleur a **relevé les trois seules
+occurrences du verbe dans les dix-sept pages** : les deux emplois positifs portent sur le
+comportement qu'implique la structure qu'on a donnée au modèle, le troisième est négatif, et ce
+que Forrester laisse remonter vers le réel il le confie à un autre verbe, « begins to tell
+something about real life ». **L'écart se jouait sur un mot.**
+
+Le contrôle du second tour a par ailleurs **corrigé le contrôle du premier** sur un point : le
+premier affirmait que Forrester porte « complexe » des deux côtés de sa restriction, le second a
+vérifié qu'il ne le fait pas, la concession portant sur « the pieces of a system » et le refus
+sur « the known pieces of a complex system ». La carte reproduit l'asymétrie réelle.
+
+### Ce qu'un détail relevé trois fois a fini par obtenir
+
+Trois contrôleurs indépendants, qui ne se sont pas parlé, ont noté **hors de leurs quatre
+questions** que le libellé de la source primaire des cartes Meadows créditait la numérisation du
+scan de 1972 au Donella Meadows Project, alors que la page qui héberge crédite un partenariat
+entre **la bibliothèque du Dartmouth College**, Dennis Meadows et le Sustainability Institute, et
+que c'est Dartmouth qui déclare la licence Creative Commons. Aucun n'en a fait un motif de renvoi,
+et ils ont eu raison : la référence résout exactement vers ce qu'elle annonce. **Mais relevé trois
+fois, le crédit approximatif devient une correction due**, et elle a été faite à la réception.
+
+Elle a coûté quelque chose, et il faut le dire : le libellé combiné faisait 271 caractères pour un
+plafond de 230, et **la mention « cinquième tirage de la première édition » a été retirée du champ
+affiché** pour faire tenir le crédit exact. Le fait reste établi par les verdicts et par les
+`notes`, mais il n'est plus sous les yeux du lecteur, et les trois libellés sont désormais à
+230 sur 230. **C'est un arbitrage discutable et il est écrit ici pour pouvoir être rouvert** : on
+peut soutenir que le tirage, qui permet de vérifier une citation, vaut mieux à l'écran que le nom
+du numériseur.
+
+Deux autres corrections de la même famille, chacune relevée par un contrôleur : le lieu d'édition
+de *Business Dynamics*, **Boston au MARC de la Bibliothèque du Congrès** et non New York comme le
+disait la mention de permission d'EOLSS ; et le prénom de **Linda** Booth Sweeney, abrégé en
+initiale.
+
+### Deux concepts lus, écartés, et pourquoi ce n'est pas un rejet
+
+Le plafond de huit cartes était atteint, et **deux concepts entièrement instruits ont été laissés
+de côté**. Leurs dossiers de lecture sont au dépôt : ce sont les deux reprises les moins chères du
+passage suivant sur ce domaine, et elles n'attendent que d'être cardées.
+
+- **`referentiel-tef`** (Le Moigne, le référentiel Temps-Espace-Forme). Écarté sur le constat de
+  son propre lecteur, qui écrit qu'aucun tiers consulté ne le reprend, décompte fait sur les
+  textes intégraux de Pesqueux et de Schmitt, et qu'il l'a rangé dans `dire-systeme` « comme
+  meilleur choix disponible et non comme choix juste ». **Un concept dont le lecteur dit lui-même
+  que son thème d'accueil n'est pas le sien ne se publie pas** : il attend le thème qui lui
+  convient, ou un second texte qui le porte.
+- **`croissance-exponentielle-et-doublement`** (Meadows et al.). Le verbatim est sûr, mais son
+  lecteur écrit que **ni la croissance exponentielle, ni le temps de doublement, ni la règle des
+  70 ne sont d'eux**, et que la devinette du nénuphar leur a été donnée par un tiers, nommé en
+  note de la page 29. Une carte qui leur attribuerait la notion serait fausse : c'est
+  l'attribution, première des quatre questions du contrôle, et elle se tranche avant le contrôle
+  quand elle est déjà connue.
+
+### Trois reprises annoncées, trois réponses, dont deux négatives
+
+`RESTE-A-FAIRE.md` portait trois reprises courtes pour ce domaine. Les trois sont closes, et
+**deux le sont négativement, ce qui est un résultat et non un échec** :
+
+- **Meadows 1972** : ouvert, lu, **quatre concepts relevés, trois cardés**. La reprise a rendu
+  ce qu'elle promettait et davantage.
+- **Lesourne 1985** : la reprise disait « trouver le DOI ». **Il n'existe pas.** Le texte existe
+  et il a été lu en entier sur Persée, mais les trois pièces non-article du volume sont
+  exactement les trois sans dépôt DOI, et le titre imprimé porte « A la recherche » là où deux
+  fichiers du dépôt écrivaient « à la recherche ». **Puis le texte a été rejeté au fond** :
+  Lesourne écrit vouloir développer l'auto-organisation « en partant de la théorie
+  micro-économique elle-même », et ce n'est pas une structure de boucles, de stocks et de délais.
+  Second motif indépendant, qui suffirait seul : il renvoie lui-même la notion à la théorie
+  générale des systèmes et emprunte l'autopoïèse à Zeleny, Maturana et Varela.
+- **Bertalanffy** : **fermé partout où la nuit a vérifié**, Crossref, Unpaywall et OpenAlex avant
+  son épuisement de budget. **Le domaine continue donc de citer Bertalanffy de seconde main**, à
+  travers Roig qui le lit et le traduit, et c'est son angle mort le plus visible. Boulding 1956,
+  le second texte fondateur, est fermé lui aussi.
+
+### Trois faits à repayer autrement, relevés en passant
+
+- **La notice d'un hébergeur peut être fausse sur deux points à la fois.** L'item Internet Archive
+  qui diffuse Le Moigne le date de 1977 et l'annonce comme « la 5eme édition révisée 2006 » :
+  c'est la **quatrième édition de 1994**, établi sur la page de titre, le propos liminaire et le
+  sommaire. **Et ce n'est pas un second témoin** : le hachage SHA-256 est identique à celui de
+  l'autre miroir. **Deux mises à disposition ne font pas deux attestations si c'est le même
+  fichier**, et cela se vérifie en une commande.
+- **La pagination imprimée peut avoir tort contre la notice.** Le titre courant de tout le numéro
+  d'*Économie appliquée* imprime « tome XXXVII » quand sa propre table des auteurs porte
+  « Tome XXXVIII ». La règle « la notice n'est pas la page de titre » **ne se retourne donc pas**
+  en « l'imprimé fait toujours foi ».
+- **La correspondance folio/feuillet d'un scan n'est pas constante.** Dans le scan de 1972, c'est
+  folio + 2 jusqu'à la page 102 et folio + 1 ensuite. Une citation introuvable au feuillet
+  homonyme n'est pas une citation absente, et un contrôleur a vérifié folio par folio.
+
 ## Passage 12/15 — 2026-09-04
 
 - branche      : `claude/zen-johnson-vf0bdp` (imposée par la session, pas `main`). **Le travail du passage 11 est fusionné dans `main`**, et cette branche en partait exactement. Le travail de la nuit y est poussé, puis `origin/main` y a été fusionné à la clôture pour reprendre deux commits parus pendant la nuit, dont un relèvement de sécurité de `fast-uri`. Pull request [#97](https://github.com/J-Rbs91/Curiosity/pull/97) vers `main`, ouverte à la clôture, **onze commits, elle ne porte que le travail de cette nuit**. Tant qu'elle n'est pas fusionnée, la nuit suivante reprend depuis cette branche.

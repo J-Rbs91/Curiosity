@@ -1834,6 +1834,62 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "depassement-et-effondrement",
+    "lead": [
+      "Vous ouvrez le robinet d’eau chaude, et rien ne vient. Vous ouvrez plus grand. Dix secondes plus tard l’eau brûlante arrive, vous fermez précipitamment, et l’eau redevient froide. Personne n’a mal calculé : il a suffi que l’effet du geste arrive en retard sur le geste pour que le point visé soit franchi, dans un sens, puis dans l’autre. Il faut deux choses pour produire ce ratage, et deux seulement : une information qui arrive en retard, et une situation qui bouge vite pendant qu’on l’attend.",
+      "Au début des années 1970, une équipe du Massachusetts Institute of Technology a construit un modèle chiffré du monde entier : la population, l’industrie, la production de nourriture, les ressources, la pollution, et les liens par lesquels chacune agit sur les autres. Ils l’ont fait tourner loin dans l’avenir, et pas une fois mais plusieurs, chaque calcul donnant sa courbe. Le dessin qui revenait avait la forme du robinet, à une différence près, qui change tout : ce qui est franchi n’est pas une température, et la retombée n’est pas un retour à l’équilibre."
+    ],
+    "sections": [
+      {
+        "title": "Ce qu’un retard fait à une croissance",
+        "paragraphs": [
+          "Dans ce modèle, le retard n’est pas un raffinement ajouté à la fin. Ses auteurs écrivent, page 143, qu’il leur a fallu représenter la situation réelle « by introducing time delays between causes and their ultimate effects », en introduisant des délais entre les causes et leurs effets ultimes. Ce que recouvrent ces délais n’a rien d’abstrait : une usine construite cette année polluera pendant des décennies, un sol qu’on épuise ne le montre qu’après plusieurs récoltes. Sans eux, un modèle réagit à l’instant, et ce qui réagit à l’instant ne dépasse jamais rien.",
+          "Un délai seul ne suffit pourtant pas à provoquer une catastrophe, et la page suivante pose la condition : « Delays in a dynamic system have serious effects only if the system itself is undergoing rapid changes ». Les délais n’ont d’effets graves que si le système lui-même change vite. C’est la rencontre des deux qui est dangereuse. Un signal qui met vingt ans à parvenir décrit une situation vieille de vingt ans : dans un monde stable, cela n’a guère d’importance ; dans un monde qui double, il décrit un autre monde, deux fois plus petit que celui où la décision se prend.",
+          "Croissance exponentielle veut dire cela, et rien de plus mystérieux : une quantité qui augmente chaque année du même pourcentage ne monte pas d’un pas régulier, elle double à intervalles réguliers. Le retard, lui, ne change pas ; ce qui change, c’est ce que la quantité fait pendant qu’il court, et cela peut aller jusqu’au doublement. La page 143 décrit ce qui s’ensuit : « the growing system rises above its ultimate limit and then collapses », le système en croissance s’élève au-dessus de sa limite ultime, puis s’effondre."
+        ]
+      },
+      {
+        "title": "Trois façons d’arriver à une limite",
+        "paragraphs": [
+          "Avant d’en venir au monde, les auteurs consacrent deux pages, 91 et 92, à une question plus simple : de combien de façons une quantité qui croît peut-elle rencontrer ce qui la borne ? Ils parlent d’une capacité de charge, disons, pour fixer les idées, ce qu’un milieu peut fournir et supporter durablement. Trois figures y répondent. L’une est le dépassement : « It can overshoot the limit and then die back again », la quantité peut franchir la limite, puis retomber. Une autre montre ce même franchissement lorsqu’il abîme au passage la capacité elle-même ; le niveau où le système revient est alors plus bas que celui qu’il aurait pu tenir indéfiniment.",
+          "Le terme employé pour désigner ces formes est défini page 91, et il vaut la peine de s’y arrêter parce que tout le reste en dépend : « By behavior modes we mean the tendencies of the variables in the system (population or pollution, for example) to change as time progresses ». Un mode de comportement, ce sont les tendances des variables du système, population ou pollution par exemple, à évoluer avec le temps. Pas une valeur, pas une date : une allure de courbe.",
+          "La différence est considérable pour qui lit ce livre. Affirmer qu’une population atteindra tel chiffre telle année, et affirmer qu’elle montera, franchira sa limite et retombera, ne sont pas deux affirmations de même nature, et elles ne se réfutent pas de la même manière. C’est la seconde que le livre revendique."
+        ]
+      },
+      {
+        "title": "Ce que le modèle s’interdit d’annoncer",
+        "paragraphs": [
+          "Le lecteur qui découvre ces courbes descendantes attend une date, et le livre la lui refuse. À la page 142, à l’endroit même où il énonce ce mode fondamental, ses auteurs écrivent que « none of these computer outputs is a prediction », qu’aucune de ces sorties d’ordinateur n’est une prédiction.",
+          "La restriction va plus loin qu’une prudence d’usage. À la même page, ils bornent la validité de leurs courbes « only to the point in each output graph at which growth comes to an end and collapse begins » : jusqu’au point, sur chaque graphique, où la croissance s’arrête et où l’effondrement commence. Le modèle ne prétend donc rien dire de la descente elle-même, ni de sa vitesse, ni de sa profondeur, ni de ce qui vient après. Ce qu’il décrit, c’est la montée et la manière dont elle se termine.",
+          "Une précision de vocabulaire, tant qu’on y est. Le nom World3, sous lequel ce modèle est presque toujours désigné aujourd’hui, ne figure nulle part dans le livre de 1972, qui écrit « our world model », notre modèle du monde. Le nom est venu ensuite, et il recouvre des versions successives dont celle de 1972 est la première."
+        ]
+      },
+      {
+        "title": "Ce que les quatre auteurs ajoutent à Forrester",
+        "paragraphs": [
+          "Ce modèle n’est pas né de rien, et le livre le dit lui-même, en petits caractères. Une note de bas de page, à la page 21 : « The prototype model on which we have based our work was designed by Professor Jay W. Forrester of the Massachusetts Institute of Technology. » Le modèle prototype sur lequel ce travail se fonde a été conçu par Jay W. Forrester, et il est décrit dans son livre World Dynamics, paru en 1971. Forrester lui-même, dans la préface de la deuxième édition de ce livre, situe les deux ouvrages l’un par rapport à l’autre : « World Dynamics was first published in June 1971. The successor book, The Limits to Growth (Reference 12), became available in March 1972 ».",
+          "Ce que les quatre auteurs revendiquent en propre en devient plus net. Leur modèle d’abord, construit en quatre étapes qu’ils décrivent aux pages 90 et 91, et dont ils écrivent : « To our knowledge it is the only formal model in existence that is truly global in scope ». Les mots ensuite. Une section du livre s’intitule « The overshoot mode », et l’expression traverse le volume : page 125, « the behavior mode of the system shown in figure 35 is clearly that of overshoot and collapse » ; page 157, « in the long run they do nothing to prevent the overshoot and subsequent collapse of the system ».",
+          "On peut y voir autre chose qu’un détail de rédaction : une forme sans nom reste prisonnière du modèle qui la produit, une forme nommée et dessinée circule, s’applique ailleurs, et devient discutable par des gens qui n’ouvriront jamais un modèle.",
+          "Reste la question des voix qui parlent dans ce volume. Le Club de Rome, qui a commandité l’étude, ne l’a pas écrite : son comité exécutif signe à la fin du livre, pages 185 à 197, un commentaire distinct du rapport, qui s’ouvre sur « In inviting the MIT team to undertake this investigation, we had two immediate objectives in mind ». Ce que les commanditaires attendaient de l’enquête est écrit là, et d’une autre main que les courbes."
+        ]
+      },
+      {
+        "title": "Le motif à l’épreuve des décennies suivantes",
+        "paragraphs": [
+          "Puisque le livre n’annonce pas de date, le confronter au monde réel ne peut pas consister à vérifier une échéance. Cela consiste à comparer des allures sur des décennies. C’est le travail qu’a mené Graham Turner en 2008, dans un document du CSIRO intitulé A Comparison of the Limits to Growth with Thirty Years of Reality : trente années de données observées mises en regard des sorties du modèle. Un détail vaut d’être connu de qui voudra le lire : les sorties qu’il utilise sont celles « produced in 1974 (the second edition of LtG) », et non les courbes de 1972.",
+          "Le reproche le plus fréquent adressé à ce genre de modèle est qu’il rend ce qu’on y met : changez un paramètre, et la catastrophe s’évanouirait. L’objection s’instruit, en faisant varier les hypothèses pour voir si la conclusion tient. Une mise à jour publiée en 2021 par Herrington dans le Journal of Industrial Ecology établit que le motif de dépassement et d’effondrement résiste à ces critiques de sensibilité.",
+          "Rien de cela ne transforme pour autant ce mode en pronostic, et l’on peut soutenir l’inverse : un modèle dont les auteurs arrêtent eux-mêmes la validité au point où la chute commence ne pourra jamais être confirmé par une chute. Il se juge sur la montée, sur les liens qu’il pose entre les grandeurs, et sur ce qu’il rend visible d’un mécanisme, le retard, que chacun peut retrouver dans des systèmes bien plus petits que le monde."
+        ]
+      }
+    ],
+    "limits": [
+      "World Dynamics, de Jay W. Forrester (Wright-Allen Press, 1971), expose le modèle prototype dont celui de 1972 est le prolongement : en quels termes Forrester y pose lui-même le franchissement d’une limite, c’est ce livre qui le dit, et c’est là qu’il faudra aller le lire. Un article de 2016 de BioPhysical Economics and Resource Quality suit sa contribution propre à la notion.",
+      "La phrase citée ici est traduite de l’anglais. Sa formule française de référence est dans Halte à la croissance ?, traduction de Jacques Delaunay (Fayard, 1972), volume qui porte aussi une enquête de Janine Delaunay et une préface de Robert Lattès : c’est cette édition qu’il faudra ouvrir pour la lire en français.",
+      "Les pages indiquées sont celles de l’édition de 1972. Le livre en a connu d’autres, en 1974, en 1992 et en 2004 : ce que chacune a changé aux courbes se lit dans ces éditions-là.",
+      "Ce que la comparaison de Turner conclut est dans son rapport de 2008. Et sur ce que le livre disait réellement, un de ses coauteurs, Jørgen Randers, est revenu en 2023 dans la revue Mondes en décroissance : son article est l’endroit où le lire."
+    ]
+  },
+  {
     "conceptId": "deplacement-des-buts",
     "lead": [
       "Imaginons un employé au guichet qui refuse un remboursement pourtant justifié, en invoquant le règlement, alors que ce règlement avait été écrit précisément pour que les clients soient bien traités. Imaginons de même un enseignant qui suit son programme heure par heure sans se soucier de savoir si les élèves comprennent, parce que le programme, lui, a été respecté. Dans les deux cas, quelque chose s’est inversé : la règle, censée rendre un service possible, a fini par compter plus que ce service lui-même.",
@@ -2059,6 +2115,62 @@ export const generatedDeepenings: Deepening[] = [
       "Le travail annoncé avec le Dr Laugier est celui qui devait comparer le classement obtenu aux épreuves scolaires et au certificat d’études : c’est lui qui dirait ce que vaut l’emploi simultané des six tests. Il reste à retrouver, et l’article ne nomme jamais ce collaborateur autrement que « le Dr Laugier ».",
       "« Faire double emploi » appartient au français courant, et l’autrice ne revendique pas d’avoir forgé le terme. Savoir si quelqu’un l’avait employé avant elle pour désigner ce recouvrement entre épreuves demande une recherche plein texte dans les revues antérieures à 1922.",
       "Sa date de naissance reste en suspens : 1878 chez Annick Ohayon, 1877 dans le titre de la notice de Reuchlin. Aucune notice d’autorité ne porte son nom, et l’attribution repose sur les pièces imprimées elles-mêmes."
+    ]
+  },
+  {
+    "conceptId": "echec-a-apprendre-malgre-l-experience",
+    "lead": [
+      "On apprend une quantité de choses en les refaisant. Un créneau, une recette, un niveau de jeu : on essaie, on voit tout de suite ce que cela donne, on corrige, et en quelques tentatives on s’en tire. Le procédé est si fiable qu’on le tient pour général, et c’est sur lui que reposent les jeux d’entreprise, les études de cas et les simulateurs de gestion : mettez quelqu’un aux commandes, laissez-le se tromper, montrez-lui le résultat, recommencez.",
+      "Mark Paich et John D. Sterman ont voulu voir jusqu’où il tient quand ce qu’on pilote n’est pas une voiture mais un marché, c’est-à-dire un ensemble où les ventes agissent sur les ventes, avec du retard. Ils ont fait jouer cinq fois de suite le même genre de partie, dans des conditions qu’aucune entreprise réelle n’offre jamais. Leur résultat n’est pas que les joueurs n’apprennent rien : ils apprennent, et beaucoup. Il est que ce progrès laisse intacte la difficulté précise qu’on croyait leur faire travailler."
+    ],
+    "sections": [
+      {
+        "title": "Cinq parties dans les meilleures conditions",
+        "paragraphs": [
+          "Les 122 participants étaient inscrits dans deux sections d’un cours optionnel de dynamique des systèmes appliquée à la stratégie d’entreprise, à la Sloan School du MIT. Environ 35 pour cent étaient des étudiants de MBA de première année et 40 pour cent de deuxième année ; à peu près 10 pour cent étaient des cadres en milieu de carrière suivant un MBA pour dirigeants, 7 pour cent des étudiants de premier cycle, le reste des doctorants d’autres départements du MIT. Les deux auteurs les décrivent eux-mêmes comme des « management school students, most with several years of business experience ».",
+          "Chacun a joué cinq parties, sur cinq scénarios, dans un ordre tiré d’un plan en carré latin à cinq séquences. Ce genre de plan sert à écarter une confusion : sans lui, un scénario toujours joué en dernier paraîtrait facile alors qu’il aurait seulement profité de l’entraînement accumulé. Ici chaque scénario occupe tour à tour chaque rang, et ce qui vient de l’ordre se sépare de ce qui vient du scénario.",
+          "Restent les conditions d’apprentissage, et c’est là que le dispositif devient intéressant. Les joueurs voient immédiatement ce que leurs décisions produisent, entièrement et sans erreur : « Subjects receive immediate, comprehensive and accurate outcome feedback. » Sur leurs cinq parties, ils prennent près de deux cents jeux de décisions. Ils ne subissent aucune contrainte de temps et sont fortement intéressés à leur performance. Rien de ce qui empêche ordinairement d’apprendre d’une décision, le délai, le bruit, l’ambiguïté du résultat, l’oubli, n’est présent ici."
+        ]
+      },
+      {
+        "title": "De 13 pour cent à 63 pour cent du repère",
+        "paragraphs": [
+          "La performance de chaque partie est rapportée à un repère que les auteurs qualifient de naïf, et s’exprime en pourcentage de ce repère. Mesurée ainsi, la progression est massive, et les auteurs l’attendaient : la performance moyenne vaut 13 pour cent du repère à la première partie et 63 pour cent à la cinquième. Qui affirmerait que ces joueurs n’apprennent rien serait démenti par leurs propres chiffres.",
+          "Le niveau atteint est une autre affaire. Après cinq parties et près de deux cents jeux de décisions, la performance reste significativement inférieure à ce même repère naïf. L’écart s’est fortement réduit, il ne s’est pas refermé : au terme de l’entraînement, les joueurs font encore moins bien qu’une référence que les auteurs eux-mêmes tiennent pour rudimentaire.",
+          "Une moyenne qui monte dit que quelque chose s’est amélioré, elle ne dit pas quoi. C’est la question que traite le reste de l’expérience, et elle demande de regarder non plus le score moyen, mais la façon dont ce score se comporte selon le scénario joué."
+        ]
+      },
+      {
+        "title": "Quand les boucles du marché se renforcent",
+        "paragraphs": [
+          "Les cinq scénarios ne différaient pas par leur habillage mais par la force de deux boucles. La première est le bouche-à-oreille : plus il est puissant, plus les ventes déjà réalisées engendrent des ventes nouvelles. La seconde est la fraction de rachat, l’autre manière dont les ventes faites nourrissent les ventes à venir. Les auteurs ont fait varier ces deux grandeurs d’un scénario à l’autre, délibérément : ce sont les variables de traitement de l’expérience.",
+          "Le premier résultat porte sur le niveau : plus ces boucles sont fortes, plus la performance se dégrade. Une même personne, avec le même savoir-faire, obtient moins dans un scénario à boucles fortes que dans un scénario à boucles faibles. Ce serait un résultat mineur s’il s’arrêtait là.",
+          "Le second est celui qui donne son intérêt au concept. On peut demander si la pénalité infligée par un scénario difficile s’atténue à mesure que les parties s’accumulent : si l’expérience apprenait à tenir ces environnements, l’écart entre scénarios faciles et scénarios difficiles devrait se resserrer d’un essai au suivant. Il ne se resserre pas. Aucun des croisements entre le traitement et le rang de l’essai n’approche seulement le seuil de signification, et les auteurs concluent : « Though subjects improve on average there is no evidence to suggest they are learning to cope better with environments involving strong feedback processes. »",
+          "Les joueurs deviennent donc meilleurs sans devenir meilleurs à ce qui les met en difficulté. Ils progressent sur ce que la répétition enseigne facilement, et pas d’un pouce sur la structure de boucles elle-même. C’est cette dissociation qui rend le résultat inconfortable : un progrès moyen bien visible peut coexister avec une incapacité intacte, et il peut même la masquer, puisqu’il donne à celui qui progresse le sentiment d’avoir compris."
+        ]
+      },
+      {
+        "title": "La mauvaise perception des rétroactions",
+        "paragraphs": [
+          "La difficulté que ces cinq parties ne réduisent pas porte un nom, et ce nom n’est pas des deux auteurs. Dans leur propre texte, ils renvoient à un article que Sterman a signé seul en 1989, et le résument ainsi : les modèles mentaux avec lesquels nous conduisons nos décisions en situation dynamique sont défectueux de façons précises, et ces défauts, qu’il appelle des mauvaises perceptions des rétroactions, « cause systematically dysfunctional behavior in dynamically complex settings ».",
+          "Une rétroaction n’a ici rien de mystérieux : c’est le fait qu’une décision modifie la situation même qui servira à prendre la suivante. La percevoir mal, c’est traiter le marché comme un décor stable auquel il faudrait s’ajuster, alors qu’il réagit à ce qu’on lui fait, avec un retard qui empêche de rattacher l’effet à sa cause. La notion est antérieure à l’expérience : elle la précède, et c’est elle que l’expérience met à l’épreuve.",
+          "Le déplacement opéré par Paich et Sterman tient tout entier dans ce renversement. Montrer que des gens se trompent dans un système bouclé est une chose, et l’on peut toujours répondre qu’ils manquaient d’entraînement. Ce que leur protocole examine, c’est l’objection elle-même : il fournit l’entraînement, la rétroaction parfaite et l’intéressement, puis regarde si la répétition use l’erreur. Sur cinq essais, rien dans les données n’indique qu’elle l’use."
+        ]
+      },
+      {
+        "title": "Ce que cinq essais en laboratoire établissent",
+        "paragraphs": [
+          "Le résultat vaut d’abord pour ce qu’il est : une expérience menée sur des étudiants d’école de gestion, sur cinq essais, dans un marché simulé. Les auteurs ne prétendent nulle part que des dirigeants aguerris échoueraient de la même manière ; à la fin de leur document de travail de 1992, ils annoncent au contraire des expériences en cours avec de tels sujets.",
+          "Le pas vers le monde réel, ils le présentent comme une hypothèse à éprouver empiriquement, non comme un acquis. L’argument est pourtant net dans sa forme : si un marché simulé, où le résultat de chaque décision revient tout de suite, complet et exact, résiste à cinq passages, un marché réel, où les résultats arrivent tard, mêlés à tout le reste et jamais imputables avec certitude, n’a guère de raison d’enseigner mieux. C’est une suggestion des auteurs, et ils demandent qu’on la mette à l’épreuve plutôt que de la tenir pour démontrée.",
+          "Deux contresens restent à écarter. Le premier ferait de ce travail une explication des emballements et des effondrements de marché : ce n’est pas ce dont il s’agit ici, où l’objet est ce qu’une structure de boucles fait à ceux qui la pilotent, et non ce qu’elle produit toute seule. Le second y verrait un verdict sur l’intelligence des joueurs. Ils avaient choisi un cours de dynamique des systèmes, ils étaient informés, motivés et sans contrainte de temps : c’est exactement ce qui rend leur échec instructif."
+        ]
+      }
+    ],
+    "limits": [
+      "L’expérience a paru sous sa forme publiée en décembre 1993 dans Management Science, aux pages 1439 à 1458, et c’est cette version que le chapitre d’où vient la citation reproduit, avec l’autorisation de l’éditeur. C’est elle qui fait référence, et c’est elle qu’on ouvrira pour suivre la démonstration au-delà de ce que son résumé en annonce.",
+      "La notion de mauvaise perception des rétroactions vient de l’article que Sterman a publié seul en 1989 dans Organizational Behavior and Human Decision Processes. De quelles façons précises nos modèles mentaux y sont dits défectueux, et sur quelles expériences, ces trente-cinq pages le disent, et il faudra les lire.",
+      "Le chapitre d’où la citation est tirée compte trente pages ; l’extrait mis en ligne par l’éditeur s’arrête au bout de dix, sur son résumé et ses premières sections, avant celles qui exposent la simulation et les résultats. Le document de travail déposé au MIT en juillet 1992 est l’autre chemin vers ce marché simulé et ses règles.",
+      "Deux points restent ici sans réponse, et ce document de travail les traite : quelle règle applique exactement le repère naïf auquel les scores sont rapportés (p. 12), et ce que deviennent, d’un essai au suivant, les poids que les joueurs accordent à chaque indice lorsque les auteurs estiment leurs règles de décision (p. 17 et 19 à 22)."
     ]
   },
   {
@@ -2324,6 +2436,67 @@ export const generatedDeepenings: Deepening[] = [
       "La position de Maurice de Montmollin arrive ici par ce qu’en disent Hubault et Bourgeois, c’est-à-dire par ceux qui la combattent, et une dispute simplifie toujours la position qu’elle vise. Son propre ouvrage sur l’organisation du travail est le seul endroit où il se défend lui-même : le lire est la seule manière de mesurer ce qu’on lui fait dire.",
       "Tout ce qui précède tient à un unique texte, publié en 2004. Ce que Hubault a pu, seul et par la suite, prolonger ou reformuler se trouve dans ses publications ultérieures : la position a peut-être bougé depuis, et c’est là qu’on le verra.",
       "L’opposition entre tâche-horizon et tâche-moyen ne restitue qu’une partie du débat entre courants de l’ergonomie sur la finalité de la discipline. L’article de 2004 mentionne les autres positions sans les développer ; chacune de ces mentions est un fil à tirer, et l’article en donne les références."
+    ]
+  },
+  {
+    "conceptId": "etat-d-equilibre-global",
+    "lead": [
+      "Proposez à qui vous voudrez que la production et la population d’un pays cessent d’augmenter, et la même image surgira aussitôt : un monde arrêté, où l’on refait chaque année ce qu’on a fait l’an dernier, avec les mêmes machines et les mêmes gens aux mêmes places. Rien n’ouvre, rien ne ferme, personne ne change de métier. L’objection tombe avant même la discussion, et elle est sérieuse : personne n’a envie de vivre dans un pays mis sous cloche.",
+      "En 1972, quatre chercheurs du Massachusetts Institute of Technology publient The Limits to Growth, un rapport commandé par le Club de Rome. Un chapitre y décrit ce qui se passerait si deux grandeurs seulement, le nombre d’humains et la masse d’équipements productifs accumulés, cessaient d’augmenter. Ils attendent l’objection du monde arrêté et y répondent par une opération de précision : dire exactement ce qui, dans cet état, serait tenu fixe. Trois exigences y suffisent, et elles sont bien plus étroites qu’on ne le croit en les entendant."
+    ],
+    "sections": [
+      {
+        "title": "Deux grandeurs constantes, et pas une de plus",
+        "paragraphs": [
+          "La première exigence nomme ce qui ne bouge plus, et la liste est courte : le nombre d’habitants, et le capital, c’est-à-dire l’ensemble des usines, des machines et des équipements en service. Deux stocks, comptés à l’échelle du monde. Tout ce que l’on range d’ordinaire sous le mot croissance et qui n’est ni l’un ni l’autre échappe à cette exigence.",
+          "Les auteurs prennent soin de le dire eux-mêmes, un peu plus loin : « Population and capital are the only quantities that need be constant in the equilibrium state. » Les seules quantités. Et ils déroulent dans la foulée ce que cela laisse ouvert : des entreprises peuvent grandir ou disparaître, des populations locales augmenter ou diminuer, la répartition des revenus devenir plus égale ou moins égale.",
+          "La différence est celle d’un total et de ses parties. Un effectif mondial stable n’interdit ni les naissances ni les déplacements ; une masse d’équipements stable n’interdit ni de bâtir une usine ni d’en fermer une autre. Ce qui est visé, c’est la somme, et elle seule. Cela implique qu’un tel état ne se reconnaîtrait sur aucune décision prise localement : il ne se lit qu’à l’échelle où il a été défini."
+        ]
+      },
+      {
+        "title": "Ce qui continue quand le total ne bouge plus",
+        "paragraphs": [
+          "Le détail de cette première exigence dit encore autre chose. Le nombre d’habitants tient parce que les naissances égalent les décès ; le capital tient parce que l’investissement compense exactement l’usure. Ce ne sont pas des flux arrêtés, ce sont des flux qui se répondent. Le niveau d’une baignoire reste constant aussi bien robinet fermé qu’avec un robinet ouvert et une bonde qui laisse partir autant d’eau : le niveau ne bouge dans aucun des deux cas, et ce ne sont pas les mêmes baignoires.",
+          "D’où la deuxième exigence, qui choisit entre ces régimes : les taux d’entrée et de sortie, naissances, décès, investissement et amortissement, sont maintenus au minimum. Un même effectif constant s’obtient en effet avec des vies courtes et des naissances nombreuses, ou avec des vies longues et peu de naissances ; une même masse d’équipements, avec du matériel qui s’use vite et qu’on remplace sans cesse, ou avec du matériel durable. La constance ne départage pas ces situations, l’exigence de minimum les départage.",
+          "On peut comprendre cette seconde condition comme le coût d’entretien de l’état : plus les flux sont faibles, moins il faut produire et remplacer chaque année pour maintenir la même population et le même stock d’équipements. C’est une exigence sur ce que l’état coûte à tenir, et elle ne dit toujours rien du niveau auquel les deux stocks devraient se tenir."
+        ]
+      },
+      {
+        "title": "Le niveau que la société se donne",
+        "paragraphs": [
+          "La troisième exigence est la plus inattendue, parce qu’elle rend au lecteur ce qu’il croyait qu’on lui retirait : les niveaux de capital et de population, ainsi que le rapport entre les deux, sont fixés conformément aux valeurs de la société. Aucun chiffre n’est prescrit. Rien dans cet état ne dit combien d’humains, combien d’usines, ni dans quelle proportion. C’est une forme, pas une quantité.",
+          "Les auteurs en donnent la raison en une phrase, et le mot qu’ils choisissent tranche avec la lecture qu’on fait souvent d’eux : « The object in accepting the above three statements is to create freedom for society, not to impose a straitjacket ». Créer de la liberté pour la société, non lui imposer une camisole. L’argument est que ces trois conditions, une fois acceptées, laissent ouvert tout le reste, à commencer par le choix des niveaux eux-mêmes.",
+          "Cette ouverture n’est pas une précaution de style. Le modèle qui sert à explorer ces trajectoires, écrivent-ils, « cannot tell us how to attain these levels » : il ne dit pas comment y parvenir. Il montre des états possibles et ce qui les rendrait possibles ; le chemin, les institutions et les décisions restent entiers à la charge de qui voudrait les emprunter."
+        ]
+      },
+      {
+        "title": "Le mot leur appartient, l’idée est plus ancienne",
+        "paragraphs": [
+          "Le mot équilibre ne leur est pas venu tout seul. Ils racontent l’avoir retenu après une longue discussion pour nommer cet état de population et de capital constants, et ils ouvrent le passage par une précaution : « We are by no means the first people in man’s written history to propose some sort of nongrowing state for human society. » Ils ajoutent que ceux qui les ont précédés ont donné à cet état autant de noms différents que de sens différents.",
+          "Une note de bas de page les nomme : Platon dans les Lois, Aristote dans la Politique, Malthus en 1798, John Stuart Mill en 1857, Harrison Brown en 1954, Kenneth E. Boulding en 1966, E. J. Mishan en 1967, Herman E. Daly en 1971. Ce sont les racines de la notion, et les auteurs les désignent eux-mêmes. Ce que chacun de ces textes entend par une société qui ne croît plus, ce sont eux qu’il faudra lire pour le savoir, précisément parce qu’ils ne s’accordent pas.",
+          "Leur définition la plus élémentaire, donnée quelques pages avant les trois exigences, ajoute un mot qu’il vaut la peine de peser : population et capital y sont pour l’essentiel stables, « with the forces tending to increase or decrease them in a carefully controlled balance ». Les forces qui poussent à la hausse et à la baisse ne s’évanouissent pas : elles sont tenues en balance, et tenues avec soin, donc par quelqu’un. L’équilibre dont il s’agit est un état entretenu, pas un état de repos."
+        ]
+      },
+      {
+        "title": "Un état décrit, un programme absent",
+        "paragraphs": [
+          "Ce que ces pages décrivent est un ensemble de conditions physiques, accompagné d’une série de politiques essayées dans le modèle. Ce n’est pas un programme politique, et les auteurs le signalent à l’endroit même où ils posent leurs trois exigences : il n’existe pas de modèle formel des conditions sociales d’un état d’équilibre. Qui déciderait, par quelles institutions, au prix de quelle contrainte et sur qui : rien de tout cela n’est traité là.",
+          "La première réception française en donne un signe intéressant. Le compte rendu que Jacqueline Hecht publie dans la revue Population en 1973 retient la liste des politiques testées, celle de la figure 46, plutôt que la définition de l’état lui-même. Les mesures se discutent, se chiffrent, se contestent ; une définition qui énonce seulement ce qui resterait constant offre beaucoup moins de prise.",
+          "Quant au rapprochement avec la décroissance, devenu courant en français, il vient des lecteurs et non du livre, qui ne nomme pas cette notion. C’est d’ailleurs dans une revue qui la porte dans son titre, Mondes en décroissance, que Jørgen Randers, l’un des quatre auteurs, est revenu en 2023 sur ce que le rapport disait réellement, cinquante ans plus tôt."
+        ]
+      },
+      {
+        "title": "Cinquante ans plus tard, le scénario qui tient",
+        "paragraphs": [
+          "En 2021, Gaya Herrington confronte les trajectoires du modèle aux données observées depuis. Un point de son travail touche directement l’état d’équilibre : parmi les scénarios qu’elle compare, celui qu’elle nomme Stabilized World, le scénario d’équilibre, est le seul où le déclin est évité.",
+          "Deux précisions empêchent d’en tirer plus qu’il n’y a. Elle travaille sur une version révisée du modèle, celle de 2004, et non sur celui de 1972 ; et un scénario n’est pas une prévision, c’est ce qu’un modèle produit sous un jeu d’hypothèses données. Ce que ce résultat montre est plus modeste et plus solide : l’état d’équilibre n’était pas une clause de style en fin de rapport, c’est la seule des trajectoires examinées qui ne finisse pas par redescendre."
+        ]
+      }
+    ],
+    "limits": [
+      "La formule qui fait référence en français est celle de Halte à la croissance ?, traduction de Jacques Delaunay parue chez Fayard en 1972. Ce qu’elle fait des deux mots décisifs, equilibrium et stagnation, c’est cette édition qui le dit, et son choix est fixé depuis un demi-siècle.",
+      "Les pages citées ici sont celles de l’édition de 1972. Le livre a eu des suites, en 1974, 1992 et 2004, et ce sont ces volumes qui portent ce que les auteurs ont fait de l’état d’équilibre après vingt puis trente années de plus : c’est là qu’il faudra aller voir si les trois exigences ont bougé.",
+      "Ce que l’un des quatre, Jørgen Randers, répond aujourd’hui à la question de savoir ce que le rapport disait réellement, il l’écrit dans son article de 2023, en co-auteur qui a vu la réception de l’intérieur. Et le compte rendu de Jacqueline Hecht, deux pages de la revue Population en 1973, porte le jugement d’une démographe sur un livre qui venait de paraître : le fascicule imprimé en donne la fin."
     ]
   },
   {
@@ -3267,6 +3440,61 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "ligne-d-approvisionnement-ignoree",
+    "lead": [
+      "Vous commandez un plat au restaurant. Il ne vient pas. Le serveur repasse, vous commandez à nouveau ; il repasse encore, vous commandez une troisième fois, puisque rien n’est arrivé. La règle est simple, elle regarde la table et corrige ce qui manque, et elle conduit droit à l’absurde : « Using this rule one would order another meal each time the waiter passed by… Soon your table would be piled high with redundant dinners. » C’est John D. Sterman qui pose cette scène, à la page 9 d’une étude écrite en 1987, avant d’en venir aux entrepôts.",
+      "Un magasin, un atelier, une usine sont dans la même position, à ceci près que le délai n’est pas de quelques minutes mais de plusieurs semaines. Entre la commande passée et la marchandise reçue, il existe un intervalle pendant lequel le stock reste bas alors même que ce qu’il faut pour le remplir existe déjà, quelque part, en chemin. Toute la question tient à savoir si celui qui décide compte ce qui roule, ou seulement ce qu’il voit sur ses étagères."
+    ],
+    "sections": [
+      {
+        "title": "Ce qui est en route, et où cela se trouve",
+        "paragraphs": [
+          "Sterman donne à cette quantité en chemin un nom, supply line, et une composition précise. Dans son expérience, elle est « the sum of orders in the mail delays, the backlog of the subject’s supplier (if any), and the beer in the shipping delays » (p. 16) : les commandes encore en route vers le fournisseur, celles qu’il a reçues et n’a pas encore servies, et la marchandise expédiée mais pas encore livrée. Trois endroits, dont aucun n’est chez soi.",
+          "C’est ce qui rend l’omission facile. Le stock, lui, se voit : il est sur les étagères, un inventaire le donne. Ce qui est en route ne se trouve nulle part en un seul morceau, puisqu’il est réparti entre le courrier, le carnet du fournisseur et les camions. Une règle de décision qui compare le stock à sa cible et commande la différence reste parfaitement défendable, à ceci près qu’elle recommence le même calcul à chaque période, sans rien retrancher de ce qu’elle a demandé la fois d’avant.",
+          "Un seul manque se comble alors plusieurs fois. Puis tout arrive ensemble, le stock déborde, les commandes s’arrêtent net, et le fournisseur reçoit à son tour une demande qui varie plus fort que celle à laquelle son client faisait face."
+        ]
+      },
+      {
+        "title": "Un plateau de jeu, quarante-quatre joueurs",
+        "paragraphs": [
+          "L’expérience se déroule sur un plateau. Sterman fait jouer le jeu de la bière, une simulation de rôles reproduisant un système industriel de production et de distribution, et il prend soin d’en situer l’origine ailleurs que chez lui : mis au point au MIT pour initier des étudiants en gestion à la dynamique économique et à la simulation, l’exercice est déjà ancien quand il écrit. « In use for nearly three decades, the game has been played all over the world » (p. 10).",
+          "Quarante-quatre joueurs y tiennent chacun un maillon de la chaîne et passent, période après période, une commande à leur fournisseur. Ce que Sterman en tire n’est pas une anecdote sur des erreurs de débutants. Il écrit une règle de décision générale, puis cherche pour chaque joueur les valeurs de paramètres qui reproduisent au plus près les commandes réellement passées (p. 17 à 20). Il ne demande donc pas aux joueurs pourquoi ils ont commandé : il ajuste une formule sur leur comportement, et lit ensuite ce que cette formule dit d’eux.",
+          "Le résultat d’ensemble tient en une phrase : « Inspection of the results shows that most subjects failed to account adequately for the supply line » (p. 20). Non pas que les joueurs soient mauvais, mais que la plupart tiennent trop peu compte de ce qu’ils ont déjà commandé."
+        ]
+      },
+      {
+        "title": "Un nombre entre zéro et un",
+        "paragraphs": [
+          "Le paramètre qui porte cette conclusion, que Sterman note β, mesure la part de ce qui est en route dont le joueur tient compte au moment de commander. Il en donne les deux bouts : « If β = 1, the subjects fully recognize the supply line and do not double order. If β = 0, orders placed are forgotten until they arrive » (p. 17). Entre les deux, tous les degrés existent, et c’est là que la question devient intéressante : ignorer n’est pas ici un oui ou un non, c’est une fraction.",
+          "Cette fraction vaut 0,34 en moyenne. Un joueur ordinaire ne défalque donc qu’un tiers environ de ce qu’il a déjà demandé, et recommande les deux autres tiers. Ils sont cinq sur quarante-quatre à faire mieux que les deux tiers : « only five subjects (11%) accounted for more than two-thirds of the supply line » (p. 21). La valeur la meilleure dans les simulations, elle, est de 1, c’est-à-dire le compte entier de ce qui est en chemin.",
+          "On voit alors pourquoi une meilleure prévision ne réglerait rien. Ce paramètre ne porte pas sur ce que le marché va demander, mais sur ce que le joueur a lui-même déjà envoyé. Se tromper moins sur l’avenir laisse entière une erreur qui porte sur le présent."
+        ]
+      },
+      {
+        "title": "Grizzly et Suds, deux issues du même choc",
+        "paragraphs": [
+          "Deux équipes montrent que la même règle, avec deux valeurs différentes, produit deux mondes. L’usine Grizzly joue avec un paramètre estimé à zéro : « By ignoring the supply line the factory’s ordering policy is highly destabilizing » (p. 21), et son facteur d’amplification atteint 290 %. Ce qu’elle renvoie vers l’amont varie près de trois fois plus fort que ce qu’elle a reçu.",
+          "L’usine Suds, elle, compte ce qui est en route en entier, et même un peu plus : son paramètre vaut 1,05. Elle subit pourtant un choc plus fort que Grizzly et le transmet plus faible. Ses commandes montent puis redescendent avant que le retard accumulé n’atteigne son maximum, parce que le joueur voit que « sufficient orders to correct the problem are already in the pipeline » (p. 22). Le facteur tombe à 85 % : « the amplification factor is 85%, meaning the parameters which characterize the factory attenuate demand shocks rather than exacerbating them ».",
+          "Ce seul cas suffit à interdire d’en faire une fatalité. L’amplification n’est pas inscrite dans la longueur des délais ni dans la forme de la chaîne : elle dépend d’un nombre, et ce nombre décrit une manière de décider, non une nature humaine."
+        ]
+      },
+      {
+        "title": "Non pas l’oubli, mais l’agrégation",
+        "paragraphs": [
+          "Une lecture court sur ce genre de résultat, et il faut l’écarter parce que Sterman l’écarte lui-même : les gestionnaires oublieraient ce qu’ils ont commandé. Il répond, page 25 : « It is not credible that individual managers forget that they have goods on order. The problem in the real economy is one of aggregation. » L’oubli pur n’est chez lui que la borne basse du paramètre, le cas où β vaut zéro, et non ce qu’il observe chez les décideurs.",
+          "La prudence va plus loin, et elle porte sur son propre résultat : « Verification of the supply line hypothesis requires further empirical work. » Ce qui est acquis à ce stade tient à quarante-quatre joueurs autour d’un plateau, et à une ressemblance de forme entre les oscillations du jeu et celles de la production industrielle américaine de 1947 à 1987. C’est peu pour une loi.",
+          "C’est beaucoup, en revanche, pour une hypothèse. Là où l’on aurait parlé d’imprévoyance ou de panique, il y a désormais une grandeur, une manière de l’estimer sur des décisions réelles plutôt que sur des déclarations, et deux cas opposés qui montrent ce qu’elle change. Le déséquilibre cesse d’être un trait de caractère pour devenir un terme absent d’un calcul, ce qui n’est pas la même chose : un trait de caractère se déplore, un terme absent s’ajoute."
+        ]
+      }
+    ],
+    "limits": [
+      "Le même travail a paru en mars 1989 dans Management Science, et les deux états du texte ne coïncident pas mot pour mot : là où celui de 1987 écrit « the larger the quantity on order must be », sa reprise ultérieure écrit « the larger the supply line must be ». Ce que l’article de 1989 reformule se lit dans ses pages 321 à 339.",
+      "Cette reprise, un extrait de neuf pages tiré d’un chapitre d’encyclopédie, est un composite autorisé de l’article de 1989 et de Business Dynamics, le livre que Sterman publie en 2000, et rien n’y dit quelle phrase vient de laquelle. Ce que ces mille huit pages font de la ligne d’approvisionnement, il faudra les ouvrir pour le voir.",
+      "« Ligne d’approvisionnement » est un rendu littéral de supply line, qu’aucun usage francophone attesté n’appuie : la revue de littérature que Vincent Giard et Mustapha Sali publient en 2012, et qui fixe le vocabulaire français du phénomène, effet coup de fouet et jeu de la bière, ne cite Sterman dans aucune de ses références.",
+      "Qui a construit le jeu de la bière, Sterman ne le dit pas. Une histoire de l’exercice a paru en 2024 dans System Dynamics Review, sous la signature d’Ignacio J. Martinez-Moyano : ses étapes s’y suivent, depuis les travaux de Jay Forrester chez General Electric."
+    ]
+  },
+  {
     "conceptId": "loi-de-campbell",
     "lead": [
       "Imaginons un centre d’appel dont la performance se résume à un seul chiffre : la durée moyenne d’un appel. Dès que ce chiffre commande les primes des employés, il ne faut pas longtemps pour apprendre à le faire baisser sans améliorer le service rendu : on raccroche plus vite, on transfère l’appelant, on met fin à l’appel avant d’avoir réglé le problème. Le chiffre progresse. Ce qu’il devait mesurer, la qualité réellement rendue, ne progresse pas forcément, et peut même se dégrader.",
@@ -3653,6 +3881,123 @@ export const generatedDeepenings: Deepening[] = [
       "Qui a imprimé « Swiss cheese model » le premier, et quand, reste ouvert. La piste passe par les publications de Rob Lee, alors à la tête du bureau d’enquête sur la sécurité aérienne à Canberra, et par un ouvrage collectif de 1995, cité sous le nom de Maurino et coll., où Larouzée et Le Coze signalent que l’idée est déjà partiellement exploitée.",
       "Le modèle a été discuté, et vivement : Perneger, Shorrock, Leveson et Hollnagel lui ont opposé des objections dont rien n’est repris ici, et l’article de Larouzée et Le Coze, en 2020, les recense et les pèse.",
       "La figure, elle, est dans l’article, en accès libre : la regarder soi-même reste la meilleure façon de juger ce qu’ils en disent. Aucune traduction française publiée n’en est connue : c’est en anglais qu’il faudra le lire."
+    ]
+  },
+  {
+    "conceptId": "modele-mental-et-modele-de-simulation",
+    "lead": [
+      "Demandez à quelqu’un qui travaille depuis dix ans dans le même service qui prévient qui lorsqu’une livraison prend du retard, quelle information arrive sur quel bureau, ce que chaque équipe cherche à obtenir de son côté. Sa réponse sera fine, nuancée, souvent plus juste qu’aucune procédure écrite. Demandez-lui maintenant ce qu’il adviendra des délais si l’on double la taille du stock d’avance : la réponse viendra encore, avec la même assurance tranquille. Celle-là, elle, a de bonnes chances d’être fausse.",
+      "L’écart entre ces deux réponses est le sujet de Jay W. Forrester, l’ingénieur du Massachusetts Institute of Technology qui a fondé la dynamique des systèmes. Connaître les pièces d’un ensemble et savoir ce que cet ensemble va faire sont pour lui deux opérations distinctes. La première nous réussit remarquablement bien. La seconde ne s’obtient pas en réfléchissant plus fort à la première."
+    ],
+    "sections": [
+      {
+        "title": "Ce que la tête détient d’un système",
+        "paragraphs": [
+          "Forrester appelle modèle mental l’image qu’une personne porte en elle de l’ensemble où elle agit : son entreprise, sa ville, sa famille. Le mot n’a rien de dépréciatif sous sa plume, et son premier geste est de reconnaître ce que cette image contient : « Mental models are rich and often sufficiently accurate about the pieces of a system ». Riches, et souvent assez exacts sur les pièces d’un système.",
+          "Il dit lesquelles, et l’énumération vaut d’être lue lentement : « what information is available, who is connected to whom, what are different people trying to achieve ». Quelle information est disponible, qui est relié à qui, ce que chacun cherche à obtenir. Ce sont là les données les plus difficiles à rassembler autrement : aucun organigramme ne les porte, aucune base ne les enregistre, et elles vieillissent le jour même où on les écrit.",
+          "La raison de fond est qu’il n’existe pas d’autre endroit où elles soient. Aucune tête ne contient une famille, une ville, une école, un pays ni une entreprise, écrit Forrester : ce que nous manipulons quand nous parlons de notre organisation est déjà une représentation, et non la chose. Sa figure de la page 10 range d’ailleurs le stock d’information que le modèle mental détient parmi ses forces majeures, non parmi ses faiblesses."
+        ]
+      },
+      {
+        "title": "Retenir n’est pas déduire",
+        "paragraphs": [
+          "Le refus de Forrester porte sur un verbe précis, et sur lui seul : déduire. Ce que nous savons des pièces ne nous dit pas ce que leur assemblage va faire. Entre l’inventaire exact d’un ensemble et le comportement qui en résulte, il y a un calcul, et ce calcul, la tête ne le mène pas de façon fiable.",
+          "Il le montre par une échelle plutôt que par un principe. Une personne comprend parfaitement ce qui se passe quand elle remplit un verre d’eau, « A person understands filling a water glass » : elle voit le niveau monter, elle ferme le robinet au bon moment. Mais dès qu’on passe à un système « only five times as complicated », l’intuition décroche. Il ne faut pas un monde pour la mettre en défaut, il suffit de cinq fois un verre d’eau.",
+          "L’asymétrie de sa phrase mérite d’être remarquée, parce qu’elle est facile à durcir. Ce qu’il accorde, il l’accorde des pièces d’un système, sans autre qualificatif. Ce qu’il refuse, il le refuse sur les éléments connus d’un système complexe. Et son mot est unreliable : on ne peut pas s’y fier, ce qui ne revient pas à dire que la chose serait impossible. La thèse n’est donc ni que l’intuition est nulle, ni qu’elle vaudrait partout : elle tient pour le verre d’eau et lâche pour ce qui boucle."
+        ]
+      },
+      {
+        "title": "Le comportement qu’implique une structure",
+        "paragraphs": [
+          "À ce calcul que la tête ne fait pas, Forrester oppose la simulation sur ordinateur, et il est très précis sur ce qu’elle apporte : « a computer simulation can, without doubt, reveal the behavior implicit in the structure from which it is constructed ». Elle peut, à coup sûr, révéler le comportement implicite dans la structure à partir de laquelle on l’a construite. Une page plus tôt, la même idée : « Only by using computer simulation can the implied behavior be revealed. »",
+          "Chaque mot de cette phrase compte, et le plus important en est la fin. Ce que la machine révèle n’est pas le comportement du monde : c’est le comportement qu’implique la structure qu’on lui a donnée. Si les hypothèses sont fausses, la simulation en déduira fidèlement des conséquences fausses. Elle n’est pas un oracle sur le réel, elle est un exécutant intraitable de ce qu’on a écrit.",
+          "Forrester ne franchit pas ce pas à la légère. Quand un modèle produit un comportement surprenant, la première chose à faire est d’y chercher une erreur de modèle ; ce n’est qu’ensuite, « as a model becomes better », qu’il accorde à la surprise une autre valeur : « surprising behavior often does not reveal model errors but instead begins to tell something about real life that was not previously realized ». Le passage vers le réel existe donc, mais il vient au bout d’une séquence, et il change de verbe : le modèle ne révèle pas le monde, il commence à en dire quelque chose."
+        ]
+      },
+      {
+        "title": "Deux représentations, dont aucune n’est le système",
+        "paragraphs": [
+          "L’opposition que Forrester construit n’est pas celle du modèle et de la réalité. Le modèle mental est une représentation, le modèle de simulation en est une autre, et les deux sont de nous. Ce qu’il institue entre elles est une répartition du travail : la tête détient l’information, la machine en tire le comportement, et la question de savoir si l’ensemble ressemble au monde reste entière, qui se traite ailleurs.",
+          "Cela rend trompeuse l’idée d’un calcul qui viendrait remplacer l’intuition. Un modèle de simulation ne se construit pas à partir de rien : ce qu’on y met vient d’abord de ce que des gens savent de leur système. Forrester va jusqu’à suggérer, page 12, que l’information sur le monde se trouve principalement dans la tête de ceux qui y travaillent. Il l’avance sans mesure ni référence à l’appui, et c’est bien une suggestion, non un résultat."
+        ]
+      },
+      {
+        "title": "Les quatre offices d’un modèle formel",
+        "paragraphs": [
+          "La figure de la page 10 énumère ce que Forrester attend d’un modèle de simulation, et l’ordre de la liste en dit long : rendre explicites les modèles mentaux, en découvrir les incohérences, déterminer les implications futures, améliorer les modèles mentaux.",
+          "Le premier et le dernier point se répondent. Le modèle formel part du modèle mental et y revient : il n’est pas là pour le congédier, mais pour l’expliciter, l’éprouver, le corriger. Entre les deux se tiennent les offices que la tête n’assure pas seule : voir que deux choses qu’on croit ensemble ne peuvent pas être vraies en même temps, et suivre jusqu’au bout ce que la structure engendre dans le temps.",
+          "Forrester écrit à la première personne, et le bénéfice qu’il rapporte est de cet ordre : « I have usually had such new insights from models ». Ce qu’il en tire est un aperçu nouveau, quelque chose qu’il ne voyait pas avant, et non une prédiction qu’il aurait vérifiée."
+        ]
+      },
+      {
+        "title": "Une position d’auteur, et une mesure",
+        "paragraphs": [
+          "Le texte de 2009 où se lit cette distinction est un exposé d’introduction, écrit à la première personne par quelqu’un qui défend une position tenue de longue date. Forrester y interroge des salles, « I sometimes ask an audience », il argumente, il donne des exemples. Il ne rapporte pas une enquête, et rien dans ces pages ne mesure l’échec de déduction qu’il affirme.",
+          "La mesure existe ailleurs. Linda Booth Sweeney et John D. Sterman, dans « Bathtub dynamics: initial results of a systems thinking inventory », mettent des sujets réels devant des tâches de ce genre et y constatent l’échec que Forrester énonce. L’affirmation d’auteur trouve là un appui expérimental qu’elle n’avait pas.",
+          "Le même article signale que l’explication ordinairement donnée à cet échec, dans cette littérature, est la rationalité limitée, et ce n’est pas celle de Forrester. Le désaccord porte sur la cause, non sur le fait, et il reste ouvert."
+        ]
+      }
+    ],
+    "limits": [
+      "L’expression modèle mental n’est pas de Forrester, et il ne la revendique nulle part. L’origine qu’on lui retient communément est The Nature of Explanation, le livre de Kenneth Craik paru en 1943, où se trouve l’idée d’un modèle réduit du monde extérieur porté dans la tête. Ce que le terme veut dire dans la psychologie qui l’emploie depuis, c’est là qu’il faudra aller le lire.",
+      "Depuis quand Forrester tient cette position, l’exposé de 2009 ne le dit pas : il ne se présente pas comme une première formulation. Sa bibliographie renvoie aux propres livres de l’auteur, 1961, 1968, 1969 et 1971 ; c’est dans ceux-là que se lira l’état antérieur de la thèse.",
+      "Deux articles parus en 1994 dans la System Dynamics Review restent à ouvrir : « System dynamics, systems thinking, and soft OR », de Forrester, et « Learning in and about complex systems », de John D. Sterman. L’accès en est fermé. En quels termes chacun y pose le rapport du modèle formel au modèle mental, et laquelle des deux explications de l’échec de déduction l’emporte, c’est en les lisant qu’on le saura.",
+      "Enfin, la suggestion selon laquelle l’information sur les systèmes sociaux se tiendrait principalement dans la tête des gens est avancée page 12 sans mesure ni référence. Elle est lourde de conséquences pour tout le reste, et elle n’est pas établie en l’état."
+    ]
+  },
+  {
+    "conceptId": "modele-mondial-et-modes-de-comportement",
+    "lead": [
+      "D’un calcul qui parle de l’avenir, on attend un chiffre et une date : tant d’habitants en 2050, tant de barils en 2035. C’est ainsi qu’on juge une prévision de la météo, en mesurant l’écart entre le nombre annoncé et ce qui est arrivé. C’est ainsi, aussi, qu’a été lu pendant cinquante ans le livre que quatre auteurs ont publié en 1972 sous le titre The Limits to Growth : on y a cherché des dates d’épuisement, on les a confrontées aux faits, et on a conclu tantôt que le calcul s’était trompé, tantôt qu’il avait vu juste.",
+      "Or ce livre consacre plusieurs de ses pages à prévenir qu’il ne fournit pas ce genre de nombre et qu’il ne peut pas le fournir. Ce qu’il propose à la place se décrit avec des mots ordinaires : la forme d’une courbe. Une quantité peut monter puis se stabiliser, monter puis décliner doucement, monter trop haut puis chuter. Ces allures, ses auteurs les appellent des modes de comportement, et c’est sur elles, non sur les valeurs, qu’ils demandent qu’on les juge."
+    ],
+    "sections": [
+      {
+        "title": "Des courbes dont l’échelle a été retirée",
+        "paragraphs": [
+          "Les figures du livre ont une particularité qu’on remarque à peine : elles n’ont pas d’échelle verticale. Les courbes montent et retombent sans que rien, sur le côté, ne dise à quelle hauteur. L’axe du temps commence en 1900 et court jusqu’en 2100, mais il est laissé volontairement imprécis. Le procédé est revendiqué : les auteurs écrivent avoir « deliberately omitted the vertical scales » et rendu l’échelle des temps vague, pour qu’on regarde l’allure générale des sorties de la machine plutôt que des valeurs numériques qui, disent-ils, ne sont qu’approximatives.",
+          "Un graphique sans graduation ne se lit plus de la même façon : on ne peut y prendre ni un point ni une année. Il ne reste que le dessin : cette courbe monte-t-elle sans fin, s’aplatit-elle, passe-t-elle par un sommet avant de redescendre, et si elle redescend, le fait-elle lentement ou d’un coup ? Voilà ce qu’ils appellent un mode de comportement. Dès la présentation de leur premier modèle, ils écrivent s’intéresser « only in the broad behavior modes of the population-capital system », aux grandes allures de l’ensemble formé par la population et les équipements industriels, chacun nourrissant la croissance de l’autre.",
+          "Le déplacement est plus profond qu’il n’y paraît. La question « en quelle année ? » n’a pas de réponse, et non parce qu’elle serait cachée : le dessin a été construit pour ne pas la porter. Restent des questions d’un autre ordre. Cette grandeur finit-elle par se retourner ? Le retournement vient-il avant ou après tel autre ? Que faudrait-il changer pour que la forme change ?"
+        ]
+      },
+      {
+        "title": "Ce que la structure des boucles décide",
+        "paragraphs": [
+          "Pour comprendre pourquoi ces auteurs se fient à la forme plus qu’aux nombres, il faut voir de quoi leur modèle est fait. Une boucle n’y est rien d’autre qu’un circuit qui revient sur lui-même : plus il y a de gens, plus il naît d’enfants, donc plus il y a de gens. Plus une industrie accumule d’équipements, plus elle produit, et plus elle peut en accumuler. D’autres circuits freinent au lieu d’amplifier, ainsi d’une population qui croît plus vite que sa nourriture. Le modèle est un assemblage de tels circuits, avec des retards entre une cause et son retour.",
+          "L’affirmation centrale porte sur ce qui, dans cet assemblage, commande le résultat : « the model’s feedback loop structure is a much more important determinant of overall behavior than the exact numbers used to quantify the feedback loops », écrivent-ils page 121. La phrase suivante en tire la conséquence, vérifiable dans le modèle lui-même : « Even rather large changes in input data do not generally alter the mode of behavior. » On peut donc modifier fortement une donnée d’entrée sans que l’allure de la courbe change ; ce que les nombres déplacent, c’est la date et la hauteur, pas le dessin.",
+          "Cela change la manière dont un tel modèle se conteste. Montrer qu’un coefficient est mal choisi ou qu’une réserve a été sous-évaluée ne défait pas le résultat, puisque le résultat n’était pas ce nombre-là. La contestation qui porterait vise les circuits eux-mêmes : celui-ci existe-t-il, agit-il dans ce sens, avec ce retard, et en manque-t-il un ? Le débat est plus difficile, et c’est celui que la construction du livre appelle."
+        ]
+      },
+      {
+        "title": "Prédire, au sens le plus limité du mot",
+        "paragraphs": [
+          "Le refus de prédire revient dans le livre en des termes tranchants. Page 94 : « In terms of exact predictions, the output is not meaningful. We cannot forecast the precise population of the United States nor the GNP of Brazil nor even the total world food production for the year 2015. » Page 122, les auteurs déclarent n’employer leur modèle mondial que pour répondre à des questions sur les modes de comportement, « not to make exact predictions ». Page 142 : « none of these computer outputs is a prediction ».",
+          "Il serait pourtant faux d’en conclure qu’ils ne prétendent à rien. Ils revendiquent une prédiction « in the most limited sense of the word », et la phrase qui suit immédiatement leur avertissement le plus connu est affirmative : « They are indications of the system’s behavioral tendencies only. » Deux contresens symétriques guettent donc, aussi répandus l’un que l’autre : lire des chiffres datés là où il n’y en a pas, ou décider que rien n’est avancé parce que les chiffres manquent.",
+          "Entre les deux, un critère se dégage. Une affirmation que ce modèle peut soutenir parle d’une forme et de ce qui la modifierait : telle croissance ne peut pas se prolonger indéfiniment dans cette structure, telle mesure change l’allure et telle autre la décale seulement. Une affirmation qu’il ne peut pas soutenir porte un nombre et un millésime. Le partage ne tient pas à la prudence de celui qui parle, mais à ce que l’objet a été construit pour produire."
+        ]
+      },
+      {
+        "title": "L’effondrement daté qu’on a cru y lire",
+        "paragraphs": [
+          "La réception a fait exactement ce que le livre demandait de ne pas faire : elle lui a prêté un effondrement daté, et parfois un épuisement des ressources annoncé pour 1990. Graham Turner ouvre en 2008 sa comparaison entre le livre et trente ans de données par ce rappel : « Contrary to popular belief, The Limits to Growth scenarios […] did not predict world collapse by the end of the 20th Century. » Gaya Herrington consacre encore, en 2021, une section de son article à cette critique, et rappelle que ces scénarios visaient non des prédictions ponctuelles, mais la compréhension du comportement des systèmes dans le temps.",
+          "Que des spécialistes revenant au modèle trente puis cinquante ans après doivent commencer par ce rappel en dit long sur le malentendu. On peut le comprendre sans supposer de mauvaise foi : une courbe qui passe par un sommet et retombe, tracée sur un axe qui va jusqu’en 2100, appelle presque irrésistiblement le geste de restituer l’échelle retirée. Le lecteur remet les graduations, et lit une date là où il n’y avait qu’une forme.",
+          "Un dernier trait de construction va dans le même sens : le livre ne propose pas une courbe mais une famille de scénarios, douze selon le compte qu’en donnent Jørgen Randers, l’un des coauteurs, et Gaya Herrington. Chacun fait tourner le même assemblage de boucles sous des hypothèses différentes, et l’intérêt est dans la comparaison de leurs formes. Le titre sous lequel Randers y est revenu en 2023, « Que nous disait réellement Halte à la croissance ? », dit assez que la question n’était pas close."
+        ]
+      },
+      {
+        "title": "D’où vient ce modèle, et qui l’a signé",
+        "paragraphs": [
+          "Le livre est souvent attribué au Club de Rome, qui n’en est pourtant pas l’auteur. Quatre noms figurent sur la page de titre : Donella H. Meadows, Dennis L. Meadows, Jørgen Randers, William W. Behrens III. L’avant-propos précise que l’étude a été conduite par une équipe internationale sous la direction de Dennis Meadows, avec le soutien financier de la Volkswagen Foundation. Le Club de Rome a sa propre voix dans le volume : un commentaire séparé de son comité exécutif, qui s’ouvre page 185 sur les objectifs qu’il avait « in inviting the MIT team to undertake this investigation ».",
+          "L’idée que la structure importe plus que les nombres n’est pas née dans ce livre, et ses auteurs ne le prétendent nulle part. Une note de bas de page indique que le modèle prototype sur lequel ils ont fondé leur travail a été conçu par Jay W. Forrester, du Massachusetts Institute of Technology, et décrit dans son ouvrage World Dynamics de 1971. D’autres notes renvoient, pour ce point comme pour la méthode, à ses travaux antérieurs : Urban Dynamics, Industrial Dynamics, Principles of Systems. Le modèle mondial de 1972 applique à la planète une manière de modéliser déjà constituée.",
+          "Un détail de vocabulaire sépare le livre de sa postérité. Le nom « World3 », sous lequel ce modèle est aujourd’hui désigné et comparé aux données, ne figure pas dans l’édition de 1972 : le texte y parle de son modèle mondial, et de ce premier modèle mondial simple. Le nom est venu ensuite et recouvre plusieurs états successifs : lire une évaluation du modèle demande donc de savoir duquel il s’agit."
+        ]
+      }
+    ],
+    "limits": [
+      "Les équations ne sont pas dans le livre : il renvoie, page 23, au rapport technique qui les porte. Coefficients, retards et seuils s’y jugent, donc la solidité de chaque boucle prise une à une ; c’est ce rapport qu’il faudra ouvrir pour cela.",
+      "Le modèle a connu plusieurs états, et les confrontations aux données réelles ne portent pas sur celui de 1972 : Graham Turner travaille sur les sorties de 1974, Gaya Herrington sur la version révisée de 2004. Elles établissent en commun que les scénarios n’étaient pas des prédictions, non que les figures de 1972 tiennent ligne pour ligne. Ce que chaque révision a changé, les éditions de 1974, 1992 et 2004 le disent.",
+      "World Dynamics, où Forrester décrit le prototype, tient la part de l’invention qui précède ce livre ; c’est là qu’on verra ce que l’équipe en a gardé et ce qu’elle en a modifié.",
+      "En français, la formule qui a fait référence est celle de Halte à la croissance ?, dans la traduction de Jacques Delaunay parue chez Fayard en 1972 : c’est cette édition qui donne les mots exacts sous lesquels ces pages ont circulé."
     ]
   },
   {
@@ -5719,6 +6064,60 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "stocks-et-flux",
+    "lead": [
+      "Sur un relevé bancaire, deux nombres se lisent l’un après l’autre sans qu’on remarque qu’ils ne sont pas de la même espèce. Le solde de ce matin est là tout entier, à cet instant précis : si tout mouvement s’arrêtait, il resterait ce qu’il est. Le salaire, lui, ne veut rien dire tant qu’on n’a pas dit par mois ; arrêtez le temps, et il n’existe plus. Les deux se comptent en euros, et c’est ce qui les fait confondre. Pourtant, diviser par deux un versement mensuel ne divise pas le solde par deux : cela change la pente sur laquelle il monte ou descend, et il faudra des mois pour que la différence se voie.",
+      "Jay W. Forrester, ingénieur devenu au Massachusetts Institute of Technology le fondateur de la dynamique des systèmes, a fait de cette différence ordinaire un principe d’inventaire, puis une thèse sur la façon dont le monde travaille. Elle décide de ce qu’on écrit quand on modélise quelque chose, de ce qu’un système peut savoir de lui-même à un instant donné, et jusqu’à l’ordre dans lequel les mathématiques auraient dû être apprises."
+    ],
+    "sections": [
+      {
+        "title": "Ce qui tient à l’instant, ce qui prend une durée",
+        "paragraphs": [
+          "Le partage entre ces deux espèces de grandeurs tient à une expérience de pensée très simple : arrêtez le temps, et regardez ce qui subsiste. L’eau de la baignoire est encore là, mesurable, quarante litres. Le débit du robinet, lui, s’est évanoui avec le mouvement, car il n’avait de valeur que rapporté à une durée, tant de litres par minute. Le premier se photographie ; le second ne s’observe qu’en laissant tourner la caméra un moment. C’est pour cela que l’unité de la seconde espèce porte toujours un « par » : par minute, par an, par personne et par jour.",
+          "Forrester ne prétend pas avoir baptisé ces deux espèces. La première, celle qui subsiste quand le temps s’arrête, porte déjà plusieurs noms selon la discipline où l’on se trouve, et il le note lui-même : « The stock is an accumulation, or integration, or level, to choose terminology from different fields. » Accumulation pour le comptable, intégration pour le mathématicien, niveau pour l’ingénieur : un seul objet, quatre mots. La seconde espèce, il la définit par ce qu’elle fait, et elle ne fait que cela : « The flow changes the amount in the stock. » Dans cette description, rien d’autre ne modifie un stock, et un flux n’a pas d’autre office que d’en modifier un.",
+          "Le français a fixé son propre vocabulaire, un peu différent. Présentant la dynamique des systèmes dans Hypergéo en 2006, Damienne Provitolo écrit : « Les éléments de base du modèle sont : les variables de niveau ou d’état. Elles fonctionnent comme des accumulateurs. » Ces variables, ajoute-t-elle, « représentent des stocks dont la quantité varie à travers le temps en fonction des flux d’entrée et de sortie qui les alimentent et les vident ». Niveau, état, accumulateur, stock : ce sont des synonymes de travail, et l’on croisera les quatre selon les auteurs."
+        ]
+      },
+      {
+        "title": "Les deux pages d’un rapport annuel",
+        "paragraphs": [
+          "L’argument que Forrester donne à l’appui n’est pas mathématique, il est comptable : « People familiar with accounting statements, as in annual reports of corporations, will recognize the two classes of variables. » Le rapport d’une entreprise se présente en effet sur deux pages distinctes, le bilan, qui dit ce qui existe au jour de la clôture, et le compte de résultat, qui dit ce qui a transité pendant l’année. Et il ajoute qu’aucune troisième page n’a d’importance comparable : « There is no comparably important third page ».",
+          "Le pas suivant est celui qui compte, et il est franchi en une phrase : « That structure of an accounting statement represents a fundamental truth about all systems. » La disposition d’un document comptable, vieille de plusieurs siècles et inventée pour tenir des livres, cesse d’être une convention d’écriture pour devenir une propriété de ce qui est décrit. Un lecteur peut trouver l’appui fragile, puisqu’une pratique professionnelle n’établit pas une vérité de nature ; Forrester s’en sert comme d’une reconnaissance, pas comme d’une preuve.",
+          "Il vaut la peine de séparer ce qu’il revendique de ce qu’il ne revendique pas. Ni les mots, ni la comptabilité en partie double, ni l’idée d’accumulation ne viennent de lui, et il le dit en choisissant ses termes « from different fields ». Ce qu’il ajoute tient dans trois mots de la page 7, « and none other » : non pas que les deux espèces soient commodes ou suffisantes en pratique, mais qu’il n’en existe pas de troisième, nulle part."
+        ]
+      },
+      {
+        "title": "Ce qu’un système peut lire de lui-même",
+        "paragraphs": [
+          "La figure sur laquelle ce passage s’appuie ne contient que deux symboles et une boucle. Le flux y remplit le stock, et le stock y commande le flux : « The flow is determined by a statement that tells how the flow is controlled by the value of the stock in comparison to a goal. » Le flux n’est donc pas libre, il est calculé, et il est calculé à partir de ce que le stock contient.",
+          "Une conséquence en découle, qui n’a rien d’anodin. Si les stocks sont les seules grandeurs qui possèdent une valeur à un instant donné, ils sont aussi les seules choses qu’on puisse consulter au moment de décider. Un débit ne se lit pas, il s’estime, à partir de deux mesures prises à des moments différents, donc toujours avec un peu de passé dedans. Ce qu’un thermostat, un gestionnaire ou un organisme a devant lui n’est jamais une vitesse : c’est un niveau, et une idée de ce que ce niveau devrait être.",
+          "La conséquence symétrique vaut pour l’action. Aucune décision ne touche directement un stock : on agit sur des flux, et le stock suit en accumulant. Embaucher, c’est ouvrir une entrée ; l’effectif, lui, met le temps qu’il met à rejoindre le chiffre visé, et il continue de bouger après que la décision a cessé. Cet écart entre le geste et le résultat n’est pas un défaut d’exécution, c’est la forme même de l’accumulation."
+        ]
+      },
+      {
+        "title": "La dérivée n’existe nulle part dans la nature",
+        "paragraphs": [
+          "À l’école, on apprend d’abord à dériver, ensuite à intégrer : la dérivée passe pour l’opération élémentaire, l’intégrale pour son inverse, plus difficile et plus tardif. Huit pages plus loin, sous un titre qui oppose les équations différentielles à l’intégration, Forrester renverse cet ordre, et sans ménagement : « Mathematicians have had difficulty defining a derivative and there is a reason. Derivatives do not exist except in a mathematician’s imagination. »",
+          "Ce qu’il oppose à la dérivée est l’accumulation : « Nowhere in nature does nature take a derivative. Nature only integrates, that is, accumulates in stocks. » On peut comprendre ce renversement ainsi : une dérivée est un rapport entre deux différences infiniment petites, elle demande de comparer un instant à son voisin, ce qu’aucune chose du monde n’a de moyen de faire. Une accumulation ne demande rien de tel, il suffit que ce qui entre s’ajoute et que ce qui sort se retranche, et le niveau courant porte déjà tout le passé qui compte.",
+          "L’enjeu est pratique autant que philosophique. Si ce qui se passe réellement est une accumulation, décrire un système consiste moins à poser une équation à résoudre qu’à dresser la liste de ce qui s’y accumule, en donnant pour chaque accumulation la règle qui dit à quelle vitesse elle se remplit et se vide. On avance ensuite pas à pas, en additionnant, comme le fait la chose modélisée."
+        ]
+      },
+      {
+        "title": "Les variables auxiliaires et l’objection qu’elles font",
+        "paragraphs": [
+          "L’affirmation d’exclusivité rencontre une objection dès qu’on ouvre un modèle réel, car on y trouve autre chose. Décrivant le même formalisme, Provitolo note que « Les variables auxiliaires apparaissent dans le canal d’information. » S’y ajoutent les constantes, et tout ce qu’un modélisateur écrit pour rendre ses formules lisibles. La liste des ingrédients d’un modèle en compte donc visiblement plus de deux.",
+          "L’objection s’allège si l’on regarde ce qu’une variable auxiliaire fait. Elle n’accumule rien et ne retient rien : elle est une étape de calcul sur le chemin qui va des stocks vers un flux, et l’on peut toujours la remplacer par sa formule à l’endroit où elle sert. Ce que Forrester classe, on peut le comprendre ainsi, ce sont les espèces de grandeurs qu’un système contient, non les lignes qu’un modélisateur écrit pour les calculer.",
+          "Il reste que Forrester énonce l’exclusivité sans réserve et ne discute pas ce point dans ce texte. Ce n’est pas chez lui une commodité de notation, c’est une affirmation sur ce qui existe : rien, dans un système, qui ne soit une chose qui s’accumule ou une chose qui la change. La tenir donne un geste de lecture très court. Devant une entreprise, une forêt, une épidémie ou une dette publique, la première question devient celle de savoir ce qui s’y accumule, et la seconde, ce qui le remplit et ce qui le vide."
+        ]
+      }
+    ],
+    "limits": [
+      "Le texte de Forrester ne dit rien des retards : le mot n’y paraît nulle part, et le seul endroit qui relie une structure à un comportement dans la durée attribue l’oscillation au nombre de niveaux plutôt qu’à un délai. C’est dans les livres antérieurs qu’il faut chercher cette moitié du sujet, et la première formulation de la distinction, un demi-siècle avant ce texte de 2009 : Principles of Systems (1968), que sa bibliographie nomme, et Industrial Dynamics (1961), auquel Booth Sweeney et Sterman font remonter les stocks et les flux.",
+      "Il existe une version française de l’exposé développé : Principes des systèmes, traduit par P. Sylvestre-Baron, Presses universitaires de Lyon, 1980, dont Provitolo cite une troisième édition en 1984. C’est le livre qui porte en français les termes de Forrester sur ce point, et ce qu’il y fait des variables auxiliaires, il faudra l’ouvrir pour le voir.",
+      "Reste une question que rien ici ne tranche : les gens raisonnent-ils correctement avec des stocks et des flux ? C’est celle que Linda Booth Sweeney et John D. Sterman posent expérimentalement dans « Bathtub dynamics » (2000) : leurs épreuves et leurs résultats attendent leur lecteur."
+    ]
+  },
+  {
     "conceptId": "substitution-des-problemes-aux-secteurs",
     "lead": [
       "Imaginons une question toute simple : pourquoi des gens continuent-ils d’acheter alors qu’ils disent eux-mêmes que les prix les inquiètent ? Elle intéresse plusieurs métiers à la fois. L’économiste regardera les revenus et les prix, le psychologue les motifs et les craintes, le sociologue les milieux et les habitudes. Chacun travaillera sérieusement, chacun rendra un texte solide, et la question restera entre eux trois sans que personne l’ait prise en charge tout entière.",
@@ -5828,6 +6227,69 @@ export const generatedDeepenings: Deepening[] = [
       "Le texte lu est une communication présentée à Paris en avril 1970 et publiée dans un numéro spécial de la Revue française de sociologie. Roig y renvoie à un rapport qu’il avait rédigé la même année pour l’Institut d’études politiques de Grenoble, où il développe le principe de totalité : c’est ce rapport qui contient l’argument complet.",
       "Ce que la théorie générale des systèmes soutient dans ses propres termes, et non à travers ce qu’en rapporte Roig, se trouve dans l’ouvrage de Ludwig von Bertalanffy publié en 1968, qui est sa référence constante. Ses pages attendent leur lecteur.",
       "Enfin, savoir comment ce cadrage a été reçu, et ce que la modélisation des systèmes sociaux en a effectivement retenu depuis 1970, demanderait de suivre cette littérature. Rien de ce qui est disponible ici ne l’établit."
+    ]
+  },
+  {
+    "conceptId": "systemographie",
+    "lead": [
+      "Quelqu’un dessine au tableau le fonctionnement d’un hôpital : des patients qui arrivent, des services qui se les passent, des délais qui s’allongent. Vient alors la question qui vient toujours : est-ce que c’est juste ? La réponse spontanée consiste à comparer le dessin à l’hôpital, trait par trait, jusqu’à ce que tout corresponde. Essayez, et vous verrez que la comparaison ne se termine pas : il reste toujours un couloir, une habitude, une exception qui n’ont pas été portés sur le schéma, et rien ne dit à quel moment on aurait le droit de s’arrêter.",
+      "Le troisième chapitre de La théorie du système général, que Jean-Louis Le Moigne intitule La systémographie et les systèmes de représentation, prend le problème par l’autre bout. Au lieu de demander si le dessin ressemble assez à la chose, il demande avec quel instrument on l’a obtenu, et il décrit cet instrument comme on décrirait un appareil photographique, avec son mode d’emploi. Ce qu’on obtient en s’en servant reçoit du coup un nom à soi."
+    ],
+    "sections": [
+      {
+        "title": "L’appareil s’appelle Système Général",
+        "paragraphs": [
+          "L’instrument n’est pas un appareil de mesure, c’est un modèle tout fait, construit avant d’avoir rencontré quoi que ce soit. Le Moigne le nomme le Système Général, et il tient en une ligne : « un objet qui, doté de finalités, fonctionne se structure et évolue dans un environnement ».",
+          "Rien là-dedans ne parle d’un hôpital, d’une usine ou d’un fleuve en particulier, et c’est exactement le point. Ces propriétés ont été décidées, elles n’ont pas été relevées dans le monde : on sait combien il y en a et lesquelles, puisque ce sont les nôtres. Modéliser consiste alors à faire passer l’objet devant cet appareil et à écrire ce qui en sort.",
+          "Le vocabulaire du chapitre est celui de la photographie : un appareil, un mode d’emploi, une image obtenue. L’analogie fait travailler une idée simple. On ne juge pas une photographie en confrontant chacun de ses grains à l’immeuble photographié ; on sait quel appareil l’a prise, et ce que cet appareil-là peut montrer ou non."
+        ]
+      },
+      {
+        "title": "Vérifier le modèle contre l’appareil",
+        "paragraphs": [
+          "La première des deux vérifications ne porte pas sur le rapport entre le modèle et l’hôpital, mais sur le rapport entre le modèle et l’appareil. Le Moigne demande que le modèle soit isomorphe du Système Général : que chaque propriété de l’un ait son répondant exact dans l’autre, terme pour terme, sans reste d’un côté ni de l’autre.",
+          "Le texte dit pourquoi cette vérification-là aboutit : « La vérification de l’isomorphie sera facile puisque le Système Général, construction artificielle, est doté de propriétés connues par construction : en les balayant une par une, il doit être possible de s’assurer que les propriétés dont on dote le modèle sont bien en correspondance bijective avec celles du Système Général ».",
+          "Balayer une par une : l’expression décrit une opération qui a une fin. La liste à parcourir est courte et close, parce que c’est nous qui l’avons faite, et un jour on peut déclarer l’examen terminé en sachant ce que cela veut dire. C’est un contrôle sans mystère, et il n’apprend rien sur l’hôpital."
+        ]
+      },
+      {
+        "title": "Vérifier le modèle contre l’objet",
+        "paragraphs": [
+          "La seconde vérification porte, elle, sur l’objet. Le Moigne la veut homomorphe, exigence plus lâche que la première : plusieurs traits de l’objet peuvent se retrouver ramassés dans un seul trait du modèle, la correspondance va dans un sens et ne se rend pas. On attendrait qu’une exigence si accommodante soit facile à satisfaire.",
+          "C’est pourtant celle-là qui ne se termine jamais : « L’homomorphie du modèle et de l’objet sera difficile et a priori jamais parfaitement validée ». La raison tient dans la parenthèse qui suit immédiatement : « pour qu’elle le soit, il aurait fallu que les systèmes soient dans la nature et que nous en ayons la preuve ! ».",
+          "L’obstacle n’est donc ni le manque de temps ni le manque de données. Il tient à ce que le livre soutient quelques pages plus tôt, que « les systèmes ne sont pas dans la nature ». Si le système n’est pas tapi dans l’hôpital en attendant d’être découvert, aucune confrontation ne pourra jamais annoncer que le modèle a fini d’y correspondre : il n’y a rien, en face, dont la liste serait close."
+        ]
+      },
+      {
+        "title": "Plusieurs modèles du même objet, tous valides",
+        "paragraphs": [
+          "L’auteur tire lui-même la conséquence, au paragraphe suivant : « Il sera donc a priori toujours possible de concevoir et de construire bien des systémographies différentes du même objet, toutes homomorphes de cet objet et toutes isomorphes du Système Général ». Deux modélisateurs peuvent produire deux représentations différentes de la même chose sans qu’aucune des deux soit fautive, et sans qu’on puisse trancher entre elles par la ressemblance.",
+          "On lira volontiers là une licence : puisque la fidélité ne départage pas, chacun son modèle. La page suivante dit autre chose. La démarche « peut laisser divaguer l’imagination de l’observateur à sa guise, dès lors qu’il assure en permanence de la validité de ces deux correspondances ». La liberté est entière et la condition est continue : elle ne se solde pas une fois pour toutes au début du travail.",
+          "La contrepartie est publique. Ce qui a été choisi doit l’être, écrit Le Moigne, « explicitement, publiquement, loyalement ». Et ce qui distingue deux modèles concurrents n’est pas leur degré de ressemblance, ce sont les objectifs de celui qui les construit : la question de savoir lequel est le vrai se remplace par celle de savoir à quoi le modèle doit servir. Les caractéristiques d’une représentation restent d’ailleurs « prédéterminables et ne dépendant que de l’appareil utilisé ». Plusieurs modèles possibles ne veut pas dire n’importe lesquels."
+        ]
+      },
+      {
+        "title": "Un autre nom pour un autre outil",
+        "paragraphs": [
+          "Le mot est forgé, et l’auteur s’explique deux fois sur ce refus d’un terme déjà en circulation. En note de bas de page, il vise Le macroscope, l’ouvrage de vulgarisation publié par Joël de Rosnay en 1975, où il reconnaît un appareil aux qualités peu différentes du sien, mais « hélas assez peu défini et son mode d’emploi n’est guère précisé ». D’où la décision, revendiquée telle quelle : « en donnant un autre nom... à un autre outil ! ».",
+          "Le second refus est plus tranchant. Les noms courants de son instrument, analyse de système et approche système, sont écartés comme une « ultime tentative de récupération de l’analyse cartésienne ». On peut comprendre le reproche ainsi : analyser, au sens classique, c’est découper un objet en parties simples pour les examiner séparément, alors que la démarche décrite ici part d’un modèle entier qu’on ajuste. Reprendre le mot aurait ramené par l’étiquette ce que l’opération prétend quitter.",
+          "Dire que la systémographie est l’analyse de système de Le Moigne le contredirait donc dans la page même où il définit son terme."
+        ]
+      },
+      {
+        "title": "Ce qui a circulé sans le mot",
+        "paragraphs": [
+          "Le nom, lui, n’a pas pris. On ne le rencontre pratiquement pas dans les dépôts d’articles francophones, et deux textes qui reviennent sur le travail de Le Moigne, l’un en 2020, l’autre en 2024, ne l’emploient pas une seule fois, y compris là où ils portent sur la modélisation elle-même.",
+          "La procédure, elle, a circulé au mot près. Un document de cours d’Yvon Pesqueux, au Conservatoire national des arts et métiers, décrit trois phases de modélisation : le « cadrage (construction du modèle par isomorphie avec un système général) », puis le développement, soit la « documentation du modèle par correspondance homomorphique du modèle avec les traits perçus du phénomène », puis l’interprétation, entendue là comme la « simulation d’actions possibles sur le modèle pour anticiper les conséquences éventuelles dans les phénomènes ».",
+          "Les deux vérifications y sont, dans le bon sens et avec les bons mots, augmentées d’une troisième phase et privées du nom de l’instrument. Trajectoire ordinaire : le mécanisme survit à l’étiquette que son auteur lui avait donnée. Un lecteur qui ouvrira ce document y trouvera aussi, dans ses premières pages, la même paire de termes employée en sens inverse ; c’est le passage sur les trois phases qui restitue Le Moigne."
+        ]
+      }
+    ],
+    "limits": [
+      "Le mot paraît en 1977, aux Presses universitaires de France ; ce qui se lit aujourd’hui en accès libre est la réédition électronique de 2006, copie de la quatrième édition de 1994. En quels termes le chapitre posait les deux vérifications à son premier état, c’est le volume de 1977 qui le dira, dont la pagination même est discutée, 258 pages ou 272 selon les notices.",
+      "L’antériorité est attestée par l’auteur lui-même, dans une phrase ajoutée à la deuxième édition : « la primauté que l’on avait introduite, dès la première édition, à la présentation de la systémographie ». Elle date de 1984, et une déclaration rétrospective atteste sans prouver.",
+      "Le compte rendu que Bernard Motulsky donne de l’ouvrage en 1978 dans Communication Information est la réception la plus proche de la première édition ; il se termine sur une seconde page que la version en ligne ne sert pas, et son jugement est resté dans le volume de la revue.",
+      "Un seul texte de réception francophone reprend la systémographie sous son nom, l’article de Géry Lecas « La modélisation systémique : outils méthodologiques pour économistes », paru dans Innovations en 2006 ; ce qu’il en fait, ses pages le portent, et il faudra les lire."
     ]
   },
   {

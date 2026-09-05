@@ -1,0 +1,57 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "depassement-et-effondrement",
+  "lead": [
+    "Vous ouvrez le robinet d’eau chaude, et rien ne vient. Vous ouvrez plus grand. Dix secondes plus tard l’eau brûlante arrive, vous fermez précipitamment, et l’eau redevient froide. Personne n’a mal calculé : il a suffi que l’effet du geste arrive en retard sur le geste pour que le point visé soit franchi, dans un sens, puis dans l’autre. Il faut deux choses pour produire ce ratage, et deux seulement : une information qui arrive en retard, et une situation qui bouge vite pendant qu’on l’attend.",
+    "Au début des années 1970, une équipe du Massachusetts Institute of Technology a construit un modèle chiffré du monde entier : la population, l’industrie, la production de nourriture, les ressources, la pollution, et les liens par lesquels chacune agit sur les autres. Ils l’ont fait tourner loin dans l’avenir, et pas une fois mais plusieurs, chaque calcul donnant sa courbe. Le dessin qui revenait avait la forme du robinet, à une différence près, qui change tout : ce qui est franchi n’est pas une température, et la retombée n’est pas un retour à l’équilibre."
+  ],
+  "sections": [
+    {
+      "title": "Ce qu’un retard fait à une croissance",
+      "paragraphs": [
+        "Dans ce modèle, le retard n’est pas un raffinement ajouté à la fin. Ses auteurs écrivent, page 143, qu’il leur a fallu représenter la situation réelle « by introducing time delays between causes and their ultimate effects », en introduisant des délais entre les causes et leurs effets ultimes. Ce que recouvrent ces délais n’a rien d’abstrait : une usine construite cette année polluera pendant des décennies, un sol qu’on épuise ne le montre qu’après plusieurs récoltes. Sans eux, un modèle réagit à l’instant, et ce qui réagit à l’instant ne dépasse jamais rien.",
+        "Un délai seul ne suffit pourtant pas à provoquer une catastrophe, et la page suivante pose la condition : « Delays in a dynamic system have serious effects only if the system itself is undergoing rapid changes ». Les délais n’ont d’effets graves que si le système lui-même change vite. C’est la rencontre des deux qui est dangereuse. Un signal qui met vingt ans à parvenir décrit une situation vieille de vingt ans : dans un monde stable, cela n’a guère d’importance ; dans un monde qui double, il décrit un autre monde, deux fois plus petit que celui où la décision se prend.",
+        "Croissance exponentielle veut dire cela, et rien de plus mystérieux : une quantité qui augmente chaque année du même pourcentage ne monte pas d’un pas régulier, elle double à intervalles réguliers. Le retard, lui, ne change pas ; ce qui change, c’est ce que la quantité fait pendant qu’il court, et cela peut aller jusqu’au doublement. La page 143 décrit ce qui s’ensuit : « the growing system rises above its ultimate limit and then collapses », le système en croissance s’élève au-dessus de sa limite ultime, puis s’effondre."
+      ]
+    },
+    {
+      "title": "Trois façons d’arriver à une limite",
+      "paragraphs": [
+        "Avant d’en venir au monde, les auteurs consacrent deux pages, 91 et 92, à une question plus simple : de combien de façons une quantité qui croît peut-elle rencontrer ce qui la borne ? Ils parlent d’une capacité de charge, disons, pour fixer les idées, ce qu’un milieu peut fournir et supporter durablement. Trois figures y répondent. L’une est le dépassement : « It can overshoot the limit and then die back again », la quantité peut franchir la limite, puis retomber. Une autre montre ce même franchissement lorsqu’il abîme au passage la capacité elle-même ; le niveau où le système revient est alors plus bas que celui qu’il aurait pu tenir indéfiniment.",
+        "Le terme employé pour désigner ces formes est défini page 91, et il vaut la peine de s’y arrêter parce que tout le reste en dépend : « By behavior modes we mean the tendencies of the variables in the system (population or pollution, for example) to change as time progresses ». Un mode de comportement, ce sont les tendances des variables du système, population ou pollution par exemple, à évoluer avec le temps. Pas une valeur, pas une date : une allure de courbe.",
+        "La différence est considérable pour qui lit ce livre. Affirmer qu’une population atteindra tel chiffre telle année, et affirmer qu’elle montera, franchira sa limite et retombera, ne sont pas deux affirmations de même nature, et elles ne se réfutent pas de la même manière. C’est la seconde que le livre revendique."
+      ]
+    },
+    {
+      "title": "Ce que le modèle s’interdit d’annoncer",
+      "paragraphs": [
+        "Le lecteur qui découvre ces courbes descendantes attend une date, et le livre la lui refuse. À la page 142, à l’endroit même où il énonce ce mode fondamental, ses auteurs écrivent que « none of these computer outputs is a prediction », qu’aucune de ces sorties d’ordinateur n’est une prédiction.",
+        "La restriction va plus loin qu’une prudence d’usage. À la même page, ils bornent la validité de leurs courbes « only to the point in each output graph at which growth comes to an end and collapse begins » : jusqu’au point, sur chaque graphique, où la croissance s’arrête et où l’effondrement commence. Le modèle ne prétend donc rien dire de la descente elle-même, ni de sa vitesse, ni de sa profondeur, ni de ce qui vient après. Ce qu’il décrit, c’est la montée et la manière dont elle se termine.",
+        "Une précision de vocabulaire, tant qu’on y est. Le nom World3, sous lequel ce modèle est presque toujours désigné aujourd’hui, ne figure nulle part dans le livre de 1972, qui écrit « our world model », notre modèle du monde. Le nom est venu ensuite, et il recouvre des versions successives dont celle de 1972 est la première."
+      ]
+    },
+    {
+      "title": "Ce que les quatre auteurs ajoutent à Forrester",
+      "paragraphs": [
+        "Ce modèle n’est pas né de rien, et le livre le dit lui-même, en petits caractères. Une note de bas de page, à la page 21 : « The prototype model on which we have based our work was designed by Professor Jay W. Forrester of the Massachusetts Institute of Technology. » Le modèle prototype sur lequel ce travail se fonde a été conçu par Jay W. Forrester, et il est décrit dans son livre World Dynamics, paru en 1971. Forrester lui-même, dans la préface de la deuxième édition de ce livre, situe les deux ouvrages l’un par rapport à l’autre : « World Dynamics was first published in June 1971. The successor book, The Limits to Growth (Reference 12), became available in March 1972 ».",
+        "Ce que les quatre auteurs revendiquent en propre en devient plus net. Leur modèle d’abord, construit en quatre étapes qu’ils décrivent aux pages 90 et 91, et dont ils écrivent : « To our knowledge it is the only formal model in existence that is truly global in scope ». Les mots ensuite. Une section du livre s’intitule « The overshoot mode », et l’expression traverse le volume : page 125, « the behavior mode of the system shown in figure 35 is clearly that of overshoot and collapse » ; page 157, « in the long run they do nothing to prevent the overshoot and subsequent collapse of the system ».",
+        "On peut y voir autre chose qu’un détail de rédaction : une forme sans nom reste prisonnière du modèle qui la produit, une forme nommée et dessinée circule, s’applique ailleurs, et devient discutable par des gens qui n’ouvriront jamais un modèle.",
+        "Reste la question des voix qui parlent dans ce volume. Le Club de Rome, qui a commandité l’étude, ne l’a pas écrite : son comité exécutif signe à la fin du livre, pages 185 à 197, un commentaire distinct du rapport, qui s’ouvre sur « In inviting the MIT team to undertake this investigation, we had two immediate objectives in mind ». Ce que les commanditaires attendaient de l’enquête est écrit là, et d’une autre main que les courbes."
+      ]
+    },
+    {
+      "title": "Le motif à l’épreuve des décennies suivantes",
+      "paragraphs": [
+        "Puisque le livre n’annonce pas de date, le confronter au monde réel ne peut pas consister à vérifier une échéance. Cela consiste à comparer des allures sur des décennies. C’est le travail qu’a mené Graham Turner en 2008, dans un document du CSIRO intitulé A Comparison of the Limits to Growth with Thirty Years of Reality : trente années de données observées mises en regard des sorties du modèle. Un détail vaut d’être connu de qui voudra le lire : les sorties qu’il utilise sont celles « produced in 1974 (the second edition of LtG) », et non les courbes de 1972.",
+        "Le reproche le plus fréquent adressé à ce genre de modèle est qu’il rend ce qu’on y met : changez un paramètre, et la catastrophe s’évanouirait. L’objection s’instruit, en faisant varier les hypothèses pour voir si la conclusion tient. Une mise à jour publiée en 2021 par Herrington dans le Journal of Industrial Ecology établit que le motif de dépassement et d’effondrement résiste à ces critiques de sensibilité.",
+        "Rien de cela ne transforme pour autant ce mode en pronostic, et l’on peut soutenir l’inverse : un modèle dont les auteurs arrêtent eux-mêmes la validité au point où la chute commence ne pourra jamais être confirmé par une chute. Il se juge sur la montée, sur les liens qu’il pose entre les grandeurs, et sur ce qu’il rend visible d’un mécanisme, le retard, que chacun peut retrouver dans des systèmes bien plus petits que le monde."
+      ]
+    }
+  ],
+  "limits": [
+    "World Dynamics, de Jay W. Forrester (Wright-Allen Press, 1971), expose le modèle prototype dont celui de 1972 est le prolongement : en quels termes Forrester y pose lui-même le franchissement d’une limite, c’est ce livre qui le dit, et c’est là qu’il faudra aller le lire. Un article de 2016 de BioPhysical Economics and Resource Quality suit sa contribution propre à la notion.",
+    "La phrase citée ici est traduite de l’anglais. Sa formule française de référence est dans Halte à la croissance ?, traduction de Jacques Delaunay (Fayard, 1972), volume qui porte aussi une enquête de Janine Delaunay et une préface de Robert Lattès : c’est cette édition qu’il faudra ouvrir pour la lire en français.",
+    "Les pages indiquées sont celles de l’édition de 1972. Le livre en a connu d’autres, en 1974, en 1992 et en 2004 : ce que chacune a changé aux courbes se lit dans ces éditions-là.",
+    "Ce que la comparaison de Turner conclut est dans son rapport de 2008. Et sur ce que le livre disait réellement, un de ses coauteurs, Jørgen Randers, est revenu en 2023 dans la revue Mondes en décroissance : son article est l’endroit où le lire."
+  ]
+}

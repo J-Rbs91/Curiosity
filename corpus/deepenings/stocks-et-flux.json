@@ -1,0 +1,55 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "stocks-et-flux",
+  "lead": [
+    "Sur un relevé bancaire, deux nombres se lisent l’un après l’autre sans qu’on remarque qu’ils ne sont pas de la même espèce. Le solde de ce matin est là tout entier, à cet instant précis : si tout mouvement s’arrêtait, il resterait ce qu’il est. Le salaire, lui, ne veut rien dire tant qu’on n’a pas dit par mois ; arrêtez le temps, et il n’existe plus. Les deux se comptent en euros, et c’est ce qui les fait confondre. Pourtant, diviser par deux un versement mensuel ne divise pas le solde par deux : cela change la pente sur laquelle il monte ou descend, et il faudra des mois pour que la différence se voie.",
+    "Jay W. Forrester, ingénieur devenu au Massachusetts Institute of Technology le fondateur de la dynamique des systèmes, a fait de cette différence ordinaire un principe d’inventaire, puis une thèse sur la façon dont le monde travaille. Elle décide de ce qu’on écrit quand on modélise quelque chose, de ce qu’un système peut savoir de lui-même à un instant donné, et jusqu’à l’ordre dans lequel les mathématiques auraient dû être apprises."
+  ],
+  "sections": [
+    {
+      "title": "Ce qui tient à l’instant, ce qui prend une durée",
+      "paragraphs": [
+        "Le partage entre ces deux espèces de grandeurs tient à une expérience de pensée très simple : arrêtez le temps, et regardez ce qui subsiste. L’eau de la baignoire est encore là, mesurable, quarante litres. Le débit du robinet, lui, s’est évanoui avec le mouvement, car il n’avait de valeur que rapporté à une durée, tant de litres par minute. Le premier se photographie ; le second ne s’observe qu’en laissant tourner la caméra un moment. C’est pour cela que l’unité de la seconde espèce porte toujours un « par » : par minute, par an, par personne et par jour.",
+        "Forrester ne prétend pas avoir baptisé ces deux espèces. La première, celle qui subsiste quand le temps s’arrête, porte déjà plusieurs noms selon la discipline où l’on se trouve, et il le note lui-même : « The stock is an accumulation, or integration, or level, to choose terminology from different fields. » Accumulation pour le comptable, intégration pour le mathématicien, niveau pour l’ingénieur : un seul objet, quatre mots. La seconde espèce, il la définit par ce qu’elle fait, et elle ne fait que cela : « The flow changes the amount in the stock. » Dans cette description, rien d’autre ne modifie un stock, et un flux n’a pas d’autre office que d’en modifier un.",
+        "Le français a fixé son propre vocabulaire, un peu différent. Présentant la dynamique des systèmes dans Hypergéo en 2006, Damienne Provitolo écrit : « Les éléments de base du modèle sont : les variables de niveau ou d’état. Elles fonctionnent comme des accumulateurs. » Ces variables, ajoute-t-elle, « représentent des stocks dont la quantité varie à travers le temps en fonction des flux d’entrée et de sortie qui les alimentent et les vident ». Niveau, état, accumulateur, stock : ce sont des synonymes de travail, et l’on croisera les quatre selon les auteurs."
+      ]
+    },
+    {
+      "title": "Les deux pages d’un rapport annuel",
+      "paragraphs": [
+        "L’argument que Forrester donne à l’appui n’est pas mathématique, il est comptable : « People familiar with accounting statements, as in annual reports of corporations, will recognize the two classes of variables. » Le rapport d’une entreprise se présente en effet sur deux pages distinctes, le bilan, qui dit ce qui existe au jour de la clôture, et le compte de résultat, qui dit ce qui a transité pendant l’année. Et il ajoute qu’aucune troisième page n’a d’importance comparable : « There is no comparably important third page ».",
+        "Le pas suivant est celui qui compte, et il est franchi en une phrase : « That structure of an accounting statement represents a fundamental truth about all systems. » La disposition d’un document comptable, vieille de plusieurs siècles et inventée pour tenir des livres, cesse d’être une convention d’écriture pour devenir une propriété de ce qui est décrit. Un lecteur peut trouver l’appui fragile, puisqu’une pratique professionnelle n’établit pas une vérité de nature ; Forrester s’en sert comme d’une reconnaissance, pas comme d’une preuve.",
+        "Il vaut la peine de séparer ce qu’il revendique de ce qu’il ne revendique pas. Ni les mots, ni la comptabilité en partie double, ni l’idée d’accumulation ne viennent de lui, et il le dit en choisissant ses termes « from different fields ». Ce qu’il ajoute tient dans trois mots de la page 7, « and none other » : non pas que les deux espèces soient commodes ou suffisantes en pratique, mais qu’il n’en existe pas de troisième, nulle part."
+      ]
+    },
+    {
+      "title": "Ce qu’un système peut lire de lui-même",
+      "paragraphs": [
+        "La figure sur laquelle ce passage s’appuie ne contient que deux symboles et une boucle. Le flux y remplit le stock, et le stock y commande le flux : « The flow is determined by a statement that tells how the flow is controlled by the value of the stock in comparison to a goal. » Le flux n’est donc pas libre, il est calculé, et il est calculé à partir de ce que le stock contient.",
+        "Une conséquence en découle, qui n’a rien d’anodin. Si les stocks sont les seules grandeurs qui possèdent une valeur à un instant donné, ils sont aussi les seules choses qu’on puisse consulter au moment de décider. Un débit ne se lit pas, il s’estime, à partir de deux mesures prises à des moments différents, donc toujours avec un peu de passé dedans. Ce qu’un thermostat, un gestionnaire ou un organisme a devant lui n’est jamais une vitesse : c’est un niveau, et une idée de ce que ce niveau devrait être.",
+        "La conséquence symétrique vaut pour l’action. Aucune décision ne touche directement un stock : on agit sur des flux, et le stock suit en accumulant. Embaucher, c’est ouvrir une entrée ; l’effectif, lui, met le temps qu’il met à rejoindre le chiffre visé, et il continue de bouger après que la décision a cessé. Cet écart entre le geste et le résultat n’est pas un défaut d’exécution, c’est la forme même de l’accumulation."
+      ]
+    },
+    {
+      "title": "La dérivée n’existe nulle part dans la nature",
+      "paragraphs": [
+        "À l’école, on apprend d’abord à dériver, ensuite à intégrer : la dérivée passe pour l’opération élémentaire, l’intégrale pour son inverse, plus difficile et plus tardif. Huit pages plus loin, sous un titre qui oppose les équations différentielles à l’intégration, Forrester renverse cet ordre, et sans ménagement : « Mathematicians have had difficulty defining a derivative and there is a reason. Derivatives do not exist except in a mathematician’s imagination. »",
+        "Ce qu’il oppose à la dérivée est l’accumulation : « Nowhere in nature does nature take a derivative. Nature only integrates, that is, accumulates in stocks. » On peut comprendre ce renversement ainsi : une dérivée est un rapport entre deux différences infiniment petites, elle demande de comparer un instant à son voisin, ce qu’aucune chose du monde n’a de moyen de faire. Une accumulation ne demande rien de tel, il suffit que ce qui entre s’ajoute et que ce qui sort se retranche, et le niveau courant porte déjà tout le passé qui compte.",
+        "L’enjeu est pratique autant que philosophique. Si ce qui se passe réellement est une accumulation, décrire un système consiste moins à poser une équation à résoudre qu’à dresser la liste de ce qui s’y accumule, en donnant pour chaque accumulation la règle qui dit à quelle vitesse elle se remplit et se vide. On avance ensuite pas à pas, en additionnant, comme le fait la chose modélisée."
+      ]
+    },
+    {
+      "title": "Les variables auxiliaires et l’objection qu’elles font",
+      "paragraphs": [
+        "L’affirmation d’exclusivité rencontre une objection dès qu’on ouvre un modèle réel, car on y trouve autre chose. Décrivant le même formalisme, Provitolo note que « Les variables auxiliaires apparaissent dans le canal d’information. » S’y ajoutent les constantes, et tout ce qu’un modélisateur écrit pour rendre ses formules lisibles. La liste des ingrédients d’un modèle en compte donc visiblement plus de deux.",
+        "L’objection s’allège si l’on regarde ce qu’une variable auxiliaire fait. Elle n’accumule rien et ne retient rien : elle est une étape de calcul sur le chemin qui va des stocks vers un flux, et l’on peut toujours la remplacer par sa formule à l’endroit où elle sert. Ce que Forrester classe, on peut le comprendre ainsi, ce sont les espèces de grandeurs qu’un système contient, non les lignes qu’un modélisateur écrit pour les calculer.",
+        "Il reste que Forrester énonce l’exclusivité sans réserve et ne discute pas ce point dans ce texte. Ce n’est pas chez lui une commodité de notation, c’est une affirmation sur ce qui existe : rien, dans un système, qui ne soit une chose qui s’accumule ou une chose qui la change. La tenir donne un geste de lecture très court. Devant une entreprise, une forêt, une épidémie ou une dette publique, la première question devient celle de savoir ce qui s’y accumule, et la seconde, ce qui le remplit et ce qui le vide."
+      ]
+    }
+  ],
+  "limits": [
+    "Le texte de Forrester ne dit rien des retards : le mot n’y paraît nulle part, et le seul endroit qui relie une structure à un comportement dans la durée attribue l’oscillation au nombre de niveaux plutôt qu’à un délai. C’est dans les livres antérieurs qu’il faut chercher cette moitié du sujet, et la première formulation de la distinction, un demi-siècle avant ce texte de 2009 : Principles of Systems (1968), que sa bibliographie nomme, et Industrial Dynamics (1961), auquel Booth Sweeney et Sterman font remonter les stocks et les flux.",
+    "Il existe une version française de l’exposé développé : Principes des systèmes, traduit par P. Sylvestre-Baron, Presses universitaires de Lyon, 1980, dont Provitolo cite une troisième édition en 1984. C’est le livre qui porte en français les termes de Forrester sur ce point, et ce qu’il y fait des variables auxiliaires, il faudra l’ouvrir pour le voir.",
+    "Reste une question que rien ici ne tranche : les gens raisonnent-ils correctement avec des stocks et des flux ? C’est celle que Linda Booth Sweeney et John D. Sterman posent expérimentalement dans « Bathtub dynamics » (2000) : leurs épreuves et leurs résultats attendent leur lecteur."
+  ]
+}

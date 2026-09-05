@@ -443,6 +443,28 @@ export const themes: Theme[] = [
       "Appeler quelque chose un système n'est pas un constat mais un découpage, et une notion empruntée à une autre discipline n'emporte pas avec elle ce qui la fondait. Ce thème porte sur le rapport entre le système réel et celui qu'on construit pour l'exprimer, et sur ce que coûte l'emprunt fait par analogie.",
     domain: "systems-thinking",
   },
+  {
+    id: "croissance-et-limites",
+    slug: "croissance-et-limites",
+    title: "Quand la croissance rencontre sa limite",
+    tagline:
+      "Une structure de boucles dessine des tendances, jamais des dates.",
+    keywords: ["Dépassement", "État d'équilibre", "Modes de comportement"],
+    description:
+      "Une structure de boucles et de délais, poussée par la croissance, finit par dépasser sa limite avant de s'arrêter, et ses sorties disent des modes de comportement plutôt que des valeurs datées. Ce thème porte sur ce modèle du monde et sur ce que serait un état stable qui ne fige rien d'autre que la population et le capital, et sur la difficulté, mesurée jusque dans un jeu de simulation, à apprendre à maîtriser de telles boucles même après plusieurs essais.",
+    domain: "systems-thinking",
+  },
+  {
+    id: "ce-qui-s-accumule",
+    slug: "ce-qui-s-accumule",
+    title: "Ce qui s'accumule et ce qui s'écoule",
+    tagline:
+      "Un système ne connaît que deux sortes de variables : ce qui s'accumule, et ce qui le fait varier.",
+    keywords: ["Stock", "Flux", "Ligne d'approvisionnement"],
+    description:
+      "Tout système se ramène à des stocks qui accumulent et à des flux qui les changent, et à aucune autre sorte de variable. Ce thème porte sur cette distinction élémentaire et sur ce qu'il en coûte de l'ignorer : un gestionnaire qui ne compte pas ce qu'il a déjà commandé et pas encore reçu commande en excès, quand bien même sa prévision serait parfaite.",
+    domain: "systems-thinking",
+  },
   // --- Science de la décision ----------------------------------------------
   {
     id: "choisir-sous-risque",

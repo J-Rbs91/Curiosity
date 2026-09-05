@@ -1,0 +1,117 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "modele-mental-et-modele-de-simulation",
+  "slug": "modele-mental-et-modele-de-simulation",
+  "status": "VALIDATED",
+  "title": "Modèle mental et modèle de simulation",
+  "themes": [
+    "dire-systeme"
+  ],
+  "theme_labels": {
+    "dire-systeme": "Ce qu'on engage en disant système"
+  },
+  "authors": [
+    {
+      "name": "Jay W. Forrester",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Thèse de Jay W. Forrester, exposée à la première personne dans un texte d'introduction : c'est une position d'auteur, non un résultat d'enquête. L'expression modèle mental n'est pas forgée par lui et il ne le revendique nulle part. Ce qui lui revient est le rapport qu'il institue entre le modèle mental et le modèle de simulation, et la répartition des rôles qu'il en tire.",
+  "hook": "Que sait votre tête d'un système, et que ne sait-elle pas en déduire ?",
+  "summary": "Souvent exact sur les pièces, le modèle mental n'est pas fiable pour déduire le comportement d'un système complexe : la simulation révèle celui de sa propre structure.",
+  "quotation": {
+    "text": "Mais les modèles mentaux ne sont d'aucune fiabilité pour déduire le comportement qui résultera des éléments connus d'un système complexe.",
+    "reference": "Jay W. Forrester, « Some Basic Concepts in System Dynamics », D-4894, Sloan School of Management, Massachusetts Institute of Technology, 2009.",
+    "locator": "p. 10, section 3.1",
+    "language": "fr",
+    "original_text": "But mental models are entirely unreliable in deducing what behavior will result from the known pieces of a complex system.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (chaîne Curiosity, 5 septembre 2026). Aucune traduction française publiée de ce document D-4894 n'a été identifiée. « Entirely unreliable » est rendu par « ne sont d'aucune fiabilité » et non par « sont totalement incapables » : unreliable dit qu'on ne peut pas s'y fier, non que la chose est impossible, et la nuance porte tout le propos, puisque la phrase précédente accorde aux modèles mentaux une exactitude réelle sur les pièces du système. « Pieces » est rendu par « éléments ». La conjonction initiale « But » est conservée : la retrancher ferait d'une restriction une thèse générale.",
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "Jay W. Forrester, « Some Basic Concepts in System Dynamics », D-4894, Sloan School of Management, Massachusetts Institute of Technology, 29 janvier 2009, 17 p. Exemplaire diffusé par le Creative Learning Exchange.",
+      "kind": "primary",
+      "locator": "p. 9-12, sections 3, 3.1, 4 et 5",
+      "doi_isbn": null,
+      "url": "http://static.clexchange.org/ftp/documents/system-dynamics/SD2009-02SomeBasicConcepts.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Jay W. Forrester, « Some Basic Concepts in System Dynamics », D-4894, 2009, 17 p. Second exemplaire indépendant, déposé par Georgia Tech pour le cours CS 8803 CC, comparé page à page au précédent.",
+      "kind": "primary",
+      "locator": "p. 9-12",
+      "doi_isbn": null,
+      "url": "https://sites.cc.gatech.edu/classes/AY2018/cs8803cc_spring/research_papers/Forrester-SystemDynamics.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Jay W. Forrester, « System dynamics, systems thinking, and soft OR », System Dynamics Review, vol. 10, n° 2-3, 1994, p. 245-256. L'auteur y revient sur ce que le modèle formel ajoute au modèle mental. Non ouvert.",
+      "kind": "primary",
+      "locator": "p. 245-256",
+      "doi_isbn": "10.1002/sdr.4260100211",
+      "url": "https://doi.org/10.1002/sdr.4260100211",
+      "consulted": "metadata-only"
+    },
+    {
+      "label": "Linda Booth Sweeney et John D. Sterman, « Bathtub dynamics: initial results of a systems thinking inventory », System Dynamics Review, vol. 16, n° 4, 2000, p. 249-286. Article publié fermé, manuscrit d'auteur ouvert.",
+      "kind": "secondary-academic",
+      "locator": null,
+      "doi_isbn": "10.1002/sdr.198",
+      "url": "https://web.mit.edu/jsterman/www/Bathtub.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "John D. Sterman, « Learning in and about complex systems », System Dynamics Review, vol. 10, n° 2-3, 1994, p. 291-330. Exposé savant de référence sur l'apprentissage par modèle mental et par simulation. Non ouvert, article fermé.",
+      "kind": "secondary-academic",
+      "locator": "p. 291-330",
+      "doi_isbn": "10.1002/sdr.4260100214",
+      "url": "https://doi.org/10.1002/sdr.4260100214",
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle",
+    "date": "2026-09-05",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 2,
+    "notes": [
+      "CITATION — Téléchargé moi-même http://static.clexchange.org/ftp/documents/system-dynamics/SD2009-02SomeBasicConcepts.pdf (17 p., md5 7a8c0b2bca4225a59e23b94f3763acda). Rendu la page en image à 200 dpi avec PyMuPDF et lu sur l'image, pas sur la couche texte : la page portant l'en-tête « - 10 - / D-4894 » donne, en colonne de droite, « [...] accurate about the pieces of a system—what information is available, who is connected to whom, what are different people trying to achieve. But mental models are entirely unreliable in deducing what behavior will result from the known pieces of a complex system. On the other hand, a computer simulation can, without doubt, reveal the behavior implicit in the structure from which it is constructed. » L'original_text de la fiche est verbatim, mot pour mot et ponctuation comprise.",
+      "CITATION — localisation exacte. Vérifié sur l'image de la page 9 : la section « 3.1. Computer Models and Mental Models » s'ouvre p. 9 et se poursuit p. 10, où la phrase citée se trouve, la section « 4. WORKING WITH COMPUTER MODELS » ne commençant qu'après elle. Le locator « p. 10, section 3.1 » est donc juste : bonne page imprimée et bonne section.",
+      "CITATION — traduction. Elle est déclarée (kind in-house, traducteur, date) et le texte original est donné. « But mental models are entirely unreliable in deducing what behavior will result from the known pieces of a complex system » rendu par « Mais les modèles mentaux ne sont d'aucune fiabilité pour déduire le comportement qui résultera des éléments connus d'un système complexe » : le « But » initial est conservé, « entirely » est rendu par « d'aucune », « the known pieces » par « les éléments connus ». Aucune coupe, donc aucun […] à signaler. Rien à reprendre.",
+      "EXEMPLAIRE — le piège de la réédition ne joue pas ici, et je l'ai testé. La page de titre porte « January 29, 2009 » et aucune mention de révision ; les en-têtes impriment « D-4894 » sur toutes les pages, ce que la fiche cite. J'ai ouvert le second exemplaire annoncé (https://sites.cc.gatech.edu/classes/AY2018/cs8803cc_spring/research_papers/Forrester-SystemDynamics.pdf, 17 p., md5 c452a3984bb518a5b78c67d83ce2454f) et comparé les deux textes page à page moi-même : le corps est identique, les seules différences sont la mise en page de la couverture et le pied de page de diffusion (« Available at www.clexchange.org » côté CLE, absent côté Georgia Tech). Les métadonnées internes des deux fichiers nomment le même document source, « D-4894D.Some Basic Concepts in System Dynamics.docx », créé le 31 janvier 2009 ; le fichier CLE porte une modDate 2016 mais son corps ne bouge pas d'un mot par rapport à l'exemplaire dont la modDate est restée en 2009. Contenu et date concordent : pas de version révisée déguisée. La revendication de la fiche, « comparé page à page au précédent », est exacte — je l'ai refaite.",
+      "SOURCES — les trois DOI résolvent exactement vers ce qu'ils annoncent, vérifié sur api.crossref.org : 10.1002/sdr.4260100211 = Forrester, « System dynamics, systems thinking, and soft OR », System Dynamics Review 10(2-3), 1994, p. 245-256 ; 10.1002/sdr.198 = Linda Booth Sweeney et John D. Sterman, « Bathtub dynamics: initial results of a systems thinking inventory », SDR 16(4), 2000, p. 249-286 ; 10.1002/sdr.4260100214 = John D. Sterman, « Learning in and about complex systems », SDR 10(2-3), 1994, p. 291-330. Titres, auteurs, revue, volume, numéro, pagination et année correspondent tous aux libellés de la fiche.",
+      "SOURCES — le champ consulted dit la vérité, y compris là où c'est inconfortable. J'ai ouvert https://web.mit.edu/jsterman/www/Bathtub.pdf (200, 350 765 octets) : c'est bien un manuscrit d'auteur, 53 p., page de garde « Version 1.2, September 2000 / Forthcoming, System Dynamics Review », et non la mise en page publiée p. 249-286. La fiche l'annonce en toutes lettres (« Article publié fermé, manuscrit d'auteur ouvert ») et ne met aucun locator sur cette source : le full-text porte donc sur ce qui a réellement été ouvert, et aucune pagination n'est réclamée sur un exemplaire qui ne la porte pas. Déclaration honnête.",
+      "SOURCES — j'ai vraiment tenté les deux sources déclarées « non ouvertes ». onlinelibrary.wiley.com répond 403 sur les trois DOI, et https://doi.org/10.1002/sdr.4260100211 aboutit au même 403 après redirection : l'article publié est inatteignable depuis cet environnement. Unpaywall (api.unpaywall.org, v2) confirme is_oa=false et zéro oa_location pour les trois DOI. Le « metadata-only » des sources 3 et 5 et la mention « article fermé » sont donc exacts, et leur non-ouverture est un fait constaté, pas une facilité.",
+      "SOURCES — droits. L'autorisation se constate sur le document hébergé lui-même : l'exemplaire CLE imprime en page 1 et en dernière page « © 2009 Jay W. Forrester / Available at www.clexchange.org / Permission granted for copying and for electronic distribution for non-commercial educational purposes », et l'exemplaire Georgia Tech porte « Copyright © 2009 By Jay W. Forrester / Permission granted to reproduce / For noncommercial and educational purposes ». La notice émane du titulaire des droits. À signaler sans conséquence : https://www.clexchange.org présente un certificat qui ne couvre pas ce nom d'hôte (échec de vérification TLS) et /curriculum/sdintro.asp répond 404 en http ; l'URL statique citée par la fiche, elle, répond 200 et est bien celle que le web renvoie comme exemplaire canonique du CLE.",
+      "ATTRIBUTION — confirmée sur le point où la fiche l'engage. Le texte est signé Forrester, écrit à la première personne (« I sometimes ask an audience... », « I have usually had such new insights from models »), et c'est lui qui pose le partage des rôles : les modèles mentaux « rich and often sufficiently accurate about the pieces », la simulation seule capable de révéler le comportement implicite dans la structure. La note d'attribution ne revendique pas davantage : elle dit expressément que l'expression « modèle mental » n'est pas forgée par lui. C'est juste — l'origine communément retenue est Kenneth Craik, The Nature of Explanation, 1943 (« small-scale model of external reality » porté dans la tête), et rien dans D-4894 ne revendique la paternité du terme. La fiche attribue le rapport, pas le mot.",
+      "PROSE, mouvement 1 (ce qui est accordé) — Forrester, p. 9-10 : « Mental models are rich and often sufficiently accurate about the pieces of a system ». La carte : « Souvent exact sur les pièces ». Le « souvent » est repris tel quel, et la carte laisse tomber « rich » — la concession de la carte est donc plus étroite que celle de l'auteur, pas plus large. Elle laisse aussi tomber « sufficiently » ; je l'ai pesé et ne le retiens pas comme écart, l'auteur accordant par ailleurs aux modèles mentaux, dans la même page et dans sa figure 6, « Tremendous store of information » comme « Major strength ». L'accord n'est ni durci au-delà de l'auteur ni affadi.",
+      "PROSE, mouvement 2 (ce qui est refusé, et sur quel objet) — c'est le point où j'attendais un qualificatif ajouté, et il ne l'est pas. Forrester ne porte pas « complex » des deux côtés de sa restriction : il concède « the pieces of a system » (sans qualificatif) et refuse sur « the known pieces of a complex system » (avec qualificatif). La carte reproduit exactement cette asymétrie : « Souvent exact sur les pièces » sans qualificatif, « déduire le comportement d'un système complexe » avec. Le refus porte donc sur le même objet, ni élargi à tout système, ni rétréci. La carte écrit « n'est pas fiable » là où l'auteur écrit « entirely unreliable » : c'est en retrait de l'auteur, non au-delà, et la force pleine est portée juste à côté par la citation elle-même (« ne sont d'aucune fiabilité »).",
+      "PROSE, mouvement 3 (ce que la simulation révèle) — j'ai relevé les trois occurrences du verbe dans tout le document plutôt que de m'en tenir au passage cité. P. 9 : « Only by using computer simulation can the implied behavior be revealed. » P. 10 : « a computer simulation can, without doubt, reveal the behavior implicit in the structure from which it is constructed. » P. 10, §4 point 3 : « surprising behavior often does not reveal model errors but instead begins to tell something about real life that was not previously realized. » Nulle part Forrester ne fait révéler à la simulation le comportement du monde : les deux emplois positifs de reveal portent sur le comportement implicite dans la structure, et le troisième emploi est négatif. Ce que l'auteur laisse remonter vers le réel, il le confie à un autre verbe (« tell something about real life »). La carte écrit « la simulation révèle celui de sa propre structure » : c'est le bon côté de la distinction, le comportement qu'implique la structure dont on l'a construite, et non celui du monde. Fidèle sur le mot qui fait la différence.",
+      "PROSE — hook. « Que sait votre tête d'un système, et que ne sait-elle pas en déduire ? » n'affirme rien : c'est une question, et son partage savoir/déduire est exactement celui du texte, dont le §3 pose « No one's head contains a family, city, school, country, or business ». La formule ne déborde pas, et elle n'est pas vague au point de ne rien dire : elle nomme le lieu précis de la défaillance, la déduction.",
+      "Hors des quatre questions, sans effet sur le verdict : la fiche écrit « L. Booth Sweeney » là où Crossref et la page de garde du manuscrit donnent « Linda Booth Sweeney » ; la référence résout sans ambiguïté. Le libellé de la source 3 prête au texte de 1994 un contenu (« ce que le modèle formel ajoute au modèle mental ») alors qu'il est déclaré non ouvert : j'ai contrôlé la plausibilité sur le préprint D-4405-1 du même texte diffusé par le CLE, daté du 18 août 1992, qui oppose bien le modèle de simulation au « mental model in the heads of the people operating in the real system » — mais cet exemplaire est antérieur à la publication et la fiche a raison de ne pas le citer comme s'il était l'article."
+    ]
+  },
+  "dossier": "corpus/evidence/modele-mental-et-modele-de-simulation/lecture.json",
+  "notes": [
+    "L'ORDRE DU RÉSUMÉ EST CELUI DU TEXTE, ET IL EST CE QUI DISTINGUE CETTE CARTE DE comportement-contre-intuitif. Forrester accorde d'abord au modèle mental une exactitude réelle : « Mental models are rich and often sufficiently accurate about the pieces of a system—what information is available, who is connected to whom, what are different people trying to achieve » (p. 9 et 10). Ce n'est qu'ensuite qu'il lui refuse la déduction du comportement. Une carte qui n'énoncerait que la faiblesse de l'intuition redirait la carte de 1995 avec d'autres mots : celle-ci porte sur l'outil, ce que le modèle mental contient et ce qu'il ne peut pas calculer, non sur le système et la distance de la cause au symptôme.",
+    "CE QUE LA SIMULATION RÉVÈLE, ET SEULEMENT CELA. La phrase du texte est « a computer simulation can, without doubt, reveal the behavior implicit in the structure from which it is constructed » (p. 10) : c'est le comportement qu'implique la structure qu'on lui a donnée, non le comportement du monde. Le résumé écrit « le révèle » pour cette raison, et non « le calcule » ni « le prédit ». La figure 7, p. 10, donne les quatre offices de la simulation : rendre les modèles mentaux explicites, découvrir les incohérences, déterminer les implications futures, améliorer les modèles mentaux. Le résumé écrit donc « celui de sa propre structure », et non « le révèle », « le calcule » ou « le prédit ».",
+    "FRONTIÈRE AVEC systeme-concret-systeme-construit, DÉJÀ AU CORPUS. Roig oppose une chose du monde à sa représentation. Forrester oppose deux représentations, toutes deux nôtres, et répartit le travail entre elles : la tête détient l'information, la machine en déduit le comportement. La carte ne porte donc pas sur l'écart entre le modèle et le réel.",
+    "AUCUNE DATE DE PREMIÈRE FORMULATION N'EST PORTÉE SUR LA CARTE. Ce document de 2009 est un exposé d'introduction qui ne prétend pas être la première formulation ; sa bibliographie, p. 17, renvoie aux livres de l'auteur de 1961, 1968, 1969 et 1971, dont aucun n'a été ouvert.",
+    "L'ANTÉRIORITÉ DU TERME N'A PAS ÉTÉ INSTRUITE. L'expression mental model circule en psychologie depuis Craik (1943) ; ni cette antériorité ni le sens du terme dans cette littérature n'ont été vérifiés au cours de la lecture, et la carte n'en dit rien.",
+    "RÉCEPTION SAVANTE, ATTEINTE EN UN SEUL POINT. Booth Sweeney et Sterman (2000), ouvert dans son manuscrit d'auteur, mesure sur des sujets réels l'échec de déduction que Forrester affirme, et signale que l'explication ordinaire de cet échec dans la littérature est la rationalité limitée, ce qui n'est pas celle de Forrester. Ce désaccord n'a pas été instruit. Sterman 1994 et Forrester 1994, qui auraient porté ce concept, sont rendus closed par Unpaywall et n'ont pas été ouverts : aucune phrase de la carte ne repose sur eux.",
+    "LA THÈSE DE LA BASE DE DONNÉES MENTALE (p. 12), selon laquelle l'information du monde se trouve principalement dans la tête des gens, est donnée par Forrester comme une suggestion, sans mesure ni référence. Elle demanderait sa propre carte et n'est pas portée ici.",
+    "TOUR 2, CE QUE LA CORRECTION A CHANGÉ, ET POURQUOI. Le contrôle aveugle a rendu REWORK sur le seul champ `summary`, prose `deborde` (attribution confirmee, quotation verbatim, sources resolvent, tous acquis et non retouchés). Deux débordements, tous deux réparés. (1) L'ancienne fin, « La simulation, elle, le révèle », faisait reprendre au pronom « le comportement » du système : la carte faisait révéler à la simulation le comportement du monde. Or la phrase qui suit immédiatement la citation, p. 10, déplace l'objet : « a computer simulation can, without doubt, reveal the behavior implicit in the structure from which it is constructed ». Le contrôleur a relevé les trois seules occurrences de « reveal » du document, aucune ne porte sur le monde, et le seul passage où le modèle enseigne quelque chose du réel est conditionné (« as a model becomes better », après élimination des erreurs de modèle, p. 10, étape 3). Le résumé dit maintenant « celui de sa propre structure » : le comportement qu'implique la structure qu'on a donnée au modèle, non celui du système. (2) L'ancien résumé refusait au modèle mental toute déduction du comportement, sans reprendre le « complexe » que Forrester porte des deux côtés de sa restriction (« the known pieces of a complex system »). Le texte dément la version élargie, p. 7 et 8 : « A person understands filling a water glass… But, if we go to a system that is only five times as complicated… intuition fails. » Le refus est donc rendu à son objet, « le comportement d'un système complexe ».",
+    "TOUR 2, CE QUI A ÉTÉ COUPÉ POUR TENIR SOUS LES 170 CARACTÈRES, ET QUI N'EST DONC PAS AFFICHÉ. Le résumé fait 167 caractères ; les deux corrections coûtaient à elles seules une cinquantaine de caractères de plus que la version refusée. Ont été retranchés, dans cet ordre : le nom de l'auteur en tête (« Forrester : »), qui est déjà porté par le champ `authors` ; le « d'un système » qui accompagnait les pièces, le système complexe étant nommé trois mots plus loin ; le « on ne peut s'y fier », rendu par « n'est pas fiable », qui garde la nuance de `unreliable` défendue par la note de traduction, on ne peut s'y fier, et non la chose est impossible ; et le verbe « qu'implique » de la phrase de Forrester, rendu par le simple « de », faute de six caractères. Aucune de ces coupes ne retire une affirmation de la carte : le « à coup sûr » de « without doubt », qui aurait été fidèle, a été laissé de côté pour la même raison de place, et non parce qu'il déborderait.",
+    "La citation a été relue sur l'image du folio 10 rendue à 170 dpi, colonne de droite, cinquième ligne, juste avant « On the other hand », et retrouvée mot pour mot à la même page du second exemplaire.",
+    "CORRECTION DE LIBELLÉ (5 septembre 2026) : le libellé de la source Booth Sweeney et Sterman (2000) abrégeait le prénom en « L. Booth Sweeney ». Le contrôle aveugle relève que la référence résout malgré tout, et que Crossref et la page de garde du manuscrit d'auteur (web.mit.edu/jsterman/www/Bathtub.pdf) donnent « Linda Booth Sweeney ». Le libellé porte désormais le prénom en entier."
+  ]
+}
