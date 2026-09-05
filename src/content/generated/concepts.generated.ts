@@ -1145,6 +1145,57 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "depassement-et-effondrement",
+    "slug": "depassement-et-effondrement",
+    "title": "Dépassement et effondrement",
+    "authorLabel": "Donella H. Meadows, Dennis L. Meadows, Jørgen Randers, William W. Behrens III",
+    "hookQuestion": "Pourquoi un système en croissance dépasse-t-il sa limite avant de s'arrêter ?",
+    "shortExplanation": "Meadows et ses coauteurs : dans leur modèle du monde, les délais entre cause et effet laissent la population et le capital dépasser les limites, puis s'effondrer.",
+    "authors": [],
+    "themes": [
+      "croissance-et-limites"
+    ],
+    "themeLabel": "Quand la croissance rencontre sa limite",
+    "attributionNote": "Le Club de Rome a commandité l'étude, il ne l'a pas écrite : les quatre auteurs portés sur la page de titre signent la phrase citée, et le modèle du monde de 1972 est le leur. Le concept, lui, vient de Jay W. Forrester, World Dynamics (1971), dont ce modèle est le prolongement, ce que le livre reconnaît en note p. 21 ; l'apport propre des quatre auteurs est de l'avoir nommé, diagrammé (p. 91-92) et rendu public.",
+    "quotation": {
+      "text": "Le mode de comportement fondamental du système mondial est une croissance exponentielle de la population et du capital, suivie d'un effondrement.",
+      "reference": "Donella H. Meadows, Dennis L. Meadows, Jørgen Randers, William W. Behrens III, The Limits to Growth, New York, Universe Books, 1972, p. 142",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Donella H. Meadows, Dennis L. Meadows, Jørgen Randers, William W. Behrens III, The Limits to Growth, New York, Universe Books, 1972, 205 p. Numérisé par la bibliothèque du Dartmouth College, hébergé par le Donella Meadows Project.",
+        "kind": "primary",
+        "reference": "p. 125, 141-145, 157 · ISBN 0-87663-165-0",
+        "url": "https://donellameadows.org/wp-content/userfiles/Limits-to-Growth-digital-scan-version.pdf"
+      },
+      {
+        "label": "The Limits to Growth, transcription diplomatique de l'édition de 1972 avec marqueurs de page, Dartmouth College Library.",
+        "kind": "primary",
+        "reference": "Marqueur « Page 142 »",
+        "url": "https://collections.dartmouth.edu/archive/text/meadows/diplomatic/meadows_ltg-diplomatic.html"
+      },
+      {
+        "label": "Donella H. Meadows, Dennis L. Meadows, Jørgen Randers, William W. Behrens III, Halte à la croissance ?, traduit de l'anglais par Jacques Delaunay, Paris, Fayard, 1972, 315 p.",
+        "kind": "primary",
+        "reference": "BnF ark:/12148/cb36648670t",
+        "url": "https://catalogue.bnf.fr/ark:/12148/cb36648670t"
+      },
+      {
+        "label": "Graham Turner, A Comparison of the Limits to Growth with Thirty Years of Reality, CSIRO Working Paper Series 2008-09, juin 2008, 52 p.",
+        "kind": "secondary-academic",
+        "reference": "Résumé et introduction · RePEc:cse:wpaper:2008-09",
+        "url": "https://www.ecsim.org/Vista/archivos/TURNER%20G%20-%20TLG%2030%20years%20comparison%20to%20reality.pdf"
+      },
+      {
+        "label": "Jørgen Randers, « Le point de vue d'un co-auteur : Que nous disait réellement Halte à la croissance ? », Mondes en décroissance, n° 1, 2023.",
+        "kind": "francophone-reception",
+        "reference": "10.52497/revue-opcd.230",
+        "url": "https://polen.uca.fr/revue-opcd/index.php?id=230"
+      }
+    ]
+  },
+  {
     "id": "deplacement-des-buts",
     "slug": "deplacement-des-buts",
     "title": "Déplacement des buts",
@@ -1295,6 +1346,51 @@ export const generatedConcepts: Concept[] = [
         "kind": "secondary-academic",
         "reference": "§ 3 à 7 · 10.4000/rhsh.4157",
         "url": "https://journals.openedition.org/rhsh/4157"
+      }
+    ]
+  },
+  {
+    "id": "echec-a-apprendre-malgre-l-experience",
+    "slug": "echec-a-apprendre-malgre-l-experience",
+    "title": "Échec à apprendre malgré l'expérience",
+    "authorLabel": "Mark Paich, John D. Sterman",
+    "hookQuestion": "Pourquoi cinq essais ne suffisent-ils pas à maîtriser une structure de boucles ?",
+    "shortExplanation": "Paich et Sterman : en cinq essais, 122 étudiants de la Sloan School progressent en moyenne, sans que l'expérience atténue l'effet des boucles fortes sur la performance.",
+    "authors": [],
+    "themes": [
+      "croissance-et-limites"
+    ],
+    "themeLabel": "Quand la croissance rencontre sa limite",
+    "attributionNote": "Concept coécrit par Mark Paich et John D. Sterman, dans l'ordre des signatures de la page de titre. La notion de mauvaise perception des rétroactions, que leur expérience met à l'épreuve, est de John D. Sterman seul (1989).",
+    "quotation": {
+      "text": "Bien que les conditions d'apprentissage soient excellentes, l'expérience ne semble pas atténuer la mauvaise perception des rétroactions […]",
+      "reference": "Mark Paich et John D. Sterman, « Market Growth, Collapse and Failures to Learn from Interactive Simulation Games », System Dynamics, vol. I, UNESCO-EOLSS, extrait de dix pages, Résumé, 2e page de l'extrait",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Mark Paich et John D. Sterman, « Market Growth, Collapse and Failures to Learn from Interactive Simulation Games », dans System Dynamics, vol. I, sous la direction de Yaman Barlas, UNESCO-EOLSS.",
+        "kind": "primary",
+        "reference": "Extrait de 10 p. sur 30 · ISBN 978-1-84826-587-5",
+        "url": "http://www.eolss.net/sample-chapters/c15/e6-63-01-03.pdf"
+      },
+      {
+        "label": "Mark Paich et John D. Sterman, Boom, bust, and failures to learn in experimental markets, Sloan School of Management, Massachusetts Institute of Technology, Working Paper 3441-92-BPS, juillet 1992, 39 f.",
+        "kind": "primary",
+        "reference": "p. 9, 12, 14, 17, 19-22 · Handle 1721.1/2419",
+        "url": "https://dspace.mit.edu/handle/1721.1/2419"
+      },
+      {
+        "label": "Mark Paich et John D. Sterman, « Boom, Bust, and Failures to Learn in Experimental Markets », Management Science, vol. 39, n° 12, décembre 1993, p. 1439-1458.",
+        "kind": "primary",
+        "reference": "10.1287/mnsc.39.12.1439",
+        "url": "https://doi.org/10.1287/mnsc.39.12.1439"
+      },
+      {
+        "label": "John D. Sterman, « Misperceptions of Feedback in Dynamic Decision Making », Organizational Behavior and Human Decision Processes, vol. 43, n° 3, 1989, p. 301-335.",
+        "kind": "secondary-academic",
+        "reference": "10.1016/0749-5978(89)90041-1",
+        "url": "https://doi.org/10.1016/0749-5978(89)90041-1"
       }
     ]
   },
@@ -1471,6 +1567,56 @@ export const generatedConcepts: Concept[] = [
         "kind": "primary",
         "reference": "§ 45 · 10.4000/activites.1149",
         "url": "https://journals.openedition.org/activites/1149"
+      }
+    ]
+  },
+  {
+    "id": "etat-d-equilibre-global",
+    "slug": "etat-d-equilibre-global",
+    "title": "L'état d'équilibre global",
+    "authorLabel": "Donella H. Meadows, Dennis L. Meadows, Jørgen Randers, William W. Behrens III",
+    "hookQuestion": "Que reste-t-il libre quand population et capital cessent de croître ?",
+    "shortExplanation": "Trois conditions : population et capital constants, taux d'entrée et de sortie au minimum, niveaux fixés selon les valeurs de la société. Rien d'autre n'y est figé.",
+    "authors": [],
+    "themes": [
+      "croissance-et-limites"
+    ],
+    "themeLabel": "Quand la croissance rencontre sa limite",
+    "attributionNote": "Concept coécrit par Donella H. Meadows, Dennis L. Meadows, Jørgen Randers et William W. Behrens III, les quatre noms de la page de titre. Ils revendiquent le choix du mot équilibre, non l'idée d'une société sans croissance, dont ils citent les prédécesseurs. Le Club de Rome a commandité l'étude, il ne l'a pas écrite.",
+    "quotation": {
+      "text": "Un équilibre ainsi défini ne signifie pas la stagnation.",
+      "reference": "Donella H. Meadows, Dennis L. Meadows, Jørgen Randers, William W. Behrens III, The Limits to Growth, New York, Universe Books, 1972, p. 174",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Donella H. Meadows, Dennis L. Meadows, Jørgen Randers, William W. Behrens III, The Limits to Growth, New York, Universe Books, 1972, 205 p. Numérisé par la bibliothèque du Dartmouth College, hébergé par le Donella Meadows Project.",
+        "kind": "primary",
+        "reference": "Chapitre V, p. 156-184 · ISBN 0-87663-165-0",
+        "url": "https://donellameadows.org/wp-content/userfiles/Limits-to-Growth-digital-scan-version.pdf"
+      },
+      {
+        "label": "The Limits to Growth, transcription diplomatique de l'édition de 1972 avec marqueurs de page, Dartmouth College Library.",
+        "kind": "primary",
+        "reference": "Marqueurs « Page 171 » à « Page 175 »",
+        "url": "https://collections.dartmouth.edu/archive/text/meadows/diplomatic/meadows_ltg-diplomatic.html"
+      },
+      {
+        "label": "Jørgen Randers, « Le point de vue d'un co-auteur : Que nous disait réellement Halte à la croissance ? », Mondes en décroissance, n° 1, 2023.",
+        "kind": "francophone-reception",
+        "reference": "10.52497/revue-opcd.230",
+        "url": "https://polen.uca.fr/revue-opcd/index.php?id=230"
+      },
+      {
+        "label": "Jacqueline Hecht, compte rendu de Halte à la croissance ?, Population, 28e année, n° 3, 1973, p. 696-697.",
+        "kind": "francophone-reception",
+        "url": "https://www.persee.fr/doc/pop_0032-4663_1973_num_28_3_15489"
+      },
+      {
+        "label": "Gaya Herrington, « Update to limits to growth: Comparing the World3 model with empirical data », Journal of Industrial Ecology, vol. 25, n° 3, 2021, p. 614-626.",
+        "kind": "secondary-academic",
+        "reference": "§1.3 · 10.1111/jiec.13084",
+        "url": "https://doi.org/10.1111/jiec.13084"
       }
     ]
   },
@@ -2101,6 +2247,57 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "ligne-d-approvisionnement-ignoree",
+    "slug": "ligne-d-approvisionnement-ignoree",
+    "title": "La ligne d'approvisionnement ignorée",
+    "authorLabel": "John D. Sterman",
+    "hookQuestion": "Pourquoi commander encore, quand ce qu'il faut est déjà en route ?",
+    "shortExplanation": "Sterman : qui règle un stock sans compter les commandes passées et non reçues commande en excès. Une usine qui les comptait a atténué le choc au lieu de l'amplifier.",
+    "authors": [],
+    "themes": [
+      "ce-qui-s-accumule"
+    ],
+    "themeLabel": "Ce qui s'accumule et ce qui s'écoule",
+    "attributionNote": "Expérience de John D. Sterman, qui signe seul ce document de travail de 1987. Le jeu de la bière qu'il y fait jouer n'est pas de lui et il ne le revendique pas : il le décrit comme une simulation développée au MIT et en usage depuis près de trois décennies quand il écrit. Ce qui lui revient est l'expérience, la règle de décision estimée sur les joueurs et l'interprétation qu'il en donne.",
+    "quotation": {
+      "text": "Même une prévision parfaite n'empêchera pas un gestionnaire qui ignore la ligne d'approvisionnement de commander en excès.",
+      "reference": "John D. Sterman, Modeling Managerial Behavior: Misperceptions of Feedback in a Dynamic Decisionmaking Experiment, MIT Sloan School of Management, document de travail 1933-87, septembre 1987, p. 23",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "John D. Sterman, Modeling Managerial Behavior: Misperceptions of Feedback in a Dynamic Decisionmaking Experiment, MIT Sloan School of Management, document de travail 1933-87 (D-3919), septembre 1987, 42 p.",
+        "kind": "primary",
+        "reference": "p. 23 ; expérience p. 13-23 · hdl:1721.1/2184",
+        "url": "https://dspace.mit.edu/handle/1721.1/2184"
+      },
+      {
+        "label": "John D. Sterman, « Supply Chain Dynamics, the \"Beer Distribution Game\" and Misperceptions in Dynamic Decision Making », dans Y. Barlas (dir.), System Dynamics, vol. 1, Encyclopedia of Life Support Systems, UNESCO et EOLSS, 2005.",
+        "kind": "primary",
+        "reference": "Extrait de 9 p. sur 30, sans folio · eISBN 978-1-84826-137-2",
+        "url": "http://www.eolss.net/sample-chapters/c15/e6-63-01-02.pdf"
+      },
+      {
+        "label": "John D. Sterman, « Modeling Managerial Behavior: Misperceptions of Feedback in a Dynamic Decision Making Experiment », Management Science, vol. 35, n° 3, mars 1989, p. 321-339. Version publiée de 1989, non ouverte.",
+        "kind": "primary",
+        "reference": "10.1287/mnsc.35.3.321",
+        "url": "https://doi.org/10.1287/mnsc.35.3.321"
+      },
+      {
+        "label": "John D. Sterman, Business Dynamics: Systems Thinking and Modeling for a Complex World, Boston, Irwin/McGraw-Hill, 2000, 1008 p. Second ayant droit nommé par la mention de permission de l'extrait EOLSS. Non ouvert.",
+        "kind": "primary",
+        "reference": "Ouvrage entier, non ouvert · ISBN 0-07-238915-X",
+        "url": "https://openlibrary.org/books/OL7303312M"
+      },
+      {
+        "label": "Vincent Giard et Mustapha Sali, « L'effet coup de fouet dans la chaîne logistique : une littérature contingente et incomplète », Revue française de gestion industrielle, vol. 31, n° 2, 2012.",
+        "kind": "francophone-reception",
+        "reference": "HAL hal-01508406",
+        "url": "https://hal.science/hal-01508406v1"
+      }
+    ]
+  },
+  {
     "id": "loi-de-campbell",
     "slug": "loi-de-campbell",
     "title": "Loi de Campbell",
@@ -2334,6 +2531,108 @@ export const generatedConcepts: Concept[] = [
         "kind": "francophone-reception",
         "reference": "p. 18 · HAL hal-01102402",
         "url": "https://minesparis-psl.hal.science/hal-01102402/document"
+      }
+    ]
+  },
+  {
+    "id": "modele-mental-et-modele-de-simulation",
+    "slug": "modele-mental-et-modele-de-simulation",
+    "title": "Modèle mental et modèle de simulation",
+    "authorLabel": "Jay W. Forrester",
+    "hookQuestion": "Que sait votre tête d'un système, et que ne sait-elle pas en déduire ?",
+    "shortExplanation": "Souvent exact sur les pièces, le modèle mental n'est pas fiable pour déduire le comportement d'un système complexe : la simulation révèle celui de sa propre structure.",
+    "authors": [],
+    "themes": [
+      "dire-systeme"
+    ],
+    "themeLabel": "Ce qu'on engage en disant système",
+    "attributionNote": "Thèse de Jay W. Forrester, exposée à la première personne dans un texte d'introduction : c'est une position d'auteur, non un résultat d'enquête. L'expression modèle mental n'est pas forgée par lui et il ne le revendique nulle part. Ce qui lui revient est le rapport qu'il institue entre le modèle mental et le modèle de simulation, et la répartition des rôles qu'il en tire.",
+    "quotation": {
+      "text": "Mais les modèles mentaux ne sont d'aucune fiabilité pour déduire le comportement qui résultera des éléments connus d'un système complexe.",
+      "reference": "Jay W. Forrester, « Some Basic Concepts in System Dynamics », D-4894, Sloan School of Management, Massachusetts Institute of Technology, 2009, p. 10, section 3.1",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Jay W. Forrester, « Some Basic Concepts in System Dynamics », D-4894, Sloan School of Management, Massachusetts Institute of Technology, 29 janvier 2009, 17 p. Exemplaire diffusé par le Creative Learning Exchange.",
+        "kind": "primary",
+        "reference": "p. 9-12, sections 3, 3.1, 4 et 5",
+        "url": "http://static.clexchange.org/ftp/documents/system-dynamics/SD2009-02SomeBasicConcepts.pdf"
+      },
+      {
+        "label": "Jay W. Forrester, « Some Basic Concepts in System Dynamics », D-4894, 2009, 17 p. Second exemplaire indépendant, déposé par Georgia Tech pour le cours CS 8803 CC, comparé page à page au précédent.",
+        "kind": "primary",
+        "reference": "p. 9-12",
+        "url": "https://sites.cc.gatech.edu/classes/AY2018/cs8803cc_spring/research_papers/Forrester-SystemDynamics.pdf"
+      },
+      {
+        "label": "Jay W. Forrester, « System dynamics, systems thinking, and soft OR », System Dynamics Review, vol. 10, n° 2-3, 1994, p. 245-256. L'auteur y revient sur ce que le modèle formel ajoute au modèle mental. Non ouvert.",
+        "kind": "primary",
+        "reference": "10.1002/sdr.4260100211",
+        "url": "https://doi.org/10.1002/sdr.4260100211"
+      },
+      {
+        "label": "Linda Booth Sweeney et John D. Sterman, « Bathtub dynamics: initial results of a systems thinking inventory », System Dynamics Review, vol. 16, n° 4, 2000, p. 249-286. Article publié fermé, manuscrit d'auteur ouvert.",
+        "kind": "secondary-academic",
+        "reference": "10.1002/sdr.198",
+        "url": "https://web.mit.edu/jsterman/www/Bathtub.pdf"
+      },
+      {
+        "label": "John D. Sterman, « Learning in and about complex systems », System Dynamics Review, vol. 10, n° 2-3, 1994, p. 291-330. Exposé savant de référence sur l'apprentissage par modèle mental et par simulation. Non ouvert, article fermé.",
+        "kind": "secondary-academic",
+        "reference": "10.1002/sdr.4260100214",
+        "url": "https://doi.org/10.1002/sdr.4260100214"
+      }
+    ]
+  },
+  {
+    "id": "modele-mondial-et-modes-de-comportement",
+    "slug": "modele-mondial-et-modes-de-comportement",
+    "title": "Modèle du monde et modes de comportement",
+    "authorLabel": "Donella H. Meadows, Dennis L. Meadows, Jørgen Randers, William W. Behrens III",
+    "hookQuestion": "Que peut dire un modèle du monde qui ne prédit aucun chiffre ?",
+    "shortExplanation": "Meadows et ses coauteurs : leur modèle ne donne pas de valeur datée, mais les tendances de comportement que sa structure de boucles commande plus que les nombres.",
+    "authors": [],
+    "themes": [
+      "croissance-et-limites"
+    ],
+    "themeLabel": "Quand la croissance rencontre sa limite",
+    "attributionNote": "Concept coécrit par Donella H. Meadows, Dennis L. Meadows, Jørgen Randers et William W. Behrens III, les quatre noms de la page de titre. Leur modèle est bâti sur un prototype de Jay W. Forrester (World Dynamics, 1971). Le Club de Rome a commandité l'étude, il ne l'a pas écrite.",
+    "quotation": {
+      "text": "Ces graphiques ne sont pas des prédictions exactes de la valeur des variables pour telle ou telle année à venir.",
+      "reference": "Donella H. Meadows, Dennis L. Meadows, Jørgen Randers, William W. Behrens III, The Limits to Growth, New York, Universe Books, 1972, p. 93",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Donella H. Meadows, Dennis L. Meadows, Jørgen Randers, William W. Behrens III, The Limits to Growth, New York, Universe Books, 1972, 205 p. Numérisé par la bibliothèque du Dartmouth College, hébergé par le Donella Meadows Project.",
+        "kind": "primary",
+        "reference": "p. 20-24, 91-94, 121-122, 141-145 · ISBN 0-87663-165-0",
+        "url": "https://donellameadows.org/wp-content/userfiles/Limits-to-Growth-digital-scan-version.pdf"
+      },
+      {
+        "label": "The Limits to Growth, transcription diplomatique de l'édition de 1972 avec marqueurs de page, Dartmouth College Library.",
+        "kind": "primary",
+        "reference": "Marqueur « Page 93 »",
+        "url": "https://collections.dartmouth.edu/archive/text/meadows/diplomatic/meadows_ltg-diplomatic.html"
+      },
+      {
+        "label": "Gaya Herrington, « Update to limits to growth: Comparing the World3 model with empirical data », Journal of Industrial Ecology, vol. 25, n° 3, 2021, p. 614-626.",
+        "kind": "secondary-academic",
+        "reference": "§1.2 et §1.4 · 10.1111/jiec.13084",
+        "url": "https://doi.org/10.1111/jiec.13084"
+      },
+      {
+        "label": "Graham Turner, A Comparison of the Limits to Growth with Thirty Years of Reality, CSIRO Working Paper Series 2008-09, juin 2008, 52 p.",
+        "kind": "secondary-academic",
+        "reference": "Résumé et introduction · RePEc:cse:wpaper:2008-09",
+        "url": "https://www.ecsim.org/Vista/archivos/TURNER%20G%20-%20TLG%2030%20years%20comparison%20to%20reality.pdf"
+      },
+      {
+        "label": "Jørgen Randers, « Le point de vue d'un co-auteur : Que nous disait réellement Halte à la croissance ? », Mondes en décroissance, n° 1, 2023.",
+        "kind": "francophone-reception",
+        "reference": "10.52497/revue-opcd.230",
+        "url": "https://polen.uca.fr/revue-opcd/index.php?id=230"
       }
     ]
   },
@@ -3639,6 +3938,57 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "stocks-et-flux",
+    "slug": "stocks-et-flux",
+    "title": "Stocks et flux",
+    "authorLabel": "Jay W. Forrester",
+    "hookQuestion": "Combien de sortes de variables faut-il pour décrire n'importe quel système ?",
+    "shortExplanation": "Forrester : tout système se compose de stocks qui accumulent et de flux qui les changent, et d'aucune autre sorte de variable. La nature intègre, elle ne dérive jamais.",
+    "authors": [],
+    "themes": [
+      "ce-qui-s-accumule"
+    ],
+    "themeLabel": "Ce qui s'accumule et ce qui s'écoule",
+    "attributionNote": "Exposé de Jay W. Forrester, fondateur de la dynamique des systèmes au Massachusetts Institute of Technology. Il déclare lui-même emprunter ses termes à différents domaines, et prend son appui à la comptabilité : ce qui lui revient est d'affirmer qu'il n'existe aucune autre sorte de variable, et que la nature accumule au lieu de dériver.",
+    "quotation": {
+      "text": "Tous les systèmes, partout, se composent de ces deux sortes de concepts, les stocks et les flux, et d'aucune autre.",
+      "reference": "Jay W. Forrester, « Some Basic Concepts in System Dynamics », D-4894, Sloan School of Management, Massachusetts Institute of Technology, 2009, p. 7, section 1.2",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Jay W. Forrester, « Some Basic Concepts in System Dynamics », D-4894, Sloan School of Management, Massachusetts Institute of Technology, 29 janvier 2009, 17 p. Exemplaire diffusé par le Creative Learning Exchange.",
+        "kind": "primary",
+        "reference": "p. 7, section 1.2, et p. 15, section 7",
+        "url": "http://static.clexchange.org/ftp/documents/system-dynamics/SD2009-02SomeBasicConcepts.pdf"
+      },
+      {
+        "label": "Jay W. Forrester, « Some Basic Concepts in System Dynamics », D-4894, 2009, 17 p. Second exemplaire indépendant, déposé par Georgia Tech pour le cours CS 8803 CC, comparé page à page au précédent.",
+        "kind": "primary",
+        "reference": "p. 7 et p. 15",
+        "url": "https://sites.cc.gatech.edu/classes/AY2018/cs8803cc_spring/research_papers/Forrester-SystemDynamics.pdf"
+      },
+      {
+        "label": "D. Provitolo, « La dynamique des systèmes selon J.W. Forrester », Hypergéo, article 384, 2006, 4 p. Donne le vocabulaire français du concept : variables de niveau ou d'état, stocks, flux d'entrée et de sortie.",
+        "kind": "francophone-reception",
+        "reference": "HAL halshs-00391565",
+        "url": "https://shs.hal.science/halshs-00391565v1"
+      },
+      {
+        "label": "Linda Booth Sweeney et John D. Sterman, « Bathtub dynamics: initial results of a systems thinking inventory », System Dynamics Review, vol. 16, n° 4, 2000, p. 249-286. Article publié fermé, manuscrit d'auteur ouvert.",
+        "kind": "secondary-academic",
+        "reference": "10.1002/sdr.198",
+        "url": "https://web.mit.edu/jsterman/www/Bathtub.pdf"
+      },
+      {
+        "label": "Jay W. Forrester, Principes des systèmes, traduit par P. Sylvestre-Baron, Lyon, Presses universitaires de Lyon, 1980. Traduction française de Principles of Systems (1968), que la bibliographie de D-4894 rappelle p. 17.",
+        "kind": "primary",
+        "reference": "Ouvrage entier, non ouvert · ISBN 2-7297-0084-6",
+        "url": "https://catalogue.bnf.fr/ark:/12148/cb34679884n"
+      }
+    ]
+  },
+  {
     "id": "substitution-des-problemes-aux-secteurs",
     "slug": "substitution-des-problemes-aux-secteurs",
     "title": "La substitution des problèmes aux secteurs",
@@ -3693,6 +4043,56 @@ export const generatedConcepts: Concept[] = [
         "kind": "francophone-reception",
         "reference": "10.2307/3320512",
         "url": "https://www.persee.fr/doc/rfsoc_0035-2969_1970_hos_11_1_1602"
+      }
+    ]
+  },
+  {
+    "id": "systemographie",
+    "slug": "systemographie",
+    "title": "La systémographie",
+    "authorLabel": "Jean-Louis Le Moigne",
+    "hookQuestion": "Deux vérifications font un modèle : pourquoi une seule peut-elle s'achever ?",
+    "shortExplanation": "Le Moigne : le modèle doit être isomorphe du Système Général, ce qui se vérifie, et homomorphe de l'objet, ce qui ne s'achève jamais. Plusieurs modèles restent valides.",
+    "authors": [],
+    "themes": [
+      "dire-systeme"
+    ],
+    "themeLabel": "Ce qu'on engage en disant système",
+    "attributionNote": "Terme forgé par Jean-Louis Le Moigne, qui signe seul La théorie du système général, parue aux Presses universitaires de France en 1977 : il l'introduit au chapitre 3, entre guillemets, et justifie en note d'avoir donné un autre nom à un autre outil que le macroscope de Joël de Rosnay. L'exemplaire ouvert ici est l'édition électronique de 2006, qui reprend la quatrième édition de 1994.",
+    "quotation": {
+      "text": "[…] la représentation que construit l’observateur sera à la fois : 1/ Isomorphe du Système Général. 2/ Homomorphe de l’objet à représenter.",
+      "reference": "Jean-Louis Le Moigne, La théorie du système général. Théorie de la modélisation, édition électronique des Classiques du Réseau Intelligence de la Complexité, 2006, reprise de la quatrième édition de 1994, p. 79, chapitre 3"
+    },
+    "sources": [
+      {
+        "label": "Jean-Louis Le Moigne, La théorie du système général. Théorie de la modélisation, édition électronique des Classiques du Réseau Intelligence de la Complexité, MCX-APC, 2006, 360 p. Reprise de la 4e édition de 1994.",
+        "kind": "primary",
+        "reference": "Chapitre 3, p. 71-86 ; citation p. 79",
+        "url": "https://ftp-developpez.com/jean-louislemoigne/TGS-TM.pdf"
+      },
+      {
+        "label": "Jean-Louis Le Moigne, La théorie du système général. Théorie de la modélisation, Paris, Presses universitaires de France, collection « Systèmes-Décisions », 1977, 258 p. Édition d'origine du concept, non ouverte.",
+        "kind": "primary",
+        "reference": "Ouvrage entier, non ouvert",
+        "url": "https://openlibrary.org/books/OL4343570M"
+      },
+      {
+        "label": "Yvon Pesqueux, « La systémique comme jalon et rhétorique en sciences de gestion », document de cours, CNAM, 2020, 19 p. Restitue la procédure en trois phases, cadrage par isomorphie et documentation par homomorphie.",
+        "kind": "francophone-reception",
+        "reference": "HAL halshs-02496706",
+        "url": "https://shs.hal.science/halshs-02496706"
+      },
+      {
+        "label": "Bernard Motulsky, compte rendu de La théorie du système général, Communication Information, vol. 2, n° 3, automne 1978, p. 217-218. Réception contemporaine de la première édition.",
+        "kind": "francophone-reception",
+        "reference": "p. 217 ; p. 218 non servie",
+        "url": "https://www.persee.fr/doc/comin_0382-7798_1978_num_2_3_1078"
+      },
+      {
+        "label": "Christophe Schmitt, « À la rencontre de Jean-Louis Le Moigne : de la théorie du système général à la modélisation et au constructivisme », Projectics, n° 37, 2024, p. 151-160.",
+        "kind": "francophone-reception",
+        "reference": "10.3917/proj.037.0151",
+        "url": "https://hal.univ-lorraine.fr/hal-04543057"
       }
     ]
   },
