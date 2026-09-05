@@ -1,0 +1,92 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "stocks-et-flux",
+  "slug": "stocks-et-flux",
+  "status": "CANDIDATE",
+  "title": "Stocks et flux",
+  "themes": [
+    "ce-qui-s-accumule"
+  ],
+  "theme_labels": {
+    "ce-qui-s-accumule": "Ce qui s'accumule et ce qui s'écoule"
+  },
+  "domain": "systems-thinking",
+  "authors": [
+    {
+      "name": "Jay W. Forrester",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Exposé de Jay W. Forrester, fondateur de la dynamique des systèmes au Massachusetts Institute of Technology. Il déclare lui-même emprunter ses termes à différents domaines, et prend son appui à la comptabilité : ce qui lui revient est d'affirmer qu'il n'existe aucune autre sorte de variable, et que la nature accumule au lieu de dériver.",
+  "hook": "Combien de sortes de variables faut-il pour décrire n'importe quel système ?",
+  "summary": "Forrester : tout système se compose de stocks qui accumulent et de flux qui les changent, et d'aucune autre sorte de variable. La nature intègre, elle ne dérive jamais.",
+  "quotation": {
+    "text": "Tous les systèmes, partout, se composent de ces deux sortes de concepts, les stocks et les flux, et d'aucune autre.",
+    "reference": "Jay W. Forrester, « Some Basic Concepts in System Dynamics », D-4894, Sloan School of Management, Massachusetts Institute of Technology, 2009.",
+    "locator": "p. 7, section 1.2",
+    "language": "fr",
+    "original_text": "All systems, everywhere, consist of these two kinds of concepts—stocks and flows—and none other.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (chaîne Curiosity, 5 septembre 2026). Aucune traduction française publiée de ce document D-4894 n'a été identifiée. « Consist of » est rendu par « se composent de » et non par « sont faits de » : il s'agit de la composition d'un système en variables, pas de sa matière. « And none other » se rapporte à « kinds », d'où le féminin singulier « et d'aucune autre ». Les deux tirets cadratins de l'original, qui encadrent l'apposition, sont rendus par des virgules, la carte n'admettant pas le tiret cadratin ; l'original les conserve.",
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "Jay W. Forrester, « Some Basic Concepts in System Dynamics », D-4894, Sloan School of Management, Massachusetts Institute of Technology, 29 janvier 2009, 17 p. Exemplaire diffusé par le Creative Learning Exchange.",
+      "kind": "primary",
+      "locator": "p. 7, section 1.2, et p. 15, section 7",
+      "doi_isbn": null,
+      "url": "http://static.clexchange.org/ftp/documents/system-dynamics/SD2009-02SomeBasicConcepts.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Jay W. Forrester, « Some Basic Concepts in System Dynamics », D-4894, 2009, 17 p. Second exemplaire indépendant, déposé par Georgia Tech pour le cours CS 8803 CC, comparé page à page au précédent.",
+      "kind": "primary",
+      "locator": "p. 7 et p. 15",
+      "doi_isbn": null,
+      "url": "https://sites.cc.gatech.edu/classes/AY2018/cs8803cc_spring/research_papers/Forrester-SystemDynamics.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "D. Provitolo, « La dynamique des systèmes selon J.W. Forrester », Hypergéo, article 384, 2006, 4 p. Donne le vocabulaire français du concept : variables de niveau ou d'état, stocks, flux d'entrée et de sortie.",
+      "kind": "francophone-reception",
+      "locator": null,
+      "doi_isbn": "HAL halshs-00391565",
+      "url": "https://shs.hal.science/halshs-00391565v1",
+      "consulted": "full-text"
+    },
+    {
+      "label": "L. Booth Sweeney et John D. Sterman, « Bathtub dynamics: initial results of a systems thinking inventory », System Dynamics Review, vol. 16, n° 4, 2000, p. 249-286. Article publié fermé, manuscrit d'auteur ouvert.",
+      "kind": "secondary-academic",
+      "locator": null,
+      "doi_isbn": "10.1002/sdr.198",
+      "url": "https://web.mit.edu/jsterman/www/Bathtub.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Jay W. Forrester, Principes des systèmes, traduit par P. Sylvestre-Baron, Lyon, Presses universitaires de Lyon, 1980. Traduction française de Principles of Systems (1968), que la bibliographie de D-4894 rappelle p. 17.",
+      "kind": "primary",
+      "locator": "Ouvrage entier, non ouvert",
+      "doi_isbn": "ISBN 2-7297-0084-6",
+      "url": "https://catalogue.bnf.fr/ark:/12148/cb34679884n",
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "verdict": "PENDING",
+    "notes": []
+  },
+  "dossier": "corpus/evidence/stocks-et-flux/lecture.json",
+  "notes": [
+    "LES DÉLAIS NE SONT PAS DANS CE TEXTE, et la carte n'en parle pas : « delay » et « lag » ont zéro occurrence sur les dix-sept pages, dans les deux exemplaires. Le seul énoncé qui relie une structure à un comportement dans la durée est celui de la page 14, qui explique l'oscillation par le nombre de niveaux et non par un retard. Le tiers manquant du sujet est à chercher dans Principles of Systems (1968) et Industrial Dynamics (1961), dont aucun n'a été ouvert.",
+    "FRONTIÈRE AVEC LA CYBERNÉTIQUE, et de quel côté la carte tombe. La figure 4 de la page 7 est un régulateur commandé par l'écart, et Forrester l'écrit : « The flow is determined by a statement that tells how the flow is controlled by the value of the stock in comparison to a goal. » La carte est bâtie sur la phrase des deux sortes de variables et sur l'accumulation, jamais sur le but ni sur la comparaison à un but. La phrase « Feedback loops are the structures within which all changes occur » (p. 6) a été écartée pour le même motif : ce qui porte sur la régulation appartient à regulateur-commande-par-l-ecart et à critere-de-la-retroaction, déjà au corpus.",
+    "CE QUI N'EST PAS DE FORRESTER. Ni le mot stock, ni le mot flux, ni la notion d'accumulation : il écrit lui-même « to choose terminology from different fields » (p. 7), et l'appui qu'il donne à sa thèse est emprunté à la comptabilité, dont le bilan et le compte de résultat sont antérieurs de plusieurs siècles. Ce qui lui revient, et que porte la carte : « and none other », et le renversement de priorité entre l'accumulation et la dérivée, « Nowhere in nature does nature take a derivative. Nature only integrates, that is, accumulates in stocks. » (p. 15).",
+    "AUCUNE DATE DE PREMIÈRE FORMULATION N'EST PORTÉE SUR LA CARTE. Que la distinction remonte à 1961 et 1968 est rapporté par la bibliographie du document lui-même (p. 17) et par une phrase de Booth Sweeney et Sterman, « Stocks and flows are fundamental to the dynamics of systems (Forrester 1961) ». Ni Industrial Dynamics ni Principles of Systems n'a été ouvert, ni en anglais ni dans la traduction française de 1980.",
+    "L'ÉMETTEUR AFFICHÉ EST CELUI QUE PORTE LE DOCUMENT. Le texte n'imprime nulle part « System Dynamics Group », contrairement aux documents D-4468 dont le corpus tire déjà trois cartes : sa page de titre porte « Sloan School of Management / Massachusetts Institute of Technology », et la notice de la citation reprend cela seul.",
+    "TIRAGE. Le document ne porte aucune mention de révision, mais le nom de fichier Word conservé dans les métadonnées des deux exemplaires est « D-4894D.Some Basic Concepts in System Dynamics.docx » : la lettre D suggère une quatrième révision qui n'est imprimée nulle part. La localisation ne vaut que pour l'exemplaire daté du 29 janvier 2009.",
+    "La citation a été relue sur l'image du folio 7 rendue à 170 dpi, et retrouvée mot pour mot, une fois et une seule, à la même page du second exemplaire. La faute d'impression « that there two » de la phrase suivante est dans le document ; c'est pour cela qu'elle n'a pas été retenue comme citation."
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "modele-mental-et-modele-de-simulation",
+  "slug": "modele-mental-et-modele-de-simulation",
+  "status": "CANDIDATE",
+  "title": "Modèle mental et modèle de simulation",
+  "themes": [
+    "dire-systeme"
+  ],
+  "theme_labels": {
+    "dire-systeme": "Ce qu'on engage en disant système"
+  },
+  "authors": [
+    {
+      "name": "Jay W. Forrester",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Thèse de Jay W. Forrester, exposée à la première personne dans un texte d'introduction : c'est une position d'auteur, non un résultat d'enquête. L'expression modèle mental n'est pas forgée par lui et il ne le revendique nulle part. Ce qui lui revient est le rapport qu'il institue entre le modèle mental et le modèle de simulation, et la répartition des rôles qu'il en tire.",
+  "hook": "Que sait votre tête d'un système, et que ne sait-elle pas en déduire ?",
+  "summary": "Forrester : le modèle mental est souvent exact sur les pièces d'un système, mais on ne peut s'y fier pour en déduire le comportement. La simulation, elle, le révèle.",
+  "quotation": {
+    "text": "Mais les modèles mentaux ne sont d'aucune fiabilité pour déduire le comportement qui résultera des éléments connus d'un système complexe.",
+    "reference": "Jay W. Forrester, « Some Basic Concepts in System Dynamics », D-4894, Sloan School of Management, Massachusetts Institute of Technology, 2009.",
+    "locator": "p. 10, section 3.1",
+    "language": "fr",
+    "original_text": "But mental models are entirely unreliable in deducing what behavior will result from the known pieces of a complex system.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (chaîne Curiosity, 5 septembre 2026). Aucune traduction française publiée de ce document D-4894 n'a été identifiée. « Entirely unreliable » est rendu par « ne sont d'aucune fiabilité » et non par « sont totalement incapables » : unreliable dit qu'on ne peut pas s'y fier, non que la chose est impossible, et la nuance porte tout le propos, puisque la phrase précédente accorde aux modèles mentaux une exactitude réelle sur les pièces du système. « Pieces » est rendu par « éléments ». La conjonction initiale « But » est conservée : la retrancher ferait d'une restriction une thèse générale.",
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "Jay W. Forrester, « Some Basic Concepts in System Dynamics », D-4894, Sloan School of Management, Massachusetts Institute of Technology, 29 janvier 2009, 17 p. Exemplaire diffusé par le Creative Learning Exchange.",
+      "kind": "primary",
+      "locator": "p. 9-12, sections 3, 3.1, 4 et 5",
+      "doi_isbn": null,
+      "url": "http://static.clexchange.org/ftp/documents/system-dynamics/SD2009-02SomeBasicConcepts.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Jay W. Forrester, « Some Basic Concepts in System Dynamics », D-4894, 2009, 17 p. Second exemplaire indépendant, déposé par Georgia Tech pour le cours CS 8803 CC, comparé page à page au précédent.",
+      "kind": "primary",
+      "locator": "p. 9-12",
+      "doi_isbn": null,
+      "url": "https://sites.cc.gatech.edu/classes/AY2018/cs8803cc_spring/research_papers/Forrester-SystemDynamics.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Jay W. Forrester, « System dynamics, systems thinking, and soft OR », System Dynamics Review, vol. 10, n° 2-3, 1994, p. 245-256. L'auteur y revient sur ce que le modèle formel ajoute au modèle mental. Non ouvert.",
+      "kind": "primary",
+      "locator": "p. 245-256",
+      "doi_isbn": "10.1002/sdr.4260100211",
+      "url": "https://doi.org/10.1002/sdr.4260100211",
+      "consulted": "metadata-only"
+    },
+    {
+      "label": "L. Booth Sweeney et John D. Sterman, « Bathtub dynamics: initial results of a systems thinking inventory », System Dynamics Review, vol. 16, n° 4, 2000, p. 249-286. Article publié fermé, manuscrit d'auteur ouvert.",
+      "kind": "secondary-academic",
+      "locator": null,
+      "doi_isbn": "10.1002/sdr.198",
+      "url": "https://web.mit.edu/jsterman/www/Bathtub.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "John D. Sterman, « Learning in and about complex systems », System Dynamics Review, vol. 10, n° 2-3, 1994, p. 291-330. Exposé savant de référence sur l'apprentissage par modèle mental et par simulation. Non ouvert, article fermé.",
+      "kind": "secondary-academic",
+      "locator": "p. 291-330",
+      "doi_isbn": "10.1002/sdr.4260100214",
+      "url": "https://doi.org/10.1002/sdr.4260100214",
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "verdict": "PENDING",
+    "notes": []
+  },
+  "dossier": "corpus/evidence/modele-mental-et-modele-de-simulation/lecture.json",
+  "notes": [
+    "L'ORDRE DU RÉSUMÉ EST CELUI DU TEXTE, ET IL EST CE QUI DISTINGUE CETTE CARTE DE comportement-contre-intuitif. Forrester accorde d'abord au modèle mental une exactitude réelle : « Mental models are rich and often sufficiently accurate about the pieces of a system—what information is available, who is connected to whom, what are different people trying to achieve » (p. 9 et 10). Ce n'est qu'ensuite qu'il lui refuse la déduction du comportement. Une carte qui n'énoncerait que la faiblesse de l'intuition redirait la carte de 1995 avec d'autres mots : celle-ci porte sur l'outil, ce que le modèle mental contient et ce qu'il ne peut pas calculer, non sur le système et la distance de la cause au symptôme.",
+    "CE QUE LA SIMULATION RÉVÈLE, ET SEULEMENT CELA. La phrase du texte est « a computer simulation can, without doubt, reveal the behavior implicit in the structure from which it is constructed » (p. 10) : c'est le comportement qu'implique la structure qu'on lui a donnée, non le comportement du monde. Le résumé écrit « le révèle » pour cette raison, et non « le calcule » ni « le prédit ». La figure 7, p. 10, donne les quatre offices de la simulation : rendre les modèles mentaux explicites, découvrir les incohérences, déterminer les implications futures, améliorer les modèles mentaux.",
+    "FRONTIÈRE AVEC systeme-concret-systeme-construit, DÉJÀ AU CORPUS. Roig oppose une chose du monde à sa représentation. Forrester oppose deux représentations, toutes deux nôtres, et répartit le travail entre elles : la tête détient l'information, la machine en déduit le comportement. La carte ne porte donc pas sur l'écart entre le modèle et le réel.",
+    "AUCUNE DATE DE PREMIÈRE FORMULATION N'EST PORTÉE SUR LA CARTE. Ce document de 2009 est un exposé d'introduction qui ne prétend pas être la première formulation ; sa bibliographie, p. 17, renvoie aux livres de l'auteur de 1961, 1968, 1969 et 1971, dont aucun n'a été ouvert.",
+    "L'ANTÉRIORITÉ DU TERME N'A PAS ÉTÉ INSTRUITE. L'expression mental model circule en psychologie depuis Craik (1943) ; ni cette antériorité ni le sens du terme dans cette littérature n'ont été vérifiés au cours de la lecture, et la carte n'en dit rien.",
+    "RÉCEPTION SAVANTE, ATTEINTE EN UN SEUL POINT. Booth Sweeney et Sterman (2000), ouvert dans son manuscrit d'auteur, mesure sur des sujets réels l'échec de déduction que Forrester affirme, et signale que l'explication ordinaire de cet échec dans la littérature est la rationalité limitée, ce qui n'est pas celle de Forrester. Ce désaccord n'a pas été instruit. Sterman 1994 et Forrester 1994, qui auraient porté ce concept, sont rendus closed par Unpaywall et n'ont pas été ouverts : aucune phrase de la carte ne repose sur eux.",
+    "LA THÈSE DE LA BASE DE DONNÉES MENTALE (p. 12), selon laquelle l'information du monde se trouve principalement dans la tête des gens, est donnée par Forrester comme une suggestion, sans mesure ni référence. Elle demanderait sa propre carte et n'est pas portée ici.",
+    "La citation a été relue sur l'image du folio 10 rendue à 170 dpi, colonne de droite, cinquième ligne, juste avant « On the other hand », et retrouvée mot pour mot à la même page du second exemplaire."
+  ]
+}

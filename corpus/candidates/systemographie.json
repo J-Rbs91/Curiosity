@@ -1,0 +1,91 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "systemographie",
+  "slug": "systemographie",
+  "status": "CANDIDATE",
+  "title": "La systémographie",
+  "themes": [
+    "dire-systeme"
+  ],
+  "theme_labels": {
+    "dire-systeme": "Ce qu'on engage en disant système"
+  },
+  "authors": [
+    {
+      "name": "Jean-Louis Le Moigne",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Terme forgé par Jean-Louis Le Moigne, qui signe seul La théorie du système général, parue aux Presses universitaires de France en 1977 : il l'introduit au chapitre 3, entre guillemets, et justifie en note d'avoir donné un autre nom à un autre outil que le macroscope de Joël de Rosnay. L'exemplaire ouvert ici est l'édition électronique de 2006, qui reprend la quatrième édition de 1994.",
+  "hook": "Deux vérifications font un modèle : pourquoi une seule peut-elle s'achever ?",
+  "summary": "Le Moigne : le modèle doit être isomorphe du Système Général, ce qui se vérifie, et homomorphe de l'objet, ce qui ne s'achève jamais. Plusieurs modèles restent valides.",
+  "quotation": {
+    "text": "[…] la représentation que construit l’observateur sera à la fois : 1/ Isomorphe du Système Général. 2/ Homomorphe de l’objet à représenter.",
+    "reference": "Jean-Louis Le Moigne, La théorie du système général. Théorie de la modélisation, édition électronique des Classiques du Réseau Intelligence de la Complexité, 2006, reprise de la quatrième édition de 1994.",
+    "locator": "p. 79, chapitre 3",
+    "language": "fr",
+    "translation": {
+      "kind": "none"
+    }
+  },
+  "sources": [
+    {
+      "label": "Jean-Louis Le Moigne, La théorie du système général. Théorie de la modélisation, édition électronique des Classiques du Réseau Intelligence de la Complexité, MCX-APC, 2006, 360 p. Reprise de la 4e édition de 1994.",
+      "kind": "primary",
+      "locator": "Chapitre 3, p. 71-86 ; citation p. 79",
+      "doi_isbn": null,
+      "url": "https://ftp-developpez.com/jean-louislemoigne/TGS-TM.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Jean-Louis Le Moigne, La théorie du système général. Théorie de la modélisation, Paris, Presses universitaires de France, collection « Systèmes-Décisions », 1977, 258 p. Édition d'origine du concept, non ouverte.",
+      "kind": "primary",
+      "locator": "Ouvrage entier, non ouvert",
+      "doi_isbn": null,
+      "url": "https://openlibrary.org/books/OL4343570M",
+      "consulted": "metadata-only"
+    },
+    {
+      "label": "Yvon Pesqueux, « La systémique comme jalon et rhétorique en sciences de gestion », document de cours, CNAM, 2020, 19 p. Restitue la procédure en trois phases, cadrage par isomorphie et documentation par homomorphie.",
+      "kind": "francophone-reception",
+      "locator": null,
+      "doi_isbn": "HAL halshs-02496706",
+      "url": "https://shs.hal.science/halshs-02496706",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Bernard Motulsky, compte rendu de La théorie du système général, Communication Information, vol. 2, n° 3, automne 1978, p. 217-218. Réception contemporaine de la première édition.",
+      "kind": "francophone-reception",
+      "locator": "p. 217 ; p. 218 non servie",
+      "doi_isbn": null,
+      "url": "https://www.persee.fr/doc/comin_0382-7798_1978_num_2_3_1078",
+      "consulted": "partial"
+    },
+    {
+      "label": "Christophe Schmitt, « À la rencontre de Jean-Louis Le Moigne : de la théorie du système général à la modélisation et au constructivisme », Projectics, n° 37, 2024, p. 151-160.",
+      "kind": "francophone-reception",
+      "locator": "p. 151-160",
+      "doi_isbn": "10.3917/proj.037.0151",
+      "url": "https://hal.univ-lorraine.fr/hal-04543057",
+      "consulted": "full-text"
+    }
+  ],
+  "review": {
+    "verdict": "PENDING",
+    "notes": []
+  },
+  "dossier": "corpus/dossiers/systemographie.json",
+  "notes": [
+    "LE MÉCANISME EST LA PROCÉDURE EN DEUX VÉRIFICATIONS, ET SON POINT ENSEIGNABLE EST QU'ELLES N'ONT PAS LE MÊME STATUT. La première se décide mécaniquement : le Système Général étant une construction artificielle aux propriétés connues par construction, il suffit de les balayer une à une, « un objet qui, doté de finalités, fonctionne se structure et évolue dans un environnement » (p. 79). La seconde ne se termine jamais : « L'homomorphie du modèle et de l'objet sera difficile et a priori jamais parfaitement validée » (p. 79). D'où la conséquence que porte la fin du résumé : « Il sera donc a priori toujours possible de concevoir et de construire bien des systémographies différentes du même objet, toutes homomorphes de cet objet et toutes isomorphes du Système Général » (p. 79).",
+    "LA CARTE N'EST PAS BÂTIE SUR « LES SYSTÈMES NE SONT PAS DANS LA NATURE » (p. 74). Cette thèse est une position d'épistémologie sans mécanisme, hors du périmètre, et elle ferait doublon avec systeme-concret-systeme-construit, déjà au corpus. C'est cet écart, et lui seul, qui tient les deux cartes distinctes : Roig pose le rapport du système réel au système construit, Le Moigne l'outille.",
+    "L'EXEMPLAIRE OUVERT EST L'ÉDITION ÉLECTRONIQUE DE 2006, REPRISE DE LA QUATRIÈME ÉDITION DE 1994, ET NON UNE CINQUIÈME. Le document le dit quatre fois : page de titre, « Publication de l'édition 1994. Nouvelle présentation, 2006 » ; propos liminaire p. IV, « la dernière version publiée sous format imprimé en 1994 (la quatrième édition, la première ayant été publiée en 1977) » ; notice de collection p. II, « (1977-1994) » ; sommaire p. XXIV, « POSTFACE POUR LA QUATRIEME EDITION ». Toutes les localisations de cette fiche valent pour cet exemplaire seul.",
+    "L'ÉDITION PUF DE 1977 N'A PAS ÉTÉ OUVERTE et aucune numérisation n'en a été trouvée. Que la systémographie soit bien de cette première édition est établi par une déclaration de l'auteur ajoutée à la deuxième édition, p. 22 : « la primauté que l'on avait introduite, dès la première édition, à la présentation de la systémographie ». Cette phrase est de 1984 : elle atteste l'antériorité, elle n'en est pas la preuve directe. Sa pagination totale est incertaine, 258 p. chez Motulsky et OpenLibrary, 272 p. chez Degenne.",
+    "LE MIROIR INTERNET ARCHIVE EST LE MÊME FICHIER, OCTET POUR OCTET : le SHA-256 de l'exemplaire déposé sous l'identifiant JL.LeMoigne_theorie-du-sys-general_theorie_modelisation_1977 est identique à celui du fichier servi par ftp-developpez.com. Ce n'est pas une seconde attestation, c'est une seconde disponibilité, et la fiche ne la présente pas autrement : elle n'est pas versée comme source.",
+    "LE NOM N'A PAS SURVÉCU, LE MÉCANISME OUI. Le mot systémographie est absent de HAL, où l'interrogation exacte rend un seul document sans rapport. Pesqueux (2020) restitue la procédure au mot près sans jamais prononcer le terme, et Schmitt (2024) non plus. Le titre de la carte est celui que l'auteur a donné à son chapitre et à son instrument, ce n'est pas une étiquette reçue.",
+    "LACUNE LA PLUS REGRETTABLE : Géry Lecas, « La modélisation systémique : outils méthodologiques pour économistes », Innovations, 2006/2, n° 24, était la seule source secondaire francophone repérée qui traite la systémographie sous son nom. Cairn a rendu HTTP 403 sur le PDF. Ce qu'elle établit est inconnu, non absent. Le domaine mcxapc.org, où se trouve un texte de l'auteur intitulé « Qu'est-ce qu'un Modèle ? », est refusé par le proxy sortant.",
+    "LA COUPE EN TÊTE DE CITATION remplace « Le mode d'emploi en est » (p. 78), puis « relativement simple : » (p. 79). Elle retire la seule appréciation portée par l'auteur et permet de tenir la citation sur la seule page 79 ; sans elle, le passage ferait 164 caractères et le localisateur devrait être « p. 78-79 ». Les deux membres numérotés sont imprimés en alinéas distincts et leurs numéros en italique : la carte les rend en ligne continue, sans italique.",
+    "L'AUTEUR REFUSE UN SYNONYME COURANT : « analyse de système » et « approche système » sont désignées p. 81 comme les noms populaires aux connotations malheureuses de son instrument, et diagnostiquées comme une « ultime tentative de récupération de l'analyse cartésienne ». Écrire que la systémographie est l'analyse de système de Le Moigne le contredirait dans la page même où il définit son terme.",
+    "LA LIBERTÉ DU MODÉLISATEUR EST BORNÉE, ce que le résumé ne dit pas faute de place : la démarche « peut laisser divaguer l'imagination de l'observateur à sa guise, dès lors qu'il assure en permanence de la validité de ces deux correspondances » (p. 80), et la contrepartie exigée est l'explicitation, « Mais il importe qu'il y soit explicitement, publiquement, loyalement » (p. 81). Ce qui départage les modèles n'est pas leur fidélité mais les objectifs du modélisateur (p. 82).",
+    "La citation a été relue sur l'image de la page 79 rendue à 170 dpi. Le PDF est né numérique, sans couche OCR ; la couche texte et l'image concordent sans écart."
+  ]
+}
