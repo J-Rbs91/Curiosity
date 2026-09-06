@@ -1,0 +1,65 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "deux-penalites-pour-un-meme-ecart",
+  "slug": "deux-penalites-pour-un-meme-ecart",
+  "status": "IN_REVIEW",
+  "title": "Deux pénalités pour un même écart",
+  "themes": [
+    "produire-et-stocker"
+  ],
+  "theme_labels": {
+    "produire-et-stocker": "Combien produire, combien en tenir"
+  },
+  "authors": [
+    {
+      "name": "Richard Bellman",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Richard Bellman signe seul le rapport RAND P-651. Le paragraphe d'ouverture de sa partie III, d'où vient cette citation, ne crédite personne : il y pose lui-même la forme commune de ces problèmes. Il ne revendique pas le nom pour autant, écrivant que ces problèmes sont « occasionnellement appelés » problèmes de lissage, sans dire par qui, et il crédite nommément chaque cas qu'il expose ensuite.",
+  "hook": "Manquer ou avoir trop : les deux écarts coûtent-ils la même chose ?",
+  "summary": "Un système tenu dans un état visé coûte dès qu'il s'en écarte, et les deux sens ne se paient pas pareil : demande non servie d'un côté, capital immobilisé de l'autre.",
+  "quotation": {
+    "text": "[…] nous avons un type de pénalité pour le dépassement des besoins, et un autre type de pénalité pour l'incapacité à les satisfaire.",
+    "reference": "Richard Bellman, Mathematical Aspects of Scheduling Theory, RAND Corporation, rapport P-651, révisé le 23 mai 1955.",
+    "locator": "p. 38, partie III",
+    "language": "fr",
+    "original_text": "In some cases, the penalty is the same regardless of the direction of deviation; in other cases, we have one type of penalty for overshooting the requirements, and another type of penalty for not being able to meet the requirements.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (chaîne Curiosity, session du 6 septembre 2026). Aucune traduction française publiée du rapport RAND P-651 n'a été identifiée, ce rapport étant une pièce de littérature grise jamais rééditée. La coupe initiale, signalée par les crochets, retire « In some cases, the penalty is the same regardless of the direction of deviation », qui pose le cas symétrique ; elle ne retourne pas le sens, elle laisse le cas dissymétrique, qui est celui de la carte, et l'anglais entier est conservé en original_text. Sans elle le français dépasse 220 caractères. « Requirements » est rendu par « besoins » et non par « exigences » : Bellman appelle la même grandeur « committments » au paragraphe suivant, et « besoins » couvre les deux emplois sans ajouter d'idée de norme. « Overshooting » est rendu par « dépassement » ; « surproduction » aurait fermé le cas du stock et celui de l'effectif, que Bellman couvre également. L'anglais fait seul foi.",
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "Richard Bellman, Mathematical Aspects of Scheduling Theory, RAND Corporation, rapport P-651, révisé le 23 mai 1955, 70 p.",
+      "kind": "primary",
+      "locator": "p. 38 et p. 42",
+      "doi_isbn": null,
+      "url": "https://archive.org/details/DTIC_AD0604647",
+      "consulted": "full-text"
+    }
+  ],
+  "review": {
+    "reviewer": null,
+    "date": null,
+    "verdict": "PENDING",
+    "rounds": 0,
+    "notes": []
+  },
+  "notes": [
+    "L'état visé que porte le résumé est la phrase qui précède immédiatement la citation, p. 38 : « The general problem has the following character: we wish to maintain a system in a given state, with penalties for deviations from this state. » Trois choses sont énoncées et pas une de plus : il y a un état visé, s'en écarter coûte, et le coût des deux écarts n'est pas nécessairement le même. Bellman ne dit ni comment se fixe l'état visé, ni ce que vaut la pénalité, ni quelle politique minimise le total.",
+    "Les deux monnaies nommées par le résumé viennent de la seconde énonciation de la dissymétrie, p. 42 : « Here is a case where we have one type of penalty for being unable to supply the demand and different penalty for being overstocked. This last penalty may be expressed in terms of frozen assets, in storage cost, etc. » Elles sont donc tirées du cas du stock, que Bellman expose là ; il ajoute même page que « Different penalties are levied in different fields of activity », c'est-à-dire que la pénalité n'est pas une constante physique mais une donnée du métier.",
+    "Ce que Bellman ne fait pas dans cette partie, et qu'une carte ne doit pas lui prêter : il ne résout rien. Chaque paragraphe pose un problème et renvoie la solution à un tiers ou à un travail annexe. Le rapport est un relevé de problèmes ouverts, et son propre résumé le dit, « to formulate a number of significant mathematical problems which have arisen in connection with the theory of scheduling ».",
+    "Aucune source secondaire n'est affichée, et l'avertissement du validateur est exact. Ce n'est pas faute d'avoir cherché : les trois références que Bellman donne pour cette partie sont fermées ou introuvables. Bellman, Glicksberg et Gross, « The Theory of Dynamic Programming as Applied to a Smoothing Problem » (DOI 10.1137/0102007), est confirmé par Crossref mais rend 403 chez l'éditeur comme par le DOI, Unpaywall le donne fermé et la page JSTOR rend une erreur. « A Discrete Smoothing Problem » de S. Karlin, donné par Bellman comme « to appear », n'est pas résolu par Crossref, donc n'existe pas au sens du dépôt. « Baldwin and Shepnard », graphie relue en agrandissement sur l'image, est cité par Bellman lui-même comme un travail non publié, absent de sa bibliographie et non résolu.",
+    "Ce que les cas exposés dans cette partie ne peuvent pas donner, et pourquoi la carte n'en porte aucun. Le problème du traiteur est reproduit entre guillemets dans les termes de W. Jacobs sur une page entière : une citation prise là serait la parole de Jacobs rapportée par Bellman. Le problème du stock optimal est crédité par Bellman à Arrow, Harris et Marschak dans la phrase même où il l'expose, et le dépôt en porte déjà deux cartes tirées de leur texte primaire, penalite-de-rupture et regle-de-commande-a-deux-niveaux.",
+    "Voisinage à tenir à distance : absorber-les-fluctuations-de-commandes, de Holt, Modigliani et Simon, répartit une fluctuation de commandes entre le stock, les heures et l'effectif. Cette carte dit autre chose : que les deux sens d'un même écart ne coûtent pas la même chose. Les deux textes sont de mai 1955 et ne se citent pas.",
+    "État de droits, constaté champ par champ sur la notice de l'item et non déduit : DTIC_AD0604647 ne porte ni rights, ni licenseurl, ni possible-copyright-status, ni access-restricted-item. L'item se sert publiquement, ce qui ne vaut pas autorisation de l'ayant droit, qui est la RAND Corporation ; les mentions « approved for OTS release » et le tampon DDC portés par la pièce sont des autorisations administratives de diffusion, pas des licences. Accès public constaté, autorisation d'ayant droit non constatée. L'URL est portée par la même voie que celle des cartes déjà publiées de ce rapport.",
+    "La couche OCR de cet item n'a servi qu'à repérer, jamais à citer : elle transcrit la date de couverture « Revised 23 May 1965 » là où l'image porte 1955, erreur qui a déjà égaré la cartographie du domaine de dix ans, et dans la seule partie III elle rend « a ^laas of problems » pour « a class of problems » et « cabled » pour « called ».",
+    "Erreurs de la bibliographie du rapport, relevées sur image et vérifiées contre Crossref, pour que personne ne les recopie : Dvoretzky, Kiefer et Wolfowitz, « The Inventory Problem », Econometrica, y est daté de 1955 alors que Crossref donne 1952 ; et « A Production Smoothing Problem » y est donné à Dantzig et Johnson sous le numéro RM-1432, alors que la couverture de la pièce porte « by Selmer Johnson, George Dantzig », papier P-610, dans cet ordre.",
+    "Périmètre : les folios 44 à 48, que le mandat rangeait dans la partie III, sont en fait la partie IV, Computational Processes, règle de Horner, algorithmes, tri. C'est le cas type du rejet prévu par le périmètre, la recherche opérationnelle prise comme branche des mathématiques, et rien n'en est tiré.",
+    "Dossier de lecture : corpus/evidence/deux-penalites-pour-un-meme-ecart/lecture.json."
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "tolerance-economique-et-controle",
+  "slug": "tolerance-economique-et-controle",
+  "status": "IN_REVIEW",
+  "title": "Pas de tolérance économique sans contrôle",
+  "themes": [
+    "variation-et-controle"
+  ],
+  "theme_labels": {
+    "variation-et-controle": "Ce qu'un procédé fait varier"
+  },
+  "authors": [
+    {
+      "name": "W. A. Shewhart",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Thèse de W. A. Shewhart, seul auteur de l'ouvrage. La tolérance n'est pas de lui et il le dit : le chapitre s'ouvre sur « it is customary practice to establish allowable or tolerance ranges of variability ». Ce qui lui revient est le lien qu'il pose entre les deux, sous le titre « Importance of Control in Setting Economic Tolerance ».",
+  "hook": "Que faut-il savoir d'un procédé avant de fixer la tolérance d'une pièce ?",
+  "summary": "Réduire une plage de tolérance gagne en valeur et coûte en rebuts : cet arbitrage ne se calcule que sur une qualité contrôlée, c'est-à-dire prévisible dans des limites.",
+  "quotation": {
+    "text": "Donc, pour fixer une plage de tolérance économique, il est nécessaire que les qualités des matériaux et des composants soient contrôlées.",
+    "reference": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931.",
+    "locator": "p. 252",
+    "language": "fr",
+    "original_text": "Hence, to set an economic tolerance range it is necessary that the qualities of materials and piece-parts be controlled.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (chaîne Curiosity, session du 6 septembre 2026). Aucune traduction française publiée de l'ouvrage de 1931 n'a été identifiée. Aucune coupe : la phrase anglaise est traduite en entier. « Piece-parts », mot maison des laboratoires de l'auteur pour les pièces élémentaires d'un assemblage, est rendu par « composants », que l'exemple du chapitre impose, un circuit fait de relais et de transformateurs. « Controlled » est rendu par « contrôlées », le mot de Shewhart, dont la définition est ailleurs dans le livre, p. 6 : un phénomène est contrôlé quand l'expérience passée permet de prévoir, au moins dans des limites, comment il variera. C'est le résumé qui porte ce sens, faute de quoi la phrase se lirait comme une banalité sur l'inspection. L'anglais fait seul foi.",
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931, xiv-501 p. (LCCN 31032090)",
+      "kind": "primary",
+      "locator": "p. 6 et p. 249-252",
+      "doi_isbn": "LCCN 31032090",
+      "url": null,
+      "consulted": "full-text"
+    },
+    {
+      "label": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, Milwaukee, American Society for Quality Control, 1980 (réimpression).",
+      "kind": "primary",
+      "locator": null,
+      "doi_isbn": "978-0-87389-076-2",
+      "url": null,
+      "consulted": "metadata-only"
+    },
+    {
+      "label": "A. Vessereau, « Contrôle des caractéristiques des papiers Kraft et simili-Kraft », Revue de statistique appliquée, tome 1, n° 3-4, 1953, p. 5-23.",
+      "kind": "francophone-reception",
+      "locator": "p. 7 et p. 12",
+      "doi_isbn": null,
+      "url": "https://www.numdam.org/item/RSA_1953__1_3-4_5_0/",
+      "consulted": "partial"
+    }
+  ],
+  "review": {
+    "reviewer": null,
+    "date": null,
+    "verdict": "PENDING",
+    "rounds": 0,
+    "notes": []
+  },
+  "notes": [
+    "Le chapitre XVII (p. 249 à 261) a été lu en entier sur les images de pages, jamais sur la couche OCR, qui est fautive sur la phrase citée elle-même : elle y transcrit « HE controlled » pour « be controlled », casse le mot « range » et met une virgule finale là où l'imprimé met un point. Un agent qui aurait cité sur l'OCR aurait publié une phrase fausse en un mot.",
+    "Ce que la carte n'affirme pas, et que la réception moderne prête à Shewhart : l'avertissement « ne confondez pas limites de contrôle et limites de tolérance » n'est écrit nulle part dans les parties V et VI. Ce que 1931 contient est la matière du contraste, deux parties séparées et deux entrées d'index distinctes, les limites de tolérance étant spécifiées par la conception (p. 249) et les limites de contrôle calculées sur ce que le procédé fait (p. 275 et 290). Le lien que Shewhart pose entre elles va dans un seul sens, celui de la carte.",
+    "L'arbitrage cité par le résumé est celui de la p. 251 : « the design engineer tries to balance the rate of increase in value of reducing a tolerance range against the rate of increase of cost of such a procedure because of increased rejections. » La phrase entière dépasse le plafond d'affichage et aucune coupe ne la ramène sous 150 caractères sans supprimer l'un des deux termes de l'arbitrage.",
+    "Citation concurrente écartée, et c'était la plus belle : « When 100 per cent inspection cannot be made, we never know that the tolerance on a quality X is being met, even though it is met in the sample. » (p. 252), traduisible en 149 caractères. Écartée parce qu'elle énonce une conséquence de l'échantillonnage et non la thèse du chapitre : elle ferait une carte sur l'inspection.",
+    "Ce que la source francophone atteste, et ce qu'elle n'atteste pas. Vessereau (1953) montre sur un cas français, le papier Kraft, qu'une caractéristique « bien contrôlée » peut malgré tout laisser 16 % des feuilles hors des limites de tolérance de l'AFNOR : les deux jeux de limites sont bien deux choses. Elle n'établit rien de l'attribution, il n'a pas été vérifié qu'elle cite Shewhart sur ce point, et elle n'a été lue qu'en partie, les pages 7 et 12 de près et le reste parcouru.",
+    "Aucune source secondaire anglophone n'a été ouverte pour cette carte : le passage est une lecture primaire et rien d'autre. L'avertissement du validateur sur l'absence de source secondaire porte donc sur une lacune réelle et déclarée. La deuxième source affichée n'est pas un commentaire, c'est la réimpression de 1980 par l'American Society for Quality Control, retenue parce qu'elle résout par ISBN et donne au lecteur un exemplaire trouvable ; elle n'a pas été ouverte et les folios cités ne sont pas les siens.",
+    "La source primaire est citée sans URL, et c'est une décision reprise des deux cartes Shewhart déjà validées : l'exemplaire lu appartient à une numérisation de masse dont la notice ne porte aucun champ de droits, et l'auto-déclaration de domaine public du numériseur n'est pas une autorisation d'ayant droit constatée. Le texte a été lu, d'où consulted full-text ; c'est l'URL qui tombe, pas la lecture.",
+    "Le LCCN 31032090 n'a pas pu être résolu par lccn.loc.gov dans la nuit du 6 septembre 2026 : les formats mods, marcxml et dc rendent tous un 500, quatre tentatives espacées comprises, et le point d'accès SRU lx2.loc.gov tombe en délai d'attente. La référence a été résolue autrement, par la notice d'édition Open Library OL6766665M, qui porte ce LCCN, l'éditeur, le lieu, l'année, la pagination xiv-501 p., l'OCLC 1045408 et la cote LC TS155 .S47, et qui déclare tirer son enregistrement de la notice MARC de la Bibliothèque du Congrès. À retenter en premier au recontrôle : la panne est vraisemblablement passagère.",
+    "L'exemplaire lu est un septième tirage de la même édition Van Nostrand, sans année à la page de titre, et non l'édition de 1931 : les folios cités sont ceux du tirage lu. Réserve héritée des cartes Shewhart déjà validées, non levée ici.",
+    "Coquille de l'imprimé, relevée et non corrigée : le chapitre s'intitule « Design Limits on Variability », mais le titre courant de la page 251 porte « DESIGN LIMITS OF VARIABILITY ». Elle n'affecte aucune citation.",
+    "Portée de la lecture : le chapitre XVIII, « Specification of Standard Quality » (p. 262 à 272), qui achève la partie V, n'a été parcouru qu'en couche OCR, et rien n'est affirmé ici sur son contenu. La partie VII, qui revient sur les tolérances p. 339 à 346 sous l'angle du risque du consommateur, n'a pas été instruite.",
+    "Dossier de lecture : corpus/evidence/tolerance-economique-et-controle/lecture.json."
+  ]
+}

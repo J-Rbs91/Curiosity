@@ -1,0 +1,79 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "etat-de-controle-statistique",
+  "slug": "etat-de-controle-statistique",
+  "status": "IN_REVIEW",
+  "title": "L'état de contrôle statistique",
+  "themes": [
+    "variation-et-controle"
+  ],
+  "theme_labels": {
+    "variation-et-controle": "Ce qu'un procédé fait varier"
+  },
+  "authors": [
+    {
+      "name": "W. A. Shewhart",
+      "app_author_id": null
+    }
+  ],
+  "hook": "Un procédé sous contrôle est-il un procédé qui ne varie pas ?",
+  "summary": "L'état de contrôle est posé en hypothèse, pas constaté : l'expérience passée y permet de prévoir la variation dans des limites, et une qualité contrôlée reste variable.",
+  "attribution_note": "Définition de W. A. Shewhart, seul auteur de l'ouvrage. Les deux pages qui posent la définition, 6 et 34, écrivent « controlled » et « objective state of control » ; le syntagme « the state of statistical control » s'imprime plus loin dans le même livre, p. 146 et p. 357.",
+  "quotation": {
+    "text": "[…] il est souhaitable d'atteindre l'état de contrôle statistique, dans lequel la loi naturelle des grands nombres rend la prévision possible.",
+    "reference": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931.",
+    "locator": "p. 146, chapitre XI",
+    "language": "fr",
+    "original_text": "For this reason it is desirable to attain the state of statistical control in which the natural law of large numbers makes prediction possible.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (chaîne Curiosity, session du 6 septembre 2026). Aucune traduction française publiée de l'ouvrage de 1931 n'a été identifiée. La coupe de tête, marquée par les crochets, retire « For this reason », c'est-à-dire le renvoi à la phrase précédente : si le produit n'est contrôlé qu'au sens empirique, on ne peut pas obtenir les avantages économiques exposés dans la partie I. Elle retire un lien de conséquence, elle ne retourne pas le sens et ne durcit rien ; sans elle le français fait 157 caractères pour 150 au plus. « It is desirable to attain » est rendu par « il est souhaitable d'atteindre » : la phrase dit qu'il est souhaitable d'atteindre cet état, elle n'affirme ni qu'il est atteint ni qu'on puisse prouver qu'il l'est, et le résumé porte ce statut d'hypothèse. L'anglais fait seul foi.",
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931, xiv-501 p. (LCCN 31032090)",
+      "kind": "primary",
+      "locator": "p. 6, 34, 146 et 357",
+      "doi_isbn": "LCCN 31032090",
+      "url": null,
+      "consulted": "full-text"
+    },
+    {
+      "label": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, Milwaukee, American Society for Quality Control, 1980 (réimpression).",
+      "kind": "primary",
+      "locator": null,
+      "doi_isbn": "978-0-87389-076-2",
+      "url": null,
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "reviewer": null,
+    "date": null,
+    "verdict": "PENDING",
+    "rounds": 1,
+    "notes": [
+      "Cette fiche a reçu PASS sur les quatre questions au contrôle aveugle du 25 août 2026, et ce verdict est conservé en entier dans corpus/review/etat-de-controle-statistique.verdict.json. Il ne couvre plus la citation ni le résumé affichés aujourd'hui : la citation de la page 6 a été remplacée par celle de la page 146, et le résumé refondu pour porter le statut d'hypothèse de l'état. La fiche repasse donc au contrôle aveugle pour ces deux points. Le titre, l'accroche, les thèmes, l'auteur et les sources sont inchangés, hors l'ajout des pages 146 et 357 au localisateur de la source primaire."
+    ]
+  },
+  "notes": [
+    "Reprise du 6 septembre 2026, et ce qu'elle a établi : le syntagme « the state of statistical control » n'est pas une étiquette reconstruite après coup, il est imprimé deux fois dans le livre de 1931, p. 146 et p. 357, relu sur l'image du feuillet aux deux endroits. La réserve du contrôle du 25 août reste exacte sur ce qu'elle disait : les deux pages qui posent la définition, 6 et 34, écrivent « controlled » et « objective state of control », sans le mot « statistical ». Constat complet dans corpus/evidence/etat-de-controle-statistique/reprise-p146.json.",
+    "Le statut d'hypothèse que le résumé porte est écrit dans le texte, et deux fois. P. 146, paragraphe 2, six lignes sous la phrase citée : « We shall assume that the necessary and sufficient condition for statistical control is that the causes of an event satisfy the law of large numbers as do those of a constant system of chance causes. » P. 357 : « it is necessary to postulate that when we have done everything that we can do to eliminate variability in a quality X, we arrive at a state of statistical control ». La page 145 ajoute les deux précautions qui l'entourent : « All that we can ever say is that experience has shown that such behavior appears to be sufficient » et « all that we are rigorously justified in saying is that these laws may control this phenomenon ». Un résumé qui ne porterait pas ce « nous supposerons » ferait de l'état de contrôle un fait constatable.",
+    "La définition de « contrôlé », que le résumé reprend, est celle de la p. 6, en italique dans le texte : « a phenomenon will be said to be controlled when, through the use of past experience, we can predict, at least within limits, how the phenomenon may be expected to vary in the future ». Elle fait 182 caractères et ne pouvait pas être citée : la seule coupe qui la ramène sous le plafond supprime « through the use of past experience », qui est la condition même de la définition.",
+    "Citation précédemment affichée par cette fiche, et remplacée : « a controlled quality will not be a constant quality. Instead, a controlled quality must be a variable quality. » (p. 6, « variable » en italique dans l'imprimé). Elle est verbatim et le contrôle du 25 août l'a vérifiée sur l'image du feuillet n17 ; elle est remplacée pour deux raisons tenues ensemble par la reprise : elle s'affichait en anglais, ce que le dépôt ne publie plus, et elle ne porte pas le syntagme qui donne son titre à la carte. Le second caractère qu'elle énonce, une qualité contrôlée est variable et non constante, est repris par le résumé.",
+    "Autre citation possible, écartée : « there is an objective state of control, making possible the prediction of quality within limits even though the causes of variability are unknown » (p. 34) est verbatim et tient dans le plafond, mais elle commence au milieu d'une phrase dont le début, « It seems reasonable to believe that », porte la prudence de l'auteur. La citer ainsi durcirait une hypothèse en affirmation.",
+    "Matériau non porté sur la carte : la p. 34 énumère cinq avantages de l'état de contrôle, tous de gestion (réduction du coût d'inspection, réduction du coût de rebut, plein bénéfice de la production de masse, qualité uniforme même quand le contrôle est destructif, resserrement des tolérances quand la mesure de qualité est indirecte). Ils mériteraient peut-être une carte à eux seuls.",
+    "Exemplaire ouvert : un septième tirage, sans année à la page de titre, postérieur à 1943 (l'adresse de l'éditeur emploie la zone postale à un chiffre, « 250 Fourth Avenue, New York 3 », introduite en 1943), donc situé entre 1943 et 1963 environ. Le bloc de copyright est illisible sur le scan : ni millésime, ni mention de réserve de droits, ni historique de tirages. La référence affichée, 1931, D. Van Nostrand Company, Inc., New York, est prise sur le catalogue de la Library of Congress, non sur la pièce. Les folios cités sont ceux du tirage lu et n'ont pas été collationnés contre l'édition de 1931.",
+    "Correspondance folio et feuillet de cet exemplaire, vérifiée et non constante : feuillet égale folio plus 11 jusqu'à la page 47 environ, plus 13 de la page 48 à la page 331, et de nouveau plus 11 à partir de la page 334, parce que les pages imprimées 332 et 333 sont absentes du scan sans que rien ne le signale. Contrôles faits en image pour cette fiche : n158 égale p. 145, n159 égale p. 146, n368 égale p. 357.",
+    "La source primaire est citée sans URL, et c'est une décision motivée. L'exemplaire lu appartient à une numérisation de masse dont la notice ne porte aucun champ de droits : ni rights, ni licenseurl, ni possible-copyright-status, ni sponsor. La seule mention de droits du dossier est un « dc.rights: In Public Domain » auto-déclaré par le numériseur, logé dans un bloc descriptif qui contient par ailleurs deux erreurs bibliographiques avérées (date 1923, éditeur donné à Londres). Aucun renouvellement de copyright n'a été retrouvé dans la base des renouvellements de Stanford, mais un renouvellement introuvable n'est pas un renouvellement inexistant, et le titre est toujours exploité commercialement. Aucune autorisation d'ayant droit n'est donc constatée. Le texte a bien été lu intégralement, d'où consulted : full-text ; c'est l'URL qui tombe, pas la lecture. La référence résout seule par son LCCN.",
+    "Le LCCN 31032090 n'a pas pu être résolu par lccn.loc.gov dans la nuit du 6 septembre 2026 : les formats mods, marcxml et dc rendent tous un 500, et le point d'accès SRU lx2.loc.gov tombe en délai d'attente. La référence a été résolue autrement, par la notice d'édition Open Library OL6766665M, qui porte ce LCCN, l'éditeur, le lieu, l'année, la pagination xiv-501 p., l'OCLC 1045408 et la cote LC TS155 .S47, et qui déclare tirer son enregistrement de la notice MARC de la Bibliothèque du Congrès. Le contrôle du 25 août 2026 avait, lui, résolu ce LCCN par l'export MODS : la panne est vraisemblablement passagère.",
+    "La préface de l'imprimé est datée « April, 1923 », relue caractère par caractère sur l'image. C'est bibliographiquement impossible : l'ouvrage paraît en 1931 et met en épigraphe Eddington (1928) et Bridgman (1927). C'est de cette ligne que vient le « 1923 » de la notice du numériseur. Elle est constatée ici, pas corrigée.",
+    "Aucune source secondaire n'a été ouverte pour cette carte et aucune réception francophone n'a été cherchée : le passage dont elle sort était une lecture primaire et rien d'autre. L'avertissement du validateur sur l'absence de source secondaire est donc exact. La seconde source affichée n'est pas un commentaire : c'est la réimpression de l'ouvrage par l'American Society for Quality Control (1980), retenue parce qu'elle résout par ISBN et donne au lecteur un exemplaire trouvable. Elle n'a pas été ouverte, sa pagination n'a pas été vérifiée, et les folios cités ne sont pas les siens.",
+    "Statistical Method from the Viewpoint of Quality Control (1939), où Shewhart reprend et déplace cette définition, n'a pas été ouvert : rien n'est affirmé ici sur l'évolution de sa pensée entre 1931 et 1939.",
+    "Piège documentaire à connaître avant tout recontrôle : les métadonnées de l'item Internet Archive in.ernet.dli.2015.150272 sont fausses sur deux points, la date affichée « 1923 » et l'éditeur donné à « London ». L'image de la page de titre les dément. C'est l'image qui fait foi, jamais la notice ni la couche OCR, dont les fautes se mesurent sur les pages mêmes de cette reprise : « lavs » pour « laws » et « phenom- enon » page 145, « Part L » page 146, « CHAPTER XJ » pour « CHAPTER XI ».",
+    "Pourquoi cette fiche n'a pas été publiée avec le lot du 25 août 2026 : elle n'était écartée pour aucun défaut, c'est le plafond de volume du lot, huit cartes, qui la retenait, et neuf avaient été instruites et reçues. Elle a été désignée plutôt qu'une autre parce que son titre portait un syntagme que les deux pages qui la fondaient n'employaient pas. La reprise du 6 septembre 2026 a levé ce point sur pièce."
+  ]
+}

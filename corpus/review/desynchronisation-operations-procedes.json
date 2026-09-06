@@ -1,0 +1,74 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "desynchronisation-operations-procedes",
+  "slug": "desynchronisation-operations-procedes",
+  "status": "IN_REVIEW",
+  "title": "Désynchroniser opérations et procédés",
+  "themes": [
+    "coordonner-des-etapes"
+  ],
+  "theme_labels": {
+    "coordonner-des-etapes": "Ce qui se dérègle entre les étapes"
+  },
+  "domain": "operations-management",
+  "authors": [
+    {
+      "name": "Claude Fiore",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Article signé d'un seul nom, établi sur la page de titre imprimée, « par Claude Fiore ». Ce qui lui revient est l'analyse. L'exemple chiffré du délai divisé par le nombre d'opérations, qui est le plus frappant de l'article, n'est pas de lui : il le renvoie en note à Shigeo Shingo, Maîtrise de la production et méthode Kanban, 1983.",
+  "hook": "Que coûte à l'atelier le passage de la fabrication par lots à la pièce ?",
+  "summary": "Alimenter à la pièce suppose que les opérations ne soient plus attribuées à des procédés fixes : le cycle de fabrication raccourcit, mais la capacité cesse d'être stable.",
+  "quotation": {
+    "text": "Ce qui entraîne une désynchronisation entre opérations et procédés (absence d'attribution fixe des opérations à des procédés).",
+    "reference": "Claude Fiore, « Une démarche nouvelle : la production en flux tendus », Revue française de gestion, n° 63, juin-juillet-août 1987, p. 51-61.",
+    "locator": "p. 55",
+    "language": "fr",
+    "original_text": null,
+    "original_language": null,
+    "translation": {
+      "kind": "none",
+      "translator": null,
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "Claude Fiore, « Une démarche nouvelle : la production en flux tendus », Revue française de gestion, n° 63, juin-juillet-août 1987, Cachan, Éditions Lavoisier, p. 51-61.",
+      "kind": "primary",
+      "locator": "p. 51, 53 et 55",
+      "doi_isbn": "ISSN 0338-4551",
+      "url": "https://www.persee.fr/doc/rfg_0338-4551_1987_num_63_1_2668",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Claude Fiore, « L'impact de la logistique sur l'industrie : la production flexible », Revue d'économie industrielle, n° 29, 3e trimestre 1984, p. 18-25.",
+      "kind": "primary",
+      "locator": "p. 18",
+      "doi_isbn": "10.3406/rei.1984.2120",
+      "url": "https://www.persee.fr/doc/rei_0154-3229_1984_num_29_1_2120",
+      "consulted": "partial"
+    }
+  ],
+  "review": {
+    "reviewer": null,
+    "date": null,
+    "verdict": "PENDING",
+    "rounds": 0,
+    "notes": []
+  },
+  "notes": [
+    "Ce thème n'est pas déclaré dans src/content/themes.ts : il est proposé, avec son libellé, sa raison et les deux fiches qui le porteraient, dans corpus/map/themes-proposes-2026-09-06.md. Un thème ne se déclare dans l'application que s'il porte une carte validée, et de préférence plus d'une. La fiche porte donc son domaine en clair, faute de quoi rien ne la situerait dans la taxonomie.",
+    "Ce que la citation suppose, et que le résumé porte : « Ce qui entraîne » renvoie à la phrase précédente, la systématisation de l'alimentation à la pièce sous la contrainte des délais de livraison. L'alimentation à la pièce est définie p. 51 par deux critères, ne mettre en circulation les pièces que si l'atelier aval les a commandées, et ne pas attendre que le lot entier soit traité sur une opération pour passer à la suivante.",
+    "La chaîne causale que le résumé résume est écrite pas à pas, p. 53 : l'attribution rigide des opérations à des procédés « permettait de stabiliser les cycles de production » ; l'alimentation à la pièce exige une interchangeabilité entre produits et procédés, « ce qui suppose de déconnecter opérations et procédés » ; cette désynchronisation « déstabilise totalement la continuité de la production » et « l'adaptation des opérations aux cycles des produits se fait au détriment de la stabilité des capacités productives ». Le prix se lit encore p. 59, où l'instabilité des liaisons « rend caduque toute prévision des capacités » et impose « de disposer de capacités excédentaires ».",
+    "Ce que l'article n'établit pas, et qu'une carte serait tentée de lui faire dire : aucune mesure n'est produite. Les cinq terrains sont décrits, jamais chiffrés en délai ou en encours avant et après. Le mécanisme est exposé et argumenté, il n'est pas mesuré.",
+    "L'article ne porte aucun DOI, et c'est un résultat établi, pas une absence de recherche. Quatre interrogations directes de l'API Crossref : la revue y existe avec 1797 DOI, tous déposés par JLE et aucun antérieur à 2003 ; le filtre jusqu'à 1994 rend zéro ; Persée, préfixe 10.3406, n'a jamais déposé de DOI pour cette revue ; et le DOI que la forme de l'identifiant Persée laisserait deviner, 10.3406/rfg.1987.2668, rend 404 chez Crossref comme chez doi.org. L'enregistrement OAI-PMH de Persée pour cet article ne porte lui non plus aucun DOI. La référence se résout par son URL Persée et son ISSN.",
+    "Aucune source secondaire n'est affichée, et l'avertissement du validateur porte sur une lacune réelle : la réception de cet article n'a pas été cherchée, aucune requête de citation n'a été lancée, et les six références de sa bibliographie n'ont pas été ouvertes. La seconde source affichée n'est pas un commentaire : c'est un autre article du même auteur, dont seule la page de titre a été relue sur le fac-similé, pour y lire son affiliation, que l'article de 1987 n'imprime pas. Son corps n'a pas été lu et il n'atteste rien du mécanisme porté ici. La thèse d'État de Fiore, soutenue à Aix-Marseille II en 1987, n'a pas été cherchée : c'est probablement là que ce mécanisme est établi plus longuement.",
+    "La citation a été relue sur le fac-similé, et elle ne pouvait pas l'être autrement : elle n'existe pas dans la couche texte servie par Persée, qui omet la colonne de droite entière de la page 55. Sur onze pages, quatre sont amputées d'au moins une colonne, dont la page 52 en entier et la bibliographie de la page 61. Un lecteur qui se serait fié à cette couche aurait cru l'article composé de deux parties et sans bibliographie.",
+    "Le chapeau en italique de la page 51 n'est pas cité : il parle de l'auteur à la troisième personne, « Selon Claude Fiore », et Persée le reprend tel quel en dc:description, c'est-à-dire le traite lui-même comme une notice d'éditeur. Il en va de même des dix phrases en italique composées en marge des pages 52 à 61, qui sont des appels de lecture.",
+    "État de droits constaté, non résolu : l'enregistrement OAI porte en dc:rights une autorisation de reproduction à des fins privées, scientifiques ou d'enseignement, excluant tout usage commercial. Ce n'est pas une licence ouverte. L'URL canonique de Persée est conservée, la lecture et la citation par cette URL étant couvertes ; aucune reproduction du fac-similé n'est déposée dans le dépôt.",
+    "Voisinage à ne pas confondre, dans le lot de la même nuit : stock-remede-au-desajustement-des-rythmes, de Robert Guihéneuf, dit pourquoi un stock existe entre deux opérations successives qui ne vont pas au même rythme. Le vocabulaire se ressemble, l'objet non : Fiore décrit ce que la réduction des tailles de lot fait à l'affectation des opérations aux machines.",
+    "Dossier de lecture : corpus/evidence/desynchronisation-operations-procedes/lecture.json."
+  ]
+}

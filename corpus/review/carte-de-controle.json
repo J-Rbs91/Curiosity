@@ -1,0 +1,84 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "carte-de-controle",
+  "slug": "carte-de-controle",
+  "status": "IN_REVIEW",
+  "title": "La carte de contrôle",
+  "themes": [
+    "variation-et-controle"
+  ],
+  "theme_labels": {
+    "variation-et-controle": "Ce qu'un procédé fait varier"
+  },
+  "authors": [
+    {
+      "name": "W. A. Shewhart",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Dispositif exposé par W. A. Shewhart, seul auteur de l'ouvrage, qui introduit l'expression « control chart » en italique p. 290 en la définissant, sans en créditer personne d'autre. Il ne revendique pas non plus l'invention : le livre n'écrit nulle part qu'il est le premier, et le seul antécédent qu'il produise est un essai d'atelier mené de 1923 à 1926.",
+  "hook": "D'où viennent les limites qu'on trace pour surveiller un procédé ?",
+  "summary": "Les limites se calculent sur le procédé lui-même : la moyenne d'une statistique d'échantillons découpés en sous-groupes rationnels, plus ou moins trois écarts-types.",
+  "quotation": {
+    "text": "Si un point observé tombe hors des limites de cette carte, tenir ce fait pour l'indication d'un problème ou d'une absence de contrôle.",
+    "reference": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931.",
+    "locator": "p. 304, Critère I, étape D",
+    "language": "fr",
+    "original_text": "If an observed point falls outside the limits of this chart, take this fact as an indication of trouble or lack of control.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (chaîne Curiosity, session du 6 septembre 2026). Aucune traduction française publiée de l'ouvrage de 1931 n'a été identifiée. Aucune coupe : l'étape D du Critère I est traduite en entier. Un choix à signaler : « trouble » est rendu par « un problème » et non par « une panne ». La carte trois-sigmas-arbitrage-de-cout, déjà validée, écrit « panne » dans son contexte de coût ; ici le « trouble » de Shewhart désigne toute cause assignable présente dans le procédé, dérive de machine ou changement de matière autant qu'arrêt, et « problème » garde le vague voulu par l'auteur. L'anglais fait seul foi.",
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931, xiv-501 p. (LCCN 31032090)",
+      "kind": "primary",
+      "locator": "p. 275, 290, 299-300 et 304",
+      "doi_isbn": "LCCN 31032090",
+      "url": null,
+      "consulted": "full-text"
+    },
+    {
+      "label": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, Milwaukee, American Society for Quality Control, 1980 (réimpression).",
+      "kind": "primary",
+      "locator": null,
+      "doi_isbn": "978-0-87389-076-2",
+      "url": null,
+      "consulted": "metadata-only"
+    },
+    {
+      "label": "J. Tiago de Oliveira et S. B. Littauer, « Cartes de contrôle à double limites et à séquences », Revue de statistique appliquée, tome 13, n° 2, 1965, p. 61-73.",
+      "kind": "francophone-reception",
+      "locator": "p. 61-62",
+      "doi_isbn": null,
+      "url": "https://www.numdam.org/item/RSA_1965__13_2_61_0/",
+      "consulted": "partial"
+    }
+  ],
+  "review": {
+    "reviewer": null,
+    "date": null,
+    "verdict": "PENDING",
+    "rounds": 0,
+    "notes": []
+  },
+  "notes": [
+    "D'où viennent les limites, en toutes lettres : le paragraphe 2 du chapitre XIX s'intitule « The Basis for Establishing Control Limits » (p. 275) et les tire de la distribution d'échantillonnage d'une statistique calculée sur des échantillons de taille n, c'est-à-dire de ce que le procédé fait et non de ce que la spécification demande. La figure 100 (p. 290), lue en image, est le dessin de l'objet en quatre traits : une ligne pleine au niveau de la moyenne de la statistique, deux pointillés à trois écarts-types, une abscisse graduée en échantillons successifs. Rien n'est tracé dans le cadre : la carte est une grille de lecture avant d'être un tracé, et le temps y est un rang d'échantillon, pas une date.",
+    "Le sous-groupe rationnel du résumé est l'étape A du Critère I, et Shewhart y insiste plus qu'ailleurs : ce n'est pas une opération de calcul mais un acte d'hypothèse. P. 299 : « The engineer who is successful in dividing his data initially into rational subgroups based upon rational hypotheses is therefore inherently better off in the long run than the one who is not thus successful. » P. 300 : « Thus we see how statistical theory becomes a useful tool after we have taken the scientific step of classification of data into rational subgroups. »",
+    "Le verdict de la carte est une indication, jamais une preuve, et le vocabulaire de l'auteur est constant sur les deux pages, « is taken as an indication » (p. 290) et « take this fact as an indication » (p. 304), et par la p. 309 : « a few points should fall outside control limits in the long run even though there is no lack of control ». Shewhart écrit aussi p. 304 que les indications de deux critères peuvent différer et que trancher « involves the use of judgment », et que les critères sont donnés pour éprouvés à l'usage, « criteria which have been found to work successfully ».",
+    "Citation concurrente écartée pour la seule longueur : « The occurrence of a value of θ outside these limits is taken as an indication of a significant variation from standard quality or as an indication of trouble. » (p. 290). La traduction la plus courte fait 153 caractères, et la seule coupe qui la ramène sous le plafond supprime la moitié pratique de la phrase, l'indication d'un problème d'atelier.",
+    "Trois choses que le texte ne dit pas et qu'une carte serait tentée de lui faire dire. Shewhart ne revendique pas l'invention de la carte de contrôle et ne l'attribue à personne : 1931 est la date du livre, pas celle du dispositif, la figure 6 de la p. 16 portant des résultats d'essai de 1923 à 1926. L'expression « control chart » apparaîtrait dès la légende de la figure 65, p. 194, d'après la couche OCR seule, page non relue en image : ce qui est constaté p. 290 est sa première mise en italique, c'est-à-dire sa définition. Et l'avertissement moderne « les limites de contrôle ne sont pas des limites de tolérance » n'est écrit nulle part dans les parties V et VI : la distinction est dans la structure du livre, pas dans une phrase.",
+    "Les 0,27 % de fausses alarmes couramment prêtés à Shewhart n'ont été trouvés ni aux p. 276-277 (constat de la carte trois-sigmas-arbitrage-de-cout) ni dans les p. 275 à 320 lues ici. Ce que Shewhart écrit est le fait qualitatif, non chiffré, de la p. 309.",
+    "Ce que la source francophone atteste, et ce qu'elle n'atteste pas. Tiago de Oliveira et Littauer (1965) établissent le vocabulaire français du dispositif, « carte de contrôle », la survie du nom « Critère I » quarante ans après, et le caractère « empirique-économique » des limites à trois écarts-types. Ils renvoient au livre de 1939, Statistical Method from the Viewpoint of Quality Control, et non à celui de 1931 : ce livre-là n'a pas été ouvert, et leur article n'atteste donc rien de la pagination ni du texte de 1931. Il n'a été lu qu'en partie, introduction et paragraphe 2 de près, le corps mathématique parcouru.",
+    "Aucune source secondaire anglophone n'a été ouverte : ce passage est une lecture primaire. La deuxième source affichée n'est pas un commentaire mais la réimpression de 1980 par l'American Society for Quality Control, retenue parce qu'elle résout par ISBN ; elle n'a pas été ouverte et les folios cités ne sont pas les siens.",
+    "Défaut de l'exemplaire numérisé, consigné pour tout recontrôle : les pages imprimées 332 et 333 manquent dans ce scan, le feuillet n344 étant la p. 331 et le suivant la p. 334, sans que rien ne signale le manque. Elles appartiennent au chapitre XXI, dans cette même partie VI, qui n'a été parcouru qu'en OCR : aucune affirmation de cette carte n'en dépend.",
+    "La source primaire est citée sans URL, décision reprise des cartes Shewhart déjà validées : la notice de l'exemplaire numérisé ne porte aucun champ de droits, et l'auto-déclaration de domaine public du numériseur n'est pas une autorisation d'ayant droit constatée. Le texte a été lu, d'où consulted full-text.",
+    "Le LCCN 31032090 n'a pas pu être résolu par lccn.loc.gov dans la nuit du 6 septembre 2026 : mods, marcxml et dc rendent un 500, et le point d'accès SRU tombe en délai d'attente. La référence a été résolue par la notice d'édition Open Library OL6766665M, qui porte ce LCCN et déclare tirer son enregistrement de la notice MARC de la Bibliothèque du Congrès.",
+    "L'exemplaire lu est un septième tirage de la même édition Van Nostrand, non l'édition de 1931 : les folios cités sont ceux du tirage lu.",
+    "Gisement laissé entier au passage suivant : le sous-groupe rationnel est un concept distinct et probablement carteable (index p. 484 : 299, 304, 305, 309, 312, 313, 409-412), mais aucun de ses passages courts n'a été relu en image et les deux candidats dépassent 150 caractères une fois traduits.",
+    "Dossier de lecture : corpus/evidence/carte-de-controle/lecture.json."
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "lot-economique",
+  "slug": "lot-economique",
+  "status": "IN_REVIEW",
+  "title": "Le lot économique",
+  "themes": [
+    "produire-et-stocker"
+  ],
+  "theme_labels": {
+    "produire-et-stocker": "Combien produire, combien en tenir"
+  },
+  "authors": [
+    {
+      "name": "Ford W. Harris",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Auteur unique : la pièce porte la signature « FORD W. HARRIS, Production Engineer ». Le nom moderne du concept n'est pas de lui. Il écrit « the economical size of lot » ; « economic order quantity » et le sigle EOQ n'ont aucune occurrence dans son texte et viennent de l'appareil éditorial de 1990. Ford W. Harris n'est pas Theodore Harris, le mathématicien de la RAND coauteur d'Optimal Inventory Policy en 1950.",
+  "hook": "Combien de pièces lancer à la fois, et qu'est-ce qui fixe ce nombre ?",
+  "summary": "Un lot plus grand dilue le coût de lancement mais alourdit l'intérêt et la dépréciation du stock : le lot économique est le point où les deux charges s'égalisent.",
+  "quotation": {
+    "text": "[…] pour une consommation donnée, il est utile de savoir que cette consommation doit quadrupler pour justifier de doubler les quantités fabriquées.",
+    "reference": "Ford W. Harris, « How Many Parts to Make at Once », Factory, The Magazine of Management, vol. 10, n° 2, février 1913, republié dans Operations Research, vol. 38, n° 6, 1990, p. 947-950.",
+    "locator": "p. 950 de la republication",
+    "language": "fr",
+    "original_text": "For example, having once determined that it is wise to put in orders for lots of one hundred, based on a certain consumption, it is of value to know that this consumption must increase four fold to warrant doubling the manufacturing quantities.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (chaîne Curiosity, session du 6 septembre 2026). Aucune traduction française publiée de ce texte n'a été identifiée. La coupe initiale, marquée par les crochets, retire « For example, having once determined that it is wise to put in orders for lots of one hundred, based on », c'est-à-dire l'exemple chiffré des lots de cent ; elle ne retourne pas le sens, et « pour une consommation donnée » rend « based on a certain consumption », conservé pour que « cette consommation » garde son antécédent à l'intérieur de la citation. Le français entier ferait environ 240 caractères pour 150 au plus. « To warrant » est rendu par « justifier de », au sens de rendre fondé, et non par « garantir ». « Manufacturing quantities » est rendu par « quantités fabriquées » : ce sont les quantités lancées en fabrication sur un ordre, pas un volume de production annuel. La phrase énonce en mots la loi en racine carrée. L'anglais fait seul foi.",
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "Ford W. Harris, « How Many Parts to Make at Once », Factory, The Magazine of Management, vol. 10, n° 2, février 1913, p. 135-136 et 152, republié dans Operations Research, vol. 38, n° 6, 1990, p. 947-950.",
+      "kind": "primary",
+      "locator": "p. 947-950, republication de 1990",
+      "doi_isbn": "10.1287/opre.38.6.947",
+      "url": null,
+      "consulted": "full-text"
+    },
+    {
+      "label": "Donald Erlenkotter, « Ford Whitman Harris and the Economic Order Quantity Model », Operations Research, vol. 38, n° 6, 1990, p. 937-946.",
+      "kind": "secondary-academic",
+      "locator": "p. 937-946",
+      "doi_isbn": "10.1287/opre.38.6.937",
+      "url": "https://doi.org/10.1287/opre.38.6.937",
+      "consulted": "metadata-only"
+    },
+    {
+      "label": "Kenneth J. Arrow, Theodore Harris et Jacob Marschak, Optimal Inventory Policy, RAND Corporation, papier P-189, 5 septembre 1950, révisé le 16 novembre 1950.",
+      "kind": "secondary-academic",
+      "locator": "p. 9 et bibliographie",
+      "doi_isbn": null,
+      "url": "https://archive.org/details/DTIC_AD0422810",
+      "consulted": "partial"
+    }
+  ],
+  "review": {
+    "reviewer": null,
+    "date": null,
+    "verdict": "PENDING",
+    "rounds": 0,
+    "notes": []
+  },
+  "notes": [
+    "L'arbitrage porté par le résumé est nommé par Harris lui-même, p. 947 : les contremaîtres, laissés à eux-mêmes, poussent le lot vers le haut pour écraser le coût de lancement, « if left to themselves, will almost invariably put their work through in large quantities to keep down this item. So doing, however, affects unfavorably the next factor ». Le facteur suivant est l'intérêt et la dépréciation sur le stock : « Large orders in the shop mean large deliveries to the storeroom, and large deliveries mean carrying a large stock. Carrying a large stock means a lot of money tied up and a heavy depreciation. »",
+    "« Le point où les deux charges s'égalisent » est lu sur l'exemple chiffré de la page 948, mille pièces par mois, deux dollars de lancement, dix cents la pièce : « the theoretical economical size of lot is 2,190 units. This shows the set-up cost to be about 0.1 cent and the interest charges about the same amount. » La figure I de la même page le montre. La formule elle-même, racine carrée de 240MS divisé par C, n'est pas affichée : elle serait illisible sur une carte, où aucune de ses lettres n'est définie.",
+    "Ce que la citation exige du résumé : elle énonce la loi en racine carrée, pas l'arbitrage qui la produit. Sans le résumé, le lecteur resterait devant un rapport de un à quatre sans cause.",
+    "Ce que Harris refuse qu'on lui fasse dire, et que la carte n'affirme pas : dès sa deuxième phrase, il écrit ne pas prétendre qu'une formule mathématique doive à elle seule décider des quantités, « This is a matter that calls, in each case, for a trained judgment, for which there is no substitute », et il présente la formule comme un contrôle, « using the formula as a check ». Il ferme l'article en disant la méthode « not rigorously accurate », plusieurs facteurs mineurs ayant été volontairement laissés de côté.",
+    "Le chapeau en italique de la page 947 n'est pas cité, bien qu'il résume parfaitement l'arbitrage : il parle de l'auteur à la troisième personne, « Experience has shown one manager a way to determine the economical size of lots », c'est le chapeau du magazine, écrit par la rédaction de Factory.",
+    "Ce que la première source secondaire atteste, et ce qu'elle n'atteste pas. L'article d'Erlenkotter n'a pas été ouvert : la voie éditeur rend 403 et Unpaywall ne connaît aucune localisation ouverte. Seules ses métadonnées Crossref ont été vérifiées, et son titre n'établit qu'un point, celui que porte la note d'attribution : le rapprochement entre Harris et le nom « Economic Order Quantity » est le fait de l'appareil éditorial de 1990, pas du texte de 1913. Rien de son contenu n'est affirmé ici, alors que c'est lui qui documenterait la redécouverte du texte et la question Harris contre Wilson.",
+    "Ce que la seconde source secondaire atteste : sa couche texte a été interrogée, sans relecture sur image, d'où le partial. Deux constats, tous deux d'attribution. La page 9 porte « We believe this is, in essence, the solution advanced by R. H. Wilson, formerly of the Bell Telephone Company; and also by other writers ». Et la bibliographie du rapport ne contient aucune référence à Harris 1913. Autrement dit, en 1950, trois auteurs qui font l'état de l'art du lot économique ignorent le texte de 1913.",
+    "Ce qui n'est pas tranché, et qui ne doit pas l'être sur la carte : à qui, de Harris (1913) ou de R. H. Wilson (années 1930), revient la paternité de la formule telle qu'elle s'est diffusée. Ce qui est établi sur pièce est que Harris publie la formule en 1913 et la présente comme la solution générale d'un problème général. La carte dit qu'il l'a écrite, non qu'il en est reconnu l'auteur par la littérature qui a suivi.",
+    "L'original de Factory, février 1913, p. 135-136 et 152, n'a pas été ouvert, et la lecture porte sur la republication intégrale de 1990. Quatre voies ont été essayées et ont échoué : INFORMS rend 403 sur le DOI, la page et le PDF ; Unpaywall donne l'article fermé ; Internet Archive ne rend aucun résultat sur le titre de la revue ni sur celui de l'article ; le volume existe chez Google Books sans aucune page servie, et HathiTrust rend 403 sur son lecteur comme sur son serveur d'images. La pagination de 1913 et l'éventuel écart mot à mot entre les deux états du texte ne sont donc pas vérifiés, et la citation est localisée dans la republication.",
+    "La pièce de 1990 n'est pas un fac-similé et porte ses propres marques éditoriales, relevées sur l'image de la page 948 : « Then X equals K times the square [root] of M », avec une restitution éditoriale entre crochets droits, et « T equals he manufacturing interval in months », coquille pour « the ». Le texte a été recomposé en 1990, non photographié : raison de plus de ne rien affirmer de la mise en page de 1913.",
+    "La source primaire est citée sans URL, et le motif est écrit sur la pièce. Le bas de la page 947 porte « (c) 1990 Operations Research Society of America », et une page ajoutée par le service de diffusion porte « its content may not be copied or emailed to multiple sites or posted to a listserv without the copyright holder's express written permission ». L'exemplaire ouvert est déposé dans un répertoire de cours personnel, sans licence ni autorisation visible, et le site hôte annonce lui-même que les travaux ne peuvent être redéposés sans permission explicite. Le dépôt est donc exactement ce que la mention portée sur la pièce interdit sans autorisation écrite. Le texte a été lu, d'où consulted full-text ; la référence se résout seule par son DOI, vérifié contre Crossref.",
+    "Réception francophone non établie : l'API de HAL rend zéro pour « quantité économique de commande » et zéro pour « formule de Wilson » croisé avec stock ou lot économique. Le nom français usuel n'a été rattaché à aucune source académique ouverte, et il n'est pas porté sur la carte. Guihéneuf (1956), qui expose la formule sous l'intitulé « la méthode de Whitin », est instruit séparément dans le même lot et ne porte pas le lot économique.",
+    "Repère de réception relevé mais non affiché : Cárdenas-Barrón, Chung et Treviño-Garza, « Celebrating a century of the economic order quantity model in honor of Ford Whitman Harris », International Journal of Production Economics, vol. 155, 2014, p. 1-7, DOI 10.1016/j.ijpe.2014.07.002. Le corps n'en a pas été ouvert et seules ses métadonnées Crossref ont été vues : il n'est pas porté en source, une notice non lue ne cautionnant rien. Il n'établit qu'un fait de calendrier, le centenaire compté depuis 1913.",
+    "Dossier de lecture : corpus/evidence/lot-economique/lecture.json."
+  ]
+}

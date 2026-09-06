@@ -1,0 +1,99 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "distorsion-rationnelle-de-la-demande",
+  "slug": "distorsion-rationnelle-de-la-demande",
+  "status": "IN_REVIEW",
+  "title": "Le coup de fouet vient de membres rationnels",
+  "themes": [
+    "coordonner-des-etapes"
+  ],
+  "theme_labels": {
+    "coordonner-des-etapes": "Ce qui se dérègle entre les étapes"
+  },
+  "domain": "operations-management",
+  "authors": [
+    {
+      "name": "Hau L. Lee",
+      "app_author_id": null
+    },
+    {
+      "name": "V. Padmanabhan",
+      "app_author_id": null
+    },
+    {
+      "name": "Seungjin Whang",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Concept coécrit par Hau L. Lee, V. Padmanabhan et Seungjin Whang, dont les trois noms se lisent dans cet ordre sur la signature de l'article. Ils ne revendiquent ni le phénomène ni son nom : leur section 2 s'ouvre en écrivant qu'il n'est pas nouveau, crédite Forrester (1961) et Sterman (1989), et le nom d'effet coup de fouet vient de Procter & Gamble. Ce qui leur revient en propre est l'explication par des membres rationnels et les quatre causes.",
+  "hook": "Pourquoi les commandes s'affolent-elles en remontant une chaîne logistique ?",
+  "summary": "La variabilité des commandes croît vers l'amont, et ses quatre causes tiennent à la façon de commander : prévision, taille de lot, allocation en pénurie, prix variables.",
+  "quotation": {
+    "text": "Nous montrons par nos modèles que l'effet coup de fouet résulte des interactions stratégiques entre des membres rationnels de la chaîne logistique.",
+    "reference": "Hau L. Lee, V. Padmanabhan et Seungjin Whang, « Information Distortion in a Supply Chain: The Bullwhip Effect », Management Science, vol. 43, n° 4, avril 1997, p. 546-558.",
+    "locator": "p. 548",
+    "language": "fr",
+    "original_text": "We demonstrate through the models that the bullwhip effect is an outcome of the strategic interactions among rational supply chain members.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (chaîne Curiosity, session du 6 septembre 2026). Aucune traduction française publiée de cet article n'a été identifiée. Aucune coupe : la phrase anglaise est traduite en entier. « Bullwhip effect » est rendu par « effet coup de fouet » et « supply chain » par « chaîne logistique », rendus fixés par la revue de littérature de Giard et Sali (2012) et déjà retenus par ce dépôt. « The models » devient « nos modèles » : la phrase précédente dit « we develop simple mathematical models of supply chains », l'article défini anglais désigne donc sans ambiguïté leurs propres modèles, et le possessif rend la phrase autonome sur une carte. « Members » est rendu par « membres » et non par « acteurs » : l'article distingue les membres de la chaîne des joueurs du jeu de la bière. Ce que la traduction ne rend pas : dans l'original, « strategic interactions » et « rational » sont en italique, seuls mots soulignés du paragraphe. L'anglais fait seul foi.",
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "Hau L. Lee, V. Padmanabhan et Seungjin Whang, « Information Distortion in a Supply Chain: The Bullwhip Effect », Management Science, vol. 43, n° 4, avril 1997, p. 546-558.",
+      "kind": "primary",
+      "locator": "p. 546-548 et 555",
+      "doi_isbn": "10.1287/mnsc.43.4.546",
+      "url": null,
+      "consulted": "full-text"
+    },
+    {
+      "label": "Hau L. Lee, V. Padmanabhan et Seungjin Whang, « The Bullwhip Effect in Supply Chains », MIT Sloan Management Review, 1997.",
+      "kind": "primary",
+      "locator": null,
+      "doi_isbn": null,
+      "url": "https://sloanreview.mit.edu/article/the-bullwhip-effect-in-supply-chains/",
+      "consulted": "partial"
+    },
+    {
+      "label": "Xun Wang et Stephen M. Disney, « The bullwhip effect: Progress, trends and directions », European Journal of Operational Research, vol. 250, n° 3, 2016, p. 691-701.",
+      "kind": "secondary-academic",
+      "locator": "p. 692-693",
+      "doi_isbn": "10.1016/j.ejor.2015.07.022",
+      "url": "https://doi.org/10.1016/j.ejor.2015.07.022",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Vincent Giard et Mustapha Sali, « L'effet coup de fouet dans la chaîne logistique : une littérature contingente et incomplète », Revue française de gestion industrielle, vol. 31, n° 2, 2012.",
+      "kind": "francophone-reception",
+      "locator": "p. 2-3 et p. 11",
+      "doi_isbn": "HAL hal-01508406",
+      "url": "https://hal.science/hal-01508406/file/publi1720.pdf",
+      "consulted": "full-text"
+    }
+  ],
+  "review": {
+    "reviewer": null,
+    "date": null,
+    "verdict": "PENDING",
+    "rounds": 0,
+    "notes": []
+  },
+  "notes": [
+    "Ce thème n'est pas déclaré dans src/content/themes.ts : il est proposé, avec son libellé, sa raison et les deux fiches qui le porteraient, dans corpus/map/themes-proposes-2026-09-06.md. La fiche porte donc son domaine en clair, faute de quoi rien ne la situerait dans la taxonomie.",
+    "Les quatre causes du résumé sont les quatre conditions d'une situation idéale relâchées une à une, section 3, p. 548 : demande stationnaire dont l'historique ne sert pas à prévoir, réapprovisionnement infini à délai fixe, coût de lancement de commande nul, prix d'achat stationnaire. Sous ces quatre conditions la politique de recomplètement est optimale et la commande égale exactement la demande de la période précédente. Ce sont donc quatre propriétés de la règle de commande, non quatre travers du décideur, et c'est ce qui fait du mot « rationnel » le pivot du concept.",
+    "Le mot « rationnel » sépare cette carte de ligne-d-approvisionnement-ignoree, déjà publiée dans le dépôt et tirée de Sterman : celle-ci dit que le décideur qui ignore les commandes déjà passées et non reçues commande en excès. L'article lu ici cite cette thèse, la nomme et lui oppose la sienne p. 551, tout en accordant que les erreurs de perception sont une part de ce qui se passe dans le jeu de la bière. Les deux cartes ne disent pas la même chose ; l'article de 1997 est la contre-thèse explicite, datée et signée, de l'autre.",
+    "Ce que la source secondaire atteste, et ce qu'elle n'atteste pas. Wang et Disney (2016), lue en entier, établit deux points indépendants de l'article de 1997 : que le terme a été forgé par Procter & Gamble dans les années 1990, et que l'article de Lee, Padmanabhan et Whang a porté ce terme à l'attention du monde académique tout en proposant quatre causes supplémentaires dans un cadre où les joueurs se comportent rationnellement. Elle n'atteste rien du contenu des théorèmes ni de la pagination de l'article de 1997, qui ont été vérifiés sur la pièce elle-même.",
+    "Ce que la réception francophone atteste : Giard et Sali (2012), lue en entier, fixe le vocabulaire français retenu par la traduction, effet coup de fouet et chaîne logistique, rend les quatre causes en français et résume la thèse retenue ici. Elle rattache par ailleurs la première description du phénomène à Forrester en 1958 ; l'article de 1997 ne cite, lui, que Forrester 1961, et aucune date antérieure n'est portée sur cette carte au titre de ce que ses auteurs disent de leurs prédécesseurs.",
+    "La deuxième source affichée est l'article compagnon des mêmes auteurs, la même année, et c'est la seule pièce qui atteste de leur main l'origine du nom chez Procter & Gamble. Elle n'a été atteinte que par un outil de rendu, la page répondant 403 en accès direct, et seuls quatre paragraphes libres ont été lus : son corps n'a pas été ouvert et rien n'en est cité sur la carte. Sa notice affichée est volontairement réduite à l'année : le volume 38, le numéro 3 et la pagination 93-102 viennent d'un résultat de recherche et n'ont pas été vérifiés sur pièce, la bibliographie de l'article de Management Science ne la citant que sous son titre de soumission et comme « forthcoming ».",
+    "La source primaire est citée sans URL, et le motif est plus fort que dans le précédent Shewhart. L'exemplaire lu est un tirage JSTOR redéposé par un tiers sur un site de cours : la pièce porte imprimé « Copyright (c) 1997, Institute for Operations Research and the Management Sciences », sa page de garde énonce les conditions d'utilisation de JSTOR, et chacune de ses treize pages porte un pied de page nominatif de téléchargement. La voie officielle rend 403, Crossref donne license: null et Unpaywall rend is_oa false, oa_status closed, sans aucun emplacement ouvert. Rien ne permet de présenter cette adresse au lecteur comme une mise à disposition par l'ayant droit. Le texte a été lu en entier, d'où consulted full-text ; la référence se résout seule par son DOI, vérifié contre l'API Crossref.",
+    "Lacune la plus coûteuse, déclarée : le retour rétrospectif des trois auteurs sur leur propre article, « Comments on Information Distortion in a Supply Chain: The Bullwhip Effect », Management Science, 50(12), 2004, p. 1887-1893, DOI 10.1287/mnsc.1040.0305, n'a pas pu être ouvert. C'est la pièce où ils diraient eux-mêmes, sept ans après, ce qu'ils tiennent pour leur apport. Unpaywall la donne ouverte en statut bronze, mais son unique emplacement est le PDF INFORMS, qui rend 403.",
+    "Second concept présent dans le texte et non proposé : le jeu du rationnement, sections 3.2 et 4.2, où l'allocation d'une pénurie au prorata des commandes reçues donne à chaque acheteur intérêt à commander plus qu'il ne lui faut. Il n'est pas proposé en carte distincte parce qu'il est l'une des quatre causes du concept retenu, et que deux cartes du même article dont l'une serait l'agrandissement d'un quart de l'autre se recouvriraient. C'est un jugement du dossier de lecture, pas un constat.",
+    "La citation a été relue sur l'image de la page, rendue à 300 ppi, et non sur la couche OCR de ce tirage, qui est fautive jusque dans le titre courant, transcrit de quatre façons différentes selon les feuillets. L'image apporte ce que l'OCR avait perdu : l'italique sur « strategic interactions » et « rational ».",
+    "Trois tirets cadratins de l'original ont été écartés de tout champ affiché : ils se lisent aux folios 546, 547 et 548, dans les phrases qui énumèrent les quatre sources de l'effet. La phrase retenue en citation n'en porte aucun, ni en anglais ni en français.",
+    "Dossier de lecture : corpus/evidence/distorsion-rationnelle-de-la-demande/lecture.json."
+  ]
+}
