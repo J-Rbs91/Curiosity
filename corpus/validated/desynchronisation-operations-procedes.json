@@ -2,7 +2,7 @@
   "$schema": "../schema/carte.schema.json",
   "id": "desynchronisation-operations-procedes",
   "slug": "desynchronisation-operations-procedes",
-  "status": "IN_REVIEW",
+  "status": "VALIDATED",
   "title": "Désynchroniser opérations et procédés",
   "themes": [
     "coordonner-des-etapes"
@@ -10,7 +10,6 @@
   "theme_labels": {
     "coordonner-des-etapes": "Ce qui se dérègle entre les étapes"
   },
-  "domain": "operations-management",
   "authors": [
     {
       "name": "Claude Fiore",
@@ -52,11 +51,25 @@
     }
   ],
   "review": {
-    "reviewer": null,
-    "date": null,
-    "verdict": "PENDING",
+    "reviewer": "contrôle aveugle",
+    "date": "2026-09-06",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
     "rounds": 1,
-    "notes": []
+    "notes": [
+      "CITATION — relue sur le fac-similé, pas sur l'OCR. Image téléchargée : https://www.persee.fr/renderPage/rfg_0338-4551_1987_num_63_1_2668/rfg_0338-4551_1987_num_63_1_T1_0055_0000_1307.jpg (1625x2339). Colonne de gauche, 5e paragraphe : « Or le développement d'une production à flux tendus […] engendre la systématisation (dans ces entreprises) de l'alimentation à la pièce. Ce qui entraîne une désynchronisation entre opérations et procédés (absence d'attribution fixe des opérations à des procédés). » Le pied de page imprimé porte JUIN-JUILLET-AOUT 1987 et le folio 55 : le locator p. 55 est exact. La coupure de justification de l'imprimé, « (ab- / sence », a été correctement recomposée par la fiche et n'a pas été recopiée. Aucun écart de lettre, d'accent ou de ponctuation. Le texte OCR de /doc/page/…_T1_0055_0000 concorde ici mot pour mot avec l'image, sans colonne omise.",
+      "ATTRIBUTION — fac-similé de la page de titre : https://www.persee.fr/renderPage/rfg_0338-4551_1987_num_63_1_2668/rfg_0338-4551_1987_num_63_1_T1_0051_0000_1307.jpg. Titre sur deux lignes « Une démarche nouvelle : / la production en flux tendus », signature unique « par Claude Fiore ». Un chapeau liminaire en italique le suit, rédigé à la troisième personne (« Selon Claude Fiore, l'essor actuel de la logistique… ») : il n'est donc pas de l'auteur, et la fiche ne le cite pas — le passage retenu vient du corps du texte, p. 55. Le concept est bien de Fiore : il intitule lui-même sa partie I « LA DESYNCHRONISATION ENTRE OPERATIONS ET PROCEDES SOUS LA CONTRAINTE DE L'ALIMENTATION A LA PIECE » (p. 51) et la développe p. 53 et 55.",
+      "ATTRIBUTION, réserve de la fiche vérifiée — l'exemple chiffré du délai ramené à 1/3 ou 1/10 selon le nombre d'opérations est bien p. 51, colonne de droite, avec l'appel de note 1 ; la note en bas de cette colonne lit, sur l'image : « 1. Exemple donné par S. Shingo, Maîtrise de la production et méthode Kanban, Editions d'organisation, 1983. » La bibliographie p. 61 le redonne sous la forme imprimée « Shi geo Shingo » (espace de composition). La restitution du prénom en « Shigeo » par la fiche est donc juste et n'est pas donnée comme citation.",
+      "SOURCES 1 — Claude Fiore, Revue française de gestion, n° 63, juin-juillet-août 1987, p. 51-61. Pagination vérifiée aux deux bornes sur les fac-similés : le folio 51 porte le titre et la signature, le folio 61 porte la CONCLUSION et la BIBLIOGRAPHIE, c'est bien la dernière page. Le millésime et les mois sont lus dans le pied de page imprimé (JUIN-JUILLET-AOUT 1987), non déduits de l'hébergeur. Le n° 63 est confirmé par la notice de numéro Persée (« Revue Française de Gestion, n°63, 1987. Dossier. La production à l'heure des nouvelles technologies »).",
+      "SOURCES 1, identifiant — l'ISSN 0338-4551 a été résolu contre deux notices d'autorité, et non contre la page de collection de l'hébergeur. BnF, SRU catalogue.bnf.fr/api/SRU, requête bib.issn all 0338-4551 : 1 notice, ark:/12148/cb34377121t, titre « Revue française de gestion », Fondation nationale pour l'enseignement de la gestion des entreprises, 1975-. Sudoc, SRU www.sudoc.abes.fr/cbs/sru, requête isn=0338-4551 : notice 039550117, même titre, « N° 1 (1975)- », périodicité bimestrielle 1975-2004, ISSN en ligne distinct 1777-5663. Le libellé de la fiche emploie la forme d'autorité en minuscules, et non la casse de l'hébergeur. Aucun DOI n'est affirmé pour cet article : Persée n'en publie pas dans ses balises citation_*, la fiche a raison de n'en pas inventer.",
+      "SOURCES 2 — DOI 10.3406/rei.1984.2120 interrogé à l'API Crossref : type journal-article, titre « L'impact de la logistique sur l'industrie : la production flexible », container « Revue d'économie industrielle », volume 29, pages 18-25, auteur unique Claude Fiore, 1984, ISSN 0154-3229, éditeur PERSEE Program. Le DOI résout en 302 vers l'URL Persée affichée par la fiche. Locator p. 18 vérifié sur le fac-similé https://www.persee.fr/renderPage/rei_0154-3229_1984_num_29_1_2120/rei_0154-3229_1984_num_29_1_T1_0018_0000_1307.jpg : titre, signature « Claude FIORE » (Faculté des sciences économiques de l'université d'Aix-Marseille II, Centre de recherche d'économie des transports), et pied de page imprimé « REVUE D'ÉCONOMIE INDUSTRIELLE — n° 29, 3ème trimestre 1984 ». La fiche écrit « 3e trimestre » là où l'imprimé porte « 3ème » : abréviation normalisée hors citation, sans conséquence.",
+      "PROSE — les trois assertions du summary sont portées par les pages citées. « les opérations ne soient plus attribuées à des procédés fixes » : p. 55, « absence d'attribution fixe des opérations à des procédés », et p. 53, « liberté d'attribution des opérations vis-à-vis des procédés ». « le cycle de fabrication raccourcit » : p. 51, « permettent de réduire les stocks d'en-cours et donc les cycles de fabrication ». « la capacité cesse d'être stable » : p. 53, « l'adaptation des opérations aux cycles des produits se fait au détriment de la stabilité des capacités productives (les liaisons entre procédés étant instables, cela induit une variabilité permanente des capacités) » — le mot capacité est bien celui de l'auteur, ce n'est pas une extrapolation. Le hook est une question et n'ajoute rien : l'opposition lots / pièce est celle de la p. 51, « substituer à une alimentation des procédés de production par lots une alimentation à la pièce ».",
+      "ACCÈS — le PDF /docAsPDF de Persée renvoie 403 derrière un défi Altcha ; je ne l'ai pas contourné. Le contrôle a donc été mené sur les images /renderPage en 1307 px, lisibles, et sur le texte /doc/page à titre de comparaison seulement. Un premier téléchargement de rei_p18 a échoué en tunnel proxy fermé (curl 35), réussi à la seconde tentative. Aucune vérification n'est restée en suspens.",
+      "HORS DES QUATRE POINTS, pour information et sans effet sur le verdict : le champ doi_isbn de la source 1 loge un ISSN, identifiant de revue et non de document ; il est exact, mais il n'identifie pas l'article et ne permet pas de résolution automatique comme le DOI de la source 2. Par ailleurs, la source 2 est marquée consulted: partial avec le seul locator p. 18 ; rien dans la prose ni dans la citation ne s'appuie sur elle, elle sert d'appui d'auteur, ce qui est cohérent — l'article de 1987 la porte d'ailleurs lui-même en bibliographie p. 61."
+    ]
   },
   "notes": [
     "Tour 1 du contrôle aveugle, 6 septembre 2026 : renvoi sur la source primaire. La mention d'éditeur « Cachan, Éditions Lavoisier » est anachronique pour un numéro de 1987 et elle a été retirée. Motif, et il vaut au delà de cette fiche : la page de collection d'un hébergeur donne l'éditeur d'aujourd'hui, pas celui du numéro. C'est la page de collection Persée de la Revue française de gestion, qui porte « Éditeur actuel : Éditions Lavoisier », qui a induit l'erreur. La notice BnF ark:/12148/cb34377121t et le Sudoc donnent l'un comme l'autre trois adresses et aucune n'est celle-là : Paris, Fondation nationale pour l'enseignement de la gestion des entreprises, 1975- ; Rueil-Malmaison, Groupe Liaisons ; Arcueil, JLE, 2024-. Aucune mention positive n'est portée à la place : la deuxième adresse n'est bornée par aucune date, et le contrôleur n'a pu confirmer l'ours imprimé de 1987 sur aucun exemplaire, Persée n'ayant numérisé ni la couverture ni la page de garde du n° 63. Tout le reste de la référence est vérifié et conservé.",

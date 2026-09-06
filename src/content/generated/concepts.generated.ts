@@ -403,6 +403,43 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "carte-de-controle",
+    "slug": "carte-de-controle",
+    "title": "La carte de contrôle",
+    "authorLabel": "W. A. Shewhart",
+    "hookQuestion": "D'où viennent les limites qu'on trace pour surveiller un procédé ?",
+    "shortExplanation": "Les limites se calculent sur le procédé lui-même : la moyenne d'une statistique d'échantillons découpés en sous-groupes rationnels, plus ou moins trois écarts-types.",
+    "authors": [],
+    "themes": [
+      "variation-et-controle"
+    ],
+    "themeLabel": "Ce qu'un procédé fait varier",
+    "attributionNote": "Dispositif exposé par W. A. Shewhart, seul auteur de l'ouvrage, qui introduit l'expression « control chart » en italique p. 290 en la définissant : ce passage ne crédite personne d'autre. Il ne revendique pas non plus l'invention : le livre n'écrit nulle part qu'il est le premier, et le seul antécédent qu'il produise est un essai d'atelier mené de 1923 à 1926.",
+    "quotation": {
+      "text": "Si un point observé tombe hors des limites de cette carte, tenir ce fait pour l'indication d'un problème ou d'une absence de contrôle.",
+      "reference": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931, p. 304, Critère I, étape D",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931, xiv-501 p. (LCCN 31032090)",
+        "kind": "primary",
+        "reference": "p. 275, 290, 299-300 et 304 · LCCN 31032090"
+      },
+      {
+        "label": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, Milwaukee, American Society for Quality Control, 1980 (réimpression).",
+        "kind": "primary",
+        "reference": "978-0-87389-076-2"
+      },
+      {
+        "label": "J. Tiago de Oliveira et S. B. Littauer, « Cartes de contrôle à double limites et à séquences », Revue de statistique appliquée, tome 13, n° 2, 1965, p. 61-73.",
+        "kind": "francophone-reception",
+        "reference": "p. 61-62",
+        "url": "https://www.numdam.org/item/RSA_1965__13_2_61_0/"
+      }
+    ]
+  },
+  {
     "id": "catachrese",
     "slug": "catachrese",
     "title": "Catachrèse",
@@ -1247,6 +1284,109 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "desynchronisation-operations-procedes",
+    "slug": "desynchronisation-operations-procedes",
+    "title": "Désynchroniser opérations et procédés",
+    "authorLabel": "Claude Fiore",
+    "hookQuestion": "Que coûte à l'atelier le passage de la fabrication par lots à la pièce ?",
+    "shortExplanation": "Alimenter à la pièce suppose que les opérations ne soient plus attribuées à des procédés fixes : le cycle de fabrication raccourcit, mais la capacité cesse d'être stable.",
+    "authors": [],
+    "themes": [
+      "coordonner-des-etapes"
+    ],
+    "themeLabel": "Ce qui se dérègle entre les étapes",
+    "attributionNote": "Article signé d'un seul nom, établi sur la page de titre imprimée, « par Claude Fiore ». Ce qui lui revient est l'analyse. L'exemple chiffré du délai divisé par le nombre d'opérations, qui est le plus frappant de l'article, n'est pas de lui : il le renvoie en note à Shigeo Shingo, Maîtrise de la production et méthode Kanban, 1983.",
+    "quotation": {
+      "text": "Ce qui entraîne une désynchronisation entre opérations et procédés (absence d'attribution fixe des opérations à des procédés).",
+      "reference": "Claude Fiore, « Une démarche nouvelle : la production en flux tendus », Revue française de gestion, n° 63, juin-juillet-août 1987, p. 51-61, p. 55"
+    },
+    "sources": [
+      {
+        "label": "Claude Fiore, « Une démarche nouvelle : la production en flux tendus », Revue française de gestion, n° 63, juin-juillet-août 1987, p. 51-61.",
+        "kind": "primary",
+        "reference": "p. 51, 53 et 55 · ISSN 0338-4551",
+        "url": "https://www.persee.fr/doc/rfg_0338-4551_1987_num_63_1_2668"
+      },
+      {
+        "label": "Claude Fiore, « L'impact de la logistique sur l'industrie : la production flexible », Revue d'économie industrielle, n° 29, 3e trimestre 1984, p. 18-25.",
+        "kind": "primary",
+        "reference": "10.3406/rei.1984.2120",
+        "url": "https://www.persee.fr/doc/rei_0154-3229_1984_num_29_1_2120"
+      }
+    ]
+  },
+  {
+    "id": "deux-penalites-pour-un-meme-ecart",
+    "slug": "deux-penalites-pour-un-meme-ecart",
+    "title": "Deux pénalités pour un même écart",
+    "authorLabel": "Richard Bellman",
+    "hookQuestion": "Manquer ou avoir trop : les deux écarts coûtent-ils la même chose ?",
+    "shortExplanation": "Un système tenu dans un état visé coûte dès qu'il s'en écarte, et les deux sens ne se paient pas toujours pareil : demande non servie, capital immobilisé.",
+    "authors": [],
+    "themes": [
+      "produire-et-stocker"
+    ],
+    "themeLabel": "Combien produire, combien en tenir",
+    "attributionNote": "Richard Bellman signe seul le rapport RAND P-651. Le paragraphe d'ouverture de sa partie III, d'où vient cette citation, ne crédite personne : il y pose lui-même la forme commune de ces problèmes. Il ne revendique pas le nom pour autant, écrivant que ces problèmes sont « occasionnellement appelés » problèmes de lissage, sans dire par qui, et il crédite nommément chaque cas qu'il expose ensuite.",
+    "quotation": {
+      "text": "[…] nous avons un type de pénalité pour le dépassement des besoins, et un autre type de pénalité pour l'incapacité à les satisfaire.",
+      "reference": "Richard Bellman, Mathematical Aspects of Scheduling Theory, RAND Corporation, rapport P-651, révisé le 23 mai 1955, p. 38, partie III",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Richard Bellman, Mathematical Aspects of Scheduling Theory, RAND Corporation, rapport P-651, révisé le 23 mai 1955, 70 p.",
+        "kind": "primary",
+        "reference": "p. 38 et p. 42",
+        "url": "https://archive.org/details/DTIC_AD0604647"
+      }
+    ]
+  },
+  {
+    "id": "distorsion-rationnelle-de-la-demande",
+    "slug": "distorsion-rationnelle-de-la-demande",
+    "title": "Le coup de fouet vient de membres rationnels",
+    "authorLabel": "Hau L. Lee, V. Padmanabhan, Seungjin Whang",
+    "hookQuestion": "Pourquoi les commandes s'affolent-elles en remontant une chaîne logistique ?",
+    "shortExplanation": "La variabilité des commandes croît vers l'amont, et ses quatre causes tiennent à la façon de commander : prévision, taille de lot, allocation en pénurie, prix variables.",
+    "authors": [],
+    "themes": [
+      "coordonner-des-etapes"
+    ],
+    "themeLabel": "Ce qui se dérègle entre les étapes",
+    "attributionNote": "Concept coécrit par Hau L. Lee, V. Padmanabhan et Seungjin Whang, dont les trois noms se lisent dans cet ordre sur la signature de l'article. Ils ne revendiquent ni le phénomène ni son nom : leur section 2 s'ouvre en écrivant qu'il n'est pas nouveau, crédite Forrester (1961) et Sterman (1989), et le nom d'effet coup de fouet vient de Procter & Gamble. Ce qui leur revient en propre est l'explication par des membres rationnels et les quatre causes.",
+    "quotation": {
+      "text": "Nous montrons par nos modèles que l'effet coup de fouet résulte des interactions stratégiques entre des membres rationnels de la chaîne logistique.",
+      "reference": "Hau L. Lee, V. Padmanabhan et Seungjin Whang, « Information Distortion in a Supply Chain: The Bullwhip Effect », Management Science, vol. 43, n° 4, avril 1997, p. 546-558, p. 548",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Hau L. Lee, V. Padmanabhan et Seungjin Whang, « Information Distortion in a Supply Chain: The Bullwhip Effect », Management Science, vol. 43, n° 4, avril 1997, p. 546-558.",
+        "kind": "primary",
+        "reference": "p. 546-548 et 555 · 10.1287/mnsc.43.4.546",
+        "url": "https://doi.org/10.1287/mnsc.43.4.546"
+      },
+      {
+        "label": "Hau L. Lee, V. Padmanabhan et Seungjin Whang, « The Bullwhip Effect in Supply Chains », Sloan Management Review, vol. 38, n° 3, 1997, p. 93-102.",
+        "kind": "primary",
+        "url": "https://sloanreview.mit.edu/article/the-bullwhip-effect-in-supply-chains/"
+      },
+      {
+        "label": "Xun Wang et Stephen M. Disney, « The bullwhip effect: Progress, trends and directions », European Journal of Operational Research, vol. 250, n° 3, 2016, p. 691-701.",
+        "kind": "secondary-academic",
+        "reference": "p. 692-693 · 10.1016/j.ejor.2015.07.022",
+        "url": "https://doi.org/10.1016/j.ejor.2015.07.022"
+      },
+      {
+        "label": "Vincent Giard et Mustapha Sali, « L'effet coup de fouet dans la chaîne logistique : une littérature contingente et incomplète », Revue française de gestion industrielle, vol. 31, n° 2, 2012, p. 23-44.",
+        "kind": "francophone-reception",
+        "reference": "p. 2-3 et p. 11 du fichier HAL · HAL hal-01508406",
+        "url": "https://hal.science/hal-01508406/file/publi1720.pdf"
+      }
+    ]
+  },
+  {
     "id": "division-sexuelle-et-rapports-de-sexe",
     "slug": "division-sexuelle-et-rapports-de-sexe",
     "title": "Division sexuelle du travail comme enjeu",
@@ -1617,6 +1757,37 @@ export const generatedConcepts: Concept[] = [
         "kind": "secondary-academic",
         "reference": "§1.3 · 10.1111/jiec.13084",
         "url": "https://doi.org/10.1111/jiec.13084"
+      }
+    ]
+  },
+  {
+    "id": "etat-de-controle-statistique",
+    "slug": "etat-de-controle-statistique",
+    "title": "L'état de contrôle statistique",
+    "authorLabel": "W. A. Shewhart",
+    "hookQuestion": "Un procédé sous contrôle est-il un procédé qui ne varie pas ?",
+    "shortExplanation": "L'état de contrôle est posé en hypothèse, pas constaté : l'expérience passée y permet de prévoir la variation dans des limites, et une qualité contrôlée reste variable.",
+    "authors": [],
+    "themes": [
+      "variation-et-controle"
+    ],
+    "themeLabel": "Ce qu'un procédé fait varier",
+    "attributionNote": "Définition de W. A. Shewhart, seul auteur de l'ouvrage. Les deux pages qui posent la définition, 6 et 34, écrivent « controlled » et « objective state of control » ; le syntagme s'imprime plus loin dans le même livre, p. 146 (« the state of statistical control ») et p. 357 (« a state of statistical control »).",
+    "quotation": {
+      "text": "[…] il est souhaitable d'atteindre l'état de contrôle statistique, dans lequel la loi naturelle des grands nombres rend la prévision possible.",
+      "reference": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931, p. 146, chapitre XI",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931, xiv-501 p. (LCCN 31032090)",
+        "kind": "primary",
+        "reference": "p. 6, 34, 146 et 357 · LCCN 31032090"
+      },
+      {
+        "label": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, Milwaukee, American Society for Quality Control, 1980 (réimpression).",
+        "kind": "primary",
+        "reference": "978-0-87389-076-2"
       }
     ]
   },
@@ -2361,6 +2532,45 @@ export const generatedConcepts: Concept[] = [
         "kind": "francophone-reception",
         "reference": "10.1007/s11873-009-0065-8",
         "url": "https://hal.science/hal-00478459/document"
+      }
+    ]
+  },
+  {
+    "id": "lot-economique",
+    "slug": "lot-economique",
+    "title": "Le lot économique",
+    "authorLabel": "Ford W. Harris",
+    "hookQuestion": "Combien de pièces lancer à la fois, et qu'est-ce qui fixe ce nombre ?",
+    "shortExplanation": "Un lot plus grand dilue le coût de lancement mais alourdit l'intérêt et la dépréciation du stock : le lot économique est le point où les deux charges s'égalisent.",
+    "authors": [],
+    "themes": [
+      "produire-et-stocker"
+    ],
+    "themeLabel": "Combien produire, combien en tenir",
+    "attributionNote": "Auteur unique : la pièce porte la signature « FORD W. HARRIS, Production Engineer ». Le nom moderne du concept n'est pas de lui. Il écrit « the economical size of lot » ; « economic order quantity » et le sigle EOQ n'ont aucune occurrence dans son texte et lui sont postérieurs : le terme est en usage au moins depuis les années 1950 (W. C. Hugli Jr., The Engineering Economist, 1957) et c'est sous ce nom déjà courant qu'Erlenkotter republie le texte en 1990. Ford W. Harris n'est pas Theodore Harris, le mathématicien de la RAND coauteur d'Optimal Inventory Policy en 1950.",
+    "quotation": {
+      "text": "[…] pour une consommation donnée, il est utile de savoir que cette consommation doit quadrupler pour justifier de doubler les quantités fabriquées.",
+      "reference": "Ford W. Harris, « How Many Parts to Make at Once », Factory, The Magazine of Management, vol. 10, n° 2, février 1913, republié dans Operations Research, vol. 38, n° 6, 1990, p. 947-950, p. 950 de la republication",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Ford W. Harris, « How Many Parts to Make at Once », Factory, The Magazine of Management, vol. 10, n° 2, février 1913, p. 135-136 et 152, republié dans Operations Research, vol. 38, n° 6, 1990, p. 947-950.",
+        "kind": "primary",
+        "reference": "p. 947-950, republication de 1990 · 10.1287/opre.38.6.947",
+        "url": "https://doi.org/10.1287/opre.38.6.947"
+      },
+      {
+        "label": "Donald Erlenkotter, « Ford Whitman Harris and the Economic Order Quantity Model », Operations Research, vol. 38, n° 6, 1990, p. 937-946.",
+        "kind": "secondary-academic",
+        "reference": "10.1287/opre.38.6.937",
+        "url": "https://doi.org/10.1287/opre.38.6.937"
+      },
+      {
+        "label": "Kenneth J. Arrow, Theodore Harris et Jacob Marschak, Optimal Inventory Policy, RAND Corporation, papier P-189, 5 septembre 1950, révisé le 16 novembre 1950.",
+        "kind": "secondary-academic",
+        "reference": "p. 9 et bibliographie",
+        "url": "https://archive.org/details/DTIC_AD0422810"
       }
     ]
   },
@@ -3938,6 +4148,32 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "stock-remede-au-desajustement-des-rythmes",
+    "slug": "stock-remede-au-desajustement-des-rythmes",
+    "title": "Le stock, remède au désajustement des rythmes",
+    "authorLabel": "Robert Guihéneuf",
+    "hookQuestion": "Pourquoi tenir un stock entre deux opérations qui se suivent ?",
+    "shortExplanation": "Quand deux opérations successives, en production ou en distribution, ne se font pas au même rythme, le stock remédie au désajustement : instrument de gestion, non résidu.",
+    "authors": [],
+    "themes": [
+      "produire-et-stocker"
+    ],
+    "themeLabel": "Combien produire, combien en tenir",
+    "attributionNote": "Article signé d'un seul nom, lu sur la signature imprimée au bas de la page 91. Ce qui revient à l'auteur est cette formulation et sa transposition à l'entreprise, non la lignée qu'il nomme lui-même : il rapporte l'idée de disparité des rythmes au principe d'accélération d'Aftalion, et renvoie l'analyse en termes de périodes à R. Barre et à Pierre Massé. Aucune des formules de dimensionnement qu'il expose ne lui appartient.",
+    "quotation": {
+      "text": "Dès lors que deux opérations consécutives distinctes ne se font pas au même rythme […], on peut craindre un désajustement, le stock doit y remédier.",
+      "reference": "Robert Guihéneuf, « Remarques sur la gestion des stocks dans l'entreprise », Revue économique, volume 7, n° 1, 1956, p. 68-91, p. 75, section II"
+    },
+    "sources": [
+      {
+        "label": "Robert Guihéneuf, « Remarques sur la gestion des stocks dans l'entreprise », Revue économique, volume 7, n° 1, 1956, p. 68-91.",
+        "kind": "primary",
+        "reference": "p. 68, 75 et 83 · 10.3406/reco.1956.407156",
+        "url": "https://www.persee.fr/doc/reco_0035-2764_1956_num_7_1_407156"
+      }
+    ]
+  },
+  {
     "id": "stocks-et-flux",
     "slug": "stocks-et-flux",
     "title": "Stocks et flux",
@@ -4159,6 +4395,43 @@ export const generatedConcepts: Concept[] = [
         "kind": "primary",
         "reference": "10.1007/978-3-642-51711-2_1",
         "url": "https://doi.org/10.1007/978-3-642-51711-2_1"
+      }
+    ]
+  },
+  {
+    "id": "tolerance-economique-et-controle",
+    "slug": "tolerance-economique-et-controle",
+    "title": "Pas de tolérance économique sans contrôle",
+    "authorLabel": "W. A. Shewhart",
+    "hookQuestion": "Que faut-il savoir d'un procédé avant de fixer la tolérance d'une pièce ?",
+    "shortExplanation": "Réduire une plage de tolérance gagne en valeur et coûte en rebuts : cet arbitrage ne se calcule que sur une qualité contrôlée, c'est-à-dire prévisible dans des limites.",
+    "authors": [],
+    "themes": [
+      "variation-et-controle"
+    ],
+    "themeLabel": "Ce qu'un procédé fait varier",
+    "attributionNote": "Thèse de W. A. Shewhart, seul auteur de l'ouvrage. La tolérance n'est pas de lui et il le dit : le chapitre s'ouvre sur « […] it is customary practice to establish allowable or tolerance ranges of variability ». Ce qui lui revient est le lien qu'il pose entre les deux, sous le titre « Importance of Control in Setting Economic Tolerance ».",
+    "quotation": {
+      "text": "Donc, pour fixer une plage de tolérance économique, il est nécessaire que les qualités des matériaux et des composants soient contrôlées.",
+      "reference": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931, p. 252",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931, xiv-501 p. (LCCN 31032090)",
+        "kind": "primary",
+        "reference": "p. 6 et p. 249-252 · LCCN 31032090"
+      },
+      {
+        "label": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, Milwaukee, American Society for Quality Control, 1980 (réimpression).",
+        "kind": "primary",
+        "reference": "978-0-87389-076-2"
+      },
+      {
+        "label": "A. Vessereau, « Contrôle des caractéristiques des papiers Kraft et simili-Kraft », Revue de statistique appliquée, tome 1, n° 3-4, 1953, p. 5-23.",
+        "kind": "francophone-reception",
+        "reference": "p. 7 et p. 12",
+        "url": "https://www.numdam.org/item/RSA_1953__1_3-4_5_0/"
       }
     ]
   },

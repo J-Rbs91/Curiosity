@@ -57,6 +57,39 @@ import type { Theme } from "@/types";
  * pas projetée : le plafond de volume du lot est de huit. Elle attend en `corpus/candidates/`
  * avec son verdict, et elle est le premier travail du passage suivant sur ce domaine.
  *
+ * Un quatrième thème d'`operations-management`, `coordonner-des-etapes`, est écrit le
+ * 6 septembre 2026, passage 14 de la routine nocturne, après le contrôle aveugle des huit
+ * cartes de ce lot. `corpus/map/themes-proposes-2026-09-06.md` l'avait proposé sans pouvoir
+ * le déclarer, faute des deux verdicts qui lui manquaient : un thème se déclare quand une
+ * carte validée le porte, pas quand une carte existe. Les deux verdicts sont arrivés `PASS`
+ * dans ce même lot, `desynchronisation-operations-procedes` au second tour et
+ * `distorsion-rationnelle-de-la-demande` au premier, et la condition est donc remplie.
+ *
+ * Les deux textes répondent à la même question par le même geste : une décision prise
+ * localement, bonne à son endroit, et ce qu'elle fait aux liaisons avec les étapes voisines.
+ * Chez Fiore (1987), réduire la taille des lots pour raccourcir le cycle défait
+ * l'attribution fixe des opérations aux procédés d'un même atelier, et déstabilise les
+ * liaisons entre eux au point de faire tomber la prévision des capacités. Chez Lee,
+ * Padmanabhan et Whang (1997), quatre conduites rationnelles de commande, mise à jour de la
+ * prévision, groupage, anticipation de pénurie, opportunisme sur les prix, amplifient la
+ * variance des commandes en remontant une chaîne d'entreprises distinctes. Aucun acteur ne
+ * se trompe dans un cas comme dans l'autre, et le remède porte sur la liaison, non sur le
+ * décideur : reconnecter opérations et procédés chez l'un, s'attaquer à l'infrastructure
+ * interorganisationnelle chez l'autre.
+ *
+ * **Réserve d'échelle, portée plutôt que tue.** Fiore décrit des postes à l'intérieur d'un
+ * même atelier, Lee et ses coauteurs des entreprises distinctes le long d'une chaîne :
+ * l'échelle n'est pas la même, et le thème pourrait n'être qu'une analogie entre deux objets
+ * de nature différente. Ce qui a emporté la décision malgré cette réserve : les deux textes
+ * nomment eux-mêmes leur objet par la liaison entre étapes plutôt que par les étapes elles
+ * mêmes, « liaisons entre procédés » chez Fiore, « supply chain members » chez Lee, et tous
+ * deux tirent leur conclusion pratique sur cette liaison, non sur les postes ou les firmes
+ * qu'elle relie.
+ *
+ * `stock-remede-au-desajustement-des-rythmes`, qui porterait aussi ce thème sans le forcer,
+ * reste dans `produire-et-stocker` : un thème neuf ne se renforce pas en dépouillant un
+ * thème existant où elle est chez elle.
+ *
  * Les deux premiers thèmes de `work-psychology` sont écrits le 26 août 2026, après le
  * contrôle aveugle des cartes du lot d'ouverture. La cartographie en proposait **cinq**, un
  * par candidat, et elle avait prévenu que le cinquième restait à confirmer côté frontière. Le
@@ -520,6 +553,16 @@ export const themes: Theme[] = [
     keywords: ["Ordonnancement", "Temps mort", "Aléa"],
     description:
       "Quand des tâches doivent passer les unes après les autres sur les mêmes postes, le total de travail ne change pas mais le temps qu'il faut pour l'écouler, si. Ce thème porte sur ce que l'ordre déplace réellement, sur le temps mort où il agit, et sur ce qui arrive à un ordre optimal quand les durées ne sont pas celles qu'on croyait.",
+    domain: "operations-management",
+  },
+  {
+    id: "coordonner-des-etapes",
+    slug: "coordonner-des-etapes",
+    title: "Ce qui se dérègle entre les étapes",
+    tagline: "Une décision locale ne reste jamais locale.",
+    keywords: ["Étapes successives", "Désynchronisation", "Amplification"],
+    description:
+      "Une production passe par des étapes qui se suivent, postes d'un atelier ou maillons d'une chaîne, et chacune décide pour elle seule : quelle machine prend quelle opération, combien commander et quand. Ce thème porte sur ce que ces décisions locales font aux liaisons entre étapes, sur ce qu'elles y déstabilisent et sur ce qu'elles y déforment, alors même que chacune est prise pour de bonnes raisons.",
     domain: "operations-management",
   },
   // --- Psychologie du travail -----------------------------------------------
