@@ -375,3 +375,300 @@ Ce sont les reprises les moins chères du domaine, leur accès étant constaté 
   absent du scan**, qui s'arrête au folio 42.
 - **Les cinq candidats hérités des voisins restent tous non ouverts** : les trois rapports DoD de
   `cybernetics` et les deux notices HAL de `human-factors`. Ce passage ne les a pas retentés.
+
+---
+
+# Balayage du 6 septembre 2026 (passage 14) — la couche francophone et les quatre points d'entrée jamais interrogés
+
+## Mandat et dispositif
+
+Ce passage ne reprend aucun des candidats déjà cartographiés ci-dessus, ne les revérifie pas, et
+ne touche pas aux trois candidats francophones réservés à d'autres agents cette nuit (Guihéneuf
+1956, Fiore 1987, De Almeida 1998). Son objet est exclusivement ce que la section « Angles
+morts » du passage du 25 août déclarait sur elle-même : la couche francophone non cherchée « en
+parallèle », et quatre points d'entrée du périmètre sans requête ciblée (files d'attente pour le
+service, maintenance et fiabilité au sens de l'ingénieur, conception des systèmes de service,
+variabilité propagée le long d'une chaîne), plus cinq concepts listés « ni candidats ni rejetés » :
+loi de Little, quantité économique de commande (Harris), théorie des files d'Erlang, contrainte et
+goulot (Goldratt), production à flux tiré.
+
+**Le serveur MCP `documentary` n'était pas exposé dans cette session** : aucun outil
+`mcp__documentary__*` disponible. Tout ce qui suit vient de `WebSearch`, `WebFetch`, `curl` et
+l'API Crossref/Semantic Scholar/HAL en accès direct, conformément à la consigne de tâche. Chaque
+code HTTP cité a été obtenu par `curl -s -o /dev/null -w "%{http_code}"` depuis cette session, pas
+recopié d'un résultat de recherche.
+
+## Candidats retenus, avec preuve d'accès constatée sur pièce
+
+### 1. Quantité économique de commande — Ford W. Harris (1913)
+
+- **CANDIDAT** : la quantité économique de commande (lot économique) / *Economic Order Quantity*.
+- **AUTEUR(S)** : Ford W. Harris, « Production Engineer », seul auteur. Le sigle EOQ et
+  l'attribution moderne sont consolidés a posteriori, par la republication éditoriale de 1990 (voir
+  Secondaire) — le terme lui-même n'est pas de Harris.
+- **PÉRIMÈTRE** : dedans a priori — le texte expose un arbitrage explicite entre coût de
+  lancement et coût de possession pour fixer une taille de lot, exactement ce que le périmètre vise
+  par « les stocks et leur dimensionnement : ce qu'un lot économique suppose ».
+- **SOURCE PRIMAIRE** : Harris, F. W. (1913). « How Many Parts to Make at Once. » *Factory, The
+  Magazine of Management*, vol. 10, n° 2, février 1913, pp. 135-136, 152. Republié intégralement
+  dans *Operations Research*, vol. 38, n° 6 (nov.-déc. 1990), pp. 947-950, sous la rubrique « OR
+  Forum », immédiatement à la suite de l'article d'accompagnement d'Erlenkotter (pp. 937-946). Le
+  texte lu dans ce passage est cette republication de 1990, pas l'original *Factory* de 1913
+  (aucune version de cette pagination-là n'a été localisée).
+  **Accès constaté** : PDF téléchargé et lu intégralement (5 pages) depuis
+  `http://userhome.brooklyn.cuny.edu/irudowsky/CIS10.31/articles/EOQModel-OriginalPaper.pdf` — HTTP
+  200, `application/pdf`, texte extrait avec succès page par page (`pymupdf`). L'accès officiel
+  INFORMS (DOI `10.1287/opre.38.6.947`) n'a pas été testé directement ; le reste de la collection OR
+  testée cette nuit répond systématiquement 403.
+- **SECONDAIRE** : Erlenkotter, D. (1990). « Ford Whitman Harris and the Economic Order Quantity
+  Model. » *Operations Research*, 38(6), 937-946. DOI `10.1287/opre.38.6.937`. **Accès négatif
+  constaté** : `curl` sur `pubsonline.informs.org/doi/pdf/10.1287/opre.38.6.937` → 403 ;
+  Semantic Scholar (`api.semanticscholar.org`) rend `openAccessPdf.status: "CLOSED"`. Identifié,
+  non lu.
+- **FRANCOPHONE** : Guihéneuf (1956), déjà réservé à un autre agent, discute justement le lot
+  économique — non retouché ici. Au-delà, aucune réception française de Harris spécifiquement
+  cherchée dans ce passage, faute de temps.
+- **SIGNAL** : la paternité de la formule est disputée dans la littérature déjà légitimement lue
+  par ce même dossier : Arrow, Harris et Marschak (1950), lus en texte intégral par le passage du 25
+  août, écrivent eux-mêmes attribuer la solution à « R. H. Wilson, formerly of the Bell Telephone
+  Company » plutôt qu'à (Ford W.) Harris — un contresens d'attribution est donc déjà repéré et
+  documenté dans ce dossier même, à transmettre tel quel au lecteur primaire. La republication de
+  1990 intervient 77 ans après l'original : rien ne garantit qu'elle en respecte la mise en page
+  d'origine (elle en respecte a minima le texte, sous l'autorité éditoriale d'INFORMS).
+- **ACCESSIBILITÉ** : texte intégral, anglais.
+- **CITABLE** : oui, en anglais ; aucune traduction française publiée localisée.
+
+### 2. Files d'attente pour le service, en français — J. P. Imhof (1964)
+
+- **CANDIDAT** : le nombre de clients servis pendant une période de service ininterrompu dans une
+  file d'attente simple.
+- **AUTEUR(S)** : J. P. Imhof, Université de Lausanne, seul auteur.
+- **PÉRIMÈTRE** : **risque de frontière signalé, pas tranché**. Le texte lu (introduction, citée
+  ci-dessous) est d'un registre purement combinatoire — transformée de Laplace, chemins dans le
+  plan, résultat de Champernowne — sans vocabulaire ni cadrage de décision de gestion dans les
+  passages consultés. C'est exactement le cas que le périmètre annonce : « la recherche
+  opérationnelle prise comme branche des mathématiques... entre par ce qu'elle fait comprendre d'un
+  système, jamais par ses résultats propres ». À trancher par une lecture complète, pas ici.
+- **SOURCE PRIMAIRE** : Imhof, J. P. (1964). « Sur le nombre d'unités servies lors d'une période
+  de service ininterrompu pour une file d'attente simple. » *Annales de l'ISUP* (Publications de
+  l'Institut de Statistique de l'Université de Paris), vol. XIII, n° 4, pp. 181-190.
+  **Accès constaté** : notice HAL `hal-04085222`, fichier déposé, HTTP 200 sur
+  `https://hal.science/hal-04085222v1/file/(1964)-201-210.pdf`, PDF de 11 pages, texte français lu
+  et extrait avec succès (introduction citée intégralement ci-dessous). Page de garde HAL indique
+  explicitement « Distributed under a Creative Commons CC BY 4.0 » et `peerReviewing_s: "1"`
+  (avec comité de lecture) dans les métadonnées de l'API HAL.
+- **SECONDAIRE** : non cherchée dans ce passage. ABSENTE, pas vérifiée.
+- **FRANCOPHONE** : la source primaire elle-même est francophone, publiée à Paris — c'est la
+  réponse directe au point d'entrée du périmètre resté sans requête.
+- **SIGNAL** : à transmettre explicitement, pas à trancher : premier paragraphe du texte lu, « Dans
+  la littérature relative aux files d'attente, les méthodes utilisant la transformation de Laplace
+  ont longtemps joué un rôle prédominant. Un argument combinatoire a été employé pour la première
+  fois par Champernowne [...] » — aucune mention de coût, de capacité ni de conception dans les
+  deux premières pages lues.
+- **ACCESSIBILITÉ** : texte intégral, français, licence CC BY 4.0 déclarée.
+- **CITABLE** : oui, en français, verbatim disponible.
+
+### 3. Maintenance et fiabilité, en français — Raymond A. Marie (1973)
+
+- **CANDIDAT** : la maintenance corrective modélisée par un réseau de files d'attente, sous une
+  contrainte de disponibilité minimale à satisfaire au moindre coût.
+- **AUTEUR(S)** : Raymond A. Marie, seul auteur ; thèse de troisième cycle soutenue sous la
+  direction de M. Métivier.
+- **PÉRIMÈTRE** : dedans a priori — le résumé HAL le formule explicitement en termes de décision
+  (« un ensemble de variables de décision [nombre de réparateurs, niveaux alloués aux stocks de
+  rechange] », « un algorithme original [...] minimisant le coût global de la maintenance sous une
+  contrainte de disponibilité minimale »). C'est très exactement le point d'entrée du périmètre
+  « maintenance et fiabilité au sens de l'ingénieur », en français, jamais interrogé jusqu'ici.
+- **SOURCE PRIMAIRE** : Marie, R. A. (1973). *Maintenance en univers stochastique. Modèle et
+  Optimisation.* Thèse de 3e cycle, Université de Rennes, soutenue le 28 mai 1973.
+  **Accès constaté** : notice HAL `tel-01730564` (dépôt Inria), fichier déposé, HTTP 200 sur
+  `https://inria.hal.science/tel-01730564v1/file/RAM_Ma_these_3eme_cycle_avril_1973.pdf`, PDF de
+  189 pages téléchargé (8,65 Mo). **Réserve constatée sur pièce** : les pages du corps du texte
+  vérifiées (pp. 6, 11, 16, 21 sur 189) ne portent aucune couche de texte extractible — ce sont des
+  images de pages scannées sans OCR, à la différence de la page de garde HAL générée
+  automatiquement par le dépôt. Le texte n'est donc pas cherchable, et **aucune citation verbatim
+  n'a pu être extraite par ce passage**, qui n'a pas ouvert les pages une à une en image. Le
+  document est ouvrable ; il reste à lire.
+- **SECONDAIRE** : non cherchée.
+- **FRANCOPHONE** : la source primaire elle-même.
+- **SIGNAL** : la notice HAL classe cette thèse de 1973 en « Réseaux et télécommunications
+  [cs.NI] » — une nomenclature qui n'existait pas en 1973 (dépôt fait en 2018, reclassification
+  a posteriori par le déposant, à ne pas prendre pour argent comptant comme preuve de rattachement
+  disciplinaire d'époque). Objet voisin de `regle-de-commande-a-deux-niveaux.json` et
+  `penalite-de-rupture.json`, déjà validés dans ce domaine, mais distinct : la ressource gérée ici
+  est la réparation (personnel technique, pièces détachées), pas le produit fini en stock — pas de
+  collision de concept identifiée.
+- **ACCESSIBILITÉ** : texte intégral (image scannée, sans couche OCR), français. Lisible page par
+  page, non cherchable par mot-clé.
+- **CITABLE** : vraisemblablement oui, en français — non vérifié verbatim par ce scout, nécessite
+  une lecture image par le lecteur primaire.
+
+### 4. Maintenance et fiabilité, l'origine anglophone — le rapport AGREE (1957)
+
+- **CANDIDAT** : la définition quantifiée de la fiabilité (probabilité de fonctionnement sans
+  panne pendant une durée donnée, dans des conditions données) et la méthode d'essai normalisée qui
+  en découle — le texte fondateur de l'ingénierie de la fiabilité comme discipline distincte.
+- **AUTEUR(S)** : collectif — *Advisory Group on Reliability of Electronic Equipment* (AGREE),
+  Office of the Assistant Secretary of Defense (Research and Engineering). Pas d'auteur individuel :
+  même nature d'attribution que les trois rapports DoD déjà légués à ce domaine par `cybernetics`.
+- **PÉRIMÈTRE** : dedans a priori sur la partie qui expose la définition opérationnelle et le
+  protocole d'essai — non vérifié faute d'avoir pu lire un passage citable (voir Accessibilité) ;
+  frontière possible avec `human-factors` si le texte dérive vers l'erreur humaine, non vérifiée non
+  plus.
+- **SOURCE PRIMAIRE** : *Advisory Group on Reliability of Electronic Equipment* (1957).
+  *Reliability of Military Electronic Equipment.* Washington : Office of the Assistant Secretary of
+  Defense (Research and Engineering), 4 juin 1957.
+  **Accès constaté** : item Internet Archive `DTIC_AD0141476`, collections `dticarchive`,
+  `usgovernmentmirrors`, `government-documents` — exactement la voie déjà établie comme rentable
+  pour ce domaine. Métadonnées complètes interrogées via `https://archive.org/metadata/DTIC_AD0141476` :
+  les cinq champs `access-restricted-item`, `restricted`, `rights`, `licenseurl` et
+  `possible-copyright-status` rendent tous `None`. 375 pages scannées à 300 ppi. Le dérivé
+  `DTIC_AD0141476_djvu.txt` répond HTTP 200 (24 143 lignes récupérées), mais **son OCR est
+  gravement dégradé** sur toutes les occurrences vérifiées du mot « reliability » (ex.
+  « acceptability figure for reliability established for the equljweBt t.jw » — fautes de
+  reconnaissance sur la quasi-totalité des lignes). **Aucun passage n'a donc pu être cité verbatim**
+  par ce scout : conformément à la règle déjà établie dans ce même document pour Bellman et HMMS,
+  *l'image fait foi, l'OCR ne suffit jamais* — la lecture doit se faire sur le dérivé image
+  (`.../page/n<N>.jpg`, jamais le `_x1600` rogné, cf. plus haut dans ce fichier), non testé ici.
+- **SECONDAIRE** : non cherchée.
+- **FRANCOPHONE** : sans objet, rapport militaire américain.
+- **SIGNAL** : rapport collectif, pas d'auteur individuel au sens strict du test d'entrée n°2 du
+  périmètre — à trancher par le lecteur primaire comme cela l'a déjà été pour les rapports DoD légués
+  par `cybernetics` (rattachement institutionnel plutôt que personnel, précédent déjà accepté dans ce
+  domaine).
+- **ACCESSIBILITÉ** : image scannée disponible en intégralité ; couche OCR présente mais
+  inutilisable pour citation.
+- **CITABLE** : vraisemblablement oui, en anglais — non vérifié par ce scout, nécessite une lecture
+  image.
+
+### 5. Variabilité propagée le long d'une chaîne — Lee, Padmanabhan & Whang (1997)
+
+- **CANDIDAT** : l'amplification de la variabilité de la demande le long d'une chaîne
+  d'approvisionnement, ses quatre causes opérationnelles et les contre-mesures de gestion qu'elles
+  appellent (l'« effet coup de fouet »).
+- **AUTEUR(S)** : Hau L. Lee, V. Padmanabhan, Seungjin Whang — trois coauteurs, Stanford Graduate
+  School of Business pour Lee et Whang.
+- **PÉRIMÈTRE** : dedans a priori, **avec un motif de frontière à vérifier explicitement à la
+  lecture**, exactement le cas limite que le périmètre annonce vis-à-vis de `systems-thinking` : le
+  texte identifie quatre causes opérationnelles (traitement du signal de demande, rationnement,
+  groupage des commandes, variations de prix) et des contre-mesures de pilotage (partage
+  d'information, réduction des lots, stabilisation des prix) — registre de décision de gestion,
+  « combien faut-il en tenir », plutôt que modèle de comportement dynamique global.
+- **SOURCE PRIMAIRE** : Lee, H. L., Padmanabhan, V., & Whang, S. (1997). « Information Distortion
+  in a Supply Chain: The Bullwhip Effect. » *Management Science*, 43(4), 546-558. DOI
+  `10.1287/mnsc.43.4.546`.
+  **Accès constaté** : PDF hébergé sur un site de cours universitaire (Bilkent University),
+  `https://courses.ie.bilkent.edu.tr/ie460/wp-content/uploads/sites/12/2019/02/Lee-Padmanabhan-Whang-1997-MS.pdf`,
+  HTTP 200, `application/pdf`. Le fichier est un scan JSTOR complet (première page : en-tête JSTOR
+  standard, DOI, mention de copyright INFORMS/JSTOR ; dernière page : bibliographie se terminant
+  page 558, « MANAGEMENT SCIENCE/Vol. 43, No. 4, April 1997 »), 14 pages, texte extrait avec succès
+  en tête et en fin d'article. L'accès officiel INFORMS reste fermé :
+  `pubsonline.informs.org/doi/10.1287/mnsc.43.4.546` → 403 en curl.
+  **Réserve de droits, même nature que celle déjà tranchée pour Shewhart dans ce document** : ce
+  mirroir est une reproduction non officielle d'un scan JSTOR hébergée sur un site de cours tiers,
+  pas une édition ouverte par l'éditeur. Le texte est lu (`consulted: full-text` légitime), mais
+  l'URL de ce mirroir n'est probablement pas celle à faire figurer sur une carte sans vérification
+  de droits supplémentaire — décision à reprendre au stade de la rédaction, pas ici.
+- **SECONDAIRE** : non cherchée.
+- **FRANCOPHONE** : non cherchée dans ce passage (requête HAL « effet coup de fouet » /
+  « bullwhip » à faire).
+- **SIGNAL** : ce texte partage son année et son objet (chaîne de distribution, stocks, délais) avec
+  Sterman, déjà exclu de ce domaine par la cartographie du 25 août (`om-scout-sterman.pdf`, rangé
+  côté `systems-thinking`) — vigilance de frontière à transmettre dans les deux sens au lecteur
+  primaire.
+- **ACCESSIBILITÉ** : texte intégral, anglais, via mirroir tiers non officiel.
+- **CITABLE** : oui, en anglais ; aucune traduction française cherchée.
+
+## Angles morts (a) — non ouvrable, accès constaté négatif ou bloqué
+
+- **Little, J. D. C. (1961). « A Proof for the Queuing Formula: L = λW. »** *Operations Research*,
+  9(3), 383-387. DOI `10.1287/opre.9.3.383`. Point d'entrée : loi de Little. `curl` sur
+  `pubsonline.informs.org/doi/pdf/10.1287/opre.9.3.383` → 403. Semantic Scholar :
+  `openAccessPdf.status: "CLOSED"`, url vide. **Alternative repérée et vérifiée, à ne jamais
+  substituer silencieusement** : Little, J. D. C. (2011). « Little's Law as Viewed on Its 50th
+  Anniversary. » *Operations Research*, 59(3), 536-549, DOI `10.1287/opre.1110.0940` — texte ouvert
+  (`https://people.cs.umass.edu/~emery/classes/cmpsci691st/readings/OS/Littles-Law-50-Years-Later.pdf`,
+  HTTP 200, 14 pages, lu et vérifié), écrit par l'auteur lui-même, contenant une nouvelle
+  démonstration de L = λW sur intervalle de temps fini. Ce n'est pas le texte de 1961 : si utilisé,
+  cela doit être déclaré comme tel (rétrospective de l'auteur, pas l'article original), jamais
+  présenté comme la source primaire de 1961.
+- **Chase, R. B. (1981). « The Customer Contact Approach to Services: Theoretical Bases and
+  Practical Extensions. »** *Operations Research*, 29(4), 698-706. DOI `10.1287/opre.29.4.698`.
+  Point d'entrée : conception des systèmes de service. `curl` sur
+  `pubsonline.informs.org/doi/pdf/10.1287/opre.29.4.698` → 403. Semantic Scholar :
+  `openAccessPdf.status: "CLOSED"`, url vide. Aucun mirroir de cours trouvé dans le temps imparti,
+  contrairement au cas Lee-Padmanabhan-Whang ci-dessus.
+- **Sugimori, Y., Kusunoki, K., Cho, F., & Uchikawa, S. (1977). « Toyota Production System and
+  Kanban System... »** *International Journal of Production Research*, 15(6), 553-564. DOI
+  `10.1080/00207547708943149`. Point d'entrée : production à flux tiré. `curl` sur
+  `tandfonline.com/doi/pdf/10.1080/00207547708943149` → 403. Semantic Scholar rend
+  `openAccessPdf.status: "BRONZE"` mais l'URL rendue (`?needAccess=true&role=button`) est la même
+  page à accès conditionnel qui a répondu 403 au test direct — un statut « bronze » n'est donc pas
+  ici un accès réel, à noter pour éviter qu'un passage futur s'y fie sans retester.
+- **Goldratt, E. M. (1988). « Computerized shop floor scheduling. »** *International Journal of
+  Production Research*, 26(3). DOI `10.1080/00207548808947875` (identifié via Crossref, seul texte
+  de Goldratt trouvé en revue à comité de lecture plutôt qu'en ouvrage de méthode). Point d'entrée :
+  contrainte et goulot. `curl` sur `tandfonline.com/doi/pdf/10.1080/00207548808947875` → 403.
+  Semantic Scholar : `openAccessPdf.status: "CLOSED"`.
+
+## Angles morts (b) — non cherché ou insuffisamment cherché
+
+- **Théorie des files d'Erlang.** Identité bibliographique connue de la littérature secondaire :
+  Erlang, A. K. (1909). « Sandsynlighedsregning og Telefonsamtaler » / « The Theory of Probabilities
+  and Telephone Conversations. » *Nyt Tidsskrift for Matematik* B, 20, 33-39 ; republié en anglais
+  dans Brockmeyer, E., Halstrøm, H. L., & Jensen, A. (1948). *The Life and Works of A. K. Erlang.*
+  Copenhagen Telephone Company / Transactions of the Danish Academy of Technical Sciences n° 2.
+  **Aucune des deux pièces n'a été localisée en accès dans ce passage** : recherche Internet Archive
+  par titre (`title:(life and works of A K Erlang)`) → 0 résultat ; recherche plein texte plus large
+  (`Erlang telephone traffic theory`) → 1 résultat sans rapport (dépôt GitHub de cryptographie). Non
+  interrogé : HathiTrust, les bibliothèques numériques danoises (Det Kongelige Bibliotek), le site de
+  l'ITU. Statut : **repéré, accès non vérifié** — à reprendre par un passage qui interroge
+  spécifiquement ces trois fonds plutôt que `WebSearch` généraliste.
+- **Conception des systèmes de service, au-delà de Chase.** La requête HAL
+  `"systèmes de service" conception` n'a rendu que deux résultats, tous deux contemporains et
+  appliqués (`hal-02919111`, `tel-03166626` sur les véhicules autonomes partagés) — aucun candidat de
+  texte source. Un autre classique du point d'entrée, Levitt, T. (1972). « Production-Line Approach
+  to Service. » *Harvard Business Review*, n'a fait l'objet d'aucune requête dans ce passage, faute
+  de temps.
+- **OpenEdition Books, browsing de collections.** Une tentative
+  (`books.openedition.org/oep/browse/discipline`) a rendu 404 ; abandonnée faute de connaître la
+  structure d'URL correcte pour ce domaine. **Non résolu, à reprendre en identifiant d'abord la page
+  d'accueil disciplinaire correcte plutôt qu'à conclure à un vide.**
+- **Persée, hors ce que ce passage a fait.** Interrogé uniquement par `WebSearch` générique (pas par
+  le moteur propre de Persée), pour la théorie des files d'attente et pour l'EOQ. Reste non fait pour
+  la maintenance, la conception de service et la variabilité — comme la section du 25 août l'avait
+  déjà signalé pour l'ensemble de la couche, ce passage ne comble le manque que partiellement.
+- **theses.fr.** Non interrogé dans ce passage : aucun titre candidat côté français, au-delà de
+  Marie (1973), n'a nécessité de vérification d'existence par ce canal (Marie a été trouvé
+  directement et intégralement via HAL).
+- **Cairn.** Non interrogé, conformément à la consigne (403 DataDome constaté les nuits
+  précédentes, traité comme définitif, non re-diagnostiqué ici).
+
+## Angles morts (c) — vérifié vide
+
+- **Théorie des contraintes / goulot, dans la couche francophone, sur HAL précisément.** Deux
+  requêtes exactes menées : `text:("théorie des contraintes")` → 36 résultats, tous relevant du
+  droit comparé (une querelle homonymique avec la « théorie des contraintes juridiques »), de
+  mémoires de master appliquant la doctrine anglo-saxonne sans la discuter, ou d'une thèse en
+  anglais sur le secteur de la santé chypriote citant Goldratt sans en être une source ;
+  `text:("goulet d'étranglement" production)` → 5 résultats, aucun sur le mécanisme productif
+  (géoéconomie des semi-conducteurs, programmation générative, environnements virtuels de
+  formation, génétique du sorgho). **Aucun texte source du concept, en français, n'a été trouvé sur
+  HAL.** C'est un vide vérifié **pour ce concept précis et pour cette seule base** — Persée, Cairn et
+  OpenEdition Books n'ont pas été interrogés sur ce point précis dans ce passage, donc le vide ne
+  s'étend pas au-delà de HAL.
+
+## Vérification de non-collision
+
+`ls corpus/validated/` (127 fiches) et `ls corpus/candidates/` exécutés. Aucun `id` ni `slug`
+proposé ci-dessus (`quantite-economique-de-commande`, `imhof`/`file-d-attente-service`,
+`maintenance-en-univers-stochastique`, `fiabilite-agree`, `effet-coup-de-fouet`/`bullwhip`, ou
+équivalents) ne figure dans l'une ou l'autre liste — aucun de ces cinq candidats n'ayant d'ailleurs
+reçu de slug définitif ici, cette étape restant en amont de toute rédaction de fiche. Recherche par
+mots-clés (`harris`, `lot économique`, `EOQ`, `bullwhip`, `variabilit`, `Imhof`, `file d'attente`,
+`Erlang`, `Little`, `maintenance`, `fiabilit`) dans `corpus/validated/*.json` : aucune collision de
+concept identifiée, seulement des correspondances partielles sans rapport (`catachrese.json`,
+`nasa-tlx.json`, etc., contenant le mot « fiabilité » ou « variabilité » dans un tout autre sens).
+
+Les trois candidats francophones réservés à d'autres agents cette nuit (Guihéneuf 1956, Fiore 1987,
+De Almeida 1998) n'ont pas été rouverts ni recherchés par ce passage, conformément au mandat.
