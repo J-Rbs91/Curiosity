@@ -18,7 +18,7 @@
   ],
   "attribution_note": "Richard Bellman signe seul le rapport RAND P-651. Le paragraphe d'ouverture de sa partie III, d'où vient cette citation, ne crédite personne : il y pose lui-même la forme commune de ces problèmes. Il ne revendique pas le nom pour autant, écrivant que ces problèmes sont « occasionnellement appelés » problèmes de lissage, sans dire par qui, et il crédite nommément chaque cas qu'il expose ensuite.",
   "hook": "Manquer ou avoir trop : les deux écarts coûtent-ils la même chose ?",
-  "summary": "Un système tenu dans un état visé coûte dès qu'il s'en écarte, et les deux sens ne se paient pas pareil : demande non servie d'un côté, capital immobilisé de l'autre.",
+  "summary": "Un système tenu dans un état visé coûte dès qu'il s'en écarte, et les deux sens ne se paient pas toujours pareil : demande non servie, capital immobilisé.",
   "quotation": {
     "text": "[…] nous avons un type de pénalité pour le dépassement des besoins, et un autre type de pénalité pour l'incapacité à les satisfaire.",
     "reference": "Richard Bellman, Mathematical Aspects of Scheduling Theory, RAND Corporation, rapport P-651, révisé le 23 mai 1955.",
@@ -28,7 +28,7 @@
     "original_language": "en",
     "translation": {
       "kind": "in-house",
-      "translator": "Traduction interne non publiée (chaîne Curiosity, session du 6 septembre 2026). Aucune traduction française publiée du rapport RAND P-651 n'a été identifiée, ce rapport étant une pièce de littérature grise jamais rééditée. La coupe initiale, signalée par les crochets, retire « In some cases, the penalty is the same regardless of the direction of deviation », qui pose le cas symétrique ; elle ne retourne pas le sens, elle laisse le cas dissymétrique, qui est celui de la carte, et l'anglais entier est conservé en original_text. Sans elle le français dépasse 220 caractères. « Requirements » est rendu par « besoins » et non par « exigences » : Bellman appelle la même grandeur « committments » au paragraphe suivant, et « besoins » couvre les deux emplois sans ajouter d'idée de norme. « Overshooting » est rendu par « dépassement » ; « surproduction » aurait fermé le cas du stock et celui de l'effectif, que Bellman couvre également. L'anglais fait seul foi.",
+      "translator": "Traduction interne non publiée (chaîne Curiosity, session du 6 septembre 2026). Aucune traduction française publiée du rapport RAND P-651 n'a été identifiée, ce rapport étant une pièce de littérature grise jamais rééditée. La coupe initiale, signalée par les crochets, retire « In some cases, the penalty is the same regardless of the direction of deviation; in other cases, », c'est-à-dire le cas symétrique et le connecteur qui l'oppose au second ; elle ne retourne pas le sens, elle laisse le cas dissymétrique, qui est celui de la carte, et l'anglais entier est conservé en original_text. Sans elle le français dépasse 220 caractères. « Requirements » est rendu par « besoins » et non par « exigences » : Bellman appelle la même grandeur « committments » au paragraphe suivant, et « besoins » couvre les deux emplois sans ajouter d'idée de norme. « Overshooting » est rendu par « dépassement » ; « surproduction » aurait fermé le cas du stock et celui de l'effectif, que Bellman couvre également. L'anglais fait seul foi.",
       "edition": null
     }
   },
@@ -46,10 +46,11 @@
     "reviewer": null,
     "date": null,
     "verdict": "PENDING",
-    "rounds": 0,
+    "rounds": 1,
     "notes": []
   },
   "notes": [
+    "Tour 1 du contrôle aveugle, 6 septembre 2026 : renvoi sur la prose. Le résumé affirmait sans restriction que les deux sens ne se paient pas pareil, là où Bellman pose deux cas, dont le premier est symétrique, « In some cases, the penalty is the same regardless of the direction of deviation » (folio 38). Le mot « toujours » y a été porté. Le contrôleur proposait en outre de rétablir le connecteur dans la citation française, « […] dans d'autres cas, nous avons un type de pénalité pour le dépassement des besoins, et un autre type de pénalité pour l'incapacité à les satisfaire. » : mesurée, cette phrase fait 151 caractères pour 150 au plus, elle n'a donc pas été prise. La restriction est portée par le résumé faute de tenir dans la citation, et la note de traduction dit désormais que la coupe emporte aussi le connecteur.",
     "L'état visé que porte le résumé est la phrase qui précède immédiatement la citation, p. 38 : « The general problem has the following character: we wish to maintain a system in a given state, with penalties for deviations from this state. » Trois choses sont énoncées et pas une de plus : il y a un état visé, s'en écarter coûte, et le coût des deux écarts n'est pas nécessairement le même. Bellman ne dit ni comment se fixe l'état visé, ni ce que vaut la pénalité, ni quelle politique minimise le total.",
     "Les deux monnaies nommées par le résumé viennent de la seconde énonciation de la dissymétrie, p. 42 : « Here is a case where we have one type of penalty for being unable to supply the demand and different penalty for being overstocked. This last penalty may be expressed in terms of frozen assets, in storage cost, etc. » Elles sont donc tirées du cas du stock, que Bellman expose là ; il ajoute même page que « Different penalties are levied in different fields of activity », c'est-à-dire que la pénalité n'est pas une constante physique mais une donnée du métier.",
     "Ce que Bellman ne fait pas dans cette partie, et qu'une carte ne doit pas lui prêter : il ne résout rien. Chaque paragraphe pose un problème et renvoie la solution à un tiers ou à un travail annexe. Le rapport est un relevé de problèmes ouverts, et son propre résumé le dit, « to formulate a number of significant mathematical problems which have arisen in connection with the theory of scheduling ».",
