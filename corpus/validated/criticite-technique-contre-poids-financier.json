@@ -2,7 +2,7 @@
   "$schema": "../schema/carte.schema.json",
   "id": "criticite-technique-contre-poids-financier",
   "slug": "criticite-technique-contre-poids-financier",
-  "status": "CANDIDATE",
+  "status": "VALIDATED",
   "title": "La valeur d'un article n'est pas sa criticité",
   "themes": [
     "produire-et-stocker"
@@ -58,14 +58,23 @@
     "Provenance d'un fait affiché, établie hors mandat par le contrôle du 7 septembre 2026 : la mention « numéro thématique Économie de l'entreprise », qui figure dans la référence de la citation, a été vérifiée sur la couverture imprimée du fascicule. Aucune métadonnée de Persée ne la porte. Elle est exacte, et elle vient de la couverture, pas de la notice."
   ],
   "review": {
-    "reviewer": null,
-    "date": null,
-    "attribution": "non-verifiee",
-    "quotation": "non-verifiee",
-    "sources": "non-verifiees",
-    "prose": "non-verifiee",
-    "verdict": "PENDING",
-    "rounds": 0,
-    "notes": []
+    "reviewer": "contrôle aveugle",
+    "date": "2026-09-07",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "Images de page lues sur Persée (jamais la couche OCR), motif d'URL relevé sur la notice : _T1_, dérivé _1500 (le _1000 n'a pas été tenté, signalé hors service). Pages ouvertes : https://www.persee.fr/renderPage/reco_0035-2764_1956_num_7_1_407156/reco_0035-2764_1956_num_7_1_T1_0068_0000_1500.jpg (p. 68), ..._T1_0077_0000_1500.jpg, ..._T1_0078_0000_1500.jpg, ..._T1_0079_0000_1500.jpg, ..._T1_0080_0000_1500.jpg, ..._T1_0091_0000_1500.jpg. La p. 79 a été recadrée et agrandie ×2 pour la relecture mot à mot du passage cité.",
+      "CITATION — verbatim. P. 79, dernier paragraphe avant le titre de section, l'imprimé porte : « Cependant, il convient d'observer que si financièrement le groupe A est le plus important, techniquement certains articles des groupes B et C peuvent se révéler d'une importance stratégique fondamentale : une rupture du stock de boulons d'un certain type peut bloquer toute une chaîne de production. » La fiche cite la portion après le deux-points, sans coupe interne ni modification ; français d'origine, aucune traduction à déclarer.",
+      "LOCALISATEUR — la section annoncée est la bonne, établie sur les images. P. 77 : le titre « 2° Le coût des stocks » ouvre en milieu de page, puis « 3° Le coût de passation des commandes » ouvre en bas de la même page. P. 78 : aucun titre de section (le texte de la section 3° court sans interruption, jusqu'aux exemples chiffrés puis à l'exposé de la méthode). P. 79 : la section 3° se poursuit (groupes A, B, C ; « Dans ces conditions... » ; le paragraphe cité ; deux paragraphes de transition) et se clôt sur « ... quelques méthodes actuellement utilisées. » ; le titre suivant, « 4° Types de techniques de gestion des stocks (21) », s'ouvre à environ mi-page. Le passage cité appartient donc bien à la fin de la section 3°, comme l'annonce la fiche.",
+      "ATTRIBUTION — confirmée, et la fiche ne prête à Guihéneuf que ce qui est de lui. Vérifié sur l'imprimé : la constatation qui fonde la méthode est donnée pour l'acquis d'autrui, p. 78 — « Les experts américains, par exemple, sont arrivés à cette conclusion que la plus grande partie de la valeur du stock se concentre sur un très petit nombre d'articles clés. A. Rambaux cite quatre exemples relevés dans des firmes différentes (20) », note 20 renvoyant à « A. RAMBAUX, “Aspect psychologique, organisation et méthodes des services d'achat et de gestion des stocks aux U.S.A.”, Travail et méthodes, mai 1955 ». La méthode elle-même est présentée comme reçue : « C'est à partir de cette constatation que fut élaborée la méthode de management by exception (méthode dite parfois A.B.C.) ». L'objection de la p. 79, en revanche, ne porte aucun appel de note et est formulée à la première personne éditoriale (« il convient d'observer que... »), contre la conclusion qu'il vient de tirer de sa source. Signature unique au pied de la p. 91 : « ROBERT GUIHENEUF » (l'imprimé, capitales, ne porte pas l'accent). Aucune trace, dans l'article, d'un tiers auquel cette objection serait rapportée.",
+      "SOURCES — la référence résout vers ce qu'elle annonce. DOI 10.3406/reco.1956.407156 interrogé sur api.crossref.org : titre « Remarques sur la gestion des stocks dans l'entreprise », auteur unique Robert Guihéneuf, Revue économique, volume 7, n° 1, 1956, pages 68-91, langue fr — tous les champs de la fiche concordent. L'URL Persée https://www.persee.fr/doc/reco_0035-2764_1956_num_7_1_407156 répond 200 et affiche cette notice, qui mentionne « Fait partie d'un numéro thématique : Economie de l'entreprise » (l'imprimé/Persée écrit « Economie » sans accent, la fiche « Économie » : normalisation orthographique, pas un écart de référence). Le sommaire du fascicule (https://www.persee.fr/issue/reco_0035-2764_1956_num_7_1) confirme la pagination et le thème. Le locator « p. 78-79 » de la source correspond bien à l'exposé de la méthode et à l'objection.",
+      "PROSE — fidèle, contrôlée mot à mot contre la p. 79. « laisse en gestion souple » traduit exactement « Pour les groupes B et C, les méthodes peuvent être plus souples », précédé de « une gestion rigoureuse du groupe A est seule requise ». « négligeables financièrement mais décisifs techniquement » traduit « si financièrement le groupe A est le plus important, techniquement certains articles des groupes B et C peuvent se révéler d'une importance stratégique fondamentale », adossé au tableau de la même page (groupe C : 69 % des articles pour 4 % de la valeur) et, p. 78, à « Il serait inopportun de les faire apparaître pour des articles qui n'en valent pas la peine ». « les deux hiérarchies ne coïncident pas » ne fait que reprendre l'opposition que l'imprimé souligne lui-même en italiques (financièrement / techniquement). Le hook, interrogatif, n'ajoute rien : le tri est bien fait sur la « valeur totale d'investissement ». Aucun adjectif du résumé n'excède le texte à l'endroit annoncé.",
+      "Ce que je n'ai pas pu atteindre, avec la tentative : le serveur MCP documentary n'était pas exposé (aucun outil mcp__documentary__*), la vérification du DOI a donc été faite directement sur api.crossref.org, qui a répondu 200. La couche texte de Persée n'a pas été utilisable et n'en avait pas besoin : docAsTxt/reco_0035-2764_1956_num_7_1_407156 répond 404 (dix tentatives, dont trois coupées par le proxy), et le texte OCR incorporé à la notice de l'article sert en réalité l'article voisin de P.W.S. Andrews, « Quelques limites économiques à la dimension et à la croissance des entreprises individuelles », p. 39-67 du même fascicule (on y lit « 54 REVUE ÉCONOMIQUE » et « IV. LE TYPE DE RÉPARTITION DE LA PRODUCTION »). Toutes les conclusions ci-dessus reposent sur les images de page.",
+      "Hors mandat, sans effet sur le verdict : (1) l'imprimé de la p. 78 annonce « quatre exemples » de Rambaux mais n'en imprime que trois (Premier, Deuxième, Troisième cas) — coquille propre à l'article, à ne pas corriger si le passage devait être transcrit ; (2) l'article renvoie la note 21 à Dvoretzky, Kiefer et Wolfowitz et à « K. Arrow, F. Harris, J. Marschack » (Econometrica, juillet 1951) : le prénom d'Arrow, l'initiale de Harris et la graphie « Marschack » sont fautifs dans l'imprimé, mais aucun de ces noms n'est repris par la fiche."
+    ]
   }
 }

@@ -640,6 +640,19 @@ n'ont reçu aucune requête ciblée (files d'attente pour le service, maintenanc
 sens de l'ingénieur, conception des systèmes de service, variabilité propagée le long d'une
 chaîne).
 
+## Reprise courte laissée par la réception du 7 septembre 2026, sur `operations-management`
+
+**Rattachement contesté, non refusé, et il reste écrit ici plutôt que tranché.** Les deux
+cartes de tolérance de Shewhart, `tolerance-economique-suppose-le-controle` et
+`tolerances-qui-ne-s-additionnent-pas`, entrent sous `variation-et-controle` par son titre,
+« Ce qu'un procédé fait varier », qui les porte sans faute. Sa description, elle, reste limitée
+au partage entre causes de hasard et causes assignables et au critère qui tranche entre elles :
+elle ne couvre pas le dimensionnement d'une limite sur du variable, qui est l'objet propre de
+ces deux cartes. Les deux fiches le signalent elles-mêmes dans leurs `notes`. La description du
+thème n'a pas été réécrite à la réception — ce n'est pas un fichier que la réception touche —,
+et elle gagnerait à être élargie si ces deux cartes restent seules à porter cet aspect du thème.
+**À trancher par un passage ultérieur.**
+
 ## Les reprises courtes de `decision-science`, et ce que `systems-thinking` a rendu
 
 **Les trois reprises de `systems-thinking` sont closes, le 5 septembre 2026, au passage 13.** Deux

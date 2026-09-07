@@ -2,7 +2,7 @@
   "$schema": "../schema/carte.schema.json",
   "id": "cout-de-remonter-l-effectif",
   "slug": "cout-de-remonter-l-effectif",
-  "status": "CANDIDATE",
+  "status": "VALIDATED",
   "title": "Le coût de remonter l'effectif",
   "themes": [
     "produire-et-stocker"
@@ -74,14 +74,26 @@
     "Aucune source secondaire n'a été ouverte : l'avertissement du validateur est le compte rendu exact du dossier. Les deux sources non ouvertes affichées ne sont pas des commentaires : la première est la version en revue du même texte, dont on ne sait pas si elle porte la partie III sous la même forme ni avec la même pagination, la seconde est l'article où se trouve la solution du problème que ce paragraphe se contente de poser. Ni l'une ni l'autre n'a été lue."
   ],
   "review": {
-    "reviewer": null,
-    "date": null,
-    "attribution": "non-verifiee",
-    "quotation": "non-verifiee",
-    "sources": "non-verifiees",
-    "prose": "non-verifiee",
-    "verdict": "PENDING",
-    "rounds": 0,
-    "notes": []
+    "reviewer": "contrôle aveugle",
+    "date": "2026-09-07",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "Ouvert les images de page (sans suffixe de dérivé) de https://archive.org/details/DTIC_AD0604647 : page/n0.jpg, n41, n42, n43, n64, n65, n70, n71, n73. La couverture imprimée porte « MATHEMATICAL ASPECTS / OF SCHEDULING THEORY / by / Richard Bellman / P-651 / Revised 23 May 1955 » et « The RAND Corporation, 1700 Main St, Santa Monica ». Nom seul, sans co-signataire : l'affirmation de signature unique de la fiche est vérifiée sur l'image. La couche OCR de cet item lit « Revised 23 May 1965 » ; c'est la couche qui ment, la couverture fait foi, et la fiche a la bonne date.",
+      "Folios contrôlés sur l'en-tête imprimé de chaque feuillet, jamais par calcul : n41 porte « P-651 / -38- », n42 « P-651 / -39- », n43 « P-651 / -40- », n65 « P-651 / -62- », n70 « P-651 / -67- », n71 « P-651 / -68- », n73 « P-651 / -70- ». Le dernier folio imprimé est bien 70, ce qui confirme la pagination « 70 p. » de la source 1.",
+      "CITATION relue sur l'image de n42.jpg (feuillet portant l'en-tête imprimé « -39- »), pas sur l'OCR. Le paragraphe s'y lit : « If x(t) exceeds r(t), we consider ourselves to be losing an amount of money in excess wages proportional to (x(t)-r(t))dt over the interval (t,t+dt).  However, if we decrease x(t) to the level of r(t), we are faced with the prospect of having possibly to increase x(t) if r(t) increases.  This cannot be done without cost, and we shall take the cost of doing this proportional to dx/dt. » Le champ original_text de la fiche reproduit ce texte mot pour mot, à l'endroit annoncé (p. 39, partie III, § 2).",
+      "TRADUCTION contrôlée contre l'original. Les deux coupes sont réelles et marquées : en tête l'adverbe « However », en queue « and we shall take the cost of doing this proportional to dx/dt ». « Decrease x(t) to the level of r(t) » → « abaissons x(t) au niveau de r(t) » : au plus près. « We are faced with the prospect of having possibly to increase x(t) » → « nous nous exposons à devoir l'augmenter » : compression d'une éventualité marquée deux fois en anglais en une seule en français, et pronominalisation de x(t) ; c'est une préférence d'usage, pas un renversement de sens. « This cannot be done without cost » → « Cela ne peut se faire sans coût » : littéral, litote conservée. Aucun choix de mot n'inverse le sens. La traduction est déclarée comme interne et non publiée ; je n'ai trouvé aucune traduction française publiée du P-651 ni de sa version de 1956.",
+      "ATTRIBUTION, point du « poser sans résoudre » : vérifié sur les images. Sur n41 (p. 38) la partie III s'ouvre sans renvoi bibliographique, § 1 « Preliminaries » puis § 2 « An Industrial Smoothing Problem », où Bellman pose « a staff of employees capable of turning out a certain quantity of work x(t) ». Sur n43 (p. 40) il écrit « The solution turns out to have a quite simple form, see [4] » puis, pour le cas discret, « The solution to this problem is similar to that given for the continuous version, see Karlin [8] ». La bibliographie de la partie III, lue sur n70 (p. 67), donne [3] « R. Bellman, I. Glicksberg and O. Gross, The Theory of Dynamic Programming as Applied to a Smoothing Problem, J. Soc. Indust. Appl. Math., Vol. 2 (1954), pp. 82-88 », [4] les mêmes auteurs (tiret de reprise), « On Some Mathematical Problems Arising in the Theory of Optimal Inventory and Stock Control », (to appear), et [8] « S. Karlin, A Discrete Smoothing Problem », (to appear). La fiche dit donc exactement ce que le texte laisse à Bellman en propre (la position du modèle et l'asymétrie) et ce qu'il renvoie à d'autres : la solution continue à un article co-signé avec Glicksberg et Gross, la version discrète à Karlin. Précision hors enjeu : le renvoi de la p. 40 pointe [4] (le mémoire inventaire/stock control, RAND P-580 d'après la bibliographie de la partie V lue sur n71), non [3] que la fiche affiche en source ; les deux sont du même trio, l'énoncé de la fiche reste exact.",
+      "Le résumé du rapport lui-même (feuillet de SUMMARY) confirme le caractère d'exposé : « The purpose of this paper is to formulate a number of significant mathematical problems which have arisen in connection with the theory of scheduling, and to discuss the methods which have been devised to treat these problems. »",
+      "SOURCES. (1) L'URL Internet Archive résout vers l'item annoncé et le locator p. 38-40, partie III, § 1 et 2, correspond aux trois feuillets contrôlés. (2) DOI 10.1137/0104010 interrogé sur api.crossref.org : Richard Bellman, « Mathematical Aspects of Scheduling Theory », Journal of the Society for Industrial and Applied Mathematics, vol. 4, n° 3, publié 1956-09, p. 168-205 — identique à la fiche. (3) DOI 10.1137/0102007 : R. Bellman, I. Glicksberg, O. Gross, vol. 2, n° 2, 1954-06, p. 82-88 — identique à la fiche, y compris l'ordre des trois auteurs.",
+      "PROSE. L'accroche « Pourquoi suivre la demande au plus juste peut-il coûter plus cher ? » ne dit rien de plus que la p. 39 : c'est bien l'ajustement de x(t) au niveau de r(t) qui expose au coût de remontée. Le modal « peut-il » évite toute affirmation que le texte ne porterait pas. Le résumé énonce trois choses, toutes trois sur la p. 39 : le dépassement se paie « in excess wages », la remontée se paie proportionnellement à max(dx/dt, 0), et « Assuming that it costs us nothing to decrease x(t) » — d'où « dans son modèle, redescendre ne coûte rien », avec le « dans son modèle » qui borne correctement l'affirmation à l'hypothèse posée. Le verbe « pose » est juste et n'attribue pas la résolution. Aucun adjectif ne déborde.",
+      "Ce que je n'ai pas atteint, après tentative réelle : epubs.siam.org/doi/10.1137/0104010 et /10.1137/0102007 rendent tous deux un HTTP 403 ; api.unpaywall.org donne is_oa=false et oa_status=closed pour les deux, sans dépôt. Le plein texte des deux articles de revue m'est donc resté fermé — ce qui correspond exactement au « consulted: metadata-only » déclaré par la fiche, et n'affaiblit rien : la citation et le locator portent sur le P-651, que j'ai ouvert en images.",
+      "Incident technique à signaler, sans effet sur le verdict : le fichier DTIC_AD0604647_djvu.xml servi par le nœud ia902802 avait un md5 (d24e8e09ba1cd9a2b99debd2830d0931) et une taille (7,3 Mo, 494+ feuillets, un tout autre ouvrage) ne correspondant pas au manifeste de l'item (4adad0562787c284f0bd89c6f5184cee, 1,2 Mo). Le djvu.txt, lui, a le md5 attendu (b6173b0f66d10e59c8372fd5407c563a). Toutes mes conclusions reposent sur les images de page et sur les folios imprimés, pas sur ce XML.",
+      "Le serveur MCP documentary n'était pas exposé ; les deux DOI ont été résolus directement via Crossref et Unpaywall, qui répondaient."
+    ]
   }
 }

@@ -2,7 +2,7 @@
   "$schema": "../schema/carte.schema.json",
   "id": "fiabilite-fixee-par-la-conception",
   "slug": "fiabilite-fixee-par-la-conception",
-  "status": "CANDIDATE",
+  "status": "VALIDATED",
   "title": "La fiabilité se fixe à la conception",
   "themes": [
     "fiabilite-et-disponibilite"
@@ -10,7 +10,6 @@
   "theme_labels": {
     "fiabilite-et-disponibilite": "Ce qu'on exige d'un matériel"
   },
-  "domain": "operations-management",
   "authors": [
     {
       "name": "AGREE, Task Group 1",
@@ -39,7 +38,7 @@
       "label": "Advisory Group on Reliability of Electronic Equipment, Reliability of Military Electronic Equipment, Office of the Assistant Secretary of Defense (Research and Engineering), 4 juin 1957 (DTIC AD-141476).",
       "kind": "primary",
       "locator": "p. 29-30, Task Group 1, section 1.2",
-      "doi_isbn": "DTIC AD0141476",
+      "doi_isbn": null,
       "url": "https://archive.org/details/DTIC_AD0141476",
       "consulted": "full-text"
     },
@@ -63,17 +62,29 @@
     "La couche OCR de l'item est très dégradée et elle a menti sur un fait vérifiable, en datant le rapport du Task Group 1 du « 9 January 1957 » quand l'image du feuillet n28 porte sans ambiguïté « 7 January 1957 ». Aucun mot cité ne vient de l'OCR : les citations ont été relues caractère par caractère sur les images de feuillet demandées sans suffixe.",
     "Étendue réelle de la lecture, très inférieure au volume. Le rapport du Task Group 1, feuillets n28 à n55, pages 21 à 49, a été lu en entier sur l'OCR, et quatorze feuillets ont été relus sur l'image, folio imprimé vérifié un par un. Les huit autres rapports de groupe de travail, les parties de synthèse et les appendices B à G n'ont été parcourus qu'en recherche plein texte. La mention consulted full-text porte sur l'item, ouvert sans restriction, pas sur une lecture intégrale de 375 feuillets. La correspondance folio et feuillet change en cours de volume, de 6 dans ce rapport et de 1 en fin de volume ; aucune page citée n'a été identifiée par calcul.",
     "Le rapport n'a pas de notice de catalogue trouvée : la Library of Congress, Open Library et Crossref ne le connaissent pas, et le service DTIC répond 403 depuis cette chaîne, sur la notice comme sur le PDF. La source primaire est donc citée par son numéro d'accession et par l'item Internet Archive, qui est ouvert et n'exige aucun compte. Cet item ne porte ni champ rights ni licenseurl dans ses métadonnées ; les mentions imprimées du volume, dont la vente par le Superintendent of Documents au prix de 1,75 dollar, sont des autorisations administratives de diffusion et non des licences d'éditeur. Accès public constaté, autorisation d'ayant droit non constatée.",
-    "Aucune source secondaire n'a été ouverte et aucune réception francophone n'a été cherchée : l'avertissement du validateur est le compte rendu exact du dossier, et aucune caution non lue n'a été ajoutée à sa place. La seconde source affichée n'est pas un commentaire : c'est un article du président du groupe sur les travaux de la même année, résolu par son DOI et non ouvert, qui a servi à confirmer par une voie indépendante les initiales de la signature de l'avant-propos. Rien n'est affirmé non plus sur la postérité normative de ce rapport, qui a fondé une industrie de référentiels d'essai : la carte n'entre pas par là, elle entre par la phrase de la page 30 et par la dissymétrie contractuelle qui la précède."
+    "Aucune source secondaire n'a été ouverte et aucune réception francophone n'a été cherchée : l'avertissement du validateur est le compte rendu exact du dossier, et aucune caution non lue n'a été ajoutée à sa place. La seconde source affichée n'est pas un commentaire : c'est un article du président du groupe sur les travaux de la même année, résolu par son DOI et non ouvert, qui a servi à confirmer par une voie indépendante les initiales de la signature de l'avant-propos. Rien n'est affirmé non plus sur la postérité normative de ce rapport, qui a fondé une industrie de référentiels d'essai : la carte n'entre pas par là, elle entre par la phrase de la page 30 et par la dissymétrie contractuelle qui la précède.",
+    "Correction de réception, 7 septembre 2026 : le champ doi_isbn de la source primaire portait « DTIC AD0141476 », qui est un numéro d'accession et non un DOI ni un ISBN. Deux contrôleurs indépendants l'ont relevé hors mandat, chacun sans se concerter avec l'autre, chacun précisant que l'identifiant est juste et qu'il résout, et que seul le nom du champ ne lui correspond pas. La convention déjà en usage dans le dépôt est appliquée, celle de corpus/validated/fragilite-d-un-ordonnancement-optimal.json, source primaire de la même collection dticarchive sans champ doi_isbn : celui-ci passe à null, la référence résout par son url vers https://archive.org/details/DTIC_AD0141476, et le numéro d'accession, AD 141476, est conservé ici plutôt que dans un champ qui n'est pas le sien."
   ],
   "review": {
-    "reviewer": null,
-    "date": null,
-    "attribution": "non-verifiee",
-    "quotation": "non-verifiee",
-    "sources": "non-verifiees",
-    "prose": "non-verifiee",
-    "verdict": "PENDING",
-    "rounds": 0,
-    "notes": []
+    "reviewer": "contrôle aveugle",
+    "date": "2026-09-07",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "Pièce ouverte : scan Internet Archive de DTIC AD0141476 (https://archive.org/details/DTIC_AD0141476, 375 feuillets, 300 ppi). Images demandées sans suffixe, https://archive.org/download/DTIC_AD0141476/page/n<N>.jpg, et lues à l'image ; la couche OCR n'a servi qu'à localiser les feuillets (elle rend le passage cité en bouillie : « the dealgn of .in electronic equlpneat areatvs in Irreducible failure rate »).",
+      "Correspondance folio/feuillet vérifiée sur le pied imprimé de chaque page, jamais calculée : n28 = « 21 », n29 = « 22 », n30 = « 23 », n34 = « 28 », n35 = « 29 ». Le décalage change bien en cours de volume (7 entre n30 et sa page, 6 entre n34 et la sienne). Le folio de n36 est empâté à l'image (premier chiffre à panse basse effacée), mais n36 suit immédiatement n35 (« 29 ») et enchaîne la phrase coupée « conformity with the description. » / « In the past, a manufacturer engaged… » : c'est donc la page 30. Le locator « p. 30, section 1.2 » et le locator de source « p. 29-30, Task Group 1, section 1.2 » sont exacts, le titre de section « 1.2 Importance of Specifying Reliability » étant imprimé au milieu de la p. 29.",
+      "CITATION, relue sur l'image n36 agrandie : « considered. Experience has shown that this is too late -- the design of an electronic equipment creates an irreducible failure rate which cannot be debugged from the finished machine. » Le champ original_text de la fiche est identique caractère pour caractère, double trait d'union compris. La coupe est signalée par […] et porte bien sur « Experience has shown that this is too late -- ». Traduction déclarée comme interne ; contrôlée contre l'original : « design » / « conception », « irreducible failure rate » / « taux de défaillance irréductible », « debugged » / « déverminer » (terme de métier rendu par le terme de métier français du même geste), aucun choix ne renverse le sens. Le « plus » de « ne peut plus déverminer » restitue le « too late » retranché et est déclaré comme tel.",
+      "ATTRIBUTION, sens « trop large » : la page de titre du volume (feuillet n3) porte « RELIABILITY OF MILITARY ELECTRONIC EQUIPMENT / Report by / Advisory Group on Reliability of Electronic Equipment / Office of the Assistant Secretary of Defense (Research and Engineering) / 4 June 1957 », sans aucun auteur personnel ; l'AD manuscrit sur cette même page se lit « AD. 141476 ». La page de titre interne (n28, folio 21) porte « MINIMUM ACCEPTABILITY FIGURES / Task Group 1 / 7 January 1957 » : c'est la seule mention de responsabilité qui couvre la section citée, et c'est exactement ce que la fiche affiche.",
+      "ATTRIBUTION, sens « trop étroit ou mal nommé » : l'avant-propos (n4, folio iii) est une lettre signée « J. M. Bridges / Chairman / Advisory Group on Reliability of Electronic Equipment », qui dit « This document is a consolidation of the nine task group reports and is issued at this time only for informational purposes. » — transmission, pas paternité ; la fiche a raison de ne pas porter Bridges en auteur. La seule responsabilité individuelle du rapport est en tête d'appendice (n72) : « APPENDIX F / A Simple Cost Model for Optimizing Reliability / by R. R. Carhart and G. R. Herd », qui n'est pas le texte cité. L'« Acknowledgment » (n29, folio 22) est collectif : « In submitting this report, Task Group Number One wishes to single out for mention one of its members… Dr. Richard R. Carhart » — hommage posthume, pas signature. Les rosters (n365) donnent bien un « Task Group 1 / Dr. D. H. Wagner, Chairman » avec Carhart (deceased) et G. R. Herd, mais une liste de membres et une présidence ne sont pas une déclaration d'auteur pour la section 1.2, qui n'en porte aucune.",
+      "ATTRIBUTION, contrôle inverse : le rapport n'emprunte pas la thèse citée. Le paragraphe de la p. 30 ne porte ni appel de note ni renvoi ; il énonce le constat du groupe (« Experience has shown that… »). Ce que le rapport déclare emprunter est ailleurs et sur la même page : « 2 DEFINITIONS / 2.1 General Definitions / The following definitions are taken from general reliability theory: », suivi de six entrées (a) Failure, (b) Reliability, (c) Mean life sur la p. 30, (d) Up-time, (e) Down-time, (f) Repair effort en tête de la p. 31 (n37). La fiche ne revendique pas ces définitions pour le rapport et le signale explicitement : contrôle passé dans les deux sens.",
+      "SOURCES. (1) Le libellé de la source primaire est repris mot pour mot de la page de titre, date « 4 June 1957 » comprise ; l'URL résout vers ce scan, dont la notice IA donne date 1957-06-04 et titre « DTIC AD0141476: RELIABILITY OF MILITARY ELECTRONIC EQUIPMENT ». (2) DOI 10.1109/ire-pgrqc.1957.5007140 interrogé sur api.crossref.org : rend « Progress in Reliability of Military Electronic Equipment During 1956 », auteur unique J. M. Bridges, IRE Transactions on Reliability and Quality Control, PGRQC-11, août 1957, pages 1-7 — soit exactement ce que la fiche annonce. Source déclarée « metadata-only », et c'est bien au niveau des métadonnées que je l'ai vérifiée.",
+      "PROSE. Le résumé est adossé phrase à phrase à l'imprimé des p. 29-30 : « the performance requirements have been embodied in specifications in quantitative terms, and the manufacturer had a legal obligation to meet them » porte « chiffrées et légalement dues » ; « reliability has generally been treated as an afterthought » porte « traitée après coup » ; « this is too late » porte « elle vient trop tard » ; « an irreducible failure rate » porte « un plancher de défaillance ». Le « la fiabilité non » du résumé est couvert par le contraste explicite du texte (« However, in contrast ») et par la p. 29, « the lack of quantitative specification of equipment reliability prior to development ». L'accroche ne pose que la question que la phrase citée tranche ; elle n'ajoute aucun qualificatif absent de la source.",
+      "Ce que je n'ai pas atteint. Le serveur MCP documentary n'est pas exposé dans cette session : aucun outil mcp__documentary__* disponible, donc aucune résolution DOI/ISBN par cette voie ; j'ai vérifié le DOI directement sur api.crossref.org, qui a répondu. Deux recherches web (« irreducible failure rate » + « cannot be debugged » ; AGREE + Task Group 1 + Minimum Acceptability Figures) n'ont ramené aucune source antérieure ni aucun texte revendiquant la formule avant le rapport ; c'est un silence de la recherche par moteur, pas une preuve, mais la pièce elle-même est ici le témoin décisif et je l'ai ouverte.",
+      "Hors mandat, sans effet sur le verdict : le champ doi_isbn de la source primaire contient « DTIC AD0141476 », qui est un numéro d'accession et non un DOI ni un ISBN ; l'identifiant est juste et résout, seul le nom du champ ne lui correspond pas. De même, la fiche écrit « n° PGRQC-11 » là où Crossref porte PGRQC-11 comme volume — usage courant pour cette série de l'IRE, sans conséquence sur la résolution."
+    ]
   }
 }
