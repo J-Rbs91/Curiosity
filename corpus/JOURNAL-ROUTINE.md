@@ -5,6 +5,261 @@ coup d'œil ce que la précédente a fait, sur quelle branche elle l'a laissé, 
 reprendre. **Les scripts priment sur ce fichier** : il dit ce qui a été tenté et pourquoi, ils
 disent ce qui est.
 
+## Passage 14/15 — 2026-09-07
+
+- branche      : **`claude/zen-johnson-mbwwin`, imposée par la session, pas `main`.** Elle partait exactement d'`origin/main`, à `5abcdc1`, qui porte la fusion de la pull request [#98](https://github.com/J-Rbs91/Curiosity/pull/98) du passage 13 : **le travail des passages 07 à 13 est donc bien dans `main`**, vérifié au lever par `git rev-list --left-right --count origin/main...HEAD`, qui rend `0 0`. La parade du passage 12 a été appliquée : `git fetch origin main`, une seule référence, jamais deux refspecs dans le même appel. Le travail de la nuit est poussé sur cette branche, **pull request [#99](https://github.com/J-Rbs91/Curiosity/pull/99) vers `main`, ouverte à la clôture**. **Tant qu'elle n'est pas fusionnée, la nuit suivante reprend depuis cette branche.** Aucune nuit n'a eu lieu le 6 septembre : le passage 13 date du 5, et l'écart de deux jours est un fait de calendrier, pas un travail perdu.
+- phase        : **3 (enrichissement d'un domaine), la cinquième de la routine.** Condition A fausse, `corpus:audit` n'affichant aucun domaine « en cours de constitution ». Condition B fausse, `corpus:deepen` projetant 121 approfondissements pour 121 cartes au lever et sa fin de sortie ne listant rien. **La condition C décidait, et elle décidait seule.**
+- domaine      : **`operations-management`**, et l'égalité annoncée par le passage 13 était réelle. Quatre domaines ont un enrichissement au journal, `behavioral-economics` le 2 septembre, `sociology-of-work` le 3, `work-psychology` le 4, `systems-thinking` le 5, et ils sortent de la rotation ; aucun des sept autres n'en a, donc le critère de repli s'applique et désigne **une égalité à huit cartes entre `operations-management` et `decision-science`**, que l'ordre de `src/content/taxonomy.ts` tranche en plaçant `operations-management` (ligne 126) avant `decision-science` (ligne 168). En son sein, la priorité 1 est sans objet, les deux thèmes déclarés sans carte étant en sociologie des organisations ; la priorité 2 aussi, `queue.json` ne couvrant que ce même domaine ; **la priorité 3 commande, les angles morts de `corpus/map/operations-management.scouting.md`**.
+- validées     : **8 — `etat-de-controle-statistique`, `tolerance-economique-suppose-le-controle`, `tolerances-qui-ne-s-additionnent-pas`, `cout-de-remonter-l-effectif`, `disponibilite-operationnelle`, `fiabilite-fixee-par-la-conception`, `criticite-technique-contre-poids-financier`, `stock-instrument-actif-et-non-residu`, les 8 avec citation**, toutes relues sur l'image de la page. **Cinq en `PASS` au premier tour, trois au second.** C'est le plafond du prompt, atteint exactement. **Le domaine passe de 8 à 16 cartes et de 3 à 4 thèmes**, et le corpus de 121 à **129 cartes**. **Quatre textes, quatre auteurs, et le domaine cesse d'être entièrement anglophone.**
+- en review    : 0
+- rejetées     : 0. **Quatre concepts entièrement instruits ont été écartés du lot** plutôt que rejetés, chacun avec son motif, leurs dossiers déposés au dépôt : voir la section « Quatre concepts lus, écartés, et pourquoi aucun n'est un rejet ».
+- approfondies : **8 — les huit cartes de la nuit**, la phase 3 se terminant par les approfondissements des cartes qu'elle vient de créer. 1 401 à 1 676 mots, aucun refus de projection, aucun avertissement de citation. `corpus:deepen` projette **129 approfondissements pour 129 cartes**, 192 306 mots, 1 491 en moyenne, **et la file est de nouveau vide à la clôture, comme elle l'était au lever**.
+- contrôles    : validate 0 erreur (132 enregistrements, 129 validés, **94 avertissements, les 7 nouveaux portant tous sur l'absence de source secondaire**) · build 129 concepts · deepen 129/129 · `git diff --exit-code src/content/generated/` propre après reprojection, **projection vérifiée idempotente sur deux exécutions successives** · test 482/0 · lint 0 · audit : `Operations Management` passe de **3 thèmes / 8 validés** à **4 thèmes / 16 validés / 0 en cours**, et la liste des thèmes sans fiche validée reste à deux, `autorite-domination` et `apprentissage-organisationnel`. Rien à drainer dans `src/content/fixtures/concepts.fixture.ts` : `corpus:build` n'a listé aucune entrée caduque.
+- commit       : voir la pull request de la nuit ; les commits sont un par étape de la chaîne, du balayage à la consignation.
+- bloqué par   : **le serveur MCP `documentary`, en échec de connexion (`CONNECTION_CLOSED`) pour la neuvième nuit consécutive**, constat fait par le harnais au lever et non sur la foi du journal. **Second blocage, de dispositif, identique à celui des passages 10 à 13** : `Task` n'est pas exposé à `corpus-orchestrator`, donc **la session a orchestré elle-même**, lançant les vingt-deux sous-agents `corpus-*` un par un par l'outil `Agent` du harnais, sans produire elle-même aucune connaissance. **Cinq nuits de suite : c'est l'état du dispositif, pas un accident**, et la nuit suivante n'a pas à le rediagnostiquer. **Troisième blocage, d'accès, constaté sur pièce** : `lccn.loc.gov` répond **500** sur `/mods`, `/marcxml` et `/dc`, ce qui est nouveau et a coûté une parade (voir plus bas) ; Cairn répond `403` derrière DataDome ; HathiTrust `403` ; `apps.dtic.mil` `403` sur la citation comme sur le PDF ; OpenAlex « Insufficient budget » ; Semantic Scholar `429` ; le PDF complet `docAsPDF` de Persée `403` derrière altcha ; l'API plein texte d'Internet Archive refusée par le proxy sortant (`CONNECT 502`) ; SIAM `403` sur ses deux DOI. Aucun n'a été contourné.
+- la nuit suivante prend : **phase 3, et `decision-science`.** Les conditions A et B resteront fausses. Cinq domaines ont désormais un enrichissement au journal, `behavioral-economics` le 2 septembre, `sociology-of-work` le 3, `work-psychology` le 4, `systems-thinking` le 5, `operations-management` le 7, et ils sortent de la rotation ; aucun des six autres n'en a, donc le critère de repli s'applique et **désigne `decision-science`, seul à huit cartes**, contre neuf pour `theorie-de-la-mesure`, dix pour la sociologie des organisations et douze pour la cybernétique. **Il n'y a pas d'égalité à trancher cette fois.** En son sein, les priorités 1 et 2 restent sans objet pour la même raison que cette nuit, et **la priorité 3 commande : les angles morts de `corpus/map/decision-science.scouting.md`**, dont `RESTE-A-FAIRE.md` tient déjà la liste sous « Deux textes ouverts et déjà lus, laissés par le lot du 23 août », **deux entrées dont le texte a été ouvert et lu** et qui n'attendent que d'être cardées. La nuit se terminera par les approfondissements des cartes qu'elle aura créées.
+
+### Ce que cette nuit a établi, en une phrase
+
+La cinquième nuit de phase 3 double le domaine qu'elle prend, de huit cartes à seize, **et
+elle lui donne son premier texte francophone et son premier point d'entrée sur la fiabilité**,
+deux manques que sa cartographie déclarait depuis son ouverture sans que personne y aille.
+
+### La fiche qui attendait depuis treize jours, et ce qui l'a débloquée
+
+`etat-de-controle-statistique` était écrite, contrôlée et reçue `PASS` **le 25 août**. Elle
+n'était retenue par aucun défaut : le plafond de volume de son lot était de huit et neuf cartes
+avaient été reçues. Son contrôleur avait nommé, à l'époque, ce qui la rendrait meilleure :
+**son titre porte un syntagme que les deux pages qui la fondent n'emploient pas.** La page 6
+écrit « controlled », la page 34 « objective state of control », et l'expression consacrée se
+lit page 146, dans une partie que personne n'avait dépouillée.
+
+**La partie III a été ouverte cette nuit, et la page 146 porte bien le syntagme**, au chapitre XI
+« Statistical Control », section 1 : « For this reason it is desirable to attain the state of
+statistical control in which the natural law of large numbers makes prediction possible. » La
+citation de la carte est remontée de la page 6 à la page 146, son localisateur couvre désormais
+les trois pages, et la phrase de sa note d'attribution qui renvoyait à la page 146 **a perdu son
+objet et a été retirée**. C'est le geste que le §3 du workflow appelle combler le trou plutôt que
+changer l'étiquette, et il a rendu en prime un second concept, écarté pour une autre raison.
+
+### Deux voies neuves, et un texte qui cesse d'être hors d'atteinte
+
+**La collection `dticarchive` sert un fonds de rapports de comité, et le premier est ouvert.**
+Le rapport AGREE de 1957 sur la fiabilité des matériels électroniques militaires,
+`DTIC_AD0141476`, 375 pages, GET 200, sans drapeau de restriction, a été trouvé par une requête
+ciblée sur `archive.org/advancedsearch.php`. **Il ouvre le point d'entrée « maintenance et
+fiabilité au sens de l'ingénieur », que trois périmètres ouverts avaient explicitement renvoyé
+à ce domaine et qu'aucun scout n'avait jamais interrogé.**
+
+**Et les trois rapports DoD légués par la cybernétique répondent.** `DTIC_AD1046519`,
+`DTIC_ADA371943` et `DTIC_ADA341017` étaient consignés « items publics, restriction non vérifiée
+individuellement, non ouverts » depuis l'ouverture du domaine, le 24 août. Ils rendent tous les
+trois **GET 200** après suivi de la redirection HTTP vers HTTPS, et portent tous une mention
+« Approved for public release ». **L'échec constaté depuis un an était un échec de test, pas un
+échec d'accès** : personne ne les avait demandés.
+
+### L'attribution d'un rapport de comité, et c'est l'acquis de méthode de la nuit
+
+**C'est le point qui a coûté le plus de travail, et il resservira à chaque rapport collectif que
+ce dépôt rencontrera.**
+
+Le test d'entrée du domaine exige, en sa condition 2, que le travail soit rattachable à un auteur
+identifié. **Le volume AGREE y échouerait :** sa page de titre porte seulement « Report by
+Advisory Group on Reliability of Electronic Equipment », et sa seule signature est celle de
+l'avant-propos, J. M. Bridges, Chairman, qui déclare le document « a consolidation of the nine
+task group reports ». **Une lettre de transmission n'est pas une paternité.**
+
+Ce qui sauve l'attribution est la structure interne : chacun des neuf rapports de groupe porte
+**sa propre page de titre datée**, celui d'où viennent les deux cartes portant « MINIMUM
+ACCEPTABILITY FIGURES / Task Group 1 / 7 January 1957 ». **L'OCR de l'item rend cette ligne
+« 9 JuAufiiy 1997 »**, et deux lecteurs indépendants l'ont écartée sur l'image.
+
+**Le lecteur avait d'abord retenu trois personnes**, Wagner, Carhart et Herd, en déclarant que ce
+choix était sa lecture de la mise en page de la liste des membres. **Le contrôle aveugle l'a
+renversé, et il a apporté la pièce qui tranche** : le feuillet `n72` porte « APPENDIX F / A Simple
+Cost Model for Optimizing Reliability / **by R. R. Carhart and G. R. Herd** ». Le rapport nomme
+donc des personnes quand il le veut, et il ne le fait pas pour la section citée ; le rapport
+parallèle du Task Group 3 écrit d'ailleurs « This report represents the final results of the work
+of the following members and alternate members », rangeant ensemble président et représentants
+des services. **Retenir trois noms sur dix revenait à traiter une liste de membres comme une
+signature.** Les deux cartes portent désormais l'auteur corporatif `AGREE, Task Group 1`.
+
+**Et la correction a été portée à une carte que son propre contrôleur avait laissée passer.**
+`fiabilite-fixee-par-la-conception` était en `PASS`, son contrôleur n'ayant relevé le point que
+hors mandat. Elle a été corrigée avec l'autre et repassée devant un contrôleur neuf, qui l'a
+confirmée. **C'est la leçon du passage 13 appliquée dans l'autre sens : un contrôle aveugle se
+trompe aussi, et rien n'oblige à attendre qu'il se trompe deux fois.**
+
+### Le candidat le plus évident du rapport AGREE, écarté sur la pièce
+
+**La définition canonique de la fiabilité y figure**, page 30 : « Reliability: the probability of
+no failure throughout a prescribed operating period ». Une carte en serait sortie sans effort.
+
+**La ligne qui l'introduit l'interdit** : « The following definitions are taken from general
+reliability theory. » Le groupe déclare emprunter ses six définitions générales, et sa formule ne
+comporte d'ailleurs ni *stated conditions* ni *satisfactory performance*. Le lecteur l'a écartée
+de lui-même, et les deux contrôleurs ont vérifié en sens inverse que les cartes retenues ne la
+revendiquent nulle part. **Le concept le plus célèbre d'un texte n'est pas toujours de lui.**
+
+### Le premier texte francophone du domaine, et la moitié qui n'est pas de son auteur
+
+Les huit cartes du domaine étaient anglophones. **Guihéneuf 1956, sur la gestion des stocks dans
+l'entreprise, en rend deux au français**, vingt-quatre pages lues sur l'image, DOI
+`10.3406/reco.1956.407156` résolu.
+
+**Et la moitié de l'article n'est pas de lui, ce qui était le vrai risque.** Sa partie I est une
+revue de littérature ; le lot économique y est exposé sous le titre courant « La méthode de
+Whitin » ; la classification en cinq rubriques est de Lebas, la méthode A.B.C. et ses chiffres de
+A. Rambaux, les méthodes de valorisation de Bouchet et Parenteau, la solution des Forges et
+Ateliers de Meudon de Bosselut. **Guihéneuf écarte même explicitement la recherche opérationnelle
+de son propos**, en note 21, où il renvoie à « K. Arrow, F. Harris, J. Marschack, *Optimal
+inventory policy* » : c'est-à-dire, dans un texte francophone de 1956, **la trace directe des
+auteurs que ce dépôt a déjà cardés** sous `penalite-de-rupture` et `regle-de-commande-a-deux-niveaux`.
+
+Ce qui lui revient en propre a été isolé et vérifié deux fois : **l'objection** de la page 79,
+posée sans appel de note contre la source qu'il vient d'utiliser, et **la position** de la page 83,
+posée à la première personne.
+
+### Une carte qui contredit une carte déjà publiée, et pourquoi c'est une richesse
+
+`stock-instrument-actif-et-non-residu` **contredit `regle-de-commande-a-deux-niveaux`**, publiée
+dans le même thème depuis le 25 août : Guihéneuf rejette le renouvellement déclenché par une
+valeur minima fixée à l'avance, qu'il juge « trop rigide », là où Arrow, Harris et Marschak
+établissent précisément une règle de ce genre.
+
+**C'est une contradiction, pas un doublon, et elle a été rédigée comme telle** : le résumé s'ouvre
+sur « Pour Guihéneuf », pour que la carte porte une position d'auteur et non une vérité du thème.
+Le contrôleur a vérifié la nuance qui décide de tout, et elle est fine : **Guihéneuf ne rejette pas
+le principe d'un seuil**, il renvoie même favorablement au point de commande à la ligne
+précédente ; ce qu'il rejette est le déclenchement par une valeur fixée d'avance. Il a vérifié
+aussi qu'**aucun débat n'a eu lieu** : Guihéneuf ne discute nulle part Arrow, Harris et Marschak,
+qu'il cite en les mettant hors de son propos, et son argument est pratique, pas mathématique.
+**Deux auteurs, deux textes, deux réponses opposées à la même question : c'est ce que le thème
+gagne.**
+
+### Le renvoi du contrôle, et il ne portait pas sur la citation
+
+Un seul renvoi sur les huit portait sur autre chose qu'une attribution, et **son motif n'était
+pas cosmétique**. La citation de `criticite-technique-contre-poids-financier` était verbatim et
+sans coupe, mais **le localisateur annonçait la mauvaise section** : le titre « 4° Types de
+techniques de gestion des stocks » ne vient qu'aux deux tiers de la page 79, après le passage
+cité, qui appartient à la section 3°. **L'objection vise la classification A.B.C., exposée en 3°
+et non en 4°** : un renvoi à la mauvaise subdivision fait viser à une objection autre chose que
+ce qu'elle vise. Le contrôleur du tour 2 a rétabli lui-même, sur l'image, où commence et finit
+chaque section numérotée de la page.
+
+### Ce que deux contrôleurs ont relevé hors mandat, et qui est devenu une correction due
+
+**Le champ `doi_isbn` des deux sources AGREE portait `DTIC AD0141476`**, qui est un numéro
+d'accession et non un DOI ni un ISBN. Les deux contrôleurs l'ont noté chacun de son côté, en
+précisant l'un et l'autre que l'identifiant est juste et qu'il résout, et que seul le nom du champ
+ne lui correspond pas. **Relevé deux fois par deux lecteurs qui ne se sont pas parlé, c'est une
+correction due**, et c'est le même mouvement que le crédit de numérisation du passage 13.
+
+**La convention du dépôt existait déjà et se lisait sur pièce** :
+`corpus/validated/fragilite-d-un-ordonnancement-optimal.json` porte une source de la même
+collection **sans aucun `doi_isbn`**, résolue par son seul `url`. Elle a été appliquée, le numéro
+d'accession portant aux `notes`, et la règle du dépôt reste satisfaite, une référence devant
+résoudre par DOI, ISBN **ou URL**.
+
+### Un désaccord entre deux contrôles, conservé et non tranché
+
+Deux contrôleurs ont examiné la mention « numéro thématique *Économie de l'entreprise* » portée
+par une référence, et **ils ne concluent pas pareil**. L'un l'a vue **sur la couverture imprimée
+du fascicule**, sous le titre de la revue. L'autre ne l'a pas trouvée en page 1, où ces mêmes mots
+titrent l'article de Jane Aubert-Krier, et juge la glose « juste en substance » sans être un
+intitulé imprimé qu'il ait pu voir.
+
+**Les deux lectures portent sur deux objets différents et aucune ne réfute l'autre.** Le désaccord
+est écrit dans les `notes` de la carte, avec les deux constats et leur objet, plutôt que tranché
+par la réception. Un passage ultérieur rouvrira la couverture s'il le juge utile.
+
+### Quatre concepts lus, écartés, et pourquoi aucun n'est un rejet
+
+Douze concepts ont été instruits pour un plafond de huit. **Les quatre écartés le sont chacun pour
+un motif écrit, et leurs dossiers de lecture sont au dépôt** : ce sont les reprises les moins
+chères du prochain passage sur ce domaine.
+
+- **`carte-de-controle`** (Shewhart, ch. XIX et XX). **Son propre lecteur refuse d'établir
+  l'attribution** : l'objet graphique est construit et nommé page 290, mais Shewhart ne le
+  revendique nulle part et ne l'attribue à personne, présentant ses critères par un passif,
+  « criteria which have been found to work successfully », exactement la figure de style déjà
+  relevée pour « assignable ». L'index des noms ne renvoie à rien d'utile, et le mémorandum de
+  1924 n'a pas été ouvert. **Une carte qui porterait la carte de contrôle au crédit de Shewhart
+  sur cette seule foi serait une attribution non établie.**
+- **`controle-maximum`** (Shewhart, ch. XII). Écarté pour **risque de doublon de fond**, et non
+  pour un défaut : sa définition de l'état où les fluctuations viennent d'un système constant de
+  causes de hasard côtoie `etat-de-controle-statistique`, et sa limite économique côtoie
+  `trois-sigmas-arbitrage-de-cout`, déjà publiée. **Le risque n'est jamais le doublon
+  d'identifiant, que le validateur refuse, mais le doublon de fond sous un autre nom.** Il demande
+  une lecture qui compare les trois, et elle n'a pas été faite.
+- **`limitation-de-l-expansion`** (Bellman, partie III § 4). **Déclaré le plus mince par son propre
+  lecteur** : huit lignes, aucun résultat, développement renvoyé à un travail inédit. Sa réserve
+  dit que s'il paraît trop court, il doit être versé au premier concept plutôt que gonflé.
+- **`stock-ne-de-la-disparite-des-rythmes`** (Guihéneuf, p. 75). Le verbatim est sûr, mais
+  **Guihéneuf rattache lui-même l'idée au principe d'accélération d'Aftalion** et renvoie à Barre
+  et à Massé. L'attribution se tranche avant le contrôle quand elle est déjà connue.
+
+### Trois reprises annoncées, trois réponses, dont deux négatives
+
+`RESTE-A-FAIRE.md` portait pour ce domaine des reprises nommées. Elles sont closes, et **deux le
+sont négativement, ce qui est un résultat et non un échec** :
+
+- **Shewhart, parties V et VI**, « surtout limites de contrôle contre limites de tolérance » : la
+  reprise a rendu ce qu'elle promettait, et deux cartes en viennent.
+- **Bellman, partie III**, annoncée pour « lissage industriel, problème du traiteur, stock
+  optimal ». **Deux des trois objets ne sont pas de Bellman**, et son propre texte le dit : le
+  problème du traiteur est reproduit entre guillemets « in the form given by W. Jacobs », et le
+  stock optimal est renvoyé à Arrow, Harris et Marschak, « The problem was first formulated by »,
+  c'est-à-dire au contenu même de `penalite-de-rupture`, déjà publiée. **La reprise annonçait
+  trois gisements, il y en avait un.** La pagination était fausse en prime : la partie III court
+  des folios 38 à 44, non 37 à 48, la table des matières du rapport étant décalée d'une unité.
+- **Fiore 1987, « trouver le DOI »** : **il n'existe pas**, et c'est établi à trois niveaux, une
+  recherche bibliographique Crossref, une requête Crossref au niveau de l'ISSN qui rend zéro pour
+  la revue entière, et l'absence de toute chaîne « doi » sur la page Persée, contrastée avec la
+  page de Guihéneuf qui en porte une. **C'est le même constat que pour Lesourne 1985 au passage
+  13**, et il commence à faire règle : les pièces non-article d'un volume Persée sont souvent
+  exactement celles sans dépôt DOI.
+
+### Ce que le balayage a vérifié fermé, et il faut le savoir avant d'y retourner
+
+Trois textes que la culture du champ désigne comme fondateurs sont **vérifiés fermés**, chacun
+par Unpaywall et non par supposition : **Little 1961** et sa formule (`10.1287/opre.9.3.383`),
+**les rééditions de la formule de Harris** (`10.1287/opre.38.6.947`,
+`10.1016/j.ijpe.2014.07.003`), et **Lee, Padmanabhan et Whang 1997** sur l'amplification le long
+d'une chaîne (`10.1287/mnsc.43.4.546`). Des copies circulent sur des agrégateurs, **elles ont été
+rejetées comme illégitimes**. Ces trois pistes ne sont pas des angles morts à rouvrir : ce sont
+des portes fermées, et le budget d'un passage ultérieur ne doit pas y retourner sans voie neuve.
+
+### Trois faits d'accès à porter, relevés en passant
+
+- **`lccn.loc.gov` est tombé cette nuit**, et c'est nouveau : `/mods`, `/marcxml` et `/dc` rendent
+  tous trois un HTTP 500, même page d'erreur au même octet. **La parade a été trouvée et vérifiée
+  par trois agents indépendants** : `openlibrary.org/api/books?bibkeys=LCCN:<numéro>` rend une
+  notice dérivée du MARC de la Library of Congress, à déclarer comme provenance dérivée et non
+  comme l'export MODS lui-même.
+- **La correspondance folio/feuillet d'un scan change en cours de volume sans rien signaler.**
+  Sur l'exemplaire Shewhart, elle vaut `+11` à la page 6 et `+13` à partir de la partie III, le
+  saut se produisant quelque part entre les pages 34 et 144. Sur le rapport AGREE, elle vaut `-6`
+  dans le rapport du groupe 1 et `-1` en fin de volume. **La règle qui en sort est unique et elle
+  a fonctionné huit fois cette nuit : chaque page citée s'identifie sur son propre en-tête ou son
+  propre pied imprimé, jamais par un calcul.**
+- **Le scratchpad est partagé entre agents lancés en parallèle.** Un lecteur a vu son fichier de
+  travail déposé à la racine **écrasé en cours de session** par le fichier d'un autre ouvrage, et
+  a tout refait dans un sous-répertoire nommé. **Un agent qui lit un fichier posé à la racine du
+  scratchpad peut lire les données d'un autre**, et un lot parallèle doit donc nommer ses
+  répertoires.
+
+### Le garde de projection s'est déclenché une seconde fois, sur le même cas
+
+**Le `git diff --exit-code src/content/generated/` de la clôture a de nouveau attrapé une
+projection en retard d'un enregistrement maître**, cinq mots d'écart, parce qu'un
+`corpus-deepener` a rendu après que la projection eut été calculée. C'est exactement l'incident du
+passage 12, et **la parade qu'il avait écrite a fonctionné** : le diff ne se lance pas une fois,
+il se relance après que le dernier agent a rendu, et la projection se vérifie idempotente en la
+rejouant deux fois. La seconde exécution ne bouge plus. **Un défaut qui se reproduit à l'identique
+avec sa parade déjà écrite n'est plus un incident, c'est une étape de la clôture.**
+
 ## Passage 13/15 — 2026-09-05
 
 - branche      : **`claude/zen-johnson-cwir6d`, imposée par la session, pas `main`.** Elle partait exactement d'`origin/main`, à `5ef1acc`, qui porte la pull request [#97](https://github.com/J-Rbs91/Curiosity/pull/97) du passage 12 : **le travail des passages 07 à 12 est donc bien dans `main`**, vérifié par `git rev-list --left-right --count`, qui rend `0 0` au lever. Le travail de la nuit est poussé sur cette branche, **pull request [#98](https://github.com/J-Rbs91/Curiosity/pull/98) vers `main`, ouverte à la clôture, vingt-neuf commits, un par étape de la chaîne**. **Tant qu'elle n'est pas fusionnée, la nuit suivante reprend depuis cette branche.** La parade écrite par le passage 12 a été appliquée sans y penser : `git fetch origin main`, une référence à la fois, jamais deux refspecs dans le même appel.

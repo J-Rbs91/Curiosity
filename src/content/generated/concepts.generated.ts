@@ -954,6 +954,45 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "cout-de-remonter-l-effectif",
+    "slug": "cout-de-remonter-l-effectif",
+    "title": "Le coût de remonter l'effectif",
+    "authorLabel": "Richard Bellman",
+    "hookQuestion": "Pourquoi suivre la demande au plus juste peut-il coûter plus cher ?",
+    "shortExplanation": "Bellman pose deux coûts distincts : être au-dessus du besoin se paie en salaires, remonter le niveau se paie à la montée ; dans son modèle, redescendre ne coûte rien.",
+    "authors": [],
+    "themes": [
+      "produire-et-stocker"
+    ],
+    "themeLabel": "Combien produire, combien en tenir",
+    "attributionNote": "Rapport signé du seul Richard Bellman, dont le nom se lit seul sur la page de titre du RAND P-651, révisé le 23 mai 1955. Il pose ici le modèle et l'asymétrie des coûts, il ne les résout pas : la solution est renvoyée à un article coécrit avec I. Glicksberg et O. Gross, et la version discrète du même problème à Karlin. Le rapport se donne lui-même pour un exposé de problèmes et des méthodes conçues pour les traiter.",
+    "quotation": {
+      "text": "[…] si nous abaissons x(t) au niveau de r(t), nous nous exposons à devoir l'augmenter si r(t) augmente. Cela ne peut se faire sans coût […].",
+      "reference": "Richard Bellman, Mathematical Aspects of Scheduling Theory, RAND Corporation, rapport P-651, révisé le 23 mai 1955, p. 39, partie III, § 2",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Richard Bellman, Mathematical Aspects of Scheduling Theory, RAND Corporation, P-651, révisé le 23 mai 1955, 70 p.",
+        "kind": "primary",
+        "reference": "p. 38-40, partie III, § 1 et 2",
+        "url": "https://archive.org/details/DTIC_AD0604647"
+      },
+      {
+        "label": "Richard Bellman, « Mathematical Aspects of Scheduling Theory », Journal of the Society for Industrial and Applied Mathematics, vol. 4, n° 3, septembre 1956, p. 168-205.",
+        "kind": "primary",
+        "reference": "10.1137/0104010",
+        "url": "https://doi.org/10.1137/0104010"
+      },
+      {
+        "label": "R. Bellman, I. Glicksberg et O. Gross, « The Theory of Dynamic Programming as Applied to a Smoothing Problem », Journal of the Society for Industrial and Applied Mathematics, vol. 2, n° 2, juin 1954, p. 82-88.",
+        "kind": "primary",
+        "reference": "10.1137/0102007",
+        "url": "https://doi.org/10.1137/0102007"
+      }
+    ]
+  },
+  {
     "id": "critere-de-la-retroaction",
     "slug": "critere-de-la-retroaction",
     "title": "Le critère de la rétroaction",
@@ -975,6 +1014,32 @@ export const generatedConcepts: Concept[] = [
         "kind": "primary",
         "reference": "p. 6-16 · 10.3406/colan.1987.984",
         "url": "https://www.persee.fr/doc/colan_0336-1500_1987_num_73_1_984"
+      }
+    ]
+  },
+  {
+    "id": "criticite-technique-contre-poids-financier",
+    "slug": "criticite-technique-contre-poids-financier",
+    "title": "La valeur d'un article n'est pas sa criticité",
+    "authorLabel": "Robert Guihéneuf",
+    "hookQuestion": "Trier les articles d'un stock sur leur valeur, est-ce trier sur ce qui compte ?",
+    "shortExplanation": "Une gestion triée sur la valeur laisse en gestion souple des articles négligeables financièrement mais décisifs techniquement : les deux hiérarchies ne coïncident pas.",
+    "authors": [],
+    "themes": [
+      "produire-et-stocker"
+    ],
+    "themeLabel": "Combien produire, combien en tenir",
+    "attributionNote": "Article signé du seul Robert Guihéneuf, dont le nom ne paraît qu'une fois dans l'imprimé, au pied de la page 91. La méthode critiquée n'est pas de lui : il donne la constatation qui la fonde pour un acquis des « experts américains » et l'appuie sur des exemples chiffrés empruntés à A. Rambaux, puis expose la méthode dite A.B.C. comme une pratique reçue. Ce qui lui revient est l'objection qu'il y oppose page 79, sans appel de note et contre la source qu'il vient d'utiliser.",
+    "quotation": {
+      "text": "une rupture du stock de boulons d'un certain type peut bloquer toute une chaîne de production",
+      "reference": "Robert Guihéneuf, « Remarques sur la gestion des stocks dans l'entreprise », Revue économique, vol. 7, n° 1, 1956, numéro thématique « Économie de l'entreprise », p. 68-91, p. 79, fin de la section 3°"
+    },
+    "sources": [
+      {
+        "label": "Robert Guihéneuf, « Remarques sur la gestion des stocks dans l'entreprise », Revue économique, vol. 7, n° 1, 1956, p. 68-91.",
+        "kind": "primary",
+        "reference": "p. 78-79 · 10.3406/reco.1956.407156",
+        "url": "https://www.persee.fr/doc/reco_0035-2764_1956_num_7_1_407156"
       }
     ]
   },
@@ -1243,6 +1308,39 @@ export const generatedConcepts: Concept[] = [
         "kind": "secondary-academic",
         "reference": "10.2307/2391532",
         "url": "https://doi.org/10.2307/2391532"
+      }
+    ]
+  },
+  {
+    "id": "disponibilite-operationnelle",
+    "slug": "disponibilite-operationnelle",
+    "title": "La disponibilité opérationnelle",
+    "authorLabel": "AGREE, Task Group 1",
+    "hookQuestion": "Un matériel qui tombe souvent peut-il valoir mieux qu'un matériel long à réparer ?",
+    "shortExplanation": "Comptée en temps de calendrier et non en temps de fonctionnement, la disponibilité dépend de deux choses : la fiabilité du système et la rapidité de sa remise en état.",
+    "authors": [],
+    "themes": [
+      "fiabilite-et-disponibilite"
+    ],
+    "themeLabel": "Ce qu'on exige d'un matériel",
+    "attributionNote": "Le volume entier ne porte aucun auteur personnel : sa page de titre porte « Report by Advisory Group on Reliability of Electronic Equipment », et sa seule signature est celle de l'avant-propos, une lettre de transmission de J. M. Bridges, Chairman, qui déclare le document « a consolidation of the nine task group reports ». Une lettre de transmission n'est pas une paternité. Ce qui rattache le texte à un auteur identifiable est la page de titre interne du groupe, « MINIMUM ACCEPTABILITY FIGURES / Task Group 1 / 7 January 1957 », lue sur l'image. La section citée ne porte aucune mention de responsabilité individuelle : le rapport n'en réserve qu'une, à l'appendice F, « by R. R. Carhart and G. R. Herd », qui n'est pas le texte dont vient cette carte.",
+    "quotation": {
+      "text": "[…] cette disponibilité opérationnelle dépend à la fois de la fiabilité du système et de la rapidité de sa remise en état après défaillance.",
+      "reference": "Advisory Group on Reliability of Electronic Equipment, Reliability of Military Electronic Equipment, 1957, rapport du Task Group 1, p. 32, section 2.4",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Advisory Group on Reliability of Electronic Equipment, Reliability of Military Electronic Equipment, Office of the Assistant Secretary of Defense (Research and Engineering), 4 juin 1957 (DTIC AD-141476).",
+        "kind": "primary",
+        "reference": "p. 32, Task Group 1, section 2.4",
+        "url": "https://archive.org/details/DTIC_AD0141476"
+      },
+      {
+        "label": "J. M. Bridges, « Progress in Reliability of Military Electronic Equipment During 1956 », IRE Transactions on Reliability and Quality Control, n° PGRQC-11, août 1957, p. 1-7.",
+        "kind": "primary",
+        "reference": "10.1109/ire-pgrqc.1957.5007140",
+        "url": "https://doi.org/10.1109/ire-pgrqc.1957.5007140"
       }
     ]
   },
@@ -1621,6 +1719,43 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "etat-de-controle-statistique",
+    "slug": "etat-de-controle-statistique",
+    "title": "L'état de contrôle statistique",
+    "authorLabel": "W. A. Shewhart",
+    "hookQuestion": "Un procédé maîtrisé est-il un procédé qui ne varie pas ?",
+    "shortExplanation": "Un phénomène est maîtrisé quand l'expérience passée permet de prévoir, au moins dans des limites, comment il variera : une qualité maîtrisée est variable, pas constante.",
+    "authors": [],
+    "themes": [
+      "variation-et-controle"
+    ],
+    "themeLabel": "Ce qu'un procédé fait varier",
+    "attributionNote": "Définition de W. A. Shewhart, seul auteur de l'ouvrage. Le syntagme que porte le titre est écrit par lui : il imprime « the state of statistical control » page 146, au chapitre XI intitulé « Statistical Control », et il n'en crédite personne.",
+    "quotation": {
+      "text": "C'est pourquoi il est souhaitable d'atteindre l'état de maîtrise statistique où la loi naturelle des grands nombres rend la prévision possible.",
+      "reference": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931, p. 146, ch. XI, § 1",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931, xiv-501 p. (LCCN 31032090)",
+        "kind": "primary",
+        "reference": "p. 6, 34 et 146 · LCCN 31032090"
+      },
+      {
+        "label": "W. A. Shewhart, « Economic Quality Control of Manufactured Product », Bell System Technical Journal, vol. 9, n° 2, avril 1930, p. 364-389.",
+        "kind": "primary",
+        "reference": "10.1002/j.1538-7305.1930.tb00373.x",
+        "url": "https://archive.org/details/bstj9-2-364"
+      },
+      {
+        "label": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, Milwaukee, American Society for Quality Control, 1980 (réimpression).",
+        "kind": "primary",
+        "reference": "978-0-87389-076-2"
+      }
+    ]
+  },
+  {
     "id": "exit-voice-loyalty",
     "slug": "exit-voice-loyalty",
     "title": "Défection, prise de parole et loyauté",
@@ -1687,6 +1822,39 @@ export const generatedConcepts: Concept[] = [
         "kind": "primary",
         "reference": "p. 385-387 · 10.3406/psy.1953.8725",
         "url": "https://www.persee.fr/doc/psy_0003-5033_1953_num_53_1_8725"
+      }
+    ]
+  },
+  {
+    "id": "fiabilite-fixee-par-la-conception",
+    "slug": "fiabilite-fixee-par-la-conception",
+    "title": "La fiabilité se fixe à la conception",
+    "authorLabel": "AGREE, Task Group 1",
+    "hookQuestion": "Peut-on rattraper sur la machine finie ce que le schéma a déjà décidé ?",
+    "shortExplanation": "Les performances étaient chiffrées et légalement dues, la fiabilité non : traitée après coup, elle vient trop tard, la conception ayant fixé un plancher de défaillance.",
+    "authors": [],
+    "themes": [
+      "fiabilite-et-disponibilite"
+    ],
+    "themeLabel": "Ce qu'on exige d'un matériel",
+    "attributionNote": "Le volume entier ne porte aucun auteur personnel : sa page de titre porte « Report by Advisory Group on Reliability of Electronic Equipment », et sa seule signature est celle de l'avant-propos, une lettre de transmission de J. M. Bridges, Chairman, qui déclare le document « a consolidation of the nine task group reports ». Une lettre de transmission n'est pas une paternité. Ce qui rattache le texte à un auteur identifiable est la page de titre interne du groupe, « MINIMUM ACCEPTABILITY FIGURES / Task Group 1 / 7 January 1957 », lue sur l'image. La section citée ne porte aucune mention de responsabilité individuelle : le rapport n'en réserve qu'une, à l'appendice F, « by R. R. Carhart and G. R. Herd », qui n'est pas le texte dont vient cette carte. Le rapport ne revendique pas la définition de la fiabilité que la littérature lui prête : la ligne qui l'introduit, page 30, dit que ses six définitions générales sont empruntées, « taken from general reliability theory ».",
+    "quotation": {
+      "text": "[…] la conception d'un matériel électronique crée un taux de défaillance irréductible qu'on ne peut plus déverminer sur la machine finie.",
+      "reference": "Advisory Group on Reliability of Electronic Equipment, Reliability of Military Electronic Equipment, 1957, rapport du Task Group 1, p. 30, section 1.2",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Advisory Group on Reliability of Electronic Equipment, Reliability of Military Electronic Equipment, Office of the Assistant Secretary of Defense (Research and Engineering), 4 juin 1957 (DTIC AD-141476).",
+        "kind": "primary",
+        "reference": "p. 29-30, Task Group 1, section 1.2",
+        "url": "https://archive.org/details/DTIC_AD0141476"
+      },
+      {
+        "label": "J. M. Bridges, « Progress in Reliability of Military Electronic Equipment During 1956 », IRE Transactions on Reliability and Quality Control, n° PGRQC-11, août 1957, p. 1-7.",
+        "kind": "primary",
+        "reference": "10.1109/ire-pgrqc.1957.5007140",
+        "url": "https://doi.org/10.1109/ire-pgrqc.1957.5007140"
       }
     ]
   },
@@ -3938,6 +4106,38 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "stock-instrument-actif-et-non-residu",
+    "slug": "stock-instrument-actif-et-non-residu",
+    "title": "Le stock, instrument actif et non résidu",
+    "authorLabel": "Robert Guihéneuf",
+    "hookQuestion": "Le stock est-il ce qui reste, ou ce avec quoi on gouverne ?",
+    "shortExplanation": "Pour Guihéneuf, le stock n'est pas un résidu d'inventaire mais un instrument de gestion : il rejette le renouvellement à valeur minima fixée d'avance, trop rigide.",
+    "authors": [],
+    "themes": [
+      "produire-et-stocker"
+    ],
+    "themeLabel": "Combien produire, combien en tenir",
+    "attributionNote": "Article signé du seul Robert Guihéneuf, dont le nom ne paraît qu'une fois dans l'imprimé, au pied de la page 91. La thèse est énoncée à la première personne du pluriel et donnée pour une prise de position, « Le stock, tel que nous l'envisageons », sans appel de note ni tiers nommé. Ce qui l'entoure n'est pas de lui : le point de commande auquel il renvoie vient d'un usage industriel qu'il documente en note, et le mouvement historique dont sa thèse est l'aboutissement est raconté comme un fait de la période, crédité aux ingénieurs.",
+    "quotation": {
+      "text": "Le stock […] ne saurait être considéré comme une sorte de résidu […]; il nous semble être un instrument actif dans la gestion de l'entreprise.",
+      "reference": "Robert Guihéneuf, « Remarques sur la gestion des stocks dans l'entreprise », Revue économique, vol. 7, n° 1, 1956, numéro thématique « Économie de l'entreprise », p. 68-91, p. 83, section b)"
+    },
+    "sources": [
+      {
+        "label": "Robert Guihéneuf, « Remarques sur la gestion des stocks dans l'entreprise », Revue économique, vol. 7, n° 1, 1956, p. 68-91.",
+        "kind": "primary",
+        "reference": "p. 68-69 et 83 · 10.3406/reco.1956.407156",
+        "url": "https://www.persee.fr/doc/reco_0035-2764_1956_num_7_1_407156"
+      },
+      {
+        "label": "Robert Guihéneuf, « Quelques aspects de la théorie de la firme : incertitude, autonomie, calculs forfaitaires », Revue économique, vol. 5, n° 5, 1954, p. 673-702.",
+        "kind": "primary",
+        "reference": "10.3406/reco.1954.407069",
+        "url": "https://doi.org/10.3406/reco.1954.407069"
+      }
+    ]
+  },
+  {
     "id": "stocks-et-flux",
     "slug": "stocks-et-flux",
     "title": "Stocks et flux",
@@ -4159,6 +4359,68 @@ export const generatedConcepts: Concept[] = [
         "kind": "primary",
         "reference": "10.1007/978-3-642-51711-2_1",
         "url": "https://doi.org/10.1007/978-3-642-51711-2_1"
+      }
+    ]
+  },
+  {
+    "id": "tolerance-economique-suppose-le-controle",
+    "slug": "tolerance-economique-suppose-le-controle",
+    "title": "Pas de tolérance économique sans maîtrise",
+    "authorLabel": "W. A. Shewhart",
+    "hookQuestion": "Que faut-il savoir d'une pièce avant de fixer sa tolérance ?",
+    "shortExplanation": "Resserrer une tolérance gagne en valeur et coûte en rebuts. L'arbitrage ne se calcule que si matériaux et pièces sont maîtrisés : on sait alors combien seront rejetés.",
+    "authors": [],
+    "themes": [
+      "variation-et-controle"
+    ],
+    "themeLabel": "Ce qu'un procédé fait varier",
+    "attributionNote": "Conclusion posée par W. A. Shewhart, seul auteur de l'ouvrage. La tolérance n'est pas de lui et il ne la revendique nulle part : le chapitre s'ouvre en la donnant pour un usage d'atelier reçu, « it is customary practice to establish allowable or tolerance ranges of variability », au présent et sans nommer personne. Ce qui lui revient est la thèse inverse de cet usage, imprimée en italique comme telle.",
+    "quotation": {
+      "text": "Donc, pour fixer une plage de tolérance économique, il est nécessaire que les qualités des matériaux et des pièces élémentaires soient maîtrisées.",
+      "reference": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931, p. 252, ch. XVII, § 3",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931, xiv-501 p. (LCCN 31032090)",
+        "kind": "primary",
+        "reference": "p. 249-252, ch. XVII · LCCN 31032090"
+      },
+      {
+        "label": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, Milwaukee, American Society for Quality Control, 1980 (réimpression).",
+        "kind": "primary",
+        "reference": "978-0-87389-076-2"
+      }
+    ]
+  },
+  {
+    "id": "tolerances-qui-ne-s-additionnent-pas",
+    "slug": "tolerances-qui-ne-s-additionnent-pas",
+    "title": "Les tolérances ne s'additionnent pas",
+    "authorLabel": "W. A. Shewhart",
+    "hookQuestion": "Additionner les tolérances des pièces donne-t-il celle de l'ensemble ?",
+    "shortExplanation": "Additionner les tolérances des pièces peut être peu économique : leurs extrêmes coïncident rarement, l'écart type de l'assemblage valant la racine de la somme des carrés.",
+    "authors": [],
+    "themes": [
+      "variation-et-controle"
+    ],
+    "themeLabel": "Ce qu'un procédé fait varier",
+    "attributionNote": "Argument conduit par W. A. Shewhart, seul auteur de l'ouvrage. Ni la pratique qu'il critique ni les mathématiques qu'il emploie ne sont de lui, et il le dit : additionner les écarts extrêmes des pièces découle de la définition d'atelier d'une tolérance, et le développement passe par une série de Taylor puis par le théorème de Tchebychev, tous deux nommés dans le texte. Ce qui lui revient est l'objection et sa mesure.",
+    "quotation": {
+      "text": "[…] additionner les limites de tolérance peut être peu économique : il est très rare qu'une résistance résultante sorte des limites ΣR̄i ± 3σ.",
+      "reference": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931, p. 255, ch. XVII, § 5",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931, xiv-501 p. (LCCN 31032090)",
+        "kind": "primary",
+        "reference": "p. 252-259, ch. XVII, § 5 et 6 · LCCN 31032090"
+      },
+      {
+        "label": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, Milwaukee, American Society for Quality Control, 1980 (réimpression).",
+        "kind": "primary",
+        "reference": "978-0-87389-076-2"
       }
     ]
   },

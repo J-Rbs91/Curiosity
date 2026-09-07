@@ -1,0 +1,54 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "tolerance-economique-suppose-le-controle",
+  "lead": [
+    "Sur un plan d’atelier, une cote s’écrit rarement seule : elle vient avec un plus ou moins. Douze millimètres plus ou moins un dixième, et l’affaire semble réglée. Reste la question que le plan ne pose pas : d’où sort ce dixième ? Trop large, les pièces s’ajustent mal et le produit vaut moins ; trop étroit, une part de ce qui sort de la machine part au rebut et il faut le refaire. Entre les deux il y a un nombre à choisir, et l’habitude veut qu’on le choisisse d’abord, qu’on le porte sur le plan, puis qu’on trie les pièces produites pour le faire respecter.",
+    "W. A. Shewhart, qui signe sa préface aux Bell Telephone Laboratories, prend l’affaire dans l’autre sens dans un livre paru chez D. Van Nostrand en 1931. Le chapitre XVII s’intitule « Design Limits on Variability », les limites de variabilité posées à la conception, et il y soutient que ce nombre ne peut pas se fixer à la fin. Le choisir suppose de savoir déjà comment se comporte ce qui entre dans la fabrication. La tolérance cesse alors d’être le premier geste de l’ingénieur d’études pour devenir le dernier."
+  ],
+  "sections": [
+    {
+      "title": "Le prix d’un resserrement",
+      "paragraphs": [
+        "Resserrer la plage de tolérance n’est jamais gratuit, et le chapitre pose l’affaire comme un compte à deux colonnes. D’un côté, une cote plus serrée donne un produit qui vaut davantage : les pièces s’ajustent mieux, l’assemblage tient mieux. De l’autre, plus la plage est étroite, plus il sort de pièces hors limites, qu’il faut retoucher ou jeter. Page 251, Shewhart écrit d’abord la règle d’intention, « a tolerance range on a quality X should be as small as possible », une plage de tolérance sur une qualité devrait être aussi petite que possible, puis il la corrige dans la phrase suivante : si elle est trop petite, les rejets seront excessifs.",
+        "La formule complète nomme l’opération et celui qui la conduit : « the design engineer tries to balance the rate of increase in value of reducing a tolerance range against the rate of increase of cost of such a procedure because of increased rejections ». L’ingénieur d’études cherche à équilibrer ce que le resserrement fait gagner en valeur contre ce qu’il fait perdre en rebuts. Deux choses s’y remarquent. L’arbitrage est rendu au bureau d’études, avant que rien ne soit fabriqué. Et il porte sur des vitesses, sur ce que le prochain centième ajoute et sur ce qu’il coûte, non sur deux totaux que l’on comparerait une fois pour toutes."
+      ]
+    },
+    {
+      "title": "Le nombre attendu de rebuts",
+      "paragraphs": [
+        "Une balance ne se règle qu’avec des poids. Or la colonne des rebuts n’est un nombre que si l’on sait comment les pièces qui arrivent se répartissent autour de leur moyenne. Sans cela, on ignore quelle proportion du lot tombera hors des limites que l’on est en train de tracer, et le coût du resserrement reste une inquiétude plutôt qu’une quantité.",
+        "C’est ici que la maîtrise entre, et le texte l’articule d’une seule phrase : « if a design engineer knows that the quality X of a material or piece-part entering into his design is statistically controlled […] then he knows the expected number pN of rejections ». Si l’ingénieur sait que la qualité d’un matériau ou d’une pièce entrant dans sa conception est statistiquement maîtrisée, selon une distribution qu’il connaît, alors il connaît le nombre attendu de rebuts. Une figure du chapitre porte en légende la probabilité de rejet : c’est bien de cela qu’il s’agit, d’une proportion lue sur une distribution connue.",
+        "Le mot « attendu » n’est pas décoratif. Ce nombre est celui « of rejections that will occur », des rebuts qui surviendront, et c’est une espérance calculée, non la promesse que tel lot en donnera exactement tant. La conclusion que Shewhart en tire est d’autant plus restrictive : « only under these conditions of control is it a comparatively simple process to find an economic tolerance range ». C’est seulement dans ces conditions de maîtrise que trouver une plage de tolérance économique devient un procédé relativement simple. Ailleurs, la tâche n’est pas seulement plus difficile : elle change de nature, et devient un choix qu’aucun calcul n’appuie."
+      ]
+    },
+    {
+      "title": "Maîtrise et inspection, deux choses",
+      "paragraphs": [
+        "Le mot anglais est « controlled », et il se traduit mal. En français, contrôler une pièce veut d’abord dire l’examiner pour savoir si elle est bonne, c’est-à-dire l’inspecter. Ce n’est pas de cela qu’il est question. Shewhart glose lui-même son terme à la page précédente : la qualité en jeu est « statistically controlled », statistiquement maîtrisée, ce qui décrit l’état d’un procédé et non le sort d’une pièce. Un procédé maîtrisé est un procédé dont la variation reste reconnaissable, et dont on peut donc dire d’avance entre quelles bornes il se tient.",
+        "La suite du texte lève le doute. Aussitôt après la conclusion de la page 252 vient un paragraphe intitulé « Tolerances where 100 Per Cent Inspection Cannot be Made », les tolérances là où l’inspection à cent pour cent ne peut pas être faite. Exiger que les matériaux soient maîtrisés n’est donc pas exiger qu’ils soient tous vérifiés : c’est ce que l’on demande précisément lorsque l’on ne peut pas tous les vérifier. Un second énoncé de la même page le dit dans l’autre sens : « Hence we see that it is very desirable to know that the quality of a product is controlled when it cannot be given 100 per cent inspection ».",
+        "Rendre ici « controlled » par « contrôlées » ferait entendre l’inverse de l’argument, à savoir que les matériaux doivent être inspectés, ce que les deux lignes suivantes écartent. C’est pourquoi le mot devient « maîtrisées » en français, au prix d’un écart avec l’usage reçu de la profession, qui dit bien « carte de contrôle » et « limites de contrôle » sans que personne y entende une inspection."
+      ]
+    },
+    {
+      "title": "Ce qu’il faut écrire au fournisseur",
+      "paragraphs": [
+        "De là vient le renversement le plus utile du chapitre. Devant des pièces dont on ne sait rien, le réflexe est de resserrer la tolérance du plan : puisque le résultat inquiète, on exige davantage sur le papier. Le remède n’est pas là. Ce qu’il faut changer n’est pas la largeur de la plage, c’est la nature de ce que l’on exige.",
+        "Quand l’inspection à cent pour cent est impossible, Shewhart montre qu’un seul jeu de limites ne suffit plus : il en faut deux, l’un sur la qualité des pièces, l’autre sur la fraction défectueuse du lot livré. Et il conclut, page 259, que ce qu’il faut spécifier au fournisseur est autre chose qu’une tolérance : la maîtrise elle-même, avec la valeur espérée et l’écart type acceptés. L’exigence se déplace de la pièce vers le procédé qui la produit.",
+        "Imaginons un atelier qui reçoit chaque semaine un lot de ressorts et ne peut en mesurer que quelques-uns. Resserrer la cote sur le plan ne change rien à ce qu’il ignore du reste du lot : cela augmente seulement le nombre de pièces qu’il rejettera parmi celles qu’il mesure. Demander au fournisseur un procédé stable, avec sa moyenne et sa dispersion, porte au contraire sur ce que cet atelier n’a pas les moyens de vérifier lui-même."
+      ]
+    },
+    {
+      "title": "Ce qui est de Shewhart dans ce chapitre",
+      "paragraphs": [
+        "La tolérance n’est pas son idée et il ne la revendique nulle part. Le chapitre s’ouvre en la donnant pour un usage d’atelier déjà installé, au présent et sans nommer personne : « Since all pieces of a given kind of product cannot be made identical, it is customary practice to establish allowable or tolerance ranges of variability for each of the measured quality characteristics. » Puisque toutes les pièces d’un même produit ne peuvent pas être faites identiques, l’usage est d’établir des plages de variabilité admissible pour chacune des caractéristiques mesurées.",
+        "Il y apporte de la précision, ce qui est déjà un travail : la même page sépare la plage de tolérance, les limites de tolérance et la tolérance proprement dite, qui est l’écart lui-même. Mais ce qui lui revient en propre est l’objection faite à cet usage, et la mesure de cette objection. Elle porte le titre de la section où elle est conduite, « Importance of Control in Setting Economic Tolerance », et elle se referme sur une phrase imprimée en italique, marque qu’il réserve dans ce chapitre à ses conclusions : « Hence, to set an economic tolerance range it is necessary that the qualities of materials and piece-parts be controlled. »",
+        "La distinction importe à qui veut citer juste. Lui attribuer la tolérance irait au-delà de ce que son propre chapitre autorise ; lui attribuer la condition qu’il lui impose, et le déplacement d’exigence qui en découle, est exactement ce qu’il écrit."
+      ]
+    }
+  ],
+  "limits": [
+    "Le livre de 1931 met en forme un travail commencé bien avant lui, aux Bell Telephone Laboratories. Si cette thèse a été formulée avant sa publication, c’est dans les mémorandums des années 1920 qu’elle se lit, et ce sont eux qu’il faudra ouvrir : aucune pièce disponible ici ne fonde une antériorité.",
+    "La démonstration est rapportée telle que Shewhart la conduit. Ce qui s’est écrit après 1931 sur cette thèse, la façon dont les ateliers l’ont reçue et ce qu’en dit la littérature francophone de la qualité se trouvent dans des textes qui restent à lire.",
+    "Les folios cités ici sont ceux des planches Van Nostrand. L’exemplaire le plus simple à se procurer aujourd’hui est la réimpression du cinquantenaire publiée en 1980 à Milwaukee par l’American Society for Quality Control ; qui travaille sur elle vérifiera ses propres folios en l’ouvrant. Et les phrases de Shewhart se citent en anglais : aucune traduction française publiée de l’ouvrage n’est identifiée, et une version française sert à comprendre, non à faire référence."
+  ]
+}

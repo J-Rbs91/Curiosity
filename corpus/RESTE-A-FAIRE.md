@@ -5,7 +5,7 @@ relire tout le dépôt et sans redécouvrir ce que huit lots ont déjà appris.
 
 Il ne double pas `corpus/ETAT.md`, qui dit ce que le corpus **est** ; celui-ci dit ce qu'il
 lui **manque**. Et il ne remplace aucun script : les chiffres ci-dessous sont un instantané
-du 4 septembre 2026, les commandes sont la vérité.
+du 7 septembre 2026, les commandes sont la vérité.
 
 ```bash
 npm run corpus:audit    # domaines, thèmes, cartes validées, sujets jamais instruits
@@ -32,14 +32,20 @@ script ne peut pas dire : quel travail est possible aujourd'hui, ce qu'il coûte
 **Le chantier A est fermé.** Il s'était vidé le 21 août, rouvert et creusé pendant cinq lots
 d'ouverture consécutifs jusqu'à trente-quatre cartes le 28 août, puis refermé en trois nuits :
 seize cartes servies au passage 07 le 29 août, seize au passage 08 le 31, **les deux dernières au
-passage 09 le 1er septembre**. `corpus:deepen` projette **113 approfondissements pour 113 cartes
+passage 09 le 1er septembre**. `corpus:deepen` projette **129 approfondissements pour 129 cartes
 validées** et sa fin de sortie ne liste plus rien. **La file est celle du script, pas celle de ce
-fichier**, et elle est vide. Les passages 10, 11 et 12 l'ont rouverte de quatre, quatre et cinq
-cartes et refermée la même nuit chaque fois : en phase 3, la nuit se termine par les
+fichier**, et elle est vide. Les passages 10 à 14 l'ont rouverte de quatre, quatre, cinq, huit et
+huit cartes et refermée la même nuit chaque fois : en phase 3, la nuit se termine par les
 approfondissements des cartes qu'elle vient de créer, et le chantier ne se rouvre donc jamais
 d'une nuit sur l'autre.
 
-**Le chantier E est fermé**, par la première nuit de phase 3, le 2 septembre. Les deux workflows
+**Le chantier E est fermé**, par la première nuit de phase 3, le 2 septembre. **Son garde s'est
+déclenché deux fois depuis, aux passages 12 et 14, sur le même cas exact** : un `corpus-deepener`
+rend après que la projection a été calculée, et le commit emporterait le maître dans son dernier
+état et la projection dans l'avant-dernier. Il l'a vu les deux fois. **La parade est désormais une
+étape de la clôture, plus un incident** : le `git diff --exit-code` se relance après que le dernier
+agent a rendu, et la projection se vérifie idempotente en la rejouant deux fois. Les deux
+workflows
 lancent désormais `corpus:build` **et** `corpus:deepen` avant leur `git diff --exit-code
 src/content/generated/` : le garde couvre les deux fichiers du répertoire qu'il nomme.
 
@@ -48,11 +54,11 @@ prend.** Aucun domaine n'étant vide et aucune carte n'étant sans approfondisse
 A et B sont fausses : **la condition C décide, et la phase 3 a commencé le 2 septembre**, sur
 `behavioral-economics`, qui passe de quatre à huit cartes, a continué le 3 septembre sur
 `sociology-of-work`, qui passe de sept à onze, le 4 septembre sur `work-psychology`, qui passe
-de sept à douze et de deux thèmes à trois, et le 5 septembre sur `systems-thinking`, **qui passe de
-sept à quinze cartes et de trois thèmes à cinq**. Elle enrichit un domaine par nuit, en rotation, et
-**le suivant se déduit d'une égalité réelle, à huit cartes, que l'ordre de `taxonomy.ts` tranche :
-`operations-management`**, placé ligne 126 contre la ligne 168 de `decision-science` — voir la fin
-du chantier D.
+de sept à douze et de deux thèmes à trois, le 5 septembre sur `systems-thinking`, qui passe de sept
+à quinze cartes et de trois thèmes à cinq, et le 7 septembre sur `operations-management`, **qui
+passe de huit à seize cartes et de trois thèmes à quatre**. Elle enrichit un domaine par nuit, en
+rotation, et **le suivant se déduit sans arbitrage, le critère de repli désignant le seul domaine
+encore à huit cartes hors rotation : `decision-science`** — voir la fin du chantier D.
 
 **Le chantier C est fermé.** Il a perdu un domaine le 22 août, `systems-thinking`, un second le 23,
 `decision-science`, un troisième le 25, `operations-management`, un quatrième le 26,
@@ -348,23 +354,31 @@ ligne d'un ouvrage par son auteur sur Internet Archive **sans restriction d'empr
 **extraits autorisés d'UNESCO-EOLSS**. Elles sont portées aux pièges d'accès transversaux, en fin
 de fichier.
 
-**Le domaine suivant se déduit de la même règle, et il vaut d'être écrit ici pour que la nuit qui
-reprend n'ait pas à le recalculer.** `behavioral-economics`, `sociology-of-work`, `work-psychology`
-et `systems-thinking` ont désormais un enrichissement au journal, daté du 2, du 3, du 4 et du 5
-septembre, et sortent de la rotation jusqu'à ce que les autres soient passés. Aucun des six autres
-n'en a : le critère de repli s'applique et désigne celui qui a le moins de cartes validées.
-**Ils sont deux à huit, `operations-management` et `decision-science` : l'égalité est réelle cette
-fois, et c'est l'ordre de `src/content/taxonomy.ts` qui la tranche**, en plaçant
-`operations-management` (ligne 126) avant `decision-science` (ligne 168). **C'est donc
-`operations-management`.** En son sein, la priorité 1 est sans objet, les deux thèmes déclarés sans
-carte étant en sociologie des organisations, et la priorité 2 aussi, `corpus/map/queue.json` ne
-couvrant que ce même domaine : **la priorité 3 commande, les angles morts de
-`corpus/map/operations-management.scouting.md`**, dont ce fichier dit qu'il hérite de trois rapports
-mirés sur Internet Archive. Le décompte qui tranche est le tableau par domaine de
-[`corpus/ETAT.md`](ETAT.md), et `npm run corpus:audit` le rend à la demande.
+**Le cinquième domaine a été pris le 7 septembre 2026, au passage 14 : `operations-management`**,
+désigné par une égalité à huit cartes avec `decision-science` que l'ordre de
+`src/content/taxonomy.ts` a tranchée. **Il en porte seize, et il passe de trois à quatre thèmes**,
+au plafond exact de huit cartes. **Il cesse d'être entièrement anglophone**, et son point d'entrée
+sur la fiabilité au sens de l'ingénieur, que trois périmètres ouverts lui avaient renvoyé sans que
+personne y aille, est ouvert. Les reprises que ce fichier portait pour ce domaine sont closes,
+**deux d'entre elles négativement** : voir la section qui les concernait, réécrite ci-dessous. Le
+compte rendu du lot est dans `corpus/ETAT.md`, section « Operations Management enrichi ».
+
+**Le domaine suivant se déduit de la même règle, et il n'y a pas d'égalité à trancher.**
+`behavioral-economics`, `sociology-of-work`, `work-psychology`, `systems-thinking` et
+`operations-management` ont désormais un enrichissement au journal, daté du 2, du 3, du 4, du 5 et
+du 7 septembre, et sortent de la rotation jusqu'à ce que les autres soient passés. Aucun des six
+autres n'en a : le critère de repli s'applique et désigne celui qui a le moins de cartes validées,
+**seul à ce niveau, `decision-science`, huit cartes**, contre neuf pour `measurement-theory`, dix
+pour la sociologie des organisations et douze pour la cybernétique. **C'est donc
+`decision-science`.** En son sein, la priorité 1 est sans objet, les deux thèmes déclarés sans carte
+étant en sociologie des organisations, et la priorité 2 aussi, `corpus/map/queue.json` ne couvrant
+que ce même domaine : **la priorité 3 commande, les angles morts de
+`corpus/map/decision-science.scouting.md`**, dont ce fichier tient déjà la liste sous « Deux textes
+ouverts et **déjà lus**, laissés par le lot du 23 août ». Le décompte qui tranche est le tableau par
+domaine de [`corpus/ETAT.md`](ETAT.md), et `npm run corpus:audit` le rend à la demande.
 **En phase 3, la nuit se termine par les approfondissements des cartes qu'elle vient de créer** :
-les passages 10, 11 et 12 l'ont fait, et la file de `corpus:deepen` est repartie de zéro et y est
-revenue dans la même nuit, les trois fois.
+les passages 10 à 14 l'ont fait, et la file de `corpus:deepen` est repartie de zéro et y est revenue
+dans la même nuit, les cinq fois.
 
 **Ce domaine part avec le legs le plus riche des quatre nuits de rotation.** Deux de ses entrées ne
 sont pas seulement d'accès constaté : **leur texte a été ouvert et lu** par le lot du 23 août, et
@@ -606,39 +620,89 @@ ONR, ARPA, NPRDC, dans la collection `dticarchive` d'Internet Archive.
    texte**, qui le renvoie explicitement à un travail ultérieur avec Laugier. Ce travail-là n'a pas
    été retrouvé.
 
-## Cinq reprises laissées par le lot du 25 août, sur `operations-management`
+## Les reprises du lot du 25 août sur `operations-management` sont closes
 
-Ce sont les moins chères du dépôt, et la première ne demande aucune recherche.
+**Elles l'ont été le 7 septembre 2026, au passage 14, et deux le sont négativement, ce qui est un
+résultat et non un échec.** Elles ne sont plus à faire, et ce qui suit dit ce qu'elles ont donné
+pour que personne ne les repaie.
 
-**`etat-de-controle-statistique` est écrite, contrôlée et reçue `PASS`**, et elle attend en
-`corpus/candidates/` avec son verdict dans `corpus/review/`. Elle n'a pas été publiée pour un
-défaut mais **pour le plafond de volume du lot**. Ce qui la rendrait meilleure est nommé par son
-contrôleur : son titre porte un syntagme que les deux pages qui la fondent n'emploient pas, et
-l'expression consacrée se lit p. 146 du même livre, dans une partie que personne n'a dépouillée.
+- **`etat-de-controle-statistique`, écrite et reçue `PASS` le 25 août, est publiée.** Ce qui la
+  retenait n'était pas un défaut mais le plafond de volume de son lot, et ce qui la rendait
+  perfectible était nommé par son contrôleur : son titre portait un syntagme que les pages 6 et 34
+  n'emploient pas. **La page 146 a été ouverte et elle le porte** : « For this reason it is
+  desirable to attain the state of statistical control in which the natural law of large numbers
+  makes prediction possible. » La citation y est remontée, le localisateur couvre les trois pages,
+  et la phrase de l'`attribution_note` qui renvoyait à la page 146 a perdu son objet.
+- **Shewhart, parties V et VI**, « surtout limites de contrôle contre limites de tolérance » : la
+  reprise a rendu ce qu'elle promettait, **deux cartes en viennent**. Reste ouvert le § 7 « Design
+  for Minimum Variability », p. 259-261, lu en OCR seulement, et les critères II à V de la partie VI,
+  p. 318-338, également en OCR seul.
+- **Bellman, partie III**, annoncée pour « lissage industriel, problème du traiteur, stock optimal ».
+  **Deux des trois objets ne sont pas de Bellman, et son propre texte le dit** : le problème du
+  traiteur est reproduit entre guillemets « in the form given by W. Jacobs » (DOI
+  `10.1002/nav.3800010210`, non ouvert), et le stock optimal est renvoyé à Arrow, Harris et
+  Marschak, « The problem was first formulated by », c'est-à-dire au contenu même de
+  `penalite-de-rupture`, déjà publiée. **La reprise annonçait trois gisements, il y en avait un**, et
+  une carte en vient. La pagination était fausse en prime : **la partie III court des folios 38 à
+  44, non 37 à 48**, la table des matières du rapport étant décalée d'une unité.
+- **Guihéneuf 1956 est lu en entier**, vingt-quatre pages sur l'image, et **deux cartes en viennent**.
+  C'est le premier texte francophone du domaine. Un troisième concept a été instruit et écarté,
+  Guihéneuf rattachant lui-même l'idée au principe d'accélération d'Aftalion.
+- **Fiore 1987, « trouver le DOI » : il n'existe pas.** Établi à trois niveaux, une recherche
+  bibliographique Crossref, une requête Crossref au niveau de l'ISSN qui rend zéro pour la revue
+  entière, et l'absence de toute chaîne « doi » sur la page Persée, contrastée avec celle de
+  Guihéneuf qui en porte une. **Même constat que pour Lesourne 1985 au passage 13**, et il fait
+  règle : les pièces non-article d'un volume Persée sont souvent exactement celles sans dépôt DOI.
+  Le texte reste atteignable et non lu, mais **il ne se citera pas par un DOI**.
+- **De Almeida 1998** : la réserve du GET non testé est levée, `https://www.numdam.org/article/RO_1998__32_2_145_0.pdf`
+  rend **200** et le texte s'extrait. Non lu. Vigilance de périmètre transmise telle quelle : il
+  vient de la souche mathématisée, et c'est la lecture qui doit trancher s'il éclaire le comportement
+  d'un système ou seulement ses résultats propres.
+- **Les cinq candidats hérités des voisins sont tranchés.** Les trois rapports DoD légués par
+  `cybernetics` le 24 août, consignés « non ouverts » depuis, rendent tous **GET 200** après suivi de
+  la redirection HTTP vers HTTPS, et portent tous « Approved for public release » :
+  `DTIC_AD1046519`, `DTIC_ADA371943`, `DTIC_ADA341017`. **L'échec constaté depuis un an était un
+  échec de test, pas un échec d'accès** ; ils restent non lus, et c'est désormais la reprise la moins
+  chère du domaine. Les deux notices HAL léguées par `human-factors` restent sans fichier ni DOI.
 
-**Trois candidats francophones sont atteignables et non lus**, et ils comblent le manque que la
-cartographie déclarait comme son principal :
+**Ce que le lot du 7 septembre laisse de moins cher au passage suivant sur ce domaine**, et ce sont
+trois concepts **déjà lus et instruits**, écartés parce que le plafond de huit était atteint :
+`carte-de-controle` (Shewhart ne la revendique nulle part et ne l'attribue à personne, l'attribution
+n'est pas établie et c'est le motif), `controle-maximum` (risque de doublon de fond avec deux cartes
+publiées, à trancher par une lecture qui compare les trois) et `limitation-de-l-expansion` (déclaré
+le plus mince par son propre lecteur). Leurs dossiers sont au dépôt.
 
-1. **Guihéneuf, « Remarques sur la gestion des stocks dans l'entreprise »**, *Revue économique*
-   7(1), 1956, p. 68-91. DOI `10.3406/reco.1956.407156` **résolu**, page Persée servie en 200.
-   Porte le dimensionnement des stocks et la discussion du lot économique.
-2. **Fiore, « Une démarche nouvelle : la production en flux tendus »**, *Revue française de
-   gestion*, n° 63, 1987, p. 51-61, Persée `rfg_0338-4551_1987_num_63_1_2668`, servie en 200.
-   **Réserve à lever avant tout usage** : cet identifiant vient d'un moteur de recherche et non
-   d'une résolution de DOI. La règle du dépôt n'est pas honorée tant qu'elle ne l'est pas.
-3. **De Almeida**, *RAIRO Recherche opérationnelle* 32(2), 1998, p. 145-192, Numdam
-   `RO_1998__32_2_145_0`, page servie en 200, **GET du PDF non testé**. Souche mathématisée : la
-   lecture doit trancher s'il éclaire le comportement d'un système ou ses seuls résultats propres.
+**Et le thème `fiabilite-et-disponibilite`, déclaré cette nuit, a besoin d'un second texte
+indépendant** : il repose sur deux cartes tirées du même rapport et du même groupe de travail, ce
+qui est en dessous du critère du dépôt, et la faiblesse est écrite dans le commentaire de
+`src/content/themes.ts`. L'appendice F du même volume AGREE, « A Simple Cost Model for Optimizing
+Reliability », **porte deux auteurs nommés** et est le meilleur candidat suivant du volume, mais il
+ne lèverait pas la dépendance à ce seul rapport.
 
-**Deux gisements restent ouverts dans des textes déjà lus en texte intégral** : les parties V et
-VI de Shewhart, et surtout limites de contrôle contre limites de tolérance ; la partie III de
-Bellman, lissage industriel et stock optimal.
+**Trois portes sont fermées et vérifiées telles**, par Unpaywall et non par supposition, et le
+budget d'un passage ultérieur ne doit pas y retourner sans voie neuve : **Little 1961**
+(`10.1287/opre.9.3.383`), **les rééditions de la formule de Harris** (`10.1287/opre.38.6.947`,
+`10.1016/j.ijpe.2014.07.003`) et **Lee, Padmanabhan et Whang 1997** (`10.1287/mnsc.43.4.546`). Des
+copies circulent sur des agrégateurs : elles ont été rejetées comme illégitimes.
 
-**Et un balayage qui n'a jamais eu lieu** : HAL, Cairn et OpenEdition Books n'ont jamais été
-interrogés par leur propre moteur pour ce domaine, et quatre points d'entrée de son périmètre
-n'ont reçu aucune requête ciblée (files d'attente pour le service, maintenance et fiabilité au
-sens de l'ingénieur, conception des systèmes de service, variabilité propagée le long d'une
-chaîne).
+**Ce qui n'a toujours pas été fait pour ce domaine** : HAL a rendu de la littérature réelle mais
+bruitée sur les quatre points d'entrée, 77, 19, 5 et 285 résultats, sans qu'un candidat individuel
+puisse être isolé sans lecture approfondie ; **OpenEdition Books n'a été parcouru que pour un
+chapitre détecté** ; Cairn reste fermé derrière DataDome ; et Chase 1978 comme Levitt 1972, sur la
+conception des systèmes de service, sont sans DOI trouvé par Crossref.
+
+## Reprise courte laissée par la réception du 7 septembre 2026, sur `operations-management`
+
+**Rattachement contesté, non refusé, et il reste écrit ici plutôt que tranché.** Les deux
+cartes de tolérance de Shewhart, `tolerance-economique-suppose-le-controle` et
+`tolerances-qui-ne-s-additionnent-pas`, entrent sous `variation-et-controle` par son titre,
+« Ce qu'un procédé fait varier », qui les porte sans faute. Sa description, elle, reste limitée
+au partage entre causes de hasard et causes assignables et au critère qui tranche entre elles :
+elle ne couvre pas le dimensionnement d'une limite sur du variable, qui est l'objet propre de
+ces deux cartes. Les deux fiches le signalent elles-mêmes dans leurs `notes`. La description du
+thème n'a pas été réécrite à la réception — ce n'est pas un fichier que la réception touche —,
+et elle gagnerait à être élargie si ces deux cartes restent seules à porter cet aspect du thème.
+**À trancher par un passage ultérieur.**
 
 ## Les reprises courtes de `decision-science`, et ce que `systems-thinking` a rendu
 

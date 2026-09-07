@@ -1,0 +1,55 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "cout-de-remonter-l-effectif",
+  "lead": [
+    "Un atelier ne reçoit pas la même charge toute l’année. Certains mois la demande monte, d’autres elle retombe. Quand l’équipe en place peut faire plus que ce qui lui est demandé, la différence se paie en salaires versés pour des heures qui ne servent à rien, et cette dépense se lit dans les comptes tous les mois qu’elle dure. Le réflexe vient tout seul : ramener la capacité au niveau exact du besoin, et l’y maintenir.",
+    "Ce réflexe a une face qui ne se voit que plus tard. Quand la charge remonte, il faut remonter avec elle, et remonter ne se fait pas d’un trait de plume : il faut retrouver des gens, les installer, attendre qu’ils tiennent le rythme. Cette dépense-là n’apparaît pas tous les mois, elle apparaît au moment où l’on bouge. Deux dépenses de nature différente, donc : l’une se paie tant qu’on reste dans un état, l’autre au moment où l’on en change. Au printemps 1955, dans un rapport de la RAND Corporation, Richard Bellman les écrit l’une sous l’autre, en deux paragraphes, et en fait un seul critère."
+  ],
+  "sections": [
+    {
+      "title": "Ce qu’il faut faire, ce que l’équipe peut faire",
+      "paragraphs": [
+        "Le rapport s’intitule Mathematical Aspects of Scheduling Theory, il porte le numéro P-651 et la mention « Revised 23 May 1955 ». Sa troisième partie aligne des problèmes d’ordonnancement les uns après les autres, et le deuxième d’entre eux, « An Industrial Smoothing Problem », s’attaque à un lissage industriel : il s’ouvre en posant « a staff of employees capable of turning out a certain quantity of work x(t) », un personnel capable de fournir une certaine quantité de travail à l’instant t.",
+        "Deux grandeurs suffisent ensuite à décrire la situation. x(t) est ce que le personnel présent est capable de produire à l’instant t ; r(t) est ce qui est requis au même instant. Il vaut la peine de noter que x(t) ne compte pas des personnes : il compte une quantité de travail, la capacité de l’équipe telle qu’elle se mesure en production. Et la contrainte imposée vaut à chaque instant, sans exception : x(t) doit rester supérieur ou égal à r(t).",
+        "Une absence compte autant que ces deux courbes : dans ces pages, rien ne se stocke. Aucune réserve fabriquée d’avance ne vient couvrir une pointe, aucun excédent d’aujourd’hui ne sert demain. Le besoin doit être couvert au moment où il se présente, par la capacité présente à ce moment-là. C’est ce qui donne au problème sa forme dépouillée : la seule chose sur laquelle on puisse agir, c’est le niveau lui-même, et le moment où on le change."
+      ]
+    },
+    {
+      "title": "Des salaires payés au-dessus du besoin",
+      "paragraphs": [
+        "Le premier coût est celui que tout le monde voit. Bellman l’écrit ainsi : « If x(t) exceeds r(t), we consider ourselves to be losing an amount of money in excess wages proportional to (x(t)-r(t))dt over the interval (t,t+dt). » Si la capacité dépasse le besoin, de l’argent se perd en salaires payés en excès, proportionnellement à l’écart et à la durée pendant laquelle cet écart dure.",
+        "Deux fois plus haut que le besoin, deux fois plus de perte ; deux fois plus longtemps, deux fois plus de perte également. C’est le prix d’un état, et il se règle sans interruption tant qu’on y reste. Pris seul, ce coût n’a rien d’énigmatique, et il ne recommande qu’une chose : réduire l’écart à zéro, le plus vite possible."
+      ]
+    },
+    {
+      "title": "Le prix de la remontée",
+      "paragraphs": [
+        "La phrase suivante retourne la recommandation. Abaisser x(t) au niveau de r(t), écrit Bellman, expose à devoir le relever si r(t) augmente, et cela « cannot be done without cost ». La litote est de lui. Ce qu’il ajoute immédiatement après donne au coût sa forme : « and we shall take the cost of doing this proportional to dx/dt », la remontée sera comptée proportionnellement à dx/dt, c’est-à-dire à la vitesse à laquelle le niveau monte.",
+        "Un détail d’écriture décide du reste : ce n’est pas la pente qui est facturée, c’est la pente positive. La forme retenue est max (dx/dt, 0), si bien que seule la montée entre dans la note. Ce second coût ne dépend donc pas de l’endroit où l’on se trouve, mais du fait que l’on bouge et du sens dans lequel on bouge.",
+        "De quoi cette dépense est faite, le texte ne le dit pas. Ni recrutement, ni apprentissage du poste, ni désorganisation : aucun détail, aucun exemple d’atelier réel, et aucun ordre de grandeur pour la constante qui fixe ce que coûte une unité de montée. Ce qui est retenu, c’est la forme, et elle suffit au propos : une dépense attachée au mouvement, et non à la position."
+      ]
+    },
+    {
+      "title": "Descendre gratuit, monter payant",
+      "paragraphs": [
+        "Reste un troisième terme, et c’est une hypothèse, écrite comme telle : « Assuming that it costs us nothing to decrease x(t) ». Baisser la capacité ne coûte rien. Elle est posée pour simplifier le critère, non pour décrire un atelier : dans la vie d’une entreprise, se séparer de quelqu’un coûte, et souvent cher. Ce n’est donc pas un constat, c’est le trait de crayon qui rend l’asymétrie nette.",
+        "Cette asymétrie est le cœur de l’affaire. Les deux coûts ne sont pas deux montants du même genre : l’un est le prix d’être au mauvais niveau, l’autre le prix de changer de niveau. Le premier se règle en restant, le second en bougeant. Une décision qui n’avait qu’une question, à quel niveau se tenir, en a désormais deux : à quel niveau, et à quel moment en changer.",
+        "La conséquence est immédiate. Descendre au plus juste ne coûte rien aujourd’hui, mais achète une facture pour le jour où la demande remontera ; se tenir un peu au-dessus coûte des salaires maintenant, et épargne cette facture. Selon la valeur des deux coûts et selon la manière dont r(t) évolue, l’un ou l’autre peut l’emporter. Bellman n’écrit nulle part qu’il vaudrait mieux garder de la capacité d’avance : ce qu’il fait, c’est mettre les deux dépenses dans un même critère, de sorte que la comparaison devienne calculable."
+      ]
+    },
+    {
+      "title": "Un problème posé, une solution renvoyée ailleurs",
+      "paragraphs": [
+        "Le rapport dit lui-même ce qu’il est. Son résumé annonce : « The purpose of this paper is to formulate a number of significant mathematical problems which have arisen in connection with the theory of scheduling, and to discuss the methods which have been devised to treat these problems. » Formuler des problèmes et discuter les méthodes conçues pour les traiter : Bellman y aligne des énoncés, en crédite plusieurs à d’autres et renvoie les solutions à leurs auteurs. Un problème voisin, dans la même partie, est reproduit « in the form given by W. Jacobs ».",
+        "Le problème de lissage ne fait pas exception. Deux folios plus loin, Bellman écrit : « The solution turns out to have a quite simple form, see [4] », puis, pour la version où le temps avance par pas plutôt que continûment : « The solution to this problem is similar to that given for the continuous version, see Karlin [8] ». La solution existe, elle est simple, et elle est ailleurs.",
+        "Il n’y a là aucun manque. Poser un problème proprement est un acte de recherche à part entière : c’est à ce moment que se décide ce qui sera compté, ce qui ne le sera pas, et sous quelle forme. La page de titre du rapport de mai 1955 porte le seul nom de Richard Bellman ; la solution du cas continu, il l’attribue à un article coécrit avec I. Glicksberg et O. Gross, celle du cas discret à Karlin. Savoir où une réponse se trouve fait partie de ce qu’un tel texte transmet."
+      ]
+    }
+  ],
+  "limits": [
+    "La forme de cette solution simple reste à découvrir. Un article de 1954, « The Theory of Dynamic Programming as Applied to a Smoothing Problem », signé de Bellman, Glicksberg et Gross, porte sur ce problème de lissage. Le renvoi imprimé au folio 40 désigne pourtant une autre entrée, un mémoire des mêmes auteurs annoncé comme à paraître sur les stocks : lequel des deux tient la solution du cas continu, leur lecture le dira.",
+    "La version discrète est renvoyée à « S. Karlin, A Discrete Smoothing Problem », annoncée elle aussi comme à paraître ; aucune publication de ce titre ne se retrouve sous ce nom, et la piste reste ouverte.",
+    "Le même travail a paru en 1956 dans le Journal of the Society for Industrial and Applied Mathematics, de la page 168 à la page 205. Si la troisième partie s’y retrouve sous la même forme, et l’hypothèse au même endroit, ce sont ces pages qui le diront.",
+    "Quinze folios plus loin dans le rapport, un paragraphe intitulé « Production Smoothing » traite un problème de lissage voisin où l’excédent, lui, s’accumule : les folios 50 à 52 disent ce qui les sépare."
+  ]
+}

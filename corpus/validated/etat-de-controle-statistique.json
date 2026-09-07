@@ -1,0 +1,106 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "etat-de-controle-statistique",
+  "slug": "etat-de-controle-statistique",
+  "status": "VALIDATED",
+  "title": "L'état de contrôle statistique",
+  "themes": [
+    "variation-et-controle"
+  ],
+  "theme_labels": {
+    "variation-et-controle": "Ce qu'un procédé fait varier"
+  },
+  "authors": [
+    {
+      "name": "W. A. Shewhart",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Définition de W. A. Shewhart, seul auteur de l'ouvrage. Le syntagme que porte le titre est écrit par lui : il imprime « the state of statistical control » page 146, au chapitre XI intitulé « Statistical Control », et il n'en crédite personne.",
+  "hook": "Un procédé maîtrisé est-il un procédé qui ne varie pas ?",
+  "summary": "Un phénomène est maîtrisé quand l'expérience passée permet de prévoir, au moins dans des limites, comment il variera : une qualité maîtrisée est variable, pas constante.",
+  "quotation": {
+    "text": "C'est pourquoi il est souhaitable d'atteindre l'état de maîtrise statistique où la loi naturelle des grands nombres rend la prévision possible.",
+    "attributed_to": null,
+    "reference": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931.",
+    "locator": "p. 146, ch. XI, § 1",
+    "language": "fr",
+    "original_text": "For this reason it is desirable to attain the state of statistical control in which the natural law of large numbers makes prediction possible.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (chaîne Curiosity, 7 septembre 2026) ; aucune traduction française publiée de l'ouvrage de 1931 n'a été identifiée. Deux choix. « In which » est rendu par « où » plutôt que par « dans lequel », qui portait la phrase au-delà du gabarit et ne disait pas autre chose. « The state of statistical control » est rendu par « l'état de maîtrise statistique », suivant le rendu de « control » par « maîtrise » retenu par les cartes Shewhart du dépôt ; le titre de la carte, lui, garde « contrôle », qui est le nom sous lequel le concept se cherche en français.",
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931, xiv-501 p. (LCCN 31032090)",
+      "kind": "primary",
+      "locator": "p. 6, 34 et 146",
+      "doi_isbn": "LCCN 31032090",
+      "url": null,
+      "consulted": "full-text"
+    },
+    {
+      "label": "W. A. Shewhart, « Economic Quality Control of Manufactured Product », Bell System Technical Journal, vol. 9, n° 2, avril 1930, p. 364-389.",
+      "kind": "primary",
+      "locator": "p. 364",
+      "doi_isbn": "10.1002/j.1538-7305.1930.tb00373.x",
+      "url": "https://archive.org/details/bstj9-2-364",
+      "consulted": "partial"
+    },
+    {
+      "label": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, Milwaukee, American Society for Quality Control, 1980 (réimpression).",
+      "kind": "primary",
+      "locator": null,
+      "doi_isbn": "978-0-87389-076-2",
+      "url": null,
+      "consulted": "metadata-only"
+    }
+  ],
+  "notes": [
+    "Arbitrage de traduction du lot, appliqué aux trois cartes Shewhart de cette nuit et ouvert à un recontrôle. « Control » est rendu par « maîtrise » et non par « contrôle », ce qui reconduit le choix de la carte publiée cause-de-hasard-et-cause-assignable. Les deux lecteurs ont déposé les deux rendus et ils font exactement le même nombre de caractères : le gabarit ne tranche rien, l'arbitrage est de sens seul. Le motif est pris sur le chapitre XVII, où il est le plus fort : la phrase de la page 252 exige que les qualités des matériaux soient « controlled », et le paragraphe qui la suit immédiatement s'intitule « Tolerances where 100 Per Cent Inspection Cannot be Made ». Rendre le mot par « contrôlées » ferait entendre que les matériaux doivent être inspectés, c'est-à-dire précisément ce que Shewhart écarte deux lignes plus bas. Ce qui plaide en sens contraire n'est pas nul et se dépose ici : « contrôle » est le terme d'usage de la maîtrise statistique des procédés en français, et « carte de contrôle » comme « limites de contrôle » ne se disent pas autrement. Un contrôleur qui renverserait ce choix devrait le renverser sur les trois cartes à la fois.",
+    "Ce que ce passage change à la fiche, et ce qu'il ne change pas. La carte avait reçu PASS le 25 août 2026 sur une citation de la page 6 ; son contrôleur avait nommé sa seule faiblesse, un titre portant un syntagme que les pages 6 et 34 n'emploient pas. La page 146 a été ouverte depuis et elle l'emploie : la citation y remonte, le locator de la source primaire couvre désormais les trois pages, et la phrase de l'attribution_note qui annonçait l'expression « plus loin dans le même livre » est retirée, la carte s'appuyant sur cette page. Le titre, l'accroche et le résumé sont conservés, aux deux mots près que l'arbitrage de traduction déplace, « contrôlé » devenant « maîtrisé » : la substance est celle qui a été contrôlée. Le verdict du 25 août porte sur une citation qui n'est plus celle de la carte et ne vaut donc plus pour elle ; il est conservé dans corpus/review/etat-de-controle-statistique.verdict.json.",
+    "Le titre affiche « contrôle » là où la citation affiche « maîtrise », et c'est une incohérence assumée plutôt que subie. Le titre est aussi l'identifiant de la fiche, qu'il n'est pas question de changer, et il est le nom sous lequel le concept se cherche en français ; la citation, elle, rend les mots de l'auteur. Un contrôleur peut préférer unifier, et la variante existe, de longueur identique : « C'est pourquoi il est souhaitable d'atteindre l'état de contrôle statistique où la loi naturelle des grands nombres rend la prévision possible. »",
+    "Ce que le résumé ne porte pas. Il reprend la définition générale du contrôle, page 6, qui est celle qu'avait contrôlée le premier tour ; la spécification propre au chapitre XI, à savoir que le contrôle statistique est le régime où c'est la loi naturelle des grands nombres qui rend la prévision possible, là où un contrôle seulement empirique ne le permet pas, est portée par la citation et non par le résumé.",
+    "Citation écartée, et c'est la plus tentante du chapitre : « We shall assume that the necessary and sufficient condition for statistical control is that the causes of an event satisfy the law of large numbers as do those of a constant system of chance causes » (p. 146, § 2). Elle donne la condition, mais elle fait 191 caractères en anglais et davantage en français, et la seule coupe qui la ramène sous le plafond supprime « We shall assume that », c'est-à-dire le statut d'hypothèse que Shewhart donne lui-même à sa condition. La citer amputée la transformerait en théorème.",
+    "L'état de contrôle statistique est chez Shewhart un état constaté et révocable, jamais démontré : « we perhaps never can say that the behavior of a phenomenon in the past is sufficient to prove that the phenomenon is controlled », et page 148 le fait qu'un produit ait été maîtrisé jusqu'ici ne prouve pas qu'on puisse en prévoir la suite, « provided the same essential conditions are maintained ». Aucun champ affiché n'affirme davantage.",
+    "La définition entière de la page 6, en italiques dans le texte, fait 182 caractères et ne pouvait pas être citée : la seule coupe qui la ramène sous le plafond supprime « through the use of past experience », qui est la condition même de la définition. C'est le résumé qui la porte.",
+    "Correspondance folio et feuillet du scan : elle est de 13 et non de 11 dans cette partie du livre, le feuillet n159 portant l'en-tête imprimé « 146   ECONOMIC CONTROL OF QUALITY ». Le saut de deux feuillets se produit entre la page 34 et la page 144 et n'a pas été localisé. Chaque page citée a été identifiée sur son propre en-tête, jamais par calcul.",
+    "Exemplaire ouvert : un septième tirage Van Nostrand sans année à la page de titre, numérisé par Digital Library of India sous l'item Internet Archive in.ernet.dli.2015.150272, à composition et pagination identiques. Le premier tirage de 1931 n'a pas été collationné. La préface imprimée y est datée « April, 1923 », millésime bibliographiquement impossible, constaté et non corrigé.",
+    "Piège documentaire à connaître avant tout recontrôle : les métadonnées de l'item in.ernet.dli.2015.150272 sont fausses sur deux points, la date « 1923 » et l'éditeur donné à « London ». L'image de la page de titre les dément. C'est l'image qui fait foi, jamais la notice ni la couche OCR ; celle-ci n'a servi qu'à repérer les intertitres.",
+    "La source primaire est citée sans URL, et c'est une décision motivée déjà prise par le dépôt : l'exemplaire lu appartient à une numérisation de masse dont la notice ne porte aucun champ de droits, et aucune autorisation d'ayant droit n'est constatée. Le texte a bien été lu, d'où consulted full-text ; c'est l'URL qui tombe, pas la lecture. La référence résout par son LCCN.",
+    "L'export MODS du LCCN 31032090, pièce de référence du dépôt pour cet ouvrage, a répondu HTTP 500 pendant toute la session de lecture, de même que /marcxml et /dc. La notice a été résolue par une autre voie, l'API Open Library sur le même LCCN, enregistrement OL6766665M dérivé du MARC de la Library of Congress, conforme sur les quatre éléments affichés. Provenance dérivée, déclarée comme telle.",
+    "L'article de 1930 au Bell System Technical Journal n'a été ouvert que sur sa première page, en image : signature « By W. A. SHEWHART » sans coauteur, note « Paper presented before A. A. A. S. on December 28, 1929, at Des Moines, Iowa. ». D'où consulted partial. Le syntagme « state of statistical control » n'y a pas été cherché au-delà de cette page.",
+    "Statistical Method from the Viewpoint of Quality Control (1939), où Shewhart reprend et déplace cette définition, n'a pas été ouvert : rien n'est affirmé ici sur l'évolution de sa pensée entre 1931 et 1939.",
+    "Aucune source secondaire n'a été ouverte et aucune réception francophone n'a été cherchée : l'avertissement du validateur est le compte rendu exact du dossier. La question de savoir qui a fixé en français « état de contrôle statistique » plutôt qu'« état de maîtrise statistique » reste entière. La troisième source affichée n'est pas un commentaire : c'est la réimpression de l'ouvrage par l'American Society for Quality Control, retenue parce qu'elle résout par ISBN et donne au lecteur un exemplaire trouvable ; elle n'a pas été ouverte et les folios cités ne sont pas les siens.",
+    "Matériau non porté sur la carte : la page 34 énumère cinq avantages de l'état de contrôle, tous de gestion, et la page 149 lie la constance de l'équilibre statistique à l'absence de raison a priori de croire qu'une cause assignable est entrée dans le procédé. Ni l'un ni l'autre n'est affirmé ici."
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle",
+    "date": "2026-09-07",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "CITATION — lue sur l'image de page, pas sur l'OCR. Exemplaire ouvert : Internet Archive, item in.ernet.dli.2015.150272 (scan Digital Library of India de l'édition Van Nostrand). Image demandée sans suffixe de dérivé : https://archive.org/download/in.ernet.dli.2015.150272/page/n159.jpg. L'en-tête imprimé du feuillet porte « 146   ECONOMIC CONTROL OF QUALITY », donc folio 146 vérifié sur la page elle-même et non calculé (l'écart feuillet/folio change en cours de volume : p. 6 tombe au feuillet n17, soit +11, et p. 146 au feuillet n159, soit +13).",
+      "CITATION — la phrase lue sur l'image, mot à mot : « For this reason it is desirable to attain the state of statistical control in which the natural law of large numbers makes prediction possible. » Elle est identique au champ original_text de la fiche, sans coupe ni ajout. Elle clôt le premier paragraphe de la page ; le titre de section « 2. Necessary and Sufficient Conditions for Statistical Control » suit immédiatement, ce qui confirme qu'elle appartient encore au § 1.",
+      "LOCALISATION — le feuillet précédent (https://archive.org/download/in.ernet.dli.2015.150272/page/n158.jpg) porte, lu sur l'image : « CHAPTER XI », puis « STATISTICAL CONTROL », puis « 1. Conditions for Control ». Le locator « p. 146, ch. XI, § 1 » est donc exact dans ses trois composantes.",
+      "TRADUCTION — contrôlée contre l'original anglais, membre à membre. « For this reason » / « C'est pourquoi » ; « it is desirable to attain » / « il est souhaitable d'atteindre » ; « the natural law of large numbers makes prediction possible » / « la loi naturelle des grands nombres rend la prévision possible ». Les deux écarts sont déclarés dans la fiche et aucun ne renverse le sens : « in which » rendu par « où » (relatif de lieu sur un état, usage courant), et « control » rendu par « maîtrise » (« maîtrise statistique » est le rendu français reçu de statistical control). La traduction est déclarée comme interne et non publiée ; je n'ai identifié moi-même aucune traduction française publiée de l'ouvrage de 1931.",
+      "ATTRIBUTION — l'ouvrage est signé du seul W. A. Shewhart (page de titre : « By W. A. SHEWHART, Ph.D., Member of the Technical Staff, Bell Telephone Laboratories, Inc. »). La préface (feuillet n5) remercie T. C. Fry, E. C. Molina et H. F. Dodge pour des critiques et pour l'aide au traitement des données, sans leur attribuer aucune notion. Le syntagme « the state of statistical control » est imprimé par Shewhart p. 146 sans renvoi ni crédit. Aucun antécédent d'auteur tiers ne m'est apparu : dans son propre article antérieur de 1930 (Bell System Technical Journal), le texte parle de « state of control » et d'« objective state of control », la forme « state of statistical control » apparaissant avec le chapitre XI du livre. La paternité relève donc bien de Shewhart, et pas seulement une association.",
+      "SOURCE 1 — LCCN 31032090. lccn.loc.gov répond 500 sur /marcxml et /mods (essayé : HTTP 500 sur les deux) ; j'ai donc pris la voie dérivée du MARC indiquée, openlibrary.org/api/books?bibkeys=LCCN:31032090, qui rend OL6766665M : Walter A. Shewhart, « Economic control of quality of manufactured product », D. Van Nostrand Company, Inc., New York, 1931, pagination « xiv, 501 p. », cote LC TS155 .S47, OCLC 1045408. Tous les éléments affichés par la fiche (lieu, éditeur, année, xiv-501 p., auteur) sont couverts.",
+      "SOURCE 1, réserve de provenance à déclarer — l'exemplaire numérisé que j'ai pu ouvrir porte en page de titre « SEVENTH PRINTING » : c'est un tirage postérieur de la même édition Van Nostrand (New York/Toronto/Londres), et la page de copyright de ce scan ne rend aucun millésime lisible. La pagination y est celle de la notice LCCN (xiv-501 p.) et le folio 146 est imprimé sur la page portant la citation, ce qui aligne le tirage lu sur l'édition affichée ; je n'ai toutefois pas eu sous les yeux un exemplaire identifiable comme premier tirage de 1931. Je n'ai pas pu accéder au réimpression ASQC pour recoupement : archive.org/details/economiccontrolo0000shew est en prêt, et les deux voies de recherche plein texte tentées ont échoué (ia-petabox.archive.org/services/search/... : « CONNECT tunnel failed, response 502 » ; api.archivelab.org/books/.../searchinside : connexion réinitialisée). Ce n'est pas un silence de la littérature, c'est un accès refusé.",
+      "SOURCE 2 — DOI 10.1002/j.1538-7305.1930.tb00373.x résolu chez Crossref : « Economic Quality Control of Manufactured Product », Bell System Technical Journal, vol. 9, n° 2, p. 364-389, avril 1930, auteur unique W. A. Shewhart. Conforme en tout point au libellé. L'URL affichée, archive.org/details/bstj9-2-364, résout bien vers le tiré à part correspondant (titre de l'item : « BSTJ 9: 2. April 1930: Economic Quality Control of Manufactured Product. (Shewhart, W.A.) », description « pp 364-389 ») ; j'ai ouvert l'image de sa première page, qui porte « Economic Quality Control of Manufactured Product » et « By W. A. SHEWHART ».",
+      "SOURCE 3 — ISBN 978-0-87389-076-2 résolu via OpenLibrary (OL1641789M) : Walter A. Shewhart, American Society for Quality Control, Milwaukee, Wis., 1980, xiv-501 p., note d'exemplaire « Reprint. Originally published: New York : Van Nostrand, 1931 » et « 50th anniversary commemorative reissue ». Le libellé « Milwaukee, American Society for Quality Control, 1980 (réimpression) » est exact ; la fiche ne lui attache aucun locator, donc rien d'autre à vérifier.",
+      "PROSE — le résumé est porté presque à la lettre par la page 6, ouverte en image (https://archive.org/download/in.ernet.dli.2015.150272/page/n17.jpg, en-tête imprimé « 6   ECONOMIC CONTROL OF QUALITY »). On y lit, en italique sous le titre « 3. Definition of Control » : « a phenomenon will be said to be controlled when, through the use of past experience, we can predict, at least within limits, how the phenomenon may be expected to vary in the future » — d'où « quand l'expérience passée permet de prévoir, au moins dans des limites, comment il variera ». Et plus haut sur la même page : « a controlled quality will not be a constant quality. Instead, a controlled quality must be a variable quality » — d'où « une qualité maîtrisée est variable, pas constante ». Aucun adjectif du résumé n'excède ces deux phrases.",
+      "PROSE — l'accroche « Un procédé maîtrisé est-il un procédé qui ne varie pas ? » pose une question dont la page 6 donne la réponse négative. Le seul déplacement est lexical : Shewhart écrit « quality » et « phenomenon » là où l'accroche dit « procédé ». Il n'inverse rien et n'ajoute aucune thèse — Shewhart parle lui-même de « controlled product » dans l'article de 1930 —, je ne le retiens donc pas comme débordement.",
+      "Vérifié aussi, puisque la fiche l'affiche : le troisième locator de la source 1, p. 34, existe et porte bien la matière annoncée. Le feuillet n45 porte l'en-tête imprimé « 34   ECONOMIC CONTROL OF QUALITY » et, sous « 6. Conclusion », la phrase « It seems reasonable to believe that there is an objective state of control, making possible the prediction of quality within limits even though the causes of variability are unknown. »",
+      "Hors mandat, sans effet sur le verdict : le titre de la carte dit « contrôle statistique » quand la citation traduite dit « maîtrise statistique ». L'écart est explicitement motivé dans le champ translation de la fiche (cohérence interne du dépôt d'un côté, terme de recherche français de l'autre) ; je le signale seulement pour que la divergence reste un choix assumé et non un accident.",
+      "Hors mandat : l'outil verify_reference n'était pas disponible (aucun outil mcp__documentary__* exposé, serveur en échec de connexion). Les trois références ont donc été résolues à la main, par Crossref pour le DOI et par OpenLibrary pour le LCCN et l'ISBN ; aucun de ces appels n'est resté sans réponse, donc aucune des trois conclusions ci-dessus n'est un cas de non-résolution."
+    ]
+  }
+}

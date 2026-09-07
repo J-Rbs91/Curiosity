@@ -1492,6 +1492,60 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "cout-de-remonter-l-effectif",
+    "lead": [
+      "Un atelier ne reçoit pas la même charge toute l’année. Certains mois la demande monte, d’autres elle retombe. Quand l’équipe en place peut faire plus que ce qui lui est demandé, la différence se paie en salaires versés pour des heures qui ne servent à rien, et cette dépense se lit dans les comptes tous les mois qu’elle dure. Le réflexe vient tout seul : ramener la capacité au niveau exact du besoin, et l’y maintenir.",
+      "Ce réflexe a une face qui ne se voit que plus tard. Quand la charge remonte, il faut remonter avec elle, et remonter ne se fait pas d’un trait de plume : il faut retrouver des gens, les installer, attendre qu’ils tiennent le rythme. Cette dépense-là n’apparaît pas tous les mois, elle apparaît au moment où l’on bouge. Deux dépenses de nature différente, donc : l’une se paie tant qu’on reste dans un état, l’autre au moment où l’on en change. Au printemps 1955, dans un rapport de la RAND Corporation, Richard Bellman les écrit l’une sous l’autre, en deux paragraphes, et en fait un seul critère."
+    ],
+    "sections": [
+      {
+        "title": "Ce qu’il faut faire, ce que l’équipe peut faire",
+        "paragraphs": [
+          "Le rapport s’intitule Mathematical Aspects of Scheduling Theory, il porte le numéro P-651 et la mention « Revised 23 May 1955 ». Sa troisième partie aligne des problèmes d’ordonnancement les uns après les autres, et le deuxième d’entre eux, « An Industrial Smoothing Problem », s’attaque à un lissage industriel : il s’ouvre en posant « a staff of employees capable of turning out a certain quantity of work x(t) », un personnel capable de fournir une certaine quantité de travail à l’instant t.",
+          "Deux grandeurs suffisent ensuite à décrire la situation. x(t) est ce que le personnel présent est capable de produire à l’instant t ; r(t) est ce qui est requis au même instant. Il vaut la peine de noter que x(t) ne compte pas des personnes : il compte une quantité de travail, la capacité de l’équipe telle qu’elle se mesure en production. Et la contrainte imposée vaut à chaque instant, sans exception : x(t) doit rester supérieur ou égal à r(t).",
+          "Une absence compte autant que ces deux courbes : dans ces pages, rien ne se stocke. Aucune réserve fabriquée d’avance ne vient couvrir une pointe, aucun excédent d’aujourd’hui ne sert demain. Le besoin doit être couvert au moment où il se présente, par la capacité présente à ce moment-là. C’est ce qui donne au problème sa forme dépouillée : la seule chose sur laquelle on puisse agir, c’est le niveau lui-même, et le moment où on le change."
+        ]
+      },
+      {
+        "title": "Des salaires payés au-dessus du besoin",
+        "paragraphs": [
+          "Le premier coût est celui que tout le monde voit. Bellman l’écrit ainsi : « If x(t) exceeds r(t), we consider ourselves to be losing an amount of money in excess wages proportional to (x(t)-r(t))dt over the interval (t,t+dt). » Si la capacité dépasse le besoin, de l’argent se perd en salaires payés en excès, proportionnellement à l’écart et à la durée pendant laquelle cet écart dure.",
+          "Deux fois plus haut que le besoin, deux fois plus de perte ; deux fois plus longtemps, deux fois plus de perte également. C’est le prix d’un état, et il se règle sans interruption tant qu’on y reste. Pris seul, ce coût n’a rien d’énigmatique, et il ne recommande qu’une chose : réduire l’écart à zéro, le plus vite possible."
+        ]
+      },
+      {
+        "title": "Le prix de la remontée",
+        "paragraphs": [
+          "La phrase suivante retourne la recommandation. Abaisser x(t) au niveau de r(t), écrit Bellman, expose à devoir le relever si r(t) augmente, et cela « cannot be done without cost ». La litote est de lui. Ce qu’il ajoute immédiatement après donne au coût sa forme : « and we shall take the cost of doing this proportional to dx/dt », la remontée sera comptée proportionnellement à dx/dt, c’est-à-dire à la vitesse à laquelle le niveau monte.",
+          "Un détail d’écriture décide du reste : ce n’est pas la pente qui est facturée, c’est la pente positive. La forme retenue est max (dx/dt, 0), si bien que seule la montée entre dans la note. Ce second coût ne dépend donc pas de l’endroit où l’on se trouve, mais du fait que l’on bouge et du sens dans lequel on bouge.",
+          "De quoi cette dépense est faite, le texte ne le dit pas. Ni recrutement, ni apprentissage du poste, ni désorganisation : aucun détail, aucun exemple d’atelier réel, et aucun ordre de grandeur pour la constante qui fixe ce que coûte une unité de montée. Ce qui est retenu, c’est la forme, et elle suffit au propos : une dépense attachée au mouvement, et non à la position."
+        ]
+      },
+      {
+        "title": "Descendre gratuit, monter payant",
+        "paragraphs": [
+          "Reste un troisième terme, et c’est une hypothèse, écrite comme telle : « Assuming that it costs us nothing to decrease x(t) ». Baisser la capacité ne coûte rien. Elle est posée pour simplifier le critère, non pour décrire un atelier : dans la vie d’une entreprise, se séparer de quelqu’un coûte, et souvent cher. Ce n’est donc pas un constat, c’est le trait de crayon qui rend l’asymétrie nette.",
+          "Cette asymétrie est le cœur de l’affaire. Les deux coûts ne sont pas deux montants du même genre : l’un est le prix d’être au mauvais niveau, l’autre le prix de changer de niveau. Le premier se règle en restant, le second en bougeant. Une décision qui n’avait qu’une question, à quel niveau se tenir, en a désormais deux : à quel niveau, et à quel moment en changer.",
+          "La conséquence est immédiate. Descendre au plus juste ne coûte rien aujourd’hui, mais achète une facture pour le jour où la demande remontera ; se tenir un peu au-dessus coûte des salaires maintenant, et épargne cette facture. Selon la valeur des deux coûts et selon la manière dont r(t) évolue, l’un ou l’autre peut l’emporter. Bellman n’écrit nulle part qu’il vaudrait mieux garder de la capacité d’avance : ce qu’il fait, c’est mettre les deux dépenses dans un même critère, de sorte que la comparaison devienne calculable."
+        ]
+      },
+      {
+        "title": "Un problème posé, une solution renvoyée ailleurs",
+        "paragraphs": [
+          "Le rapport dit lui-même ce qu’il est. Son résumé annonce : « The purpose of this paper is to formulate a number of significant mathematical problems which have arisen in connection with the theory of scheduling, and to discuss the methods which have been devised to treat these problems. » Formuler des problèmes et discuter les méthodes conçues pour les traiter : Bellman y aligne des énoncés, en crédite plusieurs à d’autres et renvoie les solutions à leurs auteurs. Un problème voisin, dans la même partie, est reproduit « in the form given by W. Jacobs ».",
+          "Le problème de lissage ne fait pas exception. Deux folios plus loin, Bellman écrit : « The solution turns out to have a quite simple form, see [4] », puis, pour la version où le temps avance par pas plutôt que continûment : « The solution to this problem is similar to that given for the continuous version, see Karlin [8] ». La solution existe, elle est simple, et elle est ailleurs.",
+          "Il n’y a là aucun manque. Poser un problème proprement est un acte de recherche à part entière : c’est à ce moment que se décide ce qui sera compté, ce qui ne le sera pas, et sous quelle forme. La page de titre du rapport de mai 1955 porte le seul nom de Richard Bellman ; la solution du cas continu, il l’attribue à un article coécrit avec I. Glicksberg et O. Gross, celle du cas discret à Karlin. Savoir où une réponse se trouve fait partie de ce qu’un tel texte transmet."
+        ]
+      }
+    ],
+    "limits": [
+      "La forme de cette solution simple reste à découvrir. Un article de 1954, « The Theory of Dynamic Programming as Applied to a Smoothing Problem », signé de Bellman, Glicksberg et Gross, porte sur ce problème de lissage. Le renvoi imprimé au folio 40 désigne pourtant une autre entrée, un mémoire des mêmes auteurs annoncé comme à paraître sur les stocks : lequel des deux tient la solution du cas continu, leur lecture le dira.",
+      "La version discrète est renvoyée à « S. Karlin, A Discrete Smoothing Problem », annoncée elle aussi comme à paraître ; aucune publication de ce titre ne se retrouve sous ce nom, et la piste reste ouverte.",
+      "Le même travail a paru en 1956 dans le Journal of the Society for Industrial and Applied Mathematics, de la page 168 à la page 205. Si la troisième partie s’y retrouve sous la même forme, et l’hypothèse au même endroit, ce sont ces pages qui le diront.",
+      "Quinze folios plus loin dans le rapport, un paragraphe intitulé « Production Smoothing » traite un problème de lissage voisin où l’excédent, lui, s’accumule : les folios 50 à 52 disent ce qui les sépare."
+    ]
+  },
+  {
     "conceptId": "critere-de-la-retroaction",
     "lead": [
       "Un conférencier parle devant une salle. Pendant qu’il parle, il voit des regards qui décrochent, une main levée au fond, deux personnes qui sortent ; il ralentit, il reprend son exemple autrement, il coupe une digression. Trois semaines plus tard, on lui transmet le dépouillement des questionnaires distribués à la sortie. Les deux choses lui viennent du même public, et l’usage courant leur donne le même nom : un retour, un feedback. La première a pourtant modifié ce qu’il était en train de faire ; la seconde porte sur une conférence qui n’existe plus.",
@@ -1540,6 +1594,60 @@ export const generatedDeepenings: Deepening[] = [
       "Le grief qui ouvre l’article est emprunté à Gabriel Veraldi : « l’emprunt abusif de certains concepts à d’autres disciplines, mais surtout leur utilisation dénaturée ». Il est ici tel que Paquette le rapporte. Ce que Veraldi visait au juste, et ce qu’il proposait à la place, se lit dans son propre article de 1969, « Communication : une science et non une idéologie », paru dans la même revue.",
       "La définition dont Paquette part, il l’attribue à Norbert Wiener, et aucune date n’est reprise ici pour l’entrée du mot feedback dans le vocabulaire scientifique : l’article en avance une dans son texte et sa note de bas de page en cite une autre, sous un titre d’ouvrage inexact. Le livre de Wiener porte la définition, la date et le titre : c’est lui qu’il faudra ouvrir.",
       "Quant à ce que les sciences de la communication ont fait de cette terminologie, si elles l’ont suivie, discutée ou laissée de côté, cet article seul ne peut pas le dire. La réponse est dans les revues du domaine, dans les années qui l’ont suivi."
+    ]
+  },
+  {
+    "conceptId": "criticite-technique-contre-poids-financier",
+    "lead": [
+      "Un atelier s’arrête. Ce n’est ni la presse principale ni un moteur qui manque : c’est un boulon, acheté par milliers, qui coûte quelques centimes et que personne ne surveillait de près. Le casier est vide depuis la veille, la chaîne ne repart pas, et tout ce qui se trouve en aval, machines et personnes, attend avec elle. Le montant immobilisé dans ce casier est dérisoire. Le montant que représente l’arrêt ne l’est pas.",
+      "Le magasinier n’a pourtant rien fait d’absurde. Un stock d’entreprise porte des milliers de références, et il est impossible de les tenir toutes d’aussi près : il faut trier, décider où l’on met de la rigueur et où l’on se contente d’un suivi lâche. Reste à choisir sur quoi l’on trie. Le critère qui vient en premier est l’argent, parce qu’il se mesure et qu’il se compare : on classe les articles sur ce qu’ils pèsent dans la valeur du stock, et l’on porte l’effort là où il y a le plus à gagner. En 1956, Robert Guihéneuf expose cette manière de faire sur deux pages, sans réserve, puis y ajoute une phrase."
+    ],
+    "sections": [
+      {
+        "title": "« Un très petit nombre d’articles clés »",
+        "paragraphs": [
+          "Le tri par la valeur repose sur une observation empirique, et Guihéneuf ne la donne pas pour sienne : « Les experts américains, par exemple, sont arrivés à cette conclusion que la plus grande partie de la valeur du stock se concentre sur un très petit nombre d’articles clés. » Les exemples chiffrés qu’il aligne ensuite sont eux aussi empruntés, à un article d’A. Rambaux paru dans la revue Travail et méthodes en mai 1955, qu’une note appelle au bas de la page.",
+          "De cette constatation vient la méthode : « C’est à partir de cette constatation que fut élaborée la méthode de management by exception (méthode dite parfois A.B.C.) ». Le principe en est simple. On range les articles selon la valeur totale d’investissement qu’ils représentent, et on les répartit en trois groupes. Le premier réunit le petit nombre de références qui font l’essentiel de la valeur ; le dernier réunit la foule des articles bon marché. Le tableau que Guihéneuf reproduit page 79 range ainsi dans le groupe C 69 % des articles pour 4 % de la valeur.",
+          "La conséquence pratique est immédiate, et c’est elle qui fait tout l’intérêt de la méthode : « une gestion rigoureuse du groupe A est seule requise », tandis que pour les groupes B et C « les méthodes peuvent être plus souples ». Le raisonnement est économique de bout en bout. Un suivi serré coûte du temps, des relevés, des calculs, et il serait déraisonnable de dépenser tout cela pour « des articles qui n’en valent pas la peine ». La méthode ne néglige pas le petit article par distraction : elle le néglige sciemment, et elle en donne la raison."
+        ]
+      },
+      {
+        "title": "Une phrase ajoutée contre sa propre source",
+        "paragraphs": [
+          "L’exposé se referme sur une réserve, au dernier paragraphe de la section « 3° Le coût de passation des commandes », juste avant que le texte ne passe aux techniques de gestion : « Cependant, il convient d’observer que si financièrement le groupe A est le plus important, techniquement certains articles des groupes B et C peuvent se révéler d’une importance stratégique fondamentale : une rupture du stock de boulons d’un certain type peut bloquer toute une chaîne de production. »",
+          "Dans l’imprimé, deux mots de cette phrase sont en italique : « financièrement » et « techniquement ». Toute la thèse tient dans ce contraste typographique. Les deux adverbes désignent deux manières de dire qu’un article est important, et rien n’oblige ces deux manières à désigner les mêmes articles. Le classement mesure de l’argent immobilisé ; le boulon manquant menace un flux. Ce sont deux grandeurs distinctes, et l’une ne se déduit pas de l’autre.",
+          "Le geste vaut d’être noté pour lui-même. Guihéneuf vient d’emprunter à un tiers la constatation de départ et les chiffres qui l’appuient, puis d’exposer la méthode comme une pratique reçue. L’objection, elle, ne porte aucun appel de note et se formule à la première personne éditoriale, « il convient d’observer que » : il l’oppose en son nom propre à la conclusion qu’il vient de tirer de sa source. On peut lire ces quelques lignes comme le moment où un auteur qui présentait cesse de présenter."
+        ]
+      },
+      {
+        "title": "Ce que l’argent classe, ce que la fonction classe",
+        "paragraphs": [
+          "Les deux hiérarchies répondent à deux questions différentes, et il suffit de les énoncer côte à côte pour voir qu’elles n’ont aucune raison de donner le même ordre. La première demande : combien d’argent dort dans ce casier ? La seconde demande : qu’est-ce qui s’arrête si ce casier est vide ? Un article peut coûter cher parce qu’il est massif, rare ou fabriqué sur mesure, sans que sa disparition d’un jour interrompe quoi que ce soit. Un autre peut ne rien coûter et se trouver placé à un point du processus où aucune substitution n’est possible sur le moment.",
+          "Imaginons deux casiers voisins dans le même magasin. Le premier contient une pièce coûteuse, commandée deux fois l’an, dont l’absence obligerait à décaler un montage d’une semaine : c’est ennuyeux, cela se planifie. Le second contient une visserie standard à quelques centimes, sans laquelle le poste suivant ne peut rien assembler et pour laquelle il n’existe, ce jour-là, aucun équivalent en magasin. Trié sur la valeur, le premier casier reçoit toute l’attention et le second aucune. Trié sur ce qui s’arrête, l’ordre s’inverse.",
+          "Le point délicat n’est pas qu’un article bon marché vienne à manquer, ce qui arrive tous les jours et sans grande conséquence. C’est que la souplesse accordée aux groupes B et C l’a été sur un critère qui ne regarde pas du tout ce risque. On a décidé de moins surveiller ces articles parce qu’ils pèsent peu, non parce qu’on avait établi que leur absence coûterait peu. Le risque n’a pas été jugé acceptable : il n’a pas été examiné."
+        ]
+      },
+      {
+        "title": "Une restriction, non une méthode de rechange",
+        "paragraphs": [
+          "Il faut résister à la tentation de faire dire à ces lignes plus qu’elles ne disent. Guihéneuf ne propose aucun critère de remplacement. Il n’indique pas comment on repère à l’avance le boulon qui bloquera la chaîne, ne définit pas la hiérarchie fonctionnelle qu’il appelle au paragraphe suivant, ne construit aucune classification concurrente et ne rapporte aucun cas réel de rupture. Les boulons sont un exemple donné pour se faire comprendre, pas un incident observé quelque part.",
+          "Il ne rejette pas davantage la méthode qu’il vient d’exposer. Il l’a présentée sans réserve sur deux pages, avec ses chiffres et sa justification économique, et il lui ajoute une restriction. Lire ce passage comme une réfutation serait le durcir : ce qu’il fait est plus modeste et plus utile, il nomme un angle mort. Le tri par la valeur reste ce qu’il est, un moyen de concentrer un effort limité ; il cesse seulement de pouvoir passer pour un tri sur ce qui compte.",
+          "L’objection n’est pas non plus une invitation à mieux chiffrer. Elle ne dit pas que le calcul serait mal fait, ni qu’une pénalité mieux estimée réconcilierait les deux ordres. Elle dit que le critère de tri ne vise pas la bonne grandeur. Entre la valeur d’un article et ce que son absence interrompt, ces pages n’établissent aucune conversion, et elles n’en cherchent pas."
+        ]
+      },
+      {
+        "title": "Un exposé de techniques, et une remarque en propre",
+        "paragraphs": [
+          "L’article où se loge cette phrase est pour moitié une revue de travaux d’autrui, et le lire, c’est lire l’état de ce qui se pratiquait alors. On y trouve une classification des stocks d’après P. Lebas, une formule de quantité à commander de 1933 attribuée à G. Béquart, la quantité économique de commande exposée sous le titre courant « La méthode de Whitin », les méthodes de valorisation F.I.F.O. et L.I.F.O. d’après G. Bouchet et G. Parenteau. Chacune vient d’ailleurs, et Guihéneuf le dit chaque fois.",
+          "Il écarte même explicitement de son propos la recherche technique sur les stocks, dans une note de la page 79 qui renvoie à Dvoretzky, Kiefer et Wolfowitz, puis à un article d’Econometrica de juillet 1951 dont l’imprimé écorche les noms d’auteurs. L’objection ne prétend donc pas ouvrir un programme de calcul. C’est une remarque faite en passant par quelqu’un qui présente, et c’est peut-être ce qui la rend intéressante : elle vient de la lecture attentive d’une méthode, pas de la volonté d’en fonder une autre.",
+          "Une précaution, pour qui ira voir ces pages : l’imprimé porte ses propres coquilles. Page 78, le texte annonce quatre exemples empruntés à Rambaux et n’en compose que trois. Page 81, une formule est composée avec la fraction inversée et contredit la phrase qui la suit. Le passage sur les boulons n’est touché par aucune, mais une formule ou un chiffre tirés de cet article demandent d’être vérifiés ailleurs avant d’être repris."
+        ]
+      }
+    ],
+    "limits": [
+      "La constatation qui fonde tout le tri par la valeur, et les exemples chiffrés qui l’appuient, viennent de l’article d’A. Rambaux paru dans Travail et méthodes en mai 1955, « Aspect psychologique, organisation et méthodes des services d’achat et de gestion des stocks aux U.S.A. ». C’est lui qui dira si l’objection technique répond à quelque chose que Rambaux formulait déjà, et si la restriction circulait dans la littérature américaine sur l’A.B.C. Avant de les avoir lues, personne ne peut écrire que Guihéneuf est le premier à poser cette distinction : ces pages de mai 1955 attendent leur lecteur.",
+      "Guihéneuf nomme lui-même, pour les écarter de son sujet, les travaux techniques de son époque : Dvoretzky, Kiefer et Wolfowitz, puis l’article d’Econometrica de juillet 1951 que sa note désigne par « K. Arrow, F. Harris, J. Marschack », avec deux noms fautifs. Savoir si le calcul des stocks savait alors faire une place à ce que l’objection désigne, c’est dans ces textes qu’on le verra.",
+      "Ce que cette remarque est devenue, qui l’a lue et qui l’a discutée, aucune des sources disponibles ne le dit : sa réception reste entièrement à établir. Le numéro thématique de la Revue économique où l’article paraît, « Économie de l’entreprise », est le premier endroit où voir dans quelle conversation il s’inscrivait, et les vingt-quatre pages de l’article, accessibles en ligne, portent bien plus que ce passage."
     ]
   },
   {
@@ -1945,6 +2053,62 @@ export const generatedDeepenings: Deepening[] = [
       "Merton reprend cette analyse dans un ouvrage plus tardif, Social Theory and Social Structure. Ce qu’il y retravaille, ce qu’il y nuance de son propos de 1940, se lit dans ce livre et nulle part ailleurs : c’est la suite de l’article de 1940, pour qui veut la voir.",
       "Les travaux plus tardifs sur les conditions précises de ce déplacement sont signalés plus haut sans être déployés. Sous quelles conditions exactement le mécanisme s’enclenche, et quand il ne s’enclenche pas, ces articles le disent ; il faudra les lire pour l’apprendre.",
       "L’exemple étudié par Merton porte sur une administration organisée par des règles écrites ; son extension à d’autres types d’organisations, entreprise privée ou association, n’est pas discutée dans ce texte de 1940 et reste une hypothèse de lecture plutôt qu’un point établi."
+    ]
+  },
+  {
+    "conceptId": "disponibilite-operationnelle",
+    "lead": [
+      "Un appareil immobilisé à l’atelier ne tombe pas en panne. La remarque est banale, et elle suffit à fausser une mesure : quand on compte la durée moyenne entre deux défaillances, on ne compte que les heures de marche. Les journées d’immobilisation ne s’ajoutent nulle part, elles sortent simplement du calcul. Un matériel peut donc afficher des chiffres flatteurs et n’être là, dans les faits, qu’un jour sur deux. Celui qui doit s’en servir, lui, ne compte pas en heures de marche : il compte en jours, et il veut savoir si l’appareil répondra mardi matin.",
+      "C’est ce décalage qu’un groupe de travail américain a eu à traiter dans un rapport daté du 7 janvier 1957, repris la même année dans un volume publié par l’Office of the Assistant Secretary of Defense (Research and Engineering). Sa tâche n’était pas de décrire les matériels existants, mais d’écrire ce qu’on avait le droit d’exiger d’eux : sa page de titre annonce des « MINIMUM ACCEPTABILITY FIGURES », des chiffres d’acceptabilité minimale. Or aucune des grandeurs héritées de la théorie de la fiabilité ne disait ce que l’utilisateur constate. Il en fallait une autre, et elle commence par changer d’horloge."
+    ],
+    "sections": [
+      {
+        "title": "Deux horloges qui ne comptent pas pareil",
+        "paragraphs": [
+          "Le rapport ouvre sa section de définitions en disant d’où elles viennent : « The following definitions are taken from general reliability theory », ces définitions sont reprises de la théorie générale de la fiabilité. Suivent la défaillance, la fiabilité, la durée de vie moyenne, puis le temps de disponibilité, le temps d’indisponibilité et l’effort de réparation. Rien n’y est revendiqué comme neuf, et c’est justement ce qui rend visible ce que la suite ajoute.",
+          "Les trois premières se mesurent sur du temps de marche. La fiabilité y est la probabilité de n’avoir aucune défaillance pendant un temps de fonctionnement donné, « probability of no failures in operating time t hours » ; la durée de vie moyenne est « the arithmetical mean of the operating time between failures », la moyenne arithmétique des temps de fonctionnement séparant deux défaillances. Les deux suivantes, le temps de disponibilité et le temps d’indisponibilité, se mesurent sur du temps de calendrier : elles comptent les heures du mois, qu’on ait marché ou non.",
+          "La grandeur qui nous occupe se range du second côté, et l’énoncé le dit en toutes lettres : il s’agit de « the probability that a system will perform satisfactorily at any point in calendar time », la probabilité qu’un système fonctionne de façon satisfaisante à n’importe quel moment du calendrier. Le changement d’horloge n’est pas un raffinement de mesure : c’est lui qui fait entrer la maintenance à l’intérieur de la grandeur. Tant qu’on compte en heures de marche, le temps passé à réparer est invisible ; dès qu’on compte en jours, il pèse exactement autant que les pannes."
+        ]
+      },
+      {
+        "title": "Un pourcentage, et d’où viennent les chiffres",
+        "paragraphs": [
+          "Une probabilité se négocie mal. Le rapport en donne donc l’équivalent immédiat : « the percentage of up-time is synonymous with operational readiness », le pourcentage de temps disponible est synonyme de disponibilité opérationnelle. La grandeur devient alors quelque chose qu’on peut écrire dans une spécification et vérifier ensuite : tant pour cent du temps, l’appareil est prêt à servir.",
+          "Pour les matériels embarqués sur navire, les chiffres d’acceptabilité ont d’ailleurs été établis directement sous cette forme, « since this figure of merit reflects operational needs more appropriately than mean life », parce que cet indicateur reflète les besoins opérationnels plus justement que la durée de vie moyenne. Ce n’est qu’ensuite qu’ils ont été convertis en durées de vie moyennes, à l’usage de ceux qui conçoivent.",
+          "L’ordre des opérations mérite d’être noté, car il inverse l’habitude. Le chiffre ne descend pas de la théorie vers l’usage : il part de ce que les commandants opérationnels déclaraient tolérer d’indisponibilité et de la durée d’une maintenance moyenne, et cette exigence d’emploi se traduit après coup en objectif de conception. La grandeur sert de langue commune entre deux métiers qui n’ont ni les mêmes unités ni les mêmes soucis."
+        ]
+      },
+      {
+        "title": "Tomber souvent sans cesser d’être précieux",
+        "paragraphs": [
+          "De ce déplacement suit une conséquence que le rapport écrit sans détour : « Although a system may fail frequently, if it can be restored to satisfactory operating condition in a short time, this system can be of tremendous value under certain operational requirements. » Bien qu’un système puisse défaillir fréquemment, s’il peut être remis en état de fonctionnement satisfaisant en peu de temps, il peut avoir une valeur considérable au regard de certains besoins opérationnels.",
+          "La phrase n’est pas un paradoxe, elle est une conséquence arithmétique. Imaginons deux appareils : le premier s’arrête une fois par an et reste trois semaines à l’atelier, le second s’arrête chaque semaine et repart au bout de vingt minutes. Sur le nombre de pannes, le premier l’emporte de très loin ; sur la part du calendrier pendant laquelle on peut compter sur lui, c’est le second, et c’est cette part que le rapport a choisi de mesurer.",
+          "Encore faut-il que les circonstances s’y prêtent, et le rapport les énumère au même endroit : que les périodes de fonctionnement critique soient de durée indéfinie, que la réparation soit disponible immédiatement après la défaillance, et souvent qu’il existe une redondance de systèmes. Hors de là, l’argument tombe. Un équipement qui doit tenir sans faute pendant une mission de six heures ne tire aucun bénéfice d’une réparation de dix minutes qu’il est impossible de faire en vol.",
+          "La section se referme sur la phrase qui noue les deux versants : « It is clear that this operational readiness depends upon both the reliability of the system and the speed with which it can be restored after failure. » Sur la page imprimée, le mot « and » est souligné à la machine. L’insistance porte exactement là : ni la fiabilité seule, ni la vitesse de remise en état seule, mais les deux, tenues ensemble dans une même grandeur."
+        ]
+      },
+      {
+        "title": "Le plafond n’est pas dans le matériel",
+        "paragraphs": [
+          "Si la disponibilité dépend de deux choses, on peut la relever de deux façons : espacer les pannes, ou raccourcir les réparations. La seconde voie paraît la moins chère, puisqu’elle ne demande rien au matériel lui-même. Le rapport en nomme pourtant la limite haute, plus loin, quand il en vient aux moyens de maintenance : ce qui borne le gain, c’est leur saturation.",
+          "La suite du raisonnement se laisse dérouler. Chaque remise en état consomme des ateliers, des rechanges, des techniciens et des heures. Accepter des pannes fréquentes en tablant sur des réparations rapides revient à reporter la charge sur ces moyens ; passé un certain point, ils ne suivent plus, l’appareil ne repart pas plus vite, il attend son tour, et cette attente s’ajoute au temps d’indisponibilité. Le pourcentage de temps disponible chute alors sans qu’aucun matériel se soit dégradé.",
+          "Un contresens est ainsi à écarter, et le texte n’y prête pas le flanc : il parle de réparation et de remise en état, jamais de celui qui répare, de sa charge de travail ni de son erreur. Son objet est le matériel comme chose à spécifier avant de l’acheter. Le travail de maintenance n’y est pas décrit ; il n’y apparaît que comme la capacité dont la disponibilité dépend, et que l’exigence de vitesse peut épuiser."
+        ]
+      },
+      {
+        "title": "Ce que signe un groupe de travail",
+        "paragraphs": [
+          "Il n’y a personne à citer derrière cet énoncé, et c’est le rapport lui-même qui l’établit. La page de titre du volume porte « Report by Advisory Group on Reliability of Electronic Equipment », et aucun nom d’auteur. L’avant-propos est bien signé, mais il est une lettre de transmission : son signataire, J. M. Bridges, y déclare que « This document is a consolidation of the nine task group reports and is issued at this time only for informational purposes. » Transmettre neuf rapports n’est pas les avoir écrits.",
+          "Le volume sait pourtant nommer des personnes quand il le veut. Une seule de ses sections porte une mention de responsabilité individuelle, un appendice donné « by R. R. Carhart and G. R. Herd », et ce n’est pas le texte d’où vient la phrase sur la disponibilité. Le groupe qui l’a écrite, lui, parle de lui-même au collectif, et son rapport s’ouvre sur « In submitting this report, Task Group Number One wishes to ».",
+          "Restent les listes nominatives de fin de volume, où figurent une dizaine de membres et un président. Une composition de groupe n’est pas une signature, et le rapport parallèle d’un autre groupe le formule dans les termes qu’il faut : « This report represents the final results of the work of the following members and alternate members », ce rapport présente les résultats finaux du travail des membres et membres suppléants qui suivent. Y prélever trois noms reviendrait à désigner des auteurs que le texte ne désigne pas. L’énoncé appartient au groupe, et c’est à ce niveau qu’il se cite."
+        ]
+      }
+    ],
+    "limits": [
+      "Le rapport n’invente pas le terme et ne dit pas d’où il le tient : il l’introduit sous condition, « If operational readiness is defined as », sans citer personne. Qui l’employait avant janvier 1957 reste à établir, comme la voie par laquelle cette grandeur est devenue la disponibilité des ingénieurs francophones. Aucune traduction française publiée de ce rapport n’est connue à ce jour : ces phrases se citent en anglais.",
+      "Des trois conditions énumérées avec la conséquence, la deuxième se lit mal sur l’exemplaire numérisé : le mot qui suit la lettre (b) y est trop pâle pour être donné pour sûr, et il n’entre pas dans la citation.",
+      "Le président du groupe a publié en août 1957, dans les IRE Transactions on Reliability and Quality Control, « Progress in Reliability of Military Electronic Equipment During 1956 ». Ce que cet article retient de l’année où ces chiffres se sont fixés se lit chez l’éditeur, faute de copie en accès libre.",
+      "Le volume rassemble neuf rapports de groupe de travail, et le neuvième porte sur la maintenance. Ce qu’il dit du travail de celui qui répare, et non plus du matériel réparé, tient dans ces pages : elles attendent leur lecteur."
     ]
   },
   {
@@ -2500,6 +2664,60 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "etat-de-controle-statistique",
+    "lead": [
+      "Imaginons deux ateliers qui fabriquent la même pièce. Dans le premier, les mesures bougent un peu tous les jours, jamais beaucoup, toujours dans la même fourchette, et cela dure depuis des années. Dans le second, les pièces sortent presque toutes identiques, puis une fois par mois, sans que personne sache pourquoi, il en tombe une très loin des autres. Lequel des deux est maîtrisé ? L’intuition désigne le second, qui a l’air plus régulier. C’est le premier.",
+      "Ce qui les sépare n’est pas la quantité de variation, c’est ce qu’on peut en dire à l’avance. Du premier atelier, on sait entre quelles bornes les mesures de demain tomberont ; du second, on ne sait rien du prochain écart, ni quand il viendra ni de combien. W. A. Shewhart, membre du personnel technique des Bell Telephone Laboratories, publie en 1931 chez D. Van Nostrand un livre qui fait de cette différence une définition, puis un état qu’un atelier peut chercher à atteindre."
+    ],
+    "sections": [
+      {
+        "title": "Contrôler ou maîtriser : ce que le mot recouvre",
+        "paragraphs": [
+          "Le mot que Shewhart écrit est l’anglais control, et le français l’attend avec un piège. « Contrôle » dit d’abord l’inspection : passer les pièces en revue, trier les bonnes et les mauvaises. Ce que Shewhart appelle control est presque le contraire, un état du procédé tel qu’on n’ait justement pas à regarder chaque pièce. Le chapitre XVII le montre en deux lignes : la phrase de la page 252 exige que les qualités des matériaux soient « controlled », et le paragraphe qui suit immédiatement s’intitule « Tolerances where 100 Per Cent Inspection Cannot be Made », des tolérances là où l’inspection à cent pour cent ne peut pas être faite. Rendre le mot par « contrôlées » ferait entendre qu’il faut inspecter, c’est-à-dire exactement ce que l’auteur écarte à la ligne suivante. D’où « maîtrise ».",
+          "L’autre versant se dit aussi. « Contrôle » est le terme reçu de la discipline en français : les cartes de contrôle et les limites de contrôle ne se disent pas autrement, et « état de contrôle statistique » est le nom sous lequel le concept se cherche dans une bibliothèque. Le lecteur rencontrera donc deux mots français pour une seule idée. Ce ne sont pas deux notions : c’est un mot anglais qui n’a pas d’équivalent unique de ce côté-ci."
+        ]
+      },
+      {
+        "title": "Prévoir dans des limites, à partir du passé",
+        "paragraphs": [
+          "La définition tient en une phrase, imprimée en italiques à la page 6 sous le titre « 3. Definition of Control » : « a phenomenon will be said to be controlled when, through the use of past experience, we can predict, at least within limits, how the phenomenon may be expected to vary in the future ». Trois pièces la composent, et chacune porte. L’expérience passée, qui est la seule base. La prévision, qui est le résultat. Et « at least within limits », au moins dans des limites, qui est une prétention modeste : on ne prévoit pas la mesure de demain, on prévoit la fourchette dans laquelle elle tombera.",
+          "Le critère a changé de place. Il ne porte plus sur l’objet, sur sa perfection ou sa régularité apparente, mais sur ce qu’on est capable d’en dire. Shewhart en tire la conséquence sur la même page, et elle est contre-intuitive au point qu’il l’écrit deux fois : « a controlled quality will not be a constant quality. Instead, a controlled quality must be a variable quality ». Le but n’est donc pas de supprimer la variation, ce que personne ne sait faire, mais de la rendre prévisible.",
+          "Le membre « through the use of past experience » n’est pas une précaution de style, c’est la condition même. Rien d’autre ne fonde la prévision : ni le plan de la pièce, ni la théorie de la machine, ni la promesse d’un fournisseur. Une prévision qui ne s’appuierait pas sur une série d’observations déjà faites ne serait pas de la maîtrise au sens de cette page. Un procédé neuf n’est ni maîtrisé ni déréglé : il n’a pas encore de passé, donc rien à dire de son avenir."
+        ]
+      },
+      {
+        "title": "Un état objectif, dont les causes restent inconnues",
+        "paragraphs": [
+          "Vingt-huit pages plus loin, sous un intertitre de conclusion, l’auteur franchit un pas et le dit avec prudence : « It seems reasonable to believe that there is an objective state of control, making possible the prediction of quality within limits even though the causes of variability are unknown. » Il paraît raisonnable de croire qu’il existe un état de contrôle objectif, rendant possible la prévision de la qualité dans des limites, quand bien même les causes de la variabilité sont inconnues.",
+          "Deux choses s’y jouent. La première est le statut de la phrase : il paraît raisonnable de croire, ce qui n’est ni une démonstration ni un constat, mais l’hypothèse que l’état existe dans les choses et pas seulement dans la façon d’en parler. La seconde est le point décisif pour un atelier : la prévision ne demande pas l’explication. On peut savoir entre quelles bornes une machine se tiendra sans savoir ce qui produit sa dispersion. Il n’est pas nécessaire d’avoir compris pour décider.",
+          "Cette page 34 énumère d’ailleurs cinq avantages de cet état, et ils sont tous de gestion. C’est un renseignement sur l’intention du livre : ce que l’état de maîtrise fait gagner n’est pas d’abord une connaissance, ce sont des décisions que l’on peut prendre, sur les tolérances, sur les achats, sur l’inspection, parce qu’on sait enfin de quoi demain sera fait."
+        ]
+      },
+      {
+        "title": "Ce que « statistique » ajoute à la définition",
+        "paragraphs": [
+          "La définition de la page 6 ne dit pas ce qui rend la prévision possible. On peut prévoir par simple habitude : depuis six mois, ça tient. Le chapitre XI, intitulé « Statistical Control », nomme ce qui la fonde. Sa première section s’ouvre sur les conditions du contrôle et se clôt par cette phrase : « For this reason it is desirable to attain the state of statistical control in which the natural law of large numbers makes prediction possible. » L’état de maîtrise statistique est donc un régime particulier de la maîtrise, celui où c’est la loi naturelle des grands nombres qui autorise la prévision, et non l’habitude seule.",
+          "La différence est celle qui sépare « d’habitude, ça tient » d’une prévision qui a une raison. Tant qu’on s’en remet à l’habitude, on ne sait pas ce qu’on risque en extrapolant ; quand les écarts se comportent comme le fait un système constant de causes de hasard, on dispose d’un appui pour dire jusqu’où l’extrapolation porte. C’est ce qui autorise à tracer des limites plutôt qu’à les décréter.",
+          "La condition vient aussitôt après, au début de la section suivante, « 2. Necessary and Sufficient Conditions for Statistical Control », et il faut la lire en entier : « We shall assume that the necessary and sufficient condition for statistical control is that the causes of an event satisfy the law of large numbers as do those of a constant system of chance causes ». Les quatre premiers mots ne sont pas une politesse. Nous supposerons que : Shewhart pose sa condition nécessaire et suffisante comme une hypothèse de travail. Amputée de son entrée, la phrase deviendrait un théorème, et le livre n’en démontre pas."
+        ]
+      },
+      {
+        "title": "Un état qui se constate et qui se perd",
+        "paragraphs": [
+          "Reste la question qu’un chef d’atelier posera le premier : comment sait-on qu’on y est ? La réponse de l’auteur est plus sobre qu’on ne l’attendrait. Le passé, écrit-il, ne prouve rien : « we perhaps never can say that the behavior of a phenomenon in the past is sufficient to prove that the phenomenon is controlled ». Peut-être ne pourrons-nous jamais dire que le comportement passé d’un phénomène suffit à prouver qu’il est maîtrisé. L’état se constate, il ne se démontre pas.",
+          "La page 148 attache d’ailleurs la prévision à une réserve, « provided the same essential conditions are maintained », pourvu que les mêmes conditions essentielles soient maintenues. Un procédé maîtrisé hier ne l’est pas par contrat. Et la page 149 lie la constance de l’équilibre statistique à l’absence de raison a priori de croire qu’une cause assignable est entrée dans le procédé : ce qui tient l’état, c’est qu’on n’a pas de motif de le croire rompu, et cela peut cesser d’être vrai un matin.",
+          "C’est ce qui fait de la maîtrise une surveillance et non un certificat. Une entreprise qui afficherait son procédé « sous contrôle » comme un label acquis se tromperait sur ce que le mot désigne ici : un état constaté à partir d’un passé d’observations, valable tant que rien n’est venu s’y ajouter, et qu’il faut continuer d’observer pour savoir qu’on y est encore."
+        ]
+      }
+    ],
+    "limits": [
+      "Qui a fixé en français « état de contrôle statistique » plutôt qu’« état de maîtrise statistique » reste une question entière : aucun commentateur francophone n’est mobilisé ici. Les phrases de Shewhart se citent en anglais, et une traduction française publiée du livre de 1931 reste à identifier.",
+      "Un an avant le livre, en avril 1930, Shewhart publie au Bell System Technical Journal un article présenté devant l’A. A. A. S. le 28 décembre 1929 à Des Moines. Ses pages 364 à 389 sont en ligne, et ce sont elles qui diront si l’expression y est déjà, et sous quelle forme.",
+      "Huit ans plus tard paraît Statistical Method from the Viewpoint of Quality Control (1939). Ce que la définition de 1931 y devient, ce second livre le détient, et c’est là qu’on verra comment la pensée de l’auteur a bougé entre les deux.",
+      "L’exemplaire le plus facile à se procurer aujourd’hui est la réimpression publiée en 1980 à Milwaukee par l’American Society for Quality Control, « 50th anniversary commemorative reissue ». Les folios cités ici, pages 6, 34, 146, 148 et 149, sont ceux de l’édition Van Nostrand ; qui travaille sur cette réimpression vérifiera les siens en l’ouvrant."
+    ]
+  },
+  {
     "conceptId": "exit-voice-loyalty",
     "lead": [
       "Imaginons une ligne d’autocars dont le service se dégrade : retards répétés, véhicules moins propres, correspondances manquées. Les usagers qui ont une voiture cessent peu à peu de la prendre, sans rien dire à personne. Les autres, ceux qui n’ont pas le choix, écrivent, téléphonent, viennent protester aux réunions publiques. Deux manières de réagir à la même dégradation : s’en aller, ou le dire. Pour l’exploitant, ce sont deux informations, et elles ne se valent pas. La première arrive sous forme de chiffres qui baissent, sans motif joint. La seconde arrive avec des motifs, mais de la bouche de ceux qui, précisément, restent.",
@@ -2604,6 +2822,63 @@ export const generatedDeepenings: Deepening[] = [
       "Ce texte compare, il ne démontre pas. Rien n’y établit que le feed back et l’opération soient une seule et même chose, et Piaget prend soin d’écrire comparable, puis mutatis mutandis. Ce que ce rapprochement est devenu chez lui ensuite, ce sont deux livres qui le portent, Biologie et connaissance (1967) et L’équilibration des structures cognitives (1975), où le rapport entre régulation et opération dispose d’autre chose que de dix pages. Il faudra les lire.",
       "La communication de 1953 s’appuie sur deux textes antérieurs de Piaget qu’elle nomme en note : un article de 1949 sur le problème neurologique de l’intériorisation des actions en opérations réversibles, paru dans les Archives de psychologie, p. 241-258, et un article de L’Année psychologique du volume jubilaire Piéron, p. 27-38. C’est là que se trouve ce que ces dix pages tiennent pour acquis avant même de commencer.",
       "Ce que cette communication a produit après sa lecture reste à retrouver. Deux articles consacrés à l’histoire de la cybernétique, lus intégralement, ne nomment Piaget à aucun endroit, et aucun travail postérieur repéré ne discute ce rapprochement de 1953. Qui l’a repris, qui l’a contesté, et sous quel nom, c’est dans la littérature qui a suivi qu’on le trouvera."
+    ]
+  },
+  {
+    "conceptId": "fiabilite-fixee-par-la-conception",
+    "lead": [
+      "Un appareil électronique sort d’usine, passe les essais de recette, part en service. Quelques mois plus tard, l’unité qui l’emploie le voit tomber en panne bien plus souvent qu’on ne le lui avait annoncé. On l’ouvre, on remplace ce qui a lâché, on le fait tourner longuement pour que ses faiblesses précoces se déclarent à l’atelier plutôt qu’en mission. La fréquence des pannes baisse, puis cesse de baisser. Elle s’installe à un niveau que ni les rechanges, ni la patience, ni le talent du dépanneur ne font descendre plus bas.",
+      "Reste à savoir quand ce niveau a été fixé. Un groupe consultatif réuni auprès du bureau du secrétaire adjoint à la Défense des États-Unis pour la recherche et l’ingénierie s’est posé la question, et son premier groupe de travail, celui qui devait proposer des chiffres de fiabilité minimale acceptable, y a répondu en deux pages datées du 7 janvier 1957, sous un titre qui annonce déjà le déplacement : « 1.2 Importance of Specifying Reliability », l’importance de spécifier la fiabilité. Sa réponse ne parle ni de composants ni de circuits. Elle parle de ce qu’un contrat d’achat pouvait exiger en chiffres, et de ce qu’il ne demandait à personne."
+    ],
+    "sections": [
+      {
+        "title": "Ce que le contrat chiffrait, et ce qu’il taisait",
+        "paragraphs": [
+          "Dans les marchés que décrit le groupe, les performances d’un matériel étaient écrites dans les spécifications sous forme de nombres, et ce que le constructeur devait atteindre, il le devait au sens du droit : « the performance requirements have been embodied in specifications in quantitative terms, and the manufacturer had a legal obligation to meet them ». Le mot legal est souligné dans l’imprimé. Un nombre se mesure à la livraison, un désaccord se tranche par une mesure, et une exigence chiffrée est donc opposable.",
+          "La fiabilité, elle, ne l’était pas. Le texte pose le contraste sans le contourner : ce qui manquait, page 29, était « the lack of quantitative specification of equipment reliability prior to development », l’absence de spécification chiffrée de la fiabilité du matériel avant son développement. Le constructeur en était responsable en théorie. Il n’y avait pas de nombre à comparer, donc pas de mesure à opposer, donc rien à réclamer.",
+          "La suite se déduit presque toute seule, et le groupe l’écrit sans détour : « reliability has generally been treated as an afterthought », la fiabilité a généralement été traitée après coup. Après coup veut dire ici : considérée une fois la conception arrêtée sur les exigences rigidement spécifiées. Ce n’est pas une négligence de constructeur, c’est un ordre de priorité rationnel. Ce qui peut être exigé passe d’abord, ce qui ne peut pas l’être attend son tour."
+        ]
+      },
+      {
+        "title": "Déverminer une machine déjà construite",
+        "paragraphs": [
+          "Le mot anglais employé ici est debug, et le français du métier dit déverminer : faire fonctionner un matériel déjà fabriqué assez longtemps pour que ses défauts de jeunesse se manifestent, remplacer ce qui a lâché, et livrer un exemplaire dont les faiblesses précoces sont sorties. L’opération est réelle et elle sert. Seulement elle porte sur un objet fini, et c’est là toute la question.",
+          "Car il reste, sous les défauts de jeunesse, autre chose : « the design of an electronic equipment creates an irreducible failure rate which cannot be debugged from the finished machine ». La conception crée un taux de défaillance irréductible, et la phrase qui précède immédiatement donne le verdict : « Experience has shown that this is too late ». L’expérience a montré que c’est trop tard.",
+          "Irréductible ne veut pas dire fatal, il veut dire : plus bas que ce niveau, aucune intervention sur l’exemplaire ne descend. Cela implique que ce qui a été décidé sur le plan vaut pour tous les exemplaires construits d’après lui, et que le dépanneur qui reprend une machine ne reprend pas le choix qui l’a faite. L’atelier, les rechanges, les essais de recette agissent tous en aval d’un niveau déjà arrêté."
+        ]
+      },
+      {
+        "title": "Une exigence chiffrée en chasse une qui ne l’est pas",
+        "paragraphs": [
+          "Ce qui rend ce constat intéressant hors de l’électronique des années 1950, c’est que son ressort n’est pas technique. Il tient à une dissymétrie entre deux exigences : l’une s’écrit en nombres et engage juridiquement, l’autre s’énonce en intentions. Le groupe ne tire pas cette généralisation, il décrit des matériels militaires et rien d’autre. Mais la conséquence se laisse formuler, et elle vaut d’être formulée.",
+          "Imaginons un service qui fait développer un logiciel. Le contrat fixe un temps de réponse, un nombre d’utilisateurs simultanés, une date de livraison. La facilité à reprendre ce logiciel dans trois ans, avec une autre équipe, ne s’écrit dans aucune clause chiffrée. Personne ne décide de la sacrifier ; simplement, quand un arbitrage se présente, ce qui est chiffré tranche et ce qui ne l’est pas cède.",
+          "L’autre moitié du mécanisme est le calendrier, et c’est elle qui rend la première irréparable. Si la propriété négligée est de celles que la conception fixe, alors la traiter après coup revient à la traiter quand elle n’est plus modifiable. Le retard ne se rattrape pas par de l’effort : c’est le sens exact du trop tard de la page 30."
+        ]
+      },
+      {
+        "title": "L’exigence de fiabilité doit naître en amont",
+        "paragraphs": [
+          "Le remède que le groupe tire de son diagnostic est de même nature que le mal, c’est-à-dire contractuel. Les exigences de fiabilité doivent naître chez les responsables des besoins opérationnels, ceux qui savent ce que le matériel aura à tenir, puis être traduites dans les contrats de développement d’une manière qui motive les concepteurs. Remonter d’un cran, donc : non pas mieux réparer, mais écrire plus tôt.",
+          "Le groupe ajoute aussitôt une réserve qui vaut consigne : spécifier ne suffit pas sans de quoi vérifier. Un nombre inscrit dans un contrat mais invérifiable n’ajoute qu’une exigence de plus qui ne s’opposera à rien. Les moyens de cette vérification, essais et démonstrations, sont l’affaire des autres groupes de travail réunis dans le même volume.",
+          "Restait à dire quels nombres écrire, et le groupe ne se paie pas de mots sur la solidité des siens. Sa section 4.2 prévient : « the basic numbers from which these results have been derived are matters of opinion, and widely different opinions have been offered in some cases ». Les nombres de départ sont affaire d’opinion, et des opinions très différentes ont été avancées dans certains cas. Il propose malgré tout de commencer avec les meilleurs chiffres disponibles, « in this spirit of first approximation », dans cet esprit de première approximation. La thèse n’est donc pas qu’on connaisse le bon niveau, elle est qu’un niveau discutable et écrit vaut mieux qu’une intention.",
+          "Le groupe distingue d’ailleurs deux niveaux qu’on confond volontiers. La fiabilité minimale acceptable est le plancher qu’il est chargé de chiffrer. La fiabilité optimale, dont il parle page 45, est celle qui minimise la somme du coût de développement et du coût d’exploitation. Un plancher contractuel et un optimum économique ne donnent pas les mêmes chiffres, et le calcul du second est renvoyé à un appendice."
+        ]
+      },
+      {
+        "title": "Une définition que le rapport dit avoir empruntée",
+        "paragraphs": [
+          "Ce rapport traîne une réputation qu’il ne réclame pas. On lui attribue couramment la définition de la fiabilité comme probabilité. Elle figure bien à la page 30 : « Reliability: the probability of no failure throughout a prescribed operating period. », la probabilité qu’aucune défaillance ne survienne pendant une durée de fonctionnement prescrite.",
+          "Mais la ligne qui introduit les six définitions générales de cette page dit l’inverse d’une revendication : « The following definitions are taken from general reliability theory ». Elles sont prises à la théorie de la fiabilité, et la formule donnée ici n’est d’ailleurs pas celle qui fera fortune ensuite, puisqu’elle ne mentionne ni conditions d’emploi, ni performance jugée satisfaisante. Faire de ce texte l’inventeur de la définition, c’est lui prêter ce qu’il décline.",
+          "La question de savoir qui parle se pose du reste pour tout le volume. Sa page de titre porte « Report by Advisory Group on Reliability of Electronic Equipment » et aucun nom de personne. Sa seule signature est celle de l’avant-propos, une lettre de son président qui présente le document comme « a consolidation of the nine task group reports », une consolidation des neuf rapports de groupes de travail : c’est une transmission, pas une paternité. Le rapport nomme pourtant des individus quand il le veut, en tête d’un appendice consacré au coût. La section dont vient la phrase sur la conception n’en nomme aucun.",
+          "Ce n’est pas une précaution de bibliothécaire. Le constat de la page 30 est celui d’un groupe réuni pour mettre d’accord des services, et sa force ne tient pas à l’autorité d’un chercheur : elle tient à ce que le mécanisme décrit se vérifie partout où l’on répare un matériel qu’il aurait fallu concevoir autrement."
+        ]
+      }
+    ],
+    "limits": [
+      "Le président du groupe a publié sous son seul nom, la même année, « Progress in Reliability of Military Electronic Equipment During 1956 », sept pages de J. M. Bridges dans les IRE Transactions on Reliability and Quality Control d’août 1957. Ce qu’il met dans cet état des progrès de l’année 1956, il faudra l’ouvrir pour le savoir.",
+      "Le calcul qui départage fiabilité optimale et fiabilité minimale acceptable ne se trouve pas dans les pages citées : il est à l’appendice F, « A Simple Cost Model for Optimizing Reliability ». Et les moyens de vérifier une exigence chiffrée occupent les huit autres rapports de groupes de travail du même volume, qui attendent leur lecteur.",
+      "Le rapport entre coût de possession et coût d’acquisition qu’on cite volontiers sous le nom de ce groupe ne se lit pas dans ces pages ; qui veut lui trouver une origine devra la chercher ailleurs. Ce que ce texte est devenu pour l’industrie des référentiels d’essai ne s’établit pas non plus ici.",
+      "La phrase de la page 30 rendue ici en français est traduite pour l’occasion : c’est l’anglais de l’imprimé qui fait référence, et une traduction française publiée de ce rapport reste à identifier."
     ]
   },
   {
@@ -6064,6 +6339,61 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "stock-instrument-actif-et-non-residu",
+    "lead": [
+      "Dans un magasin d’usine, chaque casier porte souvent un chiffre : le niveau en dessous duquel on repasse commande. Deux cents pièces, et l’on rachète. Ce chiffre a été posé un jour, par quelqu’un, d’après ce qu’on savait alors des besoins de l’atelier, du délai du fournisseur et de l’argent disponible. Il est commode parce qu’il dispense de réfléchir : il suffit de regarder si le casier est descendu sous la ligne. Puis les mois passent, les commandes changent, le fournisseur s’allonge, et le chiffre, lui, ne bouge pas.",
+      "Derrière ce détail se tient une question plus large : à quoi sert ce qui dort dans le magasin. On peut n’y voir que ce qui reste une fois tout le reste passé, un solde que l’inventaire constate et qu’il s’agit surtout de réduire. On peut aussi y voir un moyen d’agir, dont le niveau se règle selon ce qu’on veut faire de l’entreprise. En 1956, dans la Revue économique, Robert Guihéneuf prend nettement le second parti, et il en tire aussitôt une conséquence pratique : le chiffre écrit d’avance sur le casier, il n’en veut pas."
+    ],
+    "sections": [
+      {
+        "title": "Un mal nécessaire dont on ne gouverne rien",
+        "paragraphs": [
+          "Son article s’ouvre sur l’opinion contraire, celle qui a longtemps prévalu et dont il constate qu’elle recule. Page 68, il rappelle que les stocks ont été tenus pour « des éléments purement passifs résultant de l’événement, ne permettant certainement pas de le gouverner », et pour « une sorte de mal nécessaire ». Dans cette vue, le stock subit : il enregistre l’écart entre ce qui est entré et ce qui est sorti, il ne décide de rien, et il n’y a rien à en faire sinon le tenir bas.",
+          "Le renversement qui suit, il ne se l’attribue pas. Il écrit à la même page que « l’idée que le stock peut constituer un instrument de gestion efficace pour l’entrepreneur est relativement nouvelle », et raconte le basculement comme un trait de sa période plutôt que comme une trouvaille personnelle. Page 69, il en risque une explication : « il est vraisemblable que la collaboration de plus en plus étroite avec les ingénieurs et techniciens a favorisé cette conception ». Les ingénieurs, poursuit-il, « purent transposer leurs méthodes dans le domaine de la firme ».",
+          "Aucune invention n’est donc revendiquée. Ce qu’on lit ici est un auteur qui prend parti dans un mouvement déjà commencé, et qui en tire pour son compte une conséquence que d’autres ne tiraient pas."
+        ]
+      },
+      {
+        "title": "Une phrase à la première personne",
+        "paragraphs": [
+          "La formule positive vient quinze pages plus loin, page 83, en tête d’une section intitulée « Le moment du renouvellement ». Elle ne se présente pas comme un résultat. Elle s’ouvre sur « Le stock, tel que nous l’envisageons », et se poursuit sur « il nous semble être un instrument actif ». Le pluriel et le verbe sembler font tout le travail : l’auteur dit comment il choisit de regarder le stock, non ce que le stock serait.",
+          "La différence vaut d’être tenue, parce qu’elle décide de la suite. Traiter le stock comme un instrument n’est pas constater quelque chose de vérifiable, c’est adopter un point de vue depuis lequel certaines pratiques deviennent défendables et d’autres non. Aucun appel de note n’accompagne la phrase, aucun tiers n’y est nommé : elle est de lui, et elle est donnée pour telle.",
+          "Ce qui vient ensuite enchaîne sans transition sur ce que ce point de vue autorise : « Cette conception du stock nous permet de rejeter une méthode souvent utilisée ». Le refus n’est pas une démonstration séparée, c’est la conséquence immédiate du parti pris."
+        ]
+      },
+      {
+        "title": "Le chiffre fixé d’avance, et lui seul",
+        "paragraphs": [
+          "La méthode visée est nommée avec précision : « celle qui consiste à renouveler le stock d’un article quand ce dernier atteint une valeur minima fixée à l’avance ». Son défaut tient en une ligne, « L’inconvénient majeur d’une telle méthode est qu’elle est trop rigide », et c’est bien la rigidité, non le principe, qui est en cause.",
+          "Il faut lire ici avec soin, car il serait facile de prêter à Guihéneuf davantage qu’il ne dit. Il ne récuse pas le déclenchement sur seuil en général. À la ligne précédente, il renvoie même favorablement à une pratique du même genre : « c’est ce que nous avons déjà vu à propos du point de commande », qu’il présentait page 82 comme un usage reçu de l’industrie, « ce qu’on appelle le point de commande P ». Ce qu’il refuse est plus étroit : que le déclenchement dépende d’une valeur arrêtée une fois pour toutes.",
+          "Son objection porte sur ce qui bouge. Une telle valeur « manque de souplesse », et « on risque de dangereuses ruptures de stock ». Elle est surtout, écrit-il, impossible à déterminer rigoureusement, dépendant d’un délai de livraison variable, des possibilités financières du moment, et « de deux variables extrêmement difficiles à cerner de façon définitive : les besoins à satisfaire et la situation économique générale du marché concerné ». Un nombre fixe prétend résumer des grandeurs qui ne tiennent pas en place."
+        ]
+      },
+      {
+        "title": "Un inventaire de méthodes, puis un refus",
+        "paragraphs": [
+          "Ce refus n’est pas celui d’un homme qui ignorerait les techniques. La moitié de l’article les expose, et il les crédite scrupuleusement à d’autres : la quantité économique de commande, sous le titre courant « La méthode de Whitin » ; une formule de 1933 attribuée à G. Béquart ; la classification des stocks en cinq rubriques d’après Lebas ; la méthode dite A.B.C. d’après A. Rambaux ; les procédés de valorisation F.I.F.O. et L.I.F.O. d’après G. Bouchet et G. Parenteau. C’est après avoir déroulé tout cela qu’il écarte la valeur minima.",
+          "Il connaît aussi les travaux mathématiques qui, aux mêmes années, traitent le même problème. En note 21, page 79, il nomme Dvoretzky, Kiefer et Wolfowitz, puis Arrow, Harris et Marschak, dont l’imprimé écorche deux noms au passage. Mais il les nomme pour les mettre hors de son propos : son étude, précise-t-il, a une portée générale, et il ne s’agit pas d’une recherche technique. Nulle part il ne les discute.",
+          "La rencontre n’en est que plus intéressante, à condition de la décrire pour ce qu’elle est. Arrow, Harris et Marschak ont exposé une règle à deux niveaux, où l’on commande, sous un seuil fixé, de quoi remonter à un niveau cible : elle appartient exactement à la famille dont Guihéneuf ne veut pas page 83. Deux textes de la même décennie donnent donc à la même question des réponses opposées, l’une qui calcule le seuil et démontre qu’il est le meilleur, l’autre qui objecte que les grandeurs dont ce seuil dépend ne se laissent pas arrêter. Lire chez Guihéneuf une réfutation serait pourtant faux : il n’engage pas la discussion, et l’argument qu’il oppose n’est pas mathématique, il est pratique."
+        ]
+      },
+      {
+        "title": "Deux plans d’analyse plutôt qu’une formule",
+        "paragraphs": [
+          "Que met-il à la place ? Peu de chose, et il vaut mieux le dire nettement. Les « méthodes plus rationnelles » qu’il appelle de ses vœux sont renvoyées en note à A. Rambeaux, et aucune formule n’en est exposée. Ce qu’il avance en propre tient à deux plans d’analyse : le rôle que l’article joue dans l’entreprise, et les conditions extérieures de son achat. Il déplace ainsi la question, du calcul vers l’examen, pièce par pièce, de ce à quoi la chose sert et de la façon dont on se la procure.",
+          "Ce déplacement s’éclaire de ce qu’il écrit page 89, en comparant la gestion des stocks d’une entreprise à celle des stocks militaires : « le problème de la gestion des stocks, pour technique qu’il soit, dépend fondamentalement du but poursuivi ». Si le niveau à tenir dépend d’une fin, alors un seuil arrêté une fois pour toutes ne fige pas seulement un nombre, il fige une fin qu’on a cessé d’interroger.",
+          "L’article se clôt page 91 sur une phrase qui donne à cette position son ampleur et, du même mouvement, sa fragilité : « Quelle que soit la valeur des techniques de gestion, elles ne sauraient faire oublier que l’entrepreneur reste, en dernier lieu, le maître de sa décision. Plus qu’une science, la gestion de l’entreprise est un art. » On peut y entendre un rappel salutaire, puisque aucune règle ne dispense de juger. On peut aussi y voir ce que ce parti pris laisse en suspens : celui qui refuse le chiffre fixe garde entière l’obligation de décider quand racheter, et le texte lui donne un regard plutôt qu’un instrument."
+        ]
+      }
+    ],
+    "limits": [
+      "L’article que Guihéneuf publie en 1954 dans la même revue, aux pages 673 à 702, sur quelques aspects de la théorie de la firme, incertitude, autonomie et calculs forfaitaires, est celui qu’il se cite en note 10, page 74, au moment de demander qu’on parte du comportement observable de l’entrepreneur moderne. Le lien avec la thèse de la page 83 est de programme, non de renvoi : ce que ces pages posent, il faudra les ouvrir pour le savoir.",
+      "Les « méthodes plus rationnelles » qu’il oppose à la valeur minima se lisent ailleurs que chez lui : il les renvoie à A. Rambeaux, Travail et méthodes, juin 1954, pages 81 et 82. Sur la fréquence à laquelle réviser un seuil, et sur la manière de le faire, son texte ne dit rien.",
+      "Ce que cette position est devenue, les sources disponibles ne l’établissent pas, l’article ne donnant aucune affiliation de son auteur : ni sa postérité dans la gestion industrielle francophone, ni la façon dont elle a vieilli face aux règles de commande calculées.",
+      "Les formules et les chiffres empruntés à d’autres portent enfin les coquilles de l’imprimé : page 78, quatre exemples annoncés et trois donnés ; page 81, une formule composée avec la fraction inversée, que la phrase suivante contredit. Pour une formule, c’est chez les auteurs qu’il cite qu’il faudra la lire."
+    ]
+  },
+  {
     "conceptId": "stocks-et-flux",
     "lead": [
       "Sur un relevé bancaire, deux nombres se lisent l’un après l’autre sans qu’on remarque qu’ils ne sont pas de la même espèce. Le solde de ce matin est là tout entier, à cet instant précis : si tout mouvement s’arrêtait, il resterait ce qu’il est. Le salaire, lui, ne veut rien dire tant qu’on n’a pas dit par mois ; arrêtez le temps, et il n’existe plus. Les deux se comptent en euros, et c’est ce qui les fait confondre. Pourtant, diviser par deux un versement mensuel ne divise pas le solde par deux : cela change la pente sur laquelle il monte ou descend, et il faudra des mois pour que la différence se voie.",
@@ -6414,6 +6744,117 @@ export const generatedDeepenings: Deepening[] = [
       "Les théories que Fishburn expose ont leurs textes propres, et il les nomme lui-même : von Neumann et Morgenstern en 1944 pour le risque, Ramsey en 1931 et Savage en 1954 pour l’incertitude. C’est là que les axiomes sont posés dans les termes de leurs auteurs, avec les raisons qui les accompagnent.",
       "La théorie SSB tient ici en quelques lignes, qui l’annoncent sans l’exposer. Sa construction, ses axiomes B1 à B3 et ce qu’elle fait des préférences intransitives sont dans le travail de 1982 auquel il renvoie.",
       "Enfin, la lecture du chapitre s’appuie sur un seul exemplaire numérisé du volume de 1988, dont la transcription automatique tronque d’ailleurs la première phrase du texte. Un exemplaire imprimé permettrait de tout recouper, page par page."
+    ]
+  },
+  {
+    "conceptId": "tolerance-economique-suppose-le-controle",
+    "lead": [
+      "Sur un plan d’atelier, une cote s’écrit rarement seule : elle vient avec un plus ou moins. Douze millimètres plus ou moins un dixième, et l’affaire semble réglée. Reste la question que le plan ne pose pas : d’où sort ce dixième ? Trop large, les pièces s’ajustent mal et le produit vaut moins ; trop étroit, une part de ce qui sort de la machine part au rebut et il faut le refaire. Entre les deux il y a un nombre à choisir, et l’habitude veut qu’on le choisisse d’abord, qu’on le porte sur le plan, puis qu’on trie les pièces produites pour le faire respecter.",
+      "W. A. Shewhart, qui signe sa préface aux Bell Telephone Laboratories, prend l’affaire dans l’autre sens dans un livre paru chez D. Van Nostrand en 1931. Le chapitre XVII s’intitule « Design Limits on Variability », les limites de variabilité posées à la conception, et il y soutient que ce nombre ne peut pas se fixer à la fin. Le choisir suppose de savoir déjà comment se comporte ce qui entre dans la fabrication. La tolérance cesse alors d’être le premier geste de l’ingénieur d’études pour devenir le dernier."
+    ],
+    "sections": [
+      {
+        "title": "Le prix d’un resserrement",
+        "paragraphs": [
+          "Resserrer la plage de tolérance n’est jamais gratuit, et le chapitre pose l’affaire comme un compte à deux colonnes. D’un côté, une cote plus serrée donne un produit qui vaut davantage : les pièces s’ajustent mieux, l’assemblage tient mieux. De l’autre, plus la plage est étroite, plus il sort de pièces hors limites, qu’il faut retoucher ou jeter. Page 251, Shewhart écrit d’abord la règle d’intention, « a tolerance range on a quality X should be as small as possible », une plage de tolérance sur une qualité devrait être aussi petite que possible, puis il la corrige dans la phrase suivante : si elle est trop petite, les rejets seront excessifs.",
+          "La formule complète nomme l’opération et celui qui la conduit : « the design engineer tries to balance the rate of increase in value of reducing a tolerance range against the rate of increase of cost of such a procedure because of increased rejections ». L’ingénieur d’études cherche à équilibrer ce que le resserrement fait gagner en valeur contre ce qu’il fait perdre en rebuts. Deux choses s’y remarquent. L’arbitrage est rendu au bureau d’études, avant que rien ne soit fabriqué. Et il porte sur des vitesses, sur ce que le prochain centième ajoute et sur ce qu’il coûte, non sur deux totaux que l’on comparerait une fois pour toutes."
+        ]
+      },
+      {
+        "title": "Le nombre attendu de rebuts",
+        "paragraphs": [
+          "Une balance ne se règle qu’avec des poids. Or la colonne des rebuts n’est un nombre que si l’on sait comment les pièces qui arrivent se répartissent autour de leur moyenne. Sans cela, on ignore quelle proportion du lot tombera hors des limites que l’on est en train de tracer, et le coût du resserrement reste une inquiétude plutôt qu’une quantité.",
+          "C’est ici que la maîtrise entre, et le texte l’articule d’une seule phrase : « if a design engineer knows that the quality X of a material or piece-part entering into his design is statistically controlled […] then he knows the expected number pN of rejections ». Si l’ingénieur sait que la qualité d’un matériau ou d’une pièce entrant dans sa conception est statistiquement maîtrisée, selon une distribution qu’il connaît, alors il connaît le nombre attendu de rebuts. Une figure du chapitre porte en légende la probabilité de rejet : c’est bien de cela qu’il s’agit, d’une proportion lue sur une distribution connue.",
+          "Le mot « attendu » n’est pas décoratif. Ce nombre est celui « of rejections that will occur », des rebuts qui surviendront, et c’est une espérance calculée, non la promesse que tel lot en donnera exactement tant. La conclusion que Shewhart en tire est d’autant plus restrictive : « only under these conditions of control is it a comparatively simple process to find an economic tolerance range ». C’est seulement dans ces conditions de maîtrise que trouver une plage de tolérance économique devient un procédé relativement simple. Ailleurs, la tâche n’est pas seulement plus difficile : elle change de nature, et devient un choix qu’aucun calcul n’appuie."
+        ]
+      },
+      {
+        "title": "Maîtrise et inspection, deux choses",
+        "paragraphs": [
+          "Le mot anglais est « controlled », et il se traduit mal. En français, contrôler une pièce veut d’abord dire l’examiner pour savoir si elle est bonne, c’est-à-dire l’inspecter. Ce n’est pas de cela qu’il est question. Shewhart glose lui-même son terme à la page précédente : la qualité en jeu est « statistically controlled », statistiquement maîtrisée, ce qui décrit l’état d’un procédé et non le sort d’une pièce. Un procédé maîtrisé est un procédé dont la variation reste reconnaissable, et dont on peut donc dire d’avance entre quelles bornes il se tient.",
+          "La suite du texte lève le doute. Aussitôt après la conclusion de la page 252 vient un paragraphe intitulé « Tolerances where 100 Per Cent Inspection Cannot be Made », les tolérances là où l’inspection à cent pour cent ne peut pas être faite. Exiger que les matériaux soient maîtrisés n’est donc pas exiger qu’ils soient tous vérifiés : c’est ce que l’on demande précisément lorsque l’on ne peut pas tous les vérifier. Un second énoncé de la même page le dit dans l’autre sens : « Hence we see that it is very desirable to know that the quality of a product is controlled when it cannot be given 100 per cent inspection ».",
+          "Rendre ici « controlled » par « contrôlées » ferait entendre l’inverse de l’argument, à savoir que les matériaux doivent être inspectés, ce que les deux lignes suivantes écartent. C’est pourquoi le mot devient « maîtrisées » en français, au prix d’un écart avec l’usage reçu de la profession, qui dit bien « carte de contrôle » et « limites de contrôle » sans que personne y entende une inspection."
+        ]
+      },
+      {
+        "title": "Ce qu’il faut écrire au fournisseur",
+        "paragraphs": [
+          "De là vient le renversement le plus utile du chapitre. Devant des pièces dont on ne sait rien, le réflexe est de resserrer la tolérance du plan : puisque le résultat inquiète, on exige davantage sur le papier. Le remède n’est pas là. Ce qu’il faut changer n’est pas la largeur de la plage, c’est la nature de ce que l’on exige.",
+          "Quand l’inspection à cent pour cent est impossible, Shewhart montre qu’un seul jeu de limites ne suffit plus : il en faut deux, l’un sur la qualité des pièces, l’autre sur la fraction défectueuse du lot livré. Et il conclut, page 259, que ce qu’il faut spécifier au fournisseur est autre chose qu’une tolérance : la maîtrise elle-même, avec la valeur espérée et l’écart type acceptés. L’exigence se déplace de la pièce vers le procédé qui la produit.",
+          "Imaginons un atelier qui reçoit chaque semaine un lot de ressorts et ne peut en mesurer que quelques-uns. Resserrer la cote sur le plan ne change rien à ce qu’il ignore du reste du lot : cela augmente seulement le nombre de pièces qu’il rejettera parmi celles qu’il mesure. Demander au fournisseur un procédé stable, avec sa moyenne et sa dispersion, porte au contraire sur ce que cet atelier n’a pas les moyens de vérifier lui-même."
+        ]
+      },
+      {
+        "title": "Ce qui est de Shewhart dans ce chapitre",
+        "paragraphs": [
+          "La tolérance n’est pas son idée et il ne la revendique nulle part. Le chapitre s’ouvre en la donnant pour un usage d’atelier déjà installé, au présent et sans nommer personne : « Since all pieces of a given kind of product cannot be made identical, it is customary practice to establish allowable or tolerance ranges of variability for each of the measured quality characteristics. » Puisque toutes les pièces d’un même produit ne peuvent pas être faites identiques, l’usage est d’établir des plages de variabilité admissible pour chacune des caractéristiques mesurées.",
+          "Il y apporte de la précision, ce qui est déjà un travail : la même page sépare la plage de tolérance, les limites de tolérance et la tolérance proprement dite, qui est l’écart lui-même. Mais ce qui lui revient en propre est l’objection faite à cet usage, et la mesure de cette objection. Elle porte le titre de la section où elle est conduite, « Importance of Control in Setting Economic Tolerance », et elle se referme sur une phrase imprimée en italique, marque qu’il réserve dans ce chapitre à ses conclusions : « Hence, to set an economic tolerance range it is necessary that the qualities of materials and piece-parts be controlled. »",
+          "La distinction importe à qui veut citer juste. Lui attribuer la tolérance irait au-delà de ce que son propre chapitre autorise ; lui attribuer la condition qu’il lui impose, et le déplacement d’exigence qui en découle, est exactement ce qu’il écrit."
+        ]
+      }
+    ],
+    "limits": [
+      "Le livre de 1931 met en forme un travail commencé bien avant lui, aux Bell Telephone Laboratories. Si cette thèse a été formulée avant sa publication, c’est dans les mémorandums des années 1920 qu’elle se lit, et ce sont eux qu’il faudra ouvrir : aucune pièce disponible ici ne fonde une antériorité.",
+      "La démonstration est rapportée telle que Shewhart la conduit. Ce qui s’est écrit après 1931 sur cette thèse, la façon dont les ateliers l’ont reçue et ce qu’en dit la littérature francophone de la qualité se trouvent dans des textes qui restent à lire.",
+      "Les folios cités ici sont ceux des planches Van Nostrand. L’exemplaire le plus simple à se procurer aujourd’hui est la réimpression du cinquantenaire publiée en 1980 à Milwaukee par l’American Society for Quality Control ; qui travaille sur elle vérifiera ses propres folios en l’ouvrant. Et les phrases de Shewhart se citent en anglais : aucune traduction française publiée de l’ouvrage n’est identifiée, et une version française sert à comprendre, non à faire référence."
+    ]
+  },
+  {
+    "conceptId": "tolerances-qui-ne-s-additionnent-pas",
+    "lead": [
+      "Un mécanisme est fait de neuf pièces montées bout à bout, et ce qu’il vaut est la somme de ce que valent les neuf. Chacune arrive avec sa tolérance : une plage entre un minimum et un maximum, à l’intérieur de laquelle on la déclare bonne. Reste à écrire la tolérance de l’ensemble. Le geste qui vient de lui-même est d’additionner les neuf plages. Il donne une fourchette large, et il suppose sans le dire que les neuf pièces peuvent se trouver ensemble au bord de leur plage, du même côté, dans le même assemblage.",
+      "La question n’a rien d’oiseux : de la réponse dépendent la tolérance qu’on imposera à chaque fournisseur et le rebut qu’on acceptera. W. A. Shewhart, du personnel technique des Bell Telephone Laboratories, la pose telle quelle en 1931, au chapitre XVII d’un livre paru chez D. Van Nostrand et intitulé « Design limits on Variability » : « What shall the engineer use as the tolerance range for the overall resistance ? », que doit prendre l’ingénieur comme plage de tolérance pour la résistance d’ensemble ? Sa réponse tient dans un mot, et ce mot n’est pas faux : économique."
+    ],
+    "sections": [
+      {
+        "title": "Ce que la définition d’atelier oblige à conclure",
+        "paragraphs": [
+          "Additionner n’est pas une bévue. C’est la conséquence exacte d’une définition reçue, que Shewhart rappelle page 253 sans l’attribuer à personne tant elle va de soi dans les ateliers : « the definition of a tolerance as the range between the maximum and minimum possible values of the quality », la tolérance entendue comme l’étendue entre la plus grande et la plus petite valeur possibles de la qualité.",
+          "Si une tolérance nomme le possible, le raisonnement est sans faille. La plus grande valeur possible de l’ensemble est bien la somme des plus grandes valeurs possibles des pièces, la plus petite la somme des plus petites, et la plage de l’ensemble la somme des plages. Il n’y a là aucune erreur de calcul, et c’est ce qui rend la pratique difficile à déloger. Ce que Shewhart met en cause n’est pas la déduction, c’est le prix qu’on paie à prendre le possible pour la mesure de ce qu’il faut prévoir."
+        ]
+      },
+      {
+        "title": "Neuf pièces à leur extrême le même jour",
+        "paragraphs": [
+          "Pour qu’un ensemble atteigne la valeur haute annoncée, il faut que les neuf pièces soient à leur maximum ensemble. Une pièce au bord de sa plage est déjà rare ; neuf, du même côté, dans le même assemblage, c’est le produit de neuf raretés. Page 254, Shewhart s’arrête sur cette chance et la dit « very small indeed », très faible en effet.",
+          "Le raisonnement suppose que les pièces se rencontrent au hasard : qu’on les prenne dans des bacs sans regarder si l’une compense l’autre, et que la valeur de chacune ne dise rien de celle de ses voisines. C’est l’hypothèse de ce passage, et elle porte tout le reste. La plage additionnée décrit alors un assemblage que rien n’interdit et qu’on n’a pratiquement aucune chance de fabriquer."
+        ]
+      },
+      {
+        "title": "L’écart type d’une somme",
+        "paragraphs": [
+          "Reste à chiffrer, et c’est ici que l’écart type entre en scène. L’écart type d’une pièce est un nombre qui dit de combien ses valeurs s’écartent en moyenne de leur valeur centrale : petit quand la fabrication est serrée, grand quand elle est dispersée. La formule imprimée en haut de la page 255 donne celui de la résultante, et elle n’additionne rien : elle prend la racine carrée de la somme des carrés des écarts types des pièces.",
+          "L’écart entre les deux façons de compter se voit sur un cas simple. Supposons les neuf pièces également dispersées : additionner leurs écarts types en donne neuf fois un, prendre la racine de la somme des carrés en donne trois fois un, puisque la racine de neuf vaut trois. La fourchette additionnée est trois fois plus large que celle où l’ensemble se tiendra. C’est ce que la figure 87 met sous les yeux pour neuf pièces, et son titre porte la conclusion : « Illustrating Proper Way to Set Limits ».",
+          "Une condition rend la comparaison légitime, et Shewhart la pose explicitement dans ce paragraphe : que la tolérance de chaque pièce ait elle-même été fixée à trois écarts types de part et d’autre de sa valeur moyenne. Sans elle, on comparerait des plages qui ne couvrent pas la même part de la production, et la racine des carrés ne dirait plus rien de la tolérance."
+        ]
+      },
+      {
+        "title": "Ce que la fourchette trop large fait payer",
+        "paragraphs": [
+          "Shewhart n’écrit pas que la pratique additive est fausse. Il écrit qu’elle « may be uneconomical », qu’elle peut être peu économique, et le modal compte autant que l’adjectif : l’enjeu est une dépense, pas une faute de calcul. La suite de sa phrase dit pourquoi : la chance qu’un ensemble sorte des limites tracées à trois écarts types autour de la somme des valeurs moyennes est très faible. Improbable, donc, et non pas impossible.",
+          "Ce que cela engage en atelier se voit quand on renverse le calcul. La tolérance de l’ensemble est le plus souvent une donnée : c’est ce que l’appareil doit tenir. L’ingénieur qui la répartit en additionnant assigne alors à chaque pièce une plage plus étroite qu’il n’est nécessaire, et une plage plus étroite se paie, en rebut, en réglages, en prix d’achat. Le même ensemble pourrait se tenir avec des pièces plus lâches, à condition de savoir comment leurs dispersions se composent."
+        ]
+      },
+      {
+        "title": "Quand la résultante n’est pas une somme",
+        "paragraphs": [
+          "La racine de la somme des carrés vaut pour une somme. Le paragraphe suivant, « The General Problem of Setting Tolerances on Controlled Product », ouvert page 256, traite le cas où la qualité d’ensemble n’est pas la somme de celles des pièces mais une fonction quelconque d’entre elles. Shewhart la développe « expanded in a Taylor’s series », en série de Taylor, et n’en retient que le premier ordre.",
+          "Chaque pièce entre alors dans le compte avec un coefficient qui mesure sa part d’influence : de combien l’ensemble bouge quand cette pièce-là bouge. Son écart type est multiplié par ce coefficient avant d’être élevé au carré. La règle simple de la page 255 est le cas particulier où tous ces coefficients valent un, celui de la somme. La tenir pour la loi générale des assemblages serait lui faire dire plus qu’elle ne dit.",
+          "Le passage de l’écart type à une probabilité se fait par un emprunt que Shewhart nomme dans le texte : « Making application of Tchebycheff’s theorem », page 257. Quant à la valeur familière de 0,9973 attachée à trois écarts types, elle ne vaut que si les composants suivent une loi normale, ce qui n’est pas donné d’avance. Ni les mathématiques employées ni la pratique mise en cause ne sont de lui, et il ne les revendique pas : ce qui lui revient est l’objection et sa mesure."
+        ]
+      },
+      {
+        "title": "Ce qu’il faut alors demander à un fournisseur",
+        "paragraphs": [
+          "Une conséquence ferme la démonstration, page 259 : pour calculer la dispersion d’un ensemble, une plage de tolérance ne suffit pas. Il y faut, de chaque pièce, sa valeur moyenne et son écart type, deux nombres qu’une plage ne contient pas. Shewhart en fait une exigence : « the specification of control should include the specification of expected value X̄i and standard deviation σi of any quality characteristic Xi ». Ce qu’on doit obtenir d’un fournisseur change ainsi de nature : non pas une tolérance plus serrée, mais l’information qui permet de composer les dispersions."
+        ]
+      }
+    ],
+    "limits": [
+      "Tout tient à ce que les pièces se rencontrent au hasard et que la valeur de l’une ne dise rien des autres. Un atelier qui apparie ses pièces, une haute avec une basse, sort de ces hypothèses, et les paragraphes 5 et 6 du chapitre XVII n’examinent pas ce cas.",
+      "Que la résultante tende vers une loi normale, ce qui fonde la valeur de 0,9973, n’est pas démontré dans ces pages : Shewhart renvoie à l’appendice I de l’ouvrage, et c’est là qu’il faudra le lire.",
+      "Le chapitre continue au paragraphe 7, « Design for Minimum Variability », p. 259 à 261 : concevoir un assemblage dont la variabilité soit la plus faible possible est un autre problème, et ces pages attendent leur lecteur. La parenté avec la propagation des erreurs de mesure, Shewhart la traite en partie VII, p. 392 à 394.",
+      "Les folios cités ici sont ceux de l’édition Van Nostrand de 1931. L’exemplaire courant est la réimpression publiée à Milwaukee en 1980 par l’American Society for Quality Control pour le cinquantenaire du livre ; qui travaille sur elle y vérifiera ses folios. Aucune traduction française publiée n’est répertoriée : les phrases de Shewhart se citent en anglais."
     ]
   },
   {

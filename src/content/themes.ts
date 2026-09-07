@@ -111,6 +111,26 @@ import type { Theme } from "@/types";
  * que son périmètre demandait aussi. Le scout n'en a rapporté aucune source primaire
  * ouvrable, et **un thème sans carte ne se déclare pas** — il afficherait une page vide et
  * compterait pour de la couverture.
+ *
+ * Un quatrième thème d'`operations-management`, `fiabilite-et-disponibilite`, est déclaré le
+ * 7 septembre 2026, après le contrôle aveugle de deux cartes tirées du rapport AGREE de 1957
+ * sur la fiabilité du matériel électronique militaire. Aucun des trois thèmes existants ne les
+ * accueillait sans faute de fond : `variation-et-controle` porte le partage entre causes de
+ * hasard et causes assignables dans un procédé, `produire-et-stocker` le dosage entre stock,
+ * production et effectifs, `ordonnancer` l'ordre de passage des tâches. Le thème
+ * `erreur-humaine-et-fiabilite`, en `human-factors`, n'est pas non plus le bon : il porte sur
+ * l'erreur de l'opérateur, quand le rapport instruit ici ne parle jamais de celui qui répare,
+ * seulement du matériel comme objet de spécification.
+ *
+ * **Ce thème repose sur deux cartes tirées du même rapport et du même groupe de travail
+ * (AGREE, Task Group 1), ce qui est en dessous du critère que le dépôt applique depuis le lot
+ * de cybernétique** — un thème pourvu aux trois quarts par le même ouvrage y avait été refusé.
+ * C'est une faiblesse déclarée, pas masquée, et le précédent qui l'autorise est
+ * `securite-et-resilience`, en `human-factors`, déclaré avec une seule carte parce que le
+ * replier ailleurs aurait été une faute de fond : ici, aucun des trois thèmes existants du
+ * domaine ni celui d'`human-factors` n'accueille la fiabilité et la disponibilité d'un système
+ * au sens de l'ingénieur. Le passage suivant sur ce domaine doit lui trouver un second texte
+ * indépendant.
  */
 
 export const themes: Theme[] = [
@@ -520,6 +540,17 @@ export const themes: Theme[] = [
     keywords: ["Ordonnancement", "Temps mort", "Aléa"],
     description:
       "Quand des tâches doivent passer les unes après les autres sur les mêmes postes, le total de travail ne change pas mais le temps qu'il faut pour l'écouler, si. Ce thème porte sur ce que l'ordre déplace réellement, sur le temps mort où il agit, et sur ce qui arrive à un ordre optimal quand les durées ne sont pas celles qu'on croyait.",
+    domain: "operations-management",
+  },
+  {
+    id: "fiabilite-et-disponibilite",
+    slug: "fiabilite-et-disponibilite",
+    title: "Ce qu'on exige d'un matériel",
+    tagline:
+      "Un matériel sûr n'est pas seulement un matériel qui tombe rarement.",
+    keywords: ["Fiabilité", "Disponibilité", "Conception"],
+    description:
+      "La fiabilité d'un matériel se décide à la conception et ne se rattrape pas sur l'exemplaire fini ; sa disponibilité, comptée en temps de calendrier, dépend autant de la vitesse à le remettre en état que de la rareté de ses pannes. Ce thème porte sur ces deux grandeurs, sur ce qu'un contrat peut en exiger, et sur le moment où il est déjà trop tard pour l'exiger.",
     domain: "operations-management",
   },
   // --- Psychologie du travail -----------------------------------------------

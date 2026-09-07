@@ -1,0 +1,58 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "fiabilite-fixee-par-la-conception",
+  "lead": [
+    "Un appareil électronique sort d’usine, passe les essais de recette, part en service. Quelques mois plus tard, l’unité qui l’emploie le voit tomber en panne bien plus souvent qu’on ne le lui avait annoncé. On l’ouvre, on remplace ce qui a lâché, on le fait tourner longuement pour que ses faiblesses précoces se déclarent à l’atelier plutôt qu’en mission. La fréquence des pannes baisse, puis cesse de baisser. Elle s’installe à un niveau que ni les rechanges, ni la patience, ni le talent du dépanneur ne font descendre plus bas.",
+    "Reste à savoir quand ce niveau a été fixé. Un groupe consultatif réuni auprès du bureau du secrétaire adjoint à la Défense des États-Unis pour la recherche et l’ingénierie s’est posé la question, et son premier groupe de travail, celui qui devait proposer des chiffres de fiabilité minimale acceptable, y a répondu en deux pages datées du 7 janvier 1957, sous un titre qui annonce déjà le déplacement : « 1.2 Importance of Specifying Reliability », l’importance de spécifier la fiabilité. Sa réponse ne parle ni de composants ni de circuits. Elle parle de ce qu’un contrat d’achat pouvait exiger en chiffres, et de ce qu’il ne demandait à personne."
+  ],
+  "sections": [
+    {
+      "title": "Ce que le contrat chiffrait, et ce qu’il taisait",
+      "paragraphs": [
+        "Dans les marchés que décrit le groupe, les performances d’un matériel étaient écrites dans les spécifications sous forme de nombres, et ce que le constructeur devait atteindre, il le devait au sens du droit : « the performance requirements have been embodied in specifications in quantitative terms, and the manufacturer had a legal obligation to meet them ». Le mot legal est souligné dans l’imprimé. Un nombre se mesure à la livraison, un désaccord se tranche par une mesure, et une exigence chiffrée est donc opposable.",
+        "La fiabilité, elle, ne l’était pas. Le texte pose le contraste sans le contourner : ce qui manquait, page 29, était « the lack of quantitative specification of equipment reliability prior to development », l’absence de spécification chiffrée de la fiabilité du matériel avant son développement. Le constructeur en était responsable en théorie. Il n’y avait pas de nombre à comparer, donc pas de mesure à opposer, donc rien à réclamer.",
+        "La suite se déduit presque toute seule, et le groupe l’écrit sans détour : « reliability has generally been treated as an afterthought », la fiabilité a généralement été traitée après coup. Après coup veut dire ici : considérée une fois la conception arrêtée sur les exigences rigidement spécifiées. Ce n’est pas une négligence de constructeur, c’est un ordre de priorité rationnel. Ce qui peut être exigé passe d’abord, ce qui ne peut pas l’être attend son tour."
+      ]
+    },
+    {
+      "title": "Déverminer une machine déjà construite",
+      "paragraphs": [
+        "Le mot anglais employé ici est debug, et le français du métier dit déverminer : faire fonctionner un matériel déjà fabriqué assez longtemps pour que ses défauts de jeunesse se manifestent, remplacer ce qui a lâché, et livrer un exemplaire dont les faiblesses précoces sont sorties. L’opération est réelle et elle sert. Seulement elle porte sur un objet fini, et c’est là toute la question.",
+        "Car il reste, sous les défauts de jeunesse, autre chose : « the design of an electronic equipment creates an irreducible failure rate which cannot be debugged from the finished machine ». La conception crée un taux de défaillance irréductible, et la phrase qui précède immédiatement donne le verdict : « Experience has shown that this is too late ». L’expérience a montré que c’est trop tard.",
+        "Irréductible ne veut pas dire fatal, il veut dire : plus bas que ce niveau, aucune intervention sur l’exemplaire ne descend. Cela implique que ce qui a été décidé sur le plan vaut pour tous les exemplaires construits d’après lui, et que le dépanneur qui reprend une machine ne reprend pas le choix qui l’a faite. L’atelier, les rechanges, les essais de recette agissent tous en aval d’un niveau déjà arrêté."
+      ]
+    },
+    {
+      "title": "Une exigence chiffrée en chasse une qui ne l’est pas",
+      "paragraphs": [
+        "Ce qui rend ce constat intéressant hors de l’électronique des années 1950, c’est que son ressort n’est pas technique. Il tient à une dissymétrie entre deux exigences : l’une s’écrit en nombres et engage juridiquement, l’autre s’énonce en intentions. Le groupe ne tire pas cette généralisation, il décrit des matériels militaires et rien d’autre. Mais la conséquence se laisse formuler, et elle vaut d’être formulée.",
+        "Imaginons un service qui fait développer un logiciel. Le contrat fixe un temps de réponse, un nombre d’utilisateurs simultanés, une date de livraison. La facilité à reprendre ce logiciel dans trois ans, avec une autre équipe, ne s’écrit dans aucune clause chiffrée. Personne ne décide de la sacrifier ; simplement, quand un arbitrage se présente, ce qui est chiffré tranche et ce qui ne l’est pas cède.",
+        "L’autre moitié du mécanisme est le calendrier, et c’est elle qui rend la première irréparable. Si la propriété négligée est de celles que la conception fixe, alors la traiter après coup revient à la traiter quand elle n’est plus modifiable. Le retard ne se rattrape pas par de l’effort : c’est le sens exact du trop tard de la page 30."
+      ]
+    },
+    {
+      "title": "L’exigence de fiabilité doit naître en amont",
+      "paragraphs": [
+        "Le remède que le groupe tire de son diagnostic est de même nature que le mal, c’est-à-dire contractuel. Les exigences de fiabilité doivent naître chez les responsables des besoins opérationnels, ceux qui savent ce que le matériel aura à tenir, puis être traduites dans les contrats de développement d’une manière qui motive les concepteurs. Remonter d’un cran, donc : non pas mieux réparer, mais écrire plus tôt.",
+        "Le groupe ajoute aussitôt une réserve qui vaut consigne : spécifier ne suffit pas sans de quoi vérifier. Un nombre inscrit dans un contrat mais invérifiable n’ajoute qu’une exigence de plus qui ne s’opposera à rien. Les moyens de cette vérification, essais et démonstrations, sont l’affaire des autres groupes de travail réunis dans le même volume.",
+        "Restait à dire quels nombres écrire, et le groupe ne se paie pas de mots sur la solidité des siens. Sa section 4.2 prévient : « the basic numbers from which these results have been derived are matters of opinion, and widely different opinions have been offered in some cases ». Les nombres de départ sont affaire d’opinion, et des opinions très différentes ont été avancées dans certains cas. Il propose malgré tout de commencer avec les meilleurs chiffres disponibles, « in this spirit of first approximation », dans cet esprit de première approximation. La thèse n’est donc pas qu’on connaisse le bon niveau, elle est qu’un niveau discutable et écrit vaut mieux qu’une intention.",
+        "Le groupe distingue d’ailleurs deux niveaux qu’on confond volontiers. La fiabilité minimale acceptable est le plancher qu’il est chargé de chiffrer. La fiabilité optimale, dont il parle page 45, est celle qui minimise la somme du coût de développement et du coût d’exploitation. Un plancher contractuel et un optimum économique ne donnent pas les mêmes chiffres, et le calcul du second est renvoyé à un appendice."
+      ]
+    },
+    {
+      "title": "Une définition que le rapport dit avoir empruntée",
+      "paragraphs": [
+        "Ce rapport traîne une réputation qu’il ne réclame pas. On lui attribue couramment la définition de la fiabilité comme probabilité. Elle figure bien à la page 30 : « Reliability: the probability of no failure throughout a prescribed operating period. », la probabilité qu’aucune défaillance ne survienne pendant une durée de fonctionnement prescrite.",
+        "Mais la ligne qui introduit les six définitions générales de cette page dit l’inverse d’une revendication : « The following definitions are taken from general reliability theory ». Elles sont prises à la théorie de la fiabilité, et la formule donnée ici n’est d’ailleurs pas celle qui fera fortune ensuite, puisqu’elle ne mentionne ni conditions d’emploi, ni performance jugée satisfaisante. Faire de ce texte l’inventeur de la définition, c’est lui prêter ce qu’il décline.",
+        "La question de savoir qui parle se pose du reste pour tout le volume. Sa page de titre porte « Report by Advisory Group on Reliability of Electronic Equipment » et aucun nom de personne. Sa seule signature est celle de l’avant-propos, une lettre de son président qui présente le document comme « a consolidation of the nine task group reports », une consolidation des neuf rapports de groupes de travail : c’est une transmission, pas une paternité. Le rapport nomme pourtant des individus quand il le veut, en tête d’un appendice consacré au coût. La section dont vient la phrase sur la conception n’en nomme aucun.",
+        "Ce n’est pas une précaution de bibliothécaire. Le constat de la page 30 est celui d’un groupe réuni pour mettre d’accord des services, et sa force ne tient pas à l’autorité d’un chercheur : elle tient à ce que le mécanisme décrit se vérifie partout où l’on répare un matériel qu’il aurait fallu concevoir autrement."
+      ]
+    }
+  ],
+  "limits": [
+    "Le président du groupe a publié sous son seul nom, la même année, « Progress in Reliability of Military Electronic Equipment During 1956 », sept pages de J. M. Bridges dans les IRE Transactions on Reliability and Quality Control d’août 1957. Ce qu’il met dans cet état des progrès de l’année 1956, il faudra l’ouvrir pour le savoir.",
+    "Le calcul qui départage fiabilité optimale et fiabilité minimale acceptable ne se trouve pas dans les pages citées : il est à l’appendice F, « A Simple Cost Model for Optimizing Reliability ». Et les moyens de vérifier une exigence chiffrée occupent les huit autres rapports de groupes de travail du même volume, qui attendent leur lecteur.",
+    "Le rapport entre coût de possession et coût d’acquisition qu’on cite volontiers sous le nom de ce groupe ne se lit pas dans ces pages ; qui veut lui trouver une origine devra la chercher ailleurs. Ce que ce texte est devenu pour l’industrie des référentiels d’essai ne s’établit pas non plus ici.",
+    "La phrase de la page 30 rendue ici en français est traduite pour l’occasion : c’est l’anglais de l’imprimé qui fait référence, et une traduction française publiée de ce rapport reste à identifier."
+  ]
+}
