@@ -1,0 +1,88 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "disponibilite-operationnelle",
+  "slug": "disponibilite-operationnelle",
+  "status": "CANDIDATE",
+  "title": "La disponibilité opérationnelle",
+  "themes": [
+    "fiabilite-et-disponibilite"
+  ],
+  "theme_labels": {
+    "fiabilite-et-disponibilite": "Ce qu'on exige d'un matériel"
+  },
+  "domain": "operations-management",
+  "authors": [
+    {
+      "name": "D. H. Wagner",
+      "app_author_id": null
+    },
+    {
+      "name": "R. R. Carhart",
+      "app_author_id": null
+    },
+    {
+      "name": "G. R. Herd",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Le volume d'ensemble n'a pas d'auteur : sa page de titre porte « Report by Advisory Group on Reliability of Electronic Equipment » et sa seule signature est celle de l'avant-propos, une lettre de transmission de J. M. Bridges qui déclare le document « a consolidation of the nine task group reports ». Le passage vient du rapport du Task Group 1, qui porte sa propre page de titre datée du 7 janvier 1957, et la liste des membres range sous ce groupe D. H. Wagner, président, R. R. Carhart et G. R. Herd. Retenir ces trois noms est une lecture de la mise en page de cette liste, et se déclare comme telle.",
+  "hook": "Un matériel qui tombe souvent peut-il valoir mieux qu'un matériel long à réparer ?",
+  "summary": "Comptée en temps de calendrier et non en temps de fonctionnement, la disponibilité dépend de deux choses : la fiabilité du système et la rapidité de sa remise en état.",
+  "quotation": {
+    "text": "[…] cette disponibilité opérationnelle dépend à la fois de la fiabilité du système et de la rapidité de sa remise en état après défaillance.",
+    "attributed_to": null,
+    "reference": "Advisory Group on Reliability of Electronic Equipment, Reliability of Military Electronic Equipment, 1957, rapport du Task Group 1.",
+    "locator": "p. 32, section 2.4",
+    "language": "fr",
+    "original_text": "It is clear that this operational readiness depends upon both the reliability of the system and the speed with which it can be restored after failure.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (chaîne Curiosity, 7 septembre 2026) ; aucune traduction française publiée de ce rapport n'a été identifiée. Quatre choix. La coupe porte sur « It is clear that », marqueur d'assertion et non contenu, et se signale par […] : toute version française littérale dépassait le plafond, la plus courte relevée atteignant 153 caractères. « Operational readiness » est rendu par « disponibilité opérationnelle », terme consacré en sûreté de fonctionnement francophone, plutôt que par « état de préparation opérationnelle », qui désigne en français militaire la préparation d'une unité et non une grandeur du matériel. « Both » est rendu par « à la fois » : c'est cette insistance que la phrase existe pour dire, et le mot « and » est d'ailleurs souligné dans l'imprimé, ce que la carte ne peut pas rendre. « The speed with which it can be restored » est nominalisé en « la rapidité de sa remise en état », la relative coûtant treize caractères de plus sans rien dire de plus.",
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "Advisory Group on Reliability of Electronic Equipment, Reliability of Military Electronic Equipment, Office of the Assistant Secretary of Defense (Research and Engineering), 4 juin 1957 (DTIC AD-141476).",
+      "kind": "primary",
+      "locator": "p. 32, Task Group 1, section 2.4",
+      "doi_isbn": "DTIC AD0141476",
+      "url": "https://archive.org/details/DTIC_AD0141476",
+      "consulted": "full-text"
+    },
+    {
+      "label": "J. M. Bridges, « Progress in Reliability of Military Electronic Equipment During 1956 », IRE Transactions on Reliability and Quality Control, n° PGRQC-11, août 1957, p. 1-7.",
+      "kind": "primary",
+      "locator": "p. 1-7",
+      "doi_isbn": "10.1109/ire-pgrqc.1957.5007140",
+      "url": "https://doi.org/10.1109/ire-pgrqc.1957.5007140",
+      "consulted": "metadata-only"
+    }
+  ],
+  "notes": [
+    "Thème nouveau, porté par cette fiche et par sa voisine, et proposé au contrôle plutôt que déclaré : la rédaction ne touche pas src/content/themes.ts. Identifiant proposé : fiabilite-et-disponibilite. Titre affiché : « Ce qu'on exige d'un matériel ». Accroche de thème : « Un matériel sûr n'est pas seulement un matériel qui tombe rarement. » Description proposée : la fiabilité d'un matériel se décide à la conception et ne se rattrape pas sur l'exemplaire fini ; sa disponibilité, comptée en temps de calendrier, dépend autant de la vitesse à le remettre en état que de la rareté de ses pannes. Ce thème porte sur ces deux grandeurs, sur ce qu'un contrat peut en exiger, et sur le moment où il est déjà trop tard pour l'exiger. Motif de ne pas le replier sur un thème existant : variation-et-controle porte le partage entre causes de hasard et causes assignables dans un procédé de fabrication, produire-et-stocker le dosage entre stock, production et effectifs, ordonnancer l'ordre de passage. Aucun des trois n'accueille la fiabilité et la disponibilité d'un système au sens de l'ingénieur sans faute de fond. Le thème erreur-humaine-et-fiabilite existe en human-factors et n'est pas le bon non plus : il porte sur l'erreur de l'opérateur, quand ce rapport ne parle jamais de celui qui répare, seulement du matériel comme objet de spécification. Le thème repose sur deux cartes tirées du même rapport et du même groupe de travail, ce qui est en dessous du critère que le dépôt applique depuis le lot de cybernétique : sa déclaration se fera après le contrôle aveugle, ou ne se fera pas.",
+    "Le changement d'horloge est le nerf de la définition et le résumé le porte : les six définitions générales de la section 2.1 comptent en temps de fonctionnement, celle-ci compte en temps de calendrier, « the probability that a system will perform satisfactorily at any point in calendar time », et c'est ce qui fait entrer la maintenance dans la grandeur. Le rapport pose l'équivalence entre cette probabilité et le pourcentage d'« up-time ».",
+    "La conséquence contre-intuitive que porte l'accroche est écrite : « Although a system may fail frequently, if it can be restored to satisfactory operating condition in a short time, this system can be of tremendous value under certain operational requirements. » Elle vaut sous les trois conditions que le rapport énumère au même endroit : des périodes critiques de fonctionnement de durée indéfinie, une réparation disponible immédiatement après défaillance, et souvent une redondance de systèmes.",
+    "Le rapport ne revendique pas d'avoir forgé « operational readiness » : sa formule est conditionnelle, « If operational readiness is defined as », et il ne cite aucune source pour ce terme. Aucune antériorité n'a été cherchée et rien n'est affirmé ici sur l'origine du terme. De même, la voie par laquelle il est devenu « disponibilité » puis « disponibilité opérationnelle » dans la normalisation francophone n'a pas été instruite.",
+    "Ce que le rapport fait de cette grandeur, et qui n'est pas sur la carte : pour les matériels embarqués sur navire, les figures ont été développées directement en pourcentage d'up-time, « since this figure of merit reflects operational needs more appropriately than mean life », puis converties en durées de vie moyennes ; les chiffres venaient de ce que les commandants opérationnels déclaraient tolérer d'indisponibilité et de la durée d'une maintenance moyenne ; et la section 5.5 nomme la limite haute de la grandeur, la saturation des moyens de maintenance.",
+    "Un contresens à écarter d'avance, parce qu'il est à une frontière ouverte. La section 2.4 parle de réparation et de remise en état, jamais de l'opérateur, de sa charge ni de son erreur : l'objet est la disponibilité du matériel comme grandeur à spécifier, pas le travail de celui qui répare. Le passage du volume qui bascule chez human-factors est ailleurs, dans le rapport du Task Group 9 sur la maintenance, vu en recherche plein texte et non instruit.",
+    "Réserve d'attribution, à ne pas lisser. Le choix de porter en auteurs les trois seuls noms que la liste des membres range sous « Task Group 1 » sans rattachement de service est la lecture que le lecteur primaire fait de la mise en page, pas une déclaration de la pièce : la page distingue typographiquement Wagner, Carhart et Herd, puis ouvre des rubriques ARMY, NAVY et AIR FORCE sous lesquelles figurent des représentants et leurs suppléants. Un contrôleur peut préférer réduire à Wagner seul, dont la pièce nomme le rôle, ou exiger la liste complète. Ce qui appuie les trois retenus est un fait interne au rapport : page 45, « Appendix F by R. R. Carhart and G. R. Herd develops a method of determining the optimum reliability based upon a simple cost model », seule attribution individuelle de tout le rapport, et elle vise deux des trois. Les noms des représentants des trois armes ne sont pas tous lisibles sur ce scan et n'ont donc pas été transcrits.",
+    "Un mot de la section 2.4 est trop pâle pour être affirmé, celui qui suit « (b) » dans l'énumération des trois conditions ; le lecteur le lit « repair » et le porte entre crochets dans son dossier. Il n'entre pas dans la citation.",
+    "La couche OCR de l'item est très dégradée et elle a menti sur un fait vérifiable, en datant le rapport du Task Group 1 du « 9 January 1957 » quand l'image du feuillet n28 porte sans ambiguïté « 7 January 1957 ». Aucun mot cité ne vient de l'OCR : les citations ont été relues caractère par caractère sur les images de feuillet demandées sans suffixe.",
+    "Étendue réelle de la lecture, très inférieure au volume. Le rapport du Task Group 1, feuillets n28 à n55, pages 21 à 49, a été lu en entier sur l'OCR, et quatorze feuillets ont été relus sur l'image, folio imprimé vérifié un par un. Les huit autres rapports de groupe de travail, les parties de synthèse et les appendices B à G n'ont été parcourus qu'en recherche plein texte. La mention consulted full-text porte sur l'item, ouvert sans restriction, pas sur une lecture intégrale de 375 feuillets. La correspondance folio et feuillet change en cours de volume, de 6 dans ce rapport et de 1 en fin de volume ; aucune page citée n'a été identifiée par calcul.",
+    "Le rapport n'a pas de notice de catalogue trouvée : la Library of Congress, Open Library et Crossref ne le connaissent pas, et le service DTIC répond 403 depuis cette chaîne, sur la notice comme sur le PDF. La source primaire est donc citée par son numéro d'accession et par l'item Internet Archive, qui est ouvert et n'exige aucun compte. Cet item ne porte ni champ rights ni licenseurl dans ses métadonnées ; les mentions imprimées du volume, dont la vente par le Superintendent of Documents au prix de 1,75 dollar, sont des autorisations administratives de diffusion et non des licences d'éditeur. Accès public constaté, autorisation d'ayant droit non constatée.",
+    "Aucune source secondaire n'a été ouverte et aucune réception francophone n'a été cherchée : l'avertissement du validateur est le compte rendu exact du dossier, et aucune caution non lue n'a été ajoutée à sa place. La seconde source affichée n'est pas un commentaire : c'est un article du président du groupe sur les travaux de la même année, résolu par son DOI et non ouvert, qui a servi à confirmer par une voie indépendante les initiales de la signature de l'avant-propos."
+  ],
+  "review": {
+    "reviewer": null,
+    "date": null,
+    "attribution": "non-verifiee",
+    "quotation": "non-verifiee",
+    "sources": "non-verifiees",
+    "prose": "non-verifiee",
+    "verdict": "PENDING",
+    "rounds": 0,
+    "notes": []
+  }
+}

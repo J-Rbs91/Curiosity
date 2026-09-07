@@ -1,0 +1,87 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "fiabilite-fixee-par-la-conception",
+  "slug": "fiabilite-fixee-par-la-conception",
+  "status": "CANDIDATE",
+  "title": "La fiabilité se fixe à la conception",
+  "themes": [
+    "fiabilite-et-disponibilite"
+  ],
+  "theme_labels": {
+    "fiabilite-et-disponibilite": "Ce qu'on exige d'un matériel"
+  },
+  "domain": "operations-management",
+  "authors": [
+    {
+      "name": "D. H. Wagner",
+      "app_author_id": null
+    },
+    {
+      "name": "R. R. Carhart",
+      "app_author_id": null
+    },
+    {
+      "name": "G. R. Herd",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Le volume d'ensemble n'a pas d'auteur : sa page de titre porte « Report by Advisory Group on Reliability of Electronic Equipment » et sa seule signature est celle de l'avant-propos, une lettre de transmission de J. M. Bridges qui déclare le document « a consolidation of the nine task group reports ». Le passage vient du rapport du Task Group 1, qui porte sa propre page de titre datée du 7 janvier 1957, et la liste des membres range sous ce groupe D. H. Wagner, président, R. R. Carhart et G. R. Herd. Retenir ces trois noms est une lecture de la mise en page de cette liste, et se déclare comme telle. Le rapport ne revendique pas la définition de la fiabilité que la littérature lui prête : la ligne qui l'introduit, page 30, dit que ses six définitions générales sont empruntées, « taken from general reliability theory ».",
+  "hook": "Peut-on rattraper sur la machine finie ce que le schéma a déjà décidé ?",
+  "summary": "Les performances étaient chiffrées et légalement dues, la fiabilité non : traitée après coup, elle vient trop tard, la conception ayant fixé un plancher de défaillance.",
+  "quotation": {
+    "text": "[…] la conception d'un matériel électronique crée un taux de défaillance irréductible qu'on ne peut plus déverminer sur la machine finie.",
+    "attributed_to": null,
+    "reference": "Advisory Group on Reliability of Electronic Equipment, Reliability of Military Electronic Equipment, 1957, rapport du Task Group 1.",
+    "locator": "p. 30, section 1.2",
+    "language": "fr",
+    "original_text": "Experience has shown that this is too late -- the design of an electronic equipment creates an irreducible failure rate which cannot be debugged from the finished machine.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (chaîne Curiosity, 7 septembre 2026) ; aucune traduction française publiée de ce rapport n'a été identifiée. Trois choix. La coupe retire « Experience has shown that this is too late », qui est le constat précédant l'explication ; c'est l'explication qui porte le mécanisme, et la version longue dépassait le plafond de quelques caractères. Elle se signale par […] et le « trop tard » perdu est repris par le résumé. « Debugged » est rendu par « déverminer », terme de métier français de l'élimination des défauts de jeunesse d'un matériel électronique, comme l'original emploie le terme de métier anglais de la même opération ; « éliminer » tenait dans le gabarit mais perdait l'idée d'une opération de mise au point sur exemplaire fini. « Which cannot be debugged from » devient « qu'on ne peut plus déverminer sur » : le « plus » rend le « trop tard » de la phrase amputée. Le tiret double de l'imprimé, qui n'est pas un cadratin, disparaît avec la coupe.",
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "Advisory Group on Reliability of Electronic Equipment, Reliability of Military Electronic Equipment, Office of the Assistant Secretary of Defense (Research and Engineering), 4 juin 1957 (DTIC AD-141476).",
+      "kind": "primary",
+      "locator": "p. 29-30, Task Group 1, section 1.2",
+      "doi_isbn": "DTIC AD0141476",
+      "url": "https://archive.org/details/DTIC_AD0141476",
+      "consulted": "full-text"
+    },
+    {
+      "label": "J. M. Bridges, « Progress in Reliability of Military Electronic Equipment During 1956 », IRE Transactions on Reliability and Quality Control, n° PGRQC-11, août 1957, p. 1-7.",
+      "kind": "primary",
+      "locator": "p. 1-7",
+      "doi_isbn": "10.1109/ire-pgrqc.1957.5007140",
+      "url": "https://doi.org/10.1109/ire-pgrqc.1957.5007140",
+      "consulted": "metadata-only"
+    }
+  ],
+  "notes": [
+    "Thème nouveau, porté par cette fiche et par sa voisine, et proposé au contrôle plutôt que déclaré : la rédaction ne touche pas src/content/themes.ts. Identifiant proposé : fiabilite-et-disponibilite. Titre affiché : « Ce qu'on exige d'un matériel ». Accroche de thème : « Un matériel sûr n'est pas seulement un matériel qui tombe rarement. » Description proposée : la fiabilité d'un matériel se décide à la conception et ne se rattrape pas sur l'exemplaire fini ; sa disponibilité, comptée en temps de calendrier, dépend autant de la vitesse à le remettre en état que de la rareté de ses pannes. Ce thème porte sur ces deux grandeurs, sur ce qu'un contrat peut en exiger, et sur le moment où il est déjà trop tard pour l'exiger. Motif de ne pas le replier sur un thème existant : variation-et-controle porte le partage entre causes de hasard et causes assignables dans un procédé de fabrication, produire-et-stocker le dosage entre stock, production et effectifs, ordonnancer l'ordre de passage. Aucun des trois n'accueille la fiabilité et la disponibilité d'un système au sens de l'ingénieur sans faute de fond. Le thème erreur-humaine-et-fiabilite existe en human-factors et n'est pas le bon non plus : il porte sur l'erreur de l'opérateur, quand ce rapport ne parle jamais de celui qui répare, seulement du matériel comme objet de spécification. Le thème repose sur deux cartes tirées du même rapport et du même groupe de travail, ce qui est en dessous du critère que le dépôt applique depuis le lot de cybernétique : sa déclaration se fera après le contrôle aveugle, ou ne se fera pas.",
+    "Le mécanisme est contractuel avant d'être technique, et c'est ce que porte la première moitié du résumé : « the performance requirements have been embodied in specifications in quantitative terms, and the manufacturer had a legal obligation to meet them », le mot « legal » étant souligné dans l'imprimé, alors que le constructeur n'était responsable de la fiabilité qu'en théorie. La conséquence suit mécaniquement : « reliability has generally been treated as an afterthought », c'est-à-dire considérée une fois la conception arrêtée sur les exigences rigidement spécifiées.",
+    "Le contresens attendu sur ce rapport, écarté ici. La définition de la fiabilité comme probabilité, que la littérature attache couramment au nom de l'AGREE, figure bien page 30, section 2.1 : « Reliability: the probability of no failure throughout a prescribed operating period. » Mais la ligne qui l'introduit désavoue la paternité, « The following definitions are taken from general reliability theory », et la formule donnée n'est d'ailleurs pas celle qui a fait fortune ensuite, ne comportant ni « stated conditions » ni « satisfactory performance ». La carte n'attribue donc pas cette définition au rapport, et c'est pourquoi le passage le plus évident du lot n'est pas cité.",
+    "Le remède que le groupe tire de ce mécanisme est un remède de spécification et de contrat, remontant à l'amont : les exigences de fiabilité doivent naître des responsables des besoins opérationnels, puis être traduites dans les contrats de développement, d'une manière qui motive les concepteurs ; et le groupe ajoute aussitôt que spécifier ne suffit pas sans de quoi vérifier, ce qui est l'objet des autres groupes de travail. Rien de ce remède n'est porté par les champs affichés.",
+    "Le rapport ne cache pas la faiblesse de sa base et une carte ne doit pas la lui prêter plus solide : la section 4.2 rappelle que « the basic numbers from which these results have been derived are matters of opinion, and widely different opinions have been offered in some cases », et la section 5.7 assume un amorçage, commencer à spécifier avec les meilleurs chiffres disponibles, « in this spirit of first approximation ». Cette dernière phrase a été mesurée et écartée : elle porte un autre concept, l'amorçage d'un référentiel par des chiffres imparfaits, qui mériterait sa propre fiche.",
+    "Le rapport instruit ici ne contient pas le rapport entre coût de possession et coût d'acquisition qu'on lui prête souvent : la recherche plein texte du volume sur les formulations attendues n'a rendu que deux occurrences, aucune ne portant ce rapport. Ce que le Task Group 1 dit du coût est autre chose, page 45 : il existe une fiabilité optimale, distincte de la fiabilité minimale acceptable, qui minimise la somme du coût de développement et du coût opérationnel, et sa méthode est renvoyée à l'appendice F, non lu et non affirmé ici.",
+    "Réserve d'attribution, à ne pas lisser. Le choix de porter en auteurs les trois seuls noms que la liste des membres range sous « Task Group 1 » sans rattachement de service est la lecture que le lecteur primaire fait de la mise en page, pas une déclaration de la pièce : la page distingue typographiquement Wagner, Carhart et Herd, puis ouvre des rubriques ARMY, NAVY et AIR FORCE sous lesquelles figurent des représentants et leurs suppléants. Un contrôleur peut préférer réduire à Wagner seul, dont la pièce nomme le rôle, ou exiger la liste complète. Ce qui appuie les trois retenus est un fait interne au rapport : page 45, « Appendix F by R. R. Carhart and G. R. Herd develops a method of determining the optimum reliability based upon a simple cost model », seule attribution individuelle de tout le rapport, et elle vise deux des trois. Les noms des représentants des trois armes ne sont pas tous lisibles sur ce scan et n'ont donc pas été transcrits.",
+    "La couche OCR de l'item est très dégradée et elle a menti sur un fait vérifiable, en datant le rapport du Task Group 1 du « 9 January 1957 » quand l'image du feuillet n28 porte sans ambiguïté « 7 January 1957 ». Aucun mot cité ne vient de l'OCR : les citations ont été relues caractère par caractère sur les images de feuillet demandées sans suffixe.",
+    "Étendue réelle de la lecture, très inférieure au volume. Le rapport du Task Group 1, feuillets n28 à n55, pages 21 à 49, a été lu en entier sur l'OCR, et quatorze feuillets ont été relus sur l'image, folio imprimé vérifié un par un. Les huit autres rapports de groupe de travail, les parties de synthèse et les appendices B à G n'ont été parcourus qu'en recherche plein texte. La mention consulted full-text porte sur l'item, ouvert sans restriction, pas sur une lecture intégrale de 375 feuillets. La correspondance folio et feuillet change en cours de volume, de 6 dans ce rapport et de 1 en fin de volume ; aucune page citée n'a été identifiée par calcul.",
+    "Le rapport n'a pas de notice de catalogue trouvée : la Library of Congress, Open Library et Crossref ne le connaissent pas, et le service DTIC répond 403 depuis cette chaîne, sur la notice comme sur le PDF. La source primaire est donc citée par son numéro d'accession et par l'item Internet Archive, qui est ouvert et n'exige aucun compte. Cet item ne porte ni champ rights ni licenseurl dans ses métadonnées ; les mentions imprimées du volume, dont la vente par le Superintendent of Documents au prix de 1,75 dollar, sont des autorisations administratives de diffusion et non des licences d'éditeur. Accès public constaté, autorisation d'ayant droit non constatée.",
+    "Aucune source secondaire n'a été ouverte et aucune réception francophone n'a été cherchée : l'avertissement du validateur est le compte rendu exact du dossier, et aucune caution non lue n'a été ajoutée à sa place. La seconde source affichée n'est pas un commentaire : c'est un article du président du groupe sur les travaux de la même année, résolu par son DOI et non ouvert, qui a servi à confirmer par une voie indépendante les initiales de la signature de l'avant-propos. Rien n'est affirmé non plus sur la postérité normative de ce rapport, qui a fondé une industrie de référentiels d'essai : la carte n'entre pas par là, elle entre par la phrase de la page 30 et par la dissymétrie contractuelle qui la précède."
+  ],
+  "review": {
+    "reviewer": null,
+    "date": null,
+    "attribution": "non-verifiee",
+    "quotation": "non-verifiee",
+    "sources": "non-verifiees",
+    "prose": "non-verifiee",
+    "verdict": "PENDING",
+    "rounds": 0,
+    "notes": []
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "tolerance-economique-suppose-le-controle",
+  "slug": "tolerance-economique-suppose-le-controle",
+  "status": "CANDIDATE",
+  "title": "Pas de tolérance économique sans maîtrise",
+  "themes": [
+    "variation-et-controle"
+  ],
+  "theme_labels": {
+    "variation-et-controle": "Ce qu'un procédé fait varier"
+  },
+  "authors": [
+    {
+      "name": "W. A. Shewhart",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Conclusion posée par W. A. Shewhart, seul auteur de l'ouvrage. La tolérance n'est pas de lui et il ne la revendique nulle part : le chapitre s'ouvre en la donnant pour un usage d'atelier reçu, « it is customary practice to establish allowable or tolerance ranges of variability », au présent et sans nommer personne. Ce qui lui revient est la thèse inverse de cet usage, imprimée en italique comme telle.",
+  "hook": "Que faut-il savoir d'une pièce avant de fixer sa tolérance ?",
+  "summary": "Resserrer une tolérance gagne en valeur et coûte en rebuts. L'arbitrage ne se calcule que si matériaux et pièces sont maîtrisés : on sait alors combien seront rejetés.",
+  "quotation": {
+    "text": "Donc, pour fixer une plage de tolérance économique, il est nécessaire que les qualités des matériaux et des pièces élémentaires soient maîtrisées.",
+    "attributed_to": null,
+    "reference": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931.",
+    "locator": "p. 252, ch. XVII, § 3",
+    "language": "fr",
+    "original_text": "Hence, to set an economic tolerance range it is necessary that the qualities of materials and piece-parts be controlled.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (chaîne Curiosity, 7 septembre 2026), faite sur l'image de la page et non sur l'OCR ; aucune traduction française publiée de l'ouvrage de 1931 n'a été identifiée. La phrase est citée entière, sans coupe. Trois choix. « Controlled » est rendu par « maîtrisées » et non par « contrôlées » : « contrôle » désigne en français l'inspection, c'est-à-dire précisément ce que ce paragraphe oppose à la notion de Shewhart, le paragraphe suivant s'intitulant « Tolerances where 100 Per Cent Inspection Cannot be Made ». « Tolerance range » est rendu par « plage de tolérance » et non par « tolérance », parce que Shewhart consacre le premier paragraphe du chapitre à séparer « tolerance range », « tolerance limits » et « a tolerance ». « Piece-parts » est rendu par « pièces élémentaires » : le mot désigne chez lui les pièces qui entrent dans un assemblage, par opposition au produit fini. Dans l'imprimé, la phrase entière est en italique, marque que Shewhart réserve dans ce chapitre à ses conclusions.",
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931, xiv-501 p. (LCCN 31032090)",
+      "kind": "primary",
+      "locator": "p. 249-252, ch. XVII",
+      "doi_isbn": "LCCN 31032090",
+      "url": null,
+      "consulted": "full-text"
+    },
+    {
+      "label": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, Milwaukee, American Society for Quality Control, 1980 (réimpression).",
+      "kind": "primary",
+      "locator": null,
+      "doi_isbn": "978-0-87389-076-2",
+      "url": null,
+      "consulted": "metadata-only"
+    }
+  ],
+  "notes": [
+    "Arbitrage de traduction du lot, appliqué aux trois cartes Shewhart de cette nuit et ouvert à un recontrôle. « Control » est rendu par « maîtrise » et non par « contrôle », ce qui reconduit le choix de la carte publiée cause-de-hasard-et-cause-assignable. Les deux lecteurs ont déposé les deux rendus et ils font exactement le même nombre de caractères : le gabarit ne tranche rien, l'arbitrage est de sens seul. Le motif est pris sur le chapitre XVII, où il est le plus fort : la phrase de la page 252 exige que les qualités des matériaux soient « controlled », et le paragraphe qui la suit immédiatement s'intitule « Tolerances where 100 Per Cent Inspection Cannot be Made ». Rendre le mot par « contrôlées » ferait entendre que les matériaux doivent être inspectés, c'est-à-dire précisément ce que Shewhart écarte deux lignes plus bas. Ce qui plaide en sens contraire n'est pas nul et se dépose ici : « contrôle » est le terme d'usage de la maîtrise statistique des procédés en français, et « carte de contrôle » comme « limites de contrôle » ne se disent pas autrement. Un contrôleur qui renverserait ce choix devrait le renverser sur les trois cartes à la fois.",
+    "Ce que l'arbitrage économique met en balance, et que le résumé condense : « a tolerance range on a quality X should be as small as possible. If it is too small, however, the rejections will be excessive. In other words, the design engineer tries to balance the rate of increase in value of reducing a tolerance range against the rate of increase of cost of such a procedure because of increased rejections » (p. 251). Ce que la maîtrise apporte à cet arbitrage est nommé juste après : si l'ingénieur sait la qualité d'une pièce statistiquement maîtrisée selon une distribution connue, « then he knows the expected number pN of rejections », et « only under these conditions of control is it a comparatively simple process to find an economic tolerance range ».",
+    "Citation écartée, et elle mérite d'être connue d'un contrôleur : le second italique de la même page 252, « Hence we see that it is very desirable to know that the quality of a product is controlled when it cannot be given 100 per cent inspection », dit le pendant de la citation retenue et nomme l'inspection. En français il fait exactement 150 caractères, soit le plafond au caractère près, et il porte un autre concept, la substitution de la spécification de maîtrise à la double tolérance, qui mériterait sa propre carte.",
+    "Ce que la carte ne dit pas, et que le chapitre porte : quand l'inspection à cent pour cent est impossible, Shewhart montre qu'il faut deux jeux de limites au lieu d'un, sur la qualité et sur la fraction défectueuse du lot, et il conclut que ce qu'il faut spécifier au fournisseur est autre chose qu'une tolérance, à savoir la maîtrise avec sa valeur espérée et son écart type (p. 259). Rien de cela n'est affirmé par les champs affichés.",
+    "Recouvrement à surveiller avec etat-de-controle-statistique, tirée du même ouvrage. L'objet n'est pas le même : là, ce qu'est un état de maîtrise ; ici, ce que la fixation d'une tolérance suppose de cet état. La page 262, où Shewhart revient sur ce qu'est un standard de qualité, appartient au premier sujet et n'est pas citée ici.",
+    "Frontière avec measurement-theory, tranchée sur le texte par le lecteur primaire. On pourrait lire ces pages comme portant sur un indicateur, la tolérance, et sur ce qu'il manque du procédé. Ce n'est pas ce que le texte fait : son objet est la pièce à produire et le procédé qui la produit, son sujet est l'ingénieur d'études qui arbitre entre la valeur d'un resserrement et le coût des rebuts, et sa conclusion porte sur ce qu'il faut avoir obtenu de l'atelier avant de pouvoir spécifier.",
+    "Rattachement de thème, et une réserve qui n'empêche pas la carte. Le thème variation-et-controle est le seul des trois du domaine qui accueille cette carte, et son titre, « Ce qu'un procédé fait varier », la porte. Sa description, en revanche, ne parle que du partage entre causes de hasard et causes assignables et du critère qui tranche entre elles : elle ne couvre pas le dimensionnement d'une limite sur du variable, qui est l'objet de cette carte et de tolerances-qui-ne-s-additionnent-pas. Si les deux sont reçues, la description du thème gagnerait à être élargie ; ce n'est pas un fichier que la rédaction touche.",
+    "Correspondance folio et feuillet du scan : elle est de 13 et non de 11 dans les parties V et VI, établie sur les en-têtes imprimés page par page, le feuillet n265 portant « 252 ECONOMIC CONTROL OF QUALITY ». Un lecteur qui reprendrait la formule du dépôt sans la vérifier citerait deux pages plus loin.",
+    "Coquille du tirage lu, constatée et non corrigée : le titre courant de la page 251 imprime « DESIGN LIMITS OF VARIABILITY » là où les pages 249, 253, 255 et 257 impriment « ON VARIABILITY », qui est le titre du chapitre. Elle ne touche aucune page dont le texte est cité.",
+    "Exemplaire ouvert : un tirage Van Nostrand ultérieur portant « SEVENTH PRINTING », numérisé sous l'item Internet Archive in.ernet.dli.2015.150272, à composition et pagination identiques. Le premier tirage de 1931 n'a pas été collationné, la réimpression ASQC de 1980 est en prêt contrôlé et n'a pas été empruntée, et les mémorandums Bell des années 1920, où cette thèse a pu être formulée avant le livre, n'ont pas été ouverts : toute affirmation d'antériorité serait ici sans pièce.",
+    "La source primaire est citée sans URL, décision motivée reprise des cartes Shewhart déjà publiées : la notice de l'exemplaire ne porte aucun champ de droits et aucune autorisation d'ayant droit n'est constatée. Le texte a bien été lu, d'où consulted full-text ; c'est l'URL qui tombe, pas la lecture. L'export MODS du LCCN 31032090 a répondu HTTP 500 pendant toute la session, ainsi que /marcxml et /dc ; la notice a été résolue par l'API Open Library sur le même LCCN, enregistrement OL6766665M, dérivé du MARC de la Library of Congress, conforme sur les quatre éléments affichés.",
+    "Aucune source secondaire n'a été ouverte et aucune réception francophone n'a été cherchée : l'avertissement du validateur est le compte rendu exact du dossier. La seconde source affichée n'est pas un commentaire, c'est la réimpression de l'ouvrage, retenue parce qu'elle résout par ISBN ; elle n'a pas été ouverte et les folios cités ne sont pas les siens."
+  ],
+  "review": {
+    "reviewer": null,
+    "date": null,
+    "attribution": "non-verifiee",
+    "quotation": "non-verifiee",
+    "sources": "non-verifiees",
+    "prose": "non-verifiee",
+    "verdict": "PENDING",
+    "rounds": 0,
+    "notes": []
+  }
+}
