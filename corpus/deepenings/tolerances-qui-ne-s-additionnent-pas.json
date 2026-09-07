@@ -1,0 +1,59 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "tolerances-qui-ne-s-additionnent-pas",
+  "lead": [
+    "Un mécanisme est fait de neuf pièces montées bout à bout, et ce qu’il vaut est la somme de ce que valent les neuf. Chacune arrive avec sa tolérance : une plage entre un minimum et un maximum, à l’intérieur de laquelle on la déclare bonne. Reste à écrire la tolérance de l’ensemble. Le geste qui vient de lui-même est d’additionner les neuf plages. Il donne une fourchette large, et il suppose sans le dire que les neuf pièces peuvent se trouver ensemble au bord de leur plage, du même côté, dans le même assemblage.",
+    "La question n’a rien d’oiseux : de la réponse dépendent la tolérance qu’on imposera à chaque fournisseur et le rebut qu’on acceptera. W. A. Shewhart, du personnel technique des Bell Telephone Laboratories, la pose telle quelle en 1931, au chapitre XVII d’un livre paru chez D. Van Nostrand et intitulé « Design limits on Variability » : « What shall the engineer use as the tolerance range for the overall resistance ? », que doit prendre l’ingénieur comme plage de tolérance pour la résistance d’ensemble ? Sa réponse tient dans un mot, et ce mot n’est pas faux : économique."
+  ],
+  "sections": [
+    {
+      "title": "Ce que la définition d’atelier oblige à conclure",
+      "paragraphs": [
+        "Additionner n’est pas une bévue. C’est la conséquence exacte d’une définition reçue, que Shewhart rappelle page 253 sans l’attribuer à personne tant elle va de soi dans les ateliers : « the definition of a tolerance as the range between the maximum and minimum possible values of the quality », la tolérance entendue comme l’étendue entre la plus grande et la plus petite valeur possibles de la qualité.",
+        "Si une tolérance nomme le possible, le raisonnement est sans faille. La plus grande valeur possible de l’ensemble est bien la somme des plus grandes valeurs possibles des pièces, la plus petite la somme des plus petites, et la plage de l’ensemble la somme des plages. Il n’y a là aucune erreur de calcul, et c’est ce qui rend la pratique difficile à déloger. Ce que Shewhart met en cause n’est pas la déduction, c’est le prix qu’on paie à prendre le possible pour la mesure de ce qu’il faut prévoir."
+      ]
+    },
+    {
+      "title": "Neuf pièces à leur extrême le même jour",
+      "paragraphs": [
+        "Pour qu’un ensemble atteigne la valeur haute annoncée, il faut que les neuf pièces soient à leur maximum ensemble. Une pièce au bord de sa plage est déjà rare ; neuf, du même côté, dans le même assemblage, c’est le produit de neuf raretés. Page 254, Shewhart s’arrête sur cette chance et la dit « very small indeed », très faible en effet.",
+        "Le raisonnement suppose que les pièces se rencontrent au hasard : qu’on les prenne dans des bacs sans regarder si l’une compense l’autre, et que la valeur de chacune ne dise rien de celle de ses voisines. C’est l’hypothèse de ce passage, et elle porte tout le reste. La plage additionnée décrit alors un assemblage que rien n’interdit et qu’on n’a pratiquement aucune chance de fabriquer."
+      ]
+    },
+    {
+      "title": "L’écart type d’une somme",
+      "paragraphs": [
+        "Reste à chiffrer, et c’est ici que l’écart type entre en scène. L’écart type d’une pièce est un nombre qui dit de combien ses valeurs s’écartent en moyenne de leur valeur centrale : petit quand la fabrication est serrée, grand quand elle est dispersée. La formule imprimée en haut de la page 255 donne celui de la résultante, et elle n’additionne rien : elle prend la racine carrée de la somme des carrés des écarts types des pièces.",
+        "L’écart entre les deux façons de compter se voit sur un cas simple. Supposons les neuf pièces également dispersées : additionner leurs écarts types en donne neuf fois un, prendre la racine de la somme des carrés en donne trois fois un, puisque la racine de neuf vaut trois. La fourchette additionnée est trois fois plus large que celle où l’ensemble se tiendra. C’est ce que la figure 87 met sous les yeux pour neuf pièces, et son titre porte la conclusion : « Illustrating Proper Way to Set Limits ».",
+        "Une condition rend la comparaison légitime, et Shewhart la pose explicitement dans ce paragraphe : que la tolérance de chaque pièce ait elle-même été fixée à trois écarts types de part et d’autre de sa valeur moyenne. Sans elle, on comparerait des plages qui ne couvrent pas la même part de la production, et la racine des carrés ne dirait plus rien de la tolérance."
+      ]
+    },
+    {
+      "title": "Ce que la fourchette trop large fait payer",
+      "paragraphs": [
+        "Shewhart n’écrit pas que la pratique additive est fausse. Il écrit qu’elle « may be uneconomical », qu’elle peut être peu économique, et le modal compte autant que l’adjectif : l’enjeu est une dépense, pas une faute de calcul. La suite de sa phrase dit pourquoi : la chance qu’un ensemble sorte des limites tracées à trois écarts types autour de la somme des valeurs moyennes est très faible. Improbable, donc, et non pas impossible.",
+        "Ce que cela engage en atelier se voit quand on renverse le calcul. La tolérance de l’ensemble est le plus souvent une donnée : c’est ce que l’appareil doit tenir. L’ingénieur qui la répartit en additionnant assigne alors à chaque pièce une plage plus étroite qu’il n’est nécessaire, et une plage plus étroite se paie, en rebut, en réglages, en prix d’achat. Le même ensemble pourrait se tenir avec des pièces plus lâches, à condition de savoir comment leurs dispersions se composent."
+      ]
+    },
+    {
+      "title": "Quand la résultante n’est pas une somme",
+      "paragraphs": [
+        "La racine de la somme des carrés vaut pour une somme. Le paragraphe suivant, « The General Problem of Setting Tolerances on Controlled Product », ouvert page 256, traite le cas où la qualité d’ensemble n’est pas la somme de celles des pièces mais une fonction quelconque d’entre elles. Shewhart la développe « expanded in a Taylor’s series », en série de Taylor, et n’en retient que le premier ordre.",
+        "Chaque pièce entre alors dans le compte avec un coefficient qui mesure sa part d’influence : de combien l’ensemble bouge quand cette pièce-là bouge. Son écart type est multiplié par ce coefficient avant d’être élevé au carré. La règle simple de la page 255 est le cas particulier où tous ces coefficients valent un, celui de la somme. La tenir pour la loi générale des assemblages serait lui faire dire plus qu’elle ne dit.",
+        "Le passage de l’écart type à une probabilité se fait par un emprunt que Shewhart nomme dans le texte : « Making application of Tchebycheff’s theorem », page 257. Quant à la valeur familière de 0,9973 attachée à trois écarts types, elle ne vaut que si les composants suivent une loi normale, ce qui n’est pas donné d’avance. Ni les mathématiques employées ni la pratique mise en cause ne sont de lui, et il ne les revendique pas : ce qui lui revient est l’objection et sa mesure."
+      ]
+    },
+    {
+      "title": "Ce qu’il faut alors demander à un fournisseur",
+      "paragraphs": [
+        "Une conséquence ferme la démonstration, page 259 : pour calculer la dispersion d’un ensemble, une plage de tolérance ne suffit pas. Il y faut, de chaque pièce, sa valeur moyenne et son écart type, deux nombres qu’une plage ne contient pas. Shewhart en fait une exigence : « the specification of control should include the specification of expected value X̄i and standard deviation σi of any quality characteristic Xi ». Ce qu’on doit obtenir d’un fournisseur change ainsi de nature : non pas une tolérance plus serrée, mais l’information qui permet de composer les dispersions."
+      ]
+    }
+  ],
+  "limits": [
+    "Tout tient à ce que les pièces se rencontrent au hasard et que la valeur de l’une ne dise rien des autres. Un atelier qui apparie ses pièces, une haute avec une basse, sort de ces hypothèses, et les paragraphes 5 et 6 du chapitre XVII n’examinent pas ce cas.",
+    "Que la résultante tende vers une loi normale, ce qui fonde la valeur de 0,9973, n’est pas démontré dans ces pages : Shewhart renvoie à l’appendice I de l’ouvrage, et c’est là qu’il faudra le lire.",
+    "Le chapitre continue au paragraphe 7, « Design for Minimum Variability », p. 259 à 261 : concevoir un assemblage dont la variabilité soit la plus faible possible est un autre problème, et ces pages attendent leur lecteur. La parenté avec la propagation des erreurs de mesure, Shewhart la traite en partie VII, p. 392 à 394.",
+    "Les folios cités ici sont ceux de l’édition Van Nostrand de 1931. L’exemplaire courant est la réimpression publiée à Milwaukee en 1980 par l’American Society for Quality Control pour le cinquantenaire du livre ; qui travaille sur elle y vérifiera ses folios. Aucune traduction française publiée n’est répertoriée : les phrases de Shewhart se citent en anglais."
+  ]
+}

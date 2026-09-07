@@ -1,0 +1,57 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "disponibilite-operationnelle",
+  "lead": [
+    "Un appareil immobilisé à l’atelier ne tombe pas en panne. La remarque est banale, et elle suffit à fausser une mesure : quand on compte la durée moyenne entre deux défaillances, on ne compte que les heures de marche. Les journées d’immobilisation ne s’ajoutent nulle part, elles sortent simplement du calcul. Un matériel peut donc afficher des chiffres flatteurs et n’être là, dans les faits, qu’un jour sur deux. Celui qui doit s’en servir, lui, ne compte pas en heures de marche : il compte en jours, et il veut savoir si l’appareil répondra mardi matin.",
+    "C’est ce décalage qu’un groupe de travail américain a eu à traiter dans un rapport daté du 7 janvier 1957, repris la même année dans un volume publié par l’Office of the Assistant Secretary of Defense (Research and Engineering). Sa tâche n’était pas de décrire les matériels existants, mais d’écrire ce qu’on avait le droit d’exiger d’eux : sa page de titre annonce des « MINIMUM ACCEPTABILITY FIGURES », des chiffres d’acceptabilité minimale. Or aucune des grandeurs héritées de la théorie de la fiabilité ne disait ce que l’utilisateur constate. Il en fallait une autre, et elle commence par changer d’horloge."
+  ],
+  "sections": [
+    {
+      "title": "Deux horloges qui ne comptent pas pareil",
+      "paragraphs": [
+        "Le rapport ouvre sa section de définitions en disant d’où elles viennent : « The following definitions are taken from general reliability theory », ces définitions sont reprises de la théorie générale de la fiabilité. Suivent la défaillance, la fiabilité, la durée de vie moyenne, puis le temps de disponibilité, le temps d’indisponibilité et l’effort de réparation. Rien n’y est revendiqué comme neuf, et c’est justement ce qui rend visible ce que la suite ajoute.",
+        "Les trois premières se mesurent sur du temps de marche. La fiabilité y est la probabilité de n’avoir aucune défaillance pendant un temps de fonctionnement donné, « probability of no failures in operating time t hours » ; la durée de vie moyenne est « the arithmetical mean of the operating time between failures », la moyenne arithmétique des temps de fonctionnement séparant deux défaillances. Les deux suivantes, le temps de disponibilité et le temps d’indisponibilité, se mesurent sur du temps de calendrier : elles comptent les heures du mois, qu’on ait marché ou non.",
+        "La grandeur qui nous occupe se range du second côté, et l’énoncé le dit en toutes lettres : il s’agit de « the probability that a system will perform satisfactorily at any point in calendar time », la probabilité qu’un système fonctionne de façon satisfaisante à n’importe quel moment du calendrier. Le changement d’horloge n’est pas un raffinement de mesure : c’est lui qui fait entrer la maintenance à l’intérieur de la grandeur. Tant qu’on compte en heures de marche, le temps passé à réparer est invisible ; dès qu’on compte en jours, il pèse exactement autant que les pannes."
+      ]
+    },
+    {
+      "title": "Un pourcentage, et d’où viennent les chiffres",
+      "paragraphs": [
+        "Une probabilité se négocie mal. Le rapport en donne donc l’équivalent immédiat : « the percentage of up-time is synonymous with operational readiness », le pourcentage de temps disponible est synonyme de disponibilité opérationnelle. La grandeur devient alors quelque chose qu’on peut écrire dans une spécification et vérifier ensuite : tant pour cent du temps, l’appareil est prêt à servir.",
+        "Pour les matériels embarqués sur navire, les chiffres d’acceptabilité ont d’ailleurs été établis directement sous cette forme, « since this figure of merit reflects operational needs more appropriately than mean life », parce que cet indicateur reflète les besoins opérationnels plus justement que la durée de vie moyenne. Ce n’est qu’ensuite qu’ils ont été convertis en durées de vie moyennes, à l’usage de ceux qui conçoivent.",
+        "L’ordre des opérations mérite d’être noté, car il inverse l’habitude. Le chiffre ne descend pas de la théorie vers l’usage : il part de ce que les commandants opérationnels déclaraient tolérer d’indisponibilité et de la durée d’une maintenance moyenne, et cette exigence d’emploi se traduit après coup en objectif de conception. La grandeur sert de langue commune entre deux métiers qui n’ont ni les mêmes unités ni les mêmes soucis."
+      ]
+    },
+    {
+      "title": "Tomber souvent sans cesser d’être précieux",
+      "paragraphs": [
+        "De ce déplacement suit une conséquence que le rapport écrit sans détour : « Although a system may fail frequently, if it can be restored to satisfactory operating condition in a short time, this system can be of tremendous value under certain operational requirements. » Bien qu’un système puisse défaillir fréquemment, s’il peut être remis en état de fonctionnement satisfaisant en peu de temps, il peut avoir une valeur considérable au regard de certains besoins opérationnels.",
+        "La phrase n’est pas un paradoxe, elle est une conséquence arithmétique. Imaginons deux appareils : le premier s’arrête une fois par an et reste trois semaines à l’atelier, le second s’arrête chaque semaine et repart au bout de vingt minutes. Sur le nombre de pannes, le premier l’emporte de très loin ; sur la part du calendrier pendant laquelle on peut compter sur lui, c’est le second, et c’est cette part que le rapport a choisi de mesurer.",
+        "Encore faut-il que les circonstances s’y prêtent, et le rapport les énumère au même endroit : que les périodes de fonctionnement critique soient de durée indéfinie, que la réparation soit disponible immédiatement après la défaillance, et souvent qu’il existe une redondance de systèmes. Hors de là, l’argument tombe. Un équipement qui doit tenir sans faute pendant une mission de six heures ne tire aucun bénéfice d’une réparation de dix minutes qu’il est impossible de faire en vol.",
+        "La section se referme sur la phrase qui noue les deux versants : « It is clear that this operational readiness depends upon both the reliability of the system and the speed with which it can be restored after failure. » Sur la page imprimée, le mot « and » est souligné à la machine. L’insistance porte exactement là : ni la fiabilité seule, ni la vitesse de remise en état seule, mais les deux, tenues ensemble dans une même grandeur."
+      ]
+    },
+    {
+      "title": "Le plafond n’est pas dans le matériel",
+      "paragraphs": [
+        "Si la disponibilité dépend de deux choses, on peut la relever de deux façons : espacer les pannes, ou raccourcir les réparations. La seconde voie paraît la moins chère, puisqu’elle ne demande rien au matériel lui-même. Le rapport en nomme pourtant la limite haute, plus loin, quand il en vient aux moyens de maintenance : ce qui borne le gain, c’est leur saturation.",
+        "La suite du raisonnement se laisse dérouler. Chaque remise en état consomme des ateliers, des rechanges, des techniciens et des heures. Accepter des pannes fréquentes en tablant sur des réparations rapides revient à reporter la charge sur ces moyens ; passé un certain point, ils ne suivent plus, l’appareil ne repart pas plus vite, il attend son tour, et cette attente s’ajoute au temps d’indisponibilité. Le pourcentage de temps disponible chute alors sans qu’aucun matériel se soit dégradé.",
+        "Un contresens est ainsi à écarter, et le texte n’y prête pas le flanc : il parle de réparation et de remise en état, jamais de celui qui répare, de sa charge de travail ni de son erreur. Son objet est le matériel comme chose à spécifier avant de l’acheter. Le travail de maintenance n’y est pas décrit ; il n’y apparaît que comme la capacité dont la disponibilité dépend, et que l’exigence de vitesse peut épuiser."
+      ]
+    },
+    {
+      "title": "Ce que signe un groupe de travail",
+      "paragraphs": [
+        "Il n’y a personne à citer derrière cet énoncé, et c’est le rapport lui-même qui l’établit. La page de titre du volume porte « Report by Advisory Group on Reliability of Electronic Equipment », et aucun nom d’auteur. L’avant-propos est bien signé, mais il est une lettre de transmission : son signataire, J. M. Bridges, y déclare que « This document is a consolidation of the nine task group reports and is issued at this time only for informational purposes. » Transmettre neuf rapports n’est pas les avoir écrits.",
+        "Le volume sait pourtant nommer des personnes quand il le veut. Une seule de ses sections porte une mention de responsabilité individuelle, un appendice donné « by R. R. Carhart and G. R. Herd », et ce n’est pas le texte d’où vient la phrase sur la disponibilité. Le groupe qui l’a écrite, lui, parle de lui-même au collectif, et son rapport s’ouvre sur « In submitting this report, Task Group Number One wishes to ».",
+        "Restent les listes nominatives de fin de volume, où figurent une dizaine de membres et un président. Une composition de groupe n’est pas une signature, et le rapport parallèle d’un autre groupe le formule dans les termes qu’il faut : « This report represents the final results of the work of the following members and alternate members », ce rapport présente les résultats finaux du travail des membres et membres suppléants qui suivent. Y prélever trois noms reviendrait à désigner des auteurs que le texte ne désigne pas. L’énoncé appartient au groupe, et c’est à ce niveau qu’il se cite."
+      ]
+    }
+  ],
+  "limits": [
+    "Le rapport n’invente pas le terme et ne dit pas d’où il le tient : il l’introduit sous condition, « If operational readiness is defined as », sans citer personne. Qui l’employait avant janvier 1957 reste à établir, comme la voie par laquelle cette grandeur est devenue la disponibilité des ingénieurs francophones. Aucune traduction française publiée de ce rapport n’est connue à ce jour : ces phrases se citent en anglais.",
+    "Des trois conditions énumérées avec la conséquence, la deuxième se lit mal sur l’exemplaire numérisé : le mot qui suit la lettre (b) y est trop pâle pour être donné pour sûr, et il n’entre pas dans la citation.",
+    "Le président du groupe a publié en août 1957, dans les IRE Transactions on Reliability and Quality Control, « Progress in Reliability of Military Electronic Equipment During 1956 ». Ce que cet article retient de l’année où ces chiffres se sont fixés se lit chez l’éditeur, faute de copie en accès libre.",
+    "Le volume rassemble neuf rapports de groupe de travail, et le neuvième porte sur la maintenance. Ce qu’il dit du travail de celui qui répare, et non plus du matériel réparé, tient dans ces pages : elles attendent leur lecteur."
+  ]
+}
