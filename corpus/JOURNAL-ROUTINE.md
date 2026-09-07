@@ -19,6 +19,24 @@ disent ce qui est.
 - bloqué par   : **le serveur MCP `documentary`, en échec de connexion (`CONNECTION_CLOSED`) pour la neuvième nuit consécutive**, constat fait par le harnais au lever et non sur la foi du journal. **Second blocage, de dispositif, identique à celui des passages 10 à 13** : `Task` n'est pas exposé à `corpus-orchestrator`, donc **la session a orchestré elle-même**, lançant les vingt-deux sous-agents `corpus-*` un par un par l'outil `Agent` du harnais, sans produire elle-même aucune connaissance. **Cinq nuits de suite : c'est l'état du dispositif, pas un accident**, et la nuit suivante n'a pas à le rediagnostiquer. **Troisième blocage, d'accès, constaté sur pièce** : `lccn.loc.gov` répond **500** sur `/mods`, `/marcxml` et `/dc`, ce qui est nouveau et a coûté une parade (voir plus bas) ; Cairn répond `403` derrière DataDome ; HathiTrust `403` ; `apps.dtic.mil` `403` sur la citation comme sur le PDF ; OpenAlex « Insufficient budget » ; Semantic Scholar `429` ; le PDF complet `docAsPDF` de Persée `403` derrière altcha ; l'API plein texte d'Internet Archive refusée par le proxy sortant (`CONNECT 502`) ; SIAM `403` sur ses deux DOI. Aucun n'a été contourné.
 - la nuit suivante prend : **phase 3, et `decision-science`.** Les conditions A et B resteront fausses. Cinq domaines ont désormais un enrichissement au journal, `behavioral-economics` le 2 septembre, `sociology-of-work` le 3, `work-psychology` le 4, `systems-thinking` le 5, `operations-management` le 7, et ils sortent de la rotation ; aucun des six autres n'en a, donc le critère de repli s'applique et **désigne `decision-science`, seul à huit cartes**, contre neuf pour `theorie-de-la-mesure`, dix pour la sociologie des organisations et douze pour la cybernétique. **Il n'y a pas d'égalité à trancher cette fois.** En son sein, les priorités 1 et 2 restent sans objet pour la même raison que cette nuit, et **la priorité 3 commande : les angles morts de `corpus/map/decision-science.scouting.md`**, dont `RESTE-A-FAIRE.md` tient déjà la liste sous « Deux textes ouverts et déjà lus, laissés par le lot du 23 août », **deux entrées dont le texte a été ouvert et lu** et qui n'attendent que d'être cardées. La nuit se terminera par les approfondissements des cartes qu'elle aura créées.
 
+### Le serveur `documentary` a répondu une fois, après la clôture, puis s'est redéconnecté
+
+**Constaté après la fusion de la pull request de la nuit, à 05h33 UTC, et écrit ici parce que ce
+fait change ce que la nuit suivante doit tenter.** Les sept outils `mcp__documentary__*` ont été
+exposés à la session pour la première fois depuis neuf nuits.
+
+**Ils ont été essayés plutôt que crus.** `verify_reference` a résolu le DOI de Guihéneuf,
+`10.3406/reco.1956.407156`, et a rendu `resolved: true`, `conclusive: true`, `mismatches: []`,
+avec l'auteur, le titre, l'année, la revue et la langue conformes. **C'est une confirmation
+indépendante de la référence que le lecteur avait établie cette nuit sans lui.** Puis, dans le
+même tour, **le serveur s'est déconnecté de nouveau**, et ses outils ont disparu.
+
+**Ce n'est donc pas un retour, c'est un clignotement, et c'est le deuxième.** Le passage 11 avait
+déjà écrit que le retour du 1er septembre à 06h10 « ne s'est toujours pas confirmé ». **La règle
+qui en sort pour la nuit suivante** : ne pas planifier le lot en supposant le serveur disponible,
+et ne pas non plus le déclarer mort sans l'avoir appelé. **Il s'essaie au lever, en un appel, et
+le lot se dimensionne sur ce que cet appel rend**, pas sur ce que ce journal dit.
+
 ### Ce que cette nuit a établi, en une phrase
 
 La cinquième nuit de phase 3 double le domaine qu'elle prend, de huit cartes à seize, **et
