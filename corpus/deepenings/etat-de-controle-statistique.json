@@ -1,0 +1,55 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "etat-de-controle-statistique",
+  "lead": [
+    "Imaginons deux ateliers qui fabriquent la même pièce. Dans le premier, les mesures bougent un peu tous les jours, jamais beaucoup, toujours dans la même fourchette, et cela dure depuis des années. Dans le second, les pièces sortent presque toutes identiques, puis une fois par mois, sans que personne sache pourquoi, il en tombe une très loin des autres. Lequel des deux est maîtrisé ? L’intuition désigne le second, qui a l’air plus régulier. C’est le premier.",
+    "Ce qui les sépare n’est pas la quantité de variation, c’est ce qu’on peut en dire à l’avance. Du premier atelier, on sait entre quelles bornes les mesures de demain tomberont ; du second, on ne sait rien du prochain écart, ni quand il viendra ni de combien. W. A. Shewhart, membre du personnel technique des Bell Telephone Laboratories, publie en 1931 chez D. Van Nostrand un livre qui fait de cette différence une définition, puis un état qu’un atelier peut chercher à atteindre."
+  ],
+  "sections": [
+    {
+      "title": "Contrôler ou maîtriser : ce que le mot recouvre",
+      "paragraphs": [
+        "Le mot que Shewhart écrit est l’anglais control, et le français l’attend avec un piège. « Contrôle » dit d’abord l’inspection : passer les pièces en revue, trier les bonnes et les mauvaises. Ce que Shewhart appelle control est presque le contraire, un état du procédé tel qu’on n’ait justement pas à regarder chaque pièce. Le chapitre XVII le montre en deux lignes : la phrase de la page 252 exige que les qualités des matériaux soient « controlled », et le paragraphe qui suit immédiatement s’intitule « Tolerances where 100 Per Cent Inspection Cannot be Made », des tolérances là où l’inspection à cent pour cent ne peut pas être faite. Rendre le mot par « contrôlées » ferait entendre qu’il faut inspecter, c’est-à-dire exactement ce que l’auteur écarte à la ligne suivante. D’où « maîtrise ».",
+        "L’autre versant se dit aussi. « Contrôle » est le terme reçu de la discipline en français : les cartes de contrôle et les limites de contrôle ne se disent pas autrement, et « état de contrôle statistique » est le nom sous lequel le concept se cherche dans une bibliothèque. Le lecteur rencontrera donc deux mots français pour une seule idée. Ce ne sont pas deux notions : c’est un mot anglais qui n’a pas d’équivalent unique de ce côté-ci."
+      ]
+    },
+    {
+      "title": "Prévoir dans des limites, à partir du passé",
+      "paragraphs": [
+        "La définition tient en une phrase, imprimée en italiques à la page 6 sous le titre « 3. Definition of Control » : « a phenomenon will be said to be controlled when, through the use of past experience, we can predict, at least within limits, how the phenomenon may be expected to vary in the future ». Trois pièces la composent, et chacune porte. L’expérience passée, qui est la seule base. La prévision, qui est le résultat. Et « at least within limits », au moins dans des limites, qui est une prétention modeste : on ne prévoit pas la mesure de demain, on prévoit la fourchette dans laquelle elle tombera.",
+        "Le critère a changé de place. Il ne porte plus sur l’objet, sur sa perfection ou sa régularité apparente, mais sur ce qu’on est capable d’en dire. Shewhart en tire la conséquence sur la même page, et elle est contre-intuitive au point qu’il l’écrit deux fois : « a controlled quality will not be a constant quality. Instead, a controlled quality must be a variable quality ». Le but n’est donc pas de supprimer la variation, ce que personne ne sait faire, mais de la rendre prévisible.",
+        "Le membre « through the use of past experience » n’est pas une précaution de style, c’est la condition même. Rien d’autre ne fonde la prévision : ni le plan de la pièce, ni la théorie de la machine, ni la promesse d’un fournisseur. Une prévision qui ne s’appuierait pas sur une série d’observations déjà faites ne serait pas de la maîtrise au sens de cette page. Un procédé neuf n’est ni maîtrisé ni déréglé : il n’a pas encore de passé, donc rien à dire de son avenir."
+      ]
+    },
+    {
+      "title": "Un état objectif, dont les causes restent inconnues",
+      "paragraphs": [
+        "Vingt-huit pages plus loin, sous un intertitre de conclusion, l’auteur franchit un pas et le dit avec prudence : « It seems reasonable to believe that there is an objective state of control, making possible the prediction of quality within limits even though the causes of variability are unknown. » Il paraît raisonnable de croire qu’il existe un état de contrôle objectif, rendant possible la prévision de la qualité dans des limites, quand bien même les causes de la variabilité sont inconnues.",
+        "Deux choses s’y jouent. La première est le statut de la phrase : il paraît raisonnable de croire, ce qui n’est ni une démonstration ni un constat, mais l’hypothèse que l’état existe dans les choses et pas seulement dans la façon d’en parler. La seconde est le point décisif pour un atelier : la prévision ne demande pas l’explication. On peut savoir entre quelles bornes une machine se tiendra sans savoir ce qui produit sa dispersion. Il n’est pas nécessaire d’avoir compris pour décider.",
+        "Cette page 34 énumère d’ailleurs cinq avantages de cet état, et ils sont tous de gestion. C’est un renseignement sur l’intention du livre : ce que l’état de maîtrise fait gagner n’est pas d’abord une connaissance, ce sont des décisions que l’on peut prendre, sur les tolérances, sur les achats, sur l’inspection, parce qu’on sait enfin de quoi demain sera fait."
+      ]
+    },
+    {
+      "title": "Ce que « statistique » ajoute à la définition",
+      "paragraphs": [
+        "La définition de la page 6 ne dit pas ce qui rend la prévision possible. On peut prévoir par simple habitude : depuis six mois, ça tient. Le chapitre XI, intitulé « Statistical Control », nomme ce qui la fonde. Sa première section s’ouvre sur les conditions du contrôle et se clôt par cette phrase : « For this reason it is desirable to attain the state of statistical control in which the natural law of large numbers makes prediction possible. » L’état de maîtrise statistique est donc un régime particulier de la maîtrise, celui où c’est la loi naturelle des grands nombres qui autorise la prévision, et non l’habitude seule.",
+        "La différence est celle qui sépare « d’habitude, ça tient » d’une prévision qui a une raison. Tant qu’on s’en remet à l’habitude, on ne sait pas ce qu’on risque en extrapolant ; quand les écarts se comportent comme le fait un système constant de causes de hasard, on dispose d’un appui pour dire jusqu’où l’extrapolation porte. C’est ce qui autorise à tracer des limites plutôt qu’à les décréter.",
+        "La condition vient aussitôt après, au début de la section suivante, « 2. Necessary and Sufficient Conditions for Statistical Control », et il faut la lire en entier : « We shall assume that the necessary and sufficient condition for statistical control is that the causes of an event satisfy the law of large numbers as do those of a constant system of chance causes ». Les quatre premiers mots ne sont pas une politesse. Nous supposerons que : Shewhart pose sa condition nécessaire et suffisante comme une hypothèse de travail. Amputée de son entrée, la phrase deviendrait un théorème, et le livre n’en démontre pas."
+      ]
+    },
+    {
+      "title": "Un état qui se constate et qui se perd",
+      "paragraphs": [
+        "Reste la question qu’un chef d’atelier posera le premier : comment sait-on qu’on y est ? La réponse de l’auteur est plus sobre qu’on ne l’attendrait. Le passé, écrit-il, ne prouve rien : « we perhaps never can say that the behavior of a phenomenon in the past is sufficient to prove that the phenomenon is controlled ». Peut-être ne pourrons-nous jamais dire que le comportement passé d’un phénomène suffit à prouver qu’il est maîtrisé. L’état se constate, il ne se démontre pas.",
+        "La page 148 attache d’ailleurs la prévision à une réserve, « provided the same essential conditions are maintained », pourvu que les mêmes conditions essentielles soient maintenues. Un procédé maîtrisé hier ne l’est pas par contrat. Et la page 149 lie la constance de l’équilibre statistique à l’absence de raison a priori de croire qu’une cause assignable est entrée dans le procédé : ce qui tient l’état, c’est qu’on n’a pas de motif de le croire rompu, et cela peut cesser d’être vrai un matin.",
+        "C’est ce qui fait de la maîtrise une surveillance et non un certificat. Une entreprise qui afficherait son procédé « sous contrôle » comme un label acquis se tromperait sur ce que le mot désigne ici : un état constaté à partir d’un passé d’observations, valable tant que rien n’est venu s’y ajouter, et qu’il faut continuer d’observer pour savoir qu’on y est encore."
+      ]
+    }
+  ],
+  "limits": [
+    "Qui a fixé en français « état de contrôle statistique » plutôt qu’« état de maîtrise statistique » reste une question entière : aucun commentateur francophone n’est mobilisé ici. Les phrases de Shewhart se citent en anglais, et une traduction française publiée du livre de 1931 reste à identifier.",
+    "Un an avant le livre, en avril 1930, Shewhart publie au Bell System Technical Journal un article présenté devant l’A. A. A. S. le 28 décembre 1929 à Des Moines. Ses pages 364 à 389 sont en ligne, et ce sont elles qui diront si l’expression y est déjà, et sous quelle forme.",
+    "Huit ans plus tard paraît Statistical Method from the Viewpoint of Quality Control (1939). Ce que la définition de 1931 y devient, ce second livre le détient, et c’est là qu’on verra comment la pensée de l’auteur a bougé entre les deux.",
+    "L’exemplaire le plus facile à se procurer aujourd’hui est la réimpression publiée en 1980 à Milwaukee par l’American Society for Quality Control, « 50th anniversary commemorative reissue ». Les folios cités ici, pages 6, 34, 146, 148 et 149, sont ceux de l’édition Van Nostrand ; qui travaille sur cette réimpression vérifiera les siens en l’ouvrant."
+  ]
+}
