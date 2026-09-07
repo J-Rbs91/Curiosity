@@ -375,3 +375,246 @@ Ce sont les reprises les moins chères du domaine, leur accès étant constaté 
   absent du scan**, qui s'arrête au folio 42.
 - **Les cinq candidats hérités des voisins restent tous non ouverts** : les trois rapports DoD de
   `cybernetics` et les deux notices HAL de `human-factors`. Ce passage ne les a pas retentés.
+
+---
+
+# Reprise du 7 septembre 2026 (balayage complémentaire) — la couche francophone par moteur propre, les quatre points d'entrée jamais interrogés, et les cinq réserves héritées
+
+Cette section est ajoutée, non réécrite, et se lit contre les deux précédentes là où elles
+divergent — la « Reprise du 25 août 2026 » continue de faire foi sur les quatre candidats
+Groupe A et sur les pièges d'accès qu'elle documente. Ce passage n'a rouvert aucun de ces
+quatre textes ; il a fait ce que les deux précédents avaient explicitement laissé de côté :
+(a) HAL par son propre moteur avec syntaxe conjonctive, OpenEdition Books par navigation de
+collection, theses.fr en vérification d'existence nommée ; (b) les quatre points d'entrée du
+périmètre jamais requêtés ; (c) les deux réserves d'accès nommément désignées ; (d) le test
+d'ouverture réel des cinq candidats hérités des voisins, jamais tenté depuis leur legs.
+
+**Outils réellement disponibles cette nuit** : le serveur MCP `documentary` n'est exposé sous
+aucune forme (aucun `mcp__documentary__*`). Travail mené par `WebSearch` (détection
+uniquement), `WebFetch`, `curl` direct, l'API Crossref (`api.crossref.org`) et l'API Unpaywall
+(`api.unpaywall.org`), conformément à la liste des instruments en état de marche. Cairn n'a
+reçu aucune requête — le 403 DataDome est traité comme définitif, sans nouvelle tentative.
+`scite` n'a pas été appelé, non plus disponible.
+
+## (d) Les cinq candidats hérités : trois s'ouvrent, deux restent fermés à l'identique
+
+**Résultat le plus net de ce passage : les trois rapports DoD légués par `cybernetics`
+s'ouvrent tous les trois, contredisant leur statut « non ouvert » porté sans nouvelle
+vérification depuis l'ouverture du domaine.** Testés individuellement sur `archive.org`,
+métadonnées puis GET direct du PDF (en suivant la redirection HTTP→HTTPS, nécessaire — un GET
+sans `-L` rend un 302 vide) :
+
+1. **Naval Postgraduate School (auteur du MBA Professional Report non nommé dans les
+   métadonnées IA), « Applicability of the Law of Requisite Variety in Major Military System
+   Acquisition »**, MBA Professional Report, Naval Postgraduate School, Monterey, juin 2017.
+   Identifiant `DTIC_AD1046519`. `access-restricted-item` : absent. Mention de diffusion lue
+   sur la pièce : « Approved for public release. Distribution is unlimited. » **GET
+   `https://archive.org/download/DTIC_AD1046519/DTIC_AD1046519.pdf` → 200**, PDF 1,32 Mo, 113
+   pages (PyPDF2), texte extractible dès la première page. Anglais.
+2. **Auteur non identifié à ce stade, « A Systematic Approach to Prioritizing Weapon System
+   Requirements and Military Operations Through Requisite Variety »**, 1999. Identifiant
+   `DTIC_ADA371943`. `access-restricted-item` : absent. Diffusion : « DISTRIBUTION STATEMENT A
+   — Approved for Public Release — Distribution Unlimited ». **GET
+   `https://archive.org/download/DTIC_ADA371943/DTIC_ADA371943.pdf` → 200**, PDF 1,38 Mo, 20
+   pages, texte extractible. Anglais.
+3. **Douglas B. Bushey, Major, United States Army, « A Conceptual Framework for Providing
+   Requisite Variety in the Future Operational Forces of the United States Army »**, thèse de
+   Master of Science in Management, Naval Postgraduate School, Department of Systems
+   Management, décembre 1997. Identifiant `DTIC_ADA341017`. Diffusion, lue en page 3 du texte
+   OCR : « Approved for public release; distribution is unlimited. » Le fichier principal
+   (`DTIC_ADA341017.pdf`, scan image) sert un texte vide sur les pages testées ; la variante
+   `DTIC_ADA341017_text.pdf` porte une couche OCR exploitable. **GET
+   `https://archive.org/download/DTIC_ADA341017/DTIC_ADA341017_text.pdf` → 200**, 14,9 Mo, 132
+   pages. Anglais.
+
+**Le motif de frontière déjà tranché par le périmètre reste entier et n'est pas rouvert ici** :
+ces trois pièces appliquent la loi de la variété requise au dimensionnement d'un dispositif
+d'acquisition, ce qui est le motif exact qui les place ici plutôt qu'en cybernétique. Ce que ce
+passage change, c'est uniquement le constat d'accès — de « non ouvert » à **ouvert, texte lu
+en extraction, à évaluer par une lecture qui n'a pas eu lieu**. Aucune fiche n'est rédigée ici.
+
+**Les deux notices HAL léguées par `human-factors` n'ont pas été retentées**, conformément à
+la consigne — leur négatif (aucun fichier déposé, aucun DOI) reste le dernier constat.
+
+## (c) Les deux réserves : l'une confirmée absente, l'autre levée
+
+**Fiore 1987 — l'absence de DOI est confirmée, pas seulement supposée.** Trois vérifications
+convergentes :
+1. Recherche Crossref par titre bibliographique sous le préfixe Persée `10.3406` : aucun
+   résultat correspondant à l'article de Fiore.
+2. Recherche Crossref au niveau de la revue entière par ISSN (`0338-4551`, *Revue française de
+   gestion*) filtrée sur le préfixe `10.3406` : **`total-results: 0`** — Persée n'a déposé
+   **aucun** DOI pour cette revue, pas seulement pour cet article. À comparer avec *Revue
+   économique* (ISSN de Guihéneuf 1956), qui en porte.
+3. Lecture directe de la page Persée `rfg_0338-4551_1987_num_63_1_2668` (GET → 200) : **aucune
+   occurrence de la chaîne « doi » dans le HTML**, alors que la même recherche sur la page de
+   Guihéneuf (`reco_0035-2764_1956_num_7_1_407156`) fait apparaître cinq occurrences dont la
+   balise `content="10.3406/reco.1956.407156"`. La différence de structure de page confirme
+   l'absence, elle n'est pas un artefact de requête.
+
+**Conclusion : Fiore 1987 n'a pas de DOI, point final pour cette pièce et pour la revue
+entière sur la période.** Le candidat reste identifié par son seul identifiant Persée
+(`rfg_0338-4551_1987_num_63_1_2668`, page servie en 200), sans que la règle du dépôt en DOI ne
+puisse être honorée — exactement le cas que le passage 13 avait rencontré pour Lesourne 1985.
+
+**De Almeida 1998 — le GET est désormais testé, et il réussit.** `HEAD` continue de rendre 405
+(le serveur Numdam ne l'implémente pas), mais un `GET` sur
+`http://www.numdam.org/article/RO_1998__32_2_145_0.pdf` rend un **301 vers l'HTTPS**, suivi
+d'un **200** : PDF de 4,65 Mo, 49 pages, couche texte exploitable (première page extraite avec
+succès, en-tête RAIRO lisible). **Accessibilité : texte intégral**, plus seulement « page
+servie ». La vigilance de périmètre transmise par la Reprise précédente reste entière et n'est
+pas tranchée ici : c'est à la lecture de dire si le texte éclaire le comportement d'un système
+flexible de production ou seulement les résultats propres du modèle à réseaux de files
+d'attente.
+
+## (b) Les quatre points d'entrée jamais interrogés
+
+### 1. Files d'attente pour le service
+
+**Candidat identifié et DOI résolu, accès fermé et constaté comme tel.** John D. C. Little,
+« A Proof for the Queuing Formula: L = λW », *Operations Research*, vol. 9, n° 3, juin 1961,
+p. 383-387. DOI `10.1287/opre.9.3.383` (résolu par Crossref, auteur et affiliation
+correspondants : Case Institute of Technology). **Unpaywall : `is_oa: false`,
+`oa_locations: []`, `oa_status: "closed"`.** Aucune archive institutionnelle, aucun dépôt
+d'auteur trouvé. Une copie circule sur Scribd et est mentionnée sur ResearchGate — ce ne sont
+pas des voies légitimes (dépôt non autorisé d'un article sous droits INFORMS), et elles ne se
+comptent pas comme accès. **Statut : non ouvrable par une voie légitime identifiée ce
+passage.** C'est le texte qui porte le mieux la relation encours-débit-délai que le périmètre
+signale comme angle mort depuis l'ouverture (« loi de Little ») ; il reste fermé.
+
+### 2. Maintenance et fiabilité au sens de l'ingénieur
+
+**Candidat trouvé et ouvert : le rapport fondateur du champ.** Advisory Group on Reliability
+of Electronic Equipment (AGREE), Office of the Assistant Secretary of Defense (Research and
+Engineering), *Reliability of Military Electronic Equipment*, Washington D.C., 4 juin 1957.
+Identifiant `DTIC_AD0141476` (collection `dticarchive`, trouvé par recherche croisée
+titre+collection sur `archive.org/advancedsearch.php`, et non deviné). Métadonnées :
+`access-restricted-item` absent, `rights` absent — même régime que les trois candidats DoD
+ci-dessus. **GET `https://archive.org/download/DTIC_AD0141476/DTIC_AD0141476.pdf` → 200**, PDF
+de 27,1 Mo, 375 pages. **Réserve à écrire honnêtement** : la couche OCR de ce scan est de très
+mauvaise qualité (première page quasi illisible en extraction : caractères aléatoires), donc
+seule l'image fait foi ici, non testée page à page dans ce passage. Anglais. C'est le rapport
+qui introduit, pour l'électronique militaire, l'exigence de fiabilité chiffrée (temps moyen
+entre pannes) comme grandeur de conception d'un système — exactement le point d'entrée que
+trois domaines fermés avaient renvoyé ici sans qu'aucun scout ne l'ait cherché depuis.
+
+### 3. Conception des systèmes de service
+
+**Deux candidats de référence identifiés par citation, aucun résolu en DOI propre.** Richard
+B. Chase, « Where Does the Customer Fit in a Service Operation? », *Harvard Business Review*,
+1978 ; Theodore Levitt, « Production-Line Approach to Service », *Harvard Business Review*,
+1972. Crossref ne rend, pour aucun des deux, de DOI correspondant à l'article original de HBR
+— seulement des republications tardives sans rapport direct (un chapitre de 2010 « Revisiting…
+» pour Chase, DOI `10.1007/978-1-4419-1628-0_2` ; un chapitre de recueil de 2012 pour Levitt,
+DOI `10.1007/978-3-642-27922-5_20`). **Statut : angle mort insuffisamment cherché** — HBR
+n'attribue pas systématiquement de DOI rétroactif à ses articles anciens, et une recherche
+propre sur le site de l'éditeur (`hbr.org`) n'a pas été menée dans ce passage. Ni candidat
+retenu, ni vide vérifié : à reprendre par une requête ciblée sur `hbr.org` ou sur un recueil
+qui republie l'article avec DOI.
+
+### 4. Variabilité propagée le long d'une chaîne
+
+**Candidat identifié et DOI résolu, accès fermé et constaté comme tel.** Hau L. Lee,
+V. Padmanabhan, Seungjin Whang, « Information Distortion in a Supply Chain: The Bullwhip
+Effect », *Management Science*, vol. 43, n° 4, avril 1997, p. 546-558. DOI
+`10.1287/mnsc.43.4.546` (résolu par Crossref). **Unpaywall : `is_oa: false`,
+`has_repository_copy: false`, `oa_locations: []`.** Des copies circulent sur ResearchGate et
+sur un site de cours universitaire (Bilkent) — ni l'une ni l'autre n'est un dépôt d'auteur
+identifié ni un mandat d'accès ouvert constaté, donc aucune des deux ne compte comme voie
+légitime. **Statut : non ouvrable par une voie légitime identifiée ce passage.**
+
+**Un vide vérifié sur ce même point, distinct de l'échec ci-dessus** : la relecture de
+l'entrée de De Almeida 1998 (candidat francophone désormais en texte intégral, voir ci-dessus)
+montre qu'elle porte elle-même sur l'agrégation de données de performance dans des réseaux de
+files d'attente représentant des systèmes flexibles de production — un objet voisin de la
+propagation de variabilité dans une chaîne, mais à l'échelle d'un atelier et non d'une chaîne
+d'approvisionnement inter-entreprises. Elle ne remplace pas un candidat sur la propagation
+inter-maillons, elle l'avoisine.
+
+## (a) La couche francophone par moteur propre — HAL, OpenEdition Books, theses.fr
+
+**HAL, interrogé par son propre moteur (`api.archives-ouvertes.fr/search/`) avec la syntaxe
+conjonctive `text:"expression"` ou `text:mot1 AND text:mot2`, jamais en langage naturel.** Un
+premier essai en syntaxe `text:"..."` simple sans guillemets internes correctement échappés a
+rendu des zéros artefactuels sur les quatre points d'entrée ; corrigé avec des expressions
+entre guillemets et l'opérateur `AND` explicite, il rend une littérature réelle et abondante :
+
+| requête | `numFound` | nature des résultats |
+|---|---|---|
+| `"file d'attente" AND service` | 77 | théorie mathématique des files (Avrachenkov, Moyal…), aucun candidat individualisable en concept enseignable d'OM |
+| `variabilité AND "chaîne logistique"` | 19 | thèses et articles récents d'application (optimisation, résilience de chaîne), pas de source fondatrice |
+| `conception AND "système de service"` | 5 | thèses d'ingénierie de service, dont une modélisation de systèmes de production de services en santé (Sbayou) |
+| `"goulot d'étranglement"` | 285 | terme largement réemployé hors du champ (physique, IA, réseaux) ; le sens gestion de production s'y noie |
+
+**Constat honnête** : ce n'est ni un vide vérifié, ni un candidat retenable. HAL rend une
+matière réelle sur les quatre points d'entrée, mais aucune pièce ne s'est détachée comme
+source primaire d'un concept nommé et enseignable au sens du test d'entrée — la plupart des
+résultats sont des thèses récentes d'application ou des travaux de mathématiques pures des
+files, rejetables comme « recherche opérationnelle prise comme branche des mathématiques » au
+sens du périmètre. **Statut : (b) insuffisamment cherché** — un tri fin, pièce par pièce,
+reste à faire et n'a pas pu l'être dans ce passage ; les requêtes et leurs comptes sont
+consignés pour ne pas être rejouées à l'identique.
+
+**OpenEdition Books, parcouru par ses pages de collection et non par son moteur (confirmé une
+nouvelle fois hors service côté client)**. La page `/collections` n'existe pas (404) ; la
+page `/catalogue` est statique et paginée (551 pages), mais ses facettes affichées sont des
+catégories BISAC (« LANGUAGE ARTS & DISCIPLINES… ») et des filtres par éditeur, sans facette
+de discipline « gestion » ou « ingénierie » isolable par URL. Une piste a été détectée par
+recherche web puis vérifiée directement sur la plateforme : **Nathalie Fabbe-Costes et Gilles
+Paché, « Introduction », dans *La logistique : une approche innovante des organisations*,
+Presses universitaires de Provence, 2013.** DOI `10.4000/books.pup.30345` (résolu par
+Crossref). **GET `https://books.openedition.org/pup/30375` → 200**, licence OpenEdition
+Books, PDF du chapitre servi (`https://books.openedition.org/pup/pdf/30375`). **Réserve de
+périmètre à écrire plutôt qu'à trancher** : c'est un chapitre d'introduction généraliste à la
+logistique comme discipline, retraçant une école de recherche (CRET, Aix-en-Provence) plutôt
+qu'exposant un mécanisme unique attribuable ; il se rapproche du « manuel généraliste » que le
+périmètre ne rejette pas explicitement mais qu'il ne vise pas non plus. **Statut : détecté et
+ouvert, évaluation de pertinence renvoyée à une lecture.** Le reste du catalogue OpenEdition
+Books pour ce domaine n'a pas été balayé exhaustivement — la navigation par éditeur (`/pup`,
+`/pur`, `/septentrion`, `/igpde`…) reste à faire systématiquement, ce que ce passage n'a pas eu
+le temps de couvrir. **Statut global : (b) insuffisamment cherché.**
+
+**theses.fr, utilisé uniquement pour vérifier une thèse déjà nommée, jamais pour découvrir par
+mots-clés — conformément à la règle.** La thèse de David De Almeida, annoncée par la Reprise
+du 25 août comme « pourrait être la meilleure source », existe et est identifiée : **David De
+Almeida, « Modélisation par réseaux de files d'attente de systèmes de production »**, thèse de
+doctorat, Université Clermont-Ferrand 2 (Blaise Pascal), directeur Michel Gourgand, soutenue en
+1996. NNT `1996CLF21819`. **Aucun DOI, aucun lien de texte intégral sur la fiche
+`theses.fr/1996CLF21819`** — la thèse est antérieure au dépôt électronique obligatoire (TEF) et
+n'a pas été numérisée rétroactivement, au moins sur cette plateforme. **Statut : existence
+confirmée, accès non constaté — non ouverte.** L'article RAIRO 1998 du même auteur, désormais
+en texte intégral confirmé (voir ci-dessus), reste la voie d'accès la plus proche de son
+contenu.
+
+**Un vide vérifié supplémentaire, HAL cette fois et non theses.fr** : `text:"quantité
+économique de commande"` et `text:"loi de Little"` rendent tous deux `numFound: 0` sur l'API
+HAL — recherché en phrase exacte, syntaxe correctement conjonctive, donc un vide de requête
+réel et non un artefact d'encodage. **C'est un vide pour ces expressions précises**, pas un
+vide sur le sujet : la théorie des files et la gestion de stock existent abondamment dans HAL
+sous d'autres formulations (voir tableau ci-dessus), simplement pas sous le nom propre du
+résultat mathématique.
+
+## Ce que ce passage n'a toujours pas fait, et qui reste entier
+
+- **HAL n'a pas reçu de tri fin** sur les quatre points d'entrée : la matière existe (386
+  résultats cumulés sur les quatre requêtes), aucune lecture individuelle n'a eu lieu.
+- **OpenEdition Books n'a pas été balayé éditeur par éditeur** ; un seul chapitre a été
+  vérifié, trouvé par détection web et non par navigation systématique de collection.
+- **Cairn reste entièrement non interrogé**, conformément à la règle du 403 définitif.
+- **Chase 1978 et Levitt 1972** n'ont pas reçu de recherche sur le site de l'éditeur HBR ni de
+  vérification Unpaywall — seul Crossref a été interrogé, sans résultat direct.
+- **L'AGREE report (`DTIC_AD0141476`) n'a pas été lu au-delà de sa première page** ; sa couche
+  OCR étant dégradée, une lecture devra s'appuyer sur l'image, pas sur le texte extrait.
+- **Les trois rapports DoD sur la variété requise n'ont reçu aucune lecture de fond** : seul
+  leur accès a été retesté et confirmé. Leur pertinence pour une carte reste à évaluer par une
+  lecture, pas supposée depuis ce constat d'accès.
+
+## Vérification de non-doublon
+
+Aucun des candidats ou pièces mentionnés dans ce passage (rapports DoD sur la variété requise,
+AGREE 1957, Little 1961, Harris/EOQ 1990 et 2014, Lee-Padmanabhan-Whang 1997, Fabbe-Costes &
+Paché 2013, De Almeida thèse 1996) ne recoupe l'un des huit cartes déjà publiées du domaine
+(Shewhart ×2, Bellman ×2, Arrow-Harris-Marschak ×2, Holt-Modigliani-Simon ×2) ni les concepts
+déjà validés cités par la cartographie d'ouverture (`loi-de-la-variete-requise`,
+`mesure-devenue-cible`, `loi-de-campbell`, `regulateur-commande-par-l-ecart`,
+`regulation-proportionnelle-derivee-integrale`).
