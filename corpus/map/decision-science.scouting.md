@@ -507,26 +507,6 @@ riche trouvé par accident heureux avec un balayage systématique des huit litt�
 
 ---
 
-# Reprise francophone du 8 septembre 2026
-
-Balayage dédié à l'angle mort déclaré par la cartographie du 23 août 2026 : couche
-francophone non balayée en parallèle (Persée interrogé une fois sans exploitation des
-résultats, OpenEdition Books jamais atteint, theses.fr interrogé une fois, HAL absent du
-compte rendu), et l'échec documenté sur Sfez, *Critique de la décision* (1973), à retenter
-par d'autres voies.
-
-## Note méthodologique — outils et budget
-
-Le serveur MCP `documentary` est resté en échec de connexion (`CONNECTION_CLOSED`) pendant
-toute cette session : aucun outil `mcp__documentary__*` n'était exposé. Travail fait par
-`WebSearch`, `WebFetch`, `curl` direct contre Persée, HAL (API `search`), OpenEdition
-Books (pages de collection HTML statiques), theses.fr, Numdam, Crossref et Unpaywall.
-Chaque accès est un GET réel, dont le code de retour est consigné ci-dessous. Ce fichier est
-écrit par éditions successives au fil de la recherche, pas en une seule passe finale.
-
-
----
-
 # Reprise du 8 septembre 2026
 
 Balayage dédié aux deux angles morts déclarés par la cartographie du 23 août 2026 et par
@@ -813,6 +793,26 @@ militaire. **C'est un résultat à écrire, pas un manque de méthode** : la voi
 fois sur ce domaine (rapport ONR/ARPA/RAND miré sur `dticarchive`) ne s'applique pas
 uniformément à tout ce qui touche Kahneman et Tversky, et il ne faut pas la retenter une
 quatrième fois sur ces deux titres précis.
+
+---
+
+# Reprise francophone du 8 septembre 2026
+
+Balayage dédié à l'angle mort déclaré par la cartographie du 23 août 2026 : couche
+francophone non balayée en parallèle (Persée interrogé une fois sans exploitation des
+résultats, OpenEdition Books jamais atteint, theses.fr interrogé une fois, HAL absent du
+compte rendu), et l'échec documenté sur Sfez, *Critique de la décision* (1973), à retenter
+par d'autres voies.
+
+## Note méthodologique — outils et budget
+
+Le serveur MCP `documentary` est resté en échec de connexion (`CONNECTION_CLOSED`) pendant
+toute cette session : aucun outil `mcp__documentary__*` n'était exposé. Travail fait par
+`WebSearch`, `WebFetch`, `curl` direct contre Persée, HAL (API `search`), OpenEdition
+Books (pages de collection HTML statiques), theses.fr, Numdam, Crossref et Unpaywall.
+Chaque accès est un GET réel, dont le code de retour est consigné ci-dessous. Ce fichier est
+écrit par éditions successives au fil de la recherche, pas en une seule passe finale.
+
 
 ## Persée retenté — les quatre pistes laissées non exploitées le 23 août sont résolues
 
