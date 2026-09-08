@@ -813,3 +813,189 @@ militaire. **C'est un résultat à écrire, pas un manque de méthode** : la voi
 fois sur ce domaine (rapport ONR/ARPA/RAND miré sur `dticarchive`) ne s'applique pas
 uniformément à tout ce qui touche Kahneman et Tversky, et il ne faut pas la retenter une
 quatrième fois sur ces deux titres précis.
+
+## Persée retenté — les quatre pistes laissées non exploitées le 23 août sont résolues
+
+La cartographie du 23 août consignait quatre identifiants tronqués (`pomap_0758`, `sciso_1168`,
+`rfg_0338`, `barb_0001`) issus d'une seule requête large (« aide multicritère décision »,
+« Sfez decision ») sur `https://www.persee.fr/search?ta=article&q=...`, jamais ouverts. Cette
+requête a été rejouée (`GET https://www.persee.fr/search?ta=article&q=aide+multicrit%C3%A8re+d%C3%A9cision`,
+`HTTP 200`) : elle résout en six URLs de documents complètes. Les six ont été ouvertes
+(`GET /doc/<id>`, `HTTP 200` à chaque fois) et leurs métadonnées `citation_*` lues. Deux sont
+des comptes rendus d'ouvrage (secondaires, non retenues comme candidates) ; les quatre autres
+se répartissent en trois candidats retenus ci-dessous et un écarté.
+
+- `pomap_0758-1726_1986_num_4_3_1906_t1_0138_0000_1` — Nicolas Danila, compte rendu de Roy, B.,
+  *Méthodologie multicritère d'aide à la décision* (Economica, 1985), *Politiques et Management
+  Public*, 4(3), p. 138-140. **Secondaire, non retenu comme candidat** : c'est un compte rendu,
+  jamais la voix de l'auteur, exactement le type de source que le périmètre écarte comme preuve
+  primaire. Utile seulement pour confirmer l'existence du livre de 1985, qui reste fermé (non
+  trouvé en ligne dans cette session).
+- `rfg_0338-4551_1986_num_55_1_2572_t1_0149_0000_3` — Alain-Charles Martinet, compte rendu de
+  Saaty, T. L., *Décider face à la complexité* (Entreprise moderne d'édition), *Revue Française
+  de Gestion*, 55(1), p. 149-150. **Secondaire, non retenu.** Même réserve ; de plus Saaty est
+  anglophone (AHP), la traduction française n'est qu'un objet éditorial, pas un texte français
+  d'origine.
+- `pomap_0758-1726_1992_num_10_1_3041` — Med Nakhla, « Quelle aide à la gestion en univers
+  administratif ? », *Politiques et Management Public*, 10(1), p. 117-132. **Ouvert et lu**
+  (`GET renderPage`, `HTTP 200`, page 117 lue en image). **Écarté** : l'objet est un dispositif
+  de pilotage comptable et de contrôle de gestion d'un service de collecte de sang hospitalier
+  (« segmentation des activités par rapport aux préoccupations de rentabilité »), donc un
+  problème de gestion et de dimensionnement, non une opération de choix. Relève, si un jour
+  instruit, de `operations-management` (fermé) selon la frontière que ce périmètre écrit
+  lui-même (« l'ordonnancement, le dimensionnement et l'arbitrage de coût comme problème de
+  gestion ») — **consigné en angle mort vers ce domaine**, pas en rejet.
+
+Les trois candidats retenus sont numérotés 12 à 14 ci-dessous, à la suite des candidats 1-11 du
+23 août. Un quatrième (15) est trouvé par une voie distincte (HAL) et flagué.
+
+### 12. Vincke, Ph. (1991). « L'aide multicritère à la décision. Historique et développements récents »
+
+*Bulletin de la Classe des sciences* [Académie royale de Belgique], 5e série, tome 2, fasc. 1-6,
+p. 147-151. DOI 10.3406/barb.1991.38652 (résolu et confirmé sur Crossref : auteur, titre,
+container-title, pagination, année 1991 tous concordants). C'est le résumé, rédigé par l'auteur
+lui-même (note de bas de page 1 : « Le texte qui suit est le résumé de l'exposé »), d'une
+communication faite à l'Académie royale de Belgique par Philippe Vincke, professeur à
+l'Université Libre de Bruxelles — l'un des grands noms de l'école européenne d'aide multicritère,
+coauteur avec Roy et Bouyssou de manuels de référence du champ.
+
+- **Accès** : Persée, `renderPage`, cinq pages image (0147 à 0151) toutes servies en
+  `HTTP 200` (une page, 0148, a nécessité une nouvelle tentative après un `Recv failure:
+  Connection reset by peer` — l'anomalie de cache déjà documentée par le lot du 23 août ; la
+  deuxième requête a abouti). **Texte intégral lu en entier, les cinq pages**, aucune n'a été
+  sautée. Pas de PDF tenté (`docAsPDF` est derrière l'altcha non résolu, conformément à la
+  règle) ; les images suffisent et sont d'excellente lisibilité.
+- **Ce que le texte porterait** : c'est un texte court qui nomme et articule ce que la carte
+  `classement-multicritere-electre` (Roy 1968) ne couvre pas et signale elle-même comme absent
+  de sa source (voir `notes` de cette carte : « le mot “incomparabilité” ne figure pas dans
+  l'article »). Vincke y écrit noir sur blanc, p. 148 : « Le concept de solution optimale n'a
+  donc pas de sens dans un contexte multicritère » — puis p. 149, en discutant la structure de
+  préférence sous-jacente à toute méthode multicritère : « Le relâchement progressif de ces
+  hypothèses, et la prise en compte de situations plus complexes (présence d'incomparabilités,
+  de plusieurs degrés de préférence, de seuils, d'incertitudes ou d'imprécision...) ont fait et
+  font encore l'objet de nombreuses recherches. » C'est exactement l'objet que le périmètre
+  nomme pour la couche francophone : « l'incomparabilité, ce qu'une méthode refuse d'agréger ».
+  Le texte distingue aussi trois familles de méthodes (utilité multiattribut, surclassement,
+  méthodes interactives) et situe la théorie du choix social d'Arrow comme voisine et non
+  identique à l'aide multicritère — un bon point de jonction avec le candidat 2 du 23 août
+  (Arrow 1948) et avec le candidat 14 ci-dessous.
+- **Identifiant proposé** : `incomparabilite-en-aide-multicritere`.
+- **Vérification de non-doublon** : confronté aux 122 identifiants de `corpus/validated/`
+  (liste relue en entier) et aux dix candidats francophones/anglophones déjà proposés dans ce
+  fichier. Aucune collision de nom. Sur le fond : distinct de `classement-multicritere-electre`
+  par l'objet (l'incomparabilité comme relâchement théorique d'une hypothèse de modélisation des
+  préférences, pas la construction d'un classement par surclassement) et par le texte
+  (Vincke 1991, pas Roy 1968) — deux voix de la même école, pas un doublon de fond.
+- **Accessibilité** : texte intégral, français, aucune traduction nécessaire. Passage court et
+  autonome directement citable (« Le concept de solution optimale n'a donc pas de sens dans un
+  contexte multicritère » tient sous 150 caractères).
+
+### 13. Pasquier-Dorthe, J. & Raynaud, H. (1995). « Un outil d'aide à la décision multicritère »
+
+*Revue Française de Gestion*, n° 106, novembre-décembre 1995, p. 11-21. Pas de DOI déposé sur
+Persée pour cet article (vérifié : aucune balise `citation_doi` dans la page, contrairement à
+d'autres pièces du même fascicule) ; identifiant retenu, l'URL Persée elle-même :
+`https://www.persee.fr/doc/rfg_0338-4551_1995_num_106_1_6849`.
+
+- **Accès** : Persée, `renderPage`, pages 0011 et 0012 lues en image, toutes deux `HTTP 200`.
+  Chapeau de l'article (en italique, p. 11) : « Comment aborder le problème de la décision en
+  matière de gestion quand celle-ci doit être fondée sur des critères multiples et
+  contradictoires ? Kenneth Arrow, prix Nobel d'économie en 1972, et Hervé Raynaud ont créé un
+  outil d'aide à la décision multicritère, fondé sur une approche axiomatique, que présentent ici
+  les auteurs. »
+- **Ce que le texte porterait** : la présentation, par l'un de ses deux auteurs (Raynaud), de
+  l'« approche axiomatique Arrow-Raynaud » — une méthode d'aide multicritère fondée non sur la
+  relation de surclassement (Roy/ELECTRE) mais sur l'extension du théorème d'impossibilité
+  d'Arrow et des axiomes de choix majoritaire de K. O. May (1952, cité en note p. 12) à la
+  comparaison pondérée de plusieurs critères. Le texte développe un exemple pédagogique complet
+  (un jury de recrutement universitaire comparant sept candidats sur cinq critères pondérés,
+  tableaux 1 et 2 lus p. 12) : exactement le type de mécanisme « reconnaissable dans un arbitrage
+  que le lecteur a lui-même à rendre » qu'exige le test d'entrée. C'est un pont direct entre la
+  littérature « décision collective et vote » (déjà représentée par le seul candidat 2, Arrow
+  1948, anglophone) et la littérature « aide à la décision comme méthode » — la double lacune que
+  la cartographie du 23 août signalait elle-même dans ses angles morts.
+- **Identifiant proposé** : `approche-axiomatique-arrow-raynaud`.
+- **Vérification de non-doublon** : aucune collision de nom dans `corpus/validated/`. Sur le
+  fond : distinct de `classement-multicritere-electre` par la méthode elle-même (comparaison par
+  paires et matrice d'intensité de préférence dérivée du choix majoritaire, pas relation de
+  surclassement à seuils de concordance/discordance) et par les auteurs (Raynaud, pas Roy).
+  Distinct aussi du candidat 2 du 23 août (Arrow 1948) par l'objet : Arrow 1948 démontre
+  l'impossibilité, ce texte-ci construit un outil opérationnel qui en hérite pour un problème
+  multicritère de gestion — la source, pas la démonstration.
+- **Accessibilité** : texte intégral, français. Passage court et autonome atteignable dans le
+  chapeau de présentation (cité ci-dessus) ou dans l'exemple pédagogique.
+
+### 14. Boulaire, C., Landry, M. & Martel, J.-M. (1996). « L'outil quantitatif dans l'aide à la décision. La réalité d'un mythe »
+
+*Sciences de la Société*, n° 39, octobre 1996, p. 87-105. DOI 10.3406/sciso.1996.1298 (résolu et
+confirmé sur Crossref : trois auteurs, titre, container-title, pagination 87-105, année 1996 tous
+concordants).
+
+- **Accès** : Persée, `renderPage`, pages 0087 et 0088 lues en image, toutes deux `HTTP 200`.
+- **Ce que le texte porterait** : une critique du présupposé selon lequel l'outil quantitatif
+  d'aide à la décision se contenterait de révéler un problème préexistant et objectif. Lu p. 88 :
+  « Dans ce cadre, un problème réfère à quelque chose qui existe en dehors de tout individu et
+  dont chacun peut faire objectivement la même lecture » — c'est la thèse que les auteurs nomment
+  « la vision classique » et qu'ils annoncent vouloir déconstruire (« Il existe encore un mythe
+  entourant l'usage de l'outil quantitatif, mythe entretenu par la vision classique de l'aide à la
+  décision en recherche opérationnelle »). C'est, mot pour mot, l'objet que le périmètre assigne au
+  troisième camp francophone : une aide multicritère « qui s'est constituée en contestant qu'un
+  problème de choix soit donné avant d'être construit ». Les auteurs citent explicitement Roy
+  (1985) à l'appui d'un déplacement du vocabulaire de « décideurs » vers « acteurs », et annoncent
+  une discussion de la dimension politique de l'usage des outils quantitatifs. Seules les deux
+  premières pages ont été lues dans cette session (l'article en fait 19) ; la thèse d'ouverture est
+  cependant nette et autonome.
+- **Identifiant proposé** : `mythe-de-l-outil-quantitatif`.
+- **Vérification de non-doublon** : aucune collision de nom. Sur le fond : distinct de
+  `critique-de-l-utilite-esperee-subjective` (Shafer, dans le recueil de 1988 déjà candidat) qui
+  attaque l'axiomatique normative du choix individuel sous risque ; ce texte-ci attaque le
+  présupposé objectiviste du problème lui-même dans l'usage de l'outil quantitatif en gestion,
+  un objet voisin mais non superposable, et surtout la seule voix trouvée dans ce passage qui
+  discute le constructivisme du problème plutôt que l'axiomatique de la solution. **Réserve à
+  vérifier avant instruction** : seules deux pages sur dix-neuf ont été lues ; un lecteur primaire
+  devra confirmer que la suite tient la thèse annoncée plutôt que de retomber dans une simple
+  défense technique de l'outil.
+- **Accessibilité** : texte intégral (au moins les deux premières pages confirmées ; le reste de
+  l'article n'a pas été rouvert faute de temps dans cette session, mais rien n'indique qu'il serait
+  fermé — même voie Persée, même volume), français.
+
+## Un quatrième candidat trouvé par HAL, et flagué plutôt que retenu
+
+### 15. Plottu, E. (2001). « Aide multicritère à la décision et développement durable du territoire : de la relation d'incomparabilité à l'intégration d'un objectif de préservation de la liberté de choix au sein de la théorie de la décision »
+
+Chapitre dans Colorni, A., Paruccini, M. & Roy, B. (dir.), *A-MCD-A : Aide Multi Critère à la
+Décision / Multiple Criteria Decision Aiding*, Office des publications officielles des
+Communautés européennes (Joint Research Centre), ISBN 92-894-0994-0, 2001, p. 257-272. **Bernard
+Roy y est coéditeur**, ce qui rattache le volume directement à l'école déjà instruite par le
+candidat 9 du 23 août.
+
+- **Accès** : trouvé par `GET https://api.archives-ouvertes.fr/search/?q=incomparabilité`
+  (`HTTP 200`, 19 résultats), notice HAL `hal-01061339`, PDF `HTTP 200`
+  (`https://hal.science/hal-01061339/document`, 17 pages, dépôt autorisé par l'auteur —
+  `docType_s: COUV`, chapitre d'ouvrage). **Piège rencontré** : le texte n'a pas de couche OCR
+  au-delà de la page de garde HAL (confirmé par extraction : `pdfminer` ne rend que 1 395
+  caractères, le reste étant des sauts de page vides `\x0c`) — c'est un scan image pur, comme les
+  volumes Internet Archive du lot du 23 août. **Contourné légitimement, pas par un défi
+  anti-robot** : les pages ont été rendues en image avec `pymupdf` (bibliothèque déjà présente
+  dans l'environnement) à partir du PDF déjà téléchargé légitimement, puis lues à l'image. Trois
+  pages lues (257 explicitement absente de la lecture, 258 à 260 lues).
+- **Ce que le texte porterait** : l'auteur propose d'utiliser la notion d'incomparabilité au sens
+  multicritère pour caractériser et mesurer la « variété interne d'un domaine de choix », afin de
+  fonder un critère de préservation de la liberté de choix comme fin en soi, hors du cadre
+  conséquentialiste et utilitariste standard (contre l'« utilité indirecte » d'Arrow, 1995, citée
+  et discutée p. 258). C'est un usage réel et original de l'incomparabilité — distinct du candidat
+  12 (Vincke, qui la nomme sans l'opérationnaliser) — mais **le risque de périmètre est réel et
+  explicite** : le périmètre écarte en rejet direct « le libre choix comme thèse politique ou
+  morale », et ce texte défend justement la liberté de choix comme valeur intrinsèque à intégrer
+  au calcul économique. La ligne de défense pour l'inclusion serait que le texte propose un
+  **mécanisme opératoire** (une mesure fondée sur l'incomparabilité) plutôt qu'une thèse
+  seulement politique ; mais cette ligne n'a pas été éprouvée par une lecture complète (14 pages
+  sur 17 non lues dans cette session), et c'est exactement le type de jugement qu'un lecteur
+  primaire doit trancher, pas un scout. **Signalé, non retenu comme candidat ferme.**
+- **Identifiant provisoire, à confirmer seulement après lecture complète et arbitrage de
+  périmètre** : `incomparabilite-et-liberte-de-choix`.
+- **Vérification de non-doublon** : aucune collision de nom avec `corpus/validated/`. Risque de
+  fond à trancher avant tout : chevauchement possible avec le rejet direct du périmètre plutôt
+  qu'avec une carte existante.
+- **Accessibilité** : texte intégral (image, pas d'OCR), français.
+
