@@ -880,7 +880,7 @@ coauteur avec Roy et Bouyssou de manuels de référence du champ.
   identique à l'aide multicritère — un bon point de jonction avec le candidat 2 du 23 août
   (Arrow 1948) et avec le candidat 14 ci-dessous.
 - **Identifiant proposé** : `incomparabilite-en-aide-multicritere`.
-- **Vérification de non-doublon** : confronté aux 122 identifiants de `corpus/validated/`
+- **Vérification de non-doublon** : confronté aux 129 identifiants de `corpus/validated/`
   (liste relue en entier) et aux dix candidats francophones/anglophones déjà proposés dans ce
   fichier. Aucune collision de nom. Sur le fond : distinct de `classement-multicritere-electre`
   par l'objet (l'incomparabilité comme relâchement théorique d'une hypothèse de modélisation des
@@ -999,3 +999,100 @@ candidat 9 du 23 août.
   qu'avec une carte existante.
 - **Accessibilité** : texte intégral (image, pas d'OCR), français.
 
+
+## Sfez, *Critique de la décision* (1973) — retenté par quatre voies nouvelles, toujours fermé
+
+L'angle mort déclaré le 23 août reste un angle mort, mais il est mieux cerné : quatre voies
+nouvelles ont été essayées cette nuit, en plus des quatre déjà documentées (HAL, theses.fr,
+Internet Archive, recherche web générale), et aucune n'a rendu le texte de 1973 ni sa
+réédition aux Presses de la FNSP.
+
+- **OpenEdition Books, la voie prioritaire nommée par le périmètre, ne rend pas de moteur de
+  recherche exploitable par requête directe.** `GET https://books.openedition.org/?q=Sfez+décision`
+  (`HTTP 200`) rend la page d'accueil générique, sans résultats ni lien vers un moteur : le
+  paramètre `q` n'est pas celui attendu par ce point d'entrée. `GET
+  https://books.openedition.org/search?q=Sfez` répond `HTTP 404`. Le moteur réel,
+  `search.openedition.org`, est une application JavaScript côté client (`GET
+  https://search.openedition.org/index.php?q=...` répond `HTTP 200` mais ne rend qu'un
+  squelette HTML vide, `<div id="root"></div>`, sans résultats accessibles par un GET simple) :
+  **c'est une limite d'outil, pas une absence de contenu**, à re-signaler au passage suivant.
+  Une page d'auteur directe a été essayée : `GET
+  https://books.openedition.org/author?page=author&name=sfez+lucien&lang=fr` répond `HTTP
+  404` — Lucien Sfez n'a pas de page auteur sur OpenEdition Books. La voie qui a fonctionné
+  pour d'autres domaines (pages de collection statiques) suppose de connaître à l'avance la
+  collection ou l'ouvrage visé ; aucun ouvrage de Sfez sur la décision n'a été identifié comme
+  hébergé sur cette plateforme par recherche web ciblée (`site:books.openedition.org Sfez
+  décision`, `site:books.openedition.org "critique de la décision" Sfez`) : les résultats ne
+  remontent que des citations tierces de Sfez 1973 dans des chapitres d'autres auteurs (par
+  exemple un chapitre de *Justice, responsabilité et contrôle de la décision publique*, collection
+  `dice`), jamais le texte de Sfez lui-même.
+- **OpenEdition Journals (`journals.openedition.org`), plateforme sœur non nommée par le
+  périmètre mais servant le même type de contenu, a en revanche rendu un texte de Sfez lui-même
+  — hors sujet.** Une page auteur existe (`GET https://journals.openedition.org/ress/615`,
+  `HTTP 200`, titre « Auteur - Sfez Lucien ») dans la *Revue européenne des sciences sociales*
+  et liste un article en texte intégral : Sfez, L. (2002), « La technique comme fiction »,
+  *Revue européenne des sciences sociales*, XL-123, p. 65-74, DOI 10.4000/ress.612 (`GET
+  https://journals.openedition.org/ress/612`, `HTTP 200`, texte lu). **Ce texte n'est pas
+  retenu comme candidat** : son objet est la technique comme discours de fiction et
+  d'idéologie (dans la filiation de son ouvrage *Technique et idéologie*, Seuil, 2002), pas
+  l'opération de choix — il ne satisfait pas la première condition du test d'entrée de ce
+  domaine. Il confirme seulement que Sfez dépose ou fait déposer certains de ses textes tardifs
+  en accès ouvert, ce qui rend d'autant plus notable que *Critique de la décision* (1973), bien
+  antérieur, n'y figure pas.
+- **HAL, absent du compte rendu du 23 août, a été interrogé cette fois** : `GET
+  https://api.archives-ouvertes.fr/search/?q=authFullName_t:"Lucien Sfez"` (`HTTP 200`, 2
+  résultats — « La gouvernance des innovations médicales » et « Utopies... », aucun sur la
+  décision, aucun fichier déposé) ; `GET .../search/?q=Sfez decision` (`HTTP 200`, 9 résultats,
+  aucun de Lucien Sfez lui-même, essentiellement des homonymes). **Confirmé fermé sur HAL, cette
+  fois par une requête ciblée sur l'auteur et non par mots-clés larges.**
+- **theses.fr, interrogé une seule fois le 23 août sur « Sfez decision » sans résultat, a été
+  réinterrogé avec une requête différente** : `GET
+  https://theses.fr/api/v1/theses/recherche/?q=Sfez+décision` (`HTTP 200`, 7 résultats). Aucun
+  n'est une thèse de Lucien Sfez lui-même (il n'a pas soutenu dans la période indexée par cette
+  base) ; aucun n'est une thèse consacrée spécifiquement à *Critique de la décision*. **Confirmé
+  fermé, par une requête distincte de celle du 23 août.**
+- **Gallica, non cité par le compte rendu du 23 août mais fermé par ailleurs pour tout ce
+  passage** : `GET https://gallica.bnf.fr/services/engine/search/sru?...` répond toujours
+  `HTTP 403 Access Interdit`, comme documenté par trois agents indépendants sur d'autres
+  domaines. Non recontourné, conformément à la règle.
+
+**Conclusion inchangée sur le fond, mais l'angle mort est maintenant documenté sur huit voies
+distinctes plutôt que quatre**, et la voie prioritaire nommée par le périmètre (OpenEdition
+Books) est démontrée limitée par l'outil de recherche lui-même, pas simplement « non tentée ».
+Le prochain passage qui voudrait retenter Sfez devrait soit connaître à l'avance une collection
+OpenEdition Books susceptible de l'héberger (par exemple une collection de sciences politiques
+d'un éditeur universitaire ayant republié Sfez), soit chercher directement le catalogue des
+Presses de Sciences Po / FNSP (la réédition citée par la cartographie du 23 août), qui n'a pas
+été testé cette nuit faute de temps.
+
+## Bases et plateformes — état à la fin de ce passage
+
+| base | requêtes cette nuit | résultat |
+|---|---|---|
+| Persée | 1 requête rejouée (celle du 23 août, jamais exploitée) + 6 pages `/doc/` + 11 pages `renderPage` | **exploitée à fond** : 3 candidats retenus (12, 13, 14), 1 écarté motivé (Nakhla), 2 secondaires identifiées |
+| HAL | 6 requêtes (`Sfez decision`, `Lucien Sfez` en auteur, `incomparabilité`, `incomparabilité surclassement`, `Bernard Roy surclassement`, `aide multicritère décision`) | 1 candidat trouvé et flagué (15) ; Sfez confirmé absent |
+| OpenEdition Books | 3 requêtes (recherche par `q`, `/search`, page auteur) | **outil de recherche inatteignable par GET simple** (SPA JavaScript) ; aucun contenu positif ni négatif établi par cette voie — limite d'outil à re-signaler |
+| OpenEdition Journals | 2 requêtes (page auteur Sfez, article) | 1 texte de Sfez trouvé et écarté (hors sujet) |
+| theses.fr | 2 requêtes (`aide multicritère décision`, `Sfez décision`) | pas de candidat nouveau ; confirme l'échec Sfez |
+| Numdam | non réinterrogé (déjà exploité le 23 août pour Roy 1968) | — |
+| Crossref | 4 résolutions de DOI (Vincke, sciso, tentative Pasquier-Dorthe/Raynaud sans succès) | métadonnées confirmées pour les candidats 12 et 14 |
+| Unpaywall | 1 vérification (Vincke) | `is_oa: false` — n'indexe pas Persée, sans conséquence, le texte est ouvert par ailleurs |
+| Gallica (SRU) | 1 requête | confirmé fermé (`HTTP 403`), non recontourné |
+| Cairn | non retenté, conformément à la règle de ne pas repayer un accès fermé constaté |
+
+## Ce que ce passage ajoute au compte des candidats
+
+Trois candidats retenus (12, 13, 14) et un flagué (15) s'ajoutent aux onze candidats du 23
+août, tous vérifiés par un GET réel avec code de retour consigné ci-dessus. Les identifiants
+proposés — `incomparabilite-en-aide-multicritere`, `approche-axiomatique-arrow-raynaud`,
+`mythe-de-l-outil-quantitatif`, et `incomparabilite-et-liberte-de-choix` (provisoire, candidat
+15) — ont été confrontés à la liste complète de `corpus/validated/` (129 identifiants relus) et
+aux dix identifiants déjà proposés dans ce fichier le 23 août. **Aucune collision.**
+
+La couche francophone de ce domaine passe ainsi de un candidat solide (Roy 1968) à quatre
+(Roy 1968, Vincke 1991, Pasquier-Dorthe & Raynaud 1995, Boulaire/Landry/Martel 1996), plus un
+cinquième flagué (Plottu 2001, risque de périmètre). C'est la littérature que le périmètre
+nomme « l'aide multicritère », désormais représentée par trois écoles ou méthodes distinctes
+(surclassement Roy/ELECTRE, axiomatique Arrow-Raynaud, critique constructiviste de l'outil)
+plutôt qu'une seule. La « critique française de la décision » au sens de Sfez, en revanche,
+reste un angle mort entier : aucun texte de cette veine précise n'a cédé cette nuit.
