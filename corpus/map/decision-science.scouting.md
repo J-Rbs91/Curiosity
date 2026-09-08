@@ -504,3 +504,23 @@ autant qu'un balayage — il a été trouvé en cherchant l'auteur déjà connu 
 Archive pour vérifier l'accès du candidat 1, pas en cherchant une littérature du périmètre pour
 elle-même. C'est une variante du risque que le périmètre nomme : ne pas confondre un candidat
 riche trouvé par accident heureux avec un balayage systématique des huit littératures.
+
+---
+
+# Reprise francophone du 8 septembre 2026
+
+Balayage dédié à l'angle mort déclaré par la cartographie du 23 août 2026 : couche
+francophone non balayée en parallèle (Persée interrogé une fois sans exploitation des
+résultats, OpenEdition Books jamais atteint, theses.fr interrogé une fois, HAL absent du
+compte rendu), et l'échec documenté sur Sfez, *Critique de la décision* (1973), à retenter
+par d'autres voies.
+
+## Note méthodologique — outils et budget
+
+Le serveur MCP `documentary` est resté en échec de connexion (`CONNECTION_CLOSED`) pendant
+toute cette session : aucun outil `mcp__documentary__*` n'était exposé. Travail fait par
+`WebSearch`, `WebFetch`, `curl` direct contre Persée, HAL (API `search`), OpenEdition
+Books (pages de collection HTML statiques), theses.fr, Numdam, Crossref et Unpaywall.
+Chaque accès est un GET réel, dont le code de retour est consigné ci-dessous. Ce fichier est
+écrit par éditions successives au fil de la recherche, pas en une seule passe finale.
+
