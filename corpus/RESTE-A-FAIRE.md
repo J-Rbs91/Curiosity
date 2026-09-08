@@ -745,29 +745,110 @@ attribution à écarter : ni la croissance exponentielle, ni le temps de doublem
 70 ne sont d'eux). Leurs dossiers sont au dépôt. Les autres angles morts du domaine sont dans la
 section du 5 septembre de `corpus/map/systems-thinking.scouting.md`.
 
-## Deux textes ouverts et **déjà lus**, laissés par le lot du 23 août — `decision-science`
+## `decision-science`, enrichi le 8 septembre 2026 : les deux legs sont soldés
 
-Ce sont les deux entrées les moins chères du dépôt : leur accès n'est pas seulement constaté,
-**leur texte a été ouvert**. Ils n'ont pas été instruits parce que le plafond de volume du lot était
-atteint, et parce que chacun aurait ouvert un thème à une seule carte, ce que la règle refuse.
+**Le passage 15 a pris ce domaine et il l'a doublé, de huit cartes à quinze, de deux thèmes à
+quatre.** Les deux entrées que cette section portait depuis le 23 août sont **closes, et les
+deux positivement** : elles ont rendu cinq des sept cartes de la nuit. Le compte rendu du lot est
+dans [`corpus/ETAT.md`](ETAT.md).
 
-**Arrow 1948**, *The Possibility of a Universal Social Welfare Function*, RAND Paper P-41.
-Internet Archive, identifiant `DTIC_AD0603806`, collection `dticarchive`, sans restriction,
-page de titre confirmée. C'est la forme la plus ancienne du théorème d'impossibilité, et il
-pourvoirait le thème « agréger des préférences » que le lot n'a pas pu déclarer. **Une réserve
-à porter dans le brief** : le document porte lui-même un avis du Clearinghouse disant que sa
-lisibilité est « in part unsatisfactory », et la couche texte le confirme. Toute citation devra
-se relire sur l'image de la page, plus encore que d'ordinaire.
+**Arrow 1948 a rendu deux cartes au lieu d'une**, `impossibilite-de-l-agregation-des-preferences`
+et `independance-des-alternatives-non-pertinentes`, ce qui a levé l'obstacle exact qui l'avait
+laissé de côté : le thème « agréger des préférences » n'est plus une page à une seule carte, et il
+est déclaré sous le titre « Décider à plusieurs ».
 
-**Newell, Shaw & Simon**, 1958 dans *Psychological Review* et 1960 dans *Self-Organizing
-Systems*. Les deux sont ouverts et lus : le premier par un tiré à part servi par le serveur IIIF
-des archives de Carnegie Mellon, le second sur l'item Internet Archive `SelfOrganizingSystems`.
-Ils pourvoiraient le thème « chercher une solution plutôt que la calculer ». **La cartographie
-dit elle-même qu'un seul concept devrait en sortir**, les deux textes portant sur le même
-programme et la même thèse : la décision de fusionner ou de partager revient à l'instruction.
-Une réserve d'accès est déclarée sur le tiré à part de 1958, la page de notice d'archives ayant
-répondu `HTTP 503` : le fichier est servi publiquement par une bibliothèque universitaire, mais
-l'autorisation n'a pas pu être lue noir sur blanc.
+**Newell, Shaw et Simon ont rendu trois cartes au lieu d'une**, et la réserve de la cartographie,
+qui annonçait qu'un seul concept devrait sortir des deux textes, **est démentie sur pièce**. Le
+partage a été établi par deux lecteurs indépendants, chacun sur son texte, puis confirmé par leurs
+contrôleurs : 1958 pose l'apprentissage comme une question à laquelle une théorie devra répondre,
+1960 y répond et ne fait que cela ; et **la liste de références de 1960 ne cite pas l'article de
+1958**. Le partage se vérifie par une recherche plein texte, décisive : « means-ends » et
+« problem space » ont **zéro occurrence dans le texte de 1958**, dont la seule formulation
+moyens-fins est rapportée à Selz et de Groot.
+
+### Ce que ce lot a établi et qui vaut au-delà de lui
+
+- **L'exemplaire annoncé par une cartographie peut ne pas porter le texte.** Le tiré à part de 1958
+  du fonds Newell fait **six feuillets**, folios 151 à 155 puis 166 : les folios 156 à 165 manquent,
+  et sa notice l'intitule « Proposed Anthology ». La cartographie du 23 août avait lu ces six pages
+  et écrit que « la pagination imprimée (151 à 166) correspond exactement au contenu ». **Le folio
+  156 est celui d'une des deux citations.** Le doublon du fonds Simon,
+  `Simon_box00064_fld04878_bdl0001_doc0001`, porte seize folios sans lacune, et c'est lui qui fait foi.
+- **`file` sous-compte les pages d'un PDF servi par IIIF** : il annonce cinq feuillets pour l'exemplaire
+  complet, qui en porte seize. Un contrôle qui s'y fierait conclurait que l'exemplaire complet est
+  le tronqué, exactement à l'envers.
+- **Une autorisation peut se lire ailleurs que sur la page qui la refuse.** La notice d'archives de
+  Carnegie Mellon répond `HTTP 503` depuis deux nuits, mais **le manifeste IIIF de l'item répond
+  `200`** et déclare en clair `"license": "http://rightsstatements.org/vocab/InC-NC/1.0/"` et
+  l'attribution aux Carnegie Mellon University Archives and Special Collections. La réserve du
+  23 août est levée, et par une porte que personne n'avait essayée.
+- **Un identifiant normalisé ne peut pas attester une édition antérieure à son système.** L'ISBN de
+  *Social Choice and Individual Values* résout parfaitement et **annonce autre chose que ce qu'il
+  décrit** : il désigne un tirage Yale, alors que la deuxième édition de 1963 paraît chez Wiley
+  comme Cowles Foundation Monograph 12, Yale ne reprenant qu'au quatrième tirage, en 1970. Établi
+  sur la notice `olbp56070` de The Online Books Page et sur la chronologie de tirages du SRU de
+  K10plus. La référence résout désormais par **le PDF de la première édition servi en accès libre
+  par la Cowles Foundation**, `m12-all.pdf`.
+- **Deux surfaces d'un même objet peuvent porter deux dates.** La couverture RAND du rapport P-41
+  porte « 26 September 1948 », que les métadonnées de DTIC et d'Internet Archive recopient, et les
+  **dix-neuf pages de texte portent toutes « 10/26/48 »**. Trois contrôleurs y sont passés, les deux
+  premiers en décrivant chacun une surface différente sans se contredire. La contradiction est dans
+  l'objet, et une fiche a raison de suivre la surface la plus proche du texte.
+- **Le `page_numbers.json` d'un item peut être vide plutôt que faux**, et c'est le meilleur cas :
+  celui de `DTIC_AD0603806` porte `page_number_confidence: 0` et aucun folio. La pagination s'établit
+  alors sur les en-têtes imprimés, ce qui est de toute façon la règle.
+
+### Ce qui reste ouvert sur ce domaine, par coût croissant
+
+1. **Trois concepts lus et non instruits, écartés au plafond du lot.** Ce sont les reprises les moins
+   chères : le **choix prudent** d'Arrow et Raynaud (axiome 4, p. 15, exemple du conseil municipal
+   p. 15 et 16, quatre théorèmes p. 16 et 17), la **double facette habilitante et contraignante de
+   l'outil** chez Boulaire, Landry et Martel (p. 99 à 102, avec le tableau 1 et le complément
+   « Mode symbolique et mode instrumental » p. 101), et le second geste d'analyse de Vincke 1991
+   (p. 149, section 3), qui ne peut pas se fonder sur ce texte-là mais désigne Roubens et Vincke 1985.
+2. **La couche francophone est ouverte et elle n'est pas épuisée.** Persée a rendu trois candidats
+   solides sur les quatre pistes que le lot du 23 août avait laissées sans les ouvrir. **OpenEdition
+   Books reste inatteignable par GET simple**, étant une application JavaScript : c'est une limite
+   d'outillage constatée, pas un vide de contenu, et le périmètre la nomme comme voie prioritaire.
+3. **Plottu 2001**, chapitre du recueil coédité par Bernard Roy, HAL `hal-01061339`, PDF obtenu,
+   scan sans OCR relu en image, **lecture incomplète, trois pages sur dix-sept**. Flagué et non
+   retenu : risque réel de tomber sous le rejet direct « le libre choix comme thèse politique ou
+   morale ». À trancher sur pièce.
+4. **Nakhla 1992**, sur Persée, écarté de ce domaine et **consigné en angle mort vers
+   `operations-management`** : dispositif de pilotage et de gestion, pas opération de choix.
+
+### Ce qui est vérifié fermé, et ne se retente pas sans voie neuve
+
+- **Sfez, *Critique de la décision* (1973), est clos après huit routes documentées**, quatre du
+  23 août et quatre de cette nuit : HAL par auteur exact, theses.fr en requête distincte,
+  OpenEdition Books, OpenEdition Journals, Internet Archive, Gallica SRU en `403` reconfirmé, et la
+  recherche web générale. Un texte de Sfez a été trouvé sur OpenEdition Journals, **hors sujet**.
+  C'est le texte que le périmètre appelait en nommant « la critique française de la décision », et
+  **la littérature « critique du concept même de décision » reste la plus fragile du domaine**, même
+  si `mythe-de-l-outil-quantitatif` l'entame par un autre bout.
+- **L'incomparabilité selon Bernard Roy n'a aucune source primaire ouverte connue.** Persée ne porte
+  aucun texte de Roy sur le surclassement, les trois résultats inconnus ayant été ouverts et écartés ;
+  Roy 1974 n'a pas de DOI déposé ; le document Lamsade n° 53 est fermé sous ses deux DOI Springer,
+  `10.1007/978-3-642-75935-2_8` et `10.1007/bf00134132`. **La seule voie non épuisée est le dépôt
+  Dauphine `basepub.dauphine.psl.eu`**, qui rend un `CONNECT tunnel failed 502` par le mandataire
+  sortant. C'est ce qui a fait rejeter Vincke 1991, qui expose l'incomparabilité sans la fonder.
+- **Le jugement de probabilité reste servi de biais, et la voie du rapport technique est close pour
+  lui.** Kahneman et Tversky 1972 sur la représentativité et Tversky et Kahneman 1973 sur la
+  disponibilité **n'ont pas de précurseur DTIC**, et la raison est désormais établie plutôt que
+  supposée : leurs propres notes citent des financements NSF, NIMH et NIH, jamais ONR ni ARPA, ce qui
+  explique l'échec de six requêtes indépendantes. Les deux textes **ont été trouvés ouverts sur des
+  pages personnelles de tiers, et rejetés comme illégitimes** : ce sont des articles Elsevier, et
+  c'est exactement le motif qui avait fait rejeter Thaler 1980, « motif de droits et non d'accès ».
+  **Une autorisation d'ayant droit se constate ; une page personnelle n'en est pas une.**
+- **Howard 1966, « Information Value Theory »**, `10.1109/tssc.1966.300074`, fermé sur quatre fronts.
+  Un rapport ARPA et ONR de Howard de 1973, `DTIC_AD0771699`, est en accès libre et a été lu : il
+  discute des prolongements du calcul de valeur de l'information **sans exposer la théorie de 1966**,
+  et il n'est donc pas un substitut. La valeur de l'information, que le périmètre nomme, reste non servie.
+- **Newell 1969, « Heuristic Programming: Ill-Structured Problems »**, reste non résolu après **six
+  tentatives indépendantes sur deux nuits** : la page CMU `node/19441` rend `503`, et un échec de
+  certificat TLS distinct par `curl`. La Wayback Machine ne porte aucun instantané, et deux voies
+  alternatives ont été explorées et écartées. Avec Simon 1973, vérifié fermé, **la littérature
+  « représentation du problème avant sa résolution » reste la moins bien servie du domaine.**
 
 ---
 
