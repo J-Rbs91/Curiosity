@@ -343,6 +343,117 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "apprentissage-comme-recherche-heuristique",
+    "lead": [
+      "Deux personnes butent sur le même problème de géométrie. L’une le voit se défaire en quelques minutes, l’autre tourne autour pendant une heure. Ce n’est pas que la première calcule plus vite : elle repère, dans la figure qu’elle a sous les yeux, quel écart sépare ce qu’elle tient de ce qu’elle cherche, et quelle construction réduira cet écart. Ce qu’elle a gagné avec l’exercice ressemble moins à une méthode nouvelle qu’à un regard exercé sur le terrain. Si l’on voulait fabriquer une machine qui progresse de cette manière, il faudrait savoir dire ce qui, en elle, aurait à changer.",
+      "La question a une date et un lieu : les 5 et 6 mai 1959, à Chicago, une conférence interdisciplinaire consacrée aux systèmes auto-organisateurs. Allen Newell, J. C. Shaw et Herbert Simon y viennent avec un programme de résolution de problèmes qu’ils ont décrit ailleurs, et avec une proposition qu’ils avancent avec une prudence visible dès leurs premières pages : leur analyse, préviennent-ils, est encore incomplète. Ils ne présentent pas une machine qui apprend. Ils cherchent l’endroit exact où, dans une machine de ce genre, l’apprentissage devrait se loger."
+    ],
+    "sections": [
+      {
+        "title": "Ce qu’un programme doit savoir du terrain",
+        "paragraphs": [
+          "Le programme dont il est question compare deux choses : la situation où il se trouve et celle qu’il vise. Il nomme la différence entre les deux, puis cherche dans son répertoire une opération capable de la réduire ; si cette opération ne s’applique pas telle quelle, il se donne pour nouveau but de rendre son application possible, et recommence. Le chapitre rappelle ce fonctionnement en trois pages et le désigne comme une chose déjà nommée, « what we usually call means-end analysis », ce que nous appelons d’ordinaire l’analyse moyens-fins. L’expression renvoie à deux rapports antérieurs des mêmes auteurs, l’un d’août 1958 sur les processus de la pensée créatrice, l’autre de janvier 1959 sur le programme général de résolution de problèmes. Ils l’écrivent sans détour p. 155 : leur programme et ses performances ont été décrits en détail dans d’autres publications, et ils n’en donnent ici que de quoi rendre la suite compréhensible à qui ne les connaît pas.",
+          "Reste à savoir ce qu’un programme pareil doit posséder avant de commencer. Trois choses, que le texte réunit sous un seul terme : les objets du domaine où il travaille, les opérations qu’il peut leur appliquer, et la liste des différences qu’il sait remarquer entre deux objets. Cet ensemble, le chapitre l’appelle task environment, l’environnement de la tâche, et il en donne lui-même la teneur p. 155 et p. 160. Ce n’est ni un décor ni un contexte au sens vague : c’est la description sur laquelle toute la recherche s’appuie, et hors de laquelle le programme ne peut rien remarquer."
+        ]
+      },
+      {
+        "title": "Apprendre traité comme un problème à résoudre",
+        "paragraphs": [
+          "Comment un tel programme pourrait-il devenir meilleur ? On pourrait lui adjoindre un mécanisme d’apprentissage séparé, chargé de le corriger du dehors. Les auteurs prennent une autre route, et elle tient dans une hypothèse : choisir une bonne description du domaine est peut-être, en soi, un problème de la sorte que le programme sait déjà traiter. Ce qui reviendrait à le laisser être son propre programme d’apprentissage, « it may be possible to let GPS be its own learning program ».",
+          "Le mode du verbe fait ici tout le travail, et il n’y a pas à le durcir : peut-être. L’annonce de leur propos est du même ordre, suivre cette piste pour voir où elle mène, avec l’avertissement que l’analyse restera incomplète. Ce n’est pas une modestie de façade, c’est le statut réel de ce qui suit.",
+          "Le texte se démarque au passage d’une autre façon d’envisager l’affaire. Il mentionne en note, p. 155, le programme d’apprentissage de Friedberg, dont l’intérêt, écrit-il, tient à ce que l’ensemble de composants dans lequel ce programme puise est celui de tous les programmes possibles, un ensemble très vaste. On peut lire ce rapprochement comme une façon de situer ce qui est proposé ici : le choix dont il s’agit porte sur un objet bien plus étroit que l’espace de tous les programmes concevables, à savoir la description d’un domaine de travail."
+        ]
+      },
+      {
+        "title": "Ce que ces programmes d’apprentissage modifient",
+        "paragraphs": [
+          "L’énoncé de conception qui en résulte est net, et c’est l’un des rares du texte à n’être pas au conditionnel. P. 161, les auteurs écrivent que ces programmes d’apprentissage ne changent pas le noyau du système : ils modifient la spécification de l’environnement, « These learning programs do not change the core of GPS; instead, they modify the specification of the environment ».",
+          "La portée de cette phrase est plus grande qu’elle n’en a l’air, parce qu’elle sépare deux questions qu’on confond volontiers : comment on cherche, et ce qu’on sait du terrain où l’on cherche. La machinerie de recherche reste la même d’un domaine à l’autre ; ce qui varie, et ce qui pourrait s’acquérir, appartient à la description : les différences que le programme sait remarquer, et ce qui, dans le domaine, se rattache à quoi. L’une des sections du chapitre, p. 162, porte précisément sur l’acquisition d’une de ces pièces, sous le titre « Learning the Table of Connections ».",
+          "Une conséquence immédiate mérite d’être dite, car elle change la manière de poser la question de départ. Si ce qui s’apprend tient dans la description du domaine, alors progresser ne consiste pas à devenir plus intelligent en général, mais à savoir mieux de quoi est fait le terrain sur lequel on travaille. C’est une hypothèse de conception, pas un résultat expérimental ; elle a l’avantage de désigner un objet précis auquel s’en prendre."
+        ]
+      },
+      {
+        "title": "Ce que « caractériser efficacement » veut dire ici",
+        "paragraphs": [
+          "Efficace, dans ces pages, ne veut dire ni rapide ni économique. Une caractérisation efficace est celle qui permet effectivement de résoudre. L’emploi parallèle du même folio le montre : les différences réunies dans la figure 6 y sont présentées comme des traits de l’environnement de la tâche logique « that are effective for problem solving in that environment », des traits qui permettent de résoudre des problèmes dans cet environnement. Une description peut être exacte et rester inutile ; ce qui est demandé n’est pas sa vérité, mais son rendement pour la recherche.",
+          "Le partage des rôles, dans ce chapitre, demande une seconde d’attention. Ce qui y est affirmé de l’apprentissage humain et ce qui y est proposé pour le programme ne sont pas au même endroit. La phrase du folio 161 déclare que ce genre d’apprentissage, apprendre à caractériser efficacement l’environnement d’une tâche, est important et répandu chez les humains ; elle ne dit pas comment les humains s’y prennent, et le mécanisme exposé ensuite est celui d’un programme. Prendre la première pour une thèse de psychologie que le second démontrerait serait lui faire dire davantage qu’elle ne dit."
+        ]
+      },
+      {
+        "title": "Une simulation menée à la main",
+        "paragraphs": [
+          "Il faut maintenant dire ce qui, dans tout cela, a tourné : rien. Le mécanisme exposé dans ces pages a été déroulé à la main par ses auteurs, sur un seul domaine, la logique. Le tableau 5 s’intitule « Sketch of Hand Simulation with Logic as the A-Environment », esquisse d’une simulation à la main, et il se termine sur la mention que la simulation a été arrêtée à ce point, « The simulation was terminated at this point ».",
+          "Les auteurs ne le dissimulent pas, ils l’écrivent. P. 180 : ce qu’ils donnent est loin de suffire pour que quiconque vérifie ce qu’ils ont fait, et ils avancent leur schéma dans un esprit très provisoire, « we put the scheme forward in a very tentative spirit ». P. 186 : la possibilité qu’ils viennent d’envisager n’est aucunement mise à l’épreuve, « This possibility is quite untested », leur travail s’étant borné à la tâche logique.",
+          "Dans la discussion transcrite à la suite du chapitre, un participant demande sur quelle machine tout ceci se fait. C’est Newell seul qui répond, et sa réponse est sans ambiguïté : le programme est sur le Johnniac de la RAND, le travail dont il parle est entièrement une simulation à la main, et le programme, en cours de mise au point, « is not yet solving any problems », ne résout encore aucun problème. Ces phrases sont les siennes, prononcées en séance, et la signature commune du chapitre ne les couvre pas.",
+          "Ce constat ne dévalue pas le texte, il en fixe le genre. Ce qu’on lit là est une proposition de conception, argumentée puis déroulée à la main jusqu’à un point d’arrêt, et non le compte rendu d’un programme qui aurait appris quoi que ce soit. Les deux se ressemblent de loin ; ils ne valent pas la même chose, et l’écart entre les deux est exactement ce que ces trente-sept pages laissent ouvert."
+        ]
+      }
+    ],
+    "limits": [
+      "La description complète du programme et de ses performances est ailleurs, dans deux rapports de la RAND que les auteurs nomment eux-mêmes : P1320, sur les processus de la pensée créatrice, août 1958, et P1584, sur le programme général de résolution de problèmes, janvier 1959. C’est vers eux que le chapitre renvoie lorsqu’il rappelle l’analyse moyens-fins, et c’est eux que vise le folio 160 quand il fait état de problèmes de logique, de trigonométrie et d’algèbre élémentaire résolus. Sur quoi ces résultats reposaient en 1959, ces deux rapports le diront à qui les ouvrira.",
+      "La seule trace de réception repérée à ce jour est un compte rendu signé de Stafford Beer, paru dans la revue OR en juin 1961, et il porte sur le volume entier plutôt que sur ce chapitre. Ce qu’un lecteur de 1961 retenait d’un recueil où voisinaient l’apprentissage des machines et les systèmes nerveux, et s’il a distingué ces trente-sept pages parmi les autres, c’est cette page de juin 1961 qui le dit ; elle attend son lecteur.",
+      "Rien de ce chapitre n’existe en français : aucune traduction publiée du texte ni du volume qui le porte, aucune reprise francophone identifiée. Toute lecture française part donc de l’anglais, et task environment y garde sa littéralité, environnement de la tâche, sans usage français attesté sur lequel s’appuyer. Les fonds francophones, de Persée à HAL, d’OpenEdition à theses.fr, restent à interroger : ce silence désigne une recherche à mener, non une absence constatée."
+    ]
+  },
+  {
+    "conceptId": "approche-axiomatique-arrow-raynaud",
+    "lead": [
+      "Imaginons quatre fournisseurs à départager, et un tableau à double entrée : le prix, le délai, la qualité constatée, le service après-vente. Chacun l’emporte sur un point et perd sur un autre, et personne autour de la table ne veut dire à voix haute combien de jours de retard valent mille euros d’économie. On cherche alors une méthode. On en trouve des dizaines, chacune avec son nom, sa formule, parfois son logiciel, et deux d’entre elles, sur les mêmes chiffres, peuvent désigner deux fournisseurs différents. Vient la question qui paraît la seule sensée : laquelle est la bonne ?",
+      "Un article de 1995 paru dans la Revue française de gestion répond que cette question n’a pas de réponse générale, et propose de la retourner. Au lieu de choisir une méthode puis de découvrir comment elle se comporte, on écrit d’abord ce que l’on exige d’elle, exigence par exigence, et l’on cherche ensuite quelles règles de décision les respectent toutes. Chacune de ces exigences porte ici le nom d’axiome, et l’article en énonce sept, numérotés et mis en italique."
+    ],
+    "sections": [
+      {
+        "title": "Ce que le tableau retient de chaque critère",
+        "paragraphs": [
+          "Rien de tout cela ne commence par les axiomes. L’article annonce deux temps : mettre les données en forme, puis chercher les exigences. La mise en forme consiste à comparer les options deux par deux. Pour deux fournisseurs A et B, on ne demande à chaque critère qu’une chose : lequel des deux il place devant. Chaque critère porte un poids, qui dit son importance, et l’on inscrit dans une case « la somme des poids des critères qui évaluent A comme meilleur que B ». Une case symétrique fait le compte inverse. Le tableau obtenu tient tout le problème.",
+          "Ce qui n’y entre pas est aussi délibéré que ce qui y entre. Qu’un fournisseur livre trois jours plus tôt ou trente jours plus tôt, le tableau écrit la même chose : ce critère le met devant. L’écart entre deux options selon un critère est écarté, « car la mesure de cet écart semble trop discutable pour que l’on puisse sérieusement le prendre en compte ». Le refus a un prix immédiat, et il vaut d’être vu : un avantage spectaculaire sur un point cesse d’être spectaculaire, il devient un poids parmi d’autres. En échange, aucun taux de change implicite entre des euros et des jours ne se glisse dans le calcul sans que personne l’ait décidé."
+        ]
+      },
+      {
+        "title": "Une exigence écrite avant de connaître la réponse",
+        "paragraphs": [
+          "Un axiome, ici, n’est pas une vérité de départ dont on déduirait le reste. C’est une propriété que l’on réclame de la procédure, et qu’elle vérifie ou ne vérifie pas. Le premier porte le numéro 0 et interdit de juger sur autre chose que le tableau : ce qui n’y figure pas ne pèse pas sur la décision. Les suivants ajoutent des exigences plus disputables, jusqu’à un axiome 6’ que l’article discute longuement. Sept en tout, chacun formulé en une phrase que l’on peut lire, contester et refuser.",
+          "L’intérêt de les écrire est qu’ils deviennent alors démontrables. Une fois les exigences posées, on peut établir qu’une règle les satisfait toutes, ou qu’aucune ne le peut. L’article rapporte ainsi, page 16, que « H. Raynaud a démontré les théorèmes suivants », et en aligne quatre en deux pages. On peut y voir le déplacement qui fait tout l’intérêt de la démarche : la discussion ne porte plus sur le résultat, où chacun défend le classement qui l’arrange, mais sur des exigences énoncées avant de savoir qui elles feront gagner."
+        ]
+      },
+      {
+        "title": "Des axiomes venus du vote, révisés pour la gestion",
+        "paragraphs": [
+          "Cette façon de procéder n’est pas née dans les problèmes de gestion. Elle vient des travaux de Kenneth Arrow, dont les axiomes portaient sur le problème de la démocratie, c’est-à-dire sur la manière dont des préférences individuelles se combinent en une décision commune. Ce sont la démarche elle-même et les axiomes d’Arrow en propre qui passent de là au problème du gestionnaire qui doit trancher entre quatre fournisseurs.",
+          "Transporter n’est pas recopier. L’une des conditions d’Arrow, que le texte francise en « indépendance par rapport aux alternatives irrelevantes », y est jugée « ici inutilement fort » et remplacée par une exigence d’indépendance dite dichotomique. Ce que cette condition demande, et ce que l’on perd à l’affaiblir, est une discussion à soi seule ; il suffit de retenir que l’emprunt est critique. « Arrow et Raynaud, dans leur approche, proposent » leur propre version d’une exigence tenue pour légitime dans une élection et jugée, pour ce problème de gestion, plus forte qu’il n’est utile."
+        ]
+      },
+      {
+        "title": "Quand deux exigences ne tiennent pas ensemble",
+        "paragraphs": [
+          "Le moment le plus instructif est celui où le procédé échoue, et l’article ne le cache pas. Page 18, à propos de l’un de ses propres axiomes : « Dans le cas général, cet axiome n’est pas compatible avec les axiomes de prudence et d’indépendance. » Trois exigences qui paraissent chacune raisonnable ne peuvent pas être satisfaites en même temps par une règle de décision.",
+          "Un tel constat n’est pas un accident de parcours, c’est le genre de résultat que la démarche produit. Écrire ses exigences ne garantit pas qu’une méthode les honore toutes ; cela permet aussi d’établir qu’aucune ne le peut, et met alors le décideur devant un choix qu’il ignorait avoir à faire : laquelle abandonner. C’est de là que vient la thèse la plus large de l’article : les problèmes de décision multicritère sont trop spécifiques les uns par rapport aux autres, et « il ne peut être question de tous les résoudre au moyen d’un seul et même système d’axiomes et par conséquent d’une règle unique de décision »."
+        ]
+      },
+      {
+        "title": "Ni une recette de plus, ni un produit",
+        "paragraphs": [
+          "Le titre de l’article annonce un outil, et l’on s’attend à ce qu’il finisse par en vendre un. Il fait exactement l’inverse. Après avoir exposé une batterie d’axiomes cohérente et la règle qui la satisfait, il s’arrête pour prévenir un contresens : cette batterie « pourrait sembler souhaitable pour tous les cas possibles, ou bien, être préconisée par Arrow et Raynaud comme étant leur méthode. Ce serait une compréhension erronée de l’approche ». La batterie exposée est un exemple de ce que la démarche permet de construire, pas la méthode maison de ses auteurs.",
+          "La conclusion enfonce le clou en visant l’usage même des méthodes toutes faites : il s’agit de « ne pas employer une méthode dont on n’ait pas accepté profondément les fondements qui, eux, ne sont pas de la technique mathématique ». La phrase mérite d’être prise au sérieux, parce qu’elle désigne le partage des rôles habituel et le refuse. Le choix des axiomes n’est pas la partie technique que l’on délègue à un spécialiste avant de récupérer un résultat : c’est la partie où le décideur s’engage, et elle ne se sous-traite pas.",
+          "Le texte va plus loin et nomme lui-même, page 20, « le point le plus faible de l’approche ». La « bibliothèque d’axiomes » où l’on viendrait puiser ses exigences n’existe pas encore, si bien que « le décideur gestionnaire ne puisse en général se passer d’un expert qui l’aide à formuler correctement ses axiomes ». L’aveu est sérieux : une démarche qui promet de rendre au décideur la maîtrise de ses propres exigences reconnaît qu’il lui faut, pour les formuler, quelqu’un qui sache les écrire."
+        ]
+      },
+      {
+        "title": "Un nom, une signature, deux dates",
+        "paragraphs": [
+          "L’article est signé « par Jacques Pasquier-Dorthe et Hervé Raynaud », et il parle pourtant d’Arrow et de Raynaud à la troisième personne d’un bout à l’autre, alors même que Raynaud le cosigne. Les outils qu’il expose y sont dits « le fruit d’une longue collaboration entre Kenneth Arrow et Hervé Raynaud », et les théorèmes sont attribués à Raynaud comme à un tiers. Ce que l’on tient donc en main est une présentation en français d’une approche que le texte rapporte à deux hommes, dont l’un signe ; aucun résultat n’y est attribué à l’autre signataire, et l’article se décrit lui-même comme une présentation qui « s’adresse à des non-mathématiciens ».",
+          "La date se lit de la même façon. 1995 est le millésime de ces pages, pas celui de l’approche : le texte la dit « développée il y a quelques années sous le nom d’approche axiomatique Arrow-Raynaud », et ne la date jamais autrement. Ce qui porte le nom d’Arrow et de Raynaud existait donc déjà quand la Revue française de gestion l’a fait connaître à des lecteurs de gestion."
+        ]
+      }
+    ],
+    "limits": [
+      "Depuis quand cette approche existe, aucune source disponible ne le fixe. Deux imprimés portent les deux noms ensemble : Social Choice and Multicriterion Decision-Making, MIT Press, 1986, et Logique de la décision managériale, 2011, signé Raynaud avec la collaboration d’Arrow. Ce que les deux hommes y écrivent de leur propre main, ces volumes le tiennent : il faudra les ouvrir.",
+      "L’article annonce un ouvrage en cours de parution aux Editions Masson sous deux titres différents, « Choix social et décision multicritère » puis « L’approche axiomatisée en décision multicritère ». Le catalogue de la Bibliothèque nationale de France n’en donne de notice ni sous l’un ni sous l’autre : que ces pages aient paru n’est pas établi.",
+      "Le milieu de l’article porte un second mécanisme, qui mérite sa propre lecture : le choix prudent. L’axiome 4 demande que « Le candidat retenu sera un vainqueur prudent », un exemple de conseil municipal l’illustre, et les théorèmes de Raynaud font du poids minimal qui le construit « une idée de la gravité du conflit entre les critères ». Pages 15 à 17.",
+      "Ce que Jacques Pasquier-Dorthe a apporté à cette présentation reste inconnu : l’article ne lui attribue aucun résultat, et ses travaux répertoriés ailleurs ne portent ni sur Arrow, ni sur Raynaud, ni sur la décision multicritère."
+    ]
+  },
+  {
     "conceptId": "asservissement-des-activites-hors-travail",
     "lead": [
       "Imaginons quelqu’un qui rentre chez lui à sept heures du matin après une nuit de travail. Il doit dormir, mais il doit aussi faire des courses, appeler une administration qui ferme à seize heures, préparer un repas, voir ses enfants avant qu’ils ne partent. Prise séparément, chacune de ces choses reste possible. C’est leur agencement qui devient impraticable : il faut décider laquelle sera sacrifiée, laquelle abrégée, laquelle repoussée à un autre jour. On résume souvent cela d’un seul mot, la fatigue, et le mot est juste sans expliquer grand-chose : il ne dit ni pourquoi c’est tel repas qui saute plutôt qu’un autre, ni pourquoi l’invitation de vendredi est refusée.",
@@ -3538,6 +3649,119 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "impossibilite-de-l-agregation-des-preferences",
+    "lead": [
+      "Trois collègues doivent classer trois projets, du plus urgent au moins urgent. Chacun, séparément, y arrive sans peine : on sait dire ce qu’on préfère, et on sait le dire de manière suivie. La difficulté commence quand il faut en tirer un seul classement, celui du groupe. Ce qu’on lui demande n’est pas seulement de désigner un gagnant : c’est de tenir debout. Si le groupe place le premier projet avant le deuxième, et le deuxième avant le troisième, il doit placer le premier avant le troisième. Sinon le résultat dépend de l’ordre dans lequel on a posé les questions, et non de ce que les gens veulent.",
+      "En 1948, dans un rapport de dix-neuf pages écrit pour la RAND Corporation, Kenneth J. Arrow retourne la question. Plutôt que d’examiner une méthode de vote après l’autre, il écrit d’abord ce qu’on exige d’une règle, quelle qu’elle soit, puis il demande si une règle peut satisfaire ces exigences ensemble. La réponse est non, et elle est bornée de deux côtés : elle ne vaut que sous les conditions qu’il énonce, et elle laisse debout deux règles, dont il dit lui-même qu’elles violent les principes démocratiques."
+    ],
+    "sections": [
+      {
+        "title": "Ce qu’on exige d’une règle avant de la juger",
+        "paragraphs": [
+          "La règle dont il est question, ce qu’Arrow appelle une fonction de bien-être social, reçoit d’un côté les préférences de chaque personne et rend de l’autre un classement pour le groupe. La première exigence porte sur ce qu’elle rend, et elle est double : quelles que soient les préférences reçues, la sortie doit être un ordre utilisable, c’est-à-dire qu’on puisse y comparer deux options quelconques et qu’aucune boucle ne s’y forme. C’est la Condition 1, page 9, « For all R1,…,Rn, R is a weak ordering relation » : pour tous les classements individuels reçus, le classement social est un ordre faible, faible parce qu’il tolère l’indifférence entre deux options.",
+          "La seconde exigence porte sur l’entrée. Ce que la règle reçoit, ce sont des classements et rien d’autre : aucune mesure de l’intensité des préférences, aucune quantité de satisfaction à comparer entre les personnes. Arrow ne revendique pas cette façon de poser le problème et l’attribue page 2 à Abram Bergson, qui « has reintroduced the social welfare function and has pointed out that it need only depend on the preference schedules of individuals », approche reçue ensuite par Samuelson et Lange. Ce point compte pour la suite : l’impossibilité qui vient ne tiendra pas à ce qu’on refuserait de mesurer le bonheur des gens, mais à la seule mise en commun de leurs classements."
+        ]
+      },
+      {
+        "title": "La convention et le dictateur",
+        "paragraphs": [
+          "Deux règles satisfont sans peine l’exigence de cohérence, et Arrow les met de côté dans la phrase même où il annonce son résultat, page 3, en exceptant « certain trivial methods which violate democratic principles ». Leurs définitions viennent page 10. La première fixe le classement d’avance : « let R be any weak ordering of the alternatives independent of R1,…,Rn », un ordre arrêté une fois pour toutes, sur lequel les préférences de personne n’ont de prise. La seconde recopie une personne : « let R coincide with R1 ». Toutes deux rendent un classement parfaitement cohérent, en toutes circonstances, et c’est bien pour cela qu’il faut les écarter à la main.",
+          "C’est aussi ce qui empêche de lire le résultat comme on le lit souvent. Il ne dit pas qu’aucune règle cohérente n’existe : il dit que les règles cohérentes sont celles-là. Le théorème de la page 14 le formule sans détour : « If the number of alternatives exceeds two, every social welfare function satisfying Conditions 1-3 is either conventional or dictatorial. » Au-delà de deux options, une règle qui tient debout et qui ne fixe rien d’avance et qui ne s’en remet à personne en particulier n’existe pas. La phrase de la page 3 garde d’ailleurs sa précaution d’ouverture, « Sous certaines restrictions très raisonnables » : le résultat est conditionnel, et il l’annonce."
+        ]
+      },
+      {
+        "title": "Pourquoi il en faut au moins trois",
+        "paragraphs": [
+          "Six conditions sont posées, pages 9 à 11, et la sixième ne porte pas sur la règle mais sur la situation : « Condition 6. There are at least three alternatives. » Elle est là pour écarter les cas triviaux. Vient alors la phrase la plus nue du rapport, page 11 : « It will be shown that Conditions 1-6 are inconsistent. » Ce n’est pas une condition qui échoue, ce sont les six qui ne tiennent pas ensemble.",
+          "Il s’ensuit deux choses que le lecteur peut tirer lui-même. D’abord, en dessous de trois options, rien n’est affirmé : un scrutin par oui ou non n’est pas concerné, et la difficulté n’apparaît qu’à partir du moment où un groupe doit ranger plus de deux choses, trois candidats, trois projets, trois usages d’un budget. Ensuite, puisque l’incompatibilité est celle du bloc, le résultat ne désigne aucun coupable : toute issue consiste à renoncer à l’une des six exigences, et le choix de celle qu’on lâche est un choix politique autant que technique. Le rapport lui-même en emprunte une."
+        ]
+      },
+      {
+        "title": "Un problème né de l’économie du bien-être",
+        "paragraphs": [
+          "Ce texte ne commence pas par des bulletins de vote. Il commence par un différend d’économistes. Page 3, Arrow rappelle l’incohérence que T. de Scitovsky avait relevée dans le principe de compensation et conclut : « Thus, the compensation principle does not provide a true ordering of social decisions. » Le mot qui compte est le dernier : ce qui manque à ce principe, c’est un véritable ordre des décisions sociales, exactement ce que la Condition 1 exigera d’une règle.",
+          "La phrase suivante donne le programme : « It is the purpose of this note to show that this phenomenon is very general. » L’impossibilité est donc présentée comme la généralisation d’un échec déjà connu et jusque-là local, non comme un paradoxe des urnes. Le titre du rapport dit la même chose à sa manière : il porte sur la possibilité d’une fonction de bien-être social universelle, et c’est cette universalité qui va manquer."
+        ]
+      },
+      {
+        "title": "La restriction de Black, et le vote par rangs",
+        "paragraphs": [
+          "Le rapport ne s’arrête pas au théorème. Page 17, il examine une autre sortie, qui ne touche pas aux exigences imposées à la règle mais aux préférences qu’on accepte de recevoir : « A more radical restriction upon the range of possible individual preference patterns has been proposed by D. Black ». Cette restriction range les alternatives linéairement, et Arrow précise ce qu’il y ajoute : « Black’s result for a finite number of alternatives is here generalized to any space of alternatives ». Autrement dit, l’impossibilité vaut sur toutes les configurations de préférences ; sur certaines familles de configurations, la question se rouvre.",
+          "Une absence mérite d’être signalée, parce qu’un lecteur français l’attend et ne la trouvera pas. Ni Condorcet, ni Borda, ni le paradoxe de vote ne sont nommés dans ces dix-neuf pages. La méthode où chacun range les options est bien exposée, page 15, mais sous le seul nom de « the rank-order method of voting », sans être attribuée à quiconque. La généalogie que la mémoire du domaine a construite après coup n’est pas celle que ce texte écrit."
+        ]
+      },
+      {
+        "title": "Le tapuscrit P-41 et ses en-têtes",
+        "paragraphs": [
+          "L’objet lui-même vaut d’être décrit. C’est un tapuscrit de dix-neuf pages, sous la cote P-41, signé d’un seul nom. Sa date se lit différemment selon la surface qu’on regarde : la couverture RAND porte « 26 September 1948 », et les notices qui en dérivent la recopient, tandis que les dix-neuf pages de texte, page de titre du rapport comprise, portent toutes « 10/26/48 », soit le 26 octobre 1948. La contradiction est dans l’objet, pas dans sa description : qui cite ce rapport gagne à savoir laquelle de ses deux faces il lit.",
+          "Le document déclare aussi sa propre illisibilité. Sa numérisation s’ouvre sur un avis imprimé, « WE REGRET THAT LEGIBILITY OF THIS DOCUMENT IS IN PART UNSATISFACTORY », et la couche de texte automatique qui l’accompagne est inutilisable : les mots de ce rapport ne se lisent qu’à l’image, page par page.",
+          "Son vocabulaire enfin est le sien. La première classe de règles y est dite conventionnelle, les conditions y sont au nombre de six, et la condition d’indépendance y porte sur la fonction de choix, c’est-à-dire sur ce que la société retiendrait d’un ensemble d’options donné, plutôt que sur la relation sociale elle-même. Ce sont ses termes à lui, et c’est avec eux qu’il se lit, plutôt qu’avec le souvenir d’une formulation apprise ailleurs."
+        ]
+      }
+    ],
+    "limits": [
+      "L’article de 1950 du Journal of Political Economy et le livre de 1951, Social Choice and Individual Values, sont les textes par lesquels ce travail a été repris et par lesquels il est connu. Quels mots ils gardent, lesquels ils abandonnent, et ce que le théorème y devient : leurs pages le portent, et il faudra les ouvrir. Rien de ce qui précède n’autorise à leur prêter les formulations de 1948.",
+      "Le résultat est une chose, sa démonstration en est une autre. Les pages 5 à 8, 12, 13 et 18, qui portent les lemmes et les démonstrations, sont parmi les plus abîmées de la numérisation, et l’argument qui s’y déroule reste à lire sur l’original. Savoir si la preuve de 1948 est correcte telle qu’elle est écrite se tranche là, et nulle part ailleurs.",
+      "Ce que ce rapport est devenu ensuite, qui l’a repris, discuté ou contesté, en anglais comme en français, est une autre enquête : tout ce qui précède vient du rapport lui-même, et d’aucune source seconde.",
+      "Aucune traduction française publiée de ce rapport n’est connue. La phrase de la page 3 est donc rendue en français par une traduction sans autorité, qui ne vaut que comme accès : les mots d’Arrow sont ceux de son anglais, et ils sont sur l’image de sa page 3."
+    ]
+  },
+  {
+    "conceptId": "independance-des-alternatives-non-pertinentes",
+    "lead": [
+      "Un comité de trois personnes doit départager deux projets, A et B. Un troisième projet, C, figure encore sur la liste, et les trois membres le placent en dernier : personne n’en veut. Le procédé de décision, quel qu’il soit, désigne B. Quelqu’un fait alors remarquer que C n’est de toute façon pas finançable, et on le retire. Rien d’autre n’a bougé : les trois membres ont exactement le même avis qu’avant sur A et sur B. On recompte, et c’est A qui l’emporte. Personne n’a changé d’avis, et pourtant le groupe a changé de décision, sous l’effet d’une option dont nul ne voulait.",
+      "Le premier réflexe est de chercher l’erreur dans le calcul. En octobre 1948, dans un rapport de dix-neuf pages écrit pour la RAND Corporation, Kenneth J. Arrow procède autrement : plutôt que de corriger un procédé, il énonce l’exigence qu’un tel retournement ne se produise jamais, la numérote, et la place au même rang que les autres contraintes auxquelles un procédé de décision collective doit satisfaire. Un procédé qui la viole n’est pas mal réglé : il est écarté."
+    ],
+    "sections": [
+      {
+        "title": "Non pertinente ne veut pas dire mauvaise",
+        "paragraphs": [
+          "L’adjectif trompe. Une option n’est pas « non pertinente » parce qu’elle serait médiocre, marginale ou fantaisiste : elle l’est parce qu’elle ne fait pas partie de celles entre lesquelles on décide. Dans ce rapport, les options réellement ouvertes forment un ensemble noté S, et ce que le procédé retient parmi elles est noté C(S). L’exigence posée page 10 est que « C(S) should be independent of the very existence of alternatives outside of S, and therefore should depend only on the individual preference scales within S » : ce que le groupe choisit parmi les options disponibles ne doit dépendre que de ce que chacun pense de ces options, et de rien d’autre.",
+          "Page 11, Arrow en tire une conséquence pratique : « Condition 3 implies that in considering C(S), we can disregard all preferences among alternatives not in S. » Autrement dit, pour savoir ce que le groupe choisit ici, il est inutile de recueillir l’opinion de qui que ce soit sur des options qui ne sont pas en jeu, y compris sur des options qui n’existent pas. Un procédé qui a besoin de cette information supplémentaire est, par là même, sensible à quelque chose qu’il ne devrait pas voir.",
+          "L’intitulé figure page 10, entre parenthèses derrière le numéro : « Condition 3 (Independence of irrelevant alternatives) ». La section où les trois premières conditions sont posées ne porte aucune note de bas de page, et rien dans ces pages ne renvoie la formule à un prédécesseur."
+        ]
+      },
+      {
+        "title": "L’option que les trois placent en dernier",
+        "paragraphs": [
+          "La section 6, page 15, est consacrée à cette condition, et elle s’ouvre sur un cas construit pour la mettre en défaut. Trois individus, trois options x, y et z. De z, Arrow écrit qu’elle est « a very undesirable alternative, since each individual regards it as worst », une option que chacun des trois range au dernier rang. Le procédé mis à l’épreuve additionne les utilités individuelles après avoir ramené chaque échelle personnelle aux options disponibles : la meilleure vaut 1, la pire vaut 0, et ce qui se trouve entre les deux reçoit une valeur intermédiaire.",
+          "Tant que z reste sur la table, chaque échelle est calibrée sur trois options, et le total penche pour y. Effacer z oblige à recalibrer : il ne reste que deux options par personne, donc plus rien entre 1 et 0. Les deux premiers individus donnent alors 1 à x et 0 à y, le troisième l’inverse, et c’est x qui l’emporte. Aucun avis n’a changé sur x ni sur y ; seule a disparu une option que personne ne voulait.",
+          "Ce n’est pas une curiosité arithmétique, c’est exactement ce que la condition interdit, et Arrow l’écrit dans la phrase qui ouvre l’exemple : effacer z ne devrait rien changer au résultat. Sa formule, « blotted out of existence », vise l’effacement de l’alternative elle-même et non son retrait d’un scrutin ; la question n’est pas de savoir comment on vote, mais de quoi le résultat dépend. Le jugement qui suit tient en quatre mots : « This is clearly unsatisfactory. »"
+        ]
+      },
+      {
+        "title": "Le vote par rangs n’y échappe pas",
+        "paragraphs": [
+          "Le second exemple, pages 15 et 16, s’en prend à un procédé bien plus répandu, que le rapport nomme « the rank-order method of voting » sans l’attribuer à personne : chacun classe les options, chaque rang vaut un nombre de points, et l’on additionne. Avec quatre options, les rangs valent 4, 3, 2 et 1.",
+          "Le mécanisme du défaut est le même, et il est plus visible encore. Retirer une option de la liste, ce n’est pas seulement la soustraire au décompte : c’est décaler d’un cran toutes celles qu’elle précédait, donc modifier les points de tout le monde. Page 16, la fin de l’exemple redit l’exigence dans les termes du cas : « so that its deletion should not affect the choice of x ». Le décompte par rangs, lui, en est affecté.",
+          "Ces deux procédés n’ont rien d’excentrique. Ramener des jugements à une même échelle puis les additionner, ou compter des points de rang, sont deux manières ordinaires d’agréger des avis, et ce sont peut-être les deux plus courantes. C’est ce qui donne son prix à la Condition 3 : elle ne sanctionne pas des constructions bizarres, elle écarte des façons de faire familières, et les exemples servent précisément à rendre visible ce que le décompte dissimulait."
+        ]
+      },
+      {
+        "title": "Une exigence qu’Arrow refuse d’affaiblir",
+        "paragraphs": [
+          "Un ensemble d’exigences qu’on ne peut pas toutes tenir oblige à en relâcher une. Page 14, Arrow annonce laquelle ne le sera pas : « From the very meaning of a social decision process, it is hard to see how Conditions 2 or 3 can be weakened », et il ajoute que « The remaining sections will be concerned with weakening of the various other conditions ».",
+          "La suite du rapport s’y tient. Ce qui est restreint dans les sections suivantes, ce sont les configurations de préférences individuelles que l’on accepte de considérer, jamais l’indépendance. Page 17, Arrow signale une restriction de ce genre, plus radicale que la sienne, en nommant celui qui l’a proposée : « A more radical restriction upon the range of possible individual preference patterns has been proposed by D. Black ».",
+          "Le statut de la condition se lit dans ce partage. Elle n’est pas présentée comme une commodité de calcul dont on pourrait négocier les termes, mais comme quelque chose qui tient au sens même de ce qu’est une décision collective : si le choix d’un groupe entre deux options dépend d’une troisième, on peut se demander s’il s’agit encore d’un choix entre ces deux-là."
+        ]
+      },
+      {
+        "title": "Un rapport signé seul, daté deux fois",
+        "paragraphs": [
+          "La page de titre porte « THE POSSIBILITY OF A UNIVERSAL SOCIAL WELFARE FUNCTION / By / Kenneth J. Arrow », et une seule signature. Deux passages pourraient faire croire à un partage, et n’en font pas un. La note 12, page 15, indique que « The examples in this section were suggested in discussions with A. Kaplan and with G. E. Forsythe, National Bureau of Standards » : ce sont les exemples de cette section, non la condition. Page 19, les remerciements vont à A. Kaplan et J. W. Youngs « for guidance in formulating the problem », ce qui salue une aide sans déplacer la signature.",
+          "Le document lui-même se date de deux façons, et l’écart n’est pas expliqué. La couverture RAND de l’exemplaire numérisé porte « P-41 / 26 September 1948 », que les descriptions de l’archive recopient. Les dix-neuf pages de texte, elles, portent toutes en tête « 10/26/48 », soit le 26 octobre 1948. La contradiction est dans l’objet lui-même et non dans la façon dont on le décrit ; des deux dates, celle qui est imprimée en tête de chacune des pages écrites par Arrow est la plus proche du texte. Une annotation manuscrite de la même couverture, « 20 pp », compte simplement le feuillet de couverture avec les dix-neuf pages foliotées.",
+          "Qui télécharge cette numérisation a intérêt à le savoir : elle s’ouvre sur l’avis « WE REGRET THAT LEGIBILITY OF THIS DOCUMENT IS IN PART UNSATISFACTORY », et la reconnaissance automatique de caractères y est assez dégradée pour transformer une ligne de chiffres en autre chose. Les pages se lisent à l’image, en pleine résolution, et non dans la couche de texte."
+        ]
+      }
+    ],
+    "limits": [
+      "Qu’une exigence de cette forme ait circulé avant octobre 1948, sous ce nom ou sous un autre, n’est pas une question tranchée ici : le rapport ne déclare aucun précédent, et ce silence n’en est pas une preuve. Un article la pose de front, sous le titre « Independence of irrelevant alternatives before Arrow », signé Iain McLean dans Mathematical Social Sciences en octobre 1995 : ce sont ses pages qui répondront.",
+      "La version de 1948 énonce la condition sur la fonction de choix, c’est-à-dire sur ce que le procédé retient dans un ensemble d’options, et non sur une relation de préférence sociale. En quels termes exacts elle est reprise ensuite, deux textes le disent : l’article « A Difficulty in the Concept of Social Welfare », paru dans le Journal of Political Economy d’août 1950, et le livre Social Choice and Individual Values, publié chez Yale University Press en 1951. La formulation que la discipline cite d’ordinaire est celle du livre, et c’est là qu’il faut aller la lire.",
+      "Ce que les décennies suivantes ont fait de cette condition, les défenses et les objections qu’elle a suscitées, n’est pas retracé ici, et aucun travail postérieur n’est cité. L’objection la plus frontale vient du côté français de l’aide multicritère à la décision, où cette exigence passe pour contestée ; l’argument se lit dans ces travaux, et c’est là qu’il faudra le chercher.",
+      "Enfin, le même nom sert ailleurs à désigner autre chose : un axiome de la solution de marchandage de Nash, une propriété des modèles de choix discret. Ce sont d’autres littératures, avec leurs propres énoncés, et ce qui les relie à ces dix-neuf pages de 1948, elles seules peuvent le dire."
+    ]
+  },
+  {
     "conceptId": "inertie-structurelle-et-selection",
     "lead": [
       "Demandez un relevé bancaire aujourd’hui, puis le même relevé dans dix ans. Ce que vous attendez, c’est qu’il ait été établi selon les mêmes règles, avec les mêmes catégories, de sorte qu’on puisse comparer les deux sans se demander si quelque chose a changé en chemin. Et si une erreur survient, vous attendez aussi qu’on puisse remonter la procédure suivie et dire précisément à quel endroit elle a dérapé. La première attente tient à la régularité d’une organisation dans le temps, la seconde à sa capacité de rendre compte de ce qu’elle a fait. Aucune des deux n’est possible si l’organisation ne fonctionne pas aujourd’hui à peu près comme elle fonctionnait hier, et comme elle fonctionnera demain.",
@@ -4273,6 +4497,61 @@ export const generatedDeepenings: Deepening[] = [
       "Le modèle a connu plusieurs états, et les confrontations aux données réelles ne portent pas sur celui de 1972 : Graham Turner travaille sur les sorties de 1974, Gaya Herrington sur la version révisée de 2004. Elles établissent en commun que les scénarios n’étaient pas des prédictions, non que les figures de 1972 tiennent ligne pour ligne. Ce que chaque révision a changé, les éditions de 1974, 1992 et 2004 le disent.",
       "World Dynamics, où Forrester décrit le prototype, tient la part de l’invention qui précède ce livre ; c’est là qu’on verra ce que l’équipe en a gardé et ce qu’elle en a modifié.",
       "En français, la formule qui a fait référence est celle de Halte à la croissance ?, dans la traduction de Jacques Delaunay parue chez Fayard en 1972 : c’est cette édition qui donne les mots exacts sous lesquels ces pages ont circulé."
+    ]
+  },
+  {
+    "conceptId": "mythe-de-l-outil-quantitatif",
+    "lead": [
+      "Une région dispose d’une enveloppe d’argent public à répartir entre plusieurs territoires, et chacun estime en mériter davantage. La réunion s’annonce mal. Quelqu’un propose alors de s’en remettre à une méthode : on dresse la liste des critères, on leur attribue des poids, on fait entrer les données, et le calcul désignera les parts. L’attente qui accompagne ce geste est presque toujours la même. Puisque le calcul ne connaît personne, il ne favorisera personne ; puisqu’il est explicite, il fermera la porte aux arrangements ; puisqu’il conclut, il mettra fin aux marchandages. On ne se disputera plus, on lira le résultat.",
+      "Trois chercheurs de l’Université Laval sont allés voir ce qui s’était réellement passé une fois un partage de ce genre accompli. Deux d’entre eux publient eux-mêmes dans le domaine qu’ils examinent, et ce n’est pas indifférent : la critique porte sur leur propre métier. Ce qu’ils rapportent n’est ni la victoire annoncée du calcul, ni sa déroute."
+    ],
+    "sections": [
+      {
+        "title": "La promesse de la vision classique",
+        "paragraphs": [
+          "Les premières pages de l’article exposent longuement une croyance que ses auteurs ne partagent pas, et ils la nomment aussitôt pour ce qu’elle est : « Il existe encore un mythe entourant l’usage de l’outil quantitatif, mythe entretenu par la vision classique de l’aide à la décision en recherche opérationnelle ». Dans cette vision, « L’outil est l’instrument de conduite de la raison, raison qui doit dominer les passions et les jeux politiques ». Les jeux politiques, ici, ne sont pas des manœuvres honteuses : c’est le travail ordinaire par lequel des gens qui n’ont pas le même intérêt pèsent sur une décision, en s’alliant, en argumentant, en retenant une information, en discutant les règles avant de discuter le fond.",
+          "De ce mythe, l’article distingue deux facettes et retient d’abord celle-ci : « La première fait de l’outil quantitatif un instrument qui élimine les jeux politiques par sa neutralité et son objectivité ». C’est la promesse de la réunion évoquée plus haut, dite en termes savants : le chiffre ne prend pas parti, donc il congédie ceux qui prennent parti.",
+          "Puis vient la phrase qui fait tourner le texte, à la page 89 : « La conception décontextualisée de l’outil quantitatif que sous-tend cette vision classique contribue, pour beaucoup, à entretenir le mythe. Mais celui-ci s’effrite lorsque l’outil est confronté aux contextes réels de son utilisation ». Décontextualisée veut dire : considérée à part de ses usages, comme on juge un instrument sur sa notice. Tout ce qui précède cette phrase est la position dont les auteurs se démarquent ; ce qu’ils soutiennent commence après elle."
+        ]
+      },
+      {
+        "title": "Neuf entrevues, dans les jours qui ont suivi",
+        "paragraphs": [
+          "L’article ne combat pas cette promesse par principe : il va voir. Le matériau est déclaré page 92, et il est aussi modeste que précis. « Les observations proviennent d’entrevues réalisées auprès de neuf acteurs », les personnes engagées dans une allocation budgétaire réelle : le partage d’une enveloppe destinée aux personnes âgées entre les territoires d’une même région, à l’aide d’une méthode hiérarchique due à Saaty. S’y ajoutent des lettres, des rapports et des mémos.",
+          "Les entrevues ont eu lieu « dans les jours qui ont suivi l’allocation ». Le détail compte, et l’on peut penser que ce que ces neuf personnes disent de l’outil, elles le disent avec en tête la partie qu’elles viennent de jouer, avant que le récit officiel de la décision ne se soit stabilisé.",
+          "L’intention est annoncée dans le résumé de l’article : « Mieux comprendre ce mythe et ce qu’il cache à partir d’une étude de terrain ». Ce qu’un mythe cache est une formule forte, et elle donne la direction : il ne s’agit pas de montrer que l’outil est inutile, mais de montrer ce que sa réputation empêche de voir de son fonctionnement réel."
+        ]
+      },
+      {
+        "title": "Diminués, maintenus, déplacés, créés",
+        "paragraphs": [
+          "Au milieu de l’article, une section pose frontalement la question de savoir si l’outil quantitatif élimine les jeux politiques, et la réponse arrive aussitôt : « L’outil quantitatif utilisé n’a pas éliminé tous les jeux politiques. Il en a plutôt diminué certains, maintenu d’autres, déplacé d’autres encore, et en a même créé de nouveaux ». Quatre verbes, et c’est leur assemblage qui fait le constat : aucun d’eux, pris seul, ne le rendrait.",
+          "Diminuer n’est pas supprimer. Déplacer, c’est reconnaître que ce qui se jouait ailleurs se joue désormais sur le terrain de l’outil, et l’on imagine sans peine sur quoi : le choix des critères, leur poids relatif, les données qu’on accepte d’y verser. Créer, enfin, veut dire que certaines façons de peser sur l’issue n’existaient pas avant lui et n’existent que par lui. Cela implique qu’installer une méthode ne réduit pas la surface du jeu : elle la redessine.",
+          "Ce que l’outil a fait à la place, l’article le dit page 96 : il est apparu « non comme évinçant les jeux politiques mais, plus exactement, comme aidant à les discipliner ». La formule y rend d’abord ce que les intervenants ont perçu, et les auteurs la reprennent à leur compte dans leur conclusion, en parlant d’un « Instrument potentiel d’aide à la rationalisation et à la discipline des jeux politiques ». Le mot potentiel y fait tout le travail : discipliner est ce que l’outil rend possible, non ce qu’il garantit."
+        ]
+      },
+      {
+        "title": "Argumenter, se concerter, légitimer",
+        "paragraphs": [
+          "Si l’outil n’a pas chassé les jeux, à quoi a-t-il servi ? À trois choses au moins, dans ce cas. Il est apparu comme « un outil d’aide à la communication, à la concertation, à l’argumentation », et les calculs « ont non seulement fourni une base d’argumentation aux divers participants ». Il n’a donc pas remplacé la discussion, il l’a alimentée : on peut s’appuyer sur un résultat, le contester, exiger de savoir d’où il vient, demander qu’on refasse le calcul avec d’autres poids.",
+          "Il a servi ensuite à légitimer : « L’outil est également apparu comme outil d’aide à la légitimation ». Ce n’est pas une accusation. Qui doit annoncer à un territoire qu’il recevra moins que son voisin a besoin de pouvoir dire au nom de quoi, et une procédure explicite le lui permet mieux qu’une décision de couloir. Mais cela signifie que l’outil travaille aussi après la décision, à la rendre tenable, et pas seulement avant, à la préparer.",
+          "Dans sa section de synthèse, l’article relève enfin, à propos de l’outil, ce qui contribue « à sa vulnérabilité de même qu’à l’imprévisibilité dans son usage ». Un instrument qui aide à discipliner peut donc être retourné, contesté, employé à des fins que personne n’avait prévues en l’installant. C’est la contrepartie de son utilité même : ce qui le rend disponible pour argumenter le rend disponible pour tout le monde."
+        ]
+      },
+      {
+        "title": "Un cas, et jusqu’où il porte",
+        "paragraphs": [
+          "Le verdict est prononcé sur ce qui a été observé, et pas au-delà : « Le mythe véhiculé par l’image classique de l’outil quantitatif apparaît donc assez clairement dans le cas examiné ». Une allocation, une méthode, neuf personnes interrogées. Rien dans ces pages n’autorise à en faire une loi générale des outils de calcul, et les auteurs ne s’y risquent pas.",
+          "Ils posent d’ailleurs eux-mêmes la question, sous un intertitre qui nomme les deux bornes de leur enquête, la méthode employée et le contexte d’une allocation budgétaire : « peut-on légitimement étendre ces remarques aux autres outils quantitatifs comme aux autres contextes ? Nous croyons que oui, si nous y apportons certaines nuances ». La réponse est affirmative, elle s’accompagne de nuances qu’ils exposent dans les pages suivantes, et elle reste une conviction argumentée plutôt qu’un résultat de l’enquête.",
+          "Reste ce que le mot mythe désigne au juste. Ce n’est pas l’outil qui en relève, c’est son portrait : « L’outil quantitatif, tel que dépeint par la vision traditionnelle de l’aide à la décision, relève d’un mythe ». La différence est celle qui sépare un instrument d’une réputation. L’instrument sert, et il sert beaucoup ; la réputation, elle, promet une chose que l’usage ne tient pas."
+        ]
+      }
+    ],
+    "limits": [
+      "Qui a mené les neuf entrevues, l’article ne le détaille pas : pour le terrain, il renvoie en note à « Boulaire et al. (à paraître) et Urly, Beaudry (1995) ». Le texte alors à paraître a paru en novembre 1996 dans INFOR, « L’outil quantitatif d’aide à la décision comme jeu et enjeu » : l’enquête est là.",
+      "La bibliographie porte aussi une thèse de doctorat de Christèle Boulaire, datée de 1992, non publiée, de l’Université Laval : « Outils quantitatifs d’aide à la décision : le difficile équilibre entre rigueur et pertinence ». Son titre recouvre la question même de l’article ; ses pages attendent leur lecteur.",
+      "Sur la rationalité, l’article discute une distinction entre rationalités locales et rationalité globale, « Rationalité globale ou rationalité locale ? », et donne pour référent un texte de Maurice Landry de 1992, « Pour une vision élargie de la rationalité ». En quoi cette vision est élargie, c’est cet article-là qui le dit.",
+      "Les deux tableaux et la figure sont reproduits comme des images sans texte : ce qu’ils portent se lit sur la page imprimée. Ce que ce constat est devenu ensuite se cherche d’abord chez ses auteurs, qui ont cosigné en 1998 avec Banville « A stakeholder approach to MCDA », et ensuite chez leurs lecteurs francophones, dont la discussion reste à retracer."
     ]
   },
   {
@@ -5342,6 +5621,60 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "programme-comme-theorie-du-comportement",
+    "lead": [
+      "Quelqu’un cherche la démonstration d’un théorème, la sortie d’un labyrinthe ou la panne d’une machine. Il essaie une piste, revient en arrière, en essaie une autre, et finit par trouver. Vous avez tout vu, et il reste à dire ce qui s’est passé. Deux réponses viennent spontanément : que cette personne est douée, ce qui ne dit rien de ce qu’elle a fait ; ou que ses neurones se sont activés d’une certaine façon, ce qui ne renseigne pas davantage sur les étapes qu’elle a franchies. Entre les deux, il y a une place vide.",
+      "Trois chercheurs l’occupent en 1958, dans un article de seize pages de la Psychological Review. Leur proposition est simple à énoncer : pour expliquer ce que la personne a fait, écrivez la suite des opérations qu’elle a exécutées, assez finement pour que cette suite, suivie à la lettre, produise la même conduite. Ni formule reliant des quantités, ni description des neurones : une marche à suivre. Allen Newell, J. C. Shaw et Herbert A. Simon appellent cela un programme, et ils soutiennent que le programme est la théorie, non son illustration."
+    ],
+    "sections": [
+      {
+        "title": "Ce que ces auteurs appellent un programme",
+        "paragraphs": [
+          "Le mot n’a pas ici le sens d’un logiciel qu’on installe. Sa définition se lit à la troisième page de l’article : « Our position is that the appropriate way to describe a piece of problem-solving behavior is in terms of a program: a specification of what the organism will do under varying environmental circumstances in terms of certain elementary information processes it is capable of performing. » Autrement dit : décrire une conduite de résolution de problème, c’est donner la spécification de ce que l’organisme fera selon les circonstances où il se trouve, et la donner à partir de certains processus élémentaires d’information qu’il est capable d’exécuter.",
+          "Élémentaire ne veut pas dire simple, mais non décomposé : l’opération est prise comme donnée, la théorie ne cherche pas ce qu’il y a dessous, et tout le reste se compose à partir d’elle. Les auteurs écrivent d’ailleurs, à la page précédente, que les conduites plus longues sont « compounded out of elementary information processes », composées à partir de processus élémentaires d’information. L’image de la recette de cuisine aide, à condition de la prendre au sérieux : une recette n’est utilisable que si chacun de ses gestes est déjà à la portée de celui qui la suit, sans qu’il faille une recette pour le geste lui-même.",
+          "Le second membre de la définition compte autant que le premier : ce que l’organisme fera selon des circonstances variables. Un programme, en ce sens, n’est pas une séquence fixe qu’on déroulerait quoi qu’il arrive ; il dit ce qui sera fait dans chaque cas rencontré. Cela implique qu’il se ramifie, et qu’une même personne, avec le même programme, se conduira différemment selon ce qu’elle trouve en chemin. La théorie porte sur la manière de procéder, pas sur le trajet particulier qu’elle a produit une fois."
+        ]
+      },
+      {
+        "title": "Le programme à la place des équations",
+        "paragraphs": [
+          "Pourquoi appeler cela une théorie, et non une description ? La dernière page de l’article répond par une comparaison qui donne la mesure de l’ambition : « In this approach, a specific program plays the role that is played in classical systems of applied mathematics by a specific system of differential equations. » Dans cette approche, un programme donné tient la place que tient, dans les systèmes classiques des mathématiques appliquées, un système donné d’équations différentielles.",
+          "La comparaison mérite d’être dépliée. Une équation différentielle relie l’état d’un système à la vitesse à laquelle cet état change ; c’est sous cette forme que la physique classique écrit ses théories, et c’est cette forme que la psychologie a longtemps cherché à imiter. Newell, Shaw et Simon proposent d’en changer, non d’y renoncer : la théorie garde son exigence de précision, elle prend seulement une autre écriture, celle d’une suite d’opérations plutôt que celle d’un jeu de relations entre grandeurs.",
+          "Cette écriture a une propriété que les auteurs relèvent dès la première page : « A program viewed as a theory of behavior is highly specific », un programme considéré comme théorie du comportement est extrêmement spécifique. Cela a une conséquence directe. Une loi générale énonce une tendance et supporte l’à-peu-près ; un programme, lui, dit ce qui est fait à chaque pas, et le détail suffit alors à le démentir. C’est un inconvénient, et c’est le prix de la méthode : une théorie écrite ainsi s’expose à être fausse en des points repérables."
+        ]
+      },
+      {
+        "title": "Ni neurones ni circuits électroniques",
+        "paragraphs": [
+          "Une théorie doit dire de quoi elle parle. Celle-ci le fait sans détour, à la treizième page : « Our theory is a theory of the information processes involved in problem solving, and not a theory of neural or electronic mechanisms for information processing. » Elle porte sur les processus d’information engagés dans la résolution de problèmes, et non sur les mécanismes, nerveux ou électroniques, qui exécutent ces processus. Les auteurs ajoutent, dans la même colonne, avoir évité de spécifier ces mécanismes « in neurological or pseudo-neurological terms », en termes neurologiques ou pseudo-neurologiques.",
+          "Le second refus surprend davantage, puisque ces trois chercheurs travaillent avec des machines. L’article coupe pourtant le lien de lui-même, à la troisième page : « Such programs could be written […] if computers had never existed. » De tels programmes auraient pu être écrits même si les ordinateurs n’avaient jamais existé. Ce dont la théorie parle, ce sont des processus d’information, et rien dans cette description n’oblige à passer par une machine : l’ordinateur est un moyen, pas l’objet.",
+          "Ce niveau de description est un choix, et les auteurs le disent dans la phrase même où ils énoncent leur thèse. Composée en italiques à la première page, elle s’ouvre sur une réserve laissée en caractères romains : « At this level of theorizing, », à ce niveau de théorisation. Ce qui suit vaut donc pour le niveau retenu. La thèse n’affirme pas qu’il n’y a rien à expliquer du côté des neurones ; elle dit que ce n’est pas ce que ce texte entreprend."
+        ]
+      },
+      {
+        "title": "Des devanciers que les auteurs nomment",
+        "paragraphs": [
+          "Il serait tentant de leur attribuer l’invention de l’idée. Ils s’en défendent eux-mêmes, à la deuxième page : « From this standpoint there is nothing particularly novel about the theory. » De ce point de vue, écrivent-ils, la théorie n’a rien de particulièrement neuf, et ses prétentions reposent sur d’autres considérations.",
+          "Une note de la troisième page l’explicite : « We can, in fact, find a number of attempts in the psychological literature to explain behavior in terms of programs or the prototypes thereof. » On trouve en effet, dans la littérature psychologique, un certain nombre de tentatives d’expliquer le comportement en termes de programmes ou de formes qui les préfigurent. La note nomme l’analyse de la résolution de problèmes chez les joueurs d’échecs par Adrian de Groot, la psychologie de la pensée de Selz sur laquelle celle-ci repose, et, apparemment de façon indépendante, Jerome S. Bruner, qui « uses the term “strategy,” derived from economics and game theory, for what we have called a program », emploie le mot stratégie, venu de l’économie et de la théorie des jeux, pour ce qu’eux-mêmes ont appelé un programme.",
+          "Ce qui revient aux trois auteurs est donc précis, et plus intéressant qu’une paternité : l’énoncé cosigné de 1958, qui prend ce niveau de description au sérieux jusqu’à en faire la forme d’une théorie. L’article, reçu par la revue le 10 juillet 1957, porte trois signatures sur deux adresses, Newell et Shaw pour la RAND Corporation, Simon pour le Carnegie Institute of Technology."
+        ]
+      },
+      {
+        "title": "Ce qui n’est pas encore dans ces pages",
+        "paragraphs": [
+          "On associe volontiers ces trois noms à l’analyse par moyens et fins et à la notion d’espace de problème. Ni l’une ni l’autre de ces expressions ne figure dans les seize pages de 1958. La seule formulation qui y rapproche des moyens et des fins, à la quatorzième page, les auteurs la rapportent à Selz et à de Groot. Lire ce texte pour y retrouver ce qui est venu après, c’est manquer ce qu’il fait.",
+          "L’apprentissage n’y est pas non plus. Le programme qui illustre la thèse, le Logic Theorist, avait été construit et décrit auparavant, dans des articles de 1956 et de 1957 ; à l’avant-dernière page, les auteurs notent que « LT is primarily a performance machine », qu’il est avant tout une machine qui exécute. La question de savoir comment un tel programme se modifie avec l’expérience est explicitement différée. Une théorie qui prend la forme d’une marche à suivre commence par dire comment on procède, avant de dire comment cette manière de procéder se transforme."
+        ]
+      }
+    ],
+    "limits": [
+      "Ce que contient le Logic Theorist, opération par opération, se lit dans les trois textes que la bibliographie de la dernière page range sous son nom : « The logic theory machine: A complex information processing system » (1956), « Programming the logic theory machine » et « Empirical explorations with the logic theory machine » (1957). C’est là qu’un programme de ce genre se voit écrit en entier.",
+      "De Groot, Selz et Bruner sont nommés comme devanciers par les auteurs eux-mêmes, mais les sources disponibles ne disent pas en quels termes chacun avait posé la chose. L’analyse des joueurs d’échecs de de Groot, la psychologie de la pensée de Selz, le mot stratégie chez Bruner : ce sont les racines de l’idée, et leurs pages attendent leur lecteur.",
+      "Cet article se lit en anglais : aucune traduction française publiée n’en est connue à ce jour, et les recueils francophones de textes fondateurs traduits restent à parcourir un à un. L’exemplaire complet, seize pages sans lacune, est celui du fonds Herbert A. Simon aux archives de Carnegie Mellon, en ligne sous droits, usage non commercial permis.",
+      "Ce que la psychologie a fait de cette thèse après 1958, ce qui en a été retenu ou abandonné, les sources disponibles ne le disent pas. La réception de cet article reste à documenter, et c’est par elle qu’on mesurerait ce que l’idée est devenue."
+    ]
+  },
+  {
     "conceptId": "quantifier-convenir-et-mesurer",
     "lead": [
       "Combien de personnes sont sans emploi, ce mois-ci, dans une ville donnée ? La question donne l’impression d’appeler un simple comptage : on ouvre des registres, on additionne des cas. Mais avant de compter qui que ce soit, il faut déjà savoir qui compter. Une personne qui travaille deux heures par semaine est-elle sans emploi ? Celle qui a cessé de chercher, découragée par des mois d’échec, l’est-elle encore ? Celle qui vient de terminer ses études et n’a pas commencé à chercher ? Tant que ces questions n’ont pas de réponse commune, aucun chiffre ne peut sortir, quel que soit le soin apporté au comptage lui-même.",
@@ -5491,6 +5824,67 @@ export const generatedDeepenings: Deepening[] = [
       "Les deux auteurs ont republié leur réflexion sur les classements en 2021, dans l’introduction d’un ouvrage collectif consacré plus largement aux mondes du classement, coécrite avec deux autres chercheurs. Quatorze ans après, le cadre a pu se déplacer, se nuancer, ou tenir tel quel : cette introduction est l’endroit où on le verra.",
       "La démonstration s’appuie sur un seul terrain, celui des facultés de droit américaines. Étendre les trois effets décrits plus haut à d’autres classements publics, dans d’autres pays ou d’autres secteurs, reste une hypothèse tant qu’on ne l’a pas éprouvée sur ces terrains-là.",
       "La phrase d’ouverture est donnée dans une traduction non publiée, faite pour l’occasion. Les nuances de la formulation originale se jouent dans l’anglais des auteurs : c’est là qu’il faudra aller les lire."
+    ]
+  },
+  {
+    "conceptId": "recherche-heuristique-contre-force-brute",
+    "lead": [
+      "Un ordinateur va vite, donc il finira bien par trouver : il lui suffit d’essayer toutes les possibilités, l’une après l’autre, jusqu’à tomber sur la bonne. Le raisonnement paraît solide, et il l’était assez pour qu’on le mette à l’épreuve. À la fin des années 1950, trois chercheurs disposaient d’un programme capable de démontrer des théorèmes de logique. Pour savoir ce qu’il valait vraiment, ils ont écrit son concurrent : une procédure qui, elle, examine tout. Puis ils ont comparé les deux.",
+      "La comparaison est brutale. Les démonstrations que le premier programme obtient en quelques minutes demanderaient au second, estiment-ils, des centaines voire des milliers d’années, et cela en tenant déjà compte de la vitesse des ordinateurs de leur temps. Aucun gain de rapidité ne comble un écart pareil, parce que ce n’est pas un écart de rapidité. Allen Newell, J. C. Shaw et Herbert Simon en tirent une idée facile à énoncer et difficile à digérer : ce qui rend un problème soluble n’est pas la puissance de celui qui cherche, c’est ce qu’il accepte de ne pas regarder."
+    ],
+    "sections": [
+      {
+        "title": "Ce que coûte l’idée de tout essayer",
+        "paragraphs": [
+          "Démontrer un théorème, dans le cadre où travaillent ces auteurs, c’est trouver une suite d’opérations autorisées qui mène des prémisses à la conclusion. À chaque étape plusieurs opérations sont permises, et à la suivante plusieurs encore, pour chacune des précédentes. Le nombre de suites possibles ne s’additionne pas, il se multiplie. Les auteurs le disent en une ligne : chercher une suite convenable par le seul tâtonnement épuiserait presque toujours le temps ou la mémoire disponibles, « to try to find a suitable sequence by trial and error alone would almost always use up the available time or memory ».",
+          "Imaginons un trousseau de dix clés devant une porte. On les essaie toutes, cela prend une minute : la méthode est excellente. À mille clés, elle occupe la matinée. À un milliard, aucune agilité de la main n’y suffit, et l’on ne s’en sort pas en essayant plus vite. Un programme qui cherche une démonstration est dans cette situation, sauf que le trousseau grossit à mesure qu’il avance.",
+          "Rien de tout cela n’est une moquerie de la force brute : une recherche exhaustive est correcte, elle trouve si on lui laisse le temps. Newell, Shaw et Simon ne l’ont pas caricaturée, ils l’ont programmée eux-mêmes pour la comparer à leur démonstrateur de théorèmes, qu’ils appellent LT, pour Logic Theorist. C’est de leur propre algorithme exhaustif qu’ils écrivent qu’il « would require times of the order of hundreds or even thousands of years to prove theorems that LT proves in a few minutes ». Une méthode qui aurait raison dans mille ans n’a pas raison."
+        ]
+      },
+      {
+        "title": "Les deux façons de ne pas tout regarder",
+        "paragraphs": [
+          "Si la solution n’est pas au bout d’un examen complet, elle est au bout d’un examen partiel bien conduit. Reste à dire ce que bien conduit signifie, et ces pages y sont précises. Aborder un problème de façon sensée, écrivent les auteurs, c’est disposer d’une stratégie qui fait l’une de deux choses : « permits the search to be limited to a smaller subspace, or generates elements of the space in an order that makes probable the discovery of one of the solutions early in the process ».",
+          "La première voie retranche : des familles entières de possibilités sont écartées d’avance, et l’on ne cherche plus que dans ce qui reste. La seconde ne retranche rien, elle range. Le nombre de possibilités est inchangé, mais on les engendre dans un ordre tel que les plus prometteuses viennent tôt, et l’on s’arrête dès qu’une solution apparaît. Les deux ne coûtent pas la même chose : retrancher risque d’écarter la solution avec le reste, réordonner ne peut que retarder sa venue.",
+          "Le mot qui compte dans tout cela n’est donc pas la rapidité, c’est la sélectivité. Dans la phrase même où l’opposition apparaît, la force brute est ce qu’un algorithme exhaustif met à la place de « the selective search of LT ». Une recherche sélective n’est pas une recherche plus rapide : c’est une recherche qui laisse délibérément des choses de côté."
+        ]
+      },
+      {
+        "title": "Ce que « heuristique » veut dire ici",
+        "paragraphs": [
+          "Le mot a plusieurs vies, et l’une d’elles est devenue si courante qu’elle recouvre les autres. En psychologie du jugement, une heuristique désigne un raccourci par lequel l’estimation difficile d’une vraisemblance est remplacée par un jugement plus simple. Ce n’est pas de cela qu’il s’agit ici. Dans ces pages, une heuristique est une manière de conduire une recherche, et ce qu’on lui demande est de rendre le problème traitable : qu’une solution soit trouvée dans un temps qui existe.",
+          "Reste ce que ces auteurs ne font pas : ils n’inventent pas le mot et ne le définissent nulle part. Dans les seize pages de l’article, « heuristic » n’apparaît que trois fois, jamais dans une définition, ni dans le titre, ni dans un intertitre. Newell lui-même a plus tard rendu le terme à celui qui l’avait remis en circulation : dans un texte consacré à l’heuristique de George Polya et à son rapport à l’intelligence artificielle, il écrit de Polya qu’« he is recognized in AI as the person who put heuristic back on the map of intellectual concerns ».",
+          "La dernière de ces trois occurrences dit d’ailleurs quelque chose que l’enthousiasme fait oublier. Employer des heuristiques y sert à maintenir le tâtonnement dans des bornes raisonnables, « to keep the total amount of trial and error within reasonable bounds ». Le tâtonnement n’est donc pas supprimé, il est contenu. Une recherche sélective essaie encore, échoue encore, revient sur ses pas ; elle le fait assez peu pour que cela tienne dans une vie humaine."
+        ]
+      },
+      {
+        "title": "Pourquoi cette thèse paraît en revue de psychologie",
+        "paragraphs": [
+          "L’article s’intitule « Elements of a Theory of Human Problem Solving », il paraît en 1958 dans Psychological Review, et il porte trois signatures : Allen Newell et J. C. Shaw, de la RAND Corporation, Herbert A. Simon, du Carnegie Institute of Technology. Le programme n’y est pas l’objet du propos, il en est le cas d’étude. Ce que le texte cherche à établir concerne les personnes qui résolvent des problèmes.",
+          "De là vient la forme de sa phrase la plus connue, celle qui oppose la force brute aux processus heuristiques : sa seconde moitié fait autant de travail que la première, puisqu’elle attribue ces mêmes processus aux humains. Les auteurs ne disent pas seulement qu’une machine sélective bat une machine exhaustive : ils disent que la sélectivité est ce que font les gens quand ils cherchent, et ils ajoutent, à la même page, que leurs résultats se retrouvent aisément au laboratoire avec des humains, « All of these results are easily reproduced in the laboratory with humans ».",
+          "On peut lire là le pari le plus risqué du texte : ce qui a été montré d’un programme, réussir par sélectivité et non par vitesse, y devient une description de ce que fait un humain devant un problème. L’opposition à la force brute n’est pas une remarque de programmeur, elle sert d’argument dans une théorie du comportement."
+        ]
+      },
+      {
+        "title": "Le vocabulaire qui n’est pas encore fixé",
+        "paragraphs": [
+          "Ces trois noms sont aujourd’hui attachés à un vocabulaire entier : l’espace de problème, l’analyse moyens-fins, la recherche heuristique. Il est instructif de regarder ce que l’article de 1958 ne contient pas. Ni « problem space » ni « means-ends » n’y ont la moindre occurrence, et l’expression « heuristic search » n’y figure pas davantage : ce qui s’y lit est « heuristic processes » et « selective search ». La formule consacrée s’est fixée plus tard, et Newell la rapporte lui-même à un texte de 1965 signé Ernst et Newell.",
+          "Les mots y sont d’ailleurs encore tenus à distance, plusieurs de ceux qui deviendront techniques s’imprimant entre guillemets, comme des emprunts qu’on n’assume pas tout à fait. Lire un texte fondateur avec le vocabulaire venu après lui est la façon la plus commune de s’y tromper. Ici, l’idée est déjà entière quand les mots ne le sont pas : l’opposition entre la force brute et la fouille sélective est imprimée en 1958, la langue qui la nommera ne l’est pas encore."
+        ]
+      },
+      {
+        "title": "Deux exemplaires, et la page qui manque",
+        "paragraphs": [
+          "L’article se lit aujourd’hui sur des tirés à part conservés aux archives de Carnegie Mellon, et ils ne se valent pas. Celui du fonds Herbert Simon est entier : seize feuillets, des pages 151 à 166 sans lacune, jusqu’aux dix références finales. Celui du fonds Allen Newell est un extrait de six feuillets, les pages 151 à 155 puis la page 166. Il manque au second exactement la page 156, celle où se trouve la phrase sur la force brute.",
+          "Le détail n’est pas une curiosité d’archiviste. Deux lecteurs qui citent le tiré à part de Carnegie Mellon peuvent ne pas avoir eu le même document sous les yeux, et l’un des deux n’a pas pu lire cette phrase-là. Ces numérisations sont accessibles en ligne sans être libres : leur notice les déclare sous droits, usage non commercial permis, et demande de créditer les archives et collections spéciales de l’université."
+        ]
+      }
+    ],
+    "limits": [
+      "Ce qu’entendaient exactement ces auteurs par heuristique, et ce que valaient celles de leur programme, ne se lit pas dans cet article. Ils renvoient eux-mêmes, en note de la page 156, à une analyse quantitative publiée ailleurs, « A quantitative analysis of the power of the heuristics incorporated in LT will be found in (7) » : les chiffres sont dans ce texte-là.",
+      "Le mot vient d’ailleurs, et Newell le dit : c’est Polya qui l’a remis en circulation. En quels termes il le pose, et pour quels usages, ses livres le disent, et ce sont eux qu’il faudra ouvrir.",
+      "De cet article, aucune traduction française publiée ne s’est signalée, ce qui n’établit pas qu’il n’en existe aucune : les catalogues francophones restent à parcourir. En français, la phrase sur la force brute circule donc en traduction de travail, et c’est l’anglais imprimé page 156 qu’il faudra lire pour en peser chaque mot.",
+      "Ce que six décennies de travaux ont fait de cette opposition se lit dans les commentaires venus après, et ce sont eux qu’il faudra lire. L’article a lui-même circulé sous d’autres formes, un papier RAND numéroté P-971 et une version indexée sous la cote AD0422568 : savoir si elles diffèrent du texte de revue demande d’ouvrir ces deux états."
     ]
   },
   {
