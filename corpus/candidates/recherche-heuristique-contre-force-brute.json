@@ -1,0 +1,77 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "recherche-heuristique-contre-force-brute",
+  "slug": "recherche-heuristique-contre-force-brute",
+  "status": "CANDIDATE",
+  "title": "La recherche heuristique contre la force brute",
+  "themes": ["chercher-plutot-que-calculer"],
+  "theme_labels": {
+    "chercher-plutot-que-calculer": "Chercher une solution plutôt que la calculer"
+  },
+  "domain": "decision-science",
+  "authors": [
+    { "name": "Allen Newell", "app_author_id": null },
+    { "name": "J. C. Shaw", "app_author_id": null },
+    { "name": "Herbert A. Simon", "app_author_id": null }
+  ],
+  "attribution_note": "Concept coécrit par Allen Newell, J. C. Shaw et Herbert A. Simon, signé de leurs trois noms dans Psychological Review en 1958. Le mot heuristique n'y est pas forgé : les auteurs l'emploient sans le définir ni le revendiquer.",
+  "hook": "Comment trouver une solution quand les possibilités sont trop nombreuses ?",
+  "summary": "Trouver une solution ne tient pas à la vitesse de la machine, mais à la sélectivité : limiter l'espace fouillé ou en changer l'ordre, comme le font aussi les humains.",
+  "quotation": {
+    "text": "Le succès de LT ne tient pas à la « force brute » de la vitesse d'un ordinateur, mais à des processus heuristiques comme en emploient les humains.",
+    "reference": "Newell, A., Shaw, J. C. et Simon, H. A. (1958). « Elements of a Theory of Human Problem Solving ». Psychological Review, 65(3), p. 151-166. LT est le Logic Theorist, le programme démonstrateur de théorèmes dont l'article fait son cas d'étude.",
+    "locator": "p. 156, colonne de gauche, deuxième paragraphe",
+    "language": "fr",
+    "original_text": "LT's success does not depend on the \"brute force\" use of a computer's speed, but on the use of heuristic processes like those employed by humans.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (agent lecteur primaire, chaîne Curiosity). Aucune traduction française publiée de cet article n'a été identifiée. Trois choix à signaler. Premièrement, « does not depend on the \"brute force\" use of a computer's speed, but on the use of heuristic processes » est rendu par « ne tient pas à la « force brute » de la vitesse d'un ordinateur, mais à des processus heuristiques » : le substantif « use », répété deux fois dans l'original, est absorbé par le verbe, faute de place sous le plafond de 150 caractères, que la version littérale dépasse. Ce n'est pas une coupe de contenu, le sens de dépendance est intégralement rendu, et l'original entier figure en original_text. Deuxièmement, « like those employed by humans » est rendu par « comme en emploient les humains » : la construction française évite le pronom démonstratif lourd, et conserve le verbe « employer », qui porte l'essentiel, à savoir que les mêmes processus sont attribués aux humains. Troisièmement, le sigle « LT » est conservé tel que les auteurs l'impriment, sans le développer en « Logic Theorist » : développer serait une interpolation dans une citation. Le développement est donné par la notice de référence, qui s'affiche sous la citation.",
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "Allen Newell, J. C. Shaw et Herbert A. Simon, « Elements of a Theory of Human Problem Solving », Psychological Review, vol. 65, n° 3, 1958, p. 151-166. Tiré à part numérisé, fonds Herbert A. Simon, archives de Carnegie Mellon.",
+      "kind": "primary",
+      "locator": "p. 156, 157 et 160-162",
+      "doi_isbn": "10.1037/h0048495",
+      "url": "https://iiif.library.cmu.edu/file/Simon_box00064_fld04878_bdl0001_doc0001/Simon_box00064_fld04878_bdl0001_doc0001.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Allen Newell, J. C. Shaw et Herbert A. Simon, « Elements of a theory of human problem solving », Psychological Review, vol. 65, n° 3, 1958, p. 151-166, American Psychological Association.",
+      "kind": "primary",
+      "locator": "p. 151-166",
+      "doi_isbn": "10.1037/h0048495",
+      "url": "https://doi.org/10.1037/h0048495",
+      "consulted": "metadata-only"
+    },
+    {
+      "label": "Allen Newell, J. C. Shaw et Herbert A. Simon, « Elements of a Theory of Human Problem Solving », 1958. Second exemplaire numérisé, extrait de six pages, fonds Allen Newell, archives de Carnegie Mellon.",
+      "kind": "primary",
+      "locator": "folios 151 à 155 et 166",
+      "doi_isbn": null,
+      "url": "https://iiif.library.cmu.edu/file/Newell_box00049_fld04210_doc0005/Newell_box00049_fld04210_doc0005.pdf",
+      "consulted": "partial"
+    }
+  ],
+  "review": {
+    "verdict": "PENDING",
+    "notes": []
+  },
+  "dossier": "corpus/evidence/recherche-heuristique-contre-force-brute/lecture.json",
+  "notes": [
+    "Thème nouveau : « chercher-plutot-que-calculer » n'est pas déclaré dans src/content/themes.ts. La carte porte son libellé et déclare son domaine ; l'avertissement du validateur est attendu, et le thème sera déclaré à la réception, après le contrôle aveugle.",
+    "À ne pas confondre avec la carte heuristiques-de-jugement, tirée de Tversky et Kahneman. Le mot y a un autre sens : un raccourci qui ramène l'estimation d'une vraisemblance à un jugement plus simple, et qui produit parfois des erreurs systématiques. Ici, une heuristique est un processus de recherche qui rend un problème traitable. L'accroche et le résumé sont écrits pour que la différence se lise sans note : là on évalue une vraisemblance, ici on cherche une solution.",
+    "Le mot « heuristic » n'apparaît que trois fois dans les seize pages, p. 156 deux fois dont une en note et p. 162 une fois, et il n'y est jamais défini ni revendiqué comme un apport des auteurs. Ni la carte ni son attribution ne laissent entendre que ce texte forge la notion.",
+    "La comparaison chiffrée du texte n'est pas portée par le résumé, faute de place, et elle est le meilleur argument du concept : l'algorithme exhaustif que les auteurs ont écrit comme terme de comparaison demanderait « hundreds or even thousands of years » pour des théorèmes que LT prouve en quelques minutes (p. 156).",
+    "Les deux voies de la sélectivité résumées ici sont celles de la p. 161 : limiter la recherche à un sous-espace plus petit, ou engendrer les éléments de l'espace dans un ordre qui rend probable la découverte précoce d'une solution. Les guillemets autour de « space » sont des auteurs, et l'expression « problem space » n'a aucune occurrence dans l'article, non plus que « means-ends ».",
+    "L'exemplaire qui fait foi est le doublon du fonds Simon, Simon_box00064_fld04878_bdl0001_doc0001 : seize folios, 151 à 166, sans lacune. Le tiré à part du fonds Newell n'en porte que six, et la page 156, qui porte la citation, en est absente : il ne peut pas servir de contre-lecture pour ce passage. La contre-lecture disponible est interne au même scan, par l'interface de recherche plein texte de la bibliothèque, qui restitue le même fragment au même feuillet.",
+    "Autorisation lue sur le manifeste IIIF de l'item : licence « http://rightsstatements.org/vocab/InC-NC/1.0/ », c'est-à-dire In Copyright, Non-Commercial Use Permitted, et attribution « Provided by Carnegie Mellon University Archives & Special Collections ». Ce n'est pas du domaine public.",
+    "Fiche jumelle tirée du même article : programme-comme-theorie-du-comportement, qui porte sur la thèse selon laquelle un programme de processus élémentaires est l'explication d'un comportement. Celle-ci porte sur la façon dont une solution est trouvée.",
+    "Aucune source de réception n'est affichée : le dossier de lecture n'en a établi aucune pour ce texte, et ce lot de rédaction n'a mené aucune recherche documentaire. La lacune est déclarée plutôt que comblée.",
+    "Aucune traduction française publiée de cet article n'a été identifiée ; la traduction affichée est interne et déclarée comme telle. Les bases francophones n'ont pas été interrogées une à une, le serveur documentaire étant en échec de connexion : lacune de méthode, pas constat d'absence.",
+    "Deux autres exemplaires ont été cherchés par le lecteur et n'ont pas été obtenus : la version indexée par DTIC sous AD0422568 répond HTTP 403 sur apps.dtic.mil, la version RAND P-971 répond HTTP 403 sur rand.org."
+  ]
+}
