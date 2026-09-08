@@ -524,3 +524,292 @@ Books (pages de collection HTML statiques), theses.fr, Numdam, Crossref et Unpay
 Chaque accès est un GET réel, dont le code de retour est consigné ci-dessous. Ce fichier est
 écrit par éditions successives au fil de la recherche, pas en une seule passe finale.
 
+
+---
+
+# Reprise du 8 septembre 2026
+
+Balayage dédié aux deux angles morts déclarés par la cartographie du 23 août 2026 et par
+`corpus/perimeter.md` : le jugement de probabilité pris dans son détail (disponibilité,
+représentativité) au-delà du legs déjà instruit, et la valeur de l'information. Ajout d'une
+troisième reprise, si le temps le permettait : Newell (1969), déjà « ni confirmé ni infirmé »
+au 23 août.
+
+## Note méthodologique — outils, budget, ce qui a permis de trancher
+
+Le serveur MCP `documentary` était en échec de connexion (`CONNECTION_CLOSED`) pendant toute
+cette session, comme annoncé : aucun outil `mcp__documentary__*` exposé, aucune tentative
+faite. Travail fait par `curl` direct contre `archive.org/advancedsearch.php` et
+`archive.org/metadata`, Crossref (`api.crossref.org/works/<doi>`), Unpaywall
+(`api.unpaywall.org/v2/<doi>`), l'API Semantic Scholar Graph en accès direct (non listée comme
+outil MCP, mais son point d'entrée REST public a répondu), `WebSearch`/`WebFetch` pour la
+détection et la résolution de miroirs (jamais retenus comme preuve sans un GET réel derrière),
+et l'API HAL (`api.archives-ouvertes.fr/search`).
+
+**Un point de méthode central à ce passage** : deux fichiers PDF ont été téléchargés et lus en
+substance, pas seulement constatés par leur code HTTP. `poppler-utils` n'était pas installé sur
+l'environnement (`pdftotext`, `pdftoppm` absents, l'installation par `apt-get` a échoué avec un
+404 sur le miroir de sécurité Ubuntu) ; `pdfminer.six` a été installé par `pip
+--break-system-packages` après réparation d'une dépendance cassée (`_cffi_backend` manquant,
+résolu par réinstallation de `cffi`). Cette extraction de texte a permis de vérifier, page par
+page, que le fichier ouvert est bien le texte annoncé, et non une page d'erreur ou un document
+homonyme — c'est ce contrôle qui a permis de conclure « accès confirmé » plutôt que « code 200
+obtenu », qui ne dit rien du contenu.
+
+Budget réseau tenu : de l'ordre de 35 requêtes HTTP au total sur cette session (recherches
+`advancedsearch.php` comprises), réparties sur cinq candidats. Aucun défi anti-robot rencontré
+cette fois (à la différence des passages précédents sur Project Euclid et rairo-ro.org) ; un
+seul mur constaté, Cloudflare sur academia.edu, non contourné.
+
+## Candidats retenus — accès confirmé par lecture réelle
+
+### 1. Tversky, A. & Kahneman, D. (1973). « Availability: A Heuristic for Judging Frequency and Probability »
+
+```
+CANDIDAT        : L'heuristique de disponibilité / Availability heuristic
+AUTEUR(S)       : Amos Tversky et Daniel Kahneman, coécriture. Aucun tiers n'a popularisé ou
+                  forgé le terme : l'article introduit lui-même le mot « availability » comme
+                  nom du mécanisme qu'il décrit (« a judgmental heuristic in which a person
+                  evaluates the frequency of classes or the probability of events by
+                  availability »).
+PÉRIMÈTRE       : dedans. Le périmètre de `decision-science` nomme explicitement « le jugement
+                  de probabilité et ses écarts systématiques » comme littérature à couvrir ;
+                  l'article est le texte fondateur de l'un des deux mécanismes cités par nom
+                  dans le brief de reprise.
+SOURCE PRIMAIRE : Tversky, A. & Kahneman, D. (1973). « Availability: A Heuristic for Judging
+                  Frequency and Probability ». Cognitive Psychology, 5(2), 207-232.
+                  DOI 10.1016/0010-0285(73)90033-9 (résolu par Crossref, titre et container
+                  confirmés). Localisation présumée : aucune version institutionnelle
+                  d'éditeur ouverte (voir ACCESSIBILITÉ).
+SECONDAIRE      : ABSENTE — non cherchée dans ce passage, faute de temps après la vérification
+                  d'accès primaire. À faire au prochain passage.
+FRANCOPHONE     : cherchée, rien trouvé. HAL interrogé sur « heuristique disponibilité »
+                  (2 mots exacts, conforme à la contrainte HAL) : 56 résultats, aucun
+                  pertinent (fiabilité industrielle, logistique — l'homonymie du mot
+                  « disponibilité » domine la base côté français). Aucune reformulation
+                  testée par manque de temps.
+SIGNAL          : Risque de doublon moyen avec `heuristiques-de-jugement`, déjà validée et
+                  fondée sur la synthèse de 1973/1974 (rapport ONR AD0767426 / Science 1974),
+                  qui mentionne la disponibilité en une quinzaine de lignes parmi trois
+                  heuristiques. Ce texte-ci est un traitement complet et distinct, sur 26
+                  pages, consacré à la seule disponibilité : l'expérience sur la fréquence
+                  perçue des mots selon leur première lettre, l'imaginabilité des combinaisons,
+                  et surtout la corrélation illusoire, absents de la citation déjà publiée. Un
+                  lecteur primaire devra établir une citation qui porte sur ce contenu propre
+                  et non sur la thèse générale déjà instruite. **Correction à verser au dossier
+                  du domaine** : la note de bas de page de l'article (lue en substance, voir
+                  ci-dessous) dément l'hypothèse du brief de reprise selon laquelle ce texte et
+                  le rapport ONR AD0767426 « sortent du même contrat ». Le financement déclaré
+                  ici est « NSF grant GB-6782, ... grant MH 12972 from the National Institute
+                  of Mental Health and Grants 5 SO1 RR 05612-03 and RR 05612-04 from the
+                  National Institute of Health to the Oregon Research Institute » : aucune
+                  mention d'ONR ni d'ARPA. C'est cohérent avec l'échec de toute recherche de
+                  rapport technique DTIC précurseur (voir plus bas) : cet article n'a
+                  probablement jamais existé sous cette forme, faute de financement militaire
+                  à en rendre compte.
+ACCESSIBILITÉ   : texte intégral, lu en substance (première et dernière page extraites et
+                  confirmées mot pour mot contre la version de référence). Voie retenue :
+                  `https://noorsiddiqui.com/papers/TverskyKahneman.pdf`, `HTTP 200`, PDF de
+                  1,69 Mo, 26 pages correspondant exactement à la pagination imprimée 207-232.
+                  **Réserve honnête sur la classe de source** : c'est un site personnel tiers
+                  sans affiliation académique déclarée, la même classe que le miroir écarté
+                  pour Bainbridge en `human-factors` — sauf qu'ici rien n'indique un refus de
+                  droits de l'auteur, et le fichier s'est ouvert sans mur d'aucune sorte. Une
+                  seconde voie a été trouvée et testée sans être retenue comme preuve de
+                  contenu : `https://people.umass.edu/~biep540w/pdf/Tversky%20availability.pdf`
+                  (page de cours UMass, `HTTP 200`, PDF de 1,05 Mo, 16 pages), mais ce fichier
+                  est un scan sans couche OCR ; sa pagination (16 pages) ne correspond pas à
+                  l'originale (26 pages), et son contenu n'a donc **pas** été confirmé — à
+                  vérifier avant tout usage, pas à écarter.
+                  **Recherche de rapport technique précurseur, testée et négative** : trois
+                  stratégies de recherche distinctes sur `archive.org/advancedsearch.php`,
+                  collection `dticarchive` — par titre (« availability », « judging frequency »,
+                  « frequency and probability »), par sujet (`subject:"Tversky, Amos"`,
+                  `subject:"Kahneman, Daniel"`, `subject:"OREGON RESEARCH INST EUGENE"`), et par
+                  numéro de contrat (`N00014-73-C-0438` et sa variante sans tiret) — n'ont
+                  rendu aucun item daté de 1972 ou 1973 correspondant à ce texte. Le plus ancien
+                  item de la collection portant Tversky ou Kahneman en sujet reste le legs déjà
+                  connu, `DTIC_AD0767426` (août 1973). C'est cohérent avec la note de
+                  financement ci-dessus : ce texte n'est pas de la littérature grise militaire.
+CITABLE         : oui, en anglais, sur le texte confirmé (noorsiddiqui.com). Aucune traduction
+                  française publiée identifiée dans ce passage.
+```
+
+### 2. Kahneman, D. & Tversky, A. (1972). « Subjective Probability: A Judgment of Representativeness »
+
+```
+CANDIDAT        : L'heuristique de représentativité / Representativeness heuristic
+AUTEUR(S)       : Daniel Kahneman et Amos Tversky, coécriture (ordre des noms inversé par
+                  rapport à l'article de 1973, vérifié sur la page de titre elle-même).
+PÉRIMÈTRE       : dedans, même clause du périmètre que le candidat 1 : le jugement de
+                  probabilité et ses écarts systématiques.
+SOURCE PRIMAIRE : Kahneman, D. & Tversky, A. (1972). « Subjective Probability: A Judgment of
+                  Representativeness ». Cognitive Psychology, 3(3), 430-454.
+                  DOI 10.1016/0010-0285(72)90016-3 (résolu par Crossref).
+SECONDAIRE      : ABSENTE — non cherchée, même réserve que le candidat 1.
+FRANCOPHONE     : cherchée, rien trouvé. HAL interrogé sur « heuristique représentativité »
+                  (2 mots exacts) : 10 résultats, aucun pertinent (comptabilité mentale,
+                  sociologie des médias — un seul résultat effleure le vocabulaire sans porter
+                  sur le texte).
+SIGNAL          : Même risque de doublon moyen avec `heuristiques-de-jugement` que le
+                  candidat 1, et pour la même raison structurelle : ce texte est le traitement
+                  complet et original de la représentativité (25 pages), avec la loi des petits
+                  nombres, l'insensibilité à la taille de l'échantillon, les méconceptions de la
+                  régression vers la moyenne — un contenu empirique distinct de la citation déjà
+                  publiée. **Même correction à verser au dossier** : la note de financement,
+                  lue en substance sur la première page, cite « a grant of the Research and
+                  Development Authority of the Hebrew University, ... by NSF Grant GM 6782 to
+                  the second author, and by the U.S. Public Health Service through Grant
+                  MH-04439 to Oregon Research Institute » — ni ONR ni ARPA, comme pour le
+                  candidat 1. Les deux articles de 1972 et 1973 partagent donc le laboratoire
+                  d'accueil (Oregon Research Institute) et une partie de leurs bailleurs, mais
+                  **pas** le contrat militaire du rapport de synthèse de 1973 : l'hypothèse
+                  inverse, écrite dans le brief de reprise, ne tient pas sur pièce.
+ACCESSIBILITÉ   : texte intégral, lu en substance (première page extraite et confirmée mot
+                  pour mot ; titre, auteurs, revue, tomaison exacts). Voie retenue :
+                  `https://pages.ucsd.edu/~cmckenzie/Kahneman%26Tversky1972CogPsych.pdf`,
+                  `HTTP 200`, PDF de 1,58 Mo, 25 pages correspondant exactement à la pagination
+                  imprimée 430-454. **Classe de source plus solide que le candidat 1** : la
+                  page appartient à Craig McKenzie, professeur de psychologie et de gestion à
+                  UC San Diego dont le champ de recherche déclaré est précisément le jugement
+                  et la décision (vérifié par recherche web sur son profil UCSD et sa page de
+                  cours « Psychology 237: Human Rationality »), qui héberge ce fichier comme
+                  lecture de cours sur sa page personnelle institutionnelle — la même classe de
+                  source que le fonds d'archives CMU déjà retenu pour Newell, Shaw & Simon
+                  1958 dans ce même document.
+                  **Recherche de rapport technique précurseur, testée et négative** : mêmes
+                  trois stratégies que pour le candidat 1 (titre « representativeness » sur
+                  `dticarchive` : 6 résultats, tous étrangers au texte, le plus proche étant
+                  « Judgments of and by Representativeness », `DTIC_ADA099502`, 1981, un article
+                  distinct et postérieur ; sujet Kahneman/Tversky : rien avant août 1973 ;
+                  numéro de contrat : sans objet, ce texte n'étant pas financé par l'ONR). Même
+                  conclusion que le candidat 1.
+CITABLE         : oui, en anglais, sur le texte confirmé. Aucune traduction française publiée
+                  identifiée.
+```
+
+## Candidat cherché et écarté à ce stade — aucune source primaire atteignable
+
+### 3. Howard, R. A. (1966). « Information Value Theory »
+
+```
+CANDIDAT        : La théorie de la valeur de l'information / Information Value Theory
+AUTEUR(S)       : Ronald A. Howard, seul auteur.
+PÉRIMÈTRE       : dedans. Nommément cité par `corpus/perimeter.md` sous « l'aide à la décision
+                  comme méthode… valeur de l'information ».
+SOURCE PRIMAIRE : ABSENTE. Howard, R. A. (1966). « Information Value Theory ». IEEE
+                  Transactions on Systems Science and Cybernetics, 2(1), 22-26.
+                  DOI 10.1109/tssc.1966.300074 (résolu par Crossref). **Fermé, testé sur quatre
+                  fronts, aucun n'a cédé** :
+                  - Unpaywall (`api.unpaywall.org/v2/10.1109/tssc.1966.300074`) : `is_oa: false`,
+                    `best_oa_location: null`.
+                  - Semantic Scholar Graph API (accès REST direct, hors outil MCP) :
+                    `isOpenAccess: false`, `openAccessPdf.status: CLOSED`.
+                  - IEEE Xplore : non tenté par requête directe, le DOI résolvant vers un mur de
+                    paiement documenté par les deux bases ci-dessus ; inutile de le repayer.
+                  - Un exemplaire trouvé sur Scribd (`scribd.com/document/320139530/...`) répond
+                    `HTTP 200` sur la page de présentation, mais le téléchargement du document
+                    complet demande un compte : **non emprunté**, conformément à la règle
+                    d'accès du domaine.
+                  Recherche de rapport technique précurseur à Stanford, trois stratégies sur
+                  `dticarchive` : titre (« information value », « value of information ») —
+                  aucun résultat de 1965-1966 pertinent ; sujet (`subject:"Howard, Ronald"`) —
+                  cinq résultats, tous datés 1973-1980 et tous intitulés « The Theory and
+                  Application of Decision Analysis », aucun sous le titre ou le contenu de la
+                  théorie de 1966.
+SECONDAIRE      : ABSENTE — non cherchée dans ce passage.
+FRANCOPHONE     : cherchée, rien trouvé (recherche limitée à la vérification que le texte lui-
+                  même ne circule pas en traduction ; pas de balayage francophone dédié à ce
+                  concept faute de temps).
+SIGNAL          : **Piste de secours trouvée mais non retenue comme candidat de substitution.**
+                  Howard, R. A. (1973). « The Theory and Application of Decision Analysis ».
+                  Rapport ARPA/ONR, Stanford University, contrat N00014-67-A-0012-0077.
+                  Internet Archive, identifiant `DTIC_AD0771699`, `access-restricted-item`
+                  absent (vérifié), `HTTP 200` sur le téléchargement du texte OCR
+                  (`_djvu.txt`, 15 Ko), lu en entier : c'est un rapport d'avancement de six mois
+                  sur un programme de recherche en analyse de décision dirigé par Howard, qui
+                  discute des prolongements de calculs de valeur de l'information (information
+                  séquentielle, quantification des variables d'état) mais **n'expose pas** la
+                  théorie de 1966 elle-même — ni sa définition de la valeur de la clairvoyance,
+                  ni sa dérivation. Ce n'est donc pas un rapport précurseur du texte cherché,
+                  mais un texte distinct, plus tardif, du même auteur sur un sujet voisin :
+                  signalé pour qu'un futur passage sache qu'il existe et sache aussi qu'il ne
+                  suffit pas à instruire ce concept précis. **Ne pas le proposer comme
+                  substitut sans une lecture complète établissant qu'il porte, lui aussi, une
+                  définition citable de la valeur de l'information.**
+ACCESSIBILITÉ   : métadonnées seules pour le texte de 1966 lui-même.
+CITABLE         : non, dans ce passage. Le rapport de secours (candidat 8bis, non instruit)
+                  serait citable en anglais s'il était un jour retenu, mais sur un objet
+                  différent de la théorie de 1966.
+```
+
+## Candidat retenté et toujours non résolu
+
+### 4. Newell, A. (1969). « Heuristic Programming: Ill-Structured Problems »
+
+```
+CANDIDAT        : Newell, A. (1969). « Heuristic Programming: Ill-Structured Problems ». Dans
+                  J. S. Aronofsky (dir.), Progress in Operations Research, vol. III, Wiley,
+                  p. 360-414 (pagination trouvée cette fois par recherche croisée, absente du
+                  passage du 23 août).
+PÉRIMÈTRE       : dedans, littérature « représentation du problème avant sa résolution »,
+                  la moins bien servie du domaine (voir cartographie du 23 août).
+SOURCE PRIMAIRE : ABSENTE, toujours. `https://digitalcollections.library.cmu.edu/node/19441`
+                  retenté par deux méthodes indépendantes cette nuit, en plus des quatre
+                  tentatives déjà consignées le 23 août :
+                  - `curl` direct : échec de négociation TLS, alerte « unknown CA » côté
+                    serveur distant (pas une erreur du proxy de l'environnement, le tunnel
+                    CONNECT s'établit normalement puis le certificat présenté par le serveur
+                    CMU est refusé) — signature d'erreur différente du 503 déjà rencontré,
+                    cohérente avec la remarque du 23 août sur « un échec de certificat TLS
+                    distinct du proxy ».
+                  - `WebFetch` (deux appels séparés) : `HTTP 503 Service Unavailable` à chaque
+                    fois.
+                  Total cumulé sur les deux nuits : six tentatives indépendantes, zéro succès.
+                  Wayback Machine interrogé (`archive.org/wayback/available`) : aucun instantané
+                  archivé de cette URL, `HTTP 200` sur la requête elle-même mais
+                  `archived_snapshots: {}`.
+SECONDAIRE      : ABSENTE.
+FRANCOPHONE     : non cherchée (texte anglophone, pas de traduction attendue).
+SIGNAL          : **Deux voies alternatives explorées et écartées, pas simplement non
+                  essayées.** `mat.tepper.cmu.edu/classes/mstc/heurnote/node2.html`, trouvée
+                  par recherche web comme évoquant le même auteur et le même vocabulaire, a été
+                  ouverte (`HTTP 200`) et lue : c'est une note de cours CMU Tepper intitulée
+                  « Heuristics for Consultants », convertie de LaTeX en HTML en 1996, qui ne
+                  reproduit pas le chapitre de Newell — un texte pédagogique distinct sur un
+                  sujet voisin, pas une source. Le lien `l3d.cs.colorado.edu/~haleden/refbase/…`
+                  trouvé par ailleurs est mort (`HTTP 404`). **Le texte reste au même état
+                  qu'au 23 août : ni confirmé ni infirmé**, et la page CMU semble en panne
+                  réelle plutôt que protégée, ce qui laisse une chance à une nouvelle tentative
+                  ultérieure, mais rien ne permet de dire quand.
+ACCESSIBILITÉ   : inconnue, page toujours inaccessible par toute voie testée.
+CITABLE         : impossible à établir dans ce passage.
+```
+
+## Vérification de non-doublon
+
+Les deux identifiants proposés — `heuristique-de-disponibilite`, `heuristique-de-representativite`
+— confrontés à `corpus/validated/` par recherche de motif (`disponibil`, `representativ`,
+`information`, `petit-nombre`, `ill-structure`, `mal-structure`, `howard`) : aucune collision
+d'identifiant ni de slug. Le seul résultat voisin, `disponibilite-operationnelle.json`, porte sur
+un tout autre concept (disponibilité d'un système au sens de la sûreté de fonctionnement, hors
+domaine). Le risque réel, comme au 23 août, n'est pas lexical mais **conceptuel** : les deux
+candidats retenus recoupent l'objet de `heuristiques-de-jugement`, déjà validée dans ce domaine,
+et c'est signalé en toutes lettres dans le champ SIGNAL de chacun plutôt que tranché ici — la
+décision de fusion, de partage ou d'abandon revient à l'instruction, pas à la cartographie,
+exactement comme pour les candidats 10/11 du 23 août.
+
+## Ce que ce passage corrige au passage précédent
+
+Le brief de cette reprise supposait que les articles de 1972 et 1973 « sortent du même
+laboratoire et du même contrat » que le rapport ONR de synthèse déjà instruit
+(`DTIC_AD0767426`, contrat N00014-73-C-0438). **La lecture réelle des deux textes dément la
+seconde moitié de cette hypothèse** : même laboratoire d'accueil (Oregon Research Institute),
+mais des bailleurs distincts et non militaires (NSF, NIMH, NIH, Hebrew University) pour les deux
+articles de revue. C'est cohérent avec l'absence totale de rapport technique DTIC précurseur
+trouvée par six requêtes indépendantes sur les deux textes : il n'y a probablement rien à
+trouver par cette voie, parce que ces deux textes n'ont jamais été de la littérature grise
+militaire. **C'est un résultat à écrire, pas un manque de méthode** : la voie qui a servi trois
+fois sur ce domaine (rapport ONR/ARPA/RAND miré sur `dticarchive`) ne s'applique pas
+uniformément à tout ce qui touche Kahneman et Tversky, et il ne faut pas la retenter une
+quatrième fois sur ces deux titres précis.
