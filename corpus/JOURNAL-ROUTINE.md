@@ -5,6 +5,196 @@ coup d'œil ce que la précédente a fait, sur quelle branche elle l'a laissé, 
 reprendre. **Les scripts priment sur ce fichier** : il dit ce qui a été tenté et pourquoi, ils
 disent ce qui est.
 
+## Passage 15/15 — 2026-09-08
+
+- branche      : **`claude/zen-johnson-pazrfr`, imposée par la session, pas `main`.** Elle partait exactement d'`origin/main`, à `1995fbc`, qui porte la fusion de la pull request [#100](https://github.com/J-Rbs91/Curiosity/pull/100) du passage 14 : **le travail des passages 07 à 14 est donc bien dans `main`**, vérifié au lever par `git rev-list --left-right --count origin/main...HEAD`, qui rend `0 0`. La parade du passage 12 a été appliquée : `git fetch origin main`, une seule référence, jamais deux refspecs dans le même appel. Le travail de la nuit est poussé sur cette branche, **par commits successifs tout au long de la nuit plutôt qu'en un seul à la clôture**, ce qui est nouveau et ce qui a servi : voir la section sur le dispositif.
+- phase        : **3 (enrichissement d'un domaine), la sixième et dernière de la routine.** Condition A fausse, `corpus:audit` n'affichant aucun domaine « en cours de constitution ». Condition B fausse, `corpus:deepen` projetant 129 approfondissements pour 129 cartes au lever et sa fin de sortie ne listant rien. **La condition C décidait, et elle décidait seule.**
+- domaine      : **`decision-science`**, désigné sans arbitrage, comme le passage 14 l'avait annoncé. Cinq domaines avaient un enrichissement au journal et sortaient de la rotation ; aucun des six autres n'en avait, donc le critère de repli s'appliquait et désignait **le seul domaine encore à huit cartes, `decision-science`**, contre neuf pour la théorie de la mesure, dix pour la sociologie des organisations et douze pour la cybernétique. Aucune égalité. En son sein, la priorité 1 était sans objet, les deux thèmes déclarés sans carte étant en sociologie des organisations ; la priorité 2 aussi, `queue.json` ne couvrant que ce même domaine ; **la priorité 3 commandait, les angles morts de `corpus/map/decision-science.scouting.md`**.
+- validées     : **7 — `programme-comme-theorie-du-comportement`, `recherche-heuristique-contre-force-brute`, `apprentissage-comme-recherche-heuristique`, `impossibilite-de-l-agregation-des-preferences`, `independance-des-alternatives-non-pertinentes`, `approche-axiomatique-arrow-raynaud`, `mythe-de-l-outil-quantitatif`, les 7 avec citation**, toutes relues sur l'image de la page. **Cinq en `PASS` au premier tour, deux après correction.** **Le domaine passe de 8 à 15 cartes et de 2 à 4 thèmes**, et le corpus de 129 à **136 cartes**. Le plafond de huit n'est pas atteint, et c'est délibéré : une lecture s'est conclue par un refus.
+- en review    : 0
+- rejetées     : **1 — `incomparabilite-en-aide-multicritere`, `OUT_OF_SCOPE`**, prononcé au stade de la lecture primaire sur le précédent exact de `reciprocite`. Voir la section « La lecture qui refuse ». **Trois concepts entièrement instruits ont par ailleurs été écartés du lot** au plafond, leurs dossiers déposés.
+- approfondies : **7 — les sept cartes de la nuit**, la phase 3 se terminant par les approfondissements des cartes qu'elle vient de créer. 1 525 à 1 692 mots, aucun refus de projection, aucun avertissement de citation sur les sept. `corpus:deepen` projette **136 approfondissements pour 136 cartes**, 203 687 mots, 1 498 en moyenne, **et la file est de nouveau vide à la clôture, comme elle l'était au lever**.
+- contrôles    : validate 0 erreur (140 enregistrements, 136 validés, **100 avertissements, les 6 nouveaux portant tous sur l'absence de source secondaire**) · build 136 concepts · deepen 136/136 · `git diff --exit-code src/content/generated/` propre après reprojection, **projection vérifiée idempotente sur deux exécutions successives** · test 482/0 · lint 0 · audit : `Science de la décision` passe de **2 thèmes / 8 validés** à **4 thèmes / 15 validés / 0 en cours**, et la liste des thèmes sans fiche validée reste à deux, `autorite-domination` et `apprentissage-organisationnel`. Rien à drainer dans `src/content/fixtures/concepts.fixture.ts` : aucun des sept identifiants n'y a d'homonyme.
+- commit       : les commits sont un par étape de la chaîne, poussés au fil de la nuit ; la branche est `claude/zen-johnson-pazrfr`.
+- bloqué par   : **le serveur MCP `documentary`, en échec de connexion (`CONNECTION_CLOSED`) pour la dixième nuit consécutive**, constat fait par le harnais au lever et non sur la foi du journal. **Second blocage, de dispositif, identique à celui des passages 10 à 14** : `Task` n'est pas exposé à `corpus-orchestrator`, donc **la session a orchestré elle-même**, lançant les vingt sous-agents `corpus-*` un par un par l'outil `Agent` du harnais, sans produire elle-même aucune connaissance. **Sixième nuit de suite : c'est l'état du dispositif, pas un accident.** **Troisième blocage, d'accès, constaté sur pièce** : `apps.dtic.mil` répond 403, `www.rand.org` 403 derrière CloudFront, `journals.uchicago.edu` 403, `lccn.loc.gov` **500** sur `/marcxml` pour la seconde nuit consécutive, HathiTrust 403 Cloudflare, Harvard LibraryCloud 429, Cairn 403 derrière DataDome, l'API SRU de Gallica 403, l'API plein texte d'Internet Archive refusée par le proxy sortant, OpenAlex « Insufficient budget », Semantic Scholar 429, `mitpress.mit.edu` 403, et le dépôt Dauphine `basepub.dauphine.psl.eu` en `CONNECT tunnel failed 502`. **OpenEdition Books est inatteignable par GET simple**, étant une application JavaScript : c'est une limite d'outillage, pas un vide. Aucun n'a été contourné.
+- la nuit suivante prend : **rien. C'est le quinzième et dernier passage.** Le bilan des quinze est écrit en fin de ce fichier, et il dit par quel bout reprendre à la main.
+
+### Ce que cette nuit a établi, en une phrase
+
+La sixième et dernière nuit de phase 3 **solde les deux legs les mieux qualifiés du dépôt et les
+solde positivement**, en tirant sept cartes là où la cartographie n'en promettait que deux, **et
+elle déclare les deux thèmes qu'un passage antérieur avait refusés en écrivant lui-même la
+condition de leur retour.**
+
+### Les deux thèmes refusés le 23 août, et la condition écrite de leur retour
+
+C'est le fait dominant de la nuit, et il est **rare qu'un dépôt s'écrive à lui-même la condition
+de son propre déblocage.** `src/content/themes.ts` portait, depuis l'ouverture du domaine, le motif
+du refus de deux thèmes : « Agréger des préférences » n'aurait porté qu'une carte, « Chercher une
+solution plutôt que la calculer » reposait sur deux textes du même trio d'auteurs dont la
+cartographie disait qu'un seul concept devrait sortir. Et il concluait : « les deux courants
+existent, leurs textes sont ouverts et lus, et ils attendent le passage suivant plutôt qu'une page
+à une carte. »
+
+**Les deux conditions sont levées, et chacune par une pièce et non par un arbitrage.**
+
+- **Arrow 1948 rend deux concepts au lieu d'un** : l'impossibilité, et la condition d'indépendance,
+  qu'Arrow numérote « Condition 3 », nomme, et à laquelle il consacre une section entière dont un
+  contrôleur a vérifié qu'elle ne porte aucune note de bas de page.
+- **La réserve de doublon sur Newell, Shaw et Simon est démentie sur pièce.** Deux lecteurs
+  indépendants, chacun sur son texte et sans se parler, ont conclu au même partage : 1958 pose
+  l'apprentissage comme une question à laquelle une théorie devra répondre, 1960 y répond et ne
+  fait que cela. **La preuve est mécanique** : « means-ends » et « problem space » ont **zéro
+  occurrence** dans le texte de 1958, dont la seule formulation moyens-fins est rapportée à Selz et
+  de Groot, et **la liste de références de 1960 ne cite pas l'article de 1958**.
+
+Trois cartes pour l'un, deux pour l'autre : aucune page à une carte.
+
+### La lecture qui refuse, et c'est le meilleur travail de la nuit
+
+**Vincke 1991 a été lu en entier, cinq pages sur l'image, pour ne rien rendre.** Il devait pourvoir
+l'incomparabilité, que la carte `classement-multicritere-electre` signale elle-même comme sa lacune
+depuis le 23 août.
+
+Le fait de structure qui décide est propre à ce genre de texte et vaudra ailleurs : **le corps de
+l'article ne porte pas un seul renvoi**, sa bibliographie de vingt-deux entrées n'est jamais
+appelée dans le texte, et l'astérisque de la page 147 dit « Le texte qui suit est le résumé de
+l'exposé ». **Le silence d'un tel texte sur qui a dit quoi est un trait de son genre, et inférer
+une paternité de ce silence aurait été l'erreur exacte que le périmètre annonce.**
+
+Sur le concept commandé, **Vincke se démarque lui-même** : le mot n'apparaît qu'une fois, page 149,
+au pluriel, dans une parenthèse et une énumération de cinq termes, et la phrase se termine par
+« ont fait et font encore l'objet de nombreuses recherches ». Le repli sur la plus belle phrase du
+texte, page 148, a été examiné et refusé aussi : l'absence d'optimum est la prémisse fondatrice de
+l'école de Roy, et même une attribution en `ASSOCIATED_WITH` serait fausse.
+
+**Et le refus a rendu un fait que la carte n'aurait pas rendu** : plutôt que de déclarer l'angle
+mort, le lecteur est allé tester la vraie porte, et **l'incomparabilité selon Roy n'a aucune source
+primaire ouverte connue**. Persée ne porte aucun texte de Roy sur le surclassement, les trois
+résultats inconnus ayant été ouverts et écartés ; Roy 1974 n'a pas de DOI déposé ; le document
+Lamsade n° 53 est fermé sous ses deux DOI Springer. C'est un obstacle plus dur que l'attribution,
+et il n'était pas connu ce matin.
+
+### Deux textes ouverts, et refusés pour un motif de droits
+
+**C'est la décision la plus stricte de la nuit, et elle applique un précédent écrit du dépôt.**
+
+Le balayage du jugement de probabilité a trouvé **ouverts** les deux articles que le périmètre
+nomme et qu'aucun passage n'avait cherchés : Kahneman et Tversky 1972 sur la représentativité,
+Tversky et Kahneman 1973 sur la disponibilité. `HTTP 200` tous les deux, pagination exacte, contenu
+vérifié. L'un est servi par la page personnelle d'un professeur d'université, l'autre par un site
+personnel sans affiliation déclarée.
+
+**Ce sont des articles de *Cognitive Psychology*, donc Elsevier, et `RESTE-A-FAIRE.md` portait déjà
+le cas tranché** : Thaler 1980, « revue Elsevier, seul miroir une page de cours, **motif de droits
+et non d'accès** ». Aucune carte n'en est tirée. **L'accès a été trouvé ; l'autorisation ne l'a pas
+été**, et une autorisation d'ayant droit se constate.
+
+Le contraste avec ce que la nuit a retenu est net et vaut règle : le tiré à part de Carnegie Mellon
+**porte son autorisation en clair**, `InC-NC`, sur un manifeste IIIF qui répond `200` quand la page
+de notice répond `503` depuis deux nuits. **La réserve d'autorisation du 23 août est levée par une
+porte que personne n'avait essayée**, et non par une indulgence.
+
+**Le balayage a rendu en échange un fait qui ferme une piste proprement** : ces deux articles n'ont
+**pas** de précurseur dans `dticarchive`, et on sait enfin pourquoi. Leurs propres notes citent des
+financements NSF, NIMH et NIH, **jamais ONR ni ARPA**. Six requêtes indépendantes avaient échoué
+sans explication ; l'explication est acquise, et le budget d'un passage ultérieur ne s'y perdra pas.
+
+### L'exemplaire annoncé par une cartographie ne portait pas le texte
+
+**C'est le défaut le plus grave que la nuit ait attrapé, et il venait du dépôt lui-même.** La
+cartographie du 23 août annonçait le tiré à part de 1958 servi par les archives de Carnegie Mellon,
+en écrivant que « la pagination imprimée (151 à 166) correspond exactement au contenu ».
+
+**Le fichier fait six feuillets.** Folios 151 à 155, puis directement 166 : les folios 156 à 165
+manquent, et la notice de l'item l'intitule « Proposed Anthology ». La cartographie avait lu six
+pages et conclu sur seize. **Le folio 156 est celui de l'une des deux citations de la nuit.**
+
+Le lecteur est allé ouvrir le doublon du fonds Simon, que la cartographie avait repéré **sans
+jamais le télécharger** : seize folios, 151 à 166, sans lacune. Deux contrôleurs ont recompté les
+folios un par un sur l'image, et l'un d'eux a rapporté un piège qui vaut d'être gardé : **`file`
+annonce cinq pages pour ce PDF IIIF qui en porte seize**, de sorte qu'un contrôle qui s'y fierait
+conclurait que l'exemplaire complet est le tronqué, exactement à l'envers.
+
+### Le libellé qu'il a fallu corriger deux fois, et la réception s'est trompée au premier tour
+
+**C'est le seul renvoi de fond de la nuit, et il faut dire qui s'est trompé.**
+
+Le premier contrôle de `impossibilite-de-l-agregation-des-preferences` a vu juste : le libellé de la
+troisième source accolait l'adresse de la deuxième édition au millésime de la première. **La
+correction alors portée par la réception, c'est-à-dire par moi, attribuait la deuxième édition de
+1963 à Yale University Press, et elle était fausse à son tour.**
+
+**Le second contrôle l'a renversée sur pièces** : la deuxième édition de 1963 paraît chez John
+Wiley and Sons, à New York, comme Cowles **Foundation** Monograph 12, et Yale ne reprend qu'au
+quatrième tirage, en 1970. Établi sur la notice `olbp56070` de The Online Books Page et sur la
+chronologie de tirages rendue par le SRU de K10plus, Wiley 1963, 1964, 1966, puis Yale 1970. **Et
+il a nommé la cause générale** : un ISBN ne peut pas attester une édition antérieure à son système,
+qui ne date que de 1967.
+
+**La sortie n'a pas été de mieux étiqueter mais d'ouvrir la porte.** Le même contrôleur avait
+téléchargé et vérifié le PDF de la première édition servi en accès libre par la Cowles Foundation :
+la référence y résout désormais, l'ISBN est retiré, et la carte a passé son dernier tour. C'est le
+geste que le §3 du workflow appelle combler le trou plutôt que changer l'étiquette.
+
+**La leçon est sur la réception, pas sur le contrôle** : une correction dictée par un contrôleur se
+recontrôle, et celle-ci a consommé le second des deux tours dont la carte disposait.
+
+### Une attribution qui ne se lit pas sur la signature
+
+`approche-axiomatique-arrow-raynaud` porte **Arrow et Raynaud**, qui ne sont pas les signataires de
+l'article dont elle est tirée. L'article parle d'eux **à la troisième personne d'un bout à l'autre**
+alors que Raynaud le cosigne.
+
+**Ni le lecteur ni le contrôleur n'ont voulu faire reposer cela sur ce que le texte dit de
+lui-même**, et c'est ce qui rend le cas exemplaire. Quatre pièces extérieures l'établissent, dont
+la mention de responsabilité d'OpenLibrary tirée des MARC de la Bibliothèque du Congrès, de Harvard
+et de Columbia, donc **trois catalogages indépendants**, et un tiers, un document de travail de
+l'Université Laval de 1999, qui attribue à « Arrow et Raynaud (1986) » l'observation même que rend
+la carte. **La vérification en sens inverse a été faite** : le RDF d'IdRef montre que les travaux
+liés du cosignataire écarté ne portent ni sur Arrow, ni sur Raynaud, ni sur le multicritère.
+
+### Une croyance du dépôt, tenue pour établie par trois constats, était fausse
+
+`RESTE-A-FAIRE.md` portait, parmi ses pièges transversaux, que « la table des matières des actes de
+1960 de Pergamon contredit ses propres folios, **constaté trois fois indépendamment** ».
+
+**Elle ne les contredit pas.** Le folio 190 est la page d'ouverture du chapitre de P. M. Milner, et
+la note de bas de page qu'on y lisait est la sienne, celle de sa subvention M-2455 du National
+Institute of Mental Health. La table annonce Newell, Shaw et Simon page 153 et Milner page 190 :
+**elle concorde**. La pagination du chapitre est **153-189**, et l'éditeur est Pergamon Press seul,
+la mention « Spartan Books » venant vraisemblablement de la conférence de 1962.
+
+**Ce qui a tranché n'est pas un quatrième constat de la même sorte, mais un second exemplaire d'une
+autre provenance** : le tiré à part de l'éditeur au Stanford Digital Repository, trente-sept pages
+numérotées 153 à 189. Un contrôleur l'a ensuite confirmé de son côté, sur un troisième exemplaire,
+le rapport RAND P-1742.
+
+**La règle qui en sort est écrite dans le fichier à la place de l'entrée fausse, parce qu'elle vaut
+plus que la correction** : « constaté trois fois indépendamment » n'est pas une preuve. Trois
+lecteurs peuvent hériter du même piège, et ils l'ont fait, parce qu'aucun n'avait ouvert le folio
+190 pour regarder de qui était la note qu'il portait.
+
+### Le dispositif : ce que six nuits identiques ont fini par apprendre
+
+**Le serveur `documentary` est fermé pour la dixième nuit, et `Task` n'est pas exposé à
+l'orchestrateur pour la sixième.** Ce ne sont plus des incidents, et la nuit ne les a pas
+rediagnostiqués.
+
+Deux observations neuves, en revanche, sur la façon dont une session orchestre elle-même.
+
+**Le dépôt est écrit par plusieurs mains à la fois, et un `git add -A` global emporte le fichier
+d'un agent en cours d'écriture.** C'est arrivé trois fois cette nuit, sans dommage, le contenu
+étant identique. Un agent l'a signalé de lui-même dans son compte rendu. **La conséquence n'est pas
+une perte mais un message de commit qui ne décrit pas ce qu'il emporte**, et deux verdicts de
+contrôle sont ainsi entrés dans le dépôt sous un message qui parlait d'autre chose.
+
+**Pousser au fil de la nuit plutôt qu'en un commit de clôture est meilleur, et c'est nouveau.** Les
+quatorze passages précédents groupaient leur travail ; celui-ci a commis et poussé après chaque
+étape de la chaîne. Le bénéfice n'est pas la traçabilité, qui était déjà bonne, mais **la
+résistance à l'interruption** : à tout moment de la nuit, l'état poussé était un état cohérent, et
+une coupure n'aurait coûté que l'étape en cours.
+
 ## Passage 14/15 — 2026-09-07
 
 - branche      : **`claude/zen-johnson-mbwwin`, imposée par la session, pas `main`.** Elle partait exactement d'`origin/main`, à `5abcdc1`, qui porte la fusion de la pull request [#98](https://github.com/J-Rbs91/Curiosity/pull/98) du passage 13 : **le travail des passages 07 à 13 est donc bien dans `main`**, vérifié au lever par `git rev-list --left-right --count origin/main...HEAD`, qui rend `0 0`. La parade du passage 12 a été appliquée : `git fetch origin main`, une seule référence, jamais deux refspecs dans le même appel. Le travail de la nuit est poussé sur cette branche, **pull request [#99](https://github.com/J-Rbs91/Curiosity/pull/99) vers `main`, ouverte à la clôture**. **Tant qu'elle n'est pas fusionnée, la nuit suivante reprend depuis cette branche.** Aucune nuit n'a eu lieu le 6 septembre : le passage 13 date du 5, et l'écart de deux jours est un fait de calendrier, pas un travail perdu.
@@ -1639,3 +1829,177 @@ la page.
   à corriger par quota.
 - **Cinq des huit cartes reposent sur le même exemplaire numérisé**, le recueil de 1988. C'est la
   faiblesse structurelle du lot, déclarée dans les `notes` des cinq fiches.
+
+---
+
+# Bilan des quinze passages — écrit le 8 septembre 2026, à la clôture du dernier
+
+Ce bilan est la dernière chose que la routine écrit. Il dit ce qu'elle a ouvert, ce qu'elle laisse
+ouvert, et par quel bout reprendre à la main. **Les chiffres qui suivent sont ceux que les scripts
+ont rendus à la clôture du passage 15**, et non un décompte tenu de nuit en nuit : `corpus:validate`
+136 validés sur 140 enregistrements et 0 erreur, `corpus:deepen` 136 approfondissements pour
+136 cartes et une file vide, `corpus:audit` 11 domaines et 44 thèmes, `npm test` 482 sur 482.
+
+## Ce que la routine a fait, en chiffres que les scripts rendent
+
+| | avant | à la clôture du quinzième |
+|---|---:|---:|
+| cartes validées | 66 au lever du passage 01 | **136** |
+| approfondissements projetés | 66 au lever du passage 07 | **136** |
+| mots d'approfondissement | environ 96 000, au même point | **203 687** |
+| domaines sans aucune carte | 6 sur 11 | **0** |
+| thèmes déclarés | non relevé | **44** |
+| thèmes déclarés sans carte | 3 | **2** |
+| fiches rejetées avec motif | 0 | **3** |
+
+**Les deux lignes d'approfondissement se lisent au passage 07 et non au passage 01**, et c'est un
+fait de régime : **les six premiers passages n'en ont écrit aucun**, étant tous des nuits
+d'ouverture de domaine. La colonne de gauche dit donc, pour ces deux lignes, l'état au moment où la
+phase 2 a commencé.
+
+**Elle a doublé le corpus**, et elle l'a fait en trois régimes successifs que son propre prompt
+ordonnait : cinq nuits d'ouverture de domaine, trois nuits d'approfondissement, six nuits
+d'enrichissement.
+
+## Les trois choses qu'elle a ouvertes, et qui n'existaient pas avant elle
+
+**1. Les onze domaines sont instruits.** Six étaient vides au premier passage. Le dernier,
+`behavioral-economics`, a été ouvert et instruit dans la même nuit, le 28 août. **La conséquence la
+plus lourde n'est pas le remplissage mais la disparition d'une règle** : la catégorie « angle mort
+vers un domaine fermé », qui a doté cinq domaines de leur stock d'entrée et qui fut le meilleur
+investissement de méthode du dépôt, **n'a plus de destinataire**. Un candidat mal placé part
+désormais chez un voisin ouvert, ou ne s'instruit pas.
+
+**2. Aucune carte validée n'attend son approfondissement, et cela tient depuis le 1er septembre.**
+L'écart entre ce qui est validé et ce qui est servi avait atteint trente-quatre cartes le 28 août.
+Il a été refermé en trois nuits, puis **rouvert et refermé dans la même nuit six fois de suite**, la
+phase 3 se terminant par les approfondissements des cartes qu'elle crée. Ce n'est pas un chantier
+qui se rouvrira : c'est une propriété du régime.
+
+**3. Le garde de projection couvre les deux fichiers du répertoire projeté.** Découvert sans le
+chercher au passage 08 : `corpus:build` n'écrit que `concepts.generated.ts`, et la CI ne lançait
+jamais `corpus:deepen`. **Une correction portée à un approfondissement sans reprojection passait
+donc la CI sans être vue**, et c'était arrivé, une carte ayant vécu trois jours avec deux phrases
+divergentes entre son enregistrement maître et sa projection. Les trois workflows lancent
+maintenant les deux projections avant leur diff. Le garde s'est déclenché deux fois depuis, aux
+passages 12 et 14, sur le même cas exact.
+
+## Ce qu'elle laisse ouvert, par coût croissant
+
+**1. La file de la sociologie des organisations, et c'est le chantier au meilleur rendement du
+dépôt.** Vingt-cinq entrées sur trente restent à instruire dans `corpus/map/queue.json`. **La
+routine n'y a jamais touché**, parce que sa règle de rotation la menait ailleurs chaque nuit : le
+domaine porte dix cartes, ce qui ne l'a jamais désigné comme le moins doté. Sa cartographie est
+faite, l'accessibilité de chaque entrée est constatée, le rang de chacune est motivé, **et un lot y
+démarre sans passage de scout**. La reprise la moins chère du dépôt s'y trouve : `couplage-lache`,
+seule fiche non validée du corpus, en `CANDIDATE` sans notes ni verdict depuis des semaines.
+
+**2. Deux thèmes affichent encore une page vide.** `autorite-domination` et
+`apprentissage-organisationnel`, écrits avant toute instruction documentaire pour construire
+l'application. Le second se pourvoirait par le rang 10 de la file, `apprentissage-double-boucle`.
+**Le premier n'a aucune entrée dans la file qui le pourvoie**, et c'est un écart à chercher plutôt
+qu'à combler par un rapprochement commode : il porte sur ce qui fait qu'un ordre est obéi sans
+contrainte, et les entrées qui en approchent visent autre chose.
+
+**3. Les reprises courtes des six domaines enrichis.** Chacune est écrite dans
+[`corpus/RESTE-A-FAIRE.md`](RESTE-A-FAIRE.md) avec son accès constaté et son coût. Les moins chères
+sont partout les mêmes : **des concepts déjà lus et instruits, écartés au plafond de volume de leur
+nuit**, dont les dossiers sont au dépôt. Il y en a trois pour `decision-science`, trois pour
+`operations-management`, deux pour `systems-thinking`.
+
+**4. Les dettes de source secondaire.** Cent des cent trente-six cartes déclenchent l'avertissement
+« aucune source secondaire affichée ». **Deux domaines seulement en sont sortis**,
+`behavioral-economics` et `sociology-of-work`, et chaque fois par une reprise courte qui a ouvert
+une réception francophone. C'est le manque le plus répandu du corpus et il ne se paie qu'en
+phase 3.
+
+## Les six règles que la routine a payées, et qui valent après elle
+
+Elles sont dispersées dans `RESTE-A-FAIRE.md` et dans `docs/corpus-workflow.md`. Les voici
+ensemble, parce qu'aucune n'était connue au premier passage.
+
+**1. Combler le trou plutôt que changer l'étiquette.** Deux gestes rendent honnête une affirmation
+trop forte : abaisser l'affirmation, ou aller chercher ce qui manquait. **Les deux sont
+indiscernables dans un diff**, et seul le second produit un fait. La règle a rendu, à elle seule,
+une fiche bloquée neuf jours, une fiche bloquée treize jours, et une source qui a résisté à deux
+tours de correction.
+
+**2. Une autorisation d'ayant droit se constate.** Elle ne se déduit ni de l'âge du texte, ni de
+l'absence de restriction d'emprunt, ni d'un `is_oa: true`. La règle a fait retirer les URL de six
+sources, refuser deux articles pourtant ouverts, et **elle a aussi fait gagner** : un manifeste
+IIIF portait l'autorisation en clair quand la page de notice répondait `503`.
+
+**3. Ce qui n'a pas été lu sur l'image n'a pas été lu.** L'OCR ne suffit jamais à citer, et il ne
+suffit pas non plus à contrôler. Corollaires payés : un dérivé d'image d'Internet Archive tronque
+en silence, la correspondance folio/feuillet n'est pas constante et ne se calcule pas,
+`page_numbers.json` est une inférence automatique, et `file` sous-compte les pages d'un PDF IIIF.
+
+**4. Un auteur qui rapporte un énoncé n'en est pas l'auteur.** Dans un texte de problématique, la
+thèse d'ouverture est souvent celle dont l'auteur se démarque, et la citation se prend après la
+charnière. La règle a fait rejeter deux textes de synthèse, écarter une dizaine de concepts, et
+elle a été le motif de la moitié des renvois de contrôle.
+
+**5. Un accord de plusieurs lecteurs sur une seule pièce ne prouve rien.** Ce qui tranche est un
+**second exemplaire de provenance distincte**. Le dépôt a porté deux semaines une croyance
+« constatée trois fois indépendamment » qui était fausse, et c'est un tiré à part d'un autre fonds
+qui l'a défaite, pas un quatrième lecteur.
+
+**6. Le contrôle aveugle se trompe aussi, et la réception encore plus.** Un contrôleur a été
+renversé par le suivant sur une attribution ; **la réception s'est trompée en corrigeant une source
+que le contrôle avait justement signalée**, et il a fallu le second tour pour la redresser. Le
+dispositif tient parce qu'il est redondant, pas parce qu'un de ses maillons serait sûr.
+
+## L'état du dispositif, à ne pas rediagnostiquer
+
+Trois blocages ont duré et durent encore. Ils ne sont pas des accidents et une reprise n'a pas à
+les redécouvrir.
+
+- **Le serveur MCP `documentary` est en échec de connexion depuis le 29 août**, dix nuits
+  consécutives. Il a clignoté deux fois, le 1er et le 7 septembre, répondant une fois puis
+  disparaissant. **La règle qui en sort : on l'essaie au lever, en un appel, et le lot se
+  dimensionne sur ce que cet appel rend**, jamais sur ce qui est écrit ici. Sans lui, une nuit
+  travaille par `WebSearch`, `WebFetch`, `curl`, l'API Crossref directe, Unpaywall, OpenLibrary,
+  la BnF et le SRU de K10plus, qui répondent tous.
+- **`Task` n'est pas exposé à `corpus-orchestrator`**, six nuits consécutives, constaté par appel
+  réel au passage 12. **La parade est établie et c'est la meilleure des trois essayées** : la
+  session orchestre elle-même et lance les sous-agents `corpus-*` un par un par l'outil `Agent` du
+  harnais, sans produire elle-même aucune connaissance.
+- **Le répertoire de travail temporaire est partagé entre agents parallèles**, et le dépôt lui-même
+  est écrit par plusieurs mains. Un lot parallèle nomme ses sous-répertoires et préfixe ses
+  fichiers, et un `git add` global emporte le fichier d'un agent en cours d'écriture.
+
+## Par quel bout reprendre à la main
+
+Dans cet ordre, et il est motivé.
+
+1. **`couplage-lache`**, la seule fiche non validée du corpus. Elle est en `CANDIDATE` sans notes ni
+   verdict, sa source est vérifiée et son DOI résout. C'est une heure de travail, et elle retire
+   le « 1 en cours » que `corpus:audit` affiche depuis des semaines.
+2. **La file de la sociologie des organisations**, chantier B. Elle est cartographiée, motivée,
+   accessible, et **elle n'a jamais été touchée**. Elle pourvoirait au passage
+   `apprentissage-organisationnel`, l'un des deux thèmes vides.
+3. **Les trois concepts déjà instruits de `decision-science`**, puis ceux des autres domaines
+   enrichis. Leurs dossiers de lecture sont au dépôt ; il ne manque que la rédaction et le contrôle.
+4. **La dette de source secondaire**, domaine par domaine, sur le modèle de ce qui a marché deux
+   fois : chercher une réception francophone ouverte, dans une revue déjà ouverte.
+
+**Et un avertissement sur la règle de rotation, qui a bien servi et qui a fait son tour.** Elle a
+désigné six domaines sans jamais demander d'arbitrage, ce qui est son mérite. Mais elle désigne
+toujours le moins doté, **et elle a donc systématiquement écarté le chantier au meilleur rendement
+du dépôt**, la file de la sociologie des organisations, parce que ce domaine n'a jamais été le
+moins doté. Une reprise à la main gagnerait à reconsidérer le critère plutôt qu'à l'appliquer une
+septième fois.
+
+## Ce que la routine n'a pas fait, et qu'il faut savoir
+
+- **Elle n'a jamais lu un texte fermé.** Toutes les portes fermées le sont sur constat, et les
+  listes de ce qui est vérifié fermé sont dans `RESTE-A-FAIRE.md`, domaine par domaine. Le budget
+  d'une reprise ne doit pas y retourner sans voie neuve.
+- **Elle n'a pas contourné un seul défi anti-robot.** Cairn, Gallica, HathiTrust, JSTOR, Project
+  Euclid, DataDome, altcha, CloudFront : aucun n'a été franchi, et plusieurs textes ont rendu par
+  une voie légitime trouvée ailleurs.
+- **Elle n'a pas comblé une seule lacune.** Chaque manque est déclaré dans les `notes` de la fiche
+  qui le porte, en clair, avec ce qui a été demandé, où, et comment cela a échoué.
+- **Elle n'a produit elle-même aucune connaissance.** Chaque carte est passée par un lecteur
+  primaire, un rédacteur et un contrôleur aveugle qui ne recevait que le dossier du script. Aucun
+  agent n'a contrôlé son propre travail.
