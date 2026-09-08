@@ -1,0 +1,62 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "recherche-heuristique-contre-force-brute",
+  "lead": [
+    "Un ordinateur va vite, donc il finira bien par trouver : il lui suffit d’essayer toutes les possibilités, l’une après l’autre, jusqu’à tomber sur la bonne. Le raisonnement paraît solide, et il l’était assez pour qu’on prenne la peine de le mettre à l’épreuve. À la fin des années 1950, trois chercheurs disposaient d’un programme capable de démontrer des théorèmes de logique. Pour savoir ce qu’il valait vraiment, ils ont écrit son concurrent : une procédure qui, elle, examine tout. Puis ils ont comparé les deux.",
+    "La comparaison est brutale. Les démonstrations que le premier programme obtient en quelques minutes demanderaient au second, estiment-ils, des centaines voire des milliers d’années, et cela en tenant déjà compte de la vitesse des ordinateurs de leur temps. Aucun gain de rapidité ne comble un écart pareil, parce que ce n’est pas un écart de rapidité. Allen Newell, J. C. Shaw et Herbert Simon en tirent une idée facile à énoncer et difficile à digérer : ce qui rend un problème soluble n’est pas la puissance de celui qui cherche, c’est ce qu’il accepte de ne pas regarder."
+  ],
+  "sections": [
+    {
+      "title": "Ce que coûte l’idée de tout essayer",
+      "paragraphs": [
+        "Démontrer un théorème, dans le cadre où travaillent ces auteurs, c’est trouver une suite d’opérations autorisées qui mène des prémisses à la conclusion. À chaque étape plusieurs opérations sont permises, et à l’étape suivante plusieurs encore, pour chacune des précédentes. Le nombre de suites possibles ne s’additionne pas, il se multiplie. Les auteurs le disent en une ligne : chercher une suite convenable par le seul tâtonnement épuiserait presque toujours le temps ou la mémoire disponibles, « to try to find a suitable sequence by trial and error alone would almost always use up the available time or memory ».",
+        "Imaginons un trousseau de dix clés devant une porte. On les essaie toutes, cela prend une minute, et la méthode est excellente. À mille clés, elle occupe la matinée. À un milliard, aucune agilité de la main n’y suffit, et essayer plus vite n’en sort pas. Un programme qui cherche une démonstration est dans cette situation, sauf que le trousseau grossit à mesure qu’il avance.",
+        "Rien de tout cela n’est une moquerie de la force brute. Une recherche exhaustive est parfaitement correcte : elle trouve, si on lui laisse le temps. Newell, Shaw et Simon ne l’ont pas caricaturée, ils l’ont programmée eux-mêmes pour la comparer à leur démonstrateur de théorèmes, qu’ils appellent LT, pour Logic Theorist. C’est de leur propre algorithme exhaustif qu’ils écrivent qu’il « would require times of the order of hundreds or even thousands of years to prove theorems that LT proves in a few minutes ». Une méthode qui aurait raison dans mille ans n’a pas raison."
+      ]
+    },
+    {
+      "title": "Les deux façons de ne pas tout regarder",
+      "paragraphs": [
+        "Si la solution n’est pas au bout d’un examen complet, elle est au bout d’un examen partiel bien conduit. Reste à dire ce que bien conduit signifie, et ces pages sont précises sur ce point. Aborder un problème de façon sensée, écrivent les auteurs, c’est disposer d’une stratégie qui fait l’une de deux choses : « permits the search to be limited to a smaller subspace, or generates elements of the space in an order that makes probable the discovery of one of the solutions early in the process ».",
+        "La première voie retranche : des familles entières de possibilités sont écartées d’avance, et l’on ne cherche plus que dans ce qui reste. La seconde ne retranche rien, elle range. Le nombre de possibilités est inchangé, mais on les engendre dans un ordre tel que les plus prometteuses viennent tôt, et l’on s’arrête dès qu’une solution apparaît. Les deux ne coûtent pas la même chose : retrancher risque d’écarter la solution avec le reste, réordonner ne peut que retarder sa venue.",
+        "Le mot qui compte dans tout cela n’est donc pas la rapidité, c’est la sélectivité. Dans la phrase même où l’opposition apparaît, la force brute est ce qu’un algorithme exhaustif met à la place de « the selective search of LT ». Une recherche sélective n’est pas une recherche plus rapide : c’est une recherche qui laisse délibérément des choses de côté."
+      ]
+    },
+    {
+      "title": "Ce que « heuristique » veut dire ici",
+      "paragraphs": [
+        "Le mot a plusieurs vies, et l’une d’elles est devenue si courante qu’elle recouvre les autres. En psychologie du jugement, une heuristique désigne un raccourci par lequel l’estimation difficile d’une vraisemblance est remplacée par un jugement plus simple. Ce n’est pas de cela qu’il s’agit ici. Dans ces pages, une heuristique est une manière de conduire une recherche, et ce qu’on lui demande est de rendre le problème traitable : qu’une solution soit trouvée dans un temps qui existe.",
+        "Il vaut la peine d’ajouter ce que ces auteurs ne font pas. Ils n’inventent pas le mot et ne le définissent nulle part. Dans les seize pages de l’article, heuristic n’apparaît que trois fois, jamais dans une définition, ni dans le titre, ni dans un intertitre. Newell lui-même a plus tard rendu le terme à celui qui l’avait remis en circulation : dans un texte consacré à l’heuristique de George Polya et à son rapport à l’intelligence artificielle, il écrit de Polya qu’« he is recognized in AI as the person who put heuristic back on the map of intellectual concerns ».",
+        "La dernière de ces trois occurrences dit d’ailleurs quelque chose que l’enthousiasme fait oublier. Employer des heuristiques y sert « to keep the total amount of trial and error within reasonable bounds », à maintenir le tâtonnement dans des bornes raisonnables. Le tâtonnement n’est donc pas supprimé, il est contenu. Une recherche sélective essaie encore, échoue encore, revient sur ses pas ; elle le fait assez peu pour que cela tienne dans une vie humaine."
+      ]
+    },
+    {
+      "title": "Pourquoi cette thèse paraît en revue de psychologie",
+      "paragraphs": [
+        "L’article s’intitule « Elements of a Theory of Human Problem Solving », il paraît en 1958 dans Psychological Review, et il porte trois signatures : Allen Newell et J. C. Shaw, de la RAND Corporation, Herbert A. Simon, du Carnegie Institute of Technology. Le programme n’y est pas l’objet du propos, il en est le cas d’étude. Ce que le texte cherche à établir concerne les personnes qui résolvent des problèmes.",
+        "De là vient la forme de sa phrase la plus connue, celle qui oppose la force brute aux processus heuristiques : sa seconde moitié fait autant de travail que la première, puisqu’elle attribue ces mêmes processus aux humains. Les auteurs ne disent pas seulement qu’une machine sélective bat une machine exhaustive. Ils disent que la sélectivité est ce que font les gens quand ils cherchent, et ils ajoutent, à la même page, que leurs résultats se retrouvent aisément au laboratoire avec des humains, « All of these results are easily reproduced in the laboratory with humans ».",
+        "On peut lire là le pari le plus risqué du texte : ce qui a été montré d’un programme, réussir par sélectivité et non par vitesse, y devient une description de ce que fait un humain devant un problème. L’opposition à la force brute n’est pas une remarque de programmeur, elle sert d’argument dans une théorie du comportement."
+      ]
+    },
+    {
+      "title": "Le vocabulaire qui n’est pas encore fixé",
+      "paragraphs": [
+        "Ces trois noms sont aujourd’hui attachés à un vocabulaire entier : l’espace de problème, l’analyse moyens-fins, la recherche heuristique. Il est instructif de regarder ce que l’article de 1958 ne contient pas. Problem space n’y a aucune occurrence, means-ends non plus. L’expression heuristic search n’y figure pas davantage : ce qui s’y lit est heuristic processes et selective search. La formule consacrée s’est fixée plus tard, et Newell la rapporte lui-même à un texte de 1965 signé Ernst et Newell.",
+        "Les mots y sont d’ailleurs encore tenus à distance, plusieurs de ceux qui deviendront techniques s’imprimant entre guillemets, comme des emprunts qu’on n’assume pas tout à fait. Lire un texte fondateur avec le vocabulaire venu après lui est la façon la plus commune de s’y tromper. Ici, l’idée est déjà entière quand les mots ne le sont pas : l’opposition entre la force brute et la fouille sélective est imprimée en 1958, la langue qui la nommera ne l’est pas encore."
+      ]
+    },
+    {
+      "title": "Deux exemplaires, et la page qui manque",
+      "paragraphs": [
+        "L’article se lit aujourd’hui sur des tirés à part conservés aux archives de Carnegie Mellon, et ils ne se valent pas. Celui du fonds Herbert Simon est entier : seize feuillets, des pages 151 à 166 sans lacune, jusqu’aux dix références finales. Celui du fonds Allen Newell est un extrait de six feuillets, les pages 151 à 155 puis la page 166. Il manque au second exactement la page 156, celle où se trouve la phrase sur la force brute.",
+        "Le détail n’est pas une curiosité d’archiviste. Deux lecteurs qui citent le tiré à part de Carnegie Mellon peuvent ne pas avoir eu le même document sous les yeux, et l’un des deux n’a pas pu lire cette phrase-là. Ces numérisations sont accessibles en ligne, ce qui ne veut pas dire qu’elles sont libres : leur notice les déclare sous droits, avec usage non commercial permis, et demande de créditer les archives et collections spéciales de l’université."
+      ]
+    }
+  ],
+  "limits": [
+    "Ce que ces auteurs entendaient exactement par heuristique, et ce que valaient celles de leur programme, ne se lit pas dans cet article. Ils renvoient eux-mêmes, en note de la page 156, à une analyse quantitative publiée ailleurs, « A quantitative analysis of the power of the heuristics incorporated in LT will be found in (7) » : les chiffres sont dans ce texte-là.",
+    "Le mot vient d’ailleurs, et Newell le dit : c’est Polya qui l’a remis en circulation. En quels termes il le pose, et pour quels usages, ses livres le disent, et ce sont eux qu’il faudra ouvrir pour le savoir.",
+    "La phrase française lue ici est une traduction de travail. Aucune traduction publiée de cet article ne s’est signalée, ce qui n’établit pas qu’il n’en existe aucune : les catalogues francophones restent à parcourir. La version qui fait foi demeure l’anglais imprimé page 156.",
+    "Ce que six décennies de travaux ont fait de cette opposition se lit dans les commentaires venus après, et ce sont eux qu’il faudra lire. L’article a lui-même circulé sous d’autres formes, un papier RAND numéroté P-971 et une version indexée sous la cote AD0422568 : savoir si elles diffèrent du texte de revue demande de les ouvrir."
+  ]
+}

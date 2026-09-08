@@ -1,0 +1,56 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "independance-des-alternatives-non-pertinentes",
+  "lead": [
+    "Un comité de trois personnes doit départager deux projets, A et B. Un troisième projet, C, figure encore sur la liste, et les trois membres le placent en dernier : personne n’en veut. Le procédé de décision, quel qu’il soit, désigne B. Quelqu’un fait alors remarquer que C n’est de toute façon pas finançable, et on le retire. Rien d’autre n’a bougé : les trois membres ont exactement le même avis qu’avant sur A et sur B. On recompte, et c’est A qui l’emporte. Personne n’a changé d’avis, et pourtant le groupe a changé de décision, sous l’effet d’une option dont nul ne voulait.",
+    "Le premier réflexe est de chercher l’erreur dans le calcul. En octobre 1948, dans un rapport de dix-neuf pages écrit pour la RAND Corporation, Kenneth J. Arrow procède autrement : plutôt que de corriger un procédé, il énonce l’exigence qu’un tel retournement ne se produise jamais, la numérote, et la place au même rang que les autres contraintes auxquelles un procédé de décision collective doit satisfaire. Un procédé qui la viole n’est pas mal réglé : il est écarté."
+  ],
+  "sections": [
+    {
+      "title": "Non pertinente ne veut pas dire mauvaise",
+      "paragraphs": [
+        "L’adjectif trompe. Une option n’est pas « non pertinente » parce qu’elle serait médiocre, marginale ou fantaisiste : elle l’est parce qu’elle ne fait pas partie de celles entre lesquelles on décide. Dans ce rapport, les options réellement ouvertes forment un ensemble noté S, et ce que le procédé retient parmi elles est noté C(S). L’exigence posée page 10 est que « C(S) should be independent of the very existence of alternatives outside of S, and therefore should depend only on the individual preference scales within S » : ce que le groupe choisit parmi les options disponibles ne doit dépendre que de ce que chacun pense de ces options, et de rien d’autre.",
+        "Page 11, Arrow en tire une conséquence pratique : « Condition 3 implies that in considering C(S), we can disregard all preferences among alternatives not in S. » Autrement dit, pour savoir ce que le groupe choisit ici, il est inutile de recueillir l’opinion de qui que ce soit sur des options qui ne sont pas en jeu, y compris sur des options qui n’existent pas. Un procédé qui a besoin de cette information supplémentaire est, par là même, sensible à quelque chose qu’il ne devrait pas voir.",
+        "L’intitulé figure page 10, entre parenthèses derrière le numéro : « Condition 3 (Independence of irrelevant alternatives) ». La section où les trois premières conditions sont posées ne porte aucune note de bas de page, et rien dans ces pages ne renvoie la formule à un prédécesseur."
+      ]
+    },
+    {
+      "title": "L’option que les trois placent en dernier",
+      "paragraphs": [
+        "La section 6, page 15, est consacrée à cette condition, et elle s’ouvre sur un cas construit pour la mettre en défaut. Trois individus, trois options x, y et z. De z, Arrow écrit qu’elle est « a very undesirable alternative, since each individual regards it as worst », une option que chacun des trois range au dernier rang. Le procédé mis à l’épreuve additionne les utilités individuelles après avoir ramené chaque échelle personnelle aux options disponibles : la meilleure vaut 1, la pire vaut 0, et ce qui se trouve entre les deux reçoit une valeur intermédiaire.",
+        "Tant que z reste sur la table, chaque échelle est calibrée sur trois options, et le total penche pour y. Effacer z oblige à recalibrer : il ne reste que deux options par personne, donc plus rien entre 1 et 0. Les deux premiers individus donnent alors 1 à x et 0 à y, le troisième l’inverse, et c’est x qui l’emporte. Aucun avis n’a changé sur x ni sur y ; seule a disparu une option que personne ne voulait.",
+        "Ce n’est pas une curiosité arithmétique, c’est exactement ce que la condition interdit, et Arrow l’écrit dans la phrase qui ouvre l’exemple : effacer z ne devrait rien changer au résultat. Sa formule, « blotted out of existence », vise l’effacement de l’alternative elle-même et non son retrait d’un scrutin ; la question n’est pas de savoir comment on vote, mais de quoi le résultat dépend. Le jugement qui suit tient en quatre mots : « This is clearly unsatisfactory. »"
+      ]
+    },
+    {
+      "title": "Le vote par rangs n’y échappe pas",
+      "paragraphs": [
+        "Le second exemple, pages 15 et 16, s’en prend à un procédé bien plus répandu, que le rapport nomme « the rank-order method of voting » sans l’attribuer à personne : chacun classe les options, chaque rang vaut un nombre de points, et l’on additionne. Avec quatre options, les rangs valent 4, 3, 2 et 1.",
+        "Le mécanisme du défaut est le même, et il est plus visible encore. Retirer une option de la liste, ce n’est pas seulement la soustraire au décompte : c’est décaler d’un cran toutes celles qu’elle précédait, donc modifier les points de tout le monde. Page 16, la fin de l’exemple redit l’exigence dans les termes du cas : « so that its deletion should not affect the choice of x ». Le décompte par rangs, lui, en est affecté.",
+        "Ces deux procédés n’ont rien d’excentrique. Ramener des jugements à une même échelle puis les additionner, ou compter des points de rang, sont deux manières ordinaires d’agréger des avis, et ce sont peut-être les deux plus courantes. C’est ce qui donne son prix à la Condition 3 : elle ne sanctionne pas des constructions bizarres, elle écarte des façons de faire familières, et les exemples servent précisément à rendre visible ce que le décompte dissimulait."
+      ]
+    },
+    {
+      "title": "Une exigence qu’Arrow refuse d’affaiblir",
+      "paragraphs": [
+        "Un ensemble d’exigences qu’on ne peut pas toutes tenir oblige à en relâcher une. Page 14, Arrow annonce laquelle ne le sera pas : « From the very meaning of a social decision process, it is hard to see how Conditions 2 or 3 can be weakened », et il ajoute que « The remaining sections will be concerned with weakening of the various other conditions ».",
+        "La suite du rapport s’y tient. Ce qui est restreint dans les sections suivantes, ce sont les configurations de préférences individuelles que l’on accepte de considérer, jamais l’indépendance. Page 17, Arrow signale une restriction de ce genre, plus radicale que la sienne, en nommant celui qui l’a proposée : « A more radical restriction upon the range of possible individual preference patterns has been proposed by D. Black ».",
+        "Le statut de la condition se lit dans ce partage. Elle n’est pas présentée comme une commodité de calcul dont on pourrait négocier les termes, mais comme quelque chose qui tient au sens même de ce qu’est une décision collective : si le choix d’un groupe entre deux options dépend d’une troisième, on peut se demander s’il s’agit encore d’un choix entre ces deux-là."
+      ]
+    },
+    {
+      "title": "Un rapport signé seul, daté deux fois",
+      "paragraphs": [
+        "La page de titre porte « THE POSSIBILITY OF A UNIVERSAL SOCIAL WELFARE FUNCTION / By / Kenneth J. Arrow », et une seule signature. Deux passages pourraient faire croire à un partage, et n’en font pas un. La note 12, page 15, indique que « The examples in this section were suggested in discussions with A. Kaplan and with G. E. Forsythe, National Bureau of Standards » : ce sont les exemples de cette section, non la condition. Page 19, les remerciements vont à A. Kaplan et J. W. Youngs « for guidance in formulating the problem », ce qui salue une aide sans déplacer la signature.",
+        "Le document lui-même se date de deux façons, et l’écart n’est pas expliqué. La couverture RAND de l’exemplaire numérisé porte « P-41 / 26 September 1948 », que les descriptions de l’archive recopient. Les dix-neuf pages de texte, elles, portent toutes en tête « 10/26/48 », soit le 26 octobre 1948. La contradiction est dans l’objet et non dans sa description ; c’est la date imprimée sur le texte qui est retenue ici. Une annotation manuscrite de la même couverture, « 20 pp », compte simplement le feuillet de couverture avec les dix-neuf pages foliotées.",
+        "Qui télécharge cette numérisation a intérêt à le savoir : elle s’ouvre sur l’avis « WE REGRET THAT LEGIBILITY OF THIS DOCUMENT IS IN PART UNSATISFACTORY », et la reconnaissance automatique de caractères y est assez dégradée pour transformer une ligne de chiffres en autre chose. Les pages se lisent à l’image, en pleine résolution, et non dans la couche de texte."
+      ]
+    }
+  ],
+  "limits": [
+    "Qu’une exigence de cette forme ait circulé avant octobre 1948, sous ce nom ou sous un autre, n’est pas une question tranchée ici : le rapport ne déclare aucun précédent, et ce silence n’en est pas une preuve. Un article la pose de front, sous le titre « Independence of irrelevant alternatives before Arrow », signé Iain McLean dans Mathematical Social Sciences en octobre 1995 : ce sont ses pages qui répondront.",
+    "La version de 1948 énonce la condition sur la fonction de choix, c’est-à-dire sur ce que le procédé retient dans un ensemble d’options, et non sur une relation de préférence sociale. En quels termes exacts elle est reprise ensuite, deux textes le disent : l’article « A Difficulty in the Concept of Social Welfare », paru dans le Journal of Political Economy d’août 1950, et le livre Social Choice and Individual Values, publié chez Yale University Press en 1951. La formulation que la discipline cite d’ordinaire est celle du livre, et c’est là qu’il faut aller la lire.",
+    "Ce que les décennies suivantes ont fait de cette condition, les défenses et les objections qu’elle a suscitées, n’est pas retracé ici, et aucun travail postérieur n’est cité. L’objection la plus frontale vient du côté français de l’aide multicritère à la décision, où cette exigence passe pour contestée ; l’argument se trouve dans ces travaux, et il se lira chez eux.",
+    "Enfin, le même nom sert ailleurs à désigner autre chose : un axiome de la solution de marchandage de Nash, une propriété des modèles de choix discret. Ce sont d’autres littératures, avec leurs propres énoncés, et ce qui les relie à ces dix-neuf pages de 1948, elles seules peuvent le dire."
+  ]
+}
