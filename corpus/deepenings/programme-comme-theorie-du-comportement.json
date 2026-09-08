@@ -1,0 +1,55 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "programme-comme-theorie-du-comportement",
+  "lead": [
+    "Quelqu’un cherche la démonstration d’un théorème, la sortie d’un labyrinthe ou la panne d’une machine. Il essaie une piste, revient en arrière, en essaie une autre, et finit par trouver. Vous avez tout vu, et il reste à dire ce qui s’est passé. Deux réponses viennent spontanément : que cette personne est douée, ce qui ne dit rien de ce qu’elle a fait ; ou que ses neurones se sont activés d’une certaine façon, ce qui ne renseigne pas davantage sur les étapes qu’elle a franchies. Entre les deux, il y a une place vide.",
+    "Trois chercheurs l’occupent en 1958, dans un article de seize pages de la Psychological Review. Leur proposition est simple à énoncer : pour expliquer ce que la personne a fait, écrivez la suite des opérations qu’elle a exécutées, assez finement pour que cette suite, suivie à la lettre, produise la même conduite. Ni formule reliant des quantités, ni description des neurones : une marche à suivre. Allen Newell, J. C. Shaw et Herbert A. Simon appellent cela un programme, et ils soutiennent que le programme est la théorie, non son illustration."
+  ],
+  "sections": [
+    {
+      "title": "Ce que ces auteurs appellent un programme",
+      "paragraphs": [
+        "Le mot n’a pas ici le sens d’un logiciel qu’on installe. Sa définition se lit à la troisième page de l’article : « Our position is that the appropriate way to describe a piece of problem-solving behavior is in terms of a program: a specification of what the organism will do under varying environmental circumstances in terms of certain elementary information processes it is capable of performing. » Autrement dit : décrire une conduite de résolution de problème, c’est donner la spécification de ce que l’organisme fera selon les circonstances où il se trouve, et la donner à partir de certains processus élémentaires d’information qu’il est capable d’exécuter.",
+        "Élémentaire ne veut pas dire simple, mais non décomposé : l’opération est prise comme donnée, la théorie ne cherche pas ce qu’il y a dessous, et tout le reste se compose à partir d’elle. Les auteurs écrivent d’ailleurs, à la page précédente, que les conduites plus longues sont « compounded out of elementary information processes », composées à partir de processus élémentaires d’information. L’image de la recette de cuisine aide, à condition de la prendre au sérieux : une recette n’est utilisable que si chacun de ses gestes est déjà à la portée de celui qui la suit, sans qu’il faille une recette pour le geste lui-même.",
+        "Le second membre de la définition compte autant que le premier : ce que l’organisme fera selon des circonstances variables. Un programme, en ce sens, n’est pas une séquence fixe qu’on déroulerait quoi qu’il arrive ; il dit ce qui sera fait dans chaque cas rencontré. Cela implique qu’il se ramifie, et qu’une même personne, avec le même programme, se conduira différemment selon ce qu’elle trouve en chemin. La théorie porte sur la manière de procéder, pas sur le trajet particulier qu’elle a produit une fois."
+      ]
+    },
+    {
+      "title": "Le programme à la place des équations",
+      "paragraphs": [
+        "Pourquoi appeler cela une théorie, et non une description ? La dernière page de l’article répond par une comparaison qui donne la mesure de l’ambition : « In this approach, a specific program plays the role that is played in classical systems of applied mathematics by a specific system of differential equations. » Dans cette approche, un programme donné tient la place que tient, dans les systèmes classiques des mathématiques appliquées, un système donné d’équations différentielles.",
+        "La comparaison mérite d’être dépliée. Une équation différentielle relie l’état d’un système à la vitesse à laquelle cet état change ; c’est sous cette forme que la physique classique écrit ses théories, et c’est cette forme que la psychologie a longtemps cherché à imiter. Newell, Shaw et Simon proposent d’en changer, non d’y renoncer : la théorie garde son exigence de précision, elle prend seulement une autre écriture, celle d’une suite d’opérations plutôt que celle d’un jeu de relations entre grandeurs.",
+        "Cette écriture a une propriété que les auteurs relèvent dès la première page : « A program viewed as a theory of behavior is highly specific », un programme considéré comme théorie du comportement est extrêmement spécifique. Cela a une conséquence directe. Une loi générale énonce une tendance et supporte l’à-peu-près ; un programme, lui, dit ce qui est fait à chaque pas, et le détail suffit alors à le démentir. C’est un inconvénient, et c’est le prix de la méthode : une théorie écrite ainsi s’expose à être fausse en des points repérables."
+      ]
+    },
+    {
+      "title": "Ni neurones ni circuits électroniques",
+      "paragraphs": [
+        "Une théorie doit dire de quoi elle parle. Celle-ci le fait sans détour, à la treizième page : « Our theory is a theory of the information processes involved in problem solving, and not a theory of neural or electronic mechanisms for information processing. » Elle porte sur les processus d’information engagés dans la résolution de problèmes, et non sur les mécanismes, nerveux ou électroniques, qui exécutent ces processus. Les auteurs ajoutent, dans la même colonne, avoir évité de spécifier ces mécanismes « in neurological or pseudo-neurological terms », en termes neurologiques ou pseudo-neurologiques.",
+        "Le second refus surprend davantage, puisque ces trois chercheurs travaillent avec des machines. L’article coupe pourtant le lien de lui-même, à la troisième page : « Such programs could be written […] if computers had never existed. » De tels programmes auraient pu être écrits même si les ordinateurs n’avaient jamais existé. Ce dont la théorie parle, ce sont des processus d’information, et rien dans cette description n’oblige à passer par une machine : l’ordinateur est un moyen, pas l’objet.",
+        "Ce niveau de description est un choix, et les auteurs le disent dans la phrase même où ils énoncent leur thèse. Composée en italiques à la première page, elle s’ouvre sur une réserve laissée en caractères romains : « At this level of theorizing, », à ce niveau de théorisation. Ce qui suit vaut donc pour le niveau retenu. La thèse n’affirme pas qu’il n’y a rien à expliquer du côté des neurones ; elle dit que ce n’est pas ce que ce texte entreprend."
+      ]
+    },
+    {
+      "title": "Des devanciers que les auteurs nomment",
+      "paragraphs": [
+        "Il serait tentant de leur attribuer l’invention de l’idée. Ils s’en défendent eux-mêmes, à la deuxième page : « From this standpoint there is nothing particularly novel about the theory. » De ce point de vue, écrivent-ils, la théorie n’a rien de particulièrement neuf, et ses prétentions reposent sur d’autres considérations.",
+        "Une note de la troisième page l’explicite : « We can, in fact, find a number of attempts in the psychological literature to explain behavior in terms of programs or the prototypes thereof. » On trouve en effet, dans la littérature psychologique, un certain nombre de tentatives d’expliquer le comportement en termes de programmes ou de formes qui les préfigurent. La note nomme l’analyse de la résolution de problèmes chez les joueurs d’échecs par Adrian de Groot, la psychologie de la pensée de Selz sur laquelle celle-ci repose, et, apparemment de façon indépendante, Jerome S. Bruner, qui « uses the term “strategy,” derived from economics and game theory, for what we have called a program », emploie le mot stratégie, venu de l’économie et de la théorie des jeux, pour ce qu’eux-mêmes ont appelé un programme.",
+        "Ce qui revient aux trois auteurs est donc précis, et plus intéressant qu’une paternité : l’énoncé cosigné de 1958, qui prend ce niveau de description au sérieux jusqu’à en faire la forme d’une théorie. L’article, reçu par la revue le 10 juillet 1957, porte trois signatures sur deux adresses, Newell et Shaw pour la RAND Corporation, Simon pour le Carnegie Institute of Technology."
+      ]
+    },
+    {
+      "title": "Ce qui n’est pas encore dans ces pages",
+      "paragraphs": [
+        "On associe volontiers ces trois noms à l’analyse par moyens et fins et à la notion d’espace de problème. Ni l’une ni l’autre de ces expressions ne figure dans les seize pages de 1958. La seule formulation qui y rapproche des moyens et des fins, à la quatorzième page, les auteurs la rapportent à Selz et à de Groot. Lire ce texte pour y retrouver ce qui est venu après, c’est manquer ce qu’il fait.",
+        "L’apprentissage n’y est pas non plus. Le programme qui illustre la thèse, le Logic Theorist, avait été construit et décrit auparavant, dans des articles de 1956 et de 1957 ; à l’avant-dernière page, les auteurs notent que « LT is primarily a performance machine », qu’il est avant tout une machine qui exécute. La question de savoir comment un tel programme se modifie avec l’expérience est explicitement différée. Une théorie qui prend la forme d’une marche à suivre commence par dire comment on procède, avant de dire comment cette manière de procéder se transforme."
+      ]
+    }
+  ],
+  "limits": [
+    "Ce que contient le Logic Theorist, opération par opération, se lit dans les trois textes que la bibliographie de la dernière page range sous son nom : « The logic theory machine: A complex information processing system » (1956), « Programming the logic theory machine » et « Empirical explorations with the logic theory machine » (1957). C’est là qu’un programme de ce genre se voit écrit en entier.",
+    "De Groot, Selz et Bruner sont nommés comme devanciers par les auteurs eux-mêmes, mais les sources disponibles ne disent pas en quels termes chacun avait posé la chose. L’analyse des joueurs d’échecs de de Groot, la psychologie de la pensée de Selz, le mot stratégie chez Bruner : ce sont les racines de l’idée, et leurs pages attendent leur lecteur.",
+    "Cet article se lit en anglais : aucune traduction française publiée n’en est connue à ce jour, et les recueils francophones de textes fondateurs traduits restent à parcourir un à un. L’exemplaire complet, seize pages sans lacune, est celui du fonds Herbert A. Simon aux archives de Carnegie Mellon, en ligne sous droits, usage non commercial permis.",
+    "Ce que la psychologie a fait de cette thèse après 1958, ce qui en a été retenu ou abandonné, les sources disponibles ne le disent pas. La réception de cet article reste à documenter, et c’est par elle qu’on mesurerait ce que l’idée est devenue."
+  ]
+}

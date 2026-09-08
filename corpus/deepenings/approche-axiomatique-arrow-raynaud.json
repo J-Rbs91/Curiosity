@@ -1,0 +1,59 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "approche-axiomatique-arrow-raynaud",
+  "lead": [
+    "Imaginons quatre fournisseurs à départager, et un tableau à double entrée : le prix, le délai, la qualité constatée, le service après-vente. Chacun l’emporte sur un point et perd sur un autre, et personne autour de la table ne veut dire à voix haute combien de jours de retard valent mille euros d’économie. On cherche alors une méthode. On en trouve des dizaines, chacune avec son nom, sa formule, parfois son logiciel, et deux d’entre elles, sur les mêmes chiffres, peuvent désigner deux fournisseurs différents. Vient la question qui paraît la seule sensée : laquelle est la bonne ?",
+    "Un article de 1995 paru dans la Revue française de gestion répond que cette question n’a pas de réponse générale, et propose de la retourner. Au lieu de choisir une méthode puis de découvrir comment elle se comporte, on écrit d’abord ce que l’on exige d’elle, exigence par exigence, et l’on cherche ensuite quelles règles de décision les respectent toutes. Chacune de ces exigences porte ici le nom d’axiome, et l’article en énonce sept, numérotés et mis en italique."
+  ],
+  "sections": [
+    {
+      "title": "Ce que le tableau retient de chaque critère",
+      "paragraphs": [
+        "Rien de tout cela ne commence par les axiomes. L’article annonce deux temps : mettre les données en forme, puis chercher les exigences. La mise en forme consiste à comparer les options deux par deux. Pour deux fournisseurs A et B, on ne demande à chaque critère qu’une chose : lequel des deux il place devant. Chaque critère porte un poids, qui dit son importance, et l’on inscrit dans une case « la somme des poids des critères qui évaluent A comme meilleur que B ». Une case symétrique fait le compte inverse. Le tableau obtenu tient tout le problème.",
+        "Ce qui n’y entre pas est aussi délibéré que ce qui y entre. Qu’un fournisseur livre trois jours plus tôt ou trente jours plus tôt, le tableau écrit la même chose : ce critère le met devant. L’écart entre deux options selon un critère est écarté, « car la mesure de cet écart semble trop discutable pour que l’on puisse sérieusement le prendre en compte ». Le refus a un prix immédiat, et il vaut d’être vu : un avantage spectaculaire sur un point cesse d’être spectaculaire, il devient un poids parmi d’autres. En échange, aucun taux de change implicite entre des euros et des jours ne se glisse dans le calcul sans que personne l’ait décidé."
+      ]
+    },
+    {
+      "title": "Une exigence écrite avant de connaître la réponse",
+      "paragraphs": [
+        "Un axiome, ici, n’est pas une vérité de départ dont on déduirait le reste. C’est une propriété que l’on réclame de la procédure, et qu’elle vérifie ou ne vérifie pas. Le premier porte le numéro 0 et interdit de juger sur autre chose que le tableau : ce qui n’y figure pas ne pèse pas sur la décision. Les suivants ajoutent des exigences plus disputables, jusqu’à un axiome 6’ que l’article discute longuement. Sept en tout, chacun formulé en une phrase que l’on peut lire, contester et refuser.",
+        "L’intérêt de les écrire est qu’ils deviennent alors démontrables. Une fois les exigences posées, on peut établir qu’une règle les satisfait toutes, ou qu’aucune ne le peut. L’article rapporte ainsi, page 16, que « H. Raynaud a démontré les théorèmes suivants », et en aligne quatre en deux pages. On peut y voir le déplacement qui fait tout l’intérêt de la démarche : la discussion ne porte plus sur le résultat, où chacun défend le classement qui l’arrange, mais sur des exigences énoncées avant de savoir qui elles feront gagner."
+      ]
+    },
+    {
+      "title": "Des axiomes venus du vote, révisés pour la gestion",
+      "paragraphs": [
+        "Cette façon de procéder n’est pas née dans les problèmes de gestion. Elle vient des travaux de Kenneth Arrow, dont les axiomes portaient sur le problème de la démocratie, c’est-à-dire sur la manière dont des préférences individuelles se combinent en une décision commune. Ce sont la démarche elle-même et les axiomes d’Arrow en propre qui passent de là au problème du gestionnaire qui doit trancher entre quatre fournisseurs.",
+        "Transporter n’est pas recopier. L’une des conditions d’Arrow, que le texte francise en « indépendance par rapport aux alternatives irrelevantes », y est jugée « ici inutilement fort » et remplacée par une exigence d’indépendance dite dichotomique. Ce que cette condition demande, et ce que l’on perd à l’affaiblir, est une discussion à soi seule ; il suffit de retenir que l’emprunt est critique. « Arrow et Raynaud, dans leur approche, proposent » leur propre version d’une exigence tenue pour légitime dans une élection et jugée, pour ce problème de gestion, plus forte qu’il n’est utile."
+      ]
+    },
+    {
+      "title": "Quand deux exigences ne tiennent pas ensemble",
+      "paragraphs": [
+        "Le moment le plus instructif est celui où le procédé échoue, et l’article ne le cache pas. Page 18, à propos de l’un de ses propres axiomes : « Dans le cas général, cet axiome n’est pas compatible avec les axiomes de prudence et d’indépendance. » Trois exigences qui paraissent chacune raisonnable ne peuvent pas être satisfaites en même temps par une règle de décision.",
+        "Un tel constat n’est pas un accident de parcours, c’est le genre de résultat que la démarche produit. Écrire ses exigences ne garantit pas qu’une méthode les honore toutes ; cela permet aussi d’établir qu’aucune ne le peut, et met alors le décideur devant un choix qu’il ignorait avoir à faire : laquelle abandonner. C’est de là que vient la thèse la plus large de l’article : les problèmes de décision multicritère sont trop spécifiques les uns par rapport aux autres, et « il ne peut être question de tous les résoudre au moyen d’un seul et même système d’axiomes et par conséquent d’une règle unique de décision »."
+      ]
+    },
+    {
+      "title": "Ni une recette de plus, ni un produit",
+      "paragraphs": [
+        "Le titre de l’article annonce un outil, et l’on s’attend à ce qu’il finisse par en vendre un. Il fait exactement l’inverse. Après avoir exposé une batterie d’axiomes cohérente et la règle qui la satisfait, il s’arrête pour prévenir un contresens : cette batterie « pourrait sembler souhaitable pour tous les cas possibles, ou bien, être préconisée par Arrow et Raynaud comme étant leur méthode. Ce serait une compréhension erronée de l’approche ». La batterie exposée est un exemple de ce que la démarche permet de construire, pas la méthode maison de ses auteurs.",
+        "La conclusion enfonce le clou en visant l’usage même des méthodes toutes faites : il s’agit de « ne pas employer une méthode dont on n’ait pas accepté profondément les fondements qui, eux, ne sont pas de la technique mathématique ». La phrase mérite d’être prise au sérieux, parce qu’elle désigne le partage des rôles habituel et le refuse. Le choix des axiomes n’est pas la partie technique que l’on délègue à un spécialiste avant de récupérer un résultat : c’est la partie où le décideur s’engage, et elle ne se sous-traite pas.",
+        "Le texte va plus loin et nomme lui-même, page 20, « le point le plus faible de l’approche ». La « bibliothèque d’axiomes » où l’on viendrait puiser ses exigences n’existe pas encore, si bien que « le décideur gestionnaire ne puisse en général se passer d’un expert qui l’aide à formuler correctement ses axiomes ». L’aveu est sérieux : une démarche qui promet de rendre au décideur la maîtrise de ses propres exigences reconnaît qu’il lui faut, pour les formuler, quelqu’un qui sache les écrire."
+      ]
+    },
+    {
+      "title": "Un nom, une signature, deux dates",
+      "paragraphs": [
+        "L’article est signé « par Jacques Pasquier-Dorthe et Hervé Raynaud », et il parle pourtant d’Arrow et de Raynaud à la troisième personne d’un bout à l’autre, alors même que Raynaud le cosigne. Les outils qu’il expose y sont dits « le fruit d’une longue collaboration entre Kenneth Arrow et Hervé Raynaud », et les théorèmes sont attribués à Raynaud comme à un tiers. Ce que l’on tient donc en main est une présentation en français d’une approche que le texte rapporte à deux hommes, dont l’un signe ; aucun résultat n’y est attribué à l’autre signataire, et l’article se décrit lui-même comme une présentation qui « s’adresse à des non-mathématiciens ».",
+        "La date se lit de la même façon. 1995 est le millésime de ces pages, pas celui de l’approche : le texte la dit « développée il y a quelques années sous le nom d’approche axiomatique Arrow-Raynaud », et ne la date jamais autrement. Ce qui porte le nom d’Arrow et de Raynaud existait donc déjà quand la Revue française de gestion l’a fait connaître à des lecteurs de gestion."
+      ]
+    }
+  ],
+  "limits": [
+    "Depuis quand cette approche existe, aucune source disponible ne le fixe. Deux imprimés portent les deux noms ensemble : Social Choice and Multicriterion Decision-Making, MIT Press, 1986, et Logique de la décision managériale, 2011, signé Raynaud avec la collaboration d’Arrow. Ce que les deux hommes y écrivent de leur propre main, ces volumes le tiennent : il faudra les ouvrir.",
+    "L’article annonce un ouvrage en cours de parution aux Editions Masson sous deux titres différents, « Choix social et décision multicritère » puis « L’approche axiomatisée en décision multicritère ». Le catalogue de la Bibliothèque nationale de France n’en donne de notice ni sous l’un ni sous l’autre : que ces pages aient paru n’est pas établi.",
+    "Le milieu de l’article porte un second mécanisme, qui mérite sa propre lecture : le choix prudent. L’axiome 4 demande que « Le candidat retenu sera un vainqueur prudent », un exemple de conseil municipal l’illustre, et les théorèmes de Raynaud font du poids minimal qui le construit « une idée de la gravité du conflit entre les critères ». Pages 15 à 17.",
+    "Ce que Jacques Pasquier-Dorthe a apporté à cette présentation reste inconnu : l’article ne lui attribue aucun résultat, et ses travaux répertoriés ailleurs ne portent ni sur Arrow, ni sur Raynaud, ni sur la décision multicritère."
+  ]
+}

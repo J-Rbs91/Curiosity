@@ -504,3 +504,595 @@ autant qu'un balayage — il a été trouvé en cherchant l'auteur déjà connu 
 Archive pour vérifier l'accès du candidat 1, pas en cherchant une littérature du périmètre pour
 elle-même. C'est une variante du risque que le périmètre nomme : ne pas confondre un candidat
 riche trouvé par accident heureux avec un balayage systématique des huit littératures.
+
+---
+
+# Reprise du 8 septembre 2026
+
+Balayage dédié aux deux angles morts déclarés par la cartographie du 23 août 2026 et par
+`corpus/perimeter.md` : le jugement de probabilité pris dans son détail (disponibilité,
+représentativité) au-delà du legs déjà instruit, et la valeur de l'information. Ajout d'une
+troisième reprise, si le temps le permettait : Newell (1969), déjà « ni confirmé ni infirmé »
+au 23 août.
+
+## Note méthodologique — outils, budget, ce qui a permis de trancher
+
+Le serveur MCP `documentary` était en échec de connexion (`CONNECTION_CLOSED`) pendant toute
+cette session, comme annoncé : aucun outil `mcp__documentary__*` exposé, aucune tentative
+faite. Travail fait par `curl` direct contre `archive.org/advancedsearch.php` et
+`archive.org/metadata`, Crossref (`api.crossref.org/works/<doi>`), Unpaywall
+(`api.unpaywall.org/v2/<doi>`), l'API Semantic Scholar Graph en accès direct (non listée comme
+outil MCP, mais son point d'entrée REST public a répondu), `WebSearch`/`WebFetch` pour la
+détection et la résolution de miroirs (jamais retenus comme preuve sans un GET réel derrière),
+et l'API HAL (`api.archives-ouvertes.fr/search`).
+
+**Un point de méthode central à ce passage** : deux fichiers PDF ont été téléchargés et lus en
+substance, pas seulement constatés par leur code HTTP. `poppler-utils` n'était pas installé sur
+l'environnement (`pdftotext`, `pdftoppm` absents, l'installation par `apt-get` a échoué avec un
+404 sur le miroir de sécurité Ubuntu) ; `pdfminer.six` a été installé par `pip
+--break-system-packages` après réparation d'une dépendance cassée (`_cffi_backend` manquant,
+résolu par réinstallation de `cffi`). Cette extraction de texte a permis de vérifier, page par
+page, que le fichier ouvert est bien le texte annoncé, et non une page d'erreur ou un document
+homonyme — c'est ce contrôle qui a permis de conclure « accès confirmé » plutôt que « code 200
+obtenu », qui ne dit rien du contenu.
+
+Budget réseau tenu : de l'ordre de 35 requêtes HTTP au total sur cette session (recherches
+`advancedsearch.php` comprises), réparties sur cinq candidats. Aucun défi anti-robot rencontré
+cette fois (à la différence des passages précédents sur Project Euclid et rairo-ro.org) ; un
+seul mur constaté, Cloudflare sur academia.edu, non contourné.
+
+## Candidats retenus — accès confirmé par lecture réelle
+
+### 1. Tversky, A. & Kahneman, D. (1973). « Availability: A Heuristic for Judging Frequency and Probability »
+
+```
+CANDIDAT        : L'heuristique de disponibilité / Availability heuristic
+AUTEUR(S)       : Amos Tversky et Daniel Kahneman, coécriture. Aucun tiers n'a popularisé ou
+                  forgé le terme : l'article introduit lui-même le mot « availability » comme
+                  nom du mécanisme qu'il décrit (« a judgmental heuristic in which a person
+                  evaluates the frequency of classes or the probability of events by
+                  availability »).
+PÉRIMÈTRE       : dedans. Le périmètre de `decision-science` nomme explicitement « le jugement
+                  de probabilité et ses écarts systématiques » comme littérature à couvrir ;
+                  l'article est le texte fondateur de l'un des deux mécanismes cités par nom
+                  dans le brief de reprise.
+SOURCE PRIMAIRE : Tversky, A. & Kahneman, D. (1973). « Availability: A Heuristic for Judging
+                  Frequency and Probability ». Cognitive Psychology, 5(2), 207-232.
+                  DOI 10.1016/0010-0285(73)90033-9 (résolu par Crossref, titre et container
+                  confirmés). Localisation présumée : aucune version institutionnelle
+                  d'éditeur ouverte (voir ACCESSIBILITÉ).
+SECONDAIRE      : ABSENTE — non cherchée dans ce passage, faute de temps après la vérification
+                  d'accès primaire. À faire au prochain passage.
+FRANCOPHONE     : cherchée, rien trouvé. HAL interrogé sur « heuristique disponibilité »
+                  (2 mots exacts, conforme à la contrainte HAL) : 56 résultats, aucun
+                  pertinent (fiabilité industrielle, logistique — l'homonymie du mot
+                  « disponibilité » domine la base côté français). Aucune reformulation
+                  testée par manque de temps.
+SIGNAL          : Risque de doublon moyen avec `heuristiques-de-jugement`, déjà validée et
+                  fondée sur la synthèse de 1973/1974 (rapport ONR AD0767426 / Science 1974),
+                  qui mentionne la disponibilité en une quinzaine de lignes parmi trois
+                  heuristiques. Ce texte-ci est un traitement complet et distinct, sur 26
+                  pages, consacré à la seule disponibilité : l'expérience sur la fréquence
+                  perçue des mots selon leur première lettre, l'imaginabilité des combinaisons,
+                  et surtout la corrélation illusoire, absents de la citation déjà publiée. Un
+                  lecteur primaire devra établir une citation qui porte sur ce contenu propre
+                  et non sur la thèse générale déjà instruite. **Correction à verser au dossier
+                  du domaine** : la note de bas de page de l'article (lue en substance, voir
+                  ci-dessous) dément l'hypothèse du brief de reprise selon laquelle ce texte et
+                  le rapport ONR AD0767426 « sortent du même contrat ». Le financement déclaré
+                  ici est « NSF grant GB-6782, ... grant MH 12972 from the National Institute
+                  of Mental Health and Grants 5 SO1 RR 05612-03 and RR 05612-04 from the
+                  National Institute of Health to the Oregon Research Institute » : aucune
+                  mention d'ONR ni d'ARPA. C'est cohérent avec l'échec de toute recherche de
+                  rapport technique DTIC précurseur (voir plus bas) : cet article n'a
+                  probablement jamais existé sous cette forme, faute de financement militaire
+                  à en rendre compte.
+ACCESSIBILITÉ   : texte intégral, lu en substance (première et dernière page extraites et
+                  confirmées mot pour mot contre la version de référence). Voie retenue :
+                  `https://noorsiddiqui.com/papers/TverskyKahneman.pdf`, `HTTP 200`, PDF de
+                  1,69 Mo, 26 pages correspondant exactement à la pagination imprimée 207-232.
+                  **Réserve honnête sur la classe de source** : c'est un site personnel tiers
+                  sans affiliation académique déclarée, la même classe que le miroir écarté
+                  pour Bainbridge en `human-factors` — sauf qu'ici rien n'indique un refus de
+                  droits de l'auteur, et le fichier s'est ouvert sans mur d'aucune sorte. Une
+                  seconde voie a été trouvée et testée sans être retenue comme preuve de
+                  contenu : `https://people.umass.edu/~biep540w/pdf/Tversky%20availability.pdf`
+                  (page de cours UMass, `HTTP 200`, PDF de 1,05 Mo, 16 pages), mais ce fichier
+                  est un scan sans couche OCR ; sa pagination (16 pages) ne correspond pas à
+                  l'originale (26 pages), et son contenu n'a donc **pas** été confirmé — à
+                  vérifier avant tout usage, pas à écarter.
+                  **Recherche de rapport technique précurseur, testée et négative** : trois
+                  stratégies de recherche distinctes sur `archive.org/advancedsearch.php`,
+                  collection `dticarchive` — par titre (« availability », « judging frequency »,
+                  « frequency and probability »), par sujet (`subject:"Tversky, Amos"`,
+                  `subject:"Kahneman, Daniel"`, `subject:"OREGON RESEARCH INST EUGENE"`), et par
+                  numéro de contrat (`N00014-73-C-0438` et sa variante sans tiret) — n'ont
+                  rendu aucun item daté de 1972 ou 1973 correspondant à ce texte. Le plus ancien
+                  item de la collection portant Tversky ou Kahneman en sujet reste le legs déjà
+                  connu, `DTIC_AD0767426` (août 1973). C'est cohérent avec la note de
+                  financement ci-dessus : ce texte n'est pas de la littérature grise militaire.
+CITABLE         : oui, en anglais, sur le texte confirmé (noorsiddiqui.com). Aucune traduction
+                  française publiée identifiée dans ce passage.
+```
+
+### 2. Kahneman, D. & Tversky, A. (1972). « Subjective Probability: A Judgment of Representativeness »
+
+```
+CANDIDAT        : L'heuristique de représentativité / Representativeness heuristic
+AUTEUR(S)       : Daniel Kahneman et Amos Tversky, coécriture (ordre des noms inversé par
+                  rapport à l'article de 1973, vérifié sur la page de titre elle-même).
+PÉRIMÈTRE       : dedans, même clause du périmètre que le candidat 1 : le jugement de
+                  probabilité et ses écarts systématiques.
+SOURCE PRIMAIRE : Kahneman, D. & Tversky, A. (1972). « Subjective Probability: A Judgment of
+                  Representativeness ». Cognitive Psychology, 3(3), 430-454.
+                  DOI 10.1016/0010-0285(72)90016-3 (résolu par Crossref).
+SECONDAIRE      : ABSENTE — non cherchée, même réserve que le candidat 1.
+FRANCOPHONE     : cherchée, rien trouvé. HAL interrogé sur « heuristique représentativité »
+                  (2 mots exacts) : 10 résultats, aucun pertinent (comptabilité mentale,
+                  sociologie des médias — un seul résultat effleure le vocabulaire sans porter
+                  sur le texte).
+SIGNAL          : Même risque de doublon moyen avec `heuristiques-de-jugement` que le
+                  candidat 1, et pour la même raison structurelle : ce texte est le traitement
+                  complet et original de la représentativité (25 pages), avec la loi des petits
+                  nombres, l'insensibilité à la taille de l'échantillon, les méconceptions de la
+                  régression vers la moyenne — un contenu empirique distinct de la citation déjà
+                  publiée. **Même correction à verser au dossier** : la note de financement,
+                  lue en substance sur la première page, cite « a grant of the Research and
+                  Development Authority of the Hebrew University, ... by NSF Grant GM 6782 to
+                  the second author, and by the U.S. Public Health Service through Grant
+                  MH-04439 to Oregon Research Institute » — ni ONR ni ARPA, comme pour le
+                  candidat 1. Les deux articles de 1972 et 1973 partagent donc le laboratoire
+                  d'accueil (Oregon Research Institute) et une partie de leurs bailleurs, mais
+                  **pas** le contrat militaire du rapport de synthèse de 1973 : l'hypothèse
+                  inverse, écrite dans le brief de reprise, ne tient pas sur pièce.
+ACCESSIBILITÉ   : texte intégral, lu en substance (première page extraite et confirmée mot
+                  pour mot ; titre, auteurs, revue, tomaison exacts). Voie retenue :
+                  `https://pages.ucsd.edu/~cmckenzie/Kahneman%26Tversky1972CogPsych.pdf`,
+                  `HTTP 200`, PDF de 1,58 Mo, 25 pages correspondant exactement à la pagination
+                  imprimée 430-454. **Classe de source plus solide que le candidat 1** : la
+                  page appartient à Craig McKenzie, professeur de psychologie et de gestion à
+                  UC San Diego dont le champ de recherche déclaré est précisément le jugement
+                  et la décision (vérifié par recherche web sur son profil UCSD et sa page de
+                  cours « Psychology 237: Human Rationality »), qui héberge ce fichier comme
+                  lecture de cours sur sa page personnelle institutionnelle — la même classe de
+                  source que le fonds d'archives CMU déjà retenu pour Newell, Shaw & Simon
+                  1958 dans ce même document.
+                  **Recherche de rapport technique précurseur, testée et négative** : mêmes
+                  trois stratégies que pour le candidat 1 (titre « representativeness » sur
+                  `dticarchive` : 6 résultats, tous étrangers au texte, le plus proche étant
+                  « Judgments of and by Representativeness », `DTIC_ADA099502`, 1981, un article
+                  distinct et postérieur ; sujet Kahneman/Tversky : rien avant août 1973 ;
+                  numéro de contrat : sans objet, ce texte n'étant pas financé par l'ONR). Même
+                  conclusion que le candidat 1.
+CITABLE         : oui, en anglais, sur le texte confirmé. Aucune traduction française publiée
+                  identifiée.
+```
+
+## Candidat cherché et écarté à ce stade — aucune source primaire atteignable
+
+### 3. Howard, R. A. (1966). « Information Value Theory »
+
+```
+CANDIDAT        : La théorie de la valeur de l'information / Information Value Theory
+AUTEUR(S)       : Ronald A. Howard, seul auteur.
+PÉRIMÈTRE       : dedans. Nommément cité par `corpus/perimeter.md` sous « l'aide à la décision
+                  comme méthode… valeur de l'information ».
+SOURCE PRIMAIRE : ABSENTE. Howard, R. A. (1966). « Information Value Theory ». IEEE
+                  Transactions on Systems Science and Cybernetics, 2(1), 22-26.
+                  DOI 10.1109/tssc.1966.300074 (résolu par Crossref). **Fermé, testé sur quatre
+                  fronts, aucun n'a cédé** :
+                  - Unpaywall (`api.unpaywall.org/v2/10.1109/tssc.1966.300074`) : `is_oa: false`,
+                    `best_oa_location: null`.
+                  - Semantic Scholar Graph API (accès REST direct, hors outil MCP) :
+                    `isOpenAccess: false`, `openAccessPdf.status: CLOSED`.
+                  - IEEE Xplore : non tenté par requête directe, le DOI résolvant vers un mur de
+                    paiement documenté par les deux bases ci-dessus ; inutile de le repayer.
+                  - Un exemplaire trouvé sur Scribd (`scribd.com/document/320139530/...`) répond
+                    `HTTP 200` sur la page de présentation, mais le téléchargement du document
+                    complet demande un compte : **non emprunté**, conformément à la règle
+                    d'accès du domaine.
+                  Recherche de rapport technique précurseur à Stanford, trois stratégies sur
+                  `dticarchive` : titre (« information value », « value of information ») —
+                  aucun résultat de 1965-1966 pertinent ; sujet (`subject:"Howard, Ronald"`) —
+                  cinq résultats, tous datés 1973-1980 et tous intitulés « The Theory and
+                  Application of Decision Analysis », aucun sous le titre ou le contenu de la
+                  théorie de 1966.
+SECONDAIRE      : ABSENTE — non cherchée dans ce passage.
+FRANCOPHONE     : cherchée, rien trouvé (recherche limitée à la vérification que le texte lui-
+                  même ne circule pas en traduction ; pas de balayage francophone dédié à ce
+                  concept faute de temps).
+SIGNAL          : **Piste de secours trouvée mais non retenue comme candidat de substitution.**
+                  Howard, R. A. (1973). « The Theory and Application of Decision Analysis ».
+                  Rapport ARPA/ONR, Stanford University, contrat N00014-67-A-0012-0077.
+                  Internet Archive, identifiant `DTIC_AD0771699`, `access-restricted-item`
+                  absent (vérifié), `HTTP 200` sur le téléchargement du texte OCR
+                  (`_djvu.txt`, 15 Ko), lu en entier : c'est un rapport d'avancement de six mois
+                  sur un programme de recherche en analyse de décision dirigé par Howard, qui
+                  discute des prolongements de calculs de valeur de l'information (information
+                  séquentielle, quantification des variables d'état) mais **n'expose pas** la
+                  théorie de 1966 elle-même — ni sa définition de la valeur de la clairvoyance,
+                  ni sa dérivation. Ce n'est donc pas un rapport précurseur du texte cherché,
+                  mais un texte distinct, plus tardif, du même auteur sur un sujet voisin :
+                  signalé pour qu'un futur passage sache qu'il existe et sache aussi qu'il ne
+                  suffit pas à instruire ce concept précis. **Ne pas le proposer comme
+                  substitut sans une lecture complète établissant qu'il porte, lui aussi, une
+                  définition citable de la valeur de l'information.**
+ACCESSIBILITÉ   : métadonnées seules pour le texte de 1966 lui-même.
+CITABLE         : non, dans ce passage. Le rapport de secours (candidat 8bis, non instruit)
+                  serait citable en anglais s'il était un jour retenu, mais sur un objet
+                  différent de la théorie de 1966.
+```
+
+## Candidat retenté et toujours non résolu
+
+### 4. Newell, A. (1969). « Heuristic Programming: Ill-Structured Problems »
+
+```
+CANDIDAT        : Newell, A. (1969). « Heuristic Programming: Ill-Structured Problems ». Dans
+                  J. S. Aronofsky (dir.), Progress in Operations Research, vol. III, Wiley,
+                  p. 360-414 (pagination trouvée cette fois par recherche croisée, absente du
+                  passage du 23 août).
+PÉRIMÈTRE       : dedans, littérature « représentation du problème avant sa résolution »,
+                  la moins bien servie du domaine (voir cartographie du 23 août).
+SOURCE PRIMAIRE : ABSENTE, toujours. `https://digitalcollections.library.cmu.edu/node/19441`
+                  retenté par deux méthodes indépendantes cette nuit, en plus des quatre
+                  tentatives déjà consignées le 23 août :
+                  - `curl` direct : échec de négociation TLS, alerte « unknown CA » côté
+                    serveur distant (pas une erreur du proxy de l'environnement, le tunnel
+                    CONNECT s'établit normalement puis le certificat présenté par le serveur
+                    CMU est refusé) — signature d'erreur différente du 503 déjà rencontré,
+                    cohérente avec la remarque du 23 août sur « un échec de certificat TLS
+                    distinct du proxy ».
+                  - `WebFetch` (deux appels séparés) : `HTTP 503 Service Unavailable` à chaque
+                    fois.
+                  Total cumulé sur les deux nuits : six tentatives indépendantes, zéro succès.
+                  Wayback Machine interrogé (`archive.org/wayback/available`) : aucun instantané
+                  archivé de cette URL, `HTTP 200` sur la requête elle-même mais
+                  `archived_snapshots: {}`.
+SECONDAIRE      : ABSENTE.
+FRANCOPHONE     : non cherchée (texte anglophone, pas de traduction attendue).
+SIGNAL          : **Deux voies alternatives explorées et écartées, pas simplement non
+                  essayées.** `mat.tepper.cmu.edu/classes/mstc/heurnote/node2.html`, trouvée
+                  par recherche web comme évoquant le même auteur et le même vocabulaire, a été
+                  ouverte (`HTTP 200`) et lue : c'est une note de cours CMU Tepper intitulée
+                  « Heuristics for Consultants », convertie de LaTeX en HTML en 1996, qui ne
+                  reproduit pas le chapitre de Newell — un texte pédagogique distinct sur un
+                  sujet voisin, pas une source. Le lien `l3d.cs.colorado.edu/~haleden/refbase/…`
+                  trouvé par ailleurs est mort (`HTTP 404`). **Le texte reste au même état
+                  qu'au 23 août : ni confirmé ni infirmé**, et la page CMU semble en panne
+                  réelle plutôt que protégée, ce qui laisse une chance à une nouvelle tentative
+                  ultérieure, mais rien ne permet de dire quand.
+ACCESSIBILITÉ   : inconnue, page toujours inaccessible par toute voie testée.
+CITABLE         : impossible à établir dans ce passage.
+```
+
+## Vérification de non-doublon
+
+Les deux identifiants proposés — `heuristique-de-disponibilite`, `heuristique-de-representativite`
+— confrontés à `corpus/validated/` par recherche de motif (`disponibil`, `representativ`,
+`information`, `petit-nombre`, `ill-structure`, `mal-structure`, `howard`) : aucune collision
+d'identifiant ni de slug. Le seul résultat voisin, `disponibilite-operationnelle.json`, porte sur
+un tout autre concept (disponibilité d'un système au sens de la sûreté de fonctionnement, hors
+domaine). Le risque réel, comme au 23 août, n'est pas lexical mais **conceptuel** : les deux
+candidats retenus recoupent l'objet de `heuristiques-de-jugement`, déjà validée dans ce domaine,
+et c'est signalé en toutes lettres dans le champ SIGNAL de chacun plutôt que tranché ici — la
+décision de fusion, de partage ou d'abandon revient à l'instruction, pas à la cartographie,
+exactement comme pour les candidats 10/11 du 23 août.
+
+## Ce que ce passage corrige au passage précédent
+
+Le brief de cette reprise supposait que les articles de 1972 et 1973 « sortent du même
+laboratoire et du même contrat » que le rapport ONR de synthèse déjà instruit
+(`DTIC_AD0767426`, contrat N00014-73-C-0438). **La lecture réelle des deux textes dément la
+seconde moitié de cette hypothèse** : même laboratoire d'accueil (Oregon Research Institute),
+mais des bailleurs distincts et non militaires (NSF, NIMH, NIH, Hebrew University) pour les deux
+articles de revue. C'est cohérent avec l'absence totale de rapport technique DTIC précurseur
+trouvée par six requêtes indépendantes sur les deux textes : il n'y a probablement rien à
+trouver par cette voie, parce que ces deux textes n'ont jamais été de la littérature grise
+militaire. **C'est un résultat à écrire, pas un manque de méthode** : la voie qui a servi trois
+fois sur ce domaine (rapport ONR/ARPA/RAND miré sur `dticarchive`) ne s'applique pas
+uniformément à tout ce qui touche Kahneman et Tversky, et il ne faut pas la retenter une
+quatrième fois sur ces deux titres précis.
+
+---
+
+# Reprise francophone du 8 septembre 2026
+
+Balayage dédié à l'angle mort déclaré par la cartographie du 23 août 2026 : couche
+francophone non balayée en parallèle (Persée interrogé une fois sans exploitation des
+résultats, OpenEdition Books jamais atteint, theses.fr interrogé une fois, HAL absent du
+compte rendu), et l'échec documenté sur Sfez, *Critique de la décision* (1973), à retenter
+par d'autres voies.
+
+## Note méthodologique — outils et budget
+
+Le serveur MCP `documentary` est resté en échec de connexion (`CONNECTION_CLOSED`) pendant
+toute cette session : aucun outil `mcp__documentary__*` n'était exposé. Travail fait par
+`WebSearch`, `WebFetch`, `curl` direct contre Persée, HAL (API `search`), OpenEdition
+Books (pages de collection HTML statiques), theses.fr, Numdam, Crossref et Unpaywall.
+Chaque accès est un GET réel, dont le code de retour est consigné ci-dessous. Ce fichier est
+écrit par éditions successives au fil de la recherche, pas en une seule passe finale.
+
+
+## Persée retenté — les quatre pistes laissées non exploitées le 23 août sont résolues
+
+La cartographie du 23 août consignait quatre identifiants tronqués (`pomap_0758`, `sciso_1168`,
+`rfg_0338`, `barb_0001`) issus d'une seule requête large (« aide multicritère décision »,
+« Sfez decision ») sur `https://www.persee.fr/search?ta=article&q=...`, jamais ouverts. Cette
+requête a été rejouée (`GET https://www.persee.fr/search?ta=article&q=aide+multicrit%C3%A8re+d%C3%A9cision`,
+`HTTP 200`) : elle résout en six URLs de documents complètes. Les six ont été ouvertes
+(`GET /doc/<id>`, `HTTP 200` à chaque fois) et leurs métadonnées `citation_*` lues. Deux sont
+des comptes rendus d'ouvrage (secondaires, non retenues comme candidates) ; les quatre autres
+se répartissent en trois candidats retenus ci-dessous et un écarté.
+
+- `pomap_0758-1726_1986_num_4_3_1906_t1_0138_0000_1` — Nicolas Danila, compte rendu de Roy, B.,
+  *Méthodologie multicritère d'aide à la décision* (Economica, 1985), *Politiques et Management
+  Public*, 4(3), p. 138-140. **Secondaire, non retenu comme candidat** : c'est un compte rendu,
+  jamais la voix de l'auteur, exactement le type de source que le périmètre écarte comme preuve
+  primaire. Utile seulement pour confirmer l'existence du livre de 1985, qui reste fermé (non
+  trouvé en ligne dans cette session).
+- `rfg_0338-4551_1986_num_55_1_2572_t1_0149_0000_3` — Alain-Charles Martinet, compte rendu de
+  Saaty, T. L., *Décider face à la complexité* (Entreprise moderne d'édition), *Revue Française
+  de Gestion*, 55(1), p. 149-150. **Secondaire, non retenu.** Même réserve ; de plus Saaty est
+  anglophone (AHP), la traduction française n'est qu'un objet éditorial, pas un texte français
+  d'origine.
+- `pomap_0758-1726_1992_num_10_1_3041` — Med Nakhla, « Quelle aide à la gestion en univers
+  administratif ? », *Politiques et Management Public*, 10(1), p. 117-132. **Ouvert et lu**
+  (`GET renderPage`, `HTTP 200`, page 117 lue en image). **Écarté** : l'objet est un dispositif
+  de pilotage comptable et de contrôle de gestion d'un service de collecte de sang hospitalier
+  (« segmentation des activités par rapport aux préoccupations de rentabilité »), donc un
+  problème de gestion et de dimensionnement, non une opération de choix. Relève, si un jour
+  instruit, de `operations-management` (fermé) selon la frontière que ce périmètre écrit
+  lui-même (« l'ordonnancement, le dimensionnement et l'arbitrage de coût comme problème de
+  gestion ») — **consigné en angle mort vers ce domaine**, pas en rejet.
+
+Les trois candidats retenus sont numérotés 12 à 14 ci-dessous, à la suite des candidats 1-11 du
+23 août. Un quatrième (15) est trouvé par une voie distincte (HAL) et flagué.
+
+### 12. Vincke, Ph. (1991). « L'aide multicritère à la décision. Historique et développements récents »
+
+*Bulletin de la Classe des sciences* [Académie royale de Belgique], 5e série, tome 2, fasc. 1-6,
+p. 147-151. DOI 10.3406/barb.1991.38652 (résolu et confirmé sur Crossref : auteur, titre,
+container-title, pagination, année 1991 tous concordants). C'est le résumé, rédigé par l'auteur
+lui-même (note de bas de page 1 : « Le texte qui suit est le résumé de l'exposé »), d'une
+communication faite à l'Académie royale de Belgique par Philippe Vincke, professeur à
+l'Université Libre de Bruxelles — l'un des grands noms de l'école européenne d'aide multicritère,
+coauteur avec Roy et Bouyssou de manuels de référence du champ.
+
+- **Accès** : Persée, `renderPage`, cinq pages image (0147 à 0151) toutes servies en
+  `HTTP 200` (une page, 0148, a nécessité une nouvelle tentative après un `Recv failure:
+  Connection reset by peer` — l'anomalie de cache déjà documentée par le lot du 23 août ; la
+  deuxième requête a abouti). **Texte intégral lu en entier, les cinq pages**, aucune n'a été
+  sautée. Pas de PDF tenté (`docAsPDF` est derrière l'altcha non résolu, conformément à la
+  règle) ; les images suffisent et sont d'excellente lisibilité.
+- **Ce que le texte porterait** : c'est un texte court qui nomme et articule ce que la carte
+  `classement-multicritere-electre` (Roy 1968) ne couvre pas et signale elle-même comme absent
+  de sa source (voir `notes` de cette carte : « le mot “incomparabilité” ne figure pas dans
+  l'article »). Vincke y écrit noir sur blanc, p. 148 : « Le concept de solution optimale n'a
+  donc pas de sens dans un contexte multicritère » — puis p. 149, en discutant la structure de
+  préférence sous-jacente à toute méthode multicritère : « Le relâchement progressif de ces
+  hypothèses, et la prise en compte de situations plus complexes (présence d'incomparabilités,
+  de plusieurs degrés de préférence, de seuils, d'incertitudes ou d'imprécision...) ont fait et
+  font encore l'objet de nombreuses recherches. » C'est exactement l'objet que le périmètre
+  nomme pour la couche francophone : « l'incomparabilité, ce qu'une méthode refuse d'agréger ».
+  Le texte distingue aussi trois familles de méthodes (utilité multiattribut, surclassement,
+  méthodes interactives) et situe la théorie du choix social d'Arrow comme voisine et non
+  identique à l'aide multicritère — un bon point de jonction avec le candidat 2 du 23 août
+  (Arrow 1948) et avec le candidat 14 ci-dessous.
+- **Identifiant proposé** : `incomparabilite-en-aide-multicritere`.
+- **Vérification de non-doublon** : confronté aux 129 identifiants de `corpus/validated/`
+  (liste relue en entier) et aux dix candidats francophones/anglophones déjà proposés dans ce
+  fichier. Aucune collision de nom. Sur le fond : distinct de `classement-multicritere-electre`
+  par l'objet (l'incomparabilité comme relâchement théorique d'une hypothèse de modélisation des
+  préférences, pas la construction d'un classement par surclassement) et par le texte
+  (Vincke 1991, pas Roy 1968) — deux voix de la même école, pas un doublon de fond.
+- **Accessibilité** : texte intégral, français, aucune traduction nécessaire. Passage court et
+  autonome directement citable (« Le concept de solution optimale n'a donc pas de sens dans un
+  contexte multicritère » tient sous 150 caractères).
+
+### 13. Pasquier-Dorthe, J. & Raynaud, H. (1995). « Un outil d'aide à la décision multicritère »
+
+*Revue Française de Gestion*, n° 106, novembre-décembre 1995, p. 11-21. Pas de DOI déposé sur
+Persée pour cet article (vérifié : aucune balise `citation_doi` dans la page, contrairement à
+d'autres pièces du même fascicule) ; identifiant retenu, l'URL Persée elle-même :
+`https://www.persee.fr/doc/rfg_0338-4551_1995_num_106_1_6849`.
+
+- **Accès** : Persée, `renderPage`, pages 0011 et 0012 lues en image, toutes deux `HTTP 200`.
+  Chapeau de l'article (en italique, p. 11) : « Comment aborder le problème de la décision en
+  matière de gestion quand celle-ci doit être fondée sur des critères multiples et
+  contradictoires ? Kenneth Arrow, prix Nobel d'économie en 1972, et Hervé Raynaud ont créé un
+  outil d'aide à la décision multicritère, fondé sur une approche axiomatique, que présentent ici
+  les auteurs. »
+- **Ce que le texte porterait** : la présentation, par l'un de ses deux auteurs (Raynaud), de
+  l'« approche axiomatique Arrow-Raynaud » — une méthode d'aide multicritère fondée non sur la
+  relation de surclassement (Roy/ELECTRE) mais sur l'extension du théorème d'impossibilité
+  d'Arrow et des axiomes de choix majoritaire de K. O. May (1952, cité en note p. 12) à la
+  comparaison pondérée de plusieurs critères. Le texte développe un exemple pédagogique complet
+  (un jury de recrutement universitaire comparant sept candidats sur cinq critères pondérés,
+  tableaux 1 et 2 lus p. 12) : exactement le type de mécanisme « reconnaissable dans un arbitrage
+  que le lecteur a lui-même à rendre » qu'exige le test d'entrée. C'est un pont direct entre la
+  littérature « décision collective et vote » (déjà représentée par le seul candidat 2, Arrow
+  1948, anglophone) et la littérature « aide à la décision comme méthode » — la double lacune que
+  la cartographie du 23 août signalait elle-même dans ses angles morts.
+- **Identifiant proposé** : `approche-axiomatique-arrow-raynaud`.
+- **Vérification de non-doublon** : aucune collision de nom dans `corpus/validated/`. Sur le
+  fond : distinct de `classement-multicritere-electre` par la méthode elle-même (comparaison par
+  paires et matrice d'intensité de préférence dérivée du choix majoritaire, pas relation de
+  surclassement à seuils de concordance/discordance) et par les auteurs (Raynaud, pas Roy).
+  Distinct aussi du candidat 2 du 23 août (Arrow 1948) par l'objet : Arrow 1948 démontre
+  l'impossibilité, ce texte-ci construit un outil opérationnel qui en hérite pour un problème
+  multicritère de gestion — la source, pas la démonstration.
+- **Accessibilité** : texte intégral, français. Passage court et autonome atteignable dans le
+  chapeau de présentation (cité ci-dessus) ou dans l'exemple pédagogique.
+
+### 14. Boulaire, C., Landry, M. & Martel, J.-M. (1996). « L'outil quantitatif dans l'aide à la décision. La réalité d'un mythe »
+
+*Sciences de la Société*, n° 39, octobre 1996, p. 87-105. DOI 10.3406/sciso.1996.1298 (résolu et
+confirmé sur Crossref : trois auteurs, titre, container-title, pagination 87-105, année 1996 tous
+concordants).
+
+- **Accès** : Persée, `renderPage`, pages 0087 et 0088 lues en image, toutes deux `HTTP 200`.
+- **Ce que le texte porterait** : une critique du présupposé selon lequel l'outil quantitatif
+  d'aide à la décision se contenterait de révéler un problème préexistant et objectif. Lu p. 88 :
+  « Dans ce cadre, un problème réfère à quelque chose qui existe en dehors de tout individu et
+  dont chacun peut faire objectivement la même lecture » — c'est la thèse que les auteurs nomment
+  « la vision classique » et qu'ils annoncent vouloir déconstruire (« Il existe encore un mythe
+  entourant l'usage de l'outil quantitatif, mythe entretenu par la vision classique de l'aide à la
+  décision en recherche opérationnelle »). C'est, mot pour mot, l'objet que le périmètre assigne au
+  troisième camp francophone : une aide multicritère « qui s'est constituée en contestant qu'un
+  problème de choix soit donné avant d'être construit ». Les auteurs citent explicitement Roy
+  (1985) à l'appui d'un déplacement du vocabulaire de « décideurs » vers « acteurs », et annoncent
+  une discussion de la dimension politique de l'usage des outils quantitatifs. Seules les deux
+  premières pages ont été lues dans cette session (l'article en fait 19) ; la thèse d'ouverture est
+  cependant nette et autonome.
+- **Identifiant proposé** : `mythe-de-l-outil-quantitatif`.
+- **Vérification de non-doublon** : aucune collision de nom. Sur le fond : distinct de
+  `critique-de-l-utilite-esperee-subjective` (Shafer, dans le recueil de 1988 déjà candidat) qui
+  attaque l'axiomatique normative du choix individuel sous risque ; ce texte-ci attaque le
+  présupposé objectiviste du problème lui-même dans l'usage de l'outil quantitatif en gestion,
+  un objet voisin mais non superposable, et surtout la seule voix trouvée dans ce passage qui
+  discute le constructivisme du problème plutôt que l'axiomatique de la solution. **Réserve à
+  vérifier avant instruction** : seules deux pages sur dix-neuf ont été lues ; un lecteur primaire
+  devra confirmer que la suite tient la thèse annoncée plutôt que de retomber dans une simple
+  défense technique de l'outil.
+- **Accessibilité** : texte intégral (au moins les deux premières pages confirmées ; le reste de
+  l'article n'a pas été rouvert faute de temps dans cette session, mais rien n'indique qu'il serait
+  fermé — même voie Persée, même volume), français.
+
+## Un quatrième candidat trouvé par HAL, et flagué plutôt que retenu
+
+### 15. Plottu, E. (2001). « Aide multicritère à la décision et développement durable du territoire : de la relation d'incomparabilité à l'intégration d'un objectif de préservation de la liberté de choix au sein de la théorie de la décision »
+
+Chapitre dans Colorni, A., Paruccini, M. & Roy, B. (dir.), *A-MCD-A : Aide Multi Critère à la
+Décision / Multiple Criteria Decision Aiding*, Office des publications officielles des
+Communautés européennes (Joint Research Centre), ISBN 92-894-0994-0, 2001, p. 257-272. **Bernard
+Roy y est coéditeur**, ce qui rattache le volume directement à l'école déjà instruite par le
+candidat 9 du 23 août.
+
+- **Accès** : trouvé par `GET https://api.archives-ouvertes.fr/search/?q=incomparabilité`
+  (`HTTP 200`, 19 résultats), notice HAL `hal-01061339`, PDF `HTTP 200`
+  (`https://hal.science/hal-01061339/document`, 17 pages, dépôt autorisé par l'auteur —
+  `docType_s: COUV`, chapitre d'ouvrage). **Piège rencontré** : le texte n'a pas de couche OCR
+  au-delà de la page de garde HAL (confirmé par extraction : `pdfminer` ne rend que 1 395
+  caractères, le reste étant des sauts de page vides `\x0c`) — c'est un scan image pur, comme les
+  volumes Internet Archive du lot du 23 août. **Contourné légitimement, pas par un défi
+  anti-robot** : les pages ont été rendues en image avec `pymupdf` (bibliothèque déjà présente
+  dans l'environnement) à partir du PDF déjà téléchargé légitimement, puis lues à l'image. Trois
+  pages lues (257 explicitement absente de la lecture, 258 à 260 lues).
+- **Ce que le texte porterait** : l'auteur propose d'utiliser la notion d'incomparabilité au sens
+  multicritère pour caractériser et mesurer la « variété interne d'un domaine de choix », afin de
+  fonder un critère de préservation de la liberté de choix comme fin en soi, hors du cadre
+  conséquentialiste et utilitariste standard (contre l'« utilité indirecte » d'Arrow, 1995, citée
+  et discutée p. 258). C'est un usage réel et original de l'incomparabilité — distinct du candidat
+  12 (Vincke, qui la nomme sans l'opérationnaliser) — mais **le risque de périmètre est réel et
+  explicite** : le périmètre écarte en rejet direct « le libre choix comme thèse politique ou
+  morale », et ce texte défend justement la liberté de choix comme valeur intrinsèque à intégrer
+  au calcul économique. La ligne de défense pour l'inclusion serait que le texte propose un
+  **mécanisme opératoire** (une mesure fondée sur l'incomparabilité) plutôt qu'une thèse
+  seulement politique ; mais cette ligne n'a pas été éprouvée par une lecture complète (14 pages
+  sur 17 non lues dans cette session), et c'est exactement le type de jugement qu'un lecteur
+  primaire doit trancher, pas un scout. **Signalé, non retenu comme candidat ferme.**
+- **Identifiant provisoire, à confirmer seulement après lecture complète et arbitrage de
+  périmètre** : `incomparabilite-et-liberte-de-choix`.
+- **Vérification de non-doublon** : aucune collision de nom avec `corpus/validated/`. Risque de
+  fond à trancher avant tout : chevauchement possible avec le rejet direct du périmètre plutôt
+  qu'avec une carte existante.
+- **Accessibilité** : texte intégral (image, pas d'OCR), français.
+
+
+## Sfez, *Critique de la décision* (1973) — retenté par quatre voies nouvelles, toujours fermé
+
+L'angle mort déclaré le 23 août reste un angle mort, mais il est mieux cerné : quatre voies
+nouvelles ont été essayées cette nuit, en plus des quatre déjà documentées (HAL, theses.fr,
+Internet Archive, recherche web générale), et aucune n'a rendu le texte de 1973 ni sa
+réédition aux Presses de la FNSP.
+
+- **OpenEdition Books, la voie prioritaire nommée par le périmètre, ne rend pas de moteur de
+  recherche exploitable par requête directe.** `GET https://books.openedition.org/?q=Sfez+décision`
+  (`HTTP 200`) rend la page d'accueil générique, sans résultats ni lien vers un moteur : le
+  paramètre `q` n'est pas celui attendu par ce point d'entrée. `GET
+  https://books.openedition.org/search?q=Sfez` répond `HTTP 404`. Le moteur réel,
+  `search.openedition.org`, est une application JavaScript côté client (`GET
+  https://search.openedition.org/index.php?q=...` répond `HTTP 200` mais ne rend qu'un
+  squelette HTML vide, `<div id="root"></div>`, sans résultats accessibles par un GET simple) :
+  **c'est une limite d'outil, pas une absence de contenu**, à re-signaler au passage suivant.
+  Une page d'auteur directe a été essayée : `GET
+  https://books.openedition.org/author?page=author&name=sfez+lucien&lang=fr` répond `HTTP
+  404` — Lucien Sfez n'a pas de page auteur sur OpenEdition Books. La voie qui a fonctionné
+  pour d'autres domaines (pages de collection statiques) suppose de connaître à l'avance la
+  collection ou l'ouvrage visé ; aucun ouvrage de Sfez sur la décision n'a été identifié comme
+  hébergé sur cette plateforme par recherche web ciblée (`site:books.openedition.org Sfez
+  décision`, `site:books.openedition.org "critique de la décision" Sfez`) : les résultats ne
+  remontent que des citations tierces de Sfez 1973 dans des chapitres d'autres auteurs (par
+  exemple un chapitre de *Justice, responsabilité et contrôle de la décision publique*, collection
+  `dice`), jamais le texte de Sfez lui-même.
+- **OpenEdition Journals (`journals.openedition.org`), plateforme sœur non nommée par le
+  périmètre mais servant le même type de contenu, a en revanche rendu un texte de Sfez lui-même
+  — hors sujet.** Une page auteur existe (`GET https://journals.openedition.org/ress/615`,
+  `HTTP 200`, titre « Auteur - Sfez Lucien ») dans la *Revue européenne des sciences sociales*
+  et liste un article en texte intégral : Sfez, L. (2002), « La technique comme fiction »,
+  *Revue européenne des sciences sociales*, XL-123, p. 65-74, DOI 10.4000/ress.612 (`GET
+  https://journals.openedition.org/ress/612`, `HTTP 200`, texte lu). **Ce texte n'est pas
+  retenu comme candidat** : son objet est la technique comme discours de fiction et
+  d'idéologie (dans la filiation de son ouvrage *Technique et idéologie*, Seuil, 2002), pas
+  l'opération de choix — il ne satisfait pas la première condition du test d'entrée de ce
+  domaine. Il confirme seulement que Sfez dépose ou fait déposer certains de ses textes tardifs
+  en accès ouvert, ce qui rend d'autant plus notable que *Critique de la décision* (1973), bien
+  antérieur, n'y figure pas.
+- **HAL, absent du compte rendu du 23 août, a été interrogé cette fois** : `GET
+  https://api.archives-ouvertes.fr/search/?q=authFullName_t:"Lucien Sfez"` (`HTTP 200`, 2
+  résultats — « La gouvernance des innovations médicales » et « Utopies... », aucun sur la
+  décision, aucun fichier déposé) ; `GET .../search/?q=Sfez decision` (`HTTP 200`, 9 résultats,
+  aucun de Lucien Sfez lui-même, essentiellement des homonymes). **Confirmé fermé sur HAL, cette
+  fois par une requête ciblée sur l'auteur et non par mots-clés larges.**
+- **theses.fr, interrogé une seule fois le 23 août sur « Sfez decision » sans résultat, a été
+  réinterrogé avec une requête différente** : `GET
+  https://theses.fr/api/v1/theses/recherche/?q=Sfez+décision` (`HTTP 200`, 7 résultats). Aucun
+  n'est une thèse de Lucien Sfez lui-même (il n'a pas soutenu dans la période indexée par cette
+  base) ; aucun n'est une thèse consacrée spécifiquement à *Critique de la décision*. **Confirmé
+  fermé, par une requête distincte de celle du 23 août.**
+- **Gallica, non cité par le compte rendu du 23 août mais fermé par ailleurs pour tout ce
+  passage** : `GET https://gallica.bnf.fr/services/engine/search/sru?...` répond toujours
+  `HTTP 403 Access Interdit`, comme documenté par trois agents indépendants sur d'autres
+  domaines. Non recontourné, conformément à la règle.
+
+**Conclusion inchangée sur le fond, mais l'angle mort est maintenant documenté sur huit voies
+distinctes plutôt que quatre**, et la voie prioritaire nommée par le périmètre (OpenEdition
+Books) est démontrée limitée par l'outil de recherche lui-même, pas simplement « non tentée ».
+Le prochain passage qui voudrait retenter Sfez devrait soit connaître à l'avance une collection
+OpenEdition Books susceptible de l'héberger (par exemple une collection de sciences politiques
+d'un éditeur universitaire ayant republié Sfez), soit chercher directement le catalogue des
+Presses de Sciences Po / FNSP (la réédition citée par la cartographie du 23 août), qui n'a pas
+été testé cette nuit faute de temps.
+
+## Bases et plateformes — état à la fin de ce passage
+
+| base | requêtes cette nuit | résultat |
+|---|---|---|
+| Persée | 1 requête rejouée (celle du 23 août, jamais exploitée) + 6 pages `/doc/` + 11 pages `renderPage` | **exploitée à fond** : 3 candidats retenus (12, 13, 14), 1 écarté motivé (Nakhla), 2 secondaires identifiées |
+| HAL | 6 requêtes (`Sfez decision`, `Lucien Sfez` en auteur, `incomparabilité`, `incomparabilité surclassement`, `Bernard Roy surclassement`, `aide multicritère décision`) | 1 candidat trouvé et flagué (15) ; Sfez confirmé absent |
+| OpenEdition Books | 3 requêtes (recherche par `q`, `/search`, page auteur) | **outil de recherche inatteignable par GET simple** (SPA JavaScript) ; aucun contenu positif ni négatif établi par cette voie — limite d'outil à re-signaler |
+| OpenEdition Journals | 2 requêtes (page auteur Sfez, article) | 1 texte de Sfez trouvé et écarté (hors sujet) |
+| theses.fr | 2 requêtes (`aide multicritère décision`, `Sfez décision`) | pas de candidat nouveau ; confirme l'échec Sfez |
+| Numdam | non réinterrogé (déjà exploité le 23 août pour Roy 1968) | — |
+| Crossref | 4 résolutions de DOI (Vincke, sciso, tentative Pasquier-Dorthe/Raynaud sans succès) | métadonnées confirmées pour les candidats 12 et 14 |
+| Unpaywall | 1 vérification (Vincke) | `is_oa: false` — n'indexe pas Persée, sans conséquence, le texte est ouvert par ailleurs |
+| Gallica (SRU) | 1 requête | confirmé fermé (`HTTP 403`), non recontourné |
+| Cairn | non retenté, conformément à la règle de ne pas repayer un accès fermé constaté |
+
+## Ce que ce passage ajoute au compte des candidats
+
+Trois candidats retenus (12, 13, 14) et un flagué (15) s'ajoutent aux onze candidats du 23
+août, tous vérifiés par un GET réel avec code de retour consigné ci-dessus. Les identifiants
+proposés — `incomparabilite-en-aide-multicritere`, `approche-axiomatique-arrow-raynaud`,
+`mythe-de-l-outil-quantitatif`, et `incomparabilite-et-liberte-de-choix` (provisoire, candidat
+15) — ont été confrontés à la liste complète de `corpus/validated/` (129 identifiants relus) et
+aux dix identifiants déjà proposés dans ce fichier le 23 août. **Aucune collision.**
+
+La couche francophone de ce domaine passe ainsi de un candidat solide (Roy 1968) à quatre
+(Roy 1968, Vincke 1991, Pasquier-Dorthe & Raynaud 1995, Boulaire/Landry/Martel 1996), plus un
+cinquième flagué (Plottu 2001, risque de périmètre). C'est la littérature que le périmètre
+nomme « l'aide multicritère », désormais représentée par trois écoles ou méthodes distinctes
+(surclassement Roy/ELECTRE, axiomatique Arrow-Raynaud, critique constructiviste de l'outil)
+plutôt qu'une seule. La « critique française de la décision » au sens de Sfez, en revanche,
+reste un angle mort entier : aucun texte de cette veine précise n'a cédé cette nuit.

@@ -42,6 +42,14 @@ import type { Theme } from "@/types";
  * elle-même qu'un seul concept devrait en sortir. Les deux courants existent, leurs textes
  * sont ouverts et lus, et ils attendent le passage suivant plutôt qu'une page à une carte.
  *
+ * Ces deux thèmes se déclarent dans la nuit du 8 septembre 2026 : le passage d'enrichissement
+ * de cette nuit-là les a pourvus. `chercher-plutot-que-calculer` porte trois cartes, tirées de
+ * deux textes distincts de Newell, Shaw et Simon (l'article de 1958 pour deux d'entre elles,
+ * le chapitre de 1960 pour la troisième) plutôt que d'un seul comme au 23 août.
+ * `agreger-des-preferences` en porte deux, tirées du même article d'Arrow mais portant chacune
+ * sur une condition distincte de son résultat d'impossibilité : ce n'est plus une carte
+ * unique, et c'est ce que le refus du 23 août demandait.
+ *
  * Les trois thèmes d'`operations-management` sont écrits le 25 août 2026, après le contrôle
  * aveugle des huit cartes du lot d'ouverture, et non d'après la proposition de la
  * cartographie. Celle-ci en avançait quatre, un par candidat, en prévenant elle-même que
@@ -506,6 +514,28 @@ export const themes: Theme[] = [
     keywords: ["Critère", "Valeur", "Surclassement"],
     description:
       "Entre la théorie qui prescrit et l'observation qui décrit, il reste à outiller celui qui doit décider pour de bon. Ce thème porte sur ce qu'une méthode d'aide construit à sa place : les critères qu'elle retient, ce qu'elle refuse d'agréger, et le moment où le problème lui-même se formule.",
+    domain: "decision-science",
+  },
+  {
+    id: "chercher-plutot-que-calculer",
+    slug: "chercher-plutot-que-calculer",
+    title: "Chercher une solution plutôt que la calculer",
+    tagline:
+      "La vitesse ne suffit pas : il faut savoir où chercher.",
+    keywords: ["Programme", "Heuristique", "Apprentissage"],
+    description:
+      "Résoudre un problème n'est pas l'explorer en entier : c'est choisir où chercher, et pourquoi là plutôt qu'ailleurs. Ce thème porte sur ce que cherche celui qui résout, qu'il soit un programme d'opérations élémentaires pris comme théorie d'un comportement, une sélectivité qui compte plus que la vitesse de la machine, ou un apprentissage qui revient à réviser la description qu'un solveur se fait de son environnement.",
+    domain: "decision-science",
+  },
+  {
+    id: "agreger-des-preferences",
+    slug: "agreger-des-preferences",
+    title: "Décider à plusieurs",
+    tagline:
+      "Ce que chacun préfère ne s'additionne pas sans heurt en un choix commun.",
+    keywords: ["Préférences", "Agrégation", "Cohérence"],
+    description:
+      "Une décision collective peut se lire comme un problème d'agrégation : comment transformer les préférences de chacun en un classement pour le groupe. Ce thème porte sur ce que des conditions pourtant raisonnables imposent à une règle d'agrégation, jusqu'à leur incompatibilité, et sur l'exigence que le choix entre deux options ne dépende que des préférences portant sur ces deux options.",
     domain: "decision-science",
   },
   // --- Operations Management ------------------------------------------------

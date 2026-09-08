@@ -1,0 +1,59 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "impossibilite-de-l-agregation-des-preferences",
+  "lead": [
+    "Trois collègues doivent classer trois projets, du plus urgent au moins urgent. Chacun, séparément, y arrive sans peine : on sait dire ce qu’on préfère, et on sait le dire de manière suivie. La difficulté commence quand il faut en tirer un seul classement, celui du groupe. Ce qu’on lui demande n’est pas seulement de désigner un gagnant : c’est de tenir debout. Si le groupe place le premier projet avant le deuxième, et le deuxième avant le troisième, il doit placer le premier avant le troisième. Sinon le résultat dépend de l’ordre dans lequel on a posé les questions, et non de ce que les gens veulent.",
+    "En 1948, dans un rapport de dix-neuf pages écrit pour la RAND Corporation, Kenneth J. Arrow retourne la question. Plutôt que d’examiner une méthode de vote après l’autre, il écrit d’abord ce qu’on exige d’une règle, quelle qu’elle soit, puis il demande si une règle peut satisfaire ces exigences ensemble. La réponse est non, et elle est bornée de deux côtés : elle ne vaut que sous les conditions qu’il énonce, et elle laisse debout deux règles, dont il dit lui-même qu’elles violent les principes démocratiques."
+  ],
+  "sections": [
+    {
+      "title": "Ce qu’on exige d’une règle avant de la juger",
+      "paragraphs": [
+        "La règle dont il est question, ce qu’Arrow appelle une fonction de bien-être social, reçoit d’un côté les préférences de chaque personne et rend de l’autre un classement pour le groupe. La première exigence porte sur ce qu’elle rend, et elle est double : quelles que soient les préférences reçues, la sortie doit être un ordre utilisable, c’est-à-dire qu’on puisse y comparer deux options quelconques et qu’aucune boucle ne s’y forme. C’est la Condition 1, page 9, « For all R1,…,Rn, R is a weak ordering relation » : pour tous les classements individuels reçus, le classement social est un ordre faible, faible parce qu’il tolère l’indifférence entre deux options.",
+        "La seconde exigence porte sur l’entrée. Ce que la règle reçoit, ce sont des classements et rien d’autre : aucune mesure de l’intensité des préférences, aucune quantité de satisfaction à comparer entre les personnes. Arrow ne revendique pas cette façon de poser le problème et l’attribue page 2 à Abram Bergson, qui « has reintroduced the social welfare function and has pointed out that it need only depend on the preference schedules of individuals », approche reçue ensuite par Samuelson et Lange. Ce point compte pour la suite : l’impossibilité qui vient ne tiendra pas à ce qu’on refuserait de mesurer le bonheur des gens, mais à la seule mise en commun de leurs classements."
+      ]
+    },
+    {
+      "title": "La convention et le dictateur",
+      "paragraphs": [
+        "Deux règles satisfont sans peine l’exigence de cohérence, et Arrow les met de côté dans la phrase même où il annonce son résultat, page 3, en exceptant « certain trivial methods which violate democratic principles ». Leurs définitions viennent page 10. La première fixe le classement d’avance : « let R be any weak ordering of the alternatives independent of R1,…,Rn », un ordre arrêté une fois pour toutes, sur lequel les préférences de personne n’ont de prise. La seconde recopie une personne : « let R coincide with R1 ». Toutes deux rendent un classement parfaitement cohérent, en toutes circonstances, et c’est bien pour cela qu’il faut les écarter à la main.",
+        "C’est aussi ce qui empêche de lire le résultat comme on le lit souvent. Il ne dit pas qu’aucune règle cohérente n’existe : il dit que les règles cohérentes sont celles-là. Le théorème de la page 14 le formule sans détour : « If the number of alternatives exceeds two, every social welfare function satisfying Conditions 1-3 is either conventional or dictatorial. » Au-delà de deux options, une règle qui tient debout et qui ne fixe rien d’avance et qui ne s’en remet à personne en particulier n’existe pas. La phrase de la page 3 garde d’ailleurs sa précaution d’ouverture, « Sous certaines restrictions très raisonnables » : le résultat est conditionnel, et il l’annonce."
+      ]
+    },
+    {
+      "title": "Pourquoi il en faut au moins trois",
+      "paragraphs": [
+        "Six conditions sont posées, pages 9 à 11, et la sixième ne porte pas sur la règle mais sur la situation : « Condition 6. There are at least three alternatives. » Elle est là pour écarter les cas triviaux. Vient alors la phrase la plus nue du rapport, page 11 : « It will be shown that Conditions 1-6 are inconsistent. » Ce n’est pas une condition qui échoue, ce sont les six qui ne tiennent pas ensemble.",
+        "Il s’ensuit deux choses que le lecteur peut tirer lui-même. D’abord, en dessous de trois options, rien n’est affirmé : un scrutin par oui ou non n’est pas concerné, et la difficulté n’apparaît qu’à partir du moment où un groupe doit ranger plus de deux choses, trois candidats, trois projets, trois usages d’un budget. Ensuite, puisque l’incompatibilité est celle du bloc, le résultat ne désigne aucun coupable : toute issue consiste à renoncer à l’une des six exigences, et le choix de celle qu’on lâche est un choix politique autant que technique. Le rapport lui-même en emprunte une."
+      ]
+    },
+    {
+      "title": "Un problème né de l’économie du bien-être",
+      "paragraphs": [
+        "Ce texte ne commence pas par des bulletins de vote. Il commence par un différend d’économistes. Page 3, Arrow rappelle l’incohérence que T. de Scitovsky avait relevée dans le principe de compensation et conclut : « Thus, the compensation principle does not provide a true ordering of social decisions. » Le mot qui compte est le dernier : ce qui manque à ce principe, c’est un véritable ordre des décisions sociales, exactement ce que la Condition 1 exigera d’une règle.",
+        "La phrase suivante donne le programme : « It is the purpose of this note to show that this phenomenon is very general. » L’impossibilité est donc présentée comme la généralisation d’un échec déjà connu et jusque-là local, non comme un paradoxe des urnes. Le titre du rapport dit la même chose à sa manière : il porte sur la possibilité d’une fonction de bien-être social universelle, et c’est cette universalité qui va manquer."
+      ]
+    },
+    {
+      "title": "La restriction de Black, et le vote par rangs",
+      "paragraphs": [
+        "Le rapport ne s’arrête pas au théorème. Page 17, il examine une autre sortie, qui ne touche pas aux exigences imposées à la règle mais aux préférences qu’on accepte de recevoir : « A more radical restriction upon the range of possible individual preference patterns has been proposed by D. Black ». Cette restriction range les alternatives linéairement, et Arrow précise ce qu’il y ajoute : « Black’s result for a finite number of alternatives is here generalized to any space of alternatives ». Autrement dit, l’impossibilité vaut sur toutes les configurations de préférences ; sur certaines familles de configurations, la question se rouvre.",
+        "Une absence mérite d’être signalée, parce qu’un lecteur français l’attend et ne la trouvera pas. Ni Condorcet, ni Borda, ni le paradoxe de vote ne sont nommés dans ces dix-neuf pages. La méthode où chacun range les options est bien exposée, page 15, mais sous le seul nom de « the rank-order method of voting », sans être attribuée à quiconque. La généalogie que la mémoire du domaine a construite après coup n’est pas celle que ce texte écrit."
+      ]
+    },
+    {
+      "title": "Le tapuscrit P-41 et ses en-têtes",
+      "paragraphs": [
+        "L’objet lui-même vaut d’être décrit. C’est un tapuscrit de dix-neuf pages, sous la cote P-41, signé d’un seul nom. Sa date se lit différemment selon la surface qu’on regarde : la couverture RAND porte « 26 September 1948 », et les notices qui en dérivent la recopient, tandis que les dix-neuf pages de texte, page de titre du rapport comprise, portent toutes « 10/26/48 », soit le 26 octobre 1948. La contradiction est dans l’objet, pas dans sa description : qui cite ce rapport gagne à savoir laquelle de ses deux faces il lit.",
+        "Le document déclare aussi sa propre illisibilité. Sa numérisation s’ouvre sur un avis imprimé, « WE REGRET THAT LEGIBILITY OF THIS DOCUMENT IS IN PART UNSATISFACTORY », et la couche de texte automatique qui l’accompagne est inutilisable : les mots de ce rapport ne se lisent qu’à l’image, page par page.",
+        "Son vocabulaire enfin est le sien. La première classe de règles y est dite conventionnelle, les conditions y sont au nombre de six, et la condition d’indépendance y porte sur la fonction de choix, c’est-à-dire sur ce que la société retiendrait d’un ensemble d’options donné, plutôt que sur la relation sociale elle-même. Ce sont ses termes à lui, et c’est avec eux qu’il se lit, plutôt qu’avec le souvenir d’une formulation apprise ailleurs."
+      ]
+    }
+  ],
+  "limits": [
+    "L’article de 1950 du Journal of Political Economy et le livre de 1951, Social Choice and Individual Values, sont les textes par lesquels ce travail a été repris et par lesquels il est connu. Quels mots ils gardent, lesquels ils abandonnent, et ce que le théorème y devient : leurs pages le portent, et il faudra les ouvrir. Rien de ce qui précède n’autorise à leur prêter les formulations de 1948.",
+    "Le résultat est une chose, sa démonstration en est une autre. Les pages 5 à 8, 12, 13 et 18, qui portent les lemmes et les démonstrations, sont parmi les plus abîmées de la numérisation, et l’argument qui s’y déroule reste à lire sur l’original. Savoir si la preuve de 1948 est correcte telle qu’elle est écrite se tranche là, et nulle part ailleurs.",
+    "Ce que ce rapport est devenu ensuite, qui l’a repris, discuté ou contesté, en anglais comme en français, est une autre enquête : tout ce qui précède vient du rapport lui-même, et d’aucune source seconde.",
+    "Aucune traduction française publiée de ce rapport n’est connue. La phrase de la page 3 est donc rendue en français par une traduction sans autorité, qui ne vaut que comme accès : les mots d’Arrow sont ceux de son anglais, et ils sont sur l’image de sa page 3."
+  ]
+}

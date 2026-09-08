@@ -1,0 +1,98 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "independance-des-alternatives-non-pertinentes",
+  "slug": "independance-des-alternatives-non-pertinentes",
+  "status": "VALIDATED",
+  "title": "Indépendance des alternatives non pertinentes",
+  "themes": [
+    "agreger-des-preferences"
+  ],
+  "theme_labels": {
+    "agreger-des-preferences": "Décider à plusieurs"
+  },
+  "authors": [
+    {
+      "name": "Kenneth J. Arrow",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Rapport signé d'un seul nom sur sa page de titre : « By / Kenneth J. Arrow ». La condition y est posée, numérotée et nommée par lui, page 10 : « Condition 3 (Independence of irrelevant alternatives) », et la section 6, page 15, lui est consacrée. Le rapport ne déclare aucun précédent pour elle et ne l'attribue à personne, ce qui n'établit pas qu'elle n'en ait pas : l'antériorité n'a pas été instruite ici. Deux réserves sont écrites dans la pièce : la note 12 de la page 15 indique que les exemples de cette section ont été suggérés par des discussions avec A. Kaplan et G. E. Forsythe, ce sont les exemples et non la condition ; la page 19 remercie A. Kaplan et J. W. Youngs pour leur aide à la formulation du problème, ce qui ne déplace pas la signature.",
+  "hook": "Une option que tous jugent la pire peut-elle changer le choix du groupe ?",
+  "summary": "Arrow la numérote Condition 3 et la tient pour intouchable : le choix social entre des options ne doit dépendre que des préférences portant sur ces options.",
+  "quotation": {
+    "text": "Si z était rayé de l'existence, cela ne devrait faire aucune différence pour le résultat final […]",
+    "reference": "Kenneth J. Arrow, The Possibility of a Universal Social Welfare Function, RAND Corporation, Paper P-41, 26 octobre 1948, 19 p. Numérisation DTIC (AD0603806) sur Internet Archive.",
+    "locator": "p. 15, section 6, premier exemple",
+    "language": "fr",
+    "original_text": "If z were blotted out of existence, it should not make any difference to the final outcome; yet, doing so would cause the first two individuals to have utility 1 for x and 0 for y, while the third individual will have utility 0 for x and 1 for y, so that now x is preferred to y.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (agent lecteur, chaîne Curiosity). Aucune traduction française publiée de ce rapport RAND de 1948 n'a été identifiée. La phrase originale se poursuit après un point-virgule par le détail chiffré de l'exemple, qui occupe trois lignes et n'a aucun sens hors du tableau d'utilités des lignes précédentes ; cette suite est coupée, la coupe est marquée par […], et la phrase entière se lit dans le texte original. Ce qui reste est exactement la première proposition, traduite mot pour mot, sans compression : c'est l'exigence qu'Arrow pose, la suite en montre la violation. Un choix de traduction : « blotted out of existence » est rendu par « rayé de l'existence » et non par « supprimé » ou « retiré de la liste », parce que la formule d'Arrow insiste sur l'effacement de l'alternative elle-même, et non sur son retrait d'un vote. La lettre z est conservée telle quelle : c'est le nom que l'exemple donne à l'alternative que les trois individus jugent tous la pire.",
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "Kenneth J. Arrow, The Possibility of a Universal Social Welfare Function, RAND Corporation, Paper P-41, 26 octobre 1948, 19 p. Numérisation DTIC (AD0603806) sur Internet Archive.",
+      "kind": "primary",
+      "locator": "p. 10, p. 11 et p. 15-16",
+      "doi_isbn": null,
+      "url": "https://archive.org/details/DTIC_AD0603806",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Kenneth J. Arrow, « A Difficulty in the Concept of Social Welfare », Journal of Political Economy, vol. 58, n° 4, août 1950, p. 328-346.",
+      "kind": "primary",
+      "locator": "p. 328-346",
+      "doi_isbn": "10.1086/256963",
+      "url": "https://doi.org/10.1086/256963",
+      "consulted": "metadata-only"
+    },
+    {
+      "label": "Kenneth J. Arrow, Social Choice and Individual Values, New Haven, Yale University Press, 1951 (2e éd. 1963).",
+      "kind": "primary",
+      "locator": null,
+      "doi_isbn": "9780300013634",
+      "url": "https://openlibrary.org/works/OL5103552W",
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle",
+    "date": "2026-09-08",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "PIÈCE OUVERTE — item Internet Archive DTIC_AD0603806. Notice https://archive.org/metadata/DTIC_AD0603806 (imagecount 21, ppi 300) ; PDF téléchargé depuis https://archive.org/download/DTIC_AD0603806/DTIC_AD0603806.pdf, 6 218 662 octets, MD5 952966b0e1b1ce3abaaf925a6658f803 — identiques à la notice, c'est donc bien le document annoncé. 21 feuillets rendus en PNG à 200 dpi avec PyMuPDF et lus à l'image, pas à l'OCR (l'OCR de cet item est très dégradé : il rend « Independence of Irr ·lev », « THü: POSSniLITY »). Correspondance folio/feuillet établie feuillet par feuillet sur l'en-tête imprimé, sans recourir à page_numbers.json : feuillet 0 = fiche CFSTI, feuillet 1 = couverture RAND, feuillet 2 = page de titre + p. 1, … feuillet 11 = « -10- », feuillet 12 = « -11- », feuillet 15 = « -14- », feuillet 16 = « -15- », feuillet 17 = « -16- », feuillet 20 = « -19- ». Chaque page de texte porte l'en-tête imprimé « P-41 » et « 10/26/48 ».",
+      "CITATION — vérifiée à l'image sur le feuillet portant le folio imprimé « -15- ». La page s'ouvre bien sur « 6. Independence of Irrelevant Alternatives(12) », et le premier exemple s'y trouve. Je lis, mot pour mot : « If z were blotted out of existence, it should not make any difference to the final outcome; yet, doing so would cause the first two individuals to have utility 1 for x and 0 for y, while the third individual will have utility 0 for x and 1 for y, so that now x is preferred to y. » L'`original_text` de la fiche est identique caractère pour caractère, ponctuation comprise. La phrase suivante de l'imprimé, « This is clearly unsatisfactory. », n'est pas incluse et n'est pas revendiquée. La citation française coupe après « final outcome », la coupe est signalée par […] et ne retourne pas le sens : ce qui est coupé est la démonstration chiffrée de la violation, l'exigence citée reste entière. Traduction : « Si z était rayé de l'existence, cela ne devrait faire aucune différence pour le résultat final » rend mot pour mot « If z were blotted out of existence, it should not make any difference to the final outcome » ; « rayé de l'existence » pour « blotted out of existence » est fidèle et conserve l'effacement de l'alternative, non son retrait d'un scrutin. La traduction est déclarée interne non publiée ; je n'ai identifié aucune traduction française publiée de ce rapport, ce qui est cohérent avec la déclaration.",
+      "ATTRIBUTION, ce que la pièce revendique — page de titre (feuillet 2) : « THE POSSIBILITY OF A UNIVERSAL SOCIAL WELFARE FUNCTION / By / Kenneth J. Arrow », signature unique. Page « -10- » : la condition est posée en toutes lettres et nommée par lui — « Condition 3. If, for all i and all x and y in S, x Ri y if and only if x Ri' y, then C(S) = C'(S) […] (Independence of irrelevant alternatives) », précédée du motif « C(S) should be independent of the very existence of alternatives outside of S, and therefore should depend only on the individual preference scales within S ». Page « -11- » : « Condition 3 implies that in considering C(S), we can disregard all preferences among alternatives not in S. » Page « -15- » : la section 6 lui est entièrement consacrée. La fiche ne lui prête rien de plus : elle écrit qu'il la numérote et la nomme, jamais qu'il l'invente.",
+      "ATTRIBUTION, ce que la pièce attribue à d'autres — vérifié à l'image et non par mot-clé : le seul renvoi de la section 6 est la note 13, « See footnote 4 », pour l'utilité mesurable à transformation linéaire près « following von Neumann and Morgenstern », qui porte sur le cadre de l'exemple et non sur la condition ; la note 12 dit exactement « The examples in this section were suggested in discussions with A. Kaplan and with G. E. Forsythe, National Bureau of Standards » — ce sont les exemples, pas la condition, et la fiche le dit ainsi. Page « -19- », section 9 Acknowledgments : « A. Kaplan, University of California at Los Angeles, and J. W. Youngs, University of Indiana, for guidance in formulating the problem; D. Blackwell, Howard University, and O. Helmer for other helpful discussions » — remerciements de formulation du problème, qui ne déplacent pas la signature. La section 3 (p. 9-11), où les Conditions 1 à 3 sont posées, ne porte aucune note de bas de page : aucun précédent n'y est déclaré pour la Condition 3. Le seul emprunt nommé du rapport est ailleurs, p. 17 : « A more radical restriction upon the range of possible individual preference patterns has been proposed by D. Black », et la fiche ne le confond pas avec la Condition 3. La formule d'ouverture du rapport (philosophie sociale platonicienne, Bentham, Jevons, Edgeworth, p. 1-2) est bien une thèse dont Arrow se démarque — la citation de la fiche est prise p. 15, très après la charnière, dans la partie où Arrow argumente en son nom.",
+      "ATTRIBUTION, contrôle en sens inverse (antériorité) — j'ai cherché des précédents contre la fiche, et non pour elle. Crossref donne : Iain McLean, « Independence of irrelevant alternatives before Arrow », Mathematical Social Sciences, 30 (2), octobre 1995, p. 107-126, DOI 10.1016/0165-4896(95)00784-j (existence de la référence vérifiée sur api.crossref.org et sur ideas.repec.org/a/eee/matsoc/v30y1995i2p107-126.html, qui ne fournit pas de résumé). Le texte intégral de McLean ne m'est pas accessible : ScienceDirect renvoie HTTP 403 sur https://www.sciencedirect.com/science/article/abs/pii/016548969500784J — je ne peux donc rien affirmer de son argument sur pièce. L'entrée « Arrow's Theorem » de la Stanford Encyclopedia of Philosophy (https://plato.stanford.edu/entries/arrows-theorem/, lue) énonce la condition comme celle d'Arrow et signale que McLean (2003) situe un premier énoncé du principe d'indépendance chez Condorcet (1785). Conclusion : des antécédents existent pour le *principe* (Condorcet, et selon la littérature secondaire Huntington 1938, Nash 1950 pour un homonyme portant sur autre chose), mais l'axiome numéroté, nommé et démontré comme « Condition 3 (Independence of irrelevant alternatives) » est bien d'Arrow, ici en 1948. La note d'attribution de la fiche déclare elle-même que l'antériorité n'a pas été instruite et qu'aucun précédent n'est revendiqué dans le rapport : cette réserve est exacte, et elle empêche la fiche de déborder. `confirmee`.",
+      "SOURCES 1 — https://archive.org/details/DTIC_AD0603806 répond HTTP 200 et mène à l'item ouvert ci-dessus : auteur Kenneth J. Arrow, RAND Corporation, P-41, texte paginé de -1- à -19- (19 p. imprimées, conforme au « 19 p. » de la fiche). Locator « p. 10, p. 11 et p. 15-16 » vérifié page par page : p. 10 énoncé de la Condition 3, p. 11 son implication (« we can disregard all preferences among alternatives not in S »), p. 15 la section 6 et le premier exemple, p. 16 la fin du second exemple (« so that its deletion should not affect the choice of x »). La référence résout vers ce qu'elle annonce.",
+      "SOURCES 1, discordance interne de la pièce, signalée et non retenue contre la fiche : la couverture RAND numérisée (feuillet 1) porte « P-41 / 26 September 1948 », et une annotation manuscrite « 20 pp » ; les métadonnées Internet Archive reprennent cette date (« date »: 1948-09-26). Les 19 pages de texte portent toutes l'en-tête daté « 10/26/48 », soit le 26 octobre 1948, qui est la date retenue par la fiche et par la notice RAND telle que citée dans la littérature (Project RAND RAD(L)-289, October 26, 1948). La fiche suit donc la date imprimée sur le texte lui-même ; le « 20 pp » de la couverture compte le feuillet de couverture en plus des 19 pages foliotées. Je n'ai pas pu confronter la notice RAND elle-même : https://www.rand.org/pubs/papers/P41.html et https://www.rand.org/content/dam/rand/pubs/papers/2013/P41.pdf renvoient tous deux HTTP 403 (CloudFront) — accès refusé, ce n'est pas un silence de la source.",
+      "SOURCES 2 — DOI 10.1086/256963 interrogé sur api.crossref.org : « A Difficulty in the Concept of Social Welfare », auteur unique Kenneth J. Arrow, Journal of Political Economy, vol. 58, n° 4, août 1950, p. 328-346, University of Chicago Press. Les six éléments annoncés par la fiche (auteur, titre, revue, volume, numéro, mois, pagination) sont exacts. La résolution https://doi.org/10.1086/256963 aboutit à un HTTP 403 de l'éditeur (journals.uchicago.edu) : la notice est confirmée, le plein texte non atteint — ce qui est cohérent avec le `consulted: metadata-only` de la fiche.",
+      "SOURCES 3 — ISBN 9780300013634 résolu sur Open Library (https://openlibrary.org/isbn/9780300013634.json et /api/books) : Kenneth J. Arrow, « Social Choice and Individual Values », Yale University Press, edition_name « 2nd edition », xi + 124 p., cote LC « HM271 .A7 1963 ». L'ISBN désigne donc bien la 2e édition, ce que la fiche annonce entre parenthèses (« 1951, 2e éd. 1963 »). https://openlibrary.org/works/OL5103552W répond HTTP 200 et porte l'œuvre du même auteur (OL1123869A, Kenneth Joseph Arrow).",
+      "SOURCES, vérification en sens inverse du `metadata-only` : j'ai relu hook, summary et attribution_note en cherchant une phrase qui s'autoriserait du contenu de l'article de 1950 ou du livre de 1951. Il n'y en a aucune : tout ce que la carte affirme (numérotation, nom, section dédiée, notes 12 et 13, remerciements p. 19, exemple de z) est pris sur le rapport de 1948, seule source déclarée `full-text`. La carte ne fait pas dire aux états postérieurs du travail ce qu'elle n'a pas lu.",
+      "PROSE — `hook` « Une option que tous jugent la pire peut-elle changer le choix du groupe ? » est exactement l'exemple de la p. 15, où Arrow écrit « Clearly, z is a very undesirable alternative, since each individual regards it as worst » puis montre que l'effacement de z fait basculer le choix social de y vers x. Aucun élargissement. `summary` « Arrow la numérote Condition 3 et la tient pour intouchable : le choix social entre des options ne doit dépendre que des préférences portant sur ces options » : la numérotation est lue p. 10 ; la paraphrase reprend sans l'excéder « should depend only on the individual preference scales within S » (p. 10) et « we can disregard all preferences among alternatives not in S » (p. 11) ; « la tient pour intouchable » est porté par la p. 14, où Arrow écrit « From the very meaning of a social decision process, it is hard to see how Conditions 2 or 3 can be weakened » et annonce que « The remaining sections will be concerned with weakening of the various other conditions » — de fait, les sections 7 et suivantes affaiblissent la Condition 1, jamais la 3. L'adjectif est fort mais la pièce le porte. `fidele`.",
+      "NON ATTEINT, après tentative — RAND (page P41 et PDF hébergé) : HTTP 403 CloudFront sur les deux URL, testées par curl. ScienceDirect (McLean 1995) : HTTP 403. journals.uchicago.edu via doi.org : HTTP 403. Le serveur MCP `documentary` n'était pas exposé dans cette session : la résolution DOI/ISBN a été refaite à la main sur api.crossref.org et openlibrary.org. Aucun de ces refus d'accès n'a été traité comme une réfutation.",
+      "HORS MANDAT, pour information seulement, sans conséquence sur le verdict : la fiche pourrait, si la place le permet, signaler que la couverture numérisée porte une date (26 septembre 1948) différente de l'en-tête de toutes les pages de texte (26 octobre 1948) ; un lecteur qui ouvre le PDF tombe d'abord sur la couverture. Cela ne touche aucun des quatre points : la référence résout, et la date affichée par la fiche est celle du texte imprimé."
+    ]
+  },
+  "dossier": "corpus/evidence/independance-des-alternatives-non-pertinentes/lecture.json",
+  "notes": [
+    "Ce que cette carte n'affirme pas. Le rapport ne déclare aucun précédent pour la Condition 3, et rien n'a été fait pour établir si une exigence de même forme circulait avant octobre 1948, sous ce nom ou sous un autre. La carte dit donc qu'Arrow l'énonce, la numérote, la nomme et lui consacre une section, jamais qu'il la crée.",
+    "Date. Le millésime affiché suit le document et non la notice de l'archive : la page de titre et l'en-tête des dix-neuf pages impriment « 10/26/48 », soit le 26 octobre 1948, relu sur l'image. Les métadonnées Internet Archive de l'item DTIC_AD0603806 portent « 1948-09-26 », et elles n'ont pas été suivies. L'écart n'est pas expliqué.",
+    "Deux tentatives de confirmation de cette date par un tiers ont échoué la nuit de la lecture : la notice DTIC, https://apps.dtic.mil/sti/citations/AD0603806, répond 403 « Service unavailable » ; la page RAND du document, https://www.rand.org/pubs/papers/P41.html, répond 403 CloudFront « Request blocked ». Aucun contournement n'a été tenté.",
+    "Lisibilité. Le scan porte en tête l'avis du Clearinghouse « WE REGRET THAT LEGIBILITY OF THIS DOCUMENT IS IN PART UNSATISFACTORY », et la couche OCR est très dégradée : elle rend par exemple la ligne des poids du second contre-exemple « 3f 1 respectively » là où l'image porte « 4, 3, 2, 1 respectively ». Tout ce qui est cité ici a été relu sur l'image en pleine résolution.",
+    "Ce que la condition écarte, dans les termes du rapport : la somme d'utilités individuelles normalisées, page 15, dont la renormalisation après suppression d'une option que tous jugent la pire renverse le classement des deux autres, et le vote par rangs, pages 15 et 16, qui y est nommé « the rank-order method of voting », sans attribution. Ni Condorcet ni Borda ne sont nommés dans ce rapport.",
+    "L'article de 1950 et le livre de 1951 sont affichés parce qu'ils permettent de suivre ce travail, non parce qu'ils ont été lus : le premier est fermé, notice Crossref seule vérifiée ; les quatre exemplaires du second présents sur Internet Archive portent tous access-restricted-item true et aucun emprunt n'a été tenté. Aucune phrase de cette carte ne porte sur leur contenu. La formulation de 1951, qui est celle que le champ cite d'ordinaire, n'a pas été comparée à celle de 1948 : la version de 1948 énonce la condition sur la fonction de choix, et non sur la relation de préférence sociale.",
+    "Le même nom désigne, dans d'autres littératures, un axiome de la solution de marchandage de Nash et une propriété des modèles de choix discret. Aucune de ces deux littératures n'a été ouverte : cette carte ne porte que sur la condition telle que ce rapport de 1948 l'énonce, dans un problème d'agrégation de préférences individuelles.",
+    "La réception de cette condition n'a pas été instruite, et aucune source secondaire n'est donc affichée. En particulier, la critique française de l'aide multicritère, qui conteste précisément cette exigence, n'a pas été cherchée : c'est un point non instruit, pas un constat d'absence.",
+    "Le thème « agreger-des-preferences » n'est pas déclaré dans src/content/themes.ts : la carte le porte avec son libellé et déclare son domaine, faute de quoi rien ne la situerait dans la taxonomie."
+  ]
+}

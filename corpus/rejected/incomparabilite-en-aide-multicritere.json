@@ -1,0 +1,58 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "incomparabilite-en-aide-multicritere",
+  "slug": "incomparabilite-en-aide-multicritere",
+  "status": "REJECTED",
+  "rejection_reason": "OUT_OF_SCOPE",
+  "title": "L'incomparabilité en aide multicritère",
+  "themes": ["instruire-un-arbitrage"],
+  "theme_labels": {
+    "instruire-un-arbitrage": "Aider quelqu'un à trancher"
+  },
+  "domain": "decision-science",
+  "authors": [
+    {
+      "name": "Philippe Vincke",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Le texte est de Philippe Vincke et de lui seul, la page 147 portant « par Philippe Vincke » et, dessous, « Professeur à l'Université Libre de Bruxelles ». Mais ce qu'il signe est un historique, et l'astérisque de la page 147 le dit : « Le texte qui suit est le résumé de l'exposé. » Le concept d'incomparabilité comme relation de préférence de plein droit est de Bernard Roy, dont ce texte cite trois travaux en bibliographie sans jamais les appeler dans son corps.",
+  "quotation": null,
+  "hook": "Deux options peuvent-elles rester non comparables sans que ce soit une indifférence ?",
+  "summary": "Fiche rejetée : le texte lu est un résumé d'exposé qui expose l'incomparabilité sans la fonder, et qui la renvoie expressément à des recherches en cours.",
+  "sources": [
+    {
+      "kind": "primary",
+      "label": "Philippe Vincke, « L'aide multicritère à la décision. Historique et développements récents », Bulletin de la Classe des sciences, Académie royale de Belgique, fasc. 1, 1991, p. 147-151",
+      "locator": "p. 147 à 151",
+      "doi_isbn": "10.3406/barb.1991.38652",
+      "url": "https://www.persee.fr/doc/barb_0001-4141_1991_num_2_1_38652",
+      "consulted": "full-text"
+    }
+  ],
+  "review": {
+    "reviewer": "lecture primaire, session du 8 septembre 2026",
+    "date": "2026-09-08",
+    "attribution": "fausse",
+    "quotation": "absente",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "REJECT",
+    "rounds": 1,
+    "notes": [
+      "Rejet prononcé au stade de la lecture primaire, avant rédaction de carte et avant contrôle aveugle. C'est le précédent de reciprocite, rejeté le 28 août 2026 dans les mêmes conditions : faire contrôler une fiche qui ne peut pas passer aurait dépensé un contrôleur pour rien.",
+      "Le motif n'est pas le vocabulaire métaphorique mais son symétrique, celui qui a déjà valu son rejet à reciprocite : un texte qui rapporte au lieu d'établir."
+    ]
+  },
+  "notes": [
+    "Les cinq pages ont été ouvertes et lues à l'image en pleine résolution, aucune page sautée, les passages décisifs relus en agrandissement et non sur la couche OCR. Le refus est donc prononcé sur le texte entier, pas sur un accès manqué.",
+    "Le fait de structure qui décide : le corps de l'article, quatre pages, ne porte pas un seul renvoi. La bibliographie de vingt-deux entrées des pages 150 et 151 n'est jamais appelée, et le seul nom qui se lise dans le corps est celui d'Arrow, page 150, pour son théorème. Le silence de ce texte sur qui a dit quoi est un trait de son genre, et non un indice que son auteur revendique quoi que ce soit. Inférer une paternité de ce silence aurait été l'erreur exacte que le périmètre annonce.",
+    "Sur le concept commandé, Vincke se démarque lui-même. Le mot incomparabilité apparaît une seule fois, page 149, au pluriel, dans une parenthèse et une énumération de cinq termes, et la phrase qui le porte se termine par « ont fait et font encore l'objet de nombreuses recherches ». La phrase précédente dit de la structure de préférence qu'elle « est bien connue ». Le texte ne définit pas l'incomparabilité, ne l'oppose pas à l'indifférence, et ne dit pas qu'une méthode puisse conclure à la non comparabilité.",
+    "Le repli a été examiné et refusé lui aussi. La page 148 porte le plus beau passage du texte, « le concept de solution optimale n'a donc pas de sens dans un contexte multicritère », énoncé sans renvoi et tenant sous le plafond de citation. Mais l'absence d'optimum est la prémisse fondatrice de l'école de Roy, et Vincke n'en est ni l'auteur ni le vulgarisateur : même une attribution en ASSOCIATED_WITH serait fausse, et un contrôleur aveugle trouverait Roy en premier.",
+    "Correction portée à la cartographie de la même nuit, pour qu'elle ne se propage pas : le scout donnait ce passage sous la forme « Le concept de solution optimale... », avec une majuscule et sans marque de coupe. L'imprimé porte « le » en minuscule, la phrase étant coupée après un deux-points.",
+    "Un second concept a été vu et consigné sans être instruit : page 149, section 3, la démonstration que formuler un point de vue comme une fonction à maximiser engage déjà une structure de préférence complète à deux états. C'est le seul geste d'analyse du texte, mais celui-ci le déclare « bien connu » et ne peut donc pas lui servir de source primaire. Le domaine propre en est Roubens et Vincke 1985, cité en bibliographie.",
+    "Ce que ce refus établit pour la suite, et qui est plus dur que l'attribution : l'incomparabilité selon Roy n'a aucune source primaire ouverte connue à ce jour. Persée ne porte aucun texte de Roy sur le surclassement, la requête rendant six documents dont les trois inconnus ont été ouverts et sont sans rapport. Roy 1974 n'a pas de DOI déposé. Le document Lamsade numéro 53 existe sous deux DOI Springer, 10.1007/978-3-642-75935-2_8 et 10.1007/bf00134132, tous deux vérifiés fermés chez Unpaywall. La seule voie non épuisée est le dépôt Dauphine basepub.dauphine.psl.eu, qui a rendu un CONNECT tunnel failed 502 par le mandataire sortant.",
+    "Fait d'accès utile et nouveau : sur Persée, renderPage sans suffixe de largeur rend un HTTP 404 de 250 octets. C'est le suffixe _2000 qui sert les images, environ 1205 par 1910 pixels. Aucune anomalie de cache cette nuit, chaque page ayant été contrôlée à son folio imprimé et à son titre courant.",
+    "Le dossier de lecture complet est dans corpus/evidence/incomparabilite-en-aide-multicritere/lecture.json, avec ses douze réserves."
+  ]
+}

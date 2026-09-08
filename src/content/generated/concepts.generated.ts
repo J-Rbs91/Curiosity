@@ -223,6 +223,82 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "apprentissage-comme-recherche-heuristique",
+    "slug": "apprentissage-comme-recherche-heuristique",
+    "title": "Apprendre, un problème de recherche heuristique",
+    "authorLabel": "Allen Newell, J. C. Shaw, Herbert A. Simon",
+    "hookQuestion": "Qu'apprend-on au juste, quand on apprend à résoudre des problèmes ?",
+    "shortExplanation": "Apprendre est un problème que le solveur pourrait traiter lui-même : ce qui doit changer n'est pas son noyau, mais la description qu'il a de son environnement.",
+    "authors": [],
+    "themes": [
+      "chercher-plutot-que-calculer"
+    ],
+    "themeLabel": "Chercher une solution plutôt que la calculer",
+    "attributionNote": "Concept coécrit par Allen Newell, J. C. Shaw et Herbert A. Simon, signé de leurs trois noms sur la page d'ouverture du chapitre, dans des actes publiés en 1960 ; aucun auteur principal n'y est déclaré. Le chapitre ne fonde ni le General Problem Solver ni l'analyse moyens-fins, qu'il rappelle en renvoyant à deux rapports antérieurs des mêmes auteurs, de 1958 et de 1959. Ce qui lui est propre est le traitement de l'apprentissage.",
+    "quotation": {
+      "text": "Apprendre à caractériser efficacement l'environnement de la tâche est une forme importante et répandue de l'apprentissage humain.",
+      "reference": "Newell, A., Shaw, J. C. et Simon, H. A. (1960). « A Variety of Intelligent Learning in a General Problem Solver », dans M. C. Yovits et S. Cameron (dir.), Self-Organizing Systems, Pergamon Press, p. 153-189, p. 161, section « The Learning Problem »",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Allen Newell, J. C. Shaw et Herbert A. Simon, « A Variety of Intelligent Learning in a General Problem Solver », dans M. C. Yovits et S. Cameron (dir.), Self-Organizing Systems, Pergamon Press, 1960, p. 153-189.",
+        "kind": "primary",
+        "reference": "p. 153-189, citation p. 161 · LCCN 60-12574",
+        "url": "https://archive.org/details/SelfOrganizingSystems"
+      },
+      {
+        "label": "Newell, Shaw et Simon, « A Variety of Intelligent Learning in a General Problem Solver ». Tiré à part de l'éditeur, Pergamon Press, 1960. Stanford Digital Repository, fonds Edward A. Feigenbaum, druid wx800gp4144.",
+        "kind": "primary",
+        "reference": "37 pages, folios 153 à 189 · druid:wx800gp4144",
+        "url": "https://purl.stanford.edu/wx800gp4144"
+      },
+      {
+        "label": "Stafford Beer, compte rendu de Self-Organizing Systems, dirigé par M. C. Yovits et S. Cameron, OR (Operational Research Quarterly), vol. 12, n° 2, juin 1961, p. 129.",
+        "kind": "secondary-academic",
+        "reference": "10.2307/3007426",
+        "url": "https://doi.org/10.2307/3007426"
+      }
+    ]
+  },
+  {
+    "id": "approche-axiomatique-arrow-raynaud",
+    "slug": "approche-axiomatique-arrow-raynaud",
+    "title": "L'approche axiomatique Arrow-Raynaud",
+    "authorLabel": "Kenneth J. Arrow, Hervé Raynaud",
+    "hookQuestion": "Chaque méthode multicritère est la recette de son auteur : comment choisir ?",
+    "shortExplanation": "Une méthode multicritère se choisit sur ses propriétés logiques, les axiomes qu'elle vérifie : aucun système d'axiomes unique ne convient à tous les problèmes.",
+    "authors": [],
+    "themes": [
+      "instruire-un-arbitrage"
+    ],
+    "themeLabel": "Aider quelqu'un à trancher",
+    "attributionNote": "L'article est signé « par Jacques Pasquier-Dorthe et Hervé Raynaud » (p. 11). L'approche qu'il présente n'est pourtant pas attribuée par lui à ses deux signataires : elle y est dite « le fruit d'une longue collaboration entre Kenneth Arrow et Hervé Raynaud », et le texte parle d'Arrow et de Raynaud à la troisième personne d'un bout à l'autre alors même que Raynaud le cosigne (« H. Raynaud a démontré les théorèmes suivants », p. 16 ; « Arrow et Raynaud, dans leur approche, proposent », p. 17). Jacques Pasquier-Dorthe cosigne donc la présentation en français, et aucun résultat ne lui est attribué dans l'article. 1995 est le millésime de l'article et non celui de l'approche, que le texte dit antérieure de quelques années sans jamais la dater. La cosignature d'Arrow et de Raynaud est attestée hors de ce texte par leur ouvrage commun de 1986, qui n'a pas été ouvert.",
+    "quotation": {
+      "text": "On entend par axiome toute propriété logique que doit vérifier une méthode choisie par le décideur.",
+      "reference": "Jacques Pasquier-Dorthe et Hervé Raynaud, « Un outil d'aide à la décision multicritère », Revue française de gestion, n° 106, novembre-décembre 1995, p. 11-21, p. 13, première colonne, fin de la section I"
+    },
+    "sources": [
+      {
+        "label": "Jacques Pasquier-Dorthe et Hervé Raynaud, « Un outil d'aide à la décision multicritère », Revue française de gestion, n° 106, novembre-décembre 1995, p. 11-21. Fac-similé Persée.",
+        "kind": "primary",
+        "url": "https://www.persee.fr/doc/rfg_0338-4551_1995_num_106_1_6849"
+      },
+      {
+        "label": "Kenneth J. Arrow et Hervé Raynaud, Social Choice and Multicriterion Decision-Making, Cambridge (Mass.), The MIT Press, 1986, vii-127 p.",
+        "kind": "primary",
+        "reference": "ISBN 0-262-01087-9",
+        "url": "https://openlibrary.org/books/OL2538942M"
+      },
+      {
+        "label": "Hervé Raynaud, Logique de la décision managériale, avec la collaboration de Kenneth J. Arrow, Paris, Hermès science publications-Lavoisier, collection Recherche opérationnelle, 2011, 448 p.",
+        "kind": "primary",
+        "reference": "ISBN 978-2-7462-3190-0",
+        "url": "https://catalogue.bnf.fr/ark:/12148/cb42407853x"
+      }
+    ]
+  },
+  {
     "id": "asservissement-des-activites-hors-travail",
     "slug": "asservissement-des-activites-hors-travail",
     "title": "L'asservissement des activités hors travail",
@@ -2266,6 +2342,83 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "impossibilite-de-l-agregation-des-preferences",
+    "slug": "impossibilite-de-l-agregation-des-preferences",
+    "title": "L'impossibilité de l'agrégation des préférences",
+    "authorLabel": "Kenneth J. Arrow",
+    "hookQuestion": "Peut-on tirer des préférences de chacun un classement cohérent pour tous ?",
+    "shortExplanation": "Arrow pose six conditions sur une règle d'agrégation des préférences : elles sont incompatibles. Dès trois options, reste un classement fixé d'avance ou celui d'un seul.",
+    "authors": [],
+    "themes": [
+      "agreger-des-preferences"
+    ],
+    "themeLabel": "Décider à plusieurs",
+    "attributionNote": "Rapport signé d'un seul nom sur sa page de titre : « By / Kenneth J. Arrow ». Tout ce qu'il contient n'est pas de lui, et il l'écrit. La fonction de bien-être social et son caractère purement ordinal sont attribués page 2 à Abram Bergson, approche acceptée ensuite par Samuelson et Lange ; l'incohérence du principe de compensation est attribuée page 3 à T. de Scitovsky, et Arrow annonce à la même page que son propos est d'en montrer la généralité ; la restriction où les alternatives se rangent linéairement vient de D. Black, page 17. La page 19 remercie A. Kaplan et J. W. Youngs pour leur aide à la formulation du problème : une aide déclarée n'est pas une cosignature. Ce qui est de lui, c'est l'impossibilité qui s'ensuit.",
+    "quotation": {
+      "text": "Sous certaines restrictions très raisonnables, aucune méthode d'agrégation des préférences individuelles ne mène à une échelle sociale cohérente […]",
+      "reference": "Kenneth J. Arrow, The Possibility of a Universal Social Welfare Function, RAND Corporation, Paper P-41, 26 octobre 1948, 19 p. Numérisation DTIC (AD0603806) sur Internet Archive, p. 3, fin de la section 1 « Introduction »",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Kenneth J. Arrow, The Possibility of a Universal Social Welfare Function, RAND Corporation, Paper P-41, 26 octobre 1948, 19 p. Numérisation DTIC (AD0603806) sur Internet Archive.",
+        "kind": "primary",
+        "reference": "p. 3 et p. 9-14",
+        "url": "https://archive.org/details/DTIC_AD0603806"
+      },
+      {
+        "label": "Kenneth J. Arrow, « A Difficulty in the Concept of Social Welfare », Journal of Political Economy, vol. 58, n° 4, août 1950, p. 328-346.",
+        "kind": "primary",
+        "reference": "10.1086/256963",
+        "url": "https://doi.org/10.1086/256963"
+      },
+      {
+        "label": "Kenneth J. Arrow, Social Choice and Individual Values, Cowles Commission Monograph 12, New York, John Wiley and Sons, et Londres, Chapman and Hall, 1951",
+        "kind": "primary",
+        "url": "https://cowles.yale.edu/sites/default/files/2022-09/m12-all.pdf"
+      }
+    ]
+  },
+  {
+    "id": "independance-des-alternatives-non-pertinentes",
+    "slug": "independance-des-alternatives-non-pertinentes",
+    "title": "Indépendance des alternatives non pertinentes",
+    "authorLabel": "Kenneth J. Arrow",
+    "hookQuestion": "Une option que tous jugent la pire peut-elle changer le choix du groupe ?",
+    "shortExplanation": "Arrow la numérote Condition 3 et la tient pour intouchable : le choix social entre des options ne doit dépendre que des préférences portant sur ces options.",
+    "authors": [],
+    "themes": [
+      "agreger-des-preferences"
+    ],
+    "themeLabel": "Décider à plusieurs",
+    "attributionNote": "Rapport signé d'un seul nom sur sa page de titre : « By / Kenneth J. Arrow ». La condition y est posée, numérotée et nommée par lui, page 10 : « Condition 3 (Independence of irrelevant alternatives) », et la section 6, page 15, lui est consacrée. Le rapport ne déclare aucun précédent pour elle et ne l'attribue à personne, ce qui n'établit pas qu'elle n'en ait pas : l'antériorité n'a pas été instruite ici. Deux réserves sont écrites dans la pièce : la note 12 de la page 15 indique que les exemples de cette section ont été suggérés par des discussions avec A. Kaplan et G. E. Forsythe, ce sont les exemples et non la condition ; la page 19 remercie A. Kaplan et J. W. Youngs pour leur aide à la formulation du problème, ce qui ne déplace pas la signature.",
+    "quotation": {
+      "text": "Si z était rayé de l'existence, cela ne devrait faire aucune différence pour le résultat final […]",
+      "reference": "Kenneth J. Arrow, The Possibility of a Universal Social Welfare Function, RAND Corporation, Paper P-41, 26 octobre 1948, 19 p. Numérisation DTIC (AD0603806) sur Internet Archive, p. 15, section 6, premier exemple",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Kenneth J. Arrow, The Possibility of a Universal Social Welfare Function, RAND Corporation, Paper P-41, 26 octobre 1948, 19 p. Numérisation DTIC (AD0603806) sur Internet Archive.",
+        "kind": "primary",
+        "reference": "p. 10, p. 11 et p. 15-16",
+        "url": "https://archive.org/details/DTIC_AD0603806"
+      },
+      {
+        "label": "Kenneth J. Arrow, « A Difficulty in the Concept of Social Welfare », Journal of Political Economy, vol. 58, n° 4, août 1950, p. 328-346.",
+        "kind": "primary",
+        "reference": "10.1086/256963",
+        "url": "https://doi.org/10.1086/256963"
+      },
+      {
+        "label": "Kenneth J. Arrow, Social Choice and Individual Values, New Haven, Yale University Press, 1951 (2e éd. 1963).",
+        "kind": "primary",
+        "reference": "9780300013634",
+        "url": "https://openlibrary.org/works/OL5103552W"
+      }
+    ]
+  },
+  {
     "id": "inertie-structurelle-et-selection",
     "slug": "inertie-structurelle-et-selection",
     "title": "Inertie structurelle et sélection",
@@ -2801,6 +2954,44 @@ export const generatedConcepts: Concept[] = [
         "kind": "francophone-reception",
         "reference": "10.52497/revue-opcd.230",
         "url": "https://polen.uca.fr/revue-opcd/index.php?id=230"
+      }
+    ]
+  },
+  {
+    "id": "mythe-de-l-outil-quantitatif",
+    "slug": "mythe-de-l-outil-quantitatif",
+    "title": "Le mythe de l'outil quantitatif",
+    "authorLabel": "Christèle Boulaire, Maurice Landry, Jean-Marc Martel",
+    "hookQuestion": "Un outil quantitatif élimine-t-il les jeux politiques d'une décision ?",
+    "shortExplanation": "Le mythe : un outil neutre qui éliminerait les jeux politiques. Dans le cas étudié, il ne les a pas évincés, il a aidé à les discipliner, à argumenter et à légitimer.",
+    "authors": [],
+    "themes": [
+      "instruire-un-arbitrage"
+    ],
+    "themeLabel": "Aider quelqu'un à trancher",
+    "attributionNote": "Article cosigné par Christèle Boulaire, Maurice Landry et Jean-Marc Martel, Université Laval. Deux des trois signataires publient eux-mêmes dans l'aide à la décision qu'ils examinent : la critique vient de l'intérieur de la discipline.",
+    "quotation": {
+      "text": "S'il élimine certains jeux, il en maintient et même en crée d'autres. Son usage n'est pas neutre. Il fixe de nouvelles règles du jeu.",
+      "reference": "Christèle Boulaire, Maurice Landry et Jean-Marc Martel, « L'outil quantitatif dans l'aide à la décision. La réalité d'un mythe », Sciences de la Société, n° 39, octobre 1996, p. 87-105, p. 102, section « Image révisée de l'outil quantitatif »"
+    },
+    "sources": [
+      {
+        "label": "Christèle Boulaire, Maurice Landry et Jean-Marc Martel, « L'outil quantitatif dans l'aide à la décision. La réalité d'un mythe », Sciences de la Société, n° 39, octobre 1996, p. 87-105.",
+        "kind": "primary",
+        "reference": "10.3406/sciso.1996.1298",
+        "url": "https://www.persee.fr/doc/sciso_1168-1446_1996_num_39_1_1298"
+      },
+      {
+        "label": "Christèle Boulaire, Maurice Landry et Jean-Marc Martel, « L'outil quantitatif d'aide à la décision comme jeu et enjeu », INFOR, vol. 34, n° 4, novembre 1996, p. 274-289.",
+        "kind": "primary",
+        "reference": "10.1080/03155986.1996.11732309",
+        "url": "https://doi.org/10.1080/03155986.1996.11732309"
+      },
+      {
+        "label": "Maurice Landry, « Pour une vision élargie de la rationalité », Revue canadienne des sciences de l'administration, 1992.",
+        "kind": "primary",
+        "reference": "cité p. 89 · 10.1111/j.1936-4490.1992.tb00600.x",
+        "url": "https://doi.org/10.1111/j.1936-4490.1992.tb00600.x"
       }
     ]
   },
@@ -3480,6 +3671,45 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "programme-comme-theorie-du-comportement",
+    "slug": "programme-comme-theorie-du-comportement",
+    "title": "Le programme comme théorie du comportement",
+    "authorLabel": "Allen Newell, J. C. Shaw, Herbert A. Simon",
+    "hookQuestion": "Sous quelle forme une théorie du comportement peut-elle s'écrire ?",
+    "shortExplanation": "Expliquer un comportement observé, c'est spécifier le programme de processus élémentaires d'information qui l'engendre : une description ni neurologique ni électronique.",
+    "authors": [],
+    "themes": [
+      "chercher-plutot-que-calculer"
+    ],
+    "themeLabel": "Chercher une solution plutôt que la calculer",
+    "attributionNote": "Concept coécrit par Allen Newell, J. C. Shaw et Herbert A. Simon, signé de leurs trois noms dans Psychological Review en 1958. Le programme Logic Theorist qui l'illustre lui est antérieur, décrit dans leurs articles de 1956 et 1957.",
+    "quotation": {
+      "text": "[…] l'explication d'un comportement observé de l'organisme est fournie par un programme de processus élémentaires d'information qui l'engendre.",
+      "reference": "Newell, A., Shaw, J. C. et Simon, H. A. (1958). « Elements of a Theory of Human Problem Solving ». Psychological Review, 65(3), p. 151-166, p. 151, colonne de droite, en italiques",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Allen Newell, J. C. Shaw et Herbert A. Simon, « Elements of a Theory of Human Problem Solving », Psychological Review, vol. 65, n° 3, 1958, p. 151-166. Tiré à part numérisé, fonds Herbert A. Simon, archives de Carnegie Mellon.",
+        "kind": "primary",
+        "reference": "p. 151, 153, 155 et 163-166 · 10.1037/h0048495",
+        "url": "https://iiif.library.cmu.edu/file/Simon_box00064_fld04878_bdl0001_doc0001/Simon_box00064_fld04878_bdl0001_doc0001.pdf"
+      },
+      {
+        "label": "Allen Newell, J. C. Shaw et Herbert A. Simon, « Elements of a theory of human problem solving », Psychological Review, vol. 65, n° 3, 1958, p. 151-166, American Psychological Association.",
+        "kind": "primary",
+        "reference": "10.1037/h0048495",
+        "url": "https://doi.org/10.1037/h0048495"
+      },
+      {
+        "label": "Allen Newell, J. C. Shaw et Herbert A. Simon, « Elements of a Theory of Human Problem Solving », 1958. Second exemplaire numérisé, extrait de six pages, fonds Allen Newell, archives de Carnegie Mellon.",
+        "kind": "primary",
+        "reference": "folios 151 à 155 et 166",
+        "url": "https://iiif.library.cmu.edu/file/Newell_box00049_fld04210_doc0005/Newell_box00049_fld04210_doc0005.pdf"
+      }
+    ]
+  },
+  {
     "id": "quantifier-convenir-et-mesurer",
     "slug": "quantifier-convenir-et-mesurer",
     "title": "Quantifier : convenir et mesurer",
@@ -3590,6 +3820,45 @@ export const generatedConcepts: Concept[] = [
         "kind": "secondary-academic",
         "reference": "10.1108/S0733-558X20210000074026",
         "url": "https://doi.org/10.1108/S0733-558X20210000074026"
+      }
+    ]
+  },
+  {
+    "id": "recherche-heuristique-contre-force-brute",
+    "slug": "recherche-heuristique-contre-force-brute",
+    "title": "La recherche heuristique contre la force brute",
+    "authorLabel": "Allen Newell, J. C. Shaw, Herbert A. Simon",
+    "hookQuestion": "Comment trouver une solution quand les possibilités sont trop nombreuses ?",
+    "shortExplanation": "Trouver une solution ne tient pas à la vitesse de la machine, mais à la sélectivité : limiter l'espace fouillé ou en changer l'ordre, comme le font aussi les humains.",
+    "authors": [],
+    "themes": [
+      "chercher-plutot-que-calculer"
+    ],
+    "themeLabel": "Chercher une solution plutôt que la calculer",
+    "attributionNote": "Concept coécrit par Allen Newell, J. C. Shaw et Herbert A. Simon, signé de leurs trois noms dans Psychological Review en 1958. Le mot heuristique n'y est pas forgé : les auteurs l'emploient sans le définir ni le revendiquer.",
+    "quotation": {
+      "text": "Le succès de LT ne tient pas à la « force brute » de la vitesse d'un ordinateur, mais à des processus heuristiques comme en emploient les humains.",
+      "reference": "Newell, A., Shaw, J. C. et Simon, H. A. (1958). « Elements of a Theory of Human Problem Solving ». Psychological Review, 65(3), p. 151-166. LT est le Logic Theorist, le programme démonstrateur de théorèmes dont l'article fait son cas d'étude, p. 156, colonne de gauche, deuxième paragraphe",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Allen Newell, J. C. Shaw et Herbert A. Simon, « Elements of a Theory of Human Problem Solving », Psychological Review, vol. 65, n° 3, 1958, p. 151-166. Tiré à part numérisé, fonds Herbert A. Simon, archives de Carnegie Mellon.",
+        "kind": "primary",
+        "reference": "p. 156, 157 et 160-162 · 10.1037/h0048495",
+        "url": "https://iiif.library.cmu.edu/file/Simon_box00064_fld04878_bdl0001_doc0001/Simon_box00064_fld04878_bdl0001_doc0001.pdf"
+      },
+      {
+        "label": "Allen Newell, J. C. Shaw et Herbert A. Simon, « Elements of a theory of human problem solving », Psychological Review, vol. 65, n° 3, 1958, p. 151-166, American Psychological Association.",
+        "kind": "primary",
+        "reference": "10.1037/h0048495",
+        "url": "https://doi.org/10.1037/h0048495"
+      },
+      {
+        "label": "Allen Newell, J. C. Shaw et Herbert A. Simon, « Elements of a Theory of Human Problem Solving », 1958. Second exemplaire numérisé, extrait de six pages, fonds Allen Newell, archives de Carnegie Mellon.",
+        "kind": "primary",
+        "reference": "folios 151 à 155 et 166",
+        "url": "https://iiif.library.cmu.edu/file/Newell_box00049_fld04210_doc0005/Newell_box00049_fld04210_doc0005.pdf"
       }
     ]
   },

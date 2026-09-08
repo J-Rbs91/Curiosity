@@ -1,0 +1,105 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "programme-comme-theorie-du-comportement",
+  "slug": "programme-comme-theorie-du-comportement",
+  "status": "VALIDATED",
+  "title": "Le programme comme théorie du comportement",
+  "themes": [
+    "chercher-plutot-que-calculer"
+  ],
+  "theme_labels": {
+    "chercher-plutot-que-calculer": "Chercher une solution plutôt que la calculer"
+  },
+  "authors": [
+    {
+      "name": "Allen Newell",
+      "app_author_id": null
+    },
+    {
+      "name": "J. C. Shaw",
+      "app_author_id": null
+    },
+    {
+      "name": "Herbert A. Simon",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "Concept coécrit par Allen Newell, J. C. Shaw et Herbert A. Simon, signé de leurs trois noms dans Psychological Review en 1958. Le programme Logic Theorist qui l'illustre lui est antérieur, décrit dans leurs articles de 1956 et 1957.",
+  "hook": "Sous quelle forme une théorie du comportement peut-elle s'écrire ?",
+  "summary": "Expliquer un comportement observé, c'est spécifier le programme de processus élémentaires d'information qui l'engendre : une description ni neurologique ni électronique.",
+  "quotation": {
+    "text": "[…] l'explication d'un comportement observé de l'organisme est fournie par un programme de processus élémentaires d'information qui l'engendre.",
+    "reference": "Newell, A., Shaw, J. C. et Simon, H. A. (1958). « Elements of a Theory of Human Problem Solving ». Psychological Review, 65(3), p. 151-166.",
+    "locator": "p. 151, colonne de droite, en italiques",
+    "language": "fr",
+    "original_text": "At this level of theorizing, an explanation of an observed behavior of the organism is provided by a program of primitive information processes that generates this behavior.",
+    "original_language": "en",
+    "translation": {
+      "kind": "in-house",
+      "translator": "Traduction interne non publiée (agent lecteur primaire, chaîne Curiosity). Aucune traduction française publiée de cet article n'a été identifiée. Trois choix à signaler. Premièrement, la coupe : la proposition initiale « At this level of theorizing, » est retirée et marquée par […] en tête, parce que le français complet fait 182 caractères pour 150 admis ; l'original entier est conservé en original_text, et la restriction que cette proposition porte, à savoir que l'énoncé vaut au niveau de théorisation choisi et non absolument, est rendue explicite ici plutôt que silencieusement perdue. Deuxièmement, « that generates this behavior » est rendu par le pronom « qui l'engendre », qui renvoie à « comportement observé » : c'est une compression, non une coupe, et elle sert le même plafond de 150 caractères. Troisièmement, « primitive information processes » est rendu par « processus élémentaires d'information » et non par « processus primitifs » : les auteurs emploient eux-mêmes « elementary information processes » comme synonyme deux pages plus loin (p. 153, « in terms of certain elementary information processes it is capable of performing »), ce qui autorise le mot français sans l'inventer.",
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "Allen Newell, J. C. Shaw et Herbert A. Simon, « Elements of a Theory of Human Problem Solving », Psychological Review, vol. 65, n° 3, 1958, p. 151-166. Tiré à part numérisé, fonds Herbert A. Simon, archives de Carnegie Mellon.",
+      "kind": "primary",
+      "locator": "p. 151, 153, 155 et 163-166",
+      "doi_isbn": "10.1037/h0048495",
+      "url": "https://iiif.library.cmu.edu/file/Simon_box00064_fld04878_bdl0001_doc0001/Simon_box00064_fld04878_bdl0001_doc0001.pdf",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Allen Newell, J. C. Shaw et Herbert A. Simon, « Elements of a theory of human problem solving », Psychological Review, vol. 65, n° 3, 1958, p. 151-166, American Psychological Association.",
+      "kind": "primary",
+      "locator": "p. 151-166",
+      "doi_isbn": "10.1037/h0048495",
+      "url": "https://doi.org/10.1037/h0048495",
+      "consulted": "metadata-only"
+    },
+    {
+      "label": "Allen Newell, J. C. Shaw et Herbert A. Simon, « Elements of a Theory of Human Problem Solving », 1958. Second exemplaire numérisé, extrait de six pages, fonds Allen Newell, archives de Carnegie Mellon.",
+      "kind": "primary",
+      "locator": "folios 151 à 155 et 166",
+      "doi_isbn": null,
+      "url": "https://iiif.library.cmu.edu/file/Newell_box00049_fld04210_doc0005/Newell_box00049_fld04210_doc0005.pdf",
+      "consulted": "partial"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle",
+    "date": "2026-09-08",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "EXEMPLAIRE EMPLOYÉ — J'ai téléchargé moi-même https://iiif.library.cmu.edu/file/Simon_box00064_fld04878_bdl0001_doc0001/Simon_box00064_fld04878_bdl0001_doc0001.pdf (HTTP 200, 1 727 162 octets, MD5 05eb104a6875bb9aee062f0e21b1f1b5). Attention : la commande `file` annonce « 5 page(s) » sur ce fichier, ce qui est faux ; PyMuPDF l'ouvre à 16 pages. J'ai compté les folios imprimés un par un, sur les images rendues et non sur l'OCR, en lisant l'en-tête ou le pied propre à chaque page : folio 151 au pied de la première page (sous le titre « ELEMENTS OF A THEORY OF HUMAN PROBLEM SOLVING » et l'en-tête « Psychological Review / Vol. 65, No. 3, 1958 »), puis les titres courants « ALLEN NEWELL, J. C. SHAW, AND HERBERT A. SIMON » avec 152, 154, 156, 158, 160, 162, 164, 166 sur les pages paires et « THEORY OF HUMAN PROBLEM SOLVING » avec 153, 155, 157, 159, 161, 163, 165 sur les impaires. Les seize folios 151-166 sont présents, aucun ne manque : cet exemplaire porte l'article entier. Le dernier folio (166) se termine par la liste des dix références et la mention « (Received July 10, 1957) ».",
+      "SECOND EXEMPLAIRE, l'amputé — https://iiif.library.cmu.edu/file/Newell_box00049_fld04210_doc0005/Newell_box00049_fld04210_doc0005.pdf (HTTP 200, 717 231 octets, MD5 6a3d0c853b0d8ea1ba06f95d37cc2a30), 6 pages. Folios relevés un par un sur les en-têtes imprimés : 151 (première page, avec la mention manuscrite « # 65 » en marge), 152, 153, 154, 155, puis directement 166 — les folios 156 à 165 sont absents du fichier. C'est bien l'exemplaire tronqué dont il faut se méfier, et la fiche ne s'y trompe pas : elle le déclare « extrait de six pages », locator « folios 151 à 155 et 166 », consulted « partial ». La déclaration correspond exactement au feuilletage. Rien à corriger de ce côté : le piège est correctement désamorcé par la fiche elle-même.",
+      "CITATION — Le passage se lit au folio 151, colonne de droite, dernier paragraphe avant « A program viewed as a theory of behavior… ». Relu sur l'image rendue à 3× (et non sur la couche OCR) : « At this level of theorizing, an ex-/planation of an observed behavior of / the organism is provided by a program / of primitive information processes that / generates this behavior. » L'`original_text` de la fiche est mot pour mot celui-là. Le locator est juste jusqu'au détail typographique : l'italique de l'imprimé commence précisément à « an explanation » et court jusqu'à « generates this behavior », tandis que « At this level of theorizing, » est en romain — c'est-à-dire que la coupe marquée par […] dans la citation française tombe exactement sur la frontière de l'italique. Contre-vérification sur une numérisation indépendante des archives CMU (https://nteucampus.org/sites/default/files/lesson-docs/Newell%20-%20Elements%20of%20a%20theory%20of%20human%20problem%20solving.pdf, 16 pages) : phrase identique, caractère pour caractère.",
+      "TRADUCTION — Déclarée : `kind: in-house`, traducteur nommé comme interne non publié, original anglais donné en entier, coupe signalée par […] et justifiée. Les trois choix annoncés se vérifient sur le texte. (a) La coupe de « At this level of theorizing, » retire bien une restriction, et la note la restitue explicitement plutôt que de la perdre. (b) « qui l'engendre » pour « that generates this behavior » est une compression fidèle : le pronom renvoie sans ambiguïté à « comportement observé ». (c) « processus élémentaires d'information » pour « primitive information processes » : la justification donnée est exacte, j'ai lu la phrase invoquée sur l'image du folio 153, colonne de gauche — « Our position is that the appropriate way to describe a piece of problem-solving behavior is in terms of a program: a specification of what the organism will do under varying environmental circumstances in terms of certain elementary information processes it is capable of performing. » Les auteurs emploient bien les deux syntagmes pour la même chose ; ils écrivent d'ailleurs « elementary information processes » aussi au folio 152 (« compounded out of elementary information processes ») et au folio 166 (« defined in terms of elementary information processes »). Le mot français n'est pas inventé. Aucune traduction française publiée de cet article ne ressort de mes recherches non plus, ce que la fiche déclare.",
+      "ATTRIBUTION — La signature imprimée, lue sur l'image du folio 151, porte trois noms sur deux affiliations : « ALLEN NEWELL, J. C. SHAW / The RAND Corporation / AND HERBERT A. SIMON / Carnegie Institute of Technology ». La fiche nomme les trois, dans cet ordre, et parle de concept « coécrit » : exact, aucune cosignature n'est escamotée. Crossref confirme indépendamment (https://api.crossref.org/works/10.1037/h0048495) : Newell (sequence first), Shaw, Simon ; Psychological Review ; vol. 65, n° 3, p. 151-166, 1958, APA.",
+      "ATTRIBUTION, vérification du piège de la charnière — L'énoncé cité n'est pas une thèse rapportée dont les auteurs se démarqueraient. Il vient après la charnière et non avant : le folio 151 pose d'abord « The theory to be described here explains problem-solving behavior in terms of what we shall call information processes », puis « The theory postulates: 1… 2… 3… », et la phrase citée conclut cette énumération par « At this level of theorizing, … ». C'est leur propre théorie, et l'italique est leur propre mise en relief.",
+      "ATTRIBUTION, vérification en sens inverse — J'ai cherché ce que la fiche pourrait indûment leur prêter, et n'ai rien trouvé. La note d'attribution ne dit ni qu'ils forgent un terme, ni qu'ils sont les premiers à penser le programme comme théorie : elle dit seulement que le concept est coécrit et signé de leurs trois noms en 1958. C'est prudent à bon escient, car les auteurs eux-mêmes reconnaissent des devanciers, note 2 du folio 153 : « We can, in fact, find a number of attempts in the psychological literature to explain behavior in terms of programs or the prototypes thereof. One of the most interesting […] is Adrian de Groot's analysis of problem solving by chess players (2). The theory of de Groot is based on the thought-psychology of Selz […] Quite recently, and apparently independently, we find the same idea applied by Jerome S. Bruner and his associates […] Bruner uses the term “strategy,” derived from economics and game theory, for what we have called a program. » De même au folio 152 : « From this standpoint there is nothing particularly novel about the theory. It rests its claims on other considerations… ». Une fiche qui aurait revendiqué la paternité absolue de l'idée aurait été contredite par ces deux passages ; celle-ci ne le fait pas.",
+      "ATTRIBUTION, l'antériorité du Logic Theorist — La note dit le programme « antérieur, décrit dans leurs articles de 1956 et 1957 ». Vérifié sur la bibliographie imprimée du folio 166 : réf. 8, Newell & Simon, « The logic theory machine: A complex information processing system », IRE Transactions on Information Theory, 1956, IT-2, n° 3, 61-79 ; réf. 6, Newell & Shaw, « Programming the logic theory machine », Proceedings WJCC, 1957, 230-240 ; réf. 7, Newell, Shaw & Simon, « Empirical explorations with the logic theory machine », Proceedings WJCC, 1957, 218-230. Les dates annoncées sont les bonnes. Une précision facultative, qui ne fait pas réserve : ces trois articles ne sont pas tous cosignés des trois (1956 = Newell et Simon ; l'un des deux de 1957 = Newell et Shaw), de sorte que « leurs articles » vaut collectivement pour le groupe et non pour le trio à chaque fois.",
+      "SOURCES — (1) Tiré à part du fonds Simon : l'URL IIIF résout (HTTP 200) vers l'article annoncé, seize folios complets ; le libellé « tiré à part » et « fonds Herbert A. Simon » est corroboré par la notice CMU correspondante, intitulée « Reprint #155 — “Elements of a Theory of Human Problem Solving” — Simon, Newell, and Shaw — PSYCHOLOGICAL REVIEW 65:3 » (https://digitalcollections.library.cmu.edu/node/35224, handle http://doi.library.cmu.edu/10.1184/pmc/simon/box00064/fld04878/bdl0001/doc0001, dont l'arborescence box00064/fld04878/bdl0001/doc0001 est exactement celle de l'identifiant IIIF). Le `consulted: full-text` est justifié et les folios du locator (151, 153, 155, 163-166) sont tous présents. (2) DOI 10.1037/h0048495 : `curl -I` sur https://doi.org/10.1037/h0048495 renvoie 302 vers https://doi.apa.org/doi/10.1037/h0048495 ; la notice Crossref donne titre, revue, volume, numéro, pagination, année, éditeur et les trois auteurs dans l'ordre, tous conformes au libellé de la fiche. (3) Extrait du fonds Newell : l'URL IIIF résout (HTTP 200) ; le handle http://doi.library.cmu.edu/10.1184/pmc/newell/box00049/fld04210/doc0005 renvoie un 302 vers le catalogue CMU, ce qui confirme l'appartenance au fonds Newell (espace de noms pmc/newell) ; le contenu est bien l'extrait de six folios décrit. Les trois références résolvent vers ce qu'elles annoncent.",
+      "PROSE — L'accroche « Sous quelle forme une théorie du comportement peut-elle s'écrire ? » est une question ouverte que le texte porte littéralement : folio 151, « A program viewed as a theory of behavior is highly specific » ; folio 166, « the behavior of a system by a well specified program, defined in terms of elementary information processes. In this approach, a specific program plays the role that is played in classical systems of applied mathematics by a specific system of differential equations. » Le résumé ne déborde sur aucun de ses trois membres. « Expliquer un comportement observé, c'est spécifier le programme […] qui l'engendre » reprend la phrase citée du folio 151 et la position du folio 153 (« the appropriate way to describe a piece of problem-solving behavior is in terms of a program: a specification of… »), laquelle est posée sans la restriction de niveau et autorise donc la formulation catégorique du résumé. « Ni neurologique » et « ni électronique » ne sont pas des adjectifs ajoutés par nous : ils traduisent une phrase de l'imprimé, relue sur l'image du folio 163, colonne de gauche — « Our theory is a theory of the information processes involved in problem solving, and not a theory of neural or electronic mechanisms for information processing » — appuyée par « We have avoided, however, specifying these mechanisms in neurological or pseudo-neurological terms » (même colonne) et par le folio 153, « This assertion has nothing to do—directly—with computers. Such programs could be written […] if computers had never existed. » Rien dans l'accroche ni dans le résumé n'excède les sources.",
+      "NON ATTEINT, déclaré — La page de notice https://digitalcollections.library.cmu.edu/node/35224 ne m'a pas été rendue en propre : WebFetch a répondu HTTP 503 Service Unavailable à deux reprises, et `curl` (avec le bundle par défaut puis avec --cacert /root/.ccr/ca-bundle.crt) a échoué en erreur 60, « unable to get local issuer certificate ». Je n'ai donc de cette notice que le titre et le handle tels que restitués par la recherche, que je signale comme tels ; le fichier lui-même, en revanche, je l'ai ouvert et lu page à page. Je n'ai pas ouvert non plus la page APA derrière le DOI (le contrôle s'est fait sur la notice Crossref et sur l'imprimé), ce que la fiche annonce d'ailleurs comme `metadata-only`.",
+      "HORS DES QUATRE POINTS, sans effet sur le verdict — Deux détails de commodité pour un lecteur qui rouvrirait le dossier : la couche OCR du tiré à part Simon est fautive par endroits (« THEORY OP HUMAN PROBLEM SOLVING » aux folios 153, 155, 157 ; « ALIEN NEWELL » au folio 166 ; « symbolLzation » au folio 151), ce qui rend toute vérification sur texte extrait trompeuse et impose la relecture sur image ; et l'utilitaire `file` sous-compte les pages des deux PDF IIIF (5 au lieu de 16, 6 au lieu de 6), de sorte qu'un contrôle qui s'y fierait conclurait à tort que l'exemplaire Simon est tronqué."
+    ]
+  },
+  "dossier": "corpus/evidence/programme-comme-theorie-du-comportement/lecture.json",
+  "notes": [
+    "Thème nouveau : « chercher-plutot-que-calculer » n'est pas déclaré dans src/content/themes.ts. La carte porte son libellé et déclare son domaine ; l'avertissement du validateur est attendu, et le thème sera déclaré à la réception, après le contrôle aveugle.",
+    "L'exemplaire qui fait foi est le doublon du fonds Simon, Simon_box00064_fld04878_bdl0001_doc0001 : seize folios, 151 à 166, sans lacune. Le tiré à part du fonds Newell n'en porte que six, les folios 156 à 165 y manquant ; il ne sert que de contre-lecture typographique sur les pages communes, et sa notice l'intitule « Proposed Anthology, IN THE BEGINNING: EARLY CONTRIBUTIONS TO ARTIFICIAL INTELLIGENCE ».",
+    "Autorisation lue sur le manifeste IIIF de l'item, https://iiif.library.cmu.edu/file/Simon_box00064_fld04878_bdl0001_doc0001/manifest.json : licence « http://rightsstatements.org/vocab/InC-NC/1.0/ », c'est-à-dire In Copyright, Non-Commercial Use Permitted, et attribution « Provided by Carnegie Mellon University Archives & Special Collections ». Ce n'est pas du domaine public et il ne faut pas l'écrire comme tel.",
+    "Locator de la citation abrégé pour l'affichage. Le dossier de lecture le donne en entier : « p. 151, colonne de droite, phrase mise en italiques par les auteurs, section Information Processing Systems ». La phrase est imprimée en italiques dans l'original, mise en relief par les auteurs eux-mêmes.",
+    "Ce que la carte ne dit pas, et ne doit pas dire : ni « means-ends » ni « problem space » n'ont la moindre occurrence dans ce texte (recherche plein texte sur l'exemplaire), la seule formule voisine de moyens et de fins, p. 164, étant rapportée à Selz et de Groot ; et l'apprentissage y est explicitement différé, p. 165, « LT is primarily a performance machine ».",
+    "Fiche jumelle tirée du même article : recherche-heuristique-contre-force-brute, qui porte sur la façon dont une solution est trouvée. Celle-ci porte sur ce qu'est une explication d'un comportement. Les deux ne se recouvrent pas.",
+    "Aucune source de réception n'est affichée : le dossier de lecture n'en a établi aucune pour ce texte, et ce lot de rédaction n'a mené aucune recherche documentaire. La lacune est déclarée plutôt que comblée.",
+    "Aucune traduction française publiée de cet article n'a été identifiée ; la traduction affichée est interne et déclarée comme telle. Les bases francophones de sciences cognitives et les recueils de textes fondateurs traduits n'ont pas été interrogés un à un, le serveur documentaire étant en échec de connexion : c'est une lacune de méthode, pas un constat d'absence.",
+    "Deux autres exemplaires ont été cherchés par le lecteur et n'ont pas été obtenus : la version indexée par DTIC sous AD0422568 répond HTTP 403 sur apps.dtic.mil, la version RAND P-971 répond HTTP 403 sur rand.org. La fiche repose donc sur un seul fonds, celui de Carnegie Mellon."
+  ]
+}

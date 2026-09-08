@@ -1,0 +1,54 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "apprentissage-comme-recherche-heuristique",
+  "lead": [
+    "Deux personnes butent sur le même problème de géométrie. L’une le voit se défaire en quelques minutes, l’autre tourne autour pendant une heure. Ce n’est pas que la première calcule plus vite : elle repère, dans la figure qu’elle a sous les yeux, quel écart sépare ce qu’elle tient de ce qu’elle cherche, et quelle construction réduira cet écart. Ce qu’elle a gagné avec l’exercice ressemble moins à une méthode nouvelle qu’à un regard exercé sur le terrain. Si l’on voulait fabriquer une machine qui progresse de cette manière, il faudrait savoir dire ce qui, en elle, aurait à changer.",
+    "La question a une date et un lieu : les 5 et 6 mai 1959, à Chicago, une conférence interdisciplinaire consacrée aux systèmes auto-organisateurs. Allen Newell, J. C. Shaw et Herbert Simon y viennent avec un programme de résolution de problèmes qu’ils ont décrit ailleurs, et avec une proposition qu’ils avancent avec une prudence visible dès leurs premières pages : leur analyse, préviennent-ils, est encore incomplète. Ils ne présentent pas une machine qui apprend. Ils cherchent l’endroit exact où, dans une machine de ce genre, l’apprentissage devrait se loger."
+  ],
+  "sections": [
+    {
+      "title": "Ce qu’un programme doit savoir du terrain",
+      "paragraphs": [
+        "Le programme dont il est question compare deux choses : la situation où il se trouve et celle qu’il vise. Il nomme la différence entre les deux, puis cherche dans son répertoire une opération capable de la réduire ; si cette opération ne s’applique pas telle quelle, il se donne pour nouveau but de rendre son application possible, et recommence. Le chapitre rappelle ce fonctionnement en trois pages et le désigne comme une chose déjà nommée, « what we usually call means-end analysis », ce que nous appelons d’ordinaire l’analyse moyens-fins. L’expression renvoie à deux rapports antérieurs des mêmes auteurs, l’un d’août 1958 sur les processus de la pensée créatrice, l’autre de janvier 1959 sur le programme général de résolution de problèmes. Ils l’écrivent sans détour p. 155 : leur programme et ses performances ont été décrits en détail dans d’autres publications, et ils n’en donnent ici que de quoi rendre la suite compréhensible à qui ne les connaît pas.",
+        "Reste à savoir ce qu’un programme pareil doit posséder avant de commencer. Trois choses, que le texte réunit sous un seul terme : les objets du domaine où il travaille, les opérations qu’il peut leur appliquer, et la liste des différences qu’il sait remarquer entre deux objets. Cet ensemble, le chapitre l’appelle task environment, l’environnement de la tâche, et il en donne lui-même la teneur p. 155 et p. 160. Ce n’est ni un décor ni un contexte au sens vague : c’est la description sur laquelle toute la recherche s’appuie, et hors de laquelle le programme ne peut rien remarquer."
+      ]
+    },
+    {
+      "title": "Apprendre traité comme un problème à résoudre",
+      "paragraphs": [
+        "Comment un tel programme pourrait-il devenir meilleur ? On pourrait lui adjoindre un mécanisme d’apprentissage séparé, chargé de le corriger du dehors. Les auteurs prennent une autre route, et elle tient dans une hypothèse : choisir une bonne description du domaine est peut-être, en soi, un problème de la sorte que le programme sait déjà traiter. Ce qui reviendrait à le laisser être son propre programme d’apprentissage, « it may be possible to let GPS be its own learning program ».",
+        "Le mode du verbe fait ici tout le travail, et il n’y a pas à le durcir : peut-être. L’annonce de leur propos est du même ordre, suivre cette piste pour voir où elle mène, avec l’avertissement que l’analyse restera incomplète. Ce n’est pas une modestie de façade, c’est le statut réel de ce qui suit.",
+        "Le texte se démarque au passage d’une autre façon d’envisager l’affaire. Il mentionne en note, p. 155, le programme d’apprentissage de Friedberg, dont l’intérêt, écrit-il, tient à ce que l’ensemble de composants dans lequel ce programme puise est celui de tous les programmes possibles, un ensemble très vaste. On peut lire ce rapprochement comme une façon de situer ce qui est proposé ici : le choix dont il s’agit porte sur un objet bien plus étroit que l’espace de tous les programmes concevables, à savoir la description d’un domaine de travail."
+      ]
+    },
+    {
+      "title": "Ce que ces programmes d’apprentissage modifient",
+      "paragraphs": [
+        "L’énoncé de conception qui en résulte est net, et c’est l’un des rares du texte à n’être pas au conditionnel. P. 161, les auteurs écrivent que ces programmes d’apprentissage ne changent pas le noyau du système : ils modifient la spécification de l’environnement, « These learning programs do not change the core of GPS; instead, they modify the specification of the environment ».",
+        "La portée de cette phrase est plus grande qu’elle n’en a l’air, parce qu’elle sépare deux questions qu’on confond volontiers : comment on cherche, et ce qu’on sait du terrain où l’on cherche. La machinerie de recherche reste la même d’un domaine à l’autre ; ce qui varie, et ce qui pourrait s’acquérir, appartient à la description : les différences que le programme sait remarquer, et ce qui, dans le domaine, se rattache à quoi. L’une des sections du chapitre, p. 162, porte précisément sur l’acquisition d’une de ces pièces, sous le titre « Learning the Table of Connections ».",
+        "Une conséquence immédiate mérite d’être dite, car elle change la manière de poser la question de départ. Si ce qui s’apprend tient dans la description du domaine, alors progresser ne consiste pas à devenir plus intelligent en général, mais à savoir mieux de quoi est fait le terrain sur lequel on travaille. C’est une hypothèse de conception, pas un résultat expérimental ; elle a l’avantage de désigner un objet précis auquel s’en prendre."
+      ]
+    },
+    {
+      "title": "Ce que « caractériser efficacement » veut dire ici",
+      "paragraphs": [
+        "Efficace, dans ces pages, ne veut dire ni rapide ni économique. Une caractérisation efficace est celle qui permet effectivement de résoudre. L’emploi parallèle du même folio le montre : les différences réunies dans la figure 6 y sont présentées comme des traits de l’environnement de la tâche logique « that are effective for problem solving in that environment », des traits qui permettent de résoudre des problèmes dans cet environnement. Une description peut être exacte et rester inutile ; ce qui est demandé n’est pas sa vérité, mais son rendement pour la recherche.",
+        "Le partage des rôles, dans ce chapitre, demande une seconde d’attention. Ce qui y est affirmé de l’apprentissage humain et ce qui y est proposé pour le programme ne sont pas au même endroit. La phrase du folio 161 déclare que ce genre d’apprentissage, apprendre à caractériser efficacement l’environnement d’une tâche, est important et répandu chez les humains ; elle ne dit pas comment les humains s’y prennent, et le mécanisme exposé ensuite est celui d’un programme. Prendre la première pour une thèse de psychologie que le second démontrerait serait lui faire dire davantage qu’elle ne dit."
+      ]
+    },
+    {
+      "title": "Une simulation menée à la main",
+      "paragraphs": [
+        "Il faut maintenant dire ce qui, dans tout cela, a tourné : rien. Le mécanisme exposé dans ces pages a été déroulé à la main par ses auteurs, sur un seul domaine, la logique. Le tableau 5 s’intitule « Sketch of Hand Simulation with Logic as the A-Environment », esquisse d’une simulation à la main, et il se termine sur la mention que la simulation a été arrêtée à ce point, « The simulation was terminated at this point ».",
+        "Les auteurs ne le dissimulent pas, ils l’écrivent. P. 180 : ce qu’ils donnent est loin de suffire pour que quiconque vérifie ce qu’ils ont fait, et ils avancent leur schéma dans un esprit très provisoire, « we put the scheme forward in a very tentative spirit ». P. 186 : la possibilité qu’ils viennent d’envisager n’est aucunement mise à l’épreuve, « This possibility is quite untested », leur travail s’étant borné à la tâche logique.",
+        "Dans la discussion transcrite à la suite du chapitre, un participant demande sur quelle machine tout ceci se fait. C’est Newell seul qui répond, et sa réponse est sans ambiguïté : le programme est sur le Johnniac de la RAND, le travail dont il parle est entièrement une simulation à la main, et le programme, en cours de mise au point, « is not yet solving any problems », ne résout encore aucun problème. Ces phrases sont les siennes, prononcées en séance, et la signature commune du chapitre ne les couvre pas.",
+        "Ce constat ne dévalue pas le texte, il en fixe le genre. Ce qu’on lit là est une proposition de conception, argumentée puis déroulée à la main jusqu’à un point d’arrêt, et non le compte rendu d’un programme qui aurait appris quoi que ce soit. Les deux se ressemblent de loin ; ils ne valent pas la même chose, et l’écart entre les deux est exactement ce que ces trente-sept pages laissent ouvert."
+      ]
+    }
+  ],
+  "limits": [
+    "La description complète du programme et de ses performances est ailleurs, dans deux rapports de la RAND que les auteurs nomment eux-mêmes : P1320, sur les processus de la pensée créatrice, août 1958, et P1584, sur le programme général de résolution de problèmes, janvier 1959. C’est vers eux que le chapitre renvoie lorsqu’il rappelle l’analyse moyens-fins, et c’est eux que vise le folio 160 quand il fait état de problèmes de logique, de trigonométrie et d’algèbre élémentaire résolus. Sur quoi ces résultats reposaient en 1959, ces deux rapports le diront à qui les ouvrira.",
+    "La seule trace de réception repérée à ce jour est un compte rendu signé de Stafford Beer, paru dans la revue OR en juin 1961, et il porte sur le volume entier plutôt que sur ce chapitre. Ce qu’un lecteur de 1961 retenait d’un recueil où voisinaient l’apprentissage des machines et les systèmes nerveux, et s’il a distingué ces trente-sept pages parmi les autres, c’est cette page de juin 1961 qui le dit ; elle attend son lecteur.",
+    "Rien de ce chapitre n’existe en français : aucune traduction publiée du texte ni du volume qui le porte, aucune reprise francophone identifiée. Toute lecture française part donc de l’anglais, et task environment y garde sa littéralité, environnement de la tâche, sans usage français attesté sur lequel s’appuyer. Les fonds francophones, de Persée à HAL, d’OpenEdition à theses.fr, restent à interroger : ce silence désigne une recherche à mener, non une absence constatée."
+  ]
+}

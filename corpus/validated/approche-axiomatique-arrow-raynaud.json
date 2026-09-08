@@ -1,0 +1,100 @@
+{
+  "$schema": "../schema/carte.schema.json",
+  "id": "approche-axiomatique-arrow-raynaud",
+  "slug": "approche-axiomatique-arrow-raynaud",
+  "status": "VALIDATED",
+  "title": "L'approche axiomatique Arrow-Raynaud",
+  "themes": [
+    "instruire-un-arbitrage"
+  ],
+  "theme_labels": {
+    "instruire-un-arbitrage": "Aider quelqu'un à trancher"
+  },
+  "authors": [
+    {
+      "name": "Kenneth J. Arrow",
+      "app_author_id": null
+    },
+    {
+      "name": "Hervé Raynaud",
+      "app_author_id": null
+    }
+  ],
+  "attribution_note": "L'article est signé « par Jacques Pasquier-Dorthe et Hervé Raynaud » (p. 11). L'approche qu'il présente n'est pourtant pas attribuée par lui à ses deux signataires : elle y est dite « le fruit d'une longue collaboration entre Kenneth Arrow et Hervé Raynaud », et le texte parle d'Arrow et de Raynaud à la troisième personne d'un bout à l'autre alors même que Raynaud le cosigne (« H. Raynaud a démontré les théorèmes suivants », p. 16 ; « Arrow et Raynaud, dans leur approche, proposent », p. 17). Jacques Pasquier-Dorthe cosigne donc la présentation en français, et aucun résultat ne lui est attribué dans l'article. 1995 est le millésime de l'article et non celui de l'approche, que le texte dit antérieure de quelques années sans jamais la dater. La cosignature d'Arrow et de Raynaud est attestée hors de ce texte par leur ouvrage commun de 1986, qui n'a pas été ouvert.",
+  "hook": "Chaque méthode multicritère est la recette de son auteur : comment choisir ?",
+  "summary": "Une méthode multicritère se choisit sur ses propriétés logiques, les axiomes qu'elle vérifie : aucun système d'axiomes unique ne convient à tous les problèmes.",
+  "quotation": {
+    "text": "On entend par axiome toute propriété logique que doit vérifier une méthode choisie par le décideur.",
+    "reference": "Jacques Pasquier-Dorthe et Hervé Raynaud, « Un outil d'aide à la décision multicritère », Revue française de gestion, n° 106, novembre-décembre 1995, p. 11-21.",
+    "locator": "p. 13, première colonne, fin de la section I",
+    "language": "fr",
+    "original_text": null,
+    "original_language": null,
+    "translation": {
+      "kind": "none",
+      "translator": null,
+      "edition": null
+    }
+  },
+  "sources": [
+    {
+      "label": "Jacques Pasquier-Dorthe et Hervé Raynaud, « Un outil d'aide à la décision multicritère », Revue française de gestion, n° 106, novembre-décembre 1995, p. 11-21. Fac-similé Persée.",
+      "kind": "primary",
+      "locator": "p. 11-21",
+      "doi_isbn": null,
+      "url": "https://www.persee.fr/doc/rfg_0338-4551_1995_num_106_1_6849",
+      "consulted": "full-text"
+    },
+    {
+      "label": "Kenneth J. Arrow et Hervé Raynaud, Social Choice and Multicriterion Decision-Making, Cambridge (Mass.), The MIT Press, 1986, vii-127 p.",
+      "kind": "primary",
+      "locator": null,
+      "doi_isbn": "ISBN 0-262-01087-9",
+      "url": "https://openlibrary.org/books/OL2538942M",
+      "consulted": "metadata-only"
+    },
+    {
+      "label": "Hervé Raynaud, Logique de la décision managériale, avec la collaboration de Kenneth J. Arrow, Paris, Hermès science publications-Lavoisier, collection Recherche opérationnelle, 2011, 448 p.",
+      "kind": "primary",
+      "locator": null,
+      "doi_isbn": "ISBN 978-2-7462-3190-0",
+      "url": "https://catalogue.bnf.fr/ark:/12148/cb42407853x",
+      "consulted": "metadata-only"
+    }
+  ],
+  "review": {
+    "reviewer": "contrôle aveugle",
+    "date": "2026-09-08",
+    "attribution": "confirmee",
+    "quotation": "verbatim",
+    "sources": "resolvent",
+    "prose": "fidele",
+    "verdict": "PASS",
+    "rounds": 1,
+    "notes": [
+      "PIÈCE PRINCIPALE OUVERTE. https://www.persee.fr/doc/rfg_0338-4551_1995_num_106_1_6849 (HTTP 200, citation_title « Un outil d'aide à la décision multicritère » dès la première requête, pas d'incident de cache), puis les onze pages du texte intégral par ?pageId=T1_11 à T1_21, chacune revérifiée par son citation_title (11/11 conformes). Métadonnées Persée : citation_firstpage 11, citation_lastpage 21, citation_year 1995, citation_volume 106, citation_author « Pasquier-Dorthe, Jacques » et « Raynaud, Hervé ». Pied de page imprimé « NOVEMBRE-DECEMBRE 1995 » lu sur les pages impaires : le millésime « n° 106, novembre-décembre 1995 » de la fiche est celui de l'imprimé.",
+      "CITATION RELUE SUR L'IMAGE, pas sur l'OCR. Dérivé https://www.persee.fr/renderPage/rfg_0338-4551_1995_num_106_1_6849/rfg_0338-4551_1995_num_106_1_T1_0013_0000_1400.jpg (200, 1611x2354). Colonne de gauche, tout en haut du corps de texte : « de formaliser ce que doit être «le meilleur» candidat aux yeux du décideur de notre cas. On entend par axiome toute propriété logique que doit vérifier une méthode choisie par le décideur. Comme nous allons le voir, […] ». La phrase de la fiche est identique caractère pour caractère, ponctuation comprise. Le locator « p. 13, première colonne, fin de la section I » est exact : sur le même recadrage (crop 0-820 x 850-1750) le titre « II. — LE PRINCIPE DE CONDORCET » vient après, dans la même colonne de gauche. Le piège de l'exergue de marge a été écarté : l'exergue de la p. 13 porte une autre phrase (« Certaines règles, pourtant très naturelles, sont impuissantes… », reprise du corps en colonne de droite), pas celle de la fiche, qui n'apparaît qu'une fois sur la page.",
+      "ATTRIBUTION, CE QUE DIT L'ARTICLE. Signature p. 11 : « par Jacques Pasquier-Dorthe et Hervé Raynaud ». L'article n'attribue pas l'approche à ses signataires : « une approche […] développée il y a quelques années sous le nom d'approche axiomatique Arrow-Raynaud » et « Les outils présentés ici sont le fruit d'une longue collaboration entre Kenneth Arrow et Hervé Raynaud » (p. 11). Le texte parle d'Arrow et de Raynaud à la troisième personne de bout en bout, alors même que Raynaud cosigne : « H. Raynaud a démontré [note 5] les théorèmes suivants » (p. 16), « Arrow et Raynaud, dans leur approche, proposent » (p. 17), « préconisée par Arrow et Raynaud comme étant leur méthode » (p. 18), « Pour Arrow et Raynaud, l'obstination de ceux qui prétendent… » (p. 19), « les auteurs eux-mêmes sont les premiers à dire » (p. 21). Le « nous » du texte est celui des exposants (« Parmi les objectifs que nous nous étions fixés dans la rédaction de cet article », p. 21), distinct de « Arrow et Raynaud ». Les quatre citations de l'attribution_note ont été retrouvées aux pages qu'elle indique.",
+      "ATTRIBUTION, CORROBORATION HORS DE L'ARTICLE (une paternité qui ne repose que sur ce qu'un texte dit de lui-même serait faible). (a) OpenLibrary, notice d'édition OL2538942M interrogée par ISBN (api/books?bibkeys=ISBN:0262010879) et en JSON : by_statement « Kenneth J. Arrow and Hervé Raynaud. », MIT Press, Cambridge Mass., 1986, pagination « vii, 127 p. », LCCN 85019913, source_records issus des MARC de la Library of Congress, de Harvard et de Columbia — donc trois catalogages indépendants, pas une saisie contributive isolée. (b) BnF, SRU catalogue.bnf.fr/api/SRU, requête bib.isbn all \"0262010879\" : 1 notice, ark:/12148/cb37354625v, deux créateurs, Arrow, Kenneth Joseph (1921-2017) et [Raynaud, saisi par erreur « Raymond »], Hervé, tous deux « Auteur du texte », MIT press, 1986. (c) BnF, notice d'autorité liée à ark:/12148/cb42407853x : Raynaud, Hervé (1939-2013), auteur, et Arrow, Kenneth Joseph (1921-2017), « Collaborateur » — une seconde collaboration attestée, en 2011. (d) Tiers indépendant : A. Guitouni, J.-M. Martel et M. Bélanger, « Plusieurs PAMC : est-ce une nécessité ? », document de travail 1999-019, Faculté des sciences de l'administration, Université Laval, https://sites.fsa.ulaval.ca/www4/sirul/1999-019.pdf, PDF ouvert et lu : p. 2-3 « Arrow et Raynaud (1986) ont fait observer que \"The accent has been on building a large collection of multicriterion decision-making recipes without being able to decide which of them were the best ?\" », et en bibliographie « Arrow, K. J. et Raynaud, H. (1986), Social Choice and Multicriterion Decision-Making. The MIT Press, Cambridge, MA. » Un tiers attribue donc à Arrow et Raynaud, et à eux seuls, l'observation même sur la collection de recettes que la fiche rend.",
+      "ATTRIBUTION, VÉRIFICATION EN SENS INVERSE (ne pas retirer à tort une paternité, ne pas deviner la contribution du signataire écarté). Notice d'autorité IdRef 03077134X (RDF ouvert) : « Pasquier-Dorthe, Jacques (1937-…, économiste) », professeur d'économie d'entreprise et de gestion financière à l'Université de Fribourg. Sa liste d'œuvres liées (éthique et gestion, politique économique suisse, libéralisme, agriculture) ne contient aucune occurrence de « Raynaud », « Arrow » ni « multicritère » — vérifié par recherche sur le RDF complet, trois occurrences à zéro. Rien n'atteste donc une paternité de Pasquier-Dorthe sur l'approche, et la fiche a raison de ne pas la lui prêter. Symétriquement, la fiche ne retire rien à Raynaud, qui est à la fois signataire de l'article et crédité par lui de l'approche et des théorèmes 1 à 4 (p. 16). Elle ne devine pas non plus la contribution propre de Pasquier-Dorthe : l'attribution_note se borne à constater qu'il cosigne la présentation en français — et « présentation » est le mot de l'article lui-même (« Comme cette présentation s'adresse à des non-mathématiciens », p. 11) — et qu'aucun résultat ne lui y est attribué, ce que ma lecture des onze pages confirme.",
+      "SOURCES, LES TROIS RÉFÉRENCES. (1) Persée : résout vers l'article annoncé, mêmes auteurs, même titre, mêmes pages 11-21, même année ; l'article n'a effectivement pas de DOI déposé et la référence par URL Persée est la seule possible ; « consulted: full-text » est justifié, j'ai lu les onze pages. (2) OL2538942M / ISBN 0-262-01087-9 : chaque élément du libellé se retrouve dans la notice — Kenneth J. Arrow et Hervé Raynaud, Social Choice and Multicriterion Decision-Making, Cambridge (Mass.), The MIT Press, 1986, « vii, 127 p. » = « vii-127 p. ». Aucun écart. (3) BnF ark:/12148/cb42407853x : notice ouverte, chaque élément du libellé s'y retrouve — « Logique de la décision managériale [Texte imprimé] / Hervé Raynaud ; avec la collaboration de Kenneth J. Arrow », « Paris : Hermès science publications-Lavoisier, impr. 2011 », « 1 vol. (448 p.) », « Collection Recherche opérationnelle », « ISBN 978-2-7462-3190-0 ». Aucun écart. Les sources 2 et 3 sont déclarées « metadata-only » et la fiche n'avance en effet aucune phrase sur leur contenu.",
+      "PROSE, COMPTAGE FAIT PAR MOI SUR LE TEXTE INTÉGRAL RECONSTITUÉ (47 418 caractères, pages 11 à 21). « impossibilit » : 1 occurrence. « Nobel » : 1 occurrence. Toutes deux dans la même phrase du paragraphe de présentation, p. 11 : « Son résultat, souvent cité sous le nom de théorème d'impossibilité d'Arrow, est certainement l'une des raisons essentielles du prix Nobel d'économie qui lui a été décerné en 1972. » Le théorème d'impossibilité n'est donc nulle part énoncé, nulle part pris pour prémisse, nulle part prolongé : il est nommé une fois, pour situer Arrow. La fiche ne s'en autorise pas : ni le hook, ni le summary, ni le titre n'y font allusion, et rien n'y présente l'approche comme une suite ou une conséquence de ce résultat. Pas de débordement de ce côté.",
+      "PROSE, ADOSSEMENT PHRASE PAR PHRASE. Hook « Chaque méthode multicritère est la recette de son auteur : comment choisir ? » ← p. 11 : « Chacune de ces méthodes est en fait la recette personnelle de décision de son auteur. Le problème est de choisir entre les diverses recettes celle qui convient le mieux d'une part au décideur et d'autre part à la décision à prendre. » Summary, premier membre « se choisit sur ses propriétés logiques » ← p. 11 : « Pour permettre un choix avisé, ils préconisent de s'intéresser aux propriétés logiques de la recette ou règle de décision. » Deuxième membre « les axiomes qu'elle vérifie » ← p. 13, la citation elle-même. Troisième membre « aucun système d'axiomes unique ne convient à tous les problèmes » ← p. 19 : « les solutions des problèmes de décision multicritère sont très spécifiques et il ne peut être question de tous les résoudre au moyen d'un seul et même système d'axiomes et par conséquent d'une règle unique de décision ». Les trois membres portent, aucun n'excède. Contrôle en sens inverse (trop-etroite) : le summary ne se réfugie pas dans la prudence, il affirme les deux thèses porteuses de l'article, le critère de choix et l'absence de système unique ; il n'y a pas de retrait.",
+      "PROSE, MÉCANISME OU PRODUIT. Le titre « Un outil d'aide à la décision multicritère » et la revue de gestion pourraient faire croire à une réclame. Dernière partie lue (VII et Conclusion, p. 20-21) : l'article y nomme bien trois éditeurs de logiciels (Xephon, Triade, Stratec, p. 21) et file la métaphore de la « Rolls Royce », mais il expose un mécanisme et se clôt sur une mise en garde méthodologique — « ne pas employer une méthode dont on n'ait pas accepté profondément les fondements qui, eux, ne sont pas de la technique mathématique » (p. 21) — et il désigne lui-même « le point le plus faible de l'approche » (p. 20). La fiche reste sur le mécanisme et ne reprend rien de la partie commerciale : elle ne déborde pas de ce côté non plus.",
+      "CE QUE JE N'AI PAS PU ATTEINDRE, APRÈS TENTATIVE. Library of Congress, https://lccn.loc.gov/85019913 rend une coquille JavaScript vide (200, 724 octets) et https://lccn.loc.gov/85019913/marcxml rend HTTP 500 : je n'ai donc pas la notice LC de première main, seulement ses dérivés MARC dans OpenLibrary. IdRef SRU, https://www.idref.fr/Sru/Solr/sudoc/select rend HTTP 404 (« The requested resource /autorites/Solr/sudoc/select is not available ») ; j'ai contourné par le RDF direct https://www.idref.fr/03077134X.rdf, qui a répondu 200. Sudoc, https://www.sudoc.abes.fr/cbs/xslt/SRCH?IKT=1007&TRM=0262010879 boucle en redirections (curl 47). Le PDF Persée docAsPDF n'a pas été demandé, la lecture s'étant faite sur les images de page. Le serveur MCP documentary n'était pas exposé, aucun appel verify_reference n'a donc été tenté ni allégué. Aucun de ces échecs n'infirme quoi que ce soit de la fiche : ce sont des accès fermés, pas des silences de la littérature, et les trois références ont été résolues par d'autres voies.",
+      "HORS MANDAT, sans effet sur le verdict. (a) La notice BnF du livre de 1986 (ark:/12148/cb37354625v) orthographie le coauteur « Hervé Raymond » : c'est une erreur de la BnF, pas de la fiche, dont le libellé « Hervé Raynaud » est celui de la page de titre restituée par le by_statement d'OpenLibrary. (b) L'article annonce p. 13 et note 5 un ouvrage Arrow-Raynaud « en cours de parution aux Editions Masson » sous deux titres différents (« Choix social et décision multicritère », puis « L'approche axiomatisée en décision multicritère ») ; je n'ai pas cherché à savoir s'il a paru, la fiche n'en fait pas état. (c) Persée écrit le titre de revue « Revue Française de Gestion », la fiche « Revue française de gestion » : différence de casse conforme à l'usage typographique français, sans incidence sur la résolution."
+    ]
+  },
+  "dossier": "corpus/evidence/approche-axiomatique-arrow-raynaud/lecture.json",
+  "notes": [
+    "Ce que cette carte n'affirme pas, et qui serait le contresens le plus facile : elle ne dit pas que l'approche prolonge le théorème d'impossibilité d'Arrow ni qu'elle en tire les conséquences. Le théorème n'est ni énoncé, ni pris pour prémisse, ni prolongé dans l'article : il apparaît une seule fois, p. 11, dans la phrase qui présente Arrow et son prix Nobel de 1972. Ce qui est repris est la démarche axiomatique elle-même, transportée du problème de la démocratie au problème de gestion, et les axiomes d'Arrow en propre.",
+    "Le mécanisme, tel qu'il est sur la page et que le résumé n'a pas la place de porter : deux étapes annoncées p. 11, la structuration des données et la recherche des axiomes. La matrice de surclassement (tableau 2, p. 12) agrège « la somme des poids des critères qui évaluent A comme meilleur que B », et refuse d'agréger l'écart de A à B selon un critère, « car la mesure de cet écart semble trop discutable pour que l'on puisse sérieusement le prendre en compte » (p. 11). Suivent sept axiomes numérotés, de l'axiome 0 (ne juger que sur la matrice, p. 13) à l'axiome 6' (p. 18), et quatre théorèmes p. 16 et 17. Le texte déclare lui-même une incompatibilité entre ses propres axiomes, p. 18 : « Dans le cas général, cet axiome n'est pas compatible avec les axiomes de prudence et d'indépendance. »",
+    "L'article ne propose pas un produit, et la carte ne doit pas le laisser croire : la batterie d'axiomes retenue « pourrait sembler souhaitable pour tous les cas possibles, ou bien, être préconisée par Arrow et Raynaud comme étant leur méthode. Ce serait une compréhension erronée de l'approche » (p. 18). Le texte nomme aussi son point faible, p. 20 : la « bibliothèque d'axiomes » n'existe pas encore, et « le décideur gestionnaire ne puisse en général se passer d'un expert qui l'aide à formuler correctement ses axiomes ».",
+    "Lacune assumée : un second concept a été vu et n'est pas instruit, le choix prudent. Axiome 4, p. 15, « Le candidat retenu sera un vainqueur prudent », construit par l'ajout d'un critère virtuel de conciliation de poids minimal, illustré p. 15 et 16 par un conseil municipal à trois partis et trois projets, et caractérisé par les quatre théorèmes de Raynaud p. 16 et 17, où le poids minimal donne « une idée de la gravité du conflit entre les critères ». Mécanisme autonome et citable, laissé de côté par plafond de lot.",
+    "L'axiome d'indépendance n'est pas instruit ici. Le texte le francise en « indépendance par rapport aux alternatives irrelevantes », le juge « ici inutilement fort » et lui substitue une indépendance dichotomique supérieure (p. 17). C'est le même axiome que celui d'une autre fiche du corpus, sous une autre traduction : cette carte le mentionne comme ce que l'approche modifie, elle n'en fait pas son objet.",
+    "L'ouvrage d'Arrow et Raynaud de 1986 n'a pas été ouvert : la page de l'éditeur MIT Press rend HTTP 403 et la notice a été prise sur Open Library. Il figure en source parce qu'il établit la cosignature des deux hommes hors des seules déclarations de l'article, et aucune phrase de cette carte ne porte sur son contenu. Même régime pour le volume français de 2011, connu par sa seule notice BnF.",
+    "Deux volumes annoncés « à paraître aux Editions Masson » par l'article ne sont pas portés en source : il les nomme sous deux titres différents (« Choix social et décision multicritère », p. 13 ; « L'approche axiomatisée en décision multicritère », note 5 p. 16), et l'API SRU du catalogue général de la BnF rend zéro notice pour chacun, comme pour Hervé Raynaud croisé avec l'éditeur Masson. Publication non établie.",
+    "État d'accès, à ne pas repayer : l'article n'a pas de DOI déposé et se résout par son URL Persée. Le fac-similé est servi page par page en image ; le dérivé _1000 rend HTTP 500 pour cet article, _1400 est le plus grand servi et _2000 renvoie les mêmes octets. Les onze pages 11 à 21 ont été lues sur l'image, aucune sautée, et la citation a été relue sur l'image de la page 13 et non sur l'OCR de Persée.",
+    "Citations écartées par le lecteur, avec leur motif, au cas où une reprise les rouvrirait : p. 19, « Pour Arrow et Raynaud, l'obstination de ceux qui prétendent pouvoir appliquer légitimement à tous les cas une panoplie limitée de recettes est vaine » (149 caractères, mais reprise en exergue de marge sur la même page) ; p. 11, « Pour permettre un choix avisé, ils préconisent de s'intéresser aux propriétés logiques de la recette ou règle de décision » (122 caractères, mais « ils » perd son antécédent hors du paragraphe). La phrase retenue p. 13 n'existe que dans le corps du texte et porte la définition du terme pivot."
+  ]
+}
