@@ -1,4 +1,4 @@
-# État du corpus — 7 septembre 2026
+# État du corpus — 8 septembre 2026
 
 Écrit sur le disque parce qu'une session a déjà été coupée en cours de route : ce fichier
 existe pour qu'une reprise reparte des fichiers, et non de la mémoire de quelqu'un.
@@ -6,14 +6,14 @@ existe pour qu'une reprise reparte des fichiers, et non de la mémoire de quelqu
 Ce fichier dit ce que le corpus **est**. Ce qui lui **manque**, et par quel bout le prendre,
 est dans [`corpus/RESTE-A-FAIRE.md`](RESTE-A-FAIRE.md).
 
-`npm run corpus:validate` : **132 enregistrements, 129 validés, 0 erreur, 94 avertissements.**
-`npm run corpus:deepen` : **129 approfondissements pour 129 cartes validées**, 192 306 mots,
-1 491 en moyenne. Fin de sortie : **rien**. Il n'y a plus aucune carte validée sans
+`npm run corpus:validate` : **140 enregistrements, 136 validés, 0 erreur, 100 avertissements.**
+`npm run corpus:deepen` : **136 approfondissements pour 136 cartes validées**, 203 687 mots,
+1 498 en moyenne. Fin de sortie : **rien**. Il n'y a plus aucune carte validée sans
 approfondissement, et **les onze domaines sont entièrement servis**. L'écart entre ce qui est
 validé et ce qui est servi, ouvert le 23 août et remonté à trente-quatre cartes le 28, a été
-refermé au passage 09 le 1er septembre ; les passages 10 à 14 l'ont rouvert de quatre, quatre,
-cinq, huit et huit cartes et refermé la même nuit chaque fois, la phase 3 se terminant par les
-approfondissements des cartes qu'elle crée.
+refermé au passage 09 le 1er septembre ; les passages 10 à 15 l'ont rouvert de quatre, quatre,
+cinq, huit, huit et sept cartes et refermé la même nuit chaque fois, la phase 3 se terminant par
+les approfondissements des cartes qu'elle crée.
 `npm test` : **482 tests, 0 échec.** `npm run lint` et `npm run corpus:build` : sans erreur.
 La projection a été vérifiée **idempotente** sur deux exécutions successives, et
 `git diff --exit-code src/content/generated/` est propre après reprojection.
@@ -66,7 +66,7 @@ candidat mal placé part désormais chez un voisin ouvert, ou ne s'instruit pas.
 | Théorie de la mesure / KPI | 4 | 9 | 9 |
 | Cybernétique | 4 | 12 | 12 |
 | Systems Thinking | 5 | 15 | 15 |
-| Science de la décision | 2 | 8 | 8 |
+| Science de la décision | 4 | 15 | 15 |
 | Sociologie du travail | 1 | 11 | 11 |
 | Économie comportementale | 1 | 8 | 8 |
 | Operations Management | 4 | 16 | 16 |
@@ -77,29 +77,212 @@ reste en fin de sortie : **c'est la file, et elle fait foi contre ce fichier.** 
 **La condition B de la routine est donc fausse depuis le 1er septembre, et c'est la condition C
 qui décide.**
 
-**La phase 3 a eu lieu cinq fois.** Le 2 septembre elle a pris `behavioral-economics`, qui passe
-de quatre à huit cartes. Le 3 septembre `sociology-of-work`, de sept à onze. Le 4 septembre
-`work-psychology`, de sept à douze et de deux thèmes à trois. Le 5 septembre `systems-thinking`,
-de sept à quinze et de trois thèmes à cinq. Le 7 septembre `operations-management`, **de huit à
-seize et de trois thèmes à quatre**. Aucune de ces cinq désignations n'a demandé d'arbitrage :
-la règle de rotation les a rendues seule.
+**La phase 3 a eu lieu six fois, et la routine s'arrête là.** Le 2 septembre elle a pris
+`behavioral-economics`, qui passe de quatre à huit cartes. Le 3 septembre `sociology-of-work`, de
+sept à onze. Le 4 septembre `work-psychology`, de sept à douze et de deux thèmes à trois. Le
+5 septembre `systems-thinking`, de sept à quinze et de trois thèmes à cinq. Le 7 septembre
+`operations-management`, de huit à seize et de trois thèmes à quatre. Le 8 septembre
+`decision-science`, **de huit à quinze et de deux thèmes à quatre**. **Aucune de ces six
+désignations n'a demandé d'arbitrage** : la règle de rotation les a rendues seule, et c'est le
+résultat de méthode le plus net de la phase.
 
-**Le domaine que la nuit suivante prendra se déduit de la même règle, et il n'y a pas d'égalité à
-trancher.** `behavioral-economics`, `sociology-of-work`, `work-psychology`, `systems-thinking` et
-`operations-management` ont un enrichissement au journal et sortent de la rotation. Aucun des six
-autres n'en a, donc le critère de repli s'applique et désigne **celui qui a le moins de cartes
-validées, seul à ce niveau : `decision-science`, huit cartes**, contre neuf pour la théorie de la
-mesure et dix pour la sociologie des organisations. **C'est donc `decision-science`.** Le tableau
-ci-dessus est le décompte qui tranche, et `npm run corpus:audit` le rend à la demande.
+**Le 8 septembre 2026 est le quinzième et dernier passage de la routine nocturne.** Le bilan des
+quinze passages est en fin de [`corpus/JOURNAL-ROUTINE.md`](JOURNAL-ROUTINE.md), avec ce que la
+routine a ouvert, ce qu'elle laisse ouvert, et par quel bout reprendre à la main.
 
-**Et ce domaine part avec le legs le mieux qualifié qui reste** : `RESTE-A-FAIRE.md` tient, sous
-« Deux textes ouverts et **déjà lus**, laissés par le lot du 23 août », deux entrées dont l'accès
-n'est pas seulement constaté mais dont le contenu a été ouvert et lu, laissées uniquement parce
-que le plafond de volume était atteint et que chacune aurait ouvert un thème à une seule carte.
+**Ce que la rotation désignerait si elle continuait**, écrit ici parce que c'est ce qu'une reprise
+à la main doit savoir en premier. Six domaines ont désormais un enrichissement au journal et
+sortiraient de la rotation : `behavioral-economics`, `sociology-of-work`, `work-psychology`,
+`systems-thinking`, `operations-management` et `decision-science`. Des cinq restants, le critère
+de repli désigne **celui qui a le moins de cartes validées, et il est seul à ce niveau :
+`theorie-de-la-mesure`, neuf cartes**, contre dix pour la sociologie des organisations, douze pour
+la cybernétique, treize pour les human factors et quinze pour l'ergonomie de l'activité. **Il n'y
+a pas d'égalité à trancher.**
+
+Mais une reprise à la main n'est pas tenue par ce critère, et **elle gagnerait à le reconsidérer
+plutôt qu'à l'appliquer une septième fois** : il a été écrit pour répartir l'effort entre onze
+domaines, et il a fait son tour sur six d'entre eux. `RESTE-A-FAIRE.md` porte au chantier B les
+vingt-cinq entrées de la file de la sociologie des organisations, **que la routine n'a jamais
+touchée** et qui reste le chantier au meilleur rendement documentaire du dépôt : sa cartographie
+est faite, l'accessibilité de chaque entrée est constatée, le rang de chacune est motivé, et un
+lot y démarre sans passage de scout. C'est aussi le seul chantier qui pourvoirait
+`apprentissage-organisationnel`, l'un des deux thèmes qui affichent encore une page vide.
 
 **Les quatre familles sont complètes**, et elles le sont depuis le 28 août.
 
-# 0. Operations Management enrichi — lot du 7 septembre 2026 (passage 14), publié
+# 0. Science de la décision enrichie — lot du 8 septembre 2026 (passage 15), publié
+
+**Sept cartes, cinq `PASS` au premier tour, deux après correction. Le domaine passe de 8 à 15
+cartes validées et de 2 à 4 thèmes ; le corpus de 129 à 136.** Le plafond du prompt était de huit
+et il n'a pas été atteint : **une lecture s'est conclue par un refus**, et c'est un résultat.
+
+**Ce lot solde les deux legs que `RESTE-A-FAIRE.md` tenait pour ce domaine depuis le 23 août**, et
+il les solde **positivement tous les deux**, ce qui n'était pas arrivé depuis le passage 13. Il
+lève aussi la réserve qui avait empêché de déclarer deux thèmes ce jour-là.
+
+Les sept, par thème :
+
+| thème | cartes | état |
+|---|---|---|
+| `chercher-plutot-que-calculer` (déclaré cette nuit) | `programme-comme-theorie-du-comportement`, `recherche-heuristique-contre-force-brute`, `apprentissage-comme-recherche-heuristique` | 3 |
+| `agreger-des-preferences` (déclaré cette nuit) | `impossibilite-de-l-agregation-des-preferences`, `independance-des-alternatives-non-pertinentes` | 2 |
+| `instruire-un-arbitrage` (déjà déclaré) | `approche-axiomatique-arrow-raynaud`, `mythe-de-l-outil-quantitatif` | 2 |
+
+**Le domaine cesse d'être aux trois quarts anglophone** : deux de ses sept cartes viennent de
+textes francophones ouverts sur Persée, dont la couche que son périmètre déclarait prioritaire et
+qu'aucun passage n'avait balayée.
+
+## Les deux thèmes refusés le 23 août sont déclarés, et la raison de leur refus est levée
+
+C'est le fait principal du lot. `src/content/themes.ts` portait, depuis l'ouverture du domaine,
+le motif écrit de leur refus : « Agréger des préférences » n'aurait porté qu'une carte, et
+« Chercher une solution plutôt que la calculer » reposait sur deux textes du même trio d'auteurs
+dont la cartographie disait elle-même qu'un seul concept devrait sortir. Le commentaire concluait
+que les deux courants existaient et « attendent le passage suivant plutôt qu'une page à une carte ».
+
+**Les deux conditions sont levées, et sur pièce.** Arrow 1948 a rendu deux concepts distincts au
+lieu d'un, l'impossibilité et la condition d'indépendance, chacun avec sa citation et sa section.
+Et **la réserve de doublon interne sur Newell, Shaw et Simon est démentie** : deux lecteurs
+indépendants, chacun sur son texte, puis leurs contrôleurs, ont établi que 1958 pose l'apprentissage
+comme une question à laquelle une théorie devra répondre et que 1960 y répond et ne fait que cela.
+La preuve qui tranche est mécanique et vérifiable : **« means-ends » et « problem space » ont zéro
+occurrence dans le texte de 1958**, dont la seule formulation moyens-fins est rapportée à Selz et
+de Groot, et **la liste de références de 1960 ne cite pas l'article de 1958**.
+
+## La lecture qui s'est conclue par un refus, et pourquoi elle vaut une carte
+
+**Vincke 1991 a été lu en entier, cinq pages sur l'image, et rejeté.** Il devait pourvoir
+l'incomparabilité, que la carte `classement-multicritere-electre` signale elle-même comme sa
+lacune. Le fait de structure qui décide : **le corps de l'article ne porte pas un seul renvoi**, sa
+bibliographie de vingt-deux entrées n'est jamais appelée, et l'astérisque de la page 147 dit « Le
+texte qui suit est le résumé de l'exposé ». Le silence de ce texte sur qui a dit quoi est un trait
+de son genre, non une revendication.
+
+Sur le concept commandé, **Vincke se démarque lui-même** : le mot incomparabilité apparaît une
+seule fois, page 149, dans une parenthèse, et la phrase se termine par « ont fait et font encore
+l'objet de nombreuses recherches ». Le repli sur la belle phrase de la page 148, « le concept de
+solution optimale n'a donc pas de sens dans un contexte multicritère », a été examiné et refusé
+aussi : c'est la prémisse fondatrice de l'école de Roy, et même `ASSOCIATED_WITH` serait faux.
+
+Le rejet suit le précédent exact de `reciprocite`, prononcé au stade de la lecture primaire, pour
+le même motif : **un texte qui rapporte au lieu d'établir.** `corpus/rejected/` en porte désormais
+trois.
+
+**Et ce refus a rendu un fait que la carte n'aurait pas rendu** : l'incomparabilité selon Roy n'a
+**aucune source primaire ouverte connue**. Persée ne porte aucun texte de Roy sur le surclassement,
+Roy 1974 n'a pas de DOI déposé, le document Lamsade n° 53 est fermé sous ses deux DOI Springer. La
+seule voie non épuisée est le dépôt Dauphine, refusé par le mandataire sortant.
+
+## Deux textes rejetés pour un motif de droits, et le précédent qui l'a tranché
+
+**Les deux articles que le périmètre appelle sur le jugement de probabilité ont été trouvés
+ouverts, et ils n'ont pas été instruits.** Kahneman et Tversky 1972 sur la représentativité et
+Tversky et Kahneman 1973 sur la disponibilité sont servis en `HTTP 200`, l'un sur la page
+personnelle d'un professeur d'université, l'autre sur un site personnel sans affiliation déclarée.
+
+**Ce sont des articles de *Cognitive Psychology*, donc Elsevier, et le dépôt a déjà tranché ce cas
+exact** : `RESTE-A-FAIRE.md` porte Thaler 1980 comme rejeté, « revue Elsevier, seul miroir une page
+de cours, **motif de droits et non d'accès** ». Une autorisation d'ayant droit se constate, et une
+page personnelle de tiers n'en est pas une. **L'accès a été trouvé ; l'autorisation ne l'a pas
+été.** Le contraste avec le tiré à part de Carnegie Mellon retenu cette nuit est net : celui-ci
+porte son autorisation en clair sur son manifeste IIIF.
+
+**Le balayage a rendu en échange un fait qui ferme une piste pour de bon** : ces deux articles
+**n'ont pas de précurseur dans la collection `dticarchive`**, et la raison est établie plutôt que
+supposée. Leurs propres notes citent des financements NSF, NIMH et NIH, jamais ONR ni ARPA. Six
+requêtes indépendantes avaient échoué sans qu'on sache pourquoi ; on le sait.
+
+## Ce que le contrôle aveugle a attrapé, et ce qu'il a corrigé de lui-même
+
+**Cinq cartes sur sept ont reçu `PASS` au premier tour.** Les deux autres méritent d'être
+rapportées, parce qu'elles disent deux choses différentes du dispositif.
+
+**`impossibilite-de-l-agregation-des-preferences` a consommé ses deux tours de correction**, et
+**la première correction, portée par la réception, était fausse**. Le premier contrôle avait vu
+juste : le libellé de la troisième source accolait l'adresse de la deuxième édition au millésime de
+la première. La correction alors portée attribuait la deuxième édition de 1963 à Yale University
+Press. **Le second contrôle l'a renversée sur pièces** : la deuxième édition de 1963 paraît chez
+John Wiley and Sons, à New York, comme Cowles **Foundation** Monograph 12, et Yale ne reprend qu'au
+quatrième tirage, en 1970. Établi sur la notice `olbp56070` de The Online Books Page et sur la
+chronologie de tirages du SRU de K10plus.
+
+**La sortie n'a pas été de mieux étiqueter mais d'ouvrir la porte** : la référence résout désormais
+vers **la première édition elle-même, servie en accès libre par la Cowles Foundation**, et l'ISBN a
+été retiré parce qu'il désignait un tirage Yale, le système ISBN ne datant que de 1967. C'est le
+geste que le §3 du workflow appelle combler le trou plutôt que changer l'étiquette, et il a été
+fait au dernier tour disponible.
+
+**`mythe-de-l-outil-quantitatif` a reçu `PASS` avec une réserve, devenue une correction due.** Sa
+note d'attribution affirmait que le matériau d'enquête vient de la thèse de doctorat de Christèle
+Boulaire. **L'article ne le dit pas** : il renvoie pour le terrain à Boulaire et al., à paraître, et
+à Urly Beaudry 1995. Inférence plausible, que rien ne contredit, mais **non établie sur la pièce**,
+dans un champ que le lecteur voit. L'affirmation a été retirée.
+
+## Les trois débordements que les contrôleurs ont vérifiés ne pas s'être produits
+
+Ils sont rapportés parce qu'ils étaient les risques annoncés du lot, et qu'un risque écarté sur
+pièce vaut mieux qu'un risque non couru.
+
+- **Le programme de 1960 n'a pas appris**, et aucune carte ne le dit. Le contrôleur est allé lire
+  la discussion transcrite du folio 187, où Newell répond : « The work I am talking about here is
+  all hand simulation. The GPS program is now being debugged, but is not yet solving any problems. »
+  Le résumé de la carte est au conditionnel, comme le folio 155 qui écrit « it may be possible ».
+- **Ces auteurs ne forgent pas la notion d'heuristique.** Le contrôleur a compté lui-même : trois
+  occurrences dans les seize folios, jamais définie, et Newell crédite ailleurs Polya de l'avoir
+  remise au programme.
+- **L'approche Arrow-Raynaud n'est pas une suite du théorème d'impossibilité.** Le contrôleur a
+  compté sur le texte intégral reconstitué, 47 418 caractères : la chaîne « impossibilit » y
+  apparaît **une seule fois**, dans la phrase de présentation d'Arrow, où elle sert de notoriété.
+  Ce qui est transporté est la démarche axiomatique et les axiomes d'Arrow en propre, le texte
+  jugeant d'ailleurs son axiome d'indépendance « ici inutilement fort ».
+
+## Une attribution qui ne se lit pas sur la signature, et comment elle a été établie
+
+`approche-axiomatique-arrow-raynaud` porte **Kenneth J. Arrow et Hervé Raynaud**, qui ne sont pas
+les signataires de l'article dont elle est tirée. L'article est signé Jacques Pasquier-Dorthe et
+Hervé Raynaud, et il parle d'Arrow et de Raynaud **à la troisième personne d'un bout à l'autre**
+alors que Raynaud le cosigne : « H. Raynaud a démontré les théorèmes suivants », « préconisée par
+Arrow et Raynaud comme étant leur méthode ».
+
+**Ni le lecteur ni le contrôleur n'ont voulu faire reposer cela sur ce que le texte dit de
+lui-même.** Quatre pièces extérieures l'établissent : la mention de responsabilité d'OpenLibrary
+pour l'ouvrage cosigné de 1986, tirée des MARC de la Bibliothèque du Congrès, de Harvard et de
+Columbia, donc trois catalogages indépendants ; deux notices de la BnF, dont une qui range Raynaud
+en auteur et Arrow en collaborateur ; et un tiers indépendant, un document de travail de
+l'Université Laval de 1999, qui attribue à « Arrow et Raynaud (1986) » l'observation même que rend
+la carte.
+
+**Et la vérification en sens inverse a été faite** : le RDF d'IdRef pour Pasquier-Dorthe montre un
+économiste dont les travaux liés ne portent ni sur Arrow, ni sur Raynaud, ni sur le multicritère.
+Aucun résultat ne lui est attribué par l'article, et **la carte ne devine aucune contribution
+propre de sa part**, ce qui est la moitié difficile de ce genre d'attribution.
+
+## Un titre de thème réécrit à la réception, et pourquoi
+
+La réception avait d'abord intitulé le thème nouveau « Trouver une solution qu'on ne calcule pas »,
+jugeant l'autre formulation trop proche d'une étiquette de discipline. **Elle a signalé elle-même
+le défaut que cela créait** : `theme_labels` est projeté verbatim depuis chaque fiche, indépendamment
+de `themes.ts`, et les trois fiches contrôlées portent « Chercher une solution plutôt que la
+calculer ». La page du thème et les cartes auraient affiché deux noms différents.
+
+**Le dépôt a une convention, et elle se vérifie en une commande** : sur les quatre thèmes concernés,
+le libellé porté par les fiches est toujours exactement le titre déclaré. Le titre du thème a donc
+été aligné sur les fiches, et non l'inverse : **les fiches sont contrôlées et ne se retouchent pas,
+le titre d'un thème ne l'est pas.**
+
+## Ce que ce lot laisse de moins cher au passage suivant sur ce domaine
+
+**Trois concepts lus et instruits, écartés au plafond du lot**, dossiers au dépôt : le **choix
+prudent** d'Arrow et Raynaud, axiome 4 de la page 15 avec ses quatre théorèmes ; la **double facette
+habilitante et contraignante de l'outil** chez Boulaire, Landry et Martel, pages 99 à 102 ; et le
+second geste d'analyse de Vincke 1991, page 149, qui ne peut pas se fonder sur ce texte mais désigne
+Roubens et Vincke 1985.
+
+Le détail, avec les accès constatés et les portes vérifiées fermées, est dans
+[`corpus/RESTE-A-FAIRE.md`](RESTE-A-FAIRE.md), section « `decision-science`, enrichi le 8 septembre
+2026 ».
+
+# 0 bis. Operations Management enrichi — lot du 7 septembre 2026 (passage 14), publié
 
 **Huit cartes, cinq `PASS` au premier tour, trois au second. Le domaine passe de 8 à 16 cartes
 validées et de 3 à 4 thèmes ; le corpus de 121 à 129.** C'est le plafond de volume du prompt,
