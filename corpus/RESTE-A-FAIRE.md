@@ -844,8 +844,30 @@ couche texte pour cette seule raison.
 numérisation, qui fait croire à une extraction linéaire que les sections sont désordonnées.
 Redressé et découpé, le texte redevient continu.
 
-**La table des matières des actes de 1960 de Pergamon contredit ses propres folios**, constaté
-trois fois indépendamment. Les paginations de ce volume se prennent sur les folios.
+**La table des matières des actes de 1960 de Pergamon ne contredit pas ses folios, et cette
+entrée était fausse.** Elle a porté pendant deux semaines, « constaté trois fois
+indépendamment », que la table de ce volume contredisait sa propre pagination et que le
+chapitre de Newell, Shaw et Simon courait jusqu'au folio 190. **Corrigé le 8 septembre 2026,
+sur deux exemplaires** : le folio 190 est la page d'ouverture du chapitre de P. M. Milner, et
+la note de bas de page qu'on y lisait est la sienne, celle de sa subvention M-2455 du National
+Institute of Mental Health, relue sur l'image. La table annonce Newell, Shaw et Simon p. 153 et
+Milner p. 190 : **elle concorde**. La pagination du chapitre est donc **153-189**, et la
+contre-épreuve est le tiré à part de l'éditeur au Stanford Digital Repository, druid
+`wx800gp4144`, qui compte trente-sept pages numérotées 153 à 189 plus un verso blanc.
+
+**Ce que ce cas apprend vaut plus que la correction elle-même**, et c'est pourquoi l'entrée
+reste ici au lieu d'être effacée : **« constaté trois fois indépendamment » n'est pas une
+preuve.** Trois lecteurs peuvent hériter du même piège, et ils l'ont fait, parce qu'aucun
+n'avait ouvert le folio 190 pour regarder de qui était la note qu'il portait. Ce qui a tranché
+n'est pas un quatrième constat de la même sorte : c'est **un second exemplaire, d'une autre
+provenance**. La règle qui tient est celle qui a déjà servi ailleurs dans ce fichier, et elle
+se retourne ici contre une croyance du dépôt : deux mises à disposition indépendantes
+permettent de comparer, un accord de plusieurs lecteurs sur une seule pièce ne prouve rien.
+
+L'éditeur de ce volume est par ailleurs **Pergamon Press seul** (Symposium Publications
+Division), copyright 1960 Pergamon Press Inc., LCCN 60-12574. La mention « Spartan Books » que
+portaient la cartographie et ce fichier n'apparaît nulle part sur l'exemplaire : elle vient
+vraisemblablement de la deuxième conférence, de 1962.
 
 **Une autorisation d'ayant droit se constate, elle ne se déduit ni de l'âge du texte ni de
 l'absence de restriction d'emprunt.** Le dernier lot a retiré les URL de six sources pour
