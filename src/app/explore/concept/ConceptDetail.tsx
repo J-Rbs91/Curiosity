@@ -8,6 +8,8 @@ import { ConceptSourceList } from "@/components/concept/ConceptSources";
 import { Screen } from "@/components/motion/Screen";
 import { BackLink } from "@/components/ui/BackLink";
 import { DeepenButton } from "@/components/ui/DeepenButton";
+import { InstallInvitation } from "@/components/ui/InstallInvitation";
+import { ShareButton } from "@/components/ui/ShareButton";
 import { espacesFrancaises } from "@/lib/typographie";
 
 /**
@@ -147,10 +149,27 @@ export function ConceptDetail() {
               </aside>
             )}
 
-            {/* L'action reste sous le corps, dans la colonne du corps : c'est ce qu'on
-                fait après avoir lu, pas une commodité rangée sur le côté. */}
+            {/*
+             * Les actions restent sous le corps, dans la colonne du corps : c'est ce qu'on
+             * fait après avoir lu, pas une commodité rangée sur le côté.
+             *
+             * L'invitation à installer est **dans** ce bloc et non à côté : en deux
+             * colonnes, la grille place `reading-after` dans la colonne du texte, et un
+             * frère sans classe s'y serait placé tout seul — à droite, sous les sources,
+             * là où personne ne le lit.
+             */}
             <div className="reading-after">
-              <DeepenButton concept={concept} />
+              <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
+                <DeepenButton concept={concept} />
+                <ShareButton concept={concept} />
+              </div>
+              {/*
+               * Et, pour qui arrive d'un lien partagé, ce qu'il y a derrière cette carte.
+               * Le composant décide seul de se montrer ou non : cet écran est le même
+               * qu'on y arrive de l'extérieur ou depuis Explorer, et il n'a pas à le
+               * savoir.
+               */}
+              <InstallInvitation />
             </div>
           </div>
         </div>

@@ -19,6 +19,7 @@ import { Button } from "@/components/ui/Button";
 import { ConceptQuotation } from "@/components/concept/ConceptQuotation";
 import { ConceptSourceList } from "@/components/concept/ConceptSources";
 import { DeepenButton } from "@/components/ui/DeepenButton";
+import { ShareButton } from "@/components/ui/ShareButton";
 import { Wordmark } from "@/components/ui/Wordmark";
 import { ScreenSkeleton } from "@/components/ui/ScreenSkeleton";
 import { espacesFrancaises } from "@/lib/typographie";
@@ -542,9 +543,37 @@ function ConceptCard({
         <p className="text-[0.94em] text-ink-soft">{concept.authorLabel}</p>
       )}
 
-      {/* Les deux actions sur une même ligne : approfondir se lit d'abord, les sources
-          restent à portée sans réclamer l'attention. */}
-      <div className="flex items-center gap-5">
+      {/*
+       * Les actions sur une même ligne : approfondir se lit d'abord, les sources et le
+       * partage restent à portée sans réclamer l'attention.
+       *
+       * **Elles sont trois depuis que la carte se partage**, et c'est la seule fois où le
+       * §5 a rouvert sa porte : partager n'ajoute rien à comprendre — ce que la règle
+       * interdit —, mais c'est l'unique chemin par lequel une application sans compte ni
+       * fil peut se faire connaître, et il n'y en aura pas d'autre.
+       *
+       * `flex-wrap` est ce qui rend la troisième soutenable, et son coût est mesuré : la
+       * rangée fait 45 px sur une ligne, 97 px sur deux. Les trois actions tiennent sur une
+       * ligne à partir de 390 points ; en dessous, « Partager » passe à la ligne et la carte
+       * gagne 52 px.
+       *
+       * | Écran | Rangée | Défilement de la page |
+       * |---|---|---|
+       * | 320 × 568 | 97 px | 210 px, dont 52 de cette ligne |
+       * | 360 × 640 | 97 px | 182 px |
+       * | 375 × 667 | 97 px | 179 px |
+       * | 390 × 844 | 45 px | aucun |
+       *
+       * Mesuré sur « La pénalité de rupture rend le stock calculable », dont la citation
+       * tient quatre lignes : une carte qui défilait déjà avant cette troisième action.
+       *
+       * C'est le défilement de page qui l'absorbe, comme il absorbe déjà le reste — voir
+       * `SCREEN_HEIGHT`. L'alternative aurait été de comprimer les cibles ou de rétrécir le
+       * texte de tous les jours pour garder à l'écran une action qu'on emploie rarement,
+       * c'est-à-dire l'inverse de la bonne dépense : c'est l'arbitrage déjà fait pour la
+       * ligne des cartes passées, et il vaut ici pour la même raison.
+       */}
+      <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
         <DeepenButton concept={concept} />
         {sources.length > 0 && (
           /*
@@ -567,6 +596,7 @@ function ConceptCard({
             {showSources ? "Revenir au concept" : `Sources · ${sources.length}`}
           </button>
         )}
+        <ShareButton concept={concept} />
       </div>
     </div>
   );

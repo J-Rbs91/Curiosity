@@ -50,14 +50,15 @@ export function countedPath(pathname: string, search: string): string {
 /**
  * Les gestes comptés en plus des écrans, et pourquoi ils ne peuvent pas l'être comme eux.
  *
- * Un compteur de pages ne voit que des adresses. Or trois des actes qui disent si
- * l'application sert à quelque chose n'en changent pas : le seuil et la carte du jour
- * partagent `/`, la feuille de partage s'ouvre par-dessus l'écran, et le départ vers une IA
- * quitte le site. Aucun des trois n'apparaîtrait donc dans la liste des pages, quelle que
- * soit la finesse du comptage.
+ * Un compteur de pages ne voit que des adresses. Or les actes qui disent si l'application
+ * sert à quelque chose n'en changent pas : le seuil et la carte du jour partagent `/`, la
+ * feuille de partage s'ouvre par-dessus l'écran, le départ vers une IA quitte le site, le
+ * partage d'une carte passe la main au système, et l'installation se joue dans une boîte de
+ * dialogue du navigateur. Aucun d'eux n'apparaîtrait donc dans la liste des pages, quelle
+ * que soit la finesse du comptage.
  *
  * GoatCounter sait compter autre chose que des pages — des événements, tenus dans une liste
- * à part. C'est ce que sont ces trois noms. Ils sont écrits ici, et pas à l'endroit du clic,
+ * à part. C'est ce que sont ces noms. Ils sont écrits ici, et pas à l'endroit du clic,
  * pour la raison qui vaut pour toute étiquette qu'on relit plus tard : renommée d'un côté et
  * pas de l'autre, elle ouvrirait une seconde ligne dans le tableau de bord au lieu de
  * continuer la première, et l'historique se couperait en deux sans que rien ne le signale.
@@ -78,6 +79,26 @@ export const AUDIENCE_EVENTS = {
   approfondir: "approfondir",
   /** Une IA choisie dans la feuille : le lecteur poursuit vraiment, et ailleurs. */
   poursuiteIa: "poursuite-ia",
+  /**
+   * Une carte partagée à quelqu'un — le geste par lequel l'application se propage.
+   *
+   * Il est compté au départ du partage et pas à son arrivée : ce qui se passe ensuite se
+   * passe dans une messagerie, hors de portée de tout compteur. Ce qu'on saura donc est
+   * combien de lecteurs partagent, jamais combien de personnes ont reçu.
+   *
+   * Le concept partagé n'est pas transmis, pour la raison qui vaut déjà pour « Approfondir » :
+   * la question est de savoir si les cartes circulent, et nommer les concepts ferait de ce
+   * compte un palmarès.
+   */
+  partage: "partage",
+  /**
+   * L'application installée depuis l'invitation d'une carte partagée — l'autre bout du même
+   * geste, et le seul endroit d'où la propagation se constate.
+   *
+   * Il n'est compté que sur une acceptation, et donc jamais sur iOS, où aucune API ne dit ce
+   * que le lecteur a fait de la consigne. Le nombre est un plancher, pas un total.
+   */
+  installation: "installation",
 } as const;
 
 /**
