@@ -7,7 +7,8 @@ bureau, qui fait découvrir **une carte à la fois** les concepts qui expliquent
 travail et les organisations fonctionnent réellement. À chaque ouverture, un concept : son thème, son nom, une accroche, une citation
 de son auteur quand il en existe une, un résumé court, et ses sources. Rien d'autre — le
 lecteur qui veut aller plus loin emporte la carte vers l'IA de son choix par le bouton
-« Approfondir ».
+« Approfondir », et celui à qui la carte a plu la partage à quelqu'un, ce qui est le seul
+chemin par lequel l'application se fait connaître.
 
 Ce que la carte affiche a été **instruit**, pas rédigé de mémoire : c'est là que se trouve
 le vrai travail du projet.
@@ -79,7 +80,7 @@ src/
 │                 #         auteur, concept, Réglages)
 ├── components/    # UI : concept/ motion/ navigation/ ui/
 ├── domain/        # Logique pure : taxonomie, tirage de la carte, prompt d'approfondissement,
-│                 #                rappel porté par l'icône
+│                 #                message de partage, rappel porté par l'icône
 ├── services/      # Progression (les cartes déjà vues, dans l'ordre)
 ├── repositories/  # Persistance (localStorage, remplaçable)
 ├── content/       # Taxonomie + corpus projeté + échafaudage de développement
@@ -121,6 +122,43 @@ qui porte la progression complète — et se double de la pastille de l'icône i
 existe, qui est le comportement natif le plus proche. La vérification plateforme par plateforme
 — Android, iOS, PWA — et ce qu'il faudrait pour aller plus loin sont dans
 [`docs/icone-de-rappel.md`](docs/icone-de-rappel.md).
+
+## Le partage d'une carte
+
+L'application n'a ni compte, ni notification, ni fil : rien de ce qu'un lecteur y fait n'est
+visible d'un autre. **Une carte partagée est donc la seule chose qui puisse circuler**, et le
+seul chemin par lequel l'application se fait connaître — celui qui reçoit découvre un concept,
+et derrière lui l'application qui en donne un par jour.
+
+Ce qui part n'est pas la carte, et surtout pas le dossier de 22 000 caractères d'« Approfondir » :
+c'est un message de trois lignes — le concept, son auteur, l'accroche, ce qu'est l'application,
+et l'adresse de la carte. Le résumé reste sur la carte, délibérément : il répond à l'accroche,
+et un message qui répond à sa propre question ne fait ouvrir personne. Le texte est assemblé
+par [`src/domain/concepts/card-share.ts`](src/domain/concepts/card-share.ts).
+
+Le geste passe par la feuille de partage du système, et c'est l'inverse de l'arbitrage fait
+pour « Approfondir » : la feuille d'Android classe ses cibles par usage et propose donc en
+premier les messageries — ce qui était le défaut quand on cherchait une IA, et ce qu'il faut
+quand on cherche quelqu'un. Le presse-papiers reste le repli, pour le navigateur de bureau où
+`navigator.share` n'existe pas.
+
+**À l'autre bout, l'invitation.** Qui ouvre le lien tombe sur la fiche du concept, et sous elle
+sur ce qu'il y a derrière : une application à installer. Elle ne s'affiche qu'à qui vient de
+l'extérieur — le document s'est ouvert sur cette fiche au lieu d'y arriver par une navigation
+interne, ce qui est la signature d'un lien suivi depuis une messagerie —, et jamais lorsque
+l'application tourne déjà comme une application. Le bouton d'installation n'apparaît que si le
+navigateur a confié une invitation (`beforeinstallprompt`), qu'on retient au chargement pour la
+rendre au moment où le lecteur la demande. iOS n'en émet aucune, sur aucun de ses navigateurs :
+le geste y est manuel, et l'écran le dit en une ligne plutôt que de laisser croire que
+l'application ne s'installe pas. Voir
+[`src/lib/install-prompt.ts`](src/lib/install-prompt.ts).
+
+**Ce que l'aperçu d'un lien peut montrer, et ce qu'il ne peut pas.** Les balises Open Graph sont
+dans la disposition et non sur la fiche : celle-ci désigne son concept par `?c=<slug>`, si bien
+qu'il n'existe qu'une page pour toutes les cartes et qu'aucun titre par carte ne peut être écrit
+à la construction. Et pas d'image, faute de pouvoir en donner l'adresse : `og:image` n'accepte
+qu'une URL absolue, et le même bundle est servi sous localhost, sous GitHub Pages et sous un
+domaine propre.
 
 ## Le corpus
 
@@ -176,28 +214,36 @@ avec son chemin, son référent et le format de l'écran, rien d'autre ne quitte
 navigateur, et le `localStorage` du lecteur — la seule donnée que l'application garde — n'est
 jamais lu.
 
-Quatre nombres sont lisibles, et ils ne viennent pas tous du même endroit :
+Six nombres sont lisibles, et ils ne viennent pas tous du même endroit :
 
 | Ce qu'on veut savoir | Où ça se lit | Ce qui le déclenche |
 |---|---|---|
 | Combien viennent chercher la carte du jour | événement `carte-du-jour` | le franchissement du seuil, sur l'accueil |
 | Combien demandent « Approfondir » | événement `approfondir` | le bouton, ses deux branches confondues |
 | Combien poursuivent avec une IA | événement `poursuite-ia` | le choix d'un service dans la feuille |
+| Combien partagent une carte | événement `partage` | le bouton, au départ du partage |
+| Combien installent depuis une carte partagée | événement `installation` | l'installation acceptée, jamais sur iOS |
 | Combien passent par Explorer | page `/explore/` | l'affichage de l'écran |
 
-Les trois premiers sont des **événements**, tenus par GoatCounter dans une liste à part.
-C'est ce qu'ils doivent être : aucun des trois ne change d'adresse — le seuil et la carte
-partagent `/`, la feuille s'ouvre par-dessus l'écran, et le départ vers une IA quitte le
-site —, si bien qu'un compteur de pages ne les verrait jamais. Le quatrième, lui, est un
+Les cinq premiers sont des **événements**, tenus par GoatCounter dans une liste à part.
+C'est ce qu'ils doivent être : aucun des cinq ne change d'adresse — le seuil et la carte
+partagent `/`, la feuille s'ouvre par-dessus l'écran, le départ vers une IA quitte le site,
+le partage passe la main au système et l'installation se joue dans une boîte de dialogue du
+navigateur —, si bien qu'un compteur de pages ne les verrait jamais. Le sixième, lui, est un
 écran : il est déjà une page, et le compter une seconde fois en événement aurait été
 enregistrer deux fois le même fait. Les noms sont dans
 [`src/lib/analytics.ts`](src/lib/analytics.ts), pas aux endroits du clic : renommés d'un
 côté et pas de l'autre, ils couperaient l'historique en deux sans que rien ne le signale.
 
-Ce que ces nombres ne disent pas : **quelle** carte du jour a été lue. Le tirage dépend du
-lecteur et de sa progression, et l'événement ne porte que le geste, pas le concept. Les
-cartes ouvertes depuis Explorer et les développements lus, eux, se lisent carte par carte
-dans la liste des pages.
+Ce que ces nombres ne disent pas : **quelle** carte du jour a été lue, ni quelle carte a été
+partagée. Le tirage dépend du lecteur et de sa progression, et l'événement ne porte que le
+geste, pas le concept — nommer les concepts ferait de ces comptes un palmarès. Les cartes
+ouvertes depuis Explorer et les développements lus, eux, se lisent carte par carte dans la
+liste des pages.
+
+Le compte des installations est un **plancher**, et il faut le lire comme tel : il n'est
+écrit que lorsque le navigateur rapporte une installation acceptée, ce qu'aucun navigateur
+d'iOS ne fait — l'installation y est un geste manuel dont rien ne rend compte.
 
 Deux détails tiennent à la nature de l'application :
 

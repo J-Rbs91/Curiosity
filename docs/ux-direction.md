@@ -601,6 +601,79 @@ chose que le lecteur sait mieux que nous. Ce n'est donc pas la porte du §5 qui 
 règle qui l'a fermée tient toujours : **un réglage qui change ce que l'application dit n'a pas
 sa place ici ; un réglage qui change la condition dans laquelle on la lit, oui.**
 
+### La troisième action de la carte — partager
+
+**La carte porte trois actions depuis qu'elle se partage**, et c'est la seule fois où la
+porte fermée plus haut a été rouverte. La règle disait qu'un écran ne porte que ce qu'il y a
+à comprendre ; partager n'apprend rien du concept, et n'aurait donc rien à faire là.
+
+Ce qui l'a emporté est un fait de produit et non de mise en page : **l'application n'a aucun
+autre chemin pour se faire connaître.** Pas de compte, pas de notification, pas de fil, rien
+de ce qu'un lecteur y fait n'est visible d'un autre — ce sont des décisions tenues, et elles
+ne bougent pas. Il ne reste donc qu'une carte qui circule de la main à la main : celui qui
+reçoit découvre un concept, et derrière lui l'application qui en donne un par jour. C'est
+l'unique exception, elle est nommée, et le compte de ce qui s'affiche sur la carte reste
+fermé après elle.
+
+**Le rang est celui de son importance.** « Approfondir » reste la pilule pleine et se lit
+d'abord ; « Sources » et « Partager » sont deux libellés en petites capitales, dans la
+couleur la plus effacée de la palette — le traitement du lien vers les cartes passées, pour
+la même raison : ce sont des gestes qu'on emploie rarement, et qui ne doivent pas réclamer
+l'attention de ceux qu'on emploie tous les jours.
+
+**Ce que la troisième coûte, mesuré.** La rangée fait 45 px sur une ligne et 97 px sur deux ;
+les trois actions tiennent sur une ligne à partir de 390 points, et en dessous « Partager »
+passe à la ligne.
+
+| Écran | Rangée | Défilement de la page |
+|---|---|---|
+| 320 × 568 | 97 px | 210 px, dont 52 de cette ligne |
+| 360 × 640 | 97 px | 182 px |
+| 375 × 667 | 97 px | 179 px |
+| 390 × 844 | 45 px | aucun |
+
+Mesuré au pilote de navigateur sur « La pénalité de rupture rend le stock calculable », dont
+la citation tient quatre lignes — une carte qui défilait déjà avant cette troisième action.
+
+C'est le défilement de page qui l'absorbe, et c'est l'arbitrage déjà fait pour la ligne des
+cartes passées : comprimer les cibles ou rétrécir le texte de tous les jours pour garder à
+l'écran une action qu'on emploie rarement aurait été l'inverse de la bonne dépense. La cible
+de « Partager » mesure 89 × 44 px sur un écran de 320 points, au-dessus des 44 px
+recommandés au doigt.
+
+**Aucune feuille, aucune confirmation.** Le libellé dit ce qui s'est passé — « Partager »,
+puis « Lien copié » quand le presse-papiers a servi — et un second appui recommence. Un
+partage abouti par la feuille du système ne dit rien du tout : le système l'a déjà dit, et
+le redire par-dessus serait une seconde annonce du même fait.
+
+**Et la feuille du système est ici le bon chemin**, à l'inverse exact de l'arbitrage fait
+au §6 pour « Approfondir ». Ce qui part est un message de trois lignes destiné à une
+personne, pas un dossier de 22 000 caractères destiné à une conversation : la feuille
+d'Android, qui classe ses cibles par usage et propose donc les messageries en premier, est
+le défaut qu'on fuyait là-bas et exactement ce qu'il faut ici. Le presse-papiers reste le
+repli, pour le navigateur de bureau où `navigator.share` n'existe pas.
+
+### L'invitation, à l'autre bout du partage
+
+Qui ouvre un lien partagé tombe sur la fiche du concept — un écran de lecture, pas une page
+d'accueil — et rien ne lui dit d'où elle vient. L'invitation est ce qui le lui dit, et elle
+est **posée après « Approfondir », au pied de la fiche** : on invite quelqu'un chez soi après
+lui avoir montré pourquoi, pas avant.
+
+**Elle n'est pas un bandeau, et trois conditions l'en empêchent.** Elle ne s'affiche que si
+le document s'est ouvert sur cette fiche — la signature d'un lien suivi depuis une
+messagerie, et le seul signal qui la donne, puisque l'écran, l'adresse et le référent sont
+muets là-dessus —, que si l'application ne tourne pas déjà comme une application, et jamais
+avant que le navigateur ait répondu à ces deux questions. Un lecteur qui atteint la même
+fiche depuis Explorer ne voit rien : c'est le même écran, et il n'a pas à savoir qu'il l'est.
+
+**Ce qu'elle propose dépend de ce que la plateforme permet, et rien n'est promis au-delà.**
+Le bouton d'installation n'existe que si le navigateur a confié une invitation — on la retient
+au chargement pour la rendre au moment où le lecteur la demande, plutôt qu'au moment où le
+navigateur la propose. Sans elle, il reste un lien vers l'écran du jour, qui est vrai partout.
+iOS n'émet aucune invitation, sur aucun de ses navigateurs : le geste y est manuel, et l'écran
+le dit en une ligne — ne rien dire laisserait croire que l'application ne s'installe pas.
+
 ### Les trois coupes d'Explorer
 
 **Domaines · Thèmes · Auteurs**, dans cet ordre, « Domaines » par défaut.
@@ -1550,6 +1623,10 @@ Aucun écran n'a gagné ni perdu une information.
 | `src/domain/concepts/ai-handoff.ts` | L'assemblage du message : instructions, carte, corpus, lien |
 | `src/lib/ai-destinations.ts` | Les applications d'IA proposées, et elles seules |
 | `src/components/ui/DeepenSheet.tsx` | Ce qui suit l'appui : copie faite, où coller, reprises |
+| `src/domain/concepts/card-share.ts` | Ce qu'un partage emporte vers une personne, et ce qu'il laisse sur la carte |
+| `src/components/ui/ShareButton.tsx` | Le geste de partage : feuille du système, presse-papiers en repli, et ce que le libellé en dit |
+| `src/lib/install-prompt.ts` | L'invitation du navigateur retenue, l'application déjà installée, l'installation manuelle d'iOS, et d'où le document s'est ouvert |
+| `src/components/ui/InstallInvitation.tsx` | Ce que voit celui à qui l'on a partagé une carte, et les trois conditions qui l'affichent |
 | `src/domain/concepts/sources.ts` | L'ordre de lecture des sources et le nom de leur niveau |
 | `src/components/ui/mark-geometry.mjs` | La géométrie de la marque, et elle seule |
 | `src/components/ui/Mark.tsx`, `Wordmark.tsx` | L'œil, et les deux mots qui le portent à la place d'une lettre — un par partition d'orbite |
@@ -1581,6 +1658,22 @@ Listé plutôt que supposé :
   fonctionnelle.
 - La feuille de partage réelle d'iOS et d'Android : quelles applications d'IA
   apparaissent, et si le prompt complet leur parvient sans troncature.
+- **La feuille de partage réelle, pour une carte cette fois.** Le message fait moins de
+  500 caractères pour toutes les cartes du corpus, ce qu'un test vérifie, et il n'a donc
+  aucune raison d'être tronqué — mais quelles cibles la feuille propose en premier, et si
+  le lien arrive à côté du texte ou dedans selon l'application d'arrivée, ne se constate
+  que sur un appareil. Les deux chemins ont été rendus et regardés au pilote de navigateur,
+  presse-papiers compris ; la feuille elle-même, non — Chromium sans tête n'en a pas.
+- **L'invitation à installer, sur les plateformes qui la donnent.** `beforeinstallprompt`
+  a été simulé à l'identique et les deux branches vérifiées — bouton d'installation puis
+  repli une fois l'invitation dépensée —, mais un vrai Chrome ne l'émet qu'après ses
+  propres critères d'engagement, que rien ici ne reproduit. Ce qu'il faut regarder est le
+  moment où il l'émet : trop tard, l'invitation arrive après que le lecteur a quitté la
+  fiche, et le bouton n'aura jamais existé pour lui.
+- **Le chemin manuel d'iOS, sur un iPhone réel.** La consigne s'affiche sur la bonne
+  chaîne d'agent utilisateur, et le libellé du bouton de partage de Safari a été repris
+  tel qu'il se lit — mais c'est une consigne écrite de l'extérieur, et la seule façon de
+  savoir qu'elle décrit ce que le lecteur voit est de la suivre.
 - Le rendu du thème clair **sur un écran réel en plein soleil**. C'est le problème que ce
   thème existe pour régler, et il est le seul de la liste que rien ici ne peut établir : les
   neuf couples porteurs sont calculés et contrôlés à chaque construction, les sept écrans ont
@@ -1594,6 +1687,14 @@ Listé plutôt que supposé :
 - L'écran de démarrage de l'application installée, pour la même raison : un manifeste ne porte
   qu'une couleur, lue avant que la page existe. Il est noir quelle que soit la préférence, et
   le thème choisi prend la main dès que la page est analysée.
+- **L'aperçu d'un lien partagé, qui n'a ni titre par carte ni image.** Les balises Open
+  Graph sont dans la disposition, et elles y sont parce que la fiche désigne son concept
+  par `?c=<slug>` : il n'existe qu'une page pour toutes les cartes, et aucun titre par
+  carte ne peut être écrit à la construction. L'image, elle, manque pour une autre raison —
+  `og:image` n'accepte qu'une URL absolue, et le même bundle est servi sous localhost, sous
+  GitHub Pages et sous un domaine propre : une adresse choisie par défaut serait fausse
+  partout ailleurs. Y revenir demanderait une route statique par concept, ou une adresse de
+  publication déclarée à la construction ; l'arbitrage n'est pas fait.
 - **L'icône de l'application installée, qui ne se repeint pas** — même limite, poussée à son
   terme. Les icônes d'un manifeste sont figées à l'installation, et les mises à jour de
   manifeste les excluent explicitement : le rappel du jour se rend donc dans le favicon de

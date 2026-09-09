@@ -43,6 +43,30 @@ export const metadata: Metadata = {
   description:
     "Une exploration interdisciplinaire des sciences du travail, des organisations et des systèmes.",
   /*
+   * Ce qu'une messagerie affiche du lien qu'on lui donne.
+   *
+   * Une carte se partage désormais (voir `ShareButton`), et ce qui arrive au bout est
+   * d'abord un aperçu : sans ces balises, chaque service en fabrique un à sa façon à partir
+   * de ce qu'il trouve, et deux personnes ne reçoivent pas la même chose. Elles sont dans la
+   * disposition et non sur la fiche : celle-ci désigne son concept par `?c=<slug>`, si bien
+   * qu'il n'existe qu'une page pour toutes les cartes et qu'aucun titre par carte ne peut
+   * être écrit à la construction — voir `src/app/explore/concept/page.tsx`.
+   *
+   * Et pas d'image, faute de pouvoir en donner l'adresse : `og:image` n'accepte qu'une URL
+   * absolue, et l'application ne connaît pas le domaine qui la sert — c'est le même bundle
+   * sous localhost, sous GitHub Pages et sous un domaine propre. Une adresse choisie par
+   * défaut serait fausse partout ailleurs, et un aperçu sans image vaut mieux qu'un aperçu
+   * cassé. La limite est consignée au §11 de `docs/ux-direction.md`.
+   */
+  openGraph: {
+    title: "Curiosity : sciences du travail, des organisations et des systèmes",
+    description:
+      "Une carte par jour pour comprendre le travail et les organisations, établie sur ses sources.",
+    siteName: "Curiosity",
+    locale: "fr_FR",
+    type: "website",
+  },
+  /*
    * Ces chemins sont préfixés à la main : Next applique `basePath` aux liens et aux
    * ressources qu'il émet lui-même, pas aux URL écrites dans les métadonnées.
    */

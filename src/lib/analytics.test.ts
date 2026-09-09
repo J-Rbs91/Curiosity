@@ -41,11 +41,13 @@ describe("réglages du compteur", () => {
 });
 
 describe("gestes comptés", () => {
-  it("nomme les trois gestes qui n'ont pas d'adresse à eux", () => {
+  it("nomme les gestes qui n'ont pas d'adresse à eux", () => {
     expect(AUDIENCE_EVENTS).toEqual({
       carteDuJour: "carte-du-jour",
       approfondir: "approfondir",
       poursuiteIa: "poursuite-ia",
+      partage: "partage",
+      installation: "installation",
     });
   });
 
