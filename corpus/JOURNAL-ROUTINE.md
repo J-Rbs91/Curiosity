@@ -19,6 +19,16 @@ disent ce qui est.
 - bloqué par   : **le serveur MCP `documentary`, en échec de connexion (`CONNECTION_CLOSED`) pour la dixième nuit consécutive**, constat fait par le harnais au lever et non sur la foi du journal. **Second blocage, de dispositif, identique à celui des passages 10 à 14** : `Task` n'est pas exposé à `corpus-orchestrator`, donc **la session a orchestré elle-même**, lançant les vingt sous-agents `corpus-*` un par un par l'outil `Agent` du harnais, sans produire elle-même aucune connaissance. **Sixième nuit de suite : c'est l'état du dispositif, pas un accident.** **Troisième blocage, d'accès, constaté sur pièce** : `apps.dtic.mil` répond 403, `www.rand.org` 403 derrière CloudFront, `journals.uchicago.edu` 403, `lccn.loc.gov` **500** sur `/marcxml` pour la seconde nuit consécutive, HathiTrust 403 Cloudflare, Harvard LibraryCloud 429, Cairn 403 derrière DataDome, l'API SRU de Gallica 403, l'API plein texte d'Internet Archive refusée par le proxy sortant, OpenAlex « Insufficient budget », Semantic Scholar 429, `mitpress.mit.edu` 403, et le dépôt Dauphine `basepub.dauphine.psl.eu` en `CONNECT tunnel failed 502`. **OpenEdition Books est inatteignable par GET simple**, étant une application JavaScript : c'est une limite d'outillage, pas un vide. Aucun n'a été contourné.
 - la nuit suivante prend : **rien. C'est le quinzième et dernier passage.** Le bilan des quinze est écrit en fin de ce fichier, et il dit par quel bout reprendre à la main.
 
+### Le serveur `documentary` a répondu une troisième fois, après la fusion
+
+**Constaté le 8 septembre à 20h24 UTC, après la fusion de la pull request [#101](https://github.com/J-Rbs91/Curiosity/pull/101), et écrit ici parce que c'est la troisième fois et que cela fait désormais figure.** Les sept outils `mcp__documentary__*` ont été exposés à la session dans le même tour que la notification de fusion, exactement comme au passage 14, où le retour avait suivi la fusion de six minutes.
+
+**Ils ont été essayés plutôt que crus**, comme la règle écrite au passage 14 le demande. `verify_reference` a résolu le DOI `10.3406/sciso.1996.1298`, celui de Boulaire, Landry et Martel, et a rendu `resolved: true`, `conclusive: true`, `mismatches: []`, avec **les trois auteurs dans l'ordre exact que le lecteur primaire avait relevé sur l'image du folio 87**, l'année, la revue, l'éditeur et la langue conformes, et `also_in_openalex: true`. **C'est une confirmation indépendante d'une carte publiée cette nuit, obtenue par un outil que la nuit n'a pas eu.**
+
+**Trois clignotements, trois fois après la clôture, et jamais pendant le travail.** Le premier le 1er septembre à 06h10, le deuxième le 7 septembre à 05h33, celui-ci le 8 septembre à 20h24. **Le fait à retenir n'est pas que le serveur soit mort, c'est qu'il ne répond jamais quand un lot en a besoin**, et qu'il répond quand plus personne ne l'attend. Aucune des quinze nuits n'a pu s'appuyer dessus.
+
+**La règle pour une reprise à la main est donc confirmée et non modifiée** : on l'essaie au lever, en un appel, et le lot se dimensionne sur ce que cet appel rend, jamais sur ce qui est écrit ici. Mais **elle gagne une précision** : un retour constaté après une clôture ne prédit rien du lever suivant, et les trois cas connus se sont tous éteints dans le tour où ils sont apparus.
+
 ### Ce que cette nuit a établi, en une phrase
 
 La sixième et dernière nuit de phase 3 **solde les deux legs les mieux qualifiés du dépôt et les
@@ -1955,8 +1965,9 @@ Trois blocages ont duré et durent encore. Ils ne sont pas des accidents et une 
 les redécouvrir.
 
 - **Le serveur MCP `documentary` est en échec de connexion depuis le 29 août**, dix nuits
-  consécutives. Il a clignoté deux fois, le 1er et le 7 septembre, répondant une fois puis
-  disparaissant. **La règle qui en sort : on l'essaie au lever, en un appel, et le lot se
+  consécutives. Il a clignoté **trois fois**, le 1er, le 7 et le 8 septembre, répondant une fois
+  puis disparaissant, **et les trois fois après une clôture, jamais pendant un lot**. Le troisième
+  cas est décrit en tête du passage 15 : il a confirmé une référence publiée la nuit même. **La règle qui en sort : on l'essaie au lever, en un appel, et le lot se
   dimensionne sur ce que cet appel rend**, jamais sur ce qui est écrit ici. Sans lui, une nuit
   travaille par `WebSearch`, `WebFetch`, `curl`, l'API Crossref directe, Unpaywall, OpenLibrary,
   la BnF et le SRU de K10plus, qui répondent tous.
