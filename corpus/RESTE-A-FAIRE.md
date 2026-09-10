@@ -55,10 +55,20 @@ A et B sont fausses : **la condition C décide, et la phase 3 a commencé le 2 s
 `behavioral-economics`, qui passe de quatre à huit cartes, a continué le 3 septembre sur
 `sociology-of-work`, qui passe de sept à onze, le 4 septembre sur `work-psychology`, qui passe
 de sept à douze et de deux thèmes à trois, le 5 septembre sur `systems-thinking`, qui passe de sept
-à quinze cartes et de trois thèmes à cinq, et le 7 septembre sur `operations-management`, **qui
-passe de huit à seize cartes et de trois thèmes à quatre**. Elle enrichit un domaine par nuit, en
-rotation, et **le suivant se déduit sans arbitrage, le critère de repli désignant le seul domaine
-encore à huit cartes hors rotation : `decision-science`** — voir la fin du chantier D.
+à quinze cartes et de trois thèmes à cinq, le 7 septembre sur `operations-management`, qui
+passe de huit à seize cartes et de trois thèmes à quatre, et le 8 septembre sur `decision-science`,
+**qui passe de huit à quinze cartes et de deux thèmes à quatre**. Elle enrichit un domaine par nuit,
+en rotation, et **le suivant se déduit sans arbitrage, le critère de repli désignant le seul domaine
+encore à neuf cartes hors rotation : `measurement-theory`, la théorie de la mesure** — voir la fin
+du chantier D.
+
+**La routine ne s'arrête pas au quinzième passage : son horizon a été porté à quarante le
+10 septembre 2026**, par une décision de l'auteur du dépôt prise en session. Ces deux chantiers
+lui restent donc ouverts pour vingt-cinq nuits de plus, et **le chantier B cesse d'être hors de sa
+portée** : la règle de rotation, qui l'avait systématiquement écarté sur quinze nuits parce que la
+sociologie des organisations n'a jamais été le domaine le moins doté, l'atteint en quelques nuits
+dès lors que les cinq domaines encore sans enrichissement en reçoivent un. Le détail du raisonnement
+est dans la note de tête de [`JOURNAL-ROUTINE.md`](JOURNAL-ROUTINE.md).
 
 **Le chantier C est fermé.** Il a perdu un domaine le 22 août, `systems-thinking`, un second le 23,
 `decision-science`, un troisième le 25, `operations-management`, un quatrième le 26,

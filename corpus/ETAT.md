@@ -14,7 +14,9 @@ validé et ce qui est servi, ouvert le 23 août et remonté à trente-quatre car
 refermé au passage 09 le 1er septembre ; les passages 10 à 15 l'ont rouvert de quatre, quatre,
 cinq, huit, huit et sept cartes et refermé la même nuit chaque fois, la phase 3 se terminant par
 les approfondissements des cartes qu'elle crée.
-`npm test` : **482 tests, 0 échec.** `npm run lint` et `npm run corpus:build` : sans erreur.
+`npm test` : **510 tests, 0 échec**, reconstaté le 10 septembre 2026. Ils étaient 482 à la clôture
+du passage 15 ; les vingt-huit ajoutés viennent de la pull request #103, « Partager une carte », et
+non d'un travail documentaire. `npm run lint` et `npm run corpus:build` : sans erreur.
 La projection a été vérifiée **idempotente** sur deux exécutions successives, et
 `git diff --exit-code src/content/generated/` est propre après reprojection.
 
@@ -86,22 +88,31 @@ sept à onze. Le 4 septembre `work-psychology`, de sept à douze et de deux thè
 désignations n'a demandé d'arbitrage** : la règle de rotation les a rendues seule, et c'est le
 résultat de méthode le plus net de la phase.
 
-**Le 8 septembre 2026 est le quinzième et dernier passage de la routine nocturne.** Le bilan des
-quinze passages est en fin de [`corpus/JOURNAL-ROUTINE.md`](JOURNAL-ROUTINE.md), avec ce que la
-routine a ouvert, ce qu'elle laisse ouvert, et par quel bout reprendre à la main.
+**Le 8 septembre 2026 était le quinzième et dernier passage de la routine nocturne. Il ne l'est
+plus : la routine a été prolongée à quarante passages le 10 septembre 2026**, par une décision de
+l'auteur du dépôt prise en session, et la note en tête de
+[`corpus/JOURNAL-ROUTINE.md`](JOURNAL-ROUTINE.md) porte ce que cette prolongation annule et ce
+qu'elle laisse intact. Le bilan des quinze premiers passages, en fin du même fichier, **reste vrai
+comme état au 8 septembre** et n'est plus terminal. Les chiffres d'en-tête ci-dessus ont été
+reconstatés par les scripts le 10 septembre et n'ont pas bougé : 136 validées, 1 en cours,
+136 approfondissements, file vide.
 
-**Ce que la rotation désignerait si elle continuait**, écrit ici parce que c'est ce qu'une reprise
-à la main doit savoir en premier. Six domaines ont désormais un enrichissement au journal et
-sortiraient de la rotation : `behavioral-economics`, `sociology-of-work`, `work-psychology`,
+**Ce que la rotation désigne, et ce n'est plus une hypothèse** : la prolongation en fait la cible
+de la nuit 16. Le calcul ci-dessous a été refait par `corpus:audit` le 10 septembre et il tient
+chiffre pour chiffre. Six domaines ont désormais un enrichissement au journal et
+sortent de la rotation : `behavioral-economics`, `sociology-of-work`, `work-psychology`,
 `systems-thinking`, `operations-management` et `decision-science`. Des cinq restants, le critère
-de repli désigne **celui qui a le moins de cartes validées, et il est seul à ce niveau :
-`theorie-de-la-mesure`, neuf cartes**, contre dix pour la sociologie des organisations, douze pour
+de repli désigne **celui qui a le moins de cartes validées, et il est seul à ce niveau : la théorie
+de la mesure, `measurement-theory` dans `src/content/taxonomy.ts`, neuf cartes**, contre dix pour la sociologie des organisations, douze pour
 la cybernétique, treize pour les human factors et quinze pour l'ergonomie de l'activité. **Il n'y
 a pas d'égalité à trancher.**
 
-Mais une reprise à la main n'est pas tenue par ce critère, et **elle gagnerait à le reconsidérer
-plutôt qu'à l'appliquer une septième fois** : il a été écrit pour répartir l'effort entre onze
-domaines, et il a fait son tour sur six d'entre eux. `RESTE-A-FAIRE.md` porte au chantier B les
+**Sur un horizon de quinze nuits, ce critère méritait d'être reconsidéré plutôt qu'appliqué une
+septième fois** : il a été écrit pour répartir l'effort entre onze domaines et il n'avait fait son
+tour que sur six d'entre eux. **Sur quarante, l'objection tombe d'elle-même** : les cinq domaines
+restants reçoivent leur enrichissement en cinq nuits, la sociologie des organisations comprise, et
+le critère principal du §2 prend ensuite le relais pour un tour franc. Une reprise à la main n'est
+de toute façon pas tenue par ce critère : `RESTE-A-FAIRE.md` porte au chantier B les
 vingt-cinq entrées de la file de la sociologie des organisations, **que la routine n'a jamais
 touchée** et qui reste le chantier au meilleur rendement documentaire du dépôt : sa cartographie
 est faite, l'accessibilité de chaque entrée est constatée, le rang de chacune est motivé, et un

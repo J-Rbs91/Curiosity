@@ -5,7 +5,55 @@ coup d'œil ce que la précédente a fait, sur quelle branche elle l'a laissé, 
 reprendre. **Les scripts priment sur ce fichier** : il dit ce qui a été tenté et pourquoi, ils
 disent ce qui est.
 
-## Passage 15/15 — 2026-09-08
+> ## La routine est prolongée à quarante passages — décidé le 10 septembre 2026
+>
+> **À lire avant l'entrée du passage 15, qui se croit la dernière et ne l'est plus.** L'horizon de
+> la routine était de quinze passages ; il est porté à **quarante** par une décision de l'auteur du
+> dépôt, prise en session le 10 septembre. Les dénominateurs des quinze en-têtes ci-dessous ont été
+> réécrits de `/15` en `/40` pour que le compteur du §6 se lise sans ambiguïté : **la nuit suivante
+> lit le dernier `## Passage NN/40` et ajoute 1.**
+>
+> **Ce que cela annule.** Le passage 15 s'est clos sur « la nuit suivante prend : rien » et sur un
+> bilan présenté comme la dernière chose que la routine écrit. **Les deux sont caducs quant à la
+> clôture, et intacts quant au fond** : le bilan reste vrai comme état des quinze premiers passages,
+> il n'est simplement plus terminal. Il est renommé en conséquence et n'a pas été retouché
+> autrement.
+>
+> **Ce que cela ne change pas.** Ni le protocole du §3, ni les règles de preuve, ni l'ordre des
+> phases, ni le plafond de huit cartes. Une nuit prolongée travaille exactement comme les quinze
+> premières.
+>
+> **La nuit du 9 septembre n'a pas eu lieu et celle du 10 s'est arrêtée d'elle-même**, ayant lu un
+> compteur épuisé : elle n'a rien instruit, rien écrit et rien commis, ce qui est le comportement
+> que le §6 lui prescrivait alors. **Aucun travail n'a été perdu**, et `origin/main` porte bien les
+> quinze passages, vérifié au lever par `git rev-list --left-right --count origin/main...HEAD`, qui
+> rend `0 0`.
+>
+> **Ce que la nuit 16 prend**, établi par les scripts le 10 septembre et non repris d'un compte
+> écrit : `corpus:audit` n'affiche **aucun domaine « en cours de constitution »**, donc la
+> condition A est fausse ; `corpus:deepen` projette **136 approfondissements pour 136 cartes** et
+> ne liste rien en fin de sortie, donc la condition B est fausse. **La condition C décide, et elle
+> décide seule : phase 3, et le domaine est `measurement-theory`** (Théorie de la mesure / KPI).
+> Six domaines ont un enrichissement au journal et sortent de la rotation ; parmi les cinq autres,
+> le critère de repli désigne celui qui a le moins de cartes validées, et **`measurement-theory` est
+> seul à neuf**, contre dix pour la sociologie des organisations, douze pour la cybernétique, treize
+> pour les *human factors* et quinze pour l'ergonomie de l'activité. Aucune égalité à trancher.
+> **C'est exactement la désignation que `corpus/ETAT.md` avait calculée d'avance le 8 septembre**,
+> sous « Ce que la rotation désignerait si elle continuait », et les scripts du 10 la confirment
+> chiffre pour chiffre. En
+> son sein, la priorité 1 est sans objet, les deux thèmes déclarés sans carte étant en sociologie
+> des organisations ; la priorité 2 aussi, `queue.json` ne couvrant que ce même domaine ; **la
+> priorité 3 commande, les angles morts de `corpus/map/measurement-theory.scouting.md`**.
+>
+> **Et l'avertissement du bilan sur la règle de rotation est levé par la prolongation elle-même.**
+> Il disait que la règle désigne toujours le moins doté et qu'elle avait donc systématiquement
+> écarté la file de la sociologie des organisations, chantier au meilleur rendement du dépôt. **Sur
+> quinze nuits c'était vrai ; sur quarante cela cesse de l'être** : les cinq domaines encore sans
+> entrée d'enrichissement en reçoivent une en cinq nuits, la sociologie des organisations comprise,
+> après quoi le critère principal du §2 prend le relais et fait un tour franc. **La règle n'a pas
+> besoin d'être amendée, elle avait besoin d'être laissée tourner.**
+
+## Passage 15/40 — 2026-09-08
 
 - branche      : **`claude/zen-johnson-pazrfr`, imposée par la session, pas `main`.** Elle partait exactement d'`origin/main`, à `1995fbc`, qui porte la fusion de la pull request [#100](https://github.com/J-Rbs91/Curiosity/pull/100) du passage 14 : **le travail des passages 07 à 14 est donc bien dans `main`**, vérifié au lever par `git rev-list --left-right --count origin/main...HEAD`, qui rend `0 0`. La parade du passage 12 a été appliquée : `git fetch origin main`, une seule référence, jamais deux refspecs dans le même appel. Le travail de la nuit est poussé sur cette branche, **par commits successifs tout au long de la nuit plutôt qu'en un seul à la clôture**, ce qui est nouveau et ce qui a servi : voir la section sur le dispositif. **Pull request [#101](https://github.com/J-Rbs91/Curiosity/pull/101) vers `main`, ouverte à la clôture, trente-quatre commits. Tant qu'elle n'est pas fusionnée, le travail du passage 15 n'est pas dans `main`, et une reprise à la main doit partir de cette branche.**
 - phase        : **3 (enrichissement d'un domaine), la sixième et dernière de la routine.** Condition A fausse, `corpus:audit` n'affichant aucun domaine « en cours de constitution ». Condition B fausse, `corpus:deepen` projetant 129 approfondissements pour 129 cartes au lever et sa fin de sortie ne listant rien. **La condition C décidait, et elle décidait seule.**
@@ -17,7 +65,7 @@ disent ce qui est.
 - contrôles    : validate 0 erreur (140 enregistrements, 136 validés, **100 avertissements, les 6 nouveaux portant tous sur l'absence de source secondaire**) · build 136 concepts · deepen 136/136 · `git diff --exit-code src/content/generated/` propre après reprojection, **projection vérifiée idempotente sur deux exécutions successives** · test 482/0 · lint 0 · audit : `Science de la décision` passe de **2 thèmes / 8 validés** à **4 thèmes / 15 validés / 0 en cours**, et la liste des thèmes sans fiche validée reste à deux, `autorite-domination` et `apprentissage-organisationnel`. Rien à drainer dans `src/content/fixtures/concepts.fixture.ts` : aucun des sept identifiants n'y a d'homonyme.
 - commit       : les commits sont un par étape de la chaîne, poussés au fil de la nuit ; la branche est `claude/zen-johnson-pazrfr`.
 - bloqué par   : **le serveur MCP `documentary`, en échec de connexion (`CONNECTION_CLOSED`) pour la dixième nuit consécutive**, constat fait par le harnais au lever et non sur la foi du journal. **Second blocage, de dispositif, identique à celui des passages 10 à 14** : `Task` n'est pas exposé à `corpus-orchestrator`, donc **la session a orchestré elle-même**, lançant les vingt sous-agents `corpus-*` un par un par l'outil `Agent` du harnais, sans produire elle-même aucune connaissance. **Sixième nuit de suite : c'est l'état du dispositif, pas un accident.** **Troisième blocage, d'accès, constaté sur pièce** : `apps.dtic.mil` répond 403, `www.rand.org` 403 derrière CloudFront, `journals.uchicago.edu` 403, `lccn.loc.gov` **500** sur `/marcxml` pour la seconde nuit consécutive, HathiTrust 403 Cloudflare, Harvard LibraryCloud 429, Cairn 403 derrière DataDome, l'API SRU de Gallica 403, l'API plein texte d'Internet Archive refusée par le proxy sortant, OpenAlex « Insufficient budget », Semantic Scholar 429, `mitpress.mit.edu` 403, et le dépôt Dauphine `basepub.dauphine.psl.eu` en `CONNECT tunnel failed 502`. **OpenEdition Books est inatteignable par GET simple**, étant une application JavaScript : c'est une limite d'outillage, pas un vide. Aucun n'a été contourné.
-- la nuit suivante prend : **rien. C'est le quinzième et dernier passage.** Le bilan des quinze est écrit en fin de ce fichier, et il dit par quel bout reprendre à la main.
+- la nuit suivante prend : ~~**rien. C'est le quinzième et dernier passage.**~~ **Caduc depuis le 10 septembre 2026 : la routine est prolongée à quarante passages, et la note en tête de ce fichier dit ce que la nuit 16 prend — phase 3, `measurement-theory`.** Ce qui était vrai le 8 septembre et le reste : le bilan écrit en fin de ce fichier dit par quel bout reprendre à la main, et il vaut toujours pour une reprise manuelle menée en parallèle de la routine.
 
 ### Le serveur `documentary` a répondu une troisième fois, après la fusion
 
@@ -205,7 +253,7 @@ quatorze passages précédents groupaient leur travail ; celui-ci a commis et po
 résistance à l'interruption** : à tout moment de la nuit, l'état poussé était un état cohérent, et
 une coupure n'aurait coûté que l'étape en cours.
 
-## Passage 14/15 — 2026-09-07
+## Passage 14/40 — 2026-09-07
 
 - branche      : **`claude/zen-johnson-mbwwin`, imposée par la session, pas `main`.** Elle partait exactement d'`origin/main`, à `5abcdc1`, qui porte la fusion de la pull request [#98](https://github.com/J-Rbs91/Curiosity/pull/98) du passage 13 : **le travail des passages 07 à 13 est donc bien dans `main`**, vérifié au lever par `git rev-list --left-right --count origin/main...HEAD`, qui rend `0 0`. La parade du passage 12 a été appliquée : `git fetch origin main`, une seule référence, jamais deux refspecs dans le même appel. Le travail de la nuit est poussé sur cette branche, **pull request [#99](https://github.com/J-Rbs91/Curiosity/pull/99) vers `main`, ouverte à la clôture**. **Tant qu'elle n'est pas fusionnée, la nuit suivante reprend depuis cette branche.** Aucune nuit n'a eu lieu le 6 septembre : le passage 13 date du 5, et l'écart de deux jours est un fait de calendrier, pas un travail perdu.
 - phase        : **3 (enrichissement d'un domaine), la cinquième de la routine.** Condition A fausse, `corpus:audit` n'affichant aucun domaine « en cours de constitution ». Condition B fausse, `corpus:deepen` projetant 121 approfondissements pour 121 cartes au lever et sa fin de sortie ne listant rien. **La condition C décidait, et elle décidait seule.**
@@ -478,7 +526,7 @@ il se relance après que le dernier agent a rendu, et la projection se vérifie 
 rejouant deux fois. La seconde exécution ne bouge plus. **Un défaut qui se reproduit à l'identique
 avec sa parade déjà écrite n'est plus un incident, c'est une étape de la clôture.**
 
-## Passage 13/15 — 2026-09-05
+## Passage 13/40 — 2026-09-05
 
 - branche      : **`claude/zen-johnson-cwir6d`, imposée par la session, pas `main`.** Elle partait exactement d'`origin/main`, à `5ef1acc`, qui porte la pull request [#97](https://github.com/J-Rbs91/Curiosity/pull/97) du passage 12 : **le travail des passages 07 à 12 est donc bien dans `main`**, vérifié par `git rev-list --left-right --count`, qui rend `0 0` au lever. Le travail de la nuit est poussé sur cette branche, **pull request [#98](https://github.com/J-Rbs91/Curiosity/pull/98) vers `main`, ouverte à la clôture, vingt-neuf commits, un par étape de la chaîne**. **Tant qu'elle n'est pas fusionnée, la nuit suivante reprend depuis cette branche.** La parade écrite par le passage 12 a été appliquée sans y penser : `git fetch origin main`, une référence à la fois, jamais deux refspecs dans le même appel.
 - phase        : **3 (enrichissement d'un domaine), la quatrième de la routine.** Condition A fausse, `corpus:audit` n'affichant aucun domaine « en cours de constitution ». Condition B fausse, `corpus:deepen` projetant 113 approfondissements pour 113 cartes au lever et sa fin de sortie ne listant rien. **La condition C décidait, et elle décidait seule.**
@@ -649,7 +697,7 @@ passage suivant sur ce domaine, et elles n'attendent que d'être cardées.
   folio + 2 jusqu'à la page 102 et folio + 1 ensuite. Une citation introuvable au feuillet
   homonyme n'est pas une citation absente, et un contrôleur a vérifié folio par folio.
 
-## Passage 12/15 — 2026-09-04
+## Passage 12/40 — 2026-09-04
 
 - branche      : `claude/zen-johnson-vf0bdp` (imposée par la session, pas `main`). **Le travail du passage 11 est fusionné dans `main`**, et cette branche en partait exactement. Le travail de la nuit y est poussé, puis `origin/main` y a été fusionné à la clôture pour reprendre deux commits parus pendant la nuit, dont un relèvement de sécurité de `fast-uri`. Pull request [#97](https://github.com/J-Rbs91/Curiosity/pull/97) vers `main`, ouverte à la clôture, **onze commits, elle ne porte que le travail de cette nuit**. Tant qu'elle n'est pas fusionnée, la nuit suivante reprend depuis cette branche.
 - **erreur de la nuit, corrigée à la clôture, et à ne pas répéter** : le `git fetch origin main claude/zen-johnson-vf0bdp` du lever a **échoué en entier** parce que le second refspec n'existait pas encore côté distant (`fatal: couldn't find remote ref`). Git n'a donc mis à jour **aucune** des deux références, et `origin/main` est resté à `973db4d` tout au long de la nuit alors qu'il était déjà à `83be945`. J'ai écrit, dans ce journal et dans le corps de la pull request, que les passages 07 à 11 n'étaient pas dans `main` et que la branche avait 75 commits d'avance : **c'était faux**, ils y sont, et l'avance réelle était de onze commits pour deux de retard. Les deux textes sont corrigés. **La parade est d'un mot** : un `git fetch` à plusieurs refspecs est tout ou rien, donc on fetch une référence à la fois, ou l'on relit son code de sortie avant de raisonner sur ce qu'il a rapporté.
@@ -838,7 +886,7 @@ texte primaire, toutes en bibliographie ou en signalement. Chaque dossier de ré
 trois mêmes champs, ce que le corps établit, ce qu'il n'atteste pas, et si la pièce nomme ou non
 le texte de la carte, et chaque carte servie le dit dans ses `notes`.
 
-## Passage 11/15 — 2026-09-03
+## Passage 11/40 — 2026-09-03
 
 - branche      : `claude/zen-johnson-48i2i8` (imposée par la session, pas `main`). **Le travail du passage 10 est fusionné dans `main`**, pull request [#94](https://github.com/J-Rbs91/Curiosity/pull/94), commit de merge `7bc7e4f`, et **cette branche partait exactement de là** : constaté par `git log claude/zen-johnson-48i2i8..origin/main`, vide dans les deux sens. **Rien n'a été refait.** Le travail de la nuit est poussé sur cette branche. Pull request [#96](https://github.com/J-Rbs91/Curiosity/pull/96) vers `main`, ouverte à la clôture. Tant qu'elle n'est pas fusionnée, **la nuit suivante reprend depuis cette branche**, et non depuis `main`, sinon elle refera ce qui est déjà fait.
 - phase        : **3 (enrichissement d'un domaine), et c'est la deuxième de la routine.** Condition A fausse, aucun domaine à zéro carte validée depuis le passage 06. Condition B fausse, `corpus:deepen` projetant 104 approfondissements pour 104 cartes et sa fin de sortie ne listant rien. La condition C décidait donc, et elle décidait seule.
@@ -1014,7 +1062,7 @@ structure de règles. L'`id` est pris, et le validateur refusera tout doublon.
 - **Le salaire comme rapport de force reste à moitié ouvert** : une carte l'aborde désormais, par
   la classification, et non par le conflit salarial lui-même.
 
-## Passage 10/15 — 2026-09-02
+## Passage 10/40 — 2026-09-02
 
 - branche      : `claude/zen-johnson-9itxcp` (imposée par la session, pas `main`). **Le travail des passages 07 à 09 est fusionné dans `main`**, y compris la suite documentaire [#92](https://github.com/J-Rbs91/Curiosity/pull/92) que le passage 09 laissait en suspens : `main` était au commit de merge `94b1086`, cette branche en part, et **rien n'a été refait**. Pull request [#93](https://github.com/J-Rbs91/Curiosity/pull/93) vers `main`, ouverte à la clôture, CI verte sur les trois checks (`corpus`, `app`, `gitleaks`), **puis fusionnée dans `main`** le 2 septembre à 06h17 UTC, commit de merge `00d7393`. **La nuit suivante repart donc de `main`**, et non de cette branche : tout le travail du passage 10 y est. Cette branche a été redémarrée depuis `main` après la fusion pour porter la présente correction, qui ne touche à aucune carte.
 
@@ -1169,7 +1217,7 @@ projection se cherche dans tous les workflows, pas dans ceux qu'on connaît**, e
 - **L'effet de dotation reste hors lot**, faute d'un thème qui puisse le porter sans reposer sur une
   seule équipe d'auteurs.
 
-## Passage 09/15 — 2026-09-01
+## Passage 09/40 — 2026-09-01
 
 - branche      : `claude/zen-johnson-ilrf7b` (imposée par la session, pas `main`). **Le travail du passage 08 est fusionné dans `main`** (PR [#89](https://github.com/J-Rbs91/Curiosity/pull/89) puis [#90](https://github.com/J-Rbs91/Curiosity/pull/90), commit de merge `ffdb1d2`), et cette branche partait de `main` à jour, à ce commit : rien n'a été refait. Pull request [#91](https://github.com/J-Rbs91/Curiosity/pull/91) vers `main`, ouverte à la clôture, CI verte sur les trois checks (`corpus`, `app`, `gitleaks`), **puis fusionnée dans `main`** le 1er septembre à 06h09 UTC, commit de merge `08c2093`. **La nuit suivante repart donc de `main`**, et non de cette branche : tout le travail du passage 09 y est. Une suite documentaire, [#92](https://github.com/J-Rbs91/Curiosity/pull/92), rouvre la même branche depuis `main` après la fusion pour porter deux corrections aux fichiers d'état — la fusion elle-même, et ce que la nuit disait du serveur `documentary`. Elle ne touche à aucune carte. **Si elle n'est pas fusionnée, la nuit suivante la lit avant de partir de `main`** : la ligne « bloqué par » ci-dessous en dépend.
 - phase        : 2 (approfondissements), **troisième et dernière nuit de phase 2**. Condition A fausse — aucun domaine à zéro carte validée depuis le passage 06. Condition B vraie au lever de la nuit — `corpus:deepen` listait deux cartes sans approfondissement — et elle décidait seule. Aucune ouverture, aucune nouvelle carte, aucune recherche documentaire. **Elle est fausse à la fermeture, pour la première fois depuis le passage 06.**
@@ -1225,7 +1273,7 @@ nommant précisément ce qu'il faudrait ouvrir. Un `corpus-deepener` n'y peut ri
 **Elle devient la difficulté dominante dès la nuit suivante**, et elle suppose que le serveur
 `documentary` réponde — voir la ligne « bloqué par » : il a répondu une fois à 06h10, et il bat.
 
-## Passage 08/15 — 2026-08-31
+## Passage 08/40 — 2026-08-31
 
 - branche      : `claude/zen-johnson-jbbigs` (imposée par la session, pas `main`). **Le travail du passage 07 est fusionné dans `main`** (PR [#83](https://github.com/J-Rbs91/Curiosity/pull/83), commit de merge `f72ddc1`), et cette branche partait de `main` à jour, au commit `1929441` : rien n'a été refait. Pull request [#89](https://github.com/J-Rbs91/Curiosity/pull/89) vers `main`, ouverte à la clôture, **puis fusionnée dans `main`** le 31 août à 06h04 UTC, commit de merge `74e74af`, CI verte sur les trois checks (`corpus`, `app`, `gitleaks`). **La nuit suivante repart donc de `main`**, et non de cette branche : tout le travail du passage 08 y est. Tant qu'elle n'est pas fusionnée, **la nuit suivante reprend depuis cette branche**, et non depuis `main`.
 - phase        : 2 (approfondissements), **deuxième nuit de phase 2**. Condition A fausse — aucun domaine à zéro carte validée depuis le passage 06. Condition B vraie — `corpus:deepen` listait 18 cartes sans approfondissement en début de nuit, et elle décidait seule. Aucune ouverture, aucune nouvelle carte, aucune recherche documentaire.
@@ -1297,7 +1345,7 @@ manquant à l'exemplaire numérisé ; `theorie-des-perspectives` refuse de soude
 pertes à la citation affichée, faute de verbatim ; `normatif-descriptif-prescriptif` ne nomme pas
 le métier de deux des trois directeurs du volume, que le texte laisse deviner sans le dire.
 
-## Passage 07/15 — 2026-08-29
+## Passage 07/40 — 2026-08-29
 
 - branche      : `claude/zen-johnson-a8t77x` (imposée par la session, pas `main`). **Le travail du passage 06 est fusionné dans `main`** (PR [#82](https://github.com/J-Rbs91/Curiosity/pull/82), commit de merge `973db4d`), et cette branche partait de `main` à jour, à ce commit : rien n'a été refait. Pull request [#83](https://github.com/J-Rbs91/Curiosity/pull/83) vers `main`, ouverte à la clôture, **puis fusionnée dans `main`** le 29 août à 06h35 UTC, commit de merge `f72ddc1`, CI verte sur les trois checks (`corpus`, `app`, `gitleaks`). **La nuit suivante repart donc de `main`**, et non de cette branche : tout le travail du passage 07 y est.
 - phase        : 2 (approfondissements). **Première nuit de phase 2 de la routine.** La condition A est fausse depuis le passage 06, aucun domaine n'étant vide ; `corpus:deepen` listait 34 cartes sans approfondissement, la condition B était donc vraie et elle décidait seule. Aucune ouverture, aucune nouvelle carte, aucune recherche documentaire.
@@ -1359,7 +1407,7 @@ Science d'octobre 1955 pour `absorber-les-fluctuations-de-commandes`, l'article 
 mars 1954 pour `attente-du-poste-aval`, `The Foundations of Statistics` pour la critique de
 l'utilité espérée subjective, dont les postulats restent innommés un à un faute d'ouverture.
 
-## Passage 06/15 — 2026-08-28
+## Passage 06/40 — 2026-08-28
 
 - branche      : `claude/zen-johnson-r5n04e` (imposée par la session, pas `main`). **Le travail du passage 05 est fusionné dans `main`** (PR [#81](https://github.com/J-Rbs91/Curiosity/pull/81), commit de merge `996f8b5`), et cette branche partait de `main` à jour, au commit `996f8b5` : rien n'a été refait. Pull request [#82](https://github.com/J-Rbs91/Curiosity/pull/82) vers `main`, **ouverte et non fusionnée à la clôture**. Tant qu'elle n'est pas fusionnée, **la nuit suivante reprend depuis cette branche**, et non depuis `main`, sinon elle refera ce qui est déjà fait.
 - phase        : 1 (ouverture de domaine) — `behavioral-economics`, **onzième et dernier domaine sur onze**. Ouverture dans l'ordre complet et en une seule nuit : périmètre, cartographie, cartes, puis thème. **Après ce passage, aucun domaine déclaré n'est fermé à l'instruction, et la phase 1 n'a plus d'objet.**
@@ -1565,7 +1613,7 @@ pas une nuit d'instruction, et il faudrait que `node_modules` existe **avant** l
 session, par un hook `SessionStart` ou par l'image de l'environnement. **C'est la troisième nuit
 qu'elle est écrite ici sans être faite** : elle demande une décision hors routine.
 
-## Passage 05/15 — 2026-08-27
+## Passage 05/40 — 2026-08-27
 
 - branche      : `claude/zen-johnson-hjfz2m` (imposée par la session, pas `main`). **Le travail du passage 04 est fusionné dans `main`** (PR [#79](https://github.com/J-Rbs91/Curiosity/pull/79), commit de merge `ff3a443`), et cette branche partait de `main` à jour : rien n'a été refait. Pull request [#81](https://github.com/J-Rbs91/Curiosity/pull/81) vers `main`, **ouverte et non fusionnée à la clôture**. Tant qu'elle n'est pas fusionnée, **la nuit suivante reprend depuis cette branche**, et non depuis `main`, sinon elle refera ce qui est déjà fait.
 - phase        : 1 (ouverture de domaine) — `sociology-of-work`, **dixième domaine sur onze**, deuxième des trois derniers de la famille « Comprendre les humains et les organisations ». Ouverture dans l'ordre complet et en une seule nuit : périmètre, cartographie, cartes, puis thèmes.
@@ -1702,7 +1750,7 @@ faut que `node_modules` existe **avant** que la session ne démarre, par un hook
 par une installation dans l'image de l'environnement. **C'est la reprise à plus fort rendement du
 dépôt**, et elle ne coûte pas une nuit d'instruction.
 
-## Passage 04/15 — 2026-08-26
+## Passage 04/40 — 2026-08-26
 
 - branche      : `claude/zen-johnson-gg1vwh` (imposée par la session, pas `main`), pull request [#79](https://github.com/J-Rbs91/Curiosity/pull/79) vers `main`, **ouverte et non fusionnée à la clôture**. **Le travail du passage 03 est fusionné dans `main`** (PR [#78](https://github.com/J-Rbs91/Curiosity/pull/78), puis PR #77), et cette branche partait de `main` à jour, au commit `3ac78f8` : rien n'a été refait. Tant que la présente pull request n'est pas fusionnée, **la nuit suivante reprend depuis cette branche**.
 - phase        : 1 (ouverture de domaine) — `work-psychology`, **neuvième domaine sur onze**, premier des trois derniers de la famille « Comprendre les humains et les organisations ». Ouverture dans l'ordre complet et en une seule nuit : périmètre, puis cartographie, puis cartes, puis thèmes.
@@ -1747,7 +1795,7 @@ anglophone, ce qui n'était jamais arrivé dans ce corpus.
   il annonce 94 feuillets pour 88 sur cet item, et c'est lui qui a fait écrire une collation
   fausse à trois cartes.
 
-## Passage 03/15 — 2026-08-25
+## Passage 03/40 — 2026-08-25
 
 - branche      : `claude/zen-johnson-f21p0e` (imposée par la session, pas `main`), pull request [#78](https://github.com/J-Rbs91/Curiosity/pull/78) vers `main`, **ouverte et non fusionnée à la clôture**. **Le travail du passage 02 est fusionné dans `main`** (PR #76, commit `45cbae0`), et cette branche part de `main` à jour : rien n'est refait. Tant que la présente pull request n'est pas fusionnée, **la nuit suivante reprend depuis cette branche**.
 - phase        : 1 (ouverture de domaine) — `operations-management`, huitième domaine, **le domaine rend enfin ses cartes**. Périmètre et cartographie existaient depuis le passage 02 : cette nuit a sauté ces deux étapes et instruit directement, comme le passage 02 l'avait prescrit.
@@ -1783,7 +1831,7 @@ toutes une citation relue sur l'image, et trois thèmes dont aucun ne repose sur
   (limites de contrôle contre limites de tolérance) et la partie III de Bellman (lissage
   industriel, stock optimal).
 
-## Passage 02/15 — 2026-08-24
+## Passage 02/40 — 2026-08-24
 
 - branche      : `claude/zen-johnson-zfxtk9` (imposée par la session, pas `main`), pull request vers `main`. Le travail du passage 01 (PR #71) **est fusionné dans `main`**, et cette branche part de `main` à jour : rien n'est refait. Tant que la présente pull request n'est pas fusionnée, **la nuit suivante reprend depuis cette branche**.
 - phase        : 1 (ouverture de domaine) — `operations-management`, huitième domaine, dernier de la famille « Comprendre la production et les systèmes ».
@@ -1808,7 +1856,7 @@ ayant consommé la nuit, et il s'instruira au passage suivant sans repartir de z
 - **La couche francophone n'a pas été cherchée** : c'est le manque le plus net de la cartographie, à combler en priorité au balayage complémentaire (Persée, HAL, Cairn, OpenEdition Books, theses.fr — gestion industrielle, productique, génie industriel).
 - **Les trois domaines fermés restants** (`sociology-of-work`, `work-psychology`, `behavioral-economics`) ont chacun reçu une requête ciblée obligatoire : Taylor/Braverman repérés mais accès non vérifié pour le premier ; littérature dispersée sans texte primaire identifié pour le deuxième ; Schweitzer & Cachon 2000 repéré mais paywallé pour le troisième. **Aucun candidat vérifié, aucun « vide » établi** : trois repérages sans accès, à reprendre avec une base bibliographique structurée quand le MCP `documentary` sera exposé.
 
-## Passage 01/15 — 2026-08-23
+## Passage 01/40 — 2026-08-23
 
 - branche      : `claude/upbeat-archimedes-hhx6zg` (imposée par la session, pas `main`), pull request [#71](https://github.com/J-Rbs91/Curiosity/pull/71) vers `main`, **ouverte et non fusionnée à la clôture**. **La nuit suivante reprend depuis cette branche**, et non depuis `main`, tant que la pull request n'est pas fusionnée : sinon elle refera ce qui est déjà fait.
 - phase        : 1 (ouverture de domaine)
@@ -1842,9 +1890,17 @@ la page.
 
 ---
 
-# Bilan des quinze passages — écrit le 8 septembre 2026, à la clôture du dernier
+# Bilan des quinze premiers passages — écrit le 8 septembre 2026
 
-Ce bilan est la dernière chose que la routine écrit. Il dit ce qu'elle a ouvert, ce qu'elle laisse
+> **Il a été écrit comme un bilan de clôture, et il ne l'est plus.** La routine a été prolongée à
+> quarante passages le 10 septembre 2026 ; voir la note en tête de ce fichier. **Rien n'y a été
+> retouché**, hormis ce titre et ce paragraphe : les chiffres, les règles et les constats restent
+> ceux du 8 septembre et restent vrais. Ce qui tombe est sa seule prétention à être le dernier mot.
+> La section « Par quel bout reprendre à la main » garde toute sa valeur pour un travail mené en
+> parallèle de la routine, et son avertissement sur la règle de rotation est discuté, et levé, dans
+> la note de tête.
+
+Ce bilan dit ce que les quinze premiers passages ont ouvert, ce qu'ils laissent
 ouvert, et par quel bout reprendre à la main. **Les chiffres qui suivent sont ceux que les scripts
 ont rendus à la clôture du passage 15**, et non un décompte tenu de nuit en nuit : `corpus:validate`
 136 validés sur 140 enregistrements et 0 erreur, `corpus:deepen` 136 approfondissements pour
