@@ -3,7 +3,7 @@
  *
  * Les artefacts internes du Content Pipeline v2 (preuves, knowledge records, plans,
  * frontières documentaires, verdicts) restent dans `corpus/` et ne font pas partie du
- * contrat client. L'application reçoit uniquement les rendus destinés au lecteur.
+ * contenu rendu au lecteur.
  */
 
 export type AuthorId = string;
@@ -106,14 +106,17 @@ export interface DeepeningSection {
 /**
  * Rendu long destiné au lecteur.
  *
- * Le fichier maître `corpus/deepenings/<id>.json` possède aussi un champ `limits`, mais ce
- * champ est une frontière documentaire interne. Le projecteur l'élimine avant la génération
- * de `deepenings.generated.ts`; il ne fait donc volontairement pas partie de ce type.
+ * `limits` est un champ de compatibilité temporaire avec l'artefact généré historique.
+ * Il est interne : l'écran ne le rend pas et le Content Pipeline v2 ne le traite jamais
+ * comme du contenu lecteur. Il sera retiré du payload lors de la migration complète des
+ * approfondissements sans imposer un commit de 1,4 Mo dans cette refonte architecturale.
  */
 export interface Deepening {
   conceptId: ConceptId;
   lead: string[];
   sections: DeepeningSection[];
+  /** @deprecated Frontière documentaire interne, ne jamais afficher. */
+  limits?: string[];
 }
 
 export interface DailyPick {
@@ -122,9 +125,7 @@ export interface DailyPick {
   discovered?: boolean;
 }
 
-/**
- * Mémoire minimale de progression : ordre de dernière rencontre et carte du jour.
- */
+/** Mémoire minimale de progression : ordre de dernière rencontre et carte du jour. */
 export interface ProgressState {
   version: number;
   seen: ConceptId[];
