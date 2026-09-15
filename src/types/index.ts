@@ -1,85 +1,35 @@
 /**
- * Types de domaine partagés par le corpus et l'interface.
+ * Types de domaine consommés par l'application.
  *
- * L'application produit **une carte**, et un texte qui la prolonge. Tout ce qui servait à une
- * session d'apprentissage — quiz, graphe de prérequis, répétition espacée, cas pratiques — a
- * été retiré : produire ce contenu coûtait 938 Ko de matière documentaire pour 5 400
- * caractères affichés, et personne ne le lisait. Ce qui l'a remplacé n'est pas une session
- * plus courte, c'est un seul texte écrit à l'avance et relu — voir `Deepening`.
+ * Les artefacts internes du Content Pipeline v2 (preuves, knowledge records, plans,
+ * frontières documentaires, verdicts) restent dans `corpus/` et ne font pas partie du
+ * contrat client. L'application reçoit uniquement les rendus destinés au lecteur.
  */
 
 export type AuthorId = string;
 export type ThemeId = string;
 export type ConceptId = string;
-
-// ---------------------------------------------------------------------------
-// Taxonomie — « où sommes-nous ? »
-// ---------------------------------------------------------------------------
-
-/**
- * Famille et domaine situent ; thème, concept, auteur et sources enseignent. Les deux
- * couches sont volontairement distinctes : la taxonomie est une configuration, écrite une
- * fois et lue partout (`src/content/taxonomy.ts`) ; le corpus est produit par le pipeline
- * documentaire, fiche par fiche.
- *
- * Les identifiants sont des chaînes, et non des unions littérales. Une union donnerait une
- * vérification à la compilation, mais elle ferait de l'ajout d'un domaine une modification
- * de type propagée dans toute l'application — exactement ce que cette architecture existe
- * pour éviter. La cohérence des identifiants est contrôlée par les tests de la taxonomie,
- * qui vérifient qu'aucun domaine ne renvoie à une famille inconnue.
- */
 export type FamilyId = string;
 export type DomainId = string;
 
-/**
- * Une famille de domaines, et la question qu'elle pose.
- *
- * La question directrice n'est pas décorative : c'est elle qui permet à un lecteur de
- * choisir une porte d'entrée sans connaître les disciplines académiques qu'elle abrite.
- * Une famille dont on ne sait dire que le nom n'aide personne.
- */
 export interface Family {
   id: FamilyId;
   slug: string;
-  /** Le libellé affiché, en français. */
   label: string;
-  /** « Pourquoi les individus et les collectifs se comportent-ils ainsi ? » */
   question: string;
-  /** Rang d'affichage. Explicite, pour qu'aucun tri alphabétique ne le décide. */
   order: number;
 }
 
-/**
- * Un domaine d'étude, rattaché explicitement à sa famille.
- *
- * Le rattachement est une donnée, jamais déduit du nom : « Sociologie du travail » et
- * « Sociologie des organisations » se ressemblent, et rien dans leurs libellés ne dit
- * qu'elles relèvent de la même famille — c'est `familyId` qui le dit.
- *
- * Un domaine n'énumère pas ses thèmes ni ses concepts : ce sont eux qui se rattachent à
- * lui. Sans quoi déclarer un domaine et instruire son corpus deviendraient deux
- * modifications à tenir cohérentes à la main.
- */
 export interface Domain {
   id: DomainId;
   slug: string;
-  /** Le libellé affiché, en français, tel que la discipline se nomme. */
   label: string;
-  /** Une phrase, dite en entier dans une liste : ce que ce domaine permet de voir. */
   tagline: string;
   familyId: FamilyId;
-  /** Rang d'affichage à l'intérieur de sa famille. */
   order: number;
-  /** Ce que le domaine étudie, lu sur sa page plutôt que balayé dans une liste. */
   description: string;
 }
 
-/**
- * Distingue ce qui vient directement d'un auteur de ce qui relève de l'interprétation.
- * Les niveaux correspondent à la hiérarchie documentaire de docs/corpus-workflow.md :
- * sans eux, la carte ferait passer un article peer-reviewed pour un commentaire de notre
- * fait.
- */
 export type SourceKind =
   | "primary"
   | "secondary-academic"
@@ -89,32 +39,14 @@ export type SourceKind =
 export interface Source {
   label: string;
   kind: SourceKind;
-  /** Localisation et identifiant : ce qui permet de rouvrir le texte. */
   reference?: string;
   url?: string;
 }
 
-/**
- * Un passage du texte de l'auteur, cité mot pour mot.
- *
- * C'est le seul élément de la carte qui ne soit pas une reformulation. Il n'existe donc
- * que s'il est verbatim, localisé dans une édition précise, et honnête sur sa traduction :
- * afficher du Weber en français sans dire qui l'a traduit, c'est présenter une
- * interprétation comme une parole d'auteur.
- */
 export interface Quotation {
   text: string;
-  /**
-   * L'auteur à qui la phrase appartient — jamais déduit d'un concept coécrit.
-   *
-   * Absent lorsque `reference` le nomme déjà, ce qui est le cas courant : les notices
-   * commencent par leur auteur. Il ne subsiste que là où il apprend quelque chose — un
-   * passage tiré d'un ouvrage collectif, dont l'auteur n'est pas celui du volume.
-   */
   attributedTo?: string;
-  /** Ouvrage et localisation, tels qu'ils permettent de rouvrir à la bonne page. */
   reference: string;
-  /** « traduit de l'allemand par… » ou l'aveu d'une traduction non publiée. */
   translationNote?: string;
 }
 
@@ -123,12 +55,10 @@ export interface Author {
   slug: string;
   name: string;
   years?: string;
-  /** Une phrase, dite en entier dans une liste : ce que cet auteur a compris. */
   tagline: string;
   keywords: string[];
   bio: string;
   themes: ThemeId[];
-  /** Le domaine où cet auteur est lu. Un même auteur peut être repris ailleurs plus tard. */
   domain: DomainId;
 }
 
@@ -136,196 +66,67 @@ export interface Theme {
   id: ThemeId;
   slug: string;
   title: string;
-  /** Une phrase, dite en entier dans une liste : la question que ce thème pose. */
   tagline: string;
   keywords: string[];
   description: string;
-  /**
-   * Le domaine dont ce thème est un découpage.
-   *
-   * C'est ce rattachement qui situe le corpus : une carte hérite du domaine de son thème,
-   * et n'a donc rien à déclarer tant qu'elle reste dans les thèmes que l'application
-   * connaît. Un thème appartient à un domaine et à un seul — le jour où un découpage
-   * devrait relever de deux domaines, c'est deux thèmes qu'il faudra, pas un champ de plus.
-   */
   domain: DomainId;
 }
 
 /**
- * La carte, et tout ce que l'application connaît d'un concept.
+ * Rendu court d'un concept.
  *
- * Sept éléments, dont un seul facultatif : beaucoup de concepts n'ont pas de passage
- * court et autonome qui les énonce, et en exiger un partout ferait fabriquer la belle
- * phrase que le dispositif documentaire existe pour empêcher.
+ * Pour les concepts v2, `hookQuestion` et `shortExplanation` proviennent d'un knowledge
+ * record vérifié et ont eux-mêmes passé le content gate. Le client ne reçoit pas les
+ * claims ni les preuves qui ont servi à les produire.
  */
 export interface Concept {
   id: ConceptId;
   slug: string;
-
-  /** CONCEPT */
   title: string;
-
-  /**
-   * THÈME et AUTEUR, portés par la fiche et non cherchés dans `themes.ts` / `authors.ts`.
-   * C'est ce qui permet au corpus d'introduire un auteur ou un thème que l'application ne
-   * connaît pas encore : le périmètre est la discipline, pas la table des auteurs.
-   */
   themeLabel?: string;
   authorLabel?: string;
-
-  /** CITATION — facultative, jamais fabriquée. */
   quotation?: Quotation;
-
-  /** ACCROCHE — 100 caractères au plus, la carte doit tenir dans un écran. */
   hookQuestion: string;
-  /** RÉSUMÉ — 200 caractères au plus. */
   shortExplanation: string;
-
-  /** SOURCES — cinq au plus, les primaires d'abord. */
   sources?: Source[];
-
-  /**
-   * Rétablit l'attribution réelle quand elle ne se réduit pas à un nom : concept coécrit
-   * rangé sous un seul, concept associé à un auteur qui ne l'a pas créé, terme forgé par
-   * un tiers. Renseigné par la projection du corpus, jamais à la main.
-   */
   attributionNote?: string;
-
-  /** Identifiants de rattachement, quand l'application connaît l'auteur ou le thème. */
   authors: AuthorId[];
   themes: ThemeId[];
-
-  /**
-   * Le domaine de la carte, **quand elle doit le dire elle-même**.
-   *
-   * Le cas courant est l'absence : la carte hérite du domaine de son thème, et rattacher
-   * les deux reviendrait à écrire deux fois la même chose — avec le risque qu'elles
-   * divergent. Le champ n'existe que pour le cas que l'héritage ne couvre pas : une fiche
-   * qui introduit un thème que `themes.ts` ne connaît pas encore, et qui n'aurait alors
-   * rien pour se situer.
-   */
   domain?: DomainId;
-
-  /**
-   * Absent : fiche issue du pipeline documentaire, sourcée et contrôlée.
-   * `"fixture"` : fiche d'échafaudage écrite avant tout dispositif de vérification, servie
-   * en développement uniquement. Rien ne doit reposer sur son contenu.
-   */
+  /** Fiche d'échafaudage non vérifiée, servie uniquement là où le produit l'autorise. */
   provenance?: "fixture";
 }
 
-// ---------------------------------------------------------------------------
-// Approfondissement — le texte qui prolonge la carte
-// ---------------------------------------------------------------------------
-
-/**
- * Une section du développement : une idée, son titre, ses paragraphes.
- *
- * Le titre nomme ce dont la section parle, jamais la fonction qu'elle occupe dans le texte.
- * « Ce que “satisfaisant” veut dire ici » en est un ; « Pour aller plus loin » n'en est pas
- * un — il étiquette un palier de difficulté, et obligerait le lecteur à se situer avant
- * d'avoir compris. La règle est tenue par `corpus/deepenings/PROTOCOLE.md` et par le
- * validateur de la projection.
- */
 export interface DeepeningSection {
   title: string;
-  /** Texte brut. Aucun Markdown : l'application rend ces chaînes telles quelles. */
+  /** Texte brut : aucun Markdown n'est interprété par l'écran. */
   paragraphs: string[];
 }
 
 /**
- * Le texte qu'affiche « Approfondir ».
+ * Rendu long destiné au lecteur.
  *
- * **Il est écrit à l'avance et figé dans le dépôt.** L'application ne parle à aucun modèle :
- * elle sert un texte qui a été produit une fois, contrôlé, puis projeté comme le reste du
- * corpus. C'est la seule manière de tenir ensemble deux choses qu'un appel au moment du clic
- * ne tient pas — un contenu relu, et un export statique sans serveur ni clé d'API.
- *
- * Il prolonge la carte, il ne la répète pas : la carte est à l'écran juste avant, et la
- * redire ferait perdre au lecteur les quelques secondes pendant lesquelles il accepte de
- * lire. Ce qu'il ajoute, c'est le mécanisme — pourquoi le concept produit ce qu'il produit,
- * où il cesse de s'appliquer, ce qu'il ne dit pas.
- *
- * `limits` n'est pas une précaution de style : c'est la frontière documentaire rendue
- * visible. Un texte long écrit à partir d'une carte de cinq sources dépasse nécessairement
- * ce que ces sources établissent, et ce champ est l'endroit où ce dépassement se déclare au
- * lieu de se dissimuler.
+ * Le fichier maître `corpus/deepenings/<id>.json` possède aussi un champ `limits`, mais ce
+ * champ est une frontière documentaire interne. Le projecteur l'élimine avant la génération
+ * de `deepenings.generated.ts`; il ne fait donc volontairement pas partie de ce type.
  */
 export interface Deepening {
   conceptId: ConceptId;
-  /** L'entrée en matière, sans titre : le problème que le concept résout. */
   lead: string[];
   sections: DeepeningSection[];
-  /** Ce que le corpus de la carte ne permet pas d'établir, nommé plutôt que tu. */
-  limits: string[];
 }
 
-// ---------------------------------------------------------------------------
-// Progression
-// ---------------------------------------------------------------------------
-
-/**
- * La carte retenue pour aujourd'hui.
- *
- * « Chaque jour une carte » veut dire que le choix se fait une fois par jour, pas à chaque
- * ouverture : sans cette mémoire, rouvrir l'application changeait de concept, et rien ne
- * s'installait. Le jour est stocké en clair (`AAAA-MM-JJ`, heure locale) plutôt qu'en
- * horodatage — c'est un jour civil qu'on compare, pas un instant.
- */
 export interface DailyPick {
   day: string;
   conceptId: ConceptId;
-  /**
-   * La carte de ce jour-là a-t-elle été **effectivement découverte** ?
-   *
-   * Distinct de `seen` : le tirage enregistre la carte du jour dès qu'il a lieu, c'est-à-dire
-   * avant même que le seuil ait été franchi. Ce drapeau-là n'est posé que lorsque la carte
-   * s'affiche, et il commande le rappel porté par l'icône (`src/domain/reminder`).
-   *
-   * Il est porté par la carte du jour plutôt que par un champ à côté, et c'est ce qui le
-   * réinitialise sans code : au changement de jour, `daily` est réécrit en entier, drapeau
-   * compris. Aucune remise à zéro à programmer à minuit, rien qui puisse survivre à une nuit,
-   * à un redémarrage du téléphone ou à un changement de fuseau — la seule comparaison est
-   * celle de `day` avec le jour civil courant.
-   */
   discovered?: boolean;
 }
 
 /**
- * L'application ne propose aucun réglage **de contenu**, et n'en retient donc aucun ici : la
- * difficulté d'un concept se lit dans son texte, pas dans une préférence. Le seul réglage
- * qu'elle offre — le thème — ne règle rien de ce qu'elle dit, et il vit sous sa propre clé
- * (`src/lib/theme.ts`). Les deux mémoires n'ont ni la même durée de vie ni le même
- * propriétaire : effacer un historique de lecture ne doit pas remettre l'écran en noir.
- *
- * Elle ne retient pas davantage si le premier lancement a eu lieu. L'accueil n'est plus un
- * écran de première fois mais le seuil de chaque ouverture — voir `src/app/page.tsx` — et
- * un état qui ne commande plus rien est pire qu'absent : on le croit encore en usage.
- *
- * **`seen` est une suite d'identifiants, et rien d'autre.**
- *
- * La v2 tenait un objet par carte — identifiant répété en clé et en valeur, première
- * rencontre, dernière rencontre, nombre de rencontres — soit environ 175 octets pour une
- * carte dont l'identifiant en fait trente. Aucun de ces quatre champs ne commandait quoi
- * que ce soit : le tirage ne demande à cette mémoire que deux choses, *quelles cartes ont
- * été vues* et *dans quel ordre*, et une liste ordonnée répond aux deux. Sur les
- * cinquante-sept cartes du corpus, le stockage passe d'environ dix kilo-octets à moins de
- * deux, et il reste borné par le corpus : une carte vue dix fois n'occupe pas plus qu'une
- * carte vue une fois.
- *
- * **L'ordre est celui de la dernière rencontre, la plus ancienne en tête.** C'est ce qui
- * remplace `lastSeenAt` : revoir une carte la déplace en fin de liste plutôt que d'y
- * réécrire une date. Le tirage y lit la carte à reproposer quand tout a été vu ; l'écran
- * des cartes passées la lit à l'envers, la plus récente d'abord.
- *
- * **Une carte n'y entre qu'ouverte.** L'inscription se fait à l'affichage de la carte du
- * jour, jamais à l'échéance d'une journée : deux jours sans ouvrir l'application n'y
- * laissent aucune trace, et les cartes de ces jours-là n'ont pas été tirées — elles sont
- * encore à venir. La liste est donc l'histoire de ce qui a été lu, pas un calendrier.
+ * Mémoire minimale de progression : ordre de dernière rencontre et carte du jour.
  */
 export interface ProgressState {
   version: number;
-  /** Les cartes rencontrées, sans doublon, de la plus anciennement vue à la plus récente. */
   seen: ConceptId[];
   daily?: DailyPick;
 }
