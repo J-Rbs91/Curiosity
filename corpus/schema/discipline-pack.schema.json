@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://curiosity.local/schema/discipline-pack.schema.json",
+  "title": "Curiosity discipline pack",
+  "type": "object",
+  "required": ["id", "label", "default_language", "perimeter_file", "evidence_policy", "pedagogy"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "label": { "type": "string", "minLength": 2 },
+    "default_language": { "type": "string", "minLength": 2 },
+    "perimeter_file": { "type": "string", "minLength": 1 },
+    "evidence_policy": {
+      "type": "object",
+      "required": ["accepted_modes", "requires_primary_full_text", "requires_independent_evidence_review"],
+      "additionalProperties": false,
+      "properties": {
+        "accepted_modes": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": ["DOCUMENTARY", "FORMAL", "EMPIRICAL", "COMPUTATIONAL", "CONSENSUS"]
+          }
+        },
+        "requires_primary_full_text": { "type": "boolean" },
+        "requires_secondary_source": { "type": "boolean" },
+        "requires_independent_evidence_review": { "type": "boolean" },
+        "notes": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "pedagogy": {
+      "type": "object",
+      "required": ["card", "deepening"],
+      "additionalProperties": false,
+      "properties": {
+        "card": {
+          "type": "object",
+          "required": ["hook_max_chars", "summary_max_chars"],
+          "additionalProperties": false,
+          "properties": {
+            "hook_max_chars": { "type": "integer", "minimum": 1 },
+            "summary_max_chars": { "type": "integer", "minimum": 1 }
+          }
+        },
+        "deepening": {
+          "type": "object",
+          "required": ["requires_learning_delta"],
+          "additionalProperties": false,
+          "properties": {
+            "requires_learning_delta": { "type": "boolean" },
+            "preferred_roles": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "extensions": {
+      "type": "object",
+      "description": "Hooks déclaratifs pour de futurs validateurs disciplinaires. Le Core ne les invente pas.",
+      "additionalProperties": { "type": "string" }
+    }
+  }
+}
