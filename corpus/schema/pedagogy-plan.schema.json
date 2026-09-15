@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://curiosity.local/schema/pedagogy-plan.schema.json",
+  "title": "Pedagogy plan",
+  "type": "object",
+  "required": ["protocol_version", "concept_id", "knowledge_sha256", "card", "deepening"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "protocol_version": { "type": "integer", "const": 1 },
+    "concept_id": { "type": "string" },
+    "knowledge_sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "card": {
+      "type": "object",
+      "required": ["claim_ids", "hook_goal", "summary_goal"],
+      "additionalProperties": false,
+      "properties": {
+        "claim_ids": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string" } },
+        "hook_goal": { "type": "string", "minLength": 1 },
+        "summary_goal": { "type": "string", "minLength": 1 }
+      }
+    },
+    "deepening": {
+      "type": "object",
+      "required": ["steps"],
+      "additionalProperties": false,
+      "properties": {
+        "steps": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["id", "role", "claim_ids", "learning_delta"],
+            "additionalProperties": false,
+            "properties": {
+              "id": { "type": "string", "pattern": "^P[0-9]{2,}$" },
+              "role": {
+                "enum": ["intuition", "origin", "mechanism", "distinction", "example", "limit", "consequence", "opening", "other"]
+              },
+              "claim_ids": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string" } },
+              "learning_delta": { "type": "string", "minLength": 1 },
+              "prerequisites": { "type": "array", "uniqueItems": true, "items": { "type": "string" } },
+              "notes": { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+}
