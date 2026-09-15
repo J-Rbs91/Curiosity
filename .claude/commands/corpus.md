@@ -1,98 +1,71 @@
 ---
-description: Instruire un ou plusieurs concepts par le pipeline documentaire, jusqu'à la carte affichable
-argument-hint: <auteur, thème ou concept> [nombre de candidats]
+description: Produire de nouveaux concepts Curiosity par la chaîne evidence-first, depuis la découverte jusqu'aux rendus vérifiés
+argument-hint: [--discipline=organizational-sociology] <thème ou concept> [--batch=N]
 allowed-tools: Task, Read, Write, Edit, Glob, Grep, Bash
 ---
 
-Lance le pipeline documentaire du corpus sur : **$ARGUMENTS**
+Lance le **Content Pipeline v2** sur : **$ARGUMENTS**
 
-Délègue à l'agent `corpus-orchestrator`. Tu ne produis toi-même aucune connaissance : tu
-transmets la demande, tu rends compte de ce qui revient.
+Délègue à `corpus-orchestrator`. Tu ne produis toi-même aucune connaissance.
 
-## Ce qui doit sortir
+Lis `docs/content-pipeline-v2.md` avant de lancer le lot.
 
-Une fiche n'est terminée que si elle permet de composer la carte de l'application. Sept
-éléments, tous issus du même enregistrement validé :
+## Discipline
 
-| Carte | Champ de la fiche | Exigé |
-|---|---|---|
-| THÈME | `graph.themes` | oui — au moins un thème existant |
-| CONCEPT | `canonical_name_fr` | oui — 48 caractères au plus |
-| CITATION | `evidence.key_quotation` | **non** — voir plus bas ; 150 caractères au plus |
-| ACCROCHE | `pedagogy.hook_question` | oui — 85 caractères au plus |
-| RÉSUMÉ | `pedagogy.short_explanation` | oui — 170 caractères au plus |
-| AUTEUR | `attribution` | oui — coauteurs rétablis |
-| SOURCES | `primary_sources` + `secondary_sources` | oui — une primaire et une secondaire au minimum |
+Sans `--discipline`, utilise `organizational-sociology` pour compatibilité avec le corpus actuel.
 
-Les longueurs sont mesurées sur le rendu réel, pas estimées : la carte doit tenir dans un
-écran de 375 × 667 avec tous ses champs au maximum simultané.
+La discipline décide du périmètre et des règles épistémiques. Le Core reste identique.
 
-**La citation reste facultative, et cela ne se négocie pas.** Beaucoup de concepts sont
-distribués sur un chapitre entier sans phrase courte qui les énonce. Une carte sans
-citation est complète ; une carte avec une citation recomposée, sortie de son contexte ou
-tirée d'un texte qui cite l'auteur au lieu de l'auteur lui-même est une faute. Si aucun
-passage citable n'a été établi, `key_quotation` reste à `null` et on le dit.
+## Lot
 
-## Le protocole
+- 3 concepts par défaut ;
+- 5 maximum explicite ;
+- un concept par contexte d'agent ;
+- 300 000 tokens estimés maximum par pack ;
+- jamais de troncature.
 
-Le corpus n'est pas le livrable : **les cartes le sont.** Le travail documentaire n'existe
-que pour qu'elles soient justes, et un dossier de preuve qui ne devient pas une carte n'a
-servi à rien. Le protocole est donc organisé pour aboutir, pas pour archiver.
+## Invariant
 
-**Cartographier — une fois, puis à rafraîchir :**
+Une production terminée n'est plus « une carte écrite puis relue ».
 
-0. `corpus-cartographer` — si `corpus/map/cartography.json` est absent ou périmé. Il part
-   de la **discipline**, jamais d'une liste de noms : manuels, handbooks, encyclopédies,
-   revues de référence. Sa carte alimente la file, et son bloc `angles_morts` dit ce que
-   la liste de départ ne couvre pas. Sans lui, on n'instruit que ce qu'on connaissait déjà.
+Elle doit avoir traversé :
 
-**Instruire — un agent par concept, tous les concepts en parallèle :**
+`DISCOVER -> ACQUIRE -> EVIDENCE REVIEW -> KNOWLEDGE -> PEDAGOGY -> RENDER -> CONTENT GATE -> REVIEW -> PUBLISH`
 
-1. `corpus-scout` — périmètre et sources atteignables. `search_literature` et
-   `search_francophone` dans le **même message** : la couche francophone se cherche en
-   amont.
-2. `corpus-primary-reader` et `corpus-reception-analyst` en parallèle, qui déposent leurs
-   dossiers dans `corpus/evidence/<id>/`.
+La carte et l'approfondissement sont deux rendus du même `corpus/knowledge/<id>.json` vérifié.
 
-**Rédiger — un seul agent, tout le lot d'un coup :**
+## Conditions de publication
 
-3. `corpus-card-writer` — prend tous les dossiers du lot et écrit **N cartes**. Il n'écrit
-   que la carte : ni mécanisme détaillé, ni exemple, ni quiz, ni relations entre concepts.
-   Ce contenu servait une session d'apprentissage qui n'existe plus — le lecteur qui veut
-   approfondir emporte la carte vers l'IA de son choix.
+Pour un concept v2 :
 
-**Contrôler et publier :**
+- `EVIDENCE_PASS` ;
+- `KNOWLEDGE_PASS` ;
+- `PLAN_PASS` ;
+- carte `CONTENT_PASS` ;
+- approfondissement `CONTENT_PASS` ;
+- contrôle aveugle carte `PASS` ;
+- audit pédagogique compatible avec publication ;
+- `npm run corpus:validate` ;
+- `npm run corpus:deepen -- --check` ;
+- `npm test` ;
+- `npm run lint`.
 
-4. `corpus-blind-reviewer` sur chaque carte, à partir du dossier produit par
-   `npm run corpus:brief -- <id> --pass=B`. Il ne reçoit ni le brief, ni la confiance
-   amont : ce dossier est vidé mécaniquement, ne lui transmets rien d'autre. Il vérifie
-   en une passe la preuve **et** la fidélité de la prose.
-5. `npm run corpus:validate`, puis `/corpus-publish`.
+Un échec documentaire bloque le concept. Il ne se résout jamais en demandant au renderer d'être plus vague ou plus convaincant.
 
-Deux tours de correction maximum par carte ; au-delà, la carte sort du lot et attend un
-complément documentaire plutôt que de retenir les autres.
+## Sortie
 
-Huit agents en tout, et c'est délibérément peu : produire une carte de 500 caractères a
-coûté, sur le premier lot, 178 octets de matière documentaire par caractère affiché.
-L'essentiel de cette matière alimentait une session qui n'existe plus.
+Rends seulement le résumé de l'orchestrateur :
 
-## Le rythme
-
-Pas de quota, pas d'équilibrage entre auteurs, pas d'objectif de volume. **Pas de preuve
-documentaire suffisante, pas de fiche** — un lot qui ne rend rien est un résultat
-documenté, pas un échec. Sans argument après `/corpus`, prends les concepts en tête de
-`corpus/map/queue.json`. Si la carte n'existe pas encore, commence par le cartographe :
-instruire les concepts d'une liste d'auteurs fournie, c'est reproduire la connaissance de
-celui qui l'a écrite.
-
-## Rends compte ainsi
-
-```
-lot        : <sujet>
-candidats  : n
-validés    : n — <ids>, dont n avec citation
-en review  : n — <ids>, motif, tour
-rejetés    : n — <ids>, rejection_reason
+```text
+discipline        : <id>
+lot               : n
+evidence PASS     : n
+knowledge PASS    : n
+card CONTENT_PASS : n
+deep CONTENT_PASS : n
+review PASS       : n
+blocked           : n — <ids + étape>
+published         : n — <ids>
 ```
 
-Puis rappelle que `/corpus-publish` projette les fiches validées vers l'application.
+Les rapports détaillés restent dans leurs artefacts et ne sont pas recopiés dans ton contexte.
