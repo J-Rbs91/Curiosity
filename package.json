@@ -16,6 +16,7 @@
     "corpus:build": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/corpus/build.mjs",
     "corpus:audit": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/corpus/audit.mjs",
     "corpus:deepen": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/corpus/deepen.mjs",
+    "corpus:factcheck": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/corpus/deepening-factcheck.mjs",
     "corpus:brief": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/corpus/brief.mjs"
   },
   "dependencies": {
