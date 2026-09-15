@@ -74,16 +74,18 @@ Une analogie n'est utile que si elle résout une difficulté précise, révèle 
 
 ## 6. Frontière documentaire interne
 
-Le champ `limits` du JSON est **interne**.
+Le champ `limits` du JSON est **interne du point de vue éditorial**.
 
 Il sert aux audits, corrections et futures acquisitions pour enregistrer les frontières issues de `knowledge.boundaries`.
 
 Il :
 
-- n'est pas projeté vers l'application ;
+- n'est jamais rendu par l'écran ;
 - n'entre pas dans le temps de lecture ;
 - n'est pas une section destinée au lecteur ;
 - ne doit jamais être transformé automatiquement en « Ce que les sources ne permettent pas d'établir ».
+
+Pendant la migration du corpus historique, le projecteur conserve temporairement ce champ dans l'artefact généré pour éviter un commit mécanique de plus de 1,4 Mo. Cette présence de compatibilité n'en fait pas du contenu lecteur et aucun agent v2 ne peut l'utiliser comme preuve. Il sera retiré physiquement du payload lors de la migration complète des approfondissements.
 
 Une nuance ou une limite conceptuelle utile à la compréhension peut évidemment apparaître dans le texte visible si elle est portée par un claim vérifié. Ce n'est pas la même chose que montrer au lecteur notre registre interne de lacunes.
 
@@ -142,6 +144,6 @@ Aucun approfondissement v2 n'est publiable sans `CONTENT_PASS` sur son SHA exact
 ## 11. Corpus historique
 
 Les approfondissements existants peuvent rester au format historique pendant la migration.
-Le workflow d'audit v3 les traite progressivement.
+Le workflow d'audit les traite progressivement.
 
 Dès qu'un concept possède un knowledge record v2, toute nouvelle réécriture doit utiliser ce record comme autorité et non revenir au modèle ancien carte + notes.
