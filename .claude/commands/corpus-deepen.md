@@ -1,84 +1,62 @@
 ---
-description: Écrire les approfondissements manquants des cartes validées. Les textes existants passent par le workflow d’audit avant toute réécriture.
-argument-hint: [conceptId…] | --missing
+description: Rendre les approfondissements manquants à partir de knowledge records vérifiés. Les concepts legacy sans knowledge record doivent d'abord migrer.
+argument-hint: [conceptId…] | --missing [--batch=N]
 allowed-tools: Task, Read, Write, Edit, Glob, Grep, Bash
 ---
 
 Écris les approfondissements pour : **$ARGUMENTS**
 
-Un approfondissement est le texte de mille cinq cents mots que l'application affiche lorsqu'on
-appuie sur « Approfondir » sur une carte. Il est écrit à l’avance, contrôlé et figé dans le
-dépôt : l'application ne parle à aucun modèle au moment du clic.
+Lis `docs/content-pipeline-v2.md` et `corpus/deepenings/PROTOCOLE.md`.
 
-## Le périmètre
+## Éligibilité
 
-| Argument | Ce qui est traité |
-|---|---|
-| une liste d'identifiants | uniquement les cartes de cette liste qui n'ont pas encore d'approfondissement |
-| `--missing`, ou rien | toutes les cartes validées sans approfondissement |
+Un nouvel approfondissement n'est éligible que si les deux fichiers existent et sont cohérents :
 
-**Un approfondissement existant n'est jamais réécrit par cette commande.**
+- `corpus/knowledge/<id>.json` avec `status: VERIFIED` ;
+- `corpus/knowledge/<id>.pedagogy.json` avec le SHA exact du knowledge record.
 
-S'il faut évaluer ou améliorer un texte déjà présent, utilise le workflow
-`/corpus-deepening-audit <conceptId>` ou `/corpus-deepening-audit --stale`. Il impose un
-diagnostic, une réécriture uniquement si elle est nécessaire, puis une revue indépendante.
-Cette séparation empêche qu'un texte déjà bon soit remplacé simplement parce qu'un modèle
-peut produire une autre version.
+Une carte validée historique sans knowledge record n'est **plus** une autorité suffisante pour écrire 1 000+ mots. Marque-la `NEEDS_KNOWLEDGE_MIGRATION` et continue.
 
-La liste des cartes sans approfondissement est donnée par `npm run corpus:deepen`, en fin de
-sortie. Commence toujours par là : c'est la file de travail, et elle est tenue par le script
-plutôt que de mémoire.
+Un approfondissement existant n'est jamais réécrit ici. Il passe par `/corpus-deepening-audit`.
 
-**Seules les cartes validées sont éligibles.** Une fiche d'échafaudage n'en reçoit jamais :
-un texte long écrit sur une carte non vérifiée propagerait l'invérifié au lieu de le contenir,
-et la projection le refuse.
+## Lot
 
-## Comment tu t'y prends
+3 concepts par défaut, 5 maximum explicite. Un `corpus-deepener` par concept, dans un contexte frais.
 
-Un agent `corpus-deepener` **par carte**, tous lancés en parallèle. Le travail est indépendant
-carte par carte.
+## Chaîne obligatoire
 
-Chaque agent reçoit un seul `conceptId` et rien d'autre. Il lit lui-même :
+Pour chaque concept éligible :
 
-- `corpus/validated/<conceptId>.json` ;
-- la carte projetée ;
-- `corpus/deepenings/PROTOCOLE.md` ;
-- `corpus/deepenings/AUDIT_PROTOCOL.md`.
+1. `corpus-deepener` ;
+2. `npm run corpus:deepen -- --check --only=<id>` ;
+3. `npm run corpus:content-check -- --prepare --artifact=deepening --only=<id>` ;
+4. `corpus-content-mapper` ;
+5. `npm run corpus:content-check -- --bundle --artifact=deepening --only=<id>` ;
+6. `corpus-content-verifier` ;
+7. `npm run corpus:content-check -- --gate --artifact=deepening --only=<id>` ;
+8. `corpus-deepening-auditor` pour la progression pédagogique.
 
-Ne lui transmets ni exemple d'un autre approfondissement ni plan copié d'une autre carte. Un
-modèle à qui l'on montre un texte déjà écrit en reproduit facilement la charpente.
+Sans `CONTENT_PASS`, le texte n'est pas publiable.
 
-Par lots de huit au plus. Au-delà, la sortie devient illisible et une correction se perd.
+La longueur n'est plus un objectif. Le validateur n'impose qu'un anti-stub et une borne haute.
 
-## Contrôle pédagogique des nouveaux textes
+## Fermeture du lot
 
-Le `corpus-deepener` doit appliquer le test du **delta d'apprentissage** à chaque paragraphe :
+- `npm run corpus:deepen -- --check` ;
+- `npm test` ;
+- aucun `CONTENT_FAIL` conservé comme publiable ;
+- les `limits` internes ne sont jamais projetés vers le lecteur.
 
-> Qu'est-ce que le lecteur sait, comprend ou peut distinguer après ce paragraphe qu'il ne
-> savait, ne comprenait ou ne pouvait distinguer avant ?
+Puis seulement `npm run corpus:deepen` pour reprojeter l'ensemble.
 
-Une reformulation n'est pas un approfondissement. Deux paragraphes qui accomplissent le même
-travail doivent être fusionnés, supprimés ou différenciés par un apport réel.
-
-## Ce qui ferme le lot
-
-1. `npm run corpus:deepen` passe sans erreur de projection.
-2. `npm test` passe.
-3. Tu as lu toi-même un texte du lot en entier.
-4. Pour ce texte, tu peux résumer le delta de chaque section sans donner deux fois la même réponse.
-
-La projection contrôle ce qui est mécanique : volumes, balisage, tirets cadratins, titres qui
-étiquettent leur fonction, `limits` rempli de précautions sans objet. Elle ne peut pas mesurer
-la progression pédagogique. Celle-ci est donc explicitement contrôlée par le protocole et par
-le test du delta.
-
-## Rends compte ainsi
+## Compte rendu
 
 ```text
-lot        : n cartes
-écrits     : n, <ids>
-mots       : moyenne n, min n, max n
-refusés    : n, <ids>, motif de la projection
-ignorés    : n textes déjà existants, à envoyer vers corpus-deepening-audit si nécessaire
-restants   : n cartes validées sans approfondissement
+lot                     : n
+écrits                   : n — <ids>
+CONTENT_PASS             : n — <ids>
+audit pédagogique PASS   : n — <ids>
+NEEDS_KNOWLEDGE_MIGRATION: n — <ids>
+bloqués                  : n — <ids + motif>
+restants                 : n
 ```
