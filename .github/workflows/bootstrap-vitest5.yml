@@ -1,0 +1,56 @@
+name: Bootstrap Vitest 5 migration
+
+on:
+  push:
+    branches:
+      - chore/vitest-5-migration
+    paths:
+      - .github/workflows/bootstrap-vitest5.yml
+
+permissions:
+  contents: write
+
+jobs:
+  generate-lockfile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: chore/vitest-5-migration
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Update Vitest and Node types
+        run: |
+          node <<'NODE'
+          const fs = require('node:fs');
+          const p = JSON.parse(fs.readFileSync('package.json', 'utf8'));
+          p.devDependencies.vitest = '^5.0.0';
+          p.devDependencies['@types/node'] = '^22';
+          fs.writeFileSync('package.json', JSON.stringify(p, null, 2) + '\n');
+          NODE
+          npm install --package-lock-only
+
+      - name: Assert expected versions
+        run: |
+          node <<'NODE'
+          const pkg = require('./package.json');
+          const lock = require('./package-lock.json');
+          if (pkg.devDependencies.vitest !== '^5.0.0') throw new Error('package.json vitest range not updated');
+          if (pkg.devDependencies['@types/node'] !== '^22') throw new Error('package.json @types/node range not updated');
+          if (lock.packages?.['node_modules/vitest']?.version !== '5.0.0') throw new Error(`unexpected vitest version ${lock.packages?.['node_modules/vitest']?.version}`);
+          const nodeTypes = lock.packages?.['node_modules/@types/node']?.version;
+          if (!nodeTypes || !nodeTypes.startsWith('22.')) throw new Error(`unexpected @types/node version ${nodeTypes}`);
+          NODE
+
+      - name: Commit generated lockfile
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add package.json package-lock.json
+          git diff --cached --quiet && exit 0
+          git commit -m "chore(test): migrate to Vitest 5"
+          git push origin HEAD:chore/vitest-5-migration
