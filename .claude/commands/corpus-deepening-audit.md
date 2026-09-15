@@ -1,271 +1,285 @@
 ---
-description: Auditer périodiquement les approfondissements, réécrire ceux qui stagnent pédagogiquement, fact-checker le texte final, faire relire les réécritures et tracer la décision
+description: Auditer périodiquement les approfondissements, réécrire ceux qui stagnent, fact-checker avec preuves déterministes et tracer la décision
 argument-hint: [conceptId…] | --all | --stale | --batch=N
 allowed-tools: Task, Read, Write, Edit, Glob, Grep, Bash
 ---
 
 Audite les approfondissements pour : **$ARGUMENTS**
 
-Ce workflow est récurrent. Il ne doit pas retraiter aveuglément tout le corpus à chaque passage.
-Il sélectionne les textes jamais audités ou devenus obsolètes, puis sépare strictement audit pédagogique,
-réécriture, contrôle de véracité et revue.
+Lis d'abord, en entier :
 
-Lis d’abord `corpus/deepenings/AUDIT_PROTOCOL.md` en entier.
+1. `corpus/deepenings/AUDIT_PROTOCOL.md` ;
+2. `corpus/deepenings/FACTCHECK_PROTOCOL.md`.
 
-## Invariant de publication
+La chaîne est :
 
-`corpus/deepenings/<id>.json` contient un champ `limits` utile au travail éditorial. Ce champ est une
-**frontière documentaire interne**. Il sert aux agents pour savoir ce qu’ils n’ont pas le droit
-d’affirmer. Son contenu ne doit jamais être présenté comme une section destinée au lecteur.
+`SELECT -> AUDIT -> REWRITE éventuel -> PREPARE -> CLAIM MAP -> BUNDLE -> VERIFY -> DETERMINISTIC GATE -> REVIEW -> TRACE`
 
-Le texte lecteur à contrôler est uniquement `lead` + `sections`.
+## 0. Invariants de contexte
+
+- Un agent travaille sur **un seul concept** et dans un contexte frais.
+- Le lot par défaut est de **3 cartes**.
+- `--batch=N` est accepté uniquement pour `1 <= N <= 5`.
+- Toute valeur supérieure à 5 est refusée, même si le modèle possède une fenêtre plus grande.
+- L'orchestrateur ne recopie jamais les sorties détaillées des agents dans ses prompts suivants.
+- Les sorties détaillées sont écrites dans `corpus/deepening-audits/work/<conceptId>/` ; l'agent ne
+  rend à l'orchestrateur que verdicts, compteurs et chemins.
+- Aucun pack d'entrée d'un agent ne dépasse **300 000 tokens estimés**. Le seuil est un plafond,
+  pas une cible. Un dépassement impose une partition, jamais une troncature.
+
+Le texte lecteur est uniquement `lead` + `sections`. `limits` reste une frontière documentaire
+interne et n'est jamais rendu au lecteur.
 
 ## 1. Sélection
 
-Le répertoire des rapports est `corpus/deepening-audits/`. Crée-le s’il n’existe pas.
+Le répertoire des rapports finaux est `corpus/deepening-audits/`.
 
-Pour chaque `corpus/deepenings/<id>.json`, calcule :
+Pour chaque `corpus/deepenings/<id>.json`, calcule les SHA-256 du deepening et du fichier
+`corpus/validated/<id>.json`.
 
-```bash
-sha256sum corpus/deepenings/<id>.json
-sha256sum corpus/validated/<id>.json
-```
+Un rapport est à jour uniquement s'il contient ces deux hashes et :
 
-Un rapport à jour doit contenir exactement ces deux hashes et `protocol_version: 2`.
+`protocol_version: 3`
 
-Une carte est **stale** si :
+Une carte est stale si :
 
-- aucun rapport `corpus/deepening-audits/<id>.md` n’existe ;
-- `deepening_sha256` diffère ;
-- `validated_sha256` diffère ;
-- `protocol_version` diffère ;
+- aucun rapport final n'existe ;
+- le deepening a changé ;
+- le fichier validated a changé ;
+- la version du protocole a changé ;
 - elle est demandée explicitement.
 
 Arguments :
 
 | Argument | Sélection |
 |---|---|
-| liste d’identifiants | ces cartes, même si leur audit est à jour |
-| `--stale` ou aucun argument | cartes jamais auditées ou devenues stale |
-| `--all` | tous les approfondissements |
-| `--batch=N` | limite le lot aux N premières cartes éligibles, triées par identifiant |
+| identifiants explicites | ces cartes |
+| aucun argument / `--stale` | cartes stale |
+| `--all` | toutes les cartes |
+| `--batch=N` | limite le lot, maximum 5 |
 
-Sans `--batch`, traite au plus **6 cartes par lot**.
+Sans `--batch`, sélectionne au plus **3 cartes**.
 
-## 2. Garde-fou du working tree
+## 2. Working tree
 
-Avant de lancer un agent sur une carte, vérifie :
-
-```bash
-git status --short -- corpus/deepenings/<id>.json corpus/validated/<id>.json
-```
-
-Si l’approfondissement ou l’enregistrement validé avait déjà des modifications locales avant le
-workflow, **ne touche pas à cette carte**. Marque-la `SKIPPED_DIRTY` et continue le lot.
-
-Ne fais jamais `git reset --hard`, `git clean`, ni restauration globale.
-
-Pour une carte propre, l’ancienne version de l’approfondissement est disponible avec :
+Avant toute mutation :
 
 ```bash
-git show HEAD:corpus/deepenings/<id>.json
+git status --short -- corpus/deepenings/<id>.json corpus/validated/<id>.json corpus/evidence/<id>/
 ```
+
+Si le deepening, le validated ou les preuves de la carte étaient déjà modifiés, marque
+`SKIPPED_DIRTY` et ne touche pas à cette carte.
+
+Interdictions : `git reset --hard`, `git clean`, restauration globale.
 
 ## 3. AUDIT pédagogique
 
-Lance un agent `corpus-deepening-auditor` par carte éligible, avec uniquement son `conceptId`.
+Lance `corpus-deepening-auditor` avec uniquement le `conceptId`.
 
-Conserve **la sortie complète** de chaque auditeur.
+L'agent écrit sa sortie complète dans :
 
-### Si verdict `PASS`
+`corpus/deepening-audits/work/<id>/audit.md`
 
-Ne modifie pas le texte. Passe directement au FACTCHECK (§5). Un texte pédagogiquement bon n’est
-pas dispensé de contrôle factuel.
+et rend seulement une synthèse courte à l'orchestrateur.
 
-### Si verdict `BLOCKED_SOURCE`
+Verdicts : `PASS`, `REVISE`, `REWRITE`, `BLOCKED_SOURCE`.
 
-Aucune réécriture. Une lacune documentaire ne se corrige pas avec les connaissances du modèle.
-Écris le rapport avec `result: blocked_source`. Le FACTCHECK peut être omis si le texte ne peut
-honnêtement être publié en l’état ; indique alors `factcheck_verdict: NOT_RUN_BLOCKED_SOURCE`.
+- `PASS` : texte inchangé, mais FACTCHECK obligatoire.
+- `BLOCKED_SOURCE` : aucune invention pour combler le manque. Trace et passe à la carte suivante.
+- `REVISE` / `REWRITE` : étape 4.
 
-### Si verdict `REVISE` ou `REWRITE`
+## 4. REWRITE éventuel
 
-Passe à l’étape suivante.
-
-## 4. DIAGNOSE -> REWRITE
-
-Lance un agent `corpus-deepening-rewriter` pour la carte concernée.
-
-Transmets-lui :
+Lance `corpus-deepening-rewriter` avec :
 
 - le `conceptId` ;
-- **la sortie complète de l’auditeur**, sans la reformuler.
+- le chemin `corpus/deepening-audits/work/<id>/audit.md`.
 
-Le champ `limits` reste interne. Le réécrivain peut l’améliorer pour resserrer la frontière
-documentaire, mais ne doit jamais déplacer son contenu dans une section destinée au lecteur
-simplement pour « être transparent ».
+Ne recopie pas l'audit dans le prompt.
 
-À son retour, exige que :
+Après écriture :
 
 ```bash
 npm run corpus:deepen -- --check --only=<id>
 ```
 
-passe. Si le contrôle mécanique échoue, le réécrivain corrige avant toute suite.
+Le contrôle doit passer avant fact-check.
 
-## 5. FACTCHECK obligatoire
+## 5. PREPARE déterministe
 
-Lance `corpus-deepening-factchecker` sur **la version finale candidate**, qu’elle soit inchangée
-après `PASS` ou réécrite après `REVISE` / `REWRITE`.
+Construis le pack :
 
-Le fact-checker contrôle proposition par proposition le texte lecteur (`lead` + `sections`) en
-utilisant uniquement la matière autorisée du dossier. Il ne réécrit rien et ne cherche rien sur
-le web.
+```bash
+npm run corpus:factcheck -- --prepare --only=<id>
+```
 
-Verdicts :
+Le script écrit :
 
-- `FACTCHECK_PASS` : tous les claims lecteur sont soutenus ;
-- `FACTCHECK_FAIL` : au moins un claim est trop fort, non soutenu, contradictoire ou appuyé sur
-  une source non consultée au niveau nécessaire.
+`corpus/deepening-audits/work/<id>/factcheck-pack.json`
 
-### Si `FACTCHECK_FAIL` sur un texte réécrit
+Il fixe notamment :
 
-Retourne au réécrivain avec **la sortie complète du fact-checker**. Le réécrivain doit effectuer
-la correction minimale autorisée : retirer, borner, réattribuer ou marquer clairement comme
-interprétation. Il n’a jamais le droit d’inventer une source ni d’utiliser ses connaissances
-générales.
+- SHA exact du deepening candidat ;
+- paragraphes lecteur et locators ;
+- registre des supports `SUP-...` dérivés du contenu réellement présent ;
+- niveaux d'accès hérités des objets réellement marqués `consulted` ;
+- estimation de taille.
 
-Relance ensuite `npm run corpus:deepen -- --check --only=<id>` puis le FACTCHECK. Maximum deux
-boucles de correction factuelle. Si l’échec persiste, restaure uniquement le fichier concerné
-et marque `rewrite_rejected_factcheck`.
+Si `status = PARTITION_REQUIRED`, ne charge pas ce pack tel quel dans un agent. Partitionne par
+sections et groupes de supports de manière à ce que chaque invocation reste <= 300k estimés. Ne
+supprime aucune matière pour respecter le plafond.
 
-### Si `FACTCHECK_FAIL` sur un texte inchangé après `PASS`
+## 6. CLAIM MAP
 
-Le verdict pédagogique `PASS` ne protège pas le texte. Requalifie la carte en besoin de correction
-documentaire. Corrige uniquement si la matière existante permet de borner ou réattribuer le claim ;
-sinon `BLOCKED_SOURCE`.
+Lance un **nouvel agent frais** `corpus-deepening-claim-mapper` sur une seule carte.
 
-**Aucun reviewer ne peut accepter un texte dont le dernier FACTCHECK n’est pas `FACTCHECK_PASS`.**
+Il lit le pack et écrit :
 
-## 6. REVIEW indépendant des réécritures
+`corpus/deepening-audits/work/<id>/claim-map.json`
 
-Si aucune réécriture n’a eu lieu, le FACTCHECK clôt la validation du contenu et aucun reviewer
-comparatif n’est nécessaire.
+Il ancre chaque claim par `locator + start + end + claim_text exact` et ne peut proposer que des
+`support_ids` existants. Il ne rend aucun verdict de vérité.
 
-Si une réécriture a eu lieu et que le dernier FACTCHECK est `FACTCHECK_PASS`, lance
-`corpus-deepening-reviewer`.
+L'orchestrateur ne reçoit que le nombre de claims et le chemin de l'artefact.
 
-Transmets-lui :
+## 7. BUNDLE déterministe
 
-- le `conceptId` ;
-- la sortie complète de l’auditeur ;
-- la sortie complète du réécrivain ;
-- la sortie complète du fact-checker avec `FACTCHECK_PASS`.
+Valide mécaniquement le mapping et résous les supports :
 
-Le reviewer compare la proposition au contenu de `HEAD` et rend `ACCEPT` ou `REJECT`.
+```bash
+npm run corpus:factcheck -- --bundle --only=<id>
+```
 
-### `ACCEPT`
+Le script refuse :
 
-Conserve la nouvelle version.
+- claim text différent des offsets réels ;
+- locator inconnu ;
+- support ID inventé ;
+- paragraphe oublié dans la déclaration de mapping.
 
-### `REJECT`
+Il écrit :
 
-Restaure **uniquement** l’approfondissement concerné :
+`corpus/deepening-audits/work/<id>/verification-bundle.json`
+
+Si ce bundle dépasse 300k estimés, partitionne la vérification en sous-bundles de claims. La
+validation finale doit néanmoins couvrir tous les claims du map original.
+
+## 8. VERIFY indépendant
+
+Lance un **nouvel agent frais** `corpus-deepening-entailment-verifier`.
+
+Il lit uniquement le bundle de sa carte, jamais le texte libre ou un verdict du mapper. Il écrit :
+
+`corpus/deepening-audits/work/<id>/verification.json`
+
+Verdicts claim par claim :
+
+`SUPPORTED | TOO_STRONG | UNSUPPORTED | CONFLICT | SOURCE_NOT_CONSULTED`
+
+Il ne produit jamais lui-même `FACTCHECK_PASS`.
+
+## 9. DETERMINISTIC GATE
+
+Exécute :
+
+```bash
+npm run corpus:factcheck -- --gate --only=<id>
+```
+
+Le script relit le deepening actuel et invalide le contrôle si son SHA a changé depuis PREPARE.
+Il vérifie aussi les claims, supports et résultats du verifier.
+
+Verdicts du script :
+
+- `FACTCHECK_PASS` : tous les claims sont mécaniquement valides et sémantiquement `SUPPORTED` ;
+- `FACTCHECK_FAIL` : structure valide, au moins un claim non soutenu ;
+- `FACTCHECK_INVALID` : incohérence mécanique, artefact obsolète ou incomplet.
+
+### FAIL après réécriture
+
+Retourne au réécrivain avec le **chemin** du rapport gate et des artefacts, pas leur contenu collé
+dans le prompt. Correction minimale seulement : retirer, borner, réattribuer ou marquer comme
+interprétation.
+
+Puis recommence **depuis PREPARE**, car toute modification invalide le SHA.
+
+Maximum deux boucles de correction factuelle. Au-delà, restaure uniquement le deepening de la
+carte et marque `rewrite_rejected_factcheck`.
+
+### FAIL sur texte inchangé
+
+Le `PASS` pédagogique ne protège rien. Corrige uniquement si le corpus existant le permet ; sinon
+`BLOCKED_SOURCE`.
+
+## 10. REVIEW indépendant
+
+Uniquement si une réécriture a été conservée et que le gate exact a rendu `FACTCHECK_PASS`.
+
+Lance `corpus-deepening-reviewer` avec :
+
+- `conceptId` ;
+- chemins de `audit.md`, `factcheck-gate.json` et du compte rendu de réécriture.
+
+Le reviewer ne peut rendre `ACCEPT` que si le `candidate_sha256` du gate correspond au fichier
+qu'il examine.
+
+`REJECT` restaure uniquement :
 
 ```bash
 git restore --source=HEAD -- corpus/deepenings/<id>.json
 ```
 
-N’altère aucun autre fichier.
+## 11. TRACE finale
 
-## 7. TRACE
-
-Après la décision finale, recalcule les hashes du fichier réellement conservé et de
-l’enregistrement validé.
-
-Écris `corpus/deepening-audits/<id>.md` avec au minimum :
+Écris `corpus/deepening-audits/<id>.md` avec :
 
 ```text
 ---
 concept_id: <id>
-deepening_sha256: <sha256 du fichier final>
-validated_sha256: <sha256 de corpus/validated/<id>.json>
-protocol_version: 2
-audited_at: <date ISO-8601 UTC>
+deepening_sha256: <sha final>
+validated_sha256: <sha validated>
+protocol_version: 3
+audited_at: <ISO-8601 UTC>
 initial_verdict: PASS | REVISE | REWRITE | BLOCKED_SOURCE
 result: unchanged | rewritten | rewrite_rejected | rewrite_rejected_factcheck | blocked_source
-factcheck_verdict: FACTCHECK_PASS | FACTCHECK_FAIL | NOT_RUN_BLOCKED_SOURCE
+factcheck_verdict: FACTCHECK_PASS | FACTCHECK_FAIL | FACTCHECK_INVALID | NOT_RUN_BLOCKED_SOURCE
 review_verdict: NOT_RUN | ACCEPT | REJECT
 ---
-
-# Audit pédagogique : <id>
-
-## Scores initiaux
-
-| Axe | Score /4 | Preuve |
-|---|---:|---|
-| Fidélité documentaire | n | ... |
-| Progressivité pédagogique | n | ... |
-| Densité / non-redondance | n | ... |
-| Clarté | n | ... |
-| Profondeur explicative | n | ... |
-| Valeur des exemples | n | ... |
-| Limites / nuances | n | ... |
-| Pouvoir d’ouverture | n | ... |
-
-## Diagnostic
-<défauts majeurs avec repères>
-
-## Trajectoire actuelle
-<delta paragraphe par paragraphe>
-
-## Trajectoire cible
-<cible de l’audit>
-
-## Réécriture
-<non exécutée, ou compte rendu>
-
-## Fact-check proposition par proposition
-<sortie complète du fact-checker>
-
-## Revue indépendante
-<NOT_RUN, ou compte rendu complet du reviewer>
 ```
 
-Git porte l’historique. Ne crée pas un second système d’historique.
+Le corps peut résumer les conclusions, mais les traces détaillées restent dans les artefacts de
+travail. Ne gonfle pas le rapport final avec les sorties intégrales des agents.
 
-## 8. Fermeture du lot
+## 12. Fermeture du lot
 
 Après toutes les cartes :
 
-1. chaque carte publiable a `factcheck_verdict: FACTCHECK_PASS` ;
-2. `npm run corpus:deepen -- --check` passe sur l’ensemble ;
+1. toute carte publiable possède un `FACTCHECK_PASS` correspondant exactement à son SHA final ;
+2. `npm run corpus:deepen -- --check` passe ;
 3. `npm test` passe ;
 4. aucun fichier rejeté ne reste modifié ;
-5. chaque rapport possède des hashes correspondant aux fichiers finaux ;
-6. ne projette qu’après ces contrôles, avec `npm run corpus:deepen` ;
-7. vérifie le diff avant de rendre.
+5. chaque rapport final porte les hashes finaux ;
+6. `npm run corpus:deepen` ne projette qu'après ces gates ;
+7. inspecte le diff.
 
-Si un test global échoue pour une cause préexistante et indépendante, rends l’échec explicitement.
-
-## Compte rendu final
+Compte rendu final compact :
 
 ```text
 lot                 : n cartes
-PASS pédagogique    : n — <ids>
-REVISE              : n — <ids>
-REWRITE             : n — <ids>
-BLOCKED_SOURCE       : n — <ids>
-FACTCHECK_PASS       : n — <ids>
-FACTCHECK_FAIL       : n — <ids>
-réécritures ACCEPT   : n — <ids>
-réécritures REJECT   : n — <ids>
-SKIPPED_DIRTY        : n — <ids>
-rapports à jour      : n
+PASS pédagogique    : n
+REVISE              : n
+REWRITE             : n
+BLOCKED_SOURCE       : n
+FACTCHECK_PASS       : n
+FACTCHECK_FAIL       : n
+FACTCHECK_INVALID    : n
+ACCEPT               : n
+REJECT               : n
+SKIPPED_DIRTY        : n
 stale restants       : n
 gates                : corpus:deepen <PASS/FAIL> · tests <PASS/FAIL>
 ```
 
-Principe final : **une carte ne devient pas sûre parce qu’elle est bien écrite.** La pédagogie
-et la véracité sont deux gates séparés. Une réécriture exige un diagnostic précis, un
-FACTCHECK proposition par proposition, puis une revue indépendante de l’amélioration.
+Principe final : **le modèle propose, le dépôt fournit la preuve, un autre modèle juge
+l'entailment, et le code décide si les conditions de publication sont réunies.**
