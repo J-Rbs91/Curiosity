@@ -45,8 +45,8 @@ function sha256(value) {
   return createHash("sha256").update(value).digest("hex");
 }
 
-function stableId(prefix, value, length = 16) {
-  return `${prefix}-${sha256(value).slice(0, length)}`;
+function supportId(value) {
+  return `SUP-${sha256(value).slice(0, 16)}`;
 }
 
 async function readJson(file) {
@@ -70,6 +70,10 @@ function lecturePath(id) {
   return path.join(evidenceDir(id), "lecture.json");
 }
 
+function secondaryPath(id) {
+  return path.join(evidenceDir(id), "secondary.json");
+}
+
 function evidenceReviewPath(id) {
   return path.join(evidenceDir(id), "review.json");
 }
@@ -90,75 +94,80 @@ function pedagogyPath(id) {
   return path.join(ROOT, "corpus", "knowledge", `${id}.pedagogy.json`);
 }
 
-function normalizeSource(source, index) {
-  const sourceId = source.source_id || `SRC-${String(index + 1).padStart(3, "0")}`;
+function normalizeSource(source, index, origin) {
+  const fallbackPrefix = origin === "secondary" ? "SEC" : "SRC";
   return {
-    source_id: sourceId,
+    source_id: source.source_id || `${fallbackPrefix}-${String(index + 1).padStart(3, "0")}`,
+    origin,
     citation: source.citation || source.label || null,
     doi_isbn: source.doi_isbn || null,
     url: source.url || null,
     consulted: source.consulted || "metadata-only",
+    retrieval_sha256: source.retrieval_sha256 || null,
   };
 }
 
 function sourceFingerprint(source) {
   return JSON.stringify([
+    source.origin,
+    source.source_id,
     source.citation,
     source.doi_isbn,
     source.url,
     source.consulted,
+    source.retrieval_sha256,
   ]);
 }
 
-function buildSupports(lecture) {
-  const sources = (lecture.sources_ouvertes || []).map(normalizeSource);
+function collectDocumentSupports(doc, origin, includeQuotation = false) {
+  const sources = (doc.sources_ouvertes || []).map((source, index) => normalizeSource(source, index, origin));
   const sourceById = new Map(sources.map((source) => [source.source_id, source]));
   const supports = [];
 
   for (const source of sources) {
-    const text = JSON.stringify({
-      citation: source.citation,
-      doi_isbn: source.doi_isbn,
-      url: source.url,
-    });
+    const text = JSON.stringify({ citation: source.citation, doi_isbn: source.doi_isbn, url: source.url });
     supports.push({
-      id: stableId("SUP", `BIBLIOGRAPHIC\0${sourceFingerprint(source)}\0${text}`),
+      id: supportId(`BIBLIOGRAPHIC\0${sourceFingerprint(source)}\0${text}`),
       type: "BIBLIOGRAPHIC",
       source_id: source.source_id,
+      source_origin: origin,
       access: source.consulted,
       locator: null,
       text,
     });
   }
 
-  if (lecture.quotation?.text) {
+  if (includeQuotation && doc.quotation?.text) {
     const source = sources.find((entry) => entry.consulted === "full-text") || sources[0] || null;
-    const locator = lecture.quotation.locator || null;
-    const text = lecture.quotation.original_text || lecture.quotation.text;
-    const fingerprint = `VERBATIM\0${source ? sourceFingerprint(source) : "NO_SOURCE"}\0${locator || ""}\0${text}`;
+    const locator = doc.quotation.locator || null;
+    const text = doc.quotation.original_text || doc.quotation.text;
     supports.push({
-      id: stableId("SUP", fingerprint),
+      id: supportId(`VERBATIM\0${source ? sourceFingerprint(source) : "NO_SOURCE"}\0${locator || ""}\0${text}`),
       type: "VERBATIM",
       source_id: source?.source_id || null,
+      source_origin: origin,
       access: source?.consulted || "n/a",
       locator,
       text,
-      rendered_translation: lecture.quotation.text,
+      rendered_translation: doc.quotation.text,
     });
   }
 
-  for (const [index, fragment] of (lecture.evidence_fragments || []).entries()) {
+  for (const [index, fragment] of (doc.evidence_fragments || []).entries()) {
     if (!fragment?.text || !fragment?.source_id) continue;
     const source = sourceById.get(fragment.source_id);
     if (!source) {
-      throw new Error(`evidence_fragments[${index}] référence une source inconnue: ${fragment.source_id}`);
+      throw new Error(`${origin}.evidence_fragments[${index}] référence une source inconnue: ${fragment.source_id}`);
+    }
+    if (source.consulted === "metadata-only") {
+      throw new Error(`${origin}.evidence_fragments[${index}] utilise une source metadata-only: ${fragment.source_id}`);
     }
     const locator = fragment.locator || null;
-    const fingerprint = `VERBATIM\0${sourceFingerprint(source)}\0${locator || ""}\0${fragment.text}`;
     supports.push({
-      id: stableId("SUP", fingerprint),
+      id: supportId(`VERBATIM\0${sourceFingerprint(source)}\0${locator || ""}\0${fragment.text}`),
       type: "VERBATIM",
       source_id: source.source_id,
+      source_origin: origin,
       access: source.consulted,
       locator,
       text: fragment.text,
@@ -166,7 +175,41 @@ function buildSupports(lecture) {
     });
   }
 
+  return { sources, supports };
+}
+
+async function loadEvidence(id) {
+  const primaryFile = lecturePath(id);
+  if (!existsSync(primaryFile)) throw new Error(`lecture introuvable: ${primaryFile}`);
+
+  const primaryRaw = await readFile(primaryFile, "utf8");
+  const primary = JSON.parse(primaryRaw);
+  const primaryCollected = collectDocumentSupports(primary, "primary", true);
+
+  let secondaryRaw = "";
+  let secondaryCollected = { sources: [], supports: [] };
+  const secondaryFile = secondaryPath(id);
+  if (existsSync(secondaryFile)) {
+    secondaryRaw = await readFile(secondaryFile, "utf8");
+    secondaryCollected = collectDocumentSupports(JSON.parse(secondaryRaw), "secondary", false);
+  }
+
+  const componentHashes = {
+    primary: sha256(primaryRaw),
+    secondary: secondaryRaw ? sha256(secondaryRaw) : null,
+  };
+  const evidenceSha256 = sha256(JSON.stringify(componentHashes));
+  const sources = [...primaryCollected.sources, ...secondaryCollected.sources];
+  const duplicateSourceIds = sources.filter((source, index) => sources.findIndex((entry) => entry.source_id === source.source_id) !== index);
+  if (duplicateSourceIds.length) {
+    throw new Error(`source_id dupliqué entre acquisitions: ${[...new Set(duplicateSourceIds.map((source) => source.source_id))].join(", ")}`);
+  }
+
+  const supports = [...primaryCollected.supports, ...secondaryCollected.supports];
   return {
+    primary,
+    component_hashes: componentHashes,
+    evidence_sha256: evidenceSha256,
     sources,
     supports: [...new Map(supports.map((support) => [support.id, support])).values()],
   };
@@ -180,7 +223,7 @@ async function resolveEvidenceReview(id) {
     if (review.verdict !== "EVIDENCE_PASS") {
       throw new Error(`evidence review non PASS: ${review.verdict || "MISSING"}`);
     }
-    return { mode: "EVIDENCE_REVIEW", sha256: sha256(raw), file: explicit };
+    return { mode: "EVIDENCE_REVIEW", sha256: sha256(raw) };
   }
 
   if (!flag("allow-legacy")) {
@@ -188,43 +231,34 @@ async function resolveEvidenceReview(id) {
   }
 
   const legacyFile = validatedPath(id);
-  if (!existsSync(legacyFile)) {
-    throw new Error("--allow-legacy exige une carte validée avec contrôle aveugle PASS");
-  }
-  const raw = await readFile(legacyFile, "utf8");
-  const validated = JSON.parse(raw);
+  if (!existsSync(legacyFile)) throw new Error("--allow-legacy exige une carte validée avec contrôle aveugle PASS");
+  const validated = await readJson(legacyFile);
   if (validated.review?.verdict !== "PASS") {
     throw new Error(`contrôle aveugle legacy non PASS: ${validated.review?.verdict || "MISSING"}`);
   }
   return {
     mode: "LEGACY_BLIND_REVIEW",
     sha256: sha256(JSON.stringify(validated.review)),
-    file: legacyFile,
   };
 }
 
 async function prepare(id) {
-  const lectureFile = lecturePath(id);
-  if (!existsSync(lectureFile)) return fail(`lecture introuvable: ${lectureFile}`);
-
   try {
-    const lectureRaw = await readFile(lectureFile, "utf8");
-    const lecture = JSON.parse(lectureRaw);
+    const evidence = await loadEvidence(id);
     const review = await resolveEvidenceReview(id);
-    const { sources, supports } = buildSupports(lecture);
-    const discipline = option("discipline") || "organizational-sociology";
-
+    const discipline = option("discipline") || evidence.primary.discipline || "organizational-sociology";
     const base = {
       protocol_version: 1,
       concept_id: id,
       discipline,
       context_budget_tokens: CONTEXT_BUDGET_TOKENS,
       token_estimate_method: `JSON characters / ${ESTIMATED_CHARS_PER_TOKEN}`,
-      evidence_sha256: sha256(lectureRaw),
+      evidence_sha256: evidence.evidence_sha256,
+      evidence_component_sha256: evidence.component_hashes,
       evidence_review_sha256: review.sha256,
       evidence_review_mode: review.mode,
-      sources,
-      supports,
+      sources: evidence.sources,
+      supports: evidence.supports,
     };
     const estimated = estimateTokens(base);
     const pack = {
@@ -232,7 +266,6 @@ async function prepare(id) {
       estimated_tokens: estimated,
       status: estimated <= CONTEXT_BUDGET_TOKENS ? "READY" : "PARTITION_REQUIRED",
     };
-
     const output = option("out") || path.join(workDir(id), "evidence-pack.json");
     await writeJson(output, pack);
     console.log(JSON.stringify({
@@ -240,7 +273,8 @@ async function prepare(id) {
       status: pack.status,
       review_mode: review.mode,
       estimated_tokens: estimated,
-      supports: supports.length,
+      sources: pack.sources.length,
+      supports: pack.supports.length,
       artifact: path.relative(ROOT, output),
     }));
   } catch (error) {
@@ -248,21 +282,17 @@ async function prepare(id) {
   }
 }
 
-function validateClaims(pack, claims) {
+function validateClaims(pack, candidate) {
   const errors = [];
-  if (claims.concept_id !== pack.concept_id) errors.push("concept_id différent du pack");
-  if (claims.evidence_sha256 !== pack.evidence_sha256) errors.push("evidence_sha256 différent du pack");
-  if (claims.evidence_review_sha256 !== pack.evidence_review_sha256) {
-    errors.push("evidence_review_sha256 différent du pack");
-  }
-  if (!Array.isArray(claims.claims)) errors.push("claims doit être un tableau");
+  if (candidate.concept_id !== pack.concept_id) errors.push("concept_id différent du pack");
+  if (candidate.evidence_sha256 !== pack.evidence_sha256) errors.push("evidence_sha256 différent du pack");
+  if (candidate.evidence_review_sha256 !== pack.evidence_review_sha256) errors.push("evidence_review_sha256 différent du pack");
+  if (!Array.isArray(candidate.claims)) errors.push("claims doit être un tableau");
 
   const supportIds = new Set(pack.supports.map((support) => support.id));
   const ids = new Set();
-  for (const claim of claims.claims || []) {
-    if (typeof claim.claim_id !== "string" || !/^C\d{3,}$/.test(claim.claim_id)) {
-      errors.push(`claim_id invalide: ${claim.claim_id}`);
-    }
+  for (const claim of candidate.claims || []) {
+    if (typeof claim.claim_id !== "string" || !/^C\d{3,}$/.test(claim.claim_id)) errors.push(`claim_id invalide: ${claim.claim_id}`);
     if (ids.has(claim.claim_id)) errors.push(`claim_id dupliqué: ${claim.claim_id}`);
     ids.add(claim.claim_id);
     if (typeof claim.text !== "string" || !claim.text.trim()) errors.push(`${claim.claim_id}: text vide`);
@@ -287,9 +317,9 @@ async function bundle(id) {
   if (!existsSync(claimsFile)) return fail(`claims introuvables: ${claimsFile}`);
 
   const pack = await readJson(packFile);
-  const claims = await readJson(claimsFile);
+  const candidate = await readJson(claimsFile);
   if (pack.status !== "READY") return fail(`pack non prêt: ${pack.status}`);
-  const errors = validateClaims(pack, claims);
+  const errors = validateClaims(pack, candidate);
   if (errors.length) return fail(`claims invalides:\n- ${errors.join("\n- ")}`);
 
   const supportById = new Map(pack.supports.map((support) => [support.id, support]));
@@ -301,7 +331,7 @@ async function bundle(id) {
     evidence_sha256: pack.evidence_sha256,
     evidence_review_sha256: pack.evidence_review_sha256,
     claims_sha256: sha256(claimsRaw),
-    claims: claims.claims.map((claim) => ({
+    claims: candidate.claims.map((claim) => ({
       claim_id: claim.claim_id,
       text: claim.text,
       mode: claim.mode,
@@ -312,7 +342,6 @@ async function bundle(id) {
   const estimated = estimateTokens(verificationBundle);
   verificationBundle.estimated_tokens = estimated;
   verificationBundle.status = estimated <= CONTEXT_BUDGET_TOKENS ? "READY" : "PARTITION_REQUIRED";
-
   const output = option("out") || path.join(dir, "verification-bundle.json");
   await writeJson(output, verificationBundle);
   console.log(JSON.stringify({
@@ -334,35 +363,31 @@ async function gate(id) {
   }
 
   const pack = await readJson(packFile);
-  const claims = await readJson(claimsFile);
+  const candidate = await readJson(claimsFile);
   const verification = await readJson(verificationFile);
   const structuralErrors = [];
   const semanticFailures = [];
 
-  const currentEvidenceRaw = await readFile(lecturePath(id), "utf8");
-  if (sha256(currentEvidenceRaw) !== pack.evidence_sha256) {
-    structuralErrors.push("lecture.json a changé depuis la préparation du pack");
-  }
   try {
+    const currentEvidence = await loadEvidence(id);
+    if (currentEvidence.evidence_sha256 !== pack.evidence_sha256) structuralErrors.push("evidence a changé depuis prepare");
     const currentReview = await resolveEvidenceReview(id);
-    if (currentReview.sha256 !== pack.evidence_review_sha256) {
-      structuralErrors.push("evidence review a changé depuis la préparation du pack");
-    }
+    if (currentReview.sha256 !== pack.evidence_review_sha256) structuralErrors.push("evidence review a changé depuis prepare");
   } catch (error) {
     structuralErrors.push(error.message);
   }
 
   if (pack.status !== "READY") structuralErrors.push(`pack non prêt: ${pack.status}`);
-  structuralErrors.push(...validateClaims(pack, claims));
+  structuralErrors.push(...validateClaims(pack, candidate));
 
   const claimsRaw = await readFile(claimsFile, "utf8");
-  const expectedClaimsSha = sha256(claimsRaw);
+  const claimsSha = sha256(claimsRaw);
   if (verification.concept_id !== id) structuralErrors.push("concept_id verifier incorrect");
   if (verification.evidence_sha256 !== pack.evidence_sha256) structuralErrors.push("evidence_sha256 verifier incorrect");
-  if (verification.claims_sha256 !== expectedClaimsSha) structuralErrors.push("claims_sha256 verifier incorrect");
+  if (verification.claims_sha256 !== claimsSha) structuralErrors.push("claims_sha256 verifier incorrect");
   if (!Array.isArray(verification.results)) structuralErrors.push("verification.results doit être un tableau");
 
-  const expectedIds = new Set((claims.claims || []).map((claim) => claim.claim_id));
+  const expectedIds = new Set((candidate.claims || []).map((claim) => claim.claim_id));
   const seen = new Set();
   for (const result of verification.results || []) {
     if (!expectedIds.has(result.claim_id)) {
@@ -371,11 +396,8 @@ async function gate(id) {
     }
     if (seen.has(result.claim_id)) structuralErrors.push(`résultat dupliqué: ${result.claim_id}`);
     seen.add(result.claim_id);
-    if (!ALLOWED_VERDICTS.has(result.verdict)) {
-      structuralErrors.push(`verdict invalide ${result.claim_id}: ${result.verdict}`);
-    } else if (result.verdict !== "SUPPORTED") {
-      semanticFailures.push(result);
-    }
+    if (!ALLOWED_VERDICTS.has(result.verdict)) structuralErrors.push(`verdict invalide ${result.claim_id}: ${result.verdict}`);
+    else if (result.verdict !== "SUPPORTED") semanticFailures.push(result);
   }
   for (const claimId of expectedIds) {
     if (!seen.has(claimId)) structuralErrors.push(`claim sans verdict: ${claimId}`);
@@ -396,27 +418,21 @@ async function gate(id) {
     concept_id: id,
     evidence_sha256: pack.evidence_sha256,
     evidence_review_sha256: pack.evidence_review_sha256,
-    claims_sha256: expectedClaimsSha,
+    claims_sha256: claimsSha,
     verdict,
     claims: expectedIds.size,
     failed: semanticFailures.length,
     structural_errors: structuralErrors,
     failures: semanticFailures,
   };
-
   const reportFile = option("out") || path.join(dir, "knowledge-gate.json");
   await writeJson(reportFile, report);
 
   if (verdict === "KNOWLEDGE_PASS" && flag("publish")) {
-    const supportById = new Map(pack.supports.map((support) => [support.id, support]));
-    const stableClaims = claims.claims.map((claim) => {
+    const stableClaims = candidate.claims.map((claim) => {
       const supportIds = [...claim.support_ids].sort();
-      const stable = `KCL-${sha256(`${claim.text}\0${supportIds.join("\0")}`).slice(0, 12).toUpperCase()}`;
-      for (const supportId of supportIds) {
-        if (!supportById.has(supportId)) throw new Error(`support disparu avant publication: ${supportId}`);
-      }
       return {
-        id: stable,
+        id: `KCL-${sha256(`${claim.text}\0${supportIds.join("\0")}`).slice(0, 12).toUpperCase()}`,
         text: claim.text,
         mode: claim.mode,
         kind: claim.kind,
@@ -433,7 +449,7 @@ async function gate(id) {
       evidence_sha256: pack.evidence_sha256,
       evidence_review_sha256: pack.evidence_review_sha256,
       claims: stableClaims,
-      boundaries: Array.isArray(claims.boundaries) ? claims.boundaries : [],
+      boundaries: Array.isArray(candidate.boundaries) ? candidate.boundaries : [],
       created_at: new Date().toISOString(),
     };
     await writeJson(knowledgePath(id), record);
