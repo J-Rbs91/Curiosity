@@ -1,6 +1,6 @@
 # Protocole d’audit pédagogique des approfondissements
 
-Version : 2
+Version : 3
 
 Ce protocole complète `PROTOCOLE.md`. Le premier protège surtout l’exactitude documentaire,
 la forme et l’entrée progressive dans le concept. Celui-ci répond d’abord à une autre question :
@@ -8,8 +8,11 @@ la forme et l’entrée progressive dans le concept. Celui-ci répond d’abord 
 
 Un texte peut être exact, bien sourcé, long de 1 500 mots et pourtant mauvais s’il reformule
 six fois la même idée. Inversement, un texte pédagogiquement excellent peut contenir une
-affirmation trop forte ou insuffisamment soutenue. Les deux risques sont donc contrôlés par
-deux gates distincts : l’audit pédagogique et le FACTCHECK proposition par proposition.
+affirmation trop forte ou insuffisamment soutenue.
+
+La véracité détaillée n’est donc pas déduite de cet audit. Elle est contrôlée séparément par
+`FACTCHECK_PROTOCOL.md`, avec claims ancrés dans le texte, supports déterministes, verifier
+indépendant et gate mécanique.
 
 ## 0. Frontière interne et contenu lecteur
 
@@ -83,14 +86,14 @@ Chaque axe reçoit une note de 0 à 4.
 
 ### A. Fidélité documentaire
 
-4 : les affirmations attribuées paraissent soutenues, la frontière entre source, interprétation
-et extension est nette, et `consulted` est respecté.
+4 : aucune fragilité documentaire visible dans l’audit pédagogique et la frontière interne est
+respectée.
 
-0 : des affirmations importantes sont inventées, attribuées sans support ou tirées d’une source
+0 : des affirmations manifestement inventées, sur-attribuées ou tirées d’une source
 `metadata-only` comme si elle avait été lue.
 
-Cette note constitue un premier filtre, mais **ne remplace pas le FACTCHECK**. Une faute grave
-interdit `PASS`, quelle que soit la moyenne.
+Cette note est un signal, **pas un remplacement du fact-check proposition par proposition**.
+Une faute grave interdit `PASS`, mais un 4/4 ne dispense jamais du gate factuel.
 
 ### B. Progressivité pédagogique
 
@@ -128,13 +131,13 @@ L’absence d’exemple n’est pas automatiquement une faute si le concept n’
 
 ### G. Limites, nuances et distinctions
 
-4 : les limites utiles à la **compréhension du concept** arrivent au moment où elles permettent
-d’éviter un contresens ou de complexifier l’intuition initiale.
+4 : les limites utiles arrivent au moment où elles permettent d’éviter un contresens ou de
+complexifier l’intuition initiale.
 
-0 : elles sont absentes alors qu’elles sont pédagogiquement nécessaires, décoratives, ou
-rejetées en fin de texte sans effet sur la compréhension.
+0 : elles sont absentes, décoratives, ou rejetées en fin de texte sans effet sur la compréhension.
 
-Cet axe n’exige jamais l’affichage du champ interne `limits`.
+Cette note porte sur les nuances **utiles au lecteur**, pas sur l’affichage du champ interne
+`limits`.
 
 ### H. Pouvoir d’ouverture
 
@@ -143,24 +146,23 @@ donne une raison précise d’aller plus loin.
 
 0 : il s’épuise dans une conclusion répétitive ou une liste de précautions.
 
-## 4. Verdicts pédagogiques
+## 4. Verdicts
 
 L’auditeur rend exactement un verdict :
 
-- `PASS` : aucun défaut majeur, progression réelle, aucune faute documentaire critique visible ;
-- `REVISE` : architecture saine, mais quelques passages doivent être resserrés, déplacés ou développés ;
-- `REWRITE` : la structure pédagogique est mauvaise, la redondance est systémique ou une reconstruction est plus sûre que des retouches ;
-- `BLOCKED_SOURCE` : les sources disponibles ne permettent pas de produire honnêtement la profondeur nécessaire.
+- `PASS` : aucun défaut pédagogique majeur ;
+- `REVISE` : architecture saine, quelques passages doivent être resserrés, déplacés ou développés ;
+- `REWRITE` : structure pédagogique mauvaise ou redondance systémique ;
+- `BLOCKED_SOURCE` : la matière disponible ne permet pas honnêtement la profondeur nécessaire.
 
-Un score total n’est jamais suffisant à lui seul. `PASS` exige en plus :
+Un score total n’est jamais suffisant à lui seul. `PASS` exige au minimum :
 
-- aucune faute documentaire critique repérée ;
+- aucune faute documentaire critique visible ;
 - aucune séquence de trois paragraphes dont les deltas sont substantiellement identiques ;
 - aucune section dont le rôle principal est de répéter une section antérieure ;
 - une progression explicable en une phrase par section.
 
-`PASS` signifie seulement **PASS pédagogique**. Il ne signifie jamais que la véracité de chaque
-claim a été établie.
+**`PASS` pédagogique n’autorise jamais la publication sans `FACTCHECK_PASS`.**
 
 ## 5. Diagnostic avant réécriture
 
@@ -178,6 +180,9 @@ L’auditeur doit d’abord produire :
 Le diagnostic distingue toujours **manque de pédagogie** et **manque de matière sourcée**.
 Une réécriture n’a pas le droit d’inventer le second pour corriger le premier.
 
+La sortie détaillée est écrite dans l’artefact de travail de la carte ; l’orchestrateur ne doit
+pas transporter ce texte intégral dans son propre contexte.
+
 ## 6. Réécriture
 
 `REVISE` et `REWRITE` autorisent une modification. La nouvelle version doit :
@@ -187,90 +192,45 @@ Une réécriture n’a pas le droit d’inventer le second pour corriger le prem
 - déplacer une explication si son ordre actuel crée un saut ;
 - développer uniquement à partir des matériaux autorisés par `PROTOCOLE.md` ;
 - ne jamais compenser une documentation pauvre par des connaissances générales du modèle ;
-- conserver ou améliorer `limits` comme garde-fou interne sans le transformer en section lecteur ;
+- respecter le caractère interne de `limits` ;
 - rester conforme à `deepening.schema.json` et à `npm run corpus:deepen -- --check --only=<conceptId>`.
 
 Une version plus courte peut être meilleure. L’augmentation du nombre de mots n’est jamais une
 preuve d’approfondissement.
 
-## 7. FACTCHECK indépendant et obligatoire
+Toute réécriture invalide un fact-check antérieur et impose une nouvelle préparation du pack.
 
-Après l’audit, et après la réécriture si elle a lieu, la **version finale candidate** passe par
-`corpus-deepening-factchecker`.
-
-Le fact-checker ne note pas le style. Il décompose `lead` et `sections` en propositions
-vérifiables et exige pour chacune un support dans la matière documentaire autorisée.
-
-Il distingue notamment :
-
-- affirmation directe tirée d’une source ;
-- fait bibliographique ;
-- paraphrase ;
-- interprétation ;
-- conséquence dérivée ;
-- exemple hypothétique.
-
-Il rend `FACTCHECK_PASS` uniquement si chaque claim est soutenu au niveau où il est formulé.
-Une source `metadata-only` ne soutient que ses métadonnées. Une source secondaire ne devient
-jamais silencieusement une parole de l’auteur primaire. Une phrase plausible mais sans support
-échoue.
-
-Les verdicts de claim sont :
-
-- `SUPPORTED` ;
-- `TOO_STRONG` ;
-- `UNSUPPORTED` ;
-- `CONFLICT` ;
-- `SOURCE_NOT_CONSULTED`.
-
-Le verdict global est `FACTCHECK_PASS` seulement si tous les claims sont `SUPPORTED`.
-
-Le fact-checker est **fail-closed** : le doute documentaire ne produit pas un PASS. Il ne
-cherche rien sur le web et n’utilise pas les connaissances générales du modèle comme preuve.
-
-## 8. Revue indépendante des réécritures
+## 7. Revue indépendante
 
 L’agent qui réécrit ne valide jamais sa propre version.
 
-Une réécriture n’atteint le reviewer qu’après `FACTCHECK_PASS`. Le reviewer compare l’ancienne
-version, le diagnostic et la nouvelle version. Il rend :
+Le reviewer intervient seulement sur une réécriture dont la version exacte possède déjà un
+`FACTCHECK_PASS` déterministe. Il compare l’ancienne version, le diagnostic et la nouvelle
+version et rend :
 
 - `ACCEPT` si la nouvelle version améliore réellement la progression sans perte documentaire ;
 - `REJECT` si elle déplace le problème, introduit une fragilité, ou n’améliore pas assez le texte.
 
-Un FACTCHECK absent ou en échec impose `REJECT`.
+En cas de `REJECT`, la version précédente est restaurée.
 
-En cas de `REJECT`, la version précédente est restaurée. Un texte moyen mais connu vaut mieux
-qu’une réécriture non validée.
+## 8. Contexte et récurrence
 
-## 9. Traçabilité et récurrence
+Chaque agent travaille sur un seul concept dans un contexte frais. Le batch ne partage jamais le
+contenu documentaire de plusieurs cartes dans une même invocation.
 
-Le dernier audit de chaque concept vit dans `corpus/deepening-audits/<conceptId>.md`.
-L’historique complet est fourni par Git.
+Le lot par défaut est de 3 cartes, maximum absolu 5. Le budget maximal d’un pack d’agent est de
+300 000 tokens estimés ; au-delà, le travail est partitionné sans troncature.
 
-Le rapport enregistre au minimum :
+Le dernier audit final de chaque concept vit dans `corpus/deepening-audits/<conceptId>.md`.
+Les artefacts détaillés du cycle courant vivent sous
+`corpus/deepening-audits/work/<conceptId>/`. Git porte l’historique.
 
-- `concept_id` ;
-- `deepening_sha256` après décision finale ;
-- `validated_sha256` de la source maître ;
-- `protocol_version` ;
-- date d’audit ;
-- verdict pédagogique initial ;
-- notes par axe ;
-- défauts observés ;
-- trajectoire actuelle et trajectoire cible ;
-- décision de réécriture ;
-- sortie du FACTCHECK ;
-- verdict de revue si réécriture ;
-- résultat final.
-
-Une carte redevient éligible à l’audit si au moins une condition est vraie :
+Une carte redevient éligible si :
 
 - aucun rapport n’existe ;
 - son approfondissement a changé ;
 - son enregistrement validé a changé ;
-- la version de ce protocole a augmenté ;
+- la version du protocole a augmenté ;
 - elle est demandée explicitement.
 
-Cette règle transforme l’audit en contrôle récurrent sans retraiter inutilement les textes qui
-n’ont pas changé.
+La version courante du workflow est `protocol_version: 3`.
