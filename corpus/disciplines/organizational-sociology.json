@@ -1,0 +1,38 @@
+{
+  "$schema": "../schema/discipline-pack.schema.json",
+  "id": "organizational-sociology",
+  "label": "Sociologie des organisations et du travail",
+  "default_language": "fr",
+  "perimeter_file": "corpus/perimeter.md",
+  "evidence_policy": {
+    "accepted_modes": ["DOCUMENTARY", "EMPIRICAL", "CONSENSUS"],
+    "requires_primary_full_text": true,
+    "requires_secondary_source": true,
+    "requires_independent_evidence_review": true,
+    "notes": [
+      "Une notice bibliographique établit des métadonnées, jamais le contenu intellectuel d'une œuvre.",
+      "Une attribution secondaire reste secondaire tant que le texte primaire correspondant n'a pas été ouvert.",
+      "Le web général sert à détecter des pistes, pas à établir un claim publiable."
+    ]
+  },
+  "pedagogy": {
+    "card": {
+      "hook_max_chars": 85,
+      "summary_max_chars": 170
+    },
+    "deepening": {
+      "requires_learning_delta": true,
+      "preferred_roles": [
+        "intuition",
+        "origin",
+        "mechanism",
+        "distinction",
+        "example",
+        "limit",
+        "consequence",
+        "opening"
+      ]
+    }
+  },
+  "extensions": {}
+}
