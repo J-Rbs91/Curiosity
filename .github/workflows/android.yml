@@ -23,22 +23,26 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Node 24
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: "24"
           cache: npm
 
       - name: Java 21
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
           distribution: temurin
           java-version: "21"
 
       - name: Android SDK
-        uses: android-actions/setup-android@v3
+        uses: android-actions/setup-android@v4
+        with:
+          # Le package historique `tools` n'existe plus. L'action l'inclut dans
+          # sa valeur par défaut, donc on limite explicitement l'installation.
+          packages: platform-tools
 
       - name: Android 36
         run: sdkmanager "platforms;android-36" "build-tools;36.0.0"
