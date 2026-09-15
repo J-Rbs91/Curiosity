@@ -50,6 +50,15 @@ jobs:
           cache: npm
       - run: npm ci
 
+      - name: Vérifier le gate déterministe des approfondissements
+        # Le fact-check sémantique est assuré par des agents, mais sa chaîne de confiance
+        # (SHA du candidat, locators, offsets, support_ids et budget de contexte) appartient
+        # au code. Cette étape vérifie au minimum que le script est syntaxiquement valide
+        # et qu'il sait construire un vrai pack sur une carte du corpus sans dépendre d'un LLM.
+        run: |
+          node --check scripts/corpus/deepening-factcheck.mjs
+          npm run corpus:factcheck -- --prepare --only=analyse-du-travail --out=/tmp/analyse-du-travail-factcheck-pack.json
+
       - name: Valider les cartes du corpus
         # Le contrôle documentaire ne peut pas dépendre de la discipline d'un agent ni de
         # celle d'un contributeur : il tourne ici. Voir docs/corpus-workflow.md.
