@@ -41,7 +41,8 @@ jobs:
           const lock = require('./package-lock.json');
           if (pkg.devDependencies.vitest !== '^5.0.0') throw new Error('package.json vitest range not updated');
           if (pkg.devDependencies['@types/node'] !== '^22') throw new Error('package.json @types/node range not updated');
-          if (lock.packages?.['node_modules/vitest']?.version !== '5.0.0') throw new Error(`unexpected vitest version ${lock.packages?.['node_modules/vitest']?.version}`);
+          const vitest = lock.packages?.['node_modules/vitest']?.version;
+          if (!vitest || !vitest.startsWith('5.')) throw new Error(`unexpected vitest version ${vitest}`);
           const nodeTypes = lock.packages?.['node_modules/@types/node']?.version;
           if (!nodeTypes || !nodeTypes.startsWith('22.')) throw new Error(`unexpected @types/node version ${nodeTypes}`);
           NODE
