@@ -162,5 +162,8 @@ export function projectDeepening(deepening) {
     conceptId: deepening.conceptId,
     lead: deepening.lead,
     sections: deepening.sections.map(({ title, paragraphs }) => ({ title, paragraphs })),
+    // Compatibilité temporaire avec l'artefact généré historique. L'écran n'utilise jamais ce
+    // champ ; il disparaîtra physiquement du bundle lors de la migration complète du corpus v2.
+    limits: deepening.limits,
   };
 }
