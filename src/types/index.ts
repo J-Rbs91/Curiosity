@@ -246,17 +246,21 @@ export interface DeepeningSection {
  * lire. Ce qu'il ajoute, c'est le mécanisme — pourquoi le concept produit ce qu'il produit,
  * où il cesse de s'appliquer, ce qu'il ne dit pas.
  *
- * `limits` n'est pas une précaution de style : c'est la frontière documentaire rendue
- * visible. Un texte long écrit à partir d'une carte de cinq sources dépasse nécessairement
- * ce que ces sources établissent, et ce champ est l'endroit où ce dépassement se déclare au
- * lieu de se dissimuler.
+ * `limits` n'est pas une précaution de style : c'est la frontière documentaire du dossier.
+ * Un texte long écrit à partir d'une carte de cinq sources dépasserait facilement ce que ces
+ * sources établissent, et ce champ est l'endroit où cette frontière se déclare au lieu de se
+ * dissimuler.
+ *
+ * Elle est **interne** : elle sert la rédaction, l'audit et le fact-checking, et n'est jamais
+ * rendue au lecteur, dont le texte est `lead` + `sections`. Voir `DeepeningDetail` et
+ * `corpus/deepenings/AUDIT_PROTOCOL.md` §0.
  */
 export interface Deepening {
   conceptId: ConceptId;
   /** L'entrée en matière, sans titre : le problème que le concept résout. */
   lead: string[];
   sections: DeepeningSection[];
-  /** Ce que le corpus de la carte ne permet pas d'établir, nommé plutôt que tu. */
+  /** Frontière documentaire interne, jamais rendue : ce que le corpus de la carte ne permet pas d'établir. */
   limits: string[];
 }
 

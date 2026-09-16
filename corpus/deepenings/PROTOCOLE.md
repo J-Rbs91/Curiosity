@@ -241,15 +241,28 @@ Un fichier JSON par carte, `corpus/deepenings/<conceptId>.json` :
 |---|---|---|
 | `lead` | l'entrée en matière, sans titre. **Le passage le plus important du texte.** Il pose le problème auquel le concept répond, avec des mots courants et si possible une situation concrète. Aucun terme savant qui ne soit immédiatement expliqué. | 2 paragraphes, 120-200 mots |
 | `sections` | le développement, une idée par section, du plus immédiat au plus technique | 4 à 6 sections, 2 à 4 paragraphes |
-| `limits` | ce que les sources disponibles ne permettent pas d'établir, et le texte qu'il faudra lire pour le savoir | 2 à 4 paragraphes, 100-200 mots |
+| `limits` | ce que les sources disponibles ne permettent pas d'établir, et le texte qu'il faudra ouvrir pour le savoir | 2 à 4 paragraphes, 100-200 mots |
 
-**`limits` s'affiche sous le titre « Ce que les sources ne permettent pas d'établir ».** Écris
-donc ces paragraphes comme la suite naturelle de ce titre, sans jamais nommer la carte ni le
-dossier, et du côté du lecteur plutôt que du tien (§1) : non pas « l'article de 1955 n'a pas
-été consulté au-delà de sa notice », mais « ce que l'article de 1955 en dit, il faudra l'ouvrir
-pour le savoir ». C'est le champ que le lecteur quitte en dernier : bien écrit, il lui laisse
-une pile de livres plutôt qu'une liste de manques. Des formules de prudence sans objet précis
-ne suffisent pas, le contrôle les refuse.
+**`limits` ne s'affiche pas.** C'est une frontière documentaire **interne**, écrite pour toi,
+pour l'auditeur et pour le fact-checker : elle dit où s'arrête ce que le dossier autorise, afin
+que le texte lecteur ne franchisse pas cette limite sans qu'on le voie. Le texte destiné au
+lecteur est `lead` + `sections`, et rien d'autre.
+
+Il a existé un état de l'application où ce champ était rendu sous le titre « Ce que les sources
+ne permettent pas d'établir ». **Il ne l'est plus**, et ce titre ne doit pas reparaître :
+`AUDIT_PROTOCOL.md` §0 l'interdit et `DeepeningDetail.tsx` ne rend plus le champ. Exposer
+automatiquement au lecteur le registre interne des insuffisances documentaires n'est pas de la
+pédagogie, c'est de la comptabilité de dossier.
+
+Écris donc `limits` pour ce qu'il est : nomme précisément la source, l'état d'accès et
+l'affirmation qu'il interdit, par exemple « l'article de 1955 n'a été atteint que par sa notice :
+aucune phrase sur son contenu ». Des formules de prudence sans objet précis ne suffisent pas,
+le contrôle les refuse.
+
+Une limite conceptuelle réellement utile à la compréhension, elle, a toute sa place dans
+`sections` si les sources l'établissent. Ce qui est interdit, c'est de transformer le registre
+des lacunes documentaires en appareil visible simplement parce qu'il existe dans le fichier de
+travail.
 
 **Total visé : 1 300 à 1 700 mots.** En dessous de 1 100, le texte n'a rien ajouté ; au-dessus
 de 1 900, il devient un article que personne ne finit.
@@ -286,7 +299,8 @@ Puis relis ton texte avec ces questions, dans cet ordre :
 6. Une citation, une page, une date ou un chiffre y figurent-ils sans être dans la
    documentation de travail ?
 7. Un exemple inventé pourrait-il se lire comme un cas réel ?
-8. `limits` nomme-t-il réellement ce qui manque, et donne-t-il envie d'aller le lire ?
+8. `limits` nomme-t-il réellement la source, son état d'accès et l'affirmation qu'il interdit ?
+   Et le texte lecteur reste-t-il en deçà de cette frontière ?
 9. Une phrase raconte-t-elle qu'un texte n'a pas pu être ouvert, plutôt que ce qu'il contient ?
 
 ---
