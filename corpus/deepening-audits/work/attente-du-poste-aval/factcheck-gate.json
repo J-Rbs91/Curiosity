@@ -1,0 +1,52 @@
+{
+  "protocol_version": 1,
+  "concept_id": "attente-du-poste-aval",
+  "candidate_sha256": "8989888547040b5961c36583adb6589b5162dd2795e27ca3136c38118cca9928",
+  "verdict": "FACTCHECK_FAIL",
+  "claims": 55,
+  "supported": 47,
+  "failed": 8,
+  "structural_errors": [],
+  "failures": [
+    {
+      "claim_id": "C028",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun support résolu. Loi générale affirmée sans preuve ; l'exemple à 4 unités d'attente n'établit pas un « jamais »."
+    },
+    {
+      "claim_id": "C029",
+      "verdict": "UNSUPPORTED",
+      "reason": "Le support ne donne que la définition de x_i et l'identité I_n + somme des b_i. Il n'énonce ni la contrainte de précédence entre les deux postes, ni que l'attente initiale vaut au moins la première opération amont."
+    },
+    {
+      "claim_id": "C031",
+      "verdict": "UNSUPPORTED",
+      "reason": "La note d'arithmétique ne certifie que la fin à 47 et les 4 unités d'inactivité totales. Aucun support ne donne la décomposition attente par attente ni la valeur de deux unités avant le premier article."
+    },
+    {
+      "claim_id": "C032",
+      "verdict": "UNSUPPORTED",
+      "reason": "Les attentes d'une unité avant les deuxième et troisième articles, et leur cause, ne figurent dans aucun support : seuls les totaux 47, 4 et 78 sont vérifiés."
+    },
+    {
+      "claim_id": "C033",
+      "verdict": "UNSUPPORTED",
+      "reason": "Ni l'absence d'attente devant les deux derniers articles, ni le fonctionnement sans interruption du poste amont ne sont portés par le support d'arithmétique, qui s'arrête aux totaux."
+    },
+    {
+      "claim_id": "C036",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun support n'énonce que l'attente du second poste dépendrait d'un seul fournisseur, ni surtout que le plan de charge amont suffirait à tout comptabiliser : mécanisme explicatif ajouté au-delà de la preuve."
+    },
+    {
+      "claim_id": "C037",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun support résolu. L'énoncé sur le retour en arrière et le troisième poste affirme une limite de validité qu'aucune preuve du dossier n'établit."
+    },
+    {
+      "claim_id": "C047",
+      "verdict": "SOURCE_NOT_CONSULTED",
+      "reason": "La note de relecture déclare NON ATTEINT précisément la part selon laquelle l'exemple chiffré serait propre à Bellman et absent de l'article de Johnson : texte intégral de Johnson 1954 inaccessible. Le texte lecteur présente pourtant cette attribution comme acquise."
+    }
+  ]
+}
