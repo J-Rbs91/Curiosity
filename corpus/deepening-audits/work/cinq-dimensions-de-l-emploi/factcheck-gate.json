@@ -1,97 +1,27 @@
 {
   "protocol_version": 1,
   "concept_id": "cinq-dimensions-de-l-emploi",
-  "candidate_sha256": "9336311307aa19fb924327b7582990e62be2488796eea3ca72785fae63255f65",
+  "candidate_sha256": "ff3e6d492eaa604b52754eed847843761e3f95f43c51aa9384192d3efc0c844a",
   "verdict": "FACTCHECK_FAIL",
-  "claims": 59,
-  "supported": 42,
-  "failed": 17,
+  "claims": 47,
+  "supported": 44,
+  "failed": 3,
   "structural_errors": [],
   "failures": [
     {
-      "claim_id": "C001",
-      "verdict": "UNSUPPORTED",
-      "reason": "Les deux supports (SUP-b619e9e8d1f0d59b, SUP-d28e363f1c0538c5) n'énoncent que la relation cinq dimensions -> trois états psychologiques. Rien n'y porte sur la valeur explicative d'une attribution à la motivation individuelle ; l'assertion catégorique « n'explique rien » n'est fondée par aucun support résolu."
-    },
-    {
-      "claim_id": "C002",
+      "claim_id": "C012",
       "verdict": "TOO_STRONG",
-      "reason": "Les supports disent que les trois états sont créés par la présence de cinq dimensions de l'emploi. Ils n'autorisent pas l'exclusive « n'est pas dans les deux personnes, il est dans les deux postes », énoncée sans attribution et sans la réserve que SUP-e08d9dc03a8a31ea signale ailleurs (le modérateur growth need strength n'est pas couvert)."
+      "reason": "Les supports établissent le nombre de cinq (notes[4]) et la longueur des définitions (notes[6]), mais aucun n'attribue au rapport une raison instrumentale expliquant la forme de la liste ; le claim ajoute une causalité de conception (« c'est cet usage qui explique ») et une propriété non attestée (« définie d'assez près pour qu'on puisse la coter »)."
     },
     {
-      "claim_id": "C005",
+      "claim_id": "C019",
       "verdict": "TOO_STRONG",
-      "reason": "Les supports établissent dimensions -> états psychologiques. Ils n'établissent ni que les états produisent les résultats (« c'est cela qui ferait le reste »), ni la négation d'un effet direct sur la qualité : SUP-e08d9dc03a8a31ea décrit au contraire une Figure 1 reliant les Core Job Dimensions aux Personal and Work Outcomes dont « High Quality Work Performance », sans que la médiation soit citée."
+      "reason": "Les deux supports (citation et original) montrent seulement que la phrase ne nomme pas les états. Rien dans les supports résolus n'établit que le rapport nomme les deux autres états ni ce qui les alimente : le claim présente comme acquis un contenu de source non attesté."
     },
     {
-      "claim_id": "C008",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support résolu. Le bundle ne contient aucune définition de Task Identity — SUP-ada711576952723d indique même qu'aucune définition n'a pu être citée — donc rien n'autorise l'identification de l'exemple à cette dimension."
-    },
-    {
-      "claim_id": "C009",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support résolu ; aucune définition d'Autonomy n'est portée par le bundle, SUP-ada711576952723d signalant explicitement qu'aucune n'a été citée."
-    },
-    {
-      "claim_id": "C010",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support résolu ; aucune définition de Task Significance n'est disponible dans le bundle pour autoriser cette illustration."
-    },
-    {
-      "claim_id": "C014",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support résolu. L'assertion négative sur la finalité de la liste (ne pas décrire l'agrément du travail) n'est établie par rien dans le bundle ; l'absence de contradiction n'est pas une preuve."
-    },
-    {
-      "claim_id": "C021",
+      "claim_id": "C032",
       "verdict": "TOO_STRONG",
-      "reason": "Les deux supports ne portent que sur dimensions -> trois états ; ils ne mentionnent aucun résultat attendu. L'affirmation que trois états s'intercalent entre les caractéristiques et les résultats ajoute un maillon (états -> résultats) qu'aucun support résolu n'établit."
-    },
-    {
-      "claim_id": "C022",
-      "verdict": "TOO_STRONG",
-      "reason": "Passage d'une relation posée (les états sont créés par les dimensions) à une nécessité exclusive (« ne fait quelque chose que si ») et à une chaîne vers l'effort et le soin. SUP-e08d9dc03a8a31ea ne documente qu'un lien de Figure 1 entre dimensions et outcomes, sans médiation citée."
-    },
-    {
-      "claim_id": "C023",
-      "verdict": "TOO_STRONG",
-      "reason": "La négation « pas des causes directes de performance » n'est établie par aucun support, et se heurte à SUP-e08d9dc03a8a31ea qui décrit la Figure 1 reliant les Core Job Dimensions à « High Quality Work Performance »."
-    },
-    {
-      "claim_id": "C029",
-      "verdict": "TOO_STRONG",
-      "reason": "Les supports établissent que le sens vécu est renforcé notamment par la variété ; ils n'établissent ni que la variété ne produit rien par soi, ni la condition nécessaire « ne compte que si », qui suppose la chaîne vers les résultats absente des supports résolus."
-    },
-    {
-      "claim_id": "C030",
-      "verdict": "TOO_STRONG",
-      "reason": "Conséquence sur la variabilité d'un même aménagement selon les postes, tirée du seul SUP-b619e9e8d1f0d59b. Aucun support ne porte sur un facteur individuel ou contextuel ; SUP-e08d9dc03a8a31ea note au contraire que la fiche ne couvre pas le modérateur."
-    },
-    {
-      "claim_id": "C040",
-      "verdict": "TOO_STRONG",
-      "reason": "Le support n'établit que la source du retour (le travail lui-même, non des tiers). La propriété temporelle ajoutée — « elle arrive à l'instant » — n'est portée par aucun support résolu."
-    },
-    {
-      "claim_id": "C041",
-      "verdict": "TOO_STRONG",
-      "reason": "Les supports autorisent « la théorie s'appuie sur des travaux antérieurs », pas la négation de naissance en 1974 : SUP-05bcca9c899e0b91 dit expressément que la formulation à cinq dimensions est des deux signataires et que la cinquième, Task Significance, apparaît ici."
-    },
-    {
-      "claim_id": "C052",
-      "verdict": "TOO_STRONG",
-      "reason": "Le décompte d'un tiers suit SUP-5604d2fd43d62ed6, mais « sans cesser d'être mesuré » généralise à l'ensemble du matériau relationnel : SUP-618caaed36d65ce3 n'atteste la mesure en 1974 que de Dealing with Others, rien n'étant dit de required interaction, optional interaction ni friendship opportunities."
-    },
-    {
-      "claim_id": "C055",
-      "verdict": "TOO_STRONG",
-      "reason": "Les supports attestent un renvoi pour « l'exposé et le test de la théorie », mais ne décrivent pas le contenu de ce test ni la chaîne complète : le maillon « et les trois états les résultats » n'est porté par aucun support résolu, et SUP-dcf9218752b68452 précise que la pièce renvoyée n'a pas été ouverte."
-    },
-    {
-      "claim_id": "C058",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support résolu. Ce que la note « suppose » et « écrase » est une appréciation critique du score qu'aucune preuve du bundle n'autorise."
+      "reason": "notes[2] situe le détail des deux listes à « la note 1, p. 39 ». Aucun support n'établit la pagination totale du rapport, donc ni « vers la fin du rapport » ni la qualification « note de bas de page » ne sont attestés."
     }
   ]
 }
