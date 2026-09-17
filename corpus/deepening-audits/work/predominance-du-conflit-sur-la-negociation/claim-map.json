@@ -1,6 +1,6 @@
 {
   "concept_id": "predominance-du-conflit-sur-la-negociation",
-  "candidate_sha256": "3dc7f8bc479b932c1448901fd9d70e43a26b0297a7291fb4cc0fd2c117cd6ea9",
+  "candidate_sha256": "be5a09f60a39d3156449a18c7f0d8c93c081162b8cf25a5d17614358bac14651",
   "paragraphs": [
     {
       "locator": "lead[0]",
@@ -72,9 +72,9 @@
       "claim_id": "C001",
       "locator": "lead[0]",
       "start": 0,
-      "end": 186,
-      "claim_text": "Dans une entreprise de plusieurs milliers de salariés, il y a des délégués, des réunions inscrites au calendrier, des accords signés et des habitudes de discussion vieilles de vingt ans.",
-      "normalized_claim": "Les grandes entreprises disposent d'un appareil de negociation installe (delegues, reunions, accords, habitudes anciennes).",
+      "end": 135,
+      "claim_text": "Discuter, dans une entreprise, cela prend des formes visibles : des délégués, des réunions inscrites au calendrier, des accords signés.",
+      "normalized_claim": "L'appareil de négociation en entreprise se manifeste par des délégués, des réunions et des accords.",
       "support_ids": [
         "SUP-d43fc9ab6fb9f513"
       ]
@@ -82,10 +82,10 @@
     {
       "claim_id": "C002",
       "locator": "lead[0]",
-      "start": 187,
-      "end": 250,
-      "claim_text": "Dans un atelier de trente personnes, rien de tout cela n’existe",
-      "normalized_claim": "Les tres petites entreprises n'ont pas cet appareil de negociation.",
+      "start": 136,
+      "end": 315,
+      "claim_text": "Ces pratiques ne sont pas également répandues selon la taille : c’est dans les grandes entreprises qu’elles sont le plus développées, et un petit atelier en est bien moins pourvu.",
+      "normalized_claim": "Les pratiques contractuelles sont plus développées dans les grandes entreprises que dans les petites.",
       "support_ids": [
         "SUP-d43fc9ab6fb9f513"
       ]
@@ -93,46 +93,47 @@
     {
       "claim_id": "C003",
       "locator": "lead[0]",
-      "start": 359,
-      "end": 482,
+      "start": 316,
+      "end": 383,
+      "claim_text": "L’idée qui vient alors est simple, et presque tout le monde l’a eue",
+      "normalized_claim": "L'attente décrite ensuite était largement partagée.",
+      "support_ids": [
+        "SUP-d43fc9ab6fb9f513",
+        "SUP-f16e01d11d2a6474"
+      ]
+    },
+    {
+      "claim_id": "C004",
+      "locator": "lead[0]",
+      "start": 386,
+      "end": 509,
       "claim_text": "là où la discussion est organisée, un arrêt de travail devrait peser moins, puisque l’essentiel se règle autour d’une table",
-      "normalized_claim": "Enonce de l'attente commune que l'approfondissement va tester : la ou la negociation est installee, la greve pesterait moins.",
+      "normalized_claim": "On pensait que l'appareil de négociation se substituait au rapport de forces.",
       "support_ids": [
         "SUP-f16e01d11d2a6474",
         "SUP-d43fc9ab6fb9f513"
       ]
     },
     {
-      "claim_id": "C004",
+      "claim_id": "C005",
       "locator": "lead[1]",
       "start": 0,
       "end": 45,
       "claim_text": "Sami Dassa a soumis cette idée à un comptage.",
-      "normalized_claim": "Sami Dassa a teste cette idee par un traitement quantitatif.",
+      "normalized_claim": "L'auteur de l'étude quantitative est Sami Dassa.",
       "support_ids": [
         "SUP-cf2e059bcd8d2ec0",
-        "SUP-dae0ffc0f7fc581c",
-        "SUP-2d27288511f2293d"
-      ]
-    },
-    {
-      "claim_id": "C005",
-      "locator": "lead[1]",
-      "start": 46,
-      "end": 149,
-      "claim_text": "Il a repris les relevés de conflits du travail rédigés par les inspecteurs du travail pour l’année 1976",
-      "normalized_claim": "Le materiau est constitue des fiches de conflits du travail redigees par les inspecteurs du travail pour 1976.",
-      "support_ids": [
-        "SUP-2d27288511f2293d"
+        "SUP-2d27288511f2293d",
+        "SUP-dae0ffc0f7fc581c"
       ]
     },
     {
       "claim_id": "C006",
       "locator": "lead[1]",
-      "start": 151,
-      "end": 222,
-      "claim_text": "un matériau qu’il avait déjà traité dans ses propres travaux antérieurs",
-      "normalized_claim": "Dassa avait deja exploite ce materiau dans ses travaux anterieurs.",
+      "start": 46,
+      "end": 149,
+      "claim_text": "Il a repris les relevés de conflits du travail rédigés par les inspecteurs du travail pour l’année 1976",
+      "normalized_claim": "Le matériau est constitué des fiches de conflits rédigées par les inspecteurs du travail pour 1976.",
       "support_ids": [
         "SUP-2d27288511f2293d"
       ]
@@ -140,185 +141,188 @@
     {
       "claim_id": "C007",
       "locator": "lead[1]",
-      "start": 227,
-      "end": 337,
-      "claim_text": "il y a cherché ce qui sépare, concrètement, une grève qui obtient quelque chose d’une grève qui n’obtient rien",
-      "normalized_claim": "L'objet de l'enquete est ce qui distingue une greve avec resultats d'une greve sans resultats.",
+      "start": 151,
+      "end": 222,
+      "claim_text": "un matériau qu’il avait déjà traité dans ses propres travaux antérieurs",
+      "normalized_claim": "Dassa avait déjà exploité ce matériau dans ses travaux antérieurs.",
       "support_ids": [
-        "SUP-dae0ffc0f7fc581c",
-        "SUP-f124549dd85e3c58",
-        "SUP-f246a187f4c90839"
+        "SUP-2d27288511f2293d"
       ]
     },
     {
       "claim_id": "C008",
       "locator": "lead[1]",
-      "start": 339,
-      "end": 381,
-      "claim_text": "La réponse ne va pas dans le sens attendu.",
-      "normalized_claim": "Le resultat contredit l'attente enoncee.",
+      "start": 227,
+      "end": 337,
+      "claim_text": "il y a cherché ce qui sépare, concrètement, une grève qui obtient quelque chose d’une grève qui n’obtient rien",
+      "normalized_claim": "L'objet de l'étude est ce qui distingue les grèves avec résultats des grèves sans résultats.",
       "support_ids": [
-        "SUP-f124549dd85e3c58"
+        "SUP-f124549dd85e3c58",
+        "SUP-dae0ffc0f7fc581c"
       ]
     },
     {
       "claim_id": "C009",
-      "locator": "sections[0].paragraphs[0]",
-      "start": 0,
-      "end": 148,
-      "claim_text": "Dans la sociologie du travail française des années 1970, une phrase circule : « Le conflit est la poursuite de la négociation par d’autres moyens. »",
-      "normalized_claim": "La formule citee circule dans la sociologie du travail francaise des annees 1970.",
+      "locator": "lead[1]",
+      "start": 339,
+      "end": 381,
+      "claim_text": "La réponse ne va pas dans le sens attendu.",
+      "normalized_claim": "Le résultat contredit l'attente ordinaire.",
       "support_ids": [
-        "SUP-813addb0085d0839",
-        "SUP-a88bce97a26e6edd"
+        "SUP-f124549dd85e3c58",
+        "SUP-f246a187f4c90839"
       ]
     },
     {
       "claim_id": "C010",
       "locator": "sections[0].paragraphs[0]",
-      "start": 149,
-      "end": 245,
-      "claim_text": "Elle décalque, en la déplaçant, une formule célèbre de Clausewitz sur la guerre et la politique.",
-      "normalized_claim": "La formule est un decalque inverse de la formule de Clausewitz sur la guerre et la politique.",
+      "start": 0,
+      "end": 148,
+      "claim_text": "Dans la sociologie du travail française des années 1970, une phrase circule : « Le conflit est la poursuite de la négociation par d’autres moyens. »",
+      "normalized_claim": "La formule citée circule dans la sociologie du travail française des années 1970.",
       "support_ids": [
-        "SUP-a88bce97a26e6edd"
+        "SUP-a88bce97a26e6edd",
+        "SUP-813addb0085d0839"
       ]
     },
     {
       "claim_id": "C011",
       "locator": "sections[0].paragraphs[0]",
-      "start": 246,
-      "end": 413,
-      "claim_text": "Dassa la renvoie, en note de sa première page, à la page 127 d’un ouvrage de Gérard Adam et Jean-Daniel Reynaud, Conflits du travail et changement social, paru en 1978",
-      "normalized_claim": "Dassa attribue la formule, en note 2 de la p. 32, a Adam et Reynaud, Conflits du travail et changement social, 1978, p. 127.",
+      "start": 149,
+      "end": 211,
+      "claim_text": "Elle est construite par inversion d’une formule de Clausewitz.",
+      "normalized_claim": "La formule est une inversion de la formule de Clausewitz.",
       "support_ids": [
-        "SUP-813addb0085d0839",
+        "SUP-a88bce97a26e6edd",
         "SUP-66a9ee547abd9ee5"
       ]
     },
     {
       "claim_id": "C012",
       "locator": "sections[0].paragraphs[0]",
-      "start": 416,
-      "end": 533,
-      "claim_text": "un article de Denis Segrestin consacré à l’itinéraire scientifique de Reynaud confirme qu’elle est bien de ce dernier",
-      "normalized_claim": "L'article de Segrestin sur l'itineraire scientifique de Reynaud confirme que la formule est de Reynaud.",
+      "start": 212,
+      "end": 379,
+      "claim_text": "Dassa la renvoie, en note de sa première page, à la page 127 d’un ouvrage de Gérard Adam et Jean-Daniel Reynaud, Conflits du travail et changement social, paru en 1978",
+      "normalized_claim": "Dassa attribue la formule, en note de la p. 32, à Adam et Reynaud, 1978, p. 127.",
       "support_ids": [
-        "SUP-a88bce97a26e6edd",
-        "SUP-ae94839d835b8c36",
-        "SUP-7d70ccd20b40e9d3"
+        "SUP-813addb0085d0839",
+        "SUP-66a9ee547abd9ee5"
       ]
     },
     {
       "claim_id": "C013",
-      "locator": "sections[0].paragraphs[1]",
-      "start": 36,
-      "end": 305,
-      "claim_text": "Elle ne dit pas que la grève et la discussion se succèdent, l’une après l’autre, comme la guerre puis le traité : elle dit qu’elles sont le même processus vu à deux moments, et qu’un arrêt de travail est un coup joué dans une partie qui reste une partie de négociation.",
-      "normalized_claim": "Lecture de la portee de la formule de Reynaud : conflit et negociation ne sont pas successifs mais un seul processus.",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 382,
+      "end": 499,
+      "claim_text": "un article de Denis Segrestin consacré à l’itinéraire scientifique de Reynaud confirme qu’elle est bien de ce dernier",
+      "normalized_claim": "L'article de Segrestin sur l'itinéraire scientifique de Reynaud confirme que la formule est de Reynaud.",
       "support_ids": [
-        "SUP-a88bce97a26e6edd"
+        "SUP-a88bce97a26e6edd",
+        "SUP-ae94839d835b8c36",
+        "SUP-17f3663cb3d0deae"
       ]
     },
     {
       "claim_id": "C014",
       "locator": "sections[0].paragraphs[1]",
-      "start": 306,
-      "end": 402,
-      "claim_text": "Segrestin décrit cette conception où conflits et négociations forment « un seul et même sujet ».",
-      "normalized_claim": "Segrestin expose cette conception ou conflits et negociations forment un seul et meme sujet.",
+      "start": 36,
+      "end": 147,
+      "claim_text": "Elle ne dit pas que la grève et la discussion se succèdent, l’une après l’autre, comme la guerre puis le traité",
+      "normalized_claim": "La formule ne pose pas une succession entre grève et négociation.",
       "support_ids": [
-        "SUP-a88bce97a26e6edd",
-        "SUP-ae94839d835b8c36"
+        "SUP-a88bce97a26e6edd"
       ]
     },
     {
       "claim_id": "C015",
-      "locator": "sections[0].paragraphs[2]",
-      "start": 0,
-      "end": 165,
-      "claim_text": "Dassa annonce l’inverse dès sa deuxième page : « Nous voulons démontrer qu’une fois instauré par le conflit, le système de négociation reste tributaire du conflit. »",
-      "normalized_claim": "Des la p. 33, Dassa annonce la these inverse, dans ces termes exacts.",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 150,
+      "end": 304,
+      "claim_text": "elle dit qu’elles sont le même processus vu à deux moments, et qu’un arrêt de travail est un coup joué dans une partie qui reste une partie de négociation",
+      "normalized_claim": "La formule pose conflit et négociation comme un seul et même processus.",
       "support_ids": [
-        "SUP-8ebed46f41638cc4",
-        "SUP-f246a187f4c90839",
-        "SUP-f780bdfda9884111"
+        "SUP-a88bce97a26e6edd"
       ]
     },
     {
       "claim_id": "C016",
-      "locator": "sections[0].paragraphs[2]",
-      "start": 244,
-      "end": 338,
-      "claim_text": "les délégués, les réunions et les accords ne sont pas un point de départ, ils ont été arrachés",
-      "normalized_claim": "Glose de « une fois instaure par le conflit » : l'appareil de negociation a ete obtenu par le conflit.",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 306,
+      "end": 402,
+      "claim_text": "Segrestin décrit cette conception où conflits et négociations forment « un seul et même sujet ».",
+      "normalized_claim": "Segrestin expose cette conception en ces termes.",
       "support_ids": [
-        "SUP-8ebed46f41638cc4",
-        "SUP-f246a187f4c90839"
+        "SUP-a88bce97a26e6edd"
       ]
     },
     {
       "claim_id": "C017",
       "locator": "sections[0].paragraphs[2]",
-      "start": 403,
-      "end": 481,
-      "claim_text": "cet appareil, une fois en place, ne s’affranchit pas de ce qui l’a fait naître",
-      "normalized_claim": "Glose de « tributaire » : l'appareil de negociation reste dependant du conflit.",
+      "start": 0,
+      "end": 165,
+      "claim_text": "Dassa annonce l’inverse dès sa deuxième page : « Nous voulons démontrer qu’une fois instauré par le conflit, le système de négociation reste tributaire du conflit. »",
+      "normalized_claim": "Dassa énonce cette thèse p. 33, deuxième page de l'article.",
+      "support_ids": [
+        "SUP-8ebed46f41638cc4",
+        "SUP-f246a187f4c90839",
+        "SUP-74e2f9bf3dd6a577"
+      ]
+    },
+    {
+      "claim_id": "C018",
+      "locator": "sections[0].paragraphs[2]",
+      "start": 244,
+      "end": 338,
+      "claim_text": "les délégués, les réunions et les accords ne sont pas un point de départ, ils ont été arrachés",
+      "normalized_claim": "Le système de négociation a été instauré par le conflit.",
       "support_ids": [
         "SUP-8ebed46f41638cc4",
         "SUP-f246a187f4c90839"
       ]
     },
     {
-      "claim_id": "C018",
-      "locator": "sections[0].paragraphs[2]",
-      "start": 483,
-      "end": 537,
-      "claim_text": "Il produit des textes et occupe des gens à plein temps",
-      "normalized_claim": "L'appareil de negociation produit des textes et mobilise des permanents.",
-      "support_ids": []
-    },
-    {
       "claim_id": "C019",
       "locator": "sections[0].paragraphs[2]",
-      "start": 544,
-      "end": 628,
-      "claim_text": "ce qu’il accorde continue de dépendre de ce que les salariés sont capables d’arrêter",
-      "normalized_claim": "Ce que l'appareil de negociation accorde continue de dependre de la capacite de greve.",
+      "start": 403,
+      "end": 481,
+      "claim_text": "cet appareil, une fois en place, ne s’affranchit pas de ce qui l’a fait naître",
+      "normalized_claim": "Le système de négociation reste tributaire du conflit.",
       "support_ids": [
-        "SUP-f124549dd85e3c58",
-        "SUP-06462ecbd910ff69"
+        "SUP-8ebed46f41638cc4",
+        "SUP-f246a187f4c90839"
       ]
     },
     {
       "claim_id": "C020",
-      "locator": "sections[1].paragraphs[0]",
-      "start": 61,
-      "end": 129,
-      "claim_text": "celle que Dassa met au travail ici est simple : la durée de la grève",
-      "normalized_claim": "La mesure de la pression retenue par Dassa est la duree de la greve.",
+      "locator": "sections[0].paragraphs[2]",
+      "start": 483,
+      "end": 568,
+      "claim_text": "Ce qu’il accorde continue de dépendre de ce que les salariés sont capables d’arrêter.",
+      "normalized_claim": "Les résultats obtenus dépendent de la pression exercée par les travailleurs.",
       "support_ids": [
+        "SUP-06462ecbd910ff69",
         "SUP-f124549dd85e3c58"
       ]
     },
     {
       "claim_id": "C021",
       "locator": "sections[1].paragraphs[0]",
-      "start": 131,
-      "end": 337,
-      "claim_text": "Si l’issue se joue sur le rapport de forces, les arrêts qui obtiennent quelque chose doivent être plus longs que ceux qui n’obtiennent rien, et l’écart entre les deux durées mesure ce que coûte un résultat.",
-      "normalized_claim": "Principe de lecture : l'ecart de duree entre greves avec et sans resultats mesure la sensibilite au rapport de forces.",
+      "start": 61,
+      "end": 129,
+      "claim_text": "celle que Dassa met au travail ici est simple : la durée de la grève",
+      "normalized_claim": "La mesure de la pression retenue par Dassa est la durée de la grève.",
       "support_ids": [
-        "SUP-f124549dd85e3c58"
+        "SUP-f124549dd85e3c58",
+        "SUP-8ebed46f41638cc4"
       ]
     },
     {
       "claim_id": "C022",
       "locator": "sections[1].paragraphs[0]",
-      "start": 338,
-      "end": 455,
-      "claim_text": "Si elle se joue ailleurs, dans la routine de la discussion et la qualité des relations, cet écart doit rester faible.",
-      "normalized_claim": "Principe symetrique : un ecart faible signalerait que l'issue ne se joue pas sur le rapport de forces.",
+      "start": 131,
+      "end": 337,
+      "claim_text": "Si l’issue se joue sur le rapport de forces, les arrêts qui obtiennent quelque chose doivent être plus longs que ceux qui n’obtiennent rien, et l’écart entre les deux durées mesure ce que coûte un résultat.",
+      "normalized_claim": "L'écart de durée entre grèves avec et sans résultat sert d'indicateur de sensibilité au rapport de forces.",
       "support_ids": [
         "SUP-f124549dd85e3c58"
       ]
@@ -326,57 +330,57 @@
     {
       "claim_id": "C023",
       "locator": "sections[1].paragraphs[0]",
-      "start": 456,
-      "end": 564,
-      "claim_text": "L’idée de départ prédit donc peu d’écart là où l’on discute beaucoup, et beaucoup là où l’on ne discute pas.",
-      "normalized_claim": "L'hypothese testee predit un ecart faible dans les grandes entreprises et fort dans les petites.",
+      "start": 338,
+      "end": 455,
+      "claim_text": "Si elle se joue ailleurs, dans la routine de la discussion et la qualité des relations, cet écart doit rester faible.",
+      "normalized_claim": "Un écart faible signalerait que l'issue ne dépend pas de la durée.",
       "support_ids": [
-        "SUP-f16e01d11d2a6474",
+        "SUP-f124549dd85e3c58",
         "SUP-d43fc9ab6fb9f513"
       ]
     },
     {
       "claim_id": "C024",
-      "locator": "sections[1].paragraphs[1]",
-      "start": 0,
-      "end": 119,
-      "claim_text": "L’écart, page 40, vaut un jour dans les petites entreprises, 4,8 jours dans les moyennes et 5,2 jours dans les grandes.",
-      "normalized_claim": "Ecart de duree p. 40 : 1 jour (petites), 4,8 (moyennes), 5,2 (grandes).",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 456,
+      "end": 564,
+      "claim_text": "L’idée de départ prédit donc peu d’écart là où l’on discute beaucoup, et beaucoup là où l’on ne discute pas.",
+      "normalized_claim": "L'attente initiale prédisait un écart faible dans les grandes entreprises.",
       "support_ids": [
-        "SUP-f124549dd85e3c58"
+        "SUP-d43fc9ab6fb9f513",
+        "SUP-f16e01d11d2a6474"
       ]
     },
     {
       "claim_id": "C025",
       "locator": "sections[1].paragraphs[1]",
+      "start": 0,
+      "end": 119,
+      "claim_text": "L’écart, page 40, vaut un jour dans les petites entreprises, 4,8 jours dans les moyennes et 5,2 jours dans les grandes.",
+      "normalized_claim": "Valeurs de l'écart de durée par taille, p. 40.",
+      "support_ids": [
+        "SUP-f124549dd85e3c58"
+      ]
+    },
+    {
+      "claim_id": "C026",
+      "locator": "sections[1].paragraphs[1]",
       "start": 120,
       "end": 164,
       "claim_text": "Il est maximal là où on l’attendait minimal.",
-      "normalized_claim": "L'ecart est maximal la ou l'hypothese de depart le predisait minimal.",
+      "normalized_claim": "L'écart est le plus grand dans les grandes entreprises, contre l'attente.",
       "support_ids": [
         "SUP-f124549dd85e3c58",
         "SUP-d43fc9ab6fb9f513"
       ]
     },
     {
-      "claim_id": "C026",
+      "claim_id": "C027",
       "locator": "sections[1].paragraphs[1]",
       "start": 165,
       "end": 317,
       "claim_text": "Dassa commente : « Cela montre bien, contre toute attente, que la sensibilité au rapport de forces est principalement le fait des grandes entreprises. »",
-      "normalized_claim": "Citation de Dassa commentant ces chiffres.",
-      "support_ids": [
-        "SUP-f124549dd85e3c58",
-        "SUP-f246a187f4c90839"
-      ]
-    },
-    {
-      "claim_id": "C027",
-      "locator": "sections[1].paragraphs[1]",
-      "start": 318,
-      "end": 398,
-      "claim_text": "Dans les grandes, tenir cinq jours de plus est ce qui sépare l’échec du résultat",
-      "normalized_claim": "Dans les grandes entreprises, l'ecart de 5,2 jours separe greves sans resultats et greves avec resultats.",
+      "normalized_claim": "Citation de Dassa commentant ces écarts.",
       "support_ids": [
         "SUP-f124549dd85e3c58"
       ]
@@ -384,113 +388,114 @@
     {
       "claim_id": "C028",
       "locator": "sections[1].paragraphs[1]",
+      "start": 318,
+      "end": 398,
+      "claim_text": "Dans les grandes, tenir cinq jours de plus est ce qui sépare l’échec du résultat",
+      "normalized_claim": "Dans les grandes entreprises l'écart est de 5,2 jours.",
+      "support_ids": [
+        "SUP-f124549dd85e3c58"
+      ]
+    },
+    {
+      "claim_id": "C029",
+      "locator": "sections[1].paragraphs[1]",
       "start": 401,
       "end": 508,
       "claim_text": "dans les petites, page 41, « on relève une quasi indépendance entre durée des grèves et résultats obtenus »",
-      "normalized_claim": "Citation de la p. 41 sur la quasi independance duree/resultats dans les petites entreprises.",
+      "normalized_claim": "Citation de la p. 41 sur la quasi-indépendance dans les petites entreprises.",
       "support_ids": [
         "SUP-8ebed46f41638cc4"
       ]
     },
     {
-      "claim_id": "C029",
-      "locator": "sections[1].paragraphs[2]",
-      "start": 0,
-      "end": 132,
-      "claim_text": "La conclusion est tirée page 43 sans détour : « Les grandes entreprises sont plus sensibles que les petites au rapport des forces ».",
-      "normalized_claim": "Citation de la conclusion p. 43.",
-      "support_ids": [
-        "SUP-8ebed46f41638cc4",
-        "SUP-c2b3e29ec2068525"
-      ]
-    },
-    {
       "claim_id": "C030",
       "locator": "sections[1].paragraphs[2]",
-      "start": 133,
-      "end": 306,
-      "claim_text": "Elle donne page 41 la formule qui porte l’idée : « Nous pensons avoir montré ainsi, et surtout pour les grandes entreprises, la prédominance du conflit sur la négociation. »",
-      "normalized_claim": "Citation de la formule de la p. 41 portant le titre du concept.",
+      "start": 0,
+      "end": 131,
+      "claim_text": "La conclusion est tirée page 43 sans détour : « Les grandes entreprises sont plus sensibles que les petites au rapport des forces »",
+      "normalized_claim": "Citation de la conclusion p. 43.",
       "support_ids": [
-        "SUP-edc59f06598eb9b1",
-        "SUP-a254f195c2030ce8"
+        "SUP-8ebed46f41638cc4"
       ]
     },
     {
       "claim_id": "C031",
       "locator": "sections[1].paragraphs[2]",
-      "start": 333,
-      "end": 451,
-      "claim_text": "la démonstration vaut surtout au pôle des grandes entreprises, elle n’est pas donnée comme une loi générale du travail",
-      "normalized_claim": "L'incise « et surtout pour les grandes entreprises » borne la portee de la these.",
+      "start": 133,
+      "end": 306,
+      "claim_text": "Elle donne page 41 la formule qui porte l’idée : « Nous pensons avoir montré ainsi, et surtout pour les grandes entreprises, la prédominance du conflit sur la négociation. »",
+      "normalized_claim": "Citation de la formule de la p. 41.",
+      "support_ids": [
+        "SUP-edc59f06598eb9b1",
+        "SUP-5361fd127a91562d"
+      ]
+    },
+    {
+      "claim_id": "C032",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 307,
+      "end": 452,
+      "claim_text": "L’incise borne la thèse : la démonstration vaut surtout au pôle des grandes entreprises, elle n’est pas donnée comme une loi générale du travail.",
+      "normalized_claim": "L'incise « et surtout pour les grandes entreprises » restreint la portée de la thèse.",
       "support_ids": [
         "SUP-edc59f06598eb9b1",
         "SUP-d43fc9ab6fb9f513"
       ]
     },
     {
-      "claim_id": "C032",
-      "locator": "sections[1].paragraphs[2]",
-      "start": 530,
-      "end": 644,
-      "claim_text": "si durer ne change presque rien dans un petit atelier, on ne sait toujours pas ce qui y décide du sort d’une grève",
-      "normalized_claim": "Ces chiffres ne disent pas ce qui determine l'issue des greves dans les petites entreprises.",
-      "support_ids": [
-        "SUP-8ebed46f41638cc4"
-      ]
-    },
-    {
       "claim_id": "C033",
-      "locator": "sections[2].paragraphs[0]",
-      "start": 77,
-      "end": 226,
-      "claim_text": "Dassa le précise avant tout le reste, page 34 : « Il faut immédiatement préciser que nous travaillons sur des entreprises qui ont connu des grèves. »",
-      "normalized_claim": "Citation de la reserve de champ posee p. 34.",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 453,
+      "end": 527,
+      "claim_text": "À l’autre pôle, elle laisse une question que ces chiffres ne referment pas",
+      "normalized_claim": "Les chiffres ne tranchent pas le cas des petites entreprises.",
       "support_ids": [
-        "SUP-cf86e23d9719e1c0"
+        "SUP-8ebed46f41638cc4",
+        "SUP-d76b34e076913bcd"
       ]
     },
     {
       "claim_id": "C034",
-      "locator": "sections[2].paragraphs[0]",
-      "start": 227,
-      "end": 405,
-      "claim_text": "Rien de ce qui suit ne concerne donc les entreprises en général : tout se dit à l’intérieur du monde, restreint, de celles où un arrêt de travail a effectivement eu lieu en 1976.",
-      "normalized_claim": "Les resultats ne valent que pour les entreprises ayant connu une greve en 1976.",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 530,
+      "end": 644,
+      "claim_text": "si durer ne change presque rien dans un petit atelier, on ne sait toujours pas ce qui y décide du sort d’une grève",
+      "normalized_claim": "Dans les petites entreprises, la durée n'explique pas les résultats.",
       "support_ids": [
-        "SUP-cf86e23d9719e1c0",
-        "SUP-2d27288511f2293d"
+        "SUP-8ebed46f41638cc4",
+        "SUP-f124549dd85e3c58"
       ]
     },
     {
       "claim_id": "C035",
-      "locator": "sections[2].paragraphs[1]",
-      "start": 106,
-      "end": 190,
-      "claim_text": "Vues du dedans, ce sont les petites entreprises qui apparaissent les plus combatives",
-      "normalized_claim": "A l'interieur du champ, les petites entreprises apparaissent les plus combatives.",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 77,
+      "end": 226,
+      "claim_text": "Dassa le précise avant tout le reste, page 34 : « Il faut immédiatement préciser que nous travaillons sur des entreprises qui ont connu des grèves. »",
+      "normalized_claim": "Citation de la réserve de champ, p. 34.",
       "support_ids": [
         "SUP-cf86e23d9719e1c0"
       ]
     },
     {
       "claim_id": "C036",
-      "locator": "sections[2].paragraphs[1]",
-      "start": 193,
-      "end": 333,
-      "claim_text": "vues du dehors, elles font rarement grève, de l’ordre de 3 pour cent, contre 30 pour cent dans les entreprises d’au moins 1 000 travailleurs",
-      "normalized_claim": "Frequence de greve : environ 3 % dans les petites contre 30 % dans les entreprises d'au moins 1 000 travailleurs.",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 227,
+      "end": 405,
+      "claim_text": "Rien de ce qui suit ne concerne donc les entreprises en général : tout se dit à l’intérieur du monde, restreint, de celles où un arrêt de travail a effectivement eu lieu en 1976.",
+      "normalized_claim": "Le champ est limité aux entreprises ayant connu une grève en 1976.",
       "support_ids": [
-        "SUP-cf86e23d9719e1c0"
+        "SUP-cf86e23d9719e1c0",
+        "SUP-2d27288511f2293d"
       ]
     },
     {
       "claim_id": "C037",
       "locator": "sections[2].paragraphs[1]",
-      "start": 335,
-      "end": 507,
-      "claim_text": "Cette combativité constatée, avertit Dassa, « ne veut pas dire que les travailleurs de toutes les petites entreprises sont plus combatifs que ceux des grandes entreprises »",
-      "normalized_claim": "Avertissement de Dassa sur la portee de cette combativite.",
+      "start": 0,
+      "end": 105,
+      "claim_text": "La précaution n’est pas de pure forme, car ce monde-là n’est pas peuplé de la même façon selon la taille.",
+      "normalized_claim": "La composition de la population étudiée varie selon la taille des entreprises.",
       "support_ids": [
         "SUP-cf86e23d9719e1c0"
       ]
@@ -498,113 +503,110 @@
     {
       "claim_id": "C038",
       "locator": "sections[2].paragraphs[1]",
-      "start": 510,
-      "end": 576,
-      "claim_text": "elle ne renseigne que sur les rares ateliers où un arrêt a eu lieu",
-      "normalized_claim": "Cette combativite ne vaut que pour les petites entreprises ayant connu une greve.",
+      "start": 106,
+      "end": 190,
+      "claim_text": "Vues du dedans, ce sont les petites entreprises qui apparaissent les plus combatives",
+      "normalized_claim": "Une plus grande combativité est constatée dans les petites entreprises étudiées.",
       "support_ids": [
         "SUP-cf86e23d9719e1c0"
       ]
     },
     {
       "claim_id": "C039",
-      "locator": "sections[2].paragraphs[2]",
-      "start": 33,
-      "end": 271,
-      "claim_text": "L’agriculture et les administrations publiques en sont exclues, ainsi que les longs conflits sur l’emploi qui suivent une liquidation judiciaire, les grèves répétitives interrompues plus de quarante-huit heures et les grèves généralisées.",
-      "normalized_claim": "Liste des exclusions du champ.",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 193,
+      "end": 333,
+      "claim_text": "vues du dehors, elles font rarement grève, de l’ordre de 3 pour cent, contre 30 pour cent dans les entreprises d’au moins 1 000 travailleurs",
+      "normalized_claim": "Fréquence des grèves : environ 3 % contre 30 % dans les entreprises d'au moins 1 000 travailleurs.",
       "support_ids": [
         "SUP-cf86e23d9719e1c0"
       ]
     },
     {
       "claim_id": "C040",
-      "locator": "sections[2].paragraphs[2]",
-      "start": 272,
-      "end": 455,
-      "claim_text": "Ces exclusions décident de ce que les durées veulent dire : un arrêt qui se prolonge parce que l’entreprise ferme, ou une grève qui la déborde, ne se compare pas à un arrêt ordinaire.",
-      "normalized_claim": "Lecture de l'effet des exclusions sur l'homogeneite des durees.",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 335,
+      "end": 507,
+      "claim_text": "Cette combativité constatée, avertit Dassa, « ne veut pas dire que les travailleurs de toutes les petites entreprises sont plus combatifs que ceux des grandes entreprises »",
+      "normalized_claim": "Citation de l'avertissement de Dassa sur la portée de cette combativité.",
       "support_ids": [
         "SUP-cf86e23d9719e1c0"
       ]
     },
     {
       "claim_id": "C041",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 510,
+      "end": 576,
+      "claim_text": "elle ne renseigne que sur les rares ateliers où un arrêt a eu lieu",
+      "normalized_claim": "Le constat ne vaut que pour les petites entreprises ayant connu une grève.",
+      "support_ids": [
+        "SUP-cf86e23d9719e1c0"
+      ]
+    },
+    {
+      "claim_id": "C042",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 33,
+      "end": 271,
+      "claim_text": "L’agriculture et les administrations publiques en sont exclues, ainsi que les longs conflits sur l’emploi qui suivent une liquidation judiciaire, les grèves répétitives interrompues plus de quarante-huit heures et les grèves généralisées.",
+      "normalized_claim": "Liste des exclusions de champ.",
+      "support_ids": [
+        "SUP-cf86e23d9719e1c0"
+      ]
+    },
+    {
+      "claim_id": "C043",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 272,
+      "end": 455,
+      "claim_text": "Ces exclusions décident de ce que les durées veulent dire : un arrêt qui se prolonge parce que l’entreprise ferme, ou une grève qui la déborde, ne se compare pas à un arrêt ordinaire.",
+      "normalized_claim": "Les exclusions homogénéisent la signification des durées comparées.",
+      "support_ids": [
+        "SUP-cf86e23d9719e1c0"
+      ]
+    },
+    {
+      "claim_id": "C044",
       "locator": "sections[2].paragraphs[2]",
       "start": 456,
       "end": 559,
       "claim_text": "Les durées mises côte à côte sont donc de même nature, celles d’une seule année, dans le secteur privé.",
-      "normalized_claim": "Les durees comparees portent sur une seule annee et sur le secteur prive.",
+      "normalized_claim": "Les durées comparées portent sur une seule année et sur le secteur privé.",
       "support_ids": [
         "SUP-cf86e23d9719e1c0",
         "SUP-2d27288511f2293d"
       ]
     },
     {
-      "claim_id": "C042",
-      "locator": "sections[3].paragraphs[0]",
-      "start": 0,
-      "end": 262,
-      "claim_text": "Une anomalie était connue avant ce comptage, et Dassa la rappelle page 33 en citant Michelle Durand : « ce sont les grandes entreprises qui ont le plus de grèves, bien qu’elles soient le lieu d’un plus grand développement des pratiques contractuelles diverses ».",
-      "normalized_claim": "Dassa cite Michelle Durand p. 33 sur la frequence des greves dans les grandes entreprises.",
-      "support_ids": [
-        "SUP-d43fc9ab6fb9f513"
-      ]
-    },
-    {
-      "claim_id": "C043",
-      "locator": "sections[3].paragraphs[0]",
-      "start": 263,
-      "end": 319,
-      "claim_text": "Là où l’on discute le plus, on s’arrête le plus souvent.",
-      "normalized_claim": "La frequence des greves est la plus forte la ou les pratiques contractuelles sont les plus developpees.",
-      "support_ids": [
-        "SUP-d43fc9ab6fb9f513"
-      ]
-    },
-    {
-      "claim_id": "C044",
-      "locator": "sections[3].paragraphs[0]",
-      "start": 320,
-      "end": 446,
-      "claim_text": "Cette anomalie-là portait sur le nombre des grèves ; les durées en ajoutent une seconde, qui porte sur ce qu’elles obtiennent.",
-      "normalized_claim": "L'anomalie de Durand porte sur la frequence ; le resultat de Dassa porte sur l'efficacite.",
-      "support_ids": [
-        "SUP-d43fc9ab6fb9f513",
-        "SUP-f124549dd85e3c58"
-      ]
-    },
-    {
       "claim_id": "C045",
       "locator": "sections[3].paragraphs[0]",
-      "start": 470,
-      "end": 562,
-      "claim_text": "là où la discussion est installée, ni la fréquence des arrêts ni leur efficacité ne reculent",
-      "normalized_claim": "La ou l'appareil de negociation est installe, ni la frequence ni l'efficacite des greves ne diminuent.",
+      "start": 0,
+      "end": 261,
+      "claim_text": "Une anomalie était connue avant ce comptage, et Dassa la rappelle page 33 en citant Michelle Durand : « ce sont les grandes entreprises qui ont le plus de grèves, bien qu’elles soient le lieu d’un plus grand développement des pratiques contractuelles diverses »",
+      "normalized_claim": "Citation de Michelle Durand rapportée par Dassa p. 33.",
       "support_ids": [
-        "SUP-d43fc9ab6fb9f513",
-        "SUP-f124549dd85e3c58"
+        "SUP-d43fc9ab6fb9f513"
       ]
     },
     {
       "claim_id": "C046",
-      "locator": "sections[3].paragraphs[1]",
-      "start": 52,
-      "end": 185,
-      "claim_text": "ses tableaux « montrent avec éclat que la sensibilité au rapport des forces est particulièrement nette dans les grandes entreprises »",
-      "normalized_claim": "Citation de la p. 44 sur ce que montrent les tableaux 6, 7 et 8.",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 263,
+      "end": 319,
+      "claim_text": "Là où l’on discute le plus, on s’arrête le plus souvent.",
+      "normalized_claim": "Les grèves sont les plus fréquentes là où les pratiques contractuelles sont les plus développées.",
       "support_ids": [
-        "SUP-8ebed46f41638cc4",
-        "SUP-f124549dd85e3c58"
+        "SUP-d43fc9ab6fb9f513"
       ]
     },
     {
       "claim_id": "C047",
-      "locator": "sections[3].paragraphs[1]",
-      "start": 195,
-      "end": 334,
-      "claim_text": "« là où précisément on pensait que l’appareil de négociation et l’institutionnalisation du conflit se substituait à ce rapport des forces »",
-      "normalized_claim": "Citation de la p. 44 designant l'attente refutee.",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 320,
+      "end": 446,
+      "claim_text": "Cette anomalie-là portait sur le nombre des grèves ; les durées en ajoutent une seconde, qui porte sur ce qu’elles obtiennent.",
+      "normalized_claim": "La première anomalie concerne la fréquence, la seconde les résultats.",
       "support_ids": [
         "SUP-d43fc9ab6fb9f513",
         "SUP-f124549dd85e3c58"
@@ -612,43 +614,46 @@
     },
     {
       "claim_id": "C048",
-      "locator": "sections[3].paragraphs[1]",
-      "start": 336,
-      "end": 475,
-      "claim_text": "L’institutionnalisation du conflit, c’est l’idée qu’un affrontement finit par se couler dans des règles et des rendez-vous qui l’absorbent.",
-      "normalized_claim": "Definition proposee de l'institutionnalisation du conflit.",
-      "support_ids": []
-    },
-    {
-      "claim_id": "C049",
-      "locator": "sections[3].paragraphs[1]",
-      "start": 529,
-      "end": 640,
-      "claim_text": "ce n’est pas la négociation qui est déclarée inutile, c’est sa capacité à prendre la place du rapport de forces",
-      "normalized_claim": "Ce qui est refute est la substitution de la negociation au rapport de forces, non l'utilite de la negociation.",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 447,
+      "end": 600,
+      "claim_text": "Les deux s’emboîtent : là où la discussion est installée, les arrêts sont à la fois les plus fréquents et ceux dont l’issue dépend le plus de leur durée.",
+      "normalized_claim": "Dans les grandes entreprises, grèves les plus fréquentes et issue la plus dépendante de la durée.",
       "support_ids": [
         "SUP-d43fc9ab6fb9f513",
         "SUP-f124549dd85e3c58"
       ]
     },
     {
-      "claim_id": "C050",
-      "locator": "sections[3].paragraphs[2]",
+      "claim_id": "C049",
+      "locator": "sections[3].paragraphs[1]",
       "start": 0,
-      "end": 86,
-      "claim_text": "On peut lire ces chiffres ainsi, et c’est une lecture plutôt qu’une phrase de l’auteur",
-      "normalized_claim": "Ce qui suit est signale comme une lecture et non comme une formulation de Dassa.",
+      "end": 185,
+      "claim_text": "Page 44, Dassa désigne ce qui est réfuté au juste : ses tableaux « montrent avec éclat que la sensibilité au rapport des forces est particulièrement nette dans les grandes entreprises »",
+      "normalized_claim": "Citation de la p. 44 sur les tableaux.",
       "support_ids": [
+        "SUP-8ebed46f41638cc4"
+      ]
+    },
+    {
+      "claim_id": "C050",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 187,
+      "end": 334,
+      "claim_text": "et cela « là où précisément on pensait que l’appareil de négociation et l’institutionnalisation du conflit se substituait à ce rapport des forces »",
+      "normalized_claim": "Suite de la citation de la p. 44.",
+      "support_ids": [
+        "SUP-d43fc9ab6fb9f513",
         "SUP-f124549dd85e3c58"
       ]
     },
     {
       "claim_id": "C051",
-      "locator": "sections[3].paragraphs[2]",
-      "start": 89,
-      "end": 285,
-      "claim_text": "avoir des délégués, un calendrier de réunions et des accords signés ne crée aucune capacité propre à obtenir des résultats, cela déplace le niveau de pression à partir duquel un résultat s’obtient",
-      "normalized_claim": "L'appareil de negociation ne cree aucune capacite autonome a obtenir des resultats, il releve le seuil de pression.",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 336,
+      "end": 501,
+      "claim_text": "Le verbe qui porte la réfutation est se substituer : ce n’est pas la négociation qui est déclarée inutile, c’est sa capacité à prendre la place du rapport de forces.",
+      "normalized_claim": "Ce qui est réfuté est la substitution de la négociation au rapport de forces, non l'utilité de la négociation.",
       "support_ids": [
         "SUP-f124549dd85e3c58"
       ]
@@ -656,44 +661,44 @@
     {
       "claim_id": "C052",
       "locator": "sections[3].paragraphs[2]",
+      "start": 0,
+      "end": 86,
+      "claim_text": "On peut lire ces chiffres ainsi, et c’est une lecture plutôt qu’une phrase de l’auteur",
+      "normalized_claim": "Ce qui suit est une interprétation, non une formulation de Dassa.",
+      "support_ids": [
+        "SUP-f124549dd85e3c58"
+      ]
+    },
+    {
+      "claim_id": "C053",
+      "locator": "sections[3].paragraphs[2]",
+      "start": 89,
+      "end": 285,
+      "claim_text": "avoir des délégués, un calendrier de réunions et des accords signés ne crée aucune capacité propre à obtenir des résultats, cela déplace le niveau de pression à partir duquel un résultat s’obtient",
+      "normalized_claim": "L'appareil de négociation ne crée pas de capacité autonome, il relève le seuil de pression.",
+      "support_ids": [
+        "SUP-f124549dd85e3c58"
+      ]
+    },
+    {
+      "claim_id": "C054",
+      "locator": "sections[3].paragraphs[2]",
       "start": 287,
       "end": 363,
       "claim_text": "L’appareil de négociation ne dispense pas de la grève, il en relève le prix.",
-      "normalized_claim": "Formulation resserree de la meme lecture.",
+      "normalized_claim": "Reformulation de la même idée de seuil.",
       "support_ids": [
         "SUP-f124549dd85e3c58",
         "SUP-06462ecbd910ff69"
       ]
     },
     {
-      "claim_id": "C053",
-      "locator": "sections[4].paragraphs[0]",
-      "start": 48,
-      "end": 82,
-      "claim_text": "Dassa le dit en note de sa page 36",
-      "normalized_claim": "Les reserves qui suivent sont posees par Dassa en note de la p. 36.",
-      "support_ids": [
-        "SUP-1f7e4d8dbe956dc0"
-      ]
-    },
-    {
-      "claim_id": "C054",
-      "locator": "sections[4].paragraphs[0]",
-      "start": 84,
-      "end": 172,
-      "claim_text": "Une reprise du travail contre promesses a été rangée du côté des conflits avec résultats",
-      "normalized_claim": "Le codage range les reprises du travail avec promesses parmi les conflits avec resultats.",
-      "support_ids": [
-        "SUP-1f7e4d8dbe956dc0"
-      ]
-    },
-    {
       "claim_id": "C055",
       "locator": "sections[4].paragraphs[0]",
-      "start": 174,
-      "end": 320,
-      "claim_text": "alors que la part des résultats informels ou différés, ceux qui ne sont notés nulle part, « varie peut-être suivant la dimension des entreprises »",
-      "normalized_claim": "Citation de la note 1 p. 36 sur la variation possible des resultats informels selon la taille.",
+      "start": 0,
+      "end": 83,
+      "claim_text": "Un comptage ne voit que ce qu’il enregistre, et Dassa le dit en note de sa page 36.",
+      "normalized_claim": "Les réserves de codage sont posées en note de la p. 36.",
       "support_ids": [
         "SUP-1f7e4d8dbe956dc0"
       ]
@@ -701,10 +706,10 @@
     {
       "claim_id": "C056",
       "locator": "sections[4].paragraphs[0]",
-      "start": 325,
-      "end": 506,
-      "claim_text": "tout ce qui s’obtient sans grève échappe entièrement au comptage : cette négociation à froid est peut-être plus fréquente dans les grandes entreprises, « mais cela reste à établir »",
-      "normalized_claim": "Citation de la note 2 p. 36 sur la negociation a froid, non comptee et non etablie.",
+      "start": 84,
+      "end": 172,
+      "claim_text": "Une reprise du travail contre promesses a été rangée du côté des conflits avec résultats",
+      "normalized_claim": "Les reprises avec promesses sont codées comme conflits avec résultats.",
       "support_ids": [
         "SUP-1f7e4d8dbe956dc0"
       ]
@@ -712,62 +717,95 @@
     {
       "claim_id": "C057",
       "locator": "sections[4].paragraphs[0]",
-      "start": 508,
-      "end": 566,
-      "claim_text": "Les deux réserves sont de l’auteur, et il ne les lève pas.",
-      "normalized_claim": "Les deux reserves sont formulees par Dassa et ne sont pas levees par lui.",
+      "start": 174,
+      "end": 320,
+      "claim_text": "alors que la part des résultats informels ou différés, ceux qui ne sont notés nulle part, « varie peut-être suivant la dimension des entreprises »",
+      "normalized_claim": "Citation de la réserve sur les résultats informels ou différés.",
       "support_ids": [
         "SUP-1f7e4d8dbe956dc0"
       ]
     },
     {
       "claim_id": "C058",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 322,
+      "end": 506,
+      "claim_text": "Et tout ce qui s’obtient sans grève échappe entièrement au comptage : cette négociation à froid est peut-être plus fréquente dans les grandes entreprises, « mais cela reste à établir »",
+      "normalized_claim": "Citation de la réserve sur la négociation à froid.",
+      "support_ids": [
+        "SUP-1f7e4d8dbe956dc0"
+      ]
+    },
+    {
+      "claim_id": "C059",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 508,
+      "end": 566,
+      "claim_text": "Les deux réserves sont de l’auteur, et il ne les lève pas.",
+      "normalized_claim": "Les deux réserves sont posées par Dassa et non levées.",
+      "support_ids": [
+        "SUP-1f7e4d8dbe956dc0"
+      ]
+    },
+    {
+      "claim_id": "C060",
       "locator": "sections[4].paragraphs[1]",
       "start": 53,
       "end": 157,
       "claim_text": "L’opposition du conflit et de la négociation traversait déjà le débat qu’il cite, et il ne l’invente pas",
-      "normalized_claim": "L'opposition conflit/negociation preexiste a Dassa dans le debat qu'il cite.",
+      "normalized_claim": "L'opposition conflit/négociation préexiste à Dassa, qui cite ce débat.",
       "support_ids": [
         "SUP-66a9ee547abd9ee5",
         "SUP-813addb0085d0839"
       ]
     },
     {
-      "claim_id": "C059",
+      "claim_id": "C061",
       "locator": "sections[4].paragraphs[1]",
       "start": 160,
       "end": 252,
       "claim_text": "ce qu’il ajoute est une démonstration chiffrée où la taille des entreprises sert d’opérateur",
-      "normalized_claim": "Ce qui revient en propre a Dassa est la demonstration quantitative par la taille des entreprises.",
+      "normalized_claim": "L'apport propre de Dassa est la démonstration quantitative par la taille des entreprises.",
       "support_ids": [
         "SUP-66a9ee547abd9ee5",
         "SUP-5361fd127a91562d"
       ]
     },
     {
-      "claim_id": "C060",
+      "claim_id": "C062",
       "locator": "sections[4].paragraphs[1]",
       "start": 257,
       "end": 448,
       "claim_text": "la phrase par laquelle il la resserre page 43 : « C’est dans les grandes entreprises plus que dans les petites que la pression des travailleurs est indispensable pour obtenir des résultats. »",
-      "normalized_claim": "Citation verbatim de la p. 43.",
+      "normalized_claim": "Citation de la p. 43, section IV Conclusions.",
       "support_ids": [
         "SUP-06462ecbd910ff69",
         "SUP-c2b3e29ec2068525",
-        "SUP-d3ea44cff2abd59f",
-        "SUP-7d8deffe1030ebbb"
+        "SUP-d3ea44cff2abd59f"
       ]
     },
     {
-      "claim_id": "C061",
+      "claim_id": "C063",
       "locator": "sections[4].paragraphs[1]",
       "start": 449,
       "end": 528,
       "claim_text": "Elle vaut pour une année, 1976, et pour des entreprises où une grève a eu lieu.",
-      "normalized_claim": "La portee de la phrase est bornee a 1976 et aux entreprises ayant connu une greve.",
+      "normalized_claim": "Portée de la conclusion : l'année 1976 et les entreprises ayant connu une grève.",
+      "support_ids": [
+        "SUP-2d27288511f2293d",
+        "SUP-cf86e23d9719e1c0"
+      ]
+    },
+    {
+      "claim_id": "C064",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 529,
+      "end": 605,
+      "claim_text": "Ce qu’elle devient hors de ces bornes demande d’autres chiffres que ceux-là.",
+      "normalized_claim": "Hors de ces bornes, le résultat n'est pas établi par cette étude.",
       "support_ids": [
         "SUP-cf86e23d9719e1c0",
-        "SUP-2d27288511f2293d"
+        "SUP-d76b34e076913bcd"
       ]
     }
   ]
