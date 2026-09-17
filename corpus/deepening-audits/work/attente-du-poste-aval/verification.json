@@ -1,281 +1,251 @@
 {
   "concept_id": "attente-du-poste-aval",
-  "candidate_sha256": "8989888547040b5961c36583adb6589b5162dd2795e27ca3136c38118cca9928",
+  "candidate_sha256": "e4185be14f3c35b3af953b1d61bbc82585f7ab237089a00c75d5bf417bcbcbf5",
   "results": [
     {
       "claim_id": "C001",
       "verdict": "SUPPORTED",
-      "reason": "Le summary pose que l'ordonnancement agit sur l'attente et la citation donne 47 contre 78 pour deux ordres : l'ordre compte effectivement."
+      "reason": "Les supports etablissent que l'ordre modifie le temps total (47 contre 78 sur l'exemple verifie), donc que le rang compte."
     },
     {
       "claim_id": "C002",
       "verdict": "SUPPORTED",
-      "reason": "La note de relecture cite la page 11 : la charge du second poste est la somme des b_i, explicitement dite invariante par permutation."
+      "reason": "Le resume valide pose que la charge du second poste ne depend pas de l'ordre ; l'espoir de faire travailler la machine plus vite est donc exclu par les supports."
     },
     {
       "claim_id": "C003",
       "verdict": "SUPPORTED",
-      "reason": "La citation et la note d'arithmétique donnent 47 pour l'ordre minimal et 78 pour l'ordre renversé ; l'énoncé reste modalisé par « peut »."
+      "reason": "La p. 11 citee dans review.notes[6] donne le total comme I_n + somme des b_i, avec somme des b_i invariante par permutation ; l'invariance de la somme sur le meme jeu de pieces est exactement ce qui est affirme."
     },
     {
       "claim_id": "C004",
       "verdict": "SUPPORTED",
-      "reason": "La note de relecture atteste que l'identité est portée mot pour mot par la page 11 ; couverture et référence donnent Bellman, RAND, P-651, révisé le 23 mai 1955."
+      "reason": "L'ecart 47 / 78 entre le meilleur ordre et l'ordre renverse, lu sur piece et recalcule par le controle, autorise 'considerable' sans quantification abusive."
     },
     {
       "claim_id": "C005",
       "verdict": "SUPPORTED",
-      "reason": "La note d'attribution et les relevés sur pièce (p. 8, titres des §3 et §4) montrent que Bellman présente le résultat comme celui de S. Johnson."
+      "reason": "review.notes[6] atteste que la page 11 du rapport de Bellman porte la decomposition I_n + somme des b_i ; l'attribution reste celle de l'expose du rapport, signe Bellman."
     },
     {
       "claim_id": "C006",
       "verdict": "SUPPORTED",
-      "reason": "L'identité relevée page 11, temps total = I_n + somme des b_i, partage exhaustivement la durée du second poste entre travail et inactivité, cette dernière étant nommée « attente du poste aval » par le summary."
+      "reason": "quotation.reference, sources[0].label et la couverture lue (P-651, Revised 23 May 1955) donnent exactement rapport RAND revise en mai 1955."
     },
     {
       "claim_id": "C007",
       "verdict": "SUPPORTED",
-      "reason": "Reprise directe de « the total time required for the process is I_n + somme des b_i » relevé page 11."
+      "reason": "attribution_note et notes[1] etablissent que Bellman credite lui-meme le resultat a S. Johnson (paragraphes 3 et 4, renvoi a son article)."
     },
     {
       "claim_id": "C008",
       "verdict": "SUPPORTED",
-      "reason": "La note de relecture qualifie explicitement la somme des b_i d'invariante par permutation."
+      "reason": "L'identite total = I_n + somme des b_i, avec x_i defini comme temps d'inactivite avant traitement, partage bien le temps du second poste entre travail et attente, sans troisieme terme dans le modele des supports."
     },
     {
       "claim_id": "C009",
       "verdict": "SUPPORTED",
-      "reason": "Le summary et la note de relecture disent que l'ordonnancement ne joue que sur l'attente."
+      "reason": "Reformulation exacte de total = somme des attentes + somme des durees de travail du second poste, portee par review.notes[6] et le resume."
     },
     {
       "claim_id": "C010",
       "verdict": "SUPPORTED",
-      "reason": "La note de relecture situe cette prose page 11 (feuillet n14), dans le locator p. 11-15 déclaré full-text."
+      "reason": "L'invariance par permutation de la somme des b_i est explicitement portee par review.notes[6] et le resume."
     },
     {
       "claim_id": "C011",
       "verdict": "SUPPORTED",
-      "reason": "La citation anglaise affichée est exactement celle relevée sur l'image de la page 11 par la note de relecture, avec la même définition de x_i."
+      "reason": "'L'ordonnancement n'agit que sur cette attente' (resume) autorise exactement cette formulation."
     },
     {
       "claim_id": "C012",
       "verdict": "SUPPORTED",
-      "reason": "La note de relecture cite « The total idle time on the second machine is the sum I_n = somme des x_i »."
+      "reason": "review.notes[6] localise la decomposition sur la page 11 (feuillet n14), lue sur image ; sources[0].locator couvre p. 11-15."
     },
     {
       "claim_id": "C013",
       "verdict": "SUPPORTED",
-      "reason": "Reprise de l'énoncé relevé page 11 sur le temps total égal à I_n plus les durées de travail du second poste."
+      "reason": "Citation verbatim identique a la phrase de la page 11 relevee sur image dans review.notes[6]."
     },
     {
       "claim_id": "C014",
       "verdict": "SUPPORTED",
-      "reason": "Les deux membres de phrase correspondent mot pour mot au passage de la page 11 relevé par la note de relecture, y compris « which we wish to minimize »."
+      "reason": "review.notes[6] cite 'The total idle time on the second machine is the sum I_n = somme des x_i'."
     },
     {
       "claim_id": "C015",
       "verdict": "SUPPORTED",
-      "reason": "Conséquence immédiate de l'énoncé relevé selon lequel I_n est la mesure d'efficacité d'un ordonnancement ; aucune portée nouvelle ajoutée."
+      "reason": "review.notes[6] cite 'the total time required for the process is I_n + somme des b_i' ; la paraphrase n'ajoute rien."
     },
     {
       "claim_id": "C016",
       "verdict": "SUPPORTED",
-      "reason": "Le locator de citation donne p. 15 et la note de relecture lit la phrase « sous le tableau de l'exemple » sur le feuillet correspondant à la page 15."
+      "reason": "Citation verbatim de la page 11 et de la suite 'it is this quantity which we wish to minimize', toutes deux dans review.notes[6]."
     },
     {
       "claim_id": "C017",
       "verdict": "SUPPORTED",
-      "reason": "La note d'arithmétique donne exactement les couples (a_i, b_i) = (4,5), (4,1), (30,4), (6,30), (2,3), le b_i étant le temps de reliure du second poste."
+      "reason": "Consequence directe de 'we may take I_n as our measure of the efficiency of a scheduling of operations' et de l'action de l'ordonnancement limitee a l'attente."
     },
     {
       "claim_id": "C018",
       "verdict": "SUPPORTED",
-      "reason": "La note primaire établit que la somme des temps de reliure vaut 43, à partir des b_i listés par la note d'arithmétique."
+      "reason": "quotation.locator p. 15 et review.notes[2], qui verifie le decalage feuillet/page et lit l'exemple chiffre sous le tableau du feuillet n18 = p. 15."
     },
     {
       "claim_id": "C019",
       "verdict": "SUPPORTED",
-      "reason": "Combinaison du total 43 et de l'invariance par permutation de la somme des b_i, tous deux portés par les supports."
+      "reason": "notes[11] donne exactement (a_i, b_i) = (4,5), (4,1), (30,4), (6,30), (2,3) pour cinq articles, premiere puis seconde machine."
     },
     {
       "claim_id": "C020",
       "verdict": "SUPPORTED",
-      "reason": "La citation dit « The rule yields (5, 1, 4, 3, 2) as the minimal order » ; la note primaire confirme la lecture sur image."
+      "reason": "notes[7] atteste que la somme des temps du second poste vaut 43 ; l'addition enoncee reprend les b_i de notes[11]."
     },
     {
       "claim_id": "C021",
       "verdict": "SUPPORTED",
-      "reason": "Citation identique au champ original_text, vérifiée mot pour mot sur l'image de la page 15 par la note de relecture."
+      "reason": "Combinaison de la valeur 43 (notes[7], notes[11]) et de l'invariance par permutation de la somme des b_i (review.notes[6], resume)."
     },
     {
       "claim_id": "C022",
       "verdict": "SUPPORTED",
-      "reason": "La note primaire pose explicitement 43 plus 4 unités d'attente égalent 47."
+      "reason": "quotation.original_text lue sur piece : 'The rule yields (5, 1, 4, 3, 2) as the minimal order'."
     },
     {
       "claim_id": "C023",
       "verdict": "SUPPORTED",
-      "reason": "Déduction stricte des supports : total 78 attesté, charge invariante de 43 attestée, donc 35 unités d'attente par l'identité de la page 11."
+      "reason": "Citation verbatim identique au champ original_text, dont review.quotation confirme le statut verbatim et review.notes[2] la presence mot pour mot p. 15."
     },
     {
       "claim_id": "C024",
       "verdict": "SUPPORTED",
-      "reason": "78 moins 47 vaut 31, et la charge de 43 étant invariante, l'écart ne peut loger que dans l'attente ; « minimal order » et « the longest time » sont dans la citation."
+      "reason": "notes[7] pose explicitement 43 de travail plus 4 d'attente egale 47 ; notes[11] confirme les 4 unites d'inactivite."
     },
     {
       "claim_id": "C025",
       "verdict": "SUPPORTED",
-      "reason": "Suit de l'identité temps total = charge invariante + attente : seule l'attente observée est mobilisable, et l'énoncé reste modalisé par « on peut »."
+      "reason": "78 est lu sur piece pour l'ordre renverse, 43 est la charge invariante du second poste ; l'ecart 35 suit de l'identite total = travail + attente portee par review.notes[6]."
     },
     {
       "claim_id": "C026",
       "verdict": "SUPPORTED",
-      "reason": "Plafond de gain déduit de l'invariance de la charge du second poste ; le texte pose une borne, pas un gain atteignable."
+      "reason": "78 moins 47 egale 31 a partir de valeurs attestees, et la constance de la charge du second poste impose que cet ecart soit entierement de l'attente."
     },
     {
       "claim_id": "C027",
       "verdict": "SUPPORTED",
-      "reason": "Si l'attente est nulle, le total égale la charge invariante, qui est le minimum possible selon l'identité relevée page 11."
+      "reason": "Suit de l'identite total = travail invariant + attente : l'attente observee du poste aval borne ce que l'ordonnancement peut rendre. Formule comme une mesure de ce qu'il y a a esperer, sans promettre le gain."
     },
     {
       "claim_id": "C028",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support résolu. Loi générale affirmée sans preuve ; l'exemple à 4 unités d'attente n'établit pas un « jamais »."
+      "verdict": "SUPPORTED",
+      "reason": "Plafond de gain autorise par 'L'ordonnancement n'agit que sur cette attente' ; le texte ne promet pas d'atteindre ce plafond, ce que la suite dement d'ailleurs explicitement."
     },
     {
       "claim_id": "C029",
-      "verdict": "UNSUPPORTED",
-      "reason": "Le support ne donne que la définition de x_i et l'identité I_n + somme des b_i. Il n'énonce ni la contrainte de précédence entre les deux postes, ni que l'attente initiale vaut au moins la première opération amont."
+      "verdict": "SUPPORTED",
+      "reason": "Si l'attente est nulle, le total se reduit a la charge invariante du second poste, minimum atteignable selon les supports ; aucun gain d'ordonnancement ne reste possible."
     },
     {
       "claim_id": "C030",
       "verdict": "SUPPORTED",
-      "reason": "La citation et la note d'arithmétique donnent 4 unités d'inactivité sur la seconde machine pour l'ordre minimal (5, 1, 4, 3, 2)."
+      "reason": "L'ordre minimal de l'exemple conserve 4 unites d'inactivite selon quotation.original_text et notes[11] : la reduction ne va pas a zero."
     },
     {
       "claim_id": "C031",
-      "verdict": "UNSUPPORTED",
-      "reason": "La note d'arithmétique ne certifie que la fin à 47 et les 4 unités d'inactivité totales. Aucun support ne donne la décomposition attente par attente ni la valeur de deux unités avant le premier article."
+      "verdict": "SUPPORTED",
+      "reason": "'minimal order with a total time of 47 units, and 4 units of idle time' lu sur piece, confirme par le recalcul de notes[11] et par notes[7]."
     },
     {
       "claim_id": "C032",
-      "verdict": "UNSUPPORTED",
-      "reason": "Les attentes d'une unité avant les deuxième et troisième articles, et leur cause, ne figurent dans aucun support : seuls les totaux 47, 4 et 78 sont vérifiés."
+      "verdict": "SUPPORTED",
+      "reason": "Cadre a deux postes porte par le hook, le resume (poste amont / poste aval) et review.notes[6], qui borne la portee au cas a deux machines avec une duree b_i par article sur le second poste."
     },
     {
       "claim_id": "C033",
-      "verdict": "UNSUPPORTED",
-      "reason": "Ni l'absence d'attente devant les deux derniers articles, ni le fonctionnement sans interruption du poste amont ne sont portés par le support d'arithmétique, qui s'arrête aux totaux."
+      "verdict": "SUPPORTED",
+      "reason": "review.notes[6] dit expressement que le cas a deux machines est celui de la partie I du rapport ; sources[0].locator p. 11-15 s'y rapporte."
     },
     {
       "claim_id": "C034",
       "verdict": "SUPPORTED",
-      "reason": "L'accroche et la note de relecture bornent explicitement au cas à deux machines, celui de la partie I, avec seconde machine traitant le i-ème article : la description du montage amont/aval reste dans ce périmètre déclaré."
+      "reason": "Enonce conditionnel : l'invariance de la somme des b_i, telle que posee par review.notes[6], repose sur des durees attachees a chaque article ; sa levee touche bien le premier terme. Rien n'est presente comme affirmation du rapport, et le titre de Johnson mentionne les temps de reglage."
     },
     {
       "claim_id": "C035",
       "verdict": "SUPPORTED",
-      "reason": "La note de relecture dit que le cas à deux machines est celui de la partie I du rapport."
+      "reason": "Claim strictement metadonnee : le titre porte en sources[1].label dit 'two- and three-stage production schedules with setup times included', et review.notes[5] atteste le renvoi de Bellman a cet article. Aucun contenu intellectuel n'est tire de cette source metadata-only."
     },
     {
       "claim_id": "C036",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support n'énonce que l'attente du second poste dépendrait d'un seul fournisseur, ni surtout que le plan de charge amont suffirait à tout comptabiliser : mécanisme explicatif ajouté au-delà de la preuve."
+      "verdict": "SUPPORTED",
+      "reason": "attribution_note, la couverture lue (review.notes[1]) et authors[0] donnent un auteur unique, Richard Bellman."
     },
     {
       "claim_id": "C037",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support résolu. L'énoncé sur le retour en arrière et le troisième poste affirme une limite de validité qu'aucune preuve du dossier n'établit."
+      "verdict": "SUPPORTED",
+      "reason": "attribution_note et notes[1] : le resultat sur deux postes est credite a S. Johnson par Bellman lui-meme."
     },
     {
       "claim_id": "C038",
       "verdict": "SUPPORTED",
-      "reason": "Conditionnel dont la conclusion suit de la justification même de l'invariance fournie par le support : la charge n'est invariante que parce qu'elle est une somme de b_i fixes par article."
+      "reason": "Citation verbatim de la p. 8 relevee dans notes[1], avec attribution correcte a Bellman ecrivant dans son rapport."
     },
     {
       "claim_id": "C039",
       "verdict": "SUPPORTED",
-      "reason": "Claim strictement métadonnée : le titre de Johnson 1954 figure dans le label de source et est confirmé par le relevé Crossref ; la note de relecture confirme que c'est bien l'entrée [5] visée par Bellman."
+      "reason": "Titres de paragraphes lus sur image dans review.notes[5] (paragraphe 3 'Lemmas of S. Johnson', paragraphe 4 'The Result of S. Johnson'), confirmes par attribution_note."
     },
     {
       "claim_id": "C040",
       "verdict": "SUPPORTED",
-      "reason": "Note d'attribution, relevé de couverture (« by Richard Bellman », auteur unique) et champ auteur concordent."
+      "reason": "notes[1] : 'La decomposition en temps d'inactivite appartient au paragraphe 3, intitule Lemmas of S. Johnson'."
     },
     {
       "claim_id": "C041",
       "verdict": "SUPPORTED",
-      "reason": "La note d'attribution et la note primaire établissent que Bellman présente le résultat sur deux postes comme celui de S. Johnson, crédit confirmé sur pièce."
+      "reason": "Citation verbatim identique a la phrase du feuillet n16 (p. 13) lue sur image dans review.notes[5], egalement citee en abrege par notes[1]."
     },
     {
       "claim_id": "C042",
       "verdict": "SUPPORTED",
-      "reason": "La citation affichée est mot pour mot celle relevée page 8 par la note primaire."
+      "reason": "review.notes[5] identifie l'entree [5] comme l'article de Johnson de mars 1954 ; sources[1] donne p. 61-68, soit huit pages, donnee purement bibliographique."
     },
     {
       "claim_id": "C043",
       "verdict": "SUPPORTED",
-      "reason": "La note de relecture lit sur images « §3. Lemmas of S. Johnson » et « §4. The Result of S. Johnson »."
+      "reason": "attribution_note limite l'apport de Bellman a l'expose, l'exemple et une rederivation ; review.notes[5] situe cette rederivation au paragraphe 6, par equation fonctionnelle et programmation dynamique. La formulation reste en deca du support."
     },
     {
       "claim_id": "C044",
       "verdict": "SUPPORTED",
-      "reason": "La note primaire dit que la décomposition en temps d'inactivité appartient au paragraphe 3 intitulé « Lemmas of S. Johnson »."
+      "reason": "review.notes[7] constate le rapport P-651 atteint en entier via Internet Archive et le texte integral de Johnson 1954 reste inaccessible : l'effort d'acces differe bien."
     },
     {
       "claim_id": "C045",
       "verdict": "SUPPORTED",
-      "reason": "La note de relecture donne cette phrase complète, lue sur le feuillet correspondant à la page 13, y compris « We shall give another derivation below. »"
+      "reason": "sources[0].label (70 p., revise le 23 mai 1955), notes[5] ('rapport technique de la RAND Corporation, non un article publie') et notes[0] pour la date."
     },
     {
       "claim_id": "C046",
       "verdict": "SUPPORTED",
-      "reason": "La note de relecture identifie l'entrée [5] comme l'article de Johnson de mars 1954 ; la pagination p. 61-68, établie en métadonnées et confirmée par Crossref, donne huit pages. Le claim ne porte que sur des métadonnées."
+      "reason": "notes[8] constate l'acces public de l'item DTIC_AD0604647 ; review.notes[0] et notes[9] attestent la lecture des images de feuillets, dont n18 correspondant a la page 15."
     },
     {
       "claim_id": "C047",
-      "verdict": "SOURCE_NOT_CONSULTED",
-      "reason": "La note de relecture déclare NON ATTEINT précisément la part selon laquelle l'exemple chiffré serait propre à Bellman et absent de l'article de Johnson : texte intégral de Johnson 1954 inaccessible. Le texte lecteur présente pourtant cette attribution comme acquise."
+      "verdict": "SUPPORTED",
+      "reason": "notes[3] releve mot pour mot l'inversion 'Naval Logistics Research Quarterly' dans le rapport et la forme juste portee en source."
     },
     {
       "claim_id": "C048",
       "verdict": "SUPPORTED",
-      "reason": "La note de relecture situe la redérivation au §6, « using the functional equation approach of the theory of dynamic programming », ce que la page 8 annonce déjà."
+      "reason": "notes[2] atteste que Bellman n'ecrit que l'initiale, et sources[1].label / review.notes[4] donnent 'S. M. Johnson' par la notice Crossref."
     },
     {
       "claim_id": "C049",
       "verdict": "SUPPORTED",
-      "reason": "Le label de source et la note de relecture (dernier feuillet « -70- ») donnent 70 p. ; couverture et note de datation donnent la révision du 23 mai 1955."
-    },
-    {
-      "claim_id": "C050",
-      "verdict": "SUPPORTED",
-      "reason": "La note du dossier affirme directement que P-651 est un rapport technique de la RAND Corporation et non un article publié."
-    },
-    {
-      "claim_id": "C051",
-      "verdict": "SUPPORTED",
-      "reason": "La note constate un accès public sans restriction d'emprunt et la relecture de l'image du feuillet portant le tableau de la page 15 ; le texte n'affirme aucune licence d'ayant droit."
-    },
-    {
-      "claim_id": "C052",
-      "verdict": "SUPPORTED",
-      "reason": "La note relève la forme inversée « Naval Logistics Research Quarterly » p. 65 et la forme juste établie par le DOI."
-    },
-    {
-      "claim_id": "C053",
-      "verdict": "SUPPORTED",
-      "reason": "La note dit que Bellman n'écrit que l'initiale et que l'enregistrement Crossref donne « S. M. Johnson »."
-    },
-    {
-      "claim_id": "C054",
-      "verdict": "SUPPORTED",
-      "reason": "Le renvoi de la page 13 est cité intégralement par la note de relecture, et le texte lecteur conserve l'intermédiaire par « à en croire le renvoi » ; la pagination 61-68 donne bien huit pages."
-    },
-    {
-      "claim_id": "C055",
-      "verdict": "SUPPORTED",
-      "reason": "Les notes disent que l'article de Johnson n'a pas été ouvert et est resté inaccessible, et le renvoi de la page 13 y place la démonstration : l'invitation ne dépasse pas les supports."
+      "reason": "Enonce explicitement rapporte ('a en croire le renvoi de la page 13') : le renvoi est verbatim dans review.notes[5], et l'intermediaire est conserve, ce que confirme l'echec d'acces documente en review.notes[7]."
     }
   ]
 }
