@@ -117,3 +117,73 @@ suppression ; les seuls mots nouveaux sont ceux qui reformulent un énoncé corr
 Le fichier a changé : le SHA `3dc7f8bc…` ne vaut plus, et le fact-check antérieur est invalidé
 de plein droit. L’orchestrateur doit reprendre à `PREPARE`. Aucun verdict n’est rendu ici : ni
 `ACCEPT`, ni `FACTCHECK_PASS`.
+
+---
+
+# Boucle 2 sur 2 (dernière autorisée)
+
+concept : predominance-du-conflit-sur-la-negociation
+mode    : FACTCHECK_FIX (boucle 2 sur 2)
+date    : 2026-09-17
+gate lu : factcheck-gate.json, verdict FACTCHECK_FAIL, 64 claims, 63 SUPPORTED, 1 TOO_STRONG
+          (`C044`), aucune erreur structurelle. SHA contrôlé :
+          be5a09f60a39d3156449a18c7f0d8c93c081162b8cf25a5d17614358bac14651
+
+Une seule phrase touchée. Les 63 claims soutenus sont laissés strictement intacts : aucun
+paragraphe autre que `sections[2].paragraphs[2]` n’a été rouvert, et dans ce paragraphe les
+claims `C041` à `C043`, tous SUPPORTED, gardent leurs offsets d’origine puisque la coupe est
+en fin de paragraphe.
+
+## Opération retenue
+
+### C044 — TOO_STRONG — sections[2].paragraphs[2] — REMOVE de la qualification
+
+Avant : « Les durées mises côte à côte sont donc de même nature, celles d’une seule année, dans
+le secteur privé. »
+
+Après : « Les durées mises côte à côte sont donc de même nature, celles d’une seule année. »
+
+Ce que fait la correction : la seule délimitation non attestée est retirée, et rien n’est mis à
+sa place. Le gate ne conteste ni « de même nature », qui reprend les exclusions énumérées deux
+phrases plus haut (`notes[2]`), ni « celles d’une seule année », que `attribution_note` établit
+(fiches des Inspecteurs du Travail pour l’année 1976). Il ne conteste que « dans le secteur
+privé », qu’aucun support ne porte : `notes[2]` n’établit que l’exclusion de l’agriculture et
+des administrations publiques, et retirer les administrations publiques d’un champ ne le réduit
+pas au privé.
+
+Pourquoi `REMOVE` plutôt que `NARROW` : la version resserrée la plus fidèle aurait été « dans un
+champ amputé de l’agriculture et des administrations publiques », c’est-à-dire la répétition
+littérale de la deuxième phrase du même paragraphe. Elle aurait été exacte et sans delta. La
+phrase close donc sur les deux qualifications déjà soutenues, et l’exclusion de champ reste dite
+une fois, à l’endroit où elle est dite.
+
+## Frontière interne
+
+`limits` est inchangé, aux quatre paragraphes près de la boucle 1. Aucune frontière nouvelle
+n’a été découverte par cette correction : la réserve de champ est déjà couverte, et le point
+fautif n’était pas une lacune du dossier mais une extension du texte au-delà de ce que le
+dossier dit. Aucun contenu de `limits` n’a été remonté vers le texte lecteur.
+
+## Compteurs
+
+| | avant (boucle 2) | après |
+|---|---|---|
+| texte lecteur (`lead` + `sections`) | 1 444 mots | 1 440 mots |
+| `limits` | 293 mots | 293 mots |
+| total compté par le contrôle | 1 737 mots | 1 733 mots |
+| paragraphes lecteur | 16 | 16 |
+
+Coupe nette : 4 mots. Aucun mot ajouté, aucune phrase déplacée, aucune section rouverte.
+
+## Contrôle mécanique
+
+`npm run corpus:deepen -- --check --only=predominance-du-conflit-sur-la-negociation`
+→ « 1 approfondissement(s) contrôlé(s), 1733 mots. Rien projeté. » Aucun avertissement.
+
+## Suite
+
+Le fichier a changé : le SHA `be5a09f6…` ne vaut plus et le fact-check de la boucle 1 est
+invalidé de plein droit. Nouveau SHA du fichier :
+`0424bdeb6da0ad559c887ec218cb6f555e9422ff6ea7b4bfec290064e6318edb`. L’orchestrateur doit
+reprendre à `PREPARE`. Aucun verdict n’est rendu ici : ni `ACCEPT`, ni `FACTCHECK_PASS`. Aucune
+boucle de correction factuelle ne reste disponible après celle-ci.
