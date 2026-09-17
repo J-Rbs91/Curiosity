@@ -82,3 +82,58 @@ La baisse de 236 mots est intégralement due aux coupes ci-dessus ; aucune n'a �
 
 Aucune auto-validation : ni `ACCEPT`, ni `FACTCHECK_PASS`. Le texte doit repasser par `PREPARE`,
 le mapping et le verifier.
+
+---
+
+# Correction factuelle, boucle 2/2
+
+Mode : FACTCHECK_FIX (gate `FACTCHECK_FAIL`, 47 claims, 44 SUPPORTED, 3 TOO_STRONG, aucune
+erreur structurelle). Version corrigée du SHA
+`ff3e6d492eaa604b52754eed847843761e3f95f43c51aa9384192d3efc0c844a` : ce SHA est désormais
+invalide, le cycle doit repartir à `PREPARE`.
+
+Dernière boucle autorisée. La correction est donc strictement bornée aux trois claims en échec :
+aucun autre mot du texte lecteur n'a été touché, aucune phrase n'a été ajoutée pour compenser une
+coupe, `limits` est inchangé, et la charpente (lead + 5 sections, 2-3 paragraphes) est intacte.
+
+## Opération, claim par claim
+
+| Claim | Locator | Opération | Ce qui a été fait |
+|---|---|---|---|
+| C012 | `sections[0].paragraphs[1]` | REMOVE | Phrase finale supprimée en entier : « C’est cet usage qui explique la forme de la liste : cinq entrées seulement, chacune définie d’assez près pour qu’on puisse la coter. » Elle portait deux choses non attestées, une causalité de conception prêtée au rapport et une propriété de cotation des définitions. Le resserrement fidèle n'aurait laissé que « la liste compte cinq entrées », que le lead et le premier paragraphe de la section disent déjà : coupe nette plutôt que répétition. |
+| C019 | `sections[1].paragraphs[1]` | NARROW | « Les deux autres états, la phrase les annonce sans les nommer : il faudra ouvrir le rapport pour savoir lesquels, et ce qui les alimente. » devient « Quant aux deux autres états, la phrase citée plus haut les compte sans les nommer. » Le renvoi au rapport présentait comme acquis que celui-ci nomme les deux autres états et ce qui les alimente, ce qu'aucun support n'établit et que `limits[0]` interdit expressément. Ne subsiste que ce que portent les deux supports (`quotation.text`, `quotation.original_text`) : la phrase donne le nombre, pas les noms. |
+| C032 | `sections[3].paragraphs[1]` | NARROW | « Une note de bas de page, vers la fin du rapport, donne le détail des deux listes antérieures. » devient « La note 1, page 39, donne le détail des deux listes antérieures. » La localisation « vers la fin » supposait une pagination totale qu'aucun support n'établit, et « note de bas de page » qualifiait la note au-delà de `notes[2]`. La nouvelle formulation reprend exactement la localisation de `notes[2]` : « la note 1, p. 39 ». |
+
+Aucun `SUP-...` n'a été inventé ni modifié ; aucun artefact de fact-check n'a été retouché à la
+main.
+
+## Delta d'apprentissage des paragraphes touchés
+
+- `sections[0].paragraphs[1]` : inchangé dans son delta (la liste existe pour être mesurée, le
+  titre du rapport le dit, et la mesure sert à comparer un poste avant et après). La phrase
+  supprimée n'ajoutait pas de palier, elle commentait le précédent.
+- `sections[1].paragraphs[1]` : delta inchangé (un des trois états est nommé, et trois des cinq
+  dimensions y poussent ensemble) ; la phrase finale garde son rôle, dire que la phrase de cadrage
+  compte trois états sans les nommer, sans plus promettre au lecteur ce qu'il trouverait ailleurs.
+- `sections[3].paragraphs[1]` : delta inchangé (les deux listes antérieures, nommées terme à
+  terme) ; seule leur localisation devient exacte.
+
+## Volumes
+
+| | avant (boucle 1) | après (boucle 2) |
+|---|---|---|
+| texte lecteur (lead + sections) | 1 215 mots | 1 178 mots |
+| lead | 156 mots | 156 mots (intact) |
+| `limits` | 236 mots | 236 mots (intact) |
+| total compté par le contrôle | 1 509 mots | 1 470 mots |
+
+Les 39 mots perdus sont ceux des trois opérations ci-dessus ; aucune n'a été compensée. Le total
+reste dans la fourchette 1 300-1 700 du protocole.
+
+## Contrôle mécanique
+
+`npm run corpus:deepen -- --check --only=cinq-dimensions-de-l-emploi`
+→ « 1 approfondissement(s) contrôlé(s), 1470 mots. Rien projeté. » : PASS.
+
+Aucune auto-validation : ni `ACCEPT`, ni `FACTCHECK_PASS`. Le texte doit repasser par `PREPARE`,
+le mapping et le verifier.
