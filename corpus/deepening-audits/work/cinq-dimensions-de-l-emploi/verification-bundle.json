@@ -1,8 +1,8 @@
 {
   "protocol_version": 1,
   "concept_id": "cinq-dimensions-de-l-emploi",
-  "candidate_sha256": "ff3e6d492eaa604b52754eed847843761e3f95f43c51aa9384192d3efc0c844a",
-  "map_sha256": "56d12eea19f01907968cb058212f61bedb759220b7bbe3d7ec75dd247ded7962",
+  "candidate_sha256": "b6080da250d17a9b40eec07012f8b6586447f53b467776195775cb933f8274aa",
+  "map_sha256": "5d673a4adaa0a1cbaa0ecc970115709abfa2f1dd0b4c813b374dd554ef9e80db",
   "claims": [
     {
       "claim_id": "C001",
@@ -36,6 +36,13 @@
           "path": "$.sources[0].label",
           "access": "full-text",
           "text": "J. Richard Hackman et Greg R. Oldham, The Job Diagnostic Survey: An Instrument for the Diagnosis of Jobs and the Evaluation of Job Redesign Projects, Technical Report No. 4, Yale University, mai 1974"
+        },
+        {
+          "id": "SUP-154202aa820424f9",
+          "origin": "validated",
+          "path": "$.quotation.reference",
+          "access": "n/a",
+          "text": "J. Richard Hackman et Greg R. Oldham, The Job Diagnostic Survey, Technical Report No. 4, Yale University, mai 1974, section « Conceptual Basis of the Instrument »."
         }
       ]
     },
@@ -77,7 +84,7 @@
     {
       "claim_id": "C003",
       "locator": "lead[1]",
-      "claim_text": "ces cinq caractéristiques, écrivent-ils, créent chez la personne qui occupe le poste trois états psychologiques.",
+      "claim_text": "ces cinq caractéristiques, écrivent-ils, créent chez la personne qui occupe le poste trois états psychologiques",
       "supports": [
         {
           "id": "SUP-b619e9e8d1f0d59b",
@@ -127,6 +134,13 @@
           "path": "$.notes[6]",
           "access": "n/a",
           "text": "CITATION, CHOIX ET RENONCEMENT. La phrase retenue est la phrase de cadrage de la p. 4, sans coupe, relue sur le feuillet image n7. Aucune définition n'a pu être citée : aucune phrase de moins de 150 caractères ne définit une des cinq dimensions en la nommant, la plus courte, celle de Task Identity, faisant 171 caractères et la plus longue, celle d'Autonomy, 200. La citation de rechange proposée par la lecture, « Experienced Meaningfulness of the Work is enhanced primarily by three of the Core Dimensions: Skill Variety, Task Identity, and Task Significance. » (146 caractères, même page), n'a pas été prise : elle ne nomme que trois des cinq dimensions."
+        },
+        {
+          "id": "SUP-d28e363f1c0538c5",
+          "origin": "validated",
+          "path": "$.summary",
+          "access": "n/a",
+          "text": "Trois états psychologiques critiques naissent de cinq dimensions de l'emploi : variété des compétences, identité et signification de la tâche, autonomie, feed-back."
         }
       ]
     },
@@ -150,6 +164,13 @@
           "text": "LE MOT « FEED-BACK » DU RÉSUMÉ. La cinquième dimension est nommée p. 5 « Feedback from the Job Itself » ; c'est la formule du motivating potential score, p. 4, qui l'abrège en « Feedback ». Le résumé abrège pour tenir sous le plafond d'affichage de 170 caractères, et il faut l'entendre au sens du texte : le retour d'information que donne le travail lui-même, non le retour donné par des tiers, lequel est exclu du noyau."
         },
         {
+          "id": "SUP-e08d9dc03a8a31ea",
+          "origin": "validated",
+          "path": "$.review.notes[7]",
+          "access": "n/a",
+          "text": "PROSE — rien qui excède les sources. Le hook (« Qu'y a-t-il dans un emploi qui donne envie de bien le faire ? ») reste dans ce que porte la Figure 1 du folio 3 (feuillet n6), qui relie les Core Job Dimensions aux Personal and Work Outcomes « High Internal Work Motivation » et « High Quality Work Performance » : question, pas thèse, et question que le rapport pose. Le summary décalque la phrase du folio 4 sans la durcir : « naissent de » rend « are created by the presence of » sans ajouter de preuve ni de portée ; les cinq dimensions énumérées (variété des compétences, identité et signification de la tâche, autonomie, feed-back) sont bien les cinq du texte — Skill Variety, Task Identity, Task Significance, Autonomy, Feedback — le regroupement « identité et signification de la tâche » condensant deux dimensions distinctes sans en perdre aucune, et suivant du reste le texte lui-même, qui rattache ces trois-là au même état psychologique. Aucun adjectif n'ajoute de force à ce que le rapport affirme ; le summary ne revendique ni validation empirique ni généralité, et la fiche ne s'étend pas au modérateur (growth need strength) qu'elle ne mentionne pas — ce qui est une réserve, pas une étroitesse : les cinq dimensions et les trois états sont bien le contenu annoncé par le titre de la fiche."
+        },
+        {
           "id": "SUP-cf9ad832152ec475",
           "origin": "validated",
           "path": "$.quotation.translation.translator",
@@ -161,7 +182,7 @@
     {
       "claim_id": "C006",
       "locator": "sections[0].paragraphs[0]",
-      "claim_text": "La dernière se laisse déjà reconnaître dans l’exemple du début : savoir le soir même si le travail tient, c’est le retour que donne le travail.",
+      "claim_text": "savoir le soir même si le travail tient, c’est le retour que donne le travail",
       "supports": [
         {
           "id": "SUP-4066e0b256f9411e",
@@ -178,6 +199,13 @@
       "claim_text": "le rapport donne ses définitions page 5",
       "supports": [
         {
+          "id": "SUP-ada711576952723d",
+          "origin": "validated",
+          "path": "$.notes[6]",
+          "access": "n/a",
+          "text": "CITATION, CHOIX ET RENONCEMENT. La phrase retenue est la phrase de cadrage de la p. 4, sans coupe, relue sur le feuillet image n7. Aucune définition n'a pu être citée : aucune phrase de moins de 150 caractères ne définit une des cinq dimensions en la nommant, la plus courte, celle de Task Identity, faisant 171 caractères et la plus longue, celle d'Autonomy, 200. La citation de rechange proposée par la lecture, « Experienced Meaningfulness of the Work is enhanced primarily by three of the Core Dimensions: Skill Variety, Task Identity, and Task Significance. » (146 caractères, même page), n'a pas été prise : elle ne nomme que trois des cinq dimensions."
+        },
+        {
           "id": "SUP-618caaed36d65ce3",
           "origin": "validated",
           "path": "$.notes[4]",
@@ -190,20 +218,13 @@
           "path": "$.notes[7]",
           "access": "n/a",
           "text": "CORRECTION OCR DÉJÀ FAITE PAR LA LECTURE, à ne pas défaire : l'OCR à plat donne « Core Dimensions 2 Skill Variety » là où l'image donne « Core Dimensions: Skill Variety », le deux-points ayant été lu comme un 2. De même, les incises du bloc de définitions p. 5 sont composées avec deux traits d'union dans l'original, non avec un cadratin."
-        },
-        {
-          "id": "SUP-ada711576952723d",
-          "origin": "validated",
-          "path": "$.notes[6]",
-          "access": "n/a",
-          "text": "CITATION, CHOIX ET RENONCEMENT. La phrase retenue est la phrase de cadrage de la p. 4, sans coupe, relue sur le feuillet image n7. Aucune définition n'a pu être citée : aucune phrase de moins de 150 caractères ne définit une des cinq dimensions en la nommant, la plus courte, celle de Task Identity, faisant 171 caractères et la plus longue, celle d'Autonomy, 200. La citation de rechange proposée par la lecture, « Experienced Meaningfulness of the Work is enhanced primarily by three of the Core Dimensions: Skill Variety, Task Identity, and Task Significance. » (146 caractères, même page), n'a pas été prise : elle ne nomme que trois des cinq dimensions."
         }
       ]
     },
     {
       "claim_id": "C008",
       "locator": "sections[0].paragraphs[0]",
-      "claim_text": "et ce sont des phrases entières, de la plus brève, celle de l’identité de la tâche, à la plus longue, celle de l’autonomie.",
+      "claim_text": "et ce sont des phrases entières, de la plus brève, celle de l’identité de la tâche, à la plus longue, celle de l’autonomie",
       "supports": [
         {
           "id": "SUP-ada711576952723d",
@@ -217,28 +238,28 @@
     {
       "claim_id": "C009",
       "locator": "sections[0].paragraphs[1]",
-      "claim_text": "Cette liste est faite pour être mesurée.",
+      "claim_text": "Le rapport est d’abord un questionnaire",
       "supports": [
-        {
-          "id": "SUP-46db82f6ac3e7439",
-          "origin": "validated",
-          "path": "$.sources[0].label",
-          "access": "full-text",
-          "text": "J. Richard Hackman et Greg R. Oldham, The Job Diagnostic Survey: An Instrument for the Diagnosis of Jobs and the Evaluation of Job Redesign Projects, Technical Report No. 4, Yale University, mai 1974"
-        },
         {
           "id": "SUP-a269172ea0335b83",
           "origin": "validated",
           "path": "$.notes[3]",
           "access": "n/a",
           "text": "PÉRIMÈTRE. Ce qui est instruit ici est la thèse, jamais le Job Diagnostic Survey comme questionnaire : ni ses huit sections, ni ses clés de cotation, ni ses appendices. Le motivating potential score, imprimé p. 4 dans le paragraphe même de ce concept, est signalé par la lecture primaire comme un point limite qu'elle n'a pas retenu comme concept ; il n'est pas réintroduit ici et n'a pas été fondu dans la carte."
+        },
+        {
+          "id": "SUP-46db82f6ac3e7439",
+          "origin": "validated",
+          "path": "$.sources[0].label",
+          "access": "full-text",
+          "text": "J. Richard Hackman et Greg R. Oldham, The Job Diagnostic Survey: An Instrument for the Diagnosis of Jobs and the Evaluation of Job Redesign Projects, Technical Report No. 4, Yale University, mai 1974"
         }
       ]
     },
     {
       "claim_id": "C010",
       "locator": "sections[0].paragraphs[1]",
-      "claim_text": "Le rapport est d’abord un questionnaire, et son titre dit à quoi il sert : « An Instrument for the Diagnosis of Jobs and the Evaluation of Job Redesign Projects », un instrument pour diagnostiquer des postes et évaluer des projets de refonte.",
+      "claim_text": "son titre dit à quoi il sert : « An Instrument for the Diagnosis of Jobs and the Evaluation of Job Redesign Projects », un instrument pour diagnostiquer des postes et évaluer des projets de refonte",
       "supports": [
         {
           "id": "SUP-46db82f6ac3e7439",
@@ -253,13 +274,6 @@
           "path": "$.review.notes[4]",
           "access": "n/a",
           "text": "SOURCES — chaque élément affiché par le label est vrai de la pièce ouverte, élément par élément. Noms « J. Richard Hackman et Greg R. Oldham » : conformes à la page de titre (n3) ET au champ 5 AUTHOR(S) du DD Form 1473 (n1), « J. Richard Hackman and Greg R. Oldham ». Titre « The Job Diagnostic Survey: An Instrument for the Diagnosis of Jobs and the Evaluation of Job Redesign Projects » : conforme au mot près (le champ 3 REPORT TITLE du DD 1473 ajoute un point final, la page de titre n'en porte pas, la fiche non plus). Numéro « Technical Report No. 4 » : confirmé deux fois — page de titre, et champ 9a ORIGINATOR'S REPORT NUMBER(S) du DD 1473, « T. R. No. 4 ». Rattachement « Yale University » : confirmé — page de titre (« Department of Administrative Sciences / Yale University »), champ 1 ORIGINATING ACTIVITY (« Department of Administrative Sciences / Yale University / New Haven, Ct. 06520 ») et notice ERIC. Date « mai 1974 » : confirmée trois fois — page de titre « May, 1974 », champ 6 REPORT DATE « May, 1974 », champ 4 DESCRIPTIVE NOTES « Technical Report, May, 1974 ». URL : résout bien vers cette pièce et non vers une autre édition. Locator « p. 4 » : exact, cf. supra."
-        },
-        {
-          "id": "SUP-a269172ea0335b83",
-          "origin": "validated",
-          "path": "$.notes[3]",
-          "access": "n/a",
-          "text": "PÉRIMÈTRE. Ce qui est instruit ici est la thèse, jamais le Job Diagnostic Survey comme questionnaire : ni ses huit sections, ni ses clés de cotation, ni ses appendices. Le motivating potential score, imprimé p. 4 dans le paragraphe même de ce concept, est signalé par la lecture primaire comme un point limite qu'elle n'a pas retenu comme concept ; il n'est pas réintroduit ici et n'a pas été fondu dans la carte."
         }
       ]
     },
@@ -274,39 +288,18 @@
           "path": "$.sources[0].label",
           "access": "full-text",
           "text": "J. Richard Hackman et Greg R. Oldham, The Job Diagnostic Survey: An Instrument for the Diagnosis of Jobs and the Evaluation of Job Redesign Projects, Technical Report No. 4, Yale University, mai 1974"
+        },
+        {
+          "id": "SUP-a269172ea0335b83",
+          "origin": "validated",
+          "path": "$.notes[3]",
+          "access": "n/a",
+          "text": "PÉRIMÈTRE. Ce qui est instruit ici est la thèse, jamais le Job Diagnostic Survey comme questionnaire : ni ses huit sections, ni ses clés de cotation, ni ses appendices. Le motivating potential score, imprimé p. 4 dans le paragraphe même de ce concept, est signalé par la lecture primaire comme un point limite qu'elle n'a pas retenu comme concept ; il n'est pas réintroduit ici et n'a pas été fondu dans la carte."
         }
       ]
     },
     {
       "claim_id": "C012",
-      "locator": "sections[0].paragraphs[1]",
-      "claim_text": "C’est cet usage qui explique la forme de la liste : cinq entrées seulement, chacune définie d’assez près pour qu’on puisse la coter.",
-      "supports": [
-        {
-          "id": "SUP-46db82f6ac3e7439",
-          "origin": "validated",
-          "path": "$.sources[0].label",
-          "access": "full-text",
-          "text": "J. Richard Hackman et Greg R. Oldham, The Job Diagnostic Survey: An Instrument for the Diagnosis of Jobs and the Evaluation of Job Redesign Projects, Technical Report No. 4, Yale University, mai 1974"
-        },
-        {
-          "id": "SUP-618caaed36d65ce3",
-          "origin": "validated",
-          "path": "$.notes[4]",
-          "access": "n/a",
-          "text": "CINQ, ET NON SEPT. Deux autres dimensions sont mesurées par le rapport et explicitement exclues du noyau, p. 5 : « Feedback from Agents », dont les auteurs écrivent « This dimension is not, strictly speaking, a characteristic of the job itself », et « Dealing with Others ». Un passage ultérieur qui en ferait sept dimensions centrales corrigerait vers l'erreur."
-        },
-        {
-          "id": "SUP-ada711576952723d",
-          "origin": "validated",
-          "path": "$.notes[6]",
-          "access": "n/a",
-          "text": "CITATION, CHOIX ET RENONCEMENT. La phrase retenue est la phrase de cadrage de la p. 4, sans coupe, relue sur le feuillet image n7. Aucune définition n'a pu être citée : aucune phrase de moins de 150 caractères ne définit une des cinq dimensions en la nommant, la plus courte, celle de Task Identity, faisant 171 caractères et la plus longue, celle d'Autonomy, 200. La citation de rechange proposée par la lecture, « Experienced Meaningfulness of the Work is enhanced primarily by three of the Core Dimensions: Skill Variety, Task Identity, and Task Significance. » (146 caractères, même page), n'a pas été prise : elle ne nomme que trois des cinq dimensions."
-        }
-      ]
-    },
-    {
-      "claim_id": "C013",
       "locator": "sections[1].paragraphs[0]",
       "claim_text": "Cette relation, le rapport l’énonce en une phrase, à sa quatrième page : « La théorie pose que les trois états psychologiques critiques sont créés par la présence de cinq dimensions « centrales » de l’emploi. »",
       "supports": [
@@ -316,6 +309,13 @@
           "path": "$.quotation.text",
           "access": "n/a",
           "text": "La théorie pose que les trois états psychologiques critiques sont créés par la présence de cinq dimensions « centrales » de l'emploi."
+        },
+        {
+          "id": "SUP-63488c91bf5046e7",
+          "origin": "validated",
+          "path": "$.quotation.original_text",
+          "access": "n/a",
+          "text": "The theory proposes that the three Critical Psychological States are created by the presence of five \"core\" job dimensions."
         },
         {
           "id": "SUP-43cb5037f47995be",
@@ -339,16 +339,16 @@
           "text": "CITATION — verbatim, à l'endroit annoncé. Sur l'image n7.jpg (folio « 4 » visible en haut à droite), deuxième paragraphe, première phrase : « The theory proposes that the three Critical Psychological States are created by the presence of five \"core\" job dimensions. » Caractère pour caractère la phrase de la fiche, guillemets droits autour de core compris, sans coupe ni ajout — aucun […] n'était donc requis. Pas de traduction : original en anglais, langue déclarée « en », translation.kind « none » — conforme. La section annoncée est la bonne : le titre courant « Conceptual Basis of the Instrument » s'ouvre au bas du folio 2 (feuillet n5) et court jusqu'au titre suivant « Summary of Concepts Measured by the Job Diagnostic Survey », qui n'apparaît qu'en bas du folio 4, sous le passage cité. Contre-épreuve sur ERIC ED099580, p. 8 du PDF, folio imprimé « 4 » : phrase identique. Je n'ai à aucun moment cité d'après la couche OCR, dont j'ai confirmé la médiocrité (le djvu.txt rend « pr sence », « Eackman », « TIork Outcomes »)."
         },
         {
-          "id": "SUP-ea0314366340c75b",
+          "id": "SUP-cf9ad832152ec475",
           "origin": "validated",
-          "path": "$.sources[0].locator",
-          "access": "full-text",
-          "text": "p. 4"
+          "path": "$.quotation.translation.translator",
+          "access": "n/a",
+          "text": "Traduction interne non publiée (chaîne Curiosity, session du 29 août 2026). Aucune traduction française publiée du Technical Report No. 4 n'a été identifiée. « Job » est rendu par « emploi » et non par « poste » ni « travail » : c'est l'unité que le Job Diagnostic Survey mesure. Les guillemets d'insistance portés par « core » dans le texte sont conservés sur « centrales »."
         }
       ]
     },
     {
-      "claim_id": "C014",
+      "claim_id": "C013",
       "locator": "sections[1].paragraphs[0]",
       "claim_text": "Ce que ces cinq caractéristiques créent, à en croire cette phrase, ce sont des états : quelque chose que la personne qui occupe le poste éprouve.",
       "supports": [
@@ -369,7 +369,7 @@
       ]
     },
     {
-      "claim_id": "C015",
+      "claim_id": "C014",
       "locator": "sections[1].paragraphs[0]",
       "claim_text": "Les auteurs les disent critiques, et ils en comptent exactement trois.",
       "supports": [
@@ -397,7 +397,7 @@
       ]
     },
     {
-      "claim_id": "C016",
+      "claim_id": "C015",
       "locator": "sections[1].paragraphs[1]",
       "claim_text": "L’un de ces trois états est nommé sur la même page : « Experienced Meaningfulness of the Work », l’expérience que le travail a du sens.",
       "supports": [
@@ -407,18 +407,11 @@
           "path": "$.notes[6]",
           "access": "n/a",
           "text": "CITATION, CHOIX ET RENONCEMENT. La phrase retenue est la phrase de cadrage de la p. 4, sans coupe, relue sur le feuillet image n7. Aucune définition n'a pu être citée : aucune phrase de moins de 150 caractères ne définit une des cinq dimensions en la nommant, la plus courte, celle de Task Identity, faisant 171 caractères et la plus longue, celle d'Autonomy, 200. La citation de rechange proposée par la lecture, « Experienced Meaningfulness of the Work is enhanced primarily by three of the Core Dimensions: Skill Variety, Task Identity, and Task Significance. » (146 caractères, même page), n'a pas été prise : elle ne nomme que trois des cinq dimensions."
-        },
-        {
-          "id": "SUP-43cb5037f47995be",
-          "origin": "validated",
-          "path": "$.quotation.locator",
-          "access": "n/a",
-          "text": "p. 4"
         }
       ]
     },
     {
-      "claim_id": "C017",
+      "claim_id": "C016",
       "locator": "sections[1].paragraphs[1]",
       "claim_text": "Et il n’est pas alimenté indifféremment par les cinq caractéristiques : « Experienced Meaningfulness of the Work is enhanced primarily by three of the Core Dimensions: Skill Variety, Task Identity, and Task Significance. »",
       "supports": [
@@ -439,7 +432,7 @@
       ]
     },
     {
-      "claim_id": "C018",
+      "claim_id": "C017",
       "locator": "sections[1].paragraphs[1]",
       "claim_text": "Trois des cinq poussent donc dans le même sens, ce qui explique que la variété, l’identité et la signification de la tâche se tiennent ensemble plutôt que de compter chacune pour soi.",
       "supports": [
@@ -460,9 +453,9 @@
       ]
     },
     {
-      "claim_id": "C019",
+      "claim_id": "C018",
       "locator": "sections[1].paragraphs[1]",
-      "claim_text": "Les deux autres états, la phrase les annonce sans les nommer : il faudra ouvrir le rapport pour savoir lesquels, et ce qui les alimente.",
+      "claim_text": "Quant aux deux autres états, la phrase citée plus haut les compte sans les nommer.",
       "supports": [
         {
           "id": "SUP-b619e9e8d1f0d59b",
@@ -481,7 +474,7 @@
       ]
     },
     {
-      "claim_id": "C020",
+      "claim_id": "C019",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "Dans cette phrase, le mot rendu par « centrales » est mis entre guillemets par les auteurs eux-mêmes, qui écrivent « core ».",
       "supports": [
@@ -500,18 +493,18 @@
           "text": "Traduction interne non publiée (chaîne Curiosity, session du 29 août 2026). Aucune traduction française publiée du Technical Report No. 4 n'a été identifiée. « Job » est rendu par « emploi » et non par « poste » ni « travail » : c'est l'unité que le Job Diagnostic Survey mesure. Les guillemets d'insistance portés par « core » dans le texte sont conservés sur « centrales »."
         },
         {
-          "id": "SUP-b619e9e8d1f0d59b",
+          "id": "SUP-f695abe6794b1f61",
           "origin": "validated",
-          "path": "$.quotation.text",
+          "path": "$.review.notes[2]",
           "access": "n/a",
-          "text": "La théorie pose que les trois états psychologiques critiques sont créés par la présence de cinq dimensions « centrales » de l'emploi."
+          "text": "CITATION — verbatim, à l'endroit annoncé. Sur l'image n7.jpg (folio « 4 » visible en haut à droite), deuxième paragraphe, première phrase : « The theory proposes that the three Critical Psychological States are created by the presence of five \"core\" job dimensions. » Caractère pour caractère la phrase de la fiche, guillemets droits autour de core compris, sans coupe ni ajout — aucun […] n'était donc requis. Pas de traduction : original en anglais, langue déclarée « en », translation.kind « none » — conforme. La section annoncée est la bonne : le titre courant « Conceptual Basis of the Instrument » s'ouvre au bas du folio 2 (feuillet n5) et court jusqu'au titre suivant « Summary of Concepts Measured by the Job Diagnostic Survey », qui n'apparaît qu'en bas du folio 4, sous le passage cité. Contre-épreuve sur ERIC ED099580, p. 8 du PDF, folio imprimé « 4 » : phrase identique. Je n'ai à aucun moment cité d'après la couche OCR, dont j'ai confirmé la médiocrité (le djvu.txt rend « pr sence », « Eackman », « TIork Outcomes »)."
         }
       ]
     },
     {
-      "claim_id": "C021",
+      "claim_id": "C020",
       "locator": "sections[2].paragraphs[0]",
-      "claim_text": "Il désigne un noyau, c’est-à-dire le résultat d’un tri : le rapport mesure plus de choses qu’il n’en compte comme centrales.",
+      "claim_text": "le rapport mesure plus de choses qu’il n’en compte comme centrales",
       "supports": [
         {
           "id": "SUP-618caaed36d65ce3",
@@ -523,7 +516,7 @@
       ]
     },
     {
-      "claim_id": "C022",
+      "claim_id": "C021",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "Deux dimensions supplémentaires sont relevées à la page suivante et explicitement mises de côté.",
       "supports": [
@@ -537,9 +530,9 @@
       ]
     },
     {
-      "claim_id": "C023",
+      "claim_id": "C022",
       "locator": "sections[2].paragraphs[0]",
-      "claim_text": "La première est le retour d’information donné par des tiers plutôt que par le travail lui-même, nommée Feedback from Agents",
+      "claim_text": "La première est le retour d’information donné par des tiers plutôt que par le travail lui-même, nommée Feedback from Agents ; la seconde est nommée Dealing with Others.",
       "supports": [
         {
           "id": "SUP-618caaed36d65ce3",
@@ -558,23 +551,9 @@
       ]
     },
     {
-      "claim_id": "C024",
-      "locator": "sections[2].paragraphs[0]",
-      "claim_text": "la seconde est nommée Dealing with Others.",
-      "supports": [
-        {
-          "id": "SUP-618caaed36d65ce3",
-          "origin": "validated",
-          "path": "$.notes[4]",
-          "access": "n/a",
-          "text": "CINQ, ET NON SEPT. Deux autres dimensions sont mesurées par le rapport et explicitement exclues du noyau, p. 5 : « Feedback from Agents », dont les auteurs écrivent « This dimension is not, strictly speaking, a characteristic of the job itself », et « Dealing with Others ». Un passage ultérieur qui en ferait sept dimensions centrales corrigerait vers l'erreur."
-        }
-      ]
-    },
-    {
-      "claim_id": "C025",
+      "claim_id": "C023",
       "locator": "sections[2].paragraphs[1]",
-      "claim_text": "La raison de l’exclusion est donnée pour la première, et elle vaut critère : « This dimension is not, strictly speaking, a characteristic of the job itself »",
+      "claim_text": "La raison de l’exclusion est donnée pour la première, et elle vaut critère : « This dimension is not, strictly speaking, a characteristic of the job itself ».",
       "supports": [
         {
           "id": "SUP-618caaed36d65ce3",
@@ -586,7 +565,7 @@
       ]
     },
     {
-      "claim_id": "C026",
+      "claim_id": "C024",
       "locator": "sections[2].paragraphs[1]",
       "claim_text": "Ce n’est pas, à strictement parler, une caractéristique du poste lui-même.",
       "supports": [
@@ -607,9 +586,9 @@
       ]
     },
     {
-      "claim_id": "C027",
+      "claim_id": "C025",
       "locator": "sections[2].paragraphs[1]",
-      "claim_text": "ce qui entre dans le noyau doit tenir au travail, non à son entourage.",
+      "claim_text": "ce qui entre dans le noyau doit tenir au travail, non à son entourage",
       "supports": [
         {
           "id": "SUP-618caaed36d65ce3",
@@ -617,14 +596,7 @@
           "path": "$.notes[4]",
           "access": "n/a",
           "text": "CINQ, ET NON SEPT. Deux autres dimensions sont mesurées par le rapport et explicitement exclues du noyau, p. 5 : « Feedback from Agents », dont les auteurs écrivent « This dimension is not, strictly speaking, a characteristic of the job itself », et « Dealing with Others ». Un passage ultérieur qui en ferait sept dimensions centrales corrigerait vers l'erreur."
-        }
-      ]
-    },
-    {
-      "claim_id": "C028",
-      "locator": "sections[2].paragraphs[2]",
-      "claim_text": "Le retour qui figure parmi les cinq est celui que le travail donne de lui-même, dans le geste où on le fait",
-      "supports": [
+        },
         {
           "id": "SUP-4066e0b256f9411e",
           "origin": "validated",
@@ -635,7 +607,28 @@
       ]
     },
     {
-      "claim_id": "C029",
+      "claim_id": "C026",
+      "locator": "sections[2].paragraphs[2]",
+      "claim_text": "Le retour qui figure parmi les cinq est celui que le travail donne de lui-même, dans le geste où on le fait",
+      "supports": [
+        {
+          "id": "SUP-4066e0b256f9411e",
+          "origin": "validated",
+          "path": "$.notes[5]",
+          "access": "n/a",
+          "text": "LE MOT « FEED-BACK » DU RÉSUMÉ. La cinquième dimension est nommée p. 5 « Feedback from the Job Itself » ; c'est la formule du motivating potential score, p. 4, qui l'abrège en « Feedback ». Le résumé abrège pour tenir sous le plafond d'affichage de 170 caractères, et il faut l'entendre au sens du texte : le retour d'information que donne le travail lui-même, non le retour donné par des tiers, lequel est exclu du noyau."
+        },
+        {
+          "id": "SUP-618caaed36d65ce3",
+          "origin": "validated",
+          "path": "$.notes[4]",
+          "access": "n/a",
+          "text": "CINQ, ET NON SEPT. Deux autres dimensions sont mesurées par le rapport et explicitement exclues du noyau, p. 5 : « Feedback from Agents », dont les auteurs écrivent « This dimension is not, strictly speaking, a characteristic of the job itself », et « Dealing with Others ». Un passage ultérieur qui en ferait sept dimensions centrales corrigerait vers l'erreur."
+        }
+      ]
+    },
+    {
+      "claim_id": "C027",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "La théorie dont cette liste sort s’appuie sur des travaux antérieurs, et le rapport l’écrit lui-même dès sa deuxième page : « The theory which gave rise to the present instrument is based on earlier work by Turner & Lawrence (1965) and by Hackman & Lawler (1971). »",
       "supports": [
@@ -663,7 +656,7 @@
       ]
     },
     {
-      "claim_id": "C030",
+      "claim_id": "C028",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "L’un des deux antécédents est donc le travail antérieur de l’un des deux signataires",
       "supports": [
@@ -673,18 +666,11 @@
           "path": "$.notes[2]",
           "access": "n/a",
           "text": "ANTÉCÉDENTS, et rectification d'une erreur de la cartographie. Celle-ci annonçait « des travaux antérieurs convergents de Lawler sur six dimensions de l'emploi ». La note 1, p. 39, relue à l'image, dit autre chose et dit deux choses : Turner & Lawrence (1965) mesurent six « task attributes » (variety, required interaction, autonomy, optional interaction, knowledge and skill required, responsibility) ; Hackman & Lawler (1971) mesurent six « job dimensions » (variety, autonomy, task identity, feedback, friendship opportunities, dealing with others). Les listes diffèrent, et la seconde est le travail antérieur de Hackman lui-même, coauteur du présent rapport, non un antécédent extérieur. Le corps du texte le dit p. 2 : « The theory which gave rise to the present instrument is based on earlier work by Turner & Lawrence (1965) and by Hackman & Lawler (1971). »"
-        },
-        {
-          "id": "SUP-05bcca9c899e0b91",
-          "origin": "validated",
-          "path": "$.review.notes[3]",
-          "access": "n/a",
-          "text": "ATTRIBUTION — confirmée, et l'antériorité est correctement bornée. Page de titre (feuillet n3, folio iii) : « J. Richard Hackman / Yale University   and   Greg R. Oldham / University of Illinois », puis « Technical Report No. 4 / Department of Administrative Sciences / Yale University / May, 1974 ». Les deux signatures sont conjointes, sans ordre d'auteur secondaire ni mention d'un tiers. La formulation à cinq dimensions est bien des deux signataires : la fiche affiche des antécédents que le rapport énonce lui-même au folio 2 (feuillet n5) — « The theory which gave rise to the present instrument is based on earlier work by Turner & Lawrence (1965) and by Hackman & Lawler (1971) » — et j'ai vérifié que Hackman & Lawler 1971 (Journal of Applied Psychology, 55, 259-286) n'en portait que quatre (variety, autonomy, task identity, feedback) : la cinquième, Task Significance, et le regroupement en trois états psychologiques critiques apparaissent ici. L'attribution_note ne revendique donc pas une paternité qu'elle n'aurait pas : elle dit « rapport signé conjointement » et renvoie les antécédents à qui de droit."
         }
       ]
     },
     {
-      "claim_id": "C031",
+      "claim_id": "C029",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "Hackman, à Yale, prolonge ici, avec Oldham, rattaché à l’université de l’Illinois, quelque chose qu’il avait commencé avec un autre coauteur.",
       "supports": [
@@ -719,9 +705,9 @@
       ]
     },
     {
-      "claim_id": "C032",
+      "claim_id": "C030",
       "locator": "sections[3].paragraphs[1]",
-      "claim_text": "Une note de bas de page, vers la fin du rapport, donne le détail des deux listes antérieures.",
+      "claim_text": "La note 1, page 39, donne le détail des deux listes antérieures.",
       "supports": [
         {
           "id": "SUP-5604d2fd43d62ed6",
@@ -733,7 +719,7 @@
       ]
     },
     {
-      "claim_id": "C033",
+      "claim_id": "C031",
       "locator": "sections[3].paragraphs[1]",
       "claim_text": "Turner et Lawrence mesuraient six attributs de la tâche : variety, required interaction, autonomy, optional interaction, knowledge and skill required, responsibility.",
       "supports": [
@@ -747,7 +733,7 @@
       ]
     },
     {
-      "claim_id": "C034",
+      "claim_id": "C032",
       "locator": "sections[3].paragraphs[1]",
       "claim_text": "Hackman et Lawler en mesuraient six aussi, découpés autrement : variety, autonomy, task identity, feedback, friendship opportunities, dealing with others.",
       "supports": [
@@ -768,7 +754,7 @@
       ]
     },
     {
-      "claim_id": "C035",
+      "claim_id": "C033",
       "locator": "sections[3].paragraphs[1]",
       "claim_text": "Passer à cinq n’est donc pas un élagage arithmétique.",
       "supports": [
@@ -780,6 +766,13 @@
           "text": "ANTÉCÉDENTS, et rectification d'une erreur de la cartographie. Celle-ci annonçait « des travaux antérieurs convergents de Lawler sur six dimensions de l'emploi ». La note 1, p. 39, relue à l'image, dit autre chose et dit deux choses : Turner & Lawrence (1965) mesurent six « task attributes » (variety, required interaction, autonomy, optional interaction, knowledge and skill required, responsibility) ; Hackman & Lawler (1971) mesurent six « job dimensions » (variety, autonomy, task identity, feedback, friendship opportunities, dealing with others). Les listes diffèrent, et la seconde est le travail antérieur de Hackman lui-même, coauteur du présent rapport, non un antécédent extérieur. Le corps du texte le dit p. 2 : « The theory which gave rise to the present instrument is based on earlier work by Turner & Lawrence (1965) and by Hackman & Lawler (1971). »"
         },
         {
+          "id": "SUP-05bcca9c899e0b91",
+          "origin": "validated",
+          "path": "$.review.notes[3]",
+          "access": "n/a",
+          "text": "ATTRIBUTION — confirmée, et l'antériorité est correctement bornée. Page de titre (feuillet n3, folio iii) : « J. Richard Hackman / Yale University   and   Greg R. Oldham / University of Illinois », puis « Technical Report No. 4 / Department of Administrative Sciences / Yale University / May, 1974 ». Les deux signatures sont conjointes, sans ordre d'auteur secondaire ni mention d'un tiers. La formulation à cinq dimensions est bien des deux signataires : la fiche affiche des antécédents que le rapport énonce lui-même au folio 2 (feuillet n5) — « The theory which gave rise to the present instrument is based on earlier work by Turner & Lawrence (1965) and by Hackman & Lawler (1971) » — et j'ai vérifié que Hackman & Lawler 1971 (Journal of Applied Psychology, 55, 259-286) n'en portait que quatre (variety, autonomy, task identity, feedback) : la cinquième, Task Significance, et le regroupement en trois états psychologiques critiques apparaissent ici. L'attribution_note ne revendique donc pas une paternité qu'elle n'aurait pas : elle dit « rapport signé conjointement » et renvoie les antécédents à qui de droit."
+        },
+        {
           "id": "SUP-618caaed36d65ce3",
           "origin": "validated",
           "path": "$.notes[4]",
@@ -789,7 +782,7 @@
       ]
     },
     {
-      "claim_id": "C036",
+      "claim_id": "C034",
       "locator": "sections[3].paragraphs[2]",
       "claim_text": "Mis côte à côte, ces douze noms rendent le tri visible.",
       "supports": [
@@ -803,7 +796,7 @@
       ]
     },
     {
-      "claim_id": "C037",
+      "claim_id": "C035",
       "locator": "sections[3].paragraphs[2]",
       "claim_text": "Quatre d’entre eux portent sur les rapports avec d’autres personnes : required interaction et optional interaction chez Turner et Lawrence, friendship opportunities et dealing with others chez Hackman et Lawler.",
       "supports": [
@@ -817,7 +810,7 @@
       ]
     },
     {
-      "claim_id": "C038",
+      "claim_id": "C036",
       "locator": "sections[3].paragraphs[2]",
       "claim_text": "Aucun n’entre dans le noyau de 1974, Dealing with Others y étant encore mesurée mais rangée dehors.",
       "supports": [
@@ -829,6 +822,13 @@
           "text": "CINQ, ET NON SEPT. Deux autres dimensions sont mesurées par le rapport et explicitement exclues du noyau, p. 5 : « Feedback from Agents », dont les auteurs écrivent « This dimension is not, strictly speaking, a characteristic of the job itself », et « Dealing with Others ». Un passage ultérieur qui en ferait sept dimensions centrales corrigerait vers l'erreur."
         },
         {
+          "id": "SUP-d28e363f1c0538c5",
+          "origin": "validated",
+          "path": "$.summary",
+          "access": "n/a",
+          "text": "Trois états psychologiques critiques naissent de cinq dimensions de l'emploi : variété des compétences, identité et signification de la tâche, autonomie, feed-back."
+        },
+        {
           "id": "SUP-5604d2fd43d62ed6",
           "origin": "validated",
           "path": "$.notes[2]",
@@ -838,7 +838,7 @@
       ]
     },
     {
-      "claim_id": "C039",
+      "claim_id": "C037",
       "locator": "sections[3].paragraphs[2]",
       "claim_text": "À l’inverse, la signification de la tâche, Task Significance, qui ne figurait dans aucune des deux listes, y apparaît.",
       "supports": [
@@ -859,91 +859,49 @@
       ]
     },
     {
+      "claim_id": "C038",
+      "locator": "sections[3].paragraphs[2]",
+      "claim_text": "Le changement ne porte donc pas sur le nombre d’entrées : ce qui tenait à l’entourage d’un poste, et qui comptait pour un tiers des attributs mesurés jusque-là, se retrouve en 1974 hors du noyau.",
+      "supports": [
+        {
+          "id": "SUP-5604d2fd43d62ed6",
+          "origin": "validated",
+          "path": "$.notes[2]",
+          "access": "n/a",
+          "text": "ANTÉCÉDENTS, et rectification d'une erreur de la cartographie. Celle-ci annonçait « des travaux antérieurs convergents de Lawler sur six dimensions de l'emploi ». La note 1, p. 39, relue à l'image, dit autre chose et dit deux choses : Turner & Lawrence (1965) mesurent six « task attributes » (variety, required interaction, autonomy, optional interaction, knowledge and skill required, responsibility) ; Hackman & Lawler (1971) mesurent six « job dimensions » (variety, autonomy, task identity, feedback, friendship opportunities, dealing with others). Les listes diffèrent, et la seconde est le travail antérieur de Hackman lui-même, coauteur du présent rapport, non un antécédent extérieur. Le corps du texte le dit p. 2 : « The theory which gave rise to the present instrument is based on earlier work by Turner & Lawrence (1965) and by Hackman & Lawler (1971). »"
+        },
+        {
+          "id": "SUP-618caaed36d65ce3",
+          "origin": "validated",
+          "path": "$.notes[4]",
+          "access": "n/a",
+          "text": "CINQ, ET NON SEPT. Deux autres dimensions sont mesurées par le rapport et explicitement exclues du noyau, p. 5 : « Feedback from Agents », dont les auteurs écrivent « This dimension is not, strictly speaking, a characteristic of the job itself », et « Dealing with Others ». Un passage ultérieur qui en ferait sept dimensions centrales corrigerait vers l'erreur."
+        }
+      ]
+    },
+    {
+      "claim_id": "C039",
+      "locator": "sections[4].paragraphs[0]",
+      "claim_text": "La théorie que cet instrument applique est exposée ailleurs, et les auteurs le disent deux fois, à leur deuxième page et à leur quatrième : pour l’exposé détaillé de cette théorie et pour son test, ils renvoient à un autre de leurs rapports techniques, le numéro 6, de la même année.",
+      "supports": [
+        {
+          "id": "SUP-dcf9218752b68452",
+          "origin": "validated",
+          "path": "$.notes[8]",
+          "access": "n/a",
+          "text": "CE QUE LA PIÈCE NE PORTE PAS. Le rapport renvoie, pour l'exposé et le test de la théorie, à Hackman & Oldham, Technical Report No. 6, 1974, que la lecture primaire n'a pas ouvert. La Figure 1, p. 3, n'a pas été relue à l'image et rien n'est cité d'elle. Le rapport ne date les concepts que par sa propre signature, mai 1974 : aucune date d'antériorité ne doit être composée à partir de ce fichier."
+        },
+        {
+          "id": "SUP-257678c7beb2e19c",
+          "origin": "validated",
+          "path": "$.review.notes[8]",
+          "access": "n/a",
+          "text": "HORS MANDAT (ne fonde aucun REWORK). (a) Le rapport renvoie deux fois, aux folios 2 et 4, à « Hackman & Oldham (1974) » pour l'exposé détaillé de la théorie elle-même et du Motivating Potential Score — c'est-à-dire à un autre texte que celui-ci, celui qui paraîtra en 1976 dans Organizational Behavior and Human Performance. La fiche n'en dépend pas, sa citation étant bien dans le rapport qu'elle cite, mais un lecteur qui voudrait la théorie plutôt que l'instrument serait renvoyé ailleurs par les auteurs eux-mêmes. (b) Les deux entrées de `authors` ont `app_author_id` à null. Aucun de ces deux points ne touche l'une des quatre questions."
+        }
+      ]
+    },
+    {
       "claim_id": "C040",
-      "locator": "sections[3].paragraphs[2]",
-      "claim_text": "Le changement ne porte donc pas sur le nombre d’entrées",
-      "supports": [
-        {
-          "id": "SUP-5604d2fd43d62ed6",
-          "origin": "validated",
-          "path": "$.notes[2]",
-          "access": "n/a",
-          "text": "ANTÉCÉDENTS, et rectification d'une erreur de la cartographie. Celle-ci annonçait « des travaux antérieurs convergents de Lawler sur six dimensions de l'emploi ». La note 1, p. 39, relue à l'image, dit autre chose et dit deux choses : Turner & Lawrence (1965) mesurent six « task attributes » (variety, required interaction, autonomy, optional interaction, knowledge and skill required, responsibility) ; Hackman & Lawler (1971) mesurent six « job dimensions » (variety, autonomy, task identity, feedback, friendship opportunities, dealing with others). Les listes diffèrent, et la seconde est le travail antérieur de Hackman lui-même, coauteur du présent rapport, non un antécédent extérieur. Le corps du texte le dit p. 2 : « The theory which gave rise to the present instrument is based on earlier work by Turner & Lawrence (1965) and by Hackman & Lawler (1971). »"
-        },
-        {
-          "id": "SUP-618caaed36d65ce3",
-          "origin": "validated",
-          "path": "$.notes[4]",
-          "access": "n/a",
-          "text": "CINQ, ET NON SEPT. Deux autres dimensions sont mesurées par le rapport et explicitement exclues du noyau, p. 5 : « Feedback from Agents », dont les auteurs écrivent « This dimension is not, strictly speaking, a characteristic of the job itself », et « Dealing with Others ». Un passage ultérieur qui en ferait sept dimensions centrales corrigerait vers l'erreur."
-        }
-      ]
-    },
-    {
-      "claim_id": "C041",
-      "locator": "sections[3].paragraphs[2]",
-      "claim_text": "ce qui tenait à l’entourage d’un poste, et qui comptait pour un tiers des attributs mesurés jusque-là, se retrouve en 1974 hors du noyau.",
-      "supports": [
-        {
-          "id": "SUP-5604d2fd43d62ed6",
-          "origin": "validated",
-          "path": "$.notes[2]",
-          "access": "n/a",
-          "text": "ANTÉCÉDENTS, et rectification d'une erreur de la cartographie. Celle-ci annonçait « des travaux antérieurs convergents de Lawler sur six dimensions de l'emploi ». La note 1, p. 39, relue à l'image, dit autre chose et dit deux choses : Turner & Lawrence (1965) mesurent six « task attributes » (variety, required interaction, autonomy, optional interaction, knowledge and skill required, responsibility) ; Hackman & Lawler (1971) mesurent six « job dimensions » (variety, autonomy, task identity, feedback, friendship opportunities, dealing with others). Les listes diffèrent, et la seconde est le travail antérieur de Hackman lui-même, coauteur du présent rapport, non un antécédent extérieur. Le corps du texte le dit p. 2 : « The theory which gave rise to the present instrument is based on earlier work by Turner & Lawrence (1965) and by Hackman & Lawler (1971). »"
-        },
-        {
-          "id": "SUP-618caaed36d65ce3",
-          "origin": "validated",
-          "path": "$.notes[4]",
-          "access": "n/a",
-          "text": "CINQ, ET NON SEPT. Deux autres dimensions sont mesurées par le rapport et explicitement exclues du noyau, p. 5 : « Feedback from Agents », dont les auteurs écrivent « This dimension is not, strictly speaking, a characteristic of the job itself », et « Dealing with Others ». Un passage ultérieur qui en ferait sept dimensions centrales corrigerait vers l'erreur."
-        }
-      ]
-    },
-    {
-      "claim_id": "C042",
-      "locator": "sections[4].paragraphs[0]",
-      "claim_text": "La théorie que cet instrument applique est exposée ailleurs, et les auteurs le disent deux fois, à leur deuxième page et à leur quatrième",
-      "supports": [
-        {
-          "id": "SUP-257678c7beb2e19c",
-          "origin": "validated",
-          "path": "$.review.notes[8]",
-          "access": "n/a",
-          "text": "HORS MANDAT (ne fonde aucun REWORK). (a) Le rapport renvoie deux fois, aux folios 2 et 4, à « Hackman & Oldham (1974) » pour l'exposé détaillé de la théorie elle-même et du Motivating Potential Score — c'est-à-dire à un autre texte que celui-ci, celui qui paraîtra en 1976 dans Organizational Behavior and Human Performance. La fiche n'en dépend pas, sa citation étant bien dans le rapport qu'elle cite, mais un lecteur qui voudrait la théorie plutôt que l'instrument serait renvoyé ailleurs par les auteurs eux-mêmes. (b) Les deux entrées de `authors` ont `app_author_id` à null. Aucun de ces deux points ne touche l'une des quatre questions."
-        },
-        {
-          "id": "SUP-dcf9218752b68452",
-          "origin": "validated",
-          "path": "$.notes[8]",
-          "access": "n/a",
-          "text": "CE QUE LA PIÈCE NE PORTE PAS. Le rapport renvoie, pour l'exposé et le test de la théorie, à Hackman & Oldham, Technical Report No. 6, 1974, que la lecture primaire n'a pas ouvert. La Figure 1, p. 3, n'a pas été relue à l'image et rien n'est cité d'elle. Le rapport ne date les concepts que par sa propre signature, mai 1974 : aucune date d'antériorité ne doit être composée à partir de ce fichier."
-        }
-      ]
-    },
-    {
-      "claim_id": "C043",
-      "locator": "sections[4].paragraphs[0]",
-      "claim_text": "pour l’exposé détaillé de cette théorie et pour son test, ils renvoient à un autre de leurs rapports techniques, le numéro 6, de la même année.",
-      "supports": [
-        {
-          "id": "SUP-dcf9218752b68452",
-          "origin": "validated",
-          "path": "$.notes[8]",
-          "access": "n/a",
-          "text": "CE QUE LA PIÈCE NE PORTE PAS. Le rapport renvoie, pour l'exposé et le test de la théorie, à Hackman & Oldham, Technical Report No. 6, 1974, que la lecture primaire n'a pas ouvert. La Figure 1, p. 3, n'a pas été relue à l'image et rien n'est cité d'elle. Le rapport ne date les concepts que par sa propre signature, mai 1974 : aucune date d'antériorité ne doit être composée à partir de ce fichier."
-        },
-        {
-          "id": "SUP-257678c7beb2e19c",
-          "origin": "validated",
-          "path": "$.review.notes[8]",
-          "access": "n/a",
-          "text": "HORS MANDAT (ne fonde aucun REWORK). (a) Le rapport renvoie deux fois, aux folios 2 et 4, à « Hackman & Oldham (1974) » pour l'exposé détaillé de la théorie elle-même et du Motivating Potential Score — c'est-à-dire à un autre texte que celui-ci, celui qui paraîtra en 1976 dans Organizational Behavior and Human Performance. La fiche n'en dépend pas, sa citation étant bien dans le rapport qu'elle cite, mais un lecteur qui voudrait la théorie plutôt que l'instrument serait renvoyé ailleurs par les auteurs eux-mêmes. (b) Les deux entrées de `authors` ont `app_author_id` à null. Aucun de ces deux points ne touche l'une des quatre questions."
-        }
-      ]
-    },
-    {
-      "claim_id": "C044",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "Ce qui manque ici n’est donc pas un détail de méthode : c’est ce qui mettrait la théorie à l’épreuve",
       "supports": [
@@ -953,11 +911,18 @@
           "path": "$.notes[8]",
           "access": "n/a",
           "text": "CE QUE LA PIÈCE NE PORTE PAS. Le rapport renvoie, pour l'exposé et le test de la théorie, à Hackman & Oldham, Technical Report No. 6, 1974, que la lecture primaire n'a pas ouvert. La Figure 1, p. 3, n'a pas été relue à l'image et rien n'est cité d'elle. Le rapport ne date les concepts que par sa propre signature, mai 1974 : aucune date d'antériorité ne doit être composée à partir de ce fichier."
+        },
+        {
+          "id": "SUP-257678c7beb2e19c",
+          "origin": "validated",
+          "path": "$.review.notes[8]",
+          "access": "n/a",
+          "text": "HORS MANDAT (ne fonde aucun REWORK). (a) Le rapport renvoie deux fois, aux folios 2 et 4, à « Hackman & Oldham (1974) » pour l'exposé détaillé de la théorie elle-même et du Motivating Potential Score — c'est-à-dire à un autre texte que celui-ci, celui qui paraîtra en 1976 dans Organizational Behavior and Human Performance. La fiche n'en dépend pas, sa citation étant bien dans le rapport qu'elle cite, mais un lecteur qui voudrait la théorie plutôt que l'instrument serait renvoyé ailleurs par les auteurs eux-mêmes. (b) Les deux entrées de `authors` ont `app_author_id` à null. Aucun de ces deux points ne touche l'une des quatre questions."
         }
       ]
     },
     {
-      "claim_id": "C045",
+      "claim_id": "C041",
       "locator": "sections[4].paragraphs[1]",
       "claim_text": "Sur cette même quatrième page figure aussi une formule, appelée motivating potential score, qui assemble les dimensions du noyau.",
       "supports": [
@@ -985,7 +950,7 @@
       ]
     },
     {
-      "claim_id": "C046",
+      "claim_id": "C042",
       "locator": "sections[4].paragraphs[1]",
       "claim_text": "C’est le geste qu’on attend d’un outil de diagnostic : ramener un poste à une note, pour pouvoir comparer deux postes, ou le même poste avant et après une transformation.",
       "supports": [
@@ -995,11 +960,18 @@
           "path": "$.sources[0].label",
           "access": "full-text",
           "text": "J. Richard Hackman et Greg R. Oldham, The Job Diagnostic Survey: An Instrument for the Diagnosis of Jobs and the Evaluation of Job Redesign Projects, Technical Report No. 4, Yale University, mai 1974"
+        },
+        {
+          "id": "SUP-a269172ea0335b83",
+          "origin": "validated",
+          "path": "$.notes[3]",
+          "access": "n/a",
+          "text": "PÉRIMÈTRE. Ce qui est instruit ici est la thèse, jamais le Job Diagnostic Survey comme questionnaire : ni ses huit sections, ni ses clés de cotation, ni ses appendices. Le motivating potential score, imprimé p. 4 dans le paragraphe même de ce concept, est signalé par la lecture primaire comme un point limite qu'elle n'a pas retenu comme concept ; il n'est pas réintroduit ici et n'a pas été fondu dans la carte."
         }
       ]
     },
     {
-      "claim_id": "C047",
+      "claim_id": "C043",
       "locator": "sections[4].paragraphs[1]",
       "claim_text": "Ce que vaut cette note, la page ne le dit pas davantage : c’est encore vers l’autre rapport qu’elle renvoie.",
       "supports": [
@@ -1020,6 +992,6 @@
       ]
     }
   ],
-  "estimated_tokens": 22207,
+  "estimated_tokens": 22364,
   "status": "READY"
 }
