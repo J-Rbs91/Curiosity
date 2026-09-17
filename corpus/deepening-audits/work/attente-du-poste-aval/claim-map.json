@@ -1,6 +1,6 @@
 {
   "concept_id": "attente-du-poste-aval",
-  "candidate_sha256": "8989888547040b5961c36583adb6589b5162dd2795e27ca3136c38118cca9928",
+  "candidate_sha256": "e4185be14f3c35b3af953b1d61bbc82585f7ab237089a00c75d5bf417bcbcbf5",
   "paragraphs": [
     {
       "locator": "lead[0]",
@@ -35,10 +35,6 @@
       "mapping_status": "CLAIMS_MAPPED"
     },
     {
-      "locator": "sections[2].paragraphs[2]",
-      "mapping_status": "CLAIMS_MAPPED"
-    },
-    {
       "locator": "sections[3].paragraphs[0]",
       "mapping_status": "CLAIMS_MAPPED"
     },
@@ -66,19 +62,32 @@
       "start": 232,
       "end": 292,
       "claim_text": "le chef d’atelier soupçonne que ce rang compte. Il a raison.",
-      "normalized_claim": "L'ordre de passage des pièces a bien un effet sur l'atelier à deux machines.",
+      "normalized_claim": "L'ordre de passage des pièces a bien un effet sur le déroulement du chantier.",
       "support_ids": [
         "SUP-cbea1a9b53f2327b",
-        "SUP-6a6d0291ccd83aa1"
+        "SUP-6a6d0291ccd83aa1",
+        "SUP-077c8099f0b96130"
       ]
     },
     {
       "claim_id": "C002",
       "locator": "lead[0]",
+      "start": 293,
+      "end": 388,
+      "claim_text": "Mais s’il espère qu’un bon rangement fera travailler la seconde machine plus vite, il se trompe",
+      "normalized_claim": "Un meilleur ordre ne fait pas travailler plus vite la seconde machine.",
+      "support_ids": [
+        "SUP-cbea1a9b53f2327b",
+        "SUP-e9925fc13e92bd77"
+      ]
+    },
+    {
+      "claim_id": "C003",
+      "locator": "lead[0]",
       "start": 391,
-      "end": 554,
-      "claim_text": "quel que soit l’ordre choisi, elle fera exactement le même travail, puisque ce sont les mêmes cinq pièces, et que l’addition ne se soucie pas de l’ordre des termes",
-      "normalized_claim": "La charge de travail de la seconde machine est invariante par permutation des pièces.",
+      "end": 555,
+      "claim_text": "quel que soit l’ordre choisi, elle fera exactement le même travail, puisque ce sont les mêmes cinq pièces, et que l’addition ne se soucie pas de l’ordre des termes.",
+      "normalized_claim": "La charge de travail de la seconde machine est invariante par permutation des pièces, car c'est une somme des mêmes durées.",
       "support_ids": [
         "SUP-cbea1a9b53f2327b",
         "SUP-e9925fc13e92bd77",
@@ -86,38 +95,51 @@
       ]
     },
     {
-      "claim_id": "C003",
-      "locator": "lead[1]",
-      "start": 129,
-      "end": 228,
-      "claim_text": "le chantier, lui, ne dure pas le même temps selon l’ordre retenu, et l’écart peut être considérable",
-      "normalized_claim": "La durée totale du chantier varie selon l'ordre, et l'écart peut être important.",
-      "support_ids": [
-        "SUP-6a6d0291ccd83aa1",
-        "SUP-077c8099f0b96130"
-      ]
-    },
-    {
       "claim_id": "C004",
       "locator": "lead[1]",
-      "start": 230,
-      "end": 349,
-      "claim_text": "Richard Bellman répond en une ligne d’arithmétique, à la page 11 d’un rapport de la RAND Corporation révisé en mai 1955",
-      "normalized_claim": "La réponse se trouve p. 11 d'un rapport RAND de Richard Bellman révisé en mai 1955.",
+      "start": 125,
+      "end": 229,
+      "claim_text": "Car le chantier, lui, ne dure pas le même temps selon l’ordre retenu, et l’écart peut être considérable.",
+      "normalized_claim": "La durée totale du chantier varie selon l'ordre retenu, et l'écart peut être important.",
       "support_ids": [
-        "SUP-e9925fc13e92bd77",
-        "SUP-4a6144f753244881",
-        "SUP-1dbf1b7c41d6c2c3",
-        "SUP-0bb357961940a9cd",
-        "SUP-d8d7072dbd827550"
+        "SUP-6a6d0291ccd83aa1",
+        "SUP-077c8099f0b96130",
+        "SUP-28d23e5b57539f51"
       ]
     },
     {
       "claim_id": "C005",
       "locator": "lead[1]",
+      "start": 230,
+      "end": 294,
+      "claim_text": "Richard Bellman répond en une ligne d’arithmétique, à la page 11",
+      "normalized_claim": "Bellman formule cette identité arithmétique à la page 11 du rapport.",
+      "support_ids": [
+        "SUP-e9925fc13e92bd77",
+        "SUP-2393a43fee8bab54",
+        "SUP-124994d3a48bb798"
+      ]
+    },
+    {
+      "claim_id": "C006",
+      "locator": "lead[1]",
+      "start": 295,
+      "end": 349,
+      "claim_text": "d’un rapport de la RAND Corporation révisé en mai 1955",
+      "normalized_claim": "Le texte est un rapport de la RAND Corporation révisé en mai 1955.",
+      "support_ids": [
+        "SUP-1dbf1b7c41d6c2c3",
+        "SUP-4a6144f753244881",
+        "SUP-d8d7072dbd827550",
+        "SUP-0bb357961940a9cd"
+      ]
+    },
+    {
+      "claim_id": "C007",
+      "locator": "lead[1]",
       "start": 352,
-      "end": 416,
-      "claim_text": "le résultat, il ne se l’attribue pas, il le crédite à S. Johnson",
+      "end": 417,
+      "claim_text": "le résultat, il ne se l’attribue pas, il le crédite à S. Johnson.",
       "normalized_claim": "Bellman n'attribue pas le résultat à lui-même mais à S. Johnson.",
       "support_ids": [
         "SUP-c4dc562b5c90462d",
@@ -126,36 +148,12 @@
       ]
     },
     {
-      "claim_id": "C006",
+      "claim_id": "C008",
       "locator": "sections[0].paragraphs[0]",
       "start": 114,
       "end": 332,
       "claim_text": "Son temps se partage en deux, et en deux seulement : les intervalles pendant lesquels elle usine quelque chose, et les intervalles pendant lesquels elle attend qu’une pièce lui parvienne. Il n’y a pas de troisième cas.",
-      "normalized_claim": "Le temps de la seconde machine se partage exhaustivement entre travail et attente.",
-      "support_ids": [
-        "SUP-e9925fc13e92bd77",
-        "SUP-cbea1a9b53f2327b"
-      ]
-    },
-    {
-      "claim_id": "C007",
-      "locator": "sections[0].paragraphs[0]",
-      "start": 333,
-      "end": 454,
-      "claim_text": "La durée totale mesurée à cet endroit est donc la somme de ses temps de travail augmentée de la somme de ses temps morts.",
-      "normalized_claim": "Le temps total vaut la somme des temps de travail du second poste plus la somme de ses attentes.",
-      "support_ids": [
-        "SUP-e9925fc13e92bd77",
-        "SUP-cbea1a9b53f2327b"
-      ]
-    },
-    {
-      "claim_id": "C008",
-      "locator": "sections[0].paragraphs[0]",
-      "start": 455,
-      "end": 526,
-      "claim_text": "Le premier terme est acquis d’avance, quel que soit le rang des pièces.",
-      "normalized_claim": "La somme des temps de travail du second poste ne dépend pas de l'ordre.",
+      "normalized_claim": "Le temps de la seconde machine se décompose exhaustivement en temps d'usinage et temps d'attente.",
       "support_ids": [
         "SUP-e9925fc13e92bd77",
         "SUP-cbea1a9b53f2327b"
@@ -164,17 +162,43 @@
     {
       "claim_id": "C009",
       "locator": "sections[0].paragraphs[0]",
-      "start": 527,
-      "end": 589,
-      "claim_text": "Tout ce qu’un rangement peut déplacer est logé dans le second.",
-      "normalized_claim": "L'ordonnancement n'agit que sur l'attente du second poste.",
+      "start": 333,
+      "end": 454,
+      "claim_text": "La durée totale mesurée à cet endroit est donc la somme de ses temps de travail augmentée de la somme de ses temps morts.",
+      "normalized_claim": "Le temps total mesuré au second poste est la somme de ses temps de travail plus la somme de ses temps d'inactivité.",
+      "support_ids": [
+        "SUP-e9925fc13e92bd77",
+        "SUP-cbea1a9b53f2327b",
+        "SUP-34090bbc6322c1a0"
+      ]
+    },
+    {
+      "claim_id": "C010",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 455,
+      "end": 526,
+      "claim_text": "Le premier terme est acquis d’avance, quel que soit le rang des pièces.",
+      "normalized_claim": "Le terme de travail du second poste ne dépend pas de l'ordre des pièces.",
       "support_ids": [
         "SUP-cbea1a9b53f2327b",
         "SUP-e9925fc13e92bd77"
       ]
     },
     {
-      "claim_id": "C010",
+      "claim_id": "C011",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 527,
+      "end": 589,
+      "claim_text": "Tout ce qu’un rangement peut déplacer est logé dans le second.",
+      "normalized_claim": "L'ordonnancement n'agit que sur le terme d'attente.",
+      "support_ids": [
+        "SUP-cbea1a9b53f2327b",
+        "SUP-e9925fc13e92bd77",
+        "SUP-34090bbc6322c1a0"
+      ]
+    },
+    {
+      "claim_id": "C012",
       "locator": "sections[0].paragraphs[1]",
       "start": 0,
       "end": 29,
@@ -186,34 +210,12 @@
       ]
     },
     {
-      "claim_id": "C011",
-      "locator": "sections[0].paragraphs[1]",
-      "start": 30,
-      "end": 250,
-      "claim_text": "Bellman y appelle x_i le temps d’inactivité de la seconde machine juste avant qu’elle ne prenne le i-ème article : « inactive time on the second machine, the binding machine, immediately before processing the i-th item »",
-      "normalized_claim": "Citation et définition de x_i par Bellman p. 11.",
-      "support_ids": [
-        "SUP-e9925fc13e92bd77"
-      ]
-    },
-    {
-      "claim_id": "C012",
-      "locator": "sections[0].paragraphs[1]",
-      "start": 252,
-      "end": 287,
-      "claim_text": "Il en fait la somme, qu’il note I_n",
-      "normalized_claim": "Bellman note I_n la somme des x_i.",
-      "support_ids": [
-        "SUP-e9925fc13e92bd77"
-      ]
-    },
-    {
       "claim_id": "C013",
       "locator": "sections[0].paragraphs[1]",
-      "start": 289,
-      "end": 401,
-      "claim_text": "observe que le temps total du chantier vaut cette somme d’attentes ajoutée aux durées de travail du second poste",
-      "normalized_claim": "Bellman écrit que le temps total vaut I_n plus la somme des b_i.",
+      "start": 30,
+      "end": 251,
+      "claim_text": "Bellman y appelle x_i le temps d’inactivité de la seconde machine juste avant qu’elle ne prenne le i-ème article : « inactive time on the second machine, the binding machine, immediately before processing the i-th item ».",
+      "normalized_claim": "Bellman note x_i le temps d'inactivité de la seconde machine juste avant le i-ème article, et la citation anglaise est verbatim.",
       "support_ids": [
         "SUP-e9925fc13e92bd77"
       ]
@@ -221,16 +223,39 @@
     {
       "claim_id": "C014",
       "locator": "sections[0].paragraphs[1]",
-      "start": 406,
-      "end": 590,
-      "claim_text": "en tire une conséquence de méthode : « we may take I_n as our measure of the efficiency of a scheduling of operations », et c’est cette quantité, écrit-il, que l’on cherche à minimiser",
-      "normalized_claim": "Bellman prend I_n comme mesure d'efficacité et quantité à minimiser.",
+      "start": 252,
+      "end": 287,
+      "claim_text": "Il en fait la somme, qu’il note I_n",
+      "normalized_claim": "Bellman note I_n la somme de ces temps d'inactivité.",
       "support_ids": [
         "SUP-e9925fc13e92bd77"
       ]
     },
     {
       "claim_id": "C015",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 289,
+      "end": 401,
+      "claim_text": "observe que le temps total du chantier vaut cette somme d’attentes ajoutée aux durées de travail du second poste",
+      "normalized_claim": "Bellman observe que le temps total vaut I_n plus la somme des durées de travail du second poste.",
+      "support_ids": [
+        "SUP-e9925fc13e92bd77",
+        "SUP-cbea1a9b53f2327b"
+      ]
+    },
+    {
+      "claim_id": "C016",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 403,
+      "end": 591,
+      "claim_text": "et en tire une conséquence de méthode : « we may take I_n as our measure of the efficiency of a scheduling of operations », et c’est cette quantité, écrit-il, que l’on cherche à minimiser.",
+      "normalized_claim": "Bellman prend I_n comme mesure d'efficacité d'un ordonnancement et cherche à la minimiser ; la citation anglaise est verbatim.",
+      "support_ids": [
+        "SUP-e9925fc13e92bd77"
+      ]
+    },
+    {
+      "claim_id": "C017",
       "locator": "sections[0].paragraphs[1]",
       "start": 592,
       "end": 650,
@@ -242,12 +267,12 @@
       ]
     },
     {
-      "claim_id": "C016",
+      "claim_id": "C018",
       "locator": "sections[1].paragraphs[0]",
       "start": 0,
       "end": 44,
       "claim_text": "Le rapport donne un exemple chiffré page 15.",
-      "normalized_claim": "Un exemple chiffré figure à la page 15 du rapport.",
+      "normalized_claim": "Le rapport présente un exemple chiffré à la page 15.",
       "support_ids": [
         "SUP-8a37339c20338fa6",
         "SUP-124994d3a48bb798",
@@ -255,99 +280,88 @@
       ]
     },
     {
-      "claim_id": "C017",
+      "claim_id": "C019",
       "locator": "sections[1].paragraphs[0]",
       "start": 45,
       "end": 170,
       "claim_text": "Cinq articles, chacun avec sa durée sur la première machine puis sur la seconde : (4, 5), (4, 1), (30, 4), (6, 30) et (2, 3).",
-      "normalized_claim": "Les cinq couples de durées de l'exemple sont (4,5), (4,1), (30,4), (6,30), (2,3).",
+      "normalized_claim": "Les cinq articles de l'exemple ont pour couples de durées (4,5), (4,1), (30,4), (6,30) et (2,3).",
       "support_ids": [
-        "SUP-077c8099f0b96130"
+        "SUP-077c8099f0b96130",
+        "SUP-124994d3a48bb798"
       ]
     },
     {
-      "claim_id": "C018",
+      "claim_id": "C020",
       "locator": "sections[1].paragraphs[0]",
       "start": 171,
       "end": 310,
       "claim_text": "Additionnez le second nombre de chaque paire, 5 plus 1 plus 4 plus 30 plus 3 : le poste aval a quarante-trois unités de travail devant lui.",
-      "normalized_claim": "La somme des durées sur la seconde machine vaut 43.",
+      "normalized_claim": "La somme des durées sur la seconde machine vaut 43 unités.",
       "support_ids": [
         "SUP-28d23e5b57539f51",
         "SUP-077c8099f0b96130"
       ]
     },
     {
-      "claim_id": "C019",
+      "claim_id": "C021",
       "locator": "sections[1].paragraphs[0]",
       "start": 311,
       "end": 448,
       "claim_text": "Ce total est acquis avant qu’on ait décidé quoi que ce soit, et il vaudra quarante-trois pour n’importe quel rangement des cinq articles.",
-      "normalized_claim": "Ce total de 43 est le même pour tout ordre des cinq articles.",
+      "normalized_claim": "Ce total de 43 est indépendant de l'ordre choisi.",
       "support_ids": [
-        "SUP-e9925fc13e92bd77",
         "SUP-cbea1a9b53f2327b",
-        "SUP-28d23e5b57539f51"
-      ]
-    },
-    {
-      "claim_id": "C020",
-      "locator": "sections[1].paragraphs[1]",
-      "start": 0,
-      "end": 61,
-      "claim_text": "La règle exposée dans ces pages donne l’ordre (5, 1, 4, 3, 2)",
-      "normalized_claim": "La règle du rapport donne l'ordre (5, 1, 4, 3, 2).",
-      "support_ids": [
-        "SUP-6a6d0291ccd83aa1",
-        "SUP-28d23e5b57539f51"
-      ]
-    },
-    {
-      "claim_id": "C021",
-      "locator": "sections[1].paragraphs[1]",
-      "start": 66,
-      "end": 273,
-      "claim_text": "Bellman en note le résultat : « The rule yields (5, 1, 4, 3, 2) as the minimal order with a total time of 47 units, and 4 units of idle time. For the reversed order, the total time is 78, the longest time. »",
-      "normalized_claim": "Citation verbatim du rapport, p. 15.",
-      "support_ids": [
-        "SUP-6a6d0291ccd83aa1",
-        "SUP-124994d3a48bb798",
-        "SUP-8a37339c20338fa6"
+        "SUP-e9925fc13e92bd77",
+        "SUP-077c8099f0b96130"
       ]
     },
     {
       "claim_id": "C022",
       "locator": "sections[1].paragraphs[1]",
-      "start": 321,
-      "end": 408,
-      "claim_text": "Quarante-sept, ce sont les quarante-trois unités de travail et quatre unités d’attente.",
-      "normalized_claim": "47 = 43 unités de travail + 4 unités d'attente.",
+      "start": 0,
+      "end": 61,
+      "claim_text": "La règle exposée dans ces pages donne l’ordre (5, 1, 4, 3, 2)",
+      "normalized_claim": "La règle exposée dans le rapport produit l'ordre (5, 1, 4, 3, 2).",
       "support_ids": [
-        "SUP-28d23e5b57539f51",
         "SUP-6a6d0291ccd83aa1",
-        "SUP-077c8099f0b96130"
+        "SUP-28d23e5b57539f51",
+        "SUP-124994d3a48bb798"
       ]
     },
     {
       "claim_id": "C023",
       "locator": "sections[1].paragraphs[1]",
-      "start": 409,
-      "end": 511,
-      "claim_text": "Soixante-dix-huit, ce sont les mêmes quarante-trois unités de travail et trente-cinq unités d’attente.",
-      "normalized_claim": "78 = 43 unités de travail + 35 unités d'attente pour l'ordre inverse.",
+      "start": 63,
+      "end": 273,
+      "claim_text": "et Bellman en note le résultat : « The rule yields (5, 1, 4, 3, 2) as the minimal order with a total time of 47 units, and 4 units of idle time. For the reversed order, the total time is 78, the longest time. »",
+      "normalized_claim": "Citation verbatim de la page 15 : ordre minimal 47 unités avec 4 unités d'inactivité, ordre inverse 78 unités.",
       "support_ids": [
         "SUP-6a6d0291ccd83aa1",
-        "SUP-077c8099f0b96130",
-        "SUP-e9925fc13e92bd77"
+        "SUP-124994d3a48bb798",
+        "SUP-427fb1df98a1e120"
       ]
     },
     {
       "claim_id": "C024",
       "locator": "sections[1].paragraphs[1]",
-      "start": 512,
-      "end": 641,
-      "claim_text": "Entre le meilleur rangement et le pire, l’écart atteint trente et une unités, et ces trente et une unités sont de l’attente pure.",
-      "normalized_claim": "L'écart de 31 unités entre 47 et 78 est entièrement de l'attente.",
+      "start": 321,
+      "end": 408,
+      "claim_text": "Quarante-sept, ce sont les quarante-trois unités de travail et quatre unités d’attente.",
+      "normalized_claim": "47 se décompose en 43 unités de travail et 4 unités d'attente.",
+      "support_ids": [
+        "SUP-28d23e5b57539f51",
+        "SUP-077c8099f0b96130",
+        "SUP-6a6d0291ccd83aa1"
+      ]
+    },
+    {
+      "claim_id": "C025",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 409,
+      "end": 511,
+      "claim_text": "Soixante-dix-huit, ce sont les mêmes quarante-trois unités de travail et trente-cinq unités d’attente.",
+      "normalized_claim": "78 se décompose en 43 unités de travail et 35 unités d'attente (valeur dérivée par soustraction).",
       "support_ids": [
         "SUP-6a6d0291ccd83aa1",
         "SUP-077c8099f0b96130",
@@ -355,36 +369,25 @@
       ]
     },
     {
-      "claim_id": "C025",
-      "locator": "sections[2].paragraphs[0]",
-      "start": 90,
-      "end": 250,
-      "claim_text": "Avant de toucher au rangement, on peut mesurer ce qu’il y a à espérer : il suffit de chronométrer le temps pendant lequel le poste aval reste sans rien à faire.",
-      "normalized_claim": "On peut estimer le gain possible en mesurant l'inactivité du poste aval.",
-      "support_ids": [
-        "SUP-cbea1a9b53f2327b",
-        "SUP-e9925fc13e92bd77"
-      ]
-    },
-    {
       "claim_id": "C026",
-      "locator": "sections[2].paragraphs[0]",
-      "start": 251,
-      "end": 336,
-      "claim_text": "Ce temps est le gain maximal, et il n’y en a pas d’autre à aller chercher de ce côté.",
-      "normalized_claim": "L'attente mesurée du poste aval borne le gain atteignable par l'ordonnancement.",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 512,
+      "end": 641,
+      "claim_text": "Entre le meilleur rangement et le pire, l’écart atteint trente et une unités, et ces trente et une unités sont de l’attente pure.",
+      "normalized_claim": "L'écart entre meilleur et pire ordre vaut 31 unités, entièrement imputables à l'attente.",
       "support_ids": [
-        "SUP-cbea1a9b53f2327b",
+        "SUP-6a6d0291ccd83aa1",
+        "SUP-077c8099f0b96130",
         "SUP-e9925fc13e92bd77"
       ]
     },
     {
       "claim_id": "C027",
       "locator": "sections[2].paragraphs[0]",
-      "start": 337,
-      "end": 474,
-      "claim_text": "Un poste aval qui n’attend jamais travaille déjà au plus court, et le meilleur ordonnancement du monde ne lui fera pas gagner une minute.",
-      "normalized_claim": "Si l'attente est nulle, aucun ordonnancement ne peut raccourcir le chantier.",
+      "start": 90,
+      "end": 250,
+      "claim_text": "Avant de toucher au rangement, on peut mesurer ce qu’il y a à espérer : il suffit de chronométrer le temps pendant lequel le poste aval reste sans rien à faire.",
+      "normalized_claim": "On peut estimer le gain possible en chronométrant l'inactivité du poste aval.",
       "support_ids": [
         "SUP-cbea1a9b53f2327b",
         "SUP-e9925fc13e92bd77"
@@ -392,31 +395,35 @@
     },
     {
       "claim_id": "C028",
-      "locator": "sections[2].paragraphs[1]",
-      "start": 17,
-      "end": 53,
-      "claim_text": "cette attente ne tombe jamais à zéro",
-      "normalized_claim": "L'attente du poste aval est toujours strictement positive.",
-      "support_ids": []
+      "locator": "sections[2].paragraphs[0]",
+      "start": 251,
+      "end": 336,
+      "claim_text": "Ce temps est le gain maximal, et il n’y en a pas d’autre à aller chercher de ce côté.",
+      "normalized_claim": "Ce temps d'inactivité constitue le gain maximal atteignable par réordonnancement.",
+      "support_ids": [
+        "SUP-cbea1a9b53f2327b",
+        "SUP-e9925fc13e92bd77"
+      ]
     },
     {
       "claim_id": "C029",
-      "locator": "sections[2].paragraphs[1]",
-      "start": 55,
-      "end": 250,
-      "claim_text": "Au premier instant, la seconde machine n’a rien à se mettre sous la dent : l’article de tête est encore sur le poste amont, et l’aval doit patienter au moins le temps de cette première opération.",
-      "normalized_claim": "Dans la configuration à deux postes, l'aval attend au moins la première opération amont.",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 337,
+      "end": 474,
+      "claim_text": "Un poste aval qui n’attend jamais travaille déjà au plus court, et le meilleur ordonnancement du monde ne lui fera pas gagner une minute.",
+      "normalized_claim": "Si le poste aval n'attend jamais, aucun ordonnancement ne peut raccourcir le chantier.",
       "support_ids": [
+        "SUP-cbea1a9b53f2327b",
         "SUP-e9925fc13e92bd77"
       ]
     },
     {
       "claim_id": "C030",
       "locator": "sections[2].paragraphs[1]",
-      "start": 251,
-      "end": 343,
-      "claim_text": "Le meilleur ordre de l’exemple laisse d’ailleurs quatre unités d’attente, et non pas aucune.",
-      "normalized_claim": "L'ordre minimal de l'exemple laisse 4 unités d'attente.",
+      "start": 0,
+      "end": 73,
+      "claim_text": "Cette réduction ne va pourtant pas jusqu’à zéro dans l’exemple du rapport",
+      "normalized_claim": "Dans l'exemple du rapport, l'attente n'est pas réductible à zéro.",
       "support_ids": [
         "SUP-6a6d0291ccd83aa1",
         "SUP-077c8099f0b96130"
@@ -424,99 +431,61 @@
     },
     {
       "claim_id": "C031",
-      "locator": "sections[2].paragraphs[2]",
-      "start": 44,
-      "end": 210,
-      "claim_text": "En suivant l’ordre (5, 1, 4, 3, 2) sur les durées de la page 15, le poste aval attend d’abord deux unités, le temps que l’article de tête traverse la première machine",
-      "normalized_claim": "Première attente du poste aval : 2 unités, durée amont de l'article 5.",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 76,
+      "end": 198,
+      "claim_text": "l’ordre minimal, celui qui donne le temps total le plus court, y laisse encore quatre unités d’attente, et non pas aucune.",
+      "normalized_claim": "L'ordre minimal de l'exemple laisse encore 4 unités d'attente.",
       "support_ids": [
-        "SUP-077c8099f0b96130"
+        "SUP-6a6d0291ccd83aa1",
+        "SUP-077c8099f0b96130",
+        "SUP-28d23e5b57539f51"
       ]
     },
     {
       "claim_id": "C032",
-      "locator": "sections[2].paragraphs[2]",
-      "start": 213,
-      "end": 377,
-      "claim_text": "il attend ensuite une unité avant le deuxième article, puis une avant le troisième, parce qu’à chaque fois le poste amont n’avait pas fini quand l’aval s’est libéré",
-      "normalized_claim": "Attentes suivantes : 1 unité puis 1 unité, faute d'article disponible.",
-      "support_ids": [
-        "SUP-077c8099f0b96130"
-      ]
-    },
-    {
-      "claim_id": "C033",
-      "locator": "sections[2].paragraphs[2]",
-      "start": 380,
-      "end": 614,
-      "claim_text": "devant les deux derniers, il n’attend plus rien, parce que l’article qui les précède l’occupe trente unités durant et que le poste amont, pendant ce temps, travaille sans interruption : les deux pièces arrivent désormais juste à temps",
-      "normalized_claim": "Aucune attente avant les deux derniers articles de l'ordre (5,1,4,3,2).",
-      "support_ids": [
-        "SUP-077c8099f0b96130"
-      ]
-    },
-    {
-      "claim_id": "C034",
       "locator": "sections[3].paragraphs[0]",
       "start": 128,
-      "end": 250,
-      "claim_text": "une seule machine en amont, une seule en aval, chaque article passant sur l’une puis sur l’autre, une fois, dans cet ordre",
-      "normalized_claim": "Le comptage suppose deux postes, chaque article passant une fois sur chacun dans cet ordre.",
+      "end": 251,
+      "claim_text": "une seule machine en amont, une seule en aval, chaque article passant sur l’une puis sur l’autre, une fois, dans cet ordre.",
+      "normalized_claim": "Le comptage suppose deux machines, chaque article passant une seule fois sur l'une puis sur l'autre.",
       "support_ids": [
         "SUP-e9925fc13e92bd77",
-        "SUP-5e2b8598e8600242"
-      ]
-    },
-    {
-      "claim_id": "C035",
-      "locator": "sections[3].paragraphs[0]",
-      "start": 252,
-      "end": 315,
-      "claim_text": "C’est le cas auquel la première partie du rapport est consacrée",
-      "normalized_claim": "La partie I du rapport traite ce cas à deux machines.",
-      "support_ids": [
-        "SUP-e9925fc13e92bd77"
-      ]
-    },
-    {
-      "claim_id": "C036",
-      "locator": "sections[3].paragraphs[0]",
-      "start": 320,
-      "end": 493,
-      "claim_text": "c’est la brièveté de la chaîne qui rend la mesure possible : l’attente du second poste ne dépend que d’un seul fournisseur, et son plan de charge suffit à tout comptabiliser",
-      "normalized_claim": "L'attente du second poste ne dépend que d'un unique poste amont.",
-      "support_ids": [
-        "SUP-e9925fc13e92bd77"
-      ]
-    },
-    {
-      "claim_id": "C037",
-      "locator": "sections[3].paragraphs[0]",
-      "start": 495,
-      "end": 633,
-      "claim_text": "Qu’une pièce doive revenir en arrière, ou qu’un troisième poste s’intercale, et l’attente cesse de se lire sur une seule feuille de temps.",
-      "normalized_claim": "Retour en arrière ou troisième poste : le comptage ne tient plus.",
-      "support_ids": []
-    },
-    {
-      "claim_id": "C038",
-      "locator": "sections[3].paragraphs[1]",
-      "start": 53,
-      "end": 338,
-      "claim_text": "Si remettre la seconde machine en état de recevoir la pièce suivante prend un temps qui dépend de celle qui vient de la quitter, alors la charge de travail du poste aval cesse elle-même d’être acquise d’avance, et c’est le premier pas du raisonnement qui est à refaire, non le dernier.",
-      "normalized_claim": "Des temps de réglage dépendant de la séquence détruisent l'invariance de la charge aval.",
-      "support_ids": [
-        "SUP-e9925fc13e92bd77",
+        "SUP-5e2b8598e8600242",
         "SUP-cbea1a9b53f2327b"
       ]
     },
     {
-      "claim_id": "C039",
+      "claim_id": "C033",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 252,
+      "end": 315,
+      "claim_text": "C’est le cas auquel la première partie du rapport est consacrée",
+      "normalized_claim": "Ce cas à deux machines est celui de la partie I du rapport.",
+      "support_ids": [
+        "SUP-e9925fc13e92bd77",
+        "SUP-2393a43fee8bab54"
+      ]
+    },
+    {
+      "claim_id": "C034",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 53,
+      "end": 338,
+      "claim_text": "Si remettre la seconde machine en état de recevoir la pièce suivante prend un temps qui dépend de celle qui vient de la quitter, alors la charge de travail du poste aval cesse elle-même d’être acquise d’avance, et c’est le premier pas du raisonnement qui est à refaire, non le dernier.",
+      "normalized_claim": "Avec des temps de réglage dépendant de la pièce précédente, la charge du poste aval cesse d'être invariante.",
+      "support_ids": [
+        "SUP-e9925fc13e92bd77",
+        "SUP-a849eb48205c1238"
+      ]
+    },
+    {
+      "claim_id": "C035",
       "locator": "sections[3].paragraphs[1]",
       "start": 339,
       "end": 481,
       "claim_text": "L’article de S. M. Johnson auquel Bellman renvoie annonce dès son titre des ordonnancements à deux et à trois étapes, temps de réglage compris",
-      "normalized_claim": "Le titre de l'article de Johnson 1954 mentionne deux et trois étapes avec temps de réglage.",
+      "normalized_claim": "Le titre de l'article de S. M. Johnson auquel Bellman renvoie porte sur les ordonnancements à deux et trois étapes, temps de réglage inclus.",
       "support_ids": [
         "SUP-a849eb48205c1238",
         "SUP-6dd5966e42bc5bb2",
@@ -524,12 +493,12 @@
       ]
     },
     {
-      "claim_id": "C040",
+      "claim_id": "C036",
       "locator": "sections[4].paragraphs[0]",
       "start": 0,
       "end": 44,
       "claim_text": "Le rapport est signé de Richard Bellman seul",
-      "normalized_claim": "P-651 est signé du seul Richard Bellman.",
+      "normalized_claim": "Le rapport P-651 est signé du seul Richard Bellman.",
       "support_ids": [
         "SUP-c4dc562b5c90462d",
         "SUP-d8d7072dbd827550",
@@ -537,11 +506,11 @@
       ]
     },
     {
-      "claim_id": "C041",
+      "claim_id": "C037",
       "locator": "sections[4].paragraphs[0]",
-      "start": 49,
-      "end": 104,
-      "claim_text": "pourtant le résultat qu’il expose ne lui appartient pas",
+      "start": 46,
+      "end": 105,
+      "claim_text": "et pourtant le résultat qu’il expose ne lui appartient pas.",
       "normalized_claim": "Le résultat exposé n'est pas de Bellman.",
       "support_ids": [
         "SUP-c4dc562b5c90462d",
@@ -549,58 +518,61 @@
       ]
     },
     {
-      "claim_id": "C042",
+      "claim_id": "C038",
       "locator": "sections[4].paragraphs[0]",
       "start": 106,
       "end": 356,
       "claim_text": "Il l’écrit dès la page 8 : « Two solutions will be presented, the original one due to S. Johnson, based upon an explicit formula of interest in itself, and a solution based upon the functional equation approach of the theory of dynamic programming. »",
-      "normalized_claim": "Citation verbatim de la page 8 du rapport.",
+      "normalized_claim": "Citation verbatim de la page 8 créditant S. Johnson de la solution originale.",
       "support_ids": [
-        "SUP-46133eb0eac86dd8"
+        "SUP-46133eb0eac86dd8",
+        "SUP-c4dc562b5c90462d"
       ]
     },
     {
-      "claim_id": "C043",
+      "claim_id": "C039",
       "locator": "sections[4].paragraphs[0]",
       "start": 357,
       "end": 518,
       "claim_text": "Ses titres de paragraphe portent la même mention en toutes lettres : le troisième s’intitule « Lemmas of S. Johnson », le quatrième « The Result of S. Johnson ».",
-      "normalized_claim": "Les paragraphes 3 et 4 s'intitulent « Lemmas of S. Johnson » et « The Result of S. Johnson ».",
+      "normalized_claim": "Les paragraphes 3 et 4 du rapport s'intitulent « Lemmas of S. Johnson » et « The Result of S. Johnson ».",
       "support_ids": [
         "SUP-c4dc562b5c90462d",
-        "SUP-6dd5966e42bc5bb2"
-      ]
-    },
-    {
-      "claim_id": "C044",
-      "locator": "sections[4].paragraphs[0]",
-      "start": 519,
-      "end": 624,
-      "claim_text": "Le partage du temps entre travail et attente, celui-là même qu’on vient de lire, appartient au troisième.",
-      "normalized_claim": "La décomposition travail/attente relève du paragraphe 3.",
-      "support_ids": [
+        "SUP-6dd5966e42bc5bb2",
         "SUP-46133eb0eac86dd8"
       ]
     },
     {
-      "claim_id": "C045",
+      "claim_id": "C040",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 519,
+      "end": 624,
+      "claim_text": "Le partage du temps entre travail et attente, celui-là même qu’on vient de lire, appartient au troisième.",
+      "normalized_claim": "La décomposition entre travail et inactivité relève du paragraphe 3, « Lemmas of S. Johnson ».",
+      "support_ids": [
+        "SUP-46133eb0eac86dd8",
+        "SUP-6dd5966e42bc5bb2"
+      ]
+    },
+    {
+      "claim_id": "C041",
       "locator": "sections[4].paragraphs[1]",
       "start": 0,
       "end": 235,
       "claim_text": "Page 13, il ferme la question de la preuve : « For Johnson’s derivation of his result and the remainder of the proof that this criterion yields the absolute minimum, we refer to his paper, [5]. We shall give another derivation below. »",
-      "normalized_claim": "Citation verbatim de la page 13 renvoyant à l'article de Johnson.",
+      "normalized_claim": "Citation verbatim de la page 13 renvoyant à l'article de Johnson pour la démonstration.",
       "support_ids": [
         "SUP-6dd5966e42bc5bb2",
         "SUP-46133eb0eac86dd8"
       ]
     },
     {
-      "claim_id": "C046",
+      "claim_id": "C042",
       "locator": "sections[4].paragraphs[1]",
       "start": 236,
       "end": 319,
       "claim_text": "L’entrée [5] de sa bibliographie est l’article de Johnson de mars 1954, huit pages.",
-      "normalized_claim": "[5] renvoie à l'article de Johnson de mars 1954, long de huit pages.",
+      "normalized_claim": "L'entrée [5] de la bibliographie du rapport est l'article de Johnson de mars 1954, long de huit pages.",
       "support_ids": [
         "SUP-6dd5966e42bc5bb2",
         "SUP-a849eb48205c1238",
@@ -608,119 +580,94 @@
       ]
     },
     {
-      "claim_id": "C047",
+      "claim_id": "C043",
       "locator": "sections[4].paragraphs[1]",
       "start": 320,
-      "end": 440,
-      "claim_text": "Ce qui revient à Bellman dans ces pages est donc l’exposition, l’exemple chiffré et cette autre dérivation qu’il annonce",
-      "normalized_claim": "Part propre de Bellman : exposition, exemple chiffré, redérivation.",
+      "end": 544,
+      "claim_text": "Ce qui revient à Bellman dans ces pages est donc l’exposition et cette autre dérivation qu’il annonce : au sixième paragraphe, il refait le résultat par équation fonctionnelle, selon l’approche de la programmation dynamique.",
+      "normalized_claim": "L'apport propre de Bellman est l'exposition et la redérivation par équation fonctionnelle au paragraphe 6.",
       "support_ids": [
         "SUP-c4dc562b5c90462d",
-        "SUP-95fef22fe81b21cb",
         "SUP-6dd5966e42bc5bb2"
       ]
     },
     {
-      "claim_id": "C048",
-      "locator": "sections[4].paragraphs[1]",
-      "start": 443,
-      "end": 562,
-      "claim_text": "au sixième paragraphe, il refait le résultat par équation fonctionnelle, selon l’approche de la programmation dynamique",
-      "normalized_claim": "Le §6 redérive le résultat par équation fonctionnelle (programmation dynamique).",
+      "claim_id": "C044",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 0,
+      "end": 55,
+      "claim_text": "Remonter aux deux textes ne demande pas le même effort.",
+      "normalized_claim": "L'accès aux deux textes n'est pas également aisé.",
       "support_ids": [
-        "SUP-6dd5966e42bc5bb2",
-        "SUP-46133eb0eac86dd8"
+        "SUP-95fef22fe81b21cb",
+        "SUP-a849eb48205c1238",
+        "SUP-4a6144f753244881"
       ]
     },
     {
-      "claim_id": "C049",
+      "claim_id": "C045",
       "locator": "sections[4].paragraphs[2]",
       "start": 56,
-      "end": 116,
-      "claim_text": "Celui de Bellman, soixante-dix pages révisées le 23 mai 1955",
-      "normalized_claim": "Le rapport de Bellman fait 70 pages et est révisé le 23 mai 1955.",
+      "end": 185,
+      "claim_text": "Celui de Bellman, soixante-dix pages révisées le 23 mai 1955, n’est pas un article de revue mais un papier de la RAND Corporation",
+      "normalized_claim": "Le texte de Bellman fait 70 pages, révisées le 23 mai 1955, et est un rapport RAND et non un article de revue.",
       "support_ids": [
         "SUP-4a6144f753244881",
         "SUP-c9dfe7a1179b3d5e",
-        "SUP-0bb357961940a9cd",
-        "SUP-d8d7072dbd827550"
-      ]
-    },
-    {
-      "claim_id": "C050",
-      "locator": "sections[4].paragraphs[2]",
-      "start": 118,
-      "end": 185,
-      "claim_text": "n’est pas un article de revue mais un papier de la RAND Corporation",
-      "normalized_claim": "P-651 est un rapport RAND, non un article de revue.",
-      "support_ids": [
         "SUP-3430951edd5de75d",
-        "SUP-1dbf1b7c41d6c2c3"
+        "SUP-0bb357961940a9cd"
       ]
     },
     {
-      "claim_id": "C051",
+      "claim_id": "C046",
       "locator": "sections[4].paragraphs[2]",
-      "start": 190,
-      "end": 274,
-      "claim_text": "une copie numérisée en est servie publiquement : le tableau de la page 15 se regarde",
-      "normalized_claim": "Une copie numérisée publiquement accessible permet de voir le tableau p. 15.",
+      "start": 187,
+      "end": 275,
+      "claim_text": "et une copie numérisée en est servie publiquement : le tableau de la page 15 se regarde.",
+      "normalized_claim": "Une copie numérisée publiquement accessible permet de voir le tableau de la page 15.",
       "support_ids": [
         "SUP-dcba148d6aa45544",
+        "SUP-486d1c1527c398f2",
         "SUP-6cfb3dddd96d95cf",
-        "SUP-7ee8b0d3708510e1",
-        "SUP-124994d3a48bb798"
+        "SUP-7ee8b0d3708510e1"
       ]
     },
     {
-      "claim_id": "C052",
+      "claim_id": "C047",
       "locator": "sections[4].paragraphs[2]",
-      "start": 316,
+      "start": 312,
       "end": 463,
-      "claim_text": "le rapport écrit le nom de la revue à l’envers, « Naval Logistics Research Quarterly », là où la forme juste est Naval Research Logistics Quarterly",
-      "normalized_claim": "Le rapport inverse le titre de la revue ; la forme juste est Naval Research Logistics Quarterly.",
+      "claim_text": "car le rapport écrit le nom de la revue à l’envers, « Naval Logistics Research Quarterly », là où la forme juste est Naval Research Logistics Quarterly",
+      "normalized_claim": "Le rapport inverse le nom de la revue ; la forme juste est Naval Research Logistics Quarterly.",
       "support_ids": [
         "SUP-cb8c8aa87a259ef2",
         "SUP-a849eb48205c1238"
       ]
     },
     {
-      "claim_id": "C053",
+      "claim_id": "C048",
       "locator": "sections[4].paragraphs[2]",
-      "start": 468,
-      "end": 571,
-      "claim_text": "Bellman ne donne du prénom que l’initiale, S. Johnson, quand la notice de l’article porte S. M. Johnson",
-      "normalized_claim": "Bellman écrit « S. Johnson » ; la notice porte « S. M. Johnson ».",
+      "start": 465,
+      "end": 572,
+      "claim_text": "et Bellman ne donne du prénom que l’initiale, S. Johnson, quand la notice de l’article porte S. M. Johnson.",
+      "normalized_claim": "Bellman n'écrit que l'initiale du prénom alors que la notice de l'article donne S. M. Johnson.",
       "support_ids": [
         "SUP-5872ce9ac5443255",
-        "SUP-459b977daa230510",
-        "SUP-a849eb48205c1238"
+        "SUP-a849eb48205c1238",
+        "SUP-459b977daa230510"
       ]
     },
     {
-      "claim_id": "C054",
+      "claim_id": "C049",
       "locator": "sections[4].paragraphs[2]",
       "start": 573,
       "end": 709,
       "claim_text": "Ces huit pages-là contiennent, à en croire le renvoi de la page 13, la démonstration que le critère de rangement donne le minimum absolu",
-      "normalized_claim": "Selon le renvoi p. 13, la démonstration du minimum absolu est dans l'article de Johnson.",
+      "normalized_claim": "D'après le renvoi de la page 13, l'article de Johnson contient la démonstration que le critère donne le minimum absolu.",
       "support_ids": [
         "SUP-6dd5966e42bc5bb2",
         "SUP-46133eb0eac86dd8",
-        "SUP-270f495798c74e2d"
-      ]
-    },
-    {
-      "claim_id": "C055",
-      "locator": "sections[4].paragraphs[2]",
-      "start": 712,
-      "end": 747,
-      "claim_text": "c’est là qu’il faudra aller la lire",
-      "normalized_claim": "Cette démonstration reste à lire dans l'article de Johnson (non consulté).",
-      "support_ids": [
-        "SUP-5872ce9ac5443255",
-        "SUP-95fef22fe81b21cb",
-        "SUP-a849eb48205c1238"
+        "SUP-95fef22fe81b21cb"
       ]
     }
   ]

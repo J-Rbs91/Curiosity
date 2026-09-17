@@ -3,7 +3,7 @@
   "concept_id": "attente-du-poste-aval",
   "context_budget_tokens": 300000,
   "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
-  "candidate_sha256": "8989888547040b5961c36583adb6589b5162dd2795e27ca3136c38118cca9928",
+  "candidate_sha256": "e4185be14f3c35b3af953b1d61bbc82585f7ab237089a00c75d5bf417bcbcbf5",
   "validated_sha256": "b40e67521f9b8a6255086ab0383521dd07776f7634a87c96518bd84adb7760c5",
   "evidence_sha256": null,
   "paragraphs": [
@@ -43,17 +43,12 @@
     {
       "locator": "sections[2].paragraphs[1]",
       "section_title": "Ce qu’un changement d’ordre peut promettre",
-      "text": "En sens inverse, cette attente ne tombe jamais à zéro. Au premier instant, la seconde machine n’a rien à se mettre sous la dent : l’article de tête est encore sur le poste amont, et l’aval doit patienter au moins le temps de cette première opération. Le meilleur ordre de l’exemple laisse d’ailleurs quatre unités d’attente, et non pas aucune."
-    },
-    {
-      "locator": "sections[2].paragraphs[2]",
-      "section_title": "Ce qu’un changement d’ordre peut promettre",
-      "text": "Ces quatre unités-là, on peut les démonter. En suivant l’ordre (5, 1, 4, 3, 2) sur les durées de la page 15, le poste aval attend d’abord deux unités, le temps que l’article de tête traverse la première machine ; il attend ensuite une unité avant le deuxième article, puis une avant le troisième, parce qu’à chaque fois le poste amont n’avait pas fini quand l’aval s’est libéré ; devant les deux derniers, il n’attend plus rien, parce que l’article qui les précède l’occupe trente unités durant et que le poste amont, pendant ce temps, travaille sans interruption : les deux pièces arrivent désormais juste à temps. Une date de fin se constate ; une somme d’attentes se démonte, et l’on peut demander de chaque morceau ce qui l’a causé."
+      "text": "Cette réduction ne va pourtant pas jusqu’à zéro dans l’exemple du rapport : l’ordre minimal, celui qui donne le temps total le plus court, y laisse encore quatre unités d’attente, et non pas aucune."
     },
     {
       "locator": "sections[3].paragraphs[0]",
       "section_title": "Là où le comptage cesse de tenir",
-      "text": "Ce comptage suppose une configuration précise, et il vaut la peine de la nommer comme une condition plutôt que comme un décor : une seule machine en amont, une seule en aval, chaque article passant sur l’une puis sur l’autre, une fois, dans cet ordre. C’est le cas auquel la première partie du rapport est consacrée, et c’est la brièveté de la chaîne qui rend la mesure possible : l’attente du second poste ne dépend que d’un seul fournisseur, et son plan de charge suffit à tout comptabiliser. Qu’une pièce doive revenir en arrière, ou qu’un troisième poste s’intercale, et l’attente cesse de se lire sur une seule feuille de temps."
+      "text": "Ce comptage suppose une configuration précise, et il vaut la peine de la nommer comme une condition plutôt que comme un décor : une seule machine en amont, une seule en aval, chaque article passant sur l’une puis sur l’autre, une fois, dans cet ordre. C’est le cas auquel la première partie du rapport est consacrée, et c’est de ce cas seul que parle tout ce qui précède."
     },
     {
       "locator": "sections[3].paragraphs[1]",
@@ -68,7 +63,7 @@
     {
       "locator": "sections[4].paragraphs[1]",
       "section_title": "Ce que Bellman crédite à S. Johnson",
-      "text": "Page 13, il ferme la question de la preuve : « For Johnson’s derivation of his result and the remainder of the proof that this criterion yields the absolute minimum, we refer to his paper, [5]. We shall give another derivation below. » L’entrée [5] de sa bibliographie est l’article de Johnson de mars 1954, huit pages. Ce qui revient à Bellman dans ces pages est donc l’exposition, l’exemple chiffré et cette autre dérivation qu’il annonce : au sixième paragraphe, il refait le résultat par équation fonctionnelle, selon l’approche de la programmation dynamique."
+      "text": "Page 13, il ferme la question de la preuve : « For Johnson’s derivation of his result and the remainder of the proof that this criterion yields the absolute minimum, we refer to his paper, [5]. We shall give another derivation below. » L’entrée [5] de sa bibliographie est l’article de Johnson de mars 1954, huit pages. Ce qui revient à Bellman dans ces pages est donc l’exposition et cette autre dérivation qu’il annonce : au sixième paragraphe, il refait le résultat par équation fonctionnelle, selon l’approche de la programmation dynamique."
     },
     {
       "locator": "sections[4].paragraphs[2]",
@@ -470,6 +465,6 @@
       "text": "L'arithmétique de l'exemple a été refaite et vérifiée par le contrôle : avec (a_i, b_i) = (4,5), (4,1), (30,4), (6,30), (2,3), l'ordre (5, 1, 4, 3, 2) donne une fin à 47 avec 4 unités d'inactivité sur la seconde machine, et l'ordre renversé (2, 3, 4, 1, 5) donne 78. Les deux nombres affichés sont exacts."
     }
   ],
-  "estimated_tokens": 8948,
+  "estimated_tokens": 8523,
   "status": "READY"
 }
