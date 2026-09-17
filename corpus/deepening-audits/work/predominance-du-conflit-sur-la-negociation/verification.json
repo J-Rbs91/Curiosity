@@ -1,311 +1,326 @@
 {
   "concept_id": "predominance-du-conflit-sur-la-negociation",
-  "candidate_sha256": "3dc7f8bc479b932c1448901fd9d70e43a26b0297a7291fb4cc0fd2c117cd6ea9",
+  "candidate_sha256": "be5a09f60a39d3156449a18c7f0d8c93c081162b8cf25a5d17614358bac14651",
   "results": [
     {
       "claim_id": "C001",
-      "verdict": "TOO_STRONG",
-      "reason": "Le support n'établit qu'une comparaison — les grandes entreprises sont le lieu d'un « plus grand développement des pratiques contractuelles diverses » et l'appareil de négociation y est le mieux installé. Il n'autorise ni l'inventaire présenté comme réel (délégués, réunions inscrites au calendrier, accords signés) comme propriété d'une entreprise de plusieurs milliers de salariés, ni surtout « des habitudes de discussion vieilles de vingt ans », détail chiffré absent de tout support."
+      "verdict": "SUPPORTED",
+      "reason": "Le support $.review.notes[8] etablit l'existence d'un appareil de negociation et de « pratiques contractuelles diverses » en entreprise ; l'enumeration (delegues, reunions, accords) reste une glose ostensive du meme objet, sans ajout de portee ni attribution."
     },
     {
       "claim_id": "C002",
-      "verdict": "TOO_STRONG",
-      "reason": "Le support est comparatif (développement contractuel plus grand dans les grandes entreprises). Il n'autorise pas la négation absolue « rien de tout cela n'existe » dans un atelier de trente personnes : aucun support ne porte sur l'absence totale d'instances ou d'accords dans les petites unités."
+      "verdict": "SUPPORTED",
+      "reason": "$.review.notes[8] porte explicitement que l'appareil de negociation est le mieux installe dans les grandes entreprises et cite Durand sur « un plus grand developpement des pratiques contractuelles diverses » : le gradient par taille est autorise tel quel."
     },
     {
       "claim_id": "C003",
       "verdict": "SUPPORTED",
-      "reason": "Formulé comme attente conditionnelle (« devrait peser moins »), exactement l'interrogation du hook et la croyance que le support p. 44 attribue au sens commun savant : « là où précisément on pensait que l'appareil de négociation et l'institutionnalisation du conflit se substituait à ce rapport des forces »."
+      "reason": "L'attente commune est attestee par le hook ($.hook) et par la formule p. 44 reprise dans $.review.notes[8] (« la ou precisement on pensait que l'appareil de negociation... se substituait a ce rapport des forces ») ; la phrase reste au niveau d'une attente partagee, sans en faire un resultat."
     },
     {
       "claim_id": "C004",
       "verdict": "SUPPORTED",
-      "reason": "Auteur unique attesté par $.authors[0].name et $.attribution_note ; le traitement statistique de fiches de conflits est porté par l'attribution_note et par le titre de la source (« Les grèves, leurs résultats et la taille des entreprises »)."
+      "reason": "Reformulation directe de la question du dossier ($.hook : « la ou l'appareil de negociation est le mieux installe, la greve pese-t-elle moins ? ») ; le conditionnel « devrait » conserve le statut d'hypothese."
     },
     {
       "claim_id": "C005",
       "verdict": "SUPPORTED",
-      "reason": "Reprise fidèle de l'attribution_note : « les fiches de conflits du travail rédigées par les Inspecteurs du Travail pour l'année 1976 »."
+      "reason": "$.attribution_note etablit l'auteur unique et le traitement des fiches de conflits, et $.sources[0].label donne l'article (Sociologie du travail, 1983, p. 32-44) : « soumettre a un comptage » n'excede pas le traitement statistique atteste."
     },
     {
       "claim_id": "C006",
       "verdict": "SUPPORTED",
-      "reason": "Quasi verbatim de l'attribution_note : « matériau que l'auteur avait déjà traité dans ses propres travaux antérieurs »."
+      "reason": "Quasi verbatim de $.attribution_note : « les fiches de conflits du travail redigees par les Inspecteurs du Travail pour l'annee 1976 »."
     },
     {
       "claim_id": "C007",
       "verdict": "SUPPORTED",
-      "reason": "Le support notes[1] pose explicitement l'objet de la comparaison : « L'écart de durée entre les grèves qui échouent et celles qui aboutissent » ; le titre de l'article confirme la question des résultats des grèves."
+      "reason": "Verbatim de $.attribution_note : « materiau que l'auteur avait deja traite dans ses propres travaux anterieurs »."
     },
     {
       "claim_id": "C008",
       "verdict": "SUPPORTED",
-      "reason": "Autorisé par « contre toute attente » (p. 40) et par « là où précisément on pensait que l'appareil de négociation […] se substituait à ce rapport des forces » (p. 44), tous deux dans notes[1]."
+      "reason": "$.notes[1] pose que l'analyse porte sur l'ecart de duree « entre les greves qui echouent et celles qui aboutissent » : l'objet de la recherche est donc bien ce qui separe une greve avec resultat d'une greve sans resultat."
     },
     {
       "claim_id": "C009",
       "verdict": "SUPPORTED",
-      "reason": "La formule est citée mot pour mot dans les supports, rapportée par Dassa à un ouvrage de sociologie du travail française de 1978 (Adam et Reynaud) et décrite par Segrestin comme la conception que Dassa combat ; le claim ne fait que la situer dans ce milieu et cette décennie, sans lui attribuer d'autorité supplémentaire."
+      "reason": "$.notes[1] cite Dassa p. 40 : « Cela montre bien, contre toute attente... » ; l'enonce reste au niveau du dementi de l'attente, sans surenchere."
     },
     {
       "claim_id": "C010",
-      "verdict": "TOO_STRONG",
-      "reason": "Le seul support atteste « la formule inversée de Clausewitz » : il autorise le rapport d'inversion, mais pas le contenu que le claim prête à Clausewitz (« une formule célèbre […] sur la guerre et la politique »). Ni l'énoncé clausewitzien ni sa célébrité ne figurent dans les supports ; la connaissance générale du modèle n'a pas autorité."
+      "verdict": "SUPPORTED",
+      "reason": "$.notes[10] etablit la formule et son renvoi par Dassa a Adam et Reynaud, PUF, 1978 ; $.notes[5] confirme qu'elle est de Reynaud et qu'elle porte une conception constituee du champ. La citation est reproduite sans modification."
     },
     {
       "claim_id": "C011",
       "verdict": "SUPPORTED",
-      "reason": "notes[10] donne exactement le renvoi : note 2 de la page 32 (première page de l'article, p. 32-44) à Adam et Reynaud, Conflits du travail et changement social, PUF, 1978, p. 127."
+      "reason": "$.notes[5] qualifie explicitement l'enonce de « formule inversee de Clausewitz »."
     },
     {
       "claim_id": "C012",
       "verdict": "SUPPORTED",
-      "reason": "notes[5] indique que l'article de Segrestin a été lu dans son corps et « confirme que la formule […] est bien de Jean-Daniel Reynaud » ; le label de source précise qu'il s'agit d'un « itinéraire scientifique » consacré à Reynaud."
+      "reason": "$.notes[10] : renvoi « note 2 de la page 32 » a Gerard Adam et Jean-Daniel Reynaud, Conflits du travail et changement social, PUF, 1978, p. 127 ; l'article commence p. 32 ($.review.notes[4]), donc « premiere page » est exact."
     },
     {
       "claim_id": "C013",
       "verdict": "SUPPORTED",
-      "reason": "Glose de la formule citée dans le support et de la conception que Segrestin y rattache, où « conflits et négociations forment un seul et même sujet » ; la lecture reste attribuée à la formule, non à une parole directe de Dassa ou de Reynaud."
+      "reason": "$.notes[5] indique que l'article de Segrestin a ete lu dans son corps et confirme l'attribution a Reynaud ; $.sources[1].label donne le titre « Un itineraire scientifique ». L'intermediaire secondaire est conserve dans la phrase."
     },
     {
       "claim_id": "C014",
       "verdict": "SUPPORTED",
-      "reason": "Citation et attribution identiques à notes[5] : Segrestin « expose la conception […] où conflits et négociations forment un seul et même sujet »."
+      "reason": "$.notes[5] rapporte que la conception combattue fait des conflits et des negociations « un seul et meme sujet », ce qui exclut la lecture par succession ; enonce purement negatif, sans ajout."
     },
     {
       "claim_id": "C015",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[7] donne la phrase mot pour mot comme quasi verbatim de la p. 33, lue sur image ; l'article commençant p. 32, « sa deuxième page » est exact, et notes[8] confirme que la p. 33 a été relue sur image."
+      "reason": "Glose de « un seul et meme sujet » ($.notes[5]) et de la formule elle-meme ; aucune portee nouvelle, la these reste celle exposee par la source secondaire."
     },
     {
       "claim_id": "C016",
       "verdict": "SUPPORTED",
-      "reason": "Glose fidèle de « une fois instauré par le conflit, le système de négociation reste tributaire du conflit » : l'appareil est un produit du conflit, donc pas un point de départ."
+      "reason": "Verbatim de $.notes[5], et l'attribution a Segrestin (source secondaire) est maintenue explicitement."
     },
     {
       "claim_id": "C017",
       "verdict": "SUPPORTED",
-      "reason": "Reformulation exacte de « reste tributaire du conflit » (p. 33), repris au $.summary."
+      "reason": "$.review.notes[7] donne la phrase de la p. 33 lue sur image ; $.review.notes[4] etablit que l'article commence p. 32, donc « deuxieme page » est exact. Citation reproduite mot pour mot."
     },
     {
       "claim_id": "C018",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support fourni. L'énoncé, présenté comme un fait sur l'appareil de négociation (production de textes, permanents à plein temps), n'est établi par aucune preuve du bundle."
+      "verdict": "SUPPORTED",
+      "reason": "Glose de « une fois instaure par le conflit » ($.review.notes[7], $.summary) : l'appareil est presente comme produit du conflit, ce que les supports portent."
     },
     {
       "claim_id": "C019",
       "verdict": "SUPPORTED",
-      "reason": "notes[1] : l'appareil « ne crée aucune capacité autonome à produire des résultats, elle relève le seuil de pression à partir duquel un résultat s'obtient » ; la citation p. 43 ajoute que la pression des travailleurs est indispensable pour obtenir des résultats."
+      "reason": "Reformulation de « le systeme de negociation reste tributaire du conflit » ($.review.notes[7], $.summary), sans renforcement."
     },
     {
       "claim_id": "C020",
       "verdict": "SUPPORTED",
-      "reason": "notes[1] montre que l'indicateur mobilisé est bien la durée des grèves, comparée entre échecs et succès."
+      "reason": "$.quotation.text (p. 43) : « la pression des travailleurs est indispensable pour obtenir des resultats » ; $.notes[1] : l'appareil « ne cree aucune capacite autonome a produire des resultats ». La dependance enoncee ne depasse pas ces supports."
     },
     {
       "claim_id": "C021",
       "verdict": "SUPPORTED",
-      "reason": "Énoncé conditionnel qui explicite l'indicateur du support : l'écart de durée entre grèves qui échouent et grèves qui aboutissent est ce que notes[1] interprète comme mesure de la sensibilité au rapport de forces."
+      "reason": "$.notes[1] fait de la duree des greves l'indicateur travaille (ecarts p. 40) et $.review.notes[7] cite p. 41 la relation duree/resultats."
     },
     {
       "claim_id": "C022",
       "verdict": "SUPPORTED",
-      "reason": "Branche conditionnelle symétrique de la précédente, cohérente avec le pôle des petites entreprises où notes[1] relève un écart de 1 jour ; rien n'est présenté comme un résultat acquis."
+      "reason": "Enonce d'attente methodologique conforme a $.notes[1], ou l'ecart de duree entre greves qui echouent et greves qui aboutissent sert precisement de mesure de la sensibilite au rapport de forces ; formulation au conditionnel."
     },
     {
       "claim_id": "C023",
       "verdict": "SUPPORTED",
-      "reason": "Restitue la prédiction attendue, celle que le hook interroge et que le support p. 44 attribue explicitement à ce que « l'on pensait »."
+      "reason": "Contrepartie hypothetique de la meme construction ; $.notes[1] et $.review.notes[8] autorisent l'opposition entre un ecart fort et un ecart faible comme lecture de la sensibilite au rapport de forces. Rien n'est presente comme resultat."
     },
     {
       "claim_id": "C024",
       "verdict": "SUPPORTED",
-      "reason": "Chiffres et page identiques à notes[1] : 1 jour dans les petites, 4,8 dans les moyennes, 5,2 dans les grandes (p. 40)."
+      "reason": "Reprise de l'attente portee par $.hook et par la p. 44 citee dans $.review.notes[8] ; il s'agit de la prediction de l'idee de depart, explicitement designee comme telle."
     },
     {
       "claim_id": "C025",
       "verdict": "SUPPORTED",
-      "reason": "Autorisé par « contre toute attente » et par le renversement explicité p. 44 dans les deux supports."
+      "reason": "Chiffres verbatim de $.notes[1] : 1 jour (petites), 4,8 (moyennes), 5,2 (grandes), p. 40."
     },
     {
       "claim_id": "C026",
       "verdict": "SUPPORTED",
-      "reason": "Citation mot pour mot de notes[1], attribuée à Dassa comme dans le support."
+      "reason": "Consequence directe des chiffres de $.notes[1] combines a la premisse de $.review.notes[8] (appareil le mieux installe dans les grandes entreprises) ; aucune causalite ajoutee."
     },
     {
       "claim_id": "C027",
       "verdict": "SUPPORTED",
-      "reason": "Traduction de l'écart de 5,2 jours relevé p. 40 entre grèves qui échouent et grèves qui aboutissent dans les grandes entreprises ; le claim reste dans le registre de l'écart mesuré, sans promettre un résultat à qui tiendrait cinq jours."
+      "reason": "Citation verbatim rapportee par $.notes[1] comme commentaire de Dassa p. 40."
     },
     {
       "claim_id": "C028",
       "verdict": "SUPPORTED",
-      "reason": "Citation et page conformes à review.notes[7] : p. 41, « dans les petite[s] entreprises on relève une quasi indépendance entre durée des grèves et résultats obtenus »."
+      "reason": "Restitution de l'ecart de 5,2 jours donne par $.notes[1] comme ce qui distingue, dans les grandes entreprises, les greves qui echouent de celles qui aboutissent ; formulation descriptive de l'ecart, non d'une regle individuelle."
     },
     {
       "claim_id": "C029",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[7] situe la phrase p. 43, point 3) : « Les grandes entreprises sont plus sensibles que les petites au rapport des forces »."
+      "reason": "Citation p. 41 presente verbatim dans $.review.notes[7] : « dans les petite[s] entreprises on releve une quasi independance entre duree des greves et resultats obtenus »."
     },
     {
       "claim_id": "C030",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[1] donne la phrase mot pour mot, vérifiée sur l'image de la p. 41."
+      "reason": "Citation p. 43, point 3), verbatim dans $.review.notes[7]."
     },
     {
       "claim_id": "C031",
       "verdict": "SUPPORTED",
-      "reason": "Le restrictif est celui de l'auteur : « et surtout pour les grandes entreprises » (p. 41) ; review.notes[8] confirme que la thèse est portée dans ces termes, ce qui autorise le refus d'une loi générale."
+      "reason": "Citation p. 41 verbatim dans $.review.notes[1], verifiee sur image ; $.notes[0] confirme la formule « predominance du conflit sur la negociation » (p. 41)."
     },
     {
       "claim_id": "C032",
       "verdict": "SUPPORTED",
-      "reason": "L'ignorance affirmée est bornée à l'indicateur du support : la quasi indépendance entre durée et résultats dans les petites entreprises (p. 41) laisse effectivement la durée sans pouvoir explicatif à ce pôle ; le claim ne prétend pas que l'article n'en dit rien d'autre."
+      "reason": "L'incise « et surtout pour les grandes entreprises » figure dans $.review.notes[1] et $.review.notes[8] ; la restriction de portee enoncee est un affaiblissement, non un renforcement."
     },
     {
       "claim_id": "C033",
       "verdict": "SUPPORTED",
-      "reason": "Citation et page conformes à notes[2] : « Il faut immédiatement préciser que nous travaillons sur des entreprises qui ont connu des grèves » (p. 34)."
+      "reason": "Consequence des supports : $.review.notes[7] donne la quasi independance duree/resultats au pole des petites entreprises, ce qui laisse ouvert le determinant de l'issue ; la phrase est bornee a « ces chiffres »."
     },
     {
       "claim_id": "C034",
       "verdict": "SUPPORTED",
-      "reason": "Conséquence directe de la réserve de champ posée p. 34 (notes[2]) et de l'année du matériau, 1976, établie par l'attribution_note."
+      "reason": "Meme fondement : la quasi independance p. 41 ($.review.notes[7]) et l'ecart de 1 jour ($.notes[1]) autorisent a dire que la duree ne discrimine pas l'issue dans les petites entreprises ; l'enonce est conditionne a ces mesures."
     },
     {
       "claim_id": "C035",
       "verdict": "SUPPORTED",
-      "reason": "notes[2] mentionne « la plus grande combativité constatée dans les petites entreprises », précisément à l'intérieur du champ des entreprises ayant connu des grèves."
+      "reason": "Citation p. 34 verbatim dans $.notes[2], expressement attribuee a l'auteur."
     },
     {
       "claim_id": "C036",
       "verdict": "SUPPORTED",
-      "reason": "Chiffres identiques à notes[2] : fréquence de l'ordre de 3 pour cent contre 30 pour cent dans les entreprises d'au moins 1 000 travailleurs."
+      "reason": "$.notes[2] pose la restriction du champ aux entreprises ayant connu des greves ; $.attribution_note fixe l'annee 1976. La portee est restreinte, non etendue."
     },
     {
       "claim_id": "C037",
       "verdict": "SUPPORTED",
-      "reason": "Citation verbatim de l'avertissement de Dassa rapporté par notes[2], avec la même attribution."
+      "reason": "$.notes[2] documente l'inegale frequence des greves selon la taille (environ 3 % contre 30 % dans les entreprises d'au moins 1 000 travailleurs), ce qui fonde la difference de composition de l'echantillon."
     },
     {
       "claim_id": "C038",
       "verdict": "SUPPORTED",
-      "reason": "Suit de la restriction du champ (entreprises ayant connu des grèves) et de la faible fréquence des grèves dans les petites unités, toutes deux dans notes[2]."
+      "reason": "$.notes[2] mentionne « la plus grande combativite constatee dans les petites entreprises », et la phrase conserve le caractere interne a l'echantillon (« vues du dedans »)."
     },
     {
       "claim_id": "C039",
       "verdict": "SUPPORTED",
-      "reason": "Liste d'exclusions identique à notes[2] : agriculture, administrations publiques, conflits longs sur l'emploi après liquidation judiciaire, grèves répétitives interrompues plus de 48 heures, grèves généralisées."
+      "reason": "Ordres de grandeur verbatim de $.notes[2] : environ 3 % contre 30 % dans les entreprises d'au moins 1 000 travailleurs."
     },
     {
       "claim_id": "C040",
       "verdict": "SUPPORTED",
-      "reason": "Conséquence méthodologique des exclusions listées par notes[2], présentée comme lecture de l'auditeur et non comme parole de Dassa ; elle ne dépasse pas la nature des cas écartés (liquidation judiciaire, grèves généralisées)."
+      "reason": "Citation verbatim de l'avertissement de Dassa rapporte par $.notes[2], avec attribution maintenue."
     },
     {
       "claim_id": "C041",
       "verdict": "SUPPORTED",
-      "reason": "L'année unique, 1976, vient de l'attribution_note ; l'exclusion des administrations publiques et de l'agriculture, énoncée juste avant et portée par notes[2], autorise la caractérisation du champ comme privé."
+      "reason": "Suite immediate de la restriction posee par $.notes[2] (travail sur les seules entreprises ayant connu des greves, greves rares dans les petites) ; enonce restrictif."
     },
     {
       "claim_id": "C042",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[8] atteste la citation de Michelle Durand par Dassa p. 33, mot pour mot."
+      "reason": "Liste d'exclusions verbatim de $.notes[2] (agriculture, administrations publiques, conflits longs sur l'emploi apres liquidation judiciaire, greves repetitives interrompues plus de 48 heures, greves generalisees)."
     },
     {
       "claim_id": "C043",
       "verdict": "SUPPORTED",
-      "reason": "Reformulation exacte de la citation Durand : le plus de grèves là où les pratiques contractuelles sont les plus développées."
+      "reason": "Lecture qui suit des exclusions listees par $.notes[2] : les categories ecartees sont precisement celles dont la duree n'est pas comparable a celle d'un arret ordinaire ; aucune affirmation n'est pretee a l'auteur."
     },
     {
       "claim_id": "C044",
-      "verdict": "SUPPORTED",
-      "reason": "La première anomalie porte bien sur le nombre de grèves (citation Durand) et la seconde sur la relation durée/résultats établie par notes[1] ; la distinction ne dépasse pas les supports."
+      "verdict": "TOO_STRONG",
+      "reason": "Les supports etablissent seulement l'exclusion de l'agriculture et des administrations publiques ($.notes[2]) et l'annee 1976 ($.attribution_note). Aucun support ne caracterise le champ comme « le secteur prive » : l'exclusion des administrations publiques ne reduit pas le perimetre au prive, et cette qualification ajoute une delimitation non attestee."
     },
     {
       "claim_id": "C045",
-      "verdict": "TOO_STRONG",
-      "reason": "Le volet fréquence est porté par la citation Durand, mais aucun support n'établit que l'efficacité des arrêts « ne recule pas » là où la discussion est installée. notes[1] dit l'inverse en substance : l'appareil « relève le seuil de pression à partir duquel un résultat s'obtient », c'est-à-dire qu'un résultat y coûte davantage — ce que le texte lecteur reconnaît lui-même plus loin (« il en relève le prix »)."
+      "verdict": "SUPPORTED",
+      "reason": "Citation de Michelle Durand rapportee par Dassa p. 33, verbatim dans $.review.notes[8], avec la chaine d'attribution conservee."
     },
     {
       "claim_id": "C046",
       "verdict": "SUPPORTED",
-      "reason": "Citation conforme à review.notes[7], p. 44 : « les tableaux 6, 7 et 8 montrent avec éclat que la sensibilité au rapport des forces est particulièrement nette dans les grandes entreprises »."
+      "reason": "Resume fidele de la citation Durand ($.review.notes[8]) : le plus de greves la ou les pratiques contractuelles sont le plus developpees."
     },
     {
       "claim_id": "C047",
       "verdict": "SUPPORTED",
-      "reason": "Segment cité mot pour mot dans review.notes[8] et notes[1], rapporté à la p. 44."
+      "reason": "Distinction entre nombre de greves ($.review.notes[8]) et resultats obtenus mesures par les ecarts de duree ($.notes[1]) ; les deux registres figurent dans les supports."
     },
     {
       "claim_id": "C048",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support fourni. La définition proposée de l'institutionnalisation du conflit (règles et rendez-vous qui absorbent l'affrontement) est présentée au lecteur comme un acquis, sans preuve dans le bundle."
+      "verdict": "SUPPORTED",
+      "reason": "Conjonction des deux constats attestes : frequence superieure des greves dans les grandes entreprises ($.review.notes[8]) et ecart de duree maximal a ce meme pole ($.notes[1])."
     },
     {
       "claim_id": "C049",
       "verdict": "SUPPORTED",
-      "reason": "Porté par la formule p. 44 (« se substituait à ce rapport des forces ») et par notes[1] : ce qui est nié est la capacité autonome de l'appareil, non l'utilité de la négociation."
+      "reason": "Citation p. 44 verbatim dans $.review.notes[7] (« les tableaux 6, 7 et 8 montrent avec eclat... ») ; la reference aux tableaux est conservee."
     },
     {
       "claim_id": "C050",
       "verdict": "SUPPORTED",
-      "reason": "Le support est lui-même une note de lecture explicitant « le sens de la variation, que le résumé n'a pas la place de porter » ; le claim signale précisément ce statut interprétatif au lieu d'attribuer la lecture à l'auteur."
+      "reason": "Suite de la meme phrase p. 44, verbatim dans $.review.notes[8] et $.notes[1]."
     },
     {
       "claim_id": "C051",
       "verdict": "SUPPORTED",
-      "reason": "Quasi verbatim de notes[1] : « ne crée aucune capacité autonome à produire des résultats, elle relève le seuil de pression à partir duquel un résultat s'obtient »."
+      "reason": "$.notes[1] precise que ce qui est refute est la capacite de l'appareil a se substituer au rapport de forces, non l'utilite de la negociation ; le commentaire sur le verbe « se substituer » reprend la p. 44 citee."
     },
     {
       "claim_id": "C052",
       "verdict": "SUPPORTED",
-      "reason": "Condensé fidèle de notes[1] (relèvement du seuil de pression) et de la citation p. 43, où la pression des travailleurs est dite indispensable pour obtenir des résultats."
+      "reason": "La phrase signale elle-meme qu'il s'agit d'une lecture et non d'un enonce de l'auteur, ce qui correspond au statut de $.notes[1] ; aucune attribution primaire n'est operee."
     },
     {
       "claim_id": "C053",
       "verdict": "SUPPORTED",
-      "reason": "notes[3] situe ces réserves en note 1 et note 2 de la page 36."
+      "reason": "Reprise quasi litterale de $.notes[1] (« ne cree aucune capacite autonome a produire des resultats, elle releve le seuil de pression a partir duquel un resultat s'obtient »), sous le regime de lecture pose par la phrase precedente."
     },
     {
       "claim_id": "C054",
       "verdict": "SUPPORTED",
-      "reason": "notes[3] : « les reprises du travail avec promesses étant codées comme conflits avec résultats »."
+      "reason": "Condense de $.notes[1] (relevement du seuil de pression) et de $.quotation.text (« la pression des travailleurs est indispensable pour obtenir des resultats »)."
     },
     {
       "claim_id": "C055",
       "verdict": "SUPPORTED",
-      "reason": "Citation verbatim de la note 1 p. 36 rapportée par notes[3], avec le même modalisateur « peut-être »."
+      "reason": "$.notes[3] rapporte les notes 1 et 2 de la page 36 comme limites reconnues par l'auteur ; la localisation est exacte."
     },
     {
       "claim_id": "C056",
       "verdict": "SUPPORTED",
-      "reason": "notes[3] porte la note 2 p. 36 mot pour mot, y compris la réserve « mais cela reste à établir » ; le caractère non mesuré de la négociation à froid découle du matériau, constitué de fiches de conflits."
+      "reason": "$.notes[3] : « les reprises du travail avec promesses etant codees comme conflits avec resultats »."
     },
     {
       "claim_id": "C057",
       "verdict": "SUPPORTED",
-      "reason": "notes[3] conclut exactement ainsi : limites reconnues par l'auteur, « Dassa le dit, il ne le lève pas »."
+      "reason": "Citation verbatim de la note 1, p. 36, rapportee par $.notes[3] ; le « peut-etre » de l'auteur est conserve."
     },
     {
       "claim_id": "C058",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[2] : « Dassa se situe dans un débat préexistant qu'il cite lui-même p. 32, note 2 […] non l'opposition conflit/négociation comme telle » ; notes[10] confirme le renvoi."
+      "reason": "$.notes[3] porte la note 2, p. 36, avec le modal et la reserve « mais cela reste a etablir » ; l'echappement au comptage decoule du materiau (fiches de conflits, entreprises ayant connu des greves, $.notes[2] et $.attribution_note)."
     },
     {
       "claim_id": "C059",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[2] attribue en propre à Dassa « la démonstration quantitative par la taille des entreprises » et notes[0] précise que la taille est « l'opérateur et non l'objet »."
+      "reason": "$.notes[3] conclut : « Dassa le dit, il ne le leve pas. »"
     },
     {
       "claim_id": "C060",
       "verdict": "SUPPORTED",
-      "reason": "Citation identique à $.quotation.text, localisée p. 43 par $.quotation.locator et vérifiée sur l'image de la page selon review.notes[3] (section IV, Conclusions, point 3)."
+      "reason": "$.review.notes[2] consigne que Dassa se situe dans un debat preexistant qu'il cite lui-meme (p. 32, note 2) et que l'opposition conflit/negociation ne lui revient pas en propre ; $.notes[10] confirme le renvoi."
     },
     {
       "claim_id": "C061",
       "verdict": "SUPPORTED",
-      "reason": "Double restriction attestée : année 1976 par l'attribution_note, champ des entreprises ayant connu des grèves par la réserve de la p. 34 dans notes[2]."
+      "reason": "$.review.notes[2] attribue a Dassa « la demonstration quantitative par la taille des entreprises » et $.notes[0] precise que la taille est l'operateur et non l'objet."
+    },
+    {
+      "claim_id": "C062",
+      "verdict": "SUPPORTED",
+      "reason": "Citation identique a $.quotation.text, locator p. 43 ($.quotation.locator), verifiee sur image par $.review.notes[3] (« identique au texte de la fiche, mot pour mot »)."
+    },
+    {
+      "claim_id": "C063",
+      "verdict": "SUPPORTED",
+      "reason": "$.attribution_note fixe l'annee 1976 et $.notes[2] la restriction aux entreprises ayant connu des greves ; enonce restrictif conforme."
+    },
+    {
+      "claim_id": "C064",
+      "verdict": "SUPPORTED",
+      "reason": "Consequence des bornes posees par $.notes[2], et $.notes[6] confirme qu'aucune source du dossier ne documente ce qu'il en est hors de ces bornes ; la phrase s'abstient de toute extension."
     }
   ]
 }
