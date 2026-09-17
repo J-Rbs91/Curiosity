@@ -891,6 +891,35 @@ depuis le 31 août.
 
 ---
 
+# F. Les acquisitions que l'audit v3 réclame, ouvert le 17 septembre 2026
+
+Chantier neuf, et il ne vient pas d'un manque repéré à la lecture : il vient de cartes que le
+gate déterministe a refusé de laisser publier. **Ce que l'audit des approfondissements découvre
+n'est pas toujours un défaut de pédagogie ; c'est parfois un dossier trop pauvre pour porter le
+texte qu'on voudrait écrire.** Ces cas-là ne se règlent pas par une réécriture de plus.
+
+**`cinq-dimensions-de-l-emploi`.** Dix-sept claims sur cinquante-neuf refusés au premier tour, et
+deux causes couvrent presque tout. Le dossier **ne porte aucune définition citable des cinq
+dimensions**, ce qui interdit de rattacher le moindre exemple à une dimension nommée. Et ses
+supports s'arrêtent à « dimensions → trois états », ce qui interdit tout le maillon « états →
+résultats », sa négation comprise. La réécriture a passé le gate en amputant ces deux choses, et
+la revue l'a rejetée pour cette raison même : ce qui restait n'enseignait plus à quoi le modèle
+sert. **Les deux pièces manquantes sont dans le rapport, qui est `full-text`** — les définitions,
+et le versant positif de la Figure 1 attesté par `review.notes[7]`. Tant qu'elles ne sont pas au
+dossier, toute réécriture rejouera la même partie.
+
+**Et la version restaurée n'est pas saine pour autant.** Elle porte les propositions que le gate a
+refusées, dont une erreur conceptuelle : la négation d'un effet direct contredit la Figure 1 de son
+propre dossier. Une carte rendue à son état antérieur après un `REJECT` n'est pas une carte
+validée une seconde fois.
+
+**Comment reconnaître les suivantes sans les auditer une à une.** Vingt-deux des cartes non encore
+auditées n'ont **aucun répertoire `corpus/evidence/<id>/`**, et les trois du lot du 17 septembre
+en faisaient partie. C'est le signal le moins cher à calculer et le plus prédictif à ce jour :
+il ne dit pas qu'une carte est fausse, il dit que son texte repose sur un dossier mince.
+
+---
+
 # Ce qui n'est pas un chantier
 
 **Les 31 sujets d'échafaudage jamais instruits** que `corpus:audit` liste en fin de sortie.
