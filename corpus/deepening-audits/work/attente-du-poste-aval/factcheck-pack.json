@@ -1,0 +1,475 @@
+{
+  "protocol_version": 1,
+  "concept_id": "attente-du-poste-aval",
+  "context_budget_tokens": 300000,
+  "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
+  "candidate_sha256": "8989888547040b5961c36583adb6589b5162dd2795e27ca3136c38118cca9928",
+  "validated_sha256": "b40e67521f9b8a6255086ab0383521dd07776f7634a87c96518bd84adb7760c5",
+  "evidence_sha256": null,
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "text": "Imaginons un atelier où chaque pièce subit deux opérations dans un ordre imposé : elle passe d’abord sur une première machine, puis sur une seconde. Les cinq pièces du jour sont là, on peut les lancer dans le rang que l’on veut, et le chef d’atelier soupçonne que ce rang compte. Il a raison. Mais s’il espère qu’un bon rangement fera travailler la seconde machine plus vite, il se trompe : quel que soit l’ordre choisi, elle fera exactement le même travail, puisque ce sont les mêmes cinq pièces, et que l’addition ne se soucie pas de l’ordre des termes."
+    },
+    {
+      "locator": "lead[1]",
+      "text": "Reste alors une question désagréable. Si le travail de la seconde machine est fixé d’avance, sur quoi le rangement mord-il ? Car le chantier, lui, ne dure pas le même temps selon l’ordre retenu, et l’écart peut être considérable. Richard Bellman répond en une ligne d’arithmétique, à la page 11 d’un rapport de la RAND Corporation révisé en mai 1955 ; le résultat, il ne se l’attribue pas, il le crédite à S. Johnson."
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "section_title": "La feuille de temps du second poste",
+      "text": "Tenez-vous près de la seconde machine, du premier instant du chantier jusqu’à celui où la dernière pièce en sort. Son temps se partage en deux, et en deux seulement : les intervalles pendant lesquels elle usine quelque chose, et les intervalles pendant lesquels elle attend qu’une pièce lui parvienne. Il n’y a pas de troisième cas. La durée totale mesurée à cet endroit est donc la somme de ses temps de travail augmentée de la somme de ses temps morts. Le premier terme est acquis d’avance, quel que soit le rang des pièces. Tout ce qu’un rangement peut déplacer est logé dans le second."
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "section_title": "La feuille de temps du second poste",
+      "text": "C’est ce que pose la page 11. Bellman y appelle x_i le temps d’inactivité de la seconde machine juste avant qu’elle ne prenne le i-ème article : « inactive time on the second machine, the binding machine, immediately before processing the i-th item ». Il en fait la somme, qu’il note I_n, observe que le temps total du chantier vaut cette somme d’attentes ajoutée aux durées de travail du second poste, et en tire une conséquence de méthode : « we may take I_n as our measure of the efficiency of a scheduling of operations », et c’est cette quantité, écrit-il, que l’on cherche à minimiser. Juger un rangement, ce sera désormais mesurer une attente."
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "section_title": "Cinq articles, deux ordres, trente et une unités",
+      "text": "Le rapport donne un exemple chiffré page 15. Cinq articles, chacun avec sa durée sur la première machine puis sur la seconde : (4, 5), (4, 1), (30, 4), (6, 30) et (2, 3). Additionnez le second nombre de chaque paire, 5 plus 1 plus 4 plus 30 plus 3 : le poste aval a quarante-trois unités de travail devant lui. Ce total est acquis avant qu’on ait décidé quoi que ce soit, et il vaudra quarante-trois pour n’importe quel rangement des cinq articles."
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "section_title": "Cinq articles, deux ordres, trente et une unités",
+      "text": "La règle exposée dans ces pages donne l’ordre (5, 1, 4, 3, 2), et Bellman en note le résultat : « The rule yields (5, 1, 4, 3, 2) as the minimal order with a total time of 47 units, and 4 units of idle time. For the reversed order, the total time is 78, the longest time. » Les deux nombres se lisent alors sans mystère. Quarante-sept, ce sont les quarante-trois unités de travail et quatre unités d’attente. Soixante-dix-huit, ce sont les mêmes quarante-trois unités de travail et trente-cinq unités d’attente. Entre le meilleur rangement et le pire, l’écart atteint trente et une unités, et ces trente et une unités sont de l’attente pure."
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "section_title": "Ce qu’un changement d’ordre peut promettre",
+      "text": "La conséquence est très concrète pour qui envisage de réorganiser un atelier de ce genre. Avant de toucher au rangement, on peut mesurer ce qu’il y a à espérer : il suffit de chronométrer le temps pendant lequel le poste aval reste sans rien à faire. Ce temps est le gain maximal, et il n’y en a pas d’autre à aller chercher de ce côté. Un poste aval qui n’attend jamais travaille déjà au plus court, et le meilleur ordonnancement du monde ne lui fera pas gagner une minute."
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "section_title": "Ce qu’un changement d’ordre peut promettre",
+      "text": "En sens inverse, cette attente ne tombe jamais à zéro. Au premier instant, la seconde machine n’a rien à se mettre sous la dent : l’article de tête est encore sur le poste amont, et l’aval doit patienter au moins le temps de cette première opération. Le meilleur ordre de l’exemple laisse d’ailleurs quatre unités d’attente, et non pas aucune."
+    },
+    {
+      "locator": "sections[2].paragraphs[2]",
+      "section_title": "Ce qu’un changement d’ordre peut promettre",
+      "text": "Ces quatre unités-là, on peut les démonter. En suivant l’ordre (5, 1, 4, 3, 2) sur les durées de la page 15, le poste aval attend d’abord deux unités, le temps que l’article de tête traverse la première machine ; il attend ensuite une unité avant le deuxième article, puis une avant le troisième, parce qu’à chaque fois le poste amont n’avait pas fini quand l’aval s’est libéré ; devant les deux derniers, il n’attend plus rien, parce que l’article qui les précède l’occupe trente unités durant et que le poste amont, pendant ce temps, travaille sans interruption : les deux pièces arrivent désormais juste à temps. Une date de fin se constate ; une somme d’attentes se démonte, et l’on peut demander de chaque morceau ce qui l’a causé."
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "section_title": "Là où le comptage cesse de tenir",
+      "text": "Ce comptage suppose une configuration précise, et il vaut la peine de la nommer comme une condition plutôt que comme un décor : une seule machine en amont, une seule en aval, chaque article passant sur l’une puis sur l’autre, une fois, dans cet ordre. C’est le cas auquel la première partie du rapport est consacrée, et c’est la brièveté de la chaîne qui rend la mesure possible : l’attente du second poste ne dépend que d’un seul fournisseur, et son plan de charge suffit à tout comptabiliser. Qu’une pièce doive revenir en arrière, ou qu’un troisième poste s’intercale, et l’attente cesse de se lire sur une seule feuille de temps."
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "section_title": "Là où le comptage cesse de tenir",
+      "text": "Le réglage des machines est l’autre porte de sortie. Si remettre la seconde machine en état de recevoir la pièce suivante prend un temps qui dépend de celle qui vient de la quitter, alors la charge de travail du poste aval cesse elle-même d’être acquise d’avance, et c’est le premier pas du raisonnement qui est à refaire, non le dernier. L’article de S. M. Johnson auquel Bellman renvoie annonce dès son titre des ordonnancements à deux et à trois étapes, temps de réglage compris : c’est de ce côté que la question continue."
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "section_title": "Ce que Bellman crédite à S. Johnson",
+      "text": "Le rapport est signé de Richard Bellman seul, et pourtant le résultat qu’il expose ne lui appartient pas. Il l’écrit dès la page 8 : « Two solutions will be presented, the original one due to S. Johnson, based upon an explicit formula of interest in itself, and a solution based upon the functional equation approach of the theory of dynamic programming. » Ses titres de paragraphe portent la même mention en toutes lettres : le troisième s’intitule « Lemmas of S. Johnson », le quatrième « The Result of S. Johnson ». Le partage du temps entre travail et attente, celui-là même qu’on vient de lire, appartient au troisième."
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "section_title": "Ce que Bellman crédite à S. Johnson",
+      "text": "Page 13, il ferme la question de la preuve : « For Johnson’s derivation of his result and the remainder of the proof that this criterion yields the absolute minimum, we refer to his paper, [5]. We shall give another derivation below. » L’entrée [5] de sa bibliographie est l’article de Johnson de mars 1954, huit pages. Ce qui revient à Bellman dans ces pages est donc l’exposition, l’exemple chiffré et cette autre dérivation qu’il annonce : au sixième paragraphe, il refait le résultat par équation fonctionnelle, selon l’approche de la programmation dynamique."
+    },
+    {
+      "locator": "sections[4].paragraphs[2]",
+      "section_title": "Ce que Bellman crédite à S. Johnson",
+      "text": "Remonter aux deux textes ne demande pas le même effort. Celui de Bellman, soixante-dix pages révisées le 23 mai 1955, n’est pas un article de revue mais un papier de la RAND Corporation, et une copie numérisée en est servie publiquement : le tableau de la page 15 se regarde. Celui de Johnson demande un détour, car le rapport écrit le nom de la revue à l’envers, « Naval Logistics Research Quarterly », là où la forme juste est Naval Research Logistics Quarterly, et Bellman ne donne du prénom que l’initiale, S. Johnson, quand la notice de l’article porte S. M. Johnson. Ces huit pages-là contiennent, à en croire le renvoi de la page 13, la démonstration que le critère de rangement donne le minimum absolu : c’est là qu’il faudra aller la lire."
+    }
+  ],
+  "supports": [
+    {
+      "id": "SUP-f7d4154d237128c5",
+      "origin": "validated",
+      "path": "$.$schema",
+      "access": "n/a",
+      "text": "../schema/carte.schema.json"
+    },
+    {
+      "id": "SUP-2a6cb01c893a878b",
+      "origin": "validated",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "attente-du-poste-aval"
+    },
+    {
+      "id": "SUP-3e12200717e919a5",
+      "origin": "validated",
+      "path": "$.slug",
+      "access": "n/a",
+      "text": "attente-du-poste-aval"
+    },
+    {
+      "id": "SUP-ad89626955b2952c",
+      "origin": "validated",
+      "path": "$.status",
+      "access": "n/a",
+      "text": "VALIDATED"
+    },
+    {
+      "id": "SUP-6a97057a08939b1b",
+      "origin": "validated",
+      "path": "$.title",
+      "access": "n/a",
+      "text": "L'ordre ne change que l'attente du poste aval"
+    },
+    {
+      "id": "SUP-eb04af40bb49260b",
+      "origin": "validated",
+      "path": "$.themes[0]",
+      "access": "n/a",
+      "text": "ordonnancer"
+    },
+    {
+      "id": "SUP-62b70ba9fe1bd3db",
+      "origin": "validated",
+      "path": "$.theme_labels.ordonnancer",
+      "access": "n/a",
+      "text": "L'ordre dans lequel les choses passent"
+    },
+    {
+      "id": "SUP-d4f5db511631fafe",
+      "origin": "validated",
+      "path": "$.authors[0].name",
+      "access": "n/a",
+      "text": "Richard Bellman"
+    },
+    {
+      "id": "SUP-c4dc562b5c90462d",
+      "origin": "validated",
+      "path": "$.attribution_note",
+      "access": "n/a",
+      "text": "Le rapport RAND P-651, révisé le 23 mai 1955, est signé de Richard Bellman seul. Bellman y présente le résultat sur l'ordonnancement à deux postes comme celui de S. Johnson : il intitule ses paragraphes 3 et 4 « Lemmas of S. Johnson » et « The Result of S. Johnson », et renvoie pour la démonstration à l'article de Johnson paru en mars 1954. Ce qui revient à Bellman dans ces pages est l'exposition, l'exemple chiffré et une redérivation par la programmation dynamique."
+    },
+    {
+      "id": "SUP-5e2b8598e8600242",
+      "origin": "validated",
+      "path": "$.hook",
+      "access": "n/a",
+      "text": "Sur deux machines, que change vraiment l'ordre dans lequel les pièces passent ?"
+    },
+    {
+      "id": "SUP-cbea1a9b53f2327b",
+      "origin": "validated",
+      "path": "$.summary",
+      "access": "n/a",
+      "text": "La charge du second poste ne dépend pas de l'ordre : le temps total, c'est ce travail plus l'attente du poste aval. L'ordonnancement n'agit que sur cette attente."
+    },
+    {
+      "id": "SUP-7ca48ed5ea095e3e",
+      "origin": "validated",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "La règle donne (5, 1, 4, 3, 2) comme ordre minimal, avec un temps total de 47 unités […]. Pour l'ordre inverse, le temps total est de 78 […]."
+    },
+    {
+      "id": "SUP-1dbf1b7c41d6c2c3",
+      "origin": "validated",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Richard Bellman, Mathematical Aspects of Scheduling Theory, RAND Corporation, rapport P-651, révisé le 23 mai 1955."
+    },
+    {
+      "id": "SUP-8a37339c20338fa6",
+      "origin": "validated",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 15"
+    },
+    {
+      "id": "SUP-76d11f542691c5ac",
+      "origin": "validated",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-6a6d0291ccd83aa1",
+      "origin": "validated",
+      "path": "$.quotation.original_text",
+      "access": "n/a",
+      "text": "The rule yields (5, 1, 4, 3, 2) as the minimal order with a total time of 47 units, and 4 units of idle time. For the reversed order, the total time is 78, the longest time."
+    },
+    {
+      "id": "SUP-a006aef58d724e59",
+      "origin": "validated",
+      "path": "$.quotation.original_language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-520c61d935611e51",
+      "origin": "validated",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "in-house"
+    },
+    {
+      "id": "SUP-6a957b7b82dbc6fb",
+      "origin": "validated",
+      "path": "$.quotation.translation.translator",
+      "access": "n/a",
+      "text": "Traduction interne non publiée (chaîne Curiosity, session du 29 août 2026). Aucune traduction française publiée du rapport RAND P-651 n'a été identifiée. Les coupes sont celles de la citation anglaise, inchangées : la première retire « and 4 units of idle time », la seconde « the longest time ». « Units » est laissé en « unités » : Bellman ne donne pas d'unité de temps."
+    },
+    {
+      "id": "SUP-4a6144f753244881",
+      "origin": "validated",
+      "path": "$.sources[0].label",
+      "access": "full-text",
+      "text": "Richard Bellman, Mathematical Aspects of Scheduling Theory, RAND Corporation, rapport P-651, révisé le 23 mai 1955, 70 p."
+    },
+    {
+      "id": "SUP-ec988b343d66a1a7",
+      "origin": "validated",
+      "path": "$.sources[0].kind",
+      "access": "full-text",
+      "text": "primary"
+    },
+    {
+      "id": "SUP-2393a43fee8bab54",
+      "origin": "validated",
+      "path": "$.sources[0].locator",
+      "access": "full-text",
+      "text": "p. 11-15"
+    },
+    {
+      "id": "SUP-dcba148d6aa45544",
+      "origin": "validated",
+      "path": "$.sources[0].url",
+      "access": "full-text",
+      "text": "https://archive.org/details/DTIC_AD0604647"
+    },
+    {
+      "id": "SUP-a849eb48205c1238",
+      "origin": "validated",
+      "path": "$.sources[1].label",
+      "access": "metadata-only",
+      "text": "S. M. Johnson, « Optimal two- and three-stage production schedules with setup times included », Naval Research Logistics Quarterly, vol. 1, n° 1, mars 1954, p. 61-68."
+    },
+    {
+      "id": "SUP-17f3663cb3d0deae",
+      "origin": "validated",
+      "path": "$.sources[1].kind",
+      "access": "metadata-only",
+      "text": "secondary-academic"
+    },
+    {
+      "id": "SUP-270f495798c74e2d",
+      "origin": "validated",
+      "path": "$.sources[1].locator",
+      "access": "metadata-only",
+      "text": "p. 61-68"
+    },
+    {
+      "id": "SUP-62ee51b99207b24d",
+      "origin": "validated",
+      "path": "$.sources[1].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.1002/nav.3800010110"
+    },
+    {
+      "id": "SUP-facb04efbe053341",
+      "origin": "validated",
+      "path": "$.sources[1].url",
+      "access": "metadata-only",
+      "text": "https://doi.org/10.1002/nav.3800010110"
+    },
+    {
+      "id": "SUP-70b6119ab0660757",
+      "origin": "validated",
+      "path": "$.review.reviewer",
+      "access": "n/a",
+      "text": "contrôle aveugle, session du 25 août 2026"
+    },
+    {
+      "id": "SUP-10e381fd2fc51557",
+      "origin": "validated",
+      "path": "$.review.date",
+      "access": "n/a",
+      "text": "2026-08-25"
+    },
+    {
+      "id": "SUP-ab62b4f98906b668",
+      "origin": "validated",
+      "path": "$.review.attribution",
+      "access": "n/a",
+      "text": "confirmee"
+    },
+    {
+      "id": "SUP-427fb1df98a1e120",
+      "origin": "validated",
+      "path": "$.review.quotation",
+      "access": "n/a",
+      "text": "verbatim"
+    },
+    {
+      "id": "SUP-118d16b59e932353",
+      "origin": "validated",
+      "path": "$.review.sources",
+      "access": "n/a",
+      "text": "resolvent"
+    },
+    {
+      "id": "SUP-ed7629ec7b0c3818",
+      "origin": "validated",
+      "path": "$.review.prose",
+      "access": "n/a",
+      "text": "fidele"
+    },
+    {
+      "id": "SUP-e134482677317836",
+      "origin": "validated",
+      "path": "$.review.verdict",
+      "access": "n/a",
+      "text": "PASS"
+    },
+    {
+      "id": "SUP-486d1c1527c398f2",
+      "origin": "validated",
+      "path": "$.review.notes[0]",
+      "access": "n/a",
+      "text": "PIÈCE OUVERTE : le rapport RAND P-651 dans l'item Internet Archive DTIC_AD0604647 (https://archive.org/details/DTIC_AD0604647), lu sur les images de feuillets non rognées https://archive.org/download/DTIC_AD0604647/page/n<N>.jpg (n0, n13, n14, n16, n18, n19, n73), et non sur la couche OCR."
+    },
+    {
+      "id": "SUP-d8d7072dbd827550",
+      "origin": "validated",
+      "path": "$.review.notes[1]",
+      "access": "n/a",
+      "text": "COUVERTURE (feuillet n0) : « MATHEMATICAL ASPECTS OF SCHEDULING THEORY / by / Richard Bellman / P-651 / Revised 23 May 1955 », tampon RAND Corporation, Santa Monica. Auteur unique, titre, numéro de rapport et date de révision conformes à ce que la fiche affiche."
+    },
+    {
+      "id": "SUP-124994d3a48bb798",
+      "origin": "validated",
+      "path": "$.review.notes[2]",
+      "access": "n/a",
+      "text": "CITATION (locator p. 15) : le feuillet n14 porte clairement l'en-tête « P-651 / -11- », d'où décalage feuillet = page + 3 ; le feuillet n18 est donc la page 15, et le feuillet n19 qui suit porte « -16- ». Sur l'image du feuillet n18 je lis, sous le tableau de l'exemple : « The rule yields (5, 1, 4, 3, 2) as the minimal order with a total time of 47 units, and 4 units of idle time. For the reversed order, the total time is 78, the longest time. » C'est mot pour mot le champ original_text de la fiche, à l'endroit annoncé. Le texte affiché opère une coupe interne (« and 4 units of idle time ») correctement signalée par […] ; la fiche ne déclare pas de traduction et n'en fait pas (anglais affiché tel quel)."
+    },
+    {
+      "id": "SUP-c9dfe7a1179b3d5e",
+      "origin": "validated",
+      "path": "$.review.notes[3]",
+      "access": "n/a",
+      "text": "SOURCE 1 — pagination : le dernier feuillet (n73) porte l'en-tête « P-651 / -70- » (dernière entrée de bibliographie, G. Pólya). La mention « 70 p. » de la fiche est exacte. L'item compte 74 images, front matter compris. Le locator p. 11-15 couvre bien la matière annoncée : Lemme 1 et définitions p. 11, Lemme 2 p. 12, §4 p. 13, §5 p. 14-15."
+    },
+    {
+      "id": "SUP-459b977daa230510",
+      "origin": "validated",
+      "path": "$.review.notes[4]",
+      "access": "n/a",
+      "text": "SOURCE 2 — Johnson 1954 : Crossref pour 10.1002/nav.3800010110 rend « Optimal two- and three-stage production schedules with setup times included », S. M. Johnson, Naval Research Logistics Quarterly, vol. 1, n° 1, mars 1954, p. 61-68, Wiley. Les six éléments affichés par la fiche (auteur, titre, revue, volume, numéro, date, pagination) correspondent exactement. La fiche déclare elle-même « consulted: metadata-only » : la lacune est annoncée, elle n'est pas tue."
+    },
+    {
+      "id": "SUP-6dd5966e42bc5bb2",
+      "origin": "validated",
+      "path": "$.review.notes[5]",
+      "access": "n/a",
+      "text": "ATTRIBUTION : la fiche ne prête pas à Bellman la paternité du résultat, et sa note dit vrai sur pièce. Sur l'image du feuillet n13 (p. 10) je lis le titre de paragraphe « §3. Lemmas of S. Johnson » ; sur le feuillet n16 (p. 13), « §4. The Result of S. Johnson », suivi de « For Johnson's derivation of his result and the remainder of the proof that this criterion yields the absolute minimum, we refer to his paper, [5]. We shall give another derivation below. » L'entrée [5] de la bibliographie du rapport est bien « S. Johnson, \"Optimal Two- and Three-stage Production Schedules with Setup Times Included\", […] March 1954 ». La redérivation revendiquée par la fiche est le §6, « An Alternate Derivation of the Decision Function […] using the functional equation approach of the theory of dynamic programming, [1] » (feuillets n18-n19)."
+    },
+    {
+      "id": "SUP-e9925fc13e92bd77",
+      "origin": "validated",
+      "path": "$.review.notes[6]",
+      "access": "n/a",
+      "text": "PROSE : le résumé est porté mot pour mot par la page 11 (feuillet n14), que j'ai lue sur l'image : « x_i = inactive time on the second machine, the binding machine, immediately before processing the i-th item » ; « The total idle time on the second machine is the sum I_n = Σ x_i » ; « and thus the total time required for the process is I_n + Σ b_i. It follows that we may take I_n as our measure of the efficiency of a scheduling of operations, and that it is this quantity which we wish to minimize. » Le total est donc bien la charge du second poste (Σ b_i, invariante par permutation) plus l'attente de ce poste, et l'ordonnancement ne joue que sur la seconde. L'accroche borne correctement au cas à deux machines, qui est celui de la partie I du rapport."
+    },
+    {
+      "id": "SUP-95fef22fe81b21cb",
+      "origin": "validated",
+      "path": "$.review.notes[7]",
+      "access": "n/a",
+      "text": "NON ATTEINT, et je le dis comme tel : le texte intégral de Johnson 1954 est resté inaccessible (Wiley onlinelibrary renvoie 403 derrière un mur anti-robot ; api.semanticscholar.org donne openAccessPdf « CLOSED »). Les pages rand.org (P-402, P-651) et apps.dtic.mil renvoient également 403. Je n'ai donc pu vérifier ni réfuter la part de la note d'attribution selon laquelle l'exemple chiffré des cinq articles serait propre à Bellman et absent de l'article de Johnson : c'est un échec d'accès, pas un silence de la littérature. Le rapport P-651 lui-même a été atteint en entier par la copie Internet Archive du scan DTIC AD0604647."
+    },
+    {
+      "id": "SUP-8a28db011006a956",
+      "origin": "validated",
+      "path": "$.review.notes[8]",
+      "access": "n/a",
+      "text": "ÉDITION, 25 août 2026 — corrections hors mandat appliquées : la coupe finale du verbatim affiché est désormais marquée, « the total time is 78 […] », par homogénéité avec la coupe interne ; la fin de phrase n'a pas été restituée, la phrase entière portant la citation à 151 caractères pour 150 au plus. Les notes de la fiche consignent que l'arithmétique de l'exemple a été refaite et vérifiée par le contrôle, les deux nombres affichés, 47 et 78, étant exacts."
+    },
+    {
+      "id": "SUP-0bb357961940a9cd",
+      "origin": "validated",
+      "path": "$.notes[0]",
+      "access": "n/a",
+      "text": "La date se lit sur la couverture de l'exemplaire numérisé : « P-651 / Revised 23 May 1955 ». La couche texte OCR de l'item transcrit « Revised 23 May 1965 », et la cartographie du domaine reprend cette date fausse. Trois éléments internes corroborent 1955 : le tampon d'entrée « DDC RECEIVED AUG 27 1964 », qui date l'entrée au fonds et non la rédaction ; la bibliographie, dont aucune référence n'est postérieure à janvier 1955 ; et les papiers RAND voisins qui encadrent le numéro de série. La couverture dit « révisé », non « publié » : il a existé une version antérieure, dont la date n'est pas connue."
+    },
+    {
+      "id": "SUP-46133eb0eac86dd8",
+      "origin": "validated",
+      "path": "$.notes[1]",
+      "access": "n/a",
+      "text": "Le résultat sur deux postes est crédité par Bellman lui-même à S. Johnson, p. 8 : « Two solutions will be presented, the original one due to S. Johnson, based upon an explicit formula of interest in itself, and a solution based upon the functional equation approach of the theory of dynamic programming. » Et p. 13 : « For Johnson's derivation of his result and the remainder of the proof [...] we refer to his paper, [5]. » La décomposition en temps d'inactivité appartient au paragraphe 3, intitulé « Lemmas of S. Johnson »."
+    },
+    {
+      "id": "SUP-5872ce9ac5443255",
+      "origin": "validated",
+      "path": "$.notes[2]",
+      "access": "n/a",
+      "text": "L'article de Johnson n'a pas été ouvert : on ne peut donc pas dire quels énoncés du paragraphe 3 sont repris tels quels et lesquels Bellman a reformulés. Bellman n'écrit que l'initiale du prénom ; l'enregistrement Crossref donne « S. M. Johnson », et rien de plus n'est affirmé ici."
+    },
+    {
+      "id": "SUP-cb8c8aa87a259ef2",
+      "origin": "validated",
+      "path": "$.notes[3]",
+      "access": "n/a",
+      "text": "Le rapport écrit le titre de la revue à l'envers, « Naval Logistics Research Quarterly » (p. 65). La forme juste, portée en source, est Naval Research Logistics Quarterly, établie par le DOI 10.1002/nav.3800010110."
+    },
+    {
+      "id": "SUP-c4c6d47436107638",
+      "origin": "validated",
+      "path": "$.notes[4]",
+      "access": "n/a",
+      "text": "Confusion bibliographique à empêcher : un homonyme quasi parfait existe, coécrit, Bellman, Esogbue et Nabeshima, Mathematical Aspects of Scheduling and Applications, Pergamon, 1982. Ce n'est pas le texte lu. La source primaire porte donc en clair le rapport RAND, son numéro de papier et son année."
+    },
+    {
+      "id": "SUP-3430951edd5de75d",
+      "origin": "validated",
+      "path": "$.notes[5]",
+      "access": "n/a",
+      "text": "P-651 est un rapport technique de la RAND Corporation, non un article publié : aucune publication en revue de ce texte n'a été vérifiée, et la carte ne lui donne ni revue, ni volume, ni pagination d'article."
+    },
+    {
+      "id": "SUP-34090bbc6322c1a0",
+      "origin": "validated",
+      "path": "$.notes[6]",
+      "access": "n/a",
+      "text": "Ce qui est retenu ici n'est ni le critère de tri, ni sa démonstration, ni l'argument d'énumération de la p. 10 sur le nombre de rangements possibles : ces énoncés relèvent de la recherche opérationnelle prise comme branche des mathématiques, que le périmètre du domaine rejette. Ce que porte la carte est l'identité entre temps total, travail du poste aval et attente du poste aval, qui est un énoncé sur le comportement de l'atelier."
+    },
+    {
+      "id": "SUP-28d23e5b57539f51",
+      "origin": "validated",
+      "path": "$.notes[7]",
+      "access": "n/a",
+      "text": "L'ordre (5, 1, 4, 3, 2) et les valeurs 47 et 78 sont lus sur l'image, non recalculés. Le seul contrôle de cohérence fait par la lecture primaire tient : la somme des temps de reliure vaut 43, et 43 plus 4 unités d'attente donnent 47."
+    },
+    {
+      "id": "SUP-6cfb3dddd96d95cf",
+      "origin": "validated",
+      "path": "$.notes[8]",
+      "access": "n/a",
+      "text": "Autorisation d'ayant droit : l'item Internet Archive DTIC_AD0604647 est servi publiquement, sans restriction d'emprunt, mais sa notice ne porte aucun champ rights, licenseurl ni possible-copyright-status. Les mentions « for OTS release » et le tampon DDC portés par la pièce sont des autorisations administratives de diffusion, non une licence de l'ayant droit, qui est la RAND Corporation. Accès public constaté, autorisation d'ayant droit non constatée."
+    },
+    {
+      "id": "SUP-7ee8b0d3708510e1",
+      "origin": "validated",
+      "path": "$.notes[9]",
+      "access": "n/a",
+      "text": "La notice Internet Archive porte « Defense Technical Information Center » en creator et aucun champ auteur : le nom de Bellman se lit sur la couverture, il ne s'obtient pas des métadonnées. Citation relue sur https://archive.org/download/DTIC_AD0604647/page/n18.jpg, dérivé pleine largeur, le dérivé _x1600 rognant le feuillet à gauche."
+    },
+    {
+      "id": "SUP-376299114ded560e",
+      "origin": "validated",
+      "path": "$.notes[10]",
+      "access": "n/a",
+      "text": "Correction appliquée au tour d'édition du 25 août 2026, sur remarque hors mandat du contrôle : la coupe finale du verbatim affiché n'était pas signalée alors que la coupe interne l'était. Les deux sont désormais homogènes, le texte affiché s'achevant sur « the total time is 78 […] ». La fin de phrase, « , the longest time », n'a pas été restituée : la phrase entière porte la citation à 151 caractères, soit un de trop pour le plafond d'affichage. Le champ original_text la conserve."
+    },
+    {
+      "id": "SUP-077c8099f0b96130",
+      "origin": "validated",
+      "path": "$.notes[11]",
+      "access": "n/a",
+      "text": "L'arithmétique de l'exemple a été refaite et vérifiée par le contrôle : avec (a_i, b_i) = (4,5), (4,1), (30,4), (6,30), (2,3), l'ordre (5, 1, 4, 3, 2) donne une fin à 47 avec 4 unités d'inactivité sur la seconde machine, et l'ordre renversé (2, 3, 4, 1, 5) donne 78. Les deux nombres affichés sont exacts."
+    }
+  ],
+  "estimated_tokens": 8948,
+  "status": "READY"
+}
