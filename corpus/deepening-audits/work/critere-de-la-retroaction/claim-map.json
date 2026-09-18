@@ -1,0 +1,840 @@
+{
+  "concept_id": "critere-de-la-retroaction",
+  "candidate_sha256": "7d716dc2f14f3dd07e031e3fb10b6a0dce028c9b3bf1bcfe97ed2915c8f571ea",
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "lead[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[5].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[5].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C001",
+      "locator": "lead[0]",
+      "start": 372,
+      "end": 435,
+      "claim_text": "l’usage courant leur donne le même nom : un retour, un feedback",
+      "normalized_claim": "L'usage courant nomme identiquement (retour, feedback) deux phénomènes distincts.",
+      "support_ids": [
+        "SUP-28b0ad1ad2e1a6f7",
+        "SUP-183905dbe8c2871b"
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "locator": "lead[0]",
+      "start": 437,
+      "end": 557,
+      "claim_text": "La première a pourtant modifié ce qu’il était en train de faire ; la seconde porte sur une conférence qui n’existe plus.",
+      "normalized_claim": "Application du critère : seul le retour survenu pendant l'action peut la modifier.",
+      "support_ids": [
+        "SUP-bcaa6846245431a4",
+        "SUP-3fe284af22f54e21"
+      ]
+    },
+    {
+      "claim_id": "C003",
+      "locator": "lead[1]",
+      "start": 0,
+      "end": 81,
+      "claim_text": "Guy Paquette, qui enseigne l’information et la communication à l’université Laval",
+      "normalized_claim": "Affiliation de l'auteur : information et communication, université Laval.",
+      "support_ids": [
+        "SUP-3a1dc864a47cb060",
+        "SUP-d22b454987e4c2f4"
+      ]
+    },
+    {
+      "claim_id": "C004",
+      "locator": "lead[1]",
+      "start": 83,
+      "end": 108,
+      "claim_text": "publie en 1987 un article",
+      "normalized_claim": "Chronologie : l'article est publié en 1987.",
+      "support_ids": [
+        "SUP-183905dbe8c2871b",
+        "SUP-03b79034f8fd566c",
+        "SUP-e5cabc0374854700"
+      ]
+    },
+    {
+      "claim_id": "C005",
+      "locator": "lead[1]",
+      "start": 109,
+      "end": 167,
+      "claim_text": "dont l’objet n’est pas de se plaindre d’un mot mal employé",
+      "normalized_claim": "L'objet de l'article n'est pas une plainte terminologique.",
+      "support_ids": [
+        "SUP-7fc29eadd96a1c6b",
+        "SUP-bcaa6846245431a4"
+      ]
+    },
+    {
+      "claim_id": "C006",
+      "locator": "lead[1]",
+      "start": 169,
+      "end": 351,
+      "claim_text": "Ce qu’il construit est un moyen de trancher : devant n’importe quelle situation où quelque chose revient vers celui qui a agi, deux questions suffisent à dire s’il y a boucle ou non.",
+      "normalized_claim": "L'article fournit un critère d'identification à deux conditions.",
+      "support_ids": [
+        "SUP-bcaa6846245431a4",
+        "SUP-7fc29eadd96a1c6b",
+        "SUP-2973d334cfde77d2"
+      ]
+    },
+    {
+      "claim_id": "C007",
+      "locator": "lead[1]",
+      "start": 352,
+      "end": 416,
+      "claim_text": "Que revient-il au juste ? Et l’action peut-elle encore changer ?",
+      "normalized_claim": "Les deux questions sont : la nature de ce qui revient, et la reprise possible de l'action.",
+      "support_ids": [
+        "SUP-bcaa6846245431a4",
+        "SUP-2973d334cfde77d2",
+        "SUP-3fe284af22f54e21"
+      ]
+    },
+    {
+      "claim_id": "C008",
+      "locator": "lead[1]",
+      "start": 417,
+      "end": 517,
+      "claim_text": "Il mène la démonstration sur un thermostat, un autocuiseur, un réservoir de chasse d’eau, une fièvre",
+      "normalized_claim": "L'article démontre le mécanisme sur ces quatre exemples précis.",
+      "support_ids": []
+    },
+    {
+      "claim_id": "C009",
+      "locator": "lead[1]",
+      "start": 519,
+      "end": 574,
+      "claim_text": "avant de la ramener à ce qui l’occupe, la communication",
+      "normalized_claim": "Le mécanisme est ensuite transporté dans le champ de la communication.",
+      "support_ids": [
+        "SUP-8d7e138f3c0d9324"
+      ]
+    },
+    {
+      "claim_id": "C010",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 0,
+      "end": 121,
+      "claim_text": "Le premier tri porte sur la nature de ce qui revient : de l’information sur l’effet de l’action, et non l’effet lui-même.",
+      "normalized_claim": "Première condition : c'est de l'information sur l'effet, non l'effet, qui revient.",
+      "support_ids": [
+        "SUP-bcaa6846245431a4",
+        "SUP-28b0ad1ad2e1a6f7",
+        "SUP-2973d334cfde77d2"
+      ]
+    },
+    {
+      "claim_id": "C011",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 122,
+      "end": 261,
+      "claim_text": "Paquette double ce tri d’une correction plus dérangeante encore pour l’usage courant : la réaction de celui qui reçoit n’est pas le retour.",
+      "normalized_claim": "Paquette corrige aussi : la réaction de la cible n'est pas le feedback.",
+      "support_ids": [
+        "SUP-dc2bfdc5f124d828"
+      ]
+    },
+    {
+      "claim_id": "C012",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 262,
+      "end": 414,
+      "claim_text": "L’ennui d’une salle, l’irritation d’un client, l’hésitation d’un interlocuteur existent par eux-mêmes, que celui qui les provoque s’en aperçoive ou non.",
+      "normalized_claim": "Illustration dérivée : les réactions existent indépendamment de leur perception par la source.",
+      "support_ids": [
+        "SUP-dc2bfdc5f124d828"
+      ]
+    },
+    {
+      "claim_id": "C013",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 415,
+      "end": 482,
+      "claim_text": "Le retour, lui, réside « dans la connaissance que la source en a ».",
+      "normalized_claim": "Citation : le feedback réside dans la connaissance que la source a de la réaction.",
+      "support_ids": [
+        "SUP-dc2bfdc5f124d828"
+      ]
+    },
+    {
+      "claim_id": "C014",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 0,
+      "end": 120,
+      "claim_text": "Deux personnes qui parlent devant la même salle n’ont donc pas le même retour, puisqu’elles n’y lisent pas la même chose",
+      "normalized_claim": "Conséquence dérivée : le retour varie selon ce que chaque source connaît.",
+      "support_ids": [
+        "SUP-dc2bfdc5f124d828"
+      ]
+    },
+    {
+      "claim_id": "C015",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 125,
+      "end": 204,
+      "claim_text": "une salle qui s’ennuie sans que personne ne le perçoive ne corrige rien du tout",
+      "normalized_claim": "Conséquence dérivée : une réaction non perçue ne produit aucune correction.",
+      "support_ids": [
+        "SUP-dc2bfdc5f124d828"
+      ]
+    },
+    {
+      "claim_id": "C016",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 206,
+      "end": 283,
+      "claim_text": "Paquette range du même côté des objets qu’on n’a pas l’habitude de rapprocher",
+      "normalized_claim": "Paquette met sur le même plan mimiques, questions d'auditoire et sondages.",
+      "support_ids": [
+        "SUP-2973d334cfde77d2"
+      ]
+    },
+    {
+      "claim_id": "C017",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 286,
+      "end": 487,
+      "claim_text": "ce qui compte, écrit-il, c’est « ce que l’on peut déduire des mimiques de son interlocuteur, des questions d’un auditoire ou des sondages d’opinion, et non pas ce que sont ces événements en eux-mêmes »",
+      "normalized_claim": "Citation attribuée à Paquette (p. 16).",
+      "support_ids": [
+        "SUP-2973d334cfde77d2"
+      ]
+    },
+    {
+      "claim_id": "C018",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 489,
+      "end": 604,
+      "claim_text": "Un sondage ne fait pas boucle parce qu’il mesure quelque chose ; il ne le devient que par ce qu’une source en tire.",
+      "normalized_claim": "Application : un sondage ne boucle que par la déduction qu'en fait la source.",
+      "support_ids": [
+        "SUP-2973d334cfde77d2",
+        "SUP-dc2bfdc5f124d828"
+      ]
+    },
+    {
+      "claim_id": "C019",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 0,
+      "end": 66,
+      "claim_text": "La seconde question ne porte plus sur le signal mais sur l’action.",
+      "normalized_claim": "La seconde condition porte sur l'action, non sur l'information.",
+      "support_ids": [
+        "SUP-bcaa6846245431a4",
+        "SUP-3fe284af22f54e21"
+      ]
+    },
+    {
+      "claim_id": "C020",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 67,
+      "end": 207,
+      "claim_text": "Une action qui ne peut pas être reprise ne peut pas être corrigée, et l’information qui la concerne, si juste soit-elle, ne boucle sur rien.",
+      "normalized_claim": "Sans reprise possible de l'action, il n'y a pas de boucle.",
+      "support_ids": [
+        "SUP-3fe284af22f54e21",
+        "SUP-bcaa6846245431a4"
+      ]
+    },
+    {
+      "claim_id": "C021",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 208,
+      "end": 429,
+      "claim_text": "L’exemple choisi est brutal : « si l’action ne peut être exécutée qu’une seule fois, par exemple, ouvrir son parachute à 200 m du sol, il ne peut y avoir fonctionnement par feedback puisque l’action ne peut être reprise »",
+      "normalized_claim": "Citation de l'exemple du parachute, attribuée à l'article.",
+      "support_ids": [
+        "SUP-3fe284af22f54e21",
+        "SUP-2973d334cfde77d2"
+      ]
+    },
+    {
+      "claim_id": "C022",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 0,
+      "end": 74,
+      "claim_text": "Ce critère écarte une bonne part de ce qu’on appelle couramment un retour.",
+      "normalized_claim": "Le critère exclut beaucoup d'usages courants du mot retour.",
+      "support_ids": [
+        "SUP-3fe284af22f54e21",
+        "SUP-28b0ad1ad2e1a6f7"
+      ]
+    },
+    {
+      "claim_id": "C023",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 75,
+      "end": 268,
+      "claim_text": "Les applaudissements de fin de spectacle, le résultat d’un scrutin, les cotes d’écoute d’une émission déjà diffusée arrivent sur une action terminée : ils informent, ils ne corrigent plus rien.",
+      "normalized_claim": "Applications du critère à trois cas non tirés de la source.",
+      "support_ids": [
+        "SUP-3fe284af22f54e21"
+      ]
+    },
+    {
+      "claim_id": "C024",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 269,
+      "end": 478,
+      "claim_text": "Rien n’oblige pourtant la correction à être instantanée, et Paquette prend soin de le préciser : un comportement peut être « réajusté (pas nécessairement en temps réel) sur la base de ses résultats effectifs »",
+      "normalized_claim": "Citation : le réajustement n'a pas besoin d'être en temps réel.",
+      "support_ids": [
+        "SUP-2973d334cfde77d2"
+      ]
+    },
+    {
+      "claim_id": "C025",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 480,
+      "end": 572,
+      "claim_text": "Ce qui est exigé, c’est que l’action soit encore ouverte, pas que la réponse soit immédiate.",
+      "normalized_claim": "Reformulation de l'exigence : action encore ouverte, réponse non nécessairement immédiate.",
+      "support_ids": [
+        "SUP-2973d334cfde77d2",
+        "SUP-3fe284af22f54e21"
+      ]
+    },
+    {
+      "claim_id": "C026",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 0,
+      "end": 138,
+      "claim_text": "Un système qui se règle tout seul ne satisfait pas pour autant ces conditions, et Paquette le montre en comparant deux objets domestiques.",
+      "normalized_claim": "Paquette compare deux objets domestiques pour montrer qu'autorégulation n'est pas feedback.",
+      "support_ids": []
+    },
+    {
+      "claim_id": "C027",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 139,
+      "end": 279,
+      "claim_text": "Un autocuiseur maintient sa pression en laissant échapper l’excès de vapeur : rien, dans ce mécanisme, ne fait baisser la source de chaleur.",
+      "normalized_claim": "Description du fonctionnement de l'autocuiseur comme contre-exemple.",
+      "support_ids": []
+    },
+    {
+      "claim_id": "C028",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 280,
+      "end": 453,
+      "claim_text": "Le réservoir d’une chasse d’eau, lui, travaille bien par boucle, parce qu’un niveau précis peut y être vérifié, recherché, puis l’arrivée d’eau bloquée quand il est atteint.",
+      "normalized_claim": "Le réservoir de chasse d'eau est donné comme cas de boucle.",
+      "support_ids": []
+    },
+    {
+      "claim_id": "C029",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 454,
+      "end": 516,
+      "claim_text": "Le premier compense l’excès, le second constate et intervient.",
+      "normalized_claim": "Opposition compensation / constat et intervention.",
+      "support_ids": []
+    },
+    {
+      "claim_id": "C030",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 0,
+      "end": 147,
+      "claim_text": "Constater et intervenir ne sont pas une troisième exigence qui viendrait s’ajouter aux deux premières : ce sont elles, sous le libellé de l’auteur.",
+      "normalized_claim": "Constat et intervention sont les deux conditions déjà posées, sous les termes de l'auteur.",
+      "support_ids": [
+        "SUP-2973d334cfde77d2"
+      ]
+    },
+    {
+      "claim_id": "C031",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 148,
+      "end": 274,
+      "claim_text": "Deux dimensions caractérisent le processus, écrit-il, « celle d’information et celle de correction ou ajustement de l’action »",
+      "normalized_claim": "Citation p. 14 : deux dimensions, information et correction ou ajustement de l'action.",
+      "support_ids": [
+        "SUP-2973d334cfde77d2"
+      ]
+    },
+    {
+      "claim_id": "C032",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 279,
+      "end": 371,
+      "claim_text": "il les tient pour « des conditions formelles à l’identification d’un processus de feedback »",
+      "normalized_claim": "Citation p. 14 : ces dimensions sont des conditions formelles d'identification.",
+      "support_ids": [
+        "SUP-2973d334cfde77d2"
+      ]
+    },
+    {
+      "claim_id": "C033",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 373,
+      "end": 506,
+      "claim_text": "On voit du même coup pourquoi le premier tri exigeait de l’information et non l’effet : un effet se produit, il ne se compare à rien.",
+      "normalized_claim": "Raisonnement dérivé reliant la première condition à la comparabilité.",
+      "support_ids": [
+        "SUP-28b0ad1ad2e1a6f7",
+        "SUP-2973d334cfde77d2"
+      ]
+    },
+    {
+      "claim_id": "C034",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 507,
+      "end": 657,
+      "claim_text": "Pour qu’il y ait constat, il faut quelque chose qui puisse être rapporté à ce qui était recherché, et une information sur l’effet est exactement cela.",
+      "normalized_claim": "Le constat exige une information rapportable à la valeur recherchée.",
+      "support_ids": [
+        "SUP-28b0ad1ad2e1a6f7"
+      ]
+    },
+    {
+      "claim_id": "C035",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 57,
+      "end": 176,
+      "claim_text": "l’idée de contrôle est chez Paquette inséparable de celle de finalité : on ne régule que par rapport à une valeur visée",
+      "normalized_claim": "Chez Paquette, le contrôle suppose une finalité, une valeur visée.",
+      "support_ids": []
+    },
+    {
+      "claim_id": "C036",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 178,
+      "end": 271,
+      "claim_text": "Dans une machine, cette valeur vient du dehors, de celui qui pousse le curseur du thermostat.",
+      "normalized_claim": "Dans une machine la valeur de référence est imposée de l'extérieur.",
+      "support_ids": []
+    },
+    {
+      "claim_id": "C037",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 272,
+      "end": 346,
+      "claim_text": "Dans un organisme, elle peut n’être écrite nulle part et rester implicite.",
+      "normalized_claim": "Dans un organisme la valeur de référence peut rester implicite.",
+      "support_ids": []
+    },
+    {
+      "claim_id": "C038",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 347,
+      "end": 511,
+      "claim_text": "Le processus se décompose en trois moments, s’informer, évaluer, réagir, que l’exposé sépare mais que le fonctionnement réel tient ensemble, simultanés et continus.",
+      "normalized_claim": "Le processus comporte trois moments, simultanés et continus dans le fonctionnement réel.",
+      "support_ids": []
+    },
+    {
+      "claim_id": "C039",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 512,
+      "end": 786,
+      "claim_text": "Les deux objets domestiques se séparent nettement sous cette grille : le réservoir s’informe d’un niveau, l’évalue au regard de celui qu’on recherche, puis ferme l’arrivée d’eau ; l’autocuiseur évacue un excès, et il n’y a là ni niveau recherché ni geste sur ce qui chauffe.",
+      "normalized_claim": "Application de la grille en trois moments aux deux objets domestiques.",
+      "support_ids": []
+    },
+    {
+      "claim_id": "C040",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 0,
+      "end": 38,
+      "claim_text": "Une boucle n’est presque jamais seule.",
+      "normalized_claim": "Les boucles sont presque toujours multiples.",
+      "support_ids": []
+    },
+    {
+      "claim_id": "C041",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 39,
+      "end": 207,
+      "claim_text": "Paquette décrit des boucles hiérarchisées, emboîtées les unes dans les autres, dont les valeurs de référence peuvent elles-mêmes être déplacées par un niveau supérieur.",
+      "normalized_claim": "Paquette décrit des boucles hiérarchisées dont les références sont révisables par un niveau supérieur.",
+      "support_ids": []
+    },
+    {
+      "claim_id": "C042",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 208,
+      "end": 348,
+      "claim_text": "La thermorégulation lui sert de cas : une fièvre ne se lit pas comme une régulation qui échoue, mais comme une valeur de référence modifiée.",
+      "normalized_claim": "La fièvre est présentée comme changement de valeur de référence, non comme échec de régulation.",
+      "support_ids": []
+    },
+    {
+      "claim_id": "C043",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 349,
+      "end": 462,
+      "claim_text": "Le corps ne manque pas sa température habituelle, il en vise une autre, et il la défend avec la même obstination.",
+      "normalized_claim": "Le corps fiévreux défend une autre consigne thermique.",
+      "support_ids": []
+    },
+    {
+      "claim_id": "C044",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 48,
+      "end": 248,
+      "claim_text": "Tant qu’on regarde une boucle seule, tout écart ressemble à un défaut ; dès qu’on admet qu’un niveau supérieur peut réviser les buts, le même écart devient l’exécution d’une consigne venue d’ailleurs.",
+      "normalized_claim": "L'interprétation d'un écart dépend du niveau de boucle considéré.",
+      "support_ids": []
+    },
+    {
+      "claim_id": "C045",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 249,
+      "end": 318,
+      "claim_text": "Paquette nomme hétérostasie ce déclenchement d’une révision des buts.",
+      "normalized_claim": "Paquette emploie le terme hétérostasie pour la révision des buts.",
+      "support_ids": []
+    },
+    {
+      "claim_id": "C046",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 319,
+      "end": 495,
+      "claim_text": "On peut comprendre cela comme la différence entre corriger une action et changer ce qu’on cherche : les deux se font par des boucles, mais elles ne se logent pas au même étage.",
+      "normalized_claim": "Lecture proposée : corriger l'action et changer le but sont deux étages de boucles.",
+      "support_ids": []
+    },
+    {
+      "claim_id": "C047",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 0,
+      "end": 78,
+      "claim_text": "Le mot rétroaction ne garde pas le même sens d’un bout à l’autre de l’article.",
+      "normalized_claim": "Le sens de « rétroaction » varie au cours de l'article.",
+      "support_ids": [
+        "SUP-3511dfc3d2a10502"
+      ]
+    },
+    {
+      "claim_id": "C048",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 79,
+      "end": 333,
+      "claim_text": "Dans les pages où le mécanisme est exposé, il sert dans une acception étroite et technique : le feedback fonctionne par rétroaction lorsque la régulation s’accomplit de manière aveugle, « par une connexion directe entre la sortie et l’entrée du système »",
+      "normalized_claim": "Acception étroite de rétroaction dans les pages d'exposition du mécanisme (p. 8), avec citation.",
+      "support_ids": [
+        "SUP-3511dfc3d2a10502"
+      ]
+    },
+    {
+      "claim_id": "C049",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 338,
+      "end": 424,
+      "claim_text": "ce cas se voit alors opposé à ce que Paquette appelle un feedback par rétroinformation",
+      "normalized_claim": "Ce cas est opposé au feedback par rétroinformation.",
+      "support_ids": [
+        "SUP-3511dfc3d2a10502"
+      ]
+    },
+    {
+      "claim_id": "C050",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 426,
+      "end": 542,
+      "claim_text": "Les définitions qu’il retient pour finir arrivent plus loin, une fois le mécanisme transporté dans la communication.",
+      "normalized_claim": "Chronologie interne : les définitions retenues arrivent plus loin, dans la partie communication.",
+      "support_ids": [
+        "SUP-3511dfc3d2a10502",
+        "SUP-2973d334cfde77d2",
+        "SUP-8d7e138f3c0d9324"
+      ]
+    },
+    {
+      "claim_id": "C051",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 0,
+      "end": 124,
+      "claim_text": "La rétroinformation y devient le travail d’obtention et d’analyse d’informations sur une situation en cours ou déjà terminée",
+      "normalized_claim": "Définition de la rétroinformation : obtention et analyse d'informations sur une situation en cours ou terminée.",
+      "support_ids": []
+    },
+    {
+      "claim_id": "C052",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 129,
+      "end": 308,
+      "claim_text": "elle ne fait boucle qu’à une condition : « Lorsque cette rétroinformation sert à modeler l’action (le message, en communication), nous avons une boucle de rétroaction (feedback) »",
+      "normalized_claim": "Citation p. 16 : la rétroinformation fait boucle quand elle sert à modeler l'action.",
+      "support_ids": [
+        "SUP-2973d334cfde77d2",
+        "SUP-3fe284af22f54e21"
+      ]
+    },
+    {
+      "claim_id": "C053",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 310,
+      "end": 398,
+      "claim_text": "Le partage se fait ainsi deux fois, sur ce qui revient et sur le moment où cela revient.",
+      "normalized_claim": "Le partage terminologique suit les deux conditions.",
+      "support_ids": [
+        "SUP-bcaa6846245431a4"
+      ]
+    },
+    {
+      "claim_id": "C054",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 399,
+      "end": 550,
+      "claim_text": "La préinformation, qu’il rapproche du feedforward, et la préaction interviennent avant que l’action soit déclenchée : elles ne relèvent pas du feedback",
+      "normalized_claim": "Préinformation (feedforward) et préaction précèdent l'action et sont exclues du feedback.",
+      "support_ids": [
+        "SUP-d22b454987e4c2f4",
+        "SUP-fafb0e64fe593e7c"
+      ]
+    },
+    {
+      "claim_id": "C055",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 552,
+      "end": 604,
+      "claim_text": "« bien que la parenté des concepts soit indéniable »",
+      "normalized_claim": "Citation : la parenté des concepts est reconnue indéniable.",
+      "support_ids": [
+        "SUP-d22b454987e4c2f4"
+      ]
+    },
+    {
+      "claim_id": "C056",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 0,
+      "end": 57,
+      "claim_text": "Ces quatre termes n’ont pas le même statut sous sa plume.",
+      "normalized_claim": "Les quatre termes ont deux statuts terminologiques différents chez l'auteur.",
+      "support_ids": [
+        "SUP-fafb0e64fe593e7c"
+      ]
+    },
+    {
+      "claim_id": "C057",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 58,
+      "end": 182,
+      "claim_text": "Rétroaction et rétroinformation circulaient déjà, parmi les candidats nombreux qu’avait produits la francisation de feedback",
+      "normalized_claim": "Statut 1 : rétroaction et rétroinformation étaient des francisations déjà en circulation.",
+      "support_ids": [
+        "SUP-fafb0e64fe593e7c",
+        "SUP-d22b454987e4c2f4"
+      ]
+    },
+    {
+      "claim_id": "C058",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 187,
+      "end": 262,
+      "claim_text": "il relève lui-même « l’abondance des termes proposés pour sa francisation »",
+      "normalized_claim": "Citation p. 5 sur l'abondance des termes de francisation.",
+      "support_ids": [
+        "SUP-d22b454987e4c2f4"
+      ]
+    },
+    {
+      "claim_id": "C059",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 265,
+      "end": 328,
+      "claim_text": "il ne les forge pas, il leur assigne des définitions distinctes",
+      "normalized_claim": "Statut 1 (suite) : l'auteur ne forge pas ces deux termes, il les redéfinit distinctement.",
+      "support_ids": [
+        "SUP-fafb0e64fe593e7c",
+        "SUP-d22b454987e4c2f4"
+      ]
+    },
+    {
+      "claim_id": "C060",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 330,
+      "end": 391,
+      "claim_text": "La préinformation et la préaction, en revanche, il les ajoute",
+      "normalized_claim": "Statut 2 : préinformation et préaction sont ajoutées par l'auteur.",
+      "support_ids": [
+        "SUP-fafb0e64fe593e7c",
+        "SUP-d22b454987e4c2f4"
+      ]
+    },
+    {
+      "claim_id": "C061",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 396,
+      "end": 480,
+      "claim_text": "il les donne comme des hypothèses de travail plutôt que comme des prises de position",
+      "normalized_claim": "Statut 2 (suite) : ces deux termes ajoutés sont donnés comme hypothèses de travail.",
+      "support_ids": [
+        "SUP-fafb0e64fe593e7c"
+      ]
+    },
+    {
+      "claim_id": "C062",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 482,
+      "end": 559,
+      "claim_text": "L’ensemble, il le propose aux sciences de la communication et à elles seules.",
+      "normalized_claim": "La proposition terminologique visait les seules sciences de la communication.",
+      "support_ids": [
+        "SUP-8d7e138f3c0d9324"
+      ]
+    },
+    {
+      "claim_id": "C063",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 0,
+      "end": 50,
+      "claim_text": "Ce test n’est pas né d’un scrupule de vocabulaire.",
+      "normalized_claim": "Le critère ne procède pas d'un souci purement lexical.",
+      "support_ids": [
+        "SUP-fafb0e64fe593e7c",
+        "SUP-d22b454987e4c2f4"
+      ]
+    },
+    {
+      "claim_id": "C064",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 51,
+      "end": 81,
+      "claim_text": "L’article s’ouvre sur un grief",
+      "normalized_claim": "Placement : le grief figure à l'ouverture de l'article.",
+      "support_ids": [
+        "SUP-d22b454987e4c2f4"
+      ]
+    },
+    {
+      "claim_id": "C065",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 82,
+      "end": 276,
+      "claim_text": "que Paquette reprend à Gabriel Veraldi et adresse aux spécialistes de la communication : « l’emprunt abusif de certains concepts à d’autres disciplines, mais surtout leur utilisation dénaturée »",
+      "normalized_claim": "Le grief est repris à Gabriel Veraldi et adressé aux spécialistes de la communication, avec citation.",
+      "support_ids": [
+        "SUP-fafb0e64fe593e7c",
+        "SUP-d22b454987e4c2f4"
+      ]
+    },
+    {
+      "claim_id": "C066",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 278,
+      "end": 509,
+      "claim_text": "On peut comprendre les deux questions comme sa réponse : un concept venu d’une autre discipline ne se défend pas en revendiquant son nom, il se défend en disant à quoi la chose se reconnaît, et ce qu’il faut cesser d’appeler ainsi.",
+      "normalized_claim": "Lecture proposée : le critère est la réponse au grief d'usage dénaturé.",
+      "support_ids": [
+        "SUP-7fc29eadd96a1c6b",
+        "SUP-bcaa6846245431a4",
+        "SUP-fafb0e64fe593e7c"
+      ]
+    },
+    {
+      "claim_id": "C067",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 0,
+      "end": 80,
+      "claim_text": "Reste que, dans l’article, le critère ne s’énonce pas d’abord de la rétroaction.",
+      "normalized_claim": "Le critère est d'abord énoncé du feedback, non de la rétroaction.",
+      "support_ids": [
+        "SUP-3511dfc3d2a10502"
+      ]
+    },
+    {
+      "claim_id": "C068",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 81,
+      "end": 143,
+      "claim_text": "Les deux conditions sont posées du feedback, aux pages 8 et 10",
+      "normalized_claim": "Pagination : les deux conditions se trouvent p. 8 et p. 10, énoncées du feedback.",
+      "support_ids": [
+        "SUP-3511dfc3d2a10502",
+        "SUP-2973d334cfde77d2",
+        "SUP-2d170a016ba6323a"
+      ]
+    },
+    {
+      "claim_id": "C069",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 148,
+      "end": 226,
+      "claim_text": "c’est plus loin, aux pages 15 et 16, que le mot français les reçoit à son tour",
+      "normalized_claim": "Pagination : l'équivalence avec le mot rétroaction est établie p. 15-16.",
+      "support_ids": [
+        "SUP-3511dfc3d2a10502",
+        "SUP-2973d334cfde77d2",
+        "SUP-d22b454987e4c2f4"
+      ]
+    },
+    {
+      "claim_id": "C070",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 228,
+      "end": 340,
+      "claim_text": "Qui s’arrête aux premières pages y trouve le mécanisme entier et un mot qui n’a pas encore le sens qu’il prendra",
+      "normalized_claim": "Un lecteur arrêté aux premières pages voit le mécanisme complet mais un sens encore étroit du mot.",
+      "support_ids": [
+        "SUP-3511dfc3d2a10502"
+      ]
+    }
+  ]
+}
