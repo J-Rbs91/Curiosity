@@ -1,17 +1,11 @@
 {
   "protocol_version": 1,
   "concept_id": "force-du-besoin-de-developpement",
-  "candidate_sha256": "fc7d8938a27067ef5d9ecce56f6260dc2d964f73b47f7ebb351f0354bb67af16",
-  "map_sha256": "8fa3781d5b9788f61fd230c4a42964ed73e27c0164a9b5ae286ed3bd043082e4",
+  "candidate_sha256": "e0f8cc4618f924236b5bf41403c9ec7927ce77df1e1c35e2e1458097961fff20",
+  "map_sha256": "ab58af9b6b2c4a853db83224ac3a702e5c5cd92b3608b6c29b581476c2c7cc9d",
   "claims": [
     {
       "claim_id": "C001",
-      "locator": "lead[0]",
-      "claim_text": "On met en général ce cas sur le compte de la résistance au changement, ou d’un accompagnement mal conduit.",
-      "supports": []
-    },
-    {
-      "claim_id": "C002",
       "locator": "lead[1]",
       "claim_text": "Il existe une autre lecture, et elle vient de ceux-là mêmes qui ont écrit la règle.",
       "supports": [
@@ -23,16 +17,23 @@
           "text": "On n'attend pas de la théorie qu'elle « marche » avec la même efficacité pour tous les individus."
         },
         {
-          "id": "SUP-0f85a4947c2d79b5",
+          "id": "SUP-48c05c222a4125cf",
           "origin": "validated",
-          "path": "$.notes[3]",
+          "path": "$.quotation.original_text",
           "access": "n/a",
-          "text": "CE QUI FONDE LE RÉSUMÉ. « Modère ses relations » vient de la phrase de rechange citée ci-dessus. « Peut être vécu comme anxiogène » vient du texte élargi de la p. 4 : « individuals who do not value personal growth and accomplishment may find such a job anxiety-arousing and may be uncomfortably \"stretched\" by it », la phrase précédente disant que ceux qui valorisent fortement l'accomplissement et le développement personnels devraient au contraire répondre très positivement à un emploi à fort potentiel motivant."
+          "text": "The theory is not expected to \"work\" with equal effectiveness for all individuals."
+        },
+        {
+          "id": "SUP-bb17d922c44f1d5b",
+          "origin": "validated",
+          "path": "$.quotation.translation.translator",
+          "access": "n/a",
+          "text": "Traduction interne non publiée (chaîne Curiosity, session du 29 août 2026). Aucune traduction française publiée du Technical Report No. 4 n'a été identifiée. « Is not expected to » est rendu par « On n'attend pas de la théorie qu'elle » : le passif anglais n'a pas d'équivalent naturel ici, et ce sont bien les auteurs qui déclarent ne pas l'attendre. Les guillemets de « work » sont conservés sur « marche »."
         }
       ]
     },
     {
-      "claim_id": "C003",
+      "claim_id": "C002",
       "locator": "lead[1]",
       "claim_text": "Dans un rapport technique déposé à Yale en mai 1974, J. Richard Hackman et Greg R. Oldham",
       "supports": [
@@ -44,25 +45,11 @@
           "text": "Rapport signé conjointement par J. Richard Hackman (Yale University) et Greg R. Oldham (University of Illinois), page de titre du Technical Report No. 4 du Department of Administrative Sciences de Yale, mai 1974. Les auteurs rattachent explicitement la théorie qu'ils y exposent à des travaux antérieurs : Turner et Lawrence (1965) et Hackman et Lawler (1971)."
         },
         {
-          "id": "SUP-28a4fa2fe9254486",
-          "origin": "validated",
-          "path": "$.review.notes[0]",
-          "access": "n/a",
-          "text": "ATTRIBUTION — Page de titre lue sur l'image pleine résolution https://archive.org/download/DTIC_AD0779828/page/n3.jpg (2688x3399) : « THE JOB DIAGNOSTIC SURVEY: AN INSTRUMENT FOR THE DIAGNOSIS OF JOBS AND THE EVALUATION OF JOB REDESIGN PROJECTS / J. Richard Hackman, Yale University — and — Greg R. Oldham, University of Illinois / Technical Report No. 4 / Department of Administrative Sciences / Yale University / May, 1974 ». Les deux auteurs et les deux rattachements sont bien ceux de la fiche, et le rapport est signé conjointement."
-        },
-        {
           "id": "SUP-46db82f6ac3e7439",
           "origin": "validated",
           "path": "$.sources[0].label",
           "access": "full-text",
           "text": "J. Richard Hackman et Greg R. Oldham, The Job Diagnostic Survey: An Instrument for the Diagnosis of Jobs and the Evaluation of Job Redesign Projects, Technical Report No. 4, Yale University, mai 1974"
-        },
-        {
-          "id": "SUP-154202aa820424f9",
-          "origin": "validated",
-          "path": "$.quotation.reference",
-          "access": "n/a",
-          "text": "J. Richard Hackman et Greg R. Oldham, The Job Diagnostic Survey, Technical Report No. 4, Yale University, mai 1974, section « Conceptual Basis of the Instrument »."
         },
         {
           "id": "SUP-3c6ab3fc8c2e70c6",
@@ -81,17 +68,10 @@
       ]
     },
     {
-      "claim_id": "C004",
+      "claim_id": "C003",
       "locator": "lead[1]",
       "claim_text": "prennent la peine d’écrire que ce qu’ils avancent ne vaut pas de la même manière pour tout le monde",
       "supports": [
-        {
-          "id": "SUP-8463ec693f1d9f83",
-          "origin": "validated",
-          "path": "$.quotation.text",
-          "access": "n/a",
-          "text": "On n'attend pas de la théorie qu'elle « marche » avec la même efficacité pour tous les individus."
-        },
         {
           "id": "SUP-48c05c222a4125cf",
           "origin": "validated",
@@ -100,25 +80,18 @@
           "text": "The theory is not expected to \"work\" with equal effectiveness for all individuals."
         },
         {
-          "id": "SUP-43cb5037f47995be",
+          "id": "SUP-8463ec693f1d9f83",
           "origin": "validated",
-          "path": "$.quotation.locator",
+          "path": "$.quotation.text",
           "access": "n/a",
-          "text": "p. 4"
-        },
-        {
-          "id": "SUP-f2b12e5db86232a5",
-          "origin": "validated",
-          "path": "$.review.notes[2]",
-          "access": "n/a",
-          "text": "CITATION — Passage relu sur l'image, non sur l'OCR. Feuillet n7 (https://archive.org/download/DTIC_AD0779828/page/n7.jpg, 2720x3415, dérivé _x1600 non employé), recadré et agrandi. Lu littéralement : « The theory is not expected to \"work\" with equal effectiveness for all individuals. » Identique au champ quotation.text, guillemets internes autour de « work » compris, sans coupe ni ajout. Aucune traduction n'est en jeu (original_language en, translation kind none) : la déclaration de la fiche est exacte."
+          "text": "On n'attend pas de la théorie qu'elle « marche » avec la même efficacité pour tous les individus."
         }
       ]
     },
     {
-      "claim_id": "C005",
+      "claim_id": "C004",
       "locator": "lead[1]",
-      "claim_text": "La quatrième personne n’est alors plus l’exception qui embarrasse la règle : c’est un cas que la règle prévoit, et dont elle dit par quoi il se distingue des trois autres.",
+      "claim_text": "c’est un cas que la règle prévoit, et dont elle dit par quoi il se distingue des trois autres",
       "supports": [
         {
           "id": "SUP-0f85a4947c2d79b5",
@@ -133,11 +106,18 @@
           "path": "$.notes[2]",
           "access": "n/a",
           "text": "CITATION, CHOIX ET RENONCEMENT. La citation retenue ne nomme pas « growth need strength », et c'est le prix du plafond de 150 caractères. La phrase de rechange, dernière du même paragraphe, le nomme : « Therefore, growth need strength is shown in Figure 1 as a moderator of the other relationships specified by the theory. » (119 caractères, p. 4, feuillet n7, verbatim, sans coupe). Elle n'a pas été prise : son « Therefore » est sans antécédent hors contexte. Aucun composite à deux ellipses n'a été fabriqué pour tenir sous la limite."
+        },
+        {
+          "id": "SUP-48c05c222a4125cf",
+          "origin": "validated",
+          "path": "$.quotation.original_text",
+          "access": "n/a",
+          "text": "The theory is not expected to \"work\" with equal effectiveness for all individuals."
         }
       ]
     },
     {
-      "claim_id": "C006",
+      "claim_id": "C005",
       "locator": "sections[0].paragraphs[0]",
       "claim_text": "La page 4 du rapport tient les deux versants côte à côte.",
       "supports": [
@@ -149,23 +129,23 @@
           "text": "CE QUI FONDE LE RÉSUMÉ. « Modère ses relations » vient de la phrase de rechange citée ci-dessus. « Peut être vécu comme anxiogène » vient du texte élargi de la p. 4 : « individuals who do not value personal growth and accomplishment may find such a job anxiety-arousing and may be uncomfortably \"stretched\" by it », la phrase précédente disant que ceux qui valorisent fortement l'accomplissement et le développement personnels devraient au contraire répondre très positivement à un emploi à fort potentiel motivant."
         },
         {
+          "id": "SUP-ea0314366340c75b",
+          "origin": "validated",
+          "path": "$.sources[0].locator",
+          "access": "full-text",
+          "text": "p. 4"
+        },
+        {
           "id": "SUP-43cb5037f47995be",
           "origin": "validated",
           "path": "$.quotation.locator",
           "access": "n/a",
           "text": "p. 4"
-        },
-        {
-          "id": "SUP-74f9a53ac00c7d14",
-          "origin": "validated",
-          "path": "$.review.notes[3]",
-          "access": "n/a",
-          "text": "CITATION — Localisation vérifiée. Le folio imprimé « 4 » est visible en haut à droite de ce même feuillet n7. La phrase citée y ouvre le dernier paragraphe plein, juste après la formule du Motivating Potential Score, et précède immédiatement le titre de section suivant « Summary of Concepts Measured by the Job Diagnostic Survey ». Elle appartient donc bien à la section « Conceptual Basis of the Instrument », dont le titre figure p. 2 (feuillet n5) et qui court p. 2–4. Locator « p. 4 » et mention de section : tous deux exacts."
         }
       ]
     },
     {
-      "claim_id": "C007",
+      "claim_id": "C006",
       "locator": "sections[0].paragraphs[0]",
       "claim_text": "Les personnes qui valorisent fortement l’accomplissement et le développement personnels devraient répondre très positivement à ce que les auteurs appellent « a job high in motivating potential », un emploi à fort potentiel motivant.",
       "supports": [
@@ -186,23 +166,37 @@
       ]
     },
     {
-      "claim_id": "C008",
+      "claim_id": "C007",
       "locator": "sections[0].paragraphs[0]",
-      "claim_text": "Les autres, écrivent-ils aussitôt après : « individuals who do not value personal growth and accomplishment may find such a job anxiety-arousing »",
+      "claim_text": "Les autres, écrivent-ils aussitôt après",
       "supports": [
-        {
-          "id": "SUP-4e4eaf096d124277",
-          "origin": "validated",
-          "path": "$.review.notes[9]",
-          "access": "n/a",
-          "text": "PROSE — Dernier membre : « un emploi à fort potentiel motivant peut être vécu comme anxiogène » contre « individuals who do not value personal growth and accomplishment may find such a job anxiety-arousing and may be uncomfortably \"stretched\" by it », où « such a job » renvoie à « a job high in motivating potential ». Le modal « peut » conserve « may ». La condition (les individus à faible besoin de développement) est abrégée, mais le premier membre de phrase l'a déjà posée comme modérateur : c'est une contraction, non un élargissement. Aucun adjectif ne durcit l'énoncé — ni « souvent », ni « est » à la place de « peut être ». Fidèle."
-        },
         {
           "id": "SUP-0f85a4947c2d79b5",
           "origin": "validated",
           "path": "$.notes[3]",
           "access": "n/a",
           "text": "CE QUI FONDE LE RÉSUMÉ. « Modère ses relations » vient de la phrase de rechange citée ci-dessus. « Peut être vécu comme anxiogène » vient du texte élargi de la p. 4 : « individuals who do not value personal growth and accomplishment may find such a job anxiety-arousing and may be uncomfortably \"stretched\" by it », la phrase précédente disant que ceux qui valorisent fortement l'accomplissement et le développement personnels devraient au contraire répondre très positivement à un emploi à fort potentiel motivant."
+        }
+      ]
+    },
+    {
+      "claim_id": "C008",
+      "locator": "sections[0].paragraphs[0]",
+      "claim_text": "« individuals who do not value personal growth and accomplishment may find such a job anxiety-arousing »",
+      "supports": [
+        {
+          "id": "SUP-0f85a4947c2d79b5",
+          "origin": "validated",
+          "path": "$.notes[3]",
+          "access": "n/a",
+          "text": "CE QUI FONDE LE RÉSUMÉ. « Modère ses relations » vient de la phrase de rechange citée ci-dessus. « Peut être vécu comme anxiogène » vient du texte élargi de la p. 4 : « individuals who do not value personal growth and accomplishment may find such a job anxiety-arousing and may be uncomfortably \"stretched\" by it », la phrase précédente disant que ceux qui valorisent fortement l'accomplissement et le développement personnels devraient au contraire répondre très positivement à un emploi à fort potentiel motivant."
+        },
+        {
+          "id": "SUP-4e4eaf096d124277",
+          "origin": "validated",
+          "path": "$.review.notes[9]",
+          "access": "n/a",
+          "text": "PROSE — Dernier membre : « un emploi à fort potentiel motivant peut être vécu comme anxiogène » contre « individuals who do not value personal growth and accomplishment may find such a job anxiety-arousing and may be uncomfortably \"stretched\" by it », où « such a job » renvoie à « a job high in motivating potential ». Le modal « peut » conserve « may ». La condition (les individus à faible besoin de développement) est abrégée, mais le premier membre de phrase l'a déjà posée comme modérateur : c'est une contraction, non un élargissement. Aucun adjectif ne durcit l'énoncé — ni « souvent », ni « est » à la place de « peut être ». Fidèle."
         }
       ]
     },
@@ -219,11 +213,18 @@
           "text": "PROSE — Dernier membre : « un emploi à fort potentiel motivant peut être vécu comme anxiogène » contre « individuals who do not value personal growth and accomplishment may find such a job anxiety-arousing and may be uncomfortably \"stretched\" by it », où « such a job » renvoie à « a job high in motivating potential ». Le modal « peut » conserve « may ». La condition (les individus à faible besoin de développement) est abrégée, mais le premier membre de phrase l'a déjà posée comme modérateur : c'est une contraction, non un élargissement. Aucun adjectif ne durcit l'énoncé — ni « souvent », ni « est » à la place de « peut être ». Fidèle."
         },
         {
-          "id": "SUP-4e810e6eac5ba350",
+          "id": "SUP-0f85a4947c2d79b5",
           "origin": "validated",
-          "path": "$.notes[5]",
+          "path": "$.notes[3]",
           "access": "n/a",
-          "text": "NOTE DE RELECTURE DE LA LECTURE PRIMAIRE, reprise plutôt que tue : sur le scan de la p. 4, le guillemet fermant après « stretched » est une apostrophe très pâle, presque effacée, le guillemet ouvrant étant net. La paire a été restituée comme seule lecture cohérente. Ni la citation retenue ni la citation de rechange n'en dépendent."
+          "text": "CE QUI FONDE LE RÉSUMÉ. « Modère ses relations » vient de la phrase de rechange citée ci-dessus. « Peut être vécu comme anxiogène » vient du texte élargi de la p. 4 : « individuals who do not value personal growth and accomplishment may find such a job anxiety-arousing and may be uncomfortably \"stretched\" by it », la phrase précédente disant que ceux qui valorisent fortement l'accomplissement et le développement personnels devraient au contraire répondre très positivement à un emploi à fort potentiel motivant."
+        },
+        {
+          "id": "SUP-5bd45cc269abd08e",
+          "origin": "validated",
+          "path": "$.notes[7]",
+          "access": "n/a",
+          "text": "PÉRIMÈTRE ET SOURCES. Ce qui est instruit est la thèse, non le Job Diagnostic Survey comme questionnaire ; le motivating potential score, point limite signalé par la lecture, n'est pas réintroduit. Aucune source secondaire n'est affichée et aucune n'a été fabriquée : la lecture primaire n'a ouvert que cette pièce."
         }
       ]
     },
@@ -233,18 +234,18 @@
       "claim_text": "le second cas n’est pas une version affaiblie du premier : ce n’est pas un peu moins de motivation, c’est un inconfort d’une autre nature, qui peut aller jusqu’à l’anxiété",
       "supports": [
         {
-          "id": "SUP-4e4eaf096d124277",
-          "origin": "validated",
-          "path": "$.review.notes[9]",
-          "access": "n/a",
-          "text": "PROSE — Dernier membre : « un emploi à fort potentiel motivant peut être vécu comme anxiogène » contre « individuals who do not value personal growth and accomplishment may find such a job anxiety-arousing and may be uncomfortably \"stretched\" by it », où « such a job » renvoie à « a job high in motivating potential ». Le modal « peut » conserve « may ». La condition (les individus à faible besoin de développement) est abrégée, mais le premier membre de phrase l'a déjà posée comme modérateur : c'est une contraction, non un élargissement. Aucun adjectif ne durcit l'énoncé — ni « souvent », ni « est » à la place de « peut être ». Fidèle."
-        },
-        {
           "id": "SUP-0f85a4947c2d79b5",
           "origin": "validated",
           "path": "$.notes[3]",
           "access": "n/a",
           "text": "CE QUI FONDE LE RÉSUMÉ. « Modère ses relations » vient de la phrase de rechange citée ci-dessus. « Peut être vécu comme anxiogène » vient du texte élargi de la p. 4 : « individuals who do not value personal growth and accomplishment may find such a job anxiety-arousing and may be uncomfortably \"stretched\" by it », la phrase précédente disant que ceux qui valorisent fortement l'accomplissement et le développement personnels devraient au contraire répondre très positivement à un emploi à fort potentiel motivant."
+        },
+        {
+          "id": "SUP-4e4eaf096d124277",
+          "origin": "validated",
+          "path": "$.review.notes[9]",
+          "access": "n/a",
+          "text": "PROSE — Dernier membre : « un emploi à fort potentiel motivant peut être vécu comme anxiogène » contre « individuals who do not value personal growth and accomplishment may find such a job anxiety-arousing and may be uncomfortably \"stretched\" by it », où « such a job » renvoie à « a job high in motivating potential ». Le modal « peut » conserve « may ». La condition (les individus à faible besoin de développement) est abrégée, mais le premier membre de phrase l'a déjà posée comme modérateur : c'est une contraction, non un élargissement. Aucun adjectif ne durcit l'énoncé — ni « souvent », ni « est » à la place de « peut être ». Fidèle."
         }
       ]
     },
@@ -259,20 +260,6 @@
           "path": "$.review.notes[9]",
           "access": "n/a",
           "text": "PROSE — Dernier membre : « un emploi à fort potentiel motivant peut être vécu comme anxiogène » contre « individuals who do not value personal growth and accomplishment may find such a job anxiety-arousing and may be uncomfortably \"stretched\" by it », où « such a job » renvoie à « a job high in motivating potential ». Le modal « peut » conserve « may ». La condition (les individus à faible besoin de développement) est abrégée, mais le premier membre de phrase l'a déjà posée comme modérateur : c'est une contraction, non un élargissement. Aucun adjectif ne durcit l'énoncé — ni « souvent », ni « est » à la place de « peut être ». Fidèle."
-        }
-      ]
-    },
-    {
-      "claim_id": "C012",
-      "locator": "sections[0].paragraphs[1]",
-      "claim_text": "Et ce qui change d’un cas à l’autre n’est pas l’emploi, le même dans les deux phrases : c’est la valeur que la personne accorde à l’accomplissement et au développement qu’un travail peut lui apporter.",
-      "supports": [
-        {
-          "id": "SUP-4e4eaf096d124277",
-          "origin": "validated",
-          "path": "$.review.notes[9]",
-          "access": "n/a",
-          "text": "PROSE — Dernier membre : « un emploi à fort potentiel motivant peut être vécu comme anxiogène » contre « individuals who do not value personal growth and accomplishment may find such a job anxiety-arousing and may be uncomfortably \"stretched\" by it », où « such a job » renvoie à « a job high in motivating potential ». Le modal « peut » conserve « may ». La condition (les individus à faible besoin de développement) est abrégée, mais le premier membre de phrase l'a déjà posée comme modérateur : c'est une contraction, non un élargissement. Aucun adjectif ne durcit l'énoncé — ni « souvent », ni « est » à la place de « peut être ». Fidèle."
         },
         {
           "id": "SUP-0f85a4947c2d79b5",
@@ -284,7 +271,42 @@
       ]
     },
     {
+      "claim_id": "C012",
+      "locator": "sections[0].paragraphs[1]",
+      "claim_text": "Une possibilité est ouverte, rien n’est annoncé comme certain.",
+      "supports": [
+        {
+          "id": "SUP-4e4eaf096d124277",
+          "origin": "validated",
+          "path": "$.review.notes[9]",
+          "access": "n/a",
+          "text": "PROSE — Dernier membre : « un emploi à fort potentiel motivant peut être vécu comme anxiogène » contre « individuals who do not value personal growth and accomplishment may find such a job anxiety-arousing and may be uncomfortably \"stretched\" by it », où « such a job » renvoie à « a job high in motivating potential ». Le modal « peut » conserve « may ». La condition (les individus à faible besoin de développement) est abrégée, mais le premier membre de phrase l'a déjà posée comme modérateur : c'est une contraction, non un élargissement. Aucun adjectif ne durcit l'énoncé — ni « souvent », ni « est » à la place de « peut être ». Fidèle."
+        }
+      ]
+    },
+    {
       "claim_id": "C013",
+      "locator": "sections[0].paragraphs[1]",
+      "claim_text": "Et ce qui change d’un cas à l’autre n’est pas l’emploi, le même dans les deux phrases : c’est la valeur que la personne accorde à l’accomplissement et au développement qu’un travail peut lui apporter.",
+      "supports": [
+        {
+          "id": "SUP-0f85a4947c2d79b5",
+          "origin": "validated",
+          "path": "$.notes[3]",
+          "access": "n/a",
+          "text": "CE QUI FONDE LE RÉSUMÉ. « Modère ses relations » vient de la phrase de rechange citée ci-dessus. « Peut être vécu comme anxiogène » vient du texte élargi de la p. 4 : « individuals who do not value personal growth and accomplishment may find such a job anxiety-arousing and may be uncomfortably \"stretched\" by it », la phrase précédente disant que ceux qui valorisent fortement l'accomplissement et le développement personnels devraient au contraire répondre très positivement à un emploi à fort potentiel motivant."
+        },
+        {
+          "id": "SUP-4e4eaf096d124277",
+          "origin": "validated",
+          "path": "$.review.notes[9]",
+          "access": "n/a",
+          "text": "PROSE — Dernier membre : « un emploi à fort potentiel motivant peut être vécu comme anxiogène » contre « individuals who do not value personal growth and accomplishment may find such a job anxiety-arousing and may be uncomfortably \"stretched\" by it », où « such a job » renvoie à « a job high in motivating potential ». Le modal « peut » conserve « may ». La condition (les individus à faible besoin de développement) est abrégée, mais le premier membre de phrase l'a déjà posée comme modérateur : c'est une contraction, non un élargissement. Aucun adjectif ne durcit l'énoncé — ni « souvent », ni « est » à la place de « peut être ». Fidèle."
+        }
+      ]
+    },
+    {
+      "claim_id": "C014",
       "locator": "sections[1].paragraphs[0]",
       "claim_text": "Le nom même de cette idée parle d’une force, et le mot n’est pas décoratif.",
       "supports": [
@@ -301,11 +323,18 @@
           "path": "$.notes[2]",
           "access": "n/a",
           "text": "CITATION, CHOIX ET RENONCEMENT. La citation retenue ne nomme pas « growth need strength », et c'est le prix du plafond de 150 caractères. La phrase de rechange, dernière du même paragraphe, le nomme : « Therefore, growth need strength is shown in Figure 1 as a moderator of the other relationships specified by the theory. » (119 caractères, p. 4, feuillet n7, verbatim, sans coupe). Elle n'a pas été prise : son « Therefore » est sans antécédent hors contexte. Aucun composite à deux ellipses n'a été fabriqué pour tenir sous la limite."
+        },
+        {
+          "id": "SUP-f77e516d2d9d873b",
+          "origin": "validated",
+          "path": "$.review.notes[1]",
+          "access": "n/a",
+          "text": "ATTRIBUTION — La note de la fiche affirme que les auteurs rattachent la théorie à Turner & Lawrence (1965) et Hackman & Lawler (1971). Vérifié sur l'image https://archive.org/download/DTIC_AD0779828/page/n5.jpg, p. 2, sous le titre de section « Conceptual Basis of the Instrument » : « The theory which gave rise to the present instrument is based on earlier work by Turner & Lawrence (1965) and by Hackman & Lawler (1971). […] For a more detailed description and discussion of the theory itself, see Hackman & Oldham (1974). » La fiche ne revendique donc pas une paternité que le texte dément : elle attribue à Hackman et Oldham l'énoncé théorique de leur propre rapport, et signale elle-même l'antériorité. Recherche indépendante concordante : Hackman & Lawler (1971) opèrent le modérateur sous le nom de « higher order need strength » ; le terme « growth need strength » et son opérationnalisation dans le JDS sont bien de Hackman et Oldham. Association et paternité ne divergent pas ici, la fiche bornant sa revendication au texte de 1974."
         }
       ]
     },
     {
-      "claim_id": "C014",
+      "claim_id": "C015",
       "locator": "sections[1].paragraphs[0]",
       "claim_text": "Ce qui sépare la quatrième personne des trois autres n’est pas un goût qu’elle aurait ou n’aurait pas : c’est quelque chose qui se compte en intensité.",
       "supports": [
@@ -326,7 +355,7 @@
       ]
     },
     {
-      "claim_id": "C015",
+      "claim_id": "C016",
       "locator": "sections[1].paragraphs[0]",
       "claim_text": "Décrivant ce que leur questionnaire capte, les auteurs parlent de « the strength of the respondent’s desire », la force du désir de la personne qui répond.",
       "supports": [
@@ -340,7 +369,7 @@
       ]
     },
     {
-      "claim_id": "C016",
+      "claim_id": "C017",
       "locator": "sections[1].paragraphs[0]",
       "claim_text": "Le besoin dont il s’agit porte chez eux le nom de growth need strength, la force du besoin de développement",
       "supports": [
@@ -352,16 +381,23 @@
           "text": "CITATION, CHOIX ET RENONCEMENT. La citation retenue ne nomme pas « growth need strength », et c'est le prix du plafond de 150 caractères. La phrase de rechange, dernière du même paragraphe, le nomme : « Therefore, growth need strength is shown in Figure 1 as a moderator of the other relationships specified by the theory. » (119 caractères, p. 4, feuillet n7, verbatim, sans coupe). Elle n'a pas été prise : son « Therefore » est sans antécédent hors contexte. Aucun composite à deux ellipses n'a été fabriqué pour tenir sous la limite."
         },
         {
-          "id": "SUP-c4a1c4a9ecd80611",
+          "id": "SUP-f77e516d2d9d873b",
           "origin": "validated",
-          "path": "$.notes[6]",
+          "path": "$.review.notes[1]",
           "access": "n/a",
-          "text": "REPÈRE NON CITABLE. La p. 27 donne un énoncé empirique convergent (« the relationships between the job dimensions and the dependent measures […] are stronger for individuals with high growth need strength »), suivi d'un renvoi au rapport séparé. Cette page n'a pas été relue sur image, OCR seul : elle ne fonde rien ici et ne doit pas servir de citation en l'état."
+          "text": "ATTRIBUTION — La note de la fiche affirme que les auteurs rattachent la théorie à Turner & Lawrence (1965) et Hackman & Lawler (1971). Vérifié sur l'image https://archive.org/download/DTIC_AD0779828/page/n5.jpg, p. 2, sous le titre de section « Conceptual Basis of the Instrument » : « The theory which gave rise to the present instrument is based on earlier work by Turner & Lawrence (1965) and by Hackman & Lawler (1971). […] For a more detailed description and discussion of the theory itself, see Hackman & Oldham (1974). » La fiche ne revendique donc pas une paternité que le texte dément : elle attribue à Hackman et Oldham l'énoncé théorique de leur propre rapport, et signale elle-même l'antériorité. Recherche indépendante concordante : Hackman & Lawler (1971) opèrent le modérateur sous le nom de « higher order need strength » ; le terme « growth need strength » et son opérationnalisation dans le JDS sont bien de Hackman et Oldham. Association et paternité ne divergent pas ici, la fiche bornant sa revendication au texte de 1974."
+        },
+        {
+          "id": "SUP-b35f03cc5cc4a115",
+          "origin": "validated",
+          "path": "$.title",
+          "access": "n/a",
+          "text": "La force du besoin de développement"
         }
       ]
     },
     {
-      "claim_id": "C017",
+      "claim_id": "C018",
       "locator": "sections[1].paragraphs[0]",
       "claim_text": "et c’est bien la force, non la simple présence, qui y est nommée",
       "supports": [
@@ -382,37 +418,16 @@
       ]
     },
     {
-      "claim_id": "C018",
+      "claim_id": "C019",
       "locator": "sections[1].paragraphs[1]",
       "claim_text": "On peut alors relire autrement les deux phrases de la page 4 : moins comme deux espèces de personnes que comme les deux bouts d’une même échelle.",
       "supports": [
-        {
-          "id": "SUP-c29c26f776666b70",
-          "origin": "validated",
-          "path": "$.notes[4]",
-          "access": "n/a",
-          "text": "NUANCE DES AUTEURS, à ne pas perdre. P. 6, ils qualifient ce besoin de « malleable individual difference characteristic » : ce n'est pas présenté comme un trait figé. Ce passage n'est pas cité sur la carte, son sujet grammatical étant l'instrument (« the JDS taps the strength of the respondent's desire… »)."
-        },
         {
           "id": "SUP-0f85a4947c2d79b5",
           "origin": "validated",
           "path": "$.notes[3]",
           "access": "n/a",
           "text": "CE QUI FONDE LE RÉSUMÉ. « Modère ses relations » vient de la phrase de rechange citée ci-dessus. « Peut être vécu comme anxiogène » vient du texte élargi de la p. 4 : « individuals who do not value personal growth and accomplishment may find such a job anxiety-arousing and may be uncomfortably \"stretched\" by it », la phrase précédente disant que ceux qui valorisent fortement l'accomplissement et le développement personnels devraient au contraire répondre très positivement à un emploi à fort potentiel motivant."
-        }
-      ]
-    },
-    {
-      "claim_id": "C019",
-      "locator": "sections[1].paragraphs[1]",
-      "claim_text": "La question utile devant un projet de refonte n’est plus de savoir qui est dans quel camp, à quoi rien ne permet de répondre",
-      "supports": [
-        {
-          "id": "SUP-46db82f6ac3e7439",
-          "origin": "validated",
-          "path": "$.sources[0].label",
-          "access": "full-text",
-          "text": "J. Richard Hackman et Greg R. Oldham, The Job Diagnostic Survey: An Instrument for the Diagnosis of Jobs and the Evaluation of Job Redesign Projects, Technical Report No. 4, Yale University, mai 1974"
         },
         {
           "id": "SUP-c29c26f776666b70",
@@ -426,7 +441,7 @@
     {
       "claim_id": "C020",
       "locator": "sections[1].paragraphs[1]",
-      "claim_text": "mais avec quelle force ce besoin est présent chez quelqu’un, ce dont un questionnaire peut au moins chercher la mesure",
+      "claim_text": "elle devient de savoir avec quelle force ce besoin est présent chez quelqu’un, ce dont un questionnaire peut au moins chercher la mesure",
       "supports": [
         {
           "id": "SUP-c29c26f776666b70",
@@ -434,13 +449,6 @@
           "path": "$.notes[4]",
           "access": "n/a",
           "text": "NUANCE DES AUTEURS, à ne pas perdre. P. 6, ils qualifient ce besoin de « malleable individual difference characteristic » : ce n'est pas présenté comme un trait figé. Ce passage n'est pas cité sur la carte, son sujet grammatical étant l'instrument (« the JDS taps the strength of the respondent's desire… »)."
-        },
-        {
-          "id": "SUP-46db82f6ac3e7439",
-          "origin": "validated",
-          "path": "$.sources[0].label",
-          "access": "full-text",
-          "text": "J. Richard Hackman et Greg R. Oldham, The Job Diagnostic Survey: An Instrument for the Diagnosis of Jobs and the Evaluation of Job Redesign Projects, Technical Report No. 4, Yale University, mai 1974"
         }
       ]
     },
@@ -457,18 +465,32 @@
           "text": "CE QUI FONDE LE RÉSUMÉ. « Modère ses relations » vient de la phrase de rechange citée ci-dessus. « Peut être vécu comme anxiogène » vient du texte élargi de la p. 4 : « individuals who do not value personal growth and accomplishment may find such a job anxiety-arousing and may be uncomfortably \"stretched\" by it », la phrase précédente disant que ceux qui valorisent fortement l'accomplissement et le développement personnels devraient au contraire répondre très positivement à un emploi à fort potentiel motivant."
         },
         {
-          "id": "SUP-43cb5037f47995be",
+          "id": "SUP-4e4eaf096d124277",
           "origin": "validated",
-          "path": "$.quotation.locator",
+          "path": "$.review.notes[9]",
           "access": "n/a",
-          "text": "p. 4"
+          "text": "PROSE — Dernier membre : « un emploi à fort potentiel motivant peut être vécu comme anxiogène » contre « individuals who do not value personal growth and accomplishment may find such a job anxiety-arousing and may be uncomfortably \"stretched\" by it », où « such a job » renvoie à « a job high in motivating potential ». Le modal « peut » conserve « may ». La condition (les individus à faible besoin de développement) est abrégée, mais le premier membre de phrase l'a déjà posée comme modérateur : c'est une contraction, non un élargissement. Aucun adjectif ne durcit l'énoncé — ni « souvent », ni « est » à la place de « peut être ». Fidèle."
         }
       ]
     },
     {
       "claim_id": "C022",
       "locator": "sections[2].paragraphs[0]",
-      "claim_text": "Le rapport parle au pluriel des relations que la théorie pose, et c’est là que le besoin de développement intervient, à une place particulière.",
+      "claim_text": "Le rapport parle au pluriel des relations que la théorie pose",
+      "supports": [
+        {
+          "id": "SUP-0c5c2e55511ca07c",
+          "origin": "validated",
+          "path": "$.notes[2]",
+          "access": "n/a",
+          "text": "CITATION, CHOIX ET RENONCEMENT. La citation retenue ne nomme pas « growth need strength », et c'est le prix du plafond de 150 caractères. La phrase de rechange, dernière du même paragraphe, le nomme : « Therefore, growth need strength is shown in Figure 1 as a moderator of the other relationships specified by the theory. » (119 caractères, p. 4, feuillet n7, verbatim, sans coupe). Elle n'a pas été prise : son « Therefore » est sans antécédent hors contexte. Aucun composite à deux ellipses n'a été fabriqué pour tenir sous la limite."
+        }
+      ]
+    },
+    {
+      "claim_id": "C023",
+      "locator": "sections[2].paragraphs[0]",
+      "claim_text": "et c’est là que le besoin de développement intervient, à une place particulière",
       "supports": [
         {
           "id": "SUP-0c5c2e55511ca07c",
@@ -487,15 +509,9 @@
       ]
     },
     {
-      "claim_id": "C023",
-      "locator": "sections[2].paragraphs[0]",
-      "claim_text": "Un modérateur est une troisième grandeur qui n’ajoute rien au résultat et n’en retranche rien non plus, mais qui décide de la force du lien",
-      "supports": []
-    },
-    {
       "claim_id": "C024",
-      "locator": "sections[2].paragraphs[0]",
-      "claim_text": "selon qu’il est haut ou bas, le même changement apporté au poste produit beaucoup, un peu, ou rien",
+      "locator": "sections[2].paragraphs[1]",
+      "claim_text": "C’est cette place exactement que les auteurs lui donnent : « Therefore, growth need strength is shown in Figure 1 as a moderator of the other relationships specified by the theory. »",
       "supports": [
         {
           "id": "SUP-0c5c2e55511ca07c",
@@ -508,41 +524,6 @@
     },
     {
       "claim_id": "C025",
-      "locator": "sections[2].paragraphs[1]",
-      "claim_text": "C’est cette place exactement que les auteurs lui donnent",
-      "supports": [
-        {
-          "id": "SUP-0c5c2e55511ca07c",
-          "origin": "validated",
-          "path": "$.notes[2]",
-          "access": "n/a",
-          "text": "CITATION, CHOIX ET RENONCEMENT. La citation retenue ne nomme pas « growth need strength », et c'est le prix du plafond de 150 caractères. La phrase de rechange, dernière du même paragraphe, le nomme : « Therefore, growth need strength is shown in Figure 1 as a moderator of the other relationships specified by the theory. » (119 caractères, p. 4, feuillet n7, verbatim, sans coupe). Elle n'a pas été prise : son « Therefore » est sans antécédent hors contexte. Aucun composite à deux ellipses n'a été fabriqué pour tenir sous la limite."
-        },
-        {
-          "id": "SUP-665c8b51b107b031",
-          "origin": "validated",
-          "path": "$.review.notes[8]",
-          "access": "n/a",
-          "text": "PROSE — Le summary a été testé sur le point le plus glissant : distingue-t-il ce que la théorie pose de ce qu'une étude démontre ? Oui. « La théorie n'est pas donnée pour universelle » traduit exactement le statut de « is not expected to \"work\" » : un attendu théorique, pas un résultat. La suite (« le besoin de développement modère ses relations ») reste syntaxiquement gouvernée par ce premier membre et rend « growth need strength is shown in Figure 1 as a moderator of the other relationships specified by the theory » — c'est-à-dire ce que la figure pose, non ce qu'un test établit. La p. 4 ne contient aucune donnée, et le summary n'en invoque aucune."
-        }
-      ]
-    },
-    {
-      "claim_id": "C026",
-      "locator": "sections[2].paragraphs[1]",
-      "claim_text": "« Therefore, growth need strength is shown in Figure 1 as a moderator of the other relationships specified by the theory. »",
-      "supports": [
-        {
-          "id": "SUP-0c5c2e55511ca07c",
-          "origin": "validated",
-          "path": "$.notes[2]",
-          "access": "n/a",
-          "text": "CITATION, CHOIX ET RENONCEMENT. La citation retenue ne nomme pas « growth need strength », et c'est le prix du plafond de 150 caractères. La phrase de rechange, dernière du même paragraphe, le nomme : « Therefore, growth need strength is shown in Figure 1 as a moderator of the other relationships specified by the theory. » (119 caractères, p. 4, feuillet n7, verbatim, sans coupe). Elle n'a pas été prise : son « Therefore » est sans antécédent hors contexte. Aucun composite à deux ellipses n'a été fabriqué pour tenir sous la limite."
-        }
-      ]
-    },
-    {
-      "claim_id": "C027",
       "locator": "sections[2].paragraphs[1]",
       "claim_text": "Dans leur schéma, il ne figure donc pas comme un maillon de plus dans la chaîne, en amont ou en aval, mais en travers des relations que la théorie pose par ailleurs.",
       "supports": [
@@ -563,19 +544,7 @@
       ]
     },
     {
-      "claim_id": "C028",
-      "locator": "sections[2].paragraphs[2]",
-      "claim_text": "Si une même transformation est évaluée sur un ensemble de personnes dont les besoins diffèrent, la moyenne obtenue additionne deux situations distinctes et n’en décrit exactement aucune.",
-      "supports": []
-    },
-    {
-      "claim_id": "C029",
-      "locator": "sections[2].paragraphs[2]",
-      "claim_text": "Un effet moyen faible peut recouvrir un effet fort chez les uns et nul chez les autres, et la moyenne, seule, ne permet pas de distinguer ce cas d’un effet également faible pour tous.",
-      "supports": []
-    },
-    {
-      "claim_id": "C030",
+      "claim_id": "C026",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "Cette clause n’est pas une précaution glissée en fin de volume.",
       "supports": [
@@ -587,40 +556,19 @@
           "text": "CITATION — Localisation vérifiée. Le folio imprimé « 4 » est visible en haut à droite de ce même feuillet n7. La phrase citée y ouvre le dernier paragraphe plein, juste après la formule du Motivating Potential Score, et précède immédiatement le titre de section suivant « Summary of Concepts Measured by the Job Diagnostic Survey ». Elle appartient donc bien à la section « Conceptual Basis of the Instrument », dont le titre figure p. 2 (feuillet n5) et qui court p. 2–4. Locator « p. 4 » et mention de section : tous deux exacts."
         },
         {
-          "id": "SUP-43cb5037f47995be",
+          "id": "SUP-ea0314366340c75b",
           "origin": "validated",
-          "path": "$.quotation.locator",
-          "access": "n/a",
+          "path": "$.sources[0].locator",
+          "access": "full-text",
           "text": "p. 4"
         }
       ]
     },
     {
-      "claim_id": "C031",
+      "claim_id": "C027",
       "locator": "sections[3].paragraphs[0]",
-      "claim_text": "La voici, telle qu’on peut la rendre en français : « On n’attend pas de la théorie qu’elle « marche » avec la même efficacité pour tous les individus. »",
+      "claim_text": "La voici, telle qu’on peut la rendre en français",
       "supports": [
-        {
-          "id": "SUP-8463ec693f1d9f83",
-          "origin": "validated",
-          "path": "$.quotation.text",
-          "access": "n/a",
-          "text": "On n'attend pas de la théorie qu'elle « marche » avec la même efficacité pour tous les individus."
-        },
-        {
-          "id": "SUP-48c05c222a4125cf",
-          "origin": "validated",
-          "path": "$.quotation.original_text",
-          "access": "n/a",
-          "text": "The theory is not expected to \"work\" with equal effectiveness for all individuals."
-        },
-        {
-          "id": "SUP-76d11f542691c5ac",
-          "origin": "validated",
-          "path": "$.quotation.language",
-          "access": "n/a",
-          "text": "fr"
-        },
         {
           "id": "SUP-520c61d935611e51",
           "origin": "validated",
@@ -638,7 +586,28 @@
       ]
     },
     {
-      "claim_id": "C032",
+      "claim_id": "C028",
+      "locator": "sections[3].paragraphs[0]",
+      "claim_text": "« On n’attend pas de la théorie qu’elle « marche » avec la même efficacité pour tous les individus. »",
+      "supports": [
+        {
+          "id": "SUP-8463ec693f1d9f83",
+          "origin": "validated",
+          "path": "$.quotation.text",
+          "access": "n/a",
+          "text": "On n'attend pas de la théorie qu'elle « marche » avec la même efficacité pour tous les individus."
+        },
+        {
+          "id": "SUP-bb17d922c44f1d5b",
+          "origin": "validated",
+          "path": "$.quotation.translation.translator",
+          "access": "n/a",
+          "text": "Traduction interne non publiée (chaîne Curiosity, session du 29 août 2026). Aucune traduction française publiée du Technical Report No. 4 n'a été identifiée. « Is not expected to » est rendu par « On n'attend pas de la théorie qu'elle » : le passif anglais n'a pas d'équivalent naturel ici, et ce sont bien les auteurs qui déclarent ne pas l'attendre. Les guillemets de « work » sont conservés sur « marche »."
+        }
+      ]
+    },
+    {
+      "claim_id": "C029",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "Elle ouvre le dernier paragraphe plein de la page 4.",
       "supports": [
@@ -652,9 +621,9 @@
       ]
     },
     {
-      "claim_id": "C033",
+      "claim_id": "C030",
       "locator": "sections[3].paragraphs[0]",
-      "claim_text": "Juste au-dessus s’achève la formule du motivating potential score ; juste après vient le titre de section qui annonce le récapitulatif des concepts mesurés par le questionnaire.",
+      "claim_text": "Juste au-dessus s’achève la formule du motivating potential score",
       "supports": [
         {
           "id": "SUP-74f9a53ac00c7d14",
@@ -666,7 +635,21 @@
       ]
     },
     {
-      "claim_id": "C034",
+      "claim_id": "C031",
+      "locator": "sections[3].paragraphs[0]",
+      "claim_text": "juste après vient le titre de section qui annonce le récapitulatif des concepts mesurés par le questionnaire",
+      "supports": [
+        {
+          "id": "SUP-74f9a53ac00c7d14",
+          "origin": "validated",
+          "path": "$.review.notes[3]",
+          "access": "n/a",
+          "text": "CITATION — Localisation vérifiée. Le folio imprimé « 4 » est visible en haut à droite de ce même feuillet n7. La phrase citée y ouvre le dernier paragraphe plein, juste après la formule du Motivating Potential Score, et précède immédiatement le titre de section suivant « Summary of Concepts Measured by the Job Diagnostic Survey ». Elle appartient donc bien à la section « Conceptual Basis of the Instrument », dont le titre figure p. 2 (feuillet n5) et qui court p. 2–4. Locator « p. 4 » et mention de section : tous deux exacts."
+        }
+      ]
+    },
+    {
+      "claim_id": "C032",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "La réserve est donc adossée au chiffre, à l’endroit même où l’on vient d’apprendre à le calculer.",
       "supports": [
@@ -680,7 +663,7 @@
       ]
     },
     {
-      "claim_id": "C035",
+      "claim_id": "C033",
       "locator": "sections[3].paragraphs[1]",
       "claim_text": "dans l’original anglais, c’est le verbe « work », fonctionner, que les auteurs encadrent de guillemets",
       "supports": [
@@ -701,7 +684,7 @@
       ]
     },
     {
-      "claim_id": "C036",
+      "claim_id": "C034",
       "locator": "sections[3].paragraphs[1]",
       "claim_text": "et la traduction les garde sur « marche »",
       "supports": [
@@ -722,7 +705,7 @@
       ]
     },
     {
-      "claim_id": "C037",
+      "claim_id": "C035",
       "locator": "sections[3].paragraphs[1]",
       "claim_text": "Ce n’est pas la théorie qui serait fausse pour certaines personnes, c’est son fonctionnement attendu qui n’a pas la même efficacité pour toutes.",
       "supports": [
@@ -734,6 +717,13 @@
           "text": "The theory is not expected to \"work\" with equal effectiveness for all individuals."
         },
         {
+          "id": "SUP-8463ec693f1d9f83",
+          "origin": "validated",
+          "path": "$.quotation.text",
+          "access": "n/a",
+          "text": "On n'attend pas de la théorie qu'elle « marche » avec la même efficacité pour tous les individus."
+        },
+        {
           "id": "SUP-665c8b51b107b031",
           "origin": "validated",
           "path": "$.review.notes[8]",
@@ -743,7 +733,7 @@
       ]
     },
     {
-      "claim_id": "C038",
+      "claim_id": "C036",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "Deux pages plus loin, en décrivant ce que leur questionnaire mesure, les auteurs qualifient ce besoin de « malleable individual difference characteristic »",
       "supports": [
@@ -753,18 +743,11 @@
           "path": "$.notes[4]",
           "access": "n/a",
           "text": "NUANCE DES AUTEURS, à ne pas perdre. P. 6, ils qualifient ce besoin de « malleable individual difference characteristic » : ce n'est pas présenté comme un trait figé. Ce passage n'est pas cité sur la carte, son sujet grammatical étant l'instrument (« the JDS taps the strength of the respondent's desire… »)."
-        },
-        {
-          "id": "SUP-43cb5037f47995be",
-          "origin": "validated",
-          "path": "$.quotation.locator",
-          "access": "n/a",
-          "text": "p. 4"
         }
       ]
     },
     {
-      "claim_id": "C039",
+      "claim_id": "C037",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "une caractéristique qui distingue les individus, et qui est malléable",
       "supports": [
@@ -778,7 +761,7 @@
       ]
     },
     {
-      "claim_id": "C040",
+      "claim_id": "C038",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "Le mot apparaît dans une phrase dont le sujet grammatical est l’instrument et non la personne",
       "supports": [
@@ -792,7 +775,7 @@
       ]
     },
     {
-      "claim_id": "C041",
+      "claim_id": "C039",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "ce besoin n’est pas présenté comme un trait fixe que l’on aurait ou non",
       "supports": [
@@ -806,13 +789,7 @@
       ]
     },
     {
-      "claim_id": "C042",
-      "locator": "sections[4].paragraphs[1]",
-      "claim_text": "Tenu pour un trait stable, ce besoin sert à trier : celui-ci est fait pour un poste enrichi, celle-là ne l’est pas, et l’on distribue les emplois d’après un classement des personnes.",
-      "supports": []
-    },
-    {
-      "claim_id": "C043",
+      "claim_id": "C040",
       "locator": "sections[4].paragraphs[1]",
       "claim_text": "Tenu pour une caractéristique malléable, il décrit un état mesuré à un moment, chez quelqu’un dont la situation et l’histoire ne sont pas closes.",
       "supports": [
@@ -826,9 +803,9 @@
       ]
     },
     {
-      "claim_id": "C044",
+      "claim_id": "C041",
       "locator": "sections[4].paragraphs[1]",
-      "claim_text": "Le premier usage va au-delà de ce que ce texte autorise à dire ; c’est le second que le mot « malleable » soutient.",
+      "claim_text": "La première lecture va au-delà de ce que ce texte autorise à dire ; c’est la seconde que le mot « malleable » soutient.",
       "supports": [
         {
           "id": "SUP-c29c26f776666b70",
@@ -836,25 +813,11 @@
           "path": "$.notes[4]",
           "access": "n/a",
           "text": "NUANCE DES AUTEURS, à ne pas perdre. P. 6, ils qualifient ce besoin de « malleable individual difference characteristic » : ce n'est pas présenté comme un trait figé. Ce passage n'est pas cité sur la carte, son sujet grammatical étant l'instrument (« the JDS taps the strength of the respondent's desire… »)."
-        },
-        {
-          "id": "SUP-5bd45cc269abd08e",
-          "origin": "validated",
-          "path": "$.notes[7]",
-          "access": "n/a",
-          "text": "PÉRIMÈTRE ET SOURCES. Ce qui est instruit est la thèse, non le Job Diagnostic Survey comme questionnaire ; le motivating potential score, point limite signalé par la lecture, n'est pas réintroduit. Aucune source secondaire n'est affichée et aucune n'a été fabriquée : la lecture primaire n'a ouvert que cette pièce."
-        },
-        {
-          "id": "SUP-701b30007637c3b1",
-          "origin": "validated",
-          "path": "$.notes[1]",
-          "access": "n/a",
-          "text": "CE QUE CETTE CARTE NE DIT PAS, ET NE PEUT PAS DIRE. Le test empirique de la modération n'est pas dans ce rapport : les auteurs renvoient au Technical Report No. 6 (Hackman & Oldham, Motivation through the design of work: Test of a theory, 1974), que la lecture primaire n'a pas ouvert. La carte porte donc ce que la théorie pose, non une démonstration. Un passage ultérieur qui présenterait le Technical Report No. 4 comme établissant que le besoin de développement module l'effet irait au-delà de la pièce lue."
         }
       ]
     },
     {
-      "claim_id": "C045",
+      "claim_id": "C042",
       "locator": "sections[5].paragraphs[0]",
       "claim_text": "La phrase de la page 4 est au passif : en anglais, « is not expected to », sans que personne y soit nommé.",
       "supports": [
@@ -871,18 +834,11 @@
           "path": "$.quotation.translation.translator",
           "access": "n/a",
           "text": "Traduction interne non publiée (chaîne Curiosity, session du 29 août 2026). Aucune traduction française publiée du Technical Report No. 4 n'a été identifiée. « Is not expected to » est rendu par « On n'attend pas de la théorie qu'elle » : le passif anglais n'a pas d'équivalent naturel ici, et ce sont bien les auteurs qui déclarent ne pas l'attendre. Les guillemets de « work » sont conservés sur « marche »."
-        },
-        {
-          "id": "SUP-43cb5037f47995be",
-          "origin": "validated",
-          "path": "$.quotation.locator",
-          "access": "n/a",
-          "text": "p. 4"
         }
       ]
     },
     {
-      "claim_id": "C046",
+      "claim_id": "C043",
       "locator": "sections[5].paragraphs[0]",
       "claim_text": "Ceux qui n’attendent pas cette efficacité égale, ce sont pourtant les auteurs eux-mêmes, dans leur propre texte.",
       "supports": [
@@ -896,7 +852,7 @@
       ]
     },
     {
-      "claim_id": "C047",
+      "claim_id": "C044",
       "locator": "sections[5].paragraphs[0]",
       "claim_text": "Et cette page ne porte aucune donnée : elle énonce ce que la théorie prévoit, non ce qu’une observation a montré.",
       "supports": [
@@ -917,9 +873,9 @@
       ]
     },
     {
-      "claim_id": "C048",
+      "claim_id": "C045",
       "locator": "sections[5].paragraphs[1]",
-      "claim_text": "Cette clause a une histoire, et les auteurs la nomment dès leur deuxième page : « The theory which gave rise to the present instrument is based on earlier work by Turner & Lawrence (1965) and by Hackman & Lawler (1971). »",
+      "claim_text": "Cette clause a une histoire, et les auteurs la nomment dès leur deuxième page",
       "supports": [
         {
           "id": "SUP-f77e516d2d9d873b",
@@ -938,7 +894,28 @@
       ]
     },
     {
-      "claim_id": "C049",
+      "claim_id": "C046",
+      "locator": "sections[5].paragraphs[1]",
+      "claim_text": "« The theory which gave rise to the present instrument is based on earlier work by Turner & Lawrence (1965) and by Hackman & Lawler (1971). »",
+      "supports": [
+        {
+          "id": "SUP-f77e516d2d9d873b",
+          "origin": "validated",
+          "path": "$.review.notes[1]",
+          "access": "n/a",
+          "text": "ATTRIBUTION — La note de la fiche affirme que les auteurs rattachent la théorie à Turner & Lawrence (1965) et Hackman & Lawler (1971). Vérifié sur l'image https://archive.org/download/DTIC_AD0779828/page/n5.jpg, p. 2, sous le titre de section « Conceptual Basis of the Instrument » : « The theory which gave rise to the present instrument is based on earlier work by Turner & Lawrence (1965) and by Hackman & Lawler (1971). […] For a more detailed description and discussion of the theory itself, see Hackman & Oldham (1974). » La fiche ne revendique donc pas une paternité que le texte dément : elle attribue à Hackman et Oldham l'énoncé théorique de leur propre rapport, et signale elle-même l'antériorité. Recherche indépendante concordante : Hackman & Lawler (1971) opèrent le modérateur sous le nom de « higher order need strength » ; le terme « growth need strength » et son opérationnalisation dans le JDS sont bien de Hackman et Oldham. Association et paternité ne divergent pas ici, la fiche bornant sa revendication au texte de 1974."
+        },
+        {
+          "id": "SUP-c604a94416e464a0",
+          "origin": "validated",
+          "path": "$.attribution_note",
+          "access": "n/a",
+          "text": "Rapport signé conjointement par J. Richard Hackman (Yale University) et Greg R. Oldham (University of Illinois), page de titre du Technical Report No. 4 du Department of Administrative Sciences de Yale, mai 1974. Les auteurs rattachent explicitement la théorie qu'ils y exposent à des travaux antérieurs : Turner et Lawrence (1965) et Hackman et Lawler (1971)."
+        }
+      ]
+    },
+    {
+      "claim_id": "C047",
       "locator": "sections[5].paragraphs[1]",
       "claim_text": "puis, pour l’exposé détaillé, « For a more detailed description and discussion of the theory itself, see Hackman & Oldham (1974). »",
       "supports": [
@@ -952,21 +929,7 @@
       ]
     },
     {
-      "claim_id": "C050",
-      "locator": "sections[5].paragraphs[1]",
-      "claim_text": "Ils ne disent pas ce que ces travaux antérieurs contenaient.",
-      "supports": [
-        {
-          "id": "SUP-f77e516d2d9d873b",
-          "origin": "validated",
-          "path": "$.review.notes[1]",
-          "access": "n/a",
-          "text": "ATTRIBUTION — La note de la fiche affirme que les auteurs rattachent la théorie à Turner & Lawrence (1965) et Hackman & Lawler (1971). Vérifié sur l'image https://archive.org/download/DTIC_AD0779828/page/n5.jpg, p. 2, sous le titre de section « Conceptual Basis of the Instrument » : « The theory which gave rise to the present instrument is based on earlier work by Turner & Lawrence (1965) and by Hackman & Lawler (1971). […] For a more detailed description and discussion of the theory itself, see Hackman & Oldham (1974). » La fiche ne revendique donc pas une paternité que le texte dément : elle attribue à Hackman et Oldham l'énoncé théorique de leur propre rapport, et signale elle-même l'antériorité. Recherche indépendante concordante : Hackman & Lawler (1971) opèrent le modérateur sous le nom de « higher order need strength » ; le terme « growth need strength » et son opérationnalisation dans le JDS sont bien de Hackman et Oldham. Association et paternité ne divergent pas ici, la fiche bornant sa revendication au texte de 1974."
-        }
-      ]
-    },
-    {
-      "claim_id": "C051",
+      "claim_id": "C048",
       "locator": "sections[5].paragraphs[1]",
       "claim_text": "Chez Hackman et Lawler, ce même modérateur porte déjà un autre nom, « higher order need strength »",
       "supports": [
@@ -980,7 +943,7 @@
       ]
     },
     {
-      "claim_id": "C052",
+      "claim_id": "C049",
       "locator": "sections[5].paragraphs[1]",
       "claim_text": "ce qui appartient en propre au rapport de 1974, c’est le nom growth need strength et la manière de le mesurer",
       "supports": [
@@ -994,7 +957,7 @@
       ]
     },
     {
-      "claim_id": "C053",
+      "claim_id": "C050",
       "locator": "sections[5].paragraphs[2]",
       "claim_text": "Le test, lui, est ailleurs.",
       "supports": [
@@ -1008,7 +971,7 @@
       ]
     },
     {
-      "claim_id": "C054",
+      "claim_id": "C051",
       "locator": "sections[5].paragraphs[2]",
       "claim_text": "Pour l’épreuve empirique de cette modération, les auteurs renvoient à un autre de leurs rapports de la même année, le Technical Report No. 6, Motivation through the design of work: Test of a theory.",
       "supports": [
@@ -1018,18 +981,11 @@
           "path": "$.notes[1]",
           "access": "n/a",
           "text": "CE QUE CETTE CARTE NE DIT PAS, ET NE PEUT PAS DIRE. Le test empirique de la modération n'est pas dans ce rapport : les auteurs renvoient au Technical Report No. 6 (Hackman & Oldham, Motivation through the design of work: Test of a theory, 1974), que la lecture primaire n'a pas ouvert. La carte porte donc ce que la théorie pose, non une démonstration. Un passage ultérieur qui présenterait le Technical Report No. 4 comme établissant que le besoin de développement module l'effet irait au-delà de la pièce lue."
-        },
-        {
-          "id": "SUP-c4a1c4a9ecd80611",
-          "origin": "validated",
-          "path": "$.notes[6]",
-          "access": "n/a",
-          "text": "REPÈRE NON CITABLE. La p. 27 donne un énoncé empirique convergent (« the relationships between the job dimensions and the dependent measures […] are stronger for individuals with high growth need strength »), suivi d'un renvoi au rapport séparé. Cette page n'a pas été relue sur image, OCR seul : elle ne fonde rien ici et ne doit pas servir de citation en l'état."
         }
       ]
     },
     {
-      "claim_id": "C055",
+      "claim_id": "C052",
       "locator": "sections[5].paragraphs[2]",
       "claim_text": "Ce que des données disent de l’écart entre les personnes, c’est ce rapport-là qui le porte, et il faudra l’ouvrir pour le lire.",
       "supports": [
@@ -1039,17 +995,31 @@
           "path": "$.notes[1]",
           "access": "n/a",
           "text": "CE QUE CETTE CARTE NE DIT PAS, ET NE PEUT PAS DIRE. Le test empirique de la modération n'est pas dans ce rapport : les auteurs renvoient au Technical Report No. 6 (Hackman & Oldham, Motivation through the design of work: Test of a theory, 1974), que la lecture primaire n'a pas ouvert. La carte porte donc ce que la théorie pose, non une démonstration. Un passage ultérieur qui présenterait le Technical Report No. 4 comme établissant que le besoin de développement module l'effet irait au-delà de la pièce lue."
+        }
+      ]
+    },
+    {
+      "claim_id": "C053",
+      "locator": "sections[5].paragraphs[2]",
+      "claim_text": "Une question l’y accompagnera, que ces pages laissent ouverte : un besoin dit malléable, l’observe-t-on comme une propriété des personnes, ou comme la trace de ce que leur travail leur a déjà permis de faire ?",
+      "supports": [
+        {
+          "id": "SUP-c29c26f776666b70",
+          "origin": "validated",
+          "path": "$.notes[4]",
+          "access": "n/a",
+          "text": "NUANCE DES AUTEURS, à ne pas perdre. P. 6, ils qualifient ce besoin de « malleable individual difference characteristic » : ce n'est pas présenté comme un trait figé. Ce passage n'est pas cité sur la carte, son sujet grammatical étant l'instrument (« the JDS taps the strength of the respondent's desire… »)."
         },
         {
-          "id": "SUP-c4a1c4a9ecd80611",
+          "id": "SUP-701b30007637c3b1",
           "origin": "validated",
-          "path": "$.notes[6]",
+          "path": "$.notes[1]",
           "access": "n/a",
-          "text": "REPÈRE NON CITABLE. La p. 27 donne un énoncé empirique convergent (« the relationships between the job dimensions and the dependent measures […] are stronger for individuals with high growth need strength »), suivi d'un renvoi au rapport séparé. Cette page n'a pas été relue sur image, OCR seul : elle ne fonde rien ici et ne doit pas servir de citation en l'état."
+          "text": "CE QUE CETTE CARTE NE DIT PAS, ET NE PEUT PAS DIRE. Le test empirique de la modération n'est pas dans ce rapport : les auteurs renvoient au Technical Report No. 6 (Hackman & Oldham, Motivation through the design of work: Test of a theory, 1974), que la lecture primaire n'a pas ouvert. La carte porte donc ce que la théorie pose, non une démonstration. Un passage ultérieur qui présenterait le Technical Report No. 4 comme établissant que le besoin de développement module l'effet irait au-delà de la pièce lue."
         }
       ]
     }
   ],
-  "estimated_tokens": 19959,
+  "estimated_tokens": 20043,
   "status": "READY"
 }
