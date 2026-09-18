@@ -3,7 +3,7 @@
   "concept_id": "critere-de-la-retroaction",
   "context_budget_tokens": 300000,
   "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
-  "candidate_sha256": "29083f8bb2bfc0602f2f6db3c5f3d2594ebc8efe766d4a9187f1d73a3a595222",
+  "candidate_sha256": "7d716dc2f14f3dd07e031e3fb10b6a0dce028c9b3bf1bcfe97ed2915c8f571ea",
   "validated_sha256": "2af4e7f914e71b588ed756e81666c56a88b9354c38ac15d7a350a4c21a00ac8b",
   "evidence_sha256": null,
   "paragraphs": [
@@ -13,12 +13,12 @@
     },
     {
       "locator": "lead[1]",
-      "text": "Guy Paquette, qui enseigne l’information et la communication à l’université Laval, publie en 1987 un article dont l’objet n’est pas de se plaindre d’un mot mal employé. Ce qu’il construit est un moyen de trancher : devant n’importe quelle situation où quelque chose revient vers celui qui a agi, deux questions suffisent à dire s’il y a boucle ou non. Que revient-il au juste ? Et l’action peut-elle encore changer ? Il mène la démonstration sur un thermostat, un autocuiseur, un réservoir de chasse d’eau, un joueur de quilles, une fièvre, avant de la ramener à ce qui l’occupe, la communication."
+      "text": "Guy Paquette, qui enseigne l’information et la communication à l’université Laval, publie en 1987 un article dont l’objet n’est pas de se plaindre d’un mot mal employé. Ce qu’il construit est un moyen de trancher : devant n’importe quelle situation où quelque chose revient vers celui qui a agi, deux questions suffisent à dire s’il y a boucle ou non. Que revient-il au juste ? Et l’action peut-elle encore changer ? Il mène la démonstration sur un thermostat, un autocuiseur, un réservoir de chasse d’eau, une fièvre, avant de la ramener à ce qui l’occupe, la communication."
     },
     {
       "locator": "sections[0].paragraphs[0]",
       "section_title": "Ce qui revient est une information",
-      "text": "Le premier tri porte sur la nature de ce qui revient, et Paquette le double d’une correction plus dérangeante encore pour l’usage courant : la réaction de celui qui reçoit n’est pas le retour. L’ennui d’une salle, l’irritation d’un client, l’hésitation d’un interlocuteur existent par eux-mêmes, que celui qui les provoque s’en aperçoive ou non. Le retour, lui, réside « dans la connaissance que la source en a »."
+      "text": "Le premier tri porte sur la nature de ce qui revient : de l’information sur l’effet de l’action, et non l’effet lui-même. Paquette double ce tri d’une correction plus dérangeante encore pour l’usage courant : la réaction de celui qui reçoit n’est pas le retour. L’ennui d’une salle, l’irritation d’un client, l’hésitation d’un interlocuteur existent par eux-mêmes, que celui qui les provoque s’en aperçoive ou non. Le retour, lui, réside « dans la connaissance que la source en a »."
     },
     {
       "locator": "sections[0].paragraphs[1]",
@@ -36,11 +36,6 @@
       "text": "Ce critère écarte une bonne part de ce qu’on appelle couramment un retour. Les applaudissements de fin de spectacle, le résultat d’un scrutin, les cotes d’écoute d’une émission déjà diffusée arrivent sur une action terminée : ils informent, ils ne corrigent plus rien. Rien n’oblige pourtant la correction à être instantanée, et Paquette prend soin de le préciser : un comportement peut être « réajusté (pas nécessairement en temps réel) sur la base de ses résultats effectifs ». Ce qui est exigé, c’est que l’action soit encore ouverte, pas que la réponse soit immédiate."
     },
     {
-      "locator": "sections[1].paragraphs[2]",
-      "section_title": "Ouvrir son parachute une seule fois",
-      "text": "Le délai n’est pas neutre pour autant, et l’article lui consacre un développement, avec l’instabilité qu’il engendre. Entre l’action et l’information qui en revient il y a toujours un temps, et ce temps décide autant que le contenu du signal : il peut faire tomber la correction sur une situation qui a déjà changé, et la correction, alors, dérègle au lieu de rattraper."
-    },
-    {
       "locator": "sections[2].paragraphs[0]",
       "section_title": "Ce qu’un autocuiseur ne fait pas",
       "text": "Un système qui se règle tout seul ne satisfait pas pour autant ces conditions, et Paquette le montre en comparant deux objets domestiques. Un autocuiseur maintient sa pression en laissant échapper l’excès de vapeur : rien, dans ce mécanisme, ne fait baisser la source de chaleur. Le réservoir d’une chasse d’eau, lui, travaille bien par boucle, parce qu’un niveau précis peut y être vérifié, recherché, puis l’arrivée d’eau bloquée quand il est atteint. Le premier compense l’excès, le second constate et intervient."
@@ -48,7 +43,12 @@
     {
       "locator": "sections[2].paragraphs[1]",
       "section_title": "Ce qu’un autocuiseur ne fait pas",
-      "text": "Contrôler suppose donc ces deux gestes ensemble, constater et intervenir, et l’idée est chez lui inséparable de celle de finalité : on ne régule que par rapport à une valeur visée. Dans une machine, cette valeur vient du dehors, de celui qui pousse le curseur du thermostat. Dans un organisme, elle peut n’être écrite nulle part et rester implicite. Le processus lui-même se décompose en trois moments, s’informer, évaluer, réagir, que l’exposé sépare mais que le fonctionnement réel tient ensemble, simultanés et continus."
+      "text": "Constater et intervenir ne sont pas une troisième exigence qui viendrait s’ajouter aux deux premières : ce sont elles, sous le libellé de l’auteur. Deux dimensions caractérisent le processus, écrit-il, « celle d’information et celle de correction ou ajustement de l’action », et il les tient pour « des conditions formelles à l’identification d’un processus de feedback ». On voit du même coup pourquoi le premier tri exigeait de l’information et non l’effet : un effet se produit, il ne se compare à rien. Pour qu’il y ait constat, il faut quelque chose qui puisse être rapporté à ce qui était recherché, et une information sur l’effet est exactement cela."
+    },
+    {
+      "locator": "sections[2].paragraphs[2]",
+      "section_title": "Ce qu’un autocuiseur ne fait pas",
+      "text": "Encore faut-il donc que quelque chose soit recherché, et l’idée de contrôle est chez Paquette inséparable de celle de finalité : on ne régule que par rapport à une valeur visée. Dans une machine, cette valeur vient du dehors, de celui qui pousse le curseur du thermostat. Dans un organisme, elle peut n’être écrite nulle part et rester implicite. Le processus se décompose en trois moments, s’informer, évaluer, réagir, que l’exposé sépare mais que le fonctionnement réel tient ensemble, simultanés et continus. Les deux objets domestiques se séparent nettement sous cette grille : le réservoir s’informe d’un niveau, l’évalue au regard de celui qu’on recherche, puis ferme l’arrivée d’eau ; l’autocuiseur évacue un excès, et il n’y a là ni niveau recherché ni geste sur ce qui chauffe."
     },
     {
       "locator": "sections[3].paragraphs[0]",
@@ -58,22 +58,32 @@
     {
       "locator": "sections[3].paragraphs[1]",
       "section_title": "Des boucles emboîtées, des buts qui bougent",
-      "text": "Cela déplace la question du bon fonctionnement. Tant qu’on regarde une boucle seule, tout écart ressemble à un défaut ; dès qu’on admet qu’un niveau supérieur peut réviser les buts, le même écart devient l’exécution d’une consigne venue d’ailleurs. Paquette nomme hétérostasie ce déclenchement d’une révision des buts, par opposition au maintien d’un état constant. On peut comprendre cela comme la différence entre corriger une action et changer ce qu’on cherche : les deux se font par des boucles, mais elles ne se logent pas au même étage."
+      "text": "Cela déplace la question du bon fonctionnement. Tant qu’on regarde une boucle seule, tout écart ressemble à un défaut ; dès qu’on admet qu’un niveau supérieur peut réviser les buts, le même écart devient l’exécution d’une consigne venue d’ailleurs. Paquette nomme hétérostasie ce déclenchement d’une révision des buts. On peut comprendre cela comme la différence entre corriger une action et changer ce qu’on cherche : les deux se font par des boucles, mais elles ne se logent pas au même étage."
     },
     {
       "locator": "sections[4].paragraphs[0]",
       "section_title": "Rétroaction et rétroinformation",
-      "text": "Le mot rétroaction ne garde pas le même sens d’un bout à l’autre de l’article, et il vaut mieux le savoir avant d’y entrer. Dans les pages où le mécanisme est exposé, il sert dans une acception étroite et technique : le feedback fonctionne par rétroaction lorsque la régulation s’accomplit de manière aveugle, « par une connexion directe entre la sortie et l’entrée du système », et ce cas se voit alors opposé à ce que Paquette appelle un feedback par rétroinformation."
+      "text": "Le mot rétroaction ne garde pas le même sens d’un bout à l’autre de l’article. Dans les pages où le mécanisme est exposé, il sert dans une acception étroite et technique : le feedback fonctionne par rétroaction lorsque la régulation s’accomplit de manière aveugle, « par une connexion directe entre la sortie et l’entrée du système », et ce cas se voit alors opposé à ce que Paquette appelle un feedback par rétroinformation. Les définitions qu’il retient pour finir arrivent plus loin, une fois le mécanisme transporté dans la communication."
     },
     {
       "locator": "sections[4].paragraphs[1]",
       "section_title": "Rétroaction et rétroinformation",
-      "text": "Les définitions qu’il retient arrivent plus loin, une fois le mécanisme transporté dans la communication. Deux dimensions caractérisent le processus, écrit-il, « celle d’information et celle de correction ou ajustement de l’action », et il les tient pour « des conditions formelles à l’identification d’un processus de feedback ». Croisées avec une chronologie, avant, pendant, après l’action, elles séparent des situations que le même mot recouvrait jusque-là."
+      "text": "La rétroinformation y devient le travail d’obtention et d’analyse d’informations sur une situation en cours ou déjà terminée, et elle ne fait boucle qu’à une condition : « Lorsque cette rétroinformation sert à modeler l’action (le message, en communication), nous avons une boucle de rétroaction (feedback) ». Le partage se fait ainsi deux fois, sur ce qui revient et sur le moment où cela revient. La préinformation, qu’il rapproche du feedforward, et la préaction interviennent avant que l’action soit déclenchée : elles ne relèvent pas du feedback, « bien que la parenté des concepts soit indéniable »."
     },
     {
       "locator": "sections[4].paragraphs[2]",
       "section_title": "Rétroaction et rétroinformation",
-      "text": "La rétroinformation devient alors le travail d’obtention et d’analyse d’informations sur une situation en cours ou déjà terminée, et elle ne fait boucle qu’à une condition : « Lorsque cette rétroinformation sert à modeler l’action (le message, en communication), nous avons une boucle de rétroaction (feedback) ». La préinformation, qu’il rapproche du feedforward, et la préaction interviennent avant que l’action soit déclenchée : elles ne relèvent pas du feedback, « bien que la parenté des concepts soit indéniable ». Ces quatre termes, il ne les invente pas, ils circulaient déjà ; ce qu’il leur donne, ce sont des définitions séparées, et il les propose aux sciences de la communication et à elles seules."
+      "text": "Ces quatre termes n’ont pas le même statut sous sa plume. Rétroaction et rétroinformation circulaient déjà, parmi les candidats nombreux qu’avait produits la francisation de feedback, et il relève lui-même « l’abondance des termes proposés pour sa francisation » : il ne les forge pas, il leur assigne des définitions distinctes. La préinformation et la préaction, en revanche, il les ajoute, et il les donne comme des hypothèses de travail plutôt que comme des prises de position. L’ensemble, il le propose aux sciences de la communication et à elles seules."
+    },
+    {
+      "locator": "sections[5].paragraphs[0]",
+      "section_title": "Le reproche dont l’article part",
+      "text": "Ce test n’est pas né d’un scrupule de vocabulaire. L’article s’ouvre sur un grief que Paquette reprend à Gabriel Veraldi et adresse aux spécialistes de la communication : « l’emprunt abusif de certains concepts à d’autres disciplines, mais surtout leur utilisation dénaturée ». On peut comprendre les deux questions comme sa réponse : un concept venu d’une autre discipline ne se défend pas en revendiquant son nom, il se défend en disant à quoi la chose se reconnaît, et ce qu’il faut cesser d’appeler ainsi."
+    },
+    {
+      "locator": "sections[5].paragraphs[1]",
+      "section_title": "Le reproche dont l’article part",
+      "text": "Reste que, dans l’article, le critère ne s’énonce pas d’abord de la rétroaction. Les deux conditions sont posées du feedback, aux pages 8 et 10, et c’est plus loin, aux pages 15 et 16, que le mot français les reçoit à son tour. Qui s’arrête aux premières pages y trouve le mécanisme entier et un mot qui n’a pas encore le sens qu’il prendra ; les pages qui font la jonction, il faudra les lire."
     }
   ],
   "supports": [
@@ -393,6 +403,6 @@
       "text": "Aucune source secondaire n'a été identifiée. L'article de Veraldi de 1969, auquel Paquette se rattache, est confirmé dans son existence et son DOI par sa notice, mais il n'a pas été ouvert : il n'est donc pas affiché en source, et rien de ce que Paquette en rapporte ne doit être repris comme établi."
     }
   ],
-  "estimated_tokens": 8229,
+  "estimated_tokens": 8801,
   "status": "READY"
 }
