@@ -1,8 +1,8 @@
 {
   "protocol_version": 1,
   "concept_id": "asservissement-des-activites-hors-travail",
-  "candidate_sha256": "5ba953b54cb232163735681455ae74e4f65eefba8c6dec09cad1271ddc4e2906",
-  "map_sha256": "3cd6f27716f23b239d7946b75ab39596b5a21d7dbf921b2be86cec6327a3a86a",
+  "candidate_sha256": "71d0a37ea7377b558eefb11091165345105afbb5bf15f3d3b2b239691f686b12",
+  "map_sha256": "8792d170e520aa778005cc91530fc17627016ed04329e8039a689275614efff6",
   "claims": [
     {
       "claim_id": "C001",
@@ -80,11 +80,11 @@
           "text": "ATTRIBUTION — Point le plus délicat, et il tient. La thèse portée par la carte est bien celle que Gadbois avance en propre, non celle qu'il rapporte pour s'en démarquer. Sur la p. 449 il énonce son geste : « Ce que nous voudrions montrer ici c'est que l'étude des emprises du travail sur la vie hors travail peut tirer profit d'un approfondissement de la notion d'asservissement, dans son acception la plus précise, dérivée de la théorie des systèmes. Les activités hors travail sont à considérer comme un système […] : tel est le point de vue que nous développerons dans les pages qui suivent. » Ce qu'il rapporte sans le signer est distinct et clairement daté dans le texte : (a) le fait social lui-même, qui « pour n'être pas nouveau n'en reste pas moins actuel », rapporté à Marx (« l'idée et la matière d'une pathologie industrielle », « rabougrissement du corps et de l'esprit ») et à « l'oppression de la personnalité » de Friedmann (1964) ; (b) la « proposition de départ de toutes les études » (p. 449-450), à savoir que les contraintes du travail altèrent l'état du travailleur et que les effets s'en font sentir au-delà des heures de travail — proposition qu'il ne rejette pas mais qu'il juge insuffisamment spécifiée ; (c) la conception qu'il écarte explicitement, celle de la « simple prolongation » ou du « modelage psychique », dont il dit p. 450 que « s'en tenir à une telle conception ne peut conduire qu'à une analyse tronquée ». La note d'attribution de la fiche distingue exactement ces trois plans, et signale la dette de vocabulaire (asservissement emprunté à la théorie des systèmes) sans retirer à Gadbois sa thèse ni l'attribuer à un tiers. Le renvoi de la fiche à son article de 1975 pour les insuffisances des recherches antérieures est vérifié : « des difficultés et des insuffisances que nous avons eu l'occasion d'analyser ailleurs (Gadbois, 1975) », renvoyant en bibliographie à « L'analyse des emprises réciproques de la vie de travail et de la vie hors travail, Bulletin du C.E.R.P., 1975, 23, 117-151 ». Aucun cosignataire, aucune paternité usurpée."
         },
         {
-          "id": "SUP-5cc1b3cf07b7d8ca",
+          "id": "SUP-4e56118d98f599af",
           "origin": "validated",
-          "path": "$.attribution_note",
+          "path": "$.summary",
           "access": "n/a",
-          "text": "Article signé de Charles Gadbois seul, page de titre relue sur l'imprimé, folio 449. Gadbois déclare emprunter la notion d'asservissement à la théorie des systèmes et ne revendique que son application au rapport entre le travail et la vie hors travail. Il rapporte le constat lui-même à Marx et à Friedmann, et renvoie à son propre article de 1975 pour les difficultés des recherches antérieures."
+          "text": "Ayant altéré l'état du travailleur, les conditions de travail perturbent le système des activités hors travail et modifient les conditions d'exécution de ces activités."
         }
       ]
     },
@@ -106,20 +106,34 @@
           "path": "$.sources[0].label",
           "access": "full-text",
           "text": "Charles Gadbois, « Les conditions de travail comme facteurs d'asservissement du système des activités hors travail », Bulletin de psychologie, tome XXXIII, n° 344, 1980, p. 449-455."
-        },
-        {
-          "id": "SUP-9d415535709038e1",
-          "origin": "validated",
-          "path": "$.review.notes[2]",
-          "access": "n/a",
-          "text": "SOURCES — Référence unique, et elle résout intégralement. Crossref (api.crossref.org/works/10.3406/bupsy.1980.11736) rend : titre exact « Les conditions de travail comme facteurs d'asservissement du système des activités hors travail », auteur unique Charles Gadbois (sequence first), volume 33, issue 344, published-print 1980, page 449-455, éditeur PERSEE Program. La forme imprimée confirme la notice plutôt qu'elle ne la contredit : la page de titre (image renderPage du folio 0449) porte le titre à l'identique et la seule signature « Charles GADBOIS — Chargé de recherche au C.N.R.S., Laboratoire de Psychologie du Travail de l'E.P.H.E. — PARIS », et l'en-tête de livraison porte « Tome XXXIII - N° 344 ». Le « tome XXXIII » de la fiche suit donc l'imprimé là où Persée affiche « tome 33 ». Pagination 449-455 vérifiée page à page (la p. 455 se clôt sur les Références). L'outil verify_reference du serveur documentary ne m'était pas exposé dans cette session ; j'ai donc interrogé Crossref directement, avec réponse concluante."
         }
       ]
     },
     {
       "claim_id": "C005",
       "locator": "lead[1]",
-      "claim_text": "ce n’est pas le sens que Gadbois revendique : il déclare l’emprunter à un vocabulaire scientifique, dont il retient l’acception la plus précise",
+      "claim_text": "ce n’est pas le sens que Gadbois revendique",
+      "supports": [
+        {
+          "id": "SUP-7dae79d163dc03a1",
+          "origin": "validated",
+          "path": "$.notes[3]",
+          "access": "n/a",
+          "text": "La dette de vocabulaire est signalée dans l'attribution et n'est pas instruite ici. Gadbois écrit emprunter la notion d'asservissement « dans son acception la plus précise, dérivée de la théorie des systèmes ». Aucune source de théorie des systèmes ou de cybernétique n'a été ouverte, l'article n'en cite aucune, et rien n'est affirmé du sens technique du terme dans son domaine d'origine, qui est un domaine déjà ouvert du corpus."
+        },
+        {
+          "id": "SUP-5cc1b3cf07b7d8ca",
+          "origin": "validated",
+          "path": "$.attribution_note",
+          "access": "n/a",
+          "text": "Article signé de Charles Gadbois seul, page de titre relue sur l'imprimé, folio 449. Gadbois déclare emprunter la notion d'asservissement à la théorie des systèmes et ne revendique que son application au rapport entre le travail et la vie hors travail. Il rapporte le constat lui-même à Marx et à Friedmann, et renvoie à son propre article de 1975 pour les difficultés des recherches antérieures."
+        }
+      ]
+    },
+    {
+      "claim_id": "C006",
+      "locator": "lead[1]",
+      "claim_text": "il déclare l’emprunter à un vocabulaire scientifique, dont il retient l’acception la plus précise",
       "supports": [
         {
           "id": "SUP-7dae79d163dc03a1",
@@ -145,15 +159,9 @@
       ]
     },
     {
-      "claim_id": "C006",
-      "locator": "sections[0].paragraphs[0]",
-      "claim_text": "Traiter un ensemble comme un système, c’est faire une hypothèse simple : ses éléments ne sont pas seulement côte à côte, ils dépendent les uns des autres, si bien qu’on ne peut pas en modifier un sans que les autres bougent",
-      "supports": []
-    },
-    {
       "claim_id": "C007",
       "locator": "sections[0].paragraphs[0]",
-      "claim_text": "C’est le point de vue que Gadbois annonce dès sa première page",
+      "claim_text": "Le point de vue que Gadbois annonce dès sa première page tient dans une phrase : « Les activités hors travail sont à considérer comme un système ».",
       "supports": [
         {
           "id": "SUP-6bc4c99da6a6d037",
@@ -163,18 +171,18 @@
           "text": "ATTRIBUTION — Point le plus délicat, et il tient. La thèse portée par la carte est bien celle que Gadbois avance en propre, non celle qu'il rapporte pour s'en démarquer. Sur la p. 449 il énonce son geste : « Ce que nous voudrions montrer ici c'est que l'étude des emprises du travail sur la vie hors travail peut tirer profit d'un approfondissement de la notion d'asservissement, dans son acception la plus précise, dérivée de la théorie des systèmes. Les activités hors travail sont à considérer comme un système […] : tel est le point de vue que nous développerons dans les pages qui suivent. » Ce qu'il rapporte sans le signer est distinct et clairement daté dans le texte : (a) le fait social lui-même, qui « pour n'être pas nouveau n'en reste pas moins actuel », rapporté à Marx (« l'idée et la matière d'une pathologie industrielle », « rabougrissement du corps et de l'esprit ») et à « l'oppression de la personnalité » de Friedmann (1964) ; (b) la « proposition de départ de toutes les études » (p. 449-450), à savoir que les contraintes du travail altèrent l'état du travailleur et que les effets s'en font sentir au-delà des heures de travail — proposition qu'il ne rejette pas mais qu'il juge insuffisamment spécifiée ; (c) la conception qu'il écarte explicitement, celle de la « simple prolongation » ou du « modelage psychique », dont il dit p. 450 que « s'en tenir à une telle conception ne peut conduire qu'à une analyse tronquée ». La note d'attribution de la fiche distingue exactement ces trois plans, et signale la dette de vocabulaire (asservissement emprunté à la théorie des systèmes) sans retirer à Gadbois sa thèse ni l'attribuer à un tiers. Le renvoi de la fiche à son article de 1975 pour les insuffisances des recherches antérieures est vérifié : « des difficultés et des insuffisances que nous avons eu l'occasion d'analyser ailleurs (Gadbois, 1975) », renvoyant en bibliographie à « L'analyse des emprises réciproques de la vie de travail et de la vie hors travail, Bulletin du C.E.R.P., 1975, 23, 117-151 ». Aucun cosignataire, aucune paternité usurpée."
         },
         {
-          "id": "SUP-5cc1b3cf07b7d8ca",
+          "id": "SUP-3a96e9a0fc83c319",
           "origin": "validated",
-          "path": "$.attribution_note",
-          "access": "n/a",
-          "text": "Article signé de Charles Gadbois seul, page de titre relue sur l'imprimé, folio 449. Gadbois déclare emprunter la notion d'asservissement à la théorie des systèmes et ne revendique que son application au rapport entre le travail et la vie hors travail. Il rapporte le constat lui-même à Marx et à Friedmann, et renvoie à son propre article de 1975 pour les difficultés des recherches antérieures."
+          "path": "$.sources[0].locator",
+          "access": "full-text",
+          "text": "p. 449-455"
         }
       ]
     },
     {
       "claim_id": "C008",
       "locator": "sections[0].paragraphs[0]",
-      "claim_text": "« Les activités hors travail sont à considérer comme un système »",
+      "claim_text": "On peut entendre cette annonce comme une consigne de regard : prendre ce qu’une personne fait en dehors du travail comme un agencement dont les pièces tiennent ensemble, plutôt que comme une suite d’occupations à examiner chacune pour elle-même.",
       "supports": [
         {
           "id": "SUP-6bc4c99da6a6d037",
@@ -188,7 +196,7 @@
     {
       "claim_id": "C009",
       "locator": "sections[0].paragraphs[1]",
-      "claim_text": "elle interdit de conclure quoi que ce soit d’une activité regardée seule",
+      "claim_text": "Cette façon de regarder oriente ce que l’on cherche.",
       "supports": [
         {
           "id": "SUP-6bc4c99da6a6d037",
@@ -196,13 +204,20 @@
           "path": "$.review.notes[3]",
           "access": "n/a",
           "text": "ATTRIBUTION — Point le plus délicat, et il tient. La thèse portée par la carte est bien celle que Gadbois avance en propre, non celle qu'il rapporte pour s'en démarquer. Sur la p. 449 il énonce son geste : « Ce que nous voudrions montrer ici c'est que l'étude des emprises du travail sur la vie hors travail peut tirer profit d'un approfondissement de la notion d'asservissement, dans son acception la plus précise, dérivée de la théorie des systèmes. Les activités hors travail sont à considérer comme un système […] : tel est le point de vue que nous développerons dans les pages qui suivent. » Ce qu'il rapporte sans le signer est distinct et clairement daté dans le texte : (a) le fait social lui-même, qui « pour n'être pas nouveau n'en reste pas moins actuel », rapporté à Marx (« l'idée et la matière d'une pathologie industrielle », « rabougrissement du corps et de l'esprit ») et à « l'oppression de la personnalité » de Friedmann (1964) ; (b) la « proposition de départ de toutes les études » (p. 449-450), à savoir que les contraintes du travail altèrent l'état du travailleur et que les effets s'en font sentir au-delà des heures de travail — proposition qu'il ne rejette pas mais qu'il juge insuffisamment spécifiée ; (c) la conception qu'il écarte explicitement, celle de la « simple prolongation » ou du « modelage psychique », dont il dit p. 450 que « s'en tenir à une telle conception ne peut conduire qu'à une analyse tronquée ». La note d'attribution de la fiche distingue exactement ces trois plans, et signale la dette de vocabulaire (asservissement emprunté à la théorie des systèmes) sans retirer à Gadbois sa thèse ni l'attribuer à un tiers. Le renvoi de la fiche à son article de 1975 pour les insuffisances des recherches antérieures est vérifié : « des difficultés et des insuffisances que nous avons eu l'occasion d'analyser ailleurs (Gadbois, 1975) », renvoyant en bibliographie à « L'analyse des emprises réciproques de la vie de travail et de la vie hors travail, Bulletin du C.E.R.P., 1975, 23, 117-151 ». Aucun cosignataire, aucune paternité usurpée."
+        },
+        {
+          "id": "SUP-1f1c435ed0732b58",
+          "origin": "validated",
+          "path": "$.notes[5]",
+          "access": "n/a",
+          "text": "L'article n'est pas un compte rendu d'étude empirique mais un texte de problématique, qui se donne lui-même pour tel au folio 453. Ses appuis sont des exemples, sans effectif ni protocole : la thèse ne peut pas être présentée comme un résultat mesuré."
         }
       ]
     },
     {
       "claim_id": "C010",
       "locator": "sections[0].paragraphs[1]",
-      "claim_text": "Constater qu’une personne dort moins, ou sort moins, ne dit encore rien de l’effet du travail sur elle",
+      "claim_text": "C’est ce second regard que l’on peut entendre dans le mot de système.",
       "supports": [
         {
           "id": "SUP-6bc4c99da6a6d037",
@@ -215,20 +230,6 @@
     },
     {
       "claim_id": "C011",
-      "locator": "sections[0].paragraphs[1]",
-      "claim_text": "ce nombre d’heures ne porte aucune information sur la place que l’activité occupait dans la soirée, ni sur ce que sa réduction a changé pour le reste",
-      "supports": [
-        {
-          "id": "SUP-6bc4c99da6a6d037",
-          "origin": "validated",
-          "path": "$.review.notes[3]",
-          "access": "n/a",
-          "text": "ATTRIBUTION — Point le plus délicat, et il tient. La thèse portée par la carte est bien celle que Gadbois avance en propre, non celle qu'il rapporte pour s'en démarquer. Sur la p. 449 il énonce son geste : « Ce que nous voudrions montrer ici c'est que l'étude des emprises du travail sur la vie hors travail peut tirer profit d'un approfondissement de la notion d'asservissement, dans son acception la plus précise, dérivée de la théorie des systèmes. Les activités hors travail sont à considérer comme un système […] : tel est le point de vue que nous développerons dans les pages qui suivent. » Ce qu'il rapporte sans le signer est distinct et clairement daté dans le texte : (a) le fait social lui-même, qui « pour n'être pas nouveau n'en reste pas moins actuel », rapporté à Marx (« l'idée et la matière d'une pathologie industrielle », « rabougrissement du corps et de l'esprit ») et à « l'oppression de la personnalité » de Friedmann (1964) ; (b) la « proposition de départ de toutes les études » (p. 449-450), à savoir que les contraintes du travail altèrent l'état du travailleur et que les effets s'en font sentir au-delà des heures de travail — proposition qu'il ne rejette pas mais qu'il juge insuffisamment spécifiée ; (c) la conception qu'il écarte explicitement, celle de la « simple prolongation » ou du « modelage psychique », dont il dit p. 450 que « s'en tenir à une telle conception ne peut conduire qu'à une analyse tronquée ». La note d'attribution de la fiche distingue exactement ces trois plans, et signale la dette de vocabulaire (asservissement emprunté à la théorie des systèmes) sans retirer à Gadbois sa thèse ni l'attribuer à un tiers. Le renvoi de la fiche à son article de 1975 pour les insuffisances des recherches antérieures est vérifié : « des difficultés et des insuffisances que nous avons eu l'occasion d'analyser ailleurs (Gadbois, 1975) », renvoyant en bibliographie à « L'analyse des emprises réciproques de la vie de travail et de la vie hors travail, Bulletin du C.E.R.P., 1975, 23, 117-151 ». Aucun cosignataire, aucune paternité usurpée."
-        }
-      ]
-    },
-    {
-      "claim_id": "C012",
       "locator": "sections[1].paragraphs[0]",
       "claim_text": "la thèse tient dans une phrase de la page 451",
       "supports": [
@@ -252,55 +253,6 @@
           "path": "$.notes[0]",
           "access": "n/a",
           "text": "La citation est un fragment contigu, sans aucune coupe interne : elle reprend le début de la phrase du folio 451 et s'arrête avant sa subordonnée. La phrase entière est : « Par rapport au système des activités hors travail ainsi décrit, les conditions de travail s'analysent comme des sources de perturbations dans la mesure où, ayant provoqué une altération de l'état physique et psychologique du travailleur, elles modifient les conditions d'exécution des activités hors travail. »"
-        }
-      ]
-    },
-    {
-      "claim_id": "C013",
-      "locator": "sections[1].paragraphs[0]",
-      "claim_text": "« Par rapport au système des activités hors travail ainsi décrit, les conditions de travail s’analysent comme des sources de perturbations dans la mesure où, ayant provoqué une altération de l’état physique et psychologique du travailleur, elles modifient les conditions d’exécution des activités hors travail. »",
-      "supports": [
-        {
-          "id": "SUP-7559335d6f1b5df8",
-          "origin": "validated",
-          "path": "$.notes[0]",
-          "access": "n/a",
-          "text": "La citation est un fragment contigu, sans aucune coupe interne : elle reprend le début de la phrase du folio 451 et s'arrête avant sa subordonnée. La phrase entière est : « Par rapport au système des activités hors travail ainsi décrit, les conditions de travail s'analysent comme des sources de perturbations dans la mesure où, ayant provoqué une altération de l'état physique et psychologique du travailleur, elles modifient les conditions d'exécution des activités hors travail. »"
-        },
-        {
-          "id": "SUP-b0e0df5744f12f84",
-          "origin": "validated",
-          "path": "$.review.notes[1]",
-          "access": "n/a",
-          "text": "CITATION — Relue sur l'image, pas sur l'OCR : https://www.persee.fr/renderPage/bupsy_0007-4403_1980_num_33_344_11736/bupsy_0007-4403_1980_num_33_344_T1_0451_0000_2000.jpg, colonne de droite, milieu de page ; le folio imprimé « 451 » est lisible dans l'en-tête de cette même image (« BULLETIN DE PSYCHOLOGIE   451 »). La phrase imprimée est : « Par rapport au système des activités hors travail ainsi décrit, les conditions de travail s'analysent comme des sources de perturbations dans la mesure où, ayant provoqué une altération de l'état physique et psychologique du travailleur, elles modifient les conditions d'exécution des activités hors travail. » La fiche en reproduit le début mot pour mot jusqu'à « sources de perturbations » (la césure typographique « perturba-tions » de fin de ligne est correctement recomposée). Aucune coupe interne, donc aucun […] à porter ; l'arrêt est terminal. Texte source en français, pas de traduction : le champ translation « none » est juste."
-        },
-        {
-          "id": "SUP-775c121b7f6f43a7",
-          "origin": "validated",
-          "path": "$.quotation.text",
-          "access": "n/a",
-          "text": "Par rapport au système des activités hors travail ainsi décrit, les conditions de travail s'analysent comme des sources de perturbations"
-        }
-      ]
-    },
-    {
-      "claim_id": "C014",
-      "locator": "sections[1].paragraphs[0]",
-      "claim_text": "Deux choses y sont dites plutôt qu’une : que les conditions de travail perturbent, et qu’elles ne le font pas directement",
-      "supports": [
-        {
-          "id": "SUP-7559335d6f1b5df8",
-          "origin": "validated",
-          "path": "$.notes[0]",
-          "access": "n/a",
-          "text": "La citation est un fragment contigu, sans aucune coupe interne : elle reprend le début de la phrase du folio 451 et s'arrête avant sa subordonnée. La phrase entière est : « Par rapport au système des activités hors travail ainsi décrit, les conditions de travail s'analysent comme des sources de perturbations dans la mesure où, ayant provoqué une altération de l'état physique et psychologique du travailleur, elles modifient les conditions d'exécution des activités hors travail. »"
-        },
-        {
-          "id": "SUP-5acf6338e14133e4",
-          "origin": "validated",
-          "path": "$.notes[1]",
-          "access": "n/a",
-          "text": "La lecture primaire proposait une citation de 150 caractères formée de deux fragments joints par des points de suspension. Elle est écartée pour deux raisons. La première est de méthode : ce dépôt a déjà refusé une citation célèbre pour ce seul motif. La seconde est de fond : la coupe retirait « dans la mesure où, ayant provoqué une altération de l'état physique et psychologique du travailleur », c'est-à-dire la médiation qui range ce texte en psychologie du travail. Sans elle, la phrase décrirait un lien direct entre conditions de travail et vie privée, ce qui n'est pas la thèse. La médiation est portée par le résumé."
         },
         {
           "id": "SUP-4e56118d98f599af",
@@ -312,16 +264,93 @@
       ]
     },
     {
-      "claim_id": "C015",
-      "locator": "sections[1].paragraphs[1]",
-      "claim_text": "Elles passent par l’état de la personne",
+      "claim_id": "C012",
+      "locator": "sections[1].paragraphs[0]",
+      "claim_text": "« Par rapport au système des activités hors travail ainsi décrit, les conditions de travail s’analysent comme des sources de perturbations dans la mesure où, ayant provoqué une altération de l’état physique et psychologique du travailleur, elles modifient les conditions d’exécution des activités hors travail. »",
       "supports": [
+        {
+          "id": "SUP-b0e0df5744f12f84",
+          "origin": "validated",
+          "path": "$.review.notes[1]",
+          "access": "n/a",
+          "text": "CITATION — Relue sur l'image, pas sur l'OCR : https://www.persee.fr/renderPage/bupsy_0007-4403_1980_num_33_344_11736/bupsy_0007-4403_1980_num_33_344_T1_0451_0000_2000.jpg, colonne de droite, milieu de page ; le folio imprimé « 451 » est lisible dans l'en-tête de cette même image (« BULLETIN DE PSYCHOLOGIE   451 »). La phrase imprimée est : « Par rapport au système des activités hors travail ainsi décrit, les conditions de travail s'analysent comme des sources de perturbations dans la mesure où, ayant provoqué une altération de l'état physique et psychologique du travailleur, elles modifient les conditions d'exécution des activités hors travail. » La fiche en reproduit le début mot pour mot jusqu'à « sources de perturbations » (la césure typographique « perturba-tions » de fin de ligne est correctement recomposée). Aucune coupe interne, donc aucun […] à porter ; l'arrêt est terminal. Texte source en français, pas de traduction : le champ translation « none » est juste."
+        },
         {
           "id": "SUP-7559335d6f1b5df8",
           "origin": "validated",
           "path": "$.notes[0]",
           "access": "n/a",
           "text": "La citation est un fragment contigu, sans aucune coupe interne : elle reprend le début de la phrase du folio 451 et s'arrête avant sa subordonnée. La phrase entière est : « Par rapport au système des activités hors travail ainsi décrit, les conditions de travail s'analysent comme des sources de perturbations dans la mesure où, ayant provoqué une altération de l'état physique et psychologique du travailleur, elles modifient les conditions d'exécution des activités hors travail. »"
+        },
+        {
+          "id": "SUP-775c121b7f6f43a7",
+          "origin": "validated",
+          "path": "$.quotation.text",
+          "access": "n/a",
+          "text": "Par rapport au système des activités hors travail ainsi décrit, les conditions de travail s'analysent comme des sources de perturbations"
+        }
+      ]
+    },
+    {
+      "claim_id": "C013",
+      "locator": "sections[1].paragraphs[0]",
+      "claim_text": "que les conditions de travail perturbent",
+      "supports": [
+        {
+          "id": "SUP-b0e0df5744f12f84",
+          "origin": "validated",
+          "path": "$.review.notes[1]",
+          "access": "n/a",
+          "text": "CITATION — Relue sur l'image, pas sur l'OCR : https://www.persee.fr/renderPage/bupsy_0007-4403_1980_num_33_344_11736/bupsy_0007-4403_1980_num_33_344_T1_0451_0000_2000.jpg, colonne de droite, milieu de page ; le folio imprimé « 451 » est lisible dans l'en-tête de cette même image (« BULLETIN DE PSYCHOLOGIE   451 »). La phrase imprimée est : « Par rapport au système des activités hors travail ainsi décrit, les conditions de travail s'analysent comme des sources de perturbations dans la mesure où, ayant provoqué une altération de l'état physique et psychologique du travailleur, elles modifient les conditions d'exécution des activités hors travail. » La fiche en reproduit le début mot pour mot jusqu'à « sources de perturbations » (la césure typographique « perturba-tions » de fin de ligne est correctement recomposée). Aucune coupe interne, donc aucun […] à porter ; l'arrêt est terminal. Texte source en français, pas de traduction : le champ translation « none » est juste."
+        },
+        {
+          "id": "SUP-4e56118d98f599af",
+          "origin": "validated",
+          "path": "$.summary",
+          "access": "n/a",
+          "text": "Ayant altéré l'état du travailleur, les conditions de travail perturbent le système des activités hors travail et modifient les conditions d'exécution de ces activités."
+        }
+      ]
+    },
+    {
+      "claim_id": "C014",
+      "locator": "sections[1].paragraphs[0]",
+      "claim_text": "qu’elles ne le font pas directement",
+      "supports": [
+        {
+          "id": "SUP-5acf6338e14133e4",
+          "origin": "validated",
+          "path": "$.notes[1]",
+          "access": "n/a",
+          "text": "La lecture primaire proposait une citation de 150 caractères formée de deux fragments joints par des points de suspension. Elle est écartée pour deux raisons. La première est de méthode : ce dépôt a déjà refusé une citation célèbre pour ce seul motif. La seconde est de fond : la coupe retirait « dans la mesure où, ayant provoqué une altération de l'état physique et psychologique du travailleur », c'est-à-dire la médiation qui range ce texte en psychologie du travail. Sans elle, la phrase décrirait un lien direct entre conditions de travail et vie privée, ce qui n'est pas la thèse. La médiation est portée par le résumé."
+        },
+        {
+          "id": "SUP-b0e0df5744f12f84",
+          "origin": "validated",
+          "path": "$.review.notes[1]",
+          "access": "n/a",
+          "text": "CITATION — Relue sur l'image, pas sur l'OCR : https://www.persee.fr/renderPage/bupsy_0007-4403_1980_num_33_344_11736/bupsy_0007-4403_1980_num_33_344_T1_0451_0000_2000.jpg, colonne de droite, milieu de page ; le folio imprimé « 451 » est lisible dans l'en-tête de cette même image (« BULLETIN DE PSYCHOLOGIE   451 »). La phrase imprimée est : « Par rapport au système des activités hors travail ainsi décrit, les conditions de travail s'analysent comme des sources de perturbations dans la mesure où, ayant provoqué une altération de l'état physique et psychologique du travailleur, elles modifient les conditions d'exécution des activités hors travail. » La fiche en reproduit le début mot pour mot jusqu'à « sources de perturbations » (la césure typographique « perturba-tions » de fin de ligne est correctement recomposée). Aucune coupe interne, donc aucun […] à porter ; l'arrêt est terminal. Texte source en français, pas de traduction : le champ translation « none » est juste."
+        },
+        {
+          "id": "SUP-481c53c2333d4c14",
+          "origin": "validated",
+          "path": "$.notes[2]",
+          "access": "n/a",
+          "text": "Le résumé dit « l'état du travailleur » là où le texte écrit « l'état physique et psychologique du travailleur » : la double nature de l'altération est omise faute de place, elle n'est pas contredite."
+        }
+      ]
+    },
+    {
+      "claim_id": "C015",
+      "locator": "sections[1].paragraphs[1]",
+      "claim_text": "Elles passent par l’état de la personne.",
+      "supports": [
+        {
+          "id": "SUP-b0e0df5744f12f84",
+          "origin": "validated",
+          "path": "$.review.notes[1]",
+          "access": "n/a",
+          "text": "CITATION — Relue sur l'image, pas sur l'OCR : https://www.persee.fr/renderPage/bupsy_0007-4403_1980_num_33_344_11736/bupsy_0007-4403_1980_num_33_344_T1_0451_0000_2000.jpg, colonne de droite, milieu de page ; le folio imprimé « 451 » est lisible dans l'en-tête de cette même image (« BULLETIN DE PSYCHOLOGIE   451 »). La phrase imprimée est : « Par rapport au système des activités hors travail ainsi décrit, les conditions de travail s'analysent comme des sources de perturbations dans la mesure où, ayant provoqué une altération de l'état physique et psychologique du travailleur, elles modifient les conditions d'exécution des activités hors travail. » La fiche en reproduit le début mot pour mot jusqu'à « sources de perturbations » (la césure typographique « perturba-tions » de fin de ligne est correctement recomposée). Aucune coupe interne, donc aucun […] à porter ; l'arrêt est terminal. Texte source en français, pas de traduction : le champ translation « none » est juste."
         },
         {
           "id": "SUP-5acf6338e14133e4",
@@ -342,14 +371,14 @@
     {
       "claim_id": "C016",
       "locator": "sections[1].paragraphs[1]",
-      "claim_text": "Les conditions de travail n’agissent pas sur la soirée : elles ont d’abord altéré quelque chose chez celui qui rentre, et c’est cette altération qui change les conditions dans lesquelles les activités du soir vont s’exécuter",
+      "claim_text": "Les conditions de travail n’agissent pas sur la soirée : elles ont d’abord altéré quelque chose chez celui qui rentre",
       "supports": [
         {
-          "id": "SUP-7559335d6f1b5df8",
+          "id": "SUP-b0e0df5744f12f84",
           "origin": "validated",
-          "path": "$.notes[0]",
+          "path": "$.review.notes[1]",
           "access": "n/a",
-          "text": "La citation est un fragment contigu, sans aucune coupe interne : elle reprend le début de la phrase du folio 451 et s'arrête avant sa subordonnée. La phrase entière est : « Par rapport au système des activités hors travail ainsi décrit, les conditions de travail s'analysent comme des sources de perturbations dans la mesure où, ayant provoqué une altération de l'état physique et psychologique du travailleur, elles modifient les conditions d'exécution des activités hors travail. »"
+          "text": "CITATION — Relue sur l'image, pas sur l'OCR : https://www.persee.fr/renderPage/bupsy_0007-4403_1980_num_33_344_11736/bupsy_0007-4403_1980_num_33_344_T1_0451_0000_2000.jpg, colonne de droite, milieu de page ; le folio imprimé « 451 » est lisible dans l'en-tête de cette même image (« BULLETIN DE PSYCHOLOGIE   451 »). La phrase imprimée est : « Par rapport au système des activités hors travail ainsi décrit, les conditions de travail s'analysent comme des sources de perturbations dans la mesure où, ayant provoqué une altération de l'état physique et psychologique du travailleur, elles modifient les conditions d'exécution des activités hors travail. » La fiche en reproduit le début mot pour mot jusqu'à « sources de perturbations » (la césure typographique « perturba-tions » de fin de ligne est correctement recomposée). Aucune coupe interne, donc aucun […] à porter ; l'arrêt est terminal. Texte source en français, pas de traduction : le champ translation « none » est juste."
         },
         {
           "id": "SUP-5acf6338e14133e4",
@@ -357,35 +386,63 @@
           "path": "$.notes[1]",
           "access": "n/a",
           "text": "La lecture primaire proposait une citation de 150 caractères formée de deux fragments joints par des points de suspension. Elle est écartée pour deux raisons. La première est de méthode : ce dépôt a déjà refusé une citation célèbre pour ce seul motif. La seconde est de fond : la coupe retirait « dans la mesure où, ayant provoqué une altération de l'état physique et psychologique du travailleur », c'est-à-dire la médiation qui range ce texte en psychologie du travail. Sans elle, la phrase décrirait un lien direct entre conditions de travail et vie privée, ce qui n'est pas la thèse. La médiation est portée par le résumé."
-        },
-        {
-          "id": "SUP-4e56118d98f599af",
-          "origin": "validated",
-          "path": "$.summary",
-          "access": "n/a",
-          "text": "Ayant altéré l'état du travailleur, les conditions de travail perturbent le système des activités hors travail et modifient les conditions d'exécution de ces activités."
-        },
-        {
-          "id": "SUP-b0e0df5744f12f84",
-          "origin": "validated",
-          "path": "$.review.notes[1]",
-          "access": "n/a",
-          "text": "CITATION — Relue sur l'image, pas sur l'OCR : https://www.persee.fr/renderPage/bupsy_0007-4403_1980_num_33_344_11736/bupsy_0007-4403_1980_num_33_344_T1_0451_0000_2000.jpg, colonne de droite, milieu de page ; le folio imprimé « 451 » est lisible dans l'en-tête de cette même image (« BULLETIN DE PSYCHOLOGIE   451 »). La phrase imprimée est : « Par rapport au système des activités hors travail ainsi décrit, les conditions de travail s'analysent comme des sources de perturbations dans la mesure où, ayant provoqué une altération de l'état physique et psychologique du travailleur, elles modifient les conditions d'exécution des activités hors travail. » La fiche en reproduit le début mot pour mot jusqu'à « sources de perturbations » (la césure typographique « perturba-tions » de fin de ligne est correctement recomposée). Aucune coupe interne, donc aucun […] à porter ; l'arrêt est terminal. Texte source en français, pas de traduction : le champ translation « none » est juste."
         }
       ]
     },
     {
       "claim_id": "C017",
       "locator": "sections[1].paragraphs[1]",
-      "claim_text": "ce ne sont pas les activités qui disparaissent, ce sont leurs conditions d’exécution qui changent",
+      "claim_text": "cette altération, la phrase la dit double, physique et psychologique",
       "supports": [
+        {
+          "id": "SUP-b0e0df5744f12f84",
+          "origin": "validated",
+          "path": "$.review.notes[1]",
+          "access": "n/a",
+          "text": "CITATION — Relue sur l'image, pas sur l'OCR : https://www.persee.fr/renderPage/bupsy_0007-4403_1980_num_33_344_11736/bupsy_0007-4403_1980_num_33_344_T1_0451_0000_2000.jpg, colonne de droite, milieu de page ; le folio imprimé « 451 » est lisible dans l'en-tête de cette même image (« BULLETIN DE PSYCHOLOGIE   451 »). La phrase imprimée est : « Par rapport au système des activités hors travail ainsi décrit, les conditions de travail s'analysent comme des sources de perturbations dans la mesure où, ayant provoqué une altération de l'état physique et psychologique du travailleur, elles modifient les conditions d'exécution des activités hors travail. » La fiche en reproduit le début mot pour mot jusqu'à « sources de perturbations » (la césure typographique « perturba-tions » de fin de ligne est correctement recomposée). Aucune coupe interne, donc aucun […] à porter ; l'arrêt est terminal. Texte source en français, pas de traduction : le champ translation « none » est juste."
+        },
+        {
+          "id": "SUP-481c53c2333d4c14",
+          "origin": "validated",
+          "path": "$.notes[2]",
+          "access": "n/a",
+          "text": "Le résumé dit « l'état du travailleur » là où le texte écrit « l'état physique et psychologique du travailleur » : la double nature de l'altération est omise faute de place, elle n'est pas contredite."
+        },
         {
           "id": "SUP-7559335d6f1b5df8",
           "origin": "validated",
           "path": "$.notes[0]",
           "access": "n/a",
           "text": "La citation est un fragment contigu, sans aucune coupe interne : elle reprend le début de la phrase du folio 451 et s'arrête avant sa subordonnée. La phrase entière est : « Par rapport au système des activités hors travail ainsi décrit, les conditions de travail s'analysent comme des sources de perturbations dans la mesure où, ayant provoqué une altération de l'état physique et psychologique du travailleur, elles modifient les conditions d'exécution des activités hors travail. »"
+        }
+      ]
+    },
+    {
+      "claim_id": "C018",
+      "locator": "sections[1].paragraphs[1]",
+      "claim_text": "C’est elle qui change les conditions dans lesquelles les activités du soir vont s’exécuter",
+      "supports": [
+        {
+          "id": "SUP-b0e0df5744f12f84",
+          "origin": "validated",
+          "path": "$.review.notes[1]",
+          "access": "n/a",
+          "text": "CITATION — Relue sur l'image, pas sur l'OCR : https://www.persee.fr/renderPage/bupsy_0007-4403_1980_num_33_344_11736/bupsy_0007-4403_1980_num_33_344_T1_0451_0000_2000.jpg, colonne de droite, milieu de page ; le folio imprimé « 451 » est lisible dans l'en-tête de cette même image (« BULLETIN DE PSYCHOLOGIE   451 »). La phrase imprimée est : « Par rapport au système des activités hors travail ainsi décrit, les conditions de travail s'analysent comme des sources de perturbations dans la mesure où, ayant provoqué une altération de l'état physique et psychologique du travailleur, elles modifient les conditions d'exécution des activités hors travail. » La fiche en reproduit le début mot pour mot jusqu'à « sources de perturbations » (la césure typographique « perturba-tions » de fin de ligne est correctement recomposée). Aucune coupe interne, donc aucun […] à porter ; l'arrêt est terminal. Texte source en français, pas de traduction : le champ translation « none » est juste."
         },
+        {
+          "id": "SUP-8a5f6783836697c0",
+          "origin": "validated",
+          "path": "$.notes[8]",
+          "access": "n/a",
+          "text": "Le résumé rattache les conditions d'exécution aux activités hors travail et non au système qui les organise, comme le fait la page 451 : « elles modifient les conditions d'exécution des activités hors travail ». Correction signalée hors mandat par le contrôle aveugle et appliquée."
+        }
+      ]
+    },
+    {
+      "claim_id": "C019",
+      "locator": "sections[1].paragraphs[1]",
+      "claim_text": "c’est là le point d’application de la perturbation : les conditions d’exécution des activités hors travail",
+      "supports": [
         {
           "id": "SUP-8a5f6783836697c0",
           "origin": "validated",
@@ -394,32 +451,25 @@
           "text": "Le résumé rattache les conditions d'exécution aux activités hors travail et non au système qui les organise, comme le fait la page 451 : « elles modifient les conditions d'exécution des activités hors travail ». Correction signalée hors mandat par le contrôle aveugle et appliquée."
         },
         {
-          "id": "SUP-61f7f46f9a8d1d38",
+          "id": "SUP-b0e0df5744f12f84",
           "origin": "validated",
-          "path": "$.review.notes[5]",
+          "path": "$.review.notes[1]",
           "access": "n/a",
-          "text": "Hors mandat, pour information seulement, rien de tout ceci ne fonde une reprise : (1) le summary rattache « dont elles modifient les conditions d'exécution » au système, là où l'imprimé écrit « les conditions d'exécution des activités hors travail » ; les conditions d'exécution sont chez Gadbois un attribut de chaque activité, pas du système. Le glissement est sans conséquence puisque le système est fait de ces activités, et la citation affichée rétablit la formulation exacte. (2) Le summary s'arrête au versant perturbation et laisse hors champ le versant que Gadbois développe ensuite (p. 451-453) : compensations, coût, déplacement de la contrainte d'une activité sur une autre, marges de tolérance. Ce n'est pas un débordement, et une accroche d'une phrase n'a pas à tout porter. (3) Deux incohérences internes de l'imprimé, imputables à l'article et non à la carte : le corps du texte écrit « Friedmann (1964) » quand la bibliographie porte « FRIEDMAN (G.) », et le corps cite « Les Dégâts du Progrès, CFDT, 1974 » quand la bibliographie date le même ouvrage de 1977."
+          "text": "CITATION — Relue sur l'image, pas sur l'OCR : https://www.persee.fr/renderPage/bupsy_0007-4403_1980_num_33_344_11736/bupsy_0007-4403_1980_num_33_344_T1_0451_0000_2000.jpg, colonne de droite, milieu de page ; le folio imprimé « 451 » est lisible dans l'en-tête de cette même image (« BULLETIN DE PSYCHOLOGIE   451 »). La phrase imprimée est : « Par rapport au système des activités hors travail ainsi décrit, les conditions de travail s'analysent comme des sources de perturbations dans la mesure où, ayant provoqué une altération de l'état physique et psychologique du travailleur, elles modifient les conditions d'exécution des activités hors travail. » La fiche en reproduit le début mot pour mot jusqu'à « sources de perturbations » (la césure typographique « perturba-tions » de fin de ligne est correctement recomposée). Aucune coupe interne, donc aucun […] à porter ; l'arrêt est terminal. Texte source en français, pas de traduction : le champ translation « none » est juste."
         }
       ]
     },
     {
-      "claim_id": "C018",
+      "claim_id": "C020",
       "locator": "sections[1].paragraphs[2]",
-      "claim_text": "L’altération que nomme la phrase est double, physique et psychologique",
+      "claim_text": "C’est ce détour par l’état de la personne, et non par le seul emploi du temps, qui sépare l’analyse d’une comptabilité des heures.",
       "supports": [
         {
-          "id": "SUP-7559335d6f1b5df8",
+          "id": "SUP-5acf6338e14133e4",
           "origin": "validated",
-          "path": "$.notes[0]",
+          "path": "$.notes[1]",
           "access": "n/a",
-          "text": "La citation est un fragment contigu, sans aucune coupe interne : elle reprend le début de la phrase du folio 451 et s'arrête avant sa subordonnée. La phrase entière est : « Par rapport au système des activités hors travail ainsi décrit, les conditions de travail s'analysent comme des sources de perturbations dans la mesure où, ayant provoqué une altération de l'état physique et psychologique du travailleur, elles modifient les conditions d'exécution des activités hors travail. »"
-        },
-        {
-          "id": "SUP-481c53c2333d4c14",
-          "origin": "validated",
-          "path": "$.notes[2]",
-          "access": "n/a",
-          "text": "Le résumé dit « l'état du travailleur » là où le texte écrit « l'état physique et psychologique du travailleur » : la double nature de l'altération est omise faute de place, elle n'est pas contredite."
+          "text": "La lecture primaire proposait une citation de 150 caractères formée de deux fragments joints par des points de suspension. Elle est écartée pour deux raisons. La première est de méthode : ce dépôt a déjà refusé une citation célèbre pour ce seul motif. La seconde est de fond : la coupe retirait « dans la mesure où, ayant provoqué une altération de l'état physique et psychologique du travailleur », c'est-à-dire la médiation qui range ce texte en psychologie du travail. Sans elle, la phrase décrirait un lien direct entre conditions de travail et vie privée, ce qui n'est pas la thèse. La médiation est portée par le résumé."
         },
         {
           "id": "SUP-b0e0df5744f12f84",
@@ -431,61 +481,7 @@
       ]
     },
     {
-      "claim_id": "C019",
-      "locator": "sections[1].paragraphs[2]",
-      "claim_text": "les deux versants n’empêchent pas les mêmes choses",
-      "supports": [
-        {
-          "id": "SUP-481c53c2333d4c14",
-          "origin": "validated",
-          "path": "$.notes[2]",
-          "access": "n/a",
-          "text": "Le résumé dit « l'état du travailleur » là où le texte écrit « l'état physique et psychologique du travailleur » : la double nature de l'altération est omise faute de place, elle n'est pas contredite."
-        },
-        {
-          "id": "SUP-7559335d6f1b5df8",
-          "origin": "validated",
-          "path": "$.notes[0]",
-          "access": "n/a",
-          "text": "La citation est un fragment contigu, sans aucune coupe interne : elle reprend le début de la phrase du folio 451 et s'arrête avant sa subordonnée. La phrase entière est : « Par rapport au système des activités hors travail ainsi décrit, les conditions de travail s'analysent comme des sources de perturbations dans la mesure où, ayant provoqué une altération de l'état physique et psychologique du travailleur, elles modifient les conditions d'exécution des activités hors travail. »"
-        }
-      ]
-    },
-    {
-      "claim_id": "C020",
-      "locator": "sections[1].paragraphs[2]",
-      "claim_text": "Ce qui a changé dans le corps limite ce qu’on peut encore faire : rester debout, porter, veiller une heure de plus",
-      "supports": []
-    },
-    {
       "claim_id": "C021",
-      "locator": "sections[1].paragraphs[2]",
-      "claim_text": "Ce qui a changé dans la disponibilité mentale limite autre chose : suivre une conversation, trancher, absorber un imprévu",
-      "supports": []
-    },
-    {
-      "claim_id": "C022",
-      "locator": "sections[1].paragraphs[2]",
-      "claim_text": "C’est ce détour par l’état de la personne, et non par le seul emploi du temps, qui sépare l’analyse d’une comptabilité des heures",
-      "supports": [
-        {
-          "id": "SUP-5acf6338e14133e4",
-          "origin": "validated",
-          "path": "$.notes[1]",
-          "access": "n/a",
-          "text": "La lecture primaire proposait une citation de 150 caractères formée de deux fragments joints par des points de suspension. Elle est écartée pour deux raisons. La première est de méthode : ce dépôt a déjà refusé une citation célèbre pour ce seul motif. La seconde est de fond : la coupe retirait « dans la mesure où, ayant provoqué une altération de l'état physique et psychologique du travailleur », c'est-à-dire la médiation qui range ce texte en psychologie du travail. Sans elle, la phrase décrirait un lien direct entre conditions de travail et vie privée, ce qui n'est pas la thèse. La médiation est portée par le résumé."
-        },
-        {
-          "id": "SUP-7559335d6f1b5df8",
-          "origin": "validated",
-          "path": "$.notes[0]",
-          "access": "n/a",
-          "text": "La citation est un fragment contigu, sans aucune coupe interne : elle reprend le début de la phrase du folio 451 et s'arrête avant sa subordonnée. La phrase entière est : « Par rapport au système des activités hors travail ainsi décrit, les conditions de travail s'analysent comme des sources de perturbations dans la mesure où, ayant provoqué une altération de l'état physique et psychologique du travailleur, elles modifient les conditions d'exécution des activités hors travail. »"
-        }
-      ]
-    },
-    {
-      "claim_id": "C023",
       "locator": "sections[1].paragraphs[3]",
       "claim_text": "Cet article ne rend compte d’aucune étude",
       "supports": [
@@ -506,7 +502,7 @@
       ]
     },
     {
-      "claim_id": "C024",
+      "claim_id": "C022",
       "locator": "sections[1].paragraphs[3]",
       "claim_text": "il se donne lui-même, à la page 453, pour un texte de problématique",
       "supports": [
@@ -516,18 +512,11 @@
           "path": "$.notes[5]",
           "access": "n/a",
           "text": "L'article n'est pas un compte rendu d'étude empirique mais un texte de problématique, qui se donne lui-même pour tel au folio 453. Ses appuis sont des exemples, sans effectif ni protocole : la thèse ne peut pas être présentée comme un résultat mesuré."
-        },
-        {
-          "id": "SUP-de1e1e9571b48742",
-          "origin": "validated",
-          "path": "$.review.notes[4]",
-          "access": "n/a",
-          "text": "PROSE — Le summary (« Ayant altéré l'état du travailleur, les conditions de travail perturbent le système des activités hors travail, dont elles modifient les conditions d'exécution ») décalque la phrase de la p. 451, c'est-à-dire l'énoncé propre de Gadbois formulé « par rapport au système des activités hors travail ainsi décrit », après construction de son modèle — et non la proposition de départ qu'il reprend des autres. La marque en est le terme même de « système des activités hors travail », qui est son apport. Rien n'y excède la source : ni chiffre, ni généralisation, ni adjectif d'ampleur. Le hook est une question, portée par « les effets se font sentir bien au-delà des seules heures de travail » (p. 449). Vérifié aussi sur le point demandé : la carte ne présente rien comme un résultat mesuré, et c'est exact — l'article est un texte de problématique, ses seuls appuis empiriques sont cités comme illustrations d'autrui ou de lui-même (Teiger et al. 1978 sur les opératrices des renseignements téléphoniques, Laville et al. 1975, Gadbois 1979), et la carte n'en tire aucune donnée."
         }
       ]
     },
     {
-      "claim_id": "C025",
+      "claim_id": "C023",
       "locator": "sections[1].paragraphs[3]",
       "claim_text": "c’est-à-dire un texte qui propose une façon de poser le problème et d’orienter les recherches",
       "supports": [
@@ -548,7 +537,7 @@
       ]
     },
     {
-      "claim_id": "C026",
+      "claim_id": "C024",
       "locator": "sections[1].paragraphs[3]",
       "claim_text": "Ses appuis sont des exemples empruntés, sans effectif ni protocole",
       "supports": [
@@ -569,7 +558,7 @@
       ]
     },
     {
-      "claim_id": "C027",
+      "claim_id": "C025",
       "locator": "sections[1].paragraphs[3]",
       "claim_text": "une étude de 1978 sur des opératrices des renseignements téléphoniques",
       "supports": [
@@ -583,7 +572,7 @@
       ]
     },
     {
-      "claim_id": "C028",
+      "claim_id": "C026",
       "locator": "sections[1].paragraphs[3]",
       "claim_text": "d’autres travaux des années 1970, dont les siens",
       "supports": [
@@ -597,7 +586,7 @@
       ]
     },
     {
-      "claim_id": "C029",
+      "claim_id": "C027",
       "locator": "sections[1].paragraphs[3]",
       "claim_text": "Le mécanisme en deux temps n’est donc pas un résultat mesuré",
       "supports": [
@@ -618,7 +607,21 @@
       ]
     },
     {
-      "claim_id": "C030",
+      "claim_id": "C028",
+      "locator": "sections[1].paragraphs[3]",
+      "claim_text": "c’est une façon de regarder, qui vaut par ce qu’elle fait voir",
+      "supports": [
+        {
+          "id": "SUP-1f1c435ed0732b58",
+          "origin": "validated",
+          "path": "$.notes[5]",
+          "access": "n/a",
+          "text": "L'article n'est pas un compte rendu d'étude empirique mais un texte de problématique, qui se donne lui-même pour tel au folio 453. Ses appuis sont des exemples, sans effectif ni protocole : la thèse ne peut pas être présentée comme un résultat mesuré."
+        }
+      ]
+    },
+    {
+      "claim_id": "C029",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "Toutes les recherches du domaine partent, écrit Gadbois, d’une même proposition de départ",
       "supports": [
@@ -632,7 +635,7 @@
       ]
     },
     {
-      "claim_id": "C031",
+      "claim_id": "C030",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "les contraintes du travail altèrent l’état du travailleur",
       "supports": [
@@ -642,18 +645,11 @@
           "path": "$.review.notes[3]",
           "access": "n/a",
           "text": "ATTRIBUTION — Point le plus délicat, et il tient. La thèse portée par la carte est bien celle que Gadbois avance en propre, non celle qu'il rapporte pour s'en démarquer. Sur la p. 449 il énonce son geste : « Ce que nous voudrions montrer ici c'est que l'étude des emprises du travail sur la vie hors travail peut tirer profit d'un approfondissement de la notion d'asservissement, dans son acception la plus précise, dérivée de la théorie des systèmes. Les activités hors travail sont à considérer comme un système […] : tel est le point de vue que nous développerons dans les pages qui suivent. » Ce qu'il rapporte sans le signer est distinct et clairement daté dans le texte : (a) le fait social lui-même, qui « pour n'être pas nouveau n'en reste pas moins actuel », rapporté à Marx (« l'idée et la matière d'une pathologie industrielle », « rabougrissement du corps et de l'esprit ») et à « l'oppression de la personnalité » de Friedmann (1964) ; (b) la « proposition de départ de toutes les études » (p. 449-450), à savoir que les contraintes du travail altèrent l'état du travailleur et que les effets s'en font sentir au-delà des heures de travail — proposition qu'il ne rejette pas mais qu'il juge insuffisamment spécifiée ; (c) la conception qu'il écarte explicitement, celle de la « simple prolongation » ou du « modelage psychique », dont il dit p. 450 que « s'en tenir à une telle conception ne peut conduire qu'à une analyse tronquée ». La note d'attribution de la fiche distingue exactement ces trois plans, et signale la dette de vocabulaire (asservissement emprunté à la théorie des systèmes) sans retirer à Gadbois sa thèse ni l'attribuer à un tiers. Le renvoi de la fiche à son article de 1975 pour les insuffisances des recherches antérieures est vérifié : « des difficultés et des insuffisances que nous avons eu l'occasion d'analyser ailleurs (Gadbois, 1975) », renvoyant en bibliographie à « L'analyse des emprises réciproques de la vie de travail et de la vie hors travail, Bulletin du C.E.R.P., 1975, 23, 117-151 ». Aucun cosignataire, aucune paternité usurpée."
-        },
-        {
-          "id": "SUP-4e56118d98f599af",
-          "origin": "validated",
-          "path": "$.summary",
-          "access": "n/a",
-          "text": "Ayant altéré l'état du travailleur, les conditions de travail perturbent le système des activités hors travail et modifient les conditions d'exécution de ces activités."
         }
       ]
     },
     {
-      "claim_id": "C032",
+      "claim_id": "C031",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "« les effets se font sentir bien au-delà des seules heures de travail »",
       "supports": [
@@ -674,9 +670,23 @@
       ]
     },
     {
+      "claim_id": "C032",
+      "locator": "sections[2].paragraphs[0]",
+      "claim_text": "Il ne la conteste pas.",
+      "supports": [
+        {
+          "id": "SUP-6bc4c99da6a6d037",
+          "origin": "validated",
+          "path": "$.review.notes[3]",
+          "access": "n/a",
+          "text": "ATTRIBUTION — Point le plus délicat, et il tient. La thèse portée par la carte est bien celle que Gadbois avance en propre, non celle qu'il rapporte pour s'en démarquer. Sur la p. 449 il énonce son geste : « Ce que nous voudrions montrer ici c'est que l'étude des emprises du travail sur la vie hors travail peut tirer profit d'un approfondissement de la notion d'asservissement, dans son acception la plus précise, dérivée de la théorie des systèmes. Les activités hors travail sont à considérer comme un système […] : tel est le point de vue que nous développerons dans les pages qui suivent. » Ce qu'il rapporte sans le signer est distinct et clairement daté dans le texte : (a) le fait social lui-même, qui « pour n'être pas nouveau n'en reste pas moins actuel », rapporté à Marx (« l'idée et la matière d'une pathologie industrielle », « rabougrissement du corps et de l'esprit ») et à « l'oppression de la personnalité » de Friedmann (1964) ; (b) la « proposition de départ de toutes les études » (p. 449-450), à savoir que les contraintes du travail altèrent l'état du travailleur et que les effets s'en font sentir au-delà des heures de travail — proposition qu'il ne rejette pas mais qu'il juge insuffisamment spécifiée ; (c) la conception qu'il écarte explicitement, celle de la « simple prolongation » ou du « modelage psychique », dont il dit p. 450 que « s'en tenir à une telle conception ne peut conduire qu'à une analyse tronquée ». La note d'attribution de la fiche distingue exactement ces trois plans, et signale la dette de vocabulaire (asservissement emprunté à la théorie des systèmes) sans retirer à Gadbois sa thèse ni l'attribuer à un tiers. Le renvoi de la fiche à son article de 1975 pour les insuffisances des recherches antérieures est vérifié : « des difficultés et des insuffisances que nous avons eu l'occasion d'analyser ailleurs (Gadbois, 1975) », renvoyant en bibliographie à « L'analyse des emprises réciproques de la vie de travail et de la vie hors travail, Bulletin du C.E.R.P., 1975, 23, 117-151 ». Aucun cosignataire, aucune paternité usurpée."
+        }
+      ]
+    },
+    {
       "claim_id": "C033",
       "locator": "sections[2].paragraphs[0]",
-      "claim_text": "Il ne la conteste pas",
+      "claim_text": "Il la juge trop peu spécifiée.",
       "supports": [
         {
           "id": "SUP-6bc4c99da6a6d037",
@@ -689,8 +699,8 @@
     },
     {
       "claim_id": "C034",
-      "locator": "sections[2].paragraphs[0]",
-      "claim_text": "Il la juge trop peu spécifiée",
+      "locator": "sections[2].paragraphs[1]",
+      "claim_text": "Ce qu’il écarte explicitement, en revanche, c’est une autre conception : celle qui voit dans la vie hors travail une simple prolongation du travail, ou un modelage psychique de la personne par son métier.",
       "supports": [
         {
           "id": "SUP-6bc4c99da6a6d037",
@@ -703,8 +713,8 @@
     },
     {
       "claim_id": "C035",
-      "locator": "sections[2].paragraphs[0]",
-      "claim_text": "elle affirme qu’il se passe quelque chose après le travail, elle ne dit ni quoi ni par quel chemin",
+      "locator": "sections[2].paragraphs[1]",
+      "claim_text": "De cette conception il écrit, à la page 450, que « s’en tenir à une telle conception ne peut conduire qu’à une analyse tronquée ».",
       "supports": [
         {
           "id": "SUP-6bc4c99da6a6d037",
@@ -718,7 +728,7 @@
     {
       "claim_id": "C036",
       "locator": "sections[2].paragraphs[1]",
-      "claim_text": "Ce qu’il écarte, en revanche, c’est une façon répandue de combler ce vide",
+      "claim_text": "Sa thèse se tient entre les deux : elle nomme le chemin que la proposition commune laissait indéterminé.",
       "supports": [
         {
           "id": "SUP-6bc4c99da6a6d037",
@@ -726,69 +736,6 @@
           "path": "$.review.notes[3]",
           "access": "n/a",
           "text": "ATTRIBUTION — Point le plus délicat, et il tient. La thèse portée par la carte est bien celle que Gadbois avance en propre, non celle qu'il rapporte pour s'en démarquer. Sur la p. 449 il énonce son geste : « Ce que nous voudrions montrer ici c'est que l'étude des emprises du travail sur la vie hors travail peut tirer profit d'un approfondissement de la notion d'asservissement, dans son acception la plus précise, dérivée de la théorie des systèmes. Les activités hors travail sont à considérer comme un système […] : tel est le point de vue que nous développerons dans les pages qui suivent. » Ce qu'il rapporte sans le signer est distinct et clairement daté dans le texte : (a) le fait social lui-même, qui « pour n'être pas nouveau n'en reste pas moins actuel », rapporté à Marx (« l'idée et la matière d'une pathologie industrielle », « rabougrissement du corps et de l'esprit ») et à « l'oppression de la personnalité » de Friedmann (1964) ; (b) la « proposition de départ de toutes les études » (p. 449-450), à savoir que les contraintes du travail altèrent l'état du travailleur et que les effets s'en font sentir au-delà des heures de travail — proposition qu'il ne rejette pas mais qu'il juge insuffisamment spécifiée ; (c) la conception qu'il écarte explicitement, celle de la « simple prolongation » ou du « modelage psychique », dont il dit p. 450 que « s'en tenir à une telle conception ne peut conduire qu'à une analyse tronquée ». La note d'attribution de la fiche distingue exactement ces trois plans, et signale la dette de vocabulaire (asservissement emprunté à la théorie des systèmes) sans retirer à Gadbois sa thèse ni l'attribuer à un tiers. Le renvoi de la fiche à son article de 1975 pour les insuffisances des recherches antérieures est vérifié : « des difficultés et des insuffisances que nous avons eu l'occasion d'analyser ailleurs (Gadbois, 1975) », renvoyant en bibliographie à « L'analyse des emprises réciproques de la vie de travail et de la vie hors travail, Bulletin du C.E.R.P., 1975, 23, 117-151 ». Aucun cosignataire, aucune paternité usurpée."
-        }
-      ]
-    },
-    {
-      "claim_id": "C037",
-      "locator": "sections[2].paragraphs[1]",
-      "claim_text": "celle qui voit dans la vie hors travail une simple prolongation du travail, ou un modelage psychique de la personne par son métier",
-      "supports": [
-        {
-          "id": "SUP-6bc4c99da6a6d037",
-          "origin": "validated",
-          "path": "$.review.notes[3]",
-          "access": "n/a",
-          "text": "ATTRIBUTION — Point le plus délicat, et il tient. La thèse portée par la carte est bien celle que Gadbois avance en propre, non celle qu'il rapporte pour s'en démarquer. Sur la p. 449 il énonce son geste : « Ce que nous voudrions montrer ici c'est que l'étude des emprises du travail sur la vie hors travail peut tirer profit d'un approfondissement de la notion d'asservissement, dans son acception la plus précise, dérivée de la théorie des systèmes. Les activités hors travail sont à considérer comme un système […] : tel est le point de vue que nous développerons dans les pages qui suivent. » Ce qu'il rapporte sans le signer est distinct et clairement daté dans le texte : (a) le fait social lui-même, qui « pour n'être pas nouveau n'en reste pas moins actuel », rapporté à Marx (« l'idée et la matière d'une pathologie industrielle », « rabougrissement du corps et de l'esprit ») et à « l'oppression de la personnalité » de Friedmann (1964) ; (b) la « proposition de départ de toutes les études » (p. 449-450), à savoir que les contraintes du travail altèrent l'état du travailleur et que les effets s'en font sentir au-delà des heures de travail — proposition qu'il ne rejette pas mais qu'il juge insuffisamment spécifiée ; (c) la conception qu'il écarte explicitement, celle de la « simple prolongation » ou du « modelage psychique », dont il dit p. 450 que « s'en tenir à une telle conception ne peut conduire qu'à une analyse tronquée ». La note d'attribution de la fiche distingue exactement ces trois plans, et signale la dette de vocabulaire (asservissement emprunté à la théorie des systèmes) sans retirer à Gadbois sa thèse ni l'attribuer à un tiers. Le renvoi de la fiche à son article de 1975 pour les insuffisances des recherches antérieures est vérifié : « des difficultés et des insuffisances que nous avons eu l'occasion d'analyser ailleurs (Gadbois, 1975) », renvoyant en bibliographie à « L'analyse des emprises réciproques de la vie de travail et de la vie hors travail, Bulletin du C.E.R.P., 1975, 23, 117-151 ». Aucun cosignataire, aucune paternité usurpée."
-        }
-      ]
-    },
-    {
-      "claim_id": "C038",
-      "locator": "sections[2].paragraphs[1]",
-      "claim_text": "De cette conception il écrit, à la page 450, que « s’en tenir à une telle conception ne peut conduire qu’à une analyse tronquée »",
-      "supports": [
-        {
-          "id": "SUP-6bc4c99da6a6d037",
-          "origin": "validated",
-          "path": "$.review.notes[3]",
-          "access": "n/a",
-          "text": "ATTRIBUTION — Point le plus délicat, et il tient. La thèse portée par la carte est bien celle que Gadbois avance en propre, non celle qu'il rapporte pour s'en démarquer. Sur la p. 449 il énonce son geste : « Ce que nous voudrions montrer ici c'est que l'étude des emprises du travail sur la vie hors travail peut tirer profit d'un approfondissement de la notion d'asservissement, dans son acception la plus précise, dérivée de la théorie des systèmes. Les activités hors travail sont à considérer comme un système […] : tel est le point de vue que nous développerons dans les pages qui suivent. » Ce qu'il rapporte sans le signer est distinct et clairement daté dans le texte : (a) le fait social lui-même, qui « pour n'être pas nouveau n'en reste pas moins actuel », rapporté à Marx (« l'idée et la matière d'une pathologie industrielle », « rabougrissement du corps et de l'esprit ») et à « l'oppression de la personnalité » de Friedmann (1964) ; (b) la « proposition de départ de toutes les études » (p. 449-450), à savoir que les contraintes du travail altèrent l'état du travailleur et que les effets s'en font sentir au-delà des heures de travail — proposition qu'il ne rejette pas mais qu'il juge insuffisamment spécifiée ; (c) la conception qu'il écarte explicitement, celle de la « simple prolongation » ou du « modelage psychique », dont il dit p. 450 que « s'en tenir à une telle conception ne peut conduire qu'à une analyse tronquée ». La note d'attribution de la fiche distingue exactement ces trois plans, et signale la dette de vocabulaire (asservissement emprunté à la théorie des systèmes) sans retirer à Gadbois sa thèse ni l'attribuer à un tiers. Le renvoi de la fiche à son article de 1975 pour les insuffisances des recherches antérieures est vérifié : « des difficultés et des insuffisances que nous avons eu l'occasion d'analyser ailleurs (Gadbois, 1975) », renvoyant en bibliographie à « L'analyse des emprises réciproques de la vie de travail et de la vie hors travail, Bulletin du C.E.R.P., 1975, 23, 117-151 ». Aucun cosignataire, aucune paternité usurpée."
-        }
-      ]
-    },
-    {
-      "claim_id": "C039",
-      "locator": "sections[2].paragraphs[1]",
-      "claim_text": "Tronquée, parce qu’elle fait du travailleur une empreinte : ce que le travail a imprimé se retrouverait, en plus pâle, dans ses loisirs et ses relations, et rien n’y resterait des arbitrages par lesquels une personne tient le reste debout",
-      "supports": [
-        {
-          "id": "SUP-6bc4c99da6a6d037",
-          "origin": "validated",
-          "path": "$.review.notes[3]",
-          "access": "n/a",
-          "text": "ATTRIBUTION — Point le plus délicat, et il tient. La thèse portée par la carte est bien celle que Gadbois avance en propre, non celle qu'il rapporte pour s'en démarquer. Sur la p. 449 il énonce son geste : « Ce que nous voudrions montrer ici c'est que l'étude des emprises du travail sur la vie hors travail peut tirer profit d'un approfondissement de la notion d'asservissement, dans son acception la plus précise, dérivée de la théorie des systèmes. Les activités hors travail sont à considérer comme un système […] : tel est le point de vue que nous développerons dans les pages qui suivent. » Ce qu'il rapporte sans le signer est distinct et clairement daté dans le texte : (a) le fait social lui-même, qui « pour n'être pas nouveau n'en reste pas moins actuel », rapporté à Marx (« l'idée et la matière d'une pathologie industrielle », « rabougrissement du corps et de l'esprit ») et à « l'oppression de la personnalité » de Friedmann (1964) ; (b) la « proposition de départ de toutes les études » (p. 449-450), à savoir que les contraintes du travail altèrent l'état du travailleur et que les effets s'en font sentir au-delà des heures de travail — proposition qu'il ne rejette pas mais qu'il juge insuffisamment spécifiée ; (c) la conception qu'il écarte explicitement, celle de la « simple prolongation » ou du « modelage psychique », dont il dit p. 450 que « s'en tenir à une telle conception ne peut conduire qu'à une analyse tronquée ». La note d'attribution de la fiche distingue exactement ces trois plans, et signale la dette de vocabulaire (asservissement emprunté à la théorie des systèmes) sans retirer à Gadbois sa thèse ni l'attribuer à un tiers. Le renvoi de la fiche à son article de 1975 pour les insuffisances des recherches antérieures est vérifié : « des difficultés et des insuffisances que nous avons eu l'occasion d'analyser ailleurs (Gadbois, 1975) », renvoyant en bibliographie à « L'analyse des emprises réciproques de la vie de travail et de la vie hors travail, Bulletin du C.E.R.P., 1975, 23, 117-151 ». Aucun cosignataire, aucune paternité usurpée."
-        }
-      ]
-    },
-    {
-      "claim_id": "C040",
-      "locator": "sections[2].paragraphs[1]",
-      "claim_text": "Sa thèse se tient entre les deux : elle nomme le chemin que la proposition commune laissait indéterminé",
-      "supports": [
-        {
-          "id": "SUP-6bc4c99da6a6d037",
-          "origin": "validated",
-          "path": "$.review.notes[3]",
-          "access": "n/a",
-          "text": "ATTRIBUTION — Point le plus délicat, et il tient. La thèse portée par la carte est bien celle que Gadbois avance en propre, non celle qu'il rapporte pour s'en démarquer. Sur la p. 449 il énonce son geste : « Ce que nous voudrions montrer ici c'est que l'étude des emprises du travail sur la vie hors travail peut tirer profit d'un approfondissement de la notion d'asservissement, dans son acception la plus précise, dérivée de la théorie des systèmes. Les activités hors travail sont à considérer comme un système […] : tel est le point de vue que nous développerons dans les pages qui suivent. » Ce qu'il rapporte sans le signer est distinct et clairement daté dans le texte : (a) le fait social lui-même, qui « pour n'être pas nouveau n'en reste pas moins actuel », rapporté à Marx (« l'idée et la matière d'une pathologie industrielle », « rabougrissement du corps et de l'esprit ») et à « l'oppression de la personnalité » de Friedmann (1964) ; (b) la « proposition de départ de toutes les études » (p. 449-450), à savoir que les contraintes du travail altèrent l'état du travailleur et que les effets s'en font sentir au-delà des heures de travail — proposition qu'il ne rejette pas mais qu'il juge insuffisamment spécifiée ; (c) la conception qu'il écarte explicitement, celle de la « simple prolongation » ou du « modelage psychique », dont il dit p. 450 que « s'en tenir à une telle conception ne peut conduire qu'à une analyse tronquée ». La note d'attribution de la fiche distingue exactement ces trois plans, et signale la dette de vocabulaire (asservissement emprunté à la théorie des systèmes) sans retirer à Gadbois sa thèse ni l'attribuer à un tiers. Le renvoi de la fiche à son article de 1975 pour les insuffisances des recherches antérieures est vérifié : « des difficultés et des insuffisances que nous avons eu l'occasion d'analyser ailleurs (Gadbois, 1975) », renvoyant en bibliographie à « L'analyse des emprises réciproques de la vie de travail et de la vie hors travail, Bulletin du C.E.R.P., 1975, 23, 117-151 ». Aucun cosignataire, aucune paternité usurpée."
-        },
-        {
-          "id": "SUP-7559335d6f1b5df8",
-          "origin": "validated",
-          "path": "$.notes[0]",
-          "access": "n/a",
-          "text": "La citation est un fragment contigu, sans aucune coupe interne : elle reprend le début de la phrase du folio 451 et s'arrête avant sa subordonnée. La phrase entière est : « Par rapport au système des activités hors travail ainsi décrit, les conditions de travail s'analysent comme des sources de perturbations dans la mesure où, ayant provoqué une altération de l'état physique et psychologique du travailleur, elles modifient les conditions d'exécution des activités hors travail. »"
         },
         {
           "id": "SUP-5acf6338e14133e4",
@@ -796,13 +743,76 @@
           "path": "$.notes[1]",
           "access": "n/a",
           "text": "La lecture primaire proposait une citation de 150 caractères formée de deux fragments joints par des points de suspension. Elle est écartée pour deux raisons. La première est de méthode : ce dépôt a déjà refusé une citation célèbre pour ce seul motif. La seconde est de fond : la coupe retirait « dans la mesure où, ayant provoqué une altération de l'état physique et psychologique du travailleur », c'est-à-dire la médiation qui range ce texte en psychologie du travail. Sans elle, la phrase décrirait un lien direct entre conditions de travail et vie privée, ce qui n'est pas la thèse. La médiation est portée par le résumé."
+        },
+        {
+          "id": "SUP-4e56118d98f599af",
+          "origin": "validated",
+          "path": "$.summary",
+          "access": "n/a",
+          "text": "Ayant altéré l'état du travailleur, les conditions de travail perturbent le système des activités hors travail et modifient les conditions d'exécution de ces activités."
+        }
+      ]
+    },
+    {
+      "claim_id": "C037",
+      "locator": "sections[3].paragraphs[0]",
+      "claim_text": "L’article ne s’arrête pas au constat de la perturbation.",
+      "supports": [
+        {
+          "id": "SUP-61f7f46f9a8d1d38",
+          "origin": "validated",
+          "path": "$.review.notes[5]",
+          "access": "n/a",
+          "text": "Hors mandat, pour information seulement, rien de tout ceci ne fonde une reprise : (1) le summary rattache « dont elles modifient les conditions d'exécution » au système, là où l'imprimé écrit « les conditions d'exécution des activités hors travail » ; les conditions d'exécution sont chez Gadbois un attribut de chaque activité, pas du système. Le glissement est sans conséquence puisque le système est fait de ces activités, et la citation affichée rétablit la formulation exacte. (2) Le summary s'arrête au versant perturbation et laisse hors champ le versant que Gadbois développe ensuite (p. 451-453) : compensations, coût, déplacement de la contrainte d'une activité sur une autre, marges de tolérance. Ce n'est pas un débordement, et une accroche d'une phrase n'a pas à tout porter. (3) Deux incohérences internes de l'imprimé, imputables à l'article et non à la carte : le corps du texte écrit « Friedmann (1964) » quand la bibliographie porte « FRIEDMAN (G.) », et le corps cite « Les Dégâts du Progrès, CFDT, 1974 » quand la bibliographie date le même ouvrage de 1977."
+        }
+      ]
+    },
+    {
+      "claim_id": "C038",
+      "locator": "sections[3].paragraphs[0]",
+      "claim_text": "Aux pages 451 à 453, Gadbois développe ce que l’ensemble des activités fait de la perturbation qu’il reçoit",
+      "supports": [
+        {
+          "id": "SUP-61f7f46f9a8d1d38",
+          "origin": "validated",
+          "path": "$.review.notes[5]",
+          "access": "n/a",
+          "text": "Hors mandat, pour information seulement, rien de tout ceci ne fonde une reprise : (1) le summary rattache « dont elles modifient les conditions d'exécution » au système, là où l'imprimé écrit « les conditions d'exécution des activités hors travail » ; les conditions d'exécution sont chez Gadbois un attribut de chaque activité, pas du système. Le glissement est sans conséquence puisque le système est fait de ces activités, et la citation affichée rétablit la formulation exacte. (2) Le summary s'arrête au versant perturbation et laisse hors champ le versant que Gadbois développe ensuite (p. 451-453) : compensations, coût, déplacement de la contrainte d'une activité sur une autre, marges de tolérance. Ce n'est pas un débordement, et une accroche d'une phrase n'a pas à tout porter. (3) Deux incohérences internes de l'imprimé, imputables à l'article et non à la carte : le corps du texte écrit « Friedmann (1964) » quand la bibliographie porte « FRIEDMAN (G.) », et le corps cite « Les Dégâts du Progrès, CFDT, 1974 » quand la bibliographie date le même ouvrage de 1977."
+        }
+      ]
+    },
+    {
+      "claim_id": "C039",
+      "locator": "sections[3].paragraphs[0]",
+      "claim_text": "il le fait avec quatre notions : les compensations, leur coût, le déplacement de la contrainte d’une activité sur une autre, et les marges de tolérance dont cet ensemble dispose",
+      "supports": [
+        {
+          "id": "SUP-61f7f46f9a8d1d38",
+          "origin": "validated",
+          "path": "$.review.notes[5]",
+          "access": "n/a",
+          "text": "Hors mandat, pour information seulement, rien de tout ceci ne fonde une reprise : (1) le summary rattache « dont elles modifient les conditions d'exécution » au système, là où l'imprimé écrit « les conditions d'exécution des activités hors travail » ; les conditions d'exécution sont chez Gadbois un attribut de chaque activité, pas du système. Le glissement est sans conséquence puisque le système est fait de ces activités, et la citation affichée rétablit la formulation exacte. (2) Le summary s'arrête au versant perturbation et laisse hors champ le versant que Gadbois développe ensuite (p. 451-453) : compensations, coût, déplacement de la contrainte d'une activité sur une autre, marges de tolérance. Ce n'est pas un débordement, et une accroche d'une phrase n'a pas à tout porter. (3) Deux incohérences internes de l'imprimé, imputables à l'article et non à la carte : le corps du texte écrit « Friedmann (1964) » quand la bibliographie porte « FRIEDMAN (G.) », et le corps cite « Les Dégâts du Progrès, CFDT, 1974 » quand la bibliographie date le même ouvrage de 1977."
+        }
+      ]
+    },
+    {
+      "claim_id": "C040",
+      "locator": "sections[3].paragraphs[1]",
+      "claim_text": "C’est ce que dit le mot de déplacement.",
+      "supports": [
+        {
+          "id": "SUP-61f7f46f9a8d1d38",
+          "origin": "validated",
+          "path": "$.review.notes[5]",
+          "access": "n/a",
+          "text": "Hors mandat, pour information seulement, rien de tout ceci ne fonde une reprise : (1) le summary rattache « dont elles modifient les conditions d'exécution » au système, là où l'imprimé écrit « les conditions d'exécution des activités hors travail » ; les conditions d'exécution sont chez Gadbois un attribut de chaque activité, pas du système. Le glissement est sans conséquence puisque le système est fait de ces activités, et la citation affichée rétablit la formulation exacte. (2) Le summary s'arrête au versant perturbation et laisse hors champ le versant que Gadbois développe ensuite (p. 451-453) : compensations, coût, déplacement de la contrainte d'une activité sur une autre, marges de tolérance. Ce n'est pas un débordement, et une accroche d'une phrase n'a pas à tout porter. (3) Deux incohérences internes de l'imprimé, imputables à l'article et non à la carte : le corps du texte écrit « Friedmann (1964) » quand la bibliographie porte « FRIEDMAN (G.) », et le corps cite « Les Dégâts du Progrès, CFDT, 1974 » quand la bibliographie date le même ouvrage de 1977."
         }
       ]
     },
     {
       "claim_id": "C041",
-      "locator": "sections[2].paragraphs[1]",
-      "claim_text": "elle rend à la personne les décisions que cette conception lui retire",
+      "locator": "sections[3].paragraphs[1]",
+      "claim_text": "Ce que Gadbois met exactement sous chacune de ces notions, ces pages le portent, et c’est là qu’il faudra les lire.",
       "supports": [
         {
           "id": "SUP-61f7f46f9a8d1d38",
@@ -810,286 +820,34 @@
           "path": "$.review.notes[5]",
           "access": "n/a",
           "text": "Hors mandat, pour information seulement, rien de tout ceci ne fonde une reprise : (1) le summary rattache « dont elles modifient les conditions d'exécution » au système, là où l'imprimé écrit « les conditions d'exécution des activités hors travail » ; les conditions d'exécution sont chez Gadbois un attribut de chaque activité, pas du système. Le glissement est sans conséquence puisque le système est fait de ces activités, et la citation affichée rétablit la formulation exacte. (2) Le summary s'arrête au versant perturbation et laisse hors champ le versant que Gadbois développe ensuite (p. 451-453) : compensations, coût, déplacement de la contrainte d'une activité sur une autre, marges de tolérance. Ce n'est pas un débordement, et une accroche d'une phrase n'a pas à tout porter. (3) Deux incohérences internes de l'imprimé, imputables à l'article et non à la carte : le corps du texte écrit « Friedmann (1964) » quand la bibliographie porte « FRIEDMAN (G.) », et le corps cite « Les Dégâts du Progrès, CFDT, 1974 » quand la bibliographie date le même ouvrage de 1977."
-        },
-        {
-          "id": "SUP-6bc4c99da6a6d037",
-          "origin": "validated",
-          "path": "$.review.notes[3]",
-          "access": "n/a",
-          "text": "ATTRIBUTION — Point le plus délicat, et il tient. La thèse portée par la carte est bien celle que Gadbois avance en propre, non celle qu'il rapporte pour s'en démarquer. Sur la p. 449 il énonce son geste : « Ce que nous voudrions montrer ici c'est que l'étude des emprises du travail sur la vie hors travail peut tirer profit d'un approfondissement de la notion d'asservissement, dans son acception la plus précise, dérivée de la théorie des systèmes. Les activités hors travail sont à considérer comme un système […] : tel est le point de vue que nous développerons dans les pages qui suivent. » Ce qu'il rapporte sans le signer est distinct et clairement daté dans le texte : (a) le fait social lui-même, qui « pour n'être pas nouveau n'en reste pas moins actuel », rapporté à Marx (« l'idée et la matière d'une pathologie industrielle », « rabougrissement du corps et de l'esprit ») et à « l'oppression de la personnalité » de Friedmann (1964) ; (b) la « proposition de départ de toutes les études » (p. 449-450), à savoir que les contraintes du travail altèrent l'état du travailleur et que les effets s'en font sentir au-delà des heures de travail — proposition qu'il ne rejette pas mais qu'il juge insuffisamment spécifiée ; (c) la conception qu'il écarte explicitement, celle de la « simple prolongation » ou du « modelage psychique », dont il dit p. 450 que « s'en tenir à une telle conception ne peut conduire qu'à une analyse tronquée ». La note d'attribution de la fiche distingue exactement ces trois plans, et signale la dette de vocabulaire (asservissement emprunté à la théorie des systèmes) sans retirer à Gadbois sa thèse ni l'attribuer à un tiers. Le renvoi de la fiche à son article de 1975 pour les insuffisances des recherches antérieures est vérifié : « des difficultés et des insuffisances que nous avons eu l'occasion d'analyser ailleurs (Gadbois, 1975) », renvoyant en bibliographie à « L'analyse des emprises réciproques de la vie de travail et de la vie hors travail, Bulletin du C.E.R.P., 1975, 23, 117-151 ». Aucun cosignataire, aucune paternité usurpée."
         }
       ]
     },
     {
       "claim_id": "C042",
-      "locator": "sections[3].paragraphs[0]",
-      "claim_text": "L’article ne s’arrête pas au constat de la perturbation",
+      "locator": "sections[4].paragraphs[0]",
+      "claim_text": "Gadbois énonce son programme à la première page : « Ce que nous voudrions montrer ici c’est que l’étude des emprises du travail sur la vie hors travail peut tirer profit d’un approfondissement de la notion d’asservissement, dans son acception la plus précise, dérivée de la théorie des systèmes ».",
       "supports": [
         {
-          "id": "SUP-61f7f46f9a8d1d38",
+          "id": "SUP-6bc4c99da6a6d037",
           "origin": "validated",
-          "path": "$.review.notes[5]",
+          "path": "$.review.notes[3]",
           "access": "n/a",
-          "text": "Hors mandat, pour information seulement, rien de tout ceci ne fonde une reprise : (1) le summary rattache « dont elles modifient les conditions d'exécution » au système, là où l'imprimé écrit « les conditions d'exécution des activités hors travail » ; les conditions d'exécution sont chez Gadbois un attribut de chaque activité, pas du système. Le glissement est sans conséquence puisque le système est fait de ces activités, et la citation affichée rétablit la formulation exacte. (2) Le summary s'arrête au versant perturbation et laisse hors champ le versant que Gadbois développe ensuite (p. 451-453) : compensations, coût, déplacement de la contrainte d'une activité sur une autre, marges de tolérance. Ce n'est pas un débordement, et une accroche d'une phrase n'a pas à tout porter. (3) Deux incohérences internes de l'imprimé, imputables à l'article et non à la carte : le corps du texte écrit « Friedmann (1964) » quand la bibliographie porte « FRIEDMAN (G.) », et le corps cite « Les Dégâts du Progrès, CFDT, 1974 » quand la bibliographie date le même ouvrage de 1977."
+          "text": "ATTRIBUTION — Point le plus délicat, et il tient. La thèse portée par la carte est bien celle que Gadbois avance en propre, non celle qu'il rapporte pour s'en démarquer. Sur la p. 449 il énonce son geste : « Ce que nous voudrions montrer ici c'est que l'étude des emprises du travail sur la vie hors travail peut tirer profit d'un approfondissement de la notion d'asservissement, dans son acception la plus précise, dérivée de la théorie des systèmes. Les activités hors travail sont à considérer comme un système […] : tel est le point de vue que nous développerons dans les pages qui suivent. » Ce qu'il rapporte sans le signer est distinct et clairement daté dans le texte : (a) le fait social lui-même, qui « pour n'être pas nouveau n'en reste pas moins actuel », rapporté à Marx (« l'idée et la matière d'une pathologie industrielle », « rabougrissement du corps et de l'esprit ») et à « l'oppression de la personnalité » de Friedmann (1964) ; (b) la « proposition de départ de toutes les études » (p. 449-450), à savoir que les contraintes du travail altèrent l'état du travailleur et que les effets s'en font sentir au-delà des heures de travail — proposition qu'il ne rejette pas mais qu'il juge insuffisamment spécifiée ; (c) la conception qu'il écarte explicitement, celle de la « simple prolongation » ou du « modelage psychique », dont il dit p. 450 que « s'en tenir à une telle conception ne peut conduire qu'à une analyse tronquée ». La note d'attribution de la fiche distingue exactement ces trois plans, et signale la dette de vocabulaire (asservissement emprunté à la théorie des systèmes) sans retirer à Gadbois sa thèse ni l'attribuer à un tiers. Le renvoi de la fiche à son article de 1975 pour les insuffisances des recherches antérieures est vérifié : « des difficultés et des insuffisances que nous avons eu l'occasion d'analyser ailleurs (Gadbois, 1975) », renvoyant en bibliographie à « L'analyse des emprises réciproques de la vie de travail et de la vie hors travail, Bulletin du C.E.R.P., 1975, 23, 117-151 ». Aucun cosignataire, aucune paternité usurpée."
+        },
+        {
+          "id": "SUP-3a96e9a0fc83c319",
+          "origin": "validated",
+          "path": "$.sources[0].locator",
+          "access": "full-text",
+          "text": "p. 449-455"
         }
       ]
     },
     {
       "claim_id": "C043",
-      "locator": "sections[3].paragraphs[0]",
-      "claim_text": "Gadbois développe ensuite ce que l’ensemble fait de la perturbation qu’il reçoit : les compensations, le coût qu’elles ont, le déplacement de la contrainte d’une activité sur une autre, et les marges de tolérance dont il dispose",
-      "supports": [
-        {
-          "id": "SUP-61f7f46f9a8d1d38",
-          "origin": "validated",
-          "path": "$.review.notes[5]",
-          "access": "n/a",
-          "text": "Hors mandat, pour information seulement, rien de tout ceci ne fonde une reprise : (1) le summary rattache « dont elles modifient les conditions d'exécution » au système, là où l'imprimé écrit « les conditions d'exécution des activités hors travail » ; les conditions d'exécution sont chez Gadbois un attribut de chaque activité, pas du système. Le glissement est sans conséquence puisque le système est fait de ces activités, et la citation affichée rétablit la formulation exacte. (2) Le summary s'arrête au versant perturbation et laisse hors champ le versant que Gadbois développe ensuite (p. 451-453) : compensations, coût, déplacement de la contrainte d'une activité sur une autre, marges de tolérance. Ce n'est pas un débordement, et une accroche d'une phrase n'a pas à tout porter. (3) Deux incohérences internes de l'imprimé, imputables à l'article et non à la carte : le corps du texte écrit « Friedmann (1964) » quand la bibliographie porte « FRIEDMAN (G.) », et le corps cite « Les Dégâts du Progrès, CFDT, 1974 » quand la bibliographie date le même ouvrage de 1977."
-        }
-      ]
-    },
-    {
-      "claim_id": "C044",
-      "locator": "sections[3].paragraphs[0]",
-      "claim_text": "Compenser, ici, n’est pas réparer",
-      "supports": [
-        {
-          "id": "SUP-61f7f46f9a8d1d38",
-          "origin": "validated",
-          "path": "$.review.notes[5]",
-          "access": "n/a",
-          "text": "Hors mandat, pour information seulement, rien de tout ceci ne fonde une reprise : (1) le summary rattache « dont elles modifient les conditions d'exécution » au système, là où l'imprimé écrit « les conditions d'exécution des activités hors travail » ; les conditions d'exécution sont chez Gadbois un attribut de chaque activité, pas du système. Le glissement est sans conséquence puisque le système est fait de ces activités, et la citation affichée rétablit la formulation exacte. (2) Le summary s'arrête au versant perturbation et laisse hors champ le versant que Gadbois développe ensuite (p. 451-453) : compensations, coût, déplacement de la contrainte d'une activité sur une autre, marges de tolérance. Ce n'est pas un débordement, et une accroche d'une phrase n'a pas à tout porter. (3) Deux incohérences internes de l'imprimé, imputables à l'article et non à la carte : le corps du texte écrit « Friedmann (1964) » quand la bibliographie porte « FRIEDMAN (G.) », et le corps cite « Les Dégâts du Progrès, CFDT, 1974 » quand la bibliographie date le même ouvrage de 1977."
-        }
-      ]
-    },
-    {
-      "claim_id": "C045",
-      "locator": "sections[3].paragraphs[0]",
-      "claim_text": "Rien n’a disparu, et la contrainte n’a pas été absorbée : elle a changé de place",
-      "supports": [
-        {
-          "id": "SUP-61f7f46f9a8d1d38",
-          "origin": "validated",
-          "path": "$.review.notes[5]",
-          "access": "n/a",
-          "text": "Hors mandat, pour information seulement, rien de tout ceci ne fonde une reprise : (1) le summary rattache « dont elles modifient les conditions d'exécution » au système, là où l'imprimé écrit « les conditions d'exécution des activités hors travail » ; les conditions d'exécution sont chez Gadbois un attribut de chaque activité, pas du système. Le glissement est sans conséquence puisque le système est fait de ces activités, et la citation affichée rétablit la formulation exacte. (2) Le summary s'arrête au versant perturbation et laisse hors champ le versant que Gadbois développe ensuite (p. 451-453) : compensations, coût, déplacement de la contrainte d'une activité sur une autre, marges de tolérance. Ce n'est pas un débordement, et une accroche d'une phrase n'a pas à tout porter. (3) Deux incohérences internes de l'imprimé, imputables à l'article et non à la carte : le corps du texte écrit « Friedmann (1964) » quand la bibliographie porte « FRIEDMAN (G.) », et le corps cite « Les Dégâts du Progrès, CFDT, 1974 » quand la bibliographie date le même ouvrage de 1977."
-        }
-      ]
-    },
-    {
-      "claim_id": "C046",
-      "locator": "sections[3].paragraphs[0]",
-      "claim_text": "C’est ce que dit le mot de déplacement",
-      "supports": [
-        {
-          "id": "SUP-61f7f46f9a8d1d38",
-          "origin": "validated",
-          "path": "$.review.notes[5]",
-          "access": "n/a",
-          "text": "Hors mandat, pour information seulement, rien de tout ceci ne fonde une reprise : (1) le summary rattache « dont elles modifient les conditions d'exécution » au système, là où l'imprimé écrit « les conditions d'exécution des activités hors travail » ; les conditions d'exécution sont chez Gadbois un attribut de chaque activité, pas du système. Le glissement est sans conséquence puisque le système est fait de ces activités, et la citation affichée rétablit la formulation exacte. (2) Le summary s'arrête au versant perturbation et laisse hors champ le versant que Gadbois développe ensuite (p. 451-453) : compensations, coût, déplacement de la contrainte d'une activité sur une autre, marges de tolérance. Ce n'est pas un débordement, et une accroche d'une phrase n'a pas à tout porter. (3) Deux incohérences internes de l'imprimé, imputables à l'article et non à la carte : le corps du texte écrit « Friedmann (1964) » quand la bibliographie porte « FRIEDMAN (G.) », et le corps cite « Les Dégâts du Progrès, CFDT, 1974 » quand la bibliographie date le même ouvrage de 1977."
-        }
-      ]
-    },
-    {
-      "claim_id": "C047",
-      "locator": "sections[3].paragraphs[0]",
-      "claim_text": "c’est pourquoi une compensation a un coût : il est prélevé ailleurs que là où la contrainte est née",
-      "supports": [
-        {
-          "id": "SUP-61f7f46f9a8d1d38",
-          "origin": "validated",
-          "path": "$.review.notes[5]",
-          "access": "n/a",
-          "text": "Hors mandat, pour information seulement, rien de tout ceci ne fonde une reprise : (1) le summary rattache « dont elles modifient les conditions d'exécution » au système, là où l'imprimé écrit « les conditions d'exécution des activités hors travail » ; les conditions d'exécution sont chez Gadbois un attribut de chaque activité, pas du système. Le glissement est sans conséquence puisque le système est fait de ces activités, et la citation affichée rétablit la formulation exacte. (2) Le summary s'arrête au versant perturbation et laisse hors champ le versant que Gadbois développe ensuite (p. 451-453) : compensations, coût, déplacement de la contrainte d'une activité sur une autre, marges de tolérance. Ce n'est pas un débordement, et une accroche d'une phrase n'a pas à tout porter. (3) Deux incohérences internes de l'imprimé, imputables à l'article et non à la carte : le corps du texte écrit « Friedmann (1964) » quand la bibliographie porte « FRIEDMAN (G.) », et le corps cite « Les Dégâts du Progrès, CFDT, 1974 » quand la bibliographie date le même ouvrage de 1977."
-        }
-      ]
-    },
-    {
-      "claim_id": "C048",
-      "locator": "sections[3].paragraphs[1]",
-      "claim_text": "Les marges de tolérance sont ce qui rend ce jeu possible un moment",
-      "supports": [
-        {
-          "id": "SUP-61f7f46f9a8d1d38",
-          "origin": "validated",
-          "path": "$.review.notes[5]",
-          "access": "n/a",
-          "text": "Hors mandat, pour information seulement, rien de tout ceci ne fonde une reprise : (1) le summary rattache « dont elles modifient les conditions d'exécution » au système, là où l'imprimé écrit « les conditions d'exécution des activités hors travail » ; les conditions d'exécution sont chez Gadbois un attribut de chaque activité, pas du système. Le glissement est sans conséquence puisque le système est fait de ces activités, et la citation affichée rétablit la formulation exacte. (2) Le summary s'arrête au versant perturbation et laisse hors champ le versant que Gadbois développe ensuite (p. 451-453) : compensations, coût, déplacement de la contrainte d'une activité sur une autre, marges de tolérance. Ce n'est pas un débordement, et une accroche d'une phrase n'a pas à tout porter. (3) Deux incohérences internes de l'imprimé, imputables à l'article et non à la carte : le corps du texte écrit « Friedmann (1964) » quand la bibliographie porte « FRIEDMAN (G.) », et le corps cite « Les Dégâts du Progrès, CFDT, 1974 » quand la bibliographie date le même ouvrage de 1977."
-        }
-      ]
-    },
-    {
-      "claim_id": "C049",
-      "locator": "sections[3].paragraphs[1]",
-      "claim_text": "Un ensemble d’activités encaisse une certaine quantité de contraintes avant de céder, et cette réserve se consomme",
-      "supports": [
-        {
-          "id": "SUP-61f7f46f9a8d1d38",
-          "origin": "validated",
-          "path": "$.review.notes[5]",
-          "access": "n/a",
-          "text": "Hors mandat, pour information seulement, rien de tout ceci ne fonde une reprise : (1) le summary rattache « dont elles modifient les conditions d'exécution » au système, là où l'imprimé écrit « les conditions d'exécution des activités hors travail » ; les conditions d'exécution sont chez Gadbois un attribut de chaque activité, pas du système. Le glissement est sans conséquence puisque le système est fait de ces activités, et la citation affichée rétablit la formulation exacte. (2) Le summary s'arrête au versant perturbation et laisse hors champ le versant que Gadbois développe ensuite (p. 451-453) : compensations, coût, déplacement de la contrainte d'une activité sur une autre, marges de tolérance. Ce n'est pas un débordement, et une accroche d'une phrase n'a pas à tout porter. (3) Deux incohérences internes de l'imprimé, imputables à l'article et non à la carte : le corps du texte écrit « Friedmann (1964) » quand la bibliographie porte « FRIEDMAN (G.) », et le corps cite « Les Dégâts du Progrès, CFDT, 1974 » quand la bibliographie date le même ouvrage de 1977."
-        }
-      ]
-    },
-    {
-      "claim_id": "C050",
-      "locator": "sections[3].paragraphs[1]",
-      "claim_text": "Une même contrainte n’a donc pas le même effet selon ce qui en reste : absorbée sans trace une fois, décisive la suivante",
-      "supports": [
-        {
-          "id": "SUP-61f7f46f9a8d1d38",
-          "origin": "validated",
-          "path": "$.review.notes[5]",
-          "access": "n/a",
-          "text": "Hors mandat, pour information seulement, rien de tout ceci ne fonde une reprise : (1) le summary rattache « dont elles modifient les conditions d'exécution » au système, là où l'imprimé écrit « les conditions d'exécution des activités hors travail » ; les conditions d'exécution sont chez Gadbois un attribut de chaque activité, pas du système. Le glissement est sans conséquence puisque le système est fait de ces activités, et la citation affichée rétablit la formulation exacte. (2) Le summary s'arrête au versant perturbation et laisse hors champ le versant que Gadbois développe ensuite (p. 451-453) : compensations, coût, déplacement de la contrainte d'une activité sur une autre, marges de tolérance. Ce n'est pas un débordement, et une accroche d'une phrase n'a pas à tout porter. (3) Deux incohérences internes de l'imprimé, imputables à l'article et non à la carte : le corps du texte écrit « Friedmann (1964) » quand la bibliographie porte « FRIEDMAN (G.) », et le corps cite « Les Dégâts du Progrès, CFDT, 1974 » quand la bibliographie date le même ouvrage de 1977."
-        }
-      ]
-    },
-    {
-      "claim_id": "C051",
-      "locator": "sections[3].paragraphs[1]",
-      "claim_text": "Cela rend compte de ce que le mécanisme de la perturbation n’expliquerait pas seul : qu’une soirée se charge longtemps sans que rien n’y manque, puis qu’une contrainte minuscule de plus, un enfant malade, un horaire modifié, fasse céder une activité entière",
-      "supports": [
-        {
-          "id": "SUP-61f7f46f9a8d1d38",
-          "origin": "validated",
-          "path": "$.review.notes[5]",
-          "access": "n/a",
-          "text": "Hors mandat, pour information seulement, rien de tout ceci ne fonde une reprise : (1) le summary rattache « dont elles modifient les conditions d'exécution » au système, là où l'imprimé écrit « les conditions d'exécution des activités hors travail » ; les conditions d'exécution sont chez Gadbois un attribut de chaque activité, pas du système. Le glissement est sans conséquence puisque le système est fait de ces activités, et la citation affichée rétablit la formulation exacte. (2) Le summary s'arrête au versant perturbation et laisse hors champ le versant que Gadbois développe ensuite (p. 451-453) : compensations, coût, déplacement de la contrainte d'une activité sur une autre, marges de tolérance. Ce n'est pas un débordement, et une accroche d'une phrase n'a pas à tout porter. (3) Deux incohérences internes de l'imprimé, imputables à l'article et non à la carte : le corps du texte écrit « Friedmann (1964) » quand la bibliographie porte « FRIEDMAN (G.) », et le corps cite « Les Dégâts du Progrès, CFDT, 1974 » quand la bibliographie date le même ouvrage de 1977."
-        }
-      ]
-    },
-    {
-      "claim_id": "C052",
-      "locator": "sections[3].paragraphs[2]",
-      "claim_text": "Pour qui cherche ensuite la cause, deux erreurs deviennent faciles",
-      "supports": [
-        {
-          "id": "SUP-61f7f46f9a8d1d38",
-          "origin": "validated",
-          "path": "$.review.notes[5]",
-          "access": "n/a",
-          "text": "Hors mandat, pour information seulement, rien de tout ceci ne fonde une reprise : (1) le summary rattache « dont elles modifient les conditions d'exécution » au système, là où l'imprimé écrit « les conditions d'exécution des activités hors travail » ; les conditions d'exécution sont chez Gadbois un attribut de chaque activité, pas du système. Le glissement est sans conséquence puisque le système est fait de ces activités, et la citation affichée rétablit la formulation exacte. (2) Le summary s'arrête au versant perturbation et laisse hors champ le versant que Gadbois développe ensuite (p. 451-453) : compensations, coût, déplacement de la contrainte d'une activité sur une autre, marges de tolérance. Ce n'est pas un débordement, et une accroche d'une phrase n'a pas à tout porter. (3) Deux incohérences internes de l'imprimé, imputables à l'article et non à la carte : le corps du texte écrit « Friedmann (1964) » quand la bibliographie porte « FRIEDMAN (G.) », et le corps cite « Les Dégâts du Progrès, CFDT, 1974 » quand la bibliographie date le même ouvrage de 1977."
-        }
-      ]
-    },
-    {
-      "claim_id": "C053",
-      "locator": "sections[3].paragraphs[2]",
-      "claim_text": "La première est de la chercher dans l’activité perdue",
-      "supports": [
-        {
-          "id": "SUP-61f7f46f9a8d1d38",
-          "origin": "validated",
-          "path": "$.review.notes[5]",
-          "access": "n/a",
-          "text": "Hors mandat, pour information seulement, rien de tout ceci ne fonde une reprise : (1) le summary rattache « dont elles modifient les conditions d'exécution » au système, là où l'imprimé écrit « les conditions d'exécution des activités hors travail » ; les conditions d'exécution sont chez Gadbois un attribut de chaque activité, pas du système. Le glissement est sans conséquence puisque le système est fait de ces activités, et la citation affichée rétablit la formulation exacte. (2) Le summary s'arrête au versant perturbation et laisse hors champ le versant que Gadbois développe ensuite (p. 451-453) : compensations, coût, déplacement de la contrainte d'une activité sur une autre, marges de tolérance. Ce n'est pas un débordement, et une accroche d'une phrase n'a pas à tout porter. (3) Deux incohérences internes de l'imprimé, imputables à l'article et non à la carte : le corps du texte écrit « Friedmann (1964) » quand la bibliographie porte « FRIEDMAN (G.) », et le corps cite « Les Dégâts du Progrès, CFDT, 1974 » quand la bibliographie date le même ouvrage de 1977."
-        }
-      ]
-    },
-    {
-      "claim_id": "C054",
-      "locator": "sections[3].paragraphs[2]",
-      "claim_text": "dans ce modèle, celle qui saute n’est pas nécessairement celle que le travail atteint le plus, mais celle qui pouvait encore servir d’ajustement quand les autres n’en laissaient plus la possibilité",
-      "supports": [
-        {
-          "id": "SUP-61f7f46f9a8d1d38",
-          "origin": "validated",
-          "path": "$.review.notes[5]",
-          "access": "n/a",
-          "text": "Hors mandat, pour information seulement, rien de tout ceci ne fonde une reprise : (1) le summary rattache « dont elles modifient les conditions d'exécution » au système, là où l'imprimé écrit « les conditions d'exécution des activités hors travail » ; les conditions d'exécution sont chez Gadbois un attribut de chaque activité, pas du système. Le glissement est sans conséquence puisque le système est fait de ces activités, et la citation affichée rétablit la formulation exacte. (2) Le summary s'arrête au versant perturbation et laisse hors champ le versant que Gadbois développe ensuite (p. 451-453) : compensations, coût, déplacement de la contrainte d'une activité sur une autre, marges de tolérance. Ce n'est pas un débordement, et une accroche d'une phrase n'a pas à tout porter. (3) Deux incohérences internes de l'imprimé, imputables à l'article et non à la carte : le corps du texte écrit « Friedmann (1964) » quand la bibliographie porte « FRIEDMAN (G.) », et le corps cite « Les Dégâts du Progrès, CFDT, 1974 » quand la bibliographie date le même ouvrage de 1977."
-        },
-        {
-          "id": "SUP-1f1c435ed0732b58",
-          "origin": "validated",
-          "path": "$.notes[5]",
-          "access": "n/a",
-          "text": "L'article n'est pas un compte rendu d'étude empirique mais un texte de problématique, qui se donne lui-même pour tel au folio 453. Ses appuis sont des exemples, sans effectif ni protocole : la thèse ne peut pas être présentée comme un résultat mesuré."
-        }
-      ]
-    },
-    {
-      "claim_id": "C055",
-      "locator": "sections[3].paragraphs[2]",
-      "claim_text": "La seconde est de la chercher dans le dernier incident",
-      "supports": [
-        {
-          "id": "SUP-61f7f46f9a8d1d38",
-          "origin": "validated",
-          "path": "$.review.notes[5]",
-          "access": "n/a",
-          "text": "Hors mandat, pour information seulement, rien de tout ceci ne fonde une reprise : (1) le summary rattache « dont elles modifient les conditions d'exécution » au système, là où l'imprimé écrit « les conditions d'exécution des activités hors travail » ; les conditions d'exécution sont chez Gadbois un attribut de chaque activité, pas du système. Le glissement est sans conséquence puisque le système est fait de ces activités, et la citation affichée rétablit la formulation exacte. (2) Le summary s'arrête au versant perturbation et laisse hors champ le versant que Gadbois développe ensuite (p. 451-453) : compensations, coût, déplacement de la contrainte d'une activité sur une autre, marges de tolérance. Ce n'est pas un débordement, et une accroche d'une phrase n'a pas à tout porter. (3) Deux incohérences internes de l'imprimé, imputables à l'article et non à la carte : le corps du texte écrit « Friedmann (1964) » quand la bibliographie porte « FRIEDMAN (G.) », et le corps cite « Les Dégâts du Progrès, CFDT, 1974 » quand la bibliographie date le même ouvrage de 1977."
-        }
-      ]
-    },
-    {
-      "claim_id": "C056",
-      "locator": "sections[3].paragraphs[2]",
-      "claim_text": "quand la réserve est épuisée, ce qui fait céder l’arrangement n’est pas ce qui l’avait chargé",
-      "supports": [
-        {
-          "id": "SUP-61f7f46f9a8d1d38",
-          "origin": "validated",
-          "path": "$.review.notes[5]",
-          "access": "n/a",
-          "text": "Hors mandat, pour information seulement, rien de tout ceci ne fonde une reprise : (1) le summary rattache « dont elles modifient les conditions d'exécution » au système, là où l'imprimé écrit « les conditions d'exécution des activités hors travail » ; les conditions d'exécution sont chez Gadbois un attribut de chaque activité, pas du système. Le glissement est sans conséquence puisque le système est fait de ces activités, et la citation affichée rétablit la formulation exacte. (2) Le summary s'arrête au versant perturbation et laisse hors champ le versant que Gadbois développe ensuite (p. 451-453) : compensations, coût, déplacement de la contrainte d'une activité sur une autre, marges de tolérance. Ce n'est pas un débordement, et une accroche d'une phrase n'a pas à tout porter. (3) Deux incohérences internes de l'imprimé, imputables à l'article et non à la carte : le corps du texte écrit « Friedmann (1964) » quand la bibliographie porte « FRIEDMAN (G.) », et le corps cite « Les Dégâts du Progrès, CFDT, 1974 » quand la bibliographie date le même ouvrage de 1977."
-        }
-      ]
-    },
-    {
-      "claim_id": "C057",
-      "locator": "sections[3].paragraphs[2]",
-      "claim_text": "Dans les deux cas, ce qui se donne pour la cause est ce qui s’est vu en dernier",
-      "supports": [
-        {
-          "id": "SUP-61f7f46f9a8d1d38",
-          "origin": "validated",
-          "path": "$.review.notes[5]",
-          "access": "n/a",
-          "text": "Hors mandat, pour information seulement, rien de tout ceci ne fonde une reprise : (1) le summary rattache « dont elles modifient les conditions d'exécution » au système, là où l'imprimé écrit « les conditions d'exécution des activités hors travail » ; les conditions d'exécution sont chez Gadbois un attribut de chaque activité, pas du système. Le glissement est sans conséquence puisque le système est fait de ces activités, et la citation affichée rétablit la formulation exacte. (2) Le summary s'arrête au versant perturbation et laisse hors champ le versant que Gadbois développe ensuite (p. 451-453) : compensations, coût, déplacement de la contrainte d'une activité sur une autre, marges de tolérance. Ce n'est pas un débordement, et une accroche d'une phrase n'a pas à tout porter. (3) Deux incohérences internes de l'imprimé, imputables à l'article et non à la carte : le corps du texte écrit « Friedmann (1964) » quand la bibliographie porte « FRIEDMAN (G.) », et le corps cite « Les Dégâts du Progrès, CFDT, 1974 » quand la bibliographie date le même ouvrage de 1977."
-        }
-      ]
-    },
-    {
-      "claim_id": "C058",
       "locator": "sections[4].paragraphs[0]",
-      "claim_text": "Gadbois énonce son programme à la première page",
-      "supports": [
-        {
-          "id": "SUP-6bc4c99da6a6d037",
-          "origin": "validated",
-          "path": "$.review.notes[3]",
-          "access": "n/a",
-          "text": "ATTRIBUTION — Point le plus délicat, et il tient. La thèse portée par la carte est bien celle que Gadbois avance en propre, non celle qu'il rapporte pour s'en démarquer. Sur la p. 449 il énonce son geste : « Ce que nous voudrions montrer ici c'est que l'étude des emprises du travail sur la vie hors travail peut tirer profit d'un approfondissement de la notion d'asservissement, dans son acception la plus précise, dérivée de la théorie des systèmes. Les activités hors travail sont à considérer comme un système […] : tel est le point de vue que nous développerons dans les pages qui suivent. » Ce qu'il rapporte sans le signer est distinct et clairement daté dans le texte : (a) le fait social lui-même, qui « pour n'être pas nouveau n'en reste pas moins actuel », rapporté à Marx (« l'idée et la matière d'une pathologie industrielle », « rabougrissement du corps et de l'esprit ») et à « l'oppression de la personnalité » de Friedmann (1964) ; (b) la « proposition de départ de toutes les études » (p. 449-450), à savoir que les contraintes du travail altèrent l'état du travailleur et que les effets s'en font sentir au-delà des heures de travail — proposition qu'il ne rejette pas mais qu'il juge insuffisamment spécifiée ; (c) la conception qu'il écarte explicitement, celle de la « simple prolongation » ou du « modelage psychique », dont il dit p. 450 que « s'en tenir à une telle conception ne peut conduire qu'à une analyse tronquée ». La note d'attribution de la fiche distingue exactement ces trois plans, et signale la dette de vocabulaire (asservissement emprunté à la théorie des systèmes) sans retirer à Gadbois sa thèse ni l'attribuer à un tiers. Le renvoi de la fiche à son article de 1975 pour les insuffisances des recherches antérieures est vérifié : « des difficultés et des insuffisances que nous avons eu l'occasion d'analyser ailleurs (Gadbois, 1975) », renvoyant en bibliographie à « L'analyse des emprises réciproques de la vie de travail et de la vie hors travail, Bulletin du C.E.R.P., 1975, 23, 117-151 ». Aucun cosignataire, aucune paternité usurpée."
-        },
-        {
-          "id": "SUP-5cc1b3cf07b7d8ca",
-          "origin": "validated",
-          "path": "$.attribution_note",
-          "access": "n/a",
-          "text": "Article signé de Charles Gadbois seul, page de titre relue sur l'imprimé, folio 449. Gadbois déclare emprunter la notion d'asservissement à la théorie des systèmes et ne revendique que son application au rapport entre le travail et la vie hors travail. Il rapporte le constat lui-même à Marx et à Friedmann, et renvoie à son propre article de 1975 pour les difficultés des recherches antérieures."
-        }
-      ]
-    },
-    {
-      "claim_id": "C059",
-      "locator": "sections[4].paragraphs[0]",
-      "claim_text": "« Ce que nous voudrions montrer ici c’est que l’étude des emprises du travail sur la vie hors travail peut tirer profit d’un approfondissement de la notion d’asservissement, dans son acception la plus précise, dérivée de la théorie des systèmes »",
-      "supports": [
-        {
-          "id": "SUP-6bc4c99da6a6d037",
-          "origin": "validated",
-          "path": "$.review.notes[3]",
-          "access": "n/a",
-          "text": "ATTRIBUTION — Point le plus délicat, et il tient. La thèse portée par la carte est bien celle que Gadbois avance en propre, non celle qu'il rapporte pour s'en démarquer. Sur la p. 449 il énonce son geste : « Ce que nous voudrions montrer ici c'est que l'étude des emprises du travail sur la vie hors travail peut tirer profit d'un approfondissement de la notion d'asservissement, dans son acception la plus précise, dérivée de la théorie des systèmes. Les activités hors travail sont à considérer comme un système […] : tel est le point de vue que nous développerons dans les pages qui suivent. » Ce qu'il rapporte sans le signer est distinct et clairement daté dans le texte : (a) le fait social lui-même, qui « pour n'être pas nouveau n'en reste pas moins actuel », rapporté à Marx (« l'idée et la matière d'une pathologie industrielle », « rabougrissement du corps et de l'esprit ») et à « l'oppression de la personnalité » de Friedmann (1964) ; (b) la « proposition de départ de toutes les études » (p. 449-450), à savoir que les contraintes du travail altèrent l'état du travailleur et que les effets s'en font sentir au-delà des heures de travail — proposition qu'il ne rejette pas mais qu'il juge insuffisamment spécifiée ; (c) la conception qu'il écarte explicitement, celle de la « simple prolongation » ou du « modelage psychique », dont il dit p. 450 que « s'en tenir à une telle conception ne peut conduire qu'à une analyse tronquée ». La note d'attribution de la fiche distingue exactement ces trois plans, et signale la dette de vocabulaire (asservissement emprunté à la théorie des systèmes) sans retirer à Gadbois sa thèse ni l'attribuer à un tiers. Le renvoi de la fiche à son article de 1975 pour les insuffisances des recherches antérieures est vérifié : « des difficultés et des insuffisances que nous avons eu l'occasion d'analyser ailleurs (Gadbois, 1975) », renvoyant en bibliographie à « L'analyse des emprises réciproques de la vie de travail et de la vie hors travail, Bulletin du C.E.R.P., 1975, 23, 117-151 ». Aucun cosignataire, aucune paternité usurpée."
-        }
-      ]
-    },
-    {
-      "claim_id": "C060",
-      "locator": "sections[4].paragraphs[0]",
-      "claim_text": "Ce qui est revendiqué là est étroit : non pas la notion, qui n’est pas de lui et qu’il ne refonde pas",
+      "claim_text": "Ce qui est revendiqué là est étroit : non pas la notion, qui n’est pas de lui et qu’il ne refonde pas, mais son application au rapport entre le travail et la vie hors travail.",
       "supports": [
         {
           "id": "SUP-5cc1b3cf07b7d8ca",
@@ -1104,20 +862,6 @@
           "path": "$.notes[3]",
           "access": "n/a",
           "text": "La dette de vocabulaire est signalée dans l'attribution et n'est pas instruite ici. Gadbois écrit emprunter la notion d'asservissement « dans son acception la plus précise, dérivée de la théorie des systèmes ». Aucune source de théorie des systèmes ou de cybernétique n'a été ouverte, l'article n'en cite aucune, et rien n'est affirmé du sens technique du terme dans son domaine d'origine, qui est un domaine déjà ouvert du corpus."
-        }
-      ]
-    },
-    {
-      "claim_id": "C061",
-      "locator": "sections[4].paragraphs[0]",
-      "claim_text": "mais son application au rapport entre le travail et la vie hors travail",
-      "supports": [
-        {
-          "id": "SUP-5cc1b3cf07b7d8ca",
-          "origin": "validated",
-          "path": "$.attribution_note",
-          "access": "n/a",
-          "text": "Article signé de Charles Gadbois seul, page de titre relue sur l'imprimé, folio 449. Gadbois déclare emprunter la notion d'asservissement à la théorie des systèmes et ne revendique que son application au rapport entre le travail et la vie hors travail. Il rapporte le constat lui-même à Marx et à Friedmann, et renvoie à son propre article de 1975 pour les difficultés des recherches antérieures."
         },
         {
           "id": "SUP-6bc4c99da6a6d037",
@@ -1129,9 +873,9 @@
       ]
     },
     {
-      "claim_id": "C062",
+      "claim_id": "C044",
       "locator": "sections[4].paragraphs[1]",
-      "claim_text": "La relation a par ailleurs une direction, que le titre de l’article inscrit : les conditions de travail y sont des facteurs d’asservissement du système des activités hors travail",
+      "claim_text": "La relation a par ailleurs une direction, que le titre de l’article inscrit : les conditions de travail y sont des facteurs d’asservissement du système des activités hors travail.",
       "supports": [
         {
           "id": "SUP-13fc38d141030f22",
@@ -1157,7 +901,7 @@
       ]
     },
     {
-      "claim_id": "C063",
+      "claim_id": "C045",
       "locator": "sections[4].paragraphs[1]",
       "claim_text": "Ce qui est asservi, c’est cet ensemble d’activités",
       "supports": [
@@ -1169,16 +913,16 @@
           "text": "Charles Gadbois, « Les conditions de travail comme facteurs d'asservissement du système des activités hors travail », Bulletin de psychologie, tome XXXIII, n° 344, 1980, p. 449-455."
         },
         {
-          "id": "SUP-5cc1b3cf07b7d8ca",
+          "id": "SUP-57c56051fa048589",
           "origin": "validated",
-          "path": "$.attribution_note",
-          "access": "n/a",
-          "text": "Article signé de Charles Gadbois seul, page de titre relue sur l'imprimé, folio 449. Gadbois déclare emprunter la notion d'asservissement à la théorie des systèmes et ne revendique que son application au rapport entre le travail et la vie hors travail. Il rapporte le constat lui-même à Marx et à Friedmann, et renvoie à son propre article de 1975 pour les difficultés des recherches antérieures."
+          "path": "$.sources[0].label",
+          "access": "full-text",
+          "text": "Charles Gadbois, « Les conditions de travail comme facteurs d'asservissement du système des activités hors travail », Bulletin de psychologie, tome XXXIII, n° 344, 1980, p. 449-455."
         }
       ]
     },
     {
-      "claim_id": "C064",
+      "claim_id": "C046",
       "locator": "sections[4].paragraphs[1]",
       "claim_text": "c’est ce sens de la relation que l’article examine",
       "supports": [
@@ -1190,16 +934,23 @@
           "text": "ATTRIBUTION — Point le plus délicat, et il tient. La thèse portée par la carte est bien celle que Gadbois avance en propre, non celle qu'il rapporte pour s'en démarquer. Sur la p. 449 il énonce son geste : « Ce que nous voudrions montrer ici c'est que l'étude des emprises du travail sur la vie hors travail peut tirer profit d'un approfondissement de la notion d'asservissement, dans son acception la plus précise, dérivée de la théorie des systèmes. Les activités hors travail sont à considérer comme un système […] : tel est le point de vue que nous développerons dans les pages qui suivent. » Ce qu'il rapporte sans le signer est distinct et clairement daté dans le texte : (a) le fait social lui-même, qui « pour n'être pas nouveau n'en reste pas moins actuel », rapporté à Marx (« l'idée et la matière d'une pathologie industrielle », « rabougrissement du corps et de l'esprit ») et à « l'oppression de la personnalité » de Friedmann (1964) ; (b) la « proposition de départ de toutes les études » (p. 449-450), à savoir que les contraintes du travail altèrent l'état du travailleur et que les effets s'en font sentir au-delà des heures de travail — proposition qu'il ne rejette pas mais qu'il juge insuffisamment spécifiée ; (c) la conception qu'il écarte explicitement, celle de la « simple prolongation » ou du « modelage psychique », dont il dit p. 450 que « s'en tenir à une telle conception ne peut conduire qu'à une analyse tronquée ». La note d'attribution de la fiche distingue exactement ces trois plans, et signale la dette de vocabulaire (asservissement emprunté à la théorie des systèmes) sans retirer à Gadbois sa thèse ni l'attribuer à un tiers. Le renvoi de la fiche à son article de 1975 pour les insuffisances des recherches antérieures est vérifié : « des difficultés et des insuffisances que nous avons eu l'occasion d'analyser ailleurs (Gadbois, 1975) », renvoyant en bibliographie à « L'analyse des emprises réciproques de la vie de travail et de la vie hors travail, Bulletin du C.E.R.P., 1975, 23, 117-151 ». Aucun cosignataire, aucune paternité usurpée."
         },
         {
-          "id": "SUP-5cc1b3cf07b7d8ca",
+          "id": "SUP-4e56118d98f599af",
           "origin": "validated",
-          "path": "$.attribution_note",
+          "path": "$.summary",
           "access": "n/a",
-          "text": "Article signé de Charles Gadbois seul, page de titre relue sur l'imprimé, folio 449. Gadbois déclare emprunter la notion d'asservissement à la théorie des systèmes et ne revendique que son application au rapport entre le travail et la vie hors travail. Il rapporte le constat lui-même à Marx et à Friedmann, et renvoie à son propre article de 1975 pour les difficultés des recherches antérieures."
+          "text": "Ayant altéré l'état du travailleur, les conditions de travail perturbent le système des activités hors travail et modifient les conditions d'exécution de ces activités."
+        },
+        {
+          "id": "SUP-13fc38d141030f22",
+          "origin": "validated",
+          "path": "$.quotation.reference",
+          "access": "n/a",
+          "text": "Charles Gadbois, « Les conditions de travail comme facteurs d'asservissement du système des activités hors travail », Bulletin de psychologie, tome XXXIII, n° 344, 1980, p. 449-455."
         }
       ]
     },
     {
-      "claim_id": "C065",
+      "claim_id": "C047",
       "locator": "sections[4].paragraphs[1]",
       "claim_text": "Ce que le mot désigne exactement dans le domaine dont il vient, l’article ne le dit pas et ne cite aucun texte qui le fixe",
       "supports": [
@@ -1213,7 +964,7 @@
       ]
     },
     {
-      "claim_id": "C066",
+      "claim_id": "C048",
       "locator": "sections[4].paragraphs[1]",
       "claim_text": "c’est cette littérature qui le porte, et il faudra la lire pour mesurer ce que l’emprunt apporte",
       "supports": [
@@ -1227,9 +978,9 @@
       ]
     },
     {
-      "claim_id": "C067",
+      "claim_id": "C049",
       "locator": "sections[5].paragraphs[0]",
-      "claim_text": "Gadbois ne prétend pas découvrir le fait",
+      "claim_text": "Gadbois ne prétend pas découvrir le fait.",
       "supports": [
         {
           "id": "SUP-6bc4c99da6a6d037",
@@ -1239,16 +990,16 @@
           "text": "ATTRIBUTION — Point le plus délicat, et il tient. La thèse portée par la carte est bien celle que Gadbois avance en propre, non celle qu'il rapporte pour s'en démarquer. Sur la p. 449 il énonce son geste : « Ce que nous voudrions montrer ici c'est que l'étude des emprises du travail sur la vie hors travail peut tirer profit d'un approfondissement de la notion d'asservissement, dans son acception la plus précise, dérivée de la théorie des systèmes. Les activités hors travail sont à considérer comme un système […] : tel est le point de vue que nous développerons dans les pages qui suivent. » Ce qu'il rapporte sans le signer est distinct et clairement daté dans le texte : (a) le fait social lui-même, qui « pour n'être pas nouveau n'en reste pas moins actuel », rapporté à Marx (« l'idée et la matière d'une pathologie industrielle », « rabougrissement du corps et de l'esprit ») et à « l'oppression de la personnalité » de Friedmann (1964) ; (b) la « proposition de départ de toutes les études » (p. 449-450), à savoir que les contraintes du travail altèrent l'état du travailleur et que les effets s'en font sentir au-delà des heures de travail — proposition qu'il ne rejette pas mais qu'il juge insuffisamment spécifiée ; (c) la conception qu'il écarte explicitement, celle de la « simple prolongation » ou du « modelage psychique », dont il dit p. 450 que « s'en tenir à une telle conception ne peut conduire qu'à une analyse tronquée ». La note d'attribution de la fiche distingue exactement ces trois plans, et signale la dette de vocabulaire (asservissement emprunté à la théorie des systèmes) sans retirer à Gadbois sa thèse ni l'attribuer à un tiers. Le renvoi de la fiche à son article de 1975 pour les insuffisances des recherches antérieures est vérifié : « des difficultés et des insuffisances que nous avons eu l'occasion d'analyser ailleurs (Gadbois, 1975) », renvoyant en bibliographie à « L'analyse des emprises réciproques de la vie de travail et de la vie hors travail, Bulletin du C.E.R.P., 1975, 23, 117-151 ». Aucun cosignataire, aucune paternité usurpée."
         },
         {
-          "id": "SUP-5cc1b3cf07b7d8ca",
+          "id": "SUP-9663a0a1373421a4",
           "origin": "validated",
-          "path": "$.attribution_note",
+          "path": "$.notes[4]",
           "access": "n/a",
-          "text": "Article signé de Charles Gadbois seul, page de titre relue sur l'imprimé, folio 449. Gadbois déclare emprunter la notion d'asservissement à la théorie des systèmes et ne revendique que son application au rapport entre le travail et la vie hors travail. Il rapporte le constat lui-même à Marx et à Friedmann, et renvoie à son propre article de 1975 pour les difficultés des recherches antérieures."
+          "text": "Généalogie donnée par l'article et non vérifiée sur pièce : Marx est cité au folio 449 pour deux expressions, sans aucune référence bibliographique ; Friedmann est cité pour « l'oppression de la personnalité » avec le millésime 1964 ; l'antécédent que Gadbois se donne est son propre article de 1975, au Bulletin du C.E.R.P. Aucun de ces textes n'a été ouvert par la lecture primaire."
         }
       ]
     },
     {
-      "claim_id": "C068",
+      "claim_id": "C050",
       "locator": "sections[5].paragraphs[0]",
       "claim_text": "Il le dit ancien et toujours actuel, « pour n’être pas nouveau n’en reste pas moins actuel »",
       "supports": [
@@ -1262,7 +1013,7 @@
       ]
     },
     {
-      "claim_id": "C069",
+      "claim_id": "C051",
       "locator": "sections[5].paragraphs[0]",
       "claim_text": "il le rapporte à Marx, qu’il cite pour deux expressions, « l’idée et la matière d’une pathologie industrielle » et le « rabougrissement du corps et de l’esprit »",
       "supports": [
@@ -1290,9 +1041,9 @@
       ]
     },
     {
-      "claim_id": "C070",
+      "claim_id": "C052",
       "locator": "sections[5].paragraphs[0]",
-      "claim_text": "puis à Friedmann, cité pour « l’oppression de la personnalité »",
+      "claim_text": "puis à Friedmann, cité pour « l’oppression de la personnalité ».",
       "supports": [
         {
           "id": "SUP-9663a0a1373421a4",
@@ -1311,9 +1062,9 @@
       ]
     },
     {
-      "claim_id": "C071",
+      "claim_id": "C053",
       "locator": "sections[5].paragraphs[0]",
-      "claim_text": "Ces formules nomment un dommage subi par la personne",
+      "claim_text": "Ces formules nomment un dommage subi par la personne.",
       "supports": [
         {
           "id": "SUP-9663a0a1373421a4",
@@ -1332,16 +1083,16 @@
       ]
     },
     {
-      "claim_id": "C072",
+      "claim_id": "C054",
       "locator": "sections[5].paragraphs[0]",
       "claim_text": "Celle qu’il propose nomme autre chose, un ensemble d’activités qui se réorganise sous contrainte",
       "supports": [
         {
-          "id": "SUP-4e56118d98f599af",
+          "id": "SUP-6bc4c99da6a6d037",
           "origin": "validated",
-          "path": "$.summary",
+          "path": "$.review.notes[3]",
           "access": "n/a",
-          "text": "Ayant altéré l'état du travailleur, les conditions de travail perturbent le système des activités hors travail et modifient les conditions d'exécution de ces activités."
+          "text": "ATTRIBUTION — Point le plus délicat, et il tient. La thèse portée par la carte est bien celle que Gadbois avance en propre, non celle qu'il rapporte pour s'en démarquer. Sur la p. 449 il énonce son geste : « Ce que nous voudrions montrer ici c'est que l'étude des emprises du travail sur la vie hors travail peut tirer profit d'un approfondissement de la notion d'asservissement, dans son acception la plus précise, dérivée de la théorie des systèmes. Les activités hors travail sont à considérer comme un système […] : tel est le point de vue que nous développerons dans les pages qui suivent. » Ce qu'il rapporte sans le signer est distinct et clairement daté dans le texte : (a) le fait social lui-même, qui « pour n'être pas nouveau n'en reste pas moins actuel », rapporté à Marx (« l'idée et la matière d'une pathologie industrielle », « rabougrissement du corps et de l'esprit ») et à « l'oppression de la personnalité » de Friedmann (1964) ; (b) la « proposition de départ de toutes les études » (p. 449-450), à savoir que les contraintes du travail altèrent l'état du travailleur et que les effets s'en font sentir au-delà des heures de travail — proposition qu'il ne rejette pas mais qu'il juge insuffisamment spécifiée ; (c) la conception qu'il écarte explicitement, celle de la « simple prolongation » ou du « modelage psychique », dont il dit p. 450 que « s'en tenir à une telle conception ne peut conduire qu'à une analyse tronquée ». La note d'attribution de la fiche distingue exactement ces trois plans, et signale la dette de vocabulaire (asservissement emprunté à la théorie des systèmes) sans retirer à Gadbois sa thèse ni l'attribuer à un tiers. Le renvoi de la fiche à son article de 1975 pour les insuffisances des recherches antérieures est vérifié : « des difficultés et des insuffisances que nous avons eu l'occasion d'analyser ailleurs (Gadbois, 1975) », renvoyant en bibliographie à « L'analyse des emprises réciproques de la vie de travail et de la vie hors travail, Bulletin du C.E.R.P., 1975, 23, 117-151 ». Aucun cosignataire, aucune paternité usurpée."
         },
         {
           "id": "SUP-61f7f46f9a8d1d38",
@@ -1351,16 +1102,16 @@
           "text": "Hors mandat, pour information seulement, rien de tout ceci ne fonde une reprise : (1) le summary rattache « dont elles modifient les conditions d'exécution » au système, là où l'imprimé écrit « les conditions d'exécution des activités hors travail » ; les conditions d'exécution sont chez Gadbois un attribut de chaque activité, pas du système. Le glissement est sans conséquence puisque le système est fait de ces activités, et la citation affichée rétablit la formulation exacte. (2) Le summary s'arrête au versant perturbation et laisse hors champ le versant que Gadbois développe ensuite (p. 451-453) : compensations, coût, déplacement de la contrainte d'une activité sur une autre, marges de tolérance. Ce n'est pas un débordement, et une accroche d'une phrase n'a pas à tout porter. (3) Deux incohérences internes de l'imprimé, imputables à l'article et non à la carte : le corps du texte écrit « Friedmann (1964) » quand la bibliographie porte « FRIEDMAN (G.) », et le corps cite « Les Dégâts du Progrès, CFDT, 1974 » quand la bibliographie date le même ouvrage de 1977."
         },
         {
-          "id": "SUP-6bc4c99da6a6d037",
+          "id": "SUP-4e56118d98f599af",
           "origin": "validated",
-          "path": "$.review.notes[3]",
+          "path": "$.summary",
           "access": "n/a",
-          "text": "ATTRIBUTION — Point le plus délicat, et il tient. La thèse portée par la carte est bien celle que Gadbois avance en propre, non celle qu'il rapporte pour s'en démarquer. Sur la p. 449 il énonce son geste : « Ce que nous voudrions montrer ici c'est que l'étude des emprises du travail sur la vie hors travail peut tirer profit d'un approfondissement de la notion d'asservissement, dans son acception la plus précise, dérivée de la théorie des systèmes. Les activités hors travail sont à considérer comme un système […] : tel est le point de vue que nous développerons dans les pages qui suivent. » Ce qu'il rapporte sans le signer est distinct et clairement daté dans le texte : (a) le fait social lui-même, qui « pour n'être pas nouveau n'en reste pas moins actuel », rapporté à Marx (« l'idée et la matière d'une pathologie industrielle », « rabougrissement du corps et de l'esprit ») et à « l'oppression de la personnalité » de Friedmann (1964) ; (b) la « proposition de départ de toutes les études » (p. 449-450), à savoir que les contraintes du travail altèrent l'état du travailleur et que les effets s'en font sentir au-delà des heures de travail — proposition qu'il ne rejette pas mais qu'il juge insuffisamment spécifiée ; (c) la conception qu'il écarte explicitement, celle de la « simple prolongation » ou du « modelage psychique », dont il dit p. 450 que « s'en tenir à une telle conception ne peut conduire qu'à une analyse tronquée ». La note d'attribution de la fiche distingue exactement ces trois plans, et signale la dette de vocabulaire (asservissement emprunté à la théorie des systèmes) sans retirer à Gadbois sa thèse ni l'attribuer à un tiers. Le renvoi de la fiche à son article de 1975 pour les insuffisances des recherches antérieures est vérifié : « des difficultés et des insuffisances que nous avons eu l'occasion d'analyser ailleurs (Gadbois, 1975) », renvoyant en bibliographie à « L'analyse des emprises réciproques de la vie de travail et de la vie hors travail, Bulletin du C.E.R.P., 1975, 23, 117-151 ». Aucun cosignataire, aucune paternité usurpée."
+          "text": "Ayant altéré l'état du travailleur, les conditions de travail perturbent le système des activités hors travail et modifient les conditions d'exécution de ces activités."
         }
       ]
     },
     {
-      "claim_id": "C073",
+      "claim_id": "C055",
       "locator": "sections[5].paragraphs[0]",
       "claim_text": "ce changement de vocabulaire est ce qu’il donne pour neuf : non pas le constat, mais l’instrument",
       "supports": [
@@ -1372,19 +1123,33 @@
           "text": "ATTRIBUTION — Point le plus délicat, et il tient. La thèse portée par la carte est bien celle que Gadbois avance en propre, non celle qu'il rapporte pour s'en démarquer. Sur la p. 449 il énonce son geste : « Ce que nous voudrions montrer ici c'est que l'étude des emprises du travail sur la vie hors travail peut tirer profit d'un approfondissement de la notion d'asservissement, dans son acception la plus précise, dérivée de la théorie des systèmes. Les activités hors travail sont à considérer comme un système […] : tel est le point de vue que nous développerons dans les pages qui suivent. » Ce qu'il rapporte sans le signer est distinct et clairement daté dans le texte : (a) le fait social lui-même, qui « pour n'être pas nouveau n'en reste pas moins actuel », rapporté à Marx (« l'idée et la matière d'une pathologie industrielle », « rabougrissement du corps et de l'esprit ») et à « l'oppression de la personnalité » de Friedmann (1964) ; (b) la « proposition de départ de toutes les études » (p. 449-450), à savoir que les contraintes du travail altèrent l'état du travailleur et que les effets s'en font sentir au-delà des heures de travail — proposition qu'il ne rejette pas mais qu'il juge insuffisamment spécifiée ; (c) la conception qu'il écarte explicitement, celle de la « simple prolongation » ou du « modelage psychique », dont il dit p. 450 que « s'en tenir à une telle conception ne peut conduire qu'à une analyse tronquée ». La note d'attribution de la fiche distingue exactement ces trois plans, et signale la dette de vocabulaire (asservissement emprunté à la théorie des systèmes) sans retirer à Gadbois sa thèse ni l'attribuer à un tiers. Le renvoi de la fiche à son article de 1975 pour les insuffisances des recherches antérieures est vérifié : « des difficultés et des insuffisances que nous avons eu l'occasion d'analyser ailleurs (Gadbois, 1975) », renvoyant en bibliographie à « L'analyse des emprises réciproques de la vie de travail et de la vie hors travail, Bulletin du C.E.R.P., 1975, 23, 117-151 ». Aucun cosignataire, aucune paternité usurpée."
         },
         {
-          "id": "SUP-5cc1b3cf07b7d8ca",
+          "id": "SUP-9663a0a1373421a4",
           "origin": "validated",
-          "path": "$.attribution_note",
+          "path": "$.notes[4]",
           "access": "n/a",
-          "text": "Article signé de Charles Gadbois seul, page de titre relue sur l'imprimé, folio 449. Gadbois déclare emprunter la notion d'asservissement à la théorie des systèmes et ne revendique que son application au rapport entre le travail et la vie hors travail. Il rapporte le constat lui-même à Marx et à Friedmann, et renvoie à son propre article de 1975 pour les difficultés des recherches antérieures."
+          "text": "Généalogie donnée par l'article et non vérifiée sur pièce : Marx est cité au folio 449 pour deux expressions, sans aucune référence bibliographique ; Friedmann est cité pour « l'oppression de la personnalité » avec le millésime 1964 ; l'antécédent que Gadbois se donne est son propre article de 1975, au Bulletin du C.E.R.P. Aucun de ces textes n'a été ouvert par la lecture primaire."
+        },
+        {
+          "id": "SUP-7dae79d163dc03a1",
+          "origin": "validated",
+          "path": "$.notes[3]",
+          "access": "n/a",
+          "text": "La dette de vocabulaire est signalée dans l'attribution et n'est pas instruite ici. Gadbois écrit emprunter la notion d'asservissement « dans son acception la plus précise, dérivée de la théorie des systèmes ». Aucune source de théorie des systèmes ou de cybernétique n'a été ouverte, l'article n'en cite aucune, et rien n'est affirmé du sens technique du terme dans son domaine d'origine, qui est un domaine déjà ouvert du corpus."
         }
       ]
     },
     {
-      "claim_id": "C074",
+      "claim_id": "C056",
       "locator": "sections[5].paragraphs[1]",
-      "claim_text": "L’antécédent qu’il se donne est son propre article de 1975, « L’analyse des emprises réciproques de la vie de travail et de la vie hors travail »",
+      "claim_text": "En 1980, il renvoie à son propre article de 1975, « L’analyse des emprises réciproques de la vie de travail et de la vie hors travail »",
       "supports": [
+        {
+          "id": "SUP-6bc4c99da6a6d037",
+          "origin": "validated",
+          "path": "$.review.notes[3]",
+          "access": "n/a",
+          "text": "ATTRIBUTION — Point le plus délicat, et il tient. La thèse portée par la carte est bien celle que Gadbois avance en propre, non celle qu'il rapporte pour s'en démarquer. Sur la p. 449 il énonce son geste : « Ce que nous voudrions montrer ici c'est que l'étude des emprises du travail sur la vie hors travail peut tirer profit d'un approfondissement de la notion d'asservissement, dans son acception la plus précise, dérivée de la théorie des systèmes. Les activités hors travail sont à considérer comme un système […] : tel est le point de vue que nous développerons dans les pages qui suivent. » Ce qu'il rapporte sans le signer est distinct et clairement daté dans le texte : (a) le fait social lui-même, qui « pour n'être pas nouveau n'en reste pas moins actuel », rapporté à Marx (« l'idée et la matière d'une pathologie industrielle », « rabougrissement du corps et de l'esprit ») et à « l'oppression de la personnalité » de Friedmann (1964) ; (b) la « proposition de départ de toutes les études » (p. 449-450), à savoir que les contraintes du travail altèrent l'état du travailleur et que les effets s'en font sentir au-delà des heures de travail — proposition qu'il ne rejette pas mais qu'il juge insuffisamment spécifiée ; (c) la conception qu'il écarte explicitement, celle de la « simple prolongation » ou du « modelage psychique », dont il dit p. 450 que « s'en tenir à une telle conception ne peut conduire qu'à une analyse tronquée ». La note d'attribution de la fiche distingue exactement ces trois plans, et signale la dette de vocabulaire (asservissement emprunté à la théorie des systèmes) sans retirer à Gadbois sa thèse ni l'attribuer à un tiers. Le renvoi de la fiche à son article de 1975 pour les insuffisances des recherches antérieures est vérifié : « des difficultés et des insuffisances que nous avons eu l'occasion d'analyser ailleurs (Gadbois, 1975) », renvoyant en bibliographie à « L'analyse des emprises réciproques de la vie de travail et de la vie hors travail, Bulletin du C.E.R.P., 1975, 23, 117-151 ». Aucun cosignataire, aucune paternité usurpée."
+        },
         {
           "id": "SUP-9663a0a1373421a4",
           "origin": "validated",
@@ -1393,13 +1158,6 @@
           "text": "Généalogie donnée par l'article et non vérifiée sur pièce : Marx est cité au folio 449 pour deux expressions, sans aucune référence bibliographique ; Friedmann est cité pour « l'oppression de la personnalité » avec le millésime 1964 ; l'antécédent que Gadbois se donne est son propre article de 1975, au Bulletin du C.E.R.P. Aucun de ces textes n'a été ouvert par la lecture primaire."
         },
         {
-          "id": "SUP-6bc4c99da6a6d037",
-          "origin": "validated",
-          "path": "$.review.notes[3]",
-          "access": "n/a",
-          "text": "ATTRIBUTION — Point le plus délicat, et il tient. La thèse portée par la carte est bien celle que Gadbois avance en propre, non celle qu'il rapporte pour s'en démarquer. Sur la p. 449 il énonce son geste : « Ce que nous voudrions montrer ici c'est que l'étude des emprises du travail sur la vie hors travail peut tirer profit d'un approfondissement de la notion d'asservissement, dans son acception la plus précise, dérivée de la théorie des systèmes. Les activités hors travail sont à considérer comme un système […] : tel est le point de vue que nous développerons dans les pages qui suivent. » Ce qu'il rapporte sans le signer est distinct et clairement daté dans le texte : (a) le fait social lui-même, qui « pour n'être pas nouveau n'en reste pas moins actuel », rapporté à Marx (« l'idée et la matière d'une pathologie industrielle », « rabougrissement du corps et de l'esprit ») et à « l'oppression de la personnalité » de Friedmann (1964) ; (b) la « proposition de départ de toutes les études » (p. 449-450), à savoir que les contraintes du travail altèrent l'état du travailleur et que les effets s'en font sentir au-delà des heures de travail — proposition qu'il ne rejette pas mais qu'il juge insuffisamment spécifiée ; (c) la conception qu'il écarte explicitement, celle de la « simple prolongation » ou du « modelage psychique », dont il dit p. 450 que « s'en tenir à une telle conception ne peut conduire qu'à une analyse tronquée ». La note d'attribution de la fiche distingue exactement ces trois plans, et signale la dette de vocabulaire (asservissement emprunté à la théorie des systèmes) sans retirer à Gadbois sa thèse ni l'attribuer à un tiers. Le renvoi de la fiche à son article de 1975 pour les insuffisances des recherches antérieures est vérifié : « des difficultés et des insuffisances que nous avons eu l'occasion d'analyser ailleurs (Gadbois, 1975) », renvoyant en bibliographie à « L'analyse des emprises réciproques de la vie de travail et de la vie hors travail, Bulletin du C.E.R.P., 1975, 23, 117-151 ». Aucun cosignataire, aucune paternité usurpée."
-        },
-        {
           "id": "SUP-5cc1b3cf07b7d8ca",
           "origin": "validated",
           "path": "$.attribution_note",
@@ -1409,9 +1167,9 @@
       ]
     },
     {
-      "claim_id": "C075",
+      "claim_id": "C057",
       "locator": "sections[5].paragraphs[1]",
-      "claim_text": "où il analyse « des difficultés et des insuffisances »",
+      "claim_text": "pour « des difficultés et des insuffisances que nous avons eu l’occasion d’analyser ailleurs »",
       "supports": [
         {
           "id": "SUP-6bc4c99da6a6d037",
@@ -1423,30 +1181,9 @@
       ]
     },
     {
-      "claim_id": "C076",
+      "claim_id": "C058",
       "locator": "sections[5].paragraphs[1]",
-      "claim_text": "qu’il ne reprend pas en 1980",
-      "supports": [
-        {
-          "id": "SUP-6bc4c99da6a6d037",
-          "origin": "validated",
-          "path": "$.review.notes[3]",
-          "access": "n/a",
-          "text": "ATTRIBUTION — Point le plus délicat, et il tient. La thèse portée par la carte est bien celle que Gadbois avance en propre, non celle qu'il rapporte pour s'en démarquer. Sur la p. 449 il énonce son geste : « Ce que nous voudrions montrer ici c'est que l'étude des emprises du travail sur la vie hors travail peut tirer profit d'un approfondissement de la notion d'asservissement, dans son acception la plus précise, dérivée de la théorie des systèmes. Les activités hors travail sont à considérer comme un système […] : tel est le point de vue que nous développerons dans les pages qui suivent. » Ce qu'il rapporte sans le signer est distinct et clairement daté dans le texte : (a) le fait social lui-même, qui « pour n'être pas nouveau n'en reste pas moins actuel », rapporté à Marx (« l'idée et la matière d'une pathologie industrielle », « rabougrissement du corps et de l'esprit ») et à « l'oppression de la personnalité » de Friedmann (1964) ; (b) la « proposition de départ de toutes les études » (p. 449-450), à savoir que les contraintes du travail altèrent l'état du travailleur et que les effets s'en font sentir au-delà des heures de travail — proposition qu'il ne rejette pas mais qu'il juge insuffisamment spécifiée ; (c) la conception qu'il écarte explicitement, celle de la « simple prolongation » ou du « modelage psychique », dont il dit p. 450 que « s'en tenir à une telle conception ne peut conduire qu'à une analyse tronquée ». La note d'attribution de la fiche distingue exactement ces trois plans, et signale la dette de vocabulaire (asservissement emprunté à la théorie des systèmes) sans retirer à Gadbois sa thèse ni l'attribuer à un tiers. Le renvoi de la fiche à son article de 1975 pour les insuffisances des recherches antérieures est vérifié : « des difficultés et des insuffisances que nous avons eu l'occasion d'analyser ailleurs (Gadbois, 1975) », renvoyant en bibliographie à « L'analyse des emprises réciproques de la vie de travail et de la vie hors travail, Bulletin du C.E.R.P., 1975, 23, 117-151 ». Aucun cosignataire, aucune paternité usurpée."
-        },
-        {
-          "id": "SUP-5cc1b3cf07b7d8ca",
-          "origin": "validated",
-          "path": "$.attribution_note",
-          "access": "n/a",
-          "text": "Article signé de Charles Gadbois seul, page de titre relue sur l'imprimé, folio 449. Gadbois déclare emprunter la notion d'asservissement à la théorie des systèmes et ne revendique que son application au rapport entre le travail et la vie hors travail. Il rapporte le constat lui-même à Marx et à Friedmann, et renvoie à son propre article de 1975 pour les difficultés des recherches antérieures."
-        }
-      ]
-    },
-    {
-      "claim_id": "C077",
-      "locator": "sections[5].paragraphs[1]",
-      "claim_text": "Ce titre nomme des emprises réciproques, donc aussi le sens inverse : ce que la vie hors travail fait, en retour, à la vie de travail",
+      "claim_text": "Ce titre nomme des emprises réciproques, donc aussi le sens inverse : ce que la vie hors travail fait, en retour, à la vie de travail.",
       "supports": [
         {
           "id": "SUP-6bc4c99da6a6d037",
@@ -1465,37 +1202,9 @@
       ]
     },
     {
-      "claim_id": "C078",
+      "claim_id": "C059",
       "locator": "sections[5].paragraphs[1]",
-      "claim_text": "L’article de 1980 n’examine pas ce sens-là",
-      "supports": [
-        {
-          "id": "SUP-13fc38d141030f22",
-          "origin": "validated",
-          "path": "$.quotation.reference",
-          "access": "n/a",
-          "text": "Charles Gadbois, « Les conditions de travail comme facteurs d'asservissement du système des activités hors travail », Bulletin de psychologie, tome XXXIII, n° 344, 1980, p. 449-455."
-        },
-        {
-          "id": "SUP-5cc1b3cf07b7d8ca",
-          "origin": "validated",
-          "path": "$.attribution_note",
-          "access": "n/a",
-          "text": "Article signé de Charles Gadbois seul, page de titre relue sur l'imprimé, folio 449. Gadbois déclare emprunter la notion d'asservissement à la théorie des systèmes et ne revendique que son application au rapport entre le travail et la vie hors travail. Il rapporte le constat lui-même à Marx et à Friedmann, et renvoie à son propre article de 1975 pour les difficultés des recherches antérieures."
-        },
-        {
-          "id": "SUP-6bc4c99da6a6d037",
-          "origin": "validated",
-          "path": "$.review.notes[3]",
-          "access": "n/a",
-          "text": "ATTRIBUTION — Point le plus délicat, et il tient. La thèse portée par la carte est bien celle que Gadbois avance en propre, non celle qu'il rapporte pour s'en démarquer. Sur la p. 449 il énonce son geste : « Ce que nous voudrions montrer ici c'est que l'étude des emprises du travail sur la vie hors travail peut tirer profit d'un approfondissement de la notion d'asservissement, dans son acception la plus précise, dérivée de la théorie des systèmes. Les activités hors travail sont à considérer comme un système […] : tel est le point de vue que nous développerons dans les pages qui suivent. » Ce qu'il rapporte sans le signer est distinct et clairement daté dans le texte : (a) le fait social lui-même, qui « pour n'être pas nouveau n'en reste pas moins actuel », rapporté à Marx (« l'idée et la matière d'une pathologie industrielle », « rabougrissement du corps et de l'esprit ») et à « l'oppression de la personnalité » de Friedmann (1964) ; (b) la « proposition de départ de toutes les études » (p. 449-450), à savoir que les contraintes du travail altèrent l'état du travailleur et que les effets s'en font sentir au-delà des heures de travail — proposition qu'il ne rejette pas mais qu'il juge insuffisamment spécifiée ; (c) la conception qu'il écarte explicitement, celle de la « simple prolongation » ou du « modelage psychique », dont il dit p. 450 que « s'en tenir à une telle conception ne peut conduire qu'à une analyse tronquée ». La note d'attribution de la fiche distingue exactement ces trois plans, et signale la dette de vocabulaire (asservissement emprunté à la théorie des systèmes) sans retirer à Gadbois sa thèse ni l'attribuer à un tiers. Le renvoi de la fiche à son article de 1975 pour les insuffisances des recherches antérieures est vérifié : « des difficultés et des insuffisances que nous avons eu l'occasion d'analyser ailleurs (Gadbois, 1975) », renvoyant en bibliographie à « L'analyse des emprises réciproques de la vie de travail et de la vie hors travail, Bulletin du C.E.R.P., 1975, 23, 117-151 ». Aucun cosignataire, aucune paternité usurpée."
-        }
-      ]
-    },
-    {
-      "claim_id": "C079",
-      "locator": "sections[5].paragraphs[1]",
-      "claim_text": "Celui de 1975 en porte le nom, et c’est là qu’il faudra le lire",
+      "claim_text": "Ces pages du Bulletin du C.E.R.P. attendent leur lecteur.",
       "supports": [
         {
           "id": "SUP-9663a0a1373421a4",
@@ -1514,6 +1223,6 @@
       ]
     }
   ],
-  "estimated_tokens": 54890,
+  "estimated_tokens": 42496,
   "status": "READY"
 }
