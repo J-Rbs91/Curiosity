@@ -1,6 +1,6 @@
 {
   "concept_id": "asservissement-des-activites-hors-travail",
-  "candidate_sha256": "71d0a37ea7377b558eefb11091165345105afbb5bf15f3d3b2b239691f686b12",
+  "candidate_sha256": "0ae6db34b6287464fb3e07276b58471176aed926a463d3ee078764bc6090ffca",
   "paragraphs": [
     {
       "locator": "lead[0]",
@@ -74,11 +74,10 @@
       "start": 0,
       "end": 82,
       "claim_text": "Charles Gadbois, chargé de recherche dans un laboratoire de psychologie du travail",
-      "normalized_claim": "Identité et fonction de l'auteur : chargé de recherche dans un laboratoire de psychologie du travail.",
+      "normalized_claim": "Gadbois est charge de recherche dans un laboratoire de psychologie du travail.",
       "support_ids": [
         "SUP-8a986fa60f3e2320",
-        "SUP-9d415535709038e1",
-        "SUP-5cc1b3cf07b7d8ca"
+        "SUP-9d415535709038e1"
       ]
     },
     {
@@ -87,10 +86,9 @@
       "start": 84,
       "end": 109,
       "claim_text": "publie en 1980 un article",
-      "normalized_claim": "Fait bibliographique : parution d'un article en 1980.",
+      "normalized_claim": "L'article a ete publie en 1980.",
       "support_ids": [
         "SUP-13fc38d141030f22",
-        "SUP-57c56051fa048589",
         "SUP-9d415535709038e1",
         "SUP-3fd49dd43433ec2c"
       ]
@@ -101,10 +99,9 @@
       "start": 110,
       "end": 262,
       "claim_text": "qui déplace la question : plutôt que de demander si le travail fatigue, il regarde ce que devient l’ensemble de ce qu’une personne fait en dehors de lui",
-      "normalized_claim": "Caractérisation du geste de l'article : porter le regard sur l'ensemble des activités hors travail plutôt que sur la fatigue.",
+      "normalized_claim": "L'article deplace la question de la fatigue du travail vers l'ensemble des activites hors travail.",
       "support_ids": [
-        "SUP-6bc4c99da6a6d037",
-        "SUP-4e56118d98f599af"
+        "SUP-6bc4c99da6a6d037"
       ]
     },
     {
@@ -113,10 +110,9 @@
       "start": 264,
       "end": 320,
       "claim_text": "Le mot qui donne son titre à cet article, asservissement",
-      "normalized_claim": "Le mot « asservissement » figure dans le titre de l'article.",
+      "normalized_claim": "Le titre de l'article comporte le mot asservissement.",
       "support_ids": [
-        "SUP-13fc38d141030f22",
-        "SUP-57c56051fa048589"
+        "SUP-13fc38d141030f22"
       ]
     },
     {
@@ -125,7 +121,7 @@
       "start": 353,
       "end": 396,
       "claim_text": "ce n’est pas le sens que Gadbois revendique",
-      "normalized_claim": "Attribution négative : le sens accusatoire n'est pas celui que Gadbois revendique.",
+      "normalized_claim": "Gadbois ne revendique pas un sens accusatoire du mot.",
       "support_ids": [
         "SUP-7dae79d163dc03a1",
         "SUP-5cc1b3cf07b7d8ca"
@@ -137,23 +133,21 @@
       "start": 399,
       "end": 496,
       "claim_text": "il déclare l’emprunter à un vocabulaire scientifique, dont il retient l’acception la plus précise",
-      "normalized_claim": "Attribution : Gadbois déclare emprunter la notion à un vocabulaire scientifique dans son acception la plus précise.",
+      "normalized_claim": "Gadbois declare emprunter la notion a un vocabulaire scientifique, dans son acception la plus precise.",
       "support_ids": [
         "SUP-7dae79d163dc03a1",
-        "SUP-5cc1b3cf07b7d8ca",
-        "SUP-6bc4c99da6a6d037"
+        "SUP-5cc1b3cf07b7d8ca"
       ]
     },
     {
       "claim_id": "C007",
       "locator": "sections[0].paragraphs[0]",
       "start": 0,
-      "end": 147,
-      "claim_text": "Le point de vue que Gadbois annonce dès sa première page tient dans une phrase : « Les activités hors travail sont à considérer comme un système ».",
-      "normalized_claim": "Citation verbatim située à la première page de l'article et donnée pour le point de vue annoncé par Gadbois.",
+      "end": 146,
+      "claim_text": "Le point de vue que Gadbois annonce dès sa première page tient dans une phrase : « Les activités hors travail sont à considérer comme un système »",
+      "normalized_claim": "Des sa premiere page, Gadbois annonce que les activites hors travail sont a considerer comme un systeme (citation).",
       "support_ids": [
-        "SUP-6bc4c99da6a6d037",
-        "SUP-3a96e9a0fc83c319"
+        "SUP-6bc4c99da6a6d037"
       ]
     },
     {
@@ -162,7 +156,7 @@
       "start": 148,
       "end": 393,
       "claim_text": "On peut entendre cette annonce comme une consigne de regard : prendre ce qu’une personne fait en dehors du travail comme un agencement dont les pièces tiennent ensemble, plutôt que comme une suite d’occupations à examiner chacune pour elle-même.",
-      "normalized_claim": "Lecture explicitement marquée de la phrase citée, présentée comme consigne de regard et non comme énoncé de l'auteur.",
+      "normalized_claim": "Lecture proposee de l'annonce comme consigne de regard.",
       "support_ids": [
         "SUP-6bc4c99da6a6d037"
       ]
@@ -170,36 +164,35 @@
     {
       "claim_id": "C009",
       "locator": "sections[0].paragraphs[1]",
-      "start": 0,
-      "end": 52,
-      "claim_text": "Cette façon de regarder oriente ce que l’on cherche.",
-      "normalized_claim": "Conséquence méthodologique attribuée au point de vue systémique : il oriente la recherche.",
-      "support_ids": [
-        "SUP-6bc4c99da6a6d037",
-        "SUP-1f1c435ed0732b58"
-      ]
-    },
-    {
-      "claim_id": "C010",
-      "locator": "sections[0].paragraphs[1]",
       "start": 379,
       "end": 448,
       "claim_text": "C’est ce second regard que l’on peut entendre dans le mot de système.",
-      "normalized_claim": "Lecture explicitement marquée du mot « système ».",
+      "normalized_claim": "Le mot systeme designe le regard sur la place d'une activite dans l'ensemble.",
       "support_ids": [
         "SUP-6bc4c99da6a6d037"
       ]
     },
     {
-      "claim_id": "C011",
+      "claim_id": "C010",
       "locator": "sections[1].paragraphs[0]",
       "start": 28,
-      "end": 73,
-      "claim_text": "la thèse tient dans une phrase de la page 451",
-      "normalized_claim": "Localisation paginale : la thèse est portée par une phrase de la page 451.",
+      "end": 388,
+      "claim_text": "la thèse tient dans une phrase de la page 451 : « Par rapport au système des activités hors travail ainsi décrit, les conditions de travail s’analysent comme des sources de perturbations dans la mesure où, ayant provoqué une altération de l’état physique et psychologique du travailleur, elles modifient les conditions d’exécution des activités hors travail. »",
+      "normalized_claim": "Citation verbatim de la phrase de la page 451.",
       "support_ids": [
-        "SUP-9e4daa42daa03deb",
         "SUP-b0e0df5744f12f84",
+        "SUP-7559335d6f1b5df8",
+        "SUP-9e4daa42daa03deb"
+      ]
+    },
+    {
+      "claim_id": "C011",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 389,
+      "end": 470,
+      "claim_text": "Deux choses y sont dites plutôt qu’une : que les conditions de travail perturbent",
+      "normalized_claim": "La phrase dit que les conditions de travail perturbent.",
+      "support_ids": [
         "SUP-7559335d6f1b5df8",
         "SUP-4e56118d98f599af"
       ]
@@ -207,567 +200,486 @@
     {
       "claim_id": "C012",
       "locator": "sections[1].paragraphs[0]",
-      "start": 76,
-      "end": 388,
-      "claim_text": "« Par rapport au système des activités hors travail ainsi décrit, les conditions de travail s’analysent comme des sources de perturbations dans la mesure où, ayant provoqué une altération de l’état physique et psychologique du travailleur, elles modifient les conditions d’exécution des activités hors travail. »",
-      "normalized_claim": "Citation verbatim de la phrase imprimée de la page 451.",
+      "start": 472,
+      "end": 511,
+      "claim_text": "et qu’elles ne le font pas directement.",
+      "normalized_claim": "La phrase dit que cette perturbation n'est pas directe.",
       "support_ids": [
-        "SUP-b0e0df5744f12f84",
-        "SUP-7559335d6f1b5df8",
-        "SUP-775c121b7f6f43a7"
+        "SUP-5acf6338e14133e4",
+        "SUP-7559335d6f1b5df8"
       ]
     },
     {
       "claim_id": "C013",
-      "locator": "sections[1].paragraphs[0]",
-      "start": 430,
-      "end": 470,
-      "claim_text": "que les conditions de travail perturbent",
-      "normalized_claim": "Première proposition tirée de la phrase : les conditions de travail sont sources de perturbations.",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 0,
+      "end": 40,
+      "claim_text": "Elles passent par l’état de la personne.",
+      "normalized_claim": "La perturbation passe par l'etat de la personne.",
       "support_ids": [
-        "SUP-b0e0df5744f12f84",
-        "SUP-4e56118d98f599af"
+        "SUP-7559335d6f1b5df8",
+        "SUP-5acf6338e14133e4"
       ]
     },
     {
       "claim_id": "C014",
-      "locator": "sections[1].paragraphs[0]",
-      "start": 475,
-      "end": 510,
-      "claim_text": "qu’elles ne le font pas directement",
-      "normalized_claim": "Seconde proposition tirée de la phrase : la perturbation est médiate et non directe.",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 41,
+      "end": 158,
+      "claim_text": "Les conditions de travail n’agissent pas sur la soirée : elles ont d’abord altéré quelque chose chez celui qui rentre",
+      "normalized_claim": "Les conditions de travail n'agissent pas directement sur la soiree mais d'abord sur l'etat du travailleur.",
       "support_ids": [
         "SUP-5acf6338e14133e4",
-        "SUP-b0e0df5744f12f84",
-        "SUP-481c53c2333d4c14"
+        "SUP-7559335d6f1b5df8"
       ]
     },
     {
       "claim_id": "C015",
       "locator": "sections[1].paragraphs[1]",
-      "start": 0,
-      "end": 40,
-      "claim_text": "Elles passent par l’état de la personne.",
-      "normalized_claim": "La médiation de la perturbation passe par l'état du travailleur.",
+      "start": 163,
+      "end": 231,
+      "claim_text": "cette altération, la phrase la dit double, physique et psychologique",
+      "normalized_claim": "La phrase qualifie l'alteration de physique et psychologique.",
       "support_ids": [
-        "SUP-b0e0df5744f12f84",
-        "SUP-5acf6338e14133e4",
-        "SUP-4e56118d98f599af"
+        "SUP-481c53c2333d4c14",
+        "SUP-b0e0df5744f12f84"
       ]
     },
     {
       "claim_id": "C016",
       "locator": "sections[1].paragraphs[1]",
-      "start": 41,
-      "end": 158,
-      "claim_text": "Les conditions de travail n’agissent pas sur la soirée : elles ont d’abord altéré quelque chose chez celui qui rentre",
-      "normalized_claim": "Négation d'une action directe sur les activités hors travail, au profit d'une altération préalable de la personne.",
+      "start": 233,
+      "end": 323,
+      "claim_text": "C’est elle qui change les conditions dans lesquelles les activités du soir vont s’exécuter",
+      "normalized_claim": "L'alteration change les conditions d'execution des activites du soir.",
       "support_ids": [
-        "SUP-b0e0df5744f12f84",
-        "SUP-5acf6338e14133e4"
+        "SUP-7559335d6f1b5df8"
       ]
     },
     {
       "claim_id": "C017",
       "locator": "sections[1].paragraphs[1]",
-      "start": 163,
-      "end": 231,
-      "claim_text": "cette altération, la phrase la dit double, physique et psychologique",
-      "normalized_claim": "Énoncé sur la lettre de la phrase : l'altération y est dite physique et psychologique.",
+      "start": 328,
+      "end": 435,
+      "claim_text": "c’est là le point d’application de la perturbation : les conditions d’exécution des activités hors travail.",
+      "normalized_claim": "Le point d'application de la perturbation est les conditions d'execution des activites hors travail.",
       "support_ids": [
-        "SUP-b0e0df5744f12f84",
-        "SUP-481c53c2333d4c14",
+        "SUP-8a5f6783836697c0",
         "SUP-7559335d6f1b5df8"
       ]
     },
     {
       "claim_id": "C018",
-      "locator": "sections[1].paragraphs[1]",
-      "start": 233,
-      "end": 323,
-      "claim_text": "C’est elle qui change les conditions dans lesquelles les activités du soir vont s’exécuter",
-      "normalized_claim": "L'altération modifie les conditions d'exécution des activités hors travail.",
-      "support_ids": [
-        "SUP-b0e0df5744f12f84",
-        "SUP-8a5f6783836697c0"
-      ]
-    },
-    {
-      "claim_id": "C019",
-      "locator": "sections[1].paragraphs[1]",
-      "start": 328,
-      "end": 434,
-      "claim_text": "c’est là le point d’application de la perturbation : les conditions d’exécution des activités hors travail",
-      "normalized_claim": "Le point d'application de la perturbation est les conditions d'exécution des activités hors travail.",
-      "support_ids": [
-        "SUP-8a5f6783836697c0",
-        "SUP-b0e0df5744f12f84"
-      ]
-    },
-    {
-      "claim_id": "C020",
       "locator": "sections[1].paragraphs[2]",
       "start": 195,
       "end": 325,
       "claim_text": "C’est ce détour par l’état de la personne, et non par le seul emploi du temps, qui sépare l’analyse d’une comptabilité des heures.",
-      "normalized_claim": "Conséquence interprétative : c'est la médiation par l'état de la personne qui distingue l'analyse d'un décompte horaire.",
+      "normalized_claim": "Le detour par l'etat de la personne distingue l'analyse d'une comptabilite des heures.",
       "support_ids": [
         "SUP-5acf6338e14133e4",
-        "SUP-b0e0df5744f12f84"
+        "SUP-7559335d6f1b5df8"
       ]
     },
     {
-      "claim_id": "C021",
+      "claim_id": "C019",
       "locator": "sections[1].paragraphs[3]",
       "start": 58,
       "end": 99,
       "claim_text": "Cet article ne rend compte d’aucune étude",
-      "normalized_claim": "Nature du texte : il n'est pas un compte rendu d'étude empirique.",
+      "normalized_claim": "L'article ne rend compte d'aucune etude.",
       "support_ids": [
         "SUP-1f1c435ed0732b58",
         "SUP-de1e1e9571b48742"
       ]
     },
     {
-      "claim_id": "C022",
+      "claim_id": "C020",
       "locator": "sections[1].paragraphs[3]",
       "start": 102,
       "end": 169,
       "claim_text": "il se donne lui-même, à la page 453, pour un texte de problématique",
-      "normalized_claim": "L'article se qualifie lui-même de texte de problématique au folio 453.",
+      "normalized_claim": "A la page 453 l'article se donne pour un texte de problematique.",
       "support_ids": [
         "SUP-1f1c435ed0732b58"
       ]
     },
     {
-      "claim_id": "C023",
+      "claim_id": "C021",
       "locator": "sections[1].paragraphs[3]",
       "start": 171,
       "end": 264,
       "claim_text": "c’est-à-dire un texte qui propose une façon de poser le problème et d’orienter les recherches",
-      "normalized_claim": "Glose de « texte de problématique » : propose une façon de poser le problème et d'orienter les recherches.",
+      "normalized_claim": "Glose : un texte de problematique propose une facon de poser le probleme et d'orienter les recherches.",
       "support_ids": [
         "SUP-1f1c435ed0732b58",
         "SUP-6bc4c99da6a6d037"
       ]
     },
     {
-      "claim_id": "C024",
+      "claim_id": "C022",
       "locator": "sections[1].paragraphs[3]",
       "start": 266,
       "end": 332,
       "claim_text": "Ses appuis sont des exemples empruntés, sans effectif ni protocole",
-      "normalized_claim": "Les appuis empiriques sont des exemples cités, sans effectif ni protocole.",
+      "normalized_claim": "Les appuis de l'article sont des exemples empruntes, sans effectif ni protocole.",
       "support_ids": [
         "SUP-1f1c435ed0732b58",
+        "SUP-de1e1e9571b48742"
+      ]
+    },
+    {
+      "claim_id": "C023",
+      "locator": "sections[1].paragraphs[3]",
+      "start": 335,
+      "end": 405,
+      "claim_text": "une étude de 1978 sur des opératrices des renseignements téléphoniques",
+      "normalized_claim": "Un des appuis est une etude de 1978 sur des operatrices des renseignements telephoniques.",
+      "support_ids": [
+        "SUP-de1e1e9571b48742"
+      ]
+    },
+    {
+      "claim_id": "C024",
+      "locator": "sections[1].paragraphs[3]",
+      "start": 407,
+      "end": 455,
+      "claim_text": "d’autres travaux des années 1970, dont les siens",
+      "normalized_claim": "Les autres appuis sont des travaux des annees 1970, dont ceux de Gadbois.",
+      "support_ids": [
         "SUP-de1e1e9571b48742"
       ]
     },
     {
       "claim_id": "C025",
       "locator": "sections[1].paragraphs[3]",
-      "start": 335,
-      "end": 405,
-      "claim_text": "une étude de 1978 sur des opératrices des renseignements téléphoniques",
-      "normalized_claim": "Identification d'un des appuis : une étude de 1978 sur des opératrices des renseignements téléphoniques.",
-      "support_ids": [
-        "SUP-de1e1e9571b48742"
-      ]
-    },
-    {
-      "claim_id": "C026",
-      "locator": "sections[1].paragraphs[3]",
-      "start": 407,
-      "end": 455,
-      "claim_text": "d’autres travaux des années 1970, dont les siens",
-      "normalized_claim": "Autres appuis : travaux des années 1970, dont ceux de l'auteur.",
-      "support_ids": [
-        "SUP-de1e1e9571b48742"
-      ]
-    },
-    {
-      "claim_id": "C027",
-      "locator": "sections[1].paragraphs[3]",
       "start": 457,
       "end": 517,
       "claim_text": "Le mécanisme en deux temps n’est donc pas un résultat mesuré",
-      "normalized_claim": "Statut épistémique : le mécanisme n'est pas présenté comme un résultat mesuré.",
+      "normalized_claim": "Le mecanisme en deux temps n'est pas un resultat mesure.",
       "support_ids": [
         "SUP-1f1c435ed0732b58",
         "SUP-de1e1e9571b48742"
       ]
     },
     {
-      "claim_id": "C028",
-      "locator": "sections[1].paragraphs[3]",
-      "start": 520,
-      "end": 582,
-      "claim_text": "c’est une façon de regarder, qui vaut par ce qu’elle fait voir",
-      "normalized_claim": "Statut positif attribué au mécanisme : une façon de regarder.",
+      "claim_id": "C026",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 0,
+      "end": 226,
+      "claim_text": "Toutes les recherches du domaine partent, écrit Gadbois, d’une même proposition de départ : les contraintes du travail altèrent l’état du travailleur, et « les effets se font sentir bien au-delà des seules heures de travail ».",
+      "normalized_claim": "Gadbois ecrit que toutes les recherches du domaine partent d'une meme proposition de depart, dont il cite un fragment.",
       "support_ids": [
-        "SUP-1f1c435ed0732b58"
+        "SUP-6bc4c99da6a6d037",
+        "SUP-de1e1e9571b48742"
+      ]
+    },
+    {
+      "claim_id": "C027",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 227,
+      "end": 249,
+      "claim_text": "Il ne la conteste pas.",
+      "normalized_claim": "Gadbois ne conteste pas cette proposition.",
+      "support_ids": [
+        "SUP-6bc4c99da6a6d037"
+      ]
+    },
+    {
+      "claim_id": "C028",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 250,
+      "end": 280,
+      "claim_text": "Il la juge trop peu spécifiée.",
+      "normalized_claim": "Gadbois juge cette proposition insuffisamment specifiee.",
+      "support_ids": [
+        "SUP-6bc4c99da6a6d037"
       ]
     },
     {
       "claim_id": "C029",
-      "locator": "sections[2].paragraphs[0]",
+      "locator": "sections[2].paragraphs[1]",
       "start": 0,
-      "end": 89,
-      "claim_text": "Toutes les recherches du domaine partent, écrit Gadbois, d’une même proposition de départ",
-      "normalized_claim": "Attribution : Gadbois écrit que toutes les études partent d'une même proposition de départ.",
+      "end": 204,
+      "claim_text": "Ce qu’il écarte explicitement, en revanche, c’est une autre conception : celle qui voit dans la vie hors travail une simple prolongation du travail, ou un modelage psychique de la personne par son métier.",
+      "normalized_claim": "Gadbois ecarte explicitement la conception de la simple prolongation ou du modelage psychique.",
       "support_ids": [
         "SUP-6bc4c99da6a6d037"
       ]
     },
     {
       "claim_id": "C030",
-      "locator": "sections[2].paragraphs[0]",
-      "start": 92,
-      "end": 149,
-      "claim_text": "les contraintes du travail altèrent l’état du travailleur",
-      "normalized_claim": "Contenu de cette proposition de départ.",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 205,
+      "end": 335,
+      "claim_text": "De cette conception il écrit, à la page 450, que « s’en tenir à une telle conception ne peut conduire qu’à une analyse tronquée ».",
+      "normalized_claim": "Citation de la page 450 sur l'analyse tronquee.",
       "support_ids": [
         "SUP-6bc4c99da6a6d037"
       ]
     },
     {
       "claim_id": "C031",
-      "locator": "sections[2].paragraphs[0]",
-      "start": 154,
-      "end": 225,
-      "claim_text": "« les effets se font sentir bien au-delà des seules heures de travail »",
-      "normalized_claim": "Citation verbatim rattachée à cette proposition de départ.",
-      "support_ids": [
-        "SUP-de1e1e9571b48742",
-        "SUP-6bc4c99da6a6d037"
-      ]
-    },
-    {
-      "claim_id": "C032",
-      "locator": "sections[2].paragraphs[0]",
-      "start": 227,
-      "end": 249,
-      "claim_text": "Il ne la conteste pas.",
-      "normalized_claim": "Gadbois ne rejette pas cette proposition.",
-      "support_ids": [
-        "SUP-6bc4c99da6a6d037"
-      ]
-    },
-    {
-      "claim_id": "C033",
-      "locator": "sections[2].paragraphs[0]",
-      "start": 250,
-      "end": 280,
-      "claim_text": "Il la juge trop peu spécifiée.",
-      "normalized_claim": "Gadbois la juge insuffisamment spécifiée.",
-      "support_ids": [
-        "SUP-6bc4c99da6a6d037"
-      ]
-    },
-    {
-      "claim_id": "C034",
-      "locator": "sections[2].paragraphs[1]",
-      "start": 0,
-      "end": 204,
-      "claim_text": "Ce qu’il écarte explicitement, en revanche, c’est une autre conception : celle qui voit dans la vie hors travail une simple prolongation du travail, ou un modelage psychique de la personne par son métier.",
-      "normalized_claim": "Attribution : la conception écartée est celle de la simple prolongation ou du modelage psychique.",
-      "support_ids": [
-        "SUP-6bc4c99da6a6d037"
-      ]
-    },
-    {
-      "claim_id": "C035",
-      "locator": "sections[2].paragraphs[1]",
-      "start": 205,
-      "end": 335,
-      "claim_text": "De cette conception il écrit, à la page 450, que « s’en tenir à une telle conception ne peut conduire qu’à une analyse tronquée ».",
-      "normalized_claim": "Citation verbatim située à la page 450.",
-      "support_ids": [
-        "SUP-6bc4c99da6a6d037"
-      ]
-    },
-    {
-      "claim_id": "C036",
       "locator": "sections[2].paragraphs[1]",
       "start": 336,
       "end": 440,
       "claim_text": "Sa thèse se tient entre les deux : elle nomme le chemin que la proposition commune laissait indéterminé.",
-      "normalized_claim": "Situation interprétative de la thèse entre la proposition commune et la conception écartée.",
+      "normalized_claim": "La these de Gadbois specifie le chemin laisse indetermine par la proposition commune.",
       "support_ids": [
         "SUP-6bc4c99da6a6d037",
-        "SUP-5acf6338e14133e4",
         "SUP-4e56118d98f599af"
       ]
     },
     {
-      "claim_id": "C037",
+      "claim_id": "C032",
       "locator": "sections[3].paragraphs[0]",
       "start": 0,
       "end": 56,
       "claim_text": "L’article ne s’arrête pas au constat de la perturbation.",
-      "normalized_claim": "L'article développe autre chose que le seul constat de perturbation.",
+      "normalized_claim": "L'article ne s'arrete pas au constat de la perturbation.",
       "support_ids": [
         "SUP-61f7f46f9a8d1d38"
       ]
     },
     {
-      "claim_id": "C038",
+      "claim_id": "C033",
       "locator": "sections[3].paragraphs[0]",
       "start": 57,
       "end": 164,
       "claim_text": "Aux pages 451 à 453, Gadbois développe ce que l’ensemble des activités fait de la perturbation qu’il reçoit",
-      "normalized_claim": "Localisation paginale du développement : pages 451 à 453.",
+      "normalized_claim": "Aux pages 451-453 Gadbois developpe ce que l'ensemble des activites fait de la perturbation.",
       "support_ids": [
         "SUP-61f7f46f9a8d1d38"
       ]
     },
     {
-      "claim_id": "C039",
+      "claim_id": "C034",
       "locator": "sections[3].paragraphs[0]",
-      "start": 169,
-      "end": 346,
-      "claim_text": "il le fait avec quatre notions : les compensations, leur coût, le déplacement de la contrainte d’une activité sur une autre, et les marges de tolérance dont cet ensemble dispose",
-      "normalized_claim": "Désignation des quatre notions employées dans ces pages.",
+      "start": 166,
+      "end": 321,
+      "claim_text": "et il le fait avec quatre notions : les compensations, leur coût, le déplacement de la contrainte d’une activité sur une autre, et les marges de tolérance.",
+      "normalized_claim": "Les quatre notions sont les compensations, leur cout, le deplacement de la contrainte d'une activite sur une autre, les marges de tolerance.",
       "support_ids": [
         "SUP-61f7f46f9a8d1d38"
       ]
     },
     {
-      "claim_id": "C040",
+      "claim_id": "C035",
       "locator": "sections[3].paragraphs[1]",
       "start": 228,
       "end": 267,
       "claim_text": "C’est ce que dit le mot de déplacement.",
-      "normalized_claim": "Désignation : le mot « déplacement » nomme le déplacement de la contrainte d'une activité sur une autre.",
+      "normalized_claim": "Le mot deplacement designe le passage de la contrainte d'une activite a une autre.",
       "support_ids": [
         "SUP-61f7f46f9a8d1d38"
       ]
     },
     {
-      "claim_id": "C041",
+      "claim_id": "C036",
       "locator": "sections[3].paragraphs[1]",
       "start": 268,
-      "end": 383,
-      "claim_text": "Ce que Gadbois met exactement sous chacune de ces notions, ces pages le portent, et c’est là qu’il faudra les lire.",
-      "normalized_claim": "Frontière documentaire : le contenu exact de ces notions est porté par les pages 451-453 et n'est pas exposé ici.",
+      "end": 347,
+      "claim_text": "Ce que Gadbois met exactement sous chacune de ces notions, ces pages le portent",
+      "normalized_claim": "Le contenu exact de ces notions est porte par les pages 451-453.",
       "support_ids": [
         "SUP-61f7f46f9a8d1d38"
       ]
     },
     {
-      "claim_id": "C042",
+      "claim_id": "C037",
       "locator": "sections[4].paragraphs[0]",
       "start": 0,
       "end": 297,
       "claim_text": "Gadbois énonce son programme à la première page : « Ce que nous voudrions montrer ici c’est que l’étude des emprises du travail sur la vie hors travail peut tirer profit d’un approfondissement de la notion d’asservissement, dans son acception la plus précise, dérivée de la théorie des systèmes ».",
-      "normalized_claim": "Citation verbatim du programme, située à la première page.",
+      "normalized_claim": "Citation verbatim du programme enonce a la premiere page.",
       "support_ids": [
         "SUP-6bc4c99da6a6d037",
-        "SUP-3a96e9a0fc83c319"
+        "SUP-7dae79d163dc03a1"
       ]
     },
     {
-      "claim_id": "C043",
+      "claim_id": "C038",
       "locator": "sections[4].paragraphs[0]",
       "start": 298,
       "end": 473,
       "claim_text": "Ce qui est revendiqué là est étroit : non pas la notion, qui n’est pas de lui et qu’il ne refonde pas, mais son application au rapport entre le travail et la vie hors travail.",
-      "normalized_claim": "Étendue de la revendication : l'application de la notion, non la notion elle-même.",
+      "normalized_claim": "Gadbois ne revendique pas la notion elle-meme mais son application au rapport travail / vie hors travail.",
       "support_ids": [
         "SUP-5cc1b3cf07b7d8ca",
-        "SUP-7dae79d163dc03a1",
-        "SUP-6bc4c99da6a6d037"
+        "SUP-7dae79d163dc03a1"
       ]
     },
     {
-      "claim_id": "C044",
+      "claim_id": "C039",
       "locator": "sections[4].paragraphs[1]",
       "start": 0,
       "end": 179,
       "claim_text": "La relation a par ailleurs une direction, que le titre de l’article inscrit : les conditions de travail y sont des facteurs d’asservissement du système des activités hors travail.",
-      "normalized_claim": "Le titre de l'article inscrit le sens de la relation.",
+      "normalized_claim": "Le titre de l'article inscrit la direction : conditions de travail comme facteurs d'asservissement du systeme des activites hors travail.",
       "support_ids": [
         "SUP-13fc38d141030f22",
-        "SUP-57c56051fa048589",
         "SUP-9d415535709038e1"
       ]
     },
     {
-      "claim_id": "C045",
+      "claim_id": "C040",
       "locator": "sections[4].paragraphs[1]",
       "start": 180,
       "end": 230,
       "claim_text": "Ce qui est asservi, c’est cet ensemble d’activités",
-      "normalized_claim": "Le terme asservi est le système des activités hors travail.",
+      "normalized_claim": "Ce qui est asservi est l'ensemble des activites hors travail.",
       "support_ids": [
-        "SUP-13fc38d141030f22",
-        "SUP-57c56051fa048589"
-      ]
-    },
-    {
-      "claim_id": "C046",
-      "locator": "sections[4].paragraphs[1]",
-      "start": 235,
-      "end": 285,
-      "claim_text": "c’est ce sens de la relation que l’article examine",
-      "normalized_claim": "L'article examine ce sens de la relation.",
-      "support_ids": [
-        "SUP-6bc4c99da6a6d037",
-        "SUP-4e56118d98f599af",
         "SUP-13fc38d141030f22"
       ]
     },
     {
-      "claim_id": "C047",
+      "claim_id": "C041",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 235,
+      "end": 286,
+      "claim_text": "c’est ce sens de la relation que l’article examine.",
+      "normalized_claim": "C'est ce sens de la relation que l'article examine.",
+      "support_ids": [
+        "SUP-4e56118d98f599af",
+        "SUP-6bc4c99da6a6d037"
+      ]
+    },
+    {
+      "claim_id": "C042",
       "locator": "sections[4].paragraphs[1]",
       "start": 287,
-      "end": 409,
-      "claim_text": "Ce que le mot désigne exactement dans le domaine dont il vient, l’article ne le dit pas et ne cite aucun texte qui le fixe",
-      "normalized_claim": "L'article ne fixe pas le sens technique du terme et ne cite aucune source de son domaine d'origine.",
+      "end": 384,
+      "claim_text": "Quant au sens exact que ce mot a dans le domaine dont il vient, l’article n’en cite aucune source",
+      "normalized_claim": "L'article ne cite aucune source pour le sens du mot dans son domaine d'origine.",
       "support_ids": [
         "SUP-7dae79d163dc03a1"
       ]
     },
     {
-      "claim_id": "C048",
+      "claim_id": "C043",
       "locator": "sections[4].paragraphs[1]",
-      "start": 412,
-      "end": 508,
+      "start": 387,
+      "end": 483,
       "claim_text": "c’est cette littérature qui le porte, et il faudra la lire pour mesurer ce que l’emprunt apporte",
-      "normalized_claim": "Frontière documentaire : le sens technique est porté par une littérature non ouverte.",
+      "normalized_claim": "Le sens technique du mot est porte par cette litterature, qui reste a lire.",
       "support_ids": [
         "SUP-7dae79d163dc03a1"
+      ]
+    },
+    {
+      "claim_id": "C044",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 0,
+      "end": 41,
+      "claim_text": "Gadbois ne prétend pas découvrir le fait.",
+      "normalized_claim": "Gadbois ne pretend pas decouvrir le fait.",
+      "support_ids": [
+        "SUP-6bc4c99da6a6d037",
+        "SUP-5cc1b3cf07b7d8ca"
+      ]
+    },
+    {
+      "claim_id": "C045",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 42,
+      "end": 134,
+      "claim_text": "Il le dit ancien et toujours actuel, « pour n’être pas nouveau n’en reste pas moins actuel »",
+      "normalized_claim": "Gadbois dit le fait ancien et toujours actuel, avec citation.",
+      "support_ids": [
+        "SUP-6bc4c99da6a6d037"
+      ]
+    },
+    {
+      "claim_id": "C046",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 136,
+      "end": 300,
+      "claim_text": "et il le rapporte à Marx, qu’il cite pour deux expressions, « l’idée et la matière d’une pathologie industrielle » et le « rabougrissement du corps et de l’esprit »",
+      "normalized_claim": "Gadbois rapporte le constat a Marx, cite pour deux expressions.",
+      "support_ids": [
+        "SUP-9663a0a1373421a4",
+        "SUP-6bc4c99da6a6d037",
+        "SUP-5cc1b3cf07b7d8ca"
+      ]
+    },
+    {
+      "claim_id": "C047",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 302,
+      "end": 365,
+      "claim_text": "puis à Friedmann, cité pour « l’oppression de la personnalité »",
+      "normalized_claim": "Gadbois cite Friedmann pour l'oppression de la personnalite.",
+      "support_ids": [
+        "SUP-9663a0a1373421a4",
+        "SUP-6bc4c99da6a6d037"
+      ]
+    },
+    {
+      "claim_id": "C048",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 367,
+      "end": 420,
+      "claim_text": "Ces formules nomment un dommage subi par la personne.",
+      "normalized_claim": "Les formules citees de Marx et Friedmann nomment un dommage subi par la personne.",
+      "support_ids": [
+        "SUP-6bc4c99da6a6d037",
+        "SUP-9663a0a1373421a4"
       ]
     },
     {
       "claim_id": "C049",
       "locator": "sections[5].paragraphs[0]",
-      "start": 0,
-      "end": 41,
-      "claim_text": "Gadbois ne prétend pas découvrir le fait.",
-      "normalized_claim": "Gadbois ne revendique pas la découverte du fait social lui-même.",
+      "start": 421,
+      "end": 517,
+      "claim_text": "Celle qu’il propose nomme autre chose, un ensemble d’activités qui se réorganise sous contrainte",
+      "normalized_claim": "La notion proposee par Gadbois nomme un ensemble d'activites qui se reorganise sous contrainte.",
       "support_ids": [
         "SUP-6bc4c99da6a6d037",
-        "SUP-9663a0a1373421a4"
+        "SUP-de1e1e9571b48742",
+        "SUP-61f7f46f9a8d1d38"
       ]
     },
     {
       "claim_id": "C050",
       "locator": "sections[5].paragraphs[0]",
-      "start": 42,
-      "end": 134,
-      "claim_text": "Il le dit ancien et toujours actuel, « pour n’être pas nouveau n’en reste pas moins actuel »",
-      "normalized_claim": "Citation verbatim sur l'ancienneté et l'actualité du fait.",
+      "start": 519,
+      "end": 620,
+      "claim_text": "et ce changement de vocabulaire est ce qu’il donne pour neuf : non pas le constat, mais l’instrument.",
+      "normalized_claim": "Ce que Gadbois donne pour neuf est l'instrument et non le constat.",
       "support_ids": [
-        "SUP-6bc4c99da6a6d037"
+        "SUP-6bc4c99da6a6d037",
+        "SUP-de1e1e9571b48742"
       ]
     },
     {
       "claim_id": "C051",
-      "locator": "sections[5].paragraphs[0]",
-      "start": 139,
-      "end": 300,
-      "claim_text": "il le rapporte à Marx, qu’il cite pour deux expressions, « l’idée et la matière d’une pathologie industrielle » et le « rabougrissement du corps et de l’esprit »",
-      "normalized_claim": "Généalogie donnée par l'article : Marx cité pour deux expressions.",
-      "support_ids": [
-        "SUP-9663a0a1373421a4",
-        "SUP-6bc4c99da6a6d037",
-        "SUP-5cc1b3cf07b7d8ca"
-      ]
-    },
-    {
-      "claim_id": "C052",
-      "locator": "sections[5].paragraphs[0]",
-      "start": 302,
-      "end": 366,
-      "claim_text": "puis à Friedmann, cité pour « l’oppression de la personnalité ».",
-      "normalized_claim": "Généalogie donnée par l'article : Friedmann cité pour une expression.",
-      "support_ids": [
-        "SUP-9663a0a1373421a4",
-        "SUP-6bc4c99da6a6d037"
-      ]
-    },
-    {
-      "claim_id": "C053",
-      "locator": "sections[5].paragraphs[0]",
-      "start": 367,
-      "end": 420,
-      "claim_text": "Ces formules nomment un dommage subi par la personne.",
-      "normalized_claim": "Lecture des formules citées : elles désignent un dommage subi par la personne.",
-      "support_ids": [
-        "SUP-9663a0a1373421a4",
-        "SUP-6bc4c99da6a6d037"
-      ]
-    },
-    {
-      "claim_id": "C054",
-      "locator": "sections[5].paragraphs[0]",
-      "start": 421,
-      "end": 517,
-      "claim_text": "Celle qu’il propose nomme autre chose, un ensemble d’activités qui se réorganise sous contrainte",
-      "normalized_claim": "Ce que nomme le vocabulaire proposé par Gadbois : un ensemble d'activités qui se réorganise.",
-      "support_ids": [
-        "SUP-6bc4c99da6a6d037",
-        "SUP-61f7f46f9a8d1d38",
-        "SUP-4e56118d98f599af"
-      ]
-    },
-    {
-      "claim_id": "C055",
-      "locator": "sections[5].paragraphs[0]",
-      "start": 522,
-      "end": 619,
-      "claim_text": "ce changement de vocabulaire est ce qu’il donne pour neuf : non pas le constat, mais l’instrument",
-      "normalized_claim": "Attribution : la nouveauté revendiquée porte sur l'instrument, pas sur le constat.",
-      "support_ids": [
-        "SUP-6bc4c99da6a6d037",
-        "SUP-9663a0a1373421a4",
-        "SUP-7dae79d163dc03a1"
-      ]
-    },
-    {
-      "claim_id": "C056",
       "locator": "sections[5].paragraphs[1]",
       "start": 65,
       "end": 200,
       "claim_text": "En 1980, il renvoie à son propre article de 1975, « L’analyse des emprises réciproques de la vie de travail et de la vie hors travail »",
-      "normalized_claim": "Fait bibliographique : renvoi, en 1980, à un article de 1975 dont le titre est donné.",
-      "support_ids": [
-        "SUP-6bc4c99da6a6d037",
-        "SUP-9663a0a1373421a4",
-        "SUP-5cc1b3cf07b7d8ca"
-      ]
-    },
-    {
-      "claim_id": "C057",
-      "locator": "sections[5].paragraphs[1]",
-      "start": 202,
-      "end": 296,
-      "claim_text": "pour « des difficultés et des insuffisances que nous avons eu l’occasion d’analyser ailleurs »",
-      "normalized_claim": "Citation verbatim du motif du renvoi.",
-      "support_ids": [
-        "SUP-6bc4c99da6a6d037"
-      ]
-    },
-    {
-      "claim_id": "C058",
-      "locator": "sections[5].paragraphs[1]",
-      "start": 298,
-      "end": 432,
-      "claim_text": "Ce titre nomme des emprises réciproques, donc aussi le sens inverse : ce que la vie hors travail fait, en retour, à la vie de travail.",
-      "normalized_claim": "Inférence tirée du seul titre de 1975, sans énoncé sur son contenu.",
+      "normalized_claim": "En 1980 Gadbois renvoie a son propre article de 1975, dont le titre est cite.",
       "support_ids": [
         "SUP-6bc4c99da6a6d037",
         "SUP-9663a0a1373421a4"
       ]
     },
     {
-      "claim_id": "C059",
+      "claim_id": "C052",
       "locator": "sections[5].paragraphs[1]",
-      "start": 433,
-      "end": 490,
+      "start": 202,
+      "end": 297,
+      "claim_text": "pour « des difficultés et des insuffisances que nous avons eu l’occasion d’analyser ailleurs ».",
+      "normalized_claim": "Le motif du renvoi est cite verbatim depuis l'article de 1980.",
+      "support_ids": [
+        "SUP-6bc4c99da6a6d037"
+      ]
+    },
+    {
+      "claim_id": "C053",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 298,
+      "end": 355,
       "claim_text": "Ces pages du Bulletin du C.E.R.P. attendent leur lecteur.",
-      "normalized_claim": "Métadonnée du support de 1975 (Bulletin du C.E.R.P.) et constat qu'il n'a pas été ouvert.",
+      "normalized_claim": "L'article de 1975 a paru au Bulletin du C.E.R.P. et n'a pas ete ouvert.",
       "support_ids": [
         "SUP-9663a0a1373421a4",
         "SUP-6bc4c99da6a6d037"
