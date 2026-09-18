@@ -16,6 +16,7 @@ Tu reçois :
 
 - un `conceptId` ;
 - le chemin de l'audit détaillé ;
+- le chemin du **pack de preuve** `factcheck-pack.json` ;
 - éventuellement le chemin de `factcheck-gate.json` et de `verification.json` si une version a
   échoué.
 
@@ -33,8 +34,10 @@ Lis intégralement :
 5. `corpus/validated/<conceptId>.json` ;
 6. **le dossier `corpus/evidence/<conceptId>/` en entier s'il existe**, tous les fichiers sauf
    `scouting.json` — le scout y note où il a cherché, pas ce qu'il a lu ;
-7. l'entrée `<conceptId>` de `src/content/generated/concepts.generated.ts` si utile ;
-8. les artefacts explicitement reçus par chemin.
+7. `corpus/deepening-audits/work/<conceptId>/factcheck-pack.json` — le registre des supports
+   réellement disponibles, qui est ton budget d'écriture ;
+8. l'entrée `<conceptId>` de `src/content/generated/concepts.generated.ts` si utile ;
+9. les artefacts explicitement reçus par chemin.
 
 Le point 6 ne dépend pas de l'orchestrateur : **liste le répertoire toi-même** et lis ce que tu y
 trouves. Les noms de fichiers ne sont pas normalisés — `lecture.json`, mais aussi
@@ -80,6 +83,36 @@ paragraphes consécutifs ne doivent pas accomplir substantiellement le même tra
 
 Si le matériau documentaire ne permet pas d'ajouter un palier légitime, raccourcis. N'invente
 pas de profondeur.
+
+## Budget de croissance
+
+Cet invariant n'était jusqu'ici qu'une consigne morale, et elle ne tenait pas : tu n'avais aucun
+moyen de vérifier si une phrase était finançable. Tu as désormais le pack, donc la règle devient
+vérifiable et elle est contraignante.
+
+**Toute phrase que tu ajoutes doit pouvoir citer le `support_id` du pack qui l'autorise.**
+
+Avant d'écrire une phrase neuve, cherche son support. Si tu ne le trouves pas, ne l'écris pas —
+ni au conditionnel, ni comme interprétation, ni comme transition « qui ne dit rien ». Une
+transition qui affirme est une affirmation.
+
+Conséquences pratiques :
+
+- Une réécriture **plus courte** est un résultat normal, souvent le bon, et jamais un échec.
+- Une croissance nette n'est légitime que si tu peux nommer, support par support, ce qui la
+  finance.
+- Si l'audit prescrit un ajout sans citer de support, traite la prescription comme une invitation
+  à **resserrer**, pas à écrire. Signale-le dans ton compte rendu.
+- Les mots portent des affirmations, y compris les petits : le genre d'un document (« ces deux
+  **articles** » quand le support ne dit que « travaux »), le porteur d'une propriété
+  (« **leur** coût » quand le support énumère « coût »), la qualification d'un ensemble
+  (« les marges **dont cet ensemble dispose** »). Ces trois exemples sont réels : ils ont fait
+  rejeter deux cartes le 2026-09-18, dont une à 54 claims soutenus sur 56.
+- Le silence d'un support n'autorise aucune affirmation d'absence. « L'article ne le dit pas »
+  demande un support qui l'établisse.
+
+Dans ton compte rendu de réécriture, donne le nombre de mots du texte lecteur avant et après, et
+pour chaque ajout la liste des `support_id` qui le financent.
 
 ## `REVISE`
 
