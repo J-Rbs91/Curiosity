@@ -1,6 +1,6 @@
 {
   "concept_id": "force-du-besoin-de-developpement",
-  "candidate_sha256": "e0f8cc4618f924236b5bf41403c9ec7927ce77df1e1c35e2e1458097961fff20",
+  "candidate_sha256": "c955e8f8692363b8954b2998df95f8ff18e4341add24f945e9162d5d320fb034",
   "paragraphs": [
     {
       "locator": "lead[0]",
@@ -70,37 +70,39 @@
       "start": 0,
       "end": 83,
       "claim_text": "Il existe une autre lecture, et elle vient de ceux-là mêmes qui ont écrit la règle.",
-      "normalized_claim": "L'autre lecture proposée provient des auteurs de la théorie eux-mêmes.",
+      "normalized_claim": "La nuance provient des auteurs du rapport eux-memes.",
       "support_ids": [
+        "SUP-f77e516d2d9d873b",
         "SUP-8463ec693f1d9f83",
-        "SUP-48c05c222a4125cf",
-        "SUP-bb17d922c44f1d5b"
+        "SUP-48c05c222a4125cf"
       ]
     },
     {
       "claim_id": "C002",
       "locator": "lead[1]",
       "start": 84,
-      "end": 173,
-      "claim_text": "Dans un rapport technique déposé à Yale en mai 1974, J. Richard Hackman et Greg R. Oldham",
-      "normalized_claim": "Attribution bibliographique : rapport technique, Yale, mai 1974, par Hackman et Oldham.",
+      "end": 135,
+      "claim_text": "Dans un rapport technique déposé à Yale en mai 1974",
+      "normalized_claim": "Metadonnee : rapport technique, Yale, mai 1974.",
       "support_ids": [
         "SUP-c604a94416e464a0",
         "SUP-46db82f6ac3e7439",
-        "SUP-3c6ab3fc8c2e70c6",
-        "SUP-dffac9bc8f76cdd0"
+        "SUP-28a4fa2fe9254486"
       ]
     },
     {
       "claim_id": "C003",
       "locator": "lead[1]",
-      "start": 174,
-      "end": 273,
-      "claim_text": "prennent la peine d’écrire que ce qu’ils avancent ne vaut pas de la même manière pour tout le monde",
-      "normalized_claim": "Les auteurs écrivent explicitement que leur théorie ne vaut pas identiquement pour tous.",
+      "start": 137,
+      "end": 274,
+      "claim_text": "J. Richard Hackman et Greg R. Oldham prennent la peine d’écrire que ce qu’ils avancent ne vaut pas de la même manière pour tout le monde.",
+      "normalized_claim": "Hackman et Oldham ecrivent eux-memes que leur theorie ne vaut pas identiquement pour tous.",
       "support_ids": [
+        "SUP-3c6ab3fc8c2e70c6",
+        "SUP-dffac9bc8f76cdd0",
         "SUP-48c05c222a4125cf",
-        "SUP-8463ec693f1d9f83"
+        "SUP-8463ec693f1d9f83",
+        "SUP-f2b12e5db86232a5"
       ]
     },
     {
@@ -109,11 +111,10 @@
       "start": 352,
       "end": 445,
       "claim_text": "c’est un cas que la règle prévoit, et dont elle dit par quoi il se distingue des trois autres",
-      "normalized_claim": "Le cas divergent est prévu par la théorie, qui en indique le facteur de distinction.",
+      "normalized_claim": "La theorie prevoit ce cas et indique ce qui le distingue (la valeur accordee au developpement).",
       "support_ids": [
         "SUP-0f85a4947c2d79b5",
-        "SUP-0c5c2e55511ca07c",
-        "SUP-48c05c222a4125cf"
+        "SUP-0c5c2e55511ca07c"
       ]
     },
     {
@@ -122,11 +123,11 @@
       "start": 0,
       "end": 57,
       "claim_text": "La page 4 du rapport tient les deux versants côte à côte.",
-      "normalized_claim": "Les deux cas de figure sont exposés côte à côte à la page 4 du rapport.",
+      "normalized_claim": "La page 4 contient les deux enonces (reponse positive / anxiete possible).",
       "support_ids": [
         "SUP-0f85a4947c2d79b5",
-        "SUP-ea0314366340c75b",
-        "SUP-43cb5037f47995be"
+        "SUP-74f9a53ac00c7d14",
+        "SUP-ea0314366340c75b"
       ]
     },
     {
@@ -135,7 +136,7 @@
       "start": 58,
       "end": 290,
       "claim_text": "Les personnes qui valorisent fortement l’accomplissement et le développement personnels devraient répondre très positivement à ce que les auteurs appellent « a job high in motivating potential », un emploi à fort potentiel motivant.",
-      "normalized_claim": "Selon le texte, les personnes valorisant fortement accomplissement et développement devraient répondre très positivement à un emploi à fort potentiel motivant.",
+      "normalized_claim": "Contenu p.4 : forte valorisation -> reponse tres positive a un emploi a fort potentiel motivant ; expression citee.",
       "support_ids": [
         "SUP-0f85a4947c2d79b5",
         "SUP-4e4eaf096d124277"
@@ -145,128 +146,115 @@
       "claim_id": "C007",
       "locator": "sections[0].paragraphs[0]",
       "start": 291,
-      "end": 330,
-      "claim_text": "Les autres, écrivent-ils aussitôt après",
-      "normalized_claim": "La phrase sur les autres personnes suit immédiatement la précédente dans le rapport.",
+      "end": 495,
+      "claim_text": "Les autres, écrivent-ils aussitôt après : « individuals who do not value personal growth and accomplishment may find such a job anxiety-arousing », elles peuvent trouver un tel emploi générateur d’anxiété",
+      "normalized_claim": "Citation verbatim de la phrase suivante de la p.4 et sa traduction.",
       "support_ids": [
-        "SUP-0f85a4947c2d79b5"
+        "SUP-0f85a4947c2d79b5",
+        "SUP-4e4eaf096d124277"
       ]
     },
     {
       "claim_id": "C008",
       "locator": "sections[0].paragraphs[0]",
-      "start": 333,
-      "end": 437,
-      "claim_text": "« individuals who do not value personal growth and accomplishment may find such a job anxiety-arousing »",
-      "normalized_claim": "Citation verbatim anglaise de la page 4.",
+      "start": 497,
+      "end": 572,
+      "claim_text": "et s’y sentir inconfortablement étirées, le mot employé étant « stretched »",
+      "normalized_claim": "La meme phrase ajoute may be uncomfortably \"stretched\" by it.",
       "support_ids": [
-        "SUP-0f85a4947c2d79b5",
-        "SUP-4e4eaf096d124277"
+        "SUP-4e4eaf096d124277",
+        "SUP-4e810e6eac5ba350"
       ]
     },
     {
       "claim_id": "C009",
-      "locator": "sections[0].paragraphs[0]",
-      "start": 439,
-      "end": 572,
-      "claim_text": "elles peuvent trouver un tel emploi générateur d’anxiété, et s’y sentir inconfortablement étirées, le mot employé étant « stretched »",
-      "normalized_claim": "Traduction du passage et identification du mot anglais « stretched ».",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 76,
+      "end": 247,
+      "claim_text": "le second cas n’est pas une version affaiblie du premier : ce n’est pas un peu moins de motivation, c’est un inconfort d’une autre nature, qui peut aller jusqu’à l’anxiété",
+      "normalized_claim": "Lecture derivee : le second enonce porte un inconfort d'une autre nature, pouvant aller a l'anxiete.",
       "support_ids": [
-        "SUP-4e4eaf096d124277",
         "SUP-0f85a4947c2d79b5",
-        "SUP-5bd45cc269abd08e"
+        "SUP-4e4eaf096d124277"
       ]
     },
     {
       "claim_id": "C010",
       "locator": "sections[0].paragraphs[1]",
-      "start": 76,
-      "end": 247,
-      "claim_text": "le second cas n’est pas une version affaiblie du premier : ce n’est pas un peu moins de motivation, c’est un inconfort d’une autre nature, qui peut aller jusqu’à l’anxiété",
-      "normalized_claim": "Le second cas est d'une autre nature que le premier, pas un degré moindre de motivation.",
-      "support_ids": [
-        "SUP-0f85a4947c2d79b5",
-        "SUP-4e4eaf096d124277"
-      ]
-    },
-    {
-      "claim_id": "C011",
-      "locator": "sections[0].paragraphs[1]",
       "start": 277,
       "end": 363,
       "claim_text": "les auteurs écrivent que ces personnes peuvent éprouver cela, non qu’elles l’éprouvent",
-      "normalized_claim": "Le texte emploie un modal (« may ») et non un indicatif.",
+      "normalized_claim": "Le texte emploie may, pas un present d'etat.",
       "support_ids": [
         "SUP-4e4eaf096d124277",
         "SUP-0f85a4947c2d79b5"
       ]
     },
     {
-      "claim_id": "C012",
+      "claim_id": "C011",
       "locator": "sections[0].paragraphs[1]",
       "start": 365,
       "end": 427,
       "claim_text": "Une possibilité est ouverte, rien n’est annoncé comme certain.",
-      "normalized_claim": "L'énoncé ouvre une possibilité sans affirmer une certitude.",
+      "normalized_claim": "Le modal ouvre une possibilite sans certitude.",
       "support_ids": [
         "SUP-4e4eaf096d124277"
       ]
     },
     {
-      "claim_id": "C013",
+      "claim_id": "C012",
       "locator": "sections[0].paragraphs[1]",
       "start": 428,
       "end": 628,
       "claim_text": "Et ce qui change d’un cas à l’autre n’est pas l’emploi, le même dans les deux phrases : c’est la valeur que la personne accorde à l’accomplissement et au développement qu’un travail peut lui apporter.",
-      "normalized_claim": "Dans les deux phrases, l'emploi est le même ; ce qui varie est la valeur accordée par la personne à l'accomplissement et au développement.",
+      "normalized_claim": "Dans les deux phrases de la p.4 l'emploi est le meme (such a job = a job high in motivating potential) ; ce qui varie est la valeur accordee.",
       "support_ids": [
-        "SUP-0f85a4947c2d79b5",
-        "SUP-4e4eaf096d124277"
+        "SUP-4e4eaf096d124277",
+        "SUP-0f85a4947c2d79b5"
+      ]
+    },
+    {
+      "claim_id": "C013",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 0,
+      "end": 43,
+      "claim_text": "Le nom même de cette idée parle d’une force",
+      "normalized_claim": "Le nom du concept contient strength.",
+      "support_ids": [
+        "SUP-0c5c2e55511ca07c",
+        "SUP-f77e516d2d9d873b"
       ]
     },
     {
       "claim_id": "C014",
       "locator": "sections[1].paragraphs[0]",
-      "start": 0,
-      "end": 75,
-      "claim_text": "Le nom même de cette idée parle d’une force, et le mot n’est pas décoratif.",
-      "normalized_claim": "Le nom du concept contient le mot « force ».",
+      "start": 76,
+      "end": 227,
+      "claim_text": "Ce qui sépare la quatrième personne des trois autres n’est pas un goût qu’elle aurait ou n’aurait pas : c’est quelque chose qui se compte en intensité.",
+      "normalized_claim": "Le facteur differenciant est une intensite, non une preference binaire.",
       "support_ids": [
-        "SUP-b35f03cc5cc4a115",
-        "SUP-0c5c2e55511ca07c",
+        "SUP-c29c26f776666b70",
         "SUP-f77e516d2d9d873b"
       ]
     },
     {
       "claim_id": "C015",
       "locator": "sections[1].paragraphs[0]",
-      "start": 76,
-      "end": 227,
-      "claim_text": "Ce qui sépare la quatrième personne des trois autres n’est pas un goût qu’elle aurait ou n’aurait pas : c’est quelque chose qui se compte en intensité.",
-      "normalized_claim": "Le facteur distinctif est une grandeur d'intensité, non une préférence binaire.",
-      "support_ids": [
-        "SUP-c29c26f776666b70",
-        "SUP-0c5c2e55511ca07c"
-      ]
-    },
-    {
-      "claim_id": "C016",
-      "locator": "sections[1].paragraphs[0]",
       "start": 228,
       "end": 383,
       "claim_text": "Décrivant ce que leur questionnaire capte, les auteurs parlent de « the strength of the respondent’s desire », la force du désir de la personne qui répond.",
-      "normalized_claim": "Les auteurs décrivent ce que le questionnaire capte par l'expression « the strength of the respondent's desire ».",
+      "normalized_claim": "Citation : le JDS capte the strength of the respondent's desire.",
       "support_ids": [
         "SUP-c29c26f776666b70"
       ]
     },
     {
-      "claim_id": "C017",
+      "claim_id": "C016",
       "locator": "sections[1].paragraphs[0]",
       "start": 384,
       "end": 491,
       "claim_text": "Le besoin dont il s’agit porte chez eux le nom de growth need strength, la force du besoin de développement",
-      "normalized_claim": "Le nom du concept chez les auteurs est « growth need strength ».",
+      "normalized_claim": "Le concept s'appelle growth need strength chez Hackman et Oldham.",
       "support_ids": [
         "SUP-0c5c2e55511ca07c",
         "SUP-f77e516d2d9d873b",
@@ -274,70 +262,85 @@
       ]
     },
     {
-      "claim_id": "C018",
+      "claim_id": "C017",
       "locator": "sections[1].paragraphs[0]",
       "start": 493,
       "end": 557,
       "claim_text": "et c’est bien la force, non la simple présence, qui y est nommée",
-      "normalized_claim": "Le nom désigne la force du besoin, pas sa seule présence.",
+      "normalized_claim": "Le nom designe la force du besoin, non sa presence.",
       "support_ids": [
         "SUP-0c5c2e55511ca07c",
         "SUP-c29c26f776666b70"
       ]
     },
     {
-      "claim_id": "C019",
+      "claim_id": "C018",
       "locator": "sections[1].paragraphs[1]",
       "start": 0,
       "end": 145,
       "claim_text": "On peut alors relire autrement les deux phrases de la page 4 : moins comme deux espèces de personnes que comme les deux bouts d’une même échelle.",
-      "normalized_claim": "Lecture possible proposée : les deux phrases de la p. 4 comme extrémités d'une échelle plutôt que comme deux catégories.",
+      "normalized_claim": "Lecture proposee : les deux phrases de la p.4 comme extremites d'une echelle.",
       "support_ids": [
         "SUP-0f85a4947c2d79b5",
-        "SUP-c29c26f776666b70"
+        "SUP-c29c26f776666b70",
+        "SUP-0c5c2e55511ca07c"
       ]
     },
     {
-      "claim_id": "C020",
+      "claim_id": "C019",
       "locator": "sections[1].paragraphs[1]",
       "start": 207,
       "end": 343,
       "claim_text": "elle devient de savoir avec quelle force ce besoin est présent chez quelqu’un, ce dont un questionnaire peut au moins chercher la mesure",
-      "normalized_claim": "La question pertinente est l'intensité du besoin, que le questionnaire cherche à mesurer.",
+      "normalized_claim": "La question devient l'intensite du besoin, que le questionnaire cherche a mesurer.",
       "support_ids": [
-        "SUP-c29c26f776666b70"
+        "SUP-c29c26f776666b70",
+        "SUP-f77e516d2d9d873b"
       ]
     },
     {
-      "claim_id": "C021",
+      "claim_id": "C020",
       "locator": "sections[2].paragraphs[0]",
       "start": 0,
       "end": 89,
       "claim_text": "Les deux phrases de la page 4 relient un emploi à la réponse de la personne qui l’occupe.",
-      "normalized_claim": "Les deux phrases de la p. 4 mettent en rapport un emploi et la réponse de son titulaire.",
+      "normalized_claim": "Les deux phrases de la p.4 mettent en rapport un emploi et la reponse de son titulaire.",
       "support_ids": [
         "SUP-0f85a4947c2d79b5",
         "SUP-4e4eaf096d124277"
       ]
     },
     {
-      "claim_id": "C022",
+      "claim_id": "C021",
       "locator": "sections[2].paragraphs[0]",
       "start": 90,
       "end": 151,
       "claim_text": "Le rapport parle au pluriel des relations que la théorie pose",
-      "normalized_claim": "Le rapport évoque au pluriel les relations spécifiées par la théorie.",
+      "normalized_claim": "Le rapport ecrit the other relationships specified by the theory.",
       "support_ids": [
-        "SUP-0c5c2e55511ca07c"
+        "SUP-0c5c2e55511ca07c",
+        "SUP-665c8b51b107b031"
       ]
     },
     {
-      "claim_id": "C023",
+      "claim_id": "C022",
       "locator": "sections[2].paragraphs[0]",
       "start": 153,
       "end": 232,
       "claim_text": "et c’est là que le besoin de développement intervient, à une place particulière",
-      "normalized_claim": "Le besoin de développement intervient à une place spécifique dans ce dispositif de relations.",
+      "normalized_claim": "Le besoin de developpement occupe une place specifique parmi ces relations.",
+      "support_ids": [
+        "SUP-0c5c2e55511ca07c",
+        "SUP-afb859d12069adea"
+      ]
+    },
+    {
+      "claim_id": "C023",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 0,
+      "end": 182,
+      "claim_text": "C’est cette place exactement que les auteurs lui donnent : « Therefore, growth need strength is shown in Figure 1 as a moderator of the other relationships specified by the theory. »",
+      "normalized_claim": "Citation verbatim de la phrase de la p.4 sur la Figure 1 et le moderateur.",
       "support_ids": [
         "SUP-0c5c2e55511ca07c",
         "SUP-665c8b51b107b031"
@@ -346,69 +349,72 @@
     {
       "claim_id": "C024",
       "locator": "sections[2].paragraphs[1]",
-      "start": 0,
-      "end": 182,
-      "claim_text": "C’est cette place exactement que les auteurs lui donnent : « Therefore, growth need strength is shown in Figure 1 as a moderator of the other relationships specified by the theory. »",
-      "normalized_claim": "Citation verbatim attribuée aux auteurs : growth need strength présenté en Figure 1 comme modérateur.",
-      "support_ids": [
-        "SUP-0c5c2e55511ca07c"
-      ]
-    },
-    {
-      "claim_id": "C025",
-      "locator": "sections[2].paragraphs[1]",
       "start": 183,
       "end": 348,
       "claim_text": "Dans leur schéma, il ne figure donc pas comme un maillon de plus dans la chaîne, en amont ou en aval, mais en travers des relations que la théorie pose par ailleurs.",
-      "normalized_claim": "Dans la figure, le besoin n'est pas un terme de la chaîne causale mais un modérateur des relations posées.",
+      "normalized_claim": "Dans la Figure 1, growth need strength est moderateur et non maillon de la chaine.",
       "support_ids": [
         "SUP-0c5c2e55511ca07c",
         "SUP-665c8b51b107b031"
       ]
     },
     {
-      "claim_id": "C026",
+      "claim_id": "C025",
       "locator": "sections[3].paragraphs[0]",
       "start": 0,
       "end": 63,
       "claim_text": "Cette clause n’est pas une précaution glissée en fin de volume.",
-      "normalized_claim": "La clause ne se trouve pas en fin d'ouvrage.",
+      "normalized_claim": "La clause n'est pas en fin de rapport : elle est p.4.",
       "support_ids": [
         "SUP-74f9a53ac00c7d14",
-        "SUP-ea0314366340c75b"
+        "SUP-43cb5037f47995be"
+      ]
+    },
+    {
+      "claim_id": "C026",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 64,
+      "end": 216,
+      "claim_text": "La voici, telle qu’on peut la rendre en français : « On n’attend pas de la théorie qu’elle « marche » avec la même efficacité pour tous les individus. »",
+      "normalized_claim": "Traduction francaise de la phrase citee, donnee comme rendu du passage anglais.",
+      "support_ids": [
+        "SUP-8463ec693f1d9f83",
+        "SUP-76d11f542691c5ac",
+        "SUP-520c61d935611e51",
+        "SUP-bb17d922c44f1d5b",
+        "SUP-48c05c222a4125cf"
       ]
     },
     {
       "claim_id": "C027",
       "locator": "sections[3].paragraphs[0]",
-      "start": 64,
-      "end": 112,
-      "claim_text": "La voici, telle qu’on peut la rendre en français",
-      "normalized_claim": "Ce qui suit est une traduction française de la phrase.",
+      "start": 217,
+      "end": 269,
+      "claim_text": "Elle ouvre le dernier paragraphe plein de la page 4.",
+      "normalized_claim": "Position : la phrase ouvre le dernier paragraphe plein de la p.4.",
       "support_ids": [
-        "SUP-520c61d935611e51",
-        "SUP-bb17d922c44f1d5b"
+        "SUP-74f9a53ac00c7d14",
+        "SUP-43cb5037f47995be"
       ]
     },
     {
       "claim_id": "C028",
       "locator": "sections[3].paragraphs[0]",
-      "start": 115,
-      "end": 216,
-      "claim_text": "« On n’attend pas de la théorie qu’elle « marche » avec la même efficacité pour tous les individus. »",
-      "normalized_claim": "Texte français de la citation.",
+      "start": 270,
+      "end": 335,
+      "claim_text": "Juste au-dessus s’achève la formule du motivating potential score",
+      "normalized_claim": "Ce qui precede immediatement est la formule du Motivating Potential Score.",
       "support_ids": [
-        "SUP-8463ec693f1d9f83",
-        "SUP-bb17d922c44f1d5b"
+        "SUP-74f9a53ac00c7d14"
       ]
     },
     {
       "claim_id": "C029",
       "locator": "sections[3].paragraphs[0]",
-      "start": 217,
-      "end": 269,
-      "claim_text": "Elle ouvre le dernier paragraphe plein de la page 4.",
-      "normalized_claim": "La phrase ouvre le dernier paragraphe plein de la page 4.",
+      "start": 338,
+      "end": 446,
+      "claim_text": "juste après vient le titre de section qui annonce le récapitulatif des concepts mesurés par le questionnaire",
+      "normalized_claim": "Ce qui suit immediatement est le titre Summary of Concepts Measured by the Job Diagnostic Survey.",
       "support_ids": [
         "SUP-74f9a53ac00c7d14"
       ]
@@ -416,80 +422,81 @@
     {
       "claim_id": "C030",
       "locator": "sections[3].paragraphs[0]",
-      "start": 270,
-      "end": 335,
-      "claim_text": "Juste au-dessus s’achève la formule du motivating potential score",
-      "normalized_claim": "La formule du Motivating Potential Score précède immédiatement la phrase.",
+      "start": 448,
+      "end": 545,
+      "claim_text": "La réserve est donc adossée au chiffre, à l’endroit même où l’on vient d’apprendre à le calculer.",
+      "normalized_claim": "Consequence tiree de la position : la reserve suit immediatement le calcul du score.",
       "support_ids": [
         "SUP-74f9a53ac00c7d14"
       ]
     },
     {
       "claim_id": "C031",
-      "locator": "sections[3].paragraphs[0]",
-      "start": 338,
-      "end": 446,
-      "claim_text": "juste après vient le titre de section qui annonce le récapitulatif des concepts mesurés par le questionnaire",
-      "normalized_claim": "Le titre de section suivant est celui du récapitulatif des concepts mesurés par le JDS.",
-      "support_ids": [
-        "SUP-74f9a53ac00c7d14"
-      ]
-    },
-    {
-      "claim_id": "C032",
-      "locator": "sections[3].paragraphs[0]",
-      "start": 448,
-      "end": 545,
-      "claim_text": "La réserve est donc adossée au chiffre, à l’endroit même où l’on vient d’apprendre à le calculer.",
-      "normalized_claim": "La réserve est placée immédiatement après l'exposé du calcul du score.",
-      "support_ids": [
-        "SUP-74f9a53ac00c7d14"
-      ]
-    },
-    {
-      "claim_id": "C033",
       "locator": "sections[3].paragraphs[1]",
       "start": 44,
       "end": 146,
       "claim_text": "dans l’original anglais, c’est le verbe « work », fonctionner, que les auteurs encadrent de guillemets",
-      "normalized_claim": "Dans l'original anglais, le verbe « work » est entre guillemets.",
+      "normalized_claim": "Dans l'original, work est entre guillemets.",
       "support_ids": [
         "SUP-48c05c222a4125cf",
         "SUP-f2b12e5db86232a5"
       ]
     },
     {
-      "claim_id": "C034",
+      "claim_id": "C032",
       "locator": "sections[3].paragraphs[1]",
       "start": 148,
       "end": 189,
       "claim_text": "et la traduction les garde sur « marche »",
-      "normalized_claim": "La traduction française conserve les guillemets sur « marche ».",
+      "normalized_claim": "La traduction interne conserve les guillemets sur marche.",
       "support_ids": [
         "SUP-bb17d922c44f1d5b",
         "SUP-8463ec693f1d9f83"
       ]
     },
     {
-      "claim_id": "C035",
+      "claim_id": "C033",
       "locator": "sections[3].paragraphs[1]",
       "start": 191,
       "end": 335,
       "claim_text": "Ce n’est pas la théorie qui serait fausse pour certaines personnes, c’est son fonctionnement attendu qui n’a pas la même efficacité pour toutes.",
-      "normalized_claim": "L'énoncé porte sur l'efficacité attendue du fonctionnement de la théorie, non sur sa fausseté.",
+      "normalized_claim": "Lecture de l'enonce : ce qui varie est l'efficacite attendue du fonctionnement, non la verite de la theorie.",
       "support_ids": [
         "SUP-48c05c222a4125cf",
-        "SUP-8463ec693f1d9f83",
-        "SUP-665c8b51b107b031"
+        "SUP-665c8b51b107b031",
+        "SUP-bb17d922c44f1d5b"
+      ]
+    },
+    {
+      "claim_id": "C034",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 0,
+      "end": 155,
+      "claim_text": "Deux pages plus loin, en décrivant ce que leur questionnaire mesure, les auteurs qualifient ce besoin de « malleable individual difference characteristic »",
+      "normalized_claim": "P.6, dans la description du JDS, le besoin est qualifie de malleable individual difference characteristic.",
+      "support_ids": [
+        "SUP-c29c26f776666b70",
+        "SUP-43cb5037f47995be"
+      ]
+    },
+    {
+      "claim_id": "C035",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 158,
+      "end": 227,
+      "claim_text": "une caractéristique qui distingue les individus, et qui est malléable",
+      "normalized_claim": "Glose francaise de l'expression anglaise.",
+      "support_ids": [
+        "SUP-c29c26f776666b70"
       ]
     },
     {
       "claim_id": "C036",
       "locator": "sections[4].paragraphs[0]",
-      "start": 0,
-      "end": 155,
-      "claim_text": "Deux pages plus loin, en décrivant ce que leur questionnaire mesure, les auteurs qualifient ce besoin de « malleable individual difference characteristic »",
-      "normalized_claim": "Deux pages après la p. 4, les auteurs qualifient ce besoin de « malleable individual difference characteristic » en décrivant ce que mesure le JDS.",
+      "start": 229,
+      "end": 322,
+      "claim_text": "Le mot apparaît dans une phrase dont le sujet grammatical est l’instrument et non la personne",
+      "normalized_claim": "Le sujet grammatical de la phrase est le JDS.",
       "support_ids": [
         "SUP-c29c26f776666b70"
       ]
@@ -497,32 +504,32 @@
     {
       "claim_id": "C037",
       "locator": "sections[4].paragraphs[0]",
-      "start": 158,
-      "end": 227,
-      "claim_text": "une caractéristique qui distingue les individus, et qui est malléable",
-      "normalized_claim": "Glose française de l'expression anglaise.",
+      "start": 370,
+      "end": 441,
+      "claim_text": "ce besoin n’est pas présenté comme un trait fixe que l’on aurait ou non",
+      "normalized_claim": "Le besoin n'est pas presente comme un trait fige.",
       "support_ids": [
         "SUP-c29c26f776666b70"
       ]
     },
     {
       "claim_id": "C038",
-      "locator": "sections[4].paragraphs[0]",
-      "start": 229,
-      "end": 322,
-      "claim_text": "Le mot apparaît dans une phrase dont le sujet grammatical est l’instrument et non la personne",
-      "normalized_claim": "Le sujet grammatical de la phrase contenant le mot est l'instrument (le JDS).",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 0,
+      "end": 64,
+      "claim_text": "Deux façons de le lire s’offrent alors, et le mot en écarte une.",
+      "normalized_claim": "Le mot malleable exclut l'une des deux lectures.",
       "support_ids": [
         "SUP-c29c26f776666b70"
       ]
     },
     {
       "claim_id": "C039",
-      "locator": "sections[4].paragraphs[0]",
-      "start": 370,
-      "end": 441,
-      "claim_text": "ce besoin n’est pas présenté comme un trait fixe que l’on aurait ou non",
-      "normalized_claim": "Le besoin n'est pas présenté comme un trait figé.",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 188,
+      "end": 333,
+      "claim_text": "Tenu pour une caractéristique malléable, il décrit un état mesuré à un moment, chez quelqu’un dont la situation et l’histoire ne sont pas closes.",
+      "normalized_claim": "Sous la lecture malleable, il s'agit d'un etat mesure a un instant.",
       "support_ids": [
         "SUP-c29c26f776666b70"
       ]
@@ -530,160 +537,200 @@
     {
       "claim_id": "C040",
       "locator": "sections[4].paragraphs[1]",
-      "start": 188,
-      "end": 333,
-      "claim_text": "Tenu pour une caractéristique malléable, il décrit un état mesuré à un moment, chez quelqu’un dont la situation et l’histoire ne sont pas closes.",
-      "normalized_claim": "Lu comme malléable, le besoin désigne un état mesuré ponctuellement et non définitif.",
+      "start": 334,
+      "end": 453,
+      "claim_text": "La première lecture va au-delà de ce que ce texte autorise à dire ; c’est la seconde que le mot « malleable » soutient.",
+      "normalized_claim": "Le texte n'autorise pas la lecture du trait stable ; le mot malleable soutient l'autre.",
       "support_ids": [
         "SUP-c29c26f776666b70"
       ]
     },
     {
       "claim_id": "C041",
-      "locator": "sections[4].paragraphs[1]",
-      "start": 334,
-      "end": 453,
-      "claim_text": "La première lecture va au-delà de ce que ce texte autorise à dire ; c’est la seconde que le mot « malleable » soutient.",
-      "normalized_claim": "Le mot « malleable » exclut la lecture du besoin comme trait stable.",
-      "support_ids": [
-        "SUP-c29c26f776666b70"
-      ]
-    },
-    {
-      "claim_id": "C042",
       "locator": "sections[5].paragraphs[0]",
       "start": 71,
       "end": 177,
       "claim_text": "La phrase de la page 4 est au passif : en anglais, « is not expected to », sans que personne y soit nommé.",
-      "normalized_claim": "La phrase anglaise est au passif et ne nomme pas d'agent.",
+      "normalized_claim": "L'original est au passif, sans agent nomme.",
       "support_ids": [
         "SUP-48c05c222a4125cf",
         "SUP-bb17d922c44f1d5b"
       ]
     },
     {
-      "claim_id": "C043",
+      "claim_id": "C042",
       "locator": "sections[5].paragraphs[0]",
       "start": 178,
       "end": 290,
       "claim_text": "Ceux qui n’attendent pas cette efficacité égale, ce sont pourtant les auteurs eux-mêmes, dans leur propre texte.",
-      "normalized_claim": "L'agent implicite du passif est constitué par les auteurs eux-mêmes.",
+      "normalized_claim": "L'attente non tenue est celle des auteurs eux-memes.",
       "support_ids": [
-        "SUP-bb17d922c44f1d5b"
+        "SUP-bb17d922c44f1d5b",
+        "SUP-f2b12e5db86232a5"
       ]
     },
     {
-      "claim_id": "C044",
+      "claim_id": "C043",
       "locator": "sections[5].paragraphs[0]",
       "start": 291,
       "end": 404,
       "claim_text": "Et cette page ne porte aucune donnée : elle énonce ce que la théorie prévoit, non ce qu’une observation a montré.",
-      "normalized_claim": "La page 4 ne contient pas de données : elle énonce un attendu théorique.",
+      "normalized_claim": "La p.4 ne contient aucune donnee ; elle enonce un attendu theorique.",
       "support_ids": [
         "SUP-665c8b51b107b031",
         "SUP-701b30007637c3b1"
       ]
     },
     {
-      "claim_id": "C045",
+      "claim_id": "C044",
       "locator": "sections[5].paragraphs[1]",
       "start": 0,
       "end": 77,
       "claim_text": "Cette clause a une histoire, et les auteurs la nomment dès leur deuxième page",
-      "normalized_claim": "Les auteurs signalent dès la page 2 l'antériorité dont relève leur théorie.",
+      "normalized_claim": "Le rattachement a des travaux anterieurs figure des la p.2.",
       "support_ids": [
         "SUP-f77e516d2d9d873b",
         "SUP-c604a94416e464a0"
+      ]
+    },
+    {
+      "claim_id": "C045",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 80,
+      "end": 221,
+      "claim_text": "« The theory which gave rise to the present instrument is based on earlier work by Turner & Lawrence (1965) and by Hackman & Lawler (1971). »",
+      "normalized_claim": "Citation verbatim de la p.2.",
+      "support_ids": [
+        "SUP-f77e516d2d9d873b"
       ]
     },
     {
       "claim_id": "C046",
       "locator": "sections[5].paragraphs[1]",
-      "start": 80,
-      "end": 221,
-      "claim_text": "« The theory which gave rise to the present instrument is based on earlier work by Turner & Lawrence (1965) and by Hackman & Lawler (1971). »",
-      "normalized_claim": "Citation verbatim de la page 2.",
+      "start": 223,
+      "end": 354,
+      "claim_text": "puis, pour l’exposé détaillé, « For a more detailed description and discussion of the theory itself, see Hackman & Oldham (1974). »",
+      "normalized_claim": "Citation verbatim du renvoi a Hackman & Oldham (1974) pour l'expose detaille.",
+      "support_ids": [
+        "SUP-f77e516d2d9d873b"
+      ]
+    },
+    {
+      "claim_id": "C047",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 355,
+      "end": 385,
+      "claim_text": "Ces deux articles plus anciens",
+      "normalized_claim": "Les deux references anterieures sont designees comme des articles plus anciens.",
       "support_ids": [
         "SUP-f77e516d2d9d873b",
         "SUP-c604a94416e464a0"
       ]
     },
     {
-      "claim_id": "C047",
-      "locator": "sections[5].paragraphs[1]",
-      "start": 223,
-      "end": 354,
-      "claim_text": "puis, pour l’exposé détaillé, « For a more detailed description and discussion of the theory itself, see Hackman & Oldham (1974). »",
-      "normalized_claim": "Citation verbatim du renvoi à Hackman & Oldham (1974) pour l'exposé détaillé.",
-      "support_ids": [
-        "SUP-f77e516d2d9d873b"
-      ]
-    },
-    {
       "claim_id": "C048",
       "locator": "sections[5].paragraphs[1]",
-      "start": 355,
-      "end": 453,
-      "claim_text": "Chez Hackman et Lawler, ce même modérateur porte déjà un autre nom, « higher order need strength »",
-      "normalized_claim": "Hackman & Lawler (1971) opèrent le même modérateur sous le nom « higher order need strength ».",
+      "start": 387,
+      "end": 456,
+      "claim_text": "les auteurs les désignent eux-mêmes comme les racines de leur théorie",
+      "normalized_claim": "Attribution : les auteurs presentent eux-memes ces travaux comme le fondement de leur theorie.",
       "support_ids": [
-        "SUP-f77e516d2d9d873b"
+        "SUP-f77e516d2d9d873b",
+        "SUP-c604a94416e464a0"
       ]
     },
     {
       "claim_id": "C049",
       "locator": "sections[5].paragraphs[1]",
-      "start": 456,
-      "end": 565,
-      "claim_text": "ce qui appartient en propre au rapport de 1974, c’est le nom growth need strength et la manière de le mesurer",
-      "normalized_claim": "Le terme « growth need strength » et son opérationnalisation sont propres au rapport de 1974.",
+      "start": 458,
+      "end": 495,
+      "claim_text": "et leurs pages attendent leur lecteur",
+      "normalized_claim": "Enonce residuel sur ces deux textes : ils restent a ouvrir (aucune lecture attestee au dossier).",
       "support_ids": [
-        "SUP-f77e516d2d9d873b"
+        "SUP-5bd45cc269abd08e"
       ]
     },
     {
       "claim_id": "C050",
-      "locator": "sections[5].paragraphs[2]",
-      "start": 0,
-      "end": 27,
-      "claim_text": "Le test, lui, est ailleurs.",
-      "normalized_claim": "L'épreuve empirique ne se trouve pas dans ce rapport.",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 498,
+      "end": 607,
+      "claim_text": "ce qui appartient en propre au rapport de 1974, c’est le nom growth need strength et la manière de le mesurer",
+      "normalized_claim": "Le nom growth need strength et son operationnalisation sont propres au rapport de 1974.",
       "support_ids": [
-        "SUP-701b30007637c3b1"
+        "SUP-f77e516d2d9d873b",
+        "SUP-0c5c2e55511ca07c"
       ]
     },
     {
       "claim_id": "C051",
       "locator": "sections[5].paragraphs[2]",
-      "start": 28,
-      "end": 226,
-      "claim_text": "Pour l’épreuve empirique de cette modération, les auteurs renvoient à un autre de leurs rapports de la même année, le Technical Report No. 6, Motivation through the design of work: Test of a theory.",
-      "normalized_claim": "Les auteurs renvoient au Technical Report No. 6 (1974) pour le test empirique de la modération.",
+      "start": 0,
+      "end": 27,
+      "claim_text": "Le test, lui, est ailleurs.",
+      "normalized_claim": "Le test empirique n'est pas dans le rapport lu.",
       "support_ids": [
-        "SUP-701b30007637c3b1"
+        "SUP-701b30007637c3b1",
+        "SUP-665c8b51b107b031"
       ]
     },
     {
       "claim_id": "C052",
       "locator": "sections[5].paragraphs[2]",
-      "start": 227,
-      "end": 354,
-      "claim_text": "Ce que des données disent de l’écart entre les personnes, c’est ce rapport-là qui le porte, et il faudra l’ouvrir pour le lire.",
-      "normalized_claim": "C'est le Technical Report No. 6 qui porte les données sur l'écart interindividuel, et il n'a pas été ouvert ici.",
+      "start": 28,
+      "end": 226,
+      "claim_text": "Pour l’épreuve empirique de cette modération, les auteurs renvoient à un autre de leurs rapports de la même année, le Technical Report No. 6, Motivation through the design of work: Test of a theory.",
+      "normalized_claim": "Les auteurs renvoient au Technical Report No. 6 (1974), Motivation through the design of work: Test of a theory.",
       "support_ids": [
-        "SUP-701b30007637c3b1"
+        "SUP-701b30007637c3b1",
+        "SUP-c4a1c4a9ecd80611"
       ]
     },
     {
       "claim_id": "C053",
       "locator": "sections[5].paragraphs[2]",
+      "start": 227,
+      "end": 317,
+      "claim_text": "Ce que des données disent de l’écart entre les personnes, c’est ce rapport-là qui le porte",
+      "normalized_claim": "C'est le Technical Report No. 6 qui porte les donnees sur l'ecart entre personnes.",
+      "support_ids": [
+        "SUP-701b30007637c3b1",
+        "SUP-c4a1c4a9ecd80611"
+      ]
+    },
+    {
+      "claim_id": "C054",
+      "locator": "sections[5].paragraphs[2]",
+      "start": 319,
+      "end": 353,
+      "claim_text": "et il faudra l’ouvrir pour le lire",
+      "normalized_claim": "Ce rapport n'a pas ete ouvert par la lecture primaire.",
+      "support_ids": [
+        "SUP-701b30007637c3b1",
+        "SUP-5bd45cc269abd08e"
+      ]
+    },
+    {
+      "claim_id": "C055",
+      "locator": "sections[5].paragraphs[2]",
       "start": 355,
-      "end": 564,
-      "claim_text": "Une question l’y accompagnera, que ces pages laissent ouverte : un besoin dit malléable, l’observe-t-on comme une propriété des personnes, ou comme la trace de ce que leur travail leur a déjà permis de faire ?",
-      "normalized_claim": "Les pages lues laissent ouverte la question du statut observationnel d'un besoin dit malléable.",
+      "end": 416,
+      "claim_text": "Une question l’y accompagnera, que ces pages laissent ouverte",
+      "normalized_claim": "Les pages lues laissent cette question ouverte.",
       "support_ids": [
         "SUP-c29c26f776666b70",
         "SUP-701b30007637c3b1"
+      ]
+    },
+    {
+      "claim_id": "C056",
+      "locator": "sections[5].paragraphs[2]",
+      "start": 419,
+      "end": 442,
+      "claim_text": "un besoin dit malléable",
+      "normalized_claim": "Le besoin est dit malleable dans le rapport.",
+      "support_ids": [
+        "SUP-c29c26f776666b70"
       ]
     }
   ]
