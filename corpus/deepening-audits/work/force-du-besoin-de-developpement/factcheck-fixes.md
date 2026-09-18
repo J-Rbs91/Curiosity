@@ -157,3 +157,91 @@ Structure après correction : `lead` 2 paragraphes, 6 sections (2, 2, 2, 2, 2, 3
 Le texte a changé : le SHA `fc7d8938…` est invalidé, et avec lui le mapping et les verdicts de
 cette passe. Le fact-check doit reprendre à `PREPARE` sur un pack neuf. Aucun verdict n'est rendu
 ici, ni `ACCEPT`, ni `FACTCHECK_PASS`.
+
+---
+
+# Boucle 2 : C048 `TOO_STRONG`
+
+Gate : `FACTCHECK_FAIL`, 53 claims, 52 `SUPPORTED`, 1 échec.
+SHA contrôlé : `e0f8cc46…`.
+
+## Le claim et son support
+
+Claim C048, `sections[5].paragraphs[1]`, offsets 355-453 :
+
+> Chez Hackman et Lawler, ce même modérateur porte déjà un autre nom, « higher order need strength »
+
+Support unique proposé : `SUP-f77e516d2d9d873b` (`validated`, `$.review.notes[1]`). Cette note
+consigne l'antériorité comme une « recherche indépendante concordante » relevée au contrôle. Le
+verbatim de la p. 2 réellement lu, lui, ne dit que ceci : la théorie du rapport de 1974 s'appuie
+sur des travaux antérieurs de Turner & Lawrence (1965) et de Hackman & Lawler (1971). L'article de
+1971 n'a jamais été ouvert ; aucune pièce lue n'établit son contenu.
+
+Le claim supprimait cet intermédiaire et énonçait au présent, comme un fait de lecture, sous quel
+nom le modérateur figure dans un texte que personne n'a ouvert.
+
+## Opération retenue : `REMOVE`
+
+Les quatre opérations ont été pesées. `NARROW` et `MARK_AS_INTERPRETATION` gardent l'énoncé du nom
+de 1971, donc une assertion sur le contenu d'un texte non lu, quel que soit le hedge. `REATTRIBUTE`
+suppose de dire au lecteur d'où vient le rapprochement, c'est-à-dire de lui raconter le contrôle :
+`PROTOCOLE.md` §1 l'interdit (« le contrôleur a relevé » n'est pas dicible). Seul `REMOVE` ferme
+la brèche sans en ouvrir une autre.
+
+Le segment est remplacé par un pointage strictement côté lecteur, qui ne dit rien du contenu des
+deux articles et se borne à ce que la citation immédiatement précédente atteste (les auteurs les
+désignent comme la source antérieure de leur théorie) :
+
+> Ces deux articles plus anciens, les auteurs les désignent eux-mêmes comme les racines de leur
+> théorie, et leurs pages attendent leur lecteur ; ce qui appartient en propre au rapport de 1974,
+> c'est le nom growth need strength et la manière de le mesurer.
+
+Forme conforme à `PROTOCOLE.md` §1 : ni « non consulté », ni « il faudrait pouvoir », ni compte
+rendu de recherche infructueuse. Ce qui est nommé, c'est ce que ces articles détiennent encore,
+pas ce qui a manqué à la préparation.
+
+Le delta du paragraphe est préservé : le rapport de 1974 est un relais, pas une origine ; ce qui
+lui revient en propre est le nom et la mesure. C'est exactement ce que porte C049, resté intact.
+
+## Ce qui n'a pas été touché
+
+Les 52 claims `SUPPORTED` sont inchangés mot pour mot, y compris les deux verbatim anglais de ce
+paragraphe (C046, C047), l'amorce C045 et la suite C049, dont la chaîne exacte
+« ce qui appartient en propre au rapport de 1974, c'est le nom growth need strength et la manière
+de le mesurer » est conservée telle quelle, minuscule initiale comprise. Le remplacement a été
+appliqué par substitution d'occurrence unique vérifiée, sans reformatage du fichier.
+
+`limits` est inchangé. Sa troisième entrée continue de nommer précisément la frontière : le nom
+« higher order need strength » chez Hackman et Lawler (1971) vient d'une recherche indépendante
+concordante consignée au contrôle, et rien ne peut être dit du contenu de cet article ni de celui
+de Turner et Lawrence (1965). Le texte lecteur est désormais en deçà de cette frontière, alors
+qu'il la franchissait.
+
+Une seule modification hors du segment C048 : le titre de la section 6 passe de
+« Un attendu, un nom plus ancien, un test ailleurs » à
+« Un attendu, une source plus ancienne, un test ailleurs ». Le titre annonçait un nom que la
+section ne livre plus ; le laisser aurait créé une promesse vide. Les titres ne portent aucun
+locator du pack de preuve (les locators sont `lead[i]` et `sections[i].paragraphs[j]`), donc
+aucun claim n'en dépend. 54 caractères, sous la limite de 60.
+
+## Volume
+
+| | mots texte lecteur | mots avec `limits` |
+|---|---|---|
+| avant | 1281 | 1499 |
+| après | 1285 | 1503 |
+
+Net +4 mots : 15 mots retirés, 19 ajoutés par le pointage côté lecteur. Aucun ajout ailleurs.
+
+## Contrôle mécanique
+
+```
+npm run corpus:deepen -- --check --only=force-du-besoin-de-developpement
+1 approfondissement(s) contrôlé(s), 1503 mots. Rien projeté.
+```
+
+## Suite
+
+Le texte a changé : le SHA `e0f8cc46…` est invalidé, et avec lui le mapping et les verdicts de
+cette passe, y compris les 52 `SUPPORTED`. Le fact-check doit reprendre à `PREPARE` sur un pack
+neuf. Aucun verdict n'est rendu ici, ni `ACCEPT`, ni `FACTCHECK_PASS`.
