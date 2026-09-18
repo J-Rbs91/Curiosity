@@ -136,3 +136,90 @@ Aucune erreur, aucun avertissement de citation.
 
 Ce document ne vaut pas validation : le verdict factuel appartient au gate déterministe, après
 un nouveau `PREPARE` sur le SHA courant.
+
+---
+
+# Correction après FACTCHECK_FAIL, boucle 2 sur 2
+
+Gate corrigé : `factcheck-gate.json`, verdict `FACTCHECK_FAIL`, 59 claims, 56 `SUPPORTED`,
+3 en échec (2 `TOO_STRONG`, 1 `SOURCE_NOT_CONSULTED`).
+
+Aucune source nouvelle n'a été ouverte. Aucun `support_id` n'a été écrit ni inventé. `limits`
+est inchangé. Le SHA du texte change : la reprise se fait à `PREPARE`.
+
+## C039 — NARROW
+
+`sections[3].paragraphs[0]`. Le support (review.notes[5]) énumère les quatre notions mais
+n'attribue les marges de tolérance à aucun porteur, et signale au contraire que certains
+attributs sont chez Gadbois ceux de chaque activité et non du système.
+
+Avant : « … et les marges de tolérance dont cet ensemble dispose. »
+Après : « … et les marges de tolérance. »
+
+L'attribution ajoutée est retirée. La notion reste énumérée, sans porteur. Rien d'autre du
+paragraphe ne bouge : C037 et C038 sont intacts, et la suite du raisonnement (second
+paragraphe, exemple du déplacement) ne dépendait pas de cette attribution.
+
+## C047 — NARROW
+
+`sections[4].paragraphs[1]`. Le support (notes[3]) atteste que l'article ne cite aucune source
+de théorie des systèmes ou de cybernétique. Il n'atteste pas une absence dans le propos de
+l'article lui-même : le « rien n'est affirmé du sens technique » y porte sur l'appareil
+documentaire, pas sur l'article.
+
+Avant : « Ce que le mot désigne exactement dans le domaine dont il vient, l'article ne le dit
+pas et ne cite aucun texte qui le fixe : … »
+Après : « Quant au sens exact que ce mot a dans le domaine dont il vient, l'article n'en cite
+aucune source : … »
+
+L'affirmation d'absence dans le texte (« ne le dit pas ») est supprimée. Ce qui reste est borné
+exactement à ce que le support atteste : l'article ne cite aucune source du domaine d'origine du
+mot. Le mot « source » est celui du support. La suite de la phrase, C048, est conservée mot pour
+mot, et son antécédent (« le » = ce sens) reste explicite.
+
+## C058 — REMOVE
+
+`sections[5].paragraphs[1]`. L'article de 1975 n'a pas été ouvert ; inférer de son titre ce
+qu'il nomme est une affirmation sur son contenu, qu'aucun hedge ne rendrait licite.
+
+Retiré : « Ce titre nomme des emprises réciproques, donc aussi le sens inverse : ce que la vie
+hors travail fait, en retour, à la vie de travail. »
+
+Rien n'est mis à la place : le renvoi, son titre, sa date et son lieu de publication sont déjà
+portés par les deux phrases voisines (C056, C057, C059), qui sont `SUPPORTED` et conservées mot
+pour mot. Le paragraphe se termine donc sur « Ces pages du Bulletin du C.E.R.P. attendent leur
+lecteur. », qui nomme ce qui reste à lire sans rien dire de ce que ces pages contiennent.
+
+## Ce qui n'a pas été touché
+
+Les 56 claims `SUPPORTED` sont conservés à l'identique, mot pour mot, y compris les trois
+voisins immédiats des corrections (C038, C048, C059). Aucun titre de section n'est modifié :
+« Dans quel sens ce mot est employé ici » et « Ce que l'ensemble fait de la perturbation »
+promettent toujours ce que leurs sections livrent, et « Un constat ancien, un instrument neuf »
+ne portait rien sur l'article de 1975. Le `lead` est inchangé. `limits` est inchangé.
+
+Aucun fait nouveau n'a été introduit pour compenser un retrait : les trois opérations sont
+strictement soustractives ou restrictives. Relecture faite mot par mot sur les trois passages
+réécrits : « source » vient de notes[3] ; aucun genre de document, aucun porteur de propriété,
+aucune qualification d'ensemble n'est ajouté.
+
+## Volume
+
+| | Avant | Après |
+|---|---|---|
+| Texte lecteur (`lead` + `sections`) | 1 269 mots | 1 233 mots |
+| Total compté par le contrôle (`limits` inclus) | 1 483 mots | 1 447 mots |
+
+Retrait net de 36 mots, au-dessus du plancher de 1 100.
+
+## Contrôle mécanique
+
+```
+npm run corpus:deepen -- --check --only=asservissement-des-activites-hors-travail
+1 approfondissement(s) contrôlé(s), 1447 mots. Rien projeté.
+```
+
+Aucune erreur, aucun avertissement de citation.
+
+Ce document ne vaut pas validation : le verdict factuel appartient au gate déterministe, après
+un nouveau `PREPARE` sur le SHA courant.

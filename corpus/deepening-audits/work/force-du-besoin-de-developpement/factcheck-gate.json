@@ -1,17 +1,22 @@
 {
   "protocol_version": 1,
   "concept_id": "force-du-besoin-de-developpement",
-  "candidate_sha256": "e0f8cc4618f924236b5bf41403c9ec7927ce77df1e1c35e2e1458097961fff20",
+  "candidate_sha256": "c955e8f8692363b8954b2998df95f8ff18e4341add24f945e9162d5d320fb034",
   "verdict": "FACTCHECK_FAIL",
-  "claims": 53,
-  "supported": 52,
-  "failed": 1,
+  "claims": 56,
+  "supported": 54,
+  "failed": 2,
   "structural_errors": [],
   "failures": [
     {
-      "claim_id": "C048",
+      "claim_id": "C047",
       "verdict": "TOO_STRONG",
-      "reason": "Le support ne donne cette antériorité terminologique que comme « recherche indépendante concordante » consignée au contrôle ; l'article de Hackman et Lawler (1971) n'a jamais été consulté et son contenu n'est établi par aucune pièce lue. Le claim supprime cet intermédiaire et énonce comme un fait direct ce que contient ce texte de 1971."
+      "reason": "Les supports n'attestent que « earlier work » / « travaux antérieurs » de Turner & Lawrence (1965) et Hackman & Lawler (1971) ; aucun support n'établit la nature documentaire de ces deux pièces. Qualifier les deux d'« articles » ajoute une spécification que le dossier ne porte pas, ces textes n'ayant pas été ouverts."
+    },
+    {
+      "claim_id": "C050",
+      "verdict": "TOO_STRONG",
+      "reason": "Le seul support affirmant que le terme « growth need strength » et son opérationnalisation sont de Hackman et Oldham le présente comme une « recherche indépendante concordante » consignée au contrôle, non comme un acquis du rapport lu ; et le partage énoncé (« appartient en propre au rapport de 1974 ») implique le contenu des travaux antérieurs, non ouverts. L'affirmation de paternité est plus forte que ses supports."
     }
   ]
 }
