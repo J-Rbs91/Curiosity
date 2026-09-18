@@ -68,7 +68,45 @@ Pour chaque paragraphe, produis aussi :
 
 - `mapping_status: CLAIMS_MAPPED` s'il contient au moins un claim ;
 - `mapping_status: NO_VERIFIABLE_CLAIM` uniquement s'il ne contient réellement aucune assertion
-  vérifiable (par exemple une pure transition rhétorique).
+  vérifiable (par exemple une pure transition rhétorique, ou une vignette entièrement stipulée
+  par « Imaginons… » qui n'attribue rien à personne et ne rapporte aucune donnée).
+
+Ce statut **exempte le paragraphe entier du contrôle de preuve** : rien de ce qu'il contient ne
+sera jamais confronté à un support. C'est donc le seul endroit de la chaîne où un modèle peut,
+seul, soustraire du texte lecteur à la vérification.
+
+Par conséquent :
+
+- **justifie chaque exemption dans ta réponse finale**, paragraphe par paragraphe, en disant ce
+  qui y est stipulé et pourquoi rien n'y est opposable à une preuve ;
+- n'exempte jamais un paragraphe qui se ferme sur une assertion dérivée de la vignette : la
+  vignette n'est pas vérifiable, la conséquence qu'on en tire l'est, et elle doit être ancrée ;
+- une analogie pédagogique n'est pas une transition rhétorique. Si elle affirme quelque chose du
+  monde — comment fonctionne un thermostat, ce qu'une fièvre indique — elle est ancrable, et le
+  verdict appartient au vérificateur, pas à toi.
+
+## Le choix des supports est un acte de jugement
+
+Tu ne rends aucun verdict de vérité, mais les supports que tu attaches décident du verdict que
+le vérificateur pourra rendre. Ce n'est pas neutre, et ce n'est revu par personne.
+
+Le 2026-09-18, une phrase au texte rigoureusement identique est passée de `SUPPORTED` à
+`TOO_STRONG` entre deux cycles, parce qu'un mappeur lui avait attaché un support de plus, et que
+ce support entraînait avec lui le contenu de travaux non lus. **Attacher davantage de preuve peut
+faire échouer un claim.**
+
+La règle n'est donc pas d'en attacher moins pour faire passer le texte, ni plus pour paraître
+rigoureux. Elle est :
+
+- n'attache que les supports qui portent réellement la proposition ancrée ;
+- n'ajoute pas un support « voisin » ou « de contexte » qui parle d'autre chose, même s'il
+  concerne le même auteur ou la même page ;
+- n'écarte pas un support pertinent pour éviter un verdict défavorable ;
+- si un support pertinent entraîne autre chose avec lui, attache-le quand même et laisse le
+  vérificateur trancher. Ne protège aucun énoncé.
+
+Signale dans ta réponse tes rattachements les plus ténus, pour que le vérificateur les examine en
+connaissance de cause.
 
 Tu dois être particulièrement méfiant envers les phrases qui mêlent une observation, une
 attribution et une conséquence dans la même syntaxe.

@@ -1,6 +1,6 @@
 # Protocole de fact-check des approfondissements
 
-Version : 1
+Version : 2
 
 Ce protocole complète `PROTOCOLE.md` et `AUDIT_PROTOCOL.md`.
 
@@ -55,7 +55,8 @@ rentrer le dossier.
 
 ## 3. Pack de preuve déterministe
 
-Avant tout mapping, un script classique construit un `factcheck-pack.json` à partir de :
+Avant tout mapping — et depuis la version 4 d'`AUDIT_PROTOCOL.md`, avant même l'audit — un script
+classique construit un `factcheck-pack.json` à partir de :
 
 - `corpus/deepenings/<conceptId>.json` pour le texte lecteur ;
 - `corpus/validated/<conceptId>.json` comme autorité validée ;
@@ -92,6 +93,44 @@ gate.
 
 Ainsi, un modèle ne peut pas annoncer qu'il a vérifié une version affaiblie d'une phrase alors
 que le lecteur en verra une autre.
+
+### `mapping_status` et l'exemption de paragraphe
+
+Chaque paragraphe lecteur porte un `mapping_status`, que le script contrôle :
+
+- `CLAIMS_MAPPED` — le paragraphe contient au moins un claim ancré ;
+- `NO_VERIFIABLE_CLAIM` — le paragraphe ne contient aucune assertion vérifiable, et il ne porte
+  donc aucun claim.
+
+Le script refuse l'incohérence dans les deux sens : un `CLAIMS_MAPPED` sans claim, un
+`NO_VERIFIABLE_CLAIM` qui en porte un.
+
+Ce statut mérite d'être nommé ici parce qu'il était jusqu'au 2026-09-18 le seul mécanisme du
+dispositif à n'être documenté dans aucun protocole : il n'existait que dans le script et dans la
+définition de l'agent mappeur. **Or il exempte un paragraphe entier du contrôle de preuve.** Rien
+de ce qu'il contient n'est confronté à un support, et aucun agent ne revoit ce choix.
+
+Il s'applique à une transition rhétorique, ou à une vignette entièrement stipulée — « Imaginons
+quelqu'un qui… » — qui n'attribue rien à personne et ne rapporte aucune donnée. Il ne s'applique
+pas à une analogie pédagogique qui affirme quelque chose du monde, ni à un paragraphe qui se ferme
+sur une conséquence tirée de la vignette : cette conséquence est ancrable et doit l'être.
+
+**Toute exemption doit être motivée par le mappeur**, paragraphe par paragraphe, afin que le choix
+soit opposable. Un statut d'exemption non justifié est un angle mort, pas une simplification.
+
+### Le choix des supports décide du verdict
+
+Le mapping ne rend aucun verdict de vérité, mais les supports qu'il attache déterminent celui que
+le vérificateur pourra rendre. Ce choix n'est revu par personne, et il n'est pas neutre.
+
+Observation du 2026-09-18 : une phrase au texte rigoureusement identique, conservée mot pour mot
+d'un cycle au suivant, est passée de `SUPPORTED` à `TOO_STRONG` parce qu'un mappeur lui avait
+attaché un support supplémentaire, lequel entraînait le contenu de travaux non consultés.
+**Attacher davantage de preuve peut faire échouer un claim.**
+
+La conséquence n'est pas d'en attacher moins. Elle est que le rattachement doit viser la justesse
+et non la faveur : seuls les supports qui portent la proposition ancrée, jamais un support de
+contexte, et jamais le retrait d'un support pertinent pour éviter un verdict défavorable.
 
 ## 5. Séparation mapping / entailment
 

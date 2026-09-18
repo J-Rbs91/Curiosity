@@ -13,7 +13,25 @@ Lis d'abord, en entier :
 
 La chaîne est :
 
-`SELECT -> AUDIT -> REWRITE éventuel -> PREPARE -> CLAIM MAP -> BUNDLE -> VERIFY -> DETERMINISTIC GATE -> REVIEW -> TRACE`
+`SELECT -> PREPARE -> AUDIT -> REWRITE éventuel -> RE-PREPARE -> CLAIM MAP -> BUNDLE -> VERIFY -> DETERMINISTIC GATE -> REVIEW -> TRACE`
+
+`PREPARE` vient **avant** `AUDIT`, et ce n'est pas un détail d'ordonnancement.
+
+Tant que le pack de preuve était construit après l'audit, ni l'auditeur ni le réécrivain ne
+voyaient le registre des supports résolus : ils lisaient `corpus/validated/<id>.json` brut. Un
+auditeur pouvait donc prescrire « déplier cette section » en voyant une notion *nommée* dans les
+sources, sans pouvoir vérifier qu'un support en porte l'*explication*. Le réécrivain exécutait,
+fournissait le mécanisme lui-même, et le gate le refusait à juste titre — trop tard, après deux
+boucles dépensées.
+
+Le lot du 2026-09-18 a mesuré le coût de cette inversion : les trois réécritures qui ont grossi
+(+17 %, +22 %, +29 %) ont toutes échoué, et les 28 échecs de la plus grosse étaient massés dans
+la seule section que l'audit demandait de déplier. Le lot précédent, dont les audits prescrivaient
+« matière inchangée », « fondre », « ne surtout pas se développer », a produit trois réécritures
+à −4 %, −2 % et +9 % : les trois ont obtenu `FACTCHECK_PASS`.
+
+Le pack est donc construit d'abord et transmis en lecture à l'auditeur puis au réécrivain, pour
+qu'une prescription d'ajout puisse nommer le support qui la finance.
 
 ## 0. Invariants de contexte
 
@@ -39,7 +57,7 @@ Pour chaque `corpus/deepenings/<id>.json`, calcule les SHA-256 du deepening et d
 
 Un rapport est à jour uniquement s'il contient ces deux hashes et :
 
-`protocol_version: 3`
+`protocol_version: 4`
 
 Une carte est stale si :
 
@@ -73,9 +91,31 @@ Si le deepening, le validated ou les preuves de la carte étaient déjà modifi�
 
 Interdictions : `git reset --hard`, `git clean`, restauration globale.
 
-## 3. AUDIT pédagogique
+## 3. PREPARE initial
 
-Lance `corpus-deepening-auditor` avec uniquement le `conceptId`.
+Avant l'audit, construis le pack de preuve :
+
+```bash
+npm run corpus:factcheck -- --prepare --only=<id>
+```
+
+Il écrit `corpus/deepening-audits/work/<id>/factcheck-pack.json`, qui porte le registre des
+supports `SUP-...` réellement disponibles et leur niveau d'accès.
+
+Ce pack est le **budget documentaire** de la carte. Il ne sert pas encore à juger le texte : il
+sert à ce que l'audit et la réécriture sachent ce que les sources financent avant d'écrire.
+
+Si `status = PARTITION_REQUIRED`, ne charge pas le pack tel quel dans un agent : partitionne comme
+au §6.
+
+## 4. AUDIT pédagogique
+
+Lance `corpus-deepening-auditor` avec :
+
+- le `conceptId` ;
+- le chemin `corpus/deepening-audits/work/<id>/factcheck-pack.json`.
+
+Ne recopie pas le pack dans le prompt : l'agent le lit sur disque.
 
 L'agent écrit sa sortie complète dans :
 
@@ -83,20 +123,30 @@ L'agent écrit sa sortie complète dans :
 
 et rend seulement une synthèse courte à l'orchestrateur.
 
+**Toute prescription d'ajout doit nommer le ou les `support_id` qui la financent.** Une
+recommandation de déplier, développer ou définir qui ne cite aucun support n'est pas exécutable :
+le réécrivain doit la traiter comme une invitation à resserrer, pas à écrire.
+
 Verdicts : `PASS`, `REVISE`, `REWRITE`, `BLOCKED_SOURCE`.
 
 - `PASS` : texte inchangé, mais FACTCHECK obligatoire.
 - `BLOCKED_SOURCE` : aucune invention pour combler le manque. Trace et passe à la carte suivante.
-- `REVISE` / `REWRITE` : étape 4.
+- `REVISE` / `REWRITE` : étape 5.
 
-## 4. REWRITE éventuel
+## 5. REWRITE éventuel
 
 Lance `corpus-deepening-rewriter` avec :
 
 - le `conceptId` ;
-- le chemin `corpus/deepening-audits/work/<id>/audit.md`.
+- le chemin `corpus/deepening-audits/work/<id>/audit.md` ;
+- le chemin `corpus/deepening-audits/work/<id>/factcheck-pack.json`.
 
-Ne recopie pas l'audit dans le prompt.
+Ne recopie ni l'audit ni le pack dans le prompt.
+
+Budget de croissance, à rappeler dans la consigne : **toute augmentation nette du texte lecteur
+doit être financée par des supports nommés du pack.** Le réécrivain doit pouvoir citer, pour
+chaque phrase ajoutée, le `support_id` qui l'autorise. Une réécriture plus courte est un résultat
+normal, et souvent le bon.
 
 Après écriture :
 
@@ -106,17 +156,20 @@ npm run corpus:deepen -- --check --only=<id>
 
 Le contrôle doit passer avant fact-check.
 
-## 5. PREPARE déterministe
+## 6. RE-PREPARE déterministe
 
-Construis le pack :
+Toute réécriture change le SHA et invalide le pack initial. Reconstruis-le :
 
 ```bash
 npm run corpus:factcheck -- --prepare --only=<id>
 ```
 
-Le script écrit :
+Le script réécrit :
 
 `corpus/deepening-audits/work/<id>/factcheck-pack.json`
+
+Si l'audit a rendu `PASS` et que rien n'a été réécrit, le pack du §3 est encore valide et cette
+étape est un no-op : le SHA est inchangé.
 
 Il fixe notamment :
 
@@ -130,7 +183,7 @@ Si `status = PARTITION_REQUIRED`, ne charge pas ce pack tel quel dans un agent. 
 sections et groupes de supports de manière à ce que chaque invocation reste <= 300k estimés. Ne
 supprime aucune matière pour respecter le plafond.
 
-## 6. CLAIM MAP
+## 7. CLAIM MAP
 
 Lance un **nouvel agent frais** `corpus-deepening-claim-mapper` sur une seule carte.
 
@@ -143,7 +196,7 @@ Il ancre chaque claim par `locator + start + end + claim_text exact` et ne peut 
 
 L'orchestrateur ne reçoit que le nombre de claims et le chemin de l'artefact.
 
-## 7. BUNDLE déterministe
+## 8. BUNDLE déterministe
 
 Valide mécaniquement le mapping et résous les supports :
 
@@ -165,7 +218,7 @@ Il écrit :
 Si ce bundle dépasse 300k estimés, partitionne la vérification en sous-bundles de claims. La
 validation finale doit néanmoins couvrir tous les claims du map original.
 
-## 8. VERIFY indépendant
+## 9. VERIFY indépendant
 
 Lance un **nouvel agent frais** `corpus-deepening-entailment-verifier`.
 
@@ -179,7 +232,7 @@ Verdicts claim par claim :
 
 Il ne produit jamais lui-même `FACTCHECK_PASS`.
 
-## 9. DETERMINISTIC GATE
+## 10. DETERMINISTIC GATE
 
 Exécute :
 
@@ -212,7 +265,7 @@ carte et marque `rewrite_rejected_factcheck`.
 Le `PASS` pédagogique ne protège rien. Corrige uniquement si le corpus existant le permet ; sinon
 `BLOCKED_SOURCE`.
 
-## 10. REVIEW indépendant
+## 11. REVIEW indépendant
 
 Uniquement si une réécriture a été conservée et que le gate exact a rendu `FACTCHECK_PASS`.
 
@@ -230,7 +283,7 @@ qu'il examine.
 git restore --source=HEAD -- corpus/deepenings/<id>.json
 ```
 
-## 11. TRACE finale
+## 12. TRACE finale
 
 Écris `corpus/deepening-audits/<id>.md` avec :
 
@@ -239,7 +292,7 @@ git restore --source=HEAD -- corpus/deepenings/<id>.json
 concept_id: <id>
 deepening_sha256: <sha final>
 validated_sha256: <sha validated>
-protocol_version: 3
+protocol_version: 4
 audited_at: <ISO-8601 UTC>
 initial_verdict: PASS | REVISE | REWRITE | BLOCKED_SOURCE
 result: unchanged | rewritten | rewrite_rejected | rewrite_rejected_factcheck | blocked_source
@@ -251,7 +304,7 @@ review_verdict: NOT_RUN | ACCEPT | REJECT
 Le corps peut résumer les conclusions, mais les traces détaillées restent dans les artefacts de
 travail. Ne gonfle pas le rapport final avec les sorties intégrales des agents.
 
-## 12. Fermeture du lot
+## 13. Fermeture du lot
 
 Après toutes les cartes :
 

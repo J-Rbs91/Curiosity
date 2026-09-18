@@ -1,6 +1,6 @@
 # Protocole d’audit pédagogique des approfondissements
 
-Version : 3
+Version : 4
 
 Ce protocole complète `PROTOCOLE.md`. Le premier protège surtout l’exactitude documentaire,
 la forme et l’entrée progressive dans le concept. Celui-ci répond d’abord à une autre question :
@@ -173,12 +173,34 @@ L’auditeur doit d’abord produire :
 2. le delta de chaque paragraphe ;
 3. les groupes de paragraphes redondants ;
 4. les informations importantes présentes mais mal placées ;
-5. les informations ou mécanismes qui manquent mais sont réellement disponibles dans les sources ;
+5. les informations ou mécanismes qui manquent mais sont réellement disponibles dans les sources,
+   **chacun accompagné des `support_id` du pack qui le portent** ;
 6. les limites documentaires qui empêchent d’aller plus loin ;
-7. une trajectoire pédagogique cible.
+7. une trajectoire pédagogique cible ;
+8. le budget de l’ajout : ce qui est prescrit, ce qui le finance, et ce qui a été écarté faute de
+   support.
 
 Le diagnostic distingue toujours **manque de pédagogie** et **manque de matière sourcée**.
 Une réécriture n’a pas le droit d’inventer le second pour corriger le premier.
+
+### Désignation n’est pas explication
+
+Le point 5 a longtemps été appliqué à vue, l’auditeur ne disposant pas du registre des supports.
+Il le reçoit désormais : `PREPARE` précède `AUDIT`, et le pack est en entrée de l’audit.
+
+La règle qui en découle est stricte. Qu’un support **nomme** une notion n’autorise pas un texte
+qui l’**explique**. Un support qui énumère « coût », « marges de tolérance » ou « compensation »
+finance une désignation de ces notions, et rien de plus : ni leur mécanisme, ni leur montant, ni
+leur durée, ni le porteur auquel les rattacher.
+
+**Aucun ajout ne se prescrit sans citer le support qui le finance.** Faute de support, la section
+reste mince, et le gain pédagogique se cherche par retrait, fusion, déplacement ou resserrement.
+
+Cette règle a un coût mesuré. Le 2026-09-18, un audit a demandé de déplier en trois paliers une
+section dont les supports se contentaient de désigner ; les 28 échecs du gate se sont massés
+exactement dans cette section, et la carte a été rejetée après ses deux boucles. Le lot précédent,
+dont les audits prescrivaient « matière inchangée », « fondre », « ne surtout pas se développer »,
+a vu ses trois cartes obtenir `FACTCHECK_PASS`.
 
 La sortie détaillée est écrite dans l’artefact de travail de la carte ; l’orchestrateur ne doit
 pas transporter ce texte intégral dans son propre contexte.
@@ -197,6 +219,26 @@ pas transporter ce texte intégral dans son propre contexte.
 
 Une version plus courte peut être meilleure. L’augmentation du nombre de mots n’est jamais une
 preuve d’approfondissement.
+
+### Budget de croissance
+
+Le réécrivain reçoit lui aussi le pack. La règle est donc vérifiable, et non plus seulement
+recommandée :
+
+> Toute phrase ajoutée doit pouvoir citer le `support_id` qui l’autorise.
+
+Une croissance nette du texte lecteur n’est légitime que si elle est finançable support par
+support. À défaut, la réécriture raccourcit.
+
+Les petits mots comptent, parce qu’ils affirment : le genre d’un document, le porteur d’une
+propriété, la qualification d’un ensemble. Trois rejets du 2026-09-18 tiennent à cela — « ces deux
+*articles* » là où le support ne disait que « travaux », « *leur* coût » là où il énumérait
+« coût », « les marges *dont cet ensemble dispose* » là où il ne donnait aucun porteur. L’une de
+ces cartes avait 54 claims soutenus sur 56.
+
+Corrélation observée sur les six cartes auditées sous ce protocole : les trois dont le texte a
+diminué ou peu grossi (−4 %, −2 %, +9 %) ont obtenu `FACTCHECK_PASS` ; les trois qui ont grossi
+(+17 %, +22 %, +29 %) ont toutes été rejetées.
 
 Toute réécriture invalide un fact-check antérieur et impose une nouvelle préparation du pack.
 
@@ -233,4 +275,4 @@ Une carte redevient éligible si :
 - la version du protocole a augmenté ;
 - elle est demandée explicitement.
 
-La version courante du workflow est `protocol_version: 3`.
+La version courante du workflow est `protocol_version: 4`.
