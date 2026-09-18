@@ -1,152 +1,27 @@
 {
   "protocol_version": 1,
   "concept_id": "asservissement-des-activites-hors-travail",
-  "candidate_sha256": "5ba953b54cb232163735681455ae74e4f65eefba8c6dec09cad1271ddc4e2906",
+  "candidate_sha256": "71d0a37ea7377b558eefb11091165345105afbb5bf15f3d3b2b239691f686b12",
   "verdict": "FACTCHECK_FAIL",
-  "claims": 79,
-  "supported": 51,
-  "failed": 28,
+  "claims": 59,
+  "supported": 56,
+  "failed": 3,
   "structural_errors": [],
   "failures": [
     {
-      "claim_id": "C006",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support. Énoncé définitionnel sur ce qu'est un système, présenté comme un fait, sans preuve dans le bundle."
-    },
-    {
-      "claim_id": "C009",
-      "verdict": "TOO_STRONG",
-      "reason": "Le seul support atteste que Gadbois propose de considérer les activités hors travail comme un système. Il n'établit aucune interdiction méthodologique, et surtout pas l'absolu « interdit de conclure quoi que ce soit d'une activité regardée seule »."
-    },
-    {
-      "claim_id": "C010",
-      "verdict": "TOO_STRONG",
-      "reason": "Aucun élément du support ne porte sur ce qu'une observation isolée (dormir moins, sortir moins) dit ou ne dit pas. L'énoncé négatif absolu excède l'hypothèse systémique attestée."
-    },
-    {
-      "claim_id": "C011",
-      "verdict": "TOO_STRONG",
-      "reason": "« ne porte aucune information » est une affirmation épistémique absolue absente du support, qui n'atteste que le point de vue systémique de la p. 449."
-    },
-    {
-      "claim_id": "C017",
-      "verdict": "TOO_STRONG",
-      "reason": "Le support n'atteste que « elles modifient les conditions d'exécution des activités hors travail ». Il n'établit nulle part la proposition négative « ce ne sont pas les activités qui disparaissent » ; review.notes[5] mentionne au contraire un déplacement de la contrainte d'une activité sur une autre, sans autoriser cet absolu."
-    },
-    {
-      "claim_id": "C019",
-      "verdict": "UNSUPPORTED",
-      "reason": "Les supports attestent seulement que l'altération est physique et psychologique. Aucun n'établit que les deux versants empêchent des choses différentes."
-    },
-    {
-      "claim_id": "C020",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support. Le contenu limitatif prêté au versant corporel n'a aucune preuve dans le bundle."
-    },
-    {
-      "claim_id": "C021",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support. Le contenu limitatif prêté à la disponibilité mentale n'a aucune preuve dans le bundle."
-    },
-    {
-      "claim_id": "C035",
-      "verdict": "TOO_STRONG",
-      "reason": "Le support dit seulement la proposition « insuffisamment spécifiée ». Le claim en fixe le contenu précis (« elle ne dit ni quoi ni par quel chemin ») alors que la proposition attestée nomme déjà une altération de l'état du travailleur : la spécification manquante est ajoutée par le texte, non établie."
-    },
-    {
-      "claim_id": "C036",
-      "verdict": "TOO_STRONG",
-      "reason": "Le support atteste que Gadbois écarte explicitement la conception de la « simple prolongation » ou du « modelage psychique », mais il n'établit ni son caractère « répandu » ni sa fonction de comblement du vide laissé par la proposition de départ."
-    },
-    {
       "claim_id": "C039",
       "verdict": "TOO_STRONG",
-      "reason": "Le support atteste le jugement « analyse tronquée » mais aucun motif. Le claim prête à Gadbois une raison (travailleur-empreinte, disparition des arbitrages) que nul support n'établit."
-    },
-    {
-      "claim_id": "C041",
-      "verdict": "TOO_STRONG",
-      "reason": "Aucun support n'attribue à la thèse des « décisions » rendues à la personne, ni à la conception écartée le fait de les lui retirer. review.notes[5] ne fait que désigner compensations, coût, déplacement et marges de tolérance."
-    },
-    {
-      "claim_id": "C044",
-      "verdict": "TOO_STRONG",
-      "reason": "Le support ne fait que désigner la notion de compensation (sans verbatim ni définition). L'énoncé « compenser n'est pas réparer » lui donne un contenu que la seule désignation n'autorise pas."
-    },
-    {
-      "claim_id": "C045",
-      "verdict": "TOO_STRONG",
-      "reason": "« elle a changé de place » suit de la désignation du déplacement, mais « rien n'a disparu » et « la contrainte n'a pas été absorbée » sont des absolus absents du support, qui mentionne par ailleurs des marges de tolérance."
+      "reason": "review.notes[5] énumère bien « compensations, coût, déplacement de la contrainte d'une activité sur une autre, marges de tolérance », mais n'attribue les marges de tolérance à personne ; le claim les rattache au système (« dont cet ensemble dispose »). Ce même support signale au contraire que certains attributs sont chez Gadbois ceux de chaque activité et non du système, donc la spécification ajoutée n'est pas autorisée."
     },
     {
       "claim_id": "C047",
       "verdict": "TOO_STRONG",
-      "reason": "Le support ne désigne que la notion de coût. Le claim en fixe le mécanisme (prélevé ailleurs que là où la contrainte est née), contenu non attesté."
+      "reason": "notes[3] atteste seulement que l'article ne cite aucune source de théorie des systèmes ou de cybernétique ; le « rien n'est affirmé du sens technique » y porte sur la fiche, pas sur l'article. Affirmer que l'article « ne le dit pas » est une affirmation d'absence dans le texte que le support n'établit pas."
     },
     {
-      "claim_id": "C048",
-      "verdict": "TOO_STRONG",
-      "reason": "Le support ne désigne que « marges de tolérance ». Le rôle fonctionnel et la limitation temporelle (« un moment ») ne sont pas attestés."
-    },
-    {
-      "claim_id": "C049",
-      "verdict": "TOO_STRONG",
-      "reason": "Quantité encaissée avant de céder et consommation de la réserve sont un contenu substantiel que la seule désignation des marges de tolérance n'autorise pas."
-    },
-    {
-      "claim_id": "C050",
-      "verdict": "TOO_STRONG",
-      "reason": "Effet variable d'une même contrainte selon la réserve restante : dérivation non attestée par la seule désignation de la notion."
-    },
-    {
-      "claim_id": "C051",
-      "verdict": "TOO_STRONG",
-      "reason": "Le claim attribue au modèle un pouvoir explicatif précis (charge longue puis rupture sur contrainte minuscule) que le support, qui ne fait que nommer les notions p. 451-453, n'établit pas."
-    },
-    {
-      "claim_id": "C052",
-      "verdict": "UNSUPPORTED",
-      "reason": "Le support ne dit rien de deux erreurs d'attribution causale ; aucun élément ne fonde cet énoncé."
-    },
-    {
-      "claim_id": "C053",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun contenu du support ne porte sur la recherche de la cause dans l'activité perdue."
-    },
-    {
-      "claim_id": "C054",
-      "verdict": "TOO_STRONG",
-      "reason": "La désignation des notions (compensations, déplacement, marges) n'autorise pas l'énoncé sur l'activité qui cède en tant qu'ultime variable d'ajustement ; notes[5] rappelle seulement qu'aucun résultat n'est mesuré."
-    },
-    {
-      "claim_id": "C055",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun contenu du support ne porte sur l'erreur consistant à chercher la cause dans le dernier incident."
-    },
-    {
-      "claim_id": "C056",
-      "verdict": "TOO_STRONG",
-      "reason": "Contenu dérivé de la notion de réserve épuisée, que la seule désignation des marges de tolérance ne fonde pas."
-    },
-    {
-      "claim_id": "C057",
-      "verdict": "UNSUPPORTED",
-      "reason": "Conclusion générale sur la cause apparente sans aucun élément correspondant dans le support."
-    },
-    {
-      "claim_id": "C075",
+      "claim_id": "C058",
       "verdict": "SOURCE_NOT_CONSULTED",
-      "reason": "L'article de 1975 n'a pas été ouvert (notes[4] : « Aucun de ces textes n'a été ouvert »). Les supports attestent seulement que l'article de 1980 renvoie à « des difficultés et des insuffisances que nous avons eu l'occasion d'analyser ailleurs ». Affirmer ce que le texte de 1975 analyse est une affirmation sur le contenu d'une source non consultée."
-    },
-    {
-      "claim_id": "C078",
-      "verdict": "TOO_STRONG",
-      "reason": "Les supports établissent la direction annoncée de l'article de 1980 (titre, geste p. 449), mais aucun n'établit l'absence d'examen du sens inverse. Inférer cette absence du silence des supports n'est pas une preuve."
-    },
-    {
-      "claim_id": "C079",
-      "verdict": "SOURCE_NOT_CONSULTED",
-      "reason": "La seconde partie du claim oriente le lecteur vers l'article de 1975 comme lieu du sens inverse, c'est-à-dire vers son contenu, alors que seuls le titre et une mention sont attestés et que notes[4] indique que ce texte n'a pas été ouvert."
+      "reason": "notes[4] indique que l'article de 1975 n'a pas été ouvert ; seuls son titre et son lieu de publication sont attestés. Dire que ce titre nomme « donc aussi le sens inverse : ce que la vie hors travail fait, en retour, à la vie de travail » est une inférence sur le contenu de cet article tirée de son seul titre."
     }
   ]
 }
