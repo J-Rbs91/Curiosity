@@ -1,0 +1,251 @@
+{
+  "concept_id": "attente-du-poste-aval",
+  "candidate_sha256": "e4185be14f3c35b3af953b1d61bbc82585f7ab237089a00c75d5bf417bcbcbf5",
+  "results": [
+    {
+      "claim_id": "C001",
+      "verdict": "SUPPORTED",
+      "reason": "Les supports etablissent que l'ordre modifie le temps total (47 contre 78 sur l'exemple verifie), donc que le rang compte."
+    },
+    {
+      "claim_id": "C002",
+      "verdict": "SUPPORTED",
+      "reason": "Le resume valide pose que la charge du second poste ne depend pas de l'ordre ; l'espoir de faire travailler la machine plus vite est donc exclu par les supports."
+    },
+    {
+      "claim_id": "C003",
+      "verdict": "SUPPORTED",
+      "reason": "La p. 11 citee dans review.notes[6] donne le total comme I_n + somme des b_i, avec somme des b_i invariante par permutation ; l'invariance de la somme sur le meme jeu de pieces est exactement ce qui est affirme."
+    },
+    {
+      "claim_id": "C004",
+      "verdict": "SUPPORTED",
+      "reason": "L'ecart 47 / 78 entre le meilleur ordre et l'ordre renverse, lu sur piece et recalcule par le controle, autorise 'considerable' sans quantification abusive."
+    },
+    {
+      "claim_id": "C005",
+      "verdict": "SUPPORTED",
+      "reason": "review.notes[6] atteste que la page 11 du rapport de Bellman porte la decomposition I_n + somme des b_i ; l'attribution reste celle de l'expose du rapport, signe Bellman."
+    },
+    {
+      "claim_id": "C006",
+      "verdict": "SUPPORTED",
+      "reason": "quotation.reference, sources[0].label et la couverture lue (P-651, Revised 23 May 1955) donnent exactement rapport RAND revise en mai 1955."
+    },
+    {
+      "claim_id": "C007",
+      "verdict": "SUPPORTED",
+      "reason": "attribution_note et notes[1] etablissent que Bellman credite lui-meme le resultat a S. Johnson (paragraphes 3 et 4, renvoi a son article)."
+    },
+    {
+      "claim_id": "C008",
+      "verdict": "SUPPORTED",
+      "reason": "L'identite total = I_n + somme des b_i, avec x_i defini comme temps d'inactivite avant traitement, partage bien le temps du second poste entre travail et attente, sans troisieme terme dans le modele des supports."
+    },
+    {
+      "claim_id": "C009",
+      "verdict": "SUPPORTED",
+      "reason": "Reformulation exacte de total = somme des attentes + somme des durees de travail du second poste, portee par review.notes[6] et le resume."
+    },
+    {
+      "claim_id": "C010",
+      "verdict": "SUPPORTED",
+      "reason": "L'invariance par permutation de la somme des b_i est explicitement portee par review.notes[6] et le resume."
+    },
+    {
+      "claim_id": "C011",
+      "verdict": "SUPPORTED",
+      "reason": "'L'ordonnancement n'agit que sur cette attente' (resume) autorise exactement cette formulation."
+    },
+    {
+      "claim_id": "C012",
+      "verdict": "SUPPORTED",
+      "reason": "review.notes[6] localise la decomposition sur la page 11 (feuillet n14), lue sur image ; sources[0].locator couvre p. 11-15."
+    },
+    {
+      "claim_id": "C013",
+      "verdict": "SUPPORTED",
+      "reason": "Citation verbatim identique a la phrase de la page 11 relevee sur image dans review.notes[6]."
+    },
+    {
+      "claim_id": "C014",
+      "verdict": "SUPPORTED",
+      "reason": "review.notes[6] cite 'The total idle time on the second machine is the sum I_n = somme des x_i'."
+    },
+    {
+      "claim_id": "C015",
+      "verdict": "SUPPORTED",
+      "reason": "review.notes[6] cite 'the total time required for the process is I_n + somme des b_i' ; la paraphrase n'ajoute rien."
+    },
+    {
+      "claim_id": "C016",
+      "verdict": "SUPPORTED",
+      "reason": "Citation verbatim de la page 11 et de la suite 'it is this quantity which we wish to minimize', toutes deux dans review.notes[6]."
+    },
+    {
+      "claim_id": "C017",
+      "verdict": "SUPPORTED",
+      "reason": "Consequence directe de 'we may take I_n as our measure of the efficiency of a scheduling of operations' et de l'action de l'ordonnancement limitee a l'attente."
+    },
+    {
+      "claim_id": "C018",
+      "verdict": "SUPPORTED",
+      "reason": "quotation.locator p. 15 et review.notes[2], qui verifie le decalage feuillet/page et lit l'exemple chiffre sous le tableau du feuillet n18 = p. 15."
+    },
+    {
+      "claim_id": "C019",
+      "verdict": "SUPPORTED",
+      "reason": "notes[11] donne exactement (a_i, b_i) = (4,5), (4,1), (30,4), (6,30), (2,3) pour cinq articles, premiere puis seconde machine."
+    },
+    {
+      "claim_id": "C020",
+      "verdict": "SUPPORTED",
+      "reason": "notes[7] atteste que la somme des temps du second poste vaut 43 ; l'addition enoncee reprend les b_i de notes[11]."
+    },
+    {
+      "claim_id": "C021",
+      "verdict": "SUPPORTED",
+      "reason": "Combinaison de la valeur 43 (notes[7], notes[11]) et de l'invariance par permutation de la somme des b_i (review.notes[6], resume)."
+    },
+    {
+      "claim_id": "C022",
+      "verdict": "SUPPORTED",
+      "reason": "quotation.original_text lue sur piece : 'The rule yields (5, 1, 4, 3, 2) as the minimal order'."
+    },
+    {
+      "claim_id": "C023",
+      "verdict": "SUPPORTED",
+      "reason": "Citation verbatim identique au champ original_text, dont review.quotation confirme le statut verbatim et review.notes[2] la presence mot pour mot p. 15."
+    },
+    {
+      "claim_id": "C024",
+      "verdict": "SUPPORTED",
+      "reason": "notes[7] pose explicitement 43 de travail plus 4 d'attente egale 47 ; notes[11] confirme les 4 unites d'inactivite."
+    },
+    {
+      "claim_id": "C025",
+      "verdict": "SUPPORTED",
+      "reason": "78 est lu sur piece pour l'ordre renverse, 43 est la charge invariante du second poste ; l'ecart 35 suit de l'identite total = travail + attente portee par review.notes[6]."
+    },
+    {
+      "claim_id": "C026",
+      "verdict": "SUPPORTED",
+      "reason": "78 moins 47 egale 31 a partir de valeurs attestees, et la constance de la charge du second poste impose que cet ecart soit entierement de l'attente."
+    },
+    {
+      "claim_id": "C027",
+      "verdict": "SUPPORTED",
+      "reason": "Suit de l'identite total = travail invariant + attente : l'attente observee du poste aval borne ce que l'ordonnancement peut rendre. Formule comme une mesure de ce qu'il y a a esperer, sans promettre le gain."
+    },
+    {
+      "claim_id": "C028",
+      "verdict": "SUPPORTED",
+      "reason": "Plafond de gain autorise par 'L'ordonnancement n'agit que sur cette attente' ; le texte ne promet pas d'atteindre ce plafond, ce que la suite dement d'ailleurs explicitement."
+    },
+    {
+      "claim_id": "C029",
+      "verdict": "SUPPORTED",
+      "reason": "Si l'attente est nulle, le total se reduit a la charge invariante du second poste, minimum atteignable selon les supports ; aucun gain d'ordonnancement ne reste possible."
+    },
+    {
+      "claim_id": "C030",
+      "verdict": "SUPPORTED",
+      "reason": "L'ordre minimal de l'exemple conserve 4 unites d'inactivite selon quotation.original_text et notes[11] : la reduction ne va pas a zero."
+    },
+    {
+      "claim_id": "C031",
+      "verdict": "SUPPORTED",
+      "reason": "'minimal order with a total time of 47 units, and 4 units of idle time' lu sur piece, confirme par le recalcul de notes[11] et par notes[7]."
+    },
+    {
+      "claim_id": "C032",
+      "verdict": "SUPPORTED",
+      "reason": "Cadre a deux postes porte par le hook, le resume (poste amont / poste aval) et review.notes[6], qui borne la portee au cas a deux machines avec une duree b_i par article sur le second poste."
+    },
+    {
+      "claim_id": "C033",
+      "verdict": "SUPPORTED",
+      "reason": "review.notes[6] dit expressement que le cas a deux machines est celui de la partie I du rapport ; sources[0].locator p. 11-15 s'y rapporte."
+    },
+    {
+      "claim_id": "C034",
+      "verdict": "SUPPORTED",
+      "reason": "Enonce conditionnel : l'invariance de la somme des b_i, telle que posee par review.notes[6], repose sur des durees attachees a chaque article ; sa levee touche bien le premier terme. Rien n'est presente comme affirmation du rapport, et le titre de Johnson mentionne les temps de reglage."
+    },
+    {
+      "claim_id": "C035",
+      "verdict": "SUPPORTED",
+      "reason": "Claim strictement metadonnee : le titre porte en sources[1].label dit 'two- and three-stage production schedules with setup times included', et review.notes[5] atteste le renvoi de Bellman a cet article. Aucun contenu intellectuel n'est tire de cette source metadata-only."
+    },
+    {
+      "claim_id": "C036",
+      "verdict": "SUPPORTED",
+      "reason": "attribution_note, la couverture lue (review.notes[1]) et authors[0] donnent un auteur unique, Richard Bellman."
+    },
+    {
+      "claim_id": "C037",
+      "verdict": "SUPPORTED",
+      "reason": "attribution_note et notes[1] : le resultat sur deux postes est credite a S. Johnson par Bellman lui-meme."
+    },
+    {
+      "claim_id": "C038",
+      "verdict": "SUPPORTED",
+      "reason": "Citation verbatim de la p. 8 relevee dans notes[1], avec attribution correcte a Bellman ecrivant dans son rapport."
+    },
+    {
+      "claim_id": "C039",
+      "verdict": "SUPPORTED",
+      "reason": "Titres de paragraphes lus sur image dans review.notes[5] (paragraphe 3 'Lemmas of S. Johnson', paragraphe 4 'The Result of S. Johnson'), confirmes par attribution_note."
+    },
+    {
+      "claim_id": "C040",
+      "verdict": "SUPPORTED",
+      "reason": "notes[1] : 'La decomposition en temps d'inactivite appartient au paragraphe 3, intitule Lemmas of S. Johnson'."
+    },
+    {
+      "claim_id": "C041",
+      "verdict": "SUPPORTED",
+      "reason": "Citation verbatim identique a la phrase du feuillet n16 (p. 13) lue sur image dans review.notes[5], egalement citee en abrege par notes[1]."
+    },
+    {
+      "claim_id": "C042",
+      "verdict": "SUPPORTED",
+      "reason": "review.notes[5] identifie l'entree [5] comme l'article de Johnson de mars 1954 ; sources[1] donne p. 61-68, soit huit pages, donnee purement bibliographique."
+    },
+    {
+      "claim_id": "C043",
+      "verdict": "SUPPORTED",
+      "reason": "attribution_note limite l'apport de Bellman a l'expose, l'exemple et une rederivation ; review.notes[5] situe cette rederivation au paragraphe 6, par equation fonctionnelle et programmation dynamique. La formulation reste en deca du support."
+    },
+    {
+      "claim_id": "C044",
+      "verdict": "SUPPORTED",
+      "reason": "review.notes[7] constate le rapport P-651 atteint en entier via Internet Archive et le texte integral de Johnson 1954 reste inaccessible : l'effort d'acces differe bien."
+    },
+    {
+      "claim_id": "C045",
+      "verdict": "SUPPORTED",
+      "reason": "sources[0].label (70 p., revise le 23 mai 1955), notes[5] ('rapport technique de la RAND Corporation, non un article publie') et notes[0] pour la date."
+    },
+    {
+      "claim_id": "C046",
+      "verdict": "SUPPORTED",
+      "reason": "notes[8] constate l'acces public de l'item DTIC_AD0604647 ; review.notes[0] et notes[9] attestent la lecture des images de feuillets, dont n18 correspondant a la page 15."
+    },
+    {
+      "claim_id": "C047",
+      "verdict": "SUPPORTED",
+      "reason": "notes[3] releve mot pour mot l'inversion 'Naval Logistics Research Quarterly' dans le rapport et la forme juste portee en source."
+    },
+    {
+      "claim_id": "C048",
+      "verdict": "SUPPORTED",
+      "reason": "notes[2] atteste que Bellman n'ecrit que l'initiale, et sources[1].label / review.notes[4] donnent 'S. M. Johnson' par la notice Crossref."
+    },
+    {
+      "claim_id": "C049",
+      "verdict": "SUPPORTED",
+      "reason": "Enonce explicitement rapporte ('a en croire le renvoi de la page 13') : le renvoi est verbatim dans review.notes[5], et l'intermediaire est conserve, ce que confirme l'echec d'acces documente en review.notes[7]."
+    }
+  ]
+}
