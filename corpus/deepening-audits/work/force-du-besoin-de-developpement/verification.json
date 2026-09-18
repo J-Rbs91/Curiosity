@@ -1,281 +1,271 @@
 {
   "concept_id": "force-du-besoin-de-developpement",
-  "candidate_sha256": "fc7d8938a27067ef5d9ecce56f6260dc2d964f73b47f7ebb351f0354bb67af16",
+  "candidate_sha256": "e0f8cc4618f924236b5bf41403c9ec7927ce77df1e1c35e2e1458097961fff20",
   "results": [
     {
       "claim_id": "C001",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support résolu. L'énoncé attribue une attribution causale répandue (« on met en général ») à un usage social que rien dans le bundle n'établit."
+      "verdict": "SUPPORTED",
+      "reason": "La citation p. 4 et la note de traduction (« ce sont bien les auteurs qui déclarent ne pas l'attendre ») établissent que la réserve vient du texte même des auteurs qui exposent la théorie ; aucune portée ajoutée."
     },
     {
       "claim_id": "C002",
       "verdict": "SUPPORTED",
-      "reason": "SUP-8463ec693f1d9f83 et SUP-0f85a4947c2d79b5 établissent que la réserve sur l'efficacité inégale figure dans le texte des auteurs de la théorie eux-mêmes ; le claim n'affirme rien de plus qu'une autre lecture issue d'eux."
+      "reason": "attribution_note et sources[0].label portent conjointement Hackman, Oldham, Technical Report No. 4 du Department of Administrative Sciences de Yale, mai 1974 ; les deux noms figurent en authors[0] et [1]."
     },
     {
       "claim_id": "C003",
       "verdict": "SUPPORTED",
-      "reason": "Page de titre lue (SUP-28a4fa2fe9254486, SUP-c604a94416e464a0, SUP-46db82f6ac3e7439) : Technical Report No. 4, Department of Administrative Sciences, Yale University, mai 1974, signé conjointement par J. Richard Hackman et Greg R. Oldham. Métadonnées exactes."
+      "reason": "« The theory is not expected to \"work\" with equal effectiveness for all individuals » est bien un énoncé écrit par les auteurs sur la portée de ce qu'ils avancent ; aucun résultat n'est invoqué, le claim reste au niveau de ce qu'ils écrivent."
     },
     {
       "claim_id": "C004",
       "verdict": "SUPPORTED",
-      "reason": "SUP-48c05c222a4125cf et SUP-f2b12e5db86232a5 (relecture sur image, p. 4) donnent verbatim « The theory is not expected to \"work\" with equal effectiveness for all individuals. » Le claim en reste à ce contenu, sans durcissement."
+      "reason": "notes[3] donne les deux versants de la p. 4 (réponse très positive contre « may find such a job anxiety-arousing »), notes[2] nomme growth need strength comme modérateur : la théorie prévoit ce cas et en désigne le facteur distinctif. « Les trois autres » renvoie au scénario explicitement hypothétique, non à un fait."
     },
     {
       "claim_id": "C005",
       "verdict": "SUPPORTED",
-      "reason": "SUP-0f85a4947c2d79b5 montre que la p. 4 prévoit explicitement le cas des individus qui ne valorisent pas le développement personnel, et SUP-0c5c2e55511ca07c que la théorie nomme la force du besoin de développement comme modérateur : le cas est bien prévu et son critère de distinction nommé."
+      "reason": "notes[3] rapporte les deux phrases voisines de la p. 4 (versant positif dans la phrase précédente, versant anxiogène ensuite) ; locator « p. 4 » confirmé par quotation.locator et sources[0].locator."
     },
     {
       "claim_id": "C006",
       "verdict": "SUPPORTED",
-      "reason": "SUP-0f85a4947c2d79b5 atteste deux phrases contiguës de la p. 4, l'une pour ceux qui valorisent fortement le développement, l'autre pour ceux qui ne le valorisent pas ; SUP-43cb5037f47995be et SUP-74f9a53ac00c7d14 confirment la localisation p. 4."
+      "reason": "notes[3] : « ceux qui valorisent fortement l'accomplissement et le développement personnels devraient au contraire répondre très positivement à un emploi à fort potentiel motivant » ; review.notes[9] atteste la présence de « a job high in motivating potential » dans le rapport."
     },
     {
       "claim_id": "C007",
       "verdict": "SUPPORTED",
-      "reason": "SUP-0f85a4947c2d79b5 rend la phrase précédente de la p. 4 (réponse très positive attendue de ceux qui valorisent fortement accomplissement et développement) et SUP-4e4eaf096d124277 atteste l'expression « a job high in motivating potential » comme antécédent de « such a job ». Le modal « devraient » est conservé."
+      "reason": "notes[3] indique que la phrase sur l'anxiété suit la phrase à versant positif (« la phrase précédente disant que… ») : la succession immédiate et l'attribution aux auteurs sont portées par le support."
     },
     {
       "claim_id": "C008",
       "verdict": "SUPPORTED",
-      "reason": "Citation verbatim présente dans SUP-0f85a4947c2d79b5 et SUP-4e4eaf096d124277 ; l'ordre des deux phrases (« la phrase précédente ») autorise « aussitôt après »."
+      "reason": "Fragment strictement verbatim présent dans notes[3] et review.notes[9] ; aucun mot ajouté ni durci, et le claim ne présente pas le fragment comme la phrase complète."
     },
     {
       "claim_id": "C009",
       "verdict": "SUPPORTED",
-      "reason": "SUP-4e4eaf096d124277 donne « may be uncomfortably \"stretched\" by it » ; SUP-4e810e6eac5ba350 documente la lecture du guillemet fermant. Le claim conserve le modal « peuvent »."
+      "reason": "review.notes[9] donne « and may be uncomfortably \"stretched\" by it » ; le modal « peuvent » conserve « may » et « stretched » est bien le mot employé, entre guillemets dans l'original."
     },
     {
       "claim_id": "C010",
       "verdict": "SUPPORTED",
-      "reason": "Les deux phrases attestées (SUP-0f85a4947c2d79b5, SUP-4e4eaf096d124277) opposent une réponse très positive à un inconfort décrit comme anxiogène et « stretched », non à une motivation moindre ; le claim garde le modal « peut aller jusqu'à »."
+      "reason": "Les supports donnent pour le second versant « anxiety-arousing » et « uncomfortably stretched », termes d'une autre nature qu'une motivation moindre ; le modal est conservé par « peut aller jusqu'à »."
     },
     {
       "claim_id": "C011",
       "verdict": "SUPPORTED",
-      "reason": "SUP-4e4eaf096d124277 atteste le modal « may » et son maintien en « peut » : le claim énonce exactement cette distinction possibilité / fait."
+      "reason": "review.notes[9] : « Le modal \"peut\" conserve \"may\" » ; le claim explicite exactement cette distinction possibilité/fait."
     },
     {
       "claim_id": "C012",
       "verdict": "SUPPORTED",
-      "reason": "SUP-4e4eaf096d124277 établit que « such a job » renvoie au même « job high in motivating potential » dans les deux phrases, et SUP-0f85a4947c2d79b5 que la variable distinctive est la valorisation de l'accomplissement et du développement personnels."
+      "reason": "Le support atteste le modal « may » et l'absence de tout durcissement ; l'énoncé ne fait qu'en tirer le statut de possibilité."
     },
     {
       "claim_id": "C013",
       "verdict": "SUPPORTED",
-      "reason": "SUP-b35f03cc5cc4a115 (titre) et SUP-0c5c2e55511ca07c (« growth need strength », phrase verbatim de la p. 4) établissent que le nom de la notion porte bien le terme de force."
+      "reason": "review.notes[9] établit que « such a job » renvoie à « a job high in motivating potential » (même emploi dans les deux phrases) et notes[3] que la variable est la valorisation de l'accomplissement et du développement personnels."
     },
     {
       "claim_id": "C014",
       "verdict": "SUPPORTED",
-      "reason": "SUP-c29c26f776666b70 atteste « the JDS taps the strength of the respondent's desire… » et le statut de caractéristique différentielle non figée ; SUP-0c5c2e55511ca07c nomme « growth need strength ». Une force se dit bien en intensité, non en présence/absence."
+      "reason": "Le titre validé et notes[2] portent la dénomination « growth need strength » / « force du besoin de développement » : le mot force appartient bien au nom technique de la notion."
     },
     {
       "claim_id": "C015",
       "verdict": "SUPPORTED",
-      "reason": "SUP-c29c26f776666b70 contient verbatim le fragment « the JDS taps the strength of the respondent's desire… » (p. 6), dont le sujet est l'instrument : le claim le présente précisément comme la description de ce que le questionnaire capte. Aucune interdiction de citation n'est portée par ce support."
+      "reason": "notes[4] cite « the JDS taps the strength of the respondent's desire » et qualifie le besoin de caractéristique malléable ; notes[2] nomme growth need strength : il s'agit d'une intensité, non d'un attribut binaire."
     },
     {
       "claim_id": "C016",
       "verdict": "SUPPORTED",
-      "reason": "SUP-0c5c2e55511ca07c donne la phrase verbatim de la p. 4 nommant « growth need strength ». La glose française reprend les termes du support sans ajout."
+      "reason": "notes[4] porte verbatim « the JDS taps the strength of the respondent's desire… » dans une phrase décrivant l'instrument ; l'attribution aux auteurs et le glose français correspondent."
     },
     {
       "claim_id": "C017",
       "verdict": "SUPPORTED",
-      "reason": "Le terme attesté dans SUP-0c5c2e55511ca07c est bien « growth need strength » et SUP-c29c26f776666b70 parle de « the strength of the respondent's desire » : c'est la force qui est nommée."
+      "reason": "notes[2] cite verbatim « growth need strength is shown in Figure 1 as a moderator… » (p. 4) et review.notes[1] confirme que le terme est de Hackman et Oldham ; le titre validé donne l'équivalent français."
     },
     {
       "claim_id": "C018",
       "verdict": "SUPPORTED",
-      "reason": "Lecture explicitement présentée comme telle (« on peut alors relire ») et soutenue par SUP-c29c26f776666b70 (grandeur d'intensité, caractéristique malléable) et SUP-0f85a4947c2d79b5 (les deux phrases). Aucune affirmation primaire nouvelle n'est attribuée aux auteurs."
+      "reason": "Le nom relevé dans notes[2] comporte « strength », et notes[4] parle de « the strength of the respondent's desire » : c'est bien la force, non la présence, qui est nommée."
     },
     {
       "claim_id": "C019",
-      "verdict": "TOO_STRONG",
-      "reason": "Les supports (SUP-46db82f6ac3e7439, titre du rapport ; SUP-c29c26f776666b70, caractéristique malléable mesurée en force) ne disent rien de la question « utile » devant un projet de refonte et n'établissent pas l'énoncé absolu « à quoi rien ne permet de répondre ». Prescription pratique et impossibilité totale excèdent la preuve fournie."
+      "verdict": "SUPPORTED",
+      "reason": "Lecture donnée comme possible (« On peut alors relire »), cohérente avec notes[3] (deux versants d'un même emploi) et notes[4] (force du désir, caractéristique non figée) ; aucune assertion de fait ajoutée."
     },
     {
       "claim_id": "C020",
       "verdict": "SUPPORTED",
-      "reason": "SUP-c29c26f776666b70 établit que le JDS capte la force du désir du répondant et SUP-46db82f6ac3e7439 que l'instrument sert au diagnostic ; la formulation reste prudente (« peut au moins chercher la mesure »)."
+      "reason": "notes[4] : le JDS capte la force du désir du répondant ; le claim reste au « peut au moins chercher la mesure », sans prétendre à une mesure établie."
     },
     {
       "claim_id": "C021",
       "verdict": "SUPPORTED",
-      "reason": "SUP-0f85a4947c2d79b5 montre que les deux phrases de la p. 4 rapportent un emploi à fort potentiel motivant à la réponse de l'individu ; SUP-43cb5037f47995be confirme la page."
+      "reason": "Les deux phrases rapportées par notes[3] et review.notes[9] relient bien un emploi (fort potentiel motivant) à la réponse des individus qui l'occupent."
     },
     {
       "claim_id": "C022",
       "verdict": "SUPPORTED",
-      "reason": "SUP-0c5c2e55511ca07c donne « the other relationships specified by the theory » (pluriel) et le statut de modérateur ; SUP-665c8b51b107b031 confirme qu'il s'agit de ce que la théorie pose."
+      "reason": "notes[2] cite « the other relationships specified by the theory » : le pluriel est dans le support."
     },
     {
       "claim_id": "C023",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support résolu. La définition générale d'un modérateur (n'ajoute ni ne retranche, décide de la force du lien) n'est établie par aucune preuve du bundle."
+      "verdict": "SUPPORTED",
+      "reason": "notes[2] donne le statut de modérateur et review.notes[8] rappelle qu'il s'agit de ce que la théorie/figure pose : « une place particulière » ne dit pas plus."
     },
     {
       "claim_id": "C024",
-      "verdict": "TOO_STRONG",
-      "reason": "SUP-0c5c2e55511ca07c n'établit que la place de modérateur posée en Figure 1. L'énoncé sur l'amplitude produite par « le même changement apporté au poste » — beaucoup, un peu, ou rien — ajoute une gradation et un effet nul que le support ne porte pas, et glisse vers un énoncé d'effet absent de la p. 4."
+      "verdict": "SUPPORTED",
+      "reason": "Citation reproduite verbatim et sans coupe depuis notes[2] (p. 4, feuillet n7), attribuée aux auteurs du rapport."
     },
     {
       "claim_id": "C025",
       "verdict": "SUPPORTED",
-      "reason": "SUP-0c5c2e55511ca07c atteste verbatim que les auteurs placent « growth need strength » comme modérateur des autres relations, et SUP-665c8b51b107b031 que c'est bien ce que la figure pose."
+      "reason": "La phrase citée dans notes[2] place growth need strength « as a moderator of the other relationships specified by the theory » dans la Figure 1 ; review.notes[8] confirme qu'il s'agit de ce que la figure pose. Le rôle de modérateur exclut bien un maillon en amont ou en aval."
     },
     {
       "claim_id": "C026",
       "verdict": "SUPPORTED",
-      "reason": "Citation identique au verbatim de SUP-0c5c2e55511ca07c, donné comme relu p. 4, feuillet n7, sans coupe."
+      "reason": "review.notes[3] situe la phrase p. 4, ouvrant le dernier paragraphe plein, dans une section courant p. 2-4 et suivie d'un nouveau titre de section : la clause n'est donc pas en fin de volume."
     },
     {
       "claim_id": "C027",
       "verdict": "SUPPORTED",
-      "reason": "SUP-0c5c2e55511ca07c place la force du besoin en Figure 1 comme modérateur « of the other relationships specified by the theory » : le claim en reste à cette position sur les relations, non dans la chaîne, et SUP-665c8b51b107b031 confirme le registre (ce que la figure pose)."
+      "reason": "translation.kind = in-house et la note du traducteur (traduction interne non publiée, aucune traduction française publiée identifiée) autorisent exactement la présentation comme rendu possible en français, sans attribution à une traduction publiée."
     },
     {
       "claim_id": "C028",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support résolu. L'argument sur l'agrégation des moyennes n'est adossé à aucune preuve du bundle."
+      "verdict": "SUPPORTED",
+      "reason": "Reproduction exacte de quotation.text, guillemets internes sur « marche » compris, conformément à la note de traduction."
     },
     {
       "claim_id": "C029",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support résolu. L'énoncé sur ce qu'un effet moyen faible peut recouvrir n'est établi par aucune preuve du bundle."
+      "verdict": "SUPPORTED",
+      "reason": "review.notes[3] : « La phrase citée y ouvre le dernier paragraphe plein » de la p. 4."
     },
     {
       "claim_id": "C030",
       "verdict": "SUPPORTED",
-      "reason": "SUP-74f9a53ac00c7d14 situe la phrase p. 4, dans la section « Conceptual Basis of the Instrument » (p. 2–4), et SUP-43cb5037f47995be confirme le locator : la clause n'est pas en fin de document."
+      "reason": "review.notes[3] : la phrase vient « juste après la formule du Motivating Potential Score », ce qui place cette formule immédiatement au-dessus."
     },
     {
       "claim_id": "C031",
       "verdict": "SUPPORTED",
-      "reason": "Le français cité est identique à SUP-8463ec693f1d9f83 ; SUP-48c05c222a4125cf donne l'original, SUP-520c61d935611e51 et SUP-bb17d922c44f1d5b déclarent la traduction interne, ce que le texte lecteur signale (« telle qu'on peut la rendre en français »)."
+      "reason": "review.notes[3] : la phrase « précède immédiatement le titre de section suivant \"Summary of Concepts Measured by the Job Diagnostic Survey\" »."
     },
     {
       "claim_id": "C032",
       "verdict": "SUPPORTED",
-      "reason": "SUP-74f9a53ac00c7d14 dit littéralement que la phrase ouvre le dernier paragraphe plein de la p. 4."
+      "reason": "Conséquence positionnelle directe de review.notes[3] : la réserve suit immédiatement la formule du score, donc l'endroit où celui-ci vient d'être donné à calculer."
     },
     {
       "claim_id": "C033",
       "verdict": "SUPPORTED",
-      "reason": "SUP-74f9a53ac00c7d14 place la phrase juste après la formule du Motivating Potential Score et immédiatement avant le titre « Summary of Concepts Measured by the Job Diagnostic Survey »."
+      "reason": "quotation.original_text porte les guillemets internes sur « work » et review.notes[2] atteste la lecture sur image, guillemets compris, sans coupe."
     },
     {
       "claim_id": "C034",
       "verdict": "SUPPORTED",
-      "reason": "Conséquence directe de la localisation attestée par SUP-74f9a53ac00c7d14 (réserve immédiatement après la formule du score) ; aucune portée nouvelle n'est ajoutée."
+      "reason": "La note du traducteur dit expressément : « Les guillemets de \"work\" sont conservés sur \"marche\" », et quotation.text les porte."
     },
     {
       "claim_id": "C035",
       "verdict": "SUPPORTED",
-      "reason": "SUP-48c05c222a4125cf et SUP-f2b12e5db86232a5 attestent les guillemets internes autour de « work » dans l'original, relus sur image."
+      "reason": "La citation porte sur le fait que la théorie n'est pas attendue comme « marchant » avec la même efficacité pour tous, et review.notes[8] en fixe le statut d'attendu théorique ; le claim conserve « attendu » et ne parle ni de fausseté ni de résultat empirique."
     },
     {
       "claim_id": "C036",
       "verdict": "SUPPORTED",
-      "reason": "SUP-bb17d922c44f1d5b déclare que les guillemets de « work » sont conservés sur « marche », ce que confirme SUP-8463ec693f1d9f83."
+      "reason": "notes[4] : p. 6, les auteurs qualifient ce besoin de « malleable individual difference characteristic » dans une phrase décrivant ce que le JDS capte ; p. 6 est bien deux pages après la p. 4 des autres supports du dossier."
     },
     {
       "claim_id": "C037",
       "verdict": "SUPPORTED",
-      "reason": "SUP-48c05c222a4125cf porte sur l'efficacité du fonctionnement attendu, non sur la validité ; SUP-665c8b51b107b031 souligne qu'il s'agit d'un attendu théorique. Le claim maintient explicitement le registre de l'attendu."
+      "reason": "Glose littérale de « malleable individual difference characteristic » telle que citée dans notes[4], sans ajout."
     },
     {
       "claim_id": "C038",
       "verdict": "SUPPORTED",
-      "reason": "SUP-c29c26f776666b70 situe « malleable individual difference characteristic » p. 6 dans la description de ce que le JDS capte ; SUP-43cb5037f47995be fixe le point de départ p. 4, d'où « deux pages plus loin »."
+      "reason": "notes[4] : « son sujet grammatical étant l'instrument (\"the JDS taps the strength of the respondent's desire…\") »."
     },
     {
       "claim_id": "C039",
       "verdict": "SUPPORTED",
-      "reason": "Glose française littérale de l'expression attestée par SUP-c29c26f776666b70, sans ajout de portée."
+      "reason": "notes[4] : « ce n'est pas présenté comme un trait figé » ; le claim reste sur le mode de présentation, sans affirmer la nature du besoin."
     },
     {
       "claim_id": "C040",
       "verdict": "SUPPORTED",
-      "reason": "SUP-c29c26f776666b70 précise que le sujet grammatical de la phrase est l'instrument (« the JDS taps… »), non la personne."
+      "reason": "Conséquence explicitement conditionnée (« Tenu pour une caractéristique malléable ») de la qualification « malleable » relevée p. 6 par notes[4] ; aucune attribution primaire ni affirmation causale."
     },
     {
       "claim_id": "C041",
       "verdict": "SUPPORTED",
-      "reason": "SUP-c29c26f776666b70 dit expressément que ce besoin n'est pas présenté comme un trait figé ; le claim reste dans cette négation, au conditionnel de la possession binaire."
+      "reason": "notes[4] indique que ce besoin « n'est pas présenté comme un trait figé » : la lecture en trait stable excède donc le texte et c'est « malleable » qui soutient la seconde lecture."
     },
     {
       "claim_id": "C042",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support résolu. Le scénario de tri des personnes et de distribution des emplois d'après un classement n'est adossé à aucune preuve du bundle."
+      "verdict": "SUPPORTED",
+      "reason": "quotation.original_text est bien au passif sans agent nommé, et la note de traduction qualifie explicitement « le passif anglais »."
     },
     {
       "claim_id": "C043",
       "verdict": "SUPPORTED",
-      "reason": "SUP-c29c26f776666b70 qualifie le besoin de caractéristique malléable et non figée, et le rapporte à une mesure par l'instrument : la lecture proposée (état mesuré à un moment, non clos) reste à l'intérieur de cette qualification, et est donnée sous condition explicite."
+      "reason": "La note de traduction validée porte exactement cette attribution : « ce sont bien les auteurs qui déclarent ne pas l'attendre », dans leur propre rapport."
     },
     {
       "claim_id": "C044",
       "verdict": "SUPPORTED",
-      "reason": "SUP-c29c26f776666b70 refuse le trait figé, ce qui interdit l'usage de tri ; SUP-701b30007637c3b1 et SUP-5bd45cc269abd08e bornent explicitement ce que la pièce lue autorise à dire. Le claim énonce cette limite, sans rien attribuer de plus aux auteurs."
+      "reason": "review.notes[8] : « La p. 4 ne contient aucune donnée » et il s'agit de ce que la théorie/figure pose ; notes[1] confirme que le test empirique n'est pas dans ce rapport."
     },
     {
       "claim_id": "C045",
       "verdict": "SUPPORTED",
-      "reason": "SUP-48c05c222a4125cf donne la tournure passive « is not expected to » et SUP-bb17d922c44f1d5b la commente comme passif sans agent exprimé ; SUP-43cb5037f47995be confirme la page."
+      "reason": "review.notes[1] atteste, sur image, qu'à la p. 2 les auteurs nomment les travaux antérieurs dont la théorie dépend ; attribution_note dit la même chose. La filiation est bien nommée par les auteurs dès leur deuxième page."
     },
     {
       "claim_id": "C046",
       "verdict": "SUPPORTED",
-      "reason": "SUP-bb17d922c44f1d5b énonce que « ce sont bien les auteurs qui déclarent ne pas l'attendre » : l'attribution du claim est exactement celle du support."
+      "reason": "Citation verbatim relevée sur image p. 2 dans review.notes[1] (section « Conceptual Basis of the Instrument »)."
     },
     {
       "claim_id": "C047",
       "verdict": "SUPPORTED",
-      "reason": "SUP-665c8b51b107b031 affirme que la p. 4 ne contient aucune donnée et qu'il s'agit d'un attendu théorique ; SUP-701b30007637c3b1 confirme que le test empirique n'est pas dans ce rapport."
+      "reason": "Seconde citation reproduite verbatim depuis review.notes[1], même page 2, présentée dans le même ordre que le support."
     },
     {
       "claim_id": "C048",
-      "verdict": "SUPPORTED",
-      "reason": "SUP-f77e516d2d9d873b donne la phrase verbatim relue sur l'image de la p. 2, et SUP-c604a94416e464a0 confirme le rattachement explicite à Turner & Lawrence (1965) et Hackman & Lawler (1971) ; l'antériorité du modérateur est établie par le même support."
+      "verdict": "TOO_STRONG",
+      "reason": "Le support ne donne cette antériorité terminologique que comme « recherche indépendante concordante » consignée au contrôle ; l'article de Hackman et Lawler (1971) n'a jamais été consulté et son contenu n'est établi par aucune pièce lue. Le claim supprime cet intermédiaire et énonce comme un fait direct ce que contient ce texte de 1971."
     },
     {
       "claim_id": "C049",
       "verdict": "SUPPORTED",
-      "reason": "Phrase verbatim présente dans SUP-f77e516d2d9d873b, lue p. 2 ; le texte lecteur n'affirme pas la contiguïté des deux phrases."
+      "reason": "review.notes[1] énonce que « le terme \"growth need strength\" et son opérationnalisation dans le JDS sont bien de Hackman et Oldham » et borne expressément la revendication au texte de 1974, ce que le claim ne dépasse pas."
     },
     {
       "claim_id": "C050",
-      "verdict": "UNSUPPORTED",
-      "reason": "SUP-f77e516d2d9d873b cite la p. 2 avec une ellipse « […] » entre les deux phrases : le contenu élidé n'est pas visible et le reste du rapport n'est pas couvert. L'affirmation d'absence (« ils ne disent pas ce que ces travaux contenaient ») n'est donc pas établie ; l'absence de contradiction n'est pas une preuve."
+      "verdict": "SUPPORTED",
+      "reason": "notes[1] : « Le test empirique de la modération n'est pas dans ce rapport »."
     },
     {
       "claim_id": "C051",
       "verdict": "SUPPORTED",
-      "reason": "SUP-f77e516d2d9d873b consigne que Hackman & Lawler (1971) opèrent le modérateur sous le nom de « higher order need strength ». Le claim reprend cet énoncé sans l'attribuer au rapport de 1974."
+      "reason": "notes[1] nomme exactement le renvoi des auteurs : Technical Report No. 6 (Hackman & Oldham, Motivation through the design of work: Test of a theory, 1974) comme lieu du test empirique de la modération."
     },
     {
       "claim_id": "C052",
       "verdict": "SUPPORTED",
-      "reason": "SUP-f77e516d2d9d873b établit que le terme « growth need strength » et son opérationnalisation dans le JDS sont de Hackman et Oldham."
+      "reason": "notes[1] situe le test empirique dans le Technical Report No. 6 sur renvoi des auteurs et signale que la lecture primaire ne l'a pas ouvert ; le claim n'avance aucun résultat et rappelle qu'il faudra l'ouvrir."
     },
     {
       "claim_id": "C053",
       "verdict": "SUPPORTED",
-      "reason": "SUP-701b30007637c3b1 dit que le test empirique de la modération n'est pas dans ce rapport."
-    },
-    {
-      "claim_id": "C054",
-      "verdict": "SUPPORTED",
-      "reason": "SUP-701b30007637c3b1 atteste le renvoi des auteurs au Technical Report No. 6 (Hackman & Oldham, Motivation through the design of work: Test of a theory, 1974), même année : titre, numéro et année exacts."
-    },
-    {
-      "claim_id": "C055",
-      "verdict": "SUPPORTED",
-      "reason": "SUP-701b30007637c3b1 situe le test empirique dans ce rapport séparé et signale qu'il n'a pas été ouvert, ce que le claim reprend explicitement ; SUP-c4a1c4a9ecd80611 confirme le renvoi. Aucun contenu de ce rapport n'est affirmé."
+      "reason": "Question laissée ouverte, appuyée sur notes[4] (besoin qualifié de malléable, sans caractérisation de son origine) et notes[1] (aucune démonstration dans la pièce lue) ; aucune réponse n'est avancée."
     }
   ]
 }
