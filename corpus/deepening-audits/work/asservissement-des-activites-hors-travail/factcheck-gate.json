@@ -1,27 +1,22 @@
 {
   "protocol_version": 1,
   "concept_id": "asservissement-des-activites-hors-travail",
-  "candidate_sha256": "71d0a37ea7377b558eefb11091165345105afbb5bf15f3d3b2b239691f686b12",
+  "candidate_sha256": "0ae6db34b6287464fb3e07276b58471176aed926a463d3ee078764bc6090ffca",
   "verdict": "FACTCHECK_FAIL",
-  "claims": 59,
-  "supported": 56,
-  "failed": 3,
+  "claims": 53,
+  "supported": 51,
+  "failed": 2,
   "structural_errors": [],
   "failures": [
     {
-      "claim_id": "C039",
+      "claim_id": "C029",
       "verdict": "TOO_STRONG",
-      "reason": "review.notes[5] énumère bien « compensations, coût, déplacement de la contrainte d'une activité sur une autre, marges de tolérance », mais n'attribue les marges de tolérance à personne ; le claim les rattache au système (« dont cet ensemble dispose »). Ce même support signale au contraire que certains attributs sont chez Gadbois ceux de chaque activité et non du système, donc la spécification ajoutée n'est pas autorisée."
+      "reason": "Le support ne donne que deux notions nues, « la conception qu'il écarte explicitement, celle de la « simple prolongation » ou du « modelage psychique » ». Le claim leur prête des porteurs et un mécanisme que le support n'établit pas : prolongation du travail dans la vie hors travail, et surtout « modelage psychique de la personne par son métier », qui ajoute agent et patient."
     },
     {
-      "claim_id": "C047",
+      "claim_id": "C034",
       "verdict": "TOO_STRONG",
-      "reason": "notes[3] atteste seulement que l'article ne cite aucune source de théorie des systèmes ou de cybernétique ; le « rien n'est affirmé du sens technique » y porte sur la fiche, pas sur l'article. Affirmer que l'article « ne le dit pas » est une affirmation d'absence dans le texte que le support n'établit pas."
-    },
-    {
-      "claim_id": "C058",
-      "verdict": "SOURCE_NOT_CONSULTED",
-      "reason": "notes[4] indique que l'article de 1975 n'a pas été ouvert ; seuls son titre et son lieu de publication sont attestés. Dire que ce titre nomme « donc aussi le sens inverse : ce que la vie hors travail fait, en retour, à la vie de travail » est une inférence sur le contenu de cet article tirée de son seul titre."
+      "reason": "Le support énumère « compensations, coût, déplacement de la contrainte d'une activité sur une autre, marges de tolérance », le coût sans aucun porteur. Le claim écrit « leur coût » et rattache donc le coût aux compensations, rattachement que le support ne donne pas."
     }
   ]
 }
