@@ -191,6 +191,28 @@ Il lit le pack et écrit :
 
 `corpus/deepening-audits/work/<id>/claim-map.json`
 
+### Report des cycles de correction
+
+Si `RE-PREPARE` a écrit `corpus/deepening-audits/work/<id>/carry-over.json`, passe-le au mappeur.
+
+Cet artefact liste les paragraphes dont le texte est **inchangé octet pour octet** depuis le cycle
+précédent, avec leurs claims et leurs `support_ids`. Le mappeur les réutilise **verbatim** et ne
+mappe à neuf que les `changed_locators`.
+
+La raison est mesurée : le mapping était refait sur tout le texte à chaque cycle, donc le
+découpage et le rattachement des supports bougeaient là où le texte n'avait pas bougé. Le
+2026-09-18, une phrase rigoureusement identique est passée de `SUPPORTED` à `TOO_STRONG` parce
+qu'un mappeur lui avait attaché un support de plus. Avec un plafond de deux boucles, la cible se
+déplaçait plus vite qu'on ne la corrigeait.
+
+**Aucun verdict n'est reporté.** `carry-over.json` ne contient que du découpage ; le vérificateur
+repasse au §9 sur *tous* les claims contre le texte final, et le gate du §10 est inchangé. La
+propriété « tout claim publié est jugé contre le texte publié » reste donc entière.
+
+Le script refuse de reporter un paragraphe dès qu'un offset ne retombe pas exactement sur son
+`claim_text`, ou si le mapping ne correspond pas au pack qu'il accompagne : ce paragraphe repart
+au mapping.
+
 Il ancre chaque claim par `locator + start + end + claim_text exact` et ne peut proposer que des
 `support_ids` existants. Il ne rend aucun verdict de vérité.
 

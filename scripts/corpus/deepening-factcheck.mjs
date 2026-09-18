@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
+import { carryOverClaims } from "./lib/carry-over.mjs";
 
 const ROOT = process.cwd();
 const CONTEXT_BUDGET_TOKENS = 300_000;
@@ -128,6 +129,25 @@ function estimateTokens(value) {
   return Math.ceil(JSON.stringify(value).length / ESTIMATED_CHARS_PER_TOKEN);
 }
 
+async function buildCarryOver(conceptId, newParagraphs) {
+  const dir = workDir(conceptId);
+  const oldPackFile = path.join(dir, "factcheck-pack.json");
+  const oldMapFile = path.join(dir, "claim-map.json");
+  if (!existsSync(oldPackFile) || !existsSync(oldMapFile)) return null;
+
+  let oldPack;
+  let oldMap;
+  try {
+    oldPack = await readJson(oldPackFile);
+    oldMap = await readJson(oldMapFile);
+  } catch {
+    return null;
+  }
+
+  const carry = carryOverClaims({ oldPack, oldMap, newParagraphs });
+  return carry ? { ...carry, concept_id: conceptId } : null;
+}
+
 async function prepare(conceptId) {
   const deepFile = deepeningPath(conceptId);
   const validatedFile = validatedPath(conceptId);
@@ -170,8 +190,14 @@ async function prepare(conceptId) {
     status: estimatedTokens <= CONTEXT_BUDGET_TOKENS ? "READY" : "PARTITION_REQUIRED",
   };
 
+  // Calculé avant d'écraser le pack et le mapping du cycle précédent.
+  const carryOver = await buildCarryOver(conceptId, pack.paragraphs);
+
   const output = option("out") || path.join(workDir(conceptId), "factcheck-pack.json");
+  const carryFile = path.join(workDir(conceptId), "carry-over.json");
   await writeJson(output, pack);
+  if (carryOver) await writeJson(carryFile, carryOver);
+
   console.log(
     JSON.stringify({
       concept_id: conceptId,
@@ -181,6 +207,14 @@ async function prepare(conceptId) {
       paragraphs: pack.paragraphs.length,
       supports: pack.supports.length,
       artifact: path.relative(ROOT, output),
+      ...(carryOver
+        ? {
+            carried_paragraphs: carryOver.carried_locators.length,
+            changed_paragraphs: carryOver.changed_locators.length,
+            carried_claims: carryOver.carried.reduce((n, e) => n + e.claims.length, 0),
+            carry_artifact: path.relative(ROOT, carryFile),
+          }
+        : {}),
     }),
   );
 }

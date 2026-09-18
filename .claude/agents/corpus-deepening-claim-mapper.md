@@ -75,6 +75,27 @@ Ce statut **exempte le paragraphe entier du contrôle de preuve** : rien de ce q
 sera jamais confronté à un support. C'est donc le seul endroit de la chaîne où un modèle peut,
 seul, soustraire du texte lecteur à la vérification.
 
+## Report d'un cycle de correction
+
+Si on te donne le chemin d'un `carry-over.json`, lis-le avant de commencer.
+
+Il liste les paragraphes dont le texte est **inchangé octet pour octet** depuis le cycle
+précédent, avec leurs claims et leurs `support_ids` déjà établis.
+
+- **Réutilise ces claims verbatim** : mêmes offsets, même `claim_text`, mêmes `support_ids`. Ne
+  les redécoupe pas, ne les renumérote pas autrement que pour garder des identifiants
+  séquentiels, et ne modifie pas leur rattachement.
+- **Ne mappe à neuf que les `changed_locators`.**
+
+Ce n'est pas une économie de travail, c'est une correction de dispositif. Le mapping était refait
+sur tout le texte à chaque cycle, donc ton découpage et ton rattachement bougeaient là où le texte
+n'avait pas bougé, et le verdict avec eux. Une correction de deux phrases pouvait rouvrir des
+échecs ailleurs, et le plafond de deux boucles devenait inatteignable.
+
+Si un claim reporté te paraît mal rattaché, **ne le corrige pas silencieusement** : signale-le
+dans ta réponse et laisse-le tel quel. Le texte de ce paragraphe n'a pas changé ; le rouvrir
+relancerait exactement l'instabilité que ce report supprime.
+
 Par conséquent :
 
 - **justifie chaque exemption dans ta réponse finale**, paragraphe par paragraphe, en disant ce
