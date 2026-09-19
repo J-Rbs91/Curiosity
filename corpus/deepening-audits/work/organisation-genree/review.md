@@ -1,0 +1,49 @@
+concept : organisation-genree
+verdict : ACCEPT
+factcheck_sha_match : PASS
+
+gate : `factcheck-gate.json` porte verdict FACTCHECK_PASS, 58/58 SUPPORTED, 0 échec, 0 erreur
+structurelle, candidate_sha256 = e76f77a8d8cf685a1d5051bc214c6e83b972f40879d1f65b0a559481b6cc3f2a.
+SHA-256 recalculé sur `corpus/deepenings/organisation-genree.json` : identique. Arbre de travail
+propre, le fichier examiné est bien celui du gate. Version antérieure comparée :
+`git show HEAD~3:corpus/deepenings/organisation-genree.json` (1 121 mots lecteur, 6 sections).
+Version proposée : 1 408 mots lecteur, 1 690 mots contrôlés, `corpus:deepen --check` PASS.
+
+COMPARAISON
+axe                            avant   après   preuve
+fidélité documentaire          2/4     4/4     Avant : « Historiquement, ce rôle est revenu de façon disproportionnée aux femmes » (S3.P2) au régime d'affirmation par défaut sans appui ; S6 tirait du contenu de 2006 (« selon des logiques apparentées ») au-delà d'un accès `excerpt` ; « Acker donne un nom » attribuait un geste de forgeage. Après : la généralisation historique est remplacée par l'énoncé réel d'Acker (« le travailleur masculin dont la vie est centrée sur son emploi à plein temps et à vie, pendant que sa femme ou une autre femme prend en charge ses besoins personnels et ses enfants ») avec la réserve qu'elle ajoute aussitôt ; vérifié mot pour mot dans `evidence.primary-reading.json` p. 149. 2006 n'est plus employé que sur les deux pages réellement lues (filiation p. 442-443, travailleur idéal p. 449-450) ; 1992 reste `metadata-only` et n'appuie rien ; 2012 est donné explicitement comme propos de chercheuses. Une seule citation entre guillemets attribuée à l'autrice, inchangée.
+progressivité pédagogique      2/4     4/4     Avant : lead → S2 → S3 → S6.P1, avec S1, S4 et S5 en plateaux (425 mots, 38 % du texte). Après : chaque section installe la brique de la suivante. S1 donne le lieu d'observation (documents, grilles de cotation) et l'emploi comme case vide ; S2 en tire le nom et la figure ; S3 répond « qui peut l'occuper » ; S4 applique la même abstraction à la hiérarchie ; S5 borne la portée et ferme les corrections partielles ; S6 date, corrige et rouvre. Un lecteur arrêté après S2 tient un ensemble complet et utile.
+densité / non-redondance       1/4     4/4     Avant : 5 paragraphes sur 15 sans delta distinct, et la séquence disqualifiante S4.P2 + S5.P1 + S5.P2 au delta identique. Après : 15 paragraphes, 15 deltas distincts testés un à un ; aucune paire consécutive ne porte le même delta, aucune section ne répète principalement une antérieure. Le motif de l'antériorité (« avant toute candidature ») subsiste en quatre endroits mais y occupe chaque fois une fonction différente : thèse (lead[1]), ontologie de la case vide (S1.P2), non-exclusion (S3.P2), objet d'enquête (S5.P1). Il n'est plus le delta unique d'une suite de paragraphes.
+clarté                         4/4     4/4     Aucun terme savant non glosé. « Grilles de cotation » est expliqué dans la phrase même (« celles qui attribuent des points à un emploi pour le situer dans l'échelle des salaires ») ; « logique organisationnelle » est défini avant d'apparaître dans la citation, au lieu d'être reproduit puis abandonné ; « congruence » est traduit immédiatement (« un poste plus haut doit être plus complexe et plus responsable qu'un poste plus bas »). S4 est le passage le plus dense du texte, mais chaque règle y est suivie de son cas concret. Pas de baisse.
+profondeur explicative         2/4     4/4     Avant : deux mécanismes (la fiction comme mesure, la seconde personne), une S4 qui affirmait une intensification sans en dire le ressort, une S5 qui annonçait une différence sans en produire aucune. Après : l'inversion personnes/emploi (p. 148), la contrainte formelle qui rend inapte (p. 149), la règle de congruence et son coût de comptage, la règle des deux niveaux et la délégation, l'équation disponibilité = aptitude à l'autorité, puis le point le plus fort du texte : l'outil correctif (cotation des postes en équité salariale) reproduit les classements qu'il devait corriger, et la condition de sortie est d'un autre ordre. La profondeur n'est pas obtenue par allongement rhétorique : le texte grandit de 287 mots et gagne six mécanismes.
+valeur des exemples            2/4     4/4     Avant : l'exemple long de S1.P3 rejouait l'annonce d'emploi du lead. Après : il est supprimé ; le lead garde le sien, désormais marqué « Imaginons » comme le protocole l'exige. Les exemples restants font un travail que rien d'autre ne ferait : la travailleuse de crèche et la secrétaire au service de six chefs montrent ce que la règle de congruence oblige à ne pas compter ; les tâches déléguées qui ne relèvent pas le niveau de celle qui les fait montrent la seconde règle à l'œuvre.
+limites / nuances              2/4     4/4     Avant : la nuance « ce n'est pas une thèse sur les intentions » était dite trois fois et jamais monnayée. Après : elle est dite une fois, puis prolongée par deux limites nouvelles et utiles, la réserve d'Acker sur le capitalisme industriel (interdit de lire « les hommes sont les travailleurs idéaux ») et son auto-correction de 2006 (pour beaucoup de postes le travailleur idéal est une femme). Ce sont exactement les contresens que le texte risquait d'induire.
+pouvoir d'ouverture            2/4     4/4     Avant : S6.P2 refermait le texte (« cet élargissement ne change rien »). Après : la fin porte un désaccord d'inventaire daté (fiches de poste, échelons, évaluations hiérarchiques ne caractérisent plus une part du travail contemporain), une question précise laissée ouverte (« par quels documents, aujourd'hui, un poste décide-t-il de la vie qu'il faut avoir pour l'occuper ? ») et une désignation de ce qu'il reste à lire, du côté du lecteur et sans compte rendu de recherche infructueuse.
+
+défauts initiaux corrigés :
+- S1 (273 mots, un quart du texte) rejouait le lead : les trois paragraphes sont supprimés, remplacés par deux paragraphes qui installent le lieu matériel du mécanisme. Défaut majeur effectivement supprimé.
+- La séquence disqualifiante S4.P2 + S5.P1 + S5.P2 n'existe plus : S4.P2 et S5.P2 sont supprimés, S5 est resserré en un paragraphe puis doté d'un second paragraphe entièrement neuf.
+- S4 tenait enfin la promesse de son titre : la hiérarchie y est un objet propre (congruence, règle des deux niveaux), pas un adverbe d'intensité.
+- La généralisation historique non appuyée de S3.P2 est supprimée et remplacée par l'énoncé sourcé, avec sa réserve.
+- « Acker donne un nom » devient « le nom qu'elle emploie », qui n'affirme plus de geste de fondation.
+- S6 revient en deçà de l'accès `excerpt` et se termine sur une question au lieu d'une clause de continuité.
+- La matière du lead (annonce d'emploi, « à quel prix porté par qui ») n'a été cédée à aucune section : rien de solide n'a été perdu de l'ancienne version. L'inversion de l'ancien S2.P2 (« la personne réelle doit s'en approcher ») survit sous une forme sourcée en S1.P2 et S2.P2.
+
+régressions détectées :
+- Aucune régression bloquante. Deux réserves mineures, consignées et non retenues contre la version.
+- S5.P1 conserve une amorce d'annonce : « les deux manières de chercher n'examinent pas le même objet et ne concluent pas de la même façon », alors que la boucle de fact-check a retiré (à bon droit, claims C041 et C043 non appuyés) la description de la première démarche. Le lecteur reçoit donc un terme de contraste sur deux. Le paragraphe garde néanmoins un delta propre et vérifiable, et le défaut n'affecte plus qu'un paragraphe au lieu de trois consécutifs.
+- Le titre de S5, « Ce que cela ne dit pas d'une personne en particulier », couvre bien P1 mais assez mal P2, qui porte sur l'impossibilité d'une correction partielle. Le titre nomme toujours une chose et non une fonction ; le défaut est de cadrage, pas de protocole.
+- Frontière interne respectée : aucun contenu de `limits` n'est remonté au lecteur, aucune phrase ne raconte qu'un texte n'a pas pu être ouvert, la dernière phrase est au futur et du côté du lecteur.
+- Fragilité documentaire que le fact-check aurait pu manquer : aucune trouvée. Les passages les plus exposés ont été recontrôlés directement dans le dossier de preuve (p. 148 case vide et inversion, p. 148-149 congruence, crèche, secrétaire, règle des deux niveaux, p. 149 figure réelle et réserve, p. 149 « a job already contains the gender-based division of labor », p. 154-155 « would probably require the end of organizations », 2006 p. 442-443 et 449-450, 2012 « organizations are still gendered, but the mechanisms… are different »). La modalisation « exigerait probablement » restitue bien « would probably require ». « L'homme sans entraves » rend « the unencumbered (white) man » en laissant tomber l'adjectif racial : c'est une réduction, pas une sur-affirmation.
+
+raison de la décision : le gate factuel porte sur le SHA exact du fichier examiné, et l'examen
+pédagogique confirme un gain réel et non seulement stylistique. Les trois défauts majeurs du
+diagnostic (section 1 redondante avec le lead, séquence de trois paragraphes au delta identique,
+fin qui se referme) sont supprimés, et aucun n'est recréé ailleurs. La profondeur augmente par
+des mécanismes sourcés, pas par de l'expansion : chacun des quinze paragraphes lecteur passe le
+test du delta, et l'unique fragilité documentaire pointée par l'audit est remplacée par
+l'énoncé réel de l'autrice accompagné de sa propre réserve. Le fait que le dossier de preuve
+ait été invisible jusqu'à cette session explique l'ampleur du gain mais ne le fonde pas : la
+comparaison a été conduite sur la progression et sur l'absence de perte, et les deux réserves
+subsistantes (amorce de contraste incomplète en S5.P1, titre de S5 qui couvre mal son second
+paragraphe) sont d'un ordre inférieur au seuil de REJECT.

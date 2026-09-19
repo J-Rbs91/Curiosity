@@ -59,7 +59,20 @@ Avant tout mapping, un script classique construit un `factcheck-pack.json` à pa
 
 - `corpus/deepenings/<conceptId>.json` pour le texte lecteur ;
 - `corpus/validated/<conceptId>.json` comme autorité validée ;
-- `corpus/evidence/<conceptId>/lecture.json` si ce fichier existe.
+- tous les fichiers `.json` de `corpus/evidence/<conceptId>/`, à l'exception de `scouting.json`.
+
+Le dossier d'une carte est pris pour ce qu'il est : son répertoire entier. La règle antérieure
+ne ramassait que `lecture.json`, ce qui n'est qu'une convention de nommage tardive : neuf cartes
+déposent leur lecture primaire dans `evidence.primary-reading.json` et leur réception dans
+`evidence.reception.json`, six autres déposent une réception à côté d'un `lecture.json`. Leur
+dossier était invisible au pack, **sans qu'aucune sortie ne le signale** : le fact-check se
+rabattait silencieusement sur le seul enregistrement validé.
+
+`scouting.json` est écarté parce qu'il n'est pas une preuve de lecture : le scout y note où il a
+cherché et pourquoi le candidat a été retenu, jugements formés avant d'ouvrir le texte.
+
+L'origine d'un support nomme son fichier — `evidence:<nom>` — sans quoi deux fichiers du même
+dossier portant tous deux une clé `evidence` rendraient des chemins JSON identiques.
 
 Le pack contient :
 
@@ -68,6 +81,8 @@ Le pack contient :
 - des preuves autorisées avec des identifiants `SUP-...` calculés à partir de leur origine,
   chemin JSON et contenu ;
 - le niveau `consulted` lorsqu'il est réellement porté par l'objet source ;
+- `evidence_files`, le nom et le SHA-256 de chaque fichier de dossier ramassé, liste vide
+  comprise — c'est là que se lit désormais ce que le pack a vu du dossier ;
 - l'estimation de taille du pack.
 
 Le modèle ne fabrique donc jamais `full-text`, `partial` ou `metadata-only`. Il ne peut citer

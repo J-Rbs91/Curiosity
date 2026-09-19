@@ -1,0 +1,296 @@
+{
+  "concept_id": "signification-et-invariance",
+  "candidate_sha256": "ef57468d0942517b7c052f5422775a35c492764fb31aa6e9dd4fab2b8d4d45ef",
+  "results": [
+    {
+      "claim_id": "C001",
+      "verdict": "SUPPORTED",
+      "reason": "Nombres et échelle verbatim dans SUP-98d72b4f (exemple des auteurs, p. 109 : t(n)=110 et t(n-1)=100 en Fahrenheit) ; l'ordre hier/aujourd'hui suit l'indexation n-1/n et n'ajoute aucune portée."
+    },
+    {
+      "claim_id": "C002",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-98d72b4f donne explicitement le rapport 1,10 en Fahrenheit ; « hausse de 10 % » n'est que la relecture arithmétique de ce rapport."
+    },
+    {
+      "claim_id": "C003",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-98d72b4f cite les auteurs : « we would have found t(n)=43.3 and t(n-1)=37.8 » sur l'échelle centigrade."
+    },
+    {
+      "claim_id": "C004",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-98d72b4f : « a ratio equal to 1.15 rather than 1.10 » ; la conversion en pourcentage est arithmétique."
+    },
+    {
+      "claim_id": "C005",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-98d72b4f porte le contrefactuel des auteurs : mêmes mesures de température, conclusion opposée si elles avaient été prises en centigrade (1,15 contre 1,10)."
+    },
+    {
+      "claim_id": "C006",
+      "verdict": "SUPPORTED",
+      "reason": "Les deux noms sont verbatim (SUP-211463f7, SUP-e1d1c355) et la référence de la citation (SUP-4a7436c7, SUP-10204942) date le rapport technique n° 45 du 15 mars 1962 ; le claim n'ajoute ni thèse ni contenu au-delà de cette provenance."
+    },
+    {
+      "claim_id": "C007",
+      "verdict": "SUPPORTED",
+      "reason": "Reprend la Definition 33 (SUP-b7513cb9, SUP-5c087b1e) affaiblie en condition nécessaire (« seulement si ») ; SUP-106c3347 confirme la reformulation par équivalence des valeurs de vérité sous transformations admissibles. Aucun renforcement."
+    },
+    {
+      "claim_id": "C008",
+      "verdict": "SUPPORTED",
+      "reason": "Les deux écritures de la même mesure (110 en Fahrenheit, 43,3 en centigrade) sont dans SUP-98d72b4f."
+    },
+    {
+      "claim_id": "C009",
+      "verdict": "SUPPORTED",
+      "reason": "Conséquence directe des quatre nombres de SUP-98d72b4f : mêmes journées, écarts et rapports différents d'une écriture à l'autre ; le claim n'attribue rien aux auteurs et ne fixe aucune forme de transformation."
+    },
+    {
+      "claim_id": "C010",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-ea63ac6a énonce que « admissible » désigne chez les auteurs les transformations que le type d'échelle autorise ; SUP-106c3347 rattache le type d'échelle à la classe des assignations numériques."
+    },
+    {
+      "claim_id": "C011",
+      "verdict": "SUPPORTED",
+      "reason": "L'expression « transformations d'échelle admissibles » / « admissible scale transformations » est verbatim dans SUP-b7513cb9 et SUP-af9f8e3a, et SUP-ea63ac6a la donne comme terme technique des auteurs."
+    },
+    {
+      "claim_id": "C012",
+      "verdict": "SUPPORTED",
+      "reason": "Quasi verbatim de SUP-ea63ac6a : terme technique (« les transformations que le type d'échelle autorise »), « pas une appréciation »."
+    },
+    {
+      "claim_id": "C013",
+      "verdict": "SUPPORTED",
+      "reason": "Simple calcul sur les nombres établis par SUP-98d72b4f ; aucune propriété n'est attribuée à une source."
+    },
+    {
+      "claim_id": "C014",
+      "verdict": "SUPPORTED",
+      "reason": "Énoncé d'absence, strictement conforme à l'état des supports : ni SUP-ea63ac6a ni SUP-106c3347 ne rendent le carré admissible, et le claim n'affirme pas l'inverse non plus."
+    },
+    {
+      "claim_id": "C015",
+      "verdict": "SUPPORTED",
+      "reason": "Verbatim du contrefactuel cité dans SUP-98d72b4f, avec l'attribution maintenue au niveau de ce que les auteurs présentent."
+    },
+    {
+      "claim_id": "C016",
+      "verdict": "SUPPORTED",
+      "reason": "Inférence explicite (« donc ») à partir de SUP-ea63ac6a (admissibilité définie par le type d'échelle) et SUP-106c3347 ; pas d'attribution primaire ajoutée."
+    },
+    {
+      "claim_id": "C017",
+      "verdict": "SUPPORTED",
+      "reason": "Citation identique à SUP-b7513cb9 (traduction validée) et SUP-af9f8e3a / SUP-e49a8d9f (original) ; SUP-50f2d207 atteste la vérification sur l'image de la page 110 et la fidélité de la traduction."
+    },
+    {
+      "claim_id": "C018",
+      "verdict": "SUPPORTED",
+      "reason": "Glose logique exacte du « si et seulement si » présent dans la citation validée (SUP-b7513cb9) et son original (SUP-af9f8e3a)."
+    },
+    {
+      "claim_id": "C019",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-106c3347 : les auteurs reformulent la définition en équivalence, un énoncé étant doué de sens si les transformations admissibles conduisent toujours à des énoncés de même valeur de vérité ; le claim se présente comme lecture (« se lit alors comme »)."
+    },
+    {
+      "claim_id": "C020",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-98d72b4f (vérité renversée entre Fahrenheit et centigrade) et SUP-65d1748c (le rapport de deux températures n'est pas doué de sens) autorisent exactement ce verdict."
+    },
+    {
+      "claim_id": "C021",
+      "verdict": "SUPPORTED",
+      "reason": "« meaningful » est verbatim dans l'original cité (SUP-af9f8e3a, SUP-e49a8d9f) ; SUP-ea63ac6a traite ce mot comme celui des auteurs."
+    },
+    {
+      "claim_id": "C022",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-ea63ac6a porte le point de charge : « significatif » se lit spontanément en français comme « statistiquement significatif ». La glose du sens statistique est une aide de langue, sans attribution ni extension de portée."
+    },
+    {
+      "claim_id": "C023",
+      "verdict": "SUPPORTED",
+      "reason": "La définition citée (SUP-b7513cb9) est une condition d'invariance complète où aucune probabilité n'intervient, et SUP-106c3347 décrit le critère comme d'invariance ; le claim reste à l'intérieur du critère lui-même."
+    },
+    {
+      "claim_id": "C024",
+      "verdict": "SUPPORTED",
+      "reason": "Découle de la définition explicite citée (SUP-b7513cb9) et de sa lecture dans SUP-106c3347 : le sens y est défini par la constance de la valeur de vérité, non par l'intelligibilité."
+    },
+    {
+      "claim_id": "C025",
+      "verdict": "SUPPORTED",
+      "reason": "Restreint à « dans cette définition » ; correspond à la Definition 33 (SUP-b7513cb9) et à sa reformulation par équivalence dans SUP-106c3347."
+    },
+    {
+      "claim_id": "C026",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-65d1748c : « Le texte ne proscrit aucune opération par type d'échelle : il démontre le contraire » ; SUP-106c3347 : ce sont des énoncés entiers qui ont ou n'ont pas de sens, pas des opérations."
+    },
+    {
+      "claim_id": "C027",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-106c3347 et SUP-65d1748c donnent l'exemple 2, p. 115 (moyennes des maxima de janvier contre février, « meaningful under these conditions ») opposé au rapport de deux températures (p. 108-109) ; la réserve « dans les conditions qu'ils précisent » est conservée."
+    },
+    {
+      "claim_id": "C028",
+      "verdict": "SUPPORTED",
+      "reason": "Conséquence du même couple de supports : l'admissibilité ne se juge pas opération par opération (SUP-65d1748c, SUP-106c3347)."
+    },
+    {
+      "claim_id": "C029",
+      "verdict": "SUPPORTED",
+      "reason": "Glose du contenu de l'exemple 2 tel que rapporté par SUP-106c3347 et SUP-65d1748c (comparaison de deux moyennes de températures)."
+    },
+    {
+      "claim_id": "C030",
+      "verdict": "SUPPORTED",
+      "reason": "Constat arithmétique sur les quatre nombres de SUP-98d72b4f, explicitement limité à cette paire."
+    },
+    {
+      "claim_id": "C031",
+      "verdict": "SUPPORTED",
+      "reason": "Même base que C030, portée restreinte à « cette paire-là »."
+    },
+    {
+      "claim_id": "C032",
+      "verdict": "SUPPORTED",
+      "reason": "Raisonnement élémentaire sur le rapport, cohérent avec SUP-98d72b4f (rapports différents d'une écriture à l'autre) et SUP-65d1748c ; aucune propriété nouvelle n'est attribuée aux auteurs."
+    },
+    {
+      "claim_id": "C033",
+      "verdict": "SUPPORTED",
+      "reason": "Se déduit des quatre nombres de SUP-98d72b4f : les rapports 100/37,8 et 110/43,3 diffèrent, donc les zéros ne coïncident pas ; le claim renvoie d'ailleurs à ces seules écritures."
+    },
+    {
+      "claim_id": "C034",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-65d1748c et SUP-106c3347 : l'admissibilité dépend de l'énoncé entier, pas de l'opération ; SUP-98d72b4f montre la dépendance à l'écriture choisie."
+    },
+    {
+      "claim_id": "C035",
+      "verdict": "SUPPORTED",
+      "reason": "Reprise de la remarque générale citée dans SUP-106c3347 et SUP-65d1748c : « The admissibility of any mathematical operation depends not only on the scale type […] but on the entire numerical statement of which the operation is a part. »"
+    },
+    {
+      "claim_id": "C036",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-106c3347 : exemple 1, p. 113-114, somme de deux températures comparée à une troisième dépourvue de sens, la même somme étant douée de sens pour des masses, « qui sont sur une échelle de rapport »."
+    },
+    {
+      "claim_id": "C037",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-106c3347 : la section 6.3 tranche contre deux positions concurrentes, nommées."
+    },
+    {
+      "claim_id": "C038",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-106c3347 : Weitzenhoffer (1951), pour qui les seules opérations admissibles sont celles qui correspondent à des opérations physiques connues."
+    },
+    {
+      "claim_id": "C039",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-106c3347 : Guilford (1954), pour qui toutes les règles de l'arithmétique deviennent admissibles dès qu'existe une addition physique."
+    },
+    {
+      "claim_id": "C040",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-106c3347 et SUP-98d72b4f citent la conclusion de la section 6.3 : la signification est déterminée par les propriétés d'unicité, « not by the nature of the operations »."
+    },
+    {
+      "claim_id": "C041",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-394b1177 documente les deux endroits : l'ouverture p. 108 (« not central to a theory of measurement ») et la note p. 111 (condition nécessaire mais non suffisante) ; SUP-106c3347 les confirme."
+    },
+    {
+      "claim_id": "C042",
+      "verdict": "SUPPORTED",
+      "reason": "Verbatim dans SUP-394b1177 et SUP-106c3347 : « a necessary but not sufficient condition of meaningfulness » (p. 111, note 6)."
+    },
+    {
+      "claim_id": "C043",
+      "verdict": "SUPPORTED",
+      "reason": "Dépliage logique exact de la concession citée, sans en faire une condition suffisante."
+    },
+    {
+      "claim_id": "C044",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-394b1177 cite l'ouverture de la section : « While this problem is not central to a theory of measurement it is often involved with various aspects of how measurements may be used » ; la structure concessive autorise ce report du côté de l'usage."
+    },
+    {
+      "claim_id": "C045",
+      "verdict": "SUPPORTED",
+      "reason": "Inférence signalée (« donc ») à partir de SUP-394b1177 (problème non central pour la théorie, lié à l'usage des mesures) et de la hiérarchie des trois problèmes dans SUP-106c3347."
+    },
+    {
+      "claim_id": "C046",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-5fd3966e cite p. 108 les « two fundamental issues of measurement—the representation and uniqueness problems » précédant un troisième problème ; SUP-106c3347 : « Les auteurs posent d'abord deux problèmes, et un seul troisième. »"
+    },
+    {
+      "claim_id": "C047",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-106c3347 cite le problème de la représentation (p. 4) : montrer que les opérations et relations empiriques sont isomorphes à des opérations et relations numériques choisies ; la glose n'en dit pas plus."
+    },
+    {
+      "claim_id": "C048",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-106c3347 cite le problème de l'unicité (« determine the scale type », p. 14) et définit le type d'échelle par la classe des assignations numériques ; la glose reste sur ce degré de détermination."
+    },
+    {
+      "claim_id": "C049",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-5fd3966e, SUP-05e2243f et SUP-f827172a portent la revendication verbatim : « a third problem which we shall term the meaningfulness problem » (p. 108), revendiquée par les deux auteurs."
+    },
+    {
+      "claim_id": "C050",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-98d72b4f cite p. 122 : la signification des énoncés numériques est déterminée uniquement par les propriétés d'unicité de leurs assignations numériques, glosées dans SUP-106c3347 comme les fonctions exprimant les résultats de mesure."
+    },
+    {
+      "claim_id": "C051",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-5fd3966e cite le texte p. 4 : « The general viewpoint to be developed in this section was first articulated in Scott and Suppes (1958) » ; SUP-f827172a et SUP-05e2243f confirment que le cadre est rapporté par eux à cet article antérieur."
+    },
+    {
+      "claim_id": "C052",
+      "verdict": "SUPPORTED",
+      "reason": "La définition citée (SUP-b7513cb9, SUP-af9f8e3a) porte sur « un énoncé numérique » et ne mentionne aucun instrument."
+    },
+    {
+      "claim_id": "C053",
+      "verdict": "SUPPORTED",
+      "reason": "Application à un cas explicitement hypothétique, où le zéro arbitraire est posé par le texte ; le motif invoqué est celui des supports (SUP-65d1748c, SUP-106c3347 : ce n'est pas l'opération mais l'énoncé entier). Aucun verdict n'est attribué aux auteurs."
+    },
+    {
+      "claim_id": "C054",
+      "verdict": "SUPPORTED",
+      "reason": "Reste en suspens et renvoie à la détermination des transformations admissibles par le type d'échelle (SUP-ea63ac6a), conformément à SUP-65d1748c et SUP-106c3347 ; aucun verdict n'est rendu sur ce cas."
+    },
+    {
+      "claim_id": "C055",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-394b1177 : la note des auteurs concède « a necessary but not sufficient condition of meaningfulness » ; l'attribution aux auteurs est exacte."
+    },
+    {
+      "claim_id": "C056",
+      "verdict": "SUPPORTED",
+      "reason": "Constat localisé (« là ») : ni SUP-394b1177 ni SUP-106c3347, qui citent la note et détaillent la section 6, ne rapportent d'indication sur la condition manquante ; le claim n'en tire aucune conclusion positive."
+    },
+    {
+      "claim_id": "C057",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-0521825d : le rapport, juste après la Definition 33 (p. 111), renvoie à Suppes [1959], article à auteur unique, pour la construction d'un langage formalisé et non pour la définition — ce que le claim reproduit sans revendiquer d'antériorité."
+    },
+    {
+      "claim_id": "C058",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-106c3347 porte la « considerable controversy » (p. 108) et les deux adversaires nommés (Weitzenhoffer, Guilford) ; le claim se limite à un renvoi de lecture."
+    }
+  ]
+}

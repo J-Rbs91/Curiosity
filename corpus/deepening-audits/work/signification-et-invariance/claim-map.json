@@ -1,0 +1,750 @@
+{
+  "concept_id": "signification-et-invariance",
+  "candidate_sha256": "ef57468d0942517b7c052f5422775a35c492764fb31aa6e9dd4fab2b8d4d45ef",
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "lead[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C001",
+      "locator": "lead[0]",
+      "start": 228,
+      "end": 286,
+      "claim_text": "Hier, il faisait 100 degrés Fahrenheit ; aujourd’hui, 110.",
+      "normalized_claim": "Les deux températures de l'exemple sont 100 °F la veille et 110 °F le jour même.",
+      "support_ids": [
+        "SUP-98d72b4f60715313"
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "locator": "lead[0]",
+      "start": 287,
+      "end": 349,
+      "claim_text": "Le rapport entre les deux donne 1,10, soit une hausse de 10 %.",
+      "normalized_claim": "Le rapport des deux mesures Fahrenheit vaut 1,10, lu comme une hausse de 10 %.",
+      "support_ids": [
+        "SUP-98d72b4f60715313"
+      ]
+    },
+    {
+      "claim_id": "C003",
+      "locator": "lead[0]",
+      "start": 412,
+      "end": 446,
+      "claim_text": "37,8 degrés hier, 43,3 aujourd’hui",
+      "normalized_claim": "Converties en Celsius, les deux mêmes journées donnent 37,8 et 43,3.",
+      "support_ids": [
+        "SUP-98d72b4f60715313"
+      ]
+    },
+    {
+      "claim_id": "C004",
+      "locator": "lead[0]",
+      "start": 448,
+      "end": 497,
+      "claim_text": "Le rapport devient 1,15, soit une hausse de 15 %.",
+      "normalized_claim": "Le rapport des deux mesures Celsius vaut 1,15, lu comme une hausse de 15 %.",
+      "support_ids": [
+        "SUP-98d72b4f60715313"
+      ]
+    },
+    {
+      "claim_id": "C005",
+      "locator": "lead[0]",
+      "start": 498,
+      "end": 657,
+      "claim_text": "Ce sont pourtant exactement les deux mêmes journées, la même paire de températures, mais deux pourcentages différents selon l’échelle utilisée pour les écrire.",
+      "normalized_claim": "La même paire de températures produit deux pourcentages différents selon l'échelle d'écriture.",
+      "support_ids": [
+        "SUP-98d72b4f60715313"
+      ]
+    },
+    {
+      "claim_id": "C006",
+      "locator": "lead[1]",
+      "start": 267,
+      "end": 354,
+      "claim_text": "Patrick Suppes et Joseph L. Zinnes ont posé cette question dans un rapport de mars 1962",
+      "normalized_claim": "Suppes et Zinnes posent cette question dans un rapport daté de mars 1962.",
+      "support_ids": [
+        "SUP-211463f7c405e9b0",
+        "SUP-e1d1c355c4c67253",
+        "SUP-4a7436c7d850f705",
+        "SUP-1020494264574901"
+      ]
+    },
+    {
+      "claim_id": "C007",
+      "locator": "lead[1]",
+      "start": 359,
+      "end": 574,
+      "claim_text": "lui ont donné une réponse qui tient en un seul critère : un énoncé construit à partir de mesures a un sens seulement s’il reste vrai, ou reste faux, quelle que soit la façon légitime dont les mesures ont été prises.",
+      "normalized_claim": "Leur réponse est un critère unique : la valeur de vérité doit rester constante sous les transformations d'échelle admissibles.",
+      "support_ids": [
+        "SUP-b7513cb9ad6e4968",
+        "SUP-5c087b1e1f3cf6cd",
+        "SUP-106c334769abc2bc"
+      ]
+    },
+    {
+      "claim_id": "C008",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 57,
+      "end": 113,
+      "claim_text": "la même journée s’écrit 110 d’un côté et 43,3 de l’autre",
+      "normalized_claim": "La même journée s'écrit 110 en Fahrenheit et 43,3 en Celsius.",
+      "support_ids": [
+        "SUP-98d72b4f60715313"
+      ]
+    },
+    {
+      "claim_id": "C009",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 115,
+      "end": 261,
+      "claim_text": "Les deux échelles ne sont pas en désaccord sur le temps qu’il a fait, elles ne placent simplement ni leur zéro ni leur graduation au même endroit.",
+      "normalized_claim": "Les deux échelles décrivent la même situation thermique mais diffèrent par le zéro et la graduation.",
+      "support_ids": [
+        "SUP-98d72b4f60715313",
+        "SUP-106c334769abc2bc"
+      ]
+    },
+    {
+      "claim_id": "C010",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 378,
+      "end": 466,
+      "claim_text": "c’est le type d’échelle sur lequel on a mesuré qui décide de celles qu’on peut appliquer",
+      "normalized_claim": "C'est le type d'échelle qui détermine les réécritures applicables.",
+      "support_ids": [
+        "SUP-ea63ac6a4f2118a4",
+        "SUP-106c334769abc2bc"
+      ]
+    },
+    {
+      "claim_id": "C011",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 468,
+      "end": 553,
+      "claim_text": "Suppes et Zinnes appellent ces réécritures des transformations d’échelle admissibles.",
+      "normalized_claim": "Le terme des auteurs pour ces réécritures est « transformations d'échelle admissibles ».",
+      "support_ids": [
+        "SUP-b7513cb9ad6e4968",
+        "SUP-af9f8e3a4b83d51b",
+        "SUP-ea63ac6a4f2118a4"
+      ]
+    },
+    {
+      "claim_id": "C012",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 554,
+      "end": 690,
+      "claim_text": "Chez eux, « admissible » est un terme technique et non une appréciation : il désigne les transformations que le type d’échelle autorise.",
+      "normalized_claim": "Chez les auteurs, « admissible » est un terme technique désignant les transformations autorisées par le type d'échelle.",
+      "support_ids": [
+        "SUP-ea63ac6a4f2118a4"
+      ]
+    },
+    {
+      "claim_id": "C013",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 166,
+      "end": 257,
+      "claim_text": "100 devient 10 000, 110 devient 12 100, l’opération est parfaitement licite en arithmétique",
+      "normalized_claim": "Élever au carré les deux mesures Fahrenheit donne 10 000 et 12 100, opération arithmétiquement licite.",
+      "support_ids": [
+        "SUP-98d72b4f60715313"
+      ]
+    },
+    {
+      "claim_id": "C014",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 259,
+      "end": 332,
+      "claim_text": "Mais rien ne dit qu’une échelle de température produirait ces nombres-là.",
+      "normalized_claim": "Aucune échelle de température ne garantit de produire ces carrés.",
+      "support_ids": [
+        "SUP-ea63ac6a4f2118a4",
+        "SUP-106c334769abc2bc"
+      ]
+    },
+    {
+      "claim_id": "C015",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 333,
+      "end": 536,
+      "claim_text": "La conversion vers le Celsius, elle, donne ce que les auteurs présentent comme les mesures qu’on aurait trouvées si elles avaient été prises sur cette échelle : 43,3 et 37,8 pour les deux mêmes journées.",
+      "normalized_claim": "Les auteurs présentent 43,3 et 37,8 comme les mesures qu'on aurait obtenues sur l'échelle Celsius.",
+      "support_ids": [
+        "SUP-98d72b4f60715313"
+      ]
+    },
+    {
+      "claim_id": "C016",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 537,
+      "end": 739,
+      "claim_text": "La différence entre les deux réécritures ne se joue donc pas dans l’arithmétique : elle se joue dans ce que le type d’échelle autorise, et c’est précisément ce que le mot « admissible » sert à trancher.",
+      "normalized_claim": "Ce qui sépare les deux réécritures est l'autorisation par le type d'échelle, sens du mot « admissible ».",
+      "support_ids": [
+        "SUP-ea63ac6a4f2118a4",
+        "SUP-106c334769abc2bc"
+      ]
+    },
+    {
+      "claim_id": "C017",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 27,
+      "end": 200,
+      "claim_text": "Suppes et Zinnes écrivent : « Un énoncé numérique a un sens si et seulement si sa vérité (ou sa fausseté) est constante sous les transformations d’échelle admissibles […]. »",
+      "normalized_claim": "Citation attribuée à Suppes et Zinnes de la définition de la signification.",
+      "support_ids": [
+        "SUP-b7513cb9ad6e4968",
+        "SUP-5c087b1e1f3cf6cd",
+        "SUP-af9f8e3a4b83d51b",
+        "SUP-e49a8d9f813ec963",
+        "SUP-50f2d20747c9e54c"
+      ]
+    },
+    {
+      "claim_id": "C018",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 201,
+      "end": 330,
+      "claim_text": "Le « si et seulement si » compte : il ne s’agit pas d’une qualité souhaitable de plus, mais de ce qui tranche dans les deux sens.",
+      "normalized_claim": "La définition est une équivalence, donc une condition tranchante dans les deux sens.",
+      "support_ids": [
+        "SUP-b7513cb9ad6e4968",
+        "SUP-af9f8e3a4b83d51b"
+      ]
+    },
+    {
+      "claim_id": "C019",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 331,
+      "end": 566,
+      "claim_text": "La définition se lit alors comme un test qu’on peut mener soi-même : prendre un énoncé construit à partir de mesures, le réécrire dans chacune des échelles admissibles pour ce type de grandeur, et regarder si sa valeur de vérité bouge.",
+      "normalized_claim": "La définition équivaut à tester si la valeur de vérité change sous les transformations admissibles.",
+      "support_ids": [
+        "SUP-106c334769abc2bc",
+        "SUP-b7513cb9ad6e4968"
+      ]
+    },
+    {
+      "claim_id": "C020",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 567,
+      "end": 669,
+      "claim_text": "Si elle peut basculer du vrai au faux, comme la hausse exprimée en pourcentage, l’énoncé ne passe pas.",
+      "normalized_claim": "Un énoncé dont la valeur de vérité bascule, comme le rapport de températures, échoue au critère.",
+      "support_ids": [
+        "SUP-106c334769abc2bc",
+        "SUP-98d72b4f60715313",
+        "SUP-65d1748cdb9d44b9"
+      ]
+    },
+    {
+      "claim_id": "C021",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 101,
+      "end": 139,
+      "claim_text": "Le mot des auteurs est « meaningful ».",
+      "normalized_claim": "Le terme anglais employé par les auteurs est « meaningful ».",
+      "support_ids": [
+        "SUP-af9f8e3a4b83d51b",
+        "SUP-e49a8d9f813ec963",
+        "SUP-ea63ac6a4f2118a4"
+      ]
+    },
+    {
+      "claim_id": "C022",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 140,
+      "end": 280,
+      "claim_text": "Le rendre par « significatif » ferait entendre la significativité statistique, c’est-à-dire un écart trop grand pour être attribué au hasard",
+      "normalized_claim": "Traduire « meaningful » par « significatif » induirait le contresens de la significativité statistique.",
+      "support_ids": [
+        "SUP-ea63ac6a4f2118a4",
+        "SUP-2bcfd5daaaabce8a"
+      ]
+    },
+    {
+      "claim_id": "C023",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 283,
+      "end": 357,
+      "claim_text": "il n’en est rien question, aucune probabilité n’intervient dans ce critère",
+      "normalized_claim": "Le critère ne fait intervenir aucune probabilité.",
+      "support_ids": [
+        "SUP-b7513cb9ad6e4968",
+        "SUP-106c334769abc2bc"
+      ]
+    },
+    {
+      "claim_id": "C024",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 359,
+      "end": 430,
+      "claim_text": "Et « avoir un sens » ne veut pas dire non plus « être compréhensible ».",
+      "normalized_claim": "Dans ce critère, « avoir un sens » ne signifie pas « être compréhensible ».",
+      "support_ids": [
+        "SUP-b7513cb9ad6e4968",
+        "SUP-106c334769abc2bc",
+        "SUP-ea63ac6a4f2118a4"
+      ]
+    },
+    {
+      "claim_id": "C025",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 579,
+      "end": 688,
+      "claim_text": "Avoir un sens, dans cette définition, signifie une chose et une seule : ne pas dépendre de l’échelle choisie.",
+      "normalized_claim": "Dans cette définition, avoir un sens signifie exactement l'invariance sous changement d'échelle admissible.",
+      "support_ids": [
+        "SUP-b7513cb9ad6e4968",
+        "SUP-106c334769abc2bc"
+      ]
+    },
+    {
+      "claim_id": "C026",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 79,
+      "end": 277,
+      "claim_text": "que le rapport serait une opération suspecte, et qu’il suffirait de dresser, type d’échelle par type d’échelle, la liste des opérations interdites. C’est exactement ce que Suppes et Zinnes refusent.",
+      "normalized_claim": "Les auteurs refusent l'idée d'une liste d'opérations interdites par type d'échelle.",
+      "support_ids": [
+        "SUP-65d1748cdb9d44b9",
+        "SUP-106c334769abc2bc"
+      ]
+    },
+    {
+      "claim_id": "C027",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 278,
+      "end": 509,
+      "claim_text": "Dans le même texte, la comparaison entre la moyenne des températures maximales de janvier et celle de février est déclarée douée de sens, dans les conditions qu’ils précisent, alors que le rapport de deux températures ne l’est pas.",
+      "normalized_claim": "Dans le même texte, la comparaison de deux moyennes de températures est déclarée douée de sens sous conditions, le rapport de deux températures non.",
+      "support_ids": [
+        "SUP-65d1748cdb9d44b9",
+        "SUP-106c334769abc2bc"
+      ]
+    },
+    {
+      "claim_id": "C028",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 510,
+      "end": 584,
+      "claim_text": "La moyenne n’est pourtant pas une opération plus prudente que la division.",
+      "normalized_claim": "La différence de verdict ne tient pas à une prudence propre à la moyenne.",
+      "support_ids": [
+        "SUP-65d1748cdb9d44b9",
+        "SUP-106c334769abc2bc"
+      ]
+    },
+    {
+      "claim_id": "C029",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 82,
+      "end": 148,
+      "claim_text": "Comparer deux moyennes, c’est demander laquelle est la plus grande",
+      "normalized_claim": "Comparer deux moyennes revient à une question d'ordre.",
+      "support_ids": [
+        "SUP-106c334769abc2bc",
+        "SUP-65d1748cdb9d44b9"
+      ]
+    },
+    {
+      "claim_id": "C030",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 155,
+      "end": 310,
+      "claim_text": "sur les quatre nombres de nos deux journées, l’ordre ne bouge pas d’une écriture à l’autre : 110 dépasse 100 en Fahrenheit, et 43,3 dépasse 37,8 en Celsius",
+      "normalized_claim": "L'ordre des deux journées est le même dans les deux échelles.",
+      "support_ids": [
+        "SUP-98d72b4f60715313"
+      ]
+    },
+    {
+      "claim_id": "C031",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 312,
+      "end": 383,
+      "claim_text": "Pour cette paire-là, la question reçoit la même réponse des deux côtés.",
+      "normalized_claim": "Pour cette paire de mesures, la comparaison d'ordre donne la même réponse dans les deux échelles.",
+      "support_ids": [
+        "SUP-98d72b4f60715313"
+      ]
+    },
+    {
+      "claim_id": "C032",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 384,
+      "end": 533,
+      "claim_text": "Un rapport, lui, ne demande pas laquelle est la plus grande mais combien de fois, et pour répondre à cela il faut compter depuis le zéro de l’échelle",
+      "normalized_claim": "Un rapport suppose de compter depuis le zéro de l'échelle.",
+      "support_ids": [
+        "SUP-106c334769abc2bc",
+        "SUP-65d1748cdb9d44b9"
+      ]
+    },
+    {
+      "claim_id": "C033",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 536,
+      "end": 656,
+      "claim_text": "ce zéro, les deux écritures de la même journée viennent de le montrer, n’est pas au même endroit d’une échelle à l’autre",
+      "normalized_claim": "Le zéro n'est pas situé au même endroit dans les deux échelles.",
+      "support_ids": [
+        "SUP-98d72b4f60715313"
+      ]
+    },
+    {
+      "claim_id": "C034",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 658,
+      "end": 758,
+      "claim_text": "L’opération n’est pas en cause ; ce qui l’est, c’est ce que l’énoncé fait dépendre d’une convention.",
+      "normalized_claim": "Ce n'est pas l'opération mais l'énoncé entier, et ce qu'il fait dépendre d'une convention, qui est en cause.",
+      "support_ids": [
+        "SUP-65d1748cdb9d44b9",
+        "SUP-106c334769abc2bc",
+        "SUP-98d72b4f60715313"
+      ]
+    },
+    {
+      "claim_id": "C035",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 0,
+      "end": 196,
+      "claim_text": "Les auteurs en font une règle générale : l’admissibilité d’une opération mathématique ne dépend pas seulement du type d’échelle, mais de l’énoncé numérique entier dont cette opération fait partie.",
+      "normalized_claim": "Règle générale des auteurs : l'admissibilité d'une opération dépend de l'énoncé numérique entier, pas seulement du type d'échelle.",
+      "support_ids": [
+        "SUP-65d1748cdb9d44b9",
+        "SUP-106c334769abc2bc"
+      ]
+    },
+    {
+      "claim_id": "C036",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 197,
+      "end": 432,
+      "claim_text": "Additionner deux températures et comparer la somme à une troisième ne produit pas un énoncé doué de sens ; additionner deux masses et faire la même comparaison en produit un, parce que les masses ne relèvent pas du même type d’échelle.",
+      "normalized_claim": "L'exemple des auteurs oppose la somme de deux températures, dépourvue de sens, à la même somme pour des masses, douée de sens.",
+      "support_ids": [
+        "SUP-106c334769abc2bc"
+      ]
+    },
+    {
+      "claim_id": "C037",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 433,
+      "end": 513,
+      "claim_text": "La fin de leur texte prend d’ailleurs parti contre deux positions qu’ils nomment",
+      "normalized_claim": "La dernière sous-section du texte prend parti contre deux positions nommées.",
+      "support_ids": [
+        "SUP-106c334769abc2bc"
+      ]
+    },
+    {
+      "claim_id": "C038",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 516,
+      "end": 636,
+      "claim_text": "celle de Weitzenhoffer, pour qui seules sont admissibles les opérations correspondant à des opérations physiques connues",
+      "normalized_claim": "Position attribuée à Weitzenhoffer : seules sont admissibles les opérations correspondant à des opérations physiques connues.",
+      "support_ids": [
+        "SUP-106c334769abc2bc"
+      ]
+    },
+    {
+      "claim_id": "C039",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 641,
+      "end": 736,
+      "claim_text": "celle de Guilford, pour qui toute l’arithmétique le devient dès qu’une addition physique existe",
+      "normalized_claim": "Position attribuée à Guilford : toute l'arithmétique devient admissible dès qu'existe une addition physique.",
+      "support_ids": [
+        "SUP-106c334769abc2bc"
+      ]
+    },
+    {
+      "claim_id": "C040",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 738,
+      "end": 832,
+      "claim_text": "Contre l’une et l’autre, ils soutiennent que ce n’est pas la nature des opérations qui décide.",
+      "normalized_claim": "Contre ces deux positions, les auteurs soutiennent que la nature des opérations ne décide pas de la signification.",
+      "support_ids": [
+        "SUP-106c334769abc2bc",
+        "SUP-98d72b4f60715313"
+      ]
+    },
+    {
+      "claim_id": "C041",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 0,
+      "end": 68,
+      "claim_text": "Suppes et Zinnes rabaissent eux-mêmes leur critère, à deux endroits.",
+      "normalized_claim": "Les auteurs relativisent eux-mêmes la portée de leur critère en deux endroits du texte.",
+      "support_ids": [
+        "SUP-394b11771db49313",
+        "SUP-106c334769abc2bc"
+      ]
+    },
+    {
+      "claim_id": "C042",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 69,
+      "end": 144,
+      "claim_text": "Une note concède qu’il fournit une condition nécessaire mais non suffisante",
+      "normalized_claim": "Une note du texte concède que le critère est une condition nécessaire mais non suffisante.",
+      "support_ids": [
+        "SUP-394b11771db49313",
+        "SUP-106c334769abc2bc"
+      ]
+    },
+    {
+      "claim_id": "C043",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 147,
+      "end": 306,
+      "claim_text": "un énoncé qui résiste au changement d’échelle a franchi une exigence indispensable, ce qui ne suffit pas encore à en faire un énoncé doué de sens à tous égards",
+      "normalized_claim": "Résister au changement d'échelle est nécessaire sans être suffisant.",
+      "support_ids": [
+        "SUP-394b11771db49313",
+        "SUP-106c334769abc2bc"
+      ]
+    },
+    {
+      "claim_id": "C044",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 311,
+      "end": 550,
+      "claim_text": "l’ouverture de leur section écarte l’idée que la question serait fondamentale : ce problème, écrivent-ils, n’est pas central pour une théorie de la mesure, il se rencontre surtout du côté de la façon dont les mesures peuvent être utilisées",
+      "normalized_claim": "L'ouverture de la section déclare le problème non central pour une théorie de la mesure, mais lié à l'usage des mesures.",
+      "support_ids": [
+        "SUP-394b11771db49313",
+        "SUP-106c334769abc2bc"
+      ]
+    },
+    {
+      "claim_id": "C045",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 552,
+      "end": 689,
+      "claim_text": "Le critère n’est donc pas un outil pour construire des échelles, mais pour surveiller ce qu’on fait des mesures une fois qu’on les tient.",
+      "normalized_claim": "Le critère porte sur l'usage des mesures, non sur la construction des échelles.",
+      "support_ids": [
+        "SUP-394b11771db49313",
+        "SUP-106c334769abc2bc"
+      ]
+    },
+    {
+      "claim_id": "C046",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 40,
+      "end": 69,
+      "claim_text": "Deux problèmes viennent avant",
+      "normalized_claim": "Le problème de la signification est précédé de deux autres problèmes dans le texte.",
+      "support_ids": [
+        "SUP-5fd3966e10893f83",
+        "SUP-106c334769abc2bc"
+      ]
+    },
+    {
+      "claim_id": "C047",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 72,
+      "end": 175,
+      "claim_text": "celui de la représentation, qui demande si une grandeur peut seulement être représentée par des nombres",
+      "normalized_claim": "Le problème de la représentation porte sur la possibilité d'une représentation numérique.",
+      "support_ids": [
+        "SUP-106c334769abc2bc"
+      ]
+    },
+    {
+      "claim_id": "C048",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 180,
+      "end": 276,
+      "claim_text": "celui de l’unicité, qui demande jusqu’à quel point cette représentation numérique est déterminée",
+      "normalized_claim": "Le problème de l'unicité porte sur le degré de détermination de la représentation numérique.",
+      "support_ids": [
+        "SUP-106c334769abc2bc"
+      ]
+    },
+    {
+      "claim_id": "C049",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 278,
+      "end": 350,
+      "claim_text": "Le troisième, ils le baptisent eux-mêmes le problème de la signification",
+      "normalized_claim": "Les auteurs nomment eux-mêmes ce troisième problème le problème de la signification.",
+      "support_ids": [
+        "SUP-5fd3966e10893f83",
+        "SUP-05e2243f9cf8b942",
+        "SUP-f827172a4db54d06"
+      ]
+    },
+    {
+      "claim_id": "C050",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 355,
+      "end": 505,
+      "claim_text": "ils le résolvent avec le deuxième : ce qui décide qu’un énoncé a un sens, tranchent-ils, ce sont les propriétés d’unicité des mesures qu’il met en jeu",
+      "normalized_claim": "Les auteurs font dépendre la signification des propriétés d'unicité des assignations numériques.",
+      "support_ids": [
+        "SUP-98d72b4f60715313",
+        "SUP-106c334769abc2bc"
+      ]
+    },
+    {
+      "claim_id": "C051",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 507,
+      "end": 655,
+      "claim_text": "Le point de vue général de cette section, ils ne le revendiquent pas en propre : ils le rapportent à un article antérieur de Suppes avec Dana Scott.",
+      "normalized_claim": "Les auteurs rapportent le point de vue général de cette section à un article antérieur de Scott et Suppes.",
+      "support_ids": [
+        "SUP-f827172a4db54d06",
+        "SUP-5fd3966e10893f83",
+        "SUP-05e2243f9cf8b942"
+      ]
+    },
+    {
+      "claim_id": "C052",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 0,
+      "end": 87,
+      "claim_text": "La définition, elle, ne parle jamais de thermomètres : elle parle d’énoncés numériques.",
+      "normalized_claim": "La définition porte sur des énoncés numériques et non sur des instruments de température.",
+      "support_ids": [
+        "SUP-b7513cb9ad6e4968",
+        "SUP-af9f8e3a4b83d51b"
+      ]
+    },
+    {
+      "claim_id": "C053",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 332,
+      "end": 638,
+      "claim_text": "Dire qu’une personne ayant mis huit est deux fois plus satisfaite qu’une autre ayant mis quatre pose la question du rapport au même endroit que sur les températures : ce n’est pas la division qui est en cause, c’est que cet énoncé fait compter depuis un zéro que le questionnaire aurait pu placer ailleurs.",
+      "normalized_claim": "Appliqué à une échelle de satisfaction, le rapport pose le même problème de zéro conventionnel que sur les températures.",
+      "support_ids": [
+        "SUP-65d1748cdb9d44b9",
+        "SUP-106c334769abc2bc"
+      ]
+    },
+    {
+      "claim_id": "C054",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 639,
+      "end": 864,
+      "claim_text": "Comparer les moyennes de deux services ne demande pas la même chose ; mais pour trancher, il faudrait d’abord dire quelles réécritures cette échelle-là autorise, et c’est la première question que le critère oblige à se poser.",
+      "normalized_claim": "Trancher sur la comparaison de moyennes suppose d'abord de déterminer les transformations admissibles de l'échelle.",
+      "support_ids": [
+        "SUP-65d1748cdb9d44b9",
+        "SUP-106c334769abc2bc",
+        "SUP-ea63ac6a4f2118a4"
+      ]
+    },
+    {
+      "claim_id": "C055",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 63,
+      "end": 151,
+      "claim_text": "Résister au changement d’échelle est nécessaire et ne suffit pas, les auteurs l’écrivent",
+      "normalized_claim": "Les auteurs écrivent que le critère est nécessaire mais non suffisant.",
+      "support_ids": [
+        "SUP-394b11771db49313",
+        "SUP-106c334769abc2bc"
+      ]
+    },
+    {
+      "claim_id": "C056",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 156,
+      "end": 190,
+      "claim_text": "ils ne disent pas là ce qui manque",
+      "normalized_claim": "Les auteurs n'indiquent pas à cet endroit ce qui manquerait pour une condition suffisante.",
+      "support_ids": [
+        "SUP-394b11771db49313",
+        "SUP-106c334769abc2bc"
+      ]
+    },
+    {
+      "claim_id": "C057",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 192,
+      "end": 399,
+      "claim_text": "Ils indiquent en revanche où la question a été mise en forme : pour la construction d’un langage formalisé autour de la signification, ils renvoient à un article que Patrick Suppes avait publié seul en 1959.",
+      "normalized_claim": "Pour la construction d'un langage formalisé, les auteurs renvoient à un article de Suppes seul, de 1959.",
+      "support_ids": [
+        "SUP-0521825df28f98cb"
+      ]
+    },
+    {
+      "claim_id": "C058",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 470,
+      "end": 631,
+      "claim_text": "Quant à la controverse qu’ils disent considérable, elle se poursuit dans les textes de ceux qui l’ont menée, à commencer par les deux adversaires qu’ils nomment.",
+      "normalized_claim": "Les auteurs qualifient la controverse de considérable et nomment deux adversaires.",
+      "support_ids": [
+        "SUP-106c334769abc2bc"
+      ]
+    }
+  ]
+}

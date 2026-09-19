@@ -1,0 +1,1424 @@
+{
+  "protocol_version": 1,
+  "concept_id": "organisation-genree",
+  "candidate_sha256": "e76f77a8d8cf685a1d5051bc214c6e83b972f40879d1f65b0a559481b6cc3f2a",
+  "map_sha256": "aef34b0c8b1dd56b0b66c6b214806b851732bf854d7ac4d1ccbe477e9f20678c",
+  "claims": [
+    {
+      "claim_id": "C001",
+      "locator": "lead[0]",
+      "claim_text": "ces conditions supposent quelque chose de très précis sur la vie de la personne qui occupera le poste : qu’elle peut se rendre disponible sans que rien, ailleurs, ne vienne s’y opposer",
+      "supports": [
+        {
+          "id": "SUP-f950e846a432256e",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[8]",
+          "access": "n/a",
+          "text": "9. LE PIVOT DE TOUT L'ARTICLE : L'EMPLOI ABSTRAIT A BESOIN D'UN OCCUPANT, ET CET OCCUPANT N'EST PAS N'IMPORTE QUI. « In organizational logic, both jobs and hierarchies are abstract categories that have no occupants, no human bodies, no gender. However, an abstract job can exist, can be transformed into a concrete instance, only if there is a worker. In organizational logic, filling the abstract job is a disembodied worker who exists only for the work. Such a hypothetical worker cannot have other imperatives of existence that impinge upon the job. At the very least, outside imperatives cannot be included within the definition of the job. Too many obligations outside the boundaries of the job would make a worker unsuited for the position » (p. 149). C'est ici que la neutralité bascule : une catégorie sans corps et sans genre présuppose quand même une vie."
+        },
+        {
+          "id": "SUP-5622026671390f0b",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.conditions.intensified_by[3]",
+          "access": "n/a",
+          "text": "L'exigence de disponibilité totale, quand « Too many obligations outside the boundaries of the job would make a worker unsuited for the position » (p. 149) — l'exclusion passe alors par un critère qui ne nomme jamais le sexe."
+        }
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "locator": "lead[1]",
+      "claim_text": "C’est la question que pose la sociologue Joan Acker à propos des organisations de travail.",
+      "supports": [
+        {
+          "id": "SUP-18fd4348b13a39b3",
+          "origin": "validated",
+          "path": "$.authors[0].name",
+          "access": "n/a",
+          "text": "Joan Acker"
+        },
+        {
+          "id": "SUP-e1ae2b51889d7ee8",
+          "origin": "validated",
+          "path": "$.sources[0].label",
+          "access": "full-text",
+          "text": "Joan Acker, « Hierarchies, Jobs, Bodies: A Theory of Gendered Organizations », Gender & Society, vol. 4, n° 2, juin 1990, p. 139-158."
+        },
+        {
+          "id": "SUP-8c17788734699862",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.primary_sources[0].citation",
+          "access": "full-text",
+          "text": "Joan Acker, « Hierarchies, Jobs, Bodies: A Theory of Gendered Organizations », Gender & Society, vol. 4, n° 2, juin 1990, p. 139-158. Édition originale et unique connue : SAGE Publications pour Sociologists for Women in Society. Communication d'origine : American Sociological Association Annual Meetings, Chicago, août 1987 (note d'autrice, p. 139)."
+        },
+        {
+          "id": "SUP-a02d5a10202c3147",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.primary_sources[0].evidence",
+          "access": "full-text",
+          "text": "SOURCE PRIMAIRE OUVERTE ET LUE INTÉGRALEMENT (20 pages). Établit, dans les mots d'Acker : le refus du genre comme apport extérieur qui « contaminerait » des structures neutres, et le refus de traiter le harcèlement comme « deviations of gendered actors » plutôt que comme « components of organizational structure » (p. 142) ; la critique de Kanter — « In posing the argument as structure or gender, Moss Kanter also implicitly posits gender as standing outside of structure » et l'insuffisance de l'analyse par les nombres, qui « fails to account for gender differences in the situation of the token » (p. 143) ; le rejet des modèles à deux structures, bureaucratie + patriarcat (p. 144) ; la définition du « gendered » et les cinq processus en interaction (p. 146-147) ; la « organizational logic », sa « gendered substructure » et ses supports documentaires, avec la base empirique déclarée — l'observation d'un système d'évaluation des emplois dans un projet de comparable worth (p. 147) ; l'emploi comme « empty slot » séparé des personnes et l'inversion « Human beings are to be motivated, managed, and chosen to fit the job » (p. 148) ; la hiérarchie abstraite, le test de vraisemblance et la règle de congruence, avec les cas de la travailleuse de crèche et de la secrétaire (p. 148-149) ; LE PIVOT — le travailleur désincarné qui n'existe que pour le travail et ne peut avoir d'autres impératifs d'existence, dont la seule traduction réelle est l'homme dont la femme prend en charge la vie privée (p. 149) ; « \"A job\" already contains the gender-based division of labor » (p. 149) ; la hiérarchie déduite de la disponibilité (p. 149-150) ; la réplication des classements existants par les systèmes d'évaluation et l'exemple des points accordés aux compétences financières contre les compétences relationnelles (p. 150) ; l'exclusion de la sexualité, de la procréation et des émotions, et l'asymétrie entre corps féminins stigmatisés et imagerie masculine valorisée (p. 151-153) ; les contrôles tacites et ouverts (p. 152) ; l'intérêt matériel des hommes à la barrière (p. 153-154) ; la synthèse sur les systèmes rationnels-techniques qui « conceal a gendered substructure » et l'articulation avec le contrôle de classe (p. 154) ; les trois questions ouvertes sur la race (p. 154) ; et la conclusion — ce n'est pas une erreur mais une partie des processus d'organisation, et il faudrait « the end of organizations as they exist today » (p. 154-155). AJOUT DU TOUR 2 — CE QUE LA BIBLIOGRAPHIE ET LES RENVOIS ÉTABLISSENT. Les références occupent les p. 155-158 et ont été relues. Elles portent, entre autres : « Acker, Joan, and Donald Van Houten. 1974. Differential recruitment and control: The sex structuring of organizations. Administrative Science Quarterly 19:152-63 » (p. 155) ; « Hearn, Jeff, and P. Wendy Parkin. 1983. Gender and organizations: A selective review and critique of a neglected area. Organization Studies 4:219-42 » et « . 1987. Sex at work. Brighton: Wheatsheaf » (p. 156) ; « Scott, Joan. 1986. Gender: A useful category of historical analysis. American Historical Review 91:1053-75 » (p. 158). Hearn et Parkin sont donc cités par Acker — sept fois dans le corps (p. 140 deux fois, 142, 151 deux fois, 152 deux fois) — sans qu'aucun de ces renvois ne fasse dériver d'eux le terme ou la thèse : voir `known_ambiguities`."
+        }
+      ]
+    },
+    {
+      "claim_id": "C003",
+      "locator": "lead[1]",
+      "claim_text": "le genre n’entre pas dans une organisation depuis le dehors, porté par des individus déjà hommes ou femmes qui rencontreraient ensuite des règles neutres",
+      "supports": [
+        {
+          "id": "SUP-7b7800d2a9fda321",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.concept_definition",
+          "access": "n/a",
+          "text": "Dire d'une organisation qu'elle est genrée, chez Acker, ce n'est pas dire qu'elle contient des inégalités ou des comportements sexistes : c'est dire que sa structure même — la définition d'un poste, la construction de la hiérarchie, le travailleur que ces catégories présupposent — est construite sur une distinction masculin/féminin, tout en se présentant comme neutre. La formule de l'autrice : « To say that an organization, or any other analytic unit, is gendered means that advantage and disadvantage, exploitation and control, action and emotion, meaning and identity, are patterned through and in terms of a distinction between male and female, masculine and feminine. Gender is not an addition to ongoing processes, conceived as gender neutral. Rather, it is an integral part of those processes, which cannot be properly understood without an analysis of gender (Connell 1987; West and Zimmerman 1987) » (p. 146). Le genre n'est donc pas quelque chose qui entre dans l'organisation depuis le dehors ; l'article attaque explicitement la position adverse : « When it is acknowledged that women and men are affected differently by organizations, it is argued that gendered attitudes and behavior are brought into (and contaminate) essentially gender-neutral structures. This view of organizations separates structures from the people in them » (p. 142). Le lieu précis de la démonstration est ce qu'Acker appelle la « logique organisationnelle » : « Gender is a constitutive element in organizational logic, or the underlying assumptions and practices that construct most contemporary work organizations […] Organizational logic appears to be gender neutral […] However, underlying both academic theories and practical guides for managers is a gendered substructure that is reproduced daily in practical work activities […] » (p. 147 ; la phrase se poursuit par « and, somewhat less frequently, in the writings of organizational theorists. (cf. Smith 1988) »). Cette logique a des supports matériels observables : « written work rules, labor contracts, managerial directives, and other documentary tools for running large organizations, including systems of job evaluation […] » (p. 147 ; la citation s'arrête avant la fin de la phrase, qui s'achève sur « widely used in the comparable-worth strategy of feminists »). Le résultat de l'analyse tient dans une phrase : « The concept \"a job\" is thus implicitly a gendered concept, even though organizational logic presents it as gender neutral. \"A job\" already contains the gender-based division of labor and the separation between the public and the private sphere » (p. 149)."
+        },
+        {
+          "id": "SUP-2980efc877717e16",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[1]",
+          "access": "n/a",
+          "text": "2. CE QU'ELLE REFUSE : L'AJOUT. La position qu'elle combat consiste à traiter le genre comme un apport extérieur qui vient « contaminer » des structures par ailleurs neutres (p. 142) ; et à traiter, par exemple, le harcèlement sexuel comme « deviations of gendered actors, not, as MacKinnon (1979) might argue, as components of organizational structure » (p. 142). Elle refuse aussi les modèles à deux structures (bureaucratie + patriarcat, Ressner) : « the central theory of bureaucratic or organizational structure is unexamined, and patriarchy is added to allow the theorist to deal with women » (p. 144)."
+        },
+        {
+          "id": "SUP-2c522147e446630c",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.common_misinterpretations[6].why_wrong",
+          "access": "n/a",
+          "text": "Inversion complète. Ce sont les catégories qui ne sont pas neutres, tout en se présentant comme telles : « Organizational logic appears to be gender neutral; gender-neutral theories of bureaucracy and organizations employ and give expression to this logic. However, underlying both academic theories and practical guides for managers is a gendered substructure » (p. 147). Le masquage fait partie du mécanisme : c'est parce que les catégories paraissent neutres qu'elles fonctionnent."
+        }
+      ]
+    },
+    {
+      "claim_id": "C004",
+      "locator": "lead[1]",
+      "claim_text": "Il est déjà présent dans la façon dont un poste est défini, avant même que quiconque ne soit recruté pour l’occuper.",
+      "supports": [
+        {
+          "id": "SUP-7b7800d2a9fda321",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.concept_definition",
+          "access": "n/a",
+          "text": "Dire d'une organisation qu'elle est genrée, chez Acker, ce n'est pas dire qu'elle contient des inégalités ou des comportements sexistes : c'est dire que sa structure même — la définition d'un poste, la construction de la hiérarchie, le travailleur que ces catégories présupposent — est construite sur une distinction masculin/féminin, tout en se présentant comme neutre. La formule de l'autrice : « To say that an organization, or any other analytic unit, is gendered means that advantage and disadvantage, exploitation and control, action and emotion, meaning and identity, are patterned through and in terms of a distinction between male and female, masculine and feminine. Gender is not an addition to ongoing processes, conceived as gender neutral. Rather, it is an integral part of those processes, which cannot be properly understood without an analysis of gender (Connell 1987; West and Zimmerman 1987) » (p. 146). Le genre n'est donc pas quelque chose qui entre dans l'organisation depuis le dehors ; l'article attaque explicitement la position adverse : « When it is acknowledged that women and men are affected differently by organizations, it is argued that gendered attitudes and behavior are brought into (and contaminate) essentially gender-neutral structures. This view of organizations separates structures from the people in them » (p. 142). Le lieu précis de la démonstration est ce qu'Acker appelle la « logique organisationnelle » : « Gender is a constitutive element in organizational logic, or the underlying assumptions and practices that construct most contemporary work organizations […] Organizational logic appears to be gender neutral […] However, underlying both academic theories and practical guides for managers is a gendered substructure that is reproduced daily in practical work activities […] » (p. 147 ; la phrase se poursuit par « and, somewhat less frequently, in the writings of organizational theorists. (cf. Smith 1988) »). Cette logique a des supports matériels observables : « written work rules, labor contracts, managerial directives, and other documentary tools for running large organizations, including systems of job evaluation […] » (p. 147 ; la citation s'arrête avant la fin de la phrase, qui s'achève sur « widely used in the comparable-worth strategy of feminists »). Le résultat de l'analyse tient dans une phrase : « The concept \"a job\" is thus implicitly a gendered concept, even though organizational logic presents it as gender neutral. \"A job\" already contains the gender-based division of labor and the separation between the public and the private sphere » (p. 149)."
+        },
+        {
+          "id": "SUP-4e6e5fc0cad480cf",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.key_quotation._alternatives_verbatim_meme_source[1].text",
+          "access": "n/a",
+          "text": "The concept \"a job\" is thus implicitly a gendered concept, even though organizational logic presents it as gender neutral. \"A job\" already contains the gender-based division of labor and the separation between the public and the private sphere."
+        },
+        {
+          "id": "SUP-b13efc13b3e40573",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[5]",
+          "access": "n/a",
+          "text": "6. PREMIÈRE ÉTAPE DU DISPOSITIF : L'EMPLOI EST SÉPARÉ DES PERSONNES. « Job evaluation evaluates jobs, not their incumbents. The job is the basic unit in a work organization's hierarchy, a description of a set of tasks, competencies, and responsibilities represented as a position on an organizational chart. A job is separate from people. It is an empty slot, a reification that must continually be reconstructed, for positions exist only as scraps of paper until people fill them » (p. 148). Et l'inversion qui en découle : « Human beings are to be motivated, managed, and chosen to fit the job. The job exists as a thing apart » (p. 148). Ce n'est pas l'emploi qui s'ajuste aux gens, ce sont les gens qu'on choisit pour aller dans l'emploi."
+        }
+      ]
+    },
+    {
+      "claim_id": "C005",
+      "locator": "sections[0].paragraphs[0]",
+      "claim_text": "Acker ne regarde ni les opinions ni les comportements : elle regarde les documents par lesquels une organisation définit et classe ses emplois",
+      "supports": [
+        {
+          "id": "SUP-c35e722aaa5e4738",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[4]",
+          "access": "n/a",
+          "text": "5. OÙ ON PEUT VOIR LA LOGIQUE À L'ŒUVRE — le dispositif d'observation. La logique organisationnelle est écrite quelque part : règles écrites, contrats de travail, directives managériales, « and other documentary tools for running large organizations, including systems of job evaluation […] » (p. 147 ; la citation s'arrête avant la fin de la phrase, qui s'achève sur « widely used in the comparable-worth strategy of feminists »). Acker annonce sa base empirique : « I base the following theoretical discussion on my observations of organizational logic in action in the job-evaluation component of a comparable-worth project (Acker 1987, 1989, 1990) » (p. 147). L'évaluation des emplois est le bon révélateur parce qu'elle est universelle et qu'elle doit s'expliciter : « Job evaluation is a management tool used in every industrial country, capitalist and socialist, to rationalize the organizational hierarchy and to help in setting equitable wages » (p. 147), et « the underlying rationales are similar enough so that the observation of one system can provide a window into a common organizational mode of thinking and practice » (p. 148)."
+        },
+        {
+          "id": "SUP-af401dbbcbed5402",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.conditions.appears_when[1]",
+          "access": "n/a",
+          "text": "Ces catégories sont écrites et outillées : « written work rules, labor contracts, managerial directives, and other documentary tools for running large organizations, including systems of job evaluation […] » (p. 147 ; la citation s'arrête avant la fin de la phrase, qui s'achève sur « widely used in the comparable-worth strategy of feminists »). C'est le caractère documentaire qui rend la logique à la fois efficace et repérable."
+        },
+        {
+          "id": "SUP-cbd8ca300fe9306f",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.common_misinterpretations[0].why_wrong",
+          "access": "n/a",
+          "text": "C'est exactement la position qu'Acker construit son article pour écarter. Elle décrit et refuse la vue courante : « it is argued that gendered attitudes and behavior are brought into (and contaminate) essentially gender-neutral structures. This view of organizations separates structures from the people in them » (p. 142). Sa thèse porte sur des objets non intentionnels et écrits — définition du poste, règle de congruence, système de cotation : « Job evaluation evaluates jobs, not their incumbents » (p. 148). Le harcèlement sexuel figure bien dans le texte, mais précisément parce qu'Acker refuse d'en faire une déviance individuelle : la littérature le traite, dit-elle, comme « deviations of gendered actors, not, as MacKinnon (1979) might argue, as components of organizational structure » (p. 142), et elle le range pour sa part parmi les contrôles qui « conform to and reinforce hierarchy » (p. 152). Une fiche qui glisserait vers la discrimination interpersonnelle inverserait l'argument."
+        }
+      ]
+    },
+    {
+      "claim_id": "C006",
+      "locator": "sections[0].paragraphs[0]",
+      "claim_text": "Règlements de travail, contrats, directives, et surtout grilles de cotation des postes, celles qui attribuent des points à un emploi pour le situer dans l’échelle des salaires.",
+      "supports": [
+        {
+          "id": "SUP-af401dbbcbed5402",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.conditions.appears_when[1]",
+          "access": "n/a",
+          "text": "Ces catégories sont écrites et outillées : « written work rules, labor contracts, managerial directives, and other documentary tools for running large organizations, including systems of job evaluation […] » (p. 147 ; la citation s'arrête avant la fin de la phrase, qui s'achève sur « widely used in the comparable-worth strategy of feminists »). C'est le caractère documentaire qui rend la logique à la fois efficace et repérable."
+        },
+        {
+          "id": "SUP-c35e722aaa5e4738",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[4]",
+          "access": "n/a",
+          "text": "5. OÙ ON PEUT VOIR LA LOGIQUE À L'ŒUVRE — le dispositif d'observation. La logique organisationnelle est écrite quelque part : règles écrites, contrats de travail, directives managériales, « and other documentary tools for running large organizations, including systems of job evaluation […] » (p. 147 ; la citation s'arrête avant la fin de la phrase, qui s'achève sur « widely used in the comparable-worth strategy of feminists »). Acker annonce sa base empirique : « I base the following theoretical discussion on my observations of organizational logic in action in the job-evaluation component of a comparable-worth project (Acker 1987, 1989, 1990) » (p. 147). L'évaluation des emplois est le bon révélateur parce qu'elle est universelle et qu'elle doit s'expliciter : « Job evaluation is a management tool used in every industrial country, capitalist and socialist, to rationalize the organizational hierarchy and to help in setting equitable wages » (p. 147), et « the underlying rationales are similar enough so that the observation of one system can provide a window into a common organizational mode of thinking and practice » (p. 148)."
+        },
+        {
+          "id": "SUP-226aad3b63a3d6da",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[11]",
+          "access": "n/a",
+          "text": "12. LA BOUCLE DE REPRODUCTION PAR L'OUTIL. Les systèmes d'évaluation ont été construits par des consultants avec des dirigeants pour produire des classements crédibles ; or « Such rankings would not deviate substantially from rankings already in place that contain gender typing and gender segregation of jobs and the clustering of women workers in the lowest and the worst-paid jobs. The concrete value judgments that constitute conventional job evaluation are designed to replicate such structures » (p. 150). Exemple donné : « skills in managing money, more often found in men's than in women's jobs, frequently receive more points than skills in dealing with clients or human relations skills, more often found in women's than in men's jobs » (p. 150). Et l'énoncé de la boucle : « Every time that job evaluation is used, that structure is created or reinforced » (p. 148)."
+        },
+        {
+          "id": "SUP-08511ff5d75ac7fc",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.translation_notes[1].note",
+          "access": "n/a",
+          "text": "« Job » est ici un terme technique de gestion, et Acker le met entre guillemets pour cette raison : « The concept \"a job\" » (p. 149). Ce n'est ni le travail (« work »), ni le métier, ni l'occupation : c'est l'unité de base d'une hiérarchie d'organisation, « a description of a set of tasks, competencies, and responsibilities represented as a position on an organizational chart » (p. 148). Traduire par « travail » écraserait la distinction sur laquelle repose toute la démonstration — « a disembodied worker who exists only for the work » oppose précisément le poste (job) et l'activité (work). « Job evaluation » désigne les systèmes de cotation analytique des postes (type Hay), pas l'évaluation annuelle des personnes ; Acker insiste : « Job evaluation evaluates jobs, not their incumbents » (p. 148)."
+        }
+      ]
+    },
+    {
+      "claim_id": "C007",
+      "locator": "sections[0].paragraphs[0]",
+      "claim_text": "Sa propre base d’observation est l’une de ces grilles, vue fonctionner dans un projet d’équité salariale.",
+      "supports": [
+        {
+          "id": "SUP-c35e722aaa5e4738",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[4]",
+          "access": "n/a",
+          "text": "5. OÙ ON PEUT VOIR LA LOGIQUE À L'ŒUVRE — le dispositif d'observation. La logique organisationnelle est écrite quelque part : règles écrites, contrats de travail, directives managériales, « and other documentary tools for running large organizations, including systems of job evaluation […] » (p. 147 ; la citation s'arrête avant la fin de la phrase, qui s'achève sur « widely used in the comparable-worth strategy of feminists »). Acker annonce sa base empirique : « I base the following theoretical discussion on my observations of organizational logic in action in the job-evaluation component of a comparable-worth project (Acker 1987, 1989, 1990) » (p. 147). L'évaluation des emplois est le bon révélateur parce qu'elle est universelle et qu'elle doit s'expliciter : « Job evaluation is a management tool used in every industrial country, capitalist and socialist, to rationalize the organizational hierarchy and to help in setting equitable wages » (p. 147), et « the underlying rationales are similar enough so that the observation of one system can provide a window into a common organizational mode of thinking and practice » (p. 148)."
+        },
+        {
+          "id": "SUP-9bb72076522daa17",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.translation_notes[5].note",
+          "access": "n/a",
+          "text": "Stratégie féministe nord-américaine des années 1980 visant à faire reconnaître l'équivalence de valeur entre emplois différents à prédominance féminine et masculine. Sans ce contexte, la base empirique de l'article (« the job-evaluation component of a comparable-worth project », p. 147) devient illisible. La notion française voisine est celle de « travail de valeur égale », mais le dispositif institutionnel n'est pas le même."
+        },
+        {
+          "id": "SUP-14e1090075d1d8e4",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.known_ambiguities[0]",
+          "access": "n/a",
+          "text": "LE STATUT DU TEXTE. C'est un article théorique et programmatique, issu d'une communication de 1987. Sa seule base empirique déclarée est l'observation par l'autrice d'un système d'évaluation des emplois dans un projet de comparable worth, dont les résultats sont publiés ailleurs (Acker 1987, 1989, 1990 sur l'Oregon). Ce n'est PAS une enquête de terrain, et l'article ne présente aucun cas d'organisation nommée. Toute fiche qui l'annoncerait comme une étude d'entreprise se tromperait de genre de texte."
+        }
+      ]
+    },
+    {
+      "claim_id": "C008",
+      "locator": "sections[0].paragraphs[0]",
+      "claim_text": "Ces systèmes ont une propriété qui les rend instructifs : ils évaluent des emplois, et non ceux qui les occupent.",
+      "supports": [
+        {
+          "id": "SUP-b13efc13b3e40573",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[5]",
+          "access": "n/a",
+          "text": "6. PREMIÈRE ÉTAPE DU DISPOSITIF : L'EMPLOI EST SÉPARÉ DES PERSONNES. « Job evaluation evaluates jobs, not their incumbents. The job is the basic unit in a work organization's hierarchy, a description of a set of tasks, competencies, and responsibilities represented as a position on an organizational chart. A job is separate from people. It is an empty slot, a reification that must continually be reconstructed, for positions exist only as scraps of paper until people fill them » (p. 148). Et l'inversion qui en découle : « Human beings are to be motivated, managed, and chosen to fit the job. The job exists as a thing apart » (p. 148). Ce n'est pas l'emploi qui s'ajuste aux gens, ce sont les gens qu'on choisit pour aller dans l'emploi."
+        },
+        {
+          "id": "SUP-c35e722aaa5e4738",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[4]",
+          "access": "n/a",
+          "text": "5. OÙ ON PEUT VOIR LA LOGIQUE À L'ŒUVRE — le dispositif d'observation. La logique organisationnelle est écrite quelque part : règles écrites, contrats de travail, directives managériales, « and other documentary tools for running large organizations, including systems of job evaluation […] » (p. 147 ; la citation s'arrête avant la fin de la phrase, qui s'achève sur « widely used in the comparable-worth strategy of feminists »). Acker annonce sa base empirique : « I base the following theoretical discussion on my observations of organizational logic in action in the job-evaluation component of a comparable-worth project (Acker 1987, 1989, 1990) » (p. 147). L'évaluation des emplois est le bon révélateur parce qu'elle est universelle et qu'elle doit s'expliciter : « Job evaluation is a management tool used in every industrial country, capitalist and socialist, to rationalize the organizational hierarchy and to help in setting equitable wages » (p. 147), et « the underlying rationales are similar enough so that the observation of one system can provide a window into a common organizational mode of thinking and practice » (p. 148)."
+        }
+      ]
+    },
+    {
+      "claim_id": "C009",
+      "locator": "sections[0].paragraphs[1]",
+      "claim_text": "Un emploi, dans ce vocabulaire, est une case vide.",
+      "supports": [
+        {
+          "id": "SUP-b13efc13b3e40573",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[5]",
+          "access": "n/a",
+          "text": "6. PREMIÈRE ÉTAPE DU DISPOSITIF : L'EMPLOI EST SÉPARÉ DES PERSONNES. « Job evaluation evaluates jobs, not their incumbents. The job is the basic unit in a work organization's hierarchy, a description of a set of tasks, competencies, and responsibilities represented as a position on an organizational chart. A job is separate from people. It is an empty slot, a reification that must continually be reconstructed, for positions exist only as scraps of paper until people fill them » (p. 148). Et l'inversion qui en découle : « Human beings are to be motivated, managed, and chosen to fit the job. The job exists as a thing apart » (p. 148). Ce n'est pas l'emploi qui s'ajuste aux gens, ce sont les gens qu'on choisit pour aller dans l'emploi."
+        },
+        {
+          "id": "SUP-874e8d2bc4eed2db",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.key_quotation._alternatives_verbatim_meme_source[2].text",
+          "access": "n/a",
+          "text": "A job is separate from people. It is an empty slot, a reification that must continually be reconstructed, for positions exist only as scraps of paper until people fill them."
+        }
+      ]
+    },
+    {
+      "claim_id": "C010",
+      "locator": "sections[0].paragraphs[1]",
+      "claim_text": "Il tient sur du papier avant que personne ne l’occupe : un ensemble de tâches, de compétences et de responsabilités, situé quelque part sur un organigramme, et séparé des personnes.",
+      "supports": [
+        {
+          "id": "SUP-b13efc13b3e40573",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[5]",
+          "access": "n/a",
+          "text": "6. PREMIÈRE ÉTAPE DU DISPOSITIF : L'EMPLOI EST SÉPARÉ DES PERSONNES. « Job evaluation evaluates jobs, not their incumbents. The job is the basic unit in a work organization's hierarchy, a description of a set of tasks, competencies, and responsibilities represented as a position on an organizational chart. A job is separate from people. It is an empty slot, a reification that must continually be reconstructed, for positions exist only as scraps of paper until people fill them » (p. 148). Et l'inversion qui en découle : « Human beings are to be motivated, managed, and chosen to fit the job. The job exists as a thing apart » (p. 148). Ce n'est pas l'emploi qui s'ajuste aux gens, ce sont les gens qu'on choisit pour aller dans l'emploi."
+        },
+        {
+          "id": "SUP-874e8d2bc4eed2db",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.key_quotation._alternatives_verbatim_meme_source[2].text",
+          "access": "n/a",
+          "text": "A job is separate from people. It is an empty slot, a reification that must continually be reconstructed, for positions exist only as scraps of paper until people fill them."
+        },
+        {
+          "id": "SUP-ebafe5325b887a6e",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.conditions.appears_when[0]",
+          "access": "n/a",
+          "text": "L'organisation se pense et s'administre par des catégories abstraites détachées des personnes : « A job is separate from people. It is an empty slot […] for positions exist only as scraps of paper until people fill them » (p. 148). Sans cette abstraction — descriptif de poste, organigramme, classification — le mécanisme d'Acker n'a pas de support."
+        }
+      ]
+    },
+    {
+      "claim_id": "C011",
+      "locator": "sections[0].paragraphs[1]",
+      "claim_text": "ce n’est pas l’emploi qu’on ajuste aux gens, ce sont les gens qu’on motive, qu’on dirige et qu’on choisit pour aller dans l’emploi",
+      "supports": [
+        {
+          "id": "SUP-b13efc13b3e40573",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[5]",
+          "access": "n/a",
+          "text": "6. PREMIÈRE ÉTAPE DU DISPOSITIF : L'EMPLOI EST SÉPARÉ DES PERSONNES. « Job evaluation evaluates jobs, not their incumbents. The job is the basic unit in a work organization's hierarchy, a description of a set of tasks, competencies, and responsibilities represented as a position on an organizational chart. A job is separate from people. It is an empty slot, a reification that must continually be reconstructed, for positions exist only as scraps of paper until people fill them » (p. 148). Et l'inversion qui en découle : « Human beings are to be motivated, managed, and chosen to fit the job. The job exists as a thing apart » (p. 148). Ce n'est pas l'emploi qui s'ajuste aux gens, ce sont les gens qu'on choisit pour aller dans l'emploi."
+        }
+      ]
+    },
+    {
+      "claim_id": "C012",
+      "locator": "sections[0].paragraphs[1]",
+      "claim_text": "Acker appelle logique organisationnelle cet ensemble de présupposés et de pratiques ordinaires sur lesquels la plupart des organisations de travail sont construites",
+      "supports": [
+        {
+          "id": "SUP-7b7800d2a9fda321",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.concept_definition",
+          "access": "n/a",
+          "text": "Dire d'une organisation qu'elle est genrée, chez Acker, ce n'est pas dire qu'elle contient des inégalités ou des comportements sexistes : c'est dire que sa structure même — la définition d'un poste, la construction de la hiérarchie, le travailleur que ces catégories présupposent — est construite sur une distinction masculin/féminin, tout en se présentant comme neutre. La formule de l'autrice : « To say that an organization, or any other analytic unit, is gendered means that advantage and disadvantage, exploitation and control, action and emotion, meaning and identity, are patterned through and in terms of a distinction between male and female, masculine and feminine. Gender is not an addition to ongoing processes, conceived as gender neutral. Rather, it is an integral part of those processes, which cannot be properly understood without an analysis of gender (Connell 1987; West and Zimmerman 1987) » (p. 146). Le genre n'est donc pas quelque chose qui entre dans l'organisation depuis le dehors ; l'article attaque explicitement la position adverse : « When it is acknowledged that women and men are affected differently by organizations, it is argued that gendered attitudes and behavior are brought into (and contaminate) essentially gender-neutral structures. This view of organizations separates structures from the people in them » (p. 142). Le lieu précis de la démonstration est ce qu'Acker appelle la « logique organisationnelle » : « Gender is a constitutive element in organizational logic, or the underlying assumptions and practices that construct most contemporary work organizations […] Organizational logic appears to be gender neutral […] However, underlying both academic theories and practical guides for managers is a gendered substructure that is reproduced daily in practical work activities […] » (p. 147 ; la phrase se poursuit par « and, somewhat less frequently, in the writings of organizational theorists. (cf. Smith 1988) »). Cette logique a des supports matériels observables : « written work rules, labor contracts, managerial directives, and other documentary tools for running large organizations, including systems of job evaluation […] » (p. 147 ; la citation s'arrête avant la fin de la phrase, qui s'achève sur « widely used in the comparable-worth strategy of feminists »). Le résultat de l'analyse tient dans une phrase : « The concept \"a job\" is thus implicitly a gendered concept, even though organizational logic presents it as gender neutral. \"A job\" already contains the gender-based division of labor and the separation between the public and the private sphere » (p. 149)."
+        }
+      ]
+    },
+    {
+      "claim_id": "C013",
+      "locator": "sections[0].paragraphs[1]",
+      "claim_text": "et c’est là, dans cette logique, qu’elle va chercher le genre",
+      "supports": [
+        {
+          "id": "SUP-7b7800d2a9fda321",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.concept_definition",
+          "access": "n/a",
+          "text": "Dire d'une organisation qu'elle est genrée, chez Acker, ce n'est pas dire qu'elle contient des inégalités ou des comportements sexistes : c'est dire que sa structure même — la définition d'un poste, la construction de la hiérarchie, le travailleur que ces catégories présupposent — est construite sur une distinction masculin/féminin, tout en se présentant comme neutre. La formule de l'autrice : « To say that an organization, or any other analytic unit, is gendered means that advantage and disadvantage, exploitation and control, action and emotion, meaning and identity, are patterned through and in terms of a distinction between male and female, masculine and feminine. Gender is not an addition to ongoing processes, conceived as gender neutral. Rather, it is an integral part of those processes, which cannot be properly understood without an analysis of gender (Connell 1987; West and Zimmerman 1987) » (p. 146). Le genre n'est donc pas quelque chose qui entre dans l'organisation depuis le dehors ; l'article attaque explicitement la position adverse : « When it is acknowledged that women and men are affected differently by organizations, it is argued that gendered attitudes and behavior are brought into (and contaminate) essentially gender-neutral structures. This view of organizations separates structures from the people in them » (p. 142). Le lieu précis de la démonstration est ce qu'Acker appelle la « logique organisationnelle » : « Gender is a constitutive element in organizational logic, or the underlying assumptions and practices that construct most contemporary work organizations […] Organizational logic appears to be gender neutral […] However, underlying both academic theories and practical guides for managers is a gendered substructure that is reproduced daily in practical work activities […] » (p. 147 ; la phrase se poursuit par « and, somewhat less frequently, in the writings of organizational theorists. (cf. Smith 1988) »). Cette logique a des supports matériels observables : « written work rules, labor contracts, managerial directives, and other documentary tools for running large organizations, including systems of job evaluation […] » (p. 147 ; la citation s'arrête avant la fin de la phrase, qui s'achève sur « widely used in the comparable-worth strategy of feminists »). Le résultat de l'analyse tient dans une phrase : « The concept \"a job\" is thus implicitly a gendered concept, even though organizational logic presents it as gender neutral. \"A job\" already contains the gender-based division of labor and the separation between the public and the private sphere » (p. 149)."
+        },
+        {
+          "id": "SUP-c24bf9a0571f9e6b",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.known_ambiguities[1]",
+          "access": "n/a",
+          "text": "CINQ PROCESSUS, UN SEUL TRAITÉ. Acker énumère cinq processus de mise en genre, dont les interactions (troisième) et l'identité individuelle (quatrième) — puis consacre l'article au cinquième, la logique organisationnelle. Dire « Acker montre que le genre est dans la structure, pas dans les interactions » est faux : elle range les interactions parmi les processus, elle ne les traite simplement pas ici."
+        },
+        {
+          "id": "SUP-e2f18c253d2f2ba7",
+          "origin": "evidence:evidence.reception.json",
+          "path": "$.evidence.secondary_sources[0].establishes",
+          "access": "n/a",
+          "text": "LA PIÈCE CENTRALE DU DOSSIER, et la seule source internationale de premier plan dont j'aie lu le texte intégral. Notice Crossref revérifiée : vol. 26, n° 4, p. 549-573, trois autrices, août 2012. Elle établit quatre choses. (1) L'ATTRIBUTION ET LA LECTURE SAVANTE, en une formule qui est aussi un état des lieux de l'usage : « To explain gender inequality at work, many sociologists draw on Joan Acker's (1990) theory of gendered organizations. Acker argued that gender inequality is tenacious because it is built into the structure of work organizations. Even the very definition of a “job” contains an implicit preference for male workers ». (2) LE CONTENU TEL QUE LA LITTÉRATURE LE RETIENT — cinq processus, nommés : « Acker (1990) further identified five processes that reproduce gender in organizations: the division of labor, cultural symbols, workplace interactions, individual identities, and organizational logic », avec une hiérarchie explicite : « The latter process—organizational logic—was at the center of Acker's original critique of gendered organizations ». (3) LA NATURE STRUCTURELLE, ET NON INTERPERSONNELLE, DU MÉCANISME : les autrices soulignent que l'originalité d'Acker porte sur des systèmes qui paraissent neutres — « While others had previously identified organizational logic as key to the reproduction of class inequality, Acker's breakthrough identified it as a source of gender inequality as well, even though it appears gender neutral on the surface » — et citent l'autrice à l'appui. ATTENTION, ET LA VÉRIFICATION LE MONTRE DE MANIÈRE PLUS NETTE QU'AVANT : le passage d'Acker qu'elles reproduisent (« Rational-technical, ostensibly gender neutral, control systems are built upon and conceal a gendered substructure … in which men's bodies fill abstract jobs ») n'est pas identique à l'original — le fac-similé porte « gender-neutral » avec trait d'union, « (Smith 1988) » là où les autrices mettent des points de suspension, et « the abstract jobs ». C'est une citation d'Acker PAR le texte citant : elle ne vaut pas source primaire et ne peut en aucun cas servir de `key_quotation`. (4) LE DÉBAT LE PLUS SUBSTANTIEL DE LA RÉCEPTION — la péremption partielle des mécanismes : « Acker's theory explains how gender is embedded in traditional organizations that value and reward worker loyalty and that are characterized by standardized job descriptions, career ladders, and manager-controlled evaluations—features that do not characterize jobs in the new economy », et en conclusion : « Organizations are still gendered, but the mechanisms for reproducing gender disparities are different than those in the traditional career path ». Le désaccord porte sur les mécanismes (échelons de carrière, fiches de poste, évaluations hiérarchiques remplacés par équipes, career maps et réseautage), non sur la thèse. CONSULTATION : TEXTE INTÉGRAL (version PMC en libre accès), ouvert deux fois — les huit énoncés ci-dessus ont été retrouvés verbatim lors de la passe de correction du 17 août 2026."
+        }
+      ]
+    },
+    {
+      "claim_id": "C014",
+      "locator": "sections[1].paragraphs[0]",
+      "claim_text": "Le nom qu’elle emploie pour cette case vide est celui d’emploi abstrait",
+      "supports": [
+        {
+          "id": "SUP-f950e846a432256e",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[8]",
+          "access": "n/a",
+          "text": "9. LE PIVOT DE TOUT L'ARTICLE : L'EMPLOI ABSTRAIT A BESOIN D'UN OCCUPANT, ET CET OCCUPANT N'EST PAS N'IMPORTE QUI. « In organizational logic, both jobs and hierarchies are abstract categories that have no occupants, no human bodies, no gender. However, an abstract job can exist, can be transformed into a concrete instance, only if there is a worker. In organizational logic, filling the abstract job is a disembodied worker who exists only for the work. Such a hypothetical worker cannot have other imperatives of existence that impinge upon the job. At the very least, outside imperatives cannot be included within the definition of the job. Too many obligations outside the boundaries of the job would make a worker unsuited for the position » (p. 149). C'est ici que la neutralité bascule : une catégorie sans corps et sans genre présuppose quand même une vie."
+        },
+        {
+          "id": "SUP-08511ff5d75ac7fc",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.translation_notes[1].note",
+          "access": "n/a",
+          "text": "« Job » est ici un terme technique de gestion, et Acker le met entre guillemets pour cette raison : « The concept \"a job\" » (p. 149). Ce n'est ni le travail (« work »), ni le métier, ni l'occupation : c'est l'unité de base d'une hiérarchie d'organisation, « a description of a set of tasks, competencies, and responsibilities represented as a position on an organizational chart » (p. 148). Traduire par « travail » écraserait la distinction sur laquelle repose toute la démonstration — « a disembodied worker who exists only for the work » oppose précisément le poste (job) et l'activité (work). « Job evaluation » désigne les systèmes de cotation analytique des postes (type Hay), pas l'évaluation annuelle des personnes ; Acker insiste : « Job evaluation evaluates jobs, not their incumbents » (p. 148)."
+        }
+      ]
+    },
+    {
+      "claim_id": "C015",
+      "locator": "sections[1].paragraphs[0]",
+      "claim_text": "Dans un texte de 1990, la réponse tient en une phrase : « Dans la logique organisationnelle, celui qui remplit l’emploi abstrait est un travailleur désincarné qui n’existe que pour le travail. »",
+      "supports": [
+        {
+          "id": "SUP-360fec860b72e51f",
+          "origin": "validated",
+          "path": "$.quotation.text",
+          "access": "n/a",
+          "text": "Dans la logique organisationnelle, celui qui remplit l'emploi abstrait est un travailleur désincarné qui n'existe que pour le travail."
+        },
+        {
+          "id": "SUP-28b47c30098b8c92",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.key_quotation._fragment_court_150.fr",
+          "access": "n/a",
+          "text": "Dans la logique organisationnelle, celui qui remplit l'emploi abstrait est un travailleur désincarné qui n'existe que pour le travail."
+        },
+        {
+          "id": "SUP-21a439abc632c486",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.key_quotation._fragment_court_150.en",
+          "access": "n/a",
+          "text": "In organizational logic, filling the abstract job is a disembodied worker who exists only for the work."
+        },
+        {
+          "id": "SUP-239ddf520fd92441",
+          "origin": "validated",
+          "path": "$.quotation.locator",
+          "access": "n/a",
+          "text": "p. 149"
+        },
+        {
+          "id": "SUP-e1ae2b51889d7ee8",
+          "origin": "validated",
+          "path": "$.sources[0].label",
+          "access": "full-text",
+          "text": "Joan Acker, « Hierarchies, Jobs, Bodies: A Theory of Gendered Organizations », Gender & Society, vol. 4, n° 2, juin 1990, p. 139-158."
+        },
+        {
+          "id": "SUP-f950e846a432256e",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[8]",
+          "access": "n/a",
+          "text": "9. LE PIVOT DE TOUT L'ARTICLE : L'EMPLOI ABSTRAIT A BESOIN D'UN OCCUPANT, ET CET OCCUPANT N'EST PAS N'IMPORTE QUI. « In organizational logic, both jobs and hierarchies are abstract categories that have no occupants, no human bodies, no gender. However, an abstract job can exist, can be transformed into a concrete instance, only if there is a worker. In organizational logic, filling the abstract job is a disembodied worker who exists only for the work. Such a hypothetical worker cannot have other imperatives of existence that impinge upon the job. At the very least, outside imperatives cannot be included within the definition of the job. Too many obligations outside the boundaries of the job would make a worker unsuited for the position » (p. 149). C'est ici que la neutralité bascule : une catégorie sans corps et sans genre présuppose quand même une vie."
+        }
+      ]
+    },
+    {
+      "claim_id": "C016",
+      "locator": "sections[1].paragraphs[0]",
+      "claim_text": "Une catégorie qu’on disait sans corps et sans sexe suppose donc bien quelqu’un, et pas n’importe qui.",
+      "supports": [
+        {
+          "id": "SUP-f950e846a432256e",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[8]",
+          "access": "n/a",
+          "text": "9. LE PIVOT DE TOUT L'ARTICLE : L'EMPLOI ABSTRAIT A BESOIN D'UN OCCUPANT, ET CET OCCUPANT N'EST PAS N'IMPORTE QUI. « In organizational logic, both jobs and hierarchies are abstract categories that have no occupants, no human bodies, no gender. However, an abstract job can exist, can be transformed into a concrete instance, only if there is a worker. In organizational logic, filling the abstract job is a disembodied worker who exists only for the work. Such a hypothetical worker cannot have other imperatives of existence that impinge upon the job. At the very least, outside imperatives cannot be included within the definition of the job. Too many obligations outside the boundaries of the job would make a worker unsuited for the position » (p. 149). C'est ici que la neutralité bascule : une catégorie sans corps et sans genre présuppose quand même une vie."
+        },
+        {
+          "id": "SUP-592abc185c632c6c",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[9]",
+          "access": "n/a",
+          "text": "10. QUEL CORPS RÉEL PEUT TENIR CETTE PLACE. « The closest the disembodied worker doing the abstract job comes to a real worker is the male worker whose life centers on his full-time, life-long job, while his wife or another woman takes care of his personal needs and his children. While the realities of life in industrial capitalism never allowed all men to live out this ideal, it was the goal for labor unions and the image of the worker in social and economic theory. The woman worker, assumed to have legitimate obligations other than those required by the job, did not fit with the abstract job » (p. 149). Le travail domestique de quelqu'un d'autre est la condition de possibilité de l'abstraction — donc la division sexuée du travail est logée DANS la définition du poste, pas à côté d'elle : « \"A job\" already contains the gender-based division of labor and the separation between the public and the private sphere » (p. 149)."
+        }
+      ]
+    },
+    {
+      "claim_id": "C017",
+      "locator": "sections[1].paragraphs[1]",
+      "claim_text": "Un travailleur désincarné, au sens où l’entend l’autrice, n’a pas à quitter son poste parce qu’un enfant est malade, n’a pas de repas à préparer avant de rentrer, ne tombe pas enceinte, ne se fatigue pas d’une façon incompatible avec les horaires prévus.",
+      "supports": [
+        {
+          "id": "SUP-f950e846a432256e",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[8]",
+          "access": "n/a",
+          "text": "9. LE PIVOT DE TOUT L'ARTICLE : L'EMPLOI ABSTRAIT A BESOIN D'UN OCCUPANT, ET CET OCCUPANT N'EST PAS N'IMPORTE QUI. « In organizational logic, both jobs and hierarchies are abstract categories that have no occupants, no human bodies, no gender. However, an abstract job can exist, can be transformed into a concrete instance, only if there is a worker. In organizational logic, filling the abstract job is a disembodied worker who exists only for the work. Such a hypothetical worker cannot have other imperatives of existence that impinge upon the job. At the very least, outside imperatives cannot be included within the definition of the job. Too many obligations outside the boundaries of the job would make a worker unsuited for the position » (p. 149). C'est ici que la neutralité bascule : une catégorie sans corps et sans genre présuppose quand même une vie."
+        },
+        {
+          "id": "SUP-87dec12a48c16205",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[12]",
+          "access": "n/a",
+          "text": "13. EXTENSION AU CORPS — pourquoi le titre dit « Bodies ». « The abstract, bodiless worker, who occupies the abstract, gender-neutral job has no sexuality, no emotions, and does not procreate. The absence of sexuality, emotionality, and procreation in organizational logic and organizational theory is an additional element that both obscures and helps to reproduce the underlying gender relations » (p. 151). Historiquement, Acker s'appuie sur Burrell : « the suppression of sexuality is one of the first tasks the bureaucracy sets itself » (Burrell 1984, 98, cité p. 151) ; « Active sexuality was the enemy of orderly procedures » (p. 151) ; d'où la séparation du foyer, lieu de la sexualité légitime, et du lieu de production : « The concept of the disembodied job symbolizes this separation of work and sexuality » (p. 151)."
+        },
+        {
+          "id": "SUP-c0eac6bb70b1735f",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[13]",
+          "access": "n/a",
+          "text": "14. L'ASYMÉTRIE DES CORPS. « the abstract worker is actually a man, and it is the man's body, its sexuality, minimal responsibility in procreation, and conventional control of emotions that pervades work and organizational processes. Women's bodies — female sexuality, their ability to procreate and their pregnancy, breast-feeding, and child care, menstruation, and mythic \"emotionality\" — are suspect, stigmatized, and used as grounds for control and exclusion » (p. 152). Conséquence salariale : « The ranking of women's jobs is often justified on the basis of women's identification with childbearing and domestic life. They are devalued because women are assumed to be unable to conform to the demands of the abstract job » (p. 152). Symétriquement, les corps masculins ne sont pas expulsés : « While women's bodies are ruled out of order, or sexualized and objectified, in work organizations, men's bodies are not. Indeed, male sexual imagery pervades organizational metaphors and language » (p. 152) — armée, sport, « masculinité hégémonique » au sens de Connell (p. 153), avec cette conséquence : « Women's bodies cannot be adapted to hegemonic masculinity; to function at the top of male hierarchies requires that women render irrelevant everything that makes them women » (p. 153)."
+        }
+      ]
+    },
+    {
+      "claim_id": "C018",
+      "locator": "sections[1].paragraphs[1]",
+      "claim_text": "un tel travailleur hypothétique ne peut avoir d’autres impératifs d’existence qui empiètent sur l’emploi, et trop d’obligations hors des limites du poste rendraient quelqu’un inapte à l’occuper",
+      "supports": [
+        {
+          "id": "SUP-f950e846a432256e",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[8]",
+          "access": "n/a",
+          "text": "9. LE PIVOT DE TOUT L'ARTICLE : L'EMPLOI ABSTRAIT A BESOIN D'UN OCCUPANT, ET CET OCCUPANT N'EST PAS N'IMPORTE QUI. « In organizational logic, both jobs and hierarchies are abstract categories that have no occupants, no human bodies, no gender. However, an abstract job can exist, can be transformed into a concrete instance, only if there is a worker. In organizational logic, filling the abstract job is a disembodied worker who exists only for the work. Such a hypothetical worker cannot have other imperatives of existence that impinge upon the job. At the very least, outside imperatives cannot be included within the definition of the job. Too many obligations outside the boundaries of the job would make a worker unsuited for the position » (p. 149). C'est ici que la neutralité bascule : une catégorie sans corps et sans genre présuppose quand même une vie."
+        },
+        {
+          "id": "SUP-5622026671390f0b",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.conditions.intensified_by[3]",
+          "access": "n/a",
+          "text": "L'exigence de disponibilité totale, quand « Too many obligations outside the boundaries of the job would make a worker unsuited for the position » (p. 149) — l'exclusion passe alors par un critère qui ne nomme jamais le sexe."
+        },
+        {
+          "id": "SUP-0dafde505487e2cf",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.key_quotation.text",
+          "access": "n/a",
+          "text": "Dans la logique organisationnelle, celui qui remplit l'emploi abstrait est un travailleur désincarné qui n'existe que pour le travail. Un tel travailleur hypothétique ne peut avoir d'autres impératifs d'existence qui empiètent sur l'emploi. […] Le travailleur réel dont le travailleur désincarné occupant l'emploi abstrait se rapproche le plus, c'est le travailleur masculin dont la vie est centrée sur son emploi à plein temps et à vie, pendant que sa femme ou une autre femme prend en charge ses besoins personnels et ses enfants."
+        }
+      ]
+    },
+    {
+      "claim_id": "C019",
+      "locator": "sections[1].paragraphs[1]",
+      "claim_text": "Personne ne vit ainsi.",
+      "supports": [
+        {
+          "id": "SUP-592abc185c632c6c",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[9]",
+          "access": "n/a",
+          "text": "10. QUEL CORPS RÉEL PEUT TENIR CETTE PLACE. « The closest the disembodied worker doing the abstract job comes to a real worker is the male worker whose life centers on his full-time, life-long job, while his wife or another woman takes care of his personal needs and his children. While the realities of life in industrial capitalism never allowed all men to live out this ideal, it was the goal for labor unions and the image of the worker in social and economic theory. The woman worker, assumed to have legitimate obligations other than those required by the job, did not fit with the abstract job » (p. 149). Le travail domestique de quelqu'un d'autre est la condition de possibilité de l'abstraction — donc la division sexuée du travail est logée DANS la définition du poste, pas à côté d'elle : « \"A job\" already contains the gender-based division of labor and the separation between the public and the private sphere » (p. 149)."
+        },
+        {
+          "id": "SUP-7bbb64b8087d9ec5",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.common_misinterpretations[2].why_wrong",
+          "access": "n/a",
+          "text": "Deux corrections. (1) L'expression « ideal worker » n'est pas dans l'article de 1990 : Acker écrit « disembodied », « abstract », « bodiless », « universal worker ». (2) Sa formule exacte est plus précise et plus faible : la figure abstraite n'a de correspondant réel que dans un certain homme, celui « whose life centers on his full-time, life-long job, while his wife or another woman takes care of his personal needs and his children », et elle ajoute aussitôt : « While the realities of life in industrial capitalism never allowed all men to live out this ideal, it was the goal for labor unions and the image of the worker in social and economic theory » (p. 149). L'autrice a d'ailleurs corrigé elle-même la lecture courante en 2006 : « men are not necessarily the ideal workers for all jobs. The ideal worker for many jobs is a woman, particularly a woman who, employers believe, is compliant, who will accept orders and low wages » (2006, p. 449-450)."
+        }
+      ]
+    },
+    {
+      "claim_id": "C020",
+      "locator": "sections[1].paragraphs[1]",
+      "claim_text": "La question n’est donc pas qui est ce travailleur, mais qui peut en approcher le plus.",
+      "supports": [
+        {
+          "id": "SUP-592abc185c632c6c",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[9]",
+          "access": "n/a",
+          "text": "10. QUEL CORPS RÉEL PEUT TENIR CETTE PLACE. « The closest the disembodied worker doing the abstract job comes to a real worker is the male worker whose life centers on his full-time, life-long job, while his wife or another woman takes care of his personal needs and his children. While the realities of life in industrial capitalism never allowed all men to live out this ideal, it was the goal for labor unions and the image of the worker in social and economic theory. The woman worker, assumed to have legitimate obligations other than those required by the job, did not fit with the abstract job » (p. 149). Le travail domestique de quelqu'un d'autre est la condition de possibilité de l'abstraction — donc la division sexuée du travail est logée DANS la définition du poste, pas à côté d'elle : « \"A job\" already contains the gender-based division of labor and the separation between the public and the private sphere » (p. 149)."
+        }
+      ]
+    },
+    {
+      "claim_id": "C021",
+      "locator": "sections[2].paragraphs[0]",
+      "claim_text": "La réponse d’Acker est explicite, et plus étroite qu’on ne le répète souvent.",
+      "supports": [
+        {
+          "id": "SUP-7bbb64b8087d9ec5",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.common_misinterpretations[2].why_wrong",
+          "access": "n/a",
+          "text": "Deux corrections. (1) L'expression « ideal worker » n'est pas dans l'article de 1990 : Acker écrit « disembodied », « abstract », « bodiless », « universal worker ». (2) Sa formule exacte est plus précise et plus faible : la figure abstraite n'a de correspondant réel que dans un certain homme, celui « whose life centers on his full-time, life-long job, while his wife or another woman takes care of his personal needs and his children », et elle ajoute aussitôt : « While the realities of life in industrial capitalism never allowed all men to live out this ideal, it was the goal for labor unions and the image of the worker in social and economic theory » (p. 149). L'autrice a d'ailleurs corrigé elle-même la lecture courante en 2006 : « men are not necessarily the ideal workers for all jobs. The ideal worker for many jobs is a woman, particularly a woman who, employers believe, is compliant, who will accept orders and low wages » (2006, p. 449-450)."
+        },
+        {
+          "id": "SUP-ac2eeafefb291bdf",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.key_quotation._pourquoi_ce_passage",
+          "access": "n/a",
+          "text": "C'est l'endroit où l'article bascule, et le seul où le mécanisme complet tienne en quelques phrases : une catégorie posée comme vide (l'emploi) se révèle présupposer un mode de vie, donc quelqu'un d'autre pour tenir la vie hors travail. Un lecteur peut reconnaître le dispositif dans une organisation qu'il n'a jamais vue décrite. RÉSERVE À CONNAÎTRE : Acker écrit « the male worker », pas « les hommes » — elle décrit une figure de référence, et précise immédiatement après que « the realities of life in industrial capitalism never allowed all men to live out this ideal » (p. 149). Une mise en page qui ferait dire au passage « les hommes sont les travailleurs idéaux » forcerait le texte ; l'autrice corrigera elle-même cette lecture en 2006 (voir `common_misinterpretations`)."
+        },
+        {
+          "id": "SUP-af8c4d9024c58282",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.common_misinterpretations[2].claim",
+          "access": "n/a",
+          "text": "Acker dit que le travailleur idéal est un homme."
+        }
+      ]
+    },
+    {
+      "claim_id": "C022",
+      "locator": "sections[2].paragraphs[0]",
+      "claim_text": "La figure réelle dont le travailleur désincarné se rapproche le plus, écrit-elle, c’est le travailleur masculin dont la vie est centrée sur son emploi à plein temps et à vie, pendant que sa femme ou une autre femme prend en charge ses besoins personnels et ses enfants.",
+      "supports": [
+        {
+          "id": "SUP-592abc185c632c6c",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[9]",
+          "access": "n/a",
+          "text": "10. QUEL CORPS RÉEL PEUT TENIR CETTE PLACE. « The closest the disembodied worker doing the abstract job comes to a real worker is the male worker whose life centers on his full-time, life-long job, while his wife or another woman takes care of his personal needs and his children. While the realities of life in industrial capitalism never allowed all men to live out this ideal, it was the goal for labor unions and the image of the worker in social and economic theory. The woman worker, assumed to have legitimate obligations other than those required by the job, did not fit with the abstract job » (p. 149). Le travail domestique de quelqu'un d'autre est la condition de possibilité de l'abstraction — donc la division sexuée du travail est logée DANS la définition du poste, pas à côté d'elle : « \"A job\" already contains the gender-based division of labor and the separation between the public and the private sphere » (p. 149)."
+        },
+        {
+          "id": "SUP-0dafde505487e2cf",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.key_quotation.text",
+          "access": "n/a",
+          "text": "Dans la logique organisationnelle, celui qui remplit l'emploi abstrait est un travailleur désincarné qui n'existe que pour le travail. Un tel travailleur hypothétique ne peut avoir d'autres impératifs d'existence qui empiètent sur l'emploi. […] Le travailleur réel dont le travailleur désincarné occupant l'emploi abstrait se rapproche le plus, c'est le travailleur masculin dont la vie est centrée sur son emploi à plein temps et à vie, pendant que sa femme ou une autre femme prend en charge ses besoins personnels et ses enfants."
+        },
+        {
+          "id": "SUP-901753c33186935e",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.conditions.appears_when[3]",
+          "access": "n/a",
+          "text": "Il existe, hors de l'organisation, une répartition du travail domestique qui permet à certains d'être disponibles sans réserve : le travailleur abstrait n'a de traduction réelle que dans « the male worker whose life centers on his full-time, life-long job, while his wife or another woman takes care of his personal needs and his children » (p. 149). Le mécanisme suppose donc une articulation avec la sphère privée, il ne se joue pas entièrement dans l'entreprise."
+        }
+      ]
+    },
+    {
+      "claim_id": "C023",
+      "locator": "sections[2].paragraphs[0]",
+      "claim_text": "Elle ajoute aussitôt que les conditions de vie du capitalisme industriel n’ont jamais permis à tous les hommes de vivre ainsi : c’était un objectif syndical et l’image du travailleur dans la théorie sociale et économique, non une description des hommes.",
+      "supports": [
+        {
+          "id": "SUP-592abc185c632c6c",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[9]",
+          "access": "n/a",
+          "text": "10. QUEL CORPS RÉEL PEUT TENIR CETTE PLACE. « The closest the disembodied worker doing the abstract job comes to a real worker is the male worker whose life centers on his full-time, life-long job, while his wife or another woman takes care of his personal needs and his children. While the realities of life in industrial capitalism never allowed all men to live out this ideal, it was the goal for labor unions and the image of the worker in social and economic theory. The woman worker, assumed to have legitimate obligations other than those required by the job, did not fit with the abstract job » (p. 149). Le travail domestique de quelqu'un d'autre est la condition de possibilité de l'abstraction — donc la division sexuée du travail est logée DANS la définition du poste, pas à côté d'elle : « \"A job\" already contains the gender-based division of labor and the separation between the public and the private sphere » (p. 149)."
+        },
+        {
+          "id": "SUP-7bbb64b8087d9ec5",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.common_misinterpretations[2].why_wrong",
+          "access": "n/a",
+          "text": "Deux corrections. (1) L'expression « ideal worker » n'est pas dans l'article de 1990 : Acker écrit « disembodied », « abstract », « bodiless », « universal worker ». (2) Sa formule exacte est plus précise et plus faible : la figure abstraite n'a de correspondant réel que dans un certain homme, celui « whose life centers on his full-time, life-long job, while his wife or another woman takes care of his personal needs and his children », et elle ajoute aussitôt : « While the realities of life in industrial capitalism never allowed all men to live out this ideal, it was the goal for labor unions and the image of the worker in social and economic theory » (p. 149). L'autrice a d'ailleurs corrigé elle-même la lecture courante en 2006 : « men are not necessarily the ideal workers for all jobs. The ideal worker for many jobs is a woman, particularly a woman who, employers believe, is compliant, who will accept orders and low wages » (2006, p. 449-450)."
+        },
+        {
+          "id": "SUP-ac2eeafefb291bdf",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.key_quotation._pourquoi_ce_passage",
+          "access": "n/a",
+          "text": "C'est l'endroit où l'article bascule, et le seul où le mécanisme complet tienne en quelques phrases : une catégorie posée comme vide (l'emploi) se révèle présupposer un mode de vie, donc quelqu'un d'autre pour tenir la vie hors travail. Un lecteur peut reconnaître le dispositif dans une organisation qu'il n'a jamais vue décrite. RÉSERVE À CONNAÎTRE : Acker écrit « the male worker », pas « les hommes » — elle décrit une figure de référence, et précise immédiatement après que « the realities of life in industrial capitalism never allowed all men to live out this ideal » (p. 149). Une mise en page qui ferait dire au passage « les hommes sont les travailleurs idéaux » forcerait le texte ; l'autrice corrigera elle-même cette lecture en 2006 (voir `common_misinterpretations`)."
+        }
+      ]
+    },
+    {
+      "claim_id": "C024",
+      "locator": "sections[2].paragraphs[1]",
+      "claim_text": "Le partage entre ce qui se fait au travail et ce qui se fait ailleurs n’est pas à côté de la définition du poste : il est dedans.",
+      "supports": [
+        {
+          "id": "SUP-592abc185c632c6c",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[9]",
+          "access": "n/a",
+          "text": "10. QUEL CORPS RÉEL PEUT TENIR CETTE PLACE. « The closest the disembodied worker doing the abstract job comes to a real worker is the male worker whose life centers on his full-time, life-long job, while his wife or another woman takes care of his personal needs and his children. While the realities of life in industrial capitalism never allowed all men to live out this ideal, it was the goal for labor unions and the image of the worker in social and economic theory. The woman worker, assumed to have legitimate obligations other than those required by the job, did not fit with the abstract job » (p. 149). Le travail domestique de quelqu'un d'autre est la condition de possibilité de l'abstraction — donc la division sexuée du travail est logée DANS la définition du poste, pas à côté d'elle : « \"A job\" already contains the gender-based division of labor and the separation between the public and the private sphere » (p. 149)."
+        },
+        {
+          "id": "SUP-4e6e5fc0cad480cf",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.key_quotation._alternatives_verbatim_meme_source[1].text",
+          "access": "n/a",
+          "text": "The concept \"a job\" is thus implicitly a gendered concept, even though organizational logic presents it as gender neutral. \"A job\" already contains the gender-based division of labor and the separation between the public and the private sphere."
+        }
+      ]
+    },
+    {
+      "claim_id": "C025",
+      "locator": "sections[2].paragraphs[1]",
+      "claim_text": "Un emploi, écrit Acker, contient déjà la division du travail entre les sexes et la séparation entre sphère publique et sphère privée.",
+      "supports": [
+        {
+          "id": "SUP-4e6e5fc0cad480cf",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.key_quotation._alternatives_verbatim_meme_source[1].text",
+          "access": "n/a",
+          "text": "The concept \"a job\" is thus implicitly a gendered concept, even though organizational logic presents it as gender neutral. \"A job\" already contains the gender-based division of labor and the separation between the public and the private sphere."
+        },
+        {
+          "id": "SUP-592abc185c632c6c",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[9]",
+          "access": "n/a",
+          "text": "10. QUEL CORPS RÉEL PEUT TENIR CETTE PLACE. « The closest the disembodied worker doing the abstract job comes to a real worker is the male worker whose life centers on his full-time, life-long job, while his wife or another woman takes care of his personal needs and his children. While the realities of life in industrial capitalism never allowed all men to live out this ideal, it was the goal for labor unions and the image of the worker in social and economic theory. The woman worker, assumed to have legitimate obligations other than those required by the job, did not fit with the abstract job » (p. 149). Le travail domestique de quelqu'un d'autre est la condition de possibilité de l'abstraction — donc la division sexuée du travail est logée DANS la définition du poste, pas à côté d'elle : « \"A job\" already contains the gender-based division of labor and the separation between the public and the private sphere » (p. 149)."
+        },
+        {
+          "id": "SUP-155cf65c0f4fdd36",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.translation_notes[6].note",
+          "access": "n/a",
+          "text": "Ce ne sont pas deux noms pour la même chose, et le dossier ne doit pas les fusionner. Acker place la division sexuée DANS la définition du poste : « \"A job\" already contains the gender-based division of labor and the separation between the public and the private sphere » (p. 149). La tradition française (Kergoat, Maruani, Laufer) construit la division sexuelle du travail comme rapport social entre groupes de sexe, en amont et au-delà de l'organisation. La proximité est réelle, l'objet ne l'est pas. Ce point n'a pas pu être vérifié sur les textes français eux-mêmes ici (Cairn en 403) : il est signalé comme point de vigilance, pas comme conclusion."
+        }
+      ]
+    },
+    {
+      "claim_id": "C026",
+      "locator": "sections[2].paragraphs[1]",
+      "claim_text": "Et la travailleuse dont on suppose qu’elle a des obligations légitimes autres que celles qu’exige le poste ne s’ajuste pas à l’emploi abstrait.",
+      "supports": [
+        {
+          "id": "SUP-592abc185c632c6c",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[9]",
+          "access": "n/a",
+          "text": "10. QUEL CORPS RÉEL PEUT TENIR CETTE PLACE. « The closest the disembodied worker doing the abstract job comes to a real worker is the male worker whose life centers on his full-time, life-long job, while his wife or another woman takes care of his personal needs and his children. While the realities of life in industrial capitalism never allowed all men to live out this ideal, it was the goal for labor unions and the image of the worker in social and economic theory. The woman worker, assumed to have legitimate obligations other than those required by the job, did not fit with the abstract job » (p. 149). Le travail domestique de quelqu'un d'autre est la condition de possibilité de l'abstraction — donc la division sexuée du travail est logée DANS la définition du poste, pas à côté d'elle : « \"A job\" already contains the gender-based division of labor and the separation between the public and the private sphere » (p. 149)."
+        }
+      ]
+    },
+    {
+      "claim_id": "C027",
+      "locator": "sections[2].paragraphs[1]",
+      "claim_text": "Personne n’a eu besoin de l’écarter : elle ne correspond pas à une définition rédigée avant elle.",
+      "supports": [
+        {
+          "id": "SUP-592abc185c632c6c",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[9]",
+          "access": "n/a",
+          "text": "10. QUEL CORPS RÉEL PEUT TENIR CETTE PLACE. « The closest the disembodied worker doing the abstract job comes to a real worker is the male worker whose life centers on his full-time, life-long job, while his wife or another woman takes care of his personal needs and his children. While the realities of life in industrial capitalism never allowed all men to live out this ideal, it was the goal for labor unions and the image of the worker in social and economic theory. The woman worker, assumed to have legitimate obligations other than those required by the job, did not fit with the abstract job » (p. 149). Le travail domestique de quelqu'un d'autre est la condition de possibilité de l'abstraction — donc la division sexuée du travail est logée DANS la définition du poste, pas à côté d'elle : « \"A job\" already contains the gender-based division of labor and the separation between the public and the private sphere » (p. 149)."
+        },
+        {
+          "id": "SUP-b13efc13b3e40573",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[5]",
+          "access": "n/a",
+          "text": "6. PREMIÈRE ÉTAPE DU DISPOSITIF : L'EMPLOI EST SÉPARÉ DES PERSONNES. « Job evaluation evaluates jobs, not their incumbents. The job is the basic unit in a work organization's hierarchy, a description of a set of tasks, competencies, and responsibilities represented as a position on an organizational chart. A job is separate from people. It is an empty slot, a reification that must continually be reconstructed, for positions exist only as scraps of paper until people fill them » (p. 148). Et l'inversion qui en découle : « Human beings are to be motivated, managed, and chosen to fit the job. The job exists as a thing apart » (p. 148). Ce n'est pas l'emploi qui s'ajuste aux gens, ce sont les gens qu'on choisit pour aller dans l'emploi."
+        },
+        {
+          "id": "SUP-cbd8ca300fe9306f",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.common_misinterpretations[0].why_wrong",
+          "access": "n/a",
+          "text": "C'est exactement la position qu'Acker construit son article pour écarter. Elle décrit et refuse la vue courante : « it is argued that gendered attitudes and behavior are brought into (and contaminate) essentially gender-neutral structures. This view of organizations separates structures from the people in them » (p. 142). Sa thèse porte sur des objets non intentionnels et écrits — définition du poste, règle de congruence, système de cotation : « Job evaluation evaluates jobs, not their incumbents » (p. 148). Le harcèlement sexuel figure bien dans le texte, mais précisément parce qu'Acker refuse d'en faire une déviance individuelle : la littérature le traite, dit-elle, comme « deviations of gendered actors, not, as MacKinnon (1979) might argue, as components of organizational structure » (p. 142), et elle le range pour sa part parmi les contrôles qui « conform to and reinforce hierarchy » (p. 152). Une fiche qui glisserait vers la discrimination interpersonnelle inverserait l'argument."
+        }
+      ]
+    },
+    {
+      "claim_id": "C028",
+      "locator": "sections[3].paragraphs[0]",
+      "claim_text": "Les hiérarchies sont faites de la même abstraction que les emplois",
+      "supports": [
+        {
+          "id": "SUP-8aeec02974ed1981",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[6]",
+          "access": "n/a",
+          "text": "7. DEUXIÈME ÉTAPE : LA HIÉRARCHIE EST FAITE DE LA MÊME ABSTRACTION. « Every job has a place in the hierarchy, another essential element in organizational logic. Hierarchies, like jobs, are devoid of actual workers and based on abstract differentiations. Hierarchy is taken for granted, only its particular form is at issue » (p. 148). Critère de validité du classement : la vraisemblance. « the final test of the evaluation of any particular job is whether its place in the hierarchy looks reasonable. The ranking of jobs within an organization must make sense to managers, but it is also important that most workers accept the ranking as just » (p. 148)."
+        }
+      ]
+    },
+    {
+      "claim_id": "C029",
+      "locator": "sections[3].paragraphs[0]",
+      "claim_text": "La logique organisationnelle suppose une congruence entre la responsabilité, la complexité d’un emploi et sa position dans l’échelle : un poste plus haut doit être plus complexe et plus responsable qu’un poste plus bas",
+      "supports": [
+        {
+          "id": "SUP-4077da98012ef715",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[7]",
+          "access": "n/a",
+          "text": "8. TROISIÈME ÉTAPE : LA RÈGLE DE CONGRUENCE, ET CE QU'ELLE EFFACE. « Organizational logic assumes a congruence between responsibility, job complexity, and hierarchical position » (p. 148). Conséquence directement observable : « The child-care worker's responsibility for other human beings or the complexity facing the secretary who serves six different, temperamental bosses can only be minimally counted if the congruence between position level, responsibility, and complexity is to be preserved » (p. 149). Seconde règle : « two jobs at different hierarchical levels cannot be responsible for the same outcome; as a consequence, for example, tasks delegated to a secretary by a manager will not raise her hierarchical level because such tasks are still his responsibility, even though she has the practical responsibility to see that they are done » (p. 149). La responsabilité réellement portée en bas est comptée comme n'existant pas, non par malveillance mais pour que le classement reste cohérent."
+        },
+        {
+          "id": "SUP-ee81aa6c9be00e17",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.conditions.intensified_by[2]",
+          "access": "n/a",
+          "text": "La règle de congruence responsabilité/complexité/niveau et l'interdiction que deux niveaux répondent du même résultat (p. 148-149) : elles rendent littéralement incomptable la responsabilité exercée en bas."
+        }
+      ]
+    },
+    {
+      "claim_id": "C030",
+      "locator": "sections[3].paragraphs[0]",
+      "claim_text": "sans quoi le classement cesserait de paraître raisonnable, aux dirigeants comme aux salariés",
+      "supports": [
+        {
+          "id": "SUP-8aeec02974ed1981",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[6]",
+          "access": "n/a",
+          "text": "7. DEUXIÈME ÉTAPE : LA HIÉRARCHIE EST FAITE DE LA MÊME ABSTRACTION. « Every job has a place in the hierarchy, another essential element in organizational logic. Hierarchies, like jobs, are devoid of actual workers and based on abstract differentiations. Hierarchy is taken for granted, only its particular form is at issue » (p. 148). Critère de validité du classement : la vraisemblance. « the final test of the evaluation of any particular job is whether its place in the hierarchy looks reasonable. The ranking of jobs within an organization must make sense to managers, but it is also important that most workers accept the ranking as just » (p. 148)."
+        },
+        {
+          "id": "SUP-c7a1b7a4367ab0b1",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.conditions.appears_when[2]",
+          "access": "n/a",
+          "text": "La hiérarchie est tenue pour évidente, seule sa forme étant discutée : « Hierarchy is taken for granted, only its particular form is at issue » (p. 148), et le classement doit « looks reasonable » aux dirigeants tout en étant accepté comme juste par les salariés (p. 148)."
+        }
+      ]
+    },
+    {
+      "claim_id": "C031",
+      "locator": "sections[3].paragraphs[0]",
+      "claim_text": "Acker le montre sur deux cas : la responsabilité qu’une travailleuse de crèche porte à l’égard d’autres êtres humains, ou la complexité que rencontre une secrétaire au service de six chefs aux humeurs différentes, ne peuvent être comptées que très faiblement, faute de quoi la congruence se défait.",
+      "supports": [
+        {
+          "id": "SUP-4077da98012ef715",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[7]",
+          "access": "n/a",
+          "text": "8. TROISIÈME ÉTAPE : LA RÈGLE DE CONGRUENCE, ET CE QU'ELLE EFFACE. « Organizational logic assumes a congruence between responsibility, job complexity, and hierarchical position » (p. 148). Conséquence directement observable : « The child-care worker's responsibility for other human beings or the complexity facing the secretary who serves six different, temperamental bosses can only be minimally counted if the congruence between position level, responsibility, and complexity is to be preserved » (p. 149). Seconde règle : « two jobs at different hierarchical levels cannot be responsible for the same outcome; as a consequence, for example, tasks delegated to a secretary by a manager will not raise her hierarchical level because such tasks are still his responsibility, even though she has the practical responsibility to see that they are done » (p. 149). La responsabilité réellement portée en bas est comptée comme n'existant pas, non par malveillance mais pour que le classement reste cohérent."
+        },
+        {
+          "id": "SUP-ee81aa6c9be00e17",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.conditions.intensified_by[2]",
+          "access": "n/a",
+          "text": "La règle de congruence responsabilité/complexité/niveau et l'interdiction que deux niveaux répondent du même résultat (p. 148-149) : elles rendent littéralement incomptable la responsabilité exercée en bas."
+        }
+      ]
+    },
+    {
+      "claim_id": "C032",
+      "locator": "sections[3].paragraphs[1]",
+      "claim_text": "deux emplois de niveaux différents ne peuvent pas répondre du même résultat",
+      "supports": [
+        {
+          "id": "SUP-4077da98012ef715",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[7]",
+          "access": "n/a",
+          "text": "8. TROISIÈME ÉTAPE : LA RÈGLE DE CONGRUENCE, ET CE QU'ELLE EFFACE. « Organizational logic assumes a congruence between responsibility, job complexity, and hierarchical position » (p. 148). Conséquence directement observable : « The child-care worker's responsibility for other human beings or the complexity facing the secretary who serves six different, temperamental bosses can only be minimally counted if the congruence between position level, responsibility, and complexity is to be preserved » (p. 149). Seconde règle : « two jobs at different hierarchical levels cannot be responsible for the same outcome; as a consequence, for example, tasks delegated to a secretary by a manager will not raise her hierarchical level because such tasks are still his responsibility, even though she has the practical responsibility to see that they are done » (p. 149). La responsabilité réellement portée en bas est comptée comme n'existant pas, non par malveillance mais pour que le classement reste cohérent."
+        },
+        {
+          "id": "SUP-ee81aa6c9be00e17",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.conditions.intensified_by[2]",
+          "access": "n/a",
+          "text": "La règle de congruence responsabilité/complexité/niveau et l'interdiction que deux niveaux répondent du même résultat (p. 148-149) : elles rendent littéralement incomptable la responsabilité exercée en bas."
+        }
+      ]
+    },
+    {
+      "claim_id": "C033",
+      "locator": "sections[3].paragraphs[1]",
+      "claim_text": "Les tâches qu’un responsable délègue à sa secrétaire ne relèvent donc pas le niveau de celle-ci, puisqu’elles restent sous la responsabilité de celui-là, même si c’est elle qui, en pratique, veille à ce qu’elles soient faites.",
+      "supports": [
+        {
+          "id": "SUP-4077da98012ef715",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[7]",
+          "access": "n/a",
+          "text": "8. TROISIÈME ÉTAPE : LA RÈGLE DE CONGRUENCE, ET CE QU'ELLE EFFACE. « Organizational logic assumes a congruence between responsibility, job complexity, and hierarchical position » (p. 148). Conséquence directement observable : « The child-care worker's responsibility for other human beings or the complexity facing the secretary who serves six different, temperamental bosses can only be minimally counted if the congruence between position level, responsibility, and complexity is to be preserved » (p. 149). Seconde règle : « two jobs at different hierarchical levels cannot be responsible for the same outcome; as a consequence, for example, tasks delegated to a secretary by a manager will not raise her hierarchical level because such tasks are still his responsibility, even though she has the practical responsibility to see that they are done » (p. 149). La responsabilité réellement portée en bas est comptée comme n'existant pas, non par malveillance mais pour que le classement reste cohérent."
+        }
+      ]
+    },
+    {
+      "claim_id": "C034",
+      "locator": "sections[3].paragraphs[1]",
+      "claim_text": "sur l’idée que les personnes entièrement disponibles pour un emploi rémunéré sont naturellement plus aptes à la responsabilité et à l’autorité, et que celles qui doivent partager leurs engagements ont leur place dans les rangs inférieurs",
+      "supports": [
+        {
+          "id": "SUP-391af1ba1d84a5a7",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[10]",
+          "access": "n/a",
+          "text": "11. CE QUE LA HIÉRARCHIE EN DÉDUIT. « Hierarchies are gendered because they also are constructed on these underlying assumptions: Those who are committed to paid employment are \"naturally\" more suited to responsibility and authority; those who must divide their commitments are in the lower ranks » (p. 149-150). L'exclusion ne prend jamais la forme d'un critère de sexe : elle prend la forme d'un critère de disponibilité."
+        }
+      ]
+    },
+    {
+      "claim_id": "C035",
+      "locator": "sections[3].paragraphs[1]",
+      "claim_text": "Le critère qui trie ne nomme jamais un sexe. Il nomme une disponibilité.",
+      "supports": [
+        {
+          "id": "SUP-391af1ba1d84a5a7",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[10]",
+          "access": "n/a",
+          "text": "11. CE QUE LA HIÉRARCHIE EN DÉDUIT. « Hierarchies are gendered because they also are constructed on these underlying assumptions: Those who are committed to paid employment are \"naturally\" more suited to responsibility and authority; those who must divide their commitments are in the lower ranks » (p. 149-150). L'exclusion ne prend jamais la forme d'un critère de sexe : elle prend la forme d'un critère de disponibilité."
+        },
+        {
+          "id": "SUP-5622026671390f0b",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.conditions.intensified_by[3]",
+          "access": "n/a",
+          "text": "L'exigence de disponibilité totale, quand « Too many obligations outside the boundaries of the job would make a worker unsuited for the position » (p. 149) — l'exclusion passe alors par un critère qui ne nomme jamais le sexe."
+        }
+      ]
+    },
+    {
+      "claim_id": "C036",
+      "locator": "sections[4].paragraphs[0]",
+      "claim_text": "Rien de tout cela ne porte sur les intentions de quiconque",
+      "supports": [
+        {
+          "id": "SUP-cbd8ca300fe9306f",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.common_misinterpretations[0].why_wrong",
+          "access": "n/a",
+          "text": "C'est exactement la position qu'Acker construit son article pour écarter. Elle décrit et refuse la vue courante : « it is argued that gendered attitudes and behavior are brought into (and contaminate) essentially gender-neutral structures. This view of organizations separates structures from the people in them » (p. 142). Sa thèse porte sur des objets non intentionnels et écrits — définition du poste, règle de congruence, système de cotation : « Job evaluation evaluates jobs, not their incumbents » (p. 148). Le harcèlement sexuel figure bien dans le texte, mais précisément parce qu'Acker refuse d'en faire une déviance individuelle : la littérature le traite, dit-elle, comme « deviations of gendered actors, not, as MacKinnon (1979) might argue, as components of organizational structure » (p. 142), et elle le range pour sa part parmi les contrôles qui « conform to and reinforce hierarchy » (p. 152). Une fiche qui glisserait vers la discrimination interpersonnelle inverserait l'argument."
+        },
+        {
+          "id": "SUP-9d7828ab548c2465",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.validation_input.confidence_flags[3]",
+          "access": "n/a",
+          "text": "PIÈGE PRINCIPAL À TENIR EN AVAL : « organisation genrée » n'est pas « discrimination dans les organisations ». Le texte construit son argument CONTRE cette lecture (p. 142). Une fiche qui glisserait vers les comportements individuels contredirait la source."
+        }
+      ]
+    },
+    {
+      "claim_id": "C037",
+      "locator": "sections[4].paragraphs[0]",
+      "claim_text": "les deux manières de chercher n’examinent pas le même objet et ne concluent pas de la même façon",
+      "supports": [
+        {
+          "id": "SUP-cbd8ca300fe9306f",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.common_misinterpretations[0].why_wrong",
+          "access": "n/a",
+          "text": "C'est exactement la position qu'Acker construit son article pour écarter. Elle décrit et refuse la vue courante : « it is argued that gendered attitudes and behavior are brought into (and contaminate) essentially gender-neutral structures. This view of organizations separates structures from the people in them » (p. 142). Sa thèse porte sur des objets non intentionnels et écrits — définition du poste, règle de congruence, système de cotation : « Job evaluation evaluates jobs, not their incumbents » (p. 148). Le harcèlement sexuel figure bien dans le texte, mais précisément parce qu'Acker refuse d'en faire une déviance individuelle : la littérature le traite, dit-elle, comme « deviations of gendered actors, not, as MacKinnon (1979) might argue, as components of organizational structure » (p. 142), et elle le range pour sa part parmi les contrôles qui « conform to and reinforce hierarchy » (p. 152). Une fiche qui glisserait vers la discrimination interpersonnelle inverserait l'argument."
+        },
+        {
+          "id": "SUP-b13efc13b3e40573",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[5]",
+          "access": "n/a",
+          "text": "6. PREMIÈRE ÉTAPE DU DISPOSITIF : L'EMPLOI EST SÉPARÉ DES PERSONNES. « Job evaluation evaluates jobs, not their incumbents. The job is the basic unit in a work organization's hierarchy, a description of a set of tasks, competencies, and responsibilities represented as a position on an organizational chart. A job is separate from people. It is an empty slot, a reification that must continually be reconstructed, for positions exist only as scraps of paper until people fill them » (p. 148). Et l'inversion qui en découle : « Human beings are to be motivated, managed, and chosen to fit the job. The job exists as a thing apart » (p. 148). Ce n'est pas l'emploi qui s'ajuste aux gens, ce sont les gens qu'on choisit pour aller dans l'emploi."
+        }
+      ]
+    },
+    {
+      "claim_id": "C038",
+      "locator": "sections[4].paragraphs[0]",
+      "claim_text": "Examiner une définition de poste conduit à lire un texte écrit avant toute candidature, et le constat tient même lorsque aucune décision individuelle n’est en cause.",
+      "supports": [
+        {
+          "id": "SUP-b13efc13b3e40573",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[5]",
+          "access": "n/a",
+          "text": "6. PREMIÈRE ÉTAPE DU DISPOSITIF : L'EMPLOI EST SÉPARÉ DES PERSONNES. « Job evaluation evaluates jobs, not their incumbents. The job is the basic unit in a work organization's hierarchy, a description of a set of tasks, competencies, and responsibilities represented as a position on an organizational chart. A job is separate from people. It is an empty slot, a reification that must continually be reconstructed, for positions exist only as scraps of paper until people fill them » (p. 148). Et l'inversion qui en découle : « Human beings are to be motivated, managed, and chosen to fit the job. The job exists as a thing apart » (p. 148). Ce n'est pas l'emploi qui s'ajuste aux gens, ce sont les gens qu'on choisit pour aller dans l'emploi."
+        },
+        {
+          "id": "SUP-ebafe5325b887a6e",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.conditions.appears_when[0]",
+          "access": "n/a",
+          "text": "L'organisation se pense et s'administre par des catégories abstraites détachées des personnes : « A job is separate from people. It is an empty slot […] for positions exist only as scraps of paper until people fill them » (p. 148). Sans cette abstraction — descriptif de poste, organigramme, classification — le mécanisme d'Acker n'a pas de support."
+        },
+        {
+          "id": "SUP-cbd8ca300fe9306f",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.common_misinterpretations[0].why_wrong",
+          "access": "n/a",
+          "text": "C'est exactement la position qu'Acker construit son article pour écarter. Elle décrit et refuse la vue courante : « it is argued that gendered attitudes and behavior are brought into (and contaminate) essentially gender-neutral structures. This view of organizations separates structures from the people in them » (p. 142). Sa thèse porte sur des objets non intentionnels et écrits — définition du poste, règle de congruence, système de cotation : « Job evaluation evaluates jobs, not their incumbents » (p. 148). Le harcèlement sexuel figure bien dans le texte, mais précisément parce qu'Acker refuse d'en faire une déviance individuelle : la littérature le traite, dit-elle, comme « deviations of gendered actors, not, as MacKinnon (1979) might argue, as components of organizational structure » (p. 142), et elle le range pour sa part parmi les contrôles qui « conform to and reinforce hierarchy » (p. 152). Une fiche qui glisserait vers la discrimination interpersonnelle inverserait l'argument."
+        }
+      ]
+    },
+    {
+      "claim_id": "C039",
+      "locator": "sections[4].paragraphs[1]",
+      "claim_text": "Acker en tire une conséquence qui ferme la porte aux corrections partielles.",
+      "supports": [
+        {
+          "id": "SUP-0f2ed0b6f009c7b2",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[16]",
+          "access": "n/a",
+          "text": "17. CE QU'IL FAUDRAIT POUR QUE LE MÉCANISME DISPARAISSE — et c'est là qu'Acker ferme la porte aux remèdes partiels. « Commonsense notions, such as jobs and positions, which constitute the units managers use in making organizations and some theorists use in making theory, are posited upon the prior exclusion of women. This underlying construction of a way of thinking is not simply an error, but part of processes of organization » (p. 154) — donc ce n'est pas un biais qu'on corrige. « Creating more adequate theory may come only as organizations are transformed in ways that dissolve the concept of the abstract job and restore the absent female body. Such a transformation would be radical in practice because it would probably require the end of organizations as they exist today, along with a redefinition of work and work relations. The rhythm and timing of work would be adapted to the rhythms of life outside of work. Caring work would be just as important and well rewarded as any other […] Hierarchy would be abolished, and workers would run things themselves » (p. 154-155). Acker désigne elle-même la difficulté restante : « this brief listing begs many questions, perhaps the most important of which is how […] so radical a change could come about » (p. 155)."
+        },
+        {
+          "id": "SUP-33ad393b58607c0b",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.common_misinterpretations[3].why_wrong",
+          "access": "n/a",
+          "text": "L'article ne propose rien de tel et ferme explicitement cette voie : « This underlying construction of a way of thinking is not simply an error, but part of processes of organization » (p. 154). Le seul dispositif correctif qu'il examine — l'évaluation des emplois, y compris dans son usage féministe du comparable worth — est décrit comme reproduisant ce qu'il devrait corriger : « The concrete value judgments that constitute conventional job evaluation are designed to replicate such structures » (p. 150). La condition de sortie qu'Acker formule est d'un tout autre ordre : dissoudre le concept d'emploi abstrait et restaurer le corps absent, ce qui « would probably require the end of organizations as they exist today, along with a redefinition of work and work relations » (p. 154-155), avec abolition de la hiérarchie. Décrire n'est pas prescrire, et ce que le texte prescrit, quand il le fait, n'est pas une politique d'entreprise."
+        },
+        {
+          "id": "SUP-b0cbf5007035b0b8",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.conditions.disappears_when[0]",
+          "access": "n/a",
+          "text": "RIEN, DANS CET ARTICLE, NE FAIT DISPARAÎTRE LE MÉCANISME À L'INTÉRIEUR DES ORGANISATIONS TELLES QU'ELLES SONT. Acker écarte d'avance la lecture corrective : la construction en cause « is not simply an error, but part of processes of organization » (p. 154)."
+        }
+      ]
+    },
+    {
+      "claim_id": "C040",
+      "locator": "sections[4].paragraphs[1]",
+      "claim_text": "Ces notions ordinaires, l’emploi et le poste, ne sont pas selon elle une erreur qu’il suffirait de rectifier : elles font partie des processus par lesquels on organise.",
+      "supports": [
+        {
+          "id": "SUP-0f2ed0b6f009c7b2",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[16]",
+          "access": "n/a",
+          "text": "17. CE QU'IL FAUDRAIT POUR QUE LE MÉCANISME DISPARAISSE — et c'est là qu'Acker ferme la porte aux remèdes partiels. « Commonsense notions, such as jobs and positions, which constitute the units managers use in making organizations and some theorists use in making theory, are posited upon the prior exclusion of women. This underlying construction of a way of thinking is not simply an error, but part of processes of organization » (p. 154) — donc ce n'est pas un biais qu'on corrige. « Creating more adequate theory may come only as organizations are transformed in ways that dissolve the concept of the abstract job and restore the absent female body. Such a transformation would be radical in practice because it would probably require the end of organizations as they exist today, along with a redefinition of work and work relations. The rhythm and timing of work would be adapted to the rhythms of life outside of work. Caring work would be just as important and well rewarded as any other […] Hierarchy would be abolished, and workers would run things themselves » (p. 154-155). Acker désigne elle-même la difficulté restante : « this brief listing begs many questions, perhaps the most important of which is how […] so radical a change could come about » (p. 155)."
+        },
+        {
+          "id": "SUP-71b9096cc3f95c5a",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.key_quotation._alternatives_verbatim_meme_source[5].text",
+          "access": "n/a",
+          "text": "Commonsense notions, such as jobs and positions, which constitute the units managers use in making organizations and some theorists use in making theory, are posited upon the prior exclusion of women. This underlying construction of a way of thinking is not simply an error, but part of processes of organization."
+        },
+        {
+          "id": "SUP-b0cbf5007035b0b8",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.conditions.disappears_when[0]",
+          "access": "n/a",
+          "text": "RIEN, DANS CET ARTICLE, NE FAIT DISPARAÎTRE LE MÉCANISME À L'INTÉRIEUR DES ORGANISATIONS TELLES QU'ELLES SONT. Acker écarte d'avance la lecture corrective : la construction en cause « is not simply an error, but part of processes of organization » (p. 154)."
+        }
+      ]
+    },
+    {
+      "claim_id": "C041",
+      "locator": "sections[4].paragraphs[1]",
+      "claim_text": "Le seul remède qu’elle examine de près, la cotation des postes employée par les campagnes d’équité salariale, reproduit les classements déjà en place",
+      "supports": [
+        {
+          "id": "SUP-f503f8298553e3b2",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.conditions.disappears_when[3]",
+          "access": "n/a",
+          "text": "Acker ne donne pas de condition d'extinction intermédiaire — ni quota, ni politique de diversité, ni féminisation de l'encadrement. Le seul dispositif qu'elle examine de près, l'évaluation des emplois utilisée par la stratégie féministe du « comparable worth », est justement décrit comme reproduisant ce qu'il devait corriger (p. 147, 150). ATTENTION : elle ne dit pas non plus que le comparable worth est inutile ; elle en fait son terrain d'observation, pas sa cible."
+        },
+        {
+          "id": "SUP-b939a29085236162",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.conditions.intensified_by[1]",
+          "access": "n/a",
+          "text": "Le fait que les systèmes d'évaluation soient calibrés pour reproduire des classements déjà en place : « Such rankings would not deviate substantially from rankings already in place that contain gender typing and gender segregation of jobs […] The concrete value judgments that constitute conventional job evaluation are designed to replicate such structures » (p. 150)."
+        },
+        {
+          "id": "SUP-226aad3b63a3d6da",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[11]",
+          "access": "n/a",
+          "text": "12. LA BOUCLE DE REPRODUCTION PAR L'OUTIL. Les systèmes d'évaluation ont été construits par des consultants avec des dirigeants pour produire des classements crédibles ; or « Such rankings would not deviate substantially from rankings already in place that contain gender typing and gender segregation of jobs and the clustering of women workers in the lowest and the worst-paid jobs. The concrete value judgments that constitute conventional job evaluation are designed to replicate such structures » (p. 150). Exemple donné : « skills in managing money, more often found in men's than in women's jobs, frequently receive more points than skills in dealing with clients or human relations skills, more often found in women's than in men's jobs » (p. 150). Et l'énoncé de la boucle : « Every time that job evaluation is used, that structure is created or reinforced » (p. 148)."
+        },
+        {
+          "id": "SUP-33ad393b58607c0b",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.common_misinterpretations[3].why_wrong",
+          "access": "n/a",
+          "text": "L'article ne propose rien de tel et ferme explicitement cette voie : « This underlying construction of a way of thinking is not simply an error, but part of processes of organization » (p. 154). Le seul dispositif correctif qu'il examine — l'évaluation des emplois, y compris dans son usage féministe du comparable worth — est décrit comme reproduisant ce qu'il devrait corriger : « The concrete value judgments that constitute conventional job evaluation are designed to replicate such structures » (p. 150). La condition de sortie qu'Acker formule est d'un tout autre ordre : dissoudre le concept d'emploi abstrait et restaurer le corps absent, ce qui « would probably require the end of organizations as they exist today, along with a redefinition of work and work relations » (p. 154-155), avec abolition de la hiérarchie. Décrire n'est pas prescrire, et ce que le texte prescrit, quand il le fait, n'est pas une politique d'entreprise."
+        }
+      ]
+    },
+    {
+      "claim_id": "C042",
+      "locator": "sections[4].paragraphs[1]",
+      "claim_text": "et chaque usage de l’outil recrée ou renforce la structure qu’il devait corriger",
+      "supports": [
+        {
+          "id": "SUP-cd08bde4c28fb595",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.conditions.intensified_by[0]",
+          "access": "n/a",
+          "text": "L'usage répété de l'outil, qui est aussi son mode de reproduction : « Every time that job evaluation is used, that structure is created or reinforced » (p. 148)."
+        },
+        {
+          "id": "SUP-33ad393b58607c0b",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.common_misinterpretations[3].why_wrong",
+          "access": "n/a",
+          "text": "L'article ne propose rien de tel et ferme explicitement cette voie : « This underlying construction of a way of thinking is not simply an error, but part of processes of organization » (p. 154). Le seul dispositif correctif qu'il examine — l'évaluation des emplois, y compris dans son usage féministe du comparable worth — est décrit comme reproduisant ce qu'il devrait corriger : « The concrete value judgments that constitute conventional job evaluation are designed to replicate such structures » (p. 150). La condition de sortie qu'Acker formule est d'un tout autre ordre : dissoudre le concept d'emploi abstrait et restaurer le corps absent, ce qui « would probably require the end of organizations as they exist today, along with a redefinition of work and work relations » (p. 154-155), avec abolition de la hiérarchie. Décrire n'est pas prescrire, et ce que le texte prescrit, quand il le fait, n'est pas une politique d'entreprise."
+        }
+      ]
+    },
+    {
+      "claim_id": "C043",
+      "locator": "sections[4].paragraphs[1]",
+      "claim_text": "La condition de sortie qu’elle formule est d’un tout autre ordre : dissoudre l’emploi abstrait et rendre sa place au corps féminin absent, ce qui exigerait probablement, écrit-elle, la fin des organisations telles qu’elles existent aujourd’hui.",
+      "supports": [
+        {
+          "id": "SUP-bf13b34dadb4ce80",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.conditions.disappears_when[1]",
+          "access": "n/a",
+          "text": "La seule condition de disparition qu'elle formule est une transformation qui « dissolve[s] the concept of the abstract job and restore[s] the absent female body », transformation qui « would probably require the end of organizations as they exist today, along with a redefinition of work and work relations » (p. 154-155)."
+        },
+        {
+          "id": "SUP-0f2ed0b6f009c7b2",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[16]",
+          "access": "n/a",
+          "text": "17. CE QU'IL FAUDRAIT POUR QUE LE MÉCANISME DISPARAISSE — et c'est là qu'Acker ferme la porte aux remèdes partiels. « Commonsense notions, such as jobs and positions, which constitute the units managers use in making organizations and some theorists use in making theory, are posited upon the prior exclusion of women. This underlying construction of a way of thinking is not simply an error, but part of processes of organization » (p. 154) — donc ce n'est pas un biais qu'on corrige. « Creating more adequate theory may come only as organizations are transformed in ways that dissolve the concept of the abstract job and restore the absent female body. Such a transformation would be radical in practice because it would probably require the end of organizations as they exist today, along with a redefinition of work and work relations. The rhythm and timing of work would be adapted to the rhythms of life outside of work. Caring work would be just as important and well rewarded as any other […] Hierarchy would be abolished, and workers would run things themselves » (p. 154-155). Acker désigne elle-même la difficulté restante : « this brief listing begs many questions, perhaps the most important of which is how […] so radical a change could come about » (p. 155)."
+        }
+      ]
+    },
+    {
+      "claim_id": "C044",
+      "locator": "sections[5].paragraphs[0]",
+      "claim_text": "L’article de 1990 ne traite pas tout ce qu’il soulève, et il le dit.",
+      "supports": [
+        {
+          "id": "SUP-08c833904e913fc3",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[17]",
+          "access": "n/a",
+          "text": "18. CE QUE L'ARTICLE LAISSE OUVERT, DANS SES PROPRES TERMES. Trois questions, posées et non traitées, à la fin de la section sur le contrôle : « Is the abstract worker white as well as male? Are white-male-dominated organizations also built on underlying assumptions about the proper place of people with different skin colors? Are racial differences produced by organizational practices as gender differences are? » (p. 154). C'est le programme qu'Acker reprendra seize ans plus tard sous le nom d'« inequality regimes » (2006)."
+        },
+        {
+          "id": "SUP-be25d13b9339231c",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.common_misinterpretations[5].why_wrong",
+          "access": "n/a",
+          "text": "Non pour 1990. La classe y est explicitement mise de côté comme arrière-plan : « Here, I will focus on the interface of gender and organizations, assuming the simultaneous presence of class relations » (p. 146), même si l'article établit à la fin que l'emploi abstrait sert aussi le contrôle de classe (p. 154). La race n'apparaît que sous forme de trois questions ouvertes en fin de section (p. 154). Le mot « intersectionality » ne figure pas dans le texte. C'est en 2006, avec « Inequality Regimes », qu'Acker articule les trois — et elle le présente elle-même comme une extension : « This analysis has its origins in my earlier arguments about the gendering of organizations, reconceptualizing that approach to add class and race » (2006, p. 442-443)."
+        },
+        {
+          "id": "SUP-c24bf9a0571f9e6b",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.known_ambiguities[1]",
+          "access": "n/a",
+          "text": "CINQ PROCESSUS, UN SEUL TRAITÉ. Acker énumère cinq processus de mise en genre, dont les interactions (troisième) et l'identité individuelle (quatrième) — puis consacre l'article au cinquième, la logique organisationnelle. Dire « Acker montre que le genre est dans la structure, pas dans les interactions » est faux : elle range les interactions parmi les processus, elle ne les traite simplement pas ici."
+        }
+      ]
+    },
+    {
+      "claim_id": "C045",
+      "locator": "sections[5].paragraphs[0]",
+      "claim_text": "Acker y met la classe de côté pour se concentrer sur le genre",
+      "supports": [
+        {
+          "id": "SUP-be25d13b9339231c",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.common_misinterpretations[5].why_wrong",
+          "access": "n/a",
+          "text": "Non pour 1990. La classe y est explicitement mise de côté comme arrière-plan : « Here, I will focus on the interface of gender and organizations, assuming the simultaneous presence of class relations » (p. 146), même si l'article établit à la fin que l'emploi abstrait sert aussi le contrôle de classe (p. 154). La race n'apparaît que sous forme de trois questions ouvertes en fin de section (p. 154). Le mot « intersectionality » ne figure pas dans le texte. C'est en 2006, avec « Inequality Regimes », qu'Acker articule les trois — et elle le présente elle-même comme une extension : « This analysis has its origins in my earlier arguments about the gendering of organizations, reconceptualizing that approach to add class and race » (2006, p. 442-443)."
+        },
+        {
+          "id": "SUP-14862f870f54b724",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$._corrections_tour_2.confirme_du_verdict[6]",
+          "access": "n/a",
+          "text": "Mise à l'écart explicite de la classe (p. 146) et trois questions ouvertes sur la race (p. 154) : confirmées à la lettre."
+        }
+      ]
+    },
+    {
+      "claim_id": "C046",
+      "locator": "sections[5].paragraphs[0]",
+      "claim_text": "referme sa section sur le contrôle par des questions qu’elle laisse en suspens : le travailleur abstrait est-il blanc autant qu’il est masculin ? les différences raciales sont-elles produites par les pratiques d’organisation comme le sont les différences de genre ?",
+      "supports": [
+        {
+          "id": "SUP-08c833904e913fc3",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[17]",
+          "access": "n/a",
+          "text": "18. CE QUE L'ARTICLE LAISSE OUVERT, DANS SES PROPRES TERMES. Trois questions, posées et non traitées, à la fin de la section sur le contrôle : « Is the abstract worker white as well as male? Are white-male-dominated organizations also built on underlying assumptions about the proper place of people with different skin colors? Are racial differences produced by organizational practices as gender differences are? » (p. 154). C'est le programme qu'Acker reprendra seize ans plus tard sous le nom d'« inequality regimes » (2006)."
+        },
+        {
+          "id": "SUP-5cca00ad711d0c42",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.known_ambiguities[4]",
+          "access": "n/a",
+          "text": "LA RACE EST POSÉE, PAS TRAITÉE. Les trois questions de la page 154 (« Is the abstract worker white as well as male? ») sont laissées ouvertes. L'article ne contient aucune analyse raciale ; il note seulement, en passant, que « White men in women-dominated workplaces are likely to be positively evaluated » (p. 143). L'intersectionnalité arrive chez Acker en 2006."
+        },
+        {
+          "id": "SUP-14862f870f54b724",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$._corrections_tour_2.confirme_du_verdict[6]",
+          "access": "n/a",
+          "text": "Mise à l'écart explicite de la classe (p. 146) et trois questions ouvertes sur la race (p. 154) : confirmées à la lettre."
+        }
+      ]
+    },
+    {
+      "claim_id": "C047",
+      "locator": "sections[5].paragraphs[0]",
+      "claim_text": "Seize ans plus tard, elle reprend ce programme dans « Inequality Regimes: Gender, Class, and Race in Organizations »",
+      "supports": [
+        {
+          "id": "SUP-08c833904e913fc3",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[17]",
+          "access": "n/a",
+          "text": "18. CE QUE L'ARTICLE LAISSE OUVERT, DANS SES PROPRES TERMES. Trois questions, posées et non traitées, à la fin de la section sur le contrôle : « Is the abstract worker white as well as male? Are white-male-dominated organizations also built on underlying assumptions about the proper place of people with different skin colors? Are racial differences produced by organizational practices as gender differences are? » (p. 154). C'est le programme qu'Acker reprendra seize ans plus tard sous le nom d'« inequality regimes » (2006)."
+        },
+        {
+          "id": "SUP-15e4c9d944d50b8d",
+          "origin": "validated",
+          "path": "$.sources[1].label",
+          "access": "excerpt",
+          "text": "Joan Acker, « Inequality Regimes: Gender, Class, and Race in Organizations », Gender & Society, vol. 20, n° 4, août 2006, p. 441-464 (Sociologists for Women in Society Feminist Lecture)."
+        },
+        {
+          "id": "SUP-71f843282b8cf245",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.primary_sources[1].citation",
+          "access": "excerpt",
+          "text": "Joan Acker, « Inequality Regimes: Gender, Class, and Race in Organizations », Gender & Society, vol. 20, n° 4, août 2006, p. 441-464 (Sociologists for Women in Society Feminist Lecture)."
+        }
+      ]
+    },
+    {
+      "claim_id": "C048",
+      "locator": "sections[5].paragraphs[0]",
+      "claim_text": "qu’elle présente comme une reprise de son argument, augmentée de la classe et de la race",
+      "supports": [
+        {
+          "id": "SUP-e8360e0bee462a99",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.primary_sources[1].evidence",
+          "access": "excerpt",
+          "text": "SOURCE D'APPOINT, ET SEULEMENT POUR DATER. Établit : (1) la filiation revendiquée par l'autrice — « This analysis has its origins in my earlier arguments about the gendering of organizations, reconceptualizing that approach to add class and race and extending the discussion in various ways (Acker 1990, 1992) » (p. 442-443) ; donc classe et race sont AJOUTÉES en 2006, elles ne sont pas dans le texte de 1990, qui ne les pose que comme questions (1990, p. 154). (2) L'auto-correction sur le travailleur idéal : « A distinction should be made between the gendered organization of work and the gender and racial characteristics of the ideal worker. Although work is organized on the model of the unencumbered (white) man, and both women and men are expected to perform according to this model, men are not necessarily the ideal workers for all jobs. The ideal worker for many jobs is a woman, particularly a woman who, employers believe, is compliant, who will accept orders and low wages » (p. 449-450). (3) Le vocabulaire « unencumbered (white) man » et « ideal worker », absent de 1990 (vérifié par recherche exhaustive dans le texte intégral de 1990 : zéro occurrence de « unencumbered », zéro occurrence de « ideal worker »). (4) Le mot « intersectionality » est au cœur du texte de 2006 (résumé et mots-clés) et absent de 1990. RÉSERVE DE PROVENANCE : voir `acces_tente` — le PDF ouvert est le PDF de l'éditeur (bandeau gas.sagepub.com, DOI en tête, « Downloaded from at SAGE Publications on September 24, 2008 ») réhébergé par un agrégateur tiers ; c'est bien le texte publié, mais ce n'est pas un dépôt autorisé. Aucun énoncé du mécanisme de ce dossier ne repose sur cette source."
+        },
+        {
+          "id": "SUP-be25d13b9339231c",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.common_misinterpretations[5].why_wrong",
+          "access": "n/a",
+          "text": "Non pour 1990. La classe y est explicitement mise de côté comme arrière-plan : « Here, I will focus on the interface of gender and organizations, assuming the simultaneous presence of class relations » (p. 146), même si l'article établit à la fin que l'emploi abstrait sert aussi le contrôle de classe (p. 154). La race n'apparaît que sous forme de trois questions ouvertes en fin de section (p. 154). Le mot « intersectionality » ne figure pas dans le texte. C'est en 2006, avec « Inequality Regimes », qu'Acker articule les trois — et elle le présente elle-même comme une extension : « This analysis has its origins in my earlier arguments about the gendering of organizations, reconceptualizing that approach to add class and race » (2006, p. 442-443)."
+        }
+      ]
+    },
+    {
+      "claim_id": "C049",
+      "locator": "sections[5].paragraphs[1]",
+      "claim_text": "Dans ce texte tardif, elle corrige aussi une lecture courante de son propre travail.",
+      "supports": [
+        {
+          "id": "SUP-e8360e0bee462a99",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.primary_sources[1].evidence",
+          "access": "excerpt",
+          "text": "SOURCE D'APPOINT, ET SEULEMENT POUR DATER. Établit : (1) la filiation revendiquée par l'autrice — « This analysis has its origins in my earlier arguments about the gendering of organizations, reconceptualizing that approach to add class and race and extending the discussion in various ways (Acker 1990, 1992) » (p. 442-443) ; donc classe et race sont AJOUTÉES en 2006, elles ne sont pas dans le texte de 1990, qui ne les pose que comme questions (1990, p. 154). (2) L'auto-correction sur le travailleur idéal : « A distinction should be made between the gendered organization of work and the gender and racial characteristics of the ideal worker. Although work is organized on the model of the unencumbered (white) man, and both women and men are expected to perform according to this model, men are not necessarily the ideal workers for all jobs. The ideal worker for many jobs is a woman, particularly a woman who, employers believe, is compliant, who will accept orders and low wages » (p. 449-450). (3) Le vocabulaire « unencumbered (white) man » et « ideal worker », absent de 1990 (vérifié par recherche exhaustive dans le texte intégral de 1990 : zéro occurrence de « unencumbered », zéro occurrence de « ideal worker »). (4) Le mot « intersectionality » est au cœur du texte de 2006 (résumé et mots-clés) et absent de 1990. RÉSERVE DE PROVENANCE : voir `acces_tente` — le PDF ouvert est le PDF de l'éditeur (bandeau gas.sagepub.com, DOI en tête, « Downloaded from at SAGE Publications on September 24, 2008 ») réhébergé par un agrégateur tiers ; c'est bien le texte publié, mais ce n'est pas un dépôt autorisé. Aucun énoncé du mécanisme de ce dossier ne repose sur cette source."
+        },
+        {
+          "id": "SUP-7bbb64b8087d9ec5",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.common_misinterpretations[2].why_wrong",
+          "access": "n/a",
+          "text": "Deux corrections. (1) L'expression « ideal worker » n'est pas dans l'article de 1990 : Acker écrit « disembodied », « abstract », « bodiless », « universal worker ». (2) Sa formule exacte est plus précise et plus faible : la figure abstraite n'a de correspondant réel que dans un certain homme, celui « whose life centers on his full-time, life-long job, while his wife or another woman takes care of his personal needs and his children », et elle ajoute aussitôt : « While the realities of life in industrial capitalism never allowed all men to live out this ideal, it was the goal for labor unions and the image of the worker in social and economic theory » (p. 149). L'autrice a d'ailleurs corrigé elle-même la lecture courante en 2006 : « men are not necessarily the ideal workers for all jobs. The ideal worker for many jobs is a woman, particularly a woman who, employers believe, is compliant, who will accept orders and low wages » (2006, p. 449-450)."
+        }
+      ]
+    },
+    {
+      "claim_id": "C050",
+      "locator": "sections[5].paragraphs[1]",
+      "claim_text": "Le travail reste organisé sur le modèle de l’homme sans entraves, et femmes comme hommes sont censés s’y conformer",
+      "supports": [
+        {
+          "id": "SUP-e8360e0bee462a99",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.primary_sources[1].evidence",
+          "access": "excerpt",
+          "text": "SOURCE D'APPOINT, ET SEULEMENT POUR DATER. Établit : (1) la filiation revendiquée par l'autrice — « This analysis has its origins in my earlier arguments about the gendering of organizations, reconceptualizing that approach to add class and race and extending the discussion in various ways (Acker 1990, 1992) » (p. 442-443) ; donc classe et race sont AJOUTÉES en 2006, elles ne sont pas dans le texte de 1990, qui ne les pose que comme questions (1990, p. 154). (2) L'auto-correction sur le travailleur idéal : « A distinction should be made between the gendered organization of work and the gender and racial characteristics of the ideal worker. Although work is organized on the model of the unencumbered (white) man, and both women and men are expected to perform according to this model, men are not necessarily the ideal workers for all jobs. The ideal worker for many jobs is a woman, particularly a woman who, employers believe, is compliant, who will accept orders and low wages » (p. 449-450). (3) Le vocabulaire « unencumbered (white) man » et « ideal worker », absent de 1990 (vérifié par recherche exhaustive dans le texte intégral de 1990 : zéro occurrence de « unencumbered », zéro occurrence de « ideal worker »). (4) Le mot « intersectionality » est au cœur du texte de 2006 (résumé et mots-clés) et absent de 1990. RÉSERVE DE PROVENANCE : voir `acces_tente` — le PDF ouvert est le PDF de l'éditeur (bandeau gas.sagepub.com, DOI en tête, « Downloaded from at SAGE Publications on September 24, 2008 ») réhébergé par un agrégateur tiers ; c'est bien le texte publié, mais ce n'est pas un dépôt autorisé. Aucun énoncé du mécanisme de ce dossier ne repose sur cette source."
+        },
+        {
+          "id": "SUP-bd18cc5b00109779",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.translation_notes[3].note",
+          "access": "n/a",
+          "text": "PIÈGE DE TRADUCTION ET DE DATE. Ces deux expressions circulent en français comme si elles étaient d'Acker 1990. Elles n'y sont pas : vérification exhaustive du texte intégral, « unencumbered » n'y figure pas une seule fois et « ideal » n'y apparaît que dans « live out this ideal » (p. 149) et « the ideal functioning of the organization » (p. 152). Acker écrit « unencumbered (white) man » en 2006 (p. 449) ; la « ideal worker norm » est surtout associée aux travaux ultérieurs de Joan Williams. Attribuer ces formules à l'article de 1990 est une erreur de source."
+        }
+      ]
+    },
+    {
+      "claim_id": "C051",
+      "locator": "sections[5].paragraphs[1]",
+      "claim_text": "mais il ne s’ensuit pas, écrit-elle, que les hommes soient les travailleurs idéaux pour tous les emplois",
+      "supports": [
+        {
+          "id": "SUP-e8360e0bee462a99",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.primary_sources[1].evidence",
+          "access": "excerpt",
+          "text": "SOURCE D'APPOINT, ET SEULEMENT POUR DATER. Établit : (1) la filiation revendiquée par l'autrice — « This analysis has its origins in my earlier arguments about the gendering of organizations, reconceptualizing that approach to add class and race and extending the discussion in various ways (Acker 1990, 1992) » (p. 442-443) ; donc classe et race sont AJOUTÉES en 2006, elles ne sont pas dans le texte de 1990, qui ne les pose que comme questions (1990, p. 154). (2) L'auto-correction sur le travailleur idéal : « A distinction should be made between the gendered organization of work and the gender and racial characteristics of the ideal worker. Although work is organized on the model of the unencumbered (white) man, and both women and men are expected to perform according to this model, men are not necessarily the ideal workers for all jobs. The ideal worker for many jobs is a woman, particularly a woman who, employers believe, is compliant, who will accept orders and low wages » (p. 449-450). (3) Le vocabulaire « unencumbered (white) man » et « ideal worker », absent de 1990 (vérifié par recherche exhaustive dans le texte intégral de 1990 : zéro occurrence de « unencumbered », zéro occurrence de « ideal worker »). (4) Le mot « intersectionality » est au cœur du texte de 2006 (résumé et mots-clés) et absent de 1990. RÉSERVE DE PROVENANCE : voir `acces_tente` — le PDF ouvert est le PDF de l'éditeur (bandeau gas.sagepub.com, DOI en tête, « Downloaded from at SAGE Publications on September 24, 2008 ») réhébergé par un agrégateur tiers ; c'est bien le texte publié, mais ce n'est pas un dépôt autorisé. Aucun énoncé du mécanisme de ce dossier ne repose sur cette source."
+        },
+        {
+          "id": "SUP-7bbb64b8087d9ec5",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.common_misinterpretations[2].why_wrong",
+          "access": "n/a",
+          "text": "Deux corrections. (1) L'expression « ideal worker » n'est pas dans l'article de 1990 : Acker écrit « disembodied », « abstract », « bodiless », « universal worker ». (2) Sa formule exacte est plus précise et plus faible : la figure abstraite n'a de correspondant réel que dans un certain homme, celui « whose life centers on his full-time, life-long job, while his wife or another woman takes care of his personal needs and his children », et elle ajoute aussitôt : « While the realities of life in industrial capitalism never allowed all men to live out this ideal, it was the goal for labor unions and the image of the worker in social and economic theory » (p. 149). L'autrice a d'ailleurs corrigé elle-même la lecture courante en 2006 : « men are not necessarily the ideal workers for all jobs. The ideal worker for many jobs is a woman, particularly a woman who, employers believe, is compliant, who will accept orders and low wages » (2006, p. 449-450)."
+        }
+      ]
+    },
+    {
+      "claim_id": "C052",
+      "locator": "sections[5].paragraphs[1]",
+      "claim_text": "Pour beaucoup de postes, le travailleur idéal est une femme, dont les employeurs attendent qu’elle soit docile, qu’elle accepte les ordres et de bas salaires.",
+      "supports": [
+        {
+          "id": "SUP-e8360e0bee462a99",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.primary_sources[1].evidence",
+          "access": "excerpt",
+          "text": "SOURCE D'APPOINT, ET SEULEMENT POUR DATER. Établit : (1) la filiation revendiquée par l'autrice — « This analysis has its origins in my earlier arguments about the gendering of organizations, reconceptualizing that approach to add class and race and extending the discussion in various ways (Acker 1990, 1992) » (p. 442-443) ; donc classe et race sont AJOUTÉES en 2006, elles ne sont pas dans le texte de 1990, qui ne les pose que comme questions (1990, p. 154). (2) L'auto-correction sur le travailleur idéal : « A distinction should be made between the gendered organization of work and the gender and racial characteristics of the ideal worker. Although work is organized on the model of the unencumbered (white) man, and both women and men are expected to perform according to this model, men are not necessarily the ideal workers for all jobs. The ideal worker for many jobs is a woman, particularly a woman who, employers believe, is compliant, who will accept orders and low wages » (p. 449-450). (3) Le vocabulaire « unencumbered (white) man » et « ideal worker », absent de 1990 (vérifié par recherche exhaustive dans le texte intégral de 1990 : zéro occurrence de « unencumbered », zéro occurrence de « ideal worker »). (4) Le mot « intersectionality » est au cœur du texte de 2006 (résumé et mots-clés) et absent de 1990. RÉSERVE DE PROVENANCE : voir `acces_tente` — le PDF ouvert est le PDF de l'éditeur (bandeau gas.sagepub.com, DOI en tête, « Downloaded from at SAGE Publications on September 24, 2008 ») réhébergé par un agrégateur tiers ; c'est bien le texte publié, mais ce n'est pas un dépôt autorisé. Aucun énoncé du mécanisme de ce dossier ne repose sur cette source."
+        }
+      ]
+    },
+    {
+      "claim_id": "C053",
+      "locator": "sections[5].paragraphs[2]",
+      "claim_text": "Le débat qui a suivi porte moins sur la thèse que sur son inventaire.",
+      "supports": [
+        {
+          "id": "SUP-482db35f18b61ef5",
+          "origin": "evidence:evidence.reception.json",
+          "path": "$.evidence.reception.debates[0]",
+          "access": "n/a",
+          "text": "LA PÉREMPTION DES MÉCANISMES DANS LA « NOUVELLE ÉCONOMIE ». Williams, Muller et Kilanski (Gender & Society 26-4, 2012, p. 549-573, texte intégral consulté) soutiennent que les trois vecteurs identifiés en 1990 — échelons de carrière, fiches de poste standardisées, évaluations contrôlées par la hiérarchie — ont été remplacés par le travail en équipe, les « career maps » et le réseautage, et que ce sont désormais ceux-là qui reproduisent l'inégalité : « Organizations are still gendered, but the mechanisms for reproducing gender disparities are different than those in the traditional career path. » Le désaccord est d'inventaire, non de principe."
+        },
+        {
+          "id": "SUP-3a0dc8885c599a83",
+          "origin": "evidence:evidence.reception.json",
+          "path": "$.evidence.known_ambiguities[2]",
+          "access": "n/a",
+          "text": "LE CONCEPT EST-IL DATÉ ? Débat ouvert et explicitement formulé. Williams, Muller et Kilanski soutiennent que les mécanismes décrits en 1990 supposent un modèle de carrière — échelons, fiches de poste standardisées, évaluation par la hiérarchie — « features that do not characterize jobs in the new economy », et concluent : « Organizations are still gendered, but the mechanisms for reproducing gender disparities are different than those in the traditional career path » (texte intégral consulté). La thèse survit, l'inventaire des mécanismes non. Acker elle-même, en 2012, réexamine ses processus « in a present-day context » (résumé Emerald) — signe que la question lui était posée. Adkins, dans le fascicule de 2019, propose de « rethink[er] Joan Acker's materialist feminist sociology » à l'ombre de la finance (titre seul, non ouvert) : la discussion se poursuit."
+        },
+        {
+          "id": "SUP-54d804fcf20bc127",
+          "origin": "evidence:evidence.reception.json",
+          "path": "$.evidence.reception.critiques[2].claim",
+          "access": "n/a",
+          "text": "La théorie décrit les organisations bureaucratiques traditionnelles — loyauté récompensée, descriptions de postes standardisées, échelons de carrière, évaluation managériale — caractéristiques qui ne valent plus pour le travail de la « nouvelle économie ». La thèse tient, l'inventaire des mécanismes doit être refait : équipes, career maps et réseautage sont devenus les vecteurs principaux de l'inégalité."
+        }
+      ]
+    },
+    {
+      "claim_id": "C054",
+      "locator": "sections[5].paragraphs[2]",
+      "claim_text": "Trois sociologues qui ont repris l’analyse en 2012",
+      "supports": [
+        {
+          "id": "SUP-a521e159be218bd3",
+          "origin": "evidence:evidence.reception.json",
+          "path": "$.evidence.secondary_sources[0].citation",
+          "access": "n/a",
+          "text": "Christine L. Williams, Chandra Muller et Kristine Kilanski, « Gendered Organizations in the New Economy », Gender & Society, 26(4), août 2012, p. 549-573"
+        },
+        {
+          "id": "SUP-7ee4a08873c95f96",
+          "origin": "evidence:evidence.reception.json",
+          "path": "$.evidence.reception.critiques[2].by",
+          "access": "n/a",
+          "text": "Christine L. Williams, Chandra Muller et Kristine Kilanski (University of Texas at Austin)"
+        },
+        {
+          "id": "SUP-5f97cc76d5ab0133",
+          "origin": "validated",
+          "path": "$.sources[3].label",
+          "access": "n/a",
+          "text": "Christine L. Williams, Chandra Muller et Kristine Kilanski, « Gendered Organizations in the New Economy », Gender & Society, 26(4), août 2012, p. 549-573"
+        },
+        {
+          "id": "SUP-e2f18c253d2f2ba7",
+          "origin": "evidence:evidence.reception.json",
+          "path": "$.evidence.secondary_sources[0].establishes",
+          "access": "n/a",
+          "text": "LA PIÈCE CENTRALE DU DOSSIER, et la seule source internationale de premier plan dont j'aie lu le texte intégral. Notice Crossref revérifiée : vol. 26, n° 4, p. 549-573, trois autrices, août 2012. Elle établit quatre choses. (1) L'ATTRIBUTION ET LA LECTURE SAVANTE, en une formule qui est aussi un état des lieux de l'usage : « To explain gender inequality at work, many sociologists draw on Joan Acker's (1990) theory of gendered organizations. Acker argued that gender inequality is tenacious because it is built into the structure of work organizations. Even the very definition of a “job” contains an implicit preference for male workers ». (2) LE CONTENU TEL QUE LA LITTÉRATURE LE RETIENT — cinq processus, nommés : « Acker (1990) further identified five processes that reproduce gender in organizations: the division of labor, cultural symbols, workplace interactions, individual identities, and organizational logic », avec une hiérarchie explicite : « The latter process—organizational logic—was at the center of Acker's original critique of gendered organizations ». (3) LA NATURE STRUCTURELLE, ET NON INTERPERSONNELLE, DU MÉCANISME : les autrices soulignent que l'originalité d'Acker porte sur des systèmes qui paraissent neutres — « While others had previously identified organizational logic as key to the reproduction of class inequality, Acker's breakthrough identified it as a source of gender inequality as well, even though it appears gender neutral on the surface » — et citent l'autrice à l'appui. ATTENTION, ET LA VÉRIFICATION LE MONTRE DE MANIÈRE PLUS NETTE QU'AVANT : le passage d'Acker qu'elles reproduisent (« Rational-technical, ostensibly gender neutral, control systems are built upon and conceal a gendered substructure … in which men's bodies fill abstract jobs ») n'est pas identique à l'original — le fac-similé porte « gender-neutral » avec trait d'union, « (Smith 1988) » là où les autrices mettent des points de suspension, et « the abstract jobs ». C'est une citation d'Acker PAR le texte citant : elle ne vaut pas source primaire et ne peut en aucun cas servir de `key_quotation`. (4) LE DÉBAT LE PLUS SUBSTANTIEL DE LA RÉCEPTION — la péremption partielle des mécanismes : « Acker's theory explains how gender is embedded in traditional organizations that value and reward worker loyalty and that are characterized by standardized job descriptions, career ladders, and manager-controlled evaluations—features that do not characterize jobs in the new economy », et en conclusion : « Organizations are still gendered, but the mechanisms for reproducing gender disparities are different than those in the traditional career path ». Le désaccord porte sur les mécanismes (échelons de carrière, fiches de poste, évaluations hiérarchiques remplacés par équipes, career maps et réseautage), non sur la thèse. CONSULTATION : TEXTE INTÉGRAL (version PMC en libre accès), ouvert deux fois — les huit énoncés ci-dessus ont été retrouvés verbatim lors de la passe de correction du 17 août 2026."
+        }
+      ]
+    },
+    {
+      "claim_id": "C055",
+      "locator": "sections[5].paragraphs[2]",
+      "claim_text": "font observer que les mécanismes décrits en 1990 supposent un monde de fiches de poste standardisées, d’échelons de carrière et d’évaluations tenues par la hiérarchie, traits qui ne caractérisent plus une part du travail contemporain",
+      "supports": [
+        {
+          "id": "SUP-3a0dc8885c599a83",
+          "origin": "evidence:evidence.reception.json",
+          "path": "$.evidence.known_ambiguities[2]",
+          "access": "n/a",
+          "text": "LE CONCEPT EST-IL DATÉ ? Débat ouvert et explicitement formulé. Williams, Muller et Kilanski soutiennent que les mécanismes décrits en 1990 supposent un modèle de carrière — échelons, fiches de poste standardisées, évaluation par la hiérarchie — « features that do not characterize jobs in the new economy », et concluent : « Organizations are still gendered, but the mechanisms for reproducing gender disparities are different than those in the traditional career path » (texte intégral consulté). La thèse survit, l'inventaire des mécanismes non. Acker elle-même, en 2012, réexamine ses processus « in a present-day context » (résumé Emerald) — signe que la question lui était posée. Adkins, dans le fascicule de 2019, propose de « rethink[er] Joan Acker's materialist feminist sociology » à l'ombre de la finance (titre seul, non ouvert) : la discussion se poursuit."
+        },
+        {
+          "id": "SUP-e2f18c253d2f2ba7",
+          "origin": "evidence:evidence.reception.json",
+          "path": "$.evidence.secondary_sources[0].establishes",
+          "access": "n/a",
+          "text": "LA PIÈCE CENTRALE DU DOSSIER, et la seule source internationale de premier plan dont j'aie lu le texte intégral. Notice Crossref revérifiée : vol. 26, n° 4, p. 549-573, trois autrices, août 2012. Elle établit quatre choses. (1) L'ATTRIBUTION ET LA LECTURE SAVANTE, en une formule qui est aussi un état des lieux de l'usage : « To explain gender inequality at work, many sociologists draw on Joan Acker's (1990) theory of gendered organizations. Acker argued that gender inequality is tenacious because it is built into the structure of work organizations. Even the very definition of a “job” contains an implicit preference for male workers ». (2) LE CONTENU TEL QUE LA LITTÉRATURE LE RETIENT — cinq processus, nommés : « Acker (1990) further identified five processes that reproduce gender in organizations: the division of labor, cultural symbols, workplace interactions, individual identities, and organizational logic », avec une hiérarchie explicite : « The latter process—organizational logic—was at the center of Acker's original critique of gendered organizations ». (3) LA NATURE STRUCTURELLE, ET NON INTERPERSONNELLE, DU MÉCANISME : les autrices soulignent que l'originalité d'Acker porte sur des systèmes qui paraissent neutres — « While others had previously identified organizational logic as key to the reproduction of class inequality, Acker's breakthrough identified it as a source of gender inequality as well, even though it appears gender neutral on the surface » — et citent l'autrice à l'appui. ATTENTION, ET LA VÉRIFICATION LE MONTRE DE MANIÈRE PLUS NETTE QU'AVANT : le passage d'Acker qu'elles reproduisent (« Rational-technical, ostensibly gender neutral, control systems are built upon and conceal a gendered substructure … in which men's bodies fill abstract jobs ») n'est pas identique à l'original — le fac-similé porte « gender-neutral » avec trait d'union, « (Smith 1988) » là où les autrices mettent des points de suspension, et « the abstract jobs ». C'est une citation d'Acker PAR le texte citant : elle ne vaut pas source primaire et ne peut en aucun cas servir de `key_quotation`. (4) LE DÉBAT LE PLUS SUBSTANTIEL DE LA RÉCEPTION — la péremption partielle des mécanismes : « Acker's theory explains how gender is embedded in traditional organizations that value and reward worker loyalty and that are characterized by standardized job descriptions, career ladders, and manager-controlled evaluations—features that do not characterize jobs in the new economy », et en conclusion : « Organizations are still gendered, but the mechanisms for reproducing gender disparities are different than those in the traditional career path ». Le désaccord porte sur les mécanismes (échelons de carrière, fiches de poste, évaluations hiérarchiques remplacés par équipes, career maps et réseautage), non sur la thèse. CONSULTATION : TEXTE INTÉGRAL (version PMC en libre accès), ouvert deux fois — les huit énoncés ci-dessus ont été retrouvés verbatim lors de la passe de correction du 17 août 2026."
+        },
+        {
+          "id": "SUP-54d804fcf20bc127",
+          "origin": "evidence:evidence.reception.json",
+          "path": "$.evidence.reception.critiques[2].claim",
+          "access": "n/a",
+          "text": "La théorie décrit les organisations bureaucratiques traditionnelles — loyauté récompensée, descriptions de postes standardisées, échelons de carrière, évaluation managériale — caractéristiques qui ne valent plus pour le travail de la « nouvelle économie ». La thèse tient, l'inventaire des mécanismes doit être refait : équipes, career maps et réseautage sont devenus les vecteurs principaux de l'inégalité."
+        }
+      ]
+    },
+    {
+      "claim_id": "C056",
+      "locator": "sections[5].paragraphs[2]",
+      "claim_text": "les organisations restent genrées, écrivent-elles, mais ce ne sont plus les mêmes mécanismes qui y reproduisent les écarts",
+      "supports": [
+        {
+          "id": "SUP-482db35f18b61ef5",
+          "origin": "evidence:evidence.reception.json",
+          "path": "$.evidence.reception.debates[0]",
+          "access": "n/a",
+          "text": "LA PÉREMPTION DES MÉCANISMES DANS LA « NOUVELLE ÉCONOMIE ». Williams, Muller et Kilanski (Gender & Society 26-4, 2012, p. 549-573, texte intégral consulté) soutiennent que les trois vecteurs identifiés en 1990 — échelons de carrière, fiches de poste standardisées, évaluations contrôlées par la hiérarchie — ont été remplacés par le travail en équipe, les « career maps » et le réseautage, et que ce sont désormais ceux-là qui reproduisent l'inégalité : « Organizations are still gendered, but the mechanisms for reproducing gender disparities are different than those in the traditional career path. » Le désaccord est d'inventaire, non de principe."
+        },
+        {
+          "id": "SUP-3a0dc8885c599a83",
+          "origin": "evidence:evidence.reception.json",
+          "path": "$.evidence.known_ambiguities[2]",
+          "access": "n/a",
+          "text": "LE CONCEPT EST-IL DATÉ ? Débat ouvert et explicitement formulé. Williams, Muller et Kilanski soutiennent que les mécanismes décrits en 1990 supposent un modèle de carrière — échelons, fiches de poste standardisées, évaluation par la hiérarchie — « features that do not characterize jobs in the new economy », et concluent : « Organizations are still gendered, but the mechanisms for reproducing gender disparities are different than those in the traditional career path » (texte intégral consulté). La thèse survit, l'inventaire des mécanismes non. Acker elle-même, en 2012, réexamine ses processus « in a present-day context » (résumé Emerald) — signe que la question lui était posée. Adkins, dans le fascicule de 2019, propose de « rethink[er] Joan Acker's materialist feminist sociology » à l'ombre de la finance (titre seul, non ouvert) : la discussion se poursuit."
+        },
+        {
+          "id": "SUP-e2f18c253d2f2ba7",
+          "origin": "evidence:evidence.reception.json",
+          "path": "$.evidence.secondary_sources[0].establishes",
+          "access": "n/a",
+          "text": "LA PIÈCE CENTRALE DU DOSSIER, et la seule source internationale de premier plan dont j'aie lu le texte intégral. Notice Crossref revérifiée : vol. 26, n° 4, p. 549-573, trois autrices, août 2012. Elle établit quatre choses. (1) L'ATTRIBUTION ET LA LECTURE SAVANTE, en une formule qui est aussi un état des lieux de l'usage : « To explain gender inequality at work, many sociologists draw on Joan Acker's (1990) theory of gendered organizations. Acker argued that gender inequality is tenacious because it is built into the structure of work organizations. Even the very definition of a “job” contains an implicit preference for male workers ». (2) LE CONTENU TEL QUE LA LITTÉRATURE LE RETIENT — cinq processus, nommés : « Acker (1990) further identified five processes that reproduce gender in organizations: the division of labor, cultural symbols, workplace interactions, individual identities, and organizational logic », avec une hiérarchie explicite : « The latter process—organizational logic—was at the center of Acker's original critique of gendered organizations ». (3) LA NATURE STRUCTURELLE, ET NON INTERPERSONNELLE, DU MÉCANISME : les autrices soulignent que l'originalité d'Acker porte sur des systèmes qui paraissent neutres — « While others had previously identified organizational logic as key to the reproduction of class inequality, Acker's breakthrough identified it as a source of gender inequality as well, even though it appears gender neutral on the surface » — et citent l'autrice à l'appui. ATTENTION, ET LA VÉRIFICATION LE MONTRE DE MANIÈRE PLUS NETTE QU'AVANT : le passage d'Acker qu'elles reproduisent (« Rational-technical, ostensibly gender neutral, control systems are built upon and conceal a gendered substructure … in which men's bodies fill abstract jobs ») n'est pas identique à l'original — le fac-similé porte « gender-neutral » avec trait d'union, « (Smith 1988) » là où les autrices mettent des points de suspension, et « the abstract jobs ». C'est une citation d'Acker PAR le texte citant : elle ne vaut pas source primaire et ne peut en aucun cas servir de `key_quotation`. (4) LE DÉBAT LE PLUS SUBSTANTIEL DE LA RÉCEPTION — la péremption partielle des mécanismes : « Acker's theory explains how gender is embedded in traditional organizations that value and reward worker loyalty and that are characterized by standardized job descriptions, career ladders, and manager-controlled evaluations—features that do not characterize jobs in the new economy », et en conclusion : « Organizations are still gendered, but the mechanisms for reproducing gender disparities are different than those in the traditional career path ». Le désaccord porte sur les mécanismes (échelons de carrière, fiches de poste, évaluations hiérarchiques remplacés par équipes, career maps et réseautage), non sur la thèse. CONSULTATION : TEXTE INTÉGRAL (version PMC en libre accès), ouvert deux fois — les huit énoncés ci-dessus ont été retrouvés verbatim lors de la passe de correction du 17 août 2026."
+        }
+      ]
+    },
+    {
+      "claim_id": "C057",
+      "locator": "sections[5].paragraphs[2]",
+      "claim_text": "La question de 1990 se déplace alors sans disparaître",
+      "supports": [
+        {
+          "id": "SUP-482db35f18b61ef5",
+          "origin": "evidence:evidence.reception.json",
+          "path": "$.evidence.reception.debates[0]",
+          "access": "n/a",
+          "text": "LA PÉREMPTION DES MÉCANISMES DANS LA « NOUVELLE ÉCONOMIE ». Williams, Muller et Kilanski (Gender & Society 26-4, 2012, p. 549-573, texte intégral consulté) soutiennent que les trois vecteurs identifiés en 1990 — échelons de carrière, fiches de poste standardisées, évaluations contrôlées par la hiérarchie — ont été remplacés par le travail en équipe, les « career maps » et le réseautage, et que ce sont désormais ceux-là qui reproduisent l'inégalité : « Organizations are still gendered, but the mechanisms for reproducing gender disparities are different than those in the traditional career path. » Le désaccord est d'inventaire, non de principe."
+        },
+        {
+          "id": "SUP-3a0dc8885c599a83",
+          "origin": "evidence:evidence.reception.json",
+          "path": "$.evidence.known_ambiguities[2]",
+          "access": "n/a",
+          "text": "LE CONCEPT EST-IL DATÉ ? Débat ouvert et explicitement formulé. Williams, Muller et Kilanski soutiennent que les mécanismes décrits en 1990 supposent un modèle de carrière — échelons, fiches de poste standardisées, évaluation par la hiérarchie — « features that do not characterize jobs in the new economy », et concluent : « Organizations are still gendered, but the mechanisms for reproducing gender disparities are different than those in the traditional career path » (texte intégral consulté). La thèse survit, l'inventaire des mécanismes non. Acker elle-même, en 2012, réexamine ses processus « in a present-day context » (résumé Emerald) — signe que la question lui était posée. Adkins, dans le fascicule de 2019, propose de « rethink[er] Joan Acker's materialist feminist sociology » à l'ombre de la finance (titre seul, non ouvert) : la discussion se poursuit."
+        }
+      ]
+    },
+    {
+      "claim_id": "C058",
+      "locator": "sections[5].paragraphs[2]",
+      "claim_text": "Acker la pose en anglais, et c’est son article qu’il faudra aller lire.",
+      "supports": [
+        {
+          "id": "SUP-561772a7977fe47e",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.primary_sources[0].language",
+          "access": "full-text",
+          "text": "en"
+        },
+        {
+          "id": "SUP-a47dfce99fc542a6",
+          "origin": "validated",
+          "path": "$.review.notes[1]",
+          "access": "n/a",
+          "text": "Traduction de notre fait : aucune traduction française publiée de l'article de 1990 n'a été identifiée."
+        },
+        {
+          "id": "SUP-51fdd266d79284b1",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.key_quotation.translation.translator",
+          "access": "n/a",
+          "text": "Traduction interne non publiée (agent corpus-primary-reader, chaîne Curiosity). Aucune traduction française publiée de l'article de 1990 n'a été identifiée (recherches Crossref, Semantic Scholar, HAL et web : voir `acces_tente`)."
+        },
+        {
+          "id": "SUP-8c17788734699862",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.primary_sources[0].citation",
+          "access": "full-text",
+          "text": "Joan Acker, « Hierarchies, Jobs, Bodies: A Theory of Gendered Organizations », Gender & Society, vol. 4, n° 2, juin 1990, p. 139-158. Édition originale et unique connue : SAGE Publications pour Sociologists for Women in Society. Communication d'origine : American Sociological Association Annual Meetings, Chicago, août 1987 (note d'autrice, p. 139)."
+        }
+      ]
+    }
+  ],
+  "estimated_tokens": 49234,
+  "status": "READY"
+}
