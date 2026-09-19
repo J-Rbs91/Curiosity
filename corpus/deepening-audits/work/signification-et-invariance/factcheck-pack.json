@@ -1,0 +1,554 @@
+{
+  "protocol_version": 1,
+  "concept_id": "signification-et-invariance",
+  "context_budget_tokens": 300000,
+  "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
+  "candidate_sha256": "d423d23466123e07a8811644199bbeed1d5ae8f13f54d2cdd8961cc111c71b97",
+  "validated_sha256": "5d79b8693af0a1c21fb2622cbcb9d760da4f055882c77cff4e672bf466c760b0",
+  "evidence_files": [
+    {
+      "file": "lecture.json",
+      "sha256": "7fdadad37adf41c59f6bfe5f9d0864390d7d54e22fac3c56bc7f994594a0fbe3"
+    }
+  ],
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "text": "À la radio, on entend parfois qu’une journée a été dix pour cent plus chaude que la veille. La phrase semble parler du monde : il aurait fait plus chaud, un point c’est tout. Essayons pourtant le calcul avec des chiffres réels. Hier, il faisait 100 degrés Fahrenheit ; aujourd’hui, 110. Le rapport entre les deux donne 1,10, soit une hausse de 10 %. Convertissons maintenant ces deux mêmes journées en Celsius : 37,8 degrés hier, 43,3 aujourd’hui. Le rapport devient 1,15, soit une hausse de 15 %. Ce sont pourtant exactement les deux mêmes journées, la même paire de températures, mais deux pourcentages différents selon l’échelle utilisée pour les écrire."
+    },
+    {
+      "locator": "lead[1]",
+      "text": "Ce n’est pas une curiosité arithmétique sans conséquence. Si la vérité d’un énoncé change selon qu’on mesure en Fahrenheit ou en Celsius, en quoi cet énoncé dit-il encore quelque chose sur la température elle-même, plutôt que sur l’instrument utilisé pour la noter ? Deux chercheurs américains, Patrick Suppes et Joseph L. Zinnes, ont posé cette question avec précision au début des années 1960, et lui ont donné une réponse qui tient en un seul critère : un énoncé construit à partir de mesures a un sens, dans une acception technique bien particulière, seulement s’il reste vrai, ou reste faux, quelle que soit la façon légitime dont les mesures ont été prises."
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "section_title": "Ce qu’une échelle a le droit de changer",
+      "text": "La conversion du Fahrenheit vers le Celsius n’est pas un changement quelconque : elle multiplie chaque valeur par un facteur fixe, puis lui ajoute une constante. Ce type précis de transformation, et lui seul, respecte la façon dont l’échelle de température a été construite. Le zéro et l’unité de degré sont des choix de convention, propres à chaque échelle, mais une fois ce choix fait, les écarts et les rapports de température s’expriment de façon cohérente à l’intérieur de cette échelle. Suppes et Zinnes appellent une transformation de ce genre, celle qui respecte les conventions propres à un type de mesure donné, une transformation d’échelle admissible."
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "section_title": "Ce qu’une échelle a le droit de changer",
+      "text": "Le mot « admissible » fait tout le travail. Il ne s’agit pas de dire que n’importe quel changement de nombres serait permis : passer du Fahrenheit au Celsius l’est, remplacer chaque température par son carré ne le serait pas, parce que cette dernière opération ne correspond à aucune manière légitime de graduer un thermomètre. La question que pose alors ce travail est la suivante : parmi tout ce qu’on peut écrire à partir de mesures, qu’est-ce qui reste vrai quand on se déplace d’une échelle admissible à une autre, et qu’est-ce qui ne le reste pas ?"
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "section_title": "La vérité qui résiste au changement d’échelle",
+      "text": "Suppes et Zinnes en tirent une définition précise. Ils écrivent : « Un énoncé numérique a un sens si et seulement si sa vérité (ou sa fausseté) est constante sous les transformations d’échelle admissibles […]. » Autrement dit : prenez un énoncé construit à partir de mesures, appliquez-lui toutes les transformations d’échelle admissibles pour le type de grandeur concerné, et regardez si sa valeur de vérité bouge. Si elle reste la même dans tous les cas, l’énoncé a un sens en cette acception précise du terme. Si elle peut basculer du vrai au faux selon l’échelle choisie, comme dans l’exemple de l’écart de température exprimé en pourcentage, l’énoncé n’a pas ce genre de sens : ce qu’il affirme dépend alors de l’instrument, pas seulement du monde."
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "section_title": "La vérité qui résiste au changement d’échelle",
+      "text": "Le critère ne vise pas la température en particulier : il s’applique à tout énoncé construit à partir des résultats d’une mesure, qu’il s’agisse de longueurs, de poids, de scores, ou de toute autre grandeur pour laquelle on dispose d’une échelle et de règles sur ce qui compte comme un changement d’échelle légitime pour elle. L’énoncé peut porter sur une seule mesure, sur une comparaison entre deux mesures, ou sur un calcul plus complexe : la définition ne distingue pas ces cas, elle demande seulement que la conclusion tienne, telle quelle, une fois l’échelle changée."
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "section_title": "Ce n’est pas l’opération, mais l’énoncé entier",
+      "text": "On pourrait croire, à lire l’exemple de la température, qu’un rapport entre deux mesures serait par nature une opération suspecte, et qu’il suffirait d’en dresser la liste noire pour régler la question. Ce n’est pas ce que soutiennent Suppes et Zinnes. Dans le même travail, ils présentent un autre cas où la comparaison entre deux températures moyennes constitue bien un énoncé qui a un sens en cette acception précise, alors qu’un simple rapport entre deux températures individuelles n’en a pas. L’opération arithmétique en jeu n’est donc pas, à elle seule, ce qui décide."
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "section_title": "Ce n’est pas l’opération, mais l’énoncé entier",
+      "text": "Ce qui compte, précisent-ils, ce n’est pas la nature de l’opération choisie, mais la façon dont l’énoncé pris dans son entier se comporte quand on fait varier l’échelle. Un rapport peut très bien résister au changement d’échelle dans un contexte, et y échouer dans un autre : tout dépend de ce qui est comparé, et de la manière dont les mesures en jeu ont été obtenues. Le critère ne porte donc jamais sur une opération isolée, division ou moyenne, mais toujours sur l’énoncé pris comme un tout."
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "section_title": "Un critère nécessaire, non suffisant",
+      "text": "Suppes et Zinnes limitent eux-mêmes la portée de leur critère. Ils précisent qu’il fournit une condition nécessaire, mais non suffisante : un énoncé dont la vérité résiste au changement d’échelle satisfait une exigence indispensable, mais cela ne garantit pas encore qu’il ait un sens en toute autre acception qu’on pourrait attacher à ce mot. Ils ajoutent que ce problème n’occupe pas, à leurs yeux, une place centrale dans une théorie de la mesure : il se pose surtout au moment où l’on cherche à utiliser des mesures déjà obtenues, plutôt qu’au moment où l’on construit l’échelle elle-même."
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "section_title": "Un critère nécessaire, non suffisant",
+      "text": "Dans leur travail, ce critère répond à un troisième problème, distinct de deux questions traitées auparavant : celle de savoir si une grandeur peut seulement être représentée par des nombres, et celle de savoir dans quelle mesure cette représentation numérique est unique. Le cadre général sur lequel s’appuie leur réponse à ce troisième problème avait d’abord été développé par Patrick Suppes dans un article coécrit quelques années plus tôt avec Dana Scott."
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "section_title": "Au-delà de la température",
+      "text": "Le raisonnement ne concerne pas seulement les thermomètres. Imaginons une enquête de satisfaction où chaque personne note son expérience sur une échelle de un à dix, sans qu’un score de zéro corresponde à une absence totale de satisfaction, ni qu’un score de dix corresponde à un maximum absolu : ce sont seulement des repères choisis par les concepteurs du questionnaire. Affirmer qu’une personne ayant mis huit est deux fois plus satisfaite qu’une autre ayant mis quatre revient à faire un rapport entre deux nombres dont le zéro est, tout comme pour les degrés Fahrenheit, un point de départ arbitraire. Si l’on changeait les repères de cette échelle sans rien changer à ce que ressentent réellement les deux personnes, ce rapport pourrait très bien ne plus être vrai."
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "section_title": "Au-delà de la température",
+      "text": "Cet exemple construit montre que la question posée par Suppes et Zinnes ne concerne pas seulement la météorologie : elle touche toute situation où l’on transforme un résultat de mesure en une affirmation censée dire quelque chose du monde, qu’il s’agisse d’un rapport, d’une moyenne ou d’un classement, alors que l’échelle utilisée pour obtenir ce résultat aurait pu, tout aussi légitimement, en être une autre."
+    }
+  ],
+  "supports": [
+    {
+      "id": "SUP-f7d4154d237128c5",
+      "origin": "validated",
+      "path": "$.$schema",
+      "access": "n/a",
+      "text": "../schema/carte.schema.json"
+    },
+    {
+      "id": "SUP-a5cb813291d78aa7",
+      "origin": "validated",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "signification-et-invariance"
+    },
+    {
+      "id": "SUP-dfae46a5496a455e",
+      "origin": "validated",
+      "path": "$.slug",
+      "access": "n/a",
+      "text": "signification-et-invariance"
+    },
+    {
+      "id": "SUP-ad89626955b2952c",
+      "origin": "validated",
+      "path": "$.status",
+      "access": "n/a",
+      "text": "VALIDATED"
+    },
+    {
+      "id": "SUP-0bc7e89c0fd49a91",
+      "origin": "validated",
+      "path": "$.title",
+      "access": "n/a",
+      "text": "Signification et invariance"
+    },
+    {
+      "id": "SUP-604697148b6604a9",
+      "origin": "validated",
+      "path": "$.themes[0]",
+      "access": "n/a",
+      "text": "theorie-des-echelles-et-nombres"
+    },
+    {
+      "id": "SUP-987cd319416aa993",
+      "origin": "validated",
+      "path": "$.theme_labels[\"theorie-des-echelles-et-nombres\"]",
+      "access": "n/a",
+      "text": "Échelles et nombres"
+    },
+    {
+      "id": "SUP-211463f7c405e9b0",
+      "origin": "validated",
+      "path": "$.authors[0].name",
+      "access": "n/a",
+      "text": "Patrick Suppes"
+    },
+    {
+      "id": "SUP-461b2e964af54e68",
+      "origin": "validated",
+      "path": "$.authors[0].app_author_id",
+      "access": "n/a",
+      "text": "suppes"
+    },
+    {
+      "id": "SUP-e1d1c355c4c67253",
+      "origin": "validated",
+      "path": "$.authors[1].name",
+      "access": "n/a",
+      "text": "Joseph L. Zinnes"
+    },
+    {
+      "id": "SUP-cfdad21e7a54d1fe",
+      "origin": "validated",
+      "path": "$.authors[1].app_author_id",
+      "access": "n/a",
+      "text": "zinnes"
+    },
+    {
+      "id": "SUP-f827172a4db54d06",
+      "origin": "validated",
+      "path": "$.attribution_note",
+      "access": "n/a",
+      "text": "Texte coécrit, les deux noms sur une même ligne de la page de titre, et rédigé à la première personne du pluriel. Le nom du problème est revendiqué ici en propre par les deux auteurs (« a third problem which we shall term the meaningfulness problem »), mais le cadre formel dont il dépend est rapporté par eux à un article antérieur de Suppes avec Dana Scott (1958)."
+    },
+    {
+      "id": "SUP-60ea6759ae6fc6fd",
+      "origin": "validated",
+      "path": "$.hook",
+      "access": "n/a",
+      "text": "Un énoncé vrai en Fahrenheit, faux en Celsius : que reste-t-il de son sens ?"
+    },
+    {
+      "id": "SUP-94bf614c47bd57b8",
+      "origin": "validated",
+      "path": "$.summary",
+      "access": "n/a",
+      "text": "Un énoncé numérique a un sens si sa vérité reste constante sous les transformations d'échelle admissibles : c'est l'énoncé entier qui en a ou non, pas l'opération."
+    },
+    {
+      "id": "SUP-b7513cb9ad6e4968",
+      "origin": "validated",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "Un énoncé numérique a un sens si et seulement si sa vérité (ou sa fausseté) est constante sous les transformations d'échelle admissibles […]."
+    },
+    {
+      "id": "SUP-4a7436c7d850f705",
+      "origin": "validated",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Patrick Suppes et Joseph L. Zinnes, « Basic Measurement Theory », Technical Report n° 45, Institute for Mathematical Studies in the Social Sciences, Stanford University, 15 mars 1962."
+    },
+    {
+      "id": "SUP-857ffe6e055f68d3",
+      "origin": "validated",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "Section 6.1, Definition 33, p. 110"
+    },
+    {
+      "id": "SUP-76d11f542691c5ac",
+      "origin": "validated",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-af9f8e3a4b83d51b",
+      "origin": "validated",
+      "path": "$.quotation.original_text",
+      "access": "n/a",
+      "text": "A numerical statement is meaningful if and only if its truth (or falsity) is constant under admissible scale transformations […]."
+    },
+    {
+      "id": "SUP-a006aef58d724e59",
+      "origin": "validated",
+      "path": "$.quotation.original_language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-520c61d935611e51",
+      "origin": "validated",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "in-house"
+    },
+    {
+      "id": "SUP-2bcfd5daaaabce8a",
+      "origin": "validated",
+      "path": "$.quotation.translation.translator",
+      "access": "n/a",
+      "text": "Traduction interne non publiée (chaîne Curiosity) : « meaningful » est rendu par « a un sens », non par « significatif »."
+    },
+    {
+      "id": "SUP-4afd63bdde16874c",
+      "origin": "validated",
+      "path": "$.sources[0].label",
+      "access": "full-text",
+      "text": "Patrick Suppes et Joseph L. Zinnes, « Basic Measurement Theory », Technical Report n° 45, Psychology Series, Institute for Mathematical Studies in the Social Sciences, Stanford University, 15 mars 1962, 130 p."
+    },
+    {
+      "id": "SUP-ec988b343d66a1a7",
+      "origin": "validated",
+      "path": "$.sources[0].kind",
+      "access": "full-text",
+      "text": "primary"
+    },
+    {
+      "id": "SUP-9662a4ee6d29d69e",
+      "origin": "validated",
+      "path": "$.sources[0].locator",
+      "access": "full-text",
+      "text": "p. 108-125"
+    },
+    {
+      "id": "SUP-3e4ac815cca4e9ca",
+      "origin": "validated",
+      "path": "$.sources[0].url",
+      "access": "full-text",
+      "text": "https://web.stanford.edu/group/csli-suppes/techreports/IMSSS_45.pdf"
+    },
+    {
+      "id": "SUP-ffc37be1e07d0557",
+      "origin": "validated",
+      "path": "$.review.reviewer",
+      "access": "n/a",
+      "text": "contrôle aveugle"
+    },
+    {
+      "id": "SUP-58978ef3ef93a6b9",
+      "origin": "validated",
+      "path": "$.review.date",
+      "access": "n/a",
+      "text": "2026-08-17"
+    },
+    {
+      "id": "SUP-ab62b4f98906b668",
+      "origin": "validated",
+      "path": "$.review.attribution",
+      "access": "n/a",
+      "text": "confirmee"
+    },
+    {
+      "id": "SUP-427fb1df98a1e120",
+      "origin": "validated",
+      "path": "$.review.quotation",
+      "access": "n/a",
+      "text": "verbatim"
+    },
+    {
+      "id": "SUP-118d16b59e932353",
+      "origin": "validated",
+      "path": "$.review.sources",
+      "access": "n/a",
+      "text": "resolvent"
+    },
+    {
+      "id": "SUP-ed7629ec7b0c3818",
+      "origin": "validated",
+      "path": "$.review.prose",
+      "access": "n/a",
+      "text": "fidele"
+    },
+    {
+      "id": "SUP-e134482677317836",
+      "origin": "validated",
+      "path": "$.review.verdict",
+      "access": "n/a",
+      "text": "PASS"
+    },
+    {
+      "id": "SUP-bb4cb8ba2b00704a",
+      "origin": "validated",
+      "path": "$.review.notes[0]",
+      "access": "n/a",
+      "text": "Ouvert moi-même : https://web.stanford.edu/group/csli-suppes/techreports/IMSSS_45.pdf (HTTP 200, 3,37 Mo, 134 pages PDF, scan OCR Acrobat Paper Capture). Page de titre : « BASIC MEASUREMENT THEORY / by / Patrick Suppes and Joseph L. Zinnes / TECHNICAL REPORT NO. 45 / March 15, 1962 / PSYCHOLOGY SERIES / INSTITUTE FOR MATHEMATICAL STUDIES IN THE SOCIAL SCIENCES / Applied Mathematics and Statistics Laboratories / STANFORD UNIVERSITY ». Tous les éléments du label de la source (auteurs, titre, n° 45, série Psychology, IMSSS, Stanford, 15 mars 1962) sont sur cette page."
+    },
+    {
+      "id": "SUP-50f2d20747c9e54c",
+      "origin": "validated",
+      "path": "$.review.notes[1]",
+      "access": "n/a",
+      "text": "CITATION — vérifiée sur l'image de la page, pas seulement sur l'OCR : rendu de la page PDF 114 en PNG (pdftoppm -r 150), en-tête « P.S.-J.L.Z.-110- », dernières lignes soulignées : « Definition 33.  A numerical statement is meaningful if and only if its truth (or falsity) is constant under admissible scale transformations of ». La phrase se poursuit en tête de la page 111 : « any of its numerical assignments, i.e., any of its numerical functions expressing the results of measurement. » Le locator « Section 6.1, Definition 33, p. 110 » est exact : la définition commence bien en bas de la page numérotée 110 (décalage constant de 4 entre pagination PDF et pagination imprimée, vérifié sur les en-têtes des pages PDF 112 = 108, 113 = 109, 115 = 111). L'original_text de la fiche est mot pour mot celui de la page ; le […] couvre exactement la fin de phrase reportée page 111, coupe signalée. Traduction déclarée « in-house », et fidèle (« si et seulement si », « vérité (ou fausseté) », « transformations d'échelle admissibles »)."
+    },
+    {
+      "id": "SUP-5fd3966e10893f83",
+      "origin": "validated",
+      "path": "$.review.notes[2]",
+      "access": "n/a",
+      "text": "ATTRIBUTION — la revendication du nom est verbatim dans le texte, p. 108, ouverture de la section 6 : « Closely related to the two fundamental issues of measurement—the representation and uniqueness problems—is a third problem which we shall term the meaningfulness problem. » Le texte est bien coécrit (deux noms sur la page de titre, en-têtes courants « P.S.-J.L.Z. », rédaction en « we »). Le renvoi de la note d'attribution à Scott & Suppes (1958) est lui aussi dans le texte, p. 4 : « (The general viewpoint to be developed in this section was first articulated in Scott and Suppes (1958).) », et Scott, D. et Suppes, P., « Foundational aspects of theories of measurement », Journal of Symbolic Logic, 1958, 23, 113-128, figure aux références p. 128."
+    },
+    {
+      "id": "SUP-0521825df28f98cb",
+      "origin": "validated",
+      "path": "$.review.notes[3]",
+      "access": "n/a",
+      "text": "ATTRIBUTION, antécédent que j'ai cherché à contrôler : le rapport lui-même, dans le paragraphe qui suit immédiatement la Definition 33 (p. 111), renvoie à « Suppes [1959] » (Measurement, empirical meaningfulness and three-valued logic, in Churchman & Ratoosh (dir.), Measurement: Definitions and Theories, Wiley, 1959, p. 129-143) pour la construction d'un langage formalisé, non pour la définition elle-même. Je n'ai PAS pu ouvrir ce chapitre de 1959 : l'exemplaire Internet Archive (identifiant measurementdefin0000chur, 1959) existe mais la recherche plein texte et le prêt sont fermés à l'accès anonyme (endpoints 404 / tunnel refusé par le proxy). Je ne sais donc pas si Suppes y donne déjà une formulation équivalente ; c'est un accès refusé, pas un silence de la littérature. La littérature secondaire consultée (EOLSS, « History of Measurement Theory », J. A. Díez, https://eolss.net/Sample-Chapters/C05/E6-89-08-00.pdf) présente le problème mais ne date pas la paternité. En l'état, rien de ce que j'ai ouvert ne contredit l'attribution portée par la fiche, qui reste prudente (nom du problème revendiqué par les deux auteurs, cadre formel rapporté à 1958)."
+    },
+    {
+      "id": "SUP-376c23870c25980c",
+      "origin": "validated",
+      "path": "$.review.notes[4]",
+      "access": "n/a",
+      "text": "SOURCES — le locator « p. 108-125 » résout : table des matières, « SECTION 6. THE PROBLEM OF MEANINGFULNESS 108 ; 6.1 Definition 108 ; 6.2 Examples 112 ; 6.3 Extensions and Comments 121 ; REFERENCES 126 ». La section court donc bien jusqu'à 125. « 130 p. » résout aussi : la dernière page numérotée porte l'en-tête « P.S.-J.L.Z.-130- » (page PDF 134). doi_isbn à null est correct : interrogation Crossref (api.crossref.org, query.bibliographic « Basic Measurement Theory Suppes Zinnes ») ne rend aucun DOI pour le rapport technique — seulement le compte rendu de la version publiée en 1963 dans le Handbook of Mathematical Psychology, vol. I, p. 1-76 (DOI 10.2307/2270274, Journal of Symbolic Logic). La fiche cite le rapport de 1962 réellement consulté, ce qui est cohérent."
+    },
+    {
+      "id": "SUP-98d72b4f60715313",
+      "origin": "validated",
+      "path": "$.review.notes[5]",
+      "access": "n/a",
+      "text": "PROSE — le hook (« Un énoncé vrai en Fahrenheit, faux en Celsius ») n'est pas une image ajoutée : c'est l'exemple des auteurs, p. 109, vérifié sur l'image de la page PDF 113 : l'énoncé (4) est jugé vrai avec t(n)=110 et t(n-1)=100 en Fahrenheit (rapport 1,10), et « if the temperature measurements had been made on the Centigrade scale we would have come to the opposite conclusion, since then we would have found t(n)=43.3 and t(n-1)=37.8 and a ratio equal to 1.15 rather than 1.10 ». Le second membre du summary (« c'est l'énoncé entier qui en a ou non, pas l'opération ») est porté explicitement par la section 6.3, p. 122 : « Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems. » Aucun adjectif du hook ou du summary ne déborde ce que j'ai lu."
+    },
+    {
+      "id": "SUP-866ee284084c4cb0",
+      "origin": "validated",
+      "path": "$.review.notes[6]",
+      "access": "n/a",
+      "text": "Hors des quatre points, pour information et sans effet sur le verdict : (a) le rapport se cite lui-même de travers, la section 6.3 renvoyant deux fois à « Definition 28 » là où la définition porte le numéro 33 — erreur de la source, pas de la fiche ; (b) le summary écrit « a un sens si » là où la définition écrit « si et seulement si » (que la citation, elle, restitue) ; l'écart affaiblit l'énoncé au lieu de l'étendre, et les auteurs eux-mêmes concèdent p. 111 que « Definition 33 gives a necessary but not sufficient condition of meaningfulness », donc rien n'est affirmé au-delà des sources."
+    },
+    {
+      "id": "SUP-394b11771db49313",
+      "origin": "validated",
+      "path": "$.notes[0]",
+      "access": "n/a",
+      "text": "Les auteurs rabaissent eux-mêmes le rang de ce problème : « While this problem is not central to a theory of measurement it is often involved with various aspects of how measurements may be used » (p. 108). Une note concède par ailleurs que le critère est « a necessary but not sufficient condition of meaningfulness » (p. 111)."
+    },
+    {
+      "id": "SUP-65d1748cdb9d44b9",
+      "origin": "validated",
+      "path": "$.notes[1]",
+      "access": "n/a",
+      "text": "Le texte ne proscrit aucune opération par type d'échelle : il démontre le contraire. La comparaison de deux moyennes de températures est déclarée douée de sens (exemple 2, p. 115), tandis que le rapport de deux températures ne l'est pas (p. 108-109). « The admissibility of any mathematical operation depends not only on the scale type […] but on the entire numerical statement of which the operation is a part. »"
+    },
+    {
+      "id": "SUP-0eefa507e29199c2",
+      "origin": "validated",
+      "path": "$.notes[2]",
+      "access": "n/a",
+      "text": "Tout est localisé sur le dactylogramme de 1962, qui a sa pagination propre. Le chapitre publié en 1963 (Handbook of Mathematical Psychology, vol. I, Wiley, p. 1-76) n'a pas été ouvert, la correspondance page à page n'est pas établie, et il n'est pas affiché en source faute de DOI, d'ISBN ou d'URL vérifiés."
+    },
+    {
+      "id": "SUP-cb15c36f4bce73d8",
+      "origin": "validated",
+      "path": "$.notes[3]",
+      "access": "n/a",
+      "text": "Incohérence interne du rapport, relevée sur les images de page : la même définition est numérotée « Definition 33 » en 6.1 (p. 110) et rappelée deux fois comme « Definition 28 » en 6.3 (p. 121-122)."
+    },
+    {
+      "id": "SUP-19fd8610beba5805",
+      "origin": "validated",
+      "path": "$.notes[4]",
+      "access": "n/a",
+      "text": "La citation, la définition complète, l'exemple 2 et le passage de 6.3 ont été relus sur les images des feuillets, non sur la couche OCR du PDF, qui est très dégradée."
+    },
+    {
+      "id": "SUP-4dec2786940ab299",
+      "origin": "evidence:lecture.json",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "signification-et-invariance"
+    },
+    {
+      "id": "SUP-da1dd9dad3c62149",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authors[0].name",
+      "access": "n/a",
+      "text": "Patrick Suppes"
+    },
+    {
+      "id": "SUP-5c38eaa2d2077ad0",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authors[1].name",
+      "access": "n/a",
+      "text": "Joseph L. Zinnes"
+    },
+    {
+      "id": "SUP-ee91fd4a67198c4c",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authorship",
+      "access": "n/a",
+      "text": "COAUTHORED"
+    },
+    {
+      "id": "SUP-05e2243f9cf8b942",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.note",
+      "access": "n/a",
+      "text": "La page de titre du rapport technique porte « BASIC MEASUREMENT THEORY / by / Patrick Suppes and Joseph L. Zinnes », les deux noms sur une seule ligne, sans mention d'un auteur principal ni de contributions distinctes ; le texte parle constamment à la première personne du pluriel (« a third problem which we shall term the meaningfulness problem »). J'ai lu cette signature sur l'image de la page de titre, pas seulement dans la couche OCR. Le rapport est daté du 15 mars 1962 ; sa note 1, page 1, annonce qu'il « will be published as a chapter of the forthcoming Handbook of Mathematical Psychology », ce qui a eu lieu en 1963 — la même main tient donc les deux versions, et le millésime de la publication n'est pas celui de la rédaction. Détail relevé sur la page elle-même : cette note nomme les directeurs du Handbook dans l'ordre « R. R. Bush, E. H. Galanter and R. D. Luce », alors que le volume paru porte Luce, Bush et Galanter ; l'ordre imprimé sur le livre est celui à retenir pour citer le chapitre. Deux nuances d'attribution, à ne pas effacer. D'abord, les auteurs ne revendiquent pas l'invention du cadre : ils écrivent, page 3, « (The general viewpoint to be developed in this section was first articulated in Scott and Suppes (1958).) » — le cadre représentation/unicité vient d'un article antérieur de Suppes avec Dana Scott, que je n'ai pas ouvert. Ensuite, c'est bien dans ce texte-ci que le troisième problème reçoit son nom : « a third problem which we shall term the meaningfulness problem » (p. 108) ; la paternité du terme « meaningfulness problem » est donc, elle, revendiquée ici en propre et par les deux auteurs ensemble."
+    },
+    {
+      "id": "SUP-5c087b1e1f3cf6cd",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "Un énoncé numérique a un sens si et seulement si sa vérité (ou sa fausseté) est constante sous les transformations d'échelle admissibles […]."
+    },
+    {
+      "id": "SUP-1020494264574901",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Patrick Suppes & Joseph L. Zinnes, « Basic Measurement Theory », Technical Report No. 45, Psychology Series, Institute for Mathematical Studies in the Social Sciences, Applied Mathematics and Statistics Laboratories, Stanford University, 15 mars 1962, dactylogramme de 130 pages (texte p. 1-125, références p. 126-130), paginé « P.S.-J.L.Z.-n ». C'est la version préparatoire du chapitre publié l'année suivante — Suppes, P. & Zinnes, J. L. (1963), « Basic Measurement Theory », in R. D. Luce, R. R. Bush & E. Galanter (dir.), Handbook of Mathematical Psychology, vol. I, New York, Wiley, p. 1-76 — dont la pagination est différente et n'est pas celle citée ici."
+    },
+    {
+      "id": "SUP-1b596551fef67639",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "Rapport technique IMSSS n° 45, section 6 « The Problem of Meaningfulness », sous-section 6.1 « Definition », Definition 33, p. 110 du dactylogramme (feuillet 114 du PDF Stanford)"
+    },
+    {
+      "id": "SUP-f53d4083d6b3e451",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-e49a8d9f813ec963",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.original_text",
+      "access": "n/a",
+      "text": "A numerical statement is meaningful if and only if its truth (or falsity) is constant under admissible scale transformations […]."
+    },
+    {
+      "id": "SUP-25b44e99e7adef42",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.original_language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-abe57de2585fb205",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "in-house"
+    },
+    {
+      "id": "SUP-ea63ac6a4f2118a4",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.translation.translator",
+      "access": "n/a",
+      "text": "Traduction interne non publiée (agent lecteur, chaîne Curiosity) ; aucune traduction française publiée de ce texte n'a été identifiée. Deux choix à signaler : « meaningful » est rendu par « a un sens » et non par « significatif », qui en français se lit spontanément comme « statistiquement significatif » — contresens précisément dans le champ où ce texte circule ; et « admissible scale transformations » est rendu par « transformations d'échelle admissibles », « admissible » étant chez les auteurs un terme technique (les transformations que le type d'échelle autorise), pas une appréciation."
+    },
+    {
+      "id": "SUP-d55097b4ccea015e",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].citation",
+      "access": "full-text",
+      "text": "Suppes, P. & Zinnes, J. L. (1962). « Basic Measurement Theory », Technical Report No. 45, Psychology Series, Institute for Mathematical Studies in the Social Sciences, Stanford University, 15 mars 1962."
+    },
+    {
+      "id": "SUP-2faf7e1a3e8005bd",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].url",
+      "access": "full-text",
+      "text": "https://web.stanford.edu/group/csli-suppes/techreports/IMSSS_45.pdf"
+    },
+    {
+      "id": "SUP-3fb391c437c431ee",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].citation",
+      "access": "metadata-only",
+      "text": "Suppes, P. & Zinnes, J. L. (1963). « Basic Measurement Theory », in R. D. Luce, R. R. Bush & E. Galanter (dir.), Handbook of Mathematical Psychology, vol. I, New York, Wiley, p. 1-76. Pagination confirmée par la notice Crossref du compte rendu de ce chapitre au Journal of Symbolic Logic (DOI 10.2307/2270274), qui donne « Volume I, edited by R. Duncan Luce, Robert R. Bush, and Eugene Galanter, John Wiley and Sons, Inc., New York and London 1963, pp. 1-76 » — c'est une métadonnée de tiers, pas le livre ouvert."
+    },
+    {
+      "id": "SUP-106c334769abc2bc",
+      "origin": "evidence:lecture.json",
+      "path": "$.definition_de_lauteur",
+      "access": "n/a",
+      "text": "Les auteurs posent d'abord deux problèmes, et un seul troisième. Les deux fondamentaux : le problème de la représentation — « Characterize the formal properties of the empirical operations and relations used in the procedure and show that they are isomorphic to appropriately chosen numerical operations and relations » (p. 4) — et le problème de l'unicité, c'est-à-dire « determine the scale type of the measurements resulting from the procedure » (p. 14). L'assignation numérique est « a function which maps an empirical system homomorphically onto a numerical system » (p. 22) ; une échelle, elle, n'est pas cette fonction mais un triplet dont elle est un terme (avec un système relationnel empirique et un système numérique plein), et le type d'échelle « is defined entirely in terms of the class of numerical assignments which map a given empirical system homomorphically onto a subsystem of the same full numerical system » (p. 23) — sans aucune référence aux opérations empiriques réellement pratiquées. La formulation du problème de la représentation dit « isomorphic (or possibly homomorphic) » (p. 10) : le vocabulaire de la description reçue (« la mesure est un homomorphisme ») est bien celui du texte, mais le texte hésite explicitement entre les deux termes à cet endroit et retient l'homomorphisme partout ailleurs.\n\nLa signification vient en troisième, et les auteurs en rabaissent eux-mêmes le rang : c'est « a third problem which we shall term the meaningfulness problem. While this problem is not central to a theory of measurement it is often involved with various aspects of how measurements may be used, and as such it has engendered considerable controversy » (p. 108). La définition (Definition 33, p. 110-111) est citée plus haut ; sa version complète ajoute « […] of any of its numerical assignments, i.e., any of its numerical functions expressing the results of measurement ». Les auteurs la reformulent aussitôt en termes d'équivalence : un énoncé est doué de sens si les transformations admissibles conduisent toujours à des énoncés de même valeur de vérité. Une note de bas de page concède que c'est « a necessary but not sufficient condition of meaningfulness » (p. 111, note 6).\n\nDeux corrections à la description qui m'a été transmise. Premièrement, le texte ne parle nulle part de moyenne de rangs ; « rang » n'apparaît qu'à propos de l'échelle de dureté de Mohs, hors de la section 6. Deuxièmement, et c'est plus important, le texte ne dit pas qu'une moyenne d'échelle d'intervalle serait dépourvue de sens : il démontre le contraire. L'exemple 2 (p. 115) prend exactement la comparaison de deux moyennes de températures maximales — janvier contre février — et conclut « Hence (8) is meaningful under these conditions », suivi de la remarque générale : « In general, it may be observed that whether or not a particular mathematical operation can be used with a particular scale does not have a simple yes or no answer. The admissibility of any mathematical operation depends not only on the scale type of the relevant numerical assignments but on the entire numerical statement of which the operation is a part. » Ce qui est déclaré dépourvu de sens, c'est le rapport de deux températures maximales (énoncé 4, p. 108) — vrai en Fahrenheit, faux en Celsius, contre-exemple calculé p. 109 — et la comparaison entre une somme de deux températures et une troisième (exemple 1, p. 113-114), alors que la même somme est douée de sens pour des masses, qui sont sur une échelle de rapport. Le texte est donc plus exigeant, et non plus permissif, que la version courante qui interdit des opérations en bloc par type d'échelle : ce sont des énoncés entiers qui ont ou n'ont pas de sens, pas des opérations.\n\nLa section 6.3 tranche enfin contre deux positions concurrentes, nommées : celle de Weitzenhoffer (1951), pour qui les seules opérations mathématiques admissibles sont celles qui correspondent à des opérations physiques connues, et celle de Guilford (1954), pour qui toutes les règles de l'arithmétique deviennent admissibles dès qu'existe une addition physique. « In contrast to these two positions, Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems » (p. 121-122). Le critère est d'invariance, pas d'opération."
+    },
+    {
+      "id": "SUP-3ab5f1d1d850878b",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[0]",
+      "access": "n/a",
+      "text": "Je n'ai pas ouvert le chapitre publié de 1963 (Handbook of Mathematical Psychology, vol. I, Wiley, p. 1-76). Tout ce qui est cité et localisé ici l'est sur le rapport technique IMSSS n° 45 du 15 mars 1962, qui a sa pagination propre (« P.S.-J.L.Z.-n », jusqu'à 130). La correspondance page à page avec le chapitre publié n'est pas établie : le locator « p. 110 » ne vaut que pour le dactylogramme, et je ne sais pas si le passage cité y porte encore le numéro « Definition 33 » ni sur quelle page il tombe entre 1 et 76."
+    },
+    {
+      "id": "SUP-b0db8314e088ddb4",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[1]",
+      "access": "n/a",
+      "text": "Incohérence interne du rapport, relevée sur les images de page et non sur l'OCR : la définition est numérotée « Definition 33 » en 6.1 (p. 110) et rappelée deux fois comme « Definition 28 » en 6.3 (p. 121 et 122). Il s'agit du même énoncé. Un lecteur qui chercherait « Definition 28 » dans la section 6.1 ne la trouverait pas."
+    },
+    {
+      "id": "SUP-b87d81d75baf002d",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[2]",
+      "access": "n/a",
+      "text": "Le PDF Stanford est un scan avec couche OCR produite par Acrobat Paper Capture, très dégradée (les mots soulignés au dactylogramme ressortent en caractères parasites : « !::. numerical statement is meaningful if and only g »). Aucune citation n'a été relevée sur cette couche : la citation, la définition 33 complète, l'exemple 2 et le passage de 6.3 ont tous été vérifiés mot à mot sur les images des feuillets 114, 115, 119 et 125 rendues à 150 dpi. Les autres passages entre guillemets de `definition_de_lauteur` (p. 4, 10, 14, 22, 23) proviennent, eux, de la couche OCR et n'ont pas été recontrôlés sur l'image — ils sont à retenir comme substance rapportée, pas comme verbatim garanti."
+    },
+    {
+      "id": "SUP-dc5a4c01817ff32b",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[3]",
+      "access": "n/a",
+      "text": "La seconde adresse annoncée par le repérage — suppescorpus.stanford.edu/.../basic_measurement_theory_43.pdf, donnée pour HTTP 200 et 1,68 Mo — renvoie aujourd'hui HTTP 404 (page HTML d'erreur, testée deux fois, avec une variante de chemin). Une seule adresse est vérifiée ouvrable dans cette session : web.stanford.edu/group/csli-suppes/techreports/IMSSS_45.pdf (HTTP 200, application/pdf, 3 373 092 octets, 134 feuillets)."
+    },
+    {
+      "id": "SUP-303fbf966b8bfaac",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[4]",
+      "access": "n/a",
+      "text": "Aucune traduction française publiée n'a été identifiée : la requête HAL « Suppes Zinnes mesure » renvoie zéro résultat. La citation portée par la fiche est donc une traduction de mon fait, et l'anglais des auteurs est conservé dans `original_text`. Repérée au passage sans être ouverte : Olivier Martin (2003), « Les origines philosophiques et scientifiques de la théorie représentationnelle de la mesure (1930-50) », seule entrée HAL substantielle sur ce courant — piste francophone, non consultée."
+    },
+    {
+      "id": "SUP-bf51c4377284b1d6",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[5]",
+      "access": "n/a",
+      "text": "Le cadre représentation/unicité est explicitement rapporté par les auteurs à Scott & Suppes (1958), texte que je n'ai pas ouvert. Si la carte devait dater l'origine du cadre formel plutôt que celle du problème de la signification, ce serait cette référence-là qu'il faudrait aller lire, pas celle-ci."
+    }
+  ],
+  "estimated_tokens": 12217,
+  "status": "READY"
+}
