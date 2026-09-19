@@ -19,7 +19,7 @@ script ne peut pas dire : quel travail est possible aujourd'hui, ce qu'il coûte
 
 ---
 
-## Les quatre chantiers, par coût croissant
+## Les chantiers, par coût croissant
 
 | chantier | volume | recherche documentaire ? | état |
 |---|---|---|---|
@@ -28,6 +28,8 @@ script ne peut pas dire : quel travail est possible aujourd'hui, ce qu'il coûte
 | **C.** Domaines vides | **aucun** | — | **fermé le 28 août 2026** |
 | **D.** Reprises courtes des domaines instruits | voir les sections | oui, accès déjà constaté | **ouvert, et c'est par lui que la phase 3 avance** |
 | **E.** Le garde de la CI ne couvrait qu'une moitié du répertoire projeté | **aucun** | non | **fermé le 2 septembre 2026** |
+| **F.** Les acquisitions que l'audit v3 réclame | voir la section | oui | ouvert le 17 septembre 2026 |
+| **G.** Le pack de preuve ne lisait qu'un fichier du dossier | **aucun** | non | **corrigé le 19 septembre 2026**, deux suites ouvertes |
 
 **Le chantier A est fermé.** Il s'était vidé le 21 août, rouvert et creusé pendant cinq lots
 d'ouverture consécutifs jusqu'à trente-quatre cartes le 28 août, puis refermé en trois nuits :
@@ -917,6 +919,56 @@ validée une seconde fois.
 auditées n'ont **aucun répertoire `corpus/evidence/<id>/`**, et les trois du lot du 17 septembre
 en faisaient partie. C'est le signal le moins cher à calculer et le plus prédictif à ce jour :
 il ne dit pas qu'une carte est fausse, il dit que son texte repose sur un dossier mince.
+
+**Et ce signal a mené trois nuits de suite au même endroit.** Les neuf cartes portant un rapport
+v3 au 19 septembre sont **exactement neuf cartes sans répertoire de preuve**. Aucune carte à
+dossier n'avait encore été auditée. Le signal est peu cher et il sélectionne bien, mais il
+sélectionne toujours la même couche : appliqué une quatrième fois, il aurait fini d'épuiser les
+seize cartes minces sans jamais dire ce que vaut le reste du corpus.
+
+---
+
+# G. Le pack de preuve ne lisait qu'un fichier du dossier — corrigé le 19 septembre 2026
+
+**Le fact-check déterministe ne ramassait que `corpus/evidence/<id>/lecture.json`.** Ce nom n'est
+qu'une convention tardive. Neuf cartes déposent leur lecture primaire dans
+`evidence.primary-reading.json` et leur réception dans `evidence.reception.json` ; six autres
+déposent une réception à côté d'un `lecture.json`. **Environ 1,4 Mo de dossier était invisible au
+seul composant du dispositif qui a le droit de décider.**
+
+**Et rien ne le disait.** `--prepare` rendait `READY`, le pack se rabattait sur le seul
+enregistrement validé, et sa sortie n'en portait aucune trace. Mesuré sur
+`regulation-controle-autonome` : **51 supports au lieu de 496**, pour un dossier de 201 Ko dont
+l'en-tête déclare l'article de Reynaud lu intégralement. Un `FACTCHECK_FAIL` obtenu dans ces
+conditions ne dit pas que le texte dépasse ses sources ; il dit que l'instrument n'a pas ouvert
+le dossier.
+
+Les neuf cartes concernées, toutes de la couche sociologie des organisations :
+`couplage-lache`, `deplacement-des-buts`, `garbage-can-model`,
+`inertie-structurelle-et-selection`, `isomorphisme-institutionnel`, `organisation-genree`,
+`rationalite-limitee`, `regulation-controle-autonome`, `zones-incertitude`. Et les six qui
+perdaient un fichier à côté de leur lecture : `attention-diffusee-et-selection`,
+`classement-par-valeurs-compensatrices`, `double-emploi-entre-epreuves`, `mesure-devenue-cible`,
+`personnalite-professionnelle`, `profils-divergents-a-score-egal`.
+
+**Le correctif prend le répertoire entier**, écarte `scouting.json` — le scout y note où il a
+cherché, pas ce qu'il a lu — et nomme chaque support par son fichier d'origine. `FACTCHECK_PROTOCOL.md`
+le dit maintenant, et onze tests le tiennent : **le script n'en avait aucun.**
+
+**Ce que ce chantier laisse ouvert, et qui n'est pas réglé par le correctif.**
+
+1. **Le réécrivain ne lit toujours pas le dossier de lui-même.** Sa liste de lecture s'arrête à
+   `corpus/validated/<id>.json` ; le dossier ne lui parvient que si l'orchestrateur le lui passe
+   par chemin, ce que le lot du 19 septembre a fait à la main. L'asymétrie va dans le sens sûr —
+   le rédacteur en sait moins que le contrôle — mais elle affame la réécriture des neuf cartes
+   les mieux dotées du dépôt. À porter dans l'agent plutôt que dans le prompt.
+2. **Le niveau d'accès n'est pas porté par ces dossiers.** Sur 496 supports de
+   `regulation-controle-autonome`, 467 sortent avec `access: n/a`, faute de `consulted` sur les
+   objets. Le vérificateur est alors fondé à les traiter comme non consultés, alors que l'en-tête
+   du fichier déclare la lecture intégrale. **Ce n'est pas un défaut de code : c'est une
+   information absente des fichiers**, et elle ne peut pas être ajoutée par déduction.
+3. **Les neuf rapports v3 antérieurs ne sont pas invalidés** : ces cartes n'ont aucun répertoire
+   de preuve, donc leur pack était déjà complet. Aucune reprise n'est due de ce côté.
 
 ---
 
