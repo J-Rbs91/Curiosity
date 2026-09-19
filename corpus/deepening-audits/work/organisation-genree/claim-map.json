@@ -1,6 +1,6 @@
 {
   "concept_id": "organisation-genree",
-  "candidate_sha256": "5574e2a5a7231ed794f3bd3719e3427bb5877698791386efa6be8370e2a9ef8a",
+  "candidate_sha256": "e76f77a8d8cf685a1d5051bc214c6e83b972f40879d1f65b0a559481b6cc3f2a",
   "paragraphs": [
     {
       "locator": "lead[0]",
@@ -67,91 +67,62 @@
     {
       "claim_id": "C001",
       "locator": "lead[0]",
-      "start": 0,
-      "end": 87,
-      "claim_text": "Une offre d’emploi mentionne rarement des conditions réservées explicitement à un sexe.",
-      "normalized_claim": "Les offres d'emploi énoncent rarement une condition explicitement réservée à un sexe.",
-      "support_ids": []
-    },
-    {
-      "claim_id": "C002",
-      "locator": "lead[0]",
-      "start": 88,
-      "end": 243,
-      "claim_text": "Elle demande des compétences, une certaine disponibilité, parfois la capacité à repousser un dîner de famille ou à partir en déplacement sans long préavis.",
-      "normalized_claim": "Les conditions typiquement énoncées par une offre d'emploi sont des compétences et des formes de disponibilité.",
-      "support_ids": []
-    },
-    {
-      "claim_id": "C003",
-      "locator": "lead[0]",
-      "start": 244,
-      "end": 299,
-      "claim_text": "Rien, dans cette liste, ne nomme un homme ou une femme.",
-      "normalized_claim": "Aucune de ces conditions ne nomme un sexe.",
-      "support_ids": [
-        "SUP-391af1ba1d84a5a7",
-        "SUP-5622026671390f0b"
-      ]
-    },
-    {
-      "claim_id": "C004",
-      "locator": "lead[0]",
-      "start": 313,
-      "end": 498,
-      "claim_text": "ces conditions supposent quelque chose de très précis sur la vie de la personne qui occupera le poste : qu’elle peut se rendre disponible sans que rien, ailleurs, ne vienne s’y opposer.",
-      "normalized_claim": "Ces conditions présupposent une personne dont rien, hors du travail, ne limite la disponibilité.",
+      "start": 324,
+      "end": 508,
+      "claim_text": "ces conditions supposent quelque chose de très précis sur la vie de la personne qui occupera le poste : qu’elle peut se rendre disponible sans que rien, ailleurs, ne vienne s’y opposer",
+      "normalized_claim": "Des exigences de poste formulées sans mention de sexe présupposent une disponibilité que rien, hors travail, ne vient contrarier.",
       "support_ids": [
         "SUP-f950e846a432256e",
         "SUP-5622026671390f0b"
       ]
     },
     {
-      "claim_id": "C005",
+      "claim_id": "C002",
       "locator": "lead[1]",
       "start": 0,
       "end": 90,
       "claim_text": "C’est la question que pose la sociologue Joan Acker à propos des organisations de travail.",
-      "normalized_claim": "Joan Acker est sociologue et pose cette question à propos des organisations de travail.",
+      "normalized_claim": "Attribution : Joan Acker, sociologue, pose cette question à propos des organisations de travail.",
       "support_ids": [
         "SUP-18fd4348b13a39b3",
-        "SUP-a38483e48fe25a1f",
-        "SUP-3bdc81a6c6a5e194"
+        "SUP-e1ae2b51889d7ee8",
+        "SUP-8c17788734699862",
+        "SUP-a02d5a10202c3147"
       ]
     },
     {
-      "claim_id": "C006",
+      "claim_id": "C003",
       "locator": "lead[1]",
       "start": 165,
-      "end": 319,
-      "claim_text": "le genre n’entre pas dans une organisation depuis le dehors, porté par des individus déjà hommes ou femmes qui rencontreraient ensuite des règles neutres.",
-      "normalized_claim": "Selon Acker, le genre n'est pas apporté de l'extérieur dans des structures par ailleurs neutres.",
+      "end": 318,
+      "claim_text": "le genre n’entre pas dans une organisation depuis le dehors, porté par des individus déjà hommes ou femmes qui rencontreraient ensuite des règles neutres",
+      "normalized_claim": "Thèse d'Acker : le genre n'est pas un apport extérieur venant contaminer des structures neutres.",
       "support_ids": [
         "SUP-7b7800d2a9fda321",
         "SUP-2980efc877717e16",
-        "SUP-cbd8ca300fe9306f"
+        "SUP-2c522147e446630c"
       ]
     },
     {
-      "claim_id": "C007",
+      "claim_id": "C004",
       "locator": "lead[1]",
       "start": 320,
       "end": 436,
       "claim_text": "Il est déjà présent dans la façon dont un poste est défini, avant même que quiconque ne soit recruté pour l’occuper.",
-      "normalized_claim": "Le genre est déjà présent dans la définition d'un poste, avant tout recrutement.",
+      "normalized_claim": "Le genre est déjà logé dans la définition du poste, antérieure à tout occupant.",
       "support_ids": [
         "SUP-7b7800d2a9fda321",
         "SUP-4e6e5fc0cad480cf",
-        "SUP-656f304d4b3aa99f"
+        "SUP-b13efc13b3e40573"
       ]
     },
     {
-      "claim_id": "C008",
+      "claim_id": "C005",
       "locator": "sections[0].paragraphs[0]",
       "start": 33,
-      "end": 176,
-      "claim_text": "Acker ne regarde ni les opinions ni les comportements : elle regarde les documents par lesquels une organisation définit et classe ses emplois.",
-      "normalized_claim": "Acker prend pour objet non les opinions ou comportements mais les documents de définition et de classement des emplois.",
+      "end": 175,
+      "claim_text": "Acker ne regarde ni les opinions ni les comportements : elle regarde les documents par lesquels une organisation définit et classe ses emplois",
+      "normalized_claim": "Objet d'observation d'Acker : les documents de définition et de classement des emplois, non les opinions ou comportements.",
       "support_ids": [
         "SUP-c35e722aaa5e4738",
         "SUP-af401dbbcbed5402",
@@ -159,25 +130,26 @@
       ]
     },
     {
-      "claim_id": "C009",
+      "claim_id": "C006",
       "locator": "sections[0].paragraphs[0]",
       "start": 177,
       "end": 353,
       "claim_text": "Règlements de travail, contrats, directives, et surtout grilles de cotation des postes, celles qui attribuent des points à un emploi pour le situer dans l’échelle des salaires.",
-      "normalized_claim": "Ces documents sont les règles écrites, contrats, directives et systèmes d'évaluation des emplois, lesquels attribuent des points servant à fixer la position salariale.",
+      "normalized_claim": "Liste des supports documentaires de la logique organisationnelle, dont les systèmes d'évaluation des emplois attribuant des points en vue du salaire.",
       "support_ids": [
-        "SUP-c35e722aaa5e4738",
         "SUP-af401dbbcbed5402",
-        "SUP-226aad3b63a3d6da"
+        "SUP-c35e722aaa5e4738",
+        "SUP-226aad3b63a3d6da",
+        "SUP-08511ff5d75ac7fc"
       ]
     },
     {
-      "claim_id": "C010",
+      "claim_id": "C007",
       "locator": "sections[0].paragraphs[0]",
       "start": 354,
       "end": 459,
       "claim_text": "Sa propre base d’observation est l’une de ces grilles, vue fonctionner dans un projet d’équité salariale.",
-      "normalized_claim": "La base empirique déclarée d'Acker est l'observation d'un système d'évaluation des emplois dans un projet de comparable worth.",
+      "normalized_claim": "Base empirique déclarée d'Acker : l'observation d'un système d'évaluation des emplois dans un projet de comparable worth.",
       "support_ids": [
         "SUP-c35e722aaa5e4738",
         "SUP-9bb72076522daa17",
@@ -185,121 +157,124 @@
       ]
     },
     {
-      "claim_id": "C011",
+      "claim_id": "C008",
       "locator": "sections[0].paragraphs[0]",
       "start": 460,
       "end": 573,
       "claim_text": "Ces systèmes ont une propriété qui les rend instructifs : ils évaluent des emplois, et non ceux qui les occupent.",
-      "normalized_claim": "L'évaluation des emplois évalue les emplois et non leurs titulaires, ce qui la rend instructive.",
+      "normalized_claim": "L'évaluation des emplois porte sur les emplois et non sur leurs titulaires, ce qui en fait un révélateur.",
       "support_ids": [
         "SUP-b13efc13b3e40573",
         "SUP-c35e722aaa5e4738"
       ]
     },
     {
-      "claim_id": "C012",
+      "claim_id": "C009",
       "locator": "sections[0].paragraphs[1]",
       "start": 0,
       "end": 50,
       "claim_text": "Un emploi, dans ce vocabulaire, est une case vide.",
-      "normalized_claim": "Dans ce vocabulaire, un emploi est une case vide.",
+      "normalized_claim": "L'emploi est décrit comme une case vide (« empty slot »).",
       "support_ids": [
         "SUP-b13efc13b3e40573",
         "SUP-874e8d2bc4eed2db"
       ]
     },
     {
-      "claim_id": "C013",
+      "claim_id": "C010",
       "locator": "sections[0].paragraphs[1]",
       "start": 51,
       "end": 232,
       "claim_text": "Il tient sur du papier avant que personne ne l’occupe : un ensemble de tâches, de compétences et de responsabilités, situé quelque part sur un organigramme, et séparé des personnes.",
-      "normalized_claim": "L'emploi est un ensemble de tâches, compétences et responsabilités situé sur un organigramme et séparé des personnes, existant sur le papier avant d'être occupé.",
+      "normalized_claim": "Définition de l'emploi : ensemble de tâches, compétences et responsabilités situé sur un organigramme, séparé des personnes, existant sur le papier avant occupation.",
       "support_ids": [
         "SUP-b13efc13b3e40573",
-        "SUP-874e8d2bc4eed2db"
+        "SUP-874e8d2bc4eed2db",
+        "SUP-ebafe5325b887a6e"
       ]
     },
     {
-      "claim_id": "C014",
+      "claim_id": "C011",
       "locator": "sections[0].paragraphs[1]",
       "start": 299,
-      "end": 430,
-      "claim_text": "ce n’est pas l’emploi qu’on ajuste aux gens, ce sont les gens qu’on motive, qu’on dirige et qu’on choisit pour aller dans l’emploi.",
-      "normalized_claim": "L'inversion : les personnes sont motivées, dirigées et choisies pour s'ajuster à l'emploi.",
+      "end": 429,
+      "claim_text": "ce n’est pas l’emploi qu’on ajuste aux gens, ce sont les gens qu’on motive, qu’on dirige et qu’on choisit pour aller dans l’emploi",
+      "normalized_claim": "Inversion : les personnes sont motivées, dirigées et choisies pour s'ajuster à l'emploi.",
       "support_ids": [
         "SUP-b13efc13b3e40573"
       ]
     },
     {
-      "claim_id": "C015",
+      "claim_id": "C012",
       "locator": "sections[0].paragraphs[1]",
       "start": 431,
-      "end": 596,
-      "claim_text": "Acker appelle logique organisationnelle cet ensemble de présupposés et de pratiques ordinaires sur lesquels la plupart des organisations de travail sont construites,",
-      "normalized_claim": "Acker nomme logique organisationnelle les présupposés et pratiques sur lesquels la plupart des organisations de travail contemporaines sont construites.",
+      "end": 595,
+      "claim_text": "Acker appelle logique organisationnelle cet ensemble de présupposés et de pratiques ordinaires sur lesquels la plupart des organisations de travail sont construites",
+      "normalized_claim": "Définition de la « logique organisationnelle » chez Acker : présupposés et pratiques qui construisent la plupart des organisations de travail contemporaines.",
       "support_ids": [
         "SUP-7b7800d2a9fda321"
       ]
     },
     {
-      "claim_id": "C016",
+      "claim_id": "C013",
       "locator": "sections[0].paragraphs[1]",
       "start": 597,
-      "end": 659,
-      "claim_text": "et c’est là, dans cette logique, qu’elle va chercher le genre.",
-      "normalized_claim": "C'est dans la logique organisationnelle qu'Acker cherche le genre.",
+      "end": 658,
+      "claim_text": "et c’est là, dans cette logique, qu’elle va chercher le genre",
+      "normalized_claim": "C'est dans la logique organisationnelle qu'Acker situe son analyse du genre.",
       "support_ids": [
         "SUP-7b7800d2a9fda321",
-        "SUP-e2f18c253d2f2ba7",
-        "SUP-c24bf9a0571f9e6b"
+        "SUP-c24bf9a0571f9e6b",
+        "SUP-e2f18c253d2f2ba7"
       ]
     },
     {
-      "claim_id": "C017",
+      "claim_id": "C014",
       "locator": "sections[1].paragraphs[0]",
       "start": 0,
       "end": 71,
       "claim_text": "Le nom qu’elle emploie pour cette case vide est celui d’emploi abstrait",
-      "normalized_claim": "Acker nomme cette case vide l'emploi abstrait.",
+      "normalized_claim": "Acker nomme cette case vide « the abstract job ».",
       "support_ids": [
         "SUP-f950e846a432256e",
-        "SUP-c4eb54b01e6a157f"
+        "SUP-08511ff5d75ac7fc"
       ]
     },
     {
-      "claim_id": "C018",
+      "claim_id": "C015",
       "locator": "sections[1].paragraphs[0]",
       "start": 120,
       "end": 314,
       "claim_text": "Dans un texte de 1990, la réponse tient en une phrase : « Dans la logique organisationnelle, celui qui remplit l’emploi abstrait est un travailleur désincarné qui n’existe que pour le travail. »",
-      "normalized_claim": "Citation attribuée à Acker, texte de 1990, sur le travailleur désincarné qui remplit l'emploi abstrait.",
+      "normalized_claim": "Citation attribuée à un texte d'Acker de 1990, dans sa traduction française retenue par le dossier.",
       "support_ids": [
         "SUP-360fec860b72e51f",
         "SUP-28b47c30098b8c92",
-        "SUP-268333344b7a6d09",
+        "SUP-21a439abc632c486",
         "SUP-239ddf520fd92441",
-        "SUP-e1ae2b51889d7ee8"
-      ]
-    },
-    {
-      "claim_id": "C019",
-      "locator": "sections[1].paragraphs[0]",
-      "start": 315,
-      "end": 416,
-      "claim_text": "Une catégorie qu’on disait sans corps et sans sexe suppose donc bien quelqu’un, et pas n’importe qui.",
-      "normalized_claim": "Une catégorie présentée comme sans corps ni genre présuppose néanmoins un occupant déterminé.",
-      "support_ids": [
+        "SUP-e1ae2b51889d7ee8",
         "SUP-f950e846a432256e"
       ]
     },
     {
-      "claim_id": "C020",
+      "claim_id": "C016",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 315,
+      "end": 416,
+      "claim_text": "Une catégorie qu’on disait sans corps et sans sexe suppose donc bien quelqu’un, et pas n’importe qui.",
+      "normalized_claim": "Une catégorie présentée comme sans corps ni genre présuppose malgré tout un occupant déterminé.",
+      "support_ids": [
+        "SUP-f950e846a432256e",
+        "SUP-592abc185c632c6c"
+      ]
+    },
+    {
+      "claim_id": "C017",
       "locator": "sections[1].paragraphs[1]",
       "start": 0,
       "end": 254,
       "claim_text": "Un travailleur désincarné, au sens où l’entend l’autrice, n’a pas à quitter son poste parce qu’un enfant est malade, n’a pas de repas à préparer avant de rentrer, ne tombe pas enceinte, ne se fatigue pas d’une façon incompatible avec les horaires prévus.",
-      "normalized_claim": "Glose du travailleur désincarné : sans enfant malade, sans repas à préparer, sans grossesse, sans fatigue incompatible avec les horaires.",
+      "normalized_claim": "Glose illustrative du travailleur désincarné : sans charge d'enfant, sans travail domestique, sans grossesse, sans fatigue incompatible avec les horaires.",
       "support_ids": [
         "SUP-f950e846a432256e",
         "SUP-87dec12a48c16205",
@@ -307,71 +282,74 @@
       ]
     },
     {
-      "claim_id": "C021",
+      "claim_id": "C018",
       "locator": "sections[1].paragraphs[1]",
-      "start": 255,
-      "end": 481,
-      "claim_text": "Acker est plus précise encore : un tel travailleur hypothétique ne peut avoir d’autres impératifs d’existence qui empiètent sur l’emploi, et trop d’obligations hors des limites du poste rendraient quelqu’un inapte à l’occuper.",
-      "normalized_claim": "Acker écrit qu'un tel travailleur hypothétique ne peut avoir d'autres impératifs d'existence empiétant sur l'emploi et que trop d'obligations extérieures rendraient inapte au poste.",
+      "start": 287,
+      "end": 480,
+      "claim_text": "un tel travailleur hypothétique ne peut avoir d’autres impératifs d’existence qui empiètent sur l’emploi, et trop d’obligations hors des limites du poste rendraient quelqu’un inapte à l’occuper",
+      "normalized_claim": "Reprise des deux phrases d'Acker p. 149 sur les impératifs d'existence et les obligations hors du poste.",
       "support_ids": [
         "SUP-f950e846a432256e",
-        "SUP-5622026671390f0b"
+        "SUP-5622026671390f0b",
+        "SUP-0dafde505487e2cf"
       ]
     },
     {
-      "claim_id": "C022",
+      "claim_id": "C019",
       "locator": "sections[1].paragraphs[1]",
       "start": 482,
       "end": 504,
       "claim_text": "Personne ne vit ainsi.",
       "normalized_claim": "Aucune personne réelle ne correspond à cette figure.",
       "support_ids": [
-        "SUP-592abc185c632c6c"
+        "SUP-592abc185c632c6c",
+        "SUP-7bbb64b8087d9ec5"
       ]
     },
     {
-      "claim_id": "C023",
+      "claim_id": "C020",
       "locator": "sections[1].paragraphs[1]",
       "start": 505,
       "end": 591,
       "claim_text": "La question n’est donc pas qui est ce travailleur, mais qui peut en approcher le plus.",
-      "normalized_claim": "La question pertinente est de savoir qui s'approche le plus de cette figure.",
+      "normalized_claim": "La question pertinente est celle de la figure réelle qui s'approche le plus du travailleur désincarné.",
       "support_ids": [
         "SUP-592abc185c632c6c"
       ]
     },
     {
-      "claim_id": "C024",
+      "claim_id": "C021",
       "locator": "sections[2].paragraphs[0]",
       "start": 0,
       "end": 77,
       "claim_text": "La réponse d’Acker est explicite, et plus étroite qu’on ne le répète souvent.",
-      "normalized_claim": "La formulation d'Acker est plus étroite que sa reprise courante.",
+      "normalized_claim": "La formulation d'Acker est plus restreinte que la lecture courante qu'on en fait.",
       "support_ids": [
         "SUP-7bbb64b8087d9ec5",
+        "SUP-ac2eeafefb291bdf",
         "SUP-af8c4d9024c58282"
       ]
     },
     {
-      "claim_id": "C025",
+      "claim_id": "C022",
       "locator": "sections[2].paragraphs[0]",
       "start": 78,
       "end": 347,
       "claim_text": "La figure réelle dont le travailleur désincarné se rapproche le plus, écrit-elle, c’est le travailleur masculin dont la vie est centrée sur son emploi à plein temps et à vie, pendant que sa femme ou une autre femme prend en charge ses besoins personnels et ses enfants.",
-      "normalized_claim": "Acker écrit que la figure réelle la plus proche est le travailleur masculin dont la vie est centrée sur son emploi à plein temps et à vie, sa femme ou une autre femme prenant en charge ses besoins personnels et ses enfants.",
+      "normalized_claim": "Attribution à Acker de la phrase sur le travailleur masculin dont la femme ou une autre femme assure les besoins personnels et les enfants.",
       "support_ids": [
         "SUP-592abc185c632c6c",
         "SUP-0dafde505487e2cf",
-        "SUP-c0f9faa389693089"
+        "SUP-901753c33186935e"
       ]
     },
     {
-      "claim_id": "C026",
+      "claim_id": "C023",
       "locator": "sections[2].paragraphs[0]",
       "start": 348,
       "end": 601,
       "claim_text": "Elle ajoute aussitôt que les conditions de vie du capitalisme industriel n’ont jamais permis à tous les hommes de vivre ainsi : c’était un objectif syndical et l’image du travailleur dans la théorie sociale et économique, non une description des hommes.",
-      "normalized_claim": "Acker ajoute que le capitalisme industriel n'a jamais permis à tous les hommes de vivre ainsi : c'était un objectif syndical et l'image du travailleur dans la théorie sociale et économique.",
+      "normalized_claim": "Attribution à Acker de la restriction immédiate : objectif syndical et image théorique, jamais accessible à tous les hommes.",
       "support_ids": [
         "SUP-592abc185c632c6c",
         "SUP-7bbb64b8087d9ec5",
@@ -379,7 +357,7 @@
       ]
     },
     {
-      "claim_id": "C027",
+      "claim_id": "C024",
       "locator": "sections[2].paragraphs[1]",
       "start": 44,
       "end": 173,
@@ -391,283 +369,268 @@
       ]
     },
     {
-      "claim_id": "C028",
+      "claim_id": "C025",
       "locator": "sections[2].paragraphs[1]",
       "start": 174,
       "end": 307,
       "claim_text": "Un emploi, écrit Acker, contient déjà la division du travail entre les sexes et la séparation entre sphère publique et sphère privée.",
-      "normalized_claim": "Acker écrit qu'un emploi contient déjà la division sexuée du travail et la séparation public/privé.",
+      "normalized_claim": "Attribution à Acker : « A job » contient déjà la division sexuée du travail et la séparation public/privé.",
       "support_ids": [
         "SUP-4e6e5fc0cad480cf",
-        "SUP-7b7800d2a9fda321",
-        "SUP-592abc185c632c6c"
+        "SUP-592abc185c632c6c",
+        "SUP-155cf65c0f4fdd36"
       ]
     },
     {
-      "claim_id": "C029",
+      "claim_id": "C026",
       "locator": "sections[2].paragraphs[1]",
       "start": 308,
       "end": 451,
       "claim_text": "Et la travailleuse dont on suppose qu’elle a des obligations légitimes autres que celles qu’exige le poste ne s’ajuste pas à l’emploi abstrait.",
-      "normalized_claim": "La travailleuse supposée avoir des obligations légitimes autres que celles du poste ne s'ajuste pas à l'emploi abstrait.",
+      "normalized_claim": "La travailleuse supposée avoir d'autres obligations légitimes ne s'ajuste pas à l'emploi abstrait.",
       "support_ids": [
         "SUP-592abc185c632c6c"
       ]
     },
     {
-      "claim_id": "C030",
+      "claim_id": "C027",
       "locator": "sections[2].paragraphs[1]",
       "start": 452,
       "end": 549,
       "claim_text": "Personne n’a eu besoin de l’écarter : elle ne correspond pas à une définition rédigée avant elle.",
-      "normalized_claim": "L'écart ne résulte d'aucun acte d'exclusion : il tient à une définition écrite en amont.",
+      "normalized_claim": "L'exclusion opère sans acte d'exclusion, par non-correspondance à une définition antérieure.",
       "support_ids": [
         "SUP-592abc185c632c6c",
-        "SUP-cbd8ca300fe9306f",
-        "SUP-b13efc13b3e40573"
+        "SUP-b13efc13b3e40573",
+        "SUP-cbd8ca300fe9306f"
       ]
     },
     {
-      "claim_id": "C031",
+      "claim_id": "C028",
       "locator": "sections[3].paragraphs[0]",
       "start": 0,
-      "end": 67,
-      "claim_text": "Les hiérarchies sont faites de la même abstraction que les emplois,",
-      "normalized_claim": "Les hiérarchies reposent sur la même abstraction que les emplois.",
+      "end": 66,
+      "claim_text": "Les hiérarchies sont faites de la même abstraction que les emplois",
+      "normalized_claim": "Les hiérarchies, comme les emplois, sont dépourvues de travailleurs réels et fondées sur des différenciations abstraites.",
       "support_ids": [
         "SUP-8aeec02974ed1981"
       ]
     },
     {
-      "claim_id": "C032",
+      "claim_id": "C029",
       "locator": "sections[3].paragraphs[0]",
       "start": 97,
-      "end": 229,
-      "claim_text": "La logique organisationnelle suppose une congruence entre la responsabilité, la complexité d’un emploi et sa position dans l’échelle",
-      "normalized_claim": "La logique organisationnelle suppose une congruence entre responsabilité, complexité de l'emploi et position hiérarchique.",
-      "support_ids": [
-        "SUP-4077da98012ef715"
-      ]
-    },
-    {
-      "claim_id": "C033",
-      "locator": "sections[3].paragraphs[0]",
-      "start": 232,
-      "end": 410,
-      "claim_text": "un poste plus haut doit être plus complexe et plus responsable qu’un poste plus bas, sans quoi le classement cesserait de paraître raisonnable, aux dirigeants comme aux salariés.",
-      "normalized_claim": "Le classement doit paraître raisonnable aux dirigeants et être accepté comme juste par les salariés.",
-      "support_ids": [
-        "SUP-8aeec02974ed1981",
-        "SUP-4077da98012ef715",
-        "SUP-c7a1b7a4367ab0b1"
-      ]
-    },
-    {
-      "claim_id": "C034",
-      "locator": "sections[3].paragraphs[0]",
-      "start": 453,
-      "end": 751,
-      "claim_text": "Acker le montre sur deux cas : la responsabilité qu’une travailleuse de crèche porte à l’égard d’autres êtres humains, ou la complexité que rencontre une secrétaire au service de six chefs aux humeurs différentes, ne peuvent être comptées que très faiblement, faute de quoi la congruence se défait.",
-      "normalized_claim": "Acker donne deux exemples — la travailleuse de crèche et la secrétaire au service de six chefs — dont la responsabilité et la complexité ne peuvent être comptées que minimalement si la congruence doit être préservée.",
+      "end": 315,
+      "claim_text": "La logique organisationnelle suppose une congruence entre la responsabilité, la complexité d’un emploi et sa position dans l’échelle : un poste plus haut doit être plus complexe et plus responsable qu’un poste plus bas",
+      "normalized_claim": "Règle de congruence responsabilité / complexité / position hiérarchique.",
       "support_ids": [
         "SUP-4077da98012ef715",
         "SUP-ee81aa6c9be00e17"
       ]
     },
     {
-      "claim_id": "C035",
-      "locator": "sections[3].paragraphs[1]",
-      "start": 38,
-      "end": 114,
-      "claim_text": "deux emplois de niveaux différents ne peuvent pas répondre du même résultat.",
-      "normalized_claim": "Seconde règle : deux emplois de niveaux hiérarchiques différents ne peuvent répondre du même résultat.",
+      "claim_id": "C030",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 317,
+      "end": 409,
+      "claim_text": "sans quoi le classement cesserait de paraître raisonnable, aux dirigeants comme aux salariés",
+      "normalized_claim": "Le classement doit paraître raisonnable aux dirigeants et être accepté comme juste par les salariés.",
       "support_ids": [
-        "SUP-4077da98012ef715"
+        "SUP-8aeec02974ed1981",
+        "SUP-c7a1b7a4367ab0b1"
       ]
     },
     {
-      "claim_id": "C036",
+      "claim_id": "C031",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 453,
+      "end": 751,
+      "claim_text": "Acker le montre sur deux cas : la responsabilité qu’une travailleuse de crèche porte à l’égard d’autres êtres humains, ou la complexité que rencontre une secrétaire au service de six chefs aux humeurs différentes, ne peuvent être comptées que très faiblement, faute de quoi la congruence se défait.",
+      "normalized_claim": "Les deux exemples d'Acker : la travailleuse de crèche et la secrétaire au service de six chefs, comptées minimalement pour préserver la congruence.",
+      "support_ids": [
+        "SUP-4077da98012ef715",
+        "SUP-ee81aa6c9be00e17"
+      ]
+    },
+    {
+      "claim_id": "C032",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 38,
+      "end": 113,
+      "claim_text": "deux emplois de niveaux différents ne peuvent pas répondre du même résultat",
+      "normalized_claim": "Seconde règle : deux emplois de niveaux hiérarchiques différents ne peuvent être responsables du même résultat.",
+      "support_ids": [
+        "SUP-4077da98012ef715",
+        "SUP-ee81aa6c9be00e17"
+      ]
+    },
+    {
+      "claim_id": "C033",
       "locator": "sections[3].paragraphs[1]",
       "start": 115,
       "end": 341,
       "claim_text": "Les tâches qu’un responsable délègue à sa secrétaire ne relèvent donc pas le niveau de celle-ci, puisqu’elles restent sous la responsabilité de celui-là, même si c’est elle qui, en pratique, veille à ce qu’elles soient faites.",
-      "normalized_claim": "Les tâches déléguées à la secrétaire ne relèvent pas son niveau, restant sous la responsabilité du manager bien qu'elle en assure l'exécution.",
+      "normalized_claim": "Exemple d'Acker : les tâches déléguées à la secrétaire ne relèvent pas son niveau, la responsabilité restant au manager.",
       "support_ids": [
         "SUP-4077da98012ef715"
       ]
     },
     {
-      "claim_id": "C037",
+      "claim_id": "C034",
       "locator": "sections[3].paragraphs[1]",
       "start": 388,
-      "end": 626,
-      "claim_text": "sur l’idée que les personnes entièrement disponibles pour un emploi rémunéré sont naturellement plus aptes à la responsabilité et à l’autorité, et que celles qui doivent partager leurs engagements ont leur place dans les rangs inférieurs.",
-      "normalized_claim": "La hiérarchie repose sur l'hypothèse que les personnes engagées à plein dans l'emploi rémunéré sont « naturellement » plus aptes à la responsabilité et à l'autorité, et que celles qui partagent leurs engagements sont dans les rangs inférieurs.",
+      "end": 625,
+      "claim_text": "sur l’idée que les personnes entièrement disponibles pour un emploi rémunéré sont naturellement plus aptes à la responsabilité et à l’autorité, et que celles qui doivent partager leurs engagements ont leur place dans les rangs inférieurs",
+      "normalized_claim": "Présupposés sur lesquels la hiérarchie genrée est construite (p. 149-150).",
       "support_ids": [
         "SUP-391af1ba1d84a5a7"
       ]
     },
     {
-      "claim_id": "C038",
+      "claim_id": "C035",
       "locator": "sections[3].paragraphs[1]",
       "start": 627,
       "end": 699,
       "claim_text": "Le critère qui trie ne nomme jamais un sexe. Il nomme une disponibilité.",
-      "normalized_claim": "Le critère de tri est la disponibilité, jamais le sexe.",
+      "normalized_claim": "Le critère de tri est la disponibilité et non le sexe.",
       "support_ids": [
         "SUP-391af1ba1d84a5a7",
         "SUP-5622026671390f0b"
       ]
     },
     {
-      "claim_id": "C039",
+      "claim_id": "C036",
       "locator": "sections[4].paragraphs[0]",
       "start": 0,
       "end": 58,
       "claim_text": "Rien de tout cela ne porte sur les intentions de quiconque",
-      "normalized_claim": "Le mécanisme décrit ne porte pas sur les intentions individuelles.",
+      "normalized_claim": "Le mécanisme décrit ne porte pas sur des intentions individuelles.",
       "support_ids": [
         "SUP-cbd8ca300fe9306f",
-        "SUP-4077da98012ef715"
+        "SUP-9d7828ab548c2465"
       ]
     },
     {
-      "claim_id": "C040",
+      "claim_id": "C037",
       "locator": "sections[4].paragraphs[0]",
       "start": 111,
       "end": 207,
       "claim_text": "les deux manières de chercher n’examinent pas le même objet et ne concluent pas de la même façon",
-      "normalized_claim": "Chercher un préjugé et examiner une définition de poste n'examinent pas le même objet et ne concluent pas de la même façon.",
+      "normalized_claim": "Examiner les définitions de poste et examiner des décisions individuelles ne portent pas sur le même objet.",
       "support_ids": [
         "SUP-cbd8ca300fe9306f",
-        "SUP-f6ef49b46f6be444"
+        "SUP-b13efc13b3e40573"
       ]
     },
     {
-      "claim_id": "C041",
+      "claim_id": "C038",
       "locator": "sections[4].paragraphs[0]",
       "start": 209,
-      "end": 406,
-      "claim_text": "Chercher un préjugé conduit à reprendre des décisions une à une, un recrutement, une promotion, une évaluation, pour se demander si chacune était justifiée ; on peut les trouver toutes défendables.",
-      "normalized_claim": "La recherche d'un préjugé procède décision par décision et peut les trouver toutes défendables.",
-      "support_ids": []
-    },
-    {
-      "claim_id": "C042",
-      "locator": "sections[4].paragraphs[0]",
-      "start": 407,
-      "end": 572,
+      "end": 374,
       "claim_text": "Examiner une définition de poste conduit à lire un texte écrit avant toute candidature, et le constat tient même lorsque aucune décision individuelle n’est en cause.",
-      "normalized_claim": "L'examen d'une définition de poste porte sur un texte antérieur à toute candidature et vaut même sans décision individuelle en cause.",
+      "normalized_claim": "La définition de poste est un texte antérieur à toute candidature ; le constat ne dépend d'aucune décision individuelle.",
       "support_ids": [
         "SUP-b13efc13b3e40573",
+        "SUP-ebafe5325b887a6e",
         "SUP-cbd8ca300fe9306f"
       ]
     },
     {
-      "claim_id": "C043",
-      "locator": "sections[4].paragraphs[0]",
-      "start": 573,
-      "end": 618,
-      "claim_text": "Les deux démarches ne se remplacent donc pas.",
-      "normalized_claim": "Les deux démarches ne sont pas substituables.",
-      "support_ids": []
-    },
-    {
-      "claim_id": "C044",
+      "claim_id": "C039",
       "locator": "sections[4].paragraphs[1]",
       "start": 0,
       "end": 76,
       "claim_text": "Acker en tire une conséquence qui ferme la porte aux corrections partielles.",
-      "normalized_claim": "Acker ferme la porte aux corrections partielles.",
+      "normalized_claim": "Acker écarte explicitement les remèdes correctifs partiels.",
       "support_ids": [
-        "SUP-33ad393b58607c0b",
         "SUP-0f2ed0b6f009c7b2",
+        "SUP-33ad393b58607c0b",
         "SUP-b0cbf5007035b0b8"
       ]
     },
     {
-      "claim_id": "C045",
+      "claim_id": "C040",
       "locator": "sections[4].paragraphs[1]",
       "start": 77,
       "end": 245,
       "claim_text": "Ces notions ordinaires, l’emploi et le poste, ne sont pas selon elle une erreur qu’il suffirait de rectifier : elles font partie des processus par lesquels on organise.",
-      "normalized_claim": "Selon Acker, ces notions ordinaires ne sont pas une simple erreur à rectifier mais font partie des processus d'organisation.",
+      "normalized_claim": "Attribution à Acker : ces notions de sens commun ne sont pas une simple erreur mais font partie des processus d'organisation.",
       "support_ids": [
         "SUP-0f2ed0b6f009c7b2",
-        "SUP-b0cbf5007035b0b8",
-        "SUP-71b9096cc3f95c5a"
+        "SUP-71b9096cc3f95c5a",
+        "SUP-b0cbf5007035b0b8"
       ]
     },
     {
-      "claim_id": "C046",
+      "claim_id": "C041",
       "locator": "sections[4].paragraphs[1]",
       "start": 246,
-      "end": 396,
-      "claim_text": "Le seul remède qu’elle examine de près, la cotation des postes employée par les campagnes d’équité salariale, reproduit les classements déjà en place,",
-      "normalized_claim": "Le seul dispositif correctif qu'elle examine — la cotation des postes du comparable worth — reproduit les classements déjà en place.",
+      "end": 395,
+      "claim_text": "Le seul remède qu’elle examine de près, la cotation des postes employée par les campagnes d’équité salariale, reproduit les classements déjà en place",
+      "normalized_claim": "Le seul dispositif correctif examiné, l'évaluation des emplois du comparable worth, réplique les classements existants.",
       "support_ids": [
         "SUP-f503f8298553e3b2",
+        "SUP-b939a29085236162",
         "SUP-226aad3b63a3d6da",
-        "SUP-b939a29085236162"
+        "SUP-33ad393b58607c0b"
       ]
     },
     {
-      "claim_id": "C047",
+      "claim_id": "C042",
       "locator": "sections[4].paragraphs[1]",
       "start": 397,
-      "end": 478,
-      "claim_text": "et chaque usage de l’outil recrée ou renforce la structure qu’il devait corriger.",
-      "normalized_claim": "Chaque usage de l'évaluation des emplois crée ou renforce cette structure.",
+      "end": 477,
+      "claim_text": "et chaque usage de l’outil recrée ou renforce la structure qu’il devait corriger",
+      "normalized_claim": "Chaque usage de l'évaluation des emplois crée ou renforce la structure.",
       "support_ids": [
         "SUP-cd08bde4c28fb595",
-        "SUP-226aad3b63a3d6da"
+        "SUP-33ad393b58607c0b"
       ]
     },
     {
-      "claim_id": "C048",
+      "claim_id": "C043",
       "locator": "sections[4].paragraphs[1]",
       "start": 479,
-      "end": 712,
-      "claim_text": "La condition de sortie qu’elle formule est d’un tout autre ordre : dissoudre l’emploi abstrait et rendre sa place au corps féminin absent, ce qui supposerait, écrit-elle, la fin des organisations telles qu’elles existent aujourd’hui.",
-      "normalized_claim": "La seule condition de disparition qu'elle formule est de dissoudre l'emploi abstrait et de restaurer le corps féminin absent, ce qui exigerait la fin des organisations telles qu'elles existent.",
+      "end": 723,
+      "claim_text": "La condition de sortie qu’elle formule est d’un tout autre ordre : dissoudre l’emploi abstrait et rendre sa place au corps féminin absent, ce qui exigerait probablement, écrit-elle, la fin des organisations telles qu’elles existent aujourd’hui.",
+      "normalized_claim": "Condition de disparition formulée par Acker : dissoudre l'emploi abstrait, restaurer le corps féminin absent, ce qui exigerait probablement la fin des organisations actuelles.",
       "support_ids": [
         "SUP-bf13b34dadb4ce80",
         "SUP-0f2ed0b6f009c7b2"
       ]
     },
     {
-      "claim_id": "C049",
+      "claim_id": "C044",
       "locator": "sections[5].paragraphs[0]",
       "start": 0,
       "end": 68,
       "claim_text": "L’article de 1990 ne traite pas tout ce qu’il soulève, et il le dit.",
-      "normalized_claim": "L'article de 1990 laisse explicitement ouvertes des questions qu'il soulève.",
+      "normalized_claim": "L'article de 1990 laisse explicitement des questions non traitées.",
       "support_ids": [
         "SUP-08c833904e913fc3",
         "SUP-be25d13b9339231c",
-        "SUP-14862f870f54b724"
+        "SUP-c24bf9a0571f9e6b"
       ]
     },
     {
-      "claim_id": "C050",
+      "claim_id": "C045",
       "locator": "sections[5].paragraphs[0]",
       "start": 69,
-      "end": 131,
-      "claim_text": "Acker y met la classe de côté pour se concentrer sur le genre,",
-      "normalized_claim": "Acker met explicitement la classe de côté pour se concentrer sur le genre.",
+      "end": 130,
+      "claim_text": "Acker y met la classe de côté pour se concentrer sur le genre",
+      "normalized_claim": "Acker met explicitement la classe de côté pour se concentrer sur le genre (p. 146).",
       "support_ids": [
         "SUP-be25d13b9339231c",
         "SUP-14862f870f54b724"
       ]
     },
     {
-      "claim_id": "C051",
+      "claim_id": "C046",
       "locator": "sections[5].paragraphs[0]",
-      "start": 132,
+      "start": 135,
       "end": 400,
-      "claim_text": "et referme sa section sur le contrôle par des questions qu’elle laisse en suspens : le travailleur abstrait est-il blanc autant qu’il est masculin ? les différences raciales sont-elles produites par les pratiques d’organisation comme le sont les différences de genre ?",
-      "normalized_claim": "Acker clôt sa section sur le contrôle par des questions ouvertes sur le caractère blanc du travailleur abstrait et sur la production des différences raciales par les pratiques d'organisation.",
+      "claim_text": "referme sa section sur le contrôle par des questions qu’elle laisse en suspens : le travailleur abstrait est-il blanc autant qu’il est masculin ? les différences raciales sont-elles produites par les pratiques d’organisation comme le sont les différences de genre ?",
+      "normalized_claim": "Les questions ouvertes sur la race closent la section sur le contrôle (p. 154).",
       "support_ids": [
         "SUP-08c833904e913fc3",
         "SUP-5cca00ad711d0c42",
@@ -675,21 +638,32 @@
       ]
     },
     {
-      "claim_id": "C052",
+      "claim_id": "C047",
       "locator": "sections[5].paragraphs[0]",
       "start": 401,
-      "end": 608,
-      "claim_text": "Seize ans plus tard, elle reprend ce programme dans « Inequality Regimes: Gender, Class, and Race in Organizations », qu’elle présente comme une reprise de son argument, augmentée de la classe et de la race.",
-      "normalized_claim": "Seize ans plus tard, Acker reprend ce programme dans « Inequality Regimes », qu'elle présente comme une reprise de son argument augmentée de la classe et de la race.",
+      "end": 517,
+      "claim_text": "Seize ans plus tard, elle reprend ce programme dans « Inequality Regimes: Gender, Class, and Race in Organizations »",
+      "normalized_claim": "En 2006, seize ans après 1990, Acker reprend ce programme dans « Inequality Regimes ».",
       "support_ids": [
         "SUP-08c833904e913fc3",
-        "SUP-e8360e0bee462a99",
         "SUP-15e4c9d944d50b8d",
         "SUP-71f843282b8cf245"
       ]
     },
     {
-      "claim_id": "C053",
+      "claim_id": "C048",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 519,
+      "end": 607,
+      "claim_text": "qu’elle présente comme une reprise de son argument, augmentée de la classe et de la race",
+      "normalized_claim": "Acker présente elle-même le texte de 2006 comme une reconceptualisation de son argument antérieur avec ajout de la classe et de la race.",
+      "support_ids": [
+        "SUP-e8360e0bee462a99",
+        "SUP-be25d13b9339231c"
+      ]
+    },
+    {
+      "claim_id": "C049",
       "locator": "sections[5].paragraphs[1]",
       "start": 0,
       "end": 84,
@@ -701,58 +675,47 @@
       ]
     },
     {
-      "claim_id": "C054",
+      "claim_id": "C050",
       "locator": "sections[5].paragraphs[1]",
       "start": 85,
       "end": 199,
       "claim_text": "Le travail reste organisé sur le modèle de l’homme sans entraves, et femmes comme hommes sont censés s’y conformer",
-      "normalized_claim": "Le travail reste organisé sur le modèle de l'homme sans entraves, auquel femmes et hommes sont censés se conformer.",
+      "normalized_claim": "Acker 2006 : le travail est organisé sur le modèle de l'« unencumbered (white) man », auquel femmes et hommes sont censés se conformer.",
       "support_ids": [
-        "SUP-e8360e0bee462a99"
+        "SUP-e8360e0bee462a99",
+        "SUP-bd18cc5b00109779"
       ]
     },
     {
-      "claim_id": "C055",
+      "claim_id": "C051",
       "locator": "sections[5].paragraphs[1]",
       "start": 202,
-      "end": 307,
-      "claim_text": "mais il ne s’ensuit pas, écrit-elle, que les hommes soient les travailleurs idéaux pour tous les emplois.",
-      "normalized_claim": "Acker écrit qu'il ne s'ensuit pas que les hommes soient les travailleurs idéaux pour tous les emplois.",
+      "end": 306,
+      "claim_text": "mais il ne s’ensuit pas, écrit-elle, que les hommes soient les travailleurs idéaux pour tous les emplois",
+      "normalized_claim": "Acker 2006 : les hommes ne sont pas nécessairement les travailleurs idéaux pour tous les emplois.",
       "support_ids": [
         "SUP-e8360e0bee462a99",
         "SUP-7bbb64b8087d9ec5"
       ]
     },
     {
-      "claim_id": "C056",
+      "claim_id": "C052",
       "locator": "sections[5].paragraphs[1]",
       "start": 308,
       "end": 466,
       "claim_text": "Pour beaucoup de postes, le travailleur idéal est une femme, dont les employeurs attendent qu’elle soit docile, qu’elle accepte les ordres et de bas salaires.",
-      "normalized_claim": "Pour beaucoup de postes, le travailleur idéal est une femme dont les employeurs attendent docilité, acceptation des ordres et de bas salaires.",
-      "support_ids": [
-        "SUP-e8360e0bee462a99",
-        "SUP-7bbb64b8087d9ec5"
-      ]
-    },
-    {
-      "claim_id": "C057",
-      "locator": "sections[5].paragraphs[1]",
-      "start": 467,
-      "end": 628,
-      "claim_text": "Une définition de poste ne trie donc pas partout dans le même sens : elle trie selon ce qu’elle suppose, et toutes ne supposent pas la disponibilité sans limite.",
-      "normalized_claim": "Une définition de poste trie selon ce qu'elle suppose, et toutes ne supposent pas une disponibilité sans limite.",
+      "normalized_claim": "Acker 2006 : pour beaucoup d'emplois, le travailleur idéal est une femme que les employeurs croient docile, acceptant les ordres et de bas salaires.",
       "support_ids": [
         "SUP-e8360e0bee462a99"
       ]
     },
     {
-      "claim_id": "C058",
+      "claim_id": "C053",
       "locator": "sections[5].paragraphs[2]",
       "start": 0,
       "end": 69,
       "claim_text": "Le débat qui a suivi porte moins sur la thèse que sur son inventaire.",
-      "normalized_claim": "Le débat de réception porte sur l'inventaire des mécanismes plus que sur la thèse.",
+      "normalized_claim": "Le débat de réception porte sur l'inventaire des mécanismes, non sur la thèse.",
       "support_ids": [
         "SUP-482db35f18b61ef5",
         "SUP-3a0dc8885c599a83",
@@ -760,56 +723,69 @@
       ]
     },
     {
-      "claim_id": "C059",
+      "claim_id": "C054",
       "locator": "sections[5].paragraphs[2]",
       "start": 70,
       "end": 120,
       "claim_text": "Trois sociologues qui ont repris l’analyse en 2012",
-      "normalized_claim": "Trois sociologues ont repris l'analyse d'Acker en 2012.",
+      "normalized_claim": "Williams, Muller et Kilanski, trois sociologues, reprennent l'analyse d'Acker en 2012.",
       "support_ids": [
         "SUP-a521e159be218bd3",
-        "SUP-e2f18c253d2f2ba7",
+        "SUP-7ee4a08873c95f96",
         "SUP-5f97cc76d5ab0133",
-        "SUP-7a39812a7ece4071"
+        "SUP-e2f18c253d2f2ba7"
       ]
     },
     {
-      "claim_id": "C060",
+      "claim_id": "C055",
       "locator": "sections[5].paragraphs[2]",
       "start": 121,
       "end": 354,
       "claim_text": "font observer que les mécanismes décrits en 1990 supposent un monde de fiches de poste standardisées, d’échelons de carrière et d’évaluations tenues par la hiérarchie, traits qui ne caractérisent plus une part du travail contemporain",
-      "normalized_claim": "Elles observent que les mécanismes de 1990 supposent fiches de poste standardisées, échelons de carrière et évaluations hiérarchiques, traits qui ne caractérisent plus une part du travail contemporain.",
+      "normalized_claim": "Williams et al. 2012 : les mécanismes de 1990 supposent fiches de poste standardisées, échelons de carrière et évaluations managériales, traits absents des emplois de la nouvelle économie.",
       "support_ids": [
+        "SUP-3a0dc8885c599a83",
         "SUP-e2f18c253d2f2ba7",
-        "SUP-54d804fcf20bc127",
+        "SUP-54d804fcf20bc127"
+      ]
+    },
+    {
+      "claim_id": "C056",
+      "locator": "sections[5].paragraphs[2]",
+      "start": 357,
+      "end": 479,
+      "claim_text": "les organisations restent genrées, écrivent-elles, mais ce ne sont plus les mêmes mécanismes qui y reproduisent les écarts",
+      "normalized_claim": "Williams et al. 2012 : les organisations restent genrées, mais les mécanismes de reproduction des écarts ont changé.",
+      "support_ids": [
+        "SUP-482db35f18b61ef5",
+        "SUP-3a0dc8885c599a83",
+        "SUP-e2f18c253d2f2ba7"
+      ]
+    },
+    {
+      "claim_id": "C057",
+      "locator": "sections[5].paragraphs[2]",
+      "start": 481,
+      "end": 534,
+      "claim_text": "La question de 1990 se déplace alors sans disparaître",
+      "normalized_claim": "La question posée en 1990 se déplace sans être invalidée.",
+      "support_ids": [
+        "SUP-482db35f18b61ef5",
         "SUP-3a0dc8885c599a83"
       ]
     },
     {
-      "claim_id": "C061",
-      "locator": "sections[5].paragraphs[2]",
-      "start": 357,
-      "end": 480,
-      "claim_text": "les organisations restent genrées, écrivent-elles, mais ce ne sont plus les mêmes mécanismes qui y reproduisent les écarts.",
-      "normalized_claim": "Elles écrivent que les organisations restent genrées mais que les mécanismes de reproduction des écarts ne sont plus les mêmes.",
-      "support_ids": [
-        "SUP-e2f18c253d2f2ba7",
-        "SUP-482db35f18b61ef5"
-      ]
-    },
-    {
-      "claim_id": "C062",
+      "claim_id": "C058",
       "locator": "sections[5].paragraphs[2]",
       "start": 636,
-      "end": 716,
-      "claim_text": "Acker la pose en anglais, et c’est dans cette langue qu’il faudra aller la lire.",
-      "normalized_claim": "Le texte d'Acker est en anglais et doit être lu dans cette langue (aucune traduction française identifiée).",
+      "end": 707,
+      "claim_text": "Acker la pose en anglais, et c’est son article qu’il faudra aller lire.",
+      "normalized_claim": "L'article d'Acker est en anglais ; aucune traduction française publiée n'a été identifiée.",
       "support_ids": [
-        "SUP-a47dfce99fc542a6",
-        "SUP-66f6cdde6603e275",
         "SUP-561772a7977fe47e",
-        "SUP-2dbb7ec9af398828"
+        "SUP-a47dfce99fc542a6",
+        "SUP-51fdd266d79284b1",
+        "SUP-8c17788734699862"
       ]
     }
   ]

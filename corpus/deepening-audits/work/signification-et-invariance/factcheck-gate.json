@@ -1,17 +1,17 @@
 {
   "protocol_version": 1,
   "concept_id": "signification-et-invariance",
-  "candidate_sha256": "41e2b1d2b68b0c21aceb9285c72e8949e813d882cd2f67b5b940a8edd744e399",
+  "candidate_sha256": "97999fb8252a689484e703d2b89e5ef75ab064c8338e7e3c95b756ca311b0791",
   "verdict": "FACTCHECK_FAIL",
-  "claims": 55,
-  "supported": 54,
+  "claims": 58,
+  "supported": 57,
   "failed": 1,
   "structural_errors": [],
   "failures": [
     {
-      "claim_id": "C016",
+      "claim_id": "C030",
       "verdict": "TOO_STRONG",
-      "reason": "Le seul support résolu (SUP-ea63ac6a) établit que « admissible » désigne les transformations autorisées par le type d'échelle ; il n'établit ni la classe des transformations admissibles pour une échelle de température, ni que la mise au carré ne correspondrait « à rien ». La prudence de la phrase précédente (« rien ne dit que ») devient ici une assertion catégorique non autorisée : absence de preuve traitée comme preuve."
+      "reason": "Aucun support n'établit que les transformations d'échelle admissibles préservent l'ordre des mesures ; seuls figurent les quatre nombres de l'exemple Fahrenheit/Celsius. La phrase énonce au présent général une propriété de tout passage d'échelle à partir d'un seul cas, et fournit une justification de la signification de l'exemple 2 que les supports ne donnent pas."
     }
   ]
 }

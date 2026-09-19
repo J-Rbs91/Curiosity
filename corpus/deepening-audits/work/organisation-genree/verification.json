@@ -1,316 +1,296 @@
 {
   "concept_id": "organisation-genree",
-  "candidate_sha256": "5574e2a5a7231ed794f3bd3719e3427bb5877698791386efa6be8370e2a9ef8a",
+  "candidate_sha256": "e76f77a8d8cf685a1d5051bc214c6e83b972f40879d1f65b0a559481b6cc3f2a",
   "results": [
     {
       "claim_id": "C001",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support résolu. Énoncé empirique général sur la rédaction des offres d'emploi réelles (fréquence : « rarement »), présenté comme un fait du monde ; l'absence de preuve ne l'autorise pas."
+      "verdict": "SUPPORTED",
+      "reason": "mechanism[8] donne « Such a hypothetical worker cannot have other imperatives of existence that impinge upon the job » et « Too many obligations outside the boundaries of the job would make a worker unsuited for the position » (p. 149) ; la disponibilite sans obstacle exterieur est exactement ce que le support pose comme presuppose de l'emploi abstrait, sans ajout de portee."
     },
     {
       "claim_id": "C002",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support résolu. Description générale de ce que demandent les offres d'emploi, présentée comme réelle (compétences, disponibilité, déplacement sans préavis) ; rien dans le bundle ne l'établit."
+      "verdict": "SUPPORTED",
+      "reason": "Les supports validated ($.authors[0].name, $.sources[0].label) et la citation de lecture primaire etablissent l'autrice, l'article de 1990 sur les organisations de travail, sa publication dans Gender & Society et sa communication a l'American Sociological Association ; l'enonce reste descriptif."
     },
     {
       "claim_id": "C003",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[10] et conditions.intensified_by[3] établissent que l'exclusion ne prend jamais la forme d'un critère de sexe mais d'un critère de disponibilité (p. 149-150) ; le claim se borne à constater qu'aucun sexe n'est nommé dans la liste."
+      "reason": "concept_definition et mechanism[1] citent verbatim le refus de l'ajout exterieur : « Gender is not an addition to ongoing processes, conceived as gender neutral » (p. 146) et « gendered attitudes and behavior are brought into (and contaminate) essentially gender-neutral structures » comme position combattue (p. 142)."
     },
     {
       "claim_id": "C004",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[8] cite p. 149 : « Such a hypothetical worker cannot have other imperatives of existence that impinge upon the job […] Too many obligations outside the boundaries of the job would make a worker unsuited for the position » ; le claim reformule exactement cette présupposition de disponibilité, sans ajout de portée."
+      "reason": "Le support porte verbatim « A job » already contains the gender-based division of labor (p. 149) et « A job is separate from people. It is an empty slot […] until people fill them » (p. 148) : l'anteriorite de la definition du poste sur le recrutement est etablie."
     },
     {
       "claim_id": "C005",
       "verdict": "SUPPORTED",
-      "reason": "validated $.authors[0].name donne « Joan Acker », attribution SOLE_AUTHOR, et la source secondaire la qualifie de « Feminist sociologist […] one of the first to theorize how gender gets institutionalized in organizations and workplaces » : qualité de sociologue et objet (organisations de travail) couverts."
+      "reason": "mechanism[4] et conditions.appears_when[1] etablissent le dispositif documentaire (« written work rules, labor contracts, managerial directives, and other documentary tools […] including systems of job evaluation », p. 147) ; common_misinterpretations[0] etablit que sa these porte sur des objets ecrits et non sur les attitudes et comportements."
     },
     {
       "claim_id": "C006",
       "verdict": "SUPPORTED",
-      "reason": "concept_definition et mechanism[1] citent p. 142 la position qu'Acker refuse explicitement (« gendered attitudes and behavior are brought into (and contaminate) essentially gender-neutral structures ») ; le claim énonce ce refus sans le durcir."
+      "reason": "Enumeration reprise du support (p. 147) ; la cotation par points et son usage salarial sont etablis par mechanism[11] (« receive more points », p. 150), par mechanism[4] (« to rationalize the organizational hierarchy and to help in setting equitable wages », p. 147) et par la note de traduction sur les systemes de cotation analytique."
     },
     {
       "claim_id": "C007",
       "verdict": "SUPPORTED",
-      "reason": "Citation verbatim p. 149 : « \"A job\" already contains the gender-based division of labor… » et mechanism[5] : l'emploi tient sur le papier avant d'être occupé ; le résumé validé dit la même chose."
+      "reason": "« I base the following theoretical discussion on my observations of organizational logic in action in the job-evaluation component of a comparable-worth project » (p. 147) ; la note de traduction sur le comparable worth couvre le rendu par projet d'equite salariale, et known_ambiguities[0] confirme que c'est la seule base empirique declaree."
     },
     {
       "claim_id": "C008",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[4] et conditions.appears_when[1] : la logique est repérable dans des supports documentaires (règles écrites, contrats, directives, systèmes d'évaluation, p. 147) ; common_misinterpretations[0].why_wrong précise que la thèse porte sur des objets écrits et non intentionnels, par opposition aux attitudes et comportements."
+      "reason": "« Job evaluation evaluates jobs, not their incumbents » (p. 148) est verbatim dans mechanism[5] ; mechanism[4] etablit pourquoi ce dispositif est un revelateur."
     },
     {
       "claim_id": "C009",
       "verdict": "SUPPORTED",
-      "reason": "Liste verbatim p. 147 (« written work rules, labor contracts, managerial directives […] systems of job evaluation ») ; l'attribution de points et la fonction salariale sont établies par mechanism[11] (« receive more points ») et mechanism[4] (« to help in setting equitable wages »)."
+      "reason": "« It is an empty slot » (p. 148), present dans deux supports."
     },
     {
       "claim_id": "C010",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[4] cite p. 147 : « I base the following theoretical discussion on my observations of organizational logic in action in the job-evaluation component of a comparable-worth project » ; translation_notes[5] glose comparable worth par l'équité salariale."
+      "reason": "Traduction fidele de « a description of a set of tasks, competencies, and responsibilities represented as a position on an organizational chart. A job is separate from people […] positions exist only as scraps of paper until people fill them » (p. 148)."
     },
     {
       "claim_id": "C011",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[5] cite p. 148 : « Job evaluation evaluates jobs, not their incumbents » ; mechanism[4] justifie la valeur de révélateur de ces systèmes."
+      "reason": "« Human beings are to be motivated, managed, and chosen to fit the job. The job exists as a thing apart » (p. 148) ; l'inversion enoncee par le claim est celle du support, sans renforcement."
     },
     {
       "claim_id": "C012",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim p. 148 : « It is an empty slot »."
+      "reason": "« Gender is a constitutive element in organizational logic, or the underlying assumptions and practices that construct most contemporary work organizations » (p. 147) ; le claim ne fait que nommer la notion."
     },
     {
       "claim_id": "C013",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim p. 148 : « a description of a set of tasks, competencies, and responsibilities represented as a position on an organizational chart. A job is separate from people […] positions exist only as scraps of paper until people fill them »."
+      "reason": "concept_definition situe la demonstration dans la logique organisationnelle ; known_ambiguities[1] precise que l'article traite ce cinquieme processus, et la source de reception confirme que la logique organisationnelle etait au centre de la critique d'Acker."
     },
     {
       "claim_id": "C014",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim p. 148 : « Human beings are to be motivated, managed, and chosen to fit the job. The job exists as a thing apart »."
+      "reason": "L'expression abstract job figure verbatim dans mechanism[8] (p. 149) ; la note de traduction confirme le sens technique de job comme case du poste."
     },
     {
       "claim_id": "C015",
       "verdict": "SUPPORTED",
-      "reason": "concept_definition cite p. 147 : « organizational logic, or the underlying assumptions and practices that construct most contemporary work organizations » ; « la plupart » correspond à « most »."
+      "reason": "Le texte cite est identique au champ $.quotation.text du dossier valide et au fragment fr de key_quotation ; le locator p. 149 et la source de 1990 sont donnes par les supports validated."
     },
     {
       "claim_id": "C016",
       "verdict": "SUPPORTED",
-      "reason": "concept_definition situe la démonstration dans la logique organisationnelle ; la source secondaire confirme : « The latter process—organizational logic—was at the center of Acker's original critique »."
+      "reason": "« both jobs and hierarchies are abstract categories that have no occupants, no human bodies, no gender. However, an abstract job […] only if there is a worker » (p. 149), complete par mechanism[9] sur le seul corps reel qui s'en approche."
     },
     {
       "claim_id": "C017",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[8] cite « the abstract job » (p. 149) comme nom de la catégorie vide ; translation_notes[1] fixe le rendu français « l'emploi abstrait »."
+      "reason": "Enumeration illustrative couverte par « cannot have other imperatives of existence that impinge upon the job » (p. 149) et par « The abstract, bodiless worker […] has no sexuality, no emotions, and does not procreate » (p. 151) ; elle est presentee comme glose du sens de l'autrice, sans attribution de formulation."
     },
     {
       "claim_id": "C018",
       "verdict": "SUPPORTED",
-      "reason": "La phrase française est strictement celle de validated $.quotation.text et du fragment de lecture primaire ; l'original « In organizational logic, filling the abstract job is a disembodied worker who exists only for the work » est daté p. 149 d'un article de 1990 (validated $.sources[0].label)."
+      "reason": "Traduction fidele des deux phrases de la p. 149 presentes dans mechanism[8] et dans key_quotation.text."
     },
     {
       "claim_id": "C019",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[8] cite p. 149 : « abstract categories that have no occupants, no human bodies, no gender. However, an abstract job […] only if there is a worker », et conclut que la catégorie présuppose une vie."
+      "reason": "mechanism[9] pose la figure comme celle dont « The closest the disembodied worker […] comes to a real worker is the male worker […] », donc sans incarnation reelle, et common_misinterpretations[2] rappelle que « the realities of life in industrial capitalism never allowed all men to live out this ideal » (p. 149)."
     },
     {
       "claim_id": "C020",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[12] cite p. 151 : « The abstract, bodiless worker […] has no sexuality, no emotions, and does not procreate » ; mechanism[8] écarte tout « imperative of existence » extérieur. Les illustrations (enfant malade, repas, grossesse, fatigue) restent à l'intérieur de ce que les supports autorisent, et le claim les donne explicitement « au sens où l'entend l'autrice »."
+      "reason": "Reformulation exacte de « The closest the disembodied worker doing the abstract job comes to a real worker is… » (p. 149)."
     },
     {
       "claim_id": "C021",
       "verdict": "SUPPORTED",
-      "reason": "Traduction fidèle des deux phrases citées p. 149 (« cannot have other imperatives of existence that impinge upon the job » ; « Too many obligations outside the boundaries of the job would make a worker unsuited for the position »)."
+      "reason": "common_misinterpretations[2] documente la lecture courante (Acker dirait que le travailleur ideal est un homme) et qualifie la formule reelle de plus precise et plus faible ; _pourquoi_ce_passage ajoute la reserve qu'Acker ecrit the male worker et non les hommes."
     },
     {
       "claim_id": "C022",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[9] cite p. 149 : « The closest the disembodied worker doing the abstract job comes to a real worker is… » — formulation qui pose la figure comme non instanciée, le travailleur réel n'en étant que l'approximation la plus proche."
+      "reason": "Traduction fidele de « the male worker whose life centers on his full-time, life-long job, while his wife or another woman takes care of his personal needs and his children » (p. 149), avec le cadrage se rapproche le plus conserve."
     },
     {
       "claim_id": "C023",
       "verdict": "SUPPORTED",
-      "reason": "Même support : la question posée par Acker est celle de la proximité maximale (« The closest […] comes to a real worker »), non celle de l'identité du travailleur."
+      "reason": "« While the realities of life in industrial capitalism never allowed all men to live out this ideal, it was the goal for labor unions and the image of the worker in social and economic theory » (p. 149) ; le claim conserve la restriction au lieu de l'effacer."
     },
     {
       "claim_id": "C024",
       "verdict": "SUPPORTED",
-      "reason": "common_misinterpretations[2] oppose la lecture courante (« Acker dit que le travailleur idéal est un homme ») à la formule d'Acker, qualifiée par la lecture primaire de « plus précise et plus faible »."
+      "reason": "mechanism[9] conclut explicitement que la division sexuee est logee dans la definition du poste, appuye sur le verbatim « A job » already contains […] the separation between the public and the private sphere (p. 149)."
     },
     {
       "claim_id": "C025",
       "verdict": "SUPPORTED",
-      "reason": "key_quotation.original_text, p. 149 : « the male worker whose life centers on his full-time, life-long job, while his wife or another woman takes care of his personal needs and his children » ; l'incise « écrit-elle » correspond à une citation primaire."
+      "reason": "Traduction fidele de la phrase verbatim de la p. 149 fournie en support ; l'attribution a Acker est correcte."
     },
     {
       "claim_id": "C026",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim p. 149 : « While the realities of life in industrial capitalism never allowed all men to live out this ideal, it was the goal for labor unions and the image of the worker in social and economic theory » ; la réserve « non une description des hommes » est celle que porte _pourquoi_ce_passage."
+      "reason": "« The woman worker, assumed to have legitimate obligations other than those required by the job, did not fit with the abstract job » (p. 149) ; le claim conserve le assumed to."
     },
     {
       "claim_id": "C027",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim p. 149 : « \"A job\" already contains the gender-based division of labor and the separation between the public and the private sphere » — la séparation est bien logée dans la définition du poste."
+      "reason": "Consequence qui suit les supports : la definition existe avant les personnes (« positions exist only as scraps of paper until people fill them », p. 148) et la these porte sur des objets non intentionnels (common_misinterpretations[0]) ; aucune intention n'est attribuee a quiconque."
     },
     {
       "claim_id": "C028",
       "verdict": "SUPPORTED",
-      "reason": "Traduction exacte de la même phrase p. 149, avec attribution correcte à Acker (source primaire citée)."
+      "reason": "« Hierarchies, like jobs, are devoid of actual workers and based on abstract differentiations » (p. 148)."
     },
     {
       "claim_id": "C029",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim p. 149 : « The woman worker, assumed to have legitimate obligations other than those required by the job, did not fit with the abstract job »."
+      "reason": "« Organizational logic assumes a congruence between responsibility, job complexity, and hierarchical position » (p. 148), confirme par conditions.intensified_by[2]."
     },
     {
       "claim_id": "C030",
       "verdict": "SUPPORTED",
-      "reason": "Conséquence qui suit des supports : la thèse porte sur des objets non intentionnels (common_misinterpretations[0].why_wrong) et l'emploi existe sur le papier avant d'être occupé (mechanism[5]) ; aucune intention d'écartement n'est imputée."
+      "reason": "« the final test of the evaluation of any particular job is whether its place in the hierarchy looks reasonable. The ranking of jobs […] must make sense to managers, but it is also important that most workers accept the ranking as just » (p. 148) ; le lien avec la congruence est celui pose par mechanism[7] (if the congruence is to be preserved)."
     },
     {
       "claim_id": "C031",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim p. 148 : « Hierarchies, like jobs, are devoid of actual workers and based on abstract differentiations »."
+      "reason": "Les deux exemples sont verbatim dans mechanism[7] : « The child-care worker's responsibility for other human beings or the complexity facing the secretary who serves six different, temperamental bosses can only be minimally counted if the congruence […] is to be preserved » (p. 149)."
     },
     {
       "claim_id": "C032",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim p. 148 : « Organizational logic assumes a congruence between responsibility, job complexity, and hierarchical position »."
+      "reason": "« two jobs at different hierarchical levels cannot be responsible for the same outcome » (p. 149)."
     },
     {
       "claim_id": "C033",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[6] et appears_when[2] citent p. 148 : « the final test […] is whether its place in the hierarchy looks reasonable. The ranking of jobs within an organization must make sense to managers, but it is also important that most workers accept the ranking as just »."
+      "reason": "Traduction fidele de la suite de la meme phrase (p. 149), y compris la responsabilite pratique conservee par la secretaire."
     },
     {
       "claim_id": "C034",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim p. 149 : « The child-care worker's responsibility for other human beings or the complexity facing the secretary who serves six different, temperamental bosses can only be minimally counted if the congruence […] is to be preserved »."
+      "reason": "« Those who are committed to paid employment are naturally more suited to responsibility and authority; those who must divide their commitments are in the lower ranks » (p. 149-150), le naturally etant conserve comme presuppose et non comme constat."
     },
     {
       "claim_id": "C035",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim p. 149 : « two jobs at different hierarchical levels cannot be responsible for the same outcome »."
+      "reason": "mechanism[10] et conditions.intensified_by[3] enoncent tous deux que l'exclusion passe par un critere de disponibilite qui ne nomme jamais le sexe."
     },
     {
       "claim_id": "C036",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim p. 149 : « tasks delegated to a secretary by a manager will not raise her hierarchical level because such tasks are still his responsibility, even though she has the practical responsibility to see that they are done »."
+      "reason": "common_misinterpretations[0] etablit que la these porte sur des objets non intentionnels et ecrits et que la lecture par les comportements individuels contredirait la source ; confidence_flags[3] le repete comme piege principal."
     },
     {
       "claim_id": "C037",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[10] cite p. 149-150 : « Those who are committed to paid employment are \"naturally\" more suited to responsibility and authority; those who must divide their commitments are in the lower ranks » ; le claim présente bien cet énoncé comme un présupposé (« sur l'idée que »)."
+      "reason": "Les supports opposent explicitement deux objets : « This view of organizations separates structures from the people in them » (p. 142), refusee, contre « Job evaluation evaluates jobs, not their incumbents » (p. 148) ; le claim ne fait qu'enoncer cette difference d'objet et de conclusion."
     },
     {
       "claim_id": "C038",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[10] et intensified_by[3] : « L'exclusion ne prend jamais la forme d'un critère de sexe : elle prend la forme d'un critère de disponibilité »."
+      "reason": "« A job is separate from people. It is an empty slot […] positions exist only as scraps of paper until people fill them » (p. 148) et la these sur des objets ecrits non intentionnels autorisent l'anteriorite du texte et l'independance a l'egard d'une decision individuelle."
     },
     {
       "claim_id": "C039",
       "verdict": "SUPPORTED",
-      "reason": "common_misinterpretations[0].why_wrong : la thèse porte sur des objets non intentionnels et écrits ; mechanism[7] précise que l'effacement joue « non par malveillance » mais par cohérence du classement."
+      "reason": "mechanism[16] formule exactement cela, appuye sur « This underlying construction of a way of thinking is not simply an error, but part of processes of organization » (p. 154) ; disappears_when[0] confirme qu'aucune condition d'extinction intermediaire n'est donnee."
     },
     {
       "claim_id": "C040",
       "verdict": "SUPPORTED",
-      "reason": "Les deux supports opposent explicitement l'objet de la thèse (définition de poste, congruence, cotation) à celui de la lecture courante (discrimination, chefs sexistes), et notent qu'une telle lecture « inverserait l'argument »."
+      "reason": "Traduction fidele du passage verbatim « Commonsense notions, such as jobs and positions […] is not simply an error, but part of processes of organization » (p. 154)."
     },
     {
       "claim_id": "C041",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support résolu. Description méthodologique substantielle (reprise décision par décision, possibilité de les trouver toutes défendables) présentée comme vraie, sans preuve au dossier."
+      "verdict": "SUPPORTED",
+      "reason": "conditions.disappears_when[3] et common_misinterpretations[3] nomment le seul dispositif examine de pres, l'evaluation des emplois du comparable worth ; « Such rankings would not deviate substantially from rankings already in place […] designed to replicate such structures » (p. 150) soutient la reproduction des classements."
     },
     {
       "claim_id": "C042",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[5] : l'emploi existe sur le papier avant toute occupation ; common_misinterpretations[0].why_wrong : « Job evaluation evaluates jobs, not their incumbents », donc le constat ne dépend d'aucune décision individuelle."
+      "reason": "« Every time that job evaluation is used, that structure is created or reinforced » (p. 148) ; le qu'il devait corriger est etabli par common_misinterpretations[3], qui decrit l'outil comme reproduisant ce qu'il devait corriger."
     },
     {
       "claim_id": "C043",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support résolu. Conclusion normative sur la non-substituabilité de deux démarches d'enquête, qu'aucun support attaché n'établit."
+      "verdict": "SUPPORTED",
+      "reason": "Traduction fidele de « dissolve the concept of the abstract job and restore the absent female body » et « would probably require the end of organizations as they exist today » (p. 154-155) ; le modalisateur probablement est conserve."
     },
     {
       "claim_id": "C044",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[16] est intitulé et argumenté comme la fermeture de la porte aux remèdes partiels, avec p. 154 : « This underlying construction of a way of thinking is not simply an error, but part of processes of organization »."
+      "reason": "mechanism[17] (trois questions posees et non traitees, p. 154), common_misinterpretations[5] (classe explicitement mise de cote, p. 146) et known_ambiguities[1] (cinq processus, un seul traite) etablissent que l'article enonce lui-meme ses restes."
     },
     {
       "claim_id": "C045",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim p. 154 : « Commonsense notions, such as jobs and positions […] not simply an error, but part of processes of organization »."
+      "reason": "« Here, I will focus on the interface of gender and organizations, assuming the simultaneous presence of class relations » (p. 146), confirme par _corrections_tour_2."
     },
     {
       "claim_id": "C046",
       "verdict": "SUPPORTED",
-      "reason": "disappears_when[3] : « Le seul dispositif qu'elle examine de près, l'évaluation des emplois utilisée par la stratégie féministe du comparable worth » ; mechanism[11] et intensified_by[1] citent p. 150 : « Such rankings would not deviate substantially from rankings already in place […] designed to replicate such structures »."
+      "reason": "Les deux questions reprises sont verbatim dans mechanism[17] (« Is the abstract worker white as well as male? » et « Are racial differences produced by organizational practices as gender differences are? », p. 154), a la fin de la section sur le controle ; known_ambiguities[4] confirme qu'elles restent ouvertes."
     },
     {
       "claim_id": "C047",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim p. 148 : « Every time that job evaluation is used, that structure is created or reinforced », et le dispositif est décrit comme reproduisant ce qu'il devait corriger."
+      "reason": "mechanism[17] enonce la reprise seize ans plus tard sous le nom d'inequality regimes (2006), et les supports validated et primary_sources[1] donnent le titre et la date exacts de l'article de 2006."
     },
     {
       "claim_id": "C048",
-      "verdict": "TOO_STRONG",
-      "reason": "La première partie est exacte (« dissolve the concept of the abstract job and restore the absent female body »), mais les deux supports portent « would PROBABLY require the end of organizations as they exist today » (p. 154-155). Le texte lecteur supprime la modalisation et attribue à Acker (« écrit-elle ») une implication nécessaire là où elle écrit une probabilité."
+      "verdict": "SUPPORTED",
+      "reason": "« This analysis has its origins in my earlier arguments about the gendering of organizations, reconceptualizing that approach to add class and race » (2006, p. 442-443), cite dans deux supports ; l'attribution a l'autrice elle-meme est correcte."
     },
     {
       "claim_id": "C049",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[17] : trois questions « posées et non traitées » p. 154 ; common_misinterpretations[5].why_wrong : mise à l'écart explicite de la classe p. 146. L'article signale donc lui-même ce qu'il ne traite pas."
+      "reason": "primary_sources[1] documente l'auto-correction de 2006 sur le travailleur ideal et common_misinterpretations[2] la designe comme correction de la lecture courante."
     },
     {
       "claim_id": "C050",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim p. 146 : « Here, I will focus on the interface of gender and organizations, assuming the simultaneous presence of class relations », confirmé par _corrections_tour_2."
+      "reason": "« Although work is organized on the model of the unencumbered (white) man, and both women and men are expected to perform according to this model » (2006, p. 449-450) ; le claim n'ajoute rien, il omet seulement white, et la note de traduction confirme que la formule est de 2006 et non de 1990."
     },
     {
       "claim_id": "C051",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[17] situe les questions « à la fin de la section sur le contrôle » et les cite p. 154 : « Is the abstract worker white as well as male? […] Are racial differences produced by organizational practices as gender differences are? »"
+      "reason": "« men are not necessarily the ideal workers for all jobs » (2006, p. 449-450) ; le il ne s'ensuit pas conserve la valeur de not necessarily."
     },
     {
       "claim_id": "C052",
       "verdict": "SUPPORTED",
-      "reason": "Titre, revue et date 2006 établis par validated $.sources[1].label et primary_sources[1].citation (1990 + 16 ans) ; la présentation par l'autrice est citée p. 442-443 : « This analysis has its origins in my earlier arguments about the gendering of organizations, reconceptualizing that approach to add class and race »."
+      "reason": "« The ideal worker for many jobs is a woman, particularly a woman who, employers believe, is compliant, who will accept orders and low wages » (2006, p. 449-450) : frequence (beaucoup de postes) et rattachement aux employeurs conserves."
     },
     {
       "claim_id": "C053",
       "verdict": "SUPPORTED",
-      "reason": "primary_sources[1].evidence intitule le passage « L'auto-correction sur le travailleur idéal » ; common_misinterpretations[2].why_wrong : « L'autrice a d'ailleurs corrigé elle-même la lecture courante en 2006 »."
+      "reason": "reception.debates[0] conclut que le desaccord est d'inventaire et non de principe, et known_ambiguities[2] que la these survit mais non l'inventaire des mecanismes ; la formulation comparative du claim ne durcit pas ces enonces."
     },
     {
       "claim_id": "C054",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim 2006, p. 449-450 : « work is organized on the model of the unencumbered (white) man, and both women and men are expected to perform according to this model » ; l'omission de « (white) » n'élargit pas la portée."
+      "reason": "Les trois noms, la date et l'article de 2012 dans Gender & Society sont donnes par trois supports concordants (reception et validated) ; la reprise de l'analyse d'Acker est etablie par secondary_sources[0]."
     },
     {
       "claim_id": "C055",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim 2006, p. 449-450 : « men are not necessarily the ideal workers for all jobs », avec attribution correcte à l'autrice."
+      "reason": "« standardized job descriptions, career ladders, and manager-controlled evaluations—features that do not characterize jobs in the new economy » ; le claim attribue bien l'observation aux autrices et limite la portee a une part du travail contemporain."
     },
     {
       "claim_id": "C056",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim 2006, p. 449-450 : « The ideal worker for many jobs is a woman, particularly a woman who, employers believe, is compliant, who will accept orders and low wages » ; l'attribution aux employeurs est conservée."
+      "reason": "Citation verbatim des autrices : « Organizations are still gendered, but the mechanisms for reproducing gender disparities are different than those in the traditional career path » ; l'attribution ecrivent-elles est exacte."
     },
     {
       "claim_id": "C057",
-      "verdict": "TOO_STRONG",
-      "reason": "Conséquence dérivée qui excède et contredit en partie le support. Acker distingue au contraire « the gendered organization of work » et « the […] characteristics of the ideal worker », et maintient dans la même phrase que « work is organized on the model of the unencumbered (white) man, and both women and men are expected to perform according to this model ». Le claim convertit la variation de la figure du travailleur idéal (docilité) en variation de ce que suppose la définition de poste, jusqu'à affirmer que toutes ne supposent pas la disponibilité sans limite — ce qu'aucun support n'autorise."
+      "verdict": "SUPPORTED",
+      "reason": "Consequence directe des supports de reception : la these survit tandis que l'inventaire des mecanismes change ; aucune certitude n'est ajoutee."
     },
     {
       "claim_id": "C058",
       "verdict": "SUPPORTED",
-      "reason": "reception.debates[0] : « Le désaccord est d'inventaire, non de principe » ; known_ambiguities[2] : « La thèse survit, l'inventaire des mécanismes non » ; critiques[2] : « La thèse tient, l'inventaire des mécanismes doit être refait ». La formulation comparative (« moins… que ») ne dépasse pas ces supports."
-    },
-    {
-      "claim_id": "C059",
-      "verdict": "SUPPORTED",
-      "reason": "Trois autrices et date 2012 établies par secondary_sources[0].citation et validated $.sources[3].label (Williams, Muller, Kilanski, Gender & Society 26(4), août 2012) ; nature savante par $.sources[3].kind « secondary-academic » et par l'article lui-même, qui parle depuis la sociologie (« many sociologists draw on Joan Acker's (1990) theory »)."
-    },
-    {
-      "claim_id": "C060",
-      "verdict": "SUPPORTED",
-      "reason": "Citation verbatim des autrices : « standardized job descriptions, career ladders, and manager-controlled evaluations—features that do not characterize jobs in the new economy » ; le claim atténue même la portée (« une part du travail contemporain »)."
-    },
-    {
-      "claim_id": "C061",
-      "verdict": "SUPPORTED",
-      "reason": "Verbatim : « Organizations are still gendered, but the mechanisms for reproducing gender disparities are different than those in the traditional career path », correctement attribué aux trois autrices."
-    },
-    {
-      "claim_id": "C062",
-      "verdict": "TOO_STRONG",
-      "reason": "La langue de l'article (« en ») est établie, mais les deux supports sur la traduction sont des constats de recherche négatifs explicitement limités : « aucune traduction française […] n'a été identifiée » et « je ne peux pas affirmer qu'il n'en existe pas ; les recherches ont porté sur HAL, OpenEdition, Érudit et le web, non sur les catalogues de bibliothèques ». Le texte lecteur transforme cette absence de résultat en nécessité (« c'est dans cette langue qu'il faudra aller la lire ») ; une absence de preuve ne vaut pas preuve d'absence."
+      "reason": "La langue de la source primaire est en ($.evidence.primary_sources[0].language, full-text) et deux supports etablissent qu'aucune traduction francaise publiee n'a ete identifiee ; l'enonce reste une indication de lecture sur la source citee."
     }
   ]
 }
