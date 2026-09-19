@@ -969,6 +969,21 @@ le dit maintenant, et onze tests le tiennent : **le script n'en avait aucun.**
    information absente des fichiers**, et elle ne peut pas être ajoutée par déduction.
 3. **Les neuf rapports v3 antérieurs ne sont pas invalidés** : ces cartes n'ont aucun répertoire
    de preuve, donc leur pack était déjà complet. Aucune reprise n'est due de ce côté.
+4. **Le contrôle mécanique des citations a le même angle mort**, et il n'est pas corrigé.
+   `corpus:deepen --check` ne compare une citation qu'à `corpus/validated/<id>.json`. Sur
+   `regulation-controle-autonome`, les verbatim des p. 10 et p. 16 sont exacts dans la lecture
+   primaire `full-text` et absents de l'enregistrement validé : le contrôle les signale comme
+   non sourcés. L'avertissement n'est pas bloquant, mais il est faux, et il apprend à ignorer
+   un avertissement — ce qui coûtera un jour une vraie citation non sourcée.
+
+**Ce que le correctif a rendu dès la première nuit.** `regulation-controle-autonome` portait un
+contresens : sa version publiée présentait la régulation conjointe comme le produit de la
+rencontre des deux régulations, quand l'article de 1988 la range explicitement du côté du
+contrôle sous un intertitre imprimé p. 15-16, le produit de la rencontre s'appelant compromis.
+Le texte fondait aussi le rapport de pouvoir sur les zones d'incertitude, expression à zéro
+occurrence dans l'article. **Aucun de ces deux défauts n'était atteignable sans le dossier** :
+l'enregistrement validé ne les contredit pas, et trois audits v3 antérieurs n'auraient pas pu
+les voir.
 
 ---
 
