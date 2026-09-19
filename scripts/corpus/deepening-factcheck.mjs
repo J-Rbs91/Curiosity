@@ -3,6 +3,8 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
 
+import { evidenceOrigin, listEvidenceFiles } from "./lib/factcheck-evidence.mjs";
+
 const ROOT = process.cwd();
 const CONTEXT_BUDGET_TOKENS = 300_000;
 const ESTIMATED_CHARS_PER_TOKEN = 3;
@@ -56,8 +58,8 @@ function validatedPath(conceptId) {
   return path.join(ROOT, "corpus", "validated", `${conceptId}.json`);
 }
 
-function evidencePath(conceptId) {
-  return path.join(ROOT, "corpus", "evidence", conceptId, "lecture.json");
+function evidenceDir(conceptId) {
+  return path.join(ROOT, "corpus", "evidence", conceptId);
 }
 
 function jsonPath(parent, key) {
@@ -142,12 +144,11 @@ async function prepare(conceptId) {
   const supports = [];
   collectSupports(validated, { origin: "validated" }, supports);
 
-  let evidenceSha256 = null;
-  const evidenceFile = evidencePath(conceptId);
-  if (existsSync(evidenceFile)) {
-    const evidenceRaw = await readFile(evidenceFile, "utf8");
-    evidenceSha256 = sha256(evidenceRaw);
-    collectSupports(JSON.parse(evidenceRaw), { origin: "evidence" }, supports);
+  const evidenceFiles = [];
+  for (const { name, file } of listEvidenceFiles(evidenceDir(conceptId))) {
+    const evidenceRaw = await readFile(file, "utf8");
+    evidenceFiles.push({ file: name, sha256: sha256(evidenceRaw) });
+    collectSupports(JSON.parse(evidenceRaw), { origin: evidenceOrigin(name) }, supports);
   }
 
   const uniqueSupports = [...new Map(supports.map((support) => [support.id, support])).values()];
@@ -158,7 +159,7 @@ async function prepare(conceptId) {
     token_estimate_method: `JSON characters / ${ESTIMATED_CHARS_PER_TOKEN} (conservative heuristic, not provider tokenization)`,
     candidate_sha256: sha256(deepRaw),
     validated_sha256: sha256(validatedRaw),
-    evidence_sha256: evidenceSha256,
+    evidence_files: evidenceFiles,
     paragraphs: readerParagraphs(deepening),
     supports: uniqueSupports,
   };
