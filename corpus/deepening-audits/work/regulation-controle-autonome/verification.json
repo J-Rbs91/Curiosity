@@ -1,311 +1,336 @@
 {
   "concept_id": "regulation-controle-autonome",
-  "candidate_sha256": "ce7d43fba3e7018c99b5bc3602b229d2a3159085a76d735a6f58d96a8497bebb",
+  "candidate_sha256": "fc44fd2c3476717a583504ab3ef2e4ec4e4cb771bfbc30430dce51286ba57968",
   "results": [
     {
       "claim_id": "C001",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[1] pose la pluralite des sources contre l'idee de degradation, mechanism[2] nomme les regles produites par les executants, mechanism[8] les decrit comme une regulation elaboree : le statut de regles, non de desordre, est autorise."
+      "reason": "mechanism[1] pose explicitement qu'il ne s'agit pas d'une dégradation mais de « plusieurs types de règles, plusieurs sources de régulation » ; concept_definition et mechanism[8] établissent que la régulation non écrite est « souvent très élaborée ». Le claim ne dit rien de plus."
     },
     {
       "claim_id": "C002",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim mechanism[12]/key_quotation : la regulation autonome « est une strategie en reponse a leurs efforts de controle et elle conquiert des positions de pouvoir contre ce controle ». Reponse a l'effort de controle et maintien de la main sur le travail sont couverts."
+      "reason": "mechanism[12] et mechanism[6] : la régulation autonome « est une stratégie en réponse à leurs efforts de contrôle » et « affirme une autonomie contre l'effort de contrôle ». « garder la main sur la façon de travailler » reste dans « conquiert des positions de pouvoir contre ce contrôle »."
     },
     {
       "claim_id": "C003",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[1] (« plusieurs types de regles, plusieurs sources de regulation ») et mechanism[2] (regles venues de la direction et regles produites dans l'entreprise par les executants) autorisent la coexistence ; l'ancrage dans l'atelier restreint sans elargir."
+      "reason": "mechanism[2] nomme les deux sources coexistant dans l'entreprise (règles de contrôle / règles autonomes produites « dans l'entreprise, par les groupes d'exécutants ») ; mechanism[1] affirme la pluralité des sources. Coexistence, sans ajout de portée."
     },
     {
       "claim_id": "C004",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[2] (« le critere est la provenance, pas le degre de formalisation »), mechanism[7] (abandon du couple formel/informel) et concept_definition (position de la source) autorisent exactement l'enonce."
+      "reason": "concept_definition est explicite : les deux régulations « ne se distinguent ni par leur forme (écrite/non écrite), ni par leur objet […] mais par la POSITION de leur source » ; mechanism[2] : « Le critère est la provenance, pas le degré de formalisation »."
     },
     {
       "claim_id": "C005",
       "verdict": "SUPPORTED",
-      "reason": "translation_notes[0] enonce directement que « regulation » chez Reynaud designe l'activite de production de regles par un acteur ; la reformulation lecteur reste dans ce perimetre."
+      "reason": "known_ambiguities[0] autorise exactement cette lecture (« On peut lire le second couple comme désignant l'activité dont le premier désigne le produit ») et la restriction qui l'accompagne est elle-même portée par la phrase suivante du texte lecteur (C006, mêmes supports). Aucune attribution non hedgée ne subsiste pour le lecteur."
     },
     {
       "claim_id": "C006",
-      "verdict": "TOO_STRONG",
-      "reason": "known_ambiguities[0], support resolu de ce meme claim, avertit que lire la regulation comme l'activite dont la regle est le produit « c'est une lecture, le texte ne l'enonce pas » ; le texte lecteur la donne comme la signification etablie du mot. En outre translation_notes[0] ecarte explicitement le sens de « mecanisme » (homeostatique) que le claim reintroduit."
+      "verdict": "SUPPORTED",
+      "reason": "known_ambiguities[0] : le glissement « n'est jamais thématisé », « c'est une lecture, le texte ne l'énonce pas » ; term_origin.note (2) confirme que le passage règle/régulation n'est pas signalé par Reynaud."
     },
     {
       "claim_id": "C007",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[0] (regles qui « determinent la sanction applicable ») et disappears_when[3] (« la distribution des initiatives, des sanctions et des controles ») couvrent l'enonciation, la verification et la sanction."
+      "reason": "term_origin.note qualifie la régulation d'« activité de production de règles » ; « les fait tenir » reste couvert par la régulation « enseignée aux nouveaux venus et en partie imposée ». Énoncé présenté comme lecture par la phrase précédente."
     },
     {
       "claim_id": "C008",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[7] (« ne se trouve pas etre differente [...] parce qu'elle a un objet different ») et concept_definition (ni la forme ni l'objet, mais la position de la source) autorisent le rangement dans une meme categorie."
+      "reason": "mechanism[0] (règles qui « fixent les responsabilités en cas de faute et déterminent la sanction applicable »), mechanism[8] (« en partie imposée à ceux qui voudraient s'en écarter ») et le support de réception (« dont le non-respect est sanctionné ») couvrent énonciation, contrôle du suivi et sanction."
     },
     {
       "claim_id": "C009",
       "verdict": "SUPPORTED",
-      "reason": "term_origin.coined_by (« dans ce texte, et il le dit explicitement a deux reprises ») et term_origin.note (« nous les appellerons », « nous proposons de l'appeler »)."
+      "reason": "concept_definition : la distinction ne tient ni à la forme ni à l'objet mais à la position de la source ; mechanism[1] : plusieurs sources de régulation. Le claim n'affirme que l'appartenance à une même catégorie."
     },
     {
       "claim_id": "C010",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[2] verbatim p. 6 et mechanism[7] (« C'est pourquoi nous proposons de l'appeler regulation de controle ») ; le passage de « regles » a « regulation » est lui-meme documente par known_ambiguities[0], support resolu ici."
+      "reason": "term_origin.coined_by (« Jean-Daniel Reynaud, dans ce texte, et il le dit explicitement à deux reprises ») et term_origin.note qui cite « nous les appellerons » (p. 6) et « nous proposons de l'appeler » (p. 10)."
     },
     {
       "claim_id": "C011",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim p. 10 : « Ce qui la definit, c'est seulement son orientation strategique : peser de l'exterieur sur la regulation d'un groupe social ». L'exclusivite du « seulement » autorise a ecarter le sens de verification."
+      "reason": "mechanism[2] cite p. 6 la nomination par l'origine (sommet vers la base / groupes d'exécutants eux-mêmes) et mechanism[7] p. 10 « C'est pourquoi nous proposons de l'appeler régulation de contrôle ». Le vocabulaire est revendiqué par l'auteur (term_origin.note)."
     },
     {
       "claim_id": "C012",
       "verdict": "SUPPORTED",
-      "reason": "common_misinterpretations[1] : « Les deux moities de l'equivalence tombent [...]. Le critere est la position de la source et son orientation strategique, jamais la forme. » Le claim n'ajoute pas de portee."
+      "reason": "translation_notes[2] : « “Contrôle” n'est ni la vérification ni le contrôle de gestion »."
     },
     {
       "claim_id": "C013",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[8] : « la regulation de controle n'est pas toujours exprimee de maniere adequate dans la reglementation officielle ». Le modal « peut » est conserve."
+      "reason": "Citation verbatim du support : « Ce qui la définit, c'est seulement son orientation stratégique : peser de l'extérieur sur la régulation d'un groupe social »."
     },
     {
       "claim_id": "C014",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[8]/alternatives[0] : regulation « souvent tres elaboree » ; le claim reste modalise par « peut »."
+      "reason": "common_misinterpretations[1] et translation_notes[2] : « Le critère est la position et l'orientation stratégique, jamais la forme »."
     },
     {
       "claim_id": "C015",
       "verdict": "SUPPORTED",
-      "reason": "translation_notes[1] (« PIEGE PRINCIPAL ») et common_misinterpretations[0] (« C'est le contresens principal ») autorisent la primaute du piege attache au mot « autonome »."
+      "reason": "common_misinterpretations[1] établit que les deux moitiés de l'équivalence formel/informel tombent, chacune par son propre argument — les deux arguments sont d'ailleurs restitués distinctement dans la suite immédiate du texte lecteur. Aucune portée ajoutée."
     },
     {
       "claim_id": "C016",
       "verdict": "SUPPORTED",
-      "reason": "translation_notes[1] interdit nommement les trois lectures ecartees et pose que le mot qualifie « l'origine de la regle »."
+      "reason": "mechanism[8] et translation_notes[2] : « la régulation de contrôle n'est pas toujours exprimée de manière adéquate dans la réglementation officielle ». Le modal « peut » est conservé."
     },
     {
       "claim_id": "C017",
       "verdict": "SUPPORTED",
-      "reason": "Citation verbatim presente dans mechanism[8] et dans alternatives[0] ; « loin d'etre improvisee » correspond au refus explicite de la spontaneite."
+      "reason": "mechanism[8] / common_misinterpretations[1] : la régulation autonome est « souvent très élaborée » bien que non écrite ; le claim l'énonce au mode du possible, ce qui ne dépasse pas le support."
     },
     {
       "claim_id": "C018",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[8] : « Elle peut etre imposee a un groupe par une minorite culturellement ou economiquement strategique » ; « il arrive que » conserve le modal."
+      "reason": "translation_notes[1] (« PIÈGE PRINCIPAL ») et common_misinterpretations[0] (« C'est le contresens principal ») ; le support de réception maintient le risque tout en refusant de l'attester comme vulgarisation dominante, ce que le claim n'affirme pas."
     },
     {
       "claim_id": "C019",
       "verdict": "SUPPORTED",
-      "reason": "translation_notes[1] conclut : « La regulation autonome est contraignante pour ceux qu'elle regit » ; mechanism[8] parle de « ce que cela comporte de contrainte ». La comparaison porte sur le caractere contraignant, non sur une egalite de pouvoir."
+      "reason": "translation_notes[1] écarte nommément les trois lectures : autonomie octroyée, spontanéité, consensus de groupe, et pose que « autonome » qualifie « l'origine de la règle »."
     },
     {
       "claim_id": "C020",
       "verdict": "SUPPORTED",
-      "reason": "common_misinterpretations[3].claim enonce mot pour mot cette lecture (defense du statu quo social contre l'efficacite) comme mesinterpretation repertoriee."
+      "reason": "Citation verbatim présente dans mechanism[8] et dans la key_quotation alternative ; « loin d'être improvisée » correspond à « n'est pas […] spontanée »."
     },
     {
       "claim_id": "C021",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[4] et misinterpretations[3] citent : « elles ont tres generalement pour objet une activite et visent un resultat externe ». La frequence est reprise telle quelle."
+      "reason": "mechanism[8] : « Elle peut être imposée à un groupe par une minorité culturellement ou économiquement stratégique. » « Il arrive que » ne fait pas de ce cas une règle générale."
     },
     {
       "claim_id": "C022",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[3] (« la direction n'a pas le monopole de la logique du cout et de l'efficacite »), reception secondaire (Maggi) et _synthese.CONSENSUS."
+      "reason": "translation_notes[1] conclut : « La régulation autonome est contraignante pour ceux qu'elle régit » ; mechanism[8] parle de « contrainte et d'apprentissage ». La comparaison porte sur le fait de contraindre, non sur un degré non établi."
     },
     {
       "claim_id": "C023",
       "verdict": "SUPPORTED",
-      "reason": "common_misinterpretations[0] et mechanism[12] identifient precisement cette lecture (l'ingeniosite meconnue des dirigeants) comme celle que l'article vise."
+      "reason": "common_misinterpretations[3] : c'est « la position que l'article est écrit pour défaire » (logique des sentiments étrangère aux objectifs économiques), et mechanism[4] : « c'est justement ce point que les données accumulées sont venues démentir »."
     },
     {
       "claim_id": "C024",
       "verdict": "SUPPORTED",
-      "reason": "Citation verbatim, identique dans validated $.quotation.text et dans key_quotation.short_form_150 ; la coupe initiale est documentee par le locator."
+      "reason": "mechanism[4] verbatim : « elles ont très généralement pour objet une activité et visent un résultat externe ». La fréquence « très généralement » est conservée."
     },
     {
       "claim_id": "C025",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim key_quotation : « Elle est une strategie en reponse a leurs efforts de controle et elle conquiert des positions de pouvoir contre ce controle. »"
+      "reason": "mechanism[3] : « la direction n'a pas le monopole de la logique du coût et de l'efficacité » ; mechanism[5] : les deux régulations peuvent obéir à une logique d'efficacité."
     },
     {
       "claim_id": "C026",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[2] (« le critere est la provenance »), concept_definition (position de la source) et misinterpretations[1] (« jamais la forme »)."
+      "reason": "Le support de réception atteste cette lecture (Favereau chez de Terssac : les régulations autonomes « comblent » les failles du contrôle ; version vulgarisée de la page de cours). Le claim se borne à décrire cette lecture."
     },
     {
       "claim_id": "C027",
       "verdict": "SUPPORTED",
-      "reason": "Consequence qui suit les supports : misinterpretations[0] pose qu'une regulation deleguee « reste, par son origine, du cote du controle » ; mechanism[15] pose qu'une regle venue de l'exterieur des unites concretes de travail est une regulation de controle ; _synthese.CRITIQUES rapporte que « les regles changent de cote »."
+      "reason": "Citation verbatim établie par key_quotation, sa forme courte et l'enregistrement validé."
     },
     {
       "claim_id": "C028",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim p. 12 dans disappears_when[3] et misinterpretations[5] : « Il n'y a pas de management participatif [...] Il peut y avoir une redistribution et une negociation de la distribution des initiatives, des sanctions et des controles » ; mechanism[12] couvre le refus de la reconnaissance bienveillante."
+      "reason": "key_quotation : « Elle est une stratégie en réponse à leurs efforts de contrôle et elle conquiert des positions de pouvoir contre ce contrôle »."
     },
     {
       "claim_id": "C029",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[12] : « L'extraction des ressources intellectuelles n'est pas separable d'une modification de pouvoirs » ; disappears_when[2] ecarte la simple reconnaissance bienveillante."
+      "reason": "Énoncé conditionnel dont la conséquence est immédiatement défaite par mechanism[12] (« Le retournement ne peut pas se faire simplement parce que la hiérarchie voudra bien reconnaître l'intelligence des exécutants »). Rien n'est présenté comme acquis."
     },
     {
       "claim_id": "C030",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[10] verbatim : « ce ne sont pas seulement les enjeux de chacun, ce sont bien les regles du jeu »."
+      "reason": "concept_definition (POSITION de la source), mechanism[2] (« Le critère est la provenance ») et le support de réception (« contrôle » et « autonome » qualifient une position)."
     },
     {
       "claim_id": "C031",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[7] verbatim : « son objet meme que de peser sur la regulation des salaries, de chercher a controler les zones de liberte et d'autonomie qu'ils s'octroient » ; misinterpretations[6] confirme que c'est bien « zones de liberte » et non « zones d'incertitude »."
+      "reason": "Le support de réception énonce littéralement le changement de côté : règles autonomes d'un groupe minoritaire qui, « étendues », deviennent « des contraintes pour tous, donc des règles de contrôle », et cite Reynaud 1997 sur la convention collective. Le claim n'attribue pas cette formulation à l'article de 1988."
     },
     {
       "claim_id": "C032",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[6] (« Il cherche a etablir une regulation contre d'autres regulations venues d'en haut. Il affirme une autonomie »), mechanism[10] (les regles du jeu) et _synthese.LECTURE_SAVANTE (« pretention aux regles »)."
+      "reason": "mechanism[12] cite p. 12 : « Il n'y a pas de management participatif […]. Il peut y avoir une redistribution et une négociation de la distribution des initiatives, des sanctions et des contrôles », et écarte dans le même passage la reconnaissance bienveillante de la hiérarchie. Le modal « il peut y avoir » est conservé."
     },
     {
       "claim_id": "C033",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[9] pose comme fait les « valeurs affectives tres fortes » attachees de part et d'autre a la regulation et le fait qu'elles s'expliquent autrement qu'on ne le croit ; la reformulation lecteur n'ajoute ni portee ni causalite."
+      "reason": "mechanism[12] : « L'extraction des ressources intellectuelles n'est pas separable d'une modification de pouvoirs », et le rejet de la simple reconnaissance."
     },
     {
       "claim_id": "C034",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[9] : ces valeurs s'expliquent « non par l'existence d'un domaine affectif separe de celui de l'organisation rationnelle »."
+      "reason": "mechanism[10] verbatim : « Ce qui est donc en cause dans la rencontre des deux types de régulation, ce ne sont pas seulement les enjeux de chacun, ce sont bien les règles du jeu »."
     },
     {
       "claim_id": "C035",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[9] verbatim, symetrie des « controleurs » comprise : l'explication est « les enjeux de pouvoir qui sont lies a la rencontre de ces deux regulations »."
+      "reason": "mechanism[7] : « C'est […] son objet même que de peser sur la régulation des salariés, de chercher à contrôler les zones de liberté et d'autonomie qu'ils s'octroient »."
     },
     {
       "claim_id": "C036",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[9] : « Elles sont meme un moyen de mettre au jour ces enjeux de pouvoir », lies a la rencontre des deux regulations."
+      "reason": "mechanism[6] (le freinage « cherche à établir une régulation contre d'autres régulations venues d'en haut », il « affirme une autonomie ») et mechanism[10] (l'enjeu est les règles du jeu)."
     },
     {
       "claim_id": "C037",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim p. 11 (mechanism[11] et alternatives[4]) : « La distinction des deux regulations ne s'applique pas a n'importe quelle relation de pouvoir. Elle designe une relation specifique : celle qui s'etablit entre un groupe et ceux qui veulent la regler de l'exterieur. »"
+      "reason": "mechanism[9] pose le phénomène comme général (« Les valeurs affectives très fortes que les exécutants attachent à leur régulation autonome ») et écarte l'explication reçue par un domaine affectif séparé. Le claim ne fait qu'annoncer cette explication."
     },
     {
       "claim_id": "C038",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[11] : « tout particulierement reconnaissable dans les relations hierarchiques [...] Cependant, la relation hierarchique n'est pas la seule relation de controle. »"
+      "reason": "mechanism[9] : ces valeurs s'expliquent « non par l'existence d'un domaine affectif séparé de celui de l'organisation rationnelle » ; l'affect n'est pas un résidu irrationnel."
     },
     {
       "claim_id": "C039",
-      "verdict": "TOO_STRONG",
-      "reason": "Le support porte un modal que le claim supprime : « une dependance fonctionnelle PEUT creer des relations du meme type » (p. 11, appears_when[2] et mechanism[11]) devient « une simple dependance fonctionnelle produit la meme relation ». Possibilite transformee en regle generale ; seul l'exemple de l'outil impose est, lui, couvert par misinterpretations[4]."
+      "verdict": "SUPPORTED",
+      "reason": "mechanism[9] : attachement des exécutants et des « contrôleurs », expliqués « par les enjeux de pouvoir qui sont liés à la rencontre de ces deux régulations ». La symétrie est explicitement notée par le support."
     },
     {
       "claim_id": "C040",
       "verdict": "SUPPORTED",
-      "reason": "disappears_when[1] (« la suppression ou l'allegement des relations hierarchiques ne suffirait pas a supprimer le rapport ») et appears_when[1] (« existera toutes les fois qu'un individu ou un groupe a une capacite d'initiative concernant les objectifs, les procedures [...] d'un autre groupe »)."
+      "reason": "mechanism[9] : « Elles sont même un moyen de mettre au jour ces enjeux de pouvoir », enjeux liés à la rencontre des deux régulations."
     },
     {
       "claim_id": "C041",
       "verdict": "SUPPORTED",
-      "reason": "disappears_when[0] qualifie ce passage de p. 5 de seule condition d'extinction enoncee dans l'article et en cite la lettre (secte religieuse, petit groupe politique, debuts d'une petite organisation)."
+      "reason": "Citation verbatim p. 11 : « La distinction des deux régulations ne s'applique pas à n'importe quelle relation de pouvoir. Elle désigne une relation spécifique : celle qui s'établit entre un groupe et ceux qui veulent la régler de l'extérieur »."
     },
     {
       "claim_id": "C042",
       "verdict": "SUPPORTED",
-      "reason": "Enonce d'un cas explicitement hypothetique ; les deux traits porteurs sont verbatim (« enseignee aux nouveaux venus et en partie imposee a ceux qui voudraient s'en ecarter », mechanism[8]) et l'exclusion du simple relachement suit mechanism[1] (fait de structure, non degradation) et mechanism[8] (construction de normes sociales)."
+      "reason": "mechanism[11] : « tout particulièrement reconnaissable dans les relations hiérarchiques » mais « la relation hiérarchique n'est pas la seule relation de contrôle »."
     },
     {
       "claim_id": "C043",
       "verdict": "SUPPORTED",
-      "reason": "Scenario hypothetique dont la consequence suit le critere d'origine (mechanism[2]) et mechanism[15] (une regle venue de l'exterieur des unites concretes de travail releve du controle) ; _synthese.CRITIQUES rapporte le changement de cote."
+      "reason": "mechanism[11] (« une dépendance fonctionnelle peut créer des relations du même type ») ; l'exemple de l'outil imposé par un service à un autre est celui-là même que donne common_misinterpretations[4], et il relève de la condition générale p. 11-12."
     },
     {
       "claim_id": "C044",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[11] et appears_when[1] posent la confrontation comme liee a la position des parties (« toutes les fois qu'un individu ou un groupe a une capacite d'initiative »), non a une consigne particuliere ; disappears_when[1] confirme qu'aucun amenagement ne la referme."
+      "reason": "p. 11 : « la suppression ou l'allègement des relations hiérarchiques ne suffirait pas à supprimer le rapport (la confrontation) entre les deux types de régulation »."
     },
     {
       "claim_id": "C045",
       "verdict": "SUPPORTED",
-      "reason": "Projection interne au cas hypothetique, autorisee par appears_when[1] (« cette confrontation existera toutes les fois que... ») et par intensified_by[0] (la regulation autonome est une strategie en reponse a l'effort de controle)."
+      "reason": "conditions.appears_when[1] / mechanism[11] : « cette confrontation existera toutes les fois qu'un individu ou un groupe a une capacité d'initiative concernant les objectifs, les procédures (les technologies) d'un autre groupe »."
     },
     {
       "claim_id": "C046",
       "verdict": "SUPPORTED",
-      "reason": "translation_notes[4] parle de « la formule aujourd'hui courante » associant la regulation conjointe au couple, et la reception (Richebe) presente les deux notions ensemble, la conjointe « construite a partir de la distinction »."
+      "reason": "conditions.disappears_when[0] : « UNE SEULE CONDITION D'EXTINCTION EST ÉNONCÉE DANS TOUT L'ARTICLE », citée p. 5 (ferveur d'une secte ou d'un petit groupe politique, débuts d'une petite organisation), confirmée par mechanism[0]."
     },
     {
       "claim_id": "C047",
       "verdict": "SUPPORTED",
-      "reason": "attribution.verdict : « regulation conjointe » est « anterieure de neuf ans au couple » ; _synthese.TERME date 1979 contre 1987-1988."
+      "reason": "Le cas est explicitement imaginé par le texte lecteur ; l'inférence porte sur mechanism[8] (régulation « enseignée aux nouveaux venus et en partie imposée ») et mechanism[1] (ce n'est pas une dégradation des règles mais une autre source de règles)."
     },
     {
       "claim_id": "C048",
       "verdict": "SUPPORTED",
-      "reason": "term_origin.note : terme « de Reynaud lui-meme, forge neuf ans plus tot dans le sous-titre de « Conflit et regulation sociale. Esquisse d'une theorie de la regulation conjointe » (RFS, XX-2, 1979) » ; titre identique dans primary_sources[1].citation (full-text) et dans la fiche validee."
+      "reason": "Scénario hypothétique appliquant le changement de côté attesté par le support de réception : les mêmes règles autonomes « étendues » deviennent « des contraintes pour tous, donc des règles de contrôle »."
     },
     {
       "claim_id": "C049",
       "verdict": "SUPPORTED",
-      "reason": "primary_sources[1].evidence (full-text, article de 1979 ouvert) : « zero occurrence de « regulation autonome », zero de « regulation de controle », zero de la racine « autonom- » sur les dix pages »."
+      "reason": "mechanism[11] (la confrontation tient à la relation entre un groupe et ceux qui veulent le régler de l'extérieur), disappears_when[1] (l'allègement hiérarchique ne suffit pas) et le support de réception (position dans une relation, pas espèce de règle)."
     },
     {
       "claim_id": "C050",
       "verdict": "SUPPORTED",
-      "reason": "primary_sources[1].evidence cite p. 371 (« des regles mutuellement admises », « la convention collective de travail ») et etablit que la rencontre y est celle d'acteurs, jamais de deux regulations ; mechanism[15] rapporte la meme definition par la source des regles."
+      "reason": "mechanism[11] affirme au futur que la confrontation « existera toutes les fois » qu'un tiers a l'initiative sur les procédures d'un groupe ; intensified_by[0] pose la régulation autonome comme réponse à l'effort de contrôle. Le claim n'anticipe pas l'issue de la confrontation."
     },
     {
       "claim_id": "C051",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[15] et translation_notes[4] etablissent le rangement de 1988 du cote du controle, a rebours de l'usage courant releve par translation_notes[4]."
+      "reason": "translation_notes[4] parle de « La formule aujourd'hui courante » associant la régulation conjointe au couple, et le support de réception de « l'exposé canonique » qui construit la conjointe à partir de la distinction (Richebé 2022)."
     },
     {
       "claim_id": "C052",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[15] verbatim p. 15-16 : « Le produit de cette negociation (au sens large du terme) est donc une regulation conjointe »."
+      "reason": "Support de réception : « Chronologiquement, “régulation conjointe” vient d'abord (1979 […]), le couple contrôle/autonome ensuite (1987-1988) » ; term_origin.note dit le terme « forgé neuf ans plus tôt »."
     },
     {
       "claim_id": "C053",
       "verdict": "SUPPORTED",
-      "reason": "Citation verbatim presente dans mechanism[15] et dans alternatives[3] ; la restriction « vue de l'atelier » correspond a « elle vient de l'exterieur donner des regles aux unites concretes de travail »."
+      "reason": "term_origin.note : « le terme est de Reynaud lui-même, forgé neuf ans plus tôt dans le sous-titre de “Conflit et régulation sociale. Esquisse d'une théorie de la régulation conjointe” » ; citation confirmée par primary_sources[1] (full-text) et par l'enregistrement validé."
     },
     {
       "claim_id": "C054",
       "verdict": "SUPPORTED",
-      "reason": "Reformulation du motif donne par Reynaud lui-meme en termes categoriques (« de maniere bien caracterisee [...] puisqu'elle vient de l'exterieur », mechanism[15]) ; le claim n'etend pas au-dela de cette caracterisation generale."
+      "reason": "primary_sources[1].evidence, source ouverte en texte intégral : « zéro occurrence de “régulation autonome”, zéro de “régulation de contrôle”, zéro de la racine “autonom-” sur les dix pages »."
     },
     {
       "claim_id": "C055",
       "verdict": "SUPPORTED",
-      "reason": "_synthese.LECTURE_SAVANTE (trois sources en texte integral) : « le partage controle/autonomie est une position relative, pas une propriete des regles » ; mechanism[11] et mechanism[8] donnent la relation et l'orientation."
+      "reason": "primary_sources[1].evidence cite p. 371 les « règles mutuellement admises » établies par des acteurs dispersés et opposés, et « le paradigme […] la convention collective de travail » ; il précise que la rencontre y est celle d'acteurs, non de deux régulations."
     },
     {
       "claim_id": "C056",
       "verdict": "SUPPORTED",
-      "reason": "confidence_flags[7] : « Le troisieme terme du texte s'appelle « compromis » » ; mechanism[14] (« une regulation de compromis », p. 15) et mechanism[18] (p. 17)."
+      "reason": "mechanism[15] : en 1988 la régulation conjointe « est de manière bien caractérisée une régulation de contrôle », classement que translation_notes[4] oppose à la formule courante."
     },
     {
       "claim_id": "C057",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim alternatives[1]/mechanism[18] : « Les regulations « reelles » sont des compromis (souvent assez instables) entre autonomie et controle. »"
+      "reason": "mechanism[15] cite p. 15-16 : « Le produit de cette négociation […] est donc une régulation conjointe », s'agissant des représentants du personnel et des représentants syndicaux."
     },
     {
       "claim_id": "C058",
       "verdict": "SUPPORTED",
-      "reason": "mechanism[18] : variete « tres grande », « ils ne se laissent pas ranger sur une dimension simple (democratie ou centralisation) », et refus explicite de faire une classification, repris par limitations[1] et known_ambiguities[2]."
+      "reason": "Citation verbatim p. 16 présente dans mechanism[15] et dans les alternatives verbatim ; « vue de l'atelier » restitue le motif donné par Reynaud (« elle vient de l'extérieur donner des règles aux unités concrètes de travail »)."
     },
     {
       "claim_id": "C059",
       "verdict": "SUPPORTED",
-      "reason": "primary_sources[0].locator donne la structure de l'article jusqu'a p. 17-18 et misinterpretations[8] precise qu'il « se clot [...] sur une discussion de la notion de culture d'entreprise (p. 17-18) », juste apres la synthese de p. 17 ; l'enonce est de surcroit hedge (« a peu pres »)."
+      "reason": "mechanism[15] (la régulation conjointe vient de l'extérieur des unités concrètes de travail) et le support de réception citant Reynaud 1997 sur la convention collective comme régulation de contrôle pour les unités concernées."
     },
     {
       "claim_id": "C060",
       "verdict": "SUPPORTED",
-      "reason": "Claim purement metadonnee, admissible sur une source metadata-only : primary_sources[2].citation donne titre, editeur et annee 1989 ; Segrestin (texte integral) situe l'ouvrage en 1989."
+      "reason": "Support de réception : « “contrôle” et “autonome” qualifient une POSITION dans une relation, pas une espèce de règle » ; concept_definition (position de la source) et le constat que le même dispositif change de nom selon le point d'observation."
     },
     {
       "claim_id": "C061",
       "verdict": "SUPPORTED",
-      "reason": "Le claim n'affirme rien du contenu du livre et renvoie a une lecture future, ce qui est exactement l'etat du dossier : limitations[4] (« n'a pas ete ouvert »), confidence_flags[5] et primary_sources[2].evidence (« AUCUN CONTENU ETABLI PAR CETTE SOURCE »)."
+      "reason": "mechanism[14] (« une régulation de compromis », p. 15), mechanism[18] (p. 17) et translation_notes[4] : « ce que Reynaud appelle le produit de la rencontre, c'est le “compromis” »."
+    },
+    {
+      "claim_id": "C062",
+      "verdict": "SUPPORTED",
+      "reason": "Citation p. 17 restituée sans renforcement : « Les régulations “réelles” sont des compromis (souvent assez instables) entre autonomie et contrôle »."
+    },
+    {
+      "claim_id": "C063",
+      "verdict": "SUPPORTED",
+      "reason": "mechanism[18] et limitations[1] : « ils ne se laissent pas ranger sur une dimension simple (démocratie ou centralisation) » et « Plutôt que de chercher à faire une classification […] il vaut mieux, pour le moment, constater les variétés »."
+    },
+    {
+      "claim_id": "C064",
+      "verdict": "SUPPORTED",
+      "reason": "primary_sources[0].locator (article p. 5-18, dernière section « Régulations et culture », p. 17-18) et common_misinterpretations[8] (« L'article se clôt […] sur une discussion de la notion de culture d'entreprise »). La réserve « à peu près » couvre cet écart."
+    },
+    {
+      "claim_id": "C065",
+      "verdict": "SUPPORTED",
+      "reason": "Énoncé purement bibliographique, couvert par la notice primary_sources[2] (metadata-only) : « Les règles du jeu […], Paris, Armand Colin, 1989 ». Aucun contenu intellectuel n'est affirmé."
+    },
+    {
+      "claim_id": "C066",
+      "verdict": "SUPPORTED",
+      "reason": "Le claim diffère explicitement la question, conformément à primary_sources[2].evidence (« AUCUN CONTENU ÉTABLI PAR CETTE SOURCE ») et limitations[4] (l'ouvrage n'a pas été ouvert, trois questions restent sans réponse). Aucun contenu n'est tiré d'un support metadata-only."
     }
   ]
 }

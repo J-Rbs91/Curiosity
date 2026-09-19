@@ -1,22 +1,11 @@
 {
   "protocol_version": 1,
   "concept_id": "regulation-controle-autonome",
-  "candidate_sha256": "ce7d43fba3e7018c99b5bc3602b229d2a3159085a76d735a6f58d96a8497bebb",
-  "verdict": "FACTCHECK_FAIL",
-  "claims": 61,
-  "supported": 59,
-  "failed": 2,
+  "candidate_sha256": "fc44fd2c3476717a583504ab3ef2e4ec4e4cb771bfbc30430dce51286ba57968",
+  "verdict": "FACTCHECK_PASS",
+  "claims": 66,
+  "supported": 66,
+  "failed": 0,
   "structural_errors": [],
-  "failures": [
-    {
-      "claim_id": "C006",
-      "verdict": "TOO_STRONG",
-      "reason": "known_ambiguities[0], support resolu de ce meme claim, avertit que lire la regulation comme l'activite dont la regle est le produit « c'est une lecture, le texte ne l'enonce pas » ; le texte lecteur la donne comme la signification etablie du mot. En outre translation_notes[0] ecarte explicitement le sens de « mecanisme » (homeostatique) que le claim reintroduit."
-    },
-    {
-      "claim_id": "C039",
-      "verdict": "TOO_STRONG",
-      "reason": "Le support porte un modal que le claim supprime : « une dependance fonctionnelle PEUT creer des relations du meme type » (p. 11, appears_when[2] et mechanism[11]) devient « une simple dependance fonctionnelle produit la meme relation ». Possibilite transformee en regle generale ; seul l'exemple de l'outil impose est, lui, couvert par misinterpretations[4]."
-    }
-  ]
+  "failures": []
 }

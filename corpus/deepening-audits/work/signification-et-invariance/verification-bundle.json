@@ -1,8 +1,8 @@
 {
   "protocol_version": 1,
   "concept_id": "signification-et-invariance",
-  "candidate_sha256": "97999fb8252a689484e703d2b89e5ef75ab064c8338e7e3c95b756ca311b0791",
-  "map_sha256": "a02fefb168c1223f155d6f8f8e9e545ebcba72241f1dfbca6445c1d555617be4",
+  "candidate_sha256": "ef57468d0942517b7c052f5422775a35c492764fb31aa6e9dd4fab2b8d4d45ef",
+  "map_sha256": "dec93a2852fe5b410518c4b0fe043be5e7a2788c8b280fd2814aa5aff10b2f86",
   "claims": [
     {
       "claim_id": "C001",
@@ -15,13 +15,6 @@
           "path": "$.review.notes[5]",
           "access": "n/a",
           "text": "PROSE — le hook (« Un énoncé vrai en Fahrenheit, faux en Celsius ») n'est pas une image ajoutée : c'est l'exemple des auteurs, p. 109, vérifié sur l'image de la page PDF 113 : l'énoncé (4) est jugé vrai avec t(n)=110 et t(n-1)=100 en Fahrenheit (rapport 1,10), et « if the temperature measurements had been made on the Centigrade scale we would have come to the opposite conclusion, since then we would have found t(n)=43.3 and t(n-1)=37.8 and a ratio equal to 1.15 rather than 1.10 ». Le second membre du summary (« c'est l'énoncé entier qui en a ou non, pas l'opération ») est porté explicitement par la section 6.3, p. 122 : « Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems. » Aucun adjectif du hook ou du summary ne déborde ce que j'ai lu."
-        },
-        {
-          "id": "SUP-106c334769abc2bc",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Les auteurs posent d'abord deux problèmes, et un seul troisième. Les deux fondamentaux : le problème de la représentation — « Characterize the formal properties of the empirical operations and relations used in the procedure and show that they are isomorphic to appropriately chosen numerical operations and relations » (p. 4) — et le problème de l'unicité, c'est-à-dire « determine the scale type of the measurements resulting from the procedure » (p. 14). L'assignation numérique est « a function which maps an empirical system homomorphically onto a numerical system » (p. 22) ; une échelle, elle, n'est pas cette fonction mais un triplet dont elle est un terme (avec un système relationnel empirique et un système numérique plein), et le type d'échelle « is defined entirely in terms of the class of numerical assignments which map a given empirical system homomorphically onto a subsystem of the same full numerical system » (p. 23) — sans aucune référence aux opérations empiriques réellement pratiquées. La formulation du problème de la représentation dit « isomorphic (or possibly homomorphic) » (p. 10) : le vocabulaire de la description reçue (« la mesure est un homomorphisme ») est bien celui du texte, mais le texte hésite explicitement entre les deux termes à cet endroit et retient l'homomorphisme partout ailleurs.\n\nLa signification vient en troisième, et les auteurs en rabaissent eux-mêmes le rang : c'est « a third problem which we shall term the meaningfulness problem. While this problem is not central to a theory of measurement it is often involved with various aspects of how measurements may be used, and as such it has engendered considerable controversy » (p. 108). La définition (Definition 33, p. 110-111) est citée plus haut ; sa version complète ajoute « […] of any of its numerical assignments, i.e., any of its numerical functions expressing the results of measurement ». Les auteurs la reformulent aussitôt en termes d'équivalence : un énoncé est doué de sens si les transformations admissibles conduisent toujours à des énoncés de même valeur de vérité. Une note de bas de page concède que c'est « a necessary but not sufficient condition of meaningfulness » (p. 111, note 6).\n\nDeux corrections à la description qui m'a été transmise. Premièrement, le texte ne parle nulle part de moyenne de rangs ; « rang » n'apparaît qu'à propos de l'échelle de dureté de Mohs, hors de la section 6. Deuxièmement, et c'est plus important, le texte ne dit pas qu'une moyenne d'échelle d'intervalle serait dépourvue de sens : il démontre le contraire. L'exemple 2 (p. 115) prend exactement la comparaison de deux moyennes de températures maximales — janvier contre février — et conclut « Hence (8) is meaningful under these conditions », suivi de la remarque générale : « In general, it may be observed that whether or not a particular mathematical operation can be used with a particular scale does not have a simple yes or no answer. The admissibility of any mathematical operation depends not only on the scale type of the relevant numerical assignments but on the entire numerical statement of which the operation is a part. » Ce qui est déclaré dépourvu de sens, c'est le rapport de deux températures maximales (énoncé 4, p. 108) — vrai en Fahrenheit, faux en Celsius, contre-exemple calculé p. 109 — et la comparaison entre une somme de deux températures et une troisième (exemple 1, p. 113-114), alors que la même somme est douée de sens pour des masses, qui sont sur une échelle de rapport. Le texte est donc plus exigeant, et non plus permissif, que la version courante qui interdit des opérations en bloc par type d'échelle : ce sont des énoncés entiers qui ont ou n'ont pas de sens, pas des opérations.\n\nLa section 6.3 tranche enfin contre deux positions concurrentes, nommées : celle de Weitzenhoffer (1951), pour qui les seules opérations mathématiques admissibles sont celles qui correspondent à des opérations physiques connues, et celle de Guilford (1954), pour qui toutes les règles de l'arithmétique deviennent admissibles dès qu'existe une addition physique. « In contrast to these two positions, Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems » (p. 121-122). Le critère est d'invariance, pas d'opération."
         }
       ]
     },
@@ -36,20 +29,13 @@
           "path": "$.review.notes[5]",
           "access": "n/a",
           "text": "PROSE — le hook (« Un énoncé vrai en Fahrenheit, faux en Celsius ») n'est pas une image ajoutée : c'est l'exemple des auteurs, p. 109, vérifié sur l'image de la page PDF 113 : l'énoncé (4) est jugé vrai avec t(n)=110 et t(n-1)=100 en Fahrenheit (rapport 1,10), et « if the temperature measurements had been made on the Centigrade scale we would have come to the opposite conclusion, since then we would have found t(n)=43.3 and t(n-1)=37.8 and a ratio equal to 1.15 rather than 1.10 ». Le second membre du summary (« c'est l'énoncé entier qui en a ou non, pas l'opération ») est porté explicitement par la section 6.3, p. 122 : « Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems. » Aucun adjectif du hook ou du summary ne déborde ce que j'ai lu."
-        },
-        {
-          "id": "SUP-106c334769abc2bc",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Les auteurs posent d'abord deux problèmes, et un seul troisième. Les deux fondamentaux : le problème de la représentation — « Characterize the formal properties of the empirical operations and relations used in the procedure and show that they are isomorphic to appropriately chosen numerical operations and relations » (p. 4) — et le problème de l'unicité, c'est-à-dire « determine the scale type of the measurements resulting from the procedure » (p. 14). L'assignation numérique est « a function which maps an empirical system homomorphically onto a numerical system » (p. 22) ; une échelle, elle, n'est pas cette fonction mais un triplet dont elle est un terme (avec un système relationnel empirique et un système numérique plein), et le type d'échelle « is defined entirely in terms of the class of numerical assignments which map a given empirical system homomorphically onto a subsystem of the same full numerical system » (p. 23) — sans aucune référence aux opérations empiriques réellement pratiquées. La formulation du problème de la représentation dit « isomorphic (or possibly homomorphic) » (p. 10) : le vocabulaire de la description reçue (« la mesure est un homomorphisme ») est bien celui du texte, mais le texte hésite explicitement entre les deux termes à cet endroit et retient l'homomorphisme partout ailleurs.\n\nLa signification vient en troisième, et les auteurs en rabaissent eux-mêmes le rang : c'est « a third problem which we shall term the meaningfulness problem. While this problem is not central to a theory of measurement it is often involved with various aspects of how measurements may be used, and as such it has engendered considerable controversy » (p. 108). La définition (Definition 33, p. 110-111) est citée plus haut ; sa version complète ajoute « […] of any of its numerical assignments, i.e., any of its numerical functions expressing the results of measurement ». Les auteurs la reformulent aussitôt en termes d'équivalence : un énoncé est doué de sens si les transformations admissibles conduisent toujours à des énoncés de même valeur de vérité. Une note de bas de page concède que c'est « a necessary but not sufficient condition of meaningfulness » (p. 111, note 6).\n\nDeux corrections à la description qui m'a été transmise. Premièrement, le texte ne parle nulle part de moyenne de rangs ; « rang » n'apparaît qu'à propos de l'échelle de dureté de Mohs, hors de la section 6. Deuxièmement, et c'est plus important, le texte ne dit pas qu'une moyenne d'échelle d'intervalle serait dépourvue de sens : il démontre le contraire. L'exemple 2 (p. 115) prend exactement la comparaison de deux moyennes de températures maximales — janvier contre février — et conclut « Hence (8) is meaningful under these conditions », suivi de la remarque générale : « In general, it may be observed that whether or not a particular mathematical operation can be used with a particular scale does not have a simple yes or no answer. The admissibility of any mathematical operation depends not only on the scale type of the relevant numerical assignments but on the entire numerical statement of which the operation is a part. » Ce qui est déclaré dépourvu de sens, c'est le rapport de deux températures maximales (énoncé 4, p. 108) — vrai en Fahrenheit, faux en Celsius, contre-exemple calculé p. 109 — et la comparaison entre une somme de deux températures et une troisième (exemple 1, p. 113-114), alors que la même somme est douée de sens pour des masses, qui sont sur une échelle de rapport. Le texte est donc plus exigeant, et non plus permissif, que la version courante qui interdit des opérations en bloc par type d'échelle : ce sont des énoncés entiers qui ont ou n'ont pas de sens, pas des opérations.\n\nLa section 6.3 tranche enfin contre deux positions concurrentes, nommées : celle de Weitzenhoffer (1951), pour qui les seules opérations mathématiques admissibles sont celles qui correspondent à des opérations physiques connues, et celle de Guilford (1954), pour qui toutes les règles de l'arithmétique deviennent admissibles dès qu'existe une addition physique. « In contrast to these two positions, Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems » (p. 121-122). Le critère est d'invariance, pas d'opération."
         }
       ]
     },
     {
       "claim_id": "C003",
       "locator": "lead[0]",
-      "claim_text": "Convertissons maintenant ces deux mêmes journées en Celsius : 37,8 degrés hier, 43,3 aujourd’hui.",
+      "claim_text": "37,8 degrés hier, 43,3 aujourd’hui",
       "supports": [
         {
           "id": "SUP-98d72b4f60715313",
@@ -57,13 +43,6 @@
           "path": "$.review.notes[5]",
           "access": "n/a",
           "text": "PROSE — le hook (« Un énoncé vrai en Fahrenheit, faux en Celsius ») n'est pas une image ajoutée : c'est l'exemple des auteurs, p. 109, vérifié sur l'image de la page PDF 113 : l'énoncé (4) est jugé vrai avec t(n)=110 et t(n-1)=100 en Fahrenheit (rapport 1,10), et « if the temperature measurements had been made on the Centigrade scale we would have come to the opposite conclusion, since then we would have found t(n)=43.3 and t(n-1)=37.8 and a ratio equal to 1.15 rather than 1.10 ». Le second membre du summary (« c'est l'énoncé entier qui en a ou non, pas l'opération ») est porté explicitement par la section 6.3, p. 122 : « Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems. » Aucun adjectif du hook ou du summary ne déborde ce que j'ai lu."
-        },
-        {
-          "id": "SUP-106c334769abc2bc",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Les auteurs posent d'abord deux problèmes, et un seul troisième. Les deux fondamentaux : le problème de la représentation — « Characterize the formal properties of the empirical operations and relations used in the procedure and show that they are isomorphic to appropriately chosen numerical operations and relations » (p. 4) — et le problème de l'unicité, c'est-à-dire « determine the scale type of the measurements resulting from the procedure » (p. 14). L'assignation numérique est « a function which maps an empirical system homomorphically onto a numerical system » (p. 22) ; une échelle, elle, n'est pas cette fonction mais un triplet dont elle est un terme (avec un système relationnel empirique et un système numérique plein), et le type d'échelle « is defined entirely in terms of the class of numerical assignments which map a given empirical system homomorphically onto a subsystem of the same full numerical system » (p. 23) — sans aucune référence aux opérations empiriques réellement pratiquées. La formulation du problème de la représentation dit « isomorphic (or possibly homomorphic) » (p. 10) : le vocabulaire de la description reçue (« la mesure est un homomorphisme ») est bien celui du texte, mais le texte hésite explicitement entre les deux termes à cet endroit et retient l'homomorphisme partout ailleurs.\n\nLa signification vient en troisième, et les auteurs en rabaissent eux-mêmes le rang : c'est « a third problem which we shall term the meaningfulness problem. While this problem is not central to a theory of measurement it is often involved with various aspects of how measurements may be used, and as such it has engendered considerable controversy » (p. 108). La définition (Definition 33, p. 110-111) est citée plus haut ; sa version complète ajoute « […] of any of its numerical assignments, i.e., any of its numerical functions expressing the results of measurement ». Les auteurs la reformulent aussitôt en termes d'équivalence : un énoncé est doué de sens si les transformations admissibles conduisent toujours à des énoncés de même valeur de vérité. Une note de bas de page concède que c'est « a necessary but not sufficient condition of meaningfulness » (p. 111, note 6).\n\nDeux corrections à la description qui m'a été transmise. Premièrement, le texte ne parle nulle part de moyenne de rangs ; « rang » n'apparaît qu'à propos de l'échelle de dureté de Mohs, hors de la section 6. Deuxièmement, et c'est plus important, le texte ne dit pas qu'une moyenne d'échelle d'intervalle serait dépourvue de sens : il démontre le contraire. L'exemple 2 (p. 115) prend exactement la comparaison de deux moyennes de températures maximales — janvier contre février — et conclut « Hence (8) is meaningful under these conditions », suivi de la remarque générale : « In general, it may be observed that whether or not a particular mathematical operation can be used with a particular scale does not have a simple yes or no answer. The admissibility of any mathematical operation depends not only on the scale type of the relevant numerical assignments but on the entire numerical statement of which the operation is a part. » Ce qui est déclaré dépourvu de sens, c'est le rapport de deux températures maximales (énoncé 4, p. 108) — vrai en Fahrenheit, faux en Celsius, contre-exemple calculé p. 109 — et la comparaison entre une somme de deux températures et une troisième (exemple 1, p. 113-114), alors que la même somme est douée de sens pour des masses, qui sont sur une échelle de rapport. Le texte est donc plus exigeant, et non plus permissif, que la version courante qui interdit des opérations en bloc par type d'échelle : ce sont des énoncés entiers qui ont ou n'ont pas de sens, pas des opérations.\n\nLa section 6.3 tranche enfin contre deux positions concurrentes, nommées : celle de Weitzenhoffer (1951), pour qui les seules opérations mathématiques admissibles sont celles qui correspondent à des opérations physiques connues, et celle de Guilford (1954), pour qui toutes les règles de l'arithmétique deviennent admissibles dès qu'existe une addition physique. « In contrast to these two positions, Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems » (p. 121-122). Le critère est d'invariance, pas d'opération."
         }
       ]
     },
@@ -78,13 +57,6 @@
           "path": "$.review.notes[5]",
           "access": "n/a",
           "text": "PROSE — le hook (« Un énoncé vrai en Fahrenheit, faux en Celsius ») n'est pas une image ajoutée : c'est l'exemple des auteurs, p. 109, vérifié sur l'image de la page PDF 113 : l'énoncé (4) est jugé vrai avec t(n)=110 et t(n-1)=100 en Fahrenheit (rapport 1,10), et « if the temperature measurements had been made on the Centigrade scale we would have come to the opposite conclusion, since then we would have found t(n)=43.3 and t(n-1)=37.8 and a ratio equal to 1.15 rather than 1.10 ». Le second membre du summary (« c'est l'énoncé entier qui en a ou non, pas l'opération ») est porté explicitement par la section 6.3, p. 122 : « Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems. » Aucun adjectif du hook ou du summary ne déborde ce que j'ai lu."
-        },
-        {
-          "id": "SUP-106c334769abc2bc",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Les auteurs posent d'abord deux problèmes, et un seul troisième. Les deux fondamentaux : le problème de la représentation — « Characterize the formal properties of the empirical operations and relations used in the procedure and show that they are isomorphic to appropriately chosen numerical operations and relations » (p. 4) — et le problème de l'unicité, c'est-à-dire « determine the scale type of the measurements resulting from the procedure » (p. 14). L'assignation numérique est « a function which maps an empirical system homomorphically onto a numerical system » (p. 22) ; une échelle, elle, n'est pas cette fonction mais un triplet dont elle est un terme (avec un système relationnel empirique et un système numérique plein), et le type d'échelle « is defined entirely in terms of the class of numerical assignments which map a given empirical system homomorphically onto a subsystem of the same full numerical system » (p. 23) — sans aucune référence aux opérations empiriques réellement pratiquées. La formulation du problème de la représentation dit « isomorphic (or possibly homomorphic) » (p. 10) : le vocabulaire de la description reçue (« la mesure est un homomorphisme ») est bien celui du texte, mais le texte hésite explicitement entre les deux termes à cet endroit et retient l'homomorphisme partout ailleurs.\n\nLa signification vient en troisième, et les auteurs en rabaissent eux-mêmes le rang : c'est « a third problem which we shall term the meaningfulness problem. While this problem is not central to a theory of measurement it is often involved with various aspects of how measurements may be used, and as such it has engendered considerable controversy » (p. 108). La définition (Definition 33, p. 110-111) est citée plus haut ; sa version complète ajoute « […] of any of its numerical assignments, i.e., any of its numerical functions expressing the results of measurement ». Les auteurs la reformulent aussitôt en termes d'équivalence : un énoncé est doué de sens si les transformations admissibles conduisent toujours à des énoncés de même valeur de vérité. Une note de bas de page concède que c'est « a necessary but not sufficient condition of meaningfulness » (p. 111, note 6).\n\nDeux corrections à la description qui m'a été transmise. Premièrement, le texte ne parle nulle part de moyenne de rangs ; « rang » n'apparaît qu'à propos de l'échelle de dureté de Mohs, hors de la section 6. Deuxièmement, et c'est plus important, le texte ne dit pas qu'une moyenne d'échelle d'intervalle serait dépourvue de sens : il démontre le contraire. L'exemple 2 (p. 115) prend exactement la comparaison de deux moyennes de températures maximales — janvier contre février — et conclut « Hence (8) is meaningful under these conditions », suivi de la remarque générale : « In general, it may be observed that whether or not a particular mathematical operation can be used with a particular scale does not have a simple yes or no answer. The admissibility of any mathematical operation depends not only on the scale type of the relevant numerical assignments but on the entire numerical statement of which the operation is a part. » Ce qui est déclaré dépourvu de sens, c'est le rapport de deux températures maximales (énoncé 4, p. 108) — vrai en Fahrenheit, faux en Celsius, contre-exemple calculé p. 109 — et la comparaison entre une somme de deux températures et une troisième (exemple 1, p. 113-114), alors que la même somme est douée de sens pour des masses, qui sont sur une échelle de rapport. Le texte est donc plus exigeant, et non plus permissif, que la version courante qui interdit des opérations en bloc par type d'échelle : ce sont des énoncés entiers qui ont ou n'ont pas de sens, pas des opérations.\n\nLa section 6.3 tranche enfin contre deux positions concurrentes, nommées : celle de Weitzenhoffer (1951), pour qui les seules opérations mathématiques admissibles sont celles qui correspondent à des opérations physiques connues, et celle de Guilford (1954), pour qui toutes les règles de l'arithmétique deviennent admissibles dès qu'existe une addition physique. « In contrast to these two positions, Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems » (p. 121-122). Le critère est d'invariance, pas d'opération."
         }
       ]
     },
@@ -99,20 +71,6 @@
           "path": "$.review.notes[5]",
           "access": "n/a",
           "text": "PROSE — le hook (« Un énoncé vrai en Fahrenheit, faux en Celsius ») n'est pas une image ajoutée : c'est l'exemple des auteurs, p. 109, vérifié sur l'image de la page PDF 113 : l'énoncé (4) est jugé vrai avec t(n)=110 et t(n-1)=100 en Fahrenheit (rapport 1,10), et « if the temperature measurements had been made on the Centigrade scale we would have come to the opposite conclusion, since then we would have found t(n)=43.3 and t(n-1)=37.8 and a ratio equal to 1.15 rather than 1.10 ». Le second membre du summary (« c'est l'énoncé entier qui en a ou non, pas l'opération ») est porté explicitement par la section 6.3, p. 122 : « Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems. » Aucun adjectif du hook ou du summary ne déborde ce que j'ai lu."
-        },
-        {
-          "id": "SUP-106c334769abc2bc",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Les auteurs posent d'abord deux problèmes, et un seul troisième. Les deux fondamentaux : le problème de la représentation — « Characterize the formal properties of the empirical operations and relations used in the procedure and show that they are isomorphic to appropriately chosen numerical operations and relations » (p. 4) — et le problème de l'unicité, c'est-à-dire « determine the scale type of the measurements resulting from the procedure » (p. 14). L'assignation numérique est « a function which maps an empirical system homomorphically onto a numerical system » (p. 22) ; une échelle, elle, n'est pas cette fonction mais un triplet dont elle est un terme (avec un système relationnel empirique et un système numérique plein), et le type d'échelle « is defined entirely in terms of the class of numerical assignments which map a given empirical system homomorphically onto a subsystem of the same full numerical system » (p. 23) — sans aucune référence aux opérations empiriques réellement pratiquées. La formulation du problème de la représentation dit « isomorphic (or possibly homomorphic) » (p. 10) : le vocabulaire de la description reçue (« la mesure est un homomorphisme ») est bien celui du texte, mais le texte hésite explicitement entre les deux termes à cet endroit et retient l'homomorphisme partout ailleurs.\n\nLa signification vient en troisième, et les auteurs en rabaissent eux-mêmes le rang : c'est « a third problem which we shall term the meaningfulness problem. While this problem is not central to a theory of measurement it is often involved with various aspects of how measurements may be used, and as such it has engendered considerable controversy » (p. 108). La définition (Definition 33, p. 110-111) est citée plus haut ; sa version complète ajoute « […] of any of its numerical assignments, i.e., any of its numerical functions expressing the results of measurement ». Les auteurs la reformulent aussitôt en termes d'équivalence : un énoncé est doué de sens si les transformations admissibles conduisent toujours à des énoncés de même valeur de vérité. Une note de bas de page concède que c'est « a necessary but not sufficient condition of meaningfulness » (p. 111, note 6).\n\nDeux corrections à la description qui m'a été transmise. Premièrement, le texte ne parle nulle part de moyenne de rangs ; « rang » n'apparaît qu'à propos de l'échelle de dureté de Mohs, hors de la section 6. Deuxièmement, et c'est plus important, le texte ne dit pas qu'une moyenne d'échelle d'intervalle serait dépourvue de sens : il démontre le contraire. L'exemple 2 (p. 115) prend exactement la comparaison de deux moyennes de températures maximales — janvier contre février — et conclut « Hence (8) is meaningful under these conditions », suivi de la remarque générale : « In general, it may be observed that whether or not a particular mathematical operation can be used with a particular scale does not have a simple yes or no answer. The admissibility of any mathematical operation depends not only on the scale type of the relevant numerical assignments but on the entire numerical statement of which the operation is a part. » Ce qui est déclaré dépourvu de sens, c'est le rapport de deux températures maximales (énoncé 4, p. 108) — vrai en Fahrenheit, faux en Celsius, contre-exemple calculé p. 109 — et la comparaison entre une somme de deux températures et une troisième (exemple 1, p. 113-114), alors que la même somme est douée de sens pour des masses, qui sont sur une échelle de rapport. Le texte est donc plus exigeant, et non plus permissif, que la version courante qui interdit des opérations en bloc par type d'échelle : ce sont des énoncés entiers qui ont ou n'ont pas de sens, pas des opérations.\n\nLa section 6.3 tranche enfin contre deux positions concurrentes, nommées : celle de Weitzenhoffer (1951), pour qui les seules opérations mathématiques admissibles sont celles qui correspondent à des opérations physiques connues, et celle de Guilford (1954), pour qui toutes les règles de l'arithmétique deviennent admissibles dès qu'existe une addition physique. « In contrast to these two positions, Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems » (p. 121-122). Le critère est d'invariance, pas d'opération."
-        },
-        {
-          "id": "SUP-60ea6759ae6fc6fd",
-          "origin": "validated",
-          "path": "$.hook",
-          "access": "n/a",
-          "text": "Un énoncé vrai en Fahrenheit, faux en Celsius : que reste-t-il de son sens ?"
         }
       ]
     },
@@ -143,32 +101,18 @@
           "text": "Patrick Suppes et Joseph L. Zinnes, « Basic Measurement Theory », Technical Report n° 45, Institute for Mathematical Studies in the Social Sciences, Stanford University, 15 mars 1962."
         },
         {
-          "id": "SUP-4afd63bdde16874c",
-          "origin": "validated",
-          "path": "$.sources[0].label",
-          "access": "full-text",
-          "text": "Patrick Suppes et Joseph L. Zinnes, « Basic Measurement Theory », Technical Report n° 45, Psychology Series, Institute for Mathematical Studies in the Social Sciences, Stanford University, 15 mars 1962, 130 p."
-        },
-        {
           "id": "SUP-1020494264574901",
           "origin": "evidence:lecture.json",
           "path": "$.quotation.reference",
           "access": "n/a",
           "text": "Patrick Suppes & Joseph L. Zinnes, « Basic Measurement Theory », Technical Report No. 45, Psychology Series, Institute for Mathematical Studies in the Social Sciences, Applied Mathematics and Statistics Laboratories, Stanford University, 15 mars 1962, dactylogramme de 130 pages (texte p. 1-125, références p. 126-130), paginé « P.S.-J.L.Z.-n ». C'est la version préparatoire du chapitre publié l'année suivante — Suppes, P. & Zinnes, J. L. (1963), « Basic Measurement Theory », in R. D. Luce, R. R. Bush & E. Galanter (dir.), Handbook of Mathematical Psychology, vol. I, New York, Wiley, p. 1-76 — dont la pagination est différente et n'est pas celle citée ici."
-        },
-        {
-          "id": "SUP-05e2243f9cf8b942",
-          "origin": "evidence:lecture.json",
-          "path": "$.attribution.note",
-          "access": "n/a",
-          "text": "La page de titre du rapport technique porte « BASIC MEASUREMENT THEORY / by / Patrick Suppes and Joseph L. Zinnes », les deux noms sur une seule ligne, sans mention d'un auteur principal ni de contributions distinctes ; le texte parle constamment à la première personne du pluriel (« a third problem which we shall term the meaningfulness problem »). J'ai lu cette signature sur l'image de la page de titre, pas seulement dans la couche OCR. Le rapport est daté du 15 mars 1962 ; sa note 1, page 1, annonce qu'il « will be published as a chapter of the forthcoming Handbook of Mathematical Psychology », ce qui a eu lieu en 1963 — la même main tient donc les deux versions, et le millésime de la publication n'est pas celui de la rédaction. Détail relevé sur la page elle-même : cette note nomme les directeurs du Handbook dans l'ordre « R. R. Bush, E. H. Galanter and R. D. Luce », alors que le volume paru porte Luce, Bush et Galanter ; l'ordre imprimé sur le livre est celui à retenir pour citer le chapitre. Deux nuances d'attribution, à ne pas effacer. D'abord, les auteurs ne revendiquent pas l'invention du cadre : ils écrivent, page 3, « (The general viewpoint to be developed in this section was first articulated in Scott and Suppes (1958).) » — le cadre représentation/unicité vient d'un article antérieur de Suppes avec Dana Scott, que je n'ai pas ouvert. Ensuite, c'est bien dans ce texte-ci que le troisième problème reçoit son nom : « a third problem which we shall term the meaningfulness problem » (p. 108) ; la paternité du terme « meaningfulness problem » est donc, elle, revendiquée ici en propre et par les deux auteurs ensemble."
         }
       ]
     },
     {
       "claim_id": "C007",
       "locator": "lead[1]",
-      "claim_text": "et lui ont donné une réponse qui tient en un seul critère : un énoncé construit à partir de mesures a un sens seulement s’il reste vrai, ou reste faux, quelle que soit la façon légitime dont les mesures ont été prises.",
+      "claim_text": "lui ont donné une réponse qui tient en un seul critère : un énoncé construit à partir de mesures a un sens seulement s’il reste vrai, ou reste faux, quelle que soit la façon légitime dont les mesures ont été prises.",
       "supports": [
         {
           "id": "SUP-b7513cb9ad6e4968",
@@ -176,13 +120,6 @@
           "path": "$.quotation.text",
           "access": "n/a",
           "text": "Un énoncé numérique a un sens si et seulement si sa vérité (ou sa fausseté) est constante sous les transformations d'échelle admissibles […]."
-        },
-        {
-          "id": "SUP-af9f8e3a4b83d51b",
-          "origin": "validated",
-          "path": "$.quotation.original_text",
-          "access": "n/a",
-          "text": "A numerical statement is meaningful if and only if its truth (or falsity) is constant under admissible scale transformations […]."
         },
         {
           "id": "SUP-5c087b1e1f3cf6cd",
@@ -211,20 +148,13 @@
           "path": "$.review.notes[5]",
           "access": "n/a",
           "text": "PROSE — le hook (« Un énoncé vrai en Fahrenheit, faux en Celsius ») n'est pas une image ajoutée : c'est l'exemple des auteurs, p. 109, vérifié sur l'image de la page PDF 113 : l'énoncé (4) est jugé vrai avec t(n)=110 et t(n-1)=100 en Fahrenheit (rapport 1,10), et « if the temperature measurements had been made on the Centigrade scale we would have come to the opposite conclusion, since then we would have found t(n)=43.3 and t(n-1)=37.8 and a ratio equal to 1.15 rather than 1.10 ». Le second membre du summary (« c'est l'énoncé entier qui en a ou non, pas l'opération ») est porté explicitement par la section 6.3, p. 122 : « Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems. » Aucun adjectif du hook ou du summary ne déborde ce que j'ai lu."
-        },
-        {
-          "id": "SUP-106c334769abc2bc",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Les auteurs posent d'abord deux problèmes, et un seul troisième. Les deux fondamentaux : le problème de la représentation — « Characterize the formal properties of the empirical operations and relations used in the procedure and show that they are isomorphic to appropriately chosen numerical operations and relations » (p. 4) — et le problème de l'unicité, c'est-à-dire « determine the scale type of the measurements resulting from the procedure » (p. 14). L'assignation numérique est « a function which maps an empirical system homomorphically onto a numerical system » (p. 22) ; une échelle, elle, n'est pas cette fonction mais un triplet dont elle est un terme (avec un système relationnel empirique et un système numérique plein), et le type d'échelle « is defined entirely in terms of the class of numerical assignments which map a given empirical system homomorphically onto a subsystem of the same full numerical system » (p. 23) — sans aucune référence aux opérations empiriques réellement pratiquées. La formulation du problème de la représentation dit « isomorphic (or possibly homomorphic) » (p. 10) : le vocabulaire de la description reçue (« la mesure est un homomorphisme ») est bien celui du texte, mais le texte hésite explicitement entre les deux termes à cet endroit et retient l'homomorphisme partout ailleurs.\n\nLa signification vient en troisième, et les auteurs en rabaissent eux-mêmes le rang : c'est « a third problem which we shall term the meaningfulness problem. While this problem is not central to a theory of measurement it is often involved with various aspects of how measurements may be used, and as such it has engendered considerable controversy » (p. 108). La définition (Definition 33, p. 110-111) est citée plus haut ; sa version complète ajoute « […] of any of its numerical assignments, i.e., any of its numerical functions expressing the results of measurement ». Les auteurs la reformulent aussitôt en termes d'équivalence : un énoncé est doué de sens si les transformations admissibles conduisent toujours à des énoncés de même valeur de vérité. Une note de bas de page concède que c'est « a necessary but not sufficient condition of meaningfulness » (p. 111, note 6).\n\nDeux corrections à la description qui m'a été transmise. Premièrement, le texte ne parle nulle part de moyenne de rangs ; « rang » n'apparaît qu'à propos de l'échelle de dureté de Mohs, hors de la section 6. Deuxièmement, et c'est plus important, le texte ne dit pas qu'une moyenne d'échelle d'intervalle serait dépourvue de sens : il démontre le contraire. L'exemple 2 (p. 115) prend exactement la comparaison de deux moyennes de températures maximales — janvier contre février — et conclut « Hence (8) is meaningful under these conditions », suivi de la remarque générale : « In general, it may be observed that whether or not a particular mathematical operation can be used with a particular scale does not have a simple yes or no answer. The admissibility of any mathematical operation depends not only on the scale type of the relevant numerical assignments but on the entire numerical statement of which the operation is a part. » Ce qui est déclaré dépourvu de sens, c'est le rapport de deux températures maximales (énoncé 4, p. 108) — vrai en Fahrenheit, faux en Celsius, contre-exemple calculé p. 109 — et la comparaison entre une somme de deux températures et une troisième (exemple 1, p. 113-114), alors que la même somme est douée de sens pour des masses, qui sont sur une échelle de rapport. Le texte est donc plus exigeant, et non plus permissif, que la version courante qui interdit des opérations en bloc par type d'échelle : ce sont des énoncés entiers qui ont ou n'ont pas de sens, pas des opérations.\n\nLa section 6.3 tranche enfin contre deux positions concurrentes, nommées : celle de Weitzenhoffer (1951), pour qui les seules opérations mathématiques admissibles sont celles qui correspondent à des opérations physiques connues, et celle de Guilford (1954), pour qui toutes les règles de l'arithmétique deviennent admissibles dès qu'existe une addition physique. « In contrast to these two positions, Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems » (p. 121-122). Le critère est d'invariance, pas d'opération."
         }
       ]
     },
     {
       "claim_id": "C009",
       "locator": "sections[0].paragraphs[0]",
-      "claim_text": "Les deux échelles ne sont pas en désaccord sur le temps qu’il a fait",
+      "claim_text": "Les deux échelles ne sont pas en désaccord sur le temps qu’il a fait, elles ne placent simplement ni leur zéro ni leur graduation au même endroit.",
       "supports": [
         {
           "id": "SUP-98d72b4f60715313",
@@ -245,28 +175,7 @@
     {
       "claim_id": "C010",
       "locator": "sections[0].paragraphs[0]",
-      "claim_text": "elles ne placent simplement ni leur zéro ni leur graduation au même endroit.",
-      "supports": [
-        {
-          "id": "SUP-98d72b4f60715313",
-          "origin": "validated",
-          "path": "$.review.notes[5]",
-          "access": "n/a",
-          "text": "PROSE — le hook (« Un énoncé vrai en Fahrenheit, faux en Celsius ») n'est pas une image ajoutée : c'est l'exemple des auteurs, p. 109, vérifié sur l'image de la page PDF 113 : l'énoncé (4) est jugé vrai avec t(n)=110 et t(n-1)=100 en Fahrenheit (rapport 1,10), et « if the temperature measurements had been made on the Centigrade scale we would have come to the opposite conclusion, since then we would have found t(n)=43.3 and t(n-1)=37.8 and a ratio equal to 1.15 rather than 1.10 ». Le second membre du summary (« c'est l'énoncé entier qui en a ou non, pas l'opération ») est porté explicitement par la section 6.3, p. 122 : « Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems. » Aucun adjectif du hook ou du summary ne déborde ce que j'ai lu."
-        },
-        {
-          "id": "SUP-106c334769abc2bc",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Les auteurs posent d'abord deux problèmes, et un seul troisième. Les deux fondamentaux : le problème de la représentation — « Characterize the formal properties of the empirical operations and relations used in the procedure and show that they are isomorphic to appropriately chosen numerical operations and relations » (p. 4) — et le problème de l'unicité, c'est-à-dire « determine the scale type of the measurements resulting from the procedure » (p. 14). L'assignation numérique est « a function which maps an empirical system homomorphically onto a numerical system » (p. 22) ; une échelle, elle, n'est pas cette fonction mais un triplet dont elle est un terme (avec un système relationnel empirique et un système numérique plein), et le type d'échelle « is defined entirely in terms of the class of numerical assignments which map a given empirical system homomorphically onto a subsystem of the same full numerical system » (p. 23) — sans aucune référence aux opérations empiriques réellement pratiquées. La formulation du problème de la représentation dit « isomorphic (or possibly homomorphic) » (p. 10) : le vocabulaire de la description reçue (« la mesure est un homomorphisme ») est bien celui du texte, mais le texte hésite explicitement entre les deux termes à cet endroit et retient l'homomorphisme partout ailleurs.\n\nLa signification vient en troisième, et les auteurs en rabaissent eux-mêmes le rang : c'est « a third problem which we shall term the meaningfulness problem. While this problem is not central to a theory of measurement it is often involved with various aspects of how measurements may be used, and as such it has engendered considerable controversy » (p. 108). La définition (Definition 33, p. 110-111) est citée plus haut ; sa version complète ajoute « […] of any of its numerical assignments, i.e., any of its numerical functions expressing the results of measurement ». Les auteurs la reformulent aussitôt en termes d'équivalence : un énoncé est doué de sens si les transformations admissibles conduisent toujours à des énoncés de même valeur de vérité. Une note de bas de page concède que c'est « a necessary but not sufficient condition of meaningfulness » (p. 111, note 6).\n\nDeux corrections à la description qui m'a été transmise. Premièrement, le texte ne parle nulle part de moyenne de rangs ; « rang » n'apparaît qu'à propos de l'échelle de dureté de Mohs, hors de la section 6. Deuxièmement, et c'est plus important, le texte ne dit pas qu'une moyenne d'échelle d'intervalle serait dépourvue de sens : il démontre le contraire. L'exemple 2 (p. 115) prend exactement la comparaison de deux moyennes de températures maximales — janvier contre février — et conclut « Hence (8) is meaningful under these conditions », suivi de la remarque générale : « In general, it may be observed that whether or not a particular mathematical operation can be used with a particular scale does not have a simple yes or no answer. The admissibility of any mathematical operation depends not only on the scale type of the relevant numerical assignments but on the entire numerical statement of which the operation is a part. » Ce qui est déclaré dépourvu de sens, c'est le rapport de deux températures maximales (énoncé 4, p. 108) — vrai en Fahrenheit, faux en Celsius, contre-exemple calculé p. 109 — et la comparaison entre une somme de deux températures et une troisième (exemple 1, p. 113-114), alors que la même somme est douée de sens pour des masses, qui sont sur une échelle de rapport. Le texte est donc plus exigeant, et non plus permissif, que la version courante qui interdit des opérations en bloc par type d'échelle : ce sont des énoncés entiers qui ont ou n'ont pas de sens, pas des opérations.\n\nLa section 6.3 tranche enfin contre deux positions concurrentes, nommées : celle de Weitzenhoffer (1951), pour qui les seules opérations mathématiques admissibles sont celles qui correspondent à des opérations physiques connues, et celle de Guilford (1954), pour qui toutes les règles de l'arithmétique deviennent admissibles dès qu'existe une addition physique. « In contrast to these two positions, Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems » (p. 121-122). Le critère est d'invariance, pas d'opération."
-        }
-      ]
-    },
-    {
-      "claim_id": "C011",
-      "locator": "sections[0].paragraphs[0]",
-      "claim_text": "Passer de l’une à l’autre, c’est réécrire toutes les mesures selon une même règle, et cette règle n’est pas libre : c’est le type d’échelle sur lequel on a mesuré qui décide de celles qu’on peut appliquer.",
+      "claim_text": "c’est le type d’échelle sur lequel on a mesuré qui décide de celles qu’on peut appliquer",
       "supports": [
         {
           "id": "SUP-ea63ac6a4f2118a4",
@@ -285,7 +194,7 @@
       ]
     },
     {
-      "claim_id": "C012",
+      "claim_id": "C011",
       "locator": "sections[0].paragraphs[0]",
       "claim_text": "Suppes et Zinnes appellent ces réécritures des transformations d’échelle admissibles.",
       "supports": [
@@ -313,7 +222,7 @@
       ]
     },
     {
-      "claim_id": "C013",
+      "claim_id": "C012",
       "locator": "sections[0].paragraphs[0]",
       "claim_text": "Chez eux, « admissible » est un terme technique et non une appréciation : il désigne les transformations que le type d’échelle autorise.",
       "supports": [
@@ -323,20 +232,13 @@
           "path": "$.quotation.translation.translator",
           "access": "n/a",
           "text": "Traduction interne non publiée (agent lecteur, chaîne Curiosity) ; aucune traduction française publiée de ce texte n'a été identifiée. Deux choix à signaler : « meaningful » est rendu par « a un sens » et non par « significatif », qui en français se lit spontanément comme « statistiquement significatif » — contresens précisément dans le champ où ce texte circule ; et « admissible scale transformations » est rendu par « transformations d'échelle admissibles », « admissible » étant chez les auteurs un terme technique (les transformations que le type d'échelle autorise), pas une appréciation."
-        },
-        {
-          "id": "SUP-2bcfd5daaaabce8a",
-          "origin": "validated",
-          "path": "$.quotation.translation.translator",
-          "access": "n/a",
-          "text": "Traduction interne non publiée (chaîne Curiosity) : « meaningful » est rendu par « a un sens », non par « significatif »."
         }
       ]
     },
     {
-      "claim_id": "C014",
+      "claim_id": "C013",
       "locator": "sections[0].paragraphs[1]",
-      "claim_text": "On peut prendre les mêmes températures et élever chaque nombre au carré : 100 devient 10 000, 110 devient 12 100, l’opération est parfaitement licite en arithmétique.",
+      "claim_text": "100 devient 10 000, 110 devient 12 100, l’opération est parfaitement licite en arithmétique",
       "supports": [
         {
           "id": "SUP-98d72b4f60715313",
@@ -348,7 +250,7 @@
       ]
     },
     {
-      "claim_id": "C015",
+      "claim_id": "C014",
       "locator": "sections[0].paragraphs[1]",
       "claim_text": "Mais rien ne dit qu’une échelle de température produirait ces nombres-là.",
       "supports": [
@@ -369,7 +271,7 @@
       ]
     },
     {
-      "claim_id": "C016",
+      "claim_id": "C015",
       "locator": "sections[0].paragraphs[1]",
       "claim_text": "La conversion vers le Celsius, elle, donne ce que les auteurs présentent comme les mesures qu’on aurait trouvées si elles avaient été prises sur cette échelle : 43,3 et 37,8 pour les deux mêmes journées.",
       "supports": [
@@ -379,18 +281,11 @@
           "path": "$.review.notes[5]",
           "access": "n/a",
           "text": "PROSE — le hook (« Un énoncé vrai en Fahrenheit, faux en Celsius ») n'est pas une image ajoutée : c'est l'exemple des auteurs, p. 109, vérifié sur l'image de la page PDF 113 : l'énoncé (4) est jugé vrai avec t(n)=110 et t(n-1)=100 en Fahrenheit (rapport 1,10), et « if the temperature measurements had been made on the Centigrade scale we would have come to the opposite conclusion, since then we would have found t(n)=43.3 and t(n-1)=37.8 and a ratio equal to 1.15 rather than 1.10 ». Le second membre du summary (« c'est l'énoncé entier qui en a ou non, pas l'opération ») est porté explicitement par la section 6.3, p. 122 : « Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems. » Aucun adjectif du hook ou du summary ne déborde ce que j'ai lu."
-        },
-        {
-          "id": "SUP-106c334769abc2bc",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Les auteurs posent d'abord deux problèmes, et un seul troisième. Les deux fondamentaux : le problème de la représentation — « Characterize the formal properties of the empirical operations and relations used in the procedure and show that they are isomorphic to appropriately chosen numerical operations and relations » (p. 4) — et le problème de l'unicité, c'est-à-dire « determine the scale type of the measurements resulting from the procedure » (p. 14). L'assignation numérique est « a function which maps an empirical system homomorphically onto a numerical system » (p. 22) ; une échelle, elle, n'est pas cette fonction mais un triplet dont elle est un terme (avec un système relationnel empirique et un système numérique plein), et le type d'échelle « is defined entirely in terms of the class of numerical assignments which map a given empirical system homomorphically onto a subsystem of the same full numerical system » (p. 23) — sans aucune référence aux opérations empiriques réellement pratiquées. La formulation du problème de la représentation dit « isomorphic (or possibly homomorphic) » (p. 10) : le vocabulaire de la description reçue (« la mesure est un homomorphisme ») est bien celui du texte, mais le texte hésite explicitement entre les deux termes à cet endroit et retient l'homomorphisme partout ailleurs.\n\nLa signification vient en troisième, et les auteurs en rabaissent eux-mêmes le rang : c'est « a third problem which we shall term the meaningfulness problem. While this problem is not central to a theory of measurement it is often involved with various aspects of how measurements may be used, and as such it has engendered considerable controversy » (p. 108). La définition (Definition 33, p. 110-111) est citée plus haut ; sa version complète ajoute « […] of any of its numerical assignments, i.e., any of its numerical functions expressing the results of measurement ». Les auteurs la reformulent aussitôt en termes d'équivalence : un énoncé est doué de sens si les transformations admissibles conduisent toujours à des énoncés de même valeur de vérité. Une note de bas de page concède que c'est « a necessary but not sufficient condition of meaningfulness » (p. 111, note 6).\n\nDeux corrections à la description qui m'a été transmise. Premièrement, le texte ne parle nulle part de moyenne de rangs ; « rang » n'apparaît qu'à propos de l'échelle de dureté de Mohs, hors de la section 6. Deuxièmement, et c'est plus important, le texte ne dit pas qu'une moyenne d'échelle d'intervalle serait dépourvue de sens : il démontre le contraire. L'exemple 2 (p. 115) prend exactement la comparaison de deux moyennes de températures maximales — janvier contre février — et conclut « Hence (8) is meaningful under these conditions », suivi de la remarque générale : « In general, it may be observed that whether or not a particular mathematical operation can be used with a particular scale does not have a simple yes or no answer. The admissibility of any mathematical operation depends not only on the scale type of the relevant numerical assignments but on the entire numerical statement of which the operation is a part. » Ce qui est déclaré dépourvu de sens, c'est le rapport de deux températures maximales (énoncé 4, p. 108) — vrai en Fahrenheit, faux en Celsius, contre-exemple calculé p. 109 — et la comparaison entre une somme de deux températures et une troisième (exemple 1, p. 113-114), alors que la même somme est douée de sens pour des masses, qui sont sur une échelle de rapport. Le texte est donc plus exigeant, et non plus permissif, que la version courante qui interdit des opérations en bloc par type d'échelle : ce sont des énoncés entiers qui ont ou n'ont pas de sens, pas des opérations.\n\nLa section 6.3 tranche enfin contre deux positions concurrentes, nommées : celle de Weitzenhoffer (1951), pour qui les seules opérations mathématiques admissibles sont celles qui correspondent à des opérations physiques connues, et celle de Guilford (1954), pour qui toutes les règles de l'arithmétique deviennent admissibles dès qu'existe une addition physique. « In contrast to these two positions, Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems » (p. 121-122). Le critère est d'invariance, pas d'opération."
         }
       ]
     },
     {
-      "claim_id": "C017",
+      "claim_id": "C016",
       "locator": "sections[0].paragraphs[1]",
       "claim_text": "La différence entre les deux réécritures ne se joue donc pas dans l’arithmétique : elle se joue dans ce que le type d’échelle autorise, et c’est précisément ce que le mot « admissible » sert à trancher.",
       "supports": [
@@ -411,7 +306,7 @@
       ]
     },
     {
-      "claim_id": "C018",
+      "claim_id": "C017",
       "locator": "sections[1].paragraphs[0]",
       "claim_text": "Suppes et Zinnes écrivent : « Un énoncé numérique a un sens si et seulement si sa vérité (ou sa fausseté) est constante sous les transformations d’échelle admissibles […]. »",
       "supports": [
@@ -437,18 +332,11 @@
           "text": "A numerical statement is meaningful if and only if its truth (or falsity) is constant under admissible scale transformations […]."
         },
         {
-          "id": "SUP-857ffe6e055f68d3",
-          "origin": "validated",
-          "path": "$.quotation.locator",
-          "access": "n/a",
-          "text": "Section 6.1, Definition 33, p. 110"
-        },
-        {
-          "id": "SUP-1b596551fef67639",
+          "id": "SUP-e49a8d9f813ec963",
           "origin": "evidence:lecture.json",
-          "path": "$.quotation.locator",
+          "path": "$.quotation.original_text",
           "access": "n/a",
-          "text": "Rapport technique IMSSS n° 45, section 6 « The Problem of Meaningfulness », sous-section 6.1 « Definition », Definition 33, p. 110 du dactylogramme (feuillet 114 du PDF Stanford)"
+          "text": "A numerical statement is meaningful if and only if its truth (or falsity) is constant under admissible scale transformations […]."
         },
         {
           "id": "SUP-50f2d20747c9e54c",
@@ -460,7 +348,7 @@
       ]
     },
     {
-      "claim_id": "C019",
+      "claim_id": "C018",
       "locator": "sections[1].paragraphs[0]",
       "claim_text": "Le « si et seulement si » compte : il ne s’agit pas d’une qualité souhaitable de plus, mais de ce qui tranche dans les deux sens.",
       "supports": [
@@ -477,18 +365,11 @@
           "path": "$.quotation.original_text",
           "access": "n/a",
           "text": "A numerical statement is meaningful if and only if its truth (or falsity) is constant under admissible scale transformations […]."
-        },
-        {
-          "id": "SUP-866ee284084c4cb0",
-          "origin": "validated",
-          "path": "$.review.notes[6]",
-          "access": "n/a",
-          "text": "Hors des quatre points, pour information et sans effet sur le verdict : (a) le rapport se cite lui-même de travers, la section 6.3 renvoyant deux fois à « Definition 28 » là où la définition porte le numéro 33 — erreur de la source, pas de la fiche ; (b) le summary écrit « a un sens si » là où la définition écrit « si et seulement si » (que la citation, elle, restitue) ; l'écart affaiblit l'énoncé au lieu de l'étendre, et les auteurs eux-mêmes concèdent p. 111 que « Definition 33 gives a necessary but not sufficient condition of meaningfulness », donc rien n'est affirmé au-delà des sources."
         }
       ]
     },
     {
-      "claim_id": "C020",
+      "claim_id": "C019",
       "locator": "sections[1].paragraphs[0]",
       "claim_text": "La définition se lit alors comme un test qu’on peut mener soi-même : prendre un énoncé construit à partir de mesures, le réécrire dans chacune des échelles admissibles pour ce type de grandeur, et regarder si sa valeur de vérité bouge.",
       "supports": [
@@ -509,7 +390,7 @@
       ]
     },
     {
-      "claim_id": "C021",
+      "claim_id": "C020",
       "locator": "sections[1].paragraphs[0]",
       "claim_text": "Si elle peut basculer du vrai au faux, comme la hausse exprimée en pourcentage, l’énoncé ne passe pas.",
       "supports": [
@@ -537,7 +418,7 @@
       ]
     },
     {
-      "claim_id": "C022",
+      "claim_id": "C021",
       "locator": "sections[1].paragraphs[1]",
       "claim_text": "Le mot des auteurs est « meaningful ».",
       "supports": [
@@ -554,11 +435,18 @@
           "path": "$.quotation.original_text",
           "access": "n/a",
           "text": "A numerical statement is meaningful if and only if its truth (or falsity) is constant under admissible scale transformations […]."
+        },
+        {
+          "id": "SUP-ea63ac6a4f2118a4",
+          "origin": "evidence:lecture.json",
+          "path": "$.quotation.translation.translator",
+          "access": "n/a",
+          "text": "Traduction interne non publiée (agent lecteur, chaîne Curiosity) ; aucune traduction française publiée de ce texte n'a été identifiée. Deux choix à signaler : « meaningful » est rendu par « a un sens » et non par « significatif », qui en français se lit spontanément comme « statistiquement significatif » — contresens précisément dans le champ où ce texte circule ; et « admissible scale transformations » est rendu par « transformations d'échelle admissibles », « admissible » étant chez les auteurs un terme technique (les transformations que le type d'échelle autorise), pas une appréciation."
         }
       ]
     },
     {
-      "claim_id": "C023",
+      "claim_id": "C022",
       "locator": "sections[1].paragraphs[1]",
       "claim_text": "Le rendre par « significatif » ferait entendre la significativité statistique, c’est-à-dire un écart trop grand pour être attribué au hasard",
       "supports": [
@@ -579,9 +467,9 @@
       ]
     },
     {
-      "claim_id": "C024",
+      "claim_id": "C023",
       "locator": "sections[1].paragraphs[1]",
-      "claim_text": "il n’en est rien question, aucune probabilité n’intervient dans ce critère.",
+      "claim_text": "il n’en est rien question, aucune probabilité n’intervient dans ce critère",
       "supports": [
         {
           "id": "SUP-b7513cb9ad6e4968",
@@ -600,9 +488,37 @@
       ]
     },
     {
-      "claim_id": "C025",
+      "claim_id": "C024",
       "locator": "sections[1].paragraphs[1]",
       "claim_text": "Et « avoir un sens » ne veut pas dire non plus « être compréhensible ».",
+      "supports": [
+        {
+          "id": "SUP-b7513cb9ad6e4968",
+          "origin": "validated",
+          "path": "$.quotation.text",
+          "access": "n/a",
+          "text": "Un énoncé numérique a un sens si et seulement si sa vérité (ou sa fausseté) est constante sous les transformations d'échelle admissibles […]."
+        },
+        {
+          "id": "SUP-106c334769abc2bc",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Les auteurs posent d'abord deux problèmes, et un seul troisième. Les deux fondamentaux : le problème de la représentation — « Characterize the formal properties of the empirical operations and relations used in the procedure and show that they are isomorphic to appropriately chosen numerical operations and relations » (p. 4) — et le problème de l'unicité, c'est-à-dire « determine the scale type of the measurements resulting from the procedure » (p. 14). L'assignation numérique est « a function which maps an empirical system homomorphically onto a numerical system » (p. 22) ; une échelle, elle, n'est pas cette fonction mais un triplet dont elle est un terme (avec un système relationnel empirique et un système numérique plein), et le type d'échelle « is defined entirely in terms of the class of numerical assignments which map a given empirical system homomorphically onto a subsystem of the same full numerical system » (p. 23) — sans aucune référence aux opérations empiriques réellement pratiquées. La formulation du problème de la représentation dit « isomorphic (or possibly homomorphic) » (p. 10) : le vocabulaire de la description reçue (« la mesure est un homomorphisme ») est bien celui du texte, mais le texte hésite explicitement entre les deux termes à cet endroit et retient l'homomorphisme partout ailleurs.\n\nLa signification vient en troisième, et les auteurs en rabaissent eux-mêmes le rang : c'est « a third problem which we shall term the meaningfulness problem. While this problem is not central to a theory of measurement it is often involved with various aspects of how measurements may be used, and as such it has engendered considerable controversy » (p. 108). La définition (Definition 33, p. 110-111) est citée plus haut ; sa version complète ajoute « […] of any of its numerical assignments, i.e., any of its numerical functions expressing the results of measurement ». Les auteurs la reformulent aussitôt en termes d'équivalence : un énoncé est doué de sens si les transformations admissibles conduisent toujours à des énoncés de même valeur de vérité. Une note de bas de page concède que c'est « a necessary but not sufficient condition of meaningfulness » (p. 111, note 6).\n\nDeux corrections à la description qui m'a été transmise. Premièrement, le texte ne parle nulle part de moyenne de rangs ; « rang » n'apparaît qu'à propos de l'échelle de dureté de Mohs, hors de la section 6. Deuxièmement, et c'est plus important, le texte ne dit pas qu'une moyenne d'échelle d'intervalle serait dépourvue de sens : il démontre le contraire. L'exemple 2 (p. 115) prend exactement la comparaison de deux moyennes de températures maximales — janvier contre février — et conclut « Hence (8) is meaningful under these conditions », suivi de la remarque générale : « In general, it may be observed that whether or not a particular mathematical operation can be used with a particular scale does not have a simple yes or no answer. The admissibility of any mathematical operation depends not only on the scale type of the relevant numerical assignments but on the entire numerical statement of which the operation is a part. » Ce qui est déclaré dépourvu de sens, c'est le rapport de deux températures maximales (énoncé 4, p. 108) — vrai en Fahrenheit, faux en Celsius, contre-exemple calculé p. 109 — et la comparaison entre une somme de deux températures et une troisième (exemple 1, p. 113-114), alors que la même somme est douée de sens pour des masses, qui sont sur une échelle de rapport. Le texte est donc plus exigeant, et non plus permissif, que la version courante qui interdit des opérations en bloc par type d'échelle : ce sont des énoncés entiers qui ont ou n'ont pas de sens, pas des opérations.\n\nLa section 6.3 tranche enfin contre deux positions concurrentes, nommées : celle de Weitzenhoffer (1951), pour qui les seules opérations mathématiques admissibles sont celles qui correspondent à des opérations physiques connues, et celle de Guilford (1954), pour qui toutes les règles de l'arithmétique deviennent admissibles dès qu'existe une addition physique. « In contrast to these two positions, Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems » (p. 121-122). Le critère est d'invariance, pas d'opération."
+        },
+        {
+          "id": "SUP-ea63ac6a4f2118a4",
+          "origin": "evidence:lecture.json",
+          "path": "$.quotation.translation.translator",
+          "access": "n/a",
+          "text": "Traduction interne non publiée (agent lecteur, chaîne Curiosity) ; aucune traduction française publiée de ce texte n'a été identifiée. Deux choix à signaler : « meaningful » est rendu par « a un sens » et non par « significatif », qui en français se lit spontanément comme « statistiquement significatif » — contresens précisément dans le champ où ce texte circule ; et « admissible scale transformations » est rendu par « transformations d'échelle admissibles », « admissible » étant chez les auteurs un terme technique (les transformations que le type d'échelle autorise), pas une appréciation."
+        }
+      ]
+    },
+    {
+      "claim_id": "C025",
+      "locator": "sections[1].paragraphs[1]",
+      "claim_text": "Avoir un sens, dans cette définition, signifie une chose et une seule : ne pas dépendre de l’échelle choisie.",
       "supports": [
         {
           "id": "SUP-b7513cb9ad6e4968",
@@ -622,36 +538,8 @@
     },
     {
       "claim_id": "C026",
-      "locator": "sections[1].paragraphs[1]",
-      "claim_text": "Avoir un sens, dans cette définition, signifie une chose et une seule : ne pas dépendre de l’échelle choisie.",
-      "supports": [
-        {
-          "id": "SUP-b7513cb9ad6e4968",
-          "origin": "validated",
-          "path": "$.quotation.text",
-          "access": "n/a",
-          "text": "Un énoncé numérique a un sens si et seulement si sa vérité (ou sa fausseté) est constante sous les transformations d'échelle admissibles […]."
-        },
-        {
-          "id": "SUP-106c334769abc2bc",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Les auteurs posent d'abord deux problèmes, et un seul troisième. Les deux fondamentaux : le problème de la représentation — « Characterize the formal properties of the empirical operations and relations used in the procedure and show that they are isomorphic to appropriately chosen numerical operations and relations » (p. 4) — et le problème de l'unicité, c'est-à-dire « determine the scale type of the measurements resulting from the procedure » (p. 14). L'assignation numérique est « a function which maps an empirical system homomorphically onto a numerical system » (p. 22) ; une échelle, elle, n'est pas cette fonction mais un triplet dont elle est un terme (avec un système relationnel empirique et un système numérique plein), et le type d'échelle « is defined entirely in terms of the class of numerical assignments which map a given empirical system homomorphically onto a subsystem of the same full numerical system » (p. 23) — sans aucune référence aux opérations empiriques réellement pratiquées. La formulation du problème de la représentation dit « isomorphic (or possibly homomorphic) » (p. 10) : le vocabulaire de la description reçue (« la mesure est un homomorphisme ») est bien celui du texte, mais le texte hésite explicitement entre les deux termes à cet endroit et retient l'homomorphisme partout ailleurs.\n\nLa signification vient en troisième, et les auteurs en rabaissent eux-mêmes le rang : c'est « a third problem which we shall term the meaningfulness problem. While this problem is not central to a theory of measurement it is often involved with various aspects of how measurements may be used, and as such it has engendered considerable controversy » (p. 108). La définition (Definition 33, p. 110-111) est citée plus haut ; sa version complète ajoute « […] of any of its numerical assignments, i.e., any of its numerical functions expressing the results of measurement ». Les auteurs la reformulent aussitôt en termes d'équivalence : un énoncé est doué de sens si les transformations admissibles conduisent toujours à des énoncés de même valeur de vérité. Une note de bas de page concède que c'est « a necessary but not sufficient condition of meaningfulness » (p. 111, note 6).\n\nDeux corrections à la description qui m'a été transmise. Premièrement, le texte ne parle nulle part de moyenne de rangs ; « rang » n'apparaît qu'à propos de l'échelle de dureté de Mohs, hors de la section 6. Deuxièmement, et c'est plus important, le texte ne dit pas qu'une moyenne d'échelle d'intervalle serait dépourvue de sens : il démontre le contraire. L'exemple 2 (p. 115) prend exactement la comparaison de deux moyennes de températures maximales — janvier contre février — et conclut « Hence (8) is meaningful under these conditions », suivi de la remarque générale : « In general, it may be observed that whether or not a particular mathematical operation can be used with a particular scale does not have a simple yes or no answer. The admissibility of any mathematical operation depends not only on the scale type of the relevant numerical assignments but on the entire numerical statement of which the operation is a part. » Ce qui est déclaré dépourvu de sens, c'est le rapport de deux températures maximales (énoncé 4, p. 108) — vrai en Fahrenheit, faux en Celsius, contre-exemple calculé p. 109 — et la comparaison entre une somme de deux températures et une troisième (exemple 1, p. 113-114), alors que la même somme est douée de sens pour des masses, qui sont sur une échelle de rapport. Le texte est donc plus exigeant, et non plus permissif, que la version courante qui interdit des opérations en bloc par type d'échelle : ce sont des énoncés entiers qui ont ou n'ont pas de sens, pas des opérations.\n\nLa section 6.3 tranche enfin contre deux positions concurrentes, nommées : celle de Weitzenhoffer (1951), pour qui les seules opérations mathématiques admissibles sont celles qui correspondent à des opérations physiques connues, et celle de Guilford (1954), pour qui toutes les règles de l'arithmétique deviennent admissibles dès qu'existe une addition physique. « In contrast to these two positions, Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems » (p. 121-122). Le critère est d'invariance, pas d'opération."
-        },
-        {
-          "id": "SUP-98d72b4f60715313",
-          "origin": "validated",
-          "path": "$.review.notes[5]",
-          "access": "n/a",
-          "text": "PROSE — le hook (« Un énoncé vrai en Fahrenheit, faux en Celsius ») n'est pas une image ajoutée : c'est l'exemple des auteurs, p. 109, vérifié sur l'image de la page PDF 113 : l'énoncé (4) est jugé vrai avec t(n)=110 et t(n-1)=100 en Fahrenheit (rapport 1,10), et « if the temperature measurements had been made on the Centigrade scale we would have come to the opposite conclusion, since then we would have found t(n)=43.3 and t(n-1)=37.8 and a ratio equal to 1.15 rather than 1.10 ». Le second membre du summary (« c'est l'énoncé entier qui en a ou non, pas l'opération ») est porté explicitement par la section 6.3, p. 122 : « Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems. » Aucun adjectif du hook ou du summary ne déborde ce que j'ai lu."
-        }
-      ]
-    },
-    {
-      "claim_id": "C027",
       "locator": "sections[2].paragraphs[0]",
-      "claim_text": "C’est exactement ce que Suppes et Zinnes refusent.",
+      "claim_text": "que le rapport serait une opération suspecte, et qu’il suffirait de dresser, type d’échelle par type d’échelle, la liste des opérations interdites. C’est exactement ce que Suppes et Zinnes refusent.",
       "supports": [
         {
           "id": "SUP-65d1748cdb9d44b9",
@@ -670,7 +558,7 @@
       ]
     },
     {
-      "claim_id": "C028",
+      "claim_id": "C027",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "Dans le même texte, la comparaison entre la moyenne des températures maximales de janvier et celle de février est déclarée douée de sens, dans les conditions qu’ils précisent, alors que le rapport de deux températures ne l’est pas.",
       "supports": [
@@ -691,7 +579,7 @@
       ]
     },
     {
-      "claim_id": "C029",
+      "claim_id": "C028",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "La moyenne n’est pourtant pas une opération plus prudente que la division.",
       "supports": [
@@ -712,9 +600,30 @@
       ]
     },
     {
+      "claim_id": "C029",
+      "locator": "sections[2].paragraphs[1]",
+      "claim_text": "Comparer deux moyennes, c’est demander laquelle est la plus grande",
+      "supports": [
+        {
+          "id": "SUP-106c334769abc2bc",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Les auteurs posent d'abord deux problèmes, et un seul troisième. Les deux fondamentaux : le problème de la représentation — « Characterize the formal properties of the empirical operations and relations used in the procedure and show that they are isomorphic to appropriately chosen numerical operations and relations » (p. 4) — et le problème de l'unicité, c'est-à-dire « determine the scale type of the measurements resulting from the procedure » (p. 14). L'assignation numérique est « a function which maps an empirical system homomorphically onto a numerical system » (p. 22) ; une échelle, elle, n'est pas cette fonction mais un triplet dont elle est un terme (avec un système relationnel empirique et un système numérique plein), et le type d'échelle « is defined entirely in terms of the class of numerical assignments which map a given empirical system homomorphically onto a subsystem of the same full numerical system » (p. 23) — sans aucune référence aux opérations empiriques réellement pratiquées. La formulation du problème de la représentation dit « isomorphic (or possibly homomorphic) » (p. 10) : le vocabulaire de la description reçue (« la mesure est un homomorphisme ») est bien celui du texte, mais le texte hésite explicitement entre les deux termes à cet endroit et retient l'homomorphisme partout ailleurs.\n\nLa signification vient en troisième, et les auteurs en rabaissent eux-mêmes le rang : c'est « a third problem which we shall term the meaningfulness problem. While this problem is not central to a theory of measurement it is often involved with various aspects of how measurements may be used, and as such it has engendered considerable controversy » (p. 108). La définition (Definition 33, p. 110-111) est citée plus haut ; sa version complète ajoute « […] of any of its numerical assignments, i.e., any of its numerical functions expressing the results of measurement ». Les auteurs la reformulent aussitôt en termes d'équivalence : un énoncé est doué de sens si les transformations admissibles conduisent toujours à des énoncés de même valeur de vérité. Une note de bas de page concède que c'est « a necessary but not sufficient condition of meaningfulness » (p. 111, note 6).\n\nDeux corrections à la description qui m'a été transmise. Premièrement, le texte ne parle nulle part de moyenne de rangs ; « rang » n'apparaît qu'à propos de l'échelle de dureté de Mohs, hors de la section 6. Deuxièmement, et c'est plus important, le texte ne dit pas qu'une moyenne d'échelle d'intervalle serait dépourvue de sens : il démontre le contraire. L'exemple 2 (p. 115) prend exactement la comparaison de deux moyennes de températures maximales — janvier contre février — et conclut « Hence (8) is meaningful under these conditions », suivi de la remarque générale : « In general, it may be observed that whether or not a particular mathematical operation can be used with a particular scale does not have a simple yes or no answer. The admissibility of any mathematical operation depends not only on the scale type of the relevant numerical assignments but on the entire numerical statement of which the operation is a part. » Ce qui est déclaré dépourvu de sens, c'est le rapport de deux températures maximales (énoncé 4, p. 108) — vrai en Fahrenheit, faux en Celsius, contre-exemple calculé p. 109 — et la comparaison entre une somme de deux températures et une troisième (exemple 1, p. 113-114), alors que la même somme est douée de sens pour des masses, qui sont sur une échelle de rapport. Le texte est donc plus exigeant, et non plus permissif, que la version courante qui interdit des opérations en bloc par type d'échelle : ce sont des énoncés entiers qui ont ou n'ont pas de sens, pas des opérations.\n\nLa section 6.3 tranche enfin contre deux positions concurrentes, nommées : celle de Weitzenhoffer (1951), pour qui les seules opérations mathématiques admissibles sont celles qui correspondent à des opérations physiques connues, et celle de Guilford (1954), pour qui toutes les règles de l'arithmétique deviennent admissibles dès qu'existe une addition physique. « In contrast to these two positions, Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems » (p. 121-122). Le critère est d'invariance, pas d'opération."
+        },
+        {
+          "id": "SUP-65d1748cdb9d44b9",
+          "origin": "validated",
+          "path": "$.notes[1]",
+          "access": "n/a",
+          "text": "Le texte ne proscrit aucune opération par type d'échelle : il démontre le contraire. La comparaison de deux moyennes de températures est déclarée douée de sens (exemple 2, p. 115), tandis que le rapport de deux températures ne l'est pas (p. 108-109). « The admissibility of any mathematical operation depends not only on the scale type […] but on the entire numerical statement of which the operation is a part. »"
+        }
+      ]
+    },
+    {
       "claim_id": "C030",
       "locator": "sections[2].paragraphs[1]",
-      "claim_text": "le passage d’une échelle à l’autre ne renverse pas l’ordre des mesures, puisque 110 dépasse 100 en Fahrenheit et que 43,3 dépasse 37,8 en Celsius.",
+      "claim_text": "sur les quatre nombres de nos deux journées, l’ordre ne bouge pas d’une écriture à l’autre : 110 dépasse 100 en Fahrenheit, et 43,3 dépasse 37,8 en Celsius",
       "supports": [
         {
           "id": "SUP-98d72b4f60715313",
@@ -722,34 +631,20 @@
           "path": "$.review.notes[5]",
           "access": "n/a",
           "text": "PROSE — le hook (« Un énoncé vrai en Fahrenheit, faux en Celsius ») n'est pas une image ajoutée : c'est l'exemple des auteurs, p. 109, vérifié sur l'image de la page PDF 113 : l'énoncé (4) est jugé vrai avec t(n)=110 et t(n-1)=100 en Fahrenheit (rapport 1,10), et « if the temperature measurements had been made on the Centigrade scale we would have come to the opposite conclusion, since then we would have found t(n)=43.3 and t(n-1)=37.8 and a ratio equal to 1.15 rather than 1.10 ». Le second membre du summary (« c'est l'énoncé entier qui en a ou non, pas l'opération ») est porté explicitement par la section 6.3, p. 122 : « Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems. » Aucun adjectif du hook ou du summary ne déborde ce que j'ai lu."
-        },
-        {
-          "id": "SUP-106c334769abc2bc",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Les auteurs posent d'abord deux problèmes, et un seul troisième. Les deux fondamentaux : le problème de la représentation — « Characterize the formal properties of the empirical operations and relations used in the procedure and show that they are isomorphic to appropriately chosen numerical operations and relations » (p. 4) — et le problème de l'unicité, c'est-à-dire « determine the scale type of the measurements resulting from the procedure » (p. 14). L'assignation numérique est « a function which maps an empirical system homomorphically onto a numerical system » (p. 22) ; une échelle, elle, n'est pas cette fonction mais un triplet dont elle est un terme (avec un système relationnel empirique et un système numérique plein), et le type d'échelle « is defined entirely in terms of the class of numerical assignments which map a given empirical system homomorphically onto a subsystem of the same full numerical system » (p. 23) — sans aucune référence aux opérations empiriques réellement pratiquées. La formulation du problème de la représentation dit « isomorphic (or possibly homomorphic) » (p. 10) : le vocabulaire de la description reçue (« la mesure est un homomorphisme ») est bien celui du texte, mais le texte hésite explicitement entre les deux termes à cet endroit et retient l'homomorphisme partout ailleurs.\n\nLa signification vient en troisième, et les auteurs en rabaissent eux-mêmes le rang : c'est « a third problem which we shall term the meaningfulness problem. While this problem is not central to a theory of measurement it is often involved with various aspects of how measurements may be used, and as such it has engendered considerable controversy » (p. 108). La définition (Definition 33, p. 110-111) est citée plus haut ; sa version complète ajoute « […] of any of its numerical assignments, i.e., any of its numerical functions expressing the results of measurement ». Les auteurs la reformulent aussitôt en termes d'équivalence : un énoncé est doué de sens si les transformations admissibles conduisent toujours à des énoncés de même valeur de vérité. Une note de bas de page concède que c'est « a necessary but not sufficient condition of meaningfulness » (p. 111, note 6).\n\nDeux corrections à la description qui m'a été transmise. Premièrement, le texte ne parle nulle part de moyenne de rangs ; « rang » n'apparaît qu'à propos de l'échelle de dureté de Mohs, hors de la section 6. Deuxièmement, et c'est plus important, le texte ne dit pas qu'une moyenne d'échelle d'intervalle serait dépourvue de sens : il démontre le contraire. L'exemple 2 (p. 115) prend exactement la comparaison de deux moyennes de températures maximales — janvier contre février — et conclut « Hence (8) is meaningful under these conditions », suivi de la remarque générale : « In general, it may be observed that whether or not a particular mathematical operation can be used with a particular scale does not have a simple yes or no answer. The admissibility of any mathematical operation depends not only on the scale type of the relevant numerical assignments but on the entire numerical statement of which the operation is a part. » Ce qui est déclaré dépourvu de sens, c'est le rapport de deux températures maximales (énoncé 4, p. 108) — vrai en Fahrenheit, faux en Celsius, contre-exemple calculé p. 109 — et la comparaison entre une somme de deux températures et une troisième (exemple 1, p. 113-114), alors que la même somme est douée de sens pour des masses, qui sont sur une échelle de rapport. Le texte est donc plus exigeant, et non plus permissif, que la version courante qui interdit des opérations en bloc par type d'échelle : ce sont des énoncés entiers qui ont ou n'ont pas de sens, pas des opérations.\n\nLa section 6.3 tranche enfin contre deux positions concurrentes, nommées : celle de Weitzenhoffer (1951), pour qui les seules opérations mathématiques admissibles sont celles qui correspondent à des opérations physiques connues, et celle de Guilford (1954), pour qui toutes les règles de l'arithmétique deviennent admissibles dès qu'existe une addition physique. « In contrast to these two positions, Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems » (p. 121-122). Le critère est d'invariance, pas d'opération."
         }
       ]
     },
     {
       "claim_id": "C031",
       "locator": "sections[2].paragraphs[1]",
-      "claim_text": "La question reçoit donc la même réponse des deux côtés.",
+      "claim_text": "Pour cette paire-là, la question reçoit la même réponse des deux côtés.",
       "supports": [
         {
-          "id": "SUP-65d1748cdb9d44b9",
+          "id": "SUP-98d72b4f60715313",
           "origin": "validated",
-          "path": "$.notes[1]",
+          "path": "$.review.notes[5]",
           "access": "n/a",
-          "text": "Le texte ne proscrit aucune opération par type d'échelle : il démontre le contraire. La comparaison de deux moyennes de températures est déclarée douée de sens (exemple 2, p. 115), tandis que le rapport de deux températures ne l'est pas (p. 108-109). « The admissibility of any mathematical operation depends not only on the scale type […] but on the entire numerical statement of which the operation is a part. »"
-        },
-        {
-          "id": "SUP-106c334769abc2bc",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Les auteurs posent d'abord deux problèmes, et un seul troisième. Les deux fondamentaux : le problème de la représentation — « Characterize the formal properties of the empirical operations and relations used in the procedure and show that they are isomorphic to appropriately chosen numerical operations and relations » (p. 4) — et le problème de l'unicité, c'est-à-dire « determine the scale type of the measurements resulting from the procedure » (p. 14). L'assignation numérique est « a function which maps an empirical system homomorphically onto a numerical system » (p. 22) ; une échelle, elle, n'est pas cette fonction mais un triplet dont elle est un terme (avec un système relationnel empirique et un système numérique plein), et le type d'échelle « is defined entirely in terms of the class of numerical assignments which map a given empirical system homomorphically onto a subsystem of the same full numerical system » (p. 23) — sans aucune référence aux opérations empiriques réellement pratiquées. La formulation du problème de la représentation dit « isomorphic (or possibly homomorphic) » (p. 10) : le vocabulaire de la description reçue (« la mesure est un homomorphisme ») est bien celui du texte, mais le texte hésite explicitement entre les deux termes à cet endroit et retient l'homomorphisme partout ailleurs.\n\nLa signification vient en troisième, et les auteurs en rabaissent eux-mêmes le rang : c'est « a third problem which we shall term the meaningfulness problem. While this problem is not central to a theory of measurement it is often involved with various aspects of how measurements may be used, and as such it has engendered considerable controversy » (p. 108). La définition (Definition 33, p. 110-111) est citée plus haut ; sa version complète ajoute « […] of any of its numerical assignments, i.e., any of its numerical functions expressing the results of measurement ». Les auteurs la reformulent aussitôt en termes d'équivalence : un énoncé est doué de sens si les transformations admissibles conduisent toujours à des énoncés de même valeur de vérité. Une note de bas de page concède que c'est « a necessary but not sufficient condition of meaningfulness » (p. 111, note 6).\n\nDeux corrections à la description qui m'a été transmise. Premièrement, le texte ne parle nulle part de moyenne de rangs ; « rang » n'apparaît qu'à propos de l'échelle de dureté de Mohs, hors de la section 6. Deuxièmement, et c'est plus important, le texte ne dit pas qu'une moyenne d'échelle d'intervalle serait dépourvue de sens : il démontre le contraire. L'exemple 2 (p. 115) prend exactement la comparaison de deux moyennes de températures maximales — janvier contre février — et conclut « Hence (8) is meaningful under these conditions », suivi de la remarque générale : « In general, it may be observed that whether or not a particular mathematical operation can be used with a particular scale does not have a simple yes or no answer. The admissibility of any mathematical operation depends not only on the scale type of the relevant numerical assignments but on the entire numerical statement of which the operation is a part. » Ce qui est déclaré dépourvu de sens, c'est le rapport de deux températures maximales (énoncé 4, p. 108) — vrai en Fahrenheit, faux en Celsius, contre-exemple calculé p. 109 — et la comparaison entre une somme de deux températures et une troisième (exemple 1, p. 113-114), alors que la même somme est douée de sens pour des masses, qui sont sur une échelle de rapport. Le texte est donc plus exigeant, et non plus permissif, que la version courante qui interdit des opérations en bloc par type d'échelle : ce sont des énoncés entiers qui ont ou n'ont pas de sens, pas des opérations.\n\nLa section 6.3 tranche enfin contre deux positions concurrentes, nommées : celle de Weitzenhoffer (1951), pour qui les seules opérations mathématiques admissibles sont celles qui correspondent à des opérations physiques connues, et celle de Guilford (1954), pour qui toutes les règles de l'arithmétique deviennent admissibles dès qu'existe une addition physique. « In contrast to these two positions, Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems » (p. 121-122). Le critère est d'invariance, pas d'opération."
+          "text": "PROSE — le hook (« Un énoncé vrai en Fahrenheit, faux en Celsius ») n'est pas une image ajoutée : c'est l'exemple des auteurs, p. 109, vérifié sur l'image de la page PDF 113 : l'énoncé (4) est jugé vrai avec t(n)=110 et t(n-1)=100 en Fahrenheit (rapport 1,10), et « if the temperature measurements had been made on the Centigrade scale we would have come to the opposite conclusion, since then we would have found t(n)=43.3 and t(n-1)=37.8 and a ratio equal to 1.15 rather than 1.10 ». Le second membre du summary (« c'est l'énoncé entier qui en a ou non, pas l'opération ») est porté explicitement par la section 6.3, p. 122 : « Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems. » Aucun adjectif du hook ou du summary ne déborde ce que j'ai lu."
         }
       ]
     },
@@ -785,13 +680,6 @@
           "path": "$.review.notes[5]",
           "access": "n/a",
           "text": "PROSE — le hook (« Un énoncé vrai en Fahrenheit, faux en Celsius ») n'est pas une image ajoutée : c'est l'exemple des auteurs, p. 109, vérifié sur l'image de la page PDF 113 : l'énoncé (4) est jugé vrai avec t(n)=110 et t(n-1)=100 en Fahrenheit (rapport 1,10), et « if the temperature measurements had been made on the Centigrade scale we would have come to the opposite conclusion, since then we would have found t(n)=43.3 and t(n-1)=37.8 and a ratio equal to 1.15 rather than 1.10 ». Le second membre du summary (« c'est l'énoncé entier qui en a ou non, pas l'opération ») est porté explicitement par la section 6.3, p. 122 : « Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems. » Aucun adjectif du hook ou du summary ne déborde ce que j'ai lu."
-        },
-        {
-          "id": "SUP-106c334769abc2bc",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Les auteurs posent d'abord deux problèmes, et un seul troisième. Les deux fondamentaux : le problème de la représentation — « Characterize the formal properties of the empirical operations and relations used in the procedure and show that they are isomorphic to appropriately chosen numerical operations and relations » (p. 4) — et le problème de l'unicité, c'est-à-dire « determine the scale type of the measurements resulting from the procedure » (p. 14). L'assignation numérique est « a function which maps an empirical system homomorphically onto a numerical system » (p. 22) ; une échelle, elle, n'est pas cette fonction mais un triplet dont elle est un terme (avec un système relationnel empirique et un système numérique plein), et le type d'échelle « is defined entirely in terms of the class of numerical assignments which map a given empirical system homomorphically onto a subsystem of the same full numerical system » (p. 23) — sans aucune référence aux opérations empiriques réellement pratiquées. La formulation du problème de la représentation dit « isomorphic (or possibly homomorphic) » (p. 10) : le vocabulaire de la description reçue (« la mesure est un homomorphisme ») est bien celui du texte, mais le texte hésite explicitement entre les deux termes à cet endroit et retient l'homomorphisme partout ailleurs.\n\nLa signification vient en troisième, et les auteurs en rabaissent eux-mêmes le rang : c'est « a third problem which we shall term the meaningfulness problem. While this problem is not central to a theory of measurement it is often involved with various aspects of how measurements may be used, and as such it has engendered considerable controversy » (p. 108). La définition (Definition 33, p. 110-111) est citée plus haut ; sa version complète ajoute « […] of any of its numerical assignments, i.e., any of its numerical functions expressing the results of measurement ». Les auteurs la reformulent aussitôt en termes d'équivalence : un énoncé est doué de sens si les transformations admissibles conduisent toujours à des énoncés de même valeur de vérité. Une note de bas de page concède que c'est « a necessary but not sufficient condition of meaningfulness » (p. 111, note 6).\n\nDeux corrections à la description qui m'a été transmise. Premièrement, le texte ne parle nulle part de moyenne de rangs ; « rang » n'apparaît qu'à propos de l'échelle de dureté de Mohs, hors de la section 6. Deuxièmement, et c'est plus important, le texte ne dit pas qu'une moyenne d'échelle d'intervalle serait dépourvue de sens : il démontre le contraire. L'exemple 2 (p. 115) prend exactement la comparaison de deux moyennes de températures maximales — janvier contre février — et conclut « Hence (8) is meaningful under these conditions », suivi de la remarque générale : « In general, it may be observed that whether or not a particular mathematical operation can be used with a particular scale does not have a simple yes or no answer. The admissibility of any mathematical operation depends not only on the scale type of the relevant numerical assignments but on the entire numerical statement of which the operation is a part. » Ce qui est déclaré dépourvu de sens, c'est le rapport de deux températures maximales (énoncé 4, p. 108) — vrai en Fahrenheit, faux en Celsius, contre-exemple calculé p. 109 — et la comparaison entre une somme de deux températures et une troisième (exemple 1, p. 113-114), alors que la même somme est douée de sens pour des masses, qui sont sur une échelle de rapport. Le texte est donc plus exigeant, et non plus permissif, que la version courante qui interdit des opérations en bloc par type d'échelle : ce sont des énoncés entiers qui ont ou n'ont pas de sens, pas des opérations.\n\nLa section 6.3 tranche enfin contre deux positions concurrentes, nommées : celle de Weitzenhoffer (1951), pour qui les seules opérations mathématiques admissibles sont celles qui correspondent à des opérations physiques connues, et celle de Guilford (1954), pour qui toutes les règles de l'arithmétique deviennent admissibles dès qu'existe une addition physique. « In contrast to these two positions, Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems » (p. 121-122). Le critère est d'invariance, pas d'opération."
         }
       ]
     },
@@ -808,18 +696,18 @@
           "text": "Le texte ne proscrit aucune opération par type d'échelle : il démontre le contraire. La comparaison de deux moyennes de températures est déclarée douée de sens (exemple 2, p. 115), tandis que le rapport de deux températures ne l'est pas (p. 108-109). « The admissibility of any mathematical operation depends not only on the scale type […] but on the entire numerical statement of which the operation is a part. »"
         },
         {
-          "id": "SUP-94bf614c47bd57b8",
-          "origin": "validated",
-          "path": "$.summary",
-          "access": "n/a",
-          "text": "Un énoncé numérique a un sens si sa vérité reste constante sous les transformations d'échelle admissibles : c'est l'énoncé entier qui en a ou non, pas l'opération."
-        },
-        {
           "id": "SUP-106c334769abc2bc",
           "origin": "evidence:lecture.json",
           "path": "$.definition_de_lauteur",
           "access": "n/a",
           "text": "Les auteurs posent d'abord deux problèmes, et un seul troisième. Les deux fondamentaux : le problème de la représentation — « Characterize the formal properties of the empirical operations and relations used in the procedure and show that they are isomorphic to appropriately chosen numerical operations and relations » (p. 4) — et le problème de l'unicité, c'est-à-dire « determine the scale type of the measurements resulting from the procedure » (p. 14). L'assignation numérique est « a function which maps an empirical system homomorphically onto a numerical system » (p. 22) ; une échelle, elle, n'est pas cette fonction mais un triplet dont elle est un terme (avec un système relationnel empirique et un système numérique plein), et le type d'échelle « is defined entirely in terms of the class of numerical assignments which map a given empirical system homomorphically onto a subsystem of the same full numerical system » (p. 23) — sans aucune référence aux opérations empiriques réellement pratiquées. La formulation du problème de la représentation dit « isomorphic (or possibly homomorphic) » (p. 10) : le vocabulaire de la description reçue (« la mesure est un homomorphisme ») est bien celui du texte, mais le texte hésite explicitement entre les deux termes à cet endroit et retient l'homomorphisme partout ailleurs.\n\nLa signification vient en troisième, et les auteurs en rabaissent eux-mêmes le rang : c'est « a third problem which we shall term the meaningfulness problem. While this problem is not central to a theory of measurement it is often involved with various aspects of how measurements may be used, and as such it has engendered considerable controversy » (p. 108). La définition (Definition 33, p. 110-111) est citée plus haut ; sa version complète ajoute « […] of any of its numerical assignments, i.e., any of its numerical functions expressing the results of measurement ». Les auteurs la reformulent aussitôt en termes d'équivalence : un énoncé est doué de sens si les transformations admissibles conduisent toujours à des énoncés de même valeur de vérité. Une note de bas de page concède que c'est « a necessary but not sufficient condition of meaningfulness » (p. 111, note 6).\n\nDeux corrections à la description qui m'a été transmise. Premièrement, le texte ne parle nulle part de moyenne de rangs ; « rang » n'apparaît qu'à propos de l'échelle de dureté de Mohs, hors de la section 6. Deuxièmement, et c'est plus important, le texte ne dit pas qu'une moyenne d'échelle d'intervalle serait dépourvue de sens : il démontre le contraire. L'exemple 2 (p. 115) prend exactement la comparaison de deux moyennes de températures maximales — janvier contre février — et conclut « Hence (8) is meaningful under these conditions », suivi de la remarque générale : « In general, it may be observed that whether or not a particular mathematical operation can be used with a particular scale does not have a simple yes or no answer. The admissibility of any mathematical operation depends not only on the scale type of the relevant numerical assignments but on the entire numerical statement of which the operation is a part. » Ce qui est déclaré dépourvu de sens, c'est le rapport de deux températures maximales (énoncé 4, p. 108) — vrai en Fahrenheit, faux en Celsius, contre-exemple calculé p. 109 — et la comparaison entre une somme de deux températures et une troisième (exemple 1, p. 113-114), alors que la même somme est douée de sens pour des masses, qui sont sur une échelle de rapport. Le texte est donc plus exigeant, et non plus permissif, que la version courante qui interdit des opérations en bloc par type d'échelle : ce sont des énoncés entiers qui ont ou n'ont pas de sens, pas des opérations.\n\nLa section 6.3 tranche enfin contre deux positions concurrentes, nommées : celle de Weitzenhoffer (1951), pour qui les seules opérations mathématiques admissibles sont celles qui correspondent à des opérations physiques connues, et celle de Guilford (1954), pour qui toutes les règles de l'arithmétique deviennent admissibles dès qu'existe une addition physique. « In contrast to these two positions, Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems » (p. 121-122). Le critère est d'invariance, pas d'opération."
+        },
+        {
+          "id": "SUP-98d72b4f60715313",
+          "origin": "validated",
+          "path": "$.review.notes[5]",
+          "access": "n/a",
+          "text": "PROSE — le hook (« Un énoncé vrai en Fahrenheit, faux en Celsius ») n'est pas une image ajoutée : c'est l'exemple des auteurs, p. 109, vérifié sur l'image de la page PDF 113 : l'énoncé (4) est jugé vrai avec t(n)=110 et t(n-1)=100 en Fahrenheit (rapport 1,10), et « if the temperature measurements had been made on the Centigrade scale we would have come to the opposite conclusion, since then we would have found t(n)=43.3 and t(n-1)=37.8 and a ratio equal to 1.15 rather than 1.10 ». Le second membre du summary (« c'est l'énoncé entier qui en a ou non, pas l'opération ») est porté explicitement par la section 6.3, p. 122 : « Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems. » Aucun adjectif du hook ou du summary ne déborde ce que j'ai lu."
         }
       ]
     },
@@ -847,7 +735,7 @@
     {
       "claim_id": "C036",
       "locator": "sections[2].paragraphs[2]",
-      "claim_text": "Additionner deux températures et comparer la somme à une troisième ne produit pas un énoncé doué de sens",
+      "claim_text": "Additionner deux températures et comparer la somme à une troisième ne produit pas un énoncé doué de sens ; additionner deux masses et faire la même comparaison en produit un, parce que les masses ne relèvent pas du même type d’échelle.",
       "supports": [
         {
           "id": "SUP-106c334769abc2bc",
@@ -861,7 +749,7 @@
     {
       "claim_id": "C037",
       "locator": "sections[2].paragraphs[2]",
-      "claim_text": "additionner deux masses et faire la même comparaison en produit un, parce que les masses ne relèvent pas du même type d’échelle.",
+      "claim_text": "La fin de leur texte prend d’ailleurs parti contre deux positions qu’ils nomment",
       "supports": [
         {
           "id": "SUP-106c334769abc2bc",
@@ -875,7 +763,7 @@
     {
       "claim_id": "C038",
       "locator": "sections[2].paragraphs[2]",
-      "claim_text": "La fin de leur texte prend d’ailleurs parti contre deux positions qu’ils nomment : celle de Weitzenhoffer, pour qui seules sont admissibles les opérations correspondant à des opérations physiques connues",
+      "claim_text": "celle de Weitzenhoffer, pour qui seules sont admissibles les opérations correspondant à des opérations physiques connues",
       "supports": [
         {
           "id": "SUP-106c334769abc2bc",
@@ -883,20 +771,13 @@
           "path": "$.definition_de_lauteur",
           "access": "n/a",
           "text": "Les auteurs posent d'abord deux problèmes, et un seul troisième. Les deux fondamentaux : le problème de la représentation — « Characterize the formal properties of the empirical operations and relations used in the procedure and show that they are isomorphic to appropriately chosen numerical operations and relations » (p. 4) — et le problème de l'unicité, c'est-à-dire « determine the scale type of the measurements resulting from the procedure » (p. 14). L'assignation numérique est « a function which maps an empirical system homomorphically onto a numerical system » (p. 22) ; une échelle, elle, n'est pas cette fonction mais un triplet dont elle est un terme (avec un système relationnel empirique et un système numérique plein), et le type d'échelle « is defined entirely in terms of the class of numerical assignments which map a given empirical system homomorphically onto a subsystem of the same full numerical system » (p. 23) — sans aucune référence aux opérations empiriques réellement pratiquées. La formulation du problème de la représentation dit « isomorphic (or possibly homomorphic) » (p. 10) : le vocabulaire de la description reçue (« la mesure est un homomorphisme ») est bien celui du texte, mais le texte hésite explicitement entre les deux termes à cet endroit et retient l'homomorphisme partout ailleurs.\n\nLa signification vient en troisième, et les auteurs en rabaissent eux-mêmes le rang : c'est « a third problem which we shall term the meaningfulness problem. While this problem is not central to a theory of measurement it is often involved with various aspects of how measurements may be used, and as such it has engendered considerable controversy » (p. 108). La définition (Definition 33, p. 110-111) est citée plus haut ; sa version complète ajoute « […] of any of its numerical assignments, i.e., any of its numerical functions expressing the results of measurement ». Les auteurs la reformulent aussitôt en termes d'équivalence : un énoncé est doué de sens si les transformations admissibles conduisent toujours à des énoncés de même valeur de vérité. Une note de bas de page concède que c'est « a necessary but not sufficient condition of meaningfulness » (p. 111, note 6).\n\nDeux corrections à la description qui m'a été transmise. Premièrement, le texte ne parle nulle part de moyenne de rangs ; « rang » n'apparaît qu'à propos de l'échelle de dureté de Mohs, hors de la section 6. Deuxièmement, et c'est plus important, le texte ne dit pas qu'une moyenne d'échelle d'intervalle serait dépourvue de sens : il démontre le contraire. L'exemple 2 (p. 115) prend exactement la comparaison de deux moyennes de températures maximales — janvier contre février — et conclut « Hence (8) is meaningful under these conditions », suivi de la remarque générale : « In general, it may be observed that whether or not a particular mathematical operation can be used with a particular scale does not have a simple yes or no answer. The admissibility of any mathematical operation depends not only on the scale type of the relevant numerical assignments but on the entire numerical statement of which the operation is a part. » Ce qui est déclaré dépourvu de sens, c'est le rapport de deux températures maximales (énoncé 4, p. 108) — vrai en Fahrenheit, faux en Celsius, contre-exemple calculé p. 109 — et la comparaison entre une somme de deux températures et une troisième (exemple 1, p. 113-114), alors que la même somme est douée de sens pour des masses, qui sont sur une échelle de rapport. Le texte est donc plus exigeant, et non plus permissif, que la version courante qui interdit des opérations en bloc par type d'échelle : ce sont des énoncés entiers qui ont ou n'ont pas de sens, pas des opérations.\n\nLa section 6.3 tranche enfin contre deux positions concurrentes, nommées : celle de Weitzenhoffer (1951), pour qui les seules opérations mathématiques admissibles sont celles qui correspondent à des opérations physiques connues, et celle de Guilford (1954), pour qui toutes les règles de l'arithmétique deviennent admissibles dès qu'existe une addition physique. « In contrast to these two positions, Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems » (p. 121-122). Le critère est d'invariance, pas d'opération."
-        },
-        {
-          "id": "SUP-376c23870c25980c",
-          "origin": "validated",
-          "path": "$.review.notes[4]",
-          "access": "n/a",
-          "text": "SOURCES — le locator « p. 108-125 » résout : table des matières, « SECTION 6. THE PROBLEM OF MEANINGFULNESS 108 ; 6.1 Definition 108 ; 6.2 Examples 112 ; 6.3 Extensions and Comments 121 ; REFERENCES 126 ». La section court donc bien jusqu'à 125. « 130 p. » résout aussi : la dernière page numérotée porte l'en-tête « P.S.-J.L.Z.-130- » (page PDF 134). doi_isbn à null est correct : interrogation Crossref (api.crossref.org, query.bibliographic « Basic Measurement Theory Suppes Zinnes ») ne rend aucun DOI pour le rapport technique — seulement le compte rendu de la version publiée en 1963 dans le Handbook of Mathematical Psychology, vol. I, p. 1-76 (DOI 10.2307/2270274, Journal of Symbolic Logic). La fiche cite le rapport de 1962 réellement consulté, ce qui est cohérent."
         }
       ]
     },
     {
       "claim_id": "C039",
       "locator": "sections[2].paragraphs[2]",
-      "claim_text": "celle de Guilford, pour qui toute l’arithmétique le devient dès qu’une addition physique existe.",
+      "claim_text": "celle de Guilford, pour qui toute l’arithmétique le devient dès qu’une addition physique existe",
       "supports": [
         {
           "id": "SUP-106c334769abc2bc",
@@ -967,20 +848,13 @@
           "path": "$.definition_de_lauteur",
           "access": "n/a",
           "text": "Les auteurs posent d'abord deux problèmes, et un seul troisième. Les deux fondamentaux : le problème de la représentation — « Characterize the formal properties of the empirical operations and relations used in the procedure and show that they are isomorphic to appropriately chosen numerical operations and relations » (p. 4) — et le problème de l'unicité, c'est-à-dire « determine the scale type of the measurements resulting from the procedure » (p. 14). L'assignation numérique est « a function which maps an empirical system homomorphically onto a numerical system » (p. 22) ; une échelle, elle, n'est pas cette fonction mais un triplet dont elle est un terme (avec un système relationnel empirique et un système numérique plein), et le type d'échelle « is defined entirely in terms of the class of numerical assignments which map a given empirical system homomorphically onto a subsystem of the same full numerical system » (p. 23) — sans aucune référence aux opérations empiriques réellement pratiquées. La formulation du problème de la représentation dit « isomorphic (or possibly homomorphic) » (p. 10) : le vocabulaire de la description reçue (« la mesure est un homomorphisme ») est bien celui du texte, mais le texte hésite explicitement entre les deux termes à cet endroit et retient l'homomorphisme partout ailleurs.\n\nLa signification vient en troisième, et les auteurs en rabaissent eux-mêmes le rang : c'est « a third problem which we shall term the meaningfulness problem. While this problem is not central to a theory of measurement it is often involved with various aspects of how measurements may be used, and as such it has engendered considerable controversy » (p. 108). La définition (Definition 33, p. 110-111) est citée plus haut ; sa version complète ajoute « […] of any of its numerical assignments, i.e., any of its numerical functions expressing the results of measurement ». Les auteurs la reformulent aussitôt en termes d'équivalence : un énoncé est doué de sens si les transformations admissibles conduisent toujours à des énoncés de même valeur de vérité. Une note de bas de page concède que c'est « a necessary but not sufficient condition of meaningfulness » (p. 111, note 6).\n\nDeux corrections à la description qui m'a été transmise. Premièrement, le texte ne parle nulle part de moyenne de rangs ; « rang » n'apparaît qu'à propos de l'échelle de dureté de Mohs, hors de la section 6. Deuxièmement, et c'est plus important, le texte ne dit pas qu'une moyenne d'échelle d'intervalle serait dépourvue de sens : il démontre le contraire. L'exemple 2 (p. 115) prend exactement la comparaison de deux moyennes de températures maximales — janvier contre février — et conclut « Hence (8) is meaningful under these conditions », suivi de la remarque générale : « In general, it may be observed that whether or not a particular mathematical operation can be used with a particular scale does not have a simple yes or no answer. The admissibility of any mathematical operation depends not only on the scale type of the relevant numerical assignments but on the entire numerical statement of which the operation is a part. » Ce qui est déclaré dépourvu de sens, c'est le rapport de deux températures maximales (énoncé 4, p. 108) — vrai en Fahrenheit, faux en Celsius, contre-exemple calculé p. 109 — et la comparaison entre une somme de deux températures et une troisième (exemple 1, p. 113-114), alors que la même somme est douée de sens pour des masses, qui sont sur une échelle de rapport. Le texte est donc plus exigeant, et non plus permissif, que la version courante qui interdit des opérations en bloc par type d'échelle : ce sont des énoncés entiers qui ont ou n'ont pas de sens, pas des opérations.\n\nLa section 6.3 tranche enfin contre deux positions concurrentes, nommées : celle de Weitzenhoffer (1951), pour qui les seules opérations mathématiques admissibles sont celles qui correspondent à des opérations physiques connues, et celle de Guilford (1954), pour qui toutes les règles de l'arithmétique deviennent admissibles dès qu'existe une addition physique. « In contrast to these two positions, Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems » (p. 121-122). Le critère est d'invariance, pas d'opération."
-        },
-        {
-          "id": "SUP-866ee284084c4cb0",
-          "origin": "validated",
-          "path": "$.review.notes[6]",
-          "access": "n/a",
-          "text": "Hors des quatre points, pour information et sans effet sur le verdict : (a) le rapport se cite lui-même de travers, la section 6.3 renvoyant deux fois à « Definition 28 » là où la définition porte le numéro 33 — erreur de la source, pas de la fiche ; (b) le summary écrit « a un sens si » là où la définition écrit « si et seulement si » (que la citation, elle, restitue) ; l'écart affaiblit l'énoncé au lieu de l'étendre, et les auteurs eux-mêmes concèdent p. 111 que « Definition 33 gives a necessary but not sufficient condition of meaningfulness », donc rien n'est affirmé au-delà des sources."
         }
       ]
     },
     {
       "claim_id": "C043",
       "locator": "sections[3].paragraphs[0]",
-      "claim_text": "un énoncé qui résiste au changement d’échelle a franchi une exigence indispensable, ce qui ne suffit pas encore à en faire un énoncé doué de sens à tous égards.",
+      "claim_text": "un énoncé qui résiste au changement d’échelle a franchi une exigence indispensable, ce qui ne suffit pas encore à en faire un énoncé doué de sens à tous égards",
       "supports": [
         {
           "id": "SUP-394b11771db49313",
@@ -995,20 +869,13 @@
           "path": "$.definition_de_lauteur",
           "access": "n/a",
           "text": "Les auteurs posent d'abord deux problèmes, et un seul troisième. Les deux fondamentaux : le problème de la représentation — « Characterize the formal properties of the empirical operations and relations used in the procedure and show that they are isomorphic to appropriately chosen numerical operations and relations » (p. 4) — et le problème de l'unicité, c'est-à-dire « determine the scale type of the measurements resulting from the procedure » (p. 14). L'assignation numérique est « a function which maps an empirical system homomorphically onto a numerical system » (p. 22) ; une échelle, elle, n'est pas cette fonction mais un triplet dont elle est un terme (avec un système relationnel empirique et un système numérique plein), et le type d'échelle « is defined entirely in terms of the class of numerical assignments which map a given empirical system homomorphically onto a subsystem of the same full numerical system » (p. 23) — sans aucune référence aux opérations empiriques réellement pratiquées. La formulation du problème de la représentation dit « isomorphic (or possibly homomorphic) » (p. 10) : le vocabulaire de la description reçue (« la mesure est un homomorphisme ») est bien celui du texte, mais le texte hésite explicitement entre les deux termes à cet endroit et retient l'homomorphisme partout ailleurs.\n\nLa signification vient en troisième, et les auteurs en rabaissent eux-mêmes le rang : c'est « a third problem which we shall term the meaningfulness problem. While this problem is not central to a theory of measurement it is often involved with various aspects of how measurements may be used, and as such it has engendered considerable controversy » (p. 108). La définition (Definition 33, p. 110-111) est citée plus haut ; sa version complète ajoute « […] of any of its numerical assignments, i.e., any of its numerical functions expressing the results of measurement ». Les auteurs la reformulent aussitôt en termes d'équivalence : un énoncé est doué de sens si les transformations admissibles conduisent toujours à des énoncés de même valeur de vérité. Une note de bas de page concède que c'est « a necessary but not sufficient condition of meaningfulness » (p. 111, note 6).\n\nDeux corrections à la description qui m'a été transmise. Premièrement, le texte ne parle nulle part de moyenne de rangs ; « rang » n'apparaît qu'à propos de l'échelle de dureté de Mohs, hors de la section 6. Deuxièmement, et c'est plus important, le texte ne dit pas qu'une moyenne d'échelle d'intervalle serait dépourvue de sens : il démontre le contraire. L'exemple 2 (p. 115) prend exactement la comparaison de deux moyennes de températures maximales — janvier contre février — et conclut « Hence (8) is meaningful under these conditions », suivi de la remarque générale : « In general, it may be observed that whether or not a particular mathematical operation can be used with a particular scale does not have a simple yes or no answer. The admissibility of any mathematical operation depends not only on the scale type of the relevant numerical assignments but on the entire numerical statement of which the operation is a part. » Ce qui est déclaré dépourvu de sens, c'est le rapport de deux températures maximales (énoncé 4, p. 108) — vrai en Fahrenheit, faux en Celsius, contre-exemple calculé p. 109 — et la comparaison entre une somme de deux températures et une troisième (exemple 1, p. 113-114), alors que la même somme est douée de sens pour des masses, qui sont sur une échelle de rapport. Le texte est donc plus exigeant, et non plus permissif, que la version courante qui interdit des opérations en bloc par type d'échelle : ce sont des énoncés entiers qui ont ou n'ont pas de sens, pas des opérations.\n\nLa section 6.3 tranche enfin contre deux positions concurrentes, nommées : celle de Weitzenhoffer (1951), pour qui les seules opérations mathématiques admissibles sont celles qui correspondent à des opérations physiques connues, et celle de Guilford (1954), pour qui toutes les règles de l'arithmétique deviennent admissibles dès qu'existe une addition physique. « In contrast to these two positions, Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems » (p. 121-122). Le critère est d'invariance, pas d'opération."
-        },
-        {
-          "id": "SUP-866ee284084c4cb0",
-          "origin": "validated",
-          "path": "$.review.notes[6]",
-          "access": "n/a",
-          "text": "Hors des quatre points, pour information et sans effet sur le verdict : (a) le rapport se cite lui-même de travers, la section 6.3 renvoyant deux fois à « Definition 28 » là où la définition porte le numéro 33 — erreur de la source, pas de la fiche ; (b) le summary écrit « a un sens si » là où la définition écrit « si et seulement si » (que la citation, elle, restitue) ; l'écart affaiblit l'énoncé au lieu de l'étendre, et les auteurs eux-mêmes concèdent p. 111 que « Definition 33 gives a necessary but not sufficient condition of meaningfulness », donc rien n'est affirmé au-delà des sources."
         }
       ]
     },
     {
       "claim_id": "C044",
       "locator": "sections[3].paragraphs[0]",
-      "claim_text": "Et l’ouverture de leur section écarte l’idée que la question serait fondamentale : ce problème, écrivent-ils, n’est pas central pour une théorie de la mesure, il se rencontre surtout du côté de la façon dont les mesures peuvent être utilisées.",
+      "claim_text": "l’ouverture de leur section écarte l’idée que la question serait fondamentale : ce problème, écrivent-ils, n’est pas central pour une théorie de la mesure, il se rencontre surtout du côté de la façon dont les mesures peuvent être utilisées",
       "supports": [
         {
           "id": "SUP-394b11771db49313",
@@ -1050,50 +917,29 @@
     {
       "claim_id": "C046",
       "locator": "sections[3].paragraphs[1]",
-      "claim_text": "Deux problèmes viennent avant : celui de la représentation, qui demande si une grandeur peut seulement être représentée par des nombres, et celui de l’unicité, qui demande jusqu’à quel point cette représentation numérique est déterminée.",
+      "claim_text": "Deux problèmes viennent avant",
       "supports": [
+        {
+          "id": "SUP-5fd3966e10893f83",
+          "origin": "validated",
+          "path": "$.review.notes[2]",
+          "access": "n/a",
+          "text": "ATTRIBUTION — la revendication du nom est verbatim dans le texte, p. 108, ouverture de la section 6 : « Closely related to the two fundamental issues of measurement—the representation and uniqueness problems—is a third problem which we shall term the meaningfulness problem. » Le texte est bien coécrit (deux noms sur la page de titre, en-têtes courants « P.S.-J.L.Z. », rédaction en « we »). Le renvoi de la note d'attribution à Scott & Suppes (1958) est lui aussi dans le texte, p. 4 : « (The general viewpoint to be developed in this section was first articulated in Scott and Suppes (1958).) », et Scott, D. et Suppes, P., « Foundational aspects of theories of measurement », Journal of Symbolic Logic, 1958, 23, 113-128, figure aux références p. 128."
+        },
         {
           "id": "SUP-106c334769abc2bc",
           "origin": "evidence:lecture.json",
           "path": "$.definition_de_lauteur",
           "access": "n/a",
           "text": "Les auteurs posent d'abord deux problèmes, et un seul troisième. Les deux fondamentaux : le problème de la représentation — « Characterize the formal properties of the empirical operations and relations used in the procedure and show that they are isomorphic to appropriately chosen numerical operations and relations » (p. 4) — et le problème de l'unicité, c'est-à-dire « determine the scale type of the measurements resulting from the procedure » (p. 14). L'assignation numérique est « a function which maps an empirical system homomorphically onto a numerical system » (p. 22) ; une échelle, elle, n'est pas cette fonction mais un triplet dont elle est un terme (avec un système relationnel empirique et un système numérique plein), et le type d'échelle « is defined entirely in terms of the class of numerical assignments which map a given empirical system homomorphically onto a subsystem of the same full numerical system » (p. 23) — sans aucune référence aux opérations empiriques réellement pratiquées. La formulation du problème de la représentation dit « isomorphic (or possibly homomorphic) » (p. 10) : le vocabulaire de la description reçue (« la mesure est un homomorphisme ») est bien celui du texte, mais le texte hésite explicitement entre les deux termes à cet endroit et retient l'homomorphisme partout ailleurs.\n\nLa signification vient en troisième, et les auteurs en rabaissent eux-mêmes le rang : c'est « a third problem which we shall term the meaningfulness problem. While this problem is not central to a theory of measurement it is often involved with various aspects of how measurements may be used, and as such it has engendered considerable controversy » (p. 108). La définition (Definition 33, p. 110-111) est citée plus haut ; sa version complète ajoute « […] of any of its numerical assignments, i.e., any of its numerical functions expressing the results of measurement ». Les auteurs la reformulent aussitôt en termes d'équivalence : un énoncé est doué de sens si les transformations admissibles conduisent toujours à des énoncés de même valeur de vérité. Une note de bas de page concède que c'est « a necessary but not sufficient condition of meaningfulness » (p. 111, note 6).\n\nDeux corrections à la description qui m'a été transmise. Premièrement, le texte ne parle nulle part de moyenne de rangs ; « rang » n'apparaît qu'à propos de l'échelle de dureté de Mohs, hors de la section 6. Deuxièmement, et c'est plus important, le texte ne dit pas qu'une moyenne d'échelle d'intervalle serait dépourvue de sens : il démontre le contraire. L'exemple 2 (p. 115) prend exactement la comparaison de deux moyennes de températures maximales — janvier contre février — et conclut « Hence (8) is meaningful under these conditions », suivi de la remarque générale : « In general, it may be observed that whether or not a particular mathematical operation can be used with a particular scale does not have a simple yes or no answer. The admissibility of any mathematical operation depends not only on the scale type of the relevant numerical assignments but on the entire numerical statement of which the operation is a part. » Ce qui est déclaré dépourvu de sens, c'est le rapport de deux températures maximales (énoncé 4, p. 108) — vrai en Fahrenheit, faux en Celsius, contre-exemple calculé p. 109 — et la comparaison entre une somme de deux températures et une troisième (exemple 1, p. 113-114), alors que la même somme est douée de sens pour des masses, qui sont sur une échelle de rapport. Le texte est donc plus exigeant, et non plus permissif, que la version courante qui interdit des opérations en bloc par type d'échelle : ce sont des énoncés entiers qui ont ou n'ont pas de sens, pas des opérations.\n\nLa section 6.3 tranche enfin contre deux positions concurrentes, nommées : celle de Weitzenhoffer (1951), pour qui les seules opérations mathématiques admissibles sont celles qui correspondent à des opérations physiques connues, et celle de Guilford (1954), pour qui toutes les règles de l'arithmétique deviennent admissibles dès qu'existe une addition physique. « In contrast to these two positions, Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems » (p. 121-122). Le critère est d'invariance, pas d'opération."
-        },
-        {
-          "id": "SUP-5fd3966e10893f83",
-          "origin": "validated",
-          "path": "$.review.notes[2]",
-          "access": "n/a",
-          "text": "ATTRIBUTION — la revendication du nom est verbatim dans le texte, p. 108, ouverture de la section 6 : « Closely related to the two fundamental issues of measurement—the representation and uniqueness problems—is a third problem which we shall term the meaningfulness problem. » Le texte est bien coécrit (deux noms sur la page de titre, en-têtes courants « P.S.-J.L.Z. », rédaction en « we »). Le renvoi de la note d'attribution à Scott & Suppes (1958) est lui aussi dans le texte, p. 4 : « (The general viewpoint to be developed in this section was first articulated in Scott and Suppes (1958).) », et Scott, D. et Suppes, P., « Foundational aspects of theories of measurement », Journal of Symbolic Logic, 1958, 23, 113-128, figure aux références p. 128."
         }
       ]
     },
     {
       "claim_id": "C047",
       "locator": "sections[3].paragraphs[1]",
-      "claim_text": "Le troisième, ils le baptisent eux-mêmes le problème de la signification",
+      "claim_text": "celui de la représentation, qui demande si une grandeur peut seulement être représentée par des nombres",
       "supports": [
-        {
-          "id": "SUP-f827172a4db54d06",
-          "origin": "validated",
-          "path": "$.attribution_note",
-          "access": "n/a",
-          "text": "Texte coécrit, les deux noms sur une même ligne de la page de titre, et rédigé à la première personne du pluriel. Le nom du problème est revendiqué ici en propre par les deux auteurs (« a third problem which we shall term the meaningfulness problem »), mais le cadre formel dont il dépend est rapporté par eux à un article antérieur de Suppes avec Dana Scott (1958)."
-        },
-        {
-          "id": "SUP-05e2243f9cf8b942",
-          "origin": "evidence:lecture.json",
-          "path": "$.attribution.note",
-          "access": "n/a",
-          "text": "La page de titre du rapport technique porte « BASIC MEASUREMENT THEORY / by / Patrick Suppes and Joseph L. Zinnes », les deux noms sur une seule ligne, sans mention d'un auteur principal ni de contributions distinctes ; le texte parle constamment à la première personne du pluriel (« a third problem which we shall term the meaningfulness problem »). J'ai lu cette signature sur l'image de la page de titre, pas seulement dans la couche OCR. Le rapport est daté du 15 mars 1962 ; sa note 1, page 1, annonce qu'il « will be published as a chapter of the forthcoming Handbook of Mathematical Psychology », ce qui a eu lieu en 1963 — la même main tient donc les deux versions, et le millésime de la publication n'est pas celui de la rédaction. Détail relevé sur la page elle-même : cette note nomme les directeurs du Handbook dans l'ordre « R. R. Bush, E. H. Galanter and R. D. Luce », alors que le volume paru porte Luce, Bush et Galanter ; l'ordre imprimé sur le livre est celui à retenir pour citer le chapitre. Deux nuances d'attribution, à ne pas effacer. D'abord, les auteurs ne revendiquent pas l'invention du cadre : ils écrivent, page 3, « (The general viewpoint to be developed in this section was first articulated in Scott and Suppes (1958).) » — le cadre représentation/unicité vient d'un article antérieur de Suppes avec Dana Scott, que je n'ai pas ouvert. Ensuite, c'est bien dans ce texte-ci que le troisième problème reçoit son nom : « a third problem which we shall term the meaningfulness problem » (p. 108) ; la paternité du terme « meaningfulness problem » est donc, elle, revendiquée ici en propre et par les deux auteurs ensemble."
-        },
-        {
-          "id": "SUP-5fd3966e10893f83",
-          "origin": "validated",
-          "path": "$.review.notes[2]",
-          "access": "n/a",
-          "text": "ATTRIBUTION — la revendication du nom est verbatim dans le texte, p. 108, ouverture de la section 6 : « Closely related to the two fundamental issues of measurement—the representation and uniqueness problems—is a third problem which we shall term the meaningfulness problem. » Le texte est bien coécrit (deux noms sur la page de titre, en-têtes courants « P.S.-J.L.Z. », rédaction en « we »). Le renvoi de la note d'attribution à Scott & Suppes (1958) est lui aussi dans le texte, p. 4 : « (The general viewpoint to be developed in this section was first articulated in Scott and Suppes (1958).) », et Scott, D. et Suppes, P., « Foundational aspects of theories of measurement », Journal of Symbolic Logic, 1958, 23, 113-128, figure aux références p. 128."
-        },
         {
           "id": "SUP-106c334769abc2bc",
           "origin": "evidence:lecture.json",
@@ -1106,7 +952,7 @@
     {
       "claim_id": "C048",
       "locator": "sections[3].paragraphs[1]",
-      "claim_text": "et ils le résolvent avec le deuxième : ce qui décide qu’un énoncé a un sens, tranchent-ils, ce sont les propriétés d’unicité des mesures qu’il met en jeu.",
+      "claim_text": "celui de l’unicité, qui demande jusqu’à quel point cette représentation numérique est déterminée",
       "supports": [
         {
           "id": "SUP-106c334769abc2bc",
@@ -1114,18 +960,60 @@
           "path": "$.definition_de_lauteur",
           "access": "n/a",
           "text": "Les auteurs posent d'abord deux problèmes, et un seul troisième. Les deux fondamentaux : le problème de la représentation — « Characterize the formal properties of the empirical operations and relations used in the procedure and show that they are isomorphic to appropriately chosen numerical operations and relations » (p. 4) — et le problème de l'unicité, c'est-à-dire « determine the scale type of the measurements resulting from the procedure » (p. 14). L'assignation numérique est « a function which maps an empirical system homomorphically onto a numerical system » (p. 22) ; une échelle, elle, n'est pas cette fonction mais un triplet dont elle est un terme (avec un système relationnel empirique et un système numérique plein), et le type d'échelle « is defined entirely in terms of the class of numerical assignments which map a given empirical system homomorphically onto a subsystem of the same full numerical system » (p. 23) — sans aucune référence aux opérations empiriques réellement pratiquées. La formulation du problème de la représentation dit « isomorphic (or possibly homomorphic) » (p. 10) : le vocabulaire de la description reçue (« la mesure est un homomorphisme ») est bien celui du texte, mais le texte hésite explicitement entre les deux termes à cet endroit et retient l'homomorphisme partout ailleurs.\n\nLa signification vient en troisième, et les auteurs en rabaissent eux-mêmes le rang : c'est « a third problem which we shall term the meaningfulness problem. While this problem is not central to a theory of measurement it is often involved with various aspects of how measurements may be used, and as such it has engendered considerable controversy » (p. 108). La définition (Definition 33, p. 110-111) est citée plus haut ; sa version complète ajoute « […] of any of its numerical assignments, i.e., any of its numerical functions expressing the results of measurement ». Les auteurs la reformulent aussitôt en termes d'équivalence : un énoncé est doué de sens si les transformations admissibles conduisent toujours à des énoncés de même valeur de vérité. Une note de bas de page concède que c'est « a necessary but not sufficient condition of meaningfulness » (p. 111, note 6).\n\nDeux corrections à la description qui m'a été transmise. Premièrement, le texte ne parle nulle part de moyenne de rangs ; « rang » n'apparaît qu'à propos de l'échelle de dureté de Mohs, hors de la section 6. Deuxièmement, et c'est plus important, le texte ne dit pas qu'une moyenne d'échelle d'intervalle serait dépourvue de sens : il démontre le contraire. L'exemple 2 (p. 115) prend exactement la comparaison de deux moyennes de températures maximales — janvier contre février — et conclut « Hence (8) is meaningful under these conditions », suivi de la remarque générale : « In general, it may be observed that whether or not a particular mathematical operation can be used with a particular scale does not have a simple yes or no answer. The admissibility of any mathematical operation depends not only on the scale type of the relevant numerical assignments but on the entire numerical statement of which the operation is a part. » Ce qui est déclaré dépourvu de sens, c'est le rapport de deux températures maximales (énoncé 4, p. 108) — vrai en Fahrenheit, faux en Celsius, contre-exemple calculé p. 109 — et la comparaison entre une somme de deux températures et une troisième (exemple 1, p. 113-114), alors que la même somme est douée de sens pour des masses, qui sont sur une échelle de rapport. Le texte est donc plus exigeant, et non plus permissif, que la version courante qui interdit des opérations en bloc par type d'échelle : ce sont des énoncés entiers qui ont ou n'ont pas de sens, pas des opérations.\n\nLa section 6.3 tranche enfin contre deux positions concurrentes, nommées : celle de Weitzenhoffer (1951), pour qui les seules opérations mathématiques admissibles sont celles qui correspondent à des opérations physiques connues, et celle de Guilford (1954), pour qui toutes les règles de l'arithmétique deviennent admissibles dès qu'existe une addition physique. « In contrast to these two positions, Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems » (p. 121-122). Le critère est d'invariance, pas d'opération."
+        }
+      ]
+    },
+    {
+      "claim_id": "C049",
+      "locator": "sections[3].paragraphs[1]",
+      "claim_text": "Le troisième, ils le baptisent eux-mêmes le problème de la signification",
+      "supports": [
+        {
+          "id": "SUP-5fd3966e10893f83",
+          "origin": "validated",
+          "path": "$.review.notes[2]",
+          "access": "n/a",
+          "text": "ATTRIBUTION — la revendication du nom est verbatim dans le texte, p. 108, ouverture de la section 6 : « Closely related to the two fundamental issues of measurement—the representation and uniqueness problems—is a third problem which we shall term the meaningfulness problem. » Le texte est bien coécrit (deux noms sur la page de titre, en-têtes courants « P.S.-J.L.Z. », rédaction en « we »). Le renvoi de la note d'attribution à Scott & Suppes (1958) est lui aussi dans le texte, p. 4 : « (The general viewpoint to be developed in this section was first articulated in Scott and Suppes (1958).) », et Scott, D. et Suppes, P., « Foundational aspects of theories of measurement », Journal of Symbolic Logic, 1958, 23, 113-128, figure aux références p. 128."
         },
+        {
+          "id": "SUP-05e2243f9cf8b942",
+          "origin": "evidence:lecture.json",
+          "path": "$.attribution.note",
+          "access": "n/a",
+          "text": "La page de titre du rapport technique porte « BASIC MEASUREMENT THEORY / by / Patrick Suppes and Joseph L. Zinnes », les deux noms sur une seule ligne, sans mention d'un auteur principal ni de contributions distinctes ; le texte parle constamment à la première personne du pluriel (« a third problem which we shall term the meaningfulness problem »). J'ai lu cette signature sur l'image de la page de titre, pas seulement dans la couche OCR. Le rapport est daté du 15 mars 1962 ; sa note 1, page 1, annonce qu'il « will be published as a chapter of the forthcoming Handbook of Mathematical Psychology », ce qui a eu lieu en 1963 — la même main tient donc les deux versions, et le millésime de la publication n'est pas celui de la rédaction. Détail relevé sur la page elle-même : cette note nomme les directeurs du Handbook dans l'ordre « R. R. Bush, E. H. Galanter and R. D. Luce », alors que le volume paru porte Luce, Bush et Galanter ; l'ordre imprimé sur le livre est celui à retenir pour citer le chapitre. Deux nuances d'attribution, à ne pas effacer. D'abord, les auteurs ne revendiquent pas l'invention du cadre : ils écrivent, page 3, « (The general viewpoint to be developed in this section was first articulated in Scott and Suppes (1958).) » — le cadre représentation/unicité vient d'un article antérieur de Suppes avec Dana Scott, que je n'ai pas ouvert. Ensuite, c'est bien dans ce texte-ci que le troisième problème reçoit son nom : « a third problem which we shall term the meaningfulness problem » (p. 108) ; la paternité du terme « meaningfulness problem » est donc, elle, revendiquée ici en propre et par les deux auteurs ensemble."
+        },
+        {
+          "id": "SUP-f827172a4db54d06",
+          "origin": "validated",
+          "path": "$.attribution_note",
+          "access": "n/a",
+          "text": "Texte coécrit, les deux noms sur une même ligne de la page de titre, et rédigé à la première personne du pluriel. Le nom du problème est revendiqué ici en propre par les deux auteurs (« a third problem which we shall term the meaningfulness problem »), mais le cadre formel dont il dépend est rapporté par eux à un article antérieur de Suppes avec Dana Scott (1958)."
+        }
+      ]
+    },
+    {
+      "claim_id": "C050",
+      "locator": "sections[3].paragraphs[1]",
+      "claim_text": "ils le résolvent avec le deuxième : ce qui décide qu’un énoncé a un sens, tranchent-ils, ce sont les propriétés d’unicité des mesures qu’il met en jeu",
+      "supports": [
         {
           "id": "SUP-98d72b4f60715313",
           "origin": "validated",
           "path": "$.review.notes[5]",
           "access": "n/a",
           "text": "PROSE — le hook (« Un énoncé vrai en Fahrenheit, faux en Celsius ») n'est pas une image ajoutée : c'est l'exemple des auteurs, p. 109, vérifié sur l'image de la page PDF 113 : l'énoncé (4) est jugé vrai avec t(n)=110 et t(n-1)=100 en Fahrenheit (rapport 1,10), et « if the temperature measurements had been made on the Centigrade scale we would have come to the opposite conclusion, since then we would have found t(n)=43.3 and t(n-1)=37.8 and a ratio equal to 1.15 rather than 1.10 ». Le second membre du summary (« c'est l'énoncé entier qui en a ou non, pas l'opération ») est porté explicitement par la section 6.3, p. 122 : « Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems. » Aucun adjectif du hook ou du summary ne déborde ce que j'ai lu."
+        },
+        {
+          "id": "SUP-106c334769abc2bc",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Les auteurs posent d'abord deux problèmes, et un seul troisième. Les deux fondamentaux : le problème de la représentation — « Characterize the formal properties of the empirical operations and relations used in the procedure and show that they are isomorphic to appropriately chosen numerical operations and relations » (p. 4) — et le problème de l'unicité, c'est-à-dire « determine the scale type of the measurements resulting from the procedure » (p. 14). L'assignation numérique est « a function which maps an empirical system homomorphically onto a numerical system » (p. 22) ; une échelle, elle, n'est pas cette fonction mais un triplet dont elle est un terme (avec un système relationnel empirique et un système numérique plein), et le type d'échelle « is defined entirely in terms of the class of numerical assignments which map a given empirical system homomorphically onto a subsystem of the same full numerical system » (p. 23) — sans aucune référence aux opérations empiriques réellement pratiquées. La formulation du problème de la représentation dit « isomorphic (or possibly homomorphic) » (p. 10) : le vocabulaire de la description reçue (« la mesure est un homomorphisme ») est bien celui du texte, mais le texte hésite explicitement entre les deux termes à cet endroit et retient l'homomorphisme partout ailleurs.\n\nLa signification vient en troisième, et les auteurs en rabaissent eux-mêmes le rang : c'est « a third problem which we shall term the meaningfulness problem. While this problem is not central to a theory of measurement it is often involved with various aspects of how measurements may be used, and as such it has engendered considerable controversy » (p. 108). La définition (Definition 33, p. 110-111) est citée plus haut ; sa version complète ajoute « […] of any of its numerical assignments, i.e., any of its numerical functions expressing the results of measurement ». Les auteurs la reformulent aussitôt en termes d'équivalence : un énoncé est doué de sens si les transformations admissibles conduisent toujours à des énoncés de même valeur de vérité. Une note de bas de page concède que c'est « a necessary but not sufficient condition of meaningfulness » (p. 111, note 6).\n\nDeux corrections à la description qui m'a été transmise. Premièrement, le texte ne parle nulle part de moyenne de rangs ; « rang » n'apparaît qu'à propos de l'échelle de dureté de Mohs, hors de la section 6. Deuxièmement, et c'est plus important, le texte ne dit pas qu'une moyenne d'échelle d'intervalle serait dépourvue de sens : il démontre le contraire. L'exemple 2 (p. 115) prend exactement la comparaison de deux moyennes de températures maximales — janvier contre février — et conclut « Hence (8) is meaningful under these conditions », suivi de la remarque générale : « In general, it may be observed that whether or not a particular mathematical operation can be used with a particular scale does not have a simple yes or no answer. The admissibility of any mathematical operation depends not only on the scale type of the relevant numerical assignments but on the entire numerical statement of which the operation is a part. » Ce qui est déclaré dépourvu de sens, c'est le rapport de deux températures maximales (énoncé 4, p. 108) — vrai en Fahrenheit, faux en Celsius, contre-exemple calculé p. 109 — et la comparaison entre une somme de deux températures et une troisième (exemple 1, p. 113-114), alors que la même somme est douée de sens pour des masses, qui sont sur une échelle de rapport. Le texte est donc plus exigeant, et non plus permissif, que la version courante qui interdit des opérations en bloc par type d'échelle : ce sont des énoncés entiers qui ont ou n'ont pas de sens, pas des opérations.\n\nLa section 6.3 tranche enfin contre deux positions concurrentes, nommées : celle de Weitzenhoffer (1951), pour qui les seules opérations mathématiques admissibles sont celles qui correspondent à des opérations physiques connues, et celle de Guilford (1954), pour qui toutes les règles de l'arithmétique deviennent admissibles dès qu'existe une addition physique. « In contrast to these two positions, Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems » (p. 121-122). Le critère est d'invariance, pas d'opération."
         }
       ]
     },
     {
-      "claim_id": "C049",
+      "claim_id": "C051",
       "locator": "sections[3].paragraphs[1]",
       "claim_text": "Le point de vue général de cette section, ils ne le revendiquent pas en propre : ils le rapportent à un article antérieur de Suppes avec Dana Scott.",
       "supports": [
@@ -1149,18 +1037,11 @@
           "path": "$.attribution.note",
           "access": "n/a",
           "text": "La page de titre du rapport technique porte « BASIC MEASUREMENT THEORY / by / Patrick Suppes and Joseph L. Zinnes », les deux noms sur une seule ligne, sans mention d'un auteur principal ni de contributions distinctes ; le texte parle constamment à la première personne du pluriel (« a third problem which we shall term the meaningfulness problem »). J'ai lu cette signature sur l'image de la page de titre, pas seulement dans la couche OCR. Le rapport est daté du 15 mars 1962 ; sa note 1, page 1, annonce qu'il « will be published as a chapter of the forthcoming Handbook of Mathematical Psychology », ce qui a eu lieu en 1963 — la même main tient donc les deux versions, et le millésime de la publication n'est pas celui de la rédaction. Détail relevé sur la page elle-même : cette note nomme les directeurs du Handbook dans l'ordre « R. R. Bush, E. H. Galanter and R. D. Luce », alors que le volume paru porte Luce, Bush et Galanter ; l'ordre imprimé sur le livre est celui à retenir pour citer le chapitre. Deux nuances d'attribution, à ne pas effacer. D'abord, les auteurs ne revendiquent pas l'invention du cadre : ils écrivent, page 3, « (The general viewpoint to be developed in this section was first articulated in Scott and Suppes (1958).) » — le cadre représentation/unicité vient d'un article antérieur de Suppes avec Dana Scott, que je n'ai pas ouvert. Ensuite, c'est bien dans ce texte-ci que le troisième problème reçoit son nom : « a third problem which we shall term the meaningfulness problem » (p. 108) ; la paternité du terme « meaningfulness problem » est donc, elle, revendiquée ici en propre et par les deux auteurs ensemble."
-        },
-        {
-          "id": "SUP-bf51c4377284b1d6",
-          "origin": "evidence:lecture.json",
-          "path": "$.reserves[5]",
-          "access": "n/a",
-          "text": "Le cadre représentation/unicité est explicitement rapporté par les auteurs à Scott & Suppes (1958), texte que je n'ai pas ouvert. Si la carte devait dater l'origine du cadre formel plutôt que celle du problème de la signification, ce serait cette référence-là qu'il faudrait aller lire, pas celle-ci."
         }
       ]
     },
     {
-      "claim_id": "C050",
+      "claim_id": "C052",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "La définition, elle, ne parle jamais de thermomètres : elle parle d’énoncés numériques.",
       "supports": [
@@ -1181,7 +1062,7 @@
       ]
     },
     {
-      "claim_id": "C051",
+      "claim_id": "C053",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "Dire qu’une personne ayant mis huit est deux fois plus satisfaite qu’une autre ayant mis quatre pose la question du rapport au même endroit que sur les températures : ce n’est pas la division qui est en cause, c’est que cet énoncé fait compter depuis un zéro que le questionnaire aurait pu placer ailleurs.",
       "supports": [
@@ -1202,7 +1083,7 @@
       ]
     },
     {
-      "claim_id": "C052",
+      "claim_id": "C054",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "Comparer les moyennes de deux services ne demande pas la même chose ; mais pour trancher, il faudrait d’abord dire quelles réécritures cette échelle-là autorise, et c’est la première question que le critère oblige à se poser.",
       "supports": [
@@ -1230,7 +1111,7 @@
       ]
     },
     {
-      "claim_id": "C053",
+      "claim_id": "C055",
       "locator": "sections[4].paragraphs[1]",
       "claim_text": "Résister au changement d’échelle est nécessaire et ne suffit pas, les auteurs l’écrivent",
       "supports": [
@@ -1251,9 +1132,9 @@
       ]
     },
     {
-      "claim_id": "C054",
+      "claim_id": "C056",
       "locator": "sections[4].paragraphs[1]",
-      "claim_text": "et ils ne disent pas là ce qui manque.",
+      "claim_text": "ils ne disent pas là ce qui manque",
       "supports": [
         {
           "id": "SUP-394b11771db49313",
@@ -1272,7 +1153,7 @@
       ]
     },
     {
-      "claim_id": "C055",
+      "claim_id": "C057",
       "locator": "sections[4].paragraphs[1]",
       "claim_text": "Ils indiquent en revanche où la question a été mise en forme : pour la construction d’un langage formalisé autour de la signification, ils renvoient à un article que Patrick Suppes avait publié seul en 1959.",
       "supports": [
@@ -1286,37 +1167,9 @@
       ]
     },
     {
-      "claim_id": "C056",
-      "locator": "sections[4].paragraphs[1]",
-      "claim_text": "Ce que ce texte ajoute, c’est chez lui qu’il faudra aller le prendre.",
-      "supports": [
-        {
-          "id": "SUP-0521825df28f98cb",
-          "origin": "validated",
-          "path": "$.review.notes[3]",
-          "access": "n/a",
-          "text": "ATTRIBUTION, antécédent que j'ai cherché à contrôler : le rapport lui-même, dans le paragraphe qui suit immédiatement la Definition 33 (p. 111), renvoie à « Suppes [1959] » (Measurement, empirical meaningfulness and three-valued logic, in Churchman & Ratoosh (dir.), Measurement: Definitions and Theories, Wiley, 1959, p. 129-143) pour la construction d'un langage formalisé, non pour la définition elle-même. Je n'ai PAS pu ouvrir ce chapitre de 1959 : l'exemplaire Internet Archive (identifiant measurementdefin0000chur, 1959) existe mais la recherche plein texte et le prêt sont fermés à l'accès anonyme (endpoints 404 / tunnel refusé par le proxy). Je ne sais donc pas si Suppes y donne déjà une formulation équivalente ; c'est un accès refusé, pas un silence de la littérature. La littérature secondaire consultée (EOLSS, « History of Measurement Theory », J. A. Díez, https://eolss.net/Sample-Chapters/C05/E6-89-08-00.pdf) présente le problème mais ne date pas la paternité. En l'état, rien de ce que j'ai ouvert ne contredit l'attribution portée par la fiche, qui reste prudente (nom du problème revendiqué par les deux auteurs, cadre formel rapporté à 1958)."
-        }
-      ]
-    },
-    {
-      "claim_id": "C057",
-      "locator": "sections[4].paragraphs[1]",
-      "claim_text": "Quant à la controverse qu’ils disent considérable",
-      "supports": [
-        {
-          "id": "SUP-106c334769abc2bc",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Les auteurs posent d'abord deux problèmes, et un seul troisième. Les deux fondamentaux : le problème de la représentation — « Characterize the formal properties of the empirical operations and relations used in the procedure and show that they are isomorphic to appropriately chosen numerical operations and relations » (p. 4) — et le problème de l'unicité, c'est-à-dire « determine the scale type of the measurements resulting from the procedure » (p. 14). L'assignation numérique est « a function which maps an empirical system homomorphically onto a numerical system » (p. 22) ; une échelle, elle, n'est pas cette fonction mais un triplet dont elle est un terme (avec un système relationnel empirique et un système numérique plein), et le type d'échelle « is defined entirely in terms of the class of numerical assignments which map a given empirical system homomorphically onto a subsystem of the same full numerical system » (p. 23) — sans aucune référence aux opérations empiriques réellement pratiquées. La formulation du problème de la représentation dit « isomorphic (or possibly homomorphic) » (p. 10) : le vocabulaire de la description reçue (« la mesure est un homomorphisme ») est bien celui du texte, mais le texte hésite explicitement entre les deux termes à cet endroit et retient l'homomorphisme partout ailleurs.\n\nLa signification vient en troisième, et les auteurs en rabaissent eux-mêmes le rang : c'est « a third problem which we shall term the meaningfulness problem. While this problem is not central to a theory of measurement it is often involved with various aspects of how measurements may be used, and as such it has engendered considerable controversy » (p. 108). La définition (Definition 33, p. 110-111) est citée plus haut ; sa version complète ajoute « […] of any of its numerical assignments, i.e., any of its numerical functions expressing the results of measurement ». Les auteurs la reformulent aussitôt en termes d'équivalence : un énoncé est doué de sens si les transformations admissibles conduisent toujours à des énoncés de même valeur de vérité. Une note de bas de page concède que c'est « a necessary but not sufficient condition of meaningfulness » (p. 111, note 6).\n\nDeux corrections à la description qui m'a été transmise. Premièrement, le texte ne parle nulle part de moyenne de rangs ; « rang » n'apparaît qu'à propos de l'échelle de dureté de Mohs, hors de la section 6. Deuxièmement, et c'est plus important, le texte ne dit pas qu'une moyenne d'échelle d'intervalle serait dépourvue de sens : il démontre le contraire. L'exemple 2 (p. 115) prend exactement la comparaison de deux moyennes de températures maximales — janvier contre février — et conclut « Hence (8) is meaningful under these conditions », suivi de la remarque générale : « In general, it may be observed that whether or not a particular mathematical operation can be used with a particular scale does not have a simple yes or no answer. The admissibility of any mathematical operation depends not only on the scale type of the relevant numerical assignments but on the entire numerical statement of which the operation is a part. » Ce qui est déclaré dépourvu de sens, c'est le rapport de deux températures maximales (énoncé 4, p. 108) — vrai en Fahrenheit, faux en Celsius, contre-exemple calculé p. 109 — et la comparaison entre une somme de deux températures et une troisième (exemple 1, p. 113-114), alors que la même somme est douée de sens pour des masses, qui sont sur une échelle de rapport. Le texte est donc plus exigeant, et non plus permissif, que la version courante qui interdit des opérations en bloc par type d'échelle : ce sont des énoncés entiers qui ont ou n'ont pas de sens, pas des opérations.\n\nLa section 6.3 tranche enfin contre deux positions concurrentes, nommées : celle de Weitzenhoffer (1951), pour qui les seules opérations mathématiques admissibles sont celles qui correspondent à des opérations physiques connues, et celle de Guilford (1954), pour qui toutes les règles de l'arithmétique deviennent admissibles dès qu'existe une addition physique. « In contrast to these two positions, Definition 28 implies that the meaningfulness of numerical statements is determined solely by the uniqueness properties of their numerical assignments, not by the nature of the operations in the empirical or numerical systems » (p. 121-122). Le critère est d'invariance, pas d'opération."
-        }
-      ]
-    },
-    {
       "claim_id": "C058",
       "locator": "sections[4].paragraphs[1]",
-      "claim_text": "elle se poursuit dans les textes de ceux qui l’ont menée, à commencer par les deux adversaires qu’ils nomment.",
+      "claim_text": "Quant à la controverse qu’ils disent considérable, elle se poursuit dans les textes de ceux qui l’ont menée, à commencer par les deux adversaires qu’ils nomment.",
       "supports": [
         {
           "id": "SUP-106c334769abc2bc",
@@ -1328,6 +1181,6 @@
       ]
     }
   ],
-  "estimated_tokens": 91498,
+  "estimated_tokens": 74174,
   "status": "READY"
 }
