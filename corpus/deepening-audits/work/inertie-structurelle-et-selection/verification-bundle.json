@@ -1,11 +1,39 @@
 {
   "protocol_version": 1,
   "concept_id": "inertie-structurelle-et-selection",
-  "candidate_sha256": "c6bb2f8cbf4446352a13578baa56ecb8c6b2feb33d83dead7d1f47323e473060",
-  "map_sha256": "7710e1f1556ff0fafa4ad647233a4fb37f743aee2642f501af9aecd2578745d0",
+  "candidate_sha256": "665bd0532b9b06ced1a71070bcc9697617a9c9b6fd09642340da37c8bcc82a81",
+  "map_sha256": "a29cf3abd7eb77afea5458b6094811c06c919876799a378a4c241048a6d0a0f6",
   "claims": [
     {
       "claim_id": "C001",
+      "locator": "lead[0]",
+      "claim_text": "La première attente porte sur la régularité de l’organisation dans le temps, la seconde sur sa capacité de rendre compte de ce qu’elle a fait.",
+      "supports": [
+        {
+          "id": "SUP-bdea7a9b2aba92fd",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[7]",
+          "access": "n/a",
+          "text": "8. Ce que le monde moderne demande aux organisations n'est pas d'abord l'efficience. Les auteurs écartent explicitement les explications par l'efficience (marché défaillant, coûts de transaction, coordination) : « it is not obvious that a permanent organization has any technical advantage » (p. 152-153). Ils avancent deux autres compétences distinctives. La FIABILITÉ : « Organizations have unusual capacities to produce collective products of a given quality repeatedly » ; « Reliability depends on the variance of performance (including its timeliness) rather than its average level » ; « the distinctive competence of organizations is the capacity to generate collective actions with relatively small variance in quality » (p. 153). Et la REDEVABILITÉ : les organisations doivent « be able to document how resources have been used and to reconstruct the sequences of organizational decisions, rules, and actions that produced particular outcomes » — précision cruciale : « It does not necessarily mean that organizations must tell the truth […] What matters is that organizations can make internally consistent arguments that appropriate rules and procedures existed » (p. 153)."
+        },
+        {
+          "id": "SUP-f0b8ab5f07a175c9",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.translation_notes[1].note",
+          "access": "n/a",
+          "text": "Défini par la variance, pas par le niveau : « Reliability depends on the variance of performance (including its timeliness) rather than its average level » (1984, p. 153). Une organisation fiable au sens de H&F n'est pas une organisation performante mais une organisation dont la qualité varie peu — en coupe (cross-sectional reliability) et dans le temps (temporal reliability)."
+        },
+        {
+          "id": "SUP-59535b9a959c6e2d",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.translation_notes[2].note",
+          "access": "n/a",
+          "text": "Aucun équivalent français stable. « Responsabilité » est faux (ce n'est pas responsibility) ; « reddition de comptes » rend l'acte mais pas la propriété. Le contenu est technique : « they must be able to document how resources have been used and to reconstruct the sequences of organizational decisions, rules, and actions that produced particular outcomes » — et surtout : « It does not necessarily mean that organizations must tell the truth […] What matters is that organizations can make internally consistent arguments that appropriate rules and procedures existed » (1984, p. 153). Traduire par « transparence » serait un contresens : la redevabilité ici est une capacité de justification formelle, pas une exigence de vérité."
+        }
+      ]
+    },
+    {
+      "claim_id": "C002",
       "locator": "lead[0]",
       "claim_text": "Ni l’une ni l’autre n’est possible si l’organisation ne fonctionne pas aujourd’hui à peu près comme hier.",
       "supports": [
@@ -15,20 +43,34 @@
           "path": "$.evidence.mechanism[9]",
           "access": "n/a",
           "text": "10. Le maillon décisif de la chaîne : pour être fiable, il faut se répéter. « Reliable performance requires that an organization continually reproduce its structure—it must have very nearly the same structure today that it had yesterday. Among other things, this means that structures of roles, authority and communication must be reproducible from day to day. » D'où l'Assumption 2 : « Reliability and accountability require that organizational structures be highly reproducible » (p. 154)."
+        },
+        {
+          "id": "SUP-47f417b5810a8e19",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.translation_notes[3].note",
+          "access": "n/a",
+          "text": "À ne pas confondre avec la « reproduction sociale » au sens bourdieusien : il s'agit ici de la capacité à présenter demain la même structure qu'hier — « it must have very nearly the same structure today that it had yesterday » (1984, p. 154). C'est le maillon central de la chaîne : sans lui, la thèse se réduit à une constatation de rigidité."
         }
       ]
     },
     {
-      "claim_id": "C002",
+      "claim_id": "C003",
       "locator": "lead[1]",
       "claim_text": "Michael Hannan et John Freeman ont pris ces deux attentes au sérieux et se sont demandé ce qu’elles coûtent.",
       "supports": [
         {
-          "id": "SUP-4b08f1b852380a09",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.key_quotation.original_text",
+          "id": "SUP-78582149fa4c3f64",
+          "origin": "validated",
+          "path": "$.authors[0].name",
           "access": "n/a",
-          "text": "A prerequisite for reliable and accountable performance is the capacity to reproduce a structure with high fidelity. The price paid for high-fidelity reproduction is structural inertia. Thus if selection favors reliable, accountable organizations, it also favors organizations with high levels of inertia. In this sense, inertia can be considered to be a by-product of selection."
+          "text": "Michael T. Hannan"
+        },
+        {
+          "id": "SUP-ebf3e8fd18a2e06b",
+          "origin": "validated",
+          "path": "$.authors[1].name",
+          "access": "n/a",
+          "text": "John Freeman"
         },
         {
           "id": "SUP-6cad6f45fa58e881",
@@ -36,11 +78,18 @@
           "path": "$.evidence.primary_sources[1].evidence",
           "access": "full-text",
           "text": "SOURCE PROPRE DU CONCEPT. Établit dans les mots des auteurs : la thèse annoncée au résumé — « The proposed theory treats high levels of structural inertia as a consequence of a selection process rather than as a precondition for selection » (p. 149) ; la définition relative et dynamique de l'inertie (p. 151) ; le démenti « strong inertial forces ≠ organizations never change » (p. 151) ; l'écartement des explications par l'efficience (p. 152-153) ; fiabilité définie par la variance et non la moyenne, redevabilité définie par la capacité à documenter et reconstituer, non par la véracité (p. 153) ; Assumption 1 (la sélection favorise fiabilité et redevabilité, p. 154) ; Assumption 2 (elles exigent une structure hautement reproductible, p. 154) ; institutionnalisation et routines standardisées comme voies de la reproductibilité, et l'épée à double tranchant (p. 154) ; Assumption 3 et Theorem 1 (p. 155) ; la hiérarchie noyau/périphérie et ses quatre traits de noyau (p. 156-157) ; Assumption 4 et Theorems 2-3 sur l'âge (p. 157-158) ; Assumptions 5 à 9, Theorem 4 « Attempts at reorganization increase death rates » (p. 159) et la remise à zéro de l'horloge de la liability of newness (p. 160) ; Assumption 10 et Theorem 5 sur la complexité (p. 162) ; et les limites que les auteurs posent eux-mêmes à leur propre thèse (p. 163). Fournit le passage citable (CONCLUSIONS, p. 162-163)."
+        },
+        {
+          "id": "SUP-4b08f1b852380a09",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.key_quotation.original_text",
+          "access": "n/a",
+          "text": "A prerequisite for reliable and accountable performance is the capacity to reproduce a structure with high fidelity. The price paid for high-fidelity reproduction is structural inertia. Thus if selection favors reliable, accountable organizations, it also favors organizations with high levels of inertia. In this sense, inertia can be considered to be a by-product of selection."
         }
       ]
     },
     {
-      "claim_id": "C003",
+      "claim_id": "C004",
       "locator": "lead[1]",
       "claim_text": "Une organisation ne peut les satisfaire qu’en se répétant",
       "supports": [
@@ -61,7 +110,7 @@
       ]
     },
     {
-      "claim_id": "C004",
+      "claim_id": "C005",
       "locator": "lead[1]",
       "claim_text": "rien ne dit qu’une structure faite pour se répéter reste facile à modifier",
       "supports": [
@@ -82,17 +131,10 @@
       ]
     },
     {
-      "claim_id": "C005",
+      "claim_id": "C006",
       "locator": "lead[1]",
       "claim_text": "La question qu’ils posent n’est donc pas de savoir si les organisations changent, mais de savoir ce que leur impose, sur ce point, le fait même d’être dignes de confiance.",
       "supports": [
-        {
-          "id": "SUP-6bb8d6b8d4d7fd29",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.mechanism[5]",
-          "access": "n/a",
-          "text": "6. 1984 rouvre la question à l'envers : au lieu de postuler l'inertie, l'expliquer. Le déplacement décisif porte sur le TEMPS : « The most important issues about the applicability of evolutionary-ecological theories to organizations concern the timing of changes. Learning and adjusting structure enhances the chance of survival only if the speed of response is commensurate with the temporal patterns of relevant environments » (p. 151). Trois grandeurs doivent être connues : le rythme des changements de l'environnement, la vitesse des mécanismes d'apprentissage, la réactivité de la structure aux changements décidés (p. 151)."
-        },
         {
           "id": "SUP-00ceb57144bd935c",
           "origin": "evidence:evidence.primary-reading.json",
@@ -101,16 +143,30 @@
           "text": "« To claim that organizational structures are subject to strong inertial forces is not the same as claiming that organizations never change. Rather, it means that organizations respond relatively slowly to the occurrence of threats and opportunities in their environments » (1984, p. 151). L'article ajoute reconnaître « that organizational changes of some kinds occur frequently and that organizations sometimes even manage to make radical changes in strategies and structures » (p. 149)."
         },
         {
-          "id": "SUP-4b08f1b852380a09",
+          "id": "SUP-6cad6f45fa58e881",
           "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.key_quotation.original_text",
-          "access": "n/a",
-          "text": "A prerequisite for reliable and accountable performance is the capacity to reproduce a structure with high fidelity. The price paid for high-fidelity reproduction is structural inertia. Thus if selection favors reliable, accountable organizations, it also favors organizations with high levels of inertia. In this sense, inertia can be considered to be a by-product of selection."
+          "path": "$.evidence.primary_sources[1].evidence",
+          "access": "full-text",
+          "text": "SOURCE PROPRE DU CONCEPT. Établit dans les mots des auteurs : la thèse annoncée au résumé — « The proposed theory treats high levels of structural inertia as a consequence of a selection process rather than as a precondition for selection » (p. 149) ; la définition relative et dynamique de l'inertie (p. 151) ; le démenti « strong inertial forces ≠ organizations never change » (p. 151) ; l'écartement des explications par l'efficience (p. 152-153) ; fiabilité définie par la variance et non la moyenne, redevabilité définie par la capacité à documenter et reconstituer, non par la véracité (p. 153) ; Assumption 1 (la sélection favorise fiabilité et redevabilité, p. 154) ; Assumption 2 (elles exigent une structure hautement reproductible, p. 154) ; institutionnalisation et routines standardisées comme voies de la reproductibilité, et l'épée à double tranchant (p. 154) ; Assumption 3 et Theorem 1 (p. 155) ; la hiérarchie noyau/périphérie et ses quatre traits de noyau (p. 156-157) ; Assumption 4 et Theorems 2-3 sur l'âge (p. 157-158) ; Assumptions 5 à 9, Theorem 4 « Attempts at reorganization increase death rates » (p. 159) et la remise à zéro de l'horloge de la liability of newness (p. 160) ; Assumption 10 et Theorem 5 sur la complexité (p. 162) ; et les limites que les auteurs posent eux-mêmes à leur propre thèse (p. 163). Fournit le passage citable (CONCLUSIONS, p. 162-163)."
         }
       ]
     },
     {
-      "claim_id": "C006",
+      "claim_id": "C007",
+      "locator": "sections[0].paragraphs[0]",
+      "claim_text": "Le premier mot est la fiabilité, et il ne dit pas ici ce qu’on lui fait dire d’ordinaire.",
+      "supports": [
+        {
+          "id": "SUP-f0b8ab5f07a175c9",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.translation_notes[1].note",
+          "access": "n/a",
+          "text": "Défini par la variance, pas par le niveau : « Reliability depends on the variance of performance (including its timeliness) rather than its average level » (1984, p. 153). Une organisation fiable au sens de H&F n'est pas une organisation performante mais une organisation dont la qualité varie peu — en coupe (cross-sectional reliability) et dans le temps (temporal reliability)."
+        }
+      ]
+    },
+    {
+      "claim_id": "C008",
       "locator": "sections[0].paragraphs[0]",
       "claim_text": "Une organisation fiable n’est pas une organisation qui réussit bien : c’est une organisation dont la qualité de ce qu’elle produit, délais compris, varie peu.",
       "supports": [
@@ -120,11 +176,18 @@
           "path": "$.evidence.mechanism[7]",
           "access": "n/a",
           "text": "8. Ce que le monde moderne demande aux organisations n'est pas d'abord l'efficience. Les auteurs écartent explicitement les explications par l'efficience (marché défaillant, coûts de transaction, coordination) : « it is not obvious that a permanent organization has any technical advantage » (p. 152-153). Ils avancent deux autres compétences distinctives. La FIABILITÉ : « Organizations have unusual capacities to produce collective products of a given quality repeatedly » ; « Reliability depends on the variance of performance (including its timeliness) rather than its average level » ; « the distinctive competence of organizations is the capacity to generate collective actions with relatively small variance in quality » (p. 153). Et la REDEVABILITÉ : les organisations doivent « be able to document how resources have been used and to reconstruct the sequences of organizational decisions, rules, and actions that produced particular outcomes » — précision cruciale : « It does not necessarily mean that organizations must tell the truth […] What matters is that organizations can make internally consistent arguments that appropriate rules and procedures existed » (p. 153)."
+        },
+        {
+          "id": "SUP-f0b8ab5f07a175c9",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.translation_notes[1].note",
+          "access": "n/a",
+          "text": "Défini par la variance, pas par le niveau : « Reliability depends on the variance of performance (including its timeliness) rather than its average level » (1984, p. 153). Une organisation fiable au sens de H&F n'est pas une organisation performante mais une organisation dont la qualité varie peu — en coupe (cross-sectional reliability) et dans le temps (temporal reliability)."
         }
       ]
     },
     {
-      "claim_id": "C007",
+      "claim_id": "C009",
       "locator": "sections[0].paragraphs[0]",
       "claim_text": "Hannan et Freeman le disent sans détour : la fiabilité se juge à la variance des performances et non à leur niveau moyen.",
       "supports": [
@@ -134,11 +197,18 @@
           "path": "$.evidence.mechanism[7]",
           "access": "n/a",
           "text": "8. Ce que le monde moderne demande aux organisations n'est pas d'abord l'efficience. Les auteurs écartent explicitement les explications par l'efficience (marché défaillant, coûts de transaction, coordination) : « it is not obvious that a permanent organization has any technical advantage » (p. 152-153). Ils avancent deux autres compétences distinctives. La FIABILITÉ : « Organizations have unusual capacities to produce collective products of a given quality repeatedly » ; « Reliability depends on the variance of performance (including its timeliness) rather than its average level » ; « the distinctive competence of organizations is the capacity to generate collective actions with relatively small variance in quality » (p. 153). Et la REDEVABILITÉ : les organisations doivent « be able to document how resources have been used and to reconstruct the sequences of organizational decisions, rules, and actions that produced particular outcomes » — précision cruciale : « It does not necessarily mean that organizations must tell the truth […] What matters is that organizations can make internally consistent arguments that appropriate rules and procedures existed » (p. 153)."
+        },
+        {
+          "id": "SUP-f0b8ab5f07a175c9",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.translation_notes[1].note",
+          "access": "n/a",
+          "text": "Défini par la variance, pas par le niveau : « Reliability depends on the variance of performance (including its timeliness) rather than its average level » (1984, p. 153). Une organisation fiable au sens de H&F n'est pas une organisation performante mais une organisation dont la qualité varie peu — en coupe (cross-sectional reliability) et dans le temps (temporal reliability)."
         }
       ]
     },
     {
-      "claim_id": "C008",
+      "claim_id": "C010",
       "locator": "sections[0].paragraphs[0]",
       "claim_text": "Un service qui traite excellemment une demande sur deux et catastrophiquement l’autre est, à ce compte, moins fiable qu’un service médiocre et régulier.",
       "supports": [
@@ -148,11 +218,18 @@
           "path": "$.evidence.mechanism[7]",
           "access": "n/a",
           "text": "8. Ce que le monde moderne demande aux organisations n'est pas d'abord l'efficience. Les auteurs écartent explicitement les explications par l'efficience (marché défaillant, coûts de transaction, coordination) : « it is not obvious that a permanent organization has any technical advantage » (p. 152-153). Ils avancent deux autres compétences distinctives. La FIABILITÉ : « Organizations have unusual capacities to produce collective products of a given quality repeatedly » ; « Reliability depends on the variance of performance (including its timeliness) rather than its average level » ; « the distinctive competence of organizations is the capacity to generate collective actions with relatively small variance in quality » (p. 153). Et la REDEVABILITÉ : les organisations doivent « be able to document how resources have been used and to reconstruct the sequences of organizational decisions, rules, and actions that produced particular outcomes » — précision cruciale : « It does not necessarily mean that organizations must tell the truth […] What matters is that organizations can make internally consistent arguments that appropriate rules and procedures existed » (p. 153)."
+        },
+        {
+          "id": "SUP-f0b8ab5f07a175c9",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.translation_notes[1].note",
+          "access": "n/a",
+          "text": "Défini par la variance, pas par le niveau : « Reliability depends on the variance of performance (including its timeliness) rather than its average level » (1984, p. 153). Une organisation fiable au sens de H&F n'est pas une organisation performante mais une organisation dont la qualité varie peu — en coupe (cross-sectional reliability) et dans le temps (temporal reliability)."
         }
       ]
     },
     {
-      "claim_id": "C009",
+      "claim_id": "C011",
       "locator": "sections[0].paragraphs[0]",
       "claim_text": "C’est cette faible dispersion que l’on cherche en s’adressant à une organisation plutôt qu’à un assemblage temporaire de gens compétents.",
       "supports": [
@@ -169,11 +246,18 @@
           "path": "$.evidence.conditions.appears_when[1]",
           "access": "n/a",
           "text": "Des acteurs (membres, investisseurs, clients) valorisent la faible variance plus que le niveau moyen de performance : « rational actors may be willing to pay a high price for the certainty that a given product or service of a certain minimum quality will be available when it is needed » (1984, p. 153)."
+        },
+        {
+          "id": "SUP-dde41595f2fe68a6",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.common_misinterpretations[4].why_wrong",
+          "access": "n/a",
+          "text": "L'argument est construit CONTRE les explications par l'efficience : « Although these efficiency arguments are plausible, it is not obvious that they are correct […] From the perspective of the performance of a single, complex collective action, it is not obvious that a permanent organization has any technical advantage » (1984, p. 152-153). Ce que la sélection favorise est la faible variance de la qualité et la capacité à rendre compte : « In a world of uncertainty, potential members, investors, and clients may value reliability of performance more than efficiency » (p. 153)."
         }
       ]
     },
     {
-      "claim_id": "C010",
+      "claim_id": "C012",
       "locator": "sections[0].paragraphs[1]",
       "claim_text": "Être redevable, c’est pouvoir documenter l’usage qui a été fait des ressources et reconstituer la suite des décisions, des règles et des actions qui ont produit un résultat.",
       "supports": [
@@ -183,11 +267,18 @@
           "path": "$.evidence.mechanism[7]",
           "access": "n/a",
           "text": "8. Ce que le monde moderne demande aux organisations n'est pas d'abord l'efficience. Les auteurs écartent explicitement les explications par l'efficience (marché défaillant, coûts de transaction, coordination) : « it is not obvious that a permanent organization has any technical advantage » (p. 152-153). Ils avancent deux autres compétences distinctives. La FIABILITÉ : « Organizations have unusual capacities to produce collective products of a given quality repeatedly » ; « Reliability depends on the variance of performance (including its timeliness) rather than its average level » ; « the distinctive competence of organizations is the capacity to generate collective actions with relatively small variance in quality » (p. 153). Et la REDEVABILITÉ : les organisations doivent « be able to document how resources have been used and to reconstruct the sequences of organizational decisions, rules, and actions that produced particular outcomes » — précision cruciale : « It does not necessarily mean that organizations must tell the truth […] What matters is that organizations can make internally consistent arguments that appropriate rules and procedures existed » (p. 153)."
+        },
+        {
+          "id": "SUP-59535b9a959c6e2d",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.translation_notes[2].note",
+          "access": "n/a",
+          "text": "Aucun équivalent français stable. « Responsabilité » est faux (ce n'est pas responsibility) ; « reddition de comptes » rend l'acte mais pas la propriété. Le contenu est technique : « they must be able to document how resources have been used and to reconstruct the sequences of organizational decisions, rules, and actions that produced particular outcomes » — et surtout : « It does not necessarily mean that organizations must tell the truth […] What matters is that organizations can make internally consistent arguments that appropriate rules and procedures existed » (1984, p. 153). Traduire par « transparence » serait un contresens : la redevabilité ici est une capacité de justification formelle, pas une exigence de vérité."
         }
       ]
     },
     {
-      "claim_id": "C011",
+      "claim_id": "C013",
       "locator": "sections[0].paragraphs[1]",
       "claim_text": "Les auteurs précisent que cela n’oblige pas une organisation à dire la vérité : ce qui compte est qu’elle puisse tenir un argument cohérent montrant que des règles appropriées existaient.",
       "supports": [
@@ -197,11 +288,18 @@
           "path": "$.evidence.mechanism[7]",
           "access": "n/a",
           "text": "8. Ce que le monde moderne demande aux organisations n'est pas d'abord l'efficience. Les auteurs écartent explicitement les explications par l'efficience (marché défaillant, coûts de transaction, coordination) : « it is not obvious that a permanent organization has any technical advantage » (p. 152-153). Ils avancent deux autres compétences distinctives. La FIABILITÉ : « Organizations have unusual capacities to produce collective products of a given quality repeatedly » ; « Reliability depends on the variance of performance (including its timeliness) rather than its average level » ; « the distinctive competence of organizations is the capacity to generate collective actions with relatively small variance in quality » (p. 153). Et la REDEVABILITÉ : les organisations doivent « be able to document how resources have been used and to reconstruct the sequences of organizational decisions, rules, and actions that produced particular outcomes » — précision cruciale : « It does not necessarily mean that organizations must tell the truth […] What matters is that organizations can make internally consistent arguments that appropriate rules and procedures existed » (p. 153)."
+        },
+        {
+          "id": "SUP-59535b9a959c6e2d",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.translation_notes[2].note",
+          "access": "n/a",
+          "text": "Aucun équivalent français stable. « Responsabilité » est faux (ce n'est pas responsibility) ; « reddition de comptes » rend l'acte mais pas la propriété. Le contenu est technique : « they must be able to document how resources have been used and to reconstruct the sequences of organizational decisions, rules, and actions that produced particular outcomes » — et surtout : « It does not necessarily mean that organizations must tell the truth […] What matters is that organizations can make internally consistent arguments that appropriate rules and procedures existed » (1984, p. 153). Traduire par « transparence » serait un contresens : la redevabilité ici est une capacité de justification formelle, pas une exigence de vérité."
         }
       ]
     },
     {
-      "claim_id": "C012",
+      "claim_id": "C014",
       "locator": "sections[0].paragraphs[1]",
       "claim_text": "On voit du même coup pourquoi un geste improvisé, même juste, la met en défaut : il n’y a rien à quoi rattacher l’explication.",
       "supports": [
@@ -211,11 +309,32 @@
           "path": "$.evidence.mechanism[7]",
           "access": "n/a",
           "text": "8. Ce que le monde moderne demande aux organisations n'est pas d'abord l'efficience. Les auteurs écartent explicitement les explications par l'efficience (marché défaillant, coûts de transaction, coordination) : « it is not obvious that a permanent organization has any technical advantage » (p. 152-153). Ils avancent deux autres compétences distinctives. La FIABILITÉ : « Organizations have unusual capacities to produce collective products of a given quality repeatedly » ; « Reliability depends on the variance of performance (including its timeliness) rather than its average level » ; « the distinctive competence of organizations is the capacity to generate collective actions with relatively small variance in quality » (p. 153). Et la REDEVABILITÉ : les organisations doivent « be able to document how resources have been used and to reconstruct the sequences of organizational decisions, rules, and actions that produced particular outcomes » — précision cruciale : « It does not necessarily mean that organizations must tell the truth […] What matters is that organizations can make internally consistent arguments that appropriate rules and procedures existed » (p. 153)."
+        },
+        {
+          "id": "SUP-59535b9a959c6e2d",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.translation_notes[2].note",
+          "access": "n/a",
+          "text": "Aucun équivalent français stable. « Responsabilité » est faux (ce n'est pas responsibility) ; « reddition de comptes » rend l'acte mais pas la propriété. Le contenu est technique : « they must be able to document how resources have been used and to reconstruct the sequences of organizational decisions, rules, and actions that produced particular outcomes » — et surtout : « It does not necessarily mean that organizations must tell the truth […] What matters is that organizations can make internally consistent arguments that appropriate rules and procedures existed » (1984, p. 153). Traduire par « transparence » serait un contresens : la redevabilité ici est une capacité de justification formelle, pas une exigence de vérité."
         }
       ]
     },
     {
-      "claim_id": "C013",
+      "claim_id": "C015",
+      "locator": "sections[0].paragraphs[2]",
+      "claim_text": "L’épreuve ne se répartit pas également dans le temps.",
+      "supports": [
+        {
+          "id": "SUP-288246144b279786",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[8]",
+          "access": "n/a",
+          "text": "9. Où s'exercent ces tests : d'abord à la naissance, lors de la mobilisation initiale des ressources — « Testing for accountability is especially intense during organization building » (p. 153) — puis en continu : « Unreliability and failures of accountability at any stage in a subsequent lifetime threatens an organization's ability to maintain commitment of members and clients and its ability to acquire additional resources » (p. 154). Et lors des contractions de ressources : « Accountability testing is also severe when resources contract. Members and clients who would otherwise be willing to overlook waste typically change their views when budgets and services are being cut » (p. 153). D'où l'Assumption 1 : « Selection in populations of organizations in modern societies favors forms with high reliability of performance and high levels of accountability » (p. 154)."
+        }
+      ]
+    },
+    {
+      "claim_id": "C016",
       "locator": "sections[0].paragraphs[2]",
       "claim_text": "Le test de redevabilité est particulièrement intense au moment où l’organisation se construit, quand il faut convaincre des gens d’apporter leurs ressources à ce qui n’a encore rien prouvé",
       "supports": [
@@ -229,7 +348,7 @@
       ]
     },
     {
-      "claim_id": "C014",
+      "claim_id": "C017",
       "locator": "sections[0].paragraphs[2]",
       "claim_text": "il redevient sévère quand les ressources se contractent : des membres et des clients qui fermaient les yeux sur un gaspillage changent d’avis dès que les budgets et les services sont réduits.",
       "supports": [
@@ -243,7 +362,7 @@
       ]
     },
     {
-      "claim_id": "C015",
+      "claim_id": "C018",
       "locator": "sections[1].paragraphs[0]",
       "claim_text": "Pour une action isolée, même complexe, Hannan et Freeman remarquent qu’il n’est pas évident qu’une organisation permanente offre un avantage technique.",
       "supports": [
@@ -264,7 +383,7 @@
       ]
     },
     {
-      "claim_id": "C016",
+      "claim_id": "C019",
       "locator": "sections[1].paragraphs[0]",
       "claim_text": "Obtenir le même résultat de façon répétée, à travers des employés qui arrivent et repartent, dans des lieux différents, année après année, suppose autre chose.",
       "supports": [
@@ -274,14 +393,7 @@
           "path": "$.evidence.mechanism[7]",
           "access": "n/a",
           "text": "8. Ce que le monde moderne demande aux organisations n'est pas d'abord l'efficience. Les auteurs écartent explicitement les explications par l'efficience (marché défaillant, coûts de transaction, coordination) : « it is not obvious that a permanent organization has any technical advantage » (p. 152-153). Ils avancent deux autres compétences distinctives. La FIABILITÉ : « Organizations have unusual capacities to produce collective products of a given quality repeatedly » ; « Reliability depends on the variance of performance (including its timeliness) rather than its average level » ; « the distinctive competence of organizations is the capacity to generate collective actions with relatively small variance in quality » (p. 153). Et la REDEVABILITÉ : les organisations doivent « be able to document how resources have been used and to reconstruct the sequences of organizational decisions, rules, and actions that produced particular outcomes » — précision cruciale : « It does not necessarily mean that organizations must tell the truth […] What matters is that organizations can make internally consistent arguments that appropriate rules and procedures existed » (p. 153)."
-        }
-      ]
-    },
-    {
-      "claim_id": "C017",
-      "locator": "sections[1].paragraphs[0]",
-      "claim_text": "Pour se comporter de façon fiable, écrivent Hannan et Freeman, une organisation doit reproduire continuellement sa structure : elle doit présenter aujourd’hui presque exactement la même structure qu’hier, et ses répartitions de rôles, d’autorité et de communication doivent être reproductibles d’un jour sur l’autre.",
-      "supports": [
+        },
         {
           "id": "SUP-8af9ab630019bc46",
           "origin": "evidence:evidence.primary-reading.json",
@@ -292,9 +404,30 @@
       ]
     },
     {
-      "claim_id": "C018",
+      "claim_id": "C020",
+      "locator": "sections[1].paragraphs[0]",
+      "claim_text": "Pour se comporter de façon fiable, écrivent Hannan et Freeman, une organisation doit reproduire continuellement sa structure : elle doit présenter aujourd’hui presque exactement la même structure qu’hier, et ses répartitions de rôles, d’autorité et de communication doivent être reproductibles d’un jour sur l’autre.",
+      "supports": [
+        {
+          "id": "SUP-8af9ab630019bc46",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[9]",
+          "access": "n/a",
+          "text": "10. Le maillon décisif de la chaîne : pour être fiable, il faut se répéter. « Reliable performance requires that an organization continually reproduce its structure—it must have very nearly the same structure today that it had yesterday. Among other things, this means that structures of roles, authority and communication must be reproducible from day to day. » D'où l'Assumption 2 : « Reliability and accountability require that organizational structures be highly reproducible » (p. 154)."
+        },
+        {
+          "id": "SUP-47f417b5810a8e19",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.translation_notes[3].note",
+          "access": "n/a",
+          "text": "À ne pas confondre avec la « reproduction sociale » au sens bourdieusien : il s'agit ici de la capacité à présenter demain la même structure qu'hier — « it must have very nearly the same structure today that it had yesterday » (1984, p. 154). C'est le maillon central de la chaîne : sans lui, la thèse se réduit à une constatation de rigidité."
+        }
+      ]
+    },
+    {
+      "claim_id": "C021",
       "locator": "sections[1].paragraphs[1]",
-      "claim_text": "Cette reproduction ne va pas de soi et ne se renégocie pas chaque matin.",
+      "claim_text": "Hannan et Freeman jugent peu vraisemblable qu’une organisation renégocie chaque matin sa structure.",
       "supports": [
         {
           "id": "SUP-a5fdd6c3a3a8c09a",
@@ -306,7 +439,21 @@
       ]
     },
     {
-      "claim_id": "C019",
+      "claim_id": "C022",
+      "locator": "sections[1].paragraphs[1]",
+      "claim_text": "Cette reproduction ne va pas de soi pour autant.",
+      "supports": [
+        {
+          "id": "SUP-a5fdd6c3a3a8c09a",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[10]",
+          "access": "n/a",
+          "text": "11. Comment la reproductibilité est obtenue : « organizations attain reproducibility of structure through processes of institutionalization and by creating highly standardized routines » (p. 154). Renégocier chaque jour la structure serait concevable mais « seems unlikely »."
+        }
+      ]
+    },
+    {
+      "claim_id": "C023",
       "locator": "sections[1].paragraphs[1]",
       "claim_text": "Elle s’obtient par deux voies : l’institutionnalisation, qui donne à l’organisation un caractère allant de soi, de sorte que ses membres ne remettent pas continuellement en question ses finalités ou ses rapports d’autorité",
       "supports": [
@@ -327,7 +474,7 @@
       ]
     },
     {
-      "claim_id": "C020",
+      "claim_id": "C024",
       "locator": "sections[1].paragraphs[1]",
       "claim_text": "des routines fortement standardisées, qui forment sa mémoire pratique",
       "supports": [
@@ -348,7 +495,7 @@
       ]
     },
     {
-      "claim_id": "C021",
+      "claim_id": "C025",
       "locator": "sections[1].paragraphs[1]",
       "claim_text": "Ces routines sont étroites et propres à chaque maison, et elles se dégradent faute d’usage, ce qui oblige à les entretenir comme une armée s’entraîne en temps de paix.",
       "supports": [
@@ -362,7 +509,7 @@
       ]
     },
     {
-      "claim_id": "C022",
+      "claim_id": "C026",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "L’institutionnalisation est une lame à deux tranchants",
       "supports": [
@@ -372,11 +519,18 @@
           "path": "$.evidence.mechanism[11]",
           "access": "n/a",
           "text": "12. Le retournement — l'institutionnalisation comme épée à double tranchant. Elle abaisse le coût de l'action collective « by giving an organization a taken-for-granted character such that members do not continually question organizational purposes, authority relations, etc. » ; et « The other edge of the sword is inertia. The very factors that make a system reproducible make it resistant to change. In particular, to the extent that an organization comes to be valued for itself, changes in structural arrangements become moral and political rather than technical issues. Attempts at redesigning structures in organizations built on moral commitment are likely to spark bursts of collective opposition premised on moral claims in favor of the status quo. Even if such opposition does not prevail, it delays change considerably » (p. 154)."
+        },
+        {
+          "id": "SUP-0bbf72d0f9bbaa3e",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.key_quotation._alternatives_verbatim[2].text_en",
+          "access": "n/a",
+          "text": "The other edge of the sword is inertia. The very factors that make a system reproducible make it resistant to change."
         }
       ]
     },
     {
-      "claim_id": "C023",
+      "claim_id": "C027",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "Elle abaisse le coût de l’action collective, mais les facteurs mêmes qui rendent un système reproductible le rendent résistant au changement.",
       "supports": [
@@ -386,11 +540,18 @@
           "path": "$.evidence.mechanism[11]",
           "access": "n/a",
           "text": "12. Le retournement — l'institutionnalisation comme épée à double tranchant. Elle abaisse le coût de l'action collective « by giving an organization a taken-for-granted character such that members do not continually question organizational purposes, authority relations, etc. » ; et « The other edge of the sword is inertia. The very factors that make a system reproducible make it resistant to change. In particular, to the extent that an organization comes to be valued for itself, changes in structural arrangements become moral and political rather than technical issues. Attempts at redesigning structures in organizations built on moral commitment are likely to spark bursts of collective opposition premised on moral claims in favor of the status quo. Even if such opposition does not prevail, it delays change considerably » (p. 154)."
+        },
+        {
+          "id": "SUP-0bbf72d0f9bbaa3e",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.key_quotation._alternatives_verbatim[2].text_en",
+          "access": "n/a",
+          "text": "The other edge of the sword is inertia. The very factors that make a system reproducible make it resistant to change."
         }
       ]
     },
     {
-      "claim_id": "C024",
+      "claim_id": "C028",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "La raison n’est pas d’abord technique : dès lors qu’une organisation finit par être valorisée pour elle-même, toucher à ses arrangements structurels devient une question morale et politique plutôt qu’une question d’ingénierie.",
       "supports": [
@@ -411,7 +572,7 @@
       ]
     },
     {
-      "claim_id": "C025",
+      "claim_id": "C029",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "Les oppositions collectives qu’une telle tentative soulève, même sans l’emporter, retardent considérablement le changement.",
       "supports": [
@@ -425,7 +586,7 @@
       ]
     },
     {
-      "claim_id": "C026",
+      "claim_id": "C030",
       "locator": "sections[2].paragraphs[1]",
       "claim_text": "C’est ce résultat que Hannan et Freeman nomment inertie structurelle : les propriétés qui donnent à certaines organisations leur reproductibilité les rendent aussi très résistantes au changement de structure, voulu ou non.",
       "supports": [
@@ -439,7 +600,7 @@
       ]
     },
     {
-      "claim_id": "C027",
+      "claim_id": "C031",
       "locator": "sections[2].paragraphs[1]",
       "claim_text": "Ils prennent soin de séparer leur propos de la lecture la plus répandue, celle qui voit dans l’inertie une pathologie, dans la lignée des analyses classiques sur les dysfonctions de la bureaucratie.",
       "supports": [
@@ -453,7 +614,7 @@
       ]
     },
     {
-      "claim_id": "C028",
+      "claim_id": "C032",
       "locator": "sections[2].paragraphs[1]",
       "claim_text": "Leur question n’est pas ce que l’inertie produit, mais d’où elle vient.",
       "supports": [
@@ -467,7 +628,7 @@
       ]
     },
     {
-      "claim_id": "C029",
+      "claim_id": "C033",
       "locator": "sections[2].paragraphs[2]",
       "claim_text": "Affirmer que des structures subissent de fortes forces d’inertie n’est pas affirmer qu’elles ne changent jamais : cela veut dire qu’elles répondent relativement lentement aux menaces et aux occasions qui surgissent autour d’elles.",
       "supports": [
@@ -484,11 +645,18 @@
           "path": "$.evidence.key_quotation._alternatives_verbatim[1].text_en",
           "access": "n/a",
           "text": "To claim that organizational structures are subject to strong inertial forces is not the same as claiming that organizations never change. Rather, it means that organizations respond relatively slowly to the occurrence of threats and opportunities in their environments."
+        },
+        {
+          "id": "SUP-33f4ed58f5cce916",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.translation_notes[0].note",
+          "access": "n/a",
+          "text": "La traduction littérale est reçue et sans concurrente en français. Le piège n'est pas lexical mais conceptuel : en 1984 le terme ne désigne ni une rigidité ni une immobilité, mais un RAPPORT DE VITESSES — « structures of organizations have high inertia when the speed of reorganization is much lower than the rate at which environmental conditions change » (p. 151). Le français « inertie » suggère l'immobilité ; les auteurs écrivent l'inverse : « To claim that organizational structures are subject to strong inertial forces is not the same as claiming that organizations never change » (p. 151)."
         }
       ]
     },
     {
-      "claim_id": "C030",
+      "claim_id": "C034",
       "locator": "sections[2].paragraphs[2]",
       "claim_text": "Les auteurs reconnaissent eux-mêmes que des changements de certains types se produisent souvent, et que des organisations parviennent parfois à modifier radicalement leur stratégie et leur structure.",
       "supports": [
@@ -502,7 +670,7 @@
       ]
     },
     {
-      "claim_id": "C031",
+      "claim_id": "C035",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "Hannan et Freeman soutiennent l’inverse : la résistance se distribue, et ils rangent quatre traits de noyau selon la force de la contrainte qui pèse sur eux.",
       "supports": [
@@ -516,7 +684,7 @@
       ]
     },
     {
-      "claim_id": "C032",
+      "claim_id": "C036",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "Les buts affichés d’abord, parce que c’est sur eux que se mobilisent la légitimité et les ressources ; puis les formes d’autorité et la base de l’échange entre les membres et l’organisation ; puis la technologie de base, inscrite dans les investissements, les infrastructures et les compétences acquises ; enfin la stratégie de marché, la moins contrainte des quatre.",
       "supports": [
@@ -537,7 +705,7 @@
       ]
     },
     {
-      "claim_id": "C033",
+      "claim_id": "C037",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "Plus on remonte cette échelle, moins un changement par transformation est probable.",
       "supports": [
@@ -551,7 +719,7 @@
       ]
     },
     {
-      "claim_id": "C034",
+      "claim_id": "C038",
       "locator": "sections[3].paragraphs[1]",
       "claim_text": "Le reste se remanie sans drame : organigrammes, nombre et taille des unités, niveaux hiérarchiques, dispositifs de liaison avec l’extérieur.",
       "supports": [
@@ -572,7 +740,7 @@
       ]
     },
     {
-      "claim_id": "C035",
+      "claim_id": "C039",
       "locator": "sections[3].paragraphs[1]",
       "claim_text": "La raison qu’en donnent les auteurs est celle du noyau prise à l’envers : y toucher soulève peu d’opposition morale et politique et ne pose pas de question de fond sur la nature de l’organisation.",
       "supports": [
@@ -582,11 +750,18 @@
           "path": "$.evidence.mechanism[16]",
           "access": "n/a",
           "text": "17. À l'inverse, ce qui change facilement : organigrammes, nombre et taille des sous-unités, niveaux hiérarchiques, structures « périphériques » de liaison avec l'environnement. Raison donnée, et elle est du même ordre que celle du noyau : « They can be transformed because attempts at changing them involve relatively little moral and political opposition within the organization and in the environment and do not raise fundamental questions about the nature of the organization » (p. 157). Le critère n'est donc pas technique mais politique et identitaire — d'où l'exemple du curriculum universitaire, difficile à changer « because it represents the core of the university's organizational identity and underlies the distribution of resources across the organization » (p. 155-156)."
+        },
+        {
+          "id": "SUP-c26db57c7c8ba31c",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.common_misinterpretations[8].why_wrong",
+          "access": "n/a",
+          "text": "C'est la liste de 1977 (p. 930-932), et elle reste valable comme inventaire. Mais l'explication de 1984 déplace la cause : ce qui bloque le noyau est d'ordre moral et politique, non technique — « to the extent that an organization comes to be valued for itself, changes in structural arrangements become moral and political rather than technical issues » (p. 154) ; et symétriquement, ce qui rend la périphérie modifiable est que le changement « involve[s] relatively little moral and political opposition […] and do[es] not raise fundamental questions about the nature of the organization » (p. 157)."
         }
       ]
     },
     {
-      "claim_id": "C036",
+      "claim_id": "C040",
       "locator": "sections[3].paragraphs[1]",
       "claim_text": "Le critère de partage n’est donc pas la difficulté technique, mais ce que le changement engage de l’identité de l’organisation et de sa capacité à mobiliser des ressources.",
       "supports": [
@@ -605,16 +780,16 @@
           "text": "16. Où l'inertie se loge dans la structure : une hiérarchie noyau/périphérie, classée selon le rapport à la MOBILISATION DES RESSOURCES. Quatre traits de noyau : « (1) its stated goals—the bases on which legitimacy and other resources are mobilized; (2) forms of authority within the organization and the basis of exchange between members and the organization; (3) core technology, especially as encoded in capital investment, infrastructure, and the skills of members; and (4) marketing strategy in a broad sense » ; ils « stand in a rough hierarchy, with publicly stated goals subject to the strongest constraints and marketing strategy the weakest », et « we expect the likelihood of change by transformation to decline as one proceeds up the hierarchy » (p. 156). Une fois ces quatre engagements pris, l'organisation « has greatly limited its range of feasible transformations » (p. 156)."
         },
         {
-          "id": "SUP-c26db57c7c8ba31c",
+          "id": "SUP-052f668ebf1d1f4e",
           "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.common_misinterpretations[8].why_wrong",
+          "path": "$.evidence.translation_notes[9].note",
           "access": "n/a",
-          "text": "C'est la liste de 1977 (p. 930-932), et elle reste valable comme inventaire. Mais l'explication de 1984 déplace la cause : ce qui bloque le noyau est d'ordre moral et politique, non technique — « to the extent that an organization comes to be valued for itself, changes in structural arrangements become moral and political rather than technical issues » (p. 154) ; et symétriquement, ce qui rend la périphérie modifiable est que le changement « involve[s] relatively little moral and political opposition […] and do[es] not raise fundamental questions about the nature of the organization » (p. 157)."
+          "text": "Le « noyau » n'est pas le noyau technique de Thompson : les auteurs s'en démarquent explicitement et se disent plus proches de Parsons — « Since we think that the importance of technology in determining structure varies greatly across kinds of organizations, we emphasize institutional characteristics more than technical ones » (1984, p. 156). Le critère du noyau est le rapport à la mobilisation des ressources, pas la technique."
         }
       ]
     },
     {
-      "claim_id": "C037",
+      "claim_id": "C041",
       "locator": "sections[3].paragraphs[1]",
       "claim_text": "Leur exemple est le programme d’enseignement d’une université, difficile à modifier parce qu’il constitue le cœur de son identité et commande la répartition des ressources.",
       "supports": [
@@ -628,7 +803,7 @@
       ]
     },
     {
-      "claim_id": "C038",
+      "claim_id": "C042",
       "locator": "sections[3].paragraphs[1]",
       "claim_text": "On comprend alors l’asymétrie : remanier des services se discute, tandis que toucher au programme rouvre la question de ce que l’établissement est.",
       "supports": [
@@ -642,7 +817,7 @@
       ]
     },
     {
-      "claim_id": "C039",
+      "claim_id": "C043",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "Hannan et Freeman déplacent alors la question d’un cran.",
       "supports": [
@@ -663,7 +838,7 @@
       ]
     },
     {
-      "claim_id": "C040",
+      "claim_id": "C044",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "Deux explications rivales rendent compte de la diversité des formes : l’adaptation, selon laquelle des dirigeants scrutent leur environnement, y repèrent menaces et occasions et ajustent la structure en conséquence ; la sélection, selon laquelle les régularités observées viennent surtout de ce que des formes entières disparaissent et sont remplacées.",
       "supports": [
@@ -673,11 +848,18 @@
           "path": "$.evidence.mechanism[0]",
           "access": "n/a",
           "text": "1. Le point de départ est un désaccord d'explication, pas un jugement sur les organisations. Deux perspectives rivales expliquent la diversité des formes : l'adaptation — « subunits of the organization, usually managers or dominant coalitions, scan the relevant environment for opportunities and threats, formulate strategic responses, and adjust organizational structure appropriately » (1977, p. 930 — CORRIGÉ : la fiche portait p. 929. La phrase commence bien p. 929, mais sur le seul mot « According » ; tous les mots cités sont imprimés en tête de la p. 930) — et la sélection, qui attribue les régularités observées à l'élimination et au remplacement de formes entières. La question posée est : « does change in major features of organizations over time reflect mainly adaptation or selection and replacement? » (1984, p. 150)."
+        },
+        {
+          "id": "SUP-927da70297faebda",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.translation_notes[5].note",
+          "access": "n/a",
+          "text": "L'opposition structure les deux articles, mais « adaptation » en français couvre aussi l'ajustement réussi. Chez H&F, « the adaptation perspective » est une THÈSE EXPLICATIVE (les dirigeants scrutent, décident, ajustent — 1977, p. 930 ; CORRIGÉ, la fiche portait p. 929 : la phrase s'amorce p. 929 sur le seul mot « According », son contenu est imprimé p. 930), pas une qualité. Note de bas de page importante : « once the unit of analysis is chosen there is no ambiguity in distinguishing selection from adaptation » ; ce qui est sélection au niveau des organisations peut être adaptation au niveau de la société (1977, p. 929, note 2)."
         }
       ]
     },
     {
-      "claim_id": "C041",
+      "claim_id": "C045",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "L’unité examinée n’est plus une organisation mais une population, c’est-à-dire toutes celles qui, dans des limites données, partagent une même forme.",
       "supports": [
@@ -698,7 +880,7 @@
       ]
     },
     {
-      "claim_id": "C042",
+      "claim_id": "C046",
       "locator": "sections[4].paragraphs[1]",
       "claim_text": "Se réorganiser n’est pas passer d’un état à un autre : c’est séjourner un temps dans un état intermédiaire, où les anciennes règles sont en cours de démontage et les nouvelles pas encore en place, et où les deux structures coexistent.",
       "supports": [
@@ -712,7 +894,7 @@
       ]
     },
     {
-      "claim_id": "C043",
+      "claim_id": "C047",
       "locator": "sections[4].paragraphs[1]",
       "claim_text": "L’organisation y devient moins fiable et plus exposée aux conflits internes, soit exactement ce que son environnement sanctionne.",
       "supports": [
@@ -733,7 +915,7 @@
       ]
     },
     {
-      "claim_id": "C044",
+      "claim_id": "C048",
       "locator": "sections[4].paragraphs[1]",
       "claim_text": "les tentatives de réorganisation augmentent les taux de mortalité",
       "supports": [
@@ -747,7 +929,7 @@
       ]
     },
     {
-      "claim_id": "C045",
+      "claim_id": "C049",
       "locator": "sections[4].paragraphs[1]",
       "claim_text": "la réorganisation ramène l’organisation vers la fragilité d’une nouvelle venue",
       "supports": [
@@ -761,28 +943,28 @@
       ]
     },
     {
-      "claim_id": "C046",
+      "claim_id": "C050",
       "locator": "sections[4].paragraphs[2]",
       "claim_text": "Le tri ne vise pourtant pas l’inertie.",
       "supports": [
-        {
-          "id": "SUP-4b08f1b852380a09",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.key_quotation.original_text",
-          "access": "n/a",
-          "text": "A prerequisite for reliable and accountable performance is the capacity to reproduce a structure with high fidelity. The price paid for high-fidelity reproduction is structural inertia. Thus if selection favors reliable, accountable organizations, it also favors organizations with high levels of inertia. In this sense, inertia can be considered to be a by-product of selection."
-        },
         {
           "id": "SUP-e694728d56e3bc12",
           "origin": "evidence:evidence.primary-reading.json",
           "path": "$.evidence.mechanism[14]",
           "access": "n/a",
           "text": "15. Fermeture de la boucle. Assumptions 1 + 2 + 3 impliquent le Theorem 1 : « Selection within populations of organizations in modern societies favors organizations whose structures have high inertia » (p. 155). Les auteurs commentent : « This theorem states that structural inertia can be a consequence of selection rather than a precondition. All that is required is that some organizations in an initial population have high levels of reproducibility (hence high levels of inertia) and that selection pressures be reasonably strong » (p. 155)."
+        },
+        {
+          "id": "SUP-f984e12656cabd21",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.translation_notes[4].note",
+          "access": "n/a",
+          "text": "Terme décisif : l'inertie n'est ni voulue, ni un défaut, ni une condition initiale, mais ce qui vient AVEC la reproductibilité que la sélection récompense (1984, p. 155 et 163). « Effet pervers » ou « conséquence inattendue » chargeraient l'énoncé d'une valeur que les auteurs ne posent pas."
         }
       ]
     },
     {
-      "claim_id": "C047",
+      "claim_id": "C051",
       "locator": "sections[4].paragraphs[2]",
       "claim_text": "Ce que l’environnement récompense, ce sont la fiabilité et la redevabilité, et l’inertie vient avec, comme le prix de la fidélité de reproduction qui les produit.",
       "supports": [
@@ -794,6 +976,13 @@
           "text": "A prerequisite for reliable and accountable performance is the capacity to reproduce a structure with high fidelity. The price paid for high-fidelity reproduction is structural inertia. Thus if selection favors reliable, accountable organizations, it also favors organizations with high levels of inertia. In this sense, inertia can be considered to be a by-product of selection."
         },
         {
+          "id": "SUP-16dcf5a411621a71",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.key_quotation.text",
+          "access": "n/a",
+          "text": "Une condition préalable à une performance fiable et redevable est la capacité de reproduire une structure avec une haute fidélité. Le prix payé pour la reproduction à haute fidélité est l'inertie structurelle. Ainsi, si la sélection favorise les organisations fiables et redevables, elle favorise aussi les organisations à hauts niveaux d'inertie. En ce sens, l'inertie peut être considérée comme un sous-produit de la sélection."
+        },
+        {
           "id": "SUP-288246144b279786",
           "origin": "evidence:evidence.primary-reading.json",
           "path": "$.evidence.mechanism[8]",
@@ -803,7 +992,7 @@
       ]
     },
     {
-      "claim_id": "C048",
+      "claim_id": "C052",
       "locator": "sections[4].paragraphs[2]",
       "claim_text": "De là la formule de leur article de 1984 : « Ainsi, si la sélection favorise les organisations fiables et redevables, elle favorise aussi les organisations à hauts niveaux d’inertie. »",
       "supports": [
@@ -841,11 +1030,18 @@
           "path": "$.evidence.key_quotation.locator",
           "access": "n/a",
           "text": "Section « CONCLUSIONS », p. 162-163. Le passage commence à une frontière de phrase (il suit « …can account rationally for their activities. ») et s'achève à une frontière de phrase : aucune coupe interne, donc aucun […]. Il franchit la coupure de page : « Thus if selection favors reliable, accountable » ferme la p. 162, « organizations, it also favors… » ouvre la p. 163 sous l'en-tête imprimé « 163 STRUCTURAL INERTIA AND ORGANIZATIONAL CHANGE ». Relu mot pour mot sur les deux pages au tour de correction (couche texte et image), et non sur la seule couche OCR."
+        },
+        {
+          "id": "SUP-d9f4e4ff6bb4906b",
+          "origin": "validated",
+          "path": "$.sources[1].label",
+          "access": "full-text",
+          "text": "Michael T. Hannan et John Freeman, « Structural Inertia and Organizational Change », American Sociological Review, vol. 49, n° 2, avril 1984, p. 149-164."
         }
       ]
     },
     {
-      "claim_id": "C049",
+      "claim_id": "C053",
       "locator": "sections[4].paragraphs[2]",
       "claim_text": "Aucune organisation ne décide de devenir inerte : l’inertie est ici une conséquence de la sélection plutôt qu’une condition de départ.",
       "supports": [
@@ -862,11 +1058,18 @@
           "path": "$.evidence.concept_definition",
           "access": "n/a",
           "text": "Deux définitions successives, à ne pas confondre. (1) En 1977, l'inertie structurelle désigne l'ensemble des « processes that generate structural inertia », c'est-à-dire des limitations à la capacité d'adaptation des organisations, énumérées en deux listes — quatre contraintes internes et quatre contraintes externes (AJS 82(5) : la phrase d'annonce « there are a number of processes that generate structural inertia » est p. 930 ; la liste interne est p. 931, son dernier exemple débordant sur la p. 932 ; la liste externe tient entièrement p. 932). Elle y sert d'argument stratégique : « The stronger the pressures, the lower the organizations' adaptive flexibility and the more likely that the logic of environmental selection is appropriate. As a consequence, the issue of structural inertia is central to the choice between adaptation and selection models » (p. 930-931 — CORRIGÉ : la fiche portait p. 930. La phrase franchit la coupure : « The stronger the pressures, the lower the organizations' » ferme la p. 930, « adaptive flexibility and the more likely… » ouvre la p. 931 ; la deuxième phrase est entièrement p. 931). (2) En 1984, l'inertie est redéfinie de façon RELATIVE ET DYNAMIQUE : « structures of organizations have high inertia when the speed of reorganization is much lower than the rate at which environmental conditions change. Thus the concept of inertia, like fitness, refers to a correspondence between the behavioral capabilities of a class of organizations and their environments » (ASR 49(2), p. 151). Elle n'est plus une prémisse mais un résultat : « The proposed theory treats high levels of structural inertia as a consequence of a selection process rather than as a precondition for selection » (résumé, p. 149). Le théorème central : « Selection within populations of organizations in modern societies favors organizations whose structures have high inertia » (Theorem 1, p. 155)."
+        },
+        {
+          "id": "SUP-f984e12656cabd21",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.translation_notes[4].note",
+          "access": "n/a",
+          "text": "Terme décisif : l'inertie n'est ni voulue, ni un défaut, ni une condition initiale, mais ce qui vient AVEC la reproductibilité que la sélection récompense (1984, p. 155 et 163). « Effet pervers » ou « conséquence inattendue » chargeraient l'énoncé d'une valeur que les auteurs ne posent pas."
         }
       ]
     },
     {
-      "claim_id": "C050",
+      "claim_id": "C054",
       "locator": "sections[4].paragraphs[2]",
       "claim_text": "Il suffit que certaines organisations de la population initiale se reproduisent déjà fidèlement et que les pressions de sélection soient assez fortes, pour que ce soient celles-là que leur environnement maintienne plus volontiers en vie.",
       "supports": [
@@ -887,9 +1090,9 @@
       ]
     },
     {
-      "claim_id": "C051",
+      "claim_id": "C055",
       "locator": "sections[5].paragraphs[0]",
-      "claim_text": "la réponse de l’article de 1984 est relative : une structure a une forte inertie quand sa vitesse de réorganisation est très inférieure au rythme auquel les conditions de son environnement changent",
+      "claim_text": "la réponse de l’article de 1984 est relative : une structure a une forte inertie quand sa vitesse de réorganisation est très inférieure au rythme auquel les conditions de son environnement changent.",
       "supports": [
         {
           "id": "SUP-7cf5add94910e13d",
@@ -915,7 +1118,7 @@
       ]
     },
     {
-      "claim_id": "C052",
+      "claim_id": "C056",
       "locator": "sections[5].paragraphs[0]",
       "claim_text": "Comme la valeur sélective en biologie, l’inertie désigne alors une correspondance entre les capacités d’une classe d’organisations et leur environnement, et non une propriété mesurable dans l’absolu.",
       "supports": [
@@ -936,7 +1139,7 @@
       ]
     },
     {
-      "claim_id": "C053",
+      "claim_id": "C057",
       "locator": "sections[5].paragraphs[0]",
       "claim_text": "Les auteurs citent les entreprises de semi-conducteurs, qu’on jugerait remarquablement souples dans d’autres secteurs, et qui n’ont pourtant pas su se réorganiser assez vite pour suivre leurs technologies.",
       "supports": [
@@ -950,7 +1153,7 @@
       ]
     },
     {
-      "claim_id": "C054",
+      "claim_id": "C058",
       "locator": "sections[5].paragraphs[1]",
       "claim_text": "Que la sélection favorise les organisations à forte inertie n’autorise pas à supposer que la plupart d’entre elles le sont : les pressions de sélection ne sont souvent pas assez fortes pour cribler une population de bout en bout.",
       "supports": [
@@ -971,7 +1174,7 @@
       ]
     },
     {
-      "claim_id": "C055",
+      "claim_id": "C059",
       "locator": "sections[5].paragraphs[1]",
       "claim_text": "Une population réalimentée par de nouveaux entrants reste peuplée d’organisations moins inertes, qui adoptent volontiers des structures très éloignées de celles qui domineraient à l’équilibre.",
       "supports": [
@@ -985,7 +1188,7 @@
       ]
     },
     {
-      "claim_id": "C056",
+      "claim_id": "C060",
       "locator": "sections[5].paragraphs[1]",
       "claim_text": "Une organisation assez petite pour n’être guère plus que le prolongement de la volonté de quelques personnes échappe largement au mécanisme.",
       "supports": [
@@ -1006,9 +1209,9 @@
       ]
     },
     {
-      "claim_id": "C057",
+      "claim_id": "C061",
       "locator": "sections[5].paragraphs[1]",
-      "claim_text": "Un environnement turbulent, enfin, peut ne former aucun régime de sélection cohérent : les traits favorisés y changent trop souvent pour qu’une tendance se dégage, et la vivacité qu’ils récompensent entre en concurrence avec la capacité d’agir de façon fiable et redevable.",
+      "claim_text": "Un environnement turbulent, enfin, peut ne former aucun régime de sélection cohérent : les traits favorisés y changent trop souvent pour qu’une tendance se dégage",
       "supports": [
         {
           "id": "SUP-002c865857933e59",
@@ -1027,7 +1230,28 @@
       ]
     },
     {
-      "claim_id": "C058",
+      "claim_id": "C062",
+      "locator": "sections[5].paragraphs[1]",
+      "claim_text": "la vivacité qu’ils récompensent entre en concurrence avec la capacité d’agir de façon fiable et redevable",
+      "supports": [
+        {
+          "id": "SUP-002c865857933e59",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.conditions.disappears_when[2]",
+          "access": "n/a",
+          "text": "L'environnement est turbulent et incertain au point que « the traits that are favored may shift frequently enough that no clear trend emerges » : de tels contextes peuvent favoriser des formes rapides et « dilute the importance of reliability and accountability in organizational selection » (1984, p. 163)."
+        },
+        {
+          "id": "SUP-1acdf36ad6292587",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[24]",
+          "access": "n/a",
+          "text": "25. Ce qui fait disparaître ou affaiblir le phénomène, dit par les auteurs eux-mêmes (1984, p. 163) : une pression de sélection trop faible pour « screen exhaustively » ; le renouvellement continu des populations par de nouveaux entrants moins inertes ; une sélection portant assez fortement sur d'autres traits que la reproductibilité ; et surtout les environnements turbulents, qui « may not constitute a systematic regime of selection » et « may favor organizational forms that can take quick advantage of new opportunities and the appearance of new habitats. The capacity to respond quickly to new opportunities presumably competes with the capacity to perform reliably and accountably ». Ajout de 1977 (p. 961) : quand de grandes organisations se lient entre elles et à l'État (sauvetage de Lockheed), « the selection pressure is bumped up to a higher level. So instead of individual organizations failing, entire networks fail »."
+        }
+      ]
+    },
+    {
+      "claim_id": "C063",
       "locator": "sections[5].paragraphs[2]",
       "claim_text": "C’est aussi ce qui explique l’aisance de manœuvre d’une structure jeune : elle n’a pas encore acquis ce qui la rendrait digne de confiance, et du même mouvement difficile à bouger.",
       "supports": [
@@ -1055,7 +1279,7 @@
       ]
     },
     {
-      "claim_id": "C059",
+      "claim_id": "C064",
       "locator": "sections[5].paragraphs[2]",
       "claim_text": "ils déclarent indéterminée, dans leur théorie, la relation entre la taille et le taux de changement structurel",
       "supports": [
@@ -1069,7 +1293,7 @@
       ]
     },
     {
-      "claim_id": "C060",
+      "claim_id": "C065",
       "locator": "sections[5].paragraphs[2]",
       "claim_text": "écrivent en conclusion qu’on ne sait pas si les petites organisations réussissent leurs transformations plus souvent que les grandes",
       "supports": [
@@ -1083,7 +1307,7 @@
       ]
     },
     {
-      "claim_id": "C061",
+      "claim_id": "C066",
       "locator": "sections[5].paragraphs[2]",
       "claim_text": "Leur modèle dit ce que la sélection favorise, pas qui s’en sort le mieux lorsqu’il faut changer.",
       "supports": [
@@ -1104,6 +1328,6 @@
       ]
     }
   ],
-  "estimated_tokens": 31455,
+  "estimated_tokens": 37447,
   "status": "READY"
 }
