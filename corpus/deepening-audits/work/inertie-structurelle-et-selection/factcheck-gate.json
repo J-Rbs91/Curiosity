@@ -2,39 +2,16 @@
   "protocol_version": 1,
   "concept_id": "inertie-structurelle-et-selection",
   "candidate_sha256": "c6bb2f8cbf4446352a13578baa56ecb8c6b2feb33d83dead7d1f47323e473060",
-  "verdict": "FACTCHECK_INVALID",
+  "verdict": "FACTCHECK_FAIL",
   "claims": 61,
-  "supported": 57,
-  "failed": 4,
-  "structural_errors": [
-    "candidate_sha256 du verifier incorrect",
-    "résultat pour claim inconnu: C062",
-    "résultat pour claim inconnu: C063",
-    "résultat pour claim inconnu: C064",
-    "résultat pour claim inconnu: C065",
-    "résultat pour claim inconnu: C066",
-    "résultat pour claim inconnu: C067"
-  ],
+  "supported": 60,
+  "failed": 1,
+  "structural_errors": [],
   "failures": [
     {
-      "claim_id": "C003",
+      "claim_id": "C018",
       "verdict": "TOO_STRONG",
-      "reason": "Les supports résolus établissent les noms (validated $.authors), la coécriture et le rattachement du concept à l'écologie des populations, mais aucun n'attribue à Hannan et Freeman la qualité de « sociologues » : le qualificatif ajoute une attribution professionnelle non portée par la preuve fournie."
-    },
-    {
-      "claim_id": "C019",
-      "verdict": "TOO_STRONG",
-      "reason": "Le support dit seulement, sous forme négative et prudente, qu'« it is not obvious that a permanent organization has any technical advantage » pour une action collective complexe isolée. Le texte lecteur le transforme en affirmation positive (« ne demande rien de particulier ») et ajoute un agent non documenté (« il suffit qu'une personne compétente traite un cas »), que les supports n'établissent pas."
-    },
-    {
-      "claim_id": "C033",
-      "verdict": "TOO_STRONG",
-      "reason": "Le support cite « organizational changes of some kinds occur frequently » : la concession des auteurs est restreinte à certains types de changements. Le texte lecteur élargit à « des changements de toutes sortes », ce qui augmente la portée de l'aveu, précisément sur le point où l'article distingue noyau et périphérie. La seconde moitié (« parviennent parfois à modifier radicalement ») est, elle, exacte."
-    },
-    {
-      "claim_id": "C056",
-      "verdict": "TOO_STRONG",
-      "reason": "Les supports établissent que l'inertie n'est ni voulue ni une précondition (Theorem 1 : il suffit que certaines organisations de la population initiale aient une forte reproductibilité et que les pressions soient « reasonably strong »). Ils n'établissent en revanche rien qui autorise l'énoncé universel « aucune ne décide non plus de devenir fiable » : la fiabilité y est obtenue par institutionnalisation et routines standardisées, sans que les auteurs nient qu'elle puisse être recherchée."
+      "reason": "Le support dit que renegocier chaque jour la structure « serait concevable mais seems unlikely ». Le texte lecteur supprime la modalisation et affirme categoriquement que la reproduction « ne se renegocie pas chaque matin » : passage d'une improbabilite jugee par les auteurs a un fait."
     }
   ]
 }
