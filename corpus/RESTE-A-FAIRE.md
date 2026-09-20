@@ -900,6 +900,16 @@ gate déterministe a refusé de laisser publier. **Ce que l'audit des approfondi
 n'est pas toujours un défaut de pédagogie ; c'est parfois un dossier trop pauvre pour porter le
 texte qu'on voudrait écrire.** Ces cas-là ne se règlent pas par une réécriture de plus.
 
+**`inertie-structurelle-et-selection`, ajoutée le 20 septembre 2026.** Trois tours de gate,
+63/67 puis 60/61 puis 64/66, plafond des deux boucles atteint, réécriture restaurée. **Ce cas
+n'est pas un manque de dossier — il en rend 516 supports — c'est un manque de méthode :** sept
+échecs, sept modalités d'auteur perdues à la traduction. Une reprise doit traiter chaque modal
+du texte source comme un élément à reporter, pas comme une précaution de style que le français
+allégerait. La trajectoire cible de l'audit reste valable et ses deux paliers neufs ont passé le
+gate aux trois tours. **Et comme pour la carte suivante, la version restaurée n'est pas saine :**
+elle reporte la définition recomposée de l'inertie et la « proportionnalité » non autorisée que
+la réécriture avait retirées.
+
 **`cinq-dimensions-de-l-emploi`.** Dix-sept claims sur cinquante-neuf refusés au premier tour, et
 deux causes couvrent presque tout. Le dossier **ne porte aucune définition citable des cinq
 dimensions**, ce qui interdit de rattacher le moindre exemple à une dimension nommée. Et ses
@@ -925,6 +935,45 @@ v3 au 19 septembre sont **exactement neuf cartes sans répertoire de preuve**. A
 dossier n'avait encore été auditée. Le signal est peu cher et il sélectionne bien, mais il
 sélectionne toujours la même couche : appliqué une quatrième fois, il aurait fini d'épuiser les
 seize cartes minces sans jamais dire ce que vaut le reste du corpus.
+
+## Ce que le lot du 20 septembre a rendu, sur trois cartes à gros dossier
+
+Le lot a délibérément pris l'autre couche : `zones-incertitude`, `isomorphisme-institutionnel`
+et `inertie-structurelle-et-selection`, trois des sept dossiers épais encore non audités. **La
+réponse à la question ouverte ci-dessus est nette, et elle n'est pas rassurante : les cartes les
+mieux dotées ne sont pas les plus saines. Les trois portaient chacune un défaut documentaire que
+leur dossier contredisait, et qu'aucun contrôle sans dossier n'aurait pu voir.**
+
+- `zones-incertitude` datait de 1960 l'apparition de l'expression, quand l'enregistrement validé
+  la donne en 1966 — et **cassait par là la condition écrite sous laquelle le contrôleur aveugle
+  avait laissé passer la carte** (« la fiche n'affirme aucune antériorité »). Le texte se
+  terminait en outre sur un contresens que le dossier combat.
+- `isomorphisme-institutionnel` portait **une phrase écrite de mémoire** — l'isomorphisme
+  biologique comme convergence de niche — appuyée par rien, et une définition du champ qui
+  reconduisait un contresens rangé en toutes lettres dans `common_misinterpretations` du dossier.
+- `inertie-structurelle-et-selection` présentait comme absolue une inertie que l'article de 1984
+  définit de façon relationnelle.
+
+**Le défaut dominant, mesuré sur les dix-neuf échecs de gate du lot, est d'une seule espèce :
+une modalité ou un quantificateur de l'auteur qui disparaît à la traduction.** « changes of some
+kinds » élargi à « toutes sortes », « it is not obvious that » retourné en affirmation positive,
+« seems unlikely » rendu par un présent, « may operate as much by » devenu « échappe largement
+à », « many career tracks » devenu « les carrières », « could reinforce » passé à l'indicatif.
+**Aucun de ces écarts n'est visible sans le texte source** : le français est plausible à chaque
+fois, et rien dans l'enregistrement validé ne le contredit.
+
+**Un second biais est apparu deux fois le même jour, sur deux cartes indépendantes et sous deux
+réécrivains différents** : le mot « sociologues » accolé à des auteurs dont aucun support
+n'établit la profession, une fois assorti de « américains ». Compléter une identité d'auteur
+avec ce qu'on croit savoir d'elle est un geste réflexe, et le gate est le seul organe du
+dispositif qui l'attrape.
+
+**Ce que cela dit du signal « pas de répertoire de preuve ».** Il reste peu cher et il reste
+utile, mais il ne mesure pas la santé d'une carte : il mesure ce qu'un audit pourra prouver. Les
+cartes minces donnent des audits pauvres, les cartes épaisses donnent des audits qui trouvent.
+**Il faut donc continuer par les dossiers épais** — quatre restent : `couplage-lache`,
+`deplacement-des-buts`, `garbage-can-model`, `rationalite-limitee`, plus les six qui portent une
+réception à côté d'un `lecture.json`.
 
 ---
 
@@ -971,6 +1020,15 @@ le dit maintenant, et onze tests le tiennent : **le script n'en avait aucun.**
    d'accès sans pouvoir la trancher, et c'est le dossier qui l'a tranchée. Son protocole lui
    demande maintenant de dire quand une carte n'a pas de dossier, plutôt que de noter A sur la
    foi d'une absence de contradiction.
+1bis. **Une suite neuve, ouverte le 20 septembre par un reviewer.** Quand le cycle commite au
+   fil de l'eau, **`HEAD~1` n'est plus la version auditée** : les commits d'étape portent des
+   états intermédiaires du même cycle, dont certains contiennent déjà la réécriture. Le reviewer
+   d'`isomorphisme-institutionnel` a dû remonter trois commits pour trouver la bonne base, et il
+   écrit : « Si un autre reviewer du lot a comparé à `HEAD~1`, il a comparé deux états
+   intermédiaires et n'a rien pu voir. » **À porter dans `corpus-deepening-reviewer` :** la
+   version antérieure se désigne par un SHA de blob transmis par l'orchestrateur, jamais par une
+   position relative dans l'historique.
+
 2. **Le niveau d'accès n'est pas porté par ces dossiers.** Sur 496 supports de
    `regulation-controle-autonome`, 467 sortent avec `access: n/a`, faute de `consulted` sur les
    objets. Le vérificateur est alors fondé à les traiter comme non consultés, alors que l'en-tête
