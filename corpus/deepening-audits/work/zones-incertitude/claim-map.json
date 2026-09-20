@@ -1,6 +1,6 @@
 {
   "concept_id": "zones-incertitude",
-  "candidate_sha256": "78053510a1117a9fbc0f2c9f3997662aeeb6504aac1c715e122ac284c1c03723",
+  "candidate_sha256": "4258e1797df20043c5057e04051cf8a0a37b5fb5022f9568ba546f96a4baba75",
   "paragraphs": [
     {
       "locator": "lead[0]",
@@ -67,48 +67,52 @@
     {
       "claim_id": "C001",
       "locator": "lead[0]",
-      "start": 0,
-      "end": 143,
-      "claim_text": "Dans beaucoup d’organisations, presque tout finit par être écrit quelque part : qui fait quoi, dans quel ordre, avec quelle marge d’initiative.",
-      "normalized_claim": "Dans beaucoup d'organisations, l'essentiel du fonctionnement (tâches, ordre, marge d'initiative) finit par être écrit.",
-      "support_ids": []
+      "start": 132,
+      "end": 301,
+      "claim_text": "Il peut malgré tout s’y trouver une personne au poste modeste qui pèse plus lourd que son intitulé ne le laisse deviner, et un supérieur hiérarchique démuni devant elle.",
+      "normalized_claim": "Dans une organisation entièrement réglée, un subalterne peut peser plus que son poste et un supérieur être démuni devant lui.",
+      "support_ids": [
+        "SUP-2146c24890b57356",
+        "SUP-bdd97e852f5de05f",
+        "SUP-02caf58c6a996408"
+      ]
     },
     {
       "claim_id": "C002",
       "locator": "lead[0]",
-      "start": 144,
-      "end": 331,
-      "claim_text": "Et pourtant, il arrive régulièrement qu’une personne au poste modeste pèse plus lourd que son intitulé ne le laisse deviner, et qu’un supérieur hiérarchique se retrouve démuni devant lui.",
-      "normalized_claim": "Il arrive régulièrement qu'un subordonné de poste modeste pèse plus que son intitulé et qu'un supérieur hiérarchique soit démuni devant lui.",
+      "start": 381,
+      "end": 409,
+      "claim_text": "Le sociologue Michel Crozier",
+      "normalized_claim": "Michel Crozier est un sociologue.",
       "support_ids": [
-        "SUP-2146c24890b57356",
-        "SUP-bdd97e852f5de05f"
+        "SUP-568d5a1f64ce34a7",
+        "SUP-d8d3fecfc47c6e94"
       ]
     },
     {
       "claim_id": "C003",
       "locator": "lead[0]",
-      "start": 332,
-      "end": 410,
-      "claim_text": "On met volontiers cela sur le compte des caractères ou des talents personnels.",
-      "normalized_claim": "L'explication courante de ce déséquilibre est celle des caractères ou des talents personnels.",
+      "start": 410,
+      "end": 461,
+      "claim_text": "a proposé une explication qui n’invoque rien de tel",
+      "normalized_claim": "L'explication de Crozier ne repose ni sur les caractères ni sur les talents personnels.",
       "support_ids": [
-        "SUP-2a7b4e9fb49e007e",
-        "SUP-d8d3fecfc47c6e94"
+        "SUP-bc039fe8ec38a6ee",
+        "SUP-bdd97e852f5de05f",
+        "SUP-036df7fdc9132482"
       ]
     },
     {
       "claim_id": "C004",
       "locator": "lead[0]",
-      "start": 411,
-      "end": 592,
-      "claim_text": "Le sociologue Michel Crozier a proposé une explication qui n’invoque rien de tel : ce qui décide, c’est ce que le règlement n’a pas prévu, et dont les autres ont malgré tout besoin.",
-      "normalized_claim": "Michel Crozier, sociologue, a proposé une explication sans recours aux qualités personnelles : ce qui décide est ce que le règlement n'a pas prévu et dont les autres ont besoin.",
+      "start": 464,
+      "end": 562,
+      "claim_text": "ce qui décide, c’est ce que le règlement n’a pas prévu, et dont les autres ont malgré tout besoin.",
+      "normalized_claim": "Ce qui donne le pouvoir, c'est le contrôle de ce que la règle n'a pas prévu et dont les autres ont besoin.",
       "support_ids": [
-        "SUP-568d5a1f64ce34a7",
-        "SUP-49e791fad72931ad",
         "SUP-e3ccc3d566fcfbba",
-        "SUP-3fef801d06d68c6b"
+        "SUP-49e791fad72931ad",
+        "SUP-c1699ba61a7e2693"
       ]
     },
     {
@@ -117,7 +121,7 @@
       "start": 0,
       "end": 92,
       "claim_text": "Cette dépendance porte un nom dans la sociologie des organisations : une zone d’incertitude.",
-      "normalized_claim": "Cette dépendance est nommée « zone d'incertitude » dans la sociologie des organisations.",
+      "normalized_claim": "Le nom de ce phénomène dans la sociologie des organisations est « zone d'incertitude ».",
       "support_ids": [
         "SUP-03a5c97cb83d6893",
         "SUP-d533875060c4d05a",
@@ -128,12 +132,12 @@
       "claim_id": "C006",
       "locator": "lead[1]",
       "start": 93,
-      "end": 164,
-      "claim_text": "Ce n’est pas un secret bien gardé ni un privilège inscrit quelque part,",
-      "normalized_claim": "Une zone d'incertitude n'est ni un secret gardé ni un privilège formellement inscrit.",
+      "end": 163,
+      "claim_text": "Ce n’est pas un secret bien gardé ni un privilège inscrit quelque part",
+      "normalized_claim": "Une zone d'incertitude n'est ni un secret gardé ni un privilège statutaire.",
       "support_ids": [
         "SUP-8ae20c222e155c3a",
-        "SUP-bdd97e852f5de05f"
+        "SUP-02caf58c6a996408"
       ]
     },
     {
@@ -142,25 +146,25 @@
       "start": 165,
       "end": 277,
       "claim_text": "c’est un domaine que les règles n’ont pas su couvrir et dont d’autres ont besoin pour faire leur propre travail.",
-      "normalized_claim": "C'est un domaine non couvert par les règles et dont d'autres ont besoin pour leur propre travail.",
+      "normalized_claim": "C'est un domaine non couvert par les règles et dont d'autres ont besoin pour travailler.",
       "support_ids": [
         "SUP-49e791fad72931ad",
-        "SUP-e3ccc3d566fcfbba",
-        "SUP-c1699ba61a7e2693"
+        "SUP-c1699ba61a7e2693",
+        "SUP-e3ccc3d566fcfbba"
       ]
     },
     {
       "claim_id": "C008",
       "locator": "lead[1]",
       "start": 278,
-      "end": 390,
-      "claim_text": "Michel Crozier en publie l’analyse en 1960, dans une enquête sur une entreprise où presque tout était prescrit ;",
-      "normalized_claim": "Crozier publie l'analyse en 1960 dans une enquête sur une entreprise où presque tout était prescrit.",
+      "end": 388,
+      "claim_text": "Michel Crozier en publie l’analyse en 1960, dans une enquête sur une entreprise où presque tout était prescrit",
+      "normalized_claim": "Crozier publie en 1960 l'analyse, issue d'une enquête sur une entreprise où presque tout était réglé d'avance.",
       "support_ids": [
+        "SUP-8f31c37b88f1405c",
         "SUP-ea8eb9496316b8de",
-        "SUP-076f298128663b5b",
-        "SUP-e3ccc3d566fcfbba",
-        "SUP-3cf3ccb50ef219f7"
+        "SUP-7aa8b3268d9091db",
+        "SUP-e3ccc3d566fcfbba"
       ]
     },
     {
@@ -169,12 +173,12 @@
       "start": 391,
       "end": 516,
       "claim_text": "l’expression, puis la définition générale, viendront après, sous sa seule signature d’abord, plus tard avec Erhard Friedberg.",
-      "normalized_claim": "L'expression puis la définition générale sont postérieures à 1960, d'abord sous la seule signature de Crozier, plus tard avec Friedberg.",
+      "normalized_claim": "L'expression et la définition générale sont postérieures à 1960, d'abord sous la seule signature de Crozier, plus tard cosignées avec Friedberg.",
       "support_ids": [
         "SUP-30c12e3b81c0a01a",
         "SUP-8abec9c87612f8e1",
         "SUP-641d04f0f0cb4168",
-        "SUP-7c1e88b9b496e557"
+        "SUP-9234bcbf65bfc8b3"
       ]
     },
     {
@@ -183,19 +187,19 @@
       "start": 517,
       "end": 653,
       "claim_text": "Ce qui donne du poids n’y est jamais le rang : c’est d’être seul, ou presque seul, à pouvoir répondre de ce que personne n’a pu prévoir.",
-      "normalized_claim": "Ce qui donne du pouvoir n'est jamais le rang mais le fait d'être seul ou presque à pouvoir répondre de l'imprévu.",
+      "normalized_claim": "Ce n'est pas le rang hiérarchique qui donne le pouvoir, mais le fait d'être seul ou presque à pouvoir traiter l'imprévu.",
       "support_ids": [
         "SUP-bdd97e852f5de05f",
-        "SUP-62eadd3dd351b7ad",
-        "SUP-5c7e6d68201ff5e9"
+        "SUP-5c7e6d68201ff5e9",
+        "SUP-62eadd3dd351b7ad"
       ]
     },
     {
       "claim_id": "C011",
       "locator": "sections[0].paragraphs[0]",
       "start": 0,
-      "end": 94,
-      "claim_text": "Tout part d’une tension observée dans les ateliers d’une entreprise en situation de monopole :",
+      "end": 92,
+      "claim_text": "Tout part d’une tension observée dans les ateliers d’une entreprise en situation de monopole",
       "normalized_claim": "Le point de départ est une tension observée dans les ateliers d'une entreprise en situation de monopole.",
       "support_ids": [
         "SUP-2146c24890b57356",
@@ -206,8 +210,8 @@
       "claim_id": "C012",
       "locator": "sections[0].paragraphs[0]",
       "start": 95,
-      "end": 185,
-      "claim_text": "les ouvriers de production se comportent comme s’ils dépendaient des ouvriers d’entretien,",
+      "end": 184,
+      "claim_text": "les ouvriers de production se comportent comme s’ils dépendaient des ouvriers d’entretien",
       "normalized_claim": "Les ouvriers de production se comportent comme s'ils dépendaient des ouvriers d'entretien.",
       "support_ids": [
         "SUP-2146c24890b57356"
@@ -219,9 +223,10 @@
       "start": 186,
       "end": 379,
       "claim_text": "alors que rien dans la hiérarchie ne prévoit cette relation, l’ouvrier d’entretien n’ayant même pas le droit de donner une consigne sur l’entretien des machines sans passer par le contremaître.",
-      "normalized_claim": "Cette relation n'est pas prévue par la hiérarchie : l'ouvrier d'entretien n'a pas le droit de donner une consigne sans passer par le contremaître.",
+      "normalized_claim": "Cette relation n'est pas prévue par la hiérarchie : l'ouvrier d'entretien n'a pas le droit de donner une consigne d'entretien sans passer par le contremaître.",
       "support_ids": [
-        "SUP-bdd97e852f5de05f"
+        "SUP-bdd97e852f5de05f",
+        "SUP-02caf58c6a996408"
       ]
     },
     {
@@ -230,18 +235,19 @@
       "start": 380,
       "end": 469,
       "claim_text": "Crozier cherche sur quoi repose cette dépendance et ne trouve qu’un support : les pannes.",
-      "normalized_claim": "Crozier cherche le support de cette dépendance et ne trouve que les pannes.",
+      "normalized_claim": "Crozier rapporte cette dépendance à un seul support, les pannes de machine.",
       "support_ids": [
-        "SUP-2146c24890b57356"
+        "SUP-2146c24890b57356",
+        "SUP-e1f6671866f4e120"
       ]
     },
     {
       "claim_id": "C015",
       "locator": "sections[0].paragraphs[0]",
       "start": 470,
-      "end": 565,
-      "claim_text": "Les ouvriers d’entretien en sont « les seuls responsables des réparations grandes ou petites »,",
-      "normalized_claim": "Citation : les ouvriers d'entretien sont « les seuls responsables des réparations grandes ou petites ».",
+      "end": 564,
+      "claim_text": "Les ouvriers d’entretien en sont « les seuls responsables des réparations grandes ou petites »",
+      "normalized_claim": "Citation de Crozier 1960 : les ouvriers d'entretien sont les seuls responsables des réparations grandes ou petites.",
       "support_ids": [
         "SUP-2146c24890b57356",
         "SUP-5c7e6d68201ff5e9"
@@ -253,10 +259,11 @@
       "start": 566,
       "end": 665,
       "claim_text": "et ils « contrôlent la seule source d’arbitraire qui peut troubler la régularité de leur travail ».",
-      "normalized_claim": "Citation : ils « contrôlent la seule source d'arbitraire qui peut troubler la régularité de leur travail ».",
+      "normalized_claim": "Citation de Crozier 1960 : ils contrôlent la seule source d'arbitraire qui peut troubler la régularité du travail.",
       "support_ids": [
         "SUP-2146c24890b57356",
-        "SUP-b927adc67be2efc3"
+        "SUP-b927adc67be2efc3",
+        "SUP-8ae20c222e155c3a"
       ]
     },
     {
@@ -265,9 +272,10 @@
       "start": 0,
       "end": 105,
       "claim_text": "On croirait tenir là le pouvoir de l’expert : une compétence technique rare, donc un homme indispensable.",
-      "normalized_claim": "Lecture spontanée : il s'agirait du pouvoir de l'expert, d'une compétence technique rare rendant l'homme indispensable.",
+      "normalized_claim": "Lecture courante à écarter : le pouvoir de l'ouvrier d'entretien viendrait d'une compétence technique rare.",
       "support_ids": [
-        "SUP-cf5e8f55c9a25a99"
+        "SUP-cf5e8f55c9a25a99",
+        "SUP-036df7fdc9132482"
       ]
     },
     {
@@ -276,7 +284,7 @@
       "start": 106,
       "end": 165,
       "claim_text": "Crozier écarte lui-même cette lecture, par une comparaison.",
-      "normalized_claim": "Crozier écarte lui-même l'explication par l'expertise technique, au moyen d'une comparaison.",
+      "normalized_claim": "Crozier écarte lui-même l'explication par la compétence technique, au moyen d'une comparaison.",
       "support_ids": [
         "SUP-036df7fdc9132482",
         "SUP-bc039fe8ec38a6ee"
@@ -288,7 +296,7 @@
       "start": 166,
       "end": 398,
       "claim_text": "Dans des usines étrangères qui fabriquent les mêmes produits dans des conditions techniques semblables, « les pannes de machine n’y entraînent à peu près aucune conséquence dans la marche de l’atelier et dans les rapports humains ».",
-      "normalized_claim": "Dans des usines étrangères fabriquant les mêmes produits dans des conditions techniques semblables, « les pannes de machine n'y entraînent à peu près aucune conséquence dans la marche de l'atelier et dans les rapports humains ».",
+      "normalized_claim": "Citation de Crozier 1960 : dans des usines étrangères comparables, les pannes n'ont à peu près aucune conséquence.",
       "support_ids": [
         "SUP-bc039fe8ec38a6ee",
         "SUP-036df7fdc9132482"
@@ -300,10 +308,10 @@
       "start": 399,
       "end": 487,
       "claim_text": "Même métier, même savoir-faire, et aucun effet : la variable n’est pas la qualification.",
-      "normalized_claim": "La variable explicative n'est pas la qualification.",
+      "normalized_claim": "La comparaison montre que la variable explicative n'est pas la qualification.",
       "support_ids": [
-        "SUP-bc039fe8ec38a6ee",
-        "SUP-036df7fdc9132482"
+        "SUP-036df7fdc9132482",
+        "SUP-bc039fe8ec38a6ee"
       ]
     },
     {
@@ -312,86 +320,101 @@
       "start": 488,
       "end": 699,
       "claim_text": "Les contremaîtres, eux, détiennent le grade et se retrouvent démunis, car quelles que soient leurs qualités personnelles ils sont « incompétents devant le seul problème stratégique pour la marche de l’atelier ».",
-      "normalized_claim": "Les contremaîtres, qui détiennent le grade, sont démunis car, quelles que soient leurs qualités personnelles, ils sont « incompétents devant le seul problème stratégique pour la marche de l'atelier ».",
+      "normalized_claim": "Les contremaîtres, malgré leur grade, sont démunis car incompétents devant le seul problème stratégique de l'atelier.",
       "support_ids": [
-        "SUP-bdd97e852f5de05f"
+        "SUP-bdd97e852f5de05f",
+        "SUP-02caf58c6a996408"
       ]
     },
     {
       "claim_id": "C022",
       "locator": "sections[1].paragraphs[0]",
       "start": 0,
-      "end": 98,
-      "claim_text": "Si les pannes comptent tant dans cet atelier, c’est parce que tout le reste y est réglé d’avance :",
-      "normalized_claim": "Les pannes comptent tant parce que tout le reste est réglé d'avance.",
+      "end": 96,
+      "claim_text": "Si les pannes comptent tant dans cet atelier, c’est parce que tout le reste y est réglé d’avance",
+      "normalized_claim": "Les pannes comptent parce que tout le reste du fonctionnement est réglé d'avance.",
       "support_ids": [
         "SUP-e3ccc3d566fcfbba",
-        "SUP-bc039fe8ec38a6ee"
+        "SUP-de345be873e248b2",
+        "SUP-7aa8b3268d9091db"
       ]
     },
     {
       "claim_id": "C023",
       "locator": "sections[1].paragraphs[0]",
       "start": 99,
-      "end": 288,
-      "claim_text": "objectifs, méthodes, avancement, droits réciproques sont fixés par des règles impératives, de sorte qu’il ne reste presque aucun choix, ni aux ouvriers, ni aux contremaîtres, ni aux cadres.",
-      "normalized_claim": "Objectifs, méthodes, avancement et droits réciproques sont fixés par des règles impératives, ne laissant presque aucun choix aux ouvriers, contremaîtres et cadres.",
+      "end": 188,
+      "claim_text": "objectifs, méthodes, avancement, droits réciproques sont fixés par des règles impératives",
+      "normalized_claim": "Objectifs, méthodes, avancement et droits réciproques sont fixés par des règles impératives.",
       "support_ids": [
         "SUP-7aa8b3268d9091db",
-        "SUP-e3ccc3d566fcfbba",
-        "SUP-de345be873e248b2"
+        "SUP-e3ccc3d566fcfbba"
       ]
     },
     {
       "claim_id": "C024",
       "locator": "sections[1].paragraphs[0]",
-      "start": 289,
-      "end": 378,
-      "claim_text": "Les événements qui échappent à ces règles y prennent alors une importance exceptionnelle,",
-      "normalized_claim": "Les événements qui échappent aux règles prennent une importance exceptionnelle.",
+      "start": 190,
+      "end": 288,
+      "claim_text": "de sorte qu’il ne reste presque aucun choix, ni aux ouvriers, ni aux contremaîtres, ni aux cadres.",
+      "normalized_claim": "Il ne reste presque aucun choix aux ouvriers, aux contremaîtres ni aux cadres.",
       "support_ids": [
-        "SUP-e3ccc3d566fcfbba"
+        "SUP-e3ccc3d566fcfbba",
+        "SUP-de345be873e248b2"
       ]
     },
     {
       "claim_id": "C025",
       "locator": "sections[1].paragraphs[0]",
-      "start": 379,
-      "end": 566,
-      "claim_text": "et Crozier énonce le principe en 1960 : « dans un tel système le pouvoir appartient aux individus ou aux groupes d’individus qui contrôlent les seuls éléments d’incertitude subsistants ».",
-      "normalized_claim": "Crozier énonce en 1960 : « dans un tel système le pouvoir appartient aux individus ou aux groupes d'individus qui contrôlent les seuls éléments d'incertitude subsistants ».",
+      "start": 289,
+      "end": 377,
+      "claim_text": "Les événements qui échappent à ces règles y prennent alors une importance exceptionnelle",
+      "normalized_claim": "Les événements qui échappent aux règles y prennent une importance exceptionnelle.",
       "support_ids": [
         "SUP-e3ccc3d566fcfbba",
-        "SUP-a02fb3f22cd2b33c",
-        "SUP-8751f3d5de1c6440",
-        "SUP-549c1f61140bd223"
+        "SUP-49e791fad72931ad"
       ]
     },
     {
       "claim_id": "C026",
       "locator": "sections[1].paragraphs[0]",
+      "start": 379,
+      "end": 565,
+      "claim_text": "et Crozier énonce le principe en 1960 : « dans un tel système le pouvoir appartient aux individus ou aux groupes d’individus qui contrôlent les seuls éléments d’incertitude subsistants »",
+      "normalized_claim": "Crozier énonce en 1960 que le pouvoir appartient à ceux qui contrôlent les seuls éléments d'incertitude subsistants.",
+      "support_ids": [
+        "SUP-e3ccc3d566fcfbba",
+        "SUP-8751f3d5de1c6440",
+        "SUP-a02fb3f22cd2b33c",
+        "SUP-8a5ace435d5445e0",
+        "SUP-b927adc67be2efc3"
+      ]
+    },
+    {
+      "claim_id": "C027",
+      "locator": "sections[1].paragraphs[0]",
       "start": 567,
       "end": 670,
       "claim_text": "Ce pouvoir n’apparaît pas malgré la règle : il apparaît parce qu’elle a supprimé tous les autres aléas.",
-      "normalized_claim": "Ce pouvoir apparaît parce que la règle a supprimé tous les autres aléas, non malgré elle.",
+      "normalized_claim": "Ce pouvoir est produit par la règle elle-même, qui a supprimé les autres aléas.",
       "support_ids": [
         "SUP-e3ccc3d566fcfbba",
         "SUP-bc039fe8ec38a6ee"
       ]
     },
     {
-      "claim_id": "C027",
+      "claim_id": "C028",
       "locator": "sections[1].paragraphs[1]",
       "start": 0,
-      "end": 115,
-      "claim_text": "Crozier prévient que l’organisation étudiée n’est pas représentative : elle vaut comme « une sorte de cas limite »,",
-      "normalized_claim": "Crozier prévient que l'organisation étudiée n'est pas représentative et vaut comme « une sorte de cas limite ».",
+      "end": 114,
+      "claim_text": "Crozier prévient que l’organisation étudiée n’est pas représentative : elle vaut comme « une sorte de cas limite »",
+      "normalized_claim": "Crozier prévient que l'organisation étudiée n'est pas représentative et vaut comme cas limite.",
       "support_ids": [
         "SUP-402abce899dae8b5"
       ]
     },
     {
-      "claim_id": "C028",
+      "claim_id": "C029",
       "locator": "sections[1].paragraphs[1]",
       "start": 116,
       "end": 192,
@@ -402,30 +425,30 @@
       ]
     },
     {
-      "claim_id": "C029",
+      "claim_id": "C030",
       "locator": "sections[1].paragraphs[1]",
       "start": 193,
       "end": 429,
       "claim_text": "Sa conclusion vise pourtant plus large : le système réel des relations de pouvoir dépend du contrôle des événements qui échappent à la détermination bureaucratique, et il « diffère ainsi complètement du système hiérarchique théorique ».",
-      "normalized_claim": "Conclusion générale de Crozier : le système réel des relations de pouvoir dépend du contrôle des événements échappant à la détermination bureaucratique et « diffère ainsi complètement du système hiérarchique théorique ».",
+      "normalized_claim": "Crozier généralise : le système réel des relations de pouvoir dépend du contrôle des événements échappant à la détermination bureaucratique et diffère complètement du système hiérarchique théorique.",
       "support_ids": [
         "SUP-62eadd3dd351b7ad"
       ]
     },
     {
-      "claim_id": "C030",
+      "claim_id": "C031",
       "locator": "sections[1].paragraphs[1]",
       "start": 430,
       "end": 619,
       "claim_text": "D’où une hypothèse qui déroute : « en même temps que la bureaucratisation progresse, la marge laissée libre prend une importance plus considérable dans le système de relations de pouvoir ».",
-      "normalized_claim": "Crozier avance l'hypothèse : « en même temps que la bureaucratisation progresse, la marge laissée libre prend une importance plus considérable dans le système de relations de pouvoir ».",
+      "normalized_claim": "Crozier avance l'hypothèse que la progression de la bureaucratisation accroît l'importance de la marge laissée libre.",
       "support_ids": [
         "SUP-1fe7cd55e5ab5069",
         "SUP-bbe04a9cfe0d410b"
       ]
     },
     {
-      "claim_id": "C031",
+      "claim_id": "C032",
       "locator": "sections[1].paragraphs[1]",
       "start": 620,
       "end": 728,
@@ -433,200 +456,188 @@
       "normalized_claim": "Resserrer les règles ne supprime pas le pouvoir informel mais valorise ce qu'elles ne couvrent pas.",
       "support_ids": [
         "SUP-1fe7cd55e5ab5069",
-        "SUP-e3ccc3d566fcfbba"
+        "SUP-bbe04a9cfe0d410b"
       ]
     },
     {
-      "claim_id": "C032",
+      "claim_id": "C033",
       "locator": "sections[2].paragraphs[0]",
       "start": 0,
       "end": 155,
       "claim_text": "Une compétence rare ne suffit pourtant pas : une organisation abrite quantité d’imprévus dont personne n’a besoin, et ils ne donnent de pouvoir à personne.",
-      "normalized_claim": "Une organisation abrite des imprévus dont personne n'a besoin et qui ne donnent de pouvoir à personne.",
+      "normalized_claim": "Un imprévu dont personne n'a besoin ne donne aucun pouvoir.",
       "support_ids": [
         "SUP-3092eda66a7cc9ed",
         "SUP-c1699ba61a7e2693"
       ]
     },
     {
-      "claim_id": "C033",
+      "claim_id": "C034",
       "locator": "sections[2].paragraphs[0]",
       "start": 156,
       "end": 424,
       "claim_text": "Le critère manquant, Crozier l’écrit en 1971, dans une note de bas de page : « le pouvoir de chacun des membres sur le reste de l’ensemble dépend du contrôle qu’il exerce sur une source d’incertitude plus ou moins pertinente pour la survie ou le maintien du système ».",
-      "normalized_claim": "Crozier écrit le critère en 1971 dans une note de bas de page : « le pouvoir de chacun des membres... dépend du contrôle qu'il exerce sur une source d'incertitude plus ou moins pertinente pour la survie ou le maintien du système ».",
+      "normalized_claim": "Crozier écrit le critère de pertinence en 1971, dans une note de bas de page.",
       "support_ids": [
         "SUP-3fef801d06d68c6b",
         "SUP-824deb43b22c2610",
         "SUP-c8147643e2f6d640",
-        "SUP-f364fbfcac58f907"
-      ]
-    },
-    {
-      "claim_id": "C034",
-      "locator": "sections[2].paragraphs[0]",
-      "start": 454,
-      "end": 533,
-      "claim_text": "Pertinente : l’imprévu doit porter sur ce dont les autres ont besoin pour agir.",
-      "normalized_claim": "Glose : « pertinente » signifie que l'imprévu porte sur ce dont les autres ont besoin pour agir.",
-      "support_ids": [
-        "SUP-c1699ba61a7e2693",
-        "SUP-3092eda66a7cc9ed"
+        "SUP-229c572beeadb455",
+        "SUP-9234bcbf65bfc8b3"
       ]
     },
     {
       "claim_id": "C035",
       "locator": "sections[2].paragraphs[0]",
-      "start": 534,
-      "end": 611,
-      "claim_text": "Plus ou moins : la pertinence admet des degrés, et le pouvoir varie avec eux.",
-      "normalized_claim": "Glose : la pertinence admet des degrés et le pouvoir varie avec eux.",
+      "start": 454,
+      "end": 533,
+      "claim_text": "Pertinente : l’imprévu doit porter sur ce dont les autres ont besoin pour agir.",
+      "normalized_claim": "La pertinence signifie que l'imprévu porte sur ce dont les autres ont besoin pour agir.",
       "support_ids": [
-        "SUP-49e791fad72931ad",
-        "SUP-3fef801d06d68c6b"
-      ]
-    },
-    {
-      "claim_id": "C036",
-      "locator": "sections[2].paragraphs[1]",
-      "start": 23,
-      "end": 66,
-      "claim_text": "La réponse se déplace d’un texte à l’autre.",
-      "normalized_claim": "La référence de la pertinence varie d'un texte à l'autre.",
-      "support_ids": [
-        "SUP-49e791fad72931ad",
-        "SUP-3fef801d06d68c6b"
-      ]
-    },
-    {
-      "claim_id": "C037",
-      "locator": "sections[2].paragraphs[1]",
-      "start": 67,
-      "end": 132,
-      "claim_text": "En 1971, l’incertitude compte au regard de la survie du système ;",
-      "normalized_claim": "En 1971 la pertinence est indexée sur la survie du système.",
-      "support_ids": [
-        "SUP-824deb43b22c2610",
-        "SUP-3fef801d06d68c6b"
-      ]
-    },
-    {
-      "claim_id": "C038",
-      "locator": "sections[2].paragraphs[1]",
-      "start": 133,
-      "end": 221,
-      "claim_text": "dans un entretien donné en 2003, Crozier l’indexe sur « l’objectif de l’organisation » ;",
-      "normalized_claim": "Dans un entretien de 2003, Crozier indexe la pertinence sur « l'objectif de l'organisation ».",
-      "support_ids": [
-        "SUP-f09faecc9c19d232",
-        "SUP-c884bf2422364b17",
-        "SUP-220fe2ea480ae300"
-      ]
-    },
-    {
-      "claim_id": "C039",
-      "locator": "sections[2].paragraphs[1]",
-      "start": 222,
-      "end": 405,
-      "claim_text": "Friedberg, lui, l’indexe sur les partenaires eux-mêmes, puisque l’imprévisibilité d’un acteur « n’intéressera les autres que si elle porte sur des comportements pertinents pour eux ».",
-      "normalized_claim": "Friedberg indexe la pertinence sur les partenaires : l'imprévisibilité « n'intéressera les autres que si elle porte sur des comportements pertinents pour eux ».",
-      "support_ids": [
+        "SUP-3092eda66a7cc9ed",
         "SUP-7d72d17d5877f313",
         "SUP-c1699ba61a7e2693"
       ]
     },
     {
-      "claim_id": "C040",
-      "locator": "sections[2].paragraphs[1]",
-      "start": 406,
-      "end": 474,
-      "claim_text": "Changer de point de référence change la liste des gens qui comptent.",
-      "normalized_claim": "Conséquence tirée par le texte : changer de point de référence change la liste des acteurs concernés.",
+      "claim_id": "C036",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 534,
+      "end": 611,
+      "claim_text": "Plus ou moins : la pertinence admet des degrés, et le pouvoir varie avec eux.",
+      "normalized_claim": "La pertinence est graduée et non binaire, et le pouvoir varie avec elle.",
       "support_ids": [
         "SUP-3fef801d06d68c6b",
         "SUP-49e791fad72931ad"
       ]
     },
     {
-      "claim_id": "C041",
-      "locator": "sections[2].paragraphs[2]",
-      "start": 0,
-      "end": 125,
-      "claim_text": "C’est là que se coupe le contresens le plus fréquent, celui qui ramène la zone d’incertitude à de la rétention d’information.",
-      "normalized_claim": "Le contresens le plus fréquent ramène la zone d'incertitude à de la rétention d'information.",
+      "claim_id": "C037",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 23,
+      "end": 66,
+      "claim_text": "La réponse se déplace d’un texte à l’autre.",
+      "normalized_claim": "La référence de la pertinence varie d'un texte à l'autre.",
       "support_ids": [
-        "SUP-92c0c046ce7e3d8b",
-        "SUP-2f4485fe55345624",
-        "SUP-1129f074995c4086"
+        "SUP-3fef801d06d68c6b",
+        "SUP-49e791fad72931ad"
+      ]
+    },
+    {
+      "claim_id": "C038",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 67,
+      "end": 130,
+      "claim_text": "En 1971, l’incertitude compte au regard de la survie du système",
+      "normalized_claim": "En 1971, la pertinence est indexée sur la survie ou le maintien du système.",
+      "support_ids": [
+        "SUP-3fef801d06d68c6b",
+        "SUP-824deb43b22c2610"
+      ]
+    },
+    {
+      "claim_id": "C039",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 133,
+      "end": 219,
+      "claim_text": "dans un entretien donné en 2003, Crozier l’indexe sur « l’objectif de l’organisation »",
+      "normalized_claim": "Dans un entretien de 2003, Crozier indexe la pertinence sur l'objectif de l'organisation.",
+      "support_ids": [
+        "SUP-f09faecc9c19d232",
+        "SUP-3092eda66a7cc9ed",
+        "SUP-39eaa0117b7eb0d8"
+      ]
+    },
+    {
+      "claim_id": "C040",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 222,
+      "end": 405,
+      "claim_text": "Friedberg, lui, l’indexe sur les partenaires eux-mêmes, puisque l’imprévisibilité d’un acteur « n’intéressera les autres que si elle porte sur des comportements pertinents pour eux ».",
+      "normalized_claim": "Friedberg indexe la pertinence sur les partenaires : l'imprévisibilité n'intéresse les autres que si elle porte sur des comportements pertinents pour eux.",
+      "support_ids": [
+        "SUP-7d72d17d5877f313"
+      ]
+    },
+    {
+      "claim_id": "C041",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 406,
+      "end": 474,
+      "claim_text": "Changer de point de référence change la liste des gens qui comptent.",
+      "normalized_claim": "Conséquence tirée par l'auteur : le déplacement du point de référence modifie l'ensemble des acteurs concernés.",
+      "support_ids": [
+        "SUP-3fef801d06d68c6b",
+        "SUP-49e791fad72931ad"
       ]
     },
     {
       "claim_id": "C042",
       "locator": "sections[2].paragraphs[2]",
-      "start": 126,
-      "end": 270,
-      "claim_text": "Dans l’atelier de 1960, personne ne cache rien : la panne est un événement réel, et le pouvoir vient d’une position dans la division du travail.",
-      "normalized_claim": "Dans l'atelier de 1960, personne ne dissimule : la panne est un événement réel et le pouvoir vient d'une position dans la division du travail.",
+      "start": 0,
+      "end": 91,
+      "claim_text": "Reste à séparer la zone d’incertitude d’une idée voisine, celle de rétention d’information.",
+      "normalized_claim": "La rétention d'information est une idée voisine, couramment confondue avec la zone d'incertitude.",
       "support_ids": [
-        "SUP-8ae20c222e155c3a",
-        "SUP-2146c24890b57356"
+        "SUP-92c0c046ce7e3d8b",
+        "SUP-8ae20c222e155c3a"
       ]
     },
     {
       "claim_id": "C043",
       "locator": "sections[2].paragraphs[2]",
-      "start": 271,
-      "end": 491,
-      "claim_text": "Friedberg nomme autrement le ressort général : « l’imprévisibilité du comportement des protagonistes, qui n’est que l’autre face de leur autonomie », c’est-à-dire la capacité de ne pas s’engager, non celle de dissimuler.",
-      "normalized_claim": "Friedberg nomme le ressort général « l'imprévisibilité du comportement des protagonistes, qui n'est que l'autre face de leur autonomie », soit la capacité de ne pas s'engager et non de dissimuler.",
+      "start": 92,
+      "end": 236,
+      "claim_text": "Dans l’atelier de 1960, personne ne cache rien : la panne est un événement réel, et le pouvoir vient d’une position dans la division du travail.",
+      "normalized_claim": "Dans le cas de 1960, aucun secret n'est en cause : la panne est un événement réel et le pouvoir vient d'une position dans la division du travail.",
       "support_ids": [
-        "SUP-7d72d17d5877f313",
         "SUP-8ae20c222e155c3a"
       ]
     },
     {
       "claim_id": "C044",
       "locator": "sections[2].paragraphs[2]",
-      "start": 492,
-      "end": 666,
-      "claim_text": "L’opacité existe bien, comme cas particulier : Crozier la signale à propos de l’expert, dont le pouvoir tient à ce que « son domaine d’expertise n’est pas connu par autrui ».",
-      "normalized_claim": "L'opacité est un cas particulier : Crozier le signale pour l'expert, dont le pouvoir tient à ce que « son domaine d'expertise n'est pas connu par autrui ».",
+      "start": 237,
+      "end": 457,
+      "claim_text": "Friedberg nomme autrement le ressort général : « l’imprévisibilité du comportement des protagonistes, qui n’est que l’autre face de leur autonomie », c’est-à-dire la capacité de ne pas s’engager, non celle de dissimuler.",
+      "normalized_claim": "Chez Friedberg, le ressort général est l'imprévisibilité du comportement, autre face de l'autonomie, et non la dissimulation.",
       "support_ids": [
-        "SUP-e6a80fbf681480ae",
-        "SUP-f09faecc9c19d232",
-        "SUP-1ac015c977974155"
+        "SUP-8ae20c222e155c3a",
+        "SUP-7d72d17d5877f313"
       ]
     },
     {
       "claim_id": "C045",
       "locator": "sections[2].paragraphs[2]",
-      "start": 667,
-      "end": 751,
-      "claim_text": "C’est un cas, assorti de la même condition de pertinence, non le ressort du concept.",
-      "normalized_claim": "L'opacité est un cas assorti de la condition de pertinence, non le ressort du concept.",
+      "start": 458,
+      "end": 632,
+      "claim_text": "L’opacité existe bien, comme cas particulier : Crozier la signale à propos de l’expert, dont le pouvoir tient à ce que « son domaine d’expertise n’est pas connu par autrui ».",
+      "normalized_claim": "Crozier fait de l'opacité de l'expertise un cas particulier : le pouvoir de l'expert tient à ce que son domaine n'est pas connu par autrui.",
       "support_ids": [
+        "SUP-e6a80fbf681480ae",
+        "SUP-1ac015c977974155",
         "SUP-8ae20c222e155c3a"
       ]
     },
     {
       "claim_id": "C046",
-      "locator": "sections[3].paragraphs[0]",
-      "start": 0,
-      "end": 150,
-      "claim_text": "Une zone d’incertitude n’est pas seulement subie par ceux qu’elle désavantage : elle est protégée par ceux qu’elle avantage, et pas toujours d’en bas.",
-      "normalized_claim": "La zone est protégée par ceux qu'elle avantage, y compris hors du bas de la hiérarchie.",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 633,
+      "end": 717,
+      "claim_text": "C’est un cas, assorti de la même condition de pertinence, non le ressort du concept.",
+      "normalized_claim": "L'opacité reste un cas soumis à la condition de pertinence, et non le ressort du concept.",
       "support_ids": [
-        "SUP-2cf570e77b34cdab",
-        "SUP-70c036c559540b6e"
+        "SUP-8ae20c222e155c3a",
+        "SUP-f09faecc9c19d232"
       ]
     },
     {
       "claim_id": "C047",
       "locator": "sections[3].paragraphs[0]",
-      "start": 151,
-      "end": 489,
-      "claim_text": "Dans l’usine de 1960, la direction n’intervient pas, et Crozier dit pourquoi : l’ingénieur d’exploitation, sans perspective de carrière, contrôle lui aussi le problème des pannes, et « on conçoit que pour conserver son avantage il soutienne et couvre systématiquement les ouvriers d’entretien », paralysant l’intervention de la direction.",
-      "normalized_claim": "Dans l'usine de 1960, l'ingénieur d'exploitation sans perspective de carrière contrôle aussi le problème des pannes et couvre les ouvriers d'entretien, paralysant l'intervention de la direction.",
+      "start": 0,
+      "end": 150,
+      "claim_text": "Une zone d’incertitude n’est pas seulement subie par ceux qu’elle désavantage : elle est protégée par ceux qu’elle avantage, et pas toujours d’en bas.",
+      "normalized_claim": "La zone d'incertitude est activement protégée par ceux qu'elle avantage, y compris en haut de la hiérarchie.",
       "support_ids": [
         "SUP-2cf570e77b34cdab",
         "SUP-70c036c559540b6e"
@@ -635,16 +646,29 @@
     {
       "claim_id": "C048",
       "locator": "sections[3].paragraphs[0]",
+      "start": 151,
+      "end": 489,
+      "claim_text": "Dans l’usine de 1960, la direction n’intervient pas, et Crozier dit pourquoi : l’ingénieur d’exploitation, sans perspective de carrière, contrôle lui aussi le problème des pannes, et « on conçoit que pour conserver son avantage il soutienne et couvre systématiquement les ouvriers d’entretien », paralysant l’intervention de la direction.",
+      "normalized_claim": "Crozier explique la non-intervention de la direction par l'ingénieur d'exploitation, sans perspective de carrière, qui contrôle lui aussi les pannes et couvre les ouvriers d'entretien.",
+      "support_ids": [
+        "SUP-2cf570e77b34cdab",
+        "SUP-70c036c559540b6e"
+      ]
+    },
+    {
+      "claim_id": "C049",
+      "locator": "sections[3].paragraphs[0]",
       "start": 490,
       "end": 634,
       "claim_text": "Ce pouvoir ne se contente donc pas de contourner la hiérarchie : il noue des alliances verticales qui rendent la zone plus difficile à refermer.",
       "normalized_claim": "Ce pouvoir noue des alliances verticales qui rendent la zone plus difficile à refermer.",
       "support_ids": [
-        "SUP-2cf570e77b34cdab"
+        "SUP-2cf570e77b34cdab",
+        "SUP-70c036c559540b6e"
       ]
     },
     {
-      "claim_id": "C049",
+      "claim_id": "C050",
       "locator": "sections[3].paragraphs[1]",
       "start": 0,
       "end": 43,
@@ -656,33 +680,33 @@
       ]
     },
     {
-      "claim_id": "C050",
+      "claim_id": "C051",
       "locator": "sections[3].paragraphs[1]",
       "start": 44,
       "end": 391,
       "claim_text": "Six ans plus tard, dans un article sur l’administration française, Crozier écrit que les dirigeants doivent s’efforcer de tout prévoir mais que, « comme ils ne peuvent naturellement y réussir », le système tolère des exceptions « qui se constituent et se reconstituent constamment autour des zones d’incertitude qu’il ne parvient pas à éliminer ».",
-      "normalized_claim": "Six ans après 1960, dans un article sur l'administration française, Crozier écrit que les dirigeants doivent tout prévoir mais « comme ils ne peuvent naturellement y réussir », le système tolère des exceptions « qui se constituent et se reconstituent constamment autour des zones d'incertitude qu'il ne parvient pas à éliminer ».",
+      "normalized_claim": "En 1966, dans un article sur l'administration française, Crozier écrit que les dirigeants ne peuvent réussir à tout prévoir et que le système tolère des exceptions autour de zones d'incertitude qu'il ne parvient pas à éliminer.",
       "support_ids": [
         "SUP-4393caf3fda0b981",
+        "SUP-b75d47c097df2433",
         "SUP-c6a029941647c691",
-        "SUP-b75d47c097df2433"
-      ]
-    },
-    {
-      "claim_id": "C051",
-      "locator": "sections[3].paragraphs[1]",
-      "start": 392,
-      "end": 656,
-      "claim_text": "Friedberg en donnera le mécanisme : les règles formelles engendrent leurs propres incertitudes, nées des difficultés de leur application quotidienne, et « ne font que les déplacer et en créer d’autres, qui peuvent à leur tour être utilisées par les participants ».",
-      "normalized_claim": "Friedberg établit que les règles formelles engendrent leurs propres incertitudes, nées des difficultés d'application quotidienne, et « ne font que les déplacer et en créer d'autres, qui peuvent à leur tour être utilisées par les participants ».",
-      "support_ids": [
-        "SUP-015648daa1124583",
-        "SUP-8415293aad8ac59b",
-        "SUP-22a18a0e49f12b83"
+        "SUP-0484c745f4c1951b"
       ]
     },
     {
       "claim_id": "C052",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 392,
+      "end": 656,
+      "claim_text": "Friedberg en donnera le mécanisme : les règles formelles engendrent leurs propres incertitudes, nées des difficultés de leur application quotidienne, et « ne font que les déplacer et en créer d’autres, qui peuvent à leur tour être utilisées par les participants ».",
+      "normalized_claim": "Friedberg établit que les règles formelles engendrent leurs propres incertitudes et ne font que les déplacer et en créer d'autres.",
+      "support_ids": [
+        "SUP-015648daa1124583",
+        "SUP-15c2f6fd3ed08950"
+      ]
+    },
+    {
+      "claim_id": "C053",
       "locator": "sections[3].paragraphs[2]",
       "start": 0,
       "end": 67,
@@ -694,24 +718,24 @@
       ]
     },
     {
-      "claim_id": "C053",
+      "claim_id": "C054",
       "locator": "sections[3].paragraphs[2]",
       "start": 68,
       "end": 340,
       "claim_text": "Crozier en donne l’exemple le plus simple : tant que faire marcher une voiture était difficile, « il y avait alors une dépendance vis-à-vis de celui qui connaissait le moteur » ; depuis que l’automobile s’est généralisée, « l’expert en moteur n’a plus aucune importance ».",
-      "normalized_claim": "Crozier donne l'exemple de l'automobile : dépendance envers celui qui connaissait le moteur, puis « l'expert en moteur n'a plus aucune importance ».",
+      "normalized_claim": "Exemple donné par Crozier : la dépendance envers celui qui connaissait le moteur a disparu avec la généralisation de l'automobile.",
       "support_ids": [
         "SUP-3cfc418bfc2e1efa",
         "SUP-f09faecc9c19d232"
       ]
     },
     {
-      "claim_id": "C054",
+      "claim_id": "C055",
       "locator": "sections[3].paragraphs[2]",
       "start": 341,
       "end": 509,
       "claim_text": "Avec Jean-Claude Thoenig, il notait déjà que « les partenaires restent vulnérables à tous les changements incessants qui affectent les incertitudes qu’ils contrôlent ».",
-      "normalized_claim": "Avec Thoenig, Crozier notait déjà que « les partenaires restent vulnérables à tous les changements incessants qui affectent les incertitudes qu'ils contrôlent ».",
+      "normalized_claim": "Crozier et Thoenig notaient en 1975 que les partenaires restent vulnérables aux changements affectant les incertitudes qu'ils contrôlent.",
       "support_ids": [
         "SUP-689f64717ee4b08e",
         "SUP-7f00cc1540d88cfc",
@@ -719,21 +743,12 @@
       ]
     },
     {
-      "claim_id": "C055",
-      "locator": "sections[3].paragraphs[2]",
-      "start": 510,
-      "end": 582,
-      "claim_text": "Une autorité hiérarchique subsiste les jours où personne n’en a besoin ;",
-      "normalized_claim": "Une autorité hiérarchique subsiste même les jours où personne n'en a besoin.",
-      "support_ids": []
-    },
-    {
       "claim_id": "C056",
       "locator": "sections[3].paragraphs[2]",
-      "start": 583,
-      "end": 654,
-      "claim_text": "un pouvoir adossé à une incertitude s’éteint le jour où celle-ci cesse.",
-      "normalized_claim": "Un pouvoir adossé à une incertitude s'éteint le jour où cette incertitude cesse.",
+      "start": 510,
+      "end": 581,
+      "claim_text": "Un pouvoir adossé à une incertitude s’éteint le jour où celle-ci cesse.",
+      "normalized_claim": "Un pouvoir fondé sur une incertitude disparaît avec elle.",
       "support_ids": [
         "SUP-3cfc418bfc2e1efa",
         "SUP-689f64717ee4b08e"
@@ -745,155 +760,188 @@
       "start": 0,
       "end": 85,
       "claim_text": "L’ordre dans lequel tout cela s’est écrit ne correspond pas à l’attribution courante.",
-      "normalized_claim": "L'ordre de publication ne correspond pas à l'attribution courante.",
+      "normalized_claim": "La chronologie réelle des textes ne correspond pas à l'attribution courante du concept.",
       "support_ids": [
-        "SUP-39488e2a5c82561a",
         "SUP-77a3e6450d21dec4",
-        "SUP-e63f46e581d4878b"
+        "SUP-e63f46e581d4878b",
+        "SUP-c4e56aca9777c662"
       ]
     },
     {
       "claim_id": "C058",
       "locator": "sections[4].paragraphs[0]",
       "start": 86,
-      "end": 300,
-      "claim_text": "L’analyse complète, l’atelier, les pannes, l’alliance protectrice, paraît en 1960 sous la seule signature de Michel Crozier, et sans l’expression : le texte y parle des « seuls éléments d’incertitude subsistants ».",
-      "normalized_claim": "L'analyse complète paraît en 1960 sous la seule signature de Crozier, sans l'expression, le texte parlant des « seuls éléments d'incertitude subsistants ».",
+      "end": 231,
+      "claim_text": "L’analyse complète, l’atelier, les pannes, l’alliance protectrice, paraît en 1960 sous la seule signature de Michel Crozier, et sans l’expression",
+      "normalized_claim": "L'analyse complète paraît en 1960 sous la seule signature de Crozier, sans l'expression « zones d'incertitude ».",
       "support_ids": [
         "SUP-ea8eb9496316b8de",
         "SUP-bfcbd247d74bbad2",
-        "SUP-b927adc67be2efc3",
-        "SUP-30c12e3b81c0a01a"
+        "SUP-c886a989df51a0a0",
+        "SUP-8f31c37b88f1405c"
       ]
     },
     {
       "claim_id": "C059",
       "locator": "sections[4].paragraphs[0]",
-      "start": 301,
-      "end": 399,
-      "claim_text": "Les mots « zones d’incertitude » se lisent ensuite sous sa seule signature, en 1966 puis en 1971 ;",
-      "normalized_claim": "L'expression « zones d'incertitude » se lit sous la seule signature de Crozier en 1966 puis en 1971.",
+      "start": 234,
+      "end": 300,
+      "claim_text": "le texte y parle des « seuls éléments d’incertitude subsistants ».",
+      "normalized_claim": "Le texte de 1960 parle des « seuls éléments d'incertitude subsistants ».",
       "support_ids": [
-        "SUP-30c12e3b81c0a01a",
-        "SUP-641d04f0f0cb4168",
-        "SUP-26fc94f2554b754c",
-        "SUP-7c1e88b9b496e557"
+        "SUP-b927adc67be2efc3",
+        "SUP-8751f3d5de1c6440",
+        "SUP-bfcbd247d74bbad2"
       ]
     },
     {
       "claim_id": "C060",
       "locator": "sections[4].paragraphs[0]",
-      "start": 400,
-      "end": 452,
-      "claim_text": "ils sont cosignés en 1975 avec Jean-Claude Thoenig ;",
-      "normalized_claim": "L'expression est cosignée en 1975 avec Jean-Claude Thoenig.",
+      "start": 301,
+      "end": 397,
+      "claim_text": "Les mots « zones d’incertitude » se lisent ensuite sous sa seule signature, en 1966 puis en 1971",
+      "normalized_claim": "L'expression « zones d'incertitude » est attestée sous la seule signature de Crozier en 1966 puis en 1971.",
       "support_ids": [
         "SUP-30c12e3b81c0a01a",
-        "SUP-13133787bc604ad9",
-        "SUP-8d7f3c8dd1df85ad"
+        "SUP-d9a021766d398b15",
+        "SUP-93394b8f5a7a3c5e",
+        "SUP-641d04f0f0cb4168"
       ]
     },
     {
       "claim_id": "C061",
       "locator": "sections[4].paragraphs[0]",
-      "start": 453,
-      "end": 593,
-      "claim_text": "et c’est en 1979 qu’on les trouve sous la signature conjointe de Crozier et d’Erhard Friedberg, treize ans après le premier de ces articles.",
-      "normalized_claim": "C'est en 1979, treize ans après 1966, qu'on trouve l'expression sous la signature conjointe de Crozier et Friedberg.",
+      "start": 400,
+      "end": 450,
+      "claim_text": "ils sont cosignés en 1975 avec Jean-Claude Thoenig",
+      "normalized_claim": "L'expression est cosignée avec Jean-Claude Thoenig en 1975.",
       "support_ids": [
-        "SUP-30c12e3b81c0a01a",
-        "SUP-16dc6d1767dff81c",
-        "SUP-545016466d1e09d4",
-        "SUP-641d04f0f0cb4168",
-        "SUP-7c1e88b9b496e557"
+        "SUP-13133787bc604ad9",
+        "SUP-a92aec5c1281dcfb",
+        "SUP-37640bc1ff9e7ad9"
       ]
     },
     {
       "claim_id": "C062",
-      "locator": "sections[4].paragraphs[1]",
-      "start": 55,
-      "end": 200,
-      "claim_text": "Prêter la formule au tandem dès l’origine, c’est avancer de treize ans une cosignature qui ne vient qu’ensuite, et effacer ce que chacun apporte.",
-      "normalized_claim": "Attribuer l'expression au tandem dès l'origine avance de treize ans une cosignature postérieure et efface l'apport de chacun.",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 453,
+      "end": 547,
+      "claim_text": "et c’est en 1979 qu’on les trouve sous la signature conjointe de Crozier et d’Erhard Friedberg",
+      "normalized_claim": "L'expression se trouve sous la signature conjointe de Crozier et Friedberg en 1979.",
       "support_ids": [
-        "SUP-77a3e6450d21dec4",
-        "SUP-3b6e9824848f09ed",
+        "SUP-545016466d1e09d4",
+        "SUP-4423d3deab2be184",
         "SUP-30c12e3b81c0a01a"
       ]
     },
     {
       "claim_id": "C063",
-      "locator": "sections[4].paragraphs[1]",
-      "start": 201,
-      "end": 395,
-      "claim_text": "Ce que les textes signés de Friedberg ajoutent, et qu’on ne trouve pas en 1960, c’est une théorie de l’échange : coopérer, c’est négocier, chacun vendant son comportement aussi cher qu’il peut ;",
-      "normalized_claim": "Les textes signés de Friedberg ajoutent, par rapport à 1960, une théorie de l'échange : coopérer, c'est négocier, chacun vendant son comportement aussi cher qu'il peut.",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 549,
+      "end": 593,
+      "claim_text": "treize ans après le premier de ces articles.",
+      "normalized_claim": "1979 vient treize ans après 1966, plus ancienne attestation de l'expression.",
       "support_ids": [
-        "SUP-8f33ecd0ebfd8d2e",
-        "SUP-77a3e6450d21dec4"
+        "SUP-c4e56aca9777c662",
+        "SUP-30c12e3b81c0a01a"
       ]
     },
     {
       "claim_id": "C064",
       "locator": "sections[4].paragraphs[1]",
-      "start": 396,
-      "end": 511,
-      "claim_text": "et la réciprocité n’est jamais équilibrée, parce que les partenaires « ne sont donc pas également irremplaçables ».",
-      "normalized_claim": "La réciprocité n'est jamais équilibrée parce que les partenaires « ne sont donc pas également irremplaçables ».",
+      "start": 55,
+      "end": 200,
+      "claim_text": "Prêter la formule au tandem dès l’origine, c’est avancer de treize ans une cosignature qui ne vient qu’ensuite, et effacer ce que chacun apporte.",
+      "normalized_claim": "Attribuer l'expression au tandem dès l'origine avance de treize ans une cosignature postérieure et efface la part de chacun.",
       "support_ids": [
-        "SUP-8f33ecd0ebfd8d2e",
-        "SUP-5041b6680e013239"
+        "SUP-c4e56aca9777c662",
+        "SUP-77a3e6450d21dec4"
       ]
     },
     {
       "claim_id": "C065",
       "locator": "sections[4].paragraphs[1]",
-      "start": 512,
-      "end": 632,
-      "claim_text": "Le pouvoir cesse d’être une chose qu’on détient : c’est le prix qu’on obtient dans un échange qu’on ne peut pas quitter.",
-      "normalized_claim": "Le pouvoir n'est pas une chose détenue mais le prix obtenu dans un échange qu'on ne peut pas quitter.",
+      "start": 201,
+      "end": 393,
+      "claim_text": "Ce que les textes signés de Friedberg ajoutent, et qu’on ne trouve pas en 1960, c’est une théorie de l’échange : coopérer, c’est négocier, chacun vendant son comportement aussi cher qu’il peut",
+      "normalized_claim": "Ce que les textes de Friedberg ajoutent, absent de 1960, est une théorie de l'échange négocié où chacun vend son comportement au mieux.",
       "support_ids": [
-        "SUP-f7f4b01748abbe5f",
         "SUP-8f33ecd0ebfd8d2e",
-        "SUP-2d3d18db854deae9"
+        "SUP-77a3e6450d21dec4",
+        "SUP-49e791fad72931ad"
       ]
     },
     {
       "claim_id": "C066",
-      "locator": "sections[4].paragraphs[2]",
-      "start": 0,
-      "end": 53,
-      "claim_text": "Reste une question que ces articles ne tranchent pas.",
-      "normalized_claim": "Une question reste non tranchée par ces articles.",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 396,
+      "end": 511,
+      "claim_text": "et la réciprocité n’est jamais équilibrée, parce que les partenaires « ne sont donc pas également irremplaçables ».",
+      "normalized_claim": "La réciprocité n'est jamais équilibrée car les partenaires ne sont pas également irremplaçables.",
       "support_ids": [
-        "SUP-81c8813e5a65eadb",
-        "SUP-345c804568aaece8"
+        "SUP-8f33ecd0ebfd8d2e"
       ]
     },
     {
       "claim_id": "C067",
-      "locator": "sections[4].paragraphs[2]",
-      "start": 54,
-      "end": 225,
-      "claim_text": "Le concept est aujourd’hui rangé sous un livre que Crozier et Friedberg publient ensemble en 1977, L’Acteur et le système, consacré aux contraintes de l’action collective.",
-      "normalized_claim": "Le concept est aujourd'hui rangé sous L'Acteur et le système, publié par Crozier et Friedberg en 1977 et consacré aux contraintes de l'action collective.",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 512,
+      "end": 632,
+      "claim_text": "Le pouvoir cesse d’être une chose qu’on détient : c’est le prix qu’on obtient dans un échange qu’on ne peut pas quitter.",
+      "normalized_claim": "Le pouvoir n'est pas un attribut détenu mais le prix obtenu dans un échange dont on ne peut sortir.",
       "support_ids": [
-        "SUP-294624441d873c35",
-        "SUP-ad5fb0f4fd95ae53",
-        "SUP-7c1e88b9b496e557"
+        "SUP-8f33ecd0ebfd8d2e",
+        "SUP-f7f4b01748abbe5f"
       ]
     },
     {
       "claim_id": "C068",
       "locator": "sections[4].paragraphs[2]",
+      "start": 0,
+      "end": 53,
+      "claim_text": "Reste une question que ces articles ne tranchent pas.",
+      "normalized_claim": "Les articles attestant l'expression ne tranchent pas ce qu'il en est dans les livres.",
+      "support_ids": [
+        "SUP-81c8813e5a65eadb",
+        "SUP-10e159ff29ee2212"
+      ]
+    },
+    {
+      "claim_id": "C069",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 54,
+      "end": 225,
+      "claim_text": "Le concept est aujourd’hui rangé sous un livre que Crozier et Friedberg publient ensemble en 1977, L’Acteur et le système, consacré aux contraintes de l’action collective.",
+      "normalized_claim": "Le concept est rangé sous L'Acteur et le système, publié par Crozier et Friedberg en 1977 et sous-titré Les contraintes de l'action collective.",
+      "support_ids": [
+        "SUP-b0305104c8d73d7c",
+        "SUP-294624441d873c35",
+        "SUP-ad5fb0f4fd95ae53"
+      ]
+    },
+    {
+      "claim_id": "C070",
+      "locator": "sections[4].paragraphs[2]",
       "start": 226,
-      "end": 347,
-      "claim_text": "Ce que ce livre fait de la notion, dans quels mots et à quelle place dans son argument, il faudra l’ouvrir pour le voir ;",
-      "normalized_claim": "Ce que ce livre fait de la notion n'est pas établi : il faut l'ouvrir pour le savoir.",
+      "end": 345,
+      "claim_text": "Ce que ce livre fait de la notion, dans quels mots et à quelle place dans son argument, il faudra l’ouvrir pour le voir",
+      "normalized_claim": "Ce que ce livre fait de la notion n'est pas établi : le livre n'a pas été ouvert.",
       "support_ids": [
         "SUP-345c804568aaece8",
         "SUP-81c8813e5a65eadb",
-        "SUP-57863718e4cc3c57"
+        "SUP-f0c85e0f716138c8"
+      ]
+    },
+    {
+      "claim_id": "C071",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 348,
+      "end": 440,
+      "claim_text": "c’est par là que continue quiconque veut démêler ce que chacune des deux signatures a formé.",
+      "normalized_claim": "C'est par ce livre que passe l'examen de la part respective des deux signatures.",
+      "support_ids": [
+        "SUP-77a3e6450d21dec4",
+        "SUP-345c804568aaece8"
       ]
     }
   ]
