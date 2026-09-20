@@ -29,7 +29,7 @@ script ne peut pas dire : quel travail est possible aujourd'hui, ce qu'il coûte
 | **D.** Reprises courtes des domaines instruits | voir les sections | oui, accès déjà constaté | **ouvert, et c'est par lui que la phase 3 avance** |
 | **E.** Le garde de la CI ne couvrait qu'une moitié du répertoire projeté | **aucun** | non | **fermé le 2 septembre 2026** |
 | **F.** Les acquisitions que l'audit v3 réclame | voir la section | oui | ouvert le 17 septembre 2026 |
-| **G.** Le pack de preuve ne lisait qu'un fichier du dossier | **aucun** | non | **corrigé le 19 septembre 2026**, deux suites ouvertes |
+| **G.** Le pack de preuve ne lisait qu'un fichier du dossier | **aucun** | non | **corrigé le 19 septembre 2026**, deux suites fermées le 20, **une seule reste** |
 
 **Le chantier A est fermé.** Il s'était vidé le 21 août, rouvert et creusé pendant cinq lots
 d'ouverture consécutifs jusqu'à trente-quatre cartes le 28 août, puis refermé en trois nuits :
@@ -957,11 +957,20 @@ le dit maintenant, et onze tests le tiennent : **le script n'en avait aucun.**
 
 **Ce que ce chantier laisse ouvert, et qui n'est pas réglé par le correctif.**
 
-1. **Le réécrivain ne lit toujours pas le dossier de lui-même.** Sa liste de lecture s'arrête à
-   `corpus/validated/<id>.json` ; le dossier ne lui parvient que si l'orchestrateur le lui passe
-   par chemin, ce que le lot du 19 septembre a fait à la main. L'asymétrie va dans le sens sûr —
-   le rédacteur en sait moins que le contrôle — mais elle affame la réécriture des neuf cartes
-   les mieux dotées du dépôt. À porter dans l'agent plutôt que dans le prompt.
+1. ~~**Le réécrivain ne lit toujours pas le dossier de lui-même.**~~ **Fermé le 20 septembre
+   2026.** Sa liste de lecture s'arrêtait à `corpus/validated/<id>.json` ; le dossier ne lui
+   parvenait que si l'orchestrateur le lui passait par chemin, ce que le lot du 19 septembre
+   avait fait à la main, une fois. Les deux agents listent désormais
+   `corpus/evidence/<id>/` eux-mêmes, `scouting.json` excepté, sans dépendre d'une convention de
+   nommage que quinze lots n'ont pas normalisée.
+
+   **L'auditeur a été corrigé dans le même mouvement, et c'est lui qui le méritait le plus.**
+   Son axe A juge la fidélité documentaire, et il la jugeait sur un enregistrement validé qui est
+   un résumé — donc sur un texte qui peut parfaitement ne pas contredire une affirmation fausse.
+   Le lot du 19 septembre l'avait constaté sur pièce : l'auditeur avait repéré une incohérence
+   d'accès sans pouvoir la trancher, et c'est le dossier qui l'a tranchée. Son protocole lui
+   demande maintenant de dire quand une carte n'a pas de dossier, plutôt que de noter A sur la
+   foi d'une absence de contradiction.
 2. **Le niveau d'accès n'est pas porté par ces dossiers.** Sur 496 supports de
    `regulation-controle-autonome`, 467 sortent avec `access: n/a`, faute de `consulted` sur les
    objets. Le vérificateur est alors fondé à les traiter comme non consultés, alors que l'en-tête
@@ -969,12 +978,18 @@ le dit maintenant, et onze tests le tiennent : **le script n'en avait aucun.**
    information absente des fichiers**, et elle ne peut pas être ajoutée par déduction.
 3. **Les neuf rapports v3 antérieurs ne sont pas invalidés** : ces cartes n'ont aucun répertoire
    de preuve, donc leur pack était déjà complet. Aucune reprise n'est due de ce côté.
-4. **Le contrôle mécanique des citations a le même angle mort**, et il n'est pas corrigé.
-   `corpus:deepen --check` ne compare une citation qu'à `corpus/validated/<id>.json`. Sur
-   `regulation-controle-autonome`, les verbatim des p. 10 et p. 16 sont exacts dans la lecture
-   primaire `full-text` et absents de l'enregistrement validé : le contrôle les signale comme
-   non sourcés. L'avertissement n'est pas bloquant, mais il est faux, et il apprend à ignorer
-   un avertissement — ce qui coûtera un jour une vraie citation non sourcée.
+4. ~~**Le contrôle mécanique des citations a le même angle mort.**~~ **Fermé le 20 septembre
+   2026.** `corpus:deepen --check` ne comparait une citation qu'à `corpus/validated/<id>.json`.
+   Il prend désormais le dossier entier, par la même fonction que le pack de preuve.
+
+   **La mesure avant et après tient en deux lignes.** Avant correctif, le dépôt produisait
+   exactement deux avertissements sur 136 approfondissements, tous deux sur
+   `regulation-controle-autonome`, sur les verbatim des p. 10 et p. 15-16 de Reynaud 1988 —
+   exacts tous les deux dans une lecture primaire déclarée `full-text`. Après, aucun. **Les deux
+   seuls avertissements que ce contrôle savait produire étaient faux**, ce qui est le pire état
+   possible pour un avertissement : il n'est pas gênant, il est pédagogique dans le mauvais sens.
+   Six tests le tiennent, dont un qui vérifie que deux fichiers concaténés ne fabriquent pas à
+   eux deux une citation qu'aucun ne porte.
 
 **Ce que le correctif a rendu dès la première nuit.** `regulation-controle-autonome` portait un
 contresens : sa version publiée présentait la régulation conjointe comme le produit de la
