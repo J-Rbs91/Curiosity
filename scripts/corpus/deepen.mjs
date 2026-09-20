@@ -26,6 +26,7 @@ import { readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 import { CONTENT_DIR, CORPUS_DIR, loadRecords, relative } from "./lib/io.mjs";
+import { dossierBrut } from "./lib/factcheck-evidence.mjs";
 import {
   countWords,
   projectDeepening,
@@ -66,13 +67,20 @@ const records = (await loadRecords()).filter(
 const validatedIds = new Set(records.map(({ record }) => record.id));
 
 /*
- * L'enregistrement sérialisé, tel quel : c'est contre lui que se vérifient les citations du
- * texte. Le comparer à l'objet plutôt qu'au fichier serait plus propre en apparence, mais
- * une citation peut se trouver n'importe où dans la fiche — dans les notes de rédaction,
- * dans le bloc du contrôleur, dans le libellé d'une source —, et énumérer ces endroits
- * reviendrait à décider d'avance où un rédacteur a le droit de citer.
+ * Le dossier contre lequel se vérifient les citations du texte : l'enregistrement sérialisé
+ * tel quel, et le répertoire de preuve de la carte. Comparer à l'objet plutôt qu'au fichier
+ * serait plus propre en apparence, mais une citation peut se trouver n'importe où dans la
+ * fiche — dans les notes de rédaction, dans le bloc du contrôleur, dans le libellé d'une
+ * source —, et énumérer ces endroits reviendrait à décider d'avance où un rédacteur a le droit
+ * de citer. Le répertoire de preuve entre pour la même raison qui a fait corriger le pack de
+ * fact-check : voir `dossierBrut`.
  */
-const dossiers = new Map(records.map(({ record }) => [record.id, JSON.stringify(record)]));
+const dossiers = new Map(
+  records.map(({ record }) => [
+    record.id,
+    dossierBrut(record, path.join(CORPUS_DIR, "evidence", record.id)),
+  ])
+);
 
 let entries = [];
 try {

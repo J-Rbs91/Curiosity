@@ -4,7 +4,7 @@ import path from "node:path";
 
 import { afterEach, describe, expect, it } from "vitest";
 
-import { evidenceOrigin, listEvidenceFiles } from "./factcheck-evidence.mjs";
+import { dossierBrut, evidenceOrigin, listEvidenceFiles } from "./factcheck-evidence.mjs";
 
 /**
  * Ce que ces tests protègent est un silence, et c'est ce qui le rend coûteux : quand le pack de
@@ -19,6 +19,14 @@ function dossier(fichiers) {
   const dir = mkdtempSync(path.join(tmpdir(), "evidence-"));
   dirs.push(dir);
   for (const nom of fichiers) writeFileSync(path.join(dir, nom), "{}\n", "utf8");
+  return dir;
+}
+
+function dossierEcrit(contenus) {
+  const dir = mkdtempSync(path.join(tmpdir(), "evidence-"));
+  dirs.push(dir);
+  for (const [nom, contenu] of Object.entries(contenus))
+    writeFileSync(path.join(dir, nom), contenu, "utf8");
   return dir;
 }
 
@@ -84,6 +92,59 @@ describe("listEvidenceFiles", () => {
   it("rend un chemin utilisable", () => {
     const dir = dossier(["lecture.json"]);
     expect(listEvidenceFiles(dir)[0].file).toBe(path.join(dir, "lecture.json"));
+  });
+});
+
+/**
+ * Ce que ces tests-ci protègent est l'inverse du silence précédent : un avertissement faux. Le
+ * contrôle des citations ne comparait qu'à l'enregistrement validé, qui est un résumé, et
+ * signalait donc comme non sourcés des verbatim exacts relevés par une lecture primaire
+ * `full-text`. Deux d'entre eux sont documentés sur `regulation-controle-autonome`.
+ */
+describe("dossierBrut", () => {
+  const record = { id: "carte", quotation: { text: "la phrase de la fiche" } };
+
+  it("porte l’enregistrement validé", () => {
+    const dir = dossierEcrit({});
+    expect(dossierBrut(record, dir)).toContain("la phrase de la fiche");
+  });
+
+  it("porte un verbatim qui n’est que dans la lecture primaire", () => {
+    const dir = dossierEcrit({
+      "evidence.primary-reading.json": JSON.stringify({ verbatim: "une phrase de la page 10" }),
+    });
+    expect(dossierBrut(record, dir)).toContain("une phrase de la page 10");
+  });
+
+  it("porte aussi la réception déposée à côté de la lecture", () => {
+    const dir = dossierEcrit({
+      "lecture.json": JSON.stringify({ verbatim: "la page 10" }),
+      "reception.json": JSON.stringify({ verbatim: "le commentateur" }),
+    });
+    const brut = dossierBrut(record, dir);
+    expect(brut).toContain("la page 10");
+    expect(brut).toContain("le commentateur");
+  });
+
+  it("n’admet pas le fichier du scout, qui ne prétend avoir rien lu", () => {
+    const dir = dossierEcrit({
+      "scouting.json": JSON.stringify({ piste: "une phrase que personne n’a lue" }),
+    });
+    expect(dossierBrut(record, dir)).not.toContain("une phrase que personne n’a lue");
+  });
+
+  it("rend l’enregistrement seul quand la carte n’a pas de dossier", () => {
+    const parent = mkdtempSync(path.join(tmpdir(), "evidence-"));
+    dirs.push(parent);
+    expect(dossierBrut(record, path.join(parent, "absent"))).toBe(JSON.stringify(record));
+  });
+
+  it("sépare les fichiers, pour que deux d’entre eux ne fabriquent pas une phrase", () => {
+    const dir = dossierEcrit({
+      "aaa.json": '{"fin":"le début de la',
+      "bbb.json": ' citation inventée"}',
+    });
+    expect(dossierBrut(record, dir)).not.toContain("le début de la citation inventée");
   });
 });
 

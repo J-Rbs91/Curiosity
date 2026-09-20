@@ -1,4 +1,4 @@
-import { existsSync, readdirSync, statSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
 import path from "node:path";
 
 /**
@@ -41,4 +41,24 @@ export function listEvidenceFiles(evidenceDir) {
  */
 export function evidenceOrigin(fileName) {
   return `evidence:${fileName}`;
+}
+
+/**
+ * Le dossier d'une carte tel qu'un contrôle de citation doit le voir : l'enregistrement validé
+ * **et** les fichiers de preuve, en un seul texte brut où chercher une phrase entre guillemets.
+ *
+ * L'enregistrement seul ne suffit pas, parce que c'est un résumé. Sur
+ * `regulation-controle-autonome`, les verbatim des p. 10 et p. 15-16 sont exacts dans une
+ * lecture primaire déclarée `full-text` et absents de l'enregistrement validé : le contrôle des
+ * citations les signalait comme non sourcés. C'est le même angle mort que celui du pack de
+ * preuve, à un composant près, et il coûte la même chose — un avertissement faux apprend à
+ * ignorer les avertissements, jusqu'au jour où l'un d'eux est vrai.
+ *
+ * On concatène le texte brut plutôt que d'énumérer des champs : décider d'avance où une
+ * citation a le droit de se trouver dans un dossier reviendrait à recréer la convention de
+ * nommage que ce module existe pour ne plus croire.
+ */
+export function dossierBrut(record, evidenceDir) {
+  const preuves = listEvidenceFiles(evidenceDir).map(({ file }) => readFileSync(file, "utf8"));
+  return [JSON.stringify(record), ...preuves].join("\n");
 }

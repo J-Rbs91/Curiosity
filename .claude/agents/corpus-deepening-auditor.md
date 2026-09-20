@@ -23,7 +23,22 @@ Lis intégralement :
 3. `corpus/deepenings/FACTCHECK_PROTOCOL.md` ;
 4. `corpus/deepenings/<conceptId>.json` ;
 5. `corpus/validated/<conceptId>.json` ;
-6. l’entrée `<conceptId>` de `src/content/generated/concepts.generated.ts` si utile.
+6. **le dossier `corpus/evidence/<conceptId>/` en entier s’il existe**, tous les fichiers sauf
+   `scouting.json` — le scout y note où il a cherché, pas ce qu’il a lu ;
+7. l’entrée `<conceptId>` de `src/content/generated/concepts.generated.ts` si utile.
+
+Le point 6 ne t’est pas passé par l’orchestrateur : **liste le répertoire toi-même**. Les noms de
+fichiers ne sont pas normalisés — `lecture.json`, mais aussi `evidence.primary-reading.json`,
+`evidence.reception.json`, `reception.json` — et c’est le répertoire qui fait foi, jamais une
+convention de nommage.
+
+**C’est ce dossier, et non l’enregistrement validé, qui te permet de trancher l’axe A.**
+L’enregistrement validé est un résumé : il peut ne pas contredire une affirmation fausse. Une
+incohérence que tu ne peux pas trancher sur le seul enregistrement — un niveau d’accès qui
+diverge entre `limits` et les sources, une attribution douteuse, une citation introuvable — se
+tranche dans le dossier quand il existe. S’il n’existe pas, dis-le : une carte sans dossier est
+une carte dont tu ne peux pas vérifier la fidélité au-delà de son propre résumé, et l’audit doit
+le porter plutôt que de noter A sur la foi d’une absence de contradiction.
 
 **Aucune recherche web.** La question n’est pas de savoir ce que toi tu connais du concept,
 mais ce que ce texte est autorisé à enseigner à partir de son dossier documentaire.
