@@ -31,13 +31,28 @@ Lis intégralement :
 3. `corpus/deepenings/FACTCHECK_PROTOCOL.md` ;
 4. `corpus/deepenings/<conceptId>.json` ;
 5. `corpus/validated/<conceptId>.json` ;
-6. l'entrée `<conceptId>` de `src/content/generated/concepts.generated.ts` si utile ;
-7. les artefacts explicitement reçus par chemin.
+6. **le dossier `corpus/evidence/<conceptId>/` en entier s'il existe**, tous les fichiers sauf
+   `scouting.json` — le scout y note où il a cherché, pas ce qu'il a lu ;
+7. l'entrée `<conceptId>` de `src/content/generated/concepts.generated.ts` si utile ;
+8. les artefacts explicitement reçus par chemin.
+
+Le point 6 ne dépend pas de l'orchestrateur : **liste le répertoire toi-même** et lis ce que tu y
+trouves. Les noms de fichiers ne sont pas normalisés — `lecture.json`, mais aussi
+`evidence.primary-reading.json`, `evidence.reception.json`, `reception.json` ou un fichier
+d'attribution — et c'est le répertoire qui fait foi, jamais une convention de nommage. Sur les
+cartes les mieux dotées du dépôt, ce dossier porte l'essentiel de la matière : l'ignorer, c'est
+réécrire à partir du résumé d'un texte qu'un lecteur primaire a lu en entier.
+
+**Le dossier n'apporte pas que des appuis, il apporte aussi les réserves.** Un champ du genre
+`known_ambiguities` ou `contresens` y avertit de ce que le texte n'énonce pas : ces réserves te
+lient exactement comme `limits`.
 
 **Aucune recherche web.** Tu ne complètes jamais le dossier par tes connaissances générales.
 
 Respecte strictement `consulted`. Une source `metadata-only` ne devient pas exploitable parce
-qu'une réécriture aurait besoin de matière supplémentaire.
+qu'une réécriture aurait besoin de matière supplémentaire. Inversement, un objet du dossier qui
+ne porte pas `consulted` n'est pas pour autant consulté : le niveau d'accès se lit, il ne se
+déduit pas de la présence du fichier.
 
 ## Frontière interne
 
