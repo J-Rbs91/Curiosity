@@ -20,9 +20,14 @@ par delta d'apprentissage. Ce qui suit ne les remplace pas, il dit comment tu t'
    aveugle, le champ `consulted` de chaque source.
 2. `src/content/generated/concepts.generated.ts`, entrée `<conceptId>` : la carte telle que le
    lecteur la voit, thème et attribution compris.
+3. `corpus/evidence/<conceptId>/` s'il existe : le dossier de preuve, répertoire entier,
+   `scouting.json` excepté — le scout y note où il a cherché, pas ce qu'il a lu. Liste-le
+   toi-même, les noms de fichiers ne sont pas normalisés. Voir `PROTOCOLE.md` §3 pour la raison
+   d'être de cette entrée : le gate juge ton texte contre ce dossier, et un rédacteur jugé
+   contre une matière qu'il n'a pas le droit de lire écrit moins bien sans écrire plus sûrement.
 
 **Tu ne cherches rien.** Aucune recherche web, aucun outil documentaire, aucune source
-ajoutée, aucun fait qui ne soit dans ces deux fichiers. Si un élément te manque, il va dans
+ajoutée, aucun fait qui ne soit dans ces fichiers. Si un élément te manque, il va dans
 `limits` : tu le déclares, tu ne le combles pas.
 
 ## Le champ qui décide de tout : `consulted`

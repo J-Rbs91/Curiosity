@@ -149,7 +149,7 @@ mécanisme » n'en est pas un.
 
 ## 3. Ce qui sert de matière, et rien d'autre
 
-Deux fichiers, et aucune autre entrée :
+Trois entrées, et aucune autre :
 
 1. **La carte projetée** dans `src/content/generated/concepts.generated.ts` : domaine, thème,
    concept, auteurs, attribution, citation localisée, accroche, résumé, sources.
@@ -158,6 +158,28 @@ Deux fichiers, et aucune autre entrée :
    une correction a été faite, l'aveu d'un texte qui n'a pas pu être ouvert, ou le désaccord
    de portée qui a coûté trois tours de contrôle. C'est la matière la plus fiable, et la seule
    qui dise **où sont les fragilités**.
+3. **Le dossier de preuve** `corpus/evidence/<id>/`, quand il existe : le répertoire entier,
+   `scouting.json` excepté — le scout y note où il a cherché et ce qui semblait atteignable,
+   jugements formés avant toute lecture. Liste le répertoire toi-même : les noms de fichiers
+   ne sont pas normalisés, et c'est le répertoire qui fait foi, jamais une convention.
+
+**Pourquoi trois et non deux, et pourquoi ce n'est pas un assouplissement.** Ce protocole a
+longtemps dit « deux fichiers », et c'était juste tant que le dossier ne servait à personne.
+Depuis que le pack de fact-check résout ses supports sur le répertoire entier
+(`FACTCHECK_PROTOCOL.md` §3), la règle à deux fichiers faisait juger le texte contre une matière
+que son rédacteur n'avait pas le droit de lire. L'asymétrie allait dans le sens sûr, mais elle
+affamait précisément les cartes les mieux dotées du dépôt, et elle a coûté un contresens publié
+sur `regulation-controle-autonome` que l'enregistrement validé, étant un résumé, ne contredisait
+pas.
+
+**Rien n'est relâché par là**, parce que rien ne change du côté qui décide : le gate reste
+l'autorité, il juge les mêmes claims contre les mêmes supports, et une affirmation qui n'est pas
+soutenue échoue exactement comme avant. Ce qui change est que le rédacteur voit désormais ce
+contre quoi il sera jugé.
+
+**Et le dossier ne donne pas que des appuis : il donne aussi les réserves.** Un champ du genre
+`known_ambiguities` y avertit de ce que le texte n'énonce pas — « c'est une lecture, le texte ne
+l'énonce pas ». Ces réserves te lient exactement comme `limits`.
 
 Ces fichiers sont ta documentation de travail. **Ils ne se mentionnent pas dans le texte.**
 
@@ -167,6 +189,10 @@ Le champ `consulted` de chaque source décide de ce que tu as le droit d'en dire
 - `metadata-only` : **seule la notice l'a été.** La source existe et elle est pertinente ;
   aucune phrase sur son contenu n'est permise. Pas de « dans cet ouvrage, l'auteur
   distingue… ».
+
+Et la réciproque vaut dans le dossier : **un objet qui ne porte pas `consulted` n'est pas
+consulté pour autant.** Le niveau d'accès se lit, il ne se déduit ni de la présence du fichier
+ni de l'en-tête qui déclare une lecture intégrale.
 
 C'est la distinction la plus importante du protocole, et celle qu'on oublie le plus vite.
 
