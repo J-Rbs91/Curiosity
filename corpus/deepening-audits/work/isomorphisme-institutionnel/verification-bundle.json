@@ -1,8 +1,8 @@
 {
   "protocol_version": 1,
   "concept_id": "isomorphisme-institutionnel",
-  "candidate_sha256": "b7ebf8381aeecd8328e01ee8f56cf62f5f457536ae1e7f82bddd55716dab2a07",
-  "map_sha256": "b1b18210da40474ef17cea389523de92f58ca761ee42cf64dc2f4fb6d0b726f5",
+  "candidate_sha256": "3cb1d065b264d7b279ce6c93ef1dc83938b606bd5f882118fd84d54f1384831b",
+  "map_sha256": "213d25565003c28e48686fc6343c236bea5bd7141b8e08c52e04917826d2836d",
   "claims": [
     {
       "claim_id": "C001",
@@ -28,13 +28,7 @@
     {
       "claim_id": "C002",
       "locator": "lead[0]",
-      "claim_text": "Mêmes services qualité, mêmes certifications, mêmes intitulés de poste",
-      "supports": []
-    },
-    {
-      "claim_id": "C003",
-      "locator": "lead[0]",
-      "claim_text": "mêmes rapports annuels au format quasi identique",
+      "claim_text": "Mêmes comptables recrutés pour satisfaire au droit fiscal, mêmes postes créés pour parer les accusations de discrimination, mêmes normes antipollution à respecter.",
       "supports": [
         {
           "id": "SUP-b51f6e4eea07691b",
@@ -46,9 +40,9 @@
       ]
     },
     {
-      "claim_id": "C004",
+      "claim_id": "C003",
       "locator": "lead[0]",
-      "claim_text": "Des institutions qui voulaient devenir plus elles-mêmes finissent par devenir plus semblables aux autres.",
+      "claim_text": "Ceux qui cherchaient à changer leur organisation la rendent plus semblable aux autres.",
       "supports": [
         {
           "id": "SUP-6aa956ab45fc7633",
@@ -58,23 +52,16 @@
           "text": "[…] des acteurs rationnels rendent leurs organisations toujours plus semblables à mesure qu'ils cherchent à les changer."
         },
         {
-          "id": "SUP-d971a1a6d8629ad8",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.key_quotation._forme_courte_150_signes.original_text",
+          "id": "SUP-255f6187479ca7f2",
+          "origin": "validated",
+          "path": "$.quotation.text",
           "access": "n/a",
-          "text": "[…] rational actors make their organizations increasingly similar as they try to change them."
-        },
-        {
-          "id": "SUP-283210537714b72d",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.mechanism[4]",
-          "access": "n/a",
-          "text": "4. LE PARADOXE D'AGRÉGATION — c'est la « rationalité collective » du titre (p. 148). « Strategies that are rational for individual organizations may not be rational if adopted by large numbers. Yet the very fact that they are normatively sanctioned increases the likelihood of their adoption. » Et l'effet de cliquet : « organizational actors making rational decisions construct around themselves an environment that constrains their ability to change further in later years » (p. 148). Le milieu auquel chacun s'adapte est fait des adaptations des autres — les auteurs le formulent en paraphrasant Schelling (1978:14) : « Organizations in a structured field […] respond to an environment that consists of other organizations responding to their environment, which consists of organizations responding to an environment of organizations' responses » (p. 149). Aucun acteur n'a besoin d'être irrationnel pour que le résultat d'ensemble le soit."
+          "text": "[…] des acteurs rationnels rendent leurs organisations toujours plus semblables à mesure qu'ils cherchent à les changer."
         }
       ]
     },
     {
-      "claim_id": "C005",
+      "claim_id": "C004",
       "locator": "lead[1]",
       "claim_text": "Deux sociologues américains, Paul DiMaggio et Walter Powell",
       "supports": [
@@ -98,18 +85,11 @@
           "path": "$.attribution_input._authorship_etabli_sur_le_texte",
           "access": "n/a",
           "text": "L'article porte lui-même la mention, en note d'astérisque p. 147 : « The authors' names are listed in alphabetical order for convenience. This was a fully collaborative effort. » Les deux auteurs sont domiciliés à la même adresse (School of Organization and Management, Yale University). Il n'y a donc aucun premier auteur au sens ordinaire, et aucun des deux ne peut porter seul le concept. La note précise aussi qu'une version préliminaire a été présentée PAR POWELL au congrès de l'American Sociological Association, Toronto, août 1981."
-        },
-        {
-          "id": "SUP-8200e8d2f8f8dbcd",
-          "origin": "validated",
-          "path": "$.attribution_note",
-          "access": "n/a",
-          "text": "Concept coécrit par Paul J. DiMaggio et Walter W. Powell, habituellement rangé sous « DiMaggio et Powell », toujours cités ensemble."
         }
       ]
     },
     {
-      "claim_id": "C006",
+      "claim_id": "C005",
       "locator": "lead[1]",
       "claim_text": "ont pris ce paradoxe au sérieux au début des années 1980",
       "supports": [
@@ -121,23 +101,16 @@
           "text": "Paul J. DiMaggio et Walter W. Powell, « The Iron Cage Revisited: Institutional Isomorphism and Collective Rationality in Organizational Fields », American Sociological Review, vol. 48, n° 2, avril 1983, p. 147-160."
         },
         {
-          "id": "SUP-157000375461e8c2",
+          "id": "SUP-e42805aa88d5c8d3",
           "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.attribution_input._authorship_etabli_sur_le_texte",
-          "access": "n/a",
-          "text": "L'article porte lui-même la mention, en note d'astérisque p. 147 : « The authors' names are listed in alphabetical order for convenience. This was a fully collaborative effort. » Les deux auteurs sont domiciliés à la même adresse (School of Organization and Management, Yale University). Il n'y a donc aucun premier auteur au sens ordinaire, et aucun des deux ne peut porter seul le concept. La note précise aussi qu'une version préliminaire a été présentée PAR POWELL au congrès de l'American Sociological Association, Toronto, août 1981."
-        },
-        {
-          "id": "SUP-cf7cf027acb49054",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.attribution_input.term_origin.coined_in",
-          "access": "n/a",
-          "text": "DiMaggio & Powell, American Sociological Review, 48(2), 1983, p. 150 pour la typologie coercitif / mimétique / normatif."
+          "path": "$.evidence.primary_sources[0].citation",
+          "access": "full-text",
+          "text": "Paul J. DiMaggio et Walter W. Powell, « The Iron Cage Revisited: Institutional Isomorphism and Collective Rationality in Organizational Fields », American Sociological Review, vol. 48, n° 2, avril 1983, p. 147-160."
         }
       ]
     },
     {
-      "claim_id": "C007",
+      "claim_id": "C006",
       "locator": "lead[1]",
       "claim_text": "L’explication qui vient spontanément est celle de la concurrence : le marché éliminerait les formes les moins efficaces et ne laisserait subsister que les meilleures, d’où la ressemblance.",
       "supports": [
@@ -149,16 +122,16 @@
           "text": "6. LE PARTAGE ENTRE DEUX ISOMORPHISMES (p. 149-150). « Following Meyer (1979) and Fennell (1980), we maintain that there are two types of isomorphism: competitive and institutional. » L'isomorphisme compétitif suppose « a system rationality that emphasizes market competition, niche change, and fitness measures » ; il est « most relevant for those fields in which free and open competition exists », « explains parts of the process of bureaucratization that Weber observed, and may apply to early adoption of innovation, but it does not present a fully adequate picture of the modern world of organizations » (p. 150). C'est le domaine de validité, énoncé par les auteurs eux-mêmes : là où la concurrence est libre et ouverte, on n'a pas besoin de leur mécanisme."
         },
         {
-          "id": "SUP-ccd1ad21cd9b03b3",
+          "id": "SUP-a327d8c8a07bb308",
           "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.conditions.disappears_when[2]",
+          "path": "$.evidence._perimetre_du_dossier",
           "access": "n/a",
-          "text": "On se situe au début de la vie d'un champ ou d'une industrie : les premières adoptions relèvent encore de la recherche de performance (p. 148), et « selection acts with great force only in the early years of an industry's existence » (Carroll et Delacroix, cités p. 149)."
+          "text": "Ce dossier documente l'ISOMORPHISME INSTITUTIONNEL tel que l'énonce l'article de 1983, c'est-à-dire un processus d'homogénéisation des organisations d'un même CHAMP, décomposé en trois mécanismes à antécédents distincts. Deux voisinages à ne pas absorber. (1) L'isomorphisme COMPÉTITIF (sélection par le marché, Hannan & Freeman) est dans le texte l'autre type, celui dont les auteurs se démarquent : il n'est pas un quatrième mécanisme institutionnel. (2) Le DÉCOUPLAGE de Meyer & Rowan n'est pas dans ce texte une conséquence de l'isomorphisme : les auteurs s'en écartent explicitement (p. 155). Le CHAMP ORGANISATIONNEL et la STRUCTURATION sont ici traités comme des composants du mécanisme, non comme le concept lui-même ; s'ils font l'objet d'une fiche propre, l'articulation est donnée aux étapes 1 et 2 de `mechanism`."
         }
       ]
     },
     {
-      "claim_id": "C008",
+      "claim_id": "C007",
       "locator": "lead[1]",
       "claim_text": "Les deux auteurs montrent que cette explication tient de moins en moins",
       "supports": [
@@ -179,9 +152,9 @@
       ]
     },
     {
-      "claim_id": "C009",
+      "claim_id": "C008",
       "locator": "lead[1]",
-      "claim_text": "qu’une autre logique, plus discrète, produit l’essentiel de cette convergence",
+      "claim_text": "et qu’une autre logique, plus discrète, produit l’essentiel de cette convergence",
       "supports": [
         {
           "id": "SUP-92b52d12447dc4d4",
@@ -200,7 +173,7 @@
       ]
     },
     {
-      "claim_id": "C010",
+      "claim_id": "C009",
       "locator": "sections[0].paragraphs[0]",
       "claim_text": "L’idée d’une sélection par le marché suppose une concurrence qui élimine : les formes les moins efficaces disparaissent, les autres servent de modèle.",
       "supports": [
@@ -214,28 +187,28 @@
       ]
     },
     {
-      "claim_id": "C011",
+      "claim_id": "C010",
       "locator": "sections[0].paragraphs[0]",
       "claim_text": "DiMaggio et Powell ne la récusent pas, ils en bornent le domaine.",
       "supports": [
-        {
-          "id": "SUP-50c860462e2289a5",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.mechanism[6]",
-          "access": "n/a",
-          "text": "6. LE PARTAGE ENTRE DEUX ISOMORPHISMES (p. 149-150). « Following Meyer (1979) and Fennell (1980), we maintain that there are two types of isomorphism: competitive and institutional. » L'isomorphisme compétitif suppose « a system rationality that emphasizes market competition, niche change, and fitness measures » ; il est « most relevant for those fields in which free and open competition exists », « explains parts of the process of bureaucratization that Weber observed, and may apply to early adoption of innovation, but it does not present a fully adequate picture of the modern world of organizations » (p. 150). C'est le domaine de validité, énoncé par les auteurs eux-mêmes : là où la concurrence est libre et ouverte, on n'a pas besoin de leur mécanisme."
-        },
         {
           "id": "SUP-9252a13174a24b8a",
           "origin": "evidence:evidence.primary-reading.json",
           "path": "$.evidence.common_misinterpretations[5].why_wrong",
           "access": "n/a",
           "text": "« We reject neither the natural-selection nor the elite-control arguments out of hand. Elites do exercise considerable influence over modern life and aberrant or inefficient organizations sometimes do expire. But we contend that neither of these processes is sufficient to explain the extent to which organizations have become structurally more similar » (p. 157). Le mot est « sufficient ». L'article se présente d'ailleurs comme complémentaire : sa contribution à l'écologie des populations est d'y ajouter « a much needed perspective on the political struggle for organizational power and survival » (p. 157), et sa contribution à l'approche institutionnaliste de John Meyer est de demander « how these models arise and whose interests they initially serve » (p. 157)."
+        },
+        {
+          "id": "SUP-50c860462e2289a5",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[6]",
+          "access": "n/a",
+          "text": "6. LE PARTAGE ENTRE DEUX ISOMORPHISMES (p. 149-150). « Following Meyer (1979) and Fennell (1980), we maintain that there are two types of isomorphism: competitive and institutional. » L'isomorphisme compétitif suppose « a system rationality that emphasizes market competition, niche change, and fitness measures » ; il est « most relevant for those fields in which free and open competition exists », « explains parts of the process of bureaucratization that Weber observed, and may apply to early adoption of innovation, but it does not present a fully adequate picture of the modern world of organizations » (p. 150). C'est le domaine de validité, énoncé par les auteurs eux-mêmes : là où la concurrence est libre et ouverte, on n'a pas besoin de leur mécanisme."
         }
       ]
     },
     {
-      "claim_id": "C012",
+      "claim_id": "C011",
       "locator": "sections[0].paragraphs[0]",
       "claim_text": "Elle vaut surtout là où la concurrence est libre et ouverte.",
       "supports": [
@@ -256,7 +229,7 @@
       ]
     },
     {
-      "claim_id": "C013",
+      "claim_id": "C012",
       "locator": "sections[0].paragraphs[0]",
       "claim_text": "Or beaucoup d’organisations qui se ressemblent, administrations, hôpitaux, écoles, associations subventionnées, ne vivent pas dans cet univers-là.",
       "supports": [
@@ -273,11 +246,18 @@
           "path": "$.evidence.mechanism[8]",
           "access": "n/a",
           "text": "8. MÉCANISME 1 — COERCITIF : la forme de votre interlocuteur devient la vôtre (p. 150-151). Définition : « Coercive isomorphism results from both formal and informal pressures exerted on organizations by other organizations upon which they are dependent and by cultural expectations in the society within which organizations function. Such pressures may be felt as force, as persuasion, or as invitations to join in collusion. » Trois registres, du plus au moins visible. (a) La commande directe de l'État : normes antipollution, comptabilité et embauche de comptables pour satisfaire au droit fiscal, chargés de l'égalité professionnelle « to fend off allegations of discrimination », programmes scolaires conformes aux standards de l'État. (b) L'environnement juridique et gestionnaire commun : cycle budgétaire, exercices comptables, rapports annuels, obligations de reporting « that ensure eligibility for the receipt of federal contracts or funds » ; et hors sphère publique, les filiales d'un conglomérat qui « must adopt accounting practices, performance evaluations, and budgetary plans that are compatible with the policies of the parent corporation ». (c) La forme la plus subtile, et la plus généralisable : Milofsky (1981) montre des associations de quartier « many of which are committed to participatory democracy » contraintes de se doter d'une hiérarchie pour obtenir le soutien de bailleurs eux-mêmes hiérarchisés ; Swidler (1979) montre des écoles libres obligées d'avoir un « principal » pour négocier avec l'inspection. Formule générale : « the need to lodge responsibility and managerial authority at least ceremonially in a formally defined role in order to interact with hierarchical organizations is a constant obstacle to the maintenance of egalitarian or collectivist organizational forms » (p. 151). Le coercitif ne suppose donc ni loi ni sanction : il suffit d'avoir un interlocuteur puissant dont la forme impose la vôtre."
+        },
+        {
+          "id": "SUP-2727e4f7f9f67391",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.conditions.intensified_by[6]",
+          "access": "n/a",
+          "text": "La limitation du nombre d'organisations et l'existence de fortes barrières fiscales et juridiques à l'entrée et à la sortie, qui atténuent la pression d'efficacité concurrentielle (p. 154)."
         }
       ]
     },
     {
-      "claim_id": "C014",
+      "claim_id": "C013",
       "locator": "sections[0].paragraphs[0]",
       "claim_text": "Le moteur de la rationalisation, écrivent les deux auteurs, s’est déplacé du marché concurrentiel vers l’État et les professions.",
       "supports": [
@@ -289,23 +269,23 @@
           "text": "L'article renverse la question habituelle de la théorie des organisations : « We ask, instead, why there is such startling homogeneity of organizational forms and practices; and we seek to explain homogeneity, not variation » (p. 148). Le concept qui nomme ce processus est repris de Hawley : « The concept that best captures the process of homogenization is isomorphism. In Hawley's (1968) description, isomorphism is a constraining process that forces one unit in a population to resemble other units that face the same set of environmental conditions » (p. 149). DiMaggio et Powell en distinguent deux types, à la suite de Meyer (1979) et Fennell (1980) : compétitif et institutionnel (p. 149). L'isomorphisme institutionnel est celui qui opère quand la ressemblance ne s'explique ni par la concurrence ni par l'efficacité : « Organizations compete not just for resources and customers, but for political power and institutional legitimacy, for social as well as economic fitness. The concept of institutional isomorphism is a useful tool for understanding the politics and ceremony that pervade much modern organizational life » (p. 150). Il se décompose en trois mécanismes « each with its own antecedents » : coercitif (influence politique et problème de légitimité), mimétique (réponses standard à l'incertitude), normatif (professionnalisation) — p. 150. La thèse d'ensemble est annoncée dès p. 147 : « bureaucratization and other forms of organizational change occur as the result of processes that make organizations more similar without necessarily making them more efficient ». Le titre de l'article la rattache à Weber : ce n'est pas la cage d'acier qui est contestée, c'est son moteur — « we suggest that the engine of organizational rationalization has shifted » (p. 147), de la concurrence marchande vers « the state and the professions, which have become the great rationalizers of the second half of the twentieth century » (p. 147)."
         },
         {
+          "id": "SUP-91dc7388087a9c48",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$._tour2_corrections.points_du_verdict_traites[0]",
+          "access": "n/a",
+          "text": "CONFIRMÉ — LOCATOR DU PASSAGE COURT (résumé, p. 147) : c'est bien la TROISIÈME phrase, et non la deuxième. Vérifié à l'image sur les deux témoins. Le résumé, imprimé en italique sous la signature, enchaîne : (1) « What makes organizations so similar? » (2) « We contend that the engine of rationalization and bureaucratization has moved from the competitive marketplace to the state and the professions. » (3) « Once a set of organizations emerges as a field, a paradox arises: rational actors make their organizations increasingly similar as they try to change them. » Corrigé dans key_quotation._forme_courte_150_signes.locator."
+        },
+        {
           "id": "SUP-7dbe4a706c4ead33",
           "origin": "evidence:evidence.primary-reading.json",
           "path": "$.evidence.common_misinterpretations[8].why_wrong",
           "access": "n/a",
           "text": "Il déplace le moteur, pas le diagnostic : « we suggest that the engine of organizational rationalization has shifted » (p. 147), de la concurrence marchande vers « the state and the professions ». Et il se clôt ainsi : « The foci and motive forces of bureaucratization (and, more broadly, homogenization in general) have, as we argued, changed since Weber's time. But the importance of understanding the trends to which he called attention has never been more immediate » (p. 158). L'isomorphisme compétitif, celui que le texte n'utilise pas, est d'ailleurs crédité d'expliquer « parts of the process of bureaucratization that Weber observed » (p. 150)."
-        },
-        {
-          "id": "SUP-a79a03c740d22ad8",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.mechanism[18]",
-          "access": "n/a",
-          "text": "18. CLÔTURE SUR WEBER, ET CE QU'ELLE DIT EXACTEMENT (p. 158). « The foci and motive forces of bureaucratization (and, more broadly, homogenization in general) have, as we argued, changed since Weber's time. But the importance of understanding the trends to which he called attention has never been more immediate. » Le diagnostic weberien n'est pas réfuté : son moteur est déplacé du marché concurrentiel vers l'État et les professions (p. 147)."
         }
       ]
     },
     {
-      "claim_id": "C015",
+      "claim_id": "C014",
       "locator": "sections[0].paragraphs[1]",
       "claim_text": "Le résumé de leur article pose le paradoxe en une phrase, ici rendue en français",
       "supports": [
@@ -322,13 +302,6 @@
           "path": "$.evidence.key_quotation._forme_courte_150_signes.reserve",
           "access": "n/a",
           "text": "Le passage vient du RÉSUMÉ de l'article, pas du corps du texte. Le résumé de l'ASR est signé des auteurs et imprimé p. 147, il est donc citable ; mais si l'application affiche une mention de localisation, elle doit dire « résumé, p. 147 » et non « p. 147 » seul."
-        },
-        {
-          "id": "SUP-b0e0c85cd3f378db",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.key_quotation._forme_courte_150_signes.AVERTISSEMENT",
-          "access": "n/a",
-          "text": "CE N'EST PAS UNE COUPE DE `key_quotation` : c'est un AUTRE passage, situé p. 147 et non p. 150. Je n'ai pas trouvé d'élision honnête de la citation principale sous 150 signes — toute coupe qui la ramène à cette longueur supprime deux des trois antécédents et laisse croire que seul l'isomorphisme normatif en a un, ce qui est exactement le contresens que la fiche doit empêcher. Ce fragment-ci est en revanche une coupe fidèle d'une phrase du résumé : la coupe porte sur la proposition d'ouverture « Once a set of organizations emerges as a field, a paradox arises: », et le fragment retenu se tient seul. Il est également en traduction interne (même traducteur, même statut)."
         },
         {
           "id": "SUP-2d2d6fdbe180f9c4",
@@ -354,10 +327,24 @@
       ]
     },
     {
-      "claim_id": "C016",
+      "claim_id": "C015",
       "locator": "sections[0].paragraphs[1]",
       "claim_text": "« […] des acteurs rationnels rendent leurs organisations toujours plus semblables à mesure qu’ils cherchent à les changer. »",
       "supports": [
+        {
+          "id": "SUP-255f6187479ca7f2",
+          "origin": "validated",
+          "path": "$.quotation.text",
+          "access": "n/a",
+          "text": "[…] des acteurs rationnels rendent leurs organisations toujours plus semblables à mesure qu'ils cherchent à les changer."
+        },
+        {
+          "id": "SUP-0787aa4e34b46c0c",
+          "origin": "validated",
+          "path": "$.quotation.original_text",
+          "access": "n/a",
+          "text": "[…] rational actors make their organizations increasingly similar as they try to change them."
+        },
         {
           "id": "SUP-6aa956ab45fc7633",
           "origin": "evidence:evidence.primary-reading.json",
@@ -373,18 +360,32 @@
           "text": "[…] rational actors make their organizations increasingly similar as they try to change them."
         },
         {
-          "id": "SUP-255f6187479ca7f2",
-          "origin": "validated",
-          "path": "$.quotation.text",
+          "id": "SUP-b0e0c85cd3f378db",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.key_quotation._forme_courte_150_signes.AVERTISSEMENT",
           "access": "n/a",
-          "text": "[…] des acteurs rationnels rendent leurs organisations toujours plus semblables à mesure qu'ils cherchent à les changer."
+          "text": "CE N'EST PAS UNE COUPE DE `key_quotation` : c'est un AUTRE passage, situé p. 147 et non p. 150. Je n'ai pas trouvé d'élision honnête de la citation principale sous 150 signes — toute coupe qui la ramène à cette longueur supprime deux des trois antécédents et laisse croire que seul l'isomorphisme normatif en a un, ce qui est exactement le contresens que la fiche doit empêcher. Ce fragment-ci est en revanche une coupe fidèle d'une phrase du résumé : la coupe porte sur la proposition d'ouverture « Once a set of organizations emerges as a field, a paradox arises: », et le fragment retenu se tient seul. Il est également en traduction interne (même traducteur, même statut)."
+        }
+      ]
+    },
+    {
+      "claim_id": "C016",
+      "locator": "sections[0].paragraphs[1]",
+      "claim_text": "Le mot qui porte est « rationnels ».",
+      "supports": [
+        {
+          "id": "SUP-a20ad581650c0746",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.key_quotation._alternatives_verbatim_meme_source[5].text",
+          "access": "n/a",
+          "text": "The theory of isomorphism addresses not the psychological states of actors but the structural determinants of the range of choices that actors perceive as rational or prudent."
         },
         {
-          "id": "SUP-0787aa4e34b46c0c",
-          "origin": "validated",
-          "path": "$.quotation.original_text",
+          "id": "SUP-38aa11ac413b2225",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.common_misinterpretations[3].why_wrong",
           "access": "n/a",
-          "text": "[…] rational actors make their organizations increasingly similar as they try to change them."
+          "text": "Les auteurs l'excluent explicitement, en note 5 p. 149 : « we are not suggesting that managers' actions are necessarily strategic in a long-range sense. Indeed, two of the three forms of isomorphism described below-mimetic and normative-involve managerial behaviors at the level of taken-for-granted assumptions rather than consciously strategic choices. » Et ils déplacent l'objet de la théorie : « we are more concerned with the menu of possible options that managers consider than with their motives for choosing particular alternatives […] The theory of isomorphism addresses not the psychological states of actors but the structural determinants of the range of choices that actors perceive as rational or prudent » (note 5, p. 149). La théorie porte sur le menu, pas sur le choix dans le menu."
         }
       ]
     },
@@ -393,6 +394,13 @@
       "locator": "sections[0].paragraphs[1]",
       "claim_text": "L’explication ne dit rien des motifs ni des états d’esprit des dirigeants : elle porte sur l’éventail des solutions qui leur paraissent raisonnables ou prudentes au moment où il faut décider.",
       "supports": [
+        {
+          "id": "SUP-a20ad581650c0746",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.key_quotation._alternatives_verbatim_meme_source[5].text",
+          "access": "n/a",
+          "text": "The theory of isomorphism addresses not the psychological states of actors but the structural determinants of the range of choices that actors perceive as rational or prudent."
+        },
         {
           "id": "SUP-38aa11ac413b2225",
           "origin": "evidence:evidence.primary-reading.json",
@@ -440,28 +448,14 @@
     {
       "claim_id": "C020",
       "locator": "sections[0].paragraphs[2]",
-      "claim_text": "Le mot n’est pas d’eux : ils le reprennent à l’écologie humaine, où l’isomorphisme désigne un processus contraignant qui force une unité à ressembler aux autres unités soumises aux mêmes conditions.",
+      "claim_text": "Le mot n’est pas d’eux : ils le reprennent à l’écologie humaine",
       "supports": [
-        {
-          "id": "SUP-b8ece3068d823a50",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.translation_notes[0].note",
-          "access": "n/a",
-          "text": "Le mot n'est pas forgé par les auteurs : ils le prennent à Hawley (1968), et sa définition dans le texte est celle d'un PROCESSUS DE CONTRAINTE, non d'un état de ressemblance — « isomorphism is a constraining process that forces one unit in a population to resemble other units that face the same set of environmental conditions » (p. 149). Le français « isomorphisme » se laisse volontiers lire comme un constat de similitude ; l'anglais du texte désigne la force qui la produit. Deuxième précaution : l'adjectif « institutionnel » sert ici à OPPOSER, à la suite de Meyer (1979) et Fennell (1980), un second type au premier, l'isomorphisme COMPÉTITIF (p. 149). Écrire « isomorphisme » sans qualificatif efface cette opposition, qui est le geste théorique de l'article."
-        },
         {
           "id": "SUP-6c178da6ee39a2b2",
           "origin": "evidence:evidence.primary-reading.json",
           "path": "$.attribution_input.term_origin.note",
           "access": "n/a",
           "text": "Ce que le texte lu attribue explicitement à d'autres : (a) le mot ISOMORPHISM et sa définition sont rapportés à Hawley — « In Hawley's (1968) description, isomorphism is a constraining process that forces one unit in a population to resemble other units that face the same set of environmental conditions » (p. 149) ; (b) la partition COMPÉTITIF / INSTITUTIONNEL est empruntée — « Following Meyer (1979) and Fennell (1980), we maintain that there are two types of isomorphism: competitive and institutional » (p. 149) ; (c) la vue institutionnelle de l'isomorphisme est dite « of the sort introduced by Kanter (1972:152-54) » (p. 150) ; (d) le mot STRUCTURATION est renvoyé à Giddens (1979) (p. 147) et sa décomposition en quatre parties à DiMaggio (1982) (p. 148). Ce que le texte revendique en propre : « We identify three mechanisms through which institutional isomorphic change occurs » (p. 150) et les douze hypothèses des p. 154-156. Écrire que DiMaggio et Powell ont « inventé l'isomorphisme » est faux sur ce texte ; écrire qu'ils ont établi la typologie des trois mécanismes est exact."
-        },
-        {
-          "id": "SUP-c67544e674ed84de",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.common_misinterpretations[6].why_wrong",
-          "access": "n/a",
-          "text": "L'article attribue le mot et sa définition à Hawley (1968), p. 149 ; la partition compétitif/institutionnel à Meyer (1979) et Fennell (1980), p. 149 ; la vue institutionnelle de l'isomorphisme à Kanter (1972:152-54), p. 150 ; la notion de structuration à Giddens (1979), p. 147 ; et la décomposition du champ en quatre composants à DiMaggio (1982), p. 148, c'est-à-dire à un travail antérieur d'un seul des deux auteurs. Ce que l'article établit en propre : la typologie des trois mécanismes (p. 150) et les douze hypothèses (p. 154-156)."
         },
         {
           "id": "SUP-3df5b8b7689335bb",
@@ -471,16 +465,44 @@
           "text": "VÉRIFIÉ AU TOUR 2, ET C'EST UN RÉSULTAT NÉGATIF À TENIR. L'article de 1983 n'écrit NULLE PART que Hawley aurait forgé, introduit ou employé le premier le mot « isomorphism ». Il écrit « In Hawley's (1968) description » (p. 149) — une description reprise —, et sa bibliographie renvoie p. 159 à une entrée d'encyclopédie : « Hawley, Amos / 1968 “Human ecology.” Pp. 328-37 in David L. Sills (ed.), International Encyclopedia of the Social Sciences. New York: Macmillan. » Les quatre occurrences du nom « Hawley » dans l'article ont été relevées : aucune ne porte « coined », « introduced » ni « first used » (et l'une d'elles vise un homonyme, Ellis W. Hawley, 1966, p. 156). CONSÉQUENCE POUR L'AFFICHAGE : écrire « coined_by : Amos Hawley » dans un champ projeté seul sur une carte fera lire « Hawley a forgé le mot isomorphisme », ce que CE texte n'établit pas. Ce qu'il établit, lui, est plus étroit et plus sûr : la DÉFINITION que DiMaggio et Powell adoptent est empruntée à Hawley. Le point d'origine du mot lui-même — mathématiques, biologie des populations, écologie humaine — n'est pas tranché par cette source et ne peut pas l'être ici."
         },
         {
-          "id": "SUP-92b52d12447dc4d4",
+          "id": "SUP-042f4406ac12761c",
           "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.concept_definition",
+          "path": "$._tour2_corrections.points_du_verdict_traites[1]",
           "access": "n/a",
-          "text": "L'article renverse la question habituelle de la théorie des organisations : « We ask, instead, why there is such startling homogeneity of organizational forms and practices; and we seek to explain homogeneity, not variation » (p. 148). Le concept qui nomme ce processus est repris de Hawley : « The concept that best captures the process of homogenization is isomorphism. In Hawley's (1968) description, isomorphism is a constraining process that forces one unit in a population to resemble other units that face the same set of environmental conditions » (p. 149). DiMaggio et Powell en distinguent deux types, à la suite de Meyer (1979) et Fennell (1980) : compétitif et institutionnel (p. 149). L'isomorphisme institutionnel est celui qui opère quand la ressemblance ne s'explique ni par la concurrence ni par l'efficacité : « Organizations compete not just for resources and customers, but for political power and institutional legitimacy, for social as well as economic fitness. The concept of institutional isomorphism is a useful tool for understanding the politics and ceremony that pervade much modern organizational life » (p. 150). Il se décompose en trois mécanismes « each with its own antecedents » : coercitif (influence politique et problème de légitimité), mimétique (réponses standard à l'incertitude), normatif (professionnalisation) — p. 150. La thèse d'ensemble est annoncée dès p. 147 : « bureaucratization and other forms of organizational change occur as the result of processes that make organizations more similar without necessarily making them more efficient ». Le titre de l'article la rattache à Weber : ce n'est pas la cage d'acier qui est contestée, c'est son moteur — « we suggest that the engine of organizational rationalization has shifted » (p. 147), de la concurrence marchande vers « the state and the professions, which have become the great rationalizers of the second half of the twentieth century » (p. 147)."
+          "text": "CONFIRMÉ SUR LE TEXTE PRIMAIRE — HAWLEY N'EST CRÉDITÉ D'AUCUNE FORGE DE MOT. P. 149 : « In Hawley's (1968) description, isomorphism is a constraining process that forces one unit in a population to resemble other units that face the same set of environmental conditions » — le mot du texte est DESCRIPTION. Bibliographie p. 159, relevée mot pour mot : « Hawley, Amos / 1968 “Human ecology.” Pp. 328-37 in David L. Sills (ed.), International Encyclopedia of the Social Sciences. New York: Macmillan. » Un renvoi à une « description » et une entrée d'encyclopédie n'établissent pas une invention de terme. Relevé complémentaire : sur les quatre occurrences du nom « Hawley » dans l'article, une renvoie à Amos Hawley p. 149 (« Hannan and Freeman (1977) have significantly extended Hawley's ideas »), une à un homonyme sans rapport (Ellis W. Hawley, 1966, sur le New Deal, p. 156), deux sont bibliographiques. Aucune ne porte « coined », « introduced » ou « first used ». PRÉCISION DE PÉRIMÈTRE : le champ fautif « coined_by : Amos Hawley » signalé par le contrôleur ne se trouve PAS dans ce fragment — il y porte « PARTAGÉ — voir note » depuis le tour 1. La correction du champ projeté est en aval. J'ai renforcé la note de `term_origin` pour qu'aucune agrégation ne puisse en tirer « Hawley a forgé le mot »."
+        },
+        {
+          "id": "SUP-c67544e674ed84de",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.common_misinterpretations[6].why_wrong",
+          "access": "n/a",
+          "text": "L'article attribue le mot et sa définition à Hawley (1968), p. 149 ; la partition compétitif/institutionnel à Meyer (1979) et Fennell (1980), p. 149 ; la vue institutionnelle de l'isomorphisme à Kanter (1972:152-54), p. 150 ; la notion de structuration à Giddens (1979), p. 147 ; et la décomposition du champ en quatre composants à DiMaggio (1982), p. 148, c'est-à-dire à un travail antérieur d'un seul des deux auteurs. Ce que l'article établit en propre : la typologie des trois mécanismes (p. 150) et les douze hypothèses (p. 154-156)."
         }
       ]
     },
     {
       "claim_id": "C021",
+      "locator": "sections[0].paragraphs[2]",
+      "claim_text": "où l’isomorphisme désigne un processus contraignant qui force une unité à ressembler aux autres unités soumises aux mêmes conditions",
+      "supports": [
+        {
+          "id": "SUP-92b52d12447dc4d4",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.concept_definition",
+          "access": "n/a",
+          "text": "L'article renverse la question habituelle de la théorie des organisations : « We ask, instead, why there is such startling homogeneity of organizational forms and practices; and we seek to explain homogeneity, not variation » (p. 148). Le concept qui nomme ce processus est repris de Hawley : « The concept that best captures the process of homogenization is isomorphism. In Hawley's (1968) description, isomorphism is a constraining process that forces one unit in a population to resemble other units that face the same set of environmental conditions » (p. 149). DiMaggio et Powell en distinguent deux types, à la suite de Meyer (1979) et Fennell (1980) : compétitif et institutionnel (p. 149). L'isomorphisme institutionnel est celui qui opère quand la ressemblance ne s'explique ni par la concurrence ni par l'efficacité : « Organizations compete not just for resources and customers, but for political power and institutional legitimacy, for social as well as economic fitness. The concept of institutional isomorphism is a useful tool for understanding the politics and ceremony that pervade much modern organizational life » (p. 150). Il se décompose en trois mécanismes « each with its own antecedents » : coercitif (influence politique et problème de légitimité), mimétique (réponses standard à l'incertitude), normatif (professionnalisation) — p. 150. La thèse d'ensemble est annoncée dès p. 147 : « bureaucratization and other forms of organizational change occur as the result of processes that make organizations more similar without necessarily making them more efficient ». Le titre de l'article la rattache à Weber : ce n'est pas la cage d'acier qui est contestée, c'est son moteur — « we suggest that the engine of organizational rationalization has shifted » (p. 147), de la concurrence marchande vers « the state and the professions, which have become the great rationalizers of the second half of the twentieth century » (p. 147)."
+        },
+        {
+          "id": "SUP-b8ece3068d823a50",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.translation_notes[0].note",
+          "access": "n/a",
+          "text": "Le mot n'est pas forgé par les auteurs : ils le prennent à Hawley (1968), et sa définition dans le texte est celle d'un PROCESSUS DE CONTRAINTE, non d'un état de ressemblance — « isomorphism is a constraining process that forces one unit in a population to resemble other units that face the same set of environmental conditions » (p. 149). Le français « isomorphisme » se laisse volontiers lire comme un constat de similitude ; l'anglais du texte désigne la force qui la produit. Deuxième précaution : l'adjectif « institutionnel » sert ici à OPPOSER, à la suite de Meyer (1979) et Fennell (1980), un second type au premier, l'isomorphisme COMPÉTITIF (p. 149). Écrire « isomorphisme » sans qualificatif efface cette opposition, qui est le geste théorique de l'article."
+        }
+      ]
+    },
+    {
+      "claim_id": "C022",
       "locator": "sections[0].paragraphs[2]",
       "claim_text": "La nuance compte, car le français invite à y lire un état de ressemblance là où le texte nomme la force qui la produit.",
       "supports": [
@@ -494,7 +516,7 @@
       ]
     },
     {
-      "claim_id": "C022",
+      "claim_id": "C023",
       "locator": "sections[0].paragraphs[2]",
       "claim_text": "Quant à l’adjectif, il sert à opposer : il y a l’isomorphisme compétitif, celui de la sélection par le marché, et l’institutionnel, qui joue quand les organisations se disputent moins des clients que de la légitimité.",
       "supports": [
@@ -513,6 +535,13 @@
           "text": "6. LE PARTAGE ENTRE DEUX ISOMORPHISMES (p. 149-150). « Following Meyer (1979) and Fennell (1980), we maintain that there are two types of isomorphism: competitive and institutional. » L'isomorphisme compétitif suppose « a system rationality that emphasizes market competition, niche change, and fitness measures » ; il est « most relevant for those fields in which free and open competition exists », « explains parts of the process of bureaucratization that Weber observed, and may apply to early adoption of innovation, but it does not present a fully adequate picture of the modern world of organizations » (p. 150). C'est le domaine de validité, énoncé par les auteurs eux-mêmes : là où la concurrence est libre et ouverte, on n'a pas besoin de leur mécanisme."
         },
         {
+          "id": "SUP-7dff755e014bcbd1",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.translation_notes[6].note",
+          "access": "n/a",
+          "text": "Toujours au sens institutionnel, et explicitement mis sur le même plan qu'une ressource : « Organizations compete not just for resources and customers, but for political power and institutional legitimacy, for social as well as economic fitness » (p. 150). Ne pas rendre par « légalité » ni par « bonne réputation » seule : le texte énumère ce que la légitimité procure — faciliter les transactions, attirer du personnel de carrière, être reconnu, entrer dans les catégories administratives qui ouvrent droit aux subventions et aux marchés (p. 153-154)."
+        },
+        {
           "id": "SUP-92b52d12447dc4d4",
           "origin": "evidence:evidence.primary-reading.json",
           "path": "$.evidence.concept_definition",
@@ -522,7 +551,7 @@
       ]
     },
     {
-      "claim_id": "C023",
+      "claim_id": "C024",
       "locator": "sections[0].paragraphs[3]",
       "claim_text": "Les premiers à adopter une nouveauté le font en général pour faire mieux ; mais à mesure qu’elle se répand, un seuil est franchi au-delà duquel l’adopter procure de la légitimité plus qu’un gain de performance.",
       "supports": [
@@ -534,6 +563,13 @@
           "text": "3. LE BASCULEMENT — MÊME PRATIQUE, RAISON D'ADOPTER CHANGÉE (p. 148). C'est le pivot de tout l'article, et il est daté dans la vie d'une pratique, pas dans celle d'une organisation. « Early adopters of organizational innovations are commonly driven by a desire to improve performance. But new practices can become, in Selznick's words (1957:17), “infused with value beyond the technical requirements of the task at hand.” As an innovation spreads, a threshold is reached beyond which adoption provides legitimacy rather than improves performance (Meyer and Rowan, 1977). » Avant le seuil, on adopte pour faire mieux ; après le seuil, on adopte pour être reconnu comme une organisation convenable. Rien n'a changé dans la pratique : ce qui a changé, c'est le nombre de ceux qui l'ont déjà adoptée."
         },
         {
+          "id": "SUP-d6d3ba395996729a",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.key_quotation._alternatives_verbatim_meme_source[1].text",
+          "access": "n/a",
+          "text": "As an innovation spreads, a threshold is reached beyond which adoption provides legitimacy rather than improves performance (Meyer and Rowan, 1977). Strategies that are rational for individual organizations may not be rational if adopted by large numbers. Yet the very fact that they are normatively sanctioned increases the likelihood of their adoption."
+        },
+        {
           "id": "SUP-b921e3f65e245f29",
           "origin": "evidence:evidence.primary-reading.json",
           "path": "$.evidence.conditions.appears_when[2]",
@@ -543,7 +579,7 @@
       ]
     },
     {
-      "claim_id": "C024",
+      "claim_id": "C025",
       "locator": "sections[0].paragraphs[3]",
       "claim_text": "La pratique n’a pas changé ; ce qui a changé, c’est le nombre de ceux qui l’ont déjà adoptée.",
       "supports": [
@@ -557,7 +593,7 @@
       ]
     },
     {
-      "claim_id": "C025",
+      "claim_id": "C026",
       "locator": "sections[0].paragraphs[3]",
       "claim_text": "L’article indique la marque à chercher, empruntée à des travaux qu’il cite",
       "supports": [
@@ -574,18 +610,11 @@
           "path": "$.evidence.limitations[4]",
           "access": "n/a",
           "text": "Les travaux empiriques sur lesquels l'article s'appuie (Zucker & Tolbert 1981, Marshall Meyer 1981, Fennell 1980, March & March 1977, Hirsch & Whisler 1982) n'ont pas été ouverts. Ce que la fiche en dit est ce que DiMaggio et Powell en disent : une paraphrase d'auteurs par d'autres auteurs, pas un résultat vérifié."
-        },
-        {
-          "id": "SUP-de978772e91c42c0",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.common_misinterpretations[7].why_wrong",
-          "access": "n/a",
-          "text": "Il ne conduit aucun test. « While an empirical test of such predictions is beyond the scope of this paper, the ultimate value of our perspective will lie in its predictive utility » (p. 154). Les auteurs indiquent même ce qu'ils n'ont pas traité : « We have not discussed the expected nonlinearities and ceiling effects in the relationships that we have posited. Nor have we addressed the issue of the indicators that one must use to measure homogeneity » (p. 156). Les études citées (Zucker & Tolbert, Marshall Meyer, Coser-Kadushin-Powell, Rothman, Starr, Tyack, Katz, Barnouw, DiMaggio) sont des travaux d'autrui, mobilisés comme illustrations."
         }
       ]
     },
     {
-      "claim_id": "C026",
+      "claim_id": "C027",
       "locator": "sections[0].paragraphs[3]",
       "claim_text": "dans la diffusion de la réforme de la fonction publique aux États-Unis, les premières adoptions s’expliquent par les caractéristiques propres de la ville qui réforme, les tardives ne s’expliquent plus par elles, mais par ce qui est devenu entretemps la forme légitime d’une administration municipale",
       "supports": [
@@ -599,9 +628,9 @@
       ]
     },
     {
-      "claim_id": "C027",
+      "claim_id": "C028",
       "locator": "sections[1].paragraphs[0]",
-      "claim_text": "Le premier mécanisme est le plus visible.",
+      "claim_text": "Le premier mécanisme est celui de la dépendance.",
       "supports": [
         {
           "id": "SUP-50e0b1091ab542b2",
@@ -609,14 +638,7 @@
           "path": "$.evidence.mechanism[7]",
           "access": "n/a",
           "text": "7. TROIS MÉCANISMES, TROIS ANTÉCÉDENTS DISTINCTS (p. 150). « We identify three mechanisms through which institutional isomorphic change occurs, each with its own antecedents: 1) coercive isomorphism that stems from political influence and the problem of legitimacy; 2) mimetic isomorphism resulting from standard responses to uncertainty; and 3) normative isomorphism, associated with professionalization. » Avertissement immédiat des auteurs, qu'on oublie régulièrement de reproduire : « This typology is an analytic one: the types are not always empirically distinct. […] Yet, while the three types intermingle in empirical setting, they tend to derive from different conditions and may lead to different outcomes. » La typologie sert à séparer des CAUSES, pas à classer des cas."
-        }
-      ]
-    },
-    {
-      "claim_id": "C028",
-      "locator": "sections[1].paragraphs[0]",
-      "claim_text": "Une organisation qui dépend d’une autre pour exister, financement, autorisation, agrément, se voit imposer des formes qu’elle n’a pas choisies : cycle budgétaire, exercice comptable, rapport annuel, états à produire pour rester éligible aux contrats et aux subventions publics.",
-      "supports": [
+        },
         {
           "id": "SUP-b51f6e4eea07691b",
           "origin": "evidence:evidence.primary-reading.json",
@@ -628,6 +650,27 @@
     },
     {
       "claim_id": "C029",
+      "locator": "sections[1].paragraphs[0]",
+      "claim_text": "Une organisation qui dépend d’une autre pour exister, financement, autorisation, agrément, se voit imposer des formes qu’elle n’a pas choisies : cycle budgétaire, exercice comptable, rapport annuel, états à produire pour rester éligible aux contrats et aux subventions publics.",
+      "supports": [
+        {
+          "id": "SUP-b51f6e4eea07691b",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[8]",
+          "access": "n/a",
+          "text": "8. MÉCANISME 1 — COERCITIF : la forme de votre interlocuteur devient la vôtre (p. 150-151). Définition : « Coercive isomorphism results from both formal and informal pressures exerted on organizations by other organizations upon which they are dependent and by cultural expectations in the society within which organizations function. Such pressures may be felt as force, as persuasion, or as invitations to join in collusion. » Trois registres, du plus au moins visible. (a) La commande directe de l'État : normes antipollution, comptabilité et embauche de comptables pour satisfaire au droit fiscal, chargés de l'égalité professionnelle « to fend off allegations of discrimination », programmes scolaires conformes aux standards de l'État. (b) L'environnement juridique et gestionnaire commun : cycle budgétaire, exercices comptables, rapports annuels, obligations de reporting « that ensure eligibility for the receipt of federal contracts or funds » ; et hors sphère publique, les filiales d'un conglomérat qui « must adopt accounting practices, performance evaluations, and budgetary plans that are compatible with the policies of the parent corporation ». (c) La forme la plus subtile, et la plus généralisable : Milofsky (1981) montre des associations de quartier « many of which are committed to participatory democracy » contraintes de se doter d'une hiérarchie pour obtenir le soutien de bailleurs eux-mêmes hiérarchisés ; Swidler (1979) montre des écoles libres obligées d'avoir un « principal » pour négocier avec l'inspection. Formule générale : « the need to lodge responsibility and managerial authority at least ceremonially in a formally defined role in order to interact with hierarchical organizations is a constant obstacle to the maintenance of egalitarian or collectivist organizational forms » (p. 151). Le coercitif ne suppose donc ni loi ni sanction : il suffit d'avoir un interlocuteur puissant dont la forme impose la vôtre."
+        },
+        {
+          "id": "SUP-77b37e726ba999cf",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.conditions.intensified_by[0]",
+          "access": "n/a",
+          "text": "La dépendance à une autre organisation (Hypothèse A-1, p. 154) : « The greater the dependence of an organization on another organization, the more similar it will become to that organization in structure, climate, and behavioral focus. »"
+        }
+      ]
+    },
+    {
+      "claim_id": "C030",
       "locator": "sections[1].paragraphs[0]",
       "claim_text": "Rien de tout cela ne sort de sa mission, tout vient de son interlocuteur.",
       "supports": [
@@ -641,7 +684,7 @@
       ]
     },
     {
-      "claim_id": "C030",
+      "claim_id": "C031",
       "locator": "sections[1].paragraphs[0]",
       "claim_text": "Et la pression n’a pas besoin d’être juridique : elle peut se faire sentir comme une force, comme une persuasion, ou comme une invitation à s’entendre.",
       "supports": [
@@ -653,23 +696,23 @@
           "text": "8. MÉCANISME 1 — COERCITIF : la forme de votre interlocuteur devient la vôtre (p. 150-151). Définition : « Coercive isomorphism results from both formal and informal pressures exerted on organizations by other organizations upon which they are dependent and by cultural expectations in the society within which organizations function. Such pressures may be felt as force, as persuasion, or as invitations to join in collusion. » Trois registres, du plus au moins visible. (a) La commande directe de l'État : normes antipollution, comptabilité et embauche de comptables pour satisfaire au droit fiscal, chargés de l'égalité professionnelle « to fend off allegations of discrimination », programmes scolaires conformes aux standards de l'État. (b) L'environnement juridique et gestionnaire commun : cycle budgétaire, exercices comptables, rapports annuels, obligations de reporting « that ensure eligibility for the receipt of federal contracts or funds » ; et hors sphère publique, les filiales d'un conglomérat qui « must adopt accounting practices, performance evaluations, and budgetary plans that are compatible with the policies of the parent corporation ». (c) La forme la plus subtile, et la plus généralisable : Milofsky (1981) montre des associations de quartier « many of which are committed to participatory democracy » contraintes de se doter d'une hiérarchie pour obtenir le soutien de bailleurs eux-mêmes hiérarchisés ; Swidler (1979) montre des écoles libres obligées d'avoir un « principal » pour négocier avec l'inspection. Formule générale : « the need to lodge responsibility and managerial authority at least ceremonially in a formally defined role in order to interact with hierarchical organizations is a constant obstacle to the maintenance of egalitarian or collectivist organizational forms » (p. 151). Le coercitif ne suppose donc ni loi ni sanction : il suffit d'avoir un interlocuteur puissant dont la forme impose la vôtre."
         },
         {
-          "id": "SUP-76d951e58b20ac8b",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.translation_notes[3].note",
-          "access": "n/a",
-          "text": "Le français « coercitif » évoque la loi et la sanction. Le texte est nettement plus large : les pressions « may be felt as force, as persuasion, or as invitations to join in collusion » (p. 150), et elles viennent aussi bien d'autres organisations dont on dépend que « by cultural expectations in the society within which organizations function ». Les exemples les plus parlants de l'article ne sont pas juridiques : une association de quartier attachée à la démocratie participative se dote d'une hiérarchie pour être finançable par un bailleur hiérarchisé (p. 151). Traduire par « isomorphisme réglementaire » serait un contresens de périmètre."
-        },
-        {
           "id": "SUP-ad9ab5bf2688d0d7",
           "origin": "evidence:evidence.primary-reading.json",
           "path": "$.evidence.conditions.appears_when[3]",
           "access": "n/a",
           "text": "Pour le mécanisme coercitif : il existe une organisation dont on dépend, ou une attente culturelle de la société environnante (p. 150). La pression peut être « force », « persuasion » ou « invitations to join in collusion » — elle n'a pas besoin d'être juridique."
+        },
+        {
+          "id": "SUP-76d951e58b20ac8b",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.translation_notes[3].note",
+          "access": "n/a",
+          "text": "Le français « coercitif » évoque la loi et la sanction. Le texte est nettement plus large : les pressions « may be felt as force, as persuasion, or as invitations to join in collusion » (p. 150), et elles viennent aussi bien d'autres organisations dont on dépend que « by cultural expectations in the society within which organizations function ». Les exemples les plus parlants de l'article ne sont pas juridiques : une association de quartier attachée à la démocratie participative se dote d'une hiérarchie pour être finançable par un bailleur hiérarchisé (p. 151). Traduire par « isomorphisme réglementaire » serait un contresens de périmètre."
         }
       ]
     },
     {
-      "claim_id": "C031",
+      "claim_id": "C032",
       "locator": "sections[1].paragraphs[1]",
       "claim_text": "Ce qui rend ce mécanisme redoutable, c’est qu’il atteint jusqu’aux organisations qui refusent la forme par principe.",
       "supports": [
@@ -690,9 +733,9 @@
       ]
     },
     {
-      "claim_id": "C032",
+      "claim_id": "C033",
       "locator": "sections[1].paragraphs[1]",
-      "claim_text": "L’article rapporte le cas d’associations de quartier attachées à la démocratie participative et contraintes de se doter d’une hiérarchie pour obtenir le soutien de bailleurs eux-mêmes hiérarchisés",
+      "claim_text": "L’article rapporte le cas d’associations de quartier attachées à la démocratie participative et contraintes de se doter d’une hiérarchie pour obtenir le soutien de bailleurs eux-mêmes hiérarchisés,",
       "supports": [
         {
           "id": "SUP-b51f6e4eea07691b",
@@ -711,9 +754,9 @@
       ]
     },
     {
-      "claim_id": "C033",
+      "claim_id": "C034",
       "locator": "sections[1].paragraphs[1]",
-      "claim_text": "et celui d’écoles alternatives qui ont dû se donner un directeur pour pouvoir traiter avec l’administration scolaire",
+      "claim_text": "et celui d’écoles alternatives qui ont dû se donner un directeur pour pouvoir traiter avec l’administration scolaire.",
       "supports": [
         {
           "id": "SUP-b51f6e4eea07691b",
@@ -725,7 +768,7 @@
       ]
     },
     {
-      "claim_id": "C034",
+      "claim_id": "C035",
       "locator": "sections[1].paragraphs[1]",
       "claim_text": "Les auteurs en tirent une règle : devoir loger la responsabilité dans un rôle formellement défini, fût-ce pour la forme, afin de pouvoir traiter avec des organisations hiérarchiques, est un obstacle constant au maintien de formes égalitaires.",
       "supports": [
@@ -739,7 +782,7 @@
       ]
     },
     {
-      "claim_id": "C035",
+      "claim_id": "C036",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "Le deuxième mécanisme joue quand une organisation ne sait pas très bien quoi faire : techniques mal comprises, buts ambigus, environnement qui rend la situation illisible.",
       "supports": [
@@ -767,7 +810,7 @@
       ]
     },
     {
-      "claim_id": "C036",
+      "claim_id": "C037",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "Chercher soi-même la bonne solution coûte cher, reprendre une solution déjà disponible coûte peu.",
       "supports": [
@@ -781,7 +824,7 @@
       ]
     },
     {
-      "claim_id": "C037",
+      "claim_id": "C038",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "Le terme des auteurs n’est pas l’imitation mais la prise pour modèle, et la différence porte : imiter suppose l’intention de ressembler, prendre modèle suppose seulement qu’un modèle soit là.",
       "supports": [
@@ -793,11 +836,11 @@
           "text": "Le terme technique de l'article n'est pas « imitation » mais MODELING : « Modeling, as we use the term, is a response to uncertainty » (p. 151). La différence porte : l'imitation suppose une intention de ressembler, le modeling suppose seulement qu'un modèle soit disponible — « The modeled organization may be unaware of the modeling or may have no desire to be copied » (p. 151). Le français n'a pas d'équivalent commode ; « prendre modèle sur » ou « modelage » sont plus fidèles que « imiter ». Le mot « imitation » apparaît d'ailleurs surtout dans les citations d'autrui (Alchian 1950, Knoke 1982)."
         },
         {
-          "id": "SUP-5510b74d3b6c2b74",
+          "id": "SUP-032a4a1777338ec2",
           "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.mechanism[9]",
+          "path": "$.evidence.key_quotation._alternatives_verbatim_meme_source[0].text",
           "access": "n/a",
-          "text": "9. MÉCANISME 2 — MIMÉTIQUE : l'incertitude, pas l'admiration (p. 151-152). Antécédent : « Uncertainty is also a powerful force that encourages imitation. When organizational technologies are poorly understood (March and Olsen, 1976), when goals are ambiguous, or when the environment creates symbolic uncertainty, organizations may model themselves on other organizations. » Économie du geste : « when an organization faces a problem with ambiguous causes or unclear solutions, problemistic search may yield a viable solution with little expense (Cyert and March, 1963) ». Précision décisive, et souvent perdue : « Modeling, as we use the term, is a response to uncertainty. The modeled organization may be unaware of the modeling or may have no desire to be copied; it merely serves as a convenient source of practices that the borrowing organization may use » (p. 151). Le modèle n'est donc pas un maître : c'est une ressource disponible. Vecteurs de diffusion : « unintentionally, indirectly through employee transfer or turnover, or explicitly by organizations such as consulting firms or industry trade associations » (p. 151). CONTRAINTE D'OFFRE, qui explique pourquoi la copie converge : « despite considerable search for diversity there is relatively little variation to be selected from » (la phrase enjambe la fin de la p. 151 et le début de la p. 152 : elle se coupe sur « despite con- ») ; « Large organizations choose from a relatively small set of major consulting firms, which, like Johnny Appleseeds, spread a few organizational models throughout the land » (p. 152). BIAIS DE VISIBILITÉ : « Such models are powerful because structural changes are observable, whereas changes in policy and strategy are less easily noticed » (p. 152) — on copie ce qui se voit. CRITÈRE DE SÉLECTION DU MODÈLE : « Organizations tend to model themselves after similar organizations in their field that they perceive to be more legitimate or successful », et « The ubiquity of certain kinds of structural arrangements can more likely be credited to the universality of mimetic processes than to any concrete evidence that the adopted models enhance efficiency » (p. 152). Cas exemplaire donné par le texte : une grande station de télévision publique passe, sur conseil d'un cabinet, d'une organisation fonctionnelle à une structure multidivisionnelle ; ses dirigeants doutent du gain d'efficacité et constatent des doublons, mais y voient un signal adressé aux entreprises partenaires — « the sleepy nonprofit station was becoming more business-minded » (p. 152)."
+          "text": "Modeling, as we use the term, is a response to uncertainty. The modeled organization may be unaware of the modeling or may have no desire to be copied; it merely serves as a convenient source of practices that the borrowing organization may use."
         },
         {
           "id": "SUP-3a8d49d3c23d3384",
@@ -809,28 +852,28 @@
       ]
     },
     {
-      "claim_id": "C038",
+      "claim_id": "C039",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "L’organisation copiée peut d’ailleurs ignorer qu’elle l’est, ou n’avoir aucun désir de l’être : elle sert de réserve de pratiques commodes, pas de maître.",
       "supports": [
+        {
+          "id": "SUP-032a4a1777338ec2",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.key_quotation._alternatives_verbatim_meme_source[0].text",
+          "access": "n/a",
+          "text": "Modeling, as we use the term, is a response to uncertainty. The modeled organization may be unaware of the modeling or may have no desire to be copied; it merely serves as a convenient source of practices that the borrowing organization may use."
+        },
         {
           "id": "SUP-5510b74d3b6c2b74",
           "origin": "evidence:evidence.primary-reading.json",
           "path": "$.evidence.mechanism[9]",
           "access": "n/a",
           "text": "9. MÉCANISME 2 — MIMÉTIQUE : l'incertitude, pas l'admiration (p. 151-152). Antécédent : « Uncertainty is also a powerful force that encourages imitation. When organizational technologies are poorly understood (March and Olsen, 1976), when goals are ambiguous, or when the environment creates symbolic uncertainty, organizations may model themselves on other organizations. » Économie du geste : « when an organization faces a problem with ambiguous causes or unclear solutions, problemistic search may yield a viable solution with little expense (Cyert and March, 1963) ». Précision décisive, et souvent perdue : « Modeling, as we use the term, is a response to uncertainty. The modeled organization may be unaware of the modeling or may have no desire to be copied; it merely serves as a convenient source of practices that the borrowing organization may use » (p. 151). Le modèle n'est donc pas un maître : c'est une ressource disponible. Vecteurs de diffusion : « unintentionally, indirectly through employee transfer or turnover, or explicitly by organizations such as consulting firms or industry trade associations » (p. 151). CONTRAINTE D'OFFRE, qui explique pourquoi la copie converge : « despite considerable search for diversity there is relatively little variation to be selected from » (la phrase enjambe la fin de la p. 151 et le début de la p. 152 : elle se coupe sur « despite con- ») ; « Large organizations choose from a relatively small set of major consulting firms, which, like Johnny Appleseeds, spread a few organizational models throughout the land » (p. 152). BIAIS DE VISIBILITÉ : « Such models are powerful because structural changes are observable, whereas changes in policy and strategy are less easily noticed » (p. 152) — on copie ce qui se voit. CRITÈRE DE SÉLECTION DU MODÈLE : « Organizations tend to model themselves after similar organizations in their field that they perceive to be more legitimate or successful », et « The ubiquity of certain kinds of structural arrangements can more likely be credited to the universality of mimetic processes than to any concrete evidence that the adopted models enhance efficiency » (p. 152). Cas exemplaire donné par le texte : une grande station de télévision publique passe, sur conseil d'un cabinet, d'une organisation fonctionnelle à une structure multidivisionnelle ; ses dirigeants doutent du gain d'efficacité et constatent des doublons, mais y voient un signal adressé aux entreprises partenaires — « the sleepy nonprofit station was becoming more business-minded » (p. 152)."
-        },
-        {
-          "id": "SUP-f60c06819fdabdbc",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.translation_notes[4].note",
-          "access": "n/a",
-          "text": "Le terme technique de l'article n'est pas « imitation » mais MODELING : « Modeling, as we use the term, is a response to uncertainty » (p. 151). La différence porte : l'imitation suppose une intention de ressembler, le modeling suppose seulement qu'un modèle soit disponible — « The modeled organization may be unaware of the modeling or may have no desire to be copied » (p. 151). Le français n'a pas d'équivalent commode ; « prendre modèle sur » ou « modelage » sont plus fidèles que « imiter ». Le mot « imitation » apparaît d'ailleurs surtout dans les citations d'autrui (Alchian 1950, Knoke 1982)."
         }
       ]
     },
     {
-      "claim_id": "C039",
+      "claim_id": "C040",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "Les modèles circulent par la mobilité des salariés, par les cabinets de conseil, par les associations professionnelles.",
       "supports": [
@@ -844,7 +887,7 @@
       ]
     },
     {
-      "claim_id": "C040",
+      "claim_id": "C041",
       "locator": "sections[2].paragraphs[1]",
       "claim_text": "Le texte donne trois raisons.",
       "supports": [
@@ -858,7 +901,7 @@
       ]
     },
     {
-      "claim_id": "C041",
+      "claim_id": "C042",
       "locator": "sections[2].paragraphs[1]",
       "claim_text": "Le choix est pauvre : malgré une recherche considérable de diversité, il y a peu de variation où puiser.",
       "supports": [
@@ -868,11 +911,18 @@
           "path": "$.evidence.mechanism[9]",
           "access": "n/a",
           "text": "9. MÉCANISME 2 — MIMÉTIQUE : l'incertitude, pas l'admiration (p. 151-152). Antécédent : « Uncertainty is also a powerful force that encourages imitation. When organizational technologies are poorly understood (March and Olsen, 1976), when goals are ambiguous, or when the environment creates symbolic uncertainty, organizations may model themselves on other organizations. » Économie du geste : « when an organization faces a problem with ambiguous causes or unclear solutions, problemistic search may yield a viable solution with little expense (Cyert and March, 1963) ». Précision décisive, et souvent perdue : « Modeling, as we use the term, is a response to uncertainty. The modeled organization may be unaware of the modeling or may have no desire to be copied; it merely serves as a convenient source of practices that the borrowing organization may use » (p. 151). Le modèle n'est donc pas un maître : c'est une ressource disponible. Vecteurs de diffusion : « unintentionally, indirectly through employee transfer or turnover, or explicitly by organizations such as consulting firms or industry trade associations » (p. 151). CONTRAINTE D'OFFRE, qui explique pourquoi la copie converge : « despite considerable search for diversity there is relatively little variation to be selected from » (la phrase enjambe la fin de la p. 151 et le début de la p. 152 : elle se coupe sur « despite con- ») ; « Large organizations choose from a relatively small set of major consulting firms, which, like Johnny Appleseeds, spread a few organizational models throughout the land » (p. 152). BIAIS DE VISIBILITÉ : « Such models are powerful because structural changes are observable, whereas changes in policy and strategy are less easily noticed » (p. 152) — on copie ce qui se voit. CRITÈRE DE SÉLECTION DU MODÈLE : « Organizations tend to model themselves after similar organizations in their field that they perceive to be more legitimate or successful », et « The ubiquity of certain kinds of structural arrangements can more likely be credited to the universality of mimetic processes than to any concrete evidence that the adopted models enhance efficiency » (p. 152). Cas exemplaire donné par le texte : une grande station de télévision publique passe, sur conseil d'un cabinet, d'une organisation fonctionnelle à une structure multidivisionnelle ; ses dirigeants doutent du gain d'efficacité et constatent des doublons, mais y voient un signal adressé aux entreprises partenaires — « the sleepy nonprofit station was becoming more business-minded » (p. 152)."
+        },
+        {
+          "id": "SUP-2f9b66e8ecd35eb2",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$._tour2_corrections.points_trouves_par_moi_hors_verdict[0]",
+          "access": "n/a",
+          "text": "TROIS RENVOIS DE PAGE À UN CRAN PRÈS, sur des citations qui ENJAMBENT une page — corrigés dans le corps du dossier. (1) « Many professional career tracks are so closely guarded […] virtually indistinguishable » commence p. 152 et s'achève sur la première ligne de la p. 153 (la fiche donnait p. 153 seule). (2) « despite considerable search for diversity there is relatively little variation to be selected from » commence p. 151 (« despite con- ») et s'achève p. 152 (la fiche donnait p. 152 seule). (3) « Here our prediction diverges somewhat from Meyer and Rowan » est la DERNIÈRE LIGNE de la p. 154 ; la suite « (1977) who argue, as we do… » est p. 155 (la fiche donnait p. 155 seule). Pour mémoire, « a system rationality that emphasizes market competition, niche change, and fitness measures » enjambe aussi p. 149-150, et la fiche l'indiquait déjà correctement."
         }
       ]
     },
     {
-      "claim_id": "C042",
+      "claim_id": "C043",
       "locator": "sections[2].paragraphs[1]",
       "claim_text": "Les intermédiaires sont peu nombreux, les grandes organisations s’adressant à un petit ensemble de cabinets qui répandent partout quelques modèles.",
       "supports": [
@@ -886,7 +936,7 @@
       ]
     },
     {
-      "claim_id": "C043",
+      "claim_id": "C044",
       "locator": "sections[2].paragraphs[1]",
       "claim_text": "Et l’on copie ce qui se voit, les changements de structure s’observant bien plus aisément que ceux de politique ou de stratégie.",
       "supports": [
@@ -900,7 +950,7 @@
       ]
     },
     {
-      "claim_id": "C044",
+      "claim_id": "C045",
       "locator": "sections[2].paragraphs[1]",
       "claim_text": "L’article rapporte ainsi le cas d’une grande station de télévision publique passée, sur conseil d’un cabinet, à une organisation par divisions : ses dirigeants doutaient du gain d’efficacité et constataient des doublons, mais y voyaient un signal adressé à leurs partenaires commerciaux.",
       "supports": [
@@ -921,28 +971,28 @@
       ]
     },
     {
-      "claim_id": "C045",
+      "claim_id": "C046",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "Le troisième mécanisme passe par les personnes.",
       "supports": [
-        {
-          "id": "SUP-ec9601a910d6f305",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.mechanism[10]",
-          "access": "n/a",
-          "text": "10. MÉCANISME 3 — NORMATIF : la profession comme véhicule (p. 152-153). Antécédent : « A third source of isomorphic organizational change is normative and stems primarily from professionalization. » Définition empruntée à Larson (1977) et Collins (1979) : « the collective struggle of members of an occupation to define the conditions and methods of their work, to control “the production of producers” […], and to establish a cognitive base and legitimation for their occupational autonomy. » Deux vecteurs : « One is the resting of formal education and of legitimation in a cognitive base produced by university specialists; the second is the growth and elaboration of professional networks that span organizations and across which new models diffuse rapidly » (p. 152). L'OPÉRATEUR CONCRET est le recrutement : « One important mechanism for encouraging normative isomorphism is the filtering of personnel. Within many organizational fields filtering occurs through the hiring of individuals from firms within the same industry; through the recruitment of fast-track staff from a narrow range of training institutions; through common promotion practices, such as always hiring top executives from financial or legal departments; and from skill-level requirements for particular jobs » (p. 152). RÉSULTAT : « Many professional career tracks are so closely guarded, both at the entry level and throughout the career progression, that individuals who make it to the top are virtually indistinguishable » (p. 152-153 : la phrase commence en bas de la p. 152 et s'achève sur la première ligne de la p. 153) — March et March (1977) sur les surintendants scolaires du Wisconsin, Hirsch et Whisler (1982) sur les conseils d'administration des Fortune 500. Effet cognitif : « To the extent managers and key staff are drawn from the same universities and filtered on a common set of attributes, they will tend to view problems in a similar fashion, see the same policies, procedures and structures as normatively sanctioned and legitimated, and approach decisions in much the same way » (p. 153)."
-        },
         {
           "id": "SUP-50e0b1091ab542b2",
           "origin": "evidence:evidence.primary-reading.json",
           "path": "$.evidence.mechanism[7]",
           "access": "n/a",
           "text": "7. TROIS MÉCANISMES, TROIS ANTÉCÉDENTS DISTINCTS (p. 150). « We identify three mechanisms through which institutional isomorphic change occurs, each with its own antecedents: 1) coercive isomorphism that stems from political influence and the problem of legitimacy; 2) mimetic isomorphism resulting from standard responses to uncertainty; and 3) normative isomorphism, associated with professionalization. » Avertissement immédiat des auteurs, qu'on oublie régulièrement de reproduire : « This typology is an analytic one: the types are not always empirically distinct. […] Yet, while the three types intermingle in empirical setting, they tend to derive from different conditions and may lead to different outcomes. » La typologie sert à séparer des CAUSES, pas à classer des cas."
+        },
+        {
+          "id": "SUP-ec9601a910d6f305",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[10]",
+          "access": "n/a",
+          "text": "10. MÉCANISME 3 — NORMATIF : la profession comme véhicule (p. 152-153). Antécédent : « A third source of isomorphic organizational change is normative and stems primarily from professionalization. » Définition empruntée à Larson (1977) et Collins (1979) : « the collective struggle of members of an occupation to define the conditions and methods of their work, to control “the production of producers” […], and to establish a cognitive base and legitimation for their occupational autonomy. » Deux vecteurs : « One is the resting of formal education and of legitimation in a cognitive base produced by university specialists; the second is the growth and elaboration of professional networks that span organizations and across which new models diffuse rapidly » (p. 152). L'OPÉRATEUR CONCRET est le recrutement : « One important mechanism for encouraging normative isomorphism is the filtering of personnel. Within many organizational fields filtering occurs through the hiring of individuals from firms within the same industry; through the recruitment of fast-track staff from a narrow range of training institutions; through common promotion practices, such as always hiring top executives from financial or legal departments; and from skill-level requirements for particular jobs » (p. 152). RÉSULTAT : « Many professional career tracks are so closely guarded, both at the entry level and throughout the career progression, that individuals who make it to the top are virtually indistinguishable » (p. 152-153 : la phrase commence en bas de la p. 152 et s'achève sur la première ligne de la p. 153) — March et March (1977) sur les surintendants scolaires du Wisconsin, Hirsch et Whisler (1982) sur les conseils d'administration des Fortune 500. Effet cognitif : « To the extent managers and key staff are drawn from the same universities and filtered on a common set of attributes, they will tend to view problems in a similar fashion, see the same policies, procedures and structures as normatively sanctioned and legitimated, and approach decisions in much the same way » (p. 153)."
         }
       ]
     },
     {
-      "claim_id": "C046",
+      "claim_id": "C047",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "La professionnalisation n’est pas ici une montée en compétence : c’est la lutte collective des membres d’un métier pour définir les conditions de leur travail et fonder leur autonomie.",
       "supports": [
@@ -963,21 +1013,35 @@
       ]
     },
     {
-      "claim_id": "C047",
+      "claim_id": "C048",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "Elle s’appuie sur deux choses : une formation dont la base savante est produite à l’université, et des réseaux professionnels qui traversent les organisations et diffusent vite les modèles.",
       "supports": [
+        {
+          "id": "SUP-0ff8a64b43e8c518",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.key_quotation._alternatives_verbatim_meme_source[4].text",
+          "access": "n/a",
+          "text": "Two aspects of professionalization are important sources of isomorphism. One is the resting of formal education and of legitimation in a cognitive base produced by university specialists; the second is the growth and elaboration of professional networks that span organizations and across which new models diffuse rapidly."
+        },
         {
           "id": "SUP-ec9601a910d6f305",
           "origin": "evidence:evidence.primary-reading.json",
           "path": "$.evidence.mechanism[10]",
           "access": "n/a",
           "text": "10. MÉCANISME 3 — NORMATIF : la profession comme véhicule (p. 152-153). Antécédent : « A third source of isomorphic organizational change is normative and stems primarily from professionalization. » Définition empruntée à Larson (1977) et Collins (1979) : « the collective struggle of members of an occupation to define the conditions and methods of their work, to control “the production of producers” […], and to establish a cognitive base and legitimation for their occupational autonomy. » Deux vecteurs : « One is the resting of formal education and of legitimation in a cognitive base produced by university specialists; the second is the growth and elaboration of professional networks that span organizations and across which new models diffuse rapidly » (p. 152). L'OPÉRATEUR CONCRET est le recrutement : « One important mechanism for encouraging normative isomorphism is the filtering of personnel. Within many organizational fields filtering occurs through the hiring of individuals from firms within the same industry; through the recruitment of fast-track staff from a narrow range of training institutions; through common promotion practices, such as always hiring top executives from financial or legal departments; and from skill-level requirements for particular jobs » (p. 152). RÉSULTAT : « Many professional career tracks are so closely guarded, both at the entry level and throughout the career progression, that individuals who make it to the top are virtually indistinguishable » (p. 152-153 : la phrase commence en bas de la p. 152 et s'achève sur la première ligne de la p. 153) — March et March (1977) sur les surintendants scolaires du Wisconsin, Hirsch et Whisler (1982) sur les conseils d'administration des Fortune 500. Effet cognitif : « To the extent managers and key staff are drawn from the same universities and filtered on a common set of attributes, they will tend to view problems in a similar fashion, see the same policies, procedures and structures as normatively sanctioned and legitimated, and approach decisions in much the same way » (p. 153)."
+        },
+        {
+          "id": "SUP-dbc579b08e234b70",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.conditions.appears_when[5]",
+          "access": "n/a",
+          "text": "Pour le mécanisme normatif : présence d'une profession organisée, avec base cognitive universitaire et réseaux professionnels traversant les organisations (p. 152)."
         }
       ]
     },
     {
-      "claim_id": "C048",
+      "claim_id": "C049",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "Son opérateur concret est le recrutement : on embauche dans les entreprises du même secteur, on puise les jeunes cadres dans quelques écoles, on prend toujours ses dirigeants dans les directions financières ou juridiques.",
       "supports": [
@@ -991,9 +1055,9 @@
       ]
     },
     {
-      "claim_id": "C049",
+      "claim_id": "C050",
       "locator": "sections[3].paragraphs[0]",
-      "claim_text": "Les carrières sont si étroitement gardées, écrivent les auteurs, que ceux qui parviennent au sommet sont pratiquement indiscernables les uns des autres.",
+      "claim_text": "Beaucoup de carrières professionnelles sont si étroitement gardées, écrivent les auteurs, à l’entrée comme tout au long de la progression, que ceux qui parviennent au sommet sont pratiquement indiscernables les uns des autres.",
       "supports": [
         {
           "id": "SUP-ec9601a910d6f305",
@@ -1001,11 +1065,18 @@
           "path": "$.evidence.mechanism[10]",
           "access": "n/a",
           "text": "10. MÉCANISME 3 — NORMATIF : la profession comme véhicule (p. 152-153). Antécédent : « A third source of isomorphic organizational change is normative and stems primarily from professionalization. » Définition empruntée à Larson (1977) et Collins (1979) : « the collective struggle of members of an occupation to define the conditions and methods of their work, to control “the production of producers” […], and to establish a cognitive base and legitimation for their occupational autonomy. » Deux vecteurs : « One is the resting of formal education and of legitimation in a cognitive base produced by university specialists; the second is the growth and elaboration of professional networks that span organizations and across which new models diffuse rapidly » (p. 152). L'OPÉRATEUR CONCRET est le recrutement : « One important mechanism for encouraging normative isomorphism is the filtering of personnel. Within many organizational fields filtering occurs through the hiring of individuals from firms within the same industry; through the recruitment of fast-track staff from a narrow range of training institutions; through common promotion practices, such as always hiring top executives from financial or legal departments; and from skill-level requirements for particular jobs » (p. 152). RÉSULTAT : « Many professional career tracks are so closely guarded, both at the entry level and throughout the career progression, that individuals who make it to the top are virtually indistinguishable » (p. 152-153 : la phrase commence en bas de la p. 152 et s'achève sur la première ligne de la p. 153) — March et March (1977) sur les surintendants scolaires du Wisconsin, Hirsch et Whisler (1982) sur les conseils d'administration des Fortune 500. Effet cognitif : « To the extent managers and key staff are drawn from the same universities and filtered on a common set of attributes, they will tend to view problems in a similar fashion, see the same policies, procedures and structures as normatively sanctioned and legitimated, and approach decisions in much the same way » (p. 153)."
+        },
+        {
+          "id": "SUP-2f9b66e8ecd35eb2",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$._tour2_corrections.points_trouves_par_moi_hors_verdict[0]",
+          "access": "n/a",
+          "text": "TROIS RENVOIS DE PAGE À UN CRAN PRÈS, sur des citations qui ENJAMBENT une page — corrigés dans le corps du dossier. (1) « Many professional career tracks are so closely guarded […] virtually indistinguishable » commence p. 152 et s'achève sur la première ligne de la p. 153 (la fiche donnait p. 153 seule). (2) « despite considerable search for diversity there is relatively little variation to be selected from » commence p. 151 (« despite con- ») et s'achève p. 152 (la fiche donnait p. 152 seule). (3) « Here our prediction diverges somewhat from Meyer and Rowan » est la DERNIÈRE LIGNE de la p. 154 ; la suite « (1977) who argue, as we do… » est p. 155 (la fiche donnait p. 155 seule). Pour mémoire, « a system rationality that emphasizes market competition, niche change, and fitness measures » enjambe aussi p. 149-150, et la fiche l'indiquait déjà correctement."
         }
       ]
     },
     {
-      "claim_id": "C050",
+      "claim_id": "C051",
       "locator": "sections[3].paragraphs[1]",
       "claim_text": "Ce mécanisme a une condition que l’on oublie vite, et elle peut inverser son effet.",
       "supports": [
@@ -1026,9 +1097,9 @@
       ]
     },
     {
-      "claim_id": "C051",
+      "claim_id": "C052",
       "locator": "sections[3].paragraphs[1]",
-      "claim_text": "Quand les organisations d’un même domaine diffèrent et que le métier s’apprend sur le tas, la socialisation renforce les différences au lieu de les éroder : chacun prend les habitudes de sa maison.",
+      "claim_text": "Quand les organisations d’un même domaine diffèrent et que le métier s’apprend sur le tas, la socialisation peut renforcer les différences au lieu de les éroder : chacun prendrait alors les habitudes de sa maison.",
       "supports": [
         {
           "id": "SUP-8693f495273535e3",
@@ -1047,7 +1118,7 @@
       ]
     },
     {
-      "claim_id": "C052",
+      "claim_id": "C053",
       "locator": "sections[3].paragraphs[1]",
       "claim_text": "C’est l’autre socialisation qui homogénéise, celle qui traverse les organisations, ateliers des associations professionnelles, formation continue, interventions de cabinets, presse spécialisée.",
       "supports": [
@@ -1061,7 +1132,7 @@
       ]
     },
     {
-      "claim_id": "C053",
+      "claim_id": "C054",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "Ces trois mécanismes n’opèrent pas entre n’importe quelles organisations.",
       "supports": [
@@ -1071,11 +1142,18 @@
           "path": "$.evidence.mechanism[1]",
           "access": "n/a",
           "text": "1. L'UNITÉ D'ANALYSE N'EST NI LA FIRME NI LE SECTEUR, C'EST LE CHAMP (p. 148). « By organizational field, we mean those organizations that, in the aggregate, constitute a recognized area of institutional life: key suppliers, resource and product consumers, regulatory agencies, and other organizations that produce similar services or products. » Les auteurs justifient ce choix contre deux alternatives : ni les seules firmes concurrentes (approche populationnelle de Hannan et Freeman), ni les seules organisations qui interagissent effectivement (réseaux inter-organisationnels de Laumann), mais « the totality of relevant actors » — ce qui inclut ceux qui régulent et ceux qui achètent. Le champ n'est pas donné : « The structure of an organizational field cannot be determined a priori but must be defined on the basis of empirical investigation. Fields only exist to the extent that they are institutionally defined » (p. 148)."
+        },
+        {
+          "id": "SUP-0b6dcac267e23f0e",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.conditions.appears_when[0]",
+          "access": "n/a",
+          "text": "Le champ est constitué et structuré : « Once disparate organizations in the same line of business are structured into an actual field (as we shall argue, by competition, the state, or the professions), powerful forces emerge that lead them to become more similar to one another » (p. 148). Les quatre composants de la structuration (interaction, structures de domination et coalitions, charge d'information, conscience mutuelle d'une entreprise commune) sont la condition d'entrée (p. 148)."
         }
       ]
     },
     {
-      "claim_id": "C054",
+      "claim_id": "C055",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "Leur cadre a un nom, le champ, et il ne se confond ni avec un marché ni avec un secteur d’activité",
       "supports": [
@@ -1103,35 +1181,28 @@
       ]
     },
     {
-      "claim_id": "C055",
+      "claim_id": "C056",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "il réunit les organisations qui produisent des services semblables, mais aussi leurs fournisseurs principaux, ceux qui consomment leurs ressources et leurs produits, et les agences qui les régulent",
       "supports": [
+        {
+          "id": "SUP-0e637b827bc4f0b9",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.key_quotation._alternatives_verbatim_meme_source[3].text",
+          "access": "n/a",
+          "text": "By organizational field, we mean those organizations that, in the aggregate, constitute a recognized area of institutional life: key suppliers, resource and product consumers, regulatory agencies, and other organizations that produce similar services or products."
+        },
         {
           "id": "SUP-365c39b9c6493dc3",
           "origin": "evidence:evidence.primary-reading.json",
           "path": "$.evidence.mechanism[1]",
           "access": "n/a",
           "text": "1. L'UNITÉ D'ANALYSE N'EST NI LA FIRME NI LE SECTEUR, C'EST LE CHAMP (p. 148). « By organizational field, we mean those organizations that, in the aggregate, constitute a recognized area of institutional life: key suppliers, resource and product consumers, regulatory agencies, and other organizations that produce similar services or products. » Les auteurs justifient ce choix contre deux alternatives : ni les seules firmes concurrentes (approche populationnelle de Hannan et Freeman), ni les seules organisations qui interagissent effectivement (réseaux inter-organisationnels de Laumann), mais « the totality of relevant actors » — ce qui inclut ceux qui régulent et ceux qui achètent. Le champ n'est pas donné : « The structure of an organizational field cannot be determined a priori but must be defined on the basis of empirical investigation. Fields only exist to the extent that they are institutionally defined » (p. 148)."
-        },
-        {
-          "id": "SUP-12008ec2e7976235",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.common_misinterpretations[9].why_wrong",
-          "access": "n/a",
-          "text": "La définition p. 148 inclut des acteurs qui ne sont pas des concurrents : « key suppliers, resource and product consumers, regulatory agencies, and other organizations that produce similar services or products », et les auteurs revendiquent d'attraper ainsi « the totality of relevant actors » contre l'approche populationnelle (les seules firmes concurrentes) et contre l'approche par réseaux (les seules organisations qui interagissent effectivement). Ils ajoutent que le périmètre ne se décrète pas : « The structure of an organizational field cannot be determined a priori but must be defined on the basis of empirical investigation » (p. 148)."
-        },
-        {
-          "id": "SUP-5f686d143af54b49",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.translation_notes[1].note",
-          "access": "n/a",
-          "text": "Le rendu « champ organisationnel » est celui qu'emploient les traducteurs de Politix (1997) pour les auteurs eux-mêmes (au pluriel : « la structuration des champs organisationnels »). PIÈGE POUR UN LECTEUR FRANÇAIS : « champ » ne renvoie ici à AUCUNE référence bourdieusienne — Bourdieu n'est pas cité dans l'article de 1983, et la seule filiation revendiquée pour la structuration est Giddens (1979), p. 147. Second piège : « field » n'est ni « secteur » ni « marché » ni « branche » : la définition p. 148 inclut expressément les fournisseurs clés, les consommateurs de ressources et de produits, les AGENCES DE RÉGULATION, et les organisations produisant des services ou produits similaires — donc des acteurs qui ne sont pas en concurrence entre eux."
         }
       ]
     },
     {
-      "claim_id": "C056",
+      "claim_id": "C057",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "Autant dire, pour une bonne part, des acteurs qui ne se font aucune concurrence.",
       "supports": [
@@ -1152,7 +1223,7 @@
       ]
     },
     {
-      "claim_id": "C057",
+      "claim_id": "C058",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "Son périmètre ne se décrète pas non plus : il se détermine par enquête, et un champ n’existe que pour autant qu’il est institutionnellement défini.",
       "supports": [
@@ -1166,7 +1237,7 @@
       ]
     },
     {
-      "claim_id": "C058",
+      "claim_id": "C059",
       "locator": "sections[4].paragraphs[1]",
       "claim_text": "Un champ se fabrique, et les auteurs nomment quatre choses qui le font : les organisations interagissent davantage entre elles, des structures de domination et des coalitions s’y dessinent nettement, la quantité d’informations à traiter augmente, et les participants prennent conscience d’être engagés dans une entreprise commune.",
       "supports": [
@@ -1187,7 +1258,7 @@
       ]
     },
     {
-      "claim_id": "C059",
+      "claim_id": "C060",
       "locator": "sections[4].paragraphs[1]",
       "claim_text": "Au début de la vie d’un champ, les formes restent diverses ; une fois qu’il est bien établi, la poussée vers l’homogénéité devient, écrivent-ils, inexorable.",
       "supports": [
@@ -1208,9 +1279,9 @@
       ]
     },
     {
-      "claim_id": "C060",
+      "claim_id": "C061",
       "locator": "sections[5].paragraphs[0]",
-      "claim_text": "aucun des trois mécanismes ne passe par une preuve d’efficacité",
+      "claim_text": "Le point décisif est celui-ci : aucun des trois mécanismes ne passe par une preuve d’efficacité, et les auteurs précisent que ces processus se poursuivent en l’absence de tout élément établissant qu’ils améliorent le fonctionnement interne.",
       "supports": [
         {
           "id": "SUP-9cef5586b27d48ae",
@@ -1220,25 +1291,11 @@
           "text": "13. LE POINT QUI SÉPARE CE MÉCANISME DE TOUS LES AUTRES : l'efficacité n'est ni la cause ni le critère (p. 153-154). « It is important to note that each of the institutional isomorphic processes can be expected to proceed in the absence of evidence that they increase internal organizational efficiency. To the extent that organizational effectiveness is enhanced, the reason will often be that organizations are rewarded for being similar to other organizations in their fields. This similarity can make it easier for organizations to transact with other organizations, to attract career-minded staff, to be acknowledged as legitimate and reputable, and to fit into administrative categories that define eligibility for public and private grants and contracts. None of this, however, insures that conformist organizations do what they do more efficiently than do their more deviant peers. » La ressemblance PAIE, mais elle paie en transactions, en recrutement, en réputation et en éligibilité — pas en productivité."
         },
         {
-          "id": "SUP-64a2481f78e6b164",
+          "id": "SUP-ab956d05f1fb7392",
           "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.common_misinterpretations[2].why_wrong",
+          "path": "$.evidence.key_quotation._alternatives_verbatim_meme_source[2].text",
           "access": "n/a",
-          "text": "ATTRIBUTION NON SOUTENUE. Le texte dit que les processus se poursuivent « in the absence of evidence that they increase internal organizational efficiency » (p. 153) — absence de preuve, non preuve du contraire — et il ajoute immédiatement que l'efficacité peut se trouver améliorée, mais pour une autre raison : « To the extent that organizational effectiveness is enhanced, the reason will often be that organizations are rewarded for being similar to other organizations in their fields » (p. 153). La phrase de conclusion est symétrique et prudente : « None of this, however, insures that conformist organizations do what they do more efficiently than do their more deviant peers » (p. 153-154). L'article retire l'efficacité du rôle de cause ; il n'en fait pas une victime."
-        }
-      ]
-    },
-    {
-      "claim_id": "C061",
-      "locator": "sections[5].paragraphs[0]",
-      "claim_text": "les auteurs précisent que ces processus se poursuivent en l’absence de tout élément établissant qu’ils améliorent le fonctionnement interne",
-      "supports": [
-        {
-          "id": "SUP-9cef5586b27d48ae",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.mechanism[13]",
-          "access": "n/a",
-          "text": "13. LE POINT QUI SÉPARE CE MÉCANISME DE TOUS LES AUTRES : l'efficacité n'est ni la cause ni le critère (p. 153-154). « It is important to note that each of the institutional isomorphic processes can be expected to proceed in the absence of evidence that they increase internal organizational efficiency. To the extent that organizational effectiveness is enhanced, the reason will often be that organizations are rewarded for being similar to other organizations in their fields. This similarity can make it easier for organizations to transact with other organizations, to attract career-minded staff, to be acknowledged as legitimate and reputable, and to fit into administrative categories that define eligibility for public and private grants and contracts. None of this, however, insures that conformist organizations do what they do more efficiently than do their more deviant peers. » La ressemblance PAIE, mais elle paie en transactions, en recrutement, en réputation et en éligibilité — pas en productivité."
+          "text": "It is important to note that each of the institutional isomorphic processes can be expected to proceed in the absence of evidence that they increase internal organizational efficiency."
         },
         {
           "id": "SUP-64a2481f78e6b164",
@@ -1323,6 +1380,13 @@
           "path": "$.evidence.common_misinterpretations[2].why_wrong",
           "access": "n/a",
           "text": "ATTRIBUTION NON SOUTENUE. Le texte dit que les processus se poursuivent « in the absence of evidence that they increase internal organizational efficiency » (p. 153) — absence de preuve, non preuve du contraire — et il ajoute immédiatement que l'efficacité peut se trouver améliorée, mais pour une autre raison : « To the extent that organizational effectiveness is enhanced, the reason will often be that organizations are rewarded for being similar to other organizations in their fields » (p. 153). La phrase de conclusion est symétrique et prudente : « None of this, however, insures that conformist organizations do what they do more efficiently than do their more deviant peers » (p. 153-154). L'article retire l'efficacité du rôle de cause ; il n'en fait pas une victime."
+        },
+        {
+          "id": "SUP-9cef5586b27d48ae",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[13]",
+          "access": "n/a",
+          "text": "13. LE POINT QUI SÉPARE CE MÉCANISME DE TOUS LES AUTRES : l'efficacité n'est ni la cause ni le critère (p. 153-154). « It is important to note that each of the institutional isomorphic processes can be expected to proceed in the absence of evidence that they increase internal organizational efficiency. To the extent that organizational effectiveness is enhanced, the reason will often be that organizations are rewarded for being similar to other organizations in their fields. This similarity can make it easier for organizations to transact with other organizations, to attract career-minded staff, to be acknowledged as legitimate and reputable, and to fit into administrative categories that define eligibility for public and private grants and contracts. None of this, however, insures that conformist organizations do what they do more efficiently than do their more deviant peers. » La ressemblance PAIE, mais elle paie en transactions, en recrutement, en réputation et en éligibilité — pas en productivité."
         }
       ]
     },
@@ -1337,13 +1401,6 @@
           "path": "$.evidence.mechanism[4]",
           "access": "n/a",
           "text": "4. LE PARADOXE D'AGRÉGATION — c'est la « rationalité collective » du titre (p. 148). « Strategies that are rational for individual organizations may not be rational if adopted by large numbers. Yet the very fact that they are normatively sanctioned increases the likelihood of their adoption. » Et l'effet de cliquet : « organizational actors making rational decisions construct around themselves an environment that constrains their ability to change further in later years » (p. 148). Le milieu auquel chacun s'adapte est fait des adaptations des autres — les auteurs le formulent en paraphrasant Schelling (1978:14) : « Organizations in a structured field […] respond to an environment that consists of other organizations responding to their environment, which consists of organizations responding to an environment of organizations' responses » (p. 149). Aucun acteur n'a besoin d'être irrationnel pour que le résultat d'ensemble le soit."
-        },
-        {
-          "id": "SUP-0b8bf7f848c299b7",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.known_ambiguities[1]",
-          "access": "n/a",
-          "text": "LA « RATIONALITÉ COLLECTIVE » DU TITRE N'EST JAMAIS DÉFINIE. Aucune phrase de l'article ne dit ce qu'est la collective rationality. Ce que j'en donne à l'étape 4 de `mechanism` est RECONSTITUÉ à partir de deux passages de la p. 148-149 (les stratégies rationnelles individuellement et non collectivement ; la paraphrase de Schelling). Cette reconstitution doit être signalée comme telle et non attribuée comme un énoncé."
         }
       ]
     },
@@ -1358,6 +1415,13 @@
           "path": "$.evidence.mechanism[4]",
           "access": "n/a",
           "text": "4. LE PARADOXE D'AGRÉGATION — c'est la « rationalité collective » du titre (p. 148). « Strategies that are rational for individual organizations may not be rational if adopted by large numbers. Yet the very fact that they are normatively sanctioned increases the likelihood of their adoption. » Et l'effet de cliquet : « organizational actors making rational decisions construct around themselves an environment that constrains their ability to change further in later years » (p. 148). Le milieu auquel chacun s'adapte est fait des adaptations des autres — les auteurs le formulent en paraphrasant Schelling (1978:14) : « Organizations in a structured field […] respond to an environment that consists of other organizations responding to their environment, which consists of organizations responding to an environment of organizations' responses » (p. 149). Aucun acteur n'a besoin d'être irrationnel pour que le résultat d'ensemble le soit."
+        },
+        {
+          "id": "SUP-d6d3ba395996729a",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.key_quotation._alternatives_verbatim_meme_source[1].text",
+          "access": "n/a",
+          "text": "As an innovation spreads, a threshold is reached beyond which adoption provides legitimacy rather than improves performance (Meyer and Rowan, 1977). Strategies that are rational for individual organizations may not be rational if adopted by large numbers. Yet the very fact that they are normatively sanctioned increases the likelihood of their adoption."
         }
       ]
     },
@@ -1386,13 +1450,6 @@
           "path": "$.evidence.mechanism[4]",
           "access": "n/a",
           "text": "4. LE PARADOXE D'AGRÉGATION — c'est la « rationalité collective » du titre (p. 148). « Strategies that are rational for individual organizations may not be rational if adopted by large numbers. Yet the very fact that they are normatively sanctioned increases the likelihood of their adoption. » Et l'effet de cliquet : « organizational actors making rational decisions construct around themselves an environment that constrains their ability to change further in later years » (p. 148). Le milieu auquel chacun s'adapte est fait des adaptations des autres — les auteurs le formulent en paraphrasant Schelling (1978:14) : « Organizations in a structured field […] respond to an environment that consists of other organizations responding to their environment, which consists of organizations responding to an environment of organizations' responses » (p. 149). Aucun acteur n'a besoin d'être irrationnel pour que le résultat d'ensemble le soit."
-        },
-        {
-          "id": "SUP-0b8bf7f848c299b7",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.known_ambiguities[1]",
-          "access": "n/a",
-          "text": "LA « RATIONALITÉ COLLECTIVE » DU TITRE N'EST JAMAIS DÉFINIE. Aucune phrase de l'article ne dit ce qu'est la collective rationality. Ce que j'en donne à l'étape 4 de `mechanism` est RECONSTITUÉ à partir de deux passages de la p. 148-149 (les stratégies rationnelles individuellement et non collectivement ; la paraphrase de Schelling). Cette reconstitution doit être signalée comme telle et non attribuée comme un énoncé."
         }
       ]
     },
@@ -1409,11 +1466,11 @@
           "text": "7. TROIS MÉCANISMES, TROIS ANTÉCÉDENTS DISTINCTS (p. 150). « We identify three mechanisms through which institutional isomorphic change occurs, each with its own antecedents: 1) coercive isomorphism that stems from political influence and the problem of legitimacy; 2) mimetic isomorphism resulting from standard responses to uncertainty; and 3) normative isomorphism, associated with professionalization. » Avertissement immédiat des auteurs, qu'on oublie régulièrement de reproduire : « This typology is an analytic one: the types are not always empirically distinct. […] Yet, while the three types intermingle in empirical setting, they tend to derive from different conditions and may lead to different outcomes. » La typologie sert à séparer des CAUSES, pas à classer des cas."
         },
         {
-          "id": "SUP-ebb8c3a4da18e672",
+          "id": "SUP-de978772e91c42c0",
           "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.mechanism[15]",
+          "path": "$.evidence.common_misinterpretations[7].why_wrong",
           "access": "n/a",
-          "text": "15. CE QUE LE MÉCANISME PERMET DE PRÉDIRE, ET SOUS QUELLE FORME (p. 154-156). Douze hypothèses : six au niveau de l'organisation (A-1 à A-6), six au niveau du champ (B-1 à B-6). Indicateur proposé : « Since the effect of institutional isomorphism is homogenization, the best indicator of isomorphic change is a decrease in variation and diversity, which could be measured by lower standard deviations of the values of selected indicators in a set of organizations » (p. 155). Deux hypothèses signalent une NON-LINÉARITÉ : B-3 pose « a threshold level, or a tipping point, beyond which adoption of the dominant form will proceed with increasing speed » ; B-4 pose que « Somewhat counterintuitively, abrupt increases in uncertainty and ambiguity should, after brief periods of ideologically motivated experimentation, lead to rapid isomorphic change » (p. 156), les nouveaux entrants cherchant à « overcome the liability of newness by imitating established practices within the field ». AUCUN TEST n'est conduit : « While an empirical test of such predictions is beyond the scope of this paper, the ultimate value of our perspective will lie in its predictive utility » (p. 154)."
+          "text": "Il ne conduit aucun test. « While an empirical test of such predictions is beyond the scope of this paper, the ultimate value of our perspective will lie in its predictive utility » (p. 154). Les auteurs indiquent même ce qu'ils n'ont pas traité : « We have not discussed the expected nonlinearities and ceiling effects in the relationships that we have posited. Nor have we addressed the issue of the indicators that one must use to measure homogeneity » (p. 156). Les études citées (Zucker & Tolbert, Marshall Meyer, Coser-Kadushin-Powell, Rothman, Starr, Tyack, Katz, Barnouw, DiMaggio) sont des travaux d'autrui, mobilisés comme illustrations."
         },
         {
           "id": "SUP-567519ef8355cb6e",
@@ -1427,7 +1484,7 @@
     {
       "claim_id": "C071",
       "locator": "sections[5].paragraphs[2]",
-      "claim_text": "La typologie est analytique : dans les situations réelles, les trois mécanismes se mêlent",
+      "claim_text": "La typologie est analytique : dans les situations réelles, les trois mécanismes se mêlent,",
       "supports": [
         {
           "id": "SUP-50e0b1091ab542b2",
@@ -1448,7 +1505,7 @@
     {
       "claim_id": "C072",
       "locator": "sections[5].paragraphs[2]",
-      "claim_text": "et le texte ne dit nulle part lequel pèse le plus",
+      "claim_text": "et le texte ne dit nulle part lequel pèse le plus.",
       "supports": [
         {
           "id": "SUP-21b5aaeab3a17ff6",
@@ -1498,6 +1555,13 @@
           "path": "$.evidence.secondary_sources[0].establishes",
           "access": "n/a",
           "text": "LA PIÈCE CENTRALE DU DOSSIER : un article de revue de premier rang dont l'OBJET EST LA RÉCEPTION de DiMaggio et Powell 1983. Résumé des auteurs, reproduit intégralement (obtenu par l'index inversé d'OpenAlex, donc verbatim d'éditeur, non paraphrase) : « Arguing that knowledge in the social sciences is socially constructed through the selective interpretation of major works, we examine the fate of a classic article in organizational theory, DiMaggio and Powell's 1983 essay on institutional isomorphism. We show that one aspect of this article, the discussion of mimetic isomorphism, has received attention disproportionate to its role in the essay. A detailed examination of 26 articles in which researchers attempted to operationalize various components of DiMaggio and Powell's model shows that measures used to capture one of their concepts could have served as valid measures of one of the others. Findings show that DiMaggio and Powell's thesis has become socially constructed, as authors have selectively appropriated aspects of the work that accord with prevalent discourse in the field, and that centrally located researchers in sociology and organizational behavior are more likely than other scholars to invoke this dominant interpretation of their article. » TROIS RÉSULTATS DISTINCTS, à ne pas confondre : (1) surreprésentation du mimétique dans la littérature citante ; (2) NON-SÉPARABILITÉ EMPIRIQUE des trois mécanismes — les mesures d'un mécanisme auraient pu valoir pour un autre, sur 26 articles examinés ; (3) effet de position : les chercheurs centraux du champ portent davantage la lecture dominante. Le point (2) est le plus lourd et le plus oublié : il ne dit pas que la littérature lit mal, il dit que le dispositif se prête mal à l'épreuve empirique. CONSULTATION : RÉSUMÉ D'AUTEURS SEULEMENT. Le texte intégral n'a pas pu être ouvert (JSTOR et SAGE renvoient 403, Gale renvoie 410). Le chiffrage circulant sur le web (« douze articles n'utilisent que le mimétique, cinq le coercitif, trois le normatif ») N'EST PAS repris ici : il provient d'un résumé de moteur de recherche, non d'une source ouverte."
+        },
+        {
+          "id": "SUP-a9a837bbe06d5cae",
+          "origin": "evidence:evidence.reception.json",
+          "path": "$.evidence.reception.critiques[0].by",
+          "access": "n/a",
+          "text": "Mark S. Mizruchi et Lisa C. Fein"
         }
       ]
     },
@@ -1514,11 +1578,18 @@
           "text": "LA PIÈCE CENTRALE DU DOSSIER : un article de revue de premier rang dont l'OBJET EST LA RÉCEPTION de DiMaggio et Powell 1983. Résumé des auteurs, reproduit intégralement (obtenu par l'index inversé d'OpenAlex, donc verbatim d'éditeur, non paraphrase) : « Arguing that knowledge in the social sciences is socially constructed through the selective interpretation of major works, we examine the fate of a classic article in organizational theory, DiMaggio and Powell's 1983 essay on institutional isomorphism. We show that one aspect of this article, the discussion of mimetic isomorphism, has received attention disproportionate to its role in the essay. A detailed examination of 26 articles in which researchers attempted to operationalize various components of DiMaggio and Powell's model shows that measures used to capture one of their concepts could have served as valid measures of one of the others. Findings show that DiMaggio and Powell's thesis has become socially constructed, as authors have selectively appropriated aspects of the work that accord with prevalent discourse in the field, and that centrally located researchers in sociology and organizational behavior are more likely than other scholars to invoke this dominant interpretation of their article. » TROIS RÉSULTATS DISTINCTS, à ne pas confondre : (1) surreprésentation du mimétique dans la littérature citante ; (2) NON-SÉPARABILITÉ EMPIRIQUE des trois mécanismes — les mesures d'un mécanisme auraient pu valoir pour un autre, sur 26 articles examinés ; (3) effet de position : les chercheurs centraux du champ portent davantage la lecture dominante. Le point (2) est le plus lourd et le plus oublié : il ne dit pas que la littérature lit mal, il dit que le dispositif se prête mal à l'épreuve empirique. CONSULTATION : RÉSUMÉ D'AUTEURS SEULEMENT. Le texte intégral n'a pas pu être ouvert (JSTOR et SAGE renvoient 403, Gale renvoie 410). Le chiffrage circulant sur le web (« douze articles n'utilisent que le mimétique, cinq le coercitif, trois le normatif ») N'EST PAS repris ici : il provient d'un résumé de moteur de recherche, non d'une source ouverte."
         },
         {
-          "id": "SUP-ec90e78238855775",
+          "id": "SUP-f8a8c77791b05831",
           "origin": "evidence:evidence.reception.json",
-          "path": "$.evidence.reception.debates[2]",
+          "path": "$.evidence.reception.critiques[0].claim",
           "access": "n/a",
-          "text": "LE MODÈLE EST-IL TESTABLE ? Mizruchi et Fein (ASQ, 1999) montrent la non-discrimination des mesures sur 26 articles ; Boxenbaum et Jonsson, rapportés par Thornton, imputent la difficulté à la définition constructionniste du champ, qui rend « few studies directly comparable ». C'est le débat le moins visible hors du champ et le plus lourd pour qui veut enseigner le concept comme un outil d'analyse empirique."
+          "text": "La critique ne vise pas DiMaggio et Powell mais la communauté qui les cite : la thèse de 1983 « has become socially constructed », les auteurs citants ayant « selectively appropriated aspects of the work that accord with prevalent discourse in the field » ; le mimétique a reçu une attention « disproportionate to its role in the essay » ; et les mesures des trois mécanismes sont interchangeables sur les 26 articles examinés. C'est une critique de sociologie de la connaissance appliquée au champ lui-même."
+        },
+        {
+          "id": "SUP-59e45e5f2256a72c",
+          "origin": "evidence:evidence.reception.json",
+          "path": "$.evidence.common_misinterpretations[0].why_wrong",
+          "access": "n/a",
+          "text": "C'est prendre un des trois mécanismes pour le tout, et ce n'est pas une intuition de vulgarisateur : c'est un résultat mesuré et publié. Mizruchi et Fein, dans ASQ, prennent pour objet la littérature citante et concluent : « one aspect of this article, the discussion of mimetic isomorphism, has received attention disproportionate to its role in the essay » ; et plus loin, que « DiMaggio and Powell's thesis has become socially constructed, as authors have selectively appropriated aspects of the work that accord with prevalent discourse in the field ». Beckert reprend le constat à son compte : l'influence de l'article « has led to a one-sided picture of institutional development … in which isomorphism is given undue analytic weight (Mizruchi and Fein 1999) » (2010, p. 151). Thornton le redit en trois lignes dans une entrée d'encyclopédie : « among the three isomorphic pressures, mimesis has received the most attention, suggesting this research is shaped by academic trends » (2011, p. 2). CE QUE LA RÉDUCTION EFFACE : le coercitif, c'est-à-dire l'État, la loi, le financeur, la dépendance de ressources ; et le normatif, c'est-à-dire la formation, les diplômes, les associations professionnelles — deux mécanismes qui ne relèvent nullement de l'imitation et qui portent l'essentiel de la thèse politique de l'article (« the engine of rationalization … has moved from the competitive marketplace to the state and the professions », résumé de 1983)."
         }
       ]
     },
@@ -1535,25 +1606,25 @@
           "text": "LA PIÈCE CENTRALE DU DOSSIER : un article de revue de premier rang dont l'OBJET EST LA RÉCEPTION de DiMaggio et Powell 1983. Résumé des auteurs, reproduit intégralement (obtenu par l'index inversé d'OpenAlex, donc verbatim d'éditeur, non paraphrase) : « Arguing that knowledge in the social sciences is socially constructed through the selective interpretation of major works, we examine the fate of a classic article in organizational theory, DiMaggio and Powell's 1983 essay on institutional isomorphism. We show that one aspect of this article, the discussion of mimetic isomorphism, has received attention disproportionate to its role in the essay. A detailed examination of 26 articles in which researchers attempted to operationalize various components of DiMaggio and Powell's model shows that measures used to capture one of their concepts could have served as valid measures of one of the others. Findings show that DiMaggio and Powell's thesis has become socially constructed, as authors have selectively appropriated aspects of the work that accord with prevalent discourse in the field, and that centrally located researchers in sociology and organizational behavior are more likely than other scholars to invoke this dominant interpretation of their article. » TROIS RÉSULTATS DISTINCTS, à ne pas confondre : (1) surreprésentation du mimétique dans la littérature citante ; (2) NON-SÉPARABILITÉ EMPIRIQUE des trois mécanismes — les mesures d'un mécanisme auraient pu valoir pour un autre, sur 26 articles examinés ; (3) effet de position : les chercheurs centraux du champ portent davantage la lecture dominante. Le point (2) est le plus lourd et le plus oublié : il ne dit pas que la littérature lit mal, il dit que le dispositif se prête mal à l'épreuve empirique. CONSULTATION : RÉSUMÉ D'AUTEURS SEULEMENT. Le texte intégral n'a pas pu être ouvert (JSTOR et SAGE renvoient 403, Gale renvoie 410). Le chiffrage circulant sur le web (« douze articles n'utilisent que le mimétique, cinq le coercitif, trois le normatif ») N'EST PAS repris ici : il provient d'un résumé de moteur de recherche, non d'une source ouverte."
         },
         {
+          "id": "SUP-77f4f6a2e1fd7135",
+          "origin": "evidence:evidence.reception.json",
+          "path": "$.evidence.known_ambiguities[1]",
+          "access": "n/a",
+          "text": "LES TROIS MÉCANISMES SONT-ILS SÉPARABLES EMPIRIQUEMENT ? Mizruchi et Fein répondent non, sur pièces : « measures used to capture one of their concepts could have served as valid measures of one of the others » (résumé d'auteurs, ASQ 1999). Cela ne condamne pas la typologie comme outil de pensée ; cela interdit de la traiter comme trois variables indépendantes. La littérature appliquée fait pourtant exactement cela, en masse."
+        },
+        {
           "id": "SUP-ec90e78238855775",
           "origin": "evidence:evidence.reception.json",
           "path": "$.evidence.reception.debates[2]",
           "access": "n/a",
           "text": "LE MODÈLE EST-IL TESTABLE ? Mizruchi et Fein (ASQ, 1999) montrent la non-discrimination des mesures sur 26 articles ; Boxenbaum et Jonsson, rapportés par Thornton, imputent la difficulté à la définition constructionniste du champ, qui rend « few studies directly comparable ». C'est le débat le moins visible hors du champ et le plus lourd pour qui veut enseigner le concept comme un outil d'analyse empirique."
-        },
-        {
-          "id": "SUP-679ba948e40a10e1",
-          "origin": "evidence:evidence.reception.json",
-          "path": "$.non_etabli[0]",
-          "access": "n/a",
-          "text": "LE TEXTE INTÉGRAL DE MIZRUCHI ET FEIN 1999, pièce centrale du dossier, n'a PAS été lu : seul le résumé d'auteurs (obtenu par OpenAlex, verbatim d'éditeur) a pu l'être. JSTOR et SAGE renvoient 403, la notice Gale renvoie 410. Le détail du décompte des 26 articles — combien mobilisent le mimétique seul, combien le coercitif, combien le normatif — n'est donc PAS établi ici. Un chiffrage circule sur le web ; il provient d'un résumé de moteur de recherche et n'a pas été retenu."
         }
       ]
     },
     {
       "claim_id": "C077",
       "locator": "sections[5].paragraphs[2]",
-      "claim_text": "Jens Beckert, en 2010, reprend la typologie",
+      "claim_text": "Jens Beckert, en 2010, reprend la typologie pour soutenir que ces mécanismes n’ont pas de direction fixe : selon les conditions, ils conduisent à la divergence autant qu’à l’homogénéisation.",
       "supports": [
         {
           "id": "SUP-655356aa76721c61",
@@ -1570,36 +1641,22 @@
           "text": "LA DISCUSSION THÉORIQUE LA PLUS NETTE, et la seule source de ce dossier lue INTÉGRALEMENT. PAGINATIONS REFAITES AU TOUR DE CORRECTION : le contrôle de passe A signalait trois renvois faux ; il a raison sur les trois, et j'en ai trouvé un quatrième (voir `attribution.filiation_weber`). J'ai re-téléchargé le PDF de l'éditeur depuis le dépôt du MPIfG (pure.mpg.de, item_1232069, fichier ST_28_2010_Beckert.pdf, 17 p., titres courants « INSTITUTIONAL ISOMORPHISM REVISITED » / « SOCIOLOGICAL THEORY », pagination imprimée 150-166, donc page PDF n = page imprimée n+149) et relocalisé chaque citation. ÉTABLIT : (1) LE POIDS DU TEXTE — « Their paper became one of the most cited articles in sociology ever and together with the article by Meyer and Rowen (1977) shaped subsequent research in the field (Mizruchi and Fein 1999) » (p. 150 — EXACT). (2) LA CIBLE DE LA CRITIQUE EST LA RÉCEPTION, PAS LES AUTEURS, et Beckert le dit deux fois : « The intention of the article by DiMaggio and Powell (1983:147) was not to claim that processes of isomorphism are somehow more important than the opposite… Independent of this intention, the influence of the article has led to a one-sided picture of institutional development in the new sociological institutionalism in which isomorphism is given undue analytic weight (Mizruchi and Fein 1999) » (p. 151 — EXACT) ; et « This is not to be understood as a critique of the article by DiMaggio and Powell » (p. 152 — CORRIGÉ : la fiche écrivait p. 153). (3) LA THÈSE PROPRE : les mécanismes ne sont pas orientés — « All four mechanisms can support processes of institutional homogenization, but under different conditions they can also lead to institutional divergence » (p. 152 — CORRIGÉ : la fiche écrivait p. 153 ; les deux phrases se suivent dans le même paragraphe de la section d'ouverture). Beckert reprend les trois mécanismes sous les noms de POUVOIR (coercitif), ATTRACTION (normatif) et MIMÉSIS (mimétique), et AJOUTE LA COMPÉTITION comme quatrième — « To this I add competition as a fourth mechanism, which was deliberately not discussed by DiMaggio and Powell because they sought to provide an alternative to competition-based explanations of institutional isomorphism (DiMaggio and Powell 1983:147) » (p. 152 — CORRIGÉ : la fiche écrivait p. 152-153 ; la phrase tient tout entière sur la p. 152). Le développement de ce quatrième mécanisme, lui, est ailleurs : section « Competition », p. 160-162. (4) LA CONCLUSION, qui vaut prise de position sur l'héritage wébérien : « Not only does the “iron cage” have other causes than those envisioned by Max Weber; it may not exist at all » (p. 163 — EXACT). (5) UN CONSTAT DE MÉTHODE pour la suite du champ : « Contrary to studies in the new sociological institutionalism this research must not be set up to look for empirical proof for tendencies of homogenization (or heterogeneity), but must rather ask much more openly which of these two tendencies is observed, and due to which causal mechanisms » (p. 163 — page AJOUTÉE : la fiche n'en donnait aucune). AUTRES LOCALISATIONS REFAITES AU MÊME PASSAGE, toutes sur ce PDF : « The question is not whether homogenization or divergence is more important. Empirical studies uncover evidence for both » — p. 151, et non p. 152 ; « hence the reference to Max Weber in their title » — p. 151 ; « These scholars deliberately left competition out of their seminal article because they were aiming for a theoretical conceptualization of isomorphism that would provide an alternative to Max Weber's emphasis on the role of competitive market pressures in explaining processes of bureaucratization » — p. 160, et non p. 158-159 ; « an alternative to Max Weber's claim that the dominance of bureaucratic forms in modern capitalism (which is a homogenizing process) is primarily market driven » — p. 162, dans la conclusion, et non p. 158-159. CES DEUX DERNIÈRES SONT DEUX PHRASES DISTINCTES, à deux endroits distincts : la fiche les renvoyait toutes deux à une même page, fausse pour l'une comme pour l'autre. Compteur Semantic Scholar : 355 citations au 17 août 2026. CONSULTATION : TEXTE INTÉGRAL, deux fois (passage initial ; puis re-téléchargement et relocalisation systématique de chaque citation au tour de correction)."
         },
         {
-          "id": "SUP-c262f896f22d49ab",
-          "origin": "evidence:evidence.reception.json",
-          "path": "$.evidence.reception.consensus",
-          "access": "n/a",
-          "text": "Quatre points ne sont contestés par aucune des sources consultées, y compris les plus critiques. (1) LA COSIGNATURE : DiMaggio ET Powell, dans cet ordre, ASR 48(2), 1983, p. 147-160 — concordance parfaite entre Crossref, OpenAlex (W3123282572) et Semantic Scholar, et invariabilité de la formule « DiMaggio and Powell (1983) » dans toute la littérature lue. (2) LE STATUT DU TEXTE : Beckert écrit que « their paper became one of the most cited articles in sociology ever » (2010, p. 150) ; les compteurs relevés le 16 août 2026 donnent 36 859 citations (OpenAlex), 37 529 (Semantic Scholar) et 31 691 (Crossref, relevé du scout) — les trois chiffres divergent selon les périmètres d'indexation, aucun ne doit être cité seul comme « le » nombre de citations. (3) LA TYPOLOGIE : coercitif, mimétique, normatif est reprise comme acquise, y compris par ceux qui la contestent — Beckert construit sa propre critique « based on the typology proposed by DiMaggio and Powell » et se contente d'y ajouter la compétition. (4) L'EXPLANANDUM : ce que le concept explique est l'homogénéité structurelle d'un champ par la quête de légitimité, et non par l'efficience. CE QUI EST DÉBATTU NE PORTE JAMAIS SUR L'EXISTENCE DES MÉCANISMES, mais sur leur direction, leur séparabilité et le poids qu'on leur a donné."
-        }
-      ]
-    },
-    {
-      "claim_id": "C078",
-      "locator": "sections[5].paragraphs[2]",
-      "claim_text": "pour soutenir que ces mécanismes n’ont pas de direction fixe : selon les conditions, ils conduisent à la divergence autant qu’à l’homogénéisation",
-      "supports": [
-        {
-          "id": "SUP-559b252a12c6b208",
-          "origin": "evidence:evidence.reception.json",
-          "path": "$.evidence.secondary_sources[1].establishes",
-          "access": "n/a",
-          "text": "LA DISCUSSION THÉORIQUE LA PLUS NETTE, et la seule source de ce dossier lue INTÉGRALEMENT. PAGINATIONS REFAITES AU TOUR DE CORRECTION : le contrôle de passe A signalait trois renvois faux ; il a raison sur les trois, et j'en ai trouvé un quatrième (voir `attribution.filiation_weber`). J'ai re-téléchargé le PDF de l'éditeur depuis le dépôt du MPIfG (pure.mpg.de, item_1232069, fichier ST_28_2010_Beckert.pdf, 17 p., titres courants « INSTITUTIONAL ISOMORPHISM REVISITED » / « SOCIOLOGICAL THEORY », pagination imprimée 150-166, donc page PDF n = page imprimée n+149) et relocalisé chaque citation. ÉTABLIT : (1) LE POIDS DU TEXTE — « Their paper became one of the most cited articles in sociology ever and together with the article by Meyer and Rowen (1977) shaped subsequent research in the field (Mizruchi and Fein 1999) » (p. 150 — EXACT). (2) LA CIBLE DE LA CRITIQUE EST LA RÉCEPTION, PAS LES AUTEURS, et Beckert le dit deux fois : « The intention of the article by DiMaggio and Powell (1983:147) was not to claim that processes of isomorphism are somehow more important than the opposite… Independent of this intention, the influence of the article has led to a one-sided picture of institutional development in the new sociological institutionalism in which isomorphism is given undue analytic weight (Mizruchi and Fein 1999) » (p. 151 — EXACT) ; et « This is not to be understood as a critique of the article by DiMaggio and Powell » (p. 152 — CORRIGÉ : la fiche écrivait p. 153). (3) LA THÈSE PROPRE : les mécanismes ne sont pas orientés — « All four mechanisms can support processes of institutional homogenization, but under different conditions they can also lead to institutional divergence » (p. 152 — CORRIGÉ : la fiche écrivait p. 153 ; les deux phrases se suivent dans le même paragraphe de la section d'ouverture). Beckert reprend les trois mécanismes sous les noms de POUVOIR (coercitif), ATTRACTION (normatif) et MIMÉSIS (mimétique), et AJOUTE LA COMPÉTITION comme quatrième — « To this I add competition as a fourth mechanism, which was deliberately not discussed by DiMaggio and Powell because they sought to provide an alternative to competition-based explanations of institutional isomorphism (DiMaggio and Powell 1983:147) » (p. 152 — CORRIGÉ : la fiche écrivait p. 152-153 ; la phrase tient tout entière sur la p. 152). Le développement de ce quatrième mécanisme, lui, est ailleurs : section « Competition », p. 160-162. (4) LA CONCLUSION, qui vaut prise de position sur l'héritage wébérien : « Not only does the “iron cage” have other causes than those envisioned by Max Weber; it may not exist at all » (p. 163 — EXACT). (5) UN CONSTAT DE MÉTHODE pour la suite du champ : « Contrary to studies in the new sociological institutionalism this research must not be set up to look for empirical proof for tendencies of homogenization (or heterogeneity), but must rather ask much more openly which of these two tendencies is observed, and due to which causal mechanisms » (p. 163 — page AJOUTÉE : la fiche n'en donnait aucune). AUTRES LOCALISATIONS REFAITES AU MÊME PASSAGE, toutes sur ce PDF : « The question is not whether homogenization or divergence is more important. Empirical studies uncover evidence for both » — p. 151, et non p. 152 ; « hence the reference to Max Weber in their title » — p. 151 ; « These scholars deliberately left competition out of their seminal article because they were aiming for a theoretical conceptualization of isomorphism that would provide an alternative to Max Weber's emphasis on the role of competitive market pressures in explaining processes of bureaucratization » — p. 160, et non p. 158-159 ; « an alternative to Max Weber's claim that the dominance of bureaucratic forms in modern capitalism (which is a homogenizing process) is primarily market driven » — p. 162, dans la conclusion, et non p. 158-159. CES DEUX DERNIÈRES SONT DEUX PHRASES DISTINCTES, à deux endroits distincts : la fiche les renvoyait toutes deux à une même page, fausse pour l'une comme pour l'autre. Compteur Semantic Scholar : 355 citations au 17 août 2026. CONSULTATION : TEXTE INTÉGRAL, deux fois (passage initial ; puis re-téléchargement et relocalisation systématique de chaque citation au tour de correction)."
-        },
-        {
           "id": "SUP-895f2725feb5b38e",
           "origin": "evidence:evidence.reception.json",
           "path": "$.evidence.reception.debates[0]",
           "access": "n/a",
           "text": "HOMOGÉNÉISATION OU DIVERGENCE ? Beckert (Sociological Theory, 2010) soutient que les quatre mécanismes — les trois de 1983 plus la compétition — sont neutres quant à la direction : « All four mechanisms can support processes of institutional homogenization, but under different conditions they can also lead to institutional divergence » (p. 152 — CORRIGÉ : la fiche écrivait p. 153). Il tient à distinguer sa cible : ce n'est pas l'article de 1983, c'est la tradition qui s'en réclame. Aucune réponse de DiMaggio ou Powell à ce texte n'a été trouvée dans les sources consultées."
+        },
+        {
+          "id": "SUP-af6a752e708c513b",
+          "origin": "evidence:evidence.reception.json",
+          "path": "$.evidence.reception.critiques[1].claim",
+          "access": "n/a",
+          "text": "Le néo-institutionnalisme sociologique a fait de l'isomorphisme un présupposé au lieu d'une hypothèse : « I argue that this is a one-sided focus that leaves out many insights from other institutional and macrosociological approaches and does not do justice to actual social change because it overlooks the role played by divergent institutional development » (résumé). Le remède proposé est interne : reprendre la typologie de 1983, y ajouter la compétition, et spécifier les conditions sous lesquelles chaque mécanisme pousse vers l'homogénéité ou vers la divergence. Beckert prend soin d'exonérer les auteurs : « This is not to be understood as a critique of the article by DiMaggio and Powell. »"
         }
       ]
     }
   ],
-  "estimated_tokens": 63945,
+  "estimated_tokens": 64008,
   "status": "READY"
 }
