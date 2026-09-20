@@ -1,6 +1,6 @@
 {
   "concept_id": "isomorphisme-institutionnel",
-  "candidate_sha256": "3cb1d065b264d7b279ce6c93ef1dc83938b606bd5f882118fd84d54f1384831b",
+  "candidate_sha256": "3651c8ab2d9d242ce696218c19d88417bfaf2175d6e0fe7634cd629fc9b9a26a",
   "paragraphs": [
     {
       "locator": "lead[0]",
@@ -78,7 +78,7 @@
       "start": 271,
       "end": 355,
       "claim_text": "ces organisations, parties de points très différents, se ressemblent de plus en plus",
-      "normalized_claim": "Les organisations d'un même secteur, parties de situations différentes, convergent vers des formes semblables.",
+      "normalized_claim": "Les organisations d'un même secteur, initialement différentes, convergent vers des formes semblables.",
       "support_ids": [
         "SUP-92b52d12447dc4d4",
         "SUP-bb4afa86d590cb7a"
@@ -90,7 +90,7 @@
       "start": 357,
       "end": 520,
       "claim_text": "Mêmes comptables recrutés pour satisfaire au droit fiscal, mêmes postes créés pour parer les accusations de discrimination, mêmes normes antipollution à respecter.",
-      "normalized_claim": "L'article donne comme exemples de contrainte les comptables embauchés pour le droit fiscal, les postes créés pour parer les accusations de discrimination et les normes antipollution.",
+      "normalized_claim": "Trois exemples de conformité imposée donnés par l'article : comptables pour le droit fiscal, postes créés contre les accusations de discrimination, normes antipollution.",
       "support_ids": [
         "SUP-b51f6e4eea07691b"
       ]
@@ -101,44 +101,47 @@
       "start": 521,
       "end": 607,
       "claim_text": "Ceux qui cherchaient à changer leur organisation la rendent plus semblable aux autres.",
-      "normalized_claim": "Chercher à changer son organisation la rend plus semblable aux autres (paradoxe du résumé de 1983).",
+      "normalized_claim": "Le paradoxe : chercher à changer son organisation la rend plus semblable aux autres.",
       "support_ids": [
         "SUP-6aa956ab45fc7633",
-        "SUP-255f6187479ca7f2"
+        "SUP-255f6187479ca7f2",
+        "SUP-0787aa4e34b46c0c"
       ]
     },
     {
       "claim_id": "C004",
       "locator": "lead[1]",
       "start": 0,
-      "end": 59,
-      "claim_text": "Deux sociologues américains, Paul DiMaggio et Walter Powell",
-      "normalized_claim": "Le concept est de Paul DiMaggio et Walter Powell, deux sociologues américains.",
+      "end": 30,
+      "claim_text": "Paul DiMaggio et Walter Powell",
+      "normalized_claim": "Les deux auteurs du concept sont Paul DiMaggio et Walter Powell.",
       "support_ids": [
         "SUP-f6921f5c48c85828",
         "SUP-8d55afda00c45d40",
-        "SUP-157000375461e8c2"
+        "SUP-157000375461e8c2",
+        "SUP-db331de9f64ab8dd"
       ]
     },
     {
       "claim_id": "C005",
       "locator": "lead[1]",
-      "start": 61,
-      "end": 117,
+      "start": 31,
+      "end": 87,
       "claim_text": "ont pris ce paradoxe au sérieux au début des années 1980",
-      "normalized_claim": "Ils ont traité ce paradoxe au début des années 1980 (article de 1983).",
+      "normalized_claim": "Leur travail sur ce paradoxe date du début des années 1980.",
       "support_ids": [
         "SUP-54a4ecbf8ba8be33",
-        "SUP-e42805aa88d5c8d3"
+        "SUP-e42805aa88d5c8d3",
+        "SUP-157000375461e8c2"
       ]
     },
     {
       "claim_id": "C006",
       "locator": "lead[1]",
-      "start": 119,
-      "end": 307,
+      "start": 89,
+      "end": 277,
       "claim_text": "L’explication qui vient spontanément est celle de la concurrence : le marché éliminerait les formes les moins efficaces et ne laisserait subsister que les meilleures, d’où la ressemblance.",
-      "normalized_claim": "L'explication concurrentielle (sélection des formes les plus efficaces par le marché) est l'explication rivale de la ressemblance.",
+      "normalized_claim": "L'explication concurrentielle attribue la ressemblance à l'élimination par le marché des formes les moins efficaces.",
       "support_ids": [
         "SUP-50c860462e2289a5",
         "SUP-a327d8c8a07bb308"
@@ -147,10 +150,10 @@
     {
       "claim_id": "C007",
       "locator": "lead[1]",
-      "start": 308,
-      "end": 379,
-      "claim_text": "Les deux auteurs montrent que cette explication tient de moins en moins",
-      "normalized_claim": "DiMaggio et Powell soutiennent que l'explication par la concurrence explique de moins en moins le changement structurel.",
+      "start": 278,
+      "end": 349,
+      "claim_text": "Les deux auteurs avancent que cette explication tient de moins en moins",
+      "normalized_claim": "DiMaggio et Powell soutiennent que l'explication par la concurrence vaut de moins en moins.",
       "support_ids": [
         "SUP-50c860462e2289a5",
         "SUP-092bf8f34085aed8"
@@ -159,10 +162,10 @@
     {
       "claim_id": "C008",
       "locator": "lead[1]",
-      "start": 381,
-      "end": 461,
+      "start": 351,
+      "end": 431,
       "claim_text": "et qu’une autre logique, plus discrète, produit l’essentiel de cette convergence",
-      "normalized_claim": "Une autre logique (l'isomorphisme institutionnel) produirait l'essentiel de la convergence.",
+      "normalized_claim": "Une autre logique, non concurrentielle, produit l'essentiel de la convergence.",
       "support_ids": [
         "SUP-92b52d12447dc4d4",
         "SUP-50e0b1091ab542b2"
@@ -174,7 +177,7 @@
       "start": 0,
       "end": 150,
       "claim_text": "L’idée d’une sélection par le marché suppose une concurrence qui élimine : les formes les moins efficaces disparaissent, les autres servent de modèle.",
-      "normalized_claim": "L'isomorphisme compétitif suppose une concurrence qui élimine les formes les moins efficaces.",
+      "normalized_claim": "La sélection par le marché suppose une concurrence éliminatoire.",
       "support_ids": [
         "SUP-50c860462e2289a5"
       ]
@@ -185,7 +188,7 @@
       "start": 151,
       "end": 216,
       "claim_text": "DiMaggio et Powell ne la récusent pas, ils en bornent le domaine.",
-      "normalized_claim": "Les auteurs ne rejettent pas l'explication par la sélection : ils en limitent le domaine de validité.",
+      "normalized_claim": "Les auteurs ne rejettent pas la sélection par le marché : ils en limitent le domaine de validité.",
       "support_ids": [
         "SUP-9252a13174a24b8a",
         "SUP-50c860462e2289a5"
@@ -197,7 +200,7 @@
       "start": 217,
       "end": 277,
       "claim_text": "Elle vaut surtout là où la concurrence est libre et ouverte.",
-      "normalized_claim": "L'explication compétitive vaut surtout dans les champs à concurrence libre et ouverte.",
+      "normalized_claim": "L'isomorphisme compétitif est le plus pertinent là où existe une concurrence libre et ouverte.",
       "support_ids": [
         "SUP-50c860462e2289a5",
         "SUP-54ad02edb1717819"
@@ -222,7 +225,7 @@
       "start": 425,
       "end": 554,
       "claim_text": "Le moteur de la rationalisation, écrivent les deux auteurs, s’est déplacé du marché concurrentiel vers l’État et les professions.",
-      "normalized_claim": "Les auteurs écrivent que le moteur de la rationalisation s'est déplacé du marché concurrentiel vers l'État et les professions.",
+      "normalized_claim": "Attribution aux auteurs : le moteur de la rationalisation s'est déplacé du marché concurrentiel vers l'État et les professions.",
       "support_ids": [
         "SUP-92b52d12447dc4d4",
         "SUP-91dc7388087a9c48",
@@ -235,7 +238,7 @@
       "start": 0,
       "end": 80,
       "claim_text": "Le résumé de leur article pose le paradoxe en une phrase, ici rendue en français",
-      "normalized_claim": "La phrase citée vient du résumé de l'article et est donnée en traduction française (interne).",
+      "normalized_claim": "Le passage cité provient du résumé de l'article et est donné en traduction française.",
       "support_ids": [
         "SUP-3071e13cb7568267",
         "SUP-338209f44b3900f5",
@@ -250,7 +253,7 @@
       "start": 83,
       "end": 207,
       "claim_text": "« […] des acteurs rationnels rendent leurs organisations toujours plus semblables à mesure qu’ils cherchent à les changer. »",
-      "normalized_claim": "Citation exacte, en traduction, de la troisième phrase du résumé de l'article de 1983.",
+      "normalized_claim": "Citation exacte, en traduction, du fragment du résumé p. 147.",
       "support_ids": [
         "SUP-255f6187479ca7f2",
         "SUP-0787aa4e34b46c0c",
@@ -265,7 +268,7 @@
       "start": 208,
       "end": 244,
       "claim_text": "Le mot qui porte est « rationnels ».",
-      "normalized_claim": "Lecture interprétative : le terme décisif de la phrase est « rationnels ».",
+      "normalized_claim": "Le terme décisif de la citation est « rationnels ».",
       "support_ids": [
         "SUP-a20ad581650c0746",
         "SUP-38aa11ac413b2225"
@@ -277,7 +280,7 @@
       "start": 245,
       "end": 436,
       "claim_text": "L’explication ne dit rien des motifs ni des états d’esprit des dirigeants : elle porte sur l’éventail des solutions qui leur paraissent raisonnables ou prudentes au moment où il faut décider.",
-      "normalized_claim": "La théorie porte non sur les états psychologiques des acteurs mais sur l'éventail des choix perçus comme rationnels ou prudents.",
+      "normalized_claim": "La théorie porte sur les déterminants structuraux de l'éventail des choix perçus comme rationnels ou prudents, non sur les états psychologiques des acteurs.",
       "support_ids": [
         "SUP-a20ad581650c0746",
         "SUP-38aa11ac413b2225"
@@ -289,7 +292,7 @@
       "start": 437,
       "end": 514,
       "claim_text": "Ce n’est pas le choix qui est en cause, c’est le menu dans lequel il se fait.",
-      "normalized_claim": "La théorie porte sur le menu des options considérées, pas sur le choix opéré dans ce menu.",
+      "normalized_claim": "L'objet de la théorie est le menu des options, pas le choix opéré dans ce menu.",
       "support_ids": [
         "SUP-38aa11ac413b2225"
       ]
@@ -300,7 +303,7 @@
       "start": 0,
       "end": 65,
       "claim_text": "Les auteurs appellent ce processus l’isomorphisme institutionnel.",
-      "normalized_claim": "Le nom donné par les auteurs à ce processus est l'isomorphisme institutionnel.",
+      "normalized_claim": "Le nom donné par les auteurs à ce processus est « isomorphisme institutionnel ».",
       "support_ids": [
         "SUP-92b52d12447dc4d4",
         "SUP-50e0b1091ab542b2"
@@ -312,7 +315,7 @@
       "start": 66,
       "end": 129,
       "claim_text": "Le mot n’est pas d’eux : ils le reprennent à l’écologie humaine",
-      "normalized_claim": "Le mot « isomorphisme » n'est pas forgé par les auteurs : ils le reprennent à l'écologie humaine (Hawley 1968).",
+      "normalized_claim": "Le mot « isomorphisme » n'est pas forgé par les auteurs : il est repris à Hawley / l'écologie humaine.",
       "support_ids": [
         "SUP-6c178da6ee39a2b2",
         "SUP-3df5b8b7689335bb",
@@ -326,7 +329,7 @@
       "start": 131,
       "end": 263,
       "claim_text": "où l’isomorphisme désigne un processus contraignant qui force une unité à ressembler aux autres unités soumises aux mêmes conditions",
-      "normalized_claim": "Définition reprise : l'isomorphisme est un processus contraignant qui force une unité à ressembler aux autres unités soumises aux mêmes conditions d'environnement.",
+      "normalized_claim": "Rendu français de la définition reprise à Hawley (p. 149).",
       "support_ids": [
         "SUP-92b52d12447dc4d4",
         "SUP-b8ece3068d823a50"
@@ -349,7 +352,7 @@
       "start": 385,
       "end": 602,
       "claim_text": "Quant à l’adjectif, il sert à opposer : il y a l’isomorphisme compétitif, celui de la sélection par le marché, et l’institutionnel, qui joue quand les organisations se disputent moins des clients que de la légitimité.",
-      "normalized_claim": "L'adjectif « institutionnel » oppose ce type à l'isomorphisme compétitif : la compétition porte alors sur la légitimité plus que sur les clients.",
+      "normalized_claim": "L'adjectif « institutionnel » oppose ce type à l'isomorphisme compétitif ; l'institutionnel joue quand la compétition porte sur la légitimité.",
       "support_ids": [
         "SUP-b8ece3068d823a50",
         "SUP-50c860462e2289a5",
@@ -363,7 +366,7 @@
       "start": 55,
       "end": 265,
       "claim_text": "Les premiers à adopter une nouveauté le font en général pour faire mieux ; mais à mesure qu’elle se répand, un seuil est franchi au-delà duquel l’adopter procure de la légitimité plus qu’un gain de performance.",
-      "normalized_claim": "Les premiers adoptants visent la performance ; passé un seuil de diffusion, l'adoption procure de la légitimité plutôt qu'un gain de performance.",
+      "normalized_claim": "Les premiers adoptants cherchent la performance ; passé un seuil de diffusion, l'adoption procure de la légitimité plutôt qu'un gain de performance.",
       "support_ids": [
         "SUP-baeb23fe52a14ac2",
         "SUP-d6d3ba395996729a",
@@ -376,7 +379,7 @@
       "start": 266,
       "end": 359,
       "claim_text": "La pratique n’a pas changé ; ce qui a changé, c’est le nombre de ceux qui l’ont déjà adoptée.",
-      "normalized_claim": "Ce qui change au seuil n'est pas la pratique mais le nombre de ses adoptants.",
+      "normalized_claim": "Ce qui change au seuil n'est pas la pratique mais le nombre d'adoptants.",
       "support_ids": [
         "SUP-baeb23fe52a14ac2"
       ]
@@ -387,7 +390,7 @@
       "start": 360,
       "end": 434,
       "claim_text": "L’article indique la marque à chercher, empruntée à des travaux qu’il cite",
-      "normalized_claim": "La signature empirique du seuil est donnée par l'article à partir de travaux d'autrui qu'il cite.",
+      "normalized_claim": "La signature empirique du basculement est empruntée par l'article à des travaux d'autrui qu'il cite.",
       "support_ids": [
         "SUP-72ff283f4fe28b85",
         "SUP-95722042581ccc83"
@@ -399,7 +402,7 @@
       "start": 437,
       "end": 736,
       "claim_text": "dans la diffusion de la réforme de la fonction publique aux États-Unis, les premières adoptions s’expliquent par les caractéristiques propres de la ville qui réforme, les tardives ne s’expliquent plus par elles, mais par ce qui est devenu entretemps la forme légitime d’une administration municipale",
-      "normalized_claim": "Dans la diffusion de la réforme de la fonction publique municipale aux États-Unis, les adoptions précoces s'expliquent par les caractéristiques de la ville, les tardives par la définition institutionnelle de la forme légitime.",
+      "normalized_claim": "Résultat rapporté (Zucker & Tolbert) sur la réforme de la fonction publique municipale aux États-Unis : les adoptions précoces s'expliquent par les caractéristiques de la ville, les tardives par la définition institutionnelle de la forme légitime.",
       "support_ids": [
         "SUP-72ff283f4fe28b85"
       ]
@@ -422,7 +425,7 @@
       "start": 49,
       "end": 326,
       "claim_text": "Une organisation qui dépend d’une autre pour exister, financement, autorisation, agrément, se voit imposer des formes qu’elle n’a pas choisies : cycle budgétaire, exercice comptable, rapport annuel, états à produire pour rester éligible aux contrats et aux subventions publics.",
-      "normalized_claim": "Une organisation dépendante se voit imposer cycle budgétaire, exercice comptable, rapport annuel et obligations de reporting conditionnant l'éligibilité aux contrats et fonds publics.",
+      "normalized_claim": "La dépendance impose des formes communes : cycle budgétaire, exercice comptable, rapport annuel, obligations de reporting conditionnant l'éligibilité aux contrats et fonds publics.",
       "support_ids": [
         "SUP-b51f6e4eea07691b",
         "SUP-77b37e726ba999cf"
@@ -434,7 +437,7 @@
       "start": 327,
       "end": 400,
       "claim_text": "Rien de tout cela ne sort de sa mission, tout vient de son interlocuteur.",
-      "normalized_claim": "Ces formes ne procèdent pas de la mission de l'organisation mais de l'organisation dont elle dépend.",
+      "normalized_claim": "Ces formes ne découlent pas de la mission de l'organisation mais de l'organisation dont elle dépend.",
       "support_ids": [
         "SUP-b51f6e4eea07691b"
       ]
@@ -445,7 +448,7 @@
       "start": 401,
       "end": 552,
       "claim_text": "Et la pression n’a pas besoin d’être juridique : elle peut se faire sentir comme une force, comme une persuasion, ou comme une invitation à s’entendre.",
-      "normalized_claim": "La pression coercitive peut être ressentie comme force, persuasion ou invitation à s'entendre, sans être juridique.",
+      "normalized_claim": "La pression coercitive n'est pas nécessairement juridique : force, persuasion ou invitation à s'entendre.",
       "support_ids": [
         "SUP-b51f6e4eea07691b",
         "SUP-ad9ab5bf2688d0d7",
@@ -458,7 +461,7 @@
       "start": 0,
       "end": 116,
       "claim_text": "Ce qui rend ce mécanisme redoutable, c’est qu’il atteint jusqu’aux organisations qui refusent la forme par principe.",
-      "normalized_claim": "Le mécanisme coercitif atteint même les organisations hostiles par principe à la forme imposée.",
+      "normalized_claim": "Le mécanisme coercitif atteint jusqu'aux organisations hostiles par principe à la forme imposée.",
       "support_ids": [
         "SUP-b51f6e4eea07691b",
         "SUP-76d951e58b20ac8b"
@@ -468,9 +471,9 @@
       "claim_id": "C033",
       "locator": "sections[1].paragraphs[1]",
       "start": 117,
-      "end": 314,
-      "claim_text": "L’article rapporte le cas d’associations de quartier attachées à la démocratie participative et contraintes de se doter d’une hiérarchie pour obtenir le soutien de bailleurs eux-mêmes hiérarchisés,",
-      "normalized_claim": "L'article rapporte (Milofsky 1981) des associations de quartier attachées à la démocratie participative contraintes d'adopter une hiérarchie pour être financées.",
+      "end": 313,
+      "claim_text": "L’article rapporte le cas d’associations de quartier attachées à la démocratie participative et contraintes de se doter d’une hiérarchie pour obtenir le soutien de bailleurs eux-mêmes hiérarchisés",
+      "normalized_claim": "Cas rapporté par l'article (Milofsky) : des associations de quartier attachées à la démocratie participative se dotent d'une hiérarchie pour être financées.",
       "support_ids": [
         "SUP-b51f6e4eea07691b",
         "SUP-76d951e58b20ac8b"
@@ -482,7 +485,7 @@
       "start": 315,
       "end": 432,
       "claim_text": "et celui d’écoles alternatives qui ont dû se donner un directeur pour pouvoir traiter avec l’administration scolaire.",
-      "normalized_claim": "L'article rapporte (Swidler 1979) des écoles libres obligées de se doter d'un directeur pour traiter avec l'administration scolaire.",
+      "normalized_claim": "Cas rapporté par l'article (Swidler) : des écoles libres doivent se doter d'un directeur pour traiter avec l'administration scolaire.",
       "support_ids": [
         "SUP-b51f6e4eea07691b"
       ]
@@ -493,7 +496,7 @@
       "start": 433,
       "end": 675,
       "claim_text": "Les auteurs en tirent une règle : devoir loger la responsabilité dans un rôle formellement défini, fût-ce pour la forme, afin de pouvoir traiter avec des organisations hiérarchiques, est un obstacle constant au maintien de formes égalitaires.",
-      "normalized_claim": "Les auteurs énoncent que la nécessité de loger responsabilité et autorité, fût-ce cérémoniellement, dans un rôle formel pour interagir avec des organisations hiérarchiques est un obstacle constant aux formes égalitaires.",
+      "normalized_claim": "Formule générale des auteurs p. 151 sur l'obstacle constant au maintien de formes égalitaires ou collectivistes.",
       "support_ids": [
         "SUP-b51f6e4eea07691b"
       ]
@@ -504,7 +507,7 @@
       "start": 0,
       "end": 171,
       "claim_text": "Le deuxième mécanisme joue quand une organisation ne sait pas très bien quoi faire : techniques mal comprises, buts ambigus, environnement qui rend la situation illisible.",
-      "normalized_claim": "Le deuxième mécanisme (mimétique) a pour antécédent l'incertitude : technologies mal comprises, buts ambigus, incertitude symbolique créée par l'environnement.",
+      "normalized_claim": "Antécédent du mécanisme mimétique : technologies mal comprises, buts ambigus, incertitude symbolique créée par l'environnement.",
       "support_ids": [
         "SUP-5510b74d3b6c2b74",
         "SUP-6ee0f9cf22cab22f",
@@ -517,7 +520,7 @@
       "start": 172,
       "end": 269,
       "claim_text": "Chercher soi-même la bonne solution coûte cher, reprendre une solution déjà disponible coûte peu.",
-      "normalized_claim": "Reprendre une solution disponible est peu coûteux face à une recherche propre (problemistic search).",
+      "normalized_claim": "Économie du geste mimétique : la recherche problémiste fournit une solution viable à peu de frais.",
       "support_ids": [
         "SUP-5510b74d3b6c2b74"
       ]
@@ -528,7 +531,7 @@
       "start": 270,
       "end": 461,
       "claim_text": "Le terme des auteurs n’est pas l’imitation mais la prise pour modèle, et la différence porte : imiter suppose l’intention de ressembler, prendre modèle suppose seulement qu’un modèle soit là.",
-      "normalized_claim": "Le terme technique de l'article est « modeling » et non « imitation » : l'imitation suppose l'intention de ressembler, le modeling seulement la disponibilité d'un modèle.",
+      "normalized_claim": "Le terme technique de l'article est « modeling » et non « imitation » ; la différence tient à l'intention de ressembler.",
       "support_ids": [
         "SUP-f60c06819fdabdbc",
         "SUP-032a4a1777338ec2",
@@ -541,7 +544,7 @@
       "start": 462,
       "end": 616,
       "claim_text": "L’organisation copiée peut d’ailleurs ignorer qu’elle l’est, ou n’avoir aucun désir de l’être : elle sert de réserve de pratiques commodes, pas de maître.",
-      "normalized_claim": "L'organisation prise pour modèle peut ignorer qu'elle l'est ou ne pas souhaiter l'être : elle n'est qu'une source commode de pratiques.",
+      "normalized_claim": "L'organisation prise pour modèle peut ignorer qu'elle l'est ou n'avoir aucun désir de l'être ; elle est une source commode de pratiques.",
       "support_ids": [
         "SUP-032a4a1777338ec2",
         "SUP-5510b74d3b6c2b74"
@@ -553,7 +556,7 @@
       "start": 617,
       "end": 736,
       "claim_text": "Les modèles circulent par la mobilité des salariés, par les cabinets de conseil, par les associations professionnelles.",
-      "normalized_claim": "Les modèles se diffusent par le transfert et la rotation des salariés, les cabinets de conseil et les associations professionnelles.",
+      "normalized_claim": "Vecteurs de diffusion des modèles : mobilité du personnel, cabinets de conseil, associations professionnelles.",
       "support_ids": [
         "SUP-5510b74d3b6c2b74"
       ]
@@ -564,7 +567,7 @@
       "start": 79,
       "end": 108,
       "claim_text": "Le texte donne trois raisons.",
-      "normalized_claim": "L'article avance trois raisons pour lesquelles la prise pour modèle produit de l'uniformité.",
+      "normalized_claim": "L'article donne trois raisons expliquant pourquoi la reprise produit de l'uniformité.",
       "support_ids": [
         "SUP-5510b74d3b6c2b74"
       ]
@@ -575,7 +578,7 @@
       "start": 109,
       "end": 213,
       "claim_text": "Le choix est pauvre : malgré une recherche considérable de diversité, il y a peu de variation où puiser.",
-      "normalized_claim": "Malgré une recherche considérable de diversité, il y a relativement peu de variation disponible.",
+      "normalized_claim": "Contrainte d'offre : malgré une recherche considérable de diversité, il y a peu de variation disponible.",
       "support_ids": [
         "SUP-5510b74d3b6c2b74",
         "SUP-2f9b66e8ecd35eb2"
@@ -587,7 +590,7 @@
       "start": 214,
       "end": 361,
       "claim_text": "Les intermédiaires sont peu nombreux, les grandes organisations s’adressant à un petit ensemble de cabinets qui répandent partout quelques modèles.",
-      "normalized_claim": "Les grandes organisations choisissent parmi un petit ensemble de grands cabinets de conseil qui répandent partout quelques modèles.",
+      "normalized_claim": "Les grandes organisations choisissent parmi un petit ensemble de cabinets de conseil qui diffusent partout quelques modèles.",
       "support_ids": [
         "SUP-5510b74d3b6c2b74"
       ]
@@ -598,7 +601,7 @@
       "start": 362,
       "end": 490,
       "claim_text": "Et l’on copie ce qui se voit, les changements de structure s’observant bien plus aisément que ceux de politique ou de stratégie.",
-      "normalized_claim": "Les changements de structure sont observables, ceux de politique et de stratégie le sont moins : on copie ce qui se voit.",
+      "normalized_claim": "Biais de visibilité : les changements de structure sont observables, ceux de politique et de stratégie moins.",
       "support_ids": [
         "SUP-5510b74d3b6c2b74"
       ]
@@ -609,7 +612,7 @@
       "start": 491,
       "end": 778,
       "claim_text": "L’article rapporte ainsi le cas d’une grande station de télévision publique passée, sur conseil d’un cabinet, à une organisation par divisions : ses dirigeants doutaient du gain d’efficacité et constataient des doublons, mais y voyaient un signal adressé à leurs partenaires commerciaux.",
-      "normalized_claim": "Cas rapporté par l'article : une grande station de télévision publique adopte, sur conseil d'un cabinet, une structure multidivisionnelle dont ses dirigeants doutent du gain d'efficacité, y voyant un signal envoyé aux partenaires commerciaux.",
+      "normalized_claim": "Cas rapporté p. 152 : une grande station de télévision publique adopte une structure multidivisionnelle sur conseil d'un cabinet, malgré des doutes sur l'efficacité et des doublons, comme signal adressé aux entreprises partenaires.",
       "support_ids": [
         "SUP-5510b74d3b6c2b74",
         "SUP-ed12e5b6960c9a76"
@@ -621,7 +624,7 @@
       "start": 0,
       "end": 47,
       "claim_text": "Le troisième mécanisme passe par les personnes.",
-      "normalized_claim": "Le troisième mécanisme (normatif) opère par les personnes, via la professionnalisation et le recrutement.",
+      "normalized_claim": "Le troisième mécanisme (normatif) opère par le personnel.",
       "support_ids": [
         "SUP-50e0b1091ab542b2",
         "SUP-ec9601a910d6f305"
@@ -633,7 +636,7 @@
       "start": 48,
       "end": 232,
       "claim_text": "La professionnalisation n’est pas ici une montée en compétence : c’est la lutte collective des membres d’un métier pour définir les conditions de leur travail et fonder leur autonomie.",
-      "normalized_claim": "La professionnalisation désigne ici la lutte collective des membres d'un métier pour définir les conditions de leur travail et fonder leur autonomie professionnelle, non une montée en compétence.",
+      "normalized_claim": "Définition de la professionnalisation reprise à Larson et Collins : lutte collective pour définir les conditions et méthodes du travail et fonder l'autonomie professionnelle.",
       "support_ids": [
         "SUP-ec9601a910d6f305",
         "SUP-0786eb848daa954e"
@@ -645,7 +648,7 @@
       "start": 233,
       "end": 422,
       "claim_text": "Elle s’appuie sur deux choses : une formation dont la base savante est produite à l’université, et des réseaux professionnels qui traversent les organisations et diffusent vite les modèles.",
-      "normalized_claim": "Deux aspects de la professionnalisation sont sources d'isomorphisme : la base cognitive universitaire de la formation et les réseaux professionnels traversant les organisations.",
+      "normalized_claim": "Les deux aspects de la professionnalisation : base cognitive universitaire de la formation, réseaux professionnels inter-organisationnels diffusant rapidement les modèles.",
       "support_ids": [
         "SUP-0ff8a64b43e8c518",
         "SUP-ec9601a910d6f305",
@@ -658,7 +661,7 @@
       "start": 423,
       "end": 644,
       "claim_text": "Son opérateur concret est le recrutement : on embauche dans les entreprises du même secteur, on puise les jeunes cadres dans quelques écoles, on prend toujours ses dirigeants dans les directions financières ou juridiques.",
-      "normalized_claim": "Le filtrage du personnel est le mécanisme concret : recrutement dans les firmes du même secteur, viviers de formation étroits, promotion des dirigeants issus des départements financiers ou juridiques.",
+      "normalized_claim": "Le filtrage du personnel : embauche dans le même secteur, recrutement de cadres à haut potentiel dans un petit nombre d'établissements, promotion systématique depuis les directions financières ou juridiques.",
       "support_ids": [
         "SUP-ec9601a910d6f305"
       ]
@@ -669,7 +672,7 @@
       "start": 645,
       "end": 871,
       "claim_text": "Beaucoup de carrières professionnelles sont si étroitement gardées, écrivent les auteurs, à l’entrée comme tout au long de la progression, que ceux qui parviennent au sommet sont pratiquement indiscernables les uns des autres.",
-      "normalized_claim": "Citation des auteurs : beaucoup de filières de carrière sont si étroitement gardées, à l'entrée comme dans la progression, que ceux qui atteignent le sommet sont pratiquement indiscernables.",
+      "normalized_claim": "Attribution aux auteurs de l'énoncé p. 152-153 sur les carrières étroitement gardées et l'indiscernabilité de ceux qui parviennent au sommet.",
       "support_ids": [
         "SUP-ec9601a910d6f305",
         "SUP-2f9b66e8ecd35eb2"
@@ -681,7 +684,7 @@
       "start": 0,
       "end": 83,
       "claim_text": "Ce mécanisme a une condition que l’on oublie vite, et elle peut inverser son effet.",
-      "normalized_claim": "Le mécanisme normatif est conditionnel et son effet peut s'inverser.",
+      "normalized_claim": "Le mécanisme normatif a une condition qui peut inverser son effet.",
       "support_ids": [
         "SUP-8693f495273535e3",
         "SUP-175fe447fd4610e2"
@@ -693,7 +696,7 @@
       "start": 84,
       "end": 297,
       "claim_text": "Quand les organisations d’un même domaine diffèrent et que le métier s’apprend sur le tas, la socialisation peut renforcer les différences au lieu de les éroder : chacun prendrait alors les habitudes de sa maison.",
-      "normalized_claim": "Quand les organisations d'un champ diffèrent et que la socialisation primaire se fait sur le tas, celle-ci peut renforcer les différences plutôt que les éroder.",
+      "normalized_claim": "Quand les organisations d'un champ diffèrent et que la socialisation primaire se fait sur le tas, la socialisation peut renforcer les différences.",
       "support_ids": [
         "SUP-8693f495273535e3",
         "SUP-175fe447fd4610e2"
@@ -705,7 +708,7 @@
       "start": 298,
       "end": 491,
       "claim_text": "C’est l’autre socialisation qui homogénéise, celle qui traverse les organisations, ateliers des associations professionnelles, formation continue, interventions de cabinets, presse spécialisée.",
-      "normalized_claim": "C'est la socialisation inter-organisationnelle (ateliers d'associations professionnelles, formation continue, conseil, presse spécialisée) qui agit comme force isomorphique.",
+      "normalized_claim": "C'est la socialisation inter-organisationnelle (ateliers des associations professionnelles, formation continue, cabinets, presse spécialisée) qui agit comme force isomorphique.",
       "support_ids": [
         "SUP-8693f495273535e3"
       ]
@@ -716,7 +719,7 @@
       "start": 0,
       "end": 73,
       "claim_text": "Ces trois mécanismes n’opèrent pas entre n’importe quelles organisations.",
-      "normalized_claim": "Les trois mécanismes opèrent à l'intérieur d'un cadre délimité, le champ organisationnel.",
+      "normalized_claim": "Le jeu des trois mécanismes est délimité par un cadre déterminé.",
       "support_ids": [
         "SUP-365c39b9c6493dc3",
         "SUP-0b6dcac267e23f0e"
@@ -728,7 +731,7 @@
       "start": 74,
       "end": 172,
       "claim_text": "Leur cadre a un nom, le champ, et il ne se confond ni avec un marché ni avec un secteur d’activité",
-      "normalized_claim": "L'unité d'analyse est le champ organisationnel, qui n'est ni un marché ni un secteur.",
+      "normalized_claim": "Le cadre est le champ organisationnel, qui n'est ni un marché ni un secteur.",
       "support_ids": [
         "SUP-365c39b9c6493dc3",
         "SUP-5f686d143af54b49",
@@ -741,7 +744,7 @@
       "start": 175,
       "end": 372,
       "claim_text": "il réunit les organisations qui produisent des services semblables, mais aussi leurs fournisseurs principaux, ceux qui consomment leurs ressources et leurs produits, et les agences qui les régulent",
-      "normalized_claim": "Le champ comprend les fournisseurs clés, les consommateurs de ressources et de produits, les agences de régulation et les organisations produisant des services similaires.",
+      "normalized_claim": "Rendu français de la définition du champ organisationnel p. 148.",
       "support_ids": [
         "SUP-0e637b827bc4f0b9",
         "SUP-365c39b9c6493dc3"
@@ -753,7 +756,7 @@
       "start": 374,
       "end": 454,
       "claim_text": "Autant dire, pour une bonne part, des acteurs qui ne se font aucune concurrence.",
-      "normalized_claim": "La définition du champ inclut des acteurs qui ne sont pas en concurrence entre eux.",
+      "normalized_claim": "Le champ inclut des acteurs qui ne sont pas en concurrence entre eux.",
       "support_ids": [
         "SUP-5f686d143af54b49",
         "SUP-12008ec2e7976235"
@@ -765,7 +768,7 @@
       "start": 455,
       "end": 602,
       "claim_text": "Son périmètre ne se décrète pas non plus : il se détermine par enquête, et un champ n’existe que pour autant qu’il est institutionnellement défini.",
-      "normalized_claim": "La structure d'un champ ne peut être déterminée a priori mais par enquête empirique, et les champs n'existent que dans la mesure où ils sont institutionnellement définis.",
+      "normalized_claim": "La structure d'un champ ne peut être déterminée a priori mais par enquête empirique ; les champs n'existent que pour autant qu'ils sont institutionnellement définis.",
       "support_ids": [
         "SUP-365c39b9c6493dc3"
       ]
@@ -776,7 +779,7 @@
       "start": 0,
       "end": 330,
       "claim_text": "Un champ se fabrique, et les auteurs nomment quatre choses qui le font : les organisations interagissent davantage entre elles, des structures de domination et des coalitions s’y dessinent nettement, la quantité d’informations à traiter augmente, et les participants prennent conscience d’être engagés dans une entreprise commune.",
-      "normalized_claim": "La structuration d'un champ comporte quatre composants : interaction accrue, structures de domination et coalitions nettement dessinées, charge d'information accrue, conscience mutuelle d'une entreprise commune.",
+      "normalized_claim": "Les quatre composants de la structuration nommés par les auteurs.",
       "support_ids": [
         "SUP-defd63dd4844e3a1",
         "SUP-952905b6aa84122a"
@@ -788,7 +791,7 @@
       "start": 331,
       "end": 488,
       "claim_text": "Au début de la vie d’un champ, les formes restent diverses ; une fois qu’il est bien établi, la poussée vers l’homogénéité devient, écrivent-ils, inexorable.",
-      "normalized_claim": "Au début de leur cycle de vie les champs affichent une diversité considérable ; une fois le champ bien établi, la poussée vers l'homogénéisation est dite inexorable.",
+      "normalized_claim": "Attribution aux auteurs : diversité initiale des champs, puis poussée inexorable vers l'homogénéisation une fois le champ bien établi.",
       "support_ids": [
         "SUP-bb4afa86d590cb7a",
         "SUP-da059619a493eb59"
@@ -800,7 +803,7 @@
       "start": 0,
       "end": 240,
       "claim_text": "Le point décisif est celui-ci : aucun des trois mécanismes ne passe par une preuve d’efficacité, et les auteurs précisent que ces processus se poursuivent en l’absence de tout élément établissant qu’ils améliorent le fonctionnement interne.",
-      "normalized_claim": "Chacun des processus isomorphiques institutionnels peut se poursuivre en l'absence de preuve qu'il améliore l'efficacité interne de l'organisation.",
+      "normalized_claim": "Attribution aux auteurs : les processus isomorphiques institutionnels se poursuivent en l'absence de preuve qu'ils augmentent l'efficacité interne.",
       "support_ids": [
         "SUP-9cef5586b27d48ae",
         "SUP-ab956d05f1fb7392",
@@ -813,7 +816,7 @@
       "start": 241,
       "end": 340,
       "claim_text": "Cela ne veut pas dire que la ressemblance ne rapporte rien : elle rapporte beaucoup, mais ailleurs.",
-      "normalized_claim": "La ressemblance procure des avantages, mais d'un autre ordre que l'efficacité.",
+      "normalized_claim": "La ressemblance est récompensée, mais sur un autre registre que l'efficacité.",
       "support_ids": [
         "SUP-9cef5586b27d48ae",
         "SUP-64a2481f78e6b164"
@@ -825,7 +828,7 @@
       "start": 341,
       "end": 560,
       "claim_text": "Elle facilite les transactions, attire un personnel soucieux de carrière, fait reconnaître comme légitime et respectable, fait entrer dans les catégories administratives qui ouvrent droit aux subventions et aux marchés.",
-      "normalized_claim": "La similarité facilite les transactions, attire un personnel de carrière, fait reconnaître comme légitime et respectable et fait entrer dans les catégories administratives ouvrant droit aux subventions et marchés.",
+      "normalized_claim": "Liste des bénéfices de la similarité donnée p. 153-154.",
       "support_ids": [
         "SUP-9cef5586b27d48ae",
         "SUP-7dff755e014bcbd1"
@@ -837,7 +840,7 @@
       "start": 561,
       "end": 692,
       "claim_text": "Rien de tout cela n’assure pour autant que les organisations conformes fassent ce qu’elles font mieux que celles qui s’en écartent.",
-      "normalized_claim": "Rien n'assure que les organisations conformes fassent ce qu'elles font plus efficacement que leurs pairs déviants.",
+      "normalized_claim": "Rendu de la phrase p. 153-154 : rien n'assure que les organisations conformistes soient plus efficaces que leurs pairs déviants.",
       "support_ids": [
         "SUP-9cef5586b27d48ae",
         "SUP-64a2481f78e6b164"
@@ -849,7 +852,7 @@
       "start": 693,
       "end": 763,
       "claim_text": "L’efficacité perd son rôle de cause ; elle ne devient pas une victime.",
-      "normalized_claim": "L'article retire à l'efficacité son rôle de cause sans en faire une victime.",
+      "normalized_claim": "L'article retire l'efficacité du rôle de cause sans en faire une victime.",
       "support_ids": [
         "SUP-64a2481f78e6b164",
         "SUP-9cef5586b27d48ae"
@@ -861,7 +864,7 @@
       "start": 0,
       "end": 66,
       "claim_text": "Une conséquence suit, qui vaut pour l’ensemble et non pour chacun.",
-      "normalized_claim": "Le résultat énoncé porte sur le niveau collectif et non sur chaque organisation prise isolément.",
+      "normalized_claim": "Le paradoxe d'agrégation vaut au niveau collectif et non individuel.",
       "support_ids": [
         "SUP-283210537714b72d"
       ]
@@ -872,7 +875,7 @@
       "start": 67,
       "end": 265,
       "claim_text": "Des stratégies rationnelles pour une organisation prise isolément peuvent cesser de l’être si un grand nombre les adopte, et le fait même qu’elles soient approuvées rend leur adoption plus probable.",
-      "normalized_claim": "Des stratégies rationnelles pour une organisation isolée peuvent ne plus l'être si un grand nombre les adopte ; leur sanction normative accroît la probabilité de leur adoption.",
+      "normalized_claim": "Rendu de la p. 148 : des stratégies rationnelles individuellement peuvent ne pas l'être si un grand nombre les adopte, et leur sanction normative accroît la probabilité de leur adoption.",
       "support_ids": [
         "SUP-283210537714b72d",
         "SUP-d6d3ba395996729a"
@@ -884,7 +887,7 @@
       "start": 266,
       "end": 405,
       "claim_text": "Chaque organisation répond alors à un environnement fait des réponses des autres, qui répondent elles-mêmes à un environnement de réponses.",
-      "normalized_claim": "Les organisations d'un champ structuré répondent à un environnement constitué d'autres organisations répondant elles-mêmes à un environnement de réponses.",
+      "normalized_claim": "Rendu de la paraphrase de Schelling p. 149.",
       "support_ids": [
         "SUP-283210537714b72d"
       ]
@@ -895,7 +898,7 @@
       "start": 406,
       "end": 487,
       "claim_text": "Personne n’a besoin d’être déraisonnable pour que le résultat d’ensemble le soit.",
-      "normalized_claim": "Aucun acteur n'a besoin d'être irrationnel pour que le résultat agrégé le soit.",
+      "normalized_claim": "Aucun acteur n'a besoin d'être irrationnel pour que le résultat d'ensemble le soit.",
       "support_ids": [
         "SUP-283210537714b72d"
       ]
@@ -906,7 +909,7 @@
       "start": 0,
       "end": 81,
       "claim_text": "Deux réserves, enfin, que les auteurs posent eux-mêmes et que l’usage a effacées.",
-      "normalized_claim": "Les auteurs posent eux-mêmes deux réserves que la littérature ultérieure a négligées.",
+      "normalized_claim": "Deux réserves sont posées par les auteurs eux-mêmes et oubliées par l'usage ultérieur.",
       "support_ids": [
         "SUP-50e0b1091ab542b2",
         "SUP-de978772e91c42c0",
@@ -919,7 +922,7 @@
       "start": 82,
       "end": 172,
       "claim_text": "La typologie est analytique : dans les situations réelles, les trois mécanismes se mêlent,",
-      "normalized_claim": "Les auteurs avertissent que la typologie est analytique et que les trois types se mêlent empiriquement.",
+      "normalized_claim": "Avertissement des auteurs : la typologie est analytique et les trois types se mêlent empiriquement.",
       "support_ids": [
         "SUP-50e0b1091ab542b2",
         "SUP-21b5aaeab3a17ff6"
@@ -942,7 +945,7 @@
       "start": 224,
       "end": 357,
       "claim_text": "Et l’article propose son explication sans la mettre à l’épreuve, l’examen empirique de ses douze hypothèses étant renvoyé à d’autres.",
-      "normalized_claim": "L'article ne conduit aucun test empirique de ses douze hypothèses, le test étant déclaré hors de son champ.",
+      "normalized_claim": "L'article ne conduit aucun test empirique de ses douze hypothèses.",
       "support_ids": [
         "SUP-ebb8c3a4da18e672",
         "SUP-de978772e91c42c0"
@@ -954,7 +957,7 @@
       "start": 392,
       "end": 490,
       "claim_text": "En 1999, Mark Mizruchi et Lisa Fein ont pris pour objet la façon dont la littérature cite ce texte",
-      "normalized_claim": "Mizruchi et Fein (ASQ, 1999) ont pris pour objet la réception et les usages de l'article de 1983.",
+      "normalized_claim": "Mizruchi et Fein publient en 1999 une étude dont l'objet est la réception citante de l'article de 1983.",
       "support_ids": [
         "SUP-2db494b80ef8e55f",
         "SUP-567519ef8355cb6e",
@@ -967,7 +970,7 @@
       "start": 493,
       "end": 570,
       "claim_text": "le mimétique y a reçu une attention sans rapport avec sa place dans l’article",
-      "normalized_claim": "Selon Mizruchi et Fein, la discussion de l'isomorphisme mimétique a reçu une attention disproportionnée par rapport à sa place dans l'article.",
+      "normalized_claim": "Résultat de Mizruchi et Fein : le mimétique a reçu une attention disproportionnée par rapport à sa place dans l'essai.",
       "support_ids": [
         "SUP-567519ef8355cb6e",
         "SUP-f8a8c77791b05831",
@@ -980,7 +983,7 @@
       "start": 572,
       "end": 700,
       "claim_text": "et sur vingt-six travaux qui ont tenté de le mesurer, les indicateurs d’un mécanisme auraient aussi bien pu valoir pour un autre",
-      "normalized_claim": "Sur 26 articles tentant d'opérationnaliser le modèle, les mesures d'un concept auraient pu valoir comme mesures d'un autre.",
+      "normalized_claim": "Résultat de Mizruchi et Fein sur 26 articles d'opérationnalisation : les mesures d'un concept auraient pu valoir comme mesures d'un autre.",
       "support_ids": [
         "SUP-567519ef8355cb6e",
         "SUP-77f4f6a2e1fd7135",
@@ -991,9 +994,9 @@
       "claim_id": "C077",
       "locator": "sections[5].paragraphs[2]",
       "start": 702,
-      "end": 892,
-      "claim_text": "Jens Beckert, en 2010, reprend la typologie pour soutenir que ces mécanismes n’ont pas de direction fixe : selon les conditions, ils conduisent à la divergence autant qu’à l’homogénéisation.",
-      "normalized_claim": "Beckert (2010) reprend la typologie de 1983 et soutient que les mécanismes peuvent aussi bien produire de la divergence que de l'homogénéisation selon les conditions.",
+      "end": 891,
+      "claim_text": "Jens Beckert, en 2010, reprend la typologie pour soutenir que ces mécanismes n’ont pas de direction fixe : selon les conditions, ils conduisent à la divergence autant qu’à l’homogénéisation",
+      "normalized_claim": "Beckert (2010) reprend la typologie et soutient que les mécanismes peuvent, selon les conditions, produire la divergence autant que l'homogénéisation.",
       "support_ids": [
         "SUP-655356aa76721c61",
         "SUP-559b252a12c6b208",

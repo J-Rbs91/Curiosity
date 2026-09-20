@@ -1,8 +1,8 @@
 {
   "protocol_version": 1,
   "concept_id": "isomorphisme-institutionnel",
-  "candidate_sha256": "3cb1d065b264d7b279ce6c93ef1dc83938b606bd5f882118fd84d54f1384831b",
-  "map_sha256": "213d25565003c28e48686fc6343c236bea5bd7141b8e08c52e04917826d2836d",
+  "candidate_sha256": "3651c8ab2d9d242ce696218c19d88417bfaf2175d6e0fe7634cd629fc9b9a26a",
+  "map_sha256": "474686b48cbe32d69a4e44e0183970cbb6a890b167c22139a1222e18cd95b719",
   "claims": [
     {
       "claim_id": "C001",
@@ -57,13 +57,20 @@
           "path": "$.quotation.text",
           "access": "n/a",
           "text": "[…] des acteurs rationnels rendent leurs organisations toujours plus semblables à mesure qu'ils cherchent à les changer."
+        },
+        {
+          "id": "SUP-0787aa4e34b46c0c",
+          "origin": "validated",
+          "path": "$.quotation.original_text",
+          "access": "n/a",
+          "text": "[…] rational actors make their organizations increasingly similar as they try to change them."
         }
       ]
     },
     {
       "claim_id": "C004",
       "locator": "lead[1]",
-      "claim_text": "Deux sociologues américains, Paul DiMaggio et Walter Powell",
+      "claim_text": "Paul DiMaggio et Walter Powell",
       "supports": [
         {
           "id": "SUP-f6921f5c48c85828",
@@ -85,6 +92,13 @@
           "path": "$.attribution_input._authorship_etabli_sur_le_texte",
           "access": "n/a",
           "text": "L'article porte lui-même la mention, en note d'astérisque p. 147 : « The authors' names are listed in alphabetical order for convenience. This was a fully collaborative effort. » Les deux auteurs sont domiciliés à la même adresse (School of Organization and Management, Yale University). Il n'y a donc aucun premier auteur au sens ordinaire, et aucun des deux ne peut porter seul le concept. La note précise aussi qu'une version préliminaire a été présentée PAR POWELL au congrès de l'American Sociological Association, Toronto, août 1981."
+        },
+        {
+          "id": "SUP-db331de9f64ab8dd",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.validation_input.confidence_flags[5]",
+          "access": "n/a",
+          "text": "authorship = COAUTHORED, et le texte le dit lui-même en note p. 147 (« This was a fully collaborative effort », noms en ordre alphabétique par commodité). Aucune attribution à un seul des deux n'est recevable."
         }
       ]
     },
@@ -106,6 +120,13 @@
           "path": "$.evidence.primary_sources[0].citation",
           "access": "full-text",
           "text": "Paul J. DiMaggio et Walter W. Powell, « The Iron Cage Revisited: Institutional Isomorphism and Collective Rationality in Organizational Fields », American Sociological Review, vol. 48, n° 2, avril 1983, p. 147-160."
+        },
+        {
+          "id": "SUP-157000375461e8c2",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.attribution_input._authorship_etabli_sur_le_texte",
+          "access": "n/a",
+          "text": "L'article porte lui-même la mention, en note d'astérisque p. 147 : « The authors' names are listed in alphabetical order for convenience. This was a fully collaborative effort. » Les deux auteurs sont domiciliés à la même adresse (School of Organization and Management, Yale University). Il n'y a donc aucun premier auteur au sens ordinaire, et aucun des deux ne peut porter seul le concept. La note précise aussi qu'une version préliminaire a été présentée PAR POWELL au congrès de l'American Sociological Association, Toronto, août 1981."
         }
       ]
     },
@@ -133,7 +154,7 @@
     {
       "claim_id": "C007",
       "locator": "lead[1]",
-      "claim_text": "Les deux auteurs montrent que cette explication tient de moins en moins",
+      "claim_text": "Les deux auteurs avancent que cette explication tient de moins en moins",
       "supports": [
         {
           "id": "SUP-50c860462e2289a5",
@@ -735,7 +756,7 @@
     {
       "claim_id": "C033",
       "locator": "sections[1].paragraphs[1]",
-      "claim_text": "L’article rapporte le cas d’associations de quartier attachées à la démocratie participative et contraintes de se doter d’une hiérarchie pour obtenir le soutien de bailleurs eux-mêmes hiérarchisés,",
+      "claim_text": "L’article rapporte le cas d’associations de quartier attachées à la démocratie participative et contraintes de se doter d’une hiérarchie pour obtenir le soutien de bailleurs eux-mêmes hiérarchisés",
       "supports": [
         {
           "id": "SUP-b51f6e4eea07691b",
@@ -1624,7 +1645,7 @@
     {
       "claim_id": "C077",
       "locator": "sections[5].paragraphs[2]",
-      "claim_text": "Jens Beckert, en 2010, reprend la typologie pour soutenir que ces mécanismes n’ont pas de direction fixe : selon les conditions, ils conduisent à la divergence autant qu’à l’homogénéisation.",
+      "claim_text": "Jens Beckert, en 2010, reprend la typologie pour soutenir que ces mécanismes n’ont pas de direction fixe : selon les conditions, ils conduisent à la divergence autant qu’à l’homogénéisation",
       "supports": [
         {
           "id": "SUP-655356aa76721c61",
@@ -1657,6 +1678,6 @@
       ]
     }
   ],
-  "estimated_tokens": 64008,
+  "estimated_tokens": 64421,
   "status": "READY"
 }
