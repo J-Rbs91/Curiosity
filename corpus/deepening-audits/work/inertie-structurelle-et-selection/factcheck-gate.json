@@ -1,17 +1,22 @@
 {
   "protocol_version": 1,
   "concept_id": "inertie-structurelle-et-selection",
-  "candidate_sha256": "c6bb2f8cbf4446352a13578baa56ecb8c6b2feb33d83dead7d1f47323e473060",
+  "candidate_sha256": "665bd0532b9b06ced1a71070bcc9697617a9c9b6fd09642340da37c8bcc82a81",
   "verdict": "FACTCHECK_FAIL",
-  "claims": 61,
-  "supported": 60,
-  "failed": 1,
+  "claims": 66,
+  "supported": 64,
+  "failed": 2,
   "structural_errors": [],
   "failures": [
     {
-      "claim_id": "C018",
+      "claim_id": "C060",
       "verdict": "TOO_STRONG",
-      "reason": "Le support dit que renegocier chaque jour la structure « serait concevable mais seems unlikely ». Le texte lecteur supprime la modalisation et affirme categoriquement que la reproduction « ne se renegocie pas chaque matin » : passage d'une improbabilite jugee par les auteurs a un fait."
+      "reason": "Les supports disent seulement que, pour de telles petites organisations, « Change in populations of such organizations MAY operate AS MUCH BY transformation AS selection » (p. 158). Le texte lecteur transforme cette possibilité partagée en assertion de degré (« échappe largement au mécanisme ») : glissement possibilité -> fait et amplification de la portée."
+    },
+    {
+      "claim_id": "C062",
+      "verdict": "TOO_STRONG",
+      "reason": "Les supports portent deux réserves des auteurs que le texte lecteur supprime : les environnements turbulents « MAY favor organizational forms that can take quick advantage of new opportunities » et « The capacity to respond quickly to new opportunities PRESUMABLY competes with the capacity to perform reliably and accountably » (p. 163). L'énoncé au présent assertif (« récompensent », « entre en concurrence ») convertit une conjecture en relation établie."
     }
   ]
 }
