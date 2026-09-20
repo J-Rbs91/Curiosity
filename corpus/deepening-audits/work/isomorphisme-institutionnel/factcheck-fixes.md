@@ -149,3 +149,124 @@ parce que l'arbre n'apparaît plus comme modifié.
 
 Aucun verdict rendu ici : ni ACCEPT, ni FACTCHECK_PASS. Le gate reste l'autorité, et il doit
 être rejoué depuis `PREPARE` sur le nouveau SHA.
+
+---
+
+# Second tour de correction (dernier autorisé)
+
+Mode : FACTCHECK_FIX, tour 2 sur 2.
+Gate d'entrée : `factcheck-gate.json`, verdict `FACTCHECK_FAIL`, 77 claims, 75 SUPPORTED,
+2 en échec (C004 et C007, tous deux TOO_STRONG). `structural_errors` vide.
+
+SHA de la version contrôlée : `3cb1d065b264d7b279ce6c93ef1dc83938b606bd5f882118fd84d54f1384831b`
+SHA après correction : `3651c8ab2d9d242ce696218c19d88417bfaf2175d6e0fe7634cd629fc9b9a26a`
+La version fact-checkée est donc invalidée : il faut recommencer à `PREPARE`.
+
+Attention à la renumérotation : les identifiants `C004` et `C007` de ce tour ne désignent pas
+les claims que portaient ces mêmes identifiants au tour 1. Le mapper a redécoupé le texte
+corrigé, et le nombre de claims est passé de 78 à 77.
+
+## Ce que j'ai lu
+
+- `corpus/deepenings/PROTOCOLE.md`, `AUDIT_PROTOCOL.md`, `FACTCHECK_PROTOCOL.md`
+- `corpus/deepenings/isomorphisme-institutionnel.json`
+- `corpus/validated/isomorphisme-institutionnel.json`
+- le répertoire `corpus/evidence/isomorphisme-institutionnel/` listé par moi-même :
+  `evidence.primary-reading.json`, `evidence.reception.json` (`scouting.json` écarté)
+- `factcheck-gate.json`, `verification.json`, `claim-map.json`, `factcheck-pack.json`
+  (résolution des supports cités par le verifier), et le présent compte rendu du tour 1
+
+Aucune recherche extérieure. Aucun support ajouté, aucun identifiant `SUP-...` fabriqué.
+Les deux corrections tiennent dans le seul paragraphe `lead[1]`, et dans chacune je n'ai
+réécrit que l'empan du claim fautif.
+
+## C004 — TOO_STRONG (`lead[1]`, « Deux sociologues américains »)
+
+Claim : `lead[1]` 0-59, « Deux sociologues américains, Paul DiMaggio et Walter Powell ».
+Supports proposés : SUP-f6921f5c48c85828 et SUP-8d55afda00c45d40 (les deux noms, registre
+validé), SUP-157000375461e8c2 (note d'astérisque p. 147 : collaboration intégrale, adresse
+commune School of Organization and Management, Yale University, présentation par Powell au
+congrès de l'American Sociological Association, Toronto, août 1981).
+
+Ces supports donnent des noms, une adresse institutionnelle et un lieu de présentation. Ils ne
+donnent ni nationalité ni profession. Une affiliation à Yale et une parution dans l'*American
+Sociological Review* sont compatibles avec les deux attributs, elles ne les établissent pas :
+les supports tiendraient intégralement si l'un des deux auteurs n'était ni américain ni
+sociologue. C'est exactement le défaut qui a fait tomber « sociologues » sur une autre carte
+du lot.
+
+J'ai retiré les deux attributs plutôt que de leur chercher un appui, conformément à la
+consigne. Je n'ai pas non plus tenté de les remplacer par un descripteur de substitution
+— « chercheurs », « universitaires », « qui signent ensemble un article de l'*American
+Sociological Review* » : chacun aurait introduit dans `lead[1]` un claim neuf, absent des 75
+qui passent, au dernier tour autorisé. Correction par retrait sec.
+
+Avant : « Deux sociologues américains, Paul DiMaggio et Walter Powell, ont pris ce paradoxe au
+sérieux au début des années 1980. »
+Après : « Paul DiMaggio et Walter Powell ont pris ce paradoxe au sérieux au début des années
+1980. »
+
+Ce que le lecteur perd est faible et rattrapé plus bas sans claim supplémentaire : la suite du
+même paragraphe et `sections[0].paragraphs[1]` les désignent comme « les deux auteurs » et
+parlent de « leur article », de sorte que leur statut d'auteurs d'un texte reste posé par des
+énoncés déjà SUPPORTED.
+
+Le retrait laisse intact, au caractère près, l'empan de C005 (« ont pris ce paradoxe au sérieux
+au début des années 1980 »), qui passait.
+
+## C007 — TOO_STRONG (`lead[1]`, « montrent que »)
+
+Claim : `lead[1]` 308-379, « Les deux auteurs montrent que cette explication tient de moins en
+moins ».
+Supports proposés : SUP-50c860462e2289a5 (partage entre les deux isomorphismes, p. 149-150 :
+l'isomorphisme compétitif « does not present a fully adequate picture of the modern world of
+organizations ») et SUP-092bf8f34085aed8 (note validée citant p. 147 : « structural change in
+organizations seems less and less driven by competition »).
+
+Les deux supports portent une thèse énoncée, et une thèse prudente : le verbe du texte source
+est « seems », et le jugement sur l'isomorphisme compétitif est celui d'une image « pas
+pleinement adéquate », pas d'une hypothèse réfutée. « Montrent que » convertissait cela en
+résultat démontré. Aucun support du dossier n'établit de démonstration — et les `limits`
+l'indiquaient déjà par un autre chemin, en notant que l'article propose son explication sans la
+mettre à l'épreuve et renvoie à d'autres l'examen empirique de ses douze hypothèses. Le verdict
+du verifier et la frontière documentaire interne disent ici la même chose.
+
+Avant : « Les deux auteurs montrent que cette explication tient de moins en moins, et qu'une
+autre logique, plus discrète, produit l'essentiel de cette convergence. »
+Après : « Les deux auteurs avancent que cette explication tient de moins en moins, et qu'une
+autre logique, plus discrète, produit l'essentiel de cette convergence. »
+
+« Avancent » rend le geste que les supports portent : une thèse mise en avant, sans preuve
+annoncée. « De moins en moins » reste le décalque de « less and less » et n'est pas touché.
+
+Le verbe changé est le seul mot de l'empan modifié. La coordination « et qu'une autre logique…
+» qui suit dépend syntaxiquement de ce verbe : elle reste grammaticale sous « avancent que »,
+et l'empan de C008, qui passait, est conservé au caractère près.
+
+## Contrôles
+
+1. Delta des paragraphes touchés : inchangé. `lead[1]` présente toujours les auteurs, expose
+   l'explication concurrente, puis annonce qu'une autre logique la supplante. Les deux
+   corrections portent sur un syntagme d'attribution et sur un verbe, pas sur l'architecture
+   du paragraphe. Aucune fusion ni suppression de paragraphe n'était requise ni permise.
+2. Aucune section ne répète principalement une section précédente : la structure est celle,
+   déjà auditée, de la version 3cb1d065.
+3. Le texte reste en deçà des frontières documentaires. Les deux corrections l'y ramènent :
+   elles retirent des énoncés qui dépassaient le dossier, elles n'en ajoutent aucun.
+4. `limits` n'a pas été modifié et aucun de ses contenus n'a été remonté en bloc visible. La
+   correction de C007 rend le texte public cohérent avec la réserve interne sur l'absence de
+   mise à l'épreuve, sans l'exposer au lecteur.
+5. Minimalité vérifiée mécaniquement, et pas seulement par relecture : j'ai repris les 77
+   `claim_text` de `claim-map.json` et cherché chacun comme sous-chaîne exacte dans le
+   paragraphe correspondant du fichier corrigé. Deux seulement ont disparu, C004 et C007,
+   c'est-à-dire exactement les deux claims en échec. Les 75 SUPPORTED subsistent au caractère
+   près, à leur emplacement d'origine. Seuls leurs offsets bougent, et le mapper les
+   recalculera à `PREPARE`.
+6. Volume : 1 955 mots au compteur du script, contre 1 958 avant correction — trois mots de
+   moins, cohérents avec le retrait de « Deux sociologues américains ». Le compteur inclut
+   `limits`, que le lecteur ne voit pas.
+7. `npm run corpus:deepen -- --check --only=isomorphisme-institutionnel` : PASS
+   (« 1 approfondissement(s) contrôlé(s), 1955 mots. Rien projeté. »).
+
+Aucun verdict rendu ici : ni ACCEPT, ni FACTCHECK_PASS. Le gate reste l'autorité, et il doit
+être rejoué depuis `PREPARE` sur le SHA `3651c8ab…`.
