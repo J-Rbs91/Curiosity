@@ -158,3 +158,110 @@ Le fichier a changé, donc son SHA-256 a changé :
 Le fact-check précédent est donc invalidé (`FACTCHECK_PROTOCOL.md` §6). L'orchestrateur reprend à
 `PREPARE` : nouveau pack, nouveau claim map, nouveau bundle, nouveau gate. Aucun verdict n'est rendu
 ici, ni `ACCEPT` ni `FACTCHECK_PASS`.
+
+---
+
+# Tour 2 — correction après le second FACTCHECK_FAIL
+
+Tour : 2 sur les 2 autorisés, dernier tour.
+Mode : FACTCHECK_FIX.
+
+Gate d'entrée : `corpus/deepening-audits/work/inertie-structurelle-et-selection/factcheck-gate.json`
+(`FACTCHECK_FAIL`, 61 claims, 60 `SUPPORTED`, 1 `TOO_STRONG`, `structural_errors` vide).
+SHA de la version jugée : `c6bb2f8cbf4446352a13578baa56ecb8c6b2feb33d83dead7d1f47323e473060`,
+c'est-à-dire exactement la version produite au tour 1.
+
+Un seul échec, sémantique, et du même genre que les quatre du tour précédent : une portée plus forte
+que celle du support. C'est le troisième affaiblissement de modal du lot. Correction de portée
+uniquement : aucun support cherché après coup, aucun `SUP-...` ajouté, aucun artefact de fact-check
+retouché.
+
+## Matière relue
+
+- `PROTOCOLE.md`, `AUDIT_PROTOCOL.md`, `FACTCHECK_PROTOCOL.md` ;
+- `corpus/deepenings/inertie-structurelle-et-selection.json` ;
+- `factcheck-gate.json`, puis `verification.json` pour le seul claim fautif, `claim-map.json` pour
+  son ancrage exact et `factcheck-pack.json` pour le texte du support résolu ;
+- le dossier `corpus/evidence/inertie-structurelle-et-selection/` :
+  `evidence.primary-reading.json` et `evidence.reception.json` (`scouting.json` écarté,
+  PROTOCOLE §3), en particulier `$.evidence.mechanism[8..12]` pour lire la modalité dans son
+  contexte d'argument.
+
+## La correction
+
+### C018 — `sections[1].paragraphs[1]`, offsets 0-72 — rétablissement de la modalité du support
+
+Support unique proposé et résolu : `SUP-a5fdd6c3a3a8c09a`,
+`evidence:evidence.primary-reading.json`, `$.evidence.mechanism[10]` :
+
+> 11. Comment la reproductibilité est obtenue : « organizations attain reproducibility of structure
+> through processes of institutionalization and by creating highly standardized routines » (p. 154).
+> Renégocier chaque jour la structure serait concevable mais « seems unlikely ».
+
+Reproche du verifier : le support porte une improbabilité jugée par les auteurs, explicitement
+adossée à une possibilité concevable ; le texte lecteur en faisait un fait, « ne se renégocie pas
+chaque matin ». La différence n'est pas de style : le support dit que la renégociation quotidienne
+est pensable et que les auteurs la tiennent pour peu vraisemblable, pas qu'elle n'a pas lieu.
+
+Geste : la proposition factuelle devient un jugement attribué aux auteurs, avec le degré exact du
+support, « peu vraisemblable » pour « seems unlikely ». Le second membre de la phrase d'origine,
+« ne va pas de soi », que le verifier ne contestait pas, est conservé mot pour mot et relié par
+« pour autant », qui maintient l'opposition dont le paragraphe a besoin : ni renégociation
+quotidienne, ni automatisme, donc deux voies d'obtention.
+
+- avant : « Cette reproduction ne va pas de soi et ne se renégocie pas chaque matin. »
+- après : « Hannan et Freeman jugent peu vraisemblable qu'une organisation renégocie chaque matin sa
+  structure. Cette reproduction ne va pas de soi pour autant. »
+
+Le membre « concevable » du support n'a pas été écrit explicitement : « jugent peu vraisemblable »
+dit déjà que la chose est possible et improbable, et non impossible. Rien n'a été ajouté au-delà.
+
+Ordre des deux propositions : l'inversion est délibérée et non cosmétique. La phrase suivante,
+C019, commence par « Elle s'obtient par deux voies » et n'avait pas le droit d'être touchée. En
+terminant sur « Cette reproduction ne va pas de soi pour autant », l'antécédent de ce « Elle » reste
+immédiatement adjacent, ce qui n'aurait pas été le cas si la phrase s'était achevée sur
+« sa structure ».
+
+## Ce qui n'a pas été touché
+
+Les 60 claims `SUPPORTED` sont intacts. En particulier C017, qui précède immédiatement dans
+`sections[1].paragraphs[0]`, et C019, C020, C021, qui suivent dans le même paragraphe : aucun de
+leurs empans n'a été modifié, déplacé mot à mot ou reformulé. Le `lead`, les sections 0, 2, 3, 4, 5
+et les quatre entrées de `limits` sont inchangés. C'étant le dernier tour autorisé, aucune
+amélioration d'opportunité n'a été faite ailleurs.
+
+`limits` n'a pas été modifié : la frontière en cause était déjà couverte, et la correction porte sur
+la modalité d'un énoncé, pas sur une frontière documentaire nouvelle. Aucun contenu de `limits` n'a
+été remonté dans le texte lecteur.
+
+## Contrôles
+
+Delta du paragraphe retouché, revérifié : `sections[1].paragraphs[1]` explique comment la
+reproduction quotidienne de la structure est obtenue, institutionnalisation et routines
+standardisées, après que le paragraphe précédent a établi qu'elle est exigée. Delta inchangé, et
+désormais introduit par le jugement des auteurs plutôt que par une affirmation catégorique. Aucun
+paragraphe ne devient sans delta ni doublon d'un autre ; aucune section ne reprend principalement
+le travail d'une précédente.
+
+Typographie : aucun tiret cadratin, apostrophes typographiques, aucune citation entre guillemets
+n'a été ajoutée ni déplacée.
+
+Contrôle mécanique :
+
+```
+npm run corpus:deepen -- --check --only=inertie-structurelle-et-selection
+1 approfondissement(s) contrôlé(s), 1944 mots. Rien projeté.
+```
+
+PASS. Texte lecteur (`lead` + `sections`) : 1 732 mots, contre 1 723 au tour précédent.
+
+## Suite
+
+Le fichier a changé, donc son SHA-256 a changé :
+
+- ancien, jugé par le gate du tour 2 : `c6bb2f8cbf4446352a13578baa56ecb8c6b2feb33d83dead7d1f47323e473060`
+- nouveau : `665bd0532b9b06ced1a71070bcc9697617a9c9b6fd09642340da37c8bcc82a81`
+
+Le fact-check précédent est invalidé (`FACTCHECK_PROTOCOL.md` §6). L'orchestrateur reprend à
+`PREPARE` : nouveau pack, nouveau claim map, nouveau bundle, nouveau gate. Aucun verdict n'est rendu
+ici, ni `ACCEPT` ni `FACTCHECK_PASS`.
