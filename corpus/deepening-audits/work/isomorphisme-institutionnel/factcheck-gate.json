@@ -1,42 +1,22 @@
 {
   "protocol_version": 1,
   "concept_id": "isomorphisme-institutionnel",
-  "candidate_sha256": "b7ebf8381aeecd8328e01ee8f56cf62f5f457536ae1e7f82bddd55716dab2a07",
+  "candidate_sha256": "3cb1d065b264d7b279ce6c93ef1dc83938b606bd5f882118fd84d54f1384831b",
   "verdict": "FACTCHECK_FAIL",
-  "claims": 78,
-  "supported": 72,
-  "failed": 6,
+  "claims": 77,
+  "supported": 75,
+  "failed": 2,
   "structural_errors": [],
   "failures": [
     {
-      "claim_id": "C002",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu. Les exemples de formes communes releves dans le dossier sont d'un autre ordre (comptabilite, exercices, rapports, normes antipollution) ; ni « services qualite », ni « certifications », ni « intitules de poste » ne figurent dans une preuve, et le texte les donne comme observes."
-    },
-    {
-      "claim_id": "C003",
-      "verdict": "TOO_STRONG",
-      "reason": "SUP-b51f6e82 etablit que l'environnement juridique et gestionnaire commun impose « cycle budgetaire, exercices comptables, rapports annuels, obligations de reporting ». Il n'etablit nulle part une similitude de FORMAT des rapports : « au format quasi identique » ajoute une precision documentaire que le support n'autorise pas."
-    },
-    {
       "claim_id": "C004",
       "verdict": "TOO_STRONG",
-      "reason": "La citation resolue (SUP-6aa956, SUP-d971a1) dit « rational actors make their organizations increasingly similar as they try to change them » : elle porte sur des acteurs qui CHERCHENT A CHANGER leur organisation. « qui voulaient devenir plus elles-memes » prete un mobile de singularisation qu'aucun support n'etablit, et SUP-38aa11 (hors de ce claim) rappelle que la theorie ne porte pas sur les mobiles. Le second membre, lui, est soutenu."
+      "reason": "Les supports donnent les deux noms (registre validé), l'adresse institutionnelle commune (School of Organization and Management, Yale University) et une présentation à l'American Sociological Association. Une affiliation à Yale et une publication dans l'American Sociological Review n'établissent ni la nationalité « américains » ni la qualité professionnelle de « sociologues » : deux attributs biographiques pourraient être faux sans que les supports cessent de tenir."
     },
     {
-      "claim_id": "C027",
+      "claim_id": "C007",
       "verdict": "TOO_STRONG",
-      "reason": "Le seul support resolu, SUP-50e0b1, enumere les trois mecanismes et leurs antecedents sans rien dire de leur visibilite relative. Aucun support attache n'autorise le classement « le plus visible » ; SUP-b51f6e ne hierarchise que les trois registres INTERNES au mecanisme coercitif, et n'est pas verse a ce claim."
-    },
-    {
-      "claim_id": "C049",
-      "verdict": "TOO_STRONG",
-      "reason": "SUP-ec9601 porte un enonce quantifie : « MANY professional career tracks are so closely guarded […] that individuals who make it to the top are virtually indistinguishable » (p. 152-153). Le claim supprime « many », generalise a « Les carrieres » et attribue cette loi generale aux auteurs (« ecrivent les auteurs »)."
-    },
-    {
-      "claim_id": "C051",
-      "verdict": "TOO_STRONG",
-      "reason": "Le texte cite dans SUP-8693f4 et SUP-175fe4 est modal : « socialization COULD reinforce, not erode, differences among organizations » (p. 153). Le claim passe a l'indicatif d'effet (« la socialisation renforce les differences »), c'est-a-dire de la possibilite a la regularite."
+      "reason": "Les supports établissent une assertion, pas une démonstration : l'article écrit « structural change in organizations seems less and less driven by competition » (note validée) et juge l'isomorphisme compétitif « not a fully adequate picture of the modern world of organizations ». « Les deux auteurs montrent que » convertit une thèse énoncée et prudente (« seems ») en résultat démontré, alors qu'aucun support fourni n'établit de démonstration."
     }
   ]
 }
