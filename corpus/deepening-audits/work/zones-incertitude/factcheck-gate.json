@@ -1,0 +1,32 @@
+{
+  "protocol_version": 1,
+  "concept_id": "zones-incertitude",
+  "candidate_sha256": "78053510a1117a9fbc0f2c9f3997662aeeb6504aac1c715e122ac284c1c03723",
+  "verdict": "FACTCHECK_FAIL",
+  "claims": 68,
+  "supported": 64,
+  "failed": 4,
+  "structural_errors": [],
+  "failures": [
+    {
+      "claim_id": "C001",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun support résolu. Généralisation empirique présentée comme réelle (« dans beaucoup d'organisations, presque tout finit par être écrit »), qui n'est ni hypothétique ni établie par le bundle."
+    },
+    {
+      "claim_id": "C002",
+      "verdict": "TOO_STRONG",
+      "reason": "Les deux supports n'établissent que le cas du Monopole industriel de 1960 (dépendance des ouvriers de production, désarroi des contremaîtres). Le texte lecteur en tire une fréquence générale (« il arrive régulièrement ») applicable aux organisations en général, alors que le dossier qualifie ailleurs cette organisation de cas limite : passage de l'exemple situé à la régularité générale."
+    },
+    {
+      "claim_id": "C041",
+      "verdict": "TOO_STRONG",
+      "reason": "Le texte lecteur classe ce contresens comme « le plus fréquent ». Les supports ne fournissent que deux entrées de registre de mésinterprétations, et le troisième support résolu dit explicitement qu'aucune source académique ne thématise la vulgarisation, l'écart étant établi par différence à partir de sources de niveau D/E qui « n'établissent rien ». Le superlatif de fréquence n'est pas autorisé."
+    },
+    {
+      "claim_id": "C055",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun support résolu. L'énoncé pose une propriété générale de l'autorité hiérarchique (elle subsiste sans besoin), présentée comme réelle et non comme hypothèse ; le bundle ne l'établit pas."
+    }
+  ]
+}
