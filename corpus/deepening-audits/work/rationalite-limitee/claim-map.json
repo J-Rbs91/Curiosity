@@ -1,6 +1,6 @@
 {
   "concept_id": "rationalite-limitee",
-  "candidate_sha256": "1f4aef8a2d786687720fbc2f5b8bfd1e78fd3bf535e30a6dcd451ef42872d250",
+  "candidate_sha256": "bde9cd2d0230c9233d38579aef4e823fe8d07e8227780ca7283bb51b1bef5940",
   "paragraphs": [
     {
       "locator": "lead[0]",
@@ -71,10 +71,10 @@
     {
       "claim_id": "C001",
       "locator": "lead[0]",
-      "start": 52,
-      "end": 270,
-      "claim_text": "suppose, en théorie, de connaître toutes les possibilités qui existent, de savoir avec certitude comment la situation va évoluer, et de calculer d’avance ce que chaque choix va produire, pour ne retenir que le meilleur",
-      "normalized_claim": "Le modèle de référence (classique) exige de connaître toutes les options, leurs conséquences, l'évaluation certaine de celles-ci, et de retenir la meilleure.",
+      "start": 0,
+      "end": 271,
+      "claim_text": "Choisir un appartement, un fournisseur ou un emploi suppose, en théorie, de connaître toutes les possibilités qui existent, de savoir avec certitude comment la situation va évoluer, et de calculer d’avance ce que chaque choix va produire, pour ne retenir que le meilleur.",
+      "normalized_claim": "Le modèle classique de la décision exige de connaître toutes les options, d'être certain de l'évolution de la situation, de calculer les conséquences de chaque option, et de retenir la meilleure.",
       "support_ids": [
         "SUP-c799954d72d6b7b0",
         "SUP-3d0fbd17cc37b53a"
@@ -84,210 +84,223 @@
       "claim_id": "C002",
       "locator": "lead[0]",
       "start": 272,
-      "end": 346,
-      "claim_text": "Personne ne décide ainsi, et disposer de plus de temps n’y changerait rien",
-      "normalized_claim": "Le temps n'est pas la borne : disposer de plus de temps ne restaurerait pas le modèle classique.",
+      "end": 459,
+      "claim_text": "Mais personne ne connaît toutes les options qui existent, personne ne sait ce que fera le monde autour de lui, et personne ne calcule toutes les conséquences d’un choix un peu conséquent.",
+      "normalized_claim": "Ces trois exigences ne sont jamais satisfaites en fait : ce sont les trois défaillances de l'omniscience nommées par Simon.",
       "support_ids": [
-        "SUP-6d15e1b768c77bb3",
-        "SUP-5029591ee4e36b0f"
+        "SUP-76e0114ff88ea71e",
+        "SUP-e16e2493f1c49649",
+        "SUP-bed592c22f3d1622"
       ]
     },
     {
       "claim_id": "C003",
-      "locator": "lead[0]",
-      "start": 380,
-      "end": 561,
-      "claim_text": "personne ne connaît toutes les options qui existent, personne ne sait ce que fera le monde autour de lui, et personne ne calcule toutes les conséquences d’un choix un peu conséquent",
-      "normalized_claim": "Les trois défaillances de l'omniscience énoncées par Simon, rendues en français courant.",
+      "locator": "lead[1]",
+      "start": 0,
+      "end": 118,
+      "claim_text": "Herbert Simon appelle rationalité limitée le régime de décision qui subsiste quand cette connaissance parfaite manque.",
+      "normalized_claim": "Chez Simon, la rationalité limitée nomme le régime de choix qui subsiste quand les exigences du modèle classique tombent.",
       "support_ids": [
-        "SUP-76e0114ff88ea71e",
-        "SUP-e16e2493f1c49649",
-        "SUP-3d0fbd17cc37b53a"
+        "SUP-3d0fbd17cc37b53a",
+        "SUP-bc603c67ea144ffa"
       ]
     },
     {
       "claim_id": "C004",
       "locator": "lead[1]",
-      "start": 0,
-      "end": 117,
-      "claim_text": "Herbert Simon appelle rationalité limitée le régime de décision qui subsiste quand cette connaissance parfaite manque",
-      "normalized_claim": "Attribution du concept à Simon et définition comme régime résiduel quand les exigences classiques tombent.",
-      "support_ids": [
-        "SUP-3d0fbd17cc37b53a",
-        "SUP-ed3ce656ccbd15ac",
-        "SUP-c015012fb3e204d9"
-      ]
-    },
-    {
-      "claim_id": "C005",
-      "locator": "lead[1]",
       "start": 119,
       "end": 221,
       "claim_text": "Dans une conférence de 1978, il revient sur cette idée qu’il avait avancée plus de trente ans plus tôt",
-      "normalized_claim": "La source est la conférence Nobel de 1978, rétrospective sur une idée rattachée à Administrative Behavior (1947).",
+      "normalized_claim": "La conférence Nobel de Simon date de 1978 et revient sur une idée qu'il avait avancée plus de trente ans auparavant (Administrative Behavior, 1947).",
       "support_ids": [
-        "SUP-e9327b7ed5237e63",
+        "SUP-605684929a39480a",
         "SUP-0f2c18da84031cb6",
         "SUP-4533999727203bfa"
       ]
     },
     {
-      "claim_id": "C006",
+      "claim_id": "C005",
       "locator": "lead[1]",
-      "start": 225,
+      "start": 222,
       "end": 250,
-      "claim_text": "la ramène à trois manques",
-      "normalized_claim": "Simon ramène les défaillances de l'omniscience à trois.",
+      "claim_text": "et la ramène à trois manques",
+      "normalized_claim": "Dans ce texte, Simon ramène la rationalité limitée à trois défaillances.",
       "support_ids": [
         "SUP-76e0114ff88ea71e",
         "SUP-e16e2493f1c49649"
       ]
     },
     {
-      "claim_id": "C007",
+      "claim_id": "C006",
       "locator": "lead[1]",
       "start": 252,
-      "end": 478,
-      "claim_text": "qui ne se corrigent pas de la même façon : on peut chercher les options qu’on n’a pas, on ne peut pas dissiper l’incertitude sur ce que fera le monde, et on ne peut pas davantage se donner la capacité de calcul qui fait défaut",
-      "normalized_claim": "Asymétrie entre les trois manques : la recherche d'options est possible, l'incertitude externe et la capacité de calcul ne se comblent pas.",
+      "end": 292,
+      "claim_text": "qui ne se corrigent pas de la même façon",
+      "normalized_claim": "Les trois manques n'appellent pas le même remède.",
       "support_ids": [
         "SUP-e060a9a687e24d6d",
-        "SUP-5b0025768b325a54",
-        "SUP-dc9c0f80f47f7cce",
-        "SUP-5029591ee4e36b0f"
+        "SUP-5029591ee4e36b0f",
+        "SUP-5b0025768b325a54"
+      ]
+    },
+    {
+      "claim_id": "C007",
+      "locator": "lead[1]",
+      "start": 295,
+      "end": 337,
+      "claim_text": "on peut chercher les options qu’on n’a pas",
+      "normalized_claim": "Le manque d'options, lui, se comble par la recherche.",
+      "support_ids": [
+        "SUP-e060a9a687e24d6d",
+        "SUP-b9346cfe1752dfcf"
       ]
     },
     {
       "claim_id": "C008",
-      "locator": "sections[0].paragraphs[0]",
-      "start": 0,
-      "end": 78,
-      "claim_text": "Simon pose son critère par comparaison, et le point de comparaison est extrême",
-      "normalized_claim": "Le concept est défini par écart à un point de référence, l'omniscience.",
+      "locator": "lead[1]",
+      "start": 339,
+      "end": 401,
+      "claim_text": "on ne peut pas dissiper l’incertitude sur ce que fera le monde",
+      "normalized_claim": "L'incertitude sur les événements extérieurs ne peut pas être levée par le décideur : elle est dans le monde.",
       "support_ids": [
-        "SUP-3d0fbd17cc37b53a",
-        "SUP-872a2db4758cbbb2",
-        "SUP-c799954d72d6b7b0"
+        "SUP-e273a2627707c823",
+        "SUP-5b0025768b325a54",
+        "SUP-5029591ee4e36b0f"
       ]
     },
     {
       "claim_id": "C009",
-      "locator": "sections[0].paragraphs[0]",
-      "start": 81,
-      "end": 153,
-      "claim_text": "« la rationalité est limitée quand elle reste en deçà de l’omniscience »",
-      "normalized_claim": "Citation française (traduction interne) de « rationality is bounded when it falls short of omniscience ».",
+      "locator": "lead[1]",
+      "start": 406,
+      "end": 478,
+      "claim_text": "on ne peut pas davantage se donner la capacité de calcul qui fait défaut",
+      "normalized_claim": "L'incapacité de calculer les conséquences ne se corrige pas non plus par une simple décision du décideur.",
       "support_ids": [
-        "SUP-bc603c67ea144ffa",
-        "SUP-ae9dd5e52959b7e9",
-        "SUP-76e0114ff88ea71e"
+        "SUP-cb4ab7944a83f8c1",
+        "SUP-5029591ee4e36b0f"
       ]
     },
     {
       "claim_id": "C010",
       "locator": "sections[0].paragraphs[0]",
+      "start": 0,
+      "end": 78,
+      "claim_text": "Simon pose son critère par comparaison, et le point de comparaison est extrême",
+      "normalized_claim": "Simon caractérise la rationalité limitée par écart à un point de référence, l'omniscience.",
+      "support_ids": [
+        "SUP-3d0fbd17cc37b53a",
+        "SUP-872a2db4758cbbb2"
+      ]
+    },
+    {
+      "claim_id": "C011",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 81,
+      "end": 153,
+      "claim_text": "« la rationalité est limitée quand elle reste en deçà de l’omniscience »",
+      "normalized_claim": "Citation de Simon (p. 356), en traduction française.",
+      "support_ids": [
+        "SUP-bc603c67ea144ffa",
+        "SUP-ae9dd5e52959b7e9",
+        "SUP-76e0114ff88ea71e",
+        "SUP-c6969c031080e1ae"
+      ]
+    },
+    {
+      "claim_id": "C012",
+      "locator": "sections[0].paragraphs[0]",
       "start": 155,
-      "end": 417,
-      "claim_text": "Un décideur omniscient connaîtrait toutes les options ouvertes au choix, saurait calculer les conséquences de chacune, serait certain de l’évaluation qu’il en fait aujourd’hui comme de demain, et pourrait comparer des conséquences hétérogènes sur une même mesure",
-      "normalized_claim": "Les quatre exigences cumulatives du modèle classique (p. 353).",
+      "end": 418,
+      "claim_text": "Un décideur omniscient connaîtrait toutes les options ouvertes au choix, saurait calculer les conséquences de chacune, serait certain de l’évaluation qu’il en fait aujourd’hui comme de demain, et pourrait comparer des conséquences hétérogènes sur une même mesure.",
+      "normalized_claim": "Les quatre exigences cumulatives du modèle classique telles que Simon les pose p. 353.",
       "support_ids": [
         "SUP-c799954d72d6b7b0",
         "SUP-3d0fbd17cc37b53a"
       ]
     },
     {
-      "claim_id": "C011",
+      "claim_id": "C013",
       "locator": "sections[0].paragraphs[0]",
       "start": 419,
-      "end": 538,
-      "claim_text": "Est limitée, dès lors, toute rationalité qui n’est pas omnisciente, ce qui ne lui ôte rien de sa qualité de rationalité",
-      "normalized_claim": "Catégorie résiduelle : est bornée toute rationalité non omnisciente, sans perte de qualité de rationalité.",
+      "end": 539,
+      "claim_text": "Est limitée, dès lors, toute rationalité qui n’est pas omnisciente, ce qui ne lui ôte rien de sa qualité de rationalité.",
+      "normalized_claim": "La rationalité limitée est une catégorie définie par écart à l'omniscience, et non un défaut de rationalité.",
       "support_ids": [
         "SUP-872a2db4758cbbb2",
         "SUP-3d0fbd17cc37b53a"
       ]
     },
     {
-      "claim_id": "C012",
-      "locator": "sections[0].paragraphs[1]",
-      "start": 0,
-      "end": 70,
-      "claim_text": "Les défaillances de cette omniscience, Simon les nomme en trois termes",
-      "normalized_claim": "Simon nomme trois défaillances de l'omniscience.",
-      "support_ids": [
-        "SUP-76e0114ff88ea71e",
-        "SUP-e16e2493f1c49649"
-      ]
-    },
-    {
-      "claim_id": "C013",
-      "locator": "sections[0].paragraphs[1]",
-      "start": 73,
-      "end": 211,
-      "claim_text": "« largely failures of knowing all the alternatives, uncertainty about relevant exogenous events, and inability to calculate consequences »",
-      "normalized_claim": "Citation verbatim anglaise de la p. 356.",
-      "support_ids": [
-        "SUP-e16e2493f1c49649",
-        "SUP-dc9c0f80f47f7cce"
-      ]
-    },
-    {
       "claim_id": "C014",
       "locator": "sections[0].paragraphs[1]",
-      "start": 214,
-      "end": 340,
-      "claim_text": "ne pas connaître toutes les options, être incertain sur les événements extérieurs, être incapable de calculer les conséquences",
-      "normalized_claim": "Rendu français des trois défaillances, conforme à la traduction interne et à la note sur « alternatives ».",
+      "start": 0,
+      "end": 211,
+      "claim_text": "Les défaillances de cette omniscience, Simon les nomme en trois termes : « largely failures of knowing all the alternatives, uncertainty about relevant exogenous events, and inability to calculate consequences »",
+      "normalized_claim": "Verbatim anglais des trois défaillances de l'omniscience (p. 356).",
       "support_ids": [
-        "SUP-76e0114ff88ea71e",
-        "SUP-e401a7ddfb1c5782"
+        "SUP-e16e2493f1c49649",
+        "SUP-76e0114ff88ea71e"
       ]
     },
     {
       "claim_id": "C015",
       "locator": "sections[0].paragraphs[1]",
-      "start": 342,
-      "end": 439,
-      "claim_text": "Les deux premières portent sur ce que le décideur sait ; la troisième, sur ce qu’il peut en faire",
-      "normalized_claim": "Partition interprétative des trois défaillances entre savoir et pouvoir calculer.",
+      "start": 214,
+      "end": 340,
+      "claim_text": "ne pas connaître toutes les options, être incertain sur les événements extérieurs, être incapable de calculer les conséquences",
+      "normalized_claim": "Rendu français des trois défaillances.",
       "support_ids": [
         "SUP-76e0114ff88ea71e",
-        "SUP-bed592c22f3d1622"
+        "SUP-e401a7ddfb1c5782",
+        "SUP-e273a2627707c823"
       ]
     },
     {
       "claim_id": "C016",
       "locator": "sections[0].paragraphs[1]",
-      "start": 441,
-      "end": 626,
-      "claim_text": "L’une des trois, d’ailleurs, ne dépend pas de lui : cette incertitude n’est pas dans sa tête, elle est dans le monde, ce qui interdit de réduire la borne à un défaut d’équipement mental",
-      "normalized_claim": "L'incertitude sur les événements exogènes est une borne externe, non un défaut cognitif.",
+      "start": 342,
+      "end": 440,
+      "claim_text": "Les deux premières portent sur ce que le décideur sait ; la troisième, sur ce qu’il peut en faire.",
+      "normalized_claim": "Les deux premières défaillances sont de connaissance, la troisième de capacité de calcul.",
       "support_ids": [
-        "SUP-5b0025768b325a54",
-        "SUP-dc9c0f80f47f7cce",
-        "SUP-5029591ee4e36b0f"
+        "SUP-76e0114ff88ea71e",
+        "SUP-e16e2493f1c49649",
+        "SUP-bed592c22f3d1622"
       ]
     },
     {
       "claim_id": "C017",
-      "locator": "sections[0].paragraphs[2]",
-      "start": 0,
-      "end": 157,
-      "claim_text": "Le mot français ajoute une difficulté que l’anglais n’a pas : limitée suggère une rationalité diminuée, donc l’existence, ailleurs, d’une rationalité entière",
-      "normalized_claim": "Le français « limitée » suggère un déficit là où l'anglais « bounded » dit une borne.",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 441,
+      "end": 627,
+      "claim_text": "L’une des trois, d’ailleurs, ne dépend pas de lui : cette incertitude n’est pas dans sa tête, elle est dans le monde, ce qui interdit de réduire la borne à un défaut d’équipement mental.",
+      "normalized_claim": "L'incertitude sur les événements exogènes est la seule des trois qui ne relève pas du décideur ; la limite n'est pas seulement cognitive.",
       "support_ids": [
-        "SUP-872a2db4758cbbb2",
-        "SUP-2f7cba4ef620b2d4",
-        "SUP-beed009069fd6a76"
+        "SUP-dc9c0f80f47f7cce",
+        "SUP-5b0025768b325a54",
+        "SUP-e273a2627707c823",
+        "SUP-5029591ee4e36b0f"
       ]
     },
     {
       "claim_id": "C018",
       "locator": "sections[0].paragraphs[2]",
+      "start": 0,
+      "end": 158,
+      "claim_text": "Le mot français ajoute une difficulté que l’anglais n’a pas : limitée suggère une rationalité diminuée, donc l’existence, ailleurs, d’une rationalité entière.",
+      "normalized_claim": "« Bounded » dit une borne, « limitée » glisse en français vers « diminuée » et suppose une rationalité non limitée.",
+      "support_ids": [
+        "SUP-872a2db4758cbbb2",
+        "SUP-2f7cba4ef620b2d4"
+      ]
+    },
+    {
+      "claim_id": "C019",
+      "locator": "sections[0].paragraphs[2]",
       "start": 159,
       "end": 327,
       "claim_text": "Rodolphe Gouin et Jean-Baptiste Harguindéguy reprennent le terme reçu tout en notant qu’il « laisse supposer à tort qu’il ne s’agit que d’une rationalité non optimale »",
-      "normalized_claim": "Attribution nominale et citation verbatim de la note 3 de Gouin & Harguindéguy, qui reprennent néanmoins le terme.",
+      "normalized_claim": "Gouin & Harguindéguy reprennent « rationalité limitée » tout en formulant cette réserve (note 3).",
       "support_ids": [
         "SUP-2f7cba4ef620b2d4",
         "SUP-8921fde8d0572500",
@@ -296,41 +309,29 @@
       ]
     },
     {
-      "claim_id": "C019",
+      "claim_id": "C020",
       "locator": "sections[0].paragraphs[2]",
       "start": 330,
-      "end": 537,
-      "claim_text": "Sophie Béjean, Fabienne Midy et Christine Peyron écrivent que ce choix de traduction leur semble trahir la pensée de Simon, parce qu’il laisse entrevoir une rationalité qui serait supérieure, car non limitée",
-      "normalized_claim": "Attribution nominale et paraphrase de la note 8 de Béjean, Midy & Peyron.",
+      "end": 538,
+      "claim_text": "Sophie Béjean, Fabienne Midy et Christine Peyron écrivent que ce choix de traduction leur semble trahir la pensée de Simon, parce qu’il laisse entrevoir une rationalité qui serait supérieure, car non limitée.",
+      "normalized_claim": "Béjean, Midy & Peyron jugent que la traduction « rationalité limitée » trahit Simon en laissant entrevoir une rationalité supérieure, car non limitée (note 8).",
       "support_ids": [
         "SUP-e7273bcb2bafdef6",
-        "SUP-2f7cba4ef620b2d4",
         "SUP-9a7bdca0b48d91b1",
+        "SUP-2f7cba4ef620b2d4",
         "SUP-beed009069fd6a76"
-      ]
-    },
-    {
-      "claim_id": "C020",
-      "locator": "sections[1].paragraphs[0]",
-      "start": 0,
-      "end": 43,
-      "claim_text": "Le premier manque a une conséquence directe",
-      "normalized_claim": "Le premier manque (options non données) entraîne la recherche.",
-      "support_ids": [
-        "SUP-e060a9a687e24d6d",
-        "SUP-b9346cfe1752dfcf"
       ]
     },
     {
       "claim_id": "C021",
       "locator": "sections[1].paragraphs[0]",
-      "start": 48,
+      "start": 0,
       "end": 111,
-      "claim_text": "Simon la pose comme une condition, non comme une règle générale",
-      "normalized_claim": "La recherche d'options est énoncée par Simon sous condition, non comme propriété du régime.",
+      "claim_text": "Le premier manque a une conséquence directe, et Simon la pose comme une condition, non comme une règle générale",
+      "normalized_claim": "Simon énonce la nécessité de chercher des options sous condition, non comme une propriété générale du régime.",
       "support_ids": [
-        "SUP-e060a9a687e24d6d",
-        "SUP-89428644e89a00ef"
+        "SUP-89428644e89a00ef",
+        "SUP-e060a9a687e24d6d"
       ]
     },
     {
@@ -339,7 +340,7 @@
       "start": 114,
       "end": 224,
       "claim_text": "« If the alternatives for choice are not given initially to the decision maker, then he must search for them »",
-      "normalized_claim": "Citation verbatim de la p. 356.",
+      "normalized_claim": "Verbatim anglais (p. 356).",
       "support_ids": [
         "SUP-e060a9a687e24d6d",
         "SUP-89428644e89a00ef"
@@ -348,13 +349,12 @@
     {
       "claim_id": "C023",
       "locator": "sections[1].paragraphs[0]",
-      "start": 232,
+      "start": 226,
       "end": 303,
-      "claim_text": "s’il ne dispose pas d’emblée des options, le décideur doit les chercher",
-      "normalized_claim": "Traduction française de la condition de recherche.",
+      "claim_text": "soit, s’il ne dispose pas d’emblée des options, le décideur doit les chercher",
+      "normalized_claim": "Rendu français de la même proposition conditionnelle.",
       "support_ids": [
         "SUP-e060a9a687e24d6d",
-        "SUP-89428644e89a00ef",
         "SUP-e401a7ddfb1c5782"
       ]
     },
@@ -362,54 +362,57 @@
       "claim_id": "C024",
       "locator": "sections[1].paragraphs[0]",
       "start": 305,
-      "end": 376,
-      "claim_text": "Quand elles sont déjà sous les yeux, rien n’oblige à chercher plus loin",
-      "normalized_claim": "Contraposée de la condition : options données, pas d'obligation de recherche.",
-      "support_ids": [
-        "SUP-e060a9a687e24d6d",
-        "SUP-89428644e89a00ef"
-      ]
-    },
-    {
-      "claim_id": "C025",
-      "locator": "sections[1].paragraphs[0]",
-      "start": 378,
-      "end": 420,
-      "claim_text": "et beaucoup de décisions se prennent ainsi",
-      "normalized_claim": "Affirmation de fréquence empirique sur les décisions réelles.",
-      "support_ids": []
-    },
-    {
-      "claim_id": "C026",
-      "locator": "sections[1].paragraphs[0]",
-      "start": 422,
-      "end": 534,
-      "claim_text": "Dire qu’une décision relève de la rationalité limitée n’affirme donc pas qu’on explore toujours avant de choisir",
-      "normalized_claim": "Le concept n'implique pas une recherche systématique.",
+      "end": 377,
+      "claim_text": "Quand elles sont déjà sous les yeux, rien n’oblige à chercher plus loin.",
+      "normalized_claim": "Si les options sont données d'emblée, la condition d'application de la recherche n'est pas remplie.",
       "support_ids": [
         "SUP-89428644e89a00ef",
         "SUP-e060a9a687e24d6d"
       ]
     },
     {
-      "claim_id": "C027",
+      "claim_id": "C025",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 378,
+      "end": 491,
+      "claim_text": "Dire qu’une décision relève de la rationalité limitée n’affirme donc pas qu’on explore toujours avant de choisir.",
+      "normalized_claim": "La recherche d'options n'est pas une propriété constante du régime de rationalité limitée.",
+      "support_ids": [
+        "SUP-89428644e89a00ef",
+        "SUP-b9346cfe1752dfcf"
+      ]
+    },
+    {
+      "claim_id": "C026",
       "locator": "sections[1].paragraphs[1]",
       "start": 0,
-      "end": 77,
-      "claim_text": "Les deux autres manques se voient sur un cas que Simon rapporte avoir observé",
-      "normalized_claim": "Le cas de Milwaukee est rapporté par Simon comme observation personnelle, et illustre les deux autres manques.",
+      "end": 116,
+      "claim_text": "Le troisième manque, l’incapacité de calculer les conséquences, se voit sur un cas que Simon rapporte avoir observé.",
+      "normalized_claim": "Simon rapporte un cas observé par lui-même qui illustre l'incapacité de calculer les conséquences.",
       "support_ids": [
         "SUP-ae50d68aaeeaf2bc",
-        "SUP-41b40aa46a2b801d"
+        "SUP-41b40aa46a2b801d",
+        "SUP-76e0114ff88ea71e"
+      ]
+    },
+    {
+      "claim_id": "C027",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 117,
+      "end": 276,
+      "claim_text": "Au milieu des années trente, à Milwaukee, les équipements de loisirs sont administrés conjointement par le service des travaux publics et par celui des écoles.",
+      "normalized_claim": "Milwaukee, 1934-35 : administration conjointe des équipements de loisirs par le service des travaux publics et le school board.",
+      "support_ids": [
+        "SUP-ae50d68aaeeaf2bc"
       ]
     },
     {
       "claim_id": "C028",
       "locator": "sections[1].paragraphs[1]",
-      "start": 79,
-      "end": 237,
-      "claim_text": "Au milieu des années trente, à Milwaukee, les équipements de loisirs sont administrés conjointement par le service des travaux publics et par celui des écoles",
-      "normalized_claim": "Milwaukee 1934-35, administration conjointe school board / travaux publics.",
+      "start": 277,
+      "end": 490,
+      "claim_text": "Les deux responsables s’entendent sur les objectifs, ne se disputent aucun territoire, et se querellent pourtant sans fin sur la répartition des fonds entre l’entretien des installations et l’encadrement des jeux.",
+      "normalized_claim": "Les deux chefs de service s'accordent sur les objectifs, ne se disputent pas d'empire, mais sont en désaccord permanent sur la répartition des fonds.",
       "support_ids": [
         "SUP-ae50d68aaeeaf2bc"
       ]
@@ -417,32 +420,32 @@
     {
       "claim_id": "C029",
       "locator": "sections[1].paragraphs[1]",
-      "start": 239,
-      "end": 451,
-      "claim_text": "Les deux responsables s’entendent sur les objectifs, ne se disputent aucun territoire, et se querellent pourtant sans fin sur la répartition des fonds entre l’entretien des installations et l’encadrement des jeux",
-      "normalized_claim": "Accord sur les objectifs, pas de lutte d'empire, désaccord permanent sur la répartition des fonds.",
+      "start": 491,
+      "end": 642,
+      "claim_text": "Pourquoi, se demande Simon, ne comparent-ils pas le rendement marginal d’une activité à celui de l’autre, comme ses manuels d’économie le suggéraient ?",
+      "normalized_claim": "Reprise de la question que Simon se pose : « Why did they not, as my economics books suggested, simply balance off the marginal return of the one activity against that of the other? »",
       "support_ids": [
         "SUP-ae50d68aaeeaf2bc"
       ]
     },
     {
       "claim_id": "C030",
-      "locator": "sections[1].paragraphs[1]",
-      "start": 453,
-      "end": 604,
-      "claim_text": "Pourquoi, se demande Simon, ne comparent-ils pas le rendement marginal d’une activité à celui de l’autre, comme ses manuels d’économie le suggéraient ?",
-      "normalized_claim": "Reprise de la question que Simon pose (« as my economics books suggested »).",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 31,
+      "end": 109,
+      "claim_text": "ils ne le faisaient pas parce que, intellectuellement, ils ne le pouvaient pas",
+      "normalized_claim": "L'empêchement est cognitif : « they didn't equate expenditures at the margin because, intellectually, they couldn't ».",
       "support_ids": [
-        "SUP-ae50d68aaeeaf2bc"
+        "SUP-41b40aa46a2b801d"
       ]
     },
     {
       "claim_id": "C031",
       "locator": "sections[1].paragraphs[2]",
-      "start": 31,
-      "end": 109,
-      "claim_text": "ils ne le faisaient pas parce que, intellectuellement, ils ne le pouvaient pas",
-      "normalized_claim": "L'empêchement est cognitif : « intellectually, they couldn't ».",
+      "start": 111,
+      "end": 262,
+      "claim_text": "Aucune fonction de production mesurable n’en donnait les rendements marginaux, et les idées qualitatives que chacun s’en faisait étaient incompatibles.",
+      "normalized_claim": "Pas de fonction de production mesurable ; notions qualitatives mutuellement incompatibles.",
       "support_ids": [
         "SUP-41b40aa46a2b801d"
       ]
@@ -450,22 +453,21 @@
     {
       "claim_id": "C032",
       "locator": "sections[1].paragraphs[2]",
-      "start": 111,
-      "end": 261,
-      "claim_text": "Aucune fonction de production mesurable n’en donnait les rendements marginaux, et les idées qualitatives que chacun s’en faisait étaient incompatibles",
-      "normalized_claim": "Absence de fonction de production mesurable et incompatibilité des notions qualitatives.",
+      "start": 263,
+      "end": 443,
+      "claim_text": "Pour l’un, un terrain de jeu est un équipement physique, une oasis verte dans une ville grise ; pour l’autre, un équipement social où des enfants jouent sous la conduite d’adultes.",
+      "normalized_claim": "Illustration donnée par Simon de l'incompatibilité des deux représentations du terrain de jeu.",
       "support_ids": [
-        "SUP-41b40aa46a2b801d",
-        "SUP-b905478a3a07fa83"
+        "SUP-41b40aa46a2b801d"
       ]
     },
     {
       "claim_id": "C033",
       "locator": "sections[1].paragraphs[2]",
-      "start": 263,
-      "end": 442,
-      "claim_text": "Pour l’un, un terrain de jeu est un équipement physique, une oasis verte dans une ville grise ; pour l’autre, un équipement social où des enfants jouent sous la conduite d’adultes",
-      "normalized_claim": "L'illustration donnée par Simon des deux représentations du terrain de jeu.",
+      "start": 444,
+      "end": 519,
+      "claim_text": "Ils ne veulent pas des choses différentes, ils ne voient pas le même objet.",
+      "normalized_claim": "Le désaccord n'est pas de fins mais de représentation de l'objet.",
       "support_ids": [
         "SUP-41b40aa46a2b801d"
       ]
@@ -473,129 +475,88 @@
     {
       "claim_id": "C034",
       "locator": "sections[1].paragraphs[2]",
-      "start": 444,
-      "end": 518,
-      "claim_text": "Ils ne veulent pas des choses différentes, ils ne voient pas le même objet",
-      "normalized_claim": "Le désaccord est de perception, non de préférence.",
-      "support_ids": [
-        "SUP-41b40aa46a2b801d"
-      ]
-    },
-    {
-      "claim_id": "C035",
-      "locator": "sections[1].paragraphs[2]",
       "start": 520,
-      "end": 594,
-      "claim_text": "Ce qu’il a vu là se retrouve, écrit Simon, partout où des humains décident",
-      "normalized_claim": "Généralisation revendiquée par Simon du cas de Milwaukee.",
+      "end": 676,
+      "claim_text": "Ce qu’il a vu là se retrouve, écrit Simon, partout où des humains décident : « The phenomenon observed in Milwaukee is ubiquitous in human decision making »",
+      "normalized_claim": "Simon généralise le phénomène de Milwaukee à toute décision humaine (p. 353).",
       "support_ids": [
         "SUP-cf281a387513bcc4",
         "SUP-bed592c22f3d1622"
       ]
     },
     {
-      "claim_id": "C036",
-      "locator": "sections[1].paragraphs[2]",
-      "start": 597,
-      "end": 676,
-      "claim_text": "« The phenomenon observed in Milwaukee is ubiquitous in human decision making »",
-      "normalized_claim": "Citation verbatim (p. 353).",
+      "claim_id": "C035",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 110,
+      "end": 209,
+      "claim_text": "Simon place deux notions au centre de sa caractérisation : la recherche, et une règle qui l’arrête.",
+      "normalized_claim": "« Two concepts are central to the characterization: search and satisficing » (p. 356).",
       "support_ids": [
-        "SUP-cf281a387513bcc4"
+        "SUP-cc2c3f28bdd3762e",
+        "SUP-e060a9a687e24d6d",
+        "SUP-1245702f511c6192",
+        "SUP-9a7db745f1a341bf"
+      ]
+    },
+    {
+      "claim_id": "C036",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 210,
+      "end": 339,
+      "claim_text": "Le décideur se forme, explicitement ou non, une idée de ce qu’une option devrait valoir pour lui convenir, un niveau d’aspiration",
+      "normalized_claim": "Le décideur forme une aspiration quant à la qualité de l'option qu'il devrait trouver.",
+      "support_ids": [
+        "SUP-1245702f511c6192",
+        "SUP-5c3a7a4f851da1b2",
+        "SUP-b0f8a6150604b39e"
       ]
     },
     {
       "claim_id": "C037",
       "locator": "sections[2].paragraphs[0]",
-      "start": 110,
-      "end": 208,
-      "claim_text": "Simon place deux notions au centre de sa caractérisation : la recherche, et une règle qui l’arrête",
-      "normalized_claim": "« Two concepts are central to the characterization: search and satisficing ».",
+      "start": 342,
+      "end": 473,
+      "claim_text": "il examine les options dans l’ordre où elles viennent ; dès qu’il en rencontre une qui atteint ce niveau, il s’arrête et la choisit",
+      "normalized_claim": "Dès qu'il découvre une option atteignant son niveau d'aspiration, il arrête la recherche et la choisit.",
       "support_ids": [
-        "SUP-cc2c3f28bdd3762e",
-        "SUP-82b3bd2198a32925",
-        "SUP-1245702f511c6192"
+        "SUP-1245702f511c6192",
+        "SUP-2daeab338b75f4b6",
+        "SUP-e060a9a687e24d6d"
       ]
     },
     {
       "claim_id": "C038",
-      "locator": "sections[2].paragraphs[0]",
-      "start": 210,
-      "end": 339,
-      "claim_text": "Le décideur se forme, explicitement ou non, une idée de ce qu’une option devrait valoir pour lui convenir, un niveau d’aspiration",
-      "normalized_claim": "Formation d'un niveau d'aspiration.",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 0,
+      "end": 97,
+      "claim_text": "Simon a forgé un nom pour ce mode de sélection, satisficing, contraction de satisfy et de suffice",
+      "normalized_claim": "Simon revendique la forge du mot satisficing, mot-valise de satisfy et suffice.",
       "support_ids": [
         "SUP-1245702f511c6192",
-        "SUP-b0f8a6150604b39e"
+        "SUP-43982e2de588a0fb",
+        "SUP-2daeab338b75f4b6"
       ]
     },
     {
       "claim_id": "C039",
-      "locator": "sections[2].paragraphs[0]",
-      "start": 342,
-      "end": 395,
-      "claim_text": "il examine les options dans l’ordre où elles viennent",
-      "normalized_claim": "Examen séquentiel des options au fil de leur découverte.",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 99,
+      "end": 248,
+      "claim_text": "que les sources françaises consultées gardent en anglais faute de rendu stabilisé et dont elles paraphrasent le mécanisme, ici par choix satisfaisant",
+      "normalized_claim": "Les sources francophones consultées conservent le mot anglais, faute de rendu français stabilisé, et paraphrasent le mécanisme.",
       "support_ids": [
-        "SUP-1245702f511c6192",
-        "SUP-2daeab338b75f4b6"
+        "SUP-39fa5176097675af",
+        "SUP-dd8a394bf83ce8aa",
+        "SUP-369c156fe1a672b8"
       ]
     },
     {
       "claim_id": "C040",
-      "locator": "sections[2].paragraphs[0]",
-      "start": 398,
-      "end": 473,
-      "claim_text": "dès qu’il en rencontre une qui atteint ce niveau, il s’arrête et la choisit",
-      "normalized_claim": "Règle d'arrêt : la première option atteignant le niveau d'aspiration termine la recherche.",
-      "support_ids": [
-        "SUP-1245702f511c6192",
-        "SUP-2daeab338b75f4b6"
-      ]
-    },
-    {
-      "claim_id": "C041",
       "locator": "sections[2].paragraphs[1]",
-      "start": 0,
-      "end": 59,
-      "claim_text": "Simon a forgé un nom pour ce mode de sélection, satisficing",
-      "normalized_claim": "Simon revendique la forge du mot : « I called this mode of selection satisficing ».",
-      "support_ids": [
-        "SUP-43982e2de588a0fb",
-        "SUP-2daeab338b75f4b6",
-        "SUP-1245702f511c6192"
-      ]
-    },
-    {
-      "claim_id": "C042",
-      "locator": "sections[2].paragraphs[1]",
-      "start": 61,
-      "end": 97,
-      "claim_text": "contraction de satisfy et de suffice",
-      "normalized_claim": "Étymologie du mot-valise.",
-      "support_ids": [
-        "SUP-43982e2de588a0fb"
-      ]
-    },
-    {
-      "claim_id": "C043",
-      "locator": "sections[2].paragraphs[1]",
-      "start": 99,
-      "end": 207,
-      "claim_text": "qu’on rend par choix satisfaisant en gardant le double sens : qui suffit, et qui satisfait celui qui choisit",
-      "normalized_claim": "Rendu français proposé et justification du double sens.",
-      "support_ids": [
-        "SUP-43982e2de588a0fb",
-        "SUP-39fa5176097675af"
-      ]
-    },
-    {
-      "claim_id": "C044",
-      "locator": "sections[2].paragraphs[1]",
-      "start": 258,
-      "end": 390,
-      "claim_text": "Retenir la meilleure option de toutes suppose de les avoir toutes examinées ; s’arrêter à la première qui convient ne le suppose pas",
-      "normalized_claim": "Écart entre maximisation (examen exhaustif) et règle d'arrêt.",
+      "start": 299,
+      "end": 432,
+      "claim_text": "Retenir la meilleure option de toutes suppose de les avoir toutes examinées ; s’arrêter à la première qui convient ne le suppose pas.",
+      "normalized_claim": "Le choix optimal exige la connaissance de toutes les options ; la règle d'arrêt au niveau d'aspiration ne l'exige pas.",
       "support_ids": [
         "SUP-c799954d72d6b7b0",
         "SUP-1245702f511c6192",
@@ -603,12 +564,12 @@
       ]
     },
     {
-      "claim_id": "C045",
+      "claim_id": "C041",
       "locator": "sections[2].paragraphs[1]",
-      "start": 392,
-      "end": 441,
-      "claim_text": "Les deux peuvent coïncider, mais rien ne l’assure",
-      "normalized_claim": "Équivalence possible en équilibre de long terme, formulée au conditionnel et non garantie.",
+      "start": 433,
+      "end": 483,
+      "claim_text": "Les deux peuvent coïncider, mais rien ne l’assure.",
+      "normalized_claim": "Simon envisage au conditionnel une équivalence possible en équilibre de long terme, sans la tenir pour acquise.",
       "support_ids": [
         "SUP-73b18dc87c684d1d",
         "SUP-312050e706d248c5",
@@ -616,299 +577,218 @@
       ]
     },
     {
-      "claim_id": "C046",
+      "claim_id": "C042",
       "locator": "sections[2].paragraphs[2]",
       "start": 0,
       "end": 45,
       "claim_text": "Ce niveau n’est pas fixé une fois pour toutes",
-      "normalized_claim": "Le niveau d'aspiration est mobile.",
+      "normalized_claim": "Le niveau d'aspiration n'est pas statique.",
       "support_ids": [
         "SUP-28428f30123a088d"
       ]
     },
     {
-      "claim_id": "C047",
+      "claim_id": "C043",
       "locator": "sections[2].paragraphs[2]",
       "start": 47,
       "end": 109,
       "claim_text": "et c’est ce qui interdit de lire la règle comme un renoncement",
-      "normalized_claim": "La mobilité du seuil réfute la lecture du satisficing comme renoncement.",
+      "normalized_claim": "La mobilité du seuil interdit de lire le satisficing comme un abaissement d'exigence.",
       "support_ids": [
-        "SUP-cb1a6265ed8d8532"
+        "SUP-cb1a6265ed8d8532",
+        "SUP-1245702f511c6192"
       ]
     },
     {
-      "claim_id": "C048",
+      "claim_id": "C044",
       "locator": "sections[2].paragraphs[2]",
       "start": 111,
       "end": 205,
       "claim_text": "Simon emprunte la notion à la psychologie des niveaux d’aspiration, celle de Lewin et d’autres",
-      "normalized_claim": "Origine déclarée par Simon : théories psychologiques des niveaux d'aspiration, Lewin et autres.",
+      "normalized_claim": "Simon déclare l'origine de la notion dans les théories psychologiques des niveaux d'aspiration, dues à Lewin et d'autres.",
       "support_ids": [
         "SUP-28428f30123a088d",
         "SUP-b0f8a6150604b39e"
       ]
     },
     {
-      "claim_id": "C049",
+      "claim_id": "C045",
       "locator": "sections[2].paragraphs[2]",
       "start": 234,
       "end": 427,
       "claim_text": "ces niveaux tendent à monter et à descendre au gré de l’expérience, ils montent dans un environnement généreux qui offre beaucoup de bonnes options, ils baissent dans un environnement plus rude",
-      "normalized_claim": "Loi de variation des niveaux d'aspiration selon l'environnement.",
+      "normalized_claim": "Loi de variation des niveaux d'aspiration selon l'environnement (p. 356).",
       "support_ids": [
         "SUP-28428f30123a088d",
         "SUP-cb1a6265ed8d8532"
       ]
     },
     {
-      "claim_id": "C050",
+      "claim_id": "C046",
       "locator": "sections[2].paragraphs[2]",
       "start": 429,
-      "end": 552,
-      "claim_text": "S’arrêter à un choix satisfaisant n’est donc pas viser bas : c’est viser ce que l’environnement rend raisonnable d’attendre",
-      "normalized_claim": "Le satisficing n'est pas un niveau d'ambition bas, mais un seuil indexé sur l'environnement.",
+      "end": 553,
+      "claim_text": "S’arrêter à un choix satisfaisant n’est donc pas viser bas : c’est viser ce que l’environnement rend raisonnable d’attendre.",
+      "normalized_claim": "Le satisficing est une règle d'arrêt indexée sur ce que l'environnement offre, pas un niveau d'ambition bas.",
       "support_ids": [
         "SUP-cb1a6265ed8d8532",
+        "SUP-9c52ee7550bdb8f3",
         "SUP-28428f30123a088d"
+      ]
+    },
+    {
+      "claim_id": "C047",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 64,
+      "end": 200,
+      "claim_text": "quand il suffirait de calculer le bon moment de s’arrêter, en pesant ce que coûte une recherche de plus contre ce qu’elle peut rapporter",
+      "normalized_claim": "Formulation de l'objection optimisatrice : égaliser le coût marginal de la recherche et son rendement marginal.",
+      "support_ids": [
+        "SUP-cb4ab7944a83f8c1",
+        "SUP-2843410533da5999"
+      ]
+    },
+    {
+      "claim_id": "C048",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 203,
+      "end": 239,
+      "claim_text": "C’est la voie qu’avait prise Stigler",
+      "normalized_claim": "Stigler (1961) a ramené la théorie de la recherche à la maximisation classique de l'utilité, le coût de la recherche étant égalé à son rendement marginal.",
+      "support_ids": [
+        "SUP-cb4ab7944a83f8c1",
+        "SUP-2843410533da5999"
+      ]
+    },
+    {
+      "claim_id": "C049",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 241,
+      "end": 311,
+      "claim_text": "et Simon indique avoir établi de son côté la même équivalence formelle",
+      "normalized_claim": "Simon indique avoir démontré la même équivalence formelle (1956).",
+      "support_ids": [
+        "SUP-cb4ab7944a83f8c1"
+      ]
+    },
+    {
+      "claim_id": "C050",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 313,
+      "end": 336,
+      "claim_text": "Il s’en écarte pourtant",
+      "normalized_claim": "Simon se démarque de la solution de Stigler.",
+      "support_ids": [
+        "SUP-cb4ab7944a83f8c1",
+        "SUP-2843410533da5999"
       ]
     },
     {
       "claim_id": "C051",
       "locator": "sections[3].paragraphs[0]",
-      "start": 70,
-      "end": 200,
-      "claim_text": "il suffirait de calculer le bon moment de s’arrêter, en pesant ce que coûte une recherche de plus contre ce qu’elle peut rapporter",
-      "normalized_claim": "Énoncé de la voie optimisatrice : coût marginal de la recherche contre rendement marginal.",
+      "start": 339,
+      "end": 546,
+      "claim_text": "maximiser ainsi aurait exigé du décideur qu’il estime les coûts et les rendements marginaux de sa propre recherche, dans une situation, écrit-il, déjà trop complexe pour qu’une rationalité globale s’y exerce",
+      "normalized_claim": "« it would have required the decision maker to be able to estimate the marginal costs and returns of search in a decision situation that was already too complex for the exercise of global rationality » (p. 356).",
       "support_ids": [
         "SUP-cb4ab7944a83f8c1",
-        "SUP-2843410533da5999"
+        "SUP-1f4885ceaf5ed2de"
       ]
     },
     {
       "claim_id": "C052",
-      "locator": "sections[3].paragraphs[0]",
-      "start": 203,
-      "end": 239,
-      "claim_text": "C’est la voie qu’avait prise Stigler",
-      "normalized_claim": "Attribution à Stigler (1961) de l'optimisation de la recherche.",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 57,
+      "end": 149,
+      "claim_text": "calculer quand s’arrêter exige justement la connaissance dont l’absence définit la situation",
+      "normalized_claim": "L'optimisation de la recherche réintroduit le calcul dont l'impossibilité vient d'être établie.",
       "support_ids": [
-        "SUP-cb4ab7944a83f8c1",
-        "SUP-2843410533da5999"
+        "SUP-1f4885ceaf5ed2de",
+        "SUP-cb4ab7944a83f8c1"
       ]
     },
     {
       "claim_id": "C053",
-      "locator": "sections[3].paragraphs[0]",
-      "start": 241,
-      "end": 311,
-      "claim_text": "et Simon indique avoir établi de son côté la même équivalence formelle",
-      "normalized_claim": "Simon indique avoir démontré la même équivalence (1956).",
-      "support_ids": [
-        "SUP-cb4ab7944a83f8c1"
-      ]
-    },
-    {
-      "claim_id": "C054",
-      "locator": "sections[3].paragraphs[0]",
-      "start": 313,
-      "end": 336,
-      "claim_text": "Il s’en écarte pourtant",
-      "normalized_claim": "Simon s'écarte de la voie optimisatrice de Stigler.",
-      "support_ids": [
-        "SUP-cb4ab7944a83f8c1"
-      ]
-    },
-    {
-      "claim_id": "C055",
-      "locator": "sections[3].paragraphs[0]",
-      "start": 339,
-      "end": 546,
-      "claim_text": "maximiser ainsi aurait exigé du décideur qu’il estime les coûts et les rendements marginaux de sa propre recherche, dans une situation, écrit-il, déjà trop complexe pour qu’une rationalité globale s’y exerce",
-      "normalized_claim": "Raison pour laquelle Simon s'écarte de la voie optimisatrice (p. 356).",
-      "support_ids": [
-        "SUP-cb4ab7944a83f8c1",
-        "SUP-1f4885ceaf5ed2de"
-      ]
-    },
-    {
-      "claim_id": "C056",
-      "locator": "sections[3].paragraphs[1]",
-      "start": 0,
-      "end": 149,
-      "claim_text": "La sortie optimisatrice se referme ainsi sur elle-même : calculer quand s’arrêter exige justement la connaissance dont l’absence définit la situation",
-      "normalized_claim": "Blocage de la régression : optimiser la recherche réintroduit le calcul déclaré impossible.",
-      "support_ids": [
-        "SUP-cb4ab7944a83f8c1",
-        "SUP-1f4885ceaf5ed2de"
-      ]
-    },
-    {
-      "claim_id": "C057",
       "locator": "sections[3].paragraphs[1]",
       "start": 151,
-      "end": 242,
-      "claim_text": "Reste une échappatoire, simplifier le problème jusqu’à ce qu’un optimum devienne calculable",
-      "normalized_claim": "Énoncé de la voie de la simplification du problème.",
+      "end": 299,
+      "claim_text": "Reste une échappatoire, simplifier le problème jusqu’à ce qu’un optimum devienne calculable. Simon la range elle aussi du côté du choix satisfaisant",
+      "normalized_claim": "Simon range explicitement l'optimisation d'un monde simplifié dans le satisficing.",
       "support_ids": [
         "SUP-5014dfb0725f2776",
         "SUP-6864bc4690fff353"
       ]
     },
     {
-      "claim_id": "C058",
+      "claim_id": "C054",
       "locator": "sections[3].paragraphs[1]",
-      "start": 244,
-      "end": 299,
-      "claim_text": "Simon la range elle aussi du côté du choix satisfaisant",
-      "normalized_claim": "Simon range l'optimisation d'un monde simplifié dans le satisficing.",
-      "support_ids": [
-        "SUP-5014dfb0725f2776",
-        "SUP-6864bc4690fff353",
-        "SUP-951b41062fcf9598"
-      ]
-    },
-    {
-      "claim_id": "C059",
-      "locator": "sections[3].paragraphs[1]",
-      "start": 321,
+      "start": 302,
       "end": 438,
-      "claim_text": "chercher des « optimum solutions for a simplified world » ou des solutions satisfaisantes pour un monde plus réaliste",
-      "normalized_claim": "Reprise de la phrase de la p. 350.",
+      "claim_text": "on peut, écrit-il, chercher des « optimum solutions for a simplified world » ou des solutions satisfaisantes pour un monde plus réaliste",
+      "normalized_claim": "« decision makers can satisfice either by finding optimum solutions for a simplified world, or by finding satisfactory solutions for a more realistic world » (p. 350).",
       "support_ids": [
         "SUP-951b41062fcf9598",
         "SUP-5014dfb0725f2776"
       ]
     },
     {
-      "claim_id": "C060",
+      "claim_id": "C055",
       "locator": "sections[3].paragraphs[1]",
       "start": 440,
       "end": 505,
       "claim_text": "et aucune de ces deux voies, en règle générale, ne domine l’autre",
-      "normalized_claim": "« Neither approach, in general, dominates the other ».",
+      "normalized_claim": "« Neither approach, in general, dominates the other » (p. 350).",
       "support_ids": [
         "SUP-6864bc4690fff353"
       ]
     },
     {
-      "claim_id": "C061",
+      "claim_id": "C056",
       "locator": "sections[3].paragraphs[1]",
       "start": 507,
       "end": 629,
       "claim_text": "Un lecteur de Simon, Gerd Gigerenzer, tient cette lecture optimisatrice pour la première des mésinterprétations du concept",
-      "normalized_claim": "Gigerenzer identifie l'optimisation sous contrainte comme la première mésinterprétation.",
+      "normalized_claim": "Gigerenzer, qui se réclame de Simon, identifie l'optimisation sous contrainte comme la première des mésinterprétations du concept.",
       "support_ids": [
-        "SUP-6a159eb359d81780",
         "SUP-2195b48cc85157ee",
+        "SUP-6a159eb359d81780",
+        "SUP-5949bd0d07bc5c2b",
         "SUP-6fab7f32d57c90c9",
-        "SUP-5949bd0d07bc5c2b"
+        "SUP-d9145e92f43941f9"
       ]
     },
     {
-      "claim_id": "C062",
+      "claim_id": "C057",
       "locator": "sections[3].paragraphs[1]",
       "start": 631,
       "end": 683,
       "claim_text": "et juge qu’elle « invokes new kinds of omniscience »",
-      "normalized_claim": "Citation verbatim de Gigerenzer.",
+      "normalized_claim": "Verbatim de Gigerenzer contre la lecture optimisatrice.",
       "support_ids": [
         "SUP-2195b48cc85157ee",
         "SUP-6fab7f32d57c90c9"
       ]
     },
     {
-      "claim_id": "C063",
+      "claim_id": "C058",
       "locator": "sections[3].paragraphs[1]",
       "start": 685,
       "end": 770,
       "claim_text": "qu’elle réintroduit l’omniscience même par écart à laquelle le concept se définissait",
-      "normalized_claim": "Glose reliant la critique de Gigerenzer à la définition simonienne par écart à l'omniscience.",
+      "normalized_claim": "Cette lecture réintroduit l'omniscience, alors que le concept se définit par écart à elle.",
       "support_ids": [
         "SUP-2195b48cc85157ee",
-        "SUP-76e0114ff88ea71e",
-        "SUP-bc603c67ea144ffa"
+        "SUP-bc603c67ea144ffa",
+        "SUP-3d0fbd17cc37b53a"
       ]
     },
     {
-      "claim_id": "C064",
+      "claim_id": "C059",
       "locator": "sections[4].paragraphs[0]",
       "start": 0,
-      "end": 83,
-      "claim_text": "Le choix satisfaisant n’est pourtant qu’un des procédés que Simon range sous ce nom",
-      "normalized_claim": "Le satisficing est l'un des procédés rangés sous la rubrique « bounded rationality ».",
-      "support_ids": [
-        "SUP-9806fe22fa49e6d0",
-        "SUP-cc2c3f28bdd3762e",
-        "SUP-9a7db745f1a341bf"
-      ]
-    },
-    {
-      "claim_id": "C065",
-      "locator": "sections[4].paragraphs[0]",
-      "start": 85,
-      "end": 183,
-      "claim_text": "Il en nomme trois qui, écrit-il, rendent traitables des problèmes de décision qui ne l’étaient pas",
-      "normalized_claim": "Trois procédés qui transforment des problèmes intraitables en problèmes traitables.",
-      "support_ids": [
-        "SUP-9806fe22fa49e6d0",
-        "SUP-82b3bd2198a32925"
-      ]
-    },
-    {
-      "claim_id": "C066",
-      "locator": "sections[4].paragraphs[0]",
-      "start": 185,
-      "end": 236,
-      "claim_text": "Le premier est la règle d’arrêt qu’on vient de voir",
-      "normalized_claim": "Premier procédé : chercher des choix satisfaisants plutôt qu'optimaux.",
-      "support_ids": [
-        "SUP-9806fe22fa49e6d0",
-        "SUP-1245702f511c6192"
-      ]
-    },
-    {
-      "claim_id": "C067",
-      "locator": "sections[4].paragraphs[0]",
-      "start": 238,
-      "end": 363,
-      "claim_text": "Le deuxième remplace des buts globaux et abstraits par des sous-buts tangibles, dont l’atteinte peut être observée et mesurée",
-      "normalized_claim": "Deuxième procédé : substitution de sous-buts tangibles aux buts globaux abstraits.",
-      "support_ids": [
-        "SUP-9806fe22fa49e6d0"
-      ]
-    },
-    {
-      "claim_id": "C068",
-      "locator": "sections[4].paragraphs[0]",
-      "start": 366,
-      "end": 536,
-      "claim_text": "c’est ce qui se passait à Milwaukee, où, faute de relier les objectifs aux actions, chacun jugeait ses dépenses à l’aune d’un but subordonné qu’il pouvait, lui, constater",
-      "normalized_claim": "Rattachement du deuxième procédé au cas de Milwaukee via l'identification aux sous-buts.",
-      "support_ids": [
-        "SUP-fb27c2378ea3fd50",
-        "SUP-b905478a3a07fa83",
-        "SUP-41b40aa46a2b801d"
-      ]
-    },
-    {
-      "claim_id": "C069",
-      "locator": "sections[4].paragraphs[0]",
-      "start": 538,
-      "end": 684,
-      "claim_text": "Le troisième découpe la tâche de décision entre de nombreux spécialistes, coordonnés par une structure de communication et de relations d’autorité",
-      "normalized_claim": "Troisième procédé : division de la tâche de décision entre spécialistes coordonnés.",
-      "support_ids": [
-        "SUP-9806fe22fa49e6d0"
-      ]
-    },
-    {
-      "claim_id": "C070",
-      "locator": "sections[4].paragraphs[1]",
-      "start": 0,
-      "end": 90,
-      "claim_text": "Ce troisième procédé est celui qu’on oublie, et c’est celui qui donne au concept sa portée",
-      "normalized_claim": "Le procédé oublié est celui qui donne au concept sa portée organisationnelle.",
+      "end": 84,
+      "claim_text": "Le choix satisfaisant n’est pourtant qu’un des procédés que Simon range sous ce nom.",
+      "normalized_claim": "Le satisficing n'est que l'un des procédés que Simon range sous la rubrique « bounded rationality ».",
       "support_ids": [
         "SUP-9806fe22fa49e6d0",
         "SUP-9a7db745f1a341bf",
@@ -916,12 +796,96 @@
       ]
     },
     {
-      "claim_id": "C071",
+      "claim_id": "C060",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 85,
+      "end": 184,
+      "claim_text": "Il en nomme trois qui, écrit-il, rendent traitables des problèmes de décision qui ne l’étaient pas.",
+      "normalized_claim": "« Several procedures ... have been discovered that transform intractable decision problems into tractable ones » ; Simon en nomme trois (p. 353-354).",
+      "support_ids": [
+        "SUP-9806fe22fa49e6d0"
+      ]
+    },
+    {
+      "claim_id": "C061",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 185,
+      "end": 237,
+      "claim_text": "Le premier est la règle d’arrêt qu’on vient de voir.",
+      "normalized_claim": "Premier procédé : « to look for satisfactory choices instead of optimal ones ».",
+      "support_ids": [
+        "SUP-9806fe22fa49e6d0",
+        "SUP-1245702f511c6192"
+      ]
+    },
+    {
+      "claim_id": "C062",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 238,
+      "end": 363,
+      "claim_text": "Le deuxième remplace des buts globaux et abstraits par des sous-buts tangibles, dont l’atteinte peut être observée et mesurée",
+      "normalized_claim": "Deuxième procédé : « to replace abstract, global goals with tangible subgoals, whose achievement can be observed and measured ».",
+      "support_ids": [
+        "SUP-9806fe22fa49e6d0",
+        "SUP-fb27c2378ea3fd50"
+      ]
+    },
+    {
+      "claim_id": "C063",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 366,
+      "end": 536,
+      "claim_text": "c’est ce qui se passait à Milwaukee, où, faute de relier les objectifs aux actions, chacun jugeait ses dépenses à l’aune d’un but subordonné qu’il pouvait, lui, constater",
+      "normalized_claim": "Quand les buts ne peuvent être reliés opérationnellement aux actions, les décisions sont jugées à l'aune de buts subordonnés qui, eux, peuvent l'être — condition que Simon tire du cas de Milwaukee.",
+      "support_ids": [
+        "SUP-fb27c2378ea3fd50",
+        "SUP-b905478a3a07fa83",
+        "SUP-41b40aa46a2b801d"
+      ]
+    },
+    {
+      "claim_id": "C064",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 538,
+      "end": 685,
+      "claim_text": "Le troisième découpe la tâche de décision entre de nombreux spécialistes, coordonnés par une structure de communication et de relations d’autorité.",
+      "normalized_claim": "Troisième procédé : « to divide up the decision-making task among many specialists, coordinating their work by means of a structure of communications and authority relations ».",
+      "support_ids": [
+        "SUP-9806fe22fa49e6d0"
+      ]
+    },
+    {
+      "claim_id": "C065",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 0,
+      "end": 43,
+      "claim_text": "Ce troisième procédé est celui qu’on oublie",
+      "normalized_claim": "Le troisième procédé est celui qu'on oublie.",
+      "support_ids": [
+        "SUP-9806fe22fa49e6d0",
+        "SUP-9a7db745f1a341bf"
+      ]
+    },
+    {
+      "claim_id": "C066",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 45,
+      "end": 90,
+      "claim_text": "et c’est celui qui donne au concept sa portée",
+      "normalized_claim": "C'est ce procédé qui donne au concept sa portée organisationnelle.",
+      "support_ids": [
+        "SUP-9a7db745f1a341bf",
+        "SUP-cc2c3f28bdd3762e",
+        "SUP-9806fe22fa49e6d0"
+      ]
+    },
+    {
+      "claim_id": "C067",
       "locator": "sections[4].paragraphs[1]",
       "start": 92,
-      "end": 362,
-      "claim_text": "Les organisations élaborées que les humains ont construites pour produire et pour gouverner ne se comprennent, écrit Simon, que comme un appareillage destiné à composer avec les limites de leur capacité à comprendre et à calculer, face à la complexité et à l’incertitude",
-      "normalized_claim": "Traduction de la phrase de la p. 354 sur les organisations comme « machinery for coping ».",
+      "end": 363,
+      "claim_text": "Les organisations élaborées que les humains ont construites pour produire et pour gouverner ne se comprennent, écrit Simon, que comme un appareillage destiné à composer avec les limites de leur capacité à comprendre et à calculer, face à la complexité et à l’incertitude.",
+      "normalized_claim": "Rendu français de « the elaborate organizations ... can only be understood as machinery for coping with the limits of man's abilities to comprehend and compute in the face of complexity and uncertainty » (p. 354).",
       "support_ids": [
         "SUP-35aca64e66ec8127",
         "SUP-5886eec552734f5e",
@@ -929,48 +893,37 @@
       ]
     },
     {
-      "claim_id": "C072",
+      "claim_id": "C068",
       "locator": "sections[4].paragraphs[1]",
       "start": 364,
-      "end": 481,
-      "claim_text": "L’organisation cesse d’être ce qui empêche de décider rationnellement : elle devient ce qui rend la décision possible",
-      "normalized_claim": "Renversement : l'organisation est l'appareillage de la rationalité, non son obstacle.",
+      "end": 544,
+      "claim_text": "L’organisation cesse d’être ce qui empêche de décider rationnellement : elle devient ce qui rend la décision possible à des êtres dont aucun, seul, ne tiendrait le problème entier.",
+      "normalized_claim": "L'organisation n'est pas un obstacle à la rationalité : elle en est l'appareillage, et elle divise la tâche de décision entre spécialistes.",
       "support_ids": [
-        "SUP-35aca64e66ec8127"
+        "SUP-35aca64e66ec8127",
+        "SUP-9806fe22fa49e6d0"
       ]
     },
     {
-      "claim_id": "C073",
-      "locator": "sections[4].paragraphs[1]",
-      "start": 482,
-      "end": 543,
-      "claim_text": "à des êtres dont aucun, seul, ne tiendrait le problème entier",
-      "normalized_claim": "Conséquence tirée de la division de la tâche de décision entre spécialistes.",
-      "support_ids": [
-        "SUP-9806fe22fa49e6d0",
-        "SUP-35aca64e66ec8127"
-      ]
-    },
-    {
-      "claim_id": "C074",
+      "claim_id": "C069",
       "locator": "sections[4].paragraphs[2]",
       "start": 38,
       "end": 193,
       "claim_text": "tant que l’optimum sert d’étalon, une décision s’évalue à son résultat ; dès qu’on regarde comment elle a été prise, c’est le processus qui devient l’objet",
-      "normalized_claim": "Déplacement de l'objet du jugement, du résultat au processus.",
+      "normalized_claim": "Le concept déplace l'objet du jugement du résultat vers le processus.",
       "support_ids": [
         "SUP-8921fde8d0572500",
         "SUP-6c48065fd52e1ca4",
-        "SUP-e36c0c17a34825bd"
+        "SUP-daf5abf704c6286b"
       ]
     },
     {
-      "claim_id": "C075",
+      "claim_id": "C070",
       "locator": "sections[4].paragraphs[2]",
       "start": 195,
       "end": 444,
       "claim_text": "Gouin et Harguindéguy le formulent ainsi : « il ne s’agit plus d’évaluer la décision (en tant que résultat) à l’aune d’un critère objectif d’optimalité » mais « de comprendre le processus de prise de décision et de saisir le raisonnement à l’œuvre »",
-      "normalized_claim": "Citation attribuée à Gouin & Harguindéguy (2009, p. 3).",
+      "normalized_claim": "Citation de Gouin & Harguindéguy (2009, p. 3).",
       "support_ids": [
         "SUP-8921fde8d0572500",
         "SUP-6c48065fd52e1ca4",
@@ -978,21 +931,34 @@
       ]
     },
     {
-      "claim_id": "C076",
+      "claim_id": "C071",
       "locator": "sections[4].paragraphs[2]",
       "start": 446,
-      "end": 591,
-      "claim_text": "Le choix, écrit Simon, ne dépend pas seulement des caractéristiques objectives de la situation, mais aussi du procédé par lequel on y est parvenu",
-      "normalized_claim": "Traduction de « choice is not determined uniquely by the objective characteristics of the problem situation » (p. 363).",
+      "end": 557,
+      "claim_text": "Le choix, écrit Simon, « is not determined uniquely by the objective characteristics of the problem situation »",
+      "normalized_claim": "Verbatim de Simon, p. 363 (mechanism[14]).",
       "support_ids": [
-        "SUP-e36c0c17a34825bd"
+        "SUP-daf5abf704c6286b",
+        "SUP-01c086c1ea588e4c"
       ]
     },
     {
-      "claim_id": "C077",
+      "claim_id": "C072",
       "locator": "sections[4].paragraphs[2]",
-      "start": 593,
-      "end": 732,
+      "start": 560,
+      "end": 638,
+      "claim_text": "il dépend aussi du procédé heuristique par lequel on est parvenu à la décision",
+      "normalized_claim": "« but depends also on the particular heuristic process that is used to reach the decision » (p. 363).",
+      "support_ids": [
+        "SUP-daf5abf704c6286b",
+        "SUP-01c086c1ea588e4c"
+      ]
+    },
+    {
+      "claim_id": "C073",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 640,
+      "end": 779,
       "claim_text": "Deux organisations placées dans des conditions identiques peuvent donc, si elles ne décident pas de la même façon, se conduire différemment",
       "normalized_claim": "« If, in the face of identical environmental conditions, different decision mechanisms can produce different firm behaviors » (p. 365).",
       "support_ids": [
@@ -1001,14 +967,15 @@
       ]
     },
     {
-      "claim_id": "C078",
+      "claim_id": "C074",
       "locator": "sections[4].paragraphs[2]",
-      "start": 734,
-      "end": 804,
+      "start": 781,
+      "end": 851,
       "claim_text": "et prévoir ce qu’elles feront demande de savoir comment elles décident",
-      "normalized_claim": "Les réponses ne sont plus prévisibles à partir des seules « requirements of the situation ».",
+      "normalized_claim": "« Responses to environmental events can no longer be predicted simply by analysing the “requirements of the situation,” but depend on the specific decision processes that the firm employs » (p. 365).",
       "support_ids": [
         "SUP-f182b0e8a78d5f16",
+        "SUP-0875f2bb8034b428",
         "SUP-a7d52dc61af59ae5"
       ]
     }
