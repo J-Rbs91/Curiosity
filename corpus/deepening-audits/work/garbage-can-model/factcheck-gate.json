@@ -1,0 +1,22 @@
+{
+  "protocol_version": 1,
+  "concept_id": "garbage-can-model",
+  "candidate_sha256": "f22872ee6f5e43e229188b2ba98c080c24f9d4f2f03d74e56fba5fd48dfa4e58",
+  "verdict": "FACTCHECK_FAIL",
+  "claims": 66,
+  "supported": 64,
+  "failed": 2,
+  "structural_errors": [],
+  "failures": [
+    {
+      "claim_id": "C001",
+      "verdict": "TOO_STRONG",
+      "reason": "Le seul support est un pointeur de tiers (Gibson 2012 renvoyant a CMO 1972, p. 1) que la fiche de lecture declare explicitement non verifie (« Si ce pointeur est exact », « c'est un tiers qui parle »). Il porte en outre sur la presence intermittente des proprietes de l'anarchie organisee, non sur la frequence de la scene decrite ; le texte lecteur supprime l'intermediaire et l'incertitude et pose une generalite empirique non couverte."
+    },
+    {
+      "claim_id": "C022",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun support resolu ne decrit l'occasion de choix comme une poubelle ou les participants presents deversent problemes et solutions : les supports etablissent seulement que « garbage can » est un simile commode pour des combinaisons bizarres d'enjeux et que les elements se lient par simultaneite. Cette image est celle de l'article de 1972, dont l'acces est metadata-only dans le dossier ; le contenu du simile n'est donc pas etabli."
+    }
+  ]
+}
