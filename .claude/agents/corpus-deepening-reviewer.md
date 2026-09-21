@@ -17,14 +17,33 @@ Tu reçois :
 - un `conceptId` ;
 - le chemin de l'audit détaillé ;
 - le chemin du compte rendu de réécriture ;
-- le chemin de `factcheck-gate.json`.
+- le chemin de `factcheck-gate.json` ;
+- le **SHA de blob Git de la version antérieure**, celle que l'audit a examinée.
 
 Lis les artefacts depuis le disque. Ne demande pas à l'orchestrateur de recopier leur contenu
 dans ton prompt.
 
 La version courante de `corpus/deepenings/<conceptId>.json` est la proposition réécrite.
-La version précédente se lit avec Git depuis `HEAD` si le fichier était propre avant le début
-du workflow.
+
+**La version antérieure est le blob dont l'orchestrateur te donne le SHA, jamais une position
+relative dans l'historique.** Lis-la ainsi :
+
+```bash
+git cat-file -p <baseline_blob_sha>
+```
+
+`HEAD:corpus/deepenings/<conceptId>.json` **n'est pas** cette version dès que le cycle commite au
+fil de l'eau : les commits d'étape portent des états intermédiaires du même cycle, dont certains
+contiennent déjà la réécriture. Un reviewer qui compare à `HEAD` ou à `HEAD~1` compare alors deux
+états intermédiaires et ne voit rien. Le cas a été constaté le 20 septembre 2026 sur
+`isomorphisme-institutionnel`.
+
+Si l'orchestrateur ne t'a pas transmis ce SHA, **rends `REJECT`** et dis-le : tu ne peux pas
+établir ce que la réécriture a changé, donc tu ne peux pas prouver qu'elle améliore quoi que ce
+soit. Ne le reconstitue pas en remontant l'historique.
+
+Vérifie que le blob reçu est bien celui de cette carte : il doit se lire, être du JSON
+d'approfondissement, et porter le même `concept_id`. Sinon, `REJECT`.
 
 ## Gate préalable obligatoire
 
@@ -49,7 +68,7 @@ Lis intégralement :
 2. `corpus/deepenings/AUDIT_PROTOCOL.md` ;
 3. `corpus/deepenings/FACTCHECK_PROTOCOL.md` ;
 4. la version proposée `corpus/deepenings/<conceptId>.json` ;
-5. la version précédente avec `git show HEAD:corpus/deepenings/<conceptId>.json` ;
+5. la version antérieure avec `git cat-file -p <baseline_blob_sha>` ;
 6. `corpus/validated/<conceptId>.json` ;
 7. les trois artefacts reçus par chemin.
 
@@ -110,6 +129,7 @@ avec :
 concept : <conceptId>
 verdict : ACCEPT | REJECT
 factcheck_sha_match : PASS | FAIL
+baseline_blob_sha : <sha reçu>
 
 COMPARAISON
 axe                            avant   après   preuve

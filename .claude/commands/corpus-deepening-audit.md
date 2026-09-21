@@ -68,6 +68,17 @@ Avant toute mutation :
 git status --short -- corpus/deepenings/<id>.json corpus/validated/<id>.json corpus/evidence/<id>/
 ```
 
+**Et relève dès maintenant le SHA de blob de la version que l'audit va examiner**, une fois pour
+chaque carte du lot, avant toute écriture et avant tout commit d'étape :
+
+```bash
+git rev-parse HEAD:corpus/deepenings/<id>.json
+```
+
+C'est ce SHA que le reviewer recevra à l'étape 10. Il ne se recalcule pas plus tard : dès que le
+cycle commite au fil de l'eau, `HEAD` porte un état intermédiaire du lot et non la version
+auditée.
+
 Si le deepening, le validated ou les preuves de la carte étaient déjà modifiés, marque
 `SKIPPED_DIRTY` et ne touche pas à cette carte.
 
@@ -219,7 +230,11 @@ Uniquement si une réécriture a été conservée et que le gate exact a rendu `
 Lance `corpus-deepening-reviewer` avec :
 
 - `conceptId` ;
-- chemins de `audit.md`, `factcheck-gate.json` et du compte rendu de réécriture.
+- chemins de `audit.md`, `factcheck-gate.json` et du compte rendu de réécriture ;
+- le **SHA de blob relevé à l'étape 2**, qui désigne la version antérieure.
+
+Le reviewer rend `REJECT` s'il ne reçoit pas ce SHA : sans lui, il ne peut pas établir ce que la
+réécriture a changé.
 
 Le reviewer ne peut rendre `ACCEPT` que si le `candidate_sha256` du gate correspond au fichier
 qu'il examine.
