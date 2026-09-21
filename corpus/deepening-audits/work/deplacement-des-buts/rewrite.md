@@ -1,7 +1,12 @@
 concept : deplacement-des-buts
-mode    : REVISE
+mode    : REVISE, puis FACTCHECK_FIX (boucle 1 sur 2)
 contrôle mécanique : `npm run corpus:deepen -- --check --only=deplacement-des-buts` → PASS,
-1 699 mots (lead + sections + limits), aucun avertissement de citation.
+1 717 mots au total (1 496 mots de texte lecteur, 221 mots de `limits`, qui ne s'affichent pas),
+aucun avertissement de citation.
+
+La première partie de ce compte rendu décrit la révision auditée. La dernière section,
+« BOUCLE DE CORRECTION 1 (FACTCHECK_FIX) », décrit les quatre corrections appliquées après le
+`FACTCHECK_FAIL` déterministe, et c'est elle qui décrit l'état actuel du fichier.
 
 SOURCES RELUES
 
@@ -148,3 +153,83 @@ fact-check n'a été touché.
 
 Le fichier a changé : le SHA précédent est invalide, l'orchestrateur doit reprendre à `PREPARE`.
 Aucune auto-validation n'est rendue ici, ni `ACCEPT`, ni `FACTCHECK_PASS`.
+
+---
+
+BOUCLE DE CORRECTION 1 (FACTCHECK_FIX)
+
+Entrée : `factcheck-gate.json` (verdict `FACTCHECK_FAIL`, 73 claims, 69 soutenus, 4 en échec,
+`structural_errors` vide), `verification.json` pour les motifs des quatre claims, `claim-map.json`
+pour leur localisation exacte. Relus en entier avant correction : les trois protocoles,
+`corpus/validated/deplacement-des-buts.json`, et le répertoire `corpus/evidence/deplacement-des-buts/`
+listé de nouveau (`evidence.primary-reading.json`, `evidence.reception.json`, pas de `scouting.json`).
+Aucune recherche web, aucun fait ajouté de mémoire, aucun `SUP-...` fabriqué, aucun artefact de
+fact-check modifié.
+
+Les quatre échecs sont `TOO_STRONG` et relèvent d'une seule espèce : une modalité ou un
+quantificateur de l'auteur perdu à la traduction. Chacun a reçu une seule des opérations
+autorisées, et rien d'autre n'a été touché : les 69 claims soutenus sont inchangés mot pour mot.
+
+1. C015, `sections[0].paragraphs[1]` : BORNER (restitution de la restriction supprimée).
+   Ancien : « Une telle régularité ne s’obtient pas par la surveillance, mais, observe Merton, par
+   des dispositions que l’organisation inculque et entretient ». Le support dit « Discipline can be
+   effective ONLY IF the ideal patterns are buttressed by strong sentiments » (mechanism[3], p. 562)
+   et, côté conditions, « obtenue par le sentiment et NON PAR LA SEULE CONTRAINTE »
+   (`conditions.appears_when[1]`). Le texte avait transformé un « seule » en exclusion pure, et
+   remplacé la contrainte par la surveillance, que nul support ne mentionne. Nouveau : « Une telle
+   régularité ne s’obtient pas par la seule contrainte. La discipline, écrit Merton, n’est efficace
+   que si les conduites attendues sont étayées par des dispositions que l’organisation inculque et
+   entretient ». Les deux modaux de l'auteur, « seule » et « que si », sont rendus l'un et l'autre.
+   L'attribution à Merton est conservée parce qu'elle porte maintenant sur ce qu'il écrit.
+
+2. C016, même paragraphe : RETIRER (suppression de l'ajout non soutenu).
+   Le troisième terme de l'énumération, « un attachement au devoir qui ne dépende pas du résultat
+   obtenu dans tel cas », importait dans l'exigence initiale une propriété de la discipline DÉJÀ
+   déplacée : « conformance with regulations, whatever the situation », « not as a measure designed
+   for specific purposes » (mechanism[7], p. 563). La subordonnée est supprimée ; il reste « un
+   attachement au devoir », qui correspond à « devotion to one's duties » de mechanism[3]. Aucun
+   terme n'a été ajouté à l'énumération, même soutenu : la correction reste soustractive. L'idée
+   d'indifférence au cas n'est pas perdue pour le lecteur, elle est dite à sa place réelle, en
+   `sections[1].paragraphs[1]` (C025, soutenu) : « La discipline n’est plus une mesure prise en vue
+   de résultats déterminés ».
+
+3. C026, `sections[1].paragraphs[2]` : RETIRER.
+   « Ce déplacement exclut la lecture la plus répandue. » transformait une existence en prévalence.
+   Les supports établissent que le contresens existe (« perdre de vue ses objectifs », « oublient
+   leur mission »), et `non_etabli[9]` de la réception dit expressément le contraire de la phrase :
+   le repérage porte sur des pages pédagogiques et un polycopié non enregistrés, et « un décompte
+   sérieux de la lecture dominante » n'existe pas. Aucune formulation ne rend disponible ce que le
+   dossier range en non établi : la phrase est retirée, sans substitut atténué du type « une lecture
+   courante », qui serait le même quantificateur en plus discret. Le paragraphe ouvre désormais sur
+   « Il ne s’agit ni d’un oubli du but, ni d’un relâchement. » (C027, soutenu), qui enchaîne sur la
+   fin du paragraphe précédent sans rupture et garde intact le delta de la section.
+
+4. C059, `sections[4].paragraphs[0]` : BORNER, par replacement du quantificateur et du modal.
+   Le support porte « the client who, QUITE UNDERSTANDABLY, is convinced of the ‘special features’
+   of his own problem OFTEN objects to such categorical treatment » (mechanism[16], p. 565-566).
+   Le texte avait déplacé « often » de l'objection vers la validité de la conviction (« souvent à
+   bon droit »), rendu l'objection inconditionnelle (« c’est exactement à ce traitement […]
+   qu’elle objecte ») et effacé les guillemets de distance. Nouveau : « Or la personne qui se
+   présente est convaincue, ce qui se comprend aisément, que son problème a quelque chose de
+   « spécial », et elle objecte souvent à ce traitement par catégories. » Merton juge la conviction
+   compréhensible, pas fondée : le texte dit maintenant cela et rien de plus, « souvent » est
+   revenu sur l'objection, et les guillemets de distance de l'auteur sont restitués (mise en relief
+   de trois mots, sous le seuil du contrôle de citation).
+
+`limits` : une seule addition, en fin de `limits[2]`, pour la frontière que C026 a révélée et
+qu'aucune limite ne nommait : « La prévalence du contresens qui y voit un oubli de mission n’est
+pas davantage établie : aucune formule de lecture dominante n’est permise. » `limits[2]` interdisait
+déjà toute affirmation de fréquence, mais seulement au titre de l'absence de données dans l'article
+de 1940 ; la prévalence de la lecture vulgarisée est une autre frontière, et elle est désormais
+écrite. `limits` passe ainsi à 221 mots, légèrement au-dessus des 200 mots visés, ce qui reste
+interne et invisible au lecteur ; le texte lecteur est inchangé à 1 496 mots.
+
+Contrôles refaits après correction : aucun paragraphe n'a perdu son delta, les suppressions ne
+laissent aucune phrase orpheline, aucune section ne répète une section précédente, rien de `limits`
+n'est remonté en bloc visible, et le texte reste en deçà des frontières documentaires. Aucune
+affirmation nouvelle n'a été introduite ; les trois corrections de texte sont soustractives ou
+restitutives, la quatrième est un déplacement de modal.
+
+Le fichier a de nouveau changé : le SHA `3bb4481436094b5397c4f963cc4a6d851c1e73d5159f10cd595a1f14302f724b`
+contrôlé par ce gate est invalide, et l'orchestrateur doit reprendre à `PREPARE`. Aucun
+`FACTCHECK_PASS` n'est déclaré ici. Une seconde boucle de correction reste disponible.
