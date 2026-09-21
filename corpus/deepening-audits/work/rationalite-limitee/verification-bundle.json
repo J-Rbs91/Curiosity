@@ -1,13 +1,13 @@
 {
   "protocol_version": 1,
   "concept_id": "rationalite-limitee",
-  "candidate_sha256": "1f4aef8a2d786687720fbc2f5b8bfd1e78fd3bf535e30a6dcd451ef42872d250",
-  "map_sha256": "24f7a7dbbb38f1ea63e00b2428ff4557e0bd6c0a27d9fda5ed8486cb63e7e967",
+  "candidate_sha256": "bde9cd2d0230c9233d38579aef4e823fe8d07e8227780ca7283bb51b1bef5940",
+  "map_sha256": "fa7fb997bb859c5937488ff3a6c5e58b41c325783ee25954ffaeb04aa266ed61",
   "claims": [
     {
       "claim_id": "C001",
       "locator": "lead[0]",
-      "claim_text": "suppose, en théorie, de connaître toutes les possibilités qui existent, de savoir avec certitude comment la situation va évoluer, et de calculer d’avance ce que chaque choix va produire, pour ne retenir que le meilleur",
+      "claim_text": "Choisir un appartement, un fournisseur ou un emploi suppose, en théorie, de connaître toutes les possibilités qui existent, de savoir avec certitude comment la situation va évoluer, et de calculer d’avance ce que chaque choix va produire, pour ne retenir que le meilleur.",
       "supports": [
         {
           "id": "SUP-c799954d72d6b7b0",
@@ -28,28 +28,7 @@
     {
       "claim_id": "C002",
       "locator": "lead[0]",
-      "claim_text": "Personne ne décide ainsi, et disposer de plus de temps n’y changerait rien",
-      "supports": [
-        {
-          "id": "SUP-6d15e1b768c77bb3",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.common_misinterpretations[7].why_wrong",
-          "access": "n/a",
-          "text": "ATTRIBUTION NON SOUTENUE PAR CE TEXTE. Simon nomme trois défaillances (p. 356) : ne pas connaître toutes les options, l'incertitude sur les événements exogènes pertinents, l'incapacité de calculer les conséquences ; et deux causes (p. 351, p. 353) : capacités de calcul limitées et information incomplète. Le TEMPS n'est jamais nommé comme borne dans le texte lu. Ce qui s'en approche est le COÛT DE CALCUL — « reasonable costs of computation » (p. 350), « reasonable amounts of calculation » (p. 357) — qui n'est pas la même chose qu'une contrainte de délai. La glose courante « bornée par l'information, le temps et les capacités cognitives » est donc, sur ce texte, exacte pour deux termes sur trois. Si le troisième doit être maintenu, il faut le documenter ailleurs que dans la conférence Nobel."
-        },
-        {
-          "id": "SUP-5029591ee4e36b0f",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.common_misinterpretations[5].why_wrong",
-          "access": "n/a",
-          "text": "Deux raisons dans le texte. D'abord, la limite a deux sources et l'une n'est pas dans le décideur : « both because of limited computational power and because of uncertainty in the external world » (p. 353) ; et p. 367, les « boundary conditions » sont « imposed by the environment and by the very facts of human long-term memory ». Ensuite, Simon acte que les outils déplacent la frontière sans l'abolir : « As new mathematical tools for computing optimal and satisfactory decisions are discovered, and as computers become more and more powerful, the recommendations of normative decision theory will change. But as the new recommendations are diffused, the actual, observed, practice of decision making in business firms will change also » (p. 351). Le régime de décision se déplace, il ne devient pas omniscient."
-        }
-      ]
-    },
-    {
-      "claim_id": "C003",
-      "locator": "lead[0]",
-      "claim_text": "personne ne connaît toutes les options qui existent, personne ne sait ce que fera le monde autour de lui, et personne ne calcule toutes les conséquences d’un choix un peu conséquent",
+      "claim_text": "Mais personne ne connaît toutes les options qui existent, personne ne sait ce que fera le monde autour de lui, et personne ne calcule toutes les conséquences d’un choix un peu conséquent.",
       "supports": [
         {
           "id": "SUP-76e0114ff88ea71e",
@@ -66,53 +45,46 @@
           "text": "In Administrative Behavior, bounded rationality is largely characterized as a residual category - rationality is bounded when it falls short of omniscience. And the failures of omniscience are largely failures of knowing all the alternatives, uncertainty about relevant exogenous events, and inability to calculate consequences."
         },
         {
+          "id": "SUP-bed592c22f3d1622",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[5]",
+          "access": "n/a",
+          "text": "5. GÉNÉRALISATION (p. 353). Le phénomène observé n'est que « the visible tip of a very large iceberg ». Les quatre exigences classiques tombent simultanément, et Simon nomme les défaillances une à une : « the alternatives of search had to be sought out » (les options ne sont pas données) ; « the consequences of choosing particular alternatives were only very imperfectly known both because of limited computational power and because of uncertainty in the external world » (DEUX bornes distinctes, l'une interne, l'autre externe) ; « the decision maker did not possess a general and consistent utility function for comparing heterogeneous alternatives »."
+        }
+      ]
+    },
+    {
+      "claim_id": "C003",
+      "locator": "lead[1]",
+      "claim_text": "Herbert Simon appelle rationalité limitée le régime de décision qui subsiste quand cette connaissance parfaite manque.",
+      "supports": [
+        {
           "id": "SUP-3d0fbd17cc37b53a",
           "origin": "evidence:evidence.primary-reading.json",
           "path": "$.evidence.concept_definition",
           "access": "n/a",
           "text": "Dans la conférence Nobel de 1978, seule source primaire ouverte ici, Simon caractérise la rationalité limitée par écart à un point de référence, l'omniscience : « In Administrative Behavior, bounded rationality is largely characterized as a residual category - rationality is bounded when it falls short of omniscience. And the failures of omniscience are largely failures of knowing all the alternatives, uncertainty about relevant exogenous events, and inability to calculate consequences » (p. 356). Le point de référence est explicité p. 353 sous la forme des quatre exigences du modèle classique : « The classical model calls for knowledge of all the alternatives that are open to choice. It calls for complete knowledge of, or ability to compute, the consequences that will follow on each of the alternatives. It calls for certainty in the decision-maker's present and future evaluation of these consequences. It calls for the ability to compare consequences, no matter how diverse and heterogeneous, in terms of some consistent measure of utility. » La rationalité limitée est le nom du régime de choix qui subsiste quand ces quatre exigences tombent. Portée organisationnelle revendiquée p. 354 : les organisations élaborées « can only be understood as machinery for coping with the limits of man's abilities to comprehend and compute in the face of complexity and uncertainty ». Rien dans ce texte ne caractérise la rationalité limitée comme un défaut de rationalité : Simon parle p. 368 des « mechanisms of human rational choice » et p. 367 de « Human behavior, even rational human behavior »."
+        },
+        {
+          "id": "SUP-bc603c67ea144ffa",
+          "origin": "validated",
+          "path": "$.quotation.text",
+          "access": "n/a",
+          "text": "[…] la rationalité est limitée quand elle reste en deçà de l'omniscience."
         }
       ]
     },
     {
       "claim_id": "C004",
       "locator": "lead[1]",
-      "claim_text": "Herbert Simon appelle rationalité limitée le régime de décision qui subsiste quand cette connaissance parfaite manque",
-      "supports": [
-        {
-          "id": "SUP-3d0fbd17cc37b53a",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.concept_definition",
-          "access": "n/a",
-          "text": "Dans la conférence Nobel de 1978, seule source primaire ouverte ici, Simon caractérise la rationalité limitée par écart à un point de référence, l'omniscience : « In Administrative Behavior, bounded rationality is largely characterized as a residual category - rationality is bounded when it falls short of omniscience. And the failures of omniscience are largely failures of knowing all the alternatives, uncertainty about relevant exogenous events, and inability to calculate consequences » (p. 356). Le point de référence est explicité p. 353 sous la forme des quatre exigences du modèle classique : « The classical model calls for knowledge of all the alternatives that are open to choice. It calls for complete knowledge of, or ability to compute, the consequences that will follow on each of the alternatives. It calls for certainty in the decision-maker's present and future evaluation of these consequences. It calls for the ability to compare consequences, no matter how diverse and heterogeneous, in terms of some consistent measure of utility. » La rationalité limitée est le nom du régime de choix qui subsiste quand ces quatre exigences tombent. Portée organisationnelle revendiquée p. 354 : les organisations élaborées « can only be understood as machinery for coping with the limits of man's abilities to comprehend and compute in the face of complexity and uncertainty ». Rien dans ce texte ne caractérise la rationalité limitée comme un défaut de rationalité : Simon parle p. 368 des « mechanisms of human rational choice » et p. 367 de « Human behavior, even rational human behavior »."
-        },
-        {
-          "id": "SUP-ed3ce656ccbd15ac",
-          "origin": "validated",
-          "path": "$.summary",
-          "access": "n/a",
-          "text": "Chez Simon, le régime de choix qui reste quand l'omniscience manque : faute d'options données, on les cherche, et l'on s'arrête à la première jugée satisfaisante."
-        },
-        {
-          "id": "SUP-c015012fb3e204d9",
-          "origin": "validated",
-          "path": "$.authors[0].name",
-          "access": "n/a",
-          "text": "Herbert A. Simon"
-        }
-      ]
-    },
-    {
-      "claim_id": "C005",
-      "locator": "lead[1]",
       "claim_text": "Dans une conférence de 1978, il revient sur cette idée qu’il avait avancée plus de trente ans plus tôt",
       "supports": [
         {
-          "id": "SUP-e9327b7ed5237e63",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.primary_sources[0].citation",
+          "id": "SUP-605684929a39480a",
+          "origin": "validated",
+          "path": "$.sources[0].label",
           "access": "full-text",
-          "text": "Herbert A. Simon, « Rational Decision-Making in Business Organizations », Nobel Memorial Lecture, 8 décembre 1978, in Assar Lindbeck (dir.), Nobel Lectures, Economics 1969-1980, Singapour, World Scientific Publishing Co., 1992, p. 343-371."
+          "text": "Herbert A. Simon, « Rational Decision-Making in Business Organizations », Nobel Memorial Lecture, 8 décembre 1978, in Nobel Lectures, Economics 1969-1980, Singapour, World Scientific, 1992, p. 343-371."
         },
         {
           "id": "SUP-0f2c18da84031cb6",
@@ -131,9 +103,9 @@
       ]
     },
     {
-      "claim_id": "C006",
+      "claim_id": "C005",
       "locator": "lead[1]",
-      "claim_text": "la ramène à trois manques",
+      "claim_text": "et la ramène à trois manques",
       "supports": [
         {
           "id": "SUP-76e0114ff88ea71e",
@@ -152,9 +124,9 @@
       ]
     },
     {
-      "claim_id": "C007",
+      "claim_id": "C006",
       "locator": "lead[1]",
-      "claim_text": "qui ne se corrigent pas de la même façon : on peut chercher les options qu’on n’a pas, on ne peut pas dissiper l’incertitude sur ce que fera le monde, et on ne peut pas davantage se donner la capacité de calcul qui fait défaut",
+      "claim_text": "qui ne se corrigent pas de la même façon",
       "supports": [
         {
           "id": "SUP-e060a9a687e24d6d",
@@ -164,18 +136,60 @@
           "text": "8. FORMALISATION — PREMIER MÉCANISME, LA RECHERCHE (p. 356). « If the alternatives for choice are not given initially to the decision maker, then he must search for them. Hence, a theory of bounded rationality must incorporate a theory of search. »"
         },
         {
+          "id": "SUP-5029591ee4e36b0f",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.common_misinterpretations[5].why_wrong",
+          "access": "n/a",
+          "text": "Deux raisons dans le texte. D'abord, la limite a deux sources et l'une n'est pas dans le décideur : « both because of limited computational power and because of uncertainty in the external world » (p. 353) ; et p. 367, les « boundary conditions » sont « imposed by the environment and by the very facts of human long-term memory ». Ensuite, Simon acte que les outils déplacent la frontière sans l'abolir : « As new mathematical tools for computing optimal and satisfactory decisions are discovered, and as computers become more and more powerful, the recommendations of normative decision theory will change. But as the new recommendations are diffused, the actual, observed, practice of decision making in business firms will change also » (p. 351). Le régime de décision se déplace, il ne devient pas omniscient."
+        },
+        {
           "id": "SUP-5b0025768b325a54",
           "origin": "evidence:evidence.primary-reading.json",
           "path": "$.evidence.known_ambiguities[3]",
           "access": "n/a",
           "text": "Le texte ne systématise pas la distinction entre la borne interne (capacité de calcul, mémoire à long terme) et la borne externe (incertitude du monde). Il les nomme ensemble dans une même phrase p. 353 (« both because of limited computational power and because of uncertainty in the external world ») et les tient ensemble p. 367 sous « boundary conditions imposed by the environment and by the very facts of human long-term memory ». Toute présentation qui n'attribuerait la limite qu'au cerveau force le texte."
+        }
+      ]
+    },
+    {
+      "claim_id": "C007",
+      "locator": "lead[1]",
+      "claim_text": "on peut chercher les options qu’on n’a pas",
+      "supports": [
+        {
+          "id": "SUP-e060a9a687e24d6d",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[8]",
+          "access": "n/a",
+          "text": "8. FORMALISATION — PREMIER MÉCANISME, LA RECHERCHE (p. 356). « If the alternatives for choice are not given initially to the decision maker, then he must search for them. Hence, a theory of bounded rationality must incorporate a theory of search. »"
         },
         {
-          "id": "SUP-dc9c0f80f47f7cce",
-          "origin": "validated",
-          "path": "$.notes[0]",
+          "id": "SUP-b9346cfe1752dfcf",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.conditions.appears_when[1]",
           "access": "n/a",
-          "text": "L'accroche énumérait deux défaillances sur trois. Le contrôleur, sur le texte de la p. 356 qu'il a téléchargé : « les failures of omniscience are largely failures of knowing all the alternatives, uncertainty about relevant exogenous events, and inability to calculate consequences » — « le membre supprimé est […] la seule des trois qui ne relève pas du décideur ». La borne externe est rétablie."
+          "text": "Les options ne sont pas données d'avance et doivent être cherchées (p. 353, p. 356)."
+        }
+      ]
+    },
+    {
+      "claim_id": "C008",
+      "locator": "lead[1]",
+      "claim_text": "on ne peut pas dissiper l’incertitude sur ce que fera le monde",
+      "supports": [
+        {
+          "id": "SUP-e273a2627707c823",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.conditions.appears_when[2]",
+          "access": "n/a",
+          "text": "Les conséquences des options ne sont connues qu'imparfaitement, pour DEUX raisons distinctes que Simon nomme dans la même phrase : « limited computational power » et « uncertainty in the external world » (p. 353)."
+        },
+        {
+          "id": "SUP-5b0025768b325a54",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.known_ambiguities[3]",
+          "access": "n/a",
+          "text": "Le texte ne systématise pas la distinction entre la borne interne (capacité de calcul, mémoire à long terme) et la borne externe (incertitude du monde). Il les nomme ensemble dans une même phrase p. 353 (« both because of limited computational power and because of uncertainty in the external world ») et les tient ensemble p. 367 sous « boundary conditions imposed by the environment and by the very facts of human long-term memory ». Toute présentation qui n'attribuerait la limite qu'au cerveau force le texte."
         },
         {
           "id": "SUP-5029591ee4e36b0f",
@@ -187,7 +201,28 @@
       ]
     },
     {
-      "claim_id": "C008",
+      "claim_id": "C009",
+      "locator": "lead[1]",
+      "claim_text": "on ne peut pas davantage se donner la capacité de calcul qui fait défaut",
+      "supports": [
+        {
+          "id": "SUP-cb4ab7944a83f8c1",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[9]",
+          "access": "n/a",
+          "text": "9. POURQUOI ON NE PEUT PAS OPTIMISER LA RECHERCHE ELLE-MÊME — étape décisive, et celle qui distingue Simon de Stigler (p. 356). Stigler (1961) a « poured the search theory back into the old bottle of classical utility maximization, the cost of search being equated with its marginal return » ; Simon indique avoir démontré la même équivalence formelle en 1956. Mais : « But utility maximization, as I showed, was not essential to the search scheme - fortunately, for it would have required the decision maker to be able to estimate the marginal costs and returns of search in a decision situation that was already too complex for the exercise of global rationality. » Autrement dit : optimiser la recherche réintroduit exactement le calcul dont on venait d'établir l'impossibilité. La régression est bloquée, et c'est ce blocage qui rend nécessaire un mécanisme d'un autre type."
+        },
+        {
+          "id": "SUP-5029591ee4e36b0f",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.common_misinterpretations[5].why_wrong",
+          "access": "n/a",
+          "text": "Deux raisons dans le texte. D'abord, la limite a deux sources et l'une n'est pas dans le décideur : « both because of limited computational power and because of uncertainty in the external world » (p. 353) ; et p. 367, les « boundary conditions » sont « imposed by the environment and by the very facts of human long-term memory ». Ensuite, Simon acte que les outils déplacent la frontière sans l'abolir : « As new mathematical tools for computing optimal and satisfactory decisions are discovered, and as computers become more and more powerful, the recommendations of normative decision theory will change. But as the new recommendations are diffused, the actual, observed, practice of decision making in business firms will change also » (p. 351). Le régime de décision se déplace, il ne devient pas omniscient."
+        }
+      ]
+    },
+    {
+      "claim_id": "C010",
       "locator": "sections[0].paragraphs[0]",
       "claim_text": "Simon pose son critère par comparaison, et le point de comparaison est extrême",
       "supports": [
@@ -204,18 +239,11 @@
           "path": "$.evidence.translation_notes[0].note",
           "access": "n/a",
           "text": "TERME CENTRAL, ET LA TRADUCTION USUELLE EST TRAÎTRESSE. « Bounded » dit une BORNE, une frontière délimitant une région : la rationalité opère à l'intérieur d'un domaine circonscrit. « Limitée » en français glisse vers « diminuée, faible, insuffisante » — c'est-à-dire vers exactement la lecture que le texte contredit. Ce que Simon écrit, et qui fixe le sens : « rationality is bounded when it falls short of omniscience » (Nobel, p. 356). Le point de référence est L'OMNISCIENCE, pas la rationalité tout court : est bornée toute rationalité qui n'est pas omnisciente, ce qui n'ôte rien à sa qualité de rationalité. « Rationalité bornée » serait plus fidèle au mot ; « rationalité limitée » est la forme reçue en français. Termes que Simon oppose au sien dans ce même texte, et qu'il faut distinguer entre eux : « classical omniscient rationality » (p. 357), « perfect rationality » (p. 356, p. 366), « global rationality » (p. 356), « objectively rational behavior ». Aucune traduction française publiée de la conférence Nobel n'a été identifiée."
-        },
-        {
-          "id": "SUP-c799954d72d6b7b0",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.mechanism[0]",
-          "access": "n/a",
-          "text": "0. POINT DE RÉFÉRENCE (ce par rapport à quoi la rationalité est dite bornée). Simon pose d'abord les quatre exigences cumulatives du modèle classique (p. 353) : connaître toutes les options ouvertes au choix ; connaître ou pouvoir calculer les conséquences de chacune ; être certain de l'évaluation présente ET future de ces conséquences ; pouvoir comparer des conséquences hétérogènes sur une mesure d'utilité cohérente. C'est de cette liste, et d'elle seule, que « bounded » se mesure dans ce texte."
         }
       ]
     },
     {
-      "claim_id": "C009",
+      "claim_id": "C011",
       "locator": "sections[0].paragraphs[0]",
       "claim_text": "« la rationalité est limitée quand elle reste en deçà de l’omniscience »",
       "supports": [
@@ -239,13 +267,20 @@
           "path": "$.evidence.key_quotation.text",
           "access": "n/a",
           "text": "Dans Administrative Behavior, la rationalité limitée est caractérisée pour l'essentiel comme une catégorie résiduelle - la rationalité est limitée quand elle reste en deçà de l'omniscience. Et les défaillances de l'omniscience sont pour l'essentiel des défaillances à connaître toutes les options, l'incertitude sur les événements exogènes pertinents, et l'incapacité de calculer les conséquences."
+        },
+        {
+          "id": "SUP-c6969c031080e1ae",
+          "origin": "validated",
+          "path": "$.quotation.locator",
+          "access": "n/a",
+          "text": "p. 356"
         }
       ]
     },
     {
-      "claim_id": "C010",
+      "claim_id": "C012",
       "locator": "sections[0].paragraphs[0]",
-      "claim_text": "Un décideur omniscient connaîtrait toutes les options ouvertes au choix, saurait calculer les conséquences de chacune, serait certain de l’évaluation qu’il en fait aujourd’hui comme de demain, et pourrait comparer des conséquences hétérogènes sur une même mesure",
+      "claim_text": "Un décideur omniscient connaîtrait toutes les options ouvertes au choix, saurait calculer les conséquences de chacune, serait certain de l’évaluation qu’il en fait aujourd’hui comme de demain, et pourrait comparer des conséquences hétérogènes sur une même mesure.",
       "supports": [
         {
           "id": "SUP-c799954d72d6b7b0",
@@ -264,9 +299,9 @@
       ]
     },
     {
-      "claim_id": "C011",
+      "claim_id": "C013",
       "locator": "sections[0].paragraphs[0]",
-      "claim_text": "Est limitée, dès lors, toute rationalité qui n’est pas omnisciente, ce qui ne lui ôte rien de sa qualité de rationalité",
+      "claim_text": "Est limitée, dès lors, toute rationalité qui n’est pas omnisciente, ce qui ne lui ôte rien de sa qualité de rationalité.",
       "supports": [
         {
           "id": "SUP-872a2db4758cbbb2",
@@ -285,49 +320,28 @@
       ]
     },
     {
-      "claim_id": "C012",
+      "claim_id": "C014",
       "locator": "sections[0].paragraphs[1]",
-      "claim_text": "Les défaillances de cette omniscience, Simon les nomme en trois termes",
+      "claim_text": "Les défaillances de cette omniscience, Simon les nomme en trois termes : « largely failures of knowing all the alternatives, uncertainty about relevant exogenous events, and inability to calculate consequences »",
       "supports": [
+        {
+          "id": "SUP-e16e2493f1c49649",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.key_quotation.original_text",
+          "access": "n/a",
+          "text": "In Administrative Behavior, bounded rationality is largely characterized as a residual category - rationality is bounded when it falls short of omniscience. And the failures of omniscience are largely failures of knowing all the alternatives, uncertainty about relevant exogenous events, and inability to calculate consequences."
+        },
         {
           "id": "SUP-76e0114ff88ea71e",
           "origin": "evidence:evidence.primary-reading.json",
           "path": "$.evidence.key_quotation.text",
           "access": "n/a",
           "text": "Dans Administrative Behavior, la rationalité limitée est caractérisée pour l'essentiel comme une catégorie résiduelle - la rationalité est limitée quand elle reste en deçà de l'omniscience. Et les défaillances de l'omniscience sont pour l'essentiel des défaillances à connaître toutes les options, l'incertitude sur les événements exogènes pertinents, et l'incapacité de calculer les conséquences."
-        },
-        {
-          "id": "SUP-e16e2493f1c49649",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.key_quotation.original_text",
-          "access": "n/a",
-          "text": "In Administrative Behavior, bounded rationality is largely characterized as a residual category - rationality is bounded when it falls short of omniscience. And the failures of omniscience are largely failures of knowing all the alternatives, uncertainty about relevant exogenous events, and inability to calculate consequences."
         }
       ]
     },
     {
-      "claim_id": "C013",
-      "locator": "sections[0].paragraphs[1]",
-      "claim_text": "« largely failures of knowing all the alternatives, uncertainty about relevant exogenous events, and inability to calculate consequences »",
-      "supports": [
-        {
-          "id": "SUP-e16e2493f1c49649",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.key_quotation.original_text",
-          "access": "n/a",
-          "text": "In Administrative Behavior, bounded rationality is largely characterized as a residual category - rationality is bounded when it falls short of omniscience. And the failures of omniscience are largely failures of knowing all the alternatives, uncertainty about relevant exogenous events, and inability to calculate consequences."
-        },
-        {
-          "id": "SUP-dc9c0f80f47f7cce",
-          "origin": "validated",
-          "path": "$.notes[0]",
-          "access": "n/a",
-          "text": "L'accroche énumérait deux défaillances sur trois. Le contrôleur, sur le texte de la p. 356 qu'il a téléchargé : « les failures of omniscience are largely failures of knowing all the alternatives, uncertainty about relevant exogenous events, and inability to calculate consequences » — « le membre supprimé est […] la seule des trois qui ne relève pas du décideur ». La borne externe est rétablie."
-        }
-      ]
-    },
-    {
-      "claim_id": "C014",
+      "claim_id": "C015",
       "locator": "sections[0].paragraphs[1]",
       "claim_text": "ne pas connaître toutes les options, être incertain sur les événements extérieurs, être incapable de calculer les conséquences",
       "supports": [
@@ -344,13 +358,20 @@
           "path": "$.evidence.translation_notes[3].note",
           "access": "n/a",
           "text": "Faux ami. Chez Simon « alternatives » désigne les termes du choix, en nombre quelconque (« knowledge of all the alternatives that are open to choice », p. 353). Le français « alternative » désigne au sens strict un choix entre DEUX termes. Rendre par « options » ou « possibilités ». La traduction interne de key_quotation applique cette règle."
+        },
+        {
+          "id": "SUP-e273a2627707c823",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.conditions.appears_when[2]",
+          "access": "n/a",
+          "text": "Les conséquences des options ne sont connues qu'imparfaitement, pour DEUX raisons distinctes que Simon nomme dans la même phrase : « limited computational power » et « uncertainty in the external world » (p. 353)."
         }
       ]
     },
     {
-      "claim_id": "C015",
+      "claim_id": "C016",
       "locator": "sections[0].paragraphs[1]",
-      "claim_text": "Les deux premières portent sur ce que le décideur sait ; la troisième, sur ce qu’il peut en faire",
+      "claim_text": "Les deux premières portent sur ce que le décideur sait ; la troisième, sur ce qu’il peut en faire.",
       "supports": [
         {
           "id": "SUP-76e0114ff88ea71e",
@@ -358,6 +379,13 @@
           "path": "$.evidence.key_quotation.text",
           "access": "n/a",
           "text": "Dans Administrative Behavior, la rationalité limitée est caractérisée pour l'essentiel comme une catégorie résiduelle - la rationalité est limitée quand elle reste en deçà de l'omniscience. Et les défaillances de l'omniscience sont pour l'essentiel des défaillances à connaître toutes les options, l'incertitude sur les événements exogènes pertinents, et l'incapacité de calculer les conséquences."
+        },
+        {
+          "id": "SUP-e16e2493f1c49649",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.key_quotation.original_text",
+          "access": "n/a",
+          "text": "In Administrative Behavior, bounded rationality is largely characterized as a residual category - rationality is bounded when it falls short of omniscience. And the failures of omniscience are largely failures of knowing all the alternatives, uncertainty about relevant exogenous events, and inability to calculate consequences."
         },
         {
           "id": "SUP-bed592c22f3d1622",
@@ -369,10 +397,17 @@
       ]
     },
     {
-      "claim_id": "C016",
+      "claim_id": "C017",
       "locator": "sections[0].paragraphs[1]",
-      "claim_text": "L’une des trois, d’ailleurs, ne dépend pas de lui : cette incertitude n’est pas dans sa tête, elle est dans le monde, ce qui interdit de réduire la borne à un défaut d’équipement mental",
+      "claim_text": "L’une des trois, d’ailleurs, ne dépend pas de lui : cette incertitude n’est pas dans sa tête, elle est dans le monde, ce qui interdit de réduire la borne à un défaut d’équipement mental.",
       "supports": [
+        {
+          "id": "SUP-dc9c0f80f47f7cce",
+          "origin": "validated",
+          "path": "$.notes[0]",
+          "access": "n/a",
+          "text": "L'accroche énumérait deux défaillances sur trois. Le contrôleur, sur le texte de la p. 356 qu'il a téléchargé : « les failures of omniscience are largely failures of knowing all the alternatives, uncertainty about relevant exogenous events, and inability to calculate consequences » — « le membre supprimé est […] la seule des trois qui ne relève pas du décideur ». La borne externe est rétablie."
+        },
         {
           "id": "SUP-5b0025768b325a54",
           "origin": "evidence:evidence.primary-reading.json",
@@ -381,11 +416,11 @@
           "text": "Le texte ne systématise pas la distinction entre la borne interne (capacité de calcul, mémoire à long terme) et la borne externe (incertitude du monde). Il les nomme ensemble dans une même phrase p. 353 (« both because of limited computational power and because of uncertainty in the external world ») et les tient ensemble p. 367 sous « boundary conditions imposed by the environment and by the very facts of human long-term memory ». Toute présentation qui n'attribuerait la limite qu'au cerveau force le texte."
         },
         {
-          "id": "SUP-dc9c0f80f47f7cce",
-          "origin": "validated",
-          "path": "$.notes[0]",
+          "id": "SUP-e273a2627707c823",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.conditions.appears_when[2]",
           "access": "n/a",
-          "text": "L'accroche énumérait deux défaillances sur trois. Le contrôleur, sur le texte de la p. 356 qu'il a téléchargé : « les failures of omniscience are largely failures of knowing all the alternatives, uncertainty about relevant exogenous events, and inability to calculate consequences » — « le membre supprimé est […] la seule des trois qui ne relève pas du décideur ». La borne externe est rétablie."
+          "text": "Les conséquences des options ne sont connues qu'imparfaitement, pour DEUX raisons distinctes que Simon nomme dans la même phrase : « limited computational power » et « uncertainty in the external world » (p. 353)."
         },
         {
           "id": "SUP-5029591ee4e36b0f",
@@ -397,9 +432,9 @@
       ]
     },
     {
-      "claim_id": "C017",
+      "claim_id": "C018",
       "locator": "sections[0].paragraphs[2]",
-      "claim_text": "Le mot français ajoute une difficulté que l’anglais n’a pas : limitée suggère une rationalité diminuée, donc l’existence, ailleurs, d’une rationalité entière",
+      "claim_text": "Le mot français ajoute une difficulté que l’anglais n’a pas : limitée suggère une rationalité diminuée, donc l’existence, ailleurs, d’une rationalité entière.",
       "supports": [
         {
           "id": "SUP-872a2db4758cbbb2",
@@ -414,18 +449,11 @@
           "path": "$.evidence.translation_notes[0].note",
           "access": "n/a",
           "text": "TERME REÇU, MAIS CONTESTÉ PAR CEUX-LÀ MÊMES QUI L'EMPLOIENT. Gouin & Harguindéguy constatent l'usage — « Le terme est habituellement traduit en français par celui de ‘rationalité limitée’ » — et le reprennent tout en le jugeant défaillant : il « ne marque pas suffisamment le changement de perspective que lui donne Herbert Simon, et laisse supposer à tort qu'il ne s'agit que d'une rationalité non optimale » (halshs-00511797, note 3). Béjean, Midy & Peyron vont plus loin : « ce choix nous semble trahir la pensée de Simon dans la mesure où il laisse entrevoir la possibilité d'une rationalité qui serait supérieure, car ‘non limitée’ » (hal-01526495, note 8). Le français « limitée » porte donc une comparaison implicite (limitée par rapport à quoi ?) qui alimente directement la mésinterprétation dominante. La forme anglaise « bounded » dit une BORNE, pas un déficit ; le français dit un manque."
-        },
-        {
-          "id": "SUP-beed009069fd6a76",
-          "origin": "evidence:evidence.reception.json",
-          "path": "$.evidence.common_misinterpretations[3].why_wrong",
-          "access": "n/a",
-          "text": "C'est un effet du mot français, dénoncé comme tel par deux sources francophones indépendantes. Béjean, Midy & Peyron : la traduction « nous semble trahir la pensée de Simon dans la mesure où il laisse entrevoir la possibilité d'une rationalité qui serait supérieure, car ‘non limitée’ […] la notion de bounded rationality renvoie à une rationalité de nature différente, sans connotation hiérarchique » (1999, note 8). Gouin & Harguindéguy : le syntagme « laisse supposer à tort qu'il ne s'agit que d'une rationalité non optimale » (2009, note 3). Et sur le fond : « La rationalité procédurale ne peut, en référence, être qualifiée d'imparfaite ou de limitée, elle est tout aussi entière dans son objet » (Béjean et al. 1999)."
         }
       ]
     },
     {
-      "claim_id": "C018",
+      "claim_id": "C019",
       "locator": "sections[0].paragraphs[2]",
       "claim_text": "Rodolphe Gouin et Jean-Baptiste Harguindéguy reprennent le terme reçu tout en notant qu’il « laisse supposer à tort qu’il ne s’agit que d’une rationalité non optimale »",
       "supports": [
@@ -460,9 +488,9 @@
       ]
     },
     {
-      "claim_id": "C019",
+      "claim_id": "C020",
       "locator": "sections[0].paragraphs[2]",
-      "claim_text": "Sophie Béjean, Fabienne Midy et Christine Peyron écrivent que ce choix de traduction leur semble trahir la pensée de Simon, parce qu’il laisse entrevoir une rationalité qui serait supérieure, car non limitée",
+      "claim_text": "Sophie Béjean, Fabienne Midy et Christine Peyron écrivent que ce choix de traduction leur semble trahir la pensée de Simon, parce qu’il laisse entrevoir une rationalité qui serait supérieure, car non limitée.",
       "supports": [
         {
           "id": "SUP-e7273bcb2bafdef6",
@@ -472,18 +500,18 @@
           "text": "Pièce maîtresse de la couche francophone, et la seule source consultée qui prenne pour objet PRINCIPAL l'écart entre Simon et ses lectures. Établit : (1) le diagnostic de l'écart, dès le résumé — « Les interprétations de cette notion de rationalité limitée sont très diverses et parfois issues de lectures partielles ou superficielles des travaux de Herbert Simon » ; (2) LA CRITIQUE DE LA TRADUCTION FRANÇAISE ELLE-MÊME, en note 8 : « La terminologie n'est pas neutre : en effet, le terme de bounded rationality adopté par Simon a souvent été traduit par ‘rationalité limitée’ ; ce choix nous semble trahir la pensée de Simon dans la mesure où il laisse entrevoir la possibilité d'une rationalité qui serait supérieure, car ‘non limitée’. […] Il nous semble au contraire […] que la notion de bounded rationality renvoie à une rationalité de nature différente, sans connotation hiérarchique. Il est alors important de marquer la rupture avec la conception précédente en retenant une terminologie différente : nous avons donc choisi le terme de rationalité endogène à la suite de J.L. Le Moigne » ; (3) la thèse de la discontinuité : « La rationalité procédurale n'est pas une extension de la rationalité limitée, ni une forme plus noble de cette rationalité où l'individu revendiquant les limites de son exercice cognitif disposerait de ruses pour les dépasser » ; « La rationalité substantielle est parfaite en ce qu'elle est parfaitement efficace pour atteindre un résultat prédéterminé. La rationalité procédurale ne peut, en référence, être qualifiée d'imparfaite ou de limitée, elle est tout aussi entière dans son objet » ; « c'est sur le plan épistémologique qu'elles sont opposées : elles correspondent en effet à deux paradigmes différents et, même plus, incomparables » ; (4) l'identification nominale des lecteurs « affaiblisseurs » : « En s'inspirant de la notion de bounded rationality initialement développée par Simon, certains auteurs ont cherché à modéliser (par exemple Stigler 1961) ou à utiliser (par exemple Williamson 1994) une hypothèse de rationalité imparfaite, atténuée ou limitée » ; (5) le mécanisme du satisficing en français : comparaison au niveau d'aspiration, puis ajustement du niveau d'aspiration — « Ce critère de satisfaction autorise donc la révision de l'objectif au cours du processus de décision à l'inverse du critère de maximisation de la rationalité substantielle. » CONSULTATION : texte intégral, PDF en libre accès sur HAL (hal-01526495, 28 pages de PDF)."
         },
         {
-          "id": "SUP-2f7cba4ef620b2d4",
-          "origin": "evidence:evidence.reception.json",
-          "path": "$.evidence.translation_notes[0].note",
-          "access": "n/a",
-          "text": "TERME REÇU, MAIS CONTESTÉ PAR CEUX-LÀ MÊMES QUI L'EMPLOIENT. Gouin & Harguindéguy constatent l'usage — « Le terme est habituellement traduit en français par celui de ‘rationalité limitée’ » — et le reprennent tout en le jugeant défaillant : il « ne marque pas suffisamment le changement de perspective que lui donne Herbert Simon, et laisse supposer à tort qu'il ne s'agit que d'une rationalité non optimale » (halshs-00511797, note 3). Béjean, Midy & Peyron vont plus loin : « ce choix nous semble trahir la pensée de Simon dans la mesure où il laisse entrevoir la possibilité d'une rationalité qui serait supérieure, car ‘non limitée’ » (hal-01526495, note 8). Le français « limitée » porte donc une comparaison implicite (limitée par rapport à quoi ?) qui alimente directement la mésinterprétation dominante. La forme anglaise « bounded » dit une BORNE, pas un déficit ; le français dit un manque."
-        },
-        {
           "id": "SUP-9a7bdca0b48d91b1",
           "origin": "evidence:evidence.reception.json",
           "path": "$.evidence.francophone_sources[0].citation",
           "access": "n/a",
           "text": "Sophie Béjean, Fabienne Midy et Christine Peyron, « La rationalité simonienne : interprétations et enjeux épistémologiques », LATEC (UMR 5118 CNRS / Université de Bourgogne), document de travail n° 9914, novembre 1999, 26 p."
+        },
+        {
+          "id": "SUP-2f7cba4ef620b2d4",
+          "origin": "evidence:evidence.reception.json",
+          "path": "$.evidence.translation_notes[0].note",
+          "access": "n/a",
+          "text": "TERME REÇU, MAIS CONTESTÉ PAR CEUX-LÀ MÊMES QUI L'EMPLOIENT. Gouin & Harguindéguy constatent l'usage — « Le terme est habituellement traduit en français par celui de ‘rationalité limitée’ » — et le reprennent tout en le jugeant défaillant : il « ne marque pas suffisamment le changement de perspective que lui donne Herbert Simon, et laisse supposer à tort qu'il ne s'agit que d'une rationalité non optimale » (halshs-00511797, note 3). Béjean, Midy & Peyron vont plus loin : « ce choix nous semble trahir la pensée de Simon dans la mesure où il laisse entrevoir la possibilité d'une rationalité qui serait supérieure, car ‘non limitée’ » (hal-01526495, note 8). Le français « limitée » porte donc une comparaison implicite (limitée par rapport à quoi ?) qui alimente directement la mésinterprétation dominante. La forme anglaise « bounded » dit une BORNE, pas un déficit ; le français dit un manque."
         },
         {
           "id": "SUP-beed009069fd6a76",
@@ -495,44 +523,23 @@
       ]
     },
     {
-      "claim_id": "C020",
-      "locator": "sections[1].paragraphs[0]",
-      "claim_text": "Le premier manque a une conséquence directe",
-      "supports": [
-        {
-          "id": "SUP-e060a9a687e24d6d",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.mechanism[8]",
-          "access": "n/a",
-          "text": "8. FORMALISATION — PREMIER MÉCANISME, LA RECHERCHE (p. 356). « If the alternatives for choice are not given initially to the decision maker, then he must search for them. Hence, a theory of bounded rationality must incorporate a theory of search. »"
-        },
-        {
-          "id": "SUP-b9346cfe1752dfcf",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.conditions.appears_when[1]",
-          "access": "n/a",
-          "text": "Les options ne sont pas données d'avance et doivent être cherchées (p. 353, p. 356)."
-        }
-      ]
-    },
-    {
       "claim_id": "C021",
       "locator": "sections[1].paragraphs[0]",
-      "claim_text": "Simon la pose comme une condition, non comme une règle générale",
+      "claim_text": "Le premier manque a une conséquence directe, et Simon la pose comme une condition, non comme une règle générale",
       "supports": [
-        {
-          "id": "SUP-e060a9a687e24d6d",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.mechanism[8]",
-          "access": "n/a",
-          "text": "8. FORMALISATION — PREMIER MÉCANISME, LA RECHERCHE (p. 356). « If the alternatives for choice are not given initially to the decision maker, then he must search for them. Hence, a theory of bounded rationality must incorporate a theory of search. »"
-        },
         {
           "id": "SUP-89428644e89a00ef",
           "origin": "validated",
           "path": "$.notes[1]",
           "access": "n/a",
           "text": "Le résumé posait « les options se cherchent » comme une propriété du régime. Le contrôleur : « Simon l'énonce sous condition : “If the alternatives for choice are not given initially to the decision maker, then he must search for them” […] La conversion d'une condition d'application en propriété est à corriger. »"
+        },
+        {
+          "id": "SUP-e060a9a687e24d6d",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[8]",
+          "access": "n/a",
+          "text": "8. FORMALISATION — PREMIER MÉCANISME, LA RECHERCHE (p. 356). « If the alternatives for choice are not given initially to the decision maker, then he must search for them. Hence, a theory of bounded rationality must incorporate a theory of search. »"
         }
       ]
     },
@@ -560,7 +567,7 @@
     {
       "claim_id": "C023",
       "locator": "sections[1].paragraphs[0]",
-      "claim_text": "s’il ne dispose pas d’emblée des options, le décideur doit les chercher",
+      "claim_text": "soit, s’il ne dispose pas d’emblée des options, le décideur doit les chercher",
       "supports": [
         {
           "id": "SUP-e060a9a687e24d6d",
@@ -568,13 +575,6 @@
           "path": "$.evidence.mechanism[8]",
           "access": "n/a",
           "text": "8. FORMALISATION — PREMIER MÉCANISME, LA RECHERCHE (p. 356). « If the alternatives for choice are not given initially to the decision maker, then he must search for them. Hence, a theory of bounded rationality must incorporate a theory of search. »"
-        },
-        {
-          "id": "SUP-89428644e89a00ef",
-          "origin": "validated",
-          "path": "$.notes[1]",
-          "access": "n/a",
-          "text": "Le résumé posait « les options se cherchent » comme une propriété du régime. Le contrôleur : « Simon l'énonce sous condition : “If the alternatives for choice are not given initially to the decision maker, then he must search for them” […] La conversion d'une condition d'application en propriété est à corriger. »"
         },
         {
           "id": "SUP-e401a7ddfb1c5782",
@@ -588,34 +588,28 @@
     {
       "claim_id": "C024",
       "locator": "sections[1].paragraphs[0]",
-      "claim_text": "Quand elles sont déjà sous les yeux, rien n’oblige à chercher plus loin",
+      "claim_text": "Quand elles sont déjà sous les yeux, rien n’oblige à chercher plus loin.",
       "supports": [
-        {
-          "id": "SUP-e060a9a687e24d6d",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.mechanism[8]",
-          "access": "n/a",
-          "text": "8. FORMALISATION — PREMIER MÉCANISME, LA RECHERCHE (p. 356). « If the alternatives for choice are not given initially to the decision maker, then he must search for them. Hence, a theory of bounded rationality must incorporate a theory of search. »"
-        },
         {
           "id": "SUP-89428644e89a00ef",
           "origin": "validated",
           "path": "$.notes[1]",
           "access": "n/a",
           "text": "Le résumé posait « les options se cherchent » comme une propriété du régime. Le contrôleur : « Simon l'énonce sous condition : “If the alternatives for choice are not given initially to the decision maker, then he must search for them” […] La conversion d'une condition d'application en propriété est à corriger. »"
+        },
+        {
+          "id": "SUP-e060a9a687e24d6d",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[8]",
+          "access": "n/a",
+          "text": "8. FORMALISATION — PREMIER MÉCANISME, LA RECHERCHE (p. 356). « If the alternatives for choice are not given initially to the decision maker, then he must search for them. Hence, a theory of bounded rationality must incorporate a theory of search. »"
         }
       ]
     },
     {
       "claim_id": "C025",
       "locator": "sections[1].paragraphs[0]",
-      "claim_text": "et beaucoup de décisions se prennent ainsi",
-      "supports": []
-    },
-    {
-      "claim_id": "C026",
-      "locator": "sections[1].paragraphs[0]",
-      "claim_text": "Dire qu’une décision relève de la rationalité limitée n’affirme donc pas qu’on explore toujours avant de choisir",
+      "claim_text": "Dire qu’une décision relève de la rationalité limitée n’affirme donc pas qu’on explore toujours avant de choisir.",
       "supports": [
         {
           "id": "SUP-89428644e89a00ef",
@@ -625,18 +619,18 @@
           "text": "Le résumé posait « les options se cherchent » comme une propriété du régime. Le contrôleur : « Simon l'énonce sous condition : “If the alternatives for choice are not given initially to the decision maker, then he must search for them” […] La conversion d'une condition d'application en propriété est à corriger. »"
         },
         {
-          "id": "SUP-e060a9a687e24d6d",
+          "id": "SUP-b9346cfe1752dfcf",
           "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.mechanism[8]",
+          "path": "$.evidence.conditions.appears_when[1]",
           "access": "n/a",
-          "text": "8. FORMALISATION — PREMIER MÉCANISME, LA RECHERCHE (p. 356). « If the alternatives for choice are not given initially to the decision maker, then he must search for them. Hence, a theory of bounded rationality must incorporate a theory of search. »"
+          "text": "Les options ne sont pas données d'avance et doivent être cherchées (p. 353, p. 356)."
         }
       ]
     },
     {
-      "claim_id": "C027",
+      "claim_id": "C026",
       "locator": "sections[1].paragraphs[1]",
-      "claim_text": "Les deux autres manques se voient sur un cas que Simon rapporte avoir observé",
+      "claim_text": "Le troisième manque, l’incapacité de calculer les conséquences, se voit sur un cas que Simon rapporte avoir observé.",
       "supports": [
         {
           "id": "SUP-ae50d68aaeeaf2bc",
@@ -651,13 +645,34 @@
           "path": "$.evidence.mechanism[2]",
           "access": "n/a",
           "text": "2. RÉPONSE, ET C'EST LE PIVOT DE TOUT : l'empêchement est cognitif, pas motivationnel. « Further exploration made it apparent that they didn't equate expenditures at the margin because, intellectually, they couldn't. There was no measurable production function from which quantitative inferences about marginal productivities could be drawn; and such qualitative notions of a production function as the two managers possessed were mutually incompatible » (p. 352). Simon illustre l'incompatibilité : pour l'administrateur des travaux publics un terrain de jeu est un équipement physique, une oasis verte dans la ville grise ; pour l'administrateur des loisirs c'est un équipement social où les enfants jouent sous la conduite d'adultes (p. 352). Ils ne veulent pas des choses différentes : ils ne voient pas le même objet."
+        },
+        {
+          "id": "SUP-76e0114ff88ea71e",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.key_quotation.text",
+          "access": "n/a",
+          "text": "Dans Administrative Behavior, la rationalité limitée est caractérisée pour l'essentiel comme une catégorie résiduelle - la rationalité est limitée quand elle reste en deçà de l'omniscience. Et les défaillances de l'omniscience sont pour l'essentiel des défaillances à connaître toutes les options, l'incertitude sur les événements exogènes pertinents, et l'incapacité de calculer les conséquences."
+        }
+      ]
+    },
+    {
+      "claim_id": "C027",
+      "locator": "sections[1].paragraphs[1]",
+      "claim_text": "Au milieu des années trente, à Milwaukee, les équipements de loisirs sont administrés conjointement par le service des travaux publics et par celui des écoles.",
+      "supports": [
+        {
+          "id": "SUP-ae50d68aaeeaf2bc",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[1]",
+          "access": "n/a",
+          "text": "1. DÉCLENCHEUR EMPIRIQUE, tel que Simon le raconte (p. 352, section « In Search of a Descriptive Theory »). Milwaukee, 1934-35, administration conjointe des équipements de loisirs par le school board et le service des travaux publics. Les deux chefs de service s'accordent sur les objectifs, ne se disputent pas d'empire, et pourtant sont en désaccord permanent sur la répartition des fonds entre entretien physique et encadrement des jeux. « Why did they not, as my economics books suggested, simply balance off the marginal return of the one activity against that of the other? »"
         }
       ]
     },
     {
       "claim_id": "C028",
       "locator": "sections[1].paragraphs[1]",
-      "claim_text": "Au milieu des années trente, à Milwaukee, les équipements de loisirs sont administrés conjointement par le service des travaux publics et par celui des écoles",
+      "claim_text": "Les deux responsables s’entendent sur les objectifs, ne se disputent aucun territoire, et se querellent pourtant sans fin sur la répartition des fonds entre l’entretien des installations et l’encadrement des jeux.",
       "supports": [
         {
           "id": "SUP-ae50d68aaeeaf2bc",
@@ -671,20 +686,6 @@
     {
       "claim_id": "C029",
       "locator": "sections[1].paragraphs[1]",
-      "claim_text": "Les deux responsables s’entendent sur les objectifs, ne se disputent aucun territoire, et se querellent pourtant sans fin sur la répartition des fonds entre l’entretien des installations et l’encadrement des jeux",
-      "supports": [
-        {
-          "id": "SUP-ae50d68aaeeaf2bc",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.mechanism[1]",
-          "access": "n/a",
-          "text": "1. DÉCLENCHEUR EMPIRIQUE, tel que Simon le raconte (p. 352, section « In Search of a Descriptive Theory »). Milwaukee, 1934-35, administration conjointe des équipements de loisirs par le school board et le service des travaux publics. Les deux chefs de service s'accordent sur les objectifs, ne se disputent pas d'empire, et pourtant sont en désaccord permanent sur la répartition des fonds entre entretien physique et encadrement des jeux. « Why did they not, as my economics books suggested, simply balance off the marginal return of the one activity against that of the other? »"
-        }
-      ]
-    },
-    {
-      "claim_id": "C030",
-      "locator": "sections[1].paragraphs[1]",
       "claim_text": "Pourquoi, se demande Simon, ne comparent-ils pas le rendement marginal d’une activité à celui de l’autre, comme ses manuels d’économie le suggéraient ?",
       "supports": [
         {
@@ -697,7 +698,7 @@
       ]
     },
     {
-      "claim_id": "C031",
+      "claim_id": "C030",
       "locator": "sections[1].paragraphs[2]",
       "claim_text": "ils ne le faisaient pas parce que, intellectuellement, ils ne le pouvaient pas",
       "supports": [
@@ -711,9 +712,9 @@
       ]
     },
     {
-      "claim_id": "C032",
+      "claim_id": "C031",
       "locator": "sections[1].paragraphs[2]",
-      "claim_text": "Aucune fonction de production mesurable n’en donnait les rendements marginaux, et les idées qualitatives que chacun s’en faisait étaient incompatibles",
+      "claim_text": "Aucune fonction de production mesurable n’en donnait les rendements marginaux, et les idées qualitatives que chacun s’en faisait étaient incompatibles.",
       "supports": [
         {
           "id": "SUP-41b40aa46a2b801d",
@@ -721,20 +722,27 @@
           "path": "$.evidence.mechanism[2]",
           "access": "n/a",
           "text": "2. RÉPONSE, ET C'EST LE PIVOT DE TOUT : l'empêchement est cognitif, pas motivationnel. « Further exploration made it apparent that they didn't equate expenditures at the margin because, intellectually, they couldn't. There was no measurable production function from which quantitative inferences about marginal productivities could be drawn; and such qualitative notions of a production function as the two managers possessed were mutually incompatible » (p. 352). Simon illustre l'incompatibilité : pour l'administrateur des travaux publics un terrain de jeu est un équipement physique, une oasis verte dans la ville grise ; pour l'administrateur des loisirs c'est un équipement social où les enfants jouent sous la conduite d'adultes (p. 352). Ils ne veulent pas des choses différentes : ils ne voient pas le même objet."
-        },
+        }
+      ]
+    },
+    {
+      "claim_id": "C032",
+      "locator": "sections[1].paragraphs[2]",
+      "claim_text": "Pour l’un, un terrain de jeu est un équipement physique, une oasis verte dans une ville grise ; pour l’autre, un équipement social où des enfants jouent sous la conduite d’adultes.",
+      "supports": [
         {
-          "id": "SUP-b905478a3a07fa83",
+          "id": "SUP-41b40aa46a2b801d",
           "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.conditions.appears_when[0]",
+          "path": "$.evidence.mechanism[2]",
           "access": "n/a",
-          "text": "Les buts de l'organisation ne peuvent pas être connectés opérationnellement aux actions, faute de fonction de production formulable en termes concrets (p. 353). C'est la condition d'entrée que Simon tire du cas de Milwaukee."
+          "text": "2. RÉPONSE, ET C'EST LE PIVOT DE TOUT : l'empêchement est cognitif, pas motivationnel. « Further exploration made it apparent that they didn't equate expenditures at the margin because, intellectually, they couldn't. There was no measurable production function from which quantitative inferences about marginal productivities could be drawn; and such qualitative notions of a production function as the two managers possessed were mutually incompatible » (p. 352). Simon illustre l'incompatibilité : pour l'administrateur des travaux publics un terrain de jeu est un équipement physique, une oasis verte dans la ville grise ; pour l'administrateur des loisirs c'est un équipement social où les enfants jouent sous la conduite d'adultes (p. 352). Ils ne veulent pas des choses différentes : ils ne voient pas le même objet."
         }
       ]
     },
     {
       "claim_id": "C033",
       "locator": "sections[1].paragraphs[2]",
-      "claim_text": "Pour l’un, un terrain de jeu est un équipement physique, une oasis verte dans une ville grise ; pour l’autre, un équipement social où des enfants jouent sous la conduite d’adultes",
+      "claim_text": "Ils ne veulent pas des choses différentes, ils ne voient pas le même objet.",
       "supports": [
         {
           "id": "SUP-41b40aa46a2b801d",
@@ -748,21 +756,7 @@
     {
       "claim_id": "C034",
       "locator": "sections[1].paragraphs[2]",
-      "claim_text": "Ils ne veulent pas des choses différentes, ils ne voient pas le même objet",
-      "supports": [
-        {
-          "id": "SUP-41b40aa46a2b801d",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.mechanism[2]",
-          "access": "n/a",
-          "text": "2. RÉPONSE, ET C'EST LE PIVOT DE TOUT : l'empêchement est cognitif, pas motivationnel. « Further exploration made it apparent that they didn't equate expenditures at the margin because, intellectually, they couldn't. There was no measurable production function from which quantitative inferences about marginal productivities could be drawn; and such qualitative notions of a production function as the two managers possessed were mutually incompatible » (p. 352). Simon illustre l'incompatibilité : pour l'administrateur des travaux publics un terrain de jeu est un équipement physique, une oasis verte dans la ville grise ; pour l'administrateur des loisirs c'est un équipement social où les enfants jouent sous la conduite d'adultes (p. 352). Ils ne veulent pas des choses différentes : ils ne voient pas le même objet."
-        }
-      ]
-    },
-    {
-      "claim_id": "C035",
-      "locator": "sections[1].paragraphs[2]",
-      "claim_text": "Ce qu’il a vu là se retrouve, écrit Simon, partout où des humains décident",
+      "claim_text": "Ce qu’il a vu là se retrouve, écrit Simon, partout où des humains décident : « The phenomenon observed in Milwaukee is ubiquitous in human decision making »",
       "supports": [
         {
           "id": "SUP-cf281a387513bcc4",
@@ -781,23 +775,9 @@
       ]
     },
     {
-      "claim_id": "C036",
-      "locator": "sections[1].paragraphs[2]",
-      "claim_text": "« The phenomenon observed in Milwaukee is ubiquitous in human decision making »",
-      "supports": [
-        {
-          "id": "SUP-cf281a387513bcc4",
-          "origin": "validated",
-          "path": "$.review.notes[3]",
-          "access": "n/a",
-          "text": "La fiche a épuisé trois tours de contrôle sur un désaccord de portée que le dossier produisait lui-même : un énoncé de programme théorique (p. 349) y était rangé parmi les conditions d'apparition du phénomène, alors que le même texte écrit p. 353 « The phenomenon observed in Milwaukee is ubiquitous in human decision making ». Le champ en cause n'existe plus."
-        }
-      ]
-    },
-    {
-      "claim_id": "C037",
+      "claim_id": "C035",
       "locator": "sections[2].paragraphs[0]",
-      "claim_text": "Simon place deux notions au centre de sa caractérisation : la recherche, et une règle qui l’arrête",
+      "claim_text": "Simon place deux notions au centre de sa caractérisation : la recherche, et une règle qui l’arrête.",
       "supports": [
         {
           "id": "SUP-cc2c3f28bdd3762e",
@@ -807,11 +787,11 @@
           "text": "Ce dossier documente BOUNDED RATIONALITY / rationalité limitée, c'est-à-dire la CONDITION générale dans laquelle s'exerce le choix, et non satisficing, qui en est l'un des MÉCANISMES. La séparation est faite par Simon lui-même, dans le texte lu, en deux temps. (1) La condition : « rationality is bounded when it falls short of omniscience » (p. 356) — c'est une catégorie définie par écart à l'omniscience. (2) Les mécanismes : « Two concepts are central to the characterization: search and satisficing » (p. 356). Satisficing est donc l'un des deux mécanismes formalisés (avec la recherche/search), et par ailleurs seulement le PREMIER des trois procédés que Simon range p. 353-354 sous « the general rubric of “bounded rationality” » — les deux autres étant la substitution de sous-buts tangibles aux buts globaux abstraits, et la division de la tâche de décision entre spécialistes coordonnés par une structure de communication et d'autorité. Conséquence pour l'application : rationalité limitée ⊃ satisficing. Écrire « rationalité limitée = on se contente du satisfaisant » ampute le concept de ses deux autres procédés, dont l'un — la division du travail de décision — est précisément ce qui, chez Simon, explique l'existence des organisations."
         },
         {
-          "id": "SUP-82b3bd2198a32925",
-          "origin": "validated",
-          "path": "$.review.notes[2]",
+          "id": "SUP-e060a9a687e24d6d",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[8]",
           "access": "n/a",
-          "text": "Simon range trois procédés « and others » sous la rubrique (p. 354) ; le résumé n'en décrit qu'un, la recherche interrompue au seuil de satisfaction, que Simon privilégie lui-même (« Two concepts are central to the characterization », p. 356). Ce n'est donc pas une hiérarchie inventée, mais le résumé n'épuise pas le concept."
+          "text": "8. FORMALISATION — PREMIER MÉCANISME, LA RECHERCHE (p. 356). « If the alternatives for choice are not given initially to the decision maker, then he must search for them. Hence, a theory of bounded rationality must incorporate a theory of search. »"
         },
         {
           "id": "SUP-1245702f511c6192",
@@ -819,11 +799,18 @@
           "path": "$.evidence.mechanism[10]",
           "access": "n/a",
           "text": "10. FORMALISATION — SECOND MÉCANISME, LE SATISFICING, ET SA RÈGLE D'ARRÊT (p. 356). « As an alternative, one could postulate that the decision maker had formed some aspiration as to how good an alternative he should find. As soon as he discovered an alternative for choice meeting his level of aspiration, he would terminate the search and choose that alternative. I called this mode of selection satisficing. » Le mécanisme est une RÈGLE D'ARRÊT de la recherche, pas un abaissement d'exigence."
+        },
+        {
+          "id": "SUP-9a7db745f1a341bf",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.common_misinterpretations[1].why_wrong",
+          "access": "n/a",
+          "text": "Le satisficing est l'un des mécanismes, pas le concept. Simon range trois procédés sous « the general rubric of “bounded rationality” » (p. 353-354) : chercher un choix satisfaisant plutôt qu'optimal ; remplacer les buts globaux abstraits par des sous-buts tangibles dont l'atteinte peut être observée et mesurée ; DIVISER la tâche de décision entre de nombreux spécialistes coordonnés par une structure de communication et d'autorité. Et dans la formalisation, « Two concepts are central to the characterization: search and satisficing » (p. 356) — deux, pas un. Réduire le concept au satisficing supprime précisément le procédé qui donne au concept sa portée organisationnelle (p. 354)."
         }
       ]
     },
     {
-      "claim_id": "C038",
+      "claim_id": "C036",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "Le décideur se forme, explicitement ou non, une idée de ce qu’une option devrait valoir pour lui convenir, un niveau d’aspiration",
       "supports": [
@@ -835,6 +822,13 @@
           "text": "10. FORMALISATION — SECOND MÉCANISME, LE SATISFICING, ET SA RÈGLE D'ARRÊT (p. 356). « As an alternative, one could postulate that the decision maker had formed some aspiration as to how good an alternative he should find. As soon as he discovered an alternative for choice meeting his level of aspiration, he would terminate the search and choose that alternative. I called this mode of selection satisficing. » Le mécanisme est une RÈGLE D'ARRÊT de la recherche, pas un abaissement d'exigence."
         },
         {
+          "id": "SUP-5c3a7a4f851da1b2",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.translation_notes[5].term_source",
+          "access": "n/a",
+          "text": "aspiration level"
+        },
+        {
           "id": "SUP-b0f8a6150604b39e",
           "origin": "evidence:evidence.primary-reading.json",
           "path": "$.evidence.translation_notes[5].note",
@@ -844,114 +838,93 @@
       ]
     },
     {
+      "claim_id": "C037",
+      "locator": "sections[2].paragraphs[0]",
+      "claim_text": "il examine les options dans l’ordre où elles viennent ; dès qu’il en rencontre une qui atteint ce niveau, il s’arrête et la choisit",
+      "supports": [
+        {
+          "id": "SUP-1245702f511c6192",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[10]",
+          "access": "n/a",
+          "text": "10. FORMALISATION — SECOND MÉCANISME, LE SATISFICING, ET SA RÈGLE D'ARRÊT (p. 356). « As an alternative, one could postulate that the decision maker had formed some aspiration as to how good an alternative he should find. As soon as he discovered an alternative for choice meeting his level of aspiration, he would terminate the search and choose that alternative. I called this mode of selection satisficing. » Le mécanisme est une RÈGLE D'ARRÊT de la recherche, pas un abaissement d'exigence."
+        },
+        {
+          "id": "SUP-2daeab338b75f4b6",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.key_quotation._alternatives_verbatim_meme_source[4].text",
+          "access": "n/a",
+          "text": "As soon as he discovered an alternative for choice meeting his level of aspiration, he would terminate the search and choose that alternative. I called this mode of selection satisficing."
+        },
+        {
+          "id": "SUP-e060a9a687e24d6d",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[8]",
+          "access": "n/a",
+          "text": "8. FORMALISATION — PREMIER MÉCANISME, LA RECHERCHE (p. 356). « If the alternatives for choice are not given initially to the decision maker, then he must search for them. Hence, a theory of bounded rationality must incorporate a theory of search. »"
+        }
+      ]
+    },
+    {
+      "claim_id": "C038",
+      "locator": "sections[2].paragraphs[1]",
+      "claim_text": "Simon a forgé un nom pour ce mode de sélection, satisficing, contraction de satisfy et de suffice",
+      "supports": [
+        {
+          "id": "SUP-1245702f511c6192",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[10]",
+          "access": "n/a",
+          "text": "10. FORMALISATION — SECOND MÉCANISME, LE SATISFICING, ET SA RÈGLE D'ARRÊT (p. 356). « As an alternative, one could postulate that the decision maker had formed some aspiration as to how good an alternative he should find. As soon as he discovered an alternative for choice meeting his level of aspiration, he would terminate the search and choose that alternative. I called this mode of selection satisficing. » Le mécanisme est une RÈGLE D'ARRÊT de la recherche, pas un abaissement d'exigence."
+        },
+        {
+          "id": "SUP-43982e2de588a0fb",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.translation_notes[1].note",
+          "access": "n/a",
+          "text": "Mot-valise forgé par Simon, qui en revendique la paternité dans le texte lu : « I called this mode of selection satisficing » (Nobel, p. 356). Il contracte to satisfy et to suffice. C'est un MÉCANISME (une règle d'arrêt de la recherche), non un synonyme de rationalité limitée : voir _perimetre_du_dossier. Difficulté de traduction irréductible : la conférence se clôt sur un jeu de mots entre la formule biblique « sufficient unto the day » (Matthieu 6, 34, dans la King James : « Sufficient unto the day is the evil thereof ») et « satisfice » — « to find ways of action that are sufficient unto the day, that satisfice » (p. 368). Aucune traduction française ne conserve à la fois l'allusion et le néologisme ; il faut choisir, et le dire."
+        },
+        {
+          "id": "SUP-2daeab338b75f4b6",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.key_quotation._alternatives_verbatim_meme_source[4].text",
+          "access": "n/a",
+          "text": "As soon as he discovered an alternative for choice meeting his level of aspiration, he would terminate the search and choose that alternative. I called this mode of selection satisficing."
+        }
+      ]
+    },
+    {
       "claim_id": "C039",
-      "locator": "sections[2].paragraphs[0]",
-      "claim_text": "il examine les options dans l’ordre où elles viennent",
-      "supports": [
-        {
-          "id": "SUP-1245702f511c6192",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.mechanism[10]",
-          "access": "n/a",
-          "text": "10. FORMALISATION — SECOND MÉCANISME, LE SATISFICING, ET SA RÈGLE D'ARRÊT (p. 356). « As an alternative, one could postulate that the decision maker had formed some aspiration as to how good an alternative he should find. As soon as he discovered an alternative for choice meeting his level of aspiration, he would terminate the search and choose that alternative. I called this mode of selection satisficing. » Le mécanisme est une RÈGLE D'ARRÊT de la recherche, pas un abaissement d'exigence."
-        },
-        {
-          "id": "SUP-2daeab338b75f4b6",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.key_quotation._alternatives_verbatim_meme_source[4].text",
-          "access": "n/a",
-          "text": "As soon as he discovered an alternative for choice meeting his level of aspiration, he would terminate the search and choose that alternative. I called this mode of selection satisficing."
-        }
-      ]
-    },
-    {
-      "claim_id": "C040",
-      "locator": "sections[2].paragraphs[0]",
-      "claim_text": "dès qu’il en rencontre une qui atteint ce niveau, il s’arrête et la choisit",
-      "supports": [
-        {
-          "id": "SUP-1245702f511c6192",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.mechanism[10]",
-          "access": "n/a",
-          "text": "10. FORMALISATION — SECOND MÉCANISME, LE SATISFICING, ET SA RÈGLE D'ARRÊT (p. 356). « As an alternative, one could postulate that the decision maker had formed some aspiration as to how good an alternative he should find. As soon as he discovered an alternative for choice meeting his level of aspiration, he would terminate the search and choose that alternative. I called this mode of selection satisficing. » Le mécanisme est une RÈGLE D'ARRÊT de la recherche, pas un abaissement d'exigence."
-        },
-        {
-          "id": "SUP-2daeab338b75f4b6",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.key_quotation._alternatives_verbatim_meme_source[4].text",
-          "access": "n/a",
-          "text": "As soon as he discovered an alternative for choice meeting his level of aspiration, he would terminate the search and choose that alternative. I called this mode of selection satisficing."
-        }
-      ]
-    },
-    {
-      "claim_id": "C041",
       "locator": "sections[2].paragraphs[1]",
-      "claim_text": "Simon a forgé un nom pour ce mode de sélection, satisficing",
+      "claim_text": "que les sources françaises consultées gardent en anglais faute de rendu stabilisé et dont elles paraphrasent le mécanisme, ici par choix satisfaisant",
       "supports": [
-        {
-          "id": "SUP-43982e2de588a0fb",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.translation_notes[1].note",
-          "access": "n/a",
-          "text": "Mot-valise forgé par Simon, qui en revendique la paternité dans le texte lu : « I called this mode of selection satisficing » (Nobel, p. 356). Il contracte to satisfy et to suffice. C'est un MÉCANISME (une règle d'arrêt de la recherche), non un synonyme de rationalité limitée : voir _perimetre_du_dossier. Difficulté de traduction irréductible : la conférence se clôt sur un jeu de mots entre la formule biblique « sufficient unto the day » (Matthieu 6, 34, dans la King James : « Sufficient unto the day is the evil thereof ») et « satisfice » — « to find ways of action that are sufficient unto the day, that satisfice » (p. 368). Aucune traduction française ne conserve à la fois l'allusion et le néologisme ; il faut choisir, et le dire."
-        },
-        {
-          "id": "SUP-2daeab338b75f4b6",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.key_quotation._alternatives_verbatim_meme_source[4].text",
-          "access": "n/a",
-          "text": "As soon as he discovered an alternative for choice meeting his level of aspiration, he would terminate the search and choose that alternative. I called this mode of selection satisficing."
-        },
-        {
-          "id": "SUP-1245702f511c6192",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.mechanism[10]",
-          "access": "n/a",
-          "text": "10. FORMALISATION — SECOND MÉCANISME, LE SATISFICING, ET SA RÈGLE D'ARRÊT (p. 356). « As an alternative, one could postulate that the decision maker had formed some aspiration as to how good an alternative he should find. As soon as he discovered an alternative for choice meeting his level of aspiration, he would terminate the search and choose that alternative. I called this mode of selection satisficing. » Le mécanisme est une RÈGLE D'ARRÊT de la recherche, pas un abaissement d'exigence."
-        }
-      ]
-    },
-    {
-      "claim_id": "C042",
-      "locator": "sections[2].paragraphs[1]",
-      "claim_text": "contraction de satisfy et de suffice",
-      "supports": [
-        {
-          "id": "SUP-43982e2de588a0fb",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.translation_notes[1].note",
-          "access": "n/a",
-          "text": "Mot-valise forgé par Simon, qui en revendique la paternité dans le texte lu : « I called this mode of selection satisficing » (Nobel, p. 356). Il contracte to satisfy et to suffice. C'est un MÉCANISME (une règle d'arrêt de la recherche), non un synonyme de rationalité limitée : voir _perimetre_du_dossier. Difficulté de traduction irréductible : la conférence se clôt sur un jeu de mots entre la formule biblique « sufficient unto the day » (Matthieu 6, 34, dans la King James : « Sufficient unto the day is the evil thereof ») et « satisfice » — « to find ways of action that are sufficient unto the day, that satisfice » (p. 368). Aucune traduction française ne conserve à la fois l'allusion et le néologisme ; il faut choisir, et le dire."
-        }
-      ]
-    },
-    {
-      "claim_id": "C043",
-      "locator": "sections[2].paragraphs[1]",
-      "claim_text": "qu’on rend par choix satisfaisant en gardant le double sens : qui suffit, et qui satisfait celui qui choisit",
-      "supports": [
-        {
-          "id": "SUP-43982e2de588a0fb",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.translation_notes[1].note",
-          "access": "n/a",
-          "text": "Mot-valise forgé par Simon, qui en revendique la paternité dans le texte lu : « I called this mode of selection satisficing » (Nobel, p. 356). Il contracte to satisfy et to suffice. C'est un MÉCANISME (une règle d'arrêt de la recherche), non un synonyme de rationalité limitée : voir _perimetre_du_dossier. Difficulté de traduction irréductible : la conférence se clôt sur un jeu de mots entre la formule biblique « sufficient unto the day » (Matthieu 6, 34, dans la King James : « Sufficient unto the day is the evil thereof ») et « satisfice » — « to find ways of action that are sufficient unto the day, that satisfice » (p. 368). Aucune traduction française ne conserve à la fois l'allusion et le néologisme ; il faut choisir, et le dire."
-        },
         {
           "id": "SUP-39fa5176097675af",
           "origin": "evidence:evidence.reception.json",
           "path": "$.evidence.translation_notes[3].note",
           "access": "n/a",
           "text": "PAS DE RENDU FRANÇAIS STABILISÉ : les sources consultées gardent le mot anglais et paraphrasent le mécanisme. Gouin & Harguindéguy écrivent « la notion de ‘satisficing’ » entre guillemets, sans traduire. Crozier écrit « un satisficing animal et non pas d'un optimizing animal » (1993, p. 85), également en anglais. Béjean, Midy & Peyron parlent de « la règle du ‘satisficing’ » et rendent le contenu par « solution satisfaisante » et « niveau d'aspiration », en citant la formulation de Mongin 1984, p. 31 : « Est choisie non pas l'action la meilleure relativement aux conditions objectives et subjectives de la décision, mais une action satisfaisante, c'est-à-dire dont l'évaluation est supérieure au niveau d'aspiration, ou seuil de satisfaction, du sujet. » À noter que le mot anglais est lui-même un mot-valise forgé par Simon (satisfy + suffice), ce qui explique la résistance à la traduction."
+        },
+        {
+          "id": "SUP-dd8a394bf83ce8aa",
+          "origin": "evidence:evidence.reception.json",
+          "path": "$.evidence.translation_notes[3].term_fr",
+          "access": "n/a",
+          "text": "satisficing (non traduit) / solution satisfaisante / niveau d'aspiration"
+        },
+        {
+          "id": "SUP-369c156fe1a672b8",
+          "origin": "evidence:evidence.reception.json",
+          "path": "$.evidence.translation_notes[3].term_source",
+          "access": "n/a",
+          "text": "satisficing"
         }
       ]
     },
     {
-      "claim_id": "C044",
+      "claim_id": "C040",
       "locator": "sections[2].paragraphs[1]",
-      "claim_text": "Retenir la meilleure option de toutes suppose de les avoir toutes examinées ; s’arrêter à la première qui convient ne le suppose pas",
+      "claim_text": "Retenir la meilleure option de toutes suppose de les avoir toutes examinées ; s’arrêter à la première qui convient ne le suppose pas.",
       "supports": [
         {
           "id": "SUP-c799954d72d6b7b0",
@@ -977,9 +950,9 @@
       ]
     },
     {
-      "claim_id": "C045",
+      "claim_id": "C041",
       "locator": "sections[2].paragraphs[1]",
-      "claim_text": "Les deux peuvent coïncider, mais rien ne l’assure",
+      "claim_text": "Les deux peuvent coïncider, mais rien ne l’assure.",
       "supports": [
         {
           "id": "SUP-73b18dc87c684d1d",
@@ -1005,7 +978,7 @@
       ]
     },
     {
-      "claim_id": "C046",
+      "claim_id": "C042",
       "locator": "sections[2].paragraphs[2]",
       "claim_text": "Ce niveau n’est pas fixé une fois pour toutes",
       "supports": [
@@ -1019,7 +992,7 @@
       ]
     },
     {
-      "claim_id": "C047",
+      "claim_id": "C043",
       "locator": "sections[2].paragraphs[2]",
       "claim_text": "et c’est ce qui interdit de lire la règle comme un renoncement",
       "supports": [
@@ -1029,11 +1002,18 @@
           "path": "$.evidence.common_misinterpretations[2].why_wrong",
           "access": "n/a",
           "text": "Le seuil est mobile et suit l'environnement : « aspiration levels are not static, but tend to rise and fall in consonance with changing experiences. In a benign environment that provides many good alternatives, aspirations rise; in a harsher environment, they fall » (p. 356). Un environnement riche élève le seuil. Simon ajoute que l'équivalence avec le choix optimal n'est pas exclue en équilibre de long terme (p. 356-357). Le satisficing est une règle d'ARRÊT de la recherche, indexée sur ce que l'environnement offre — pas un niveau d'ambition bas."
+        },
+        {
+          "id": "SUP-1245702f511c6192",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[10]",
+          "access": "n/a",
+          "text": "10. FORMALISATION — SECOND MÉCANISME, LE SATISFICING, ET SA RÈGLE D'ARRÊT (p. 356). « As an alternative, one could postulate that the decision maker had formed some aspiration as to how good an alternative he should find. As soon as he discovered an alternative for choice meeting his level of aspiration, he would terminate the search and choose that alternative. I called this mode of selection satisficing. » Le mécanisme est une RÈGLE D'ARRÊT de la recherche, pas un abaissement d'exigence."
         }
       ]
     },
     {
-      "claim_id": "C048",
+      "claim_id": "C044",
       "locator": "sections[2].paragraphs[2]",
       "claim_text": "Simon emprunte la notion à la psychologie des niveaux d’aspiration, celle de Lewin et d’autres",
       "supports": [
@@ -1054,7 +1034,7 @@
       ]
     },
     {
-      "claim_id": "C049",
+      "claim_id": "C045",
       "locator": "sections[2].paragraphs[2]",
       "claim_text": "ces niveaux tendent à monter et à descendre au gré de l’expérience, ils montent dans un environnement généreux qui offre beaucoup de bonnes options, ils baissent dans un environnement plus rude",
       "supports": [
@@ -1075,9 +1055,9 @@
       ]
     },
     {
-      "claim_id": "C050",
+      "claim_id": "C046",
       "locator": "sections[2].paragraphs[2]",
-      "claim_text": "S’arrêter à un choix satisfaisant n’est donc pas viser bas : c’est viser ce que l’environnement rend raisonnable d’attendre",
+      "claim_text": "S’arrêter à un choix satisfaisant n’est donc pas viser bas : c’est viser ce que l’environnement rend raisonnable d’attendre.",
       "supports": [
         {
           "id": "SUP-cb1a6265ed8d8532",
@@ -1085,6 +1065,13 @@
           "path": "$.evidence.common_misinterpretations[2].why_wrong",
           "access": "n/a",
           "text": "Le seuil est mobile et suit l'environnement : « aspiration levels are not static, but tend to rise and fall in consonance with changing experiences. In a benign environment that provides many good alternatives, aspirations rise; in a harsher environment, they fall » (p. 356). Un environnement riche élève le seuil. Simon ajoute que l'équivalence avec le choix optimal n'est pas exclue en équilibre de long terme (p. 356-357). Le satisficing est une règle d'ARRÊT de la recherche, indexée sur ce que l'environnement offre — pas un niveau d'ambition bas."
+        },
+        {
+          "id": "SUP-9c52ee7550bdb8f3",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.common_misinterpretations[2].claim",
+          "access": "n/a",
+          "text": "Satisficing, c'est renoncer, viser bas, se contenter de la médiocrité."
         },
         {
           "id": "SUP-28428f30123a088d",
@@ -1096,9 +1083,9 @@
       ]
     },
     {
-      "claim_id": "C051",
+      "claim_id": "C047",
       "locator": "sections[3].paragraphs[0]",
-      "claim_text": "il suffirait de calculer le bon moment de s’arrêter, en pesant ce que coûte une recherche de plus contre ce qu’elle peut rapporter",
+      "claim_text": "quand il suffirait de calculer le bon moment de s’arrêter, en pesant ce que coûte une recherche de plus contre ce qu’elle peut rapporter",
       "supports": [
         {
           "id": "SUP-cb4ab7944a83f8c1",
@@ -1117,7 +1104,7 @@
       ]
     },
     {
-      "claim_id": "C052",
+      "claim_id": "C048",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "C’est la voie qu’avait prise Stigler",
       "supports": [
@@ -1138,7 +1125,7 @@
       ]
     },
     {
-      "claim_id": "C053",
+      "claim_id": "C049",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "et Simon indique avoir établi de son côté la même équivalence formelle",
       "supports": [
@@ -1152,7 +1139,7 @@
       ]
     },
     {
-      "claim_id": "C054",
+      "claim_id": "C050",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "Il s’en écarte pourtant",
       "supports": [
@@ -1162,11 +1149,18 @@
           "path": "$.evidence.mechanism[9]",
           "access": "n/a",
           "text": "9. POURQUOI ON NE PEUT PAS OPTIMISER LA RECHERCHE ELLE-MÊME — étape décisive, et celle qui distingue Simon de Stigler (p. 356). Stigler (1961) a « poured the search theory back into the old bottle of classical utility maximization, the cost of search being equated with its marginal return » ; Simon indique avoir démontré la même équivalence formelle en 1956. Mais : « But utility maximization, as I showed, was not essential to the search scheme - fortunately, for it would have required the decision maker to be able to estimate the marginal costs and returns of search in a decision situation that was already too complex for the exercise of global rationality. » Autrement dit : optimiser la recherche réintroduit exactement le calcul dont on venait d'établir l'impossibilité. La régression est bloquée, et c'est ce blocage qui rend nécessaire un mécanisme d'un autre type."
+        },
+        {
+          "id": "SUP-2843410533da5999",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.translation_notes[4].note",
+          "access": "n/a",
+          "text": "Terme technique : la recherche des options elles-mêmes, puis, chez Newell & Simon, l'exploration d'un espace de problème (« very selective search through problem spaces that are often immense », p. 362). Le français « recherche » est ambigu (research). Il faut préciser « recherche d'options » ou employer « exploration ». À distinguer de la « search theory » économique de Stigler (1961), que Simon cite p. 356 pour s'en démarquer : Stigler optimise le coût de la recherche, Simon montre que cette optimisation est elle-même hors de portée."
         }
       ]
     },
     {
-      "claim_id": "C055",
+      "claim_id": "C051",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "maximiser ainsi aurait exigé du décideur qu’il estime les coûts et les rendements marginaux de sa propre recherche, dans une situation, écrit-il, déjà trop complexe pour qu’une rationalité globale s’y exerce",
       "supports": [
@@ -1187,30 +1181,30 @@
       ]
     },
     {
-      "claim_id": "C056",
+      "claim_id": "C052",
       "locator": "sections[3].paragraphs[1]",
-      "claim_text": "La sortie optimisatrice se referme ainsi sur elle-même : calculer quand s’arrêter exige justement la connaissance dont l’absence définit la situation",
+      "claim_text": "calculer quand s’arrêter exige justement la connaissance dont l’absence définit la situation",
       "supports": [
-        {
-          "id": "SUP-cb4ab7944a83f8c1",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.mechanism[9]",
-          "access": "n/a",
-          "text": "9. POURQUOI ON NE PEUT PAS OPTIMISER LA RECHERCHE ELLE-MÊME — étape décisive, et celle qui distingue Simon de Stigler (p. 356). Stigler (1961) a « poured the search theory back into the old bottle of classical utility maximization, the cost of search being equated with its marginal return » ; Simon indique avoir démontré la même équivalence formelle en 1956. Mais : « But utility maximization, as I showed, was not essential to the search scheme - fortunately, for it would have required the decision maker to be able to estimate the marginal costs and returns of search in a decision situation that was already too complex for the exercise of global rationality. » Autrement dit : optimiser la recherche réintroduit exactement le calcul dont on venait d'établir l'impossibilité. La régression est bloquée, et c'est ce blocage qui rend nécessaire un mécanisme d'un autre type."
-        },
         {
           "id": "SUP-1f4885ceaf5ed2de",
           "origin": "evidence:evidence.primary-reading.json",
           "path": "$.evidence.conditions.intensified_by[0]",
           "access": "n/a",
           "text": "La complexité elle-même, par un effet de récursion : dès que la situation est « already too complex for the exercise of global rationality », le décideur ne peut pas non plus estimer les coûts et rendements marginaux de sa propre recherche — donc la voie de secours optimisatrice se referme (p. 356)."
+        },
+        {
+          "id": "SUP-cb4ab7944a83f8c1",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[9]",
+          "access": "n/a",
+          "text": "9. POURQUOI ON NE PEUT PAS OPTIMISER LA RECHERCHE ELLE-MÊME — étape décisive, et celle qui distingue Simon de Stigler (p. 356). Stigler (1961) a « poured the search theory back into the old bottle of classical utility maximization, the cost of search being equated with its marginal return » ; Simon indique avoir démontré la même équivalence formelle en 1956. Mais : « But utility maximization, as I showed, was not essential to the search scheme - fortunately, for it would have required the decision maker to be able to estimate the marginal costs and returns of search in a decision situation that was already too complex for the exercise of global rationality. » Autrement dit : optimiser la recherche réintroduit exactement le calcul dont on venait d'établir l'impossibilité. La régression est bloquée, et c'est ce blocage qui rend nécessaire un mécanisme d'un autre type."
         }
       ]
     },
     {
-      "claim_id": "C057",
+      "claim_id": "C053",
       "locator": "sections[3].paragraphs[1]",
-      "claim_text": "Reste une échappatoire, simplifier le problème jusqu’à ce qu’un optimum devienne calculable",
+      "claim_text": "Reste une échappatoire, simplifier le problème jusqu’à ce qu’un optimum devienne calculable. Simon la range elle aussi du côté du choix satisfaisant",
       "supports": [
         {
           "id": "SUP-5014dfb0725f2776",
@@ -1229,37 +1223,9 @@
       ]
     },
     {
-      "claim_id": "C058",
+      "claim_id": "C054",
       "locator": "sections[3].paragraphs[1]",
-      "claim_text": "Simon la range elle aussi du côté du choix satisfaisant",
-      "supports": [
-        {
-          "id": "SUP-5014dfb0725f2776",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.conditions.disappears_when[4]",
-          "access": "n/a",
-          "text": "PIÈGE À ÉVITER — simplifier le monde jusqu'à ce que l'optimum devienne calculable N'EST PAS une sortie de la rationalité limitée : Simon range explicitement ce geste dans le satisficing. « decision makers can satisfice either by finding optimum solutions for a simplified world, or by finding satisfactory solutions for a more realistic world » (p. 350). L'optimisation d'un modèle simplifié est une forme de satisficing, pas son contraire."
-        },
-        {
-          "id": "SUP-6864bc4690fff353",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.common_misinterpretations[3].why_wrong",
-          "access": "n/a",
-          "text": "Simon range explicitement ce geste DANS le satisficing : « decision makers can satisfice either by finding optimum solutions for a simplified world, or by finding satisfactory solutions for a more realistic world. Neither approach, in general, dominates the other » (p. 350). Il donne son propre travail en exemple : l'hypothèse de coûts quadratiques rend le problème de programmation dynamique calculable, et « the solution, though it provides optimal decisions for the simplified world of our assumptions, provides, at best, satisfactory solutions for the real-world decision problem that the quadratic function approximates. In-principle, unattainable optimization is sacrificed for in-practice, attainable satisfaction » (p. 351)."
-        },
-        {
-          "id": "SUP-951b41062fcf9598",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.key_quotation._alternatives_verbatim_meme_source[2].text",
-          "access": "n/a",
-          "text": "Stated otherwise, decision makers can satisfice either by finding optimum solutions for a simplified world, or by finding satisfactory solutions for a more realistic world."
-        }
-      ]
-    },
-    {
-      "claim_id": "C059",
-      "locator": "sections[3].paragraphs[1]",
-      "claim_text": "chercher des « optimum solutions for a simplified world » ou des solutions satisfaisantes pour un monde plus réaliste",
+      "claim_text": "on peut, écrit-il, chercher des « optimum solutions for a simplified world » ou des solutions satisfaisantes pour un monde plus réaliste",
       "supports": [
         {
           "id": "SUP-951b41062fcf9598",
@@ -1278,7 +1244,7 @@
       ]
     },
     {
-      "claim_id": "C060",
+      "claim_id": "C055",
       "locator": "sections[3].paragraphs[1]",
       "claim_text": "et aucune de ces deux voies, en règle générale, ne domine l’autre",
       "supports": [
@@ -1292,10 +1258,17 @@
       ]
     },
     {
-      "claim_id": "C061",
+      "claim_id": "C056",
       "locator": "sections[3].paragraphs[1]",
       "claim_text": "Un lecteur de Simon, Gerd Gigerenzer, tient cette lecture optimisatrice pour la première des mésinterprétations du concept",
       "supports": [
+        {
+          "id": "SUP-2195b48cc85157ee",
+          "origin": "evidence:evidence.reception.json",
+          "path": "$.evidence.common_misinterpretations[2].why_wrong",
+          "access": "n/a",
+          "text": "C'est la PREMIÈRE mésinterprétation identifiée par Gigerenzer, et il la présente comme devenue majoritaire malgré les protestations de Simon : « In this view, the bounds in bounded rationality are just another name for constraints, and bounded rationality is merely a case of optimizing under constraints. Despite Herb's vehement protests, this message has become the doctrine. » L'objection décisive est qu'elle retourne le concept contre lui-même : calculer un point d'arrêt optimal suppose de connaître à l'avance les coûts et bénéfices de la recherche, donc « invokes new kinds of omniscience », et rend les modèles « more demanding than models of full rationality, both mathematically and psychologically ». Gigerenzer cite Sargent 1993, p. 2 à l'appui : « when we economists make the people in our models more ‘bounded’ in their rationality ... we must be smarter ». La couche francophone identifie nommément les auteurs concernés : Stigler (1961) comme modélisateur, Williamson (1994) comme utilisateur (Béjean, Midy & Peyron 1999)."
+        },
         {
           "id": "SUP-6a159eb359d81780",
           "origin": "evidence:evidence.reception.json",
@@ -1304,11 +1277,11 @@
           "text": "LA source qui nomme et argumente les deux mésinterprétations dominantes, et le fait de l'intérieur (Gigerenzer se réclame de Simon). Établit : (1) la partition en trois programmes — « Simon's (1955, 1956) concept of bounded rationality has been claimed by three different programs. One of these Simon opposed, one he tolerated, and one he embraced. I will call the three programs optimization under constraints, cognitive illusions and anomalies, and ecological rationality » ; (2) contre la lecture « optimisation sous contrainte » : « In this view, the bounds in bounded rationality are just another name for constraints, and bounded rationality is merely a case of optimizing under constraints. Despite Herb's vehement protests, this message has become the doctrine » ; « Retaining the ideal of optimization can make models of optimization under constraints more demanding than models of full rationality, both mathematically and psychologically » ; (3) contre la lecture « biais cognitifs / irrationalité » : « Many psychologists and some economists assume that the study of bounded rationality is the study of cognitive limitations and systematic errors in judgment and decision making (e.g., Camerer, 1998; Rabin, 1998). Surprisingly, this second meaning amounts to something like the converse of the first » ; « The confusion between bounded rationality and the study of cognitive illusions and irrationality is the second misunderstanding of Herb's idea of sanity in theories of rationality » ; (4) LA RAISON — l'analogie des ciseaux : « Why is bounded rationality not the same as irrationality? Herb has given the answer in the form of an analogy. Bounded rationality is like a pair of scissors: The mind is one blade, and the structure of the environment is the other. […] The study of cognitive illusions and errors, however, studies only the cognitive blade, and compares it with laws of probability rather than with the structure of the environment. One blade alone does not cut well. » ; (5) le caractère POSITIF du programme : « Bounded rationality is not merely an attack on the assumptions underlying optimizing models; it is a positive program to replace optimization—when it is unrealistic—with something better » ; (6) le point de filiation (voir known_ambiguities) : « The origin of this interpretation seems to be a mentioning of Simon's work on bounded rationality in the preface of Kahneman, Slovic, and Tversky's 1982 anthology. Since there are no citations at all to Simon in the early influential papers of Kahneman and Tversky, which are reprinted in this anthology, this mentioning was probably more an acknowledgement to a distinguished figure than an intellectual debt (Lopes, 1992). » CONSULTATION : texte intégral, PDF déposé par l'auteur sur le serveur de la bibliothèque du Max-Planck-Institut für Bildungsforschung ; la première page porte la référence de publication et la pagination d'origine (p. 389-409), le PDF étant repaginé 1-12 — les localisations données ici renvoient à la pagination du PDF."
         },
         {
-          "id": "SUP-2195b48cc85157ee",
+          "id": "SUP-5949bd0d07bc5c2b",
           "origin": "evidence:evidence.reception.json",
-          "path": "$.evidence.common_misinterpretations[2].why_wrong",
+          "path": "$.evidence.secondary_sources[1].citation",
           "access": "n/a",
-          "text": "C'est la PREMIÈRE mésinterprétation identifiée par Gigerenzer, et il la présente comme devenue majoritaire malgré les protestations de Simon : « In this view, the bounds in bounded rationality are just another name for constraints, and bounded rationality is merely a case of optimizing under constraints. Despite Herb's vehement protests, this message has become the doctrine. » L'objection décisive est qu'elle retourne le concept contre lui-même : calculer un point d'arrêt optimal suppose de connaître à l'avance les coûts et bénéfices de la recherche, donc « invokes new kinds of omniscience », et rend les modèles « more demanding than models of full rationality, both mathematically and psychologically ». Gigerenzer cite Sargent 1993, p. 2 à l'appui : « when we economists make the people in our models more ‘bounded’ in their rationality ... we must be smarter ». La couche francophone identifie nommément les auteurs concernés : Stigler (1961) comme modélisateur, Williamson (1994) comme utilisateur (Béjean, Midy & Peyron 1999)."
+          "text": "Gerd Gigerenzer, « Striking a Blow for Sanity in Theories of Rationality », in Mie Augier et James G. March (dir.), Models of a Man: Essays in Memory of Herbert A. Simon, Cambridge (MA), MIT Press, 2004, p. 389-409"
         },
         {
           "id": "SUP-6fab7f32d57c90c9",
@@ -1318,16 +1291,16 @@
           "text": "Critique de la RÉCEPTION, non de Simon — Gigerenzer se réclame de Simon contre ses lecteurs. Deux mésinterprétations dominantes sont nommées : (1) l'optimisation sous contrainte, qui « invokes new kinds of omniscience » et peut rendre les modèles « more demanding than models of full rationality », et dont il constate qu'elle « has become the doctrine » malgré « Herb's vehement protests » ; (2) les illusions cognitives et l'irrationalité, qui ne regardent qu'« only the cognitive blade » des ciseaux et jugent le comportement à l'aune de la norme d'optimisation même que Simon récusait. Son reproche de fond au premier programme dépasse la question exégétique : « Optimization is impossible in most natural situations » (problèmes NP-complets), « Optimization is unfeasible when problems are unfamiliar and time is scarce », « Optimization does not imply an optimal outcome », et « A good fit, per se, is not an empirical validation of the model » (problème de surajustement). Programme de rechange : la rationalité écologique et la « boîte à outils adaptative »."
         },
         {
-          "id": "SUP-5949bd0d07bc5c2b",
+          "id": "SUP-d9145e92f43941f9",
           "origin": "evidence:evidence.reception.json",
-          "path": "$.evidence.secondary_sources[1].citation",
+          "path": "$.evidence.reception.critiques[0].by",
           "access": "n/a",
-          "text": "Gerd Gigerenzer, « Striking a Blow for Sanity in Theories of Rationality », in Mie Augier et James G. March (dir.), Models of a Man: Essays in Memory of Herbert A. Simon, Cambridge (MA), MIT Press, 2004, p. 389-409"
+          "text": "Gerd Gigerenzer"
         }
       ]
     },
     {
-      "claim_id": "C062",
+      "claim_id": "C057",
       "locator": "sections[3].paragraphs[1]",
       "claim_text": "et juge qu’elle « invokes new kinds of omniscience »",
       "supports": [
@@ -1348,7 +1321,7 @@
       ]
     },
     {
-      "claim_id": "C063",
+      "claim_id": "C058",
       "locator": "sections[3].paragraphs[1]",
       "claim_text": "qu’elle réintroduit l’omniscience même par écart à laquelle le concept se définissait",
       "supports": [
@@ -1360,25 +1333,25 @@
           "text": "C'est la PREMIÈRE mésinterprétation identifiée par Gigerenzer, et il la présente comme devenue majoritaire malgré les protestations de Simon : « In this view, the bounds in bounded rationality are just another name for constraints, and bounded rationality is merely a case of optimizing under constraints. Despite Herb's vehement protests, this message has become the doctrine. » L'objection décisive est qu'elle retourne le concept contre lui-même : calculer un point d'arrêt optimal suppose de connaître à l'avance les coûts et bénéfices de la recherche, donc « invokes new kinds of omniscience », et rend les modèles « more demanding than models of full rationality, both mathematically and psychologically ». Gigerenzer cite Sargent 1993, p. 2 à l'appui : « when we economists make the people in our models more ‘bounded’ in their rationality ... we must be smarter ». La couche francophone identifie nommément les auteurs concernés : Stigler (1961) comme modélisateur, Williamson (1994) comme utilisateur (Béjean, Midy & Peyron 1999)."
         },
         {
-          "id": "SUP-76e0114ff88ea71e",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.key_quotation.text",
-          "access": "n/a",
-          "text": "Dans Administrative Behavior, la rationalité limitée est caractérisée pour l'essentiel comme une catégorie résiduelle - la rationalité est limitée quand elle reste en deçà de l'omniscience. Et les défaillances de l'omniscience sont pour l'essentiel des défaillances à connaître toutes les options, l'incertitude sur les événements exogènes pertinents, et l'incapacité de calculer les conséquences."
-        },
-        {
           "id": "SUP-bc603c67ea144ffa",
           "origin": "validated",
           "path": "$.quotation.text",
           "access": "n/a",
           "text": "[…] la rationalité est limitée quand elle reste en deçà de l'omniscience."
+        },
+        {
+          "id": "SUP-3d0fbd17cc37b53a",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.concept_definition",
+          "access": "n/a",
+          "text": "Dans la conférence Nobel de 1978, seule source primaire ouverte ici, Simon caractérise la rationalité limitée par écart à un point de référence, l'omniscience : « In Administrative Behavior, bounded rationality is largely characterized as a residual category - rationality is bounded when it falls short of omniscience. And the failures of omniscience are largely failures of knowing all the alternatives, uncertainty about relevant exogenous events, and inability to calculate consequences » (p. 356). Le point de référence est explicité p. 353 sous la forme des quatre exigences du modèle classique : « The classical model calls for knowledge of all the alternatives that are open to choice. It calls for complete knowledge of, or ability to compute, the consequences that will follow on each of the alternatives. It calls for certainty in the decision-maker's present and future evaluation of these consequences. It calls for the ability to compare consequences, no matter how diverse and heterogeneous, in terms of some consistent measure of utility. » La rationalité limitée est le nom du régime de choix qui subsiste quand ces quatre exigences tombent. Portée organisationnelle revendiquée p. 354 : les organisations élaborées « can only be understood as machinery for coping with the limits of man's abilities to comprehend and compute in the face of complexity and uncertainty ». Rien dans ce texte ne caractérise la rationalité limitée comme un défaut de rationalité : Simon parle p. 368 des « mechanisms of human rational choice » et p. 367 de « Human behavior, even rational human behavior »."
         }
       ]
     },
     {
-      "claim_id": "C064",
+      "claim_id": "C059",
       "locator": "sections[4].paragraphs[0]",
-      "claim_text": "Le choix satisfaisant n’est pourtant qu’un des procédés que Simon range sous ce nom",
+      "claim_text": "Le choix satisfaisant n’est pourtant qu’un des procédés que Simon range sous ce nom.",
       "supports": [
         {
           "id": "SUP-9806fe22fa49e6d0",
@@ -1386,13 +1359,6 @@
           "path": "$.evidence.mechanism[6]",
           "access": "n/a",
           "text": "6. LES TROIS PROCÉDÉS QUI RENDENT LE PROBLÈME TRAITABLE (p. 353-354). « Several procedures of rather general applicability and wide use have been discovered that transform intractable decision problems into tractable ones. » Simon en nomme trois : (a) « to look for satisfactory choices instead of optimal ones » ; (b) « to replace abstract, global goals with tangible subgoals, whose achievement can be observed and measured » ; (c) « to divide up the decision-making task among many specialists, coordinating their work by means of a structure of communications and authority relations ». Puis : « All of these, and others, fit the general rubric of “bounded rationality” » (p. 354). Le troisième procédé est celui qu'on oublie : c'est lui qui fait de l'organisation elle-même un dispositif de rationalité limitée."
-        },
-        {
-          "id": "SUP-cc2c3f28bdd3762e",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence._perimetre_du_dossier",
-          "access": "n/a",
-          "text": "Ce dossier documente BOUNDED RATIONALITY / rationalité limitée, c'est-à-dire la CONDITION générale dans laquelle s'exerce le choix, et non satisficing, qui en est l'un des MÉCANISMES. La séparation est faite par Simon lui-même, dans le texte lu, en deux temps. (1) La condition : « rationality is bounded when it falls short of omniscience » (p. 356) — c'est une catégorie définie par écart à l'omniscience. (2) Les mécanismes : « Two concepts are central to the characterization: search and satisficing » (p. 356). Satisficing est donc l'un des deux mécanismes formalisés (avec la recherche/search), et par ailleurs seulement le PREMIER des trois procédés que Simon range p. 353-354 sous « the general rubric of “bounded rationality” » — les deux autres étant la substitution de sous-buts tangibles aux buts globaux abstraits, et la division de la tâche de décision entre spécialistes coordonnés par une structure de communication et d'autorité. Conséquence pour l'application : rationalité limitée ⊃ satisficing. Écrire « rationalité limitée = on se contente du satisfaisant » ampute le concept de ses deux autres procédés, dont l'un — la division du travail de décision — est précisément ce qui, chez Simon, explique l'existence des organisations."
         },
         {
           "id": "SUP-9a7db745f1a341bf",
@@ -1400,13 +1366,20 @@
           "path": "$.evidence.common_misinterpretations[1].why_wrong",
           "access": "n/a",
           "text": "Le satisficing est l'un des mécanismes, pas le concept. Simon range trois procédés sous « the general rubric of “bounded rationality” » (p. 353-354) : chercher un choix satisfaisant plutôt qu'optimal ; remplacer les buts globaux abstraits par des sous-buts tangibles dont l'atteinte peut être observée et mesurée ; DIVISER la tâche de décision entre de nombreux spécialistes coordonnés par une structure de communication et d'autorité. Et dans la formalisation, « Two concepts are central to the characterization: search and satisficing » (p. 356) — deux, pas un. Réduire le concept au satisficing supprime précisément le procédé qui donne au concept sa portée organisationnelle (p. 354)."
+        },
+        {
+          "id": "SUP-cc2c3f28bdd3762e",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence._perimetre_du_dossier",
+          "access": "n/a",
+          "text": "Ce dossier documente BOUNDED RATIONALITY / rationalité limitée, c'est-à-dire la CONDITION générale dans laquelle s'exerce le choix, et non satisficing, qui en est l'un des MÉCANISMES. La séparation est faite par Simon lui-même, dans le texte lu, en deux temps. (1) La condition : « rationality is bounded when it falls short of omniscience » (p. 356) — c'est une catégorie définie par écart à l'omniscience. (2) Les mécanismes : « Two concepts are central to the characterization: search and satisficing » (p. 356). Satisficing est donc l'un des deux mécanismes formalisés (avec la recherche/search), et par ailleurs seulement le PREMIER des trois procédés que Simon range p. 353-354 sous « the general rubric of “bounded rationality” » — les deux autres étant la substitution de sous-buts tangibles aux buts globaux abstraits, et la division de la tâche de décision entre spécialistes coordonnés par une structure de communication et d'autorité. Conséquence pour l'application : rationalité limitée ⊃ satisficing. Écrire « rationalité limitée = on se contente du satisfaisant » ampute le concept de ses deux autres procédés, dont l'un — la division du travail de décision — est précisément ce qui, chez Simon, explique l'existence des organisations."
         }
       ]
     },
     {
-      "claim_id": "C065",
+      "claim_id": "C060",
       "locator": "sections[4].paragraphs[0]",
-      "claim_text": "Il en nomme trois qui, écrit-il, rendent traitables des problèmes de décision qui ne l’étaient pas",
+      "claim_text": "Il en nomme trois qui, écrit-il, rendent traitables des problèmes de décision qui ne l’étaient pas.",
       "supports": [
         {
           "id": "SUP-9806fe22fa49e6d0",
@@ -1414,20 +1387,13 @@
           "path": "$.evidence.mechanism[6]",
           "access": "n/a",
           "text": "6. LES TROIS PROCÉDÉS QUI RENDENT LE PROBLÈME TRAITABLE (p. 353-354). « Several procedures of rather general applicability and wide use have been discovered that transform intractable decision problems into tractable ones. » Simon en nomme trois : (a) « to look for satisfactory choices instead of optimal ones » ; (b) « to replace abstract, global goals with tangible subgoals, whose achievement can be observed and measured » ; (c) « to divide up the decision-making task among many specialists, coordinating their work by means of a structure of communications and authority relations ». Puis : « All of these, and others, fit the general rubric of “bounded rationality” » (p. 354). Le troisième procédé est celui qu'on oublie : c'est lui qui fait de l'organisation elle-même un dispositif de rationalité limitée."
-        },
-        {
-          "id": "SUP-82b3bd2198a32925",
-          "origin": "validated",
-          "path": "$.review.notes[2]",
-          "access": "n/a",
-          "text": "Simon range trois procédés « and others » sous la rubrique (p. 354) ; le résumé n'en décrit qu'un, la recherche interrompue au seuil de satisfaction, que Simon privilégie lui-même (« Two concepts are central to the characterization », p. 356). Ce n'est donc pas une hiérarchie inventée, mais le résumé n'épuise pas le concept."
         }
       ]
     },
     {
-      "claim_id": "C066",
+      "claim_id": "C061",
       "locator": "sections[4].paragraphs[0]",
-      "claim_text": "Le premier est la règle d’arrêt qu’on vient de voir",
+      "claim_text": "Le premier est la règle d’arrêt qu’on vient de voir.",
       "supports": [
         {
           "id": "SUP-9806fe22fa49e6d0",
@@ -1446,7 +1412,7 @@
       ]
     },
     {
-      "claim_id": "C067",
+      "claim_id": "C062",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "Le deuxième remplace des buts globaux et abstraits par des sous-buts tangibles, dont l’atteinte peut être observée et mesurée",
       "supports": [
@@ -1456,11 +1422,18 @@
           "path": "$.evidence.mechanism[6]",
           "access": "n/a",
           "text": "6. LES TROIS PROCÉDÉS QUI RENDENT LE PROBLÈME TRAITABLE (p. 353-354). « Several procedures of rather general applicability and wide use have been discovered that transform intractable decision problems into tractable ones. » Simon en nomme trois : (a) « to look for satisfactory choices instead of optimal ones » ; (b) « to replace abstract, global goals with tangible subgoals, whose achievement can be observed and measured » ; (c) « to divide up the decision-making task among many specialists, coordinating their work by means of a structure of communications and authority relations ». Puis : « All of these, and others, fit the general rubric of “bounded rationality” » (p. 354). Le troisième procédé est celui qu'on oublie : c'est lui qui fait de l'organisation elle-même un dispositif de rationalité limitée."
+        },
+        {
+          "id": "SUP-fb27c2378ea3fd50",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[3]",
+          "access": "n/a",
+          "text": "3. PREMIÈRE CONSÉQUENCE — IDENTIFICATION AUX SOUS-BUTS (« subgoal identification », p. 353). « When the goals of an organization cannot be connected operationally with actions (when the production function can't be formulated in concrete terms), then decisions will be judged against subordinate goals that can be so connected. » Trois précisions du texte : (a) « There is no unique determination of these subordinate goals » ; (b) « Their formulation will depend on the knowledge, experience, and organizational environment of the decision maker » ; (c) « In the face of this ambiguity, the formulation can also be influenced in subtle, and not so subtle, ways by his self-interest and power drives ». L'intérêt et le pouvoir entrent APRÈS l'ambiguïté cognitive et par elle : ils ne l'expliquent pas."
         }
       ]
     },
     {
-      "claim_id": "C068",
+      "claim_id": "C063",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "c’est ce qui se passait à Milwaukee, où, faute de relier les objectifs aux actions, chacun jugeait ses dépenses à l’aune d’un but subordonné qu’il pouvait, lui, constater",
       "supports": [
@@ -1488,9 +1461,9 @@
       ]
     },
     {
-      "claim_id": "C069",
+      "claim_id": "C064",
       "locator": "sections[4].paragraphs[0]",
-      "claim_text": "Le troisième découpe la tâche de décision entre de nombreux spécialistes, coordonnés par une structure de communication et de relations d’autorité",
+      "claim_text": "Le troisième découpe la tâche de décision entre de nombreux spécialistes, coordonnés par une structure de communication et de relations d’autorité.",
       "supports": [
         {
           "id": "SUP-9806fe22fa49e6d0",
@@ -1502,9 +1475,9 @@
       ]
     },
     {
-      "claim_id": "C070",
+      "claim_id": "C065",
       "locator": "sections[4].paragraphs[1]",
-      "claim_text": "Ce troisième procédé est celui qu’on oublie, et c’est celui qui donne au concept sa portée",
+      "claim_text": "Ce troisième procédé est celui qu’on oublie",
       "supports": [
         {
           "id": "SUP-9806fe22fa49e6d0",
@@ -1519,6 +1492,20 @@
           "path": "$.evidence.common_misinterpretations[1].why_wrong",
           "access": "n/a",
           "text": "Le satisficing est l'un des mécanismes, pas le concept. Simon range trois procédés sous « the general rubric of “bounded rationality” » (p. 353-354) : chercher un choix satisfaisant plutôt qu'optimal ; remplacer les buts globaux abstraits par des sous-buts tangibles dont l'atteinte peut être observée et mesurée ; DIVISER la tâche de décision entre de nombreux spécialistes coordonnés par une structure de communication et d'autorité. Et dans la formalisation, « Two concepts are central to the characterization: search and satisficing » (p. 356) — deux, pas un. Réduire le concept au satisficing supprime précisément le procédé qui donne au concept sa portée organisationnelle (p. 354)."
+        }
+      ]
+    },
+    {
+      "claim_id": "C066",
+      "locator": "sections[4].paragraphs[1]",
+      "claim_text": "et c’est celui qui donne au concept sa portée",
+      "supports": [
+        {
+          "id": "SUP-9a7db745f1a341bf",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.common_misinterpretations[1].why_wrong",
+          "access": "n/a",
+          "text": "Le satisficing est l'un des mécanismes, pas le concept. Simon range trois procédés sous « the general rubric of “bounded rationality” » (p. 353-354) : chercher un choix satisfaisant plutôt qu'optimal ; remplacer les buts globaux abstraits par des sous-buts tangibles dont l'atteinte peut être observée et mesurée ; DIVISER la tâche de décision entre de nombreux spécialistes coordonnés par une structure de communication et d'autorité. Et dans la formalisation, « Two concepts are central to the characterization: search and satisficing » (p. 356) — deux, pas un. Réduire le concept au satisficing supprime précisément le procédé qui donne au concept sa portée organisationnelle (p. 354)."
         },
         {
           "id": "SUP-cc2c3f28bdd3762e",
@@ -1526,13 +1513,20 @@
           "path": "$.evidence._perimetre_du_dossier",
           "access": "n/a",
           "text": "Ce dossier documente BOUNDED RATIONALITY / rationalité limitée, c'est-à-dire la CONDITION générale dans laquelle s'exerce le choix, et non satisficing, qui en est l'un des MÉCANISMES. La séparation est faite par Simon lui-même, dans le texte lu, en deux temps. (1) La condition : « rationality is bounded when it falls short of omniscience » (p. 356) — c'est une catégorie définie par écart à l'omniscience. (2) Les mécanismes : « Two concepts are central to the characterization: search and satisficing » (p. 356). Satisficing est donc l'un des deux mécanismes formalisés (avec la recherche/search), et par ailleurs seulement le PREMIER des trois procédés que Simon range p. 353-354 sous « the general rubric of “bounded rationality” » — les deux autres étant la substitution de sous-buts tangibles aux buts globaux abstraits, et la division de la tâche de décision entre spécialistes coordonnés par une structure de communication et d'autorité. Conséquence pour l'application : rationalité limitée ⊃ satisficing. Écrire « rationalité limitée = on se contente du satisfaisant » ampute le concept de ses deux autres procédés, dont l'un — la division du travail de décision — est précisément ce qui, chez Simon, explique l'existence des organisations."
+        },
+        {
+          "id": "SUP-9806fe22fa49e6d0",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[6]",
+          "access": "n/a",
+          "text": "6. LES TROIS PROCÉDÉS QUI RENDENT LE PROBLÈME TRAITABLE (p. 353-354). « Several procedures of rather general applicability and wide use have been discovered that transform intractable decision problems into tractable ones. » Simon en nomme trois : (a) « to look for satisfactory choices instead of optimal ones » ; (b) « to replace abstract, global goals with tangible subgoals, whose achievement can be observed and measured » ; (c) « to divide up the decision-making task among many specialists, coordinating their work by means of a structure of communications and authority relations ». Puis : « All of these, and others, fit the general rubric of “bounded rationality” » (p. 354). Le troisième procédé est celui qu'on oublie : c'est lui qui fait de l'organisation elle-même un dispositif de rationalité limitée."
         }
       ]
     },
     {
-      "claim_id": "C071",
+      "claim_id": "C067",
       "locator": "sections[4].paragraphs[1]",
-      "claim_text": "Les organisations élaborées que les humains ont construites pour produire et pour gouverner ne se comprennent, écrit Simon, que comme un appareillage destiné à composer avec les limites de leur capacité à comprendre et à calculer, face à la complexité et à l’incertitude",
+      "claim_text": "Les organisations élaborées que les humains ont construites pour produire et pour gouverner ne se comprennent, écrit Simon, que comme un appareillage destiné à composer avec les limites de leur capacité à comprendre et à calculer, face à la complexité et à l’incertitude.",
       "supports": [
         {
           "id": "SUP-35aca64e66ec8127",
@@ -1558,9 +1552,9 @@
       ]
     },
     {
-      "claim_id": "C072",
+      "claim_id": "C068",
       "locator": "sections[4].paragraphs[1]",
-      "claim_text": "L’organisation cesse d’être ce qui empêche de décider rationnellement : elle devient ce qui rend la décision possible",
+      "claim_text": "L’organisation cesse d’être ce qui empêche de décider rationnellement : elle devient ce qui rend la décision possible à des êtres dont aucun, seul, ne tiendrait le problème entier.",
       "supports": [
         {
           "id": "SUP-35aca64e66ec8127",
@@ -1568,32 +1562,18 @@
           "path": "$.evidence.mechanism[7]",
           "access": "n/a",
           "text": "7. EFFET AU NIVEAU ORGANISATIONNEL (p. 354). « it is now clear that the elaborate organizations that human beings have constructed in the modern world to carry out the work of production and government can only be understood as machinery for coping with the limits of man's abilities to comprehend and compute in the face of complexity and uncertainty. » L'organisation n'est pas un obstacle à la rationalité : elle en est l'appareillage."
-        }
-      ]
-    },
-    {
-      "claim_id": "C073",
-      "locator": "sections[4].paragraphs[1]",
-      "claim_text": "à des êtres dont aucun, seul, ne tiendrait le problème entier",
-      "supports": [
+        },
         {
           "id": "SUP-9806fe22fa49e6d0",
           "origin": "evidence:evidence.primary-reading.json",
           "path": "$.evidence.mechanism[6]",
           "access": "n/a",
           "text": "6. LES TROIS PROCÉDÉS QUI RENDENT LE PROBLÈME TRAITABLE (p. 353-354). « Several procedures of rather general applicability and wide use have been discovered that transform intractable decision problems into tractable ones. » Simon en nomme trois : (a) « to look for satisfactory choices instead of optimal ones » ; (b) « to replace abstract, global goals with tangible subgoals, whose achievement can be observed and measured » ; (c) « to divide up the decision-making task among many specialists, coordinating their work by means of a structure of communications and authority relations ». Puis : « All of these, and others, fit the general rubric of “bounded rationality” » (p. 354). Le troisième procédé est celui qu'on oublie : c'est lui qui fait de l'organisation elle-même un dispositif de rationalité limitée."
-        },
-        {
-          "id": "SUP-35aca64e66ec8127",
-          "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.mechanism[7]",
-          "access": "n/a",
-          "text": "7. EFFET AU NIVEAU ORGANISATIONNEL (p. 354). « it is now clear that the elaborate organizations that human beings have constructed in the modern world to carry out the work of production and government can only be understood as machinery for coping with the limits of man's abilities to comprehend and compute in the face of complexity and uncertainty. » L'organisation n'est pas un obstacle à la rationalité : elle en est l'appareillage."
         }
       ]
     },
     {
-      "claim_id": "C074",
+      "claim_id": "C069",
       "locator": "sections[4].paragraphs[2]",
       "claim_text": "tant que l’optimum sert d’étalon, une décision s’évalue à son résultat ; dès qu’on regarde comment elle a été prise, c’est le processus qui devient l’objet",
       "supports": [
@@ -1612,16 +1592,16 @@
           "text": "Acquis et non contesté par les sources consultées : (1) LA PATERNITÉ. Le terme et le concept sont de Simon seul ; la première occurrence imprimée est datée de Models of Man (1957, p. 198) par Klaes & Sent 2005, reprise sans réserve par Wheeler (SEP 2024) et Barros (2010). Aucune source examinée n'attribue le concept à March ni ne le décrit comme collectif. (2) LA CHRONOLOGIE INTERNE : contenu du satisficing en 1955, terme « satisficing » en 1956, terme « bounded rationality » en 1957, « rationalité procédurale » en 1976 (Barros 2010 ; Gouin & Harguindéguy 2009 concordent sur 1955 et 1957, et sur 1976 pour la rationalité procédurale). (3) CE QUE LE CONCEPT DÉPLACE : l'objet du jugement de rationalité passe du RÉSULTAT au PROCESSUS — « il ne s'agit plus d'évaluer la décision (en tant que résultat) à l'aune d'un critère objectif d'optimalité […] mais de comprendre le processus de prise de décision » (Gouin & Harguindéguy 2009, p. 3), ce que Barros formule comme le passage de la rationalité substantielle à la rationalité procédurale. (4) QUE CE N'EST PAS UNE THÉORIE DE L'IRRATIONALITÉ : Gigerenzer 2004, Gouin & Harguindéguy 2009 et Wheeler 2024 concordent, et aucune source consultée ne soutient l'inverse. (5) LE STATUT CANONIQUE DU CONCEPT : installé au cœur de la discipline économique dès la fin des années 1980 (Klaes & Sent 2005, p. 45, cité par Barros) ; Models of Bounded Rationality (MIT Press, 1997) totalise 816 citations dans Crossref (relevé d'août 2026) et l'entrée « Bounded Rationality » du New Palgrave signée Simon 420 citations pour l'édition de 1990."
         },
         {
-          "id": "SUP-e36c0c17a34825bd",
+          "id": "SUP-daf5abf704c6286b",
           "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.mechanism[13]",
+          "path": "$.evidence.mechanism[14]",
           "access": "n/a",
-          "text": "13. DESCENTE AU NIVEAU DES MICRO-PROCESSUS (p. 362, information processing psychology, Newell & Simon 1972). « Information processing theories envisage problem solving as involving very selective search through problem spaces that are often immense. Selectivity, based on rules of thumb or “heuristics”, tends to guide the search into promising regions, so that solutions will generally be found after search of only a tiny part of the total space. Satisficing criteria terminate search when satisfactory problem solutions have been found. » Deux organes distincts : les heuristiques ORIENTENT la recherche, les critères de satisficing l'ARRÊTENT."
+          "text": "14. CONSÉQUENCE THÉORIQUE — LA RATIONALITÉ DEVIENT PROCÉDURALE (p. 363). « choice is not determined uniquely by the objective characteristics of the problem situation, but depends also on the particular heuristic process that is used to reach the decision. It would appear, therefore, that a model of process is an essential component in any positive theory of decision making that purports to describe the real world, and that the neoclassical ambition of avoiding the necessity for such a model is unrealizable (Simon, 1978a). » Le couple est nommé p. 351 : « Both areas of inquiry are concerned primarily with procedural rather than substantive rationality (Simon, 1978a). »"
         }
       ]
     },
     {
-      "claim_id": "C075",
+      "claim_id": "C070",
       "locator": "sections[4].paragraphs[2]",
       "claim_text": "Gouin et Harguindéguy le formulent ainsi : « il ne s’agit plus d’évaluer la décision (en tant que résultat) à l’aune d’un critère objectif d’optimalité » mais « de comprendre le processus de prise de décision et de saisir le raisonnement à l’œuvre »",
       "supports": [
@@ -1649,21 +1629,49 @@
       ]
     },
     {
-      "claim_id": "C076",
+      "claim_id": "C071",
       "locator": "sections[4].paragraphs[2]",
-      "claim_text": "Le choix, écrit Simon, ne dépend pas seulement des caractéristiques objectives de la situation, mais aussi du procédé par lequel on y est parvenu",
+      "claim_text": "Le choix, écrit Simon, « is not determined uniquely by the objective characteristics of the problem situation »",
       "supports": [
         {
-          "id": "SUP-e36c0c17a34825bd",
+          "id": "SUP-daf5abf704c6286b",
           "origin": "evidence:evidence.primary-reading.json",
-          "path": "$.evidence.mechanism[13]",
+          "path": "$.evidence.mechanism[14]",
           "access": "n/a",
-          "text": "13. DESCENTE AU NIVEAU DES MICRO-PROCESSUS (p. 362, information processing psychology, Newell & Simon 1972). « Information processing theories envisage problem solving as involving very selective search through problem spaces that are often immense. Selectivity, based on rules of thumb or “heuristics”, tends to guide the search into promising regions, so that solutions will generally be found after search of only a tiny part of the total space. Satisficing criteria terminate search when satisfactory problem solutions have been found. » Deux organes distincts : les heuristiques ORIENTENT la recherche, les critères de satisficing l'ARRÊTENT."
+          "text": "14. CONSÉQUENCE THÉORIQUE — LA RATIONALITÉ DEVIENT PROCÉDURALE (p. 363). « choice is not determined uniquely by the objective characteristics of the problem situation, but depends also on the particular heuristic process that is used to reach the decision. It would appear, therefore, that a model of process is an essential component in any positive theory of decision making that purports to describe the real world, and that the neoclassical ambition of avoiding the necessity for such a model is unrealizable (Simon, 1978a). » Le couple est nommé p. 351 : « Both areas of inquiry are concerned primarily with procedural rather than substantive rationality (Simon, 1978a). »"
+        },
+        {
+          "id": "SUP-01c086c1ea588e4c",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.translation_notes[2].note",
+          "access": "n/a",
+          "text": "Le couple est employé dans le texte lu SANS Y ÊTRE DÉFINI : « Both areas of inquiry are concerned primarily with procedural rather than substantive rationality (Simon, 1978a) » (Nobel, p. 351). Simon renvoie à deux textes non consultés ici : « From substantive to procedural rationality » (in S. J. Latsis dir., Method and Appraisal in Economics, Cambridge UP, 1976) et « Rationality as process and as product of thought », American Economic Review 68 (1978), p. 1-16. Ce que le texte lu établit du contenu de l'opposition, sans le mot : « choice is not determined uniquely by the objective characteristics of the problem situation, but depends also on the particular heuristic process that is used to reach the decision » (p. 363). LACUNE DÉCLARÉE : la définition du couple n'est pas dans ma source ; ne pas la reconstituer de mémoire."
         }
       ]
     },
     {
-      "claim_id": "C077",
+      "claim_id": "C072",
+      "locator": "sections[4].paragraphs[2]",
+      "claim_text": "il dépend aussi du procédé heuristique par lequel on est parvenu à la décision",
+      "supports": [
+        {
+          "id": "SUP-daf5abf704c6286b",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[14]",
+          "access": "n/a",
+          "text": "14. CONSÉQUENCE THÉORIQUE — LA RATIONALITÉ DEVIENT PROCÉDURALE (p. 363). « choice is not determined uniquely by the objective characteristics of the problem situation, but depends also on the particular heuristic process that is used to reach the decision. It would appear, therefore, that a model of process is an essential component in any positive theory of decision making that purports to describe the real world, and that the neoclassical ambition of avoiding the necessity for such a model is unrealizable (Simon, 1978a). » Le couple est nommé p. 351 : « Both areas of inquiry are concerned primarily with procedural rather than substantive rationality (Simon, 1978a). »"
+        },
+        {
+          "id": "SUP-01c086c1ea588e4c",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.translation_notes[2].note",
+          "access": "n/a",
+          "text": "Le couple est employé dans le texte lu SANS Y ÊTRE DÉFINI : « Both areas of inquiry are concerned primarily with procedural rather than substantive rationality (Simon, 1978a) » (Nobel, p. 351). Simon renvoie à deux textes non consultés ici : « From substantive to procedural rationality » (in S. J. Latsis dir., Method and Appraisal in Economics, Cambridge UP, 1976) et « Rationality as process and as product of thought », American Economic Review 68 (1978), p. 1-16. Ce que le texte lu établit du contenu de l'opposition, sans le mot : « choice is not determined uniquely by the objective characteristics of the problem situation, but depends also on the particular heuristic process that is used to reach the decision » (p. 363). LACUNE DÉCLARÉE : la définition du couple n'est pas dans ma source ; ne pas la reconstituer de mémoire."
+        }
+      ]
+    },
+    {
+      "claim_id": "C073",
       "locator": "sections[4].paragraphs[2]",
       "claim_text": "Deux organisations placées dans des conditions identiques peuvent donc, si elles ne décident pas de la même façon, se conduire différemment",
       "supports": [
@@ -1684,7 +1692,7 @@
       ]
     },
     {
-      "claim_id": "C078",
+      "claim_id": "C074",
       "locator": "sections[4].paragraphs[2]",
       "claim_text": "et prévoir ce qu’elles feront demande de savoir comment elles décident",
       "supports": [
@@ -1696,6 +1704,13 @@
           "text": "15. CONSÉQUENCE ORGANISATIONNELLE — LE JEU (« slack ») DÉCOUPLE L'ORGANISATION DE SON ENVIRONNEMENT (p. 365). « Since the firm may operate very far from any optimum, the slack serves as a buffer between the environment and the firm's decisions. Responses to environmental events can no longer be predicted simply by analysing the “requirements of the situation,” but depend on the specific decision processes that the firm employs. » Simon attribue la notion aux modèles de Cyert-March et de Leibenstein (p. 365), il ne se l'attribue pas."
         },
         {
+          "id": "SUP-0875f2bb8034b428",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.conditions.intensified_by[2]",
+          "access": "n/a",
+          "text": "La présence de slack organisationnel, qui découple la réponse des « requirements of the situation » et la rend dépendante des procédures propres à la firme (p. 365)."
+        },
+        {
           "id": "SUP-a7d52dc61af59ae5",
           "origin": "evidence:evidence.primary-reading.json",
           "path": "$.evidence.mechanism[16]",
@@ -1705,6 +1720,6 @@
       ]
     }
   ],
-  "estimated_tokens": 50542,
+  "estimated_tokens": 51518,
   "status": "READY"
 }
