@@ -1,22 +1,22 @@
 {
   "protocol_version": 1,
   "concept_id": "garbage-can-model",
-  "candidate_sha256": "f22872ee6f5e43e229188b2ba98c080c24f9d4f2f03d74e56fba5fd48dfa4e58",
+  "candidate_sha256": "ed9a4e2ccaa34de7c62389816e5116a59ccd1ddb893cd9f0a0f85230443aef2e",
   "verdict": "FACTCHECK_FAIL",
-  "claims": 66,
-  "supported": 64,
+  "claims": 71,
+  "supported": 69,
   "failed": 2,
   "structural_errors": [],
   "failures": [
     {
-      "claim_id": "C001",
+      "claim_id": "C035",
       "verdict": "TOO_STRONG",
-      "reason": "Le seul support est un pointeur de tiers (Gibson 2012 renvoyant a CMO 1972, p. 1) que la fiche de lecture declare explicitement non verifie (« Si ce pointeur est exact », « c'est un tiers qui parle »). Il porte en outre sur la presence intermittente des proprietes de l'anarchie organisee, non sur la frequence de la scene decrite ; le texte lecteur supprime l'intermediaire et l'incertitude et pose une generalite empirique non couverte."
+      "reason": "Les supports n'etablissent que « Only a few decisions solve problems. Most decisions are made by oversight ». Aucun support resolu ne definit oversight, et le dossier signale ailleurs que la definition technique des etiquettes n'a pas pu etre verifiee : la glose « sans que le probleme ait ete traite » ajoute, a l'interieur du resume attribue a Fioretti & Lomi, un contenu que les supports n'autorisent pas (non resolu n'equivaut pas a non traite)."
     },
     {
-      "claim_id": "C022",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu ne decrit l'occasion de choix comme une poubelle ou les participants presents deversent problemes et solutions : les supports etablissent seulement que « garbage can » est un simile commode pour des combinaisons bizarres d'enjeux et que les elements se lient par simultaneite. Cette image est celle de l'article de 1972, dont l'acces est metadata-only dans le dossier ; le contenu du simile n'est donc pas etabli."
+      "claim_id": "C050",
+      "verdict": "TOO_STRONG",
+      "reason": "Les deux supports resolus (« temporal order / temporal sorting » et mechanism[5]) n'enoncent pas ce qui relie un probleme a une solution. La seule formulation des auteurs sur ce point, ailleurs dans le dossier, est hedgee : lies « partly by their simultaneous arrivals ». Le claim transforme un lien partiel en identification exclusive (« ce qui relie ... est leur copresence »)."
     }
   ]
 }
