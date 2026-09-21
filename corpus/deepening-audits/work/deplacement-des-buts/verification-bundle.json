@@ -1,8 +1,8 @@
 {
   "protocol_version": 1,
   "concept_id": "deplacement-des-buts",
-  "candidate_sha256": "a4a2a0fffccfeac4edd182b237a5eb4e1ff5b578ee2258faeb7ba1662bc40444",
-  "map_sha256": "ad17eef91fc69f52751b40e991fcf0186984fee894b2efa312b551cf58a15dbe",
+  "candidate_sha256": "0f8fce9e56c2710812504c12fa121eeb789b1ad0de0742ebb2788e4199330136",
+  "map_sha256": "50d36f6bc1c9268df7368c7d65ebff6be03179cee2547f3d8092fbac6884b388",
   "claims": [
     {
       "claim_id": "C001",
@@ -273,7 +273,7 @@
     {
       "claim_id": "C011",
       "locator": "sections[0].paragraphs[0]",
-      "claim_text": "Écrire la règle, l’appliquer de la même façon à tout le monde et former chacun à la respecter élimine cette part d’arbitraire.",
+      "claim_text": "Écrire la règle, l’appliquer de la même façon à tout le monde et former chacun à la respecter réduit cette part d’arbitraire.",
       "supports": [
         {
           "id": "SUP-dae828baa8a376a7",
@@ -315,7 +315,7 @@
     {
       "claim_id": "C013",
       "locator": "sections[0].paragraphs[1]",
-      "claim_text": "il faut un degré inhabituel de conformité, une réponse fiable de chacun",
+      "claim_text": "Il ne suffit pas que les règles existent : il faut un degré inhabituel de conformité, une réponse fiable de chacun",
       "supports": [
         {
           "id": "SUP-bc7dba10cbaac7d1",
@@ -330,6 +330,13 @@
           "path": "$.evidence.conditions.appears_when[0]",
           "access": "n/a",
           "text": "L'organisation exige « a high degree of reliability of behavior, an unusual degree of conformity with prescribed patterns of action » (p. 562). Sans exigence de fiabilité, pas de discipline à surdoser."
+        },
+        {
+          "id": "SUP-23945b4bcb9525cc",
+          "origin": "evidence:evidence.primary-reading.json",
+          "path": "$.evidence.mechanism[3]",
+          "access": "n/a",
+          "text": "3. La fiabilité ne s'obtient pas par la règle seule, mais par le sentiment (p. 562). « Discipline can be effective only if the ideal patterns are buttressed by strong sentiments which entail devotion to one's duties, a keen sense of the limitation of one's authority and competence, and methodical performance of routine activities. The efficacy of social structure depends ultimately upon infusing group participants with appropriate attitudes and sentiments. » C'est le maillon décisif : la règle doit être investie affectivement pour tenir."
         }
       ]
     },
@@ -1664,6 +1671,6 @@
       ]
     }
   ],
-  "estimated_tokens": 42615,
+  "estimated_tokens": 42856,
   "status": "READY"
 }
