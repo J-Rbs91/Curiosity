@@ -1223,6 +1223,63 @@ script affiche**. Un lot qui pose une question de volume à une revue doit compt
 `sections` lui-même. Et si le script gagnait à afficher les deux chiffres séparément, c'est une
 correction d'une ligne qui éviterait la prochaine.
 
+## D'où ne vient pas la surdéclaration, constaté après la fusion
+
+**Le serveur `documentary` a répondu une quatrième fois**, dans le tour même de la notification de
+fusion de la [#115](https://github.com/J-Rbs91/Curiosity/pull/115) — quatrième occurrence, **quatrième
+fois après une clôture**, jamais pendant un lot. La règle ne change pas : on l'essaie au lever, en un
+appel, et le lot se dimensionne sur ce que cet appel rend.
+
+Il a été essayé plutôt que cru. `verify_reference` sur le DOI de Merton 1940, source primaire de
+`deplacement-des-buts` traitée cette nuit, rend `resolved: true`, `conclusive: true`,
+`mismatches: []`, avec titre, année et revue conformes. **C'est une confirmation indépendante d'une
+carte publiée dans le lot qui vient d'être fusionné**, obtenue par un outil que le lot n'a pas eu.
+
+**Mais l'observation utile à ce chantier est ailleurs, dans la forme de sa réponse.** Le
+`corpus_fragment` que le serveur propose pour insertion dans une fiche porte :
+
+```json
+"consulted": "metadata-only"
+```
+
+**L'outil d'acquisition met donc déjà la bonne valeur, et la met fail-closed** : il vient de résoudre
+une notice, il ne déclare que la notice. La surdéclaration `full-text` ne vient pas de lui.
+
+**Cela restreint utilement où chercher la cause, et l'historique a fait le reste** — cette piste est
+close, une reprise n'a pas à la rouvrir.
+
+**Les deux enregistrements portent leur `full-text` fautif depuis leur tout premier commit.** Ni
+`rationalite-limitee` ni `deplacement-des-buts` n'a vu son `consulted` relevé plus tard : les deux
+fiches entrent au dépôt en `53dd410` (22 août 2026, [#51](https://github.com/J-Rbs91/Curiosity/pull/51))
+avec Cozic, Selznick et Warner & Havens **déjà déclarés `full-text`**. Un `git log -S` sur
+l'identifiant de chaque source ne rend que ce commit : la valeur n'a jamais été modifiée depuis.
+
+**Et le dossier qui les contredit entre dans le même commit.** `corpus/evidence/rationalite-limitee/`
+et `corpus/evidence/deplacement-des-buts/` sont créés par `53dd410` eux aussi. L'enregistrement et
+la preuve ont donc été écrits ensemble, **et ils se contredisaient déjà en arrivant**.
+
+**Trois conséquences pour l'étape 2 du chantier.**
+
+1. **Ce n'est pas une dérive**, ni un accès obtenu plus tard qu'on aurait oublié de reporter, ni un
+   agent qui relève un niveau en ajoutant un `locator`. C'est l'état initial.
+2. **Le défaut est contemporain de l'écriture de la carte**, pas de son entretien. Il se cherche dans
+   l'étape qui composait les `sources` d'une fiche à partir d'une lecture.
+
+   **Et ce n'est pas un mauvais versement, c'est un travers persistant — mesuré, pas supposé.** Les
+   cartes candidates du balayage ne se concentrent pas dans `53dd410` : elles s'échelonnent du
+   22 août au 5 septembre, sur au moins sept commits distincts (`53dd410`, `d54bd6d`, `15f09af`,
+   `8e4abe0`, `3733f1f`, `e264eaf`, `f7ccf98`). **Huit sur vingt-six viennent du versement initial,
+   soit 31 %, quand ce versement fournit 57 des 136 fiches validées du dépôt, soit 42 %** : les
+   candidates y sont donc *sous*-représentées. Le geste s'est répété pendant toute la période
+   d'écriture des cartes, sous plusieurs lots et plusieurs rédacteurs.
+
+   **Conséquence pratique** : il ne suffira pas de reprendre un lot daté. C'est la règle d'écriture du
+   champ `consulted` qui n'a jamais été tenue, et seul un contrôle mécanique la tiendra — ce qui
+   ramène au correctif n° 1 du chantier.
+3. **Aucun des correctifs proposés plus haut ne devient inutile.** Un défaut d'origine se propage
+   exactement comme un défaut de dérive une fois qu'il est dans le fichier, et c'est le pack qui doit
+   cesser de le croire.
+
 ---
 
 # Ce qui n'est pas un chantier
