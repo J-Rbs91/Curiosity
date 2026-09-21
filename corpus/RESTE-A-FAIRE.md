@@ -972,9 +972,53 @@ dispositif qui l'attrape.
 **Ce que cela dit du signal « pas de répertoire de preuve ».** Il reste peu cher et il reste
 utile, mais il ne mesure pas la santé d'une carte : il mesure ce qu'un audit pourra prouver. Les
 cartes minces donnent des audits pauvres, les cartes épaisses donnent des audits qui trouvent.
-**Il faut donc continuer par les dossiers épais** — quatre restent : `couplage-lache`,
-`deplacement-des-buts`, `garbage-can-model`, `rationalite-limitee`, plus les six qui portent une
-réception à côté d'un `lecture.json`.
+**Il faut donc continuer par les dossiers épais** — quatre restaient le 20 septembre :
+`couplage-lache`, `deplacement-des-buts`, `garbage-can-model`, `rationalite-limitee`, plus les six
+qui portent une réception à côté d'un `lecture.json`.
+
+## L'état de la couverture au 21 septembre 2026, et ce que le lot du 21 a soldé
+
+**Le lot du 21 a pris les trois derniers dossiers épais** que la section ci-dessus nommait :
+`rationalite-limitee`, `deplacement-des-buts`, `garbage-can-model`. Le quatrième nom de la liste,
+`couplage-lache`, **n'était pas éligible** : c'est la seule fiche non validée du corpus, elle n'a
+donc pas d'approfondissement, et rien à auditer. C'est une erreur de la liste du 20 septembre,
+corrigée ici. Elle relève du chantier B, pas de celui-ci.
+
+**Les trois ont rendu le même résultat que le lot du 20, une troisième fois : aucun `PASS`
+pédagogique.** Deux `REVISE`, un `REWRITE`, et chacune portait un défaut que son propre dossier
+contredisait. Les trois se sont closes en `rewritten` / `FACTCHECK_PASS` / `ACCEPT`, au prix de
+deux boucles de correction sur deux d'entre elles.
+
+**Le décompte, à recalculer plutôt qu'à recopier** (le script est en dix lignes : SHA du deepening
+et du validated contre les deux hashes du rapport) :
+
+| | cartes |
+|---|---:|
+| approfondissements | 136 |
+| rapports v3 à jour | **18** |
+| non auditées, **avec** dossier de preuve | **102** |
+| non auditées, **sans** dossier de preuve | **16** |
+
+**Le signal « pas de répertoire de preuve » a donc épuisé ce qu'il pouvait désigner d'utile.** Les
+seize cartes sans dossier restent la couche la moins chère à auditer et la moins concluante :
+l'audit y juge la fidélité sur un résumé, ce que le protocole de l'auditeur lui interdit désormais
+de faire en silence. Les voici, pour qu'un lot qui les prend sache ce qu'il prend —
+`absorber-les-fluctuations-de-commandes`, `cause-de-hasard-et-cause-assignable`,
+`comportement-contre-intuitif`, `court-terme-contre-long-terme`,
+`fragilite-d-un-ordonnancement-optimal`, `le-trouble-vient-des-politiques`,
+`paradigme-source-du-systeme`, `penalite-de-rupture`, `points-de-levier`,
+`regle-de-commande-a-deux-niveaux`, `regle-lineaire-de-decision`,
+`seuil-d-insatisfaction-salariale`, `systeme-concret-systeme-construit`, `systemographie`,
+`transposition-analogique`, `trois-sigmas-arbitrage-de-cout`.
+
+**Les 102 cartes à dossier sont désormais le vrai chantier, et il n'a plus de signal pour
+l'ordonner.** Trois lots ont montré que l'épaisseur du dossier prédit ce qu'un audit trouvera, pas
+la santé de la carte ; l'épaisseur ne classe donc plus rien une fois les dossiers épais épuisés. Une
+suite honnête consisterait à **tirer au hasard** dans les 102 pendant quelques lots et à mesurer le
+taux de défaut, plutôt qu'à inventer un troisième signal dont on ne saurait pas s'il sélectionne ou
+s'il se trompe. Six lots ont donné dix-huit rapports ; à ce rythme, la couverture complète demande
+une quarantaine de lots, et **savoir quel est le taux de défaut réel vaut plus que l'ordre dans
+lequel on le découvre**.
 
 ---
 
