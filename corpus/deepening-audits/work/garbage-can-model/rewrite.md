@@ -251,3 +251,124 @@ permet pas d'affirmer.
 Le SHA de l'approfondissement est de nouveau invalidé : l'orchestrateur doit reprendre à
 `PREPARE` puis relancer le cycle de fact-check complet. Aucune validation, aucun
 `FACTCHECK_PASS` n'est prononcé ici.
+
+---
+
+## Boucle de correction 2 — `FACTCHECK_FIX` (gate du second tour)
+
+Entrée : `factcheck-gate.json` du second tour — `FACTCHECK_FAIL`, 71 claims, 69 soutenus,
+2 en échec, aucune erreur structurelle. Les deux claims fautifs du premier tour (C002bis /
+lead et C022) ne réapparaissent pas : les corrections de la boucle 1 tiennent. Les deux
+nouveaux échecs, C035 et C050, sont tous deux `TOO_STRONG` et relèvent de la même espèce que
+les précédents — **une modalité de l'auteur qui disparaît en passant en français**.
+
+Seconde et dernière boucle autorisée. Le périmètre a donc été tenu strictement aux deux
+spans désignés : aucun autre mot du fichier n'est touché.
+
+### C050 — `sections[3].paragraphs[1]`, offsets 143-220 — TOO_STRONG — opération : **borner**
+
+Texte fautif : « ce qui relie un problème à une solution est leur coprésence ».
+
+Motif du gate : les deux supports résolus sur ce claim — `SUP-6707febbb6c5d80f`
+(« temporal order / temporal sorting ») et `SUP-e888b90d7b1c938c` (mechanism[5], la citation
+de CMO 2012 p. 26 sur le `temporal understanding of events`) — n'énoncent pas ce qui relie un
+problème à une solution. Ils établissent le principe d'ordonnancement temporel et le cadrage
+de la décision, pas l'identité du lien. La seule formulation des auteurs sur ce point précis
+se trouve ailleurs dans le dossier, dans `mechanism[4]` de
+`evidence.primary-reading.json` : « L'appariement se fait *partly by their simultaneous
+arrivals* » (CMO 2012, p. 22), repris verbatim dans
+`$.evidence.best_quotes._alternatives_verbatim_meme_source` : « where problems and solutions
+arrive at times exogenously determined and **are linked partly by their simultaneous
+arrivals** ».
+
+Le `partly` est un élément à reporter, non une précaution de style : il ouvre la place, chez
+les auteurs eux-mêmes, aux autres déterminants qu'ils énumèrent par ailleurs — la structure
+d'accessibilité des choix (mechanism[7]), la rareté de l'attention, la concurrence entre
+arènes. Une identification exclusive (« est leur coprésence ») ferme cette place et fait dire
+au modèle que la simultanéité épuise le lien.
+
+Correction, insertion de deux mots à l'intérieur du span :
+
+> Il est temporel : ce qui relie un problème à une solution est **en partie** leur
+> coprésence, et la façon dont une décision se trouve cadrée peut être déterminée, dans une
+> mesure considérable, par le déroulement dans le temps de la participation et de l'attention.
+
+Le bornage rend exactement le `partly` des auteurs, dans les mêmes termes que ceux déjà
+employés — et déjà soutenus — en `sections[0].paragraphs[1]` : « les problèmes et les
+solutions arrivent à des moments fixés du dehors et se trouvent **reliés en partie** par la
+simultanéité de leur arrivée ». Le texte devient donc cohérent avec lui-même sur ce point :
+la section 3 ne renforce plus ce que la section 0 avait correctement hedgé.
+
+Aucune affirmation nouvelle n'est introduite : « en partie » ne nomme pas les autres
+déterminants, il se borne à ne plus les exclure. Le delta du paragraphe — l'ordre dont
+parlent les auteurs est temporel et non conséquentiel — est intact, et la seconde moitié de
+la phrase, qui porte ce delta et que le gate soutient, est inchangée mot pour mot.
+
+### C035 — `sections[2].paragraphs[1]`, offsets 167-330 — TOO_STRONG — opération : **retirer**
+
+Texte fautif : « résument ainsi la conclusion du calcul de 1972 : peu de décisions résolvent
+des problèmes, et la plupart se font par oversight, **sans que le problème ait été traité** ».
+
+Motif du gate : les trois supports rattachés (`SUP-87c4e8bff7590c12`,
+`SUP-db77e52815f18fe9`, `SUP-7f75bdef6ae54267`, tous issus de
+`evidence.reception.json`) n'établissent que la phrase de Fioretti & Lomi, §6.1 : « Only a few
+decisions solve problems. Most decisions are made by oversight ». Aucun support résolu ne
+définit `oversight`. La glose finale ajoute donc, **à l'intérieur d'un résumé explicitement
+attribué à Fioretti & Lomi**, un contenu que ces auteurs n'écrivent pas à cet endroit — ce
+qui est le défaut le plus coûteux de tous, puisque l'attribution en fait porter le poids à une
+source nommée.
+
+Sur le fond, la glose franchit aussi un pas logique : « non résolu » n'équivaut pas à « non
+traité ». Une décision peut se prendre sur une occasion de choix où le problème a été posé,
+discuté, puis dépassé par l'issue, sans être résolu pour autant. Et le dossier signale par
+ailleurs que la définition technique de ces étiquettes n'a pas pu être vérifiée : le mot
+`oversight` ne peut pas être glosé à partir de ce qui est ouvert ici.
+
+Correction, suppression de la glose seule :
+
+> Guido Fioretti et Alessandro Lomi, qui ont proposé en 2008 une représentation du modèle
+> sous forme de simulation à base d'agents, résument ainsi la conclusion du calcul de 1972 :
+> peu de décisions résolvent des problèmes, et la plupart se font par oversight.
+
+Quand un mot ne peut pas être glosé dans les limites du dossier, il vaut mieux ne pas le
+gloser que de le gloser au-delà des supports. Le lecteur n'est pas laissé sans appui pour
+autant, et ce sans qu'aucun mot soit ajouté : la fin du même paragraphe, inchangée et
+soutenue, donne les rendus français attestés de la série d'issues — Musselin, « par
+résolution, survol ou glissement » ; Friedberg, « par inattention, par déplacement et par
+résolution des problèmes ». Le terme anglais reste ainsi adossé à deux traductions publiées,
+présentées pour ce qu'elles sont — un vocabulaire non fixé — au lieu d'une définition que
+personne dans le dossier ne fournit.
+
+Le delta du paragraphe est conservé entier : il portait la **part** de chaque issue et
+l'inversion de l'ordre de grandeur attendu, non la définition d'`oversight`. La phrase
+suivante, qui maintient l'attribution (« Ce sont eux qui parlent, non l'article de 1972 »),
+est intacte.
+
+### Contrôles de la boucle 2
+
+- Une seule opération autorisée par claim : C050 borné, C035 retiré. Aucune réattribution,
+  aucun marquage d'interprétation n'a été nécessaire.
+- Aucune affirmation nouvelle sur le monde n'est introduite. C050 ne fait que reporter le
+  `partly` des auteurs ; C035 ne fait que soustraire.
+- Aucun support `SUP-...` n'a été inventé ; aucun artefact de fact-check n'a été édité à la
+  main.
+- Périmètre : `git diff --stat` donne `1 file changed, 2 insertions(+), 2 deletions(-)` sur
+  `corpus/deepenings/garbage-can-model.json`. Les 69 claims soutenus hors de ces deux spans
+  sont littéralement inchangés.
+- Deltas : relecture des quatorze paragraphes. Aucun paragraphe ne perd son delta, aucun ne
+  se met à doubler un voisin, aucune section ne reprend principalement une section
+  précédente. Les deux corrections n'affectent pas la progression : elles retirent une glose
+  et ajoutent un bornage.
+- Frontières documentaires : vérifié qu'aucune autre phrase du texte ne glose `oversight`
+  ni ne réaffirme la coprésence comme lien exclusif — le seul autre passage sur la
+  simultanéité, en `sections[0].paragraphs[1]`, était déjà borné.
+- `limits` n'est pas modifié et rien n'en est remonté comme bloc visible ; le texte lecteur
+  reste `lead` + `sections`.
+- `npm run corpus:deepen -- --check --only=garbage-can-model` : **PASS** (1 864 mots, rien
+  projeté ; 1 869 avant correction).
+
+Le SHA du fichier a changé (`cb685513886b345c93186b60c295999bcc5da5c708cef1a86e2cca455700aebb`,
+contre `ed9a4e2ccaa34de7c62389816e5116a59ccd1ddb893cd9f0a0f85230443aef2e` dans le pack du
+second tour) : l'ancien fact-check est invalidé de droit. L'orchestrateur doit reprendre à
+`PREPARE`, reconstruire le pack, puis relancer mapping, entailment et gate. Aucune validation
+n'est prononcée ici : ni `ACCEPT`, ni `FACTCHECK_PASS`.
