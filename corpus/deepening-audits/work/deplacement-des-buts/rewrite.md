@@ -1,12 +1,13 @@
 concept : deplacement-des-buts
-mode    : REVISE, puis FACTCHECK_FIX (boucle 1 sur 2)
+mode    : REVISE, puis FACTCHECK_FIX (boucles 1 et 2 sur 2 — dernière boucle autorisée)
 contrôle mécanique : `npm run corpus:deepen -- --check --only=deplacement-des-buts` → PASS,
 1 717 mots au total (1 496 mots de texte lecteur, 221 mots de `limits`, qui ne s'affichent pas),
 aucun avertissement de citation.
 
-La première partie de ce compte rendu décrit la révision auditée. La dernière section,
-« BOUCLE DE CORRECTION 1 (FACTCHECK_FIX) », décrit les quatre corrections appliquées après le
-`FACTCHECK_FAIL` déterministe, et c'est elle qui décrit l'état actuel du fichier.
+La première partie de ce compte rendu décrit la révision auditée. « BOUCLE DE CORRECTION 1
+(FACTCHECK_FIX) » décrit les quatre corrections appliquées après le premier `FACTCHECK_FAIL`
+déterministe. La dernière section, « BOUCLE DE CORRECTION 2 (FACTCHECK_FIX) », décrit la
+correction unique appliquée après le second, et c'est elle qui décrit l'état actuel du fichier.
 
 SOURCES RELUES
 
@@ -233,3 +234,65 @@ restitutives, la quatrième est un déplacement de modal.
 Le fichier a de nouveau changé : le SHA `3bb4481436094b5397c4f963cc4a6d851c1e73d5159f10cd595a1f14302f724b`
 contrôlé par ce gate est invalide, et l'orchestrateur doit reprendre à `PREPARE`. Aucun
 `FACTCHECK_PASS` n'est déclaré ici. Une seconde boucle de correction reste disponible.
+
+BOUCLE DE CORRECTION 2 (FACTCHECK_FIX)
+
+Entrée : `factcheck-gate.json` du second tour (verdict `FACTCHECK_FAIL`, 77 claims, 76 soutenus,
+1 en échec, `structural_errors` vide), `verification.json` pour le motif du claim fautif,
+`claim-map.json` pour sa localisation par locator et offsets. Les quatre corrections de la boucle 1
+sont tenues pour acquises : aucune n'a été rouverte. Relus avant correction : `FACTCHECK_PROTOCOL.md`,
+le fichier `corpus/deepenings/deplacement-des-buts.json` en entier, et le répertoire
+`corpus/evidence/deplacement-des-buts/` listé de nouveau (`evidence.primary-reading.json`,
+`evidence.reception.json`, pas de `scouting.json`). Aucune recherche web, aucun fait ajouté de
+mémoire, aucun `SUP-...` fabriqué, aucun artefact de fact-check modifié à la main.
+
+Un seul échec, `TOO_STRONG`, et de la même espèce que les quatre précédents : une modalité de
+l'auteur perdue à la traduction, ici un absolu mis à la place d'une réduction.
+
+1. C011, `sections[0].paragraphs[0]`, offsets 246-372 : BORNER.
+   Claim contrôlé : « Écrire la règle, l’appliquer de la même façon à tout le monde et former
+   chacun à la respecter élimine cette part d’arbitraire. » Les deux supports résolus
+   (`SUP-85286ab8755c0583`, `$.evidence.mechanism[16]`, p. 565-566, et `SUP-dae828baa8a376a7`,
+   `$.evidence.conditions.appears_when[3]`, p. 561) n'attestent qu'une minimisation et une
+   dispense, jamais un effet accompli : « Since functionaries MINIMIZE personal relations and
+   resort to categorization », « The personality pattern of the bureaucrat is nucleated about this
+   NORM of impersonality », et des règles générales et abstraites qui « PRECLUDE the necessity for
+   the issuance of specific instructions for each specific case ». Une norme d'impersonnalité et
+   une minimisation des relations personnelles sont une réduction structurelle de l'arbitraire ;
+   elles ne sont pas sa disparition, et aucun support du dossier ne donne l'élimination pour
+   obtenue. Le verbe « élimine » faisait donc du résultat un absolu.
+   Nouveau : « Écrire la règle, l’appliquer de la même façon à tout le monde et former chacun à la
+   respecter réduit cette part d’arbitraire. »
+   La correction porte sur un mot et un seul, `élimine` → `réduit`, dans le span exact du claim.
+   Aucune affirmation nouvelle n'est introduite, aucune source n'est réattribuée, aucune borne
+   chiffrée n'est ajoutée : le verbe absolu est remplacé par le verbe de degré que les supports
+   autorisent. Le reste du paragraphe, y compris la phrase sur l'efficacité technique qui le
+   referme, est intact mot pour mot.
+
+Rien d'autre n'a été touché dans le fichier : le `git diff` porte sur une seule ligne et une
+seule substitution de mot, et les 76 claims soutenus au second tour sont inchangés lettre pour
+lettre. Les offsets des claims situés après C011 dans ce paragraphe se décalent d'un caractère,
+conséquence mécanique que `PREPARE` recalculera ; ce n'est pas une modification de leur texte.
+
+`limits` : aucune addition. La frontière en cause — le dossier n'atteste qu'une réduction, pas une
+élimination de l'arbitraire — est déjà couverte par `limits[2]`, qui interdit toute affirmation de
+fréquence et signale que l'article ne fournit aucune donnée. Aucune nouvelle frontière utile aux
+agents n'est apparue, et `limits` reste à 221 mots.
+
+Contrôles refaits après correction : le paragraphe garde exactement son delta (la règle écrite
+comme solution au traitement inégal de deux demandes identiques), il ne devient pas redondant avec
+`sections[4].paragraphs[0]`, qui dit la réduction de la relation personnelle du côté de l'usager et
+non du côté de la garantie ; aucune section ne répète une section précédente ; rien de `limits`
+n'est remonté en bloc visible ; le texte reste en deçà des frontières documentaires. Le libellé
+« l'arbitraire que la règle écrite supprime », employé plus haut dans la section « CE QUI A ÉTÉ
+CONSERVÉ » de ce compte rendu, désignait la version auditée : il est à lire désormais comme
+« l'arbitraire que la règle écrite réduit ».
+
+Contrôle mécanique après correction : `npm run corpus:deepen -- --check --only=deplacement-des-buts`
+→ PASS, 1 717 mots, aucun avertissement de citation (le nombre de mots est inchangé, la
+substitution étant mot pour mot).
+
+Le fichier a de nouveau changé : le SHA `a4a2a0fffccfeac4edd182b237a5eb4e1ff5b578ee2258faeb7ba1662bc40444`
+contrôlé par le second gate est invalide, et l'orchestrateur doit reprendre à `PREPARE`. Aucun
+`FACTCHECK_PASS` n'est déclaré ici, et aucune auto-validation : la décision appartient au gate
+déterministe. C'était la seconde et dernière boucle de correction autorisée.
