@@ -1,6 +1,10 @@
 concept : garbage-can-model
-mode    : REWRITE
+mode    : REWRITE, puis FACTCHECK_FIX (boucle 1)
 date    : 2026-09-21
+
+Les sections 1 à 5 documentent la réécriture initiale. La section 6 documente la correction
+appliquée après le `FACTCHECK_FAIL` du gate déterministe sur cette réécriture ; les chiffres de
+volume donnés plus haut sont ceux d'avant correction.
 
 Matière relue avant d'écrire : corpus/deepenings/PROTOCOLE.md, AUDIT_PROTOCOL.md,
 FACTCHECK_PROTOCOL.md ; corpus/deepenings/garbage-can-model.json (version auditée) ;
@@ -166,3 +170,84 @@ delta ; la coprésence n'est démontrée qu'une fois, au lead, et jamais re-dém
 Le texte a changé : le SHA de l'approfondissement est invalidé et tout fact-check antérieur
 avec lui. L'orchestrateur doit reprendre à `PREPARE`. Aucun support `SUP-…` n'a été fabriqué,
 aucun artefact de fact-check n'a été touché, et aucune validation n'est prononcée ici.
+
+## 6. Boucle de correction 1 — FACTCHECK_FIX
+
+Gate lu : `factcheck-gate.json` (verdict `FACTCHECK_FAIL`, candidate_sha256
+`f22872ee…8dfa4e58`, 66 claims, 64 soutenus, 2 en échec, aucune erreur structurelle). Motifs
+détaillés relus dans `verification.json` ; localisation exacte prise dans `claim-map.json`.
+Supports incriminés relus dans `factcheck-pack.json` pour vérifier ce qu'ils portent
+réellement. Aucune recherche, aucun support ajouté, aucun artefact de fact-check modifié.
+
+Les 64 claims soutenus n'ont pas été touchés. Deux phrases ont été modifiées, dans deux
+paragraphes, pour un delta net de neuf mots.
+
+### C001 — `lead[0]`, offsets 549-625 — TOO_STRONG — opération : **retirer**
+
+Texte fautif : « Ce genre de scène est banal dans les organisations où l'on décide en
+réunion ». Le mapper lui avait rattaché `SUP-8d9bfef85e89ca3c`, c'est-à-dire le pointeur de
+Gibson 2012 vers la p. 1 de l'article de 1972. Ce support est doublement inutilisable ici :
+la fiche de lecture le déclare non vérifié en toutes lettres (« Si ce pointeur est exact »,
+« c'est un tiers qui parle »), et il porte de toute façon sur la présence intermittente des
+propriétés de l'anarchie organisée, non sur la fréquence de la scène décrite. §2 de ce
+compte rendu notait que ce pointeur n'entrait pas dans le texte : c'était exact au sens de
+l'attribution explicite, mais la généralité empirique de la phrase n'avait en réalité aucun
+appui dans le dossier.
+
+Aucun bornage honnête n'était possible : réduire à « arrive parfois » laisserait une
+généralité empirique non couverte, et atténuer un pointeur non vérifié ne le rend pas
+utilisable. La proposition a donc été retirée, sans être remplacée par une autre affirmation
+sur le monde. La phrase s'ouvre désormais sur un constat interne au texte : « La scène est
+inventée, mais elle met en évidence le mécanisme dont il sera question ici : … ». Le
+segment suivant, C002 (« ce qui finit par être choisi n'est pas toujours… »), qui portait
+déjà la proposition centrale du lead et que le gate soutient, est conservé mot pour mot. Le
+lead perd donc une caution de fréquence qu'il n'avait pas le droit d'invoquer, et rien
+d'autre : son delta d'apprentissage est intact.
+
+### C022 — `sections[1].paragraphs[1]`, offsets 41-262 — UNSUPPORTED — opération : **borner**
+
+Texte fautif : « Une occasion de choisir fonctionne comme une poubelle où problèmes et
+solutions sont déversés au fur et à mesure, par les participants présents à cet instant, et
+ce qui en sortira dépendra de ce qui s'y trouvait rassemblé. » C'est le contenu de l'image
+de 1972, article `metadata-only` dans ce dossier : sa célébrité ne le rend pas établi, et
+aucun support résolu ne décrit ce que la poubelle représente.
+
+Ce que les supports portent effectivement, le gate le dit lui-même et
+`SUP-eecc76f28b40892f` le cite : « The label ‘garbage can' entered the discussion as a handy
+simile while we discussed observations we had all made repeatedly, that somewhat bizarre
+combinations of issues were often found to be at stake in actual organizational choices »
+(CMO 2012, p. 22). La phrase a donc été ramenée à cette portée, en fusionnant avec la phrase
+suivante (C023, soutenue) qui rendait déjà la première moitié du même passage — fusion
+nécessaire pour ne pas laisser deux phrases consécutives rendre le même matériau :
+
+« L'étiquette, racontent les auteurs, leur est venue en cours de discussion comme une
+comparaison commode pour une observation qu'ils avaient tous faite et refaite : des
+combinaisons d'enjeux passablement bizarres se trouvaient souvent en jeu dans les choix
+réellement opérés par les organisations. Ils ne s'attendaient pas à la voir durer. »
+
+Le texte dit maintenant ce que le simile a servi à nommer, et non ce que la poubelle est
+censée figurer. Rien n'est ajouté qui ne soit dans le support déjà rattaché au claim. La
+phrase d'ouverture du paragraphe (C021, « C'est de ce croisement que vient le nom. ») et la
+suite sur l'instabilité du rendu français (C024-C026) sont inchangées ; le référent du
+« nom » reste porté par la fin du paragraphe (« corbeille à papiers », « mise au panier »,
+« poubelle »). Le paragraphe garde son delta — d'où vient l'étiquette, sur quoi elle a été
+posée, comment le français l'a durcie — et perd seulement une image que le dossier ne
+permet pas d'affirmer.
+
+### Contrôles de la boucle
+
+- Aucune des deux corrections n'introduit d'affirmation nouvelle sur le monde ; la première
+  retire, la seconde ramène à la lettre d'un support déjà rattaché au claim.
+- Aucun autre paragraphe ne reprenait l'image de la poubelle à son compte : vérifié sur les
+  quatre paragraphes contenant le mot. La citation de 2012 en S4.P1 (« La poubelle, en ces
+  termes, dépeint un monde ordonné… ») vient de la source ouverte et est inchangée.
+- Aucun paragraphe ne perd son delta ni ne se met à doubler un paragraphe voisin ; la fusion
+  C022/C023 supprime au contraire un recouvrement.
+- `limits` n'est pas modifié et rien n'en est remonté dans le texte lecteur.
+- `npm run corpus:deepen -- --check --only=garbage-can-model` : PASS (1 869 mots, rien
+  projeté ; 1 878 avant correction).
+- Le diff se limite à deux lignes de `corpus/deepenings/garbage-can-model.json`.
+
+Le SHA de l'approfondissement est de nouveau invalidé : l'orchestrateur doit reprendre à
+`PREPARE` puis relancer le cycle de fact-check complet. Aucune validation, aucun
+`FACTCHECK_PASS` n'est prononcé ici.
