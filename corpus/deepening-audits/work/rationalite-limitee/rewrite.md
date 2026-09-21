@@ -1,5 +1,6 @@
 concept : rationalite-limitee
-mode    : REVISE
+mode    : FACTCHECK_FIX (boucle 1 sur 2) — le compte rendu REVISE ci-dessous reste valable,
+          amendé par la section FACTCHECK_FIX en fin de fichier.
 source de l'audit : corpus/deepening-audits/work/rationalite-limitee/audit.md
 
 Matière lue : PROTOCOLE.md, AUDIT_PROTOCOL.md, FACTCHECK_PROTOCOL.md, corpus/deepenings/rationalite-limitee.json,
@@ -142,4 +143,161 @@ Aucun avertissement de citation : tous les passages entre guillemets de cinq mot
 retrouvent mot pour mot dans l'enregistrement validé ou dans le répertoire de preuve.
 
 Toute modification du texte invalide le SHA : la chaîne doit repartir de PREPARE. Aucune
+auto-validation, aucun FACTCHECK_PASS déclaré ici.
+
+================================================================================
+FACTCHECK_FIX — boucle 1 sur 2
+================================================================================
+
+Entrée : factcheck-gate.json (FACTCHECK_FAIL, 78 claims, 73 soutenus, 5 en échec),
+verification.json pour les motifs, claim-map.json pour localiser les cinq claims par locator et
+offsets. Le gate est l'autorité sur l'échec. Relecture du répertoire
+corpus/evidence/rationalite-limitee/ (evidence.primary-reading.json, evidence.reception.json)
+pour vérifier ce que les supports autorisent réellement. Aucune recherche web, aucun support
+inventé, aucune affirmation nouvelle, aucun paragraphe soutenu réécrit.
+
+Cinq corrections, une par claim en échec, dans les quatre opérations autorisées.
+
+--------------------------------------------------------------------------------
+C002 — lead[0] — TOO_STRONG — opération : RETRAIT
+--------------------------------------------------------------------------------
+avant : « ... pour ne retenir que le meilleur. Personne ne décide ainsi, et disposer de plus de
+        temps n'y changerait rien : même avec tout le temps voulu, personne ne connaît toutes les
+        options ... »
+après : « ... pour ne retenir que le meilleur. Mais personne ne connaît toutes les options ... »
+
+La correction REVISE était une sur-correction. L'audit demandait de refermer le contresens « on
+n'a pas le temps » ; la formule retenue affirmait sa négation (« disposer de plus de temps n'y
+changerait rien »), c'est-à-dire un contrefactuel absolu tiré du SILENCE de la source. Le
+support ne dit que ceci : le temps n'est jamais nommé comme borne dans le texte lu, et la glose
+usuelle est exacte « pour deux termes sur trois ». Cela interdit d'affirmer le temps comme borne
+ET d'affirmer qu'il n'y changerait rien.
+
+Le contresens se referme donc par l'absence : le lead ne parle plus du temps du tout, ni pour
+l'admettre ni pour le nier. Tombe aussi l'universelle isolée « Personne ne décide ainsi », que le
+gate refusait sur ces seuls supports ; le travail qu'elle faisait est déjà fait, et soutenu, par
+C003 (« personne ne connaît toutes les options... »), conservé mot pour mot avec « Mais » pour
+seule articulation. La frontière documentaire reste consignée en interne dans limits[3].
+
+Delta du lead inchangé : le modèle du choix idéal exige trois choses cumulées, et elles ne sont
+pas réunies. Il perd seulement un palier qui n'était pas documenté.
+
+--------------------------------------------------------------------------------
+C025 — sections[1].paragraphs[0] — UNSUPPORTED — opération : RETRAIT
+--------------------------------------------------------------------------------
+avant : « ... rien n'oblige à chercher plus loin, et beaucoup de décisions se prennent ainsi. »
+après : « ... rien n'oblige à chercher plus loin. »
+
+Affirmation de fréquence sur le monde réel, que le mapper avait lui-même laissée sans support et
+signalée comme telle (support_ids vide). Aucune preuve du dossier n'établit une statistique des
+décisions réelles. Retirée sèchement. Le paragraphe garde son delta entier : la recherche
+d'options est une conséquence CONDITIONNELLE (C020-C024), et la phrase suivante (C026) en tire
+seule la conséquence pour le lecteur.
+
+--------------------------------------------------------------------------------
+C027 — sections[1].paragraphs[1] — TOO_STRONG — opération : BORNAGE
+--------------------------------------------------------------------------------
+avant : « Les deux autres manques se voient sur un cas que Simon rapporte avoir observé. »
+après : « Le troisième manque, l'incapacité de calculer les conséquences, se voit sur un cas que
+        Simon rapporte avoir observé. »
+
+Les supports (mechanism[1] et mechanism[2], p. 352) documentent Milwaukee et un empêchement
+cognitif : pas de fonction de production mesurable, notions qualitatives incompatibles. C'est
+l'incapacité de calculer, et elle seule. L'incertitude sur les événements exogènes n'est pas
+visible dans ce cas : le claim annonçait deux manques là où le dossier en montre un.
+
+Le bornage à un seul manque est la correction minimale, et elle rend le paragraphe plus juste que
+la version auditée : la réponse donnée au paragraphe suivant (« intellectuellement, ils ne le
+pouvaient pas ») est exactement l'incapacité de calculer, pas l'incertitude du monde. Le deuxième
+manque n'est pas orphelin pour autant : S1.P2 le porte déjà, et c'est même là qu'il travaille le
+plus (« cette incertitude n'est pas dans sa tête, elle est dans le monde »).
+
+--------------------------------------------------------------------------------
+C043 — sections[2].paragraphs[1] — TOO_STRONG — opération : RÉATTRIBUTION
+--------------------------------------------------------------------------------
+avant : « ... contraction de satisfy et de suffice, qu'on rend par choix satisfaisant en gardant
+        le double sens : qui suffit, et qui satisfait celui qui choisit. »
+après : « ... contraction de satisfy et de suffice, que les sources françaises consultées gardent
+        en anglais faute de rendu stabilisé et dont elles paraphrasent le mécanisme, ici par
+        choix satisfaisant. »
+
+Les supports disent l'inverse d'un rendu établi. evidence.reception.json : « PAS DE RENDU
+FRANÇAIS STABILISÉ : les sources consultées gardent le mot anglais et paraphrasent le mécanisme »
+— Gouin & Harguindéguy entre guillemets sans traduire, Crozier en anglais, Béjean, Midy & Peyron
+« la règle du "satisficing" ». evidence.primary-reading.json : « Aucune traduction française ne
+conserve à la fois l'allusion et le néologisme ; il faut choisir, et le dire. »
+
+Un mot que les sources gardent en anglais se garde en anglais. La phrase ne présente donc plus
+« choix satisfaisant » comme LE rendu, ni ne lui prête le double sens suffire/satisfaire : elle
+dit l'état réel des sources et déclare la paraphrase employée ici — ce que le lecteur primaire
+demandait explicitement (« il faut choisir, et le dire »). L'emploi de « choix satisfaisant »
+ailleurs dans le texte (titre de S3, S3.P3, S4.P2) devient ce qu'il est : une paraphrase assumée,
+du même ordre que la « solution satisfaisante » de Béjean, Midy & Peyron, et non une traduction
+prétendue. Aucun de ces passages n'a été touché.
+
+--------------------------------------------------------------------------------
+C076 — sections[4].paragraphs[2] — UNSUPPORTED — opération : RÉATTRIBUTION
+--------------------------------------------------------------------------------
+avant : « Le choix, écrit Simon, ne dépend pas seulement des caractéristiques objectives de la
+        situation, mais aussi du procédé par lequel on y est parvenu. »
+après : « Le choix, écrit Simon, "is not determined uniquely by the objective characteristics of
+        the problem situation" : il dépend aussi du procédé heuristique par lequel on est parvenu
+        à la décision. »
+
+Le seul support résolu était mechanism[13] (p. 362, recherche sélective, heuristiques qui
+orientent, satisficing qui arrête), qui n'énonce pas la proposition attribuée. La proposition
+existe pourtant dans le répertoire, verbatim et paginée, mais ailleurs : mechanism[14], p. 363,
+« choice is not determined uniquely by the objective characteristics of the problem situation,
+but depends also on the particular heuristic process that is used to reach the decision », et la
+même phrase est reprise dans translation_notes (procedural / substantive) et dans
+common_misinterpretations. La phrase n'était pas fausse : elle était mal ancrée, et elle avait
+laissé tomber le mot « heuristic ».
+
+La correction réattribue au passage réellement disponible, en citant la p. 363 dans la langue du
+texte lu — convention déjà suivie partout ailleurs dans cet approfondissement — et restitue
+« heuristique », que la paraphrase avait perdu. Aucun support_id n'est inventé ; c'est au mapper
+de rattacher le claim à mechanism[14] lors du prochain PREPARE.
+
+--------------------------------------------------------------------------------
+LIMITS
+--------------------------------------------------------------------------------
+Les quatre entrées existantes sont inchangées. Une cinquième est ajoutée (le schéma en autorise
+cinq), parce que la boucle a mis au jour deux frontières qui lieront les révisions suivantes :
+
+- satisficing n'a pas de rendu français stabilisé, aucune traduction ne conserve à la fois le
+  néologisme et l'allusion biblique de la p. 368, et « choix satisfaisant » est une paraphrase de
+  ce texte, pas un équivalent attesté ;
+- la scène de Milwaukee (p. 352) ne documente que l'incapacité de calculer : l'incertitude sur
+  les événements exogènes ne doit pas s'y adosser.
+
+Champ interne, non destiné au lecteur. Rien de ce contenu n'est remonté en bloc visible : la
+première frontière n'apparaît dans le texte que sous la forme, soutenue, de l'état des sources ;
+la seconde n'y apparaît pas du tout, elle a seulement retiré une annonce.
+
+--------------------------------------------------------------------------------
+CE QUI N'A PAS ÉTÉ TOUCHÉ
+--------------------------------------------------------------------------------
+Les 73 claims soutenus, la charpente, l'ordre des sections, les titres, et toute phrase que le
+gate n'a pas mise en cause. Aucune reformulation d'opportunité.
+
+--------------------------------------------------------------------------------
+DELTA APRÈS CORRECTION
+--------------------------------------------------------------------------------
+Relecture paragraphe par paragraphe : aucun delta ne disparaît, aucun paragraphe ne tombe sous le
+seuil. Les cinq corrections retirent des assertions non documentées ou les rattachent à leur
+source ; aucune ne retire un palier d'apprentissage. Deux d'entre elles (C027, C076) rendent le
+texte plus exact qu'avant, pas seulement plus prudent. Aucune section ne reprend principalement
+le travail d'une précédente ; aucun contenu de limits n'est devenu une section.
+
+--------------------------------------------------------------------------------
+CONTRÔLE
+--------------------------------------------------------------------------------
+npm run corpus:deepen -- --check --only=rationalite-limitee
+1 approfondissement(s) contrôlé(s), 1824 mots. Rien projeté.
+Aucun avertissement de citation : le passage anglais ajouté en S5.P3 se retrouve mot pour mot
+dans corpus/evidence/rationalite-limitee/evidence.primary-reading.json.
+
+Le SHA du texte a changé : factcheck-pack.json, claim-map.json, verification-bundle.json,
+verification.json et factcheck-gate.json de la boucle précédente sont caducs et la chaîne doit
+repartir de PREPARE. Aucun artefact de fact-check n'a été édité à la main. Aucune
 auto-validation, aucun FACTCHECK_PASS déclaré ici.
