@@ -68,6 +68,17 @@ Avant toute mutation :
 git status --short -- corpus/deepenings/<id>.json corpus/validated/<id>.json corpus/evidence/<id>/
 ```
 
+**Et relève dès maintenant le SHA de blob de la version que l'audit va examiner**, une fois pour
+chaque carte du lot, avant toute écriture et avant tout commit d'étape :
+
+```bash
+git rev-parse HEAD:corpus/deepenings/<id>.json
+```
+
+C'est ce SHA que le reviewer recevra à l'étape 10. Il ne se recalcule pas plus tard : dès que le
+cycle commite au fil de l'eau, `HEAD` porte un état intermédiaire du lot et non la version
+auditée.
+
 Si le deepening, le validated ou les preuves de la carte étaient déjà modifiés, marque
 `SKIPPED_DIRTY` et ne touche pas à cette carte.
 
@@ -205,7 +216,8 @@ interprétation.
 Puis recommence **depuis PREPARE**, car toute modification invalide le SHA.
 
 Maximum deux boucles de correction factuelle. Au-delà, restaure uniquement le deepening de la
-carte et marque `rewrite_rejected_factcheck`.
+carte, **par le SHA de blob relevé à l'étape 2** (voir « Restaurer une carte » ci-dessous), et
+marque `rewrite_rejected_factcheck`.
 
 ### FAIL sur texte inchangé
 
@@ -219,15 +231,34 @@ Uniquement si une réécriture a été conservée et que le gate exact a rendu `
 Lance `corpus-deepening-reviewer` avec :
 
 - `conceptId` ;
-- chemins de `audit.md`, `factcheck-gate.json` et du compte rendu de réécriture.
+- chemins de `audit.md`, `factcheck-gate.json` et du compte rendu de réécriture ;
+- le **SHA de blob relevé à l'étape 2**, qui désigne la version antérieure.
+
+Le reviewer rend `REJECT` s'il ne reçoit pas ce SHA : sans lui, il ne peut pas établir ce que la
+réécriture a changé.
 
 Le reviewer ne peut rendre `ACCEPT` que si le `candidate_sha256` du gate correspond au fichier
 qu'il examine.
 
-`REJECT` restaure uniquement :
+### Restaurer une carte
+
+`REJECT`, comme le dépassement du plafond de boucles, restaure **uniquement** le deepening de la
+carte, et il le restaure **par son SHA de blob**, celui relevé à l'étape 2 :
 
 ```bash
-git restore --source=HEAD -- corpus/deepenings/<id>.json
+git cat-file -p <baseline_blob_sha> > corpus/deepenings/<id>.json
+```
+
+**N'utilise pas `git restore --source=HEAD`.** Dès que le cycle a commité un état d'étape — ce
+que fait tout lot qui pousse au fil de l'eau — `HEAD` porte déjà la réécriture, et la commande
+devient un no-op silencieux : elle rend `REJECT` sans rien restaurer, et la carte refusée reste
+publiée. C'est le même défaut que celui corrigé côté reviewer le 21 septembre 2026, au même
+endroit : une version désignée par sa position dans l'historique plutôt que par son contenu.
+
+Vérifie la restauration plutôt que de la supposer :
+
+```bash
+sha256sum corpus/deepenings/<id>.json   # doit redonner le SHA d'avant le cycle
 ```
 
 ## 11. TRACE finale

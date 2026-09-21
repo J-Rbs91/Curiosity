@@ -29,7 +29,8 @@ script ne peut pas dire : quel travail est possible aujourd'hui, ce qu'il coûte
 | **D.** Reprises courtes des domaines instruits | voir les sections | oui, accès déjà constaté | **ouvert, et c'est par lui que la phase 3 avance** |
 | **E.** Le garde de la CI ne couvrait qu'une moitié du répertoire projeté | **aucun** | non | **fermé le 2 septembre 2026** |
 | **F.** Les acquisitions que l'audit v3 réclame | voir la section | oui | ouvert le 17 septembre 2026 |
-| **G.** Le pack de preuve ne lisait qu'un fichier du dossier | **aucun** | non | **corrigé le 19 septembre 2026**, deux suites fermées le 20, **une seule reste** |
+| **G.** Le pack de preuve ne lisait qu'un fichier du dossier | **aucun** | non | **fermé le 21 septembre 2026** — dernière suite portée, la version antérieure se désigne par un SHA de blob |
+| **H.** Un niveau d'accès surdéclaré désarme le gate | 3 cas établis, 31 candidats | non pour le correctif, oui pour les cas | **ouvert le 21 septembre 2026**, et c'est le seul défaut connu qui ouvre au lieu de fermer |
 
 **Le chantier A est fermé.** Il s'était vidé le 21 août, rouvert et creusé pendant cinq lots
 d'ouverture consécutifs jusqu'à trente-quatre cartes le 28 août, puis refermé en trois nuits :
@@ -971,9 +972,53 @@ dispositif qui l'attrape.
 **Ce que cela dit du signal « pas de répertoire de preuve ».** Il reste peu cher et il reste
 utile, mais il ne mesure pas la santé d'une carte : il mesure ce qu'un audit pourra prouver. Les
 cartes minces donnent des audits pauvres, les cartes épaisses donnent des audits qui trouvent.
-**Il faut donc continuer par les dossiers épais** — quatre restent : `couplage-lache`,
-`deplacement-des-buts`, `garbage-can-model`, `rationalite-limitee`, plus les six qui portent une
-réception à côté d'un `lecture.json`.
+**Il faut donc continuer par les dossiers épais** — quatre restaient le 20 septembre :
+`couplage-lache`, `deplacement-des-buts`, `garbage-can-model`, `rationalite-limitee`, plus les six
+qui portent une réception à côté d'un `lecture.json`.
+
+## L'état de la couverture au 21 septembre 2026, et ce que le lot du 21 a soldé
+
+**Le lot du 21 a pris les trois derniers dossiers épais** que la section ci-dessus nommait :
+`rationalite-limitee`, `deplacement-des-buts`, `garbage-can-model`. Le quatrième nom de la liste,
+`couplage-lache`, **n'était pas éligible** : c'est la seule fiche non validée du corpus, elle n'a
+donc pas d'approfondissement, et rien à auditer. C'est une erreur de la liste du 20 septembre,
+corrigée ici. Elle relève du chantier B, pas de celui-ci.
+
+**Les trois ont rendu le même résultat que le lot du 20, une troisième fois : aucun `PASS`
+pédagogique.** Deux `REVISE`, un `REWRITE`, et chacune portait un défaut que son propre dossier
+contredisait. Les trois se sont closes en `rewritten` / `FACTCHECK_PASS` / `ACCEPT`, au prix de
+deux boucles de correction sur deux d'entre elles.
+
+**Le décompte, à recalculer plutôt qu'à recopier** (le script est en dix lignes : SHA du deepening
+et du validated contre les deux hashes du rapport) :
+
+| | cartes |
+|---|---:|
+| approfondissements | 136 |
+| rapports v3 à jour | **18** |
+| non auditées, **avec** dossier de preuve | **102** |
+| non auditées, **sans** dossier de preuve | **16** |
+
+**Le signal « pas de répertoire de preuve » a donc épuisé ce qu'il pouvait désigner d'utile.** Les
+seize cartes sans dossier restent la couche la moins chère à auditer et la moins concluante :
+l'audit y juge la fidélité sur un résumé, ce que le protocole de l'auditeur lui interdit désormais
+de faire en silence. Les voici, pour qu'un lot qui les prend sache ce qu'il prend —
+`absorber-les-fluctuations-de-commandes`, `cause-de-hasard-et-cause-assignable`,
+`comportement-contre-intuitif`, `court-terme-contre-long-terme`,
+`fragilite-d-un-ordonnancement-optimal`, `le-trouble-vient-des-politiques`,
+`paradigme-source-du-systeme`, `penalite-de-rupture`, `points-de-levier`,
+`regle-de-commande-a-deux-niveaux`, `regle-lineaire-de-decision`,
+`seuil-d-insatisfaction-salariale`, `systeme-concret-systeme-construit`, `systemographie`,
+`transposition-analogique`, `trois-sigmas-arbitrage-de-cout`.
+
+**Les 102 cartes à dossier sont désormais le vrai chantier, et il n'a plus de signal pour
+l'ordonner.** Trois lots ont montré que l'épaisseur du dossier prédit ce qu'un audit trouvera, pas
+la santé de la carte ; l'épaisseur ne classe donc plus rien une fois les dossiers épais épuisés. Une
+suite honnête consisterait à **tirer au hasard** dans les 102 pendant quelques lots et à mesurer le
+taux de défaut, plutôt qu'à inventer un troisième signal dont on ne saurait pas s'il sélectionne ou
+s'il se trompe. Six lots ont donné dix-huit rapports ; à ce rythme, la couverture complète demande
+une quarantaine de lots, et **savoir quel est le taux de défaut réel vaut plus que l'ordre dans
+lequel on le découvre**.
 
 ---
 
@@ -1020,14 +1065,43 @@ le dit maintenant, et onze tests le tiennent : **le script n'en avait aucun.**
    d'accès sans pouvoir la trancher, et c'est le dossier qui l'a tranchée. Son protocole lui
    demande maintenant de dire quand une carte n'a pas de dossier, plutôt que de noter A sur la
    foi d'une absence de contradiction.
-1bis. **Une suite neuve, ouverte le 20 septembre par un reviewer.** Quand le cycle commite au
-   fil de l'eau, **`HEAD~1` n'est plus la version auditée** : les commits d'étape portent des
-   états intermédiaires du même cycle, dont certains contiennent déjà la réécriture. Le reviewer
-   d'`isomorphisme-institutionnel` a dû remonter trois commits pour trouver la bonne base, et il
-   écrit : « Si un autre reviewer du lot a comparé à `HEAD~1`, il a comparé deux états
-   intermédiaires et n'a rien pu voir. » **À porter dans `corpus-deepening-reviewer` :** la
-   version antérieure se désigne par un SHA de blob transmis par l'orchestrateur, jamais par une
-   position relative dans l'historique.
+1bis. ~~**Une suite neuve, ouverte le 20 septembre par un reviewer.**~~ **Fermée le 21 septembre
+   2026.** Quand le cycle commite au fil de l'eau, `HEAD~1` n'est plus la version auditée : les
+   commits d'étape portent des états intermédiaires du même cycle, dont certains contiennent déjà
+   la réécriture. Le reviewer d'`isomorphisme-institutionnel` avait dû remonter trois commits pour
+   trouver sa base, et il écrivait : « Si un autre reviewer du lot a comparé à `HEAD~1`, il a
+   comparé deux états intermédiaires et n'a rien pu voir. »
+
+   **La version antérieure se désigne désormais par un SHA de blob**, relevé à l'étape 2 du
+   protocole avant toute écriture, transmis par l'orchestrateur, lu avec `git cat-file -p`. Sans ce
+   SHA le reviewer rend `REJECT` plutôt que de reconstituer sa base : ne pas savoir ce que la
+   réécriture a changé est un motif de refus, pas une difficulté à contourner.
+
+   **Le correctif a servi dès le lot qui l'a écrit**, et il en avait besoin : l'historique de la
+   branche porte une dizaine d'états intermédiaires par carte, et un reviewer comparant à `HEAD~1`
+   n'aurait vu, sur deux des trois cartes, qu'une correction d'un mot là où le cycle avait refait la
+   moitié du texte.
+
+   **Et le même défaut existait à un second endroit, découvert en corrigeant le premier :** le
+   protocole faisait restaurer une carte refusée avec `git restore --source=HEAD`. Dès qu'un lot
+   commite au fil de l'eau, `HEAD` porte déjà la réécriture et la commande devient un **no-op
+   silencieux** — `REJECT` rendu, rien restauré, carte refusée publiée quand même. La restauration
+   se fait désormais par le même SHA de blob, et le protocole demande de la vérifier au
+   `sha256sum` plutôt que de la supposer.
+
+   **Les six cartes déjà refusées ont été vérifiées, et aucune n'a été publiée par ce chemin.**
+   `cinq-dimensions-de-l-emploi`, `asservissement-des-activites-hors-travail`,
+   `critere-de-la-retroaction`, `force-du-besoin-de-developpement`,
+   `inertie-structurelle-et-selection` et `predominance-du-conflit-sur-la-negociation` : pour les
+   six, le dernier commit touchant l'approfondissement est **antérieur à la date de son audit**, et
+   celui d'`inertie` porte explicitement le retour à un blob plus ancien. Les restaurations ont donc
+   bien eu lieu.
+
+   **Ce qui les a sauvées est que ces lots ne committaient pas la réécriture candidate avant le
+   verdict.** Le défaut ne se déclenche que sur un lot qui commite au fil de l'eau — celui du
+   21 septembre est le premier, et c'est pourquoi il a dû corriger les deux endroits avant de
+   pouvoir commiter sans risque. La parade n'est donc pas « ne pas commiter au fil de l'eau » : c'est
+   de désigner les versions par leur contenu.
 
 2. **Le niveau d'accès n'est pas porté par ces dossiers.** Sur 496 supports de
    `regulation-controle-autonome`, 467 sortent avec `access: n/a`, faute de `consulted` sur les
@@ -1057,6 +1131,97 @@ Le texte fondait aussi le rapport de pouvoir sur les zones d'incertitude, expres
 occurrence dans l'article. **Aucun de ces deux défauts n'était atteignable sans le dossier** :
 l'enregistrement validé ne les contredit pas, et trois audits v3 antérieurs n'auraient pas pu
 les voir.
+
+---
+
+# H. Un niveau d'accès surdéclaré désarme le gate — ouvert le 21 septembre 2026
+
+**C'est le premier défaut du dispositif qui ouvre au lieu de fermer**, et c'est pour cette raison
+qu'il passe devant les autres. Tous les défauts trouvés jusqu'ici faisaient échouer un contrôle qui
+aurait dû passer, ou rendaient un contrôle aveugle à une matière qu'il n'avait pas lue. Celui-ci
+fait *passer* des propositions qu'un organe du dispositif avait le pouvoir de refuser.
+
+## Le mécanisme
+
+`collectSupports`, dans `scripts/corpus/deepening-factcheck.mjs`, hérite le niveau d'accès d'un
+support du champ `consulted` porté par l'objet source qui le contient, et le propage à toutes les
+chaînes situées sous lui. C'est le comportement voulu, et le protocole le décrit : le modèle ne
+fabrique jamais `full-text`, `partial` ou `metadata-only`, il les reçoit du dossier.
+
+**Mais le pack ramasse aussi `corpus/validated/<id>.json`**, et un objet source y déclare son propre
+`consulted`. Une source déclarée `full-text` dans l'enregistrement validé fournit donc au
+vérificateur des supports estampillés « lu », **y compris quand le dossier de la même carte déclare
+cette source non ouverte**. Le verdict `SOURCE_NOT_CONSULTED` ne peut plus se déclencher sur elle :
+l'instrument n'a pas de raison de douter d'un niveau d'accès qu'il a lui-même calculé.
+
+## Les trois cas établis, tous trouvés par les audits du 21 septembre
+
+Chaque fois, c'est le dossier de la carte qui contredit l'enregistrement de la carte. **C'est le
+dossier qui fait foi** — le protocole le dit déjà pour l'auditeur, et il faut l'étendre au pack.
+
+| carte | source déclarée `full-text` | ce que dit le dossier |
+|---|---|---|
+| `rationalite-limitee` | Cozic, « La rationalité limitée », 2012 | notice HAL seule, aucun fichier servi, HTTP 404 |
+| `deplacement-des-buts` | Warner & Havens 1968 | « CONSULTÉ EN MÉTADONNÉES SEULEMENT (Crossref ; JSTOR fermé) » |
+| `deplacement-des-buts` | Selznick 1943 | non ouvert ; la réception ne le connaît que par des tiers |
+
+Les deux cartes ont été mises hors d'atteinte **côté texte** — leurs réécritures ne font plus parler
+ces sources, et `deplacement-des-buts` a perdu pour cette raison une section entière que la revue a
+jugée non regrettable, parce qu'elle portait une information que la carte n'avait pas le droit de
+porter. **La divergence, elle, reste entière dans les deux enregistrements validés.** La couche
+approfondissement ne peut pas réparer la couche carte.
+
+## Le balayage, et pourquoi il ne vaut que comme signal
+
+Un test grossier a été écrit : pour chaque source `full-text` d'un enregistrement validé dont le
+DOI ou l'ISBN apparaît dans le dossier de la même carte, chercher un marqueur de non-consultation à
+proximité. **Il rend 31 candidats sur 172 sources `full-text`, réparties sur 111 cartes à dossier.**
+
+**Il se trompe dans les deux sens, et les deux ont été vérifiés sur pièce.**
+
+- **Faux positif** : `nasa-tlx`. Le marqueur « fermé, que je n'ai pas ouvert » porte sur le chapitre
+  de 1988, pas sur le paquet papier-crayon dont la fiche de lecture décrit les 26 pages. Le
+  `full-text` est correct.
+- **Faux négatif** : Cozic, l'un des trois cas établis, n'a pas de `doi_isbn` — seulement une URL.
+  Le balayage ne le voit pas.
+- Et un troisième état, qui n'est ni l'un ni l'autre : `theorie-des-perspectives` et
+  `glissements-de-l-action` déclarent **le même DOI** à la fois `full-text` et `metadata-only` dans
+  des objets différents de leur propre dossier. L'incohérence est interne au dossier ; elle demande
+  un arbitrage humain, pas une règle.
+
+**Ce signal ne mesure donc pas le défaut, il propose une liste à vérifier.** Le script est jetable
+et n'a pas été versé au dépôt : le reproduire coûte dix minutes, et le garder ferait croire à une
+mesure.
+
+## Par quel bout prendre ce chantier
+
+Dans cet ordre, et il est motivé par le coût.
+
+1. **Rendre le défaut détectable par le code plutôt que par un audit.** Le pack sait déjà ce qu'il a
+   ramassé — il porte `evidence_files` avec le nom et le SHA de chaque fichier. Il pourrait
+   comparer, source par source, le `consulted` de l'enregistrement validé à ce que le dossier
+   déclare de la même source, et **refuser le pack, ou dégrader le niveau au plus prudent des deux**,
+   quand les deux divergent. Dégrader est fail-closed et se défend mieux que refuser : une carte ne
+   devient pas impubliable parce que son enregistrement est trop optimiste, mais ses supports
+   cessent d'être estampillés « lu ».
+2. **Corriger les trois cas établis dans les enregistrements validés.** Ce n'est pas un geste de la
+   couche approfondissement, et aucun agent `corpus-deepening-*` n'en a le droit. Il relève de
+   `corpus-editor` ou d'une main humaine.
+3. **Vérifier les 31 candidats**, en sachant que la liste est bruitée dans les deux sens et qu'elle
+   ne remplace pas un passage sur les 172 sources `full-text`.
+
+## Et un piège de mesure, découvert le même jour par un reviewer
+
+**Les décomptes de mots de `corpus:deepen --check` incluent `limits`, qui n'est pas du texte
+lecteur.** L'orchestrateur du lot a transmis 1 864 mots à la revue de `garbage-can-model` en lui
+demandant de peser cette augmentation contre la fourchette cible ; le reviewer a recompté et rendu
+**1 606 mots lecteur**, les 258 restants étant la frontière interne. L'écart change la conclusion :
+la carte entre dans la fourchette au lieu de la dépasser.
+
+C'est une erreur de catégorie facile à commettre, **parce que le total est le seul chiffre que le
+script affiche**. Un lot qui pose une question de volume à une revue doit compter `lead` +
+`sections` lui-même. Et si le script gagnait à afficher les deux chiffres séparément, c'est une
+correction d'une ligne qui éviterait la prochaine.
 
 ---
 

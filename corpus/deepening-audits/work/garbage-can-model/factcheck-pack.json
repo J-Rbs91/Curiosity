@@ -1,0 +1,2967 @@
+{
+  "protocol_version": 1,
+  "concept_id": "garbage-can-model",
+  "context_budget_tokens": 300000,
+  "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
+  "candidate_sha256": "cb685513886b345c93186b60c295999bcc5da5c708cef1a86e2cca455700aebb",
+  "validated_sha256": "712ee707cb3398d002182c945873b039268b9d42be50f8b4692f16802cffa1a6",
+  "evidence_files": [
+    {
+      "file": "evidence.primary-reading.json",
+      "sha256": "af6a2cf2b769098a9747ea7f83225b2187d3e84974d626c8c0f16a4d5846188b"
+    },
+    {
+      "file": "evidence.reception.json",
+      "sha256": "344b292b6cceaf7d08c9f21537e742d9393d4501b0cd5c81664f8166328dcd6f"
+    }
+  ],
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "text": "Imaginons une association dont le conseil se réunit pour trancher une question précise, disons l’achat d’un nouveau local. Pendant la réunion, quelqu’un profite du moment où tout le monde est là pour remettre sur la table une proposition qui traîne depuis des mois : changer de logiciel de comptabilité, sans lien direct avec le sujet du jour. La proposition est adoptée, non parce qu’elle répondait le mieux au problème initial, mais parce qu’elle se trouvait disponible au moment où plusieurs personnes concernées étaient réunies au même endroit. La scène est inventée, mais elle met en évidence le mécanisme dont il sera question ici : ce qui finit par être choisi n’est pas toujours ce qui correspondait le mieux au problème posé, mais ce qui se trouvait à portée de main au bon moment."
+    },
+    {
+      "locator": "lead[1]",
+      "text": "C’est ce mécanisme que Michael D. Cohen, James G. March et Johan P. Olsen ont pris au sérieux plutôt que de le traiter comme une anomalie à corriger. Dans leur analyse, une décision n’a pas besoin de suivre l’ordre qu’on lui prête volontiers : reconnaître un problème, chercher des solutions, les comparer, puis choisir. Une solution peut exister avant le problème qu’elle finira par résoudre, et c’est la rencontre entre les deux, plus que leur adéquation, qui produit ce que l’on appelle ensuite la décision."
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "section_title": "Des organisations qui ne savent pas ce qu’elles veulent",
+      "text": "Le point de départ des trois auteurs est ce qu’ils avaient sous les yeux dans des établissements d’enseignement : des universités américaines, la désignation d’un doyen, une école libre danoise. Trois choses d’ordinaire tenues pour acquises n’y sont pas assurées. Les buts, d’abord, sont ambigus et disputés : on ne pouvait qu’occasionnellement, difficilement et non sans hésitation déduire une ligne d’action d’un but unique. Ensuite, le savoir causal reste flou : on sait et on croit certaines choses de ce qui produit quoi, mais ces croyances ne sont ni assez précises ni assez partagées pour rendre les décisions faciles. Enfin, la participation varie : ils disent avoir été frappés de voir combien l’issue dépendait de qui se trouvait engagé dans la décision, et cet engagement, des sollicitations qui se disputaient alors l’attention de gens occupés."
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "section_title": "Des organisations qui ne savent pas ce qu’elles veulent",
+      "text": "Le nom qu’ils donnent à ce genre de situation est « anarchie organisée », et ils disent ce qu’ils rangent dessous : un monde où l’attention est une ressource rare, qui, consacrée à une chose, ne l’est pas à une autre ; où plusieurs arènes de décision se font concurrence pour les problèmes, les solutions et le temps des décideurs ; où les problèmes et les solutions arrivent à des moments fixés du dehors et se trouvent reliés en partie par la simultanéité de leur arrivée. Le mot n’annonce donc pas le désordre, il nomme des propriétés. Et la dernière ouvre directement sur le mécanisme."
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "section_title": "Quatre flux qui se croisent plus qu’ils ne s’ajustent",
+      "text": "Quatre choses circulent alors en même temps, presque indépendamment les unes des autres. Des problèmes surgissent : plaintes, pannes, obligations nouvelles. Des solutions existent déjà, qu’un problème leur soit ou non associé : un outil, une réorganisation, une procédure peut attendre son heure pendant des mois sans que personne ne s’y oppose ni ne s’en saisisse. Des participants entrent et sortent, avec le temps et l’attention dont ils disposent alors. Et des occasions de choisir s’ouvrent par intermittence : une réunion, une échéance budgétaire, un moment où l’organisation doit trancher. L’occasion de choisir compte elle-même pour un terme à part entière : dans la formule des auteurs, participants, problèmes, choix et solutions ont chacun la capacité de se relier à n’importe lequel des autres."
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "section_title": "Quatre flux qui se croisent plus qu’ils ne s’ajustent",
+      "text": "C’est de ce croisement que vient le nom. L’étiquette, racontent les auteurs, leur est venue en cours de discussion comme une comparaison commode pour une observation qu’ils avaient tous faite et refaite : des combinaisons d’enjeux passablement bizarres se trouvaient souvent en jeu dans les choix réellement opérés par les organisations. Ils ne s’attendaient pas à la voir durer. En français, le nom a même durci : la traduction publiée en 1991 disait « corbeille à papiers » et « mise au panier » ; « poubelle » est le choix de Christine Musselin contre elle, ces rendus euphémisant selon elle l’idée de déchets."
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "section_title": "Ce qu’il advient des problèmes",
+      "text": "Reste une question que l’image ne règle pas : que devient le problème une fois la décision prise ? La réponse est le résultat le moins attendu du modèle. Il arrive souvent, écrivent les trois auteurs en revenant sur leur article quarante ans plus tard, que les problèmes ne soient pas résolus par les décisions : ils peuvent fuir vers d’autres occasions de choix, ou être simplement négligés. Décider et résoudre sont deux opérations distinctes, et la résolution n’est qu’une issue parmi d’autres. Une réunion peut produire une décision nette et laisser le problème qui l’avait motivée exactement où il était."
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "section_title": "Ce qu’il advient des problèmes",
+      "text": "Quelle est la part de chaque issue ? Guido Fioretti et Alessandro Lomi, qui ont proposé en 2008 une représentation du modèle sous forme de simulation à base d’agents, résument ainsi la conclusion du calcul de 1972 : peu de décisions résolvent des problèmes, et la plupart se font par oversight. Ce sont eux qui parlent, non l’article de 1972, mais l’ordre de grandeur est inverse de ce que le mot « décision » laisse attendre. Le vocabulaire français de ces issues n’est d’ailleurs pas fixé : dans un même volume de 1997, Christine Musselin parle de choix « par résolution, survol ou glissement », Erhard Friedberg de décisions « par inattention, par déplacement et par résolution des problèmes »."
+    },
+    {
+      "locator": "sections[2].paragraphs[2]",
+      "section_title": "Ce qu’il advient des problèmes",
+      "text": "Le processus ne tourne pas à vide pour autant. Il produit des décisions, et selon les trois auteurs les rituels du choix mettent en mouvement problèmes, solutions et décideurs d’une manière qui satisfait ce qu’on attend en fait d’intention, de compréhension et de contrôle, sans produire de façon fiable la solution des problèmes de fond. Si l’on suit ce raisonnement, l’explication qu’une organisation donne ensuite de sa décision ne décrit pas nécessairement le chemin par lequel celle-ci est venue."
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "section_title": "Un ordre, mais pas celui qu’on attendait",
+      "text": "Un lecteur arrivé ici peut conclure au chaos, et beaucoup l’ont fait. Ce n’est pas ce que soutiennent les auteurs. Quarante ans après leur article, ils constatent que leurs idées ont été rangées, naturellement et pour une part trompeusement, du côté du hasard et du destin, au point que l’expression est devenue pour beaucoup un mot fourre-tout désignant le désordre. Puis ils rétablissent : « La poubelle, en ces termes, dépeint un monde ordonné, mais qui parvient à l’ordre d’une manière différente de celle que glorifiaient les Lumières. » L’apparence de chaos tenait selon eux au modèle avec lequel on regardait, non à la réalité observée."
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "section_title": "Un ordre, mais pas celui qu’on attendait",
+      "text": "En quoi consiste cet ordre ? Il n’est pas celui d’un calcul mené du début à la fin par un décideur qui pèserait ses options avant de trancher. Il est temporel : ce qui relie un problème à une solution est en partie leur coprésence, et la façon dont une décision se trouve cadrée peut être déterminée, dans une mesure considérable, par le déroulement dans le temps de la participation et de l’attention. C’est l’inverse d’une lecture intentionnelle ou conséquentielle, où le choix se déduirait des buts."
+    },
+    {
+      "locator": "sections[3].paragraphs[2]",
+      "section_title": "Un ordre, mais pas celui qu’on attendait",
+      "text": "Peut-on alors y faire quelque chose ? Les auteurs indiquent un point d’appui plutôt qu’une méthode : dans cette perspective, écrivent-ils, les structures se comprennent autrement, et l’on peut voir des configurations ouvertes, spécialisées ou hiérarchiques favoriser de façon différenciée la collision ou la séparation des problèmes, des solutions, des participants et des occasions de choix. Ce qu’une structure règle, ce sont les rencontres possibles, plus que les décisions qui en sortiront. Et ils s’arrêtent là : recensant les usages faits de leurs idées, ils décrivent à la troisième personne, sans s’y ranger, la position de ceux qui tiennent ces processus pour pathologiques et voudraient les éliminer en réformant les organisations."
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "section_title": "Un modèle, pas le modèle",
+      "text": "Une précision des auteurs change la portée de tout ce qui précède. Leur article, rappellent-ils, présentait « un » modèle et non « le » modèle, et se voulait une tentative d’élargir les autres interprétations de la vie des organisations plutôt que de les remplacer. Il y a place, ajoutent-ils, pour les composantes de l’agir humain, mais cette place est bornée et variable selon le contexte. Reconnaître un processus de poubelle quelque part ne dispense donc pas de voir que l’organisation est aussi une structure durable, qui exerce un certain contrôle et accomplit certaines fins."
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "section_title": "Un modèle, pas le modèle",
+      "text": "C’est par là que passe la critique la mieux étayée en français. Christine Musselin a étudié des universités allemandes et françaises, et son résultat va contre le modèle : « dans les universités, la prise de décision est beaucoup plus structurée et régulée que ne le suggèrent les travaux de Cohen, March et Olsen ». Elle y observe des techniques récurrentes, tour de rôle, critères impersonnels, report vers l’instance suivante, et elle en tire une distinction à garder : une organisation peut répondre aux critères de l’anarchie organisée sans que ses décisions soient pour autant régies par le modèle de la poubelle. Le cadre et le mécanisme ne sont pas la même chose."
+    },
+    {
+      "locator": "sections[4].paragraphs[2]",
+      "section_title": "Un modèle, pas le modèle",
+      "text": "La discussion n’est pas close. En 2001, dans une même livraison de l’American Political Science Review, Jonathan Bendor, Terry M. Moe et Kenneth W. Shotts ont jugé que le programme de recherche issu du modèle ne fournissait pas une base suffisante au progrès scientifique et réclamé une refonte de fond ; Johan P. Olsen, l’un des trois auteurs, leur a répondu dans le même numéro qu’un tel sauvetage était étranger à l’esprit de leur travail. Les deux textes se lisent l’un après l’autre. Les trois auteurs, eux, notaient en 2012 que les accès d’intérêt élaborent les idées plus vite qu’ils ne les font converger vers une compréhension canonique."
+    }
+  ],
+  "supports": [
+    {
+      "id": "SUP-f7d4154d237128c5",
+      "origin": "validated",
+      "path": "$.$schema",
+      "access": "n/a",
+      "text": "../schema/carte.schema.json"
+    },
+    {
+      "id": "SUP-67cf6f71cccffc89",
+      "origin": "validated",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "garbage-can-model"
+    },
+    {
+      "id": "SUP-6d638fa1bd60a502",
+      "origin": "validated",
+      "path": "$.slug",
+      "access": "n/a",
+      "text": "garbage-can-model"
+    },
+    {
+      "id": "SUP-ad89626955b2952c",
+      "origin": "validated",
+      "path": "$.status",
+      "access": "n/a",
+      "text": "VALIDATED"
+    },
+    {
+      "id": "SUP-9d08adb87ea3e356",
+      "origin": "validated",
+      "path": "$.title",
+      "access": "n/a",
+      "text": "Modèle de la poubelle"
+    },
+    {
+      "id": "SUP-84bfce794eb32c0f",
+      "origin": "validated",
+      "path": "$.themes[0]",
+      "access": "n/a",
+      "text": "decision"
+    },
+    {
+      "id": "SUP-91d703f9cc305007",
+      "origin": "validated",
+      "path": "$.theme_labels.decision",
+      "access": "n/a",
+      "text": "Décision"
+    },
+    {
+      "id": "SUP-89f7c5d7254291ad",
+      "origin": "validated",
+      "path": "$.authors[0].name",
+      "access": "n/a",
+      "text": "Michael D. Cohen"
+    },
+    {
+      "id": "SUP-1c6b7b14e4e2ef62",
+      "origin": "validated",
+      "path": "$.authors[0].app_author_id",
+      "access": "n/a",
+      "text": "cohen"
+    },
+    {
+      "id": "SUP-fd4d91192e9ef435",
+      "origin": "validated",
+      "path": "$.authors[1].name",
+      "access": "n/a",
+      "text": "James G. March"
+    },
+    {
+      "id": "SUP-b44931b32239f03a",
+      "origin": "validated",
+      "path": "$.authors[1].app_author_id",
+      "access": "n/a",
+      "text": "march"
+    },
+    {
+      "id": "SUP-e5305c56909fa701",
+      "origin": "validated",
+      "path": "$.authors[2].name",
+      "access": "n/a",
+      "text": "Johan P. Olsen"
+    },
+    {
+      "id": "SUP-42c6377e83c640ed",
+      "origin": "validated",
+      "path": "$.authors[2].app_author_id",
+      "access": "n/a",
+      "text": "olsen"
+    },
+    {
+      "id": "SUP-78cadc3f9576ffb2",
+      "origin": "validated",
+      "path": "$.hook",
+      "access": "n/a",
+      "text": "Une solution qui traînait rencontre un problème qui vient d'arriver : qui a décidé ?"
+    },
+    {
+      "id": "SUP-18d5196f65c772a8",
+      "origin": "validated",
+      "path": "$.summary",
+      "access": "n/a",
+      "text": "Dans une « anarchie organisée » (buts ambigus, savoir causal flou, participation variable), ce qui relie un problème à une solution est leur coprésence dans le temps."
+    },
+    {
+      "id": "SUP-be5808cabc18162e",
+      "origin": "validated",
+      "path": "$.sources[0].label",
+      "access": "metadata-only",
+      "text": "Michael D. Cohen, James G. March et Johan P. Olsen, « A Garbage Can Model of Organizational Choice », Administrative Science Quarterly, vol. 17, n° 1, mars 1972, p. 1-25."
+    },
+    {
+      "id": "SUP-ec988b343d66a1a7",
+      "origin": "validated",
+      "path": "$.sources[0].kind",
+      "access": "metadata-only",
+      "text": "primary"
+    },
+    {
+      "id": "SUP-097aa2e5fab41426",
+      "origin": "validated",
+      "path": "$.sources[0].locator",
+      "access": "metadata-only",
+      "text": "p. 1-25"
+    },
+    {
+      "id": "SUP-6b432f0ecf2f0e3b",
+      "origin": "validated",
+      "path": "$.sources[0].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.2307/2392088"
+    },
+    {
+      "id": "SUP-09fc865366dec9ee",
+      "origin": "validated",
+      "path": "$.sources[0].url",
+      "access": "metadata-only",
+      "text": "https://doi.org/10.2307/2392088"
+    },
+    {
+      "id": "SUP-bca725edbf90fc74",
+      "origin": "validated",
+      "path": "$.sources[1].label",
+      "access": "full-text",
+      "text": "Michael D. Cohen, James G. March et Johan P. Olsen, « ‘A Garbage Can Model’ at Forty », in Alessandro Lomi et J. Richard Harrison (dir.), The Garbage Can Model of Organizational Choice, Bingley, Emerald, 2012, p. 19-30."
+    },
+    {
+      "id": "SUP-8a7e56dd8ce49180",
+      "origin": "validated",
+      "path": "$.sources[1].kind",
+      "access": "full-text",
+      "text": "primary"
+    },
+    {
+      "id": "SUP-82cfeaa628bd0872",
+      "origin": "validated",
+      "path": "$.sources[1].locator",
+      "access": "full-text",
+      "text": "p. 19-30"
+    },
+    {
+      "id": "SUP-b8ea9a5413584d95",
+      "origin": "validated",
+      "path": "$.sources[1].doi_isbn",
+      "access": "full-text",
+      "text": "10.1108/S0733-558X(2012)0000036005 ; ISBN 978-1-78052-712-3 (imprimé), 978-1-78052-713-0 (e-book)"
+    },
+    {
+      "id": "SUP-c61a9aad55fffb0b",
+      "origin": "validated",
+      "path": "$.sources[1].url",
+      "access": "full-text",
+      "text": "https://api.pageplace.de/preview/DT0400.9781780527130_A24157121/preview-9781780527130_A24157121.pdf"
+    },
+    {
+      "id": "SUP-e64608ad19b6eb2c",
+      "origin": "validated",
+      "path": "$.sources[2].label",
+      "access": "metadata-only",
+      "text": "James G. March et Johan P. Olsen (dir.), Ambiguity and Choice in Organizations, Bergen, Universitetsforlaget, 1976."
+    },
+    {
+      "id": "SUP-c01b46ee50da2c17",
+      "origin": "validated",
+      "path": "$.sources[2].kind",
+      "access": "metadata-only",
+      "text": "primary"
+    },
+    {
+      "id": "SUP-7b5969f8f4b9e685",
+      "origin": "validated",
+      "path": "$.sources[2].doi_isbn",
+      "access": "metadata-only",
+      "text": "ISBN 82-00-01478-9 (1976) ; 82-00-01960-8 (1979)"
+    },
+    {
+      "id": "SUP-b14675852765efde",
+      "origin": "validated",
+      "path": "$.sources[2].url",
+      "access": "metadata-only",
+      "text": "https://archive.org/details/ambiguitychoicei0000marc_k5a7"
+    },
+    {
+      "id": "SUP-b4874839d6180166",
+      "origin": "validated",
+      "path": "$.sources[3].label",
+      "access": "n/a",
+      "text": "Alessandro Lomi et J. Richard Harrison, « The Garbage Can Model of Organizational Choice: Looking Forward at Forty » (chapitre introductif), in Research in the Sociology of Organizations, vol. 36, Emerald, 2012, p. 3-17."
+    },
+    {
+      "id": "SUP-7a39812a7ece4071",
+      "origin": "validated",
+      "path": "$.sources[3].kind",
+      "access": "n/a",
+      "text": "secondary-academic"
+    },
+    {
+      "id": "SUP-95ab5a5316a61f59",
+      "origin": "validated",
+      "path": "$.sources[3].doi_isbn",
+      "access": "n/a",
+      "text": "10.1108/S0733-558X(2012)0000036004"
+    },
+    {
+      "id": "SUP-04751d01d4a15b7a",
+      "origin": "validated",
+      "path": "$.sources[3].url",
+      "access": "n/a",
+      "text": "https://api.pageplace.de/preview/DT0400.9781780527130_A24157121/preview-9781780527130_A24157121.pdf"
+    },
+    {
+      "id": "SUP-5f739ae3bec1ed5d",
+      "origin": "validated",
+      "path": "$.sources[3].locator",
+      "access": "n/a",
+      "text": "p. 3-17"
+    },
+    {
+      "id": "SUP-8981b3612e6066cb",
+      "origin": "validated",
+      "path": "$.sources[4].label",
+      "access": "n/a",
+      "text": "David R. Gibson, « Turn-Taking and Geopolitics in the Making of Decisions », in Research in the Sociology of Organizations, vol. 36, Emerald, 2012, p. 33-64."
+    },
+    {
+      "id": "SUP-949f8952120a80d2",
+      "origin": "validated",
+      "path": "$.sources[4].kind",
+      "access": "n/a",
+      "text": "secondary-academic"
+    },
+    {
+      "id": "SUP-b6fe138d33c19d66",
+      "origin": "validated",
+      "path": "$.sources[4].doi_isbn",
+      "access": "n/a",
+      "text": "10.1108/S0733-558X(2012)0000036006"
+    },
+    {
+      "id": "SUP-ce554603eae8afab",
+      "origin": "validated",
+      "path": "$.sources[4].url",
+      "access": "n/a",
+      "text": "https://api.pageplace.de/preview/DT0400.9781780527130_A24157121/preview-9781780527130_A24157121.pdf"
+    },
+    {
+      "id": "SUP-c05122a37168ecd1",
+      "origin": "validated",
+      "path": "$.sources[4].locator",
+      "access": "n/a",
+      "text": "p. 33-64"
+    },
+    {
+      "id": "SUP-422868f37ea09c5c",
+      "origin": "validated",
+      "path": "$.review.reviewer",
+      "access": "n/a",
+      "text": "corpus-blind-reviewer"
+    },
+    {
+      "id": "SUP-58978ef3ef93a6b9",
+      "origin": "validated",
+      "path": "$.review.date",
+      "access": "n/a",
+      "text": "2026-08-17"
+    },
+    {
+      "id": "SUP-ab62b4f98906b668",
+      "origin": "validated",
+      "path": "$.review.attribution",
+      "access": "n/a",
+      "text": "confirmee"
+    },
+    {
+      "id": "SUP-427fb1df98a1e120",
+      "origin": "validated",
+      "path": "$.review.quotation",
+      "access": "n/a",
+      "text": "verbatim"
+    },
+    {
+      "id": "SUP-118d16b59e932353",
+      "origin": "validated",
+      "path": "$.review.sources",
+      "access": "n/a",
+      "text": "resolvent"
+    },
+    {
+      "id": "SUP-ed7629ec7b0c3818",
+      "origin": "validated",
+      "path": "$.review.prose",
+      "access": "n/a",
+      "text": "fidele"
+    },
+    {
+      "id": "SUP-e134482677317836",
+      "origin": "validated",
+      "path": "$.review.verdict",
+      "access": "n/a",
+      "text": "PASS"
+    },
+    {
+      "id": "SUP-ac6384ee5993fe4e",
+      "origin": "validated",
+      "path": "$.review.notes[0]",
+      "access": "n/a",
+      "text": "Contrôle aveugle du 17 août 2026. Citation vérifiée verbatim à la p. 28 par le contrôleur, sur le PDF de l'éditeur qu'il a lui-même téléchargé ; trente et une citations du même chapitre confrontées une à une, toutes conformes et à la page annoncée."
+    },
+    {
+      "id": "SUP-fd41cfdda0e7e454",
+      "origin": "validated",
+      "path": "$.review.notes[1]",
+      "access": "n/a",
+      "text": "L'article fondateur de 1972 n'a jamais pu être ouvert (Unpaywall : closed, aucune localisation en accès libre). La citation affichée vient de la rétrospective de 2012 signée des trois mêmes auteurs, lue intégralement — le locator le dit. La carte ne fait jamais dire à 2012 la lettre de 1972."
+    },
+    {
+      "id": "SUP-480816b880c33b9f",
+      "origin": "validated",
+      "path": "$.review.notes[2]",
+      "access": "n/a",
+      "text": "Le REWORK portait sur la manière dont Christine Musselin (1997) avait été consultée et citée dans le dossier. Cette source n'atteint pas la carte."
+    },
+    {
+      "id": "SUP-4c92cc25092bc060",
+      "origin": "validated",
+      "path": "$.dossier",
+      "access": "n/a",
+      "text": "corpus/dossiers/garbage-can-model.json"
+    },
+    {
+      "id": "SUP-267063e7cf1e3cbd",
+      "origin": "validated",
+      "path": "$.attribution_note",
+      "access": "n/a",
+      "text": "Concept coécrit par Michael D. Cohen, James G. March et Johan P. Olsen, habituellement rangé sous James G. March."
+    },
+    {
+      "id": "SUP-2f75aca3c90e056f",
+      "origin": "validated",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "La poubelle, en ces termes, dépeint un monde ordonné, mais qui parvient à l'ordre d'une manière différente de celle que glorifiaient les Lumières."
+    },
+    {
+      "id": "SUP-82f146565c4f6d42",
+      "origin": "validated",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Michael D. Cohen, James G. March et Johan P. Olsen, « ‘A Garbage Can Model’ at Forty », in Alessandro Lomi et J. Richard Harrison (dir.), The Garbage Can Model of Organizational Choice, Bingley, Emerald, 2012, p. 19-30."
+    },
+    {
+      "id": "SUP-58260acfc4c49232",
+      "origin": "validated",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 28 (texte de 2012)"
+    },
+    {
+      "id": "SUP-76d11f542691c5ac",
+      "origin": "validated",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-bdc5c079b09b4218",
+      "origin": "validated",
+      "path": "$.quotation.original_text",
+      "access": "n/a",
+      "text": "The garbage can, in those terms, portrays an orderly world, but one that achieves order in a way different from that glorified by the Enlightenment."
+    },
+    {
+      "id": "SUP-a006aef58d724e59",
+      "origin": "validated",
+      "path": "$.quotation.original_language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-520c61d935611e51",
+      "origin": "validated",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "in-house"
+    },
+    {
+      "id": "SUP-da043368e5b1f76d",
+      "origin": "validated",
+      "path": "$.quotation.translation.translator",
+      "access": "n/a",
+      "text": "Traduction interne non publiée (chaîne Curiosity). Aucune traduction française publiée de ce chapitre n'a été identifiée."
+    },
+    {
+      "id": "SUP-6029fb83aa0d0820",
+      "origin": "validated",
+      "path": "$.notes[0]",
+      "access": "n/a",
+      "text": "La borne « p. 1-25 » de l'article de 1972 est d'usage : Crossref n'enregistre que sa première page. Elle est confirmée par la bibliographie de la rétrospective de 2012, p. 29."
+    },
+    {
+      "id": "SUP-4101fcd3ebdb8428",
+      "origin": "validated",
+      "path": "$.notes[1]",
+      "access": "n/a",
+      "text": "La pagination du chapitre de 1976 reprenant l'article de 1972 n'a pas été vérifiée."
+    },
+    {
+      "id": "SUP-064a08b16e9de6b4",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$._note",
+      "access": "n/a",
+      "text": "Fragment produit par la lecture des sources primaires. Ne remplit que le bloc `evidence` (et ce qui en dépend). L'agent n'a PAS pu ouvrir l'article de 1972 : voir primary_sources[0].consulted = metadata-only et validation.confidence_flags."
+    },
+    {
+      "id": "SUP-65c5a3cdcc8f93e5",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "garbage-can-model"
+    },
+    {
+      "id": "SUP-a7f03f2c216cf6c2",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.canonical_name_fr",
+      "access": "n/a",
+      "text": "Modèle de la poubelle"
+    },
+    {
+      "id": "SUP-90a99b5e5c24ebd5",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.canonical_name_en",
+      "access": "n/a",
+      "text": "Garbage can model"
+    },
+    {
+      "id": "SUP-ada99c02c548b434",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.attribution_input.authors[0].name",
+      "access": "n/a",
+      "text": "Michael D. Cohen"
+    },
+    {
+      "id": "SUP-28be3748a52030bc",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.attribution_input.authors[1].name",
+      "access": "n/a",
+      "text": "James G. March"
+    },
+    {
+      "id": "SUP-2a42a0c69e6db3b1",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.attribution_input.authors[2].name",
+      "access": "n/a",
+      "text": "Johan P. Olsen"
+    },
+    {
+      "id": "SUP-46f7aad26b409282",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.attribution_input.authorship",
+      "access": "n/a",
+      "text": "COAUTHORED"
+    },
+    {
+      "id": "SUP-e1beb03bebc1362c",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.attribution_input.term_origin.coined_by",
+      "access": "n/a",
+      "text": "Michael D. Cohen, James G. March et Johan P. Olsen"
+    },
+    {
+      "id": "SUP-518f72af46167ff8",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.attribution_input.term_origin.coined_in",
+      "access": "n/a",
+      "text": "Discussions à l'University of California, Irvine, 1968-1970 ; article publié en 1972"
+    },
+    {
+      "id": "SUP-2efb968d1b897ab1",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.attribution_input.term_origin.note",
+      "access": "n/a",
+      "text": "Les auteurs déclarent en 2012 (p. 22) que « the label ‘garbage can’ entered the discussion as a handy simile » et qu'ils n'attendaient pas que cette étiquette de fortune survive : « We didn't expect the shorthand label for the ideas to last, but it stuck, and stimulated a cascade of interpretations. » Ils refusent explicitement la paternité des idées elles-mêmes : « They have many ancestors and caretakers, but no parents. Certainly not us. » (2012, p. 20)."
+    },
+    {
+      "id": "SUP-ddab0f323fcb3e4d",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.concept_definition",
+      "access": "n/a",
+      "text": "Le « garbage can model » est un modèle du processus de choix dans les organisations que les auteurs nomment « organized anarchies ». Ce que les auteurs eux-mêmes en disent, dans le seul texte primaire ouvert ici (Cohen, March & Olsen 2012, p. 26) : l'article de 1972 relâche des hypothèses des théories du choix rationnel et de la résolution de problèmes, en ajoutant « the notions of ambiguous preferences, unclear causal understanding, fluid participation, and the varying accessibility of decisions » ; ces relâchements « imply a temporal understanding of events, in contrast with an intentional or consequential one ». La formulation d'ensemble donnée par les auteurs en 2012 (p. 22) : abandonner « a tidy world in which problems imply solutions over which participants exercise choice » pour « a world in which participants, problems, choices, and solutions each have the capacity to connect to any of the others ». ATTENTION : la définition canonique en trois propriétés (problematic preferences / unclear technology / fluid participation) telle qu'elle figure dans l'article de 1972 n'a PAS pu être vérifiée sur le texte de 1972 dans cette session."
+    },
+    {
+      "id": "SUP-5ba0ac010ea88692",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.mechanism[0]",
+      "access": "n/a",
+      "text": "1. Point de départ empirique, tel que les auteurs le racontent : dans les établissements d'enseignement qu'ils étudiaient (universités américaines, choix d'un doyen, école libre danoise), les buts sont « both ambiguous and in dispute » ; « Only occasionally and with great difficulty and considerable hesitation could a course of action be derived from a single goal » ; ce sont des « conflict systems in which different participants pursued different goals » (CMO 2012, p. 21)."
+    },
+    {
+      "id": "SUP-f898ee8463290ec4",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.mechanism[1]",
+      "access": "n/a",
+      "text": "2. Deuxième condition : la technologie est floue. « People knew and believed some things about the causal system underlying education, but those beliefs were not precise enough or shared enough to make decisions easy » (CMO 2012, p. 21). « Technology » désigne ici le savoir causal moyens-fins, pas un équipement."
+    },
+    {
+      "id": "SUP-9c907d590c67ccff",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.mechanism[2]",
+      "access": "n/a",
+      "text": "3. Troisième condition : la participation n'est pas fixe. « We were struck by the extent to which outcomes depended on who was involved in a decision, and involvement depended heavily on the mix of claims on attention that were current. Organizations were managed by busy people with numerous claims on their time » (CMO 2012, p. 22). L'issue dépend donc de qui est là, et qui est là dépend de ce qui réclame l'attention ailleurs au même moment."
+    },
+    {
+      "id": "SUP-7b8059bad760b935",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.mechanism[3]",
+      "access": "n/a",
+      "text": "4. Ces conditions définissent le cadre — l'« organized anarchy » : « where attention is a scarce resource that, when devoted to one thing, cannot be devoted to another; where there are multiple decision arenas that ‘compete’ for problems, solutions and decision maker time; where problems and solutions arrive at times exogenously determined and are linked partly by their simultaneous arrivals » (CMO 2012, p. 22). Trois éléments de mécanisme y sont contenus : rareté de l'attention, concurrence entre arènes de décision, arrivée exogène des problèmes et des solutions."
+    },
+    {
+      "id": "SUP-6cdd9ff58fef5bf8",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.mechanism[4]",
+      "access": "n/a",
+      "text": "5. Décrochage des flux : puisque problèmes et solutions arrivent à des moments fixés hors du processus de choix, ils ne sont plus appariés par la logique moyens-fins. Le lien devient possible entre n'importe quels éléments : « a world in which participants, problems, choices, and solutions each have the capacity to connect to any of the others » (CMO 2012, p. 22). L'appariement se fait « partly by their simultaneous arrivals » (p. 22)."
+    },
+    {
+      "id": "SUP-e888b90d7b1c938c",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.mechanism[5]",
+      "access": "n/a",
+      "text": "6. Principe d'ordonnancement : le temps remplace la conséquence. « The extensions imply a temporal understanding of events, in contrast with an intentional or consequential one. The framing of decisions may be to a considerable extent determined by temporally unfolding processes of participation and attention » (CMO 2012, p. 26). Ce que les auteurs appellent en 2012 « temporal orders » ou « temporal sorting »."
+    },
+    {
+      "id": "SUP-984c0d173a358224",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.mechanism[6]",
+      "access": "n/a",
+      "text": "7. Modulation par la structure : les rencontres ne sont pas également probables partout. « Open, specialized, or hierarchical patterns can be seen to enable the colliding or separating of problems, solutions, participants, and choice opportunities differentially » (CMO 2012, p. 26). C'est ce que le modèle de 1972 formalise, selon les auteurs, sous « the varying accessibility of decisions » (p. 26)."
+    },
+    {
+      "id": "SUP-18911210f4e0cda6",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.mechanism[7]",
+      "access": "n/a",
+      "text": "8. Issues du processus : la résolution n'est qu'une issue parmi d'autres. « The extensions imply that, often, problems may not be resolved by decisions. They might flee to new choices, or simply be overlooked » (CMO 2012, p. 26). Deux sorties non résolutives sont donc explicitement nommées par les auteurs : la fuite du problème vers une autre occasion de choix, et le fait qu'il soit purement et simplement négligé."
+    },
+    {
+      "id": "SUP-fc6cc4788e9e8c59",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.mechanism[8]",
+      "access": "n/a",
+      "text": "9. Effet d'ensemble : « the rituals of choice are seen to exercise problems, solutions, and decision makers in ways that satisfy expectations of human intentionality, understanding, and control without reliably generating solutions of substantive problems » (CMO 2012, p. 26). Le processus produit de la décision et satisfait l'attente d'intentionnalité, sans produire de façon fiable la résolution des problèmes de fond."
+    },
+    {
+      "id": "SUP-63ddbec6daf6ca89",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.mechanism[9]",
+      "access": "n/a",
+      "text": "10. Statut du modèle : un modèle de simulation délibérément appauvri. « the hope was that if the simulation was kept extremely simple and abstract, by foregoing realistic details, readers could easily apprehend its workings and more readily extend or modify it » (CMO 2012, p. 22). Le calcul a été achevé en Norvège ; l'article a été « mostly written in Norway in 1970 » (p. 23)."
+    },
+    {
+      "id": "SUP-e1591efae8c4fc18",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.mechanism[10]",
+      "access": "n/a",
+      "text": "11. Portée revendiquée : « The paper presented ‘A … model,’ not ‘The … model,’ and was an attempt to enlarge rather than to replace other interpretations of organizational life » (CMO 2012, p. 23). Et : « there is room for the components of human agency, but it is both bounded and contextually variable » (p. 23)."
+    },
+    {
+      "id": "SUP-072ea3598c9ba9bf",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.conditions.appears_when[0]",
+      "access": "n/a",
+      "text": "Les buts sont ambigus ET disputés : on ne peut qu'occasionnellement, difficilement, dériver une ligne d'action d'un but unique (CMO 2012, p. 21)."
+    },
+    {
+      "id": "SUP-9b7e8da7e2903d53",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.conditions.appears_when[1]",
+      "access": "n/a",
+      "text": "Le savoir causal est ni assez précis ni assez partagé pour rendre la décision facile (CMO 2012, p. 21)."
+    },
+    {
+      "id": "SUP-0c456ee47a7d340a",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.conditions.appears_when[2]",
+      "access": "n/a",
+      "text": "L'attention est une ressource rare : consacrée à une chose, elle ne l'est pas à une autre (CMO 2012, p. 22)."
+    },
+    {
+      "id": "SUP-6b11ead4bfab80fa",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.conditions.appears_when[3]",
+      "access": "n/a",
+      "text": "Problèmes et solutions arrivent à des moments déterminés de l'extérieur du processus de choix (CMO 2012, p. 22)."
+    },
+    {
+      "id": "SUP-33395a55d3421d3d",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.conditions.intensified_by[0]",
+      "access": "n/a",
+      "text": "La multiplicité des arènes de décision qui « se font concurrence » pour les problèmes, les solutions et le temps des décideurs (CMO 2012, p. 22)."
+    },
+    {
+      "id": "SUP-17d5a5988020a1e9",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.conditions.intensified_by[1]",
+      "access": "n/a",
+      "text": "Les structures d'accès ouvertes, qui laissent se percuter (« colliding ») problèmes, solutions, participants et occasions de choix (CMO 2012, p. 26)."
+    },
+    {
+      "id": "SUP-eddcecd9bbc273b4",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.conditions.disappears_when[0]",
+      "access": "n/a",
+      "text": "Les structures spécialisées ou hiérarchiques séparent (« separating ») les flux au lieu de les laisser se percuter (CMO 2012, p. 26). NB : les auteurs présentent cet effet comme différentiel, pas comme une abolition."
+    },
+    {
+      "id": "SUP-3de428a281e39493",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.conditions.disappears_when[1]",
+      "access": "n/a",
+      "text": "ATTENTION — les auteurs distinguent en 2012 (p. 24-25) trois lectures de leurs idées et rapportent, SANS la reprendre à leur compte, la position d'un troisième groupe pour qui les processus de poubelle sont « pathological and irrational » et « could be reduced or eliminated by reforming organizations ». On ne peut donc pas leur attribuer une condition de disparition par le design organisationnel."
+    },
+    {
+      "id": "SUP-a6a07b56ddbf2dbf",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.key_quotation.text",
+      "access": "n/a",
+      "text": "Une idée centrale de l'article d'origine n'était pas que le monde fût inexplicablement chaotique, mais que l'apparence du chaos venait de l'application d'un modèle erroné à une réalité temporelle ordonnée. La poubelle, en ces termes, dépeint un monde ordonné, mais qui parvient à l'ordre d'une manière différente de celle que glorifiaient les Lumières."
+    },
+    {
+      "id": "SUP-d40577591c8983c5",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.key_quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-faabf8d1243848e8",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.key_quotation.original_text",
+      "access": "n/a",
+      "text": "A central notion of the original paper was not that the world was inexplicably chaotic but that the appearance of chaos came from the application of an erroneous model to an orderly temporal reality. The garbage can, in those terms, portrays an orderly world, but one that achieves order in a way different from that glorified by the Enlightenment."
+    },
+    {
+      "id": "SUP-f449d8e63d6c5db3",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.key_quotation.original_language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-fa10748fbec8b7b0",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.key_quotation.translation.kind",
+      "access": "n/a",
+      "text": "in-house"
+    },
+    {
+      "id": "SUP-3b784152c3e44361",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.key_quotation.translation.translator",
+      "access": "n/a",
+      "text": "Traduction interne non publiée (agent corpus-primary-reader, chaîne Curiosity). Aucune traduction française publiée de ce chapitre n'a été identifiée."
+    },
+    {
+      "id": "SUP-3cb10a31daaf7b79",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.key_quotation.attributed_to",
+      "access": "n/a",
+      "text": "Michael D. Cohen, James G. March et Johan P. Olsen"
+    },
+    {
+      "id": "SUP-961bdd37b1ba9ced",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.key_quotation.locator",
+      "access": "n/a",
+      "text": "Chap. « ‘A Garbage Can Model’ at Forty: A Solution that Still Attracts Problems », section « The Progeny of Garbage Can Ideas », p. 28"
+    },
+    {
+      "id": "SUP-f74451feed3791e5",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.key_quotation._avertissement_obligatoire",
+      "access": "n/a",
+      "text": "Ce passage est de 2012, PAS de l'article de 1972. Il est signé des trois mêmes auteurs et porte explicitement sur « the original paper ». Toute mise en page qui laisserait croire qu'il s'agit d'une phrase de l'article de 1972 serait une fausse attribution."
+    },
+    {
+      "id": "SUP-575f4355a099f4d5",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.key_quotation._alternatives_verbatim_meme_source[0].locator",
+      "access": "n/a",
+      "text": "p. 22, section « The ‘Birth’ of a Garbage Can Model »"
+    },
+    {
+      "id": "SUP-b3b9c0e2d7f5c9e2",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.key_quotation._alternatives_verbatim_meme_source[0].text",
+      "access": "n/a",
+      "text": "So, we set out to consider some ideas about organizational decision making in what we called \"organized anarchies\": where attention is a scarce resource that, when devoted to one thing, cannot be devoted to another; where there are multiple decision arenas that \"compete\" for problems, solutions and decision maker time; where problems and solutions arrive at times exogenously determined and are linked partly by their simultaneous arrivals."
+    },
+    {
+      "id": "SUP-fb6890156d67d8c7",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.key_quotation._alternatives_verbatim_meme_source[0].pourquoi",
+      "access": "n/a",
+      "text": "Énonce les conditions constitutives de l'anarchie organisée dans les mots des auteurs. 434 caractères, autonome."
+    },
+    {
+      "id": "SUP-1da54e4d574ffe74",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.key_quotation._alternatives_verbatim_meme_source[1].locator",
+      "access": "n/a",
+      "text": "p. 22, section « The ‘Birth’ of a Garbage Can Model »"
+    },
+    {
+      "id": "SUP-b839e2ed8c3dd52c",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.key_quotation._alternatives_verbatim_meme_source[1].text",
+      "access": "n/a",
+      "text": "It asks a lot of a modern social scientist – indeed of any person with a post-War education – to give up a tidy world in which problems imply solutions over which participants exercise choice, and to replace it with a world in which participants, problems, choices, and solutions each have the capacity to connect to any of the others."
+    },
+    {
+      "id": "SUP-b3808cf23d250584",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.key_quotation._alternatives_verbatim_meme_source[1].pourquoi",
+      "access": "n/a",
+      "text": "Énoncé le plus ramassé du mécanisme lui-même. Réserve : commence par « It », dont le référent (la perspective de la poubelle) est hors phrase."
+    },
+    {
+      "id": "SUP-965bd52eecfb778d",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.primary_sources[0].citation",
+      "access": "metadata-only",
+      "text": "Michael D. Cohen, James G. March et Johan P. Olsen, « A Garbage Can Model of Organizational Choice », Administrative Science Quarterly, vol. 17, n° 1, mars 1972, p. 1-25."
+    },
+    {
+      "id": "SUP-561772a7977fe47e",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.primary_sources[0].language",
+      "access": "metadata-only",
+      "text": "en"
+    },
+    {
+      "id": "SUP-99dff9fa81e87510",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.primary_sources[0].kind",
+      "access": "metadata-only",
+      "text": "article"
+    },
+    {
+      "id": "SUP-d75c7443a9423462",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.primary_sources[0].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.2307/2392088"
+    },
+    {
+      "id": "SUP-357619a10f121555",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.primary_sources[0].url",
+      "access": "metadata-only",
+      "text": "https://doi.org/10.2307/2392088"
+    },
+    {
+      "id": "SUP-a41a6f12c6a2c8c1",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.primary_sources[0].locator",
+      "access": "metadata-only",
+      "text": "Article entier, p. 1-25. Le passage visé par la commande (organisation comme « collection of choices looking for problems… ») se situerait p. 1-2, section d'ouverture — localisation NON vérifiée."
+    },
+    {
+      "id": "SUP-6607deba435db6ab",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.primary_sources[0].evidence",
+      "access": "metadata-only",
+      "text": "AUCUN CONTENU ÉTABLI PAR CETTE SOURCE DANS CETTE SESSION. Métadonnées résolues et concordantes via Crossref (titre, trois auteurs, 1972, ASQ, p. 1-25 ; 4604 citations). Le texte n'a pas été ouvert. Voies tentées et résultats : JSTOR (stable/2392088) inaccessible depuis cet environnement ; SAGE (journals.sagepub.com/doi/10.2307/2392088) → HTTP 403 ; Unpaywall → oa_status \"closed\", is_oa false, has_repository_copy false, aucune oa_location ; aucun dépôt institutionnel ni page d'auteur trouvé (recherches ciblées deepblue.lib.umich.edu, uio.no, stanford.edu, escholarship, CBS, UiB, CORE) ; réédition en volume (March & Olsen, Ambiguity and Choice in Organizations, 1976, ch. 2) présente sur archive.org mais en prêt contrôlé, fichiers texte protégés (HTTP 401) ; HathiTrust : ASQ en « Limited (search-only) » ; Google Books API en quota épuisé (HTTP 429). Les copies PDF circulant sur Scribd, ResearchGate et un blog WordPress ont été écartées : republication non autorisée, provenance non traçable."
+    },
+    {
+      "id": "SUP-58aa6ab8feaf055a",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.primary_sources[1].citation",
+      "access": "full-text",
+      "text": "Michael D. Cohen, James G. March et Johan P. Olsen, « ‘A Garbage Can Model’ at Forty: A Solution that Still Attracts Problems », in Alessandro Lomi et J. Richard Harrison (dir.), The Garbage Can Model of Organizational Choice: Looking Forward at Forty, Research in the Sociology of Organizations, vol. 36, Bingley, Emerald Group Publishing, 2012, p. 19-30."
+    },
+    {
+      "id": "SUP-489753db9b958f06",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.primary_sources[1].language",
+      "access": "full-text",
+      "text": "en"
+    },
+    {
+      "id": "SUP-7b94f3b5ea70e5f7",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.primary_sources[1].kind",
+      "access": "full-text",
+      "text": "chapter"
+    },
+    {
+      "id": "SUP-7f84fe540f4c7d05",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.primary_sources[1].doi_isbn",
+      "access": "full-text",
+      "text": "10.1108/S0733-558X(2012)0000036005 ; ISBN 978-1-78052-712-3 (imprimé), 978-1-78052-713-0 (e-book)"
+    },
+    {
+      "id": "SUP-f645130fab254bd9",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.primary_sources[1].url",
+      "access": "full-text",
+      "text": "https://api.pageplace.de/preview/DT0400.9781780527130_A24157121/preview-9781780527130_A24157121.pdf"
+    },
+    {
+      "id": "SUP-d5b79b69d3e43d26",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.primary_sources[1].locator",
+      "access": "full-text",
+      "text": "Chapitre entier, p. 19-30. Sections lues : « Introduction » (p. 19-20), « The ‘Birth’ of a Garbage Can Model » (p. 20-23), « A Child of the Enlightenment » (p. 23-25), « The Progeny of Garbage Can Ideas » (p. 25-28), références (p. 29-30)."
+    },
+    {
+      "id": "SUP-8e9915197f57cf6e",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.primary_sources[1].evidence",
+      "access": "full-text",
+      "text": "Rétrospective signée des trois auteurs de l'article de 1972, quarante ans après. Elle établit, dans leurs mots : les trois conditions observées à l'origine (buts ambigus et disputés, technologie causale non partagée, participation dépendant des sollicitations concurrentes d'attention, p. 21-22) ; la définition de l'« organized anarchy » par la rareté de l'attention, la concurrence entre arènes de décision et l'arrivée exogène des problèmes et des solutions (p. 22) ; le décrochage des flux (« each have the capacity to connect to any of the others », p. 22) ; l'ordre temporel opposé à l'ordre conséquentiel (p. 26) ; le rôle différentiel des structures ouvertes, spécialisées ou hiérarchiques (p. 26) ; les issues non résolutives (« flee to new choices, or simply be overlooked », p. 26) ; le statut de simulation volontairement simple (p. 22) ; la portée revendiquée (« A … model », non « The … model », p. 23) ; et le démenti explicite de la lecture « chaos » (p. 27-28). Lu intégralement via le PDF de prévisualisation mis en ligne par le distributeur d'e-books du volume Emerald (pageplace.de) : provenance éditeur, pas de copie pirate."
+    },
+    {
+      "id": "SUP-953abcb073e12586",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.primary_sources[2].citation",
+      "access": "metadata-only",
+      "text": "James G. March et Johan P. Olsen (dir.), Ambiguity and Choice in Organizations, Bergen, Universitetsforlaget, 1976 (2e éd. 1979) — réédition de l'article de 1972 en chapitre."
+    },
+    {
+      "id": "SUP-4f9118c3bd0ff205",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.primary_sources[2].language",
+      "access": "metadata-only",
+      "text": "en"
+    },
+    {
+      "id": "SUP-5285f0a33deecb53",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.primary_sources[2].kind",
+      "access": "metadata-only",
+      "text": "book"
+    },
+    {
+      "id": "SUP-2b7c9d05d404c997",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.primary_sources[2].doi_isbn",
+      "access": "metadata-only",
+      "text": "ISBN 82-00-01478-9 (1976) ; 82-00-01960-8 (1979)"
+    },
+    {
+      "id": "SUP-9bb9cc17ec5f7772",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.primary_sources[2].url",
+      "access": "metadata-only",
+      "text": "https://archive.org/details/ambiguitychoicei0000marc_k5a7"
+    },
+    {
+      "id": "SUP-b47924c90690700b",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.primary_sources[2].locator",
+      "access": "metadata-only",
+      "text": "Pagination du chapitre reprenant l'article de 1972 NON vérifiée."
+    },
+    {
+      "id": "SUP-25db573a2fa3f851",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.primary_sources[2].evidence",
+      "access": "metadata-only",
+      "text": "AUCUN CONTENU ÉTABLI. Exemplaires numérisés repérés sur Internet Archive (1976 et 1979) mais en prêt contrôlé : lendingStatus.is_readable false, téléchargement du texte océrisé refusé (HTTP 401), API « search inside » injoignable depuis cet environnement (CONNECT 502). Existence et données d'édition seules établies. Signalé ici parce que c'est la voie d'accès propre la plus plausible pour un relecteur disposant d'un compte Internet Archive ou d'une bibliothèque."
+    },
+    {
+      "id": "SUP-36e6656713825cd0",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.secondary_sources[0].citation",
+      "access": "n/a",
+      "text": "Alessandro Lomi et J. Richard Harrison, « The Garbage Can Model of Organizational Choice: Looking Forward at Forty » (introduction), in Research in the Sociology of Organizations, vol. 36, Emerald, 2012, p. 3-17."
+    },
+    {
+      "id": "SUP-33ee0c55c0ee3519",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.secondary_sources[0].language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-9db77383fe6116cf",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.secondary_sources[0].doi_isbn",
+      "access": "n/a",
+      "text": "10.1108/S0733-558X(2012)0000036004"
+    },
+    {
+      "id": "SUP-3439edbeaae41528",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.secondary_sources[0].url",
+      "access": "n/a",
+      "text": "https://api.pageplace.de/preview/DT0400.9781780527130_A24157121/preview-9781780527130_A24157121.pdf"
+    },
+    {
+      "id": "SUP-df72d4da8a203815",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.secondary_sources[0].role",
+      "access": "n/a",
+      "text": "interpretation"
+    },
+    {
+      "id": "SUP-b80523c4c3dd72bf",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.secondary_sources[0].establishes",
+      "access": "n/a",
+      "text": "Lu intégralement (p. 3-17). Établit une lecture du modèle par des tiers : les participants, problèmes et solutions y sont des objets « primitifs », non expliqués dans le modèle (p. 4) ; « participants carry energy that is needed for organizational choices to be made, and decide where to take it. Problems attach themselves to choices and absorb the energy of the participants. Solutions – the output of problem solving – carry energy out of the system » (p. 4-5) ; les indicateurs du modèle (problem latency, decision maker activity) sont des instruments de comptabilité, non des causes (p. 5) ; le modèle offre au problème de l'agence « a radical solution based on temporal, rather than consequential, ordering » (p. 6) ; mise en garde : lire le modèle de 1972 comme un modèle multi-agents ante litteram « needs to be taken with great care », car aucune interaction directe entre agents n'y est spécifiée (p. 6-7). Rapporte la critique de Padgett (1980, p. 583) : « [G]arbage can processes seem curiously divorced from the familiar structural phenomena of organizational differentiation, centralization policy, and standard operating procedures. » À traiter par corpus-reception-analyst : c'est un commentaire, pas la parole des auteurs."
+    },
+    {
+      "id": "SUP-1f5d80c9fa7af3cc",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.secondary_sources[0].level",
+      "access": "n/a",
+      "text": "B"
+    },
+    {
+      "id": "SUP-371e8887a31c6250",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.secondary_sources[1].citation",
+      "access": "n/a",
+      "text": "David R. Gibson, « Turn-Taking and Geopolitics in the Making of Decisions », in Research in the Sociology of Organizations, vol. 36, Emerald, 2012, p. 33-64 (p. 33-35 lues)."
+    },
+    {
+      "id": "SUP-1a893a3e227b56dc",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.secondary_sources[1].language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-8a50e4ae999febe5",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.secondary_sources[1].doi_isbn",
+      "access": "n/a",
+      "text": "10.1108/S0733-558X(2012)0000036006"
+    },
+    {
+      "id": "SUP-791d29851b2411c0",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.secondary_sources[1].url",
+      "access": "n/a",
+      "text": "https://api.pageplace.de/preview/DT0400.9781780527130_A24157121/preview-9781780527130_A24157121.pdf"
+    },
+    {
+      "id": "SUP-6ac2050757e59cf0",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.secondary_sources[1].role",
+      "access": "n/a",
+      "text": "interpretation"
+    },
+    {
+      "id": "SUP-8d9bfef85e89ca3c",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.secondary_sources[1].establishes",
+      "access": "n/a",
+      "text": "Fournit un pointeur de page vers l'article de 1972 que je n'ai pas pu vérifier moi-même : « Cohen et al. (1972) say that all organizations are like this at least some of the time, and public, educational, and ‘illegitimate’ organizations more so than others (p. 1) » (Gibson 2012, p. 34). Si ce pointeur est exact, la portée de l'anarchie organisée est posée dès la p. 1 de l'article de 1972 comme une propriété intermittente de TOUTE organisation, plus marquée dans certaines. À vérifier sur le texte de 1972 — c'est un tiers qui parle."
+    },
+    {
+      "id": "SUP-3fee04e82b46d84d",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.secondary_sources[1].level",
+      "access": "n/a",
+      "text": "B"
+    },
+    {
+      "id": "SUP-8109cc9ad6aebbba",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.translation_notes[0].term_source",
+      "access": "n/a",
+      "text": "organized anarchy"
+    },
+    {
+      "id": "SUP-d68c853da24f134a",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.translation_notes[0].term_fr",
+      "access": "n/a",
+      "text": "anarchie organisée"
+    },
+    {
+      "id": "SUP-7fb2b9b48c72a8f2",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.translation_notes[0].note",
+      "access": "n/a",
+      "text": "L'expression anglaise est un oxymore désignant un ensemble de propriétés spécifiées (buts ambigus et disputés, savoir causal non partagé, participation dépendante de l'attention disponible), pas un état de désordre. Le français « anarchie » charge le mot d'une connotation de chaos que les auteurs récusent explicitement (CMO 2012, p. 27-28). Certains textes francophones emploient « anarchie organisée » comme équivalent du modèle lui-même : c'est une confusion, voir known_ambiguities."
+    },
+    {
+      "id": "SUP-cd6351449fbdc778",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.translation_notes[1].term_source",
+      "access": "n/a",
+      "text": "garbage can"
+    },
+    {
+      "id": "SUP-5efa84e0d319b1b9",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.translation_notes[1].term_fr",
+      "access": "n/a",
+      "text": "poubelle / corbeille"
+    },
+    {
+      "id": "SUP-a78fe32d50c877db",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.translation_notes[1].note",
+      "access": "n/a",
+      "text": "Les auteurs qualifient l'expression de « handy simile » entrée dans la discussion par commodité, dont ils n'attendaient pas la survie (CMO 2012, p. 22). Le français hésite entre « modèle de la poubelle », « modèle de la corbeille » et « modèle du bac à ordures ». Aucune traduction française publiée de l'article de 1972 n'a été identifiée : il n'existe donc pas de forme française canonique."
+    },
+    {
+      "id": "SUP-fab9d0bed9f61142",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.translation_notes[2].term_source",
+      "access": "n/a",
+      "text": "unclear technology"
+    },
+    {
+      "id": "SUP-382ddc76f9703c6d",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.translation_notes[2].term_fr",
+      "access": "n/a",
+      "text": "technologie floue / incertaine"
+    },
+    {
+      "id": "SUP-eb464f0afb85590f",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.translation_notes[2].note",
+      "access": "n/a",
+      "text": "« Technology » = le savoir causal moyens-fins de l'organisation, pas un équipement technique. Les auteurs glosent : « People knew and believed some things about the causal system underlying education, but those beliefs were not precise enough or shared enough to make decisions easy » (CMO 2012, p. 21). Ils reformulent d'ailleurs eux-mêmes ce trait, en 2012, par « unclear causal understanding » (p. 26)."
+    },
+    {
+      "id": "SUP-046d0088ad92a9b2",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.translation_notes[3].term_source",
+      "access": "n/a",
+      "text": "choice opportunity"
+    },
+    {
+      "id": "SUP-592c312c70f66220",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.translation_notes[3].term_fr",
+      "access": "n/a",
+      "text": "occasion de choix"
+    },
+    {
+      "id": "SUP-f6af6d56fb4aa479",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.translation_notes[3].note",
+      "access": "n/a",
+      "text": "L'un des quatre flux. Le français « opportunité de décision » calque l'anglais ; « occasion de choix » est plus juste : il s'agit d'un moment institué où l'organisation est censée produire une décision. NB : le terme exact employé dans l'article de 1972 n'a pas été vérifié ici ; en 2012 les auteurs écrivent « choice opportunities » (p. 26) et « decision opportunities » (Lomi & Harrison, p. 8)."
+    },
+    {
+      "id": "SUP-bb7a171d0ba103a2",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.translation_notes[4].term_source",
+      "access": "n/a",
+      "text": "fluid participation"
+    },
+    {
+      "id": "SUP-d55363adca023d51",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.translation_notes[4].term_fr",
+      "access": "n/a",
+      "text": "participation fluide"
+    },
+    {
+      "id": "SUP-7afd5f4c3412fec1",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.translation_notes[4].note",
+      "access": "n/a",
+      "text": "Ni « participation flottante » ni « participation instable » : ce que le mot vise est le va-et-vient des participants d'une arène à l'autre selon les sollicitations d'attention concurrentes (CMO 2012, p. 22)."
+    },
+    {
+      "id": "SUP-6707febbb6c5d80f",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.translation_notes[5].term_source",
+      "access": "n/a",
+      "text": "temporal order / temporal sorting"
+    },
+    {
+      "id": "SUP-4f8a8ad1d3b018b0",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.translation_notes[5].term_fr",
+      "access": "n/a",
+      "text": "ordre temporel / tri temporel"
+    },
+    {
+      "id": "SUP-e6b8b6b0e6cbae24",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.translation_notes[5].note",
+      "access": "n/a",
+      "text": "Terme central et souvent perdu en français. Il ne s'agit pas d'une chronologie mais d'un PRINCIPE D'APPARIEMENT : ce qui relie un problème à une solution est leur coprésence dans le temps, non leur adéquation. Les auteurs l'opposent explicitement à « an intentional or consequential » ordering (CMO 2012, p. 26)."
+    },
+    {
+      "id": "SUP-459d74695b73eb5b",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.translation_notes[6].term_source",
+      "access": "n/a",
+      "text": "problematic preferences"
+    },
+    {
+      "id": "SUP-784a3936cdd6afad",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.translation_notes[6].term_fr",
+      "access": "n/a",
+      "text": "préférences problématiques"
+    },
+    {
+      "id": "SUP-acd2d32bdefe37dc",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.translation_notes[6].note",
+      "access": "n/a",
+      "text": "Terme canoniquement attribué à l'article de 1972 — NON vérifié sur le texte de 1972 dans cette session. Dans leur rétrospective de 2012, les auteurs écrivent « ambiguous preferences » (p. 26). Écart terminologique à trancher sur le texte de 1972."
+    },
+    {
+      "id": "SUP-eecc76f28b40892f",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.known_ambiguities[0]",
+      "access": "n/a",
+      "text": "« Anarchie organisée » et « modèle de la poubelle » ne sont pas interchangeables. Sur la seule source primaire ouverte ici : l'anarchie organisée est le CADRE — la classe de situations que les auteurs se sont donnée pour objet (« we set out to consider some ideas about organizational decision making in what we called ‘organized anarchies’ », CMO 2012, p. 22) ; la poubelle est le SIMILE puis le modèle du processus qui s'y déroule (« The label ‘garbage can’ entered the discussion as a handy simile while we discussed observations we had all made repeatedly, that somewhat bizarre combinations of issues were often found to be at stake in actual organizational choices », p. 22). L'anarchie organisée est donc la condition d'entrée ; la poubelle est le mécanisme. CE QUE JE N'AI PAS PU ÉTABLIR : ce que l'article de 1972 fait exactement de chacune — s'il définit formellement l'anarchie organisée par trois propriétés numérotées avant de construire le modèle, ou s'il la présuppose. La lecture courante (définition explicite en ouverture, p. 1) est corroborée par un tiers (Gibson 2012, p. 34, qui renvoie à la p. 1) mais non vérifiée sur le texte."
+    },
+    {
+      "id": "SUP-2a9fefe16050c82f",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.known_ambiguities[1]",
+      "access": "n/a",
+      "text": "Nombre de traits constitutifs : la tradition en compte trois (préférences problématiques, technologie floue, participation fluide). Les auteurs, en 2012, en énumèrent QUATRE : « ambiguous preferences, unclear causal understanding, fluid participation, and the varying accessibility of decisions » (p. 26). L'accessibilité variable des décisions (les structures d'accès et de décision) est-elle une quatrième propriété de l'anarchie organisée ou un paramètre du modèle ? La question ne se tranche que sur le texte de 1972."
+    },
+    {
+      "id": "SUP-66d68656c403b6e8",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.known_ambiguities[2]",
+      "access": "n/a",
+      "text": "Le vocabulaire des trois issues d'une occasion de choix (résolution / oversight / flight) est universellement attribué à l'article de 1972. Je n'ai pu vérifier ici que la substance de deux d'entre elles, dans les mots des auteurs en 2012 : « They might flee to new choices, or simply be overlooked » (p. 26). Les étiquettes elles-mêmes, et leur définition technique dans la simulation, restent non vérifiées."
+    },
+    {
+      "id": "SUP-0e272a5a0794bc84",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.known_ambiguities[3]",
+      "access": "n/a",
+      "text": "Le dispositif de simulation de 1972 (charge d'énergie des participants, structures d'accès et de décision pures et mixtes, conditions expérimentées, indicateurs de latence des problèmes) n'a pas été lu. Ce que j'en rapporte via Lomi & Harrison (2012, p. 4-5) est une source secondaire."
+    },
+    {
+      "id": "SUP-9102f0e0df3b42e1",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.common_misinterpretations[0].claim",
+      "access": "n/a",
+      "text": "Le modèle décrirait une décision aléatoire, chaotique ou désordonnée."
+    },
+    {
+      "id": "SUP-92600519a5c23960",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.common_misinterpretations[0].why_wrong",
+      "access": "n/a",
+      "text": "Les auteurs l'écartent explicitement : « A central notion of the original paper was not that the world was inexplicably chaotic but that the appearance of chaos came from the application of an erroneous model to an orderly temporal reality. The garbage can, in those terms, portrays an orderly world, but one that achieves order in a way different from that glorified by the Enlightenment » (CMO 2012, p. 28). Ils datent et expliquent la méprise : leurs idées ont été « naturally, and to some extent misleadingly, consigned to these traditions » de Fortuna, du hasard et du destin, au point que « To many, ‘garbage can processes’ became a catch-all expression for disorder » (p. 27-28). Le désordre n'est pas dans l'objet, il est dans le modèle avec lequel on le regarde."
+    },
+    {
+      "id": "SUP-24c12f23dd3ec8ad",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.common_misinterpretations[0].source",
+      "access": "n/a",
+      "text": "Cohen, March & Olsen 2012, p. 27-28"
+    },
+    {
+      "id": "SUP-18e4d93bdcecfaed",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.common_misinterpretations[1].claim",
+      "access": "n/a",
+      "text": "Le modèle prétendrait remplacer les théories rationnelles de la décision."
+    },
+    {
+      "id": "SUP-2a7e3765f83db783",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.common_misinterpretations[1].why_wrong",
+      "access": "n/a",
+      "text": "« The paper presented ‘A … model,’ not ‘The … model,’ and was an attempt to enlarge rather than to replace other interpretations of organizational life » (CMO 2012, p. 23). L'article indéfini est revendiqué comme tel par les auteurs."
+    },
+    {
+      "id": "SUP-06ec35169597e4b2",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.common_misinterpretations[1].source",
+      "access": "n/a",
+      "text": "Cohen, March & Olsen 2012, p. 23"
+    },
+    {
+      "id": "SUP-409679d4839c080f",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.common_misinterpretations[2].claim",
+      "access": "n/a",
+      "text": "Dans une poubelle organisationnelle, l'intention et l'agence n'existent plus."
+    },
+    {
+      "id": "SUP-c350aa8a1cc0db5a",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.common_misinterpretations[2].why_wrong",
+      "access": "n/a",
+      "text": "« Thus there is room for the components of human agency, but it is both bounded and contextually variable » (CMO 2012, p. 23). Les auteurs maintiennent deux observations simultanées : les organisations sont « relatively enduring structures that do provide some control and accomplish some purposes » ET « organizational life often makes meaning and generates action through temporal orderings that can defy understanding, purpose, or control » (p. 23)."
+    },
+    {
+      "id": "SUP-a4701c2274973a16",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.common_misinterpretations[2].source",
+      "access": "n/a",
+      "text": "Cohen, March & Olsen 2012, p. 23"
+    },
+    {
+      "id": "SUP-0aa055fb5124e861",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.common_misinterpretations[3].claim",
+      "access": "n/a",
+      "text": "Le modèle est un diagnostic de dysfonctionnement, et son usage normal est de dire comment y remédier."
+    },
+    {
+      "id": "SUP-f21df57ad1266e8a",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.common_misinterpretations[3].why_wrong",
+      "access": "n/a",
+      "text": "Les auteurs recensent en 2012 trois usages de leurs idées et ne se rangent à aucun. Le troisième groupe, celui qui « saw the realities as normatively unacceptable » et tient que « Garbage can processes were perceived as pathological and irrational. Such a world had to be changed », est décrit comme une réception, à la troisième personne, et rattaché à une croyance héritée des Lumières que les auteurs mettent à distance (« We are all children of the Enlightenment », p. 23 ; « we might also have been more surprised to encounter the belief that garbage can features can be willfully eliminated from organizational life », p. 25). Décrire n'est pas prescrire, et recenser une lecture n'est pas la souscrire."
+    },
+    {
+      "id": "SUP-223ca822182ef150",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.common_misinterpretations[3].source",
+      "access": "n/a",
+      "text": "Cohen, March & Olsen 2012, p. 24-25"
+    },
+    {
+      "id": "SUP-8a0ed540eca29ded",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.common_misinterpretations[4].claim",
+      "access": "n/a",
+      "text": "La structure organisationnelle est sans effet dans le modèle."
+    },
+    {
+      "id": "SUP-648cc537de28030c",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.common_misinterpretations[4].why_wrong",
+      "access": "n/a",
+      "text": "« In a garbage can perspective, structures can also be understood differently. Open, specialized, or hierarchical patterns can be seen to enable the colliding or separating of problems, solutions, participants, and choice opportunities differentially » (CMO 2012, p. 26). La structure ne disparaît pas : elle change de fonction, elle règle les rencontres au lieu de dériver les décisions des buts."
+    },
+    {
+      "id": "SUP-8c445ef30246ee62",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.common_misinterpretations[4].source",
+      "access": "n/a",
+      "text": "Cohen, March & Olsen 2012, p. 26"
+    },
+    {
+      "id": "SUP-83dba3c1f7736fd2",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.common_misinterpretations[5].claim",
+      "access": "n/a",
+      "text": "Le modèle de 1972 est un modèle multi-agents avant l'heure."
+    },
+    {
+      "id": "SUP-996daeb4d67a86cd",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.common_misinterpretations[5].why_wrong",
+      "access": "n/a",
+      "text": "Mise en garde des éditeurs du volume : « Within the original model, no direct interaction among agents is specified; interaction is induced by incidental processes of temporal sorting » ; « Our implicit suggestion that the GCM may be interpreted as an ante litteram agent-based model, therefore, needs to be taken with great care » (Lomi & Harrison 2012, p. 6-7). Source secondaire — relève de corpus-reception-analyst."
+    },
+    {
+      "id": "SUP-0d5709a18eac0233",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.common_misinterpretations[5].source",
+      "access": "n/a",
+      "text": "Lomi & Harrison 2012, p. 6-7"
+    },
+    {
+      "id": "SUP-e986cdc9ee7d1f51",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.limitations[0]",
+      "access": "n/a",
+      "text": "Ce que j'établis du mécanisme repose sur la rétrospective des auteurs (2012) et non sur l'article de 1972 lui-même. Une rétrospective à quarante ans est une source primaire quant à l'intention des auteurs, mais pas quant à la lettre du texte de 1972 : elle en reformule le vocabulaire (voir translation_notes « problematic preferences »)."
+    },
+    {
+      "id": "SUP-d8a72a76cb7c4535",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.evidence.limitations[1]",
+      "access": "n/a",
+      "text": "Aucune pagination de l'article de 1972 ne peut être donnée pour un énoncé précis. Toute fiche citant « Cohen, March & Olsen 1972, p. X » sans avoir ouvert le texte reprendrait une pagination de seconde main."
+    },
+    {
+      "id": "SUP-8faded71df00ae96",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.validation_input.confidence_flags[0]",
+      "access": "n/a",
+      "text": "Article de 1972 (source primaire visée) : consulted = metadata-only. Le texte n'a pas été ouvert par une voie de provenance propre. La fiche ne peut pas être validée sur la base de cette source."
+    },
+    {
+      "id": "SUP-bbec4a3eeeb767c3",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.validation_input.confidence_flags[1]",
+      "access": "n/a",
+      "text": "Le mécanisme et toutes les citations proviennent d'un texte SECOND des mêmes auteurs (2012), non de l'article de 1972."
+    },
+    {
+      "id": "SUP-460c91cc067b4266",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.validation_input.confidence_flags[2]",
+      "access": "n/a",
+      "text": "key_quotation est datée de 2012 et doit être affichée comme telle. Une présentation qui la rattacherait à 1972 serait une fausse attribution."
+    },
+    {
+      "id": "SUP-b0f8be5c25aad4fe",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.validation_input.confidence_flags[3]",
+      "access": "n/a",
+      "text": "key_quotation est une traduction interne non publiée : l'écran doit le signaler et conserver l'original anglais."
+    },
+    {
+      "id": "SUP-978d05f4a6eae698",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.validation_input.confidence_flags[4]",
+      "access": "n/a",
+      "text": "Aucune traduction française publiée de l'article de 1972 ni du chapitre de 2012 n'a été identifiée."
+    },
+    {
+      "id": "SUP-3dd5390372870e0b",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.validation_input.confidence_flags[5]",
+      "access": "n/a",
+      "text": "La localisation du passage d'ouverture de 1972 (« collection of choices looking for problems… ») n'a pas pu être vérifiée : ce passage ne doit pas être cité tant que le texte n'a pas été ouvert."
+    },
+    {
+      "id": "SUP-25ee748aa7601050",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.validation_input.confidence_flags[6]",
+      "access": "n/a",
+      "text": "OpenAlex et Semantic Scholar en HTTP 429 ; Zotero indisponible ; Google Books API en quota épuisé. Une reprise ultérieure pourrait donner accès au texte de 1972."
+    },
+    {
+      "id": "SUP-3eec02e7341a62d7",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.acces_tente.date",
+      "access": "n/a",
+      "text": "2026-08-16"
+    },
+    {
+      "id": "SUP-553efa301a931092",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.acces_tente.voies_propres_essayees[0].voie",
+      "access": "n/a",
+      "text": "JSTOR stable/2392088"
+    },
+    {
+      "id": "SUP-9aa041be27f3a609",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.acces_tente.voies_propres_essayees[0].resultat",
+      "access": "n/a",
+      "text": "page non chargeable depuis cet environnement"
+    },
+    {
+      "id": "SUP-7dd4d05398b163ba",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.acces_tente.voies_propres_essayees[1].voie",
+      "access": "n/a",
+      "text": "SAGE journals.sagepub.com/doi/10.2307/2392088"
+    },
+    {
+      "id": "SUP-99a200b0522d0ac2",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.acces_tente.voies_propres_essayees[1].resultat",
+      "access": "n/a",
+      "text": "HTTP 403"
+    },
+    {
+      "id": "SUP-a8a0e57a2b0a0cbf",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.acces_tente.voies_propres_essayees[2].voie",
+      "access": "n/a",
+      "text": "Unpaywall api.unpaywall.org/v2/10.2307/2392088"
+    },
+    {
+      "id": "SUP-062b73f27371184f",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.acces_tente.voies_propres_essayees[2].resultat",
+      "access": "n/a",
+      "text": "is_oa false, oa_status closed, has_repository_copy false, oa_locations vide"
+    },
+    {
+      "id": "SUP-39bd349ca963ae70",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.acces_tente.voies_propres_essayees[3].voie",
+      "access": "n/a",
+      "text": "Dépôts institutionnels et pages d'auteur (Deep Blue/UMich, DUO/UiO, Stanford, eScholarship, CBS, BORA/UiB, CORE)"
+    },
+    {
+      "id": "SUP-ea7936bd431a7b14",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.acces_tente.voies_propres_essayees[3].resultat",
+      "access": "n/a",
+      "text": "aucune version déposée par les auteurs"
+    },
+    {
+      "id": "SUP-5ee09aebe1c1d458",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.acces_tente.voies_propres_essayees[4].voie",
+      "access": "n/a",
+      "text": "Internet Archive, March & Olsen 1976/1979 (réédition en chapitre)"
+    },
+    {
+      "id": "SUP-71b0ba1973bb116f",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.acces_tente.voies_propres_essayees[4].resultat",
+      "access": "n/a",
+      "text": "prêt contrôlé ; is_readable false ; _djvu.txt en HTTP 401 ; API search-inside injoignable (CONNECT 502)"
+    },
+    {
+      "id": "SUP-d6590416ad3d3369",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.acces_tente.voies_propres_essayees[5].voie",
+      "access": "n/a",
+      "text": "HathiTrust (ASQ)"
+    },
+    {
+      "id": "SUP-0826ef6fcdc45d23",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.acces_tente.voies_propres_essayees[5].resultat",
+      "access": "n/a",
+      "text": "Limited (search-only) — pas de texte"
+    },
+    {
+      "id": "SUP-5e31bcb516102675",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.acces_tente.voies_propres_essayees[6].voie",
+      "access": "n/a",
+      "text": "Google Books API"
+    },
+    {
+      "id": "SUP-7428955ea94a4cf0",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.acces_tente.voies_propres_essayees[6].resultat",
+      "access": "n/a",
+      "text": "HTTP 429, quota journalier du projet épuisé"
+    },
+    {
+      "id": "SUP-47ace250a35d44f4",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.acces_tente.voies_propres_essayees[7].voie",
+      "access": "n/a",
+      "text": "ERIC (EJ052617)"
+    },
+    {
+      "id": "SUP-bb43d37f0269647a",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.acces_tente.voies_propres_essayees[7].resultat",
+      "access": "n/a",
+      "text": "notice bibliographique seule, pas de texte intégral"
+    },
+    {
+      "id": "SUP-f7151d19a4677063",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.acces_tente.voies_propres_essayees[8].voie",
+      "access": "n/a",
+      "text": "Prévisualisation éditeur du volume Emerald RSO 36 (api.pageplace.de)"
+    },
+    {
+      "id": "SUP-ed62223c723cfbb0",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.acces_tente.voies_propres_essayees[8].resultat",
+      "access": "n/a",
+      "text": "SUCCÈS — 48 pages, dont le chapitre intégral de Cohen, March & Olsen 2012 (p. 19-30) et l'introduction de Lomi & Harrison (p. 3-17)"
+    },
+    {
+      "id": "SUP-d333aacca197b6c8",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.acces_tente.voies_ecartees_par_principe[0]",
+      "access": "n/a",
+      "text": "Scribd (document 348927789) — republication non autorisée"
+    },
+    {
+      "id": "SUP-da6ac9910d32a0b3",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.acces_tente.voies_ecartees_par_principe[1]",
+      "access": "n/a",
+      "text": "ResearchGate (dépôts par des tiers, non par les auteurs)"
+    },
+    {
+      "id": "SUP-b534529243671150",
+      "origin": "evidence:evidence.primary-reading.json",
+      "path": "$.acces_tente.voies_ecartees_par_principe[2]",
+      "access": "n/a",
+      "text": "PDF hébergé sur un blog WordPress (perguntasaopo.files.wordpress.com) — republication non autorisée, provenance non traçable"
+    },
+    {
+      "id": "SUP-473c1362e49033a1",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$._note",
+      "access": "n/a",
+      "text": "Fragment produit par l'instruction de la RÉCEPTION (corpus-reception-analyst). Complète, et ne remplace jamais, `evidence.primary-reading.json` déposé en parallèle : rien de ce que le lecteur primaire a établi n'a été modifié ici. Objet de ce fichier : ce que la communauté savante fait du concept — attribution, interprétation, discussion — et non le concept lui-même. Chaque affirmation porte sa référence ; ce qui n'a pas pu être vérifié est consigné dans `non_etabli` plutôt que comblé."
+    },
+    {
+      "id": "SUP-9e56935555dc83d4",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "garbage-can-model"
+    },
+    {
+      "id": "SUP-9cb2e87f73b9bcff",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.canonical_name_fr",
+      "access": "n/a",
+      "text": "Modèle de la poubelle"
+    },
+    {
+      "id": "SUP-94e09d7b20adbce3",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.canonical_name_en",
+      "access": "n/a",
+      "text": "Garbage can model"
+    },
+    {
+      "id": "SUP-6a7a29dc0cca0fef",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.attribution._note",
+      "access": "n/a",
+      "text": "Corrobore le bloc `attribution_input` du lecteur primaire par la voie de la réception ; ne s'y substitue pas."
+    },
+    {
+      "id": "SUP-fd4974531d25caeb",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.attribution.authors[0].name",
+      "access": "n/a",
+      "text": "Michael D. Cohen"
+    },
+    {
+      "id": "SUP-f148b2107f305850",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.attribution.authors[1].name",
+      "access": "n/a",
+      "text": "James G. March"
+    },
+    {
+      "id": "SUP-f17df479d5e635b0",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.attribution.authors[2].name",
+      "access": "n/a",
+      "text": "Johan P. Olsen"
+    },
+    {
+      "id": "SUP-0ed890b6ef2de396",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.attribution.authorship",
+      "access": "n/a",
+      "text": "COAUTHORED"
+    },
+    {
+      "id": "SUP-82e0e952e872bcf2",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.attribution.associated_author",
+      "access": "n/a",
+      "text": "James G. March"
+    },
+    {
+      "id": "SUP-2ac5b18fdfc4ca95",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.attribution.verdict",
+      "access": "n/a",
+      "text": "COAUTHORED — et rien dans la réception consultée ne justifie de basculer vers ASSOCIATED_WITH. La signature conjointe de 1972 n'est contestée par aucune des sources examinées, et les commentateurs francophones comme anglophones citent systématiquement les trois noms lorsqu'ils citent le texte."
+    },
+    {
+      "id": "SUP-e1174f55c58d171b",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.attribution.genese_collective.etabli",
+      "access": "n/a",
+      "text": "La genèse est collective et déborde même les trois signataires. Les auteurs situent l'origine à l'University of California, Irvine, en 1968-1969, et incluent un quatrième participant au groupe de travail : « In addition, the primary group included Søren Christensen, a visitor from Denmark on leave from the faculty of Handelshøjskolen in Copenhagen. » L'article « was mostly written in Norway in 1970 » ; « Sketches of the simulation began at Irvine, and the computations were finished in Norway », avec l'aide de James R. Glenn, Jr., doctorant à Stanford."
+    },
+    {
+      "id": "SUP-7623f45b591fa1a5",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.attribution.genese_collective.source",
+      "access": "n/a",
+      "text": "Cohen, March & Olsen, « ‘A Garbage Can Model’ At Forty », Research in the Sociology of Organizations, 36, 2012, p. 21-23, DOI 10.1108/S0733-558X(2012)0000036005 — texte intégral consulté."
+    },
+    {
+      "id": "SUP-d1f16c84a451f654",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.attribution.refus_de_paternite_par_les_auteurs.etabli",
+      "access": "n/a",
+      "text": "Les trois auteurs refusent explicitement la paternité de l'idée elle-même, tout en assumant la formulation de 1972 : « Any search for true beginnings is likely to end in infinite regress. No useful idea has a sharp beginning, for each beginning has an antecedent. Garbage can ideas are like that. […] They have many ancestors and caretakers, but no parents. Certainly not us. »"
+    },
+    {
+      "id": "SUP-be5c46c3fe79b6a0",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.attribution.refus_de_paternite_par_les_auteurs.source",
+      "access": "n/a",
+      "text": "Cohen, March & Olsen 2012, p. 20, DOI 10.1108/S0733-558X(2012)0000036005 — texte intégral consulté."
+    },
+    {
+      "id": "SUP-c42d5f1d407b3d36",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.attribution.refus_de_paternite_par_les_auteurs.portee",
+      "access": "n/a",
+      "text": "Ce refus porte sur les IDÉES, pas sur le modèle de 1972 : il ne fragilise pas l'attribution du modèle aux trois signataires, il interdit seulement d'écrire qu'ils auraient inventé la conception non intentionnelle de la décision."
+    },
+    {
+      "id": "SUP-567ec0e214bc464d",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.attribution.term_origin.coined_by",
+      "access": "n/a",
+      "text": "Michael D. Cohen, James G. March et Johan P. Olsen"
+    },
+    {
+      "id": "SUP-94f04e08bce6a146",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.attribution.term_origin.coined_in",
+      "access": "n/a",
+      "text": "Oralement, dans les discussions du groupe d'Irvine, avant le titre de l'article de 1972"
+    },
+    {
+      "id": "SUP-e4185fc18653d700",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.attribution.term_origin.note",
+      "access": "n/a",
+      "text": "Attestation de première main : « The label ‘garbage can’ entered the discussion as a handy simile while we discussed observations we had all made repeatedly, that somewhat bizarre combinations of issues were often found to be at stake in actual organizational choices. We didn't expect the shorthand label for the ideas to last, but it stuck, and stimulated a cascade of interpretations » (Cohen, March & Olsen 2012, p. 22). Le terme n'est donc PAS forgé par un commentateur postérieur, et n'est pas non plus repris d'un usage antérieur : recherche Crossref sur « garbage can » + décision/organisation antérieure à 1972, aucun antécédent en sciences sociales (les seules occurrences relèvent de l'acoustique, de l'hygiène publique et de l'entomologie). La réception francophone date également l'origine de 1972 : « Lorsqu'elle fut proposée en 1972 dans l'article fondateur » (Friedberg 1997, p. 271)."
+    },
+    {
+      "id": "SUP-861593f44e6c6749",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.attribution.derive_vers_le_seul_nom_de_march.constat",
+      "access": "n/a",
+      "text": "L'usage courant range le concept sous le seul nom de March. Cette dérive est documentée comme un effet de véhicule éditorial et de vocabulaire de commentateurs, non comme une revendication de March ni comme une contestation de la coautorité."
+    },
+    {
+      "id": "SUP-533f4de6c812ac92",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.attribution.derive_vers_le_seul_nom_de_march.jalons_dates[0].fait",
+      "access": "n/a",
+      "text": "En France, le canal de diffusion du texte de 1972 est un recueil signé du seul March. A.-C. Martinet a choisi dix contributions du Decisions and Organizations de March (1989) et les a publiées en français en 1991 ; le volume contient la traduction de l'article de 1972."
+    },
+    {
+      "id": "SUP-814056526b6050b2",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.attribution.derive_vers_le_seul_nom_de_march.jalons_dates[0].source",
+      "access": "n/a",
+      "text": "Musselin, « Les universités sont-elles des anarchies organisées ? », in J. Chevallier (dir.), Désordre(s), PUF/CURAPP, 1997, p. 292, note 2 — IMPRIMÉ ROUVERT le 17 août 2026 (exemplaire CURAPP, folios 291-308), leçon vérifiée sur l'image de la page à 300 dpi et non sur la seule couche océrisée. Elle écrit : « On y trouve en particulier la traduction de l'article de 1972 rédigé avec Cohen et Olsen ‘A Garbage Can Model of Organizational Choice’ et j'utiliserai cette version française pour cette contribution, avec une exception cependant : […] » — la phrase ne s'arrête pas à « contribution » dans l'imprimé, elle enchaîne sur le choix de traduction (voir translation_notes). La même note donne le détail de l'édition : Martinet « a eu la très heureuse initiative de choisir dix contributions (parmi les dix-neuf que James G. March (1989) avait réunies dans Decisions and Organizations), et de les publier en français (1991) »."
+    },
+    {
+      "id": "SUP-a0fccfc846cba655",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.attribution.derive_vers_le_seul_nom_de_march.jalons_dates[0].vehicule",
+      "access": "n/a",
+      "text": "James G. March, Décisions et organisations, Paris, Éditions d'Organisation, 1991 (choix de textes par A.-C. Martinet)."
+    },
+    {
+      "id": "SUP-5f3400b04a259572",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.attribution.derive_vers_le_seul_nom_de_march.jalons_dates[1].fait",
+      "access": "n/a",
+      "text": "Le vocabulaire des commentateurs français suit ce véhicule et place March en position de sujet : « les travaux de March et de ses collègues », « la définition de ce type d'organisation, donnée par March et ses deux coauteurs », « les travaux de March et de ses coauteurs restent d'une grande actualité »."
+    },
+    {
+      "id": "SUP-6bfd40596fe665d4",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.attribution.derive_vers_le_seul_nom_de_march.jalons_dates[1].source",
+      "access": "n/a",
+      "text": "Musselin 1997 — localisations reprises une à une sur l'imprimé rouvert le 17 août 2026, et CORRIGÉES : « les travaux de March et de ses collègues » p. 293 ; « la définition de ce type d'organisation, donnée par March et ses deux coauteurs » p. 292 (et NON p. 295, où rien de tel ne figure : le renvoi antérieur à la p. 295 était erroné) ; « les travaux de March et de ses coauteurs restent d'une grande actualité » p. 306. Et Friedberg, « La théorie des organisations et la question de l'anarchie organisée », in J. Chevallier (dir.), Désordre(s), PUF, 1997, p. 275 : « La réflexion que March et ses collègues développent avec le ‘modèle de la poubelle’ » — textes intégraux consultés."
+    },
+    {
+      "id": "SUP-7c933f5d9f9bff83",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.attribution.derive_vers_le_seul_nom_de_march.jalons_dates[2].fait",
+      "access": "n/a",
+      "text": "Dans les manuels anglophones, le regroupement sous le nom de March est explicite dès le titre : « Behavioral Theory of the Firm, Organizational Learning, and the Garbage Can Model: Theories Involving James March »."
+    },
+    {
+      "id": "SUP-daa492e78de86875",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.attribution.derive_vers_le_seul_nom_de_march.jalons_dates[2].source",
+      "access": "n/a",
+      "text": "Organizational Behavior 6, Routledge, 2011, DOI 10.4324/9781315701967-36 — notice Crossref seule ; c'est le titre lui-même qui fait la donnée, le contenu du chapitre n'a pas été consulté."
+    },
+    {
+      "id": "SUP-f023cc4f108194c2",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.attribution.derive_vers_le_seul_nom_de_march.limite",
+      "access": "n/a",
+      "text": "Aucune source consultée ne date le glissement. La question « depuis quand » reste sans réponse établie : je ne dispose que de ces trois jalons, et non d'une histoire de l'attribution."
+    },
+    {
+      "id": "SUP-ce4f0c0ed5c27530",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.secondary_sources[0].citation",
+      "access": "n/a",
+      "text": "Jonathan Bendor, Terry M. Moe et Kenneth W. Shotts, « Recycling the Garbage Can: An Assessment of the Research Program », American Political Science Review, 95(1), 2001, p. 169-190"
+    },
+    {
+      "id": "SUP-88ed2bf5a1ba738d",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.secondary_sources[0].language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-a7cc2af7ce93b37d",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.secondary_sources[0].doi_isbn",
+      "access": "n/a",
+      "text": "10.1017/s0003055401000041"
+    },
+    {
+      "id": "SUP-235ade93265d8b98",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.secondary_sources[0].url",
+      "access": "n/a",
+      "text": "https://doi.org/10.1017/s0003055401000041"
+    },
+    {
+      "id": "SUP-5aa7a531a7c10340",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.secondary_sources[0].role",
+      "access": "n/a",
+      "text": "critique"
+    },
+    {
+      "id": "SUP-cac1f013b0ffb94d",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.secondary_sources[0].level",
+      "access": "n/a",
+      "text": "B"
+    },
+    {
+      "id": "SUP-d5f5397af0d64332",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.secondary_sources[0].establishes",
+      "access": "n/a",
+      "text": "La critique la plus dure du programme de recherche, et la pièce centrale du débat anglophone. Établit trois reproches : la théorie verbale « fails to create an adequate foundation for scientific progress » ; la reprise du code de simulation montre que « its agents move in lockstep patterns that are strikingly different from the spirit of the theory » et que « the simulation and the theory are incompatible » ; le défaut se serait aggravé dans le néo-institutionnalisme de March-Olsen. Conclusion : « a fundamental overhaul is required ». CONSULTATION : résumé d'auteur (abstract Crossref) et pagination vérifiés ; texte intégral NON consulté (Cambridge sous accès payant)."
+    },
+    {
+      "id": "SUP-a34c0e31921dfcdc",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.secondary_sources[1].citation",
+      "access": "n/a",
+      "text": "Johan P. Olsen, « Garbage Cans, New Institutionalism, and the Study of Politics », American Political Science Review, 95(1), 2001, p. 191-198"
+    },
+    {
+      "id": "SUP-51a534eafcf1f7c0",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.secondary_sources[1].language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-cf731c152376342d",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.secondary_sources[1].doi_isbn",
+      "access": "n/a",
+      "text": "10.1017/s0003055401000120"
+    },
+    {
+      "id": "SUP-de6cb1b524e8d130",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.secondary_sources[1].url",
+      "access": "n/a",
+      "text": "https://doi.org/10.1017/s0003055401000120"
+    },
+    {
+      "id": "SUP-744f1d5685781dad",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.secondary_sources[1].role",
+      "access": "n/a",
+      "text": "reception"
+    },
+    {
+      "id": "SUP-834fba894b040710",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.secondary_sources[1].level",
+      "access": "n/a",
+      "text": "B"
+    },
+    {
+      "id": "SUP-1ef8bb45465d6a43",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.secondary_sources[1].establishes",
+      "access": "n/a",
+      "text": "Réplique d'un des trois auteurs, publiée dans le même numéro que Bendor, Moe & Shotts : le débat est frontal et daté. Olsen refuse le sauvetage proposé — « Their rescue program, however, is alien to the spirit of not only our work » — et requalifie la critique en querelle d'école : « Bendor, Moe, and Shotts place themselves closer to a tradition of unproductive tribal warfare » ; « By building on a narrow concept of what is valuable political science, they cut themselves off from key issues ». CONSULTATION : résumé d'auteur (abstract Crossref) et pagination vérifiés ; texte intégral NON consulté."
+    },
+    {
+      "id": "SUP-87f8300245bd8db6",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.secondary_sources[2].citation",
+      "access": "n/a",
+      "text": "Guido Fioretti et Alessandro Lomi, « An Agent-Based Representation of the Garbage Can Model of Organizational Choice », Journal of Artificial Societies and Social Simulation, 11(1), article 1, 2008"
+    },
+    {
+      "id": "SUP-54d6a11e2494b1f2",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.secondary_sources[2].language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-a7a64007ea9fb995",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.secondary_sources[2].url",
+      "access": "n/a",
+      "text": "https://www.jasss.org/11/1/1.html"
+    },
+    {
+      "id": "SUP-8b4dcc3679b230e7",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.secondary_sources[2].role",
+      "access": "n/a",
+      "text": "interpretation"
+    },
+    {
+      "id": "SUP-11c1be27bbd1868b",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.secondary_sources[2].level",
+      "access": "n/a",
+      "text": "B"
+    },
+    {
+      "id": "SUP-87c4e8bff7590c12",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.secondary_sources[2].establishes",
+      "access": "n/a",
+      "text": "Source pivot pour l'écart de vulgarisation, parce qu'elle nomme la mésinterprétation ET donne la raison technique de sa persistance. (1) « the GCM has been frequently treated rather superficially as a metaphor for organizations as ‘structured anarchies’ paying only superficial attention to its internal logic » ; les auteurs regrettent que « the full potential of the GCM as a model of — rather than a metaphor for — organizational decision processes has not yet been fully realized » (§1.4). (2) Contre la lecture aléatoire : « Cohen, March and Olsen's computational model describes an aggregate dynamics that has little to do with random encounters of participants, opportunities, solutions and problems » (§3.14). (3) Restitue les conclusions de la simulation de 1972 : « Only a few decisions solve problems. Most decisions are made by oversight » (§6.1). (4) Position intermédiaire dans le débat : « we are able to strengthen Cohen, March and Olsen's argument while at the same time accepting Bendor, Moe and Shotts' technical criticism […] even if participants and problems do not move together — a feature of the original model that Bendor, Moe and Shotts rightly criticised — the main results still hold » (§3.15). CONSULTATION : texte intégral, en libre accès."
+    },
+    {
+      "id": "SUP-3fbedcd919bb7b0a",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.secondary_sources[3].citation",
+      "access": "n/a",
+      "text": "Jerker Denrell, « Mechanisms Generating Context-Dependent Choices », in A. Lomi et J. R. Harrison (dir.), The Garbage Can Model of Organizational Choice: Looking Forward at Forty, Research in the Sociology of Organizations, vol. 36, Emerald, 2012, p. 65-97"
+    },
+    {
+      "id": "SUP-7d8337e58ad067ba",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.secondary_sources[3].language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-5293d54df0a79e98",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.secondary_sources[3].doi_isbn",
+      "access": "n/a",
+      "text": "10.1108/S0733-558X(2012)0000036007"
+    },
+    {
+      "id": "SUP-0ecd4a9f24ffd213",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.secondary_sources[3].url",
+      "access": "n/a",
+      "text": "https://doi.org/10.1108/S0733-558X(2012)0000036007"
+    },
+    {
+      "id": "SUP-c2e17f1f8d19d53f",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.secondary_sources[3].role",
+      "access": "n/a",
+      "text": "interpretation"
+    },
+    {
+      "id": "SUP-38c2f3242ab473d6",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.secondary_sources[3].level",
+      "access": "n/a",
+      "text": "B"
+    },
+    {
+      "id": "SUP-f1d7e70304d236b3",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.secondary_sources[3].establishes",
+      "access": "n/a",
+      "text": "Contre-lecture explicite de l'interprétation aléatoire, formulée à l'intérieur du volume des quarante ans : « The garbage can model showed that what appears to be irrational and unpredictable choices can be explained by processes that regulate attention allocation and the availability of choice alternatives. » Ce qui paraît imprévisible relève donc de mécanismes d'allocation de l'attention, non du hasard. CONSULTATION : résumé d'auteur et première page seulement (elles figurent en fin du PDF en libre accès du chapitre de Cohen, March & Olsen) ; corps du chapitre NON consulté."
+    },
+    {
+      "id": "SUP-1b947949860274a0",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[0].citation",
+      "access": "n/a",
+      "text": "Christine Musselin, « Les universités sont-elles des anarchies organisées ? », in Jacques Chevallier (dir.), Désordre(s), Paris, PUF/CURAPP, 1997, p. 291-308"
+    },
+    {
+      "id": "SUP-f82c8f9b7f0d8d8c",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[0].language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-3ab8621f7c041034",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[0].url",
+      "access": "n/a",
+      "text": "https://extra.u-picardie.fr/outilscurapp/medias/revues/40/christine_musselin.pdf_4a0932f91c648/christine_musselin.pdf"
+    },
+    {
+      "id": "SUP-c3364e12c7fd5dd9",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[0].role",
+      "access": "n/a",
+      "text": "critique"
+    },
+    {
+      "id": "SUP-2ea56efe29f710ee",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[0].level",
+      "access": "n/a",
+      "text": "B"
+    },
+    {
+      "id": "SUP-790c85075113a85d",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[0].establishes",
+      "access": "n/a",
+      "text": "Pièce maîtresse de la réception francophone, et la seule source consultée qui traite frontalement l'articulation des deux notions. TOUTES les localisations ci-dessous ont été relevées sur l'imprimé, folio par folio, lors d'une réouverture du chapitre le 17 août 2026 ; les deux leçons contestées ont été contrôlées sur l'image de la page, pas seulement sur la couche océrisée. Établit : (1) que les deux notions ne sont pas équivalentes — « Anarchie organisée et garbage can model ne sont donc pas deux notions équivalentes ; sauf à retenir une version très expurgée du modèle de la poubelle et réduite à des rencontres entre des flux, les modes de prise de décision que nous avons étudiés dans les universités allemandes et françaises ne sont pas assimilables à ce modèle […] » (p. 303 ; l'imprimé porte un point-virgule, pas un point, après « équivalentes », et « garbage can model » y est en italiques), et qu'« une organisation peut répondre aux critères définissant une anarchie organisée sans que les processus de décision en son sein soient inévitablement régis par le garbage can model » (p. 292) ; (2) que le garbage can s'est en France « progressivement autonomisé de la notion d'anarchie organisée », les spécialistes des politiques publiques n'en retenant que « la remise en cause du modèle linéaire de prise de décision » (p. 301, section « A) Équivalence entre le garbage can model et les anarchies organisées ») ; (3) la critique du biais, en quatre particularités méthodologiques des études empiriques (p. 302), dont : « reniant la figure du décideur, ils nient aux participants la possibilité “d'utiliser” l'aléa plutôt que de le subir » (particularité 3) et, VERBATIM DE L'IMPRIMÉ, particularité 4 : « Ils mettent en avant tout ce qui est ambigu, confus, a priori irrationnel, au détriment de ce qui est structuré, régulé, construit. » — majuscule initiale, virgule après « irrationnel », « a priori » en italiques, point final : c'est la leçon de l'édition citée, contrôlée sur l'image de la p. 302 (voir non_etabli pour la variante) ; (4) que sa cible est les études qualitatives, non la simulation de 1972 : « Ceux-ci, plus que la simulation informatique du modèle de la poubelle dans l'article de 1972, mettent l'accent sur le caractère aléatoire et imprévisible du processus » (p. 302, note 12 — renvoi vérifié sur l'imprimé, la note est bien au bas du folio 302) ; (5) une défense du modèle contre sa version appauvrie : il « ne peut être ramené à un “simple” mixe de flux ou à la “simple” remise en cause de la séquence “problème -> décideurs -> choix -> solutions”, car il ne se contente pas de parler de courants mais repose également sur un modèle de circulation de ces flux et une typologie des choix (par résolution, survol ou glissement) » (p. 303 ; l'imprimé compose les flèches « -> », que les reprises modernisent volontiers en « → ») ; (6) le choix de traduction (voir translation_notes), p. 292, note 2 ; (7) deux propriétés dérivées : « il existe différents “niveaux” d'anarchies organisées et ces dernières sont susceptibles d'évoluer » (p. 304) ; (8) un quatrième trait qu'elle ajoute aux trois critères d'origine, « celle de la faible interdépendance fonctionnelle qui lie les acteurs dans la poursuite de leurs activités au sein de telles organisations », « qui n'est pas évoquée par Cohen et alii » (p. 296, prolongée p. 297) ; (9) les techniques décisionnelles observées, « tour de rôle, critères impersonnels, report de la décision vers l'instance suivante, entérinement... (Musselin, 1987, chap. 7) », et le contre-résultat « nous avons pu mettre à jour des modes de décision stabilisés, régulés » (p. 303), qui redouble celui de la p. 292 (« dans les universités, la prise de décision est beaucoup plus structurée et régulée que ne le suggèrent les travaux de Cohen, March et Olsen ») ; (10) une bibliographie (p. 307-308) qui sert de notice de contrôle à trois références du dossier : l'article de 1972 « Administrative Science Quarterly, 17(1), pp. 1-25 » (p. 307), Musselin 1996 De Gruyter « pp. 55-72 » avec sa version française de 1990 (p. 308), et la thèse de 1987 (p. 308). CONSULTATION : texte intégral de l'imprimé, rouvert le 17 août 2026. Voie d'accès vérifiée et non crue sur parole : le PDF du serveur CURAPP de l'université de Picardie (URL ci-dessus) a été téléchargé — 18 pages, correspondant exactement aux folios imprimés 291 à 308, en-têtes de page relevés un à un. C'est un scan pourvu d'une couche océrisée fautive par endroits (« SONT-EUES » p. 291, « 29Y » p. 299) : les citations ont donc été recontrôlées sur l'image. La notice HAL hal-03567656, citée en pass précédente, n'a PAS été joignable cette fois (accès refusé par le pare-feu Anubis de HAL, sur la notice comme sur /document) ; ce qu'elle établissait — pagination 291-308 — est de toute façon confirmé par les folios eux-mêmes."
+    },
+    {
+      "id": "SUP-ade7020954ec08fe",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[1].citation",
+      "access": "n/a",
+      "text": "Erhard Friedberg, « La théorie des organisations et la question de l'anarchie organisée », in Jacques Chevallier (dir.), Désordre(s), Paris, PUF/CURAPP, 1997, p. 271-290"
+    },
+    {
+      "id": "SUP-3fc70a0369d22e87",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[1].language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-d3abbd18f27a440c",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[1].url",
+      "access": "n/a",
+      "text": "https://extra.u-picardie.fr/outilscurapp/medias/revues/40/ehrard_friedberg.pdf_4a0932ecc20b1/ehrard_friedberg.pdf"
+    },
+    {
+      "id": "SUP-0abc49e88f2d2ea7",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[1].role",
+      "access": "n/a",
+      "text": "critique"
+    },
+    {
+      "id": "SUP-036d3db90c724b94",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[1].level",
+      "access": "n/a",
+      "text": "B"
+    },
+    {
+      "id": "SUP-401e4a1e52510bf5",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[1].establishes",
+      "access": "n/a",
+      "text": "Établit : (1) le déclassement épistémologique du modèle — « Ce n'est pas un modèle à proprement parler, c'est une topique ou une heuristique dont la leçon vaut, cum grano salis, pour toutes les organisations » (p. 284) ; « ce modèle a donc — et continuera à avoir dans l'avenir — un contenu empirique faible : son utilité réside dans sa vertu heuristique, dans l'hygiène mentale qu'elle impose au chercheur » (p. 288) ; « elles ne sont pas des anarchies organisées, tout au plus des organisations dont l'ordre est constamment menacé par l'anarchie potentielle résultant des conduites centrifuges des acteurs qui les composent » (p. 287). (2) La formule « biais en faveur de l'aléatoire », qui est de LUI et qu'il attribue à Musselin : « Comme l'a très bien montré Ch. Musselin dans sa critique du ‘modèle de la poubelle’ (Musselin 1987 et 1996), les études menées dans cette perspective contiennent en effet ce qu'on pourrait appeler un biais en faveur de l'aléatoire et de l'incertain, et une sous-estimation systématique de la structuration de la situation de décision » (p. 284). (3) L'articulation en termes de corollaire : « La notion ‘d'anarchie organisée’ et son corollaire, le modèle décisionnel dit ‘de la poubelle’ » (p. 277, formulation reprise p. 271, 284, 285). (4) Une explication sociologique du succès du modèle : il rejoignait « le back-lash anti-rationaliste » consécutif au mouvement PPBS (p. 272), et Michel Crozier y a dénoncé une volonté « d'humiliation de la raison » (p. 271, note 2). (5) Un rappel que le désordre n'est pas total, appuyé sur Musselin et Warglien : les simulations « mettent en évidence un certain ordre, puisque trois styles de décision émergent : la prise de décision par inattention, par déplacement et par résolution des problèmes, les deux premiers étant nettement plus fréquents que le dernier » (p. 283, note 14). (6) L'anecdote de Venise (p. 284, note 17 — voir non_etabli). CONSULTATION : texte intégral (PDF en libre accès, exemplaire CURAPP ; pagination 271-290 vérifiée sur les en-têtes de pages imprimées). Chapitre non déposé sur HAL."
+    },
+    {
+      "id": "SUP-bdf962003a29ae11",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[2].citation",
+      "access": "n/a",
+      "text": "Christine Musselin, « Organized anarchies: a reconsideration of research strategies », in M. Warglien et M. Masuch (dir.), The Logic of Organizational Disorder, Berlin/New York, De Gruyter, 1996, p. 55-72"
+    },
+    {
+      "id": "SUP-beec307ea8633284",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[2].language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-eb8738b0017a52c6",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[2].doi_isbn",
+      "access": "n/a",
+      "text": "10.1515/9783110871814.55"
+    },
+    {
+      "id": "SUP-f56d78c4bab399c4",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[2].url",
+      "access": "n/a",
+      "text": "https://doi.org/10.1515/9783110871814.55"
+    },
+    {
+      "id": "SUP-eb94dc1e77140b17",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[2].role",
+      "access": "n/a",
+      "text": "critique"
+    },
+    {
+      "id": "SUP-60b50ef0cbfa6e15",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[2].level",
+      "access": "n/a",
+      "text": "B"
+    },
+    {
+      "id": "SUP-141cd1dbbe704b00",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[2].establishes",
+      "access": "n/a",
+      "text": "Identifie la référence exacte derrière le renvoi « Musselin 1996 » que fait Friedberg pour la critique du biais en faveur de l'aléatoire. Notice résolue et confrontée aux éléments attendus (auteur, titre) : AUCUN ÉCART. Version française antérieure : « Quelle stratégie de recherche pour les anarchies organisées », Actes du Séminaire Contradictions et Dynamique des Organisations, vol. II, 1989-1990, p. 151-168 (référence donnée par Musselin 1997, p. 308). Chapitre issu du colloque de 1989 dont les actes ont été publiés en 1996. CONSULTATION : notice seule ; contenu NON consulté — ce que j'en sais vient des résumés qu'en donnent Musselin 1997 (p. 302-303) et Friedberg 1997 (p. 284)."
+    },
+    {
+      "id": "SUP-1f23d834fc856f95",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[3].citation",
+      "access": "n/a",
+      "text": "Christine Musselin, Système de gouvernement ou cohésion universitaire : les capacités d'action collective de deux universités allemandes et de deux universités françaises, thèse de doctorat, Institut d'Études Politiques de Paris, 1987"
+    },
+    {
+      "id": "SUP-25fadc54b5c30e3f",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[3].language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-3a40342d91d709f3",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[3].role",
+      "access": "n/a",
+      "text": "critique"
+    },
+    {
+      "id": "SUP-731d7bd94593af89",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[3].level",
+      "access": "n/a",
+      "text": "B"
+    },
+    {
+      "id": "SUP-807641969fc82174",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[3].establishes",
+      "access": "n/a",
+      "text": "Autre moitié du renvoi « Musselin 1987 et 1996 » de Friedberg. Musselin y renvoie elle-même pour les techniques décisionnelles récurrentes observées dans les universités — « tour de rôle, critères impersonnels, report de la décision vers l'instance suivante, entérinement… (Musselin 1987, chap. 7) » (Musselin 1997, p. 303). CONSULTATION : aucune. Référence connue seulement par les bibliographies de Musselin 1997 (p. 308) et Friedberg 1997 (p. 290), concordantes sur le titre et l'institution. Sans DOI ni dépôt en ligne repéré."
+    },
+    {
+      "id": "SUP-de55b100d518f24c",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[4].citation",
+      "access": "n/a",
+      "text": "Miruna Radu-Lefebvre, Vincent Lefebvre et Frédéric Lamy, « Modèle ‘de la poubelle’ et dynamique du business model », Entreprendre & Innover, 2012/3, n° 15, p. 77-87"
+    },
+    {
+      "id": "SUP-a77c97ca328c26ab",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[4].language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-49998583529cffae",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[4].doi_isbn",
+      "access": "n/a",
+      "text": "10.3917/entin.015.0077"
+    },
+    {
+      "id": "SUP-5c40d28495219fdf",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[4].url",
+      "access": "n/a",
+      "text": "https://doi.org/10.3917/entin.015.0077"
+    },
+    {
+      "id": "SUP-a128ab598a10fa93",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[4].role",
+      "access": "n/a",
+      "text": "translation"
+    },
+    {
+      "id": "SUP-526162f92e686997",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[4].level",
+      "access": "n/a",
+      "text": "B"
+    },
+    {
+      "id": "SUP-0b97eb73fd322ff2",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[4].establishes",
+      "access": "n/a",
+      "text": "Attestation que « modèle de la poubelle » circule comme le rendu français reçu, y compris hors du terrain universitaire d'origine (ici la littérature de gestion sur le business model). CONSULTATION : notice Crossref seule (titre, revue, pagination, DOI) — c'est le titre lui-même qui fait la donnée ; le contenu n'a pas été consulté. Cairn a renvoyé 403 sur au moins un article dans cette session."
+    },
+    {
+      "id": "SUP-08bd0a39ffe6c847",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[5].citation",
+      "access": "n/a",
+      "text": "Julien Aldhuy, « Le Grand Paris vu de la (théorie de) la corbeille : pour une réévaluation de la consultation internationale et de ses effets », séminaire Inventer le Grand Paris, 2019"
+    },
+    {
+      "id": "SUP-048d430b21a4caac",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[5].language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-55fc59dd9e803ee7",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[5].doi_isbn",
+      "access": "n/a",
+      "text": "10.25580/igp.2019.0050"
+    },
+    {
+      "id": "SUP-0a8b448d2c7a1b93",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[5].url",
+      "access": "n/a",
+      "text": "https://hal.science/hal-04756975"
+    },
+    {
+      "id": "SUP-3b395b6c561321ad",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[5].role",
+      "access": "n/a",
+      "text": "translation"
+    },
+    {
+      "id": "SUP-1178e463c2446fc2",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[5].level",
+      "access": "n/a",
+      "text": "B"
+    },
+    {
+      "id": "SUP-ace03b022d446072",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[5].establishes",
+      "access": "n/a",
+      "text": "Attestation que le rendu concurrent « corbeille » survit dans l'usage francophone contemporain, à côté de « poubelle » : le terme reçu n'est donc pas exclusif. CONSULTATION : notice HAL et Crossref seules ; contenu non consulté."
+    },
+    {
+      "id": "SUP-81740a0f2a5cebc4",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[6].citation",
+      "access": "n/a",
+      "text": "Christophe Baret, Jimmy Vallejo et Nathalie Sampieri-Teissier, « À quelles conditions les pôles d'activités médicales peuvent-ils réduire l'anarchie organisée à l'hôpital public ? », Journal de gestion et d'économie de la santé, 2020"
+    },
+    {
+      "id": "SUP-3638ad36276988f4",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[6].language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-7b3a547403d9e5cf",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[6].url",
+      "access": "n/a",
+      "text": "https://hal.science/hal-02482589v1"
+    },
+    {
+      "id": "SUP-ca3a374cda885d24",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[6].role",
+      "access": "n/a",
+      "text": "reception"
+    },
+    {
+      "id": "SUP-f4f012915afb3cbd",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[6].level",
+      "access": "n/a",
+      "text": "B"
+    },
+    {
+      "id": "SUP-f2ab6c84032a4f86",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.francophone_sources[6].establishes",
+      "access": "n/a",
+      "text": "Attestation que la notion qui porte la recherche empirique française contemporaine est « anarchie organisée », et non « modèle de la poubelle » : le titre pose l'anarchie organisée comme état d'organisation susceptible d'être réduit par un changement de structure. Fait partie d'un ensemble cohérent repéré sur HAL (Vallejo, Sampieri-Teissier & Baret 2015, halshs-01416926 ; Vallejo, thèse 2018, tel-01823580 ; Batache, Bouzar & Arkoub 2021, hal-03453923, DOI 10.54241/2065-004-001-014). CONSULTATION : notices HAL seules ; contenus non consultés."
+    },
+    {
+      "id": "SUP-ad6d584872712e39",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.translation_notes[0].term_source",
+      "access": "n/a",
+      "text": "garbage can model"
+    },
+    {
+      "id": "SUP-3bef0e738d875be9",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.translation_notes[0].term_fr",
+      "access": "n/a",
+      "text": "modèle de la poubelle"
+    },
+    {
+      "id": "SUP-ec9a3bb16b93681e",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.translation_notes[0].note",
+      "access": "n/a",
+      "text": "Rendu reçu dans la littérature francophone, mais ce n'est PAS le terme de la traduction publiée de 1991. Musselin l'adopte contre elle, et le dit : « je préfère garder l'expression de ‘modèle de la poubelle’ pour traduire celle de garbage can model plutôt que de reprendre celles de ‘corbeille à papiers’ ou de ‘mise au panier’ qui euphémisent trop l'idée de garbage (déchets, détritus, ordures) que les trois coauteurs ont certainement utilisée à dessein. » (Musselin 1997, p. 292, note 2). LEÇON DE L'ÉDITION CITÉE, contrôlée sur l'image du folio 292 le 17 août 2026 : accord au féminin singulier — « utilisée » s'accorde avec « l'idée de garbage » — et point final, sans points de suspension. Toute leçon au masculin pluriel (« utilisés ») est une variante étrangère à l'imprimé PUF/CURAPP : voir non_etabli. Friedberg emploie la forme prudente « le ‘modèle dit de la poubelle’ » (1997, p. 271, 277, 284)."
+    },
+    {
+      "id": "SUP-e826220021943dc8",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.translation_notes[1].term_source",
+      "access": "n/a",
+      "text": "garbage can model"
+    },
+    {
+      "id": "SUP-6fb4cf8611dc9b63",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.translation_notes[1].term_fr",
+      "access": "n/a",
+      "text": "corbeille à papiers"
+    },
+    {
+      "id": "SUP-9f031e7ecef3cca6",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.translation_notes[1].note",
+      "access": "n/a",
+      "text": "Rendu de la traduction française publiée : James G. March, Décisions et organisations, Éditions d'Organisation, 1991 (choix de textes par A.-C. Martinet), qui contient la traduction de l'article de 1972. Signalé et refusé comme euphémisant par Musselin 1997, p. 292, note 2."
+    },
+    {
+      "id": "SUP-1d276eb0f470e63c",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.translation_notes[2].term_source",
+      "access": "n/a",
+      "text": "garbage can model"
+    },
+    {
+      "id": "SUP-215d2828b74aca4c",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.translation_notes[2].term_fr",
+      "access": "n/a",
+      "text": "mise au panier"
+    },
+    {
+      "id": "SUP-3727548489250795",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.translation_notes[2].note",
+      "access": "n/a",
+      "text": "Second rendu de la traduction publiée de 1991, également signalé et refusé comme euphémisant par Musselin 1997, p. 292, note 2."
+    },
+    {
+      "id": "SUP-f340e1e22191c788",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.translation_notes[3].term_source",
+      "access": "n/a",
+      "text": "garbage can"
+    },
+    {
+      "id": "SUP-a463fb060d49cdb1",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.translation_notes[3].term_fr",
+      "access": "n/a",
+      "text": "corbeille"
+    },
+    {
+      "id": "SUP-da3d3c5340678268",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.translation_notes[3].note",
+      "access": "n/a",
+      "text": "Variante encore en usage dans la littérature francophone contemporaine (« la (théorie de) la corbeille », Aldhuy 2019, DOI 10.25580/igp.2019.0050) : le terme reçu n'est pas exclusif."
+    },
+    {
+      "id": "SUP-65208e9d9de8ccf0",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.translation_notes[4].term_source",
+      "access": "n/a",
+      "text": "organized anarchy / organized anarchies"
+    },
+    {
+      "id": "SUP-3a905f801974aef0",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.translation_notes[4].term_fr",
+      "access": "n/a",
+      "text": "anarchie organisée"
+    },
+    {
+      "id": "SUP-a8d7290d7d9a4e49",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.translation_notes[4].note",
+      "access": "n/a",
+      "text": "Rendu stable et non contesté dans les sources consultées ; c'est la notion sous laquelle la recherche empirique française récente range ses terrains (voir francophone_sources)."
+    },
+    {
+      "id": "SUP-c1bd4a4e18b1a8b0",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.translation_notes[5].term_source",
+      "access": "n/a",
+      "text": "oversight"
+    },
+    {
+      "id": "SUP-74a2b602fb6f2cbe",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.translation_notes[5].term_fr",
+      "access": "n/a",
+      "text": "survol / par inattention"
+    },
+    {
+      "id": "SUP-d175d038beead20b",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.translation_notes[5].note",
+      "access": "n/a",
+      "text": "DEUX rendus français concurrents dans le même volume de 1997 : Musselin écrit « par résolution, survol ou glissement » (p. 303), Friedberg écrit « par inattention, par déplacement et par résolution » (p. 283, note 14). Aucune des deux sources ne signale l'écart. Le rendu français de ce vocabulaire n'est donc pas stabilisé."
+    },
+    {
+      "id": "SUP-06e18f3ff9dbd47b",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.translation_notes[6].term_source",
+      "access": "n/a",
+      "text": "flight"
+    },
+    {
+      "id": "SUP-bda495fb75222984",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.translation_notes[6].term_fr",
+      "access": "n/a",
+      "text": "glissement / déplacement"
+    },
+    {
+      "id": "SUP-b65877eb7f2b0eec",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.translation_notes[6].note",
+      "access": "n/a",
+      "text": "Même écart que pour oversight : « glissement » chez Musselin 1997, p. 303 ; « déplacement » chez Friedberg 1997, p. 283, note 14."
+    },
+    {
+      "id": "SUP-93151757a3ce52ce",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.known_ambiguities[0]",
+      "access": "n/a",
+      "text": "Désaccord frontal entre les deux contributions du même volume de 1997 sur l'articulation des deux notions. Friedberg traite le modèle de la poubelle comme le « corollaire » de l'anarchie organisée — « La notion ‘d'anarchie organisée’ et son corollaire, le modèle décisionnel dit ‘de la poubelle’ » (1997, p. 277) — soit une notion-cadre dont découlerait un mécanisme décisionnel. Musselin refuse cette dérivation dans les deux sens : elle constate que « dans l'article de 1972, ces auteurs fondent […] une équivalence entre anarchies organisées et modèle de la poubelle » (1997, p. 301) et conclut que « anarchie organisée et garbage can model ne sont donc pas deux notions équivalentes » (p. 303) — il n'est ni nécessaire d'être en anarchie organisée pour observer du garbage can, ni vrai que la décision en anarchie organisée relève toujours du garbage can. Les deux positions sont publiées côte à côte et ne se citent pas l'une l'autre sur ce point."
+    },
+    {
+      "id": "SUP-729ee807c1425474",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.known_ambiguities[1]",
+      "access": "n/a",
+      "text": "« Modèle de la poubelle » est le terme reçu en français, mais ce n'est pas celui de la traduction autorisée. La traduction publiée de 1991 (March, Décisions et organisations, Éditions d'Organisation, choix de A.-C. Martinet) rend garbage can par « corbeille à papiers » ou « mise au panier » ; « poubelle » est le choix délibéré de Musselin CONTRE cette traduction, motivé par le refus d'euphémiser (Musselin 1997, p. 292, note 2). Le terme le plus répandu est donc un terme de commentateur, pas de traducteur."
+    },
+    {
+      "id": "SUP-9a45e336551be6bb",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.known_ambiguities[2]",
+      "access": "n/a",
+      "text": "Le vocabulaire français des trois issues (oversight / flight / resolution) n'est pas stabilisé : « survol » et « glissement » chez Musselin (1997, p. 303), « inattention » et « déplacement » chez Friedberg (1997, p. 283, note 14), dans le même volume, sans que ni l'un ni l'autre signale l'écart."
+    },
+    {
+      "id": "SUP-a53fdcd039c60368",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.known_ambiguities[3]",
+      "access": "n/a",
+      "text": "La cible de la critique dite « du biais en faveur de l'aléatoire » n'est pas la même selon qui la rapporte. Musselin vise explicitement les études empiriques qualitatives issues du modèle, PAS la simulation de 1972 : « Ceux-ci, plus que la simulation informatique du modèle de la poubelle dans l'article de 1972, mettent l'accent sur le caractère aléatoire et imprévisible du processus » (1997, p. 302, note 12). Le résumé qu'en donne Friedberg (1997, p. 284) parle des « études menées dans cette perspective », ce qui est fidèle, mais l'usage courant transforme volontiers la critique en reproche fait au modèle lui-même."
+    },
+    {
+      "id": "SUP-f3a5c1a8b0917bcb",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.known_ambiguities[4]",
+      "access": "n/a",
+      "text": "La formule « biais en faveur de l'aléatoire et de l'incertain » est de FRIEDBERG (1997, p. 284), qui l'attribue à Musselin (« Musselin 1987 et 1996 »). Musselin, dans le même volume, ne l'emploie pas : elle formule la critique en quatre particularités méthodologiques (1997, p. 302). Attribuer la formule à Musselin serait une erreur d'attribution."
+    },
+    {
+      "id": "SUP-44cc1b11cafadc5c",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.known_ambiguities[5]",
+      "access": "n/a",
+      "text": "Les deux témoins français du colloque de 1989 rapportent des choses différentes sur la position qu'y a tenue March. Friedberg : « March s'est refusé de rentrer dans une véritable discussion du ‘modèle’. Bien plus, il s'en est à demi distancié en l'appelant de la poésie » (1997, p. 284, note 17). Musselin, à propos du même colloque : « James March semblait plus conciliant avec l'idée de rationalité », et elle cite son chapitre : « We are probably moving toward treating the ‘givens’ of rationality — the preferences, norms and rules of the game — both as vital to understanding the micro processes they structure and as things to be understood as arising from the context of action rather than simple external constraints » (March 1996, p. 202, cité par Musselin 1997, p. 291, note 1). Les deux récits ne sont pas contradictoires, mais ils ne convergent pas non plus."
+    },
+    {
+      "id": "SUP-8b2ece316540e172",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.known_ambiguities[6]",
+      "access": "n/a",
+      "text": "Le débat anglophone de 2001 n'a pas été tranché et n'a pas convergé. Les auteurs eux-mêmes le constatent en 2012 : « bursts of interest stimulate the elaboration of ideas more quickly than the convergence to canonical understandings » (Cohen, March & Olsen 2012, p. 29)."
+    },
+    {
+      "id": "SUP-07e7fdf7b281a3b1",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.common_misinterpretations[0].claim",
+      "access": "n/a",
+      "text": "Dans le garbage can, la décision est aléatoire : c'est le hasard qui décide, n'importe quoi sort de n'importe quoi."
+    },
+    {
+      "id": "SUP-db77e52815f18fe9",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.common_misinterpretations[0].why_wrong",
+      "access": "n/a",
+      "text": "Le modèle de 1972 est une simulation à règles explicites, dont le comportement agrégé n'a rien de rencontres aléatoires : « Cohen, March and Olsen's computational model describes an aggregate dynamics that has little to do with random encounters of participants, opportunities, solutions and problems ». Il produit des résultats stables et reproductibles — « Only a few decisions solve problems. Most decisions are made by oversight » — c'est-à-dire un ordre, non du bruit."
+    },
+    {
+      "id": "SUP-7f75bdef6ae54267",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.common_misinterpretations[0].source",
+      "access": "n/a",
+      "text": "Fioretti & Lomi, JASSS 11(1), art. 1, 2008, §3.14 et §6.1 (texte intégral consulté)."
+    },
+    {
+      "id": "SUP-10947cebf973dfeb",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.common_misinterpretations[1].claim",
+      "access": "n/a",
+      "text": "« Garbage can », c'est le désordre : l'expression désigne le chaos organisationnel."
+    },
+    {
+      "id": "SUP-8f7ed7c5f7177567",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.common_misinterpretations[1].why_wrong",
+      "access": "n/a",
+      "text": "Les auteurs eux-mêmes nomment cette lecture comme une déformation : « Garbage can ideas were naturally, and to some extent misleadingly, consigned to these traditions […] To many, ‘garbage can processes’ became a catch-all expression for disorder. » Et ils rétablissent : « A central notion of the original paper was not that the world was inexplicably chaotic but that the appearance of chaos came from the application of an erroneous model to an orderly temporal reality. The garbage can, in those terms, portrays an orderly world, but one that achieves order in a way different from that glorified by the Enlightenment. » L'apparence de chaos est un effet du mauvais modèle appliqué, pas une propriété du réel."
+    },
+    {
+      "id": "SUP-7104fb1003b93804",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.common_misinterpretations[1].source",
+      "access": "n/a",
+      "text": "Cohen, March & Olsen, « ‘A Garbage Can Model’ At Forty », RSO 36, 2012, p. 28, DOI 10.1108/S0733-558X(2012)0000036005 (texte intégral consulté)."
+    },
+    {
+      "id": "SUP-c8789a9d61f6e23f",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.common_misinterpretations[2].claim",
+      "access": "n/a",
+      "text": "Ce qui est irrationnel et imprévisible dans une organisation relève, par définition, du garbage can — donc de l'inexplicable."
+    },
+    {
+      "id": "SUP-a69d96024027f330",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.common_misinterpretations[2].why_wrong",
+      "access": "n/a",
+      "text": "La littérature savante fait exactement l'inverse : elle traite l'apparente imprévisibilité comme un explanandum, et le modèle comme ce qui l'explique. « The garbage can model showed that what appears to be irrational and unpredictable choices can be explained by processes that regulate attention allocation and the availability of choice alternatives. »"
+    },
+    {
+      "id": "SUP-107f155ae0abcb70",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.common_misinterpretations[2].source",
+      "access": "n/a",
+      "text": "Denrell, « Mechanisms Generating Context-Dependent Choices », RSO 36, 2012, p. 65, DOI 10.1108/S0733-558X(2012)0000036007 (résumé d'auteur consulté)."
+    },
+    {
+      "id": "SUP-e642c6d3d1c4f176",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.common_misinterpretations[3].claim",
+      "access": "n/a",
+      "text": "Le garbage can est une métaphore de la vie organisationnelle."
+    },
+    {
+      "id": "SUP-04e8b3d57b5b236d",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.common_misinterpretations[3].why_wrong",
+      "access": "n/a",
+      "text": "La réduction à la métaphore est précisément ce que la littérature de simulation identifie comme l'appauvrissement dominant : « the GCM has been frequently treated rather superficially as a metaphor for organizations as ‘structured anarchies’ paying only superficial attention to its internal logic » ; l'enjeu est de retrouver « the full potential of the GCM as a model of — rather than a metaphor for — organizational decision processes ». Nuance à conserver : Friedberg, lui, assume ce déclassement et l'argumente (« une topique ou une heuristique », 1997, p. 284) — c'est une position tenue, pas une mésinterprétation, et elle figure dans reception.debates."
+    },
+    {
+      "id": "SUP-ed442a0b1fef15f4",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.common_misinterpretations[3].source",
+      "access": "n/a",
+      "text": "Fioretti & Lomi, JASSS 11(1), art. 1, 2008, §1.4 (texte intégral consulté)."
+    },
+    {
+      "id": "SUP-dcb336341eb1cfaf",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.common_misinterpretations[4].claim",
+      "access": "n/a",
+      "text": "Le modèle de la poubelle se résume au renversement de la séquence problème → décideurs → choix → solutions."
+    },
+    {
+      "id": "SUP-867a105d747c393f",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.common_misinterpretations[4].why_wrong",
+      "access": "n/a",
+      "text": "C'est la réduction spécifiquement française, identifiée comme telle : les spécialistes des politiques publiques « ne gardent […] que la remise en cause du modèle linéaire de prise de décision » et ignorent le contexte organisationnel auquel le processus se rapporte (Musselin 1997, p. 301). Or le modèle « ne se contente pas de parler de courants mais repose également sur un modèle de circulation de ces flux et une typologie des choix (par résolution, survol ou glissement) » — et ce sont ces deux derniers aspects qui portent le contenu empirique."
+    },
+    {
+      "id": "SUP-90a7350292a5fcf3",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.common_misinterpretations[4].source",
+      "access": "n/a",
+      "text": "Musselin, « Les universités sont-elles des anarchies organisées ? », Désordre(s), PUF, 1997, p. 301 et p. 303 (texte intégral consulté)."
+    },
+    {
+      "id": "SUP-26d7f01f18c144c6",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.common_misinterpretations[5].claim",
+      "access": "n/a",
+      "text": "Le garbage can est LE modèle de la décision organisationnelle : il remplace les modèles rationnels."
+    },
+    {
+      "id": "SUP-a9c01b4c7c7e9910",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.common_misinterpretations[5].why_wrong",
+      "access": "n/a",
+      "text": "Les auteurs ont pris soin de l'indéfini et le rappellent : « The paper presented ‘A … model,’ not ‘The … model,’ and was an attempt to enlarge rather than to replace other interpretations of organizational life. »"
+    },
+    {
+      "id": "SUP-b48a8a590b175059",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.common_misinterpretations[5].source",
+      "access": "n/a",
+      "text": "Cohen, March & Olsen 2012, p. 23, DOI 10.1108/S0733-558X(2012)0000036005 (texte intégral consulté)."
+    },
+    {
+      "id": "SUP-56a0f12079a8a1cd",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.common_misinterpretations[6].claim",
+      "access": "n/a",
+      "text": "Une organisation qui est une anarchie organisée décide nécessairement selon le modèle de la poubelle."
+    },
+    {
+      "id": "SUP-af5ef92c15e8d401",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.common_misinterpretations[6].why_wrong",
+      "access": "n/a",
+      "text": "C'est l'équivalence posée par l'article de 1972 et démentie empiriquement : « une organisation peut répondre aux critères définissant une anarchie organisée sans que les processus de décision en son sein soient inévitablement régis par le garbage can model ». Dans les universités françaises et allemandes étudiées, Musselin observe « des modes de décision stabilisés, régulés » et des techniques décisionnelles récurrentes (tour de rôle, critères impersonnels, report, entérinement)."
+    },
+    {
+      "id": "SUP-6d391a39be683b8c",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.common_misinterpretations[6].source",
+      "access": "n/a",
+      "text": "Musselin 1997, p. 292, p. 302-303 (texte intégral consulté)."
+    },
+    {
+      "id": "SUP-a8b36bf5ac72c97c",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.reception.consensus",
+      "access": "n/a",
+      "text": "Acquis et non contesté par les sources consultées : (1) la paternité conjointe des trois signataires pour la formulation de 1972 (aucune source examinée ne la discute) ; (2) le caractère fondateur du texte — 4 604 citations relevées sur le DOI 10.2307/2392088 (Crossref, août 2026), et les trois auteurs eux-mêmes constatent en 2012 que « garbage can ideas endure in organizations research after 40 years » (p. 19) ; (3) les trois critères de l'anarchie organisée — préférences problématiques, technologie floue, participation fluctuante — que Musselin reprend un à un sans les contester (1997, p. 293-297) ; (4) les trois issues d'une occasion de choix (résolution, oversight/survol, flight/glissement) avec prédominance des deux dernières sur la première (Fioretti & Lomi 2008, §6.1 ; Friedberg 1997, p. 283, note 14) ; (5) le fait, reconnu par les critiques comme par les défenseurs, que le code de la simulation de 1972 ne restitue pas fidèlement la théorie verbale — c'est le point de départ commun de Bendor, Moe & Shotts (2001) et de Fioretti & Lomi (2008)."
+    },
+    {
+      "id": "SUP-bd9670907e24f93c",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.reception.debates[0]",
+      "access": "n/a",
+      "text": "Le programme de recherche est-il scientifiquement viable ? Bendor, Moe & Shotts (2001, DOI 10.1017/s0003055401000041) soutiennent que non : théorie verbale sans fondation cumulative, simulation « incompatible » avec la théorie, « a fundamental overhaul is required ». Olsen (2001, DOI 10.1017/s0003055401000120), dans le même numéro, refuse le diagnostic et requalifie l'entreprise en « unproductive tribal warfare ». Le débat n'est pas tranché dans les sources consultées."
+    },
+    {
+      "id": "SUP-ba062d9347464d36",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.reception.debates[1]",
+      "access": "n/a",
+      "text": "Faut-il sauver le modèle en le réécrivant ? Position intermédiaire de Fioretti & Lomi (JASSS 2008, §3.15) : accepter la critique technique de Bendor, Moe & Shotts sur le mouvement en bloc des agents, et montrer qu'« even if participants and problems do not move together […] the main results still hold ». La réécriture multi-agents du volume des quarante ans (Fioretti, Troitzsch, Knudsen et al.) relève de cette voie."
+    },
+    {
+      "id": "SUP-18ddd4437dd478a3",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.reception.debates[2]",
+      "access": "n/a",
+      "text": "Le modèle a-t-il un contenu empirique, ou seulement une valeur heuristique ? Friedberg (1997, p. 284, 288) tranche pour la seconde : « Ce n'est pas un modèle à proprement parler, c'est une topique ou une heuristique » ; « un contenu empirique faible ». Fioretti & Lomi (2008, §1.4) tranchent pour la première et tiennent la réduction à la métaphore pour un appauvrissement. Les deux positions sont argumentées et incompatibles."
+    },
+    {
+      "id": "SUP-9c8158ed2767b1f4",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.reception.debates[3]",
+      "access": "n/a",
+      "text": "Que faire des processus garbage can une fois reconnus ? Les auteurs distinguent en 2012 trois postures de leurs lecteurs : comprendre (Kingdon, Cooper & Wolf, Nowak) ; s'y adapter intelligemment (Cohen 1986, Miner 1990) ; ou les éliminer par le design organisationnel, posture qu'ils décrivent comme jugeant ces processus « pathological and irrational » et dans laquelle ils rangent explicitement Bendor, Moe & Shotts (Cohen, March & Olsen 2012, p. 24-25)."
+    },
+    {
+      "id": "SUP-d762fc7106efd250",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.reception.debates[4]",
+      "access": "n/a",
+      "text": "En France, le débat porte sur un autre objet : non la validité du modèle, mais son rapport à l'anarchie organisée — corollaire (Friedberg 1997, p. 277) ou notions non équivalentes (Musselin 1997, p. 303). Voir known_ambiguities."
+    },
+    {
+      "id": "SUP-cd724943463a02c6",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.reception.critiques[0].by",
+      "access": "n/a",
+      "text": "Jonathan Bendor, Terry M. Moe et Kenneth W. Shotts"
+    },
+    {
+      "id": "SUP-8a8170cbc3f96e05",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.reception.critiques[0].claim",
+      "access": "n/a",
+      "text": "La théorie verbale « fails to create an adequate foundation for scientific progress » ; la reprise du code montre que les agents « move in lockstep patterns that are strikingly different from the spirit of the theory » et que « the simulation and the theory are incompatible » ; les défauts se sont aggravés dans le néo-institutionnalisme de March-Olsen. « A fundamental overhaul is required. »"
+    },
+    {
+      "id": "SUP-f9ebf2fe6ac0f362",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.reception.critiques[0].source",
+      "access": "n/a",
+      "text": "« Recycling the Garbage Can: An Assessment of the Research Program », American Political Science Review, 95(1), 2001, p. 169-190, DOI 10.1017/s0003055401000041 — résumé d'auteur consulté, texte intégral non consulté. Prolongé par Bendor & Shotts, « Chance, Preferences, and Predictions in Garbage Can Theory », RSO 36, 2012, p. 99-137, DOI 10.1108/S0733-558X(2012)0000036008 (contenu non consulté)."
+    },
+    {
+      "id": "SUP-e15ca55a67b21cad",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.reception.critiques[1].by",
+      "access": "n/a",
+      "text": "Christine Musselin"
+    },
+    {
+      "id": "SUP-1edefced4551ccfd",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.reception.critiques[1].claim",
+      "access": "n/a",
+      "text": "Les études empiriques issues du modèle souffrent de quatre biais méthodologiques : elles ne portent que sur des décisions exceptionnelles et jamais routinières ; elles suivent une chronologie sans resituer les faits dans un contexte plus large ; « reniant la figure du décideur, ils nient aux participants la possibilité ‘d'utiliser’ l'aléa plutôt que de le subir » ; « ils mettent en avant tout ce qui est ambigu, confus, a priori irrationnel, au détriment de ce qui est structuré, régulé, construit ». Contre-résultat empirique : dans les universités françaises et allemandes, « la prise de décision est beaucoup plus structurée et régulée que ne le suggèrent les travaux de Cohen, March et Olsen ». La cible est explicitement les études qualitatives, PAS la simulation de 1972."
+    },
+    {
+      "id": "SUP-2be60aaaa6d77c2e",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.reception.critiques[1].source",
+      "access": "n/a",
+      "text": "« Les universités sont-elles des anarchies organisées ? », in J. Chevallier (dir.), Désordre(s), PUF, 1997, p. 292, 302-303 (texte intégral consulté). Formulations antérieures : Musselin 1987 (thèse IEP Paris, non consultée) et Musselin 1996, DOI 10.1515/9783110871814.55 (notice résolue sans écart, contenu non consulté)."
+    },
+    {
+      "id": "SUP-a58f3aacc6c00198",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.reception.critiques[2].by",
+      "access": "n/a",
+      "text": "Erhard Friedberg"
+    },
+    {
+      "id": "SUP-8314b025af7ef812",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.reception.critiques[2].claim",
+      "access": "n/a",
+      "text": "Pris à la lettre, le modèle « a fini par donner naissance à une nouvelle orthodoxie aussi peu convaincante finalement que le modèle classique qu'il cherche à mettre en cause ». Déclassement : « Ce n'est pas un modèle à proprement parler, c'est une topique ou une heuristique » ; « un contenu empirique faible ». Et un doute sur sa durée de vie : la vertu heuristique s'épuise à mesure que les conceptions étroitement rationalistes reculent."
+    },
+    {
+      "id": "SUP-a077340b019b74c2",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.reception.critiques[2].source",
+      "access": "n/a",
+      "text": "« La théorie des organisations et la question de l'anarchie organisée », in J. Chevallier (dir.), Désordre(s), PUF, 1997, p. 284 et p. 288 (texte intégral consulté)."
+    },
+    {
+      "id": "SUP-dab4c68248aa61c4",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.reception.critiques[3].by",
+      "access": "n/a",
+      "text": "Michel Crozier"
+    },
+    {
+      "id": "SUP-4d587680d5a849b4",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.reception.critiques[3].claim",
+      "access": "n/a",
+      "text": "Le modèle procède d'une volonté « d'humiliation de la raison »."
+    },
+    {
+      "id": "SUP-9fe3936050ae5f39",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.reception.critiques[3].source",
+      "access": "n/a",
+      "text": "Propos tenus lors du colloque de Venise sur la logique du désordre organisationnel, en présence des trois auteurs, rapportés par Friedberg 1997, p. 271, note 2. SOURCE DE SECONDE MAIN : aucune trace écrite de Crozier lui-même n'a été retrouvée pour cette formule."
+    },
+    {
+      "id": "SUP-bb1f98ec85e5894e",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.reception.critiques[4].by",
+      "access": "n/a",
+      "text": "Guido Fioretti et Alessandro Lomi"
+    },
+    {
+      "id": "SUP-e0b8870b2eb6cfae",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.reception.critiques[4].claim",
+      "access": "n/a",
+      "text": "Reproche de réception plus que de doctrine : le modèle a été traité « rather superficially as a metaphor », au détriment de sa logique interne, et son potentiel « as a model of — rather than a metaphor for — organizational decision processes » reste inexploité. Ils tiennent par ailleurs pour fondée la critique technique de Bendor, Moe & Shotts sur le mouvement en bloc des agents."
+    },
+    {
+      "id": "SUP-cf2b6e2da5ff082a",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.evidence.reception.critiques[4].source",
+      "access": "n/a",
+      "text": "« An Agent-Based Representation of the Garbage Can Model of Organizational Choice », JASSS, 11(1), art. 1, 2008, §1.4 et §3.15 (texte intégral consulté)."
+    },
+    {
+      "id": "SUP-e46cddb867d1fbc9",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.non_etabli[0]",
+      "access": "n/a",
+      "text": "VARIANTES D'ÉDITION SUR MUSSELIN 1997 — deux leçons, une seule édition citée. La fiche cite l'imprimé (Désordre(s), PUF/CURAPP, 1997, p. 291-308) : la leçon de cet imprimé, contrôlée sur l'image des pages le 17 août 2026, est (a) p. 302, particularité 4 : « Ils mettent en avant tout ce qui est ambigu, confus, a priori irrationnel, au détriment de ce qui est structuré, régulé, construit. » — virgule après « irrationnel » BIEN PRÉSENTE dans le texte publié ; (b) p. 292, note 2 : « que les trois coauteurs ont certainement utilisée à dessein. » — féminin singulier, point final. Une leçon divergente a circulé dans le dossier (suppression de la virgule ; accord « utilisés » avec points de suspension) ; elle provient de la version auteur déposée sur HAL (hal-03567656, paginée 1-21) et NON de l'édition citée. Ces deux leçons sont donc consignées ici comme VARIANTES DE VERSION AUTEUR, et l'imprimé fait foi partout où la fiche cite l'imprimé. CE QUE JE N'AI PAS PU FAIRE : rouvrir moi-même la version auteur pour collationner la variante mot à mot — HAL a refusé l'accès dans cette session (pare-feu Anubis, « Access Denied », sur https://sciencespo.hal.science/hal-03567656v1 comme sur /document). La variante est donc rapportée d'après le contrôle de passe A, non revérifiée par moi ; elle ne doit en aucun cas être réimposée à une citation rattachée à l'imprimé."
+    },
+    {
+      "id": "SUP-638a25231a3ff1e0",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.non_etabli[1]",
+      "access": "n/a",
+      "text": "PAGINATION DE L'ARTICLE DE 1972 — la réserve « aucune notice ne confirme p. 1-25 » n'est plus tenable, et la correction vient de sources déjà au dossier. J'ai lu moi-même, sur l'imprimé Musselin 1997, p. 307 (bibliographie du chapitre) : « Cohen M.D., March J.G. et Olsen J.P. (1972), “A Garbage Can Model of Organizational Choice”, Administrative Science Quarterly, 17(1), pp. 1-25, trad. française in March J.G. (1991), Décisions et Organisations, Paris, Editions d'Organisation. » Le contrôle de passe A rapporte la même borne dans la bibliographie du chapitre de 2012, p. 29 (« Administrative Science Quarterly, 17, 1–25 ») ; je n'ai pas pu la revérifier aujourd'hui, le PDF de prévisualisation pageplace.de renvoyant désormais HTTP 403. CE QUI RESTE VRAI : les bases de notices ne portent pas la borne haute — Crossref n'enregistre que « page: 1 », et OpenAlex rend first_page 1 / last_page 1 (vérifié le 17 août 2026). La formulation exacte est donc : borne confirmée par deux bibliographies imprimées, non par les notices d'indexation. REMARQUE À L'ASSEMBLEUR : la réserve figure dans corpus/review/garbage-can-model.json, que je ne touche pas ; elle est à reformuler là."
+    },
+    {
+      "id": "SUP-493a28c353782237",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.non_etabli[2]",
+      "access": "n/a",
+      "text": "À SIGNALER À L'APPELANT, SANS MODIFICATION DU FICHIER DU LECTEUR PRIMAIRE — la notice March & Olsen, Ambiguity and Choice in Organizations (Bergen, Universitetsforlaget, 1976 ; 2e éd. 1979) est déclarée « AUCUN CONTENU ÉTABLI » et sa pagination « NON vérifiée », mais elle porte deux éléments sans réserve : le numéro de chapitre de la réédition de l'article de 1972 (« ch. 2 ») et les ISBN 82-00-01478-9 / 82-00-01960-8, donnés comme « données d'édition établies ». Mes propres vérifications ne les établissent pas : résolution par ISBN sur les deux numéros → « aucune notice trouvée » (résultat NON concluant, qui n'infirme rien) ; OpenLibrary injoignable (ECONNRESET sur l'API books et sur search.json) ; et la seule bibliographie imprimée que j'aie pu lire pour cet ouvrage, Musselin 1997, p. 308, le cite sans numéro de chapitre ni ISBN : « March J.G. et Olsen J.P. (eds) (1976), Ambiguity and Choice in Organizations, Bergen, Universitetsforlaget. » Le numéro de chapitre et les ISBN doivent donc porter la même réserve que le reste de cette notice. Signalé, non corrigé : evidence.primary-reading.json n'a été ni modifié ni réécrit."
+    },
+    {
+      "id": "SUP-5f182b7d63ab4791",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.non_etabli[3]",
+      "access": "n/a",
+      "text": "L'ANECDOTE DE VENISE N'EST PAS CORROBORÉE. L'énoncé existe et a été lu dans le texte imprimé : « Dans le colloque de Venise de 1989 déjà mentionné, March s'est refusé de rentrer dans une véritable discussion du ‘modèle’. Bien plus, il s'en est à demi distancié en l'appelant de la poésie » (Friedberg 1997, p. 284, note 17 — vérifié sur l'image de la page ; l'océrisation « 1939 » est une coquille de reconnaissance, l'imprimé porte 1989). CE QUI EST CORROBORÉ : l'événement lui-même. Musselin atteste indépendamment « un colloque organisé en 1989 autour de ces notions en présence de Cohen, March et Olsen » (1997, p. 291, note 1) et « un colloque organisé en 1989 dont les actes ont été publiés en 1996 » (p. 292, note 3) ; les actes sont Warglien & Masuch (dir.), The Logic of Organizational Disorder, De Gruyter, 1996, dont les chapitres portent des DOI vérifiés (Cohen 10.1515/9783110871814.183, Warglien 10.1515/9783110871814.163, Musselin 10.1515/9783110871814.55) ; Friedberg y a lui-même contribué et est donc témoin direct. CE QUI NE L'EST PAS : le mot. Aucune autre source consultée ne rapporte que March ait qualifié le modèle « de la poésie ». La rétrospective des trois auteurs à quarante ans, où l'on attendrait cet aveu, ne comporte rien de tel : ils y revendiquent au contraire un « playfully serious spirit » et une portée descriptive assumée (2012, p. 22, 28). Recherches web ciblées (March + poetry + garbage can) : rien de probant. À TRAITER COMME : anecdote de seconde main à source unique, à attribuer à Friedberg et non à March, et EN AUCUN CAS utilisable comme key_quotation."
+    },
+    {
+      "id": "SUP-6a34c93c5dbfff85",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.non_etabli[4]",
+      "access": "n/a",
+      "text": "Le lieu « Venise » repose sur le seul Friedberg (1997, p. 271, note 2 et p. 284, note 17). La date 1989 et la présence des trois auteurs sont, elles, doublement attestées (Friedberg et Musselin). L'introduction de Warglien & Masuch, qui aurait confirmé le lieu de façon indépendante, n'a pas pu être ouverte : De Gruyter renvoie HTTP 405 sur les deux domaines (degruyter.com et degruyterbrill.com)."
+    },
+    {
+      "id": "SUP-cb335a9fbaa9ea36",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.non_etabli[5]",
+      "access": "n/a",
+      "text": "Le contenu des chapitres du volume des quarante ans est resté fermé, sauf deux exceptions. OUVERTS : Cohen, March & Olsen, p. 19-30 (PDF en libre accès, lu intégralement) et le résumé de Denrell, p. 65 (présent dans le même PDF). FERMÉS (titres, pagination et DOI par Crossref seulement, contenu non consulté — Emerald sous accès payant, abstracts non servis) : Lomi & Harrison, chapitre introductif, p. 3-17 ; Bendor & Shotts, p. 99-137 ; Fioretti, « Garbage Can Ecologies » ; Knudsen, Warglien & Yi, « Garbage Can in the Lab » ; Troitzsch, « Team Formation in the Garbage Can » ; Seshadri & Shapira ; Ocasio, « Situated Attention, Loose and Tight Coupling » ; Knudsen, Stieglitz & Yi ; Levinthal, « From the Ivy Tower to the C-suite » ; Kreiner, « Organizational Decision Mechanisms in an Architectural Competition ». JE NE PEUX DONC PAS RÉPONDRE à la question « que reprochent et que confirment les chapitres du volume » autrement que par le chapitre des trois auteurs, le résumé de Denrell, et le fait que la critique de Bendor & Shotts y est reconduite sur 39 pages."
+    },
+    {
+      "id": "SUP-cf2ecdadcc5bc841",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.non_etabli[6]",
+      "access": "n/a",
+      "text": "PRÉCISION SUR LE DOI DU VOLUME transmis en amont : 10.1108/s0733-558x(2012)0000036004 ne désigne pas le volume mais le chapitre introductif de Lomi & Harrison (p. 3-17). Le volume porte le DOI 10.1108/s0733-558x(2012)36 et l'ISBN 9781780527123. Le chapitre le plus utile pour ce dossier est celui des trois auteurs : 10.1108/S0733-558X(2012)0000036005, p. 19-30, en libre accès."
+    },
+    {
+      "id": "SUP-0e63fc6a1b142f2e",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.non_etabli[7]",
+      "access": "n/a",
+      "text": "Textes intégraux non consultés, connus par leur seul résumé d'auteur (Crossref) : Bendor, Moe & Shotts 2001 et Olsen 2001. Les citations qui en sont données ici proviennent des abstracts, qui sont d'auteur — mais l'argumentation détaillée, notamment la reprise du code de simulation, n'a pas été vérifiée dans le texte."
+    },
+    {
+      "id": "SUP-e0a300575df2dca5",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.non_etabli[8]",
+      "access": "n/a",
+      "text": "Recension du volume par John F. Padgett dans Administrative Science Quarterly (DOI 10.1177/0001839213500231), qui aurait donné un jugement d'ensemble sur les chapitres : SAGE renvoie HTTP 403. Non consultée."
+    },
+    {
+      "id": "SUP-fc66d874a4bf3634",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.non_etabli[9]",
+      "access": "n/a",
+      "text": "Chapitre de Werner Jann sur ce classique dans The Oxford Handbook of Classics in Public Policy and Administration (DOI 10.1093/oxfordhb/9780199646135.013.4) : repéré, mais Oxford Academic ne sert pas le contenu. Non consulté. C'est la synthèse de réception la plus directement pertinente qui reste à ouvrir."
+    },
+    {
+      "id": "SUP-92c3282889296f4d",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.non_etabli[10]",
+      "access": "n/a",
+      "text": "Musselin 1996 (DOI 10.1515/9783110871814.55) : notice résolue et confrontée aux éléments attendus, AUCUN ÉCART — mais contenu non consulté. Ce que j'en rapporte vient des résumés qu'en donnent Musselin 1997 et Friedberg 1997. Musselin 1987 (thèse IEP Paris) : non consultée, connue par deux bibliographies concordantes."
+    },
+    {
+      "id": "SUP-e8bf28df69ad6e69",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.non_etabli[11]",
+      "access": "n/a",
+      "text": "La date du glissement de l'attribution vers le seul nom de March n'est pas établie. Je dispose de trois jalons (le recueil français de 1991, le vocabulaire des commentateurs de 1997, un titre de manuel de 2011) et d'aucune histoire de l'attribution."
+    },
+    {
+      "id": "SUP-74f5f54760cc0b97",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.non_etabli[12]",
+      "access": "n/a",
+      "text": "ÉTAT DES BASES DE CITATIONS — base muette, pas absence de discussion. OpenAlex a renvoyé 429 Too Many Requests sur toutes les requêtes de la session. Semantic Scholar est inutilisable : get_citations sur 10.2307/2392088 renvoie 400 Bad Request, get_references sur 10.1017/s0003055401000041 renvoie 0 référence pour un article qui en compte plusieurs dizaines. Aucune analyse de contextes de citation (supporting / contrasting / mentioning) n'a donc pu être menée. La discussion existe et est massive : elle a été reconstituée par Crossref, HAL et lecture directe des textes. Crossref et HAL ont fonctionné normalement. Cairn a renvoyé 403."
+    },
+    {
+      "id": "SUP-a00103fc07eadb4a",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.non_etabli[13]",
+      "access": "n/a",
+      "text": "REMARQUE UTILE À L'ANALYSTE, sans modification du fichier du lecteur primaire : celui-ci n'a pas pu ouvrir l'article de 1972 (primary_sources[0], consulted = metadata-only). Deux sources de ce fragment en restituent partiellement le contenu et peuvent servir de relais documenté, à condition d'être citées comme telles et jamais comme la source primaire : Musselin 1997 cite l'article de 1972 mot pour mot dans la traduction française de 1991 (les trois critères, p. 293-297, avec locator « Cohen et al., 1991, p. 164 » — relevé exhaustif fait sur l'imprimé le 17 août 2026 : ce locator revient aux folios 293, 296, 297 et 298 ; le slack, p. 304, avec locator « Cohen, March et Olsen, 1991, p. 184 ») ; Fioretti & Lomi 2008 restituent les conclusions de la simulation et l'équation (4) de l'appendice (§3.14, §6.1)."
+    },
+    {
+      "id": "SUP-3dcade51a8d68d13",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.provenance_fragment.agent",
+      "access": "n/a",
+      "text": "corpus-reception-analyst"
+    },
+    {
+      "id": "SUP-ad8e91c1ac0318d5",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.provenance_fragment.at",
+      "access": "n/a",
+      "text": "2026-08-16"
+    },
+    {
+      "id": "SUP-89b2b7e4af1446d4",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.provenance_fragment.action",
+      "access": "n/a",
+      "text": "Instruction de la réception : attribution, interprétation, discussion. Couches internationale et francophone menées en parallèle. Aucun élément de evidence.primary-reading.json modifié."
+    },
+    {
+      "id": "SUP-aebd2f15b2b08f6c",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.provenance_fragment.reprise_documentaire.at",
+      "access": "n/a",
+      "text": "2026-08-17"
+    },
+    {
+      "id": "SUP-aff0453c5698a2c4",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.provenance_fragment.reprise_documentaire.motif",
+      "access": "n/a",
+      "text": "REWORK de passe A, point unique du dossier : Musselin 1997."
+    },
+    {
+      "id": "SUP-54b0083d226b58dd",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.provenance_fragment.reprise_documentaire.fait",
+      "access": "n/a",
+      "text": "Chapitre rouvert dans l'édition que la fiche cite (Désordre(s), PUF/CURAPP, 1997), exemplaire imprimé du serveur CURAPP téléchargé et lu folio par folio (18 pages = folios 291-308). Localisations internes rétablies et vérifiées une à une (p. 292, 293, 296, 297, 301, 302, 303, 304, 306, 307, 308) ; une localisation antérieure corrigée (« donnée par March et ses deux coauteurs » : p. 292 et non p. 295) ; les deux leçons contestées contrôlées sur l'image de la page à 300 dpi et rétablies dans la leçon de l'imprimé, les leçons divergentes étant consignées comme variantes de version auteur dans non_etabli. Pagination de l'article de 1972 confirmée sur la bibliographie imprimée de Musselin 1997, p. 307. Voies d'accès qui n'ont PAS rendu le texte dans cette session, et qui sont dites plutôt que comblées : HAL (Anubis, accès refusé) pour la version auteur ; pageplace.de (HTTP 403) pour le chapitre de 2012 ; OpenLibrary (ECONNRESET) pour les ISBN de 1976. Aucun élément de evidence.primary-reading.json ni de corpus/review/garbage-can-model.json n'a été modifié."
+    },
+    {
+      "id": "SUP-02f84cad641fce84",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.provenance_fragment.reprise_documentaire.sources_ouvertes[0]",
+      "access": "n/a",
+      "text": "Musselin 1997, Désordre(s), p. 291-308 — PDF CURAPP, texte océrisé + images de pages (folios 291, 292, 302, 303 contrôlés à l'image)"
+    },
+    {
+      "id": "SUP-43f1c205e8283905",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.provenance_fragment.sources_ouvertes_integralement[0]",
+      "access": "n/a",
+      "text": "Cohen, March & Olsen 2012, RSO 36, p. 19-30 (PDF libre accès)"
+    },
+    {
+      "id": "SUP-42198977ee7f7f85",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.provenance_fragment.sources_ouvertes_integralement[1]",
+      "access": "n/a",
+      "text": "Musselin 1997, Désordre(s), p. 291-308 (PDF CURAPP)"
+    },
+    {
+      "id": "SUP-75a5ec03d1192424",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.provenance_fragment.sources_ouvertes_integralement[2]",
+      "access": "n/a",
+      "text": "Friedberg 1997, Désordre(s), p. 271-290 (PDF CURAPP)"
+    },
+    {
+      "id": "SUP-7083a5a1f2f16c1e",
+      "origin": "evidence:evidence.reception.json",
+      "path": "$.provenance_fragment.sources_ouvertes_integralement[3]",
+      "access": "n/a",
+      "text": "Fioretti & Lomi 2008, JASSS 11(1) art. 1 (HTML libre accès)"
+    }
+  ],
+  "estimated_tokens": 51611,
+  "status": "READY"
+}
