@@ -1,62 +1,22 @@
 {
   "protocol_version": 1,
   "concept_id": "mesure-devenue-cible",
-  "candidate_sha256": "a518f00c17578aab6ed4e1a31f12bc18fc1c68f404da6695136a130fc47fe1a5",
+  "candidate_sha256": "230f81e39ecbacdc139684eb798dbba3b9bbb3671f2038baf79885f10dee4f01",
   "verdict": "FACTCHECK_FAIL",
-  "claims": 62,
-  "supported": 52,
-  "failed": 10,
+  "claims": 42,
+  "supported": 40,
+  "failed": 2,
   "structural_errors": [],
   "failures": [
     {
-      "claim_id": "C005",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis etablissent l'auteure unique (attribution.authorship SOLE_AUTHOR, authors[0].name), la date et la reference de 1997, mais aucun ne porte la profession de Strathern : le seul element voisin est qu'elle « donne un commentaire anthropologique » sur l'audit explosion, ce qui qualifie son texte et non son metier. L'apposition « anthropologue » ajoute une attribution biographique absente du bundle."
-    },
-    {
-      "claim_id": "C008",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis etablissent l'objet situe (l'audit explosion et l'audit du systeme universitaire britannique) et le lieu de la conference, mais rien n'y etablit que l'universite est « son propre milieu » : aucun appui ne porte l'affiliation institutionnelle de Strathern. « Strathern complete la boucle en la faisant revenir sur l'universite » decrit le circuit de son argument, non son appartenance."
-    },
-    {
-      "claim_id": "C009",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support. Le cout, la lenteur et l'indisponibilite de l'observation directe, comme la comparabilite annuelle et interetablissement d'un pourcentage, sont avances comme faits generaux et non comme hypothese."
-    },
-    {
-      "claim_id": "C010",
-      "verdict": "UNSUPPORTED",
-      "reason": "Les appuis enoncent la corruption d'un indicateur promu au rang d'objectif ; aucun ne porte la condition de validite affirmee ici (« tant que la seule maniere de le faire monter consiste a agir sur ce qu'il est cense representer »), qui introduit la notion de voies alternatives absente des supports."
-    },
-    {
-      "claim_id": "C011",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support. Les trois voies (recentrage sur l'epreuve, entrainement au format, selection des inscriptions) sont presentees comme s'ouvrant reellement ; rien dans le bundle ne les etablit."
-    },
-    {
       "claim_id": "C012",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support, ni pour le changement de population mesuree, ni pour le classement de visibilite des trois voies."
-    },
-    {
-      "claim_id": "C039",
       "verdict": "TOO_STRONG",
-      "reason": "Les appuis etablissent que le tour aphoristique est de Strathern et que la loi ne l'est pas, ainsi que la large mesattribution de la phrase. Aucun n'etablit que sa formule « a fait circuler la loi » : c'est une affirmation causale de diffusion, et le bundle porte au contraire que la loi etait deja, chez Hoskin en 1996, « becoming recognized as one of the overriding laws of our times »."
+      "reason": "Le seul appui (review.notes[0]) donne la phrase suivante tronquée : « The more a 2.1 examination performance becomes an expectation… ». C'est la protase d'une corrélative dont l'apodose — ce qu'elle observe réellement — est absente du bundle. La présenter comme une observation assertée (« cette mention devient de plus en plus une attente ») transforme une construction corrélative en constat de tendance et donne pour son observation ce qui n'en est que la condition."
     },
     {
-      "claim_id": "C050",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support. Malgre le cadre interpretatif annonce, l'enonce avance comme reels le fait que la confusion rend l'audit praticable et que personne ne pilote directement la qualite d'un enseignement alors qu'un taux se pilote bien."
-    },
-    {
-      "claim_id": "C053",
+      "claim_id": "C023",
       "verdict": "TOO_STRONG",
-      "reason": "L'appui dit que l'audit « does more than monitor » et qu'il « jeopardizes the life it audits » : une mise en danger, non une substitution. « Un instrument qui remplace ce qu'il devait renseigner » durcit « met en danger » en « remplace » et n'est porte par aucun appui."
-    },
-    {
-      "claim_id": "C062",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support. L'enonce affirme que la reponse de Hoskin se lit « d'un bout a l'autre de son argument », soit un contenu sur la continuite du chapitre, alors que le bundle ne porte que des extraits pagines (p. 265, 266, 277, 280) et que le releve du dossier precise que Hoskin n'a jamais ete lu en continu."
+      "reason": "Seul le verbatim « I draw freely on his observations », rapporté au texte de Hoskin, est porté par attribution_note. Trois éléments présentés au lecteur comme des faits ne le sont par aucun appui résolu du bundle : la localisation « une page plus tôt », le fait qu'elle y indiquerait qu'« une part de la réponse » vient de lui, et le fait qu'elle le présenterait comme « un spécialiste de l'éducation » (aucun appui n'attribue ce qualificatif à Strathern). L'autre appui (review.notes[5]) porte sur le summary et la p. 319."
     }
   ]
 }
