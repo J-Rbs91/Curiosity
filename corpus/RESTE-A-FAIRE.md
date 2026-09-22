@@ -35,6 +35,7 @@ script ne peut pas dire : quel travail est possible aujourd'hui, ce qu'il coûte
 | **F.** Les acquisitions que l'audit v3 réclame | voir la section | oui | ouvert le 17 septembre 2026 |
 | **G.** Le pack de preuve ne lisait qu'un fichier du dossier | **aucun** | non | **fermé le 21 septembre 2026** — dernière suite portée, la version antérieure se désigne par un SHA de blob |
 | **H.** Un niveau d'accès surdéclaré désarme le gate | 5 cas établis, 13 champs à normaliser | non pour le correctif, oui pour les cas | **détection faite le 22 septembre 2026** ; reste la réparation des fiches, qui est un geste de la couche carte |
+| **I.** L'auditeur prenait une absence du dossier pour une preuve | **aucun** | non | **fermé le 22 septembre 2026**, par le réécrivain qui a refusé la prescription |
 
 **Le chantier A est fermé.** Il s'était vidé le 21 août, rouvert et creusé pendant cinq lots
 d'ouverture consécutifs jusqu'à trente-quatre cartes le 28 août, puis refermé en trois nuits :
@@ -1412,6 +1413,42 @@ la preuve ont donc été écrits ensemble, **et ils se contredisaient déjà en 
 3. **Aucun des correctifs proposés plus haut ne devient inutile.** Un défaut d'origine se propage
    exactement comme un défaut de dérive une fois qu'il est dans le fichier, et c'est le pack qui doit
    cesser de le croire.
+
+---
+
+# I. L'auditeur prenait une absence du dossier pour une preuve — fermé le 22 septembre 2026
+
+**C'est l'erreur symétrique de celle que le correctif du 20 septembre avait corrigée**, et elle
+est arrivée par lui. Avant ce correctif, l'auditeur notait l'axe A sur le seul enregistrement
+validé, donc sur un résumé qui peut parfaitement ne pas contredire une affirmation fausse : on lui
+a donné le dossier. Il pouvait dès lors faire l'inverse — **prendre une absence du dossier pour
+une preuve, contre une réserve écrite de la fiche.**
+
+**Le cas, sur pièce.** L'audit de `mesure-devenue-cible` prescrivait trois fois de trancher sa
+section 3 dans le sens « la phrase est de Strathern et ne se trouve nulle part chez Hoskin », en
+s'appuyant sur la recherche d'absence d'`attribution-hoskin.json` : neuf variantes d'amorce, zéro
+occurrence. Or `notes[1]` de la fiche porte exactement cet avertissement, sous un titre qui ne
+laisse aucune place au doute — « Avertissement de méthode, et c'est ce qui a failli faire publier
+ici une attribution fausse » :
+
+> La formulation y était pourtant, dès la première ligne du chapitre, p. 265 : « every measure
+> which becomes a target becomes a bad measure », qu'aucune des chaînes cherchées ne recoupe. Une
+> absence de correspondance littérale n'est pas une absence de formulation équivalente.
+
+**Suivre la trajectoire cible aurait republié le contresens que la chaîne avait déjà attrapé une
+fois.** C'est le réécrivain qui l'a refusée, et qui a produit le delta de la section par l'autre
+bout, la mésattribution à Goodhart, solidement établie. **Le bon résultat, obtenu au mauvais
+endroit** : un réécrivain qui corrige son audit n'est pas un dispositif, c'est une chance.
+
+`AUDIT_PROTOCOL.md` §5 et l'agent auditeur ordonnent maintenant les deux couches : le dossier fait
+foi sur ce qui a été ouvert, une réserve écrite de la fiche l'emporte sur une recherche d'absence,
+et une contradiction entre les deux se signale au lieu de se trancher.
+
+**Ce que ce défaut laisse à surveiller.** Les dix-sept audits v3 antérieurs ont été rendus sans
+cette règle, et deux d'entre eux — ceux du 19 septembre et des lots suivants — ont travaillé avec
+le dossier en main. Rien ne dit qu'aucun n'a prescrit une conclusion tirée d'une absence ; personne
+ne l'a cherché. **La vérification n'a pas été faite et n'est pas chiffrée ici** : ce serait une
+relecture des dix-sept rapports, et le prochain lot qui en reprend un le verra sur pièce.
 
 ---
 
