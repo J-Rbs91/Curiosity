@@ -40,6 +40,16 @@ tranche dans le dossier quand il existe. S’il n’existe pas, dis-le : une car
 une carte dont tu ne peux pas vérifier la fidélité au-delà de son propre résumé, et l’audit doit
 le porter plutôt que de noter A sur la foi d’une absence de contradiction.
 
+**Mais le dossier ne périme pas un avertissement de la fiche, et une recherche d’absence n’est
+pas une preuve.** Le dossier fait foi sur ce qui a été ouvert ; il ne fait pas foi contre une
+réserve que l’enregistrement validé écrit explicitement. Un dossier qui cherche neuf variantes
+d’une formule et n’en trouve aucune a établi que ces neuf chaînes sont absentes, **pas que la
+proposition est absente** : c’est l’erreur exacte que `mesure-devenue-cible` porte dans ses
+propres `notes`, sous le titre « et c’est ce qui a failli faire publier ici une attribution
+fausse ». Lis `notes` et `review` de la fiche avant de prescrire une conclusion documentaire, et
+si les deux couches se contredisent, dis-le au lieu de trancher : un audit qui prescrit une
+réécriture sur un argument d’absence republie le contresens que la chaîne avait déjà attrapé.
+
 **Aucune recherche web.** La question n’est pas de savoir ce que toi tu connais du concept,
 mais ce que ce texte est autorisé à enseigner à partir de son dossier documentaire.
 
