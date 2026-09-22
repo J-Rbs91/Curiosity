@@ -11,6 +11,10 @@ du 7 septembre 2026, les commandes sont la vérité.
 npm run corpus:audit    # domaines, thèmes, cartes validées, sujets jamais instruits
 npm run corpus:deepen   # projette les approfondissements, et liste en fin de sortie
                         # les cartes validées qui n'en ont pas : c'est la file, pas ce fichier
+npm run corpus:factcheck -- --sweep
+                        # les niveaux d'accès que le dossier ne corrobore pas — chantier H.
+                        # Sa sortie ne se lit jamais sans ouvrir le dossier signalé : trois de
+                        # ses neuf signalements au-dessus de metadata-only sont corrects.
 ```
 
 **Un décompte écrit à la main ment tôt ou tard.** Ce qui suit ne vaut donc que pour ce qu'un
