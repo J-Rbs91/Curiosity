@@ -1,9 +1,10 @@
 import { createHash } from "node:crypto";
-import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
 
 import { evidenceOrigin, listEvidenceFiles } from "./lib/factcheck-evidence.mjs";
+import { reconcilierAcces, statutPourChemin, STATUTS } from "./lib/factcheck-access.mjs";
 
 const ROOT = process.cwd();
 const CONTEXT_BUDGET_TOKENS = 300_000;
@@ -145,10 +146,29 @@ async function prepare(conceptId) {
   collectSupports(validated, { origin: "validated" }, supports);
 
   const evidenceFiles = [];
+  const evidenceDocuments = [];
   for (const { name, file } of listEvidenceFiles(evidenceDir(conceptId))) {
     const evidenceRaw = await readFile(file, "utf8");
     evidenceFiles.push({ file: name, sha256: sha256(evidenceRaw) });
-    collectSupports(JSON.parse(evidenceRaw), { origin: evidenceOrigin(name) }, supports);
+    const evidenceDocument = JSON.parse(evidenceRaw);
+    evidenceDocuments.push(evidenceDocument);
+    collectSupports(evidenceDocument, { origin: evidenceOrigin(name) }, supports);
+  }
+
+  /*
+   * Le niveau d'accès qu'un appui porte n'a pas la même valeur selon qu'il vient du dossier ou de
+   * l'enregistrement validé : le premier est une constatation de lecture, le second une
+   * déclaration de la fiche. Confondre les deux désarmait `SOURCE_NOT_CONSULTED`. Le pack dit
+   * maintenant, appui par appui, si le dossier soutient le niveau annoncé.
+   */
+  const accessReconciliation = reconcilierAcces(validated, evidenceDocuments);
+  for (const support of supports) {
+    if (support.origin !== "validated") continue;
+    const declaration = statutPourChemin(accessReconciliation, support.path);
+    if (declaration) {
+      support.access_corroboration = declaration.statut;
+      if (declaration.statut === STATUTS.CONTREDIT) support.access_dossier = declaration.dossier;
+    }
   }
 
   const uniqueSupports = [...new Map(supports.map((support) => [support.id, support])).values()];
@@ -160,6 +180,7 @@ async function prepare(conceptId) {
     candidate_sha256: sha256(deepRaw),
     validated_sha256: sha256(validatedRaw),
     evidence_files: evidenceFiles,
+    access_reconciliation: accessReconciliation,
     paragraphs: readerParagraphs(deepening),
     supports: uniqueSupports,
   };
@@ -181,6 +202,7 @@ async function prepare(conceptId) {
       budget_tokens: CONTEXT_BUDGET_TOKENS,
       paragraphs: pack.paragraphs.length,
       supports: pack.supports.length,
+      access_reconciliation: accessReconciliation.compteurs,
       artifact: path.relative(ROOT, output),
     }),
   );
@@ -394,9 +416,52 @@ async function gate(conceptId) {
   process.exitCode = exitCode;
 }
 
+/**
+ * Le balayage d'accès : la même réconciliation sur tout le corpus, sans pack ni écriture. Le
+ * chantier H demandait « rendre le défaut détectable par le code plutôt que par un audit » ; sans
+ * cette sortie, le décompte se refait à la main à chaque reprise, et un décompte refait à la main
+ * n'est pas une mesure.
+ */
+async function sweep() {
+  const dir = path.join(ROOT, "corpus", "validated");
+  const ids = (await readdir(dir))
+    .filter((name) => name.endsWith(".json"))
+    .map((name) => name.replace(/\.json$/, ""))
+    .sort();
+
+  const total = Object.fromEntries(Object.values(STATUTS).map((statut) => [statut, 0]));
+  const signalees = [];
+
+  for (const id of ids) {
+    const validated = JSON.parse(await readFile(validatedPath(id), "utf8"));
+    const documents = [];
+    for (const { file } of listEvidenceFiles(evidenceDir(id))) {
+      documents.push(JSON.parse(await readFile(file, "utf8")));
+    }
+    const reconciliation = reconcilierAcces(validated, documents);
+    for (const [statut, nombre] of Object.entries(reconciliation.compteurs)) total[statut] += nombre;
+
+    for (const declaration of reconciliation.declarations) {
+      if (declaration.statut === STATUTS.CORROBORE || declaration.statut === STATUTS.DOSSIER_ABSENT) continue;
+      signalees.push({
+        concept_id: id,
+        chemin: declaration.chemin,
+        declare: declaration.declare,
+        dossier: declaration.dossier,
+        statut: declaration.statut,
+        label: (declaration.label || "").slice(0, 90),
+      });
+    }
+  }
+
+  console.log(JSON.stringify({ cartes: ids.length, declarations: total, signalees }, null, 2));
+}
+
 const conceptId = option("only");
-if (!conceptId) {
-  fail("usage: npm run corpus:factcheck -- --prepare|--bundle|--gate --only=<conceptId>");
+if (flag("sweep")) {
+  await sweep();
+} else if (!conceptId) {
+  fail("usage: npm run corpus:factcheck -- --prepare|--bundle|--gate --only=<conceptId> | --sweep");
 } else if ([flag("prepare"), flag("bundle"), flag("gate")].filter(Boolean).length !== 1) {
   fail("choisir exactement un mode: --prepare, --bundle ou --gate");
 } else if (flag("prepare")) {
