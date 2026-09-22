@@ -25,7 +25,13 @@ Ce pack a été construit par du code. Il est l'autorité sur :
 - les locators ;
 - les supports existants ;
 - les `support_id` ;
-- les niveaux d'accès présents dans les données sources.
+- les niveaux d'accès présents dans les données sources ;
+- `access_corroboration`, sur les supports tirés de l'enregistrement validé : ce que le dossier
+  dit du niveau d'accès que la fiche déclare. Un support marqué `absent`, `non-declare`,
+  `hors-vocabulaire` ou `dossier-hors-vocabulaire` vaut comme notice et non comme lecture — le
+  proposer pour un claim de contenu revient à proposer un support que le vérificateur refusera.
+  Préfère, pour un tel claim, un support du dossier ; s'il n'en existe pas, `support_ids: []` dit
+  la vérité, et c'est ce qu'on attend de toi.
 
 Tu peux lire `AUDIT_PROTOCOL.md` pour comprendre la frontière éditoriale, mais tu ne reconstruis
 jamais toi-même le registre de preuves à partir du dépôt.

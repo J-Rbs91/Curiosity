@@ -54,6 +54,27 @@ Dans le doute, refuse le claim.
 Un support dont l'accès est `metadata-only` peut soutenir uniquement les métadonnées réellement
 présentes dans ce support. Il ne peut pas établir le contenu intellectuel d'une œuvre.
 
+### Accès déclaré mais non corroboré
+
+Un support tiré de l'enregistrement validé porte `access_corroboration` : ce que le dossier de la
+carte dit du niveau d'accès que la fiche déclare.
+
+- `corrobore` : le dossier soutient le niveau. Rien de particulier.
+- `contredit` : le niveau réel est celui d'`access_dossier`, plus prudent. Raisonne sur lui.
+- `absent`, `non-declare`, `hors-vocabulaire`, `dossier-hors-vocabulaire` : **la lecture n'est pas
+  établie.** Le support vaut comme notice — référence, pagination, date — et n'établit pas ce que
+  la source dit. Un claim de contenu qui ne tient que par lui est `SOURCE_NOT_CONSULTED`.
+- `dossier-absent` : la carte n'a pas de dossier. Le niveau déclaré est tout ce qui existe ; il ne
+  gagne pas d'autorité pour autant, et un claim de contenu reste à peser sur ce que le support
+  porte réellement.
+
+Même règle pour un support dont l'accès n'est pas l'un des trois niveaux du schéma — `n/a`,
+`excerpt`, ou toute autre valeur : aucune règle d'accès ne s'y applique, donc aucun contenu ne
+s'en déduit. **Un accès inconnu se traite comme une notice, jamais comme une lecture.**
+
+Ce n'est pas une précaution de principe : six sources du corpus sont déclarées `full-text` ou
+`partial` dans une fiche dont le dossier dit, en prose, ne pas avoir ouvert le texte.
+
 ### Attribution
 
 Une source secondaire qui rapporte X ne permet pas de transformer X en affirmation directe de

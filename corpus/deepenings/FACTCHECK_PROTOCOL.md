@@ -83,12 +83,68 @@ Le pack contient :
 - le niveau `consulted` lorsqu'il est réellement porté par l'objet source ;
 - `evidence_files`, le nom et le SHA-256 de chaque fichier de dossier ramassé, liste vide
   comprise — c'est là que se lit désormais ce que le pack a vu du dossier ;
+- `access_reconciliation`, ce que le dossier dit des niveaux d'accès que l'enregistrement validé
+  déclare — voir §3bis ;
 - l'estimation de taille du pack.
 
 Le modèle ne fabrique donc jamais `full-text`, `partial` ou `metadata-only`. Il ne peut citer
 qu'un `support_id` déjà présent dans le pack.
 
 Un identifiant inexistant est une erreur mécanique, même si son libellé semble plausible.
+
+## 3bis. Un niveau d'accès déclaré n'est pas un niveau d'accès constaté
+
+Le pack ramasse le dossier **et** l'enregistrement validé, où un objet source déclare son propre
+`consulted`. Les deux n'ont pas la même autorité : le dossier constate une lecture, la fiche la
+déclare. Les confondre était **le seul défaut du dispositif qui ouvrait au lieu de fermer** — une
+source déclarée `full-text` dans la fiche fournissait au vérificateur des appuis estampillés
+« lu » que rien du dossier ne soutenait, et `SOURCE_NOT_CONSULTED` ne pouvait plus se déclencher
+sur elle.
+
+Le pack ne réécrit aucun niveau. Il **qualifie** chaque déclaration de l'enregistrement validé et
+l'inscrit sur les appuis qui en descendent, sous `access_corroboration` :
+
+| statut | ce que le dossier en dit |
+|---|---|
+| `corrobore` | il déclare la même source au moins au niveau annoncé |
+| `contredit` | sa seule voie d'accès est plus prudente ; `access_dossier` porte ce niveau |
+| `non-declare` | il nomme la source sans se prononcer sur l'accès |
+| `absent` | il ne nomme pas cette source |
+| `hors-vocabulaire` | le niveau annoncé par la fiche n'est pas du vocabulaire du schéma |
+| `dossier-hors-vocabulaire` | le dossier déclare la source, mais à un niveau hors vocabulaire |
+| `dossier-absent` | la carte n'a pas de dossier, ou son dossier ne parle pas d'accès |
+
+Deux sources se reconnaissent d'un fichier à l'autre par un identifiant comparable — DOI, ISBN
+sous ses deux écritures, identifiant de rapport, URL normalisée. Aucune signature d'auteur ou de
+titre n'est utilisée : une clé trop lâche ferait corroborer une lecture qui n'a pas eu lieu, et
+c'est l'erreur qui coûte le plus cher ici.
+
+**Pourquoi qualifier et non dégrader.** Le geste qui vient à l'esprit — dégrader au plus prudent
+des deux niveaux en cas de divergence — n'a aucune prise, et il se tromperait. Mesuré sur les
+136 cartes par `npm run corpus:factcheck -- --sweep` :
+
+- **264 déclarations corroborées, et zéro contredite.** Les 34 cartes qui portent deux niveaux
+  pour un même identifiant énumèrent les *voies d'accès* d'une même œuvre : `echelles-de-mesure`
+  déclare trois fac-similés `full-text` de Stevens 1946 **et** la version éditeur
+  `metadata-only`. Les quatre déclarations sont vraies. Dégrader marquerait « non lu » un article
+  dont trois exemplaires ont été ouverts.
+- **Les surdéclarations réelles sont des absences, pas des divergences.** Les six établies sur
+  pièce — Selznick 1943 et Warner & Havens 1968 dans `deplacement-des-buts`, Cozic 2012 dans
+  `rationalite-limitee`, Hoskin 1996 dans `mesure-devenue-cible`, Milet 1982 dans
+  `critique-de-l-homo-oeconomicus` et `valeur-comme-fait-psychologique` — ne sont contredites par
+  aucun `consulted` du dossier. Le dossier n'en porte aucun pour elles, ou le dit en prose :
+  « Sert à fixer l'ISBN, pas à ouvrir le texte », « Contenu non consulté ».
+- **Et l'absence ne se dégrade pas sans casse.** Le dossier de `zones-incertitude` nomme Kuty 1997
+  « LA SOURCE LA PLUS RICHE DU DOSSIER, et de loin », 92 pages déposées sur ORBI, sans jamais
+  écrire `consulted` ; celui d'`ordre-a-partir-du-bruit` déclare von Foerster 1960 `full-text` par
+  une URL d'Internet Archive quand la fiche l'identifie par son LCCN. Les deux `full-text` sont
+  corrects. Quinze lots n'ont pas normalisé le vocabulaire des dossiers, et un instrument qui
+  prendrait leur silence pour un démenti refuserait les cartes les mieux servies.
+
+D'où la règle : le pack cesse de présenter comme un fait du dossier ce qui n'est qu'une
+déclaration de la fiche, et laisse le vérificateur en tirer les conséquences claim par claim.
+Réparer un niveau dans un enregistrement validé reste un geste de la couche carte — ni le pack ni
+aucun agent `corpus-deepening-*` n'y touche.
 
 ## 4. Claims ancrés dans le texte réel
 
@@ -128,10 +184,21 @@ claim, le bundle contient :
 
 - le `claim_text` exact validé ;
 - les supports résolus depuis leurs identifiants ;
-- leur origine, chemin et niveau d'accès déterminés par le pack.
+- leur origine, chemin et niveau d'accès déterminés par le pack ;
+- pour un support tiré de l'enregistrement validé, son `access_corroboration` (§3bis).
 
 Le verifier ne voit pas le verdict que le mapper aurait souhaité. Il décide uniquement si les
 supports fournis autorisent exactement le claim.
+
+**Un niveau d'accès que le dossier ne corrobore pas n'établit pas le contenu d'une œuvre.** Un
+support dont l'`access_corroboration` vaut `absent`, `non-declare`, `hors-vocabulaire` ou
+`dossier-hors-vocabulaire` se traite comme une notice : il soutient ce qu'il porte lui-même — une
+référence, une pagination, une date — et non ce que le texte de la source dirait. Il en va de
+même d'un support dont l'accès n'est pas l'un des trois niveaux du schéma, `n/a` compris : aucune
+règle d'accès ne s'y applique, donc aucun contenu ne s'en déduit. Si un claim de contenu ne tient
+que par un tel support, le verdict est `SOURCE_NOT_CONSULTED`.
+
+Un `contredit` se lit au niveau porté par `access_dossier`, le plus prudent des deux.
 
 Verdicts sémantiques :
 
@@ -168,6 +235,8 @@ Ce protocole empêche notamment un agent de :
 
 - fabriquer une référence de support convaincante mais inexistante ;
 - transformer lui-même `metadata-only` en `full-text` ;
+- faire établir le contenu d'une œuvre par un `full-text` que la fiche déclare et que le dossier
+  ne soutient nulle part ;
 - vérifier une paraphrase différente du texte réellement publié ;
 - conserver un ancien PASS après modification du texte ;
 - noyer plusieurs cartes dans le même contexte de vérification.
