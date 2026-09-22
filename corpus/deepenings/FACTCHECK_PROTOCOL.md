@@ -193,12 +193,18 @@ supports fournis autorisent exactement le claim.
 **Un niveau d'accès que le dossier ne corrobore pas n'établit pas le contenu d'une œuvre.** Un
 support dont l'`access_corroboration` vaut `absent`, `non-declare`, `hors-vocabulaire` ou
 `dossier-hors-vocabulaire` se traite comme une notice : il soutient ce qu'il porte lui-même — une
-référence, une pagination, une date — et non ce que le texte de la source dirait. Il en va de
-même d'un support dont l'accès n'est pas l'un des trois niveaux du schéma, `n/a` compris : aucune
-règle d'accès ne s'y applique, donc aucun contenu ne s'en déduit. Si un claim de contenu ne tient
-que par un tel support, le verdict est `SOURCE_NOT_CONSULTED`.
+référence, une pagination, une date — et non ce que le texte de la source dirait. Si un claim de
+contenu ne tient que par un tel support, le verdict est `SOURCE_NOT_CONSULTED`.
 
 Un `contredit` se lit au niveau porté par `access_dossier`, le plus prudent des deux.
+
+**Cette règle ne porte que sur les appuis qui descendent d'une déclaration de source.** Un appui
+tiré d'un autre champ de l'enregistrement validé — `quotation`, `summary`, `notes`, `review` —
+n'a pas de niveau d'accès du tout et arrive avec `access: "n/a"` : il ne revendique aucune
+lecture, donc il n'en surdéclare aucune, et aucune règle d'accès ne s'y applique. `quotation.text`
+est le verbatim relevé par le lecteur primaire et gardé par la revue de la carte : le traiter
+comme une notice au motif que son accès est inconnu reviendrait à refuser la meilleure preuve du
+dossier. Ces appuis se pèsent sur leur contenu, comme avant.
 
 Verdicts sémantiques :
 

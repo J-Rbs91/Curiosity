@@ -68,12 +68,15 @@ carte dit du niveau d'accès que la fiche déclare.
   gagne pas d'autorité pour autant, et un claim de contenu reste à peser sur ce que le support
   porte réellement.
 
-Même règle pour un support dont l'accès n'est pas l'un des trois niveaux du schéma — `n/a`,
-`excerpt`, ou toute autre valeur : aucune règle d'accès ne s'y applique, donc aucun contenu ne
-s'en déduit. **Un accès inconnu se traite comme une notice, jamais comme une lecture.**
-
 Ce n'est pas une précaution de principe : six sources du corpus sont déclarées `full-text` ou
 `partial` dans une fiche dont le dossier dit, en prose, ne pas avoir ouvert le texte.
+
+**La règle ne porte que sur les appuis qui descendent d'une source.** Un appui venu d'un autre
+champ de l'enregistrement validé — `quotation`, `summary`, `notes`, `review` — arrive avec
+`access: "n/a"` et sans `access_corroboration` : il ne revendique aucune lecture, donc il n'en
+surdéclare aucune. `quotation.text` est le verbatim relevé par le lecteur primaire et gardé par la
+revue de la carte. Pèse ces appuis sur leur contenu, comme tu l'as toujours fait ; un accès absent
+n'est pas un accès douteux.
 
 ### Attribution
 

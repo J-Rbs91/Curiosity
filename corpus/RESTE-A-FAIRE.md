@@ -1296,10 +1296,30 @@ personne ne vérifie traverse le pack comme un tampon d'accès dont aucune règl
   les dix-huit auditées, quatre en `FACTCHECK_PASS` / `ACCEPT`.**
 
 `corpus:validate` les signale désormais en avertissement — 114 au lieu de 100, zéro erreur — et le
-vérificateur traite tout accès hors vocabulaire, `n/a` compris, comme une notice. **L'avertissement
+vérificateur traite un niveau de source hors vocabulaire comme une notice. **L'avertissement
 et non l'erreur est délibéré** : réparer un `consulted` dans une fiche validée est un geste de la
 couche carte, et bloquer `corpus:build` sur treize champs qu'aucun agent de cette couche n'a le
 droit de corriger arrêterait la publication sans réparer quoi que ce soit.
+
+## Aucun des dix-huit `FACTCHECK_PASS` n'est invalidé au fond — vérifié, pas supposé
+
+Un changement d'instrument rend en principe stale tout `PASS` obtenu avec l'ancien. La question a
+donc été posée sur pièce plutôt que par principe : **pour chacune des treize cartes auditées dont
+une source est concernée, quel claim cite réellement un appui que le nouveau signal déclasse ?**
+Le test recroise les `support_ids` de chaque `claim-map.json` avec le pack régénéré.
+
+**Un seul appui de source non corroborée est cité dans tout l'ensemble** : `organisation-genree`,
+`$.sources[1].label`, l'Acker 2006 déclaré `excerpt`, cité par le claim C047. Et C047 affirme
+« Seize ans plus tard, elle reprend ce programme dans “Inequality Regimes…” » — **un titre et une
+date, exactement ce qu'une notice soutient.** Le `PASS` tient.
+
+**Le reste des appuis que le test a d'abord signalés n'était pas un défaut mais une erreur de
+catégorie de ma mesure**, et elle valait d'être corrigée avant d'être écrite dans une règle :
+`$.quotation.text`, `$.summary`, `$.notes[*]`, `$.review.notes[*]` arrivent avec `access: "n/a"`
+parce qu'ils ne descendent d'aucune source, pas parce que leur accès serait douteux. Une première
+rédaction du protocole étendait la règle à « tout accès hors vocabulaire, `n/a` compris » : elle
+aurait fait du verbatim relevé par le lecteur primaire une simple notice, sur les 136 cartes. **La
+règle ne porte que sur les appuis qui descendent d'une déclaration de source.**
 
 ## Et un piège de mesure, découvert le même jour par un reviewer
 
