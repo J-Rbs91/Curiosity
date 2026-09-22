@@ -128,18 +128,22 @@ des deux niveaux en cas de divergence — n'a aucune prise, et il se tromperait.
   déclare trois fac-similés `full-text` de Stevens 1946 **et** la version éditeur
   `metadata-only`. Les quatre déclarations sont vraies. Dégrader marquerait « non lu » un article
   dont trois exemplaires ont été ouverts.
-- **Les surdéclarations réelles sont des absences, pas des divergences.** Les six établies sur
+- **Les surdéclarations réelles sont des absences, pas des divergences.** Les cinq établies sur
   pièce — Selznick 1943 et Warner & Havens 1968 dans `deplacement-des-buts`, Cozic 2012 dans
-  `rationalite-limitee`, Hoskin 1996 dans `mesure-devenue-cible`, Milet 1982 dans
-  `critique-de-l-homo-oeconomicus` et `valeur-comme-fait-psychologique` — ne sont contredites par
-  aucun `consulted` du dossier. Le dossier n'en porte aucun pour elles, ou le dit en prose :
-  « Sert à fixer l'ISBN, pas à ouvrir le texte », « Contenu non consulté ».
-- **Et l'absence ne se dégrade pas sans casse.** Le dossier de `zones-incertitude` nomme Kuty 1997
-  « LA SOURCE LA PLUS RICHE DU DOSSIER, et de loin », 92 pages déposées sur ORBI, sans jamais
-  écrire `consulted` ; celui d'`ordre-a-partir-du-bruit` déclare von Foerster 1960 `full-text` par
-  une URL d'Internet Archive quand la fiche l'identifie par son LCCN. Les deux `full-text` sont
-  corrects. Quinze lots n'ont pas normalisé le vocabulaire des dossiers, et un instrument qui
-  prendrait leur silence pour un démenti refuserait les cartes les mieux servies.
+  `rationalite-limitee`, Milet 1982 dans `critique-de-l-homo-oeconomicus` et
+  `valeur-comme-fait-psychologique` — ne sont contredites par aucun `consulted` du dossier. Le
+  dossier le dit en prose, « Contenu non consulté », ou ne connaît pas la source du tout.
+- **Et l'absence ne se dégrade pas sans casse.** Trois `full-text` ou `partial` que le balayage
+  signale sont corrects, et leurs dossiers l'établissent — ailleurs que dans un champ `consulted`.
+  `zones-incertitude` nomme Kuty 1997 « LA SOURCE LA PLUS RICHE DU DOSSIER, et de loin », 92 pages
+  déposées sur ORBI, sous `level: "B"` ; `ordre-a-partir-du-bruit` déclare von Foerster 1960
+  `full-text` par une URL d'Internet Archive quand la fiche l'identifie par son LCCN ;
+  `mesure-devenue-cible` consacre un fichier entier à l'accès à Hoskin 1996, « ouvert, mais
+  partiellement : par la recherche interne au volume de Google Books », extraits OCR paginés — le
+  `partial` de la fiche est exact, et les marqueurs de non-consultation du même dossier portent sur
+  les autres voies essayées, Internet Archive et Open Library. Quinze lots n'ont pas normalisé le
+  vocabulaire des dossiers, et un instrument qui prendrait leur silence pour un démenti refuserait
+  les cartes les mieux servies.
 
 D'où la règle : le pack cesse de présenter comme un fait du dossier ce qui n'est qu'une
 déclaration de la fiche, et laisse le vérificateur en tirer les conséquences claim par claim.

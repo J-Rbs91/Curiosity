@@ -68,8 +68,8 @@ carte dit du niveau d'accès que la fiche déclare.
   gagne pas d'autorité pour autant, et un claim de contenu reste à peser sur ce que le support
   porte réellement.
 
-Ce n'est pas une précaution de principe : six sources du corpus sont déclarées `full-text` ou
-`partial` dans une fiche dont le dossier dit, en prose, ne pas avoir ouvert le texte.
+Ce n'est pas une précaution de principe : cinq sources du corpus sont déclarées `full-text` dans
+une fiche dont le dossier dit ne pas avoir ouvert le texte, ou ne connaît pas la source du tout.
 
 **La règle ne porte que sur les appuis qui descendent d'une source.** Un appui venu d'un autre
 champ de l'enregistrement validé — `quotation`, `summary`, `notes`, `review` — arrive avec

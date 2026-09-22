@@ -30,7 +30,7 @@ script ne peut pas dire : quel travail est possible aujourd'hui, ce qu'il coûte
 | **E.** Le garde de la CI ne couvrait qu'une moitié du répertoire projeté | **aucun** | non | **fermé le 2 septembre 2026** |
 | **F.** Les acquisitions que l'audit v3 réclame | voir la section | oui | ouvert le 17 septembre 2026 |
 | **G.** Le pack de preuve ne lisait qu'un fichier du dossier | **aucun** | non | **fermé le 21 septembre 2026** — dernière suite portée, la version antérieure se désigne par un SHA de blob |
-| **H.** Un niveau d'accès surdéclaré désarme le gate | 6 cas établis, 13 champs à normaliser | non pour le correctif, oui pour les cas | **détection faite le 22 septembre 2026** ; reste la réparation des fiches, qui est un geste de la couche carte |
+| **H.** Un niveau d'accès surdéclaré désarme le gate | 5 cas établis, 13 champs à normaliser | non pour le correctif, oui pour les cas | **détection faite le 22 septembre 2026** ; reste la réparation des fiches, qui est un geste de la couche carte |
 
 **Le chantier A est fermé.** Il s'était vidé le 21 août, rouvert et creusé pendant cinq lots
 d'ouverture consécutifs jusqu'à trente-quatre cartes le 28 août, puis refermé en trois nuits :
@@ -1209,7 +1209,7 @@ Dans cet ordre, et il est motivé par le coût.
 2. **Corriger dans les enregistrements validés les cas que le balayage établit.** Ce n'est pas un
    geste de la couche approfondissement, et aucun agent `corpus-deepening-*` n'en a le droit. Il
    relève de `corpus-editor` ou d'une main humaine. **La liste est maintenant courte et vérifiée
-   sur pièce — six sources sur sept cartes, plus un `excerpt` et douze `consulted` absents**, voir
+   sur pièce — cinq sources sur quatre cartes, plus un `excerpt` et douze `consulted` absents**, voir
    ci-dessous.
 3. ~~**Vérifier les 31 candidats.**~~ **Sans objet** : la liste bruitée est remplacée par
    `npm run corpus:factcheck -- --sweep`, qui ne rend plus 31 candidats à trier mais 17
@@ -1244,18 +1244,24 @@ dit la non-consultation en prose. Une comparaison de champ à champ en trouve do
 qui les attrape est l'autre : **un niveau au-dessus de `metadata-only` que rien du dossier ne
 corrobore.** Neuf déclarations, les neuf vérifiées sur pièce.
 
-**Six sont de vraies surdéclarations** — les trois connues, et trois que le balayage a trouvées :
+**Cinq sont de vraies surdéclarations** — les trois connues, et deux que le balayage a trouvées :
 
 | carte | source | déclaré | ce que dit le dossier |
 |---|---|---|---|
 | `deplacement-des-buts` | Selznick 1943 | `full-text` | non ouvert ; connu par des tiers |
 | `deplacement-des-buts` | Warner & Havens 1968 | `full-text` | « métadonnées seulement ; JSTOR fermé » |
 | `rationalite-limitee` | Cozic 2012 | `full-text` | notice HAL, `/document` en 404, « Contenu non consulté » |
-| `mesure-devenue-cible` | Hoskin 1996 | `partial` | « Sert à fixer l'ISBN, pas à ouvrir le texte » |
-| `critique-de-l-homo-oeconomicus` | Milet 1982 | `full-text` | **absent du dossier** : ni « Milet », ni `bupsy` |
+| `critique-de-l-homo-oeconomicus` | Milet 1982 | `full-text` | **absent du dossier** : ni « Milet », ni `bupsy`, ni `12030` |
 | `valeur-comme-fait-psychologique` | Milet 1982 | `full-text` | idem, même source sur l'autre carte |
 
-**Deux sont des faux positifs, et ils disent pourquoi le balayage ne peut pas décider seul.**
+Les deux dernières sont d'une espèce plus faible que les trois premières, et il faut le dire dans
+cet ordre : pour Selznick, Warner & Havens et Cozic, **le dossier nie la lecture**. Pour Milet, il
+est muet — la seule source dont les deux dossiers déclarent l'accès est le livre de Tarde. La
+lecture a peut-être eu lieu sans être consignée ; ce qui est établi est qu'aucune pièce ne
+l'atteste, et c'est déjà une raison de ne pas estampiller ses appuis « lu ».
+
+**Trois sont des faux positifs, et ils disent pourquoi le balayage ne peut pas décider seul.** Les
+trois dossiers établissent l'accès — ailleurs que dans un champ `consulted`.
 
 - `zones-incertitude` / Kuty 1997 : le dossier le nomme « LA SOURCE LA PLUS RICHE DU DOSSIER, et
   de loin », 92 pages déposées sur ORBI, et ne lui écrit jamais de `consulted` — l'entrée porte
@@ -1263,6 +1269,18 @@ corrobore.** Neuf déclarations, les neuf vérifiées sur pièce.
 - `ordre-a-partir-du-bruit` / von Foerster 1960 : le dossier le déclare `full-text` par une URL
   d'Internet Archive quand la fiche l'identifie par `LCCN 60-12574`. Même œuvre, aucun identifiant
   commun : rien à rapprocher.
+- `mesure-devenue-cible` / Hoskin 1996 : **celui-là a d'abord été compté à tort comme une
+  surdéclaration, et le détromper valait la peine**, parce que l'erreur est instructive. Le dossier
+  porte trois marqueurs de non-consultation sur l'ISBN du volume — « Le volume n'est pas sur
+  Internet Archive, ni en consultation ni en prêt », « Sert à fixer l'ISBN, pas à ouvrir le
+  texte » — et un lecteur pressé s'arrête là. Mais ces phrases portent sur **les voies essayées
+  et échouées**, Internet Archive et Open Library ; le fichier `attribution-hoskin.json` consacre
+  son champ `preuve` à celle qui a réussi : « Hoskin a été ouvert, mais partiellement : par la
+  recherche interne au volume de Google Books », extraits OCR verbatim paginés, p. 266 et note 1
+  de la p. 280, avec ses réserves écrites. **Le `partial` de la fiche est exact.** Un marqueur de
+  non-consultation à proximité d'un identifiant ne dit pas ce qu'il refuse : c'est le défaut même
+  du balayage jetable du 21 septembre, et il attrape aussi celui qui le remplace si on lit sa
+  sortie sans ouvrir le dossier.
 
 **Le neuvième n'est ni l'un ni l'autre** : `zones-incertitude` / Crozier 1966 est déclaré `partial`
 par la fiche et `excerpt` par le dossier — un niveau que le schéma interdit.
