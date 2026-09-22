@@ -1,216 +1,216 @@
 {
   "concept_id": "mesure-devenue-cible",
-  "candidate_sha256": "230f81e39ecbacdc139684eb798dbba3b9bbb3671f2038baf79885f10dee4f01",
+  "candidate_sha256": "60f2c6e52a2f8d9959dc2af37720c1ea73bd84c0036e8d4b2f6892f335f3c674",
   "results": [
     {
       "claim_id": "C001",
       "verdict": "SUPPORTED",
-      "reason": "Illustration hypothétique, aucun détail présenté comme réel ; le mécanisme énoncé (viser le chiffre plutôt que la chose mesurée) est exactement celui que portent quotation.text et summary."
+      "reason": "La citation validee (SUP-4754fa97/SUP-8d0a8184) et le summary (SUP-4f560be9) posent qu'un indicateur promu au rang de cible cesse d'etre un bon indicateur ; la glose garde la forme categorique de l'aphorisme, n'ajoute ni cause ni frequence et ne cree aucune attribution."
     },
     {
       "claim_id": "C002",
       "verdict": "SUPPORTED",
-      "reason": "Suite du même cas imaginé ; « cesse d'être une bonne mesure » (quotation.text / original_text) et le summary autorisent la glose, qui reste dans les prémisses posées par le scénario et n'attribue rien à un auteur."
+      "reason": "Citation anglaise verbatim : identique a SUP-4754fa97 et SUP-1ae369f0, et SUP-34a1a211 atteste la verification mot a mot sur le fac-simile editeur, p. 308."
     },
     {
       "claim_id": "C003",
       "verdict": "SUPPORTED",
-      "reason": "Citation identique au verbatim de quotation.original_text et de la lecture primaire ; review.notes[0] atteste la vérification mot à mot sur le fac-similé éditeur, p. 308."
+      "reason": "Traduction identique a SUP-8d0a8184, dont SUP-9f0138e7 documente les choix (mesure aux deux occurrences, cible et non objectif)."
     },
     {
       "claim_id": "C004",
       "verdict": "SUPPORTED",
-      "reason": "Reprise exacte de quotation.text, traduction interne documentée (translation.kind et translation.translator)."
+      "reason": "SUP-94c76113 et SUP-b4d108bf donnent l'auteure et l'annee 1997 ; SUP-9bb347d2 et SUP-79e2f2d4 etablissent que la phrase est ecrite de sa main dans ce texte."
     },
     {
       "claim_id": "C005",
       "verdict": "SUPPORTED",
-      "reason": "authors[0].name, quotation.reference (European Review, juillet 1997), attribution.authorship SOLE_AUTHOR et le verdict STRATHERN du dossier portent exactement l'auteure et la date."
+      "reason": "SUP-79e2f2d4 : article tire de la Founders' Memorial Lecture donnee a Girton College (Cambridge) le 11 mars 1997."
     },
     {
       "claim_id": "C006",
       "verdict": "SUPPORTED",
-      "reason": "attribution.note : article « tiré de la Founders' Memorial Lecture donnée à Girton College (Cambridge) le 11 mars 1997 » ; le titre de quotation.reference porte l'objet (audit in the British University system)."
+      "reason": "Le titre releve en SUP-b4d108bf (audit in the British University system) et l'objet decrit en SUP-2f785be3 (audit de l'enseignement superieur britannique) autorisent exactement cette portee."
     },
     {
       "claim_id": "C007",
       "verdict": "SUPPORTED",
-      "reason": "quotation.reference et definition_de_lauteur circonscrivent l'objet au système universitaire britannique et à l'audit ; la restriction énoncée n'ajoute rien."
+      "reason": "Restriction de portee, et non extension : SUP-b4d108bf et SUP-2f785be3 situent l'article sur le systeme universitaire britannique et l'enseignement superieur, non sur l'ecole en general."
     },
     {
       "claim_id": "C008",
       "verdict": "SUPPORTED",
-      "reason": "Référence 1997 résolue sur Crossref (review.notes[2]) et definition_de_lauteur : audit universitaire britannique, ce que « des années 1990 » ne dépasse pas."
+      "reason": "SUP-b4d108bf et SUP-4fe01aec (fac-simile de l'article publie, niveau corrobore par le dossier) datent l'article de 1997 ; SUP-2f785be3 en donne l'objet, l'audit explosion contemporaine dans l'universite britannique."
     },
     {
       "claim_id": "C009",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur énonce littéralement que l'objet de l'audit « n'est pas tant l'éducation des étudiants que la provision institutionnelle de cette éducation » ; la seconde partie n'est qu'une glose de « provision institutionnelle »."
+      "reason": "SUP-2f785be3 rend compte de l'argument en posant d'emblee l'objet de l'audit et son caractere contre-intuitif (n'est pas tant l'education des etudiants que la provision institutionnelle de cette education) ; le claim n'ajoute rien a ce que ce support presente comme le premier geste."
     },
     {
       "claim_id": "C010",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[0] : phrase « en tête de paragraphe » p. 308 ; quotation.locator et review.notes[1] situent cette page dans la section « Improving the examination system »."
+      "reason": "Premiere moitie reprise mot a mot de SUP-2f785be3 ; la glose sur les dispositifs par lesquels l'etablissement est cense fournir l'education ne fait que rendre provision institutionnelle de cette education, sans elargir."
     },
     {
       "claim_id": "C011",
       "verdict": "SUPPORTED",
-      "reason": "attribution.note nomme l'exemple : « l'affaiblissement du 2.1 comme discriminant des performances individuelles »."
+      "reason": "SUP-34a1a211 constate la phrase en tete de paragraphe p. 308 sur le fac-simile ; SUP-48c5e476 et SUP-90745594 situent cette page dans la section Improving the examination system (p. 306-311), verification faite ; SUP-e81559a7 confirme le premier paragraphe de la p. 308."
     },
     {
       "claim_id": "C012",
-      "verdict": "TOO_STRONG",
-      "reason": "Le seul appui (review.notes[0]) donne la phrase suivante tronquée : « The more a 2.1 examination performance becomes an expectation… ». C'est la protase d'une corrélative dont l'apodose — ce qu'elle observe réellement — est absente du bundle. La présenter comme une observation assertée (« cette mention devient de plus en plus une attente ») transforme une construction corrélative en constat de tendance et donne pour son observation ce qui n'en est que la condition."
+      "verdict": "SUPPORTED",
+      "reason": "SUP-34a1a211 releve la suite immediate (The more a 2.1 examination performance becomes an expectation...) et SUP-79e2f2d4 nomme l'exemple : l'affaiblissement du 2.1 comme discriminant des performances individuelles."
     },
     {
       "claim_id": "C013",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : « mot dont elle retrace le glissement, de la terre qui rapporte à la chose qu'on améliore » ; la centralité d'improvement dans le passage est confirmée par la lecture (quotation.reference : « juste après le développement sur le glissement sémantique du mot improvement »)."
+      "reason": "SUP-2f785be3 fait d'improvement le mot pivot du passage : morale de l'accomplissement resumee dans le concept d'improvement, mot dont elle retrace le glissement."
     },
     {
       "claim_id": "C014",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur porte mot pour mot les pratiques d'examen écrit, chiffré et archivé inventées à la fin du XVIIIe siècle, la « new morality of attainment » et le verbatim « what is became explicitly joined with what ought to be »."
+      "reason": "SUP-2f785be3 : mot dont elle retrace le glissement, de la terre qui rapporte a la chose qu'on ameliore ; l'ordre et les deux sens sont portes par le support, la formulation n'ajoute ni cause ni generalisation."
     },
     {
       "claim_id": "C015",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim « measuring the improvement leads to improving the measures » (p. 307) relevé dans definition_de_lauteur ; la traduction en reste littérale."
+      "reason": "SUP-2f785be3 rattache explicitement improvement aux pratiques d'examen ecrit, chiffre et archive inventees par l'universite a la fin du XVIIIe siecle."
     },
     {
       "claim_id": "C016",
       "verdict": "SUPPORTED",
-      "reason": "Observation portant sur la phrase citée elle-même, dont les deux membres inversés sont dans l'appui ; aucune portée ajoutée."
+      "reason": "SUP-2f785be3 porte la new morality of attainment et le verbatim what is became explicitly joined with what ought to be ; la traduction en est fidele et l'attribution reste selon elle."
     },
     {
       "claim_id": "C017",
       "verdict": "SUPPORTED",
-      "reason": "Le caractère non accidentel est porté par « deliberately built on the conflation of measures with targets » (notes[4], summary), et le déplacement de l'effort vers l'instrument par « measuring the improvement leads to improving the measures » (definition_de_lauteur)."
+      "reason": "SUP-2f785be3 : l'effet qu'elle nomme dans ses termes, measuring the improvement leads to improving the measures (p. 307) ; verbatim et traduction concordent."
     },
     {
       "claim_id": "C018",
       "verdict": "SUPPORTED",
-      "reason": "attribution.note : « La phrase est très largement attribuée à Charles Goodhart. »"
+      "reason": "Le renversement est celui du verbatim de SUP-2f785be3 (p. 307) ; rien d'accidentel ne depasse pas deliberately built on the conflation of measures with targets, phrase de Strathern p. 319 verifiee en SUP-70b52040 et reprise en SUP-4f560be9."
     },
     {
       "claim_id": "C019",
       "verdict": "SUPPORTED",
-      "reason": "attribution.note (« Cette attribution est fausse pour cette formulation-ci »), attribution_note, verdict STRATHERN et consequence_pour_la_carte convergent ; la restriction « pour cette formulation-ci » est celle des appuis."
+      "reason": "SUP-79e2f2d4 enonce lui-meme que la phrase est tres largement attribuee a Charles Goodhart."
     },
     {
       "claim_id": "C020",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[0] (« sans guillemets ni appel de note », vérifié sur fac-similé) et attribution.note (« sans marque de discours rapporté »)."
+      "reason": "SUP-79e2f2d4 (cette attribution est fausse pour cette formulation-ci), SUP-9bb347d2, SUP-ff4a6662 (verdict STRATHERN) et SUP-f0066c55 convergent, et la restriction pour cette formulation-ci est exactement celle des supports."
     },
     {
       "claim_id": "C021",
       "verdict": "SUPPORTED",
-      "reason": "reserves[0] énonce la convention au niveau de l'article (« dans les conventions de cet article, indique la voix de l'auteure ») et le fait que Strathern met systématiquement entre guillemets et référence ce qu'elle emprunte, y compris ailleurs dans le même paragraphe."
+      "reason": "Triple constat concordant : SUP-9bb347d2 et SUP-34a1a211 (tete de paragraphe, sans guillemets ni appel de note, verifie sur fac-simile), SUP-79e2f2d4 (sans marque de discours rapporte)."
     },
     {
       "claim_id": "C022",
       "verdict": "SUPPORTED",
-      "reason": "notes[0] et attribution_note : aucun texte de Goodhart dans les quinze références, nommé une seule fois, dans le paragraphe de la citation."
+      "reason": "SUP-1bb4a3d8 : Strathern met systematiquement entre guillemets et reference ce qu'elle emprunte a Hoskin ailleurs dans le meme paragraphe ; SUP-79e2f2d4 montre la citation de Hoskin et le renvoi (Ref. 3, p. 268) quelques lignes plus bas."
     },
     {
       "claim_id": "C023",
-      "verdict": "TOO_STRONG",
-      "reason": "Seul le verbatim « I draw freely on his observations », rapporté au texte de Hoskin, est porté par attribution_note. Trois éléments présentés au lecteur comme des faits ne le sont par aucun appui résolu du bundle : la localisation « une page plus tôt », le fait qu'elle y indiquerait qu'« une part de la réponse » vient de lui, et le fait qu'elle le présenterait comme « un spécialiste de l'éducation » (aucun appui n'attribue ce qualificatif à Strathern). L'autre appui (review.notes[5]) porte sur le summary et la p. 319."
+      "verdict": "SUPPORTED",
+      "reason": "SUP-0855d686 rapporte le recomptage (15 references numerotees p. 320-321, aucune entree Goodhart, Goodhart nomme une seule fois, dans le paragraphe de la p. 308) ; SUP-9bb347d2 et SUP-43ec328e disent la meme chose."
     },
     {
       "claim_id": "C024",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[3] atteste l'ouverture du chapitre p. 265 avec le verbatim exact, et la parution 1996 ; attribution_note le confirme. Traduction littérale."
+      "reason": "SUP-0855d686 releve p. 307 la phrase and I draw freely on his observations.3 et SUP-9bb347d2 l'attribue au texte de Hoskin ; la traduction est fidele."
     },
     {
       "claim_id": "C025",
       "verdict": "SUPPORTED",
-      "reason": "attribution_note (« elle resserre une formulation déjà publiée… Elle reformule donc la loi plus qu'elle ne la crée ») et consequence_pour_la_carte (« Strathern condense en un aphorisme de son cru un raisonnement qu'elle emprunte à Hoskin ») autorisent exactement le partage tour de langue / loi."
+      "reason": "Fait de notice seulement : SUP-5be814a8 (chapitre 14, p. 265-282, volume de 1996) et SUP-0d8fa571 datent le chapitre de 1996, SUP-b4d108bf l'article de 1997. Aucun contenu n'est etabli ici par une declaration d'acces."
     },
     {
       "claim_id": "C026",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[8] : « Hoskin ne se présente pas en baptiseur… Il relaie donc une appellation qu'il donne pour déjà en circulation » ; notes[2] le confirme."
+      "reason": "SUP-d0752ad1 rapporte l'ouverture du chapitre lue sur le PDF ouvert par le reviewer lui-meme : Goodhart's Law - that every measure which becomes a target becomes a bad measure - is inexorably... (p. 265) ; SUP-9bb347d2 et SUP-f107290d donnent le meme verbatim. La traduction est litterale."
     },
     {
       "claim_id": "C027",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[8] recommande précisément cette formulation (« c'est par Hoskin que Strathern reçoit le nom ») ; attribution.note et attribution_note montrent que Strathern ne connaît le nom que par lui."
+      "reason": "SUP-9bb347d2 (elle reformule la loi plus qu'elle ne la cree) et SUP-f0066c55 (Strathern condense en un aphorisme de son cru un raisonnement qu'elle emprunte a Hoskin) autorisent exactement ce partage entre le tour de langue et la loi ; SUP-ff4a6662 maintient la paternite de la formule a Strathern."
     },
     {
       "claim_id": "C028",
       "verdict": "SUPPORTED",
-      "reason": "notes[0] : « elle ajoute aussitôt, en toutes lettres : “Hoskin describes this as ‘Goodhart's law’, after the latter's observation on instruments for monetary control…” » ; la formulation lecteur n'ajoute ni portée ni attribution directe à Goodhart."
+      "reason": "SUP-f72296b9 : Hoskin ne se presente pas en baptiseur, il relaie une appellation qu'il donne pour deja en circulation, appuye sur is becoming recognized as one of the overriding laws of our times (p. 265) et sur la note 1 as originally defined by Goodhart (p. 280), verbatim en SUP-afad28d2 ; SUP-180f9093 concorde."
     },
     {
       "claim_id": "C029",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim de la note p. 280 relevé dans preuve, notes[2] et review.notes[3] (renvoi à Goodhart, C. 1989) ; le résumé lecteur en est le décalque."
+      "reason": "Formulation prudente explicitement recommandee par SUP-f72296b9 (c'est par Hoskin que Strathern recoit le nom serait plus sur que c'est Hoskin qui la nomme) ; SUP-79e2f2d4 et SUP-9bb347d2 montrent que Strathern ne connait le nom que par le relais de Hoskin."
     },
     {
       "claim_id": "C030",
       "verdict": "SUPPORTED",
-      "reason": "Conséquence qui suit la note monétaire relevée verbatim (la monnaie cesse d'être utilisée comme monnaie, remplacée par des substituts) ; la sortie « au-delà de l'école » est établie par le domaine monétaire lui-même et par la généralisation que Hoskin reconnaît dans la même note. Énoncée dans la voix du texte, sans attribution primaire."
+      "reason": "SUP-43ec328e et SUP-0855d686 donnent le verbatim immediatement consecutif a l'aphorisme : Hoskin describes this as Goodhart's law, after the latter's observation on instruments for monetary control... ; le claim en garde l'ordre indirect, sans faire parler Goodhart en direct."
     },
     {
       "claim_id": "C031",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim p. 319 porté par notes[4], definition_de_lauteur et review.notes[5], qui établit qu'il s'agit d'une phrase de Strathern elle-même ; « plus loin » est cohérent avec p. 319 contre p. 308."
+      "reason": "SUP-afad28d2 releve la note p. 280 verbatim (it will cease to be used as money and replaced by substitutes which will enable evasion of that control (Goodhart, 1989)), SUP-d0752ad1 confirme le renvoi a Goodhart, C. (1989), SUP-180f9093 en donne le meme resume."
     },
     {
       "claim_id": "C032",
       "verdict": "SUPPORTED",
-      "reason": "Traduction fidèle de la phrase p. 319 ; review.notes[5] précise que « deliberately » et « enhances » sont portés mot pour mot par la source primaire, et le summary rend la même chose."
+      "reason": "Consequence qui suit reellement la formulation monetaire relevee en SUP-afad28d2 et resumee en SUP-180f9093 : c'est la monnaie elle-meme qui cesse d'etre utilisee au profit de substituts, et le domaine monetaire situe le mecanisme hors de l'ecole. Aucune attribution primaire n'est creee."
     },
     {
       "claim_id": "C033",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : « corruption qu'elle dit “endemic” à l'idée que le but soit d'encourager les institutions à améliorer leur note »."
+      "reason": "SUP-70b52040 situe la phrase p. 319, section Three comments, et la donne verbatim ; SUP-3b484a87, SUP-1f2a4933 et SUP-2f785be3 la portent a l'identique. Plus loin dans le meme texte est exact (p. 319 apres p. 308)."
     },
     {
       "claim_id": "C034",
       "verdict": "SUPPORTED",
-      "reason": "« deliberately built on the conflation » (notes[4], review.notes[5], summary) autorise exactement l'opposition accident / principe de construction."
+      "reason": "Traduction fidele du verbatim porte par SUP-70b52040 et deja rendu en francais par SUP-4f560be9 ; deliberement et amplifie sont, selon SUP-70b52040, portes mot pour mot par la source primaire."
     },
     {
       "claim_id": "C035",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim « has a life of its own that jeopardizes the life it audits » relevé dans definition_de_lauteur et attribué à l'audit tel que Strathern le décrit ; traduction littérale."
+      "reason": "SUP-2f785be3 : corruption qu'elle dit endemic a l'idee que le but soit d'encourager les institutions a ameliorer leur note ; l'attribution reste a Strathern."
     },
     {
       "claim_id": "C036",
       "verdict": "SUPPORTED",
-      "reason": "Suit les extraits verbatim de Hoskin relevés dans preuve : la futilité y est attachée aux « measures that are targets » en général (p. 277) et sa critique porte sur l'idée que les mesures en elles-mêmes ne seraient pas mauvaises (p. 266). Énoncé dans la voix du texte."
+      "reason": "deliberately built on (SUP-70b52040, SUP-3b484a87) et le summary SUP-4f560be9 autorisent l'opposition accident / principe de construction sans durcissement supplementaire."
     },
     {
       "claim_id": "C037",
       "verdict": "SUPPORTED",
-      "reason": "La forme universelle de l'aphorisme (quotation.text / original_text) et la formulation générale de Hoskin p. 277 autorisent le déplacement du choix de l'indicateur vers son statut ; « il s'expose au même sort » reste une exposition, non une nécessité."
+      "reason": "SUP-2f785be3 porte le verbatim it has a life of its own that jeopardizes the life it audits ; la traduction en est fidele et l'attribution ecrit-elle est exacte."
     },
     {
       "claim_id": "C038",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim p. 277 relevé dans preuve et cité plus complètement dans review.notes[3] (« With formulations like Goodhart's Law, we now have a strong ironic awareness of the futility of measures that are targets ») ; traduction fidèle, attribution à Hoskin correcte."
+      "reason": "La generalite est celle de l'aphorisme lui-meme (SUP-4754fa97, SUP-8d0a8184) et du summary SUP-4f560be9 ; il s'expose au meme sort est meme plus prudent que cesse d'etre une bonne mesure, et SUP-afad28d2 documente la portee non scolaire du constat."
     },
     {
       "claim_id": "C039",
       "verdict": "SUPPORTED",
-      "reason": "notes[2] et preuve : Hoskin prend la loi comme un acquis qu'il critique (« sa specific formulation masque le vrai mécanisme ») ; que Strathern trouve la loi chez lui est porté par attribution_note, appui résolu du même bundle (« elle resserre une formulation déjà publiée, celle par laquelle Hoskin ouvre son chapitre… texte dont Strathern écrit “I draw freely on his observations” »)."
+      "reason": "SUP-d0752ad1 donne la phrase entiere p. 277 (With formulations like Goodhart's Law, we now have a strong ironic awareness of the futility of measures that are targets) et SUP-afad28d2 la releve verbatim ; mesures qui sont des cibles porte bien la generalite affirmee."
     },
     {
       "claim_id": "C040",
       "verdict": "SUPPORTED",
-      "reason": "preuve donne le verbatim p. 266 : la loi « suggests that it is in becoming targets that measures become bad, which implies that measures in themselves are not bad. In this logic, measures are presumably either subverted from their course by human frailty, or not yet developed to a sufficient pitch… » ; le reproche non atténué est porté par « my concern is that it fails to reveal to us why that futility is so inherent » du même appui."
+      "reason": "SUP-afad28d2 (il prend la loi comme un acquis qu'il critique, sa specific formulation masquant le vrai mecanisme) et SUP-180f9093 etablissent la critique ; le meme dossier etablit que c'est chez Hoskin, reference 3 citee p. 268, que Strathern prend la loi."
     },
     {
       "claim_id": "C041",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim p. 266 relevé dans preuve, traduction littérale, attribution à Hoskin exacte."
+      "reason": "Verbatim de SUP-afad28d2, p. 266 : the Law suggests that it is in becoming targets that measures become bad, which implies that measures in themselves are not bad. In this logic, measures are presumably either subverted from their course by human frailty, or not yet developed to a sufficient pitch of... Le reproche est assertif chez Hoskin (my concern is that it fails to reveal to us why that futility is so inherent), et le claim presente la suite comme ce que la formulation laisse croire, non comme la these de Hoskin."
     },
     {
       "claim_id": "C042",
       "verdict": "SUPPORTED",
-      "reason": "Reprise, dans la voix du texte, du mot « inherent » de la réserve de Hoskin relevée verbatim dans preuve ; aucune affirmation nouvelle sur la source."
+      "reason": "Verbatim releve en SUP-afad28d2 (Yet my concern is that it fails to reveal to us why that futility is so inherent., p. 266) ; la traduction est litterale."
     }
   ]
 }
