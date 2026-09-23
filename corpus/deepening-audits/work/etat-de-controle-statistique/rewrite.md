@@ -328,3 +328,98 @@ section ne répète principalement une section antérieure.
 
 Toute modification du texte invalide le SHA `6592117952710d00fe650a80d8e4da0dbb15ee387b3ca4e120de5071d6099b92` :
 le cycle doit repartir de `PREPARE`.
+
+---
+
+# Correction FACTCHECK_FAIL, boucle 2 sur 2
+
+mode : FACTCHECK_FIX (gate déterministe `factcheck-gate.json`, 75 claims, 74 soutenus, 1 fermé)
+check mécanique : `npm run corpus:deepen -- --check --only=etat-de-controle-statistique` → PASS
+(« 1 approfondissement(s) contrôlé(s), 1864 mots. Rien projeté. »)
+
+Une seule phrase du texte lecteur est touchée, et elle est retirée. Aucune matière n'est ajoutée
+en compensation. Les 74 claims soutenus ont été recontrôlés un à un contre le fichier réécrit :
+leur `claim_text` s'y retrouve caractère pour caractère, y compris les verbatim anglais et leurs
+traductions. Seuls les offsets des claims situés après le retrait, dans le même paragraphe,
+se décalent ; ils seront recalculés à `PREPARE`.
+
+## Matériaux relus dans ce contexte
+
+- `corpus/deepenings/PROTOCOLE.md`, `FACTCHECK_PROTOCOL.md` ;
+- `corpus/deepenings/etat-de-controle-statistique.json` (version ayant échoué) ;
+- `corpus/validated/etat-de-controle-statistique.json`, `notes` comprises, en particulier
+  `$.notes[15]`, seul support résolu du claim fermé ;
+- `corpus/evidence/etat-de-controle-statistique/` : répertoire listé, un seul fichier,
+  `lecture.json`, lu intégralement (pas de `scouting.json`) ;
+- `factcheck-gate.json` (autorité du verdict), `verification.json` et `claim-map.json` pour le
+  texte exact et l'ancrage de C039, `factcheck-pack.json` pour le contenu du support cité.
+
+## La correction, claim par claim
+
+### C039, TOO_STRONG (sections[2].paragraphs[2], offsets 77-198)
+
+Claim fermé : « ce que la maîtrise fait gagner n'est pas d'abord une connaissance, ce sont des
+décisions qu'on devient capable de prendre ».
+
+Motif du verifier : le seul support, `SUP-2c2fd7da17a7f897` (`validated $.notes[15]`), dit que
+la page 34 énumère cinq avantages « tous de gestion » ; il ne les énumère pas et n'établit pas
+qu'ils consistent en des décisions qu'on devient capable de prendre.
+
+Contrôle fait avant de rétrograder, conformément à `PROTOCOLE.md` §4 : la matière a été cherchée
+ailleurs avant d'être retirée. `notes[15]` est la seule occurrence de la page 34 dans
+l'enregistrement validé ; `lecture.json` ne la mentionne nulle part, ni dans
+`definition_de_lauteur`, ni dans les réserves, sauf pour dire que le saut de folios se produit
+entre la page 34 et la page 144 sans que l'intervalle ait été ouvert. Aucune preuve n'énumère
+donc le contenu des cinq avantages, et il n'existe pas de formulation affaiblie qui resterait
+informative sans excéder « tous de gestion ». Le seul geste disponible est le retrait.
+
+Avant : « La page 34 énumère cinq avantages de cet état, et ils sont tous de gestion : ce que la
+maîtrise fait gagner n'est pas d'abord une connaissance, ce sont des décisions qu'on devient
+capable de prendre. Et c'est cette promesse que le chapitre XI met à l'épreuve, en montrant que
+toutes les régularités ne la tiennent pas. »
+
+Après : « La page 34 énumère cinq avantages de cet état, et ils sont tous de gestion. Et c'est
+cette promesse que le chapitre XI met à l'épreuve, en montrant que toutes les régularités ne la
+tiennent pas. »
+
+Retrait sec de la glose, et rien d'autre : le deux-points devient un point parce que le claim
+suivant, soutenu (C040), commence par une majuscule et exigeait déjà une frontière de phrase.
+Les deux claims voisins, C038 (« La page 34 énumère cinq avantages de cet état, et ils sont tous
+de gestion ») et C040 (« Et c'est cette promesse que le chapitre XI met à l'épreuve, en montrant
+que toutes les régularités ne la tiennent pas. »), sont conservés à l'identique. « Cette
+promesse » garde son antécédent : les cinq avantages de gestion nommés par la phrase qui précède.
+
+## Delta du paragraphe touché
+
+sections[2].paragraphs[2] : le delta reste distinct de ceux de P1 et P2 de la même section, mais
+il est plus étroit qu'avant. Il était « les cinq avantages sont de gestion, donc l'enjeu du livre
+est décisionnel, et cette promesse va être mise à l'épreuve » ; il devient « ce que l'état promet
+est de l'ordre de la gestion, en cinq points, et le chapitre XI va montrer que toutes les
+régularités ne le tiennent pas ». Ce qui disparaît est l'opposition connaissance / décision, qui
+n'était pas dans les matériaux. Le paragraphe garde un travail propre : il pose l'enjeu que la
+section 4 met à l'épreuve, articulation dont aucune autre phrase du texte ne se charge. Aucun
+autre paragraphe n'est modifié, aucune paire consécutive n'accomplit le même travail, aucune
+section ne répète principalement une section antérieure.
+
+## Frontière interne
+
+Un seul ajustement de `limits`, dans le sens du resserrement, sur la réserve qui portait déjà la
+page 34 : « et ces cinq avantages ne sont connus que par leur nombre et leur caractère de
+gestion : rien ne peut être avancé sur ce en quoi ils consistent ». C'est exactement la frontière
+que le gate a rendue visible, notée pour les agents suivants afin que la glose ne reparaisse pas.
+
+`limits` n'est remonté nulle part dans le texte lecteur ; aucun bloc visible ne récapitule des
+insuffisances documentaires ; aucun titre de section n'a bougé.
+
+## Non fait, et pourquoi
+
+- Aucune recherche documentaire, aucun fait ajouté de mémoire, aucun support `SUP-…` inventé,
+  aucun artefact de fact-check réparé à la main.
+- Aucun ajout compensatoire : les 21 mots retirés ne sont comblés par rien, et le texte lecteur
+  perd ces 21 mots, ce qui le laisse dans la cible du protocole.
+- Aucune page, date, citation ou traduction nouvelle ; aucun verbatim anglais modifié.
+- Les 74 claims soutenus ne sont retouchés en rien, pas même de forme.
+
+Toute modification du texte invalide le SHA : le nouveau fichier fait
+`523622cc2e77b92f75393041ac74c56404f9448a1d2903a964f1a2545d2c8080`, et le cycle doit repartir de
+`PREPARE`.
