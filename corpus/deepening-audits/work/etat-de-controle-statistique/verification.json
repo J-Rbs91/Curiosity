@@ -1,376 +1,381 @@
 {
   "concept_id": "etat-de-controle-statistique",
-  "candidate_sha256": "6592117952710d00fe650a80d8e4da0dbb15ee387b3ca4e120de5071d6099b92",
+  "candidate_sha256": "0ed03832d2202323c599362c3e76b24f6495255ba7f846bf2ee6a249f8191f84",
   "results": [
     {
       "claim_id": "C001",
       "verdict": "SUPPORTED",
-      "reason": "Application d'un exemple inventé au critère fourni : la définition de la page 6 fait de la prévisibilité dans des limites, et non de la constance, le critère de la maîtrise (« a controlled quality will not be a constant quality »)."
+      "reason": "La definition p. 6 (prevision dans des limites a partir de l'experience passee) et « a controlled quality must be a variable quality » designent bien l'atelier variable mais previsible ; le cas est hypothetique et construit par le texte lui-meme."
     },
     {
       "claim_id": "C002",
       "verdict": "SUPPORTED",
-      "reason": "Le résumé validé et la page 6 posent que le critère porte sur la prévision à partir de l'expérience passée, pas sur la quantité de variation."
+      "reason": "Les supports fondent le controle sur la previsibilite, non sur la faible amplitude de variation ; « une qualite maitrisee est variable, pas constante »."
     },
     {
       "claim_id": "C003",
       "verdict": "SUPPORTED",
-      "reason": "Reprise de l'exemple interne conforme à « we can predict, at least within limits, how the phenomenon may be expected to vary » : prévision de bornes d'un côté, absence de prévision de l'autre."
+      "reason": "Reformulation du « predict, at least within limits, how the phenomenon may be expected to vary » appliquee a l'exemple hypothetique du texte ; aucune donnee reelle n'est avancee."
     },
     {
       "claim_id": "C004",
       "verdict": "SUPPORTED",
-      "reason": "Page de titre relue : « By W. A. SHEWHART, Ph.D., Member of the Technical Staff, Bell Telephone Laboratories, Inc. »."
+      "reason": "Page de titre relue : « By W. A. SHEWHART, Ph.D., Member of the Technical Staff, Bell Telephone Laboratories, Inc. » (note d'attribution validee et lecture.json)."
     },
     {
       "claim_id": "C005",
       "verdict": "SUPPORTED",
-      "reason": "Label de source validé : New York, D. Van Nostrand, 1931."
+      "reason": "Reference validee : Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931, confirmee par la notice derivee du MARC (OL6766665M, LCCN 31032090)."
     },
     {
       "claim_id": "C006",
       "verdict": "SUPPORTED",
-      "reason": "Définition de la page 6 pour « une définition », et « it is desirable to attain the state of statistical control » pour l'état visé."
+      "reason": "La definition de la p. 6 est etablie par les supports, et « it is desirable to attain the state of statistical control » autorise « un etat qu'un atelier peut chercher a atteindre »."
     },
     {
       "claim_id": "C007",
       "verdict": "SUPPORTED",
-      "reason": "Les deux notes attestent une définition en une phrase, en italiques, page 6, sous « 3. Definition of Control »."
+      "reason": "La note de revue atteste la definition « en italique sous le titre 3. Definition of Control » sur la page imprimee 6, et la note validee parle de « la definition entiere de la page 6, en italiques dans le texte »."
     },
     {
       "claim_id": "C008",
       "verdict": "SUPPORTED",
-      "reason": "Citation identique mot à mot à la phrase relue sur l'image de la page 6."
+      "reason": "Citation identique mot a mot a celle relevee sur l'image de la page 6 par la note de revue validee."
     },
     {
       "claim_id": "C009",
       "verdict": "SUPPORTED",
-      "reason": "Les trois éléments (expérience passée, prévision, limites) figurent dans la phrase citée ; la note validée qualifie « through the use of past experience » de condition même de la définition."
+      "reason": "« through the use of past experience » est atteste comme « la condition meme de la definition » ; la necessite de l'experience passee autorise la glose d'exclusivite, qui reste explicitement bornee a la definition citee."
     },
     {
       "claim_id": "C010",
       "verdict": "SUPPORTED",
-      "reason": "Traduction et glose de « at least within limits » conformes au résumé validé (« prévoir, au moins dans des limites, comment il variera »)."
+      "reason": "La definition citee fait de la prevision le resultat obtenu a partir de l'experience passee."
     },
     {
       "claim_id": "C011",
       "verdict": "SUPPORTED",
-      "reason": "La définition conditionne la maîtrise à « we can predict » ; le déplacement du critère vers ce qu'on peut dire du phénomène suit la formulation citée."
+      "reason": "Fragment « at least within limits » present dans la citation attestee ; rendu francais conforme au resume valide « au moins dans des limites »."
     },
     {
       "claim_id": "C012",
-      "verdict": "TOO_STRONG",
-      "reason": "Le support situe expressément les deux phrases « plus haut sur la même page » que la définition ; rien n'autorise à présenter la formule comme tirée (« en tire ») de la définition qui la suit."
+      "verdict": "SUPPORTED",
+      "reason": "Glose fidele de « predict, at least within limits, how the phenomenon may be expected to vary » : la prevision porte sur des limites, pas sur une valeur."
     },
     {
       "claim_id": "C013",
       "verdict": "SUPPORTED",
-      "reason": "Citation identique mot à mot au passage relu de la page 6."
+      "reason": "Suit des deux enonces attestes : le controle se dit de ce qu'on peut prevoir, et une qualite maitrisee est variable, donc le critere ne porte pas sur la constance de l'objet."
     },
     {
       "claim_id": "C014",
       "verdict": "SUPPORTED",
-      "reason": "Traduction conforme au résumé validé : « une qualité maîtrisée est variable, pas constante »."
+      "reason": "La note de revue situe les deux phrases « plus haut sur la meme page » 6 et les donne successives, l'une niant la constance, l'autre affirmant la variabilite."
     },
     {
       "claim_id": "C015",
       "verdict": "SUPPORTED",
-      "reason": "Rattachement de l'exemple interne à « a controlled quality must be a variable quality », sans ajout de contenu au texte source."
+      "reason": "Citation identique mot a mot au releve de la note de revue validee."
     },
     {
       "claim_id": "C016",
       "verdict": "SUPPORTED",
-      "reason": "La note validée dit littéralement que « through the use of past experience » est « la condition même de la définition »."
+      "reason": "Reprend le resume valide : « une qualite maitrisee est variable, pas constante »."
     },
     {
       "claim_id": "C017",
       "verdict": "SUPPORTED",
-      "reason": "La définition fonde la prévision sur l'usage de l'expérience passée, et la note en fait la condition sine qua non ; les exemples contraires sont une glose de cette exclusivité, sans attribution nouvelle au livre."
+      "reason": "Ne fait que rapporter au cas du lead l'enonce atteste « a controlled quality must be a variable quality » ; aucun exemple d'atelier n'est attribue a l'auteur."
     },
     {
       "claim_id": "C018",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support fourni. L'affirmation qu'un procédé neuf n'est ni maîtrisé ni déréglé est présentée comme un état de fait et n'est établie par aucune preuve résolue."
+      "verdict": "SUPPORTED",
+      "reason": "« through the use of past experience » est atteste comme « la condition meme de la definition » ; la necessite de l'experience passee autorise la glose d'exclusivite, qui reste explicitement bornee a la definition citee."
     },
     {
       "claim_id": "C019",
       "verdict": "SUPPORTED",
-      "reason": "Les citations anglaises résolues et la note de traduction établissent que le mot imprimé par Shewhart est « control »."
+      "reason": "« through the use of past experience » est atteste comme « la condition meme de la definition » ; la necessite de l'experience passee autorise la glose d'exclusivite, qui reste explicitement bornee a la definition citee."
     },
     {
       "claim_id": "C020",
       "verdict": "SUPPORTED",
-      "reason": "Les deux notes de traduction posent que « contrôle » désigne en français l'inspection, motif explicite du rendu par « maîtrise »."
+      "reason": "Consequence directe de la condition attestee : sans experience passee, la definition telle qu'elle est ecrite ne s'applique pas ; formulation restreinte a la lettre de la definition."
     },
     {
       "claim_id": "C021",
       "verdict": "SUPPORTED",
-      "reason": "Reprise de l'état défini juste avant (prévision dans des limites) et de la note validée selon laquelle Shewhart écarte l'inspection deux lignes après avoir exigé des matériaux « controlled »."
+      "reason": "Les supports donnent le texte anglais de l'auteur, ou figurent « control » et « controlled »."
     },
     {
       "claim_id": "C022",
       "verdict": "SUPPORTED",
-      "reason": "Repris littéralement de la note validée : page 252, exigence « controlled », puis paragraphe « Tolerances where 100 Per Cent Inspection Cannot be Made »."
+      "reason": "La note de traduction validee etablit que « controlees » ferait entendre en francais l'inspection des materiaux."
     },
     {
       "claim_id": "C023",
       "verdict": "SUPPORTED",
-      "reason": "Traduction fidèle du titre de paragraphe cité dans le support."
+      "reason": "Le couple p. 252 / « Tolerances where 100 Per Cent Inspection Cannot be Made » atteste que l'auteur ecarte l'inspection integrale deux lignes plus bas, et la definition atteste la previsibilite ; la formule reste bornee par « presque le contraire »."
     },
     {
       "claim_id": "C024",
       "verdict": "SUPPORTED",
-      "reason": "La note de traduction retient « maîtrise » pour ce motif exact."
+      "reason": "Note de traduction validee : « la phrase de la page 252 exige que les qualites des materiaux soient controlled », chapitre XVII."
     },
     {
       "claim_id": "C025",
       "verdict": "SUPPORTED",
-      "reason": "La note validée dit que « contrôle » est le terme d'usage et que « carte de contrôle » et « limites de contrôle » ne se disent pas autrement."
+      "reason": "Meme note : « le paragraphe qui la suit immediatement s'intitule Tolerances where 100 Per Cent Inspection Cannot be Made » ; traduction litterale."
     },
     {
       "claim_id": "C026",
       "verdict": "SUPPORTED",
-      "reason": "Le support atteste la page 34 et l'intertitre « 6. Conclusion » ; l'écart de vingt-huit pages avec la page 6 est arithmétique."
+      "reason": "L'arbitrage de traduction du lot, atteste, rend « control » par « maitrise » pour ce motif."
     },
     {
       "claim_id": "C027",
       "verdict": "SUPPORTED",
-      "reason": "La prudence est portée par « It seems reasonable to believe » relu sur l'image de la page 34."
+      "reason": "Meme note : « contrôle est le terme d'usage de la maitrise statistique des procedes en francais, et carte de controle comme limites de controle ne se disent pas autrement »."
     },
     {
       "claim_id": "C028",
       "verdict": "SUPPORTED",
-      "reason": "Citation identique mot à mot à la phrase relue page 34."
+      "reason": "La note de revue atteste la page imprimee 34 sous l'intertitre « 6. Conclusion » ; 34 - 6 = 28 pages apres la definition."
     },
     {
       "claim_id": "C029",
       "verdict": "SUPPORTED",
-      "reason": "Traduction fidèle de la phrase citée, hedge « il paraît raisonnable de croire » conservé."
+      "reason": "« It seems reasonable to believe » autorise « avec prudence », et la phrase pose un etat objectif la ou la p. 6 ne donnait qu'une definition."
     },
     {
       "claim_id": "C030",
       "verdict": "SUPPORTED",
-      "reason": "Le statut d'hypothèse est porté par « It seems reasonable to believe » et « objective » ; la note validée confirme que rien n'y est démontré."
+      "reason": "Citation identique mot a mot au releve de la page 34 par la note de revue validee."
     },
     {
       "claim_id": "C031",
       "verdict": "SUPPORTED",
-      "reason": "Repris de « making possible the prediction of quality within limits even though the causes of variability are unknown », sans renforcement de portée."
+      "reason": "Traduction fidele de la phrase attestee, hedge « It seems reasonable to believe » conserve."
     },
     {
       "claim_id": "C032",
       "verdict": "SUPPORTED",
-      "reason": "Fragment cité présent tel quel dans la lecture du chapitre XI, section 1."
+      "reason": "Glose exacte du « seems reasonable to believe » et de l'adjectif « objective » de la phrase attestee."
     },
     {
       "claim_id": "C033",
       "verdict": "SUPPORTED",
-      "reason": "Traduction fidèle de « For one to be able to say that a phenomenon is controlled, it is necessary and sufficient that he know the laws which make prediction possible »."
+      "reason": "Rend la fin de la phrase attestee : « making possible the prediction of quality within limits even though the causes of variability are unknown »."
     },
     {
       "claim_id": "C034",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support fourni. La distinction loi/causes et la compatibilité des deux phrases sont une conciliation interprétative qu'aucune preuve résolue n'établit."
+      "verdict": "SUPPORTED",
+      "reason": "Deploie la meme clause : prevision dans des limites malgre des causes inconnues ; la modalite « on peut » reprend « making possible », et la reserve de l'auteur est portee par la phrase precedente du meme paragraphe."
     },
     {
       "claim_id": "C035",
       "verdict": "SUPPORTED",
-      "reason": "La note validée énonce que la page 34 énumère cinq avantages de l'état de contrôle, tous de gestion."
+      "reason": "Le chapitre XI, releve dans la lecture, porte bien « For one to be able to say that a phenomenon is controlled, it is necessary and sufficient that he know the laws which make prediction possible »."
     },
     {
       "claim_id": "C036",
       "verdict": "SUPPORTED",
-      "reason": "Glose du caractère « tous de gestion » des cinq avantages, sans extension à un contenu non porté par le support."
+      "reason": "Traduction fidele de la phrase attestee du chapitre XI, sujet « for one to be able to say » conserve."
     },
     {
       "claim_id": "C037",
       "verdict": "SUPPORTED",
-      "reason": "Le chapitre XI pose que le produit maîtrisé au seul sens empirique ne donne pas les avantages de la partie I, ce qui est bien une mise à l'épreuve de la promesse."
+      "reason": "Les deux phrases attestees portent l'une sur les causes de la variabilite, l'autre sur les lois ; la lecture proposee est donnee comme possible et non comme la these de l'auteur."
     },
     {
       "claim_id": "C038",
       "verdict": "SUPPORTED",
-      "reason": "Constat négatif vérifiable sur la phrase même de la page 6, qui ne nomme aucun mécanisme rendant la prévision possible."
+      "reason": "Note validee : « la page 34 enumere cinq avantages de l'etat de controle, tous de gestion »."
     },
     {
       "claim_id": "C039",
-      "verdict": "SUPPORTED",
-      "reason": "Repris presque à la lettre de la lecture du chapitre XI sur ce qu'établit le chapitre X."
+      "verdict": "TOO_STRONG",
+      "reason": "Le seul support dit que la page 34 enumere cinq avantages « tous de gestion » ; il ne les enumere pas et n'etablit pas qu'ils consistent en des decisions qu'on devient capable de prendre. La caracterisation de leur contenu excede la preuve fournie."
     },
     {
       "claim_id": "C040",
       "verdict": "SUPPORTED",
-      "reason": "Citation identique au passage du chapitre XI relevé dans la lecture, et la conséquence économique y est bien tirée à cet endroit."
+      "reason": "Le chapitre XI atteste que le controle seulement empirique ne donne pas « the economic advantages discussed in Part I », ou figure la page 34."
     },
     {
       "claim_id": "C041",
-      "verdict": "TOO_STRONG",
-      "reason": "La traduction de la phrase est portée, mais aucun support n'établit que les cinq avantages de la page 34 sont « ceux-là mêmes » que « the economic advantages discussed in Part I » : l'identification des deux ensembles n'est pas dans les preuves résolues."
+      "verdict": "SUPPORTED",
+      "reason": "Note validee : la definition de la page 6 est generale, la specification du regime qui rend la prevision possible appartient au chapitre XI."
     },
     {
       "claim_id": "C042",
       "verdict": "SUPPORTED",
-      "reason": "La succession des deux phrases (« If product is controlled only in this empirical sense… » puis « For this reason… ») figure telle quelle dans le support."
+      "reason": "La lecture atteste la categorie du controle « only in this empirical sense » ; l'illustration reste une possibilite generique, sans donnee reelle ni attribution."
     },
     {
       "claim_id": "C043",
       "verdict": "SUPPORTED",
-      "reason": "Trois supports concordants : Shewhart imprime « the state of statistical control » p. 146, ch. XI, § 1, sans en créditer personne."
+      "reason": "Reprend presque a la lettre la lecture : le chapitre X etablit que les lois empiriques ne permettent pas de prevoir les fluctuations erratiques sur la base de la theorie des probabilites."
     },
     {
       "claim_id": "C044",
       "verdict": "SUPPORTED",
-      "reason": "Citation identique au champ original_text validé et à la phrase relue sur l'image."
+      "reason": "Citation presente mot a mot dans la lecture du chapitre XI."
     },
     {
       "claim_id": "C045",
       "verdict": "SUPPORTED",
-      "reason": "Identique mot à mot à la traduction validée du dossier."
+      "reason": "Traduction fidele de la phrase attestee."
     },
     {
       "claim_id": "C046",
       "verdict": "SUPPORTED",
-      "reason": "Repris quasi littéralement de la lecture du chapitre XI, sans durcir la portée (« à ce titre seulement » devenu « à ce titre »)."
+      "reason": "La lecture donne « For this reason... » immediatement apres la phrase precedente, et la note de revue la situe en cloture du § 1 de la p. 146."
     },
     {
       "claim_id": "C047",
       "verdict": "SUPPORTED",
-      "reason": "Les supports situent la condition au § 2, p. 146, dont le titre suit immédiatement la phrase précédente."
+      "reason": "Note d'attribution validee : l'auteur imprime « the state of statistical control » p. 146 et « il n'en credite personne »."
     },
     {
       "claim_id": "C048",
       "verdict": "SUPPORTED",
-      "reason": "Citation identique au passage relevé p. 146, § 2, entrée « We shall assume that » comprise."
+      "reason": "Citation identique mot a mot au champ original_text valide et au releve sur image de la note de revue."
     },
     {
       "claim_id": "C049",
       "verdict": "SUPPORTED",
-      "reason": "Les deux notes disent que « We shall assume that » porte le statut d'hypothèse donné par Shewhart et que l'amputer transformerait la phrase en théorème."
+      "reason": "Reprise exacte de la traduction validee du champ quotation.text, ses deux ecarts etant declares et controles."
     },
     {
       "claim_id": "C050",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support fourni. L'affirmation que la loi des grands nombres n'est pas exposée à cet endroit et qu'elle y sert d'étalon n'est établie par aucune preuve résolue."
+      "verdict": "SUPPORTED",
+      "reason": "Reprend presque a la lettre la lecture : « pas un degre de plus dans la regularite : c'est le regime particulier ou une loi naturelle... autorise la prevision », avantages de la partie I redevenus atteignables."
     },
     {
       "claim_id": "C051",
       "verdict": "SUPPORTED",
-      "reason": "Traduction fidèle de « satisfy the law of large numbers as do those of a constant system of chance causes »."
+      "reason": "La lecture situe la condition en section 2 et la note de revue confirme que le titre « 2. Necessary and Sufficient Conditions for Statistical Control » suit immediatement la citation."
     },
     {
       "claim_id": "C052",
       "verdict": "SUPPORTED",
-      "reason": "La phrase citée suit immédiatement la condition dans le support, et elle nomme bien la cause assignable de type I."
+      "reason": "Citation identique mot a mot au releve de la p. 146, § 2, dans la note validee et dans la lecture."
     },
     {
       "claim_id": "C053",
       "verdict": "SUPPORTED",
-      "reason": "Reformulation du lien définitionnel énoncé par Shewhart : système de causes non constant, donc cause assignable de type I présente."
+      "reason": "Les supports attestent que « We shall assume that » donne a la condition le statut d'hypothese declaree par l'auteur lui-meme."
     },
     {
       "claim_id": "C054",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support fourni. La glose sur le nom « assignable » et sur la possibilité de désigner la cause n'est portée par aucune preuve résolue."
+      "verdict": "SUPPORTED",
+      "reason": "Les supports disent que la citation amputee de son entree « la transformerait en theoreme », et que l'etat est chez l'auteur « jamais demontre »."
     },
     {
       "claim_id": "C055",
       "verdict": "SUPPORTED",
-      "reason": "Le support dit que, du côté des effets, la condition devient une apparence et que Shewhart insiste sur ce mot."
+      "reason": "Traduction fidele de la condition citee, sans suppression de la comparaison au systeme constant de causes de hasard."
     },
     {
       "claim_id": "C056",
       "verdict": "SUPPORTED",
-      "reason": "Fragment cité identique au passage du chapitre XI relevé dans la lecture."
+      "reason": "La phrase « If a cause system is not constant, we shall say that an assignable cause of Type I is present » figure telle quelle dans la lecture, a la suite de la condition."
     },
     {
       "claim_id": "C057",
       "verdict": "SUPPORTED",
-      "reason": "Traduction fidèle du fragment cité, l'hypothèse restant présentée comme telle."
+      "reason": "Equivalence posee par la phrase citee, et la p. 149 attestee parle d'une cause assignable « entered the production process » ; la reformulation ne depasse pas cette equivalence."
     },
     {
       "claim_id": "C058",
       "verdict": "SUPPORTED",
-      "reason": "Le support porte « We say appear because… we can never be sure that we have discovered the law » ; la coupe est signalée par les crochets."
+      "reason": "La lecture atteste que la condition, prise du cote des effets, devient une apparence et que l'auteur insiste sur le mot."
     },
     {
       "claim_id": "C059",
       "verdict": "SUPPORTED",
-      "reason": "Citation et traduction conformes à « such appearance is not sufficient in the logical sense although it must be in the practical sense »."
+      "reason": "Citation presente mot a mot dans la lecture, qui la rapporte aux differences de qualite entre pieces ; traduction fidele."
     },
     {
       "claim_id": "C060",
       "verdict": "SUPPORTED",
-      "reason": "Citation identique au passage relevé, dont les deux supports confirment la portée sur le comportement passé."
+      "reason": "La lecture porte « We say appear because, as is always the case..., we can never be sure that we have discovered the law » ; la coupe est signalee par les crochets."
     },
     {
       "claim_id": "C061",
       "verdict": "SUPPORTED",
-      "reason": "Traduction fidèle, le « peut-être… jamais » de l'original étant conservé."
+      "reason": "Citation presente mot a mot dans la lecture (« Obviously such appearance is not sufficient in the logical sense although it must be in the practical sense ») ; traduction fidele."
     },
     {
       "claim_id": "C062",
       "verdict": "SUPPORTED",
-      "reason": "Repris de « All that we can ever say is that experience has shown that such behavior appears to be sufficient », avec le suffisant pratique déjà établi par le support."
+      "reason": "Citation presente mot a mot dans la lecture et reprise dans la note validee."
     },
     {
       "claim_id": "C063",
       "verdict": "SUPPORTED",
-      "reason": "Le support décrit bien deux réserves de fin de chapitre, page 148 puis page 149."
+      "reason": "Traduction fidele, le « perhaps » etant conserve par « peut-etre »."
     },
     {
       "claim_id": "C064",
       "verdict": "SUPPORTED",
-      "reason": "Citation et localisation p. 148 portées par les deux supports, traduction fidèle."
+      "reason": "Rend « All that we can ever say is that experience has shown that such behavior appears to be sufficient », avec le « appears » conserve."
     },
     {
       "claim_id": "C065",
       "verdict": "SUPPORTED",
-      "reason": "La note validée dit que le fait qu'un produit ait été maîtrisé jusqu'ici ne prouve pas qu'on puisse en prévoir la suite."
+      "reason": "La lecture ferme le chapitre sur deux reserves, page 148 puis page 149."
     },
     {
       "claim_id": "C066",
       "verdict": "SUPPORTED",
-      "reason": "Citation identique au passage de la page 149 relevé dans la lecture et rappelé par la note validée ; traduction fidèle."
+      "reason": "Citation de la page 148 presente mot a mot dans la lecture ; traduction fidele."
     },
     {
       "claim_id": "C067",
       "verdict": "SUPPORTED",
-      "reason": "Suit la limitation citée (absence de raison a priori de croire à l'entrée d'une cause assignable) et le caractère révocable affirmé par la note validée ; la modalité reste possible, non nécessaire."
+      "reason": "Note validee : le fait qu'un produit ait ete maitrise jusqu'ici ne prouve pas qu'on puisse en prevoir la suite."
     },
     {
       "claim_id": "C068",
       "verdict": "SUPPORTED",
-      "reason": "Les supports datent l'antécédent (communication du 28 décembre 1929, article d'avril 1930) et le postérieur (ouvrage de 1939)."
+      "reason": "Citation de la page 149 presente mot a mot dans la lecture, avec la restriction « subject to the limitation... » ; la note validee confirme ce lien."
     },
     {
       "claim_id": "C069",
       "verdict": "SUPPORTED",
-      "reason": "Note de bas de page relue en image : « Paper presented before A. A. A. S. on December 28, 1929, at Des Moines, Iowa. »."
+      "reason": "Consequence directe des deux reserves attestees ; la revocabilite est donnee au mode possible."
     },
     {
       "claim_id": "C070",
       "verdict": "SUPPORTED",
-      "reason": "Métadonnée bibliographique portée par deux citations concordantes et confirmée par Crossref dans la réserve du lecteur."
+      "reason": "Note de bas de page relevee sur image : « Paper presented before A. A. A. S. on December 28, 1929, at Des Moines, Iowa. », l'acronyme etant developpe par la note d'attribution de la lecture."
     },
     {
       "claim_id": "C071",
       "verdict": "SUPPORTED",
-      "reason": "La note d'attribution rapporte ce contenu de résumé, lu sur la première page de l'article effectivement ouverte."
+      "reason": "Libelle valide et resolution Crossref du DOI : Bell System Technical Journal, vol. 9, n° 2, p. 364-389, avril 1930 ; la note de bas de page rattache cette parution a la communication."
     },
     {
       "claim_id": "C072",
       "verdict": "SUPPORTED",
-      "reason": "La pagination 364-389 est attestée et la formulation au futur n'affirme aucun contenu au-delà de la première page réellement consultée."
+      "reason": "La note d'attribution de la lecture porte ce contenu de resume : « une base scientifique pour determiner jusqu'ou il est economiquement possible d'aller dans l'elimination des causes de hasard », releve sur la premiere page ouverte de l'article."
     },
     {
       "claim_id": "C073",
       "verdict": "SUPPORTED",
-      "reason": "Le titre et le millésime 1939 figurent dans les supports ; l'écart de huit ans avec 1931 est arithmétique et aucun contenu de ce livre n'est affirmé."
+      "reason": "La pagination 364-389 est attestee ; l'acces est declare partiel et le texte n'affirme aucun contenu de ces pages, il les annonce comme non lues."
     },
     {
       "claim_id": "C074",
-      "verdict": "SOURCE_NOT_CONSULTED",
-      "reason": "Les deux supports déclarent que l'ouvrage de 1939 n'a pas été ouvert et que rien n'est affirmé sur l'évolution de la pensée entre 1931 et 1939 ; or le claim présuppose que la définition de 1931 y devient autre chose."
+      "verdict": "SUPPORTED",
+      "reason": "Les deux supports datent l'ouvrage de 1939, soit huit ans apres le livre de 1931 ; seule la parution est affirmee."
+    },
+    {
+      "claim_id": "C075",
+      "verdict": "SUPPORTED",
+      "reason": "Les supports declarent que l'ouvrage de 1939 « n'a pas ete ouvert », ce que la formule reprend sans rien affirmer de son contenu."
     }
   ]
 }
