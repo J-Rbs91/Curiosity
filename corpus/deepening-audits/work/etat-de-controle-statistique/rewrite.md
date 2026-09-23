@@ -166,3 +166,165 @@ exigé de retirer une des matières que l'audit demandait d'exploiter.
   matériaux.
 
 Toute modification du texte invalide le SHA : le cycle doit repartir de `PREPARE`.
+
+---
+
+# Correction FACTCHECK_FAIL, boucle 1 sur 2
+
+mode : FACTCHECK_FIX (gate déterministe `factcheck-gate.json`, 74 claims, 67 soutenus, 7 fermés)
+check mécanique : `npm run corpus:deepen -- --check --only=etat-de-controle-statistique` → PASS.
+
+Volumétrie après correction : 1 653 mots lecteur (avant : 1 674), `limits` 204 mots (avant : 195),
+5 sections, 15 paragraphes lecteur. Aucune matière nouvelle n'a été introduite pour compenser un
+retrait ; rien d'autre n'a été renforcé.
+
+## Matériaux relus dans ce contexte
+
+- `corpus/deepenings/PROTOCOLE.md`, `FACTCHECK_PROTOCOL.md`, et `audit.md` du même dossier de travail ;
+- `corpus/deepenings/etat-de-controle-statistique.json` (version ayant échoué) ;
+- `corpus/validated/etat-de-controle-statistique.json`, `notes` et bloc `review` compris ;
+- `corpus/evidence/etat-de-controle-statistique/` : répertoire listé, un seul fichier, `lecture.json`,
+  lu intégralement ;
+- `factcheck-gate.json` (autorité du verdict), `verification.json` (motifs), `claim-map.json`
+  (texte exact et ancrage des sept claims fermés).
+
+## Les sept corrections, claim par claim
+
+### C012, TOO_STRONG (S1.P2)
+
+Motif : le support situe les deux phrases « plus haut sur la même page » ; « en tire » les
+présentait comme dérivées de la définition qui les suit.
+
+Avant : « La même page 6 en tire une formule si contre-intuitive que Shewhart l'écrit deux fois de
+suite ».
+Après : « Plus haut sur la même page 6 se lit une formule si contre-intuitive que Shewhart l'écrit
+deux fois de suite ».
+
+Réattribution de position, exactement conforme à la note de revue (« Et plus haut sur la même
+page : … »). Plus aucune relation de conséquence n'est affirmée entre les deux passages. Le
+verbatim et sa traduction sont inchangés.
+
+### C018, UNSUPPORTED (S1.P3)
+
+Motif : « un procédé neuf n'est ni maîtrisé ni déréglé » était posé comme un état de fait, et le
+second membre (« ni déréglé ») n'est établi par rien.
+
+Avant : « Un procédé neuf n'est donc ni maîtrisé ni déréglé : il n'a pas encore de passé, donc rien
+à dire de son avenir. »
+Après : « Devant un procédé tout neuf, la définition telle qu'elle est écrite reste donc muette :
+elle demande une expérience passée, et il n'y en a pas encore. »
+
+Bornage : la phrase ne prononce plus un état du procédé, elle constate ce que la définition citée
+deux phrases plus haut permet ou non de dire. Le delta du paragraphe (l'expérience passée est une
+condition, pas un ornement) est conservé.
+
+### C034, UNSUPPORTED (S3.P2)
+
+Motif : la conciliation des deux phrases était une lecture présentée sans marque.
+
+Avant : « Connaître la loi n'est pas connaître les causes, et c'est ce qui rend les deux phrases
+compatibles. »
+Après : « L'une parle des causes de la variabilité, l'autre des lois : on peut comprendre ces deux
+phrases comme portant sur des objets distincts. »
+
+Le premier membre ne fait que relever les termes des deux citations qui précèdent immédiatement
+dans le même paragraphe. Le second est marqué comme interprétation selon `PROTOCOLE.md` §4
+(« on peut comprendre cela comme… »), et la compatibilité n'est plus affirmée comme un fait du
+texte. Effet de bord corrigé dans la même phrase : la répétition de « les lois qui rendent la
+prévision possible », déjà présente deux lignes plus haut en traduction, est supprimée.
+
+### C041, TOO_STRONG (S4.P1)
+
+Motif : l'identification des cinq avantages de la page 34 avec « the economic advantages discussed
+in Part I » n'est portée par aucune preuve résolue.
+
+Avant : « Maîtrisé en ce seul sens, un produit ne donne pas les avantages de la partie I, ceux-là
+mêmes que la page 34 énumérait. »
+Après : « Maîtrisé en ce seul sens, un produit ne donne pas les avantages économiques dont la
+partie I a traité. »
+
+Il ne reste que la traduction de la citation, qui était la part soutenue du claim. Le renvoi à la
+page 34 disparaît. Contrôle fait sur les claims voisins déjà soutenus : S3.P3 (« c'est cette
+promesse que le chapitre XI met à l'épreuve ») et S4.P2 (« les avantages annoncés redeviennent
+atteignables ») n'identifient pas les deux ensembles et sont laissés intacts.
+
+### C050, UNSUPPORTED (S4.P3)
+
+Motif : ni l'absence d'exposé de la loi des grands nombres à cet endroit, ni son rôle d'étalon, ne
+sont établis.
+
+Avant : « La loi des grands nombres n'y est pas exposée, elle sert d'étalon : les causes doivent y
+satisfaire comme le font celles d'un système constant de causes de hasard. »
+Après : « Ce qu'elle demande est que les causes satisfassent à la loi des grands nombres comme le
+font celles d'un système constant de causes de hasard. »
+
+Retrait sec des deux affirmations fermées ; ne subsiste que la traduction de la fin de la condition
+citée, qui était soutenue (C051). Le delta du paragraphe, le statut d'hypothèse de la condition,
+est porté par les phrases précédentes et n'est pas touché.
+
+### C054, UNSUPPORTED (S4.P4)
+
+Motif : la glose du mot « assignable » n'est portée par aucune preuve résolue.
+
+Avant : « … fait cesser la constance du système, et son nom dit ce qu'elle a de particulier : on
+peut l'assigner, c'est-à-dire la désigner. »
+Après : « … fait cesser la constance du système. »
+
+Retrait. Ce que l'audit demandait à ce paragraphe (introduire « cause assignable » avant son emploi
+en S5, avec la définition de l'auteur) est assuré par la citation et par la phrase conservée, qui
+reste soutenue (C053).
+
+### C074, SOURCE_NOT_CONSULTED (S5.P4)
+
+Motif : les deux supports déclarent l'ouvrage de 1939 non ouvert ; le claim présupposait que la
+définition de 1931 y devient autre chose.
+
+Avant : « Huit ans après paraît Statistical Method from the Viewpoint of Quality Control : ce que la
+définition de 1931 y devient, c'est ce second livre qui le détient. »
+Après : « Huit ans après paraît Statistical Method from the Viewpoint of Quality Control, dont les
+pages attendent leur lecteur. »
+
+Le livre reste nommé et daté, ce qui était soutenu (C073), et plus aucune présupposition ne porte
+sur son contenu. La forme retenue est celle que `PROTOCOLE.md` §1 autorise pour un ouvrage à
+ouvrir : elle dit ce qui attend le lecteur, jamais ce qui a manqué au rédacteur.
+
+## Frontière interne
+
+Deux ajustements de `limits`, dans le sens du resserrement :
+
+- la réserve sur le livre de 1939 porte désormais aussi la frontière que le gate a rendue visible :
+  « Rien ne rapproche non plus les cinq avantages de la page 34 et ceux de la partie I » ;
+- le premier paragraphe est resserré pour compenser l'ajout.
+
+`limits` n'est remonté nulle part dans le texte lecteur ; aucun bloc visible ne récapitule des
+insuffisances documentaires, et aucun titre de section n'a bougé.
+
+## Delta des paragraphes touchés
+
+- S1.P2 : inchangé dans son delta (le critère porte sur ce qu'on peut dire, et une qualité maîtrisée
+  doit être variable) ; seule la localisation du passage change.
+- S1.P3 : delta conservé (l'expérience passée est la condition), avec un cas limite désormais
+  formulé sur la définition et non sur l'état du procédé.
+- S3.P2 : delta conservé (prévoir n'exige pas d'expliquer, mais exige de connaître les lois), la
+  conciliation devenant une lecture déclarée.
+- S4.P1 : delta conservé (le contrôle seulement empirique ne donne pas les avantages économiques).
+- S4.P3 : delta conservé (la condition nécessaire et suffisante est une hypothèse de travail).
+- S4.P4 : delta conservé (ce qui rompt la condition, et le nom de la chose), sans la glose.
+- S5.P4 : delta conservé (l'idée a un avant et un après datés), sans affirmation sur le contenu du
+  livre de 1939.
+
+Aucun paragraphe n'a perdu son delta, aucune paire consécutive n'accomplit le même travail, aucune
+section ne répète principalement une section antérieure.
+
+## Non fait, et pourquoi
+
+- Aucune recherche documentaire, aucun fait ajouté de mémoire, aucun support `SUP-…` inventé, aucun
+  artefact de fact-check réparé à la main.
+- Aucun ajout compensatoire : les retraits (environ 20 mots lecteur au net) ne sont comblés par rien.
+- Aucune page, date ou citation nouvelle : les pages 6, 34, 146, 148, 149 et 252 étaient déjà dans
+  les matériaux, et aucun verbatim anglais n'a été modifié.
+- Les 67 claims soutenus ne sont pas retouchés, à une exception de forme : dans S3.P2, la phrase
+  finale réécrite supprimait mécaniquement une répétition immédiate de la traduction qui la précède.
+
+Toute modification du texte invalide le SHA `6592117952710d00fe650a80d8e4da0dbb15ee387b3ca4e120de5071d6099b92` :
+le cycle doit repartir de `PREPARE`.
