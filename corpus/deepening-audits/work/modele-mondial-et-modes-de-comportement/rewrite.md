@@ -264,3 +264,97 @@ Le texte a changé, donc le SHA a changé : le pack, la carte de claims et la v�
 boucle précédente sont invalidés. Le cycle doit repartir de PREPARE sur le SHA
 7d7c75dedc30bc4009ec9b239f289b4d0ae1f65c818254605c5611c8f36a0dd2.
 Aucun verdict n’est rendu ici, ni pédagogique ni factuel.
+
+================================================================================
+
+BOUCLE DE CORRECTION 2 SUR 2 — MODE FACTCHECK_FIX
+
+Entrée : factcheck-gate.json, verdict FACTCHECK_FAIL sur le SHA
+7d7c75dedc30bc4009ec9b239f289b4d0ae1f65c818254605c5611c8f36a0dd2. 68 claims, 65 soutenus,
+3 fermés : C006, C022, C023, tous UNSUPPORTED, aucune erreur structurelle.
+
+Lu pour cette correction : PROTOCOLE.md, AUDIT_PROTOCOL.md, FACTCHECK_PROTOCOL.md,
+corpus/deepenings/modele-mondial-et-modes-de-comportement.json,
+corpus/validated/modele-mondial-et-modes-de-comportement.json, le répertoire
+corpus/evidence/modele-mondial-et-modes-de-comportement/ listé de première main (un seul
+fichier, lecture.json, lu en entier), factcheck-gate.json et claim-map.json. Aucune recherche
+web, aucun fait ajouté de mémoire, aucun support_id manipulé.
+
+Principe appliqué : correction minimale. Les 65 claims soutenus sont restés inchangés caractère
+pour caractère, ce qui a été vérifié mécaniquement en cherchant chaque claim_text de la carte de
+claims comme sous-chaîne exacte de son paragraphe après édition (65/65 retrouvés, aucun manquant).
+
+C006 — lead[1], offsets 216-322
+Texte fautif : « Une quantité peut monter puis se stabiliser, monter puis décliner doucement,
+monter trop haut puis chuter. »
+Motif du verifier : les supports résolus ne nomment que « oscillation or growth or collapse »
+(p. 121) et définissent les modes comme « the tendencies of the variables to change as time
+progresses » ; ni la stabilisation ni le déclin graduel n'y figurent, alors que la phrase
+suivante donne ce répertoire pour celui des auteurs.
+Geste : réattribution honnête au répertoire réellement écrit, par réduction de portée. Nouveau
+texte : « Une quantité peut croître, osciller ou s'effondrer. » Les trois termes reprennent un à
+un les trois modes de base de la page 121, telle que lecture.json la porte dans
+definition_de_lauteur (« they will not affect the fact that the basic mode is oscillation or
+growth or collapse »). Rien n'est ajouté : la phrase perd deux allures non documentées et n'en
+gagne aucune. L'enchaînement reste intact, C005 (« la forme d'une courbe ») puis C007 (« Ces
+allures, ses auteurs les appellent des modes de comportement ») encadrent la phrase sans
+retouche.
+
+C022 — sections[1].paragraphs[0], offsets 306-428
+Texte fautif : « Le cas le plus simple s'imagine sans aucun calcul : plus il y a de gens, plus il
+naît d'enfants, donc plus il y a de gens. »
+Motif : aucun support résolu, aux deux tours de mapping.
+Geste : retrait sec de la phrase. Aucun appui approchant n'a été cherché : les passages que
+lecture.json rapporte du livre nomment la structure de boucles de rétroaction (p. 121) sans
+décrire un seul circuit. Une illustration démographique, même donnée pour hypothétique, se lirait
+comme un circuit du modèle, ce qui est précisément ce que le dossier n'établit pas.
+
+C023 — sections[1].paragraphs[0], offsets 429-532
+Texte fautif : « D'autres circuits freinent, quand une quantité qui augmente rend plus difficile
+sa propre augmentation. »
+Motif : aucun support résolu, aux deux tours.
+Geste : retrait sec, pour la même raison. L'existence de circuits d'équilibrage n'est pas une
+conséquence dérivable de ce que le dossier porte ; c'est une connaissance générale sur la
+dynamique des systèmes, et elle n'a pas sa place ici.
+
+ÉTAT DU PARAGRAPHE APRÈS RETRAIT
+
+sections[1].paragraphs[0] enchaîne désormais la question (pourquoi une forme tiendrait-elle mieux
+qu'un nombre), la méthode nommée page 31, son objet propre, la boucle, puis la conséquence : le
+modèle est un assemblage de circuits et non une formule. C021 et C024, tous deux soutenus,
+portent seuls la charge explicative. Le paragraphe est plus court de 37 mots et conserve un delta
+entier : le lecteur apprend de quelle espèce d'objet il s'agit avant de lire, au paragraphe
+suivant, ce que sa structure décide. Aucune phrase n'a été ajoutée pour compenser le retrait,
+conformément à l'interdiction de combler un trou documentaire.
+
+LIMITS
+
+Une borne a été ajoutée au premier paragraphe de limits, seule modification hors des trois claims
+fermés : le livre nomme page 121 la structure de boucles de rétroaction sans décrire aucun
+circuit particulier, donc aucune illustration d'une boucle renforçante ou freinante n'est
+autorisée, pas même la boucle démographique. C'est exactement la frontière que les deux tours de
+mapping ont signalée et qu'aucune limite n'énonçait ; elle nomme la source, la page et
+l'affirmation interdite. limits reste interne, rien n'en a été remonté dans le texte lecteur.
+
+CONTRÔLES
+
+1. Deltas : les trois gestes sont des retraits ou des réductions de portée, aucun paragraphe ne
+   perd son delta, aucun paragraphe nouveau n'est créé, donc aucune paire consécutive ne peut
+   partager le sien du fait de cette correction.
+2. Aucune section ne répète principalement une section antérieure : la charpente n'a pas bougé.
+3. Frontières documentaires : le texte lecteur reste en deçà de limits, augmenté de la nouvelle
+   borne.
+4. Aucun contenu de limits n'est visible.
+5. npm run corpus:deepen -- --check --only=modele-mondial-et-modes-de-comportement
+   → « 1 approfondissement(s) contrôlé(s), 1882 mots. Rien projeté. » PASS.
+   Texte lecteur : 1 588 mots, dans la fourchette 1 300-1 700 attendue à l'unité près du compteur
+   interne, et bien au-dessus du plancher de 1 100.
+6. Aucun avertissement de citation : les passages entre guillemets n'ont pas été touchés.
+
+CONSÉQUENCE POUR LA SUITE
+
+Le texte a changé, donc le SHA a changé. Nouveau SHA du fichier :
+1171ec6cc1daf9344dc0d9dc13eb9596f9864ba7cdecd81393070b34b80d4d37.
+Le pack, la carte de claims et la vérification de la boucle précédente sont invalidés : le cycle
+doit repartir de PREPARE. Aucun artefact de fact-check n'a été modifié à la main, aucun
+support_id n'a été inventé, et aucun verdict n'est rendu ici, ni pédagogique ni factuel.
