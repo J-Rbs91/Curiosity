@@ -1,8 +1,8 @@
 {
   "protocol_version": 1,
   "concept_id": "etat-de-controle-statistique",
-  "candidate_sha256": "6592117952710d00fe650a80d8e4da0dbb15ee387b3ca4e120de5071d6099b92",
-  "map_sha256": "a4409e3f9f5e981bf474f4671569abc4e49ad314f1c6c3d6ebaada39dc7538c0",
+  "candidate_sha256": "0ed03832d2202323c599362c3e76b24f6495255ba7f846bf2ee6a249f8191f84",
+  "map_sha256": "7b1d189bf69a449f729f71995f0b2b18dc12c757dd6e86a3e2e06246bddabd4d",
   "claims": [
     {
       "claim_id": "C001",
@@ -10,18 +10,18 @@
       "claim_text": "Lequel des deux est maîtrisé ? L’intuition désigne le second, qui a l’air plus régulier. C’est le premier.",
       "supports": [
         {
-          "id": "SUP-62a16e4f176302e4",
-          "origin": "validated",
-          "path": "$.review.notes[9]",
-          "access": "n/a",
-          "text": "PROSE — le résumé est porté presque à la lettre par la page 6, ouverte en image (https://archive.org/download/in.ernet.dli.2015.150272/page/n17.jpg, en-tête imprimé « 6   ECONOMIC CONTROL OF QUALITY »). On y lit, en italique sous le titre « 3. Definition of Control » : « a phenomenon will be said to be controlled when, through the use of past experience, we can predict, at least within limits, how the phenomenon may be expected to vary in the future » — d'où « quand l'expérience passée permet de prévoir, au moins dans des limites, comment il variera ». Et plus haut sur la même page : « a controlled quality will not be a constant quality. Instead, a controlled quality must be a variable quality » — d'où « une qualité maîtrisée est variable, pas constante ». Aucun adjectif du résumé n'excède ces deux phrases."
-        },
-        {
           "id": "SUP-ce3b8628c2c2f053",
           "origin": "validated",
           "path": "$.summary",
           "access": "n/a",
           "text": "Un phénomène est maîtrisé quand l'expérience passée permet de prévoir, au moins dans des limites, comment il variera : une qualité maîtrisée est variable, pas constante."
+        },
+        {
+          "id": "SUP-62a16e4f176302e4",
+          "origin": "validated",
+          "path": "$.review.notes[9]",
+          "access": "n/a",
+          "text": "PROSE — le résumé est porté presque à la lettre par la page 6, ouverte en image (https://archive.org/download/in.ernet.dli.2015.150272/page/n17.jpg, en-tête imprimé « 6   ECONOMIC CONTROL OF QUALITY »). On y lit, en italique sous le titre « 3. Definition of Control » : « a phenomenon will be said to be controlled when, through the use of past experience, we can predict, at least within limits, how the phenomenon may be expected to vary in the future » — d'où « quand l'expérience passée permet de prévoir, au moins dans des limites, comment il variera ». Et plus haut sur la même page : « a controlled quality will not be a constant quality. Instead, a controlled quality must be a variable quality » — d'où « une qualité maîtrisée est variable, pas constante ». Aucun adjectif du résumé n'excède ces deux phrases."
         },
         {
           "id": "SUP-0f92b46ca0c26c36",
@@ -38,18 +38,18 @@
       "claim_text": "Ce qui les sépare n’est pas la quantité de variation, c’est ce qu’on peut en dire à l’avance.",
       "supports": [
         {
-          "id": "SUP-62a16e4f176302e4",
-          "origin": "validated",
-          "path": "$.review.notes[9]",
-          "access": "n/a",
-          "text": "PROSE — le résumé est porté presque à la lettre par la page 6, ouverte en image (https://archive.org/download/in.ernet.dli.2015.150272/page/n17.jpg, en-tête imprimé « 6   ECONOMIC CONTROL OF QUALITY »). On y lit, en italique sous le titre « 3. Definition of Control » : « a phenomenon will be said to be controlled when, through the use of past experience, we can predict, at least within limits, how the phenomenon may be expected to vary in the future » — d'où « quand l'expérience passée permet de prévoir, au moins dans des limites, comment il variera ». Et plus haut sur la même page : « a controlled quality will not be a constant quality. Instead, a controlled quality must be a variable quality » — d'où « une qualité maîtrisée est variable, pas constante ». Aucun adjectif du résumé n'excède ces deux phrases."
-        },
-        {
           "id": "SUP-ce3b8628c2c2f053",
           "origin": "validated",
           "path": "$.summary",
           "access": "n/a",
           "text": "Un phénomène est maîtrisé quand l'expérience passée permet de prévoir, au moins dans des limites, comment il variera : une qualité maîtrisée est variable, pas constante."
+        },
+        {
+          "id": "SUP-62a16e4f176302e4",
+          "origin": "validated",
+          "path": "$.review.notes[9]",
+          "access": "n/a",
+          "text": "PROSE — le résumé est porté presque à la lettre par la page 6, ouverte en image (https://archive.org/download/in.ernet.dli.2015.150272/page/n17.jpg, en-tête imprimé « 6   ECONOMIC CONTROL OF QUALITY »). On y lit, en italique sous le titre « 3. Definition of Control » : « a phenomenon will be said to be controlled when, through the use of past experience, we can predict, at least within limits, how the phenomenon may be expected to vary in the future » — d'où « quand l'expérience passée permet de prévoir, au moins dans des limites, comment il variera ». Et plus haut sur la même page : « a controlled quality will not be a constant quality. Instead, a controlled quality must be a variable quality » — d'où « une qualité maîtrisée est variable, pas constante ». Aucun adjectif du résumé n'excède ces deux phrases."
         }
       ]
     },
@@ -80,6 +80,13 @@
       "claim_text": "W. A. Shewhart, membre du personnel technique des Bell Telephone Laboratories",
       "supports": [
         {
+          "id": "SUP-b9a679c58001ffaa",
+          "origin": "validated",
+          "path": "$.authors[0].name",
+          "access": "n/a",
+          "text": "W. A. Shewhart"
+        },
+        {
           "id": "SUP-8bcf223c9c20faf9",
           "origin": "validated",
           "path": "$.review.notes[4]",
@@ -92,13 +99,6 @@
           "path": "$.attribution.note",
           "access": "n/a",
           "text": "Ouvrage signé du seul W. A. Shewhart, page de titre relue sur l'image du feuillet n0 : « By W. A. SHEWHART, Ph.D., Member of the Technical Staff, Bell Telephone Laboratories, Inc. ». Le syntagme que porte le titre de la fiche est cette fois écrit par l'auteur : il imprime « the state of statistical control » page 146, dans le chapitre XI intitulé « Statistical Control », et il n'en crédite personne. La formule antérieure de la même idée est de lui aussi : son article « Economic Quality Control of Manufactured Product », Bell System Technical Journal, volume 9, numéro 2, pages 364 à 389, avril 1930, signé de son seul nom, dit en résumé qu'il donne une base scientifique pour déterminer jusqu'où il est économiquement possible d'aller dans l'élimination des causes de hasard, et sa note de bas de page datée le rattache à une communication devant l'American Association for the Advancement of Science le 28 décembre 1929, à Des Moines, Iowa."
-        },
-        {
-          "id": "SUP-b9a679c58001ffaa",
-          "origin": "validated",
-          "path": "$.authors[0].name",
-          "access": "n/a",
-          "text": "W. A. Shewhart"
         }
       ]
     },
@@ -107,6 +107,13 @@
       "locator": "lead[1]",
       "claim_text": "publie en 1931 chez D. Van Nostrand un livre",
       "supports": [
+        {
+          "id": "SUP-980c9ee83b78cd0a",
+          "origin": "validated",
+          "path": "$.quotation.reference",
+          "access": "n/a",
+          "text": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931."
+        },
         {
           "id": "SUP-b00df733fe95669b",
           "origin": "validated",
@@ -122,18 +129,18 @@
           "text": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand Company, Inc., 1931, xiv-501 p. (LCCN 31032090, OCLC 1045408, LC TS155 .S47)."
         },
         {
-          "id": "SUP-980c9ee83b78cd0a",
+          "id": "SUP-17cc86fc2d0b66a7",
           "origin": "validated",
-          "path": "$.quotation.reference",
+          "path": "$.review.notes[5]",
           "access": "n/a",
-          "text": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931."
+          "text": "SOURCE 1 — LCCN 31032090. lccn.loc.gov répond 500 sur /marcxml et /mods (essayé : HTTP 500 sur les deux) ; j'ai donc pris la voie dérivée du MARC indiquée, openlibrary.org/api/books?bibkeys=LCCN:31032090, qui rend OL6766665M : Walter A. Shewhart, « Economic control of quality of manufactured product », D. Van Nostrand Company, Inc., New York, 1931, pagination « xiv, 501 p. », cote LC TS155 .S47, OCLC 1045408. Tous les éléments affichés par la fiche (lieu, éditeur, année, xiv-501 p., auteur) sont couverts."
         }
       ]
     },
     {
       "claim_id": "C006",
       "locator": "lead[1]",
-      "claim_text": "qui fait de cette différence une définition, puis un état qu’un atelier peut chercher à atteindre.",
+      "claim_text": "qui fait de cette différence une définition, puis un état qu’un atelier peut chercher à atteindre",
       "supports": [
         {
           "id": "SUP-62a16e4f176302e4",
@@ -143,18 +150,18 @@
           "text": "PROSE — le résumé est porté presque à la lettre par la page 6, ouverte en image (https://archive.org/download/in.ernet.dli.2015.150272/page/n17.jpg, en-tête imprimé « 6   ECONOMIC CONTROL OF QUALITY »). On y lit, en italique sous le titre « 3. Definition of Control » : « a phenomenon will be said to be controlled when, through the use of past experience, we can predict, at least within limits, how the phenomenon may be expected to vary in the future » — d'où « quand l'expérience passée permet de prévoir, au moins dans des limites, comment il variera ». Et plus haut sur la même page : « a controlled quality will not be a constant quality. Instead, a controlled quality must be a variable quality » — d'où « une qualité maîtrisée est variable, pas constante ». Aucun adjectif du résumé n'excède ces deux phrases."
         },
         {
-          "id": "SUP-dfed24769b5068aa",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Le chapitre XI, « Statistical Control », est le lieu où Shewhart passe de la notion générale de contrôle, posée en partie I, à sa forme statistique nommée. Sa section 1, « Conditions for Control », part d'une exigence maximale : s'il existe un ordre causal dans les phénomènes, alors, pour qui aurait une connaissance parfaite, tout est prévisible et donc contrôlé ; mais « for practical purposes the quality of product is controlled only to the extent that we know the laws that make prediction possible », et « For one to be able to say that a phenomenon is controlled, it is necessary and sufficient that he know the laws which make prediction possible ». Vient alors l'aveu inductif qui est le nerf du chapitre : dans la pratique on part d'un ensemble observé de données et l'on essaie d'en décider ; « we perhaps never can say that the behavior of a phenomenon in the past is sufficient to prove that the phenomenon is controlled by a given set of known laws. All that we can ever say is that experience has shown that such behavior appears to be sufficient. » De là le partage entre les lois. Le chapitre X vient d'établir que les lois empiriques ne permettent pas de prévoir les fluctuations erratiques sur la base de la théorie des probabilités ; « If product is controlled only in this empirical sense, it follows that we cannot obtain the economic advantages discussed in Part I. For this reason it is desirable to attain the state of statistical control in which the natural law of large numbers makes prediction possible. » Le contrôle statistique n'est donc pas un degré de plus dans la régularité : c'est le régime particulier où une loi naturelle, celle des grands nombres, autorise la prévision, et c'est à ce titre seulement que les avantages économiques annoncés en partie I deviennent atteignables. La section 2 en donne la condition, sous forme d'hypothèse déclarée : « We shall assume that the necessary and sufficient condition for statistical control is that the causes of an event satisfy the law of large numbers as do those of a constant system of chance causes. If a cause system is not constant, we shall say that an assignable cause of Type I is present. » Formulée du côté des effets, la condition devient une apparence, et Shewhart insiste sur le mot : il est nécessaire que les différences de qualité entre pièces « appear to be consistent with the assumption that they arose from a constant system of chance causes. We say appear because, as is always the case in trying to find a law controlling a phenomenon, we can never be sure that we have discovered the law. Obviously such appearance is not sufficient in the logical sense although it must be in the practical sense. » Le chapitre se ferme sur une réserve de même farine, page 148 : « The fact that an observed set of values of fraction defective indicates the product to have been controlled up to the present does not prove that we can predict the future course of this phenomenon. We always have to say that this can be done provided the same essential conditions are maintained », et page 149 la constance de l'équilibre statistique une fois atteint n'est créditée que par l'expérience, « subject to the limitation that there is no a priori reason for believing that an assignable cause has entered the production process ». L'état de contrôle statistique est donc chez lui un état constaté et révocable, jamais démontré."
-        },
-        {
           "id": "SUP-81fe51af68578b61",
           "origin": "validated",
           "path": "$.quotation.original_text",
           "access": "n/a",
           "text": "For this reason it is desirable to attain the state of statistical control in which the natural law of large numbers makes prediction possible."
+        },
+        {
+          "id": "SUP-dfed24769b5068aa",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Le chapitre XI, « Statistical Control », est le lieu où Shewhart passe de la notion générale de contrôle, posée en partie I, à sa forme statistique nommée. Sa section 1, « Conditions for Control », part d'une exigence maximale : s'il existe un ordre causal dans les phénomènes, alors, pour qui aurait une connaissance parfaite, tout est prévisible et donc contrôlé ; mais « for practical purposes the quality of product is controlled only to the extent that we know the laws that make prediction possible », et « For one to be able to say that a phenomenon is controlled, it is necessary and sufficient that he know the laws which make prediction possible ». Vient alors l'aveu inductif qui est le nerf du chapitre : dans la pratique on part d'un ensemble observé de données et l'on essaie d'en décider ; « we perhaps never can say that the behavior of a phenomenon in the past is sufficient to prove that the phenomenon is controlled by a given set of known laws. All that we can ever say is that experience has shown that such behavior appears to be sufficient. » De là le partage entre les lois. Le chapitre X vient d'établir que les lois empiriques ne permettent pas de prévoir les fluctuations erratiques sur la base de la théorie des probabilités ; « If product is controlled only in this empirical sense, it follows that we cannot obtain the economic advantages discussed in Part I. For this reason it is desirable to attain the state of statistical control in which the natural law of large numbers makes prediction possible. » Le contrôle statistique n'est donc pas un degré de plus dans la régularité : c'est le régime particulier où une loi naturelle, celle des grands nombres, autorise la prévision, et c'est à ce titre seulement que les avantages économiques annoncés en partie I deviennent atteignables. La section 2 en donne la condition, sous forme d'hypothèse déclarée : « We shall assume that the necessary and sufficient condition for statistical control is that the causes of an event satisfy the law of large numbers as do those of a constant system of chance causes. If a cause system is not constant, we shall say that an assignable cause of Type I is present. » Formulée du côté des effets, la condition devient une apparence, et Shewhart insiste sur le mot : il est nécessaire que les différences de qualité entre pièces « appear to be consistent with the assumption that they arose from a constant system of chance causes. We say appear because, as is always the case in trying to find a law controlling a phenomenon, we can never be sure that we have discovered the law. Obviously such appearance is not sufficient in the logical sense although it must be in the practical sense. » Le chapitre se ferme sur une réserve de même farine, page 148 : « The fact that an observed set of values of fraction defective indicates the product to have been controlled up to the present does not prove that we can predict the future course of this phenomenon. We always have to say that this can be done provided the same essential conditions are maintained », et page 149 la constance de l'équilibre statistique une fois atteint n'est créditée que par l'expérience, « subject to the limitation that there is no a priori reason for believing that an assignable cause has entered the production process ». L'état de contrôle statistique est donc chez lui un état constaté et révocable, jamais démontré."
         }
       ]
     },
@@ -190,20 +197,6 @@
           "path": "$.review.notes[9]",
           "access": "n/a",
           "text": "PROSE — le résumé est porté presque à la lettre par la page 6, ouverte en image (https://archive.org/download/in.ernet.dli.2015.150272/page/n17.jpg, en-tête imprimé « 6   ECONOMIC CONTROL OF QUALITY »). On y lit, en italique sous le titre « 3. Definition of Control » : « a phenomenon will be said to be controlled when, through the use of past experience, we can predict, at least within limits, how the phenomenon may be expected to vary in the future » — d'où « quand l'expérience passée permet de prévoir, au moins dans des limites, comment il variera ». Et plus haut sur la même page : « a controlled quality will not be a constant quality. Instead, a controlled quality must be a variable quality » — d'où « une qualité maîtrisée est variable, pas constante ». Aucun adjectif du résumé n'excède ces deux phrases."
-        }
-      ]
-    },
-    {
-      "claim_id": "C009",
-      "locator": "sections[0].paragraphs[0]",
-      "claim_text": "Trois pièces la composent, et chacune porte. L’expérience passée, qui est la seule base. La prévision, qui est le résultat.",
-      "supports": [
-        {
-          "id": "SUP-62a16e4f176302e4",
-          "origin": "validated",
-          "path": "$.review.notes[9]",
-          "access": "n/a",
-          "text": "PROSE — le résumé est porté presque à la lettre par la page 6, ouverte en image (https://archive.org/download/in.ernet.dli.2015.150272/page/n17.jpg, en-tête imprimé « 6   ECONOMIC CONTROL OF QUALITY »). On y lit, en italique sous le titre « 3. Definition of Control » : « a phenomenon will be said to be controlled when, through the use of past experience, we can predict, at least within limits, how the phenomenon may be expected to vary in the future » — d'où « quand l'expérience passée permet de prévoir, au moins dans des limites, comment il variera ». Et plus haut sur la même page : « a controlled quality will not be a constant quality. Instead, a controlled quality must be a variable quality » — d'où « une qualité maîtrisée est variable, pas constante ». Aucun adjectif du résumé n'excède ces deux phrases."
         },
         {
           "id": "SUP-4c27f1a508ec935d",
@@ -215,9 +208,30 @@
       ]
     },
     {
+      "claim_id": "C009",
+      "locator": "sections[0].paragraphs[0]",
+      "claim_text": "L’expérience passée, qui est la seule base.",
+      "supports": [
+        {
+          "id": "SUP-4c27f1a508ec935d",
+          "origin": "validated",
+          "path": "$.notes[6]",
+          "access": "n/a",
+          "text": "La définition entière de la page 6, en italiques dans le texte, fait 182 caractères et ne pouvait pas être citée : la seule coupe qui la ramène sous le plafond supprime « through the use of past experience », qui est la condition même de la définition. C'est le résumé qui la porte."
+        },
+        {
+          "id": "SUP-62a16e4f176302e4",
+          "origin": "validated",
+          "path": "$.review.notes[9]",
+          "access": "n/a",
+          "text": "PROSE — le résumé est porté presque à la lettre par la page 6, ouverte en image (https://archive.org/download/in.ernet.dli.2015.150272/page/n17.jpg, en-tête imprimé « 6   ECONOMIC CONTROL OF QUALITY »). On y lit, en italique sous le titre « 3. Definition of Control » : « a phenomenon will be said to be controlled when, through the use of past experience, we can predict, at least within limits, how the phenomenon may be expected to vary in the future » — d'où « quand l'expérience passée permet de prévoir, au moins dans des limites, comment il variera ». Et plus haut sur la même page : « a controlled quality will not be a constant quality. Instead, a controlled quality must be a variable quality » — d'où « une qualité maîtrisée est variable, pas constante ». Aucun adjectif du résumé n'excède ces deux phrases."
+        }
+      ]
+    },
+    {
       "claim_id": "C010",
       "locator": "sections[0].paragraphs[0]",
-      "claim_text": "Et « at least within limits », au moins dans certaines limites, qui est une prétention modeste : on ne prévoit pas la mesure de demain, on prévoit la fourchette dans laquelle elle tombera.",
+      "claim_text": "La prévision, qui est le résultat.",
       "supports": [
         {
           "id": "SUP-62a16e4f176302e4",
@@ -237,6 +251,48 @@
     },
     {
       "claim_id": "C011",
+      "locator": "sections[0].paragraphs[0]",
+      "claim_text": "« at least within limits », au moins dans certaines limites",
+      "supports": [
+        {
+          "id": "SUP-62a16e4f176302e4",
+          "origin": "validated",
+          "path": "$.review.notes[9]",
+          "access": "n/a",
+          "text": "PROSE — le résumé est porté presque à la lettre par la page 6, ouverte en image (https://archive.org/download/in.ernet.dli.2015.150272/page/n17.jpg, en-tête imprimé « 6   ECONOMIC CONTROL OF QUALITY »). On y lit, en italique sous le titre « 3. Definition of Control » : « a phenomenon will be said to be controlled when, through the use of past experience, we can predict, at least within limits, how the phenomenon may be expected to vary in the future » — d'où « quand l'expérience passée permet de prévoir, au moins dans des limites, comment il variera ». Et plus haut sur la même page : « a controlled quality will not be a constant quality. Instead, a controlled quality must be a variable quality » — d'où « une qualité maîtrisée est variable, pas constante ». Aucun adjectif du résumé n'excède ces deux phrases."
+        },
+        {
+          "id": "SUP-ce3b8628c2c2f053",
+          "origin": "validated",
+          "path": "$.summary",
+          "access": "n/a",
+          "text": "Un phénomène est maîtrisé quand l'expérience passée permet de prévoir, au moins dans des limites, comment il variera : une qualité maîtrisée est variable, pas constante."
+        }
+      ]
+    },
+    {
+      "claim_id": "C012",
+      "locator": "sections[0].paragraphs[0]",
+      "claim_text": "qui est une prétention modeste : on ne prévoit pas la mesure de demain, on prévoit la fourchette dans laquelle elle tombera.",
+      "supports": [
+        {
+          "id": "SUP-62a16e4f176302e4",
+          "origin": "validated",
+          "path": "$.review.notes[9]",
+          "access": "n/a",
+          "text": "PROSE — le résumé est porté presque à la lettre par la page 6, ouverte en image (https://archive.org/download/in.ernet.dli.2015.150272/page/n17.jpg, en-tête imprimé « 6   ECONOMIC CONTROL OF QUALITY »). On y lit, en italique sous le titre « 3. Definition of Control » : « a phenomenon will be said to be controlled when, through the use of past experience, we can predict, at least within limits, how the phenomenon may be expected to vary in the future » — d'où « quand l'expérience passée permet de prévoir, au moins dans des limites, comment il variera ». Et plus haut sur la même page : « a controlled quality will not be a constant quality. Instead, a controlled quality must be a variable quality » — d'où « une qualité maîtrisée est variable, pas constante ». Aucun adjectif du résumé n'excède ces deux phrases."
+        },
+        {
+          "id": "SUP-ce3b8628c2c2f053",
+          "origin": "validated",
+          "path": "$.summary",
+          "access": "n/a",
+          "text": "Un phénomène est maîtrisé quand l'expérience passée permet de prévoir, au moins dans des limites, comment il variera : une qualité maîtrisée est variable, pas constante."
+        }
+      ]
+    },
+    {
+      "claim_id": "C013",
       "locator": "sections[0].paragraphs[1]",
       "claim_text": "Le critère a changé de place : il ne porte plus sur l’objet mais sur ce qu’on est capable d’en dire.",
       "supports": [
@@ -257,9 +313,9 @@
       ]
     },
     {
-      "claim_id": "C012",
+      "claim_id": "C014",
       "locator": "sections[0].paragraphs[1]",
-      "claim_text": "La même page 6 en tire une formule si contre-intuitive que Shewhart l’écrit deux fois de suite",
+      "claim_text": "Plus haut sur la même page 6 se lit une formule si contre-intuitive que Shewhart l’écrit deux fois de suite",
       "supports": [
         {
           "id": "SUP-62a16e4f176302e4",
@@ -271,7 +327,7 @@
       ]
     },
     {
-      "claim_id": "C013",
+      "claim_id": "C015",
       "locator": "sections[0].paragraphs[1]",
       "claim_text": "« a controlled quality will not be a constant quality. Instead, a controlled quality must be a variable quality »",
       "supports": [
@@ -285,17 +341,10 @@
       ]
     },
     {
-      "claim_id": "C014",
+      "claim_id": "C016",
       "locator": "sections[0].paragraphs[1]",
       "claim_text": "Une qualité maîtrisée n’est pas constante, elle est variable.",
       "supports": [
-        {
-          "id": "SUP-62a16e4f176302e4",
-          "origin": "validated",
-          "path": "$.review.notes[9]",
-          "access": "n/a",
-          "text": "PROSE — le résumé est porté presque à la lettre par la page 6, ouverte en image (https://archive.org/download/in.ernet.dli.2015.150272/page/n17.jpg, en-tête imprimé « 6   ECONOMIC CONTROL OF QUALITY »). On y lit, en italique sous le titre « 3. Definition of Control » : « a phenomenon will be said to be controlled when, through the use of past experience, we can predict, at least within limits, how the phenomenon may be expected to vary in the future » — d'où « quand l'expérience passée permet de prévoir, au moins dans des limites, comment il variera ». Et plus haut sur la même page : « a controlled quality will not be a constant quality. Instead, a controlled quality must be a variable quality » — d'où « une qualité maîtrisée est variable, pas constante ». Aucun adjectif du résumé n'excède ces deux phrases."
-        },
         {
           "id": "SUP-ce3b8628c2c2f053",
           "origin": "validated",
@@ -304,16 +353,16 @@
           "text": "Un phénomène est maîtrisé quand l'expérience passée permet de prévoir, au moins dans des limites, comment il variera : une qualité maîtrisée est variable, pas constante."
         },
         {
-          "id": "SUP-28e51f63298641b2",
+          "id": "SUP-62a16e4f176302e4",
           "origin": "validated",
-          "path": "$.notes[0]",
+          "path": "$.review.notes[9]",
           "access": "n/a",
-          "text": "Arbitrage de traduction du lot, appliqué aux trois cartes Shewhart de cette nuit et ouvert à un recontrôle. « Control » est rendu par « maîtrise » et non par « contrôle », ce qui reconduit le choix de la carte publiée cause-de-hasard-et-cause-assignable. Les deux lecteurs ont déposé les deux rendus et ils font exactement le même nombre de caractères : le gabarit ne tranche rien, l'arbitrage est de sens seul. Le motif est pris sur le chapitre XVII, où il est le plus fort : la phrase de la page 252 exige que les qualités des matériaux soient « controlled », et le paragraphe qui la suit immédiatement s'intitule « Tolerances where 100 Per Cent Inspection Cannot be Made ». Rendre le mot par « contrôlées » ferait entendre que les matériaux doivent être inspectés, c'est-à-dire précisément ce que Shewhart écarte deux lignes plus bas. Ce qui plaide en sens contraire n'est pas nul et se dépose ici : « contrôle » est le terme d'usage de la maîtrise statistique des procédés en français, et « carte de contrôle » comme « limites de contrôle » ne se disent pas autrement. Un contrôleur qui renverserait ce choix devrait le renverser sur les trois cartes à la fois."
+          "text": "PROSE — le résumé est porté presque à la lettre par la page 6, ouverte en image (https://archive.org/download/in.ernet.dli.2015.150272/page/n17.jpg, en-tête imprimé « 6   ECONOMIC CONTROL OF QUALITY »). On y lit, en italique sous le titre « 3. Definition of Control » : « a phenomenon will be said to be controlled when, through the use of past experience, we can predict, at least within limits, how the phenomenon may be expected to vary in the future » — d'où « quand l'expérience passée permet de prévoir, au moins dans des limites, comment il variera ». Et plus haut sur la même page : « a controlled quality will not be a constant quality. Instead, a controlled quality must be a variable quality » — d'où « une qualité maîtrisée est variable, pas constante ». Aucun adjectif du résumé n'excède ces deux phrases."
         }
       ]
     },
     {
-      "claim_id": "C015",
+      "claim_id": "C017",
       "locator": "sections[0].paragraphs[1]",
       "claim_text": "L’atelier du début, celui dont les mesures bougent tous les jours, est là sous la plume de l’auteur.",
       "supports": [
@@ -334,7 +383,7 @@
       ]
     },
     {
-      "claim_id": "C016",
+      "claim_id": "C018",
       "locator": "sections[0].paragraphs[2]",
       "claim_text": "Le membre « through the use of past experience » n’est pas une précaution de style, c’est la condition même",
       "supports": [
@@ -344,18 +393,11 @@
           "path": "$.notes[6]",
           "access": "n/a",
           "text": "La définition entière de la page 6, en italiques dans le texte, fait 182 caractères et ne pouvait pas être citée : la seule coupe qui la ramène sous le plafond supprime « through the use of past experience », qui est la condition même de la définition. C'est le résumé qui la porte."
-        },
-        {
-          "id": "SUP-62a16e4f176302e4",
-          "origin": "validated",
-          "path": "$.review.notes[9]",
-          "access": "n/a",
-          "text": "PROSE — le résumé est porté presque à la lettre par la page 6, ouverte en image (https://archive.org/download/in.ernet.dli.2015.150272/page/n17.jpg, en-tête imprimé « 6   ECONOMIC CONTROL OF QUALITY »). On y lit, en italique sous le titre « 3. Definition of Control » : « a phenomenon will be said to be controlled when, through the use of past experience, we can predict, at least within limits, how the phenomenon may be expected to vary in the future » — d'où « quand l'expérience passée permet de prévoir, au moins dans des limites, comment il variera ». Et plus haut sur la même page : « a controlled quality will not be a constant quality. Instead, a controlled quality must be a variable quality » — d'où « une qualité maîtrisée est variable, pas constante ». Aucun adjectif du résumé n'excède ces deux phrases."
         }
       ]
     },
     {
-      "claim_id": "C017",
+      "claim_id": "C019",
       "locator": "sections[0].paragraphs[2]",
       "claim_text": "rien d’autre ne fonde la prévision, ni le plan de la pièce, ni la théorie de la machine, ni la promesse d’un fournisseur, mais une série d’observations déjà faites",
       "supports": [
@@ -376,15 +418,9 @@
       ]
     },
     {
-      "claim_id": "C018",
+      "claim_id": "C020",
       "locator": "sections[0].paragraphs[2]",
-      "claim_text": "Un procédé neuf n’est donc ni maîtrisé ni déréglé : il n’a pas encore de passé, donc rien à dire de son avenir.",
-      "supports": []
-    },
-    {
-      "claim_id": "C019",
-      "locator": "sections[1].paragraphs[0]",
-      "claim_text": "Le mot que Shewhart écrit est l’anglais control",
+      "claim_text": "Devant un procédé tout neuf, la définition telle qu’elle est écrite reste donc muette : elle demande une expérience passée, et il n’y en a pas encore.",
       "supports": [
         {
           "id": "SUP-62a16e4f176302e4",
@@ -393,6 +429,20 @@
           "access": "n/a",
           "text": "PROSE — le résumé est porté presque à la lettre par la page 6, ouverte en image (https://archive.org/download/in.ernet.dli.2015.150272/page/n17.jpg, en-tête imprimé « 6   ECONOMIC CONTROL OF QUALITY »). On y lit, en italique sous le titre « 3. Definition of Control » : « a phenomenon will be said to be controlled when, through the use of past experience, we can predict, at least within limits, how the phenomenon may be expected to vary in the future » — d'où « quand l'expérience passée permet de prévoir, au moins dans des limites, comment il variera ». Et plus haut sur la même page : « a controlled quality will not be a constant quality. Instead, a controlled quality must be a variable quality » — d'où « une qualité maîtrisée est variable, pas constante ». Aucun adjectif du résumé n'excède ces deux phrases."
         },
+        {
+          "id": "SUP-4c27f1a508ec935d",
+          "origin": "validated",
+          "path": "$.notes[6]",
+          "access": "n/a",
+          "text": "La définition entière de la page 6, en italiques dans le texte, fait 182 caractères et ne pouvait pas être citée : la seule coupe qui la ramène sous le plafond supprime « through the use of past experience », qui est la condition même de la définition. C'est le résumé qui la porte."
+        }
+      ]
+    },
+    {
+      "claim_id": "C021",
+      "locator": "sections[1].paragraphs[0]",
+      "claim_text": "Le mot que Shewhart écrit est l’anglais control",
+      "supports": [
         {
           "id": "SUP-81fe51af68578b61",
           "origin": "validated",
@@ -410,7 +460,7 @@
       ]
     },
     {
-      "claim_id": "C020",
+      "claim_id": "C022",
       "locator": "sections[1].paragraphs[0]",
       "claim_text": "« Contrôle » dit d’abord l’inspection, trier les bonnes pièces et les mauvaises",
       "supports": [
@@ -427,18 +477,11 @@
           "path": "$.quotation.translation.translator",
           "access": "n/a",
           "text": "Traduction interne non publiée (chaîne Curiosity, session du 7 septembre 2026). Aucune traduction française publiée de l'ouvrage de 1931 n'a été identifiée. Deux choix se déclarent. Premièrement, « in which » est rendu par « où » et non par « dans lequel » : la tournure longue portait la phrase à 152 caractères, la courte à 143, et « l'état où » dit exactement la même relation. Deuxièmement, « the state of statistical control » est rendu par « l'état de contrôle statistique », qui est le syntagme sous lequel le concept circule en français et le titre même de la fiche. C'est un écart assumé avec la carte déjà validée cause-de-hasard-et-cause-assignable, dont la note de traduction rend « control » par « maîtrise » au motif que « contrôle » désigne en français l'inspection. La variante « l'état de maîtrise statistique » fait le même compte, 143 caractères, et reste disponible : « C'est pourquoi il est souhaitable d'atteindre l'état de maîtrise statistique où la loi naturelle des grands nombres rend la prévision possible. » Le choix entre les deux est une décision de rédaction, pas de lecture, et il est signalé plutôt que tranché en silence."
-        },
-        {
-          "id": "SUP-1553fc520cad2d73",
-          "origin": "validated",
-          "path": "$.quotation.translation.translator",
-          "access": "n/a",
-          "text": "Traduction interne non publiée (chaîne Curiosity, 7 septembre 2026) ; aucune traduction française publiée de l'ouvrage de 1931 n'a été identifiée. Deux choix. « In which » est rendu par « où » plutôt que par « dans lequel », qui portait la phrase au-delà du gabarit et ne disait pas autre chose. « The state of statistical control » est rendu par « l'état de maîtrise statistique », suivant le rendu de « control » par « maîtrise » retenu par les cartes Shewhart du dépôt ; le titre de la carte, lui, garde « contrôle », qui est le nom sous lequel le concept se cherche en français."
         }
       ]
     },
     {
-      "claim_id": "C021",
+      "claim_id": "C023",
       "locator": "sections[1].paragraphs[0]",
       "claim_text": "l’état qu’on vient de définir est presque le contraire, un procédé dont on sait d’avance ce qu’il fera et qu’on n’a justement pas à passer en revue pièce par pièce",
       "supports": [
@@ -459,35 +502,35 @@
       ]
     },
     {
-      "claim_id": "C022",
-      "locator": "sections[1].paragraphs[0]",
-      "claim_text": "Le chapitre XVII le montre en deux lignes : la page 252 exige que les qualités des matériaux soient « controlled », et le paragraphe suivant s’intitule « Tolerances where 100 Per Cent Inspection Cannot be Made »",
-      "supports": [
-        {
-          "id": "SUP-28e51f63298641b2",
-          "origin": "validated",
-          "path": "$.notes[0]",
-          "access": "n/a",
-          "text": "Arbitrage de traduction du lot, appliqué aux trois cartes Shewhart de cette nuit et ouvert à un recontrôle. « Control » est rendu par « maîtrise » et non par « contrôle », ce qui reconduit le choix de la carte publiée cause-de-hasard-et-cause-assignable. Les deux lecteurs ont déposé les deux rendus et ils font exactement le même nombre de caractères : le gabarit ne tranche rien, l'arbitrage est de sens seul. Le motif est pris sur le chapitre XVII, où il est le plus fort : la phrase de la page 252 exige que les qualités des matériaux soient « controlled », et le paragraphe qui la suit immédiatement s'intitule « Tolerances where 100 Per Cent Inspection Cannot be Made ». Rendre le mot par « contrôlées » ferait entendre que les matériaux doivent être inspectés, c'est-à-dire précisément ce que Shewhart écarte deux lignes plus bas. Ce qui plaide en sens contraire n'est pas nul et se dépose ici : « contrôle » est le terme d'usage de la maîtrise statistique des procédés en français, et « carte de contrôle » comme « limites de contrôle » ne se disent pas autrement. Un contrôleur qui renverserait ce choix devrait le renverser sur les trois cartes à la fois."
-        }
-      ]
-    },
-    {
-      "claim_id": "C023",
-      "locator": "sections[1].paragraphs[0]",
-      "claim_text": "des tolérances là où l’inspection à cent pour cent est impossible",
-      "supports": [
-        {
-          "id": "SUP-28e51f63298641b2",
-          "origin": "validated",
-          "path": "$.notes[0]",
-          "access": "n/a",
-          "text": "Arbitrage de traduction du lot, appliqué aux trois cartes Shewhart de cette nuit et ouvert à un recontrôle. « Control » est rendu par « maîtrise » et non par « contrôle », ce qui reconduit le choix de la carte publiée cause-de-hasard-et-cause-assignable. Les deux lecteurs ont déposé les deux rendus et ils font exactement le même nombre de caractères : le gabarit ne tranche rien, l'arbitrage est de sens seul. Le motif est pris sur le chapitre XVII, où il est le plus fort : la phrase de la page 252 exige que les qualités des matériaux soient « controlled », et le paragraphe qui la suit immédiatement s'intitule « Tolerances where 100 Per Cent Inspection Cannot be Made ». Rendre le mot par « contrôlées » ferait entendre que les matériaux doivent être inspectés, c'est-à-dire précisément ce que Shewhart écarte deux lignes plus bas. Ce qui plaide en sens contraire n'est pas nul et se dépose ici : « contrôle » est le terme d'usage de la maîtrise statistique des procédés en français, et « carte de contrôle » comme « limites de contrôle » ne se disent pas autrement. Un contrôleur qui renverserait ce choix devrait le renverser sur les trois cartes à la fois."
-        }
-      ]
-    },
-    {
       "claim_id": "C024",
+      "locator": "sections[1].paragraphs[0]",
+      "claim_text": "Le chapitre XVII le montre en deux lignes : la page 252 exige que les qualités des matériaux soient « controlled »",
+      "supports": [
+        {
+          "id": "SUP-28e51f63298641b2",
+          "origin": "validated",
+          "path": "$.notes[0]",
+          "access": "n/a",
+          "text": "Arbitrage de traduction du lot, appliqué aux trois cartes Shewhart de cette nuit et ouvert à un recontrôle. « Control » est rendu par « maîtrise » et non par « contrôle », ce qui reconduit le choix de la carte publiée cause-de-hasard-et-cause-assignable. Les deux lecteurs ont déposé les deux rendus et ils font exactement le même nombre de caractères : le gabarit ne tranche rien, l'arbitrage est de sens seul. Le motif est pris sur le chapitre XVII, où il est le plus fort : la phrase de la page 252 exige que les qualités des matériaux soient « controlled », et le paragraphe qui la suit immédiatement s'intitule « Tolerances where 100 Per Cent Inspection Cannot be Made ». Rendre le mot par « contrôlées » ferait entendre que les matériaux doivent être inspectés, c'est-à-dire précisément ce que Shewhart écarte deux lignes plus bas. Ce qui plaide en sens contraire n'est pas nul et se dépose ici : « contrôle » est le terme d'usage de la maîtrise statistique des procédés en français, et « carte de contrôle » comme « limites de contrôle » ne se disent pas autrement. Un contrôleur qui renverserait ce choix devrait le renverser sur les trois cartes à la fois."
+        }
+      ]
+    },
+    {
+      "claim_id": "C025",
+      "locator": "sections[1].paragraphs[0]",
+      "claim_text": "le paragraphe suivant s’intitule « Tolerances where 100 Per Cent Inspection Cannot be Made », des tolérances là où l’inspection à cent pour cent est impossible",
+      "supports": [
+        {
+          "id": "SUP-28e51f63298641b2",
+          "origin": "validated",
+          "path": "$.notes[0]",
+          "access": "n/a",
+          "text": "Arbitrage de traduction du lot, appliqué aux trois cartes Shewhart de cette nuit et ouvert à un recontrôle. « Control » est rendu par « maîtrise » et non par « contrôle », ce qui reconduit le choix de la carte publiée cause-de-hasard-et-cause-assignable. Les deux lecteurs ont déposé les deux rendus et ils font exactement le même nombre de caractères : le gabarit ne tranche rien, l'arbitrage est de sens seul. Le motif est pris sur le chapitre XVII, où il est le plus fort : la phrase de la page 252 exige que les qualités des matériaux soient « controlled », et le paragraphe qui la suit immédiatement s'intitule « Tolerances where 100 Per Cent Inspection Cannot be Made ». Rendre le mot par « contrôlées » ferait entendre que les matériaux doivent être inspectés, c'est-à-dire précisément ce que Shewhart écarte deux lignes plus bas. Ce qui plaide en sens contraire n'est pas nul et se dépose ici : « contrôle » est le terme d'usage de la maîtrise statistique des procédés en français, et « carte de contrôle » comme « limites de contrôle » ne se disent pas autrement. Un contrôleur qui renverserait ce choix devrait le renverser sur les trois cartes à la fois."
+        }
+      ]
+    },
+    {
+      "claim_id": "C026",
       "locator": "sections[1].paragraphs[0]",
       "claim_text": "D’où « maîtrise ».",
       "supports": [
@@ -508,9 +551,9 @@
       ]
     },
     {
-      "claim_id": "C025",
+      "claim_id": "C027",
       "locator": "sections[1].paragraphs[0]",
-      "claim_text": "Mais « contrôle » reste le terme reçu de la discipline en français, celui des cartes de contrôle et des limites de contrôle",
+      "claim_text": "Mais « contrôle » reste le terme reçu de la discipline en français, celui des cartes de contrôle et des limites de contrôle : deux mots, une seule idée.",
       "supports": [
         {
           "id": "SUP-28e51f63298641b2",
@@ -520,16 +563,16 @@
           "text": "Arbitrage de traduction du lot, appliqué aux trois cartes Shewhart de cette nuit et ouvert à un recontrôle. « Control » est rendu par « maîtrise » et non par « contrôle », ce qui reconduit le choix de la carte publiée cause-de-hasard-et-cause-assignable. Les deux lecteurs ont déposé les deux rendus et ils font exactement le même nombre de caractères : le gabarit ne tranche rien, l'arbitrage est de sens seul. Le motif est pris sur le chapitre XVII, où il est le plus fort : la phrase de la page 252 exige que les qualités des matériaux soient « controlled », et le paragraphe qui la suit immédiatement s'intitule « Tolerances where 100 Per Cent Inspection Cannot be Made ». Rendre le mot par « contrôlées » ferait entendre que les matériaux doivent être inspectés, c'est-à-dire précisément ce que Shewhart écarte deux lignes plus bas. Ce qui plaide en sens contraire n'est pas nul et se dépose ici : « contrôle » est le terme d'usage de la maîtrise statistique des procédés en français, et « carte de contrôle » comme « limites de contrôle » ne se disent pas autrement. Un contrôleur qui renverserait ce choix devrait le renverser sur les trois cartes à la fois."
         },
         {
-          "id": "SUP-1553fc520cad2d73",
+          "id": "SUP-842e580f4dd4dc5a",
           "origin": "validated",
-          "path": "$.quotation.translation.translator",
+          "path": "$.notes[2]",
           "access": "n/a",
-          "text": "Traduction interne non publiée (chaîne Curiosity, 7 septembre 2026) ; aucune traduction française publiée de l'ouvrage de 1931 n'a été identifiée. Deux choix. « In which » est rendu par « où » plutôt que par « dans lequel », qui portait la phrase au-delà du gabarit et ne disait pas autre chose. « The state of statistical control » est rendu par « l'état de maîtrise statistique », suivant le rendu de « control » par « maîtrise » retenu par les cartes Shewhart du dépôt ; le titre de la carte, lui, garde « contrôle », qui est le nom sous lequel le concept se cherche en français."
+          "text": "Le titre affiche « contrôle » là où la citation affiche « maîtrise », et c'est une incohérence assumée plutôt que subie. Le titre est aussi l'identifiant de la fiche, qu'il n'est pas question de changer, et il est le nom sous lequel le concept se cherche en français ; la citation, elle, rend les mots de l'auteur. Un contrôleur peut préférer unifier, et la variante existe, de longueur identique : « C'est pourquoi il est souhaitable d'atteindre l'état de contrôle statistique où la loi naturelle des grands nombres rend la prévision possible. »"
         }
       ]
     },
     {
-      "claim_id": "C026",
+      "claim_id": "C028",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "Vingt-huit pages plus loin, sous un intertitre de conclusion",
       "supports": [
@@ -539,11 +582,18 @@
           "path": "$.review.notes[11]",
           "access": "n/a",
           "text": "Vérifié aussi, puisque la fiche l'affiche : le troisième locator de la source 1, p. 34, existe et porte bien la matière annoncée. Le feuillet n45 porte l'en-tête imprimé « 34   ECONOMIC CONTROL OF QUALITY » et, sous « 6. Conclusion », la phrase « It seems reasonable to believe that there is an objective state of control, making possible the prediction of quality within limits even though the causes of variability are unknown. »"
+        },
+        {
+          "id": "SUP-5df897d04f767bd9",
+          "origin": "validated",
+          "path": "$.sources[0].locator",
+          "access": "full-text",
+          "text": "p. 6, 34 et 146"
         }
       ]
     },
     {
-      "claim_id": "C027",
+      "claim_id": "C029",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "l’auteur franchit un pas et le dit avec prudence",
       "supports": [
@@ -557,7 +607,7 @@
       ]
     },
     {
-      "claim_id": "C028",
+      "claim_id": "C030",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "« It seems reasonable to believe that there is an objective state of control, making possible the prediction of quality within limits even though the causes of variability are unknown. »",
       "supports": [
@@ -571,7 +621,7 @@
       ]
     },
     {
-      "claim_id": "C029",
+      "claim_id": "C031",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "Il paraît raisonnable de croire qu’il existe un état de contrôle objectif, qui rend la prévision possible dans certaines limites alors même que les causes de la variabilité sont inconnues.",
       "supports": [
@@ -585,7 +635,7 @@
       ]
     },
     {
-      "claim_id": "C030",
+      "claim_id": "C032",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "Il paraît raisonnable de croire : ni démonstration ni constat, mais l’hypothèse que cet état tient aux choses et non à la seule manière d’en parler.",
       "supports": [
@@ -595,20 +645,13 @@
           "path": "$.review.notes[11]",
           "access": "n/a",
           "text": "Vérifié aussi, puisque la fiche l'affiche : le troisième locator de la source 1, p. 34, existe et porte bien la matière annoncée. Le feuillet n45 porte l'en-tête imprimé « 34   ECONOMIC CONTROL OF QUALITY » et, sous « 6. Conclusion », la phrase « It seems reasonable to believe that there is an objective state of control, making possible the prediction of quality within limits even though the causes of variability are unknown. »"
-        },
-        {
-          "id": "SUP-7309aedf3990308a",
-          "origin": "validated",
-          "path": "$.notes[5]",
-          "access": "n/a",
-          "text": "L'état de contrôle statistique est chez Shewhart un état constaté et révocable, jamais démontré : « we perhaps never can say that the behavior of a phenomenon in the past is sufficient to prove that the phenomenon is controlled », et page 148 le fait qu'un produit ait été maîtrisé jusqu'ici ne prouve pas qu'on puisse en prévoir la suite, « provided the same essential conditions are maintained ». Aucun champ affiché n'affirme davantage."
         }
       ]
     },
     {
-      "claim_id": "C031",
+      "claim_id": "C033",
       "locator": "sections[2].paragraphs[1]",
-      "claim_text": "la prévision ne demande pas l’explication. On peut savoir entre quelles bornes une machine se tiendra sans savoir ce qui produit sa dispersion.",
+      "claim_text": "La fin de la phrase est le point décisif pour un atelier : la prévision ne demande pas l’explication.",
       "supports": [
         {
           "id": "SUP-63270bc12c48b6a3",
@@ -620,7 +663,21 @@
       ]
     },
     {
-      "claim_id": "C032",
+      "claim_id": "C034",
+      "locator": "sections[2].paragraphs[1]",
+      "claim_text": "On peut savoir entre quelles bornes une machine se tiendra sans savoir ce qui produit sa dispersion.",
+      "supports": [
+        {
+          "id": "SUP-63270bc12c48b6a3",
+          "origin": "validated",
+          "path": "$.review.notes[11]",
+          "access": "n/a",
+          "text": "Vérifié aussi, puisque la fiche l'affiche : le troisième locator de la source 1, p. 34, existe et porte bien la matière annoncée. Le feuillet n45 porte l'en-tête imprimé « 34   ECONOMIC CONTROL OF QUALITY » et, sous « 6. Conclusion », la phrase « It seems reasonable to believe that there is an objective state of control, making possible the prediction of quality within limits even though the causes of variability are unknown. »"
+        }
+      ]
+    },
+    {
+      "claim_id": "C035",
       "locator": "sections[2].paragraphs[1]",
       "claim_text": "Mais le chapitre XI pose l’exigence inverse : « it is necessary and sufficient that he know the laws which make prediction possible »",
       "supports": [
@@ -634,7 +691,7 @@
       ]
     },
     {
-      "claim_id": "C033",
+      "claim_id": "C036",
       "locator": "sections[2].paragraphs[1]",
       "claim_text": "Pour pouvoir dire qu’un phénomène est maîtrisé, il est nécessaire et suffisant de connaître les lois qui rendent la prévision possible.",
       "supports": [
@@ -648,13 +705,28 @@
       ]
     },
     {
-      "claim_id": "C034",
+      "claim_id": "C037",
       "locator": "sections[2].paragraphs[1]",
-      "claim_text": "Connaître la loi n’est pas connaître les causes, et c’est ce qui rend les deux phrases compatibles.",
-      "supports": []
+      "claim_text": "L’une parle des causes de la variabilité, l’autre des lois : on peut comprendre ces deux phrases comme portant sur des objets distincts.",
+      "supports": [
+        {
+          "id": "SUP-63270bc12c48b6a3",
+          "origin": "validated",
+          "path": "$.review.notes[11]",
+          "access": "n/a",
+          "text": "Vérifié aussi, puisque la fiche l'affiche : le troisième locator de la source 1, p. 34, existe et porte bien la matière annoncée. Le feuillet n45 porte l'en-tête imprimé « 34   ECONOMIC CONTROL OF QUALITY » et, sous « 6. Conclusion », la phrase « It seems reasonable to believe that there is an objective state of control, making possible the prediction of quality within limits even though the causes of variability are unknown. »"
+        },
+        {
+          "id": "SUP-dfed24769b5068aa",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Le chapitre XI, « Statistical Control », est le lieu où Shewhart passe de la notion générale de contrôle, posée en partie I, à sa forme statistique nommée. Sa section 1, « Conditions for Control », part d'une exigence maximale : s'il existe un ordre causal dans les phénomènes, alors, pour qui aurait une connaissance parfaite, tout est prévisible et donc contrôlé ; mais « for practical purposes the quality of product is controlled only to the extent that we know the laws that make prediction possible », et « For one to be able to say that a phenomenon is controlled, it is necessary and sufficient that he know the laws which make prediction possible ». Vient alors l'aveu inductif qui est le nerf du chapitre : dans la pratique on part d'un ensemble observé de données et l'on essaie d'en décider ; « we perhaps never can say that the behavior of a phenomenon in the past is sufficient to prove that the phenomenon is controlled by a given set of known laws. All that we can ever say is that experience has shown that such behavior appears to be sufficient. » De là le partage entre les lois. Le chapitre X vient d'établir que les lois empiriques ne permettent pas de prévoir les fluctuations erratiques sur la base de la théorie des probabilités ; « If product is controlled only in this empirical sense, it follows that we cannot obtain the economic advantages discussed in Part I. For this reason it is desirable to attain the state of statistical control in which the natural law of large numbers makes prediction possible. » Le contrôle statistique n'est donc pas un degré de plus dans la régularité : c'est le régime particulier où une loi naturelle, celle des grands nombres, autorise la prévision, et c'est à ce titre seulement que les avantages économiques annoncés en partie I deviennent atteignables. La section 2 en donne la condition, sous forme d'hypothèse déclarée : « We shall assume that the necessary and sufficient condition for statistical control is that the causes of an event satisfy the law of large numbers as do those of a constant system of chance causes. If a cause system is not constant, we shall say that an assignable cause of Type I is present. » Formulée du côté des effets, la condition devient une apparence, et Shewhart insiste sur le mot : il est nécessaire que les différences de qualité entre pièces « appear to be consistent with the assumption that they arose from a constant system of chance causes. We say appear because, as is always the case in trying to find a law controlling a phenomenon, we can never be sure that we have discovered the law. Obviously such appearance is not sufficient in the logical sense although it must be in the practical sense. » Le chapitre se ferme sur une réserve de même farine, page 148 : « The fact that an observed set of values of fraction defective indicates the product to have been controlled up to the present does not prove that we can predict the future course of this phenomenon. We always have to say that this can be done provided the same essential conditions are maintained », et page 149 la constance de l'équilibre statistique une fois atteint n'est créditée que par l'expérience, « subject to the limitation that there is no a priori reason for believing that an assignable cause has entered the production process ». L'état de contrôle statistique est donc chez lui un état constaté et révocable, jamais démontré."
+        }
+      ]
     },
     {
-      "claim_id": "C035",
+      "claim_id": "C038",
       "locator": "sections[2].paragraphs[2]",
       "claim_text": "La page 34 énumère cinq avantages de cet état, et ils sont tous de gestion",
       "supports": [
@@ -668,7 +740,7 @@
       ]
     },
     {
-      "claim_id": "C036",
+      "claim_id": "C039",
       "locator": "sections[2].paragraphs[2]",
       "claim_text": "ce que la maîtrise fait gagner n’est pas d’abord une connaissance, ce sont des décisions qu’on devient capable de prendre",
       "supports": [
@@ -682,7 +754,7 @@
       ]
     },
     {
-      "claim_id": "C037",
+      "claim_id": "C040",
       "locator": "sections[2].paragraphs[2]",
       "claim_text": "Et c’est cette promesse que le chapitre XI met à l’épreuve, en montrant que toutes les régularités ne la tiennent pas.",
       "supports": [
@@ -692,11 +764,18 @@
           "path": "$.definition_de_lauteur",
           "access": "n/a",
           "text": "Le chapitre XI, « Statistical Control », est le lieu où Shewhart passe de la notion générale de contrôle, posée en partie I, à sa forme statistique nommée. Sa section 1, « Conditions for Control », part d'une exigence maximale : s'il existe un ordre causal dans les phénomènes, alors, pour qui aurait une connaissance parfaite, tout est prévisible et donc contrôlé ; mais « for practical purposes the quality of product is controlled only to the extent that we know the laws that make prediction possible », et « For one to be able to say that a phenomenon is controlled, it is necessary and sufficient that he know the laws which make prediction possible ». Vient alors l'aveu inductif qui est le nerf du chapitre : dans la pratique on part d'un ensemble observé de données et l'on essaie d'en décider ; « we perhaps never can say that the behavior of a phenomenon in the past is sufficient to prove that the phenomenon is controlled by a given set of known laws. All that we can ever say is that experience has shown that such behavior appears to be sufficient. » De là le partage entre les lois. Le chapitre X vient d'établir que les lois empiriques ne permettent pas de prévoir les fluctuations erratiques sur la base de la théorie des probabilités ; « If product is controlled only in this empirical sense, it follows that we cannot obtain the economic advantages discussed in Part I. For this reason it is desirable to attain the state of statistical control in which the natural law of large numbers makes prediction possible. » Le contrôle statistique n'est donc pas un degré de plus dans la régularité : c'est le régime particulier où une loi naturelle, celle des grands nombres, autorise la prévision, et c'est à ce titre seulement que les avantages économiques annoncés en partie I deviennent atteignables. La section 2 en donne la condition, sous forme d'hypothèse déclarée : « We shall assume that the necessary and sufficient condition for statistical control is that the causes of an event satisfy the law of large numbers as do those of a constant system of chance causes. If a cause system is not constant, we shall say that an assignable cause of Type I is present. » Formulée du côté des effets, la condition devient une apparence, et Shewhart insiste sur le mot : il est nécessaire que les différences de qualité entre pièces « appear to be consistent with the assumption that they arose from a constant system of chance causes. We say appear because, as is always the case in trying to find a law controlling a phenomenon, we can never be sure that we have discovered the law. Obviously such appearance is not sufficient in the logical sense although it must be in the practical sense. » Le chapitre se ferme sur une réserve de même farine, page 148 : « The fact that an observed set of values of fraction defective indicates the product to have been controlled up to the present does not prove that we can predict the future course of this phenomenon. We always have to say that this can be done provided the same essential conditions are maintained », et page 149 la constance de l'équilibre statistique une fois atteint n'est créditée que par l'expérience, « subject to the limitation that there is no a priori reason for believing that an assignable cause has entered the production process ». L'état de contrôle statistique est donc chez lui un état constaté et révocable, jamais démontré."
+        },
+        {
+          "id": "SUP-0f7a7ed441a411e3",
+          "origin": "validated",
+          "path": "$.notes[3]",
+          "access": "n/a",
+          "text": "Ce que le résumé ne porte pas. Il reprend la définition générale du contrôle, page 6, qui est celle qu'avait contrôlée le premier tour ; la spécification propre au chapitre XI, à savoir que le contrôle statistique est le régime où c'est la loi naturelle des grands nombres qui rend la prévision possible, là où un contrôle seulement empirique ne le permet pas, est portée par la citation et non par le résumé."
         }
       ]
     },
     {
-      "claim_id": "C038",
+      "claim_id": "C041",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "La définition de la page 6 ne dit pas ce qui rend la prévision possible.",
       "supports": [
@@ -708,16 +787,37 @@
           "text": "PROSE — le résumé est porté presque à la lettre par la page 6, ouverte en image (https://archive.org/download/in.ernet.dli.2015.150272/page/n17.jpg, en-tête imprimé « 6   ECONOMIC CONTROL OF QUALITY »). On y lit, en italique sous le titre « 3. Definition of Control » : « a phenomenon will be said to be controlled when, through the use of past experience, we can predict, at least within limits, how the phenomenon may be expected to vary in the future » — d'où « quand l'expérience passée permet de prévoir, au moins dans des limites, comment il variera ». Et plus haut sur la même page : « a controlled quality will not be a constant quality. Instead, a controlled quality must be a variable quality » — d'où « une qualité maîtrisée est variable, pas constante ». Aucun adjectif du résumé n'excède ces deux phrases."
         },
         {
-          "id": "SUP-4c27f1a508ec935d",
+          "id": "SUP-0f7a7ed441a411e3",
           "origin": "validated",
-          "path": "$.notes[6]",
+          "path": "$.notes[3]",
           "access": "n/a",
-          "text": "La définition entière de la page 6, en italiques dans le texte, fait 182 caractères et ne pouvait pas être citée : la seule coupe qui la ramène sous le plafond supprime « through the use of past experience », qui est la condition même de la définition. C'est le résumé qui la porte."
+          "text": "Ce que le résumé ne porte pas. Il reprend la définition générale du contrôle, page 6, qui est celle qu'avait contrôlée le premier tour ; la spécification propre au chapitre XI, à savoir que le contrôle statistique est le régime où c'est la loi naturelle des grands nombres qui rend la prévision possible, là où un contrôle seulement empirique ne le permet pas, est portée par la citation et non par le résumé."
         }
       ]
     },
     {
-      "claim_id": "C039",
+      "claim_id": "C042",
+      "locator": "sections[3].paragraphs[0]",
+      "claim_text": "On peut prévoir par simple habitude : depuis six mois, ça tient.",
+      "supports": [
+        {
+          "id": "SUP-dfed24769b5068aa",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Le chapitre XI, « Statistical Control », est le lieu où Shewhart passe de la notion générale de contrôle, posée en partie I, à sa forme statistique nommée. Sa section 1, « Conditions for Control », part d'une exigence maximale : s'il existe un ordre causal dans les phénomènes, alors, pour qui aurait une connaissance parfaite, tout est prévisible et donc contrôlé ; mais « for practical purposes the quality of product is controlled only to the extent that we know the laws that make prediction possible », et « For one to be able to say that a phenomenon is controlled, it is necessary and sufficient that he know the laws which make prediction possible ». Vient alors l'aveu inductif qui est le nerf du chapitre : dans la pratique on part d'un ensemble observé de données et l'on essaie d'en décider ; « we perhaps never can say that the behavior of a phenomenon in the past is sufficient to prove that the phenomenon is controlled by a given set of known laws. All that we can ever say is that experience has shown that such behavior appears to be sufficient. » De là le partage entre les lois. Le chapitre X vient d'établir que les lois empiriques ne permettent pas de prévoir les fluctuations erratiques sur la base de la théorie des probabilités ; « If product is controlled only in this empirical sense, it follows that we cannot obtain the economic advantages discussed in Part I. For this reason it is desirable to attain the state of statistical control in which the natural law of large numbers makes prediction possible. » Le contrôle statistique n'est donc pas un degré de plus dans la régularité : c'est le régime particulier où une loi naturelle, celle des grands nombres, autorise la prévision, et c'est à ce titre seulement que les avantages économiques annoncés en partie I deviennent atteignables. La section 2 en donne la condition, sous forme d'hypothèse déclarée : « We shall assume that the necessary and sufficient condition for statistical control is that the causes of an event satisfy the law of large numbers as do those of a constant system of chance causes. If a cause system is not constant, we shall say that an assignable cause of Type I is present. » Formulée du côté des effets, la condition devient une apparence, et Shewhart insiste sur le mot : il est nécessaire que les différences de qualité entre pièces « appear to be consistent with the assumption that they arose from a constant system of chance causes. We say appear because, as is always the case in trying to find a law controlling a phenomenon, we can never be sure that we have discovered the law. Obviously such appearance is not sufficient in the logical sense although it must be in the practical sense. » Le chapitre se ferme sur une réserve de même farine, page 148 : « The fact that an observed set of values of fraction defective indicates the product to have been controlled up to the present does not prove that we can predict the future course of this phenomenon. We always have to say that this can be done provided the same essential conditions are maintained », et page 149 la constance de l'équilibre statistique une fois atteint n'est créditée que par l'expérience, « subject to the limitation that there is no a priori reason for believing that an assignable cause has entered the production process ». L'état de contrôle statistique est donc chez lui un état constaté et révocable, jamais démontré."
+        },
+        {
+          "id": "SUP-0f7a7ed441a411e3",
+          "origin": "validated",
+          "path": "$.notes[3]",
+          "access": "n/a",
+          "text": "Ce que le résumé ne porte pas. Il reprend la définition générale du contrôle, page 6, qui est celle qu'avait contrôlée le premier tour ; la spécification propre au chapitre XI, à savoir que le contrôle statistique est le régime où c'est la loi naturelle des grands nombres qui rend la prévision possible, là où un contrôle seulement empirique ne le permet pas, est portée par la citation et non par le résumé."
+        }
+      ]
+    },
+    {
+      "claim_id": "C043",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "Le chapitre X a établi que les lois seulement empiriques ne permettent pas de prévoir les fluctuations erratiques sur la base de la théorie des probabilités",
       "supports": [
@@ -731,9 +831,9 @@
       ]
     },
     {
-      "claim_id": "C040",
+      "claim_id": "C044",
       "locator": "sections[3].paragraphs[0]",
-      "claim_text": "et le chapitre XI en tire la conséquence économique : « If product is controlled only in this empirical sense, it follows that we cannot obtain the economic advantages discussed in Part I. »",
+      "claim_text": "le chapitre XI en tire la conséquence économique : « If product is controlled only in this empirical sense, it follows that we cannot obtain the economic advantages discussed in Part I. »",
       "supports": [
         {
           "id": "SUP-dfed24769b5068aa",
@@ -745,9 +845,9 @@
       ]
     },
     {
-      "claim_id": "C041",
+      "claim_id": "C045",
       "locator": "sections[3].paragraphs[0]",
-      "claim_text": "Maîtrisé en ce seul sens, un produit ne donne pas les avantages de la partie I, ceux-là mêmes que la page 34 énumérait.",
+      "claim_text": "Maîtrisé en ce seul sens, un produit ne donne pas les avantages économiques dont la partie I a traité.",
       "supports": [
         {
           "id": "SUP-dfed24769b5068aa",
@@ -757,16 +857,16 @@
           "text": "Le chapitre XI, « Statistical Control », est le lieu où Shewhart passe de la notion générale de contrôle, posée en partie I, à sa forme statistique nommée. Sa section 1, « Conditions for Control », part d'une exigence maximale : s'il existe un ordre causal dans les phénomènes, alors, pour qui aurait une connaissance parfaite, tout est prévisible et donc contrôlé ; mais « for practical purposes the quality of product is controlled only to the extent that we know the laws that make prediction possible », et « For one to be able to say that a phenomenon is controlled, it is necessary and sufficient that he know the laws which make prediction possible ». Vient alors l'aveu inductif qui est le nerf du chapitre : dans la pratique on part d'un ensemble observé de données et l'on essaie d'en décider ; « we perhaps never can say that the behavior of a phenomenon in the past is sufficient to prove that the phenomenon is controlled by a given set of known laws. All that we can ever say is that experience has shown that such behavior appears to be sufficient. » De là le partage entre les lois. Le chapitre X vient d'établir que les lois empiriques ne permettent pas de prévoir les fluctuations erratiques sur la base de la théorie des probabilités ; « If product is controlled only in this empirical sense, it follows that we cannot obtain the economic advantages discussed in Part I. For this reason it is desirable to attain the state of statistical control in which the natural law of large numbers makes prediction possible. » Le contrôle statistique n'est donc pas un degré de plus dans la régularité : c'est le régime particulier où une loi naturelle, celle des grands nombres, autorise la prévision, et c'est à ce titre seulement que les avantages économiques annoncés en partie I deviennent atteignables. La section 2 en donne la condition, sous forme d'hypothèse déclarée : « We shall assume that the necessary and sufficient condition for statistical control is that the causes of an event satisfy the law of large numbers as do those of a constant system of chance causes. If a cause system is not constant, we shall say that an assignable cause of Type I is present. » Formulée du côté des effets, la condition devient une apparence, et Shewhart insiste sur le mot : il est nécessaire que les différences de qualité entre pièces « appear to be consistent with the assumption that they arose from a constant system of chance causes. We say appear because, as is always the case in trying to find a law controlling a phenomenon, we can never be sure that we have discovered the law. Obviously such appearance is not sufficient in the logical sense although it must be in the practical sense. » Le chapitre se ferme sur une réserve de même farine, page 148 : « The fact that an observed set of values of fraction defective indicates the product to have been controlled up to the present does not prove that we can predict the future course of this phenomenon. We always have to say that this can be done provided the same essential conditions are maintained », et page 149 la constance de l'équilibre statistique une fois atteint n'est créditée que par l'expérience, « subject to the limitation that there is no a priori reason for believing that an assignable cause has entered the production process ». L'état de contrôle statistique est donc chez lui un état constaté et révocable, jamais démontré."
         },
         {
-          "id": "SUP-2c2fd7da17a7f897",
+          "id": "SUP-0f7a7ed441a411e3",
           "origin": "validated",
-          "path": "$.notes[15]",
+          "path": "$.notes[3]",
           "access": "n/a",
-          "text": "Matériau non porté sur la carte : la page 34 énumère cinq avantages de l'état de contrôle, tous de gestion, et la page 149 lie la constance de l'équilibre statistique à l'absence de raison a priori de croire qu'une cause assignable est entrée dans le procédé. Ni l'un ni l'autre n'est affirmé ici."
+          "text": "Ce que le résumé ne porte pas. Il reprend la définition générale du contrôle, page 6, qui est celle qu'avait contrôlée le premier tour ; la spécification propre au chapitre XI, à savoir que le contrôle statistique est le régime où c'est la loi naturelle des grands nombres qui rend la prévision possible, là où un contrôle seulement empirique ne le permet pas, est portée par la citation et non par le résumé."
         }
       ]
     },
     {
-      "claim_id": "C042",
+      "claim_id": "C046",
       "locator": "sections[3].paragraphs[1]",
       "claim_text": "La phrase qui suit tire la conclusion",
       "supports": [
@@ -776,13 +876,20 @@
           "path": "$.definition_de_lauteur",
           "access": "n/a",
           "text": "Le chapitre XI, « Statistical Control », est le lieu où Shewhart passe de la notion générale de contrôle, posée en partie I, à sa forme statistique nommée. Sa section 1, « Conditions for Control », part d'une exigence maximale : s'il existe un ordre causal dans les phénomènes, alors, pour qui aurait une connaissance parfaite, tout est prévisible et donc contrôlé ; mais « for practical purposes the quality of product is controlled only to the extent that we know the laws that make prediction possible », et « For one to be able to say that a phenomenon is controlled, it is necessary and sufficient that he know the laws which make prediction possible ». Vient alors l'aveu inductif qui est le nerf du chapitre : dans la pratique on part d'un ensemble observé de données et l'on essaie d'en décider ; « we perhaps never can say that the behavior of a phenomenon in the past is sufficient to prove that the phenomenon is controlled by a given set of known laws. All that we can ever say is that experience has shown that such behavior appears to be sufficient. » De là le partage entre les lois. Le chapitre X vient d'établir que les lois empiriques ne permettent pas de prévoir les fluctuations erratiques sur la base de la théorie des probabilités ; « If product is controlled only in this empirical sense, it follows that we cannot obtain the economic advantages discussed in Part I. For this reason it is desirable to attain the state of statistical control in which the natural law of large numbers makes prediction possible. » Le contrôle statistique n'est donc pas un degré de plus dans la régularité : c'est le régime particulier où une loi naturelle, celle des grands nombres, autorise la prévision, et c'est à ce titre seulement que les avantages économiques annoncés en partie I deviennent atteignables. La section 2 en donne la condition, sous forme d'hypothèse déclarée : « We shall assume that the necessary and sufficient condition for statistical control is that the causes of an event satisfy the law of large numbers as do those of a constant system of chance causes. If a cause system is not constant, we shall say that an assignable cause of Type I is present. » Formulée du côté des effets, la condition devient une apparence, et Shewhart insiste sur le mot : il est nécessaire que les différences de qualité entre pièces « appear to be consistent with the assumption that they arose from a constant system of chance causes. We say appear because, as is always the case in trying to find a law controlling a phenomenon, we can never be sure that we have discovered the law. Obviously such appearance is not sufficient in the logical sense although it must be in the practical sense. » Le chapitre se ferme sur une réserve de même farine, page 148 : « The fact that an observed set of values of fraction defective indicates the product to have been controlled up to the present does not prove that we can predict the future course of this phenomenon. We always have to say that this can be done provided the same essential conditions are maintained », et page 149 la constance de l'équilibre statistique une fois atteint n'est créditée que par l'expérience, « subject to the limitation that there is no a priori reason for believing that an assignable cause has entered the production process ». L'état de contrôle statistique est donc chez lui un état constaté et révocable, jamais démontré."
+        },
+        {
+          "id": "SUP-a86f504c4c3ae3a8",
+          "origin": "validated",
+          "path": "$.review.notes[1]",
+          "access": "n/a",
+          "text": "CITATION — la phrase lue sur l'image, mot à mot : « For this reason it is desirable to attain the state of statistical control in which the natural law of large numbers makes prediction possible. » Elle est identique au champ original_text de la fiche, sans coupe ni ajout. Elle clôt le premier paragraphe de la page ; le titre de section « 2. Necessary and Sufficient Conditions for Statistical Control » suit immédiatement, ce qui confirme qu'elle appartient encore au § 1."
         }
       ]
     },
     {
-      "claim_id": "C043",
+      "claim_id": "C047",
       "locator": "sections[3].paragraphs[1]",
-      "claim_text": "et c’est là que Shewhart imprime le syntagme, sans en créditer personne",
+      "claim_text": "c’est là que Shewhart imprime le syntagme, sans en créditer personne",
       "supports": [
         {
           "id": "SUP-e2b8cf78a2de88ac",
@@ -804,25 +911,11 @@
           "path": "$.review.notes[4]",
           "access": "n/a",
           "text": "ATTRIBUTION — l'ouvrage est signé du seul W. A. Shewhart (page de titre : « By W. A. SHEWHART, Ph.D., Member of the Technical Staff, Bell Telephone Laboratories, Inc. »). La préface (feuillet n5) remercie T. C. Fry, E. C. Molina et H. F. Dodge pour des critiques et pour l'aide au traitement des données, sans leur attribuer aucune notion. Le syntagme « the state of statistical control » est imprimé par Shewhart p. 146 sans renvoi ni crédit. Aucun antécédent d'auteur tiers ne m'est apparu : dans son propre article antérieur de 1930 (Bell System Technical Journal), le texte parle de « state of control » et d'« objective state of control », la forme « state of statistical control » apparaissant avec le chapitre XI du livre. La paternité relève donc bien de Shewhart, et pas seulement une association."
-        },
-        {
-          "id": "SUP-8c37db176ec61adb",
-          "origin": "validated",
-          "path": "$.quotation.locator",
-          "access": "n/a",
-          "text": "p. 146, ch. XI, § 1"
-        },
-        {
-          "id": "SUP-0c7d6224e561a28c",
-          "origin": "evidence:lecture.json",
-          "path": "$.quotation.reference",
-          "access": "n/a",
-          "text": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931, partie III « Basis for Specification of Quality Control », chapitre XI « Statistical Control », section 1 « Conditions for Control »"
         }
       ]
     },
     {
-      "claim_id": "C044",
+      "claim_id": "C048",
       "locator": "sections[3].paragraphs[1]",
       "claim_text": "« For this reason it is desirable to attain the state of statistical control in which the natural law of large numbers makes prediction possible. »",
       "supports": [
@@ -841,16 +934,16 @@
           "text": "CITATION — la phrase lue sur l'image, mot à mot : « For this reason it is desirable to attain the state of statistical control in which the natural law of large numbers makes prediction possible. » Elle est identique au champ original_text de la fiche, sans coupe ni ajout. Elle clôt le premier paragraphe de la page ; le titre de section « 2. Necessary and Sufficient Conditions for Statistical Control » suit immédiatement, ce qui confirme qu'elle appartient encore au § 1."
         },
         {
-          "id": "SUP-dfed24769b5068aa",
+          "id": "SUP-18434c5bd172c224",
           "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
+          "path": "$.quotation.original_text",
           "access": "n/a",
-          "text": "Le chapitre XI, « Statistical Control », est le lieu où Shewhart passe de la notion générale de contrôle, posée en partie I, à sa forme statistique nommée. Sa section 1, « Conditions for Control », part d'une exigence maximale : s'il existe un ordre causal dans les phénomènes, alors, pour qui aurait une connaissance parfaite, tout est prévisible et donc contrôlé ; mais « for practical purposes the quality of product is controlled only to the extent that we know the laws that make prediction possible », et « For one to be able to say that a phenomenon is controlled, it is necessary and sufficient that he know the laws which make prediction possible ». Vient alors l'aveu inductif qui est le nerf du chapitre : dans la pratique on part d'un ensemble observé de données et l'on essaie d'en décider ; « we perhaps never can say that the behavior of a phenomenon in the past is sufficient to prove that the phenomenon is controlled by a given set of known laws. All that we can ever say is that experience has shown that such behavior appears to be sufficient. » De là le partage entre les lois. Le chapitre X vient d'établir que les lois empiriques ne permettent pas de prévoir les fluctuations erratiques sur la base de la théorie des probabilités ; « If product is controlled only in this empirical sense, it follows that we cannot obtain the economic advantages discussed in Part I. For this reason it is desirable to attain the state of statistical control in which the natural law of large numbers makes prediction possible. » Le contrôle statistique n'est donc pas un degré de plus dans la régularité : c'est le régime particulier où une loi naturelle, celle des grands nombres, autorise la prévision, et c'est à ce titre seulement que les avantages économiques annoncés en partie I deviennent atteignables. La section 2 en donne la condition, sous forme d'hypothèse déclarée : « We shall assume that the necessary and sufficient condition for statistical control is that the causes of an event satisfy the law of large numbers as do those of a constant system of chance causes. If a cause system is not constant, we shall say that an assignable cause of Type I is present. » Formulée du côté des effets, la condition devient une apparence, et Shewhart insiste sur le mot : il est nécessaire que les différences de qualité entre pièces « appear to be consistent with the assumption that they arose from a constant system of chance causes. We say appear because, as is always the case in trying to find a law controlling a phenomenon, we can never be sure that we have discovered the law. Obviously such appearance is not sufficient in the logical sense although it must be in the practical sense. » Le chapitre se ferme sur une réserve de même farine, page 148 : « The fact that an observed set of values of fraction defective indicates the product to have been controlled up to the present does not prove that we can predict the future course of this phenomenon. We always have to say that this can be done provided the same essential conditions are maintained », et page 149 la constance de l'équilibre statistique une fois atteint n'est créditée que par l'expérience, « subject to the limitation that there is no a priori reason for believing that an assignable cause has entered the production process ». L'état de contrôle statistique est donc chez lui un état constaté et révocable, jamais démontré."
+          "text": "For this reason it is desirable to attain the state of statistical control in which the natural law of large numbers makes prediction possible."
         }
       ]
     },
     {
-      "claim_id": "C045",
+      "claim_id": "C049",
       "locator": "sections[3].paragraphs[1]",
       "claim_text": "C’est pourquoi il est souhaitable d’atteindre l’état de maîtrise statistique où la loi naturelle des grands nombres rend la prévision possible.",
       "supports": [
@@ -860,11 +953,18 @@
           "path": "$.quotation.text",
           "access": "n/a",
           "text": "C'est pourquoi il est souhaitable d'atteindre l'état de maîtrise statistique où la loi naturelle des grands nombres rend la prévision possible."
+        },
+        {
+          "id": "SUP-c92cd7071441ec07",
+          "origin": "validated",
+          "path": "$.review.notes[3]",
+          "access": "n/a",
+          "text": "TRADUCTION — contrôlée contre l'original anglais, membre à membre. « For this reason » / « C'est pourquoi » ; « it is desirable to attain » / « il est souhaitable d'atteindre » ; « the natural law of large numbers makes prediction possible » / « la loi naturelle des grands nombres rend la prévision possible ». Les deux écarts sont déclarés dans la fiche et aucun ne renverse le sens : « in which » rendu par « où » (relatif de lieu sur un état, usage courant), et « control » rendu par « maîtrise » (« maîtrise statistique » est le rendu français reçu de statistical control). La traduction est déclarée comme interne et non publiée ; je n'ai identifié moi-même aucune traduction française publiée de l'ouvrage de 1931."
         }
       ]
     },
     {
-      "claim_id": "C046",
+      "claim_id": "C050",
       "locator": "sections[3].paragraphs[1]",
       "claim_text": "Cet état n’est donc pas un degré de plus dans la régularité : c’est le régime où une loi naturelle autorise la prévision, et c’est à ce titre que les avantages annoncés redeviennent atteignables.",
       "supports": [
@@ -874,11 +974,18 @@
           "path": "$.definition_de_lauteur",
           "access": "n/a",
           "text": "Le chapitre XI, « Statistical Control », est le lieu où Shewhart passe de la notion générale de contrôle, posée en partie I, à sa forme statistique nommée. Sa section 1, « Conditions for Control », part d'une exigence maximale : s'il existe un ordre causal dans les phénomènes, alors, pour qui aurait une connaissance parfaite, tout est prévisible et donc contrôlé ; mais « for practical purposes the quality of product is controlled only to the extent that we know the laws that make prediction possible », et « For one to be able to say that a phenomenon is controlled, it is necessary and sufficient that he know the laws which make prediction possible ». Vient alors l'aveu inductif qui est le nerf du chapitre : dans la pratique on part d'un ensemble observé de données et l'on essaie d'en décider ; « we perhaps never can say that the behavior of a phenomenon in the past is sufficient to prove that the phenomenon is controlled by a given set of known laws. All that we can ever say is that experience has shown that such behavior appears to be sufficient. » De là le partage entre les lois. Le chapitre X vient d'établir que les lois empiriques ne permettent pas de prévoir les fluctuations erratiques sur la base de la théorie des probabilités ; « If product is controlled only in this empirical sense, it follows that we cannot obtain the economic advantages discussed in Part I. For this reason it is desirable to attain the state of statistical control in which the natural law of large numbers makes prediction possible. » Le contrôle statistique n'est donc pas un degré de plus dans la régularité : c'est le régime particulier où une loi naturelle, celle des grands nombres, autorise la prévision, et c'est à ce titre seulement que les avantages économiques annoncés en partie I deviennent atteignables. La section 2 en donne la condition, sous forme d'hypothèse déclarée : « We shall assume that the necessary and sufficient condition for statistical control is that the causes of an event satisfy the law of large numbers as do those of a constant system of chance causes. If a cause system is not constant, we shall say that an assignable cause of Type I is present. » Formulée du côté des effets, la condition devient une apparence, et Shewhart insiste sur le mot : il est nécessaire que les différences de qualité entre pièces « appear to be consistent with the assumption that they arose from a constant system of chance causes. We say appear because, as is always the case in trying to find a law controlling a phenomenon, we can never be sure that we have discovered the law. Obviously such appearance is not sufficient in the logical sense although it must be in the practical sense. » Le chapitre se ferme sur une réserve de même farine, page 148 : « The fact that an observed set of values of fraction defective indicates the product to have been controlled up to the present does not prove that we can predict the future course of this phenomenon. We always have to say that this can be done provided the same essential conditions are maintained », et page 149 la constance de l'équilibre statistique une fois atteint n'est créditée que par l'expérience, « subject to the limitation that there is no a priori reason for believing that an assignable cause has entered the production process ». L'état de contrôle statistique est donc chez lui un état constaté et révocable, jamais démontré."
+        },
+        {
+          "id": "SUP-0f7a7ed441a411e3",
+          "origin": "validated",
+          "path": "$.notes[3]",
+          "access": "n/a",
+          "text": "Ce que le résumé ne porte pas. Il reprend la définition générale du contrôle, page 6, qui est celle qu'avait contrôlée le premier tour ; la spécification propre au chapitre XI, à savoir que le contrôle statistique est le régime où c'est la loi naturelle des grands nombres qui rend la prévision possible, là où un contrôle seulement empirique ne le permet pas, est portée par la citation et non par le résumé."
         }
       ]
     },
     {
-      "claim_id": "C047",
+      "claim_id": "C051",
       "locator": "sections[3].paragraphs[2]",
       "claim_text": "La condition vient au début de la section suivante",
       "supports": [
@@ -890,23 +997,23 @@
           "text": "Le chapitre XI, « Statistical Control », est le lieu où Shewhart passe de la notion générale de contrôle, posée en partie I, à sa forme statistique nommée. Sa section 1, « Conditions for Control », part d'une exigence maximale : s'il existe un ordre causal dans les phénomènes, alors, pour qui aurait une connaissance parfaite, tout est prévisible et donc contrôlé ; mais « for practical purposes the quality of product is controlled only to the extent that we know the laws that make prediction possible », et « For one to be able to say that a phenomenon is controlled, it is necessary and sufficient that he know the laws which make prediction possible ». Vient alors l'aveu inductif qui est le nerf du chapitre : dans la pratique on part d'un ensemble observé de données et l'on essaie d'en décider ; « we perhaps never can say that the behavior of a phenomenon in the past is sufficient to prove that the phenomenon is controlled by a given set of known laws. All that we can ever say is that experience has shown that such behavior appears to be sufficient. » De là le partage entre les lois. Le chapitre X vient d'établir que les lois empiriques ne permettent pas de prévoir les fluctuations erratiques sur la base de la théorie des probabilités ; « If product is controlled only in this empirical sense, it follows that we cannot obtain the economic advantages discussed in Part I. For this reason it is desirable to attain the state of statistical control in which the natural law of large numbers makes prediction possible. » Le contrôle statistique n'est donc pas un degré de plus dans la régularité : c'est le régime particulier où une loi naturelle, celle des grands nombres, autorise la prévision, et c'est à ce titre seulement que les avantages économiques annoncés en partie I deviennent atteignables. La section 2 en donne la condition, sous forme d'hypothèse déclarée : « We shall assume that the necessary and sufficient condition for statistical control is that the causes of an event satisfy the law of large numbers as do those of a constant system of chance causes. If a cause system is not constant, we shall say that an assignable cause of Type I is present. » Formulée du côté des effets, la condition devient une apparence, et Shewhart insiste sur le mot : il est nécessaire que les différences de qualité entre pièces « appear to be consistent with the assumption that they arose from a constant system of chance causes. We say appear because, as is always the case in trying to find a law controlling a phenomenon, we can never be sure that we have discovered the law. Obviously such appearance is not sufficient in the logical sense although it must be in the practical sense. » Le chapitre se ferme sur une réserve de même farine, page 148 : « The fact that an observed set of values of fraction defective indicates the product to have been controlled up to the present does not prove that we can predict the future course of this phenomenon. We always have to say that this can be done provided the same essential conditions are maintained », et page 149 la constance de l'équilibre statistique une fois atteint n'est créditée que par l'expérience, « subject to the limitation that there is no a priori reason for believing that an assignable cause has entered the production process ». L'état de contrôle statistique est donc chez lui un état constaté et révocable, jamais démontré."
         },
         {
-          "id": "SUP-a86f504c4c3ae3a8",
-          "origin": "validated",
-          "path": "$.review.notes[1]",
-          "access": "n/a",
-          "text": "CITATION — la phrase lue sur l'image, mot à mot : « For this reason it is desirable to attain the state of statistical control in which the natural law of large numbers makes prediction possible. » Elle est identique au champ original_text de la fiche, sans coupe ni ajout. Elle clôt le premier paragraphe de la page ; le titre de section « 2. Necessary and Sufficient Conditions for Statistical Control » suit immédiatement, ce qui confirme qu'elle appartient encore au § 1."
-        },
-        {
           "id": "SUP-92984401c146806e",
           "origin": "validated",
           "path": "$.notes[4]",
           "access": "n/a",
           "text": "Citation écartée, et c'est la plus tentante du chapitre : « We shall assume that the necessary and sufficient condition for statistical control is that the causes of an event satisfy the law of large numbers as do those of a constant system of chance causes » (p. 146, § 2). Elle donne la condition, mais elle fait 191 caractères en anglais et davantage en français, et la seule coupe qui la ramène sous le plafond supprime « We shall assume that », c'est-à-dire le statut d'hypothèse que Shewhart donne lui-même à sa condition. La citer amputée la transformerait en théorème."
+        },
+        {
+          "id": "SUP-a86f504c4c3ae3a8",
+          "origin": "validated",
+          "path": "$.review.notes[1]",
+          "access": "n/a",
+          "text": "CITATION — la phrase lue sur l'image, mot à mot : « For this reason it is desirable to attain the state of statistical control in which the natural law of large numbers makes prediction possible. » Elle est identique au champ original_text de la fiche, sans coupe ni ajout. Elle clôt le premier paragraphe de la page ; le titre de section « 2. Necessary and Sufficient Conditions for Statistical Control » suit immédiatement, ce qui confirme qu'elle appartient encore au § 1."
         }
       ]
     },
     {
-      "claim_id": "C048",
+      "claim_id": "C052",
       "locator": "sections[3].paragraphs[2]",
       "claim_text": "« We shall assume that the necessary and sufficient condition for statistical control is that the causes of an event satisfy the law of large numbers as do those of a constant system of chance causes. »",
       "supports": [
@@ -934,9 +1041,9 @@
       ]
     },
     {
-      "claim_id": "C049",
+      "claim_id": "C053",
       "locator": "sections[3].paragraphs[2]",
-      "claim_text": "Nous supposerons que : la condition nécessaire et suffisante est posée comme une hypothèse de travail, et, privée de son entrée, la phrase deviendrait un théorème que le livre ne démontre pas.",
+      "claim_text": "Les quatre premiers mots ne sont pas une politesse. Nous supposerons que : la condition nécessaire et suffisante est posée comme une hypothèse de travail",
       "supports": [
         {
           "id": "SUP-92984401c146806e",
@@ -955,15 +1062,9 @@
       ]
     },
     {
-      "claim_id": "C050",
+      "claim_id": "C054",
       "locator": "sections[3].paragraphs[2]",
-      "claim_text": "La loi des grands nombres n’y est pas exposée, elle sert d’étalon",
-      "supports": []
-    },
-    {
-      "claim_id": "C051",
-      "locator": "sections[3].paragraphs[2]",
-      "claim_text": "les causes doivent y satisfaire comme le font celles d’un système constant de causes de hasard.",
+      "claim_text": "privée de son entrée, la phrase deviendrait un théorème que le livre ne démontre pas",
       "supports": [
         {
           "id": "SUP-92984401c146806e",
@@ -982,7 +1083,28 @@
       ]
     },
     {
-      "claim_id": "C052",
+      "claim_id": "C055",
+      "locator": "sections[3].paragraphs[2]",
+      "claim_text": "Ce qu’elle demande est que les causes satisfassent à la loi des grands nombres comme le font celles d’un système constant de causes de hasard.",
+      "supports": [
+        {
+          "id": "SUP-92984401c146806e",
+          "origin": "validated",
+          "path": "$.notes[4]",
+          "access": "n/a",
+          "text": "Citation écartée, et c'est la plus tentante du chapitre : « We shall assume that the necessary and sufficient condition for statistical control is that the causes of an event satisfy the law of large numbers as do those of a constant system of chance causes » (p. 146, § 2). Elle donne la condition, mais elle fait 191 caractères en anglais et davantage en français, et la seule coupe qui la ramène sous le plafond supprime « We shall assume that », c'est-à-dire le statut d'hypothèse que Shewhart donne lui-même à sa condition. La citer amputée la transformerait en théorème."
+        },
+        {
+          "id": "SUP-dfed24769b5068aa",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Le chapitre XI, « Statistical Control », est le lieu où Shewhart passe de la notion générale de contrôle, posée en partie I, à sa forme statistique nommée. Sa section 1, « Conditions for Control », part d'une exigence maximale : s'il existe un ordre causal dans les phénomènes, alors, pour qui aurait une connaissance parfaite, tout est prévisible et donc contrôlé ; mais « for practical purposes the quality of product is controlled only to the extent that we know the laws that make prediction possible », et « For one to be able to say that a phenomenon is controlled, it is necessary and sufficient that he know the laws which make prediction possible ». Vient alors l'aveu inductif qui est le nerf du chapitre : dans la pratique on part d'un ensemble observé de données et l'on essaie d'en décider ; « we perhaps never can say that the behavior of a phenomenon in the past is sufficient to prove that the phenomenon is controlled by a given set of known laws. All that we can ever say is that experience has shown that such behavior appears to be sufficient. » De là le partage entre les lois. Le chapitre X vient d'établir que les lois empiriques ne permettent pas de prévoir les fluctuations erratiques sur la base de la théorie des probabilités ; « If product is controlled only in this empirical sense, it follows that we cannot obtain the economic advantages discussed in Part I. For this reason it is desirable to attain the state of statistical control in which the natural law of large numbers makes prediction possible. » Le contrôle statistique n'est donc pas un degré de plus dans la régularité : c'est le régime particulier où une loi naturelle, celle des grands nombres, autorise la prévision, et c'est à ce titre seulement que les avantages économiques annoncés en partie I deviennent atteignables. La section 2 en donne la condition, sous forme d'hypothèse déclarée : « We shall assume that the necessary and sufficient condition for statistical control is that the causes of an event satisfy the law of large numbers as do those of a constant system of chance causes. If a cause system is not constant, we shall say that an assignable cause of Type I is present. » Formulée du côté des effets, la condition devient une apparence, et Shewhart insiste sur le mot : il est nécessaire que les différences de qualité entre pièces « appear to be consistent with the assumption that they arose from a constant system of chance causes. We say appear because, as is always the case in trying to find a law controlling a phenomenon, we can never be sure that we have discovered the law. Obviously such appearance is not sufficient in the logical sense although it must be in the practical sense. » Le chapitre se ferme sur une réserve de même farine, page 148 : « The fact that an observed set of values of fraction defective indicates the product to have been controlled up to the present does not prove that we can predict the future course of this phenomenon. We always have to say that this can be done provided the same essential conditions are maintained », et page 149 la constance de l'équilibre statistique une fois atteint n'est créditée que par l'expérience, « subject to the limitation that there is no a priori reason for believing that an assignable cause has entered the production process ». L'état de contrôle statistique est donc chez lui un état constaté et révocable, jamais démontré."
+        }
+      ]
+    },
+    {
+      "claim_id": "C056",
       "locator": "sections[3].paragraphs[3]",
       "claim_text": "La phrase suivante nomme ce qui rompt la condition : « If a cause system is not constant, we shall say that an assignable cause of Type I is present. »",
       "supports": [
@@ -996,57 +1118,9 @@
       ]
     },
     {
-      "claim_id": "C053",
-      "locator": "sections[3].paragraphs[3]",
-      "claim_text": "Une cause assignable de type I est donc celle dont l’entrée fait cesser la constance du système",
-      "supports": [
-        {
-          "id": "SUP-dfed24769b5068aa",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Le chapitre XI, « Statistical Control », est le lieu où Shewhart passe de la notion générale de contrôle, posée en partie I, à sa forme statistique nommée. Sa section 1, « Conditions for Control », part d'une exigence maximale : s'il existe un ordre causal dans les phénomènes, alors, pour qui aurait une connaissance parfaite, tout est prévisible et donc contrôlé ; mais « for practical purposes the quality of product is controlled only to the extent that we know the laws that make prediction possible », et « For one to be able to say that a phenomenon is controlled, it is necessary and sufficient that he know the laws which make prediction possible ». Vient alors l'aveu inductif qui est le nerf du chapitre : dans la pratique on part d'un ensemble observé de données et l'on essaie d'en décider ; « we perhaps never can say that the behavior of a phenomenon in the past is sufficient to prove that the phenomenon is controlled by a given set of known laws. All that we can ever say is that experience has shown that such behavior appears to be sufficient. » De là le partage entre les lois. Le chapitre X vient d'établir que les lois empiriques ne permettent pas de prévoir les fluctuations erratiques sur la base de la théorie des probabilités ; « If product is controlled only in this empirical sense, it follows that we cannot obtain the economic advantages discussed in Part I. For this reason it is desirable to attain the state of statistical control in which the natural law of large numbers makes prediction possible. » Le contrôle statistique n'est donc pas un degré de plus dans la régularité : c'est le régime particulier où une loi naturelle, celle des grands nombres, autorise la prévision, et c'est à ce titre seulement que les avantages économiques annoncés en partie I deviennent atteignables. La section 2 en donne la condition, sous forme d'hypothèse déclarée : « We shall assume that the necessary and sufficient condition for statistical control is that the causes of an event satisfy the law of large numbers as do those of a constant system of chance causes. If a cause system is not constant, we shall say that an assignable cause of Type I is present. » Formulée du côté des effets, la condition devient une apparence, et Shewhart insiste sur le mot : il est nécessaire que les différences de qualité entre pièces « appear to be consistent with the assumption that they arose from a constant system of chance causes. We say appear because, as is always the case in trying to find a law controlling a phenomenon, we can never be sure that we have discovered the law. Obviously such appearance is not sufficient in the logical sense although it must be in the practical sense. » Le chapitre se ferme sur une réserve de même farine, page 148 : « The fact that an observed set of values of fraction defective indicates the product to have been controlled up to the present does not prove that we can predict the future course of this phenomenon. We always have to say that this can be done provided the same essential conditions are maintained », et page 149 la constance de l'équilibre statistique une fois atteint n'est créditée que par l'expérience, « subject to the limitation that there is no a priori reason for believing that an assignable cause has entered the production process ». L'état de contrôle statistique est donc chez lui un état constaté et révocable, jamais démontré."
-        }
-      ]
-    },
-    {
-      "claim_id": "C054",
-      "locator": "sections[3].paragraphs[3]",
-      "claim_text": "son nom dit ce qu’elle a de particulier : on peut l’assigner, c’est-à-dire la désigner",
-      "supports": []
-    },
-    {
-      "claim_id": "C055",
-      "locator": "sections[4].paragraphs[0]",
-      "claim_text": "Ce qui se constate, répond Shewhart, n’est pas la constance du système mais son apparence",
-      "supports": [
-        {
-          "id": "SUP-dfed24769b5068aa",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Le chapitre XI, « Statistical Control », est le lieu où Shewhart passe de la notion générale de contrôle, posée en partie I, à sa forme statistique nommée. Sa section 1, « Conditions for Control », part d'une exigence maximale : s'il existe un ordre causal dans les phénomènes, alors, pour qui aurait une connaissance parfaite, tout est prévisible et donc contrôlé ; mais « for practical purposes the quality of product is controlled only to the extent that we know the laws that make prediction possible », et « For one to be able to say that a phenomenon is controlled, it is necessary and sufficient that he know the laws which make prediction possible ». Vient alors l'aveu inductif qui est le nerf du chapitre : dans la pratique on part d'un ensemble observé de données et l'on essaie d'en décider ; « we perhaps never can say that the behavior of a phenomenon in the past is sufficient to prove that the phenomenon is controlled by a given set of known laws. All that we can ever say is that experience has shown that such behavior appears to be sufficient. » De là le partage entre les lois. Le chapitre X vient d'établir que les lois empiriques ne permettent pas de prévoir les fluctuations erratiques sur la base de la théorie des probabilités ; « If product is controlled only in this empirical sense, it follows that we cannot obtain the economic advantages discussed in Part I. For this reason it is desirable to attain the state of statistical control in which the natural law of large numbers makes prediction possible. » Le contrôle statistique n'est donc pas un degré de plus dans la régularité : c'est le régime particulier où une loi naturelle, celle des grands nombres, autorise la prévision, et c'est à ce titre seulement que les avantages économiques annoncés en partie I deviennent atteignables. La section 2 en donne la condition, sous forme d'hypothèse déclarée : « We shall assume that the necessary and sufficient condition for statistical control is that the causes of an event satisfy the law of large numbers as do those of a constant system of chance causes. If a cause system is not constant, we shall say that an assignable cause of Type I is present. » Formulée du côté des effets, la condition devient une apparence, et Shewhart insiste sur le mot : il est nécessaire que les différences de qualité entre pièces « appear to be consistent with the assumption that they arose from a constant system of chance causes. We say appear because, as is always the case in trying to find a law controlling a phenomenon, we can never be sure that we have discovered the law. Obviously such appearance is not sufficient in the logical sense although it must be in the practical sense. » Le chapitre se ferme sur une réserve de même farine, page 148 : « The fact that an observed set of values of fraction defective indicates the product to have been controlled up to the present does not prove that we can predict the future course of this phenomenon. We always have to say that this can be done provided the same essential conditions are maintained », et page 149 la constance de l'équilibre statistique une fois atteint n'est créditée que par l'expérience, « subject to the limitation that there is no a priori reason for believing that an assignable cause has entered the production process ». L'état de contrôle statistique est donc chez lui un état constaté et révocable, jamais démontré."
-        }
-      ]
-    },
-    {
-      "claim_id": "C056",
-      "locator": "sections[4].paragraphs[0]",
-      "claim_text": "il faut que les différences entre pièces « appear to be consistent with the assumption that they arose from a constant system of chance causes »",
-      "supports": [
-        {
-          "id": "SUP-dfed24769b5068aa",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Le chapitre XI, « Statistical Control », est le lieu où Shewhart passe de la notion générale de contrôle, posée en partie I, à sa forme statistique nommée. Sa section 1, « Conditions for Control », part d'une exigence maximale : s'il existe un ordre causal dans les phénomènes, alors, pour qui aurait une connaissance parfaite, tout est prévisible et donc contrôlé ; mais « for practical purposes the quality of product is controlled only to the extent that we know the laws that make prediction possible », et « For one to be able to say that a phenomenon is controlled, it is necessary and sufficient that he know the laws which make prediction possible ». Vient alors l'aveu inductif qui est le nerf du chapitre : dans la pratique on part d'un ensemble observé de données et l'on essaie d'en décider ; « we perhaps never can say that the behavior of a phenomenon in the past is sufficient to prove that the phenomenon is controlled by a given set of known laws. All that we can ever say is that experience has shown that such behavior appears to be sufficient. » De là le partage entre les lois. Le chapitre X vient d'établir que les lois empiriques ne permettent pas de prévoir les fluctuations erratiques sur la base de la théorie des probabilités ; « If product is controlled only in this empirical sense, it follows that we cannot obtain the economic advantages discussed in Part I. For this reason it is desirable to attain the state of statistical control in which the natural law of large numbers makes prediction possible. » Le contrôle statistique n'est donc pas un degré de plus dans la régularité : c'est le régime particulier où une loi naturelle, celle des grands nombres, autorise la prévision, et c'est à ce titre seulement que les avantages économiques annoncés en partie I deviennent atteignables. La section 2 en donne la condition, sous forme d'hypothèse déclarée : « We shall assume that the necessary and sufficient condition for statistical control is that the causes of an event satisfy the law of large numbers as do those of a constant system of chance causes. If a cause system is not constant, we shall say that an assignable cause of Type I is present. » Formulée du côté des effets, la condition devient une apparence, et Shewhart insiste sur le mot : il est nécessaire que les différences de qualité entre pièces « appear to be consistent with the assumption that they arose from a constant system of chance causes. We say appear because, as is always the case in trying to find a law controlling a phenomenon, we can never be sure that we have discovered the law. Obviously such appearance is not sufficient in the logical sense although it must be in the practical sense. » Le chapitre se ferme sur une réserve de même farine, page 148 : « The fact that an observed set of values of fraction defective indicates the product to have been controlled up to the present does not prove that we can predict the future course of this phenomenon. We always have to say that this can be done provided the same essential conditions are maintained », et page 149 la constance de l'équilibre statistique une fois atteint n'est créditée que par l'expérience, « subject to the limitation that there is no a priori reason for believing that an assignable cause has entered the production process ». L'état de contrôle statistique est donc chez lui un état constaté et révocable, jamais démontré."
-        }
-      ]
-    },
-    {
       "claim_id": "C057",
-      "locator": "sections[4].paragraphs[0]",
-      "claim_text": "qu’elles paraissent compatibles avec l’hypothèse d’un système constant de causes de hasard",
+      "locator": "sections[3].paragraphs[3]",
+      "claim_text": "Une cause assignable de type I est donc celle dont l’entrée fait cesser la constance du système.",
       "supports": [
         {
           "id": "SUP-dfed24769b5068aa",
@@ -1060,7 +1134,7 @@
     {
       "claim_id": "C058",
       "locator": "sections[4].paragraphs[0]",
-      "claim_text": "Et il s’arrête sur le verbe : nous disons paraissent, « because […] we can never be sure that we have discovered the law », parce qu’on ne peut jamais être sûr d’avoir découvert la loi.",
+      "claim_text": "Ce qui se constate, répond Shewhart, n’est pas la constance du système mais son apparence",
       "supports": [
         {
           "id": "SUP-dfed24769b5068aa",
@@ -1073,6 +1147,41 @@
     },
     {
       "claim_id": "C059",
+      "locator": "sections[4].paragraphs[0]",
+      "claim_text": "il faut que les différences entre pièces « appear to be consistent with the assumption that they arose from a constant system of chance causes », qu’elles paraissent compatibles avec l’hypothèse d’un système constant de causes de hasard",
+      "supports": [
+        {
+          "id": "SUP-dfed24769b5068aa",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Le chapitre XI, « Statistical Control », est le lieu où Shewhart passe de la notion générale de contrôle, posée en partie I, à sa forme statistique nommée. Sa section 1, « Conditions for Control », part d'une exigence maximale : s'il existe un ordre causal dans les phénomènes, alors, pour qui aurait une connaissance parfaite, tout est prévisible et donc contrôlé ; mais « for practical purposes the quality of product is controlled only to the extent that we know the laws that make prediction possible », et « For one to be able to say that a phenomenon is controlled, it is necessary and sufficient that he know the laws which make prediction possible ». Vient alors l'aveu inductif qui est le nerf du chapitre : dans la pratique on part d'un ensemble observé de données et l'on essaie d'en décider ; « we perhaps never can say that the behavior of a phenomenon in the past is sufficient to prove that the phenomenon is controlled by a given set of known laws. All that we can ever say is that experience has shown that such behavior appears to be sufficient. » De là le partage entre les lois. Le chapitre X vient d'établir que les lois empiriques ne permettent pas de prévoir les fluctuations erratiques sur la base de la théorie des probabilités ; « If product is controlled only in this empirical sense, it follows that we cannot obtain the economic advantages discussed in Part I. For this reason it is desirable to attain the state of statistical control in which the natural law of large numbers makes prediction possible. » Le contrôle statistique n'est donc pas un degré de plus dans la régularité : c'est le régime particulier où une loi naturelle, celle des grands nombres, autorise la prévision, et c'est à ce titre seulement que les avantages économiques annoncés en partie I deviennent atteignables. La section 2 en donne la condition, sous forme d'hypothèse déclarée : « We shall assume that the necessary and sufficient condition for statistical control is that the causes of an event satisfy the law of large numbers as do those of a constant system of chance causes. If a cause system is not constant, we shall say that an assignable cause of Type I is present. » Formulée du côté des effets, la condition devient une apparence, et Shewhart insiste sur le mot : il est nécessaire que les différences de qualité entre pièces « appear to be consistent with the assumption that they arose from a constant system of chance causes. We say appear because, as is always the case in trying to find a law controlling a phenomenon, we can never be sure that we have discovered the law. Obviously such appearance is not sufficient in the logical sense although it must be in the practical sense. » Le chapitre se ferme sur une réserve de même farine, page 148 : « The fact that an observed set of values of fraction defective indicates the product to have been controlled up to the present does not prove that we can predict the future course of this phenomenon. We always have to say that this can be done provided the same essential conditions are maintained », et page 149 la constance de l'équilibre statistique une fois atteint n'est créditée que par l'expérience, « subject to the limitation that there is no a priori reason for believing that an assignable cause has entered the production process ». L'état de contrôle statistique est donc chez lui un état constaté et révocable, jamais démontré."
+        }
+      ]
+    },
+    {
+      "claim_id": "C060",
+      "locator": "sections[4].paragraphs[0]",
+      "claim_text": "Et il s’arrête sur le verbe : nous disons paraissent, « because […] we can never be sure that we have discovered the law », parce qu’on ne peut jamais être sûr d’avoir découvert la loi.",
+      "supports": [
+        {
+          "id": "SUP-dfed24769b5068aa",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Le chapitre XI, « Statistical Control », est le lieu où Shewhart passe de la notion générale de contrôle, posée en partie I, à sa forme statistique nommée. Sa section 1, « Conditions for Control », part d'une exigence maximale : s'il existe un ordre causal dans les phénomènes, alors, pour qui aurait une connaissance parfaite, tout est prévisible et donc contrôlé ; mais « for practical purposes the quality of product is controlled only to the extent that we know the laws that make prediction possible », et « For one to be able to say that a phenomenon is controlled, it is necessary and sufficient that he know the laws which make prediction possible ». Vient alors l'aveu inductif qui est le nerf du chapitre : dans la pratique on part d'un ensemble observé de données et l'on essaie d'en décider ; « we perhaps never can say that the behavior of a phenomenon in the past is sufficient to prove that the phenomenon is controlled by a given set of known laws. All that we can ever say is that experience has shown that such behavior appears to be sufficient. » De là le partage entre les lois. Le chapitre X vient d'établir que les lois empiriques ne permettent pas de prévoir les fluctuations erratiques sur la base de la théorie des probabilités ; « If product is controlled only in this empirical sense, it follows that we cannot obtain the economic advantages discussed in Part I. For this reason it is desirable to attain the state of statistical control in which the natural law of large numbers makes prediction possible. » Le contrôle statistique n'est donc pas un degré de plus dans la régularité : c'est le régime particulier où une loi naturelle, celle des grands nombres, autorise la prévision, et c'est à ce titre seulement que les avantages économiques annoncés en partie I deviennent atteignables. La section 2 en donne la condition, sous forme d'hypothèse déclarée : « We shall assume that the necessary and sufficient condition for statistical control is that the causes of an event satisfy the law of large numbers as do those of a constant system of chance causes. If a cause system is not constant, we shall say that an assignable cause of Type I is present. » Formulée du côté des effets, la condition devient une apparence, et Shewhart insiste sur le mot : il est nécessaire que les différences de qualité entre pièces « appear to be consistent with the assumption that they arose from a constant system of chance causes. We say appear because, as is always the case in trying to find a law controlling a phenomenon, we can never be sure that we have discovered the law. Obviously such appearance is not sufficient in the logical sense although it must be in the practical sense. » Le chapitre se ferme sur une réserve de même farine, page 148 : « The fact that an observed set of values of fraction defective indicates the product to have been controlled up to the present does not prove that we can predict the future course of this phenomenon. We always have to say that this can be done provided the same essential conditions are maintained », et page 149 la constance de l'équilibre statistique une fois atteint n'est créditée que par l'expérience, « subject to the limitation that there is no a priori reason for believing that an assignable cause has entered the production process ». L'état de contrôle statistique est donc chez lui un état constaté et révocable, jamais démontré."
+        },
+        {
+          "id": "SUP-ebe69a0b6baabcb5",
+          "origin": "evidence:lecture.json",
+          "path": "$.reserves[4]",
+          "access": "n/a",
+          "text": "Seconde citation écartée : « we can never be sure that we have discovered the law » (p. 146) tient largement sous le plafond mais ne porte pas le concept, seulement sa restriction, et se comprend mal détachée du mot « appear » qu'elle commente."
+        }
+      ]
+    },
+    {
+      "claim_id": "C061",
       "locator": "sections[4].paragraphs[1]",
       "claim_text": "une telle apparence « is not sufficient in the logical sense although it must be in the practical sense », elle ne suffit pas au sens logique, bien qu’elle doive suffire au sens pratique",
       "supports": [
@@ -1086,9 +1195,9 @@
       ]
     },
     {
-      "claim_id": "C060",
+      "claim_id": "C062",
       "locator": "sections[4].paragraphs[1]",
-      "claim_text": "Et la réserve vaut pour le passé entier : « we perhaps never can say that the behavior of a phenomenon in the past is sufficient to prove that the phenomenon is controlled by a given set of known laws »",
+      "claim_text": "la réserve vaut pour le passé entier : « we perhaps never can say that the behavior of a phenomenon in the past is sufficient to prove that the phenomenon is controlled by a given set of known laws »",
       "supports": [
         {
           "id": "SUP-dfed24769b5068aa",
@@ -1107,7 +1216,7 @@
       ]
     },
     {
-      "claim_id": "C061",
+      "claim_id": "C063",
       "locator": "sections[4].paragraphs[1]",
       "claim_text": "Peut-être ne pourrons-nous jamais dire que le comportement passé suffit à prouver qu’un phénomène est maîtrisé par un ensemble donné de lois connues.",
       "supports": [
@@ -1128,7 +1237,7 @@
       ]
     },
     {
-      "claim_id": "C062",
+      "claim_id": "C064",
       "locator": "sections[4].paragraphs[1]",
       "claim_text": "Ce qui reste est plus faible, et c’est assez : l’expérience a montré qu’un tel comportement paraît suffisant.",
       "supports": [
@@ -1142,7 +1251,7 @@
       ]
     },
     {
-      "claim_id": "C063",
+      "claim_id": "C065",
       "locator": "sections[4].paragraphs[2]",
       "claim_text": "Deux réserves achèvent le chapitre.",
       "supports": [
@@ -1156,7 +1265,7 @@
       ]
     },
     {
-      "claim_id": "C064",
+      "claim_id": "C066",
       "locator": "sections[4].paragraphs[2]",
       "claim_text": "La page 148 attache la prévision à une condition, « provided the same essential conditions are maintained », pourvu que les mêmes conditions essentielles soient maintenues",
       "supports": [
@@ -1177,30 +1286,30 @@
       ]
     },
     {
-      "claim_id": "C065",
+      "claim_id": "C067",
       "locator": "sections[4].paragraphs[2]",
       "claim_text": "un procédé maîtrisé hier ne l’est pas par contrat",
       "supports": [
-        {
-          "id": "SUP-dfed24769b5068aa",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Le chapitre XI, « Statistical Control », est le lieu où Shewhart passe de la notion générale de contrôle, posée en partie I, à sa forme statistique nommée. Sa section 1, « Conditions for Control », part d'une exigence maximale : s'il existe un ordre causal dans les phénomènes, alors, pour qui aurait une connaissance parfaite, tout est prévisible et donc contrôlé ; mais « for practical purposes the quality of product is controlled only to the extent that we know the laws that make prediction possible », et « For one to be able to say that a phenomenon is controlled, it is necessary and sufficient that he know the laws which make prediction possible ». Vient alors l'aveu inductif qui est le nerf du chapitre : dans la pratique on part d'un ensemble observé de données et l'on essaie d'en décider ; « we perhaps never can say that the behavior of a phenomenon in the past is sufficient to prove that the phenomenon is controlled by a given set of known laws. All that we can ever say is that experience has shown that such behavior appears to be sufficient. » De là le partage entre les lois. Le chapitre X vient d'établir que les lois empiriques ne permettent pas de prévoir les fluctuations erratiques sur la base de la théorie des probabilités ; « If product is controlled only in this empirical sense, it follows that we cannot obtain the economic advantages discussed in Part I. For this reason it is desirable to attain the state of statistical control in which the natural law of large numbers makes prediction possible. » Le contrôle statistique n'est donc pas un degré de plus dans la régularité : c'est le régime particulier où une loi naturelle, celle des grands nombres, autorise la prévision, et c'est à ce titre seulement que les avantages économiques annoncés en partie I deviennent atteignables. La section 2 en donne la condition, sous forme d'hypothèse déclarée : « We shall assume that the necessary and sufficient condition for statistical control is that the causes of an event satisfy the law of large numbers as do those of a constant system of chance causes. If a cause system is not constant, we shall say that an assignable cause of Type I is present. » Formulée du côté des effets, la condition devient une apparence, et Shewhart insiste sur le mot : il est nécessaire que les différences de qualité entre pièces « appear to be consistent with the assumption that they arose from a constant system of chance causes. We say appear because, as is always the case in trying to find a law controlling a phenomenon, we can never be sure that we have discovered the law. Obviously such appearance is not sufficient in the logical sense although it must be in the practical sense. » Le chapitre se ferme sur une réserve de même farine, page 148 : « The fact that an observed set of values of fraction defective indicates the product to have been controlled up to the present does not prove that we can predict the future course of this phenomenon. We always have to say that this can be done provided the same essential conditions are maintained », et page 149 la constance de l'équilibre statistique une fois atteint n'est créditée que par l'expérience, « subject to the limitation that there is no a priori reason for believing that an assignable cause has entered the production process ». L'état de contrôle statistique est donc chez lui un état constaté et révocable, jamais démontré."
-        },
         {
           "id": "SUP-7309aedf3990308a",
           "origin": "validated",
           "path": "$.notes[5]",
           "access": "n/a",
           "text": "L'état de contrôle statistique est chez Shewhart un état constaté et révocable, jamais démontré : « we perhaps never can say that the behavior of a phenomenon in the past is sufficient to prove that the phenomenon is controlled », et page 148 le fait qu'un produit ait été maîtrisé jusqu'ici ne prouve pas qu'on puisse en prévoir la suite, « provided the same essential conditions are maintained ». Aucun champ affiché n'affirme davantage."
+        },
+        {
+          "id": "SUP-dfed24769b5068aa",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Le chapitre XI, « Statistical Control », est le lieu où Shewhart passe de la notion générale de contrôle, posée en partie I, à sa forme statistique nommée. Sa section 1, « Conditions for Control », part d'une exigence maximale : s'il existe un ordre causal dans les phénomènes, alors, pour qui aurait une connaissance parfaite, tout est prévisible et donc contrôlé ; mais « for practical purposes the quality of product is controlled only to the extent that we know the laws that make prediction possible », et « For one to be able to say that a phenomenon is controlled, it is necessary and sufficient that he know the laws which make prediction possible ». Vient alors l'aveu inductif qui est le nerf du chapitre : dans la pratique on part d'un ensemble observé de données et l'on essaie d'en décider ; « we perhaps never can say that the behavior of a phenomenon in the past is sufficient to prove that the phenomenon is controlled by a given set of known laws. All that we can ever say is that experience has shown that such behavior appears to be sufficient. » De là le partage entre les lois. Le chapitre X vient d'établir que les lois empiriques ne permettent pas de prévoir les fluctuations erratiques sur la base de la théorie des probabilités ; « If product is controlled only in this empirical sense, it follows that we cannot obtain the economic advantages discussed in Part I. For this reason it is desirable to attain the state of statistical control in which the natural law of large numbers makes prediction possible. » Le contrôle statistique n'est donc pas un degré de plus dans la régularité : c'est le régime particulier où une loi naturelle, celle des grands nombres, autorise la prévision, et c'est à ce titre seulement que les avantages économiques annoncés en partie I deviennent atteignables. La section 2 en donne la condition, sous forme d'hypothèse déclarée : « We shall assume that the necessary and sufficient condition for statistical control is that the causes of an event satisfy the law of large numbers as do those of a constant system of chance causes. If a cause system is not constant, we shall say that an assignable cause of Type I is present. » Formulée du côté des effets, la condition devient une apparence, et Shewhart insiste sur le mot : il est nécessaire que les différences de qualité entre pièces « appear to be consistent with the assumption that they arose from a constant system of chance causes. We say appear because, as is always the case in trying to find a law controlling a phenomenon, we can never be sure that we have discovered the law. Obviously such appearance is not sufficient in the logical sense although it must be in the practical sense. » Le chapitre se ferme sur une réserve de même farine, page 148 : « The fact that an observed set of values of fraction defective indicates the product to have been controlled up to the present does not prove that we can predict the future course of this phenomenon. We always have to say that this can be done provided the same essential conditions are maintained », et page 149 la constance de l'équilibre statistique une fois atteint n'est créditée que par l'expérience, « subject to the limitation that there is no a priori reason for believing that an assignable cause has entered the production process ». L'état de contrôle statistique est donc chez lui un état constaté et révocable, jamais démontré."
         }
       ]
     },
     {
-      "claim_id": "C066",
+      "claim_id": "C068",
       "locator": "sections[4].paragraphs[2]",
-      "claim_text": "Et la page 149 ne crédite la constance de l’équilibre atteint que « subject to the limitation that there is no a priori reason for believing that an assignable cause has entered the production process », tant qu’aucune raison a priori ne porte à croire qu’une cause assignable soit entrée dans le procédé.",
+      "claim_text": "la page 149 ne crédite la constance de l’équilibre atteint que « subject to the limitation that there is no a priori reason for believing that an assignable cause has entered the production process », tant qu’aucune raison a priori ne porte à croire qu’une cause assignable soit entrée dans le procédé",
       "supports": [
         {
           "id": "SUP-dfed24769b5068aa",
@@ -1219,16 +1328,16 @@
       ]
     },
     {
-      "claim_id": "C067",
+      "claim_id": "C069",
       "locator": "sections[4].paragraphs[2]",
       "claim_text": "Ce qui tient l’état, c’est qu’on n’a pas de motif de le croire rompu, et cela peut cesser d’être vrai un matin.",
       "supports": [
         {
-          "id": "SUP-dfed24769b5068aa",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
+          "id": "SUP-2c2fd7da17a7f897",
+          "origin": "validated",
+          "path": "$.notes[15]",
           "access": "n/a",
-          "text": "Le chapitre XI, « Statistical Control », est le lieu où Shewhart passe de la notion générale de contrôle, posée en partie I, à sa forme statistique nommée. Sa section 1, « Conditions for Control », part d'une exigence maximale : s'il existe un ordre causal dans les phénomènes, alors, pour qui aurait une connaissance parfaite, tout est prévisible et donc contrôlé ; mais « for practical purposes the quality of product is controlled only to the extent that we know the laws that make prediction possible », et « For one to be able to say that a phenomenon is controlled, it is necessary and sufficient that he know the laws which make prediction possible ». Vient alors l'aveu inductif qui est le nerf du chapitre : dans la pratique on part d'un ensemble observé de données et l'on essaie d'en décider ; « we perhaps never can say that the behavior of a phenomenon in the past is sufficient to prove that the phenomenon is controlled by a given set of known laws. All that we can ever say is that experience has shown that such behavior appears to be sufficient. » De là le partage entre les lois. Le chapitre X vient d'établir que les lois empiriques ne permettent pas de prévoir les fluctuations erratiques sur la base de la théorie des probabilités ; « If product is controlled only in this empirical sense, it follows that we cannot obtain the economic advantages discussed in Part I. For this reason it is desirable to attain the state of statistical control in which the natural law of large numbers makes prediction possible. » Le contrôle statistique n'est donc pas un degré de plus dans la régularité : c'est le régime particulier où une loi naturelle, celle des grands nombres, autorise la prévision, et c'est à ce titre seulement que les avantages économiques annoncés en partie I deviennent atteignables. La section 2 en donne la condition, sous forme d'hypothèse déclarée : « We shall assume that the necessary and sufficient condition for statistical control is that the causes of an event satisfy the law of large numbers as do those of a constant system of chance causes. If a cause system is not constant, we shall say that an assignable cause of Type I is present. » Formulée du côté des effets, la condition devient une apparence, et Shewhart insiste sur le mot : il est nécessaire que les différences de qualité entre pièces « appear to be consistent with the assumption that they arose from a constant system of chance causes. We say appear because, as is always the case in trying to find a law controlling a phenomenon, we can never be sure that we have discovered the law. Obviously such appearance is not sufficient in the logical sense although it must be in the practical sense. » Le chapitre se ferme sur une réserve de même farine, page 148 : « The fact that an observed set of values of fraction defective indicates the product to have been controlled up to the present does not prove that we can predict the future course of this phenomenon. We always have to say that this can be done provided the same essential conditions are maintained », et page 149 la constance de l'équilibre statistique une fois atteint n'est créditée que par l'expérience, « subject to the limitation that there is no a priori reason for believing that an assignable cause has entered the production process ». L'état de contrôle statistique est donc chez lui un état constaté et révocable, jamais démontré."
+          "text": "Matériau non porté sur la carte : la page 34 énumère cinq avantages de l'état de contrôle, tous de gestion, et la page 149 lie la constance de l'équilibre statistique à l'absence de raison a priori de croire qu'une cause assignable est entrée dans le procédé. Ni l'un ni l'autre n'est affirmé ici."
         },
         {
           "id": "SUP-7309aedf3990308a",
@@ -1240,9 +1349,9 @@
       ]
     },
     {
-      "claim_id": "C068",
+      "claim_id": "C070",
       "locator": "sections[4].paragraphs[3]",
-      "claim_text": "L’idée a un avant et un après, tous deux datés.",
+      "claim_text": "Le 28 décembre 1929, à Des Moines, Shewhart présente devant l’American Association for the Advancement of Science une communication",
       "supports": [
         {
           "id": "SUP-19e5678d71f3dbe6",
@@ -1250,34 +1359,6 @@
           "path": "$.attribution.note",
           "access": "n/a",
           "text": "Ouvrage signé du seul W. A. Shewhart, page de titre relue sur l'image du feuillet n0 : « By W. A. SHEWHART, Ph.D., Member of the Technical Staff, Bell Telephone Laboratories, Inc. ». Le syntagme que porte le titre de la fiche est cette fois écrit par l'auteur : il imprime « the state of statistical control » page 146, dans le chapitre XI intitulé « Statistical Control », et il n'en crédite personne. La formule antérieure de la même idée est de lui aussi : son article « Economic Quality Control of Manufactured Product », Bell System Technical Journal, volume 9, numéro 2, pages 364 à 389, avril 1930, signé de son seul nom, dit en résumé qu'il donne une base scientifique pour déterminer jusqu'où il est économiquement possible d'aller dans l'élimination des causes de hasard, et sa note de bas de page datée le rattache à une communication devant l'American Association for the Advancement of Science le 28 décembre 1929, à Des Moines, Iowa."
-        },
-        {
-          "id": "SUP-720278a07acd690e",
-          "origin": "validated",
-          "path": "$.notes[12]",
-          "access": "n/a",
-          "text": "L'article de 1930 au Bell System Technical Journal n'a été ouvert que sur sa première page, en image : signature « By W. A. SHEWHART » sans coauteur, note « Paper presented before A. A. A. S. on December 28, 1929, at Des Moines, Iowa. ». D'où consulted partial. Le syntagme « state of statistical control » n'y a pas été cherché au-delà de cette page."
-        },
-        {
-          "id": "SUP-7ef4046a2f3ea0cc",
-          "origin": "validated",
-          "path": "$.notes[13]",
-          "access": "n/a",
-          "text": "Statistical Method from the Viewpoint of Quality Control (1939), où Shewhart reprend et déplace cette définition, n'a pas été ouvert : rien n'est affirmé ici sur l'évolution de sa pensée entre 1931 et 1939."
-        }
-      ]
-    },
-    {
-      "claim_id": "C069",
-      "locator": "sections[4].paragraphs[3]",
-      "claim_text": "Le 28 décembre 1929, à Des Moines, Shewhart présente devant l’American Association for the Advancement of Science une communication",
-      "supports": [
-        {
-          "id": "SUP-720278a07acd690e",
-          "origin": "validated",
-          "path": "$.notes[12]",
-          "access": "n/a",
-          "text": "L'article de 1930 au Bell System Technical Journal n'a été ouvert que sur sa première page, en image : signature « By W. A. SHEWHART » sans coauteur, note « Paper presented before A. A. A. S. on December 28, 1929, at Des Moines, Iowa. ». D'où consulted partial. Le syntagme « state of statistical control » n'y a pas été cherché au-delà de cette page."
         },
         {
           "id": "SUP-8eb3a10f6da52387",
@@ -1287,16 +1368,16 @@
           "text": "L'article de 1930 au Bell System Technical Journal a été ouvert, contre l'usage des tours précédents qui ne l'avaient pas fait : première page lue sur l'image du feuillet n0 de l'item bstj9-2-364, page imprimée 364, signature « By W. A. SHEWHART » sans coauteur, note de bas de page « Paper presented before A. A. A. S. on December 28, 1929, at Des Moines, Iowa. ». Le millésime et la pagination de la livraison sont confirmés indépendamment par Crossref, DOI 10.1002/j.1538-7305.1930.tb00373.x, volume 9, numéro 2, pages 364-389, avril 1930, auteur unique Shewhart. Je n'ai lu de cet article que sa première page en image ; d'où consulted : partial. Le syntagme « state of statistical control » n'y a pas été cherché au-delà de cette page."
         },
         {
-          "id": "SUP-19e5678d71f3dbe6",
-          "origin": "evidence:lecture.json",
-          "path": "$.attribution.note",
+          "id": "SUP-720278a07acd690e",
+          "origin": "validated",
+          "path": "$.notes[12]",
           "access": "n/a",
-          "text": "Ouvrage signé du seul W. A. Shewhart, page de titre relue sur l'image du feuillet n0 : « By W. A. SHEWHART, Ph.D., Member of the Technical Staff, Bell Telephone Laboratories, Inc. ». Le syntagme que porte le titre de la fiche est cette fois écrit par l'auteur : il imprime « the state of statistical control » page 146, dans le chapitre XI intitulé « Statistical Control », et il n'en crédite personne. La formule antérieure de la même idée est de lui aussi : son article « Economic Quality Control of Manufactured Product », Bell System Technical Journal, volume 9, numéro 2, pages 364 à 389, avril 1930, signé de son seul nom, dit en résumé qu'il donne une base scientifique pour déterminer jusqu'où il est économiquement possible d'aller dans l'élimination des causes de hasard, et sa note de bas de page datée le rattache à une communication devant l'American Association for the Advancement of Science le 28 décembre 1929, à Des Moines, Iowa."
+          "text": "L'article de 1930 au Bell System Technical Journal n'a été ouvert que sur sa première page, en image : signature « By W. A. SHEWHART » sans coauteur, note « Paper presented before A. A. A. S. on December 28, 1929, at Des Moines, Iowa. ». D'où consulted partial. Le syntagme « state of statistical control » n'y a pas été cherché au-delà de cette page."
         }
       ]
     },
     {
-      "claim_id": "C070",
+      "claim_id": "C071",
       "locator": "sections[4].paragraphs[3]",
       "claim_text": "qui paraît en avril 1930 au Bell System Technical Journal",
       "supports": [
@@ -1315,16 +1396,16 @@
           "text": "W. A. Shewhart, « Economic Quality Control of Manufactured Product », Bell System Technical Journal, vol. 9, n° 2, avril 1930, p. 364-389."
         },
         {
-          "id": "SUP-19e5678d71f3dbe6",
-          "origin": "evidence:lecture.json",
-          "path": "$.attribution.note",
+          "id": "SUP-0ca5939dd0b81b56",
+          "origin": "validated",
+          "path": "$.review.notes[7]",
           "access": "n/a",
-          "text": "Ouvrage signé du seul W. A. Shewhart, page de titre relue sur l'image du feuillet n0 : « By W. A. SHEWHART, Ph.D., Member of the Technical Staff, Bell Telephone Laboratories, Inc. ». Le syntagme que porte le titre de la fiche est cette fois écrit par l'auteur : il imprime « the state of statistical control » page 146, dans le chapitre XI intitulé « Statistical Control », et il n'en crédite personne. La formule antérieure de la même idée est de lui aussi : son article « Economic Quality Control of Manufactured Product », Bell System Technical Journal, volume 9, numéro 2, pages 364 à 389, avril 1930, signé de son seul nom, dit en résumé qu'il donne une base scientifique pour déterminer jusqu'où il est économiquement possible d'aller dans l'élimination des causes de hasard, et sa note de bas de page datée le rattache à une communication devant l'American Association for the Advancement of Science le 28 décembre 1929, à Des Moines, Iowa."
+          "text": "SOURCE 2 — DOI 10.1002/j.1538-7305.1930.tb00373.x résolu chez Crossref : « Economic Quality Control of Manufactured Product », Bell System Technical Journal, vol. 9, n° 2, p. 364-389, avril 1930, auteur unique W. A. Shewhart. Conforme en tout point au libellé. L'URL affichée, archive.org/details/bstj9-2-364, résout bien vers le tiré à part correspondant (titre de l'item : « BSTJ 9: 2. April 1930: Economic Quality Control of Manufactured Product. (Shewhart, W.A.) », description « pp 364-389 ») ; j'ai ouvert l'image de sa première page, qui porte « Economic Quality Control of Manufactured Product » et « By W. A. SHEWHART »."
         }
       ]
     },
     {
-      "claim_id": "C071",
+      "claim_id": "C072",
       "locator": "sections[4].paragraphs[3]",
       "claim_text": "son résumé annonce une base scientifique pour déterminer jusqu’où il est économiquement possible d’aller dans l’élimination des causes de hasard",
       "supports": [
@@ -1338,7 +1419,7 @@
       ]
     },
     {
-      "claim_id": "C072",
+      "claim_id": "C073",
       "locator": "sections[4].paragraphs[3]",
       "claim_text": "ses pages 364 à 389 diront sous quelle forme l’idée se tenait un an avant le livre",
       "supports": [
@@ -1346,13 +1427,6 @@
           "id": "SUP-c960634945367690",
           "origin": "validated",
           "path": "$.sources[1].label",
-          "access": "partial",
-          "text": "W. A. Shewhart, « Economic Quality Control of Manufactured Product », Bell System Technical Journal, vol. 9, n° 2, avril 1930, p. 364-389."
-        },
-        {
-          "id": "SUP-27dc44bf76d1fd2b",
-          "origin": "evidence:lecture.json",
-          "path": "$.sources_ouvertes[1].citation",
           "access": "partial",
           "text": "W. A. Shewhart, « Economic Quality Control of Manufactured Product », Bell System Technical Journal, vol. 9, n° 2, avril 1930, p. 364-389."
         },
@@ -1366,7 +1440,7 @@
       ]
     },
     {
-      "claim_id": "C073",
+      "claim_id": "C074",
       "locator": "sections[4].paragraphs[3]",
       "claim_text": "Huit ans après paraît Statistical Method from the Viewpoint of Quality Control",
       "supports": [
@@ -1387,9 +1461,9 @@
       ]
     },
     {
-      "claim_id": "C074",
+      "claim_id": "C075",
       "locator": "sections[4].paragraphs[3]",
-      "claim_text": "ce que la définition de 1931 y devient, c’est ce second livre qui le détient",
+      "claim_text": "dont les pages attendent leur lecteur",
       "supports": [
         {
           "id": "SUP-7ef4046a2f3ea0cc",
@@ -1408,6 +1482,6 @@
       ]
     }
   ],
-  "estimated_tokens": 58091,
+  "estimated_tokens": 59258,
   "status": "READY"
 }
