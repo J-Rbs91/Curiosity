@@ -1,48 +1,13 @@
 {
   "protocol_version": 1,
   "concept_id": "modele-mondial-et-modes-de-comportement",
-  "candidate_sha256": "7d7c75dedc30bc4009ec9b239f289b4d0ae1f65c818254605c5611c8f36a0dd2",
-  "map_sha256": "9b8a1ede35d7c6c7d90b06b0cfb62299b95ea5fb54bf7ffb4913c400223aee8b",
+  "candidate_sha256": "1171ec6cc1daf9344dc0d9dc13eb9596f9864ba7cdecd81393070b34b80d4d37",
+  "map_sha256": "3e48b25991d3d2879422b5c8680cbb08e7aafa0dc97a28a6da76b71c56a8684a",
   "claims": [
     {
       "claim_id": "C001",
       "locator": "lead[0]",
-      "claim_text": "le livre que quatre auteurs ont publié en 1972 sous le titre The Limits to Growth",
-      "supports": [
-        {
-          "id": "SUP-ac8caaf1ffd03ef5",
-          "origin": "validated",
-          "path": "$.sources[0].label",
-          "access": "full-text",
-          "text": "Donella H. Meadows, Dennis L. Meadows, Jørgen Randers, William W. Behrens III, The Limits to Growth, New York, Universe Books, 1972, 205 p. Numérisé par la bibliothèque du Dartmouth College, hébergé par le Donella Meadows Project."
-        },
-        {
-          "id": "SUP-73be8317e98927d8",
-          "origin": "validated",
-          "path": "$.quotation.reference",
-          "access": "n/a",
-          "text": "Donella H. Meadows, Dennis L. Meadows, Jørgen Randers, William W. Behrens III, The Limits to Growth, New York, Universe Books, 1972."
-        },
-        {
-          "id": "SUP-f69d10d784a1d865",
-          "origin": "validated",
-          "path": "$.review.notes[0]",
-          "access": "n/a",
-          "text": "EXEMPLAIRE OUVERT — https://donellameadows.org/wp-content/userfiles/Limits-to-Growth-digital-scan-version.pdf téléchargé intégralement (HTTP 200, 43 279 925 octets, 211 feuillets, PDF 1.3 avec couche OCR), ouvert avec PyMuPDF. Page de titre (feuillet 7) : « A POTOMAC ASSOCIATES BOOK / THE LIMITS TO GROWTH / A REPORT FOR THE CLUB OF ROME'S PROJECT ON THE PREDICAMENT OF MANKIND / Donella H. Meadows / Dennis L. Meadows / Jørgen Randers / William W. Behrens III / Universe Books / NEW YORK ». Page de copyright (feuillet 8) : « Second printing before publication 1972 / Third printing 1972 / Fourth printing 1972 / Fifth printing 1972 / Library of Congress Catalog Card Number: 73-187907 / ISBN 0-87663-165-0 [...] Published in the United States of America in 1972 by Universe Books, 381 Park Avenue South, New York, New York 10016 / © 1972 by Dennis L. Meadows ». C'est bien le cinquième tirage de 1972 que la fiche annonce, et non une réédition (la 2e édition est de 1974). Dernier folio imprimé : 205, sur la dernière page de NOTES — la pagination « 205 p. » est exacte."
-        },
-        {
-          "id": "SUP-4e56aa440100a1c0",
-          "origin": "evidence:lecture.json",
-          "path": "$.attribution.note",
-          "access": "n/a",
-          "text": "Concept coécrit à quatre. La page de titre de l'exemplaire ouvert, relue sur image, porte les quatre noms dans cet ordre : Donella H. Meadows, Dennis L. Meadows, Jørgen Randers, William W. Behrens III. Deux filiations sont écrites dans le livre même et ne doivent pas être escamotées. D'abord Jay W. Forrester : une note de la page 21 dit « The prototype model on which we have based our work was designed by Professor Jay W. Forrester of the Massachusetts Institute of Technology », avec renvoi à World Dynamics (1971), et la page 31 nomme la méthode, System Dynamics, mise au point au MIT. Ensuite le Club de Rome, qui a commandité sans écrire : sa préface dit que l'équipe a travaillé « under the direction of Professor Dennis Meadows » (p. 11), et son commentaire final, signé à part par six membres de son comité exécutif (p. 197), commence par « In inviting the MIT team to undertake this investigation » (p. 185)."
-        }
-      ]
-    },
-    {
-      "claim_id": "C002",
-      "locator": "lead[0]",
-      "claim_text": "qu’a été lu pendant cinquante ans",
+      "claim_text": "C’est ainsi, aussi, qu’a été lu pendant cinquante ans le livre",
       "supports": [
         {
           "id": "SUP-e35ea9c79b39a52b",
@@ -57,20 +22,62 @@
           "path": "$.sources_ouvertes[4].citation",
           "access": "full-text",
           "text": "Turner, G. (juin 2008). A Comparison of the Limits to Growth with Thirty Years of Reality. CSIRO Working Paper Series 2008-09, ISSN 1834-5638, 52 p. Ouvert et lu. Confirme le même point de l'extérieur et en toutes lettres : « Contrary to popular belief, The Limits to Growth scenarios by the team of analysts from the Massachusetts Institute of Technology did not predict world collapse by the end of the 20th Century » (résumé) ; « The World3 model was not intended to be predictive or for making detailed forecasts, but to provide a means for better understanding the behaviour of the world economic system » (introduction), avec citation à l'appui de la page 91 du livre de 1972, la même que je lis ici. Il précise aussi que sa comparaison porte sur les sorties du modèle « produced in 1974 (the second edition of LtG) »."
-        },
+        }
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "locator": "lead[0]",
+      "claim_text": "le livre que quatre auteurs ont publié en 1972 sous le titre The Limits to Growth",
+      "supports": [
         {
-          "id": "SUP-a7dcb35cc4f9b891",
-          "origin": "evidence:lecture.json",
-          "path": "$.sources_ouvertes[5].citation",
-          "access": "full-text",
-          "text": "Randers, J. (2023). « Le point de vue d'un co-auteur : Que nous disait réellement Halte à la croissance ? ». Mondes en décroissance, n° 1, DOI 10.52497/revue-opcd.230. Ouvert et lu intégralement, en libre accès. Un des quatre auteurs écrit en français que le livre « était une analyse de 12 scénarios représentant chacun un futur possible de 1972 à 2100 » et que « étant donné que LC n'identifiait aucune prévision comme étant ‘la plus probable', il est un peu plus difficile de répondre à la question de savoir si ‘LC avait raison'. LC comprenait 12 scénarios différents de 1972 à 2100, et aucun d'entre eux n'était présenté comme le ‘plus probable' ». Il note aussi que le mot « croissance » a été lu comme « croissance économique » alors que le livre parlait de croissance matérielle, ce qui a produit « des décennies de débats publics inutiles »."
-        },
-        {
-          "id": "SUP-588a7e588fac83f8",
+          "id": "SUP-73be8317e98927d8",
           "origin": "validated",
-          "path": "$.review.notes[13]",
+          "path": "$.quotation.reference",
           "access": "n/a",
-          "text": "SOURCES 5/5 — DOI 10.52497/revue-opcd.230 résolu sur Crossref : « Le point de vue d'un co-auteur : Que nous disait réellement Halte à la croissance ? », Jorgen Randers, Mondes en décroissance, n° 1, 2023, Université Clermont Auvergne. https://polen.uca.fr/revue-opcd/index.php?id=230 répond 200 et affiche l'article en texte intégral, sous le fascicule « 1 | 2023 : Lancement de la revue Mondes en décroissance », rubrique « 50 ans du rapport Meadows », avec le même DOI en page. Le libellé de la fiche est exact ; elle orthographie « Jørgen » là où la revue et Crossref écrivent « Jorgen », ce qui est la graphie correcte du nom et non un écart de référence."
+          "text": "Donella H. Meadows, Dennis L. Meadows, Jørgen Randers, William W. Behrens III, The Limits to Growth, New York, Universe Books, 1972."
+        },
+        {
+          "id": "SUP-ac8caaf1ffd03ef5",
+          "origin": "validated",
+          "path": "$.sources[0].label",
+          "access": "full-text",
+          "text": "Donella H. Meadows, Dennis L. Meadows, Jørgen Randers, William W. Behrens III, The Limits to Growth, New York, Universe Books, 1972, 205 p. Numérisé par la bibliothèque du Dartmouth College, hébergé par le Donella Meadows Project."
+        },
+        {
+          "id": "SUP-f69d10d784a1d865",
+          "origin": "validated",
+          "path": "$.review.notes[0]",
+          "access": "n/a",
+          "text": "EXEMPLAIRE OUVERT — https://donellameadows.org/wp-content/userfiles/Limits-to-Growth-digital-scan-version.pdf téléchargé intégralement (HTTP 200, 43 279 925 octets, 211 feuillets, PDF 1.3 avec couche OCR), ouvert avec PyMuPDF. Page de titre (feuillet 7) : « A POTOMAC ASSOCIATES BOOK / THE LIMITS TO GROWTH / A REPORT FOR THE CLUB OF ROME'S PROJECT ON THE PREDICAMENT OF MANKIND / Donella H. Meadows / Dennis L. Meadows / Jørgen Randers / William W. Behrens III / Universe Books / NEW YORK ». Page de copyright (feuillet 8) : « Second printing before publication 1972 / Third printing 1972 / Fourth printing 1972 / Fifth printing 1972 / Library of Congress Catalog Card Number: 73-187907 / ISBN 0-87663-165-0 [...] Published in the United States of America in 1972 by Universe Books, 381 Park Avenue South, New York, New York 10016 / © 1972 by Dennis L. Meadows ». C'est bien le cinquième tirage de 1972 que la fiche annonce, et non une réédition (la 2e édition est de 1974). Dernier folio imprimé : 205, sur la dernière page de NOTES — la pagination « 205 p. » est exacte."
+        },
+        {
+          "id": "SUP-97cc6a5e88c9487f",
+          "origin": "validated",
+          "path": "$.authors[0].name",
+          "access": "n/a",
+          "text": "Donella H. Meadows"
+        },
+        {
+          "id": "SUP-48e2e16fc346eeb6",
+          "origin": "validated",
+          "path": "$.authors[1].name",
+          "access": "n/a",
+          "text": "Dennis L. Meadows"
+        },
+        {
+          "id": "SUP-c5a9645b6d4aa4f1",
+          "origin": "validated",
+          "path": "$.authors[2].name",
+          "access": "n/a",
+          "text": "Jørgen Randers"
+        },
+        {
+          "id": "SUP-7e9426ba6e5d9b04",
+          "origin": "validated",
+          "path": "$.authors[3].name",
+          "access": "n/a",
+          "text": "William W. Behrens III"
         }
       ]
     },
@@ -87,13 +94,6 @@
           "text": "Herrington, G. (2021). « Update to limits to growth: Comparing the World3 model with empirical data ». Journal of Industrial Ecology, 25(3), 614-626. Ouvert et lu (13 pages, exemplaire du texte publié portant en tête « DOI: 10.1111/jiec.13084 » ; second exemplaire concordant récupéré ailleurs). SOURCE CENTRALE POUR CE CONCEPT. Elle établit : que les scénarios n'étaient pas des prédictions, « The LtG scenarios were thus not meant to produce point predictions, but rather to help us understand the behavior of systems in the world over time » (§1.2) ; que le contresens dominant est daté et documenté, « An example is the claim that the first book predicted resource depletion by 1990 (Passell, Roberts, & Ross, 1972). This misconception spread to the point of being repeated by organizations like the United Nations Environment Programme (2002) », suivi de la réfutation factuelle, « Reversal points lie beyond 2000 in all the scenario graphs in the LtG books, however » (§1.4) ; et que la critique technique de 1973 se trompait de critère, « A 1973 review of World3 by Cole, Freeman, Jahoda, & Pavitt, concluded that the model was inadequate from the perspective of linear modeling. Sterman (2000) has since pointed out that adequacy as a linear model is not the right criterion for a system dynamics model » (§1.4)."
         },
         {
-          "id": "SUP-a1496b177b650b1e",
-          "origin": "validated",
-          "path": "$.review.notes[10]",
-          "access": "n/a",
-          "text": "SOURCES 3/5 — DOI 10.1111/jiec.13084 résolu sur api.crossref.org : « Update to limits to growth: Comparing the World3 model with empirical data », auteur unique Gaya Herrington, Journal of Industrial Ecology, vol. 25, n° 3, p. 614-626. Titre, autrice, revue, volume, numéro et pagination sont exactement ceux de la fiche. Crossref date le dépôt du 3 novembre 2020 (mise en ligne anticipée) ; le fascicule 25(3) est de 2021, l'année affichée par la fiche est donc celle du fascicule et est correcte. Le locator « §1.2 et §1.4 » résout : l'article porte bien des sections numérotées 1.1 à 1.6, dont « 1.2. Limits to Growth Message » — qui contient « The LtG scenarios were thus not meant to produce point predictions, but rather to help us understand the behavior of systems in the world over time » et « World3 was based on the work of Forrester (1971; 1975) » — et « 1.4. Criticism », qui traite la mécompréhension « the first book predicted resource depletion by 1990 ». Les deux locators soutiennent précisément ce que la carte avance."
-        },
-        {
           "id": "SUP-4bcd81cab37233d0",
           "origin": "evidence:lecture.json",
           "path": "$.sources_ouvertes[4].citation",
@@ -101,11 +101,11 @@
           "text": "Turner, G. (juin 2008). A Comparison of the Limits to Growth with Thirty Years of Reality. CSIRO Working Paper Series 2008-09, ISSN 1834-5638, 52 p. Ouvert et lu. Confirme le même point de l'extérieur et en toutes lettres : « Contrary to popular belief, The Limits to Growth scenarios by the team of analysts from the Massachusetts Institute of Technology did not predict world collapse by the end of the 20th Century » (résumé) ; « The World3 model was not intended to be predictive or for making detailed forecasts, but to provide a means for better understanding the behaviour of the world economic system » (introduction), avec citation à l'appui de la page 91 du livre de 1972, la même que je lis ici. Il précise aussi que sa comparaison porte sur les sorties du modèle « produced in 1974 (the second edition of LtG) »."
         },
         {
-          "id": "SUP-4eaab017f0e7bca0",
+          "id": "SUP-a1496b177b650b1e",
           "origin": "validated",
-          "path": "$.review.notes[12]",
+          "path": "$.review.notes[10]",
           "access": "n/a",
-          "text": "SOURCES 4/5 — https://www.ecsim.org/Vista/archivos/TURNER%20G%20-%20TLG%2030%20years%20comparison%20to%20reality.pdf répond 200 (723 105 octets, 52 pages, comptées dans le fichier). Page de titre : « A COMPARISON OF THE LIMITS TO GROWTH WITH THIRTY YEARS OF REALITY / Graham Turner / June 2008 / ISSN: 1834-5638 / Socio-Economics and the Environment in Discussion / CSIRO Working Paper Series 2008-09 ». Titre, auteur, série, numéro, mois, année et nombre de pages : tout concorde, jusqu'aux 52 p. L'identifiant RePEc:cse:wpaper:2008-09 résout de son côté vers https://ideas.repec.org/p/cse/wpaper/2008-09.html (HTTP 200), même titre, auteur « Graham M Turner (CSIRO Sustainable Ecosystems, Australia) ». Le locator « Résumé et introduction » est cohérent : l'abstract y porte « Contrary to popular belief, The Limits to Growth scenarios [...] did not predict world collapse by the end of the 20th Century. »"
+          "text": "SOURCES 3/5 — DOI 10.1111/jiec.13084 résolu sur api.crossref.org : « Update to limits to growth: Comparing the World3 model with empirical data », auteur unique Gaya Herrington, Journal of Industrial Ecology, vol. 25, n° 3, p. 614-626. Titre, autrice, revue, volume, numéro et pagination sont exactement ceux de la fiche. Crossref date le dépôt du 3 novembre 2020 (mise en ligne anticipée) ; le fascicule 25(3) est de 2021, l'année affichée par la fiche est donc celle du fascicule et est correcte. Le locator « §1.2 et §1.4 » résout : l'article porte bien des sections numérotées 1.1 à 1.6, dont « 1.2. Limits to Growth Message » — qui contient « The LtG scenarios were thus not meant to produce point predictions, but rather to help us understand the behavior of systems in the world over time » et « World3 was based on the work of Forrester (1971; 1975) » — et « 1.4. Criticism », qui traite la mécompréhension « the first book predicted resource depletion by 1990 ». Les deux locators soutiennent précisément ce que la carte avance."
         }
       ]
     },
@@ -129,13 +129,6 @@
           "text": "PROSE — `hook` : « Que peut dire un modèle du monde qui ne prédit aucun chiffre ? » Rien d'excédentaire. La négation est portée par les auteurs eux-mêmes, et plus fortement que par le hook : folio 94, « In terms of exact predictions, the output is not meaningful. We cannot forecast the precise population of the United States nor the GNP of Brazil nor even the total world food production for the year 2015 » ; folio 142, « none of these computer outputs is a prediction ». Le hook ne dit pas non plus « ne prédit rien » — ce qui aurait débordé, puisque le livre revendique une prédiction « in the most limited sense of the word » (folio 92) portant sur le mode de comportement."
         },
         {
-          "id": "SUP-0b2860ab62c7aff6",
-          "origin": "validated",
-          "path": "$.review.notes[6]",
-          "access": "n/a",
-          "text": "SOURCES 1/5 — la primaire résout intégralement : URL vivante, édition, année, éditeur commercial, ville, ISBN, pagination et auteurs concordent tous (cf. première note). Les quatre plages du locator sont pertinentes et vérifiées : p. 20-24 (feuillets 21-25, la discussion sur les modèles mentaux et le modèle formel, avec la note Forrester au folio 21) ; p. 91-94 (les modes de comportement et le passage cité) ; p. 121-122 (« the model's feedback loop structure is a much more important determinant of overall behavior than the exact numbers used to quantify the feedback loops », folio 121, puis « we intend to use the world model only to answer questions about behavior modes, not to make exact predictions », folio 122) ; p. 141-145 (folio 142 : « none of these computer outputs is a prediction »). `consulted: full-text` est justifié."
-        },
-        {
           "id": "SUP-8fbce3f1ff335072",
           "origin": "validated",
           "path": "$.quotation.text",
@@ -147,7 +140,7 @@
     {
       "claim_id": "C005",
       "locator": "lead[1]",
-      "claim_text": "Ce qu’il propose à la place se décrit avec des mots ordinaires : la forme d’une courbe.",
+      "claim_text": "Une quantité peut croître, osciller ou s’effondrer.",
       "supports": [
         {
           "id": "SUP-c244e4c08c996ba8",
@@ -155,39 +148,11 @@
           "path": "$.definition_de_lauteur",
           "access": "n/a",
           "text": "Les auteurs définissent le mot avant d'en revendiquer un : « A model is simply an ordered set of assumptions about a complex system. It is an attempt to understand some aspect of the infinitely varied world by selecting from perceptions and past experience a set of general observations applicable to the problem at hand. » (p. 20). Tout le monde, disent-ils, décide au moyen de modèles, mais des modèles mentaux, et ceux-là sont « of necessity, very simple when compared with the reality from which they are abstracted » (p. 20 et 21). Le leur est d'une autre espèce : « We, too, have used a model. Ours is a formal, written model of the world. » (p. 21), avec la note qui en donne l'ascendance, le modèle prototype de Jay W. Forrester publié dans World Dynamics (1971). Deux avantages sont revendiqués sur le modèle mental, et deux seulement : « First, every assumption we make is written in a precise form so that it is open to inspection and criticism by all. Second, after the assumptions have been scrutinized, discussed, and revised to agree with our best current knowledge, their implications for the future behavior of the world system can be traced without error by a computer, no matter how complicated they become » (p. 22). Rien là qui concerne l'exactitude du résultat : la précision revendiquée est celle de la déduction, pas celle de la prévision. CE QU'ILS DÉCLARENT NE PAS PRÉTENDRE, et ils le déclarent tôt, avant tout résultat : « The model we have constructed is, like every other model, imperfect, oversimplified, and unfinished. » (p. 21) ; « It is not the purpose of this book to give a complete, scientific description of all the data and mathematical equations included in the world model. Such a description can be found in the final technical report of our project. » (p. 23). L'OBJET DU MODÈLE est nommé au chapitre III, et c'est la clé de tout le reste : « In this first simple world model, we are interested only in the broad behavior modes of the population-capital system. By behavior modes we mean the tendencies of the variables in the system (population or pollution, for example) to change as time progresses. » (p. 91). D'où la restriction explicite sur le mot prédiction : « A major purpose in constructing the world model has been to determine which, if any, of these behavior modes will be most characteristic of the world system as it reaches the limits to growth. This process of determining behavior modes is ‘prediction' only in the most limited sense of the word. » (p. 92), puis la phrase retenue en citation et sa suite immédiate : « These graphs are not exact predictions of the values of the variables at any particular year in the future. They are indications of the system's behavioral tendencies only. » (p. 93). L'image qui l'explique est celle de la balle lancée en l'air : on peut prédire avec certitude son comportement général, qu'elle montera en ralentissant puis retombera en accélérant, qu'elle ne se mettra pas en orbite ; prédire à quelle hauteur exacte elle montera demanderait un calcul détaillé et des informations précises. « It is this sort of elemental understanding of behavior modes that we are seeking with the present world model. » (p. 93). Les limites d'agrégation sont énumérées sans ménagement : une seule population mondiale, une seule classe de polluants, une seule ressource généralisée, et « This high level of aggregation is necessary at this point to keep the model understandable. At the same time it limits the information we can expect to gain from the model. Questions of detail cannot be answered because the model simply does not yet contain much detail. National boundaries are not recognized. Distribution inequalities of food, resources, and capital are included implicitly in the data but they are not calculated explicitly nor graphed in the output. World trade balances, migration patterns, climatic determinants, and political processes are not specifically treated. » (p. 94). Et la réponse à la question qu'ils se posent eux-mêmes, « Can anything be learned from such a highly aggregated model? Can its output be considered meaningful? », est en deux temps : « In terms of exact predictions, the output is not meaningful », mais il reste vital de comprendre les causes de la croissance et le comportement du système quand les limites sont atteintes (p. 94). CE QUI FAIT TENIR LE RÉSULTAT MALGRÉ LES DONNÉES INCERTAINES : la structure, pas les nombres. « This is true because the model's feedback loop structure is a much more important determinant of overall behavior than the exact numbers used to quantify the feedback loops. Even rather large changes in input data do not generally alter the mode of behavior. Numerical changes may well affect the period of an oscillation or the rate of growth or the time of a collapse, but they will not affect the fact that the basic mode is oscillation or growth or collapse. » (p. 121). Le modèle n'est d'ailleurs pas donné comme fixe : « There is not one inflexible world model; there is instead an evolving model that is continuously criticized and updated as our own understanding increases. » (p. 91). Enfin, le rappel le plus net, au moment où les courbes d'effondrement viennent d'être montrées : « We shall emphasize just one more time that none of these computer outputs is a prediction. We would not expect the real world to behave like the world model in any of the graphs we have shown, especially in the collapse modes. » (p. 142), et la borne qu'ils posent à leur propre validité, « What validity our model has holds up only to the point in each output graph at which growth comes to an end and collapse begins. » (p. 142), parce que le modèle ne contient aucune variable sociale et qu'ils ne savent pas dire comment les comportements humains changeraient en régime d'effondrement."
-        },
-        {
-          "id": "SUP-f6588b960c1e5457",
-          "origin": "validated",
-          "path": "$.notes[0]",
-          "access": "n/a",
-          "text": "La citation est négative : elle dit ce que les graphiques ne sont pas. La contrepartie positive est portée par le résumé, faute de quoi la carte laisserait croire que les auteurs ne prétendent rien, ce qui est le contresens symétrique. Elle est dans le livre : « They are indications of the system's behavioral tendencies only. » (p. 93), et « In this first simple world model, we are interested only in the broad behavior modes of the population-capital system. » (p. 91)."
         }
       ]
     },
     {
       "claim_id": "C006",
-      "locator": "lead[1]",
-      "claim_text": "Une quantité peut monter puis se stabiliser, monter puis décliner doucement, monter trop haut puis chuter.",
-      "supports": [
-        {
-          "id": "SUP-c244e4c08c996ba8",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Les auteurs définissent le mot avant d'en revendiquer un : « A model is simply an ordered set of assumptions about a complex system. It is an attempt to understand some aspect of the infinitely varied world by selecting from perceptions and past experience a set of general observations applicable to the problem at hand. » (p. 20). Tout le monde, disent-ils, décide au moyen de modèles, mais des modèles mentaux, et ceux-là sont « of necessity, very simple when compared with the reality from which they are abstracted » (p. 20 et 21). Le leur est d'une autre espèce : « We, too, have used a model. Ours is a formal, written model of the world. » (p. 21), avec la note qui en donne l'ascendance, le modèle prototype de Jay W. Forrester publié dans World Dynamics (1971). Deux avantages sont revendiqués sur le modèle mental, et deux seulement : « First, every assumption we make is written in a precise form so that it is open to inspection and criticism by all. Second, after the assumptions have been scrutinized, discussed, and revised to agree with our best current knowledge, their implications for the future behavior of the world system can be traced without error by a computer, no matter how complicated they become » (p. 22). Rien là qui concerne l'exactitude du résultat : la précision revendiquée est celle de la déduction, pas celle de la prévision. CE QU'ILS DÉCLARENT NE PAS PRÉTENDRE, et ils le déclarent tôt, avant tout résultat : « The model we have constructed is, like every other model, imperfect, oversimplified, and unfinished. » (p. 21) ; « It is not the purpose of this book to give a complete, scientific description of all the data and mathematical equations included in the world model. Such a description can be found in the final technical report of our project. » (p. 23). L'OBJET DU MODÈLE est nommé au chapitre III, et c'est la clé de tout le reste : « In this first simple world model, we are interested only in the broad behavior modes of the population-capital system. By behavior modes we mean the tendencies of the variables in the system (population or pollution, for example) to change as time progresses. » (p. 91). D'où la restriction explicite sur le mot prédiction : « A major purpose in constructing the world model has been to determine which, if any, of these behavior modes will be most characteristic of the world system as it reaches the limits to growth. This process of determining behavior modes is ‘prediction' only in the most limited sense of the word. » (p. 92), puis la phrase retenue en citation et sa suite immédiate : « These graphs are not exact predictions of the values of the variables at any particular year in the future. They are indications of the system's behavioral tendencies only. » (p. 93). L'image qui l'explique est celle de la balle lancée en l'air : on peut prédire avec certitude son comportement général, qu'elle montera en ralentissant puis retombera en accélérant, qu'elle ne se mettra pas en orbite ; prédire à quelle hauteur exacte elle montera demanderait un calcul détaillé et des informations précises. « It is this sort of elemental understanding of behavior modes that we are seeking with the present world model. » (p. 93). Les limites d'agrégation sont énumérées sans ménagement : une seule population mondiale, une seule classe de polluants, une seule ressource généralisée, et « This high level of aggregation is necessary at this point to keep the model understandable. At the same time it limits the information we can expect to gain from the model. Questions of detail cannot be answered because the model simply does not yet contain much detail. National boundaries are not recognized. Distribution inequalities of food, resources, and capital are included implicitly in the data but they are not calculated explicitly nor graphed in the output. World trade balances, migration patterns, climatic determinants, and political processes are not specifically treated. » (p. 94). Et la réponse à la question qu'ils se posent eux-mêmes, « Can anything be learned from such a highly aggregated model? Can its output be considered meaningful? », est en deux temps : « In terms of exact predictions, the output is not meaningful », mais il reste vital de comprendre les causes de la croissance et le comportement du système quand les limites sont atteintes (p. 94). CE QUI FAIT TENIR LE RÉSULTAT MALGRÉ LES DONNÉES INCERTAINES : la structure, pas les nombres. « This is true because the model's feedback loop structure is a much more important determinant of overall behavior than the exact numbers used to quantify the feedback loops. Even rather large changes in input data do not generally alter the mode of behavior. Numerical changes may well affect the period of an oscillation or the rate of growth or the time of a collapse, but they will not affect the fact that the basic mode is oscillation or growth or collapse. » (p. 121). Le modèle n'est d'ailleurs pas donné comme fixe : « There is not one inflexible world model; there is instead an evolving model that is continuously criticized and updated as our own understanding increases. » (p. 91). Enfin, le rappel le plus net, au moment où les courbes d'effondrement viennent d'être montrées : « We shall emphasize just one more time that none of these computer outputs is a prediction. We would not expect the real world to behave like the world model in any of the graphs we have shown, especially in the collapse modes. » (p. 142), et la borne qu'ils posent à leur propre validité, « What validity our model has holds up only to the point in each output graph at which growth comes to an end and collapse begins. » (p. 142), parce que le modèle ne contient aucune variable sociale et qu'ils ne savent pas dire comment les comportements humains changeraient en régime d'effondrement."
-        },
-        {
-          "id": "SUP-b0816894f296df65",
-          "origin": "validated",
-          "path": "$.notes[1]",
-          "access": "n/a",
-          "text": "Le second membre du résumé s'appuie sur la page 121 : « the model's feedback loop structure is a much more important determinant of overall behavior than the exact numbers used to quantify the feedback loops. Even rather large changes in input data do not generally alter the mode of behavior. » Le résumé écrit « commande plus que les nombres » et non « détermine », pour rester sur le comparatif du texte."
-        }
-      ]
-    },
-    {
-      "claim_id": "C007",
       "locator": "lead[1]",
       "claim_text": "Ces allures, ses auteurs les appellent des modes de comportement",
       "supports": [
@@ -208,35 +173,28 @@
       ]
     },
     {
-      "claim_id": "C008",
+      "claim_id": "C007",
       "locator": "lead[1]",
       "claim_text": "c’est sur elles, non sur les valeurs, qu’ils demandent qu’on les juge",
       "supports": [
-        {
-          "id": "SUP-c244e4c08c996ba8",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Les auteurs définissent le mot avant d'en revendiquer un : « A model is simply an ordered set of assumptions about a complex system. It is an attempt to understand some aspect of the infinitely varied world by selecting from perceptions and past experience a set of general observations applicable to the problem at hand. » (p. 20). Tout le monde, disent-ils, décide au moyen de modèles, mais des modèles mentaux, et ceux-là sont « of necessity, very simple when compared with the reality from which they are abstracted » (p. 20 et 21). Le leur est d'une autre espèce : « We, too, have used a model. Ours is a formal, written model of the world. » (p. 21), avec la note qui en donne l'ascendance, le modèle prototype de Jay W. Forrester publié dans World Dynamics (1971). Deux avantages sont revendiqués sur le modèle mental, et deux seulement : « First, every assumption we make is written in a precise form so that it is open to inspection and criticism by all. Second, after the assumptions have been scrutinized, discussed, and revised to agree with our best current knowledge, their implications for the future behavior of the world system can be traced without error by a computer, no matter how complicated they become » (p. 22). Rien là qui concerne l'exactitude du résultat : la précision revendiquée est celle de la déduction, pas celle de la prévision. CE QU'ILS DÉCLARENT NE PAS PRÉTENDRE, et ils le déclarent tôt, avant tout résultat : « The model we have constructed is, like every other model, imperfect, oversimplified, and unfinished. » (p. 21) ; « It is not the purpose of this book to give a complete, scientific description of all the data and mathematical equations included in the world model. Such a description can be found in the final technical report of our project. » (p. 23). L'OBJET DU MODÈLE est nommé au chapitre III, et c'est la clé de tout le reste : « In this first simple world model, we are interested only in the broad behavior modes of the population-capital system. By behavior modes we mean the tendencies of the variables in the system (population or pollution, for example) to change as time progresses. » (p. 91). D'où la restriction explicite sur le mot prédiction : « A major purpose in constructing the world model has been to determine which, if any, of these behavior modes will be most characteristic of the world system as it reaches the limits to growth. This process of determining behavior modes is ‘prediction' only in the most limited sense of the word. » (p. 92), puis la phrase retenue en citation et sa suite immédiate : « These graphs are not exact predictions of the values of the variables at any particular year in the future. They are indications of the system's behavioral tendencies only. » (p. 93). L'image qui l'explique est celle de la balle lancée en l'air : on peut prédire avec certitude son comportement général, qu'elle montera en ralentissant puis retombera en accélérant, qu'elle ne se mettra pas en orbite ; prédire à quelle hauteur exacte elle montera demanderait un calcul détaillé et des informations précises. « It is this sort of elemental understanding of behavior modes that we are seeking with the present world model. » (p. 93). Les limites d'agrégation sont énumérées sans ménagement : une seule population mondiale, une seule classe de polluants, une seule ressource généralisée, et « This high level of aggregation is necessary at this point to keep the model understandable. At the same time it limits the information we can expect to gain from the model. Questions of detail cannot be answered because the model simply does not yet contain much detail. National boundaries are not recognized. Distribution inequalities of food, resources, and capital are included implicitly in the data but they are not calculated explicitly nor graphed in the output. World trade balances, migration patterns, climatic determinants, and political processes are not specifically treated. » (p. 94). Et la réponse à la question qu'ils se posent eux-mêmes, « Can anything be learned from such a highly aggregated model? Can its output be considered meaningful? », est en deux temps : « In terms of exact predictions, the output is not meaningful », mais il reste vital de comprendre les causes de la croissance et le comportement du système quand les limites sont atteintes (p. 94). CE QUI FAIT TENIR LE RÉSULTAT MALGRÉ LES DONNÉES INCERTAINES : la structure, pas les nombres. « This is true because the model's feedback loop structure is a much more important determinant of overall behavior than the exact numbers used to quantify the feedback loops. Even rather large changes in input data do not generally alter the mode of behavior. Numerical changes may well affect the period of an oscillation or the rate of growth or the time of a collapse, but they will not affect the fact that the basic mode is oscillation or growth or collapse. » (p. 121). Le modèle n'est d'ailleurs pas donné comme fixe : « There is not one inflexible world model; there is instead an evolving model that is continuously criticized and updated as our own understanding increases. » (p. 91). Enfin, le rappel le plus net, au moment où les courbes d'effondrement viennent d'être montrées : « We shall emphasize just one more time that none of these computer outputs is a prediction. We would not expect the real world to behave like the world model in any of the graphs we have shown, especially in the collapse modes. » (p. 142), et la borne qu'ils posent à leur propre validité, « What validity our model has holds up only to the point in each output graph at which growth comes to an end and collapse begins. » (p. 142), parce que le modèle ne contient aucune variable sociale et qu'ils ne savent pas dire comment les comportements humains changeraient en régime d'effondrement."
-        },
-        {
-          "id": "SUP-0b2860ab62c7aff6",
-          "origin": "validated",
-          "path": "$.review.notes[6]",
-          "access": "n/a",
-          "text": "SOURCES 1/5 — la primaire résout intégralement : URL vivante, édition, année, éditeur commercial, ville, ISBN, pagination et auteurs concordent tous (cf. première note). Les quatre plages du locator sont pertinentes et vérifiées : p. 20-24 (feuillets 21-25, la discussion sur les modèles mentaux et le modèle formel, avec la note Forrester au folio 21) ; p. 91-94 (les modes de comportement et le passage cité) ; p. 121-122 (« the model's feedback loop structure is a much more important determinant of overall behavior than the exact numbers used to quantify the feedback loops », folio 121, puis « we intend to use the world model only to answer questions about behavior modes, not to make exact predictions », folio 122) ; p. 141-145 (folio 142 : « none of these computer outputs is a prediction »). `consulted: full-text` est justifié."
-        },
         {
           "id": "SUP-e628655350dea5c6",
           "origin": "validated",
           "path": "$.review.notes[15]",
           "access": "n/a",
           "text": "PROSE — `summary` : les trois membres sont portés, aucun n'est ajouté. (a) « ne donne pas de valeur datée » : folio 93, la phrase citée ; et folio 123, « We have deliberately omitted the vertical scales and we have made the horizontal time scale somewhat vague because we want to emphasize the general behavior modes of these computer outputs, not the numerical values, which are only approximate ». (b) « les tendances de comportement » : traduit « the system's behavioral tendencies », folio 93, sans durcissement — le résumé n'écrit ni « prévoit » ni « démontre ». (c) « que sa structure de boucles commande plus que les nombres » : folio 121, « the model's feedback loop structure is a much more important determinant of overall behavior than the exact numbers used to quantify the feedback loops ». Le comparatif du résumé (« plus que ») reproduit le comparatif de la source (« much more important [...] than »), il ne le transforme pas en exclusive. Pas de `trop-etroite` non plus : le résumé nomme l'objet (le modèle), sa privation (pas de valeur datée) et ce qu'il rend à la place (les modes), ce qui est l'énoncé complet de la page 93."
+        },
+        {
+          "id": "SUP-c244e4c08c996ba8",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Les auteurs définissent le mot avant d'en revendiquer un : « A model is simply an ordered set of assumptions about a complex system. It is an attempt to understand some aspect of the infinitely varied world by selecting from perceptions and past experience a set of general observations applicable to the problem at hand. » (p. 20). Tout le monde, disent-ils, décide au moyen de modèles, mais des modèles mentaux, et ceux-là sont « of necessity, very simple when compared with the reality from which they are abstracted » (p. 20 et 21). Le leur est d'une autre espèce : « We, too, have used a model. Ours is a formal, written model of the world. » (p. 21), avec la note qui en donne l'ascendance, le modèle prototype de Jay W. Forrester publié dans World Dynamics (1971). Deux avantages sont revendiqués sur le modèle mental, et deux seulement : « First, every assumption we make is written in a precise form so that it is open to inspection and criticism by all. Second, after the assumptions have been scrutinized, discussed, and revised to agree with our best current knowledge, their implications for the future behavior of the world system can be traced without error by a computer, no matter how complicated they become » (p. 22). Rien là qui concerne l'exactitude du résultat : la précision revendiquée est celle de la déduction, pas celle de la prévision. CE QU'ILS DÉCLARENT NE PAS PRÉTENDRE, et ils le déclarent tôt, avant tout résultat : « The model we have constructed is, like every other model, imperfect, oversimplified, and unfinished. » (p. 21) ; « It is not the purpose of this book to give a complete, scientific description of all the data and mathematical equations included in the world model. Such a description can be found in the final technical report of our project. » (p. 23). L'OBJET DU MODÈLE est nommé au chapitre III, et c'est la clé de tout le reste : « In this first simple world model, we are interested only in the broad behavior modes of the population-capital system. By behavior modes we mean the tendencies of the variables in the system (population or pollution, for example) to change as time progresses. » (p. 91). D'où la restriction explicite sur le mot prédiction : « A major purpose in constructing the world model has been to determine which, if any, of these behavior modes will be most characteristic of the world system as it reaches the limits to growth. This process of determining behavior modes is ‘prediction' only in the most limited sense of the word. » (p. 92), puis la phrase retenue en citation et sa suite immédiate : « These graphs are not exact predictions of the values of the variables at any particular year in the future. They are indications of the system's behavioral tendencies only. » (p. 93). L'image qui l'explique est celle de la balle lancée en l'air : on peut prédire avec certitude son comportement général, qu'elle montera en ralentissant puis retombera en accélérant, qu'elle ne se mettra pas en orbite ; prédire à quelle hauteur exacte elle montera demanderait un calcul détaillé et des informations précises. « It is this sort of elemental understanding of behavior modes that we are seeking with the present world model. » (p. 93). Les limites d'agrégation sont énumérées sans ménagement : une seule population mondiale, une seule classe de polluants, une seule ressource généralisée, et « This high level of aggregation is necessary at this point to keep the model understandable. At the same time it limits the information we can expect to gain from the model. Questions of detail cannot be answered because the model simply does not yet contain much detail. National boundaries are not recognized. Distribution inequalities of food, resources, and capital are included implicitly in the data but they are not calculated explicitly nor graphed in the output. World trade balances, migration patterns, climatic determinants, and political processes are not specifically treated. » (p. 94). Et la réponse à la question qu'ils se posent eux-mêmes, « Can anything be learned from such a highly aggregated model? Can its output be considered meaningful? », est en deux temps : « In terms of exact predictions, the output is not meaningful », mais il reste vital de comprendre les causes de la croissance et le comportement du système quand les limites sont atteintes (p. 94). CE QUI FAIT TENIR LE RÉSULTAT MALGRÉ LES DONNÉES INCERTAINES : la structure, pas les nombres. « This is true because the model's feedback loop structure is a much more important determinant of overall behavior than the exact numbers used to quantify the feedback loops. Even rather large changes in input data do not generally alter the mode of behavior. Numerical changes may well affect the period of an oscillation or the rate of growth or the time of a collapse, but they will not affect the fact that the basic mode is oscillation or growth or collapse. » (p. 121). Le modèle n'est d'ailleurs pas donné comme fixe : « There is not one inflexible world model; there is instead an evolving model that is continuously criticized and updated as our own understanding increases. » (p. 91). Enfin, le rappel le plus net, au moment où les courbes d'effondrement viennent d'être montrées : « We shall emphasize just one more time that none of these computer outputs is a prediction. We would not expect the real world to behave like the world model in any of the graphs we have shown, especially in the collapse modes. » (p. 142), et la borne qu'ils posent à leur propre validité, « What validity our model has holds up only to the point in each output graph at which growth comes to an end and collapse begins. » (p. 142), parce que le modèle ne contient aucune variable sociale et qu'ils ne savent pas dire comment les comportements humains changeraient en régime d'effondrement."
         }
       ]
     },
     {
-      "claim_id": "C009",
+      "claim_id": "C008",
       "locator": "sections[0].paragraphs[0]",
       "claim_text": "Les graphiques que le modèle produit ont une particularité qu’on remarque à peine : ils n’ont pas d’échelle verticale.",
       "supports": [
@@ -250,7 +208,7 @@
       ]
     },
     {
-      "claim_id": "C010",
+      "claim_id": "C009",
       "locator": "sections[0].paragraphs[0]",
       "claim_text": "Les courbes montent et retombent sans que rien, sur le côté, ne dise à quelle hauteur",
       "supports": [
@@ -264,35 +222,28 @@
       ]
     },
     {
-      "claim_id": "C011",
+      "claim_id": "C010",
       "locator": "sections[0].paragraphs[0]",
       "claim_text": "l’axe du temps, qui va de 1900 à 2100, est laissé volontairement imprécis",
       "supports": [
-        {
-          "id": "SUP-4746245e55341583",
-          "origin": "validated",
-          "path": "$.review.notes[1]",
-          "access": "n/a",
-          "text": "CITATION — vérifiée sur l'image de la page, pas seulement sur l'OCR. Le folio imprimé 93 se trouve au feuillet d'index 94 du fichier (la correspondance folio/feuillet n'est pas constante dans ce scan : au feuillet 142 le folio est 142, l'écart d'une unité se résorbe en cours de volume ; une citation cherchée au feuillet homonyme aurait pu paraître introuvable). Rendu à 350 dpi du haut du feuillet 94 : titre courant « GROWTH IN THE WORLD SYSTEM », puis « world population, capital, and other variables on a time scale that begins in the year 1900 and continues until 2100. These graphs are *not* exact predictions of the values of the variables at any particular year in the future. They are indications of the system's behavioral tendencies only. » Rendu du bas du même feuillet : folio « 93 ». L'`original_text` de la fiche est mot pour mot cette phrase, et le locator p. 93 est exact. Le mot « not » est bien composé en italique sur l'image, comme la note de traduction l'annonce ; le reste de la phrase est en romain."
-        },
-        {
-          "id": "SUP-db4607188ff7b6ee",
-          "origin": "validated",
-          "path": "$.review.notes[2]",
-          "access": "n/a",
-          "text": "CITATION — recoupée sur le second témoin. Transcription diplomatique de Dartmouth (HTTP 200, 721 376 octets) : le marqueur « Page 93 » précède immédiatement « world population, capital, and other variables [...] These graphs are not exact predictions of the values of the variables at any particular year in the future. They are indications of the system's behavioral tendencies only. » Les deux témoins concordent, et la coupure de page tombe au même endroit (« show values for | Page 93 | world population »). Le locator « Marqueur “Page 93” » de la source 2 est donc littéralement vérifiable."
-        },
         {
           "id": "SUP-e628655350dea5c6",
           "origin": "validated",
           "path": "$.review.notes[15]",
           "access": "n/a",
           "text": "PROSE — `summary` : les trois membres sont portés, aucun n'est ajouté. (a) « ne donne pas de valeur datée » : folio 93, la phrase citée ; et folio 123, « We have deliberately omitted the vertical scales and we have made the horizontal time scale somewhat vague because we want to emphasize the general behavior modes of these computer outputs, not the numerical values, which are only approximate ». (b) « les tendances de comportement » : traduit « the system's behavioral tendencies », folio 93, sans durcissement — le résumé n'écrit ni « prévoit » ni « démontre ». (c) « que sa structure de boucles commande plus que les nombres » : folio 121, « the model's feedback loop structure is a much more important determinant of overall behavior than the exact numbers used to quantify the feedback loops ». Le comparatif du résumé (« plus que ») reproduit le comparatif de la source (« much more important [...] than »), il ne le transforme pas en exclusive. Pas de `trop-etroite` non plus : le résumé nomme l'objet (le modèle), sa privation (pas de valeur datée) et ce qu'il rend à la place (les modes), ce qui est l'énoncé complet de la page 93."
+        },
+        {
+          "id": "SUP-4746245e55341583",
+          "origin": "validated",
+          "path": "$.review.notes[1]",
+          "access": "n/a",
+          "text": "CITATION — vérifiée sur l'image de la page, pas seulement sur l'OCR. Le folio imprimé 93 se trouve au feuillet d'index 94 du fichier (la correspondance folio/feuillet n'est pas constante dans ce scan : au feuillet 142 le folio est 142, l'écart d'une unité se résorbe en cours de volume ; une citation cherchée au feuillet homonyme aurait pu paraître introuvable). Rendu à 350 dpi du haut du feuillet 94 : titre courant « GROWTH IN THE WORLD SYSTEM », puis « world population, capital, and other variables on a time scale that begins in the year 1900 and continues until 2100. These graphs are *not* exact predictions of the values of the variables at any particular year in the future. They are indications of the system's behavioral tendencies only. » Rendu du bas du même feuillet : folio « 93 ». L'`original_text` de la fiche est mot pour mot cette phrase, et le locator p. 93 est exact. Le mot « not » est bien composé en italique sur l'image, comme la note de traduction l'annonce ; le reste de la phrase est en romain."
         }
       ]
     },
     {
-      "claim_id": "C012",
+      "claim_id": "C011",
       "locator": "sections[0].paragraphs[0]",
       "claim_text": "les auteurs écrivent avoir « deliberately omitted the vertical scales » et rendu l’échelle des temps vague, pour qu’on regarde l’allure générale plutôt que des valeurs numériques qui, disent-ils, ne sont qu’approximatives",
       "supports": [
@@ -306,9 +257,9 @@
       ]
     },
     {
-      "claim_id": "C013",
+      "claim_id": "C012",
       "locator": "sections[0].paragraphs[0]",
-      "claim_text": "dès leur premier modèle, ils déclarent s’intéresser « only in the broad behavior modes of the population-capital system »",
+      "claim_text": "dès leur premier modèle, ils déclarent s’intéresser « only in the broad behavior modes of the population-capital system », aux grandes allures du système formé par la population et le capital",
       "supports": [
         {
           "id": "SUP-f6588b960c1e5457",
@@ -327,7 +278,7 @@
       ]
     },
     {
-      "claim_id": "C014",
+      "claim_id": "C013",
       "locator": "sections[0].paragraphs[1]",
       "claim_text": "Ce que vaut une prédiction de ce genre, ils l’expliquent par une image : une balle lancée en l’air.",
       "supports": [
@@ -341,7 +292,7 @@
       ]
     },
     {
-      "claim_id": "C015",
+      "claim_id": "C014",
       "locator": "sections[0].paragraphs[1]",
       "claim_text": "On peut annoncer sans risque son comportement général, elle montera en ralentissant, puis retombera en accélérant, et elle ne se mettra pas en orbite.",
       "supports": [
@@ -355,7 +306,7 @@
       ]
     },
     {
-      "claim_id": "C016",
+      "claim_id": "C015",
       "locator": "sections[0].paragraphs[1]",
       "claim_text": "Dire à quelle hauteur exacte elle montera demande au contraire un calcul détaillé et des informations précises.",
       "supports": [
@@ -369,7 +320,7 @@
       ]
     },
     {
-      "claim_id": "C017",
+      "claim_id": "C016",
       "locator": "sections[0].paragraphs[1]",
       "claim_text": "Les deux énoncés ne portent pas sur la même chose, l’un décrit une forme, l’autre une valeur",
       "supports": [
@@ -383,7 +334,7 @@
       ]
     },
     {
-      "claim_id": "C018",
+      "claim_id": "C017",
       "locator": "sections[0].paragraphs[1]",
       "claim_text": "c’est le premier genre de compréhension qu’ils cherchent, disent-ils, avec leur modèle mondial",
       "supports": [
@@ -397,28 +348,28 @@
       ]
     },
     {
-      "claim_id": "C019",
+      "claim_id": "C018",
       "locator": "sections[0].paragraphs[1]",
       "claim_text": "Aux courbes, on ne demande donc plus en quelle année, mais si la grandeur finit par se retourner.",
       "supports": [
+        {
+          "id": "SUP-0b2860ab62c7aff6",
+          "origin": "validated",
+          "path": "$.review.notes[6]",
+          "access": "n/a",
+          "text": "SOURCES 1/5 — la primaire résout intégralement : URL vivante, édition, année, éditeur commercial, ville, ISBN, pagination et auteurs concordent tous (cf. première note). Les quatre plages du locator sont pertinentes et vérifiées : p. 20-24 (feuillets 21-25, la discussion sur les modèles mentaux et le modèle formel, avec la note Forrester au folio 21) ; p. 91-94 (les modes de comportement et le passage cité) ; p. 121-122 (« the model's feedback loop structure is a much more important determinant of overall behavior than the exact numbers used to quantify the feedback loops », folio 121, puis « we intend to use the world model only to answer questions about behavior modes, not to make exact predictions », folio 122) ; p. 141-145 (folio 142 : « none of these computer outputs is a prediction »). `consulted: full-text` est justifié."
+        },
         {
           "id": "SUP-c244e4c08c996ba8",
           "origin": "evidence:lecture.json",
           "path": "$.definition_de_lauteur",
           "access": "n/a",
           "text": "Les auteurs définissent le mot avant d'en revendiquer un : « A model is simply an ordered set of assumptions about a complex system. It is an attempt to understand some aspect of the infinitely varied world by selecting from perceptions and past experience a set of general observations applicable to the problem at hand. » (p. 20). Tout le monde, disent-ils, décide au moyen de modèles, mais des modèles mentaux, et ceux-là sont « of necessity, very simple when compared with the reality from which they are abstracted » (p. 20 et 21). Le leur est d'une autre espèce : « We, too, have used a model. Ours is a formal, written model of the world. » (p. 21), avec la note qui en donne l'ascendance, le modèle prototype de Jay W. Forrester publié dans World Dynamics (1971). Deux avantages sont revendiqués sur le modèle mental, et deux seulement : « First, every assumption we make is written in a precise form so that it is open to inspection and criticism by all. Second, after the assumptions have been scrutinized, discussed, and revised to agree with our best current knowledge, their implications for the future behavior of the world system can be traced without error by a computer, no matter how complicated they become » (p. 22). Rien là qui concerne l'exactitude du résultat : la précision revendiquée est celle de la déduction, pas celle de la prévision. CE QU'ILS DÉCLARENT NE PAS PRÉTENDRE, et ils le déclarent tôt, avant tout résultat : « The model we have constructed is, like every other model, imperfect, oversimplified, and unfinished. » (p. 21) ; « It is not the purpose of this book to give a complete, scientific description of all the data and mathematical equations included in the world model. Such a description can be found in the final technical report of our project. » (p. 23). L'OBJET DU MODÈLE est nommé au chapitre III, et c'est la clé de tout le reste : « In this first simple world model, we are interested only in the broad behavior modes of the population-capital system. By behavior modes we mean the tendencies of the variables in the system (population or pollution, for example) to change as time progresses. » (p. 91). D'où la restriction explicite sur le mot prédiction : « A major purpose in constructing the world model has been to determine which, if any, of these behavior modes will be most characteristic of the world system as it reaches the limits to growth. This process of determining behavior modes is ‘prediction' only in the most limited sense of the word. » (p. 92), puis la phrase retenue en citation et sa suite immédiate : « These graphs are not exact predictions of the values of the variables at any particular year in the future. They are indications of the system's behavioral tendencies only. » (p. 93). L'image qui l'explique est celle de la balle lancée en l'air : on peut prédire avec certitude son comportement général, qu'elle montera en ralentissant puis retombera en accélérant, qu'elle ne se mettra pas en orbite ; prédire à quelle hauteur exacte elle montera demanderait un calcul détaillé et des informations précises. « It is this sort of elemental understanding of behavior modes that we are seeking with the present world model. » (p. 93). Les limites d'agrégation sont énumérées sans ménagement : une seule population mondiale, une seule classe de polluants, une seule ressource généralisée, et « This high level of aggregation is necessary at this point to keep the model understandable. At the same time it limits the information we can expect to gain from the model. Questions of detail cannot be answered because the model simply does not yet contain much detail. National boundaries are not recognized. Distribution inequalities of food, resources, and capital are included implicitly in the data but they are not calculated explicitly nor graphed in the output. World trade balances, migration patterns, climatic determinants, and political processes are not specifically treated. » (p. 94). Et la réponse à la question qu'ils se posent eux-mêmes, « Can anything be learned from such a highly aggregated model? Can its output be considered meaningful? », est en deux temps : « In terms of exact predictions, the output is not meaningful », mais il reste vital de comprendre les causes de la croissance et le comportement du système quand les limites sont atteintes (p. 94). CE QUI FAIT TENIR LE RÉSULTAT MALGRÉ LES DONNÉES INCERTAINES : la structure, pas les nombres. « This is true because the model's feedback loop structure is a much more important determinant of overall behavior than the exact numbers used to quantify the feedback loops. Even rather large changes in input data do not generally alter the mode of behavior. Numerical changes may well affect the period of an oscillation or the rate of growth or the time of a collapse, but they will not affect the fact that the basic mode is oscillation or growth or collapse. » (p. 121). Le modèle n'est d'ailleurs pas donné comme fixe : « There is not one inflexible world model; there is instead an evolving model that is continuously criticized and updated as our own understanding increases. » (p. 91). Enfin, le rappel le plus net, au moment où les courbes d'effondrement viennent d'être montrées : « We shall emphasize just one more time that none of these computer outputs is a prediction. We would not expect the real world to behave like the world model in any of the graphs we have shown, especially in the collapse modes. » (p. 142), et la borne qu'ils posent à leur propre validité, « What validity our model has holds up only to the point in each output graph at which growth comes to an end and collapse begins. » (p. 142), parce que le modèle ne contient aucune variable sociale et qu'ils ne savent pas dire comment les comportements humains changeraient en régime d'effondrement."
-        },
-        {
-          "id": "SUP-8fbce3f1ff335072",
-          "origin": "validated",
-          "path": "$.quotation.text",
-          "access": "n/a",
-          "text": "Ces graphiques ne sont pas des prédictions exactes de la valeur des variables pour telle ou telle année à venir."
         }
       ]
     },
     {
-      "claim_id": "C020",
+      "claim_id": "C019",
       "locator": "sections[1].paragraphs[0]",
       "claim_text": "Les auteurs nomment leur méthode page 31 : la dynamique des systèmes, mise au point au Massachusetts Institute of Technology.",
       "supports": [
@@ -439,61 +390,19 @@
       ]
     },
     {
-      "claim_id": "C021",
+      "claim_id": "C020",
       "locator": "sections[1].paragraphs[0]",
       "claim_text": "Son objet propre est la boucle, un circuit qui revient sur lui-même.",
-      "supports": [
-        {
-          "id": "SUP-b0816894f296df65",
-          "origin": "validated",
-          "path": "$.notes[1]",
-          "access": "n/a",
-          "text": "Le second membre du résumé s'appuie sur la page 121 : « the model's feedback loop structure is a much more important determinant of overall behavior than the exact numbers used to quantify the feedback loops. Even rather large changes in input data do not generally alter the mode of behavior. » Le résumé écrit « commande plus que les nombres » et non « détermine », pour rester sur le comparatif du texte."
-        },
-        {
-          "id": "SUP-c5b572c9931536e3",
-          "origin": "validated",
-          "path": "$.review.notes[5]",
-          "access": "n/a",
-          "text": "ATTRIBUTION — précision relevée mais qui ne fait pas basculer la réponse. La doctrine « la structure prime les nombres » n'est pas revendiquée comme neuve par les quatre auteurs : la note de bas de page du folio 121 renvoie « For further discussion of this point, see chapter 6 of J. W. Forrester's Urban Dynamics (Cambridge, Mass.: MIT Press, 1969) », et celle du folio 31 renvoie à Industrial Dynamics (1961) et Principles of Systems (1968) pour la méthode. La fiche ne prétend nulle part le contraire : elle attribue le modèle mondial et son énoncé (World3, p. 93 et 121-122) à ses quatre signataires et nomme Forrester comme concepteur du prototype. C'est correctement borné. Je n'ai pas ouvert World Dynamics (1971) : les deux exemplaires d'archive.org (worlddynamics00forr_3du, worlddynamics00forr) sont sous prêt contrôlé et je n'y ai pas accès ; le fait que la fiche en tire — la paternité du prototype — est établi par la note du folio 21 du livre que j'ai ouvert."
-        }
-      ]
+      "supports": []
+    },
+    {
+      "claim_id": "C021",
+      "locator": "sections[1].paragraphs[0]",
+      "claim_text": "Un tel modèle n’est pas une formule qui trace une courbe, c’est un assemblage de circuits qu’on laisse tourner.",
+      "supports": []
     },
     {
       "claim_id": "C022",
-      "locator": "sections[1].paragraphs[0]",
-      "claim_text": "Le cas le plus simple s’imagine sans aucun calcul : plus il y a de gens, plus il naît d’enfants, donc plus il y a de gens.",
-      "supports": []
-    },
-    {
-      "claim_id": "C023",
-      "locator": "sections[1].paragraphs[0]",
-      "claim_text": "D’autres circuits freinent, quand une quantité qui augmente rend plus difficile sa propre augmentation.",
-      "supports": []
-    },
-    {
-      "claim_id": "C024",
-      "locator": "sections[1].paragraphs[0]",
-      "claim_text": "Un tel modèle n’est pas une formule qui trace une courbe, c’est un assemblage de circuits qu’on laisse tourner.",
-      "supports": [
-        {
-          "id": "SUP-b0816894f296df65",
-          "origin": "validated",
-          "path": "$.notes[1]",
-          "access": "n/a",
-          "text": "Le second membre du résumé s'appuie sur la page 121 : « the model's feedback loop structure is a much more important determinant of overall behavior than the exact numbers used to quantify the feedback loops. Even rather large changes in input data do not generally alter the mode of behavior. » Le résumé écrit « commande plus que les nombres » et non « détermine », pour rester sur le comparatif du texte."
-        },
-        {
-          "id": "SUP-c244e4c08c996ba8",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Les auteurs définissent le mot avant d'en revendiquer un : « A model is simply an ordered set of assumptions about a complex system. It is an attempt to understand some aspect of the infinitely varied world by selecting from perceptions and past experience a set of general observations applicable to the problem at hand. » (p. 20). Tout le monde, disent-ils, décide au moyen de modèles, mais des modèles mentaux, et ceux-là sont « of necessity, very simple when compared with the reality from which they are abstracted » (p. 20 et 21). Le leur est d'une autre espèce : « We, too, have used a model. Ours is a formal, written model of the world. » (p. 21), avec la note qui en donne l'ascendance, le modèle prototype de Jay W. Forrester publié dans World Dynamics (1971). Deux avantages sont revendiqués sur le modèle mental, et deux seulement : « First, every assumption we make is written in a precise form so that it is open to inspection and criticism by all. Second, after the assumptions have been scrutinized, discussed, and revised to agree with our best current knowledge, their implications for the future behavior of the world system can be traced without error by a computer, no matter how complicated they become » (p. 22). Rien là qui concerne l'exactitude du résultat : la précision revendiquée est celle de la déduction, pas celle de la prévision. CE QU'ILS DÉCLARENT NE PAS PRÉTENDRE, et ils le déclarent tôt, avant tout résultat : « The model we have constructed is, like every other model, imperfect, oversimplified, and unfinished. » (p. 21) ; « It is not the purpose of this book to give a complete, scientific description of all the data and mathematical equations included in the world model. Such a description can be found in the final technical report of our project. » (p. 23). L'OBJET DU MODÈLE est nommé au chapitre III, et c'est la clé de tout le reste : « In this first simple world model, we are interested only in the broad behavior modes of the population-capital system. By behavior modes we mean the tendencies of the variables in the system (population or pollution, for example) to change as time progresses. » (p. 91). D'où la restriction explicite sur le mot prédiction : « A major purpose in constructing the world model has been to determine which, if any, of these behavior modes will be most characteristic of the world system as it reaches the limits to growth. This process of determining behavior modes is ‘prediction' only in the most limited sense of the word. » (p. 92), puis la phrase retenue en citation et sa suite immédiate : « These graphs are not exact predictions of the values of the variables at any particular year in the future. They are indications of the system's behavioral tendencies only. » (p. 93). L'image qui l'explique est celle de la balle lancée en l'air : on peut prédire avec certitude son comportement général, qu'elle montera en ralentissant puis retombera en accélérant, qu'elle ne se mettra pas en orbite ; prédire à quelle hauteur exacte elle montera demanderait un calcul détaillé et des informations précises. « It is this sort of elemental understanding of behavior modes that we are seeking with the present world model. » (p. 93). Les limites d'agrégation sont énumérées sans ménagement : une seule population mondiale, une seule classe de polluants, une seule ressource généralisée, et « This high level of aggregation is necessary at this point to keep the model understandable. At the same time it limits the information we can expect to gain from the model. Questions of detail cannot be answered because the model simply does not yet contain much detail. National boundaries are not recognized. Distribution inequalities of food, resources, and capital are included implicitly in the data but they are not calculated explicitly nor graphed in the output. World trade balances, migration patterns, climatic determinants, and political processes are not specifically treated. » (p. 94). Et la réponse à la question qu'ils se posent eux-mêmes, « Can anything be learned from such a highly aggregated model? Can its output be considered meaningful? », est en deux temps : « In terms of exact predictions, the output is not meaningful », mais il reste vital de comprendre les causes de la croissance et le comportement du système quand les limites sont atteintes (p. 94). CE QUI FAIT TENIR LE RÉSULTAT MALGRÉ LES DONNÉES INCERTAINES : la structure, pas les nombres. « This is true because the model's feedback loop structure is a much more important determinant of overall behavior than the exact numbers used to quantify the feedback loops. Even rather large changes in input data do not generally alter the mode of behavior. Numerical changes may well affect the period of an oscillation or the rate of growth or the time of a collapse, but they will not affect the fact that the basic mode is oscillation or growth or collapse. » (p. 121). Le modèle n'est d'ailleurs pas donné comme fixe : « There is not one inflexible world model; there is instead an evolving model that is continuously criticized and updated as our own understanding increases. » (p. 91). Enfin, le rappel le plus net, au moment où les courbes d'effondrement viennent d'être montrées : « We shall emphasize just one more time that none of these computer outputs is a prediction. We would not expect the real world to behave like the world model in any of the graphs we have shown, especially in the collapse modes. » (p. 142), et la borne qu'ils posent à leur propre validité, « What validity our model has holds up only to the point in each output graph at which growth comes to an end and collapse begins. » (p. 142), parce que le modèle ne contient aucune variable sociale et qu'ils ne savent pas dire comment les comportements humains changeraient en régime d'effondrement."
-        }
-      ]
-    },
-    {
-      "claim_id": "C025",
       "locator": "sections[1].paragraphs[1]",
       "claim_text": "« the model’s feedback loop structure is a much more important determinant of overall behavior than the exact numbers used to quantify the feedback loops », écrivent-ils page 121",
       "supports": [
@@ -521,7 +430,7 @@
       ]
     },
     {
-      "claim_id": "C026",
+      "claim_id": "C023",
       "locator": "sections[1].paragraphs[1]",
       "claim_text": "La phrase suivante en tire la conséquence : « Even rather large changes in input data do not generally alter the mode of behavior. »",
       "supports": [
@@ -542,7 +451,7 @@
       ]
     },
     {
-      "claim_id": "C027",
+      "claim_id": "C024",
       "locator": "sections[1].paragraphs[1]",
       "claim_text": "On peut donc modifier fortement une donnée d’entrée sans que l’allure de la courbe change ; ce que les nombres déplacent, c’est la date et la hauteur, pas le dessin.",
       "supports": [
@@ -563,7 +472,7 @@
       ]
     },
     {
-      "claim_id": "C028",
+      "claim_id": "C025",
       "locator": "sections[1].paragraphs[2]",
       "claim_text": "Montrer qu’un coefficient est mal choisi ne défait pas le résultat, puisque le résultat n’était pas ce nombre-là.",
       "supports": [
@@ -584,28 +493,13 @@
       ]
     },
     {
-      "claim_id": "C029",
+      "claim_id": "C026",
       "locator": "sections[1].paragraphs[2]",
       "claim_text": "La contestation qui porte vise les circuits : celui-ci existe-t-il, agit-il dans ce sens, et en manque-t-il un ?",
-      "supports": [
-        {
-          "id": "SUP-b0816894f296df65",
-          "origin": "validated",
-          "path": "$.notes[1]",
-          "access": "n/a",
-          "text": "Le second membre du résumé s'appuie sur la page 121 : « the model's feedback loop structure is a much more important determinant of overall behavior than the exact numbers used to quantify the feedback loops. Even rather large changes in input data do not generally alter the mode of behavior. » Le résumé écrit « commande plus que les nombres » et non « détermine », pour rester sur le comparatif du texte."
-        },
-        {
-          "id": "SUP-e35ea9c79b39a52b",
-          "origin": "evidence:lecture.json",
-          "path": "$.sources_ouvertes[3].citation",
-          "access": "full-text",
-          "text": "Herrington, G. (2021). « Update to limits to growth: Comparing the World3 model with empirical data ». Journal of Industrial Ecology, 25(3), 614-626. Ouvert et lu (13 pages, exemplaire du texte publié portant en tête « DOI: 10.1111/jiec.13084 » ; second exemplaire concordant récupéré ailleurs). SOURCE CENTRALE POUR CE CONCEPT. Elle établit : que les scénarios n'étaient pas des prédictions, « The LtG scenarios were thus not meant to produce point predictions, but rather to help us understand the behavior of systems in the world over time » (§1.2) ; que le contresens dominant est daté et documenté, « An example is the claim that the first book predicted resource depletion by 1990 (Passell, Roberts, & Ross, 1972). This misconception spread to the point of being repeated by organizations like the United Nations Environment Programme (2002) », suivi de la réfutation factuelle, « Reversal points lie beyond 2000 in all the scenario graphs in the LtG books, however » (§1.4) ; et que la critique technique de 1973 se trompait de critère, « A 1973 review of World3 by Cole, Freeman, Jahoda, & Pavitt, concluded that the model was inadequate from the perspective of linear modeling. Sterman (2000) has since pointed out that adequacy as a linear model is not the right criterion for a system dynamics model » (§1.4)."
-        }
-      ]
+      "supports": []
     },
     {
-      "claim_id": "C030",
+      "claim_id": "C027",
       "locator": "sections[1].paragraphs[2]",
       "claim_text": "Gaya Herrington rappelle qu’une recension de 1973, signée Cole, Freeman, Jahoda et Pavitt, concluait à l’inadéquation du modèle du point de vue de la modélisation linéaire, et que Sterman a fait valoir depuis que ce n’était pas le bon critère pour un modèle de dynamique des systèmes.",
       "supports": [
@@ -633,7 +527,7 @@
       ]
     },
     {
-      "claim_id": "C031",
+      "claim_id": "C028",
       "locator": "sections[1].paragraphs[2]",
       "claim_text": "Le désaccord portait sur ce qu’on pouvait attendre de l’objet.",
       "supports": [
@@ -643,18 +537,11 @@
           "path": "$.sources_ouvertes[3].citation",
           "access": "full-text",
           "text": "Herrington, G. (2021). « Update to limits to growth: Comparing the World3 model with empirical data ». Journal of Industrial Ecology, 25(3), 614-626. Ouvert et lu (13 pages, exemplaire du texte publié portant en tête « DOI: 10.1111/jiec.13084 » ; second exemplaire concordant récupéré ailleurs). SOURCE CENTRALE POUR CE CONCEPT. Elle établit : que les scénarios n'étaient pas des prédictions, « The LtG scenarios were thus not meant to produce point predictions, but rather to help us understand the behavior of systems in the world over time » (§1.2) ; que le contresens dominant est daté et documenté, « An example is the claim that the first book predicted resource depletion by 1990 (Passell, Roberts, & Ross, 1972). This misconception spread to the point of being repeated by organizations like the United Nations Environment Programme (2002) », suivi de la réfutation factuelle, « Reversal points lie beyond 2000 in all the scenario graphs in the LtG books, however » (§1.4) ; et que la critique technique de 1973 se trompait de critère, « A 1973 review of World3 by Cole, Freeman, Jahoda, & Pavitt, concluded that the model was inadequate from the perspective of linear modeling. Sterman (2000) has since pointed out that adequacy as a linear model is not the right criterion for a system dynamics model » (§1.4)."
-        },
-        {
-          "id": "SUP-91f98e066552253c",
-          "origin": "evidence:lecture.json",
-          "path": "$.reserves[9]",
-          "access": "n/a",
-          "text": "CRITIQUE ÉCONOMIQUE CONTEMPORAINE : non instruite. Nordhaus (1973) est repéré et sa notice résolue, il n'est pas ouvert (Unpaywall « closed »). Les critiques de Cole, Freeman, Jahoda et Pavitt (1973), de Kaysen (1972) et de Solow (1973) ne sont connues ici que par ce qu'en rapporte Herrington (2021), lue intégralement ; aucune n'a été ouverte, et aucune formulation ne leur est attribuée au-delà de ce que Herrington en cite."
         }
       ]
     },
     {
-      "claim_id": "C032",
+      "claim_id": "C029",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "Le refus de prédire est écrit sans détour, page 93 : « Ces graphiques ne sont pas des prédictions exactes de la valeur des variables pour telle ou telle année à venir. »",
       "supports": [
@@ -689,7 +576,7 @@
       ]
     },
     {
-      "claim_id": "C033",
+      "claim_id": "C030",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "La phrase suivante est pourtant affirmative : ces courbes indiquent les tendances de comportement du système, et rien d’autre.",
       "supports": [
@@ -701,23 +588,23 @@
           "text": "La citation est négative : elle dit ce que les graphiques ne sont pas. La contrepartie positive est portée par le résumé, faute de quoi la carte laisserait croire que les auteurs ne prétendent rien, ce qui est le contresens symétrique. Elle est dans le livre : « They are indications of the system's behavioral tendencies only. » (p. 93), et « In this first simple world model, we are interested only in the broad behavior modes of the population-capital system. » (p. 91)."
         },
         {
-          "id": "SUP-4746245e55341583",
-          "origin": "validated",
-          "path": "$.review.notes[1]",
-          "access": "n/a",
-          "text": "CITATION — vérifiée sur l'image de la page, pas seulement sur l'OCR. Le folio imprimé 93 se trouve au feuillet d'index 94 du fichier (la correspondance folio/feuillet n'est pas constante dans ce scan : au feuillet 142 le folio est 142, l'écart d'une unité se résorbe en cours de volume ; une citation cherchée au feuillet homonyme aurait pu paraître introuvable). Rendu à 350 dpi du haut du feuillet 94 : titre courant « GROWTH IN THE WORLD SYSTEM », puis « world population, capital, and other variables on a time scale that begins in the year 1900 and continues until 2100. These graphs are *not* exact predictions of the values of the variables at any particular year in the future. They are indications of the system's behavioral tendencies only. » Rendu du bas du même feuillet : folio « 93 ». L'`original_text` de la fiche est mot pour mot cette phrase, et le locator p. 93 est exact. Le mot « not » est bien composé en italique sur l'image, comme la note de traduction l'annonce ; le reste de la phrase est en romain."
-        },
-        {
           "id": "SUP-c244e4c08c996ba8",
           "origin": "evidence:lecture.json",
           "path": "$.definition_de_lauteur",
           "access": "n/a",
           "text": "Les auteurs définissent le mot avant d'en revendiquer un : « A model is simply an ordered set of assumptions about a complex system. It is an attempt to understand some aspect of the infinitely varied world by selecting from perceptions and past experience a set of general observations applicable to the problem at hand. » (p. 20). Tout le monde, disent-ils, décide au moyen de modèles, mais des modèles mentaux, et ceux-là sont « of necessity, very simple when compared with the reality from which they are abstracted » (p. 20 et 21). Le leur est d'une autre espèce : « We, too, have used a model. Ours is a formal, written model of the world. » (p. 21), avec la note qui en donne l'ascendance, le modèle prototype de Jay W. Forrester publié dans World Dynamics (1971). Deux avantages sont revendiqués sur le modèle mental, et deux seulement : « First, every assumption we make is written in a precise form so that it is open to inspection and criticism by all. Second, after the assumptions have been scrutinized, discussed, and revised to agree with our best current knowledge, their implications for the future behavior of the world system can be traced without error by a computer, no matter how complicated they become » (p. 22). Rien là qui concerne l'exactitude du résultat : la précision revendiquée est celle de la déduction, pas celle de la prévision. CE QU'ILS DÉCLARENT NE PAS PRÉTENDRE, et ils le déclarent tôt, avant tout résultat : « The model we have constructed is, like every other model, imperfect, oversimplified, and unfinished. » (p. 21) ; « It is not the purpose of this book to give a complete, scientific description of all the data and mathematical equations included in the world model. Such a description can be found in the final technical report of our project. » (p. 23). L'OBJET DU MODÈLE est nommé au chapitre III, et c'est la clé de tout le reste : « In this first simple world model, we are interested only in the broad behavior modes of the population-capital system. By behavior modes we mean the tendencies of the variables in the system (population or pollution, for example) to change as time progresses. » (p. 91). D'où la restriction explicite sur le mot prédiction : « A major purpose in constructing the world model has been to determine which, if any, of these behavior modes will be most characteristic of the world system as it reaches the limits to growth. This process of determining behavior modes is ‘prediction' only in the most limited sense of the word. » (p. 92), puis la phrase retenue en citation et sa suite immédiate : « These graphs are not exact predictions of the values of the variables at any particular year in the future. They are indications of the system's behavioral tendencies only. » (p. 93). L'image qui l'explique est celle de la balle lancée en l'air : on peut prédire avec certitude son comportement général, qu'elle montera en ralentissant puis retombera en accélérant, qu'elle ne se mettra pas en orbite ; prédire à quelle hauteur exacte elle montera demanderait un calcul détaillé et des informations précises. « It is this sort of elemental understanding of behavior modes that we are seeking with the present world model. » (p. 93). Les limites d'agrégation sont énumérées sans ménagement : une seule population mondiale, une seule classe de polluants, une seule ressource généralisée, et « This high level of aggregation is necessary at this point to keep the model understandable. At the same time it limits the information we can expect to gain from the model. Questions of detail cannot be answered because the model simply does not yet contain much detail. National boundaries are not recognized. Distribution inequalities of food, resources, and capital are included implicitly in the data but they are not calculated explicitly nor graphed in the output. World trade balances, migration patterns, climatic determinants, and political processes are not specifically treated. » (p. 94). Et la réponse à la question qu'ils se posent eux-mêmes, « Can anything be learned from such a highly aggregated model? Can its output be considered meaningful? », est en deux temps : « In terms of exact predictions, the output is not meaningful », mais il reste vital de comprendre les causes de la croissance et le comportement du système quand les limites sont atteintes (p. 94). CE QUI FAIT TENIR LE RÉSULTAT MALGRÉ LES DONNÉES INCERTAINES : la structure, pas les nombres. « This is true because the model's feedback loop structure is a much more important determinant of overall behavior than the exact numbers used to quantify the feedback loops. Even rather large changes in input data do not generally alter the mode of behavior. Numerical changes may well affect the period of an oscillation or the rate of growth or the time of a collapse, but they will not affect the fact that the basic mode is oscillation or growth or collapse. » (p. 121). Le modèle n'est d'ailleurs pas donné comme fixe : « There is not one inflexible world model; there is instead an evolving model that is continuously criticized and updated as our own understanding increases. » (p. 91). Enfin, le rappel le plus net, au moment où les courbes d'effondrement viennent d'être montrées : « We shall emphasize just one more time that none of these computer outputs is a prediction. We would not expect the real world to behave like the world model in any of the graphs we have shown, especially in the collapse modes. » (p. 142), et la borne qu'ils posent à leur propre validité, « What validity our model has holds up only to the point in each output graph at which growth comes to an end and collapse begins. » (p. 142), parce que le modèle ne contient aucune variable sociale et qu'ils ne savent pas dire comment les comportements humains changeraient en régime d'effondrement."
+        },
+        {
+          "id": "SUP-4746245e55341583",
+          "origin": "validated",
+          "path": "$.review.notes[1]",
+          "access": "n/a",
+          "text": "CITATION — vérifiée sur l'image de la page, pas seulement sur l'OCR. Le folio imprimé 93 se trouve au feuillet d'index 94 du fichier (la correspondance folio/feuillet n'est pas constante dans ce scan : au feuillet 142 le folio est 142, l'écart d'une unité se résorbe en cours de volume ; une citation cherchée au feuillet homonyme aurait pu paraître introuvable). Rendu à 350 dpi du haut du feuillet 94 : titre courant « GROWTH IN THE WORLD SYSTEM », puis « world population, capital, and other variables on a time scale that begins in the year 1900 and continues until 2100. These graphs are *not* exact predictions of the values of the variables at any particular year in the future. They are indications of the system's behavioral tendencies only. » Rendu du bas du même feuillet : folio « 93 ». L'`original_text` de la fiche est mot pour mot cette phrase, et le locator p. 93 est exact. Le mot « not » est bien composé en italique sur l'image, comme la note de traduction l'annonce ; le reste de la phrase est en romain."
         }
       ]
     },
     {
-      "claim_id": "C034",
+      "claim_id": "C031",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "Une page plus tôt, les auteurs revendiquent même une prédiction « in the most limited sense of the word », au sens le plus limité du mot.",
       "supports": [
@@ -738,7 +625,7 @@
       ]
     },
     {
-      "claim_id": "C035",
+      "claim_id": "C032",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "Deux contresens symétriques guettent donc : lire des chiffres datés là où il n’y en a pas, ou croire que rien n’est avancé parce que les chiffres manquent.",
       "supports": [
@@ -759,7 +646,7 @@
       ]
     },
     {
-      "claim_id": "C036",
+      "claim_id": "C033",
       "locator": "sections[2].paragraphs[1]",
       "claim_text": "Ce que le calcul apporte alors, ils l’énoncent page 22 en deux points, et deux seulement.",
       "supports": [
@@ -773,7 +660,7 @@
       ]
     },
     {
-      "claim_id": "C037",
+      "claim_id": "C034",
       "locator": "sections[2].paragraphs[1]",
       "claim_text": "Chaque hypothèse est écrite sous une forme précise, donc ouverte à l’inspection et à la critique de tous ; et une fois ces hypothèses discutées et révisées, un ordinateur en trace les implications sans erreur, si compliquées soient-elles.",
       "supports": [
@@ -787,7 +674,7 @@
       ]
     },
     {
-      "claim_id": "C038",
+      "claim_id": "C035",
       "locator": "sections[2].paragraphs[1]",
       "claim_text": "Rien là ne concerne l’exactitude du résultat : la précision revendiquée est celle de la déduction, pas celle de la prévision.",
       "supports": [
@@ -801,7 +688,7 @@
       ]
     },
     {
-      "claim_id": "C039",
+      "claim_id": "C036",
       "locator": "sections[2].paragraphs[1]",
       "claim_text": "L’avantage est réclamé sur les modèles mentaux, ceux dont chacun se sert pour décider sans les écrire, et que les auteurs disent nécessairement très simples au regard de la réalité.",
       "supports": [
@@ -811,18 +698,11 @@
           "path": "$.definition_de_lauteur",
           "access": "n/a",
           "text": "Les auteurs définissent le mot avant d'en revendiquer un : « A model is simply an ordered set of assumptions about a complex system. It is an attempt to understand some aspect of the infinitely varied world by selecting from perceptions and past experience a set of general observations applicable to the problem at hand. » (p. 20). Tout le monde, disent-ils, décide au moyen de modèles, mais des modèles mentaux, et ceux-là sont « of necessity, very simple when compared with the reality from which they are abstracted » (p. 20 et 21). Le leur est d'une autre espèce : « We, too, have used a model. Ours is a formal, written model of the world. » (p. 21), avec la note qui en donne l'ascendance, le modèle prototype de Jay W. Forrester publié dans World Dynamics (1971). Deux avantages sont revendiqués sur le modèle mental, et deux seulement : « First, every assumption we make is written in a precise form so that it is open to inspection and criticism by all. Second, after the assumptions have been scrutinized, discussed, and revised to agree with our best current knowledge, their implications for the future behavior of the world system can be traced without error by a computer, no matter how complicated they become » (p. 22). Rien là qui concerne l'exactitude du résultat : la précision revendiquée est celle de la déduction, pas celle de la prévision. CE QU'ILS DÉCLARENT NE PAS PRÉTENDRE, et ils le déclarent tôt, avant tout résultat : « The model we have constructed is, like every other model, imperfect, oversimplified, and unfinished. » (p. 21) ; « It is not the purpose of this book to give a complete, scientific description of all the data and mathematical equations included in the world model. Such a description can be found in the final technical report of our project. » (p. 23). L'OBJET DU MODÈLE est nommé au chapitre III, et c'est la clé de tout le reste : « In this first simple world model, we are interested only in the broad behavior modes of the population-capital system. By behavior modes we mean the tendencies of the variables in the system (population or pollution, for example) to change as time progresses. » (p. 91). D'où la restriction explicite sur le mot prédiction : « A major purpose in constructing the world model has been to determine which, if any, of these behavior modes will be most characteristic of the world system as it reaches the limits to growth. This process of determining behavior modes is ‘prediction' only in the most limited sense of the word. » (p. 92), puis la phrase retenue en citation et sa suite immédiate : « These graphs are not exact predictions of the values of the variables at any particular year in the future. They are indications of the system's behavioral tendencies only. » (p. 93). L'image qui l'explique est celle de la balle lancée en l'air : on peut prédire avec certitude son comportement général, qu'elle montera en ralentissant puis retombera en accélérant, qu'elle ne se mettra pas en orbite ; prédire à quelle hauteur exacte elle montera demanderait un calcul détaillé et des informations précises. « It is this sort of elemental understanding of behavior modes that we are seeking with the present world model. » (p. 93). Les limites d'agrégation sont énumérées sans ménagement : une seule population mondiale, une seule classe de polluants, une seule ressource généralisée, et « This high level of aggregation is necessary at this point to keep the model understandable. At the same time it limits the information we can expect to gain from the model. Questions of detail cannot be answered because the model simply does not yet contain much detail. National boundaries are not recognized. Distribution inequalities of food, resources, and capital are included implicitly in the data but they are not calculated explicitly nor graphed in the output. World trade balances, migration patterns, climatic determinants, and political processes are not specifically treated. » (p. 94). Et la réponse à la question qu'ils se posent eux-mêmes, « Can anything be learned from such a highly aggregated model? Can its output be considered meaningful? », est en deux temps : « In terms of exact predictions, the output is not meaningful », mais il reste vital de comprendre les causes de la croissance et le comportement du système quand les limites sont atteintes (p. 94). CE QUI FAIT TENIR LE RÉSULTAT MALGRÉ LES DONNÉES INCERTAINES : la structure, pas les nombres. « This is true because the model's feedback loop structure is a much more important determinant of overall behavior than the exact numbers used to quantify the feedback loops. Even rather large changes in input data do not generally alter the mode of behavior. Numerical changes may well affect the period of an oscillation or the rate of growth or the time of a collapse, but they will not affect the fact that the basic mode is oscillation or growth or collapse. » (p. 121). Le modèle n'est d'ailleurs pas donné comme fixe : « There is not one inflexible world model; there is instead an evolving model that is continuously criticized and updated as our own understanding increases. » (p. 91). Enfin, le rappel le plus net, au moment où les courbes d'effondrement viennent d'être montrées : « We shall emphasize just one more time that none of these computer outputs is a prediction. We would not expect the real world to behave like the world model in any of the graphs we have shown, especially in the collapse modes. » (p. 142), et la borne qu'ils posent à leur propre validité, « What validity our model has holds up only to the point in each output graph at which growth comes to an end and collapse begins. » (p. 142), parce que le modèle ne contient aucune variable sociale et qu'ils ne savent pas dire comment les comportements humains changeraient en régime d'effondrement."
-        },
-        {
-          "id": "SUP-0b2860ab62c7aff6",
-          "origin": "validated",
-          "path": "$.review.notes[6]",
-          "access": "n/a",
-          "text": "SOURCES 1/5 — la primaire résout intégralement : URL vivante, édition, année, éditeur commercial, ville, ISBN, pagination et auteurs concordent tous (cf. première note). Les quatre plages du locator sont pertinentes et vérifiées : p. 20-24 (feuillets 21-25, la discussion sur les modèles mentaux et le modèle formel, avec la note Forrester au folio 21) ; p. 91-94 (les modes de comportement et le passage cité) ; p. 121-122 (« the model's feedback loop structure is a much more important determinant of overall behavior than the exact numbers used to quantify the feedback loops », folio 121, puis « we intend to use the world model only to answer questions about behavior modes, not to make exact predictions », folio 122) ; p. 141-145 (folio 142 : « none of these computer outputs is a prediction »). `consulted: full-text` est justifié."
         }
       ]
     },
     {
-      "claim_id": "C040",
+      "claim_id": "C037",
       "locator": "sections[2].paragraphs[2]",
       "claim_text": "Une affirmation que ce modèle peut soutenir parle d’une forme et de ce qui la modifierait : telle croissance ne peut pas se prolonger indéfiniment dans cette structure, telle mesure change l’allure et telle autre la décale seulement.",
       "supports": [
@@ -839,18 +719,11 @@
           "path": "$.notes[1]",
           "access": "n/a",
           "text": "Le second membre du résumé s'appuie sur la page 121 : « the model's feedback loop structure is a much more important determinant of overall behavior than the exact numbers used to quantify the feedback loops. Even rather large changes in input data do not generally alter the mode of behavior. » Le résumé écrit « commande plus que les nombres » et non « détermine », pour rester sur le comparatif du texte."
-        },
-        {
-          "id": "SUP-0b2860ab62c7aff6",
-          "origin": "validated",
-          "path": "$.review.notes[6]",
-          "access": "n/a",
-          "text": "SOURCES 1/5 — la primaire résout intégralement : URL vivante, édition, année, éditeur commercial, ville, ISBN, pagination et auteurs concordent tous (cf. première note). Les quatre plages du locator sont pertinentes et vérifiées : p. 20-24 (feuillets 21-25, la discussion sur les modèles mentaux et le modèle formel, avec la note Forrester au folio 21) ; p. 91-94 (les modes de comportement et le passage cité) ; p. 121-122 (« the model's feedback loop structure is a much more important determinant of overall behavior than the exact numbers used to quantify the feedback loops », folio 121, puis « we intend to use the world model only to answer questions about behavior modes, not to make exact predictions », folio 122) ; p. 141-145 (folio 142 : « none of these computer outputs is a prediction »). `consulted: full-text` est justifié."
         }
       ]
     },
     {
-      "claim_id": "C041",
+      "claim_id": "C038",
       "locator": "sections[2].paragraphs[2]",
       "claim_text": "Une affirmation qu’il ne peut pas soutenir porte un nombre et un millésime.",
       "supports": [
@@ -862,13 +735,6 @@
           "text": "Ces graphiques ne sont pas des prédictions exactes de la valeur des variables pour telle ou telle année à venir."
         },
         {
-          "id": "SUP-470d6e6c5bea1f28",
-          "origin": "validated",
-          "path": "$.review.notes[14]",
-          "access": "n/a",
-          "text": "PROSE — `hook` : « Que peut dire un modèle du monde qui ne prédit aucun chiffre ? » Rien d'excédentaire. La négation est portée par les auteurs eux-mêmes, et plus fortement que par le hook : folio 94, « In terms of exact predictions, the output is not meaningful. We cannot forecast the precise population of the United States nor the GNP of Brazil nor even the total world food production for the year 2015 » ; folio 142, « none of these computer outputs is a prediction ». Le hook ne dit pas non plus « ne prédit rien » — ce qui aurait débordé, puisque le livre revendique une prédiction « in the most limited sense of the word » (folio 92) portant sur le mode de comportement."
-        },
-        {
           "id": "SUP-c244e4c08c996ba8",
           "origin": "evidence:lecture.json",
           "path": "$.definition_de_lauteur",
@@ -878,7 +744,7 @@
       ]
     },
     {
-      "claim_id": "C042",
+      "claim_id": "C039",
       "locator": "sections[2].paragraphs[2]",
       "claim_text": "Le partage ne tient pas à la prudence de celui qui parle, mais à ce que l’objet a été construit pour produire.",
       "supports": [
@@ -899,7 +765,7 @@
       ]
     },
     {
-      "claim_id": "C043",
+      "claim_id": "C040",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "Le livre ne propose d’ailleurs pas une courbe, mais une famille de scénarios.",
       "supports": [
@@ -920,7 +786,7 @@
       ]
     },
     {
-      "claim_id": "C044",
+      "claim_id": "C041",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "Douze, selon le compte qu’en donnent Jørgen Randers, l’un des coauteurs, et Gaya Herrington.",
       "supports": [
@@ -955,7 +821,7 @@
       ]
     },
     {
-      "claim_id": "C045",
+      "claim_id": "C042",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "Chacun fait tourner le même assemblage de boucles sous des hypothèses différentes",
       "supports": [
@@ -965,18 +831,11 @@
           "path": "$.sources_ouvertes[5].citation",
           "access": "full-text",
           "text": "Randers, J. (2023). « Le point de vue d'un co-auteur : Que nous disait réellement Halte à la croissance ? ». Mondes en décroissance, n° 1, DOI 10.52497/revue-opcd.230. Ouvert et lu intégralement, en libre accès. Un des quatre auteurs écrit en français que le livre « était une analyse de 12 scénarios représentant chacun un futur possible de 1972 à 2100 » et que « étant donné que LC n'identifiait aucune prévision comme étant ‘la plus probable', il est un peu plus difficile de répondre à la question de savoir si ‘LC avait raison'. LC comprenait 12 scénarios différents de 1972 à 2100, et aucun d'entre eux n'était présenté comme le ‘plus probable' ». Il note aussi que le mot « croissance » a été lu comme « croissance économique » alors que le livre parlait de croissance matérielle, ce qui a produit « des décennies de débats publics inutiles »."
-        },
-        {
-          "id": "SUP-c244e4c08c996ba8",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Les auteurs définissent le mot avant d'en revendiquer un : « A model is simply an ordered set of assumptions about a complex system. It is an attempt to understand some aspect of the infinitely varied world by selecting from perceptions and past experience a set of general observations applicable to the problem at hand. » (p. 20). Tout le monde, disent-ils, décide au moyen de modèles, mais des modèles mentaux, et ceux-là sont « of necessity, very simple when compared with the reality from which they are abstracted » (p. 20 et 21). Le leur est d'une autre espèce : « We, too, have used a model. Ours is a formal, written model of the world. » (p. 21), avec la note qui en donne l'ascendance, le modèle prototype de Jay W. Forrester publié dans World Dynamics (1971). Deux avantages sont revendiqués sur le modèle mental, et deux seulement : « First, every assumption we make is written in a precise form so that it is open to inspection and criticism by all. Second, after the assumptions have been scrutinized, discussed, and revised to agree with our best current knowledge, their implications for the future behavior of the world system can be traced without error by a computer, no matter how complicated they become » (p. 22). Rien là qui concerne l'exactitude du résultat : la précision revendiquée est celle de la déduction, pas celle de la prévision. CE QU'ILS DÉCLARENT NE PAS PRÉTENDRE, et ils le déclarent tôt, avant tout résultat : « The model we have constructed is, like every other model, imperfect, oversimplified, and unfinished. » (p. 21) ; « It is not the purpose of this book to give a complete, scientific description of all the data and mathematical equations included in the world model. Such a description can be found in the final technical report of our project. » (p. 23). L'OBJET DU MODÈLE est nommé au chapitre III, et c'est la clé de tout le reste : « In this first simple world model, we are interested only in the broad behavior modes of the population-capital system. By behavior modes we mean the tendencies of the variables in the system (population or pollution, for example) to change as time progresses. » (p. 91). D'où la restriction explicite sur le mot prédiction : « A major purpose in constructing the world model has been to determine which, if any, of these behavior modes will be most characteristic of the world system as it reaches the limits to growth. This process of determining behavior modes is ‘prediction' only in the most limited sense of the word. » (p. 92), puis la phrase retenue en citation et sa suite immédiate : « These graphs are not exact predictions of the values of the variables at any particular year in the future. They are indications of the system's behavioral tendencies only. » (p. 93). L'image qui l'explique est celle de la balle lancée en l'air : on peut prédire avec certitude son comportement général, qu'elle montera en ralentissant puis retombera en accélérant, qu'elle ne se mettra pas en orbite ; prédire à quelle hauteur exacte elle montera demanderait un calcul détaillé et des informations précises. « It is this sort of elemental understanding of behavior modes that we are seeking with the present world model. » (p. 93). Les limites d'agrégation sont énumérées sans ménagement : une seule population mondiale, une seule classe de polluants, une seule ressource généralisée, et « This high level of aggregation is necessary at this point to keep the model understandable. At the same time it limits the information we can expect to gain from the model. Questions of detail cannot be answered because the model simply does not yet contain much detail. National boundaries are not recognized. Distribution inequalities of food, resources, and capital are included implicitly in the data but they are not calculated explicitly nor graphed in the output. World trade balances, migration patterns, climatic determinants, and political processes are not specifically treated. » (p. 94). Et la réponse à la question qu'ils se posent eux-mêmes, « Can anything be learned from such a highly aggregated model? Can its output be considered meaningful? », est en deux temps : « In terms of exact predictions, the output is not meaningful », mais il reste vital de comprendre les causes de la croissance et le comportement du système quand les limites sont atteintes (p. 94). CE QUI FAIT TENIR LE RÉSULTAT MALGRÉ LES DONNÉES INCERTAINES : la structure, pas les nombres. « This is true because the model's feedback loop structure is a much more important determinant of overall behavior than the exact numbers used to quantify the feedback loops. Even rather large changes in input data do not generally alter the mode of behavior. Numerical changes may well affect the period of an oscillation or the rate of growth or the time of a collapse, but they will not affect the fact that the basic mode is oscillation or growth or collapse. » (p. 121). Le modèle n'est d'ailleurs pas donné comme fixe : « There is not one inflexible world model; there is instead an evolving model that is continuously criticized and updated as our own understanding increases. » (p. 91). Enfin, le rappel le plus net, au moment où les courbes d'effondrement viennent d'être montrées : « We shall emphasize just one more time that none of these computer outputs is a prediction. We would not expect the real world to behave like the world model in any of the graphs we have shown, especially in the collapse modes. » (p. 142), et la borne qu'ils posent à leur propre validité, « What validity our model has holds up only to the point in each output graph at which growth comes to an end and collapse begins. » (p. 142), parce que le modèle ne contient aucune variable sociale et qu'ils ne savent pas dire comment les comportements humains changeraient en régime d'effondrement."
         }
       ]
     },
     {
-      "claim_id": "C046",
+      "claim_id": "C043",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "aucun n’est désigné comme le plus probable",
       "supports": [
@@ -990,28 +849,13 @@
       ]
     },
     {
-      "claim_id": "C047",
+      "claim_id": "C044",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "l’intérêt est dans la comparaison de leurs formes",
-      "supports": [
-        {
-          "id": "SUP-a7dcb35cc4f9b891",
-          "origin": "evidence:lecture.json",
-          "path": "$.sources_ouvertes[5].citation",
-          "access": "full-text",
-          "text": "Randers, J. (2023). « Le point de vue d'un co-auteur : Que nous disait réellement Halte à la croissance ? ». Mondes en décroissance, n° 1, DOI 10.52497/revue-opcd.230. Ouvert et lu intégralement, en libre accès. Un des quatre auteurs écrit en français que le livre « était une analyse de 12 scénarios représentant chacun un futur possible de 1972 à 2100 » et que « étant donné que LC n'identifiait aucune prévision comme étant ‘la plus probable', il est un peu plus difficile de répondre à la question de savoir si ‘LC avait raison'. LC comprenait 12 scénarios différents de 1972 à 2100, et aucun d'entre eux n'était présenté comme le ‘plus probable' ». Il note aussi que le mot « croissance » a été lu comme « croissance économique » alors que le livre parlait de croissance matérielle, ce qui a produit « des décennies de débats publics inutiles »."
-        },
-        {
-          "id": "SUP-c244e4c08c996ba8",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Les auteurs définissent le mot avant d'en revendiquer un : « A model is simply an ordered set of assumptions about a complex system. It is an attempt to understand some aspect of the infinitely varied world by selecting from perceptions and past experience a set of general observations applicable to the problem at hand. » (p. 20). Tout le monde, disent-ils, décide au moyen de modèles, mais des modèles mentaux, et ceux-là sont « of necessity, very simple when compared with the reality from which they are abstracted » (p. 20 et 21). Le leur est d'une autre espèce : « We, too, have used a model. Ours is a formal, written model of the world. » (p. 21), avec la note qui en donne l'ascendance, le modèle prototype de Jay W. Forrester publié dans World Dynamics (1971). Deux avantages sont revendiqués sur le modèle mental, et deux seulement : « First, every assumption we make is written in a precise form so that it is open to inspection and criticism by all. Second, after the assumptions have been scrutinized, discussed, and revised to agree with our best current knowledge, their implications for the future behavior of the world system can be traced without error by a computer, no matter how complicated they become » (p. 22). Rien là qui concerne l'exactitude du résultat : la précision revendiquée est celle de la déduction, pas celle de la prévision. CE QU'ILS DÉCLARENT NE PAS PRÉTENDRE, et ils le déclarent tôt, avant tout résultat : « The model we have constructed is, like every other model, imperfect, oversimplified, and unfinished. » (p. 21) ; « It is not the purpose of this book to give a complete, scientific description of all the data and mathematical equations included in the world model. Such a description can be found in the final technical report of our project. » (p. 23). L'OBJET DU MODÈLE est nommé au chapitre III, et c'est la clé de tout le reste : « In this first simple world model, we are interested only in the broad behavior modes of the population-capital system. By behavior modes we mean the tendencies of the variables in the system (population or pollution, for example) to change as time progresses. » (p. 91). D'où la restriction explicite sur le mot prédiction : « A major purpose in constructing the world model has been to determine which, if any, of these behavior modes will be most characteristic of the world system as it reaches the limits to growth. This process of determining behavior modes is ‘prediction' only in the most limited sense of the word. » (p. 92), puis la phrase retenue en citation et sa suite immédiate : « These graphs are not exact predictions of the values of the variables at any particular year in the future. They are indications of the system's behavioral tendencies only. » (p. 93). L'image qui l'explique est celle de la balle lancée en l'air : on peut prédire avec certitude son comportement général, qu'elle montera en ralentissant puis retombera en accélérant, qu'elle ne se mettra pas en orbite ; prédire à quelle hauteur exacte elle montera demanderait un calcul détaillé et des informations précises. « It is this sort of elemental understanding of behavior modes that we are seeking with the present world model. » (p. 93). Les limites d'agrégation sont énumérées sans ménagement : une seule population mondiale, une seule classe de polluants, une seule ressource généralisée, et « This high level of aggregation is necessary at this point to keep the model understandable. At the same time it limits the information we can expect to gain from the model. Questions of detail cannot be answered because the model simply does not yet contain much detail. National boundaries are not recognized. Distribution inequalities of food, resources, and capital are included implicitly in the data but they are not calculated explicitly nor graphed in the output. World trade balances, migration patterns, climatic determinants, and political processes are not specifically treated. » (p. 94). Et la réponse à la question qu'ils se posent eux-mêmes, « Can anything be learned from such a highly aggregated model? Can its output be considered meaningful? », est en deux temps : « In terms of exact predictions, the output is not meaningful », mais il reste vital de comprendre les causes de la croissance et le comportement du système quand les limites sont atteintes (p. 94). CE QUI FAIT TENIR LE RÉSULTAT MALGRÉ LES DONNÉES INCERTAINES : la structure, pas les nombres. « This is true because the model's feedback loop structure is a much more important determinant of overall behavior than the exact numbers used to quantify the feedback loops. Even rather large changes in input data do not generally alter the mode of behavior. Numerical changes may well affect the period of an oscillation or the rate of growth or the time of a collapse, but they will not affect the fact that the basic mode is oscillation or growth or collapse. » (p. 121). Le modèle n'est d'ailleurs pas donné comme fixe : « There is not one inflexible world model; there is instead an evolving model that is continuously criticized and updated as our own understanding increases. » (p. 91). Enfin, le rappel le plus net, au moment où les courbes d'effondrement viennent d'être montrées : « We shall emphasize just one more time that none of these computer outputs is a prediction. We would not expect the real world to behave like the world model in any of the graphs we have shown, especially in the collapse modes. » (p. 142), et la borne qu'ils posent à leur propre validité, « What validity our model has holds up only to the point in each output graph at which growth comes to an end and collapse begins. » (p. 142), parce que le modèle ne contient aucune variable sociale et qu'ils ne savent pas dire comment les comportements humains changeraient en régime d'effondrement."
-        }
-      ]
+      "supports": []
     },
     {
-      "claim_id": "C048",
+      "claim_id": "C045",
       "locator": "sections[3].paragraphs[1]",
       "claim_text": "La réception, elle, a retenu une prophétie unique et datée.",
       "supports": [
@@ -1032,7 +876,7 @@
       ]
     },
     {
-      "claim_id": "C049",
+      "claim_id": "C046",
       "locator": "sections[3].paragraphs[1]",
       "claim_text": "Herrington rappelle qu’on a prêté au premier livre l’annonce d’un épuisement des ressources pour 1990, méprise répandue au point d’être reprise par le Programme des Nations unies pour l’environnement",
       "supports": [
@@ -1053,7 +897,7 @@
       ]
     },
     {
-      "claim_id": "C050",
+      "claim_id": "C047",
       "locator": "sections[3].paragraphs[1]",
       "claim_text": "or les points de retournement, note-t-elle, se situent au-delà de 2000 dans tous les graphiques de scénarios",
       "supports": [
@@ -1067,7 +911,7 @@
       ]
     },
     {
-      "claim_id": "C051",
+      "claim_id": "C048",
       "locator": "sections[3].paragraphs[1]",
       "claim_text": "Graham Turner ouvre en 2008 sa comparaison entre le modèle et trente ans de données par le même rappel : contrairement à une croyance répandue, ces scénarios n’annonçaient pas d’effondrement mondial avant la fin du vingtième siècle.",
       "supports": [
@@ -1079,13 +923,6 @@
           "text": "Turner, G. (juin 2008). A Comparison of the Limits to Growth with Thirty Years of Reality. CSIRO Working Paper Series 2008-09, ISSN 1834-5638, 52 p. Ouvert et lu. Confirme le même point de l'extérieur et en toutes lettres : « Contrary to popular belief, The Limits to Growth scenarios by the team of analysts from the Massachusetts Institute of Technology did not predict world collapse by the end of the 20th Century » (résumé) ; « The World3 model was not intended to be predictive or for making detailed forecasts, but to provide a means for better understanding the behaviour of the world economic system » (introduction), avec citation à l'appui de la page 91 du livre de 1972, la même que je lis ici. Il précise aussi que sa comparaison porte sur les sorties du modèle « produced in 1974 (the second edition of LtG) »."
         },
         {
-          "id": "SUP-4eaab017f0e7bca0",
-          "origin": "validated",
-          "path": "$.review.notes[12]",
-          "access": "n/a",
-          "text": "SOURCES 4/5 — https://www.ecsim.org/Vista/archivos/TURNER%20G%20-%20TLG%2030%20years%20comparison%20to%20reality.pdf répond 200 (723 105 octets, 52 pages, comptées dans le fichier). Page de titre : « A COMPARISON OF THE LIMITS TO GROWTH WITH THIRTY YEARS OF REALITY / Graham Turner / June 2008 / ISSN: 1834-5638 / Socio-Economics and the Environment in Discussion / CSIRO Working Paper Series 2008-09 ». Titre, auteur, série, numéro, mois, année et nombre de pages : tout concorde, jusqu'aux 52 p. L'identifiant RePEc:cse:wpaper:2008-09 résout de son côté vers https://ideas.repec.org/p/cse/wpaper/2008-09.html (HTTP 200), même titre, auteur « Graham M Turner (CSIRO Sustainable Ecosystems, Australia) ». Le locator « Résumé et introduction » est cohérent : l'abstract y porte « Contrary to popular belief, The Limits to Growth scenarios [...] did not predict world collapse by the end of the 20th Century. »"
-        },
-        {
           "id": "SUP-0dd72ea18e0e6472",
           "origin": "validated",
           "path": "$.sources[3].label",
@@ -1093,37 +930,37 @@
           "text": "Graham Turner, A Comparison of the Limits to Growth with Thirty Years of Reality, CSIRO Working Paper Series 2008-09, juin 2008, 52 p."
         },
         {
-          "id": "SUP-88e787ad1860fc5e",
+          "id": "SUP-4eaab017f0e7bca0",
           "origin": "validated",
-          "path": "$.sources[3].locator",
-          "access": "full-text",
-          "text": "Résumé et introduction"
+          "path": "$.review.notes[12]",
+          "access": "n/a",
+          "text": "SOURCES 4/5 — https://www.ecsim.org/Vista/archivos/TURNER%20G%20-%20TLG%2030%20years%20comparison%20to%20reality.pdf répond 200 (723 105 octets, 52 pages, comptées dans le fichier). Page de titre : « A COMPARISON OF THE LIMITS TO GROWTH WITH THIRTY YEARS OF REALITY / Graham Turner / June 2008 / ISSN: 1834-5638 / Socio-Economics and the Environment in Discussion / CSIRO Working Paper Series 2008-09 ». Titre, auteur, série, numéro, mois, année et nombre de pages : tout concorde, jusqu'aux 52 p. L'identifiant RePEc:cse:wpaper:2008-09 résout de son côté vers https://ideas.repec.org/p/cse/wpaper/2008-09.html (HTTP 200), même titre, auteur « Graham M Turner (CSIRO Sustainable Ecosystems, Australia) ». Le locator « Résumé et introduction » est cohérent : l'abstract y porte « Contrary to popular belief, The Limits to Growth scenarios [...] did not predict world collapse by the end of the 20th Century. »"
         }
       ]
     },
     {
-      "claim_id": "C052",
+      "claim_id": "C049",
       "locator": "sections[3].paragraphs[2]",
-      "claim_text": "Une courbe qui passe par un sommet et retombe, tracée sur un axe qui va jusqu’en 2100, appelle le geste de remettre l’échelle qu’on en a retirée : on restitue les graduations, et on lit une date là où il n’y avait qu’une forme.",
+      "claim_text": "Une courbe qui passe par un sommet et retombe, tracée sur un axe qui va jusqu’en 2100, appelle le geste de remettre l’échelle qu’on en a retirée",
       "supports": [
-        {
-          "id": "SUP-4746245e55341583",
-          "origin": "validated",
-          "path": "$.review.notes[1]",
-          "access": "n/a",
-          "text": "CITATION — vérifiée sur l'image de la page, pas seulement sur l'OCR. Le folio imprimé 93 se trouve au feuillet d'index 94 du fichier (la correspondance folio/feuillet n'est pas constante dans ce scan : au feuillet 142 le folio est 142, l'écart d'une unité se résorbe en cours de volume ; une citation cherchée au feuillet homonyme aurait pu paraître introuvable). Rendu à 350 dpi du haut du feuillet 94 : titre courant « GROWTH IN THE WORLD SYSTEM », puis « world population, capital, and other variables on a time scale that begins in the year 1900 and continues until 2100. These graphs are *not* exact predictions of the values of the variables at any particular year in the future. They are indications of the system's behavioral tendencies only. » Rendu du bas du même feuillet : folio « 93 ». L'`original_text` de la fiche est mot pour mot cette phrase, et le locator p. 93 est exact. Le mot « not » est bien composé en italique sur l'image, comme la note de traduction l'annonce ; le reste de la phrase est en romain."
-        },
         {
           "id": "SUP-e628655350dea5c6",
           "origin": "validated",
           "path": "$.review.notes[15]",
           "access": "n/a",
           "text": "PROSE — `summary` : les trois membres sont portés, aucun n'est ajouté. (a) « ne donne pas de valeur datée » : folio 93, la phrase citée ; et folio 123, « We have deliberately omitted the vertical scales and we have made the horizontal time scale somewhat vague because we want to emphasize the general behavior modes of these computer outputs, not the numerical values, which are only approximate ». (b) « les tendances de comportement » : traduit « the system's behavioral tendencies », folio 93, sans durcissement — le résumé n'écrit ni « prévoit » ni « démontre ». (c) « que sa structure de boucles commande plus que les nombres » : folio 121, « the model's feedback loop structure is a much more important determinant of overall behavior than the exact numbers used to quantify the feedback loops ». Le comparatif du résumé (« plus que ») reproduit le comparatif de la source (« much more important [...] than »), il ne le transforme pas en exclusive. Pas de `trop-etroite` non plus : le résumé nomme l'objet (le modèle), sa privation (pas de valeur datée) et ce qu'il rend à la place (les modes), ce qui est l'énoncé complet de la page 93."
+        },
+        {
+          "id": "SUP-4746245e55341583",
+          "origin": "validated",
+          "path": "$.review.notes[1]",
+          "access": "n/a",
+          "text": "CITATION — vérifiée sur l'image de la page, pas seulement sur l'OCR. Le folio imprimé 93 se trouve au feuillet d'index 94 du fichier (la correspondance folio/feuillet n'est pas constante dans ce scan : au feuillet 142 le folio est 142, l'écart d'une unité se résorbe en cours de volume ; une citation cherchée au feuillet homonyme aurait pu paraître introuvable). Rendu à 350 dpi du haut du feuillet 94 : titre courant « GROWTH IN THE WORLD SYSTEM », puis « world population, capital, and other variables on a time scale that begins in the year 1900 and continues until 2100. These graphs are *not* exact predictions of the values of the variables at any particular year in the future. They are indications of the system's behavioral tendencies only. » Rendu du bas du même feuillet : folio « 93 ». L'`original_text` de la fiche est mot pour mot cette phrase, et le locator p. 93 est exact. Le mot « not » est bien composé en italique sur l'image, comme la note de traduction l'annonce ; le reste de la phrase est en romain."
         }
       ]
     },
     {
-      "claim_id": "C053",
+      "claim_id": "C050",
       "locator": "sections[3].paragraphs[2]",
       "claim_text": "Randers en signale un second du même genre : le mot croissance a été entendu comme croissance économique alors que le livre parlait de croissance matérielle, ce qui a produit, écrit-il, des décennies de débats publics inutiles.",
       "supports": [
@@ -1133,18 +970,11 @@
           "path": "$.sources_ouvertes[5].citation",
           "access": "full-text",
           "text": "Randers, J. (2023). « Le point de vue d'un co-auteur : Que nous disait réellement Halte à la croissance ? ». Mondes en décroissance, n° 1, DOI 10.52497/revue-opcd.230. Ouvert et lu intégralement, en libre accès. Un des quatre auteurs écrit en français que le livre « était une analyse de 12 scénarios représentant chacun un futur possible de 1972 à 2100 » et que « étant donné que LC n'identifiait aucune prévision comme étant ‘la plus probable', il est un peu plus difficile de répondre à la question de savoir si ‘LC avait raison'. LC comprenait 12 scénarios différents de 1972 à 2100, et aucun d'entre eux n'était présenté comme le ‘plus probable' ». Il note aussi que le mot « croissance » a été lu comme « croissance économique » alors que le livre parlait de croissance matérielle, ce qui a produit « des décennies de débats publics inutiles »."
-        },
-        {
-          "id": "SUP-588a7e588fac83f8",
-          "origin": "validated",
-          "path": "$.review.notes[13]",
-          "access": "n/a",
-          "text": "SOURCES 5/5 — DOI 10.52497/revue-opcd.230 résolu sur Crossref : « Le point de vue d'un co-auteur : Que nous disait réellement Halte à la croissance ? », Jorgen Randers, Mondes en décroissance, n° 1, 2023, Université Clermont Auvergne. https://polen.uca.fr/revue-opcd/index.php?id=230 répond 200 et affiche l'article en texte intégral, sous le fascicule « 1 | 2023 : Lancement de la revue Mondes en décroissance », rubrique « 50 ans du rapport Meadows », avec le même DOI en page. Le libellé de la fiche est exact ; elle orthographie « Jørgen » là où la revue et Crossref écrivent « Jorgen », ce qui est la graphie correcte du nom et non un écart de référence."
         }
       ]
     },
     {
-      "claim_id": "C054",
+      "claim_id": "C051",
       "locator": "sections[3].paragraphs[3]",
       "claim_text": "la portion de courbe qu’elle prend pour une prophétie est celle que les auteurs déclarent la moins solide",
       "supports": [
@@ -1165,7 +995,7 @@
       ]
     },
     {
-      "claim_id": "C055",
+      "claim_id": "C052",
       "locator": "sections[3].paragraphs[3]",
       "claim_text": "Page 142, ils écrivent que la validité de leur modèle ne tient que jusqu’au point, dans chaque graphique, où la croissance s’arrête et où l’effondrement commence",
       "supports": [
@@ -1186,7 +1016,7 @@
       ]
     },
     {
-      "claim_id": "C056",
+      "claim_id": "C053",
       "locator": "sections[3].paragraphs[3]",
       "claim_text": "aucune variable sociale n’y figure, et ils ne savent pas dire comment les comportements humains changeraient dans un tel régime",
       "supports": [
@@ -1200,7 +1030,7 @@
       ]
     },
     {
-      "claim_id": "C057",
+      "claim_id": "C054",
       "locator": "sections[3].paragraphs[3]",
       "claim_text": "L’inventaire de ce qui manque est page 94 : une seule population mondiale, une seule ressource généralisée, une seule classe de polluants, aucune frontière nationale, ni commerce, ni migrations, ni climat, ni processus politiques.",
       "supports": [
@@ -1214,7 +1044,7 @@
       ]
     },
     {
-      "claim_id": "C058",
+      "claim_id": "C055",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "Le Club de Rome a commandité cette étude, il ne l’a pas écrite.",
       "supports": [
@@ -1242,17 +1072,10 @@
       ]
     },
     {
-      "claim_id": "C059",
+      "claim_id": "C056",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "Quatre noms figurent sur la page de titre : Donella H. Meadows, Dennis L. Meadows, Jørgen Randers, William W. Behrens III.",
       "supports": [
-        {
-          "id": "SUP-4e56aa440100a1c0",
-          "origin": "evidence:lecture.json",
-          "path": "$.attribution.note",
-          "access": "n/a",
-          "text": "Concept coécrit à quatre. La page de titre de l'exemplaire ouvert, relue sur image, porte les quatre noms dans cet ordre : Donella H. Meadows, Dennis L. Meadows, Jørgen Randers, William W. Behrens III. Deux filiations sont écrites dans le livre même et ne doivent pas être escamotées. D'abord Jay W. Forrester : une note de la page 21 dit « The prototype model on which we have based our work was designed by Professor Jay W. Forrester of the Massachusetts Institute of Technology », avec renvoi à World Dynamics (1971), et la page 31 nomme la méthode, System Dynamics, mise au point au MIT. Ensuite le Club de Rome, qui a commandité sans écrire : sa préface dit que l'équipe a travaillé « under the direction of Professor Dennis Meadows » (p. 11), et son commentaire final, signé à part par six membres de son comité exécutif (p. 197), commence par « In inviting the MIT team to undertake this investigation » (p. 185)."
-        },
         {
           "id": "SUP-f69d10d784a1d865",
           "origin": "validated",
@@ -1266,11 +1089,46 @@
           "path": "$.review.notes[4]",
           "access": "n/a",
           "text": "ATTRIBUTION — confirmée sur le livre lui-même. Les quatre noms de la page de titre sont exactement ceux de la fiche, dans cet ordre. La borne Forrester est vérifiée mot pour mot : note de bas de page du folio 21 (feuillet 22), « The prototype model on which we have based our work was designed by Professor Jay W. Forrester of the Massachusetts Institute of Technology. A description of that model has been published in his book World Dynamics (Cambridge, Mass.: Wright-Allen Press, 1971). » La borne Club de Rome est vérifiée aussi : le sommaire distingue le rapport de la « COMMENTARY by the Club of Rome Executive Committee page 185 », et cette section s'ouvre p. 185 par « In inviting the MIT team to undertake this investigation, we had two immediate objectives in mind » ; l'avant-propos (p. 11-12) précise « The Phase One study was conducted by an international team, under the direction of Professor Dennis Meadows, with financial support from the Volkswagen Foundation. » Commanditaire d'un côté, auteurs de l'autre : la note de la fiche dit juste."
+        },
+        {
+          "id": "SUP-4e56aa440100a1c0",
+          "origin": "evidence:lecture.json",
+          "path": "$.attribution.note",
+          "access": "n/a",
+          "text": "Concept coécrit à quatre. La page de titre de l'exemplaire ouvert, relue sur image, porte les quatre noms dans cet ordre : Donella H. Meadows, Dennis L. Meadows, Jørgen Randers, William W. Behrens III. Deux filiations sont écrites dans le livre même et ne doivent pas être escamotées. D'abord Jay W. Forrester : une note de la page 21 dit « The prototype model on which we have based our work was designed by Professor Jay W. Forrester of the Massachusetts Institute of Technology », avec renvoi à World Dynamics (1971), et la page 31 nomme la méthode, System Dynamics, mise au point au MIT. Ensuite le Club de Rome, qui a commandité sans écrire : sa préface dit que l'équipe a travaillé « under the direction of Professor Dennis Meadows » (p. 11), et son commentaire final, signé à part par six membres de son comité exécutif (p. 197), commence par « In inviting the MIT team to undertake this investigation » (p. 185)."
+        },
+        {
+          "id": "SUP-97cc6a5e88c9487f",
+          "origin": "validated",
+          "path": "$.authors[0].name",
+          "access": "n/a",
+          "text": "Donella H. Meadows"
+        },
+        {
+          "id": "SUP-48e2e16fc346eeb6",
+          "origin": "validated",
+          "path": "$.authors[1].name",
+          "access": "n/a",
+          "text": "Dennis L. Meadows"
+        },
+        {
+          "id": "SUP-c5a9645b6d4aa4f1",
+          "origin": "validated",
+          "path": "$.authors[2].name",
+          "access": "n/a",
+          "text": "Jørgen Randers"
+        },
+        {
+          "id": "SUP-7e9426ba6e5d9b04",
+          "origin": "validated",
+          "path": "$.authors[3].name",
+          "access": "n/a",
+          "text": "William W. Behrens III"
         }
       ]
     },
     {
-      "claim_id": "C060",
+      "claim_id": "C057",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "L’avant-propos précise que l’étude a été conduite par une équipe internationale sous la direction de Dennis Meadows, avec le soutien de la Volkswagen Foundation.",
       "supports": [
@@ -1291,7 +1149,7 @@
       ]
     },
     {
-      "claim_id": "C061",
+      "claim_id": "C058",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "un commentaire de son comité exécutif, ouvert page 185 sur les objectifs qu’il avait en invitant l’équipe du MIT",
       "supports": [
@@ -1312,7 +1170,7 @@
       ]
     },
     {
-      "claim_id": "C062",
+      "claim_id": "C059",
       "locator": "sections[4].paragraphs[1]",
       "claim_text": "L’idée que la structure importe plus que les nombres n’est pas née dans ce livre, et ses auteurs ne le prétendent nulle part.",
       "supports": [
@@ -1326,7 +1184,7 @@
       ]
     },
     {
-      "claim_id": "C063",
+      "claim_id": "C060",
       "locator": "sections[4].paragraphs[1]",
       "claim_text": "Une note de la page 21 indique que le modèle prototype dont ils sont partis a été conçu par Jay W. Forrester, du Massachusetts Institute of Technology, et décrit dans World Dynamics, paru en 1971",
       "supports": [
@@ -1345,6 +1203,13 @@
           "text": "Concept coécrit à quatre. La page de titre de l'exemplaire ouvert, relue sur image, porte les quatre noms dans cet ordre : Donella H. Meadows, Dennis L. Meadows, Jørgen Randers, William W. Behrens III. Deux filiations sont écrites dans le livre même et ne doivent pas être escamotées. D'abord Jay W. Forrester : une note de la page 21 dit « The prototype model on which we have based our work was designed by Professor Jay W. Forrester of the Massachusetts Institute of Technology », avec renvoi à World Dynamics (1971), et la page 31 nomme la méthode, System Dynamics, mise au point au MIT. Ensuite le Club de Rome, qui a commandité sans écrire : sa préface dit que l'équipe a travaillé « under the direction of Professor Dennis Meadows » (p. 11), et son commentaire final, signé à part par six membres de son comité exécutif (p. 197), commence par « In inviting the MIT team to undertake this investigation » (p. 185)."
         },
         {
+          "id": "SUP-46b9dbff579eac39",
+          "origin": "validated",
+          "path": "$.attribution_note",
+          "access": "n/a",
+          "text": "Concept coécrit par Donella H. Meadows, Dennis L. Meadows, Jørgen Randers et William W. Behrens III, les quatre noms de la page de titre. Leur modèle est bâti sur un prototype de Jay W. Forrester (World Dynamics, 1971). Le Club de Rome a commandité l'étude, il ne l'a pas écrite."
+        },
+        {
           "id": "SUP-c244e4c08c996ba8",
           "origin": "evidence:lecture.json",
           "path": "$.definition_de_lauteur",
@@ -1354,7 +1219,7 @@
       ]
     },
     {
-      "claim_id": "C064",
+      "claim_id": "C061",
       "locator": "sections[4].paragraphs[1]",
       "claim_text": "d’autres notes renvoient à ses travaux antérieurs, Urban Dynamics, Industrial Dynamics, Principles of Systems",
       "supports": [
@@ -1368,23 +1233,23 @@
       ]
     },
     {
-      "claim_id": "C065",
+      "claim_id": "C062",
       "locator": "sections[4].paragraphs[2]",
-      "claim_text": "Le nom World3, sous lequel ce modèle est aujourd’hui désigné et comparé aux données",
+      "claim_text": "Le nom World3, sous lequel ce modèle est aujourd’hui désigné et comparé aux données, ne figure pas dans l’édition de 1972, qui parle de son modèle mondial, et de ce premier modèle mondial simple.",
       "supports": [
-        {
-          "id": "SUP-ea899d00a1179ae9",
-          "origin": "evidence:lecture.json",
-          "path": "$.reserves[4]",
-          "access": "n/a",
-          "text": "LE NOM « WORLD3 » N'EST PAS DANS CE LIVRE, et c'est un point de méthode pour ce dossier précisément. Recherche faite sur la couche texte des 211 feuillets : zéro occurrence de « World3 », « World 3 » ou « Dynamics of Growth ». Le livre dit « our world model », « the world model », « this first simple world model ». Le nom World3 et la version World3-03 viennent de la littérature ultérieure et du rapport technique, que le livre annonce p. 23 sous la formule « the final technical report of our project » sans le nommer. Une carte qui ferait dire au livre de 1972 le mot World3 lui prêterait un vocabulaire qu'il n'a pas ; il est en revanche exact de dire que la littérature appelle World3 le modèle décrit dans ce livre."
-        },
         {
           "id": "SUP-320ec9c256375a79",
           "origin": "validated",
           "path": "$.notes[2]",
           "access": "n/a",
           "text": "Le nom « World3 » n'est pas dans l'ouvrage de 1972 : zéro occurrence sur les 211 feuillets du scan, le livre dit « our world model » et « this first simple world model ». Le mot n'apparaît sur aucun champ rédigé de cette carte ; il figure dans la notice de Herrington (2021) parce que c'est le titre exact de son article."
+        },
+        {
+          "id": "SUP-ea899d00a1179ae9",
+          "origin": "evidence:lecture.json",
+          "path": "$.reserves[4]",
+          "access": "n/a",
+          "text": "LE NOM « WORLD3 » N'EST PAS DANS CE LIVRE, et c'est un point de méthode pour ce dossier précisément. Recherche faite sur la couche texte des 211 feuillets : zéro occurrence de « World3 », « World 3 » ou « Dynamics of Growth ». Le livre dit « our world model », « the world model », « this first simple world model ». Le nom World3 et la version World3-03 viennent de la littérature ultérieure et du rapport technique, que le livre annonce p. 23 sous la formule « the final technical report of our project » sans le nommer. Une carte qui ferait dire au livre de 1972 le mot World3 lui prêterait un vocabulaire qu'il n'a pas ; il est en revanche exact de dire que la littérature appelle World3 le modèle décrit dans ce livre."
         },
         {
           "id": "SUP-7b10c002d7787cda",
@@ -1392,39 +1257,11 @@
           "path": "$.sources[2].label",
           "access": "full-text",
           "text": "Gaya Herrington, « Update to limits to growth: Comparing the World3 model with empirical data », Journal of Industrial Ecology, vol. 25, n° 3, 2021, p. 614-626."
-        },
-        {
-          "id": "SUP-e35ea9c79b39a52b",
-          "origin": "evidence:lecture.json",
-          "path": "$.sources_ouvertes[3].citation",
-          "access": "full-text",
-          "text": "Herrington, G. (2021). « Update to limits to growth: Comparing the World3 model with empirical data ». Journal of Industrial Ecology, 25(3), 614-626. Ouvert et lu (13 pages, exemplaire du texte publié portant en tête « DOI: 10.1111/jiec.13084 » ; second exemplaire concordant récupéré ailleurs). SOURCE CENTRALE POUR CE CONCEPT. Elle établit : que les scénarios n'étaient pas des prédictions, « The LtG scenarios were thus not meant to produce point predictions, but rather to help us understand the behavior of systems in the world over time » (§1.2) ; que le contresens dominant est daté et documenté, « An example is the claim that the first book predicted resource depletion by 1990 (Passell, Roberts, & Ross, 1972). This misconception spread to the point of being repeated by organizations like the United Nations Environment Programme (2002) », suivi de la réfutation factuelle, « Reversal points lie beyond 2000 in all the scenario graphs in the LtG books, however » (§1.4) ; et que la critique technique de 1973 se trompait de critère, « A 1973 review of World3 by Cole, Freeman, Jahoda, & Pavitt, concluded that the model was inadequate from the perspective of linear modeling. Sterman (2000) has since pointed out that adequacy as a linear model is not the right criterion for a system dynamics model » (§1.4)."
         }
       ]
     },
     {
-      "claim_id": "C066",
-      "locator": "sections[4].paragraphs[2]",
-      "claim_text": "ne figure pas dans l’édition de 1972, qui parle de son modèle mondial, et de ce premier modèle mondial simple",
-      "supports": [
-        {
-          "id": "SUP-320ec9c256375a79",
-          "origin": "validated",
-          "path": "$.notes[2]",
-          "access": "n/a",
-          "text": "Le nom « World3 » n'est pas dans l'ouvrage de 1972 : zéro occurrence sur les 211 feuillets du scan, le livre dit « our world model » et « this first simple world model ». Le mot n'apparaît sur aucun champ rédigé de cette carte ; il figure dans la notice de Herrington (2021) parce que c'est le titre exact de son article."
-        },
-        {
-          "id": "SUP-ea899d00a1179ae9",
-          "origin": "evidence:lecture.json",
-          "path": "$.reserves[4]",
-          "access": "n/a",
-          "text": "LE NOM « WORLD3 » N'EST PAS DANS CE LIVRE, et c'est un point de méthode pour ce dossier précisément. Recherche faite sur la couche texte des 211 feuillets : zéro occurrence de « World3 », « World 3 » ou « Dynamics of Growth ». Le livre dit « our world model », « the world model », « this first simple world model ». Le nom World3 et la version World3-03 viennent de la littérature ultérieure et du rapport technique, que le livre annonce p. 23 sous la formule « the final technical report of our project » sans le nommer. Une carte qui ferait dire au livre de 1972 le mot World3 lui prêterait un vocabulaire qu'il n'a pas ; il est en revanche exact de dire que la littérature appelle World3 le modèle décrit dans ce livre."
-        }
-      ]
-    },
-    {
-      "claim_id": "C067",
+      "claim_id": "C063",
       "locator": "sections[4].paragraphs[2]",
       "claim_text": "Les auteurs écrivent page 91 qu’il n’existe pas un modèle mondial figé, mais un modèle évolutif, continuellement critiqué et mis à jour à mesure que leur compréhension augmente.",
       "supports": [
@@ -1438,23 +1275,16 @@
       ]
     },
     {
-      "claim_id": "C068",
+      "claim_id": "C064",
       "locator": "sections[4].paragraphs[2]",
       "claim_text": "Le nom est venu ensuite et recouvre plusieurs états : lire une évaluation de ce modèle demande donc de savoir duquel il s’agit.",
       "supports": [
         {
-          "id": "SUP-ea899d00a1179ae9",
-          "origin": "evidence:lecture.json",
-          "path": "$.reserves[4]",
-          "access": "n/a",
-          "text": "LE NOM « WORLD3 » N'EST PAS DANS CE LIVRE, et c'est un point de méthode pour ce dossier précisément. Recherche faite sur la couche texte des 211 feuillets : zéro occurrence de « World3 », « World 3 » ou « Dynamics of Growth ». Le livre dit « our world model », « the world model », « this first simple world model ». Le nom World3 et la version World3-03 viennent de la littérature ultérieure et du rapport technique, que le livre annonce p. 23 sous la formule « the final technical report of our project » sans le nommer. Une carte qui ferait dire au livre de 1972 le mot World3 lui prêterait un vocabulaire qu'il n'a pas ; il est en revanche exact de dire que la littérature appelle World3 le modèle décrit dans ce livre."
-        },
-        {
-          "id": "SUP-3a0d78864dabdaaa",
+          "id": "SUP-999c9a50e0cb0840",
           "origin": "validated",
-          "path": "$.notes[4]",
+          "path": "$.notes[3]",
           "access": "n/a",
-          "text": "Localisations données en folios imprimés, relus sur image, jamais en numéros de feuillet du scan : la correspondance n'y est pas constante (feuillet = folio + 2 jusqu'à la page 102, folio + 1 à partir de 104)."
+          "text": "Édition : l'exemplaire ouvert est le cinquième tirage de la première édition de 1972. Les éditions de 1974, 1992 et 2004 n'ont pas été ouvertes. Herrington (2021) travaille sur World3-03, version révisée de 2004, et Turner (2008) sur les sorties de 1974 : leurs scénarios ne sont pas, ligne pour ligne, les figures lues ici. Ces deux sources ne fondent que le point commun aux trois états, à savoir que les scénarios n'étaient pas des prédictions."
         },
         {
           "id": "SUP-1215fe77db4d4686",
@@ -1462,10 +1292,17 @@
           "path": "$.reserves[1]",
           "access": "n/a",
           "text": "TIRAGE DE L'EXEMPLAIRE, ET CE QUE MA PAGINATION NE COUVRE PAS. La page de copyright, relue sur image, énumère quatre tirages et s'arrête à « Fifth printing 1972 » : c'est le cinquième tirage de la première édition, 1972, et mes numéros de page ne valent que pour lui. La deuxième édition de 1974, Beyond the Limits (1992) et The 30-Year Update (2004) n'ont pas été ouverts. L'avertissement est ici plus qu'une formule : Turner (2008), lu intégralement, dit comparer les sorties du modèle « produced in 1974 (the second edition of LtG) », et Herrington (2021), lue intégralement, travaille sur World3-03, version révisée de 2004 dont elle précise que les hypothèses technologiques ont été rendues plus optimistes qu'en 1972. Les scénarios dont parlent ces deux sources ne sont donc pas, ligne pour ligne, les figures que j'ai sous les yeux."
+        },
+        {
+          "id": "SUP-ea899d00a1179ae9",
+          "origin": "evidence:lecture.json",
+          "path": "$.reserves[4]",
+          "access": "n/a",
+          "text": "LE NOM « WORLD3 » N'EST PAS DANS CE LIVRE, et c'est un point de méthode pour ce dossier précisément. Recherche faite sur la couche texte des 211 feuillets : zéro occurrence de « World3 », « World 3 » ou « Dynamics of Growth ». Le livre dit « our world model », « the world model », « this first simple world model ». Le nom World3 et la version World3-03 viennent de la littérature ultérieure et du rapport technique, que le livre annonce p. 23 sous la formule « the final technical report of our project » sans le nommer. Une carte qui ferait dire au livre de 1972 le mot World3 lui prêterait un vocabulaire qu'il n'a pas ; il est en revanche exact de dire que la littérature appelle World3 le modèle décrit dans ce livre."
         }
       ]
     }
   ],
-  "estimated_tokens": 102901,
+  "estimated_tokens": 89081,
   "status": "READY"
 }
