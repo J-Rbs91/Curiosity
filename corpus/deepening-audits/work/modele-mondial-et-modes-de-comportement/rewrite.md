@@ -142,3 +142,125 @@ CONSÉQUENCE POUR LA SUITE
 
 Le texte a changé, donc le SHA a changé : tout fact-check antérieur est invalidé et le cycle doit
 repartir de PREPARE. Aucun verdict n'est rendu ici, ni pédagogique ni factuel.
+
+================================================================================
+
+BOUCLE DE CORRECTION 1 / 2 — FACTCHECK_FIX
+
+concept : modele-mondial-et-modes-de-comportement
+mode    : FACTCHECK_FIX (correction minimale, pas de réécriture)
+gate     : corpus/deepening-audits/work/modele-mondial-et-modes-de-comportement/factcheck-gate.json
+           FACTCHECK_FAIL, 68 claims, 65 soutenus, 3 fermés, tous TOO_STRONG,
+           aucune erreur structurelle.
+SHA audité par le gate : f38c075f3cb2e07a1ba4908594f96b8e36a412770cb0ba00aa018458c2815bb8
+SHA après correction    : 7d7c75dedc30bc4009ec9b239f289b4d0ae1f65c818254605c5611c8f36a0dd2
+
+MATIÈRE RELUE POUR CETTE BOUCLE
+
+- corpus/deepenings/PROTOCOLE.md, AUDIT_PROTOCOL.md, FACTCHECK_PROTOCOL.md
+- corpus/deepenings/modele-mondial-et-modes-de-comportement.json (version fermée par le gate)
+- corpus/validated/modele-mondial-et-modes-de-comportement.json
+- corpus/evidence/modele-mondial-et-modes-de-comportement/ : répertoire listé à nouveau, un seul
+  fichier, lecture.json. Pas de scouting.json, pas de second fichier.
+- factcheck-gate.json, verification.json (motifs des trois claims fermés), claim-map.json
+  (ancrages exacts), factcheck-pack.json (texte réel des supports invoqués).
+- Aucune recherche web, aucun fait ajouté de mémoire, aucun support_id fabriqué.
+
+LES TROIS CLAIMS FERMÉS, ET LA CORRECTION APPLIQUÉE
+
+1. C003 — lead[0], TOO_STRONG.
+   Claim fermé : « on y a cherché des dates d’épuisement, on les a confrontées aux faits, et on a
+   conclu tantôt que le calcul s’était trompé, tantôt qu’il avait vu juste ».
+   Motif du verifier : la première branche est couverte (dates cherchées, confrontation Turner 2008
+   et Herrington 2021, conclusion d’erreur), la seconde ne l’est pas. Randers (SUP-a7dcb35cc4f9b891)
+   écrit seulement qu’il est « un peu plus difficile de répondre à la question de savoir si ‘LC avait
+   raison’ », ce qui est le contraire d’un verdict de justesse rendu par la réception.
+   Geste : RETRAIT de la branche non soutenue. Le texte devient « et on a conclu que le calcul
+   s’était trompé. » Rien n’est ajouté en compensation : la phrase perd son balancement rhétorique
+   et garde son seul contenu attesté.
+   Effet pédagogique : nul sur la suite. Le lead ne se servait de l’alternative que pour installer
+   l’attente d’un chiffre daté, que lead[1] renverse aussitôt ; cette bascule est intacte.
+
+2. C009 — sections[0].paragraphs[0], TOO_STRONG.
+   Claim fermé : « Les figures du livre ont une particularité qu’on remarque à peine : elles n’ont
+   pas d’échelle verticale. »
+   Motif du verifier : le support ne dit l’omission que des sorties de l’ordinateur, folio 123,
+   « We have deliberately omitted the vertical scales [...] of these computer outputs ». La
+   généralisation à toutes les figures du volume (dont des figures documentaires qui ne sont pas des
+   sorties du modèle) n’est établie par aucune preuve fournie.
+   Geste : RÉDUCTION DE PORTÉE au périmètre exact du support. Le texte devient « Les graphiques que
+   le modèle produit ont une particularité qu’on remarque à peine : ils n’ont pas d’échelle
+   verticale. » Accord grammatical ajusté (elles → ils), rien d’autre n’est touché dans le
+   paragraphe : C010 (axe 1900-2100), C011, C012 et C013 étaient soutenus et restent mot pour mot.
+   Effet pédagogique : positif à la marge. Le trait matériel est désormais rattaché à l’objet dont
+   la section parle, les courbes du modèle, et non au livre entier.
+
+3. C058 — sections[4].paragraphs[0], TOO_STRONG.
+   Claim fermé : « Le livre est souvent attribué au Club de Rome, qui n’en est pourtant pas
+   l’auteur. »
+   Motif du verifier : la seconde moitié est couverte (avant-propos p. 11, commentaire séparé
+   p. 185, quatre noms sur la page de titre), mais « souvent attribué » est une affirmation de
+   fréquence sur la réception, et aucun support n’en documente la mesure.
+   Geste : RETRAIT de l’affirmation de fréquence, avec réattribution à ce que les supports portent
+   réellement. Le texte devient « Le Club de Rome a commandité cette étude, il ne l’a pas écrite. »,
+   formulation qui reprend le contenu de SUP-46b9dbff579eac39 sans en excéder la portée.
+   Effet pédagogique : la section perd un effet d’annonce (« on croit que… or ») et garde son
+   information. Le titre « D’où vient ce modèle, et qui l’a signé » continue de couvrir le
+   paragraphe, et l’enchaînement sur les quatre noms de la page de titre est plus direct.
+
+CE QUI N’A PAS ÉTÉ FAIT, VOLONTAIREMENT
+
+- Aucune phrase nouvelle pour combler les retraits. Les trois corrections sont soustractives ou
+  restrictives ; le texte lecteur passe de 1 644 à 1 638 mots.
+- Aucun renforcement ailleurs : les 65 claims soutenus sont inchangés, caractère pour caractère.
+  Les 62 claims hors des trois paragraphes touchés ne sont pas modifiés du tout ; dans les trois
+  paragraphes touchés, seuls les segments fermés ont bougé.
+- Aucune structure, aucun titre, aucun ordre de section déplacé : la trajectoire validée par la
+  boucle REVISE précédente est conservée telle quelle.
+- Aucun support_id inventé, aucune retouche des artefacts de fact-check.
+
+FRONTIÈRE INTERNE
+
+`limits` reste interne et n’est remonté nulle part dans le texte lecteur. Deux frontières
+découvertes par le gate y ont été inscrites, parce qu’elles sont exactement le genre de borne que
+ce champ existe pour tenir :
+
+- limits[0], ajout : le folio 123 ne retire les échelles que des sorties du modèle, non de toutes
+  les figures du volume. Empêche la généralisation qui a fermé C009.
+- limits[1], ajout : aucune fréquence de réception n’est établie, ni attribution courante au Club
+  de Rome, ni verdict de justesse, Randers disant seulement la question difficile à trancher.
+  Empêche à la fois C003 et C058, qui étaient deux formes du même excès, une affirmation sur ce que
+  « on » a fait du livre sans source qui mesure ce « on ».
+
+Les paragraphes limits[2] (Cole et al. 1973 et Sterman connus seulement par Herrington §1.4,
+Nordhaus 1973 metadata-only) et limits[3] (traduction Fayard 1972, notice seule) sont inchangés.
+
+VOLUME
+
+1 638 mots lecteur (avant correction : 1 644), 262 mots de `limits`, 1 900 mots au total.
+Cible lecteur 1 300-1 700 respectée. `limits` dépasse la fourchette indicative de 100-200 mots
+parce qu’il porte désormais six bornes nommées avec leur source et leur état d’accès ; le contrôle
+mécanique l’accepte, et aucune de ces bornes n’est décorative.
+
+CONTRÔLE MÉCANIQUE
+
+npm run corpus:deepen -- --check --only=modele-mondial-et-modes-de-comportement
+→ « 1 approfondissement(s) contrôlé(s), 1900 mots. Rien projeté. »
+Aucun avertissement de citation : les passages entre guillemets n’ont pas été touchés et se
+retrouvent verbatim dans l’enregistrement validé ou dans lecture.json.
+
+RELECTURE PARAGRAPHE PAR PARAGRAPHE
+
+Les dix-sept deltas listés dans la boucle REVISE ci-dessus sont inchangés, à trois nuances près :
+lead[0] établit désormais que le livre a été jugé sur des dates qu’on a trouvées fausses, sans
+prétendre au verdict inverse ; S1.P1 rattache le trait matériel aux sorties du modèle ; S5.P1
+énonce le rôle du Club de Rome au lieu de corriger une croyance non mesurée. Aucun paragraphe ne
+se retrouve sans delta, aucune paire consécutive ne partage le sien, aucune section ne répète
+principalement une section antérieure.
+
+CONSÉQUENCE POUR LA SUITE
+
+Le texte a changé, donc le SHA a changé : le pack, la carte de claims et la vérification de la
+boucle précédente sont invalidés. Le cycle doit repartir de PREPARE sur le SHA
+7d7c75dedc30bc4009ec9b239f289b4d0ae1f65c818254605c5611c8f36a0dd2.
+Aucun verdict n’est rendu ici, ni pédagogique ni factuel.
