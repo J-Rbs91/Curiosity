@@ -1020,6 +1020,89 @@ s'il se trompe. Six lots ont donné dix-huit rapports ; à ce rythme, la couvert
 une quarantaine de lots, et **savoir quel est le taux de défaut réel vaut plus que l'ordre dans
 lequel on le découvre**.
 
+## Le premier lot tiré au hasard — 23 septembre 2026
+
+**Le tirage au hasard proposé le 21 a été fait**, sur les 102 cartes à dossier, par un rang
+déterministe `sha256(date + identifiant)` pour que le lot soit reproductible et non choisi :
+`precarite-des-trajectoires`, `modele-mondial-et-modes-de-comportement`,
+`etat-de-controle-statistique`.
+
+**Les trois rendent `REVISE`. C'est le quatrième lot consécutif sans un seul `PASS` pédagogique,
+et le premier où la sélection ne pouvait pas l'expliquer.** Les trois lots précédents prenaient
+les dossiers épais, c'est-à-dire les cartes où un audit avait le plus de matière pour trouver.
+Celui-ci ne prend rien de particulier, et il trouve autant. **Le taux de défaut sur tirage
+aléatoire est donc de 3 sur 3**, ce qui est peu de mesure mais beaucoup d'information : la
+question n'est plus de savoir quelles cartes auditer en premier, elle est de savoir si une carte
+non auditée est présumée saine. Sur cet échantillon, non.
+
+| | cartes |
+|---|---:|
+| approfondissements | 136 |
+| rapports v3 à jour | **21** |
+| non auditées, **avec** dossier de preuve | **99** |
+| non auditées, **sans** dossier de preuve | **16** |
+
+**Deux cartes closes, une refusée.** `precarite-des-trajectoires` en `rewritten` /
+`FACTCHECK_PASS` / `ACCEPT` après une boucle de correction, `etat-de-controle-statistique` de même
+après deux. `modele-mondial-et-modes-de-comportement` a épuisé les deux boucles autorisées sans
+atteindre le `PASS` ; sa réécriture est refusée et son approfondissement restauré par le SHA de
+blob relevé avant toute écriture, **restauration vérifiée au `sha256sum` comme le chantier G le
+demande depuis le 21**. C'est le premier lot à s'en servir pour de bon.
+
+**Et le refus est instructif, parce qu'il ne porte pas sur la rédaction.** Les claims fermés au
+dernier tour portent tous sur la dynamique des systèmes *en général* — ce qu'est une boucle, ce
+qu'est un modèle fait de circuits, ce que vaut la comparaison de deux scénarios. Le dossier de la
+carte porte le livre de 1972, pas la méthode : le pack n'en connaît que la nomination page 31 et
+la mention d'une « feedback loop structure » page 121. **Un texte qui explique ce concept doit
+expliquer ce qu'est une boucle, et le dossier ne le permet pas.** Une troisième correction aurait
+rencontré le même mur. **Ce qu'il faut est une acquisition, pas une réécriture**, et cette carte
+rejoint à ce titre le chantier F.
+
+### Le cas symétrique du chantier H, et il ferme au lieu d'ouvrir
+
+**`precarite-des-trajectoires` porte l'inverse exact du défaut H.** L'enregistrement validé déclare
+une lecture partielle — `locator: "p. 87-93, ici p. 92"`, notes 4 et 6 annonçant la troisième
+partie non ouverte — alors que `corpus/evidence/precarite-des-trajectoires/lecture.json` lève
+lui-même la réserve et restitue les pages 94 à 97. Le `limits` de l'approfondissement, écrit sur
+l'enregistrement seul, **interdisait au texte une matière qui lui était ouverte**.
+
+**Le chantier H est donc plus large que son titre.** Ce n'est pas « un niveau d'accès surdéclaré
+désarme le gate », c'est **la divergence entre l'enregistrement validé et le dossier**, qui
+désarme le gate quand elle surdéclare et ampute le texte quand elle sous-déclare. Le premier cas
+est le plus dangereux et reste prioritaire ; le second est une perte sèche de matière déjà payée.
+La réparation est la même et elle est amont : la couche approfondissement n'a pas le droit d'y
+toucher.
+
+**Et le verdict que H décrit comme désarmé s'est déclenché cette nuit, sur une carte où l'accès
+est déclaré juste.** Le premier gate d'`etat-de-controle-statistique` a fermé un claim en
+`SOURCE_NOT_CONSULTED` : il présupposait ce que devient une définition de 1931 dans un ouvrage de
+1939 que le dossier déclare non ouvert. **C'est la confirmation que H est un défaut de
+déclaration et non un défaut du verdict** : là où la déclaration est juste, le verdict fonctionne.
+
+### Un défaut dans une preuve, et il est du type que tout le dispositif interdit
+
+`corpus/evidence/etat-de-controle-statistique/lecture.json` écrit que l'ouvrage de 1939, « **où
+Shewhart reprend et déplace cette définition** », n'a pas été ouvert. **La même phrase déclare la
+source non consultée et affirme ce qu'elle contient.**
+
+Le réécrivain l'a vu et ne s'en est pas servi. Mais **le défaut est dans la preuve**, pas dans un
+texte lecteur : il est en position d'autoriser un claim, et rien dans le dispositif ne l'attrape,
+parce que le pack traite le contenu d'un fichier de dossier comme de la matière consultée. **À
+chercher ailleurs qu'ici** : une incise affirmative dans la phrase même qui déclare une source
+fermée n'a aucune raison d'être unique à cette carte.
+
+### Deux anomalies d'exploitation, constatées et non déduites
+
+- **Le répertoire de travail temporaire est partagé entre agents concurrents, et deux agents du
+  lot s'y sont écrasés.** Un fichier au nom générique écrit par une carte a été remplacé par celui
+  d'une autre, en cours d'exécution, deux fois dans la même nuit. Les deux agents l'ont détecté,
+  ont basculé sur un chemin unique et n'ont rien utilisé du contenu étranger ; l'isolation par
+  concept a tenu. **Elle a tenu parce qu'ils ont regardé, pas parce que le dispositif l'imposait**
+  — le même constat que celui déjà écrit plus bas pour les téléchargements.
+- **Le serveur MCP `documentary` est toujours en échec de connexion** (`CONNECTION_CLOSED`),
+  constaté par le harnais au lever. Le lot n'en avait pas besoin : un audit de couverture travaille
+  sur des dossiers déjà au dépôt.
+
 ---
 
 # G. Le pack de preuve ne lisait qu'un fichier du dossier — corrigé le 19 septembre 2026
