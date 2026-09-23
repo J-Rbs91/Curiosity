@@ -218,3 +218,130 @@ Le fichier a changé : le SHA de la version précédente est invalide, et tout f
 l'est avec lui. L'orchestrateur doit reprendre à `PREPARE`.
 
 Je ne rends ni `ACCEPT` ni `FACTCHECK_PASS`.
+
+---
+
+# Boucle de correction 1 sur 2 : FACTCHECK_FIX
+
+mode : FACTCHECK_FIX
+gate lu : `factcheck-gate.json`, verdict `FACTCHECK_FAIL`, 59 claims, 55 soutenus, 4 fermés,
+`structural_errors` vide. Le gate est l'autorité ; `verification.json` n'a servi qu'à lire le
+motif de chaque claim fermé, et `claim-map.json` à retrouver l'empan exact dans le texte.
+
+Matériaux relus pour cette boucle : `PROTOCOLE.md`, `AUDIT_PROTOCOL.md`,
+`FACTCHECK_PROTOCOL.md`, `corpus/deepenings/precarite-des-trajectoires.json`,
+`corpus/validated/precarite-des-trajectoires.json`, le répertoire
+`corpus/evidence/precarite-des-trajectoires/` listé et son unique fichier `lecture.json` lu en
+entier. Aucune recherche web, aucun fait ajouté de mémoire, aucun `SUP-` cité ni fabriqué,
+aucun artefact de fact-check modifié.
+
+## Les quatre corrections
+
+### C010, `sections[0].paragraphs[1]`, TOO_STRONG, correction par retrait de la propriété fautive
+
+Le verifier accorde tout le claim sauf une qualité : rien n'établit que le renseignement était
+« facile à recueillir », propriété de la collecte ajoutée par le texte lecteur.
+
+- avant : « Un renseignement unique, facile à recueillir, était ainsi censé en résumer plusieurs. »
+- après : « Un renseignement unique était ainsi censé en résumer plusieurs. »
+
+Deux mots retirés, rien d'ajouté. Ce que le support autorise (un renseignement unique censé en
+résumer plusieurs) subsiste intégralement ; le delta du paragraphe, qui est la supposition de
+corrélation et non la commodité de l'instrument, n'est pas touché. C009 et C011, qui encadrent le
+claim et étaient soutenus, sont inchangés au caractère près.
+
+### C051, `sections[4].paragraphs[0]`, UNSUPPORTED, correction par retrait
+
+« La réponse n'est pas dans les données, elle précède leur traitement. » est une thèse
+épistémologique générale, sans support résolu et non marquée comme hypothèse. Aucune des deux
+autres issues n'était praticable : la borner supposait une phrase du dossier sur l'ordre entre
+décision de seuil et traitement, qui n'existe pas ; la marquer comme interprétation aurait laissé
+une affirmation générale sans rien derrière. Phrase supprimée, sans remplacement.
+
+Le paragraphe garde son delta, qui est porté par C050, resté soutenu : la difficulté de mesure
+change de nature, il faut désormais décider à partir de quand un maintien devient durable. La
+question qui suit (« Trois ans dans des emplois qui se succèdent, est-ce un parcours précaire… »)
+ferme le paragraphe sur la décision à prendre, sans prétendre en fonder la théorie.
+
+### C055, `sections[4].paragraphs[2]`, UNSUPPORTED, correction par réduction de portée
+
+Le motif du gate vise un énoncé factuel sur les politiques publiques : ce que l'action publique
+vise et compte, et le fait qu'allonger les contrats suffise à afficher un progrès. Le retrait pur
+était ici exclu : la phrase suivante, C056, soutenue, enchaîne sur « la même opération », qui
+n'aurait plus eu d'antécédent. La correction retenue est donc la plus faible qui ferme le motif,
+le passage de l'indicatif assertif au conditionnel modal, exactement la forme que le verifier a
+admise pour C056 (« énoncé conditionnel et modal appuyé sur la citation retenue »).
+
+- avant : « Tant que la précarité se définit par le contrat, l'action publique vise des statuts et
+  les compte : transformer des contrats courts en contrats longs suffit alors à afficher un
+  progrès. »
+- après : « Si la précarité se définit par le contrat, l'action publique peut viser des statuts et
+  les compter, et l'allongement des contrats peut alors suffire à afficher un progrès. »
+
+Aucun contenu nouveau : la phrase ne décrit plus un état de fait des politiques de l'emploi, elle
+déroule la conséquence d'une définition, ce qui est le travail que le paragraphe lui demandait.
+
+### C058, `sections[4].paragraphs[3]`, UNSUPPORTED, correction par retrait
+
+« La contrainte est plus lourde qu'elle n'en a l'air, car le temps d'observation ne se rattrape
+pas. » est une généralité sur les dispositifs d'observation qu'aucune preuve ne porte. Elle est
+retirée sans remplacement, et c'est le retrait le moins coûteux des quatre : la phrase suivante,
+C059, soutenue, énonçait déjà la même chose sous forme concrète et documentée (savoir si un emploi
+signé aujourd'hui était stable suppose d'avoir décidé aujourd'hui de suivre assez longtemps celui
+qui le signe). La version fautive faisait donc surtout doublon avec ce qu'elle annonçait.
+
+Le paragraphe garde sa prise finale : la conclusion ne tranche pas la durée, elle la transforme en
+règle de méthode, et la décision de suivi doit être prise avant de pouvoir constater.
+
+## Ce qui n'a pas bougé
+
+`lead`, sections 1 à 4, titres, et les 55 claims soutenus : aucune retouche, y compris de
+ponctuation. Rien n'a été renforcé, précisé ni étendu ailleurs dans le texte. Aucune phrase n'a
+été ajoutée pour compenser un retrait.
+
+## `limits`
+
+Deux frontières que la boucle a rendues explicites, ajoutées à des paragraphes existants pour
+rester à quatre :
+
+- paragraphe 3 : l'article ne dit rien des conditions de collecte, notamment de la facilité de
+  recueil d'un renseignement administratif, ni de ce qu'un suivi permet de reconstituer après
+  coup. C'est la frontière que C010 et C058 avaient franchie.
+- paragraphe 4 : rien n'y établit ce que vise ou compte l'action publique de l'emploi, d'où le
+  conditionnel imposé à la dernière section. C'est la frontière que C055 avait franchie.
+
+Ces deux ajouts sont internes. Aucun contenu de `limits` n'apparaît dans le texte lecteur, qui
+reste `lead` + `sections`.
+
+## Contrôles
+
+1. Delta de chaque paragraphe modifié : reformulé ci-dessus. S1.P2 conserve le sien (la
+   supposition de corrélation), S5.P1 le sien (la difficulté change de nature), S5.P3 le sien (la
+   notion déplace ce qu'une politique doit regarder), S5.P4 le sien (la durée devient règle de
+   méthode et se décide en amont).
+2. Aucun paragraphe ne se retrouve sans delta après retrait ; aucun n'a dû être fusionné.
+3. Aucune section ne répète principalement une section précédente ; l'ordre est inchangé.
+4. Texte dans les frontières documentaires, `limits` mis à jour sur les deux points franchis.
+5. Aucun bloc de `limits` remonté au lecteur, aucun renvoi à la fabrication du texte.
+6. Contrôle mécanique :
+
+   ```
+   npm run corpus:deepen -- --check --only=precarite-des-trajectoires
+   1 approfondissement(s) contrôlé(s), 1882 mots. Rien projeté.
+   ```
+
+   Aucune erreur, aucun avertissement de citation.
+
+## Volume
+
+- texte lecteur : 1 606 mots, contre 1 640 avant correction. Cible 1 300 à 1 700 : tenue.
+- `limits` : 276 mots, 4 paragraphes.
+- total contrôlé par le script : 1 882 mots.
+
+## Suite
+
+Le fichier a changé : le SHA `d51427379aff324b7c55376bcc42ffddbe501bd3c29ad7d0845d24491503eb62`
+est invalide, et le pack, le claim-map, le bundle et la vérification qui s'y rattachent le sont
+avec lui. L'orchestrateur doit reprendre à `PREPARE`.
+
+Je ne rends ni `ACCEPT` ni `FACTCHECK_PASS`.
