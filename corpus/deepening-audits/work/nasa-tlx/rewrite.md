@@ -202,3 +202,102 @@ POINTS À REGARDER DE PRÈS AU FACT-CHECK
 
 Le SHA du fichier a changé : tout fact-check antérieur est invalidé et le cycle doit reprendre à
 PREPARE.
+
+================================================================================
+
+concept : nasa-tlx
+mode : FACTCHECK_FIX (passe ultérieure, contexte frais)
+check mécanique : PASS (`npm run corpus:deepen -- --check --only=nasa-tlx`, 1 approfondissement
+contrôlé, 1 839 mots, aucun avertissement de citation)
+
+ORIGINE DE LA PASSE
+
+`corpus/deepening-audits/work/nasa-tlx/factcheck-gate.json` rend FACTCHECK_FAIL sur la version
+de SHA e66fbe59f834b1423196d6851333dd7b8766a24192ab188824096885d7ec4406 : 79 claims, 75
+`SUPPORTED`, 4 en échec, aucune erreur structurelle. Le gate est l'autorité ; les motifs
+détaillés ont été relus dans le rapport de gate et l'ancrage exact dans `claim-map.json`.
+
+MATIÈRE LUE POUR CETTE PASSE
+
+- `corpus/deepenings/PROTOCOLE.md`, `FACTCHECK_PROTOCOL.md` ;
+- `corpus/deepenings/nasa-tlx.json` ;
+- `corpus/evidence/nasa-tlx/` listé au préalable : un seul fichier, `lecture.json`, lu
+  intégralement (attribution, citation, `sources_ouvertes`, `definition_de_lauteur`, les onze
+  `reserves`) ; pas de `scouting.json` ;
+- `factcheck-gate.json`, `claim-map.json`, et les supports mis en cause résolus dans
+  `factcheck-pack.json` (`SUP-461e54b6e0a71387`, `SUP-4f77156b7df1e69e`,
+  `SUP-4e11f3ed581ced8e`, `SUP-7a875ce4267ff349`).
+
+Aucune recherche web. Aucun support inventé. Aucun artefact de fact-check modifié à la main.
+Aucune affirmation nouvelle : les quatre corrections ne font que retirer ou borner.
+
+LES QUATRE CORRECTIONS
+
+C002 — `lead[0]`, « aucun appareil ne le relève du dehors », UNSUPPORTED, aucun support résolu.
+
+Geste : retrait pur de l'incise. La phrase passe de « … pour y arriver, et aucun appareil ne le
+relève du dehors : la charge est éprouvée individuellement… » à « … pour y arriver : la charge
+est éprouvée individuellement… ». Rien n'est perdu pour le lecteur : la proposition suivante,
+claim C001, porte déjà l'idée sous la forme que le livret autorise (« il n'existe pas de règle
+graduée qui permette d'estimer ce qu'une activité coûte », adossée au passage de la p. 11 sur
+l'absence de « rulers »). L'incise retirée était une généralisation plus large, sur l'existence
+d'appareils de mesure externes, que rien dans les sources ne soutient.
+
+C013 — `sections[0].paragraphs[0]`, « celle qu'un observateur pourrait à la rigueur estimer sans
+rien demander à personne », UNSUPPORTED, aucun support résolu.
+
+Geste : retrait de l'apposition. La phrase s'arrête désormais à « Ces trois échelles décrivent
+la pression venue du dehors. », qui reste couverte par `SUP-7a875ce4267ff349` (« trois portent
+sur les exigences imposées au sujet »). L'apposition prêtait aux trois premières échelles une
+observabilité externe que le livret n'énonce nulle part. Une reformulation atténuée du type
+« ce que la tâche impose » a été essayée puis écartée : elle aurait doublé la phrase antérieure
+du même paragraphe, sans delta.
+
+C033 — `sections[1].paragraphs[3]`, « Leurs six notes sont identiques, et pourtant leurs scores
+diffèrent dès que ces notes ne sont pas toutes égales entre elles. », TOO_STRONG.
+
+Le seul support est la formule du score (moyenne pondérée, somme divisée par quinze). Elle
+autorise la possibilité d'un écart, pas la nécessité universelle que la condition « dès que »
+affirmait, et le contre-exemple est immédiat : deux jeux de poids distincts peuvent rendre la
+même moyenne pondérée sur des notes non uniformes.
+
+Geste : réduction de portée, de la nécessité à la possibilité. La phrase devient « Leurs six
+notes sont identiques, et pourtant leurs scores peuvent différer. » La conséquence tirée au
+paragraphe suivant (C034, déjà `SUPPORTED`) tient inchangée : il suffit que l'écart soit
+possible pour que le chiffre final porte aussi la hiérarchie établie par la personne.
+
+C074 — `sections[5].paragraphs[1]`, « tout le reste est un jeu de formulaires, cartons de
+comparaison, feuilles de notation, de dépouillement et de calcul », TOO_STRONG.
+
+Les supports établissent que les annexes B à E, quatre annexes, occupent les folios 20 à 26 et
+ne contiennent aucune prose ; ils laissent hors de ce compte les sections 3 à 5 et la
+bibliographie, que le même support signale par ailleurs comme lieu des renvois. « Tout le
+reste » englobait donc des pages dont le contenu n'est pas établi comme formulaire.
+
+Geste : réattribution de la portée exacte au segment réellement documenté. La phrase devient
+« les quatre annexes qui suivent ne contiennent plus aucune prose : cartons de comparaison par
+paires, feuille de notation, feuille de dépouillement, feuille de calcul. » Le décompte
+n'annexe plus les sections intermédiaires ni la bibliographie ; l'énumération reprend celle du
+support. La phrase suivante, « C'est un outil de travail mis en circulation, pas une
+publication » (C075, déjà `SUPPORTED`), reste portée par l'ensemble du paragraphe.
+
+CE QUI N'A PAS ÉTÉ TOUCHÉ
+
+Rien d'autre. Ni le `lead[1]`, ni les cinq autres sections, ni `limits`. Les 75 claims
+`SUPPORTED` de la passe précédente conservent leur libellé, à l'exception des voisins immédiats
+dont seuls les offsets bougent.
+
+CONTRÔLES
+
+1. Delta par paragraphe : les quatre paragraphes touchés gardent chacun leur delta. Le retrait
+   de C002 ne supprime pas un palier, il supprime un doublon plus large que son voisin ; le
+   retrait de C013 supprime une affirmation, pas une étape du raisonnement ; C033 change le
+   quantificateur, pas l'enseignement ; C074 resserre un inventaire.
+2. Aucune section ne répète principalement une section précédente : la structure est inchangée.
+3. Frontières documentaires : chaque phrase corrigée est désormais en deçà de son support.
+4. Aucun contenu de `limits` n'a été remonté dans le texte lecteur ; `limits` est inchangé.
+5. `npm run corpus:deepen -- --check --only=nasa-tlx` : PASS, 1 839 mots (contre 1 864), dans
+   le gabarit. Le `lead` reste dans 120-200 mots.
+
+Le SHA du fichier a changé : le fact-check de SHA e66fbe59… est invalidé, et le cycle doit
+reprendre à PREPARE. Aucun verdict FACTCHECK_PASS n'est prononcé ici.

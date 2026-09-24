@@ -3,7 +3,7 @@
   "concept_id": "nasa-tlx",
   "context_budget_tokens": 300000,
   "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
-  "candidate_sha256": "e66fbe59f834b1423196d6851333dd7b8766a24192ab188824096885d7ec4406",
+  "candidate_sha256": "3de4b4865225c9a2110c58681da9be962fe46d43cc6e85c6f9e44bf4d946cef8",
   "validated_sha256": "d9e55dca2e79fea0f750b23751c752b42511b6908930a8d88bc059fbdaccde5e",
   "evidence_files": [
     {
@@ -14,7 +14,7 @@
   "paragraphs": [
     {
       "locator": "lead[0]",
-      "text": "Imaginons deux personnes qui sortent du même exercice sur simulateur : même consigne, même durée, résultat comparable. L’une n’en garde presque rien, l’autre en sort vidée. Rien de ce qui a été enregistré pendant la séance ne sépare ces deux heures, ni le temps, ni les erreurs, ni les gestes. Ce qui les distingue est ce que chacune a dû dépenser pour y arriver, et aucun appareil ne le relève du dehors : la charge est éprouvée individuellement, par chacun, et il n’existe pas de règle graduée qui permette d’estimer ce qu’une activité coûte. Reste à le demander aux intéressés. Mais poser la question d’un bloc, savoir si c’était difficile, ramène un chiffre unique où l’effort fourni, la pression du temps et la contrariété d’avoir mal fait restent confondus."
+      "text": "Imaginons deux personnes qui sortent du même exercice sur simulateur : même consigne, même durée, résultat comparable. L’une n’en garde presque rien, l’autre en sort vidée. Rien de ce qui a été enregistré pendant la séance ne sépare ces deux heures, ni le temps, ni les erreurs, ni les gestes. Ce qui les distingue est ce que chacune a dû dépenser pour y arriver : la charge est éprouvée individuellement, par chacun, et il n’existe pas de règle graduée qui permette d’estimer ce qu’une activité coûte. Reste à le demander aux intéressés. Mais poser la question d’un bloc, savoir si c’était difficile, ramène un chiffre unique où l’effort fourni, la pression du temps et la contrariété d’avoir mal fait restent confondus."
     },
     {
       "locator": "lead[1]",
@@ -23,7 +23,7 @@
     {
       "locator": "sections[0].paragraphs[0]",
       "section_title": "Ce que les six échelles séparent",
-      "text": "Les six échelles ne sont pas six variantes de la même question. Le livret les répartit en deux groupes. Trois portent sur ce que la tâche a exigé de la personne : l’exigence mentale, l’exigence physique, l’exigence temporelle. La première est posée en toutes lettres : quelle activité de pensée et de perception a-t-il fallu, penser, décider, calculer, chercher ? Ces trois échelles décrivent la pression venue du dehors, celle qu’un observateur pourrait à la rigueur estimer sans rien demander à personne."
+      "text": "Les six échelles ne sont pas six variantes de la même question. Le livret les répartit en deux groupes. Trois portent sur ce que la tâche a exigé de la personne : l’exigence mentale, l’exigence physique, l’exigence temporelle. La première est posée en toutes lettres : quelle activité de pensée et de perception a-t-il fallu, penser, décider, calculer, chercher ? Ces trois échelles décrivent la pression venue du dehors."
     },
     {
       "locator": "sections[0].paragraphs[1]",
@@ -53,7 +53,7 @@
     {
       "locator": "sections[1].paragraphs[3]",
       "section_title": "Quinze paires avant la première note",
-      "text": "Imaginons deux personnes qui marquent exactement les mêmes positions sur les six lignes, mais dont l’une a jugé la pression du temps décisive quand l’autre a mis l’effort en tête. Leurs six notes sont identiques, et pourtant leurs scores diffèrent dès que ces notes ne sont pas toutes égales entre elles. Le chiffre final ne dit donc pas seulement ce que chaque échelle a reçu, mais aussi ce que la personne a estimé compter dans cette tâche."
+      "text": "Imaginons deux personnes qui marquent exactement les mêmes positions sur les six lignes, mais dont l’une a jugé la pression du temps décisive quand l’autre a mis l’effort en tête. Leurs six notes sont identiques, et pourtant leurs scores peuvent différer. Le chiffre final ne dit donc pas seulement ce que chaque échelle a reçu, mais aussi ce que la personne a estimé compter dans cette tâche."
     },
     {
       "locator": "sections[2].paragraphs[0]",
@@ -108,7 +108,7 @@
     {
       "locator": "sections[5].paragraphs[1]",
       "section_title": "Ce que le livret dit de lui-même",
-      "text": "Sa facture va dans le même sens. Le document ne porte aucune date imprimée et aucun nom de personne : il est signé d’un collectif, le Human Performance Research Group, que le corps du texte appelle plus brièvement Human Performance Group. L’exposé tient dans les quatre premières pages, les consignes aux sujets en occupent deux, les définitions des six échelles une annexe ; tout le reste est un jeu de formulaires, cartons de comparaison, feuilles de notation, de dépouillement et de calcul. C’est un outil de travail mis en circulation, pas une publication."
+      "text": "Sa facture va dans le même sens. Le document ne porte aucune date imprimée et aucun nom de personne : il est signé d’un collectif, le Human Performance Research Group, que le corps du texte appelle plus brièvement Human Performance Group. L’exposé tient dans les quatre premières pages, les consignes aux sujets en occupent deux, les définitions des six échelles une annexe ; les quatre annexes qui suivent ne contiennent plus aucune prose : cartons de comparaison par paires, feuille de notation, feuille de dépouillement, feuille de calcul. C’est un outil de travail mis en circulation, pas une publication."
     },
     {
       "locator": "sections[5].paragraphs[2]",
@@ -846,6 +846,6 @@
       "text": "Aucune traduction française publiée de ce document n'a été cherchée avec succès, et aucune n'est connue de moi. La traduction de la phrase citée est de mon fait, faite sur le fac-similé, et ne doit jamais être présentée comme la parole des auteurs : l'original anglais est conservé dans le champ prévu."
     }
   ],
-  "estimated_tokens": 19000,
+  "estimated_tokens": 18958,
   "status": "READY"
 }
