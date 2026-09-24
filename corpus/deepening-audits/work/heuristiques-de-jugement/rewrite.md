@@ -153,3 +153,132 @@ CONTRÔLES DE FIN
    guillemets français avec espaces fines insécables (U+202F) vérifiés un à un, titres de section
    sous 60 caractères et nommant leur sujet, six sections, aucun avertissement de citation.
 6. `npm run corpus:deepen -- --check --only=heuristiques-de-jugement` : PASS.
+
+================================================================================
+
+PASSE 2 — FACTCHECK_FIX
+
+concept : heuristiques-de-jugement
+mode    : FACTCHECK_FIX
+entrée  : corpus/deepening-audits/work/heuristiques-de-jugement/factcheck-gate.json
+          (verdict FACTCHECK_FAIL, 77 claims, 75 supportés, 2 en échec)
+ancrage : corpus/deepening-audits/work/heuristiques-de-jugement/claim-map.json
+supports relus : corpus/deepening-audits/work/heuristiques-de-jugement/factcheck-pack.json
+          (résolution des neuf SUP-... cités par C007 et C066)
+
+Matière relue : PROTOCOLE.md, FACTCHECK_PROTOCOL.md, AUDIT_PROTOCOL.md,
+corpus/deepenings/heuristiques-de-jugement.json, corpus/validated/heuristiques-de-jugement.json,
+corpus/evidence/heuristiques-de-jugement/ listé de nouveau : toujours un seul fichier,
+`lecture.json`. Aucune recherche web, aucun fait ajouté, aucun support inventé.
+
+Le gate est l'autorité. Deux claims seulement sont touchés ; le reste du texte lecteur est
+inchangé, y compris les paragraphes voisins des deux phrases corrigées.
+
+--------------------------------------------------------------------------------
+C007 — lead[1], offsets 414-541, verdict TOO_STRONG
+--------------------------------------------------------------------------------
+
+Avant :
+  « elle dit qu’il existe un petit jeu de procédés par lesquels une tâche hors d’atteinte
+  devient une opération que l’on sait faire »
+
+Après :
+  « elle dit qu’il existe un petit jeu de procédés par lesquels une tâche complexe devient
+  une opération plus simple »
+
+Ce que disent les supports. SUP-dfd1244cfe6b6de5 (evidence:lecture.json, $.definition_de_lauteur)
+et SUP-f16dc4412c2f6e7b (validated, $.review.notes[0]) portent le premier paragraphe en verbatim :
+« they reduce the complex tasks of assessing likelihoods and predicting values to simpler
+judgmental operations ». SUP-0a329daf8b158213 et SUP-ea46cdba7ef656e1 portent la citation avec la
+coupe. Les quatre disent « complex » et « simpler », deux termes relatifs l’un à l’autre.
+
+La faute. La phrase est donnée comme ce que dit la thèse (« elle dit que »), donc en régime
+d’affirmation d’auteur, et elle y substituait deux absolus : « hors d’atteinte » pour complexe,
+« que l’on sait faire » pour plus simple. Aucun support n’établit que la tâche initiale serait
+inaccessible ni que l’opération substituée serait maîtrisée. C’était une escalade de degré sur un
+énoncé attribué.
+
+Correction appliquée : bornage. Le degré est ramené à celui du texte source, rien n’est retiré de
+la structure de la phrase, rien n’est ajouté. Le geste reste lisible pour le lecteur : le
+paragraphe d’ouverture avait déjà installé « à la place du calcul que vous n’avez pas fait », qui
+porte l’intuition ; la thèse n’avait pas besoin de la redire en plus fort. Delta du paragraphe
+inchangé : il pose la question du rapport et sa réponse en une phrase.
+
+Pas de recouvrement créé avec S1.P2, qui fait un autre travail : il sépare vraisemblance et
+valeur, donne le verbatim complet avec sa traduction, et nomme l’échange (c’est le résultat de la
+tâche courte qui est rendu en réponse). Le lead énonce, S1.P2 décompose.
+
+--------------------------------------------------------------------------------
+C066 — sections[5].paragraphs[0], offsets 236-431, verdict TOO_STRONG
+--------------------------------------------------------------------------------
+
+Avant :
+  « Ses seize notes finales renvoient à des résultats déjà parus, dans le Psychological
+  Bulletin en 1971 et dans Cognitive Psychology en 1972, et deux d’entre elles annoncent des
+  articles à paraître. »
+
+Après :
+  « Il compte seize notes finales, dont deux renvoient à des résultats déjà parus, dans le
+  Psychological Bulletin en 1971 et dans Cognitive Psychology en 1972, et deux autres annoncent
+  des articles à paraître. »
+
+Ce que disent les supports. Le nombre de seize est établi deux fois : SUP-465a85c55ec05830
+(validated, $.review.notes[5], « les feuilles 35-36 (= p. 32-33) contiennent REFERENCES AND NOTES,
+notes 1 à 16 ») et SUP-66d5a53a3634ec31 (validated, $.notes[4], même comptage). Le détail des
+notes s’arrête à quatre : SUP-be5a9d7602201304 (validated, $.review.notes[9]) écrit que c’est
+« vrai des notes 2 (Cognitive Psychology 1972) et 5 (Psychological Bulletin 1971), tandis que les
+notes 1 et 6 portent in press en 1973 ». SUP-3c5ff47979a1e263 (evidence:lecture.json,
+$.reserves[10]) recoupe les quatre titres et déclare qu’aucun n’a été ouvert. Les douze autres
+notes ne sont documentées nulle part.
+
+La faute. Le sujet « Ses seize notes finales » attribuait à l’ensemble une propriété attestée pour
+deux d’entre elles. Le compte, lui, était juste ; c’est la portée du prédicat qui débordait.
+
+Correction appliquée : réduction de portée. Le nombre seize est conservé, puisqu’il est établi, et
+il change de fonction : il devient le total dont on prélève deux plus deux, au lieu du sujet d’une
+généralisation. Les deux notes « in press » passent de « deux d’entre elles » à « deux autres »,
+ce qui les distingue explicitement des deux premières et cale la phrase sur les notes 1, 2, 5 et 6
+exactement. Aucun fait nouveau, aucune source nouvelle, aucun chiffre qui ne soit dans les
+supports.
+
+C067, la phrase suivante (« Il ne rend donc pas compte d’une expérience nouvelle : il met en ordre
+ce que ses auteurs avaient publié par morceaux »), était SUPPORTED et n’est pas touchée. Son
+« donc » reste porté : deux publications antérieures et deux à paraître suffisent à la mise en
+ordre qu’elle énonce, qui ne dépendait pas du compte total.
+
+--------------------------------------------------------------------------------
+`limits` — précision interne ajoutée
+--------------------------------------------------------------------------------
+
+Le premier paragraphe de `limits` disait que les notes finales renvoient aux quatre titres, sans
+dire combien de notes sont réellement documentées. C’est la frontière exacte que le gate a
+trouvée, et elle manquait au registre interne. Phrase ajoutée :
+
+  « Sur les seize notes des pages 32 et 33, quatre seulement sont documentées ici, les notes 1,
+  2, 5 et 6 : rien ne peut être dit des douze autres, ni de ce vers quoi elles renvoient, et
+  aucune propriété observée sur ces quatre ne vaut pour l’ensemble. »
+
+Elle nomme la source (les notes des p. 32-33), l’état de connaissance (quatre notes sur seize) et
+l’affirmation interdite (toute généralisation à l’ensemble). Elle reste interne : elle n’apparaît
+nulle part dans `lead` ni dans `sections`, et le champ n’est pas rendu au lecteur.
+
+--------------------------------------------------------------------------------
+CONTRÔLES
+--------------------------------------------------------------------------------
+
+1. Deltas. Aucun paragraphe n’a été ajouté ni supprimé ; les deltas établis à la passe 1 sont
+   inchangés. Les deux phrases corrigées font toujours le même travail dans leur paragraphe, à
+   un degré d’affirmation près.
+2. Aucune section ne répète principalement une section précédente : la structure n’a pas bougé.
+3. Frontières documentaires : les deux phrases sont désormais en deçà de leurs supports plutôt
+   qu’au-delà. Rien n’a été ajouté hors de `lecture.json`, des `notes` et du bloc `review`.
+4. `limits` n’est pas remonté en bloc visible.
+5. Aucune citation modifiée : les passages entre guillemets du texte lecteur sont intacts, aucun
+   avertissement de citation au contrôle.
+6. Volume. Total compté par le script : 1 935 mots, `limits` compris (le compteur additionne
+   `lead`, `sections` et `limits`). Texte lecteur : 3 mots de moins qu’avant la correction.
+7. `npm run corpus:deepen -- --check --only=heuristiques-de-jugement` → PASS.
+   « 1 approfondissement(s) contrôlé(s), 1935 mots. Rien projeté. »
+
+Le SHA de l’approfondissement a changé : le fact-check précédent est caduc et la chaîne doit
+reprendre à PREPARE. Aucun artefact de fact-check n’a été édité à la main.
