@@ -1,351 +1,351 @@
 {
   "concept_id": "impossibilite-de-l-agregation-des-preferences",
-  "candidate_sha256": "443544184842abbba86ec1dec391dc6b1551df2d3928905818c1d9ba4092bb5f",
+  "candidate_sha256": "1dd7916861e53aaf6d26ac37903c255d0fa1d1ba06a968256519f886706c9991",
   "results": [
     {
       "claim_id": "C001",
       "verdict": "SUPPORTED",
-      "reason": "La lecture primaire rapporte qu'Arrow n'emploie que la relation R soumise a connexite (pour tous x et y, xRy ou yRx) et transitivite : comparabilite de deux options quelconques et non-contradiction d'une comparaison a l'autre."
+      "reason": "La lecture (definition_de_lauteur) donne les deux axiomes sur R, connexite (pour tous x et y, soit x R y soit y R x) et transitivite : comparabilite de deux options quelconques et non-contradiction d'une comparaison a l'autre sont exactement ces deux axiomes, sans ajout."
     },
     {
       "claim_id": "C002",
       "verdict": "SUPPORTED",
-      "reason": "Le support cite l'enonce du probleme p. 9 : former a partir des schemas de preference individuels une fonction dont les valeurs sont elles-memes des ordres faibles ; la difficulte porte bien sur le passage au classement unique du groupe."
+      "reason": "Le support enonce le probleme lu p. 9 : former a partir des schemas de preferences individuels une fonction dont les valeurs sont elles-memes des ordres faibles. Le passage au classement du groupe est bien le lieu du probleme pose par le rapport."
     },
     {
       "claim_id": "C003",
       "verdict": "SUPPORTED",
-      "reason": "Transitivite exigee de la relation sociale R par la Condition 1 (R est une relation d'ordre faible, definie par connexite et transitivite) selon le support."
+      "reason": "Transitivite exigee de la sortie sociale : Condition 1 demande que R soit un ordre faible, defini dans le meme support par connexite et transitivite. L'enonce du claim est l'instanciation directe de la transitivite."
     },
     {
       "claim_id": "C004",
       "verdict": "SUPPORTED",
-      "reason": "Reference validee : Arrow, RAND Corporation, Paper P-41, 26 octobre 1948, 19 p. ; la note de revue 5 verifie la pagination imprimee de 19 pages aux deux bornes ; le nom d'auteur figure dans l'enregistrement valide."
+      "reason": "Citation de lecture et reference validee concordent : Arrow, RAND Corporation, Paper P-41, 26 octobre 1948, 19 p. La note de revue sur la pagination verifie les deux bornes du compte de dix-neuf pages ; authors[0].name et authorship SOLE_AUTHOR donnent le nom et l'unicite de signature."
     },
     {
       "claim_id": "C005",
       "verdict": "SUPPORTED",
-      "reason": "Le support decrit la marche du rapport : vocabulaire fixe, puis six conditions imposees a toute fonction de bien-etre social pp. 9-11, puis la question de leur compatibilite (« It will be shown that Conditions 1-6 are inconsistent »)."
+      "reason": "Le support decrit la marche du rapport : vocabulaire fixe section 2, probleme pose p. 9, puis six conditions p. 9-11 imposees a la fonction, et un theoreme quantifie sur toute fonction de bien-etre social satisfaisant les Conditions 1-3. Exigences d'abord, examen de leur compatibilite ensuite : le claim n'excede pas cette structure."
     },
     {
       "claim_id": "C006",
       "verdict": "SUPPORTED",
-      "reason": "« It will be shown that Conditions 1-6 are inconsistent » (p. 11) et le resume valide : les six conditions sont incompatibles."
+      "reason": "p. 11 : « It will be shown that Conditions 1-6 are inconsistent. » ; le summary valide et la note de revue 11 confirment l'incompatibilite. La reponse negative est directement autorisee."
     },
     {
       "claim_id": "C007",
       "verdict": "SUPPORTED",
-      "reason": "Le texte original conserve « Under certain very reasonable restrictions » et la note 3 de l'enregistrement valide insiste sur le caractere conditionnel du resultat."
+      "reason": "La citation retenue, en version originale et traduite, porte « Under certain very reasonable restrictions » ; la note validee sur la coupe rappelle que l'impossibilite n'est pas inconditionnelle. Le caractere conditionnel est verbatim."
     },
     {
       "claim_id": "C008",
       "verdict": "SUPPORTED",
-      "reason": "La phrase d'Arrow excepte « certain trivial methods which violate democratic principles » ; la note 3 validee identifie ces methodes comme la fonction conventionnelle et la fonction dictatoriale, que le Theoreme 2 laisse seules debout."
+      "reason": "La phrase p. 3 excepte « certain trivial methods which violate democratic principles » ; la note validee sur la coupe identifie ces methodes comme la fonction conventionnelle et la fonction dictatoriale, et le Theoreme 2 les nomme comme les deux seules issues. L'attribution a Arrow est exacte, c'est sa propre phrase."
     },
     {
       "claim_id": "C009",
       "verdict": "SUPPORTED",
-      "reason": "La note d'attribution etablit que les deux premieres pages relevent de l'economie du bien-etre (Pareto, Barone, Hotelling, Scitovsky, Bergson) et que le phenomene generalise est l'incoherence du principe de compensation, non un probleme de scrutin."
+      "reason": "La note d'attribution de lecture etablit que les deux premieres pages sont une revue d'economie du bien-etre (Jevons, Edgeworth, Marshall, Pareto, Bergson, Scitovsky pour l'incoherence du principe de compensation) : le point de depart est bien un echec local dans ce domaine, non un probleme de scrutin."
     },
     {
       "claim_id": "C010",
       "verdict": "SUPPORTED",
-      "reason": "La note de revue 1 donne le passage verbatim de la p. 3 : « as pointed out by T. de Scitovsky... Thus, the compensation principle does not provide a true ordering of social decisions. »"
+      "reason": "Note de revue 1 et note 9 citent la p. 3 verbatim : « as pointed out by T. de Scitovsky... Thus, the compensation principle does not provide a true ordering of social decisions » ; la note d'attribution precise que la p. 3 attribue explicitement l'incoherence a T. de Scitovsky. La clause reste dans le compte rendu de la page 3."
     },
     {
       "claim_id": "C011",
       "verdict": "SUPPORTED",
-      "reason": "Consequence directe des supports : ce qui manque au principe de compensation est « a true ordering of social decisions », c'est-a-dire l'ordre faible exige d'un classement de groupe par la Condition 1."
+      "reason": "Rendu francais fidele de la phrase citee aux notes de revue 1 et 9 : « the compensation principle does not provide a true ordering of social decisions »."
     },
     {
       "claim_id": "C012",
       "verdict": "SUPPORTED",
-      "reason": "La note de revue 1 restitue la sequence exacte de la p. 3 : la phrase sur le principe de compensation est suivie de « It is the purpose of this note to show that this phenomenon is very general. »"
+      "reason": "Le support etablit ce qu'on attend d'un classement de groupe : la sortie doit etre une relation d'ordre faible sur des decisions sociales (probleme p. 9, Condition 1). Le rapprochement avec l'absence d'« ordre veritable des decisions sociales » ne fait qu'expliciter cette exigence, sans ajouter de portee."
     },
     {
       "claim_id": "C013",
       "verdict": "SUPPORTED",
-      "reason": "La note d'attribution ecrit que l'apport du rapport est la generalisation d'un resultat d'autrui, qu'il le dit lui-meme ; le versant negatif (aucun paradoxe des urnes nomme) est porte par la reserve 5 et la note 4 validee."
+      "reason": "La note de revue 1 restitue la sequence exacte de la p. 3 : la phrase sur le principe de compensation est immediatement suivie de « It is the purpose of this note to show that this phenomenon is very general. » Le verbatim et l'ordre des phrases sont verifies."
     },
     {
       "claim_id": "C014",
       "verdict": "SUPPORTED",
-      "reason": "La reserve 5 consigne le fait negatif precisement parce qu'il contredit ce que la memoire du champ prete a ce texte ; l'absence elle-meme est affirmee par la note 4 validee. La mention d'un lecteur francais restreint l'attente sans elargir la portee documentaire."
+      "reason": "La note d'attribution ecrit que ce que le rapport apporte est la generalisation d'un resultat d'autrui et qu'il le dit lui-meme ; reserves[5] et notes[4] etablissent qu'aucun nom de Condorcet, Borda ou paradoxe de vote n'y figure. Les deux moitiees du claim sont couvertes."
     },
     {
       "claim_id": "C015",
       "verdict": "SUPPORTED",
-      "reason": "Note 4 validee et reserve 5 : ni Condorcet, ni le paradoxe de vote, ni Borda ne sont nommes dans ce rapport ; la note de revue 5 etablit la pagination de dix-neuf pages. Le claim n'affirme pas plus que ses supports."
+      "reason": "notes[4] valide et reserves[5] affirment tous deux l'absence de Condorcet, du paradoxe de vote et de Borda dans le rapport, recherche menee sur les vingt et un feuillets et parcours complet ; la reserve d'OCR, portee par le dossier, est reprise dans les limites de la carte."
     },
     {
       "claim_id": "C016",
       "verdict": "SUPPORTED",
-      "reason": "Note 4 validee, reprise a l'identique : la methode de vote par rangs est exposee p. 15 sous le seul nom de « the rank-order method of voting », sans attribution."
+      "reason": "reserves[5] et notes[4] donnent la page 15, le nom exact « the rank-order method of voting » et l'absence d'attribution. Reproduction fidele."
     },
     {
       "claim_id": "C017",
       "verdict": "SUPPORTED",
-      "reason": "Reserve 5 (« contredit ce que la memoire du champ prete a ce texte »), note 4 validee (absence des noms) et note de revue 10 (Condorcet precede le paradoxe, pas le theoreme axiomatique) autorisent l'ecart entre genealogie recue et texte de 1948."
+      "reason": "Formulation reprise du dossier lui-meme : reserves[5] et la note d'attribution qualifient ce fait de negatif « parce qu'il contredit ce que la memoire du champ prete a ce texte »."
     },
     {
       "claim_id": "C018",
       "verdict": "SUPPORTED",
-      "reason": "Enonce du probleme p. 9 cite dans le support : la fonction prend les schemas de preferences individuels et rend une relation d'ordre faible pour la societe."
+      "reason": "p. 9 : « to form a function of the individual preference patterns such that the values of the function are themselves weak ordering relations » ; p. 3 precise que les alternatives sont des decisions sociales. Entree de preferences individuelles, sortie de classement collectif."
     },
     {
       "claim_id": "C019",
       "verdict": "SUPPORTED",
-      "reason": "Condition 1 telle que rapportee : pour tous R1,...,Rn, R est un ordre faible, defini par connexite (comparaison de deux options quelconques) et transitivite (absence de boucle)."
+      "reason": "Condition 1 « Universality of Social ordering » : pour tous R1,...,Rn, R est un ordre faible, defini par connexite (comparaison de deux options quelconques) et transitivite. « Aucune boucle » est un rendu non amplificateur de la transitivite."
     },
     {
       "claim_id": "C020",
       "verdict": "SUPPORTED",
-      "reason": "La note de revue 11 validee donne la Condition 1 p. 9 verbatim : « For all R1,…,Rn, R is a weak ordering relation »."
+      "reason": "La note de revue 11 donne le verbatim et la page : celles-ci commencant p. 9, Condition 1, « For all R1,...,Rn, R is a weak ordering relation » ; la lecture confirme la Condition 1 et la plage p. 9-11."
     },
     {
       "claim_id": "C021",
       "verdict": "SUPPORTED",
-      "reason": "Le support precise qu'Arrow travaille avec la seule relation R, « preferred or indifferent », dont les deux axiomes definissent l'ordre faible : l'indifference y est admise."
+      "reason": "La lecture etablit qu'Arrow travaille avec la seule relation R, « preferred or indifferent », soumise a connexite et transitivite, ces deux axiomes definissant l'ordre faible : l'ordre ainsi defini admet bien l'indifference. Glose terminologique sans attribution primaire ajoutee."
     },
     {
       "claim_id": "C022",
       "verdict": "SUPPORTED",
-      "reason": "Les entrees sont des schemas de preferences ; la p. 2 attribue a Bergson le fait que la fonction n'a besoin de dependre que de ces schemas et non de la mesurabilite de l'utilite individuelle, et la p. 11 declare cette mesurabilite sans effet."
+      "reason": "La note d'attribution cite la p. 2 : la fonction « need only depend on the preference schedules of individuals and not on the measurability of individual utility » ; la p. 11 ajoute que la mesurabilite est sans effet, et l'attribution_note validee parle du caractere purement ordinal. Des entrees purement ordinales excluent intensite et quantite comparable d'une personne a l'autre."
     },
     {
       "claim_id": "C023",
       "verdict": "SUPPORTED",
-      "reason": "Note de revue 9 validee, p. 2 verbatim : « A. Bergson has reintroduced the social welfare function and has pointed out that it need only depend on the preference schedules of individuals » ; la note d'attribution conclut que ce cadrage n'est pas d'Arrow."
+      "reason": "Note d'attribution, note de revue 9 et attribution_note validee citent la p. 2 : « A. Bergson has reintroduced the social welfare function and has pointed out that it need only depend on the preference schedules of individuals ». L'intermediaire est conserve : le texte dit qu'Arrow attribue."
     },
     {
       "claim_id": "C024",
       "verdict": "SUPPORTED",
-      "reason": "Support verbatim p. 11 : « This shows that measurability of individual utility is irrelevant to the ordering of social utilities. »"
+      "reason": "p. 11, verbatim dans la lecture : « This shows that measurability of individual utility is irrelevant to the ordering of social utilities. » Page et contenu exacts."
     },
     {
       "claim_id": "C025",
       "verdict": "SUPPORTED",
-      "reason": "Le support tire explicitement cette consequence : « l'impossibilite ne tient pas a ce que l'utilite serait incommensurable », p. 11."
+      "reason": "La lecture tire elle-meme cette consequence du rapport : « l'impossibilite ne tient pas a ce que l'utilite serait incommensurable : page 11... »."
     },
     {
       "claim_id": "C026",
       "verdict": "SUPPORTED",
-      "reason": "Les Conditions 2 et 3 telles que rapportees portent l'une et l'autre sur la dependance de la sortie sociale a l'egard des preferences recues."
+      "reason": "Condition 2 « Monotonicity » dans la lecture : si une alternative monte dans les preferences de certains individus, toutes choses egales par ailleurs, la societe ne doit pas la classer plus bas. Rendu quasi litteral."
     },
     {
       "claim_id": "C027",
       "verdict": "SUPPORTED",
-      "reason": "Condition 2, « Monotonicity », rendue a l'identique par le support : si une alternative monte dans les preferences de certains individus, toutes choses egales par ailleurs, la societe ne doit pas la classer plus bas."
+      "reason": "Nom exact de la Condition 3 dans la lecture : « Independence of irrelevant alternatives »."
     },
     {
       "claim_id": "C028",
       "verdict": "SUPPORTED",
-      "reason": "Instanciation didactique de la Condition 3 telle que citee : C(S) doit etre independant de l'existence meme d'alternatives hors de S et ne dependre que des echelles individuelles a l'interieur de S."
+      "reason": "Instanciation fidele de la motivation citee p. 10 : C(S) « should be independent of the very existence of alternatives outside of S, and therefore should depend only on the individual preference scales within S ». L'exemple des trois projets et du quatrieme ne fait qu'appliquer cette formule, y compris la clause sur les classements individuels."
     },
     {
       "claim_id": "C029",
       "verdict": "SUPPORTED",
-      "reason": "Citation p. 10 presente verbatim dans le support, avec sa motivation (C(S) comme choix que la societe ferait si l'espace se reduisait a S)."
+      "reason": "La lecture situe la motivation p. 10 et donne le verbatim inclus dans le claim, avec l'interpretation de C(S) comme choix de la societe si l'espace se reduisait a S."
     },
     {
       "claim_id": "C030",
       "verdict": "SUPPORTED",
-      "reason": "Le support situe p. 10 les Definitions 8 et 9 (conventionnelle, dictatoriale) et la phrase « There are social welfare functions satisfying Conditions 1-3 ... fall into one of the two classes given by the following definitions »."
+      "reason": "Definitions 8 et 9 de la p. 10 pour conventionnel et dictatorial, et p. 10 : « There are social welfare functions satisfying Conditions 1-3; ... these functions fall into one of the two classes ». Deux familles definies p. 10 qui satisfont les trois premieres conditions."
     },
     {
       "claim_id": "C031",
       "verdict": "SUPPORTED",
-      "reason": "Definition 8 p. 10 rapportee par la lecture : il existe deux alternatives distinctes x et y avec x R y independamment de R1,...,Rn, R signifiant « preferred or indifferent »."
+      "reason": "Definition 8, p. 10, dans la lecture : « il existe deux alternatives distinctes x et y avec x R y independamment de R1,...,Rn, c'est-a-dire un classement fixe d'avance ». R valant « preferred or indifferent », « devant ou a egalite » est exact ; la note de revue 11 confirme « fixe d'avance »."
     },
     {
       "claim_id": "C032",
       "verdict": "SUPPORTED",
-      "reason": "Definition 9 p. 10 rapportee : il existe un individu i pour lequel x P y des que x Pi y, quelles que soient les preferences de tous les autres."
+      "reason": "Definition 9, p. 10 : « il existe un individu i pour lequel x P y des que x Pi y, quelles que soient les preferences de tous les autres ». Rendu exact, y compris la clause sur les autres."
     },
     {
       "claim_id": "C033",
       "verdict": "SUPPORTED",
-      "reason": "Consequence immediate de la Definition 8 telle que citee : l'existence d'une seule paire fixee suffit, donc la classe deborde le cas d'un ordre entier fixe d'avance."
+      "reason": "Consequence directe de la forme existentielle de la Definition 8 telle que la lecture la rapporte (il suffit d'une paire x, y fixee) : la classe conventionnelle est donc plus large que celle des classements integralement fixes d'avance. Deduction sans ajout de portee."
     },
     {
       "claim_id": "C034",
       "verdict": "SUPPORTED",
-      "reason": "Le support place les six conditions pp. 9-11 et la demonstration pp. 11-13 : les Conditions 4 et 5 sont des hypotheses, posees avant toute preuve."
+      "reason": "La lecture place les Conditions 4 et 5 parmi les six conditions posees p. 9-11, la demonstration n'intervenant que p. 11-13 : l'exclusion est bien par hypothese et non posterieure."
     },
     {
       "claim_id": "C035",
       "verdict": "SUPPORTED",
-      "reason": "Conditions 4 et 5 : « la fonction ne doit etre ni conventionnelle ni dictatoriale » ; la note de revue 11 confirme leur enonce p. 11 avec les autres conditions."
+      "reason": "Lecture : « Conditions 4 et 5 : la fonction ne doit etre ni conventionnelle ni dictatoriale », enoncees avec les autres p. 9-11, avant la demonstration p. 11-13."
     },
     {
       "claim_id": "C036",
       "verdict": "SUPPORTED",
-      "reason": "Texte original de la p. 3, verifie verbatim par la note de revue 1 : « apart from certain trivial methods which violate democratic principles »."
+      "reason": "original_text (lecture et fiche validee) et note de revue 1 etablissent le verbatim p. 3 « apart from certain trivial methods which violate democratic principles » ; notes[3] valide explicite le contenu de cette exception."
     },
     {
       "claim_id": "C037",
       "verdict": "SUPPORTED",
-      "reason": "La note de traduction indique que les methodes exceptees, convention et dictature, produisent bel et bien une echelle coherente ; la p. 10 confirme qu'il existe des fonctions satisfaisant les Conditions 1-3, d'ou la necessite des Conditions 4 et 5."
+      "reason": "notes[3] et la note de traduction disent que les methodes exceptees, convention et dictature, produisent bel et bien une echelle coherente ; la p. 10 confirme qu'il existe des fonctions satisfaisant les Conditions 1-3."
     },
     {
       "claim_id": "C038",
       "verdict": "SUPPORTED",
-      "reason": "Citation p. 10 dans le support : « There are social welfare functions satisfying Conditions 1-3 » ; l'impossibilite ne nait que de l'ajout des Conditions 4 et 5."
+      "reason": "p. 10 verbatim : « There are social welfare functions satisfying Conditions 1-3 » ; la Condition 6 ne portant que sur le nombre d'alternatives, la consequence tiree pour l'ensemble prive de 4 et 5 suit les supports, et la partie attribuee a la page 10 est exactement ce que la page ecrit."
     },
     {
       "claim_id": "C039",
       "verdict": "SUPPORTED",
-      "reason": "Theoreme 2 p. 14 cite verbatim par la lecture, par la note de revue 11 validee et par la reserve 6."
+      "reason": "Theoreme 2, p. 14, verbatim identique dans la lecture, dans reserves[6] (relu sur l'image) et dans la note de revue 11."
     },
     {
       "claim_id": "C040",
       "verdict": "SUPPORTED",
-      "reason": "La p. 10 affirme l'existence de fonctions satisfaisant les Conditions 1-3, et la note 3 validee rappelle que l'impossibilite n'est pas inconditionnelle."
+      "reason": "p. 10 atteste l'existence de fonctions satisfaisant les Conditions 1-3, et notes[3] rappelle que sans l'exception l'impossibilite paraitrait inconditionnelle, ce qu'elle n'est pas."
     },
     {
       "claim_id": "C041",
       "verdict": "SUPPORTED",
-      "reason": "Reformulation fidele du Theoreme 2 : au-dela de deux alternatives, toute fonction satisfaisant les Conditions 1-3 est conventionnelle ou dictatoriale."
+      "reason": "Paraphrase fidele du Theoreme 2 : au-dela de deux alternatives, toute fonction satisfaisant les Conditions 1-3 est conventionnelle ou dictatoriale, ces deux classes etant celles que les Conditions 4 et 5 excluent."
     },
     {
       "claim_id": "C042",
       "verdict": "SUPPORTED",
-      "reason": "Condition 6 (au moins trois alternatives, p. 11), Conditions 4 et 5 (ni conventionnelle ni dictatoriale) et Theoreme 2 sont tous rapportes par les supports."
+      "reason": "Lecture : « Condition 6, page 11 ... il y a au moins trois alternatives » ; note de revue 11 : « Condition 6. There are at least three alternatives. »"
     },
     {
       "claim_id": "C043",
       "verdict": "SUPPORTED",
-      "reason": "« Conditions 1-6 are inconsistent » et le resume valide (« six conditions ... elles sont incompatibles ») portent bien une incompatibilite du bloc, non le defaut d'une condition isolee."
+      "reason": "Conditions 4 et 5 interdisent conventionnel et dictatorial (lecture), et le Theoreme 2 etablit qu'au-dela de deux alternatives toute fonction satisfaisant 1-3 tombe dans l'une des deux classes."
     },
     {
       "claim_id": "C044",
       "verdict": "SUPPORTED",
-      "reason": "Citation p. 11 verbatim dans la lecture et dans la note de revue 11."
+      "reason": "p. 11 : « Conditions 1-6 are inconsistent » ; la meme lecture atteste que des fonctions satisfont 1-3 et que le Theoreme 4 satisfait 2-5 avec une Condition 1 modifiee : l'incompatibilite est bien celle du bloc, non d'une condition isolee."
     },
     {
       "claim_id": "C045",
       "verdict": "SUPPORTED",
-      "reason": "Consequence de l'inconsistance conjointe rapportee, que le rapport prolonge lui-meme en cherchant laquelle des conditions relacher."
+      "reason": "Verbatim p. 11 present dans la lecture et dans la note de revue 11, avec la meme page."
     },
     {
       "claim_id": "C046",
       "verdict": "SUPPORTED",
-      "reason": "Le support indique qu'Arrow ecarte d'emblee deux conditions qu'il juge intouchables, p. 14."
+      "reason": "La lecture indique que le rapport « cherche ensuite laquelle des conditions relacher » : l'inconsistance du bloc laisse ouverte l'identite de la condition a ceder."
     },
     {
       "claim_id": "C047",
       "verdict": "SUPPORTED",
-      "reason": "Citation p. 14 dans le support : « From the very meaning of a social decision process, it is hard to see how Conditions 1 or 3 can be weakened » ; le claim conserve l'attribution (« selon lui »)."
+      "reason": "Lecture, p. 14 : « From the very meaning of a social decision process, it is hard to see how Conditions 1 or 3 can be weakened », que la lecture glose par deux conditions ecartees d'emblee comme intouchables. Le claim conserve la modalisation (« selon lui ») et le verbatim."
     },
     {
       "claim_id": "C048",
       "verdict": "SUPPORTED",
-      "reason": "Le support enumere les autres voies examinees : section 5 p. 14 (deux alternatives) et section 7 pp. 16-18 (restriction du domaine des preferences)."
+      "reason": "Lecture : « il examine donc les autres voies. Section 5, page 14 ... Section 7, pages 16 a 18 », c'est-a-dire ailleurs que dans les Conditions 1 et 3."
     },
     {
       "claim_id": "C049",
       "verdict": "SUPPORTED",
-      "reason": "Le locator valide place la phrase a la fin de la section 1 « Introduction » p. 3, et la note de revue 1 confirme que l'intertitre suivant est « 2. The Nature of Preference Relations » ; le fragment francais est celui de la citation validee."
+      "reason": "quotation.text (lecture et fiche validee) porte « Sous certaines restrictions tres raisonnables » ; les deux locators et la note de revue 1 situent la phrase a la fin de la section 1 « Introduction », p. 3."
     },
     {
       "claim_id": "C050",
       "verdict": "SUPPORTED",
-      "reason": "Condition 6 p. 11 pour ecarter les cas triviaux, avec l'enonce verbatim dans la note de revue 11 : « To guard against trivialities ... There are at least three alternatives. »"
+      "reason": "Lecture : « Condition 6, page 11, pour ecarter les cas triviaux » ; note de revue 11 : « To guard against trivialities, the following condition is imposed: Condition 6 », p. 11."
     },
     {
       "claim_id": "C051",
       "verdict": "SUPPORTED",
-      "reason": "Le support situe la demonstration pp. 11-13 et decrit son articulation."
+      "reason": "Lecture : « La demonstration, pages 11 a 13, passe par la notion d'ensemble decisif »."
     },
     {
       "claim_id": "C052",
       "verdict": "SUPPORTED",
-      "reason": "Compte rendu de structure conforme au support : ensembles decisifs (Definition 10), plus petit ensemble decisif, trois profils sur trois alternatives, ensemble strictement plus petit, contradiction. La reserve 0 precise que ces pages sont rapportees en structure, sans verbatim, ce que le claim respecte."
+      "reason": "Lecture : Definition 10 p. 11 de l'ensemble decisif (x P y des que x Pi y pour tout i de V), puis contradiction p. 13 « en prenant le plus petit ensemble decisif et en construisant trois profils de preferences sur trois alternatives, ce qui rend decisif un ensemble strictement plus petit ». reserves[0] precise que ce compte rendu de structure porte sur des pages lues en OCR, reserve reprise dans les limites de la carte."
     },
     {
       "claim_id": "C053",
       "verdict": "SUPPORTED",
-      "reason": "Le support precise que la contradiction se construit sur trois alternatives (p. 13)."
+      "reason": "Lecture : la construction se fait « sur trois alternatives »."
     },
     {
       "claim_id": "C054",
       "verdict": "SUPPORTED",
-      "reason": "Section 5, p. 14 : a deux alternatives la difficulte disparait et le vote majoritaire suffit."
+      "reason": "Lecture, section 5, p. 14 : « a deux alternatives, la difficulte disparait et le vote majoritaire suffit »."
     },
     {
       "claim_id": "C055",
       "verdict": "SUPPORTED",
-      "reason": "Le Theoreme 2 ne vaut que si le nombre d'alternatives depasse deux, et la p. 14 constate que la difficulte disparait a deux alternatives."
+      "reason": "Consequence directe : le Theoreme 2 ne vaut que si le nombre d'alternatives depasse deux, et la p. 14 constate qu'a deux alternatives la difficulte disparait. Un scrutin binaire est le cas a deux alternatives."
     },
     {
       "claim_id": "C056",
       "verdict": "SUPPORTED",
-      "reason": "Citation p. 14 verbatim dans le support : « This viewpoint is essentially the basis of the Anglo-American two-party system » ; la glose n'ajoute rien que la citation affichee ne borne."
+      "reason": "Verbatim present dans la lecture, section 5, p. 14 : « This viewpoint is essentially the basis of the Anglo-American two-party system ». La glose reste en deca de la citation, qui est donnee au lecteur dans la meme phrase."
     },
     {
       "claim_id": "C057",
       "verdict": "SUPPORTED",
-      "reason": "Section 7, pp. 16-18, telle que rapportee : restreindre le domaine des preferences individuelles admissibles."
+      "reason": "Lecture, section 7, p. 16-18 : « restreindre le domaine des preferences individuelles admissibles », voie distincte de l'affaiblissement des conditions imposees a la regle."
     },
     {
       "claim_id": "C058",
       "verdict": "SUPPORTED",
-      "reason": "Note de revue 9 validee, p. 17 verbatim : « A more radical restriction upon the range of possible individual preference patterns has been proposed by D. Black. »"
+      "reason": "Lecture : « Condition A, page 17, reprise de D. Black » ; note de revue 9 cite la p. 17 : « A more radical restriction upon the range of possible individual preference patterns has been proposed by D. Black ». L'emprunt est conserve comme tel."
     },
     {
       "claim_id": "C059",
       "verdict": "SUPPORTED",
-      "reason": "Condition A p. 17 telle que rapportee : les alternatives se rangent lineairement, chaque individu a une position preferee et sa preference decroit a mesure qu'on s'en eloigne."
+      "reason": "Lecture : « les alternatives se rangent lineairement, chaque individu a une position preferee et sa preference decroit a mesure qu'on s'en eloigne dans l'une ou l'autre direction »."
     },
     {
       "claim_id": "C060",
       "verdict": "SUPPORTED",
-      "reason": "Phrase du rapport citee verbatim p. 17 dans le support : « This is the same idea as the left-to-right ordering of political parties in Continental politics. »"
+      "reason": "Verbatim de la p. 17 dans la lecture : « This is the same idea as the left-to-right ordering of political parties in Continental politics », phrase du rapport signe d'Arrow."
     },
     {
       "claim_id": "C061",
       "verdict": "SUPPORTED",
-      "reason": "P. 17 verbatim dans la lecture et la note de revue 9 : « Black's result for a finite number of alternatives is here generalized to any space of alternatives. »"
+      "reason": "Note d'attribution et note de revue 9 citent la p. 17 : « Black's result for a finite number of alternatives is here generalized to any space of alternatives » ; la lecture dit la meme chose."
     },
     {
       "claim_id": "C062",
       "verdict": "SUPPORTED",
-      "reason": "Theoreme 4 p. 17 cite verbatim par le support, y compris la Condition 1 a double prime, « for any number of alternatives » et « provided the number of individuals is odd »."
+      "reason": "Lecture, Theoreme 4 p. 17 : « The method of majority decision is a social welfare function satisfying Conditions [1 avec double prime] and 2-5 for any number of alternatives, provided the number of individuals is odd. » Le claim rend « 1 double prime » par « forme modifiee de la Condition 1 », conformement a la note du support sur ce signe."
     },
     {
       "claim_id": "C063",
       "verdict": "SUPPORTED",
-      "reason": "Le support declare que la reserve finale fait partie du theoreme et que la p. 18 en donne le contre-exemple a deux individus."
+      "reason": "Lecture : « La reserve finale fait partie du theoreme, elle n'est pas ajoutee apres coup, et la page 18 en donne le contre-exemple a deux individus qui la rend necessaire. »"
     },
     {
       "claim_id": "C064",
       "verdict": "SUPPORTED",
-      "reason": "Suit des supports : la Condition 1 quantifie sur tous les R1,...,Rn, et la section 7 restreint precisement le domaine des preferences admissibles, d'ou la forme modifiee du Theoreme 4."
+      "reason": "Condition 1 exige un ordre faible « pour tous R1,...,Rn » (lecture), et la section 7 restreint precisement le domaine des preferences individuelles admissibles : la deduction sur le point ou l'on cede suit les supports."
     },
     {
       "claim_id": "C065",
       "verdict": "SUPPORTED",
-      "reason": "Section 8, p. 19 : « une difficulte d'un autre ordre », selon les termes memes du support."
+      "reason": "Lecture : « section 8, page 19, une difficulte d'un autre ordre »."
     },
     {
       "claim_id": "C066",
       "verdict": "SUPPORTED",
-      "reason": "Le support presente cette difficulte comme conditionnee au recueil des preferences, tout le dispositif anterieur prenant les R1,...,Rn pour donnes."
+      "reason": "La section 8 telle que rapportee suppose les preferences a recueillir par questionnaire ou par vote, tout l'appareil precedent prenant R1,...,Rn comme donnees. Formulation de liaison sans ajout."
     },
     {
       "claim_id": "C067",
       "verdict": "SUPPORTED",
-      "reason": "Citation p. 19 verbatim dans le support, avec sa protase sur le recueil par questionnaire ou par vote."
+      "reason": "Lecture, p. 19 : si les preferences individuelles doivent etre recueillies par un questionnaire ou par un vote, « there is always the danger of false answers to take advantage of the machinery in the manner of a game ». Verbatim et glose conformes."
     },
     {
       "claim_id": "C068",
       "verdict": "SUPPORTED",
-      "reason": "Citation p. 19 verbatim (« the rules of the electoral game must be so devised as to insure that expressed preferences coincide with actual preferences ») et mention que le rapport ne traite pas la question, se contentant de la nommer."
+      "reason": "Lecture, p. 19 : « the rules of the electoral game must be so devised as to insure that expressed preferences coincide with actual preferences », et la meme lecture precise que le rapport ne traite pas cette difficulte."
     },
     {
       "claim_id": "C069",
-      "verdict": "TOO_STRONG",
-      "reason": "Les supports etablissent que la p. 19 est la derniere page et que le rapport se contente de nommer cette difficulte, mais aucun ne dit que la section 8 tient en deux phrases : les deux fragments cites sont des extraits, dont le premier n'est qu'une apodose. Le denombrement exact excede ce que la preuve autorise."
+      "verdict": "SUPPORTED",
+      "reason": "Lecture : difficulte « que le rapport ne traite pas et se contente de nommer », section 8 p. 19 ; la note de revue 5 et la citation etablissent que la p. 19 est la derniere page du rapport."
     }
   ]
 }
