@@ -1,0 +1,1004 @@
+{
+  "concept_id": "heuristiques-de-jugement",
+  "candidate_sha256": "0ed8634d7af3390f8b3ebea581ad58627370dd06071d79e2b406bebe77a65b62",
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "lead[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[5].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[5].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[5].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C001",
+      "locator": "lead[0]",
+      "start": 172,
+      "end": 327,
+      "claim_text": "Vous répondez, et vous répondez vite : sans table de fréquences, sans avoir rien compté, et pourtant avec une idée assez nette de votre degré de confiance.",
+      "normalized_claim": "On répond à ce type de question sans calcul explicite, tout en exprimant un degré de confiance.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5"
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "locator": "lead[0]",
+      "start": 394,
+      "end": 478,
+      "claim_text": "C’est de savoir ce que vous avez fait à la place du calcul que vous n’avez pas fait.",
+      "normalized_claim": "Une opération de substitution a pris la place du calcul probabiliste non effectué.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5"
+      ]
+    },
+    {
+      "claim_id": "C003",
+      "locator": "lead[1]",
+      "start": 0,
+      "end": 72,
+      "claim_text": "Amos Tversky et Daniel Kahneman ouvrent là-dessus un rapport d’août 1973",
+      "normalized_claim": "Le texte est un rapport d'août 1973 signé Tversky et Kahneman, qui s'ouvre sur ces questions.",
+      "support_ids": [
+        "SUP-d4baee1795c0c8c9",
+        "SUP-17de951479d58996",
+        "SUP-578640dd9001d479",
+        "SUP-dafb4d37a7c934e0",
+        "SUP-f16dc4412c2f6e7b"
+      ]
+    },
+    {
+      "claim_id": "C004",
+      "locator": "lead[1]",
+      "start": 91,
+      "end": 221,
+      "claim_text": "« What determines such beliefs? How do people assess the likelihood of an uncertain event or the value of an uncertain quantity? »",
+      "normalized_claim": "Citation verbatim du premier paragraphe du rapport, p. 1.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5",
+        "SUP-f16dc4412c2f6e7b"
+      ]
+    },
+    {
+      "claim_id": "C005",
+      "locator": "lead[1]",
+      "start": 223,
+      "end": 368,
+      "claim_text": "qu’est-ce qui détermine de telles croyances, comment évalue-t-on la vraisemblance d’un événement incertain ou la valeur d’une quantité incertaine",
+      "normalized_claim": "Traduction française fidèle de la citation anglaise qui précède.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5",
+        "SUP-f16dc4412c2f6e7b",
+        "SUP-c69f54eb79397f0e",
+        "SUP-d9827912f0db1e8a"
+      ]
+    },
+    {
+      "claim_id": "C006",
+      "locator": "lead[1]",
+      "start": 370,
+      "end": 411,
+      "claim_text": "Leur réponse ne commence pas par l’erreur",
+      "normalized_claim": "Dans le rapport, l'énoncé de la thèse précède celui de l'erreur.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5",
+        "SUP-f16dc4412c2f6e7b"
+      ]
+    },
+    {
+      "claim_id": "C007",
+      "locator": "lead[1]",
+      "start": 414,
+      "end": 541,
+      "claim_text": "elle dit qu’il existe un petit jeu de procédés par lesquels une tâche hors d’atteinte devient une opération que l’on sait faire",
+      "normalized_claim": "La thèse pose un nombre limité de principes heuristiques réduisant des tâches complexes à des opérations plus simples.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5",
+        "SUP-f16dc4412c2f6e7b",
+        "SUP-0a329daf8b158213",
+        "SUP-ea46cdba7ef656e1"
+      ]
+    },
+    {
+      "claim_id": "C008",
+      "locator": "lead[1]",
+      "start": 543,
+      "end": 598,
+      "claim_text": "et que ces procédés rendent service la plupart du temps",
+      "normalized_claim": "Le rapport pose que ces heuristiques sont en général fort utiles.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5",
+        "SUP-f16dc4412c2f6e7b",
+        "SUP-d9827912f0db1e8a"
+      ]
+    },
+    {
+      "claim_id": "C009",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 0,
+      "end": 74,
+      "claim_text": "Le rapport ne commence pas par des erreurs, il commence par des croyances.",
+      "normalized_claim": "Le premier paragraphe du rapport porte sur les croyances, non sur les erreurs.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5",
+        "SUP-f16dc4412c2f6e7b"
+      ]
+    },
+    {
+      "claim_id": "C010",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 75,
+      "end": 198,
+      "claim_text": "Sa première phrase pose que « Most important decisions are based on beliefs concerning the likelihood of uncertain events »",
+      "normalized_claim": "Citation verbatim de la première phrase du rapport.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5",
+        "SUP-f16dc4412c2f6e7b"
+      ]
+    },
+    {
+      "claim_id": "C011",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 200,
+      "end": 320,
+      "claim_text": "que la plupart des décisions importantes reposent sur des croyances relatives à la vraisemblance d’événements incertains",
+      "normalized_claim": "Traduction française fidèle de cette première phrase.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5",
+        "SUP-f16dc4412c2f6e7b",
+        "SUP-d9827912f0db1e8a"
+      ]
+    },
+    {
+      "claim_id": "C012",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 322,
+      "end": 452,
+      "claim_text": "L’objet d’étude se place donc en amont du choix : avant de trancher, il faut bien s’être fait une idée de ce qui risque d’arriver.",
+      "normalized_claim": "Conséquence dérivée : l'objet du rapport est la croyance antérieure à la décision.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5",
+        "SUP-f16dc4412c2f6e7b"
+      ]
+    },
+    {
+      "claim_id": "C013",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 0,
+      "end": 69,
+      "claim_text": "Les deux questions qui suivent séparent deux choses que l’on confond.",
+      "normalized_claim": "Deux questions suivent dans le texte source et distinguent deux objets.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5",
+        "SUP-f16dc4412c2f6e7b"
+      ]
+    },
+    {
+      "claim_id": "C014",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 70,
+      "end": 218,
+      "claim_text": "Évaluer une vraisemblance, c’est dire quelle chance une chose a d’arriver ; prédire une valeur, c’est dire combien : un délai, une note, un chiffre.",
+      "normalized_claim": "Glose des deux objets : évaluation des vraisemblances et prédiction des valeurs.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5",
+        "SUP-d9827912f0db1e8a"
+      ]
+    },
+    {
+      "claim_id": "C015",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 219,
+      "end": 256,
+      "claim_text": "La thèse porte sur les deux à la fois",
+      "normalized_claim": "La thèse du rapport porte à la fois sur l'évaluation des vraisemblances et sur la prédiction des valeurs.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5",
+        "SUP-f16dc4412c2f6e7b",
+        "SUP-35b9b7ae00ccdc60",
+        "SUP-ebd6a92122568e8c"
+      ]
+    },
+    {
+      "claim_id": "C016",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 259,
+      "end": 437,
+      "claim_text": "« people rely on a limited number of heuristic principles by which they reduce the complex tasks of assessing likelihoods and predicting values to simpler judgmental operations »",
+      "normalized_claim": "Citation verbatim de la thèse, p. 1 du rapport de 1973.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5",
+        "SUP-f16dc4412c2f6e7b",
+        "SUP-0a329daf8b158213",
+        "SUP-ea46cdba7ef656e1"
+      ]
+    },
+    {
+      "claim_id": "C017",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 439,
+      "end": 653,
+      "claim_text": "on s’appuie sur un nombre limité de principes heuristiques par lesquels on réduit les tâches complexes que sont l’évaluation des vraisemblances et la prédiction des valeurs à des opérations de jugement plus simples",
+      "normalized_claim": "Traduction française de la thèse, conservant les personnes en position de sujet.",
+      "support_ids": [
+        "SUP-848453548fa68f5b",
+        "SUP-2fb7af198cd226f5",
+        "SUP-35b9b7ae00ccdc60",
+        "SUP-ebd6a92122568e8c",
+        "SUP-dfd1244cfe6b6de5"
+      ]
+    },
+    {
+      "claim_id": "C018",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 655,
+      "end": 793,
+      "claim_text": "L’échange est là : une tâche plus courte prend la place de celle qu’il faudrait accomplir, et c’est son résultat qui est rendu en réponse.",
+      "normalized_claim": "Interprétation dérivée : la réponse rendue est le résultat de l'opération substituée.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5"
+      ]
+    },
+    {
+      "claim_id": "C019",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 0,
+      "end": 143,
+      "claim_text": "La phrase suivante décide de tout : « In general, these heuristics are quite useful, but sometimes they lead to severe and systematic errors. »",
+      "normalized_claim": "Cette phrase suit immédiatement la thèse dans le rapport ; citation verbatim.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5",
+        "SUP-f16dc4412c2f6e7b"
+      ]
+    },
+    {
+      "claim_id": "C020",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 144,
+      "end": 258,
+      "claim_text": "En général ces heuristiques sont fort utiles, mais elles conduisent parfois à des erreurs graves et systématiques.",
+      "normalized_claim": "Traduction française fidèle de cette phrase.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5",
+        "SUP-f16dc4412c2f6e7b"
+      ]
+    },
+    {
+      "claim_id": "C021",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 289,
+      "end": 420,
+      "claim_text": "Sans la première, on ne comprendrait pas pourquoi de tels procédés se maintiennent ; sans la seconde, il n’y aurait rien à étudier.",
+      "normalized_claim": "Raisonnement dérivé sur la solidarité des deux moitiés de la phrase ; renvoie à la persistance des heuristiques malgré leurs erreurs.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5"
+      ]
+    },
+    {
+      "claim_id": "C022",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 421,
+      "end": 538,
+      "claim_text": "L’ordre est ce que perd le mot raccourci : un raccourci suggère un pis-aller, quand la phrase pose l’utilité d’abord.",
+      "normalized_claim": "Traduire « heuristic principles » par « raccourcis » inverserait l'ordre de l'argument, qui pose l'utilité avant l'erreur.",
+      "support_ids": [
+        "SUP-d9827912f0db1e8a",
+        "SUP-dfd1244cfe6b6de5"
+      ]
+    },
+    {
+      "claim_id": "C023",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 0,
+      "end": 39,
+      "claim_text": "Le mot qui porte est « systématiques ».",
+      "normalized_claim": "Le terme décisif de la phrase citée est « systematic ».",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5",
+        "SUP-f16dc4412c2f6e7b"
+      ]
+    },
+    {
+      "claim_id": "C024",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 79,
+      "end": 222,
+      "claim_text": "une erreur systématique n’est pas une bévue, elle penche toujours du même côté, chez des personnes différentes et sur des questions différentes",
+      "normalized_claim": "Définition proposée de l'erreur systématique : constante en direction, à travers personnes et questions.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5"
+      ]
+    },
+    {
+      "claim_id": "C025",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 256,
+      "end": 462,
+      "claim_text": "Une erreur qui varie au hasard ne renseigne sur rien ; une erreur qui se répète dans le même sens trahit la règle qui l’a produite, et c’est par là que le procédé, invisible en lui-même, devient observable.",
+      "normalized_claim": "Raisonnement dérivé : c'est la systématicité de l'erreur qui rend le procédé observable, celui-ci n'étant pas conscient.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5"
+      ]
+    },
+    {
+      "claim_id": "C026",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 0,
+      "end": 125,
+      "claim_text": "Le biais n’est donc pas le symptôme d’un esprit défaillant : c’est la trace laissée par un procédé qui rend service ailleurs.",
+      "normalized_claim": "Conséquence dérivée : le biais est la trace d'une heuristique utile par ailleurs.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5",
+        "SUP-d9827912f0db1e8a"
+      ]
+    },
+    {
+      "claim_id": "C027",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 126,
+      "end": 165,
+      "claim_text": "Il n’a pas non plus le sens de préjugé.",
+      "normalized_claim": "Le mot « bias » chez les auteurs n'a pas le sens de préjugé.",
+      "support_ids": [
+        "SUP-d9827912f0db1e8a",
+        "SUP-dfd1244cfe6b6de5"
+      ]
+    },
+    {
+      "claim_id": "C028",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 166,
+      "end": 356,
+      "claim_text": "Les biais dont il s’agit tiennent aux opérations par lesquelles une impression se forme, et les auteurs les distinguent expressément des intrusions du désir ou de l’intérêt dans le jugement.",
+      "normalized_claim": "Le rapport (p. 27) définit ces biais comme caractéristiques des opérations cognitives de formation des jugements, distincts des intrusions émotionnelles et motivationnelles.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5",
+        "SUP-d9827912f0db1e8a"
+      ]
+    },
+    {
+      "claim_id": "C029",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 357,
+      "end": 476,
+      "claim_text": "Ils ajoutent que la chose ne vise pas les seuls profanes : l’expert qui juge intuitivement y est exposé comme un autre.",
+      "normalized_claim": "Le rapport étend le recours aux heuristiques et aux biais aux experts jugeant intuitivement.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5"
+      ]
+    },
+    {
+      "claim_id": "C030",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 0,
+      "end": 75,
+      "claim_text": "Le cas sur lequel les auteurs installent leur raisonnement vient de la vue.",
+      "normalized_claim": "L'analogie perceptive (distance, taille) porte le raisonnement du rapport.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5"
+      ]
+    },
+    {
+      "claim_id": "C031",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 76,
+      "end": 246,
+      "claim_text": "Évaluer intuitivement une vraisemblance ressemble, écrivent-ils, à estimer une distance ou une taille : des jugements qui travaillent sur des données de validité limitée.",
+      "normalized_claim": "Attribution aux auteurs de l'analogie entre jugement intuitif de probabilité et estimation perceptive, fondée sur des données de validité limitée.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5"
+      ]
+    },
+    {
+      "claim_id": "C032",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 247,
+      "end": 381,
+      "claim_text": "Ce qui décide en partie de la distance apparente d’un objet, c’est sa netteté : plus l’objet se voit nettement, plus il paraît proche.",
+      "normalized_claim": "Restitution de l'exemple : la distance apparente est déterminée en partie par la netteté.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5"
+      ]
+    },
+    {
+      "claim_id": "C033",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 382,
+      "end": 529,
+      "claim_text": "La règle a une validité réelle, et c’est le point : dans une scène donnée, les objets lointains se voient effectivement moins nets que les proches.",
+      "normalized_claim": "La règle a une certaine validité parce que, dans une scène donnée, les objets lointains sont vus moins nettement.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5"
+      ]
+    },
+    {
+      "claim_id": "C034",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 530,
+      "end": 655,
+      "claim_text": "C’est pourtant l’appui sur cette règle, concluent-ils, qui produit des erreurs systématiques dans l’estimation des distances.",
+      "normalized_claim": "Le rapport conclut que le recours à cette règle conduit à des erreurs systématiques d'estimation des distances.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5"
+      ]
+    },
+    {
+      "claim_id": "C035",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 0,
+      "end": 77,
+      "claim_text": "Trois constats accompagnent l’exemple, et le texte les transpose au jugement.",
+      "normalized_claim": "Trois traits sont énumérés à la suite de l'exemple (p. 2) et transposés au jugement.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5"
+      ]
+    },
+    {
+      "claim_id": "C036",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 78,
+      "end": 142,
+      "claim_text": "On n’a pas conscience des règles qui gouvernent ces impressions.",
+      "normalized_claim": "Premier trait : les gens ne sont pas conscients des règles qui gouvernent leurs impressions.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5"
+      ]
+    },
+    {
+      "claim_id": "C037",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 143,
+      "end": 179,
+      "claim_text": "On ne les contrôle pas délibérément.",
+      "normalized_claim": "Deuxième trait : les impressions perceptives ne sont pas contrôlables délibérément.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5"
+      ]
+    },
+    {
+      "claim_id": "C038",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 246,
+      "end": 408,
+      "claim_text": "il est possible d’apprendre à reconnaître les situations où les impressions risquent d’être biaisées, et d’y apporter délibérément les corrections qui conviennent",
+      "normalized_claim": "Troisième trait, traduit du rapport : on peut apprendre à reconnaître les situations à risque de biais et y apporter des corrections délibérées.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5"
+      ]
+    },
+    {
+      "claim_id": "C039",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 410,
+      "end": 503,
+      "claim_text": "Ce n’est pas la promesse d’un esprit rectifié, c’est celle d’un esprit averti par situations.",
+      "normalized_claim": "Interprétation dérivée de la portée du troisième trait : correction situationnelle et non réforme générale du jugement.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5"
+      ]
+    },
+    {
+      "claim_id": "C040",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 36,
+      "end": 241,
+      "claim_text": "La première, page 3, répond à trois formes de question : quelle chance un objet A a-t-il d’appartenir à une classe B, un événement A de provenir d’un processus B, un processus A d’engendrer un événement B.",
+      "normalized_claim": "La représentativité est introduite p. 3 et répond aux trois types de questions probabilistes énumérés par le rapport.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5",
+        "SUP-bf750eb64a6b9b7c"
+      ]
+    },
+    {
+      "claim_id": "C041",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 242,
+      "end": 505,
+      "claim_text": "Dans les trois cas, l’opération exécutée est une comparaison : « probabilities are evaluated by the degree to which A is representative of B », les probabilités sont évaluées par le degré auquel A est représentatif de B, c’est-à-dire par leur degré de similarité.",
+      "normalized_claim": "Citation verbatim et traduction de la définition de l'heuristique de représentativité.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5",
+        "SUP-bf750eb64a6b9b7c"
+      ]
+    },
+    {
+      "claim_id": "C042",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 506,
+      "end": 547,
+      "claim_text": "On juge de la chance par la ressemblance.",
+      "normalized_claim": "Reformulation dérivée : la probabilité est jugée par la similarité.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5"
+      ]
+    },
+    {
+      "claim_id": "C043",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 548,
+      "end": 727,
+      "claim_text": "Six biais y sont numérotés, et le premier, l’insensibilité à la probabilité a priori, dit ce que l’échange laisse tomber : la ressemblance ignore ce qui est plus ou moins courant.",
+      "normalized_claim": "La section représentativité numérote six biais, dont le premier est l'insensibilité à la probabilité a priori des résultats.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5"
+      ]
+    },
+    {
+      "claim_id": "C044",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 0,
+      "end": 57,
+      "claim_text": "La deuxième, page 15, ne compare pas, elle croit compter.",
+      "normalized_claim": "La deuxième heuristique, la disponibilité, est introduite p. 15 et porte sur la fréquence.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5",
+        "SUP-bf750eb64a6b9b7c"
+      ]
+    },
+    {
+      "claim_id": "C045",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 58,
+      "end": 266,
+      "claim_text": "On évalue parfois la fréquence d’une classe ou la chance d’un événement « by the ease with which instances or occurrences could be brought to mind », par la facilité avec laquelle des cas viennent à l’esprit.",
+      "normalized_claim": "Citation verbatim et traduction de la définition de la disponibilité.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5",
+        "SUP-bf750eb64a6b9b7c"
+      ]
+    },
+    {
+      "claim_id": "C046",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 267,
+      "end": 518,
+      "claim_text": "Les exemples sont ceux des auteurs : estimer le risque d’infarctus chez des personnes d’âge mûr en se remémorant les cas survenus parmi ses connaissances, estimer la probabilité qu’une affaire échoue en imaginant les difficultés qu’elle rencontrerait.",
+      "normalized_claim": "Les deux exemples (infarctus, échec d'une affaire) sont ceux du rapport, p. 15.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5"
+      ]
+    },
+    {
+      "claim_id": "C047",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 519,
+      "end": 639,
+      "claim_text": "Le procédé a sa raison d’être : les cas des grandes classes se rappellent mieux et plus vite que ceux des classes rares.",
+      "normalized_claim": "Le rapport justifie l'utilité de la disponibilité par le meilleur rappel des instances des grandes classes.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5"
+      ]
+    },
+    {
+      "claim_id": "C048",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 640,
+      "end": 750,
+      "claim_text": "Mais la facilité du rappel dépend aussi d’autre chose que de la fréquence, et c’est là que l’estimation dévie.",
+      "normalized_claim": "La disponibilité est affectée par d'autres facteurs que la fréquence, d'où des biais prévisibles.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5"
+      ]
+    },
+    {
+      "claim_id": "C049",
+      "locator": "sections[3].paragraphs[2]",
+      "start": 0,
+      "end": 84,
+      "claim_text": "La troisième, page 20, ne ressemble ni à l’une ni à l’autre : elle part d’un nombre.",
+      "normalized_claim": "La troisième opération, ajustement et ancrage, est introduite p. 20 et part d'une valeur initiale.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5",
+        "SUP-bf750eb64a6b9b7c"
+      ]
+    },
+    {
+      "claim_id": "C050",
+      "locator": "sections[3].paragraphs[2]",
+      "start": 85,
+      "end": 264,
+      "claim_text": "On estime en partant d’une valeur initiale que l’on ajuste jusqu’à la réponse finale, valeur suggérée par la formulation même du problème ou sortie d’un calcul laissé à mi-chemin.",
+      "normalized_claim": "Traduction de la définition : valeur initiale ajustée, suggérée par la formulation du problème ou résultat d'un calcul partiel.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5"
+      ]
+    },
+    {
+      "claim_id": "C051",
+      "locator": "sections[3].paragraphs[2]",
+      "start": 308,
+      "end": 353,
+      "claim_text": "les ajustements sont typiquement insuffisants",
+      "normalized_claim": "Le rapport pose que les ajustements sont typiquement insuffisants.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5"
+      ]
+    },
+    {
+      "claim_id": "C052",
+      "locator": "sections[3].paragraphs[2]",
+      "start": 355,
+      "end": 499,
+      "claim_text": "Les auteurs en tirent la conséquence : des points de départ différents donnent des estimations différentes, tirées vers leurs valeurs initiales.",
+      "normalized_claim": "Conséquence énoncée par le rapport : des points de départ différents produisent des estimations biaisées vers les valeurs initiales.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5"
+      ]
+    },
+    {
+      "claim_id": "C053",
+      "locator": "sections[3].paragraphs[2]",
+      "start": 500,
+      "end": 633,
+      "claim_text": "Le résumé de la page 31 la donne pour « usually employed in numerical prediction », employée d’ordinaire dans la prédiction numérique",
+      "normalized_claim": "Le SUMMARY p. 31 qualifie l'ajustement à partir d'un point de départ d'ordinairement employé en prédiction numérique.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5",
+        "SUP-970df86cb5d64a64"
+      ]
+    },
+    {
+      "claim_id": "C054",
+      "locator": "sections[3].paragraphs[2]",
+      "start": 636,
+      "end": 672,
+      "claim_text": "c’est le versant combien de la thèse",
+      "normalized_claim": "Interprétation dérivée : cette opération correspond au volet « prédiction des valeurs » de la thèse.",
+      "support_ids": [
+        "SUP-dfd1244cfe6b6de5",
+        "SUP-970df86cb5d64a64"
+      ]
+    },
+    {
+      "claim_id": "C055",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 0,
+      "end": 68,
+      "claim_text": "Le vocabulaire reçu déborde alors le texte, et d’abord sur les noms.",
+      "normalized_claim": "Le vocabulaire courant excède celui du rapport, à commencer par les noms des heuristiques.",
+      "support_ids": [
+        "SUP-f3e1746824f2b81d",
+        "SUP-bf750eb64a6b9b7c"
+      ]
+    },
+    {
+      "claim_id": "C056",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 69,
+      "end": 148,
+      "claim_text": "Trois circulent comme allant de soi : représentativité, disponibilité, ancrage.",
+      "normalized_claim": "Ces trois noms circulent couramment comme les trois heuristiques.",
+      "support_ids": [
+        "SUP-f3e1746824f2b81d",
+        "SUP-bf750eb64a6b9b7c"
+      ]
+    },
+    {
+      "claim_id": "C057",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 149,
+      "end": 231,
+      "claim_text": "Le rapport n’appelle heuristiques que les deux premières, page 3 et pages 15 et 20",
+      "normalized_claim": "Seules la représentativité (p. 3) et la disponibilité (p. 15 et 20) sont appelées heuristiques dans le corps du rapport.",
+      "support_ids": [
+        "SUP-f3e1746824f2b81d",
+        "SUP-bf750eb64a6b9b7c",
+        "SUP-dfd1244cfe6b6de5"
+      ]
+    },
+    {
+      "claim_id": "C058",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 234,
+      "end": 470,
+      "claim_text": "pour la troisième, ce qui reçoit ce nom est « an adjustment from a starting point », un ajustement à partir d’un point de départ, et l’ancrage y est l’effet que l’on vient de voir, non l’opération : « We call this phenomenon anchoring »",
+      "normalized_claim": "La troisième est désignée comme « an adjustment from a starting point » ; l'ancrage y est nommé comme un phénomène, pas comme une opération.",
+      "support_ids": [
+        "SUP-f3e1746824f2b81d",
+        "SUP-bf750eb64a6b9b7c",
+        "SUP-dfd1244cfe6b6de5"
+      ]
+    },
+    {
+      "claim_id": "C059",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 472,
+      "end": 545,
+      "claim_text": "L’expression « anchoring heuristic » ne figure nulle part dans le rapport",
+      "normalized_claim": "L'expression « anchoring heuristic » est absente du rapport.",
+      "support_ids": [
+        "SUP-f3e1746824f2b81d",
+        "SUP-bf750eb64a6b9b7c"
+      ]
+    },
+    {
+      "claim_id": "C060",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 547,
+      "end": 638,
+      "claim_text": "et parler d’heuristique d’ancrage donne pour acquis le mécanisme qu’il s’agissait d’établir",
+      "normalized_claim": "Conséquence dérivée : nommer une heuristique d'ancrage présuppose le mécanisme au lieu de l'établir.",
+      "support_ids": [
+        "SUP-bf750eb64a6b9b7c",
+        "SUP-f3e1746824f2b81d"
+      ]
+    },
+    {
+      "claim_id": "C061",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 44,
+      "end": 116,
+      "claim_text": "La thèse de la première page ne dit pas trois, elle dit un nombre limité",
+      "normalized_claim": "La thèse p. 1 dit « a limited number of heuristic principles » et non trois.",
+      "support_ids": [
+        "SUP-882a2cbd5fac1259",
+        "SUP-bf750eb64a6b9b7c",
+        "SUP-dfd1244cfe6b6de5"
+      ]
+    },
+    {
+      "claim_id": "C062",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 119,
+      "end": 337,
+      "claim_text": "le chiffre trois n’apparaît qu’aux deux endroits qui ont une fonction d’affichage, l’annonce de plan de la page 2 et le résumé de la page 31, et la discussion de la page 26 revient à l’indéfini avec « some heuristics »",
+      "normalized_claim": "Le compte de trois n'apparaît qu'à l'annonce de plan (p. 2) et au résumé (p. 31) ; la discussion (p. 26) revient à « some heuristics ».",
+      "support_ids": [
+        "SUP-882a2cbd5fac1259",
+        "SUP-bf750eb64a6b9b7c",
+        "SUP-dfd1244cfe6b6de5"
+      ]
+    },
+    {
+      "claim_id": "C063",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 339,
+      "end": 554,
+      "claim_text": "Une liste fermée ferait de l’ensemble un inventaire à vérifier ; la formule ouverte dit seulement qu’un petit nombre de tels procédés suffit à rendre compte de beaucoup, et rien n’interdit qu’on en décrive d’autres.",
+      "normalized_claim": "Interprétation dérivée de la portée logique de la formule ouverte « a limited number ».",
+      "support_ids": [
+        "SUP-882a2cbd5fac1259",
+        "SUP-bf750eb64a6b9b7c"
+      ]
+    },
+    {
+      "claim_id": "C064",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 0,
+      "end": 76,
+      "claim_text": "Le texte dont il vient d’être question n’est pas l’article que l’on connaît.",
+      "normalized_claim": "Le rapport de 1973 et l'article de Science ne sont pas le même texte.",
+      "support_ids": [
+        "SUP-578640dd9001d479",
+        "SUP-f340c4986d469c76",
+        "SUP-3c5ff47979a1e263"
+      ]
+    },
+    {
+      "claim_id": "C065",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 77,
+      "end": 235,
+      "claim_text": "C’est un rapport technique de contrat, daté d’août 1973, signé par Amos Tversky et Daniel Kahneman, tous deux rattachés à l’Université hébraïque de Jérusalem.",
+      "normalized_claim": "Rapport technique sous contrat, daté d'août 1973, signé par les deux auteurs alors à l'Université hébraïque de Jérusalem.",
+      "support_ids": [
+        "SUP-d4baee1795c0c8c9",
+        "SUP-17de951479d58996",
+        "SUP-a0c0016871090f77",
+        "SUP-db10f64a9871f70a",
+        "SUP-b58b80fcf8f91184",
+        "SUP-578640dd9001d479"
+      ]
+    },
+    {
+      "claim_id": "C066",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 236,
+      "end": 431,
+      "claim_text": "Ses seize notes finales renvoient à des résultats déjà parus, dans le Psychological Bulletin en 1971 et dans Cognitive Psychology en 1972, et deux d’entre elles annoncent des articles à paraître.",
+      "normalized_claim": "Le rapport compte seize notes finales renvoyant à des publications antérieures (Psychological Bulletin 1971, Cognitive Psychology 1972), deux notes annonçant des textes « in press ».",
+      "support_ids": [
+        "SUP-465a85c55ec05830",
+        "SUP-66d5a53a3634ec31",
+        "SUP-be5a9d7602201304",
+        "SUP-17de951479d58996",
+        "SUP-3c5ff47979a1e263"
+      ]
+    },
+    {
+      "claim_id": "C067",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 432,
+      "end": 550,
+      "claim_text": "Il ne rend donc pas compte d’une expérience nouvelle : il met en ordre ce que ses auteurs avaient publié par morceaux.",
+      "normalized_claim": "Le rapport rassemble des résultats déjà publiés ailleurs plutôt qu'il ne présente une expérience nouvelle.",
+      "support_ids": [
+        "SUP-d4baee1795c0c8c9",
+        "SUP-17de951479d58996",
+        "SUP-be5a9d7602201304"
+      ]
+    },
+    {
+      "claim_id": "C068",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 0,
+      "end": 104,
+      "claim_text": "La version par laquelle ce travail est connu paraît un an plus tard, dans Science, le 27 septembre 1974.",
+      "normalized_claim": "L'article de Science, version connue, paraît le 27 septembre 1974.",
+      "support_ids": [
+        "SUP-986173c2d1efcd14",
+        "SUP-df44e3fa9d8fe228",
+        "SUP-578640dd9001d479",
+        "SUP-3c5ff47979a1e263"
+      ]
+    },
+    {
+      "claim_id": "C069",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 166,
+      "end": 363,
+      "claim_text": "« This article shows that people rely on a limited number of heuristic principles which reduce the complex tasks of assessing probabilities and predicting values to simpler judgmental operations. »",
+      "normalized_claim": "Citation de la phrase d'ouverture de l'article de Science 1974, p. 1124.",
+      "support_ids": [
+        "SUP-7837dc06e65e0188"
+      ]
+    },
+    {
+      "claim_id": "C070",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 364,
+      "end": 377,
+      "claim_text": "Trois écarts.",
+      "normalized_claim": "Il y a trois écarts entre la phrase de 1973 et celle de 1974.",
+      "support_ids": [
+        "SUP-7837dc06e65e0188"
+      ]
+    },
+    {
+      "claim_id": "C071",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 378,
+      "end": 443,
+      "claim_text": "L’annonce d’un thème est devenue la promesse d’une démonstration.",
+      "normalized_claim": "Premier écart : « The theme of the present paper is » devient « This article shows ».",
+      "support_ids": [
+        "SUP-7837dc06e65e0188"
+      ]
+    },
+    {
+      "claim_id": "C072",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 444,
+      "end": 494,
+      "claim_text": "Les vraisemblances sont devenues des probabilités.",
+      "normalized_claim": "Deuxième écart : « assessing likelihoods » devient « assessing probabilities ».",
+      "support_ids": [
+        "SUP-7837dc06e65e0188",
+        "SUP-d9827912f0db1e8a"
+      ]
+    },
+    {
+      "claim_id": "C073",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 495,
+      "end": 551,
+      "claim_text": "Et « by which they reduce » est devenu « which reduce ».",
+      "normalized_claim": "Troisième écart : « by which they reduce » devient « which reduce ».",
+      "support_ids": [
+        "SUP-7837dc06e65e0188"
+      ]
+    },
+    {
+      "claim_id": "C074",
+      "locator": "sections[5].paragraphs[2]",
+      "start": 0,
+      "end": 209,
+      "claim_text": "Ce dernier déplacement change le sujet de la phrase. En 1973, ce sont les personnes qui réduisent la tâche, les principes étant ce par quoi elles la réduisent ; en 1974, ce sont les principes qui la réduisent.",
+      "normalized_claim": "Le passage de « by which they reduce » à « which reduce » déplace le sujet des personnes vers les principes.",
+      "support_ids": [
+        "SUP-35b9b7ae00ccdc60",
+        "SUP-ebd6a92122568e8c",
+        "SUP-f57eed88c5e7fb46",
+        "SUP-7837dc06e65e0188"
+      ]
+    },
+    {
+      "claim_id": "C075",
+      "locator": "sections[5].paragraphs[2]",
+      "start": 270,
+      "end": 373,
+      "claim_text": "selon la version que l’on cite, on décrit une chose que les gens font, ou un mécanisme qui opère en eux",
+      "normalized_claim": "Conséquence dérivée du changement de sujet grammatical entre les deux versions.",
+      "support_ids": [
+        "SUP-35b9b7ae00ccdc60",
+        "SUP-ebd6a92122568e8c",
+        "SUP-f57eed88c5e7fb46"
+      ]
+    },
+    {
+      "claim_id": "C076",
+      "locator": "sections[5].paragraphs[2]",
+      "start": 375,
+      "end": 432,
+      "claim_text": "Les deux tournures ont cours, chacune adossée à son texte",
+      "normalized_claim": "Les deux constructions coexistent, chacune adossée à sa source.",
+      "support_ids": [
+        "SUP-f57eed88c5e7fb46"
+      ]
+    },
+    {
+      "claim_id": "C077",
+      "locator": "sections[5].paragraphs[2]",
+      "start": 434,
+      "end": 484,
+      "claim_text": "et la seconde est celle que la postérité a retenue",
+      "normalized_claim": "C'est la version Science 1974 que la littérature cite.",
+      "support_ids": [
+        "SUP-df44e3fa9d8fe228",
+        "SUP-3c5ff47979a1e263"
+      ]
+    }
+  ]
+}
