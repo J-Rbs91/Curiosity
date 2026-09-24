@@ -301,3 +301,105 @@ CONTRÔLES
 
 Le SHA du fichier a changé : le fact-check de SHA e66fbe59… est invalidé, et le cycle doit
 reprendre à PREPARE. Aucun verdict FACTCHECK_PASS n'est prononcé ici.
+
+===========================================================================
+TOUR 3 — FACTCHECK_FIX (seconde et dernière boucle de correction)
+===========================================================================
+
+concept : nasa-tlx
+mode : FACTCHECK_FIX
+check mécanique : PASS (`npm run corpus:deepen -- --check --only=nasa-tlx`, 1 approfondissement
+contrôlé, 1 837 mots, aucun avertissement de citation)
+
+AUTORITÉ ET MATIÈRE LUE
+
+- `corpus/deepening-audits/work/nasa-tlx/factcheck-gate.json` : verdict FACTCHECK_FAIL,
+  SHA candidat 3de4b486…, 72 claims, 70 supportés, 2 en échec, aucune erreur structurelle.
+  C'est le gate, et non le verifier seul, qui fait autorité sur l'échec.
+- `corpus/deepening-audits/work/nasa-tlx/verification.json` pour les motifs des deux claims.
+- `corpus/deepening-audits/work/nasa-tlx/claim-map.json` pour l'ancrage exact (locator,
+  offsets, `claim_text`).
+- `corpus/deepening-audits/work/nasa-tlx/factcheck-pack.json` pour le libellé exact des cinq
+  supports invoqués par les deux claims.
+- `corpus/deepenings/PROTOCOLE.md`, `AUDIT_PROTOCOL.md`, `FACTCHECK_PROTOCOL.md`.
+- `corpus/deepenings/nasa-tlx.json` (version échouée) et `corpus/validated/nasa-tlx.json`.
+- `corpus/evidence/nasa-tlx/` listé à nouveau : un seul fichier, `lecture.json`, relu.
+
+Aucune recherche web. Aucun support `SUP-...` fabriqué. Aucun artefact de fact-check retouché
+à la main.
+
+CLAIM C017 — TOO_STRONG
+
+Locator `sections[0].paragraphs[2]`, offsets 293-446.
+
+Avant : « Deux séances menées sous la même exigence extérieure ne pèseront donc pas pareil
+selon que la personne s'estime ou non à la hauteur de ce qu'elle a fait. »
+
+Après : « Deux séances menées sous la même exigence extérieure peuvent donc ne pas peser
+pareil selon que la personne s'estime ou non à la hauteur de ce qu'elle a fait. »
+
+Motif du gate : glissement possibilité -> nécessité. SUP-461e54b6e0a71387 et
+SUP-c56327e295b25e45 établissent que la performance perçue est l'une des six notes pondérées,
+mais la comparaison par paires autorise un poids nul pour cette échelle, auquel cas le score
+reste identique. Le futur catégorique excédait donc les supports.
+
+Nature de la correction : réduction de portée, deux mots déplacés. « ne pèseront donc pas »
+devient « peuvent donc ne pas peser ». La phrase passe de la nécessité à la possibilité, ce
+que les supports garantissent. Aucune affirmation nouvelle, aucun ajout de matière. Le delta
+du paragraphe est intact : il enseigne toujours que le jugement porté sur sa propre réussite
+entre dans le compte de la charge, et que deux séances d'exigence externe identique ne sont
+donc pas nécessairement équivalentes.
+
+CLAIM C068 — TOO_STRONG
+
+Locator `sections[5].paragraphs[1]`, offsets 543-609.
+
+Avant : « C'est un outil de travail mis en circulation, pas une publication. »
+
+Après : « C'est un outil de travail mis en circulation. »
+
+Motif du gate : SUP-1a61b3d82b994000 (fonction « nuts and bolts », livret diffusé pour que
+d'autres s'en servent) et SUP-4f77156b7df1e69e (deux tiers de formulaires, annexes sans prose)
+autorisent bien « outil de travail mis en circulation ». Aucun n'établit la dénégation
+« pas une publication », que le dossier contredit au contraire : document titré, paginé, édité
+par NASA Ames, catalogué sous NTRS 20000021488.
+
+Nature de la correction : retrait de la dénégation. Le membre de phrase non soutenu est
+supprimé, le membre soutenu est conservé tel quel. Le marquage en interprétation a été écarté :
+la négation n'est pas seulement non établie, elle est contredite par la facture éditoriale
+décrite dans le dossier, et « on peut y lire… plutôt qu'une publication » aurait maintenu une
+opposition que rien n'autorise. Le retrait est donc la correction minimale correcte.
+
+Coût pédagogique : nul ou quasi nul. La phrase conclut un paragraphe qui vient d'énumérer la
+facture du document (aucune date imprimée, signature collective, quatre annexes sans prose) ;
+le contraste rhétorique disparaît, la conclusion que le paragraphe porte reste la même, et le
+statut modeste que le document s'attribue est déjà dit au paragraphe précédent par la citation
+« Although the technique is still undergoing evaluation… ».
+
+CE QUI N'A PAS ÉTÉ TOUCHÉ
+
+Rien d'autre. Le `lead`, les six titres de section, les dix-neuf autres paragraphes et les
+trois entrées de `limits` sont inchangés au caractère près. Les 70 claims `SUPPORTED` du tour 2
+conservent leur libellé ; seuls les offsets des voisins de C017 et C068 dans leur paragraphe se
+décalent.
+
+Volume : 1 839 -> 1 837 mots. Aucun gonflement, aucune compensation de longueur.
+
+CONTRÔLES
+
+1. Delta par paragraphe : les deux paragraphes touchés gardent leur delta. C017 change le mode
+   (nécessité -> possibilité), pas l'enseignement ; C068 retire un membre de phrase, pas un
+   palier.
+2. Aucun paragraphe n'est devenu redondant avec son voisin : la structure est inchangée.
+3. Aucune section ne répète principalement une section précédente.
+4. Frontières documentaires : les deux phrases corrigées sont désormais en deçà de leurs
+   supports respectifs. Les réserves du dossier (`reserves`, note d'attribution) restent
+   respectées, en particulier celle qui interdit de dater le livret et celle qui interdit toute
+   phrase sur le contenu du chapitre de 1988.
+5. Aucun contenu de `limits` n'a été remonté comme bloc visible ; `limits` est inchangé.
+6. `npm run corpus:deepen -- --check --only=nasa-tlx` : PASS.
+
+Le SHA du fichier passe de 3de4b486… à
+4c8cd0b1806b831e62a68dde93f921a4eab025bc47087977fabb9bc7f4cfafd4. Le fact-check du tour 2 est
+donc invalidé et le cycle doit reprendre à PREPARE. Aucun verdict ACCEPT ni FACTCHECK_PASS
+n'est prononcé ici.
