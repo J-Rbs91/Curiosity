@@ -282,3 +282,143 @@ CONTRÔLES
 
 Le SHA de l’approfondissement a changé : le fact-check précédent est caduc et la chaîne doit
 reprendre à PREPARE. Aucun artefact de fact-check n’a été édité à la main.
+
+
+================================================================================
+
+concept : heuristiques-de-jugement
+mode    : FACTCHECK_FIX (seconde et dernière boucle autorisée)
+
+Matière relue dans un contexte frais : PROTOCOLE.md, FACTCHECK_PROTOCOL.md,
+corpus/deepenings/heuristiques-de-jugement.json, corpus/validated/heuristiques-de-jugement.json
+(`notes` + bloc `review`), corpus/evidence/heuristiques-de-jugement/ listé moi-même (un seul
+fichier, `lecture.json`, lu en entier, `reserves` comprises), puis les deux artefacts reçus :
+factcheck-gate.json et claim-map.json. Aucune recherche web, aucun fait ajouté de mémoire,
+aucun support inventé.
+
+Autorité du tour : le gate. Cinq claims non SUPPORTED, quatre phrases touchées (C022 et C023
+appartiennent au même paragraphe). Rien d'autre n'a été modifié dans le fichier.
+
+--------------------------------------------------------------------------------
+C011 — TOO_STRONG — sections[0].paragraphs[1], offsets 0-69
+--------------------------------------------------------------------------------
+
+Avant : « Les deux questions qui suivent séparent deux choses que l’on confond. »
+Après  : « Les deux questions qui suivent distinguent deux choses. »
+
+Geste : bornage. Le grief du gate porte exactement sur « que l’on confond », qui affirme un fait
+de réception (la confusion courante) que rien dans la documentation de travail n'établit.
+Le reste du claim (les deux questions de la p. 1, la séparation entre évaluation de vraisemblance
+et prédiction de valeur) est porté par le support et reste écrit tel quel. La phrase suivante,
+qui explicite les deux termes séparés, n'a pas bougé : le delta pédagogique du paragraphe est
+intact, seule l'affirmation surnuméraire tombe.
+
+--------------------------------------------------------------------------------
+C022 — UNSUPPORTED — sections[1].paragraphs[1], offsets 79-222
+C023 — UNSUPPORTED — même paragraphe, offsets 224-255
+--------------------------------------------------------------------------------
+
+Avant : « Le mot qui porte est « systématiques ». On peut comprendre son intérêt ainsi : une
+erreur systématique n’est pas une bévue, elle penche toujours du même côté, chez des personnes
+différentes et sur des questions différentes. C’est ce qui la rend montrable. Une erreur qui
+varie au hasard ne renseigne sur rien ; une erreur qui se répète dans le même sens trahit la
+règle qui l’a produite, et c’est par là que le procédé, invisible en lui-même, devient
+observable. »
+
+Après : « Le mot qui porte est « systématiques ». On peut comprendre son intérêt ainsi : ce que
+ce mot désigne est une régularité, et non un accident. Une erreur qui varie au hasard ne
+renseigne sur rien ; une erreur qui se répète dans le même sens trahit la règle qui l’a produite,
+et c’est par là que le procédé, invisible en lui-même, devient observable. »
+
+Geste sur C022 : bornage. La généralisation empirique visée par le gate (« penche toujours du
+même côté, chez des personnes différentes et sur des questions différentes ») affirmait une
+constance inter-individuelle et inter-questions que le dossier n'établit nulle part. Elle est
+retirée. Ce qui reste est une glose du mot, sous le marqueur d'interprétation « On peut
+comprendre son intérêt ainsi » déjà présent avant correction.
+
+Geste sur C023 : retrait. « C’est ce qui la rend montrable. » était posé comme un fait sans
+support. La phrase est supprimée plutôt qu'affaiblie : son contenu était déjà accompli, et mieux,
+par la dernière clause du paragraphe (« devient observable »), qui reste couverte par le même
+marqueur d'interprétation. Aucun palier de compréhension n'est perdu ; une redondance disparaît
+avec le claim.
+
+Rien n'a été ajouté à la place : le paragraphe perd 22 mots.
+
+--------------------------------------------------------------------------------
+C030 — TOO_STRONG — sections[2].paragraphs[0], offsets 76-177
+--------------------------------------------------------------------------------
+
+Avant : « Évaluer intuitivement une vraisemblance ressemble, écrivent-ils, à estimer une distance
+ou une taille »
+Après  : « Évaluer intuitivement une probabilité ressemble, écrivent-ils, à estimer une distance
+ou une taille »
+
+Geste : réattribution au mot réellement écrit. Le passage transcrit dans `definition_de_lauteur`
+est « The intuitive assessment of probability resembles the assessment of perceptual quantities
+such as distance or size ». La réserve de traduction de `lecture.json` est explicite : likelihood
+n'est pas probabilité, le rapport oppose les deux, et c'est précisément la substitution que le
+résumé éditeur de Science opère. Écrire « vraisemblance » sous un « écrivent-ils » faisait
+exactement cette substitution sous couvert d'attribution. Le paragraphe rend désormais le mot du
+texte, et la réserve de `limits` sur likelihood/vraisemblance reste vraie telle quelle : elle
+couvre les endroits où la traduction est en jeu, non celui-ci, où c'est le mot anglais probability
+qui est rendu.
+
+Aucune autre occurrence de « vraisemblance » n'a été touchée : ailleurs dans le texte, elle rend
+likelihood, ce que la réserve autorise.
+
+--------------------------------------------------------------------------------
+C061 — TOO_STRONG — sections[4].paragraphs[0], offsets 149-231
+--------------------------------------------------------------------------------
+
+Avant : « Le rapport n’appelle heuristiques que les deux premières, page 3 et pages 15 et 20 »
+Après  : « Dans le corps du rapport, seules les deux premières sont appelées heuristiques, page 3
+et pages 15 et 20 »
+
+Geste : bornage, exactement à la portée des supports. Les deux supports restreignent l'énoncé au
+corps du texte, et la restriction n'est pas cosmétique : le SUMMARY de la p. 31 écrit bien
+« three heuristics, or mental operations », ce qui rend fausse l'affirmation portant sur le
+rapport entier. La correction reprend la formulation des `notes` validées (« Le corps du rapport
+n'appelle heuristiques que la représentativité (p. 3) et la disponibilité (p. 15 et 20) »).
+Effet secondaire favorable : la suite de la phrase, qui donne « an adjustment from a starting
+point » comme ce qui reçoit ce nom pour la troisième, devient cohérente avec le paragraphe
+suivant, lequel situe déjà le chiffre trois dans l'annonce de plan de la p. 2 et le résumé de la
+p. 31.
+
+--------------------------------------------------------------------------------
+Ce qui n'a pas été fait
+--------------------------------------------------------------------------------
+
+- Aucune affirmation nouvelle. Les quatre corrections ne font que retirer, borner ou rendre au
+  texte son mot.
+- Aucun manque documentaire comblé : là où le dossier ne portait rien (C022, C023), la phrase a
+  été réduite ou supprimée, jamais fondée sur une source non lue.
+- Aucune citation entre guillemets modifiée, ajoutée ni retirée.
+- `limits` n'a pas été touché : les quatre corrections rapprochent le texte de la frontière déjà
+  déclarée, aucune frontière nouvelle n'est apparue.
+- Aucun artefact de fact-check édité à la main, aucun `SUP-...` inventé.
+
+--------------------------------------------------------------------------------
+Contrôles
+--------------------------------------------------------------------------------
+
+1. Deltas : chaque paragraphe touché conserve le sien. S1p2 sépare toujours le « quelle chance »
+   du « combien ». S2p2 explique toujours pourquoi le mot « systématiques » est le mot qui rend
+   le procédé observable, en une étape au lieu de deux. S3p1 installe toujours l'analogie
+   perceptive. S5p1 oppose toujours le vocabulaire reçu à celui du rapport.
+2. Un paragraphe sans delta a disparu au niveau de la phrase : C023 doublait la clause finale de
+   son propre paragraphe. Aucune autre fusion n'était nécessaire.
+3. Aucune section ne répète principalement une section précédente ; la charpente n'a pas bougé.
+4. Frontières documentaires : les quatre phrases sont désormais en deçà de leurs supports.
+5. Aucun contenu de `limits` remonté en bloc visible ; le texte lecteur reste `lead` + `sections`.
+6. Volume : texte lecteur 1 647 mots (cible 1 300-1 700), `limits` 273 mots. Total compté par le
+   script, `limits` compris : 1 920 mots, contre 1 935 avant correction.
+7. Aucun tiret cadratin dans le texte lecteur ni dans `limits`.
+8. `npm run corpus:deepen -- --check --only=heuristiques-de-jugement`
+   → « 1 approfondissement(s) contrôlé(s), 1920 mots. Rien projeté. » PASS, aucun avertissement
+   de citation.
+
+SHA-256 du fichier après correction :
+27353ce8c26e5c5855a29b62039c681e567eddc32e4a0af98816ac62a492be66
+
+Le SHA a changé : le pack, le claim-map, le bundle et le gate du tour précédent sont caducs. La
+chaîne doit reprendre à PREPARE. Ce compte rendu ne vaut ni ACCEPT ni FACTCHECK_PASS.
