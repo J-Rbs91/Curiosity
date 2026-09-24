@@ -1,22 +1,37 @@
 {
   "protocol_version": 1,
   "concept_id": "heuristiques-de-jugement",
-  "candidate_sha256": "0ed8634d7af3390f8b3ebea581ad58627370dd06071d79e2b406bebe77a65b62",
+  "candidate_sha256": "73695c201976c59e982a738dd57aa60d6d7d84b89ca03354835bce350c9801e3",
   "verdict": "FACTCHECK_FAIL",
-  "claims": 77,
-  "supported": 75,
-  "failed": 2,
+  "claims": 90,
+  "supported": 85,
+  "failed": 5,
   "structural_errors": [],
   "failures": [
     {
-      "claim_id": "C007",
+      "claim_id": "C011",
       "verdict": "TOO_STRONG",
-      "reason": "Le support dit « the complex tasks ... to simpler judgmental operations » ; le claim, presente comme ce que dit la these (« elle dit que »), transforme « tache complexe » en « tache hors d'atteinte » et « operation plus simple » en « operation que l'on sait faire ». C'est une escalade de degre sur un enonce attribue aux auteurs : les supports n'etablissent nulle part que la tache initiale serait inaccessible."
+      "reason": "Les supports etablissent les deux questions de la p. 1 et la distinction entre evaluation des vraisemblances et prediction des valeurs, mais rien n'y etablit que ces deux choses seraient couramment confondues ; « que l'on confond » ajoute une affirmation non portee par le dossier."
     },
     {
-      "claim_id": "C066",
+      "claim_id": "C022",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun support resolu. L'affirmation generale (« penche toujours du meme cote, chez des personnes differentes et sur des questions differentes ») n'est etablie par rien dans le bundle."
+    },
+    {
+      "claim_id": "C023",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun support resolu ; l'enonce est presente comme un fait et non comme une hypothese."
+    },
+    {
+      "claim_id": "C030",
       "verdict": "TOO_STRONG",
-      "reason": "Le nombre de seize notes est etabli (SUP-465a85c55ec05830, SUP-66d5a53a3634ec31), et deux notes annoncant des articles a paraitre le sont aussi (notes 1 et 6 « in press », SUP-be5a9d7602201304, SUP-17de951479d58996). Mais les supports ne documentent que quatre notes (1, 2, 5, 6) : rien n'etablit que les seize renvoient a des resultats deja parus. Le claim generalise a l'ensemble des notes une propriete attestee pour quatre d'entre elles."
+      "reason": "La phrase transcrite est « The intuitive assessment of probability resembles the assessment of perceptual quantities such as distance or size » : les auteurs ecrivent probability, non likelihood. Presenter « vraisemblance » sous un « ecrivent-ils » opere la substitution que la reserve de traduction jointe declare interdite (« Likelihood n'est pas probabilite : le rapport oppose les deux »)."
+    },
+    {
+      "claim_id": "C061",
+      "verdict": "TOO_STRONG",
+      "reason": "Les deux supports restreignent l'enonce au corps du texte (« Le corps du rapport n'appelle heuristiques que la representativite [...] et la disponibilite », « Deux seulement sont appelees heuristiques dans le corps du texte »), precisement parce que le SUMMARY de la p. 31 ecrit « three heuristics, or mental operations ». Le claim supprime cette restriction et affirme du rapport entier ce que les supports n'affirment que de son corps."
     }
   ]
 }
