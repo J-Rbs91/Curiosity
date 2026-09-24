@@ -1,0 +1,803 @@
+{
+  "protocol_version": 1,
+  "concept_id": "heuristiques-de-jugement",
+  "context_budget_tokens": 300000,
+  "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
+  "candidate_sha256": "0ed8634d7af3390f8b3ebea581ad58627370dd06071d79e2b406bebe77a65b62",
+  "validated_sha256": "49865ea8d882cf6753be292fd798b69c5294321a4916f0cf444e94334c169109",
+  "evidence_files": [
+    {
+      "file": "lecture.json",
+      "sha256": "68129e210c56bf2002954db4f6ae7f8b05ccc76ab42ee3c650f92be9a4cc6e5e"
+    }
+  ],
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "text": "Quelqu’un vous demande si le train de 18 h 40 sera à l’heure, si le chantier d’en face sera fini avant l’hiver, si la personne que vous venez de recevoir tiendra le poste. Vous répondez, et vous répondez vite : sans table de fréquences, sans avoir rien compté, et pourtant avec une idée assez nette de votre degré de confiance. La question intéressante n’est pas de savoir si vous avez raison. C’est de savoir ce que vous avez fait à la place du calcul que vous n’avez pas fait."
+    },
+    {
+      "locator": "lead[1]",
+      "text": "Amos Tversky et Daniel Kahneman ouvrent là-dessus un rapport d’août 1973, et sans détour : « What determines such beliefs? How do people assess the likelihood of an uncertain event or the value of an uncertain quantity? », qu’est-ce qui détermine de telles croyances, comment évalue-t-on la vraisemblance d’un événement incertain ou la valeur d’une quantité incertaine. Leur réponse ne commence pas par l’erreur : elle dit qu’il existe un petit jeu de procédés par lesquels une tâche hors d’atteinte devient une opération que l’on sait faire, et que ces procédés rendent service la plupart du temps."
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "section_title": "La croyance qui précède la décision",
+      "text": "Le rapport ne commence pas par des erreurs, il commence par des croyances. Sa première phrase pose que « Most important decisions are based on beliefs concerning the likelihood of uncertain events », que la plupart des décisions importantes reposent sur des croyances relatives à la vraisemblance d’événements incertains. L’objet d’étude se place donc en amont du choix : avant de trancher, il faut bien s’être fait une idée de ce qui risque d’arriver."
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "section_title": "La croyance qui précède la décision",
+      "text": "Les deux questions qui suivent séparent deux choses que l’on confond. Évaluer une vraisemblance, c’est dire quelle chance une chose a d’arriver ; prédire une valeur, c’est dire combien : un délai, une note, un chiffre. La thèse porte sur les deux à la fois : « people rely on a limited number of heuristic principles by which they reduce the complex tasks of assessing likelihoods and predicting values to simpler judgmental operations », on s’appuie sur un nombre limité de principes heuristiques par lesquels on réduit les tâches complexes que sont l’évaluation des vraisemblances et la prédiction des valeurs à des opérations de jugement plus simples. L’échange est là : une tâche plus courte prend la place de celle qu’il faudrait accomplir, et c’est son résultat qui est rendu en réponse."
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "section_title": "Utiles d’abord, fautives par système",
+      "text": "La phrase suivante décide de tout : « In general, these heuristics are quite useful, but sometimes they lead to severe and systematic errors. » En général ces heuristiques sont fort utiles, mais elles conduisent parfois à des erreurs graves et systématiques. Les deux moitiés se tiennent. Sans la première, on ne comprendrait pas pourquoi de tels procédés se maintiennent ; sans la seconde, il n’y aurait rien à étudier. L’ordre est ce que perd le mot raccourci : un raccourci suggère un pis-aller, quand la phrase pose l’utilité d’abord."
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "section_title": "Utiles d’abord, fautives par système",
+      "text": "Le mot qui porte est « systématiques ». On peut comprendre son intérêt ainsi : une erreur systématique n’est pas une bévue, elle penche toujours du même côté, chez des personnes différentes et sur des questions différentes. C’est ce qui la rend montrable. Une erreur qui varie au hasard ne renseigne sur rien ; une erreur qui se répète dans le même sens trahit la règle qui l’a produite, et c’est par là que le procédé, invisible en lui-même, devient observable."
+    },
+    {
+      "locator": "sections[1].paragraphs[2]",
+      "section_title": "Utiles d’abord, fautives par système",
+      "text": "Le biais n’est donc pas le symptôme d’un esprit défaillant : c’est la trace laissée par un procédé qui rend service ailleurs. Il n’a pas non plus le sens de préjugé. Les biais dont il s’agit tiennent aux opérations par lesquelles une impression se forme, et les auteurs les distinguent expressément des intrusions du désir ou de l’intérêt dans le jugement. Ils ajoutent que la chose ne vise pas les seuls profanes : l’expert qui juge intuitivement y est exposé comme un autre."
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "section_title": "Quand la netteté tient lieu de distance",
+      "text": "Le cas sur lequel les auteurs installent leur raisonnement vient de la vue. Évaluer intuitivement une vraisemblance ressemble, écrivent-ils, à estimer une distance ou une taille : des jugements qui travaillent sur des données de validité limitée. Ce qui décide en partie de la distance apparente d’un objet, c’est sa netteté : plus l’objet se voit nettement, plus il paraît proche. La règle a une validité réelle, et c’est le point : dans une scène donnée, les objets lointains se voient effectivement moins nets que les proches. C’est pourtant l’appui sur cette règle, concluent-ils, qui produit des erreurs systématiques dans l’estimation des distances."
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "section_title": "Quand la netteté tient lieu de distance",
+      "text": "Trois constats accompagnent l’exemple, et le texte les transpose au jugement. On n’a pas conscience des règles qui gouvernent ces impressions. On ne les contrôle pas délibérément. Mais le troisième ouvre l’issue que les deux premiers fermaient : il est possible d’apprendre à reconnaître les situations où les impressions risquent d’être biaisées, et d’y apporter délibérément les corrections qui conviennent. Ce n’est pas la promesse d’un esprit rectifié, c’est celle d’un esprit averti par situations."
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "section_title": "Ressembler, se rappeler, partir d’un chiffre",
+      "text": "Restent les opérations elles-mêmes. La première, page 3, répond à trois formes de question : quelle chance un objet A a-t-il d’appartenir à une classe B, un événement A de provenir d’un processus B, un processus A d’engendrer un événement B. Dans les trois cas, l’opération exécutée est une comparaison : « probabilities are evaluated by the degree to which A is representative of B », les probabilités sont évaluées par le degré auquel A est représentatif de B, c’est-à-dire par leur degré de similarité. On juge de la chance par la ressemblance. Six biais y sont numérotés, et le premier, l’insensibilité à la probabilité a priori, dit ce que l’échange laisse tomber : la ressemblance ignore ce qui est plus ou moins courant."
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "section_title": "Ressembler, se rappeler, partir d’un chiffre",
+      "text": "La deuxième, page 15, ne compare pas, elle croit compter. On évalue parfois la fréquence d’une classe ou la chance d’un événement « by the ease with which instances or occurrences could be brought to mind », par la facilité avec laquelle des cas viennent à l’esprit. Les exemples sont ceux des auteurs : estimer le risque d’infarctus chez des personnes d’âge mûr en se remémorant les cas survenus parmi ses connaissances, estimer la probabilité qu’une affaire échoue en imaginant les difficultés qu’elle rencontrerait. Le procédé a sa raison d’être : les cas des grandes classes se rappellent mieux et plus vite que ceux des classes rares. Mais la facilité du rappel dépend aussi d’autre chose que de la fréquence, et c’est là que l’estimation dévie."
+    },
+    {
+      "locator": "sections[3].paragraphs[2]",
+      "section_title": "Ressembler, se rappeler, partir d’un chiffre",
+      "text": "La troisième, page 20, ne ressemble ni à l’une ni à l’autre : elle part d’un nombre. On estime en partant d’une valeur initiale que l’on ajuste jusqu’à la réponse finale, valeur suggérée par la formulation même du problème ou sortie d’un calcul laissé à mi-chemin. Vient alors la phrase qui décide de tout : les ajustements sont typiquement insuffisants. Les auteurs en tirent la conséquence : des points de départ différents donnent des estimations différentes, tirées vers leurs valeurs initiales. Le résumé de la page 31 la donne pour « usually employed in numerical prediction », employée d’ordinaire dans la prédiction numérique : c’est le versant combien de la thèse."
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "section_title": "Le vocabulaire du rapport et celui qu’on lui prête",
+      "text": "Le vocabulaire reçu déborde alors le texte, et d’abord sur les noms. Trois circulent comme allant de soi : représentativité, disponibilité, ancrage. Le rapport n’appelle heuristiques que les deux premières, page 3 et pages 15 et 20 ; pour la troisième, ce qui reçoit ce nom est « an adjustment from a starting point », un ajustement à partir d’un point de départ, et l’ancrage y est l’effet que l’on vient de voir, non l’opération : « We call this phenomenon anchoring ». L’expression « anchoring heuristic » ne figure nulle part dans le rapport, et parler d’heuristique d’ancrage donne pour acquis le mécanisme qu’il s’agissait d’établir."
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "section_title": "Le vocabulaire du rapport et celui qu’on lui prête",
+      "text": "Le débordement porte ensuite sur le compte. La thèse de la première page ne dit pas trois, elle dit un nombre limité ; le chiffre trois n’apparaît qu’aux deux endroits qui ont une fonction d’affichage, l’annonce de plan de la page 2 et le résumé de la page 31, et la discussion de la page 26 revient à l’indéfini avec « some heuristics ». Une liste fermée ferait de l’ensemble un inventaire à vérifier ; la formule ouverte dit seulement qu’un petit nombre de tels procédés suffit à rendre compte de beaucoup, et rien n’interdit qu’on en décrive d’autres."
+    },
+    {
+      "locator": "sections[5].paragraphs[0]",
+      "section_title": "La phrase de 1973 et celle de 1974",
+      "text": "Le texte dont il vient d’être question n’est pas l’article que l’on connaît. C’est un rapport technique de contrat, daté d’août 1973, signé par Amos Tversky et Daniel Kahneman, tous deux rattachés à l’Université hébraïque de Jérusalem. Ses seize notes finales renvoient à des résultats déjà parus, dans le Psychological Bulletin en 1971 et dans Cognitive Psychology en 1972, et deux d’entre elles annoncent des articles à paraître. Il ne rend donc pas compte d’une expérience nouvelle : il met en ordre ce que ses auteurs avaient publié par morceaux."
+    },
+    {
+      "locator": "sections[5].paragraphs[1]",
+      "section_title": "La phrase de 1973 et celle de 1974",
+      "text": "La version par laquelle ce travail est connu paraît un an plus tard, dans Science, le 27 septembre 1974. Elle commence presque de la même façon, et pas tout à fait : « This article shows that people rely on a limited number of heuristic principles which reduce the complex tasks of assessing probabilities and predicting values to simpler judgmental operations. » Trois écarts. L’annonce d’un thème est devenue la promesse d’une démonstration. Les vraisemblances sont devenues des probabilités. Et « by which they reduce » est devenu « which reduce »."
+    },
+    {
+      "locator": "sections[5].paragraphs[2]",
+      "section_title": "La phrase de 1973 et celle de 1974",
+      "text": "Ce dernier déplacement change le sujet de la phrase. En 1973, ce sont les personnes qui réduisent la tâche, les principes étant ce par quoi elles la réduisent ; en 1974, ce sont les principes qui la réduisent. La différence est mince à l’oreille et sérieuse à l’usage : selon la version que l’on cite, on décrit une chose que les gens font, ou un mécanisme qui opère en eux. Les deux tournures ont cours, chacune adossée à son texte, et la seconde est celle que la postérité a retenue."
+    }
+  ],
+  "supports": [
+    {
+      "id": "SUP-f7d4154d237128c5",
+      "origin": "validated",
+      "path": "$.$schema",
+      "access": "n/a",
+      "text": "../schema/carte.schema.json"
+    },
+    {
+      "id": "SUP-94ca5f934575081c",
+      "origin": "validated",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "heuristiques-de-jugement"
+    },
+    {
+      "id": "SUP-16a5261daf01e9e0",
+      "origin": "validated",
+      "path": "$.slug",
+      "access": "n/a",
+      "text": "heuristiques-de-jugement"
+    },
+    {
+      "id": "SUP-ad89626955b2952c",
+      "origin": "validated",
+      "path": "$.status",
+      "access": "n/a",
+      "text": "VALIDATED"
+    },
+    {
+      "id": "SUP-1897167114fb8c8d",
+      "origin": "validated",
+      "path": "$.title",
+      "access": "n/a",
+      "text": "Les heuristiques de jugement"
+    },
+    {
+      "id": "SUP-905dfdcf6a8e0314",
+      "origin": "validated",
+      "path": "$.themes[0]",
+      "access": "n/a",
+      "text": "choisir-sous-risque"
+    },
+    {
+      "id": "SUP-f4b0c87c42633064",
+      "origin": "validated",
+      "path": "$.theme_labels[\"choisir-sous-risque\"]",
+      "access": "n/a",
+      "text": "Choisir quand on ne sait pas"
+    },
+    {
+      "id": "SUP-76fa2495406fbfbd",
+      "origin": "validated",
+      "path": "$.authors[0].name",
+      "access": "n/a",
+      "text": "Amos Tversky"
+    },
+    {
+      "id": "SUP-0a05e4a37c237f50",
+      "origin": "validated",
+      "path": "$.authors[1].name",
+      "access": "n/a",
+      "text": "Daniel Kahneman"
+    },
+    {
+      "id": "SUP-d4baee1795c0c8c9",
+      "origin": "validated",
+      "path": "$.attribution_note",
+      "access": "n/a",
+      "text": "Coécriture attestée sur le document lui-même : la couverture, le bloc « AUTHOR(S) » du formulaire DD 1473 et la ligne de signature de la première page portent « Amos Tversky and Daniel Kahneman », alors rattachés tous deux à l'Université hébraïque de Jérusalem. Le rapport porte « Date of Report: August, 1973 » ; le millésime 1974 est celui de la parution dans Science, qui n'a pas été ouverte. Le rapport rassemble des résultats que les auteurs avaient déjà publiés ailleurs, et ses notes y renvoient."
+    },
+    {
+      "id": "SUP-c69f54eb79397f0e",
+      "origin": "validated",
+      "path": "$.hook",
+      "access": "n/a",
+      "text": "Comment évalue-t-on la vraisemblance d'un événement incertain ?"
+    },
+    {
+      "id": "SUP-5440b0e51ee8b77b",
+      "origin": "validated",
+      "path": "$.summary",
+      "access": "n/a",
+      "text": "Un nombre limité de principes ramènent l'évaluation des vraisemblances à des jugements plus simples : utiles en général, ils mènent parfois à des erreurs systématiques."
+    },
+    {
+      "id": "SUP-848453548fa68f5b",
+      "origin": "validated",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "on s'appuie sur un nombre limité de principes heuristiques par lesquels on réduit les tâches complexes […] à des opérations de jugement plus simples."
+    },
+    {
+      "id": "SUP-dafb4d37a7c934e0",
+      "origin": "validated",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Amos Tversky et Daniel Kahneman, Judgment under Uncertainty: Heuristics and Biases, ONR Technical Report, Eugene (Oregon), Oregon Research Institute, août 1973, rapport DTIC AD 767 426."
+    },
+    {
+      "id": "SUP-cde266d87ac108ae",
+      "origin": "validated",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 1, premier paragraphe"
+    },
+    {
+      "id": "SUP-76d11f542691c5ac",
+      "origin": "validated",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-0a329daf8b158213",
+      "origin": "validated",
+      "path": "$.quotation.original_text",
+      "access": "n/a",
+      "text": "people rely on a limited number of heuristic principles by which they reduce the complex tasks […] to simpler judgmental operations."
+    },
+    {
+      "id": "SUP-a006aef58d724e59",
+      "origin": "validated",
+      "path": "$.quotation.original_language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-520c61d935611e51",
+      "origin": "validated",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "in-house"
+    },
+    {
+      "id": "SUP-35b9b7ae00ccdc60",
+      "origin": "validated",
+      "path": "$.quotation.translation.translator",
+      "access": "n/a",
+      "text": "Traduction interne non publiée (agent lecteur, chaîne Curiosity), 23 août 2026. Aucune traduction française publiée de ce rapport ONR n'a été identifiée. Quatre choix à signaler. Premièrement, le début : la phrase du rapport commence par « The theme of the present paper is that people rely on... » ; la citation entre à « people rely », ce que la référence dit et ce que le lecteur peut vérifier, et rien n'a été ajouté pour raccorder. Deuxièmement, la coupe : elle remplace « of assessing likelihoods and predicting values », c'est à dire l'objet de ces tâches complexes, l'évaluation des vraisemblances et la prédiction des valeurs. Elle ne retourne pas le sens, elle laisse la mécanique intacte, mais elle enlève le domaine, que le titre de la carte restitue et que definition_de_lauteur donne en entier. Troisièmement, « people » est rendu par « on » et non par « les gens » : c'est le générique français ordinaire, il permet de conserver la construction exacte « par lesquels on réduit » qui traduit « by which they reduce » et qui maintient les personnes, et non les heuristiques, en position de sujet ; avec « les gens » la phrase passait à 161 caractères et il fallait sacrifier soit cette construction, soit « de jugement ». Quatrièmement, « judgmental operations » est rendu par « opérations de jugement » et non par « opérations mentales » : le rapport emploie les deux expressions et ne les confond pas, « mental operations » figurant dans le résumé de la p. 31 ; les rabattre l'une sur l'autre effacerait la distinction."
+    },
+    {
+      "id": "SUP-b58b80fcf8f91184",
+      "origin": "validated",
+      "path": "$.sources[0].label",
+      "access": "full-text",
+      "text": "Amos Tversky et Daniel Kahneman, Judgment under Uncertainty: Heuristics and Biases, ONR Technical Report, Eugene (Oregon), Oregon Research Institute, août 1973, 33 p., aussi paru comme Research Bulletin, vol. 13, n° 1."
+    },
+    {
+      "id": "SUP-ec988b343d66a1a7",
+      "origin": "validated",
+      "path": "$.sources[0].kind",
+      "access": "full-text",
+      "text": "primary"
+    },
+    {
+      "id": "SUP-32fabaa6d93052a7",
+      "origin": "validated",
+      "path": "$.sources[0].locator",
+      "access": "full-text",
+      "text": "p. 1-31, réf. et notes p. 32-33"
+    },
+    {
+      "id": "SUP-5d764312a4e29b33",
+      "origin": "validated",
+      "path": "$.sources[0].doi_isbn",
+      "access": "full-text",
+      "text": "10.21236/ad0767426"
+    },
+    {
+      "id": "SUP-a38fe3779a661e5d",
+      "origin": "validated",
+      "path": "$.sources[0].url",
+      "access": "full-text",
+      "text": "https://archive.org/details/DTIC_AD0767426"
+    },
+    {
+      "id": "SUP-986173c2d1efcd14",
+      "origin": "validated",
+      "path": "$.sources[1].label",
+      "access": "metadata-only",
+      "text": "Amos Tversky et Daniel Kahneman, « Judgment under Uncertainty: Heuristics and Biases », Science, vol. 185, n° 4157, 27 septembre 1974, p. 1124-1131."
+    },
+    {
+      "id": "SUP-8a7e56dd8ce49180",
+      "origin": "validated",
+      "path": "$.sources[1].kind",
+      "access": "metadata-only",
+      "text": "primary"
+    },
+    {
+      "id": "SUP-51b6bdcbbe027a05",
+      "origin": "validated",
+      "path": "$.sources[1].locator",
+      "access": "metadata-only",
+      "text": "p. 1124-1131"
+    },
+    {
+      "id": "SUP-472c04163a06bbfb",
+      "origin": "validated",
+      "path": "$.sources[1].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.1126/science.185.4157.1124"
+    },
+    {
+      "id": "SUP-fd58f1348bd1d4c7",
+      "origin": "validated",
+      "path": "$.sources[1].url",
+      "access": "metadata-only",
+      "text": "https://doi.org/10.1126/science.185.4157.1124"
+    },
+    {
+      "id": "SUP-54a6226a4cfb2b28",
+      "origin": "validated",
+      "path": "$.sources[2].label",
+      "access": "metadata-only",
+      "text": "Amos Tversky et Daniel Kahneman, « Judgment under uncertainty: Heuristics and biases », dans D. Kahneman, P. Slovic et A. Tversky (dir.), Judgment under Uncertainty: Heuristics and Biases, Cambridge University Press, 1982."
+    },
+    {
+      "id": "SUP-c01b46ee50da2c17",
+      "origin": "validated",
+      "path": "$.sources[2].kind",
+      "access": "metadata-only",
+      "text": "primary"
+    },
+    {
+      "id": "SUP-70021bcdcff7980e",
+      "origin": "validated",
+      "path": "$.sources[2].locator",
+      "access": "metadata-only",
+      "text": "chap. 1"
+    },
+    {
+      "id": "SUP-7eda0a5ff0fa362b",
+      "origin": "validated",
+      "path": "$.sources[2].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.1017/cbo9780511809477.002"
+    },
+    {
+      "id": "SUP-df0bd2e5e4552ef7",
+      "origin": "validated",
+      "path": "$.sources[2].url",
+      "access": "metadata-only",
+      "text": "https://doi.org/10.1017/cbo9780511809477.002"
+    },
+    {
+      "id": "SUP-ffc37be1e07d0557",
+      "origin": "validated",
+      "path": "$.review.reviewer",
+      "access": "n/a",
+      "text": "contrôle aveugle"
+    },
+    {
+      "id": "SUP-a5be4fa625196cd8",
+      "origin": "validated",
+      "path": "$.review.date",
+      "access": "n/a",
+      "text": "2026-08-23"
+    },
+    {
+      "id": "SUP-ab62b4f98906b668",
+      "origin": "validated",
+      "path": "$.review.attribution",
+      "access": "n/a",
+      "text": "confirmee"
+    },
+    {
+      "id": "SUP-427fb1df98a1e120",
+      "origin": "validated",
+      "path": "$.review.quotation",
+      "access": "n/a",
+      "text": "verbatim"
+    },
+    {
+      "id": "SUP-118d16b59e932353",
+      "origin": "validated",
+      "path": "$.review.sources",
+      "access": "n/a",
+      "text": "resolvent"
+    },
+    {
+      "id": "SUP-ed7629ec7b0c3818",
+      "origin": "validated",
+      "path": "$.review.prose",
+      "access": "n/a",
+      "text": "fidele"
+    },
+    {
+      "id": "SUP-e134482677317836",
+      "origin": "validated",
+      "path": "$.review.verdict",
+      "access": "n/a",
+      "text": "PASS"
+    },
+    {
+      "id": "SUP-f16dc4412c2f6e7b",
+      "origin": "validated",
+      "path": "$.review.notes[0]",
+      "access": "n/a",
+      "text": "CITATION — J'ai ouvert le rapport moi-même : https://archive.org/details/DTIC_AD0767426 (OCR intégral téléchargé, DTIC_AD0767426_djvu.txt, 69 248 c., et DTIC_AD0767426_djvu.xml pour la découpe feuille à feuille). La feuille 4 porte le titre, la ligne « Amos Tversky and Daniel Kahneman / The Hebrew University / Jerusalem », puis le premier paragraphe : « Most important decisions are based on beliefs concerning the likelihood of uncertain events… What determines such beliefs? How do people assess the likelihood of an uncertain event or the value of an uncertain quantity? The theme of the present paper is that people rely on a limited number of heuristic principles by which they reduce the complex tasks of assessing likelihoods and predicting values to simpler judgmental operations. In general, these heuristics are quite useful, but sometimes they lead to severe and systematic errors. » L'original_text de la fiche est mot pour mot ce segment, la coupe […] portant exactement sur « of assessing likelihoods and predicting values », comme la note de traduction le déclare."
+    },
+    {
+      "id": "SUP-817a6873654a59cc",
+      "origin": "validated",
+      "path": "$.review.notes[1]",
+      "access": "n/a",
+      "text": "CITATION — Locator vérifié, pas supposé. Les têtes de page numérotées de l'exemplaire scanné (feuille 6 = « -3- », feuille 8 = « -5- », … feuille 34 = « -31- ») donnent le décalage constant page imprimée = feuille − 3. La feuille 4 est donc bien la p. 1, et le passage est bien dans son premier paragraphe. Les 37 images d'archive.org = 4 feuillets liminaires (couverture NTIS, page de titre ONR/contrat, recto et verso du DD 1473) + 33 pages numérotées."
+    },
+    {
+      "id": "SUP-7837dc06e65e0188",
+      "origin": "validated",
+      "path": "$.review.notes[2]",
+      "access": "n/a",
+      "text": "CITATION — Point où la fiche aurait pu déraper et ne dérape pas : la version célèbre, celle de Science 1974, dit autre chose. J'ai ouvert un tirage public de l'article (https://sites.socsci.uci.edu/~bskyrms/bio/readings/tversky_k_heuristics_biases.pdf, p. 1124, texte extrait des flux du PDF) : « This article shows that people rely on a limited number of heuristic principles which reduce the complex tasks of assessing probabilities and predicting values to simpler judgmental operations. » Trois écarts avec 1973 : « This article shows » vs « The theme of the present paper is », « which reduce » vs « by which they reduce », « assessing probabilities » vs « assessing likelihoods ». La fiche cite le rapport de 1973 et en donne le libellé de 1973 : cohérent. Traduction déclarée (in-house, traducteur et date nommés), coupe signalée des deux côtés, langues renseignées."
+    },
+    {
+      "id": "SUP-a0c0016871090f77",
+      "origin": "validated",
+      "path": "$.review.notes[3]",
+      "access": "n/a",
+      "text": "ATTRIBUTION — Coécriture vérifiée sur les trois emplacements que la note revendique : page de titre ONR (feuille 1) « ONR Technical Report / JUDGMENT UNDER UNCERTAINTY: HEURISTICS AND BIASES / Amos Tversky and Daniel Kahneman » ; DD 1473, bloc 5 AUTHOR(S) (feuille 2) « Amos Tversky and Daniel Kahneman » ; ligne de signature de la p. 1 (feuille 4), les deux rattachés à The Hebrew University, Jerusalem. « Date of Report: August, 1973 » figure bien sur la feuille 1. Le programme heuristiques-et-biais (représentativité, disponibilité, ancrage-ajustement, et les biais systématiques qui en découlent) est de ces deux auteurs conjointement ; la fiche les nomme tous deux, Tversky en tête comme sur le document, et n'attribue pas au seul Kahneman. Simon est un inspirateur de l'arrière-plan (rationalité limitée), non l'auteur de ce concept-ci."
+    },
+    {
+      "id": "SUP-65214ed5254e0b16",
+      "origin": "validated",
+      "path": "$.review.notes[4]",
+      "access": "n/a",
+      "text": "SOURCES — Les trois DOI résolvent, et les notices sont concluantes (Crossref interrogée directement, api.crossref.org/works/…). 10.21236/ad0767426 : type report, « Judgment under Uncertainty: Heuristics and Biases », Amos Tversky et Daniel Kahneman, 1973-08-01. 10.1126/science.185.4157.1124 : Science, vol. 185, n° 4157, p. 1124-1131, 1974-09-27, AAAS — recoupé par la page de couverture JSTOR du tirage ouvert (stable/1738360) qui donne « Science, New Series, Vol. 185, No. 4157 (Sep. 27, 1974), pp. 1124-1131 ». 10.1017/cbo9780511809477.002 : chapitre, Judgment under Uncertainty, CUP, 1982-04-30, p. 3-20 ; la page CUP atteinte par redirection du DOI confirme « Chapter 1 », Tversky et Kahneman, dir. Kahneman, Slovic et Tversky. Le « chap. 1 » du locator est donc exact."
+    },
+    {
+      "id": "SUP-465a85c55ec05830",
+      "origin": "validated",
+      "path": "$.review.notes[5]",
+      "access": "n/a",
+      "text": "SOURCES — Pagination de la source primaire vérifiée pièce par pièce : « 33 p. » et « p. 1-31, réf. et notes p. 32-33 » sont justes. La feuille 34 (= p. 31) contient la fin du texte puis le SUMMARY ; les feuilles 35-36 (= p. 32-33) contiennent « REFERENCES AND NOTES », notes 1 à 16. La mention « aussi paru comme Research Bulletin, vol. 13, n° 1 » est portée par le DD 1473, bloc 9a « ORIGINATOR'S REPORT NUMBER(S): Oregon Research Institute Research Bulletin, Volume 13, No. 1 », et corroborée indépendamment par la notice du dépôt de l'Université d'Oregon (https://scholarsbank.uoregon.edu/items/1ddd6d87-bcc9-4a2b-b8f0-3ceaaeac8d70, « ORI Research Bulletin, Volume 13 », « No. 1 »)."
+    },
+    {
+      "id": "SUP-d9a901408144222e",
+      "origin": "validated",
+      "path": "$.review.notes[6]",
+      "access": "n/a",
+      "text": "PROSE — hook et summary sont portés par la p. 1 du rapport. Le hook (« Comment évalue-t-on la vraisemblance d'un événement incertain ? ») décalque la question posée par les auteurs eux-mêmes deux phrases avant la citation. Le summary reprend les deux volets de leur thèse : réduction à des jugements plus simples, puis « In general, these heuristics are quite useful, but sometimes they lead to severe and systematic errors ». Rien n'y déborde : le summary dit même un peu moins que la source (il laisse tomber « severe » et ne garde que « systématiques »), ce qui va dans le sens prudent."
+    },
+    {
+      "id": "SUP-f57eed88c5e7fb46",
+      "origin": "validated",
+      "path": "$.review.notes[7]",
+      "access": "n/a",
+      "text": "PROSE, observation sans conséquence sur le verdict — Le summary fait des principes le sujet grammatical (« Un nombre limité de principes ramènent… »), là où la note de traduction argumente longuement pour garder les personnes en position de sujet (« par lesquels on réduit »). Ce n'est pas une affirmation que les sources ne portent pas : c'est exactement la construction de la version Science 1974, p. 1124 (« heuristic principles which reduce the complex tasks… »), et Science figure parmi les sources de la carte. Deux tournures d'auteur coexistent donc sur la fiche, chacune adossée à sa source."
+    },
+    {
+      "id": "SUP-970df86cb5d64a64",
+      "origin": "validated",
+      "path": "$.review.notes[8]",
+      "access": "n/a",
+      "text": "PROSE, observation — hook et summary ne retiennent que l'évaluation des vraisemblances et laissent de côté la prédiction des valeurs, qui est le second membre de la phrase source et l'objet de la troisième heuristique (ancrage-ajustement, « usually employed in numerical prediction », SUMMARY p. 31). Rétrécissement réel mais fidèle au cas principal du texte, et la coupe correspondante est signalée par […] dans la citation : je ne le compte pas comme trop-etroite."
+    },
+    {
+      "id": "SUP-be5a9d7602201304",
+      "origin": "validated",
+      "path": "$.review.notes[9]",
+      "access": "n/a",
+      "text": "Hors des quatre points, pour information. (a) La couverture extérieure du scan (feuille 0) est la fiche de reproduction NTIS et porte « Amos Tversky, et al » ; c'est la page de titre du rapport lui-même (feuille 1) qui porte les deux noms. L'attribution_note reste exacte, mais « la couverture » désigne la seconde. (b) « des résultats que les auteurs avaient déjà publiés ailleurs » : vrai des notes 2 (Cognitive Psychology 1972) et 5 (Psychological Bulletin 1971), tandis que les notes 1 et 6 portent « in press » en 1973. (c) La note de traduction renvoie à un champ definition_de_lauteur qui ne figure pas dans ce dossier ; je n'ai donc pas pu contrôler ce renvoi. (d) Crossref donne comme éditeur du DOI 10.21236 le Defense Technical Information Center, quand le label de la fiche indique l'Oregon Research Institute d'Eugene : ce n'est pas une divergence de fond, DTIC est l'archive déposante et le document nomme bien l'ORI comme organisme d'origine."
+    },
+    {
+      "id": "SUP-ce6d70cb2ac7fd0c",
+      "origin": "validated",
+      "path": "$.review.notes[10]",
+      "access": "n/a",
+      "text": "Ce que je n'ai pas pu atteindre, et qui n'est donc pas un silence de la littérature. science.org a renvoyé 403 au proxy sur https://doi.org/10.1126/science.185.4157.1124 : je n'ai pas lu la mise en page de l'éditeur, j'ai lu un tirage PDF public de l'article (UC Irvine, couverture JSTOR). La fiche déclare de son côté cette source en metadata-only, ce qui est cohérent. apps.dtic.mil a également renvoyé 403 ; le rapport a été lu sur le scan d'archive.org. Le serveur documentary / verify_reference n'était pas exposé dans cette session : j'ai interrogé Crossref en direct, et ses réponses ont été concluantes pour les trois DOI."
+    },
+    {
+      "id": "SUP-f3e1746824f2b81d",
+      "origin": "validated",
+      "path": "$.notes[0]",
+      "access": "n/a",
+      "text": "Ne pas écrire « les trois heuristiques : représentativité, disponibilité, ancrage ». Le corps du rapport n'appelle heuristiques que la représentativité (p. 3) et la disponibilité (p. 15 et 20) ; l'ancrage y est nommé comme un phénomène, l'heuristique étant « an adjustment from a starting point ». L'expression « anchoring heuristic » ne figure nulle part dans le texte."
+    },
+    {
+      "id": "SUP-882a2cbd5fac1259",
+      "origin": "validated",
+      "path": "$.notes[1]",
+      "access": "n/a",
+      "text": "La thèse de la première page dit « a limited number of heuristic principles », et non trois. Le compte de trois n'apparaît que dans l'annonce de plan (p. 2) et dans le résumé (p. 31) ; la discussion revient à l'indéfini, « some heuristics » (p. 26)."
+    },
+    {
+      "id": "SUP-578640dd9001d479",
+      "origin": "validated",
+      "path": "$.notes[2]",
+      "access": "n/a",
+      "text": "Le rapport est daté d'août 1973 sur sa couverture. Le millésime 1974 est celui de l'article de Science, fermé et non ouvert : les deux textes ne se confondent pas, leurs résumés diffèrent déjà."
+    },
+    {
+      "id": "SUP-685c954a1ee6fd2a",
+      "origin": "validated",
+      "path": "$.notes[3]",
+      "access": "n/a",
+      "text": "Les deux premières pages de l'article ne portent pas de folio imprimé. La page citée est la première de l'article, reconnaissable à la ligne de signature qui la surmonte, et le cinquième feuillet du fichier."
+    },
+    {
+      "id": "SUP-66d5a53a3634ec31",
+      "origin": "validated",
+      "path": "$.notes[4]",
+      "access": "n/a",
+      "text": "Correction du tour 2, sur le seul point renvoyé : l'extension affichée disait 31 pages. Le rapport en compte 33, son formulaire DD 1473 portant « 33 » au champ 7a « TOTAL NO. OF PAGES ». Le corps s'arrête au folio 31, sur le SUMMARY, et les pages 32 et 33 portent « REFERENCES AND NOTES », notes 1 à 16. Le libellé et le locator sont alignés là-dessus, et le numéro d'éditeur du rapport, Research Bulletin vol. 13 n° 1 (DD 1473, champ 9a), est passé au libellé. La citation, à la p. 1, n'est pas touchée."
+    },
+    {
+      "id": "SUP-ed06b46a100e8c93",
+      "origin": "validated",
+      "path": "$.notes[5]",
+      "access": "n/a",
+      "text": "Remarque du contrôle, laissée telle quelle et non corrigée : le résumé met « un nombre limité de principes » en position de sujet, là où le rapport écrit « people rely on... principles by which they reduce » et où la note de traduction s'était donné pour règle de maintenir les personnes en position de sujet. Le contrôle a jugé la paraphrase acceptable ; elle n'a pas été retouchée pour ne pas rouvrir une prose contrôlée fidèle."
+    },
+    {
+      "id": "SUP-8b6f90115cc2d5fc",
+      "origin": "evidence:lecture.json",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "heuristiques-de-jugement"
+    },
+    {
+      "id": "SUP-6f1f5e179a289890",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authors[0].name",
+      "access": "n/a",
+      "text": "Amos Tversky"
+    },
+    {
+      "id": "SUP-dc5a904dee854636",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authors[1].name",
+      "access": "n/a",
+      "text": "Daniel Kahneman"
+    },
+    {
+      "id": "SUP-ee91fd4a67198c4c",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authorship",
+      "access": "n/a",
+      "text": "COAUTHORED"
+    },
+    {
+      "id": "SUP-17de951479d58996",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.note",
+      "access": "n/a",
+      "text": "Coécriture attestée sur le document lui-même, relevée en image et pas sur une notice. La page de couverture du rapport (feuillet 2 du fichier, celle qui porte le titre « ONR Technical Report ») imprime « Amos Tversky and Daniel Kahneman » sous le titre, sans mention d'ordre autre que l'ordre alphabétique inverse de leurs prénoms ; le bloc 5 « AUTHOR(S) » du formulaire DD 1473 (feuillet 3) donne « Amos Tversky and Daniel Kahneman » ; et la première page de l'article (feuillet 5) porte la ligne de signature « Amos Tversky and Daniel Kahneman / The Hebrew University / Jerusalem », les deux auteurs étant alors rattachés à la même institution. Les deux noms sont donc à la même enseigne, et une carte qui rangerait ce texte sous le seul nom de Kahneman, comme le fait souvent la vulgarisation postérieure au prix Nobel de 2002, contredirait la signature. Un piège de catalogage est à écarter : la page de garde du tirage NTIS ajoutée en tête du fichier (feuillet 1) porte « Amos Tversky, et al », et les métadonnées d'Internet Archive reprennent ce « Tversky, Amos » seul dans leur champ « subject » ; c'est une abréviation de bordereau, pas la signature. Sur la date, ce que le document imprime et rien de plus : la couverture porte « Date of Report: August, 1973 », un cachet « DDC RECEIVED OCT 9 1973 », et Crossref date le même identifiant du 1er août 1973. Le millésime 1974 que porte la référence courante est celui de la parution dans Science, le 27 septembre 1974, que je n'ai pas ouverte. Enfin, ce rapport n'invente ni le mot « heuristique » ni l'idée que le jugement s'écarte des règles de probabilité : il énonce et rassemble trois heuristiques dont les auteurs avaient déjà publié le détail ailleurs, et ses propres notes 1, 2, 5 et 6 renvoient à Kahneman et Tversky, Subjective probability: A judgment of representativeness (Cognitive Psychology, 1972), Tversky et Kahneman, The belief in the law of small numbers (Psychological Bulletin, 1971), et à deux textes annoncés « in press » en 1973, Kahneman et Tversky, On the psychology of prediction (Psychological Review) et Tversky et Kahneman, Availability: A heuristic for judging frequency and probability (Cognitive Psychology)."
+    },
+    {
+      "id": "SUP-2fb7af198cd226f5",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "on s'appuie sur un nombre limité de principes heuristiques par lesquels on réduit les tâches complexes […] à des opérations de jugement plus simples."
+    },
+    {
+      "id": "SUP-69aeb83ca0d11b65",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Amos Tversky et Daniel Kahneman, Judgment under Uncertainty: Heuristics and Biases, ONR Technical Report, Oregon Research Institute, Eugene, août 1973, contrat N00014-73-C-0438 (NR 197-026), ARPA Order 2449, rapport DTIC AD 767 426, DOI 10.21236/ad0767426. Premier paragraphe de l'article, p. 1, page non foliotée, cinquième feuillet du fichier."
+    },
+    {
+      "id": "SUP-4284f4bc64e23038",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 1, premier paragraphe (page non foliotée)"
+    },
+    {
+      "id": "SUP-f53d4083d6b3e451",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-ea46cdba7ef656e1",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.original_text",
+      "access": "n/a",
+      "text": "people rely on a limited number of heuristic principles by which they reduce the complex tasks […] to simpler judgmental operations."
+    },
+    {
+      "id": "SUP-25b44e99e7adef42",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.original_language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-abe57de2585fb205",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "in-house"
+    },
+    {
+      "id": "SUP-ebd6a92122568e8c",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.translation.translator",
+      "access": "n/a",
+      "text": "Traduction interne non publiée (agent lecteur, chaîne Curiosity), 23 août 2026. Aucune traduction française publiée de ce rapport ONR n'a été identifiée. Quatre choix à signaler. Premièrement, le début : la phrase du rapport commence par « The theme of the present paper is that people rely on... » ; la citation entre à « people rely », ce que la référence dit et ce que le lecteur peut vérifier, et rien n'a été ajouté pour raccorder. Deuxièmement, la coupe : elle remplace « of assessing likelihoods and predicting values », c'est à dire l'objet de ces tâches complexes, l'évaluation des vraisemblances et la prédiction des valeurs. Elle ne retourne pas le sens, elle laisse la mécanique intacte, mais elle enlève le domaine, que le titre de la carte restitue et que definition_de_lauteur donne en entier. Troisièmement, « people » est rendu par « on » et non par « les gens » : c'est le générique français ordinaire, il permet de conserver la construction exacte « par lesquels on réduit » qui traduit « by which they reduce » et qui maintient les personnes, et non les heuristiques, en position de sujet ; avec « les gens » la phrase passait à 161 caractères et il fallait sacrifier soit cette construction, soit « de jugement ». Quatrièmement, « judgmental operations » est rendu par « opérations de jugement » et non par « opérations mentales » : le rapport emploie les deux expressions et ne les confond pas, « mental operations » figurant dans le résumé de la p. 31 ; les rabattre l'une sur l'autre effacerait la distinction."
+    },
+    {
+      "id": "SUP-db10f64a9871f70a",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].citation",
+      "access": "full-text",
+      "text": "Tversky, A. & Kahneman, D. (août 1973). Judgment under Uncertainty: Heuristics and Biases. ONR Technical Report, Oregon Research Institute, Eugene, Oregon, pour l'Office of Naval Research, Code 455, contrat N00014-73-C-0438 (NR 197-026), recherche soutenue par l'Advanced Research Projects Agency, ARPA Order n° 2449 ; principal investigator Paul Slovic, scientific officer Martin A. Tolcott. Le rapport indique en couverture qu'il paraît aussi comme Oregon Research Institute Research Bulletin, vol. 13, n° 1. Trente et une pages d'article foliotées plus références, trente sept feuillets dans le fichier. Rapport DTIC AD 767 426, tirage NTIS. Diffusion : « DISTRIBUTION STATEMENT A. Approved for public release; Distribution Unlimited », et au bloc 10 du formulaire DD 1473 : « This document has been approved for public release and sale. Its distribution is unlimited. » Exemplaire lu : le mirage public d'Internet Archive, identifiant DTIC_AD0767426, fichier de 2 335 753 octets, MD5 209dc05cb2e85c8908f85bc01fc7cdf6, identique à celui que déclare la notice IA."
+    },
+    {
+      "id": "SUP-da62f0b38c9186b9",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].doi_isbn",
+      "access": "full-text",
+      "text": "10.21236/ad0767426"
+    },
+    {
+      "id": "SUP-2022afb2c518162e",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].url",
+      "access": "full-text",
+      "text": "https://archive.org/download/DTIC_AD0767426/DTIC_AD0767426.pdf"
+    },
+    {
+      "id": "SUP-b0858b32592846a5",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].citation",
+      "access": "partial",
+      "text": "Images de page du même exemplaire, servies en clair par Internet Archive à environ 2 700 x 3 500 pixels, ouvertes pour relire le verbatim indépendamment de la couche OCR : feuillet n1 (couverture ONR, signature, contrat, date du rapport), n4 (première page de l'article, signature et premier paragraphe, la page citée), n6 (folio imprimé 3, ouverture de la section REPRESENTATIVENESS), n18 (folio 15, ouverture d'AVAILABILITY), n23 (folio 20, ouverture d'ADJUSTMENT AND ANCHORING), n34 (folio 31, fin de la discussion et SUMMARY). Voie de vérification, non voie de référence."
+    },
+    {
+      "id": "SUP-3e8f335a2986bbaa",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].url",
+      "access": "partial",
+      "text": "https://archive.org/download/DTIC_AD0767426/page/n4_w1800.jpg"
+    },
+    {
+      "id": "SUP-17e2ec95b8c16602",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].citation",
+      "access": "full-text",
+      "text": "Couche OCR du même exemplaire, DTIC_AD0767426_djvu.txt, 69 248 octets, MD5 605f84fed631cfcce472e1ef41654e9f, et sa version structurée DTIC_AD0767426_djvu.xml, utilisées pour repérer les passages et pour établir la correspondance entre les folios imprimés et les feuillets du fichier. Aucune citation n'est écrite depuis cette couche seule."
+    },
+    {
+      "id": "SUP-6ae90a28b619babf",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].url",
+      "access": "full-text",
+      "text": "https://archive.org/download/DTIC_AD0767426/DTIC_AD0767426_djvu.txt"
+    },
+    {
+      "id": "SUP-df44e3fa9d8fe228",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[3].citation",
+      "access": "metadata-only",
+      "text": "Tversky, A. & Kahneman, D. (1974). Judgment under Uncertainty: Heuristics and Biases. Science, 185(4157), 1124-1131, paru le 27 septembre 1974. C'est la version que la littérature cite. Elle est fermée : Unpaywall répond is_oa false, oa_status closed, aucune oa_location ; OpenAlex (W4292157289) donne is_oa false, oa_status closed, oa_url null, any_repository_has_fulltext false. Texte intégral non ouvert. Seul le résumé fourni par l'éditeur et relayé par OpenAlex a été lu, comme notice."
+    },
+    {
+      "id": "SUP-16062e7205d3f459",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[3].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.1126/science.185.4157.1124"
+    },
+    {
+      "id": "SUP-f238d72dfc8fca11",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[3].url",
+      "access": "metadata-only",
+      "text": "https://doi.org/10.1126/science.185.4157.1124"
+    },
+    {
+      "id": "SUP-c1a3aec4a31e2a34",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[4].citation",
+      "access": "metadata-only",
+      "text": "Tversky, A. & Kahneman, D. (1982). Judgment under uncertainty: Heuristics and biases. Dans D. Kahneman, P. Slovic & A. Tversky (dir.), Judgment under Uncertainty: Heuristics and Biases, chapitre 1, Cambridge University Press. Reprise de l'article dans le recueil de 1982, non ouverte. Notice relevée par Crossref."
+    },
+    {
+      "id": "SUP-492607e038e75bf3",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[4].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.1017/cbo9780511809477.002"
+    },
+    {
+      "id": "SUP-68e3a796e11b0408",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[4].url",
+      "access": "metadata-only",
+      "text": "https://doi.org/10.1017/cbo9780511809477.002"
+    },
+    {
+      "id": "SUP-27a975b51f8aa778",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[5].citation",
+      "access": "metadata-only",
+      "text": "Tversky, A. & Kahneman, D. (1978). Judgment under Uncertainty: Heuristics and Biases. Dans Uncertainty in Economics, Academic Press, p. 17-34. Autre reprise, non ouverte. Notice relevée par Crossref, utile seulement pour montrer que le texte a circulé sous plusieurs paginations et qu'un locator sans édition ne veut rien dire."
+    },
+    {
+      "id": "SUP-3e18bfc0f6d59e98",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[5].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.1016/b978-0-12-214850-7.50008-5"
+    },
+    {
+      "id": "SUP-1b06ebbf350222ec",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[5].url",
+      "access": "metadata-only",
+      "text": "https://doi.org/10.1016/b978-0-12-214850-7.50008-5"
+    },
+    {
+      "id": "SUP-dfd1244cfe6b6de5",
+      "origin": "evidence:lecture.json",
+      "path": "$.definition_de_lauteur",
+      "access": "n/a",
+      "text": "Ce que le rapport énonce lui-même, dans ses termes, avec les folios imprimés du rapport ONR. La thèse, premier paragraphe, p. 1 : « Most important decisions are based on beliefs concerning the likelihood of uncertain events such as the outcome of an election, the guilt of a defendant, or the future value of the dollar. These beliefs are usually expressed in statements such as \"I think that...\", \"chances are...\", \"It is unlikely that...\", etc. Occasionally, beliefs concerning uncertain events are expressed in a numerical form as odds or subjective probabilities. What determines such beliefs? How do people assess the likelihood of an uncertain event or the value of an uncertain quantity? The theme of the present paper is that people rely on a limited number of heuristic principles by which they reduce the complex tasks of assessing likelihoods and predicting values to simpler judgmental operations. In general, these heuristics are quite useful, but sometimes they lead to severe and systematic errors. » Noter que la thèse dit « a limited number », pas « three » : le nombre trois vient du plan et du résumé, pas de la thèse. L'analogie perceptive qui suit immédiatement, p. 1 et p. 2, et qui porte tout le raisonnement : « The intuitive assessment of probability resembles the assessment of perceptual quantities such as distance or size. These judgments are all based on data of limited validity, which is processed according to heuristic rules. For example, the apparent distance of an object is determined in part by its clarity. The more sharply the object is seen, the closer it appears to be. This rule has some validity, because in any given scene the more distant objects are seen less sharply than nearer objects. However, the reliance on this rule leads to systematic errors in the estimation of distance. » Trois traits de cet exemple sont énumérés p. 2 : les gens ne sont pas conscients des règles qui gouvernent leurs impressions ; ils ne peuvent pas contrôler délibérément leurs impressions perceptives ; mais « it is possible to learn to recognize the situations in which impressions are likely to be biased and to deliberately make appropriate corrections ». Le programme du texte, fin de p. 2 et haut de p. 3 : « The following sections describe three heuristics that are commonly employed to assess likelihoods and to predict values; enumerate systematic biases to which these heuristics lead; and discuss the applied and theoretical implications of this research. » Première heuristique, p. 3, sous l'intertitre REPRESENTATIVENESS : « Many of the probabilistic questions with which people are concerned belong to one of the following types: What is the probability that an object A belongs to a class B? What is the probability that event A originates from process B? What is the probability that process A will generate an event B? In answering such questions people typically rely on the representativeness heuristic, in which probabilities are evaluated by the degree to which A is representative of B, i.e., by the degree of similarity between them. » Elle occupe les p. 3 à 14 et six biais y sont numérotés : insensibilité à la probabilité a priori des résultats, insensibilité à la taille de l'échantillon, méconnaissance du hasard, insensibilité à la prédictibilité, illusion de validité, méconnaissance de la régression. Deuxième heuristique, p. 15, sous AVAILABILITY : « There are situations in which people assess the frequency of a class or the probability of an event by the ease with which instances or occurrences could be brought to mind. For example, one may assess the risk of heart attack among middle aged people by recalling such occurrences among one's acquaintances. Similarly, one may evaluate the probability that a given business venture will fail by imagining various difficulties which it could encounter. This judgmental heuristic is called availability. In general, availability is a useful clue for assessing frequency or probability, because instances of large classes are recalled better and faster than instances of less frequent classes. However, availability is also affected by other factors besides frequency and probability. Consequently, the reliance on availability leads to predictable biases, some of which are illustrated below. » Sa reprise en fin de section, p. 20 : « As a consequence, man has at his disposal a procedure (i.e., the availability heuristic) for estimating the numerosity of a class, the likelihood of an event or the frequency of co-occurrences, by the ease with which the relevant mental operations of retrieval, construction, or association can be performed. However, as the preceding examples have demonstrated, this valuable estimation procedure is subject to systematic errors. » Troisième heuristique, p. 20, sous ADJUSTMENT AND ANCHORING : « In many situations, people make estimates by starting from an initial value which is adjusted to yield the final answer. The initial value, or starting point, may be suggested by the formulation of the problem, or else it may be the result of a partial computation. Whatever the source of the initial value, adjustments are typically insufficient (4). That is, different starting points yield different estimates, which are biased towards the initial values. We call this phenomenon anchoring. » Le statut des biais, p. 27, ouverture de la discussion commencée p. 26 : « The biases with which we are concerned, like perceptual errors and illusions, are characteristic of the cognitive operations by which impressions and judgments are formed. These cognitive biases are distinct from the better-known intrusions of emotional and motivational factors into judgment, such as wishful thinking and the intentional distortions of judgment induced by payoffs and penalties. » Leur généralité, même page : « The reliance on heuristics and the presence of common biases are general characteristics of intuitive judgments under uncertainty. They apply not only to laymen untutored in the laws of probability, but also to experts, when they think intuitively. » Pourquoi ces heuristiques ne se corrigent pas d'elles-mêmes, p. 28 et p. 29 : « It is not surprising that heuristics such as representativeness and availability are not discarded, even though they occasionally lead to errors in prediction or estimation. What is perhaps surprising is the failure of people to infer from life-long experience such fundamental statistical rules as regression towards the mean, or the effect of sample size on sampling variability. [...] The main cause for the failure to develop valid statistical intuitions is that events are normally not coded in terms of the features that are crucial to the learning of statistical rules. » Et p. 29 : « It is the lack of an appropriate code that explains why people usually do not detect the biases in their own judgments. » La conclusion normative, p. 30, qui est la partie du texte que la vulgarisation laisse presque toujours tomber : « For judged probabilities to be considered adequate, or rational, internal consistency is not enough. The judgments must be compatible with the entire web of beliefs held by the individual. Compatibility among beliefs is the essence of rational judgment. » Le juge rationnel doit rendre ses jugements compatibles avec « (i) the subject-matter; (ii) the laws of probability; (iii) his own judgmental heuristics and biases » (p. 30). La reprise finale, p. 31 : « We began this paper with the question of how people make intuitive judgments of probability. The answers appears to be that such judgments are based on the outcomes of some specified mental operations such as the assessment of representativeness or availability. » Et le résumé du rapport, p. 31, sous SUMMARY, qui est le seul endroit où les trois sont comptées et nommées ensemble : « This paper describes three heuristics, or mental operations, that are employed in judgment under uncertainty. (i) An assessment of representativeness or similarity, which is usually performed when people are asked to judge the likelihood that an object or event A belongs to a class or process B. (ii) An assessment of the availability of instances or scenarios, which is often employed when people are asked to assess the frequency of a class or the plausibility of a particular development. (iii) An adjustment from a starting point, which is usually employed in numerical prediction when a relevant value is available. These heuristics are highly economical and usually effective, but they lead to systematic and predictable errors. A better understanding of these heuristics and of the biases to which they lead could improve judgments and decisions in situations of uncertainty. » La coquille « The answers appears to be » est dans le document ; elle est reproduite telle quelle et relue en image."
+    },
+    {
+      "id": "SUP-eb9441b3d6a6016e",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[0]",
+      "access": "n/a",
+      "text": "Accès, revérifié moi-même. https://archive.org/metadata/DTIC_AD0767426 répond HTTP 200 et sa section metadata ne comporte aucune clé access-restricted-item : les seules clés contenant « access » sont identifier-access. Collections : dticarchive, usgovernmentmirrors, government-documents ; creator « Defense Technical Information Center » ; uploader slaxemulator@gmail.com ; imagecount 37 ; is_dark absent. Le PDF a été téléchargé une fois en clair, 2 335 753 octets, et son MD5 local, 209dc05cb2e85c8908f85bc01fc7cdf6, est identique à celui que la notice IA déclare : c'est l'exemplaire miré, à l'octet près. La couche OCR a le MD5 annoncé, 605f84fed631cfcce472e1ef41654e9f, pour 69 248 octets. J'ai testé la voie DTIC directe : https://apps.dtic.mil/sti/pdfs/AD0767426.pdf répond HTTP 403, et https://doi.org/10.21236/ad0767426 aboutit au même 403 après redirection. Rien n'a été contourné ; la voie DTIC reste hors de portée et seul le mirage a été ouvert."
+    },
+    {
+      "id": "SUP-548672c367909512",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[1]",
+      "access": "n/a",
+      "text": "Incident de manipulation, consigné parce qu'il aurait pu faire écrire une fiche entièrement fausse. Le répertoire de travail temporaire contenait déjà, d'une session antérieure, un fichier nommé djvu.txt qui était la couche OCR d'un tout autre ouvrage, Bell, Raiffa et Tversky (dir.), Decision Making: Descriptive, Normative, and Prescriptive Interactions, Cambridge University Press, 1988. Mon premier téléchargement a lu ce fichier résiduel, dont les premières pages sont une table des matières de recueil, et non le rapport demandé. L'erreur a été détectée en comparant taille et MD5 aux valeurs déclarées par la notice Internet Archive : 1 916 444 octets contre 69 248 attendus. Tout le travail a ensuite été refait dans un répertoire vierge, sur des fichiers dont les empreintes ont été vérifiées avant lecture. La leçon vaut d'être écrite : sans le contrôle d'empreinte, ce rapport aurait été instruit sur le texte d'un autre livre qui contient, lui aussi, un chapitre signé Tversky et Kahneman."
+    },
+    {
+      "id": "SUP-38d5055607bf54f4",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[2]",
+      "access": "n/a",
+      "text": "Millésime. La consigne de lecture donne « (1974) » ; le document, lui, porte « Date of Report: August, 1973 » sur sa couverture ONR, un cachet « DDC RECEIVED OCT 9 1973 », et Crossref date l'identifiant 10.21236/ad0767426 du 1er août 1973. La date de l'article de Science est le 27 septembre 1974 (Unpaywall, published_date 1974-09-27). Une carte qui daterait le rapport de 1974 daterait donc un document par la parution d'un autre. La référence déposée ici porte août 1973."
+    },
+    {
+      "id": "SUP-6bb7c83f846cc960",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[3]",
+      "access": "n/a",
+      "text": "Pagination, et pourquoi il ne faut pas se fier au feuillet. Le fichier compte 37 feuillets ; l'article en occupe 31, foliotés au centre en tête de page. La correspondance est constante dans le corps du texte : feuillet = folio imprimé + 3 (folio 3 au feuillet n6, folio 15 au feuillet n18, folio 20 au feuillet n23, folio 31 au feuillet n34). Mais les deux premières pages de l'article, dont celle qui est citée, ne portent aucun folio imprimé : la citation est donc localisée « p. 1 », qui est le premier feuillet de l'article et le cinquième du fichier (n4), et cette page se reconnaît sans ambiguïté à la ligne de signature « Amos Tversky and Daniel Kahneman / The Hebrew University / Jerusalem » qui la surmonte. Les quatre feuillets qui précèdent sont la page de garde NTIS, la couverture ONR, et les deux pages du formulaire DD 1473."
+    },
+    {
+      "id": "SUP-63a7300334e9bc16",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[4]",
+      "access": "n/a",
+      "text": "La citation a été relue sur l'image de la page, pas seulement sur la couche OCR, et cela n'était pas une précaution de forme. L'OCR de ce document est très abîmé par endroits, au point de fabriquer du faux texte : la p. 2 y devient « ohjccrs .1 re seen less sharply », « the reliance „„ this ru.c », « (c) People are not generally aware » là où la page imprime « (i) » ; la p. 28 est numérotée « 70 » par l'OCR au lieu de « 29 » ; le titre de section « ADJUSTMENT AND ANCHORING » y est suivi de deux astérisques qui n'existent pas sur la page et qui sont la lecture d'une salissure d'encre en marge. Les six pages sur lesquelles porte quelque chose de cette fiche ont donc été ouvertes en image à environ 2 700 x 3 500 pixels et relues mot à mot : n1, n4, n6, n18, n23, n34. Le passage cité et tous les passages anglais reproduits dans definition_de_lauteur proviennent de ces six pages, à deux exceptions que je signale plutôt que de les masquer : les phrases attribuées ci-dessus aux p. 27, 28, 29 et 30 ont été relevées sur la couche OCR seule, leurs pages n'ayant pas été ouvertes en image. Elles ne servent qu'à juger un résumé, elles ne sont pas citées sur la carte, et aucune ne doit être reprise telle quelle sans être relue."
+    },
+    {
+      "id": "SUP-f340c4986d469c76",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[5]",
+      "access": "n/a",
+      "text": "Écart constaté entre le rapport et l'article de Science, et strictement dans les limites de ce que j'ai pu constater. L'article de Science n'a pas été ouvert : Unpaywall répond is_oa false, oa_status closed, zéro oa_location, et OpenAlex confirme oa_url null et any_repository_has_fulltext false. Ce que j'ai pu comparer, c'est le résumé fourni par l'éditeur et relayé par OpenAlex pour la notice W4292157289, d'un côté, et la section SUMMARY de la p. 31 du rapport, relue en image, de l'autre. Ils ne sont pas identiques. Le rapport écrit : « This paper describes three heuristics, or mental operations, that are employed in judgment under uncertainty. (i) An assessment of representativeness or similarity, which is usually performed when people are asked to judge the likelihood that an object or event A belongs to a class or process B. [...] (iii) An adjustment from a starting point, which is usually employed in numerical prediction when a relevant value is available. » Le résumé éditeur de Science écrit : « This article described three heuristics that are employed in making judgments under uncertainty: (i) representativeness, which is usually employed when people are asked to judge the probability that an object or event A belongs to class or process B; [...] and (iii) adjustment from an anchor, which is usually employed in numerical prediction when a relevant value is available. » Les différences relevées sont : « paper » contre « article », « describes » contre « described », la disparition de l'apposition « or mental operations », « An assessment of representativeness or similarity » contre le seul mot « representativeness », « likelihood » contre « probability », et « adjustment from a starting point » contre « adjustment from an anchor ». Les deux dernières phrases, sur l'économie des heuristiques et sur les erreurs systématiques et prévisibles, sont en revanche identiques mot pour mot. Conclusion à ne pas dépasser : l'écart est établi pour le résumé, il ne l'est pas pour le corps de l'article, que je n'ai pas lu. Il suffit à interdire de présenter le rapport et l'article comme un seul et même texte, et il suffit à expliquer pourquoi la formulation « anchoring heuristic », qui court partout, ne se trouve pas dans le rapport."
+    },
+    {
+      "id": "SUP-bf750eb64a6b9b7c",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[6]",
+      "access": "n/a",
+      "text": "Combien d'heuristiques, et sous quels noms : c'est le point que la consigne demandait de vérifier, et il ne tombe pas là où la vulgarisation le place. Le rapport en distingue trois, et il l'écrit une seule fois, dans le SUMMARY de la p. 31 : « three heuristics, or mental operations ». La thèse de la p. 1 ne dit pas trois, elle dit « a limited number of heuristic principles » ; l'annonce de plan de la p. 2 dit « three heuristics » ; et la discussion de la p. 26 revient à l'indéfini, « The preceding sections described some heuristics ». Les noms, ensuite. Deux seulement sont appelées heuristiques dans le corps du texte : « the representativeness heuristic » (p. 3, puis p. 4 et p. 6) et « the availability heuristic » (p. 20), la seconde étant introduite p. 15 par « This judgmental heuristic is called availability ». La troisième ne l'est jamais. Le titre de sa section est « ADJUSTMENT AND ANCHORING », le résumé la désigne par « An adjustment from a starting point », et l'ancrage y est nommé comme un effet, pas comme une opération : « different starting points yield different estimates, which are biased towards the initial values. We call this phenomenon anchoring » (p. 20). J'ai vérifié sur toute la couche texte : l'expression « anchoring heuristic » n'apparaît nulle part dans le rapport, et les deux seules occurrences du mot heuristic accolé à un nom d'heuristique sont representativeness et availability. Une carte qui écrirait « les trois heuristiques : représentativité, disponibilité, ancrage » prêterait donc aux auteurs un vocabulaire qui n'est pas le leur dans ce texte."
+    },
+    {
+      "id": "SUP-88565befa8621b63",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[7]",
+      "access": "n/a",
+      "text": "Choix de la citation, et ce qui a été écarté. Le passage retenu est la thèse même du texte, à sa première page, et c'est le seul endroit du rapport où le concept est énoncé d'un coup au lieu d'être distribué sur ses sections. Trois autres candidats ont été essayés et abandonnés. Le premier est la phrase entière de la p. 1, qui fait 175 caractères en anglais et environ 250 en français : impossible sous 150 sans perdre soit l'objet, soit la construction. Le second est la phrase suivante, « In general, these heuristics are quite useful, but sometimes they lead to severe and systematic errors. », 115 caractères une fois traduite : elle est courte et frappante, mais son sujet est un « ces heuristiques » qui, sorti de son paragraphe, ne renvoie à rien, et elle énonce le défaut sans énoncer le mécanisme. Le troisième est la phrase du SUMMARY, « These heuristics are highly economical and usually effective, but they lead to systematic and predictable errors. », 131 caractères en français : même défaut de renvoi, et surtout c'est précisément la phrase que le résumé éditeur de Science reprend à l'identique, donc celle qui circule déjà partout sans son texte. Une réunion des deux moitiés du paragraphe de la p. 1, mécanisme et erreur, a été mesurée à 186 caractères : elle ne passe pas, et la rogner produisait une couture agrammaticale. La citation retenue garde le mécanisme, qui est ce que la carte a besoin de porter ; le reste est dans definition_de_lauteur."
+    },
+    {
+      "id": "SUP-d9827912f0db1e8a",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[8]",
+      "access": "n/a",
+      "text": "Traduction : trois mots à surveiller si la carte reformule. « Likelihood » n'est pas « probabilité » : le rapport oppose les deux, il emploie likelihood pour le jugement intuitif et probability pour la grandeur normative, et c'est exactement là que le résumé de Science substitue l'un à l'autre. « Vraisemblance » est le rendu retenu. « Heuristic principles » n'est pas « raccourcis mentaux » : le raccourci suggère un pis-aller, alors que le texte dit d'abord l'utilité, « quite useful », « highly economical and usually effective », et ne pose l'erreur qu'ensuite ; une carte qui traduirait par raccourci inverserait l'ordre de l'argument. « Bias » enfin, chez eux, n'est pas un préjugé : la p. 27 le dit en toutes lettres, les biais dont il est question sont « characteristic of the cognitive operations by which impressions and judgments are formed » et « distinct from the better-known intrusions of emotional and motivational factors into judgment, such as wishful thinking ». Le rendre par « préjugé » ou par « parti pris » ferait basculer le texte du côté de la motivation, qu'il exclut explicitement."
+    },
+    {
+      "id": "SUP-2fce60cd935131f0",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[9]",
+      "access": "n/a",
+      "text": "Traduction française publiée : je n'en ai identifié aucune pour le rapport ONR, et je n'affirme rien au delà. Il existe très vraisemblablement une traduction française de la version Science, l'article étant repris en annexe de Thinking, Fast and Slow, dont l'édition française est Daniel Kahneman, Système 1 / Système 2 : Les deux vitesses de la pensée, Flammarion, 2012, traduit par Raymond Clarinard. Je n'ai pas pu le vérifier : la page de l'éditeur, https://editions.flammarion.com/systeme-1-systeme-2/9782081211476, répond « Request Rejected » et n'a pas livré son sommaire, et je n'ai ouvert aucun exemplaire. Cette annexe, si elle existe, traduirait de toute façon le texte de Science et non le rapport ONR, et ne pourrait donc pas servir de traduction publiée pour la citation déposée ici. La traduction de la citation reste interne et se déclare comme telle."
+    },
+    {
+      "id": "SUP-3c5ff47979a1e263",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[10]",
+      "access": "n/a",
+      "text": "Ce que je n'ai pas ouvert, et que je ne rapporte donc que par sa notice. L'article de Science 185(4157), 1124-1131, fermé, jamais ouvert : c'est la version que tout le monde cite, et aucune phrase de cette fiche ne s'y localise. Les deux reprises repérées par Crossref, le chapitre 1 du recueil de 1982 chez Cambridge (10.1017/cbo9780511809477.002) et la reprise de 1978 dans Uncertainty in Economics (10.1016/b978-0-12-214850-7.50008-5) : non ouvertes ; elles importent parce qu'elles ont chacune leur pagination, et qu'un locator recopié d'une bibliographie sans son édition ne renvoie à rien. Les quatre textes des auteurs auxquels le rapport renvoie pour le détail de ses résultats, Kahneman et Tversky, On the psychology of prediction (Psychological Review, annoncé « in press » en 1973), Kahneman et Tversky, Subjective probability: A judgment of representativeness (Cognitive Psychology, 1972, 3, 430-454), Tversky et Kahneman, The belief in the law of small numbers (Psychological Bulletin, 1971, 76, 105-110) et Tversky et Kahneman, Availability: A heuristic for judging frequency and probability (Cognitive Psychology, annoncé « in press » en 1973) : aucun n'a été ouvert dans cette session. Aucune réception francophone n'a été ouverte non plus ; je ne dis pas qu'il n'en existe pas, je dis que je n'en ai lu aucune."
+    }
+  ],
+  "estimated_tokens": 22378,
+  "status": "READY"
+}
