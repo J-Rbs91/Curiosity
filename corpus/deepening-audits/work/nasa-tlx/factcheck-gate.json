@@ -1,0 +1,32 @@
+{
+  "protocol_version": 1,
+  "concept_id": "nasa-tlx",
+  "candidate_sha256": "e66fbe59f834b1423196d6851333dd7b8766a24192ab188824096885d7ec4406",
+  "verdict": "FACTCHECK_FAIL",
+  "claims": 79,
+  "supported": 75,
+  "failed": 4,
+  "structural_errors": [],
+  "failures": [
+    {
+      "claim_id": "C002",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun support résolu. L'assertion « aucun appareil ne le relève du dehors » est présentée comme un fait et n'est adossée à aucune preuve du bundle."
+    },
+    {
+      "claim_id": "C013",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun support résolu ; le bundle n'établit nulle part qu'un observateur pourrait estimer ces exigences sans interroger la personne."
+    },
+    {
+      "claim_id": "C033",
+      "verdict": "TOO_STRONG",
+      "reason": "Le seul support est la formule du score. Elle autorise que les scores puissent différer, non qu'ils diffèrent « dès que » les notes ne sont pas toutes égales : avec des notes identiques non uniformes, deux jeux de poids différents peuvent donner la même moyenne pondérée. Possibilité transformée en nécessité universelle."
+    },
+    {
+      "claim_id": "C074",
+      "verdict": "TOO_STRONG",
+      "reason": "Les supports disent « pour les deux tiers un paquet de formulaires » et localisent les annexes B à E ; ils laissent hors de ce compte les sections 3 à 5 et la bibliographie (renvois bibliographiques signalés par le même support). « Tout le reste est un jeu de formulaires » élargit donc la portée au-delà de ce qui est établi."
+    }
+  ]
+}
