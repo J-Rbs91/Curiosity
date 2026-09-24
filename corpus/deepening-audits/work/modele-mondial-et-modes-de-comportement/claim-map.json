@@ -1,0 +1,834 @@
+{
+  "concept_id": "modele-mondial-et-modes-de-comportement",
+  "candidate_sha256": "1171ec6cc1daf9344dc0d9dc13eb9596f9864ba7cdecd81393070b34b80d4d37",
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "lead[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[3]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C001",
+      "locator": "lead[0]",
+      "start": 236,
+      "end": 298,
+      "claim_text": "C’est ainsi, aussi, qu’a été lu pendant cinquante ans le livre",
+      "normalized_claim": "Pendant cinquante ans, ce livre a été lu comme une prévision chiffrée et datée.",
+      "support_ids": [
+        "SUP-e35ea9c79b39a52b",
+        "SUP-4bcd81cab37233d0"
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "locator": "lead[0]",
+      "start": 290,
+      "end": 371,
+      "claim_text": "le livre que quatre auteurs ont publié en 1972 sous le titre The Limits to Growth",
+      "normalized_claim": "The Limits to Growth a été publié en 1972 par quatre auteurs.",
+      "support_ids": [
+        "SUP-73be8317e98927d8",
+        "SUP-ac8caaf1ffd03ef5",
+        "SUP-f69d10d784a1d865",
+        "SUP-97cc6a5e88c9487f",
+        "SUP-48e2e16fc346eeb6",
+        "SUP-c5a9645b6d4aa4f1",
+        "SUP-7e9426ba6e5d9b04"
+      ]
+    },
+    {
+      "claim_id": "C003",
+      "locator": "lead[0]",
+      "start": 374,
+      "end": 488,
+      "claim_text": "on y a cherché des dates d’épuisement, on les a confrontées aux faits, et on a conclu que le calcul s’était trompé",
+      "normalized_claim": "La réception a cherché dans le livre des dates d’épuisement, les a comparées aux faits et en a conclu à l’erreur du modèle.",
+      "support_ids": [
+        "SUP-e35ea9c79b39a52b",
+        "SUP-4bcd81cab37233d0",
+        "SUP-a1496b177b650b1e"
+      ]
+    },
+    {
+      "claim_id": "C004",
+      "locator": "lead[1]",
+      "start": 3,
+      "end": 126,
+      "claim_text": "ce livre consacre plusieurs de ses pages à prévenir qu’il ne fournit pas ce genre de nombre et qu’il ne peut pas le fournir",
+      "normalized_claim": "Le livre avertit à plusieurs endroits qu’il ne donne pas et ne peut pas donner de valeur chiffrée datée.",
+      "support_ids": [
+        "SUP-c244e4c08c996ba8",
+        "SUP-470d6e6c5bea1f28",
+        "SUP-8fbce3f1ff335072"
+      ]
+    },
+    {
+      "claim_id": "C005",
+      "locator": "lead[1]",
+      "start": 216,
+      "end": 267,
+      "claim_text": "Une quantité peut croître, osciller ou s’effondrer.",
+      "normalized_claim": "Les allures possibles d’une variable du modèle sont la croissance, l’oscillation ou l’effondrement.",
+      "support_ids": [
+        "SUP-c244e4c08c996ba8"
+      ]
+    },
+    {
+      "claim_id": "C006",
+      "locator": "lead[1]",
+      "start": 268,
+      "end": 332,
+      "claim_text": "Ces allures, ses auteurs les appellent des modes de comportement",
+      "normalized_claim": "Les auteurs nomment ces allures des modes de comportement.",
+      "support_ids": [
+        "SUP-c244e4c08c996ba8",
+        "SUP-f6588b960c1e5457"
+      ]
+    },
+    {
+      "claim_id": "C007",
+      "locator": "lead[1]",
+      "start": 337,
+      "end": 406,
+      "claim_text": "c’est sur elles, non sur les valeurs, qu’ils demandent qu’on les juge",
+      "normalized_claim": "Les auteurs demandent qu’on juge leur modèle sur les modes de comportement, pas sur les valeurs numériques.",
+      "support_ids": [
+        "SUP-e628655350dea5c6",
+        "SUP-c244e4c08c996ba8"
+      ]
+    },
+    {
+      "claim_id": "C008",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 0,
+      "end": 118,
+      "claim_text": "Les graphiques que le modèle produit ont une particularité qu’on remarque à peine : ils n’ont pas d’échelle verticale.",
+      "normalized_claim": "Les graphiques du modèle ne portent pas d’échelle verticale.",
+      "support_ids": [
+        "SUP-e628655350dea5c6"
+      ]
+    },
+    {
+      "claim_id": "C009",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 119,
+      "end": 204,
+      "claim_text": "Les courbes montent et retombent sans que rien, sur le côté, ne dise à quelle hauteur",
+      "normalized_claim": "Aucune graduation latérale ne donne la hauteur des courbes.",
+      "support_ids": [
+        "SUP-e628655350dea5c6"
+      ]
+    },
+    {
+      "claim_id": "C010",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 209,
+      "end": 282,
+      "claim_text": "l’axe du temps, qui va de 1900 à 2100, est laissé volontairement imprécis",
+      "normalized_claim": "L’axe du temps court de 1900 à 2100 et est délibérément rendu vague.",
+      "support_ids": [
+        "SUP-e628655350dea5c6",
+        "SUP-4746245e55341583"
+      ]
+    },
+    {
+      "claim_id": "C011",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 312,
+      "end": 533,
+      "claim_text": "les auteurs écrivent avoir « deliberately omitted the vertical scales » et rendu l’échelle des temps vague, pour qu’on regarde l’allure générale plutôt que des valeurs numériques qui, disent-ils, ne sont qu’approximatives",
+      "normalized_claim": "Les auteurs revendiquent l’omission des échelles verticales et le flou de l’échelle des temps pour faire porter l’attention sur les modes de comportement, les valeurs n’étant qu’approximatives.",
+      "support_ids": [
+        "SUP-e628655350dea5c6"
+      ]
+    },
+    {
+      "claim_id": "C012",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 580,
+      "end": 771,
+      "claim_text": "dès leur premier modèle, ils déclarent s’intéresser « only in the broad behavior modes of the population-capital system », aux grandes allures du système formé par la population et le capital",
+      "normalized_claim": "Dans ce premier modèle mondial, les auteurs déclarent ne s’intéresser qu’aux grands modes de comportement du système population-capital.",
+      "support_ids": [
+        "SUP-f6588b960c1e5457",
+        "SUP-c244e4c08c996ba8"
+      ]
+    },
+    {
+      "claim_id": "C013",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 0,
+      "end": 99,
+      "claim_text": "Ce que vaut une prédiction de ce genre, ils l’expliquent par une image : une balle lancée en l’air.",
+      "normalized_claim": "Les auteurs expliquent la portée de ce genre de prédiction par l’image d’une balle lancée en l’air.",
+      "support_ids": [
+        "SUP-c244e4c08c996ba8"
+      ]
+    },
+    {
+      "claim_id": "C014",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 100,
+      "end": 250,
+      "claim_text": "On peut annoncer sans risque son comportement général, elle montera en ralentissant, puis retombera en accélérant, et elle ne se mettra pas en orbite.",
+      "normalized_claim": "Le comportement général de la balle est prévisible avec certitude : montée en ralentissant, chute en accélérant, pas de mise en orbite.",
+      "support_ids": [
+        "SUP-c244e4c08c996ba8"
+      ]
+    },
+    {
+      "claim_id": "C015",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 251,
+      "end": 362,
+      "claim_text": "Dire à quelle hauteur exacte elle montera demande au contraire un calcul détaillé et des informations précises.",
+      "normalized_claim": "Prédire la hauteur exacte atteinte par la balle demanderait un calcul détaillé et des informations précises.",
+      "support_ids": [
+        "SUP-c244e4c08c996ba8"
+      ]
+    },
+    {
+      "claim_id": "C016",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 363,
+      "end": 455,
+      "claim_text": "Les deux énoncés ne portent pas sur la même chose, l’un décrit une forme, l’autre une valeur",
+      "normalized_claim": "Les deux énoncés sont de nature différente : l’un porte sur une forme, l’autre sur une valeur.",
+      "support_ids": [
+        "SUP-c244e4c08c996ba8"
+      ]
+    },
+    {
+      "claim_id": "C017",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 460,
+      "end": 554,
+      "claim_text": "c’est le premier genre de compréhension qu’ils cherchent, disent-ils, avec leur modèle mondial",
+      "normalized_claim": "Les auteurs disent chercher avec leur modèle mondial ce type élémentaire de compréhension des modes de comportement.",
+      "support_ids": [
+        "SUP-c244e4c08c996ba8"
+      ]
+    },
+    {
+      "claim_id": "C018",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 556,
+      "end": 653,
+      "claim_text": "Aux courbes, on ne demande donc plus en quelle année, mais si la grandeur finit par se retourner.",
+      "normalized_claim": "La question légitime posée aux courbes n’est pas la date mais le retournement éventuel de la grandeur.",
+      "support_ids": [
+        "SUP-0b2860ab62c7aff6",
+        "SUP-c244e4c08c996ba8"
+      ]
+    },
+    {
+      "claim_id": "C019",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 111,
+      "end": 236,
+      "claim_text": "Les auteurs nomment leur méthode page 31 : la dynamique des systèmes, mise au point au Massachusetts Institute of Technology.",
+      "normalized_claim": "La méthode est nommée page 31 : System Dynamics, mise au point au MIT.",
+      "support_ids": [
+        "SUP-4e56aa440100a1c0",
+        "SUP-c5b572c9931536e3"
+      ]
+    },
+    {
+      "claim_id": "C020",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 237,
+      "end": 305,
+      "claim_text": "Son objet propre est la boucle, un circuit qui revient sur lui-même.",
+      "normalized_claim": "L’objet propre de la dynamique des systèmes est la boucle de rétroaction.",
+      "support_ids": []
+    },
+    {
+      "claim_id": "C021",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 306,
+      "end": 417,
+      "claim_text": "Un tel modèle n’est pas une formule qui trace une courbe, c’est un assemblage de circuits qu’on laisse tourner.",
+      "normalized_claim": "Un modèle de dynamique des systèmes n’est pas une formule mais un assemblage de boucles simulé.",
+      "support_ids": []
+    },
+    {
+      "claim_id": "C022",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 85,
+      "end": 263,
+      "claim_text": "« the model’s feedback loop structure is a much more important determinant of overall behavior than the exact numbers used to quantify the feedback loops », écrivent-ils page 121",
+      "normalized_claim": "Les auteurs écrivent page 121 que la structure de boucles détermine le comportement d’ensemble bien plus que les nombres exacts.",
+      "support_ids": [
+        "SUP-b0816894f296df65",
+        "SUP-0b2860ab62c7aff6",
+        "SUP-c244e4c08c996ba8"
+      ]
+    },
+    {
+      "claim_id": "C023",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 265,
+      "end": 397,
+      "claim_text": "La phrase suivante en tire la conséquence : « Even rather large changes in input data do not generally alter the mode of behavior. »",
+      "normalized_claim": "La phrase immédiatement suivante du livre dit que même de larges changements de données d’entrée ne modifient généralement pas le mode de comportement.",
+      "support_ids": [
+        "SUP-b0816894f296df65",
+        "SUP-c244e4c08c996ba8"
+      ]
+    },
+    {
+      "claim_id": "C024",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 398,
+      "end": 563,
+      "claim_text": "On peut donc modifier fortement une donnée d’entrée sans que l’allure de la courbe change ; ce que les nombres déplacent, c’est la date et la hauteur, pas le dessin.",
+      "normalized_claim": "Les changements numériques déplacent période, taux et date, sans changer le mode de comportement.",
+      "support_ids": [
+        "SUP-c244e4c08c996ba8",
+        "SUP-b0816894f296df65"
+      ]
+    },
+    {
+      "claim_id": "C025",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 55,
+      "end": 168,
+      "claim_text": "Montrer qu’un coefficient est mal choisi ne défait pas le résultat, puisque le résultat n’était pas ce nombre-là.",
+      "normalized_claim": "Contester un coefficient ne réfute pas le résultat, qui ne porte pas sur les nombres.",
+      "support_ids": [
+        "SUP-b0816894f296df65",
+        "SUP-c244e4c08c996ba8"
+      ]
+    },
+    {
+      "claim_id": "C026",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 169,
+      "end": 281,
+      "claim_text": "La contestation qui porte vise les circuits : celui-ci existe-t-il, agit-il dans ce sens, et en manque-t-il un ?",
+      "normalized_claim": "La contestation efficace porte sur l’existence, le sens et la complétude des boucles.",
+      "support_ids": []
+    },
+    {
+      "claim_id": "C027",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 318,
+      "end": 602,
+      "claim_text": "Gaya Herrington rappelle qu’une recension de 1973, signée Cole, Freeman, Jahoda et Pavitt, concluait à l’inadéquation du modèle du point de vue de la modélisation linéaire, et que Sterman a fait valoir depuis que ce n’était pas le bon critère pour un modèle de dynamique des systèmes.",
+      "normalized_claim": "Herrington rapporte la recension de 1973 par Cole, Freeman, Jahoda et Pavitt et l’objection de Sterman sur le critère de linéarité.",
+      "support_ids": [
+        "SUP-e35ea9c79b39a52b",
+        "SUP-a1496b177b650b1e",
+        "SUP-91f98e066552253c"
+      ]
+    },
+    {
+      "claim_id": "C028",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 603,
+      "end": 665,
+      "claim_text": "Le désaccord portait sur ce qu’on pouvait attendre de l’objet.",
+      "normalized_claim": "Le désaccord de 1973 portait sur le critère d’évaluation applicable au modèle.",
+      "support_ids": [
+        "SUP-e35ea9c79b39a52b"
+      ]
+    },
+    {
+      "claim_id": "C029",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 0,
+      "end": 169,
+      "claim_text": "Le refus de prédire est écrit sans détour, page 93 : « Ces graphiques ne sont pas des prédictions exactes de la valeur des variables pour telle ou telle année à venir. »",
+      "normalized_claim": "La phrase citée figure page 93 du livre.",
+      "support_ids": [
+        "SUP-8fbce3f1ff335072",
+        "SUP-c383513d5383c0a9",
+        "SUP-4685a429a063582c",
+        "SUP-4746245e55341583"
+      ]
+    },
+    {
+      "claim_id": "C030",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 170,
+      "end": 296,
+      "claim_text": "La phrase suivante est pourtant affirmative : ces courbes indiquent les tendances de comportement du système, et rien d’autre.",
+      "normalized_claim": "La phrase suivante affirme que ces graphiques indiquent seulement les tendances de comportement du système.",
+      "support_ids": [
+        "SUP-f6588b960c1e5457",
+        "SUP-c244e4c08c996ba8",
+        "SUP-4746245e55341583"
+      ]
+    },
+    {
+      "claim_id": "C031",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 297,
+      "end": 434,
+      "claim_text": "Une page plus tôt, les auteurs revendiquent même une prédiction « in the most limited sense of the word », au sens le plus limité du mot.",
+      "normalized_claim": "Page 92, les auteurs qualifient leur démarche de prédiction au sens le plus limité du mot.",
+      "support_ids": [
+        "SUP-c244e4c08c996ba8",
+        "SUP-470d6e6c5bea1f28"
+      ]
+    },
+    {
+      "claim_id": "C032",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 435,
+      "end": 590,
+      "claim_text": "Deux contresens symétriques guettent donc : lire des chiffres datés là où il n’y en a pas, ou croire que rien n’est avancé parce que les chiffres manquent.",
+      "normalized_claim": "Deux contresens symétriques sont possibles : y lire des chiffres datés, ou croire qu’aucune affirmation n’est portée.",
+      "support_ids": [
+        "SUP-f6588b960c1e5457",
+        "SUP-f9eb95b36b4675c9"
+      ]
+    },
+    {
+      "claim_id": "C033",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 0,
+      "end": 89,
+      "claim_text": "Ce que le calcul apporte alors, ils l’énoncent page 22 en deux points, et deux seulement.",
+      "normalized_claim": "Les auteurs revendiquent page 22 deux avantages, et deux seulement.",
+      "support_ids": [
+        "SUP-c244e4c08c996ba8"
+      ]
+    },
+    {
+      "claim_id": "C034",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 90,
+      "end": 328,
+      "claim_text": "Chaque hypothèse est écrite sous une forme précise, donc ouverte à l’inspection et à la critique de tous ; et une fois ces hypothèses discutées et révisées, un ordinateur en trace les implications sans erreur, si compliquées soient-elles.",
+      "normalized_claim": "Les deux avantages sont l’écriture précise des hypothèses, ouverte à la critique, et le tracé sans erreur de leurs implications par ordinateur.",
+      "support_ids": [
+        "SUP-c244e4c08c996ba8"
+      ]
+    },
+    {
+      "claim_id": "C035",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 329,
+      "end": 454,
+      "claim_text": "Rien là ne concerne l’exactitude du résultat : la précision revendiquée est celle de la déduction, pas celle de la prévision.",
+      "normalized_claim": "La précision revendiquée porte sur la déduction et non sur la prévision.",
+      "support_ids": [
+        "SUP-c244e4c08c996ba8"
+      ]
+    },
+    {
+      "claim_id": "C036",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 455,
+      "end": 636,
+      "claim_text": "L’avantage est réclamé sur les modèles mentaux, ceux dont chacun se sert pour décider sans les écrire, et que les auteurs disent nécessairement très simples au regard de la réalité.",
+      "normalized_claim": "L’avantage est revendiqué face aux modèles mentaux, que les auteurs disent nécessairement très simples au regard de la réalité.",
+      "support_ids": [
+        "SUP-c244e4c08c996ba8"
+      ]
+    },
+    {
+      "claim_id": "C037",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 35,
+      "end": 268,
+      "claim_text": "Une affirmation que ce modèle peut soutenir parle d’une forme et de ce qui la modifierait : telle croissance ne peut pas se prolonger indéfiniment dans cette structure, telle mesure change l’allure et telle autre la décale seulement.",
+      "normalized_claim": "Le modèle peut soutenir des affirmations portant sur une forme et sur ce qui la modifie ou la décale.",
+      "support_ids": [
+        "SUP-c244e4c08c996ba8",
+        "SUP-b0816894f296df65"
+      ]
+    },
+    {
+      "claim_id": "C038",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 269,
+      "end": 344,
+      "claim_text": "Une affirmation qu’il ne peut pas soutenir porte un nombre et un millésime.",
+      "normalized_claim": "Le modèle ne peut pas soutenir une affirmation chiffrée et datée.",
+      "support_ids": [
+        "SUP-8fbce3f1ff335072",
+        "SUP-c244e4c08c996ba8"
+      ]
+    },
+    {
+      "claim_id": "C039",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 345,
+      "end": 455,
+      "claim_text": "Le partage ne tient pas à la prudence de celui qui parle, mais à ce que l’objet a été construit pour produire.",
+      "normalized_claim": "Cette délimitation tient à la construction du modèle, non à la prudence de l’énonciateur.",
+      "support_ids": [
+        "SUP-0b2860ab62c7aff6",
+        "SUP-c244e4c08c996ba8"
+      ]
+    },
+    {
+      "claim_id": "C040",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 0,
+      "end": 77,
+      "claim_text": "Le livre ne propose d’ailleurs pas une courbe, mais une famille de scénarios.",
+      "normalized_claim": "Le livre présente une famille de scénarios et non une courbe unique.",
+      "support_ids": [
+        "SUP-a7dcb35cc4f9b891",
+        "SUP-e35ea9c79b39a52b"
+      ]
+    },
+    {
+      "claim_id": "C041",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 78,
+      "end": 170,
+      "claim_text": "Douze, selon le compte qu’en donnent Jørgen Randers, l’un des coauteurs, et Gaya Herrington.",
+      "normalized_claim": "Randers, coauteur, et Herrington comptent douze scénarios.",
+      "support_ids": [
+        "SUP-a7dcb35cc4f9b891",
+        "SUP-048d5c6a2eca7fe6",
+        "SUP-a05d5d7c13d453e3",
+        "SUP-c5a9645b6d4aa4f1"
+      ]
+    },
+    {
+      "claim_id": "C042",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 171,
+      "end": 252,
+      "claim_text": "Chacun fait tourner le même assemblage de boucles sous des hypothèses différentes",
+      "normalized_claim": "Chaque scénario exécute le même modèle sous des hypothèses différentes.",
+      "support_ids": [
+        "SUP-a7dcb35cc4f9b891"
+      ]
+    },
+    {
+      "claim_id": "C043",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 254,
+      "end": 296,
+      "claim_text": "aucun n’est désigné comme le plus probable",
+      "normalized_claim": "Aucun scénario n’est présenté comme le plus probable.",
+      "support_ids": [
+        "SUP-a7dcb35cc4f9b891"
+      ]
+    },
+    {
+      "claim_id": "C044",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 301,
+      "end": 350,
+      "claim_text": "l’intérêt est dans la comparaison de leurs formes",
+      "normalized_claim": "L’intérêt des scénarios réside dans la comparaison de leurs formes.",
+      "support_ids": []
+    },
+    {
+      "claim_id": "C045",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 0,
+      "end": 59,
+      "claim_text": "La réception, elle, a retenu une prophétie unique et datée.",
+      "normalized_claim": "La réception a retenu du livre une prédiction unique et datée.",
+      "support_ids": [
+        "SUP-e35ea9c79b39a52b",
+        "SUP-4bcd81cab37233d0"
+      ]
+    },
+    {
+      "claim_id": "C046",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 60,
+      "end": 259,
+      "claim_text": "Herrington rappelle qu’on a prêté au premier livre l’annonce d’un épuisement des ressources pour 1990, méprise répandue au point d’être reprise par le Programme des Nations unies pour l’environnement",
+      "normalized_claim": "Herrington documente la méprise selon laquelle le premier livre aurait prédit l’épuisement des ressources pour 1990, reprise par le PNUE.",
+      "support_ids": [
+        "SUP-e35ea9c79b39a52b",
+        "SUP-a1496b177b650b1e"
+      ]
+    },
+    {
+      "claim_id": "C047",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 262,
+      "end": 370,
+      "claim_text": "or les points de retournement, note-t-elle, se situent au-delà de 2000 dans tous les graphiques de scénarios",
+      "normalized_claim": "Herrington note que les points de retournement se situent au-delà de 2000 dans tous les graphiques de scénarios.",
+      "support_ids": [
+        "SUP-e35ea9c79b39a52b"
+      ]
+    },
+    {
+      "claim_id": "C048",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 372,
+      "end": 604,
+      "claim_text": "Graham Turner ouvre en 2008 sa comparaison entre le modèle et trente ans de données par le même rappel : contrairement à une croyance répandue, ces scénarios n’annonçaient pas d’effondrement mondial avant la fin du vingtième siècle.",
+      "normalized_claim": "Turner (2008) ouvre sa comparaison sur trente ans en rappelant que, contrairement à la croyance répandue, les scénarios ne prédisaient pas d’effondrement mondial avant la fin du XXe siècle.",
+      "support_ids": [
+        "SUP-4bcd81cab37233d0",
+        "SUP-0dd72ea18e0e6472",
+        "SUP-4eaab017f0e7bca0"
+      ]
+    },
+    {
+      "claim_id": "C049",
+      "locator": "sections[3].paragraphs[2]",
+      "start": 57,
+      "end": 201,
+      "claim_text": "Une courbe qui passe par un sommet et retombe, tracée sur un axe qui va jusqu’en 2100, appelle le geste de remettre l’échelle qu’on en a retirée",
+      "normalized_claim": "Les courbes à sommet tracées sur un axe allant jusqu’en 2100 invitent à restituer mentalement l’échelle omise.",
+      "support_ids": [
+        "SUP-e628655350dea5c6",
+        "SUP-4746245e55341583"
+      ]
+    },
+    {
+      "claim_id": "C050",
+      "locator": "sections[3].paragraphs[2]",
+      "start": 285,
+      "end": 512,
+      "claim_text": "Randers en signale un second du même genre : le mot croissance a été entendu comme croissance économique alors que le livre parlait de croissance matérielle, ce qui a produit, écrit-il, des décennies de débats publics inutiles.",
+      "normalized_claim": "Randers signale que le mot croissance a été compris comme croissance économique au lieu de croissance matérielle, d’où des décennies de débats publics inutiles.",
+      "support_ids": [
+        "SUP-a7dcb35cc4f9b891"
+      ]
+    },
+    {
+      "claim_id": "C051",
+      "locator": "sections[3].paragraphs[3]",
+      "start": 43,
+      "end": 148,
+      "claim_text": "la portion de courbe qu’elle prend pour une prophétie est celle que les auteurs déclarent la moins solide",
+      "normalized_claim": "La portion d’effondrement des courbes est celle que les auteurs déclarent la moins solide.",
+      "support_ids": [
+        "SUP-c244e4c08c996ba8",
+        "SUP-0b2860ab62c7aff6"
+      ]
+    },
+    {
+      "claim_id": "C052",
+      "locator": "sections[3].paragraphs[3]",
+      "start": 150,
+      "end": 311,
+      "claim_text": "Page 142, ils écrivent que la validité de leur modèle ne tient que jusqu’au point, dans chaque graphique, où la croissance s’arrête et où l’effondrement commence",
+      "normalized_claim": "Page 142, les auteurs bornent la validité de leur modèle au point où la croissance s’arrête et où l’effondrement commence.",
+      "support_ids": [
+        "SUP-c244e4c08c996ba8",
+        "SUP-0b2860ab62c7aff6"
+      ]
+    },
+    {
+      "claim_id": "C053",
+      "locator": "sections[3].paragraphs[3]",
+      "start": 314,
+      "end": 441,
+      "claim_text": "aucune variable sociale n’y figure, et ils ne savent pas dire comment les comportements humains changeraient dans un tel régime",
+      "normalized_claim": "Le modèle ne contient aucune variable sociale et les auteurs ne savent pas prédire le changement des comportements humains en régime d’effondrement.",
+      "support_ids": [
+        "SUP-c244e4c08c996ba8"
+      ]
+    },
+    {
+      "claim_id": "C054",
+      "locator": "sections[3].paragraphs[3]",
+      "start": 443,
+      "end": 673,
+      "claim_text": "L’inventaire de ce qui manque est page 94 : une seule population mondiale, une seule ressource généralisée, une seule classe de polluants, aucune frontière nationale, ni commerce, ni migrations, ni climat, ni processus politiques.",
+      "normalized_claim": "Page 94, les auteurs énumèrent les limites d’agrégation : population unique, ressource généralisée, classe unique de polluants, absence de frontières, de commerce, de migrations, de climat et de processus politiques.",
+      "support_ids": [
+        "SUP-c244e4c08c996ba8"
+      ]
+    },
+    {
+      "claim_id": "C055",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 0,
+      "end": 63,
+      "claim_text": "Le Club de Rome a commandité cette étude, il ne l’a pas écrite.",
+      "normalized_claim": "Le Club de Rome est commanditaire de l’étude, non son auteur.",
+      "support_ids": [
+        "SUP-46b9dbff579eac39",
+        "SUP-4e56aa440100a1c0",
+        "SUP-be2ad9f9e1d9f236"
+      ]
+    },
+    {
+      "claim_id": "C056",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 64,
+      "end": 186,
+      "claim_text": "Quatre noms figurent sur la page de titre : Donella H. Meadows, Dennis L. Meadows, Jørgen Randers, William W. Behrens III.",
+      "normalized_claim": "La page de titre porte ces quatre noms dans cet ordre.",
+      "support_ids": [
+        "SUP-f69d10d784a1d865",
+        "SUP-be2ad9f9e1d9f236",
+        "SUP-4e56aa440100a1c0",
+        "SUP-97cc6a5e88c9487f",
+        "SUP-48e2e16fc346eeb6",
+        "SUP-c5a9645b6d4aa4f1",
+        "SUP-7e9426ba6e5d9b04"
+      ]
+    },
+    {
+      "claim_id": "C057",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 187,
+      "end": 348,
+      "claim_text": "L’avant-propos précise que l’étude a été conduite par une équipe internationale sous la direction de Dennis Meadows, avec le soutien de la Volkswagen Foundation.",
+      "normalized_claim": "L’avant-propos attribue la conduite de l’étude à une équipe internationale dirigée par Dennis Meadows, financée par la Volkswagen Foundation.",
+      "support_ids": [
+        "SUP-be2ad9f9e1d9f236",
+        "SUP-4e56aa440100a1c0"
+      ]
+    },
+    {
+      "claim_id": "C058",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 399,
+      "end": 511,
+      "claim_text": "un commentaire de son comité exécutif, ouvert page 185 sur les objectifs qu’il avait en invitant l’équipe du MIT",
+      "normalized_claim": "Le volume contient page 185 un commentaire du comité exécutif du Club de Rome ouvrant sur les objectifs poursuivis en invitant l’équipe du MIT.",
+      "support_ids": [
+        "SUP-be2ad9f9e1d9f236",
+        "SUP-4e56aa440100a1c0"
+      ]
+    },
+    {
+      "claim_id": "C059",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 0,
+      "end": 125,
+      "claim_text": "L’idée que la structure importe plus que les nombres n’est pas née dans ce livre, et ses auteurs ne le prétendent nulle part.",
+      "normalized_claim": "La doctrine de la primauté de la structure n’est pas revendiquée comme neuve par les quatre auteurs.",
+      "support_ids": [
+        "SUP-c5b572c9931536e3"
+      ]
+    },
+    {
+      "claim_id": "C060",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 126,
+      "end": 321,
+      "claim_text": "Une note de la page 21 indique que le modèle prototype dont ils sont partis a été conçu par Jay W. Forrester, du Massachusetts Institute of Technology, et décrit dans World Dynamics, paru en 1971",
+      "normalized_claim": "Une note de la page 21 attribue le modèle prototype à Jay W. Forrester (MIT), décrit dans World Dynamics, 1971.",
+      "support_ids": [
+        "SUP-be2ad9f9e1d9f236",
+        "SUP-4e56aa440100a1c0",
+        "SUP-46b9dbff579eac39",
+        "SUP-c244e4c08c996ba8"
+      ]
+    },
+    {
+      "claim_id": "C061",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 324,
+      "end": 433,
+      "claim_text": "d’autres notes renvoient à ses travaux antérieurs, Urban Dynamics, Industrial Dynamics, Principles of Systems",
+      "normalized_claim": "D’autres notes du livre renvoient à Urban Dynamics, Industrial Dynamics et Principles of Systems.",
+      "support_ids": [
+        "SUP-c5b572c9931536e3"
+      ]
+    },
+    {
+      "claim_id": "C062",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 65,
+      "end": 260,
+      "claim_text": "Le nom World3, sous lequel ce modèle est aujourd’hui désigné et comparé aux données, ne figure pas dans l’édition de 1972, qui parle de son modèle mondial, et de ce premier modèle mondial simple.",
+      "normalized_claim": "Le nom World3, utilisé par la littérature ultérieure, est absent de l’édition de 1972, qui dit « our world model » et « this first simple world model ».",
+      "support_ids": [
+        "SUP-320ec9c256375a79",
+        "SUP-ea899d00a1179ae9",
+        "SUP-7b10c002d7787cda"
+      ]
+    },
+    {
+      "claim_id": "C063",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 261,
+      "end": 438,
+      "claim_text": "Les auteurs écrivent page 91 qu’il n’existe pas un modèle mondial figé, mais un modèle évolutif, continuellement critiqué et mis à jour à mesure que leur compréhension augmente.",
+      "normalized_claim": "Page 91, les auteurs décrivent un modèle évolutif, continuellement critiqué et mis à jour, et non un modèle figé.",
+      "support_ids": [
+        "SUP-c244e4c08c996ba8"
+      ]
+    },
+    {
+      "claim_id": "C064",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 439,
+      "end": 566,
+      "claim_text": "Le nom est venu ensuite et recouvre plusieurs états : lire une évaluation de ce modèle demande donc de savoir duquel il s’agit.",
+      "normalized_claim": "Le nom World3 recouvre plusieurs états successifs du modèle, ce qui oblige à identifier la version évaluée.",
+      "support_ids": [
+        "SUP-999c9a50e0cb0840",
+        "SUP-1215fe77db4d4686",
+        "SUP-ea899d00a1179ae9"
+      ]
+    }
+  ]
+}
