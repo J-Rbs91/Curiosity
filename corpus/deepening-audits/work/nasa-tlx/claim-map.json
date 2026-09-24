@@ -1,6 +1,6 @@
 {
   "concept_id": "nasa-tlx",
-  "candidate_sha256": "e66fbe59f834b1423196d6851333dd7b8766a24192ab188824096885d7ec4406",
+  "candidate_sha256": "3de4b4865225c9a2110c58681da9be962fe46d43cc6e85c6f9e44bf4d946cef8",
   "paragraphs": [
     {
       "locator": "lead[0]",
@@ -91,10 +91,10 @@
     {
       "claim_id": "C001",
       "locator": "lead[0]",
-      "start": 407,
-      "end": 543,
+      "start": 365,
+      "end": 501,
       "claim_text": "la charge est éprouvée individuellement, par chacun, et il n’existe pas de règle graduée qui permette d’estimer ce qu’une activité coûte",
-      "normalized_claim": "La charge est éprouvée individuellement et il n'existe pas de règle externe pour estimer le coût d'une activité.",
+      "normalized_claim": "Le livret pose que la charge est vécue individuellement et qu'aucune règle externe ne permet d'estimer le coût d'une activité.",
       "support_ids": [
         "SUP-1aee9908589daf65",
         "SUP-1123af8ef0ffe07b",
@@ -104,77 +104,55 @@
     {
       "claim_id": "C002",
       "locator": "lead[0]",
-      "start": 367,
-      "end": 404,
-      "claim_text": "aucun appareil ne le relève du dehors",
-      "normalized_claim": "Aucun instrument externe ne mesure ce que la personne a dû dépenser.",
-      "support_ids": []
-    },
-    {
-      "claim_id": "C003",
-      "locator": "lead[0]",
-      "start": 586,
-      "end": 762,
-      "claim_text": "poser la question d’un bloc, savoir si c’était difficile, ramène un chiffre unique où l’effort fourni, la pression du temps et la contrariété d’avoir mal fait restent confondus",
-      "normalized_claim": "Une question globale unique confond effort, pression temporelle et insatisfaction.",
+      "start": 539,
+      "end": 721,
+      "claim_text": "Mais poser la question d’un bloc, savoir si c’était difficile, ramène un chiffre unique où l’effort fourni, la pression du temps et la contrariété d’avoir mal fait restent confondus.",
+      "normalized_claim": "Une question globale unique confond les facteurs de charge, ce que le livret oppose à une évaluation facteur par facteur.",
       "support_ids": [
         "SUP-461e54b6e0a71387"
       ]
     },
     {
-      "claim_id": "C004",
+      "claim_id": "C003",
       "locator": "lead[1]",
       "start": 0,
       "end": 99,
       "claim_text": "Un groupe de recherche du centre Ames de la NASA a fait circuler un livret d’une vingtaine de pages",
-      "normalized_claim": "Le document est un livret d'une vingtaine de pages émanant d'un groupe de recherche du centre Ames de la NASA.",
+      "normalized_claim": "Le document est un livret d'environ vingt pages diffusé par un groupe de recherche du NASA Ames Research Center.",
       "support_ids": [
         "SUP-5cd9cfa91bb227d1",
-        "SUP-81fc7567c5ec43eb",
         "SUP-f2aa5a4bf11f5e24",
-        "SUP-33105e9ab8e4844e"
+        "SUP-33105e9ab8e4844e",
+        "SUP-76bf281a377118b3"
       ]
     },
     {
-      "claim_id": "C005",
+      "claim_id": "C004",
       "locator": "lead[1]",
-      "start": 151,
+      "start": 104,
       "end": 205,
-      "claim_text": "plutôt que de lire une grandeur, organiser un jugement",
-      "normalized_claim": "Le livret substitue l'organisation d'un jugement subjectif à la lecture d'une grandeur.",
+      "claim_text": "répond à cette difficulté par un déplacement : plutôt que de lire une grandeur, organiser un jugement",
+      "normalized_claim": "Le livret substitue à une mesure externe l'organisation d'un jugement subjectif.",
       "support_ids": [
         "SUP-461e54b6e0a71387",
         "SUP-1aee9908589daf65"
       ]
     },
     {
-      "claim_id": "C006",
+      "claim_id": "C005",
       "locator": "lead[1]",
       "start": 207,
-      "end": 322,
-      "claim_text": "Le livret ne se donne pas pour une théorie de la charge de travail, mais pour un mode d’emploi, formulaires compris",
-      "normalized_claim": "Le livret se présente comme un mode d'emploi de la procédure, formulaires inclus, non comme une théorie.",
+      "end": 396,
+      "claim_text": "Le livret ne se donne pas pour une théorie de la charge de travail, mais pour un mode d’emploi, formulaires compris, distribué afin que d’autres s’en servent dans leurs propres expériences.",
+      "normalized_claim": "Le livret se présente comme un mode d'emploi accompagné de formulaires, distribué pour que d'autres chercheurs l'utilisent.",
       "support_ids": [
         "SUP-1a61b3d82b994000",
         "SUP-461e54b6e0a71387",
-        "SUP-4f77156b7df1e69e",
-        "SUP-4e11f3ed581ced8e"
+        "SUP-4f77156b7df1e69e"
       ]
     },
     {
-      "claim_id": "C007",
-      "locator": "lead[1]",
-      "start": 324,
-      "end": 395,
-      "claim_text": "distribué afin que d’autres s’en servent dans leurs propres expériences",
-      "normalized_claim": "Le livret est diffusé pour que d'autres chercheurs l'utilisent dans leurs expériences.",
-      "support_ids": [
-        "SUP-1a61b3d82b994000",
-        "SUP-461e54b6e0a71387"
-      ]
-    },
-    {
-      "claim_id": "C008",
+      "claim_id": "C006",
       "locator": "sections[0].paragraphs[0]",
       "start": 0,
       "end": 63,
@@ -186,19 +164,19 @@
       ]
     },
     {
-      "claim_id": "C009",
+      "claim_id": "C007",
       "locator": "sections[0].paragraphs[0]",
       "start": 64,
       "end": 103,
       "claim_text": "Le livret les répartit en deux groupes.",
-      "normalized_claim": "Le livret répartit les six sous-échelles en deux groupes.",
+      "normalized_claim": "Le livret classe les six sous-échelles en deux groupes.",
       "support_ids": [
         "SUP-7a875ce4267ff349",
         "SUP-461e54b6e0a71387"
       ]
     },
     {
-      "claim_id": "C010",
+      "claim_id": "C008",
       "locator": "sections[0].paragraphs[0]",
       "start": 104,
       "end": 226,
@@ -210,39 +188,30 @@
       ]
     },
     {
-      "claim_id": "C011",
+      "claim_id": "C009",
       "locator": "sections[0].paragraphs[0]",
       "start": 227,
       "end": 363,
       "claim_text": "La première est posée en toutes lettres : quelle activité de pensée et de perception a-t-il fallu, penser, décider, calculer, chercher ?",
-      "normalized_claim": "La définition de l'exigence mentale demande quelle activité mentale et perceptive a été requise (penser, décider, calculer, chercher).",
+      "normalized_claim": "La définition de l'exigence mentale interroge l'activité mentale et perceptive requise (penser, décider, calculer, chercher).",
       "support_ids": [
         "SUP-461e54b6e0a71387"
       ]
     },
     {
-      "claim_id": "C012",
+      "claim_id": "C010",
       "locator": "sections[0].paragraphs[0]",
       "start": 364,
-      "end": 420,
-      "claim_text": "Ces trois échelles décrivent la pression venue du dehors",
-      "normalized_claim": "Ces trois sous-échelles portent sur les exigences imposées de l'extérieur au sujet.",
+      "end": 421,
+      "claim_text": "Ces trois échelles décrivent la pression venue du dehors.",
+      "normalized_claim": "Ce premier groupe décrit les exigences imposées de l'extérieur au sujet.",
       "support_ids": [
         "SUP-7a875ce4267ff349",
         "SUP-461e54b6e0a71387"
       ]
     },
     {
-      "claim_id": "C013",
-      "locator": "sections[0].paragraphs[0]",
-      "start": 422,
-      "end": 505,
-      "claim_text": "celle qu’un observateur pourrait à la rigueur estimer sans rien demander à personne",
-      "normalized_claim": "Un observateur extérieur pourrait estimer ces exigences sans interroger la personne.",
-      "support_ids": []
-    },
-    {
-      "claim_id": "C014",
+      "claim_id": "C011",
       "locator": "sections[0].paragraphs[1]",
       "start": 0,
       "end": 86,
@@ -254,71 +223,107 @@
       ]
     },
     {
-      "claim_id": "C015",
+      "claim_id": "C012",
       "locator": "sections[0].paragraphs[1]",
       "start": 87,
       "end": 218,
       "claim_text": "L’effort demande combien elle a dû travailler, mentalement et physiquement, pour atteindre le niveau de résultat qui a été le sien.",
-      "normalized_claim": "La définition de l'effort demande combien on a dû travailler, mentalement et physiquement, pour atteindre son niveau de performance.",
+      "normalized_claim": "La sous-échelle Effort demande combien le sujet a dû travailler, mentalement et physiquement, pour atteindre son niveau de performance.",
       "support_ids": [
         "SUP-461e54b6e0a71387"
       ]
     },
     {
-      "claim_id": "C016",
+      "claim_id": "C013",
       "locator": "sections[0].paragraphs[1]",
       "start": 219,
       "end": 374,
       "claim_text": "La frustration demande dans quelle mesure elle s’est sentie inquiète, découragée, irritée, stressée et agacée, plutôt que rassurée, satisfaite et détendue.",
-      "normalized_claim": "La définition de la frustration demande dans quelle mesure on s'est senti inquiet, découragé, irrité, stressé, agacé versus rassuré, satisfait, détendu.",
+      "normalized_claim": "La sous-échelle Frustration interroge les sentiments d'insécurité, découragement, irritation, stress et agacement opposés à sécurité, satisfaction, détente.",
       "support_ids": [
         "SUP-461e54b6e0a71387"
       ]
     },
     {
-      "claim_id": "C017",
+      "claim_id": "C014",
       "locator": "sections[0].paragraphs[1]",
       "start": 375,
       "end": 451,
       "claim_text": "La performance, enfin, porte sur la façon dont elle juge sa propre réussite.",
-      "normalized_claim": "La sous-échelle de performance porte sur le jugement que le sujet porte sur sa propre réussite.",
+      "normalized_claim": "La sous-échelle Own Performance porte sur le jugement du sujet sur sa propre réussite.",
       "support_ids": [
         "SUP-461e54b6e0a71387",
         "SUP-7a875ce4267ff349"
       ]
     },
     {
-      "claim_id": "C018",
+      "claim_id": "C015",
       "locator": "sections[0].paragraphs[2]",
       "start": 50,
       "end": 141,
       "claim_text": "il fait entrer dans le compte de la charge des choses qu’on rangerait spontanément ailleurs",
-      "normalized_claim": "Ce second groupe intègre à la charge des éléments habituellement rangés hors de la charge.",
+      "normalized_claim": "Le second groupe intègre à la charge des éléments habituellement classés hors d'elle.",
       "support_ids": [
         "SUP-7a875ce4267ff349",
         "SUP-461e54b6e0a71387"
       ]
     },
     {
-      "claim_id": "C019",
+      "claim_id": "C016",
       "locator": "sections[0].paragraphs[2]",
       "start": 143,
       "end": 292,
       "claim_text": "Le jugement qu’une personne porte sur ce qu’elle a accompli n’est pas d’ordinaire tenu pour un coût : c’est un résultat. Ici, il fait partie du coût.",
-      "normalized_claim": "Dans l'instrument, l'auto-jugement de performance entre dans le score de charge.",
+      "normalized_claim": "Dans le TLX, la performance jugée par le sujet entre dans le calcul de la charge.",
+      "support_ids": [
+        "SUP-7a875ce4267ff349",
+        "SUP-461e54b6e0a71387"
+      ]
+    },
+    {
+      "claim_id": "C017",
+      "locator": "sections[0].paragraphs[2]",
+      "start": 293,
+      "end": 446,
+      "claim_text": "Deux séances menées sous la même exigence extérieure ne pèseront donc pas pareil selon que la personne s’estime ou non à la hauteur de ce qu’elle a fait.",
+      "normalized_claim": "Puisque la performance perçue entre dans le score, deux séances d'exigence externe identique peuvent donner des scores différents.",
+      "support_ids": [
+        "SUP-7a875ce4267ff349",
+        "SUP-461e54b6e0a71387",
+        "SUP-c56327e295b25e45"
+      ]
+    },
+    {
+      "claim_id": "C018",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 0,
+      "end": 36,
+      "claim_text": "La notation ne vient pas en premier.",
+      "normalized_claim": "Dans la procédure, les comparaisons par paires précèdent la notation.",
+      "support_ids": [
+        "SUP-c56327e295b25e45",
+        "SUP-461e54b6e0a71387"
+      ]
+    },
+    {
+      "claim_id": "C019",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 37,
+      "end": 183,
+      "claim_text": "La personne commence par comparer les échelles deux à deux : six échelles donnent quinze paires possibles, chacune imprimée sur son propre carton.",
+      "normalized_claim": "Il y a quinze comparaisons par paires des six échelles, chacune présentée sur une carte.",
       "support_ids": [
         "SUP-461e54b6e0a71387",
-        "SUP-7a875ce4267ff349",
         "SUP-c56327e295b25e45"
       ]
     },
     {
       "claim_id": "C020",
-      "locator": "sections[0].paragraphs[2]",
-      "start": 293,
-      "end": 446,
-      "claim_text": "Deux séances menées sous la même exigence extérieure ne pèseront donc pas pareil selon que la personne s’estime ou non à la hauteur de ce qu’elle a fait.",
-      "normalized_claim": "À exigences externes égales, le score varie avec l'auto-évaluation de performance.",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 184,
+      "end": 285,
+      "claim_text": "Pour chaque paire, elle entoure celle des deux qui a le plus contribué à la charge de cette tâche-là.",
+      "normalized_claim": "Le sujet entoure, dans chaque paire, l'échelle qui a le plus contribué à la charge de cette tâche.",
       "support_ids": [
         "SUP-461e54b6e0a71387",
         "SUP-c56327e295b25e45"
@@ -327,58 +332,56 @@
     {
       "claim_id": "C021",
       "locator": "sections[1].paragraphs[0]",
-      "start": 0,
-      "end": 36,
-      "claim_text": "La notation ne vient pas en premier.",
-      "normalized_claim": "Les comparaisons par paires précèdent la notation.",
+      "start": 286,
+      "end": 383,
+      "claim_text": "Rien n’est encore noté ; on établit seulement une hiérarchie, et c’est la personne qui l’établit.",
+      "normalized_claim": "Cette première étape ne produit pas de note mais une hiérarchie établie par le sujet lui-même.",
       "support_ids": [
-        "SUP-c56327e295b25e45",
-        "SUP-461e54b6e0a71387"
+        "SUP-461e54b6e0a71387",
+        "SUP-c56327e295b25e45"
       ]
     },
     {
       "claim_id": "C022",
-      "locator": "sections[1].paragraphs[0]",
-      "start": 37,
-      "end": 183,
-      "claim_text": "La personne commence par comparer les échelles deux à deux : six échelles donnent quinze paires possibles, chacune imprimée sur son propre carton.",
-      "normalized_claim": "Le sujet commence par quinze comparaisons par paires des six échelles, chaque paire présentée sur une carte.",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 27,
+      "end": 208,
+      "claim_text": "Chaque échelle se présente comme une ligne de douze centimètres divisée en vingt intervalles, bornée à ses deux extrémités par des qualificatifs opposés, fort et faible par exemple.",
+      "normalized_claim": "Chaque échelle est une ligne de 12 cm divisée en 20 intervalles égaux, ancrée par des descripteurs bipolaires (ex. High/Low).",
       "support_ids": [
-        "SUP-c56327e295b25e45",
-        "SUP-461e54b6e0a71387"
+        "SUP-461e54b6e0a71387",
+        "SUP-c56327e295b25e45"
       ]
     },
     {
       "claim_id": "C023",
-      "locator": "sections[1].paragraphs[0]",
-      "start": 184,
-      "end": 285,
-      "claim_text": "Pour chaque paire, elle entoure celle des deux qui a le plus contribué à la charge de cette tâche-là.",
-      "normalized_claim": "Pour chaque paire, le sujet entoure l'échelle qui a le plus contribué à la charge de cette tâche.",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 209,
+      "end": 296,
+      "claim_text": "Les vingt et un traits qui découpent cette ligne la graduent de 0 à 100 de cinq en cinq",
+      "normalized_claim": "Les 21 tick marks graduent l'échelle de 0 à 100 par incréments de 5.",
       "support_ids": [
-        "SUP-c56327e295b25e45",
         "SUP-461e54b6e0a71387"
       ]
     },
     {
       "claim_id": "C024",
-      "locator": "sections[1].paragraphs[0]",
-      "start": 286,
-      "end": 383,
-      "claim_text": "Rien n’est encore noté ; on établit seulement une hiérarchie, et c’est la personne qui l’établit.",
-      "normalized_claim": "À ce stade aucune note n'est donnée : le sujet établit seulement une hiérarchie d'importance.",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 299,
+      "end": 343,
+      "claim_text": "une note se lit donc comme une note sur cent",
+      "normalized_claim": "Conséquence tirée de la graduation 0-100 : une note se lit sur cent.",
       "support_ids": [
-        "SUP-c56327e295b25e45",
         "SUP-461e54b6e0a71387"
       ]
     },
     {
       "claim_id": "C025",
       "locator": "sections[1].paragraphs[1]",
-      "start": 27,
-      "end": 208,
-      "claim_text": "Chaque échelle se présente comme une ligne de douze centimètres divisée en vingt intervalles, bornée à ses deux extrémités par des qualificatifs opposés, fort et faible par exemple.",
-      "normalized_claim": "Chaque échelle est une ligne de 12 cm divisée en vingt intervalles égaux, bornée par des descripteurs bipolaires (ex. High/Low).",
+      "start": 345,
+      "end": 507,
+      "claim_text": "Le score final multiplie chaque note par le poids que cette personne a donné au facteur correspondant, additionne les six produits, et divise la somme par quinze.",
+      "normalized_claim": "Le score global multiplie chaque note par le poids du facteur, somme les produits pondérés et divise par quinze.",
       "support_ids": [
         "SUP-461e54b6e0a71387",
         "SUP-c56327e295b25e45"
@@ -386,56 +389,55 @@
     },
     {
       "claim_id": "C026",
-      "locator": "sections[1].paragraphs[1]",
-      "start": 209,
-      "end": 296,
-      "claim_text": "Les vingt et un traits qui découpent cette ligne la graduent de 0 à 100 de cinq en cinq",
-      "normalized_claim": "Les 21 traits verticaux graduent l'échelle de 0 à 100 par pas de 5.",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 0,
+      "end": 85,
+      "claim_text": "Ce quinze n’est pas un réglage arbitraire : c’est, dit le livret, la somme des poids.",
+      "normalized_claim": "Le livret précise que le diviseur quinze est la somme des poids.",
       "support_ids": [
         "SUP-461e54b6e0a71387"
       ]
     },
     {
       "claim_id": "C027",
-      "locator": "sections[1].paragraphs[1]",
-      "start": 299,
-      "end": 343,
-      "claim_text": "une note se lit donc comme une note sur cent",
-      "normalized_claim": "Une note se lit sur une échelle de 0 à 100.",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 126,
+      "end": 227,
+      "claim_text": "quinze comparaisons distribuent quinze points entre les six échelles, quelles que soient les réponses",
+      "normalized_claim": "Déduction : les quinze comparaisons répartissent toujours quinze points entre les six échelles.",
       "support_ids": [
         "SUP-461e54b6e0a71387"
       ]
     },
     {
       "claim_id": "C028",
-      "locator": "sections[1].paragraphs[1]",
-      "start": 345,
-      "end": 507,
-      "claim_text": "Le score final multiplie chaque note par le poids que cette personne a donné au facteur correspondant, additionne les six produits, et divise la somme par quinze.",
-      "normalized_claim": "Le score global multiplie chaque note par le poids donné par le sujet au facteur, somme les produits et divise par 15.",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 229,
+      "end": 314,
+      "claim_text": "Diviser par quinze ramène donc le total pondéré à l’échelle des notes, entre 0 et 100",
+      "normalized_claim": "Déduction : la division par quinze ramène le score global dans l'intervalle 0-100 des notes.",
       "support_ids": [
-        "SUP-461e54b6e0a71387",
-        "SUP-c56327e295b25e45"
+        "SUP-461e54b6e0a71387"
       ]
     },
     {
       "claim_id": "C029",
       "locator": "sections[1].paragraphs[2]",
-      "start": 0,
-      "end": 85,
-      "claim_text": "Ce quinze n’est pas un réglage arbitraire : c’est, dit le livret, la somme des poids.",
-      "normalized_claim": "Le livret précise que 15 est la somme des poids.",
+      "start": 319,
+      "end": 376,
+      "claim_text": "un poids n’est rien d’autre qu’un décompte de préférences",
+      "normalized_claim": "Déduction : le poids d'une échelle est le nombre de fois où elle a été choisie en comparaison par paires.",
       "support_ids": [
         "SUP-461e54b6e0a71387"
       ]
     },
     {
       "claim_id": "C030",
-      "locator": "sections[1].paragraphs[2]",
-      "start": 126,
-      "end": 227,
-      "claim_text": "quinze comparaisons distribuent quinze points entre les six échelles, quelles que soient les réponses",
-      "normalized_claim": "Les quinze comparaisons attribuent en tout quinze points, quelles que soient les réponses.",
+      "locator": "sections[1].paragraphs[3]",
+      "start": 180,
+      "end": 255,
+      "claim_text": "Leurs six notes sont identiques, et pourtant leurs scores peuvent différer.",
+      "normalized_claim": "Déduction : à notes égales, des poids différents produisent des scores globaux différents.",
       "support_ids": [
         "SUP-461e54b6e0a71387",
         "SUP-c56327e295b25e45"
@@ -443,45 +445,11 @@
     },
     {
       "claim_id": "C031",
-      "locator": "sections[1].paragraphs[2]",
-      "start": 229,
-      "end": 314,
-      "claim_text": "Diviser par quinze ramène donc le total pondéré à l’échelle des notes, entre 0 et 100",
-      "normalized_claim": "La division par 15 ramène le score pondéré dans l'intervalle 0-100 des notes.",
-      "support_ids": [
-        "SUP-461e54b6e0a71387"
-      ]
-    },
-    {
-      "claim_id": "C032",
-      "locator": "sections[1].paragraphs[2]",
-      "start": 319,
-      "end": 376,
-      "claim_text": "un poids n’est rien d’autre qu’un décompte de préférences",
-      "normalized_claim": "Le poids d'une échelle est le nombre de fois où elle a été choisie dans les comparaisons.",
-      "support_ids": [
-        "SUP-461e54b6e0a71387",
-        "SUP-c56327e295b25e45"
-      ]
-    },
-    {
-      "claim_id": "C033",
       "locator": "sections[1].paragraphs[3]",
-      "start": 180,
-      "end": 304,
-      "claim_text": "Leurs six notes sont identiques, et pourtant leurs scores diffèrent dès que ces notes ne sont pas toutes égales entre elles.",
-      "normalized_claim": "À notes identiques mais poids différents, les scores globaux diffèrent sauf si toutes les notes sont égales.",
-      "support_ids": [
-        "SUP-461e54b6e0a71387"
-      ]
-    },
-    {
-      "claim_id": "C034",
-      "locator": "sections[1].paragraphs[3]",
-      "start": 305,
-      "end": 442,
+      "start": 256,
+      "end": 393,
       "claim_text": "Le chiffre final ne dit donc pas seulement ce que chaque échelle a reçu, mais aussi ce que la personne a estimé compter dans cette tâche.",
-      "normalized_claim": "Le score global dépend à la fois des notes et de l'importance subjective accordée aux échelles dans cette tâche.",
+      "normalized_claim": "Le score global intègre l'importance subjective accordée par le sujet à chaque échelle dans la tâche.",
       "support_ids": [
         "SUP-461e54b6e0a71387",
         "SUP-c5cde40e9d494dbd",
@@ -489,12 +457,48 @@
       ]
     },
     {
-      "claim_id": "C035",
+      "claim_id": "C032",
       "locator": "sections[2].paragraphs[0]",
       "start": 37,
       "end": 149,
       "claim_text": "La raison mise en avant n’est pas d’abord que la charge serait un phénomène trop riche pour une question unique.",
-      "normalized_claim": "La justification du caractère multidimensionnel ne porte pas sur la richesse du phénomène.",
+      "normalized_claim": "La justification du caractère multidimensionnel ne repose pas sur la richesse du phénomène.",
+      "support_ids": [
+        "SUP-c5cde40e9d494dbd",
+        "SUP-461e54b6e0a71387"
+      ]
+    },
+    {
+      "claim_id": "C033",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 150,
+      "end": 236,
+      "claim_text": "Elle est plus terre à terre : les gens ne s’entendent pas sur ce que le mot veut dire.",
+      "normalized_claim": "La justification repose sur la variabilité des définitions de la charge entre personnes.",
+      "support_ids": [
+        "SUP-c5cde40e9d494dbd",
+        "SUP-461e54b6e0a71387"
+      ]
+    },
+    {
+      "claim_id": "C034",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 237,
+      "end": 328,
+      "claim_text": "Les définitions de la charge varient d’un expérimentateur à l’autre et d’un sujet à l’autre",
+      "normalized_claim": "Le livret constate que les définitions de la charge varient entre expérimentateurs et entre sujets.",
+      "support_ids": [
+        "SUP-c5cde40e9d494dbd",
+        "SUP-461e54b6e0a71387"
+      ]
+    },
+    {
+      "claim_id": "C035",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 330,
+      "end": 440,
+      "claim_text": "de sorte que deux personnes notant la même séance sur une échelle unique ne notent peut-être pas la même chose",
+      "normalized_claim": "Conséquence tirée : une échelle unique n'assure pas que deux juges notent le même objet.",
       "support_ids": [
         "SUP-c5cde40e9d494dbd",
         "SUP-461e54b6e0a71387"
@@ -502,35 +506,35 @@
     },
     {
       "claim_id": "C036",
-      "locator": "sections[2].paragraphs[0]",
-      "start": 180,
-      "end": 235,
-      "claim_text": "les gens ne s’entendent pas sur ce que le mot veut dire",
-      "normalized_claim": "Les définitions de la charge ne sont pas partagées.",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 0,
+      "end": 224,
+      "claim_text": "Le livret ajoute le constat qui commande tout le reste : ce qui détermine le plus l’expérience de charge n’est pas la définition que chacun s’en donne, mais les sources de charge particulières qu’impose telle ou telle tâche.",
+      "normalized_claim": "Le livret affirme que les sources de charge propres à chaque tâche déterminent davantage l'expérience de charge que les définitions individuelles.",
       "support_ids": [
-        "SUP-c5cde40e9d494dbd",
-        "SUP-461e54b6e0a71387"
+        "SUP-461e54b6e0a71387",
+        "SUP-c5cde40e9d494dbd"
       ]
     },
     {
       "claim_id": "C037",
-      "locator": "sections[2].paragraphs[0]",
-      "start": 237,
-      "end": 328,
-      "claim_text": "Les définitions de la charge varient d’un expérimentateur à l’autre et d’un sujet à l’autre",
-      "normalized_claim": "Les définitions de la charge varient entre expérimentateurs et entre sujets.",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 225,
+      "end": 425,
+      "claim_text": "D’où le choix de pondérer les échelles selon l’importance que la personne leur accorde dans cette tâche précise, et non selon leur pertinence supposée au regard de sa conception générale de la charge.",
+      "normalized_claim": "La pondération suit l'importance subjective des échelles dans une tâche donnée plutôt que leur pertinence a priori pour la définition générale de la charge.",
       "support_ids": [
-        "SUP-c5cde40e9d494dbd",
-        "SUP-461e54b6e0a71387"
+        "SUP-461e54b6e0a71387",
+        "SUP-c5cde40e9d494dbd"
       ]
     },
     {
       "claim_id": "C038",
-      "locator": "sections[2].paragraphs[0]",
-      "start": 330,
-      "end": 440,
-      "claim_text": "de sorte que deux personnes notant la même séance sur une échelle unique ne notent peut-être pas la même chose",
-      "normalized_claim": "Cette variabilité de définition rend incomparables deux notations sur une échelle unique.",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 42,
+      "end": 170,
+      "claim_text": "Ils ne décrivent pas un tempérament, quelqu’un qui serait durablement sensible à la pression du temps et indifférent à l’effort.",
+      "normalized_claim": "Les poids ne décrivent pas un trait stable de la personne.",
       "support_ids": [
         "SUP-c5cde40e9d494dbd",
         "SUP-461e54b6e0a71387"
@@ -538,90 +542,41 @@
     },
     {
       "claim_id": "C039",
-      "locator": "sections[2].paragraphs[1]",
-      "start": 57,
-      "end": 223,
-      "claim_text": "ce qui détermine le plus l’expérience de charge n’est pas la définition que chacun s’en donne, mais les sources de charge particulières qu’impose telle ou telle tâche",
-      "normalized_claim": "Les sources de charge propres à chaque tâche déterminent davantage l'expérience de charge que les définitions individuelles.",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 171,
+      "end": 396,
+      "claim_text": "Cela implique qu’une même personne peut produire deux jeux de poids très différents sur deux tâches différentes sans se contredire : ce qui est pesé, c’est la rencontre d’une personne et d’une tâche, jamais la personne seule.",
+      "normalized_claim": "Déduction : les poids étant relatifs à une tâche précise, ils peuvent varier pour une même personne d'une tâche à l'autre.",
       "support_ids": [
-        "SUP-461e54b6e0a71387",
-        "SUP-c5cde40e9d494dbd"
+        "SUP-c5cde40e9d494dbd",
+        "SUP-461e54b6e0a71387"
       ]
     },
     {
       "claim_id": "C040",
-      "locator": "sections[2].paragraphs[1]",
-      "start": 225,
-      "end": 425,
-      "claim_text": "D’où le choix de pondérer les échelles selon l’importance que la personne leur accorde dans cette tâche précise, et non selon leur pertinence supposée au regard de sa conception générale de la charge.",
-      "normalized_claim": "Les échelles sont pondérées selon leur importance subjective dans la tâche précise, non selon leur pertinence a priori pour la définition générale de la charge.",
-      "support_ids": [
-        "SUP-461e54b6e0a71387",
-        "SUP-c5cde40e9d494dbd"
-      ]
-    },
-    {
-      "claim_id": "C041",
-      "locator": "sections[2].paragraphs[2]",
-      "start": 42,
-      "end": 170,
-      "claim_text": "Ils ne décrivent pas un tempérament, quelqu’un qui serait durablement sensible à la pression du temps et indifférent à l’effort.",
-      "normalized_claim": "Les poids ne décrivent pas une disposition stable de la personne.",
-      "support_ids": [
-        "SUP-461e54b6e0a71387",
-        "SUP-c5cde40e9d494dbd"
-      ]
-    },
-    {
-      "claim_id": "C042",
-      "locator": "sections[2].paragraphs[2]",
-      "start": 171,
-      "end": 301,
-      "claim_text": "Cela implique qu’une même personne peut produire deux jeux de poids très différents sur deux tâches différentes sans se contredire",
-      "normalized_claim": "Une même personne peut donner des poids différents selon la tâche sans incohérence.",
-      "support_ids": [
-        "SUP-461e54b6e0a71387",
-        "SUP-c5cde40e9d494dbd"
-      ]
-    },
-    {
-      "claim_id": "C043",
-      "locator": "sections[2].paragraphs[2]",
-      "start": 304,
-      "end": 395,
-      "claim_text": "ce qui est pesé, c’est la rencontre d’une personne et d’une tâche, jamais la personne seule",
-      "normalized_claim": "La pondération porte sur le couple personne-tâche, pas sur la personne seule.",
-      "support_ids": [
-        "SUP-461e54b6e0a71387",
-        "SUP-c5cde40e9d494dbd"
-      ]
-    },
-    {
-      "claim_id": "C044",
       "locator": "sections[3].paragraphs[0]",
       "start": 0,
       "end": 101,
       "claim_text": "L’instrument a une version antérieure, la NASA Bipolar Rating Scale, qui comptait neuf sous-échelles.",
-      "normalized_claim": "Une version antérieure, la NASA Bipolar Rating Scale, comptait neuf sous-échelles.",
+      "normalized_claim": "La version antérieure, la NASA Bipolar Rating Scale, comportait neuf sous-échelles.",
       "support_ids": [
         "SUP-461e54b6e0a71387",
         "SUP-56030011684b5813"
       ]
     },
     {
-      "claim_id": "C045",
+      "claim_id": "C041",
       "locator": "sections[3].paragraphs[0]",
       "start": 102,
       "end": 256,
       "claim_text": "Elle réduisait bien les écarts entre juges, mais sa sensibilité, l’aptitude d’une mesure à faire apparaître les différences réelles, restait insuffisante.",
-      "normalized_claim": "La version antérieure réduisait la variabilité entre juges mais restait insuffisamment sensible.",
+      "normalized_claim": "La version à neuf échelles réduisait la variabilité entre juges mais restait insuffisamment sensible.",
       "support_ids": [
-        "SUP-461e54b6e0a71387",
-        "SUP-56030011684b5813"
+        "SUP-461e54b6e0a71387"
       ]
     },
     {
-      "claim_id": "C046",
+      "claim_id": "C042",
       "locator": "sections[3].paragraphs[0]",
       "start": 257,
       "end": 412,
@@ -633,31 +588,31 @@
       ]
     },
     {
-      "claim_id": "C047",
+      "claim_id": "C043",
       "locator": "sections[3].paragraphs[0]",
       "start": 413,
       "end": 479,
       "claim_text": "La contrainte est d’usage autant que de méthode, et elle a compté.",
-      "normalized_claim": "La praticabilité d'usage a pesé dans la réduction du nombre d'échelles.",
+      "normalized_claim": "La motivation de praticabilité a pesé dans la réduction du nombre d'échelles.",
       "support_ids": [
         "SUP-56030011684b5813",
         "SUP-461e54b6e0a71387"
       ]
     },
     {
-      "claim_id": "C048",
+      "claim_id": "C044",
       "locator": "sections[3].paragraphs[1]",
       "start": 0,
       "end": 55,
       "claim_text": "Le tri ne s’est pas fait au seul motif de la commodité.",
-      "normalized_claim": "La réduction ne tient pas qu'à la commodité d'usage.",
+      "normalized_claim": "La réduction ne tient pas qu'à la praticabilité.",
       "support_ids": [
         "SUP-56030011684b5813",
         "SUP-461e54b6e0a71387"
       ]
     },
     {
-      "claim_id": "C049",
+      "claim_id": "C045",
       "locator": "sections[3].paragraphs[1]",
       "start": 56,
       "end": 237,
@@ -669,19 +624,19 @@
       ]
     },
     {
-      "claim_id": "C050",
+      "claim_id": "C046",
       "locator": "sections[3].paragraphs[1]",
       "start": 238,
       "end": 363,
       "claim_text": "Ce qui subsiste des neuf est donc en partie le produit d’un élagage, et non le déploiement d’une définition arrêtée d’avance.",
-      "normalized_claim": "Les six échelles retenues résultent d'une élimination empirique plutôt que d'une définition préalable.",
+      "normalized_claim": "Déduction : les six échelles résultent d'un élagage empirique plutôt que d'une définition préalable.",
       "support_ids": [
         "SUP-56030011684b5813",
         "SUP-461e54b6e0a71387"
       ]
     },
     {
-      "claim_id": "C051",
+      "claim_id": "C047",
       "locator": "sections[3].paragraphs[2]",
       "start": 51,
       "end": 122,
@@ -689,36 +644,23 @@
       "normalized_claim": "Aucune des six sous-échelles conservées ne porte sur la fatigue.",
       "support_ids": [
         "SUP-56030011684b5813",
-        "SUP-461e54b6e0a71387",
-        "SUP-8a6847d080d71603"
+        "SUP-461e54b6e0a71387"
       ]
     },
     {
-      "claim_id": "C052",
+      "claim_id": "C048",
       "locator": "sections[3].paragraphs[2]",
-      "start": 126,
-      "end": 260,
-      "claim_text": "la frustration, dont on a vu qu’elle demande aussi si l’on s’est senti stressé, recueille à elle seule ce que deux échelles mesuraient",
-      "normalized_claim": "La sous-échelle de frustration inclut le stress, absorbant deux anciennes sous-échelles.",
+      "start": 123,
+      "end": 310,
+      "claim_text": "Et la frustration, dont on a vu qu’elle demande aussi si l’on s’est senti stressé, recueille à elle seule ce que deux échelles mesuraient : son nom est plus étroit que ce qu’elle attrape.",
+      "normalized_claim": "L'échelle Frustration, dont la définition mentionne le stress, absorbe ce que stress et frustration mesuraient séparément.",
       "support_ids": [
         "SUP-56030011684b5813",
         "SUP-461e54b6e0a71387"
       ]
     },
     {
-      "claim_id": "C053",
-      "locator": "sections[3].paragraphs[2]",
-      "start": 263,
-      "end": 309,
-      "claim_text": "son nom est plus étroit que ce qu’elle attrape",
-      "normalized_claim": "L'intitulé « frustration » recouvre plus que la frustration.",
-      "support_ids": [
-        "SUP-56030011684b5813",
-        "SUP-461e54b6e0a71387"
-      ]
-    },
-    {
-      "claim_id": "C054",
+      "claim_id": "C049",
       "locator": "sections[4].paragraphs[0]",
       "start": 0,
       "end": 56,
@@ -726,47 +668,46 @@
       "normalized_claim": "Les notes sont recueillies après chaque exécution d'une tâche ou d'un segment de tâche.",
       "support_ids": [
         "SUP-45e16b4b4f70514a",
-        "SUP-5323bd487b6bc169",
-        "SUP-c56327e295b25e45"
+        "SUP-5323bd487b6bc169"
       ]
     },
     {
-      "claim_id": "C055",
+      "claim_id": "C050",
       "locator": "sections[4].paragraphs[0]",
       "start": 61,
       "end": 127,
       "claim_text": "le livret ouvre aussi le cas de notes recueillies pendant la tâche",
-      "normalized_claim": "Le livret prévoit aussi un relevé pendant la tâche.",
+      "normalized_claim": "Le livret prévoit aussi le recueil de notes pendant la tâche.",
       "support_ids": [
         "SUP-45e16b4b4f70514a"
       ]
     },
     {
-      "claim_id": "C056",
+      "claim_id": "C051",
       "locator": "sections[4].paragraphs[0]",
       "start": 129,
       "end": 231,
       "claim_text": "Dans un cas comme dans l’autre, ce qu’on demande est une appréciation portée sur du travail déjà fait.",
-      "normalized_claim": "Dans tous les cas, la notation porte sur un travail déjà accompli.",
+      "normalized_claim": "Le jugement demandé porte sur du travail déjà accompli.",
       "support_ids": [
         "SUP-d637403cb2149eb9",
         "SUP-cb60aa995d4f0b99"
       ]
     },
     {
-      "claim_id": "C057",
+      "claim_id": "C052",
       "locator": "sections[4].paragraphs[0]",
       "start": 232,
       "end": 376,
       "claim_text": "Le livret ne parle jamais, en revanche, d’un opérateur qui, pendant qu’il travaille, arbitre entre plusieurs manières de s’y prendre pour tenir.",
-      "normalized_claim": "Le document ne traite jamais d'un opérateur arbitrant entre modes opératoires pendant le travail.",
+      "normalized_claim": "Le texte ne traite jamais d'un opérateur arbitrant entre modes opératoires en cours de travail.",
       "support_ids": [
         "SUP-d637403cb2149eb9",
         "SUP-cb60aa995d4f0b99"
       ]
     },
     {
-      "claim_id": "C058",
+      "claim_id": "C053",
       "locator": "sections[4].paragraphs[0]",
       "start": 377,
       "end": 475,
@@ -778,55 +719,55 @@
       ]
     },
     {
-      "claim_id": "C059",
+      "claim_id": "C054",
       "locator": "sections[4].paragraphs[1]",
       "start": 51,
       "end": 142,
       "claim_text": "Ce que l’instrument attrape est une grandeur : combien cela a coûté, réparti en six postes.",
-      "normalized_claim": "L'instrument produit une grandeur de charge répartie en six sous-échelles.",
+      "normalized_claim": "L'instrument saisit la charge comme une grandeur répartie en six sous-échelles.",
       "support_ids": [
-        "SUP-cb60aa995d4f0b99",
         "SUP-d637403cb2149eb9",
-        "SUP-43cff10edb8aa54b"
+        "SUP-461e54b6e0a71387",
+        "SUP-cb60aa995d4f0b99"
       ]
     },
     {
-      "claim_id": "C060",
+      "claim_id": "C055",
       "locator": "sections[4].paragraphs[1]",
       "start": 143,
       "end": 338,
       "claim_text": "Ce qu’il ne dit pas, c’est comment la personne s’y est prise pour que cela ne coûte pas davantage, ce qu’elle a laissé tomber en route, l’ordre qu’elle a changé, la vérification qu’elle a sautée.",
-      "normalized_claim": "L'instrument ne renseigne pas sur les manières de faire adoptées par la personne.",
+      "normalized_claim": "L'instrument ne renseigne pas sur la manière de faire adoptée par la personne.",
       "support_ids": [
-        "SUP-cb60aa995d4f0b99",
-        "SUP-d637403cb2149eb9"
+        "SUP-d637403cb2149eb9",
+        "SUP-cb60aa995d4f0b99"
       ]
     },
     {
-      "claim_id": "C061",
+      "claim_id": "C056",
       "locator": "sections[4].paragraphs[1]",
       "start": 339,
       "end": 447,
       "claim_text": "Un score bas peut recouvrir une tâche facile ou un arrangement habile, et l’instrument ne les distingue pas.",
-      "normalized_claim": "Un score bas ne distingue pas une tâche facile d'une stratégie efficace.",
+      "normalized_claim": "Déduction : le score ne distingue pas une tâche facile d'une tâche rendue facile par une stratégie.",
       "support_ids": [
-        "SUP-cb60aa995d4f0b99",
-        "SUP-d637403cb2149eb9"
+        "SUP-d637403cb2149eb9",
+        "SUP-cb60aa995d4f0b99"
       ]
     },
     {
-      "claim_id": "C062",
+      "claim_id": "C057",
       "locator": "sections[4].paragraphs[2]",
       "start": 47,
       "end": 184,
       "claim_text": "Le livret demande expressément aux personnes d’évaluer les facteurs un à un plutôt que de les fondre dans une appréciation globale unique",
-      "normalized_claim": "Le livret demande au sujet d'évaluer les facteurs individuellement plutôt que dans une évaluation globale unique.",
+      "normalized_claim": "Le livret demande aux sujets d'évaluer les facteurs individuellement plutôt qu'en une appréciation globale unique.",
       "support_ids": [
         "SUP-461e54b6e0a71387"
       ]
     },
     {
-      "claim_id": "C063",
+      "claim_id": "C058",
       "locator": "sections[4].paragraphs[2]",
       "start": 187,
       "end": 230,
@@ -834,203 +775,181 @@
       "normalized_claim": "Le score global est une moyenne pondérée des six notes.",
       "support_ids": [
         "SUP-461e54b6e0a71387",
-        "SUP-43cff10edb8aa54b",
-        "SUP-8a6847d080d71603"
+        "SUP-8a6847d080d71603",
+        "SUP-43cff10edb8aa54b"
       ]
     },
     {
-      "claim_id": "C064",
+      "claim_id": "C059",
       "locator": "sections[4].paragraphs[2]",
       "start": 232,
-      "end": 313,
-      "claim_text": "Le chiffre final réinstalle ainsi la confusion que le découpage venait de défaire",
-      "normalized_claim": "L'agrégation finale reconfond ce que les six échelles séparaient.",
-      "support_ids": [
-        "SUP-461e54b6e0a71387",
-        "SUP-8a6847d080d71603"
-      ]
-    },
-    {
-      "claim_id": "C065",
-      "locator": "sections[4].paragraphs[2]",
-      "start": 316,
       "end": 420,
-      "claim_text": "deux personnes peuvent l’obtenir par des chemins opposés, l’une pressée par le temps, l’autre découragée",
-      "normalized_claim": "Un même score global peut résulter de profils de sous-échelles opposés.",
+      "claim_text": "Le chiffre final réinstalle ainsi la confusion que le découpage venait de défaire : deux personnes peuvent l’obtenir par des chemins opposés, l’une pressée par le temps, l’autre découragée",
+      "normalized_claim": "Déduction : un même score global peut résulter de profils de sous-échelles opposés.",
       "support_ids": [
         "SUP-461e54b6e0a71387"
       ]
     },
     {
-      "claim_id": "C066",
+      "claim_id": "C060",
       "locator": "sections[4].paragraphs[2]",
       "start": 488,
       "end": 567,
       "claim_text": "Ce que le score global ne porte plus, les six notes séparées le portent encore.",
-      "normalized_claim": "Les notes par sous-échelle conservent une information diagnostique que le score global perd.",
+      "normalized_claim": "Les sous-échelles conservent une information diagnostique que le score global perd.",
       "support_ids": [
-        "SUP-cb60aa995d4f0b99"
-      ]
-    },
-    {
-      "claim_id": "C067",
-      "locator": "sections[5].paragraphs[0]",
-      "start": 0,
-      "end": 48,
-      "claim_text": "Le ton n’est pas celui d’un instrument installé.",
-      "normalized_claim": "Le document se présente comme provisoire et non comme un instrument établi.",
-      "support_ids": [
-        "SUP-1a61b3d82b994000",
+        "SUP-cb60aa995d4f0b99",
         "SUP-461e54b6e0a71387"
       ]
     },
     {
-      "claim_id": "C068",
+      "claim_id": "C061",
       "locator": "sections[5].paragraphs[0]",
       "start": 49,
       "end": 186,
       "claim_text": "La procédure est présentée comme issue de trois ans de travaux et de plus de quarante expériences en laboratoire, en simulation et en vol",
-      "normalized_claim": "Le livret rapporte la procédure à trois ans de travaux et plus de quarante expériences en laboratoire, simulation et vol.",
+      "normalized_claim": "Le livret rapporte l'instrument à trois ans de travaux et plus de quarante expériences en laboratoire, en simulation et en vol.",
       "support_ids": [
         "SUP-81fc7567c5ec43eb",
+        "SUP-b236f7eb385c5d6f",
         "SUP-5cd9cfa91bb227d1"
       ]
     },
     {
-      "claim_id": "C069",
+      "claim_id": "C062",
       "locator": "sections[5].paragraphs[0]",
       "start": 241,
       "end": 395,
       "claim_text": "« Although the technique is still undergoing evaluation, this booklet is being distributed to allow other researchers to use it in their own experiments »",
-      "normalized_claim": "Citation verbatim du livret sur son statut provisoire et sa diffusion.",
+      "normalized_claim": "Citation verbatim du livret sur son propre statut.",
       "support_ids": [
         "SUP-1a61b3d82b994000",
         "SUP-461e54b6e0a71387"
       ]
     },
     {
-      "claim_id": "C070",
+      "claim_id": "C063",
       "locator": "sections[5].paragraphs[0]",
       "start": 397,
       "end": 475,
       "claim_text": "Encore en cours d’évaluation, elle est diffusée pour que d’autres l’éprouvent.",
-      "normalized_claim": "La technique est déclarée encore en cours d'évaluation et diffusée pour usage par d'autres chercheurs.",
+      "normalized_claim": "Traduction du propos : la technique est encore en évaluation et diffusée pour usage par d'autres chercheurs.",
       "support_ids": [
         "SUP-1a61b3d82b994000",
         "SUP-461e54b6e0a71387"
       ]
     },
     {
-      "claim_id": "C071",
+      "claim_id": "C064",
       "locator": "sections[5].paragraphs[1]",
       "start": 33,
       "end": 99,
       "claim_text": "Le document ne porte aucune date imprimée et aucun nom de personne",
-      "normalized_claim": "Le document ne porte ni date imprimée ni nom de personne.",
+      "normalized_claim": "Le document ne comporte ni date imprimée ni nom de personne.",
       "support_ids": [
         "SUP-5cd9cfa91bb227d1",
         "SUP-81fc7567c5ec43eb",
-        "SUP-f2aa5a4bf11f5e24"
+        "SUP-72138048185f3ff3",
+        "SUP-b236f7eb385c5d6f"
       ]
     },
     {
-      "claim_id": "C072",
+      "claim_id": "C065",
       "locator": "sections[5].paragraphs[1]",
       "start": 102,
       "end": 237,
       "claim_text": "il est signé d’un collectif, le Human Performance Research Group, que le corps du texte appelle plus brièvement Human Performance Group",
-      "normalized_claim": "La signature est collective : Human Performance Research Group en page de titre, Human Performance Group dans le corps du texte.",
+      "normalized_claim": "La signature est collective, « Human Performance Research Group », le corps du texte écrivant « Human Performance Group ».",
       "support_ids": [
         "SUP-81fc7567c5ec43eb",
         "SUP-5cd9cfa91bb227d1"
       ]
     },
     {
-      "claim_id": "C073",
+      "claim_id": "C066",
       "locator": "sections[5].paragraphs[1]",
       "start": 239,
       "end": 373,
       "claim_text": "L’exposé tient dans les quatre premières pages, les consignes aux sujets en occupent deux, les définitions des six échelles une annexe",
-      "normalized_claim": "L'énoncé théorique occupe les pages 1 à 4, les instructions aux sujets les pages 11-12, les définitions l'annexe A.",
+      "normalized_claim": "L'énoncé théorique occupe les pages 1 à 4, les instructions aux sujets deux pages, les définitions des échelles l'annexe A.",
       "support_ids": [
         "SUP-4e11f3ed581ced8e",
         "SUP-4f77156b7df1e69e"
       ]
     },
     {
-      "claim_id": "C074",
+      "claim_id": "C067",
       "locator": "sections[5].paragraphs[1]",
       "start": 376,
-      "end": 492,
-      "claim_text": "tout le reste est un jeu de formulaires, cartons de comparaison, feuilles de notation, de dépouillement et de calcul",
-      "normalized_claim": "Le reste du document est constitué de formulaires : cartes de comparaison, feuilles de notation, de dépouillement et de calcul.",
+      "end": 541,
+      "claim_text": "les quatre annexes qui suivent ne contiennent plus aucune prose : cartons de comparaison par paires, feuille de notation, feuille de dépouillement, feuille de calcul",
+      "normalized_claim": "Les annexes B à E sont des formulaires sans prose : cartes de comparaison par paires, feuille de notation, de dépouillement, de calcul.",
       "support_ids": [
-        "SUP-4f77156b7df1e69e",
-        "SUP-4e11f3ed581ced8e"
+        "SUP-4f77156b7df1e69e"
       ]
     },
     {
-      "claim_id": "C075",
+      "claim_id": "C068",
       "locator": "sections[5].paragraphs[1]",
-      "start": 494,
-      "end": 560,
+      "start": 543,
+      "end": 609,
       "claim_text": "C’est un outil de travail mis en circulation, pas une publication.",
-      "normalized_claim": "Le document est un outil de travail diffusé, non une publication scientifique.",
+      "normalized_claim": "Déduction sur le genre du document : paquet de formulaires diffusé plutôt que publication scientifique.",
       "support_ids": [
-        "SUP-1a61b3d82b994000",
         "SUP-4f77156b7df1e69e",
-        "SUP-4e11f3ed581ced8e"
+        "SUP-1a61b3d82b994000"
       ]
     },
     {
-      "claim_id": "C076",
+      "claim_id": "C069",
       "locator": "sections[5].paragraphs[2]",
       "start": 0,
       "end": 229,
       "claim_text": "On n’y trouve donc ni discussion de ce que le score mesure vraiment, ni exposé des limites de l’instrument, ni comparaison avec une autre méthode comme SWAT : ces questions n’y figurent que sous forme de renvois bibliographiques.",
-      "normalized_claim": "Le document ne contient ni développement sur la validité de construit, ni limites, ni comparaison avec SWAT, sinon par renvois bibliographiques.",
+      "normalized_claim": "Le document ne contient ni développement sur la validité de construit, ni limites, ni comparaison avec SWAT, ces questions n'apparaissant qu'en renvois bibliographiques.",
       "support_ids": [
-        "SUP-4f77156b7df1e69e",
-        "SUP-4e11f3ed581ced8e"
+        "SUP-4e11f3ed581ced8e",
+        "SUP-4f77156b7df1e69e"
       ]
     },
     {
-      "claim_id": "C077",
+      "claim_id": "C070",
       "locator": "sections[5].paragraphs[2]",
-      "start": 302,
-      "end": 452,
-      "claim_text": "pour ses résultats, le livret ne renvoie pas à lui-même mais à un texte alors annoncé comme à paraître, signé de Sandra G. Hart et Lowell E. Staveland",
-      "normalized_claim": "Pour les résultats de la première étude de validation, le livret renvoie à Hart & Staveland (in press).",
+      "start": 230,
+      "end": 453,
+      "claim_text": "Le plus utile de ces renvois concerne la première étude de validation : pour ses résultats, le livret ne renvoie pas à lui-même mais à un texte alors annoncé comme à paraître, signé de Sandra G. Hart et Lowell E. Staveland.",
+      "normalized_claim": "Le livret renvoie les résultats de la première étude de validation à Hart & Staveland, alors « in press ».",
       "support_ids": [
         "SUP-81fc7567c5ec43eb",
-        "SUP-5cd9cfa91bb227d1",
         "SUP-8112d5e0673a1d0a",
-        "SUP-b236f7eb385c5d6f"
+        "SUP-b236f7eb385c5d6f",
+        "SUP-5cd9cfa91bb227d1"
       ]
     },
     {
-      "claim_id": "C078",
+      "claim_id": "C071",
       "locator": "sections[5].paragraphs[2]",
       "start": 454,
       "end": 560,
       "claim_text": "Les deux noms auxquels on attribue d’ordinaire le NASA-TLX ne figurent donc nulle part au bas de ses pages",
-      "normalized_claim": "Hart et Staveland ne signent pas le livret.",
+      "normalized_claim": "Hart et Staveland ne signent pas le livret, bien que l'attribution usuelle leur revienne.",
       "support_ids": [
         "SUP-5cd9cfa91bb227d1",
-        "SUP-81fc7567c5ec43eb"
+        "SUP-81fc7567c5ec43eb",
+        "SUP-5b09ae84043ad68e"
       ]
     },
     {
-      "claim_id": "C079",
+      "claim_id": "C072",
       "locator": "sections[5].paragraphs[2]",
       "start": 563,
       "end": 646,
       "claim_text": "ce sont ceux des auteurs de la démonstration, et c’est elle qu’il faudra aller lire",
-      "normalized_claim": "Hart et Staveland sont les auteurs de l'étude de validation, publiée ailleurs.",
+      "normalized_claim": "Hart et Staveland sont les auteurs du chapitre de validation, texte distinct du livret.",
       "support_ids": [
-        "SUP-12014e5d31343813",
         "SUP-d280f7d6f116edb0",
-        "SUP-5cd9cfa91bb227d1"
+        "SUP-12014e5d31343813",
+        "SUP-5b09ae84043ad68e"
       ]
     }
   ]
