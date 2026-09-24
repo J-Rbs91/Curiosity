@@ -5,6 +5,97 @@ coup d'œil ce que la précédente a fait, sur quelle branche elle l'a laissé, 
 reprendre. **Les scripts priment sur ce fichier** : il dit ce qui a été tenté et pourquoi, ils
 disent ce qui est.
 
+## Passage d'audit — 2026-09-24
+
+Première exécution de la routine d'audit du corpus, distincte des quinze passages d'instruction
+qui précèdent. Elle ne crée aucune carte : elle fait migrer les approfondissements hérités vers
+la chaîne de preuve v2 (`AUDIT -> CLAIM MAP -> BUNDLE -> VERIFY -> GATE -> REVIEW`).
+
+- branche      : `claude/beautiful-feynman-cgh2iq`, imposée par la session. Poussée par commits successifs tout au long du passage, jamais en un seul à la clôture.
+- lot          : **3 cartes** — `nasa-tlx`, `heuristiques-de-jugement`, `impossibilite-de-l-agregation-des-preferences`. Aucune `SKIPPED_DIRTY`.
+- audit        : **3 REVISE sur 3.** Aucun `PASS`, aucun `REWRITE`, aucun `BLOCKED_SOURCE`.
+- résultats    : **2 `rewritten` + `FACTCHECK_PASS` + `ACCEPT`** (`nasa-tlx` 79/79, `impossibilite-agregation` 69/69) · **1 `rewrite_rejected_factcheck`** (`heuristiques-de-jugement`, refusée au plafond de deux boucles, restaurée par son SHA de blob).
+- contrôles    : validate 140 enregistrements / 0 erreur · deepen --check 136 · **527 tests / 0 échec** · lint 0 · projection **vérifiée idempotente**, et son diff remonté hunk par hunk à son `conceptId` ne touche que les deux cartes acceptées.
+- reste        : **115 approfondissements stale** sur 136 au compte d'origine, et **122 au compte corrigé** (voir plus bas).
+
+### Ce que la sélection a appris, et qui sert au prochain lot
+
+**La longueur ne dit rien.** Les 118 approfondissements non audités tiennent tous entre 1 081 et
+1 540 mots, moyenne 1 304 : ils ont été écrits sur gabarit, et l'écart de longueur ne renseigne
+ni sur la densité ni sur la solidité documentaire. Une première tentative de sélection par la
+longueur a été abandonnée pour cette raison.
+
+**Le ratio mots / sources, lui, dit quelque chose.** Le lot a été choisi sur le taux de sources
+`metadata-only` : trois cartes à 67 % (2 sources sur 3), autour de 1 400 mots. **Les trois sont
+revenues `REVISE` du premier coup.** C'est un signal à réutiliser tel quel : 65 cartes stale
+portent au moins une source `metadata-only`, et onze sont encore à 67 %.
+
+### Le défaut de sélection trouvé à la clôture, et corrigé
+
+**Une carte refusée devenait invisible à `--stale`.** Le refus au plafond restaure le deepening
+dans son état d'origine ; son SHA redevient donc celui qu'enregistre son propre rapport, et les
+quatre conditions de stale-ness étaient toutes fausses. La carte passait pour à jour alors que
+son rapport disait `rewrite_rejected_factcheck`.
+
+**Le comptage a révélé que ce n'était pas un cas isolé.** Six cartes des passages précédents
+étaient déjà dans cet état : `asservissement-des-activites-hors-travail`,
+`cinq-dimensions-de-l-emploi`, `critere-de-la-retroaction`, `force-du-besoin-de-developpement`,
+`inertie-structurelle-et-selection`, `predominance-du-conflit-sur-la-negociation`. Cinq en
+`rewrite_rejected_factcheck`, une en `rewrite_rejected` après `REJECT` du reviewer. Avec
+`heuristiques-de-jugement`, **sept des vingt et une cartes réputées auditées étaient en réalité
+des refus non réparés, et aucune n'aurait jamais été resélectionnée.**
+
+**Le dispositif perdait ses échecs en silence**, et il les perdait d'autant mieux qu'ils
+laissaient une trace d'apparence complète. La condition manquante est ajoutée à
+`.claude/commands/corpus-deepening-audit.md` §1 : un rapport portant `rewrite_rejected*` ou un
+`factcheck_verdict` en échec rend la carte stale. Le compte passe de 115 à 122.
+
+**Un rapport de refus n'atteste pas qu'une carte est traitée.** Il atteste qu'elle a été
+instruite, que la réparation a échoué, et que ce qui reste à réparer est écrit.
+
+### Ce que les gates ont appris sur le corpus hérité
+
+Sur les trois cartes, **221 claims au premier tour, 12 refusés**. Aucun refus n'était formel ;
+tous portaient sur la portée d'une affirmation. Trois familles reviennent :
+
+1. **possibilité rendue comme nécessité** — quatre refus sur `nasa-tlx` seule, à quatre endroits, dont deux passés inaperçus au premier tour ;
+2. **inférence de rédaction présentée comme constat** — cinq des sept refus de `impossibilite-agregation`, dont un axiome rendu comme un fait empirique sur les personnes ;
+3. **négatif global non prouvé** — le refus qui a fait échouer `heuristiques-de-jugement` au plafond : l'absence de mention dans les supports ne vaut pas preuve d'absence.
+
+**Un texte devient plus faux en devenant plus pédagogique lorsque la pédagogie invente son
+appui** : les deux premiers refus de `nasa-tlx` portaient sur de la matière que la révision
+venait d'ajouter pour combler un manque pédagogique réel.
+
+**Un second tour de gate n'est pas une formalité.** Il a refusé sur `nasa-tlx` deux claims qui
+étaient déjà là et que la première lecture aveugle avait laissés passer. Règle 6 du dépôt.
+
+### Infrastructure
+
+**Le serveur MCP `documentary` est réparé, et le diagnostic porté dix nuits était faux.** Rien ne
+clochait dans le serveur : `node_modules` n'est jamais installé dans un conteneur recréé à neuf,
+et le serveur mourait en important `@modelcontextprotocol/sdk`, ce que le harnais rapporte comme
+`CONNECTION_CLOSED`. Après `npm ci`, il répond à `initialize` du premier coup. Parade :
+`.claude/hooks/session-start.sh`, hook `SessionStart` **synchrone** — en asynchrone
+l'installation courrait contre le lancement du serveur. **Elle ne vaut qu'une fois fusionnée sur
+la branche par défaut, et elle n'agit pas sur la session qui l'écrit.** Cause et mesures :
+`scripts/mcp/README.md`. La leçon de méthode vaut plus que le correctif : dix nuits ont mesuré le
+symptôme sous une règle qui l'interdisait d'aller plus loin, et aucune n'a lancé le serveur à la
+main pour lire son erreur.
+
+**`Task` reste non exposé à `corpus-orchestrator`** : la session a orchestré elle-même par
+l'outil `Agent`, comme aux passages 10 à 15.
+
+**Collision de scratchpad entre agents parallèles, constatée sur pièce.** Deux mappers lancés
+ensemble partagent le répertoire temporaire de session ; le script de l'un, nommé banalement, a
+été écrasé par celui de l'autre, et sa relance a écrit vers le claim-map d'un autre concept. Les
+artefacts ont été vérifiés intacts, et **ce qui a protégé le lot est la validation mécanique du
+bundle**, qui recoupe `claim_text` contre les offsets réels : un artefact croisé n'y survit pas.
+La règle consignée jusqu'ici ne couvrait que les fichiers du dépôt, pas les fichiers temporaires
+que les agents se nomment eux-mêmes. **Parade tenue ensuite : préfixer le script temporaire par
+le `conceptId`**, et ne pas lancer deux agents de même rôle en parallèle.
+
+- le prochain passage prend : **les sept refus non réparés d'abord**, maintenant qu'ils sont de nouveau visibles, puis les cartes à fort taux de `metadata-only`. `heuristiques-de-jugement` garde en clair, dans sa trace, la négation héritée d'un OCR corrompu et le claim adossé à une source `metadata-only` : la réécriture les avait corrigés, la restauration les a ramenés.
+
 ## Passage 15/15 — 2026-09-08
 
 - branche      : **`claude/zen-johnson-pazrfr`, imposée par la session, pas `main`.** Elle partait exactement d'`origin/main`, à `1995fbc`, qui porte la fusion de la pull request [#100](https://github.com/J-Rbs91/Curiosity/pull/100) du passage 14 : **le travail des passages 07 à 14 est donc bien dans `main`**, vérifié au lever par `git rev-list --left-right --count origin/main...HEAD`, qui rend `0 0`. La parade du passage 12 a été appliquée : `git fetch origin main`, une seule référence, jamais deux refspecs dans le même appel. Le travail de la nuit est poussé sur cette branche, **par commits successifs tout au long de la nuit plutôt qu'en un seul à la clôture**, ce qui est nouveau et ce qui a servi : voir la section sur le dispositif. **Pull request [#101](https://github.com/J-Rbs91/Curiosity/pull/101) vers `main`, ouverte à la clôture, trente-quatre commits. Tant qu'elle n'est pas fusionnée, le travail du passage 15 n'est pas dans `main`, et une reprise à la main doit partir de cette branche.**
