@@ -1,0 +1,737 @@
+{
+  "protocol_version": 1,
+  "concept_id": "mesure-devenue-cible",
+  "context_budget_tokens": 300000,
+  "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
+  "candidate_sha256": "60f2c6e52a2f8d9959dc2af37720c1ea73bd84c0036e8d4b2f6892f335f3c674",
+  "validated_sha256": "57c4cdbbb246026ea95bb65393ebe49e6041e1c66c770249d46938a9a007b978",
+  "evidence_files": [
+    {
+      "file": "attribution-hoskin.json",
+      "sha256": "81f7c0fd56b567d5b4a2cc602f0429f0e3b7e1bbe9e396d02f30d1fdc6a1d566"
+    },
+    {
+      "file": "lecture.json",
+      "sha256": "80b46d765ca1c78a3aea27dd5ae330ba72a33c47a2d9bfd736b6dd99f5d7e9a1"
+    }
+  ],
+  "access_reconciliation": {
+    "dossier_declare_des_niveaux": true,
+    "declarations": [
+      {
+        "chemin": "$.sources[0]",
+        "declare": "full-text",
+        "label": "Marilyn Strathern, « “Improving ratings”: audit in the British University system », European Review, vol. 5, n° 3, juillet 1997, p. 305-321. Fac-similé de l'article publié (composition de l'éditeur, 17 p.).",
+        "cles": [
+          "doi:10.1002/(sici",
+          "url:archive.org/download/improvingratingsauditinthebritishuniversitysystem/%27improving%20ratings%27-%20audit%20in%20the%20british%20university%20system.pdf"
+        ],
+        "dossier": "full-text",
+        "statut": "corrobore"
+      },
+      {
+        "chemin": "$.sources[1]",
+        "declare": "partial",
+        "label": "Keith Hoskin, « The “awful idea of accountability” », dans R. Munro et J. Mouritsen (dir.), Accountability: Power, Ethos and the Technologies of Managing, Londres, International Thomson Business Press, 1996, chap. 14, p. 265-282.",
+        "cles": [
+          "isbn:0412625601"
+        ],
+        "dossier": null,
+        "statut": "absent"
+      }
+    ],
+    "compteurs": {
+      "corrobore": 1,
+      "contredit": 0,
+      "non-declare": 0,
+      "absent": 1,
+      "hors-vocabulaire": 0,
+      "dossier-hors-vocabulaire": 0,
+      "dossier-absent": 0
+    }
+  },
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "text": "Imaginons une école jugée sur la part de ses élèves qui obtiennent la meilleure mention à un examen national. Au départ, ce chiffre est utile : il donne une idée assez fiable de la qualité de l’enseignement qu’on y reçoit. Mais si le financement de l’école, son classement, la carrière de ses professeurs finissent par dépendre directement de ce pourcentage, quelque chose change. On cesse d’enseigner pour que les élèves comprennent, et l’on commence à enseigner pour que le pourcentage monte, ce qui n’est pas tout à fait la même chose. Le chiffre continue d’exister ; il ne mesure plus ce pour quoi il avait été créé."
+    },
+    {
+      "locator": "lead[1]",
+      "text": "C’est ce basculement qu’une phrase résume en une ligne : « When a measure becomes a target, it ceases to be a good measure. » En clair : quand une mesure devient une cible, elle cesse d’être une bonne mesure. Marilyn Strathern l’écrit en 1997, dans un article tiré d’une conférence donnée à Cambridge et consacré à l’évaluation des universités britanniques. Elle ne parle pas d’écoles en général : elle parle d’un cas précis."
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "section_title": "Le cas des diplômes universitaires britanniques",
+      "text": "Strathern écrit sur l’audit universitaire britannique des années 1990, et elle commence par en préciser l’objet, qui n’est pas celui qu’on attend. Dans l’enseignement supérieur, ce que l’audit examine n’est pas tant l’éducation des étudiants que la provision institutionnelle de cette éducation : non pas ce que les étudiants ont appris, mais les dispositifs par lesquels l’établissement est censé le leur fournir. Sa phrase sur la mesure devenue cible ouvre le paragraphe qu’elle consacre au système d’examen, et l’exemple qu’elle y prend est la mention dite « 2.1 », celle qui servait à discriminer les performances individuelles des diplômés."
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "section_title": "Le cas des diplômes universitaires britanniques",
+      "text": "Le mot autour duquel tourne tout le passage est improvement, l’amélioration, et Strathern en retrace le glissement : il a d’abord désigné une terre qu’on met en valeur pour qu’elle rapporte, avant de désigner la chose qu’on améliore pour elle-même. Elle le rattache aux pratiques d’examen écrit, chiffré et archivé que l’université invente à la fin du XVIIIe siècle, d’où sort selon elle une morale nouvelle de l’accomplissement, où « what is became explicitly joined with what ought to be » : ce qui est se trouve explicitement joint à ce qui devrait être. De là l’effet qu’elle nomme dans ses propres termes, « measuring the improvement leads to improving the measures » : mesurer l’amélioration conduit à améliorer les mesures. Le déplacement tient dans le renversement de cette phrase, et il n’a rien d’accidentel : l’effort passe de la chose à améliorer à l’instrument qui en rend compte."
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "section_title": "D’où vient la formule, et à qui on l’attribue",
+      "text": "On attribue très largement cette phrase à Charles Goodhart, et l’attribution est inexacte pour cette formulation-ci. La raison se lit dans l’article lui-même : la phrase y ouvre un paragraphe sans guillemets, sans appel de note et sans aucune marque de discours rapporté, alors que Strathern met entre guillemets et référence systématiquement ce qu’elle emprunte, y compris quelques lignes plus bas dans ce même paragraphe. Goodhart, du reste, ne figure dans aucune des quinze références de l’article, et n’y est nommé qu’une fois, précisément là."
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "section_title": "D’où vient la formule, et à qui on l’attribue",
+      "text": "Ce qu’elle emprunte, en revanche, elle le dit. Du texte de Keith Hoskin, elle écrit : « I draw freely on his observations. » Je puise librement dans ses observations. Or le chapitre de Hoskin, paru l’année précédente, s’ouvre sur la loi de Goodhart définie en ces termes : « that every measure which becomes a target becomes a bad measure », toute mesure qui devient une cible devient une mauvaise mesure. La phrase de Strathern resserre donc une formulation déjà publiée plus qu’elle ne l’invente : ce qui lui appartient en propre, c’est le tour de langue, pas la loi."
+    },
+    {
+      "locator": "sections[1].paragraphs[2]",
+      "section_title": "D’où vient la formule, et à qui on l’attribue",
+      "text": "Le nom, lui, vient d’un cran plus loin encore. Hoskin ne se présente pas en baptiseur : il donne l’appellation pour déjà reconnue, et c’est par lui que Strathern la reçoit. Juste après son aphorisme, elle écrit que Hoskin décrit cela comme la loi de Goodhart, d’après l’observation de ce dernier sur les instruments du contrôle monétaire. Hoskin renvoie en note à un texte de 1989 et en résume le contenu : la monnaie, prise pour instrument du contrôle monétaire, cesse d’être utilisée comme monnaie et se voit remplacée par des substituts qui permettent d’échapper à ce contrôle. Ce n’est donc pas un instrument de mesure qui se dégrade sous l’observation : c’est la chose mesurée que ses utilisateurs désertent, ce qui déplace le mécanisme bien au-delà de l’école."
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "section_title": "Ce que l’audit fait de cette confusion",
+      "text": "Strathern ne s’arrête pas à constater le mécanisme. Plus loin dans le même texte, elle avance que l’audit en fait un usage délibéré : « Auditing is deliberately built on the conflation of measures with targets, and audit culture enhances the process. » En clair : l’audit est délibérément construit sur la confusion entre mesures et cibles, et la culture de l’audit amplifie ce processus. La corruption qui s’ensuit, elle la tient pour endémique à l’idée même que le but serait d’encourager les institutions à améliorer leur note."
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "section_title": "Ce que l’audit fait de cette confusion",
+      "text": "La distinction qui se joue là vaut d’être tenue. Un effet pervers est un accident : on visait autre chose, le résultat a dévié, et il suffirait en principe de concevoir le dispositif avec plus de soin. Ce que décrit Strathern n’est pas un accident mais un principe de construction. Et elle va plus loin que le constat : l’audit, écrit-elle, « has a life of its own that jeopardizes the life it audits », il a une vie propre qui met en danger la vie qu’il examine."
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "section_title": "Pourquoi changer d’indicateur ne suffit pas",
+      "text": "Une réaction naturelle, une fois le mécanisme repéré, consiste à changer de mesure : abandonner la mention 2.1 pour un indicateur jugé plus difficile à manipuler. Cette réponse déplace la cible sans toucher à ce qui se produit. Le basculement ne tient pas au choix d’un indicateur particulier, mais au statut qu’on lui donne : dès qu’un indicateur, quel qu’il soit, devient l’objet même de la poursuite, il s’expose au même sort. Hoskin donne d’ailleurs au constat une portée qui excède tout indicateur particulier : avec des formulations comme la loi de Goodhart, écrit-il, nous avons désormais « a strong ironic awareness of the futility of measures that are targets », une conscience ironique aiguë de la futilité des mesures qui sont des cibles."
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "section_title": "Pourquoi changer d’indicateur ne suffit pas",
+      "text": "Reste que la loi a son critique, et c’est l’auteur même chez qui Strathern la trouve. Hoskin lui reproche de masquer ce qu’elle décrit : dire que les mesures deviennent mauvaises en devenant des cibles laisse croire que les mesures, en elles-mêmes, ne le sont pas, et qu’il suffirait donc de les préserver des faiblesses humaines ou de les perfectionner davantage. Sa réserve, il l’écrit ainsi : « my concern is that it fails to reveal to us why that futility is so inherent », ma préoccupation est qu’elle ne nous révèle pas pourquoi cette futilité est si inhérente. Toute la question tient dans le mot que l’aphorisme laisse sans explication : pourquoi inhérente."
+    }
+  ],
+  "supports": [
+    {
+      "id": "SUP-f7d4154d237128c5",
+      "origin": "validated",
+      "path": "$.$schema",
+      "access": "n/a",
+      "text": "../schema/carte.schema.json"
+    },
+    {
+      "id": "SUP-1a386cb2d181466c",
+      "origin": "validated",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "mesure-devenue-cible"
+    },
+    {
+      "id": "SUP-3584274593693b40",
+      "origin": "validated",
+      "path": "$.slug",
+      "access": "n/a",
+      "text": "mesure-devenue-cible"
+    },
+    {
+      "id": "SUP-ad89626955b2952c",
+      "origin": "validated",
+      "path": "$.status",
+      "access": "n/a",
+      "text": "VALIDATED"
+    },
+    {
+      "id": "SUP-810de53a90cbc80c",
+      "origin": "validated",
+      "path": "$.title",
+      "access": "n/a",
+      "text": "Quand la mesure devient cible"
+    },
+    {
+      "id": "SUP-383ab231e2de7598",
+      "origin": "validated",
+      "path": "$.themes[0]",
+      "access": "n/a",
+      "text": "effets-retour-de-la-mesure"
+    },
+    {
+      "id": "SUP-49285009aa716815",
+      "origin": "validated",
+      "path": "$.theme_labels[\"effets-retour-de-la-mesure\"]",
+      "access": "n/a",
+      "text": "Ce que la mesure fait au mesuré"
+    },
+    {
+      "id": "SUP-94c7611372972f4e",
+      "origin": "validated",
+      "path": "$.authors[0].name",
+      "access": "n/a",
+      "text": "Marilyn Strathern"
+    },
+    {
+      "id": "SUP-4da70940dec0578b",
+      "origin": "validated",
+      "path": "$.authors[0].app_author_id",
+      "access": "n/a",
+      "text": "strathern"
+    },
+    {
+      "id": "SUP-9bb347d22cb2692f",
+      "origin": "validated",
+      "path": "$.attribution_note",
+      "access": "n/a",
+      "text": "La phrase citée est de la main de Marilyn Strathern : elle ouvre un paragraphe, sans guillemets ni appel de note. Mais elle resserre une formulation déjà publiée, celle par laquelle Keith Hoskin ouvre son chapitre de 1996 : « “Goodhart's Law” – that every measure which becomes a target becomes a bad measure » (p. 265), texte dont Strathern écrit « I draw freely on his observations ». Elle reformule donc la loi plus qu'elle ne la crée, et c'est Hoskin qui la nomme « loi de Goodhart », d'après une observation d'origine monétaire. Charles Goodhart, lui, ne figure dans aucune des quinze références de l'article : Strathern ne le nomme qu'une fois, dans le paragraphe même de la citation, et par le relais de Hoskin. La désignation « loi de Strathern » ne vient pas d'elle non plus : elle ne nomme jamais sa propre formule."
+    },
+    {
+      "id": "SUP-a705c7ca86971a31",
+      "origin": "validated",
+      "path": "$.hook",
+      "access": "n/a",
+      "text": "Pourquoi un bon indicateur cesse-t-il de l'être dès qu'on en fait un objectif ?"
+    },
+    {
+      "id": "SUP-4f560be90b6ff5f5",
+      "origin": "validated",
+      "path": "$.summary",
+      "access": "n/a",
+      "text": "Un indicateur promu au rang d'objectif cesse d'être un bon indicateur : l'audit est délibérément bâti sur cette confusion de la mesure et de la cible, et il l'amplifie."
+    },
+    {
+      "id": "SUP-8d0a8184ad0bbc35",
+      "origin": "validated",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "Quand une mesure devient une cible, elle cesse d'être une bonne mesure."
+    },
+    {
+      "id": "SUP-b4d108bf612bf8f3",
+      "origin": "validated",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Marilyn Strathern, « “Improving ratings”: audit in the British University system », European Review, vol. 5, n° 3, juillet 1997, p. 305-321."
+    },
+    {
+      "id": "SUP-48c5e47672b804e8",
+      "origin": "validated",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 308, section « Improving the examination system »"
+    },
+    {
+      "id": "SUP-76d11f542691c5ac",
+      "origin": "validated",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-4754fa978beced0b",
+      "origin": "validated",
+      "path": "$.quotation.original_text",
+      "access": "n/a",
+      "text": "When a measure becomes a target, it ceases to be a good measure."
+    },
+    {
+      "id": "SUP-a006aef58d724e59",
+      "origin": "validated",
+      "path": "$.quotation.original_language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-520c61d935611e51",
+      "origin": "validated",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "in-house"
+    },
+    {
+      "id": "SUP-9f0138e75e95b0ed",
+      "origin": "validated",
+      "path": "$.quotation.translation.translator",
+      "access": "n/a",
+      "text": "Traduction interne non publiée (chaîne Curiosity, session du 29 août 2026). Aucune traduction française publiée de l'article de 1997 n'a été identifiée. « Measure » est rendu par « mesure » aux deux occurrences, comme dans le texte : c'est la reprise du même mot qui fait la phrase. « Target » est rendu par « cible », et non par « objectif », qui aurait dissocié les deux termes que Strathern rapproche."
+    },
+    {
+      "id": "SUP-4fe01aec0db7da7b",
+      "origin": "validated",
+      "path": "$.sources[0].label",
+      "access": "full-text",
+      "text": "Marilyn Strathern, « “Improving ratings”: audit in the British University system », European Review, vol. 5, n° 3, juillet 1997, p. 305-321. Fac-similé de l'article publié (composition de l'éditeur, 17 p.).",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-ec988b343d66a1a7",
+      "origin": "validated",
+      "path": "$.sources[0].kind",
+      "access": "full-text",
+      "text": "primary",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-721f380c3e2b86cc",
+      "origin": "validated",
+      "path": "$.sources[0].locator",
+      "access": "full-text",
+      "text": "p. 308",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-cde1e52bc223a51f",
+      "origin": "validated",
+      "path": "$.sources[0].doi_isbn",
+      "access": "full-text",
+      "text": "10.1002/(SICI)1234-981X(199707)5:3<305::AID-EURO184>3.0.CO;2-4",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-63d77f9c3de9e981",
+      "origin": "validated",
+      "path": "$.sources[0].url",
+      "access": "full-text",
+      "text": "https://archive.org/download/ImprovingRatingsAuditInTheBritishUniversitySystem/%27Improving%20ratings%27-%20audit%20in%20the%20British%20University%20system.pdf",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-0d8fa57113e1b798",
+      "origin": "validated",
+      "path": "$.sources[1].label",
+      "access": "partial",
+      "text": "Keith Hoskin, « The “awful idea of accountability” », dans R. Munro et J. Mouritsen (dir.), Accountability: Power, Ethos and the Technologies of Managing, Londres, International Thomson Business Press, 1996, chap. 14, p. 265-282.",
+      "access_corroboration": "absent"
+    },
+    {
+      "id": "SUP-8a7e56dd8ce49180",
+      "origin": "validated",
+      "path": "$.sources[1].kind",
+      "access": "partial",
+      "text": "primary",
+      "access_corroboration": "absent"
+    },
+    {
+      "id": "SUP-3bb9da0906fa09c1",
+      "origin": "validated",
+      "path": "$.sources[1].locator",
+      "access": "partial",
+      "text": "p. 265, 266, 277 et 280",
+      "access_corroboration": "absent"
+    },
+    {
+      "id": "SUP-ff871e6234332e60",
+      "origin": "validated",
+      "path": "$.sources[1].doi_isbn",
+      "access": "partial",
+      "text": "ISBN 0412625601",
+      "access_corroboration": "absent"
+    },
+    {
+      "id": "SUP-ffc37be1e07d0557",
+      "origin": "validated",
+      "path": "$.review.reviewer",
+      "access": "n/a",
+      "text": "contrôle aveugle"
+    },
+    {
+      "id": "SUP-58978ef3ef93a6b9",
+      "origin": "validated",
+      "path": "$.review.date",
+      "access": "n/a",
+      "text": "2026-08-17"
+    },
+    {
+      "id": "SUP-ab62b4f98906b668",
+      "origin": "validated",
+      "path": "$.review.attribution",
+      "access": "n/a",
+      "text": "confirmee"
+    },
+    {
+      "id": "SUP-427fb1df98a1e120",
+      "origin": "validated",
+      "path": "$.review.quotation",
+      "access": "n/a",
+      "text": "verbatim"
+    },
+    {
+      "id": "SUP-118d16b59e932353",
+      "origin": "validated",
+      "path": "$.review.sources",
+      "access": "n/a",
+      "text": "resolvent"
+    },
+    {
+      "id": "SUP-ed7629ec7b0c3818",
+      "origin": "validated",
+      "path": "$.review.prose",
+      "access": "n/a",
+      "text": "fidele"
+    },
+    {
+      "id": "SUP-e134482677317836",
+      "origin": "validated",
+      "path": "$.review.verdict",
+      "access": "n/a",
+      "text": "PASS"
+    },
+    {
+      "id": "SUP-34a1a211d5be8a6a",
+      "origin": "validated",
+      "path": "$.review.notes[0]",
+      "access": "n/a",
+      "text": "CITATION — vérifiée sur le fac-similé éditeur que j'ai téléchargé moi-même : https://archive.org/download/ImprovingRatingsAuditInTheBritishUniversitySystem/%27Improving%20ratings%27-%20audit%20in%20the%20British%20University%20system.pdf (PDF 17 p., tirage Cambridge Core, filigrane « Goldsmiths, University of London, on 23 Jul 2018 »), extrait par pdftotext -layout. La phrase « When a measure becomes a target, it ceases to be a good measure. » est verbatim, au mot et à la ponctuation près, en tête de paragraphe sur la page portant l'en-tête « 308 Marilyn Strathern », suivie de « The more a 2.1 examination performance becomes an expectation… ». Le paragraphe est effectivement sans guillemets ni appel de note."
+    },
+    {
+      "id": "SUP-9074559487094f71",
+      "origin": "validated",
+      "path": "$.review.notes[1]",
+      "access": "n/a",
+      "text": "LOCATEUR — la section « Improving the examination system » s'ouvre p. 306 et court jusqu'à la section suivante, « Organizational models » (p. 311). La p. 308 tombe bien dedans : le locateur affiché est exact."
+    },
+    {
+      "id": "SUP-6c5b6f69b96359fc",
+      "origin": "validated",
+      "path": "$.review.notes[2]",
+      "access": "n/a",
+      "text": "SOURCE 1 — DOI 10.1002/(SICI)1234-981X(199707)5:3<305::AID-EURO184>3.0.CO;2-4 résolu sur api.crossref.org : « ‘Improving ratings’: audit in the British University system », Marilyn Strathern (auteur unique), European Review, vol. 5, n° 3, published-print 1997-07, p. 305-321, ISSN 1062-7987 / 1234-981X. Éditeur courant Cambridge University Press (préfixe 10.1017), DOI hérité de Wiley — cohérent avec le « © 1997 by John Wiley & Sons, Ltd. » imprimé en pied de page. Tous les champs affichés concordent, y compris les 17 pages annoncées (305-321)."
+    },
+    {
+      "id": "SUP-d0752ad155d8393d",
+      "origin": "validated",
+      "path": "$.review.notes[3]",
+      "access": "n/a",
+      "text": "SOURCE 2 — ISBN 0412625601 résolu sur openlibrary.org/search.json : Accountability [: Power, Ethos and the Technologies of Managing], Rolland Munro (dir.), International Thomson Business Press, 1996, 337 p. J'ai ouvert le chapitre lui-même en PDF : https://gwern.net/doc/statistics/decision/1996-hoskin.pdf (OCR ocrmypdf/Tesseract, métadonnée « Accountability: Power, ethos and the technologies of managing 265 (1996) »). Les en-têtes courants numérotés 266 à 282 confirment la pagination 265-282 affichée. Le chapitre s'ouvre bien par : « ‘Goodhart's Law’ — that every measure which becomes a target becomes a bad measure — is inexorably, if ruefully, becoming recognized as one of the overriding laws of our times » (p. 265). Le locateur « p. 265, 266, 277 et 280 » est juste et bien choisi : p. 266 « Not only new targets but new kinds of targets… », p. 277 section « Modernity, post modernity and the self-accountable self » (« With formulations like Goodhart's Law, we now have a strong ironic awareness of the futility of measures that are targets »), p. 280 note 1 sur la définition monétaire d'origine, renvoyant à Goodhart, C. (1989) Money, Information and Uncertainty."
+    },
+    {
+      "id": "SUP-0855d6866350f5dc",
+      "origin": "validated",
+      "path": "$.review.notes[4]",
+      "access": "n/a",
+      "text": "ATTRIBUTION — la phrase est bien de la main de Strathern, et la fiche ne lui prête pas la paternité de la loi : c'est la position que mes lectures soutiennent. Strathern écrit p. 307 « Some of the answer is given by an educationalist, Hoskin, […] and I draw freely on his observations.3 », et p. 308, juste après sa formule : « Hoskin describes this as ‘Goodhart's law’, after the latter's observation on instruments for monetary control which lead to other devices for monetary flexibility having to be invented. » J'ai recompté la bibliographie de l'article : 15 références numérotées (p. 320-321), aucune entrée Goodhart — Goodhart n'est nommé qu'une fois dans tout l'article, dans ce paragraphe de la p. 308. Strathern ne nomme jamais sa propre formule. J'ai aussi vérifié les trois renvois de Strathern à Hoskin contre le chapitre : « Not only new targets… » est bien p. 266, « inventions not of business but of the educational world » p. 268, « is and ought will be brought into proper alignment » p. 273. Tout concorde."
+    },
+    {
+      "id": "SUP-70b52040ca26d23a",
+      "origin": "validated",
+      "path": "$.review.notes[5]",
+      "access": "n/a",
+      "text": "PROSE — le summary n'est pas une glose : c'est le décalque d'une phrase de Strathern elle-même, p. 319, section « Three comments » : « Auditing is deliberately built on the conflation of measures with targets, and audit culture enhances the process. » L'adverbe « délibérément » et le verbe « amplifie » sont donc portés mot pour mot par la source primaire, y compris le « deliberately » qu'on serait tenté de tenir pour un durcissement de rédaction. Le hook (« Pourquoi un bon indicateur cesse-t-il de l'être dès qu'on en fait un objectif ? ») ne fait que retourner la citation en question."
+    },
+    {
+      "id": "SUP-bed61aa265809ae2",
+      "origin": "validated",
+      "path": "$.review.notes[6]",
+      "access": "n/a",
+      "text": "NOTE hors des quatre points (aucun motif de renvoi) — le libellé de la source 2 tronque le titre du chapitre : Hoskin l'intitule « The ‘awful idea of accountability’: inscribing people into the measurement of objects », sous-titre que Strathern elle-même restitue en entier dans sa réf. 3. Ajouter le sous-titre rendrait la référence plus facile à retrouver."
+    },
+    {
+      "id": "SUP-dddc1f14178f4caf",
+      "origin": "validated",
+      "path": "$.review.notes[7]",
+      "access": "n/a",
+      "text": "NOTE hors des quatre points — je n'ai pas pu vérifier le « chap. 14 » affiché. Le PDF du chapitre ne porte pas de numéro, la table des matières du volume ne m'est pas parvenue (Cengage : boucle de redirections ; Google Books API : HTTP 429, quota épuisé ; K10plus SRU : réponse vide ; openlibrary.org en accès direct : connexion réinitialisée, résolu ensuite via le proxy). Le rang est plausible (chapitre de la section V d'un volume de 337 p., débutant p. 265) mais non établi : ce n'est pas une réfutation, c'est un accès manquant."
+    },
+    {
+      "id": "SUP-f72296b913237c22",
+      "origin": "validated",
+      "path": "$.review.notes[8]",
+      "access": "n/a",
+      "text": "NOTE hors des quatre points, sur un point de fait — la note d'attribution dit « c'est Hoskin qui la nomme ‘loi de Goodhart’ ». C'est exact du point de vue de Strathern, qui ne connaît le nom que par lui, mais Hoskin ne se présente pas en baptiseur : il écrit que la loi « is […] becoming recognized as one of the overriding laws of our times » (p. 265) et sa note 1 précise « ‘Goodhart's Law’, as originally defined by Goodhart » (p. 280). Il relaie donc une appellation qu'il donne pour déjà en circulation. Je n'ai pas pu établir d'occurrence imprimée antérieure à 1996 (recherches Crossref sur titres : rien avant 1996 ; l'instrument est faible, le nom circulant surtout en corps de texte) — l'antériorité reste ouverte dans les deux sens. Formuler « c'est par Hoskin que Strathern reçoit le nom » serait plus sûr que « c'est Hoskin qui la nomme »."
+    },
+    {
+      "id": "SUP-43ec328ea4f2a516",
+      "origin": "validated",
+      "path": "$.notes[0]",
+      "access": "n/a",
+      "text": "La chaîne d'attribution, dans cet ordre. Strathern formule l'aphorisme p. 308 ; elle ajoute aussitôt, en toutes lettres : « Hoskin describes this as “Goodhart's law”, after the latter's observation on instruments for monetary control which lead to other devices for monetary flexibility having to be invented » ; l'apport de Goodhart n'apparaît donc que résumé de seconde main, en une subordonnée. Aucun texte de Goodhart ne figure dans les quinze références de l'article."
+    },
+    {
+      "id": "SUP-f107290d197680b0",
+      "origin": "validated",
+      "path": "$.notes[1]",
+      "access": "n/a",
+      "text": "Avertissement de méthode, et c'est ce qui a failli faire publier ici une attribution fausse. Hoskin a d'abord été cherché par chaînes de caractères dans des extraits paginés, jamais lu en continu : aucune des neuf variantes essayées n'y sortait — « when a measure becomes a target », « ceases to be a good measure », « measures become targets » : zéro occurrence, témoins positifs joués sur le même moteur. La formulation y était pourtant, dès la première ligne du chapitre, p. 265 : « every measure which becomes a target becomes a bad measure », qu'aucune des chaînes cherchées ne recoupe. Une absence de correspondance littérale n'est pas une absence de formulation équivalente."
+    },
+    {
+      "id": "SUP-180f909307198606",
+      "origin": "validated",
+      "path": "$.notes[2]",
+      "access": "n/a",
+      "text": "Ce que Hoskin apporte : il nomme « Goodhart's Law » (p. 266 et 277) et lui rattache en note (p. 280) une formulation monétaire référencée (Goodhart, 1989) — la monnaie qui, prise pour instrument de contrôle monétaire, cesse d'être utilisée comme monnaie et se voit remplacée par des substituts permettant d'échapper au contrôle. Il prend cette loi comme un acquis qu'il critique, non comme une formule qu'il forgerait."
+    },
+    {
+      "id": "SUP-dfb7860e228e4462",
+      "origin": "validated",
+      "path": "$.notes[3]",
+      "access": "n/a",
+      "text": "Ce que Goodhart a lui-même écrit n'est pas établi ici : son texte n'a pas été ouvert, et cela relève d'une fiche distincte. Une seule phrase de Hoskin reste connue par sa fin et non par son début, celle qui mentionne « its specific formulation » (p. 266)."
+    },
+    {
+      "id": "SUP-3b484a873e18c9c6",
+      "origin": "validated",
+      "path": "$.notes[4]",
+      "access": "n/a",
+      "text": "La citation est en anglais et n'a pas été traduite. Un second passage autonome existe si l'énoncé conclusif était préféré à l'aphorisme : « Auditing is deliberately built on the conflation of measures with targets, and audit culture enhances the process. » (p. 319)."
+    },
+    {
+      "id": "SUP-ce4f3bd67fb365b8",
+      "origin": "evidence:attribution-hoskin.json",
+      "path": "$.question",
+      "access": "n/a",
+      "text": "La formule « When a measure becomes a target… » est-elle de Strathern ou de Hoskin ?"
+    },
+    {
+      "id": "SUP-5be814a89c9e05eb",
+      "origin": "evidence:attribution-hoskin.json",
+      "path": "$.reference_3_de_strathern",
+      "access": "n/a",
+      "text": "3. K. Hoskin (1996) The 'awful idea of accountability': inscribing people into the measurement of objects. In Accountability: Power, Ethos and the Technologies of Managing, R. Munro and J. Mouritsen (Eds). London, International Thomson Business Press, and references therein. — Relevé mot pour mot dans la section REFERENCES de l'article, p. 320 du PDF éditeur (Cambridge Core) déjà utilisé pour la lecture primaire. La notice ne porte ni pagination de chapitre ni ISBN ; la mention finale « and references therein » est de Strathern. Le volume est identifié sans ambiguïté : ISBN 0412625601 / 9780412625602, OCLC 35627523, LCCN 96036640, 337 pages. Le chapitre de Hoskin y est le chapitre 14, p. 265-282 (table des matières, p. vi : « 14 The 'awful idea of accountability': inscribing people into the measurement of objects 265 — Keith Hoskin »). Les deux renvois de Strathern, (Ref. 3, p. 268) et (Ref. 3, p. 273), tombent donc bien à l'intérieur du chapitre."
+    },
+    {
+      "id": "SUP-ff4a6662c6e319d1",
+      "origin": "evidence:attribution-hoskin.json",
+      "path": "$.verdict",
+      "access": "n/a",
+      "text": "STRATHERN"
+    },
+    {
+      "id": "SUP-afad28d2f8ebb1ac",
+      "origin": "evidence:attribution-hoskin.json",
+      "path": "$.preuve",
+      "access": "n/a",
+      "text": "Hoskin a été ouvert, mais partiellement : par la recherche interne au volume de Google Books (exemplaire numérisé de l'Indiana University, identifiant de volume sFDuAAAAMAAJ, source IND:30000056870904 — le même scan que celui déposé à HathiTrust sous htid inu.30000056870904). Le volume est en « no preview » : on n'obtient pas la page entière, mais des extraits OCR verbatim paginés, à raison de trois au plus par requête. C'est donc le texte de Hoskin lui-même que je lis, pas un commentateur ; mais je ne l'ai jamais lu en continu.\n\nCe qui a été lu, verbatim, chez Hoskin :\n\n(1) p. 266, sur la loi de Goodhart, dans la voix de Hoskin : « […] Goodhart's Law elicits a wry smile of recognition, its specific formulation may tend to obscure precisely why this transformation took place. For the Law suggests that it is in becoming targets that measures become bad, which implies that measures in themselves are not bad. In this logic, measures are presumably either subverted from their course by human frailty, or not yet developed to a sufficient pitch of […] ». Le début de la phrase (avant « Goodhart's Law ») n'a pas pu être affiché.\n\n(2) p. 266, plus loin : « […] constant improvement, targets must be designed to forestall the suboptimal behaviour of individuals, and so promote goal congruence with the greater good. So, for example, in order to deal with shopfloor workers who pace activity to depress production 'standards', managers produce slack-adjusted norms. […] », et « […] futility in regimes of constant improvement, provides a healthy corrective to these calculative fantasies of managerialism. Yet my concern is that it fails to reveal to us why that futility is so inherent. »\n\n(3) p. 277 : « […] Goodhart's Law, we now have a strong ironic awareness of the futility of measures that are targets. »\n\n(4) p. 280, note de fin, seul endroit où Goodhart est référencé : « […] money in order to enable monetary control, it will cease to be used as money and replaced by substitutes which will enable evasion of that control (Goodhart, 1989). No matter: the susceptibility of the initial formulation to such more general redefinition only confirms the truth of the underlying insight. » La même note, un peu plus loin : « […] measures only generated them when they became targets. »\n\nCe qui n'est pas chez Hoskin. Aucune des chaînes suivantes n'existe dans les 337 pages du volume : « when a measure becomes a target » (0), « ceases to be a good measure » (0), « measure becomes a target » (0), « measures become targets » (0), « when measures become targets » (0), « cease to be good measures » (0), « measures cease to be » (0), « become targets they cease » (0), « ceases to be » (0 — le mot « ceases » n'apparaît nulle part dans le livre ; seules les formes « cease », « ceased », « ceasing » sortent). Ces zéros ne sont pas des silences d'outil : chaque lot de requêtes contenait des témoins positifs joués dans la même minute et sur le même moteur, qui ont bien répondu (« it is in becoming targets that measures become bad » → p. 266 ; « elicits a wry smile of recognition » → p. 266 ; « enable evasion of that control » → p. 280 ; « cease to be » → p. 280 ; « the futility of measures that are targets » → p. 277). Les deux négatifs décisifs ont en outre été rejoués après une pause, avec témoins positifs intercalés, et sont restés nuls.\n\nRéponse aux deux questions posées. (1) Non : ni la phrase de Strathern ni aucune formulation proche ne se trouve chez Hoskin, ni p. 268 ni ailleurs dans le volume. Le vocabulaire de Hoskin est autre — « measures become bad », « measures that are targets », « measure-target » (p. 274). (2) Oui : Hoskin nomme bien « Goodhart's Law » (p. 266 et p. 277) et lui rattache, en note p. 280, une formulation monétaire référencée (Goodhart, 1989) — la monnaie qui, prise pour instrument de contrôle monétaire, cesse d'être utilisée comme monnaie et se voit remplacée par des substituts permettant d'échapper au contrôle. Il traite cette formulation-là comme « the initial formulation », dont la généralisation ultérieure ne fait à ses yeux que confirmer « the truth of the underlying insight ». Il prend donc la loi comme un acquis qu'il critique — il écrit que sa « specific formulation » masque le vrai mécanisme — et non comme une formule qu'il forgerait.\n\nConclusion : la formulation aphoristique de la p. 308 est de Strathern. Elle n'est reprise ni de Hoskin, ni de la formulation de Goodhart que Hoskin rapporte."
+    },
+    {
+      "id": "SUP-8bcfe08f7246bae4",
+      "origin": "evidence:attribution-hoskin.json",
+      "path": "$.voies_essayees[0]",
+      "access": "n/a",
+      "text": "PDF éditeur de Strathern 1997 déjà téléchargé (dépôt tiers Internet Archive, ImprovingRatingsAuditInTheBritishUniversitySystem), relu avec pdftotext -layout : référence 3 confirmée mot pour mot, ainsi que les deux renvois (Ref. 3, p. 268) et (Ref. 3, p. 273). Succès."
+    },
+    {
+      "id": "SUP-5664c541c1ab6733",
+      "origin": "evidence:attribution-hoskin.json",
+      "path": "$.voies_essayees[1]",
+      "access": "n/a",
+      "text": "Internet Archive advancedsearch.php sur le titre (« Accountability » ET « Technologies of Managing »), sur les directeurs (Munro, Mouritsen) et sur l'ISBN 0412625601 : 0 résultat à chaque fois. Le volume n'est pas sur Internet Archive, ni en consultation ni en prêt."
+    },
+    {
+      "id": "SUP-873e0ccafee4729f",
+      "origin": "evidence:attribution-hoskin.json",
+      "path": "$.voies_essayees[2]",
+      "access": "n/a",
+      "text": "Open Library : notice trouvée (works/OL21079952W, édition OL7479016M, Rolland Munro, 1996, ISBN 0412625601 / 9780412625602), sans exemplaire numérisé associé. Sert à fixer l'ISBN, pas à ouvrir le texte."
+    },
+    {
+      "id": "SUP-bde6e673c6c8cf10",
+      "origin": "evidence:attribution-hoskin.json",
+      "path": "$.voies_essayees[3]",
+      "access": "n/a",
+      "text": "HathiTrust, API catalogue par ISBN : volume présent — Record 007437465, exemplaire inu.30000056870904 (Indiana University), OCLC 35627523, LCCN 96036640, droits « ic », statut « Limited (search-only) ». La recherche plein texte dans le volume (babel.hathitrust.org/cgi/pt/search) est renvoyée en HTTP 403 par un challenge Cloudflare exigeant JavaScript. Voie fermée ici, mais elle indiquait que le scan existe et est interrogeable."
+    },
+    {
+      "id": "SUP-3a4fee2941a55198",
+      "origin": "evidence:attribution-hoskin.json",
+      "path": "$.voies_essayees[4]",
+      "access": "n/a",
+      "text": "API Google Books v1 (googleapis.com/books/v1) : HTTP 429, quota journalier du projet épuisé (limite à 0). Inutilisable."
+    },
+    {
+      "id": "SUP-4e812995d75fd344",
+      "origin": "evidence:attribution-hoskin.json",
+      "path": "$.voies_essayees[5]",
+      "access": "n/a",
+      "text": "Ancien flux GData books/feeds/volumes : accessible. Recherche par ISBN infructueuse (renvoie deux volumes sans rapport), mais intitle:\"technologies of managing\" donne le volume sFDuAAAAMAAJ, source IND:30000056870904, viewability view_no_pages. Ce flux fait de l'appariement approximatif : ses totaux ne prouvent la présence d'aucune phrase, il n'a servi qu'à identifier le volume."
+    },
+    {
+      "id": "SUP-49010bdce077d918",
+      "origin": "evidence:attribution-hoskin.json",
+      "path": "$.voies_essayees[6]",
+      "access": "n/a",
+      "text": "Recherche interne au volume Google Books (books.google.com/books?id=sFDuAAAAMAAJ&jscmd=SearchWithinVolume) : voie qui a effectivement ouvert le texte. Renvoie des extraits OCR verbatim avec numéro de page imprimée, trois au maximum par requête et sans pagination des résultats (start=3 et start=6 renvoient vide). Une trentaine de requêtes exactes et de contre-épreuves ont été jouées. Limite à connaître : quand la chaîne exacte est absente, le moteur retombe sur un appariement par mots isolés, reconnaissable au fait que les mots surlignés sont disjoints — c'est ce qui se produit pour « becomes a target » ou « a measure becomes », et c'est le contraire d'une occurrence."
+    },
+    {
+      "id": "SUP-7948164f103e2171",
+      "origin": "evidence:attribution-hoskin.json",
+      "path": "$.voies_essayees[7]",
+      "access": "n/a",
+      "text": "Non tenté : la consultation d'un exemplaire papier ou d'un prêt numérique contrôlé, seule voie qui donnerait les p. 265-266 en continu."
+    },
+    {
+      "id": "SUP-f0066c55cc394108",
+      "origin": "evidence:attribution-hoskin.json",
+      "path": "$.consequence_pour_la_carte",
+      "access": "n/a",
+      "text": "La note d'attribution peut désormais dire sans réserve conditionnelle que la formule est de Strathern : Hoskin a été ouvert, il ne contient nulle part cette phrase ni une formulation équivalente, il se borne à nommer « Goodhart's Law » et à en rapporter la formulation monétaire d'origine (Goodhart, 1989) — Strathern condense donc en un aphorisme de son cru un raisonnement qu'elle emprunte à Hoskin, et la seule réserve qui subsiste est que Hoskin a été lu par extraits paginés, non en continu."
+    },
+    {
+      "id": "SUP-d3ed716414370847",
+      "origin": "evidence:attribution-hoskin.json",
+      "path": "$.reserves[0]",
+      "access": "n/a",
+      "text": "Hoskin n'a pas été lu en continu : la recherche interne ne rend que des extraits d'une trentaine de mots, trois par requête. Le début de la phrase de la p. 266 qui introduit « Goodhart's Law » n'a jamais pu être affiché, malgré une dizaine de tentatives d'amorce (« the invocation of », « the phrase », « known as », « invoking », « so-called », « the dictum », « the maxim », « the aphorism »). Il reste donc une phrase, une seule, dont je connais la fin mais pas le début — et c'est précisément celle qui mentionne « its specific formulation ». Le contexte immédiat (la note 1 de la p. 280, qui donne la formulation monétaire et la qualifie d'« initial formulation ») indique que cette « formulation spécifique » est celle de Goodhart sur la monnaie, pas un aphorisme mesure/cible ; mais je l'infère, je ne l'ai pas lu."
+    },
+    {
+      "id": "SUP-b6ff23259a2a5556",
+      "origin": "evidence:attribution-hoskin.json",
+      "path": "$.reserves[1]",
+      "access": "n/a",
+      "text": "L'argument porte pour une part sur des absences. Une absence relevée par recherche OCR est solide ici — le texte voisin de la p. 266 et de la p. 280 s'océrise proprement, et neuf variantes de la formule, y compris très lâches, sortent toutes à zéro — mais elle n'a pas la force d'une lecture de la page. Si quelqu'un accède un jour aux p. 265-268 en fac-similé, c'est là qu'il faut regarder."
+    },
+    {
+      "id": "SUP-d4eb2db5589af16d",
+      "origin": "evidence:attribution-hoskin.json",
+      "path": "$.reserves[2]",
+      "access": "n/a",
+      "text": "Je n'ai pas pu confirmer la notice complète de « Goodhart, 1989 » dans la bibliographie de Hoskin (p. 281-282) : les requêtes « Goodhart, C. A. E. », « Goodhart, C. (1989) » et « Money, Information » ne renvoient rien de pertinent, alors que la liste de références de la page 282 est bien océrisée (entrées Thompson 1967, etc.). Soit l'entrée est mal océrisée, soit elle est ailleurs. L'appel « (Goodhart, 1989) » de la note p. 280, lui, est lu verbatim. Ce que Goodhart a réellement écrit reste hors de cette vérification et relève de la fiche Goodhart."
+    },
+    {
+      "id": "SUP-3aca0b71dd448b83",
+      "origin": "evidence:attribution-hoskin.json",
+      "path": "$.reserves[3]",
+      "access": "n/a",
+      "text": "Le scan interrogé est celui d'Indiana University, exemplaire unique. Toute la vérification repose sur cet exemplaire et sur son OCR ; il n'a pas été possible de la répliquer sur un second exemplaire (aucun autre n'est signalé par HathiTrust, et Internet Archive n'en a pas)."
+    },
+    {
+      "id": "SUP-5f3b0165360bd428",
+      "origin": "evidence:lecture.json",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "mesure-devenue-cible"
+    },
+    {
+      "id": "SUP-7701bd629b087993",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authors[0].name",
+      "access": "n/a",
+      "text": "Marilyn Strathern"
+    },
+    {
+      "id": "SUP-68eb2797a0e6397a",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authorship",
+      "access": "n/a",
+      "text": "SOLE_AUTHOR"
+    },
+    {
+      "id": "SUP-79e2f2d4be81cb94",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.note",
+      "access": "n/a",
+      "text": "La phrase « When a measure becomes a target, it ceases to be a good measure. » se lit mot pour mot à la page 308 de Strathern 1997, vérifiée sur le fac-similé de la page publiée et non sur la seule couche OCR. Marilyn Strathern est l'auteure unique de cet article, tiré de la Founders' Memorial Lecture donnée à Girton College (Cambridge) le 11 mars 1997.\n\nLa phrase est très largement attribuée à Charles Goodhart. Cette attribution est fausse pour cette formulation-ci, et la lecture directe permet de dire précisément pourquoi. Chez Strathern, la phrase ouvre un paragraphe, sans guillemets, sans appel de référence et sans marque de discours rapporté : elle est écrite dans sa propre voix. Elle n'écrit à aucun moment qu'elle reprend Goodhart. Ce n'est qu'après un exemple de son cru (l'affaiblissement du 2.1 comme discriminant des performances individuelles) qu'elle ajoute, en toutes lettres : « Hoskin describes this as 'Goodhart's law', after the latter's observation on instruments for monetary control which lead to other devices for monetary flexibility having to be invented. »\n\nAutrement dit, ce n'est pas Strathern qui gloserait Goodhart : c'est l'éducationaliste Keith Hoskin qui, selon elle, appelle ce phénomène « loi de Goodhart », et Strathern rapporte ce baptême. Le rapport à Goodhart est donc doublement indirect, et il faut le dire dans cet ordre : Strathern formule l'aphorisme ; elle signale que Hoskin nomme la chose « Goodhart's law » ; l'apport de Goodhart lui-même n'apparaît que résumé de seconde main, en une subordonnée, sur les instruments de contrôle monétaire.\n\nAucun texte de Goodhart ne figure dans les quinze références numérotées de l'article ; la seule référence mobilisée dans tout ce passage est Hoskin, K. (1996), « The 'awful idea of accountability': inscribing people into the measurement of objects », référence n° 3 de l'article, citée trois lignes plus loin sous la forme (Ref. 3, p. 268). Strathern n'a donc jamais cité Goodhart en propre dans ce texte.\n\nConséquence pour la carte : la paternité de cette formulation revient à Strathern (sous la réserve Hoskin ci-dessous), le nom « loi de Goodhart » revient à un tiers rapporté par elle, et l'énoncé princeps de Goodhart, quel qu'il soit, n'est pas cette phrase. La désignation « loi de Strathern », qui circule aussi, ne vient pas d'elle non plus : elle ne nomme jamais sa propre phrase."
+    },
+    {
+      "id": "SUP-1ae369f059ad6956",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "When a measure becomes a target, it ceases to be a good measure."
+    },
+    {
+      "id": "SUP-e81559a718669073",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Marilyn Strathern, « 'Improving ratings': audit in the British University system », European Review, 5(3), 1997, p. 305-321 — section « Improvement », premier paragraphe de la page 308, juste après le développement sur le glissement sémantique du mot improvement et juste avant la mention de Hoskin et de la « loi de Goodhart »."
+    },
+    {
+      "id": "SUP-da2dcf51bdabbeff",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 308"
+    },
+    {
+      "id": "SUP-f5a20cd89af9c844",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-52a377add63895a6",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "none"
+    },
+    {
+      "id": "SUP-a39840c4ac4bb24b",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].citation",
+      "access": "full-text",
+      "text": "Strathern, M. (1997). « 'Improving ratings': audit in the British University system ». European Review, 5(3), 305-321. Fac-similé de l'article publié (pagination 305-321, mention « © 1997 by John Wiley & Sons, Ltd. » en pied de page, filigrane de téléchargement Cambridge Core daté du 23 juillet 2018 depuis Goldsmiths, University of London), déposé par un tiers sur Internet Archive sous l'identifiant ImprovingRatingsAuditInTheBritishUniversitySystem."
+    },
+    {
+      "id": "SUP-240a0ed7a3c1d2f0",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].doi_isbn",
+      "access": "full-text",
+      "text": "10.1002/(SICI)1234-981X(199707)5:3<305::AID-EURO184>3.0.CO;2-4"
+    },
+    {
+      "id": "SUP-bafefc1d89a65ed8",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].url",
+      "access": "full-text",
+      "text": "https://archive.org/download/ImprovingRatingsAuditInTheBritishUniversitySystem/%27Improving%20ratings%27-%20audit%20in%20the%20British%20University%20system.pdf"
+    },
+    {
+      "id": "SUP-18aad7fb0e76df5f",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].citation",
+      "access": "metadata-only",
+      "text": "Notice Crossref du même DOI : auteure unique Marilyn Strathern, European Review, vol. 5, n° 3, p. 305-321, juillet 1997, éditeur Cambridge University Press, ISSN 1062-7987 / 1234-981X. Sert uniquement à confirmer la référence bibliographique, pas le contenu."
+    },
+    {
+      "id": "SUP-7c9907fa2349d050",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.1002/(SICI)1234-981X(199707)5:3<305::AID-EURO184>3.0.CO;2-4"
+    },
+    {
+      "id": "SUP-54ff90c684ef82d2",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].url",
+      "access": "metadata-only",
+      "text": "https://api.crossref.org/works/10.1002/(SICI)1234-981X(199707)5:3%3C305::AID-EURO184%3E3.0.CO;2-4"
+    },
+    {
+      "id": "SUP-2f785be36522de98",
+      "origin": "evidence:lecture.json",
+      "path": "$.definition_de_lauteur",
+      "access": "n/a",
+      "text": "Strathern donne un « commentaire anthropologique » sur ce qu'on a appelé l'« audit explosion », la prolifération des procédures d'évaluation de la performance. Dans l'enseignement supérieur, l'objet de l'audit n'est pas tant l'éducation des étudiants que la provision institutionnelle de cette éducation ; l'audit « does more than monitor—it has a life of its own that jeopardizes the life it audits ». Le mécanisme qu'elle décrit est celui d'une réplication culturelle : les pratiques d'examen écrit, chiffré et archivé inventées par l'université à la fin du XVIIIe siècle ont produit une « new morality of attainment » où « what is became explicitly joined with what ought to be », résumée dans le concept d'improvement — mot dont elle retrace le glissement, de la terre qui rapporte à la chose qu'on améliore. De cette conflation du « is » et du « ought » sort, chez Hoskin qu'elle suit ici, l'invention moderniste de l'accountability, passée de l'éducation au monde des affaires ; Strathern complète la boucle en la faisant revenir sur l'université. D'où l'effet qu'elle nomme dans ses termes : « measuring the improvement leads to improving the measures » (p. 307), et, à la fin, « Auditing is deliberately built on the conflation of measures with targets, and audit culture enhances the process » (p. 319), corruption qu'elle dit « endemic » à l'idée que le but soit d'encourager les institutions à améliorer leur note."
+    },
+    {
+      "id": "SUP-1bb4a3d8797394db",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[0]",
+      "access": "n/a",
+      "text": "Réserve principale, qui porte sur la paternité elle-même : tout le paragraphe de la page 308 paraphrase la référence n° 3 (Hoskin, 1996), citée trois lignes plus bas. La phrase est écrite sans guillemets ni appel de note, ce qui, dans les conventions de cet article, indique la voix de l'auteure — Strathern met systématiquement entre guillemets et référence ce qu'elle emprunte à Hoskin ailleurs dans le même paragraphe. Mais je n'ai pas ouvert Hoskin, K. (1996), « The 'awful idea of accountability': inscribing people into the measurement of objects », in R. Munro & J. Mouritsen (dir.), Accountability: Power, Ethos and the Technologies of Managing, Londres, International Thomson Business Press. Tant que ce texte n'est pas lu, je ne peux pas exclure que la formulation vienne de lui. À faire vérifier avant de traiter Strathern comme l'auteure de l'aphorisme sans réserve."
+    },
+    {
+      "id": "SUP-25e3a2f96e7c7de9",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[1]",
+      "access": "n/a",
+      "text": "Je n'ai pas ouvert Goodhart, C. A. E. (1975), « Problems of Monetary Management: The U.K. Experience ». Je peux donc affirmer que Strathern ne le cite pas et qu'il ne figure pas dans ses références, mais je ne peux rien affirmer sur la formulation que Goodhart a lui-même employée. La carte ne doit pas faire dire à cette fiche ce que Goodhart aurait écrit ou pas écrit ; cela relève de la fiche Goodhart (candidat n° 12 du scouting)."
+    },
+    {
+      "id": "SUP-7b19652cf3f3bf8f",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[2]",
+      "access": "n/a",
+      "text": "Le PDF consulté est un dépôt tiers sur Internet Archive, non un dépôt de l'éditeur ni de l'auteure. La demande du scout de vérifier la correspondance page à page est satisfaite : le fichier fait 17 pages pour un article paginé 305-321, chaque page porte l'en-tête courant (numéro de page + « Marilyn Strathern » ou « Audit in the British University system ») et le pied de page « Eur. Rev., 5, 305-321 (1997) » avec le DOI. C'est le PDF composé par l'éditeur, téléchargé depuis Cambridge Core, pas une recomposition. Sa mise en ligne par un tiers reste un point de statut juridique, pas de fiabilité textuelle."
+    },
+    {
+      "id": "SUP-1f2a493339b03ee0",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[3]",
+      "access": "n/a",
+      "text": "La citation retenue est le premier passage lu, non un repli : elle fait 63 caractères, s'énonce sans coupe et sans contexte préalable. Aucun autre passage n'a été écarté pour cause de longueur. Un second passage, également autonome et sous les 150 caractères, existe si la carte préfère l'énoncé conclusif plutôt que l'aphorisme : « Auditing is deliberately built on the conflation of measures with targets, and audit culture enhances the process. » (p. 319)."
+    },
+    {
+      "id": "SUP-82afd45778417a47",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[4]",
+      "access": "n/a",
+      "text": "L'article est en anglais et n'a pas été traduit ici. Aucune traduction française publiée n'a été cherchée ni identifiée dans le temps de cette lecture ; si la carte affiche une version française, elle devra être déclarée in-house avec l'original conservé."
+    }
+  ],
+  "estimated_tokens": 16413,
+  "status": "READY"
+}

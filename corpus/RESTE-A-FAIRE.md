@@ -11,6 +11,10 @@ du 7 septembre 2026, les commandes sont la vérité.
 npm run corpus:audit    # domaines, thèmes, cartes validées, sujets jamais instruits
 npm run corpus:deepen   # projette les approfondissements, et liste en fin de sortie
                         # les cartes validées qui n'en ont pas : c'est la file, pas ce fichier
+npm run corpus:factcheck -- --sweep
+                        # les niveaux d'accès que le dossier ne corrobore pas — chantier H.
+                        # Sa sortie ne se lit jamais sans ouvrir le dossier signalé : trois de
+                        # ses neuf signalements au-dessus de metadata-only sont corrects.
 ```
 
 **Un décompte écrit à la main ment tôt ou tard.** Ce qui suit ne vaut donc que pour ce qu'un
@@ -30,7 +34,8 @@ script ne peut pas dire : quel travail est possible aujourd'hui, ce qu'il coûte
 | **E.** Le garde de la CI ne couvrait qu'une moitié du répertoire projeté | **aucun** | non | **fermé le 2 septembre 2026** |
 | **F.** Les acquisitions que l'audit v3 réclame | voir la section | oui | ouvert le 17 septembre 2026 |
 | **G.** Le pack de preuve ne lisait qu'un fichier du dossier | **aucun** | non | **fermé le 21 septembre 2026** — dernière suite portée, la version antérieure se désigne par un SHA de blob |
-| **H.** Un niveau d'accès surdéclaré désarme le gate | 3 cas établis, 31 candidats | non pour le correctif, oui pour les cas | **ouvert le 21 septembre 2026**, et c'est le seul défaut connu qui ouvre au lieu de fermer |
+| **H.** Un niveau d'accès surdéclaré désarme le gate | 5 cas établis, 13 champs à normaliser | non pour le correctif, oui pour les cas | **détection faite le 22 septembre 2026** ; reste la réparation des fiches, qui est un geste de la couche carte |
+| **I.** L'auditeur prenait une absence du dossier pour une preuve | **aucun** | non | **fermé le 22 septembre 2026**, par le réécrivain qui a refusé la prescription |
 
 **Le chantier A est fermé.** Il s'était vidé le 21 août, rouvert et creusé pendant cinq lots
 d'ouverture consécutifs jusqu'à trente-quatre cartes le 28 août, puis refermé en trois nuits :
@@ -1207,22 +1212,151 @@ proximité. **Il rend 31 candidats sur 172 sources `full-text`, réparties sur 1
 et n'a pas été versé au dépôt : le reproduire coûte dix minutes, et le garder ferait croire à une
 mesure.
 
+**Remplacé le 22 septembre 2026 par `npm run corpus:factcheck -- --sweep`**, qui est une mesure et
+non un signal : il est testé, il porte le même code que le pack de preuve, et il rend une liste
+courte au lieu de 31 candidats à trier. La section suivante donne son résultat.
+
 ## Par quel bout prendre ce chantier
 
 Dans cet ordre, et il est motivé par le coût.
 
-1. **Rendre le défaut détectable par le code plutôt que par un audit.** Le pack sait déjà ce qu'il a
-   ramassé — il porte `evidence_files` avec le nom et le SHA de chaque fichier. Il pourrait
-   comparer, source par source, le `consulted` de l'enregistrement validé à ce que le dossier
-   déclare de la même source, et **refuser le pack, ou dégrader le niveau au plus prudent des deux**,
-   quand les deux divergent. Dégrader est fail-closed et se défend mieux que refuser : une carte ne
-   devient pas impubliable parce que son enregistrement est trop optimiste, mais ses supports
-   cessent d'être estampillés « lu ».
-2. **Corriger les trois cas établis dans les enregistrements validés.** Ce n'est pas un geste de la
-   couche approfondissement, et aucun agent `corpus-deepening-*` n'en a le droit. Il relève de
-   `corpus-editor` ou d'une main humaine.
-3. **Vérifier les 31 candidats**, en sachant que la liste est bruitée dans les deux sens et qu'elle
-   ne remplace pas un passage sur les 172 sources `full-text`.
+1. ~~**Rendre le défaut détectable par le code plutôt que par un audit**, en comparant source par
+   source le `consulted` de l'enregistrement validé à celui du dossier et en dégradant au plus
+   prudent des deux quand ils divergent.~~ **Fait le 22 septembre 2026, mais pas comme écrit ici :
+   la règle proposée ne marche pas, et la section suivante dit pourquoi et par quoi elle est
+   remplacée.**
+2. **Corriger dans les enregistrements validés les cas que le balayage établit.** Ce n'est pas un
+   geste de la couche approfondissement, et aucun agent `corpus-deepening-*` n'en a le droit. Il
+   relève de `corpus-editor` ou d'une main humaine. **La liste est maintenant courte et vérifiée
+   sur pièce — cinq sources sur quatre cartes, plus un `excerpt` et douze `consulted` absents**, voir
+   ci-dessous.
+3. ~~**Vérifier les 31 candidats.**~~ **Sans objet** : la liste bruitée est remplacée par
+   `npm run corpus:factcheck -- --sweep`, qui ne rend plus 31 candidats à trier mais 17
+   déclarations non corroborées dont 9 au-dessus de `metadata-only`, toutes vérifiées.
+
+## La règle proposée ne marchait pas, et la mesure le dit — 22 septembre 2026
+
+**Dégrader au plus prudent des deux niveaux en cas de divergence aurait dégradé les bonnes cartes
+et laissé passer toutes les mauvaises.** Le constat vient du balayage versé au dépôt ce jour,
+`npm run corpus:factcheck -- --sweep`, qui applique la comparaison sur les 136 cartes :
+
+| déclarations d'accès des enregistrements validés | |
+|---|---:|
+| corroborées par le dossier | **264** |
+| **contredites** par le dossier | **0** |
+| le dossier nomme la source sans se prononcer | 9 |
+| le dossier ne nomme pas la source | 8 |
+| niveau hors vocabulaire dans la fiche | 1 |
+| carte sans dossier, ou dossier muet sur l'accès | 52 |
+
+**Zéro contradiction sur 264 corroborations : le cas que la règle devait traiter n'existe pas.**
+Les 34 cartes qui portent deux niveaux pour un même identifiant ne se contredisent pas, elles
+**énumèrent les voies d'accès d'une même œuvre**. `echelles-de-mesure` déclare trois fac-similés
+`full-text` de Stevens 1946 — page de cours à UC Merced, photocopie à UCLA, export JSTOR — **et**
+la version éditeur `metadata-only`, payante, `is_oa = false`. Les quatre déclarations sont vraies.
+Dégrader au plus prudent aurait marqué « non lu » un article dont trois exemplaires ont été lus,
+sur 34 cartes.
+
+**Et les surdéclarations réelles ne sont pas des divergences, ce sont des absences.** Aucun des
+cas établis n'est contredit par un `consulted` : le dossier n'en porte aucun pour la source, ou il
+dit la non-consultation en prose. Une comparaison de champ à champ en trouve donc zéro. La règle
+qui les attrape est l'autre : **un niveau au-dessus de `metadata-only` que rien du dossier ne
+corrobore.** Neuf déclarations, les neuf vérifiées sur pièce.
+
+**Cinq sont de vraies surdéclarations** — les trois connues, et deux que le balayage a trouvées :
+
+| carte | source | déclaré | ce que dit le dossier |
+|---|---|---|---|
+| `deplacement-des-buts` | Selznick 1943 | `full-text` | non ouvert ; connu par des tiers |
+| `deplacement-des-buts` | Warner & Havens 1968 | `full-text` | « métadonnées seulement ; JSTOR fermé » |
+| `rationalite-limitee` | Cozic 2012 | `full-text` | notice HAL, `/document` en 404, « Contenu non consulté » |
+| `critique-de-l-homo-oeconomicus` | Milet 1982 | `full-text` | **absent du dossier** : ni « Milet », ni `bupsy`, ni `12030` |
+| `valeur-comme-fait-psychologique` | Milet 1982 | `full-text` | idem, même source sur l'autre carte |
+
+Les deux dernières sont d'une espèce plus faible que les trois premières, et il faut le dire dans
+cet ordre : pour Selznick, Warner & Havens et Cozic, **le dossier nie la lecture**. Pour Milet, il
+est muet — la seule source dont les deux dossiers déclarent l'accès est le livre de Tarde. La
+lecture a peut-être eu lieu sans être consignée ; ce qui est établi est qu'aucune pièce ne
+l'atteste, et c'est déjà une raison de ne pas estampiller ses appuis « lu ».
+
+**Trois sont des faux positifs, et ils disent pourquoi le balayage ne peut pas décider seul.** Les
+trois dossiers établissent l'accès — ailleurs que dans un champ `consulted`.
+
+- `zones-incertitude` / Kuty 1997 : le dossier le nomme « LA SOURCE LA PLUS RICHE DU DOSSIER, et
+  de loin », 92 pages déposées sur ORBI, et ne lui écrit jamais de `consulted` — l'entrée porte
+  `level: "B"` et `role: "synthesis"`. Le `full-text` est correct.
+- `ordre-a-partir-du-bruit` / von Foerster 1960 : le dossier le déclare `full-text` par une URL
+  d'Internet Archive quand la fiche l'identifie par `LCCN 60-12574`. Même œuvre, aucun identifiant
+  commun : rien à rapprocher.
+- `mesure-devenue-cible` / Hoskin 1996 : **celui-là a d'abord été compté à tort comme une
+  surdéclaration, et le détromper valait la peine**, parce que l'erreur est instructive. Le dossier
+  porte trois marqueurs de non-consultation sur l'ISBN du volume — « Le volume n'est pas sur
+  Internet Archive, ni en consultation ni en prêt », « Sert à fixer l'ISBN, pas à ouvrir le
+  texte » — et un lecteur pressé s'arrête là. Mais ces phrases portent sur **les voies essayées
+  et échouées**, Internet Archive et Open Library ; le fichier `attribution-hoskin.json` consacre
+  son champ `preuve` à celle qui a réussi : « Hoskin a été ouvert, mais partiellement : par la
+  recherche interne au volume de Google Books », extraits OCR verbatim paginés, p. 266 et note 1
+  de la p. 280, avec ses réserves écrites. **Le `partial` de la fiche est exact.** Un marqueur de
+  non-consultation à proximité d'un identifiant ne dit pas ce qu'il refuse : c'est le défaut même
+  du balayage jetable du 21 septembre, et il attrape aussi celui qui le remplace si on lit sa
+  sortie sans ouvrir le dossier.
+
+**Le neuvième n'est ni l'un ni l'autre** : `zones-incertitude` / Crozier 1966 est déclaré `partial`
+par la fiche et `excerpt` par le dossier — un niveau que le schéma interdit.
+
+**C'est pourquoi le pack qualifie au lieu de dégrader.** Il ne réécrit aucun niveau ; il inscrit
+sur chaque appui tiré de l'enregistrement validé ce que le dossier en dit — `corrobore`,
+`contredit`, `non-declare`, `absent`, `hors-vocabulaire`, `dossier-hors-vocabulaire`,
+`dossier-absent` — et `FACTCHECK_PROTOCOL.md` §3bis donne au vérificateur la règle : **un niveau
+que le dossier ne corrobore pas n'établit pas le contenu d'une œuvre**, il vaut comme notice. Le
+défaut cesse d'ouvrir sans qu'aucune carte devienne impubliable, et sans qu'un silence de dossier
+soit pris pour un démenti.
+
+Dix-sept tests tiennent le module `scripts/corpus/lib/factcheck-access.mjs`, dont un fixe
+exprès le cas des voies d'accès multiples : c'est celui qu'une reprise serait tentée de « corriger »
+en redégradant au plus prudent.
+
+## Le vocabulaire de `consulted` n'était contrôlé nulle part — trouvé le 22 septembre 2026
+
+Défaut voisin, trouvé en instrumentant le précédent, et de la même famille : **un niveau que
+personne ne vérifie traverse le pack comme un tampon d'accès dont aucune règle ne parle.**
+
+- **`excerpt`, sept fois, dont une dans une fiche validée.** Le schéma n'admet que `full-text`,
+  `partial` et `metadata-only` ; `validate.mjs` contrôlait `kind` contre sa liste et ne regardait
+  pas `consulted`. `organisation-genree` déclare Acker 2006 en `excerpt`, six dossiers font de
+  même, et la carte a passé le gate factuel du 20 septembre dans cet état.
+- **Douze sources sans `consulted` du tout**, sur `garbage-can-model`,
+  `inertie-structurelle-et-selection`, `isomorphisme-institutionnel`, `organisation-genree` et
+  `regulation-controle-autonome`. Le schéma le permet — le champ n'est pas requis — mais leurs
+  appuis entraient dans le pack estampillés `n/a`, valeur sur laquelle le vérificateur n'avait
+  aucune règle : ni celle du `metadata-only`, ni celle du texte lu. **Cinq de ces cartes sont dans
+  les dix-huit auditées, quatre en `FACTCHECK_PASS` / `ACCEPT`.**
+
+`corpus:validate` les signale désormais en avertissement — 114 au lieu de 100, zéro erreur — et le
+vérificateur traite un niveau de source hors vocabulaire comme une notice. **L'avertissement
+et non l'erreur est délibéré** : réparer un `consulted` dans une fiche validée est un geste de la
+couche carte, et bloquer `corpus:build` sur treize champs qu'aucun agent de cette couche n'a le
+droit de corriger arrêterait la publication sans réparer quoi que ce soit.
+
+## Aucun des dix-huit `FACTCHECK_PASS` n'est invalidé au fond — vérifié, pas supposé
+
+Un changement d'instrument rend en principe stale tout `PASS` obtenu avec l'ancien. La question a
+donc été posée sur pièce plutôt que par principe : **pour chacune des treize cartes auditées dont
+une source est concernée, quel claim cite réellement un appui que le nouveau signal déclasse ?**
+Le test recroise les `support_ids` de chaque `claim-map.json` avec le pack régénéré.
+
+**Un seul appui de source non corroborée est cité dans tout l'ensemble** : `organisation-genree`,
+`$.sources[1].label`, l'Acker 2006 déclaré `excerpt`, cité par le claim C047. Et C047 affirme
+« Seize ans plus tard, elle reprend ce programme dans “Inequality Regimes…” » — **un titre et une
+date, exactement ce qu'une notice soutient.** Le `PASS` tient.
+
+**Le reste des appuis que le test a d'abord signalés n'était pas un défaut mais une erreur de
+catégorie de ma mesure**, et elle valait d'être corrigée avant d'être écrite dans une règle :
+`$.quotation.text`, `$.summary`, `$.notes[*]`, `$.review.notes[*]` arrivent avec `access: "n/a"`
+parce qu'ils ne descendent d'aucune source, pas parce que leur accès serait douteux. Une première
+rédaction du protocole étendait la règle à « tout accès hors vocabulaire, `n/a` compris » : elle
+aurait fait du verbatim relevé par le lecteur primaire une simple notice, sur les 136 cartes. **La
+règle ne porte que sur les appuis qui descendent d'une déclaration de source.**
 
 ## Et un piège de mesure, découvert le même jour par un reviewer
 
@@ -1293,6 +1427,42 @@ la preuve ont donc été écrits ensemble, **et ils se contredisaient déjà en 
 3. **Aucun des correctifs proposés plus haut ne devient inutile.** Un défaut d'origine se propage
    exactement comme un défaut de dérive une fois qu'il est dans le fichier, et c'est le pack qui doit
    cesser de le croire.
+
+---
+
+# I. L'auditeur prenait une absence du dossier pour une preuve — fermé le 22 septembre 2026
+
+**C'est l'erreur symétrique de celle que le correctif du 20 septembre avait corrigée**, et elle
+est arrivée par lui. Avant ce correctif, l'auditeur notait l'axe A sur le seul enregistrement
+validé, donc sur un résumé qui peut parfaitement ne pas contredire une affirmation fausse : on lui
+a donné le dossier. Il pouvait dès lors faire l'inverse — **prendre une absence du dossier pour
+une preuve, contre une réserve écrite de la fiche.**
+
+**Le cas, sur pièce.** L'audit de `mesure-devenue-cible` prescrivait trois fois de trancher sa
+section 3 dans le sens « la phrase est de Strathern et ne se trouve nulle part chez Hoskin », en
+s'appuyant sur la recherche d'absence d'`attribution-hoskin.json` : neuf variantes d'amorce, zéro
+occurrence. Or `notes[1]` de la fiche porte exactement cet avertissement, sous un titre qui ne
+laisse aucune place au doute — « Avertissement de méthode, et c'est ce qui a failli faire publier
+ici une attribution fausse » :
+
+> La formulation y était pourtant, dès la première ligne du chapitre, p. 265 : « every measure
+> which becomes a target becomes a bad measure », qu'aucune des chaînes cherchées ne recoupe. Une
+> absence de correspondance littérale n'est pas une absence de formulation équivalente.
+
+**Suivre la trajectoire cible aurait republié le contresens que la chaîne avait déjà attrapé une
+fois.** C'est le réécrivain qui l'a refusée, et qui a produit le delta de la section par l'autre
+bout, la mésattribution à Goodhart, solidement établie. **Le bon résultat, obtenu au mauvais
+endroit** : un réécrivain qui corrige son audit n'est pas un dispositif, c'est une chance.
+
+`AUDIT_PROTOCOL.md` §5 et l'agent auditeur ordonnent maintenant les deux couches : le dossier fait
+foi sur ce qui a été ouvert, une réserve écrite de la fiche l'emporte sur une recherche d'absence,
+et une contradiction entre les deux se signale au lieu de se trancher.
+
+**Ce que ce défaut laisse à surveiller.** Les dix-sept audits v3 antérieurs ont été rendus sans
+cette règle, et deux d'entre eux — ceux du 19 septembre et des lots suivants — ont travaillé avec
+le dossier en main. Rien ne dit qu'aucun n'a prescrit une conclusion tirée d'une absence ; personne
+ne l'a cherché. **La vérification n'a pas été faite et n'est pas chiffrée ici** : ce serait une
+relecture des dix-sept rapports, et le prochain lot qui en reprend un le verra sur pièce.
 
 ---
 

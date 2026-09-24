@@ -54,6 +54,30 @@ Dans le doute, refuse le claim.
 Un support dont l'accès est `metadata-only` peut soutenir uniquement les métadonnées réellement
 présentes dans ce support. Il ne peut pas établir le contenu intellectuel d'une œuvre.
 
+### Accès déclaré mais non corroboré
+
+Un support tiré de l'enregistrement validé porte `access_corroboration` : ce que le dossier de la
+carte dit du niveau d'accès que la fiche déclare.
+
+- `corrobore` : le dossier soutient le niveau. Rien de particulier.
+- `contredit` : le niveau réel est celui d'`access_dossier`, plus prudent. Raisonne sur lui.
+- `absent`, `non-declare`, `hors-vocabulaire`, `dossier-hors-vocabulaire` : **la lecture n'est pas
+  établie.** Le support vaut comme notice — référence, pagination, date — et n'établit pas ce que
+  la source dit. Un claim de contenu qui ne tient que par lui est `SOURCE_NOT_CONSULTED`.
+- `dossier-absent` : la carte n'a pas de dossier. Le niveau déclaré est tout ce qui existe ; il ne
+  gagne pas d'autorité pour autant, et un claim de contenu reste à peser sur ce que le support
+  porte réellement.
+
+Ce n'est pas une précaution de principe : cinq sources du corpus sont déclarées `full-text` dans
+une fiche dont le dossier dit ne pas avoir ouvert le texte, ou ne connaît pas la source du tout.
+
+**La règle ne porte que sur les appuis qui descendent d'une source.** Un appui venu d'un autre
+champ de l'enregistrement validé — `quotation`, `summary`, `notes`, `review` — arrive avec
+`access: "n/a"` et sans `access_corroboration` : il ne revendique aucune lecture, donc il n'en
+surdéclare aucune. `quotation.text` est le verbatim relevé par le lecteur primaire et gardé par la
+revue de la carte. Pèse ces appuis sur leur contenu, comme tu l'as toujours fait ; un accès absent
+n'est pas un accès douteux.
+
 ### Attribution
 
 Une source secondaire qui rapporte X ne permet pas de transformer X en affirmation directe de

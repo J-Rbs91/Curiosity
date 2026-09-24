@@ -12,6 +12,8 @@
  * n'affichait.
  */
 
+import { NIVEAUX_ACCES } from "./factcheck-access.mjs";
+
 const ID_PATTERN = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 const STATUSES = ["CANDIDATE", "IN_REVIEW", "VALIDATED", "REJECTED"];
 const SOURCE_KINDS = [
@@ -170,6 +172,24 @@ function checkSources(record, errors, warnings) {
       errors.push(`${at}.kind « ${s?.kind} » inconnu — le lecteur doit savoir s'il lit l'auteur ou un commentateur`);
     if (!isFilled(s?.doi_isbn) && !isFilled(s?.url))
       errors.push(`${at} : ni DOI/ISBN ni URL — une référence introuvable n'existe pas`);
+
+    /*
+     * Le niveau d'accès était le seul champ à vocabulaire fermé que rien ne contrôlait. Le schéma
+     * n'admet que trois valeurs ; le corpus en portait sept écrites `excerpt`, dont une dans une
+     * fiche validée qui avait passé le gate factuel. Un niveau hors vocabulaire n'est pas une
+     * nuance de plus : il traverse le pack de preuve comme un tampon d'accès que le vérificateur
+     * ne sait pas lire, et aucune règle ne s'y applique — ni celle du `metadata-only`, ni celle du
+     * texte lu. Le pack le refuse désormais comme corroboration ; le signaler ici permet de le
+     * réparer à la source, ce qu'aucun agent de la couche approfondissement n'a le droit de faire.
+     */
+    if (s?.consulted !== undefined && !NIVEAUX_ACCES.includes(s.consulted))
+      warnings.push(
+        `${at}.consulted « ${s.consulted} » hors vocabulaire — le schéma n'admet que ${NIVEAUX_ACCES.join(", ")}, et le pack de preuve ne corrobore aucun autre niveau`
+      );
+    if (s?.consulted === undefined)
+      warnings.push(
+        `${at}.consulted absent — la carte ne dit pas ce qui a été ouvert, et le pack de preuve ne peut estampiller aucun appui`
+      );
 
     /*
      * Le pointeur et la note de dossier ne sont pas le même texte : voir CARD_LIMITS.

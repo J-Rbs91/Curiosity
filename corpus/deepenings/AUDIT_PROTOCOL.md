@@ -180,6 +180,17 @@ L’auditeur doit d’abord produire :
 Le diagnostic distingue toujours **manque de pédagogie** et **manque de matière sourcée**.
 Une réécriture n’a pas le droit d’inventer le second pour corriger le premier.
 
+**Une trajectoire cible ne prescrit jamais une conclusion documentaire tirée d’une absence.**
+Un dossier qui a cherché neuf variantes d’une formule sans en trouver aucune établit que ces
+neuf chaînes sont absentes, non que la proposition l’est. Si l’enregistrement validé porte une
+réserve explicite sur ce point — dans `notes`, `review` ou `attribution_note` —, elle l’emporte
+sur la recherche d’absence, et l’audit signale la contradiction plutôt que de la trancher.
+`mesure-devenue-cible` a fourni le cas : l’audit du 22 septembre 2026 prescrivait trois fois de
+conclure que l’aphorisme ne se trouve nulle part chez Hoskin, quand `notes[1]` de la fiche dit,
+sous le titre « et c’est ce qui a failli faire publier ici une attribution fausse », que la
+formulation est à la première ligne du chapitre. Le réécrivain a refusé la prescription ; **c’est
+à l’audit de ne pas l’écrire.**
+
 La sortie détaillée est écrite dans l’artefact de travail de la carte ; l’orchestrateur ne doit
 pas transporter ce texte intégral dans son propre contexte.
 
