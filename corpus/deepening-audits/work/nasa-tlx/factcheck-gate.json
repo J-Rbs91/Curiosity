@@ -1,22 +1,11 @@
 {
   "protocol_version": 1,
   "concept_id": "nasa-tlx",
-  "candidate_sha256": "3de4b4865225c9a2110c58681da9be962fe46d43cc6e85c6f9e44bf4d946cef8",
-  "verdict": "FACTCHECK_FAIL",
-  "claims": 72,
-  "supported": 70,
-  "failed": 2,
+  "candidate_sha256": "4c8cd0b1806b831e62a68dde93f921a4eab025bc47087977fabb9bc7f4cfafd4",
+  "verdict": "FACTCHECK_PASS",
+  "claims": 79,
+  "supported": 79,
+  "failed": 0,
   "structural_errors": [],
-  "failures": [
-    {
-      "claim_id": "C017",
-      "verdict": "TOO_STRONG",
-      "reason": "Glissement possibilité -> nécessité. Les supports établissent que la performance perçue est une des six notes pondérées (SUP-461e54b6e0a71387, SUP-c56327e295b25e45), mais la procédure de comparaison par paires autorise un poids nul pour cette échelle : le score peut alors rester identique. Le futur catégorique « ne pèseront donc pas pareil » excède ce que les supports garantissent."
-    },
-    {
-      "claim_id": "C068",
-      "verdict": "TOO_STRONG",
-      "reason": "Les supports autorisent « outil de travail mis en circulation » (fonction « nuts and bolts », livret diffusé, deux tiers de formulaires : SUP-1a61b3d82b994000, SUP-4f77156b7df1e69e), mais aucun n'établit la dénégation catégorique « pas une publication » : le dossier décrit au contraire un document titré, paginé, édité par NASA Ames et catalogué. La négation excède la modestie que le document s'attribue."
-    }
-  ]
+  "failures": []
 }
