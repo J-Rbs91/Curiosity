@@ -1,32 +1,22 @@
 {
   "protocol_version": 1,
   "concept_id": "nasa-tlx",
-  "candidate_sha256": "e66fbe59f834b1423196d6851333dd7b8766a24192ab188824096885d7ec4406",
+  "candidate_sha256": "3de4b4865225c9a2110c58681da9be962fe46d43cc6e85c6f9e44bf4d946cef8",
   "verdict": "FACTCHECK_FAIL",
-  "claims": 79,
-  "supported": 75,
-  "failed": 4,
+  "claims": 72,
+  "supported": 70,
+  "failed": 2,
   "structural_errors": [],
   "failures": [
     {
-      "claim_id": "C002",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support résolu. L'assertion « aucun appareil ne le relève du dehors » est présentée comme un fait et n'est adossée à aucune preuve du bundle."
-    },
-    {
-      "claim_id": "C013",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support résolu ; le bundle n'établit nulle part qu'un observateur pourrait estimer ces exigences sans interroger la personne."
-    },
-    {
-      "claim_id": "C033",
+      "claim_id": "C017",
       "verdict": "TOO_STRONG",
-      "reason": "Le seul support est la formule du score. Elle autorise que les scores puissent différer, non qu'ils diffèrent « dès que » les notes ne sont pas toutes égales : avec des notes identiques non uniformes, deux jeux de poids différents peuvent donner la même moyenne pondérée. Possibilité transformée en nécessité universelle."
+      "reason": "Glissement possibilité -> nécessité. Les supports établissent que la performance perçue est une des six notes pondérées (SUP-461e54b6e0a71387, SUP-c56327e295b25e45), mais la procédure de comparaison par paires autorise un poids nul pour cette échelle : le score peut alors rester identique. Le futur catégorique « ne pèseront donc pas pareil » excède ce que les supports garantissent."
     },
     {
-      "claim_id": "C074",
+      "claim_id": "C068",
       "verdict": "TOO_STRONG",
-      "reason": "Les supports disent « pour les deux tiers un paquet de formulaires » et localisent les annexes B à E ; ils laissent hors de ce compte les sections 3 à 5 et la bibliographie (renvois bibliographiques signalés par le même support). « Tout le reste est un jeu de formulaires » élargit donc la portée au-delà de ce qui est établi."
+      "reason": "Les supports autorisent « outil de travail mis en circulation » (fonction « nuts and bolts », livret diffusé, deux tiers de formulaires : SUP-1a61b3d82b994000, SUP-4f77156b7df1e69e), mais aucun n'établit la dénégation catégorique « pas une publication » : le dossier décrit au contraire un document titré, paginé, édité par NASA Ames et catalogué. La négation excède la modestie que le document s'attribue."
     }
   ]
 }
