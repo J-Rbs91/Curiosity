@@ -1,0 +1,22 @@
+{
+  "protocol_version": 1,
+  "concept_id": "heuristiques-de-jugement",
+  "candidate_sha256": "0ed8634d7af3390f8b3ebea581ad58627370dd06071d79e2b406bebe77a65b62",
+  "verdict": "FACTCHECK_FAIL",
+  "claims": 77,
+  "supported": 75,
+  "failed": 2,
+  "structural_errors": [],
+  "failures": [
+    {
+      "claim_id": "C007",
+      "verdict": "TOO_STRONG",
+      "reason": "Le support dit « the complex tasks ... to simpler judgmental operations » ; le claim, presente comme ce que dit la these (« elle dit que »), transforme « tache complexe » en « tache hors d'atteinte » et « operation plus simple » en « operation que l'on sait faire ». C'est une escalade de degre sur un enonce attribue aux auteurs : les supports n'etablissent nulle part que la tache initiale serait inaccessible."
+    },
+    {
+      "claim_id": "C066",
+      "verdict": "TOO_STRONG",
+      "reason": "Le nombre de seize notes est etabli (SUP-465a85c55ec05830, SUP-66d5a53a3634ec31), et deux notes annoncant des articles a paraitre le sont aussi (notes 1 et 6 « in press », SUP-be5a9d7602201304, SUP-17de951479d58996). Mais les supports ne documentent que quatre notes (1, 2, 5, 6) : rien n'etablit que les seize renvoient a des resultats deja parus. Le claim generalise a l'ensemble des notes une propriete attestee pour quatre d'entre elles."
+    }
+  ]
+}
