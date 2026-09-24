@@ -1964,13 +1964,28 @@ dispositif tient parce qu'il est redondant, pas parce qu'un de ses maillons sera
 Trois blocages ont duré et durent encore. Ils ne sont pas des accidents et une reprise n'a pas à
 les redécouvrir.
 
-- **Le serveur MCP `documentary` est en échec de connexion depuis le 29 août**, dix nuits
-  consécutives. Il a clignoté **trois fois**, le 1er, le 7 et le 8 septembre, répondant une fois
-  puis disparaissant, **et les trois fois après une clôture, jamais pendant un lot**. Le troisième
-  cas est décrit en tête du passage 15 : il a confirmé une référence publiée la nuit même. **La règle qui en sort : on l'essaie au lever, en un appel, et le lot se
-  dimensionne sur ce que cet appel rend**, jamais sur ce qui est écrit ici. Sans lui, une nuit
-  travaille par `WebSearch`, `WebFetch`, `curl`, l'API Crossref directe, Unpaywall, OpenLibrary,
-  la BnF et le SRU de K10plus, qui répondent tous.
+- ~~**Le serveur MCP `documentary` est en échec de connexion depuis le 29 août**, dix nuits
+  consécutives.~~ **Résolu le 24 septembre 2026, et ce blocage n'en était pas un.** Le serveur
+  n'avait rien. Le conteneur d'une session distante est recréé à neuf, `node_modules` est ignoré
+  par git, et rien n'installait les dépendances : le serveur mourait en important
+  `@modelcontextprotocol/sdk`, et un serveur stdio qui sort avant d'écrire est indiscernable,
+  côté client, d'un serveur qui ferme — d'où `CONNECTION_CLOSED`. Après `npm ci`, il répond à
+  `initialize` du premier coup. La parade est un hook `SessionStart` **synchrone**,
+  `.claude/hooks/session-start.sh` ; en asynchrone l'installation courrait contre le lancement du
+  serveur, qui est la course à supprimer. **Elle ne vaut qu'une fois fusionnée sur la branche par
+  défaut, et elle n'agit pas sur la session qui l'écrit** : le harnais se connecte avant. Les
+  clignotements des 1er, 7 et 8 septembre, tous après une clôture, deviennent lisibles ainsi —
+  une clôture lance `npm test` ou `npm run build`, qui installent l'arbre. Explication cohérente,
+  **pas une mesure**. Cause et mesures : [`scripts/mcp/README.md`](../scripts/mcp/README.md).
+
+  **Et la leçon de méthode, qui vaut plus que le correctif.** La règle « on l'essaie au lever, en
+  un appel, et le lot se dimensionne sur ce que cet appel rend » a tenu dix nuits et elle était
+  bien intentionnée : elle interdisait de croire ce fichier sur parole. Mais elle mesurait un
+  symptôme et s'arrêtait là. **Aucune des dix nuits n'a lancé le serveur à la main pour lire son
+  erreur**, qui nommait la cause en une ligne et se trouvait à un `node scripts/mcp/documentary-server.mjs`
+  de distance. Le titre de cette section — « à ne pas rediagnostiquer » — a protégé un mauvais
+  diagnostic en le faisant passer pour un acquis. Ce qu'il fallait écrire est plus étroit :
+  *constaté, cause inconnue, non instruit.*
 - **`Task` n'est pas exposé à `corpus-orchestrator`**, six nuits consécutives, constaté par appel
   réel au passage 12. **La parade est établie et c'est la meilleure des trois essayées** : la
   session orchestre elle-même et lance les sous-agents `corpus-*` un par un par l'outil `Agent` du
