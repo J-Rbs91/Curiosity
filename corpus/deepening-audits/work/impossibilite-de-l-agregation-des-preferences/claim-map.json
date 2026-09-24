@@ -1,6 +1,6 @@
 {
   "concept_id": "impossibilite-de-l-agregation-des-preferences",
-  "candidate_sha256": "746c5e29f47fbfe18d88412f60e3ee650a9b864a9e44cdffad0fbd03720a0129",
+  "candidate_sha256": "443544184842abbba86ec1dec391dc6b1551df2d3928905818c1d9ba4092bb5f",
   "paragraphs": [
     {
       "locator": "lead[0]",
@@ -71,10 +71,10 @@
     {
       "claim_id": "C001",
       "locator": "lead[0]",
-      "start": 79,
-      "end": 189,
-      "claim_text": "Chacun, séparément, y arrive sans peine : on sait dire ce qu’on préfère, et on sait le dire de manière suivie.",
-      "normalized_claim": "Une préférence individuelle est complète (on peut toujours dire ce qu'on préfère) et transitive/suivie.",
+      "start": 130,
+      "end": 235,
+      "claim_text": "qu’il puisse comparer deux projets quelconques, et qu’il ne se contredise pas d’une comparaison à l’autre",
+      "normalized_claim": "Les seules hypothèses sur la préférence individuelle sont la connexité (comparer deux options quelconques) et la transitivité (non-contradiction), les deux axiomes de l’ordre faible chez Arrow.",
       "support_ids": [
         "SUP-9e5fa0842208cd3d"
       ]
@@ -82,10 +82,10 @@
     {
       "claim_id": "C002",
       "locator": "lead[0]",
-      "start": 362,
-      "end": 498,
-      "claim_text": "Si le groupe place le premier projet avant le deuxième, et le deuxième avant le troisième, il doit placer le premier avant le troisième.",
-      "normalized_claim": "Le classement du groupe doit être transitif.",
+      "start": 237,
+      "end": 319,
+      "claim_text": "La difficulté commence quand il faut en tirer un seul classement, celui du groupe.",
+      "normalized_claim": "Le problème traité est de former, à partir des schémas de préférences individuels, un classement unique pour le groupe.",
       "support_ids": [
         "SUP-9e5fa0842208cd3d"
       ]
@@ -93,27 +93,27 @@
     {
       "claim_id": "C003",
       "locator": "lead[0]",
-      "start": 499,
-      "end": 606,
-      "claim_text": "Sinon le résultat dépend de l’ordre dans lequel on a posé les questions, et non de ce que les gens veulent.",
-      "normalized_claim": "Un classement collectif intransitif rend le résultat dépendant de l'ordre des questions posées.",
-      "support_ids": []
+      "start": 409,
+      "end": 545,
+      "claim_text": "Si le groupe place le premier projet avant le deuxième, et le deuxième avant le troisième, il doit placer le premier avant le troisième.",
+      "normalized_claim": "La sortie collective doit être transitive, comme l’exige la relation d’ordre faible demandée à la fonction de bien-être social.",
+      "support_ids": [
+        "SUP-9e5fa0842208cd3d"
+      ]
     },
     {
       "claim_id": "C004",
       "locator": "lead[1]",
       "start": 0,
-      "end": 113,
-      "claim_text": "En 1948, dans un rapport de dix-neuf pages écrit pour la RAND Corporation, Kenneth J. Arrow retourne la question.",
-      "normalized_claim": "Le texte est un rapport de 19 pages de Kenneth J. Arrow pour la RAND Corporation, daté de 1948.",
+      "end": 91,
+      "claim_text": "En 1948, dans un rapport de dix-neuf pages écrit pour la RAND Corporation, Kenneth J. Arrow",
+      "normalized_claim": "Données bibliographiques : rapport RAND de 1948, dix-neuf pages, de Kenneth J. Arrow.",
       "support_ids": [
         "SUP-544550dd9b096905",
         "SUP-e06ebcb6cd185701",
-        "SUP-92917c1c4843b676",
         "SUP-1cc381c39104d016",
-        "SUP-adb3b0d402f4cd2a",
-        "SUP-674d1cee6f89bea7",
-        "SUP-c1daf649941c6ce9"
+        "SUP-c1daf649941c6ce9",
+        "SUP-adb3b0d402f4cd2a"
       ]
     },
     {
@@ -122,48 +122,73 @@
       "start": 114,
       "end": 305,
       "claim_text": "Plutôt que d’examiner une méthode de vote après l’autre, il écrit d’abord ce qu’on exige d’une règle, quelle qu’elle soit, puis il demande si une règle peut satisfaire ces exigences ensemble.",
-      "normalized_claim": "La démarche du rapport est axiomatique : conditions générales posées d'abord, puis question de leur compatibilité.",
+      "normalized_claim": "La démarche est axiomatique : énoncer des conditions sur toute règle d’agrégation, puis tester leur compatibilité, et non comparer des méthodes de vote une par une.",
       "support_ids": [
-        "SUP-9e5fa0842208cd3d",
-        "SUP-b5bc0c0a929eb9ab"
+        "SUP-9e5fa0842208cd3d"
       ]
     },
     {
       "claim_id": "C006",
       "locator": "lead[1]",
       "start": 306,
-      "end": 513,
-      "claim_text": "La réponse est non, et elle est bornée de deux côtés : elle ne vaut que sous les conditions qu’il énonce, et elle laisse debout deux règles, dont il dit lui-même qu’elles violent les principes démocratiques.",
-      "normalized_claim": "Le résultat est négatif, conditionnel aux restrictions énoncées, et excepte deux méthodes triviales qu'Arrow dit contraires aux principes démocratiques.",
+      "end": 324,
+      "claim_text": "La réponse est non",
+      "normalized_claim": "Les conditions posées sont incompatibles entre elles.",
       "support_ids": [
-        "SUP-572e49b3cf5dc878",
-        "SUP-6e59e8efa6b1ddf5",
-        "SUP-6baf44ea6c25240f",
-        "SUP-d5df6beb1a1807f9",
-        "SUP-046722b07190580e",
-        "SUP-a745250df6ece197"
+        "SUP-9e5fa0842208cd3d",
+        "SUP-b5bc0c0a929eb9ab",
+        "SUP-26bf1cb43f379936"
       ]
     },
     {
       "claim_id": "C007",
-      "locator": "sections[0].paragraphs[0]",
-      "start": 0,
-      "end": 105,
-      "claim_text": "Ce texte ne commence pas par des bulletins de vote, mais par un échec local dans l’économie du bien-être.",
-      "normalized_claim": "Le rapport s'ouvre sur l'économie du bien-être et non sur le vote.",
+      "locator": "lead[1]",
+      "start": 361,
+      "end": 410,
+      "claim_text": "elle ne vaut que sous les conditions qu’il énonce",
+      "normalized_claim": "Le résultat est conditionnel : « Under certain very reasonable restrictions ».",
       "support_ids": [
-        "SUP-0c558d91e2562eea",
-        "SUP-376d805d9c4cd5c6",
-        "SUP-fb33b20a1ceabdac"
+        "SUP-6e59e8efa6b1ddf5",
+        "SUP-572e49b3cf5dc878",
+        "SUP-046722b07190580e",
+        "SUP-6baf44ea6c25240f"
       ]
     },
     {
       "claim_id": "C008",
+      "locator": "lead[1]",
+      "start": 415,
+      "end": 512,
+      "claim_text": "elle laisse debout deux règles, dont il dit lui-même qu’elles violent les principes démocratiques",
+      "normalized_claim": "Deux méthodes triviales, la conventionnelle et la dictatoriale, échappent à l’impossibilité, et Arrow écrit qu’elles violent les principes démocratiques.",
+      "support_ids": [
+        "SUP-6e59e8efa6b1ddf5",
+        "SUP-572e49b3cf5dc878",
+        "SUP-046722b07190580e",
+        "SUP-2e1844aa2b83764e",
+        "SUP-9e5fa0842208cd3d"
+      ]
+    },
+    {
+      "claim_id": "C009",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 0,
+      "end": 105,
+      "claim_text": "Ce texte ne commence pas par des bulletins de vote, mais par un échec local dans l’économie du bien-être.",
+      "normalized_claim": "Les premières pages du rapport relèvent de l’économie du bien-être, non du vote.",
+      "support_ids": [
+        "SUP-0c558d91e2562eea",
+        "SUP-376d805d9c4cd5c6",
+        "SUP-f825d2940a198163"
+      ]
+    },
+    {
+      "claim_id": "C010",
       "locator": "sections[0].paragraphs[0]",
       "start": 106,
       "end": 293,
       "claim_text": "Page 3, Arrow s’arrête sur le principe de compensation, dont T. de Scitovsky avait relevé l’incohérence, et conclut : ce principe ne fournit pas un ordre véritable des décisions sociales.",
-      "normalized_claim": "Page 3, Arrow attribue à T. de Scitovsky l'incohérence du principe de compensation et conclut que ce principe ne fournit pas un véritable ordre des décisions sociales.",
+      "normalized_claim": "Page 3, l’incohérence du principe de compensation est attribuée à T. de Scitovsky et Arrow conclut que ce principe ne fournit pas un ordre véritable des décisions sociales.",
       "support_ids": [
         "SUP-1050a21dd9cf6a6a",
         "SUP-f825d2940a198163",
@@ -172,23 +197,24 @@
       ]
     },
     {
-      "claim_id": "C009",
+      "claim_id": "C011",
       "locator": "sections[0].paragraphs[0]",
       "start": 294,
       "end": 386,
       "claim_text": "Ce qui lui manque est exactement ce qu’on attend d’un classement de groupe qui tient debout.",
-      "normalized_claim": "Ce qui manque au principe de compensation (un ordre véritable) est ce qu'exige un classement collectif cohérent.",
+      "normalized_claim": "Ce qui manque au principe de compensation — un ordre véritable — est ce qui est exigé d’une fonction de bien-être social (ordre faible).",
       "support_ids": [
-        "SUP-9e5fa0842208cd3d"
+        "SUP-9e5fa0842208cd3d",
+        "SUP-1050a21dd9cf6a6a"
       ]
     },
     {
-      "claim_id": "C010",
+      "claim_id": "C012",
       "locator": "sections[0].paragraphs[0]",
       "start": 387,
       "end": 507,
       "claim_text": "La phrase suivante donne le programme : « It is the purpose of this note to show that this phenomenon is very general. »",
-      "normalized_claim": "La phrase immédiatement suivante du rapport est ce verbatim.",
+      "normalized_claim": "La phrase qui suit immédiatement, page 3, est verbatim « It is the purpose of this note to show that this phenomenon is very general. »",
       "support_ids": [
         "SUP-1050a21dd9cf6a6a",
         "SUP-0c558d91e2562eea",
@@ -196,50 +222,26 @@
       ]
     },
     {
-      "claim_id": "C011",
+      "claim_id": "C013",
       "locator": "sections[0].paragraphs[0]",
       "start": 508,
       "end": 615,
       "claim_text": "L’impossibilité arrive donc comme la généralisation d’un échec déjà connu, non comme un paradoxe des urnes.",
-      "normalized_claim": "L'apport propre du rapport est la généralisation d'un échec attribué à autrui, et non un paradoxe électoral.",
+      "normalized_claim": "Le rapport se présente comme la généralisation d’un résultat d’autrui (Scitovsky), et non comme un paradoxe électoral.",
       "support_ids": [
         "SUP-0c558d91e2562eea",
         "SUP-376d805d9c4cd5c6",
-        "SUP-fb33b20a1ceabdac",
-        "SUP-e2e8d63e65aad0cc"
-      ]
-    },
-    {
-      "claim_id": "C012",
-      "locator": "sections[0].paragraphs[1]",
-      "start": 98,
-      "end": 183,
-      "claim_text": "ni Condorcet, ni Borda, ni le paradoxe de vote ne sont nommés dans ces dix-neuf pages",
-      "normalized_claim": "Condorcet, Borda et le paradoxe de vote ne sont pas nommés dans le rapport de 19 pages.",
-      "support_ids": [
-        "SUP-fb33b20a1ceabdac",
-        "SUP-e2e8d63e65aad0cc"
-      ]
-    },
-    {
-      "claim_id": "C013",
-      "locator": "sections[0].paragraphs[1]",
-      "start": 185,
-      "end": 332,
-      "claim_text": "La méthode où chacun range les options y est bien exposée, page 15, mais sous le seul nom de « the rank-order method of voting », sans attribution.",
-      "normalized_claim": "La méthode de vote par rangs est exposée page 15 sous le seul nom de « the rank-order method of voting », sans attribution.",
-      "support_ids": [
-        "SUP-fb33b20a1ceabdac",
-        "SUP-e2e8d63e65aad0cc"
+        "SUP-1050a21dd9cf6a6a",
+        "SUP-fb33b20a1ceabdac"
       ]
     },
     {
       "claim_id": "C014",
       "locator": "sections[0].paragraphs[1]",
-      "start": 333,
-      "end": 432,
-      "claim_text": "La généalogie que la mémoire du domaine a construite après coup n’est pas celle que ce texte écrit.",
-      "normalized_claim": "La filiation que la mémoire du champ prête au texte n'est pas celle qu'il énonce.",
+      "start": 36,
+      "end": 95,
+      "claim_text": "parce qu’un lecteur français l’attend et ne la trouvera pas",
+      "normalized_claim": "L’absence contredit ce que la mémoire du champ prête à ce texte.",
       "support_ids": [
         "SUP-fb33b20a1ceabdac",
         "SUP-e2e8d63e65aad0cc"
@@ -247,82 +249,83 @@
     },
     {
       "claim_id": "C015",
-      "locator": "sections[1].paragraphs[0]",
-      "start": 0,
-      "end": 155,
-      "claim_text": "La règle en question, ce qu’Arrow appelle une fonction de bien-être social, reçoit les préférences de chaque personne et rend un classement pour le groupe.",
-      "normalized_claim": "La fonction de bien-être social prend en entrée les préférences individuelles et rend un ordre social.",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 98,
+      "end": 183,
+      "claim_text": "ni Condorcet, ni Borda, ni le paradoxe de vote ne sont nommés dans ces dix-neuf pages",
+      "normalized_claim": "Ni Condorcet, ni Borda, ni le paradoxe de vote ne figurent dans le rapport de dix-neuf pages.",
       "support_ids": [
-        "SUP-9e5fa0842208cd3d"
+        "SUP-fb33b20a1ceabdac",
+        "SUP-e2e8d63e65aad0cc",
+        "SUP-c1daf649941c6ce9"
       ]
     },
     {
       "claim_id": "C016",
-      "locator": "sections[1].paragraphs[0]",
-      "start": 156,
-      "end": 404,
-      "claim_text": "La première exigence porte sur ce qu’elle rend, et elle est double : quelles que soient les préférences reçues, la sortie doit être un ordre utilisable, c’est-à-dire qu’on puisse y comparer deux options quelconques et qu’aucune boucle ne s’y forme.",
-      "normalized_claim": "La Condition 1 exige, pour tout profil reçu, une sortie connexe et transitive.",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 185,
+      "end": 332,
+      "claim_text": "La méthode où chacun range les options y est bien exposée, page 15, mais sous le seul nom de « the rank-order method of voting », sans attribution.",
+      "normalized_claim": "La méthode de vote par rangs est exposée page 15 sous le seul nom de « rank-order method of voting », sans attribution.",
       "support_ids": [
-        "SUP-9e5fa0842208cd3d"
+        "SUP-fb33b20a1ceabdac",
+        "SUP-e2e8d63e65aad0cc"
       ]
     },
     {
       "claim_id": "C017",
-      "locator": "sections[1].paragraphs[0]",
-      "start": 405,
-      "end": 486,
-      "claim_text": "C’est la Condition 1, page 9 : « For all R1,…,Rn, R is a weak ordering relation »",
-      "normalized_claim": "La Condition 1, page 9, s'énonce ainsi en anglais.",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 333,
+      "end": 432,
+      "claim_text": "La généalogie que la mémoire du domaine a construite après coup n’est pas celle que ce texte écrit.",
+      "normalized_claim": "La filiation Condorcet/Borda est postérieure et absente du texte lui-même.",
       "support_ids": [
-        "SUP-9e5fa0842208cd3d",
-        "SUP-26bf1cb43f379936"
+        "SUP-fb33b20a1ceabdac",
+        "SUP-e2e8d63e65aad0cc",
+        "SUP-857d3a404d6be264"
       ]
     },
     {
       "claim_id": "C018",
       "locator": "sections[1].paragraphs[0]",
-      "start": 488,
-      "end": 564,
-      "claim_text": "un ordre faible, faible parce qu’il tolère l’indifférence entre deux options",
-      "normalized_claim": "L'ordre faible est faible en ce qu'il admet l'indifférence.",
+      "start": 0,
+      "end": 155,
+      "claim_text": "La règle en question, ce qu’Arrow appelle une fonction de bien-être social, reçoit les préférences de chaque personne et rend un classement pour le groupe.",
+      "normalized_claim": "Définition page 9 : la fonction de bien-être social est une fonction des schémas de préférences individuels dont les valeurs sont des ordres faibles.",
       "support_ids": [
         "SUP-9e5fa0842208cd3d"
       ]
     },
     {
       "claim_id": "C019",
-      "locator": "sections[1].paragraphs[1]",
-      "start": 38,
-      "end": 195,
-      "claim_text": "Ce sont des classements, et rien d’autre : aucune mesure de l’intensité des préférences, aucune quantité de satisfaction à comparer d’une personne à l’autre.",
-      "normalized_claim": "L'entrée de la règle est purement ordinale : ni intensité, ni comparaison interpersonnelle d'utilité.",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 156,
+      "end": 404,
+      "claim_text": "La première exigence porte sur ce qu’elle rend, et elle est double : quelles que soient les préférences reçues, la sortie doit être un ordre utilisable, c’est-à-dire qu’on puisse y comparer deux options quelconques et qu’aucune boucle ne s’y forme.",
+      "normalized_claim": "Condition 1 (universalité) : pour tous profils reçus, la sortie est un ordre faible, donc connexe et transitif.",
       "support_ids": [
-        "SUP-0c558d91e2562eea",
-        "SUP-376d805d9c4cd5c6",
         "SUP-9e5fa0842208cd3d"
       ]
     },
     {
       "claim_id": "C020",
-      "locator": "sections[1].paragraphs[1]",
-      "start": 196,
-      "end": 372,
-      "claim_text": "Ce cadrage n’est pas d’Arrow : il l’attribue page 2 à Abram Bergson, qui avait souligné que cette fonction n’a besoin de dépendre que des tableaux de préférences des individus.",
-      "normalized_claim": "Le caractère ordinal de la fonction de bien-être social est attribué page 2 à Abram Bergson.",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 405,
+      "end": 486,
+      "claim_text": "C’est la Condition 1, page 9 : « For all R1,…,Rn, R is a weak ordering relation »",
+      "normalized_claim": "Énoncé verbatim de la Condition 1, page 9.",
       "support_ids": [
-        "SUP-0c558d91e2562eea",
-        "SUP-376d805d9c4cd5c6",
-        "SUP-f825d2940a198163"
+        "SUP-9e5fa0842208cd3d",
+        "SUP-26bf1cb43f379936"
       ]
     },
     {
       "claim_id": "C021",
-      "locator": "sections[1].paragraphs[1]",
-      "start": 373,
-      "end": 504,
-      "claim_text": "Arrow en tire page 11 une conséquence : la mesurabilité de l’utilité individuelle est sans effet sur l’ordre des utilités sociales.",
-      "normalized_claim": "Page 11, Arrow conclut que la mesurabilité de l'utilité individuelle est sans pertinence pour l'ordre des utilités sociales.",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 488,
+      "end": 565,
+      "claim_text": "un ordre faible, faible parce qu’il tolère l’indifférence entre deux options.",
+      "normalized_claim": "L’ordre faible repose sur la relation R « preferred or indifferent », qui admet l’indifférence.",
       "support_ids": [
         "SUP-9e5fa0842208cd3d"
       ]
@@ -330,300 +333,371 @@
     {
       "claim_id": "C022",
       "locator": "sections[1].paragraphs[1]",
-      "start": 505,
-      "end": 593,
-      "claim_text": "L’impossibilité qui vient ne tiendra donc pas à un refus de mesurer le bonheur des gens.",
-      "normalized_claim": "L'impossibilité ne repose pas sur le refus de mesurer l'utilité.",
+      "start": 38,
+      "end": 195,
+      "claim_text": "Ce sont des classements, et rien d’autre : aucune mesure de l’intensité des préférences, aucune quantité de satisfaction à comparer d’une personne à l’autre.",
+      "normalized_claim": "L’entrée de la règle est purement ordinale : seuls des schémas de préférences, sans mesurabilité ni comparaison interpersonnelle d’utilité.",
       "support_ids": [
-        "SUP-9e5fa0842208cd3d"
+        "SUP-9e5fa0842208cd3d",
+        "SUP-0c558d91e2562eea",
+        "SUP-376d805d9c4cd5c6"
       ]
     },
     {
       "claim_id": "C023",
-      "locator": "sections[1].paragraphs[2]",
-      "start": 73,
-      "end": 239,
-      "claim_text": "La Condition 2 demande le minimum : si une option monte dans les préférences de certaines personnes, tout le reste étant inchangé, le groupe ne doit pas la descendre.",
-      "normalized_claim": "Condition 2 (monotonicité) : une option qui monte chez certains individus, ceteris paribus, ne doit pas baisser socialement.",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 196,
+      "end": 372,
+      "claim_text": "Ce cadrage n’est pas d’Arrow : il l’attribue page 2 à Abram Bergson, qui avait souligné que cette fonction n’a besoin de dépendre que des tableaux de préférences des individus.",
+      "normalized_claim": "Page 2, Arrow attribue à A. Bergson la fonction de bien-être social et le fait qu’elle ne dépende que des « preference schedules of individuals ».",
       "support_ids": [
-        "SUP-9e5fa0842208cd3d"
+        "SUP-0c558d91e2562eea",
+        "SUP-376d805d9c4cd5c6",
+        "SUP-f825d2940a198163"
       ]
     },
     {
       "claim_id": "C024",
-      "locator": "sections[1].paragraphs[2]",
-      "start": 240,
-      "end": 514,
-      "claim_text": "La Condition 3, l’indépendance des alternatives non pertinentes, demande un exemple : trois projets à départager, et un quatrième dont personne ne dispose ; ce que le groupe retient parmi les trois ne doit rien devoir à ce quatrième, ni à la façon dont chacun le classerait.",
-      "normalized_claim": "Condition 3 : le choix social dans un sous-ensemble ne dépend pas des alternatives extérieures ni de leur classement individuel.",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 373,
+      "end": 504,
+      "claim_text": "Arrow en tire page 11 une conséquence : la mesurabilité de l’utilité individuelle est sans effet sur l’ordre des utilités sociales.",
+      "normalized_claim": "Page 11 : « measurability of individual utility is irrelevant to the ordering of social utilities ».",
       "support_ids": [
         "SUP-9e5fa0842208cd3d"
       ]
     },
     {
       "claim_id": "C025",
-      "locator": "sections[1].paragraphs[2]",
-      "start": 515,
-      "end": 708,
-      "claim_text": "Arrow la justifie page 10 par ce que la société choisirait si les options se réduisaient à un ensemble donné : « C(S) should be independent of the very existence of alternatives outside of S ».",
-      "normalized_claim": "Page 10, la Condition 3 est motivée par l'interprétation de C(S) comme choix social si l'espace se réduisait à S, avec ce verbatim.",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 505,
+      "end": 593,
+      "claim_text": "L’impossibilité qui vient ne tiendra donc pas à un refus de mesurer le bonheur des gens.",
+      "normalized_claim": "L’impossibilité ne repose pas sur l’incommensurabilité de l’utilité.",
       "support_ids": [
         "SUP-9e5fa0842208cd3d"
       ]
     },
     {
       "claim_id": "C026",
-      "locator": "sections[2].paragraphs[0]",
+      "locator": "sections[1].paragraphs[2]",
       "start": 0,
-      "end": 127,
-      "claim_text": "Une règle peut satisfaire tout cela sans rien valoir, et Arrow définit page 10 deux familles qui y parviennent trop facilement.",
-      "normalized_claim": "Page 10, Arrow définit deux classes de fonctions (Définitions 8 et 9) satisfaisant les Conditions 1-3.",
+      "end": 72,
+      "claim_text": "Deux autres exigences portent sur la façon dont la sortie suit l’entrée.",
+      "normalized_claim": "Les Conditions 2 et 3 portent sur la dépendance de la sortie collective aux préférences reçues.",
       "support_ids": [
-        "SUP-9e5fa0842208cd3d",
-        "SUP-26bf1cb43f379936"
+        "SUP-9e5fa0842208cd3d"
       ]
     },
     {
       "claim_id": "C027",
-      "locator": "sections[2].paragraphs[0]",
-      "start": 128,
-      "end": 354,
-      "claim_text": "Une règle est conventionnelle s’il existe deux options telles que le groupe place toujours la première devant la seconde, ou à égalité, quelles que soient les préférences de chacun : un morceau du classement est fixé d’avance.",
-      "normalized_claim": "Définition de conventionnelle : il existe x, y avec x R y indépendamment de R1..Rn.",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 73,
+      "end": 239,
+      "claim_text": "La Condition 2 demande le minimum : si une option monte dans les préférences de certaines personnes, tout le reste étant inchangé, le groupe ne doit pas la descendre.",
+      "normalized_claim": "Condition 2 (monotonicity) telle qu’énoncée dans le rapport.",
       "support_ids": [
         "SUP-9e5fa0842208cd3d"
       ]
     },
     {
       "claim_id": "C028",
-      "locator": "sections[2].paragraphs[0]",
-      "start": 355,
-      "end": 510,
-      "claim_text": "Elle est dictatoriale s’il existe une personne telle que, dès qu’elle préfère une option à une autre, le groupe fasse de même, quoi que pensent les autres.",
-      "normalized_claim": "Définition de dictatoriale : il existe i tel que x P y dès que x Pi y, quelles que soient les autres préférences.",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 240,
+      "end": 514,
+      "claim_text": "La Condition 3, l’indépendance des alternatives non pertinentes, demande un exemple : trois projets à départager, et un quatrième dont personne ne dispose ; ce que le groupe retient parmi les trois ne doit rien devoir à ce quatrième, ni à la façon dont chacun le classerait.",
+      "normalized_claim": "Condition 3 (independence of irrelevant alternatives) : le choix social dans S ne dépend que des préférences individuelles sur S.",
       "support_ids": [
         "SUP-9e5fa0842208cd3d"
       ]
     },
     {
       "claim_id": "C029",
-      "locator": "sections[2].paragraphs[0]",
-      "start": 511,
-      "end": 642,
-      "claim_text": "Une seule paire d’options fixée suffit pour la première famille, qui est donc plus large qu’un classement écrit d’avance en entier.",
-      "normalized_claim": "La classe conventionnelle est définie par une seule paire fixée, donc plus large qu'un ordre social entièrement prédéterminé.",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 515,
+      "end": 708,
+      "claim_text": "Arrow la justifie page 10 par ce que la société choisirait si les options se réduisaient à un ensemble donné : « C(S) should be independent of the very existence of alternatives outside of S ».",
+      "normalized_claim": "Motivation page 10 de la Condition 3, citée verbatim.",
       "support_ids": [
-        "SUP-9e5fa0842208cd3d",
-        "SUP-26bf1cb43f379936"
+        "SUP-9e5fa0842208cd3d"
       ]
     },
     {
       "claim_id": "C030",
-      "locator": "sections[2].paragraphs[1]",
+      "locator": "sections[2].paragraphs[0]",
       "start": 0,
-      "end": 112,
-      "claim_text": "Ces deux familles ne sont pas écartées après coup, au nom d’un jugement politique : elles le sont par hypothèse.",
-      "normalized_claim": "L'exclusion des règles conventionnelles et dictatoriales est posée comme hypothèse et non comme jugement ultérieur.",
+      "end": 127,
+      "claim_text": "Une règle peut satisfaire tout cela sans rien valoir, et Arrow définit page 10 deux familles qui y parviennent trop facilement.",
+      "normalized_claim": "Page 10, Définitions 8 et 9 : deux classes de fonctions satisfaisant les Conditions 1-3.",
       "support_ids": [
         "SUP-9e5fa0842208cd3d"
       ]
     },
     {
       "claim_id": "C031",
-      "locator": "sections[2].paragraphs[1]",
-      "start": 113,
-      "end": 266,
-      "claim_text": "Les Conditions 4 et 5 demandent que la règle ne soit ni conventionnelle ni dictatoriale, et elles sont posées avec les autres, avant toute démonstration.",
-      "normalized_claim": "Conditions 4 et 5 : non conventionnelle, non dictatoriale, énoncées parmi les conditions avant la démonstration.",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 128,
+      "end": 354,
+      "claim_text": "Une règle est conventionnelle s’il existe deux options telles que le groupe place toujours la première devant la seconde, ou à égalité, quelles que soient les préférences de chacun : un morceau du classement est fixé d’avance.",
+      "normalized_claim": "Définition de la fonction conventionnelle : il existe x et y distincts avec x R y indépendamment de R1,…,Rn.",
       "support_ids": [
-        "SUP-9e5fa0842208cd3d",
-        "SUP-26bf1cb43f379936"
+        "SUP-9e5fa0842208cd3d"
       ]
     },
     {
       "claim_id": "C032",
-      "locator": "sections[2].paragraphs[1]",
-      "start": 267,
-      "end": 391,
-      "claim_text": "La phrase de la page 3 en gardait la trace, qui excepte certaines méthodes triviales, contraires aux principes démocratiques",
-      "normalized_claim": "La phrase de la page 3 excepte des méthodes triviales violant les principes démocratiques.",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 355,
+      "end": 510,
+      "claim_text": "Elle est dictatoriale s’il existe une personne telle que, dès qu’elle préfère une option à une autre, le groupe fasse de même, quoi que pensent les autres.",
+      "normalized_claim": "Définition de la fonction dictatoriale : il existe i tel que x P y dès que x Pi y, quelles que soient les autres préférences.",
       "support_ids": [
-        "SUP-572e49b3cf5dc878",
-        "SUP-6e59e8efa6b1ddf5",
-        "SUP-046722b07190580e",
-        "SUP-c54577ac6c7ee0e4",
-        "SUP-450e73b8b4fc2f83"
+        "SUP-9e5fa0842208cd3d"
       ]
     },
     {
       "claim_id": "C033",
-      "locator": "sections[2].paragraphs[1]",
-      "start": 394,
-      "end": 531,
-      "claim_text": "ces méthodes existent, elles rendent un classement parfaitement cohérent, et c’est pour cela qu’il faut les nommer pour les mettre dehors",
-      "normalized_claim": "Les méthodes triviales exceptées existent et produisent bien un ordre cohérent.",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 511,
+      "end": 642,
+      "claim_text": "Une seule paire d’options fixée suffit pour la première famille, qui est donc plus large qu’un classement écrit d’avance en entier.",
+      "normalized_claim": "La définition de « conventionnelle » n’exige qu’une paire fixée, non un ordre entier fixé d’avance.",
       "support_ids": [
-        "SUP-046722b07190580e",
-        "SUP-a745250df6ece197",
         "SUP-9e5fa0842208cd3d"
       ]
     },
     {
       "claim_id": "C034",
       "locator": "sections[2].paragraphs[1]",
-      "start": 533,
-      "end": 667,
-      "claim_text": "Sans les Conditions 4 et 5, rien ne serait impossible, et la page 10 l’écrit : il existe des règles satisfaisant les Conditions 1 à 3.",
-      "normalized_claim": "Page 10 : il existe des fonctions de bien-être social satisfaisant les Conditions 1-3.",
+      "start": 0,
+      "end": 112,
+      "claim_text": "Ces deux familles ne sont pas écartées après coup, au nom d’un jugement politique : elles le sont par hypothèse.",
+      "normalized_claim": "L’exclusion des fonctions conventionnelle et dictatoriale est portée par des conditions posées d’emblée.",
       "support_ids": [
         "SUP-9e5fa0842208cd3d"
       ]
     },
     {
       "claim_id": "C035",
-      "locator": "sections[3].paragraphs[0]",
-      "start": 0,
-      "end": 184,
-      "claim_text": "Le résultat tient en une phrase, page 14 : « If the number of alternatives exceeds two, every social welfare function satisfying Conditions 1-3 is either conventional or dictatorial. »",
-      "normalized_claim": "Énoncé verbatim du Théorème 2, page 14.",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 113,
+      "end": 266,
+      "claim_text": "Les Conditions 4 et 5 demandent que la règle ne soit ni conventionnelle ni dictatoriale, et elles sont posées avec les autres, avant toute démonstration.",
+      "normalized_claim": "Conditions 4 et 5, posées pages 9-11 avec les autres, excluent les deux classes.",
       "support_ids": [
         "SUP-9e5fa0842208cd3d",
-        "SUP-860522c6c0b87ee7",
         "SUP-26bf1cb43f379936"
       ]
     },
     {
       "claim_id": "C036",
-      "locator": "sections[3].paragraphs[0]",
-      "start": 185,
-      "end": 236,
-      "claim_text": "Elle ne dit pas qu’aucune règle cohérente n’existe.",
-      "normalized_claim": "Le théorème n'affirme pas l'inexistence de toute règle cohérente.",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 267,
+      "end": 391,
+      "claim_text": "La phrase de la page 3 en gardait la trace, qui excepte certaines méthodes triviales, contraires aux principes démocratiques",
+      "normalized_claim": "La phrase de la page 3 excepte « certain trivial methods which violate democratic principles ».",
       "support_ids": [
-        "SUP-9e5fa0842208cd3d",
+        "SUP-6e59e8efa6b1ddf5",
+        "SUP-572e49b3cf5dc878",
+        "SUP-1050a21dd9cf6a6a",
         "SUP-046722b07190580e"
       ]
     },
     {
       "claim_id": "C037",
-      "locator": "sections[3].paragraphs[0]",
-      "start": 237,
-      "end": 373,
-      "claim_text": "Elle dit qu’au-delà de deux options, toute règle satisfaisant les trois premières exigences tombe dans l’une des deux familles écartées.",
-      "normalized_claim": "Au-delà de deux alternatives, toute fonction satisfaisant les Conditions 1-3 est conventionnelle ou dictatoriale.",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 394,
+      "end": 531,
+      "claim_text": "ces méthodes existent, elles rendent un classement parfaitement cohérent, et c’est pour cela qu’il faut les nommer pour les mettre dehors",
+      "normalized_claim": "Les méthodes triviales exceptées produisent bel et bien une échelle cohérente, ce qui oblige à les exclure explicitement.",
       "support_ids": [
-        "SUP-9e5fa0842208cd3d",
-        "SUP-860522c6c0b87ee7",
-        "SUP-26bf1cb43f379936"
+        "SUP-046722b07190580e",
+        "SUP-2e1844aa2b83764e",
+        "SUP-a745250df6ece197",
+        "SUP-9e5fa0842208cd3d"
       ]
     },
     {
       "claim_id": "C038",
-      "locator": "sections[3].paragraphs[0]",
-      "start": 374,
-      "end": 534,
-      "claim_text": "Le reste se déduit : la Condition 6 réclame au moins trois options, les Conditions 4 et 5 interdisent les deux familles, et le théorème dit qu’on n’en sort pas.",
-      "normalized_claim": "La Condition 6 exige au moins trois alternatives, les Conditions 4-5 excluent les deux classes, d'où l'inconsistance.",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 533,
+      "end": 667,
+      "claim_text": "Sans les Conditions 4 et 5, rien ne serait impossible, et la page 10 l’écrit : il existe des règles satisfaisant les Conditions 1 à 3.",
+      "normalized_claim": "Page 10 : « There are social welfare functions satisfying Conditions 1-3 ».",
       "support_ids": [
-        "SUP-9e5fa0842208cd3d",
-        "SUP-26bf1cb43f379936"
+        "SUP-9e5fa0842208cd3d"
       ]
     },
     {
       "claim_id": "C039",
       "locator": "sections[3].paragraphs[0]",
-      "start": 535,
-      "end": 608,
-      "claim_text": "Aucune des six n’est fautive à elle seule, c’est le bloc qui ne tient pas",
-      "normalized_claim": "L'inconsistance porte sur l'ensemble des six conditions, pas sur l'une d'elles.",
+      "start": 0,
+      "end": 184,
+      "claim_text": "Le résultat tient en une phrase, page 14 : « If the number of alternatives exceeds two, every social welfare function satisfying Conditions 1-3 is either conventional or dictatorial. »",
+      "normalized_claim": "Théorème 2, page 14, cité verbatim.",
       "support_ids": [
-        "SUP-9e5fa0842208cd3d"
+        "SUP-9e5fa0842208cd3d",
+        "SUP-26bf1cb43f379936",
+        "SUP-860522c6c0b87ee7"
       ]
     },
     {
       "claim_id": "C040",
       "locator": "sections[3].paragraphs[0]",
-      "start": 613,
-      "end": 705,
-      "claim_text": "la page 11 le dit sans ornement : « It will be shown that Conditions 1-6 are inconsistent. »",
-      "normalized_claim": "Verbatim de la page 11.",
+      "start": 185,
+      "end": 236,
+      "claim_text": "Elle ne dit pas qu’aucune règle cohérente n’existe.",
+      "normalized_claim": "Le théorème n’exclut pas l’existence de règles cohérentes ; il les classe.",
+      "support_ids": [
+        "SUP-9e5fa0842208cd3d",
+        "SUP-046722b07190580e"
+      ]
+    },
+    {
+      "claim_id": "C041",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 237,
+      "end": 373,
+      "claim_text": "Elle dit qu’au-delà de deux options, toute règle satisfaisant les trois premières exigences tombe dans l’une des deux familles écartées.",
+      "normalized_claim": "Paraphrase du Théorème 2.",
       "support_ids": [
         "SUP-9e5fa0842208cd3d",
         "SUP-26bf1cb43f379936"
       ]
     },
     {
-      "claim_id": "C041",
-      "locator": "sections[3].paragraphs[1]",
-      "start": 0,
-      "end": 118,
-      "claim_text": "Une incompatibilité de bloc n’indique pas laquelle des six doit céder, et le choix n’est pas qu’une affaire technique.",
-      "normalized_claim": "Une inconsistance d'ensemble ne désigne pas la condition à abandonner.",
-      "support_ids": []
-    },
-    {
       "claim_id": "C042",
-      "locator": "sections[3].paragraphs[1]",
-      "start": 188,
-      "end": 370,
-      "claim_text": "page 14, il met hors d’atteinte deux exigences qui découlent selon lui du sens même d’un processus de décision collective, « it is hard to see how Conditions 1 or 3 can be weakened »",
-      "normalized_claim": "Page 14, Arrow juge les Conditions 1 et 3 difficilement affaiblissables au vu du sens même d'un processus de décision sociale.",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 395,
+      "end": 533,
+      "claim_text": "la Condition 6 réclame au moins trois options, les Conditions 4 et 5 interdisent les deux familles, et le théorème dit qu’on n’en sort pas",
+      "normalized_claim": "Articulation Condition 6 (au moins trois alternatives) + Conditions 4 et 5 + Théorème 2 = inconsistance.",
       "support_ids": [
-        "SUP-9e5fa0842208cd3d"
+        "SUP-9e5fa0842208cd3d",
+        "SUP-26bf1cb43f379936"
       ]
     },
     {
       "claim_id": "C043",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 535,
+      "end": 608,
+      "claim_text": "Aucune des six n’est fautive à elle seule, c’est le bloc qui ne tient pas",
+      "normalized_claim": "L’inconsistance porte sur l’ensemble des six conditions, pas sur l’une d’elles.",
+      "support_ids": [
+        "SUP-9e5fa0842208cd3d",
+        "SUP-b5bc0c0a929eb9ab"
+      ]
+    },
+    {
+      "claim_id": "C044",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 613,
+      "end": 705,
+      "claim_text": "la page 11 le dit sans ornement : « It will be shown that Conditions 1-6 are inconsistent. »",
+      "normalized_claim": "Page 11, verbatim.",
+      "support_ids": [
+        "SUP-9e5fa0842208cd3d",
+        "SUP-26bf1cb43f379936"
+      ]
+    },
+    {
+      "claim_id": "C045",
       "locator": "sections[3].paragraphs[1]",
-      "start": 372,
-      "end": 425,
-      "claim_text": "Les issues qu’il examine ensuite se prennent ailleurs",
-      "normalized_claim": "Les voies de sortie examinées ensuite portent sur d'autres conditions.",
+      "start": 0,
+      "end": 70,
+      "claim_text": "Une incompatibilité de bloc n’indique pas laquelle des six doit céder.",
+      "normalized_claim": "L’énoncé d’inconsistance ne désigne pas de lui-même la condition à relâcher ; le rapport cherche ensuite laquelle relâcher.",
       "support_ids": [
         "SUP-9e5fa0842208cd3d"
       ]
     },
     {
-      "claim_id": "C044",
+      "claim_id": "C046",
       "locator": "sections[3].paragraphs[1]",
-      "start": 430,
-      "end": 527,
-      "claim_text": "sa phrase d’ouverture gardait déjà sa réserve : « Sous certaines restrictions très raisonnables »",
-      "normalized_claim": "La phrase citée (p. 3, fin de l'introduction) commence par cette réserve conditionnelle.",
+      "start": 71,
+      "end": 137,
+      "claim_text": "Arrow ne laisse pourtant pas la question ouverte de tous les côtés",
+      "normalized_claim": "Le rapport désigne lui-même deux conditions qu’il juge non relâchables, plutôt que de laisser ouvert le choix de celle à céder.",
+      "support_ids": [
+        "SUP-9e5fa0842208cd3d"
+      ]
+    },
+    {
+      "claim_id": "C047",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 140,
+      "end": 322,
+      "claim_text": "page 14, il met hors d’atteinte deux exigences qui découlent selon lui du sens même d’un processus de décision collective, « it is hard to see how Conditions 1 or 3 can be weakened »",
+      "normalized_claim": "Page 14 : « From the very meaning of a social decision process, it is hard to see how Conditions 1 or 3 can be weakened. »",
+      "support_ids": [
+        "SUP-9e5fa0842208cd3d"
+      ]
+    },
+    {
+      "claim_id": "C048",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 324,
+      "end": 377,
+      "claim_text": "Les issues qu’il examine ensuite se prennent ailleurs",
+      "normalized_claim": "Les voies explorées ensuite (deux alternatives, restriction du domaine) ne touchent pas aux Conditions 1 et 3.",
+      "support_ids": [
+        "SUP-9e5fa0842208cd3d"
+      ]
+    },
+    {
+      "claim_id": "C049",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 382,
+      "end": 493,
+      "claim_text": "la phrase qui clôt son introduction gardait déjà sa réserve : « Sous certaines restrictions très raisonnables »",
+      "normalized_claim": "La phrase finale de la section 1 « Introduction », page 3, commence par « Under certain very reasonable restrictions », rendu « Sous certaines restrictions très raisonnables ».",
       "support_ids": [
         "SUP-6baf44ea6c25240f",
         "SUP-d5df6beb1a1807f9",
         "SUP-c54577ac6c7ee0e4",
         "SUP-450e73b8b4fc2f83",
-        "SUP-046722b07190580e"
+        "SUP-6e59e8efa6b1ddf5",
+        "SUP-1050a21dd9cf6a6a"
       ]
     },
     {
-      "claim_id": "C045",
+      "claim_id": "C050",
       "locator": "sections[4].paragraphs[0]",
       "start": 0,
       "end": 127,
       "claim_text": "Le seuil de trois options n’est pas un détail de rédaction : c’est la Condition 6, posée page 11 pour écarter les cas triviaux.",
-      "normalized_claim": "Condition 6, page 11 : au moins trois alternatives, posée pour écarter les trivialités.",
+      "normalized_claim": "Condition 6, page 11 : « To guard against trivialities », au moins trois alternatives.",
       "support_ids": [
         "SUP-9e5fa0842208cd3d",
         "SUP-26bf1cb43f379936"
       ]
     },
     {
-      "claim_id": "C046",
+      "claim_id": "C051",
       "locator": "sections[4].paragraphs[0]",
       "start": 128,
+      "end": 186,
+      "claim_text": "La démonstration, pages 11 à 13, montre où elle intervient",
+      "normalized_claim": "La démonstration occupe les pages 11 à 13.",
+      "support_ids": [
+        "SUP-9e5fa0842208cd3d"
+      ]
+    },
+    {
+      "claim_id": "C052",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 189,
       "end": 460,
-      "claim_text": "La démonstration, pages 11 à 13, montre où elle intervient : elle raisonne sur les groupes de personnes dont l’accord suffit à trancher entre deux options, prend le plus petit d’entre eux, puis construit trois profils de préférences sur trois options ; il en sort un groupe décisif strictement plus petit, ce qui est contradictoire.",
-      "normalized_claim": "La démonstration (p. 11-13) utilise les ensembles décisifs, prend le plus petit et construit trois profils sur trois alternatives pour obtenir un ensemble décisif plus petit.",
+      "claim_text": "elle raisonne sur les groupes de personnes dont l’accord suffit à trancher entre deux options, prend le plus petit d’entre eux, puis construit trois profils de préférences sur trois options ; il en sort un groupe décisif strictement plus petit, ce qui est contradictoire.",
+      "normalized_claim": "Structure de la preuve : ensembles décisifs (Définition 10, p. 11), plus petit ensemble décisif, trois profils sur trois alternatives, contradiction p. 13.",
       "support_ids": [
         "SUP-9e5fa0842208cd3d",
         "SUP-733e0033522a077b"
       ]
     },
     {
-      "claim_id": "C047",
+      "claim_id": "C053",
       "locator": "sections[4].paragraphs[0]",
       "start": 461,
       "end": 516,
@@ -635,101 +709,93 @@
       ]
     },
     {
-      "claim_id": "C048",
-      "locator": "sections[4].paragraphs[1]",
-      "start": 47,
-      "end": 107,
-      "claim_text": "à deux options, écrit la page 14, le vote majoritaire suffit",
-      "normalized_claim": "Page 14 : à deux alternatives, la décision majoritaire suffit.",
-      "support_ids": [
-        "SUP-9e5fa0842208cd3d"
-      ]
-    },
-    {
-      "claim_id": "C049",
-      "locator": "sections[4].paragraphs[1]",
-      "start": 109,
-      "end": 182,
-      "claim_text": "Un scrutin par oui ou par non n’est donc pas concerné par l’impossibilité",
-      "normalized_claim": "Un vote binaire échappe au théorème d'impossibilité.",
-      "support_ids": [
-        "SUP-9e5fa0842208cd3d"
-      ]
-    },
-    {
-      "claim_id": "C050",
-      "locator": "sections[4].paragraphs[1]",
-      "start": 187,
-      "end": 369,
-      "claim_text": "Arrow n’en reste pas au constat, puisqu’il y voit le ressort d’une famille entière d’institutions : « This viewpoint is essentially the basis of the Anglo-American two-party system »",
-      "normalized_claim": "Arrow rattache ce point au bipartisme anglo-américain, verbatim p. 14.",
-      "support_ids": [
-        "SUP-9e5fa0842208cd3d"
-      ]
-    },
-    {
-      "claim_id": "C051",
-      "locator": "sections[4].paragraphs[1]",
-      "start": 371,
-      "end": 494,
-      "claim_text": "Ramener le choix à deux termes rend la cohérence facile, mais elle est payée par les options qu’on ne met pas sur la table.",
-      "normalized_claim": "Réduire à deux options obtient la cohérence au prix des options écartées.",
-      "support_ids": []
-    },
-    {
-      "claim_id": "C052",
-      "locator": "sections[5].paragraphs[0]",
-      "start": 0,
-      "end": 127,
-      "claim_text": "Il existe une autre sortie, qui ne touche pas aux exigences imposées à la règle mais aux préférences qu’on accepte de recevoir.",
-      "normalized_claim": "Une autre voie consiste à restreindre le domaine des préférences admissibles plutôt que les conditions.",
-      "support_ids": [
-        "SUP-9e5fa0842208cd3d"
-      ]
-    },
-    {
-      "claim_id": "C053",
-      "locator": "sections[5].paragraphs[0]",
-      "start": 128,
-      "end": 243,
-      "claim_text": "Page 17, Arrow reprend de D. Black une restriction plus radicale du domaine des préférences individuelles possibles",
-      "normalized_claim": "Page 17, la restriction du domaine est reprise de D. Black.",
-      "support_ids": [
-        "SUP-9e5fa0842208cd3d",
-        "SUP-0c558d91e2562eea",
-        "SUP-376d805d9c4cd5c6",
-        "SUP-f825d2940a198163"
-      ]
-    },
-    {
       "claim_id": "C054",
-      "locator": "sections[5].paragraphs[0]",
-      "start": 246,
-      "end": 377,
-      "claim_text": "les options se rangent sur une ligne, chaque personne a une position préférée, et sa préférence décroît à mesure qu’on s’en éloigne",
-      "normalized_claim": "Contenu de la Condition A : ordre linéaire des alternatives, pic de préférence individuel, décroissance de part et d'autre.",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 0,
+      "end": 108,
+      "claim_text": "En dessous du seuil, la difficulté disparaît : à deux options, écrit la page 14, le vote majoritaire suffit.",
+      "normalized_claim": "Section 5, page 14 : à deux alternatives, la difficulté disparaît et le vote majoritaire suffit.",
       "support_ids": [
         "SUP-9e5fa0842208cd3d"
       ]
     },
     {
       "claim_id": "C055",
-      "locator": "sections[5].paragraphs[0]",
-      "start": 379,
-      "end": 500,
-      "claim_text": "L’image est de lui : « This is the same idea as the left-to-right ordering of political parties in Continental politics »",
-      "normalized_claim": "Arrow compare lui-même cette restriction à l'axe gauche-droite des partis, verbatim.",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 109,
+      "end": 182,
+      "claim_text": "Un scrutin par oui ou par non n’est donc pas concerné par l’impossibilité",
+      "normalized_claim": "Le cas à deux alternatives échappe à l’impossibilité, qui exige plus de deux options.",
+      "support_ids": [
+        "SUP-9e5fa0842208cd3d",
+        "SUP-26bf1cb43f379936"
+      ]
+    },
+    {
+      "claim_id": "C056",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 187,
+      "end": 369,
+      "claim_text": "Arrow n’en reste pas au constat, puisqu’il y voit le ressort d’une famille entière d’institutions : « This viewpoint is essentially the basis of the Anglo-American two-party system »",
+      "normalized_claim": "Page 14, verbatim.",
       "support_ids": [
         "SUP-9e5fa0842208cd3d"
       ]
     },
     {
-      "claim_id": "C056",
+      "claim_id": "C057",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 0,
+      "end": 127,
+      "claim_text": "Il existe une autre sortie, qui ne touche pas aux exigences imposées à la règle mais aux préférences qu’on accepte de recevoir.",
+      "normalized_claim": "Section 7 : restreindre le domaine des préférences individuelles admissibles plutôt que les conditions.",
+      "support_ids": [
+        "SUP-9e5fa0842208cd3d"
+      ]
+    },
+    {
+      "claim_id": "C058",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 128,
+      "end": 243,
+      "claim_text": "Page 17, Arrow reprend de D. Black une restriction plus radicale du domaine des préférences individuelles possibles",
+      "normalized_claim": "Page 17 : « A more radical restriction upon the range of possible individual preference patterns has been proposed by D. Black. »",
+      "support_ids": [
+        "SUP-9e5fa0842208cd3d",
+        "SUP-f825d2940a198163",
+        "SUP-0c558d91e2562eea",
+        "SUP-376d805d9c4cd5c6"
+      ]
+    },
+    {
+      "claim_id": "C059",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 246,
+      "end": 377,
+      "claim_text": "les options se rangent sur une ligne, chaque personne a une position préférée, et sa préférence décroît à mesure qu’on s’en éloigne",
+      "normalized_claim": "Condition A, page 17 : rangement linéaire des alternatives, position préférée, préférence décroissante en s’en éloignant.",
+      "support_ids": [
+        "SUP-9e5fa0842208cd3d"
+      ]
+    },
+    {
+      "claim_id": "C060",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 379,
+      "end": 500,
+      "claim_text": "L’image est de lui : « This is the same idea as the left-to-right ordering of political parties in Continental politics »",
+      "normalized_claim": "Page 17, verbatim d’Arrow.",
+      "support_ids": [
+        "SUP-9e5fa0842208cd3d"
+      ]
+    },
+    {
+      "claim_id": "C061",
       "locator": "sections[5].paragraphs[0]",
       "start": 502,
       "end": 598,
       "claim_text": "Black l’avait établi pour un nombre fini d’options, Arrow le généralise à tout espace d’options.",
-      "normalized_claim": "Le résultat de Black, valable pour un nombre fini d'alternatives, est généralisé à tout espace d'alternatives.",
+      "normalized_claim": "Page 17 : « Black's result for a finite number of alternatives is here generalized to any space of alternatives. »",
       "support_ids": [
         "SUP-9e5fa0842208cd3d",
         "SUP-0c558d91e2562eea",
@@ -737,99 +803,90 @@
       ]
     },
     {
-      "claim_id": "C057",
+      "claim_id": "C062",
       "locator": "sections[5].paragraphs[1]",
       "start": 0,
       "end": 305,
       "claim_text": "Le Théorème 4 de la page 17 dit exactement ce que la restriction rapporte : sous elle, le vote majoritaire est une fonction de bien-être social qui satisfait les Conditions 2 à 5 et une forme modifiée de la Condition 1, quel que soit le nombre d’options, à condition que le nombre d’individus soit impair.",
-      "normalized_claim": "Théorème 4, p. 17 : sous la Condition A, la décision majoritaire satisfait Condition 1'' et 2-5 pour tout nombre d'alternatives, si le nombre d'individus est impair.",
-      "support_ids": [
-        "SUP-9e5fa0842208cd3d"
-      ]
-    },
-    {
-      "claim_id": "C058",
-      "locator": "sections[5].paragraphs[1]",
-      "start": 306,
-      "end": 418,
-      "claim_text": "La réserve appartient au théorème : le contre-exemple à deux individus qui la rend nécessaire est donné page 18.",
-      "normalized_claim": "La clause d'imparité fait partie de l'énoncé et un contre-exemple à deux individus se trouve page 18.",
-      "support_ids": [
-        "SUP-9e5fa0842208cd3d",
-        "SUP-733e0033522a077b"
-      ]
-    },
-    {
-      "claim_id": "C059",
-      "locator": "sections[5].paragraphs[1]",
-      "start": 419,
-      "end": 627,
-      "claim_text": "Et la forme modifiée de la Condition 1 dit où l’on a cédé : celle-ci demandait un classement utilisable quelles que soient les préférences reçues, et ce sont les préférences reçues qu’on vient de restreindre.",
-      "normalized_claim": "La Condition 1 modifiée correspond à l'abandon de l'universalité du domaine.",
-      "support_ids": [
-        "SUP-9e5fa0842208cd3d"
-      ]
-    },
-    {
-      "claim_id": "C060",
-      "locator": "sections[6].paragraphs[0]",
-      "start": 0,
-      "end": 47,
-      "claim_text": "Une difficulté d’un autre ordre attend page 19.",
-      "normalized_claim": "Page 19, le rapport soulève une difficulté d'un autre ordre.",
-      "support_ids": [
-        "SUP-9e5fa0842208cd3d"
-      ]
-    },
-    {
-      "claim_id": "C061",
-      "locator": "sections[6].paragraphs[0]",
-      "start": 48,
-      "end": 100,
-      "claim_text": "Tout ce qui précède suppose les préférences connues.",
-      "normalized_claim": "Le cadre précédent suppose les préférences individuelles données.",
-      "support_ids": [
-        "SUP-9e5fa0842208cd3d"
-      ]
-    },
-    {
-      "claim_id": "C062",
-      "locator": "sections[6].paragraphs[0]",
-      "start": 101,
-      "end": 342,
-      "claim_text": "Or il faut bien les recueillir, par un questionnaire ou par un vote, et rien n’oblige quelqu’un à déclarer ce qu’il préfère vraiment : « there is always the danger of false answers to take advantage of the machinery in the manner of a game »",
-      "normalized_claim": "Le recueil des préférences par questionnaire ou vote expose au risque de réponses fausses, verbatim p. 19.",
+      "normalized_claim": "Théorème 4, page 17 : vote majoritaire satisfaisant Conditions 1'' et 2-5 pour tout nombre d’alternatives, si le nombre d’individus est impair.",
       "support_ids": [
         "SUP-9e5fa0842208cd3d"
       ]
     },
     {
       "claim_id": "C063",
-      "locator": "sections[6].paragraphs[0]",
-      "start": 344,
-      "end": 522,
-      "claim_text": "Arrow en tire une exigence qu’il n’instruit pas : les règles du jeu électoral doivent être conçues de façon que les préférences exprimées coïncident avec les préférences réelles.",
-      "normalized_claim": "Arrow énonce sans la traiter l'exigence que les règles électorales fassent coïncider préférences exprimées et réelles.",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 306,
+      "end": 418,
+      "claim_text": "La réserve appartient au théorème : le contre-exemple à deux individus qui la rend nécessaire est donné page 18.",
+      "normalized_claim": "La clause d’imparité fait partie de l’énoncé du théorème, et le contre-exemple à deux individus figure page 18.",
+      "support_ids": [
+        "SUP-9e5fa0842208cd3d",
+        "SUP-733e0033522a077b"
+      ]
+    },
+    {
+      "claim_id": "C064",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 419,
+      "end": 627,
+      "claim_text": "Et la forme modifiée de la Condition 1 dit où l’on a cédé : celle-ci demandait un classement utilisable quelles que soient les préférences reçues, et ce sont les préférences reçues qu’on vient de restreindre.",
+      "normalized_claim": "La modification de la Condition 1 correspond à l’abandon de l’universalité du domaine, puisque la restriction porte sur les profils admissibles.",
       "support_ids": [
         "SUP-9e5fa0842208cd3d"
       ]
     },
     {
-      "claim_id": "C064",
-      "locator": "sections[6].paragraphs[0]",
-      "start": 523,
-      "end": 616,
-      "claim_text": "Une règle peut donc être irréprochable et recevoir autre chose que ce qu’elle croit recevoir.",
-      "normalized_claim": "Une règle correcte peut néanmoins recevoir des préférences déclarées non sincères.",
-      "support_ids": []
-    },
-    {
       "claim_id": "C065",
       "locator": "sections[6].paragraphs[0]",
-      "start": 617,
-      "end": 699,
+      "start": 0,
+      "end": 47,
+      "claim_text": "Une difficulté d’un autre ordre attend page 19.",
+      "normalized_claim": "Section 8, page 19 : une difficulté d’un autre ordre y est nommée.",
+      "support_ids": [
+        "SUP-9e5fa0842208cd3d"
+      ]
+    },
+    {
+      "claim_id": "C066",
+      "locator": "sections[6].paragraphs[0]",
+      "start": 48,
+      "end": 100,
+      "claim_text": "Tout ce qui précède suppose les préférences connues.",
+      "normalized_claim": "Le cadre du théorème suppose les préférences individuelles données.",
+      "support_ids": [
+        "SUP-9e5fa0842208cd3d"
+      ]
+    },
+    {
+      "claim_id": "C067",
+      "locator": "sections[6].paragraphs[0]",
+      "start": 101,
+      "end": 342,
+      "claim_text": "Or il faut bien les recueillir, par un questionnaire ou par un vote, et rien n’oblige quelqu’un à déclarer ce qu’il préfère vraiment : « there is always the danger of false answers to take advantage of the machinery in the manner of a game »",
+      "normalized_claim": "Page 19 : recueil des préférences par questionnaire ou vote, et danger de réponses fausses, cité verbatim.",
+      "support_ids": [
+        "SUP-9e5fa0842208cd3d"
+      ]
+    },
+    {
+      "claim_id": "C068",
+      "locator": "sections[6].paragraphs[0]",
+      "start": 344,
+      "end": 522,
+      "claim_text": "Arrow en tire une exigence qu’il n’instruit pas : les règles du jeu électoral doivent être conçues de façon que les préférences exprimées coïncident avec les préférences réelles.",
+      "normalized_claim": "Page 19 : « the rules of the electoral game must be so devised as to insure that expressed preferences coincide with actual preferences », point que le rapport ne traite pas.",
+      "support_ids": [
+        "SUP-9e5fa0842208cd3d"
+      ]
+    },
+    {
+      "claim_id": "C069",
+      "locator": "sections[6].paragraphs[0]",
+      "start": 523,
+      "end": 605,
       "claim_text": "Deux phrases, à la dernière page, pour une question que le théorème ne touche pas.",
-      "normalized_claim": "Ce point occupe deux phrases sur la dernière page (p. 19) et n'est pas traité par le théorème.",
+      "normalized_claim": "La page 19 est la dernière du rapport et le point y est seulement nommé, non traité.",
       "support_ids": [
         "SUP-9e5fa0842208cd3d",
         "SUP-c1daf649941c6ce9"
