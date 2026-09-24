@@ -1,0 +1,756 @@
+{
+  "protocol_version": 1,
+  "concept_id": "impossibilite-de-l-agregation-des-preferences",
+  "context_budget_tokens": 300000,
+  "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
+  "candidate_sha256": "1dd7916861e53aaf6d26ac37903c255d0fa1d1ba06a968256519f886706c9991",
+  "validated_sha256": "0fae89edee799281df9c996b52fbac05c5063cda5104b6995383fccb0246b612",
+  "evidence_files": [
+    {
+      "file": "lecture.json",
+      "sha256": "3dd9827d96d7f1fd49b827e09e2625c51d3296bde6dcaee380a4c0d590930265"
+    }
+  ],
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "text": "Trois collègues doivent classer trois projets, du plus urgent au moins urgent. De chacun, séparément, on suppose seulement ceci : qu’il puisse comparer deux projets quelconques, et qu’il ne se contredise pas d’une comparaison à l’autre. La difficulté commence quand il faut en tirer un seul classement, celui du groupe. Ce qu’on lui demande n’est pas seulement de désigner un gagnant : c’est de tenir debout. Si le groupe place le premier projet avant le deuxième, et le deuxième avant le troisième, il doit placer le premier avant le troisième."
+    },
+    {
+      "locator": "lead[1]",
+      "text": "En 1948, dans un rapport de dix-neuf pages écrit pour la RAND Corporation, Kenneth J. Arrow retourne la question. Plutôt que d’examiner une méthode de vote après l’autre, il écrit d’abord ce qu’on exige d’une règle, quelle qu’elle soit, puis il demande si une règle peut satisfaire ces exigences ensemble. La réponse est non, et elle est bornée de deux côtés : elle ne vaut que sous les conditions qu’il énonce, et elle laisse debout deux règles, dont il dit lui-même qu’elles violent les principes démocratiques."
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "section_title": "Un problème né de l’économie du bien-être",
+      "text": "Ce texte ne commence pas par des bulletins de vote, mais par un échec local dans l’économie du bien-être. Page 3, Arrow s’arrête sur le principe de compensation, dont T. de Scitovsky avait relevé l’incohérence, et conclut : ce principe ne fournit pas un ordre véritable des décisions sociales. Ce qui lui manque est exactement ce qu’on attend d’un classement de groupe qui tient debout. La phrase suivante donne le programme : « It is the purpose of this note to show that this phenomenon is very general. » L’impossibilité arrive donc comme la généralisation d’un échec déjà connu, non comme un paradoxe des urnes."
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "section_title": "Un problème né de l’économie du bien-être",
+      "text": "Une absence mérite d’être signalée, parce qu’un lecteur français l’attend et ne la trouvera pas : ni Condorcet, ni Borda, ni le paradoxe de vote ne sont nommés dans ces dix-neuf pages. La méthode où chacun range les options y est bien exposée, page 15, mais sous le seul nom de « the rank-order method of voting », sans attribution. La généalogie que la mémoire du domaine a construite après coup n’est pas celle que ce texte écrit."
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "section_title": "Ce qu’on demande à une règle",
+      "text": "La règle en question, ce qu’Arrow appelle une fonction de bien-être social, reçoit les préférences de chaque personne et rend un classement pour le groupe. La première exigence porte sur ce qu’elle rend, et elle est double : quelles que soient les préférences reçues, la sortie doit être un ordre utilisable, c’est-à-dire qu’on puisse y comparer deux options quelconques et qu’aucune boucle ne s’y forme. C’est la Condition 1, page 9 : « For all R1,…,Rn, R is a weak ordering relation », un ordre faible, faible parce qu’il tolère l’indifférence entre deux options."
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "section_title": "Ce qu’on demande à une règle",
+      "text": "Ce que la règle reçoit compte autant. Ce sont des classements, et rien d’autre : aucune mesure de l’intensité des préférences, aucune quantité de satisfaction à comparer d’une personne à l’autre. Ce cadrage n’est pas d’Arrow : il l’attribue page 2 à Abram Bergson, qui avait souligné que cette fonction n’a besoin de dépendre que des tableaux de préférences des individus. Arrow en tire page 11 une conséquence : la mesurabilité de l’utilité individuelle est sans effet sur l’ordre des utilités sociales. L’impossibilité qui vient ne tiendra donc pas à un refus de mesurer le bonheur des gens."
+    },
+    {
+      "locator": "sections[1].paragraphs[2]",
+      "section_title": "Ce qu’on demande à une règle",
+      "text": "Deux autres exigences portent sur la façon dont la sortie suit l’entrée. La Condition 2 demande le minimum : si une option monte dans les préférences de certaines personnes, tout le reste étant inchangé, le groupe ne doit pas la descendre. La Condition 3, l’indépendance des alternatives non pertinentes, demande un exemple : trois projets à départager, et un quatrième dont personne ne dispose ; ce que le groupe retient parmi les trois ne doit rien devoir à ce quatrième, ni à la façon dont chacun le classerait. Arrow la justifie page 10 par ce que la société choisirait si les options se réduisaient à un ensemble donné : « C(S) should be independent of the very existence of alternatives outside of S »."
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "section_title": "La convention et le dictateur",
+      "text": "Une règle peut satisfaire tout cela sans rien valoir, et Arrow définit page 10 deux familles qui y parviennent trop facilement. Une règle est conventionnelle s’il existe deux options telles que le groupe place toujours la première devant la seconde, ou à égalité, quelles que soient les préférences de chacun : un morceau du classement est fixé d’avance. Elle est dictatoriale s’il existe une personne telle que, dès qu’elle préfère une option à une autre, le groupe fasse de même, quoi que pensent les autres. Une seule paire d’options fixée suffit pour la première famille, qui est donc plus large qu’un classement écrit d’avance en entier."
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "section_title": "La convention et le dictateur",
+      "text": "Ces deux familles ne sont pas écartées après coup, au nom d’un jugement politique : elles le sont par hypothèse. Les Conditions 4 et 5 demandent que la règle ne soit ni conventionnelle ni dictatoriale, et elles sont posées avec les autres, avant toute démonstration. La phrase de la page 3 en gardait la trace, qui excepte certaines méthodes triviales, contraires aux principes démocratiques : ces méthodes existent, elles rendent un classement parfaitement cohérent, et c’est pour cela qu’il faut les nommer pour les mettre dehors. Sans les Conditions 4 et 5, rien ne serait impossible, et la page 10 l’écrit : il existe des règles satisfaisant les Conditions 1 à 3."
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "section_title": "Ce que dit exactement le théorème",
+      "text": "Le résultat tient en une phrase, page 14 : « If the number of alternatives exceeds two, every social welfare function satisfying Conditions 1-3 is either conventional or dictatorial. » Elle ne dit pas qu’aucune règle cohérente n’existe. Elle dit qu’au-delà de deux options, toute règle satisfaisant les trois premières exigences tombe dans l’une des deux familles écartées. Le reste se déduit : la Condition 6 réclame au moins trois options, les Conditions 4 et 5 interdisent les deux familles, et le théorème dit qu’on n’en sort pas. Aucune des six n’est fautive à elle seule, c’est le bloc qui ne tient pas, et la page 11 le dit sans ornement : « It will be shown that Conditions 1-6 are inconsistent. »"
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "section_title": "Ce que dit exactement le théorème",
+      "text": "Une incompatibilité de bloc n’indique pas laquelle des six doit céder. Arrow ne laisse pourtant pas la question ouverte de tous les côtés : page 14, il met hors d’atteinte deux exigences qui découlent selon lui du sens même d’un processus de décision collective, « it is hard to see how Conditions 1 or 3 can be weakened ». Les issues qu’il examine ensuite se prennent ailleurs, et la phrase qui clôt son introduction gardait déjà sa réserve : « Sous certaines restrictions très raisonnables »."
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "section_title": "Pourquoi il en faut au moins trois",
+      "text": "Le seuil de trois options n’est pas un détail de rédaction : c’est la Condition 6, posée page 11 pour écarter les cas triviaux. La démonstration, pages 11 à 13, montre où elle intervient : elle raisonne sur les groupes de personnes dont l’accord suffit à trancher entre deux options, prend le plus petit d’entre eux, puis construit trois profils de préférences sur trois options ; il en sort un groupe décisif strictement plus petit, ce qui est contradictoire. C’est sur trois options que cette construction se fait."
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "section_title": "Pourquoi il en faut au moins trois",
+      "text": "En dessous du seuil, la difficulté disparaît : à deux options, écrit la page 14, le vote majoritaire suffit. Un scrutin par oui ou par non n’est donc pas concerné par l’impossibilité, et Arrow n’en reste pas au constat, puisqu’il y voit le ressort d’une famille entière d’institutions : « This viewpoint is essentially the basis of the Anglo-American two-party system »."
+    },
+    {
+      "locator": "sections[5].paragraphs[0]",
+      "section_title": "Restreindre les préférences plutôt que les exigences",
+      "text": "Il existe une autre sortie, qui ne touche pas aux exigences imposées à la règle mais aux préférences qu’on accepte de recevoir. Page 17, Arrow reprend de D. Black une restriction plus radicale du domaine des préférences individuelles possibles : les options se rangent sur une ligne, chaque personne a une position préférée, et sa préférence décroît à mesure qu’on s’en éloigne. L’image est de lui : « This is the same idea as the left-to-right ordering of political parties in Continental politics ». Black l’avait établi pour un nombre fini d’options, Arrow le généralise à tout espace d’options."
+    },
+    {
+      "locator": "sections[5].paragraphs[1]",
+      "section_title": "Restreindre les préférences plutôt que les exigences",
+      "text": "Le Théorème 4 de la page 17 dit exactement ce que la restriction rapporte : sous elle, le vote majoritaire est une fonction de bien-être social qui satisfait les Conditions 2 à 5 et une forme modifiée de la Condition 1, quel que soit le nombre d’options, à condition que le nombre d’individus soit impair. La réserve appartient au théorème : le contre-exemple à deux individus qui la rend nécessaire est donné page 18. Et la forme modifiée de la Condition 1 dit où l’on a cédé : celle-ci demandait un classement utilisable quelles que soient les préférences reçues, et ce sont les préférences reçues qu’on vient de restreindre."
+    },
+    {
+      "locator": "sections[6].paragraphs[0]",
+      "section_title": "Ce que les gens déclarent, et ce qu’ils veulent",
+      "text": "Une difficulté d’un autre ordre attend page 19. Tout ce qui précède suppose les préférences connues. Or il faut bien les recueillir, par un questionnaire ou par un vote, et rien n’oblige quelqu’un à déclarer ce qu’il préfère vraiment : « there is always the danger of false answers to take advantage of the machinery in the manner of a game ». Arrow en tire une exigence qu’il n’instruit pas : les règles du jeu électoral doivent être conçues de façon que les préférences exprimées coïncident avec les préférences réelles. À la dernière page, une question que le rapport nomme et ne traite pas."
+    }
+  ],
+  "supports": [
+    {
+      "id": "SUP-f7d4154d237128c5",
+      "origin": "validated",
+      "path": "$.$schema",
+      "access": "n/a",
+      "text": "../schema/carte.schema.json"
+    },
+    {
+      "id": "SUP-5cf59a5bb12b00d3",
+      "origin": "validated",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "impossibilite-de-l-agregation-des-preferences"
+    },
+    {
+      "id": "SUP-0e62f75510ea8289",
+      "origin": "validated",
+      "path": "$.slug",
+      "access": "n/a",
+      "text": "impossibilite-de-l-agregation-des-preferences"
+    },
+    {
+      "id": "SUP-ad89626955b2952c",
+      "origin": "validated",
+      "path": "$.status",
+      "access": "n/a",
+      "text": "VALIDATED"
+    },
+    {
+      "id": "SUP-e302728d520d3526",
+      "origin": "validated",
+      "path": "$.title",
+      "access": "n/a",
+      "text": "L'impossibilité de l'agrégation des préférences"
+    },
+    {
+      "id": "SUP-a1cd05bc625f8471",
+      "origin": "validated",
+      "path": "$.themes[0]",
+      "access": "n/a",
+      "text": "agreger-des-preferences"
+    },
+    {
+      "id": "SUP-92c2c5ac6c4d4922",
+      "origin": "validated",
+      "path": "$.theme_labels[\"agreger-des-preferences\"]",
+      "access": "n/a",
+      "text": "Décider à plusieurs"
+    },
+    {
+      "id": "SUP-adb3b0d402f4cd2a",
+      "origin": "validated",
+      "path": "$.authors[0].name",
+      "access": "n/a",
+      "text": "Kenneth J. Arrow"
+    },
+    {
+      "id": "SUP-376d805d9c4cd5c6",
+      "origin": "validated",
+      "path": "$.attribution_note",
+      "access": "n/a",
+      "text": "Rapport signé d'un seul nom sur sa page de titre : « By / Kenneth J. Arrow ». Tout ce qu'il contient n'est pas de lui, et il l'écrit. La fonction de bien-être social et son caractère purement ordinal sont attribués page 2 à Abram Bergson, approche acceptée ensuite par Samuelson et Lange ; l'incohérence du principe de compensation est attribuée page 3 à T. de Scitovsky, et Arrow annonce à la même page que son propos est d'en montrer la généralité ; la restriction où les alternatives se rangent linéairement vient de D. Black, page 17. La page 19 remercie A. Kaplan et J. W. Youngs pour leur aide à la formulation du problème : une aide déclarée n'est pas une cosignature. Ce qui est de lui, c'est l'impossibilité qui s'ensuit."
+    },
+    {
+      "id": "SUP-133eab5cdba384b6",
+      "origin": "validated",
+      "path": "$.hook",
+      "access": "n/a",
+      "text": "Peut-on tirer des préférences de chacun un classement cohérent pour tous ?"
+    },
+    {
+      "id": "SUP-b5bc0c0a929eb9ab",
+      "origin": "validated",
+      "path": "$.summary",
+      "access": "n/a",
+      "text": "Arrow pose six conditions sur une règle d'agrégation des préférences : elles sont incompatibles. Dès trois options, reste un classement fixé d'avance ou celui d'un seul."
+    },
+    {
+      "id": "SUP-6baf44ea6c25240f",
+      "origin": "validated",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "Sous certaines restrictions très raisonnables, aucune méthode d'agrégation des préférences individuelles ne mène à une échelle sociale cohérente […]"
+    },
+    {
+      "id": "SUP-544550dd9b096905",
+      "origin": "validated",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Kenneth J. Arrow, The Possibility of a Universal Social Welfare Function, RAND Corporation, Paper P-41, 26 octobre 1948, 19 p. Numérisation DTIC (AD0603806) sur Internet Archive."
+    },
+    {
+      "id": "SUP-c54577ac6c7ee0e4",
+      "origin": "validated",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 3, fin de la section 1 « Introduction »"
+    },
+    {
+      "id": "SUP-76d11f542691c5ac",
+      "origin": "validated",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-6e59e8efa6b1ddf5",
+      "origin": "validated",
+      "path": "$.quotation.original_text",
+      "access": "n/a",
+      "text": "Under certain very reasonable restrictions, there is no method of aggregating individual preferences which leads to a consistent social preferences scale, apart from certain trivial methods which violate democratic principles."
+    },
+    {
+      "id": "SUP-a006aef58d724e59",
+      "origin": "validated",
+      "path": "$.quotation.original_language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-520c61d935611e51",
+      "origin": "validated",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "in-house"
+    },
+    {
+      "id": "SUP-8e722d61834fb788",
+      "origin": "validated",
+      "path": "$.quotation.translation.translator",
+      "access": "n/a",
+      "text": "Traduction interne non publiée (agent lecteur, chaîne Curiosity). Aucune traduction française publiée de ce rapport RAND de 1948 n'a été identifiée. Trois choses à savoir sur cette traduction, la limite de 150 caractères portant sur le français, plus long que l'anglais. Un, la proposition finale, « apart from certain trivial methods which violate democratic principles », est coupée, et la coupe est marquée par […] ; elle se lit en entier dans le texte original. Elle est essentielle : les méthodes triviales qu'Arrow excepte, la convention et la dictature, produisent bel et bien une échelle cohérente, et sans cette réserve l'énoncé affiché serait plus fort que le sien. C'est pour la même raison que le membre de phrase « Sous certaines restrictions très raisonnables » est conservé intact plutôt que compressé : il porte à lui seul le caractère conditionnel du résultat. Deux, « a consistent social preferences scale » est rendu par « une échelle sociale cohérente » et non par « une échelle de préférence sociale cohérente », faute de place : c'est la seule compression de cette traduction, et l'opposition individuel/social reste lisible, le mot « préférences » figurant deux mots plus haut dans la phrase française, où il qualifie les préférences individuelles. Trois, le tapuscrit porte bien « social preferences scale », avec un s à « preferences », relu deux fois sur l'image : c'est une particularité de ce rapport de 1948, et non la forme « social preference scale » que donnent les reprises ultérieures."
+    },
+    {
+      "id": "SUP-92917c1c4843b676",
+      "origin": "validated",
+      "path": "$.sources[0].label",
+      "access": "full-text",
+      "text": "Kenneth J. Arrow, The Possibility of a Universal Social Welfare Function, RAND Corporation, Paper P-41, 26 octobre 1948, 19 p. Numérisation DTIC (AD0603806) sur Internet Archive."
+    },
+    {
+      "id": "SUP-ec988b343d66a1a7",
+      "origin": "validated",
+      "path": "$.sources[0].kind",
+      "access": "full-text",
+      "text": "primary"
+    },
+    {
+      "id": "SUP-d2b2569baf9cac14",
+      "origin": "validated",
+      "path": "$.sources[0].locator",
+      "access": "full-text",
+      "text": "p. 3 et p. 9-14"
+    },
+    {
+      "id": "SUP-2654589de38bbc00",
+      "origin": "validated",
+      "path": "$.sources[0].url",
+      "access": "full-text",
+      "text": "https://archive.org/details/DTIC_AD0603806"
+    },
+    {
+      "id": "SUP-91ffc3468f40edd0",
+      "origin": "validated",
+      "path": "$.sources[1].label",
+      "access": "metadata-only",
+      "text": "Kenneth J. Arrow, « A Difficulty in the Concept of Social Welfare », Journal of Political Economy, vol. 58, n° 4, août 1950, p. 328-346."
+    },
+    {
+      "id": "SUP-8a7e56dd8ce49180",
+      "origin": "validated",
+      "path": "$.sources[1].kind",
+      "access": "metadata-only",
+      "text": "primary"
+    },
+    {
+      "id": "SUP-28ff10f08c572d22",
+      "origin": "validated",
+      "path": "$.sources[1].locator",
+      "access": "metadata-only",
+      "text": "p. 328-346"
+    },
+    {
+      "id": "SUP-09dd5ecdb7cd0097",
+      "origin": "validated",
+      "path": "$.sources[1].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.1086/256963"
+    },
+    {
+      "id": "SUP-c50fb8983191d154",
+      "origin": "validated",
+      "path": "$.sources[1].url",
+      "access": "metadata-only",
+      "text": "https://doi.org/10.1086/256963"
+    },
+    {
+      "id": "SUP-62b707e122da1804",
+      "origin": "validated",
+      "path": "$.sources[2].label",
+      "access": "metadata-only",
+      "text": "Kenneth J. Arrow, Social Choice and Individual Values, Cowles Commission Monograph 12, New York, John Wiley and Sons, et Londres, Chapman and Hall, 1951"
+    },
+    {
+      "id": "SUP-c01b46ee50da2c17",
+      "origin": "validated",
+      "path": "$.sources[2].kind",
+      "access": "metadata-only",
+      "text": "primary"
+    },
+    {
+      "id": "SUP-fecf619c95e05381",
+      "origin": "validated",
+      "path": "$.sources[2].url",
+      "access": "metadata-only",
+      "text": "https://cowles.yale.edu/sites/default/files/2022-09/m12-all.pdf"
+    },
+    {
+      "id": "SUP-ffc37be1e07d0557",
+      "origin": "validated",
+      "path": "$.review.reviewer",
+      "access": "n/a",
+      "text": "contrôle aveugle"
+    },
+    {
+      "id": "SUP-288bda26b5131d66",
+      "origin": "validated",
+      "path": "$.review.date",
+      "access": "n/a",
+      "text": "2026-09-08"
+    },
+    {
+      "id": "SUP-ab62b4f98906b668",
+      "origin": "validated",
+      "path": "$.review.attribution",
+      "access": "n/a",
+      "text": "confirmee"
+    },
+    {
+      "id": "SUP-427fb1df98a1e120",
+      "origin": "validated",
+      "path": "$.review.quotation",
+      "access": "n/a",
+      "text": "verbatim"
+    },
+    {
+      "id": "SUP-118d16b59e932353",
+      "origin": "validated",
+      "path": "$.review.sources",
+      "access": "n/a",
+      "text": "resolvent"
+    },
+    {
+      "id": "SUP-ed7629ec7b0c3818",
+      "origin": "validated",
+      "path": "$.review.prose",
+      "access": "n/a",
+      "text": "fidele"
+    },
+    {
+      "id": "SUP-e134482677317836",
+      "origin": "validated",
+      "path": "$.review.verdict",
+      "access": "n/a",
+      "text": "PASS"
+    },
+    {
+      "id": "SUP-f336949b039e8d53",
+      "origin": "validated",
+      "path": "$.review.notes[0]",
+      "access": "n/a",
+      "text": "PIÈCE PRIMAIRE OUVERTE MOI-MÊME. https://archive.org/metadata/DTIC_AD0603806 puis téléchargement de https://archive.org/download/DTIC_AD0603806/DTIC_AD0603806.pdf : 6 218 662 octets, MD5 952966b0e1b1ce3abaaf925a6658f803 — identiques à la notice de l'item (champ files). 21 feuillets : feuillet 0 = avis CFSTI « WE REGRET THAT LEGIBILITY OF THIS DOCUMENT IS IN PART UNSATISFACTORY », feuillet 1 = couverture RAND, feuillets 2 à 20 = les 19 pages du rapport. L'OCR de l'item (djvu.txt, MD5 11b4808a87c9f6eab982e030e33a067a) est effectivement inutilisable ; tout ce qui suit est lu sur les images JPEG servies par https://archive.org/download/DTIC_AD0603806/page/nN.jpg (sans suffixe), recadrées localement."
+    },
+    {
+      "id": "SUP-1050a21dd9cf6a6a",
+      "origin": "validated",
+      "path": "$.review.notes[1]",
+      "access": "n/a",
+      "text": "CITATION — vérifiée sur l'image du feuillet n4, dont l'en-tête imprimé porte « -3- », « P-41 », « 10/26/48 ». Le paragraphe se lit sans ambiguïté à cette résolution : « Thus, the compensation principle does not provide a true ordering of social decisions. It is the purpose of this note to show that this phenomenon is very general. Under certain very reasonable restrictions, there is no method of aggregating individual preferences which leads to a consistent social preferences scale, apart from certain trivial methods which violate democratic principles. » La phrase suivante sur la page est le titre de section « 2. The Nature of Preference Relations ». Le locator « p. 3, fin de la section 1 “Introduction” » est donc exact, et `original_text` est verbatim, mot pour mot, y compris la ponctuation."
+    },
+    {
+      "id": "SUP-f987ff1a07a38b73",
+      "origin": "validated",
+      "path": "$.review.notes[2]",
+      "access": "n/a",
+      "text": "CITATION — le point litigieux du pluriel a été relu sur recadrage agrandi (x2) de la ligne : l'imprimé porte bien « a consistent social preferences scale ». Contre-épreuve sur la même page, huit lignes plus bas, section 2 : « is to be a social preference scale », au singulier. Les deux formes coexistent donc sur le feuillet ; le pluriel de la citation est une particularité du tapuscrit et non une faute de recopie, et la fiche a raison de le conserver."
+    },
+    {
+      "id": "SUP-2e1844aa2b83764e",
+      "origin": "validated",
+      "path": "$.review.notes[3]",
+      "access": "n/a",
+      "text": "CITATION — la coupe finale (« apart from certain trivial methods which violate democratic principles ») est marquée par […] en fin de phrase française, `original_text` la donne en entier, et la traduction est déclarée in-house, non publiée. Le membre conditionnel « Sous certaines restrictions très raisonnables » est conservé : la fiche ne rend donc pas inconditionnel ce qu'Arrow conditionne. L'exception coupée est par ailleurs restituée en clair dans le `summary` (« reste un classement fixé d'avance ou celui d'un seul »), qui nomme précisément les deux méthodes triviales exceptées. Compression déclarée « échelle sociale cohérente » pour « consistent social preferences scale » : acceptable, l'opposition individuel/social reste portée par « préférences individuelles » deux mots plus haut."
+    },
+    {
+      "id": "SUP-d2644955665f61ff",
+      "origin": "validated",
+      "path": "$.review.notes[4]",
+      "access": "n/a",
+      "text": "DATE — lue sur deux surfaces différentes du même document, et elles divergent. La couverture RAND (feuillet n1) porte dans son cartouche « P-41 / 26 September 1948 » et, en bas de page, « 20 pp » ; c'est cette couverture qu'ont recopiée les métadonnées DTIC/Internet Archive (champ date « 1948-09-26 »). Les 19 pages de texte portent toutes, en en-tête imprimé, « 10/26/48 » — y compris la page de titre propre du rapport (feuillet n2 : « 10/26/48 / P-41 / THE POSSIBILITY OF A UNIVERSAL SOCIAL WELFARE FUNCTION / By / Kenneth J. Arrow »), vérifié aussi sur n4 (p. 3), n12 (p. 11), n15 (p. 14), n18 (p. 17). J'ai contrôlé sur un second exemplaire numérisé, celui de RAND lui-même (https://www.rand.org/content/dam/rand/pubs/papers/2013/P41.pdf, HTTP 200, 3 970 778 octets, 21 pages) : même couverture « 26 September 1948 / 20 pp ». La notice éditeur (https://www.rand.org/pubs/papers/P41.html, HTTP 200) ne donne que « Year: 1948, Pages: 21 », sans jour ni mois. Le « 26 octobre 1948 » de la fiche est donc adossé à la surface la plus nombreuse et la plus proche du texte (la page de titre du rapport et ses 18 suivantes), et concorde avec la tradition de citation (« Project RAND, RAD(L)-289, 26 October 1948 »). Je ne le tiens pas pour un écart : la contradiction est dans l'objet, pas dans la fiche. Signalé pour que le prochain lecteur ne s'y reprenne pas."
+    },
+    {
+      "id": "SUP-c1daf649941c6ce9",
+      "origin": "validated",
+      "path": "$.review.notes[5]",
+      "access": "n/a",
+      "text": "PAGINATION — « 19 p. » décrit la pagination imprimée du rapport, vérifiée aux deux bornes : feuillet n2 = première page de texte (non chiffrée, titre + section 1), feuillet n20 = « -19- », dernière page, qui porte la section « 9. Acknowledgments » et le sigle de frappe « KJA/hm ». La couverture annonce « 20 pp » (titre compris) et RAND compte « 21 » (feuillets numérisés). Les trois comptes sont cohérents entre eux ; « 19 p. » est celui qui rend le locator « p. 3 et p. 9-14 » lisible."
+    },
+    {
+      "id": "SUP-9d96fb44d5e1ff91",
+      "origin": "validated",
+      "path": "$.review.notes[6]",
+      "access": "n/a",
+      "text": "SOURCE 2 — DOI 10.1086/256963 résolu directement sur api.crossref.org (le serveur MCP documentary n'étant pas exposé, et journals.uchicago.edu répondant 403). La notice rend exactement ce que le libellé annonce : type journal-article, titre « A Difficulty in the Concept of Social Welfare », container « Journal of Political Economy », volume 58, issue 4, pages 328-346, auteur unique « Kenneth J. Arrow », published-print 1950-08, éditeur University of Chicago Press. Aucun écart. Déclarée metadata-only : la fiche n'avance en effet aucune phrase sur son contenu."
+    },
+    {
+      "id": "SUP-ce55bb3f675136c9",
+      "origin": "validated",
+      "path": "$.review.notes[7]",
+      "access": "n/a",
+      "text": "SOURCE 3 — c'est ici que le libellé pouvait mentir, l'ouvrage ayant une deuxième édition (1963) qui porte le même numéro de monographie. J'ai téléchargé https://cowles.yale.edu/sites/default/files/2022-09/m12-all.pdf (HTTP 200, 3 672 090 octets, MD5 082fdc977e1848f9a9f8d1e118a44b77, 108 pages image, sans couche texte) et rendu les liminaires en PNG à 150 dpi. Faux-titre : « COWLES COMMISSION FOR RESEARCH IN ECONOMICS / Monograph No. 12 ». Page de titre : « SOCIAL CHOICE AND INDIVIDUAL VALUES / By / KENNETH J. ARROW / JOHN WILEY & SONS, INC., NEW YORK / CHAPMAN & HALL, LIMITED, LONDON / 1951 ». Verso : « COPYRIGHT, 1951 BY COWLES COMMISSION FOR RESEARCH IN ECONOMICS », sans mention de tirage. Le libellé de la fiche concorde mot pour mot, imprimé londonien compris."
+    },
+    {
+      "id": "SUP-1773b7b003420900",
+      "origin": "validated",
+      "path": "$.review.notes[8]",
+      "access": "n/a",
+      "text": "SOURCE 3, contre-épreuve d'édition : le fichier servi n'est pas la 2e édition déguisée. Les « References » commencent à la p. 93 et s'achèvent à la p. 96 (dernière entrée : Zassenhaus, Zeitschrift für Nationalökonomie, 1934) ; il n'y a ni chapitre VIII ni « Notes on the Theory of Social Choice, 1963 », qui portent la 2e édition à 124 p. OpenLibrary (search.json) distingue bien les deux jeux d'éditions, 1951 Wiley/Chapman & Hall d'une part, 1963 Yale University Press d'autre part. La fiche laisse `doi_isbn` à null, ce qui est correct : aucun ISBN ne peut attester une édition de 1951. Déclarée metadata-only, et aucune phrase de la carte ne s'autorise de son contenu."
+    },
+    {
+      "id": "SUP-f825d2940a198163",
+      "origin": "validated",
+      "path": "$.review.notes[9]",
+      "access": "n/a",
+      "text": "ATTRIBUTION — l'impossibilité est bien d'Arrow, et la fiche ne s'en remet pas à la notoriété : chaque emprunt qu'elle déclare a été retrouvé à la page annoncée. P. 2 (feuillet n3) : « A. Bergson has reintroduced the social welfare function and has pointed out that it need only depend on the preference schedules of individuals […] Bergson's approach has been accepted by Samuelson and Lange ». P. 3 (n4) : « as pointed out by T. de Scitovsky, it may well happen que… Thus, the compensation principle does not provide a true ordering of social decisions. It is the purpose of this note to show that this phenomenon is very general. » P. 17 (n18) : « A more radical restriction upon the range of possible individual preference patterns has been proposed by D. Black. Black's result for a finite number of alternatives is here generalized to any space of alternatives », suivi de la représentation linéaire de l'espace des alternatives. P. 19 (n20) : « I wish to express my thanks to the following individuals at Project RAND: A. Kaplan, University of California at Los Angeles, and J. W. Youngs, University of Indiana, for guidance in formulating the problem; D. Blackwell, Howard University, and O. Helmer for other helpful discussions. » Aide déclarée, pas cosignature : la page de titre du rapport ne porte qu'un nom, sous « By »."
+    },
+    {
+      "id": "SUP-857d3a404d6be264",
+      "origin": "validated",
+      "path": "$.review.notes[10]",
+      "access": "n/a",
+      "text": "ATTRIBUTION, sens inverse : j'ai cherché une paternité concurrente. Le seul différend documenté est celui de Duncan Black (« On Arrow's Impossibility Theorem », Journal of Law and Economics, 1969), qui est une critique et une revendication d'antériorité sur les majorités cycliques et les décisions de comité, non sur le théorème d'impossibilité. Le rapport de 1948 cite d'ailleurs Black en note 14 (JPE LVI, 1948, p. 23-34 ; Econometrica 16, 1948, p. 245-261) et se donne pour tâche de généraliser son résultat. Condorcet (1785) précède le paradoxe, pas le théorème axiomatique. Attribution confirmée."
+    },
+    {
+      "id": "SUP-26bf1cb43f379936",
+      "origin": "validated",
+      "path": "$.review.notes[11]",
+      "access": "n/a",
+      "text": "PROSE — le `summary` a été vérifié terme à terme contre l'imprimé, et non contre un résumé. « Six conditions » : p. 11 (feuillet n12) énonce Condition 4, Condition 5, Condition 4', puis « To guard against trivialities, the following condition is imposed: Condition 6. There are at least three alternatives. » « Elles sont incompatibles » : même page, « It will be shown that Conditions 1-6 are inconsistent. » « Dès trois options, reste un classement fixé d'avance ou celui d'un seul » : p. 14 (feuillet n15), « THEOREM 2. If the number of alternatives exceeds two, every social welfare function satisfying Conditions 1-3 is either conventional or dictatorial », et la section 4 de la même page définit conventionnel (« let R be any weak ordering of the alternatives independent of R1,…,Rn ») et dictatorial (« let R coincide with R1 ») : « fixé d'avance » et « celui d'un seul » sont des rendus exacts, non des images. Le `hook` (« Peut-on tirer des préférences de chacun un classement cohérent pour tous ? ») est la question même du rapport et n'excède rien. Le locator « p. 3 et p. 9-14 » couvre bien l'énoncé et les conditions, celles-ci commençant p. 9 (Condition 1, « For all R1,…,Rn, R is a weak ordering relation »)."
+    },
+    {
+      "id": "SUP-f71bbdef743c7a0f",
+      "origin": "validated",
+      "path": "$.review.notes[12]",
+      "access": "n/a",
+      "text": "HORS MANDAT, sans conséquence sur le verdict : les métadonnées Internet Archive de l'item (date « 1948-09-26 », description reprise de la fiche DTIC) recopient la couverture et non le texte ; qui s'y fierait daterait la pièce de septembre. Le `page_numbers.json` de l'item n'a pas été utilisé, chaque page ayant été reconnue à son en-tête imprimé."
+    },
+    {
+      "id": "SUP-b0c5c502f1f5dd54",
+      "origin": "validated",
+      "path": "$.review.notes[13]",
+      "access": "n/a",
+      "text": "NON ATTEINT, après tentative : le serveur MCP `documentary` n'est pas exposé dans cette session (aucun outil mcp__documentary__*), la résolution du DOI a donc été faite à la main sur api.crossref.org. Le PDF Cambridge de « On the Problem of Social Welfare Functions » (S0315489000007933a.pdf), demandé pour retrouver la citation d'époque du rapport avec son numéro RAD(L)-289, a renvoyé HTTP 200 mais une page HTML de blocage à la place du PDF (824 369 octets, type HTML) : je n'ai donc pas pu confirmer la date d'octobre sur une source secondaire d'époque ouverte par moi, et je m'en tiens à ce que porte le document. Ce point ne change rien : la date est établie sur l'imprimé lui-même."
+    },
+    {
+      "id": "SUP-dc414df4c98fd07d",
+      "origin": "validated",
+      "path": "$.dossier",
+      "access": "n/a",
+      "text": "corpus/evidence/impossibilite-de-l-agregation-des-preferences/lecture.json"
+    },
+    {
+      "id": "SUP-b7a1db7426000161",
+      "origin": "validated",
+      "path": "$.notes[0]",
+      "access": "n/a",
+      "text": "Date. Le millésime affiché suit le texte imprimé et non la notice de l'archive : la page de titre et l'en-tête des dix-neuf pages impriment « 10/26/48 », soit le 26 octobre 1948, relu sur l'image. Les métadonnées Internet Archive de l'item DTIC_AD0603806 portent « 1948-09-26 ». Deux contrôles indépendants ont examiné cet écart et ne le décrivent pas pareil : l'un a lu « 26 September 1948 » sur la couverture numérisée, dont la notice dériverait, l'autre a constaté « 10/26/48 » sur les sept pages de texte qu'il a ouvertes et tient la notice pour fausse. Les deux constats portent sur deux surfaces différentes de la même pièce et aucun ne réfute l'autre. Le désaccord est conservé ici plutôt que tranché."
+    },
+    {
+      "id": "SUP-a2191891f62c6779",
+      "origin": "validated",
+      "path": "$.notes[1]",
+      "access": "n/a",
+      "text": "Deux tentatives de confirmation de cette date par un tiers ont échoué la nuit de la lecture : la notice DTIC, https://apps.dtic.mil/sti/citations/AD0603806, répond 403 « Service unavailable » ; la page RAND du document, https://www.rand.org/pubs/papers/P41.html, répond 403 CloudFront « Request blocked ». Aucun contournement n'a été tenté."
+    },
+    {
+      "id": "SUP-1e3b694255036f16",
+      "origin": "validated",
+      "path": "$.notes[2]",
+      "access": "n/a",
+      "text": "Lisibilité. Le scan porte en tête l'avis du Clearinghouse « WE REGRET THAT LEGIBILITY OF THIS DOCUMENT IS IN PART UNSATISFACTORY », et la couche OCR est très dégradée. Tout ce qui est cité ici a été relu sur l'image en pleine résolution du feuillet correspondant ; les pages 5 à 8, 12, 13 et 18, qui portent les lemmes et les démonstrations, n'ont été lues que sur l'OCR et rien n'en est cité."
+    },
+    {
+      "id": "SUP-046722b07190580e",
+      "origin": "validated",
+      "path": "$.notes[3]",
+      "access": "n/a",
+      "text": "Coupe de la citation. La phrase de la page 3 excepte explicitement des méthodes triviales, qui violent les principes démocratiques : ce sont la fonction conventionnelle, où un classement est fixé d'avance, et la fonction dictatoriale. Cette exception est coupée par […] et se lit en entier dans le texte original affiché sous la citation. Sans elle, l'impossibilité paraîtrait inconditionnelle, ce qu'elle n'est pas."
+    },
+    {
+      "id": "SUP-e2e8d63e65aad0cc",
+      "origin": "validated",
+      "path": "$.notes[4]",
+      "access": "n/a",
+      "text": "Ni Condorcet, ni le paradoxe de vote, ni Borda ne sont nommés dans ce rapport. La méthode de vote par rangs y est exposée page 15 sous le seul nom de « the rank-order method of voting », sans attribution. La recherche a été faite sur la couche OCR des vingt et un feuillets, et la réserve d'OCR ci-dessus vaut aussi pour elle."
+    },
+    {
+      "id": "SUP-ebc238c768b41356",
+      "origin": "validated",
+      "path": "$.notes[5]",
+      "access": "n/a",
+      "text": "L'article de 1950 et le livre de 1951 sont affichés parce qu'ils permettent de suivre ce travail, non parce qu'ils ont été lus : le premier est fermé, notice Crossref seule vérifiée ; les quatre exemplaires du second présents sur Internet Archive portent tous access-restricted-item true et aucun emprunt n'a été tenté. Aucune phrase de cette carte ne porte sur leur contenu, et rien ici ne permet d'affirmer que le rapport de 1948 et ces deux textes disent la même chose. Le rapport emploie d'ailleurs « conventional » pour la première classe de fonctions et énonce six conditions."
+    },
+    {
+      "id": "SUP-c95246b6c5aa10a1",
+      "origin": "validated",
+      "path": "$.notes[6]",
+      "access": "n/a",
+      "text": "La réception de ce texte n'a pas été instruite, ni anglophone ni francophone, et aucune source secondaire n'est donc affichée. En particulier, la question de savoir si la démonstration de 1948 est correcte telle qu'elle est écrite n'a pas été examinée."
+    },
+    {
+      "id": "SUP-f567025d6bd00a44",
+      "origin": "validated",
+      "path": "$.notes[7]",
+      "access": "n/a",
+      "text": "Le thème « agreger-des-preferences » n'est pas déclaré dans src/content/themes.ts : la carte le porte avec son libellé et déclare son domaine, faute de quoi rien ne la situerait dans la taxonomie."
+    },
+    {
+      "id": "SUP-a2c309b70df5275c",
+      "origin": "validated",
+      "path": "$.notes[8]",
+      "access": "n/a",
+      "text": "Édition de la troisième source, corrigée au second tour du contrôle. Le libellé accolait l'adresse de la deuxième édition au millésime de la première. La première édition de 1951 est Cowles Commission Monograph 12, New York, John Wiley and Sons, et Londres, Chapman and Hall, xi-99 p. ; la Cowles Commission était alors à Chicago et n'a rejoint Yale qu'en 1955. L'ISBN affiché et l'URL résolvent vers la deuxième édition, New Haven, Yale University Press, 1963, xi-124 p., Cowles Foundation Monograph 12, LCCN 63023124."
+    },
+    {
+      "id": "SUP-37cccffd4d4756c1",
+      "origin": "validated",
+      "path": "$.notes[9]",
+      "access": "n/a",
+      "text": "Troisième source, refaite au second tour du contrôle, et c'est la seconde correction de cette fiche. Le premier tour avait relevé que le libellé accolait l'adresse de la deuxième édition au millésime de la première ; la correction alors portée attribuait la deuxième édition de 1963 à Yale University Press, et elle était fausse à son tour. Le second tour l'a établi sur pièces : la deuxième édition de 1963 paraît New York, John Wiley and Sons, et Londres, Chapman and Hall, comme Cowles Foundation Monograph 12, et Yale University Press ne reprend qu'au quatrième tirage, en 1970. Établi sur la notice olbp56070 de The Online Books Page de l'Université de Pennsylvanie et sur la chronologie de tirages rendue par le SRU de K10plus, Wiley 1963, 1964, 1966, puis Yale 1970. L'ISBN 9780300013634 a donc été retiré : il résout parfaitement, mais vers un tirage Yale, le système ISBN ne datant que de 1967 à 1970, et il annonçait donc autre chose que ce que le libellé décrit."
+    },
+    {
+      "id": "SUP-b877e1c35475710a",
+      "origin": "validated",
+      "path": "$.notes[10]",
+      "access": "n/a",
+      "text": "La référence résout désormais vers la première édition elle-même, servie en accès libre par la Cowles Foundation, fichier m12-all.pdf de 3 672 090 octets, empreinte MD5 082fdc977e1848f9a9f8d1e118a44b77, 111 pages sans couche texte, dont la page de titre porte « JOHN WILEY and SONS, INC., NEW YORK / CHAPMAN and HALL, LIMITED, LONDON / 1951 » et la page de copyright « BY COWLES COMMISSION FOR RESEARCH IN ECONOMICS ». Le champ consulted reste metadata-only : le volume n'a pas été lu, et aucune phrase de cette carte ne porte sur son contenu."
+    },
+    {
+      "id": "SUP-620fa778ebe059d9",
+      "origin": "evidence:lecture.json",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "impossibilite-de-l-agregation-des-preferences"
+    },
+    {
+      "id": "SUP-674d1cee6f89bea7",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authors[0].name",
+      "access": "n/a",
+      "text": "Kenneth J. Arrow"
+    },
+    {
+      "id": "SUP-68eb2797a0e6397a",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authorship",
+      "access": "n/a",
+      "text": "SOLE_AUTHOR"
+    },
+    {
+      "id": "SUP-0c558d91e2562eea",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.note",
+      "access": "n/a",
+      "text": "Signature lue sur la page de titre du rapport, image du feuillet n2 du scan Internet Archive : « THE POSSIBILITY OF A UNIVERSAL SOCIAL WELFARE FUNCTION / By / Kenneth J. Arrow ». Un seul nom, aucun cosignataire : SOLE_AUTHOR. La même page porte en haut à droite la cote « P-41 » et la date « 10/26/48 », soit le 26 octobre 1948 en notation américaine ; ces deux mentions sont répétées en tête de chacune des dix-neuf pages numérotées, et c'est sur elles que le millésime est établi, pas sur une notice de base. Trois précisions écrites dans la pièce, et qu'il faut porter en toutes lettres plutôt que laisser un script les reconstituer. Premièrement, ce que le rapport revendique en propre est écrit page 3, après la charnière : « It is the purpose of this note to show that this phenomenon is very general. » Le phénomène en question est l'incohérence du principe de compensation, que la même page 3 attribue explicitement à « T. de Scitovsky », orthographe du rapport pour l'économiste Tibor Scitovsky. Ce que le rapport apporte est donc la généralisation d'un résultat d'autrui, et il le dit lui-même. Deuxièmement, les deux premières pages sont une revue de ce qui n'est pas de lui : Jevons, Edgeworth, Marshall, von Neumann et Morgenstern, Fisher, Pareto, Barone, Hotelling pour le principe de compensation, de Scitovsky pour son incohérence, et surtout Abram Bergson, dont la page 2 écrit qu'il « has reintroduced the social welfare function and has pointed out that it need only depend on the preference schedules of individuals and not on the measurability of individual utility », approche acceptée ensuite par Samuelson et Lange. La fonction de bien-être social et son caractère purement ordinal ne sont donc pas d'Arrow, et il ne les revendique nulle part : ce qui est de lui, c'est l'impossibilité qui s'ensuit. Troisièmement, la section 9 du rapport, page 19, remercie quatre personnes du Projet RAND : A. Kaplan, université de Californie à Los Angeles, et J. W. Youngs, université d'Indiana, « for guidance in formulating the problem », puis D. Blackwell, Howard University, et O. Helmer « for other helpful discussions ». Une aide déclarée à la formulation du problème n'est pas une coécriture et ne déplace pas la signature ; elle se consigne parce qu'elle est écrite dans la pièce. Enfin, un fait négatif à consigner parce qu'il contredit ce que la mémoire du champ associe à ce texte : aucune mention de Condorcet ni de paradoxe de vote ne figure dans ce rapport de 1948. Le seul prédécesseur cité pour le vote majoritaire est Duncan Black, en note 14 de la page 17, pour deux articles de 1948, et la page 17 écrit que « Black's result for a finite number of alternatives is here generalized to any space of alternatives »."
+    },
+    {
+      "id": "SUP-d5df6beb1a1807f9",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "Sous certaines restrictions très raisonnables, aucune méthode d'agrégation des préférences individuelles ne mène à une échelle sociale cohérente […]"
+    },
+    {
+      "id": "SUP-e06ebcb6cd185701",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Arrow, K. J. (1948). The Possibility of a Universal Social Welfare Function. RAND Corporation, Paper P-41, 26 octobre 1948, 19 p. Exemplaire numérisé du miroir DTIC (AD0603806) lu sur Internet Archive, identifiant DTIC_AD0603806."
+    },
+    {
+      "id": "SUP-450e73b8b4fc2f83",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 3, dernier alinéa de la section 1 « Introduction », juste avant l'intertitre « 2. The Nature of Preference Relations ». Folio « -3- » imprimé en tête de page, à côté de la cote P-41 et de la date 10/26/48, lu sur l'image du feuillet n4 du scan."
+    },
+    {
+      "id": "SUP-f53d4083d6b3e451",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-572e49b3cf5dc878",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.original_text",
+      "access": "n/a",
+      "text": "Under certain very reasonable restrictions, there is no method of aggregating individual preferences which leads to a consistent social preferences scale, apart from certain trivial methods which violate democratic principles."
+    },
+    {
+      "id": "SUP-25b44e99e7adef42",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.original_language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-abe57de2585fb205",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "in-house"
+    },
+    {
+      "id": "SUP-a745250df6ece197",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.translation.translator",
+      "access": "n/a",
+      "text": "Traduction interne non publiée (agent lecteur, chaîne Curiosity). Aucune traduction française publiée de ce rapport RAND de 1948 n'a été identifiée. Trois choses à savoir sur cette traduction, la limite de 150 caractères portant sur le français, plus long que l'anglais. Un, la proposition finale, « apart from certain trivial methods which violate democratic principles », est coupée, et la coupe est marquée par […] ; elle se lit en entier dans original_text. Elle est essentielle : les méthodes triviales qu'Arrow excepte, la convention et la dictature, produisent bel et bien une échelle cohérente, et sans cette réserve l'énoncé affiché serait plus fort que le sien. C'est pour la même raison que le membre de phrase « Sous certaines restrictions très raisonnables » est conservé intact plutôt que compressé : il porte à lui seul le caractère conditionnel du résultat. Deux, « a consistent social preferences scale » est rendu par « une échelle sociale cohérente » et non par « une échelle de préférence sociale cohérente », faute de place. C'est la seule compression de cette traduction et elle est signalée ici plutôt que masquée ; l'opposition individuel/social reste lisible, le mot « préférences » figurant deux mots plus haut dans la phrase française où il qualifie les préférences individuelles. Trois, le tapuscrit porte bien « social preferences scale », avec un s à « preferences », relu deux fois sur l'image : c'est une particularité de ce rapport de 1948, et non la forme « social preference scale » que donnent les reprises ultérieures."
+    },
+    {
+      "id": "SUP-21d5f16b41dcf6a6",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation._verification",
+      "access": "n/a",
+      "text": "Verbatim établi sur l'image de la page, pas sur la couche OCR, et la précaution n'est pas de style : le feuillet n0 du scan porte l'avis du Clearinghouse « WE REGRET THAT LEGIBILITY OF THIS DOCUMENT IS IN PART UNSATISFACTORY », et la couche OCR rend le titre du rapport « THE PoosIBILITI OP A UNIVERSAL SOCIAL WELFARE FUNCTION ». Méthode : la couche texte n'a servi qu'au repérage, après découpe de DTIC_AD0603806_djvu.xml en 21 feuillets ligne à ligne ; puis l'image du feuillet n4 a été téléchargée en pleine résolution, 2400 x 3139 pixels à 300 ppp, par le dérivé sans suffixe https://archive.org/download/DTIC_AD0603806/page/n4.jpg, et la phrase relue sur deux recadrages successifs, l'un couvrant ses cinq premières lignes, l'autre ses deux dernières. Le dérivé _x1600.jpg n'a pas été employé : il rogne le feuillet à gauche et ampute le début de chaque ligne. Pour cette phrase, image et OCR concordent mot pour mot, ce qui n'est pas le cas ailleurs dans le rapport. Localisation : le folio « -3- » est imprimé en tête de cette même image, avec la cote « P-41 » et la date « 10/26/48 » ; il n'a pas été déduit d'un index de feuillet. Le fichier DTIC_AD0603806_page_numbers.json de l'archive est d'ailleurs vide de tout folio, page_number_confidence 0 et pageNumber vide pour les 21 feuillets, et n'aurait rien pu fournir. La correspondance constatée sur ce scan, feuillet nN égale page N moins 1, a été vérifiée une à une sur les en-têtes imprimés des pages 2, 3, 9, 10, 11, 14, 15, 16, 17 et 19 ; elle n'est appliquée nulle part sans cette vérification. Empreintes contrôlées contre la notice Internet Archive avant lecture, les trois concordent : DTIC_AD0603806.pdf, 6 218 662 octets, MD5 952966b0e1b1ce3abaaf925a6658f803 ; DTIC_AD0603806_djvu.txt, 45 502 octets, MD5 11b4808a87c9f6eab982e030e33a067a ; DTIC_AD0603806_djvu.xml, MD5 ed52fd014b0b55331b18decd1c40c2eb."
+    },
+    {
+      "id": "SUP-1cc381c39104d016",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].citation",
+      "access": "full-text",
+      "text": "Arrow, K. J. (1948). The Possibility of a Universal Social Welfare Function. RAND Corporation, Paper P-41, 26 octobre 1948. Tapuscrit de 19 pages numérotées, précédé d'une page de titre et d'un avis du Clearinghouse sur la lisibilité. Numérisation DTIC (AD0603806) mirée sur Internet Archive, collections dticarchive, usgovernmentmirrors et government-documents, 21 feuillets à 300 ppp. Notice sans champ access-restricted-item, sans restriction d'emprunt : PDF et images téléchargeables directement. Lu intégralement, couche OCR pour le repérage et images pour tout ce qui est cité."
+    },
+    {
+      "id": "SUP-346ed7d9ae730d58",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].url",
+      "access": "full-text",
+      "text": "https://archive.org/details/DTIC_AD0603806"
+    },
+    {
+      "id": "SUP-1587142d303997a4",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].citation",
+      "access": "metadata-only",
+      "text": "Arrow, K. J. (1950). « A Difficulty in the Concept of Social Welfare ». Journal of Political Economy, 58(4), 328-346. University of Chicago Press. Version publiée du même travail, deux ans après le rapport. Notice Crossref vérifiée cette nuit : titre, auteur unique Kenneth J. Arrow, revue, volume 58, numéro 4, pagination 328-346, août 1950. Texte fermé, non ouvert."
+    },
+    {
+      "id": "SUP-6539d53463da7722",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.1086/256963"
+    },
+    {
+      "id": "SUP-425b7413d96f9096",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].url",
+      "access": "metadata-only",
+      "text": "https://doi.org/10.1086/256963"
+    },
+    {
+      "id": "SUP-4ea8cc39f1b4d3b3",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].citation",
+      "access": "metadata-only",
+      "text": "Arrow, K. J. (1951, 2e éd. 1963). Social Choice and Individual Values. Yale University Press. Ouvrage où le résultat prend sa forme canonique. Non ouvert : les quatre exemplaires présents sur Internet Archive ont été réinterrogés cette nuit par l'API de recherche et portent tous access-restricted-item true (socialchoiceindi0000arro, socialchoiceindi0000kenn, socialchoiceindi02edarro, socialchoiceindi0000arro_k6v2). Notice OpenLibrary seule consultée."
+    },
+    {
+      "id": "SUP-7103ecf6d144ac68",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].doi_isbn",
+      "access": "metadata-only",
+      "text": "9780300013634"
+    },
+    {
+      "id": "SUP-a9e80ce9385da557",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].url",
+      "access": "metadata-only",
+      "text": "https://openlibrary.org/works/OL5103552W"
+    },
+    {
+      "id": "SUP-9e5fa0842208cd3d",
+      "origin": "evidence:lecture.json",
+      "path": "$.definition_de_lauteur",
+      "access": "n/a",
+      "text": "Dans les termes du rapport, lu du feuillet n2 au feuillet n20, c'est-à-dire de la page de titre à la page 19. Le problème est posé page 9, section 3 : « The problem of social welfare is to form a function of the individual preference patterns such that the values of the function are themselves weak ordering relations. » Tout le vocabulaire est fixé avant, section 2, pages 3 à 9. Arrow travaille non pas avec la préférence et l'indifférence mais avec la seule relation R, « preferred or indifferent », soumise à deux axiomes, la connexité (pour tous x et y, soit x R y soit y R x) et la transitivité ; ces deux axiomes définissent une relation d'ordre faible. Il montre ensuite, Théorème 1 page 8, que se donner un ordre faible ou se donner une fonction de choix rationnelle C(S), qui associe à tout ensemble d'alternatives S le sous-ensemble choisi, est exactement la même chose : les deux langages sont interchangeables, et il emploiera l'un ou l'autre selon la commodité. Les alternatives, précise la page 3, sont ici des décisions sociales. Viennent alors six conditions, pages 9 à 11. Condition 1, « Universality of Social ordering » : pour tous R1,...,Rn, R est une relation d'ordre faible, autrement dit la règle d'agrégation doit rendre un ordre cohérent quelles que soient les préférences individuelles reçues. Condition 2, « Monotonicity » : si une alternative monte dans les préférences de certains individus, toutes choses égales par ailleurs, la société ne doit pas la classer plus bas. Condition 3, « Independence of irrelevant alternatives », motivée page 10 par le fait que C(S) doit s'interpréter comme le choix que la société ferait si l'espace des alternatives se réduisait à S : « This being so, C(S) should be independent of the very existence of alternatives outside of S, and therefore should depend only on the individual preference scales within S. » Conditions 4 et 5 : la fonction ne doit être ni conventionnelle ni dictatoriale, au sens des Définitions 8 et 9 de la page 10. Est conventionnelle une fonction telle qu'il existe deux alternatives distinctes x et y avec x R y indépendamment de R1,...,Rn, c'est-à-dire un classement fixé d'avance, soustrait au contrôle populaire ; est dictatoriale une fonction telle qu'il existe un individu i pour lequel x P y dès que x Pi y, quelles que soient les préférences de tous les autres. Condition 6, page 11, pour écarter les cas triviaux : il y a au moins trois alternatives. La page 10 annonce le résultat : « There are social welfare functions satisfying Conditions 1-3; the main theorem of this essay is to show that these functions fall into one of the two classes given by the following definitions. » La page 11 le dit sous sa forme la plus nue : « It will be shown that Conditions 1-6 are inconsistent. » La démonstration, pages 11 à 13, passe par la notion d'ensemble décisif, Définition 10 page 11 : un ensemble V d'individus est décisif pour x contre y si x P y chaque fois que x Pi y pour tout i dans V. Cinq conséquences sont tirées, dont la troisième, page 12, que l'ensemble de tous les individus est décisif pour toute paire, et la cinquième, page 13, qu'aucun individu ne peut être décisif à lui seul pour une paire, sous peine de contredire la Condition 5. La contradiction s'obtient page 13 en prenant le plus petit ensemble décisif et en construisant trois profils de préférences sur trois alternatives, ce qui rend décisif un ensemble strictement plus petit. Le résultat est énoncé page 14, Théorème 2 : « If the number of alternatives exceeds two, every social welfare function satisfying Conditions 1-3 is either conventional or dictatorial. » Trois choses en découlent que le rapport écrit lui-même. Un, l'impossibilité ne tient pas à ce que l'utilité serait incommensurable : page 11, « Condition 3 implies that in considering C(S), we can disregard all preferences among alternatives not in S. Also, R, and therefore C(S), is completely defined by considering only two-element sets of alternatives. This shows that measurability of individual utility is irrelevant to the ordering of social utilities. » Deux, le rapport cherche ensuite laquelle des conditions relâcher, et écarte d'emblée les deux qu'il juge intouchables, page 14 : « From the very meaning of a social decision process, it is hard to see how Conditions 1 or 3 can be weakened. » Trois, il examine donc les autres voies. Section 5, page 14 : à deux alternatives, la difficulté disparaît et le vote majoritaire suffit, « This viewpoint is essentially the basis of the Anglo-American two-party system ». Section 7, pages 16 à 18 : restreindre le domaine des préférences individuelles admissibles. C'est là qu'intervient la Condition A, page 17, reprise de D. Black et généralisée par Arrow à tout espace d'alternatives : les alternatives se rangent linéairement, chaque individu a une position préférée et sa préférence décroît à mesure qu'on s'en éloigne dans l'une ou l'autre direction, « This is the same idea as the left-to-right ordering of political parties in Continental politics ». Sous cette restriction, le Théorème 4 de la page 17 établit que « The method of majority decision is a social welfare function satisfying Conditions [1 avec double prime] and 2-5 for any number of alternatives, provided the number of individuals is odd. », la mention entre crochets remplaçant un signe de double prime que le tapuscrit porte en exposant. La réserve finale fait partie du théorème, elle n'est pas ajoutée après coup, et la page 18 en donne le contre-exemple à deux individus qui la rend nécessaire. Enfin, section 8, page 19, une difficulté d'un autre ordre, que le rapport ne traite pas et se contente de nommer : si les préférences individuelles doivent être recueillies par un questionnaire ou par un vote, « there is always the danger of false answers to take advantage of the machinery in the manner of a game », et « the rules of the electoral game must be so devised as to insure that expressed preferences coincide with actual preferences »."
+    },
+    {
+      "id": "SUP-733e0033522a077b",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[0]",
+      "access": "n/a",
+      "text": "Réserve d'OCR, déclarée par le document lui-même. Le feuillet n0 du scan reproduit un avis du Clearinghouse for Federal Scientific and Technical Information : « WE REGRET THAT LEGIBILITY OF THIS DOCUMENT IS IN PART UNSATISFACTORY. REPRODUCTION HAS BEEN MADE FROM BEST AVAILABLE COPY. » La couche texte est effectivement très dégradée : elle rend le titre « THE PoosIBILITI OP A UNIVERSAL SOCIAL WELFARE FUNCTION », la cote P-41 en « p-a », Bergson en « Ber;:son », Blackwell en « Hlr-ckwell ». Conséquence tenue sans exception : tout ce qui est cité en anglais dans cette fiche, citation retenue comprise, a été relu sur l'image en pleine résolution du feuillet correspondant. Les pages relues sur image sont les pages 2, 3, 4, 9, 10, 11, 14, 15, 16, 17 et 19, plus la page de titre : elles couvrent toutes celles dont un mot est cité entre guillemets où que ce soit dans cette fiche, citation retenue, note d'attribution et definition_de_lauteur comprises. Les pages 5 à 8, 12, 13 et 18, qui portent les lemmes, les démonstrations et le contre-exemple à deux individus, n'ont été lues que sur la couche OCR ; aucun mot n'en est cité entre guillemets, et ce qui en est rapporté dans definition_de_lauteur est un compte rendu de structure, pas un verbatim."
+    },
+    {
+      "id": "SUP-229c4781d0916a46",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[1]",
+      "access": "n/a",
+      "text": "Discordance de date, tranchée sur la pièce mais non confirmée par un tiers. Les métadonnées Internet Archive de l'item DTIC_AD0603806 portent « date : 1948-09-26 », soit le 26 septembre 1948. Le document imprime « 10/26/48 » sur sa page de titre et en tête de chacune de ses dix-neuf pages numérotées, soit le 26 octobre 1948 en notation américaine. C'est la pièce qui a été suivie. Deux tentatives de confirmation par un tiers ont échoué cette nuit et sont rapportées telles quelles : la notice DTIC elle-même, https://apps.dtic.mil/sti/citations/AD0603806, répond 403 avec la page « Service unavailable » ; la page de RAND pour ce document, https://www.rand.org/pubs/papers/P41.html, répond 403 avec la page CloudFront « Request blocked ». Aucun contournement n'a été tenté. La date du 26 octobre 1948 est donc établie sur le document et sur lui seul, ce qui est le meilleur des deux témoignages, mais l'écart avec la notice de l'archive n'est pas expliqué."
+    },
+    {
+      "id": "SUP-11e4d6651aa57513",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[2]",
+      "access": "n/a",
+      "text": "L'article publié qui reprend ce travail, Arrow, K. J., « A Difficulty in the Concept of Social Welfare », Journal of Political Economy 58(4), 1950, p. 328-346, DOI 10.1086/256963, n'a pas été ouvert : il est fermé. Sa notice Crossref a été vérifiée cette nuit, rien de plus. Aucune phrase de cette fiche n'est localisée dans cet article, et aucune comparaison entre les deux versions n'a pu être faite : rien ici ne permet d'affirmer que le rapport de 1948 et l'article de 1950 disent la même chose, ni de dire ce qui a changé entre eux. Le rapport de 1948 emploie d'ailleurs un vocabulaire que la forme canonique ultérieure abandonnera, « conventional » pour la première classe de fonctions, et il énonce six conditions là où le livre en retiendra un autre nombre."
+    },
+    {
+      "id": "SUP-96c1f110befa2292",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[3]",
+      "access": "n/a",
+      "text": "Le livre de 1951, Social Choice and Individual Values, n'a pas été ouvert. Les quatre exemplaires présents sur Internet Archive ont été réinterrogés cette nuit par l'API de recherche de l'archive et portent tous access-restricted-item true : socialchoiceindi0000arro, socialchoiceindi0000kenn, socialchoiceindi02edarro et socialchoiceindi0000arro_k6v2. Aucun emprunt n'a été tenté, la règle d'accès l'interdisant. Rien de ce que cette fiche affirme ne repose sur le livre."
+    },
+    {
+      "id": "SUP-cdb83a1580a27f64",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[4]",
+      "access": "n/a",
+      "text": "Les prédécesseurs que le rapport cite n'ont pas été ouverts et sont rapportés tels qu'Arrow les écrit, notes relues sur l'image et non sur l'OCR : note 7 de la page 2, « A. Bergson, \"A Reformulation of Certain Aspects of Welfare Economics\", Quarterly Journal of Economics, LII, (1938), pp. 310-334 » ; note 8 de la page 2, Samuelson op. cit. pp. 219-252 et « O. Lange, \"The Foundations of Welfare Economics\", Econometrica, X, (1942) pp. 215-228 » ; note 9 de la page 3, « H. Hotelling, \"The General Welfare in Relation to Problems of Taxation and of Railway and Utility Rates\", Econometrica, VI (1938), pp. 242-269 » ; note 10 de la page 3, « T. de Scitovsky, \"A Note on Welfare Propositions in Economics\", Review of Economic Studies, IX (1941), pp. 77-88 » ; note 14 de la page 17, « D. Black, \"On the Rationals of Group Decision-Making,\" Journal of Political Economy, LVI (1948), pp. 23-34. \"The Decisions of a Committee Using a Special Majority\", Econometrica, 16 (1948), pp. 245-261 ». Le passage par l'image n'était pas superflu : pour la seule note 8, l'OCR donne « (1944) pp. 215-226 » là où la page imprime « (1942) pp. 215-228 ». Aucune de ces références n'a été ouverte ni vérifiée à la source : l'antériorité qu'elles portent est une déclaration d'Arrow, pas un constat établi par cette lecture. Deux orthographes du rapport sont à signaler telles quelles : « Rationals » pour Rationale dans le titre de Black, et « T. de Scitovsky » pour l'économiste habituellement cité Tibor Scitovsky."
+    },
+    {
+      "id": "SUP-fb33b20a1ceabdac",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[5]",
+      "access": "n/a",
+      "text": "Fait négatif, à consigner parce qu'il contredit ce que la mémoire du champ prête à ce texte. Ni Condorcet, ni le paradoxe de vote, ni Borda ne sont nommés dans ce rapport de 1948. La recherche a été faite sur la couche OCR des vingt et un feuillets, sur les formes entières et sur des fragments tolérants aux coquilles de reconnaissance, et le rapport a par ailleurs été parcouru en entier. La méthode de vote par rangs y est bien exposée, page 15, mais sous le nom de « rank-order method of voting » et sans aucune attribution. La réserve qui subsiste est celle de l'OCR : sur un texte aussi dégradé, une occurrence isolée pourrait avoir échappé à la recherche par chaîne. Elle n'aurait pas échappé au parcours des pages, mais celui-ci a été fait sur l'OCR pour les pages non citées."
+    },
+    {
+      "id": "SUP-860522c6c0b87ee7",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[6]",
+      "access": "n/a",
+      "text": "Deux citations candidates ont été écartées, et il faut dire pourquoi plutôt que laisser croire qu'aucune autre n'existait. La première est le Théorème 2, page 14, relu sur l'image : « If the number of alternatives exceeds two, every social welfare function satisfying Conditions 1-3 is either conventional or dictatorial. » Il tient en français sous 150 caractères sans aucune coupe, et c'est l'énoncé exact du résultat ; il a été écarté parce qu'il renvoie à des conditions numérotées et à deux termes techniques, « conventionnelle » et « dictatoriale », qu'une carte de 170 caractères de résumé ne peut pas définir : affiché seul, il n'apprendrait rien. La seconde est la phrase entière de la page 3, dont la citation retenue est une coupe : elle fait 224 caractères en anglais et 259 dans la traduction complète, et aucune coupe ne la ramène sous 150 caractères en conservant à la fois la restriction initiale, l'énoncé d'impossibilité et l'exception des méthodes triviales. Le choix fait a été de conserver la restriction initiale intacte et de couper l'exception, parce que la restriction porte le caractère conditionnel du résultat, et de rendre l'exception lisible en entier dans original_text et dans la note de traduction."
+    },
+    {
+      "id": "SUP-406e998e5d44c357",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[7]",
+      "access": "n/a",
+      "text": "La réception de ce texte n'a pas été instruite, ni anglophone ni francophone : aucune base bibliométrique n'a été interrogée, aucun commentaire, aucune contestation, aucune reformulation ultérieure du théorème n'a été ouverte. Ce silence n'est pas un constat d'absence de discussion, c'est un point non instruit, hors du périmètre de cette lecture. En particulier, la question de savoir si la démonstration de 1948 est correcte telle qu'elle est écrite n'a pas été examinée, et la littérature a discuté ce point pour les premières versions du théorème."
+    }
+  ],
+  "estimated_tokens": 21306,
+  "status": "READY"
+}

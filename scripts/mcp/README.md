@@ -32,6 +32,50 @@ par défaut est 23119 ; `ZOTERO_LOCAL_API` permet d'en changer. C'est la seule b
 connaître les éditions que vous avez réellement ouvertes, ce qui en fait la source
 naturelle des paginations.
 
+## `CONNECTION_CLOSED` : la cause, trouvée le 24 septembre 2026
+
+Le serveur a été consigné en échec de connexion pendant des semaines, à partir du
+29 août, et le dépôt a construit ses parades autour de ce constat. **La cause n'était pas
+dans le serveur.**
+
+Le conteneur d'une session distante est recréé à neuf à chaque démarrage, `node_modules`
+est ignoré par git (`.gitignore`), et rien n'installait les dépendances. Le harnais lance
+le serveur au démarrage ; celui-ci importe `@modelcontextprotocol/sdk`, qui est une
+dépendance de développement absente de l'arbre, et meurt aussitôt :
+
+```
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package '@modelcontextprotocol/sdk'
+    imported from scripts/mcp/documentary-server.mjs
+```
+
+Un serveur stdio qui sort avant d'avoir écrit sur sa sortie standard est indiscernable,
+côté client, d'un serveur qui ferme sa connexion. D'où `CONNECTION_CLOSED`, qui désignait
+un arbre de dépendances vide et non un défaut de réseau, de configuration ou de code.
+
+Mesuré le 24 septembre, dans cet ordre : `node_modules` absent ; lancement direct du
+serveur en `ERR_MODULE_NOT_FOUND` ; `npm ci` ; relance ; le serveur répond à `initialize`
+du premier coup en annonçant `documentary 1.0.0`.
+
+**La parade est `.claude/hooks/session-start.sh`**, déclaré en `SessionStart` dans
+`.claude/settings.json`. Il est **synchrone à dessein** : en asynchrone, l'installation
+courrait contre le lancement du serveur par le harnais, qui est exactement la course qu'il
+existe pour supprimer. Il coûte 24 s sur un conteneur froid et 1 s sur un conteneur chaud.
+
+Deux conséquences qu'il vaut mieux savoir avant de rediagnostiquer :
+
+- **Le hook ne vaut que sur la branche par défaut.** Tant qu'il n'y est pas fusionné, une
+  session part sans lui et le serveur retombe.
+- **Le correctif n'agit pas sur la session qui l'écrit.** Le harnais tente la connexion au
+  démarrage, donc avant l'installation ; il faut une session neuve.
+
+Les trois clignotements consignés — 1er, 7 et 8 septembre, chaque fois après une clôture et
+jamais pendant un lot — deviennent lisibles sous cette cause : une clôture lance `npm test`
+ou `npm run build`, qui exigent l'un et l'autre d'installer l'arbre, et une reconnexion
+ultérieure trouvait alors les dépendances en place. **C'est une explication cohérente avec
+les faits consignés, pas une mesure** : la corrélation « toujours après une clôture » avait
+été relevée à l'époque sans qu'on en tienne la cause, et l'invariant du dépôt vaut ici
+comme ailleurs — l'absence de contradiction ne prouve rien.
+
 ## Outils
 
 | Outil | Ce qu'il fait |

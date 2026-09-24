@@ -394,6 +394,20 @@ consécutives au 4 septembre**. `corpus-scout`, `corpus-primary-reader` et `corp
 s'appuient tous les trois sur ses outils de recherche et de vérification de référence, et la
 phase 3 en dépend donc.
 
+> **Résolu le 24 septembre 2026, et le diagnostic ci-dessus était faux.** Rien ne clochait
+> dans le serveur. Le conteneur d'une session distante est recréé à neuf, `node_modules` est
+> ignoré par git, et rien n'installait les dépendances : le serveur mourait en important
+> `@modelcontextprotocol/sdk`, ce que le client rapporte comme `CONNECTION_CLOSED`. Après
+> `npm ci`, il répond à `initialize` du premier coup. La parade est un hook `SessionStart`
+> synchrone, `.claude/hooks/session-start.sh`, et **elle ne vaut qu'une fois fusionnée sur la
+> branche par défaut**. Cause, mesures et limites : [`scripts/mcp/README.md`](../scripts/mcp/README.md).
+>
+> Ce que cet épisode coûte en méthode mérite d'être retenu : **une condition a été tenue pour
+> une fatalité pendant des semaines parce qu'on la reconstatait au lieu de l'instruire.** Chaque
+> nuit vérifiait que le serveur était fermé — ce qui était vrai — et aucune ne lançait le
+> serveur à la main pour lire son erreur, qui nommait la cause en une ligne. La règle « on
+> l'essaie au lever, en un appel » mesurait le symptôme et interdisait d'aller plus loin.
+
 **Le retour du 1er septembre à 06h10 UTC ne s'est jamais confirmé.** Il avait répondu une fois, sur
 une référence de ce chantier même, le DOI `10.3389/fpsyg.2021.785721` de la reprise 3 ci-dessous,
 puis disparu et réapparu trois fois en quelques minutes. Les passages 10, 11 et 12 l'ont constaté

@@ -47,7 +47,20 @@ Une carte est stale si :
 - le deepening a changé ;
 - le fichier validated a changé ;
 - la version du protocole a changé ;
+- **son rapport porte `result: rewrite_rejected_factcheck` ou `rewrite_rejected`, ou
+  `factcheck_verdict: FACTCHECK_FAIL` ou `FACTCHECK_INVALID`** ;
 - elle est demandée explicitement.
+
+L'avant-dernière condition a été ajoutée le 24 septembre 2026, après que le cas s'est produit.
+Sans elle, **une carte refusée devient invisible à `--stale`, et c'est le pire état possible**.
+Le mécanisme est le suivant : un refus au plafond de boucles restaure le deepening dans son état
+d'origine, donc son SHA redevient celui que le rapport enregistre, donc les quatre premières
+conditions sont toutes fausses. La carte est alors traitée comme à jour alors que son rapport dit
+l'inverse — **elle est moins bien lotie qu'une carte jamais auditée, puisqu'on sait qu'elle est
+défectueuse et qu'on ne la resélectionnera pas.** `heuristiques-de-jugement` a été ce cas.
+
+Un rapport de refus n'atteste donc pas qu'une carte est traitée. Il atteste qu'elle a été
+instruite, que la réparation a échoué, et que ce qui reste à réparer est écrit.
 
 Arguments :
 
