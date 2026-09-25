@@ -56,11 +56,29 @@ la restauration vérifiée au `sha256sum`. Le candidat refusé est conservé sou
 `work/points-de-levier/candidate-rejected-factcheck.json`.
 
 **Et il faut écrire ce que cette restauration coûte, parce que le rapport serait malhonnête sans
-cela.** Le texte restauré est celui dont le premier gate a refusé **14 claims sur 49**. Le candidat
-mis de côté en refusait **4 sur 45**. La carte revient donc à l'état publié, qui est **mesurément le
-plus faible des trois états traversés**, et elle y revient sur une règle dont l'intention est de ne
-jamais publier un texte non vérifié — intention juste, appliquée ici à un texte qui ne l'était pas
-davantage. Le plafond n'a pas protégé le lecteur ; il a rétabli une version plus fausse.
+cela.** Le candidat mis de côté refusait **4 claims sur 45**. Le texte restauré, lui, **n'a jamais
+été soumis à un gate** : les trois gates de ce cycle ont porté sur des versions réécrites, la
+première sur le texte de 1 102 mots issu de la passe 1, jamais sur les 1 120 mots d'origine. Son
+nombre d'affirmations non soutenues est donc **inconnu**, et non pas mesuré.
+
+*Correction du 25 septembre 2026, portée après coup sur ce rapport.* Une première rédaction écrivait
+ici que le texte restauré était « celui dont le premier gate a refusé 14 claims sur 49 ». C'était
+faux, et d'une façon qui flattait l'argument : ce gate jugeait la réécriture, pas la version
+d'origine. Le même énoncé erroné figure dans le message du commit qui a porté la restauration, et il
+ne peut pas y être corrigé.
+
+Ce qu'on peut affirmer sans le mesurer est plus étroit et suffit. La passe 1 a retiré du texte
+d'origine, faute d'appui, l'énumération des huit barreaux intermédiaires et leur ordre, l'anecdote
+Forrester en attribution de chaîne, la loi générale sur les boucles, « l'essentiel du débat public »,
+et la règle et le but inventés dans l'image de plomberie. **Ces affirmations sont donc de retour dans
+le texte servi au lecteur**, et elles n'étaient pas soutenues quand elles ont été retirées. Le
+plafond n'a pas protégé le lecteur : il a rétabli une version dont on sait qu'elle porte au moins ces
+défauts-là, au prix d'une version dont on savait exactement ce qui lui restait à corriger. Que
+l'ampleur exacte ne soit pas chiffrée ne change pas le sens de l'échange, mais elle interdit de le
+présenter comme une comparaison de scores.
+
+La règle reste juste dans son intention — une réécriture non validée ne se publie pas — et l'audit
+n'a pas autorité pour en décider autrement.
 
 Ce n'est pas un motif pour outrepasser la règle : une réécriture non validée ne se publie pas, et
 l'audit n'a pas autorité pour en décider. C'est un motif pour **reprendre cette carte avec un
