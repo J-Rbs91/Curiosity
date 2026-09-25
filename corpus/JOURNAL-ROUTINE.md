@@ -5,6 +5,90 @@ coup d'œil ce que la précédente a fait, sur quelle branche elle l'a laissé, 
 reprendre. **Les scripts priment sur ce fichier** : il dit ce qui a été tenté et pourquoi, ils
 disent ce qui est.
 
+## Passage d'audit — 2026-09-25
+
+Deuxième exécution de la routine d'audit. **Trois cartes instruites, aucune publiée, et deux
+défauts d'outillage trouvés qui valent plus que le lot.** `ROUTINE_PASS_WITH_BLOCKED_SOURCES`.
+
+- branche      : `claude/beautiful-feynman-0svfjr`, imposée par la session. Le prompt de la routine recommande `routine/corpus-YYYY-MM-DD` ; la consigne de branche de la session est plus forte et interdit de pousser ailleurs. Poussée par commits successifs, 38 au total.
+- lot          : **3 cartes** — `points-de-levier`, `systemographie`, `trois-sigmas-arbitrage-de-cout`. Aucune `SKIPPED_DIRTY`.
+- sélection    : les trois **plus mauvais cas documentaires du corpus**, choisis sur un critère mesuré et non sur la longueur — les cartes sans aucun fichier de dossier ramassable par le pack. Il y en a **25 sur 136**.
+- audit        : **3 `REVISE` sur 3.** Fidélité documentaire 1/4, 3/4, 3/4.
+- résultats    : **0 publiée.** 2 `rewrite_rejected_factcheck` (`points-de-levier` 41/45 au plafond, `systemographie` 82/83 au plafond) · 1 `rewrite_rejected` (`trois-sigmas`, **`FACTCHECK_PASS` 59/59 puis `REJECT` de la revue pédagogique**).
+- contrôles    : validate 140 / 0 erreur · deepen --check 136 et **208 418 mots, le chiffre exact du départ** · **544 tests / 0 échec** · lint 0 · projection en phase et **vérifiée idempotente sur deux passes**.
+- état final   : les trois cartes sont revenues à leur SHA de blob de départ, vérifié au `sha256sum`. **Aucun approfondissement n'est modifié, rien n'est projeté.** Le corpus servi au lecteur est identique à l'octet près à ce qu'il était au lever.
+
+### Les deux défauts d'outillage, et ce sont les vrais résultats de la nuit
+
+**Chantier J — le pack résout le dossier par l'identifiant de la carte.** Douze répertoires de
+`corpus/evidence/` ne portent le nom d'aucune carte : **186 Ko de lectures primaires qu'aucun gate
+n'a jamais ouvertes**. Un cas est prouvé par la carte elle-même — `critere-de-la-retroaction`
+déclare son dossier à `corpus/evidence/retroaction-denaturee/lecture.json`, la carte a été renommée
+et son répertoire non — et son rejet en `FACTCHECK_FAIL` **est faux sur des claims nommés** : trois
+motifs de refus portent sur une matière que le fichier inatteignable contient mot pour mot.
+Deux textes du dépôt en tiraient une conclusion fausse, tous deux corrigés : le point 3 de la
+clôture du chantier G, qui fermait une reprise due, et le décompte des surdéclarations de
+`FACTCHECK_PROTOCOL.md` §3bis, dont l'exemple Milet 1982 repose sur une prémisse fausse.
+
+**Chantier K — le claim mapper est le seul maillon que rien ne double.** Un mapping a rendu
+63 claims dont **20 sans aucun `support_id`**, l'un d'eux soutenu par un appui présent dans le pack.
+Remappé sans toucher au texte : **45 claims, zéro sans appui**. `--bundle` vérifie que chaque appui
+cité existe, **jamais qu'un appui existant a été cité** : une omission du mapper est donc
+indiscernable, au gate, d'une absence de preuve, et fabrique un échec immérité que rien ne signale.
+
+### Les six leçons de méthode, payées sur pièce
+
+1. **Un cycle de correction répare des claims, pas des idées.** Sur `systemographie`, la même
+   proposition non soutenue est revenue **trois fois, chaque fois plus discrètement** : comparatif
+   explicite, puis caractérisation appariée sans comparatif, puis — sans un seul mot de comparaison
+   — une pure asymétrie de traitement, un « donc » qui traite une exigence comme satisfaite par une
+   condition légère là où l'autre reçoit un balayage explicite. La deuxième forme avait échappé au
+   premier retrait **parce qu'aucun claim ne la portait**.
+2. **Le gate ne contrôle ni le titre ni le `hook`.** Relevé par la revue de `trois-sigmas` : le
+   texte a cessé de relier `t` à une unité, si bien que « le lecteur ne peut faire l'identification
+   que par le titre, seul endroit que le fact-check ne contrôle pas ». Un texte peut donc passer le
+   fact-check en retirant ce que son propre titre promet.
+3. **`MARK_AS_INTERPRETATION` ne crée pas l'appui qui manque.** `C052` de `systemographie` portait
+   déjà son « On peut comprendre le reproche ainsi : » et a été refusé quand même.
+4. **Un bornage insuffisant ne se distingue pas d'un bornage suffisant dans un diff.** `C001` de
+   `points-de-levier` a été borné au tour 1 et refusé de nouveau au tour 2 pour le même motif. La
+   parade est la consigne au vérificateur : ne créditer aucun claim de l'effort qui l'a produit.
+5. **Un `TOO_STRONG` dont l'excédent est toute la phrase se retire, il ne se borne pas.** Borné,
+   `C030` n'aurait laissé qu'une redite d'un claim soutenu du même paragraphe : la correction
+   factuelle aurait satisfait le gate en fabriquant une redondance pédagogique.
+6. **Un artefact de réécriture n'est valide que pour le SHA sur lequel il a été écrit.** Le
+   `rewrite.md` de `trois-sigmas` décrivait encore, à la revue, des paragraphes disparus depuis deux
+   boucles. Le protocole horodate les packs et les gates, pas les comptes rendus.
+
+### Deux mises en garde d'exploitation
+
+**Quinze agents sur quinze ont attendu une quinzaine de minutes avant d'écrire quoi que ce soit**,
+et il a fallu le leur demander à chaque fois. Le dépôt connaissait le symptôme sur deux agents d'un
+lot ; c'est général. La parade qui marche est de surveiller le répertoire de travail et d'envoyer un
+« écris maintenant », pas d'attendre la notification.
+
+**Un artefact ne se mesure pas avant que son agent ait rendu.** Une mesure prise en cours d'écriture
+est une mesure de la version précédente, et rien ne l'annonce comme telle : elle a failli faire
+retirer le chantier K sur un faux constat de concordance. Le contrôle déterministe, lui, l'attrape —
+`--bundle` a refusé un claim map périmé avec « candidate_sha256 ne correspond pas au pack ». **La
+parade n'est pas de mesurer mieux, c'est de laisser le script juger.**
+
+### Ce que ce passage laisse au suivant
+
+1. **`critere-de-la-retroaction` est la reprise la moins chère et la mieux motivée du dépôt** : sa
+   carte nomme son dossier, le fichier existe, l'article est le même, et son rejet est faux. La
+   réparation est un geste de la couche carte.
+2. **Les onze autres répertoires orphelins se confrontent un par un.** Trois natures à distinguer —
+   dossier d'une carte renommée, lecture d'un sujet jamais carté, lecture d'une source qu'une carte
+   déclare sans que ce soit son dossier. **Seule la première autorise un renommage.**
+3. **Le plafond de deux boucles mérite d'être rouvert, et `systemographie` est le cas.** Refusée à
+   82 claims sur 83, pour un seul « donc ». Un tour de plus aurait très probablement suffi.
+4. **Les candidats refusés sont conservés et réutilisables**, sous `work/<id>/candidate-rejected-*.json`.
+   Celui de `trois-sigmas` porte un `FACTCHECK_PASS` valide ; la revue recommande un nouveau
+   diagnostic conservant les acquis du cycle plutôt qu'un redémarrage de la base.
+5. **Ne pas relancer ces trois cartes sans dossier.** Les claims qui restent ne se bornent pas : ils
+   demandent une lecture primaire que le dépôt n'a pas. Trois passes l'ont établi sur chacune.
+
 ## Passage d'audit — 2026-09-24
 
 Première exécution de la routine d'audit du corpus, distincte des quinze passages d'instruction
