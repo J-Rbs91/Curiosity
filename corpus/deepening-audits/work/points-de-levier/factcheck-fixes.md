@@ -167,3 +167,124 @@ et se retrouvent verbatim dans `quotation` et `notes`.
 
 Le texte a changé, donc le SHA a changé : le fact-check précédent est invalidé et le cycle doit
 repartir à `PREPARE`. Aucune auto-validation ici, ni `FACTCHECK_PASS`, ni `ACCEPT`.
+
+---
+
+# Correction factuelle : points-de-levier — passe 2
+
+mode : FACTCHECK_FIX (boucle 2 sur 2, dernière)
+
+gate lu : `corpus/deepening-audits/work/points-de-levier/factcheck-gate.json`
+(`FACTCHECK_FAIL`, 48 claims, 45 soutenus, 3 en échec, aucune erreur structurelle,
+SHA candidat `1643c460…a6dcf`)
+
+bundle lu : `corpus/deepening-audits/work/points-de-levier/verification-bundle.json`
+(appuis résolus pour C001, C026, C030, et pour leurs voisins C025, C027, C028, C029, C031 afin de
+savoir ce qui restait porté dans les mêmes paragraphes)
+
+Matière autorisée inchangée : `corpus/evidence/points-de-levier/` n'existe toujours pas (revérifié
+par listage de `corpus/evidence/`), donc `corpus/validated/points-de-levier.json` seul. Aucune
+recherche, aucun apport de mémoire.
+
+## Le diagnostic commun aux trois échecs
+
+Les trois verdicts sont `TOO_STRONG` et d'une seule espèce : une **assertion de fréquence ou de
+comparaison** posée au-dessus d'un appui qui n'en porte aucune. Le hook porte une question, la
+citation porte une inversion et son effet — ni l'un ni l'autre ne dit combien de fois, ni par
+rapport à quoi.
+
+Conséquence méthodologique retenue : **le quantificateur est retiré, pas atténué.** « presque
+jamais » n'est pas devenu « rarement », « d'ordinaire » n'est pas devenu « parfois », et la
+comparaison avec l'inaction n'a pas été remplacée par une comparaison plus prudente. C001 avait
+déjà été borné à la passe 1 et avait échoué de nouveau : un bornage de fréquence ne suffit pas,
+seule la disparition de la fréquence suffit. `MARK_AS_INTERPRETATION` n'a pas été employé : un
+« on peut comprendre que » devant une fréquence non appuyée reste une fréquence non appuyée.
+
+## Les trois gestes
+
+**C001 — `REMOVE` de la proposition de fréquence** (`lead[0]`, première phrase).
+
+- avant : « Devant un ensemble qui fonctionne mal, la question pratique n'est presque jamais
+  « faut-il agir ». Elle est « où appuyer ». »
+- après : « Devant un ensemble qui fonctionne mal, la question pratique est « où appuyer ». »
+
+Le seul appui est `$.hook` (« Où appuyer dans un système pour que quelque chose bouge vraiment ? »),
+qui pose une question et rien d'autre. La proposition négative sur « faut-il agir » et son
+quantificateur de fréquence sortent ensemble : la fréquence n'était pas un excès sur une assertion
+par ailleurs appuyée, elle était le ressort de la phrase. Ce qui reste est la question du hook,
+ramenée à deux mots entre guillemets, sans comparaison avec une autre question et sans énoncé sur
+la manière dont les gens délibèrent. Aucune fréquence de rechange n'a été introduite, et il n'est
+pas conclu de l'absence d'appui que la question « faut-il agir » se poserait souvent : elle n'est
+simplement plus mentionnée.
+
+**C026 — `NARROW`** (`sections[2].paragraphs[1]`, première phrase).
+
+- avant : « Deux erreurs se trouvent ainsi séparées, que l'on confond d'ordinaire. »
+- après : « Deux erreurs se trouvent ainsi séparées. »
+
+La séparation est portée par `$.quotation.text` (« Les points de levier ne sont pas intuitifs. Ou
+s'ils le sont, nous les utilisons intuitivement à l'envers […] ») : l'alternative de la citation
+distingue bien le cas de l'endroit manqué du cas de l'endroit trouvé et poussé à l'envers. C'est la
+relative qui ajoutait une habitude de confusion, et aucun appui ne parle d'une confusion, ni de sa
+fréquence. La relative disparaît sans être remplacée : le texte ne dit pas non plus qu'on
+distinguerait bien ces deux erreurs — l'absence d'appui n'autorise pas l'énoncé contraire. Les deux
+phrases suivantes (C027, soutenu) nomment les deux erreurs et sont conservées mot pour mot.
+
+**C030 — `REMOVE`** (`sections[2].paragraphs[2]`, dernière phrase).
+
+- avant : « Ne rien faire laisse une situation en place ; actionner un levier puissant à l'envers
+  la dégrade. »
+- après : phrase supprimée, rien à la place.
+
+Le claim tenait de deux choses que `$.quotation.original_text` ne porte pas : une comparaison avec
+l'inaction, et une dépendance de l'aggravation à la puissance du levier. La citation dit que
+l'usage inversé aggrave les problèmes qu'on cherchait à résoudre, sans les comparer à l'inaction et
+sans graduer l'effet selon le barreau. Borné, il ne restait de cette phrase que l'aggravation — qui
+est déjà dite, dans le même paragraphe et par le claim soutenu C029 (« ce que l'on aggrave, ce sont
+les problèmes mêmes qu'on cherchait à résoudre »). Garder un résidu aurait produit une redite sans
+delta ; la phrase sort donc en entier. La comparaison n'a pas été remplacée par une comparaison
+plus prudente, et il n'est rien conclu sur ce que produit l'inaction.
+
+Le paragraphe garde son delta propre — le poids de l'adverbe « systematically » — porté par C028 et
+C029, tous deux soutenus et intacts.
+
+## Ce qui n'a pas été fait
+
+- Aucun des 45 claims soutenus n'a été touché : ni déplacé, ni reformulé, ni recoupé. Aucun
+  raccrochage grammatical n'a été nécessaire cette fois (les trois retraits tombent en fin de
+  proposition ou en fin de phrase, sans antécédent orphelin), donc contrairement à la passe 1
+  aucune phrase soutenue n'a eu à bouger.
+- Aucun fragment non mappé n'a été retouché, aucun titre de section modifié.
+- Aucune fréquence affaiblie, aucune comparaison de repli, aucun `MARK_AS_INTERPRETATION`.
+- Aucun `SUP-…` mentionné dans le texte lecteur, aucun artefact de fact-check retouché à la main.
+- `limits` est inchangé (360 mots) et reste invisible au lecteur ; rien n'en a été remonté. Les
+  trois échecs de cette passe ne concernaient aucune des frontières documentaires déjà écrites : ce
+  sont des excès de quantification, pas des dépassements de périmètre de source.
+- Aucun ajout de volume pour compenser les retraits.
+
+## Volume
+
+- texte lecteur avant cette passe : 889 mots
+- texte lecteur après : 860 mots (mêmes 16 paragraphes ; aucun paragraphe vidé)
+- compteur du script (texte lecteur + `limits`) : 1 249 avant, 1 220 après
+
+Vingt-neuf mots de moins, tous non soutenus. Il n'y a pas de plancher de longueur et rien n'a été
+écrit pour reprendre la place.
+
+## Contrôle mécanique
+
+`npm run corpus:deepen -- --check --only=points-de-levier`
+
+```
+1 approfondissement(s) contrôlé(s), 1220 mots. Rien projeté.
+```
+
+PASS, aucun avertissement. Les cinq passages entre guillemets de cinq mots ou plus sont inchangés
+et se retrouvent verbatim dans `quotation` et `notes` ; les guillemets restants de moins de cinq
+mots (« où appuyer », « systematically ») ne sont pas des citations soumises au contrôle verbatim.
+
+## Suite
+
+Le texte a de nouveau changé, donc le SHA a changé : le cycle doit repartir à `PREPARE`. Aucune
+auto-validation ici, ni `FACTCHECK_PASS`, ni `ACCEPT`. Plus aucune écriture n'a été faite sur le
+deepening après le contrôle.
