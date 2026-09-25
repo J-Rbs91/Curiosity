@@ -1,27 +1,32 @@
 {
   "protocol_version": 1,
   "concept_id": "points-de-levier",
-  "candidate_sha256": "1643c460539333816695a31899ca77daa320e64e6e3cdb043264d997264a6dcf",
+  "candidate_sha256": "4c89c66e7b2dd72b22ab84502f0968d9a8642831d56e24b21b432e23e631c516",
   "verdict": "FACTCHECK_FAIL",
-  "claims": 48,
-  "supported": 45,
-  "failed": 3,
+  "claims": 45,
+  "supported": 41,
+  "failed": 4,
   "structural_errors": [],
   "failures": [
     {
-      "claim_id": "C001",
+      "claim_id": "C007",
       "verdict": "TOO_STRONG",
-      "reason": "Le hook n'autorise que la question « où appuyer » ; l'assertion de fréquence « la question pratique n'est presque jamais faut-il agir » est une généralisation contestable sur la délibération pratique qu'aucun appui ne porte."
+      "reason": "Les appuis établissent que la valeur de la liste tient à son ordre d'efficacité, mais aucun ne porte l'assertion universelle « chacun en connaît » : c'est une généralité sur ce que tout le monde sait, hors de la portée de notes[3] et du résumé."
     },
     {
-      "claim_id": "C026",
+      "claim_id": "C035",
       "verdict": "TOO_STRONG",
-      "reason": "La séparation des deux erreurs se lit dans la citation, mais « que l'on confond d'ordinaire » ajoute une assertion de fréquence sur une confusion habituelle dont aucun appui ne parle."
+      "reason": "notes[1] n'établit que l'autorévision, ce qui autorise « ne pas le traiter comme une loi » mais non la conclusion positive « une raison de s'en servir comme d'un instrument de lecture » : la révisabilité n'est pas une raison d'usage, et aucun appui joint ne porte cet emploi."
     },
     {
-      "claim_id": "C030",
-      "verdict": "TOO_STRONG",
-      "reason": "La citation dit que l'usage inversé aggrave les problèmes ; elle ne dit rien de l'inaction (« ne rien faire laisse une situation en place ») ni d'une dépendance à la puissance du levier, et le claim construit une comparaison que l'appui n'autorise pas."
+      "claim_id": "C036",
+      "verdict": "UNSUPPORTED",
+      "reason": "Ni notes[1] (autorévision) ni notes[3] (ordre d'efficacité) ne disent quoi que ce soit du caractère applicable ou non de l'échelle ; l'assertion négative « pas une hiérarchie à appliquer » est tirée du silence des appuis, ce qui n'est pas une preuve."
+    },
+    {
+      "claim_id": "C042",
+      "verdict": "SOURCE_NOT_CONSULTED",
+      "reason": "Les deux seuls appuis sont des déclarations de sources[0] en access_corroboration « dossier-absent », qui valent comme notices (référence, éditeur, pagination) ; elles n'établissent pas une assertion sur la lecture de l'œuvre — « elle se lit mieux là où elle a été écrite »."
     }
   ]
 }
