@@ -1,6 +1,6 @@
 {
   "concept_id": "points-de-levier",
-  "candidate_sha256": "1643c460539333816695a31899ca77daa320e64e6e3cdb043264d997264a6dcf",
+  "candidate_sha256": "4c89c66e7b2dd72b22ab84502f0968d9a8642831d56e24b21b432e23e631c516",
   "paragraphs": [
     {
       "locator": "lead[0]",
@@ -72,9 +72,9 @@
       "claim_id": "C001",
       "locator": "lead[0]",
       "start": 0,
-      "end": 123,
-      "claim_text": "Devant un ensemble qui fonctionne mal, la question pratique n’est presque jamais « faut-il agir ». Elle est « où appuyer ».",
-      "normalized_claim": "Devant un systeme qui fonctionne mal, la question pratique porte sur le lieu de l'intervention plutot que sur l'opportunite d'agir.",
+      "end": 79,
+      "claim_text": "Devant un ensemble qui fonctionne mal, la question pratique est « où appuyer ».",
+      "normalized_claim": "Devant un ensemble qui fonctionne mal, la question pratique est de savoir où appuyer.",
       "support_ids": [
         "SUP-ebb398acd46edf3d"
       ]
@@ -82,38 +82,40 @@
     {
       "claim_id": "C002",
       "locator": "lead[0]",
-      "start": 124,
-      "end": 212,
+      "start": 80,
+      "end": 168,
       "claim_text": "On peut changer un montant, un délai, ou la raison même pour laquelle l’ensemble existe.",
-      "normalized_claim": "Les interventions possibles vont du montant et du delai jusqu'a la raison d'etre de l'ensemble.",
+      "normalized_claim": "Les interventions possibles vont du changement d'un montant ou d'un délai à celui de la raison d'être de l'ensemble.",
       "support_ids": [
         "SUP-3a36c7316132dc8f",
-        "SUP-3ffaa707ee114434",
-        "SUP-2d9cb5d014d223bd"
+        "SUP-2d9cb5d014d223bd",
+        "SUP-3ffaa707ee114434"
       ]
     },
     {
       "claim_id": "C003",
       "locator": "lead[0]",
-      "start": 213,
-      "end": 290,
+      "start": 169,
+      "end": 246,
       "claim_text": "Ces gestes n’ont pas la même portée : la différence tient à l’endroit choisi.",
-      "normalized_claim": "Ces interventions n'ont pas la meme portee, et l'ecart depend de l'endroit d'intervention.",
+      "normalized_claim": "Ces gestes diffèrent en portée selon l'endroit du système où ils s'appliquent.",
       "support_ids": [
+        "SUP-3a36c7316132dc8f",
         "SUP-8c80540dcb2e6c7c",
-        "SUP-3a36c7316132dc8f"
+        "SUP-84635ba863d861ce"
       ]
     },
     {
       "claim_id": "C004",
       "locator": "lead[1]",
       "start": 0,
-      "end": 81,
-      "claim_text": "Donella H. Meadows, formée à la dynamique des systèmes auprès de Jay W. Forrester",
-      "normalized_claim": "Meadows a ete formee a la dynamique des systemes aupres de Jay W. Forrester.",
+      "end": 82,
+      "claim_text": "Donella H. Meadows, formée à la dynamique des systèmes auprès de Jay W. Forrester,",
+      "normalized_claim": "Meadows a été formée à la dynamique des systèmes auprès de Jay W. Forrester.",
       "support_ids": [
         "SUP-7225770a44d11547",
-        "SUP-97cc6a5e88c9487f"
+        "SUP-97cc6a5e88c9487f",
+        "SUP-ab62b4f98906b668"
       ]
     },
     {
@@ -122,11 +124,11 @@
       "start": 83,
       "end": 267,
       "claim_text": "a écrit la liste de ces endroits : douze places où intervenir dans un ensemble, rangées du levier le plus faible au plus puissant, du réglage d’un paramètre au changement de paradigme.",
-      "normalized_claim": "Meadows a ecrit une liste de douze places d'intervention rangees du levier le plus faible au plus puissant, du reglage d'un parametre au changement de paradigme.",
+      "normalized_claim": "Meadows a écrit une liste de douze endroits où intervenir, ordonnés du levier le plus faible au plus fort, du paramètre au paradigme.",
       "support_ids": [
         "SUP-3a36c7316132dc8f",
-        "SUP-8c80540dcb2e6c7c",
-        "SUP-2d9cb5d014d223bd"
+        "SUP-2d9cb5d014d223bd",
+        "SUP-8c80540dcb2e6c7c"
       ]
     },
     {
@@ -135,10 +137,11 @@
       "start": 268,
       "end": 376,
       "claim_text": "Et elle l’a assortie d’un avertissement qui compte autant que la liste : ces endroits ne sont pas intuitifs.",
-      "normalized_claim": "Meadows a joint a la liste un avertissement : ces endroits ne sont pas intuitifs.",
+      "normalized_claim": "Meadows assortit la liste d'un avertissement : ces endroits ne sont pas intuitifs.",
       "support_ids": [
+        "SUP-3a36c7316132dc8f",
         "SUP-52c992afba49b58c",
-        "SUP-5fc9356b43132b83"
+        "SUP-2c77089b1d953778"
       ]
     },
     {
@@ -147,9 +150,10 @@
       "start": 0,
       "end": 98,
       "claim_text": "Ce qui fait la valeur de la liste n’est pas qu’elle recense des façons d’agir : chacun en connaît.",
-      "normalized_claim": "La liste recense des facons d'agir deja connues ; ce n'est pas la ce qui fait sa valeur.",
+      "normalized_claim": "La valeur de la liste ne tient pas au recensement de façons d'agir déjà connues.",
       "support_ids": [
-        "SUP-3a36c7316132dc8f"
+        "SUP-3a36c7316132dc8f",
+        "SUP-8c80540dcb2e6c7c"
       ]
     },
     {
@@ -158,99 +162,102 @@
       "start": 99,
       "end": 206,
       "claim_text": "C’est qu’elle les ordonne, « in increasing order of effectiveness », du levier le plus faible au plus fort.",
-      "normalized_claim": "La liste est ordonnee « in increasing order of effectiveness », du levier le plus faible au plus fort.",
+      "normalized_claim": "La liste ordonne les interventions « in increasing order of effectiveness », du plus faible au plus fort.",
       "support_ids": [
-        "SUP-8c80540dcb2e6c7c"
+        "SUP-8c80540dcb2e6c7c",
+        "SUP-3a36c7316132dc8f"
       ]
     },
     {
       "claim_id": "C009",
       "locator": "sections[0].paragraphs[0]",
       "start": 207,
-      "end": 278,
-      "claim_text": "Le numéro 12 est donc le moins puissant et le numéro 1 le plus puissant",
-      "normalized_claim": "Le numero 12 est le levier le moins puissant et le numero 1 le plus puissant.",
+      "end": 356,
+      "claim_text": "Le numéro 12 est donc le moins puissant et le numéro 1 le plus puissant, ce qui est l’inverse de ce qu’une liste numérotée suggère au premier regard.",
+      "normalized_claim": "Le numéro 12 est le levier le moins puissant et le numéro 1 le plus puissant, à l'inverse de la lecture spontanée d'une liste numérotée.",
       "support_ids": [
         "SUP-8c80540dcb2e6c7c"
       ]
     },
     {
       "claim_id": "C010",
-      "locator": "sections[0].paragraphs[0]",
-      "start": 280,
-      "end": 356,
-      "claim_text": "ce qui est l’inverse de ce qu’une liste numérotée suggère au premier regard.",
-      "normalized_claim": "Cet ordre est l'inverse de ce qu'une liste numerotee suggere a premiere vue.",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 0,
+      "end": 145,
+      "claim_text": "Le barreau du bas s’appelle « Constants, parameters, numbers », des constantes, des paramètres, des nombres : les montants, les taux, les seuils.",
+      "normalized_claim": "Le barreau le plus bas de l'échelle s'intitule « Constants, parameters, numbers ».",
       "support_ids": [
-        "SUP-8c80540dcb2e6c7c"
+        "SUP-2d9cb5d014d223bd",
+        "SUP-8c80540dcb2e6c7c",
+        "SUP-3ffaa707ee114434"
       ]
     },
     {
       "claim_id": "C011",
       "locator": "sections[0].paragraphs[1]",
-      "start": 0,
-      "end": 107,
-      "claim_text": "Le barreau du bas s’appelle « Constants, parameters, numbers », des constantes, des paramètres, des nombres",
-      "normalized_claim": "Le barreau le plus faible de la liste s'intitule « Constants, parameters, numbers ».",
+      "start": 146,
+      "end": 271,
+      "claim_text": "Le barreau du haut s’appelle « The power to transcend paradigms », le pouvoir de passer outre les cadres de pensée eux-mêmes.",
+      "normalized_claim": "Le barreau le plus haut s'intitule « The power to transcend paradigms ».",
       "support_ids": [
         "SUP-2d9cb5d014d223bd",
-        "SUP-8c80540dcb2e6c7c"
+        "SUP-3a36c7316132dc8f"
       ]
     },
     {
       "claim_id": "C012",
       "locator": "sections[0].paragraphs[1]",
-      "start": 110,
-      "end": 145,
-      "claim_text": "les montants, les taux, les seuils.",
-      "normalized_claim": "Ce barreau couvre les montants, les taux et les seuils.",
+      "start": 272,
+      "end": 324,
+      "claim_text": "Dix autres endroits sont numérotés entre ces deux-là",
+      "normalized_claim": "Dix autres entrées numérotées se situent entre ces deux extrêmes, pour douze au total.",
       "support_ids": [
-        "SUP-3ffaa707ee114434",
-        "SUP-2d9cb5d014d223bd"
+        "SUP-2d9cb5d014d223bd",
+        "SUP-3a36c7316132dc8f"
       ]
     },
     {
       "claim_id": "C013",
       "locator": "sections[0].paragraphs[1]",
-      "start": 146,
-      "end": 271,
-      "claim_text": "Le barreau du haut s’appelle « The power to transcend paradigms », le pouvoir de passer outre les cadres de pensée eux-mêmes.",
-      "normalized_claim": "Le barreau le plus puissant s'intitule « The power to transcend paradigms », soit le pouvoir de passer outre les cadres de pensee.",
+      "start": 326,
+      "end": 469,
+      "claim_text": "et c’est déjà l’écart entre les deux bouts qui donne la mesure de l’échelle : d’un côté un réglage, de l’autre ce depuis quoi tout a été pensé.",
+      "normalized_claim": "L'écart entre les deux extrémités donne à lui seul la mesure de l'échelle : d'un côté un réglage, de l'autre le cadre de pensée.",
       "support_ids": [
-        "SUP-2d9cb5d014d223bd"
+        "SUP-3a36c7316132dc8f",
+        "SUP-2d9cb5d014d223bd",
+        "SUP-3ffaa707ee114434"
       ]
     },
     {
       "claim_id": "C014",
-      "locator": "sections[0].paragraphs[1]",
-      "start": 272,
-      "end": 324,
-      "claim_text": "Dix autres endroits sont numérotés entre ces deux-là",
-      "normalized_claim": "Dix autres places sont numerotees entre ces deux barreaux extremes.",
+      "locator": "sections[0].paragraphs[2]",
+      "start": 0,
+      "end": 109,
+      "claim_text": "Une image aide à tenir cette échelle en tête, et Meadows la file d’un bout à l’autre : celle de la plomberie.",
+      "normalized_claim": "Meadows file une image de plomberie d'un bout à l'autre de l'échelle, et cette image aide à la tenir en tête.",
       "support_ids": [
-        "SUP-2d9cb5d014d223bd",
-        "SUP-3a36c7316132dc8f"
+        "SUP-3ffaa707ee114434"
       ]
     },
     {
       "claim_id": "C015",
-      "locator": "sections[0].paragraphs[1]",
-      "start": 329,
-      "end": 469,
-      "claim_text": "c’est déjà l’écart entre les deux bouts qui donne la mesure de l’échelle : d’un côté un réglage, de l’autre ce depuis quoi tout a été pensé.",
-      "normalized_claim": "L'ecart entre les deux extremites, un reglage d'un cote et le cadre de pensee de l'autre, donne la mesure de l'echelle.",
+      "locator": "sections[0].paragraphs[2]",
+      "start": 110,
+      "end": 154,
+      "claim_text": "Un paramètre, c’est le réglage d’un robinet.",
+      "normalized_claim": "Dans l'image de Meadows, un paramètre est le réglage d'un robinet.",
       "support_ids": [
-        "SUP-2d9cb5d014d223bd",
-        "SUP-3a36c7316132dc8f"
+        "SUP-3ffaa707ee114434"
       ]
     },
     {
       "claim_id": "C016",
       "locator": "sections[0].paragraphs[2]",
-      "start": 0,
-      "end": 109,
-      "claim_text": "Une image aide à tenir cette échelle en tête, et Meadows la file d’un bout à l’autre : celle de la plomberie.",
-      "normalized_claim": "Meadows file une image de plomberie sur toute l'echelle, et cette image aide a la tenir en tete.",
+      "start": 155,
+      "end": 197,
+      "claim_text": "Un stock, c’est le niveau de la baignoire.",
+      "normalized_claim": "Dans l'image de Meadows, un stock est le niveau de la baignoire.",
       "support_ids": [
         "SUP-3ffaa707ee114434"
       ]
@@ -258,10 +265,10 @@
     {
       "claim_id": "C017",
       "locator": "sections[0].paragraphs[2]",
-      "start": 110,
+      "start": 198,
       "end": 255,
-      "claim_text": "Un paramètre, c’est le réglage d’un robinet. Un stock, c’est le niveau de la baignoire. Un délai, c’est le temps que met une vanne à faire effet.",
-      "normalized_claim": "Dans cette image, un parametre est le reglage d'un robinet, un stock le niveau de la baignoire, un delai le temps que met une vanne a faire effet.",
+      "claim_text": "Un délai, c’est le temps que met une vanne à faire effet.",
+      "normalized_claim": "Dans l'image de Meadows, un délai est le temps que met une vanne à faire effet.",
       "support_ids": [
         "SUP-3ffaa707ee114434"
       ]
@@ -272,121 +279,133 @@
       "start": 256,
       "end": 339,
       "claim_text": "Trois objets de la même salle de bains, et trois choses très différentes à toucher.",
-      "normalized_claim": "Ces trois objets de plomberie designent trois choses differentes a toucher.",
-      "support_ids": [
-        "SUP-3ffaa707ee114434"
-      ]
-    },
-    {
-      "claim_id": "C019",
-      "locator": "sections[1].paragraphs[0]",
-      "start": 0,
-      "end": 67,
-      "claim_text": "L’ordre se comprend mieux si l’on regarde où chaque geste se place.",
-      "normalized_claim": "L'ordre de l'echelle s'explique par l'endroit ou chaque geste se situe.",
-      "support_ids": [
-        "SUP-8c80540dcb2e6c7c"
-      ]
-    },
-    {
-      "claim_id": "C020",
-      "locator": "sections[1].paragraphs[0]",
-      "start": 68,
-      "end": 211,
-      "claim_text": "Régler un robinet, c’est agir à l’intérieur d’une installation qu’on laisse telle quelle : le réglage suppose la plomberie et ne la change pas.",
-      "normalized_claim": "Regler un parametre agit a l'interieur de l'installation et ne la modifie pas.",
+      "normalized_claim": "Robinet, baignoire et vanne appartiennent au même décor mais correspondent à des interventions différentes.",
       "support_ids": [
         "SUP-3ffaa707ee114434",
         "SUP-8c80540dcb2e6c7c"
       ]
     },
     {
-      "claim_id": "C021",
+      "claim_id": "C019",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 68,
+      "end": 211,
+      "claim_text": "Régler un robinet, c’est agir à l’intérieur d’une installation qu’on laisse telle quelle : le réglage suppose la plomberie et ne la change pas.",
+      "normalized_claim": "Régler un paramètre revient à agir à l'intérieur d'une installation qu'on suppose et qu'on ne modifie pas.",
+      "support_ids": [
+        "SUP-3ffaa707ee114434",
+        "SUP-8c80540dcb2e6c7c"
+      ]
+    },
+    {
+      "claim_id": "C020",
       "locator": "sections[1].paragraphs[1]",
       "start": 0,
       "end": 187,
       "claim_text": "Meadows en donne un exemple qui se retient : la dette publique décrite comme « a negative bathtub, a money hole », et les paramètres budgétaires comme « adjustments to faucets » (p. 5-6).",
-      "normalized_claim": "Meadows decrit la dette publique comme « a negative bathtub, a money hole » et les parametres budgetaires comme « adjustments to faucets », p. 5-6.",
+      "normalized_claim": "Meadows décrit la dette publique comme « a negative bathtub, a money hole » et les paramètres budgétaires comme « adjustments to faucets », p. 5-6.",
+      "support_ids": [
+        "SUP-3ffaa707ee114434"
+      ]
+    },
+    {
+      "claim_id": "C021",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 188,
+      "end": 262,
+      "claim_text": "L’image dit à elle seule le rapport de taille entre le trou et le robinet.",
+      "normalized_claim": "L'image exprime par elle-même la disproportion entre le trou et le robinet.",
       "support_ids": [
         "SUP-3ffaa707ee114434"
       ]
     },
     {
       "claim_id": "C022",
-      "locator": "sections[1].paragraphs[1]",
-      "start": 188,
-      "end": 262,
-      "claim_text": "L’image dit à elle seule le rapport de taille entre le trou et le robinet.",
-      "normalized_claim": "L'image exprime a elle seule le rapport de taille entre le trou et le robinet.",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 0,
+      "end": 94,
+      "claim_text": "L’avertissement tient en deux phrases, et il porte sur l’intuition plutôt que sur la technique",
+      "normalized_claim": "L'avertissement de Meadows tient en deux phrases et porte sur l'intuition plutôt que sur la technique.",
       "support_ids": [
-        "SUP-3ffaa707ee114434"
+        "SUP-52c992afba49b58c",
+        "SUP-2c77089b1d953778",
+        "SUP-3a36c7316132dc8f"
       ]
     },
     {
       "claim_id": "C023",
       "locator": "sections[2].paragraphs[0]",
+      "start": 97,
+      "end": 211,
+      "claim_text": "« Les points de levier ne sont pas intuitifs. Ou s’ils le sont, nous les utilisons intuitivement à l’envers […] ».",
+      "normalized_claim": "Citation traduite de Meadows : les points de levier ne sont pas intuitifs, ou nous les utilisons intuitivement à l'envers.",
+      "support_ids": [
+        "SUP-52c992afba49b58c",
+        "SUP-2c77089b1d953778",
+        "SUP-5fc9356b43132b83",
+        "SUP-ae27b336a7c422c7",
+        "SUP-76d11f542691c5ac",
+        "SUP-520c61d935611e51",
+        "SUP-6befa0f7f0545316",
+        "SUP-427fb1df98a1e120"
+      ]
+    },
+    {
+      "claim_id": "C024",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 212,
+      "end": 339,
+      "claim_text": "La fin de la phrase dit ce que produit ce renversement : « systematically worsening whatever problems we are trying to solve ».",
+      "normalized_claim": "La phrase citée se termine par « systematically worsening whatever problems we are trying to solve ».",
+      "support_ids": [
+        "SUP-81e9a94544297295",
+        "SUP-2c77089b1d953778"
+      ]
+    },
+    {
+      "claim_id": "C025",
+      "locator": "sections[2].paragraphs[1]",
       "start": 0,
-      "end": 94,
-      "claim_text": "L’avertissement tient en deux phrases, et il porte sur l’intuition plutôt que sur la technique",
-      "normalized_claim": "L'avertissement de Meadows tient en deux phrases et porte sur l'intuition plutot que sur la technique.",
+      "end": 40,
+      "claim_text": "Deux erreurs se trouvent ainsi séparées.",
+      "normalized_claim": "L'avertissement distingue deux erreurs.",
       "support_ids": [
         "SUP-52c992afba49b58c",
         "SUP-2c77089b1d953778"
       ]
     },
     {
-      "claim_id": "C024",
-      "locator": "sections[2].paragraphs[0]",
-      "start": 97,
-      "end": 211,
-      "claim_text": "« Les points de levier ne sont pas intuitifs. Ou s’ils le sont, nous les utilisons intuitivement à l’envers […] ».",
-      "normalized_claim": "Citation attribuee a Meadows : les points de levier ne sont pas intuitifs, ou nous les utilisons intuitivement a l'envers.",
+      "claim_id": "C026",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 41,
+      "end": 158,
+      "claim_text": "La première est de se tromper d’endroit. La seconde est de trouver le bon endroit et de pousser dans le mauvais sens.",
+      "normalized_claim": "La première erreur est de se tromper d'endroit, la seconde de pousser dans le mauvais sens au bon endroit.",
       "support_ids": [
-        "SUP-52c992afba49b58c"
+        "SUP-52c992afba49b58c",
+        "SUP-2c77089b1d953778",
+        "SUP-8c80540dcb2e6c7c"
       ]
     },
     {
-      "claim_id": "C025",
-      "locator": "sections[2].paragraphs[0]",
-      "start": 212,
-      "end": 339,
-      "claim_text": "La fin de la phrase dit ce que produit ce renversement : « systematically worsening whatever problems we are trying to solve ».",
-      "normalized_claim": "La phrase se termine par « systematically worsening whatever problems we are trying to solve », qui dit l'effet du renversement.",
+      "claim_id": "C027",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 0,
+      "end": 53,
+      "claim_text": "Le mot « systematically » compte autant que le reste.",
+      "normalized_claim": "Le mot « systematically » de la citation est aussi important que le reste.",
       "support_ids": [
         "SUP-2c77089b1d953778",
         "SUP-81e9a94544297295"
       ]
     },
     {
-      "claim_id": "C026",
-      "locator": "sections[2].paragraphs[1]",
-      "start": 0,
-      "end": 70,
-      "claim_text": "Deux erreurs se trouvent ainsi séparées, que l’on confond d’ordinaire.",
-      "normalized_claim": "L'avertissement separe deux erreurs ordinairement confondues.",
-      "support_ids": [
-        "SUP-52c992afba49b58c"
-      ]
-    },
-    {
-      "claim_id": "C027",
-      "locator": "sections[2].paragraphs[1]",
-      "start": 71,
-      "end": 188,
-      "claim_text": "La première est de se tromper d’endroit. La seconde est de trouver le bon endroit et de pousser dans le mauvais sens.",
-      "normalized_claim": "Ces deux erreurs sont : se tromper d'endroit, et actionner le bon endroit dans le mauvais sens.",
-      "support_ids": [
-        "SUP-52c992afba49b58c",
-        "SUP-2c77089b1d953778"
-      ]
-    },
-    {
       "claim_id": "C028",
       "locator": "sections[2].paragraphs[2]",
-      "start": 0,
-      "end": 53,
-      "claim_text": "Le mot « systematically » compte autant que le reste.",
-      "normalized_claim": "Le mot « systematically » figure dans la phrase originale et y est aussi important que le reste.",
+      "start": 54,
+      "end": 207,
+      "claim_text": "Ce n’est pas un accident occasionnel, et ce n’est pas une occasion manquée : ce que l’on aggrave, ce sont les problèmes mêmes qu’on cherchait à résoudre.",
+      "normalized_claim": "Ce que l'usage inversé aggrave, ce sont les problèmes mêmes qu'on cherchait à résoudre, et non un accident occasionnel.",
       "support_ids": [
         "SUP-2c77089b1d953778",
         "SUP-81e9a94544297295"
@@ -394,34 +413,33 @@
     },
     {
       "claim_id": "C029",
-      "locator": "sections[2].paragraphs[2]",
-      "start": 54,
-      "end": 207,
-      "claim_text": "Ce n’est pas un accident occasionnel, et ce n’est pas une occasion manquée : ce que l’on aggrave, ce sont les problèmes mêmes qu’on cherchait à résoudre.",
-      "normalized_claim": "Ce qui est aggrave, ce sont les problemes memes qu'on cherchait a resoudre, et non un accident occasionnel.",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 0,
+      "end": 34,
+      "claim_text": "L’échelle n’est pas venue achevée.",
+      "normalized_claim": "L'échelle n'a pas été publiée sous une forme d'emblée définitive.",
       "support_ids": [
-        "SUP-2c77089b1d953778",
-        "SUP-81e9a94544297295"
+        "SUP-2d9cb5d014d223bd"
       ]
     },
     {
       "claim_id": "C030",
-      "locator": "sections[2].paragraphs[2]",
-      "start": 208,
-      "end": 305,
-      "claim_text": "Ne rien faire laisse une situation en place ; actionner un levier puissant à l’envers la dégrade.",
-      "normalized_claim": "L'inaction laisse la situation en place tandis qu'un levier puissant actionne a l'envers la degrade.",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 35,
+      "end": 101,
+      "claim_text": "Une première liste, de neuf entrées, figure à la page 2 du rapport",
+      "normalized_claim": "Une première liste de neuf entrées figure page 2 du rapport.",
       "support_ids": [
-        "SUP-2c77089b1d953778"
+        "SUP-2d9cb5d014d223bd"
       ]
     },
     {
       "claim_id": "C031",
       "locator": "sections[3].paragraphs[0]",
-      "start": 0,
-      "end": 34,
-      "claim_text": "L’échelle n’est pas venue achevée.",
-      "normalized_claim": "L'echelle n'a pas ete publiee sous une forme achevee du premier coup.",
+      "start": 104,
+      "end": 214,
+      "claim_text": "c’est celle que Meadows dit avoir écrite sur un paperboard, et elle la corrige elle-même deux pages plus loin.",
+      "normalized_claim": "Meadows dit avoir écrit cette première liste sur un paperboard et la corrige deux pages plus loin.",
       "support_ids": [
         "SUP-2d9cb5d014d223bd"
       ]
@@ -429,195 +447,166 @@
     {
       "claim_id": "C032",
       "locator": "sections[3].paragraphs[0]",
-      "start": 35,
-      "end": 101,
-      "claim_text": "Une première liste, de neuf entrées, figure à la page 2 du rapport",
-      "normalized_claim": "Une premiere liste de neuf entrees figure page 2 du rapport.",
+      "start": 215,
+      "end": 289,
+      "claim_text": "La version révisée, celle qui compte les douze entrées, se lit à la page 3",
+      "normalized_claim": "La version révisée, à douze entrées, se lit page 3.",
       "support_ids": [
-        "SUP-2d9cb5d014d223bd"
+        "SUP-2d9cb5d014d223bd",
+        "SUP-3a36c7316132dc8f"
       ]
     },
     {
       "claim_id": "C033",
       "locator": "sections[3].paragraphs[0]",
-      "start": 104,
-      "end": 214,
-      "claim_text": "c’est celle que Meadows dit avoir écrite sur un paperboard, et elle la corrige elle-même deux pages plus loin.",
-      "normalized_claim": "Meadows dit avoir ecrit cette premiere liste sur un paperboard et la corrige elle-meme deux pages plus loin.",
+      "start": 291,
+      "end": 354,
+      "claim_text": "et la première reste sous les yeux du lecteur avec ses manques.",
+      "normalized_claim": "La première liste reste visible dans le rapport à côté de la version révisée.",
       "support_ids": [
         "SUP-2d9cb5d014d223bd"
       ]
     },
     {
       "claim_id": "C034",
-      "locator": "sections[3].paragraphs[0]",
-      "start": 215,
-      "end": 289,
-      "claim_text": "La version révisée, celle qui compte les douze entrées, se lit à la page 3",
-      "normalized_claim": "La version revisee, celle des douze entrees, se lit page 3.",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 51,
+      "end": 170,
+      "claim_text": "L’ordre des douze est une proposition retravaillée par celle qui l’a écrite, et dont le brouillon reste lisible à côté.",
+      "normalized_claim": "L'ordre des douze entrées est une proposition retravaillée par son autrice, dont le brouillon reste lisible.",
       "support_ids": [
         "SUP-2d9cb5d014d223bd"
       ]
     },
     {
       "claim_id": "C035",
-      "locator": "sections[3].paragraphs[0]",
-      "start": 291,
-      "end": 354,
-      "claim_text": "et la première reste sous les yeux du lecteur avec ses manques.",
-      "normalized_claim": "La premiere liste demeure visible pour le lecteur du rapport, avec ses manques.",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 171,
+      "end": 286,
+      "claim_text": "C’est une raison de s’en servir comme d’un instrument de lecture, et une raison de ne pas le traiter comme une loi.",
+      "normalized_claim": "Le statut révisé de la liste invite à s'en servir comme instrument de lecture et non comme loi.",
       "support_ids": [
         "SUP-2d9cb5d014d223bd"
       ]
     },
     {
       "claim_id": "C036",
-      "locator": "sections[3].paragraphs[1]",
-      "start": 51,
-      "end": 170,
-      "claim_text": "L’ordre des douze est une proposition retravaillée par celle qui l’a écrite, et dont le brouillon reste lisible à côté.",
-      "normalized_claim": "L'ordre des douze est une proposition retravaillee par son autrice, dont le brouillon reste lisible a cote.",
-      "support_ids": [
-        "SUP-2d9cb5d014d223bd"
-      ]
-    },
-    {
-      "claim_id": "C037",
-      "locator": "sections[3].paragraphs[1]",
-      "start": 171,
-      "end": 286,
-      "claim_text": "C’est une raison de s’en servir comme d’un instrument de lecture, et une raison de ne pas le traiter comme une loi.",
-      "normalized_claim": "Ce statut de proposition revisee justifie d'employer l'echelle comme instrument de lecture et non comme une loi.",
-      "support_ids": [
-        "SUP-2d9cb5d014d223bd"
-      ]
-    },
-    {
-      "claim_id": "C038",
       "locator": "sections[3].paragraphs[2]",
       "start": 0,
       "end": 49,
       "claim_text": "Ce n’est pas non plus une hiérarchie à appliquer.",
-      "normalized_claim": "L'echelle n'est pas une hierarchie a appliquer.",
+      "normalized_claim": "L'échelle n'est pas une hiérarchie à appliquer.",
       "support_ids": [
-        "SUP-2d9cb5d014d223bd"
+        "SUP-2d9cb5d014d223bd",
+        "SUP-8c80540dcb2e6c7c"
       ]
     },
     {
-      "claim_id": "C039",
+      "claim_id": "C037",
       "locator": "sections[3].paragraphs[2]",
       "start": 50,
       "end": 206,
       "claim_text": "Ce que l’échelle interdit, c’est de confondre un réglage de paramètre avec un changement de trajectoire, puis de s’étonner que la situation n’ait pas bougé.",
-      "normalized_claim": "L'echelle interdit de confondre un reglage de parametre avec un changement de trajectoire.",
+      "normalized_claim": "L'échelle interdit de confondre un réglage de paramètre avec un changement de trajectoire.",
       "support_ids": [
+        "SUP-8c80540dcb2e6c7c",
         "SUP-3a36c7316132dc8f",
+        "SUP-52c992afba49b58c"
+      ]
+    },
+    {
+      "claim_id": "C038",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 42,
+      "end": 188,
+      "claim_text": "Devant une action proposée, on peut demander à quel niveau elle intervient : règle-t-elle un nombre, ou touche-t-elle à ce qui produit ce nombre ?",
+      "normalized_claim": "On peut demander d'une action à quel niveau de l'échelle elle intervient.",
+      "support_ids": [
+        "SUP-8c80540dcb2e6c7c",
+        "SUP-2d9cb5d014d223bd",
+        "SUP-3a36c7316132dc8f",
+        "SUP-ebb398acd46edf3d"
+      ]
+    },
+    {
+      "claim_id": "C039",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 189,
+      "end": 277,
+      "claim_text": "La réponse ne juge pas l’action, elle indique ce qu’on peut raisonnablement en attendre.",
+      "normalized_claim": "Le niveau d'intervention indique l'effet qu'on peut attendre d'une action sans la juger.",
+      "support_ids": [
         "SUP-8c80540dcb2e6c7c"
       ]
     },
     {
       "claim_id": "C040",
       "locator": "sections[4].paragraphs[0]",
-      "start": 0,
-      "end": 41,
-      "claim_text": "Le premier usage est un test de position.",
-      "normalized_claim": "Un premier usage de l'echelle est de tester la position d'une intervention.",
+      "start": 278,
+      "end": 518,
+      "claim_text": "Et quand une difficulté est présentée comme profonde alors que toutes les mesures envisagées se tiennent dans le bas de l’échelle, l’écart entre le diagnostic et le remède devient visible sans qu’il faille discuter chaque mesure séparément.",
+      "normalized_claim": "Quand toutes les mesures envisagées se tiennent en bas de l'échelle face à un problème présenté comme profond, l'écart entre diagnostic et remède devient visible.",
       "support_ids": [
         "SUP-8c80540dcb2e6c7c",
-        "SUP-3a36c7316132dc8f"
+        "SUP-3a36c7316132dc8f",
+        "SUP-52c992afba49b58c"
       ]
     },
     {
       "claim_id": "C041",
-      "locator": "sections[4].paragraphs[0]",
-      "start": 42,
-      "end": 188,
-      "claim_text": "Devant une action proposée, on peut demander à quel niveau elle intervient : règle-t-elle un nombre, ou touche-t-elle à ce qui produit ce nombre ?",
-      "normalized_claim": "L'echelle permet de demander si une action regle un nombre ou touche a ce qui produit ce nombre.",
-      "support_ids": [
-        "SUP-3a36c7316132dc8f",
-        "SUP-8c80540dcb2e6c7c",
-        "SUP-2d9cb5d014d223bd"
-      ]
-    },
-    {
-      "claim_id": "C042",
-      "locator": "sections[4].paragraphs[0]",
-      "start": 189,
-      "end": 277,
-      "claim_text": "La réponse ne juge pas l’action, elle indique ce qu’on peut raisonnablement en attendre.",
-      "normalized_claim": "Situer une action sur l'echelle indique ce qu'on peut en attendre sans la juger.",
-      "support_ids": [
-        "SUP-8c80540dcb2e6c7c"
-      ]
-    },
-    {
-      "claim_id": "C043",
-      "locator": "sections[4].paragraphs[0]",
-      "start": 278,
-      "end": 518,
-      "claim_text": "Et quand une difficulté est présentée comme profonde alors que toutes les mesures envisagées se tiennent dans le bas de l’échelle, l’écart entre le diagnostic et le remède devient visible sans qu’il faille discuter chaque mesure séparément.",
-      "normalized_claim": "Quand toutes les mesures envisagees se tiennent en bas de l'echelle alors que la difficulte est dite profonde, l'ecart diagnostic/remede devient visible.",
-      "support_ids": [
-        "SUP-8c80540dcb2e6c7c",
-        "SUP-3a36c7316132dc8f"
-      ]
-    },
-    {
-      "claim_id": "C044",
       "locator": "sections[4].paragraphs[1]",
       "start": 0,
       "end": 164,
       "claim_text": "Le second usage est moins technique et peut-être plus utile : l’échelle donne un vocabulaire à ceux qui sentent qu’un débat porte à côté sans pouvoir dire pourquoi.",
-      "normalized_claim": "Un second usage de l'echelle est de fournir un vocabulaire a qui sent qu'un debat porte a cote.",
+      "normalized_claim": "L'échelle fournit un vocabulaire à ceux qui perçoivent qu'un débat porte à côté.",
       "support_ids": [
-        "SUP-2d9cb5d014d223bd",
+        "SUP-ebb398acd46edf3d",
+        "SUP-84635ba863d861ce",
         "SUP-3a36c7316132dc8f"
+      ]
+    },
+    {
+      "claim_id": "C042",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 0,
+      "end": 71,
+      "claim_text": "Quant à l’échelle elle-même, elle se lit mieux là où elle a été écrite.",
+      "normalized_claim": "L'échelle se lit mieux dans la source primaire où elle a été écrite.",
+      "support_ids": [
+        "SUP-ec988b343d66a1a7",
+        "SUP-d9d2160f8abde07c"
+      ]
+    },
+    {
+      "claim_id": "C043",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 72,
+      "end": 162,
+      "claim_text": "Le rapport de décembre 1999, vingt et une pages publiées par The Sustainability Institute,",
+      "normalized_claim": "Le rapport est de décembre 1999, compte vingt et une pages et est publié par The Sustainability Institute.",
+      "support_ids": [
+        "SUP-d9d2160f8abde07c",
+        "SUP-5258229e5f5542b6"
+      ]
+    },
+    {
+      "claim_id": "C044",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 163,
+      "end": 252,
+      "claim_text": "porte ses deux états côte à côte : les neuf entrées de la page 2, les douze de la page 3.",
+      "normalized_claim": "Le rapport porte les neuf entrées de la page 2 et les douze de la page 3.",
+      "support_ids": [
+        "SUP-2d9cb5d014d223bd"
       ]
     },
     {
       "claim_id": "C045",
       "locator": "sections[4].paragraphs[2]",
-      "start": 0,
-      "end": 71,
-      "claim_text": "Quant à l’échelle elle-même, elle se lit mieux là où elle a été écrite.",
-      "normalized_claim": "L'echelle se lit mieux dans le rapport ou elle a ete ecrite.",
-      "support_ids": [
-        "SUP-d9d2160f8abde07c",
-        "SUP-2d9cb5d014d223bd",
-        "SUP-5258229e5f5542b6"
-      ]
-    },
-    {
-      "claim_id": "C046",
-      "locator": "sections[4].paragraphs[2]",
-      "start": 72,
-      "end": 161,
-      "claim_text": "Le rapport de décembre 1999, vingt et une pages publiées par The Sustainability Institute",
-      "normalized_claim": "Le rapport est daté de decembre 1999, compte vingt et une pages et est publie par The Sustainability Institute.",
-      "support_ids": [
-        "SUP-d9d2160f8abde07c",
-        "SUP-5258229e5f5542b6"
-      ]
-    },
-    {
-      "claim_id": "C047",
-      "locator": "sections[4].paragraphs[2]",
-      "start": 163,
-      "end": 252,
-      "claim_text": "porte ses deux états côte à côte : les neuf entrées de la page 2, les douze de la page 3.",
-      "normalized_claim": "Le rapport porte les deux etats de la liste : neuf entrees page 2, douze page 3.",
-      "support_ids": [
-        "SUP-2d9cb5d014d223bd"
-      ]
-    },
-    {
-      "claim_id": "C048",
-      "locator": "sections[4].paragraphs[2]",
       "start": 253,
       "end": 356,
       "claim_text": "Et cette page 2 signale qu’une version plus courte avait paru dans la revue Whole Earth à l’hiver 1997.",
-      "normalized_claim": "La page 2 du rapport signale qu'une version plus courte avait paru dans la revue Whole Earth a l'hiver 1997.",
+      "normalized_claim": "La page 2 signale qu'une version plus courte avait paru dans Whole Earth à l'hiver 1997.",
       "support_ids": [
         "SUP-5258229e5f5542b6"
       ]

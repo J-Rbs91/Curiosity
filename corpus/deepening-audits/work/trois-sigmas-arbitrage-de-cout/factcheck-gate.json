@@ -1,67 +1,52 @@
 {
   "protocol_version": 1,
   "concept_id": "trois-sigmas-arbitrage-de-cout",
-  "candidate_sha256": "5ae531c07fa7a65952df3c7ab644ce0e4d25824021a0c8d1d4f98601c302d9d7",
+  "candidate_sha256": "1b16ca698a7691100d5bd7b2d773fef4effc8ac48a570b7dc36a48a56cd9fee8",
   "verdict": "FACTCHECK_FAIL",
-  "claims": 68,
-  "supported": 57,
-  "failed": 11,
+  "claims": 73,
+  "supported": 65,
+  "failed": 8,
   "structural_errors": [],
   "failures": [
     {
       "claim_id": "C002",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun appui ; l'énoncé « il arrive qu'on la dérègle en la corrigeant » est présenté comme un fait et rien dans le bundle ne le porte."
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis autorisent deux erreurs dont chacune coute, rien de plus : ni la geometrie « trop pres de la moyenne / trop loin » (aucun appui ne place les limites a une distance d'une moyenne, ni t comme multiple d'une unite sigma), ni les frequences et durees presentees comme reelles (« sans arret », « on perd des heures », « pendant des semaines », l'installation d'une derive)."
     },
     {
-      "claim_id": "C016",
+      "claim_id": "C003",
       "verdict": "TOO_STRONG",
-      "reason": "Les appuis ne disent que « la probabilité P associée aux limites » et « increasing the value P » ; aucun n'établit la définition avancée — probabilité qu'un point relevé tombe à l'intérieur des limites."
-    },
-    {
-      "claim_id": "C017",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis portent le compromis (augmenter P réduit le coût des fausses recherches, au prix d'ennuis réels manqués) mais aucun n'établit l'identification « augmenter P, c'est écarter les limites », qui suppose la définition de P refusée en C016."
-    },
-    {
-      "claim_id": "C019",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis établissent un arbitrage de coût, non qu'aucune largeur ne vaut en soi ni que la largeur dépend des coûts locaux (« là où l'on travaille ») ; la source retient au contraire une valeur générale, t = 3."
+      "reason": "La phrase de la p. 276 oppose « the cost of looking for trouble when it does not exist » aux « disadvantages occasioned by overlooking troubles that do exist » sans nommer la monnaie d'aucun des deux ; « l'une en temps perdu, l'autre en pieces mauvaises » specifie le contenu des deux couts au-dela de ce que les appuis portent."
     },
     {
       "claim_id": "C020",
       "verdict": "TOO_STRONG",
-      "reason": "Aucun appui ne porte de variation d'un lieu de travail à l'autre ; l'extension de l'arbitrage de coût à une relativité locale de la réaction dépasse ce que le résumé et la citation autorisent."
+      "reason": "La note de la fiche autorise la voie deductive — « tirerait la valeur de t d'un niveau de confiance choisi sur une loi supposee connue » — mais aucun appui ne definit cette loi comme la repartition des valeurs « quand rien d'autre que le hasard n'agit » : cette glose ajoute au dossier un contenu (l'etat ou seul le hasard agit) que rien n'y porte."
     },
     {
-      "claim_id": "C023",
-      "verdict": "CONFLICT",
-      "reason": "Les deux appuis divergent sur la lettre citée : la note donne « f(θ, n) », la note PROSE, qui dit lire sur l'image, donne « fθ(θ, n) » ; le verbatim tel qu'il est écrit ne peut être certifié."
-    },
-    {
-      "claim_id": "C030",
+      "claim_id": "C049",
       "verdict": "TOO_STRONG",
-      "reason": "La note ne dit que le rejet de la voie déductive ; aucun appui n'établit que l'expérience invoquée soit une accumulation de résultats « atelier après atelier », ni la défense par « le théorème dont elle sort »."
+      "reason": "Les appuis fournis portent sur « t = 3 », valeur economique acceptable tiree de l'experience et non d'un theoreme ; aucun d'eux n'identifie t = 3 a « trois sigmas » ni ne donne t comme multiple d'une unite sigma, et c'est cette identification qui porte le sujet de la conclusion."
     },
     {
-      "claim_id": "C031",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun appui ; la conséquence sur le mode de contestation et l'autorité des deux types de limites n'est portée par rien dans le bundle, et l'absence de contradiction n'est pas une preuve."
-    },
-    {
-      "claim_id": "C035",
+      "claim_id": "C058",
       "verdict": "TOO_STRONG",
-      "reason": "Les appuis portent la formule et son usage, mais aucun n'établit l'exposé avancé ici : t comme multiple d'une unité sigma mesurant la dispersion ordinaire, ni P comme proportion des valeurs restant à l'intérieur."
+      "reason": "L'appui porte « 0,27 % de fausses alarmes sous la loi normale » ; le claim transforme ce taux en une proportion de points tombant « au dela de trois sigmas », enonce geometrique plus fort qui suppose les limites placees a trois unites sigma, ce que nul appui n'etablit."
     },
     {
-      "claim_id": "C037",
+      "claim_id": "C060",
       "verdict": "TOO_STRONG",
-      "reason": "Les appuis établissent l'ordre (loi inconnue p. 276, puis l'inégalité avant le choix de t) mais montrent aussi une question et sa réponse empirique interposées : l'adjacence affirmée par « juste après » n'est pas portée."
+      "reason": "L'appui dit que ce calcul « n'a ete trouve nulle part dans les pages lues » et insiste : « C'est une absence de trouvaille sur les p. 276-277, pas une demonstration d'absence dans l'ouvrage entier. » « Ce calcul est le leur » franchit cette borne en attribuant positivement le calcul aux manuels, donc en le retirant a l'auteur ; seule la seconde moitie, l'attribution courante a Shewhart, est portee."
     },
     {
-      "claim_id": "C038",
+      "claim_id": "C067",
       "verdict": "TOO_STRONG",
-      "reason": "Aucun appui n'établit que l'inégalité vaille sans connaître la loi ; la lecture proposée — « ce qui reste quand cette loi est inconnue » — suppose une prémisse absente du bundle."
+      "reason": "La dependance a la normalite est bien portee par l'appui, mais le sujet de la conditionnelle, « trois sigmas », suppose que t = 3 designe trois unites sigma : aucun appui fourni ne porte ce terme ni ce lien, et sigma n'est defini nulle part dans la matiere disponible."
+    },
+    {
+      "claim_id": "C069",
+      "verdict": "TOO_STRONG",
+      "reason": "La premiere moitie suit les appuis, mais « c'est un atelier ou le compte cesse d'y etre qui l'y mettrait » enonce une condition de mise en defaut et rend la validite de la regle relative a un atelier donne ; les appuis retiennent au contraire une valeur generale tiree de l'experience et ne disent rien de ce qui la refuterait."
     }
   ]
 }
