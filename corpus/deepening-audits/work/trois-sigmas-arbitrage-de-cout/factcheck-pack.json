@@ -3,7 +3,7 @@
   "concept_id": "trois-sigmas-arbitrage-de-cout",
   "context_budget_tokens": 300000,
   "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
-  "candidate_sha256": "5ae531c07fa7a65952df3c7ab644ce0e4d25824021a0c8d1d4f98601c302d9d7",
+  "candidate_sha256": "1b16ca698a7691100d5bd7b2d773fef4effc8ac48a570b7dc36a48a56cd9fee8",
   "validated_sha256": "12275158639dd3bcbeb8f4b52e3b47defe8249cdd69fde978a86119b9738ac72",
   "evidence_files": [],
   "access_reconciliation": {
@@ -43,7 +43,7 @@
   "paragraphs": [
     {
       "locator": "lead[0]",
-      "text": "Une machine tourne, on mesure ce qu’elle sort, et les chiffres bougent d’une pièce à l’autre. Il faut bien tracer quelque part une ligne au delà de laquelle on ira voir ce qui se passe. Trop près de la moyenne, l’alerte sonne sans arrêt : on démonte une machine qui n’avait rien, on perd des heures, et il arrive qu’on la dérègle en la corrigeant. Trop loin, la dérive s’installe et personne ne bouge pendant des semaines. Les deux erreurs se paient, mais pas au même guichet : l’une en temps perdu, l’autre en pièces mauvaises."
+      "text": "Une machine tourne, on mesure ce qu’elle sort, et les chiffres bougent d’une pièce à l’autre. Il faut bien tracer quelque part une ligne au delà de laquelle on ira voir ce qui se passe. Trop près de la moyenne, l’alerte sonne sans arrêt : on démonte une machine qui n’avait rien, on perd des heures. Trop loin, la dérive s’installe et personne ne bouge pendant des semaines. Les deux erreurs se paient, mais pas au même guichet : l’une en temps perdu, l’autre en pièces mauvaises."
     },
     {
       "locator": "lead[1]",
@@ -57,17 +57,17 @@
     {
       "locator": "sections[0].paragraphs[1]",
       "section_title": "Deux façons de se tromper, et ce qu’elles coûtent",
-      "text": "Le P de cette phrase est la probabilité qu’un point relevé tombe à l’intérieur des limites. L’augmenter, c’est écarter les limites : moins de fausses alertes, donc moins de courses inutiles, et du même geste davantage d’ennuis réels qui passent inaperçus. Une seule commande, deux effets contraires. Il n’existe pas de réglage qui améliore les deux à la fois, seulement un point où l’on accepte de perdre le moins."
+      "text": "Le P de cette phrase est une probabilité associée aux limites. L’augmenter réduit le coût de chercher un ennui qui n’existe pas, et laisse du même geste passer davantage d’ennuis réels. Une seule commande, deux effets contraires. Il n’existe pas de réglage qui améliore les deux à la fois, seulement un point où l’on accepte de perdre le moins."
     },
     {
       "locator": "sections[0].paragraphs[2]",
       "section_title": "Deux façons de se tromper, et ce qu’elles coûtent",
-      "text": "Aucune largeur de limites n’est donc bonne en soi : elle dépend de ce que chaque erreur coûte là où l’on travaille. Imaginons deux ateliers voisins. Dans le premier, arrêter la ligne pour rien immobilise trente personnes une demi-journée. Dans le second, un défaut non détecté part chez le client et revient en réclamation. Le même écart n’y mérite pas la même réaction."
+      "text": "Imaginons un atelier, et ce que chacun de ces deux postes y coûte. Arrêter la ligne sur une alerte qui n’avait pas lieu d’être immobilise trente personnes une demi-journée. Un défaut laissé passer, lui, part chez le client et revient en réclamation. Ce sont ces deux dépenses que la phrase de la page 276 met en balance."
     },
     {
       "locator": "sections[1].paragraphs[0]",
       "section_title": "Pourquoi la limite ne se déduit pas",
-      "text": "On pourrait croire que la valeur se calcule. Il suffirait de connaître la loi de la grandeur qu’on suit, c’est-à-dire la façon dont ses valeurs se répartissent quand rien d’autre que le hasard n’agit ; on choisirait un niveau de confiance, et la limite en découlerait. C’est cette voie que Shewhart ferme, en constatant que la plupart du temps cette loi nous échappe : « we never know f(θ, n) in sufficient detail to set up such limits »."
+      "text": "On pourrait croire que la valeur se calcule. Il suffirait de connaître la loi de la grandeur qu’on suit, c’est-à-dire la façon dont ses valeurs se répartissent quand rien d’autre que le hasard n’agit ; on choisirait un niveau de confiance, et la limite en découlerait. C’est cette voie que Shewhart ferme, en constatant que la plupart du temps cette loi nous échappe : elle n’est pas connue « in sufficient detail to set up such limits »."
     },
     {
       "locator": "sections[1].paragraphs[1]",
@@ -77,17 +77,17 @@
     {
       "locator": "sections[1].paragraphs[2]",
       "section_title": "Pourquoi la limite ne se déduit pas",
-      "text": "Dire que la base est empirique n’est pas un aveu de faiblesse : c’est un changement de justification. Une limite déduite se défend par le théorème dont elle sort ; une limite empirique se défend par ce qu’elle a donné jusqu’ici, atelier après atelier. On peut en tirer que la première se conteste par une erreur de calcul, la seconde par son coût : ni la même conversation, ni la même autorité."
+      "text": "Dire que la base est empirique n’est pas un aveu de faiblesse : c’est un changement de justification. La voie qu’il écarte tirerait la valeur de t d’un niveau de confiance choisi sur une loi supposée connue ; faute de cette loi, la justification se déplace vers ce que l’expérience indique."
     },
     {
       "locator": "sections[2].paragraphs[0]",
       "section_title": "Ce que l’inégalité de Tchebychev laisse ouvert",
-      "text": "Juste au-dessus de la phrase où il tranche, Shewhart imprime une inégalité due à Tchebychev, P > 1 − 1/t², et c’est le seul nom propre étranger de ces deux pages. Elle relie la largeur des limites, comptée en multiples t de l’unité qu’on note sigma et qui mesure la dispersion ordinaire des mesures, à la proportion des valeurs qui restent à l’intérieur. Il l’écrit avec un signe strict, là où l’énoncé usuel emploie un signe large."
+      "text": "Juste au-dessus de la phrase où il tranche, Shewhart imprime une inégalité due à Tchebychev, P > 1 − 1/t², et c’est le seul nom propre étranger de ces deux pages. Elle met en rapport cette probabilité P et le nombre t. Il l’écrit avec un signe strict, là où l’énoncé usuel emploie un signe large."
     },
     {
       "locator": "sections[2].paragraphs[1]",
       "section_title": "Ce que l’inégalité de Tchebychev laisse ouvert",
-      "text": "Shewhart l’invoque juste après avoir écrit que la loi lui échappe : on peut comprendre l’inégalité comme ce qui reste quand cette loi est inconnue. Sa limite est qu’elle vaut pour n’importe quel t : plus t est grand, plus la garantie est forte, et elle ne désigne aucune valeur plutôt qu’une autre. D’où la phrase qui suit immédiatement la formule, « We are still faced with the choice of t ». L’inégalité borne, elle ne choisit pas."
+      "text": "Shewhart l’invoque après avoir écrit que la loi lui échappe. Sa limite est qu’elle vaut pour n’importe quel t : plus t est grand, plus la garantie est forte, et elle ne désigne aucune valeur plutôt qu’une autre. D’où la phrase qui suit immédiatement la formule, « We are still faced with the choice of t ». L’inégalité borne, elle ne choisit pas."
     },
     {
       "locator": "sections[2].paragraphs[2]",
@@ -512,6 +512,6 @@
       "text": "Nuance de transcription relevée par le même contrôle, sans conséquence pour la carte : Shewhart imprime l'inégalité de Tchebychev sous forme stricte, P > 1 − 1/t², là où l'énoncé usuel est large (≥). La fiche ne reproduit pas la formule et n'est donc pas en cause."
     }
   ],
-  "estimated_tokens": 9358,
+  "estimated_tokens": 9193,
   "status": "READY"
 }
