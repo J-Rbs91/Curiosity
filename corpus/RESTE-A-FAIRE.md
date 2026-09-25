@@ -37,6 +37,7 @@ script ne peut pas dire : quel travail est possible aujourd'hui, ce qu'il coûte
 | **H.** Un niveau d'accès surdéclaré désarme le gate | 5 cas établis, 13 champs à normaliser | non pour le correctif, oui pour les cas | **détection faite le 22 septembre 2026** ; reste la réparation des fiches, qui est un geste de la couche carte |
 | **I.** L'auditeur prenait une absence du dossier pour une preuve | **aucun** | non | **fermé le 22 septembre 2026**, par le réécrivain qui a refusé la prescription |
 | **J.** Le pack résout le dossier par l'identifiant de la carte | 12 répertoires, 186 Ko hors d'atteinte | non pour le correctif, oui pour identifier les onze non réclamés | ouvert le 25 septembre 2026 ; **un cas prouvé, et il a coûté un rejet** |
+| **K.** Une omission du claim mapper fabrique un échec immérité | **aucun** pour le correctif | non | ouvert le 25 septembre 2026 ; **le mapper est le seul maillon que rien ne double** |
 
 **Le chantier A est fermé.** Il s'était vidé le 21 août, rouvert et creusé pendant cinq lots
 d'ouverture consécutifs jusqu'à trente-quatre cartes le 28 août, puis refermé en trois nuits :
@@ -1692,6 +1693,102 @@ Dans cet ordre, et les deux premiers ne demandent aucune recherche documentaire.
    désigne, quand il en porte un. Cela réglerait le cas prouvé sans rien inférer, puisque c'est la
    carte qui déclare. Aucun test ne couvre aujourd'hui le cas « le champ `dossier` pointe hors du
    répertoire de l'identifiant », et c'est par ce test que le correctif commencerait.
+
+---
+
+# K. Une omission du claim mapper fabrique un échec que le texte ne mérite pas — ouvert le 25 septembre 2026
+
+**Le dispositif est fail-closed, et c'est sa qualité. Mais il ne peut pas distinguer un claim
+réellement non soutenu d'un claim dont le mapper a simplement oublié de citer l'appui.** Les deux
+arrivent au gate avec `support_ids: []`, le bundle ne leur résout aucun support, et le vérificateur
+n'a d'autre issue que `UNSUPPORTED`. Le refus est alors correct au vu du bundle, et faux au vu du
+dépôt — le même défaut de forme que le chantier J, à un composant de distance.
+
+## Le cas établi, sur `points-de-levier`, troisième tour
+
+La carte arrivait de sa seconde correction avec **3 claims refusés sur 48**, tous des assertions de
+fréquence, toutes retirées. Le texte lecteur était passé de 1 120 mots à 860 en trois passes, sans
+qu'un mot soit ajouté.
+
+Le claim map du troisième tour, sur ce texte inchangé, a rendu **63 claims dont 20 sans aucun
+`support_id`**. Il est conservé sous
+`corpus/deepening-audits/work/points-de-levier/claim-map-incomplete-tour3.json` pour que le cas
+reste vérifiable.
+
+**Un de ces vingt est soutenu par un appui présent dans le pack, et le gate du tour précédent l'avait
+écrit.** Le claim porte « Devant un ensemble qui fonctionne mal, la question pratique est "où
+appuyer". » — c'est exactement la phrase que la correction venait de produire. Le pack contient
+l'appui `$.hook`, `access: "n/a"`, dont le texte est « Où appuyer dans un système pour que quelque
+chose bouge vraiment ? ». Et le motif de refus du tour 2 disait, mot pour mot : *« Le hook n'autorise
+que la question "où appuyer" »*. La correction a donc retiré ce que le gate refusait, gardé ce que le
+gate autorisait, **et le mapping suivant n'a pas cité l'appui que le gate avait lui-même nommé.**
+
+## Les deux défauts sont distincts et il faut les séparer
+
+**1. L'appui disponible non proposé.** C'est le défaut grave, parce qu'il est indétectable par le
+script : `--bundle` vérifie que chaque `support_id` cité existe, jamais qu'un appui existant a été
+cité. Un mapper silencieusement incomplet produit donc un `FACTCHECK_FAIL` que rien ne signale comme
+suspect.
+
+**2. La charnière de discours promue en claim.** Les vingt comprennent des fragments qui n'affirment
+rien de vérifiable sur le concept ni sur l'autrice : « L'ordre se comprend mieux si l'on regarde où
+chaque geste se place. », « Ce détail change le statut de tout ce qui précède. », « Le premier usage
+est un test de position. », et des fragments de quelques mots, « avec ses manques », « les montants,
+les taux, les seuils ». §4 demande des **claims vérifiables**, et le protocole prévoit qu'un
+paragraphe se déclare avec une liste vide : une charnière qui organise la lecture sans rien affirmer
+du monde n'est pas une proposition à vérifier.
+
+Ce second défaut est moins grave mais pas anodin, et **il ne se corrige pas en relâchant le
+découpage** : une phrase qui a l'air d'une transition mais affirme en passant un fait, une
+causalité, une fréquence ou une évaluation est un claim, et servir de charnière ne l'exempte de rien.
+
+## Ce que cela dit du dispositif, et qui n'était pas su
+
+**La granularité du claim map n'est pas déterministe, et le verdict du gate en dépend.** Trois
+mappers sur le même concept, sur des textes de 1 102, 889 et 860 mots — donc décroissants — ont
+rendu 49, 48 et 63 claims. Le troisième découpe un texte plus court en un tiers de claims
+supplémentaires. Le gate, lui, est déterministe **à mapping donné** ; il ne l'est pas à texte donné.
+
+Le protocole le dit pour le modèle et pas pour ce composant : « le modèle propose, le dépôt fournit
+la preuve, un autre modèle juge l'entailment, et le code décide si les conditions de publication sont
+réunies ». Le code décide effectivement — **sur un découpage et une sélection d'appuis qu'un modèle
+a choisis seuls, et que rien ne contrôle.** C'est le maillon non redondant de la chaîne : l'auditeur
+est doublé par le gate, le réécrivain par le vérificateur, le vérificateur par le script, le mapper
+par personne.
+
+## Ce qui a été fait ici, et la limite de ce geste
+
+La carte a été **remappée**, sans toucher au texte : le SHA est inchangé, le pack reste valide,
+aucune boucle de correction n'est consommée — les deux boucles du protocole comptent des
+réécritures, et il n'y a pas eu de réécriture.
+
+**Et il faut nommer le risque de ce geste, parce qu'il est réel.** Remapper jusqu'à obtenir un
+verdict favorable serait du magasinage de verdict, et ruinerait le dispositif plus sûrement que le
+défaut qu'il corrige. Ce qui distingue les deux ici est que **l'incomplétude a été établie avant le
+remapping et sur une pièce indépendante** : l'appui `$.hook` est dans le pack, son texte autorise le
+claim, et le gate du tour précédent l'avait écrit. Le motif n'est pas « le verdict ne me plaît pas »,
+c'est « cet artefact est incomplet », ce que §9 range sous `FACTCHECK_INVALID`.
+
+**La règle à retenir est donc étroite, et elle doit le rester** : un remapping ne se justifie que par
+une incomplétude démontrée sur pièce, jamais par le verdict obtenu, et la carte défectueuse se
+conserve à côté de la nouvelle.
+
+## Par quel bout prendre ce chantier
+
+1. **Un contrôle mécanique de complétude du mapping**, et c'est le correctif qui vaut le plus. Pour
+   chaque claim sans `support_id`, le script peut chercher dans le pack les appuis dont le texte
+   partage un empan significatif avec le `claim_text` et **avertir** plutôt que de refuser. Un
+   avertissement suffit : il rend visible ce qui est aujourd'hui silencieux, sans donner au script un
+   jugement sémantique qu'il n'a pas à porter.
+2. **Une mesure de la variance**, avant de faire du point 1 une règle. Trois mappings sur une carte ne
+   sont pas une mesure. Le coût est faible : remapper deux fois quelques cartes déjà passées et
+   comparer le nombre de claims, le nombre de claims sans appui et le verdict.
+3. **Une consigne au mapper sur les charnières de discours**, dans `FACTCHECK_PROTOCOL.md` §4 ou dans
+   l'agent : ce qui n'affirme rien du monde ne se promeut pas en claim, et l'excès inverse — épargner
+   une phrase parce qu'elle a l'air d'une transition — est refusé avec la même netteté.
+4. **Ne jamais laisser un `rewrite_rejected_factcheck` se prononcer sur un mapping suspect.** Un refus
+   au plafond est le verdict le plus coûteux du dispositif, puisqu'il restaure un texte antérieur
+   moins bon. Avant de le prononcer, les claims sans appui se relisent un par un contre le pack.
 
 ---
 
