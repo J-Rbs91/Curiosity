@@ -1589,6 +1589,28 @@ réserves. **La carte s'est terminée en `FACTCHECK_FAIL` / `rewrite_rejected_fa
 18 septembre. Comme pour `regulation-controle-autonome` au chantier G, ce verdict ne dit pas que le
 texte dépasse ses sources : il dit que l'instrument n'a pas ouvert le dossier.
 
+**Et cette fois le rapprochement ne reste pas une vraisemblance : il se vérifie claim par claim.**
+Le gate conservé sous `work/critere-de-la-retroaction/factcheck-gate.json` compte **45 `SUPPORTED`,
+23 `UNSUPPORTED` et 2 `TOO_STRONG`** sur un pack de 45 supports — un pack construit le
+19 septembre, dont le champ `evidence_files` est `undefined`, ce qui datait déjà le ramassage. Trois
+au moins de ses motifs de refus nomment une matière que le fichier inatteignable porte **mot pour
+mot** :
+
+| motif écrit par le vérificateur | ce que porte `retroaction-denaturee/lecture.json` |
+|---|---|
+| « la liste des objets de démonstration (thermostat, autocuiseur, chasse d'eau, fièvre) n'est établie par aucune preuve du bundle » | « l'auteur raisonne sur un thermostat, un autocuiseur, un réservoir de W.-C., un thermocouple, un joueur de quilles, une fièvre, un professeur devant quelques centaines d'étudiants » |
+| « aucun support fourni ici ne documente l'intention de l'auteur » | le rattachement explicite à Veraldi 1969, « dont il reprend le reproche fait aux spécialistes de la communication : l'emprunt abusif de concepts venus d'autres disciplines et leur utilisation dénaturée », et « Paquette ne forge ni rétroaction ni rétroinformation […] : il leur assigne des définitions distinctes » |
+| « ni la comparaison de deux objets domestiques, ni son attribution à Paquette ne sont établies » | la distinction autocuiseur / réservoir, citation à l'appui : l'autocuiseur évacue l'excès de vapeur « et non sur un ajustement à la baisse de la source de chaleur » |
+
+Le fichier porte en outre les locators p. 10 et p. 11-13 sur lesquels plusieurs claims butent.
+
+**Le verdict est donc faux sur des claims nommés, et non seulement suspect.** C'est la forme la plus
+coûteuse de l'échec du dispositif : fail-closed sur une preuve présente. Le refus était correct au
+vu du bundle, le bundle était incomplet, et **aucune sortie ne le disait** — le pack rendait
+`READY`. Un lot antérieur l'avait pressenti sans le nommer : le candidat refusé de cette carte est
+enregistré sous `candidate-blocked-tooling.json`, et non sous le
+`candidate-rejected-factcheck.json` des autres refus du même lot.
+
 **C'est le seul des douze que la carte réclame elle-même.** Les onze autres ne sont réclamés par
 aucun champ `dossier` du dépôt, et **rien n'établit qu'ils soient le dossier manquant d'une carte
 existante** : un nom comme `carte-de-controle` ou `ironies-de-l-automatisation` est un nom de
