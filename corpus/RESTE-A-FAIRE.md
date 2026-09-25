@@ -36,6 +36,8 @@ script ne peut pas dire : quel travail est possible aujourd'hui, ce qu'il coûte
 | **G.** Le pack de preuve ne lisait qu'un fichier du dossier | **aucun** | non | **fermé le 21 septembre 2026** — dernière suite portée, la version antérieure se désigne par un SHA de blob |
 | **H.** Un niveau d'accès surdéclaré désarme le gate | 5 cas établis, 13 champs à normaliser | non pour le correctif, oui pour les cas | **détection faite le 22 septembre 2026** ; reste la réparation des fiches, qui est un geste de la couche carte |
 | **I.** L'auditeur prenait une absence du dossier pour une preuve | **aucun** | non | **fermé le 22 septembre 2026**, par le réécrivain qui a refusé la prescription |
+| **J.** Le pack résout le dossier par l'identifiant de la carte | 12 répertoires, 186 Ko hors d'atteinte | non pour le correctif, oui pour identifier les onze non réclamés | ouvert le 25 septembre 2026 ; **un cas prouvé, et il a coûté un rejet** |
+| **K.** Une omission du claim mapper fabrique un échec immérité | **aucun** pour le correctif | non | ouvert le 25 septembre 2026 ; **le mapper est le seul maillon que rien ne double** |
 
 **Le chantier A est fermé.** Il s'était vidé le 21 août, rouvert et creusé pendant cinq lots
 d'ouverture consécutifs jusqu'à trente-quatre cartes le 28 août, puis refermé en trois nuits :
@@ -1210,8 +1212,16 @@ le dit maintenant, et onze tests le tiennent : **le script n'en avait aucun.**
    objets. Le vérificateur est alors fondé à les traiter comme non consultés, alors que l'en-tête
    du fichier déclare la lecture intégrale. **Ce n'est pas un défaut de code : c'est une
    information absente des fichiers**, et elle ne peut pas être ajoutée par déduction.
-3. **Les neuf rapports v3 antérieurs ne sont pas invalidés** : ces cartes n'ont aucun répertoire
-   de preuve, donc leur pack était déjà complet. Aucune reprise n'est due de ce côté.
+3. ~~**Les neuf rapports v3 antérieurs ne sont pas invalidés** : ces cartes n'ont aucun répertoire
+   de preuve, donc leur pack était déjà complet. Aucune reprise n'est due de ce côté.~~ **Faux, et
+   corrigé le 25 septembre 2026 : voir le chantier J.** L'inférence enchaîne « aucun répertoire à
+   cet identifiant », « donc aucun dossier », « donc pack complet », et le deuxième pas ne suit pas
+   du premier — **le dossier d'une carte peut vivre sous un autre nom que le sien**.
+   `critere-de-la-retroaction` est le contre-exemple : son propre champ `dossier` désigne
+   `corpus/evidence/retroaction-denaturee/lecture.json`, 13 Ko qui existent, et elle est en
+   `FACTCHECK_FAIL`. Douze répertoires de preuves ne portent le nom d'aucune carte, pour 186 Ko de
+   lectures primaires qu'aucun gate n'a ouvertes. **Une reprise était donc due, et cette ligne l'a
+   fermée pendant six jours.**
 4. ~~**Le contrôle mécanique des citations a le même angle mort.**~~ **Fermé le 20 septembre
    2026.** `corpus:deepen --check` ne comparait une citation qu'à `corpus/validated/<id>.json`.
    Il prend désormais le dossier entier, par la même fonction que le pack de preuve.
@@ -1546,6 +1556,253 @@ cette règle, et deux d'entre eux — ceux du 19 septembre et des lots suivants 
 le dossier en main. Rien ne dit qu'aucun n'a prescrit une conclusion tirée d'une absence ; personne
 ne l'a cherché. **La vérification n'a pas été faite et n'est pas chiffrée ici** : ce serait une
 relecture des dix-sept rapports, et le prochain lot qui en reprend un le verra sur pièce.
+
+---
+
+# J. Le pack résout le dossier par l'identifiant de la carte, et douze lectures sont hors d'atteinte — ouvert le 25 septembre 2026
+
+**Le chantier G a élargi ce que le pack lit dans un répertoire. Il n'a pas touché à la façon dont
+il trouve ce répertoire**, et c'est le second angle mort du même composant. Le pack ramasse
+`corpus/evidence/<conceptId>/`. Si le dossier d'une carte vit sous un autre nom, il n'est pas
+ramassé, `evidence_files` sort vide, et le fact-check se rabat sur le seul enregistrement validé —
+exactement le silence que le chantier G avait été ouvert pour supprimer.
+
+**Douze répertoires de `corpus/evidence/` ne portent le nom d'aucune carte**, aucun état confondu,
+et totalisent **186 Ko de lectures primaires** qu'aucun gate n'a jamais pu ouvrir :
+
+`carte-de-controle`, `controle-maximum`, `croissance-exponentielle-et-doublement`,
+`ironies-de-l-automatisation`, `lahy-korngold-1931`, `limitation-de-l-expansion`,
+`milet-1982-tarde-psychologie-economique`, `pieron-1922`, `retroaction-denaturee`,
+`stock-ne-de-la-disparite-des-rythmes`, `taille-des-entreprises-et-issue-des-greves`,
+`theorie-de-l-accident`.
+
+## Un cas est prouvé par la carte elle-même, et il a coûté un rejet
+
+**`critere-de-la-retroaction` déclare son propre dossier hors de sa portée.** Son champ `dossier`
+vaut `corpus/evidence/retroaction-denaturee/lecture.json`, un fichier de 13 Ko qui existe. La carte
+a été renommée, son répertoire de preuves non, et son champ `dossier` est resté juste — c'est le
+pack qui ne le lit pas, puisqu'il ne lit que l'identifiant.
+
+Le fichier porte la lecture primaire du même article que la carte déclare en `full-text` et pour
+seule source, Guy Paquette, « Feedback, rétroaction, rétroinformation, réponse... du pareil au
+même », *Communication et langages* n° 73 : son attribution motivée, sa citation verbatim, ses
+réserves. **La carte s'est terminée en `FACTCHECK_FAIL` / `rewrite_rejected_factcheck`** le
+18 septembre. Comme pour `regulation-controle-autonome` au chantier G, ce verdict ne dit pas que le
+texte dépasse ses sources : il dit que l'instrument n'a pas ouvert le dossier.
+
+**Et cette fois le rapprochement ne reste pas une vraisemblance : il se vérifie claim par claim.**
+Le gate conservé sous `work/critere-de-la-retroaction/factcheck-gate.json` compte **45 `SUPPORTED`,
+23 `UNSUPPORTED` et 2 `TOO_STRONG`** sur un pack de 45 supports — un pack construit le
+19 septembre, dont le champ `evidence_files` est `undefined`, ce qui datait déjà le ramassage. Trois
+au moins de ses motifs de refus nomment une matière que le fichier inatteignable porte **mot pour
+mot** :
+
+| motif écrit par le vérificateur | ce que porte `retroaction-denaturee/lecture.json` |
+|---|---|
+| « la liste des objets de démonstration (thermostat, autocuiseur, chasse d'eau, fièvre) n'est établie par aucune preuve du bundle » | « l'auteur raisonne sur un thermostat, un autocuiseur, un réservoir de W.-C., un thermocouple, un joueur de quilles, une fièvre, un professeur devant quelques centaines d'étudiants » |
+| « aucun support fourni ici ne documente l'intention de l'auteur » | le rattachement explicite à Veraldi 1969, « dont il reprend le reproche fait aux spécialistes de la communication : l'emprunt abusif de concepts venus d'autres disciplines et leur utilisation dénaturée », et « Paquette ne forge ni rétroaction ni rétroinformation […] : il leur assigne des définitions distinctes » |
+| « ni la comparaison de deux objets domestiques, ni son attribution à Paquette ne sont établies » | la distinction autocuiseur / réservoir, citation à l'appui : l'autocuiseur évacue l'excès de vapeur « et non sur un ajustement à la baisse de la source de chaleur » |
+
+Le fichier porte en outre les locators p. 10 et p. 11-13 sur lesquels plusieurs claims butent.
+
+**Le verdict est donc faux sur des claims nommés, et non seulement suspect.** C'est la forme la plus
+coûteuse de l'échec du dispositif : fail-closed sur une preuve présente. Le refus était correct au
+vu du bundle, le bundle était incomplet, et **aucune sortie ne le disait** — le pack rendait
+`READY`. Un lot antérieur l'avait pressenti sans le nommer : le candidat refusé de cette carte est
+enregistré sous `candidate-blocked-tooling.json`, et non sous le
+`candidate-rejected-factcheck.json` des autres refus du même lot.
+
+**C'est le seul des douze que la carte réclame elle-même.** Les onze autres ne sont réclamés par
+aucun champ `dossier` du dépôt, et **rien n'établit qu'ils soient le dossier manquant d'une carte
+existante** : un nom comme `carte-de-controle` ou `ironies-de-l-automatisation` est un nom de
+concept plausible, et ce sont peut-être des lectures de sujets repérés, lus, jamais cartés. Cette
+section ne tranche pas, parce que le trancher demande d'ouvrir chaque fichier et de le confronter à
+la carte candidate — et parce que **conclure d'un nom voisin à une identité de dossier est
+précisément le raccourci que le dépôt paie le plus cher**.
+
+## Ce que ce défaut a déjà fait écrire de faux, et c'est dans ce fichier
+
+**Le point 3 de la clôture du chantier G est faux, et il ferme une reprise qui était due** :
+
+> **Les neuf rapports v3 antérieurs ne sont pas invalidés** : ces cartes n'ont aucun répertoire de
+> preuve, donc leur pack était déjà complet. Aucune reprise n'est due de ce côté.
+
+L'inférence est « aucun répertoire à cet identifiant, donc aucun dossier, donc pack complet ». Le
+second pas ne suit pas du premier, et `critere-de-la-retroaction` est le contre-exemple. C'est
+l'invariant **absence de contradiction ≠ preuve** appliqué à l'outillage plutôt qu'à un claim, et
+il s'y trompe de la même façon.
+
+**`FACTCHECK_PROTOCOL.md` §3bis porte le même défaut, sur un exemple qui sert à justifier une
+règle.** Il cite Milet 1982 dans `critique-de-l-homo-oeconomicus` et
+`valeur-comme-fait-psychologique` parmi cinq surdéclarations « établies sur pièce », au motif que
+le dossier « ne connaît pas la source du tout ». Or le dépôt porte **25 Ko de lecture primaire de
+Milet 1982**, dans le répertoire orphelin `milet-1982-tarde-psychologie-economique`. Les deux
+cartes ont bien un `lecture.json` à elles, et il ne parle pas de Milet : la lecture de Milet est
+ailleurs. **La prémisse de l'exemple est fausse.** La règle que §3bis en tire — qualifier plutôt
+que dégrader — n'est pas remise en cause par là, et elle reste soutenue par le reste de sa mesure ;
+ce qui l'est, c'est le décompte des surdéclarations, qui compte comme absences des dossiers
+inatteignables.
+
+**Un troisième cas, non réclamé mais de même forme.**
+`predominance-du-conflit-sur-la-negociation` déclare Sami Dassa, « Conflits ou négociation ? Les
+grèves, leurs résultats et la taille des entreprises », *Sociologie du travail* 1983, en
+`full-text`, n'a aucun dossier ramassable, et la lecture de Dassa — 22 Ko — est dans le répertoire
+orphelin `taille-des-entreprises-et-issue-des-greves`. Cette carte est elle aussi en
+`FACTCHECK_FAIL`. Son champ `dossier` ne réclame rien, donc le lien reste une constatation de
+source commune et non une identité établie.
+
+## Le chiffre d'ensemble, et ce qu'il vaut
+
+**Vingt-cinq des 136 cartes n'ont aucun fichier de dossier ramassable.** Leur fact-check ne peut
+alors reposer que sur l'enregistrement validé, où `quotation`, `summary`, `notes` et `review`
+arrivent en `access: "n/a"` et se pèsent sur leur contenu, tandis que toute déclaration de source
+sort en `access_corroboration: dossier-absent` — donc ne peut plus établir le contenu d'une œuvre,
+par §3bis du protocole de fact-check.
+
+Sur les cartes déjà auditées, le croisement est le suivant :
+
+| | `FACTCHECK_PASS` | échec |
+|---|---:|---:|
+| dossier ramassable | 13 | 3 |
+| aucun dossier ramassable | 5 | 4 |
+
+**L'absence de dossier n'interdit donc pas le gate** — cinq cartes l'ont passé sans, sur leur seule
+citation et leurs notes. Mais elle fournit **quatre des sept échecs**, sur un neuvième du corpus
+audité. Le second groupe compte neuf cartes : c'est un signal, pas une mesure, et il ne se cite pas
+comme un taux.
+
+## Par quel bout prendre ce chantier
+
+Dans cet ordre, et les deux premiers ne demandent aucune recherche documentaire.
+
+1. **Corriger le point 3 du chantier G et le décompte de §3bis.** Fait par cette section pour le
+   premier ; le second demande de reprendre les cinq surdéclarations « établies sur pièce » et de
+   vérifier, pour chacune, qu'aucun répertoire orphelin ne porte sa lecture. Deux des cinq sont
+   déjà tombées.
+2. **`critere-de-la-retroaction`, et elle seule, est réparable sans rien établir de neuf** : sa
+   carte nomme son dossier, le fichier existe, l'article est le même. La réparation est un geste de
+   la **couche carte** — ni le pack ni aucun agent `corpus-deepening-*` ne renomme un répertoire de
+   preuves ni ne réécrit un champ `dossier`. Elle rend la carte éligible à une reprise avec son
+   dossier en main, ce qui est le préalable à tout nouveau verdict sur elle.
+3. **Les onze autres répertoires se confrontent un par un**, en ouvrant le fichier et en cherchant
+   la carte qui déclare la même source. Le résultat est de trois natures et il faut les distinguer :
+   dossier d'une carte renommée, lecture d'un sujet jamais carté, ou lecture d'une source qu'une
+   carte déclare sans que ce soit son dossier. **Seule la première autorise un renommage.**
+4. **Et une question d'outillage, qui vaut mieux que douze réparations à la main** : le pack pourrait
+   ramasser, en plus de `corpus/evidence/<id>/`, le chemin que le champ `dossier` de la carte
+   désigne, quand il en porte un. Cela réglerait le cas prouvé sans rien inférer, puisque c'est la
+   carte qui déclare. Aucun test ne couvre aujourd'hui le cas « le champ `dossier` pointe hors du
+   répertoire de l'identifiant », et c'est par ce test que le correctif commencerait.
+
+---
+
+# K. Une omission du claim mapper fabrique un échec que le texte ne mérite pas — ouvert le 25 septembre 2026
+
+**Le dispositif est fail-closed, et c'est sa qualité. Mais il ne peut pas distinguer un claim
+réellement non soutenu d'un claim dont le mapper a simplement oublié de citer l'appui.** Les deux
+arrivent au gate avec `support_ids: []`, le bundle ne leur résout aucun support, et le vérificateur
+n'a d'autre issue que `UNSUPPORTED`. Le refus est alors correct au vu du bundle, et faux au vu du
+dépôt — le même défaut de forme que le chantier J, à un composant de distance.
+
+## Le cas établi, sur `points-de-levier`, troisième tour
+
+La carte arrivait de sa seconde correction avec **3 claims refusés sur 48**, tous des assertions de
+fréquence, toutes retirées. Le texte lecteur était passé de 1 120 mots à 860 en trois passes, sans
+qu'un mot soit ajouté.
+
+Le claim map du troisième tour, sur ce texte inchangé, a rendu **63 claims dont 20 sans aucun
+`support_id`**. Il est conservé sous
+`corpus/deepening-audits/work/points-de-levier/claim-map-incomplete-tour3.json` pour que le cas
+reste vérifiable.
+
+**Un de ces vingt est soutenu par un appui présent dans le pack, et le gate du tour précédent l'avait
+écrit.** Le claim porte « Devant un ensemble qui fonctionne mal, la question pratique est "où
+appuyer". » — c'est exactement la phrase que la correction venait de produire. Le pack contient
+l'appui `$.hook`, `access: "n/a"`, dont le texte est « Où appuyer dans un système pour que quelque
+chose bouge vraiment ? ». Et le motif de refus du tour 2 disait, mot pour mot : *« Le hook n'autorise
+que la question "où appuyer" »*. La correction a donc retiré ce que le gate refusait, gardé ce que le
+gate autorisait, **et le mapping suivant n'a pas cité l'appui que le gate avait lui-même nommé.**
+
+## Les deux défauts sont distincts et il faut les séparer
+
+**1. L'appui disponible non proposé.** C'est le défaut grave, parce qu'il est indétectable par le
+script : `--bundle` vérifie que chaque `support_id` cité existe, jamais qu'un appui existant a été
+cité. Un mapper silencieusement incomplet produit donc un `FACTCHECK_FAIL` que rien ne signale comme
+suspect.
+
+**2. La charnière de discours promue en claim.** Les vingt comprennent des fragments qui n'affirment
+rien de vérifiable sur le concept ni sur l'autrice : « L'ordre se comprend mieux si l'on regarde où
+chaque geste se place. », « Ce détail change le statut de tout ce qui précède. », « Le premier usage
+est un test de position. », et des fragments de quelques mots, « avec ses manques », « les montants,
+les taux, les seuils ». §4 demande des **claims vérifiables**, et le protocole prévoit qu'un
+paragraphe se déclare avec une liste vide : une charnière qui organise la lecture sans rien affirmer
+du monde n'est pas une proposition à vérifier.
+
+Ce second défaut est moins grave mais pas anodin, et **il ne se corrige pas en relâchant le
+découpage** : une phrase qui a l'air d'une transition mais affirme en passant un fait, une
+causalité, une fréquence ou une évaluation est un claim, et servir de charnière ne l'exempte de rien.
+
+## Ce que cela dit du dispositif, et qui n'était pas su
+
+**La granularité du claim map n'est pas déterministe, et le verdict du gate en dépend.** Trois
+mappers sur le même concept, sur des textes de 1 102, 889 et 860 mots — donc décroissants — ont
+rendu 49, 48 et 63 claims. Le troisième découpe un texte plus court en un tiers de claims
+supplémentaires. Le gate, lui, est déterministe **à mapping donné** ; il ne l'est pas à texte donné.
+
+Le protocole le dit pour le modèle et pas pour ce composant : « le modèle propose, le dépôt fournit
+la preuve, un autre modèle juge l'entailment, et le code décide si les conditions de publication sont
+réunies ». Le code décide effectivement — **sur un découpage et une sélection d'appuis qu'un modèle
+a choisis seuls, et que rien ne contrôle.** C'est le maillon non redondant de la chaîne : l'auditeur
+est doublé par le gate, le réécrivain par le vérificateur, le vérificateur par le script, le mapper
+par personne.
+
+## Ce qui a été fait ici, et la limite de ce geste
+
+La carte a été **remappée**, sans toucher au texte : le SHA est inchangé, le pack reste valide,
+aucune boucle de correction n'est consommée — les deux boucles du protocole comptent des
+réécritures, et il n'y a pas eu de réécriture.
+
+**Et il faut nommer le risque de ce geste, parce qu'il est réel.** Remapper jusqu'à obtenir un
+verdict favorable serait du magasinage de verdict, et ruinerait le dispositif plus sûrement que le
+défaut qu'il corrige. Ce qui distingue les deux ici est que **l'incomplétude a été établie avant le
+remapping et sur une pièce indépendante** : l'appui `$.hook` est dans le pack, son texte autorise le
+claim, et le gate du tour précédent l'avait écrit. Le motif n'est pas « le verdict ne me plaît pas »,
+c'est « cet artefact est incomplet », ce que §9 range sous `FACTCHECK_INVALID`.
+
+**La règle à retenir est donc étroite, et elle doit le rester** : un remapping ne se justifie que par
+une incomplétude démontrée sur pièce, jamais par le verdict obtenu, et la carte défectueuse se
+conserve à côté de la nouvelle.
+
+**Le remapping a mesuré l'écart, et il est net.** Sur le même texte et le même pack, un mapper
+instruit des deux défauts rend **45 claims dont zéro sans appui**, contre 63 dont vingt. Le claim
+témoin cite désormais `SUP-ebb398acd46edf3d`, l'appui `$.hook` présent dans le pack depuis le début,
+et les seize paragraphes restent tous couverts — l'écart de dix-huit claims était donc bien de la
+matière non vérifiable promue en claims, et non un découpage plus exigeant.
+
+**Une mise en garde d'exploitation, payée en écrivant cette section.** Un artefact ne se mesure pas
+avant que son agent ait rendu. Ce fichier a été lu pendant que le nouveau mapper l'écrivait : la
+mesure a donné l'état antérieur, 63 claims et vingt sans appui, d'où la conclusion — fausse — que
+deux mappers concordaient et que ce chantier était à retirer. Le dépôt connaissait déjà le symptôme
+voisin, « un squelette écrit tôt ne garantit pas un fichier écrit » ; le corollaire manquait :
+**une mesure prise en cours d'écriture est une mesure de la version précédente, et rien ne l'annonce
+comme telle.** Elle se recoupe contre les compteurs que l'agent rend lui-même, ou elle attend.
+
+## Par quel bout prendre ce chantier
+
+1. **Un contrôle mécanique de complétude du mapping**, et c'est le correctif qui vaut le plus. Pour
+   chaque claim sans `support_id`, le script peut chercher dans le pack les appuis dont le texte
+   partage un empan significatif avec le `claim_text` et **avertir** plutôt que de refuser. Un
+   avertissement suffit : il rend visible ce qui est aujourd'hui silencieux, sans donner au script un
+   jugement sémantique qu'il n'a pas à porter.
+2. **Une mesure de la variance**, avant de faire du point 1 une règle. Trois mappings sur une carte ne
+   sont pas une mesure. Le coût est faible : remapper deux fois quelques cartes déjà passées et
+   comparer le nombre de claims, le nombre de claims sans appui et le verdict.
+3. **Une consigne au mapper sur les charnières de discours**, dans `FACTCHECK_PROTOCOL.md` §4 ou dans
+   l'agent : ce qui n'affirme rien du monde ne se promeut pas en claim, et l'excès inverse — épargner
+   une phrase parce qu'elle a l'air d'une transition — est refusé avec la même netteté.
+4. **Ne jamais laisser un `rewrite_rejected_factcheck` se prononcer sur un mapping suspect.** Un refus
+   au plafond est le verdict le plus coûteux du dispositif, puisqu'il restaure un texte antérieur
+   moins bon. Avant de le prononcer, les claims sans appui se relisent un par un contre le pack.
 
 ---
 

@@ -1,0 +1,811 @@
+{
+  "concept_id": "trois-sigmas-arbitrage-de-cout",
+  "candidate_sha256": "34596d12d292c27c5753d47aa2f1186da288079eb9bde76682f64523489ede22",
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "lead[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[3]",
+      "mapping_status": "CLAIMS_MAPPED"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C001",
+      "locator": "lead[0]",
+      "start": 186,
+      "end": 296,
+      "claim_text": "Deux erreurs guettent alors : aller chercher un ennui qui n’existe pas, ou laisser passer un ennui qui existe.",
+      "normalized_claim": "Deux erreurs opposees : chercher un ennui inexistant, ou laisser passer un ennui reel.",
+      "support_ids": [
+        "SUP-a84c1f318d8d32e4",
+        "SUP-adfd22c28c2ecc54",
+        "SUP-469bc5f18a2e25f6"
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "locator": "lead[0]",
+      "start": 297,
+      "end": 353,
+      "claim_text": "Les deux se paient, et ce sont deux dépenses distinctes.",
+      "normalized_claim": "Les deux erreurs ont chacune un cout, et ces couts sont distincts.",
+      "support_ids": [
+        "SUP-a84c1f318d8d32e4",
+        "SUP-adfd22c28c2ecc54",
+        "SUP-469bc5f18a2e25f6"
+      ]
+    },
+    {
+      "claim_id": "C003",
+      "locator": "lead[1]",
+      "start": 0,
+      "end": 57,
+      "claim_text": "Où placer cette ligne se décide en deux pages, 276 et 277",
+      "normalized_claim": "Le passage en cause est aux pages 276-277.",
+      "support_ids": [
+        "SUP-da544fb1582a7e40",
+        "SUP-f6743dea6733e519",
+        "SUP-0d2e55224713a57e",
+        "SUP-16469b159cfebc7a"
+      ]
+    },
+    {
+      "claim_id": "C004",
+      "locator": "lead[1]",
+      "start": 59,
+      "end": 149,
+      "claim_text": "d’un livre publié à New York en 1931, Economic Control of Quality of Manufactured Product.",
+      "normalized_claim": "Reference bibliographique : ouvrage publie a New York en 1931 sous ce titre.",
+      "support_ids": [
+        "SUP-b00df733fe95669b",
+        "SUP-980c9ee83b78cd0a",
+        "SUP-1719f1148ba779c6",
+        "SUP-0d2e55224713a57e"
+      ]
+    },
+    {
+      "claim_id": "C005",
+      "locator": "lead[1]",
+      "start": 150,
+      "end": 178,
+      "claim_text": "W. A. Shewhart le signe seul",
+      "normalized_claim": "Shewhart est le seul auteur de l'ouvrage.",
+      "support_ids": [
+        "SUP-9981ba0dcb33aed2",
+        "SUP-e91cac76b69cf2c4",
+        "SUP-b9a679c58001ffaa",
+        "SUP-ab62b4f98906b668"
+      ]
+    },
+    {
+      "claim_id": "C006",
+      "locator": "lead[1]",
+      "start": 181,
+      "end": 286,
+      "claim_text": "sur la page de titre, il se présente comme membre du personnel technique des Bell Telephone Laboratories.",
+      "normalized_claim": "La page de titre le donne comme Member of the Technical Staff, Bell Telephone Laboratories.",
+      "support_ids": [
+        "SUP-e91cac76b69cf2c4"
+      ]
+    },
+    {
+      "claim_id": "C007",
+      "locator": "lead[1]",
+      "start": 287,
+      "end": 358,
+      "claim_text": "Sa réponse est un nombre, trois, choisi sur l’expérience et non calculé",
+      "normalized_claim": "La valeur retenue est trois, posee sur l'experience et non deduite d'un calcul.",
+      "support_ids": [
+        "SUP-e3b2818752e0ae04",
+        "SUP-86a42f311ebffb67",
+        "SUP-9981ba0dcb33aed2",
+        "SUP-8b9711a898f2b77f"
+      ]
+    },
+    {
+      "claim_id": "C008",
+      "locator": "lead[1]",
+      "start": 361,
+      "end": 412,
+      "claim_text": "ce qui le justifie est le prix de ces deux erreurs.",
+      "normalized_claim": "Ce qui justifie ce nombre est le cout des deux erreurs.",
+      "support_ids": [
+        "SUP-a84c1f318d8d32e4",
+        "SUP-adfd22c28c2ecc54",
+        "SUP-469bc5f18a2e25f6",
+        "SUP-86a42f311ebffb67"
+      ]
+    },
+    {
+      "claim_id": "C009",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 0,
+      "end": 71,
+      "claim_text": "L’arbitrage n’est pas reconstruit après lui : Shewhart le pose page 276",
+      "normalized_claim": "L'arbitrage est pose par Shewhart lui-meme, page 276.",
+      "support_ids": [
+        "SUP-a84c1f318d8d32e4",
+        "SUP-adfd22c28c2ecc54",
+        "SUP-da544fb1582a7e40"
+      ]
+    },
+    {
+      "claim_id": "C010",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 73,
+      "end": 142,
+      "claim_text": "dans une phrase où les deux erreurs deviennent deux postes de dépense",
+      "normalized_claim": "La phrase de la p. 276 traite les deux erreurs comme deux couts.",
+      "support_ids": [
+        "SUP-a84c1f318d8d32e4",
+        "SUP-adfd22c28c2ecc54"
+      ]
+    },
+    {
+      "claim_id": "C011",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 145,
+      "end": 389,
+      "claim_text": "« We must try to strike a balance between the advantages to be gained by increasing the value P through reduction in the cost of looking for trouble when it does not exist and the disadvantages occasioned by overlooking troubles that do exist »",
+      "normalized_claim": "Citation verbatim de la phrase d'equilibre, p. 276.",
+      "support_ids": [
+        "SUP-a84c1f318d8d32e4",
+        "SUP-adfd22c28c2ecc54"
+      ]
+    },
+    {
+      "claim_id": "C012",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 391,
+      "end": 579,
+      "claim_text": "Il faut chercher un équilibre entre ce qu’on gagne à augmenter la valeur P, en réduisant le coût de chercher un ennui qui n’existe pas, et ce qu’on perd à laisser passer ceux qui existent.",
+      "normalized_claim": "Traduction francaise de la citation.",
+      "support_ids": [
+        "SUP-a84c1f318d8d32e4",
+        "SUP-adfd22c28c2ecc54"
+      ]
+    },
+    {
+      "claim_id": "C013",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 0,
+      "end": 62,
+      "claim_text": "Le P de cette phrase est une probabilité associée aux limites.",
+      "normalized_claim": "P est une probabilite associee aux limites.",
+      "support_ids": [
+        "SUP-c8ba14bc71184858"
+      ]
+    },
+    {
+      "claim_id": "C014",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 63,
+      "end": 185,
+      "claim_text": "L’augmenter réduit le coût de chercher un ennui qui n’existe pas, et laisse du même geste passer davantage d’ennuis réels.",
+      "normalized_claim": "Augmenter P reduit le cout des fausses recherches et laisse passer davantage d'ennuis reels.",
+      "support_ids": [
+        "SUP-a84c1f318d8d32e4",
+        "SUP-adfd22c28c2ecc54",
+        "SUP-c8ba14bc71184858"
+      ]
+    },
+    {
+      "claim_id": "C015",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 186,
+      "end": 229,
+      "claim_text": "Une seule commande, deux effets contraires.",
+      "normalized_claim": "Un seul reglage produit deux effets de sens oppose.",
+      "support_ids": [
+        "SUP-a84c1f318d8d32e4",
+        "SUP-adfd22c28c2ecc54",
+        "SUP-c8ba14bc71184858"
+      ]
+    },
+    {
+      "claim_id": "C016",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 230,
+      "end": 344,
+      "claim_text": "Il n’existe pas de réglage qui améliore les deux à la fois, seulement un point où l’on accepte de perdre le moins.",
+      "normalized_claim": "Aucun reglage n'ameliore les deux termes ensemble ; il y a seulement un point d'equilibre.",
+      "support_ids": [
+        "SUP-a84c1f318d8d32e4",
+        "SUP-adfd22c28c2ecc54",
+        "SUP-469bc5f18a2e25f6"
+      ]
+    },
+    {
+      "claim_id": "C017",
+      "locator": "sections[0].paragraphs[2]",
+      "start": 250,
+      "end": 320,
+      "claim_text": "Ce sont ces deux dépenses que la phrase de la page 276 met en balance.",
+      "normalized_claim": "La phrase de la p. 276 met ces deux couts en balance.",
+      "support_ids": [
+        "SUP-a84c1f318d8d32e4",
+        "SUP-adfd22c28c2ecc54",
+        "SUP-da544fb1582a7e40"
+      ]
+    },
+    {
+      "claim_id": "C018",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 45,
+      "end": 172,
+      "claim_text": "Il suffirait de connaître la loi de la grandeur qu’on suit ; on choisirait un niveau de confiance, et la limite en découlerait.",
+      "normalized_claim": "Description de la voie deductive : loi connue plus niveau de confiance donnent la limite.",
+      "support_ids": [
+        "SUP-c8ba14bc71184858"
+      ]
+    },
+    {
+      "claim_id": "C019",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 173,
+      "end": 270,
+      "claim_text": "C’est cette voie que Shewhart ferme, en constatant que la plupart du temps cette loi nous échappe",
+      "normalized_claim": "Shewhart ferme cette voie en constatant que la loi est le plus souvent inconnue.",
+      "support_ids": [
+        "SUP-c8ba14bc71184858",
+        "SUP-adfd22c28c2ecc54",
+        "SUP-05f214b328a9ea65",
+        "SUP-469bc5f18a2e25f6"
+      ]
+    },
+    {
+      "claim_id": "C020",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 273,
+      "end": 342,
+      "claim_text": "elle n’est pas connue « in sufficient detail to set up such limits ».",
+      "normalized_claim": "Fragment verbatim : la loi n'est pas connue in sufficient detail to set up such limits.",
+      "support_ids": [
+        "SUP-adfd22c28c2ecc54",
+        "SUP-05f214b328a9ea65"
+      ]
+    },
+    {
+      "claim_id": "C021",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 65,
+      "end": 222,
+      "claim_text": "« How then shall we establish allowable limits on the variability of samples? Obviously, the basis for such limits must be, in the last analysis, empirical »",
+      "normalized_claim": "Citation verbatim des deux phrases de la p. 276.",
+      "support_ids": [
+        "SUP-adfd22c28c2ecc54",
+        "SUP-05f214b328a9ea65"
+      ]
+    },
+    {
+      "claim_id": "C022",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 224,
+      "end": 292,
+      "claim_text": "La base de telles limites doit être, en dernière analyse, empirique.",
+      "normalized_claim": "Traduction : la base de telles limites doit etre en derniere analyse empirique.",
+      "support_ids": [
+        "SUP-adfd22c28c2ecc54",
+        "SUP-05f214b328a9ea65",
+        "SUP-469bc5f18a2e25f6"
+      ]
+    },
+    {
+      "claim_id": "C023",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 293,
+      "end": 378,
+      "claim_text": "Le mot empirical est en italiques dans l’imprimé, comme economic deux lignes plus bas",
+      "normalized_claim": "empirical est en italiques dans l'imprime, comme economic deux lignes plus bas.",
+      "support_ids": [
+        "SUP-05f214b328a9ea65"
+      ]
+    },
+    {
+      "claim_id": "C024",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 380,
+      "end": 428,
+      "claim_text": "et ce sont ces deux mots qui portent l’argument.",
+      "normalized_claim": "Ces deux mots portent l'argument du passage.",
+      "support_ids": [
+        "SUP-05f214b328a9ea65",
+        "SUP-469bc5f18a2e25f6",
+        "SUP-9981ba0dcb33aed2",
+        "SUP-86a42f311ebffb67"
+      ]
+    },
+    {
+      "claim_id": "C025",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 0,
+      "end": 101,
+      "claim_text": "Dire que la base est empirique n’est pas un aveu de faiblesse : c’est un changement de justification.",
+      "normalized_claim": "Le recours a l'empirique est un deplacement de justification, non un aveu de faiblesse.",
+      "support_ids": [
+        "SUP-c8ba14bc71184858",
+        "SUP-05f214b328a9ea65",
+        "SUP-469bc5f18a2e25f6"
+      ]
+    },
+    {
+      "claim_id": "C026",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 102,
+      "end": 206,
+      "claim_text": "La voie qu’il écarte tirerait la valeur de t d’un niveau de confiance choisi sur une loi supposée connue",
+      "normalized_claim": "La voie ecartee tirerait t d'un niveau de confiance pose sur une loi supposee connue.",
+      "support_ids": [
+        "SUP-c8ba14bc71184858"
+      ]
+    },
+    {
+      "claim_id": "C027",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 209,
+      "end": 290,
+      "claim_text": "faute de cette loi, la justification se déplace vers ce que l’expérience indique.",
+      "normalized_claim": "Faute de loi connue, la justification passe a l'experience.",
+      "support_ids": [
+        "SUP-e3b2818752e0ae04",
+        "SUP-86a42f311ebffb67",
+        "SUP-05f214b328a9ea65",
+        "SUP-469bc5f18a2e25f6"
+      ]
+    },
+    {
+      "claim_id": "C028",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 0,
+      "end": 105,
+      "claim_text": "Juste au-dessus de la phrase où il tranche, Shewhart imprime une inégalité due à Tchebychev, P > 1 − 1/t²",
+      "normalized_claim": "L'inegalite de Tchebychev P > 1 - 1/t2 est imprimee juste au-dessus de la phrase decisive.",
+      "support_ids": [
+        "SUP-e91cac76b69cf2c4",
+        "SUP-09f509365a423e9e",
+        "SUP-7c8609b0d04227c6",
+        "SUP-9981ba0dcb33aed2"
+      ]
+    },
+    {
+      "claim_id": "C029",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 107,
+      "end": 162,
+      "claim_text": "et c’est le seul nom propre étranger de ces deux pages.",
+      "normalized_claim": "Tchebychev est le seul nom propre tiers des p. 276-277.",
+      "support_ids": [
+        "SUP-e91cac76b69cf2c4",
+        "SUP-9981ba0dcb33aed2"
+      ]
+    },
+    {
+      "claim_id": "C030",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 163,
+      "end": 218,
+      "claim_text": "Elle met en rapport cette probabilité P et le nombre t.",
+      "normalized_claim": "L'inegalite relie la probabilite P et le nombre t.",
+      "support_ids": [
+        "SUP-7c8609b0d04227c6",
+        "SUP-09f509365a423e9e",
+        "SUP-e91cac76b69cf2c4"
+      ]
+    },
+    {
+      "claim_id": "C031",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 219,
+      "end": 296,
+      "claim_text": "Il l’écrit avec un signe strict, là où l’énoncé usuel emploie un signe large.",
+      "normalized_claim": "Shewhart imprime la forme stricte la ou l'enonce usuel est large.",
+      "support_ids": [
+        "SUP-7c8609b0d04227c6",
+        "SUP-d151eb72994d5329"
+      ]
+    },
+    {
+      "claim_id": "C032",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 0,
+      "end": 60,
+      "claim_text": "Shewhart l’invoque après avoir écrit que la loi lui échappe.",
+      "normalized_claim": "L'inegalite est invoquee apres le constat que la loi est inconnue.",
+      "support_ids": [
+        "SUP-adfd22c28c2ecc54",
+        "SUP-05f214b328a9ea65",
+        "SUP-e91cac76b69cf2c4"
+      ]
+    },
+    {
+      "claim_id": "C033",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 61,
+      "end": 211,
+      "claim_text": "Sa limite est qu’elle vaut pour n’importe quel t : plus t est grand, plus la garantie est forte, et elle ne désigne aucune valeur plutôt qu’une autre.",
+      "normalized_claim": "L'inegalite vaut pour tout t et ne designe aucune valeur particuliere.",
+      "support_ids": [
+        "SUP-e91cac76b69cf2c4",
+        "SUP-9981ba0dcb33aed2",
+        "SUP-7c8609b0d04227c6"
+      ]
+    },
+    {
+      "claim_id": "C034",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 212,
+      "end": 305,
+      "claim_text": "D’où la phrase qui suit immédiatement la formule, « We are still faced with the choice of t »",
+      "normalized_claim": "La formule est immediatement suivie de We are still faced with the choice of t.",
+      "support_ids": [
+        "SUP-e91cac76b69cf2c4",
+        "SUP-86a42f311ebffb67",
+        "SUP-8b9711a898f2b77f"
+      ]
+    },
+    {
+      "claim_id": "C035",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 307,
+      "end": 346,
+      "claim_text": "L’inégalité borne, elle ne choisit pas.",
+      "normalized_claim": "L'inegalite borne sans fixer la valeur retenue.",
+      "support_ids": [
+        "SUP-9981ba0dcb33aed2",
+        "SUP-e91cac76b69cf2c4"
+      ]
+    },
+    {
+      "claim_id": "C036",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 0,
+      "end": 70,
+      "claim_text": "Ce qui vient ensuite n’est plus un calcul mais un constat d’expérience",
+      "normalized_claim": "Ce qui suit est un constat d'experience et non un calcul.",
+      "support_ids": [
+        "SUP-86a42f311ebffb67",
+        "SUP-e3b2818752e0ae04",
+        "SUP-9981ba0dcb33aed2"
+      ]
+    },
+    {
+      "claim_id": "C037",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 73,
+      "end": 149,
+      "claim_text": "« Experience indicates that t = 3 seems to be an acceptable economic value »",
+      "normalized_claim": "Citation verbatim de la phrase sur t = 3.",
+      "support_ids": [
+        "SUP-86a42f311ebffb67",
+        "SUP-8b9711a898f2b77f",
+        "SUP-09f509365a423e9e"
+      ]
+    },
+    {
+      "claim_id": "C038",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 151,
+      "end": 227,
+      "claim_text": "L’expérience indique que t = 3 semble être une valeur économique acceptable.",
+      "normalized_claim": "Traduction de la citation.",
+      "support_ids": [
+        "SUP-e3b2818752e0ae04",
+        "SUP-695f70b4732e3224"
+      ]
+    },
+    {
+      "claim_id": "C039",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 228,
+      "end": 268,
+      "claim_text": "L’adjectif porte sur la valeur elle-même",
+      "normalized_claim": "economic qualifie la valeur elle-meme.",
+      "support_ids": [
+        "SUP-86a42f311ebffb67",
+        "SUP-695f70b4732e3224"
+      ]
+    },
+    {
+      "claim_id": "C040",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 297,
+      "end": 356,
+      "claim_text": "ce t = 3 tient sa légitimité d’un prix, non d’une garantie.",
+      "normalized_claim": "t = 3 se justifie par un cout, non par une garantie probabiliste.",
+      "support_ids": [
+        "SUP-9981ba0dcb33aed2",
+        "SUP-e3b2818752e0ae04",
+        "SUP-86a42f311ebffb67",
+        "SUP-469bc5f18a2e25f6",
+        "SUP-c8ba14bc71184858"
+      ]
+    },
+    {
+      "claim_id": "C041",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 357,
+      "end": 419,
+      "claim_text": "L’en-tête de la page annonce « DETECTION OF LACK OF CONTROL ».",
+      "normalized_claim": "L'en-tete de la p. 277 porte DETECTION OF LACK OF CONTROL.",
+      "support_ids": [
+        "SUP-8b9711a898f2b77f"
+      ]
+    },
+    {
+      "claim_id": "C042",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 0,
+      "end": 145,
+      "claim_text": "Il est tentant de tirer de ces pages une opposition entre les limites de contrôle et le calcul des probabilités. À la lettre, elle serait fausse.",
+      "normalized_claim": "L'opposition entre limites de controle et probabilites serait fausse a la lettre.",
+      "support_ids": [
+        "SUP-c8ba14bc71184858"
+      ]
+    },
+    {
+      "claim_id": "C043",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 146,
+      "end": 269,
+      "claim_text": "Shewhart emploie la probabilité : l’inégalité de Tchebychev en est une, et le P qu’il cherche à augmenter en est une autre.",
+      "normalized_claim": "Shewhart emploie la probabilite : l'inegalite et P en sont deux.",
+      "support_ids": [
+        "SUP-c8ba14bc71184858",
+        "SUP-a84c1f318d8d32e4",
+        "SUP-adfd22c28c2ecc54"
+      ]
+    },
+    {
+      "claim_id": "C044",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 270,
+      "end": 334,
+      "claim_text": "Son arbitrage lui-même se joue entre deux probabilités d’erreur.",
+      "normalized_claim": "Son arbitrage porte entre deux probabilites d'erreur.",
+      "support_ids": [
+        "SUP-c8ba14bc71184858"
+      ]
+    },
+    {
+      "claim_id": "C045",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 0,
+      "end": 123,
+      "claim_text": "Ce qu’il écarte est plus précis : la voie déductive, celle qui tirerait t d’un niveau de confiance posé sur une loi connue.",
+      "normalized_claim": "Ce qui est ecarte est la voie deductive.",
+      "support_ids": [
+        "SUP-c8ba14bc71184858"
+      ]
+    },
+    {
+      "claim_id": "C046",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 124,
+      "end": 212,
+      "claim_text": "La formulation fidèle à ces pages est donc « économique et empirique, contre déductive »",
+      "normalized_claim": "La formulation fidele est economique et empirique, contre deductive.",
+      "support_ids": [
+        "SUP-c8ba14bc71184858"
+      ]
+    },
+    {
+      "claim_id": "C047",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 214,
+      "end": 275,
+      "claim_text": "et non « économique et non probabiliste », raccourci inexact.",
+      "normalized_claim": "economique et non probabiliste est un raccourci inexact.",
+      "support_ids": [
+        "SUP-c8ba14bc71184858"
+      ]
+    },
+    {
+      "claim_id": "C048",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 276,
+      "end": 380,
+      "claim_text": "Qui cite ces pages pour refuser tout raisonnement probabiliste dans un atelier leur fait dire l’inverse.",
+      "normalized_claim": "Invoquer ces pages contre tout raisonnement probabiliste les inverse.",
+      "support_ids": [
+        "SUP-c8ba14bc71184858"
+      ]
+    },
+    {
+      "claim_id": "C049",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 0,
+      "end": 148,
+      "claim_text": "Une justification circule dans les manuels : sous la loi normale, les fausses alarmes ne seraient que de 0,27 %, taux qui passerait pour acceptable.",
+      "normalized_claim": "Une justification par 0,27 % de fausses alarmes sous la loi normale circule dans la litterature d'enseignement.",
+      "support_ids": [
+        "SUP-8453986f73e88034"
+      ]
+    },
+    {
+      "claim_id": "C050",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 149,
+      "end": 187,
+      "claim_text": "Ils l’attribuent couramment à Shewhart",
+      "normalized_claim": "Cette justification est couramment pretee a Shewhart.",
+      "support_ids": [
+        "SUP-8453986f73e88034"
+      ]
+    },
+    {
+      "claim_id": "C051",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 190,
+      "end": 229,
+      "claim_text": "elle ne figure pas dans ces deux pages.",
+      "normalized_claim": "Elle n'a pas ete trouvee sur les p. 276-277 — borne aux deux pages lues.",
+      "support_ids": [
+        "SUP-8453986f73e88034",
+        "SUP-16469b159cfebc7a"
+      ]
+    },
+    {
+      "claim_id": "C052",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 0,
+      "end": 36,
+      "claim_text": "Elle y contredirait même l’argument.",
+      "normalized_claim": "Cette justification contredirait l'argument du passage.",
+      "support_ids": [
+        "SUP-8453986f73e88034",
+        "SUP-c8ba14bc71184858"
+      ]
+    },
+    {
+      "claim_id": "C053",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 37,
+      "end": 130,
+      "claim_text": "Pour obtenir ce 0,27 %, il faut connaître la loi de la grandeur suivie et la supposer normale",
+      "normalized_claim": "Le 0,27 % suppose une loi connue et normale.",
+      "support_ids": [
+        "SUP-8453986f73e88034"
+      ]
+    },
+    {
+      "claim_id": "C054",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 132,
+      "end": 209,
+      "claim_text": "quand la phrase de la page 276 vient précisément d’écarter cette connaissance",
+      "normalized_claim": "La p. 276 vient d'ecarter cette connaissance de la loi.",
+      "support_ids": [
+        "SUP-8453986f73e88034",
+        "SUP-adfd22c28c2ecc54",
+        "SUP-05f214b328a9ea65"
+      ]
+    },
+    {
+      "claim_id": "C055",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 211,
+      "end": 396,
+      "claim_text": "La justification par le taux de fausses alertes refait en déduction ce que Shewhart pose comme un choix d’expérience : elle aboutit au bon nombre par une raison qui n’est pas la sienne.",
+      "normalized_claim": "Cette justification refait par deduction ce que Shewhart pose comme choix d'experience.",
+      "support_ids": [
+        "SUP-8453986f73e88034",
+        "SUP-c8ba14bc71184858",
+        "SUP-86a42f311ebffb67"
+      ]
+    },
+    {
+      "claim_id": "C056",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 0,
+      "end": 107,
+      "claim_text": "Si t = 3 vaut parce que la loi normale le dit, la règle tombe dès que la distribution cesse d’être normale.",
+      "normalized_claim": "Fonde sur la normalite, t = 3 tombe avec elle.",
+      "support_ids": [
+        "SUP-8453986f73e88034",
+        "SUP-c8ba14bc71184858"
+      ]
+    },
+    {
+      "claim_id": "C057",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 108,
+      "end": 282,
+      "claim_text": "Si elle vaut parce que l’expérience a montré que le compte y était, elle survit à l’ignorance de la loi : une distribution qui s’écarte de la normale ne la met pas en défaut.",
+      "normalized_claim": "Fondee sur l'experience, la valeur survit a l'ignorance de la loi.",
+      "support_ids": [
+        "SUP-e3b2818752e0ae04",
+        "SUP-86a42f311ebffb67",
+        "SUP-05f214b328a9ea65",
+        "SUP-c8ba14bc71184858",
+        "SUP-469bc5f18a2e25f6"
+      ]
+    },
+    {
+      "claim_id": "C058",
+      "locator": "sections[4].paragraphs[3]",
+      "start": 0,
+      "end": 199,
+      "claim_text": "Cette expérience est plus ancienne que le livre : Shewhart pose le choix de t = 3 d’abord dans un mémorandum du 16 mai 1924 à Bell Telephone Laboratories, et ne l’argumente qu’ensuite dans ces pages.",
+      "normalized_claim": "Le choix de t = 3 est d'abord pose dans un memorandum du 16 mai 1924 a Bell Telephone Laboratories, argumente ensuite dans ces pages.",
+      "support_ids": [
+        "SUP-e91cac76b69cf2c4"
+      ]
+    },
+    {
+      "claim_id": "C059",
+      "locator": "sections[4].paragraphs[3]",
+      "start": 200,
+      "end": 263,
+      "claim_text": "Ce que ce mémorandum en dit, il faudra l’ouvrir pour le savoir.",
+      "normalized_claim": "Le contenu du memorandum n'a pas ete consulte.",
+      "support_ids": [
+        "SUP-16469b159cfebc7a",
+        "SUP-ba2360b3f24e8ad3",
+        "SUP-e91cac76b69cf2c4"
+      ]
+    }
+  ]
+}

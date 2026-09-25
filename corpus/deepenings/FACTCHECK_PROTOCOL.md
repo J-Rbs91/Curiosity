@@ -133,6 +133,21 @@ des deux niveaux en cas de divergence — n'a aucune prise, et il se tromperait.
   `rationalite-limitee`, Milet 1982 dans `critique-de-l-homo-oeconomicus` et
   `valeur-comme-fait-psychologique` — ne sont contredites par aucun `consulted` du dossier. Le
   dossier le dit en prose, « Contenu non consulté », ou ne connaît pas la source du tout.
+
+  **Deux de ces cinq ne sont pas des absences, et le décompte est à refaire — constaté le
+  25 septembre 2026.** Les deux Milet 1982 ont été comptés « dossier ne connaît pas la source »
+  parce que le pack ne ramasse que `corpus/evidence/<conceptId>/`. Le dépôt porte **25 Ko de lecture
+  primaire de Milet 1982**, dans le répertoire `milet-1982-tarde-psychologie-economique`, qui ne
+  porte le nom d'aucune carte et n'est donc jamais ouvert. Les deux cartes ont bien un
+  `lecture.json` à elles ; il traite de Tarde 1902, pas de Milet. **Ce que le balayage lit comme une
+  absence du dossier peut être un dossier hors de sa portée**, et douze répertoires sont dans ce
+  cas. Chantier J de [`../RESTE-A-FAIRE.md`](../RESTE-A-FAIRE.md).
+
+  La règle que ce paragraphe soutient — qualifier plutôt que dégrader — n'est pas touchée : elle
+  tient par les 264 corroborations et par les trois cas où l'absence se dégraderait à tort. Ce qui
+  est touché est le **décompte** des surdéclarations, et la lecture d'un `absent` : il signifie
+  « le pack n'a pas trouvé cette source dans ce qu'il a ramassé », jamais « le dépôt ne l'a pas
+  lue ».
 - **Et l'absence ne se dégrade pas sans casse.** Trois `full-text` ou `partial` que le balayage
   signale sont corrects, et leurs dossiers l'établissent — ailleurs que dans un champ `consulted`.
   `zones-incertitude` nomme Kuty 1997 « LA SOURCE LA PLUS RICHE DU DOSSIER, et de loin », 92 pages

@@ -1,0 +1,467 @@
+{
+  "protocol_version": 1,
+  "concept_id": "points-de-levier",
+  "context_budget_tokens": 300000,
+  "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
+  "candidate_sha256": "4c89c66e7b2dd72b22ab84502f0968d9a8642831d56e24b21b432e23e631c516",
+  "validated_sha256": "d5a90397ec6aa8710dcd79f51ff950cab72dd811ec9f99a6b08816308ef15db6",
+  "evidence_files": [],
+  "access_reconciliation": {
+    "dossier_declare_des_niveaux": false,
+    "declarations": [
+      {
+        "chemin": "$.sources[0]",
+        "declare": "full-text",
+        "label": "Donella H. Meadows, Leverage Points: Places to Intervene in a System, Hartland (Vermont), The Sustainability Institute, décembre 1999, 21 p.",
+        "cles": [
+          "url:donellameadows.org/wp-content/userfiles/leverage_points.pdf"
+        ],
+        "dossier": null,
+        "statut": "dossier-absent"
+      },
+      {
+        "chemin": "$.sources[1]",
+        "declare": "metadata-only",
+        "label": "David J. Abson et al., « Leverage points for sustainability transformation », Ambio, vol. 46, n° 1, 2017, p. 30-39.",
+        "cles": [
+          "doi:10.1007/s13280-016-0800-y",
+          "url:doi.org/10.1007/s13280-016-0800-y"
+        ],
+        "dossier": null,
+        "statut": "dossier-absent"
+      },
+      {
+        "chemin": "$.sources[2]",
+        "declare": "metadata-only",
+        "label": "Joern Fischer et Maraja Riechers, « A leverage points perspective on sustainability », People and Nature, vol. 1, n° 1, 2019, p. 115-120.",
+        "cles": [
+          "doi:10.1002/pan3.13",
+          "url:doi.org/10.1002/pan3.13"
+        ],
+        "dossier": null,
+        "statut": "dossier-absent"
+      }
+    ],
+    "compteurs": {
+      "corrobore": 0,
+      "contredit": 0,
+      "non-declare": 0,
+      "absent": 0,
+      "hors-vocabulaire": 0,
+      "dossier-hors-vocabulaire": 0,
+      "dossier-absent": 3
+    }
+  },
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "text": "Devant un ensemble qui fonctionne mal, la question pratique est « où appuyer ». On peut changer un montant, un délai, ou la raison même pour laquelle l’ensemble existe. Ces gestes n’ont pas la même portée : la différence tient à l’endroit choisi."
+    },
+    {
+      "locator": "lead[1]",
+      "text": "Donella H. Meadows, formée à la dynamique des systèmes auprès de Jay W. Forrester, a écrit la liste de ces endroits : douze places où intervenir dans un ensemble, rangées du levier le plus faible au plus puissant, du réglage d’un paramètre au changement de paradigme. Et elle l’a assortie d’un avertissement qui compte autant que la liste : ces endroits ne sont pas intuitifs."
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "section_title": "Un classement, et non un catalogue",
+      "text": "Ce qui fait la valeur de la liste n’est pas qu’elle recense des façons d’agir : chacun en connaît. C’est qu’elle les ordonne, « in increasing order of effectiveness », du levier le plus faible au plus fort. Le numéro 12 est donc le moins puissant et le numéro 1 le plus puissant, ce qui est l’inverse de ce qu’une liste numérotée suggère au premier regard."
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "section_title": "Un classement, et non un catalogue",
+      "text": "Le barreau du bas s’appelle « Constants, parameters, numbers », des constantes, des paramètres, des nombres : les montants, les taux, les seuils. Le barreau du haut s’appelle « The power to transcend paradigms », le pouvoir de passer outre les cadres de pensée eux-mêmes. Dix autres endroits sont numérotés entre ces deux-là, et c’est déjà l’écart entre les deux bouts qui donne la mesure de l’échelle : d’un côté un réglage, de l’autre ce depuis quoi tout a été pensé."
+    },
+    {
+      "locator": "sections[0].paragraphs[2]",
+      "section_title": "Un classement, et non un catalogue",
+      "text": "Une image aide à tenir cette échelle en tête, et Meadows la file d’un bout à l’autre : celle de la plomberie. Un paramètre, c’est le réglage d’un robinet. Un stock, c’est le niveau de la baignoire. Un délai, c’est le temps que met une vanne à faire effet. Trois objets de la même salle de bains, et trois choses très différentes à toucher."
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "section_title": "Ce que régler un robinet ne change pas",
+      "text": "L’ordre se comprend mieux si l’on regarde où chaque geste se place. Régler un robinet, c’est agir à l’intérieur d’une installation qu’on laisse telle quelle : le réglage suppose la plomberie et ne la change pas."
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "section_title": "Ce que régler un robinet ne change pas",
+      "text": "Meadows en donne un exemple qui se retient : la dette publique décrite comme « a negative bathtub, a money hole », et les paramètres budgétaires comme « adjustments to faucets » (p. 5-6). L’image dit à elle seule le rapport de taille entre le trou et le robinet."
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "section_title": "L’avertissement qui accompagne la liste",
+      "text": "L’avertissement tient en deux phrases, et il porte sur l’intuition plutôt que sur la technique : « Les points de levier ne sont pas intuitifs. Ou s’ils le sont, nous les utilisons intuitivement à l’envers […] ». La fin de la phrase dit ce que produit ce renversement : « systematically worsening whatever problems we are trying to solve »."
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "section_title": "L’avertissement qui accompagne la liste",
+      "text": "Deux erreurs se trouvent ainsi séparées. La première est de se tromper d’endroit. La seconde est de trouver le bon endroit et de pousser dans le mauvais sens."
+    },
+    {
+      "locator": "sections[2].paragraphs[2]",
+      "section_title": "L’avertissement qui accompagne la liste",
+      "text": "Le mot « systematically » compte autant que le reste. Ce n’est pas un accident occasionnel, et ce n’est pas une occasion manquée : ce que l’on aggrave, ce sont les problèmes mêmes qu’on cherchait à résoudre."
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "section_title": "Une liste que son autrice a corrigée",
+      "text": "L’échelle n’est pas venue achevée. Une première liste, de neuf entrées, figure à la page 2 du rapport : c’est celle que Meadows dit avoir écrite sur un paperboard, et elle la corrige elle-même deux pages plus loin. La version révisée, celle qui compte les douze entrées, se lit à la page 3, et la première reste sous les yeux du lecteur avec ses manques."
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "section_title": "Une liste que son autrice a corrigée",
+      "text": "Ce détail change le statut de tout ce qui précède. L’ordre des douze est une proposition retravaillée par celle qui l’a écrite, et dont le brouillon reste lisible à côté. C’est une raison de s’en servir comme d’un instrument de lecture, et une raison de ne pas le traiter comme une loi."
+    },
+    {
+      "locator": "sections[3].paragraphs[2]",
+      "section_title": "Une liste que son autrice a corrigée",
+      "text": "Ce n’est pas non plus une hiérarchie à appliquer. Ce que l’échelle interdit, c’est de confondre un réglage de paramètre avec un changement de trajectoire, puis de s’étonner que la situation n’ait pas bougé."
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "section_title": "Ce que l’on gagne à s’en servir",
+      "text": "Le premier usage est un test de position. Devant une action proposée, on peut demander à quel niveau elle intervient : règle-t-elle un nombre, ou touche-t-elle à ce qui produit ce nombre ? La réponse ne juge pas l’action, elle indique ce qu’on peut raisonnablement en attendre. Et quand une difficulté est présentée comme profonde alors que toutes les mesures envisagées se tiennent dans le bas de l’échelle, l’écart entre le diagnostic et le remède devient visible sans qu’il faille discuter chaque mesure séparément."
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "section_title": "Ce que l’on gagne à s’en servir",
+      "text": "Le second usage est moins technique et peut-être plus utile : l’échelle donne un vocabulaire à ceux qui sentent qu’un débat porte à côté sans pouvoir dire pourquoi."
+    },
+    {
+      "locator": "sections[4].paragraphs[2]",
+      "section_title": "Ce que l’on gagne à s’en servir",
+      "text": "Quant à l’échelle elle-même, elle se lit mieux là où elle a été écrite. Le rapport de décembre 1999, vingt et une pages publiées par The Sustainability Institute, porte ses deux états côte à côte : les neuf entrées de la page 2, les douze de la page 3. Et cette page 2 signale qu’une version plus courte avait paru dans la revue Whole Earth à l’hiver 1997."
+    }
+  ],
+  "supports": [
+    {
+      "id": "SUP-f7d4154d237128c5",
+      "origin": "validated",
+      "path": "$.$schema",
+      "access": "n/a",
+      "text": "../schema/carte.schema.json"
+    },
+    {
+      "id": "SUP-9a1cc043eae94897",
+      "origin": "validated",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "points-de-levier"
+    },
+    {
+      "id": "SUP-8051bf2c0ac956e6",
+      "origin": "validated",
+      "path": "$.slug",
+      "access": "n/a",
+      "text": "points-de-levier"
+    },
+    {
+      "id": "SUP-ad89626955b2952c",
+      "origin": "validated",
+      "path": "$.status",
+      "access": "n/a",
+      "text": "VALIDATED"
+    },
+    {
+      "id": "SUP-aa2a0163279c74c1",
+      "origin": "validated",
+      "path": "$.title",
+      "access": "n/a",
+      "text": "Points de levier"
+    },
+    {
+      "id": "SUP-cfaab86458d1b647",
+      "origin": "validated",
+      "path": "$.themes[0]",
+      "access": "n/a",
+      "text": "ou-intervenir-dans-un-systeme"
+    },
+    {
+      "id": "SUP-84635ba863d861ce",
+      "origin": "validated",
+      "path": "$.theme_labels[\"ou-intervenir-dans-un-systeme\"]",
+      "access": "n/a",
+      "text": "Là où l'on peut vraiment peser"
+    },
+    {
+      "id": "SUP-97cc6a5e88c9487f",
+      "origin": "validated",
+      "path": "$.authors[0].name",
+      "access": "n/a",
+      "text": "Donella H. Meadows"
+    },
+    {
+      "id": "SUP-ebb398acd46edf3d",
+      "origin": "validated",
+      "path": "$.hook",
+      "access": "n/a",
+      "text": "Où appuyer dans un système pour que quelque chose bouge vraiment ?"
+    },
+    {
+      "id": "SUP-3a36c7316132dc8f",
+      "origin": "validated",
+      "path": "$.summary",
+      "access": "n/a",
+      "text": "Meadows classe douze endroits où intervenir, du réglage d'un paramètre au changement de paradigme, et prévient qu'on les actionne d'ordinaire à l'envers."
+    },
+    {
+      "id": "SUP-d9d2160f8abde07c",
+      "origin": "validated",
+      "path": "$.sources[0].label",
+      "access": "full-text",
+      "text": "Donella H. Meadows, Leverage Points: Places to Intervene in a System, Hartland (Vermont), The Sustainability Institute, décembre 1999, 21 p.",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-ec988b343d66a1a7",
+      "origin": "validated",
+      "path": "$.sources[0].kind",
+      "access": "full-text",
+      "text": "primary",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-ed5866055d7c7b91",
+      "origin": "validated",
+      "path": "$.sources[0].url",
+      "access": "full-text",
+      "text": "https://donellameadows.org/wp-content/userfiles/Leverage_Points.pdf",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-f4d0b7d4a75e24e8",
+      "origin": "validated",
+      "path": "$.sources[1].label",
+      "access": "metadata-only",
+      "text": "David J. Abson et al., « Leverage points for sustainability transformation », Ambio, vol. 46, n° 1, 2017, p. 30-39.",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-17f3663cb3d0deae",
+      "origin": "validated",
+      "path": "$.sources[1].kind",
+      "access": "metadata-only",
+      "text": "secondary-academic",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-9966efdac5f7c333",
+      "origin": "validated",
+      "path": "$.sources[1].locator",
+      "access": "metadata-only",
+      "text": "p. 30-39",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-5210af61d86f482c",
+      "origin": "validated",
+      "path": "$.sources[1].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.1007/s13280-016-0800-y",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-009c0c2a58675731",
+      "origin": "validated",
+      "path": "$.sources[1].url",
+      "access": "metadata-only",
+      "text": "https://doi.org/10.1007/s13280-016-0800-y",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-91116cc808fba85b",
+      "origin": "validated",
+      "path": "$.sources[2].label",
+      "access": "metadata-only",
+      "text": "Joern Fischer et Maraja Riechers, « A leverage points perspective on sustainability », People and Nature, vol. 1, n° 1, 2019, p. 115-120.",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-03318d9406525ead",
+      "origin": "validated",
+      "path": "$.sources[2].kind",
+      "access": "metadata-only",
+      "text": "secondary-academic",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-f8b599d1b4139dc4",
+      "origin": "validated",
+      "path": "$.sources[2].locator",
+      "access": "metadata-only",
+      "text": "p. 115-120",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-d462fd1ba253a81a",
+      "origin": "validated",
+      "path": "$.sources[2].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.1002/pan3.13",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-f2341bf547a1ad7f",
+      "origin": "validated",
+      "path": "$.sources[2].url",
+      "access": "metadata-only",
+      "text": "https://doi.org/10.1002/pan3.13",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-3da51495dfe3ad8e",
+      "origin": "validated",
+      "path": "$.review.reviewer",
+      "access": "n/a",
+      "text": "chaîne Curiosity, session du 22 août 2026 (contrôle non aveugle, voir notes)"
+    },
+    {
+      "id": "SUP-d71b9359ee4b2610",
+      "origin": "validated",
+      "path": "$.review.date",
+      "access": "n/a",
+      "text": "2026-08-22"
+    },
+    {
+      "id": "SUP-ab62b4f98906b668",
+      "origin": "validated",
+      "path": "$.review.attribution",
+      "access": "n/a",
+      "text": "confirmee"
+    },
+    {
+      "id": "SUP-427fb1df98a1e120",
+      "origin": "validated",
+      "path": "$.review.quotation",
+      "access": "n/a",
+      "text": "verbatim"
+    },
+    {
+      "id": "SUP-118d16b59e932353",
+      "origin": "validated",
+      "path": "$.review.sources",
+      "access": "n/a",
+      "text": "resolvent"
+    },
+    {
+      "id": "SUP-ed7629ec7b0c3818",
+      "origin": "validated",
+      "path": "$.review.prose",
+      "access": "n/a",
+      "text": "fidele"
+    },
+    {
+      "id": "SUP-e134482677317836",
+      "origin": "validated",
+      "path": "$.review.verdict",
+      "access": "n/a",
+      "text": "PASS"
+    },
+    {
+      "id": "SUP-897f28c3defd623f",
+      "origin": "validated",
+      "path": "$.review.notes[0]",
+      "access": "n/a",
+      "text": "Contrôle du 22 août 2026, mené dans la même session que la rédaction : il n'a donc pas été aveugle au sens de docs/corpus-workflow.md. Le dossier de npm run corpus:brief a été produit et relu, les quatre questions ont été tranchées une à une contre les textes rouverts, et l'écart au protocole est déclaré ici plutôt que passé sous silence."
+    },
+    {
+      "id": "SUP-7225770a44d11547",
+      "origin": "validated",
+      "path": "$.attribution_note",
+      "access": "n/a",
+      "text": "Concept de Donella H. Meadows, formée à la dynamique des systèmes auprès de Jay W. Forrester."
+    },
+    {
+      "id": "SUP-52c992afba49b58c",
+      "origin": "validated",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "Les points de levier ne sont pas intuitifs. Ou s'ils le sont, nous les utilisons intuitivement à l'envers […]"
+    },
+    {
+      "id": "SUP-5fc9356b43132b83",
+      "origin": "validated",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Donella H. Meadows, Leverage Points: Places to Intervene in a System, The Sustainability Institute, 1999."
+    },
+    {
+      "id": "SUP-ae27b336a7c422c7",
+      "origin": "validated",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 2"
+    },
+    {
+      "id": "SUP-76d11f542691c5ac",
+      "origin": "validated",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-2c77089b1d953778",
+      "origin": "validated",
+      "path": "$.quotation.original_text",
+      "access": "n/a",
+      "text": "Leverage points are not intuitive. Or if they are, we intuitively use them backward, systematically worsening whatever problems we are trying to solve."
+    },
+    {
+      "id": "SUP-a006aef58d724e59",
+      "origin": "validated",
+      "path": "$.quotation.original_language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-520c61d935611e51",
+      "origin": "validated",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "in-house"
+    },
+    {
+      "id": "SUP-6befa0f7f0545316",
+      "origin": "validated",
+      "path": "$.quotation.translation.translator",
+      "access": "n/a",
+      "text": "Traduction interne non publiée (chaîne Curiosity, 22 août 2026). Aucune traduction française publiée de ce rapport n'a été cherchée ni identifiée."
+    },
+    {
+      "id": "SUP-81e9a94544297295",
+      "origin": "validated",
+      "path": "$.notes[0]",
+      "access": "n/a",
+      "text": "La citation s'arrête sur une élision marquée : la fin de la phrase, « systematically worsening whatever problems we are trying to solve », ne tenait pas dans les 150 caractères de la carte sans supprimer un adverbe sans le dire. Ce qu'elle porte est dans le résumé."
+    },
+    {
+      "id": "SUP-2d9cb5d014d223bd",
+      "origin": "validated",
+      "path": "$.notes[1]",
+      "access": "n/a",
+      "text": "La liste comptée par le résumé est celle de la version révisée, p. 3, qui va de « Constants, parameters, numbers » à « The power to transcend paradigms ». Une première liste, de neuf entrées, figure p. 2 : c'est celle que Meadows dit avoir écrite sur un paperboard, et elle la corrige elle-même deux pages plus loin."
+    },
+    {
+      "id": "SUP-5258229e5f5542b6",
+      "origin": "validated",
+      "path": "$.notes[2]",
+      "access": "n/a",
+      "text": "Le rapport lu est celui de décembre 1999, édité par The Sustainability Institute. Sa page 2 signale qu'une version plus courte avait paru dans Whole Earth à l'hiver 1997 : cette version n'a pas été ouverte."
+    },
+    {
+      "id": "SUP-8c80540dcb2e6c7c",
+      "origin": "validated",
+      "path": "$.notes[3]",
+      "access": "n/a",
+      "text": "L'ordre est « in increasing order of effectiveness », donc le numéro 12 est le levier le plus faible et le numéro 1 le plus fort. C'est l'inverse de ce qu'un lecteur pressé lit dans une liste numérotée."
+    },
+    {
+      "id": "SUP-3ffaa707ee114434",
+      "origin": "validated",
+      "path": "$.notes[4]",
+      "access": "n/a",
+      "text": "Meadows file toute l’échelle avec une image de plomberie : un paramètre est le réglage d’un robinet, un stock est le niveau de la baignoire, un délai est le temps que met une vanne à faire effet. La dette publique y est décrite comme « a negative bathtub, a money hole », et les paramètres budgétaires comme « adjustments to faucets » (p. 5-6). L’image n’est pas sur la carte ; elle est ce qui rend l’échelle tenable en tête."
+    }
+  ],
+  "estimated_tokens": 5560,
+  "status": "READY"
+}

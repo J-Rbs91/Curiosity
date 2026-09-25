@@ -1,0 +1,517 @@
+{
+  "protocol_version": 1,
+  "concept_id": "trois-sigmas-arbitrage-de-cout",
+  "context_budget_tokens": 300000,
+  "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
+  "candidate_sha256": "34596d12d292c27c5753d47aa2f1186da288079eb9bde76682f64523489ede22",
+  "validated_sha256": "12275158639dd3bcbeb8f4b52e3b47defe8249cdd69fde978a86119b9738ac72",
+  "evidence_files": [],
+  "access_reconciliation": {
+    "dossier_declare_des_niveaux": false,
+    "declarations": [
+      {
+        "chemin": "$.sources[0]",
+        "declare": "full-text",
+        "label": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931, xiv-501 p. (LCCN 31032090)",
+        "cles": [
+          "rep:lccn31032090"
+        ],
+        "dossier": null,
+        "statut": "dossier-absent"
+      },
+      {
+        "chemin": "$.sources[1]",
+        "declare": "metadata-only",
+        "label": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, Milwaukee, American Society for Quality Control, 1980 (réimpression).",
+        "cles": [
+          "isbn:9780873890762"
+        ],
+        "dossier": null,
+        "statut": "dossier-absent"
+      }
+    ],
+    "compteurs": {
+      "corrobore": 0,
+      "contredit": 0,
+      "non-declare": 0,
+      "absent": 0,
+      "hors-vocabulaire": 0,
+      "dossier-hors-vocabulaire": 0,
+      "dossier-absent": 2
+    }
+  },
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "text": "Une machine tourne, on mesure ce qu’elle sort, et les chiffres bougent d’une pièce à l’autre. Il faut bien tracer quelque part une ligne au delà de laquelle on ira voir ce qui se passe. Deux erreurs guettent alors : aller chercher un ennui qui n’existe pas, ou laisser passer un ennui qui existe. Les deux se paient, et ce sont deux dépenses distinctes."
+    },
+    {
+      "locator": "lead[1]",
+      "text": "Où placer cette ligne se décide en deux pages, 276 et 277, d’un livre publié à New York en 1931, Economic Control of Quality of Manufactured Product. W. A. Shewhart le signe seul ; sur la page de titre, il se présente comme membre du personnel technique des Bell Telephone Laboratories. Sa réponse est un nombre, trois, choisi sur l’expérience et non calculé : ce qui le justifie est le prix de ces deux erreurs."
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "section_title": "Deux façons de se tromper, et ce qu’elles coûtent",
+      "text": "L’arbitrage n’est pas reconstruit après lui : Shewhart le pose page 276, dans une phrase où les deux erreurs deviennent deux postes de dépense : « We must try to strike a balance between the advantages to be gained by increasing the value P through reduction in the cost of looking for trouble when it does not exist and the disadvantages occasioned by overlooking troubles that do exist ». Il faut chercher un équilibre entre ce qu’on gagne à augmenter la valeur P, en réduisant le coût de chercher un ennui qui n’existe pas, et ce qu’on perd à laisser passer ceux qui existent."
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "section_title": "Deux façons de se tromper, et ce qu’elles coûtent",
+      "text": "Le P de cette phrase est une probabilité associée aux limites. L’augmenter réduit le coût de chercher un ennui qui n’existe pas, et laisse du même geste passer davantage d’ennuis réels. Une seule commande, deux effets contraires. Il n’existe pas de réglage qui améliore les deux à la fois, seulement un point où l’on accepte de perdre le moins."
+    },
+    {
+      "locator": "sections[0].paragraphs[2]",
+      "section_title": "Deux façons de se tromper, et ce qu’elles coûtent",
+      "text": "Imaginons un atelier, et ce que chacun de ces deux postes y coûte. Arrêter la ligne sur une alerte qui n’avait pas lieu d’être immobilise trente personnes une demi-journée. Un défaut laissé passer, lui, part chez le client et revient en réclamation. Ce sont ces deux dépenses que la phrase de la page 276 met en balance."
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "section_title": "Pourquoi la limite ne se déduit pas",
+      "text": "On pourrait croire que la valeur se calcule. Il suffirait de connaître la loi de la grandeur qu’on suit ; on choisirait un niveau de confiance, et la limite en découlerait. C’est cette voie que Shewhart ferme, en constatant que la plupart du temps cette loi nous échappe : elle n’est pas connue « in sufficient detail to set up such limits »."
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "section_title": "Pourquoi la limite ne se déduit pas",
+      "text": "Vient alors la question, et une réponse qui tient en une ligne : « How then shall we establish allowable limits on the variability of samples? Obviously, the basis for such limits must be, in the last analysis, empirical ». La base de telles limites doit être, en dernière analyse, empirique. Le mot empirical est en italiques dans l’imprimé, comme economic deux lignes plus bas, et ce sont ces deux mots qui portent l’argument."
+    },
+    {
+      "locator": "sections[1].paragraphs[2]",
+      "section_title": "Pourquoi la limite ne se déduit pas",
+      "text": "Dire que la base est empirique n’est pas un aveu de faiblesse : c’est un changement de justification. La voie qu’il écarte tirerait la valeur de t d’un niveau de confiance choisi sur une loi supposée connue ; faute de cette loi, la justification se déplace vers ce que l’expérience indique."
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "section_title": "Ce que l’inégalité de Tchebychev laisse ouvert",
+      "text": "Juste au-dessus de la phrase où il tranche, Shewhart imprime une inégalité due à Tchebychev, P > 1 − 1/t², et c’est le seul nom propre étranger de ces deux pages. Elle met en rapport cette probabilité P et le nombre t. Il l’écrit avec un signe strict, là où l’énoncé usuel emploie un signe large."
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "section_title": "Ce que l’inégalité de Tchebychev laisse ouvert",
+      "text": "Shewhart l’invoque après avoir écrit que la loi lui échappe. Sa limite est qu’elle vaut pour n’importe quel t : plus t est grand, plus la garantie est forte, et elle ne désigne aucune valeur plutôt qu’une autre. D’où la phrase qui suit immédiatement la formule, « We are still faced with the choice of t ». L’inégalité borne, elle ne choisit pas."
+    },
+    {
+      "locator": "sections[2].paragraphs[2]",
+      "section_title": "Ce que l’inégalité de Tchebychev laisse ouvert",
+      "text": "Ce qui vient ensuite n’est plus un calcul mais un constat d’expérience : « Experience indicates that t = 3 seems to be an acceptable economic value ». L’expérience indique que t = 3 semble être une valeur économique acceptable. L’adjectif porte sur la valeur elle-même, et c’est tout l’argument : ce t = 3 tient sa légitimité d’un prix, non d’une garantie. L’en-tête de la page annonce « DETECTION OF LACK OF CONTROL »."
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "section_title": "Empirique ne veut pas dire sans probabilité",
+      "text": "Il est tentant de tirer de ces pages une opposition entre les limites de contrôle et le calcul des probabilités. À la lettre, elle serait fausse. Shewhart emploie la probabilité : l’inégalité de Tchebychev en est une, et le P qu’il cherche à augmenter en est une autre. Son arbitrage lui-même se joue entre deux probabilités d’erreur."
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "section_title": "Empirique ne veut pas dire sans probabilité",
+      "text": "Ce qu’il écarte est plus précis : la voie déductive, celle qui tirerait t d’un niveau de confiance posé sur une loi connue. La formulation fidèle à ces pages est donc « économique et empirique, contre déductive », et non « économique et non probabiliste », raccourci inexact. Qui cite ces pages pour refuser tout raisonnement probabiliste dans un atelier leur fait dire l’inverse."
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "section_title": "Les 0,27 % qu’on prête à Shewhart",
+      "text": "Une justification circule dans les manuels : sous la loi normale, les fausses alarmes ne seraient que de 0,27 %, taux qui passerait pour acceptable. Ils l’attribuent couramment à Shewhart ; elle ne figure pas dans ces deux pages."
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "section_title": "Les 0,27 % qu’on prête à Shewhart",
+      "text": "Elle y contredirait même l’argument. Pour obtenir ce 0,27 %, il faut connaître la loi de la grandeur suivie et la supposer normale, quand la phrase de la page 276 vient précisément d’écarter cette connaissance. La justification par le taux de fausses alertes refait en déduction ce que Shewhart pose comme un choix d’expérience : elle aboutit au bon nombre par une raison qui n’est pas la sienne."
+    },
+    {
+      "locator": "sections[4].paragraphs[2]",
+      "section_title": "Les 0,27 % qu’on prête à Shewhart",
+      "text": "Si t = 3 vaut parce que la loi normale le dit, la règle tombe dès que la distribution cesse d’être normale. Si elle vaut parce que l’expérience a montré que le compte y était, elle survit à l’ignorance de la loi : une distribution qui s’écarte de la normale ne la met pas en défaut."
+    },
+    {
+      "locator": "sections[4].paragraphs[3]",
+      "section_title": "Les 0,27 % qu’on prête à Shewhart",
+      "text": "Cette expérience est plus ancienne que le livre : Shewhart pose le choix de t = 3 d’abord dans un mémorandum du 16 mai 1924 à Bell Telephone Laboratories, et ne l’argumente qu’ensuite dans ces pages. Ce que ce mémorandum en dit, il faudra l’ouvrir pour le savoir."
+    }
+  ],
+  "supports": [
+    {
+      "id": "SUP-f7d4154d237128c5",
+      "origin": "validated",
+      "path": "$.$schema",
+      "access": "n/a",
+      "text": "../schema/carte.schema.json"
+    },
+    {
+      "id": "SUP-864c0a29c76a20ee",
+      "origin": "validated",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "trois-sigmas-arbitrage-de-cout"
+    },
+    {
+      "id": "SUP-53240db6bedda40c",
+      "origin": "validated",
+      "path": "$.slug",
+      "access": "n/a",
+      "text": "trois-sigmas-arbitrage-de-cout"
+    },
+    {
+      "id": "SUP-ad89626955b2952c",
+      "origin": "validated",
+      "path": "$.status",
+      "access": "n/a",
+      "text": "VALIDATED"
+    },
+    {
+      "id": "SUP-6e9b53ad2acc7568",
+      "origin": "validated",
+      "path": "$.title",
+      "access": "n/a",
+      "text": "Trois sigmas, un arbitrage de coût"
+    },
+    {
+      "id": "SUP-fb777e8fe95f1191",
+      "origin": "validated",
+      "path": "$.themes[0]",
+      "access": "n/a",
+      "text": "variation-et-controle"
+    },
+    {
+      "id": "SUP-fe787f58870c07ad",
+      "origin": "validated",
+      "path": "$.theme_labels[\"variation-et-controle\"]",
+      "access": "n/a",
+      "text": "Ce qu'un procédé fait varier"
+    },
+    {
+      "id": "SUP-b9a679c58001ffaa",
+      "origin": "validated",
+      "path": "$.authors[0].name",
+      "access": "n/a",
+      "text": "W. A. Shewhart"
+    },
+    {
+      "id": "SUP-ac7f1b455ad2e0c8",
+      "origin": "validated",
+      "path": "$.hook",
+      "access": "n/a",
+      "text": "Sur quoi repose le choix de trois sigmas plutôt que d'une autre limite ?"
+    },
+    {
+      "id": "SUP-469bc5f18a2e25f6",
+      "origin": "validated",
+      "path": "$.summary",
+      "access": "n/a",
+      "text": "Faute de loi connue, Shewhart tient la base des limites pour empirique et arbitre entre le coût de chercher une panne inexistante et celui d'en manquer une réelle."
+    },
+    {
+      "id": "SUP-9981ba0dcb33aed2",
+      "origin": "validated",
+      "path": "$.attribution_note",
+      "access": "n/a",
+      "text": "Règle posée par W. A. Shewhart, seul auteur de l'ouvrage, et posée comme un choix d'expérience, pas comme un théorème. Le seul nom tiers de ces pages est celui de Tchebychev, dont l'inégalité borne les limites sans fixer la valeur retenue."
+    },
+    {
+      "id": "SUP-e3b2818752e0ae04",
+      "origin": "validated",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "Il nous reste le choix de t. L'expérience indique que t = 3 semble être une valeur économique acceptable."
+    },
+    {
+      "id": "SUP-980c9ee83b78cd0a",
+      "origin": "validated",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931."
+    },
+    {
+      "id": "SUP-f6743dea6733e519",
+      "origin": "validated",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 277"
+    },
+    {
+      "id": "SUP-76d11f542691c5ac",
+      "origin": "validated",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-86a42f311ebffb67",
+      "origin": "validated",
+      "path": "$.quotation.original_text",
+      "access": "n/a",
+      "text": "We are still faced with the choice of t. Experience indicates that t = 3 seems to be an acceptable economic value."
+    },
+    {
+      "id": "SUP-a006aef58d724e59",
+      "origin": "validated",
+      "path": "$.quotation.original_language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-520c61d935611e51",
+      "origin": "validated",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "in-house"
+    },
+    {
+      "id": "SUP-695f70b4732e3224",
+      "origin": "validated",
+      "path": "$.quotation.translation.translator",
+      "access": "n/a",
+      "text": "Traduction interne non publiée (chaîne Curiosity, session du 29 août 2026). Aucune traduction française publiée de l'ouvrage de 1931 n'a été identifiée. « We are still faced with the choice of t » est rendu par « Il nous reste le choix de t » : la tournure française dit le même reste à trancher sans l'emphase de « faced with ». « An acceptable economic value » est rendu littéralement par « une valeur économique acceptable » : c'est bien de coût qu'il s'agit, et c'est tout l'argument de la carte."
+    },
+    {
+      "id": "SUP-b00df733fe95669b",
+      "origin": "validated",
+      "path": "$.sources[0].label",
+      "access": "full-text",
+      "text": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931, xiv-501 p. (LCCN 31032090)",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-ec988b343d66a1a7",
+      "origin": "validated",
+      "path": "$.sources[0].kind",
+      "access": "full-text",
+      "text": "primary",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-da544fb1582a7e40",
+      "origin": "validated",
+      "path": "$.sources[0].locator",
+      "access": "full-text",
+      "text": "p. 276-277",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-1719f1148ba779c6",
+      "origin": "validated",
+      "path": "$.sources[0].doi_isbn",
+      "access": "full-text",
+      "text": "LCCN 31032090",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-30aabf93d5a91088",
+      "origin": "validated",
+      "path": "$.sources[1].label",
+      "access": "metadata-only",
+      "text": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, Milwaukee, American Society for Quality Control, 1980 (réimpression).",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-8a7e56dd8ce49180",
+      "origin": "validated",
+      "path": "$.sources[1].kind",
+      "access": "metadata-only",
+      "text": "primary",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-6ecc146edc7cf33e",
+      "origin": "validated",
+      "path": "$.sources[1].doi_isbn",
+      "access": "metadata-only",
+      "text": "978-0-87389-076-2",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-70b6119ab0660757",
+      "origin": "validated",
+      "path": "$.review.reviewer",
+      "access": "n/a",
+      "text": "contrôle aveugle, session du 25 août 2026"
+    },
+    {
+      "id": "SUP-10e381fd2fc51557",
+      "origin": "validated",
+      "path": "$.review.date",
+      "access": "n/a",
+      "text": "2026-08-25"
+    },
+    {
+      "id": "SUP-ab62b4f98906b668",
+      "origin": "validated",
+      "path": "$.review.attribution",
+      "access": "n/a",
+      "text": "confirmee"
+    },
+    {
+      "id": "SUP-427fb1df98a1e120",
+      "origin": "validated",
+      "path": "$.review.quotation",
+      "access": "n/a",
+      "text": "verbatim"
+    },
+    {
+      "id": "SUP-118d16b59e932353",
+      "origin": "validated",
+      "path": "$.review.sources",
+      "access": "n/a",
+      "text": "resolvent"
+    },
+    {
+      "id": "SUP-ed7629ec7b0c3818",
+      "origin": "validated",
+      "path": "$.review.prose",
+      "access": "n/a",
+      "text": "fidele"
+    },
+    {
+      "id": "SUP-e134482677317836",
+      "origin": "validated",
+      "path": "$.review.verdict",
+      "access": "n/a",
+      "text": "PASS"
+    },
+    {
+      "id": "SUP-8b9711a898f2b77f",
+      "origin": "validated",
+      "path": "$.review.notes[0]",
+      "access": "n/a",
+      "text": "CITATION — relue sur l'image de page, pas sur l'OCR. Exemplaire Internet Archive `in.ernet.dli.2015.150272` (Economic Control of Quality of Manufactured Product, D. Van Nostrand, page de titre « SEVENTH PRINTING », mêmes plaques et même pagination que l'édition de 1931). Image https://archive.org/download/in.ernet.dli.2015.150272/page/n290.jpg (sans suffixe _x1600, feuillet entier) : l'en-tête porte « DETECTION OF LACK OF CONTROL   277 » et le corps de page donne, mot pour mot : « We are still faced with the choice of t.  Experience indicates that t = 3 seems to be an acceptable economic value. » Aucune coupe, aucune traduction — la fiche déclare `translation.kind = none` et `original_language = en`, ce qui est exact. Le locator « p. 277 » est le bon."
+    },
+    {
+      "id": "SUP-09f509365a423e9e",
+      "origin": "validated",
+      "path": "$.review.notes[1]",
+      "access": "n/a",
+      "text": "CITATION — l'OCR de cet item n'était pas fiable pour la lettre citée : la couche texte rend le t italique par « / » (« that / = 3 »). C'est l'image qui établit le « t », et le t est bien celui de la formule P > 1 − 1/t² imprimée juste au-dessus."
+    },
+    {
+      "id": "SUP-0d2e55224713a57e",
+      "origin": "validated",
+      "path": "$.review.notes[2]",
+      "access": "n/a",
+      "text": "SOURCES 1/2 — LCCN 31032090 résolu par l'export MODS https://lccn.loc.gov/31032090/mods : titre « Economic control of quality of manufactured product », Shewhart, Walter A. (1891-1967), New York, D. Van Nostrand Company, Inc., 1931, extent « xiv, 501 p. illus., diagrs. 24 cm », TS155 .S47, OCLC 1045408. Chaque élément du label de la fiche (lieu, éditeur, année, xiv-501 p.) correspond. Le locator p. 276-277 de cette source est vérifié sur les deux images de page : leaf n289 = p. 276 (en-tête « 276   ECONOMIC CONTROL OF QUALITY »), leaf n290 = p. 277."
+    },
+    {
+      "id": "SUP-ac0b9db2432750d1",
+      "origin": "validated",
+      "path": "$.review.notes[3]",
+      "access": "n/a",
+      "text": "SOURCES 2/2 — ISBN 978-0-87389-076-2 (ISBN-10 0873890760, clé de contrôle recalculée et juste) résolu via l'API OpenLibrary : OL1641789M, Shewhart, American Society for Quality Control, Milwaukee, Wis., 1980, xiv 501 p., LC TS155 .S47 1980. Le label « Milwaukee, American Society for Quality Control, 1980 (réimpression) » est exact. La fiche déclare `consulted: metadata-only` pour cette source, et c'est bien à ce niveau que je l'ai vérifiée : je n'ai pas ouvert le texte de la réimpression de 1980."
+    },
+    {
+      "id": "SUP-e91cac76b69cf2c4",
+      "origin": "validated",
+      "path": "$.review.notes[4]",
+      "access": "n/a",
+      "text": "ATTRIBUTION — l'ouvrage est signé du seul W. A. Shewhart (page de titre : « By W. A. SHEWHART, Ph.D., Member of the Technical Staff, Bell Telephone Laboratories, Inc. » ; notice LC : un seul nom, usage primary). Le choix de t = 3 comme valeur économiquement acceptable est bien posé par lui, d'abord dans le mémorandum du 16 mai 1924 à Bell Telephone Laboratories, puis argumenté ici. Je n'ai trouvé aucune revendication tierce de paternité sur ce choix. La note d'attribution dit vrai sur un point que j'ai vérifié page par page : sur p. 276-277, le seul nom propre tiers est celui de Tchebycheff, dont le théorème est invoqué pour la seule inégalité P > 1 − 1/t², explicitement suivie de « We are still faced with the choice of t » — l'inégalité borne sans fixer la valeur."
+    },
+    {
+      "id": "SUP-adfd22c28c2ecc54",
+      "origin": "validated",
+      "path": "$.review.notes[5]",
+      "access": "n/a",
+      "text": "PROSE — les deux affirmations du résumé sont portées, chacune, par une phrase que j'ai lue sur l'image. « Faute de loi connue […] la base des limites pour empirique » : p. 276, « For the most part, however, we never know fθ(θ, n) in sufficient detail to set up such limits. […] How then shall we establish allowable limits on the variability of samples?  Obviously, the basis for such limits must be, in the last analysis, empirical. » « Arbitre entre le coût de chercher une panne inexistante et celui d'en manquer une réelle » : p. 276, « We must try to strike a balance between the advantages to be gained by increasing the value P through reduction in the cost of looking for trouble when it does not exist and the disadvantages occasioned by overlooking troubles that do exist. » Le hook (« Sur quoi repose le choix de trois sigmas plutôt que d'une autre limite ? ») ne pose qu'une question et n'ajoute aucun prédicat. Aucun adjectif du résumé n'excède la source ; réciproquement le résumé ne rétrécit pas la citation, dont il restitue les deux versants."
+    },
+    {
+      "id": "SUP-265fda84e2688f34",
+      "origin": "validated",
+      "path": "$.review.notes[6]",
+      "access": "n/a",
+      "text": "NON ATTEINT — je n'ai pas eu sous les yeux un exemplaire du premier tirage de 1931 lui-même, ni la réimpression ASQC de 1980. La vérification de pagination repose sur un tirage Van Nostrand ultérieur composé sur les mêmes plaques (numérotation de page et titres courants concordants) et sur l'extent « xiv, 501 p. » de la notice LC de 1931, identique. Le point de recherche plein-texte d'Internet Archive (inside.php) m'a été refusé par réinitialisation de connexion ; j'ai contourné par le téléchargement direct du djvu.xml pour localiser le feuillet, puis relu l'image."
+    },
+    {
+      "id": "SUP-d151eb72994d5329",
+      "origin": "validated",
+      "path": "$.review.notes[7]",
+      "access": "n/a",
+      "text": "ÉDITION, 25 août 2026 — corrections hors mandat appliquées : les notes de la fiche portent désormais la mise en garde sur les métadonnées de l'item in.ernet.dli.2015.150272 (date « 1923 ») et la nuance de transcription relevée par le contrôle, Shewhart imprimant l'inégalité de Tchebychev sous forme stricte là où l'énoncé usuel est large. Aucun champ affiché n'est touché."
+    },
+    {
+      "id": "SUP-c8ba14bc71184858",
+      "origin": "validated",
+      "path": "$.notes[0]",
+      "access": "n/a",
+      "text": "Ce que la carte se garde d'affirmer, et c'est le point le plus exposé de la fiche. Shewhart ne rejette pas la probabilité : il l'emploie (l'inégalité de Tchebychev, la probabilité P associée aux limites), et son arbitrage porte entre deux probabilités d'erreur. Ce qu'il écarte, c'est la voie déductive, qui tirerait la valeur de t d'un niveau de confiance choisi sur une loi supposée connue. La formulation fidèle est « économique et empirique, contre déductive », jamais « économique et non probabiliste », qui est un raccourci inexact à la lettre."
+    },
+    {
+      "id": "SUP-8453986f73e88034",
+      "origin": "validated",
+      "path": "$.notes[1]",
+      "access": "n/a",
+      "text": "La justification par « 0,27 % de fausses alarmes sous la loi normale », que la littérature d'enseignement prête couramment à Shewhart, n'a été trouvée nulle part dans les pages lues, et elle supposerait une normalité qu'il vient précisément de déclarer inconnue. C'est une absence de trouvaille sur les p. 276-277, pas une démonstration d'absence dans l'ouvrage entier : la fiche ne doit pas être « corrigée » dans ce sens."
+    },
+    {
+      "id": "SUP-05f214b328a9ea65",
+      "origin": "validated",
+      "path": "$.notes[2]",
+      "access": "n/a",
+      "text": "Les deux appuis du résumé, sur la p. 276 : « for the most part... we never know f(θ, n) in sufficient detail to set up such limits », puis « How then shall we establish allowable limits on the variability of samples? Obviously, the basis for such limits must be, in the last analysis, empirical ». Le mot « empirical » est en italiques dans l'imprimé, comme « economic » deux lignes plus bas."
+    },
+    {
+      "id": "SUP-a84c1f318d8d32e4",
+      "origin": "validated",
+      "path": "$.notes[3]",
+      "access": "n/a",
+      "text": "Citation de l'arbitrage lui-même, écartée pour la longueur : « We must try to strike a balance between the advantages to be gained by increasing the value P through reduction in the cost of looking for trouble when it does not exist and the disadvantages occasioned by overlooking troubles that do exist » (p. 276) fait 259 caractères et n'admet aucune coupe honnête sous 150, toute coupe supprimant l'un des deux termes de la balance, donc l'arbitrage. C'est le résumé qui la porte."
+    },
+    {
+      "id": "SUP-b9900b90c3da6aaa",
+      "origin": "validated",
+      "path": "$.notes[4]",
+      "access": "n/a",
+      "text": "Dans l'imprimé, les deux « t » de la citation sont en italiques et le signe est « = » ; l'italique tombe à l'affichage sans conséquence pour le sens. Les deux phrases sont citées entières et consécutives, sans coupe."
+    },
+    {
+      "id": "SUP-16469b159cfebc7a",
+      "origin": "validated",
+      "path": "$.notes[5]",
+      "access": "n/a",
+      "text": "Portée de la lecture : seules les pages 276 et 277 ont été ouvertes en image pour ce concept. La partie VI du livre revient sur le choix des limites et n'a pas été dépouillée ; il n'est pas exclu qu'un passage ultérieur nuance le motif économique. La construction du graphique de contrôle et le sous-groupement rationnel ne sont pas instruits non plus."
+    },
+    {
+      "id": "SUP-4f4f93f0e25d86c3",
+      "origin": "validated",
+      "path": "$.notes[6]",
+      "access": "n/a",
+      "text": "Exemplaire ouvert : un septième tirage, sans année à la page de titre, postérieur à 1943 (l'adresse de l'éditeur emploie la zone postale à un chiffre, « 250 Fourth Avenue, New York 3 », introduite en 1943), donc situé entre 1943 et 1963 environ. Le bloc de copyright est illisible sur le scan : ni millésime, ni mention de réserve de droits, ni historique de tirages. La référence affichée, 1931, D. Van Nostrand Company, Inc., New York, est prise sur le catalogue de la Library of Congress (LCCN 31032090, export MODS : xiv, 501 p.), et non sur la pièce. Les folios cités sont ceux du tirage lu et n'ont pas été collationnés contre l'édition de 1931."
+    },
+    {
+      "id": "SUP-7dffc2dde9eac959",
+      "origin": "validated",
+      "path": "$.notes[7]",
+      "access": "n/a",
+      "text": "La source primaire est citée sans URL, et c'est une décision motivée. L'exemplaire lu appartient à une numérisation de masse (collections digitallibraryindia et JaiGyan sur Internet Archive) dont la notice ne porte aucun champ de droits : ni rights, ni licenseurl, ni possible-copyright-status, ni sponsor. La seule mention de droits du dossier est un « dc.rights: In Public Domain » auto-déclaré par le numériseur, logé dans un bloc descriptif qui contient par ailleurs deux erreurs bibliographiques avérées (date 1923, éditeur donné à Londres). Aucun renouvellement de copyright n'a été retrouvé dans la base des renouvellements de Stanford, avec témoins positifs concluants, mais un renouvellement introuvable n'est pas un renouvellement inexistant ; et le titre est toujours exploité commercialement. Aucune autorisation d'ayant droit n'est donc constatée. Le texte a bien été lu intégralement, d'où consulted : full-text ; c'est l'URL qui tombe, pas la lecture. La référence résout seule par son LCCN."
+    },
+    {
+      "id": "SUP-dc4eaf84b1fec38c",
+      "origin": "validated",
+      "path": "$.notes[8]",
+      "access": "n/a",
+      "text": "La préface de l'imprimé est datée « April, 1923 », relue caractère par caractère sur l'image. C'est bibliographiquement impossible : l'ouvrage paraît en 1931 et met en épigraphe Eddington (1928) et Bridgman (1927). C'est de cette ligne que vient le « 1923 » de la notice du numériseur. Elle est constatée ici, pas corrigée."
+    },
+    {
+      "id": "SUP-ba2360b3f24e8ad3",
+      "origin": "validated",
+      "path": "$.notes[9]",
+      "access": "n/a",
+      "text": "Aucune source secondaire n'a été ouverte pour cette carte et aucune réception francophone n'a été cherchée : le passage dont elle sort était une lecture primaire et rien d'autre. L'avertissement du validateur sur l'absence de source secondaire est donc exact. La seconde source affichée n'est pas un commentaire : c'est la réimpression de l'ouvrage par l'American Society for Quality Control (1980), retenue parce qu'elle résout par ISBN et donne au lecteur un exemplaire trouvable. Elle n'a pas été ouverte, sa pagination n'a pas été vérifiée, et les folios cités ne sont pas les siens."
+    },
+    {
+      "id": "SUP-c816bedce522f68f",
+      "origin": "validated",
+      "path": "$.notes[10]",
+      "access": "n/a",
+      "text": "Aucune traduction française publiée n'a été vérifiée : la citation reste en anglais, translation.kind à none."
+    },
+    {
+      "id": "SUP-b7567badaef0d091",
+      "origin": "validated",
+      "path": "$.notes[11]",
+      "access": "n/a",
+      "text": "Piège documentaire signalé par le contrôle du 25 août 2026, à connaître avant tout recontrôle : les métadonnées de l'item Internet Archive in.ernet.dli.2015.150272 datent l'ouvrage de « 1923 », année où il n'existait pas. Sa page de titre porte D. Van Nostrand et « SEVENTH PRINTING », et l'édition originale est de 1931. Quiconque reprendrait cet item comme source ne doit pas hériter de cette date."
+    },
+    {
+      "id": "SUP-7c8609b0d04227c6",
+      "origin": "validated",
+      "path": "$.notes[12]",
+      "access": "n/a",
+      "text": "Nuance de transcription relevée par le même contrôle, sans conséquence pour la carte : Shewhart imprime l'inégalité de Tchebychev sous forme stricte, P > 1 − 1/t², là où l'énoncé usuel est large (≥). La fiche ne reproduit pas la formule et n'est donc pas en cause."
+    }
+  ],
+  "estimated_tokens": 9071,
+  "status": "READY"
+}
