@@ -1,0 +1,67 @@
+{
+  "protocol_version": 1,
+  "concept_id": "trois-sigmas-arbitrage-de-cout",
+  "candidate_sha256": "5ae531c07fa7a65952df3c7ab644ce0e4d25824021a0c8d1d4f98601c302d9d7",
+  "verdict": "FACTCHECK_FAIL",
+  "claims": 68,
+  "supported": 57,
+  "failed": 11,
+  "structural_errors": [],
+  "failures": [
+    {
+      "claim_id": "C002",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun appui ; l'énoncé « il arrive qu'on la dérègle en la corrigeant » est présenté comme un fait et rien dans le bundle ne le porte."
+    },
+    {
+      "claim_id": "C016",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis ne disent que « la probabilité P associée aux limites » et « increasing the value P » ; aucun n'établit la définition avancée — probabilité qu'un point relevé tombe à l'intérieur des limites."
+    },
+    {
+      "claim_id": "C017",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis portent le compromis (augmenter P réduit le coût des fausses recherches, au prix d'ennuis réels manqués) mais aucun n'établit l'identification « augmenter P, c'est écarter les limites », qui suppose la définition de P refusée en C016."
+    },
+    {
+      "claim_id": "C019",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis établissent un arbitrage de coût, non qu'aucune largeur ne vaut en soi ni que la largeur dépend des coûts locaux (« là où l'on travaille ») ; la source retient au contraire une valeur générale, t = 3."
+    },
+    {
+      "claim_id": "C020",
+      "verdict": "TOO_STRONG",
+      "reason": "Aucun appui ne porte de variation d'un lieu de travail à l'autre ; l'extension de l'arbitrage de coût à une relativité locale de la réaction dépasse ce que le résumé et la citation autorisent."
+    },
+    {
+      "claim_id": "C023",
+      "verdict": "CONFLICT",
+      "reason": "Les deux appuis divergent sur la lettre citée : la note donne « f(θ, n) », la note PROSE, qui dit lire sur l'image, donne « fθ(θ, n) » ; le verbatim tel qu'il est écrit ne peut être certifié."
+    },
+    {
+      "claim_id": "C030",
+      "verdict": "TOO_STRONG",
+      "reason": "La note ne dit que le rejet de la voie déductive ; aucun appui n'établit que l'expérience invoquée soit une accumulation de résultats « atelier après atelier », ni la défense par « le théorème dont elle sort »."
+    },
+    {
+      "claim_id": "C031",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun appui ; la conséquence sur le mode de contestation et l'autorité des deux types de limites n'est portée par rien dans le bundle, et l'absence de contradiction n'est pas une preuve."
+    },
+    {
+      "claim_id": "C035",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis portent la formule et son usage, mais aucun n'établit l'exposé avancé ici : t comme multiple d'une unité sigma mesurant la dispersion ordinaire, ni P comme proportion des valeurs restant à l'intérieur."
+    },
+    {
+      "claim_id": "C037",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis établissent l'ordre (loi inconnue p. 276, puis l'inégalité avant le choix de t) mais montrent aussi une question et sa réponse empirique interposées : l'adjacence affirmée par « juste après » n'est pas portée."
+    },
+    {
+      "claim_id": "C038",
+      "verdict": "TOO_STRONG",
+      "reason": "Aucun appui n'établit que l'inégalité vaille sans connaître la loi ; la lecture proposée — « ce qui reste quand cette loi est inconnue » — suppose une prémisse absente du bundle."
+    }
+  ]
+}
