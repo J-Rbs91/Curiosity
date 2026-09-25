@@ -1,13 +1,27 @@
 {
   "protocol_version": 1,
   "concept_id": "points-de-levier",
-  "candidate_sha256": "41f83ebba222ccab27189c39df6def53fb3c7e75a524725f1c25232709de067c",
-  "map_sha256": "77a5b3dd0e5324d2bf3ba21683ad9bacbafa1b99cf1a572169ffa6b6e94ef85d",
+  "candidate_sha256": "1643c460539333816695a31899ca77daa320e64e6e3cdb043264d997264a6dcf",
+  "map_sha256": "8ec72ed9ae70c85223c28c40c93cfdea2eb435c775eaa49021c6917f58f0e97a",
   "claims": [
     {
       "claim_id": "C001",
       "locator": "lead[0]",
-      "claim_text": "On peut changer un montant, un délai, une règle, ou la raison même pour laquelle l’ensemble existe.",
+      "claim_text": "Devant un ensemble qui fonctionne mal, la question pratique n’est presque jamais « faut-il agir ». Elle est « où appuyer ».",
+      "supports": [
+        {
+          "id": "SUP-ebb398acd46edf3d",
+          "origin": "validated",
+          "path": "$.hook",
+          "access": "n/a",
+          "text": "Où appuyer dans un système pour que quelque chose bouge vraiment ?"
+        }
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "locator": "lead[0]",
+      "claim_text": "On peut changer un montant, un délai, ou la raison même pour laquelle l’ensemble existe.",
       "supports": [
         {
           "id": "SUP-3a36c7316132dc8f",
@@ -15,13 +29,6 @@
           "path": "$.summary",
           "access": "n/a",
           "text": "Meadows classe douze endroits où intervenir, du réglage d'un paramètre au changement de paradigme, et prévient qu'on les actionne d'ordinaire à l'envers."
-        },
-        {
-          "id": "SUP-2d9cb5d014d223bd",
-          "origin": "validated",
-          "path": "$.notes[1]",
-          "access": "n/a",
-          "text": "La liste comptée par le résumé est celle de la version révisée, p. 3, qui va de « Constants, parameters, numbers » à « The power to transcend paradigms ». Une première liste, de neuf entrées, figure p. 2 : c'est celle que Meadows dit avoir écrite sur un paperboard, et elle la corrige elle-même deux pages plus loin."
         },
         {
           "id": "SUP-3ffaa707ee114434",
@@ -29,59 +36,39 @@
           "path": "$.notes[4]",
           "access": "n/a",
           "text": "Meadows file toute l’échelle avec une image de plomberie : un paramètre est le réglage d’un robinet, un stock est le niveau de la baignoire, un délai est le temps que met une vanne à faire effet. La dette publique y est décrite comme « a negative bathtub, a money hole », et les paramètres budgétaires comme « adjustments to faucets » (p. 5-6). L’image n’est pas sur la carte ; elle est ce qui rend l’échelle tenable en tête."
+        },
+        {
+          "id": "SUP-2d9cb5d014d223bd",
+          "origin": "validated",
+          "path": "$.notes[1]",
+          "access": "n/a",
+          "text": "La liste comptée par le résumé est celle de la version révisée, p. 3, qui va de « Constants, parameters, numbers » à « The power to transcend paradigms ». Une première liste, de neuf entrées, figure p. 2 : c'est celle que Meadows dit avoir écrite sur un paperboard, et elle la corrige elle-même deux pages plus loin."
         }
       ]
     },
     {
-      "claim_id": "C002",
-      "locator": "lead[0]",
-      "claim_text": "Ces gestes ne demandent ni le même effort ni la même autorité",
-      "supports": []
-    },
-    {
       "claim_id": "C003",
       "locator": "lead[0]",
-      "claim_text": "ils n’ont surtout pas la même portée",
+      "claim_text": "Ces gestes n’ont pas la même portée : la différence tient à l’endroit choisi.",
       "supports": [
-        {
-          "id": "SUP-3a36c7316132dc8f",
-          "origin": "validated",
-          "path": "$.summary",
-          "access": "n/a",
-          "text": "Meadows classe douze endroits où intervenir, du réglage d'un paramètre au changement de paradigme, et prévient qu'on les actionne d'ordinaire à l'envers."
-        },
         {
           "id": "SUP-8c80540dcb2e6c7c",
           "origin": "validated",
           "path": "$.notes[3]",
           "access": "n/a",
           "text": "L'ordre est « in increasing order of effectiveness », donc le numéro 12 est le levier le plus faible et le numéro 1 le plus fort. C'est l'inverse de ce qu'un lecteur pressé lit dans une liste numérotée."
+        },
+        {
+          "id": "SUP-3a36c7316132dc8f",
+          "origin": "validated",
+          "path": "$.summary",
+          "access": "n/a",
+          "text": "Meadows classe douze endroits où intervenir, du réglage d'un paramètre au changement de paradigme, et prévient qu'on les actionne d'ordinaire à l'envers."
         }
       ]
     },
     {
       "claim_id": "C004",
-      "locator": "lead[0]",
-      "claim_text": "un effort égal ne produit pas un effet égal, et la différence tient à l’endroit choisi bien plus qu’à la force employée",
-      "supports": [
-        {
-          "id": "SUP-3a36c7316132dc8f",
-          "origin": "validated",
-          "path": "$.summary",
-          "access": "n/a",
-          "text": "Meadows classe douze endroits où intervenir, du réglage d'un paramètre au changement de paradigme, et prévient qu'on les actionne d'ordinaire à l'envers."
-        },
-        {
-          "id": "SUP-8c80540dcb2e6c7c",
-          "origin": "validated",
-          "path": "$.notes[3]",
-          "access": "n/a",
-          "text": "L'ordre est « in increasing order of effectiveness », donc le numéro 12 est le levier le plus faible et le numéro 1 le plus fort. C'est l'inverse de ce qu'un lecteur pressé lit dans une liste numérotée."
-        }
-      ]
-    },
-    {
-      "claim_id": "C005",
       "locator": "lead[1]",
       "claim_text": "Donella H. Meadows, formée à la dynamique des systèmes auprès de Jay W. Forrester",
       "supports": [
@@ -102,9 +89,9 @@
       ]
     },
     {
-      "claim_id": "C006",
+      "claim_id": "C005",
       "locator": "lead[1]",
-      "claim_text": "douze places où intervenir dans un ensemble, rangées du levier le plus faible au plus puissant, du réglage d’un paramètre au changement de paradigme",
+      "claim_text": "a écrit la liste de ces endroits : douze places où intervenir dans un ensemble, rangées du levier le plus faible au plus puissant, du réglage d’un paramètre au changement de paradigme.",
       "supports": [
         {
           "id": "SUP-3a36c7316132dc8f",
@@ -114,23 +101,23 @@
           "text": "Meadows classe douze endroits où intervenir, du réglage d'un paramètre au changement de paradigme, et prévient qu'on les actionne d'ordinaire à l'envers."
         },
         {
-          "id": "SUP-2d9cb5d014d223bd",
-          "origin": "validated",
-          "path": "$.notes[1]",
-          "access": "n/a",
-          "text": "La liste comptée par le résumé est celle de la version révisée, p. 3, qui va de « Constants, parameters, numbers » à « The power to transcend paradigms ». Une première liste, de neuf entrées, figure p. 2 : c'est celle que Meadows dit avoir écrite sur un paperboard, et elle la corrige elle-même deux pages plus loin."
-        },
-        {
           "id": "SUP-8c80540dcb2e6c7c",
           "origin": "validated",
           "path": "$.notes[3]",
           "access": "n/a",
           "text": "L'ordre est « in increasing order of effectiveness », donc le numéro 12 est le levier le plus faible et le numéro 1 le plus fort. C'est l'inverse de ce qu'un lecteur pressé lit dans une liste numérotée."
+        },
+        {
+          "id": "SUP-2d9cb5d014d223bd",
+          "origin": "validated",
+          "path": "$.notes[1]",
+          "access": "n/a",
+          "text": "La liste comptée par le résumé est celle de la version révisée, p. 3, qui va de « Constants, parameters, numbers » à « The power to transcend paradigms ». Une première liste, de neuf entrées, figure p. 2 : c'est celle que Meadows dit avoir écrite sur un paperboard, et elle la corrige elle-même deux pages plus loin."
         }
       ]
     },
     {
-      "claim_id": "C007",
+      "claim_id": "C006",
       "locator": "lead[1]",
       "claim_text": "Et elle l’a assortie d’un avertissement qui compte autant que la liste : ces endroits ne sont pas intuitifs.",
       "supports": [
@@ -142,12 +129,19 @@
           "text": "Les points de levier ne sont pas intuitifs. Ou s'ils le sont, nous les utilisons intuitivement à l'envers […]"
         },
         {
-          "id": "SUP-2c77089b1d953778",
+          "id": "SUP-5fc9356b43132b83",
           "origin": "validated",
-          "path": "$.quotation.original_text",
+          "path": "$.quotation.reference",
           "access": "n/a",
-          "text": "Leverage points are not intuitive. Or if they are, we intuitively use them backward, systematically worsening whatever problems we are trying to solve."
-        },
+          "text": "Donella H. Meadows, Leverage Points: Places to Intervene in a System, The Sustainability Institute, 1999."
+        }
+      ]
+    },
+    {
+      "claim_id": "C007",
+      "locator": "sections[0].paragraphs[0]",
+      "claim_text": "Ce qui fait la valeur de la liste n’est pas qu’elle recense des façons d’agir : chacun en connaît.",
+      "supports": [
         {
           "id": "SUP-3a36c7316132dc8f",
           "origin": "validated",
@@ -188,7 +182,7 @@
     {
       "claim_id": "C010",
       "locator": "sections[0].paragraphs[0]",
-      "claim_text": "ce qui est l’inverse de ce qu’une liste numérotée suggère au premier regard",
+      "claim_text": "ce qui est l’inverse de ce qu’une liste numérotée suggère au premier regard.",
       "supports": [
         {
           "id": "SUP-8c80540dcb2e6c7c",
@@ -202,7 +196,7 @@
     {
       "claim_id": "C011",
       "locator": "sections[0].paragraphs[1]",
-      "claim_text": "Le barreau du bas s’appelle « Constants, parameters, numbers »",
+      "claim_text": "Le barreau du bas s’appelle « Constants, parameters, numbers », des constantes, des paramètres, des nombres",
       "supports": [
         {
           "id": "SUP-2d9cb5d014d223bd",
@@ -210,14 +204,28 @@
           "path": "$.notes[1]",
           "access": "n/a",
           "text": "La liste comptée par le résumé est celle de la version révisée, p. 3, qui va de « Constants, parameters, numbers » à « The power to transcend paradigms ». Une première liste, de neuf entrées, figure p. 2 : c'est celle que Meadows dit avoir écrite sur un paperboard, et elle la corrige elle-même deux pages plus loin."
+        },
+        {
+          "id": "SUP-8c80540dcb2e6c7c",
+          "origin": "validated",
+          "path": "$.notes[3]",
+          "access": "n/a",
+          "text": "L'ordre est « in increasing order of effectiveness », donc le numéro 12 est le levier le plus faible et le numéro 1 le plus fort. C'est l'inverse de ce qu'un lecteur pressé lit dans une liste numérotée."
         }
       ]
     },
     {
       "claim_id": "C012",
       "locator": "sections[0].paragraphs[1]",
-      "claim_text": "des constantes, des paramètres, des nombres : les montants, les taux, les seuils",
+      "claim_text": "les montants, les taux, les seuils.",
       "supports": [
+        {
+          "id": "SUP-3ffaa707ee114434",
+          "origin": "validated",
+          "path": "$.notes[4]",
+          "access": "n/a",
+          "text": "Meadows file toute l’échelle avec une image de plomberie : un paramètre est le réglage d’un robinet, un stock est le niveau de la baignoire, un délai est le temps que met une vanne à faire effet. La dette publique y est décrite comme « a negative bathtub, a money hole », et les paramètres budgétaires comme « adjustments to faucets » (p. 5-6). L’image n’est pas sur la carte ; elle est ce qui rend l’échelle tenable en tête."
+        },
         {
           "id": "SUP-2d9cb5d014d223bd",
           "origin": "validated",
@@ -230,7 +238,7 @@
     {
       "claim_id": "C013",
       "locator": "sections[0].paragraphs[1]",
-      "claim_text": "Le barreau du haut s’appelle « The power to transcend paradigms »",
+      "claim_text": "Le barreau du haut s’appelle « The power to transcend paradigms », le pouvoir de passer outre les cadres de pensée eux-mêmes.",
       "supports": [
         {
           "id": "SUP-2d9cb5d014d223bd",
@@ -243,27 +251,6 @@
     },
     {
       "claim_id": "C014",
-      "locator": "sections[0].paragraphs[1]",
-      "claim_text": "le pouvoir de passer outre les cadres de pensée eux-mêmes",
-      "supports": [
-        {
-          "id": "SUP-2d9cb5d014d223bd",
-          "origin": "validated",
-          "path": "$.notes[1]",
-          "access": "n/a",
-          "text": "La liste comptée par le résumé est celle de la version révisée, p. 3, qui va de « Constants, parameters, numbers » à « The power to transcend paradigms ». Une première liste, de neuf entrées, figure p. 2 : c'est celle que Meadows dit avoir écrite sur un paperboard, et elle la corrige elle-même deux pages plus loin."
-        },
-        {
-          "id": "SUP-3a36c7316132dc8f",
-          "origin": "validated",
-          "path": "$.summary",
-          "access": "n/a",
-          "text": "Meadows classe douze endroits où intervenir, du réglage d'un paramètre au changement de paradigme, et prévient qu'on les actionne d'ordinaire à l'envers."
-        }
-      ]
-    },
-    {
-      "claim_id": "C015",
       "locator": "sections[0].paragraphs[1]",
       "claim_text": "Dix autres endroits sont numérotés entre ces deux-là",
       "supports": [
@@ -284,9 +271,30 @@
       ]
     },
     {
+      "claim_id": "C015",
+      "locator": "sections[0].paragraphs[1]",
+      "claim_text": "c’est déjà l’écart entre les deux bouts qui donne la mesure de l’échelle : d’un côté un réglage, de l’autre ce depuis quoi tout a été pensé.",
+      "supports": [
+        {
+          "id": "SUP-2d9cb5d014d223bd",
+          "origin": "validated",
+          "path": "$.notes[1]",
+          "access": "n/a",
+          "text": "La liste comptée par le résumé est celle de la version révisée, p. 3, qui va de « Constants, parameters, numbers » à « The power to transcend paradigms ». Une première liste, de neuf entrées, figure p. 2 : c'est celle que Meadows dit avoir écrite sur un paperboard, et elle la corrige elle-même deux pages plus loin."
+        },
+        {
+          "id": "SUP-3a36c7316132dc8f",
+          "origin": "validated",
+          "path": "$.summary",
+          "access": "n/a",
+          "text": "Meadows classe douze endroits où intervenir, du réglage d'un paramètre au changement de paradigme, et prévient qu'on les actionne d'ordinaire à l'envers."
+        }
+      ]
+    },
+    {
       "claim_id": "C016",
       "locator": "sections[0].paragraphs[2]",
-      "claim_text": "Meadows la file d’un bout à l’autre : celle de la plomberie",
+      "claim_text": "Une image aide à tenir cette échelle en tête, et Meadows la file d’un bout à l’autre : celle de la plomberie.",
       "supports": [
         {
           "id": "SUP-3ffaa707ee114434",
@@ -313,8 +321,8 @@
     },
     {
       "claim_id": "C018",
-      "locator": "sections[1].paragraphs[0]",
-      "claim_text": "Régler un robinet, c’est agir à l’intérieur d’une installation qu’on laisse telle quelle : le réglage suppose la plomberie et ne la change pas.",
+      "locator": "sections[0].paragraphs[2]",
+      "claim_text": "Trois objets de la même salle de bains, et trois choses très différentes à toucher.",
       "supports": [
         {
           "id": "SUP-3ffaa707ee114434",
@@ -328,21 +336,7 @@
     {
       "claim_id": "C019",
       "locator": "sections[1].paragraphs[0]",
-      "claim_text": "Passer outre le paradigme, c’est toucher ce depuis quoi l’installation a été conçue.",
-      "supports": [
-        {
-          "id": "SUP-2d9cb5d014d223bd",
-          "origin": "validated",
-          "path": "$.notes[1]",
-          "access": "n/a",
-          "text": "La liste comptée par le résumé est celle de la version révisée, p. 3, qui va de « Constants, parameters, numbers » à « The power to transcend paradigms ». Une première liste, de neuf entrées, figure p. 2 : c'est celle que Meadows dit avoir écrite sur un paperboard, et elle la corrige elle-même deux pages plus loin."
-        }
-      ]
-    },
-    {
-      "claim_id": "C020",
-      "locator": "sections[1].paragraphs[0]",
-      "claim_text": "on n’appuie pas plus fort, on appuie plus tôt, et c’est de là que vient la différence de portée",
+      "claim_text": "L’ordre se comprend mieux si l’on regarde où chaque geste se place.",
       "supports": [
         {
           "id": "SUP-8c80540dcb2e6c7c",
@@ -354,19 +348,28 @@
       ]
     },
     {
+      "claim_id": "C020",
+      "locator": "sections[1].paragraphs[0]",
+      "claim_text": "Régler un robinet, c’est agir à l’intérieur d’une installation qu’on laisse telle quelle : le réglage suppose la plomberie et ne la change pas.",
+      "supports": [
+        {
+          "id": "SUP-3ffaa707ee114434",
+          "origin": "validated",
+          "path": "$.notes[4]",
+          "access": "n/a",
+          "text": "Meadows file toute l’échelle avec une image de plomberie : un paramètre est le réglage d’un robinet, un stock est le niveau de la baignoire, un délai est le temps que met une vanne à faire effet. La dette publique y est décrite comme « a negative bathtub, a money hole », et les paramètres budgétaires comme « adjustments to faucets » (p. 5-6). L’image n’est pas sur la carte ; elle est ce qui rend l’échelle tenable en tête."
+        },
+        {
+          "id": "SUP-8c80540dcb2e6c7c",
+          "origin": "validated",
+          "path": "$.notes[3]",
+          "access": "n/a",
+          "text": "L'ordre est « in increasing order of effectiveness », donc le numéro 12 est le levier le plus faible et le numéro 1 le plus fort. C'est l'inverse de ce qu'un lecteur pressé lit dans une liste numérotée."
+        }
+      ]
+    },
+    {
       "claim_id": "C021",
-      "locator": "sections[1].paragraphs[1]",
-      "claim_text": "Un réglage se décide, se mesure, se défait ; sortir d’un cadre de pensée demande que d’autres en sortent aussi.",
-      "supports": []
-    },
-    {
-      "claim_id": "C022",
-      "locator": "sections[1].paragraphs[1]",
-      "claim_text": "L’échelle classe donc aussi par coût politique ce qu’elle classait par puissance.",
-      "supports": []
-    },
-    {
-      "claim_id": "C023",
       "locator": "sections[1].paragraphs[1]",
       "claim_text": "Meadows en donne un exemple qui se retient : la dette publique décrite comme « a negative bathtub, a money hole », et les paramètres budgétaires comme « adjustments to faucets » (p. 5-6).",
       "supports": [
@@ -380,17 +383,45 @@
       ]
     },
     {
-      "claim_id": "C024",
-      "locator": "sections[2].paragraphs[0]",
-      "claim_text": "L’avertissement tient en deux phrases",
+      "claim_id": "C022",
+      "locator": "sections[1].paragraphs[1]",
+      "claim_text": "L’image dit à elle seule le rapport de taille entre le trou et le robinet.",
       "supports": [
+        {
+          "id": "SUP-3ffaa707ee114434",
+          "origin": "validated",
+          "path": "$.notes[4]",
+          "access": "n/a",
+          "text": "Meadows file toute l’échelle avec une image de plomberie : un paramètre est le réglage d’un robinet, un stock est le niveau de la baignoire, un délai est le temps que met une vanne à faire effet. La dette publique y est décrite comme « a negative bathtub, a money hole », et les paramètres budgétaires comme « adjustments to faucets » (p. 5-6). L’image n’est pas sur la carte ; elle est ce qui rend l’échelle tenable en tête."
+        }
+      ]
+    },
+    {
+      "claim_id": "C023",
+      "locator": "sections[2].paragraphs[0]",
+      "claim_text": "L’avertissement tient en deux phrases, et il porte sur l’intuition plutôt que sur la technique",
+      "supports": [
+        {
+          "id": "SUP-52c992afba49b58c",
+          "origin": "validated",
+          "path": "$.quotation.text",
+          "access": "n/a",
+          "text": "Les points de levier ne sont pas intuitifs. Ou s'ils le sont, nous les utilisons intuitivement à l'envers […]"
+        },
         {
           "id": "SUP-2c77089b1d953778",
           "origin": "validated",
           "path": "$.quotation.original_text",
           "access": "n/a",
           "text": "Leverage points are not intuitive. Or if they are, we intuitively use them backward, systematically worsening whatever problems we are trying to solve."
-        },
+        }
+      ]
+    },
+    {
+      "claim_id": "C024",
+      "locator": "sections[2].paragraphs[0]",
+      "claim_text": "« Les points de levier ne sont pas intuitifs. Ou s’ils le sont, nous les utilisons intuitivement à l’envers […] ».",
+      "supports": [
         {
           "id": "SUP-52c992afba49b58c",
           "origin": "validated",
@@ -402,55 +433,6 @@
     },
     {
       "claim_id": "C025",
-      "locator": "sections[2].paragraphs[0]",
-      "claim_text": "il porte sur l’intuition plutôt que sur la technique",
-      "supports": [
-        {
-          "id": "SUP-52c992afba49b58c",
-          "origin": "validated",
-          "path": "$.quotation.text",
-          "access": "n/a",
-          "text": "Les points de levier ne sont pas intuitifs. Ou s'ils le sont, nous les utilisons intuitivement à l'envers […]"
-        },
-        {
-          "id": "SUP-2c77089b1d953778",
-          "origin": "validated",
-          "path": "$.quotation.original_text",
-          "access": "n/a",
-          "text": "Leverage points are not intuitive. Or if they are, we intuitively use them backward, systematically worsening whatever problems we are trying to solve."
-        }
-      ]
-    },
-    {
-      "claim_id": "C026",
-      "locator": "sections[2].paragraphs[0]",
-      "claim_text": "« Les points de levier ne sont pas intuitifs. Ou s’ils le sont, nous les utilisons intuitivement à l’envers […] »",
-      "supports": [
-        {
-          "id": "SUP-52c992afba49b58c",
-          "origin": "validated",
-          "path": "$.quotation.text",
-          "access": "n/a",
-          "text": "Les points de levier ne sont pas intuitifs. Ou s'ils le sont, nous les utilisons intuitivement à l'envers […]"
-        },
-        {
-          "id": "SUP-5fc9356b43132b83",
-          "origin": "validated",
-          "path": "$.quotation.reference",
-          "access": "n/a",
-          "text": "Donella H. Meadows, Leverage Points: Places to Intervene in a System, The Sustainability Institute, 1999."
-        },
-        {
-          "id": "SUP-ae27b336a7c422c7",
-          "origin": "validated",
-          "path": "$.quotation.locator",
-          "access": "n/a",
-          "text": "p. 2"
-        }
-      ]
-    },
-    {
-      "claim_id": "C027",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "La fin de la phrase dit ce que produit ce renversement : « systematically worsening whatever problems we are trying to solve ».",
       "supports": [
@@ -471,9 +453,23 @@
       ]
     },
     {
-      "claim_id": "C028",
+      "claim_id": "C026",
       "locator": "sections[2].paragraphs[1]",
-      "claim_text": "La première est de se tromper d’endroit et d’appuyer là où rien ne bouge. La seconde est de trouver le bon endroit et de pousser dans le mauvais sens.",
+      "claim_text": "Deux erreurs se trouvent ainsi séparées, que l’on confond d’ordinaire.",
+      "supports": [
+        {
+          "id": "SUP-52c992afba49b58c",
+          "origin": "validated",
+          "path": "$.quotation.text",
+          "access": "n/a",
+          "text": "Les points de levier ne sont pas intuitifs. Ou s'ils le sont, nous les utilisons intuitivement à l'envers […]"
+        }
+      ]
+    },
+    {
+      "claim_id": "C027",
+      "locator": "sections[2].paragraphs[1]",
+      "claim_text": "La première est de se tromper d’endroit. La seconde est de trouver le bon endroit et de pousser dans le mauvais sens.",
       "supports": [
         {
           "id": "SUP-52c992afba49b58c",
@@ -492,28 +488,7 @@
       ]
     },
     {
-      "claim_id": "C029",
-      "locator": "sections[2].paragraphs[1]",
-      "claim_text": "Si l’on suit l’échelle, la seconde est la plus coûteuse des deux, puisque plus le levier est puissant, plus une erreur de direction porte loin.",
-      "supports": [
-        {
-          "id": "SUP-8c80540dcb2e6c7c",
-          "origin": "validated",
-          "path": "$.notes[3]",
-          "access": "n/a",
-          "text": "L'ordre est « in increasing order of effectiveness », donc le numéro 12 est le levier le plus faible et le numéro 1 le plus fort. C'est l'inverse de ce qu'un lecteur pressé lit dans une liste numérotée."
-        },
-        {
-          "id": "SUP-2c77089b1d953778",
-          "origin": "validated",
-          "path": "$.quotation.original_text",
-          "access": "n/a",
-          "text": "Leverage points are not intuitive. Or if they are, we intuitively use them backward, systematically worsening whatever problems we are trying to solve."
-        }
-      ]
-    },
-    {
-      "claim_id": "C030",
+      "claim_id": "C028",
       "locator": "sections[2].paragraphs[2]",
       "claim_text": "Le mot « systematically » compte autant que le reste.",
       "supports": [
@@ -534,23 +509,9 @@
       ]
     },
     {
-      "claim_id": "C031",
+      "claim_id": "C029",
       "locator": "sections[2].paragraphs[2]",
-      "claim_text": "Ce n’est pas un accident occasionnel, et ce n’est pas une occasion manquée",
-      "supports": [
-        {
-          "id": "SUP-2c77089b1d953778",
-          "origin": "validated",
-          "path": "$.quotation.original_text",
-          "access": "n/a",
-          "text": "Leverage points are not intuitive. Or if they are, we intuitively use them backward, systematically worsening whatever problems we are trying to solve."
-        }
-      ]
-    },
-    {
-      "claim_id": "C032",
-      "locator": "sections[2].paragraphs[2]",
-      "claim_text": "ce que l’on aggrave, ce sont les problèmes mêmes qu’on cherchait à résoudre",
+      "claim_text": "Ce n’est pas un accident occasionnel, et ce n’est pas une occasion manquée : ce que l’on aggrave, ce sont les problèmes mêmes qu’on cherchait à résoudre.",
       "supports": [
         {
           "id": "SUP-2c77089b1d953778",
@@ -569,9 +530,9 @@
       ]
     },
     {
-      "claim_id": "C033",
+      "claim_id": "C030",
       "locator": "sections[2].paragraphs[2]",
-      "claim_text": "actionner un levier puissant à l’envers la dégrade, et d’autant plus vite qu’on s’y emploie sérieusement",
+      "claim_text": "Ne rien faire laisse une situation en place ; actionner un levier puissant à l’envers la dégrade.",
       "supports": [
         {
           "id": "SUP-2c77089b1d953778",
@@ -579,18 +540,11 @@
           "path": "$.quotation.original_text",
           "access": "n/a",
           "text": "Leverage points are not intuitive. Or if they are, we intuitively use them backward, systematically worsening whatever problems we are trying to solve."
-        },
-        {
-          "id": "SUP-8c80540dcb2e6c7c",
-          "origin": "validated",
-          "path": "$.notes[3]",
-          "access": "n/a",
-          "text": "L'ordre est « in increasing order of effectiveness », donc le numéro 12 est le levier le plus faible et le numéro 1 le plus fort. C'est l'inverse de ce qu'un lecteur pressé lit dans une liste numérotée."
         }
       ]
     },
     {
-      "claim_id": "C034",
+      "claim_id": "C031",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "L’échelle n’est pas venue achevée.",
       "supports": [
@@ -604,7 +558,7 @@
       ]
     },
     {
-      "claim_id": "C035",
+      "claim_id": "C032",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "Une première liste, de neuf entrées, figure à la page 2 du rapport",
       "supports": [
@@ -618,9 +572,51 @@
       ]
     },
     {
-      "claim_id": "C036",
+      "claim_id": "C033",
       "locator": "sections[3].paragraphs[0]",
-      "claim_text": "c’est celle que Meadows dit avoir écrite sur un paperboard, et elle la corrige elle-même deux pages plus loin",
+      "claim_text": "c’est celle que Meadows dit avoir écrite sur un paperboard, et elle la corrige elle-même deux pages plus loin.",
+      "supports": [
+        {
+          "id": "SUP-2d9cb5d014d223bd",
+          "origin": "validated",
+          "path": "$.notes[1]",
+          "access": "n/a",
+          "text": "La liste comptée par le résumé est celle de la version révisée, p. 3, qui va de « Constants, parameters, numbers » à « The power to transcend paradigms ». Une première liste, de neuf entrées, figure p. 2 : c'est celle que Meadows dit avoir écrite sur un paperboard, et elle la corrige elle-même deux pages plus loin."
+        }
+      ]
+    },
+    {
+      "claim_id": "C034",
+      "locator": "sections[3].paragraphs[0]",
+      "claim_text": "La version révisée, celle qui compte les douze entrées, se lit à la page 3",
+      "supports": [
+        {
+          "id": "SUP-2d9cb5d014d223bd",
+          "origin": "validated",
+          "path": "$.notes[1]",
+          "access": "n/a",
+          "text": "La liste comptée par le résumé est celle de la version révisée, p. 3, qui va de « Constants, parameters, numbers » à « The power to transcend paradigms ». Une première liste, de neuf entrées, figure p. 2 : c'est celle que Meadows dit avoir écrite sur un paperboard, et elle la corrige elle-même deux pages plus loin."
+        }
+      ]
+    },
+    {
+      "claim_id": "C035",
+      "locator": "sections[3].paragraphs[0]",
+      "claim_text": "et la première reste sous les yeux du lecteur avec ses manques.",
+      "supports": [
+        {
+          "id": "SUP-2d9cb5d014d223bd",
+          "origin": "validated",
+          "path": "$.notes[1]",
+          "access": "n/a",
+          "text": "La liste comptée par le résumé est celle de la version révisée, p. 3, qui va de « Constants, parameters, numbers » à « The power to transcend paradigms ». Une première liste, de neuf entrées, figure p. 2 : c'est celle que Meadows dit avoir écrite sur un paperboard, et elle la corrige elle-même deux pages plus loin."
+        }
+      ]
+    },
+    {
+      "claim_id": "C036",
+      "locator": "sections[3].paragraphs[1]",
+      "claim_text": "L’ordre des douze est une proposition retravaillée par celle qui l’a écrite, et dont le brouillon reste lisible à côté.",
       "supports": [
         {
           "id": "SUP-2d9cb5d014d223bd",
@@ -633,8 +629,8 @@
     },
     {
       "claim_id": "C037",
-      "locator": "sections[3].paragraphs[0]",
-      "claim_text": "La version révisée, celle qui compte les douze entrées, se lit à la page 3",
+      "locator": "sections[3].paragraphs[1]",
+      "claim_text": "C’est une raison de s’en servir comme d’un instrument de lecture, et une raison de ne pas le traiter comme une loi.",
       "supports": [
         {
           "id": "SUP-2d9cb5d014d223bd",
@@ -642,20 +638,13 @@
           "path": "$.notes[1]",
           "access": "n/a",
           "text": "La liste comptée par le résumé est celle de la version révisée, p. 3, qui va de « Constants, parameters, numbers » à « The power to transcend paradigms ». Une première liste, de neuf entrées, figure p. 2 : c'est celle que Meadows dit avoir écrite sur un paperboard, et elle la corrige elle-même deux pages plus loin."
-        },
-        {
-          "id": "SUP-3a36c7316132dc8f",
-          "origin": "validated",
-          "path": "$.summary",
-          "access": "n/a",
-          "text": "Meadows classe douze endroits où intervenir, du réglage d'un paramètre au changement de paradigme, et prévient qu'on les actionne d'ordinaire à l'envers."
         }
       ]
     },
     {
       "claim_id": "C038",
-      "locator": "sections[3].paragraphs[0]",
-      "claim_text": "et la première reste sous les yeux du lecteur avec ses manques",
+      "locator": "sections[3].paragraphs[2]",
+      "claim_text": "Ce n’est pas non plus une hiérarchie à appliquer.",
       "supports": [
         {
           "id": "SUP-2d9cb5d014d223bd",
@@ -668,28 +657,29 @@
     },
     {
       "claim_id": "C039",
-      "locator": "sections[3].paragraphs[1]",
-      "claim_text": "L’ordre des douze n’est pas un résultat mesuré, c’est une proposition retravaillée par celle qui l’a écrite, et dont le brouillon reste lisible à côté.",
+      "locator": "sections[3].paragraphs[2]",
+      "claim_text": "Ce que l’échelle interdit, c’est de confondre un réglage de paramètre avec un changement de trajectoire, puis de s’étonner que la situation n’ait pas bougé.",
       "supports": [
         {
-          "id": "SUP-2d9cb5d014d223bd",
+          "id": "SUP-3a36c7316132dc8f",
           "origin": "validated",
-          "path": "$.notes[1]",
+          "path": "$.summary",
           "access": "n/a",
-          "text": "La liste comptée par le résumé est celle de la version révisée, p. 3, qui va de « Constants, parameters, numbers » à « The power to transcend paradigms ». Une première liste, de neuf entrées, figure p. 2 : c'est celle que Meadows dit avoir écrite sur un paperboard, et elle la corrige elle-même deux pages plus loin."
+          "text": "Meadows classe douze endroits où intervenir, du réglage d'un paramètre au changement de paradigme, et prévient qu'on les actionne d'ordinaire à l'envers."
+        },
+        {
+          "id": "SUP-8c80540dcb2e6c7c",
+          "origin": "validated",
+          "path": "$.notes[3]",
+          "access": "n/a",
+          "text": "L'ordre est « in increasing order of effectiveness », donc le numéro 12 est le levier le plus faible et le numéro 1 le plus fort. C'est l'inverse de ce qu'un lecteur pressé lit dans une liste numérotée."
         }
       ]
     },
     {
       "claim_id": "C040",
-      "locator": "sections[3].paragraphs[2]",
-      "claim_text": "Agir sur un paramètre reste souvent la seule action disponible, et vaut mieux que rien.",
-      "supports": []
-    },
-    {
-      "claim_id": "C041",
-      "locator": "sections[3].paragraphs[2]",
-      "claim_text": "Ce que l’échelle interdit, c’est de confondre ce geste avec un changement de trajectoire",
+      "locator": "sections[4].paragraphs[0]",
+      "claim_text": "Le premier usage est un test de position.",
       "supports": [
         {
           "id": "SUP-8c80540dcb2e6c7c",
@@ -708,30 +698,51 @@
       ]
     },
     {
-      "claim_id": "C042",
+      "claim_id": "C041",
       "locator": "sections[4].paragraphs[0]",
-      "claim_text": "on peut demander à quel niveau elle intervient : règle-t-elle un nombre, ou touche-t-elle à ce qui produit ce nombre ?",
+      "claim_text": "Devant une action proposée, on peut demander à quel niveau elle intervient : règle-t-elle un nombre, ou touche-t-elle à ce qui produit ce nombre ?",
       "supports": [
-        {
-          "id": "SUP-2d9cb5d014d223bd",
-          "origin": "validated",
-          "path": "$.notes[1]",
-          "access": "n/a",
-          "text": "La liste comptée par le résumé est celle de la version révisée, p. 3, qui va de « Constants, parameters, numbers » à « The power to transcend paradigms ». Une première liste, de neuf entrées, figure p. 2 : c'est celle que Meadows dit avoir écrite sur un paperboard, et elle la corrige elle-même deux pages plus loin."
-        },
         {
           "id": "SUP-3a36c7316132dc8f",
           "origin": "validated",
           "path": "$.summary",
           "access": "n/a",
           "text": "Meadows classe douze endroits où intervenir, du réglage d'un paramètre au changement de paradigme, et prévient qu'on les actionne d'ordinaire à l'envers."
+        },
+        {
+          "id": "SUP-8c80540dcb2e6c7c",
+          "origin": "validated",
+          "path": "$.notes[3]",
+          "access": "n/a",
+          "text": "L'ordre est « in increasing order of effectiveness », donc le numéro 12 est le levier le plus faible et le numéro 1 le plus fort. C'est l'inverse de ce qu'un lecteur pressé lit dans une liste numérotée."
+        },
+        {
+          "id": "SUP-2d9cb5d014d223bd",
+          "origin": "validated",
+          "path": "$.notes[1]",
+          "access": "n/a",
+          "text": "La liste comptée par le résumé est celle de la version révisée, p. 3, qui va de « Constants, parameters, numbers » à « The power to transcend paradigms ». Une première liste, de neuf entrées, figure p. 2 : c'est celle que Meadows dit avoir écrite sur un paperboard, et elle la corrige elle-même deux pages plus loin."
+        }
+      ]
+    },
+    {
+      "claim_id": "C042",
+      "locator": "sections[4].paragraphs[0]",
+      "claim_text": "La réponse ne juge pas l’action, elle indique ce qu’on peut raisonnablement en attendre.",
+      "supports": [
+        {
+          "id": "SUP-8c80540dcb2e6c7c",
+          "origin": "validated",
+          "path": "$.notes[3]",
+          "access": "n/a",
+          "text": "L'ordre est « in increasing order of effectiveness », donc le numéro 12 est le levier le plus faible et le numéro 1 le plus fort. C'est l'inverse de ce qu'un lecteur pressé lit dans une liste numérotée."
         }
       ]
     },
     {
       "claim_id": "C043",
       "locator": "sections[4].paragraphs[0]",
-      "claim_text": "quand une difficulté est présentée comme profonde alors que toutes les mesures envisagées se tiennent dans le bas de l’échelle, l’écart entre le diagnostic et le remède devient visible sans qu’il faille discuter chaque mesure séparément",
+      "claim_text": "Et quand une difficulté est présentée comme profonde alors que toutes les mesures envisagées se tiennent dans le bas de l’échelle, l’écart entre le diagnostic et le remède devient visible sans qu’il faille discuter chaque mesure séparément.",
       "supports": [
         {
           "id": "SUP-8c80540dcb2e6c7c",
@@ -752,7 +763,7 @@
     {
       "claim_id": "C044",
       "locator": "sections[4].paragraphs[1]",
-      "claim_text": "l’échelle donne un vocabulaire à ceux qui sentent qu’un débat porte à côté sans pouvoir dire pourquoi",
+      "claim_text": "Le second usage est moins technique et peut-être plus utile : l’échelle donne un vocabulaire à ceux qui sentent qu’un débat porte à côté sans pouvoir dire pourquoi.",
       "supports": [
         {
           "id": "SUP-2d9cb5d014d223bd",
@@ -772,9 +783,32 @@
     },
     {
       "claim_id": "C045",
-      "locator": "sections[4].paragraphs[1]",
-      "claim_text": "Nommer le niveau auquel une discussion se tient permet de la déplacer sans accuser personne de mauvaise volonté, ce qui est rarement possible autrement.",
-      "supports": []
+      "locator": "sections[4].paragraphs[2]",
+      "claim_text": "Quant à l’échelle elle-même, elle se lit mieux là où elle a été écrite.",
+      "supports": [
+        {
+          "id": "SUP-d9d2160f8abde07c",
+          "origin": "validated",
+          "path": "$.sources[0].label",
+          "access": "full-text",
+          "text": "Donella H. Meadows, Leverage Points: Places to Intervene in a System, Hartland (Vermont), The Sustainability Institute, décembre 1999, 21 p.",
+          "access_corroboration": "dossier-absent"
+        },
+        {
+          "id": "SUP-2d9cb5d014d223bd",
+          "origin": "validated",
+          "path": "$.notes[1]",
+          "access": "n/a",
+          "text": "La liste comptée par le résumé est celle de la version révisée, p. 3, qui va de « Constants, parameters, numbers » à « The power to transcend paradigms ». Une première liste, de neuf entrées, figure p. 2 : c'est celle que Meadows dit avoir écrite sur un paperboard, et elle la corrige elle-même deux pages plus loin."
+        },
+        {
+          "id": "SUP-5258229e5f5542b6",
+          "origin": "validated",
+          "path": "$.notes[2]",
+          "access": "n/a",
+          "text": "Le rapport lu est celui de décembre 1999, édité par The Sustainability Institute. Sa page 2 signale qu'une version plus courte avait paru dans Whole Earth à l'hiver 1997 : cette version n'a pas été ouverte."
+        }
+      ]
     },
     {
       "claim_id": "C046",
@@ -801,7 +835,7 @@
     {
       "claim_id": "C047",
       "locator": "sections[4].paragraphs[2]",
-      "claim_text": "porte ses deux états côte à côte : les neuf entrées de la page 2, les douze de la page 3",
+      "claim_text": "porte ses deux états côte à côte : les neuf entrées de la page 2, les douze de la page 3.",
       "supports": [
         {
           "id": "SUP-2d9cb5d014d223bd",
@@ -815,21 +849,7 @@
     {
       "claim_id": "C048",
       "locator": "sections[4].paragraphs[2]",
-      "claim_text": "Et cette page 2 signale qu’une version plus courte avait paru dans la revue Whole Earth à l’hiver 1997",
-      "supports": [
-        {
-          "id": "SUP-5258229e5f5542b6",
-          "origin": "validated",
-          "path": "$.notes[2]",
-          "access": "n/a",
-          "text": "Le rapport lu est celui de décembre 1999, édité par The Sustainability Institute. Sa page 2 signale qu'une version plus courte avait paru dans Whole Earth à l'hiver 1997 : cette version n'a pas été ouverte."
-        }
-      ]
-    },
-    {
-      "claim_id": "C049",
-      "locator": "sections[4].paragraphs[2]",
-      "claim_text": "ce que la liste y comptait, et dans quels termes, se trouve dans ce numéro-là",
+      "claim_text": "Et cette page 2 signale qu’une version plus courte avait paru dans la revue Whole Earth à l’hiver 1997.",
       "supports": [
         {
           "id": "SUP-5258229e5f5542b6",
@@ -841,6 +861,6 @@
       ]
     }
   ],
-  "estimated_tokens": 10506,
+  "estimated_tokens": 11235,
   "status": "READY"
 }
